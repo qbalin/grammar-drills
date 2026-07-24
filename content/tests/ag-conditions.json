@@ -1,0 +1,733 @@
+[
+ {
+  "id": "ag-conditions-t1",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If the queen were ruling wisely, the citizens would not fear war.",
+    "answer": "Sī rēgīna sapienter regeret, cīvēs bellum nōn timērent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "rēgīna",
+     "sapienter",
+     "regeret",
+     "cīvēs",
+     "bellum",
+     "nōn",
+     "timērent"
+    ]
+   },
+   {
+    "prompt": "If you were braver, you would not flee the fierce enemy.",
+    "answer": "Sī fortior essēs, hostem ferōcem nōn fugerēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "fortior",
+     "essēs",
+     "hostem",
+     "ferōcem",
+     "nōn",
+     "fugerēs"
+    ]
+   },
+   {
+    "prompt": "If we had greater resources, we would build an immense wall.",
+    "answer": "Sī maiōrēs opēs habērēmus, mūrum inmēnsum exstruerēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "maiōrēs",
+     "opēs",
+     "habērēmus",
+     "mūrum",
+     "inmēnsum",
+     "exstruerēmus"
+    ]
+   },
+   {
+    "prompt": "If the poet were singing a sweeter song, the girl would listen gladly.",
+    "answer": "Sī poēta dulcius carmen caneret, puella libenter audīret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "poēta",
+     "dulcius",
+     "carmen",
+     "caneret",
+     "puella",
+     "libenter",
+     "audīret"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t2",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If the incautious soldier had watched the road, he would not have died.",
+    "answer": "Sī incautus mīles viam spectāvisset, nōn periisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "incautus",
+     "mīles",
+     "viam",
+     "spectāvisset",
+     "nōn",
+     "periisset"
+    ]
+   },
+   {
+    "prompt": "If you had torn away the chains, the captives would have fled.",
+    "answer": "Sī vincula revellissēs, captīvī fūgissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "vincula",
+     "revellissēs",
+     "captīvī",
+     "fūgissent"
+    ]
+   },
+   {
+    "prompt": "If the general had trusted his allies, he would have conquered the fierce enemies.",
+    "answer": "Sī dux sociīs crēdidisset, ferōcēs hostēs vīcisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "dux",
+     "sociīs",
+     "crēdidisset",
+     "ferōcēs",
+     "hostēs",
+     "vīcisset"
+    ]
+   },
+   {
+    "prompt": "If the mother had recognized the scar, she would have wept.",
+    "answer": "Sī māter cicātrīcem agnōvisset, flēvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "māter",
+     "cicātrīcem",
+     "agnōvisset",
+     "flēvisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t3",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If you come to Rome, you will see immense temples.",
+    "answer": "Sī Rōmam veniēs, templa inmēnsa vidēbis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "Rōmam",
+     "veniēs",
+     "templa",
+     "inmēnsa",
+     "vidēbis"
+    ]
+   },
+   {
+    "prompt": "If the enemies attack by night, we will defend the walls fiercely.",
+    "answer": "Sī hostēs nocte oppugnābunt, moenia ferōciter dēfendēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "hostēs",
+     "nocte",
+     "oppugnābunt",
+     "moenia",
+     "ferōciter",
+     "dēfendēmus"
+    ]
+   },
+   {
+    "prompt": "If you finish the task, I will give you a great reward.",
+    "answer": "Sī opus perfēceris, tibi magnum praemium dabō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "opus",
+     "perfēceris",
+     "tibi",
+     "magnum",
+     "praemium",
+     "dabō"
+    ]
+   },
+   {
+    "prompt": "Unless the storm ceases, the sailors will not set sail.",
+    "answer": "Nisi tempestās cessābit, nautae nōn nāvigābunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "tempestās",
+     "cessābit",
+     "nautae",
+     "nōn",
+     "nāvigābunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t4",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If you are seeking wisdom, you read the poets carefully.",
+    "answer": "Sī sapientiam quaeris, poētās dīligenter legis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "sapientiam",
+     "quaeris",
+     "poētās",
+     "dīligenter",
+     "legis"
+    ]
+   },
+   {
+    "prompt": "If the master is just, the servants love him.",
+    "answer": "Sī dominus iūstus est, servī eum amant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "dominus",
+     "iūstus",
+     "est",
+     "servī",
+     "eum",
+     "amant"
+    ]
+   },
+   {
+    "prompt": "If innocence pleases the gods, the good are safe.",
+    "answer": "Sī innocentia deōs dēlectat, bonī tūtī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "innocentia",
+     "deōs",
+     "dēlectat",
+     "bonī",
+     "tūtī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "If you are afraid, you conceal your wounds.",
+    "answer": "Sī timēs, vulnera tua cēlās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "timēs",
+     "vulnera",
+     "tua",
+     "cēlās"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t5",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If I were king, I would free the innocent from prison.",
+    "answer": "Sī rēx essem, innocentēs ē carcere līberārem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "rēx",
+     "essem",
+     "innocentēs",
+     "ē",
+     "carcere",
+     "līberārem"
+    ]
+   },
+   {
+    "prompt": "If the lion had not mangled the shepherd, the flock would have been safe.",
+    "answer": "Sī leō pāstōrem nōn laniāvisset, grex tūtus fuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "leō",
+     "pāstōrem",
+     "nōn",
+     "laniāvisset",
+     "grex",
+     "tūtus",
+     "fuisset"
+    ]
+   },
+   {
+    "prompt": "If you conquer fear, you will accomplish great deeds.",
+    "answer": "Sī metum vincēs, magna facinora efficiēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "metum",
+     "vincēs",
+     "magna",
+     "facinora",
+     "efficiēs"
+    ]
+   },
+   {
+    "prompt": "If the general is wounded, the soldiers grieve.",
+    "answer": "Sī dux vulnerātus est, mīlitēs dolent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "dux",
+     "vulnerātus",
+     "est",
+     "mīlitēs",
+     "dolent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t6",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If the fields were fertile, the farmer would gather more crops.",
+    "answer": "Sī agrī fēcundī essent, agricola plūrēs frūgēs colligeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "agrī",
+     "fēcundī",
+     "essent",
+     "agricola",
+     "plūrēs",
+     "frūgēs",
+     "colligeret"
+    ]
+   },
+   {
+    "prompt": "If you had opened the gates, the enemies would have burst into the city.",
+    "answer": "Sī portās reclūsissēs, hostēs in urbem irrūpissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "portās",
+     "reclūsissēs",
+     "hostēs",
+     "in",
+     "urbem",
+     "irrūpissent"
+    ]
+   },
+   {
+    "prompt": "If the winds are favorable, we will reach the shore within a month.",
+    "answer": "Sī ventī secundī erunt, ōram intrā mēnsem attingēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "ventī",
+     "secundī",
+     "erunt",
+     "ōram",
+     "intrā",
+     "mēnsem",
+     "attingēmus"
+    ]
+   },
+   {
+    "prompt": "If you were telling the truth, I would trust you willingly.",
+    "answer": "Sī vēra dīcerēs, tibi libenter crēderem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "vēra",
+     "dīcerēs",
+     "tibi",
+     "libenter",
+     "crēderem"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t7",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If the general were braver, he would attack the enemy camp.",
+    "answer": "Sī dux fortior esset, castra hostium oppugnāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "dux",
+     "fortior",
+     "esset",
+     "castra",
+     "hostium",
+     "oppugnāret"
+    ]
+   },
+   {
+    "prompt": "If you were telling the truth, we would all believe you.",
+    "answer": "Sī vēra dīcerēs, tibi omnēs crēderēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "vēra",
+     "dīcerēs",
+     "tibi",
+     "omnēs",
+     "crēderēmus"
+    ]
+   },
+   {
+    "prompt": "If the dog were tame, the children would play in the garden.",
+    "answer": "Sī canis mānsuētus esset, līberī in hortō lūderent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "canis",
+     "mānsuētus",
+     "esset",
+     "līberī",
+     "in",
+     "hortō",
+     "lūderent"
+    ]
+   },
+   {
+    "prompt": "If the poet were present, he would recite sublime verses.",
+    "answer": "Sī poēta praesēns esset, versūs sublīmēs recitāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "poēta",
+     "praesēns",
+     "esset",
+     "versūs",
+     "sublīmēs",
+     "recitāret"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t8",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If the Helvetians had crossed the river, they would have destroyed the town.",
+    "answer": "Sī Helvētiī flūmen trānsīssent, oppidum dēlēvissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "Helvētiī",
+     "flūmen",
+     "trānsīssent",
+     "oppidum",
+     "dēlēvissent"
+    ]
+   },
+   {
+    "prompt": "If you had returned at evening, you would have found the gates closed.",
+    "answer": "Sī vespere revertissēs, portās clausās invēnissēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "vespere",
+     "revertissēs",
+     "portās",
+     "clausās",
+     "invēnissēs"
+    ]
+   },
+   {
+    "prompt": "If the magistrate had permitted it, the crowd would have entered the temple.",
+    "answer": "Sī magistrātus permīsisset, turba templum intrāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "magistrātus",
+     "permīsisset",
+     "turba",
+     "templum",
+     "intrāvisset"
+    ]
+   },
+   {
+    "prompt": "If the baker had lit the oven, we would have eaten warm bread.",
+    "answer": "Sī pistor furnum incendisset, pānem calidum ēdissēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "pistor",
+     "furnum",
+     "incendisset",
+     "pānem",
+     "calidum",
+     "ēdissēmus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t9",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If you praise the brave, you encourage the young men.",
+    "answer": "Sī fortēs laudās, iuvenēs hortāris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "fortēs",
+     "laudās",
+     "iuvenēs",
+     "hortāris"
+    ]
+   },
+   {
+    "prompt": "If the soldiers are advancing slowly, the enemy is escaping.",
+    "answer": "Sī mīlitēs lentē prōcēdunt, hostis effugit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "mīlitēs",
+     "lentē",
+     "prōcēdunt",
+     "hostis",
+     "effugit"
+    ]
+   },
+   {
+    "prompt": "If the minister serves the king faithfully, he receives a reward.",
+    "answer": "Sī minister rēgī fidēliter servit, praemium accipit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "minister",
+     "rēgī",
+     "fidēliter",
+     "servit",
+     "praemium",
+     "accipit"
+    ]
+   },
+   {
+    "prompt": "If drums resound in the camp, the soldiers seize their arms.",
+    "answer": "Sī tympana in castrīs sonant, mīlitēs arma capiunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "tympana",
+     "in",
+     "castrīs",
+     "sonant",
+     "mīlitēs",
+     "arma",
+     "capiunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t10",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If the Helvetians descend from the mountains, we will defend the bridge.",
+    "answer": "Sī Helvētiī dē montibus dēscendent, pontem dēfendēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "Helvētiī",
+     "dē",
+     "montibus",
+     "dēscendent",
+     "pontem",
+     "dēfendēmus"
+    ]
+   },
+   {
+    "prompt": "If you return home at evening, you will hear the sublime song.",
+    "answer": "Sī vespere domum redībis, carmen sublīme audiēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "vespere",
+     "domum",
+     "redībis",
+     "carmen",
+     "sublīme",
+     "audiēs"
+    ]
+   },
+   {
+    "prompt": "If the magistrate permits, we will build a new oven.",
+    "answer": "Sī magistrātus permittet, novum furnum aedificābimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "magistrātus",
+     "permittet",
+     "novum",
+     "furnum",
+     "aedificābimus"
+    ]
+   },
+   {
+    "prompt": "If mustard grows in the field, the farmer will sell it in the market.",
+    "answer": "Sī sināpis in agrō prōveniet, agricola eam in forō vēndet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "sināpis",
+     "in",
+     "agrō",
+     "prōveniet",
+     "agricola",
+     "eam",
+     "forō",
+     "vēndet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t11",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "Unless the citizens defend the walls, the city will be captured.",
+    "answer": "Nisi cīvēs mūrōs dēfendent, urbs capiētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "cīvēs",
+     "mūrōs",
+     "dēfendent",
+     "urbs",
+     "capiētur"
+    ]
+   },
+   {
+    "prompt": "Unless the wound were serious, the doctor would not be worried.",
+    "answer": "Nisi vulnus grave esset, medicus nōn sollicitus esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "vulnus",
+     "grave",
+     "esset",
+     "medicus",
+     "nōn",
+     "sollicitus"
+    ]
+   },
+   {
+    "prompt": "Unless the rowers had feared the storm, they would have set sail at first light.",
+    "answer": "Nisi rēmigēs tempestātem timuissent, prīmā lūce solvissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "rēmigēs",
+     "tempestātem",
+     "timuissent",
+     "prīmā",
+     "lūce",
+     "solvissent"
+    ]
+   },
+   {
+    "prompt": "Unless you obey the laws, you are harming the republic.",
+    "answer": "Nisi lēgibus pārēs, reī pūblicae nocēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "lēgibus",
+     "pārēs",
+     "reī",
+     "pūblicae",
+     "nocēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-conditions-t12",
+  "sectionId": "ag-conditions",
+  "questions": [
+   {
+    "prompt": "If the enemy had attacked by night, the guards would have fled in fear.",
+    "answer": "Sī hostēs noctū oppugnāvissent, custōdēs metū fūgissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "hostēs",
+     "noctū",
+     "oppugnāvissent",
+     "custōdēs",
+     "metū",
+     "fūgissent"
+    ]
+   },
+   {
+    "prompt": "If the flame were spreading widely, the inhabitants would abandon their homes.",
+    "answer": "Sī flamma lātē diffunderētur, incolae domōs relinquerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "flamma",
+     "lātē",
+     "diffunderētur",
+     "incolae",
+     "domōs",
+     "relinquerent"
+    ]
+   },
+   {
+    "prompt": "If the pupil does wrong, the teacher rebukes him.",
+    "answer": "Sī discipulus dēlinquit, magister eum reprehendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "discipulus",
+     "dēlinquit",
+     "magister",
+     "eum",
+     "reprehendit"
+    ]
+   },
+   {
+    "prompt": "If the last soldiers had reached the summit, they would have seen the victory.",
+    "answer": "Sī postrēmī mīlitēs summum montem attigissent, victōriam vīdissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "postrēmī",
+     "mīlitēs",
+     "summum",
+     "montem",
+     "attigissent",
+     "victōriam",
+     "vīdissent"
+    ]
+   }
+  ]
+ }
+]

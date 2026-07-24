@@ -1,0 +1,17 @@
+{
+  "name": "latin-tutor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Spaced-repetition Latin tutor that runs with no LLM at runtime",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "cli": "pnpm --filter @latin-tutor/cli start"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@11.16.0"
+}

@@ -1,0 +1,660 @@
+[
+ {
+  "id": "ag-verb-participles-t1",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "We saw the philosopher teaching the impatient young men.",
+    "answer": "Philosophum iuvenēs impatientēs docentem vīdimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophum",
+     "iuvenēs",
+     "impatientēs",
+     "docentem",
+     "vīdimus"
+    ]
+   },
+   {
+    "prompt": "The weeping mother gave milk to the trembling infant.",
+    "answer": "Māter flēns lac īnfantī trepidantī dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māter",
+     "flēns",
+     "lac",
+     "īnfantī",
+     "trepidantī",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "Those speaking about philosophy often rejoice in a brief conversation.",
+    "answer": "Dē philosophiā loquentēs saepe brevī colloquiō gaudent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dē",
+     "philosophiā",
+     "loquentēs",
+     "saepe",
+     "brevī",
+     "colloquiō",
+     "gaudent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t2",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The city, having been captured, was set on fire by the enemy.",
+    "answer": "Urbs capta ab hostibus incēnsa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbs",
+     "capta",
+     "ab",
+     "hostibus",
+     "incēnsa",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The letters written by the poet were read aloud to the king.",
+    "answer": "Litterae ā poētā scrīptae rēgī lēctae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Litterae",
+     "ā",
+     "poētā",
+     "scrīptae",
+     "rēgī",
+     "lēctae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "Having been separated from his companions, the leader hesitated.",
+    "answer": "Ā comitibus sēcrētus dux dubitāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ā",
+     "comitibus",
+     "sēcrētus",
+     "dux",
+     "dubitāvit"
+    ]
+   },
+   {
+    "prompt": "The gifts promised by the general delighted the weary soldiers.",
+    "answer": "Dōna ab imperātōre prōmissa fessōs mīlitēs dēlectāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dōna",
+     "ab",
+     "imperātōre",
+     "prōmissa",
+     "fessōs",
+     "mīlitēs",
+     "dēlectāvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t3",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The consul, about to speak, rose in the crowded senate.",
+    "answer": "Cōnsul dictūrus in senātū frequentī surrēxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "dictūrus",
+     "in",
+     "senātū",
+     "frequentī",
+     "surrēxit"
+    ]
+   },
+   {
+    "prompt": "About to set out at first light, we prepared our weapons.",
+    "answer": "Prīmā lūce profectūrī arma nostra parāvimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmā",
+     "lūce",
+     "profectūrī",
+     "arma",
+     "nostra",
+     "parāvimus"
+    ]
+   },
+   {
+    "prompt": "The boy about to sing stood before the silent crowd.",
+    "answer": "Puer cantātūrus ante turbam tacitam stetit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puer",
+     "cantātūrus",
+     "ante",
+     "turbam",
+     "tacitam",
+     "stetit"
+    ]
+   },
+   {
+    "prompt": "The philosopher, about to die, comforted his weeping friends.",
+    "answer": "Philosophus moritūrus amīcōs flentēs cōnsōlātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "moritūrus",
+     "amīcōs",
+     "flentēs",
+     "cōnsōlātus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t4",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The city must be defended by all the citizens.",
+    "answer": "Urbs ab omnibus cīvibus dēfendenda est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbs",
+     "ab",
+     "omnibus",
+     "cīvibus",
+     "dēfendenda",
+     "est"
+    ]
+   },
+   {
+    "prompt": "These books ought to be read by the diligent student.",
+    "answer": "Hī librī dīligentī discipulō legendī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hī",
+     "librī",
+     "dīligentī",
+     "discipulō",
+     "legendī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "Peace must be sought by wise leaders.",
+    "answer": "Pāx ā sapientibus ducibus petenda est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pāx",
+     "ā",
+     "sapientibus",
+     "ducibus",
+     "petenda",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The truth must not be hidden from the people.",
+    "answer": "Vēritās ā populō cēlanda nōn est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēritās",
+     "ā",
+     "populō",
+     "cēlanda",
+     "nōn",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t5",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "With the enemy conquered, the soldiers returned home rejoicing.",
+    "answer": "Hostibus victīs mīlitēs gaudentēs domum revertērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostibus",
+     "victīs",
+     "mīlitēs",
+     "gaudentēs",
+     "domum",
+     "revertērunt"
+    ]
+   },
+   {
+    "prompt": "While the master was speaking, the impatient pupils fell silent.",
+    "answer": "Magistrō loquente discipulī impatientēs conticuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magistrō",
+     "loquente",
+     "discipulī",
+     "impatientēs",
+     "conticuērunt"
+    ]
+   },
+   {
+    "prompt": "The general, about to attack, encouraged the trembling cohort.",
+    "answer": "Imperātor oppugnātūrus cohortem trepidantem cohortātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "oppugnātūrus",
+     "cohortem",
+     "trepidantem",
+     "cohortātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Once the letter had been sent, the anxious mother awaited a reply.",
+    "answer": "Epistulā missā māter anxia respōnsum exspectābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Epistulā",
+     "missā",
+     "māter",
+     "anxia",
+     "respōnsum",
+     "exspectābat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t6",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The seer, having observed the stars, foretold what was to come.",
+    "answer": "Vātēs astra speculātus futūra praedīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vātēs",
+     "astra",
+     "speculātus",
+     "futūra",
+     "praedīxit"
+    ]
+   },
+   {
+    "prompt": "The reed pen, dipped in ink, glided across the page.",
+    "answer": "Calamus ātrāmentō tīnctus per chartam lābēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Calamus",
+     "ātrāmentō",
+     "tīnctus",
+     "per",
+     "chartam",
+     "lābēbātur"
+    ]
+   },
+   {
+    "prompt": "The wound, fixed deep in his side, tormented the injured man.",
+    "answer": "Vulnus laterī altē īnfīxum saucium cruciābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vulnus",
+     "laterī",
+     "altē",
+     "īnfīxum",
+     "saucium",
+     "cruciābat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t7",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The soldiers, fighting bravely, were defending the walls.",
+    "answer": "Mīlitēs fortiter pugnantēs mūrōs dēfendēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "fortiter",
+     "pugnantēs",
+     "mūrōs",
+     "dēfendēbant"
+    ]
+   },
+   {
+    "prompt": "We heard the birds singing in the reddish dawn.",
+    "answer": "Avēs in aurōrā rutilā canentēs audīvimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Avēs",
+     "in",
+     "aurōrā",
+     "rutilā",
+     "canentēs",
+     "audīvimus"
+    ]
+   },
+   {
+    "prompt": "The sick old man, groaning, kept calling for the doctor.",
+    "answer": "Senex aeger gemēns medicum vocābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "aeger",
+     "gemēns",
+     "medicum",
+     "vocābat"
+    ]
+   },
+   {
+    "prompt": "The exulting crowd, triumphing, was filling the streets.",
+    "answer": "Turba triumphāns viās complēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Turba",
+     "triumphāns",
+     "viās",
+     "complēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t8",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The city, having been founded by exiles, grew quickly.",
+    "answer": "Urbs ab exsulibus condita celeriter crēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbs",
+     "ab",
+     "exsulibus",
+     "condita",
+     "celeriter",
+     "crēvit"
+    ]
+   },
+   {
+    "prompt": "The letter, written by the general, was read aloud.",
+    "answer": "Epistula ab imperātōre scrīpta clārē recitāta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Epistula",
+     "ab",
+     "imperātōre",
+     "scrīpta",
+     "clārē",
+     "recitāta",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The gifts given to the temple had been hidden in a corner.",
+    "answer": "Dōna templō data in angulō recondita erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dōna",
+     "templō",
+     "data",
+     "in",
+     "angulō",
+     "recondita",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "The wounded soldier, abandoned, kept silent.",
+    "answer": "Mīles vulnerātus relictus silēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīles",
+     "vulnerātus",
+     "relictus",
+     "silēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t9",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The king, about to die, entrusted the kingdom to his brother.",
+    "answer": "Rēx moritūrus rēgnum frātrī commendāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "moritūrus",
+     "rēgnum",
+     "frātrī",
+     "commendāvit"
+    ]
+   },
+   {
+    "prompt": "The orator, about to speak, arranged his thoughts.",
+    "answer": "Ōrātor dictūrus sententiās disposuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "dictūrus",
+     "sententiās",
+     "disposuit"
+    ]
+   },
+   {
+    "prompt": "The general, about to attack, was encouraging his own men.",
+    "answer": "Dux oppugnātūrus suōs hortābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "oppugnātūrus",
+     "suōs",
+     "hortābātur"
+    ]
+   },
+   {
+    "prompt": "The birds, about to fly away, were gathering on the roof.",
+    "answer": "Avēs āvolātūrae in tēctō congregābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Avēs",
+     "āvolātūrae",
+     "in",
+     "tēctō",
+     "congregābantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t10",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The bridge must be built before winter.",
+    "answer": "Pōns ante hiemem aedificandus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pōns",
+     "ante",
+     "hiemem",
+     "aedificandus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The laws must be observed by all.",
+    "answer": "Lēgēs ab omnibus servandae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgēs",
+     "ab",
+     "omnibus",
+     "servandae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The truth must not be concealed.",
+    "answer": "Vēritās nōn cēlanda est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēritās",
+     "nōn",
+     "cēlanda",
+     "est"
+    ]
+   },
+   {
+    "prompt": "These books must be read by diligent students.",
+    "answer": "Hī librī ā dīligentibus discipulīs legendī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hī",
+     "librī",
+     "ā",
+     "dīligentibus",
+     "discipulīs",
+     "legendī",
+     "sunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t11",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The messenger, sent by the king, announced the coming victory.",
+    "answer": "Nūntius ā rēge missus victōriam ventūram nūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "ā",
+     "rēge",
+     "missus",
+     "victōriam",
+     "ventūram",
+     "nūntiāvit"
+    ]
+   },
+   {
+    "prompt": "The trembling captives, led through the city, were weeping.",
+    "answer": "Captīvī trementēs per urbem ductī flēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvī",
+     "trementēs",
+     "per",
+     "urbem",
+     "ductī",
+     "flēbant"
+    ]
+   },
+   {
+    "prompt": "The woman, her son having been lost, was consumed by weeping.",
+    "answer": "Fēmina fīliō āmissō flētū cōnsūmēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fēmina",
+     "fīliō",
+     "āmissō",
+     "flētū",
+     "cōnsūmēbātur"
+    ]
+   },
+   {
+    "prompt": "The treasure, buried long ago, was found by a shepherd.",
+    "answer": "Thēsaurus ōlim sepultus ā pāstōre inventus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Thēsaurus",
+     "ōlim",
+     "sepultus",
+     "ā",
+     "pāstōre",
+     "inventus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-participles-t12",
+  "sectionId": "ag-verb-participles",
+  "questions": [
+   {
+    "prompt": "The ships, having been destroyed by the storm, lay on the shore.",
+    "answer": "Nāvēs tempestāte dēlētae in lītore iacēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nāvēs",
+     "tempestāte",
+     "dēlētae",
+     "in",
+     "lītore",
+     "iacēbant"
+    ]
+   },
+   {
+    "prompt": "The dying poet, praised by everyone, closed his eyes.",
+    "answer": "Poēta moriēns ab omnibus laudātus oculōs clausit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "moriēns",
+     "ab",
+     "omnibus",
+     "laudātus",
+     "oculōs",
+     "clausit"
+    ]
+   },
+   {
+    "prompt": "The words that must be spoken fill me with fear.",
+    "answer": "Verba dīcenda mē timōre complent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Verba",
+     "dīcenda",
+     "mē",
+     "timōre",
+     "complent"
+    ]
+   },
+   {
+    "prompt": "The children, playing in the garden, were not hearing their mother.",
+    "answer": "Līberī in hortō lūdentēs mātrem nōn audiēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Līberī",
+     "in",
+     "hortō",
+     "lūdentēs",
+     "mātrem",
+     "nōn",
+     "audiēbant"
+    ]
+   }
+  ]
+ }
+]

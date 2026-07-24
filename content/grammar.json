@@ -1,0 +1,268 @@
+[
+  {
+    "id": "ag-decl1",
+    "ref": "34",
+    "title": "First declension nouns",
+    "order": 10,
+    "text": "First-declension nouns end in -a in the nominative singular and are mostly feminine (e.g. puella, rosa, via). Singular endings: nom -a, gen -ae, dat -ae, acc -am, abl -ā; plural: nom -ae, gen -ārum, dat/abl -īs, acc -ās. A few nouns denoting male roles are masculine (agricola, nauta, poēta) but decline identically. The genitive and dative singular (-ae) look alike; context and the nominative plural (also -ae) distinguish them."
+  },
+  {
+    "id": "ag-decl2",
+    "ref": "35",
+    "title": "Second declension nouns",
+    "order": 20,
+    "text": "Second-declension nouns are chiefly masculine in -us (servus) or -er (puer, ager), and neuter in -um (bellum, dōnum). Masculine endings: nom -us, gen -ī, dat -ō, acc -um, abl -ō; plural nom -ī, gen -ōrum, dat/abl -īs, acc -ōs. Neuters have nom = acc in -um (pl. -a), otherwise like the masculine. Nouns in -ius and -ium often contract the genitive singular to -ī. The vocative singular of -us nouns is -e (serve), and of -ius nouns is -ī (fīlī)."
+  },
+  {
+    "id": "ag-decl3",
+    "ref": "37",
+    "title": "Third declension nouns",
+    "order": 30,
+    "text": "Third-declension nouns show many nominative forms but share the genitive singular -is, which reveals the stem (rēx, rēgis; corpus, corporis). Endings on the stem: gen -is, dat -ī, acc -em (neuters = nom), abl -e; plural nom -ēs (neut -a), gen -um, dat/abl -ibus, acc -ēs (neut -a). Gender must be learned per word. Because the nominative rarely shows the stem, always memorise a third-declension noun with its genitive."
+  },
+  {
+    "id": "ag-decl3i",
+    "ref": "66",
+    "title": "Third declension i-stems",
+    "order": 35,
+    "text": "I-stem nouns of the third declension take genitive plural -ium instead of -um (cīvis, cīvium; urbs, urbium; mare, marium). They include: masc./fem. nouns with nom = gen syllable count (cīvis, nūbēs), nouns whose stem ends in two consonants (urbs, pars), and neuters in -e, -al, -ar (mare, animal), which also have ablative singular -ī and nom/acc plural -ia."
+  },
+  {
+    "id": "ag-decl4",
+    "ref": "88",
+    "title": "Fourth declension nouns",
+    "order": 40,
+    "text": "Fourth-declension nouns end in -us (mostly masculine: manus, exercitus, senātus) or -ū (neuter: cornū, genū). Masculine endings: nom -us, gen -ūs, dat -uī, acc -um, abl -ū; plural nom -ūs, gen -uum, dat/abl -ibus, acc -ūs. A handful are feminine (manus, domus). Note domus is partly second-declension. Do not confuse the fourth-declension genitive singular -ūs with the second-declension nominative -us."
+  },
+  {
+    "id": "ag-decl5",
+    "ref": "96",
+    "title": "Fifth declension nouns",
+    "order": 50,
+    "text": "Fifth-declension nouns end in -ēs and are feminine (rēs, spēs, fidēs), except diēs (usually masculine). Endings: nom -ēs, gen -eī/-ēī, dat -eī/-ēī, acc -em, abl -ē; plural nom/acc -ēs, gen -ērum, dat/abl -ēbus. Only rēs and diēs are fully declined in the plural. The genitive/dative singular ends -ēī after a vowel (diēī) and -eī after a consonant (reī)."
+  },
+  {
+    "id": "ag-adj12",
+    "ref": "110",
+    "title": "First/second-declension adjectives",
+    "order": 60,
+    "text": "Adjectives of the first and second declension have three sets of endings: masculine like servus/puer (2nd), feminine like rosa (1st), neuter like bellum (2nd). Thus bonus, bona, bonum; miser, misera, miserum; pulcher, pulchra, pulchrum. An adjective agrees with its noun in gender, number, and case, but need not share the same declension or ending (poēta bonus, manus magna)."
+  },
+  {
+    "id": "ag-adj3",
+    "ref": "115",
+    "title": "Third-declension adjectives",
+    "order": 70,
+    "text": "Third-declension adjectives are i-stems: ablative singular -ī, neuter plural -ia, genitive plural -ium. They come as: three-termination (ācer, ācris, ācre), two-termination (fortis m/f, forte n), and one-termination (nom. the same for all genders: fēlīx, gen. fēlīcis). Example endings for fortis: sg. nom -is/-e, gen -is, dat -ī, acc -em/-e, abl -ī; pl. nom -ēs/-ia, gen -ium, dat/abl -ibus."
+  },
+  {
+    "id": "ag-adjcomp",
+    "ref": "124",
+    "title": "Comparison of adjectives",
+    "order": 80,
+    "text": "The comparative adds -ior (m/f), -ius (n) to the stem and declines like a third-declension noun (non-i-stem): altior, altius; gen. altiōris. The superlative adds -issimus, -a, -um (altissimus). Adjectives in -er form the superlative in -errimus (pulcherrimus); several in -lis form -limus (facilis, facillimus). Comparison of common irregulars: bonus, melior, optimus; malus, pēior, pessimus; magnus, māior, maximus; parvus, minor, minimus; multus, plūs, plūrimus."
+  },
+  {
+    "id": "ag-adverbs",
+    "ref": "214",
+    "title": "Formation of adverbs",
+    "order": 90,
+    "text": "Adverbs are formed from adjectives: first/second-declension adjectives take -ē (lātē from lātus), third-declension take -iter (fortiter from fortis; -er after -nt-, e.g. sapienter). The comparative adverb is the neuter singular of the comparative adjective (-ius, e.g. lātius); the superlative adverb ends -ē/-ō (lātissimē). Irregulars: bene, melius, optimē; male, pēius, pessimē; multum, plūs, plūrimum."
+  },
+  {
+    "id": "ag-pron-pers",
+    "ref": "143",
+    "title": "Personal and reflexive pronouns",
+    "order": 100,
+    "text": "Personal pronouns: ego, meī, mihi, mē, mē; tū, tuī, tibi, tē, tē; plural nōs (nostrum/nostrī, nōbīs, nōs) and vōs. There is no distinct third-person personal pronoun; is/ea/id serves. The reflexive of the third person is suī, sibi, sē, sē (same singular and plural), referring back to the subject. Possessives are the adjectives meus, tuus, suus, noster, vester."
+  },
+  {
+    "id": "ag-pron-dem",
+    "ref": "146",
+    "title": "Demonstrative pronouns (hic, ille, is)",
+    "order": 110,
+    "text": "Demonstratives point out: hic, haec, hoc ‘this (near me)’; ille, illa, illud ‘that (yonder)’; is, ea, id ‘this/that, he/she/it’. They share the pronominal pattern: genitive singular -īus (huius, illīus, eius), dative singular -ī (huic, illī, eī). Used with a noun they are adjectives (hic vir); used alone they are pronouns (is dīxit). Ipse (self) and īdem (same) follow the same pattern."
+  },
+  {
+    "id": "ag-pron-rel",
+    "ref": "150",
+    "title": "Relative and interrogative pronouns",
+    "order": 120,
+    "text": "The relative quī, quae, quod introduces a subordinate clause and agrees with its antecedent in gender and number, but takes its case from its function in the relative clause (vir quem videō). Declension: gen. cuius, dat. cui, and otherwise like an i-stem. The interrogative pronoun quis, quid ‘who? what?’ asks a question; the interrogative adjective is quī, quae, quod ‘which?’."
+  },
+  {
+    "id": "ag-verb-pres",
+    "ref": "174",
+    "title": "Present indicative active (four conjugations)",
+    "order": 130,
+    "text": "The present tense uses the present stem plus personal endings -ō/-m, -s, -t, -mus, -tis, -nt. 1st conj. (amō): amō, amās, amat, amāmus, amātis, amant. 2nd (moneō): moneō, monēs, monet… 3rd (regō): regō, regis, regit, regimus, regitis, regunt. 3rd -iō (capiō): capiō, capis, capit… capiunt. 4th (audiō): audiō, audīs, audit… audiunt. The conjugation is identified by the infinitive's stem vowel (-āre, -ēre, -ere, -īre)."
+  },
+  {
+    "id": "ag-verb-impf",
+    "ref": "175",
+    "title": "Imperfect indicative active",
+    "order": 140,
+    "text": "The imperfect denotes continued or repeated past action (‘was/were …ing’, ‘used to …’). It inserts -bā- between the present stem and the endings -m, -s, -t, -mus, -tis, -nt: amābam, amābās, amābat, amābāmus, amābātis, amābant. Third and fourth conjugations lengthen the stem vowel: regēbam, capiēbam, audiēbam. The irregular sum forms eram, erās, erat…"
+  },
+  {
+    "id": "ag-verb-fut",
+    "ref": "176",
+    "title": "Future indicative active",
+    "order": 150,
+    "text": "The future has two patterns. First and second conjugations use -bi- (amābō, amābis, amābit, amābimus, amābitis, amābunt; monēbō…). Third and fourth conjugations use a vowel change to -am/-ēs (regam, regēs, reget, regēmus, regētis, regent; capiam…; audiam…). Sum forms erō, eris, erit, erimus, eritis, erunt."
+  },
+  {
+    "id": "ag-verb-perf",
+    "ref": "177",
+    "title": "Perfect indicative active",
+    "order": 160,
+    "text": "The perfect (‘have …ed’, simple past) is built on the perfect stem (third principal part minus -ī) plus the endings -ī, -istī, -it, -imus, -istis, -ērunt: amāvī, amāvistī, amāvit, amāvimus, amāvistis, amāvērunt. Perfect stems vary: -v- (amāvī), -u- (monuī), -s- (rēxī), reduplication (cucurrī), or vowel change (ēgī). These endings are the same for every conjugation."
+  },
+  {
+    "id": "ag-verb-plupf",
+    "ref": "178",
+    "title": "Pluperfect and future perfect active",
+    "order": 170,
+    "text": "Both are built on the perfect stem. The pluperfect (‘had …ed’) adds -eram, -erās, -erat, -erāmus, -erātis, -erant: amāveram. The future perfect (‘will have …ed’) adds -erō, -eris, -erit, -erimus, -eritis, -erint: amāverō. These endings resemble the imperfect and future of sum, attached to the perfect stem."
+  },
+  {
+    "id": "ag-verb-passive",
+    "ref": "179",
+    "title": "Present-system passive",
+    "order": 180,
+    "text": "The passive of the present, imperfect, and future uses the endings -r, -ris, -tur, -mur, -minī, -ntur. Present: amor, amāris, amātur, amāmur, amāminī, amantur. Imperfect: amābar, amābāris… Future: amābor, amāberis (note -be-), amābitur… Third/fourth conjugations: regor, regeris, regitur…; audior, audīris… The perfect-system passive is formed differently (participle + sum)."
+  },
+  {
+    "id": "ag-verb-perfpass",
+    "ref": "180",
+    "title": "Perfect-system passive",
+    "order": 190,
+    "text": "The perfect passive is a compound: the perfect passive participle (fourth principal part, agreeing with the subject in gender and number) plus the present of sum. Perfect: amātus sum ‘I was/have been loved’; pluperfect: amātus eram; future perfect: amātus erō. The participle agrees like an adjective: puella amāta est, puerī amātī sunt."
+  },
+  {
+    "id": "ag-verb-subj-pres",
+    "ref": "263",
+    "title": "Present subjunctive",
+    "order": 200,
+    "text": "The present subjunctive changes the stem vowel. First conjugation uses -ē- (amem, amēs, amet, amēmus, amētis, ament); the others use -ā- (moneam, regam, capiam, audiam). Mnemonic: ‘she wears a diamond’ (1st → e, rest → a). The subjunctive expresses wishes, exhortations, and appears in many subordinate clauses (purpose, result, indirect question). Sum: sim, sīs, sit, sīmus, sītis, sint."
+  },
+  {
+    "id": "ag-verb-subj-impf",
+    "ref": "265",
+    "title": "Imperfect and pluperfect subjunctive",
+    "order": 210,
+    "text": "The imperfect subjunctive is the present active infinitive plus personal endings: amārem, amārēs, amāret…; regerem; audīrem; essem (from esse). The pluperfect subjunctive is the perfect active infinitive plus endings: amāvissem, rēxissem, audīvissem, fuissem. These tenses are used in past-time subordinate clauses and in contrary-to-fact conditions."
+  },
+  {
+    "id": "ag-verb-imperative",
+    "ref": "182",
+    "title": "The imperative",
+    "order": 220,
+    "text": "The present imperative gives commands. Singular = present stem (amā, monē, rege, cape, audī); plural adds -te (amāte, monēte, regite, capite, audīte). Four verbs drop the -e in the singular: dīc, dūc, fac, fer (plural dīcite, dūcite, facite, ferte). Negative commands use nōlī/nōlīte + infinitive (nōlī timēre ‘do not fear’). The passive imperative ends -re/-minī."
+  },
+  {
+    "id": "ag-verb-infinitives",
+    "ref": "270",
+    "title": "The infinitives",
+    "order": 230,
+    "text": "Latin has six infinitives. Present active -re (amāre) and passive -rī/-ī (amārī, regī); perfect active -isse (amāvisse) and passive (amātus esse); future active (amātūrus esse) and passive (amātum īrī). The present infinitive names the second principal part and identifies the conjugation. Infinitives are heavily used in indirect statement, where the subject stands in the accusative."
+  },
+  {
+    "id": "ag-verb-participles",
+    "ref": "233",
+    "title": "The participles",
+    "order": 240,
+    "text": "Latin has four participles: present active -ns, -ntis (amāns ‘loving’, declined as a third-declension adjective); perfect passive -tus/-sus (amātus ‘having been loved’, declined 1st/2nd); future active -tūrus (amātūrus ‘about to love’); and the gerundive -ndus (amandus ‘to be loved’, expressing necessity). A participle agrees with its noun in gender, number, and case."
+  },
+  {
+    "id": "ag-irreg-sum",
+    "ref": "170",
+    "title": "The verb sum and its compounds",
+    "order": 250,
+    "text": "Sum ‘to be’ is irregular: present sum, es, est, sumus, estis, sunt; imperfect eram…; future erō…; perfect fuī…. Its compound possum ‘to be able’ prefixes pot-/pos- (possum, potes, potest, possumus, potestis, possunt; imperfect poteram; perfect potuī) and governs a complementary infinitive (possum vidēre ‘I can see’). Sum links a subject to a predicate nominative."
+  },
+  {
+    "id": "ag-irreg-eo-fero-volo",
+    "ref": "203",
+    "title": "Irregular verbs: eō, ferō, volō",
+    "order": 260,
+    "text": "Eō ‘to go’: eō, īs, it, īmus, ītis, eunt; infinitive īre; perfect iī/īvī. Ferō ‘to carry’ lacks the connecting vowel in places: ferō, fers, fert, ferimus, fertis, ferunt; infinitive ferre; perfect tulī; participle lātus. Volō ‘to wish’: volō, vīs, vult, volumus, vultis, volunt; infinitive velle; perfect voluī; and its compounds nōlō (‘be unwilling’) and mālō (‘prefer’)."
+  },
+  {
+    "id": "ag-case-nom-voc",
+    "ref": "339",
+    "title": "The nominative and vocative",
+    "order": 270,
+    "text": "The nominative names the subject of a finite verb (puella cantat) and the predicate noun or adjective after a linking verb (Rōma est urbs; vir est fortis), which agrees with the subject. The vocative addresses someone directly (audī, amīce). The vocative is identical to the nominative except in second-declension -us nouns (voc. -e, serve) and -ius nouns (voc. -ī, fīlī)."
+  },
+  {
+    "id": "ag-case-acc",
+    "ref": "386",
+    "title": "The accusative case",
+    "order": 280,
+    "text": "The accusative marks the direct object of a transitive verb (puellam videō). It also expresses extent of space and duration of time (multōs annōs ‘for many years’; decem pedēs ‘ten feet’), the goal of motion with certain place names (Rōmam eō), and the subject of an infinitive in indirect statement. Some prepositions (ad, in ‘into’, per, trāns, ante, post) govern the accusative."
+  },
+  {
+    "id": "ag-case-gen",
+    "ref": "342",
+    "title": "The genitive case",
+    "order": 290,
+    "text": "The genitive chiefly expresses possession or connection (‘of’): liber puerī ‘the boy's book’. Other common uses: the partitive genitive (pars mīlitum ‘part of the soldiers’, satis pecūniae ‘enough money’), the genitive of description (vir magnae virtūtis), and the objective genitive (amor patriae ‘love of country’). It depends on another noun, not on the verb."
+  },
+  {
+    "id": "ag-case-dat",
+    "ref": "360",
+    "title": "The dative case",
+    "order": 300,
+    "text": "The dative marks the person or thing indirectly affected — the indirect object (‘to/for’): puellae rosam dō ‘I give a rose to the girl’. It also appears as the dative of reference or advantage (mihi ‘for me’), with certain intransitive verbs (crēdō, pāreō, persuādeō + dat.), and as the dative of possessor with sum (mihi est liber ‘I have a book’)."
+  },
+  {
+    "id": "ag-case-abl",
+    "ref": "398",
+    "title": "The ablative case",
+    "order": 310,
+    "text": "The ablative covers three original ideas: separation (‘from’), means/instrument (‘with, by’), and location (‘in, at’). Key uses without a preposition: means (gladiō ‘with a sword’), manner (magnā cūrā), and time when (prīmā lūce ‘at dawn’). With prepositions: ab/dē/ex + abl. for source, cum + abl. for accompaniment, in/sub + abl. for place where. The agent of a passive verb is ā/ab + ablative (ā rēge)."
+  },
+  {
+    "id": "ag-ablabs",
+    "ref": "419",
+    "title": "The ablative absolute",
+    "order": 320,
+    "text": "The ablative absolute is a noun (or pronoun) and a participle, both in the ablative, standing grammatically apart from the rest of the sentence and setting a circumstance: urbe captā, hostēs discessērunt ‘the city having been captured, the enemy withdrew’. It is usually rendered in English with ‘when/since/after/although’. Because sum has no present participle, two nouns or a noun and adjective may stand alone: Caesare duce ‘with Caesar as leader’."
+  },
+  {
+    "id": "ag-agreement",
+    "ref": "280",
+    "title": "Agreement of adjectives and verbs",
+    "order": 330,
+    "text": "A finite verb agrees with its subject in person and number (puer currit; puerī currunt). An adjective (or participle) agrees with the noun it modifies in gender, number, and case (bonae puellae, dat. sg.). A predicate adjective after sum agrees with the subject (viae longae sunt). With two subjects joined by et, the verb is usually plural."
+  },
+  {
+    "id": "ag-questions",
+    "ref": "332",
+    "title": "Questions",
+    "order": 340,
+    "text": "A yes/no question may attach the enclitic -ne to the first word (videsne? ‘do you see?’). Nōnne expects the answer ‘yes’ (nōnne vidēs? ‘surely you see?’), while num expects ‘no’ (num timēs? ‘you aren't afraid, are you?’). Information questions use interrogative words: quis, quid, cūr, ubi, quandō, quōmodo, quot. An indirect question depends on a verb of asking or knowing and takes the subjunctive."
+  },
+  {
+    "id": "ag-purpose-result",
+    "ref": "531",
+    "title": "Purpose and result clauses",
+    "order": 350,
+    "text": "Purpose clauses tell why an action is done: ut (negative nē) + subjunctive (venit ut videat ‘he comes in order to see’; nē videat ‘so that he may not see’). Result clauses tell what follows, often flagged by tam, tantus, tālis, ita, sīc in the main clause: ut (negative ut nōn) + subjunctive (tam fortis est ut vincat ‘he is so brave that he wins’). Both use the present or imperfect subjunctive by sequence of tenses."
+  },
+  {
+    "id": "ag-indirect-statement",
+    "ref": "579",
+    "title": "Indirect statement",
+    "order": 360,
+    "text": "After verbs of saying, thinking, knowing, and perceiving (dīcō, putō, sciō, videō, audiō), Latin reports a statement with the accusative-and-infinitive construction: the subject goes into the accusative and the verb into an infinitive. Dīcit puellam cantāre ‘he says that the girl is singing’; present infinitive = same time, perfect infinitive = prior time, future infinitive = later time. There is no word for ‘that’."
+  },
+  {
+    "id": "ag-conditions",
+    "ref": "513",
+    "title": "Conditional sentences",
+    "order": 370,
+    "text": "A condition has a protasis (sī/nisi clause) and an apodosis (main clause). Simple/factual conditions use the indicative (sī id facis, errās ‘if you are doing this, you are wrong’). Future-more-vivid uses the future indicative (sī veniēs, gaudēbō). Contrary-to-fact conditions use the subjunctive: present (imperfect subj., ‘if… were… would…’, sī id facerēs, errārēs) and past (pluperfect subj., ‘if… had…, would have…’)."
+  }
+]

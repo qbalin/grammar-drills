@@ -1,0 +1,665 @@
+[
+ {
+  "id": "ag-case-acc-t1",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The greedy king destroyed the enemy city through many years of war.",
+    "answer": "Rēx avārus urbem hostium per multōs annōs bellī dēlēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "avārus",
+     "urbem",
+     "hostium",
+     "per",
+     "multōs",
+     "annōs",
+     "bellī",
+     "dēlēvit"
+    ]
+   },
+   {
+    "prompt": "We saw the poison hidden in the golden cup.",
+    "answer": "Venēnum in pōculō aureō occultum vīdimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Venēnum",
+     "in",
+     "pōculō",
+     "aureō",
+     "occultum",
+     "vīdimus"
+    ]
+   },
+   {
+    "prompt": "For ten years the soldiers guarded the walls of the town.",
+    "answer": "Decem annōs mīlitēs mūrōs oppidī custōdiēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Decem",
+     "annōs",
+     "mīlitēs",
+     "mūrōs",
+     "oppidī",
+     "custōdiēbant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t2",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The exile wandered through unknown lands for many months.",
+    "answer": "Exsul per ignōtās terrās multōs mēnsēs errābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Exsul",
+     "per",
+     "ignōtās",
+     "terrās",
+     "multōs",
+     "mēnsēs",
+     "errābat"
+    ]
+   },
+   {
+    "prompt": "The old man endured great grief for three whole years.",
+    "answer": "Senex magnum dolōrem trēs tōtōs annōs tulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "magnum",
+     "dolōrem",
+     "trēs",
+     "tōtōs",
+     "annōs",
+     "tulit"
+    ]
+   },
+   {
+    "prompt": "The greedy merchant sailed across the sea to gather riches.",
+    "answer": "Mercātor avārus trāns mare nāvigāvit ut dīvitiās colligeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "avārus",
+     "trāns",
+     "mare",
+     "nāvigāvit",
+     "ut",
+     "dīvitiās",
+     "colligeret"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t3",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "After the war the weary general returned to Athens.",
+    "answer": "Post bellum dux fessus Athēnās rediit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "bellum",
+     "dux",
+     "fessus",
+     "Athēnās",
+     "rediit"
+    ]
+   },
+   {
+    "prompt": "The messengers hurried to Carthage to announce the victory.",
+    "answer": "Nūntiī Carthāginem contendērunt ut victōriam nūntiārent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntiī",
+     "Carthāginem",
+     "contendērunt",
+     "ut",
+     "victōriam",
+     "nūntiārent"
+    ]
+   },
+   {
+    "prompt": "My brother set out for the countryside at dawn.",
+    "answer": "Frāter meus prīmā lūce rūs profectus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Frāter",
+     "meus",
+     "prīmā",
+     "lūce",
+     "rūs",
+     "profectus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The fugitive slaves fled home through the dark woods.",
+    "answer": "Servī fugitīvī per silvās obscūrās domum fūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Servī",
+     "fugitīvī",
+     "per",
+     "silvās",
+     "obscūrās",
+     "domum",
+     "fūgērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t4",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The poet says that the queen loves her generous lover.",
+    "answer": "Poēta rēgīnam generōsum amātōrem amāre dīcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "rēgīnam",
+     "generōsum",
+     "amātōrem",
+     "amāre",
+     "dīcit"
+    ]
+   },
+   {
+    "prompt": "We believe that the greedy enemy covet our fields.",
+    "answer": "Hostēs avārōs agrōs nostrōs cupere crēdimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostēs",
+     "avārōs",
+     "agrōs",
+     "nostrōs",
+     "cupere",
+     "crēdimus"
+    ]
+   },
+   {
+    "prompt": "The witness swore that the accused man had fled to Rome.",
+    "answer": "Testis reum Rōmam fūgisse iūrāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "reum",
+     "Rōmam",
+     "fūgisse",
+     "iūrāvit"
+    ]
+   },
+   {
+    "prompt": "The scout reported that the columns were approaching the camp.",
+    "answer": "Explōrātor agmina castra petere nūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Explōrātor",
+     "agmina",
+     "castra",
+     "petere",
+     "nūntiāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t5",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The brave youth threw himself into the raging flames.",
+    "answer": "Iuvenis fortis sē in flammās furentēs iēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iuvenis",
+     "fortis",
+     "sē",
+     "in",
+     "flammās",
+     "furentēs",
+     "iēcit"
+    ]
+   },
+   {
+    "prompt": "Before dawn the army marched through the enemy fields.",
+    "answer": "Ante lūcem exercitus per agrōs hostium iter fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ante",
+     "lūcem",
+     "exercitus",
+     "per",
+     "agrōs",
+     "hostium",
+     "iter",
+     "fēcit"
+    ]
+   },
+   {
+    "prompt": "The rumor spread among the crowd against the cruel tyrant.",
+    "answer": "Fāma per catervam contrā tyrannum crūdēlem mānāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fāma",
+     "per",
+     "catervam",
+     "contrā",
+     "tyrannum",
+     "crūdēlem",
+     "mānāvit"
+    ]
+   },
+   {
+    "prompt": "They carried the wounded man across the bridge into the city.",
+    "answer": "Vulnerātum trāns pontem in urbem portāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vulnerātum",
+     "trāns",
+     "pontem",
+     "in",
+     "urbem",
+     "portāvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t6",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The farmer, fearing loss, hid the grain gathered in autumn.",
+    "answer": "Agricola damnum timēns frūmentum autumnō collēctum cēlāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "damnum",
+     "timēns",
+     "frūmentum",
+     "autumnō",
+     "collēctum",
+     "cēlāvit"
+    ]
+   },
+   {
+    "prompt": "The maiden picked fragrant flowers along the winding shore.",
+    "answer": "Virgō flōrēs suāvēs per lītus sinuōsum lēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "flōrēs",
+     "suāvēs",
+     "per",
+     "lītus",
+     "sinuōsum",
+     "lēgit"
+    ]
+   },
+   {
+    "prompt": "The victors seized the spoils and the remnants of the fleet.",
+    "answer": "Victōrēs praedam et reliquiās classis rapuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Victōrēs",
+     "praedam",
+     "et",
+     "reliquiās",
+     "classis",
+     "rapuērunt"
+    ]
+   },
+   {
+    "prompt": "The philosopher taught the young men wisdom for many years.",
+    "answer": "Philosophus iuvenēs sapientiam multōs annōs docuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "iuvenēs",
+     "sapientiam",
+     "multōs",
+     "annōs",
+     "docuit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t7",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The shameless orator openly confessed his own crime before the citizens.",
+    "answer": "Ōrātor impudīcus flāgitium suum ante cīvēs manifēstō cōnfessus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "impudīcus",
+     "flāgitium",
+     "suum",
+     "ante",
+     "cīvēs",
+     "manifēstō",
+     "cōnfessus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The kind host filled the golden cups with sweet wine.",
+    "answer": "Hospes cōmis aureōs calicēs dulcī vīnō complēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hospes",
+     "cōmis",
+     "aureōs",
+     "calicēs",
+     "dulcī",
+     "vīnō",
+     "complēvit"
+    ]
+   },
+   {
+    "prompt": "The naked robber feared the harsh punishment decreed by the judge.",
+    "answer": "Latrō nūdus dūram poenam ā iūdice dēcrētam timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Latrō",
+     "nūdus",
+     "dūram",
+     "poenam",
+     "ā",
+     "iūdice",
+     "dēcrētam",
+     "timēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t8",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The stubborn soldier resisted the enemy for many days.",
+    "answer": "Mīles pertināx multōs diēs hostibus restitit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīles",
+     "pertināx",
+     "multōs",
+     "diēs",
+     "hostibus",
+     "restitit"
+    ]
+   },
+   {
+    "prompt": "The maddened queen wept for three whole nights.",
+    "answer": "Rēgīna āmēns trēs tōtās noctēs flēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "āmēns",
+     "trēs",
+     "tōtās",
+     "noctēs",
+     "flēvit"
+    ]
+   },
+   {
+    "prompt": "The exhausted farmer had labored in the fields for many years.",
+    "answer": "Agricola dēfessus multōs annōs in agrīs labōrāverat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "dēfessus",
+     "multōs",
+     "annōs",
+     "in",
+     "agrīs",
+     "labōrāverat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t9",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "As soon as the war ended, the tired legions hurried to Rome.",
+    "answer": "Bellō confectō legiōnēs fessae Rōmam contendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bellō",
+     "confectō",
+     "legiōnēs",
+     "fessae",
+     "Rōmam",
+     "contendērunt"
+    ]
+   },
+   {
+    "prompt": "The merchant, hoping for great profit, sailed to Athens.",
+    "answer": "Mercātor magnum lucrum spērāns Athēnās nāvigāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "magnum",
+     "lucrum",
+     "spērāns",
+     "Athēnās",
+     "nāvigāvit"
+    ]
+   },
+   {
+    "prompt": "After the storm the sailors returned home safe.",
+    "answer": "Post tempestātem nautae incolumēs domum revertērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "tempestātem",
+     "nautae",
+     "incolumēs",
+     "domum",
+     "revertērunt"
+    ]
+   },
+   {
+    "prompt": "The messenger, sent by the consul, ran into the countryside.",
+    "answer": "Nūntius ā cōnsule missus rūs cucurrit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "ā",
+     "cōnsule",
+     "missus",
+     "rūs",
+     "cucurrit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t10",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The fugitive slaves fled across the wide river at night.",
+    "answer": "Servī fugitīvī trāns lātum flūmen noctū fūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Servī",
+     "fugitīvī",
+     "trāns",
+     "lātum",
+     "flūmen",
+     "noctū",
+     "fūgērunt"
+    ]
+   },
+   {
+    "prompt": "The innocent boy walked through the dark woods toward the temple.",
+    "answer": "Puer innoxius per silvās obscūrās ad templum ambulāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puer",
+     "innoxius",
+     "per",
+     "silvās",
+     "obscūrās",
+     "ad",
+     "templum",
+     "ambulāvit"
+    ]
+   },
+   {
+    "prompt": "Before the battle the leader encouraged his men against the enemy.",
+    "answer": "Ante proelium dux suōs contrā hostem hortātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ante",
+     "proelium",
+     "dux",
+     "suōs",
+     "contrā",
+     "hostem",
+     "hortātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "After the victory the crowd poured into the open forum.",
+    "answer": "Post victōriam turba in forum apertum sē effūdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "victōriam",
+     "turba",
+     "in",
+     "forum",
+     "apertum",
+     "sē",
+     "effūdit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t11",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The witness swears that the guilty man committed the crime openly.",
+    "answer": "Testis iūrat reum flāgitium manifēstō commīsisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "iūrat",
+     "reum",
+     "flāgitium",
+     "manifēstō",
+     "commīsisse"
+    ]
+   },
+   {
+    "prompt": "Everyone believes that the brave general will conquer the enemy.",
+    "answer": "Omnēs putant fortem ducem hostēs superātūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnēs",
+     "putant",
+     "fortem",
+     "ducem",
+     "hostēs",
+     "superātūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The poet declares that the gods watch over pious men.",
+    "answer": "Poēta deōs piōs hominēs cūrāre affirmat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "deōs",
+     "piōs",
+     "hominēs",
+     "cūrāre",
+     "affirmat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-case-acc-t12",
+  "sectionId": "ag-case-acc",
+  "questions": [
+   {
+    "prompt": "The remorseful thief returned the stolen gold to its owner.",
+    "answer": "Fūr paenitēns aurum surreptum dominō reddidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fūr",
+     "paenitēns",
+     "aurum",
+     "surreptum",
+     "dominō",
+     "reddidit"
+    ]
+   },
+   {
+    "prompt": "For many hours the orator held the attention of the whole crowd.",
+    "answer": "Multās hōrās ōrātor tōtīus turbae animōs tenuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Multās",
+     "hōrās",
+     "ōrātor",
+     "tōtīus",
+     "turbae",
+     "animōs",
+     "tenuit"
+    ]
+   },
+   {
+    "prompt": "The conspicuous elm, struck by lightning, fell across the road.",
+    "answer": "Ulmus conspicua fulmine icta trāns viam cecidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ulmus",
+     "conspicua",
+     "fulmine",
+     "icta",
+     "trāns",
+     "viam",
+     "cecidit"
+    ]
+   },
+   {
+    "prompt": "They report that the exile wandered for many years through foreign cities.",
+    "answer": "Nūntiant exulem multōs annōs per urbēs externās errāvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntiant",
+     "exulem",
+     "multōs",
+     "annōs",
+     "per",
+     "urbēs",
+     "externās",
+     "errāvisse"
+    ]
+   }
+  ]
+ }
+]

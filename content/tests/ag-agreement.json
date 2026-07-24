@@ -1,0 +1,736 @@
+[
+ {
+  "id": "ag-agreement-t1",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The severe judge and the truthful witness were feared by the guilty.",
+    "answer": "Iūdex sevērus et testis vēridicus ā nocentibus timēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūdex",
+     "sevērus",
+     "et",
+     "testis",
+     "vēridicus",
+     "ā",
+     "nocentibus",
+     "timēbantur"
+    ]
+   },
+   {
+    "prompt": "The gentle words of the poet soothed the troubled minds.",
+    "answer": "Verba mītia poētae animōs turbātōs mītigābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Verba",
+     "mītia",
+     "poētae",
+     "animōs",
+     "turbātōs",
+     "mītigābant"
+    ]
+   },
+   {
+    "prompt": "Long are the roads that lead to the barbarian kingdoms.",
+    "answer": "Longae sunt viae quae ad rēgna barbara dūcunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Longae",
+     "sunt",
+     "viae",
+     "quae",
+     "ad",
+     "rēgna",
+     "barbara",
+     "dūcunt"
+    ]
+   },
+   {
+    "prompt": "The measured verses and the honorable deeds are praised by all.",
+    "answer": "Versūs mēnsī et facta honesta ab omnibus laudantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Versūs",
+     "mēnsī",
+     "et",
+     "facta",
+     "honesta",
+     "ab",
+     "omnibus",
+     "laudantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t2",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The dear friend and her stern mother are coming into the city.",
+    "answer": "Amīca cāra et sevēra māter in urbem veniunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amīca",
+     "cāra",
+     "et",
+     "sevēra",
+     "māter",
+     "in",
+     "urbem",
+     "veniunt"
+    ]
+   },
+   {
+    "prompt": "The mingled crowd shouts, while the fearful leader remains silent.",
+    "answer": "Turba mixta clāmat, dum dux timidus tacet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Turba",
+     "mixta",
+     "clāmat",
+     "dum",
+     "dux",
+     "timidus",
+     "tacet"
+    ]
+   },
+   {
+    "prompt": "The greedy kings, having been warned, feared the coming war.",
+    "answer": "Rēgēs avidī, monitī, bellum ventūrum timēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgēs",
+     "avidī",
+     "monitī",
+     "bellum",
+     "ventūrum",
+     "timēbant"
+    ]
+   },
+   {
+    "prompt": "Bright are the stars which shine over the quiet fields.",
+    "answer": "Clārae sunt stēllae quae super agrōs quiētōs nitent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Clārae",
+     "sunt",
+     "stēllae",
+     "quae",
+     "super",
+     "agrōs",
+     "quiētōs",
+     "nitent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t3",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The old man and the wise woman composed a long tragedy together.",
+    "answer": "Senex et fēmina sapiēns longam tragoediam ūnā composuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "et",
+     "fēmina",
+     "sapiēns",
+     "longam",
+     "tragoediam",
+     "ūnā",
+     "composuērunt"
+    ]
+   },
+   {
+    "prompt": "The frightened soldiers, roused by the trumpet, seized their weapons.",
+    "answer": "Mīlitēs territī, tubā inrītātī, arma rapuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "territī",
+     "tubā",
+     "inrītātī",
+     "arma",
+     "rapuērunt"
+    ]
+   },
+   {
+    "prompt": "The teacher's precepts were harsh, but the students were grateful.",
+    "answer": "Praecepta magistrī sevēra erant, sed discipulī grātī erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Praecepta",
+     "magistrī",
+     "sevēra",
+     "erant",
+     "sed",
+     "discipulī",
+     "grātī"
+    ]
+   },
+   {
+    "prompt": "Great is the desire for glory in the brave young men.",
+    "answer": "Magna est cupiditās glōriae in iuvenibus fortibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magna",
+     "est",
+     "cupiditās",
+     "glōriae",
+     "in",
+     "iuvenibus",
+     "fortibus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t4",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The mixed wine and the sweet honey were placed on the table.",
+    "answer": "Vīnum mixtum et mel dulce in mēnsā posita sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīnum",
+     "mixtum",
+     "et",
+     "mel",
+     "dulce",
+     "in",
+     "mēnsā",
+     "posita",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The words spoken by the truthful old man moved the assembly.",
+    "answer": "Verba dicta ā sene vēridicō contiōnem mōvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Verba",
+     "dicta",
+     "ā",
+     "sene",
+     "vēridicō",
+     "contiōnem",
+     "mōvērunt"
+    ]
+   },
+   {
+    "prompt": "The gentle mistress and her faithful maid were walking through the garden.",
+    "answer": "Domina mītis et ancilla fīda per hortum ambulābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Domina",
+     "mītis",
+     "et",
+     "ancilla",
+     "fīda",
+     "per",
+     "hortum",
+     "ambulābant"
+    ]
+   },
+   {
+    "prompt": "Heavy are the burdens which the weary farmers carry home.",
+    "answer": "Gravia sunt onera quae agricolae fessī domum portant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gravia",
+     "sunt",
+     "onera",
+     "quae",
+     "agricolae",
+     "fessī",
+     "domum",
+     "portant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t5",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The fierce general, having been provoked, threatened the trembling captives.",
+    "answer": "Dux ferōx, inrītātus, captīvīs trementibus minābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "ferōx",
+     "inrītātus",
+     "captīvīs",
+     "trementibus",
+     "minābātur"
+    ]
+   },
+   {
+    "prompt": "The honorable senators and the loyal citizens defend the ancient laws.",
+    "answer": "Senātōrēs honestī et cīvēs fidēlēs lēgēs antīquās dēfendunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senātōrēs",
+     "honestī",
+     "et",
+     "cīvēs",
+     "fidēlēs",
+     "lēgēs",
+     "antīquās",
+     "dēfendunt"
+    ]
+   },
+   {
+    "prompt": "The character of the man is upright, and his deeds are praised.",
+    "answer": "Mōrēs virī honestī sunt, et facta eius laudantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mōrēs",
+     "virī",
+     "honestī",
+     "sunt",
+     "et",
+     "facta",
+     "eius",
+     "laudantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t6",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The savage storm and the raging sea terrified the sailors.",
+    "answer": "Saeva tempestās et īrātum mare nautās terruērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Saeva",
+     "tempestās",
+     "et",
+     "īrātum",
+     "mare",
+     "nautās",
+     "terruērunt"
+    ]
+   },
+   {
+    "prompt": "The girl, warned by her stern father, feared the terrible punishment.",
+    "answer": "Puella, ā patre sevērō monita, poenam timendam metuēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puella",
+     "ā",
+     "patre",
+     "sevērō",
+     "monita",
+     "poenam",
+     "timendam",
+     "metuēbat"
+    ]
+   },
+   {
+    "prompt": "The customs of the barbarians are cruel, and their kings are proud.",
+    "answer": "Mōrēs barbarōrum crūdēlēs sunt, et rēgēs eōrum superbī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mōrēs",
+     "barbarōrum",
+     "crūdēlēs",
+     "sunt",
+     "et",
+     "rēgēs",
+     "eōrum",
+     "superbī"
+    ]
+   },
+   {
+    "prompt": "The composed matron and the eager children awaited the promised gifts.",
+    "answer": "Mātrōna composita et līberī cupidī dōna prōmissa exspectābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mātrōna",
+     "composita",
+     "et",
+     "līberī",
+     "cupidī",
+     "dōna",
+     "prōmissa",
+     "exspectābant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t7",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The brave soldiers, wearied by long marches, sought their distant camp.",
+    "answer": "Fortēs mīlitēs, longīs itineribus fessī, castra remōta petēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fortēs",
+     "mīlitēs",
+     "longīs",
+     "itineribus",
+     "fessī",
+     "castra",
+     "remōta",
+     "petēbant"
+    ]
+   },
+   {
+    "prompt": "The steep mountains are covered with deep snow.",
+    "answer": "Arduī montēs profundā nive teguntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Arduī",
+     "montēs",
+     "profundā",
+     "nive",
+     "teguntur"
+    ]
+   },
+   {
+    "prompt": "The wise judge and the honest witness were praised by the citizens.",
+    "answer": "Sapiēns iūdex et probus testis ā cīvibus laudātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "iūdex",
+     "et",
+     "probus",
+     "testis",
+     "ā",
+     "cīvibus",
+     "laudātī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The exiled king, having lost his kingdom, wandered through remote lands.",
+    "answer": "Rēx exsul, rēgnō āmissō, per terrās remōtās errābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "exsul",
+     "rēgnō",
+     "āmissō",
+     "per",
+     "terrās",
+     "remōtās",
+     "errābat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t8",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The eager students write letters with careful hands.",
+    "answer": "Studiōsī discipulī litterās dīligentibus manibus scrībunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Studiōsī",
+     "discipulī",
+     "litterās",
+     "dīligentibus",
+     "manibus",
+     "scrībunt"
+    ]
+   },
+   {
+    "prompt": "The exempt citizen and the free soldier owe no tribute.",
+    "answer": "Cīvis immūnis et mīles līber nūllum stipendium dēbent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvis",
+     "immūnis",
+     "et",
+     "mīles",
+     "līber",
+     "nūllum",
+     "stipendium",
+     "dēbent"
+    ]
+   },
+   {
+    "prompt": "The generous queen gave great rewards to the loyal attendants.",
+    "answer": "Rēgīna benefica magna praemia fīdīs ministrīs dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "benefica",
+     "magna",
+     "praemia",
+     "fīdīs",
+     "ministrīs",
+     "dedit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t9",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The swift rivers flow down from the snowy mountains.",
+    "answer": "Rapidī fluviī dē montibus nivōsīs dēfluunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rapidī",
+     "fluviī",
+     "dē",
+     "montibus",
+     "nivōsīs",
+     "dēfluunt"
+    ]
+   },
+   {
+    "prompt": "The lethal poison and the hidden dagger were found in the chest.",
+    "answer": "Venēnum lētāle et pūgiō occultus in arcā inventa sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Venēnum",
+     "lētāle",
+     "et",
+     "pūgiō",
+     "occultus",
+     "in",
+     "arcā",
+     "inventa",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The tired travelers, oppressed by the summer heat, rested in the shade.",
+    "answer": "Fessī viātōrēs, aestīvō calōre oppressī, in umbrā quiēscēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fessī",
+     "viātōrēs",
+     "aestīvō",
+     "calōre",
+     "oppressī",
+     "in",
+     "umbrā",
+     "quiēscēbant"
+    ]
+   },
+   {
+    "prompt": "The words of the eloquent orator were pleasing to all.",
+    "answer": "Verba disertī ōrātōris omnibus grāta erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Verba",
+     "disertī",
+     "ōrātōris",
+     "omnibus",
+     "grāta",
+     "erant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t10",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The pious daughter and the devout son honored the household gods.",
+    "answer": "Pia fīlia et pius fīlius Penātēs coluērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pia",
+     "fīlia",
+     "et",
+     "pius",
+     "fīlius",
+     "Penātēs",
+     "coluērunt"
+    ]
+   },
+   {
+    "prompt": "The steep road was long and difficult for the weary legions.",
+    "answer": "Via ardua fessīs legiōnibus longa et difficilis erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Via",
+     "ardua",
+     "fessīs",
+     "legiōnibus",
+     "longa",
+     "et",
+     "difficilis",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "The frightened horses, terrified by thunder, fled across the open field.",
+    "answer": "Territī equī, tonitrū perterritī, per apertum campum fūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Territī",
+     "equī",
+     "tonitrū",
+     "perterritī",
+     "per",
+     "apertum",
+     "campum",
+     "fūgērunt"
+    ]
+   },
+   {
+    "prompt": "The bright stars shine in the silent sky.",
+    "answer": "Clārae stēllae in silentī caelō lūcent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Clārae",
+     "stēllae",
+     "in",
+     "silentī",
+     "caelō",
+     "lūcent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t11",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The greedy merchant and the deceitful moneylender were hated by the poor.",
+    "answer": "Avārus mercātor et fallāx faenerātor ā pauperibus invīsī erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Avārus",
+     "mercātor",
+     "et",
+     "fallāx",
+     "faenerātor",
+     "ā",
+     "pauperibus",
+     "invīsī",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "The sick old man needs quiet and gentle care.",
+    "answer": "Aeger senex quiēte et lēnī cūrā eget.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aeger",
+     "senex",
+     "quiēte",
+     "et",
+     "lēnī",
+     "cūrā",
+     "eget"
+    ]
+   },
+   {
+    "prompt": "The victorious soldiers, adorned with laurel, entered the joyful city.",
+    "answer": "Mīlitēs victōrēs, laurō ōrnātī, laetam urbem intrāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "victōrēs",
+     "laurō",
+     "ōrnātī",
+     "laetam",
+     "urbem",
+     "intrāvērunt"
+    ]
+   },
+   {
+    "prompt": "The letters written by the learned poet are still read.",
+    "answer": "Litterae ā doctō poētā scrīptae adhūc leguntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Litterae",
+     "ā",
+     "doctō",
+     "poētā",
+     "scrīptae",
+     "adhūc",
+     "leguntur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-agreement-t12",
+  "sectionId": "ag-agreement",
+  "questions": [
+   {
+    "prompt": "The cruel tyrant and his savage soldiers destroyed the ancient temple.",
+    "answer": "Crūdēlis tyrannus et saevī mīlitēs antīquum templum dēlēvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crūdēlis",
+     "tyrannus",
+     "et",
+     "saevī",
+     "mīlitēs",
+     "antīquum",
+     "templum",
+     "dēlēvērunt"
+    ]
+   },
+   {
+    "prompt": "The deep waters of the swift river are cold and clear.",
+    "answer": "Altae aquae rapidī flūminis frīgidae et pūrae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Altae",
+     "aquae",
+     "rapidī",
+     "flūminis",
+     "frīgidae",
+     "et",
+     "pūrae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The faithful dog, guarding the threshold, frightened the bold thief.",
+    "answer": "Fīdus canis, līmen custōdiēns, audācem fūrem terruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fīdus",
+     "canis",
+     "līmen",
+     "custōdiēns",
+     "audācem",
+     "fūrem",
+     "terruit"
+    ]
+   },
+   {
+    "prompt": "The golden apples hang from the sacred tree.",
+    "answer": "Aurea māla ā sacrā arbore pendent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aurea",
+     "māla",
+     "ā",
+     "sacrā",
+     "arbore",
+     "pendent"
+    ]
+   }
+  ]
+ }
+]

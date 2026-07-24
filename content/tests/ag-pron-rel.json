@@ -1,0 +1,658 @@
+[
+ {
+  "id": "ag-pron-rel-t1",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "Who gave these weapons to the enemy?",
+    "answer": "Quis haec arma hostibus dōnāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "haec",
+     "arma",
+     "hostibus",
+     "dōnāvit"
+    ]
+   },
+   {
+    "prompt": "The book which you offered me lies upon the table.",
+    "answer": "Liber quem mihi obtulistī in mēnsā iacet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Liber",
+     "quem",
+     "mihi",
+     "obtulistī",
+     "in",
+     "mēnsā",
+     "iacet"
+    ]
+   },
+   {
+    "prompt": "What did the messenger announce in the silence of night?",
+    "answer": "Quid nūntius in silentiō noctis nūntiāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "nūntius",
+     "in",
+     "silentiō",
+     "noctis",
+     "nūntiāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t2",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The woman whose son you praised is my mistress.",
+    "answer": "Fēmina cuius fīlium laudāvistī era mea est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fēmina",
+     "cuius",
+     "fīlium",
+     "laudāvistī",
+     "era",
+     "mea",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Which general led the army across the river?",
+    "answer": "Quī dux exercitum trāns flūmen dūxit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "dux",
+     "exercitum",
+     "trāns",
+     "flūmen",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "The little verses which the poet wrote please everyone.",
+    "answer": "Versiculī quōs poēta scrīpsit omnibus placent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Versiculī",
+     "quōs",
+     "poēta",
+     "scrīpsit",
+     "omnibus",
+     "placent"
+    ]
+   },
+   {
+    "prompt": "To whom did you give the witness's testimony?",
+    "answer": "Cui testimōnium testis dedistī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cui",
+     "testimōnium",
+     "testis",
+     "dedistī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t3",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The soldiers to whom the king gave rewards fought bravely.",
+    "answer": "Mīlitēs quibus rēx praemia dedit fortiter pugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "quibus",
+     "rēx",
+     "praemia",
+     "dedit",
+     "fortiter",
+     "pugnāvērunt"
+    ]
+   },
+   {
+    "prompt": "What frightens the boy who is standing at the door?",
+    "answer": "Quid puerum terret quī ad iānuam stat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "puerum",
+     "terret",
+     "quī",
+     "ad",
+     "iānuam",
+     "stat"
+    ]
+   },
+   {
+    "prompt": "The house into which the enemy rushed was burning.",
+    "answer": "Domus in quam hostēs ruēbant ārdēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Domus",
+     "in",
+     "quam",
+     "hostēs",
+     "ruēbant",
+     "ārdēbat"
+    ]
+   },
+   {
+    "prompt": "Whose are these weapons which lie on the ground?",
+    "answer": "Cuius sunt haec arma quae in terrā iacent?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cuius",
+     "sunt",
+     "haec",
+     "arma",
+     "quae",
+     "in",
+     "terrā",
+     "iacent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t4",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The mistress whom the maid served was cruel.",
+    "answer": "Era cui ancilla ministrābat crūdēlis erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Era",
+     "cui",
+     "ancilla",
+     "ministrābat",
+     "crūdēlis",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "Which words of the tyrant do the people fear?",
+    "answer": "Quae verba tyrannī populus timet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "verba",
+     "tyrannī",
+     "populus",
+     "timet"
+    ]
+   },
+   {
+    "prompt": "The girl blushed, whose cheeks a sudden shame suffused.",
+    "answer": "Puella ērubuit, cuius genās subitus pudor suffūdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puella",
+     "ērubuit",
+     "cuius",
+     "genās",
+     "subitus",
+     "pudor",
+     "suffūdit"
+    ]
+   },
+   {
+    "prompt": "What did the tyrant offer to those whom he feared?",
+    "answer": "Quid tyrannus iīs obtulit quōs timēbat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "tyrannus",
+     "iīs",
+     "obtulit",
+     "quōs",
+     "timēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t5",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The ships which the storm scattered returned to the harbor.",
+    "answer": "Nāvēs quās tempestās dispersit in portum revēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nāvēs",
+     "quās",
+     "tempestās",
+     "dispersit",
+     "in",
+     "portum",
+     "revēnērunt"
+    ]
+   },
+   {
+    "prompt": "Who among the citizens dares to resist the tyrant?",
+    "answer": "Quis cīvium tyrannō resistere audet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "cīvium",
+     "tyrannō",
+     "resistere",
+     "audet"
+    ]
+   },
+   {
+    "prompt": "The letters which I sent to you have been intercepted.",
+    "answer": "Litterae quās ad tē mīsī interceptae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Litterae",
+     "quās",
+     "ad",
+     "tē",
+     "mīsī",
+     "interceptae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "What reward did you offer to the man who saved the city?",
+    "answer": "Quod praemium virō obtulistī quī urbem servāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "praemium",
+     "virō",
+     "obtulistī",
+     "quī",
+     "urbem",
+     "servāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t6",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The friend to whom I entrusted my books has returned them.",
+    "answer": "Amīcus cui librōs meōs crēdidī eōs reddidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amīcus",
+     "cui",
+     "librōs",
+     "meōs",
+     "crēdidī",
+     "eōs",
+     "reddidit"
+    ]
+   },
+   {
+    "prompt": "The gifts which the general offered to the soldiers were splendid.",
+    "answer": "Dōna quae dux mīlitibus obtulit splendida erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dōna",
+     "quae",
+     "dux",
+     "mīlitibus",
+     "obtulit",
+     "splendida",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "Which citizens did the tyrant condemn in silence?",
+    "answer": "Quōs cīvēs tyrannus silentiō damnāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōs",
+     "cīvēs",
+     "tyrannus",
+     "silentiō",
+     "damnāvit"
+    ]
+   },
+   {
+    "prompt": "The mother, whose tears were flowing, embraced her returning son.",
+    "answer": "Māter, cuius lacrimae fluēbant, fīlium redeuntem complexa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māter",
+     "cuius",
+     "lacrimae",
+     "fluēbant",
+     "fīlium",
+     "redeuntem",
+     "complexa",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t7",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The old man whom we praised feared death.",
+    "answer": "Senex quem laudāvimus lētum timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "quem",
+     "laudāvimus",
+     "lētum",
+     "timēbat"
+    ]
+   },
+   {
+    "prompt": "What did the general fear before the enemies' attack?",
+    "answer": "Quid dux ante hostium impetum timēbat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "dux",
+     "ante",
+     "hostium",
+     "impetum",
+     "timēbat"
+    ]
+   },
+   {
+    "prompt": "The girl to whom you gave the puppy is happy.",
+    "answer": "Puella cui catulum dedistī laeta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puella",
+     "cui",
+     "catulum",
+     "dedistī",
+     "laeta",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The tree which the storm destroyed was a tall elm.",
+    "answer": "Arbor quam tempestās dēlēvit alta ulmus erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Arbor",
+     "quam",
+     "tempestās",
+     "dēlēvit",
+     "alta",
+     "ulmus",
+     "erat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t8",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "Who blamed the inexperienced sailor?",
+    "answer": "Quis nautam imperītum culpāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "nautam",
+     "imperītum",
+     "culpāvit"
+    ]
+   },
+   {
+    "prompt": "Which road leads to the dry field?",
+    "answer": "Quae via ad agrum siccum dūcit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "via",
+     "ad",
+     "agrum",
+     "siccum",
+     "dūcit"
+    ]
+   },
+   {
+    "prompt": "To whom did the poet give his only book?",
+    "answer": "Cui poēta librum ūnicum dedit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cui",
+     "poēta",
+     "librum",
+     "ūnicum",
+     "dedit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t9",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The woman who laughs at fools is wise.",
+    "answer": "Fēmina quae stultōs rīdet sapiēns est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fēmina",
+     "quae",
+     "stultōs",
+     "rīdet",
+     "sapiēns",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The gifts which the queen sent pleased the citizens.",
+    "answer": "Dōna quae rēgīna mīsit cīvibus placuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dōna",
+     "quae",
+     "rēgīna",
+     "mīsit",
+     "cīvibus",
+     "placuērunt"
+    ]
+   },
+   {
+    "prompt": "What are you shaping out of the wet clay?",
+    "answer": "Quid ex lutō ūmidō fingis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "ex",
+     "lutō",
+     "ūmidō",
+     "fingis"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t10",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The soldiers whom the leader praised destroyed the walls.",
+    "answer": "Mīlitēs quōs dux laudāvit mūrōs dēlēvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "quōs",
+     "dux",
+     "laudāvit",
+     "mūrōs",
+     "dēlēvērunt"
+    ]
+   },
+   {
+    "prompt": "Which words did the teacher blame?",
+    "answer": "Quae verba magister culpāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "verba",
+     "magister",
+     "culpāvit"
+    ]
+   },
+   {
+    "prompt": "The girls to whom the poet was singing listened eagerly.",
+    "answer": "Puellae quibus poēta canēbat cupidē audiēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puellae",
+     "quibus",
+     "poēta",
+     "canēbat",
+     "cupidē",
+     "audiēbant"
+    ]
+   },
+   {
+    "prompt": "Whom did the frightened boy see in the wood?",
+    "answer": "Quem puer territus in silvā vīdit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quem",
+     "puer",
+     "territus",
+     "in",
+     "silvā",
+     "vīdit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t11",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The horses which we feared fled from the camp.",
+    "answer": "Equī quōs timēbāmus ē castrīs fūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Equī",
+     "quōs",
+     "timēbāmus",
+     "ē",
+     "castrīs",
+     "fūgērunt"
+    ]
+   },
+   {
+    "prompt": "What is permitted to a free citizen in this city?",
+    "answer": "Quid cīvī līberō in hāc urbe licet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "cīvī",
+     "līberō",
+     "in",
+     "hāc",
+     "urbe",
+     "licet"
+    ]
+   },
+   {
+    "prompt": "The messenger whom we did not trust has fled.",
+    "answer": "Nūntius cui nōn crēdidimus fūgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "cui",
+     "nōn",
+     "crēdidimus",
+     "fūgit"
+    ]
+   },
+   {
+    "prompt": "For whom are these unique gifts being prepared?",
+    "answer": "Cui haec dōna ūnica parantur?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cui",
+     "haec",
+     "dōna",
+     "ūnica",
+     "parantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-pron-rel-t12",
+  "sectionId": "ag-pron-rel",
+  "questions": [
+   {
+    "prompt": "The children whom the storm terrified were weeping.",
+    "answer": "Līberī quōs tempestās terruit flēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Līberī",
+     "quōs",
+     "tempestās",
+     "terruit",
+     "flēbant"
+    ]
+   },
+   {
+    "prompt": "Which enemy dared to attack our walls?",
+    "answer": "Quī hostis mūrōs nostrōs oppugnāre ausus est?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "hostis",
+     "mūrōs",
+     "nostrōs",
+     "oppugnāre",
+     "ausus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The woman to whom the king promised a reward smiled.",
+    "answer": "Fēmina cui rēx praemium prōmīsit rīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fēmina",
+     "cui",
+     "rēx",
+     "praemium",
+     "prōmīsit",
+     "rīsit"
+    ]
+   },
+   {
+    "prompt": "What did the older judge decide?",
+    "answer": "Quid iūdex senior dēcrēvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "iūdex",
+     "senior",
+     "dēcrēvit"
+    ]
+   }
+  ]
+ }
+]

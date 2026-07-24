@@ -1,0 +1,666 @@
+[
+ {
+  "id": "ag-adverbs-t1",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The soldiers fought bravely while the walls were being attacked.",
+    "answer": "Mīlitēs fortiter pugnāvērunt dum moenia oppugnantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "fortiter",
+     "pugnāvērunt",
+     "dum",
+     "moenia",
+     "oppugnantur"
+    ]
+   },
+   {
+    "prompt": "The messenger announced the victory clearly to the anxious citizens.",
+    "answer": "Nūntius victōriam clārē cīvibus sollicitīs nūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "victōriam",
+     "clārē",
+     "cīvibus",
+     "sollicitīs",
+     "nūntiāvit"
+    ]
+   },
+   {
+    "prompt": "Having spoken wisely, the old man departed slowly from the forum.",
+    "answer": "Sapienter locūtus, senex tardē ā forō discessit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapienter",
+     "locūtus",
+     "senex",
+     "tardē",
+     "ā",
+     "forō",
+     "discessit"
+    ]
+   },
+   {
+    "prompt": "The swift horse ran more quickly than the others.",
+    "answer": "Equus celer celerius quam cēterī cucurrit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Equus",
+     "celer",
+     "celerius",
+     "quam",
+     "cēterī",
+     "cucurrit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t2",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The general most bravely defended the camp against the enemy.",
+    "answer": "Dux fortissimē castra contrā hostēs dēfendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "fortissimē",
+     "castra",
+     "contrā",
+     "hostēs",
+     "dēfendit"
+    ]
+   },
+   {
+    "prompt": "This poet writes better than that one, but sings badly.",
+    "answer": "Hic poēta melius quam ille scrībit, sed male canit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "poēta",
+     "melius",
+     "quam",
+     "ille",
+     "scrībit",
+     "sed",
+     "male",
+     "canit"
+    ]
+   },
+   {
+    "prompt": "The teacher explained the difficult formula very clearly.",
+    "answer": "Magister difficilem formulam clārissimē explicāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "difficilem",
+     "formulam",
+     "clārissimē",
+     "explicāvit"
+    ]
+   },
+   {
+    "prompt": "The wise woman lived most happily in the small house.",
+    "answer": "Sapiēns fēmina in parvā domō beātissimē vīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "fēmina",
+     "in",
+     "parvā",
+     "domō",
+     "beātissimē",
+     "vīxit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t3",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The enemy attacked the city fiercely and cruelly at night.",
+    "answer": "Hostēs urbem ācriter et crūdēliter nocte oppugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostēs",
+     "urbem",
+     "ācriter",
+     "et",
+     "crūdēliter",
+     "nocte",
+     "oppugnāvērunt"
+    ]
+   },
+   {
+    "prompt": "The girl sang sweetly while her mother worked diligently.",
+    "answer": "Puella dulciter cantāvit dum māter dīligenter labōrat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puella",
+     "dulciter",
+     "cantāvit",
+     "dum",
+     "māter",
+     "dīligenter",
+     "labōrat"
+    ]
+   },
+   {
+    "prompt": "The rabid dog rushed savagely toward the frightened child.",
+    "answer": "Canis rabidus ferōciter in puerum territum ruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Canis",
+     "rabidus",
+     "ferōciter",
+     "in",
+     "puerum",
+     "territum",
+     "ruit"
+    ]
+   },
+   {
+    "prompt": "Our leader ruled the province justly and prudently for many years.",
+    "answer": "Dux noster prōvinciam iūstē et prūdenter multōs annōs rēxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "noster",
+     "prōvinciam",
+     "iūstē",
+     "et",
+     "prūdenter",
+     "multōs",
+     "annōs",
+     "rēxit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t4",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "You have done well, but your brother did worse.",
+    "answer": "Bene fēcistī, sed frāter tuus pēius fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bene",
+     "fēcistī",
+     "sed",
+     "frāter",
+     "tuus",
+     "pēius",
+     "fēcit"
+    ]
+   },
+   {
+    "prompt": "The best orator spoke most eloquently in the crowded senate.",
+    "answer": "Optimus ōrātor in senātū frequentī ēloquentissimē dīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Optimus",
+     "ōrātor",
+     "in",
+     "senātū",
+     "frequentī",
+     "ēloquentissimē",
+     "dīxit"
+    ]
+   },
+   {
+    "prompt": "He loves his country greatly and defends it most fiercely.",
+    "answer": "Patriam multum amat et eam ācerrimē dēfendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Patriam",
+     "multum",
+     "amat",
+     "et",
+     "eam",
+     "ācerrimē",
+     "dēfendit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t5",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The merchant traveled farther than he had planned.",
+    "answer": "Mercātor longius quam cōnstituerat iter fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "longius",
+     "quam",
+     "cōnstituerat",
+     "iter",
+     "fēcit"
+    ]
+   },
+   {
+    "prompt": "The frightened birds flew away more swiftly than the wind.",
+    "answer": "Avēs territae celerius quam ventus āvolāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Avēs",
+     "territae",
+     "celerius",
+     "quam",
+     "ventus",
+     "āvolāvērunt"
+    ]
+   },
+   {
+    "prompt": "The philosopher answered the difficult question very wisely.",
+    "answer": "Philosophus difficilī quaestiōnī sapientissimē respondit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "difficilī",
+     "quaestiōnī",
+     "sapientissimē",
+     "respondit"
+    ]
+   },
+   {
+    "prompt": "The river flows more gently in summer than in winter.",
+    "answer": "Flūmen aestāte lēnius quam hieme fluit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Flūmen",
+     "aestāte",
+     "lēnius",
+     "quam",
+     "hieme",
+     "fluit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t6",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The young men worked hard and finished the task quickly.",
+    "answer": "Iuvenēs strēnuē labōrāvērunt et opus celeriter cōnfēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iuvenēs",
+     "strēnuē",
+     "labōrāvērunt",
+     "et",
+     "opus",
+     "celeriter",
+     "cōnfēcērunt"
+    ]
+   },
+   {
+    "prompt": "The queen ruled more mildly than her cruel father.",
+    "answer": "Rēgīna mītius quam pater crūdēlis rēxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "mītius",
+     "quam",
+     "pater",
+     "crūdēlis",
+     "rēxit"
+    ]
+   },
+   {
+    "prompt": "The guards watched the gates most carefully during the night.",
+    "answer": "Custōdēs portās per noctem dīligentissimē observāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Custōdēs",
+     "portās",
+     "per",
+     "noctem",
+     "dīligentissimē",
+     "observāvērunt"
+    ]
+   },
+   {
+    "prompt": "The weary soldiers, who had fought fiercely, rested peacefully.",
+    "answer": "Fessī mīlitēs, quī ācriter pugnāverant, placidē quiēvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fessī",
+     "mīlitēs",
+     "quī",
+     "ācriter",
+     "pugnāverant",
+     "placidē",
+     "quiēvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t7",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The old man walked slowly toward the temple, leaning on his staff.",
+    "answer": "Senex lentē ad templum incēdēbat, baculō innīxus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "lentē",
+     "ad",
+     "templum",
+     "incēdēbat",
+     "baculō",
+     "innīxus"
+    ]
+   },
+   {
+    "prompt": "The orator spoke wisely, and everyone praised him greatly.",
+    "answer": "Ōrātor sapienter locūtus est, quem omnēs magnopere laudāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "sapienter",
+     "locūtus",
+     "est",
+     "quem",
+     "omnēs",
+     "magnopere",
+     "laudāvērunt"
+    ]
+   },
+   {
+    "prompt": "The messenger arrived more quickly than we had hoped.",
+    "answer": "Nūntius celerius quam spērāverāmus advēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "celerius",
+     "quam",
+     "spērāverāmus",
+     "advēnit"
+    ]
+   },
+   {
+    "prompt": "The farmer cultivated his fields diligently throughout the whole summer.",
+    "answer": "Agricola per tōtam aestātem agrōs dīligenter coluit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "per",
+     "tōtam",
+     "aestātem",
+     "agrōs",
+     "dīligenter",
+     "coluit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t8",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The maiden sang most sweetly while the guests were dining.",
+    "answer": "Virgō suāvissimē cantābat dum hospitēs cēnābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "suāvissimē",
+     "cantābat",
+     "dum",
+     "hospitēs",
+     "cēnābant"
+    ]
+   },
+   {
+    "prompt": "The general drew up his troops more skillfully than the enemy.",
+    "answer": "Dux cōpiās perītius quam hostis īnstrūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "cōpiās",
+     "perītius",
+     "quam",
+     "hostis",
+     "īnstrūxit"
+    ]
+   },
+   {
+    "prompt": "You have written this letter very elegantly.",
+    "answer": "Hanc epistulam ēlegantissimē scrīpsistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hanc",
+     "epistulam",
+     "ēlegantissimē",
+     "scrīpsistī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t9",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The judge decided the matter justly and wisely.",
+    "answer": "Iūdex rem iūstē et sapienter dīiūdicāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūdex",
+     "rem",
+     "iūstē",
+     "et",
+     "sapienter",
+     "dīiūdicāvit"
+    ]
+   },
+   {
+    "prompt": "The eagle flew higher than all the other birds.",
+    "answer": "Aquila altius quam cēterae avēs volāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aquila",
+     "altius",
+     "quam",
+     "cēterae",
+     "avēs",
+     "volāvit"
+    ]
+   },
+   {
+    "prompt": "Having heard the news, the citizens rejoiced greatly.",
+    "answer": "Nūntiō audītō, cīvēs valdē gāvīsī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntiō",
+     "audītō",
+     "cīvēs",
+     "valdē",
+     "gāvīsī",
+     "sunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t10",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The attendant carried out his master's orders faithfully and carefully.",
+    "answer": "Famulus imperia dominī fidēliter et accūrātē perfēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Famulus",
+     "imperia",
+     "dominī",
+     "fidēliter",
+     "et",
+     "accūrātē",
+     "perfēcit"
+    ]
+   },
+   {
+    "prompt": "The poet recited his verses more beautifully than his rival.",
+    "answer": "Poēta versūs pulchrius quam aemulus recitāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "versūs",
+     "pulchrius",
+     "quam",
+     "aemulus",
+     "recitāvit"
+    ]
+   },
+   {
+    "prompt": "The children played happily in the garden all day.",
+    "answer": "Līberī tōtum diem in hortō laetē lūsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Līberī",
+     "tōtum",
+     "diem",
+     "in",
+     "hortō",
+     "laetē",
+     "lūsērunt"
+    ]
+   },
+   {
+    "prompt": "The best students learn most easily.",
+    "answer": "Optimī discipulī facillimē discunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Optimī",
+     "discipulī",
+     "facillimē",
+     "discunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t11",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The commander spoke harshly to the soldiers who had fled.",
+    "answer": "Imperātor mīlitibus quī fūgerant asperē locūtus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "mīlitibus",
+     "quī",
+     "fūgerant",
+     "asperē",
+     "locūtus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "This work was done worse than the previous one.",
+    "answer": "Hoc opus pēius quam prius factum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "opus",
+     "pēius",
+     "quam",
+     "prius",
+     "factum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The wind blew fiercely, and the ship was tossed violently.",
+    "answer": "Ventus vehementer flābat, et nāvis violenter iactābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ventus",
+     "vehementer",
+     "flābat",
+     "et",
+     "nāvis",
+     "violenter",
+     "iactābātur"
+    ]
+   },
+   {
+    "prompt": "The king ruled his people justly for many years.",
+    "answer": "Rēx populum suum multōs annōs iūstē rēxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "populum",
+     "suum",
+     "multōs",
+     "annōs",
+     "iūstē",
+     "rēxit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-adverbs-t12",
+  "sectionId": "ag-adverbs",
+  "questions": [
+   {
+    "prompt": "The philosopher explained the difficult questions very clearly.",
+    "answer": "Philosophus difficilēs quaestiōnēs clārissimē explicāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "difficilēs",
+     "quaestiōnēs",
+     "clārissimē",
+     "explicāvit"
+    ]
+   },
+   {
+    "prompt": "The hunter approached the sleeping lion cautiously and silently.",
+    "answer": "Vēnātor leōnem dormientem cautē et tacitē adiit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēnātor",
+     "leōnem",
+     "dormientem",
+     "cautē",
+     "et",
+     "tacitē",
+     "adiit"
+    ]
+   },
+   {
+    "prompt": "You sing better than your sister, but you dance worse.",
+    "answer": "Melius quam soror canis, sed pēius saltās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Melius",
+     "quam",
+     "soror",
+     "canis",
+     "sed",
+     "pēius",
+     "saltās"
+    ]
+   }
+  ]
+ }
+]

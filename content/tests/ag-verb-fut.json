@@ -1,0 +1,678 @@
+[
+ {
+  "id": "ag-verb-fut-t1",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "Tomorrow we will praise the emperor's placid virtue with a mighty song.",
+    "answer": "Crās magnō carmine placidam imperātōris virtūtem laudābimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crās",
+     "magnō",
+     "carmine",
+     "placidam",
+     "imperātōris",
+     "virtūtem",
+     "laudābimus"
+    ]
+   },
+   {
+    "prompt": "While the enemy sleeps, you will hold the shining shield.",
+    "answer": "Dum hostis dormiet, splendidum scūtum tenēbis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "hostis",
+     "dormiet",
+     "splendidum",
+     "scūtum",
+     "tenēbis"
+    ]
+   },
+   {
+    "prompt": "The soldiers will fear the storm and remain in the harbor.",
+    "answer": "Mīlitēs tempestātem timēbunt et in portū manēbunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "tempestātem",
+     "timēbunt",
+     "et",
+     "in",
+     "portū",
+     "manēbunt"
+    ]
+   },
+   {
+    "prompt": "Before the festival I will decorate the temple with fragrant garlands.",
+    "answer": "Ante fēstum templum odōrātīs sertīs decorābō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ante",
+     "fēstum",
+     "templum",
+     "odōrātīs",
+     "sertīs",
+     "decorābō"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t2",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "When night comes, I will lead the weary army across the river.",
+    "answer": "Cum nox veniet, fessum exercitum trāns flūmen dūcam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "nox",
+     "veniet",
+     "fessum",
+     "exercitum",
+     "trāns",
+     "flūmen",
+     "dūcam"
+    ]
+   },
+   {
+    "prompt": "At midnight you will hear the ghost's voice in the silent house.",
+    "answer": "Mediā nocte phantasmatis vōcem in tacitā domō audiēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mediā",
+     "nocte",
+     "phantasmatis",
+     "vōcem",
+     "in",
+     "tacitā",
+     "domō",
+     "audiēs"
+    ]
+   },
+   {
+    "prompt": "The general will send messengers and capture the city's walls.",
+    "answer": "Imperātor nūntiōs mittet et urbis moenia capiet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "nūntiōs",
+     "mittet",
+     "et",
+     "urbis",
+     "moenia",
+     "capiet"
+    ]
+   },
+   {
+    "prompt": "While the poet rests in the shade, we will write many letters.",
+    "answer": "Dum poēta in umbrā quiēscet, multās epistulās scrībēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "poēta",
+     "in",
+     "umbrā",
+     "quiēscet",
+     "multās",
+     "epistulās",
+     "scrībēmus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t3",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "You will be a famous leader if you conquer the enemy in battle.",
+    "answer": "Clārus dux eris, sī hostem in proeliō vincēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Clārus",
+     "dux",
+     "eris",
+     "sī",
+     "hostem",
+     "in",
+     "proeliō",
+     "vincēs"
+    ]
+   },
+   {
+    "prompt": "There will be great joy when the wandering exile returns home.",
+    "answer": "Magnum gaudium erit, cum errāns exsul domum redībit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magnum",
+     "gaudium",
+     "erit",
+     "cum",
+     "errāns",
+     "exsul",
+     "domum",
+     "redībit"
+    ]
+   },
+   {
+    "prompt": "We will be safe within the walls, but the fields will burn.",
+    "answer": "Intrā mūrōs tūtī erimus, sed agrī ārdēbunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Intrā",
+     "mūrōs",
+     "tūtī",
+     "erimus",
+     "sed",
+     "agrī",
+     "ārdēbunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t4",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "The returning soldier will carry off the spoils won in war.",
+    "answer": "Rediēns mīles praedam bellō partam portābit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rediēns",
+     "mīles",
+     "praedam",
+     "bellō",
+     "partam",
+     "portābit"
+    ]
+   },
+   {
+    "prompt": "Because the winds are favorable, we will sail to the Syrian shore.",
+    "answer": "Quod ventī secundī sunt, ad syriacum lītus nāvigābimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "ventī",
+     "secundī",
+     "sunt",
+     "ad",
+     "syriacum",
+     "lītus",
+     "nāvigābimus"
+    ]
+   },
+   {
+    "prompt": "The king, moved by pity, will free the wretched captives.",
+    "answer": "Rēx, misericordiā mōtus, miserābilēs captīvōs līberābit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "misericordiā",
+     "mōtus",
+     "miserābilēs",
+     "captīvōs",
+     "līberābit"
+    ]
+   },
+   {
+    "prompt": "Once the city has been captured, the victors will rule the whole land.",
+    "answer": "Urbe captā, victōrēs tōtam terram regent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbe",
+     "captā",
+     "victōrēs",
+     "tōtam",
+     "terram",
+     "regent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t5",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "Overcome by longing, the old man will seek his distant homeland.",
+    "answer": "Dēsīderiō victus, senex remōtam patriam petet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dēsīderiō",
+     "victus",
+     "senex",
+     "remōtam",
+     "patriam",
+     "petet"
+    ]
+   },
+   {
+    "prompt": "You will feel shame when the crowd praises your idle games.",
+    "answer": "Ruborem sentiēs, cum turba ignāvōs lūsūs tuōs laudābit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ruborem",
+     "sentiēs",
+     "cum",
+     "turba",
+     "ignāvōs",
+     "lūsūs",
+     "tuōs",
+     "laudābit"
+    ]
+   },
+   {
+    "prompt": "The maiden will spin wool with her distaff through the long night.",
+    "answer": "Virgō colō lānam per longam noctem dūcet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "colō",
+     "lānam",
+     "per",
+     "longam",
+     "noctem",
+     "dūcet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t6",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "At dinner we will taste the Lucanian sausage and drink sweet wine.",
+    "answer": "In cēnā lucānicam gustābimus et dulce vīnum bibēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "cēnā",
+     "lucānicam",
+     "gustābimus",
+     "et",
+     "dulce",
+     "vīnum",
+     "bibēmus"
+    ]
+   },
+   {
+    "prompt": "The powerful queen will adorn her hair with Syrian gems.",
+    "answer": "Potēns rēgīna crīnēs syriacīs gemmīs decorābit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Potēns",
+     "rēgīna",
+     "crīnēs",
+     "syriacīs",
+     "gemmīs",
+     "decorābit"
+    ]
+   },
+   {
+    "prompt": "After the shipwreck, the sailors will wander long over unknown seas.",
+    "answer": "Post naufragium nautae diū per ignōta maria errābunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "naufragium",
+     "nautae",
+     "diū",
+     "per",
+     "ignōta",
+     "maria",
+     "errābunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t7",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "If the winds are favorable, the sailors will loosen the sails at first light.",
+    "answer": "Sī ventī secundī erunt, nautae vēla prīmā lūce solvent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "ventī",
+     "secundī",
+     "erunt",
+     "nautae",
+     "vēla",
+     "prīmā",
+     "lūce",
+     "solvent"
+    ]
+   },
+   {
+    "prompt": "The greedy lover will endure many hardships for his beloved.",
+    "answer": "Amātor avidus multōs labōrēs prō amātā suā sufferet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amātor",
+     "avidus",
+     "multōs",
+     "labōrēs",
+     "prō",
+     "amātā",
+     "suā",
+     "sufferet"
+    ]
+   },
+   {
+    "prompt": "You will be a witness of this great experiment tomorrow.",
+    "answer": "Huius magnī experīmentī testis crās eris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Huius",
+     "magnī",
+     "experīmentī",
+     "testis",
+     "crās",
+     "eris"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t8",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "The soldiers will hear the trumpet and will seize their weapons.",
+    "answer": "Mīlitēs tubam audient et arma capient.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "tubam",
+     "audient",
+     "et",
+     "arma",
+     "capient"
+    ]
+   },
+   {
+    "prompt": "You will rule the vast kingdom with a firm hand.",
+    "answer": "Vastum rēgnum firmā manū regētis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vastum",
+     "rēgnum",
+     "firmā",
+     "manū",
+     "regētis"
+    ]
+   },
+   {
+    "prompt": "When spring returns, the birds will rejoice in the green fields.",
+    "answer": "Cum vēr redībit, volucrēs in agrīs viridibus gaudēbunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "vēr",
+     "redībit",
+     "volucrēs",
+     "in",
+     "agrīs",
+     "viridibus",
+     "gaudēbunt"
+    ]
+   },
+   {
+    "prompt": "I will warn my friends about the difficult condition of peace.",
+    "answer": "Amīcōs meōs dē difficilī condiciōne pācis monēbō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amīcōs",
+     "meōs",
+     "dē",
+     "difficilī",
+     "condiciōne",
+     "pācis",
+     "monēbō"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t9",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "The philosopher will teach that the soul is immortal.",
+    "answer": "Philosophus animam immortālem esse docēbit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "animam",
+     "immortālem",
+     "esse",
+     "docēbit"
+    ]
+   },
+   {
+    "prompt": "We will cross the narrow strait with a light ship.",
+    "answer": "Angustum fretum levī nāve trānsībimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Angustum",
+     "fretum",
+     "levī",
+     "nāve",
+     "trānsībimus"
+    ]
+   },
+   {
+    "prompt": "You will find the hidden path through the dark forest.",
+    "answer": "Occultam viam per silvam obscūram inveniēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Occultam",
+     "viam",
+     "per",
+     "silvam",
+     "obscūram",
+     "inveniēs"
+    ]
+   },
+   {
+    "prompt": "The captured king will lose his kingdom and his life.",
+    "answer": "Rēx captus rēgnum et vītam āmittet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "captus",
+     "rēgnum",
+     "et",
+     "vītam",
+     "āmittet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t10",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "If you work hard, you will win a great reward.",
+    "answer": "Sī strēnuē labōrābis, magnum praemium capiēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "strēnuē",
+     "labōrābis",
+     "magnum",
+     "praemium",
+     "capiēs"
+    ]
+   },
+   {
+    "prompt": "The frozen traveler will seek shelter in a poor hut.",
+    "answer": "Viātor algēns in casā paupere perfugium petet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Viātor",
+     "algēns",
+     "in",
+     "casā",
+     "paupere",
+     "perfugium",
+     "petet"
+    ]
+   },
+   {
+    "prompt": "We will drink cold water from the clear spring.",
+    "answer": "Frīgidam aquam ē fonte limpidō bibēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Frīgidam",
+     "aquam",
+     "ē",
+     "fonte",
+     "limpidō",
+     "bibēmus"
+    ]
+   },
+   {
+    "prompt": "You will be safe within the city walls.",
+    "answer": "Intrā moenia urbis tūtī eritis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Intrā",
+     "moenia",
+     "urbis",
+     "tūtī",
+     "eritis"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t11",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "The orator will move the crowd with his eloquent speech.",
+    "answer": "Ōrātor turbam ōrātiōne disertā movēbit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "turbam",
+     "ōrātiōne",
+     "disertā",
+     "movēbit"
+    ]
+   },
+   {
+    "prompt": "Tomorrow the farmers will plow the wide fields before sunrise.",
+    "answer": "Crās agricolae lātōs agrōs ante ortum sōlis arābunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crās",
+     "agricolae",
+     "lātōs",
+     "agrōs",
+     "ante",
+     "ortum",
+     "sōlis",
+     "arābunt"
+    ]
+   },
+   {
+    "prompt": "You will send a letter to the general about the new plan.",
+    "answer": "Epistulam ad ducem dē novō cōnsiliō mittēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Epistulam",
+     "ad",
+     "ducem",
+     "dē",
+     "novō",
+     "cōnsiliō",
+     "mittēs"
+    ]
+   },
+   {
+    "prompt": "The wise woman will nourish the sick child with gentle care.",
+    "answer": "Sapiēns fēmina aegrum īnfantem mollī cūrā alet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "fēmina",
+     "aegrum",
+     "īnfantem",
+     "mollī",
+     "cūrā",
+     "alet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag-verb-fut-t12",
+  "sectionId": "ag-verb-fut",
+  "questions": [
+   {
+    "prompt": "When the war ceases, the citizens will rebuild the overturned temples.",
+    "answer": "Ubi bellum cessābit, cīvēs templa ēversa reficient.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ubi",
+     "bellum",
+     "cessābit",
+     "cīvēs",
+     "templa",
+     "ēversa",
+     "reficient"
+    ]
+   },
+   {
+    "prompt": "The huntress will chase the swift stags through the mountains.",
+    "answer": "Vēnātrīx celerēs cervōs per montēs captābit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēnātrīx",
+     "celerēs",
+     "cervōs",
+     "per",
+     "montēs",
+     "captābit"
+    ]
+   },
+   {
+    "prompt": "We will open the gates and welcome the returning victors.",
+    "answer": "Portās aperiēmus et victōrēs redeuntēs excipiēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Portās",
+     "aperiēmus",
+     "et",
+     "victōrēs",
+     "redeuntēs",
+     "excipiēmus"
+    ]
+   },
+   {
+    "prompt": "You will not fear death if you love virtue.",
+    "answer": "Mortem nōn timēbitis sī virtūtem amābitis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mortem",
+     "nōn",
+     "timēbitis",
+     "sī",
+     "virtūtem",
+     "amābitis"
+    ]
+   }
+  ]
+ }
+]
