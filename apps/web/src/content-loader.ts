@@ -16,13 +16,27 @@ import { LemmaIndex } from "./lemma-index.js";
  * worker's own cache — instead of leaving it to the server's configuration.
  */
 
-/** Resolve a content path against the deploy base (`/` or `/<repo>/`). */
-function contentUrl(name: string): string {
-  return new URL(`content/${name}`, new URL(import.meta.env.BASE_URL, location.href)).href;
+/**
+ * Resolve a content path against the deploy base — `/` at a domain root,
+ * `/<repo>/` on GitHub Pages.
+ *
+ * The trailing slash is load-bearing: `new URL("content/x", ".../latin-tutor")`
+ * reads `latin-tutor` as a file and resolves against its parent, quietly asking
+ * for `/content/x`. That 404s every asset on Pages while working perfectly at a
+ * root, so it is exactly the bug that survives local testing. Exported so a
+ * test can pin it.
+ */
+export function contentUrl(name: string, base: string, href: string): string {
+  const dir = base.endsWith("/") ? base : `${base}/`;
+  return new URL(`${dir}content/${name}`, href).href;
+}
+
+function url(name: string): string {
+  return contentUrl(name, import.meta.env.BASE_URL || "/", location.href);
 }
 
 async function fetchGzipped(name: string): Promise<string> {
-  const res = await fetch(contentUrl(name));
+  const res = await fetch(url(name));
   if (!res.ok) {
     throw new Error(`could not load ${name} (${res.status})`);
   }
