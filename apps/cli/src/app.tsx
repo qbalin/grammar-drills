@@ -122,10 +122,13 @@ export function App({ session, content, storage }: Props) {
     [mapSection?.text, paneWidth],
   );
   // The map's taste of the section under the cursor: the same window for every
-  // topic, so browsing shows each one equally and the map does not jump.
+  // topic, so browsing shows each one equally and the map does not jump. What
+  // varies is the terminal, not the topic — a short one gets a shorter taste
+  // rather than a map that runs off the screen.
+  const previewLines = Math.max(2, Math.min(PREVIEW_LINES, rows - MAP_CHROME_LINES));
   const mapPreview = useMemo(
-    () => previewWindow(mapSection?.text ?? "", paneWidth, PREVIEW_LINES),
-    [mapSection?.text, paneWidth],
+    () => previewWindow(mapSection?.text ?? "", paneWidth, previewLines),
+    [mapSection?.text, paneWidth, previewLines],
   );
 
   // What was written on this topic before. Read after the answer is on screen,
@@ -384,17 +387,22 @@ export function App({ session, content, storage }: Props) {
     setPhase({ t: "map", from });
   };
 
-  /** Jump the cursor to the first topic of the previous/next non-empty family. */
+  /**
+   * Jump the cursor to the first topic of the previous/next non-empty family,
+   * wrapping round the ends — the list is a cycle, so ↑ ↓ never dead-ends.
+   */
   const jumpFamily = (dir: -1 | 1) => {
     setMapIndex((i) => {
+      const n = families.length;
       let current = 0;
       for (let k = 0; k < familyStarts.length; k++) {
         if (families[k]!.topics.length > 0 && familyStarts[k]! <= i) current = k;
       }
-      for (let k = current + dir; k >= 0 && k < families.length; k += dir) {
-        if (families[k]!.topics.length > 0) return familyStarts[k]!;
+      for (let step = 1; step <= n; step++) {
+        const k = (((current + dir * step) % n) + n) % n;
+        if (k !== current && families[k]!.topics.length > 0) return familyStarts[k]!;
       }
-      return i; // already at the first/last populated family
+      return i; // no other family has any topics
     });
   };
 
@@ -716,10 +724,12 @@ function cellStyle(t: TopicProgress): { glyph: string; color: string; dim: boole
 
 /** Screen lines of a section the map previews — the same for every topic. */
 const PREVIEW_LINES = 5;
+/** Everything in the map pane that is not the preview, in screen lines. */
+const MAP_CHROME_LINES = 24;
 /** Cells in a family's fixed-width summary bar. */
 const SUMMARY_CELLS = 6;
-/** Families per row of the summary block. */
-const PER_ROW = 3;
+/** Indent of the selected family's per-topic bar, so it sits under the name. */
+const BAR_INDENT = 4;
 
 function summaryGlyphs(percent: number): string {
   const filled = Math.round(percent * SUMMARY_CELLS);
@@ -727,49 +737,63 @@ function summaryGlyphs(percent: number): string {
 }
 
 /**
- * Every family as a fixed-width summary bar, the selected one highlighted.
- * One cell per topic cannot be shown for all families at once — the syllabus
- * is 135 topics, which needs ~161 columns — so the per-topic detail belongs to
- * the selected family alone (`FamilyBar`).
+ * The families one per line, the selected one expanded into a cell per topic
+ * beneath its own name.
+ *
+ * One line each is what makes `↑ ↓` legible: laid out three-to-a-row, "down"
+ * moved sideways two times out of three. It also leaves room for the names in
+ * full, which no three-column grid does. One cell per topic for all 135 at once
+ * would need ~161 columns, so the per-topic detail stays with the selected
+ * family alone (`FamilyBar`) — and exactly one family is ever expanded, so the
+ * block's height never changes as the cursor walks.
  */
-function FamilySummary({
+function FamilyList({
   families,
   selected,
+  cursorInFamily,
 }: {
   families: FamilyProgress[];
   selected: string;
+  cursorInFamily: number;
 }) {
   const width = Math.max(...families.map((f) => f.label.length));
-  const rows: FamilyProgress[][] = [];
-  for (let i = 0; i < families.length; i += PER_ROW) {
-    rows.push(families.slice(i, i + PER_ROW));
-  }
   return (
     <Box flexDirection="column">
-      {rows.map((row, ri) => (
-        <Box key={ri}>
-          {row.map((f) => {
-            const on = f.id === selected;
-            return (
-              <Box key={f.id}>
-                <Text bold={on} color={on ? "cyan" : undefined} dimColor={!on}>
-                  {f.label.padEnd(width)}
-                </Text>
-                <Text> </Text>
-                <Text color={f.percent > 0 ? "green" : "gray"} dimColor={f.percent === 0}>
-                  {summaryGlyphs(f.percent)}
-                </Text>
-                <Text dimColor>{` ${String(Math.round(f.percent * 100)).padStart(3)}%  `}</Text>
-              </Box>
-            );
-          })}
-        </Box>
-      ))}
+      {families.map((f) => {
+        // The whole line is styled when selected, not the name alone: a
+        // highlight on the first column only reads as half-applied.
+        const on = f.id === selected;
+        return (
+          <Box key={f.id} flexDirection="column">
+            <Box>
+              <Text bold={on} color={on ? "cyan" : undefined} dimColor={!on}>
+                {`${on ? "▸" : " "} ${f.label.padEnd(width)}  `}
+              </Text>
+              <Text
+                bold={on}
+                color={f.percent > 0 ? "green" : "gray"}
+                dimColor={!on && f.percent === 0}
+              >
+                {summaryGlyphs(f.percent)}
+              </Text>
+              <Text bold={on} color={on ? "cyan" : undefined} dimColor={!on}>
+                {` ${String(Math.round(f.percent * 100)).padStart(3)}%  ${String(f.topics.length).padStart(2)} topic${f.topics.length === 1 ? "" : "s"}`}
+              </Text>
+            </Box>
+            {on && f.topics.length > 0 && (
+              <FamilyBar family={f} cursorInFamily={cursorInFamily} />
+            )}
+          </Box>
+        );
+      })}
     </Box>
   );
 }
 
-/** The selected family in full: one cell per topic, with the cursor caret. */
+/**
+ * The selected family in full: one cell per topic, with the cursor caret and,
+ * beside it, a count that says what it is counting.
+ */
 function FamilyBar({
   family,
   cursorInFamily,
@@ -777,24 +801,32 @@ function FamilyBar({
   family: FamilyProgress;
   cursorInFamily: number;
 }) {
+  const indent = " ".repeat(BAR_INDENT);
   return (
     <Box flexDirection="column">
       <Box>
+        <Text>{indent}</Text>
         {family.topics.map((t, i) => {
           const s = cellStyle(t);
+          const cursor = i === cursorInFamily;
           return (
             <Text
               key={t.sectionId}
               color={s.color}
-              dimColor={s.dim}
-              inverse={i === cursorInFamily}
+              // Never dim the cell under the cursor: inverse over dim gray is
+              // invisible in most terminals, and dim gray is every topic not
+              // yet started \u2014 which is most of the map, most of the time.
+              dimColor={s.dim && !cursor}
+              inverse={cursor}
+              bold={cursor}
             >
               {s.glyph}
             </Text>
           );
         })}
+        <Text dimColor>{`  topic ${cursorInFamily + 1} of ${family.topics.length}`}</Text>
       </Box>
-      <Text color="cyan">{" ".repeat(Math.max(0, cursorInFamily)) + "\u25b2"}</Text>
+      <Text color="cyan">{indent + " ".repeat(Math.max(0, cursorInFamily)) + "\u25b2"}</Text>
     </Box>
   );
 }
@@ -810,7 +842,7 @@ function GrammarMap({
   cursor: number;
   overall: number;
   topic: TopicProgress;
-  /** Exactly `PREVIEW_LINES` pre-wrapped lines, and whether more follows. */
+  /** The same count of pre-wrapped lines for every topic, and whether more follows. */
   preview: { lines: string[]; truncated: boolean };
 }) {
   // Locate the cursor: which family it falls in, and where inside that family.
@@ -841,17 +873,13 @@ function GrammarMap({
         <Text dimColor>{Math.round(overall * 100)}% mastered overall</Text>
       </Box>
 
-      <FamilySummary families={families} selected={selected.id} />
-
-      <Box marginTop={1}>
-        <Text>
-          <Text bold color="cyan">{selected.label}</Text>
-          <Text dimColor>
-            {`  ${selected.topics.length} topics \u00b7 ${inFamily + 1}/${selected.topics.length}`}
-          </Text>
-        </Text>
-      </Box>
-      <FamilyBar family={selected} cursorInFamily={inFamily} />
+      {/* The selected family needs no separate heading line: it is the
+          highlighted line of the list, with its bar under its own name. */}
+      <FamilyList
+        families={families}
+        selected={selected.id}
+        cursorInFamily={inFamily}
+      />
 
       {/* Title and status go on separate lines: together they outrun the pane
           for a third of the syllabus, and a header that wraps for some topics

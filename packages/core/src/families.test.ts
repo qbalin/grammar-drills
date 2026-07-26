@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { FAMILIES, familyFull, familyLabel, familyOf } from "./families.js";
+import { FAMILIES, familyLabel, familyOf } from "./families.js";
 import type { GrammarSection } from "./types.js";
 
 const grammar: GrammarSection[] = JSON.parse(
@@ -33,14 +33,14 @@ describe("grammar families", () => {
     expect([...counts.entries()].filter(([, n]) => n === 0)).toEqual([]);
   });
 
-  it("labels every family, short and long", () => {
-    expect(familyLabel("pron")).toBe("Pron");
-    expect(familyFull("pron")).toBe("Pronouns");
+  it("names every family in words a student would recognise", () => {
+    expect(familyLabel("pron")).toBe("Pronouns");
+    expect(familyLabel("particles")).toBe("Particles");
+    expect(familyLabel("noun-syntax")).toBe("Noun syntax");
     for (const f of FAMILIES) {
       expect(familyLabel(f.id)).toBe(f.label);
-      expect(familyFull(f.id)).toBe(f.full);
-      // The map pads to the longest short label; keep them narrow.
-      expect(f.label.length).toBeLessThanOrEqual(8);
+      // No abbreviations: the map is read, not decoded.
+      expect(f.label).toMatch(/^[A-Z][a-z-]+( [&a-z-]+)*$/);
     }
   });
 });

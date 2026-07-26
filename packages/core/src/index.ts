@@ -15,7 +15,6 @@ export {
   FAMILIES,
   familyOf,
   familyLabel,
-  familyFull,
   type FamilyId,
 } from "./families.js";
 export {

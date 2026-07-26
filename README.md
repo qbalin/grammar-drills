@@ -111,7 +111,8 @@ Pushing to `main` publishes it to GitHub Pages
 Home Screen*. Same loop — write the Latin, compare, self-grade 1–4 — with a
 **Reveal** button for when typing a sentence on glass is not happening, the
 grade buttons labelled with the interval each one buys, and the grammar map
-redrawn as tappable topics.
+redrawn as tappable rows — one per topic, each naming its § and how far along it
+is, since a thumb wants a target and a screen has room for words.
 
 The dictionary is the one thing that could not be shipped as-is:
 `lemmas.json.gz` inflates to 43 MB, which no phone should parse. The build
@@ -167,11 +168,16 @@ English→Latin translation exercise: Part I (sounds, accent, quantity), Part IV
 
 | Family | Topics | Bennett |
 |---|---|---|
-| Nouns · Adj/Adv · Pronouns | 9 · 5 · 9 | Part II, *Declension* |
+| Nouns · Adjectives & adverbs · Pronouns | 9 · 5 · 9 | Part II, *Declension* |
 | Verb forms | 35 | Part II, *Conjugation* |
 | Particles | 3 | Part III |
-| Noun syntax · Adj/Pron syntax · Verb syntax | 19 · 13 · 30 | Part V |
+| Noun syntax · Adjective & pronoun syntax · Verb syntax | 19 · 13 · 30 | Part V |
 | Word-order & style | 12 | Part V, *Hints on Latin Style* |
+
+Those nine names are the only ones there are: `FAMILIES` in
+`packages/core/src/families.ts` carries one label per family and both apps print
+it as-is. Abbreviating them for a narrow column ("Ptcl", "N-syntax") saved eight
+characters and cost the student any idea of where they were.
 
 Each topic's `text` is the section's own prose **in full**, with Gutenberg
 markup removed, hard wrapping undone and paradigm tables flattened to one line
@@ -182,18 +188,25 @@ character budget: what the parser drops, the student can never read.
 
 ## The grammar map
 
-`m` opens the syllabus as a bar per grammar family, with the selected family
-expanded to one cell per topic. (One cell per topic for all 135 at once would
-need ~161 columns.)
+`m` opens the syllabus as a line per grammar family, the selected one expanded to
+one cell per topic. (One cell per topic for all 135 at once would need ~161
+columns.)
 
 ```
-Nouns    ██░░░░  39%  Adj/Adv  █░░░░░  13%  Pron     ░░░░░░   0%
-Verbs    ░░░░░░   1%  Ptcl     ░░░░░░   0%  N-syntax ░░░░░░   0%
-A-syntax ░░░░░░   0%  V-syntax ░░░░░░   1%  Style    ░░░░░░   0%
+Grammar map                                       7% mastered overall
 
-Adj/Adv  5 topics · 1/5
-░░▓░░
-▲
+  Nouns                       ███░░░  44%   9 topics
+▸ Adjectives & adverbs        ██░░░░  27%   5 topics
+    ░░▓░░  topic 3 of 5
+      ▲
+  Pronouns                    ░░░░░░   0%   9 topics
+  Verb forms                  ░░░░░░   0%  35 topics
+  Particles                   █░░░░░  22%   3 topics
+  Noun syntax                 █░░░░░  18%  19 topics
+  Adjective & pronoun syntax  ░░░░░░   0%  13 topics
+  Verb syntax                 ░░░░░░   0%  30 topics
+  Word-order & style          ░░░░░░   0%  12 topics
+
 § 63-66 Adjectives of the First and Second Declensions
 not started
 In these the Masculine is declined like hortus, puer, or ager, the
@@ -204,21 +217,26 @@ SINGULAR.
 press g to read § 63-66 in full
 ```
 
-Below the cursor sits the opening of that section, **the same five wrapped
-lines for every topic** — clipped by source line it would be a paragraph of
-prose for one topic and a handful of words for a paradigm table, and the map
-would change height under you as you walked it.
+One family per line is what makes `↑ ↓` legible — three to a row, "down" moved
+sideways two times out of three — and the whole selected line is highlighted, not
+just its name. Every number says what it counts.
+
+Below the cursor sits the opening of that section, **the same wrapped lines for
+every topic** — five of them where the terminal is tall enough, fewer on a short
+one, never varying with the topic. Clipped by source line it would be a
+paragraph of prose for one topic and a handful of words for a paradigm table, and
+the map would change height under you as you walked it.
 
 Each topic carries a **mastery score from 1 (not mastered) to 4 (mastered)**,
 moved by your self-grades: good/easy `+1`, hard `+0.5`, again `−1`. A single
 lucky answer therefore can't mark a topic mastered, and one bad day can't wipe
 one. Topics passed in placement show as mastered but assumed.
 
-`← →` walks the cursor along the bars (including topics you have never met),
-`↑ ↓` jumps between families, `g` opens the selected section in full (scrolling
-as above, `Esc` back to the map), and **Enter serves a test on the selected
-topic straight away** — the way to explore ahead of where the scheduler has
-taken you.
+`← →` walks the cursor along the bar (including topics you have never met),
+`↑ ↓` cycles between families and wraps at both ends, `g` opens the selected
+section in full (scrolling as above, `Esc` back to the map), and **Enter serves a
+test on the selected topic straight away** — the way to explore ahead of where the
+scheduler has taken you.
 Normal spaced repetition resumes once the test is done.
 
 ## Progress storage

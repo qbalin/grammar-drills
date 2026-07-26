@@ -19,17 +19,21 @@ export type FamilyId =
   | "verb-syntax"
   | "style";
 
-/** Display order, with a short label for the map's narrow columns. */
-export const FAMILIES: ReadonlyArray<{ id: FamilyId; label: string; full: string }> = [
-  { id: "nouns", label: "Nouns", full: "Nouns" },
-  { id: "adj", label: "Adj/Adv", full: "Adjectives & adverbs" },
-  { id: "pron", label: "Pron", full: "Pronouns" },
-  { id: "verb-forms", label: "Verbs", full: "Verb forms" },
-  { id: "particles", label: "Ptcl", full: "Particles" },
-  { id: "noun-syntax", label: "N-syntax", full: "Noun syntax" },
-  { id: "adj-pron-syntax", label: "A-syntax", full: "Adjective & pronoun syntax" },
-  { id: "verb-syntax", label: "V-syntax", full: "Verb syntax" },
-  { id: "style", label: "Style", full: "Word-order & style" },
+/**
+ * Display order, each family named the way it would be said aloud. There is no
+ * abbreviated form: a map is for finding your way, and "Ptcl" tells a student
+ * nothing about where they are.
+ */
+export const FAMILIES: ReadonlyArray<{ id: FamilyId; label: string }> = [
+  { id: "nouns", label: "Nouns" },
+  { id: "adj", label: "Adjectives & adverbs" },
+  { id: "pron", label: "Pronouns" },
+  { id: "verb-forms", label: "Verb forms" },
+  { id: "particles", label: "Particles" },
+  { id: "noun-syntax", label: "Noun syntax" },
+  { id: "adj-pron-syntax", label: "Adjective & pronoun syntax" },
+  { id: "verb-syntax", label: "Verb syntax" },
+  { id: "style", label: "Word-order & style" },
 ];
 
 const IDS = new Set<string>(FAMILIES.map((f) => f.id));
@@ -41,8 +45,4 @@ export function familyOf(family: string | undefined): FamilyId {
 
 export function familyLabel(id: FamilyId): string {
   return FAMILIES.find((f) => f.id === id)?.label ?? id;
-}
-
-export function familyFull(id: FamilyId): string {
-  return FAMILIES.find((f) => f.id === id)?.full ?? id;
 }

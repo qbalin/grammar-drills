@@ -3,13 +3,19 @@ import type { Attempt, FamilyProgress, TopicProgress } from "@latin-tutor/core";
 import { Ring, Sheet, ago } from "../ui.js";
 
 /**
- * The syllabus as a map: nine families, each opening to one cell per topic.
+ * The syllabus as a map: nine families, each opening to a row per topic.
  *
  * The CLI draws fixed-width bars with a caret walking along them, which suits
  * arrow keys and a wide terminal. Neither holds here — 135 topics in one row
  * needs ~161 columns, and a thumb wants a target, not a cursor. So the families
- * become a list that expands, and each topic becomes a tappable cell whose
- * colour is its mastery.
+ * become a list that expands, and each topic becomes a tappable row.
+ *
+ * The rows say what they are in words. They used to be a grid of squares
+ * numbered 1, 2, 3… — the topic's position inside its family, so the "3" under
+ * Particles and the "3" under Verb forms were different things and neither
+ * matched the § numbers the rest of the app cites. The title lived in `title=`,
+ * which a touch screen never shows; mastery, due and untested lived in colour,
+ * a pip and a dashed border, which nothing on the page explained.
  */
 
 /** Mastery band 1–4, or 0 for a topic never graded. */
@@ -24,7 +30,18 @@ function masteryLabel(t: TopicProgress): string {
   return `${pct}% mastered${t.assumed ? " (assumed from placement)" : ""}`;
 }
 
-function TopicDots({
+/** Everything about a topic's standing, in words rather than in colour. */
+function topicState(t: TopicProgress): string {
+  return [
+    masteryLabel(t),
+    t.due ? "due now" : "",
+    t.hasTests ? "" : "no tests written yet",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+function TopicRows({
   topics,
   onPick,
 }: {
@@ -32,24 +49,23 @@ function TopicDots({
   onPick: (t: TopicProgress) => void;
 }) {
   return (
-    <div className="dots">
-      {topics.map((t, i) => (
-        <button
-          key={t.sectionId}
-          className={[
-            "dot",
-            `dot--m${band(t)}`,
-            t.assumed ? "dot--assumed" : "",
-            t.due ? "dot--due" : "",
-            t.hasTests ? "" : "dot--untested",
-          ]
-            .filter(Boolean)
-            .join(" ")}
-          onClick={() => onPick(t)}
-          aria-label={`${t.title} — ${masteryLabel(t)}`}
-          title={t.title}
-        >
-          {i + 1}
+    <div className="list list--topics">
+      {topics.map((t) => (
+        <button className="row" key={t.sectionId} onClick={() => onPick(t)}>
+          {/* The mastery colour is kept as a swatch, but it is now a second way
+              of saying what the row already says. */}
+          <span
+            className={`band band--m${band(t)}${t.assumed ? " band--assumed" : ""}`}
+            aria-hidden="true"
+          />
+          <span className="row__main">
+            <span className="row__title">
+              <span className="row__ref">§ {t.ref}</span>
+              {t.title}
+            </span>
+            <span className="row__sub">{topicState(t)}</span>
+          </span>
+          <span className="row__chev">›</span>
         </button>
       ))}
     </div>
@@ -74,12 +90,14 @@ export function MapSheet({
   const [open, setOpen] = useState<string | null>(
     currentFamily ?? firstStarted ?? families[0]?.id ?? null,
   );
+  // Counted, not quoted: a hardcoded 135 would go stale the day a topic moves.
+  const total = families.reduce((n, f) => n + f.topics.length, 0);
 
   return (
     <Sheet title="Grammar map" onClose={onClose}>
       <div className="centered" style={{ padding: "0 0 1.2rem" }}>
         <Ring percent={overall} />
-        <p>mastered across all 135 topics</p>
+        <p>mastered across all {total} topics</p>
       </div>
 
       {families.map((f) => (
@@ -89,14 +107,20 @@ export function MapSheet({
             onClick={() => setOpen(open === f.id ? null : f.id)}
             aria-expanded={open === f.id}
           >
-            <span className="family__name">{f.label}</span>
+            <span className="family__main">
+              <span className="family__name">{f.label}</span>
+              {/* The percentage in words: a bare "50%" beside a bar said
+                  neither what was measured nor over how much. */}
+              <span className="family__sub">
+                {f.topics.length} topics · {Math.round(f.percent * 100)}% mastered
+              </span>
+            </span>
             <span className="family__meter">
               <i style={{ width: `${Math.round(f.percent * 100)}%` }} />
             </span>
-            <span className="family__pct">{Math.round(f.percent * 100)}%</span>
             <span className="row__chev">{open === f.id ? "▾" : "▸"}</span>
           </button>
-          {open === f.id && <TopicDots topics={f.topics} onPick={onPick} />}
+          {open === f.id && <TopicRows topics={f.topics} onPick={onPick} />}
         </div>
       ))}
     </Sheet>
@@ -125,9 +149,7 @@ export function TopicSheet({
   return (
     <Sheet title={topic.title} subtitle={`§ ${topic.ref}`} onClose={onClose}>
       <p className="row__sub" style={{ marginTop: 0 }}>
-        {masteryLabel(topic)}
-        {topic.due ? " · due now" : ""}
-        {topic.hasTests ? "" : " · no tests written for this topic"}
+        {topicState(topic)}
       </p>
 
       <div className="actions">

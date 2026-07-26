@@ -422,13 +422,32 @@ describe("the grammar map", () => {
     await skipPlacement(user);
 
     await user.click(screen.getByRole("button", { name: "Grammar map" }));
-    // Only the open family shows its topics; Verbs is not the one open.
-    await user.click(screen.getByRole("button", { name: /^Verbs/ }));
+    // Only the open family shows its topics; Verb forms is not the one open.
+    await user.click(screen.getByRole("button", { name: /^Verb forms/ }));
     await user.click(screen.getByRole("button", { name: /Present indicative/ }));
     await user.click(screen.getByRole("button", { name: "Quiz me" }));
 
     // Straight to a test on the chosen topic, not the one the scheduler wanted.
     expect(screen.getByText("The poet praises the queen.")).toBeDefined();
+  });
+
+  it("says what each topic is, rather than numbering it", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+
+    // Each topic is a row carrying Bennett's § reference, its title and where
+    // the student stands on it — not a square labelled with its position.
+    expect(
+      screen.getByRole("button", { name: /§ 23-27\s*Second declension\s*not started/ }),
+    ).toBeDefined();
+    expect(screen.queryByRole("button", { name: "1" })).toBeNull();
+    expect(screen.queryByRole("button", { name: "2" })).toBeNull();
+
+    // The family says what its own percentage is a percentage of.
+    expect(screen.getByRole("button", { name: /^Nouns 2 topics · \d+% mastered/ })).toBeDefined();
   });
 
   it("reads a section in full from the map", async () => {

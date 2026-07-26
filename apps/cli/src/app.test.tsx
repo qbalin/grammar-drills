@@ -156,8 +156,10 @@ describe("CLI App (write → compare → self-grade)", () => {
     await tick();
     expect(lastFrame()).toContain("Grammar map");
     expect(lastFrame()).toContain("Nouns");
-    expect(lastFrame()).toContain("Verbs");
+    expect(lastFrame()).toContain("Verb forms");
     expect(lastFrame()).toContain("§ 34");
+    // The cursor is on the first of the two noun topics, and the bar says so.
+    expect(lastFrame()).toContain("topic 1 of 2");
 
     // Right arrow walks one topic along the bar.
     stdin.write("\u001B[C");
@@ -183,6 +185,52 @@ describe("CLI App (write → compare → self-grade)", () => {
     stdin.write("3");
     await tick();
     expect(session.progress().topicMastery["ag-verb-pres"]).toBe(2);
+
+    unmount();
+  });
+
+  it("names every family in full and cycles through them", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("m");
+    await tick();
+
+    // Every family is on screen, one per line, said the way a student would
+    // say it — no "Ptcl", no "A-syntax".
+    for (const name of [
+      "Nouns",
+      "Adjectives & adverbs",
+      "Pronouns",
+      "Verb forms",
+      "Particles",
+      "Noun syntax",
+      "Adjective & pronoun syntax",
+      "Verb syntax",
+      "Word-order & style",
+    ]) {
+      expect(lastFrame()).toContain(name);
+    }
+
+    // Up from the first populated family wraps round to the last one, rather
+    // than dead-ending. (The fixture populates nouns and verb-forms only.)
+    stdin.write("\u001B[A");
+    await tick();
+    expect(lastFrame()).toContain("Present indicative active");
+
+    // And down from there comes back to the first.
+    stdin.write("\u001B[B");
+    await tick();
+    expect(lastFrame()).toContain("First declension nouns");
 
     unmount();
   });

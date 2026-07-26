@@ -539,17 +539,22 @@ button {
   text-align: left;
 }
 
-.family__name {
+.family__main {
   flex: 1;
+  min-width: 0;
+}
+
+.family__name {
+  display: block;
   font-size: 0.95rem;
 }
 
-.family__pct {
-  font-size: 0.8rem;
+.family__sub {
+  display: block;
+  font-size: 0.78rem;
   color: var(--text-dim);
   font-variant-numeric: tabular-nums;
-  min-width: 2.5rem;
-  text-align: right;
+  margin-top: 0.1rem;
 }
 
 .family__meter {
@@ -568,48 +573,30 @@ button {
   border-radius: 999px;
 }
 
-.dots {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(2.1rem, 1fr));
-  gap: 0.3rem;
-  padding: 0.2rem 1.1rem 1rem;
+/* The open family's topics, inset under its heading. */
+.list--topics {
+  padding: 0 1.1rem 0.7rem;
 }
 
-.dot {
-  aspect-ratio: 1;
-  border-radius: 8px;
-  border: 1px solid var(--line);
+/* A topic's mastery, as a swatch beside the words that say the same thing. */
+.band {
+  flex: none;
+  width: 6px;
+  align-self: stretch;
+  min-height: 2rem;
+  border-radius: 999px;
   background: var(--ink-raised);
-  position: relative;
-  display: grid;
-  place-items: center;
-  font-size: 0.6rem;
-  color: var(--text-faint);
-  font-variant-numeric: tabular-nums;
+  border: 1px solid var(--line);
 }
 
 /* Mastery bands, 1 through 4. */
-.dot--m1 { background: color-mix(in srgb, var(--amber) 22%, var(--ink-raised)); }
-.dot--m2 { background: color-mix(in srgb, var(--amber) 45%, var(--ink-raised)); }
-.dot--m3 { background: color-mix(in srgb, var(--green) 55%, var(--ink-raised)); }
-.dot--m4 { background: var(--green); color: var(--ink); }
+.band--m1 { background: color-mix(in srgb, var(--amber) 22%, var(--ink-raised)); }
+.band--m2 { background: color-mix(in srgb, var(--amber) 45%, var(--ink-raised)); }
+.band--m3 { background: color-mix(in srgb, var(--green) 55%, var(--ink-raised)); }
+.band--m4 { background: var(--green); }
 
 /* Placement passed the topic rather than the student earning it. */
-.dot--assumed { opacity: 0.55; }
-
-.dot--due::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  background: var(--gold);
-  border: 1.5px solid var(--ink);
-}
-
-.dot--untested { border-style: dashed; }
+.band--assumed { opacity: 0.55; }
 
 /* --- lists ---------------------------------------------------------------- */
 
@@ -644,6 +631,14 @@ button {
   display: block;
   font-family: var(--serif);
   font-size: 1.02rem;
+}
+
+/* Bennett's own section number — the reference every other screen cites. */
+.row__ref {
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.45rem;
+  white-space: nowrap;
 }
 
 .row__sub {
