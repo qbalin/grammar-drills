@@ -1,0 +1,631 @@
+[
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t1",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Did the envoy, driven from the camp, confess the truth?",
+    "answer": "Cōnfessusne est lēgātus ē castrīs pulsus vēritātem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnfessus",
+     "ne",
+     "est",
+     "lēgātus",
+     "ē",
+     "castrīs",
+     "pulsus",
+     "vēritātem"
+    ]
+   },
+   {
+    "prompt": "Does the field abound in cucumbers and sown crops this year?",
+    "answer": "Abundatne ager cucumeribus satīsque hōc annō?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "abundat",
+     "ne",
+     "ager",
+     "cucumeribus",
+     "satīs",
+     "que",
+     "hōc",
+     "annō"
+    ]
+   },
+   {
+    "prompt": "Are you climbing the steep ridge, leaning on your spear?",
+    "answer": "Ascendisne iugum arduum hastā innīxus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ascendis",
+     "ne",
+     "iugum",
+     "arduum",
+     "hastā",
+     "innīxus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t2",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Surely you desire to return to your native shore?",
+    "answer": "Nōnne cupis ad lītus patrium redīre?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōnne",
+     "cupis",
+     "ad",
+     "lītus",
+     "patrium",
+     "redīre"
+    ]
+   },
+   {
+    "prompt": "Surely the leader saw the hidden movement of the enemy?",
+    "answer": "Nōnne dux mōtum hostium occultum vīdit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōnne",
+     "dux",
+     "mōtum",
+     "hostium",
+     "occultum",
+     "vīdit"
+    ]
+   },
+   {
+    "prompt": "Surely those crops, watered by rain, will profit the farmer?",
+    "answer": "Nōnne sata imbre rigāta agricolae prōfutūra sunt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōnne",
+     "sata",
+     "imbre",
+     "rigāta",
+     "agricolae",
+     "prōfutūra",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "Surely you pour a libation to the gods before the battle?",
+    "answer": "Nōnne dīs ante proelium lībās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōnne",
+     "dīs",
+     "ante",
+     "proelium",
+     "lībās"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t3",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "You aren't afraid of the prisoner's false confession, are you?",
+    "answer": "Num falsam captīvī cōnfessiōnem timēs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "falsam",
+     "captīvī",
+     "cōnfessiōnem",
+     "timēs"
+    ]
+   },
+   {
+    "prompt": "The soldiers weren't driven back from the wall, were they?",
+    "answer": "Num mīlitēs ā mūrō pulsī sunt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "mīlitēs",
+     "ā",
+     "mūrō",
+     "pulsī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The rack didn't wring the truth from the innocent man, did it?",
+    "answer": "Num equuleus vēritātem ab īnsonte expressit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "equuleus",
+     "vēritātem",
+     "ab",
+     "īnsonte",
+     "expressit"
+    ]
+   },
+   {
+    "prompt": "You don't long for war, now that peace has been made, do you?",
+    "answer": "Num bellī dēsīderium habēs pāce factā?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "bellī",
+     "dēsīderium",
+     "habēs",
+     "pāce",
+     "factā"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t4",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Why did the envoy, sent by the king, enter the hostile camp?",
+    "answer": "Cūr lēgātus ā rēge missus castra hostīlia iniit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cūr",
+     "lēgātus",
+     "ā",
+     "rēge",
+     "missus",
+     "castra",
+     "hostīlia",
+     "iniit"
+    ]
+   },
+   {
+    "prompt": "How many ships did the enemy drive to our shores by night?",
+    "answer": "Quot nāvēs hostis ad lītora nostra nocte pepulit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quot",
+     "nāvēs",
+     "hostis",
+     "ad",
+     "lītora",
+     "nostra",
+     "nocte",
+     "pepulit"
+    ]
+   },
+   {
+    "prompt": "When will the ardent young man cease to long for glory?",
+    "answer": "Quandō iuvenis ardēns glōriam dēsīderāre dēsinet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quandō",
+     "iuvenis",
+     "ardēns",
+     "glōriam",
+     "dēsīderāre",
+     "dēsinet"
+    ]
+   },
+   {
+    "prompt": "How did the small band drive the enemy from the steep pass?",
+    "answer": "Quōmodo parva manus hostem saltū arduō expulit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quōmodo",
+     "parva",
+     "manus",
+     "hostem",
+     "saltū",
+     "arduō",
+     "expulit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t5",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "What did the boy, leaning on his staff, ask about the war?",
+    "answer": "Quid puer baculō innīxus dē bellō rogāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "puer",
+     "baculō",
+     "innīxus",
+     "dē",
+     "bellō",
+     "rogāvit"
+    ]
+   },
+   {
+    "prompt": "You do see the crops abounding in the wide fields, don't you?",
+    "answer": "Vidēsne sata in campīs lātīs abundāre?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vidēs",
+     "ne",
+     "sata",
+     "in",
+     "campīs",
+     "lātīs",
+     "abundāre"
+    ]
+   },
+   {
+    "prompt": "The false envoy won't be of any use to us, will he?",
+    "answer": "Num falsus lēgātus nōbīs prōderit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "falsus",
+     "lēgātus",
+     "nōbīs",
+     "prōderit"
+    ]
+   },
+   {
+    "prompt": "I asked how the enemy had crossed the swollen river.",
+    "answer": "Rogāvī quōmodo hostis flūmen tumidum trānsīsset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rogāvī",
+     "quōmodo",
+     "hostis",
+     "flūmen",
+     "tumidum",
+     "trānsīsset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t6",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Do you see the column of soldiers advancing through the valley?",
+    "answer": "Vidēsne agmen mīlitum per vallem prōgrediēns?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vidēsne",
+     "agmen",
+     "mīlitum",
+     "per",
+     "vallem",
+     "prōgrediēns"
+    ]
+   },
+   {
+    "prompt": "Surely you know why the general, weary from battle, retreated?",
+    "answer": "Nōnne scīs cūr dux, proeliō fessus, sē recēperit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōnne",
+     "scīs",
+     "cūr",
+     "dux",
+     "proeliō",
+     "fessus",
+     "sē",
+     "recēperit"
+    ]
+   },
+   {
+    "prompt": "You aren't afraid of the enemy hidden in the woods, are you?",
+    "answer": "Num hostem in silvīs latentem timēs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Num",
+     "hostem",
+     "in",
+     "silvīs",
+     "latentem",
+     "timēs"
+    ]
+   },
+   {
+    "prompt": "The old man asked when the ships would return to the harbor.",
+    "answer": "Senex rogāvit quandō nāvēs in portum reditūrae essent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "rogāvit",
+     "quandō",
+     "nāvēs",
+     "in",
+     "portum",
+     "reditūrae",
+     "essent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t7",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Who dared to creep across the wall by night?",
+    "answer": "Quis per mūrum noctū rēpere ausus est?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "per",
+     "mūrum",
+     "noctū",
+     "rēpere",
+     "ausus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Do you understand how the poet arranged the syllables of his verse?",
+    "answer": "Intellegisne quōmodo poēta syllabās versūs suī dispōsuerit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Intellegisne",
+     "quōmodo",
+     "poēta",
+     "syllabās",
+     "versūs",
+     "suī",
+     "dispōsuerit"
+    ]
+   },
+   {
+    "prompt": "Surely the artist, ignorant of nothing, examined the statue carefully?",
+    "answer": "Nōnne artifex, nūllīus reī ignārus, statuam dīligenter īnspexit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōnne",
+     "artifex",
+     "nūllīus",
+     "reī",
+     "ignārus",
+     "statuam",
+     "dīligenter",
+     "īnspexit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t8",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Why does envy make the wicked man's face grow pale?",
+    "answer": "Cūr līvor vultum improbī pallēscere cōgit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cūr",
+     "līvor",
+     "vultum",
+     "improbī",
+     "pallēscere",
+     "cōgit"
+    ]
+   },
+   {
+    "prompt": "Do you know where the guide directed the wandering travelers?",
+    "answer": "Scīsne ubi dux errantēs viātōrēs dīrēxerit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scīsne",
+     "ubi",
+     "dux",
+     "errantēs",
+     "viātōrēs",
+     "dīrēxerit"
+    ]
+   },
+   {
+    "prompt": "You don't think the ice will refresh the sick soldiers, do you?",
+    "answer": "Num glaciēs mīlitēs aegrōs refrīgerābit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Num",
+     "glaciēs",
+     "mīlitēs",
+     "aegrōs",
+     "refrīgerābit"
+    ]
+   },
+   {
+    "prompt": "Surely the fresh troops surpassed the enemy in speed?",
+    "answer": "Nōnne novae cōpiae hostēs celeritāte antecessērunt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōnne",
+     "novae",
+     "cōpiae",
+     "hostēs",
+     "celeritāte",
+     "antecessērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t9",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "When did the astonished crowd fall silent before the king?",
+    "answer": "Quandō turba obstupefacta ante rēgem conticuit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quandō",
+     "turba",
+     "obstupefacta",
+     "ante",
+     "rēgem",
+     "conticuit"
+    ]
+   },
+   {
+    "prompt": "Do you provoke the sleeping lion with your reckless words?",
+    "answer": "Irrītāsne leōnem dormientem verbīs temerāriīs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Irrītāsne",
+     "leōnem",
+     "dormientem",
+     "verbīs",
+     "temerāriīs"
+    ]
+   },
+   {
+    "prompt": "The commander wondered how the scattered ranks had run together again.",
+    "answer": "Imperātor mīrābātur quōmodo agmina dispersa dēnuō concurrissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "mīrābātur",
+     "quōmodo",
+     "agmina",
+     "dispersa",
+     "dēnuō",
+     "concurrissent"
+    ]
+   },
+   {
+    "prompt": "Surely you clothed the shivering children in warm garments?",
+    "answer": "Nōnne puerōs trementēs calidīs vestīmentīs vestīvistī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōnne",
+     "puerōs",
+     "trementēs",
+     "calidīs",
+     "vestīmentīs",
+     "vestīvistī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t10",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "What did the physician inspect while the wound was rotting?",
+    "answer": "Quid medicus, vulnere tābente, īnspexit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "medicus",
+     "vulnere",
+     "tābente",
+     "īnspexit"
+    ]
+   },
+   {
+    "prompt": "Do you know why the boy, equal to no one in skill, was praised?",
+    "answer": "Scīsne cūr puer, nūllī arte pār, laudātus sit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scīsne",
+     "cūr",
+     "puer",
+     "nūllī",
+     "arte",
+     "pār",
+     "laudātus",
+     "sit"
+    ]
+   },
+   {
+    "prompt": "You aren't cutting the rest of the branches, are you?",
+    "answer": "Num cēterōs rāmōs concīdis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Num",
+     "cēterōs",
+     "rāmōs",
+     "concīdis"
+    ]
+   },
+   {
+    "prompt": "How did the torches light up the darkness of the night?",
+    "answer": "Quōmodo facēs noctis tenebrās lūmināvērunt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōmodo",
+     "facēs",
+     "noctis",
+     "tenebrās",
+     "lūmināvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-t11",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Surely the snake crept quietly toward the unwary bird?",
+    "answer": "Nōnne serpēns tacitē ad avem ignāram rēpsit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōnne",
+     "serpēns",
+     "tacitē",
+     "ad",
+     "avem",
+     "ignāram",
+     "rēpsit"
+    ]
+   },
+   {
+    "prompt": "Do you see how the soldiers, drawn up in a line, advance?",
+    "answer": "Vidēsne quōmodo mīlitēs, in aciē īnstrūctī, prōcēdant?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vidēsne",
+     "quōmodo",
+     "mīlitēs",
+     "in",
+     "aciē",
+     "īnstrūctī",
+     "prōcēdant"
+    ]
+   },
+   {
+    "prompt": "Where did the merchants, astonished by the storm, seek refuge?",
+    "answer": "Ubi mercātōrēs, tempestāte obstupefactī, perfugium petīvērunt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ubi",
+     "mercātōrēs",
+     "tempestāte",
+     "obstupefactī",
+     "perfugium",
+     "petīvērunt"
+    ]
+   },
+   {
+    "prompt": "The judge asked who had provoked the citizens to anger.",
+    "answer": "Iūdex rogāvit quis cīvēs ad īram irrītāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūdex",
+     "rogāvit",
+     "quis",
+     "cīvēs",
+     "ad",
+     "īram",
+     "irrītāvisset"
+    ]
+   }
+  ]
+ }
+]

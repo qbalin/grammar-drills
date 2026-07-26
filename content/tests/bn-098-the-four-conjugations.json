@@ -1,0 +1,722 @@
+[
+ {
+  "id": "bn-098-the-four-conjugations-t1",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The brave soldiers defend the high walls while the enemy approaches.",
+    "answer": "Mīlitēs fortēs mūrōs excelsōs dēfendunt dum hostis appropinquat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "fortēs",
+     "mūrōs",
+     "excelsōs",
+     "dēfendunt",
+     "dum",
+     "hostis",
+     "appropinquat"
+    ]
+   },
+   {
+    "prompt": "The eager student reads many books and writes letters daily.",
+    "answer": "Discipulus cupidus multōs librōs legit et epistulās cotīdiē scrībit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Discipulus",
+     "cupidus",
+     "multōs",
+     "librōs",
+     "legit",
+     "et",
+     "epistulās",
+     "cotīdiē",
+     "scrībit"
+    ]
+   },
+   {
+    "prompt": "We hear the sound of the dense forest, though we see nothing.",
+    "answer": "Sonum dēnsae silvae audīmus, quamquam nihil vidēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sonum",
+     "dēnsae",
+     "silvae",
+     "audīmus",
+     "quamquam",
+     "nihil",
+     "vidēmus"
+    ]
+   },
+   {
+    "prompt": "The general leads his weary troops through the hostile fields.",
+    "answer": "Dux fessās cōpiās per agrōs hostīlēs dūcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "fessās",
+     "cōpiās",
+     "per",
+     "agrōs",
+     "hostīlēs",
+     "dūcit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t2",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "While the mother sleeps, the children carry water from the river.",
+    "answer": "Dum māter dormit, līberī aquam ā flūmine portant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "māter",
+     "dormit",
+     "līberī",
+     "aquam",
+     "ā",
+     "flūmine",
+     "portant"
+    ]
+   },
+   {
+    "prompt": "The swift horse flees headlong from the burning stable.",
+    "answer": "Equus celer ex stabulō ardentī praeceps fugit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Equus",
+     "celer",
+     "ex",
+     "stabulō",
+     "ardentī",
+     "praeceps",
+     "fugit"
+    ]
+   },
+   {
+    "prompt": "We seek the truth, but the crowd fears the powerful king.",
+    "answer": "Vēritātem quaerimus, sed turba rēgem potentem timet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēritātem",
+     "quaerimus",
+     "sed",
+     "turba",
+     "rēgem",
+     "potentem",
+     "timet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t3",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The poet sings sweet songs while the guests drink wine.",
+    "answer": "Poēta dulcia carmina canit dum hospitēs vīnum bibunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "dulcia",
+     "carmina",
+     "canit",
+     "dum",
+     "hospitēs",
+     "vīnum",
+     "bibunt"
+    ]
+   },
+   {
+    "prompt": "The captured city no longer resists, for the walls are falling.",
+    "answer": "Urbs capta iam nōn resistit, nam mūrī cadunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbs",
+     "capta",
+     "iam",
+     "nōn",
+     "resistit",
+     "nam",
+     "mūrī",
+     "cadunt"
+    ]
+   },
+   {
+    "prompt": "The farmers cultivate the fields and the master praises their labor.",
+    "answer": "Agricolae agrōs colunt et dominus labōrem eōrum laudat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricolae",
+     "agrōs",
+     "colunt",
+     "et",
+     "dominus",
+     "labōrem",
+     "eōrum",
+     "laudat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t4",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "I take the shield and hasten toward the high tower.",
+    "answer": "Scūtum capiō et ad turrim excelsam properō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scūtum",
+     "capiō",
+     "et",
+     "ad",
+     "turrim",
+     "excelsam",
+     "properō"
+    ]
+   },
+   {
+    "prompt": "The wise teacher opens the book and explains difficult words.",
+    "answer": "Magister sapiēns librum aperit et verba difficilia explicat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "sapiēns",
+     "librum",
+     "aperit",
+     "et",
+     "verba",
+     "difficilia",
+     "explicat"
+    ]
+   },
+   {
+    "prompt": "You all hear the trumpets and quickly seize your weapons.",
+    "answer": "Tubās audītis et arma celeriter capitis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tubās",
+     "audītis",
+     "et",
+     "arma",
+     "celeriter",
+     "capitis"
+    ]
+   },
+   {
+    "prompt": "The merchants love the calm sea but dread the deep storms.",
+    "answer": "Mercātōrēs tranquillum mare amant sed altās tempestātēs metuunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātōrēs",
+     "tranquillum",
+     "mare",
+     "amant",
+     "sed",
+     "altās",
+     "tempestātēs",
+     "metuunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t5",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The maiden purifies the sacred altar while the priest prays.",
+    "answer": "Virgō sacram āram pūrgat dum sacerdōs ōrat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "sacram",
+     "āram",
+     "pūrgat",
+     "dum",
+     "sacerdōs",
+     "ōrat"
+    ]
+   },
+   {
+    "prompt": "We conquer the fierce enemies and free the captives.",
+    "answer": "Ferōcēs hostēs vincimus et captīvōs līberāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ferōcēs",
+     "hostēs",
+     "vincimus",
+     "et",
+     "captīvōs",
+     "līberāmus"
+    ]
+   },
+   {
+    "prompt": "The old man grows old slowly, but his mind remains keen.",
+    "answer": "Senex lentē cōnsenēscit, sed mēns eius ācris manet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "lentē",
+     "cōnsenēscit",
+     "sed",
+     "mēns",
+     "eius",
+     "ācris",
+     "manet"
+    ]
+   },
+   {
+    "prompt": "The eager hunter throws the spear and pierces the wild boar.",
+    "answer": "Vēnātor cupidus hastam iacit et aprum trānsfīgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēnātor",
+     "cupidus",
+     "hastam",
+     "iacit",
+     "et",
+     "aprum",
+     "trānsfīgit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t6",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The accomplished orator moves the citizens with powerful words.",
+    "answer": "Ōrātor perfectus cīvēs verbīs potentibus movet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "perfectus",
+     "cīvēs",
+     "verbīs",
+     "potentibus",
+     "movet"
+    ]
+   },
+   {
+    "prompt": "You build a lofty temple and adorn it with gold.",
+    "answer": "Templum excelsum aedificās et aurō ōrnās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Templum",
+     "excelsum",
+     "aedificās",
+     "et",
+     "aurō",
+     "ōrnās"
+    ]
+   },
+   {
+    "prompt": "While sweat pours down, the runners make for the finish line.",
+    "answer": "Dum sūdor fluit, cursōrēs mētam petunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "sūdor",
+     "fluit",
+     "cursōrēs",
+     "mētam",
+     "petunt"
+    ]
+   },
+   {
+    "prompt": "The soldiers hurl their weapons and break through the dense line.",
+    "answer": "Mīlitēs tēla coniciunt et dēnsam aciem perrumpunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "tēla",
+     "coniciunt",
+     "et",
+     "dēnsam",
+     "aciem",
+     "perrumpunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t7",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The general prepares an ambush while the soldiers guard the camp.",
+    "answer": "Dux īnsidiās parat dum mīlitēs castra custōdiunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "īnsidiās",
+     "parat",
+     "dum",
+     "mīlitēs",
+     "castra",
+     "custōdiunt"
+    ]
+   },
+   {
+    "prompt": "The philosopher praises restraint and despises useless riches.",
+    "answer": "Philosophus continentiam laudat et inānēs dīvitiās contemnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "continentiam",
+     "laudat",
+     "et",
+     "inānēs",
+     "dīvitiās",
+     "contemnit"
+    ]
+   },
+   {
+    "prompt": "We hear the citizens' clamor and hasten toward the citadel.",
+    "answer": "Cīvium clāmōrem audīmus et ad arcem contendimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvium",
+     "clāmōrem",
+     "audīmus",
+     "et",
+     "ad",
+     "arcem",
+     "contendimus"
+    ]
+   },
+   {
+    "prompt": "You turn pale whenever you catch sight of the dreadful monster.",
+    "answer": "Pallēs cum horrendum mōnstrum vidēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pallēs",
+     "cum",
+     "horrendum",
+     "mōnstrum",
+     "vidēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t8",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The orator pours forth long speeches before the assembled people.",
+    "answer": "Ōrātor longās ōrātiōnēs ante populum congregātum diffundit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "longās",
+     "ōrātiōnēs",
+     "ante",
+     "populum",
+     "congregātum",
+     "diffundit"
+    ]
+   },
+   {
+    "prompt": "The little boy fears the wolf and flees into the woods.",
+    "answer": "Parvus puer lupum timet et in silvās fugit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Parvus",
+     "puer",
+     "lupum",
+     "timet",
+     "et",
+     "in",
+     "silvās",
+     "fugit"
+    ]
+   },
+   {
+    "prompt": "We build a bridge while the swift river flows down from the mountains.",
+    "answer": "Pontem aedificāmus dum rapidus amnis dē montibus dēfluit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pontem",
+     "aedificāmus",
+     "dum",
+     "rapidus",
+     "amnis",
+     "dē",
+     "montibus",
+     "dēfluit"
+    ]
+   },
+   {
+    "prompt": "You (pl.) rule the province with justice and restrain the greedy.",
+    "answer": "Prōvinciam cum iūstitiā regitis et avārōs coercētis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prōvinciam",
+     "cum",
+     "iūstitiā",
+     "regitis",
+     "et",
+     "avārōs",
+     "coercētis"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t9",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The weary traveler, about to depart, seeks a brief rest.",
+    "answer": "Fessus viātor itūrus brevem quiētem petit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fessus",
+     "viātor",
+     "itūrus",
+     "brevem",
+     "quiētem",
+     "petit"
+    ]
+   },
+   {
+    "prompt": "The queen adorns the golden helmet with precious gems.",
+    "answer": "Rēgīna auream galeam pretiōsīs gemmīs ōrnat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "auream",
+     "galeam",
+     "pretiōsīs",
+     "gemmīs",
+     "ōrnat"
+    ]
+   },
+   {
+    "prompt": "We count the stars while the shepherd leads his flock home.",
+    "answer": "Stēllās ēnumerāmus dum pāstor gregem domum dūcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Stēllās",
+     "ēnumerāmus",
+     "dum",
+     "pāstor",
+     "gregem",
+     "domum",
+     "dūcit"
+    ]
+   },
+   {
+    "prompt": "You grieve because the war drags on and the allies withdraw.",
+    "answer": "Dolēs quod bellum diū manet et sociī dēcēdunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dolēs",
+     "quod",
+     "bellum",
+     "diū",
+     "manet",
+     "et",
+     "sociī",
+     "dēcēdunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t10",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The wise judge hears the case and condemns the guilty man.",
+    "answer": "Sapiēns iūdex causam audit et reum damnat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "iūdex",
+     "causam",
+     "audit",
+     "et",
+     "reum",
+     "damnat"
+    ]
+   },
+   {
+    "prompt": "The sailors dread the deep sea and the raging winds.",
+    "answer": "Nautae altum mare et saevōs ventōs metuunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nautae",
+     "altum",
+     "mare",
+     "et",
+     "saevōs",
+     "ventōs",
+     "metuunt"
+    ]
+   },
+   {
+    "prompt": "We greet our friends who are returning from the long journey.",
+    "answer": "Amīcōs ex longō itinere reversōs salūtāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amīcōs",
+     "ex",
+     "longō",
+     "itinere",
+     "reversōs",
+     "salūtāmus"
+    ]
+   },
+   {
+    "prompt": "You (pl.) open the gates and receive the weary guests.",
+    "answer": "Portās aperītis et fessōs hospitēs accipitis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Portās",
+     "aperītis",
+     "et",
+     "fessōs",
+     "hospitēs",
+     "accipitis"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t11",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The farmer plows the field while the sun rises over the hills.",
+    "answer": "Agricola agrum arat dum sōl super collēs surgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "agrum",
+     "arat",
+     "dum",
+     "sōl",
+     "super",
+     "collēs",
+     "surgit"
+    ]
+   },
+   {
+    "prompt": "The teacher explains the difficult book to the eager students.",
+    "answer": "Magister difficilem librum studiōsīs discipulīs explicat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "difficilem",
+     "librum",
+     "studiōsīs",
+     "discipulīs",
+     "explicat"
+    ]
+   },
+   {
+    "prompt": "We guard the sacred fire and feed the flame through the night.",
+    "answer": "Sacrum ignem custōdīmus et per noctem flammam alimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sacrum",
+     "ignem",
+     "custōdīmus",
+     "et",
+     "per",
+     "noctem",
+     "flammam",
+     "alimus"
+    ]
+   },
+   {
+    "prompt": "You know many things, but you conceal the truth from the king.",
+    "answer": "Multa scīs sed vērum ā rēge cēlās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Multa",
+     "scīs",
+     "sed",
+     "vērum",
+     "ā",
+     "rēge",
+     "cēlās"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-098-the-four-conjugations-t12",
+  "sectionId": "bn-098-the-four-conjugations",
+  "questions": [
+   {
+    "prompt": "The general leads the legions across the wide plain toward the city.",
+    "answer": "Dux legiōnēs per lātam plānitiem ad urbem dūcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "legiōnēs",
+     "per",
+     "lātam",
+     "plānitiem",
+     "ad",
+     "urbem",
+     "dūcit"
+    ]
+   },
+   {
+    "prompt": "The merchant sells rare wares and gathers great wealth.",
+    "answer": "Mercātor rāra mercimōnia vendit et magnās dīvitiās colligit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "rāra",
+     "mercimōnia",
+     "vendit",
+     "et",
+     "magnās",
+     "dīvitiās",
+     "colligit"
+    ]
+   },
+   {
+    "prompt": "We warn the young men, but they scorn our counsel.",
+    "answer": "Iuvenēs monēmus, sed cōnsilium nostrum spernunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iuvenēs",
+     "monēmus",
+     "sed",
+     "cōnsilium",
+     "nostrum",
+     "spernunt"
+    ]
+   },
+   {
+    "prompt": "You (pl.) hurl spears at the enemy and shatter their battle line.",
+    "answer": "Tēla in hostēs iacitis et aciem frangitis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tēla",
+     "in",
+     "hostēs",
+     "iacitis",
+     "et",
+     "aciem",
+     "frangitis"
+    ]
+   }
+  ]
+ }
+]

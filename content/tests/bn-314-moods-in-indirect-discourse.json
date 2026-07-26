@@ -1,0 +1,699 @@
+[
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t1",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The general says that the enemy have crossed the river.",
+    "answer": "Dux hostēs flūmen trānsīsse dīcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "hostēs",
+     "flūmen",
+     "trānsīsse",
+     "dīcit"
+    ]
+   },
+   {
+    "prompt": "We think that the poet will write many books.",
+    "answer": "Poētam multōs librōs scrīptūrum esse putāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poētam",
+     "multōs",
+     "librōs",
+     "scrīptūrum",
+     "esse",
+     "putāmus"
+    ]
+   },
+   {
+    "prompt": "The old man knows that a storm is approaching.",
+    "answer": "Senex tempestātem adpropinquāre scit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "tempestātem",
+     "adpropinquāre",
+     "scit"
+    ]
+   },
+   {
+    "prompt": "I saw that the woods were full of shadows.",
+    "answer": "Silvam tenebrārum plēnam esse vīdī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Silvam",
+     "tenebrārum",
+     "plēnam",
+     "esse",
+     "vīdī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t2",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The messenger reports that the city has been captured.",
+    "answer": "Nūntius urbem captam esse nūntiat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "urbem",
+     "captam",
+     "esse",
+     "nūntiat"
+    ]
+   },
+   {
+    "prompt": "You believe that the gods watch over the pious.",
+    "answer": "Deōs piōs tuērī crēdis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Deōs",
+     "piōs",
+     "tuērī",
+     "crēdis"
+    ]
+   },
+   {
+    "prompt": "They heard that the king had died in exile.",
+    "answer": "Rēgem in exiliō mortuum esse audīvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgem",
+     "in",
+     "exiliō",
+     "mortuum",
+     "esse",
+     "audīvērunt"
+    ]
+   },
+   {
+    "prompt": "The philosopher teaches that the soul is immortal.",
+    "answer": "Philosophus animum immortālem esse docet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "animum",
+     "immortālem",
+     "esse",
+     "docet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t3",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The leader promises that the soldiers will conquer.",
+    "answer": "Dux mīlitēs victūrōs esse pollicētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "mīlitēs",
+     "victūrōs",
+     "esse",
+     "pollicētur"
+    ]
+   },
+   {
+    "prompt": "We know that the stars shine at night.",
+    "answer": "Scīmus stēllās nocte lūcēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scīmus",
+     "stēllās",
+     "nocte",
+     "lūcēre"
+    ]
+   },
+   {
+    "prompt": "The young man denies that he broke the window.",
+    "answer": "Iuvenis sē fenestram frēgisse negat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iuvenis",
+     "sē",
+     "fenestram",
+     "frēgisse",
+     "negat"
+    ]
+   },
+   {
+    "prompt": "The traveler perceives that the road leads to the mountains.",
+    "answer": "Peregrīnus viam ad montēs dūcere sentit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Peregrīnus",
+     "viam",
+     "ad",
+     "montēs",
+     "dūcere",
+     "sentit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t4",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The teacher thinks that the students have learned much.",
+    "answer": "Magister discipulōs multa didicisse putat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "discipulōs",
+     "multa",
+     "didicisse",
+     "putat"
+    ]
+   },
+   {
+    "prompt": "I know that virtue is more precious than gold.",
+    "answer": "Sciō virtūtem aurō pretiōsiōrem esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sciō",
+     "virtūtem",
+     "aurō",
+     "pretiōsiōrem",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The augur foretold that the city would fall.",
+    "answer": "Augur urbem cāsūram esse praedīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Augur",
+     "urbem",
+     "cāsūram",
+     "esse",
+     "praedīxit"
+    ]
+   },
+   {
+    "prompt": "They say that the enemy is hiding in the forest.",
+    "answer": "Hostem in silvā latēre dīcunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostem",
+     "in",
+     "silvā",
+     "latēre",
+     "dīcunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t5",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The mother thinks that her son sleeps too much.",
+    "answer": "Māter fīlium nimium dormīre putat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māter",
+     "fīlium",
+     "nimium",
+     "dormīre",
+     "putat"
+    ]
+   },
+   {
+    "prompt": "The captive confessed that he had betrayed the camp.",
+    "answer": "Captīvus sē castra prōdidisse cōnfessus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvus",
+     "sē",
+     "castra",
+     "prōdidisse",
+     "cōnfessus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "We see that autumn is now approaching.",
+    "answer": "Autumnum iam adpropinquāre vidēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Autumnum",
+     "iam",
+     "adpropinquāre",
+     "vidēmus"
+    ]
+   },
+   {
+    "prompt": "The historian writes that Caesar conquered the Gauls.",
+    "answer": "Historicus Caesarem Gallōs vīcisse scrībit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Historicus",
+     "Caesarem",
+     "Gallōs",
+     "vīcisse",
+     "scrībit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t6",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The old man said that his brother had died in the war.",
+    "answer": "Senex dīxit frātrem suum in bellō periisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "dīxit",
+     "frātrem",
+     "suum",
+     "in",
+     "bellō",
+     "periisse"
+    ]
+   },
+   {
+    "prompt": "We know that the gods punish crimes.",
+    "answer": "Scīmus deōs scelera pūnīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scīmus",
+     "deōs",
+     "scelera",
+     "pūnīre"
+    ]
+   },
+   {
+    "prompt": "The poet believes that his fame will endure forever.",
+    "answer": "Poēta crēdit glōriam suam in perpetuum mānsūram esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "crēdit",
+     "glōriam",
+     "suam",
+     "in",
+     "perpetuum",
+     "mānsūram",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The helmsman thought that a storm was approaching from the sea.",
+    "answer": "Gubernātor putāvit tempestātem ā marī appropinquāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gubernātor",
+     "putāvit",
+     "tempestātem",
+     "ā",
+     "marī",
+     "appropinquāre"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t7",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The witness swore that he had seen nothing.",
+    "answer": "Testis iūrāvit sē nihil vīdisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "iūrāvit",
+     "sē",
+     "nihil",
+     "vīdisse"
+    ]
+   },
+   {
+    "prompt": "The physician says that the wounded man will recover.",
+    "answer": "Medicus dīcit vulnerātum convalitūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Medicus",
+     "dīcit",
+     "vulnerātum",
+     "convalitūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The farmers perceived that the fields had been ravaged by fire.",
+    "answer": "Agricolae sēnsērunt agrōs igne vāstātōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricolae",
+     "sēnsērunt",
+     "agrōs",
+     "igne",
+     "vāstātōs",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The king announced that peace had been made with the neighbors.",
+    "answer": "Rēx nūntiāvit pācem cum fīnitimīs factam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "nūntiāvit",
+     "pācem",
+     "cum",
+     "fīnitimīs",
+     "factam",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t8",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "I hear that the enemy fleet is approaching the harbor.",
+    "answer": "Audiō classem hostium portuī appropinquāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Audiō",
+     "classem",
+     "hostium",
+     "portuī",
+     "appropinquāre"
+    ]
+   },
+   {
+    "prompt": "The freedwoman said that she had left the city long ago.",
+    "answer": "Liberta dīxit sē iam prīdem ex urbe migrāvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Liberta",
+     "dīxit",
+     "sē",
+     "iam",
+     "prīdem",
+     "ex",
+     "urbe",
+     "migrāvisse"
+    ]
+   },
+   {
+    "prompt": "The philosopher taught that the soul is immortal.",
+    "answer": "Philosophus docuit animum immortālem esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "docuit",
+     "animum",
+     "immortālem",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The scouts reported that the mountains could not be crossed.",
+    "answer": "Explōrātōrēs nūntiāvērunt montēs trānsīrī nōn posse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Explōrātōrēs",
+     "nūntiāvērunt",
+     "montēs",
+     "trānsīrī",
+     "nōn",
+     "posse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t9",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The merchant hopes that his ships will return safely.",
+    "answer": "Mercātor spērat nāvēs suās tūtō reditūrās esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "spērat",
+     "nāvēs",
+     "suās",
+     "tūtō",
+     "reditūrās",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "Everyone knows that old age brings many cares.",
+    "answer": "Omnēs sciunt senectūtem multās cūrās afferre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnēs",
+     "sciunt",
+     "senectūtem",
+     "multās",
+     "cūrās",
+     "afferre"
+    ]
+   },
+   {
+    "prompt": "The maiden denied that she had touched the sacred fire.",
+    "answer": "Virgō negāvit sē ignem sacrum tetigisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "negāvit",
+     "sē",
+     "ignem",
+     "sacrum",
+     "tetigisse"
+    ]
+   },
+   {
+    "prompt": "We saw that the walls were blazing with a great flame.",
+    "answer": "Vīdimus mūrōs magnā flammā flagrāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīdimus",
+     "mūrōs",
+     "magnā",
+     "flammā",
+     "flagrāre"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t10",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The consul thinks that the citizens fear the coming war.",
+    "answer": "Cōnsul putat cīvēs bellum imminēns timēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "putat",
+     "cīvēs",
+     "bellum",
+     "imminēns",
+     "timēre"
+    ]
+   },
+   {
+    "prompt": "The cook confessed that he had stolen the money.",
+    "answer": "Coquus cōnfessus est sē pecūniam surripuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Coquus",
+     "cōnfessus",
+     "est",
+     "sē",
+     "pecūniam",
+     "surripuisse"
+    ]
+   },
+   {
+    "prompt": "The augur declared that the birds foretold victory.",
+    "answer": "Augur dēclārāvit avēs victōriam portendere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Augur",
+     "dēclārāvit",
+     "avēs",
+     "victōriam",
+     "portendere"
+    ]
+   },
+   {
+    "prompt": "They report that the general was slain in battle.",
+    "answer": "Nūntiant imperātōrem in proeliō occīsum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntiant",
+     "imperātōrem",
+     "in",
+     "proeliō",
+     "occīsum",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t11",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The hunter said that he had killed a wild boar in the forest.",
+    "answer": "Vēnātor dīxit sē aprum ferum in silvā mactāvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēnātor",
+     "dīxit",
+     "sē",
+     "aprum",
+     "ferum",
+     "in",
+     "silvā",
+     "mactāvisse"
+    ]
+   },
+   {
+    "prompt": "We believe that virtue is more powerful than fortune.",
+    "answer": "Crēdimus virtūtem fortūnā potentiōrem esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crēdimus",
+     "virtūtem",
+     "fortūnā",
+     "potentiōrem",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The captives said that they had been abandoned by their allies.",
+    "answer": "Captīvī dīxērunt sē ā sociīs dēsertōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvī",
+     "dīxērunt",
+     "sē",
+     "ā",
+     "sociīs",
+     "dēsertōs",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t12",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The philosopher believes that virtue alone brings true happiness.",
+    "answer": "Philosophus crēdit sōlam virtūtem vēram fēlīcitātem afferre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "crēdit",
+     "sōlam",
+     "virtūtem",
+     "vēram",
+     "fēlīcitātem",
+     "afferre"
+    ]
+   },
+   {
+    "prompt": "The scouts reported that the enemy had abandoned the camp during the night.",
+    "answer": "Explōrātōrēs nūntiāvērunt hostēs castra nocte relīquisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Explōrātōrēs",
+     "nūntiāvērunt",
+     "hostēs",
+     "castra",
+     "nocte",
+     "relīquisse"
+    ]
+   },
+   {
+    "prompt": "The poet sang that the gods had once inhabited the earth.",
+    "answer": "Poēta cecinit deōs ōlim terrās incoluisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "cecinit",
+     "deōs",
+     "ōlim",
+     "terrās",
+     "incoluisse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t13",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The physician denied that the wound was fatal.",
+    "answer": "Medicus negāvit vulnus mortiferum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Medicus",
+     "negāvit",
+     "vulnus",
+     "mortiferum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The captives hoped that the victor would spare their lives.",
+    "answer": "Captīvī spērābant victōrem vītae suae parsūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvī",
+     "spērābant",
+     "victōrem",
+     "vītae",
+     "suae",
+     "parsūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The farmer perceives that the fields have been ruined by the flood.",
+    "answer": "Agricola sentit agrōs dīluviō vāstātōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "sentit",
+     "agrōs",
+     "dīluviō",
+     "vāstātōs",
+     "esse"
+    ]
+   }
+  ]
+ }
+]

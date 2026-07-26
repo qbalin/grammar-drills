@@ -1,0 +1,784 @@
+[
+ {
+  "id": "bn-087-demonstrative-pronouns-t1",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "This general, whom the soldiers feared, terrified the whole city.",
+    "answer": "Hic dux, quem mīlitēs timēbant, tōtam urbem perterruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "dux",
+     "quem",
+     "mīlitēs",
+     "timēbant",
+     "tōtam",
+     "urbem",
+     "perterruit"
+    ]
+   },
+   {
+    "prompt": "That woman gave this gift to her own son.",
+    "answer": "Illa fēmina hoc dōnum fīliō suō dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illa",
+     "fēmina",
+     "hoc",
+     "dōnum",
+     "fīliō",
+     "suō",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "He said these things, but no one believed him.",
+    "answer": "Is haec dīxit, sed nēmō eī crēdidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Is",
+     "haec",
+     "dīxit",
+     "sed",
+     "nēmō",
+     "eī",
+     "crēdidit"
+    ]
+   },
+   {
+    "prompt": "The king himself feared that plague.",
+    "answer": "Rēx ipse illam pestilentiam timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "ipse",
+     "illam",
+     "pestilentiam",
+     "timēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t2",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "I know the name of this man well.",
+    "answer": "Huius virī nōmen bene nōvī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Huius",
+     "virī",
+     "nōmen",
+     "bene",
+     "nōvī"
+    ]
+   },
+   {
+    "prompt": "The reward of that victory was great.",
+    "answer": "Illīus victōriae praemium magnum erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illīus",
+     "victōriae",
+     "praemium",
+     "magnum",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "We gave the letters to that same messenger.",
+    "answer": "Eīdem nūntiō litterās dedimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eīdem",
+     "nūntiō",
+     "litterās",
+     "dedimus"
+    ]
+   },
+   {
+    "prompt": "This punishment is worthy of that crime.",
+    "answer": "Haec poena illō scelere digna est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "poena",
+     "illō",
+     "scelere",
+     "digna",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t3",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "These fields, cultivated by the farmers, are very fertile.",
+    "answer": "Hī agrī, ab agricolīs cultī, fertilissimī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hī",
+     "agrī",
+     "ab",
+     "agricolīs",
+     "cultī",
+     "fertilissimī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "That leader, having been sent to Rome, delayed a long time.",
+    "answer": "Ille dux, Rōmam missus, diū morātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ille",
+     "dux",
+     "Rōmam",
+     "missus",
+     "diū",
+     "morātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "I fear the anger of that same king.",
+    "answer": "Eiusdem rēgis īram timeō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eiusdem",
+     "rēgis",
+     "īram",
+     "timeō"
+    ]
+   },
+   {
+    "prompt": "He himself hid these things from his friends.",
+    "answer": "Ipse haec ab amīcīs occultāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ipse",
+     "haec",
+     "ab",
+     "amīcīs",
+     "occultāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t4",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "This journey, begun in winter, was full of dangers.",
+    "answer": "Hoc iter, hieme coeptum, plēnum perīculōrum erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "iter",
+     "hieme",
+     "coeptum",
+     "plēnum",
+     "perīculōrum",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "That expense frightened the citizens greatly.",
+    "answer": "Ille sūmptus cīvēs valdē perterruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ille",
+     "sūmptus",
+     "cīvēs",
+     "valdē",
+     "perterruit"
+    ]
+   },
+   {
+    "prompt": "We saw her walking through the forum.",
+    "answer": "Eam per forum ambulantem vīdimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eam",
+     "per",
+     "forum",
+     "ambulantem",
+     "vīdimus"
+    ]
+   },
+   {
+    "prompt": "The same soldiers defended this town bravely.",
+    "answer": "Īdem mīlitēs hoc oppidum fortiter dēfendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īdem",
+     "mīlitēs",
+     "hoc",
+     "oppidum",
+     "fortiter",
+     "dēfendērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t5",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "To this poet the citizens gave great praise.",
+    "answer": "Huic poētae cīvēs magnam laudem dedērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Huic",
+     "poētae",
+     "cīvēs",
+     "magnam",
+     "laudem",
+     "dedērunt"
+    ]
+   },
+   {
+    "prompt": "That freedom, once lost, was never recovered.",
+    "answer": "Illa lībertās, semel āmissa, numquam recepta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illa",
+     "lībertās",
+     "semel",
+     "āmissa",
+     "numquam",
+     "recepta",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The queen herself led those troops into battle.",
+    "answer": "Rēgīna ipsa illās cōpiās in proelium dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "ipsa",
+     "illās",
+     "cōpiās",
+     "in",
+     "proelium",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "I have often praised the courage of this man.",
+    "answer": "Huius virī virtūtem saepe laudāvī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Huius",
+     "virī",
+     "virtūtem",
+     "saepe",
+     "laudāvī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t6",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "That famous poet wrote these songs long ago.",
+    "answer": "Ille clārus poēta haec carmina ōlim scrīpsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ille",
+     "clārus",
+     "poēta",
+     "haec",
+     "carmina",
+     "ōlim",
+     "scrīpsit"
+    ]
+   },
+   {
+    "prompt": "We fear these winters, harsh and long.",
+    "answer": "Hās hiemēs, dūrās et longās, timēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hās",
+     "hiemēs",
+     "dūrās",
+     "et",
+     "longās",
+     "timēmus"
+    ]
+   },
+   {
+    "prompt": "He gave the same reward to all the sailors.",
+    "answer": "Idem praemium omnibus nautīs dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Idem",
+     "praemium",
+     "omnibus",
+     "nautīs",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "That woman, terrified by the storm, fled from the ship.",
+    "answer": "Illa fēmina, tempestāte perterrita, ē nāve fūgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illa",
+     "fēmina",
+     "tempestāte",
+     "perterrita",
+     "ē",
+     "nāve",
+     "fūgit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t7",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "This orator, whom everyone praised, held back the citizens with a long delay.",
+    "answer": "Hic ōrātor, quem omnēs laudābant, longā morā cīvēs retinuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "ōrātor",
+     "quem",
+     "omnēs",
+     "laudābant",
+     "longā",
+     "morā",
+     "cīvēs",
+     "retinuit"
+    ]
+   },
+   {
+    "prompt": "I gave that captive his sword back, although the general had forbidden it.",
+    "answer": "Illī captīvō gladium suum reddidī, quamquam dux vetuerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illī",
+     "captīvō",
+     "gladium",
+     "suum",
+     "reddidī",
+     "quamquam",
+     "dux",
+     "vetuerat"
+    ]
+   },
+   {
+    "prompt": "The grammarian read these books, but he despised those poems.",
+    "answer": "Grammaticus hōs librōs lēgit, sed illa carmina contempsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Grammaticus",
+     "hōs",
+     "librōs",
+     "lēgit",
+     "sed",
+     "illa",
+     "carmina",
+     "contempsit"
+    ]
+   },
+   {
+    "prompt": "That woman, whose son had died, grieved for many days.",
+    "answer": "Illa mulier, cuius fīlius mortuus erat, multōs diēs doluit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illa",
+     "mulier",
+     "cuius",
+     "fīlius",
+     "mortuus",
+     "erat",
+     "multōs",
+     "diēs",
+     "doluit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t8",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "This ivory, brought from India, adorns the temple of the goddess.",
+    "answer": "Hoc ebur, ex Indiā portātum, templum deae ōrnat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "ebur",
+     "ex",
+     "Indiā",
+     "portātum",
+     "templum",
+     "deae",
+     "ōrnat"
+    ]
+   },
+   {
+    "prompt": "He himself announced the war, and the same man later sought peace.",
+    "answer": "Ipse bellum dēnūntiāvit, et īdem posteā pācem petīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ipse",
+     "bellum",
+     "dēnūntiāvit",
+     "et",
+     "īdem",
+     "posteā",
+     "pācem",
+     "petīvit"
+    ]
+   },
+   {
+    "prompt": "The greedy lover gave that maiden a headband and a golden ring.",
+    "answer": "Edax amātor illī virginī vittam et ānulum aureum dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Edax",
+     "amātor",
+     "illī",
+     "virginī",
+     "vittam",
+     "et",
+     "ānulum",
+     "aureum",
+     "dedit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t9",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "That messenger brought this letter to the consul at dawn.",
+    "answer": "Ille nūntius hanc epistulam ad cōnsulem prīmā lūce attulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ille",
+     "nūntius",
+     "hanc",
+     "epistulam",
+     "ad",
+     "cōnsulem",
+     "prīmā",
+     "lūce",
+     "attulit"
+    ]
+   },
+   {
+    "prompt": "We ourselves saw the same ships sailing toward the harbor.",
+    "answer": "Ipsī eāsdem nāvēs ad portum nāvigantēs vīdimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ipsī",
+     "eāsdem",
+     "nāvēs",
+     "ad",
+     "portum",
+     "nāvigantēs",
+     "vīdimus"
+    ]
+   },
+   {
+    "prompt": "The boiled nettle, which the doctor praised, healed this wound.",
+    "answer": "Urtīca ēlixāta, quam medicus laudāvit, hoc vulnus sānāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urtīca",
+     "ēlixāta",
+     "quam",
+     "medicus",
+     "laudāvit",
+     "hoc",
+     "vulnus",
+     "sānāvit"
+    ]
+   },
+   {
+    "prompt": "To that senator the people entrusted the safety of the republic.",
+    "answer": "Illī senātōrī populus salūtem reī pūblicae commīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illī",
+     "senātōrī",
+     "populus",
+     "salūtem",
+     "reī",
+     "pūblicae",
+     "commīsit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t10",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "This wine, poured into golden cups, delighted all the guests.",
+    "answer": "Hoc vīnum, in pōcula aurea īnfūsum, omnēs convīvās dēlectāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "vīnum",
+     "in",
+     "pōcula",
+     "aurea",
+     "īnfūsum",
+     "omnēs",
+     "convīvās",
+     "dēlectāvit"
+    ]
+   },
+   {
+    "prompt": "He led that army across the river without any delay.",
+    "answer": "Illum exercitum trāns flūmen sine ūllā morā dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illum",
+     "exercitum",
+     "trāns",
+     "flūmen",
+     "sine",
+     "ūllā",
+     "morā",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "The bleeding gladiator hurled his shield at that beast.",
+    "answer": "Gladiātor sanguināns scūtum suum in illam bēstiam conjēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gladiātor",
+     "sanguināns",
+     "scūtum",
+     "suum",
+     "in",
+     "illam",
+     "bēstiam",
+     "conjēcit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t11",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "This general himself led his soldiers into that dense forest.",
+    "answer": "Hic ipse dux mīlitēs suōs in illam dēnsam silvam dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "ipse",
+     "dux",
+     "mīlitēs",
+     "suōs",
+     "in",
+     "illam",
+     "dēnsam",
+     "silvam",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "I saw that orator's daughter walking through the forum.",
+    "answer": "Illīus ōrātōris fīliam per forum ambulantem vīdī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illīus",
+     "ōrātōris",
+     "fīliam",
+     "per",
+     "forum",
+     "ambulantem",
+     "vīdī"
+    ]
+   },
+   {
+    "prompt": "These captives, freed by the king, returned to their homeland.",
+    "answer": "Hī captīvī, ā rēge līberātī, in patriam rediērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hī",
+     "captīvī",
+     "ā",
+     "rēge",
+     "līberātī",
+     "in",
+     "patriam",
+     "rediērunt"
+    ]
+   },
+   {
+    "prompt": "The greedy heir seized the ivory and the riches of this old man.",
+    "answer": "Edax hērēs ebur et dīvitiās huius senis rapuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Edax",
+     "hērēs",
+     "ebur",
+     "et",
+     "dīvitiās",
+     "huius",
+     "senis",
+     "rapuit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t12",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "That queen, who reigned for many years, was loved by all the citizens.",
+    "answer": "Illa rēgīna, quae multōs annōs rēgnāvit, ab omnibus cīvibus amābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illa",
+     "rēgīna",
+     "quae",
+     "multōs",
+     "annōs",
+     "rēgnāvit",
+     "ab",
+     "omnibus",
+     "cīvibus",
+     "amābātur"
+    ]
+   },
+   {
+    "prompt": "This delightful sleep, brought on by wine, refreshed the weary general.",
+    "answer": "Hic sopor iūcundus, vīnō allātus, ducem fessum recreāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "sopor",
+     "iūcundus",
+     "vīnō",
+     "allātus",
+     "ducem",
+     "fessum",
+     "recreāvit"
+    ]
+   },
+   {
+    "prompt": "We handed these notebooks over to that same teacher.",
+    "answer": "Hōs commentāriōs eīdem magistrō trādidimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōs",
+     "commentāriōs",
+     "eīdem",
+     "magistrō",
+     "trādidimus"
+    ]
+   },
+   {
+    "prompt": "The judges accused him himself of the crime of treason.",
+    "answer": "Iūdicēs eum ipsum crīmine maiestātis accūsāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūdicēs",
+     "eum",
+     "ipsum",
+     "crīmine",
+     "maiestātis",
+     "accūsāvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-t13",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "This little goat, hidden in the woods, feared that fierce wolf.",
+    "answer": "Hic haedus, in silvīs occultātus, illum lupum ferōcem timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "haedus",
+     "in",
+     "silvīs",
+     "occultātus",
+     "illum",
+     "lupum",
+     "ferōcem",
+     "timēbat"
+    ]
+   },
+   {
+    "prompt": "That harsh master, whom the servants hated, ruled with an iron will.",
+    "answer": "Ille dominus dūrus, quem servī ōderant, ferreā voluntāte rēgnābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ille",
+     "dominus",
+     "dūrus",
+     "quem",
+     "servī",
+     "ōderant",
+     "ferreā",
+     "voluntāte",
+     "rēgnābat"
+    ]
+   },
+   {
+    "prompt": "The maidservant carried this water to the same girl at dawn.",
+    "answer": "Ministra hanc aquam eīdem puellae prīmā lūce portāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ministra",
+     "hanc",
+     "aquam",
+     "eīdem",
+     "puellae",
+     "prīmā",
+     "lūce",
+     "portāvit"
+    ]
+   },
+   {
+    "prompt": "That renowned orator finished this speech with great sweat.",
+    "answer": "Ille ōrātor clārus hanc ōrātiōnem magnō sūdōre perēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ille",
+     "ōrātor",
+     "clārus",
+     "hanc",
+     "ōrātiōnem",
+     "magnō",
+     "sūdōre",
+     "perēgit"
+    ]
+   }
+  ]
+ }
+]

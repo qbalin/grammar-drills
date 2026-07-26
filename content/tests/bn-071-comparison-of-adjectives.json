@@ -1,0 +1,697 @@
+[
+ {
+  "id": "bn-071-comparison-of-adjectives-t1",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The higher mountains were covered with deeper snow.",
+    "answer": "Montēs altiōrēs nive profundiōre operiēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Montēs",
+     "altiōrēs",
+     "nive",
+     "profundiōre",
+     "operiēbantur"
+    ]
+   },
+   {
+    "prompt": "The bravest soldiers crossed the widest river without fear.",
+    "answer": "Fortissimī mīlitēs flūmen lātissimum sine timōre trānsmīsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fortissimī",
+     "mīlitēs",
+     "flūmen",
+     "lātissimum",
+     "sine",
+     "timōre",
+     "trānsmīsērunt"
+    ]
+   },
+   {
+    "prompt": "This road is easier than that one, but the shortest is the most dangerous.",
+    "answer": "Haec via facilior est quam illa, sed brevissima perīculōsissima est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "via",
+     "facilior",
+     "est",
+     "quam",
+     "illa",
+     "sed",
+     "brevissima",
+     "perīculōsissima"
+    ]
+   },
+   {
+    "prompt": "The king gave the best gifts to the most faithful friends.",
+    "answer": "Rēx optima dōna amīcīs fidēlissimīs dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "optima",
+     "dōna",
+     "amīcīs",
+     "fidēlissimīs",
+     "dedit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t2",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "A greater army came, but our soldiers were braver.",
+    "answer": "Māior exercitus vēnit, sed nostrī mīlitēs fortiōrēs erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māior",
+     "exercitus",
+     "vēnit",
+     "sed",
+     "nostrī",
+     "mīlitēs",
+     "fortiōrēs",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "The wisest philosopher wrote many very useful books.",
+    "answer": "Sapientissimus philosophus multōs librōs ūtilissimōs scrīpsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapientissimus",
+     "philosophus",
+     "multōs",
+     "librōs",
+     "ūtilissimōs",
+     "scrīpsit"
+    ]
+   },
+   {
+    "prompt": "Worse storms threaten sailors on the deeper sea.",
+    "answer": "Pēiōrēs tempestātēs nautās in marī profundiōre minantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pēiōrēs",
+     "tempestātēs",
+     "nautās",
+     "in",
+     "marī",
+     "profundiōre",
+     "minantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t3",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "Fewer citizens attended, though the speech was more important.",
+    "answer": "Pauciōrēs cīvēs adfuērunt, quamquam ōrātiō gravior erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pauciōrēs",
+     "cīvēs",
+     "adfuērunt",
+     "quamquam",
+     "ōrātiō",
+     "gravior",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "The smallest boy carried a very heavy burden.",
+    "answer": "Minimus puer onus gravissimum portāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Minimus",
+     "puer",
+     "onus",
+     "gravissimum",
+     "portāvit"
+    ]
+   },
+   {
+    "prompt": "More gold was found in the higher regions of the kingdom.",
+    "answer": "Plūs aurī in altiōribus regnī partibus inventum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Plūs",
+     "aurī",
+     "in",
+     "altiōribus",
+     "regnī",
+     "partibus",
+     "inventum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The oldest temple was more sacred than all the newer buildings.",
+    "answer": "Antīquissimum templum sānctius erat quam omnia aedificia noviōra.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antīquissimum",
+     "templum",
+     "sānctius",
+     "erat",
+     "quam",
+     "omnia",
+     "aedificia",
+     "noviōra"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t4",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "A sharper sword is more useful than a longer spear in battle.",
+    "answer": "Gladius acūtior in proeliō ūtilior est quam hasta longior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gladius",
+     "acūtior",
+     "in",
+     "proeliō",
+     "ūtilior",
+     "est",
+     "quam",
+     "hasta",
+     "longior"
+    ]
+   },
+   {
+    "prompt": "This wine is sweeter, but that older one is far better.",
+    "answer": "Hoc vīnum dulcius est, sed illud vetustius multō melius est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "vīnum",
+     "dulcius",
+     "est",
+     "sed",
+     "illud",
+     "vetustius",
+     "multō",
+     "melius"
+    ]
+   },
+   {
+    "prompt": "The most learned teacher explained the most difficult matters.",
+    "answer": "Doctissimus magister difficillimās rēs explicāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Doctissimus",
+     "magister",
+     "difficillimās",
+     "rēs",
+     "explicāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t5",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The braver general led fewer troops against a stronger enemy.",
+    "answer": "Fortior dux pauciōrēs cōpiās contrā hostem validiōrem dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fortior",
+     "dux",
+     "pauciōrēs",
+     "cōpiās",
+     "contrā",
+     "hostem",
+     "validiōrem",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "Greater dangers await those who seek greater glory.",
+    "answer": "Māiōra perīcula eōs manent quī māiōrem glōriam petunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māiōra",
+     "perīcula",
+     "eōs",
+     "manent",
+     "quī",
+     "māiōrem",
+     "glōriam",
+     "petunt"
+    ]
+   },
+   {
+    "prompt": "The most cruel tyrant feared the most honest citizen.",
+    "answer": "Crūdēlissimus tyrannus honestissimum cīvem timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crūdēlissimus",
+     "tyrannus",
+     "honestissimum",
+     "cīvem",
+     "timēbat"
+    ]
+   },
+   {
+    "prompt": "Nothing is more pleasant than a quieter life in the fields.",
+    "answer": "Nihil iūcundius est quam vīta quiētior in agrīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "iūcundius",
+     "est",
+     "quam",
+     "vīta",
+     "quiētior",
+     "in",
+     "agrīs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t6",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The swiftest horse won a very easy victory.",
+    "answer": "Equus celerrimus victōriam facillimam reportāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Equus",
+     "celerrimus",
+     "victōriam",
+     "facillimam",
+     "reportāvit"
+    ]
+   },
+   {
+    "prompt": "A more grievous wound made the strongest warrior weaker.",
+    "answer": "Gravius vulnus fortissimum bellātōrem īnfirmiōrem fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gravius",
+     "vulnus",
+     "fortissimum",
+     "bellātōrem",
+     "īnfirmiōrem",
+     "fēcit"
+    ]
+   },
+   {
+    "prompt": "The most famous poets often praised the humblest farmers.",
+    "answer": "Clārissimī poētae saepe humillimōs agricolās laudābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Clārissimī",
+     "poētae",
+     "saepe",
+     "humillimōs",
+     "agricolās",
+     "laudābant"
+    ]
+   },
+   {
+    "prompt": "Better counsel comes from an older and more prudent friend.",
+    "answer": "Melius cōnsilium ab amīcō seniōre et prūdentiōre venit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Melius",
+     "cōnsilium",
+     "ab",
+     "amīcō",
+     "seniōre",
+     "et",
+     "prūdentiōre",
+     "venit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t7",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The physician's remedy was more effective than the herbs of the field.",
+    "answer": "Remedium medicī efficācius erat quam herbae agrī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Remedium",
+     "medicī",
+     "efficācius",
+     "erat",
+     "quam",
+     "herbae",
+     "agrī"
+    ]
+   },
+   {
+    "prompt": "The wisest teacher taught the most difficult things with great patience.",
+    "answer": "Sapientissimus magister difficillima magnā patientiā docēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapientissimus",
+     "magister",
+     "difficillima",
+     "magnā",
+     "patientiā",
+     "docēbat"
+    ]
+   },
+   {
+    "prompt": "A better friend gives more, but the worst friend seizes everything.",
+    "answer": "Melior amīcus plūra dat, sed pessimus amīcus omnia rapit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Melior",
+     "amīcus",
+     "plūra",
+     "dat",
+     "sed",
+     "pessimus",
+     "omnia",
+     "rapit"
+    ]
+   },
+   {
+    "prompt": "The more beautiful garden was tended by a very poor farmer.",
+    "answer": "Pulchrior hortus ab agricolā pauperrimō colēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pulchrior",
+     "hortus",
+     "ab",
+     "agricolā",
+     "pauperrimō",
+     "colēbātur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t8",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The mushrooms gnawed by mice were smaller than the rest.",
+    "answer": "Bōlētī ā mūribus rōsī minōrēs quam cēterī erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bōlētī",
+     "ā",
+     "mūribus",
+     "rōsī",
+     "minōrēs",
+     "quam",
+     "cēterī",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "A greater scarcity of grain made the citizens more anxious.",
+    "answer": "Māior frūmentī inopia cīvēs sollicitiōrēs fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māior",
+     "frūmentī",
+     "inopia",
+     "cīvēs",
+     "sollicitiōrēs",
+     "fēcit"
+    ]
+   },
+   {
+    "prompt": "The most secret plan was disclosed by a very faithful attendant.",
+    "answer": "Sēcrētissimum cōnsilium ā fidēlissimō ministrō ēnūntiātum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sēcrētissimum",
+     "cōnsilium",
+     "ā",
+     "fidēlissimō",
+     "ministrō",
+     "ēnūntiātum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "This road is easier than that one, but the shortest is the safest.",
+    "answer": "Haec via facilior est quam illa, sed brevissima tūtissima est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "via",
+     "facilior",
+     "est",
+     "quam",
+     "illa",
+     "sed",
+     "brevissima",
+     "tūtissima"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t9",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The bolder merchants were seeking a more distant shore.",
+    "answer": "Audāciōrēs mercātōrēs remōtius lītus petēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Audāciōrēs",
+     "mercātōrēs",
+     "remōtius",
+     "lītus",
+     "petēbant"
+    ]
+   },
+   {
+    "prompt": "The king's palace was larger than all the temples of the city.",
+    "answer": "Rēgia rēgis omnibus urbis templīs māior erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgia",
+     "rēgis",
+     "omnibus",
+     "urbis",
+     "templīs",
+     "māior",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "A more prudent leader avoids the most savage battles.",
+    "answer": "Prūdentior dux saevissima proelia vītat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prūdentior",
+     "dux",
+     "saevissima",
+     "proelia",
+     "vītat"
+    ]
+   },
+   {
+    "prompt": "The poet's newer songs were sweeter than the old ones.",
+    "answer": "Poētae recentiōra carmina veteribus dulciōra erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poētae",
+     "recentiōra",
+     "carmina",
+     "veteribus",
+     "dulciōra",
+     "erant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t10",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The higher tower offered a broader view of the sea.",
+    "answer": "Altior turris lātiōrem maris prōspectum praebēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Altior",
+     "turris",
+     "lātiōrem",
+     "maris",
+     "prōspectum",
+     "praebēbat"
+    ]
+   },
+   {
+    "prompt": "The most learned physician chose the gentlest remedies.",
+    "answer": "Doctissimus medicus lēnissima remedia dēlēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Doctissimus",
+     "medicus",
+     "lēnissima",
+     "remedia",
+     "dēlēgit"
+    ]
+   },
+   {
+    "prompt": "Nothing is dearer to me than a more loyal companion.",
+    "answer": "Nihil mihi cārius est quam fidēlior comes.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "mihi",
+     "cārius",
+     "est",
+     "quam",
+     "fidēlior",
+     "comes"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t11",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The bravest woman endured the most bitter losses with a calm mind.",
+    "answer": "Fortissima fēmina acerbissima damna aequō animō tulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fortissima",
+     "fēmina",
+     "acerbissima",
+     "damna",
+     "aequō",
+     "animō",
+     "tulit"
+    ]
+   },
+   {
+    "prompt": "A longer winter brought greater scarcity to the poorer villages.",
+    "answer": "Longior hiems māiōrem inopiam pauperiōribus vīcīs attulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Longior",
+     "hiems",
+     "māiōrem",
+     "inopiam",
+     "pauperiōribus",
+     "vīcīs",
+     "attulit"
+    ]
+   },
+   {
+    "prompt": "The best generals fear the smallest mistakes.",
+    "answer": "Optimī ducēs minima errāta timent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Optimī",
+     "ducēs",
+     "minima",
+     "errāta",
+     "timent"
+    ]
+   },
+   {
+    "prompt": "More books were read, though the nights were shorter.",
+    "answer": "Plūrēs librī lēctī sunt, quamquam noctēs breviōrēs erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Plūrēs",
+     "librī",
+     "lēctī",
+     "sunt",
+     "quamquam",
+     "noctēs",
+     "breviōrēs",
+     "erant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t12",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The wisest philosopher taught that the shortest life is often the sweetest.",
+    "answer": "Sapientissimus philosophus docuit vītam brevissimam saepe dulcissimam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapientissimus",
+     "philosophus",
+     "docuit",
+     "vītam",
+     "brevissimam",
+     "saepe",
+     "dulcissimam",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "A more honorable death is better than a longer slavery.",
+    "answer": "Mors honestior melior est quam servitūs longior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mors",
+     "honestior",
+     "melior",
+     "est",
+     "quam",
+     "servitūs",
+     "longior"
+    ]
+   },
+   {
+    "prompt": "The bees carry the sweetest thyme to their broadest hives.",
+    "answer": "Apēs dulcissimum thymum ad amplissima alveāria portant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Apēs",
+     "dulcissimum",
+     "thymum",
+     "ad",
+     "amplissima",
+     "alveāria",
+     "portant"
+    ]
+   },
+   {
+    "prompt": "Nothing is more foul than an adultery concealed by the boldest lies.",
+    "answer": "Nihil foedius est quam adulterium mendāciīs audācissimīs occultātum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "foedius",
+     "est",
+     "quam",
+     "adulterium",
+     "mendāciīs",
+     "audācissimīs",
+     "occultātum"
+    ]
+   }
+  ]
+ }
+]
