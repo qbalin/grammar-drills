@@ -1,0 +1,352 @@
+[
+ {
+  "id": "bn-323-implied-indirect-discourse-t1",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Paetus gave me all the books which his father had left.",
+    "answer": "Paetus omnēs librōs quōs pater relīquisset mihi dōnāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Paetus",
+     "omnēs",
+     "librōs",
+     "quōs",
+     "pater",
+     "relīquisset",
+     "mihi",
+     "dōnāvit"
+    ]
+   },
+   {
+    "prompt": "They kept explaining to me the arguments which Socrates had set forth about the soul.",
+    "answer": "Dēmōnstrābant mihi argūmenta quae Sōcratēs dē animō disseruisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dēmōnstrābant",
+     "mihi",
+     "argūmenta",
+     "quae",
+     "Sōcratēs",
+     "dē",
+     "animō",
+     "disseruisset"
+    ]
+   },
+   {
+    "prompt": "He returned the sword which the king had given him.",
+    "answer": "Gladium reddidit quem rēx sibi dedisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gladium",
+     "reddidit",
+     "quem",
+     "rēx",
+     "sibi",
+     "dedisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse-t2",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The farmer sold the lettuces which he had grown in his own garden.",
+    "answer": "Agricola lactūcās vēndidit quās in hortō suō aluisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "lactūcās",
+     "vēndidit",
+     "quās",
+     "in",
+     "hortō",
+     "suō",
+     "aluisset"
+    ]
+   },
+   {
+    "prompt": "The woman blushed at the words which the young man had spoken.",
+    "answer": "Fēmina ērubuit ad verba quae iuvenis dīxisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fēmina",
+     "ērubuit",
+     "ad",
+     "verba",
+     "quae",
+     "iuvenis",
+     "dīxisset"
+    ]
+   },
+   {
+    "prompt": "We admired the volumes which the poet had written in exile.",
+    "answer": "Volūmina mīrātī sumus quae poēta in exiliō scrīpsisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Volūmina",
+     "mīrātī",
+     "sumus",
+     "quae",
+     "poēta",
+     "in",
+     "exiliō",
+     "scrīpsisset"
+    ]
+   },
+   {
+    "prompt": "He praised the wine which the guest had brought from Gaul.",
+    "answer": "Vīnum laudāvit quod hospes ex Galliā attulisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīnum",
+     "laudāvit",
+     "quod",
+     "hospes",
+     "ex",
+     "Galliā",
+     "attulisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse-t3",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The judge condemned the man who had betrayed the city.",
+    "answer": "Iūdex eum damnāvit quī urbem prōdidisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūdex",
+     "eum",
+     "damnāvit",
+     "quī",
+     "urbem",
+     "prōdidisset"
+    ]
+   },
+   {
+    "prompt": "She thanked the physician who had healed her sick son.",
+    "answer": "Medicō grātiās ēgit quī fīlium īnfirmum sānāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Medicō",
+     "grātiās",
+     "ēgit",
+     "quī",
+     "fīlium",
+     "īnfirmum",
+     "sānāvisset"
+    ]
+   },
+   {
+    "prompt": "He showed us the letter which his friend had sent from Rome.",
+    "answer": "Epistulam nōbīs ostendit quam amīcus Rōmā mīsisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Epistulam",
+     "nōbīs",
+     "ostendit",
+     "quam",
+     "amīcus",
+     "Rōmā",
+     "mīsisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse-t4",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The boy hid the apples which he had stolen from the table.",
+    "answer": "Puer pōma cēlāvit quae dē mēnsā surripuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puer",
+     "pōma",
+     "cēlāvit",
+     "quae",
+     "dē",
+     "mēnsā",
+     "surripuisset"
+    ]
+   },
+   {
+    "prompt": "The mother wept for the children whom the war had carried off.",
+    "answer": "Māter līberōs flēvit quōs bellum abstulisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māter",
+     "līberōs",
+     "flēvit",
+     "quōs",
+     "bellum",
+     "abstulisset"
+    ]
+   },
+   {
+    "prompt": "The king rewarded the servant who had faithfully guarded the royal wealth.",
+    "answer": "Rēx servum remūnerātus est quī rēgiās opēs fidēliter custōdīvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "servum",
+     "remūnerātus",
+     "est",
+     "quī",
+     "rēgiās",
+     "opēs",
+     "fidēliter",
+     "custōdīvisset"
+    ]
+   },
+   {
+    "prompt": "We read the books which the old man had left to his heirs.",
+    "answer": "Librōs lēgimus quōs senex hērēdibus relīquisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Librōs",
+     "lēgimus",
+     "quōs",
+     "senex",
+     "hērēdibus",
+     "relīquisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse-t5",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The maid brought in the food which the cook had prepared for the feast.",
+    "answer": "Ancilla cibum attulit quem coquus ad epulās parāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ancilla",
+     "cibum",
+     "attulit",
+     "quem",
+     "coquus",
+     "ad",
+     "epulās",
+     "parāvisset"
+    ]
+   },
+   {
+    "prompt": "He admired the fields which his ancestors had tilled with such great care.",
+    "answer": "Agrōs mīrātus est quōs maiōrēs tantā cūrā coluissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agrōs",
+     "mīrātus",
+     "est",
+     "quōs",
+     "maiōrēs",
+     "tantā",
+     "cūrā",
+     "coluissent"
+    ]
+   },
+   {
+    "prompt": "The captive told of the dangers which he had endured in the mountains.",
+    "answer": "Captīvus perīcula nārrāvit quae in montibus tolerāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvus",
+     "perīcula",
+     "nārrāvit",
+     "quae",
+     "in",
+     "montibus",
+     "tolerāvisset"
+    ]
+   },
+   {
+    "prompt": "They punished the boy who had disturbed the sleeping guests.",
+    "answer": "Puerum pūnīvērunt quī hospitēs dormientēs inquiētāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puerum",
+     "pūnīvērunt",
+     "quī",
+     "hospitēs",
+     "dormientēs",
+     "inquiētāvisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse-t6",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The merchant praised the ship which had carried his goods safely across the sea.",
+    "answer": "Mercātor nāvem laudāvit quae mercēs suās tūtō trāns mare vēxisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "nāvem",
+     "laudāvit",
+     "quae",
+     "mercēs",
+     "suās",
+     "tūtō",
+     "trāns",
+     "mare",
+     "vēxisset"
+    ]
+   },
+   {
+    "prompt": "She kept the ring which her mother had given her before dying.",
+    "answer": "Ānulum servāvit quem māter sibi ante mortem dedisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ānulum",
+     "servāvit",
+     "quem",
+     "māter",
+     "sibi",
+     "ante",
+     "mortem",
+     "dedisset"
+    ]
+   },
+   {
+    "prompt": "The senator recalled the promises which the consul had made to the people.",
+    "answer": "Senātor prōmissa commemorāvit quae cōnsul populō fēcisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senātor",
+     "prōmissa",
+     "commemorāvit",
+     "quae",
+     "cōnsul",
+     "populō",
+     "fēcisset"
+    ]
+   },
+   {
+    "prompt": "The teacher rebuked the pupils who had neglected their studies.",
+    "answer": "Magister discipulōs reprehendit quī studia neglēxissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "discipulōs",
+     "reprehendit",
+     "quī",
+     "studia",
+     "neglēxissent"
+    ]
+   }
+  ]
+ }
+]

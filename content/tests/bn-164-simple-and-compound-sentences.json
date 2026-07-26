@@ -1,0 +1,422 @@
+[
+ {
+  "id": "bn-164-simple-and-compound-sentences-t1",
+  "sectionId": "bn-164-simple-and-compound-sentences",
+  "questions": [
+   {
+    "prompt": "The consul spoke in the forum, and the crowd listened eagerly.",
+    "answer": "Cōnsul in forō dīxit, et turba avidē audīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "in",
+     "forō",
+     "dīxit",
+     "et",
+     "turba",
+     "avidē",
+     "audīvit"
+    ]
+   },
+   {
+    "prompt": "The enemy attacked the walls, but the citizens bravely defended the city.",
+    "answer": "Hostēs mūrōs oppugnāvērunt, sed cīvēs urbem fortiter dēfendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostēs",
+     "mūrōs",
+     "oppugnāvērunt",
+     "sed",
+     "cīvēs",
+     "urbem",
+     "fortiter",
+     "dēfendērunt"
+    ]
+   },
+   {
+    "prompt": "The poet writes verses and sings sweet songs.",
+    "answer": "Poēta versūs scrībit et dulcia carmina canit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "versūs",
+     "scrībit",
+     "et",
+     "dulcia",
+     "carmina",
+     "canit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-164-simple-and-compound-sentences-t2",
+  "sectionId": "bn-164-simple-and-compound-sentences",
+  "questions": [
+   {
+    "prompt": "The general praised the soldiers who had captured the camp.",
+    "answer": "Dux mīlitēs laudāvit quī castra cēperant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "mīlitēs",
+     "laudāvit",
+     "quī",
+     "castra",
+     "cēperant"
+    ]
+   },
+   {
+    "prompt": "I admire the woman whose courage the whole city praises.",
+    "answer": "Fēminam admīror cuius virtūtem tōta urbs laudat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fēminam",
+     "admīror",
+     "cuius",
+     "virtūtem",
+     "tōta",
+     "urbs",
+     "laudat"
+    ]
+   },
+   {
+    "prompt": "The old man told stories which the children gladly heard.",
+    "answer": "Senex fābulās nārrābat quās līberī libenter audiēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "fābulās",
+     "nārrābat",
+     "quās",
+     "līberī",
+     "libenter",
+     "audiēbant"
+    ]
+   },
+   {
+    "prompt": "We drank the wine that the host had brought from Greece.",
+    "answer": "Vīnum bibimus quod hospes ex Graeciā attulerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīnum",
+     "bibimus",
+     "quod",
+     "hospes",
+     "ex",
+     "Graeciā",
+     "attulerat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-164-simple-and-compound-sentences-t3",
+  "sectionId": "bn-164-simple-and-compound-sentences",
+  "questions": [
+   {
+    "prompt": "When the sun had set, the shepherds drove the flocks home.",
+    "answer": "Cum sōl occidisset, pāstōrēs gregēs domum ēgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "sōl",
+     "occidisset",
+     "pāstōrēs",
+     "gregēs",
+     "domum",
+     "ēgērunt"
+    ]
+   },
+   {
+    "prompt": "Because the road was long, the travelers rested in the shade.",
+    "answer": "Quod via longa erat, viātōrēs in umbrā requiēvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "via",
+     "longa",
+     "erat",
+     "viātōrēs",
+     "in",
+     "umbrā",
+     "requiēvērunt"
+    ]
+   },
+   {
+    "prompt": "While the mother wept, the father consoled the frightened children.",
+    "answer": "Dum māter flēbat, pater territōs līberōs cōnsōlābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "māter",
+     "flēbat",
+     "pater",
+     "territōs",
+     "līberōs",
+     "cōnsōlābātur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-164-simple-and-compound-sentences-t4",
+  "sectionId": "bn-164-simple-and-compound-sentences",
+  "questions": [
+   {
+    "prompt": "Having seen the fire, the neighbors ran quickly to the house.",
+    "answer": "Ignem cōnspicātī vīcīnī celeriter ad domum cucurrērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ignem",
+     "cōnspicātī",
+     "vīcīnī",
+     "celeriter",
+     "ad",
+     "domum",
+     "cucurrērunt"
+    ]
+   },
+   {
+    "prompt": "The king was proud, but his words seemed insulting to the senators.",
+    "answer": "Rēx superbus erat, sed verba eius patribus contumēliōsa vidēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "superbus",
+     "erat",
+     "sed",
+     "verba",
+     "eius",
+     "patribus",
+     "contumēliōsa",
+     "vidēbantur"
+    ]
+   },
+   {
+    "prompt": "The messenger announced the victory and the whole state rejoiced.",
+    "answer": "Nūntius victōriam nūntiāvit et tōta cīvitās gāvīsa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "victōriam",
+     "nūntiāvit",
+     "et",
+     "tōta",
+     "cīvitās",
+     "gāvīsa",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The frightened horse fled, and the rider fell onto the ground.",
+    "answer": "Territus equus fūgit, et eques in terram cecidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Territus",
+     "equus",
+     "fūgit",
+     "et",
+     "eques",
+     "in",
+     "terram",
+     "cecidit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-164-simple-and-compound-sentences-t5",
+  "sectionId": "bn-164-simple-and-compound-sentences",
+  "questions": [
+   {
+    "prompt": "The teacher orders the students to read the poems that Vergil wrote.",
+    "answer": "Magister discipulōs iubet carmina legere quae Vergilius scrīpsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "discipulōs",
+     "iubet",
+     "carmina",
+     "legere",
+     "quae",
+     "Vergilius",
+     "scrīpsit"
+    ]
+   },
+   {
+    "prompt": "The maidens fled into the woods, where they hid for a long time.",
+    "answer": "Virginēs in silvās fūgērunt, ubi diū latuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virginēs",
+     "in",
+     "silvās",
+     "fūgērunt",
+     "ubi",
+     "diū",
+     "latuērunt"
+    ]
+   },
+   {
+    "prompt": "Though the wound was grave, the soldier did not abandon his post.",
+    "answer": "Quamquam vulnus grave erat, mīles locum nōn relīquit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "vulnus",
+     "grave",
+     "erat",
+     "mīles",
+     "locum",
+     "nōn",
+     "relīquit"
+    ]
+   },
+   {
+    "prompt": "The philosopher taught the young men who eagerly sought wisdom.",
+    "answer": "Philosophus iuvenēs docēbat quī sapientiam avidē petēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "iuvenēs",
+     "docēbat",
+     "quī",
+     "sapientiam",
+     "avidē",
+     "petēbant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-164-simple-and-compound-sentences-t6",
+  "sectionId": "bn-164-simple-and-compound-sentences",
+  "questions": [
+   {
+    "prompt": "The queen was sitting on her throne, and the courtiers praised her beauty.",
+    "answer": "Rēgīna in soliō sedēbat, et aulicī pulchritūdinem eius laudābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "in",
+     "soliō",
+     "sedēbat",
+     "et",
+     "aulicī",
+     "pulchritūdinem",
+     "eius",
+     "laudābant"
+    ]
+   },
+   {
+    "prompt": "The pale soldier feared nothing, for his conscience was untroubled.",
+    "answer": "Mīles pallidus nihil timēbat, nam cōnscientia eius inconcussa erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīles",
+     "pallidus",
+     "nihil",
+     "timēbat",
+     "nam",
+     "cōnscientia",
+     "eius",
+     "inconcussa",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "The Cyclops seized the sailors whom he had found in the cave.",
+    "answer": "Cyclōps nautās rapuit quōs in spēluncā invēnerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cyclōps",
+     "nautās",
+     "rapuit",
+     "quōs",
+     "in",
+     "spēluncā",
+     "invēnerat"
+    ]
+   },
+   {
+    "prompt": "The maiden whom the poet loved was elegant and modest.",
+    "answer": "Virgō quam poēta amābat elegāns et modesta erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "quam",
+     "poēta",
+     "amābat",
+     "elegāns",
+     "et",
+     "modesta",
+     "erat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-164-simple-and-compound-sentences-t7",
+  "sectionId": "bn-164-simple-and-compound-sentences",
+  "questions": [
+   {
+    "prompt": "The king emptied the treasury, and the citizens deserted the walls.",
+    "answer": "Rēx aerārium exinānīvit, et cīvēs moenia dēseruērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "aerārium",
+     "exinānīvit",
+     "et",
+     "cīvēs",
+     "moenia",
+     "dēseruērunt"
+    ]
+   },
+   {
+    "prompt": "The marriage which the father had approved brought lasting joy.",
+    "answer": "Cōnūbium quod pater probāverat gaudium perpetuum attulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnūbium",
+     "quod",
+     "pater",
+     "probāverat",
+     "gaudium",
+     "perpetuum",
+     "attulit"
+    ]
+   },
+   {
+    "prompt": "The experienced leader flattered the soldiers, but he trusted no one.",
+    "answer": "Dux expertus mīlitibus blandiēbātur, sed nēminī cōnfīdēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "expertus",
+     "mīlitibus",
+     "blandiēbātur",
+     "sed",
+     "nēminī",
+     "cōnfīdēbat"
+    ]
+   },
+   {
+    "prompt": "The boy threw away the sword which his grandfather had carried into battle.",
+    "answer": "Puer gladium abiēcit quem avus in proelium tulerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puer",
+     "gladium",
+     "abiēcit",
+     "quem",
+     "avus",
+     "in",
+     "proelium",
+     "tulerat"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,388 @@
+[
+ {
+  "id": "bn-167-predicate-nouns-t1",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "Cicero was a famous orator, whom everyone used to admire.",
+    "answer": "Cicerō ōrātor clārus fuit, quem omnēs admīrābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cicerō",
+     "ōrātor",
+     "clārus",
+     "fuit",
+     "quem",
+     "omnēs",
+     "admīrābantur"
+    ]
+   },
+   {
+    "prompt": "Numa, after Romulus had died, was elected king by the Romans.",
+    "answer": "Numa, Rōmulō mortuō, rēx ā Rōmānīs creātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Numa",
+     "Rōmulō",
+     "mortuō",
+     "rēx",
+     "ā",
+     "Rōmānīs",
+     "creātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Philosophy, which teaches wisdom, is the guide of life.",
+    "answer": "Philosophia, quae sapientiam docet, magistra vītae est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophia",
+     "quae",
+     "sapientiam",
+     "docet",
+     "magistra",
+     "vītae",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-167-predicate-nouns-t2",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "Romulus, when he had founded the city, was called king.",
+    "answer": "Rōmulus, cum urbem condidisset, rēx appellātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rōmulus",
+     "cum",
+     "urbem",
+     "condidisset",
+     "rēx",
+     "appellātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Because he despised the gods, he was regarded as an impious man.",
+    "answer": "Quia deōs contempsit, homō impius habitus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quia",
+     "deōs",
+     "contempsit",
+     "homō",
+     "impius",
+     "habitus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The proconsul, ambitious and cruel, seemed a tyrant to the provincials.",
+    "answer": "Prōcōnsul, ambitiōsus et crūdēlis, prōvinciālibus tyrannus vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prōcōnsul",
+     "ambitiōsus",
+     "et",
+     "crūdēlis",
+     "prōvinciālibus",
+     "tyrannus",
+     "vidēbātur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-167-predicate-nouns-t3",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "The consuls were made leaders of the state by the people's vote.",
+    "answer": "Cōnsulēs suffrāgiō populī reī pūblicae ducēs factī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsulēs",
+     "suffrāgiō",
+     "populī",
+     "reī",
+     "pūblicae",
+     "ducēs",
+     "factī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "Although he was born a poor man, he died a rich one.",
+    "answer": "Quamquam pauper nātus est, dīves mortuus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "pauper",
+     "nātus",
+     "est",
+     "dīves",
+     "mortuus"
+    ]
+   },
+   {
+    "prompt": "Caesar, after the Gauls had been conquered, was regarded as a god by many.",
+    "answer": "Caesar, Gallīs victīs, ā multīs deus habēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "Gallīs",
+     "victīs",
+     "ā",
+     "multīs",
+     "deus",
+     "habēbātur"
+    ]
+   },
+   {
+    "prompt": "By this victory you will be made the glory of your people.",
+    "answer": "Hāc victōriā populī tuī glōria fīēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hāc",
+     "victōriā",
+     "populī",
+     "tuī",
+     "glōria",
+     "fīēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-167-predicate-nouns-t4",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "Numa, although a foreigner, was elected king by the Romans.",
+    "answer": "Numa, quamquam peregrīnus, ā Rōmānīs rēx creātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Numa",
+     "quamquam",
+     "peregrīnus",
+     "ā",
+     "Rōmānīs",
+     "rēx",
+     "creātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The old man, once a soldier, remained the faithful guardian of the temple.",
+    "answer": "Senex, ōlim mīles, fīdus templī custōs mānsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "ōlim",
+     "mīles",
+     "fīdus",
+     "templī",
+     "custōs",
+     "mānsit"
+    ]
+   },
+   {
+    "prompt": "Cicero, whom the citizens admired, was regarded as the father of his country.",
+    "answer": "Cicerō, quem cīvēs mīrābantur, pater patriae habitus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cicerō",
+     "quem",
+     "cīvēs",
+     "mīrābantur",
+     "pater",
+     "patriae",
+     "habitus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-167-predicate-nouns-t5",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "The young man, rude and untrained, turned out to be a most skilled farmer.",
+    "answer": "Adulēscēns, rudis et indoctus, agricola perītissimus ēvāsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adulēscēns",
+     "rudis",
+     "et",
+     "indoctus",
+     "agricola",
+     "perītissimus",
+     "ēvāsit"
+    ]
+   },
+   {
+    "prompt": "Wealth does not make bad men good citizens.",
+    "answer": "Dīvitiae malōs virōs bonōs cīvēs nōn faciunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīvitiae",
+     "malōs",
+     "virōs",
+     "bonōs",
+     "cīvēs",
+     "nōn",
+     "faciunt"
+    ]
+   },
+   {
+    "prompt": "From a humble slave he emerged as leader of the army.",
+    "answer": "Ex humilī servō dux exercitūs exstitit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ex",
+     "humilī",
+     "servō",
+     "dux",
+     "exercitūs",
+     "exstitit"
+    ]
+   },
+   {
+    "prompt": "Caesar, once the Rubicon had been crossed, seemed a tyrant to many.",
+    "answer": "Caesar, Rubicōne trānsitō, multīs tyrannus vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "Rubicōne",
+     "trānsitō",
+     "multīs",
+     "tyrannus",
+     "vidēbātur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-167-predicate-nouns-t6",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "After the long war had ended, the exhausted soldier became a farmer.",
+    "answer": "Bellō longō cōnfectō, mīles fessus agricola factus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bellō",
+     "longō",
+     "cōnfectō",
+     "mīles",
+     "fessus",
+     "agricola",
+     "factus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Although he was born a slave, he turned out to be a most faithful friend.",
+    "answer": "Quamquam servus nātus erat, amīcus fīdēlissimus ēvāsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quamquam",
+     "servus",
+     "nātus",
+     "erat",
+     "amīcus",
+     "fīdēlissimus",
+     "ēvāsit"
+    ]
+   },
+   {
+    "prompt": "Philosophy, which we cultivate with great zeal, is the guide of life.",
+    "answer": "Philosophia, quam magnō studiō colimus, vītae magistra est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "philosophia",
+     "quam",
+     "magnō",
+     "studiō",
+     "colimus",
+     "vītae",
+     "magistra",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Having conquered the enemy, the general was regarded by all as a god.",
+    "answer": "Hostibus victīs, dux ab omnibus deus habitus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hostibus",
+     "victīs",
+     "dux",
+     "ab",
+     "omnibus",
+     "deus",
+     "habitus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-167-predicate-nouns-t7",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "The boy, once frightened by the storm, was afterward called a brave sailor.",
+    "answer": "Puer, turbine ōlim territus, posteā nauta fortis appellātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "puer",
+     "turbine",
+     "ōlim",
+     "territus",
+     "posteā",
+     "nauta",
+     "fortis",
+     "appellātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "After the king had been driven out, the two consuls were created leaders of the state.",
+    "answer": "Rēge expulsō, duo cōnsulēs cīvitātis prīncipēs creātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēge",
+     "expulsō",
+     "duo",
+     "cōnsulēs",
+     "cīvitātis",
+     "prīncipēs",
+     "creātī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "That woman, whom we all praise, seems to be the truest guardian of the temple.",
+    "answer": "Illa mulier, quam omnēs laudāmus, vērissima templī custōs vidētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illa",
+     "mulier",
+     "quam",
+     "omnēs",
+     "laudāmus",
+     "vērissima",
+     "templī",
+     "custōs",
+     "vidētur"
+    ]
+   }
+  ]
+ }
+]

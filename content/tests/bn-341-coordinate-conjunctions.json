@@ -1,0 +1,299 @@
+[
+ {
+  "id": "bn-341-coordinate-conjunctions-t1",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The judge was harsh, and indeed cruel, toward the accused.",
+    "answer": "Iūdex in reum sevērus atque crūdēlis erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūdex",
+     "in",
+     "reum",
+     "sevērus",
+     "atque",
+     "crūdēlis",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "I feel the same as you about the danger to the fatherland.",
+    "answer": "Idem dē patriae perīculō sentiō ac tū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Idem",
+     "dē",
+     "patriae",
+     "perīculō",
+     "sentiō",
+     "ac",
+     "tū"
+    ]
+   },
+   {
+    "prompt": "The messenger arrived and in fact brought grievous news.",
+    "answer": "Nūntius vēnit ac trīstia nūntia attulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "vēnit",
+     "ac",
+     "trīstia",
+     "nūntia",
+     "attulit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t2",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "He did not fear death, nor did he flee from the enemy.",
+    "answer": "Mortem nōn timuit nec ab hoste fūgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mortem",
+     "nōn",
+     "timuit",
+     "nec",
+     "ab",
+     "hoste",
+     "fūgit"
+    ]
+   },
+   {
+    "prompt": "There is no smoke without fire, nor grief without a cause.",
+    "answer": "Nūllus sine igne fūmus est, nec sine causā dolor.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūllus",
+     "sine",
+     "igne",
+     "fūmus",
+     "est",
+     "nec",
+     "causā",
+     "dolor"
+    ]
+   },
+   {
+    "prompt": "The old man could neither walk nor speak.",
+    "answer": "Senex nec ambulāre nec loquī poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "nec",
+     "ambulāre",
+     "loquī",
+     "poterat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t3",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "He wrote the same letter as his brother.",
+    "answer": "Eāsdem litterās scrīpsit ac frāter.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eāsdem",
+     "litterās",
+     "scrīpsit",
+     "ac",
+     "frāter"
+    ]
+   },
+   {
+    "prompt": "This scar is similar to that wound.",
+    "answer": "Haec cicātrīx similis est atque illud vulnus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "cicātrīx",
+     "similis",
+     "est",
+     "atque",
+     "illud",
+     "vulnus"
+    ]
+   },
+   {
+    "prompt": "He thinks nothing other than what is true.",
+    "answer": "Nihil aliud cōgitat ac quod vērum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "aliud",
+     "cōgitat",
+     "ac",
+     "quod",
+     "vērum",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t4",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "In the crowded forum the orator praised the leader's courage and eloquence.",
+    "answer": "Ōrātor virtūtem ēloquentiamque ducis in forō frequentī laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ōrātor",
+     "virtūtem",
+     "ēloquentiam",
+     "que",
+     "ducis",
+     "in",
+     "forō",
+     "frequentī",
+     "laudāvit"
+    ]
+   },
+   {
+    "prompt": "With the enemy pressing on, the citizens and their allies defended the walls.",
+    "answer": "Hostibus instantibus cīvēs sociīque moenia dēfendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hostibus",
+     "instantibus",
+     "cīvēs",
+     "sociī",
+     "que",
+     "moenia",
+     "dēfendērunt"
+    ]
+   },
+   {
+    "prompt": "The old man used to love rare books and quiet gardens.",
+    "answer": "Senex rārōs librōs hortōsque quiētōs amābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "senex",
+     "rārōs",
+     "librōs",
+     "hortōs",
+     "que",
+     "quiētōs",
+     "amābat"
+    ]
+   },
+   {
+    "prompt": "Before the battle the general drew up the cavalry and the infantry.",
+    "answer": "Dux equitēs peditēsque ante proelium īnstrūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dux",
+     "equitēs",
+     "peditēs",
+     "que",
+     "ante",
+     "proelium",
+     "īnstrūxit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t5",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "That year the winter was long and indeed bitter.",
+    "answer": "Hiems eō annō longa atque acerba fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hiems",
+     "eō",
+     "annō",
+     "longa",
+     "atque",
+     "acerba",
+     "fuit"
+    ]
+   },
+   {
+    "prompt": "She feels the same about war as her father.",
+    "answer": "Idem dē bellō sentit ac pater.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "idem",
+     "dē",
+     "bellō",
+     "sentit",
+     "ac",
+     "pater"
+    ]
+   },
+   {
+    "prompt": "The messenger arrived and in fact brought unexpected news.",
+    "answer": "Nūntius vēnit atque īnspērātās rēs attulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūntius",
+     "vēnit",
+     "atque",
+     "īnspērātās",
+     "rēs",
+     "attulit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t6",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "When the king had died, grief and fear filled the whole city.",
+    "answer": "Rēge mortuō, luctus metusque tōtam urbem inplēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēge",
+     "mortuō",
+     "luctus",
+     "metus",
+     "que",
+     "tōtam",
+     "urbem",
+     "inplēvit"
+    ]
+   },
+   {
+    "prompt": "The poet composed verses both sweet and rare.",
+    "answer": "Poēta versūs et dulcēs et rārōs pānxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "poēta",
+     "versūs",
+     "et",
+     "dulcēs",
+     "rārōs",
+     "pānxit"
+    ]
+   },
+   {
+    "prompt": "He surrendered the city and himself to the victorious enemy.",
+    "answer": "Urbem sēque hostī victōrī dēdidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "urbem",
+     "sē",
+     "que",
+     "hostī",
+     "victōrī",
+     "dēdidit"
+    ]
+   }
+  ]
+ }
+]

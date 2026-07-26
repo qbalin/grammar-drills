@@ -1,0 +1,339 @@
+[
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t1",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The general reported that the enemy had crossed the river during the night.",
+    "answer": "Dux nūntiāvit hostēs flūmen nocte trānsiisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "nūntiāvit",
+     "hostēs",
+     "flūmen",
+     "nocte",
+     "trānsiisse"
+    ]
+   },
+   {
+    "prompt": "I know that you did all these things bravely.",
+    "answer": "Sciō tē haec omnia fortiter ēgisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sciō",
+     "tē",
+     "haec",
+     "omnia",
+     "fortiter",
+     "ēgisse"
+    ]
+   },
+   {
+    "prompt": "The messenger announced that the city had been captured after a long siege.",
+    "answer": "Nūntius urbem longā obsidiōne captam esse renūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "urbem",
+     "longā",
+     "obsidiōne",
+     "captam",
+     "esse",
+     "renūntiāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t2",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Caesar replied that, if hostages were given, he would make peace.",
+    "answer": "Caesar respondit, sī obsidēs darentur, sē pācem factūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "respondit",
+     "sī",
+     "obsidēs",
+     "darentur",
+     "sē",
+     "pācem",
+     "factūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The envoys promised that they would return before winter.",
+    "answer": "Lēgātī pollicitī sunt sē ante hiemem reditūrōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgātī",
+     "pollicitī",
+     "sunt",
+     "sē",
+     "ante",
+     "hiemem",
+     "reditūrōs",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "He said that he would punish the man who had fled.",
+    "answer": "Dīxit sē pūnītūrum esse eum quī fūgisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīxit",
+     "sē",
+     "pūnītūrum",
+     "esse",
+     "eum",
+     "quī",
+     "fūgisset"
+    ]
+   },
+   {
+    "prompt": "They believed that the gods would aid those who fought bravely.",
+    "answer": "Crēdēbant deōs eīs quī fortiter pugnārent adfutūrōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crēdēbant",
+     "deōs",
+     "eīs",
+     "quī",
+     "fortiter",
+     "pugnārent",
+     "adfutūrōs",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t3",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The old man used to say that virtue alone made men happy.",
+    "answer": "Senex dīcēbat sōlam virtūtem hominēs beātōs facere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "dīcēbat",
+     "sōlam",
+     "virtūtem",
+     "hominēs",
+     "beātōs",
+     "facere"
+    ]
+   },
+   {
+    "prompt": "The historian wrote that the king had reigned for thirty years.",
+    "answer": "Historicus rēgem trīgintā annōs rēgnāvisse scrīpsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Historicus",
+     "rēgem",
+     "trīgintā",
+     "annōs",
+     "rēgnāvisse",
+     "scrīpsit"
+    ]
+   },
+   {
+    "prompt": "The judge decided that the accused man had committed the crime.",
+    "answer": "Iūdex reum scelus commīsisse iūdicāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūdex",
+     "reum",
+     "scelus",
+     "commīsisse",
+     "iūdicāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t4",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The philosopher used to teach that the soul was immortal.",
+    "answer": "Philosophus animum immortālem esse docēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "animum",
+     "immortālem",
+     "esse",
+     "docēbat"
+    ]
+   },
+   {
+    "prompt": "The farmer complained that the crops had been destroyed by hail.",
+    "answer": "Agricola frūgēs grandine dēlētās esse questus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "frūgēs",
+     "grandine",
+     "dēlētās",
+     "esse",
+     "questus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The helmsman said that a storm was approaching from the west.",
+    "answer": "Gubernātor tempestātem ab occidente appropinquāre dīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gubernātor",
+     "tempestātem",
+     "ab",
+     "occidente",
+     "appropinquāre",
+     "dīxit"
+    ]
+   },
+   {
+    "prompt": "He declared that he would never abandon his fatherland.",
+    "answer": "Adfirmāvit sē numquam patriam dēsertūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adfirmāvit",
+     "sē",
+     "numquam",
+     "patriam",
+     "dēsertūrum",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t5",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The messenger reported that the consul had been killed in battle.",
+    "answer": "Nūntius cōnsulem in proeliō occīsum esse rettulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "cōnsulem",
+     "in",
+     "proeliō",
+     "occīsum",
+     "esse",
+     "rettulit"
+    ]
+   },
+   {
+    "prompt": "I think that you had already read that book.",
+    "answer": "Putō tē illum librum iam lēgisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Putō",
+     "tē",
+     "illum",
+     "librum",
+     "iam",
+     "lēgisse"
+    ]
+   },
+   {
+    "prompt": "The queen promised that she would give gifts to the poet.",
+    "answer": "Rēgīna sē poētae dōna datūram esse pollicita est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "sē",
+     "poētae",
+     "dōna",
+     "datūram",
+     "esse",
+     "pollicita",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The general perceived that his men were fleeing because they feared the enemy.",
+    "answer": "Dux suōs fugere sēnsit quod hostēs timērent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "suōs",
+     "fugere",
+     "sēnsit",
+     "quod",
+     "hostēs",
+     "timērent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t6",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The witness swore that he had seen nothing that night.",
+    "answer": "Testis sē illā nocte nihil vīdisse iūrāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "sē",
+     "illā",
+     "nocte",
+     "nihil",
+     "vīdisse",
+     "iūrāvit"
+    ]
+   },
+   {
+    "prompt": "The teacher denied that the boys had learned anything.",
+    "answer": "Magister puerōs quicquam didicisse negāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "puerōs",
+     "quicquam",
+     "didicisse",
+     "negāvit"
+    ]
+   },
+   {
+    "prompt": "Caesar answered that he would spare the city if the citizens surrendered.",
+    "answer": "Caesar respondit sē urbī parsūrum esse sī cīvēs sē dēdidissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "respondit",
+     "sē",
+     "urbī",
+     "parsūrum",
+     "esse",
+     "sī",
+     "cīvēs",
+     "dēdidissent"
+    ]
+   },
+   {
+    "prompt": "We heard that the enemy had laid waste all the fields.",
+    "answer": "Audīvimus hostēs omnēs agrōs vāstāvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Audīvimus",
+     "hostēs",
+     "omnēs",
+     "agrōs",
+     "vāstāvisse"
+    ]
+   }
+  ]
+ }
+]

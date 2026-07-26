@@ -1,0 +1,346 @@
+[
+ {
+  "id": "bn-254-agreement-t1",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "You have often praised the poets whose songs delight the crowd.",
+    "answer": "Vōs saepe poētās laudāvistis quōrum carmina turbam dēlectant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vōs",
+     "saepe",
+     "poētās",
+     "laudāvistis",
+     "quōrum",
+     "carmina",
+     "turbam",
+     "dēlectant"
+    ]
+   },
+   {
+    "prompt": "The daughters of the king were carried off by the enemy during the night.",
+    "answer": "Fīliae rēgis ab hostibus nocte ēreptae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fīliae",
+     "rēgis",
+     "ab",
+     "hostibus",
+     "nocte",
+     "ēreptae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "A great multitude of soldiers were hurrying toward the walls.",
+    "answer": "Magna mīlitum multitūdō ad moenia contendēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magna",
+     "mīlitum",
+     "multitūdō",
+     "ad",
+     "moenia",
+     "contendēbant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t2",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "Thebes was the native land of the brave hero.",
+    "answer": "Thēbae patria fortis herōis erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Thēbae",
+     "patria",
+     "fortis",
+     "herōis",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "Corioli, a town of the Volsci, was captured after a long siege.",
+    "answer": "Coriolī, oppidum Volscōrum, longā obsidiōne captum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Coriolī",
+     "oppidum",
+     "Volscōrum",
+     "longā",
+     "obsidiōne",
+     "captum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Not every fear is to be considered cowardice.",
+    "answer": "Nōn omnis timor ignāvia putanda est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "omnis",
+     "timor",
+     "ignāvia",
+     "putanda",
+     "est"
+    ]
+   },
+   {
+    "prompt": "His only refuge was the ancestral fields.",
+    "answer": "Ūnicum eius perfugium erant agrī paternī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnicum",
+     "eius",
+     "perfugium",
+     "erant",
+     "agrī",
+     "paternī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t3",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "A crowd of citizens had gathered in the forum before dawn.",
+    "answer": "Cīvium multitūdō in forō ante lūcem convēnerant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cīvium",
+     "multitūdō",
+     "in",
+     "forō",
+     "ante",
+     "lūcem",
+     "convēnerant"
+    ]
+   },
+   {
+    "prompt": "Two thousand of the enemy were slain in that battle.",
+    "answer": "Duo mīlia hostium illō proeliō occīsī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "duo",
+     "mīlia",
+     "hostium",
+     "illō",
+     "proeliō",
+     "occīsī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "A large part of the soldiers had already thrown down their arms.",
+    "answer": "Magna pars mīlitum arma iam abiēcerant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magna",
+     "pars",
+     "mīlitum",
+     "arma",
+     "iam",
+     "abiēcerant"
+    ]
+   },
+   {
+    "prompt": "Three thousand captives were led in the triumph.",
+    "answer": "Tria mīlia captīvōrum in triumphō ductī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tria",
+     "mīlia",
+     "captīvōrum",
+     "in",
+     "triumphō",
+     "ductī",
+     "sunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t4",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "I who wrote these words fear neither death nor the Stygian shades.",
+    "answer": "Ego quī haec verba scrīpsī nec mortem nec umbrās Stygiās timeō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "quī",
+     "haec",
+     "verba",
+     "scrīpsī",
+     "nec",
+     "mortem",
+     "umbrās",
+     "Stygiās",
+     "timeō"
+    ]
+   },
+   {
+    "prompt": "You and your brother have defended the city bravely.",
+    "answer": "Tū et frāter tuus urbem fortiter dēfendistis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "et",
+     "frāter",
+     "tuus",
+     "urbem",
+     "fortiter",
+     "dēfendistis"
+    ]
+   },
+   {
+    "prompt": "We girls were carrying baskets full of grain to the market.",
+    "answer": "Nōs puellae calathōs frūmentō plēnōs ad forum portābāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōs",
+     "puellae",
+     "calathōs",
+     "frūmentō",
+     "plēnōs",
+     "ad",
+     "forum",
+     "portābāmus"
+    ]
+   },
+   {
+    "prompt": "The kid, snatched from the wolf's bite, was hidden in the stable.",
+    "answer": "Haedus ā morsū lupī ēreptus in stabulō contēctus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haedus",
+     "ā",
+     "morsū",
+     "lupī",
+     "ēreptus",
+     "in",
+     "stabulō",
+     "contēctus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t5",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "The mutiny, stirred up by a few, was quickly suppressed.",
+    "answer": "Sēditiō ā paucīs excitāta celeriter oppressa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sēditiō",
+     "ā",
+     "paucīs",
+     "excitāta",
+     "celeriter",
+     "oppressa",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The ships, driven by a fierce storm, were dashed against the rocks.",
+    "answer": "Nāvēs saevā tempestāte āctae in saxa illīsae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nāvēs",
+     "saevā",
+     "tempestāte",
+     "āctae",
+     "in",
+     "saxa",
+     "illīsae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The winter quarters had been fortified by the weary legions.",
+    "answer": "Hīberna ā fessīs legiōnibus mūnīta erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hīberna",
+     "ā",
+     "fessīs",
+     "legiōnibus",
+     "mūnīta",
+     "erant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t6",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "You and I have often read the histories of ancient wars.",
+    "answer": "Ego et vōs veterum bellōrum historiās saepe lēgimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "et",
+     "vōs",
+     "veterum",
+     "bellōrum",
+     "historiās",
+     "saepe",
+     "lēgimus"
+    ]
+   },
+   {
+    "prompt": "The crowd of enemies, terrified, threw down their weapons and fled.",
+    "answer": "Hostium turba territa arma abiēcērunt et fūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hostium",
+     "turba",
+     "territa",
+     "arma",
+     "abiēcērunt",
+     "et",
+     "fūgērunt"
+    ]
+   },
+   {
+    "prompt": "The reward of the soldiers was the conquered fields.",
+    "answer": "Mīlitum praemium erant agrī captī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīlitum",
+     "praemium",
+     "erant",
+     "agrī",
+     "captī"
+    ]
+   },
+   {
+    "prompt": "Tomorrow's danger frightens those who trust in the gods.",
+    "answer": "Crāstinum perīculum eōs terret quī deīs cōnfīdunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "crāstinum",
+     "perīculum",
+     "eōs",
+     "terret",
+     "quī",
+     "deīs",
+     "cōnfīdunt"
+    ]
+   }
+  ]
+ }
+]

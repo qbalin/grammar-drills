@@ -1,0 +1,384 @@
+[
+ {
+  "id": "bn-097-verb-stems-t1",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "While the ducks were swimming in the pond, the farmer was resting.",
+    "answer": "Dum anatēs in stāgnō natābant, agricola requiēscēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "anatēs",
+     "in",
+     "stāgnō",
+     "natābant",
+     "agricola",
+     "requiēscēbat"
+    ]
+   },
+   {
+    "prompt": "The fleeing enemy will abandon the city walls tomorrow.",
+    "answer": "Hostēs fugientēs crās moenia relinquent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hostēs",
+     "fugientēs",
+     "crās",
+     "moenia",
+     "relinquent"
+    ]
+   },
+   {
+    "prompt": "Let us relax our minds, so that we may endure long labors.",
+    "answer": "Animōs relaxēmus, ut longōs labōrēs ferāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "animōs",
+     "relaxēmus",
+     "ut",
+     "longōs",
+     "labōrēs",
+     "ferāmus"
+    ]
+   },
+   {
+    "prompt": "The teacher was speaking so that all the students might understand.",
+    "answer": "Magister loquēbātur ut omnēs discipulī intellegerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magister",
+     "loquēbātur",
+     "ut",
+     "omnēs",
+     "discipulī",
+     "intellegerent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-097-verb-stems-t2",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "The city, having been captured by the enemy, was destroyed.",
+    "answer": "Urbs ab hostibus capta dēlēta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "urbs",
+     "ab",
+     "hostibus",
+     "capta",
+     "dēlēta",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The gifts sent by the king will have been received by the citizens.",
+    "answer": "Dōna ā rēge missa ā cīvibus accepta erunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dōna",
+     "ā",
+     "rēge",
+     "missa",
+     "cīvibus",
+     "accepta",
+     "erunt"
+    ]
+   },
+   {
+    "prompt": "The sausage, cooked with great care, was praised by the guests.",
+    "answer": "Lucānica magnā cūrā cocta ab hospitibus laudāta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lucānica",
+     "magnā",
+     "cūrā",
+     "cocta",
+     "ab",
+     "hospitibus",
+     "laudāta",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-097-verb-stems-t3",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "The general reported that the enemy were making for the camp.",
+    "answer": "Dux hostēs castra petere nūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dux",
+     "hostēs",
+     "castra",
+     "petere",
+     "nūntiāvit"
+    ]
+   },
+   {
+    "prompt": "I believe that the merchants have crossed the vast sea.",
+    "answer": "Mercātōrēs vāstum mare trānsīsse crēdō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mercātōrēs",
+     "vāstum",
+     "mare",
+     "trānsīsse",
+     "crēdō"
+    ]
+   },
+   {
+    "prompt": "She promised that she would return before winter.",
+    "answer": "Sē ante hiemem reditūram esse prōmīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sē",
+     "ante",
+     "hiemem",
+     "reditūram",
+     "esse",
+     "prōmīsit"
+    ]
+   },
+   {
+    "prompt": "We knew that the city would be defended by brave men.",
+    "answer": "Urbem ā fortibus virīs dēfēnsum īrī sciēbāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "urbem",
+     "ā",
+     "fortibus",
+     "virīs",
+     "dēfēnsum",
+     "īrī",
+     "sciēbāmus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-097-verb-stems-t4",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "The daughter, about to depart, embraced her weeping mother.",
+    "answer": "Fīlia discessūra flentem mātrem complexa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fīlia",
+     "discessūra",
+     "flentem",
+     "mātrem",
+     "complexa",
+     "est"
+    ]
+   },
+   {
+    "prompt": "By reading good books we increase our wisdom.",
+    "answer": "Bonōs librōs legendō sapientiam nostram augēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bonōs",
+     "librōs",
+     "legendō",
+     "sapientiam",
+     "nostram",
+     "augēmus"
+    ]
+   },
+   {
+    "prompt": "The bridge must be built by the soldiers within three days.",
+    "answer": "Pōns ā mīlitibus tribus diēbus faciendus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pōns",
+     "ā",
+     "mīlitibus",
+     "tribus",
+     "diēbus",
+     "faciendus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The dying leader, still hoping for victory, encouraged his men.",
+    "answer": "Dux moriēns, adhūc victōriam spērāns, suōs hortātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dux",
+     "moriēns",
+     "adhūc",
+     "victōriam",
+     "spērāns",
+     "suōs",
+     "hortātus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-097-verb-stems-t5",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "The envoys came to seek peace from the Romans.",
+    "answer": "Lēgātī pācem ā Rōmānīs petītum vēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgātī",
+     "pācem",
+     "ā",
+     "Rōmānīs",
+     "petītum",
+     "vēnērunt"
+    ]
+   },
+   {
+    "prompt": "This story is wonderful to tell but hard to believe.",
+    "answer": "Haec fābula mīrābilis dictū sed difficilis crēditū est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "fābula",
+     "mīrābilis",
+     "dictū",
+     "sed",
+     "difficilis",
+     "crēditū",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Endure the bitterness of the present, and do not be forgetful of your friends.",
+    "answer": "Praesentis amāritūdinem tolerā, nēve amīcōrum immemor sīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "praesentis",
+     "amāritūdinem",
+     "tolerā",
+     "nēve",
+     "amīcōrum",
+     "immemor",
+     "sīs"
+    ]
+   },
+   {
+    "prompt": "If you had listened to me, you would not have lost the way.",
+    "answer": "Sī mē audīvissēs, viam nōn āmīsissēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "mē",
+     "audīvissēs",
+     "viam",
+     "nōn",
+     "āmīsissēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-097-verb-stems-t6",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "The soldiers, having conquered the enemy, returned to the ancient city.",
+    "answer": "Mīlitēs, hostibus victīs, ad urbem antīquam revertērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "hostibus",
+     "victīs",
+     "ad",
+     "urbem",
+     "antīquam",
+     "revertērunt"
+    ]
+   },
+   {
+    "prompt": "The venerable old man said that he had kept watch the whole night.",
+    "answer": "Senex venerābilis dīxit sē tōtam noctem vigilāvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "venerābilis",
+     "dīxit",
+     "sē",
+     "tōtam",
+     "noctem",
+     "vigilāvisse"
+    ]
+   },
+   {
+    "prompt": "The city will be destroyed by the fire raging through the narrow streets.",
+    "answer": "Urbs igne per angustās viās saeviente dēlēbitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbs",
+     "igne",
+     "per",
+     "angustās",
+     "viās",
+     "saeviente",
+     "dēlēbitur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-097-verb-stems-t7",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "When the poet had recited his verses, the whole crowd applauded eagerly.",
+    "answer": "Cum poēta versūs recitāvisset, tōta turba avidē plausit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "poēta",
+     "versūs",
+     "recitāvisset",
+     "tōta",
+     "turba",
+     "avidē",
+     "plausit"
+    ]
+   },
+   {
+    "prompt": "About to set out at dawn, the merchant entrusted his money to a friend.",
+    "answer": "Prīmā lūce profectūrus, mercātor pecūniam amīcō crēdidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmā",
+     "lūce",
+     "profectūrus",
+     "mercātor",
+     "pecūniam",
+     "amīcō",
+     "crēdidit"
+    ]
+   },
+   {
+    "prompt": "The maidservant, keeping watch, heard the thieves approaching the silent house.",
+    "answer": "Ancilla vigilāns fūrēs domuī silentī appropinquāre audīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ancilla",
+     "vigilāns",
+     "fūrēs",
+     "domuī",
+     "silentī",
+     "appropinquāre",
+     "audīvit"
+    ]
+   }
+  ]
+ }
+]
