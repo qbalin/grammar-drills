@@ -4,60 +4,62 @@
   "sectionId": "bn-140-adverbs",
   "questions": [
    {
-    "prompt": "By whatever way you go, by that way I shall follow you.",
-    "answer": "Quā viā ībis, eā tē sequar.",
+    "prompt": "Where the bishop had once dwelt, there now a deep silence lies.",
+    "answer": "Ubi episcopus ōlim habitāverat, ibi nunc altum silentium iacet.",
     "kind": "translate-en-la",
     "vocab": [
-     "Quā",
-     "viā",
-     "ībis",
-     "eā",
-     "tē",
-     "sequar"
+     "Ubi",
+     "episcopus",
+     "ōlim",
+     "habitāverat",
+     "ibi",
+     "nunc",
+     "altum",
+     "silentium",
+     "iacet"
     ]
    },
    {
-    "prompt": "By that road the idle crowd wandered, while the soldiers hurried by this one.",
-    "answer": "Illāc turba ōtiōsa vagābātur, dum mīlitēs hāc properābant.",
+    "prompt": "We do not know whither the fugitives fled through the dark woods.",
+    "answer": "Quō fugitīvī per silvās obscūrās fūgerint nescīmus.",
     "kind": "translate-en-la",
     "vocab": [
-     "Illāc",
-     "turba",
-     "ōtiōsa",
-     "vagābātur",
-     "dum",
-     "mīlitēs",
-     "hāc",
-     "properābant"
-    ]
-   },
-   {
-    "prompt": "By some path the beaten enemy slipped away through the woods.",
-    "answer": "Aliquā viā hostis superātus per silvās ēlāpsus est.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Aliquā",
-     "viā",
-     "hostis",
-     "superātus",
+     "Quō",
+     "fugitīvī",
      "per",
      "silvās",
-     "ēlāpsus",
-     "est"
+     "obscūrās",
+     "fūgerint",
+     "nescīmus"
     ]
    },
    {
-    "prompt": "Where the road narrows, there the horses advance slowly.",
-    "answer": "Quā via angustātur, ibi equī tardē prōgrediuntur.",
+    "prompt": "The scouts hastened to report whence so great a danger had arisen.",
+    "answer": "Explōrātōrēs, unde tantum discrīmen ortum esset, nūntiāre properāvērunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Quā",
-     "via",
-     "angustātur",
-     "ibi",
-     "equī",
-     "tardē",
-     "prōgrediuntur"
+     "Explōrātōrēs",
+     "unde",
+     "tantum",
+     "discrīmen",
+     "ortum",
+     "esset",
+     "nūntiāre",
+     "properāvērunt"
+    ]
+   },
+   {
+    "prompt": "Hither the weary soldiers came, whence they never returned.",
+    "answer": "Hūc mīlitēs fessī vēnērunt, unde numquam rediērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hūc",
+     "mīlitēs",
+     "fessī",
+     "vēnērunt",
+     "unde",
+     "numquam",
+     "rediērunt"
     ]
    }
   ]
@@ -67,45 +69,63 @@
   "sectionId": "bn-140-adverbs",
   "questions": [
    {
-    "prompt": "Where the enemy had pitched camp, there we found abundant water.",
-    "answer": "Ubi hostēs castra posuerant, ibi aquam abundantem invēnimus.",
+    "prompt": "When the enemy attacked, then the citizens bravely took up arms.",
+    "answer": "Cum hostēs oppugnāvērunt, tum cīvēs fortiter arma cēpērunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Ubi",
+     "Cum",
      "hostēs",
-     "castra",
-     "posuerant",
-     "ibi",
-     "aquam",
-     "abundantem",
-     "invēnimus"
+     "oppugnāvērunt",
+     "tum",
+     "cīvēs",
+     "fortiter",
+     "arma",
+     "cēpērunt"
     ]
    },
    {
-    "prompt": "Whither the general marched, thither the weary soldiers followed.",
-    "answer": "Quō dux contendit, illūc mīlitēs fessī secūtī sunt.",
+    "prompt": "As often as the poet recited, so often the crowd eagerly applauded.",
+    "answer": "Quotiēns poēta recitābat, totiēns turba cupidē plausit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Quō",
-     "dux",
-     "contendit",
-     "illūc",
-     "mīlitēs",
-     "fessī",
-     "secūtī",
-     "sunt"
+     "Quotiēns",
+     "poēta",
+     "recitābat",
+     "totiēns",
+     "turba",
+     "cupidē",
+     "plausit"
     ]
    },
    {
-    "prompt": "By this way we came, by that way we shall return home.",
-    "answer": "Hāc vēnimus, illāc domum redībimus.",
+    "prompt": "When will the parent return, whom we now so anxiously await?",
+    "answer": "Quandō pārēns redībit, quem nunc tam sollicitē exspectāmus?",
     "kind": "translate-en-la",
     "vocab": [
-     "Hāc",
-     "vēnimus",
-     "illāc",
-     "domum",
-     "redībimus"
+     "Quandō",
+     "pārēns",
+     "redībit",
+     "quem",
+     "nunc",
+     "tam",
+     "sollicitē",
+     "exspectāmus"
+    ]
+   },
+   {
+    "prompt": "Then the fields were fertile; now they lie barren and abandoned.",
+    "answer": "Tunc agrī fēcundī erant; nunc sterilēs et dēsertī iacent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tunc",
+     "agrī",
+     "fēcundī",
+     "erant",
+     "nunc",
+     "sterilēs",
+     "et",
+     "dēsertī",
+     "iacent"
     ]
    }
   ]
@@ -115,47 +135,251 @@
   "sectionId": "bn-140-adverbs",
   "questions": [
    {
-    "prompt": "By this way the army marched, by that way the cavalry rode.",
-    "answer": "Hāc exercitus iter fēcit, illāc equitēs vectī sunt.",
+    "prompt": "So fierce was the battle that few soldiers survived that day.",
+    "answer": "Tam ātrōx erat proelium ut paucī mīlitēs illum diem superessent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tam",
+     "ātrōx",
+     "erat",
+     "proelium",
+     "ut",
+     "paucī",
+     "mīlitēs",
+     "illum",
+     "diem",
+     "superessent"
+    ]
+   },
+   {
+    "prompt": "The wine, somewhat diluted, was divided among the guests.",
+    "answer": "Vīnum, aliquantum dīlūtum, inter convīvās dīvīsum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīnum",
+     "aliquantum",
+     "dīlūtum",
+     "inter",
+     "convīvās",
+     "dīvīsum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The old man is now as greedy as once he was generous.",
+    "answer": "Tam avārus nunc est senex quam ōlim līberālis fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tam",
+     "avārus",
+     "nunc",
+     "est",
+     "senex",
+     "quam",
+     "ōlim",
+     "līberālis",
+     "fuit"
+    ]
+   },
+   {
+    "prompt": "How greatly you fear death, of which you so rarely think!",
+    "answer": "Quam magnopere mortem timēs, dē quā tam rārō cōgitās!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "magnopere",
+     "mortem",
+     "timēs",
+     "dē",
+     "quā",
+     "tam",
+     "rārō",
+     "cōgitās"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-140-adverbs-t4",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "Somewhere in these mountains the exiles are hiding, though we scarcely believe it.",
+    "answer": "Alicubī in hīs montibus exsulēs latent, quamquam vix crēdimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alicubī",
+     "in",
+     "hīs",
+     "montibus",
+     "exsulēs",
+     "latent",
+     "quamquam",
+     "vix",
+     "crēdimus"
+    ]
+   },
+   {
+    "prompt": "If ever the tyrant returns, the people will flee to some place afar.",
+    "answer": "Sī umquam tyrannus redierit, populus aliquō procul fugiet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "umquam",
+     "tyrannus",
+     "redierit",
+     "populus",
+     "aliquō",
+     "procul",
+     "fugiet"
+    ]
+   },
+   {
+    "prompt": "From somewhere a rumor arose that the fleet had been destroyed.",
+    "answer": "Alicunde fāma orta est classem dēlētam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alicunde",
+     "fāma",
+     "orta",
+     "est",
+     "classem",
+     "dēlētam",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-140-adverbs-t5",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "By this way the merchants used to travel, by that the shepherds drove their flocks.",
+    "answer": "Hāc mercātōrēs iter facere solēbant, illāc pāstōrēs gregēs agēbant.",
     "kind": "translate-en-la",
     "vocab": [
      "Hāc",
-     "exercitus",
+     "mercātōrēs",
      "iter",
-     "fēcit",
+     "facere",
+     "solēbant",
      "illāc",
-     "equitēs",
-     "vectī",
+     "pāstōrēs",
+     "gregēs",
+     "agēbant"
+    ]
+   },
+   {
+    "prompt": "Where the road narrows, there the ambush was cleverly prepared.",
+    "answer": "Quā via angustātur, ibi īnsidiae callidē parātae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quā",
+     "via",
+     "angustātur",
+     "ibi",
+     "īnsidiae",
+     "callidē",
+     "parātae",
      "sunt"
     ]
    },
    {
-    "prompt": "Here the temple once stood; there the forum was crowded with citizens.",
-    "answer": "Hīc templum ōlim stetit; illīc forum cīvibus frequēns erat.",
+    "prompt": "Here the temple once stood; there, across the valley, the citadel rose.",
+    "answer": "Hīc templum ōlim stābat; illīc, trāns vallem, arx surgēbat.",
     "kind": "translate-en-la",
     "vocab": [
      "Hīc",
      "templum",
      "ōlim",
-     "stetit",
+     "stābat",
      "illīc",
-     "forum",
-     "cīvibus",
-     "frequēns",
-     "erat"
+     "trāns",
+     "vallem",
+     "arx",
+     "surgēbat"
     ]
    },
    {
-    "prompt": "By some way the fugitives escaped from the burning city.",
-    "answer": "Aliquā fugitīvī ex urbe ārdente effūgērunt.",
+    "prompt": "By some way or other the messenger slipped through the enemy's lines.",
+    "answer": "Aliquā nūntius per hostium ōrdinēs ēlāpsus est.",
     "kind": "translate-en-la",
     "vocab": [
      "Aliquā",
-     "fugitīvī",
-     "ex",
-     "urbe",
-     "ārdente",
-     "effūgērunt"
+     "nūntius",
+     "per",
+     "hostium",
+     "ōrdinēs",
+     "ēlāpsus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-140-adverbs-t6",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "Whither the raft would be carried by the current, no helmsman could foresee.",
+    "answer": "Quō ratis flūmine ferrētur, nūllus gubernātor praevidēre poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quō",
+     "ratis",
+     "flūmine",
+     "ferrētur",
+     "nūllus",
+     "gubernātor",
+     "praevidēre",
+     "poterat"
+    ]
+   },
+   {
+    "prompt": "As often as the Danaans attacked, so often the walls of Troy repelled them.",
+    "answer": "Quotiēns Danaī oppugnāvērunt, totiēns Trōiae mūrī eōs reppulērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quotiēns",
+     "Danaī",
+     "oppugnāvērunt",
+     "totiēns",
+     "Trōiae",
+     "mūrī",
+     "eōs",
+     "reppulērunt"
+    ]
+   },
+   {
+    "prompt": "When the boy first entered the elementary school, then he began to fear the master.",
+    "answer": "Cum puer prīmum lūdum litterārium intrāvit, tum magistrum timēre coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "puer",
+     "prīmum",
+     "lūdum",
+     "litterārium",
+     "intrāvit",
+     "tum",
+     "magistrum",
+     "timēre",
+     "coepit"
+    ]
+   },
+   {
+    "prompt": "Now he demands a bronze cauldron, which somewhere he had lost.",
+    "answer": "Nunc aēneum lebētem flāgitat, quem alicubī āmīserat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nunc",
+     "aēneum",
+     "lebētem",
+     "flāgitat",
+     "quem",
+     "alicubī",
+     "āmīserat"
     ]
    }
   ]

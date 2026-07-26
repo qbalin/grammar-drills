@@ -4,51 +4,357 @@
   "sectionId": "bn-291-antequam-and-priusquam-with-the",
   "questions": [
    {
-    "prompt": "They did not cease to fight until the leader of the enemy fell.",
-    "answer": "Nōn prius pugnāre dēstitērunt quam dux hostium cecidit.",
+    "prompt": "The swan sings before it dies.",
+    "answer": "Cycnus canit antequam moritur.",
     "kind": "translate-en-la",
     "vocab": [
-     "nōn",
-     "prius",
-     "pugnāre",
-     "dēstitērunt",
-     "quam",
-     "dux",
-     "hostium",
-     "cecidit"
+     "Cycnus",
+     "canit",
+     "antequam",
+     "moritur"
     ]
    },
    {
-    "prompt": "The merchant did not return home before he had sold all his goods.",
-    "answer": "Mercātor nōn ante domum rediit quam omnēs mercēs vēndidit.",
+    "prompt": "You reply before I finish the question.",
+    "answer": "Prius respondēs quam rogātiōnem cōnficiō.",
     "kind": "translate-en-la",
     "vocab": [
-     "mercātor",
+     "Prius",
+     "respondēs",
+     "quam",
+     "rogātiōnem",
+     "cōnficiō"
+    ]
+   },
+   {
+    "prompt": "The greedy man counts his coins before the sun rises.",
+    "answer": "Avārus nummōs numerat antequam sōl oritur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Avārus",
+     "nummōs",
+     "numerat",
+     "antequam",
+     "sōl",
+     "oritur"
+    ]
+   },
+   {
+    "prompt": "The plague creeps through the city before the doctors arrive.",
+    "answer": "Pestis per urbem serpit antequam medicī adveniunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pestis",
+     "per",
+     "urbem",
+     "serpit",
+     "antequam",
+     "medicī",
+     "adveniunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-t2",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "I will say nothing before he has spoken.",
+    "answer": "Nihil dīcam priusquam ille dīxerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "dīcam",
+     "priusquam",
+     "ille",
+     "dīxerit"
+    ]
+   },
+   {
+    "prompt": "We will not set out before the general has given the signal.",
+    "answer": "Nōn proficīscēmur priusquam dux signum dederit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "proficīscēmur",
+     "priusquam",
+     "dux",
+     "signum",
+     "dederit"
+    ]
+   },
+   {
+    "prompt": "You will understand the danger before the enemy has crossed the river.",
+    "answer": "Perīculum intellegēs antequam hostis flūmen trānsierit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Perīculum",
+     "intellegēs",
+     "antequam",
+     "hostis",
+     "flūmen",
+     "trānsierit"
+    ]
+   },
+   {
+    "prompt": "The soldiers will not rest before they have captured the citadel.",
+    "answer": "Mīlitēs nōn quiēscent priusquam arcem cēperint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "nōn",
+     "quiēscent",
+     "priusquam",
+     "arcem",
+     "cēperint"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-t3",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "There was no end of slaughter before the tyrant satisfied his men with wealth.",
+    "answer": "Nōn prius caedis fīnis fuit quam tyrannus suōs dīvitiīs explēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "prius",
+     "caedis",
+     "fīnis",
+     "fuit",
+     "quam",
+     "tyrannus",
+     "suōs",
+     "dīvitiīs",
+     "explēvit"
+    ]
+   },
+   {
+    "prompt": "He did not flee before he had seen the enemy's camp.",
+    "answer": "Nōn prius fūgit quam hostium castra vīdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "prius",
+     "fūgit",
+     "quam",
+     "hostium",
+     "castra",
+     "vīdit"
+    ]
+   },
+   {
+    "prompt": "The fire did not halt before it had consumed the whole forest.",
+    "answer": "Ignis nōn ante cōnstitit quam tōtam silvam absūmpsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ignis",
      "nōn",
      "ante",
-     "domum",
-     "rediit",
+     "cōnstitit",
      "quam",
-     "omnēs",
-     "mercēs",
-     "vēndidit"
+     "tōtam",
+     "silvam",
+     "absūmpsit"
     ]
    },
    {
-    "prompt": "They could not cross the river before the bridge was completed by the workmen.",
-    "answer": "Nōn prius flūmen trānsīre potuērunt quam pōns ā fabrīs perfectus est.",
+    "prompt": "We did not sleep before the watchmen returned.",
+    "answer": "Nōn prius dormīvimus quam vigilēs rediērunt.",
     "kind": "translate-en-la",
     "vocab": [
+     "Nōn",
+     "prius",
+     "dormīvimus",
+     "quam",
+     "vigilēs",
+     "rediērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-t4",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "The frightened citizens flee before the flames touch the walls.",
+    "answer": "Cīvēs territī fugiunt antequam flammae mūrōs tangunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvēs",
+     "territī",
+     "fugiunt",
+     "antequam",
+     "flammae",
+     "mūrōs",
+     "tangunt"
+    ]
+   },
+   {
+    "prompt": "Before the messenger arrives, the king already knows the outcome.",
+    "answer": "Antequam nūntius advenit, rēx iam ēventum scit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antequam",
+     "nūntius",
+     "advenit",
+     "rēx",
+     "iam",
+     "ēventum",
+     "scit"
+    ]
+   },
+   {
+    "prompt": "The wise man deliberates before he acts.",
+    "answer": "Sapiēns dēlīberat antequam agit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "dēlīberat",
+     "antequam",
+     "agit"
+    ]
+   },
+   {
+    "prompt": "You praise the poem before you have read it in full.",
+    "answer": "Carmen laudās antequam tōtum lēgistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Carmen",
+     "laudās",
+     "antequam",
+     "tōtum",
+     "lēgistī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-t5",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "Before the sun has set, we will reach the harbor.",
+    "answer": "Antequam sōl occiderit, portum attingēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antequam",
+     "sōl",
+     "occiderit",
+     "portum",
+     "attingēmus"
+    ]
+   },
+   {
+    "prompt": "I will not believe the rumor before I have heard it with my own ears.",
+    "answer": "Nōn rūmōrī crēdam priusquam meīs auribus audīverō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "rūmōrī",
+     "crēdam",
+     "priusquam",
+     "meīs",
+     "auribus",
+     "audīverō"
+    ]
+   },
+   {
+    "prompt": "The farmer will sow the seeds before winter has come.",
+    "answer": "Agricola sēmina seret antequam hiems vēnerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "sēmina",
+     "seret",
+     "antequam",
+     "hiems",
+     "vēnerit"
+    ]
+   },
+   {
+    "prompt": "You will not take the city before you have crossed the mountains.",
+    "answer": "Urbem nōn capiēs priusquam montēs superāveris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbem",
+     "nōn",
+     "capiēs",
+     "priusquam",
+     "montēs",
+     "superāveris"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-t6",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "The exhausted traveler did not rest before he had reached the inn.",
+    "answer": "Fessus viātor nōn prius quiēvit quam ad dēversōrium pervēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fessus",
+     "viātor",
      "nōn",
      "prius",
-     "flūmen",
-     "trānsīre",
-     "potuērunt",
+     "quiēvit",
      "quam",
-     "pōns",
-     "ā",
-     "fabrīs",
-     "perfectus",
+     "ad",
+     "dēversōrium",
+     "pervēnit"
+    ]
+   },
+   {
+    "prompt": "There was no peace before the consul drove out the traitors.",
+    "answer": "Nōn ante pāx fuit quam cōnsul prōditōrēs expulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "ante",
+     "pāx",
+     "fuit",
+     "quam",
+     "cōnsul",
+     "prōditōrēs",
+     "expulit"
+    ]
+   },
+   {
+    "prompt": "The child did not stop crying before its mother returned.",
+    "answer": "Puer nōn prius flēre dēstitit quam māter rediit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puer",
+     "nōn",
+     "prius",
+     "flēre",
+     "dēstitit",
+     "quam",
+     "māter",
+     "rediit"
+    ]
+   },
+   {
+    "prompt": "The sailors did not draw in the sails before the storm broke.",
+    "answer": "Nautae vēla nōn prius contrāxērunt quam tempestās coorta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nautae",
+     "vēla",
+     "nōn",
+     "prius",
+     "contrāxērunt",
+     "quam",
+     "tempestās",
+     "coorta",
      "est"
     ]
    }

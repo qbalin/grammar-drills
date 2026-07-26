@@ -4,58 +4,51 @@
   "sectionId": "bn-338-the-gerund",
   "questions": [
    {
-    "prompt": "The desire of ruling drove the ambitious general to war.",
-    "answer": "Cupiditās dominandī ducem ambitiōsum ad bellum impulit.",
+    "prompt": "The desire of ruling drove the general to war.",
+    "answer": "Cupiditās dominandī ducem ad bellum impulit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Cupiditās",
+     "cupiditās",
      "dominandī",
      "ducem",
-     "ambitiōsum",
      "ad",
      "bellum",
      "impulit"
     ]
    },
    {
-    "prompt": "Man is born for acting, not for resting lazily.",
-    "answer": "Homō ad agendum, nōn ad ignāvē quiēscendum, nātus est.",
+    "prompt": "The art of writing was being taught by an old master.",
+    "answer": "Ars scrībendī ā magistrō sene docēbātur.",
     "kind": "translate-en-la",
     "vocab": [
-     "Homō",
-     "ad",
-     "agendum",
-     "nōn",
-     "ignāvē",
-     "quiēscendum",
-     "nātus",
-     "est"
+     "ars",
+     "scrībendī",
+     "ā",
+     "magistrō",
+     "sene",
+     "docēbātur"
     ]
    },
    {
-    "prompt": "This clear water is useful for drinking.",
-    "answer": "Haec aqua candida bibendō ūtilis est.",
+    "prompt": "He had a great longing for learning.",
+    "answer": "Magnam cupiditātem discendī habēbat.",
     "kind": "translate-en-la",
     "vocab": [
-     "Haec",
-     "aqua",
-     "candida",
-     "bibendō",
-     "ūtilis",
-     "est"
+     "magnam",
+     "cupiditātem",
+     "discendī",
+     "habēbat"
     ]
    },
    {
-    "prompt": "By reading much the young man perfected the art of speaking.",
-    "answer": "Multum legendō adulēscēns artem dīcendī perfēcit.",
+    "prompt": "The method of speaking pleases the young men.",
+    "answer": "Ratiō dīcendī iuvenibus placet.",
     "kind": "translate-en-la",
     "vocab": [
-     "Multum",
-     "legendō",
-     "adulēscēns",
-     "artem",
+     "ratiō",
      "dīcendī",
-     "perfēcit"
+     "iuvenibus",
+     "placet"
     ]
    }
   ]
@@ -65,58 +58,255 @@
   "sectionId": "bn-338-the-gerund",
   "questions": [
    {
-    "prompt": "Desirous of hearing, the crowd fell silent when the poet rose.",
-    "answer": "Audiendī cupida, turba conticuit cum poēta exsurrēxit.",
+    "prompt": "The soldier, eager for fighting, ran ahead.",
+    "answer": "Mīles pugnandī cupidus prōcurrit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Audiendī",
-     "cupida",
+     "mīles",
+     "pugnandī",
+     "cupidus",
+     "prōcurrit"
+    ]
+   },
+   {
+    "prompt": "Desirous of hearing, the crowd fell silent.",
+    "answer": "Turba audiendī cupida conticuit.",
+    "kind": "translate-en-la",
+    "vocab": [
      "turba",
-     "conticuit",
-     "cum",
-     "poēta",
-     "exsurrēxit"
+     "audiendī",
+     "cupida",
+     "conticuit"
     ]
    },
    {
-    "prompt": "At first light we entered the maritime temple for the sake of praying.",
-    "answer": "Prīmā lūce templum maritimum ōrandī grātiā intrāvimus.",
+    "prompt": "The wise man is skilled in ruling.",
+    "answer": "Vir sapiēns regendī perītus est.",
     "kind": "translate-en-la",
     "vocab": [
-     "Prīmā",
-     "lūce",
-     "templum",
-     "maritimum",
-     "ōrandī",
+     "vir",
+     "sapiēns",
+     "regendī",
+     "perītus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The young man, greedy for playing, neglected his books.",
+    "answer": "Adulēscēns lūdendī avidus librōs neglēxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "adulēscēns",
+     "lūdendī",
+     "avidus",
+     "librōs",
+     "neglēxit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-t3",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "For the sake of learning he set out for Athens.",
+    "answer": "Discendī causā Athēnās profectus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "discendī",
+     "causā",
+     "Athēnās",
+     "profectus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "They came together for the purpose of deliberating.",
+    "answer": "Dēlīberandī grātiā convēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dēlīberandī",
      "grātiā",
-     "intrāvimus"
+     "convēnērunt"
     ]
    },
    {
-    "prompt": "The mind is strengthened by thinking and weakened by sleeping.",
-    "answer": "Animus cōgitandō firmātur, dormiendō dēbilitātur.",
+    "prompt": "For the sake of living well, he despised riches.",
+    "answer": "Bene vīvendī causā dīvitiās contempsit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Animus",
-     "cōgitandō",
-     "firmātur",
-     "dormiendō",
-     "dēbilitātur"
-    ]
-   },
-   {
-    "prompt": "The difficult art of writing well is learned quickly by no one.",
-    "answer": "Difficilis ars bene scrībendī ā nūllō celeriter discitur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Difficilis",
-     "ars",
      "bene",
-     "scrībendī",
-     "ā",
-     "nūllō",
-     "celeriter",
-     "discitur"
+     "vīvendī",
+     "causā",
+     "dīvitiās",
+     "contempsit"
+    ]
+   },
+   {
+    "prompt": "For the sake of resting, the weary travelers halted.",
+    "answer": "Quiēscendī causā fessī viātōrēs cōnstitērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quiēscendī",
+     "causā",
+     "fessī",
+     "viātōrēs",
+     "cōnstitērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-t4",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "This water is useful for drinking.",
+    "answer": "Haec aqua ūtilis est bibendō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "aqua",
+     "ūtilis",
+     "est",
+     "bibendō"
+    ]
+   },
+   {
+    "prompt": "The place was suitable for fighting.",
+    "answer": "Locus pugnandō aptus erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "locus",
+     "pugnandō",
+     "aptus",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "He was present at the writing.",
+    "answer": "Scrībendō adfuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "scrībendō",
+     "adfuit"
+    ]
+   },
+   {
+    "prompt": "That method is well fitted for teaching.",
+    "answer": "Illa ratiō docendō accommodāta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illa",
+     "ratiō",
+     "docendō",
+     "accommodāta",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-t5",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "Nature gave us hands for working.",
+    "answer": "Nātūra nōbīs manūs ad labōrandum dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nātūra",
+     "nōbīs",
+     "manūs",
+     "ad",
+     "labōrandum",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "The general prepared his soldiers for setting out.",
+    "answer": "Dux mīlitēs ad proficīscendum parāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dux",
+     "mīlitēs",
+     "ad",
+     "proficīscendum",
+     "parāvit"
+    ]
+   },
+   {
+    "prompt": "The philosopher gave himself over to contemplating.",
+    "answer": "Philosophus sē ad contemplandum dēdidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "philosophus",
+     "sē",
+     "ad",
+     "contemplandum",
+     "dēdidit"
+    ]
+   },
+   {
+    "prompt": "This leisure was granted for reading.",
+    "answer": "Hoc ōtium ad legendum datum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "ōtium",
+     "ad",
+     "legendum",
+     "datum",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-t6",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "By reading he sharpened his mind.",
+    "answer": "Legendō ingenium acuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "legendō",
+     "ingenium",
+     "acuit"
+    ]
+   },
+   {
+    "prompt": "Men learn by doing.",
+    "answer": "Hominēs faciendō discunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hominēs",
+     "faciendō",
+     "discunt"
+    ]
+   },
+   {
+    "prompt": "He wearied the enemy by delaying.",
+    "answer": "Hostem cūnctandō fatīgāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hostem",
+     "cūnctandō",
+     "fatīgāvit"
+    ]
+   },
+   {
+    "prompt": "The orator won glory by speaking.",
+    "answer": "Ōrātor dīcendō glōriam adeptus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ōrātor",
+     "dīcendō",
+     "glōriam",
+     "adeptus",
+     "est"
     ]
    }
   ]

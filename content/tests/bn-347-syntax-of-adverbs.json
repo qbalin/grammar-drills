@@ -4,44 +4,63 @@
   "sectionId": "bn-347-syntax-of-adverbs",
   "questions": [
    {
-    "prompt": "That plan indeed seemed useful, but it was dangerous.",
-    "answer": "Id cōnsilium quidem ūtile vidēbātur, sed perīculōsum erat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Id",
-     "cōnsilium",
-     "quidem",
-     "ūtile",
-     "vidēbātur",
-     "sed",
-     "perīculōsum",
-     "erat"
-    ]
-   },
-   {
-    "prompt": "Not even by night did the guards abandon the walls.",
-    "answer": "Nē nocte quidem custōdēs mūrōs relīquērunt.",
+    "prompt": "Not even the bravest soldier could endure so great a wound.",
+    "answer": "Nē fortissimus quidem mīles tantum vulnus tolerāre potuit.",
     "kind": "translate-en-la",
     "vocab": [
      "Nē",
-     "nocte",
+     "fortissimus",
      "quidem",
-     "custōdēs",
-     "mūrōs",
-     "relīquērunt"
+     "mīles",
+     "tantum",
+     "vulnus",
+     "tolerāre",
+     "potuit"
     ]
    },
    {
-    "prompt": "The reward was not unwelcome to the weary rowers.",
-    "answer": "Praemium haud ingrātum erat rēmigibus fessīs.",
+    "prompt": "The old man praised his son, and even the daughter received gifts.",
+    "answer": "Senex fīlium laudāvit, et etiam fīlia dōna accēpit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Praemium",
-     "haud",
-     "ingrātum",
-     "erat",
-     "rēmigibus",
-     "fessīs"
+     "Senex",
+     "fīlium",
+     "laudāvit",
+     "et",
+     "etiam",
+     "fīlia",
+     "dōna",
+     "accēpit"
+    ]
+   },
+   {
+    "prompt": "The poet too recited his verses in the crowded forum.",
+    "answer": "Poēta quoque versūs suōs in forō frequentī recitāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "quoque",
+     "versūs",
+     "suōs",
+     "in",
+     "forō",
+     "frequentī",
+     "recitāvit"
+    ]
+   },
+   {
+    "prompt": "I indeed feared nothing, though the enemy was pressing hard.",
+    "answer": "Ego quidem nihil timēbam, quamquam hostis vehementer urgēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "quidem",
+     "nihil",
+     "timēbam",
+     "quamquam",
+     "hostis",
+     "vehementer",
+     "urgēbat"
     ]
    }
   ]
@@ -51,46 +70,60 @@
   "sectionId": "bn-347-syntax-of-adverbs",
   "questions": [
    {
-    "prompt": "The general truly feared nothing, not even death itself.",
-    "answer": "Dux vērō nihil timēbat, nē mortem quidem ipsam.",
+    "prompt": "I have no one here, neither friend nor kinsman.",
+    "answer": "Habeō hīc nēminem neque amīcum neque cognātum.",
     "kind": "translate-en-la",
     "vocab": [
-     "Dux",
-     "vērō",
-     "nihil",
-     "timēbat",
-     "nē",
-     "mortem",
-     "quidem",
-     "ipsam"
+     "Habeō",
+     "hīc",
+     "nēminem",
+     "neque",
+     "amīcum",
+     "cognātum"
     ]
    },
    {
-    "prompt": "Some citizens applauded, but the majority remained silent.",
-    "answer": "Nōn nūllī cīvēs applausērunt, sed plērīque tacuērunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Nōn",
-     "nūllī",
-     "cīvēs",
-     "applausērunt",
-     "sed",
-     "plērīque",
-     "tacuērunt"
-    ]
-   },
-   {
-    "prompt": "Not even his closest friends approved of the plan.",
-    "answer": "Nē intimī quidem amīcī cōnsiliō assēnsī sunt.",
+    "prompt": "Not even that danger must be passed over by a prudent leader.",
+    "answer": "Nē id quidem perīculum ā prūdentī duce praetereundum est.",
     "kind": "translate-en-la",
     "vocab": [
      "Nē",
-     "intimī",
+     "id",
      "quidem",
-     "amīcī",
-     "cōnsiliō",
-     "assēnsī",
-     "sunt"
+     "perīculum",
+     "ā",
+     "prūdentī",
+     "duce",
+     "praetereundum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Not even he, worn out by poverty, abandoned his hope.",
+    "answer": "Nē ille quidem, egestāte cōnfectus, spem relīquit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "ille",
+     "quidem",
+     "egestāte",
+     "cōnfectus",
+     "spem",
+     "relīquit"
+    ]
+   },
+   {
+    "prompt": "Some indeed fled, but the rest fought bravely.",
+    "answer": "Nōnnūllī quidem fūgērunt, sed cēterī fortiter pugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōnnūllī",
+     "quidem",
+     "fūgērunt",
+     "sed",
+     "cēterī",
+     "fortiter",
+     "pugnāvērunt"
     ]
    }
   ]
@@ -100,60 +133,250 @@
   "sectionId": "bn-347-syntax-of-adverbs",
   "questions": [
    {
-    "prompt": "Not even by night did the watchful guards abandon the walls.",
-    "answer": "Nē nocte quidem vigilantēs custōdēs mūrōs relinquēbant.",
+    "prompt": "The youth, by no means cowardly, hurled himself against the rampart.",
+    "answer": "Adulēscēns, haud ignāvus, sē in vāllum iniēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adulēscēns",
+     "haud",
+     "ignāvus",
+     "sē",
+     "in",
+     "vāllum",
+     "iniēcit"
+    ]
+   },
+   {
+    "prompt": "I scarcely know whether envy is lighter than poverty.",
+    "answer": "Haud sciō an invidia levior sit quam egestās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haud",
+     "sciō",
+     "an",
+     "invidia",
+     "levior",
+     "sit",
+     "quam",
+     "egestās"
+    ]
+   },
+   {
+    "prompt": "The task was by no means easy, yet he completed it.",
+    "answer": "Opus haud facile erat, tamen id perfēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Opus",
+     "haud",
+     "facile",
+     "erat",
+     "tamen",
+     "id",
+     "perfēcit"
+    ]
+   },
+   {
+    "prompt": "Fearing nothing, the leader advanced by no means slowly.",
+    "answer": "Nihil timēns, dux haud lentē prōgrediēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "timēns",
+     "dux",
+     "haud",
+     "lentē",
+     "prōgrediēbātur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-t4",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "The soldiers were tired; they nevertheless stormed the walls.",
+    "answer": "Mīlitēs fessī erant; mūrōs tamen expugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "fessī",
+     "erant",
+     "mūrōs",
+     "tamen",
+     "expugnāvērunt"
+    ]
+   },
+   {
+    "prompt": "This plan, however, seemed better to the older senators.",
+    "answer": "Hoc vērō cōnsilium senātōribus nātū maiōribus melius vīsum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "vērō",
+     "cōnsilium",
+     "senātōribus",
+     "nātū",
+     "maiōribus",
+     "melius",
+     "vīsum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Though wounded, the brave man nevertheless did not yield.",
+    "answer": "Quamquam vulnerātus, vir fortis tamen nōn cessit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "vulnerātus",
+     "vir",
+     "fortis",
+     "tamen",
+     "nōn",
+     "cessit"
+    ]
+   },
+   {
+    "prompt": "You indeed praise virtue, but you never practice it.",
+    "answer": "Tū vērō virtūtem laudās, sed eam numquam colis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tū",
+     "vērō",
+     "virtūtem",
+     "laudās",
+     "sed",
+     "eam",
+     "numquam",
+     "colis"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-t5",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "Even the boldest, when they had seen the flames, feared death.",
+    "answer": "Etiam audācissimī, cum flammās vīdissent, mortem timuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Etiam",
+     "audācissimī",
+     "cum",
+     "flammās",
+     "vīdissent",
+     "mortem",
+     "timuērunt"
+    ]
+   },
+   {
+    "prompt": "The mother too, moved by grief, wept for her lost son.",
+    "answer": "Māter quoque, dolōre commōta, fīlium āmissum flēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māter",
+     "quoque",
+     "dolōre",
+     "commōta",
+     "fīlium",
+     "āmissum",
+     "flēvit"
+    ]
+   },
+   {
+    "prompt": "That speech indeed pleased the crowd more than the general had hoped.",
+    "answer": "Ea ōrātiō quidem multitūdinī magis placuit quam dux spērāverat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ea",
+     "ōrātiō",
+     "quidem",
+     "multitūdinī",
+     "magis",
+     "placuit",
+     "quam",
+     "dux",
+     "spērāverat"
+    ]
+   },
+   {
+    "prompt": "Not even in extreme peril did the consul lose his courage.",
+    "answer": "Nē in extrēmō quidem perīculō cōnsul animum āmīsit.",
     "kind": "translate-en-la",
     "vocab": [
      "Nē",
-     "nocte",
+     "in",
+     "extrēmō",
      "quidem",
-     "vigilantēs",
-     "custōdēs",
-     "mūrōs",
-     "relinquēbant"
+     "perīculō",
+     "cōnsul",
+     "animum",
+     "āmīsit"
     ]
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-t6",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
    {
-    "prompt": "The fleeing enemy, once the town had been plundered, left nothing behind.",
-    "answer": "Hostis fugāx, oppidō dīreptō, nihil reliquit.",
+    "prompt": "The wretched man had nothing, neither bread nor shelter.",
+    "answer": "Miser homō nihil habēbat, neque pānem neque tēctum.",
     "kind": "translate-en-la",
     "vocab": [
-     "Hostis",
-     "fugāx",
-     "oppidō",
-     "dīreptō",
+     "Miser",
+     "homō",
      "nihil",
-     "reliquit"
+     "habēbat",
+     "neque",
+     "pānem",
+     "tēctum"
     ]
    },
    {
-    "prompt": "That reward too, abundant and splendid, the victor deserved.",
-    "answer": "Illud quoque praemium, cōpiōsum et splendidum, victor meruit.",
+    "prompt": "No one ever gave anything to the greedy tyrant.",
+    "answer": "Nēmō umquam avārō tyrannō quicquam dedit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Illud",
-     "quoque",
-     "praemium",
-     "cōpiōsum",
-     "et",
-     "splendidum",
-     "victor",
-     "meruit"
+     "Nēmō",
+     "umquam",
+     "avārō",
+     "tyrannō",
+     "quicquam",
+     "dedit"
     ]
    },
    {
-    "prompt": "The witness, however, dared to affirm nothing, not even the truth.",
-    "answer": "Testis vērō nihil, nē vērum quidem, testārī audēbat.",
+    "prompt": "Never did the general, neither by threats nor by gifts, betray his allies.",
+    "answer": "Numquam dux, neque minīs neque dōnīs, sociōs prōdidit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Testis",
-     "vērō",
-     "nihil",
-     "nē",
-     "vērum",
+     "Numquam",
+     "dux",
+     "neque",
+     "minīs",
+     "dōnīs",
+     "sociōs",
+     "prōdidit"
+    ]
+   },
+   {
+    "prompt": "Some, in fact, allotted their wealth to neither the poor nor the church.",
+    "answer": "Nōnnūllī quidem dīvitiās suās neque pauperibus neque ecclesiae tribuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōnnūllī",
      "quidem",
-     "testārī",
-     "audēbat"
+     "dīvitiās",
+     "suās",
+     "neque",
+     "pauperibus",
+     "ecclesiae",
+     "tribuērunt"
     ]
    }
   ]

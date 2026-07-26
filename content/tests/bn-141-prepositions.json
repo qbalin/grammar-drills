@@ -4,44 +4,56 @@
   "sectionId": "bn-141-prepositions",
   "questions": [
    {
-    "prompt": "The dog was lying behind the door, watching the guests.",
-    "answer": "Canis pōne iānuam iacēbat, hospitēs spectāns.",
+    "prompt": "The soldiers marched across the river toward the enemy camp.",
+    "answer": "Mīlitēs trāns flūmen ad castra hostium contendērunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Canis",
-     "pōne",
-     "iānuam",
-     "iacēbat",
-     "hospitēs",
-     "spectāns"
-    ]
-   },
-   {
-    "prompt": "Beyond the river and outside the city the exiles were wandering.",
-    "answer": "Ultrā flūmen et extrā urbem exsulēs errābant.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ultrā",
+     "Mīlitēs",
+     "trāns",
      "flūmen",
-     "et",
-     "extrā",
-     "urbem",
-     "exsulēs",
-     "errābant"
+     "ad",
+     "castra",
+     "hostium",
+     "contendērunt"
     ]
    },
    {
-    "prompt": "The philosopher spoke about virtue against the opinion of the crowd.",
-    "answer": "Philosophus dē virtūte contrā opīniōnem vulgī dīxit.",
+    "prompt": "On account of the storm we remained within the walls.",
+    "answer": "Propter tempestātem intrā mūrōs mānsimus.",
     "kind": "translate-en-la",
     "vocab": [
-     "Philosophus",
-     "dē",
-     "virtūte",
-     "contrā",
-     "opīniōnem",
-     "vulgī",
-     "dīxit"
+     "Propter",
+     "tempestātem",
+     "intrā",
+     "mūrōs",
+     "mānsimus"
+    ]
+   },
+   {
+    "prompt": "Before dawn the merchants set out toward Rome.",
+    "answer": "Ante lūcem mercātōrēs Rōmam versus profectī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ante",
+     "lūcem",
+     "mercātōrēs",
+     "Rōmam",
+     "versus",
+     "profectī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The farmer, worn out by the heat, sat near the spring.",
+    "answer": "Agricola, aestū cōnfectus, prope fontem sēdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "aestū",
+     "cōnfectus",
+     "prope",
+     "fontem",
+     "sēdit"
     ]
    }
   ]
@@ -51,58 +63,60 @@
   "sectionId": "bn-141-prepositions",
   "questions": [
    {
-    "prompt": "In time of war the highest power lies in the hands of the consul.",
-    "answer": "Bellī tempore summa potestās penes cōnsulem est.",
+    "prompt": "Through the whole night the watchmen guarded the gates against thieves.",
+    "answer": "Per tōtam noctem vigilēs portās contrā fūrēs custōdiēbant.",
     "kind": "translate-en-la",
     "vocab": [
-     "Bellī",
-     "tempore",
-     "summa",
-     "potestās",
-     "penes",
-     "cōnsulem",
-     "est"
+     "Per",
+     "tōtam",
+     "noctem",
+     "vigilēs",
+     "portās",
+     "contrā",
+     "fūrēs",
+     "custōdiēbant"
     ]
    },
    {
-    "prompt": "The wise judge decided everything according to the law.",
-    "answer": "Iūdex sapiēns omnia secundum lēgem dēcrēvit.",
+    "prompt": "Beyond the mountains, below the citadel, a wealthy king ruled.",
+    "answer": "Ultrā montēs, īnfrā arcem, rēx opulentus dominābātur.",
     "kind": "translate-en-la",
     "vocab": [
-     "Iūdex",
-     "sapiēns",
-     "omnia",
-     "secundum",
-     "lēgem",
-     "dēcrēvit"
-    ]
-   },
-   {
-    "prompt": "The eagle flew high above the clouds and over the mountains.",
-    "answer": "Aquila altē suprā nūbēs et super montēs volāvit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Aquila",
-     "altē",
-     "suprā",
-     "nūbēs",
-     "et",
-     "super",
+     "Ultrā",
      "montēs",
-     "volāvit"
+     "īnfrā",
+     "arcem",
+     "rēx",
+     "opulentus",
+     "dominābātur"
     ]
    },
    {
-    "prompt": "On this side of the river the farmers cultivate fertile fields.",
-    "answer": "Cis flūmen agricolae agrōs fertilēs colunt.",
+    "prompt": "After the battle the general led his troops around the city.",
+    "answer": "Post proelium dux cōpiās circum urbem dūxit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Cis",
-     "flūmen",
-     "agricolae",
-     "agrōs",
-     "fertilēs",
-     "colunt"
+     "Post",
+     "proelium",
+     "dux",
+     "cōpiās",
+     "circum",
+     "urbem",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "The poet sang a song about love among his friends.",
+    "answer": "Poēta apud amīcōs canticum dē amōre cecinit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "apud",
+     "amīcōs",
+     "canticum",
+     "dē",
+     "amōre",
+     "cecinit"
     ]
    }
   ]
@@ -112,47 +126,61 @@
   "sectionId": "bn-141-prepositions",
   "questions": [
    {
-    "prompt": "Below the citadel, this side of the river, the enemy pitched camp.",
-    "answer": "Īnfrā arcem, citrā flūmen, hostēs castra posuērunt.",
+    "prompt": "Near the temple, before the altar, the priest sacrificed a white bull.",
+    "answer": "Jūxtā templum, ante āram, sacerdōs candidum taurum immolāvit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Īnfrā",
-     "arcem",
-     "citrā",
+     "Jūxtā",
+     "templum",
+     "ante",
+     "āram",
+     "sacerdōs",
+     "candidum",
+     "taurum",
+     "immolāvit"
+    ]
+   },
+   {
+    "prompt": "The maiden fled beyond the fields, past the river, toward the woods.",
+    "answer": "Virgō ultrā agrōs, praeter flūmen, ad silvās fūgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "ultrā",
+     "agrōs",
+     "praeter",
      "flūmen",
-     "hostēs",
-     "castra",
-     "posuērunt"
+     "ad",
+     "silvās",
+     "fūgit"
     ]
    },
    {
-    "prompt": "About midnight the fleet was carried across the stormy sea.",
-    "answer": "Circiter mediam noctem classis trāns mare turbidum vēcta est.",
+    "prompt": "On account of his wounds the leader lay beneath a tree.",
+    "answer": "Ob vulnera dux subter arborem jacēbat.",
     "kind": "translate-en-la",
     "vocab": [
-     "Circiter",
-     "mediam",
-     "noctem",
-     "classis",
-     "trāns",
-     "mare",
-     "turbidum",
-     "vēcta",
-     "est"
+     "Ob",
+     "vulnera",
+     "dux",
+     "subter",
+     "arborem",
+     "jacēbat"
     ]
    },
    {
-    "prompt": "Around the walls, above the gate, the enemy's spoils were hanging.",
-    "answer": "Circā moenia, suprā portam, spolia hostium pendēbant.",
+    "prompt": "The messenger ran through the forest even to the walls of the city.",
+    "answer": "Nūntius per silvam ūsque ad mūrōs urbis cucurrit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Circā",
-     "moenia",
-     "suprā",
-     "portam",
-     "spolia",
-     "hostium",
-     "pendēbant"
+     "Nūntius",
+     "per",
+     "silvam",
+     "ūsque",
+     "ad",
+     "mūrōs",
+     "urbis",
+     "cucurrit"
     ]
    }
   ]
@@ -162,48 +190,177 @@
   "sectionId": "bn-141-prepositions",
   "questions": [
    {
-    "prompt": "Against the excellent general no one dared to advance beyond the gates.",
-    "answer": "Adversus excellentem ducem nēmō ultrā portās prōgredī ausus est.",
+    "prompt": "Against so many enemies the small band fought within the camp.",
+    "answer": "Adversus tot hostēs parva manus intrā castra pugnāvit.",
     "kind": "translate-en-la",
     "vocab": [
      "Adversus",
-     "excellentem",
-     "ducem",
-     "nēmō",
-     "ultrā",
-     "portās",
-     "prōgredī",
-     "ausus",
-     "est"
+     "tot",
+     "hostēs",
+     "parva",
+     "manus",
+     "intrā",
+     "castra",
+     "pugnāvit"
     ]
    },
    {
-    "prompt": "The birds within the cage sang about the hour of dawn.",
-    "answer": "Avēs intrā caveam circā hōram lūcis cantābant.",
+    "prompt": "Behind the hill, on this side of the stream, the horsemen hid themselves.",
+    "answer": "Pōne collem, cis rīvum, equitēs sē occultāvērunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Avēs",
-     "intrā",
-     "caveam",
-     "circā",
-     "hōram",
-     "lūcis",
-     "cantābant"
+     "Pōne",
+     "collem",
+     "cis",
+     "rīvum",
+     "equitēs",
+     "sē",
+     "occultāvērunt"
     ]
    },
    {
-    "prompt": "Toward his friends the sick man showed gratitude, though oppressed by a grave illness.",
-    "answer": "Ergā amīcōs aeger grātiam praestitit, gravī morbō oppressus.",
+    "prompt": "The sailors, wearied by the sea, steered their ship past the rocks.",
+    "answer": "Nautae, marī fessī, nāvem praeter saxa dīrēxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nautae",
+     "marī",
+     "fessī",
+     "nāvem",
+     "praeter",
+     "saxa",
+     "dīrēxērunt"
+    ]
+   },
+   {
+    "prompt": "About a thousand men gathered around the temple.",
+    "answer": "Circiter mīlle virī circā templum convēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Circiter",
+     "mīlle",
+     "virī",
+     "circā",
+     "templum",
+     "convēnērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-141-prepositions-t5",
+  "sectionId": "bn-141-prepositions",
+  "questions": [
+   {
+    "prompt": "The army, after the victory, marched even to the sea.",
+    "answer": "Exercitus, post victōriam, ūsque ad mare contendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Exercitus",
+     "post",
+     "victōriam",
+     "ūsque",
+     "ad",
+     "mare",
+     "contendit"
+    ]
+   },
+   {
+    "prompt": "Between the two rivers, on this side of the mountains, they founded a town.",
+    "answer": "Inter duo flūmina, citrā montēs, oppidum condidērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Inter",
+     "duo",
+     "flūmina",
+     "citrā",
+     "montēs",
+     "oppidum",
+     "condidērunt"
+    ]
+   },
+   {
+    "prompt": "The power lay in the hands of a cruel tyrant.",
+    "answer": "Potestās penes crūdēlem tyrannum erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Potestās",
+     "penes",
+     "crūdēlem",
+     "tyrannum",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "Toward the citizens the consul showed great kindness.",
+    "answer": "Ergā cīvēs cōnsul magnam benignitātem praestitit.",
     "kind": "translate-en-la",
     "vocab": [
      "Ergā",
-     "amīcōs",
-     "aeger",
-     "grātiam",
-     "praestitit",
-     "gravī",
-     "morbō",
-     "oppressus"
+     "cīvēs",
+     "cōnsul",
+     "magnam",
+     "benignitātem",
+     "praestitit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-141-prepositions-t6",
+  "sectionId": "bn-141-prepositions",
+  "questions": [
+   {
+    "prompt": "Outside the gates, above the plain, an eagle flew.",
+    "answer": "Extrā portās, suprā campum, aquila volāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Extrā",
+     "portās",
+     "suprā",
+     "campum",
+     "aquila",
+     "volāvit"
+    ]
+   },
+   {
+    "prompt": "The old man walked toward the forum, near his son.",
+    "answer": "Senex ad forum, apud fīlium, ambulābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "ad",
+     "forum",
+     "apud",
+     "fīlium",
+     "ambulābat"
+    ]
+   },
+   {
+    "prompt": "Over the walls and beyond the towers the flames rose.",
+    "answer": "Super mūrōs et ultrā turrēs flammae surrēxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Super",
+     "mūrōs",
+     "et",
+     "ultrā",
+     "turrēs",
+     "flammae",
+     "surrēxērunt"
+    ]
+   },
+   {
+    "prompt": "According to the law, the citizens gathered before the temple.",
+    "answer": "Secundum lēgem cīvēs ante templum convēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Secundum",
+     "lēgem",
+     "cīvēs",
+     "ante",
+     "templum",
+     "convēnērunt"
     ]
    }
   ]

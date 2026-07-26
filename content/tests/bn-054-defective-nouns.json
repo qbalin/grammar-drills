@@ -4,47 +4,65 @@
   "sectionId": "bn-054-defective-nouns",
   "questions": [
    {
-    "prompt": "Copper and gold gleam brightly in the merchant's dark shop.",
-    "answer": "Aes et aurum in tabernā obscūrā mercātōris clārē fulgent.",
+    "prompt": "When the soldiers had pitched camp near Thebes, they feared an ambush in the narrow pass.",
+    "answer": "Cum mīlitēs castra prope Thēbās posuissent, īnsidiās in angustiīs timēbant.",
     "kind": "translate-en-la",
     "vocab": [
-     "Aes",
-     "et",
-     "aurum",
+     "Cum",
+     "mīlitēs",
+     "castra",
+     "prope",
+     "Thēbās",
+     "posuissent",
+     "īnsidiās",
      "in",
-     "tabernā",
-     "obscūrā",
-     "mercātōris",
-     "clārē",
-     "fulgent"
+     "angustiīs",
+     "timēbant"
     ]
    },
    {
-    "prompt": "The infant, once the warm milk had been drunk, slept in the cradle.",
-    "answer": "Īnfāns, lacte calidō pōtō, in cūnīs dormīvit.",
+    "prompt": "The ancestors, whom we praise, defended the city walls with great courage.",
+    "answer": "Majōrēs, quōs laudāmus, moenia urbis magnā virtūte dēfendērunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Īnfāns",
-     "lacte",
-     "calidō",
-     "pōtō",
-     "in",
-     "cūnīs",
-     "dormīvit"
+     "Majōrēs",
+     "quōs",
+     "laudāmus",
+     "moenia",
+     "urbis",
+     "magnā",
+     "virtūte",
+     "dēfendērunt"
     ]
    },
    {
-    "prompt": "We admire the goodness and patience of that famous old man.",
-    "answer": "Illīus senis clārī bonitātem et patientiam admīrāmur.",
+    "prompt": "After the wedding the riches of the family were divided among the children.",
+    "answer": "Post nūptiās dīvitiae familiae inter līberōs dīvīsae sunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Illīus",
-     "senis",
-     "clārī",
-     "bonitātem",
+     "Post",
+     "nūptiās",
+     "dīvitiae",
+     "familiae",
+     "inter",
+     "līberōs",
+     "dīvīsae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "In the darkness the enemy prepared their weapons and set an ambush.",
+    "answer": "In tenebrīs hostēs arma parāvērunt et īnsidiās collocāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "tenebrīs",
+     "hostēs",
+     "arma",
+     "parāvērunt",
      "et",
-     "patientiam",
-     "admīrāmur"
+     "īnsidiās",
+     "collocāvērunt"
     ]
    }
   ]
@@ -54,61 +72,62 @@
   "sectionId": "bn-054-defective-nouns",
   "questions": [
    {
-    "prompt": "It is not right to betray friends in a time of danger.",
-    "answer": "Amīcōs in perīculō prōdere nefās est.",
+    "prompt": "It is right to spare the conquered, but wrong to betray a friend.",
+    "answer": "Fās est victīs parcere, sed nefās amīcum prōdere.",
     "kind": "translate-en-la",
     "vocab": [
-     "Amīcōs",
-     "in",
-     "perīculō",
-     "prōdere",
+     "Fās",
+     "est",
+     "victīs",
+     "parcere",
+     "sed",
      "nefās",
-     "est"
+     "amīcum",
+     "prōdere"
     ]
    },
    {
-    "prompt": "Nothing pleases the tired soldier more than a long sleep.",
-    "answer": "Nihil fessō mīlitī magis quam longus somnus placet.",
+    "prompt": "Of her own accord the queen offered help to the exiles at dawn.",
+    "answer": "Suā sponte rēgīna māne exsulibus opem obtulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Suā",
+     "sponte",
+     "rēgīna",
+     "māne",
+     "exsulibus",
+     "opem",
+     "obtulit"
+    ]
+   },
+   {
+    "prompt": "Nothing is sweeter than freedom, as our elders used to say.",
+    "answer": "Nihil lībertāte dulcius est, ut majōrēs nostrī dīcere solēbant.",
     "kind": "translate-en-la",
     "vocab": [
      "Nihil",
-     "fessō",
-     "mīlitī",
-     "magis",
-     "quam",
-     "longus",
-     "somnus",
-     "placet"
+     "lībertāte",
+     "dulcius",
+     "est",
+     "ut",
+     "majōrēs",
+     "nostrī",
+     "dīcere",
+     "solēbant"
     ]
    },
    {
-    "prompt": "The general's camp was like a huge city on the hill.",
-    "answer": "Castra ducis īnstar ingentis urbis in colle erant.",
+    "prompt": "The tower stood like a mountain against the raging storm.",
+    "answer": "Turris īnstar montis adversus saevientem tempestātem stābat.",
     "kind": "translate-en-la",
     "vocab": [
-     "Castra",
-     "ducis",
+     "Turris",
      "īnstar",
-     "ingentis",
-     "urbis",
-     "in",
-     "colle",
-     "erant"
-    ]
-   },
-   {
-    "prompt": "The gods grant that it is right for us to return home safe.",
-    "answer": "Dī concēdunt nōbīs fās esse salvōs domum redīre.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Dī",
-     "concēdunt",
-     "nōbīs",
-     "fās",
-     "esse",
-     "salvōs",
-     "domum",
-     "redīre"
+     "montis",
+     "adversus",
+     "saevientem",
+     "tempestātem",
+     "stābat"
     ]
    }
   ]
@@ -118,59 +137,62 @@
   "sectionId": "bn-054-defective-nouns",
   "questions": [
    {
-    "prompt": "With all his strength the helmsman withstood the force of the waves.",
-    "answer": "Gubernātor omnibus vīribus vim flūctuum sustinuit.",
+    "prompt": "The craftsman melted the copper and the silver to make a statue.",
+    "answer": "Faber aes et argentum liquefēcit ut statuam faceret.",
     "kind": "translate-en-la",
     "vocab": [
-     "Gubernātor",
-     "omnibus",
-     "vīribus",
-     "vim",
-     "flūctuum",
-     "sustinuit"
+     "Faber",
+     "aes",
+     "et",
+     "argentum",
+     "liquefēcit",
+     "ut",
+     "statuam",
+     "faceret"
     ]
    },
    {
-    "prompt": "Without any resources the exiles begged help from the king.",
-    "answer": "Sine ūllīs opibus exsulēs auxilium ā rēge precātī sunt.",
+    "prompt": "Milk and gold were offered to the gods before the battle.",
+    "answer": "Lac et aurum deīs ante proelium oblāta sunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Sine",
-     "ūllīs",
-     "opibus",
-     "exsulēs",
-     "auxilium",
-     "ā",
-     "rēge",
-     "precātī",
+     "Lac",
+     "et",
+     "aurum",
+     "deīs",
+     "ante",
+     "proelium",
+     "oblāta",
      "sunt"
     ]
    },
    {
-    "prompt": "Moved by the mother's prayers, the judge freed the young man.",
-    "answer": "Precibus mātris commōtus, arbiter iuvenem līberāvit.",
+    "prompt": "The bronzes displayed in the temple were admired by all the citizens.",
+    "answer": "Aera in templō exposita ab omnibus cīvibus laudābantur.",
     "kind": "translate-en-la",
     "vocab": [
-     "Precibus",
-     "mātris",
-     "commōtus",
-     "arbiter",
-     "iuvenem",
-     "līberāvit"
+     "Aera",
+     "in",
+     "templō",
+     "exposita",
+     "ab",
+     "omnibus",
+     "cīvibus",
+     "laudābantur"
     ]
    },
    {
-    "prompt": "Of his own accord the brave leader offered help to the allies.",
-    "answer": "Suā sponte dux fortis auxilium sociīs obtulit.",
+    "prompt": "Such cases of ignorance among the young alarmed the wise old man.",
+    "answer": "Tālēs ignōrantiae inter juvenēs sapientem senem terrēbant.",
     "kind": "translate-en-la",
     "vocab": [
-     "Suā",
-     "sponte",
-     "dux",
-     "fortis",
-     "auxilium",
-     "sociīs",
-     "obtulit"
+     "Tālēs",
+     "ignōrantiae",
+     "inter",
+     "juvenēs",
+     "sapientem",
+     "senem",
+     "terrēbant"
     ]
    }
   ]
@@ -180,58 +202,182 @@
   "sectionId": "bn-054-defective-nouns",
   "questions": [
    {
-    "prompt": "Rome has produced few men like Cato in our age.",
-    "answer": "Rōma paucōs Catōnēs nostrā aetāte genuit.",
+    "prompt": "On the Kalends of March the consul announced a truce to the enemy.",
+    "answer": "Kalendīs Mārtiīs cōnsul indūtiās hostibus nūntiāvit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Rōma",
-     "paucōs",
-     "Catōnēs",
-     "nostrā",
-     "aetāte",
-     "genuit"
+     "Kalendīs",
+     "Mārtiīs",
+     "cōnsul",
+     "indūtiās",
+     "hostibus",
+     "nūntiāvit"
     ]
    },
    {
-    "prompt": "The king collected bronzes and woods from every province.",
-    "answer": "Rēx aera et ligna ex omnī prōvinciā collēgit.",
+    "prompt": "During the Megalesian festival the citizens hurried to Athens.",
+    "answer": "Per Megalēsia cīvēs Athēnās contendērunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Rēx",
-     "aera",
-     "et",
-     "ligna",
-     "ex",
-     "omnī",
-     "prōvinciā",
-     "collēgit"
+     "Per",
+     "Megalēsia",
+     "cīvēs",
+     "Athēnās",
+     "contendērunt"
     ]
    },
    {
-    "prompt": "At Athens the orators praised the ancient justice of the laws.",
-    "answer": "Athēnīs ōrātōrēs antīquam lēgum iustitiam laudāvērunt.",
+    "prompt": "Before the Ides the general led his forces to Pompeii.",
+    "answer": "Ante Īdūs dux cōpiās suās Pompejōs dūxit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Athēnīs",
-     "ōrātōrēs",
-     "antīquam",
-     "lēgum",
-     "iustitiam",
-     "laudāvērunt"
+     "Ante",
+     "Īdūs",
+     "dux",
+     "cōpiās",
+     "suās",
+     "Pompejōs",
+     "dūxit"
     ]
    },
    {
-    "prompt": "The Alps, covered with deep snow, terrified the weary army.",
-    "answer": "Alpēs, altā nive tēctae, fessum exercitum terruērunt.",
+    "prompt": "At Leuctra the Thebans overcame the Spartans in a fierce battle.",
+    "answer": "Apud Leuctra Thēbānī Lacedaemoniōs ācrī proeliō vīcērunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Alpēs",
-     "altā",
-     "nive",
-     "tēctae",
-     "fessum",
-     "exercitum",
+     "Apud",
+     "Leuctra",
+     "Thēbānī",
+     "Lacedaemoniōs",
+     "ācrī",
+     "proeliō",
+     "vīcērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-054-defective-nouns-t5",
+  "sectionId": "bn-054-defective-nouns",
+  "questions": [
+   {
+    "prompt": "The ambushes hidden in the woods terrified the marching soldiers.",
+    "answer": "Īnsidiae in silvīs occultae mīlitēs iter facientēs terruērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īnsidiae",
+     "in",
+     "silvīs",
+     "occultae",
+     "mīlitēs",
+     "iter",
+     "facientēs",
      "terruērunt"
+    ]
+   },
+   {
+    "prompt": "The household gods were carried out through the doors of the burning house.",
+    "answer": "Penātēs per forēs ārdentis domūs ēlātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Penātēs",
+     "per",
+     "forēs",
+     "ārdentis",
+     "domūs",
+     "ēlātī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "After the funeral rites the ancestors' ashes were placed in the tomb.",
+    "answer": "Post exsequiās majōrum cinerēs in sepulcrō positī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "exsequiās",
+     "majōrum",
+     "cinerēs",
+     "in",
+     "sepulcrō",
+     "positī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The narrow passes were guarded by armed men throughout the whole night.",
+    "answer": "Angustiae ab armātīs virīs per tōtam noctem custōdiēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Angustiae",
+     "ab",
+     "armātīs",
+     "virīs",
+     "per",
+     "tōtam",
+     "noctem",
+     "custōdiēbantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-054-defective-nouns-t6",
+  "sectionId": "bn-054-defective-nouns",
+  "questions": [
+   {
+    "prompt": "Men like the Catos are rare in these corrupt times.",
+    "answer": "Catōnēs hīs corruptīs temporibus rārī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catōnēs",
+     "hīs",
+     "corruptīs",
+     "temporibus",
+     "rārī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "It is not lawful to violate the truce which the elders swore.",
+    "answer": "Nefās est indūtiās violāre quās majōrēs jūrāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nefās",
+     "est",
+     "indūtiās",
+     "violāre",
+     "quās",
+     "majōrēs",
+     "jūrāvērunt"
+    ]
+   },
+   {
+    "prompt": "The riches gained by ambush brought disgrace upon the whole family.",
+    "answer": "Dīvitiae īnsidiīs partae tōtī familiae dēdecus attulērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīvitiae",
+     "īnsidiīs",
+     "partae",
+     "tōtī",
+     "familiae",
+     "dēdecus",
+     "attulērunt"
+    ]
+   },
+   {
+    "prompt": "By her own choice the maiden entered the temple at dawn on the Ides.",
+    "answer": "Suā sponte virgō Īdibus māne templum intrāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Suā",
+     "sponte",
+     "virgō",
+     "Īdibus",
+     "māne",
+     "templum",
+     "intrāvit"
     ]
    }
   ]

@@ -4,57 +4,64 @@
   "sectionId": "bn-278-concessive-subjunctive",
   "questions": [
    {
-    "prompt": "Granted that the night was dark, the scouts found the hidden path.",
-    "answer": "Fuerit nox ātra, explōrātōrēs occultum callem invēnērunt.",
+    "prompt": "Granted that the thief is wicked, he will never escape the guards' hands.",
+    "answer": "Sit fūr improbus, numquam tamen manūs custōdum effugiet.",
     "kind": "translate-en-la",
     "vocab": [
-     "Fuerit",
-     "nox",
-     "ātra",
-     "explōrātōrēs",
-     "occultum",
-     "callem",
-     "invēnērunt"
+     "sit",
+     "fūr",
+     "improbus",
+     "numquam",
+     "tamen",
+     "manūs",
+     "custōdum",
+     "effugiet"
     ]
    },
    {
-    "prompt": "Grant that fortune is fickle; the wise man fears nothing.",
-    "answer": "Sit fortūna incōnstāns; sapiēns nihil timet.",
+    "prompt": "I grant that the general was wounded, yet he refused to desert the battle-line.",
+    "answer": "Fuerit dux sauciātus, aciem tamen dēserere nōluit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Sit",
-     "fortūna",
-     "incōnstāns",
-     "sapiēns",
-     "nihil",
-     "timet"
+     "fuerit",
+     "dux",
+     "sauciātus",
+     "aciem",
+     "tamen",
+     "dēserere",
+     "nōluit"
     ]
    },
    {
-    "prompt": "Granted that the wounds are grievous, the soldier refuses to yield.",
-    "answer": "Sint vulnera gravia, mīles cēdere recūsat.",
+    "prompt": "I grant there is no strength in old age; yet counsel and reason survive.",
+    "answer": "Nē sint in senectūte vīrēs, cōnsilium tamen et ratiō supersunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Sint",
-     "vulnera",
-     "gravia",
-     "mīles",
-     "cēdere",
-     "recūsat"
+     "nē",
+     "sint",
+     "in",
+     "senectūte",
+     "vīrēs",
+     "cōnsilium",
+     "tamen",
+     "et",
+     "ratiō",
+     "supersunt"
     ]
    },
    {
-    "prompt": "Grant that they captured the city; they could not hold it long.",
-    "answer": "Cēperint urbem; eam diū tenēre nōn potuērunt.",
+    "prompt": "I grant the young lad was troublesome to others; when did he begin to be so to you?",
+    "answer": "Fuerit adulescentulus aliīs molestus; tibi quandō esse coepit?",
     "kind": "translate-en-la",
     "vocab": [
-     "Cēperint",
-     "urbem",
-     "eam",
-     "diū",
-     "tenēre",
-     "nōn",
-     "potuērunt"
+     "fuerit",
+     "adulescentulus",
+     "aliīs",
+     "molestus",
+     "tibi",
+     "quandō",
+     "esse",
+     "coepit"
     ]
    }
   ]
@@ -64,47 +71,64 @@
   "sectionId": "bn-278-concessive-subjunctive",
   "questions": [
    {
-    "prompt": "Granted that the winter is harsh, the farmer tends his golden fields.",
-    "answer": "Sit hiems aspera, agricola aureōs agrōs colit.",
+    "prompt": "Grant that what you tell is true; it will still not move me.",
+    "answer": "Sit hoc vērum quod nārrās, mē tamen nōn movēbit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Sit",
-     "hiems",
-     "aspera",
-     "agricola",
-     "aureōs",
-     "agrōs",
-     "colit"
-    ]
-   },
-   {
-    "prompt": "Grant that the orator spoke falsely; the crowd believed him eagerly.",
-    "answer": "Locūtus sit ōrātor falsō; turba eī cupidē crēdidit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Locūtus",
      "sit",
-     "ōrātor",
-     "falsō",
-     "turba",
-     "eī",
-     "cupidē",
-     "crēdidit"
+     "hoc",
+     "vērum",
+     "quod",
+     "nārrās",
+     "mē",
+     "tamen",
+     "nōn",
+     "movēbit"
     ]
    },
    {
-    "prompt": "Granted that there are no ships in the harbor, the merchants do not despair.",
-    "answer": "Nē sint nāvēs in portū, mercātōrēs nōn dēspērant.",
+    "prompt": "I grant the judge does not believe me; yet he will hear the witnesses themselves.",
+    "answer": "Nē crēdat mihi iūdex, testēs tamen ipsōs audiet.",
     "kind": "translate-en-la",
     "vocab": [
-     "Nē",
-     "sint",
-     "nāvēs",
-     "in",
-     "portū",
-     "mercātōrēs",
-     "nōn",
-     "dēspērant"
+     "nē",
+     "crēdat",
+     "mihi",
+     "iūdex",
+     "testēs",
+     "tamen",
+     "ipsōs",
+     "audiet"
+    ]
+   },
+   {
+    "prompt": "I grant that poet was once obscure; today he is praised by everyone.",
+    "answer": "Fuerit ille poēta obscūrus; hodiē tamen ab omnibus laudātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fuerit",
+     "ille",
+     "poēta",
+     "obscūrus",
+     "hodiē",
+     "tamen",
+     "ab",
+     "omnibus",
+     "laudātur"
+    ]
+   },
+   {
+    "prompt": "Grant the freedwoman is poor; she nevertheless lives with a free spirit.",
+    "answer": "Sit liberta pauper, animō tamen līberō vīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sit",
+     "liberta",
+     "pauper",
+     "animō",
+     "tamen",
+     "līberō",
+     "vīvit"
     ]
    }
   ]
@@ -114,42 +138,62 @@
   "sectionId": "bn-278-concessive-subjunctive",
   "questions": [
    {
-    "prompt": "Granted that the gods are silent, the priest continues the sacred rites.",
-    "answer": "Sint diī tacitī, sacerdōs sacra prōsequitur.",
+    "prompt": "I grant I possess no gold; yet I possess faithful friends.",
+    "answer": "Nē habeam aurum, amīcōs tamen fidēlēs possideō.",
     "kind": "translate-en-la",
     "vocab": [
-     "Sint",
-     "diī",
-     "tacitī",
-     "sacerdōs",
-     "sacra",
-     "prōsequitur"
+     "nē",
+     "habeam",
+     "aurum",
+     "amīcōs",
+     "tamen",
+     "fidēlēs",
+     "possideō"
     ]
    },
    {
-    "prompt": "Grant that the mountain is steep; the eager travelers climb it.",
-    "answer": "Sit mōns arduus; viātōrēs cupidī eum ascendunt.",
+    "prompt": "I grant the enemy was cruel; yet at last he released the captives.",
+    "answer": "Fuerit hostis crūdēlis; captīvōs tamen tandem dīmīsit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Sit",
-     "mōns",
-     "arduus",
-     "viātōrēs",
-     "cupidī",
-     "eum",
-     "ascendunt"
+     "fuerit",
+     "hostis",
+     "crūdēlis",
+     "captīvōs",
+     "tamen",
+     "tandem",
+     "dīmīsit"
     ]
    },
    {
-    "prompt": "Grant that the letters have been lost; the messenger remembers the words.",
-    "answer": "Perierint litterae; nūntius verba meminit.",
+    "prompt": "Grant the road is long and steep through the mountains; I will still lead you.",
+    "answer": "Sit via longa et per montēs ardua, tē tamen dūcam.",
     "kind": "translate-en-la",
     "vocab": [
-     "Perierint",
-     "litterae",
-     "nūntius",
-     "verba",
-     "meminit"
+     "sit",
+     "via",
+     "longa",
+     "et",
+     "per",
+     "montēs",
+     "ardua",
+     "tē",
+     "tamen",
+     "dūcam"
+    ]
+   },
+   {
+    "prompt": "I grant the orator does not win by his skill; yet he prevails by his cause.",
+    "answer": "Nē vincat orātor arte, causā tamen superat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "vincat",
+     "orātor",
+     "arte",
+     "causā",
+     "tamen",
+     "superat"
     ]
    }
   ]
@@ -159,46 +203,197 @@
   "sectionId": "bn-278-concessive-subjunctive",
   "questions": [
    {
-    "prompt": "Granted that the sea rages, the fearless helmsman holds his course.",
-    "answer": "Saeviat mare, impavidus gubernātor cursum tenet.",
+    "prompt": "I grant the slave was once a runaway; now he serves his master most faithfully.",
+    "answer": "Fuerit servus fugitīvus; nunc tamen dominō fidēlissimē servit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Saeviat",
-     "mare",
-     "impavidus",
-     "gubernātor",
-     "cursum",
-     "tenet"
+     "fuerit",
+     "servus",
+     "fugitīvus",
+     "nunc",
+     "tamen",
+     "dominō",
+     "fidēlissimē",
+     "servit"
     ]
    },
    {
-    "prompt": "Granted that there is no water in the well, the herds drink from the stream.",
-    "answer": "Nē sit aqua in puteō, gregēs ē rīvō bibunt.",
+    "prompt": "Grant the storm is savage; the sailors will still not furl the sails.",
+    "answer": "Sit tempestās atrōx, nautae tamen vēla nōn contrahent.",
     "kind": "translate-en-la",
     "vocab": [
-     "Nē",
      "sit",
-     "aqua",
-     "in",
-     "puteō",
-     "gregēs",
-     "ē",
-     "rīvō",
-     "bibunt"
+     "tempestās",
+     "atrōx",
+     "nautae",
+     "tamen",
+     "vēla",
+     "nōn",
+     "contrahent"
     ]
    },
    {
-    "prompt": "Grant that both brothers were guilty; the judge spared them.",
-    "answer": "Fuerint ambō frātrēs nocentēs; iūdex eīs pepercit.",
+    "prompt": "I grant you have no money; yet you have talent and shrewdness.",
+    "answer": "Nē sit tibi pecūnia, ingenium tamen et acūmen habēs.",
     "kind": "translate-en-la",
     "vocab": [
-     "Fuerint",
-     "ambō",
-     "frātrēs",
-     "nocentēs",
-     "iūdex",
-     "eīs",
-     "pepercit"
+     "nē",
+     "sit",
+     "tibi",
+     "pecūnia",
+     "ingenium",
+     "tamen",
+     "et",
+     "acūmen",
+     "habēs"
+    ]
+   },
+   {
+    "prompt": "I grant that fellow was a wicked citizen to many; yet to me he was always useful.",
+    "answer": "Fuerit iste cīvis improbus multīs; mihi tamen semper prōfuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fuerit",
+     "iste",
+     "cīvis",
+     "improbus",
+     "multīs",
+     "mihi",
+     "tamen",
+     "semper",
+     "prōfuit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-278-concessive-subjunctive-t5",
+  "sectionId": "bn-278-concessive-subjunctive",
+  "questions": [
+   {
+    "prompt": "Grant the field is barren and full of stones; the farmer does not give up.",
+    "answer": "Sit ager sterilis et saxīs plēnus, colōnus tamen nōn dēsistit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sit",
+     "ager",
+     "sterilis",
+     "et",
+     "saxīs",
+     "plēnus",
+     "colōnus",
+     "tamen",
+     "nōn",
+     "dēsistit"
+    ]
+   },
+   {
+    "prompt": "I grant the boy does not understand the Greek words; yet he imitates the sound.",
+    "answer": "Nē intellegat puer verba Graeca, sonum tamen imitātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "intellegat",
+     "puer",
+     "verba",
+     "Graeca",
+     "sonum",
+     "tamen",
+     "imitātur"
+    ]
+   },
+   {
+    "prompt": "I grant the king was proud; yet he magnificently built the temples of the gods.",
+    "answer": "Fuerit rēx superbus; templa tamen deōrum magnificē exstrūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fuerit",
+     "rēx",
+     "superbus",
+     "templa",
+     "tamen",
+     "deōrum",
+     "magnificē",
+     "exstrūxit"
+    ]
+   },
+   {
+    "prompt": "Grant the winter is cold and bristling with snows; the soldiers still advance.",
+    "answer": "Sit hiems frīgida et nivibus horrida, mīlitēs tamen prōgrediuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sit",
+     "hiems",
+     "frīgida",
+     "et",
+     "nivibus",
+     "horrida",
+     "mīlitēs",
+     "tamen",
+     "prōgrediuntur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-278-concessive-subjunctive-t6",
+  "sectionId": "bn-278-concessive-subjunctive",
+  "questions": [
+   {
+    "prompt": "I grant the gods do not favor my undertakings; I will dare nonetheless.",
+    "answer": "Nē faveant dī coeptīs, ego tamen audēbō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "faveant",
+     "dī",
+     "coeptīs",
+     "ego",
+     "tamen",
+     "audēbō"
+    ]
+   },
+   {
+    "prompt": "I grant the young man was foolish; yet he turned out a serious fellow.",
+    "answer": "Fuerit adulēscēns ineptus; vir tamen gravis ēvāsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fuerit",
+     "adulēscēns",
+     "ineptus",
+     "vir",
+     "tamen",
+     "gravis",
+     "ēvāsit"
+    ]
+   },
+   {
+    "prompt": "Grant the gift is small; yet the spirit of the giver is great.",
+    "answer": "Sit dōnum parvum, animus tamen dantis magnus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sit",
+     "dōnum",
+     "parvum",
+     "animus",
+     "tamen",
+     "dantis",
+     "magnus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "I grant you have not believed me; the facts themselves will speak.",
+    "answer": "Nē mihi crēdiderīs; rēs tamen ipsae loquentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "mihi",
+     "crēdiderīs",
+     "rēs",
+     "tamen",
+     "ipsae",
+     "loquentur"
     ]
    }
   ]

@@ -4,46 +4,62 @@
   "sectionId": "bn-078-numerals",
   "questions": [
    {
-    "prompt": "The old man had eight grandsons and five granddaughters.",
-    "answer": "Senex octō nepōtēs et quīnque neptēs habēbat.",
+    "prompt": "The general led three legions across the river within five days.",
+    "answer": "Dux trēs legiōnēs trāns flūmen quīnque diēbus dūxit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Senex",
-     "octō",
-     "nepōtēs",
-     "et",
+     "Dux",
+     "trēs",
+     "legiōnēs",
+     "trāns",
+     "flūmen",
      "quīnque",
-     "neptēs",
-     "habēbat"
+     "diēbus",
+     "dūxit"
     ]
    },
    {
-    "prompt": "On the tenth day the exhausted envoys reached the camp.",
-    "answer": "Decimō diē lēgātī fessī ad castra pervēnērunt.",
+    "prompt": "Twelve captives, bound with chains, were dragged into the forum.",
+    "answer": "Duodecim captīvī, catēnīs vīnctī, in forum tractī sunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Decimō",
-     "diē",
-     "lēgātī",
-     "fessī",
-     "ad",
-     "castra",
-     "pervēnērunt"
-    ]
-   },
-   {
-    "prompt": "Three denarii each were given to the soldiers by the commander.",
-    "answer": "Singulīs mīlitibus ternī dēnāriī ā duce datī sunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Singulīs",
-     "mīlitibus",
-     "ternī",
-     "dēnāriī",
-     "ā",
-     "duce",
-     "datī",
+     "Duodecim",
+     "captīvī",
+     "catēnīs",
+     "vīnctī",
+     "in",
+     "forum",
+     "tractī",
      "sunt"
+    ]
+   },
+   {
+    "prompt": "Twenty ships, driven by a fierce wind, perished near the rocks.",
+    "answer": "Vīgintī nāvēs, ācrī ventō āctae, prope saxa periērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīgintī",
+     "nāvēs",
+     "ācrī",
+     "ventō",
+     "āctae",
+     "prope",
+     "saxa",
+     "periērunt"
+    ]
+   },
+   {
+    "prompt": "With eight horsemen the scout returned before dawn.",
+    "answer": "Cum octō equitibus explōrātor ante lūcem rediit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "octō",
+     "equitibus",
+     "explōrātor",
+     "ante",
+     "lūcem",
+     "rediit"
     ]
    }
   ]
@@ -53,46 +69,57 @@
   "sectionId": "bn-078-numerals",
   "questions": [
    {
-    "prompt": "At first light nine ships set sail from the harbor.",
-    "answer": "Prīmā lūce novem nāvēs ex portū solvērunt.",
+    "prompt": "On the fourth day the exhausted soldiers finally reached the sea.",
+    "answer": "Quārtō diē mīlitēs fessī tandem mare attigērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quārtō",
+     "diē",
+     "mīlitēs",
+     "fessī",
+     "tandem",
+     "mare",
+     "attigērunt"
+    ]
+   },
+   {
+    "prompt": "The tenth legion, famous for its courage, held the right wing.",
+    "answer": "Legiō decima, virtūte clāra, dextrum cornū tenuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Legiō",
+     "decima",
+     "virtūte",
+     "clāra",
+     "dextrum",
+     "cornū",
+     "tenuit"
+    ]
+   },
+   {
+    "prompt": "In the first watch the enemy attacked the sleeping camp.",
+    "answer": "Prīmā vigiliā hostēs dormientia castra oppugnāvērunt.",
     "kind": "translate-en-la",
     "vocab": [
      "Prīmā",
-     "lūce",
-     "novem",
-     "nāvēs",
-     "ex",
-     "portū",
-     "solvērunt"
+     "vigiliā",
+     "hostēs",
+     "dormientia",
+     "castra",
+     "oppugnāvērunt"
     ]
    },
    {
-    "prompt": "In the second hour the noisy crowd gathered in the forum.",
-    "answer": "Secundā hōrā turba strepēns in forō convēnit.",
+    "prompt": "The second consul, having been recalled, entrusted the army to his colleague.",
+    "answer": "Secundus cōnsul, revocātus, exercitum collēgae mandāvit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Secundā",
-     "hōrā",
-     "turba",
-     "strepēns",
-     "in",
-     "forō",
-     "convēnit"
-    ]
-   },
-   {
-    "prompt": "The king ruled for forty years with justice and clemency.",
-    "answer": "Rēx quadrāgintā annōs cum iūstitiā et clēmentiā rēgnāvit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Rēx",
-     "quadrāgintā",
-     "annōs",
-     "cum",
-     "iūstitiā",
-     "et",
-     "clēmentiā",
-     "rēgnāvit"
+     "Secundus",
+     "cōnsul",
+     "revocātus",
+     "exercitum",
+     "collēgae",
+     "mandāvit"
     ]
    }
   ]
@@ -102,47 +129,58 @@
   "sectionId": "bn-078-numerals",
   "questions": [
    {
-    "prompt": "In the fifth watch the enemy, silent and hidden, attacked the camp.",
-    "answer": "Quīntā vigiliā hostēs tacitī et occultī castra oppugnāvērunt.",
+    "prompt": "The prisoners were led out two by two through the narrow gate.",
+    "answer": "Captīvī bīnī per angustam portam ēductī sunt.",
     "kind": "translate-en-la",
     "vocab": [
-     "Quīntā",
-     "vigiliā",
-     "hostēs",
-     "tacitī",
-     "et",
-     "occultī",
-     "castra",
-     "oppugnāvērunt"
-    ]
-   },
-   {
-    "prompt": "Eleven captives, bound with chains, were led into the city.",
-    "answer": "Ūndecim captīvī catēnīs vīnctī in urbem ductī sunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ūndecim",
-     "captīvī",
-     "catēnīs",
-     "vīnctī",
-     "in",
-     "urbem",
-     "ductī",
+     "Captīvī",
+     "bīnī",
+     "per",
+     "angustam",
+     "portam",
+     "ēductī",
      "sunt"
     ]
    },
    {
-    "prompt": "The first cohort held the hill; the second guarded the gate.",
-    "answer": "Prīma cohors collem tenuit; secunda portam custōdīvit.",
+    "prompt": "The general gave each soldier ten denarii before the battle.",
+    "answer": "Imperātor singulīs mīlitibus dēnōs dēnāriōs ante proelium dedit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Prīma",
-     "cohors",
-     "collem",
-     "tenuit",
-     "secunda",
-     "portam",
-     "custōdīvit"
+     "Imperātor",
+     "singulīs",
+     "mīlitibus",
+     "dēnōs",
+     "dēnāriōs",
+     "ante",
+     "proelium",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "The maidens, singing sweetly, entered the temple one by one.",
+    "answer": "Virginēs, suāviter canentēs, singulae templum intrāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virginēs",
+     "suāviter",
+     "canentēs",
+     "singulae",
+     "templum",
+     "intrāvērunt"
+    ]
+   },
+   {
+    "prompt": "Three by three the weary travelers crossed the swollen stream.",
+    "answer": "Ternī fessī viātōrēs tumidum rīvum trānsiērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ternī",
+     "fessī",
+     "viātōrēs",
+     "tumidum",
+     "rīvum",
+     "trānsiērunt"
     ]
    }
   ]
@@ -152,46 +190,58 @@
   "sectionId": "bn-078-numerals",
   "questions": [
    {
-    "prompt": "The queen reigned for thirty years, dreadful to all her neighbors.",
-    "answer": "Rēgīna trīgintā annōs rēgnāvit, omnibus fīnitimīs formīdolōsa.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Rēgīna",
-     "trīgintā",
-     "annōs",
-     "rēgnāvit",
-     "omnibus",
-     "fīnitimīs",
-     "formīdolōsa"
-    ]
-   },
-   {
-    "prompt": "The boy read the same book six times with great delight.",
-    "answer": "Puer eundem librum sexiēns magnō cum lepōre lēgit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Puer",
-     "eundem",
-     "librum",
-     "sexiēns",
-     "magnō",
-     "cum",
-     "lepōre",
-     "lēgit"
-    ]
-   },
-   {
-    "prompt": "The old man distributed a thousand coins, giving ten to each.",
-    "answer": "Senex mīlle nummōs distribuit, dēnōs cuique dāns.",
+    "prompt": "The old man had seen Rome only once in his long life.",
+    "answer": "Senex Rōmam semel tantum in longā vītā vīderat.",
     "kind": "translate-en-la",
     "vocab": [
      "Senex",
-     "mīlle",
-     "nummōs",
-     "distribuit",
-     "dēnōs",
-     "cuique",
-     "dāns"
+     "Rōmam",
+     "semel",
+     "tantum",
+     "in",
+     "longā",
+     "vītā",
+     "vīderat"
+    ]
+   },
+   {
+    "prompt": "Twice the enemy attacked the walls, and twice they were repelled.",
+    "answer": "Bis hostēs mūrōs oppugnāvērunt, et bis repulsī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bis",
+     "hostēs",
+     "mūrōs",
+     "oppugnāvērunt",
+     "et",
+     "bis",
+     "repulsī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The priest performed the sacred rites three times before the altar.",
+    "answer": "Sacerdōs ter sacra ante āram fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sacerdōs",
+     "ter",
+     "sacra",
+     "ante",
+     "āram",
+     "fēcit"
+    ]
+   },
+   {
+    "prompt": "Four times the messenger, exhausted, had crossed the mountains.",
+    "answer": "Quater nūntius, fessus, montēs trānscenderat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quater",
+     "nūntius",
+     "fessus",
+     "montēs",
+     "trānscenderat"
     ]
    }
   ]
@@ -201,59 +251,126 @@
   "sectionId": "bn-078-numerals",
   "questions": [
    {
-    "prompt": "Having drunk the first cup, the guest praised the host with few words.",
-    "answer": "Prīmō pōculō ēpōtō, hospes dominum paucīs verbīs laudāvit.",
+    "prompt": "In the thirtieth year of his reign the king built a splendid temple.",
+    "answer": "Trīcēsimō rēgnī annō rēx splendidum templum aedificāvit.",
     "kind": "translate-en-la",
     "vocab": [
-     "Prīmō",
-     "pōculō",
-     "ēpōtō",
-     "hospes",
-     "dominum",
-     "paucīs",
-     "verbīs",
-     "laudāvit"
+     "Trīcēsimō",
+     "rēgnī",
+     "annō",
+     "rēx",
+     "splendidum",
+     "templum",
+     "aedificāvit"
     ]
    },
    {
-    "prompt": "The eighteenth legion, hidden in the woods, awaited the signal in silence.",
-    "answer": "Duodēvīcēsima legiō in silvīs occultāta signum tacita exspectābat.",
+    "prompt": "The wall, forty feet high, protected the ancient city.",
+    "answer": "Mūrus, quadrāgintā pedēs altus, urbem antīquam mūniēbat.",
     "kind": "translate-en-la",
     "vocab": [
-     "Duodēvīcēsima",
-     "legiō",
+     "Mūrus",
+     "quadrāgintā",
+     "pedēs",
+     "altus",
+     "urbem",
+     "antīquam",
+     "mūniēbat"
+    ]
+   },
+   {
+    "prompt": "The two sisters, joined by great love, lived in a small house.",
+    "answer": "Duae sorōrēs, magnō amōre iūnctae, in parvā domō habitābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Duae",
+     "sorōrēs",
+     "magnō",
+     "amōre",
+     "iūnctae",
      "in",
-     "silvīs",
-     "occultāta",
+     "parvā",
+     "domō",
+     "habitābant"
+    ]
+   },
+   {
+    "prompt": "A thousand soldiers guarded the bridge throughout the night.",
+    "answer": "Mīlle mīlitēs pontem tōtā nocte custōdiēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlle",
+     "mīlitēs",
+     "pontem",
+     "tōtā",
+     "nocte",
+     "custōdiēbant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-078-numerals-t6",
+  "sectionId": "bn-078-numerals",
+  "questions": [
+   {
+    "prompt": "Since the seven hills were sacred, the Romans set up altars there.",
+    "answer": "Cum septem collēs sacrī essent, Rōmānī ibi ārās posuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "septem",
+     "collēs",
+     "sacrī",
+     "essent",
+     "Rōmānī",
+     "ibi",
+     "ārās",
+     "posuērunt"
+    ]
+   },
+   {
+    "prompt": "The sixth cohort, placed on the hill, watched the approaching enemy.",
+    "answer": "Sexta cohors, in colle collocāta, hostēs appropinquantēs spectābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sexta",
+     "cohors",
+     "in",
+     "colle",
+     "collocāta",
+     "hostēs",
+     "appropinquantēs",
+     "spectābat"
+    ]
+   },
+   {
+    "prompt": "For nine years the war raged before the city was captured.",
+    "answer": "Novem annōs bellum saeviit antequam urbs capta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Novem",
+     "annōs",
+     "bellum",
+     "saeviit",
+     "antequam",
+     "urbs",
+     "capta",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The eighteenth soldier in the line carried the sacred standard.",
+    "answer": "Duodēvīcēsimus mīles in ōrdine sacrum signum ferēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Duodēvīcēsimus",
+     "mīles",
+     "in",
+     "ōrdine",
+     "sacrum",
      "signum",
-     "tacita",
-     "exspectābat"
-    ]
-   },
-   {
-    "prompt": "The king distributed ten talents each to the victorious leaders.",
-    "answer": "Rēx dēna talenta ducibus victōribus distribuit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Rēx",
-     "dēna",
-     "talenta",
-     "ducibus",
-     "victōribus",
-     "distribuit"
-    ]
-   },
-   {
-    "prompt": "For the third time the orator, indignant, denounced the crime openly.",
-    "answer": "Tertium ōrātor indignāns crīmen palam dēnūntiāvit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Tertium",
-     "ōrātor",
-     "indignāns",
-     "crīmen",
-     "palam",
-     "dēnūntiāvit"
+     "ferēbat"
     ]
    }
   ]
