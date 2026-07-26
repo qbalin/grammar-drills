@@ -1,7 +1,11 @@
 // Offline exercise generator (never runs at runtime, needs no API key).
 // Drives Claude via the authenticated `claude -p` CLI to write English→Latin
-// translation tests per grammar topic, validates every Latin form against the
-// reference dictionary.db, and freezes to content/tests/<id>.json.
+// translation tests per grammar topic, checks the Latin against the reference
+// dictionary.db, and freezes the result to content/tests/<id>.json.
+//
+// dictionary.db is incomplete, so a miss is not treated as proof of a bad
+// form: a sentence may carry up to --allow-unverified (default 2) unmatched
+// words, and every one is listed in a report at the end of the run.
 //
 //   node scripts/gen-tests.mjs [--target N] [--per M] [--sleep S] [topicId ...]
 //
@@ -31,6 +35,8 @@ const TARGET = Number(opt("--target", 12));
 const PER_CALL = Number(opt("--per", 6));
 const MAX_CALLS = Number(opt("--max", 4));
 const SLEEP_MS = Number(opt("--sleep", 1500)); // pace calls to respect usage limits
+// How many dictionary misses one sentence may carry before it is dropped.
+const ALLOW_UNVERIFIED = Number(opt("--allow-unverified", 2));
 const onlyTopics = args;
 
 const dict = new DatabaseSync(`${REF}/dictionary.db`, { readOnly: true });
@@ -75,20 +81,30 @@ const FUNCTION_WORDS = new Set(
     "est","sunt",
   ].map(normalize),
 );
+/** Every form the dictionary could not confirm, for the end-of-run report. */
+const unverified = new Map();
+
 /**
- * `firstWord` is the answer's opening word, which Latin orthography capitalises
- * regardless of what it is. Previously ANY capitalised token was waved through
- * as a proper noun, so roughly one word per sentence — the first — was never
- * checked at all. Only mid-sentence capitals get the proper-noun pass now.
+ * Classify one form: "ok" (confirmed, or a known indeclinable, or a
+ * mid-sentence proper noun) or "unverified".
+ *
+ * dictionary.db is authoritative when it answers, but it demonstrably has
+ * holes — it is built around inflected forms and lacks 47 of the commonest
+ * indeclinables outright — so treating a miss as proof of a bad form throws
+ * away correct Latin. Misses are counted rather than fatal; `validate` caps
+ * how many a single sentence may carry.
  */
-function formOk(raw, firstWord) {
+function classify(raw, firstWord) {
   const w = raw.replace(/^[-]/, "").replace(/[.,;:!?"'()]/g, "").trim();
-  if (!w) return true;
+  if (!w) return "ok";
   const n = normalize(w);
-  if (FUNCTION_WORDS.has(n)) return true;
-  if (formExists.get(n)) return true;
-  // Unknown: acceptable only as a mid-sentence proper noun.
-  return /^[A-Z]/.test(w) && normalize(w) !== normalize(firstWord ?? "");
+  if (FUNCTION_WORDS.has(n)) return "ok";
+  if (formExists.get(n)) return "ok";
+  // A mid-sentence capital is a proper noun; the first word is capitalised by
+  // position, so it earns no such pass.
+  if (/^[A-Z]/.test(w) && normalize(w) !== normalize(firstWord ?? "")) return "ok";
+  unverified.set(w, (unverified.get(w) ?? 0) + 1);
+  return "unverified";
 }
 
 // Sample richer vocabulary (intermediate/advanced bands) to seed variety.
@@ -160,7 +176,11 @@ function validate(topicId, rawTest, index) {
     const vocab = (q.vocab ?? []).flatMap((v) => String(v).split(/\s+/)).filter(Boolean);
     if (vocab.length === 0) continue;
     const firstWord = String(q.answer).trim().split(/\s+/)[0] ?? "";
-    if (!vocab.every((v) => formOk(v, firstWord))) continue; // all Latin must be real
+    // A couple of dictionary misses in a sentence is normal — the reference is
+    // incomplete. Many misses in one sentence is the signature of invented
+    // Latin, so the item still goes.
+    const misses = vocab.filter((v) => classify(v, firstWord) === "unverified").length;
+    if (misses > ALLOW_UNVERIFIED) continue;
     questions.push({ prompt: q.prompt, answer: q.answer, kind: "translate-en-la", vocab });
   }
   // keep only well-formed tests of ~4 questions
@@ -263,6 +283,15 @@ for (const topic of topics) {
     `\n${topic.id.padEnd(22)} ${String(tests.length).padStart(2)} tests / ${String(q).padStart(3)} q  ` +
     `(kept ${stats.keptQ}/${stats.rawQ} items · ${stats.calls} calls · ${((Date.now() - t0) / 1000).toFixed(0)}s)`,
   );
+}
+if (unverified.size) {
+  const top = [...unverified.entries()].sort((a, b) => b[1] - a[1]);
+  const total = top.reduce((n, [, c]) => n + c, 0);
+  console.log(
+    `\n${unverified.size} distinct forms (${total} uses) were accepted without a ` +
+    `dictionary match; most frequent first:`,
+  );
+  console.log("  " + top.slice(0, 40).map(([w, c]) => `${w}(${c})`).join(" "));
 }
 const rate = totRaw ? ((totQ / totRaw) * 100).toFixed(1) : "—";
 console.log(`\nDone: ${topics.length} topics · ${totT} tests · ${totQ} questions · validation kept ${rate}% of generated items.`);
