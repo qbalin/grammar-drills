@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Text, useApp, useInput, useStdout } from "ink";
 import TextInput from "ink-text-input";
 import { positionLabel, scrolled, wrapLines } from "./pager.js";
+import { attemptLines, type HistoryLine } from "./history.js";
 import {
   Content,
   Session,
@@ -46,6 +47,7 @@ export function App({ session, content, storage }: Props) {
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
   const [showGrammar, setShowGrammar] = useState(false);
+  const [showHistory, setShowHistory] = useState(false);
   const [input, setInput] = useState(""); // current typed answer / vocab form
   const [submitted, setSubmitted] = useState(""); // the answer the student submitted
   const [flash, setFlash] = useState<string | null>(null);
@@ -95,30 +97,44 @@ export function App({ session, content, storage }: Props) {
     () => wrapLines(mapSection?.text ?? "", paneWidth),
     [mapSection?.text, paneWidth],
   );
+  // What was written on this topic before. Read after the answer is on screen,
+  // never while it is still being typed: earlier attempts hold reference
+  // answers, and the same question comes round again.
+  const attempts = useMemo(
+    () => (sectionId ? session.attemptsFor(sectionId) : []),
+    [sectionId, tick, session],
+  );
+  const historyLines = useMemo(
+    () => attemptLines(attempts, paneWidth),
+    [attempts, paneWidth],
+  );
 
   // Whatever the pane is showing, show it from the top.
-  useEffect(() => setScroll(0), [sectionId, showGrammar, mapIndex, phase.t]);
+  useEffect(
+    () => setScroll(0),
+    [sectionId, showGrammar, showHistory, mapIndex, phase.t],
+  );
 
   const save = () => {
     void storage.save(session.progress()).catch(() => {});
   };
 
-  /** Move the visible window of the open grammar pane. */
-  const scrollPane = (lines: string[], height: number, delta: number) => {
-    setScroll((s) => scrolled(s, delta, lines.length, height));
+  /** Move the visible window of whichever pane is open. */
+  const scrollPane = (lineCount: number, height: number, delta: number) => {
+    setScroll((s) => scrolled(s, delta, lineCount, height));
   };
 
   /** Arrow/page keys for a pane; true if the key was a scroll key. */
   const handleScrollKey = (
     key: { upArrow: boolean; downArrow: boolean; pageUp: boolean; pageDown: boolean },
-    lines: string[],
+    lineCount: number,
     height: number,
   ): boolean => {
     const page = Math.max(1, height - 1);
-    if (key.downArrow) scrollPane(lines, height, 1);
-    else if (key.upArrow) scrollPane(lines, height, -1);
-    else if (key.pageDown) scrollPane(lines, height, page);
-    else if (key.pageUp) scrollPane(lines, height, -page);
+    if (key.downArrow) scrollPane(lineCount, height, 1);
+    else if (key.upArrow) scrollPane(lineCount, height, -1);
+    else if (key.pageDown) scrollPane(lineCount, height, page);
+    else if (key.pageUp) scrollPane(lineCount, height, -page);
     else return false;
     return true;
   };
@@ -126,6 +142,7 @@ export function App({ session, content, storage }: Props) {
   const advance = () => {
     setFlash(null);
     setShowGrammar(false);
+    setShowHistory(false);
     setInput("");
     setSubmitted("");
     const action = session.next();
@@ -169,6 +186,7 @@ export function App({ session, content, storage }: Props) {
     setInput("");
     setSubmitted("");
     setShowGrammar(false);
+    setShowHistory(false);
     setIsNewTopic(false);
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
@@ -218,6 +236,16 @@ export function App({ session, content, storage }: Props) {
   };
 
   const gradeAndContinue = (rating: Rating) => {
+    // Kept before the grade is applied, so it covers placement too: what you
+    // wrote on a topic is worth having whichever pass it was written in.
+    if (sectionId && question) {
+      session.recordAttempt(sectionId, {
+        prompt: question.prompt,
+        answer: question.answer,
+        submitted: submitted.trim(),
+        rating,
+      });
+    }
     if (inPlacement) return placementGrade(rating);
     if (!sectionId) return;
     session.gradeTopic(sectionId, rating);
@@ -226,6 +254,7 @@ export function App({ session, content, storage }: Props) {
     if (test && qIndex + 1 < test.questions.length) {
       setQIndex(qIndex + 1);
       setShowGrammar(false);
+      setShowHistory(false);
       setFlash(null);
       setInput("");
       setSubmitted("");
@@ -295,6 +324,7 @@ export function App({ session, content, storage }: Props) {
     setSubmitted("");
     setIsNewTopic(fresh);
     setShowGrammar(fresh); // teach the rule first when it's new ground
+    setShowHistory(false);
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
   };
@@ -304,7 +334,7 @@ export function App({ session, content, storage }: Props) {
     // except the arrows, which it ignores, so they can page the drawer.
     if (phase.t === "answering") {
       if (key.escape) setShowGrammar((s) => !s); // peek at grammar mid-answer
-      else if (showGrammar) handleScrollKey(key, drawerLines, drawerHeight);
+      else if (showGrammar) handleScrollKey(key, drawerLines.length, drawerHeight);
       return;
     }
     if (phase.t === "vocab-input") return;
@@ -317,10 +347,18 @@ export function App({ session, content, storage }: Props) {
 
     switch (phase.t) {
       case "graded": {
-        if (showGrammar && handleScrollKey(key, drawerLines, drawerHeight)) break;
+        if (showGrammar && handleScrollKey(key, drawerLines.length, drawerHeight)) break;
+        if (showHistory && handleScrollKey(key, historyLines.length, drawerHeight)) break;
         if (ch >= "1" && ch <= "4") gradeAndContinue(Number(ch) as Rating);
-        else if (ch === "g") setShowGrammar((s) => !s);
-        else if (ch === "m" && !inPlacement) openMap("graded");
+        // The two panes share the screen with the question: opening one closes
+        // the other rather than squeezing both.
+        else if (ch === "g") {
+          setShowHistory(false);
+          setShowGrammar((s) => !s);
+        } else if (ch === "h" && attempts.length > 0) {
+          setShowGrammar(false);
+          setShowHistory((s) => !s);
+        } else if (ch === "m" && !inPlacement) openMap("graded");
         else if (ch === "v") {
           setInput("");
           setPhase({ t: "vocab-input" });
@@ -339,7 +377,7 @@ export function App({ session, content, storage }: Props) {
         break;
       }
       case "read": {
-        if (handleScrollKey(key, readerLines, readerHeight)) break;
+        if (handleScrollKey(key, readerLines.length, readerHeight)) break;
         if (key.escape || ch === "g" || ch === "m") setPhase({ t: "map", from: phase.from });
         break;
       }
@@ -435,6 +473,16 @@ export function App({ session, content, storage }: Props) {
         />
       )}
 
+      {showHistory && phase.t === "graded" && (
+        <HistoryPane
+          lines={historyLines}
+          scroll={scroll}
+          height={drawerHeight}
+          count={attempts.length}
+          title={section?.title ?? "this topic"}
+        />
+      )}
+
       {(phase.t === "answering" || phase.t === "graded") && question && (
         <QuestionView
           question={question}
@@ -493,7 +541,11 @@ export function App({ session, content, storage }: Props) {
       <HintBar
         phase={phase.t}
         placement={inPlacement}
-        paging={showGrammar && drawerLines.length > drawerHeight}
+        paging={
+          (showGrammar && drawerLines.length > drawerHeight) ||
+          (showHistory && historyLines.length > drawerHeight)
+        }
+        history={attempts.length > 0}
       />
     </Box>
   );
@@ -743,6 +795,53 @@ function GrammarPane({
   );
 }
 
+/**
+ * Earlier answers on the topic now being drilled, newest first — the same
+ * window-and-scroll treatment the grammar pane gets, since a topic keeps ten
+ * attempts and each runs to three or four lines.
+ */
+function HistoryPane({
+  lines,
+  scroll,
+  height,
+  count,
+  title,
+}: {
+  lines: HistoryLine[];
+  scroll: number;
+  height: number;
+  count: number;
+  title: string;
+}) {
+  const visible = lines.slice(scroll, scroll + height);
+  const more = lines.length > height;
+  const atEnd = scroll + height >= lines.length;
+  return (
+    <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+      <Text color="gray">
+        Earlier on {title} — {count} {count === 1 ? "answer" : "answers"}, newest first
+      </Text>
+      {visible.map((line, i) => (
+        <Text
+          key={scroll + i}
+          dimColor={line.tone === "meta"}
+          color={
+            line.tone === "yours" ? "yellow" : line.tone === "correct" ? "green" : undefined
+          }
+        >
+          {line.text === "" ? " " : line.text}
+        </Text>
+      ))}
+      {more && (
+        <Text dimColor>
+          {positionLabel(scroll, height, lines.length)}
+          {atEnd ? " · end" : " · ↑↓ scroll, PgUp/PgDn page"}
+        </Text>
+      )}
+    </Box>
+  );
+}
+
 function QuestionView({
   question,
   index,
@@ -828,13 +927,18 @@ function HintBar({
   phase,
   placement,
   paging,
+  history,
 }: {
   phase: Phase["t"];
   placement?: boolean;
-  /** The grammar pane is open and has more lines than fit. */
+  /** An open pane has more lines than fit. */
   paging?: boolean;
+  /** There is something in the topic's answer trail to show. */
+  history?: boolean;
 }) {
   const scrollHint = paging ? " · ↑↓ scroll" : "";
+  // Only offered once the topic has a trail: `h` does nothing before that.
+  const historyHint = history ? " · h earlier" : "";
   const hint =
     phase === "answering"
       ? `type your Latin · Enter submit · Esc grammar${scrollHint}`
@@ -845,7 +949,7 @@ function HintBar({
         : phase === "graded"
         ? placement
           ? "3–4 you knew it (continue) · 1–2 start here"
-          : `1–4 self-grade (1 again · 4 easy) · v vocab · g grammar${scrollHint} · m map · q quit`
+          : `1–4 self-grade (1 again · 4 easy) · v vocab · g grammar${historyHint}${scrollHint} · m map · q quit`
         : phase === "vocab-review-front"
           ? "Space/Enter reveal · q quit"
           : phase === "vocab-review-back"

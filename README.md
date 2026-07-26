@@ -68,12 +68,40 @@ pnpm --filter @latin-tutor/cli start -- --content ./content --progress ./my.prog
 
 Flow: (placement on first run →) read the English prompt, **type your Latin and
 press Enter**, compare with the reference answer, then `1–4` self-grade
-(1 again · 4 easy). `v` record a word · `g` grammar section · `Esc` peek at the
-grammar mid-answer · `m` grammar map · `q` quit (autosaves).
+(1 again · 4 easy). `v` record a word · `g` grammar section · `h` your earlier
+answers on this topic · `Esc` peek at the grammar mid-answer · `m` grammar map ·
+`q` quit (autosaves).
 
 The grammar pane shows the **whole** section — Bennett's paradigm sections run
 to hundreds of lines — so it pages: `↑ ↓` a line, `PgUp/PgDn` a screen, with
 `lines 25–33 of 90` under the text saying where you are.
+
+## Earlier answers on a topic
+
+Nothing grades you, so the only record of what you actually wrote is the one the
+app keeps. Once an answer is on screen, `h` opens the last ten answers on that
+topic, newest first — what was asked, what you wrote, and the correction where
+the two differ:
+
+```
+Earlier on First declension nouns — 3 answers, newest first
+20 minutes ago · graded again
+The sailors of the island praise the queen.
+you     —
+correct nautae īnsulae rēgīnam laudant
+
+yesterday · graded easy
+The farmers give roses to the girls of the great island.
+✓       agricolae puellīs īnsulae magnae rosās dant
+lines 1–9 of 13 · ↑↓ scroll, PgUp/PgDn page
+```
+
+An answer that matched is ticked rather than corrected — macrons and `u/v`,
+`i/j` are folded first, so writing `puella rosam amat` without the macrons is
+right, not a correction. It pages like the grammar pane, and shares the screen
+with it: opening one closes the other. It is only offered **after** you have
+answered — earlier attempts carry reference answers, and the same question comes
+round again.
 
 ## The grammar
 
@@ -146,6 +174,12 @@ Progress is user data, saved through a pluggable `StorageAdapter`:
 - **Private GitHub repo** — `GitHubStorage` commits the JSON via the GitHub REST
   API with a personal access token (no backend). Google Drive/etc. can be added
   as further adapters.
+
+The answers you write are part of that file (`attempts`, keyed by topic). The
+whole file is rewritten — and, on GitHub storage, committed — on every save, so
+the trail is capped at the last **ten answers per topic**, oldest dropped first.
+A file written before the trail existed simply has none; it starts filling on
+the next answer.
 
 ## Generation (offline, one-time — not shipped)
 

@@ -213,6 +213,75 @@ describe("CLI App (write → compare → self-grade)", () => {
     unmount();
   });
 
+  it("shows the topic's earlier answers on demand, and hides them again", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    // A run at this topic three days ago, before this session started.
+    session.recordAttempt(
+      "ag-decl1",
+      {
+        prompt: "The queen praises the sailor.",
+        answer: "rēgīna nautam laudat",
+        submitted: "rēgīna nauta laudat",
+        rating: 2,
+      },
+      new Date(Date.now() - 3 * 86_400_000),
+    );
+
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    // Not in the way until it is asked for — but the hint says it is there.
+    expect(lastFrame()).not.toContain("Earlier on");
+    expect(lastFrame()).toContain("h earlier");
+
+    stdin.write("h");
+    await tick();
+    const frame = lastFrame()!;
+    expect(frame).toContain("Earlier on First declension nouns — 1 answer");
+    expect(frame).toContain("3 days ago · graded hard");
+    expect(frame).toContain("The queen praises the sailor.");
+    expect(frame).toContain("you     rēgīna nauta laudat");
+    expect(frame).toContain("correct rēgīna nautam laudat");
+    // The question it belongs to is still on screen underneath.
+    expect(frame).toContain("The girl loves the rose.");
+
+    // The grammar drawer takes the same space, so opening it closes this.
+    stdin.write("g");
+    await tick();
+    expect(lastFrame()).not.toContain("Earlier on");
+    expect(lastFrame()).toContain("First-declension nouns end in -a.");
+
+    stdin.write("h");
+    await tick();
+    expect(lastFrame()).toContain("Earlier on");
+    stdin.write("h");
+    await tick();
+    expect(lastFrame()).not.toContain("Earlier on");
+
+    // Grading adds this answer to the trail, for the next time the topic comes up.
+    stdin.write("3");
+    await tick();
+    const trail = session.attemptsFor("ag-decl1");
+    expect(trail).toHaveLength(2);
+    expect(trail[0]).toMatchObject({
+      prompt: "The girl loves the rose.",
+      answer: "puella rosam amat",
+      submitted: "puella rosam amat",
+      rating: 3,
+    });
+    expect(storage.saved.attempts["ag-decl1"]).toHaveLength(2);
+
+    unmount();
+  });
+
   // Bennett's sections run to hundreds of lines. Every one of them has to be
   // readable: no clipping, no ellipsis standing in for the rest of the rule.
   const longText = Array.from({ length: 90 }, (_, i) => `rule line ${i + 1}`).join("\n");
