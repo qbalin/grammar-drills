@@ -7,8 +7,8 @@ import type { ContentData } from "./types.js";
 
 const fixture: ContentData = {
   grammar: [
-    { id: "ag1", ref: "1", title: "First declension", text: "The first declension...", order: 1 },
-    { id: "ag2", ref: "2", title: "Second declension", text: "The second declension...", order: 2 },
+    { id: "ag1", ref: "1", title: "First declension", family: "nouns", text: "The first declension...", order: 1 },
+    { id: "ag2", ref: "2", title: "Second declension", family: "nouns", text: "The second declension...", order: 2 },
   ],
   tests: {
     ag1: [
@@ -119,5 +119,98 @@ describe("Session", () => {
     const json = JSON.parse(JSON.stringify(s1.progress()));
     const s2 = new Session(new Content(fixture), json);
     expect(s2.progress().topicCards.ag1).toBeDefined();
+  });
+});
+
+describe("Session mastery", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  const mastery = (s: Session, id: string) =>
+    s.grammarMap(now).find((t) => t.sectionId === id)?.mastery;
+
+  it("accumulates good grades and clamps at 4", () => {
+    const s = new Session(new Content(fixture));
+    expect(mastery(s, "ag1")).toBeUndefined(); // never graded
+    s.gradeTopic("ag1", 3, now);
+    expect(mastery(s, "ag1")).toBe(2);
+    s.gradeTopic("ag1", 3, now);
+    s.gradeTopic("ag1", 3, now);
+    expect(mastery(s, "ag1")).toBe(4);
+    s.gradeTopic("ag1", 4, now); // already mastered, stays there
+    expect(mastery(s, "ag1")).toBe(4);
+  });
+
+  it("gives back ground on 'again' and half a step on 'hard', floored at 1", () => {
+    const s = new Session(new Content(fixture));
+    s.gradeTopic("ag1", 3, now);
+    s.gradeTopic("ag1", 1, now);
+    s.gradeTopic("ag1", 3, now);
+    expect(mastery(s, "ag1")).toBe(2);
+
+    s.gradeTopic("ag2", 2, now);
+    expect(mastery(s, "ag2")).toBe(1.5);
+
+    s.gradeTopic("ag2", 1, now);
+    s.gradeTopic("ag2", 1, now);
+    expect(mastery(s, "ag2")).toBe(1); // not mastered, never below
+  });
+
+  it("reports placement-passed topics as mastered but assumed", () => {
+    const s = new Session(new Content(fixture));
+    s.passPlacement("ag1");
+    s.endPlacement();
+    const t = s.grammarMap(now).find((x) => x.sectionId === "ag1")!;
+    expect(t.mastery).toBe(4);
+    expect(t.assumed).toBe(true);
+
+    // Grading it for real replaces the assumption with an earned score.
+    s.gradeTopic("ag1", 3, now);
+    const after = s.grammarMap(now).find((x) => x.sectionId === "ag1")!;
+    expect(after.assumed).toBe(false);
+    expect(after.mastery).toBe(2);
+  });
+
+  it("groups topics into families with a mastery percentage", () => {
+    const s = new Session(new Content(fixture));
+    s.gradeTopic("ag1", 3, now);
+    s.gradeTopic("ag1", 3, now);
+    s.gradeTopic("ag1", 3, now); // ag1 -> 4 (100%), ag2 untouched (0%)
+
+    const nouns = s.familyProgress(now).find((f) => f.id === "nouns")!;
+    // Both fixture sections declare family "nouns".
+    expect(nouns.topics.map((t) => t.sectionId)).toEqual(["ag1", "ag2"]);
+    expect(nouns.percent).toBeCloseTo(0.5);
+    expect(s.overallPercent(now)).toBeCloseTo(0.5);
+
+    const empty = s.familyProgress(now).find((f) => f.id === "verb-forms")!;
+    expect(empty.topics).toHaveLength(0);
+    expect(empty.percent).toBe(0);
+  });
+
+  it("loads progress files written before mastery tracking", () => {
+    const s1 = new Session(new Content(fixture));
+    s1.gradeTopic("ag1", 3, now);
+    const legacy = JSON.parse(JSON.stringify(s1.progress()));
+    delete legacy.topicMastery; // as an older file on disk would be
+
+    const s2 = new Session(new Content(fixture), legacy);
+    expect(s2.grammarMap(now).find((t) => t.sectionId === "ag1")?.mastery).toBeUndefined();
+    s2.gradeTopic("ag1", 3, now);
+    expect(mastery(s2, "ag1")).toBe(2); // accumulates from the floor onwards
+  });
+
+  it("marks due topics and topics that have no tests", () => {
+    const withoutTests: ContentData = {
+      ...fixture,
+      grammar: [
+        ...fixture.grammar,
+        { id: "ag3", ref: "3", title: "Third declension", family: "nouns", text: "...", order: 3 },
+      ],
+    };
+    const s = new Session(new Content(withoutTests));
+    s.gradeTopic("ag1", 1, now); // 'again' -> due again almost immediately
+    const map = s.grammarMap(new Date("2026-01-02T00:00:00Z"));
+    expect(map.find((t) => t.sectionId === "ag1")?.due).toBe(true);
+    expect(map.find((t) => t.sectionId === "ag3")?.hasTests).toBe(false);
+    expect(map.find((t) => t.sectionId === "ag1")?.hasTests).toBe(true);
   });
 });

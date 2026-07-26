@@ -1,4 +1,5 @@
 import { Content } from "./content.js";
+import { FAMILIES, familyOf, type FamilyId } from "./families.js";
 import { normalize } from "./normalize.js";
 import {
   deserializeCard,
@@ -18,11 +19,43 @@ import {
 
 const SEEN_HISTORY = 10; // remember this many recently-served tests per section
 
+/** Mastery runs 1 (not mastered) to 4 (mastered); the bars show the span between. */
+const MASTERY_MIN = 1;
+const MASTERY_MAX = 4;
+
 export type Action =
   | { kind: "topic-review"; sectionId: string }
   | { kind: "new-topic"; sectionId: string }
   | { kind: "vocab-review"; cardId: string }
   | { kind: "done" };
+
+/** One grammar section as the progress bars and topic explorer see it. */
+export interface TopicProgress {
+  sectionId: string;
+  title: string;
+  ref: string;
+  order: number;
+  family: FamilyId;
+  /** Cumulative score in [1, 4], or undefined if never graded. */
+  mastery?: number;
+  /** Mastery taken from a passed placement rather than earned by grading. */
+  assumed: boolean;
+  hasTests: boolean;
+  due: boolean;
+}
+
+export interface FamilyProgress {
+  id: FamilyId;
+  label: string;
+  topics: TopicProgress[];
+  /** Mean mastery across the family's topics, 0–1. Unseen topics count as 0. */
+  percent: number;
+}
+
+/** Mastery as a 0–1 fraction; an ungraded topic is 0. */
+function fraction(mastery: number | undefined): number {
+  return ((mastery ?? MASTERY_MIN) - MASTERY_MIN) / (MASTERY_MAX - MASTERY_MIN);
+}
 
 /**
  * The runtime session engine. Holds the student's Progress and, given the
@@ -38,6 +71,9 @@ export class Session {
     progress?: Progress,
   ) {
     this.p = progress ?? emptyProgress();
+    // Progress files written before mastery tracking have no map; there is no
+    // migration layer, so default it here.
+    this.p.topicMastery ??= {};
   }
 
   // --- placement -----------------------------------------------------------
@@ -125,6 +161,14 @@ export class Session {
     let card = existing ? deserializeCard(existing) : newCard(now);
     card = rate(card, rating, now);
     this.p.topicCards[sectionId] = serializeCard(card);
+    // Mastery moves gradually, so one good answer can't mark a topic mastered
+    // and one bad day can't wipe it: good/easy +1, hard +0.5, again -1.
+    const delta = rating >= 3 ? 1 : rating === 2 ? 0.5 : -1;
+    const base = this.p.topicMastery[sectionId] ?? MASTERY_MIN;
+    this.p.topicMastery[sectionId] = Math.min(
+      MASTERY_MAX,
+      Math.max(MASTERY_MIN, base + delta),
+    );
     if (!existing) {
       if (wasKnown) {
         this.p.knownSections = this.p.knownSections.filter(
@@ -182,6 +226,54 @@ export class Session {
       topics: Object.keys(this.p.topicCards).length,
       vocab: Object.keys(this.p.vocabCards).length,
     };
+  }
+
+  /**
+   * Every grammar section in book order with its mastery — the model behind the
+   * progress bars and the topic explorer. Sections passed in placement report a
+   * full but `assumed` mastery, since they were taken as known rather than graded.
+   */
+  grammarMap(now: Date = new Date()): TopicProgress[] {
+    const known = new Set(this.p.knownSections);
+    return this.content.sections().map((s) => {
+      const scored = this.p.topicMastery[s.id];
+      const assumed = scored === undefined && known.has(s.id);
+      const card = this.p.topicCards[s.id];
+      return {
+        sectionId: s.id,
+        title: s.title,
+        ref: s.ref,
+        order: s.order,
+        family: familyOf(s.family),
+        mastery: assumed ? MASTERY_MAX : scored,
+        assumed,
+        hasTests: this.content.testsFor(s.id).length > 0,
+        due: card ? isDue(deserializeCard(card), now) : false,
+      };
+    });
+  }
+
+  /** `grammarMap()` bucketed into families, in display order. */
+  familyProgress(now: Date = new Date()): FamilyProgress[] {
+    const map = this.grammarMap(now);
+    return FAMILIES.map(({ id, label }) => {
+      const topics = map.filter((t) => t.family === id);
+      const percent =
+        topics.length === 0
+          ? 0
+          : topics.reduce((sum, t) => sum + fraction(t.mastery), 0) /
+            topics.length;
+      return { id, label, topics, percent };
+    });
+  }
+
+  /** Mean mastery across the whole syllabus, 0–1. */
+  overallPercent(now: Date = new Date()): number {
+    const map = this.grammarMap(now);
+    if (map.length === 0) return 0;
+    return (
+      map.reduce((sum, t) => sum + fraction(t.mastery), 0) / map.length
+    );
   }
 
   progress(): Progress {

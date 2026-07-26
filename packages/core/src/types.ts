@@ -2,13 +2,22 @@
 // Frozen content types (produced offline, shipped as JSON, read at runtime).
 // ---------------------------------------------------------------------------
 
-/** One numbered section of the grammar reference (Allen & Greenough). */
+/**
+ * One topic of the grammar reference: a run of consecutive numbered sections
+ * in Bennett's *New Latin Grammar*, extracted by `scripts/parse-grammar.py`.
+ */
 export interface GrammarSection {
-  /** Stable id, e.g. "ag34". */
+  /** Stable id, e.g. "bn-020-first-declension". */
   id: string;
-  /** The book's own reference, e.g. "34" or "34.a". */
+  /** The book's own section reference, e.g. "20-22" or "100". */
   ref: string;
   title: string;
+  /**
+   * Display grouping, e.g. "nouns" — carried in the content, not inferred.
+   * Optional: the loader does no validation, so a bundle without it must still
+   * load. `familyOf` falls back for anything missing or unrecognised.
+   */
+  family?: string;
   /** The plain-text extract shown on demand. */
   text: string;
   /** Position in book order; used for topic sequencing. */
@@ -93,6 +102,12 @@ export interface Progress {
   frontier: string | null;
   /** sectionId -> scheduling card for that grammar topic. */
   topicCards: Record<string, SerializedCard>;
+  /**
+   * sectionId -> cumulative mastery score in [1, 4], the number the progress
+   * bars read: 1 = not mastered, 4 = mastered. Good/Easy +1, Hard +0.5,
+   * Again -1. Absent means the topic has never been graded.
+   */
+  topicMastery: Record<string, number>;
   /** vocab card id -> state. */
   vocabCards: Record<string, VocabCardState>;
   /** Sections proven known without an active card. */
@@ -111,6 +126,7 @@ export function emptyProgress(): Progress {
     version: 1,
     frontier: null,
     topicCards: {},
+    topicMastery: {},
     vocabCards: {},
     knownSections: [],
     seenTests: {},
