@@ -1,268 +1,1082 @@
 [
-  {
-    "id": "ag-decl1",
-    "ref": "34",
-    "title": "First declension nouns",
-    "order": 10,
-    "text": "First-declension nouns end in -a in the nominative singular and are mostly feminine (e.g. puella, rosa, via). Singular endings: nom -a, gen -ae, dat -ae, acc -am, abl -ā; plural: nom -ae, gen -ārum, dat/abl -īs, acc -ās. A few nouns denoting male roles are masculine (agricola, nauta, poēta) but decline identically. The genitive and dative singular (-ae) look alike; context and the nominative plural (also -ae) distinguish them."
-  },
-  {
-    "id": "ag-decl2",
-    "ref": "35",
-    "title": "Second declension nouns",
-    "order": 20,
-    "text": "Second-declension nouns are chiefly masculine in -us (servus) or -er (puer, ager), and neuter in -um (bellum, dōnum). Masculine endings: nom -us, gen -ī, dat -ō, acc -um, abl -ō; plural nom -ī, gen -ōrum, dat/abl -īs, acc -ōs. Neuters have nom = acc in -um (pl. -a), otherwise like the masculine. Nouns in -ius and -ium often contract the genitive singular to -ī. The vocative singular of -us nouns is -e (serve), and of -ius nouns is -ī (fīlī)."
-  },
-  {
-    "id": "ag-decl3",
-    "ref": "37",
-    "title": "Third declension nouns",
-    "order": 30,
-    "text": "Third-declension nouns show many nominative forms but share the genitive singular -is, which reveals the stem (rēx, rēgis; corpus, corporis). Endings on the stem: gen -is, dat -ī, acc -em (neuters = nom), abl -e; plural nom -ēs (neut -a), gen -um, dat/abl -ibus, acc -ēs (neut -a). Gender must be learned per word. Because the nominative rarely shows the stem, always memorise a third-declension noun with its genitive."
-  },
-  {
-    "id": "ag-decl3i",
-    "ref": "66",
-    "title": "Third declension i-stems",
-    "order": 35,
-    "text": "I-stem nouns of the third declension take genitive plural -ium instead of -um (cīvis, cīvium; urbs, urbium; mare, marium). They include: masc./fem. nouns with nom = gen syllable count (cīvis, nūbēs), nouns whose stem ends in two consonants (urbs, pars), and neuters in -e, -al, -ar (mare, animal), which also have ablative singular -ī and nom/acc plural -ia."
-  },
-  {
-    "id": "ag-decl4",
-    "ref": "88",
-    "title": "Fourth declension nouns",
-    "order": 40,
-    "text": "Fourth-declension nouns end in -us (mostly masculine: manus, exercitus, senātus) or -ū (neuter: cornū, genū). Masculine endings: nom -us, gen -ūs, dat -uī, acc -um, abl -ū; plural nom -ūs, gen -uum, dat/abl -ibus, acc -ūs. A handful are feminine (manus, domus). Note domus is partly second-declension. Do not confuse the fourth-declension genitive singular -ūs with the second-declension nominative -us."
-  },
-  {
-    "id": "ag-decl5",
-    "ref": "96",
-    "title": "Fifth declension nouns",
-    "order": 50,
-    "text": "Fifth-declension nouns end in -ēs and are feminine (rēs, spēs, fidēs), except diēs (usually masculine). Endings: nom -ēs, gen -eī/-ēī, dat -eī/-ēī, acc -em, abl -ē; plural nom/acc -ēs, gen -ērum, dat/abl -ēbus. Only rēs and diēs are fully declined in the plural. The genitive/dative singular ends -ēī after a vowel (diēī) and -eī after a consonant (reī)."
-  },
-  {
-    "id": "ag-adj12",
-    "ref": "110",
-    "title": "First/second-declension adjectives",
-    "order": 60,
-    "text": "Adjectives of the first and second declension have three sets of endings: masculine like servus/puer (2nd), feminine like rosa (1st), neuter like bellum (2nd). Thus bonus, bona, bonum; miser, misera, miserum; pulcher, pulchra, pulchrum. An adjective agrees with its noun in gender, number, and case, but need not share the same declension or ending (poēta bonus, manus magna)."
-  },
-  {
-    "id": "ag-adj3",
-    "ref": "115",
-    "title": "Third-declension adjectives",
-    "order": 70,
-    "text": "Third-declension adjectives are i-stems: ablative singular -ī, neuter plural -ia, genitive plural -ium. They come as: three-termination (ācer, ācris, ācre), two-termination (fortis m/f, forte n), and one-termination (nom. the same for all genders: fēlīx, gen. fēlīcis). Example endings for fortis: sg. nom -is/-e, gen -is, dat -ī, acc -em/-e, abl -ī; pl. nom -ēs/-ia, gen -ium, dat/abl -ibus."
-  },
-  {
-    "id": "ag-adjcomp",
-    "ref": "124",
-    "title": "Comparison of adjectives",
-    "order": 80,
-    "text": "The comparative adds -ior (m/f), -ius (n) to the stem and declines like a third-declension noun (non-i-stem): altior, altius; gen. altiōris. The superlative adds -issimus, -a, -um (altissimus). Adjectives in -er form the superlative in -errimus (pulcherrimus); several in -lis form -limus (facilis, facillimus). Comparison of common irregulars: bonus, melior, optimus; malus, pēior, pessimus; magnus, māior, maximus; parvus, minor, minimus; multus, plūs, plūrimus."
-  },
-  {
-    "id": "ag-adverbs",
-    "ref": "214",
-    "title": "Formation of adverbs",
-    "order": 90,
-    "text": "Adverbs are formed from adjectives: first/second-declension adjectives take -ē (lātē from lātus), third-declension take -iter (fortiter from fortis; -er after -nt-, e.g. sapienter). The comparative adverb is the neuter singular of the comparative adjective (-ius, e.g. lātius); the superlative adverb ends -ē/-ō (lātissimē). Irregulars: bene, melius, optimē; male, pēius, pessimē; multum, plūs, plūrimum."
-  },
-  {
-    "id": "ag-pron-pers",
-    "ref": "143",
-    "title": "Personal and reflexive pronouns",
-    "order": 100,
-    "text": "Personal pronouns: ego, meī, mihi, mē, mē; tū, tuī, tibi, tē, tē; plural nōs (nostrum/nostrī, nōbīs, nōs) and vōs. There is no distinct third-person personal pronoun; is/ea/id serves. The reflexive of the third person is suī, sibi, sē, sē (same singular and plural), referring back to the subject. Possessives are the adjectives meus, tuus, suus, noster, vester."
-  },
-  {
-    "id": "ag-pron-dem",
-    "ref": "146",
-    "title": "Demonstrative pronouns (hic, ille, is)",
-    "order": 110,
-    "text": "Demonstratives point out: hic, haec, hoc ‘this (near me)’; ille, illa, illud ‘that (yonder)’; is, ea, id ‘this/that, he/she/it’. They share the pronominal pattern: genitive singular -īus (huius, illīus, eius), dative singular -ī (huic, illī, eī). Used with a noun they are adjectives (hic vir); used alone they are pronouns (is dīxit). Ipse (self) and īdem (same) follow the same pattern."
-  },
-  {
-    "id": "ag-pron-rel",
-    "ref": "150",
-    "title": "Relative and interrogative pronouns",
-    "order": 120,
-    "text": "The relative quī, quae, quod introduces a subordinate clause and agrees with its antecedent in gender and number, but takes its case from its function in the relative clause (vir quem videō). Declension: gen. cuius, dat. cui, and otherwise like an i-stem. The interrogative pronoun quis, quid ‘who? what?’ asks a question; the interrogative adjective is quī, quae, quod ‘which?’."
-  },
-  {
-    "id": "ag-verb-pres",
-    "ref": "174",
-    "title": "Present indicative active (four conjugations)",
-    "order": 130,
-    "text": "The present tense uses the present stem plus personal endings -ō/-m, -s, -t, -mus, -tis, -nt. 1st conj. (amō): amō, amās, amat, amāmus, amātis, amant. 2nd (moneō): moneō, monēs, monet… 3rd (regō): regō, regis, regit, regimus, regitis, regunt. 3rd -iō (capiō): capiō, capis, capit… capiunt. 4th (audiō): audiō, audīs, audit… audiunt. The conjugation is identified by the infinitive's stem vowel (-āre, -ēre, -ere, -īre)."
-  },
-  {
-    "id": "ag-verb-impf",
-    "ref": "175",
-    "title": "Imperfect indicative active",
-    "order": 140,
-    "text": "The imperfect denotes continued or repeated past action (‘was/were …ing’, ‘used to …’). It inserts -bā- between the present stem and the endings -m, -s, -t, -mus, -tis, -nt: amābam, amābās, amābat, amābāmus, amābātis, amābant. Third and fourth conjugations lengthen the stem vowel: regēbam, capiēbam, audiēbam. The irregular sum forms eram, erās, erat…"
-  },
-  {
-    "id": "ag-verb-fut",
-    "ref": "176",
-    "title": "Future indicative active",
-    "order": 150,
-    "text": "The future has two patterns. First and second conjugations use -bi- (amābō, amābis, amābit, amābimus, amābitis, amābunt; monēbō…). Third and fourth conjugations use a vowel change to -am/-ēs (regam, regēs, reget, regēmus, regētis, regent; capiam…; audiam…). Sum forms erō, eris, erit, erimus, eritis, erunt."
-  },
-  {
-    "id": "ag-verb-perf",
-    "ref": "177",
-    "title": "Perfect indicative active",
-    "order": 160,
-    "text": "The perfect (‘have …ed’, simple past) is built on the perfect stem (third principal part minus -ī) plus the endings -ī, -istī, -it, -imus, -istis, -ērunt: amāvī, amāvistī, amāvit, amāvimus, amāvistis, amāvērunt. Perfect stems vary: -v- (amāvī), -u- (monuī), -s- (rēxī), reduplication (cucurrī), or vowel change (ēgī). These endings are the same for every conjugation."
-  },
-  {
-    "id": "ag-verb-plupf",
-    "ref": "178",
-    "title": "Pluperfect and future perfect active",
-    "order": 170,
-    "text": "Both are built on the perfect stem. The pluperfect (‘had …ed’) adds -eram, -erās, -erat, -erāmus, -erātis, -erant: amāveram. The future perfect (‘will have …ed’) adds -erō, -eris, -erit, -erimus, -eritis, -erint: amāverō. These endings resemble the imperfect and future of sum, attached to the perfect stem."
-  },
-  {
-    "id": "ag-verb-passive",
-    "ref": "179",
-    "title": "Present-system passive",
-    "order": 180,
-    "text": "The passive of the present, imperfect, and future uses the endings -r, -ris, -tur, -mur, -minī, -ntur. Present: amor, amāris, amātur, amāmur, amāminī, amantur. Imperfect: amābar, amābāris… Future: amābor, amāberis (note -be-), amābitur… Third/fourth conjugations: regor, regeris, regitur…; audior, audīris… The perfect-system passive is formed differently (participle + sum)."
-  },
-  {
-    "id": "ag-verb-perfpass",
-    "ref": "180",
-    "title": "Perfect-system passive",
-    "order": 190,
-    "text": "The perfect passive is a compound: the perfect passive participle (fourth principal part, agreeing with the subject in gender and number) plus the present of sum. Perfect: amātus sum ‘I was/have been loved’; pluperfect: amātus eram; future perfect: amātus erō. The participle agrees like an adjective: puella amāta est, puerī amātī sunt."
-  },
-  {
-    "id": "ag-verb-subj-pres",
-    "ref": "263",
-    "title": "Present subjunctive",
-    "order": 200,
-    "text": "The present subjunctive changes the stem vowel. First conjugation uses -ē- (amem, amēs, amet, amēmus, amētis, ament); the others use -ā- (moneam, regam, capiam, audiam). Mnemonic: ‘she wears a diamond’ (1st → e, rest → a). The subjunctive expresses wishes, exhortations, and appears in many subordinate clauses (purpose, result, indirect question). Sum: sim, sīs, sit, sīmus, sītis, sint."
-  },
-  {
-    "id": "ag-verb-subj-impf",
-    "ref": "265",
-    "title": "Imperfect and pluperfect subjunctive",
-    "order": 210,
-    "text": "The imperfect subjunctive is the present active infinitive plus personal endings: amārem, amārēs, amāret…; regerem; audīrem; essem (from esse). The pluperfect subjunctive is the perfect active infinitive plus endings: amāvissem, rēxissem, audīvissem, fuissem. These tenses are used in past-time subordinate clauses and in contrary-to-fact conditions."
-  },
-  {
-    "id": "ag-verb-imperative",
-    "ref": "182",
-    "title": "The imperative",
-    "order": 220,
-    "text": "The present imperative gives commands. Singular = present stem (amā, monē, rege, cape, audī); plural adds -te (amāte, monēte, regite, capite, audīte). Four verbs drop the -e in the singular: dīc, dūc, fac, fer (plural dīcite, dūcite, facite, ferte). Negative commands use nōlī/nōlīte + infinitive (nōlī timēre ‘do not fear’). The passive imperative ends -re/-minī."
-  },
-  {
-    "id": "ag-verb-infinitives",
-    "ref": "270",
-    "title": "The infinitives",
-    "order": 230,
-    "text": "Latin has six infinitives. Present active -re (amāre) and passive -rī/-ī (amārī, regī); perfect active -isse (amāvisse) and passive (amātus esse); future active (amātūrus esse) and passive (amātum īrī). The present infinitive names the second principal part and identifies the conjugation. Infinitives are heavily used in indirect statement, where the subject stands in the accusative."
-  },
-  {
-    "id": "ag-verb-participles",
-    "ref": "233",
-    "title": "The participles",
-    "order": 240,
-    "text": "Latin has four participles: present active -ns, -ntis (amāns ‘loving’, declined as a third-declension adjective); perfect passive -tus/-sus (amātus ‘having been loved’, declined 1st/2nd); future active -tūrus (amātūrus ‘about to love’); and the gerundive -ndus (amandus ‘to be loved’, expressing necessity). A participle agrees with its noun in gender, number, and case."
-  },
-  {
-    "id": "ag-irreg-sum",
-    "ref": "170",
-    "title": "The verb sum and its compounds",
-    "order": 250,
-    "text": "Sum ‘to be’ is irregular: present sum, es, est, sumus, estis, sunt; imperfect eram…; future erō…; perfect fuī…. Its compound possum ‘to be able’ prefixes pot-/pos- (possum, potes, potest, possumus, potestis, possunt; imperfect poteram; perfect potuī) and governs a complementary infinitive (possum vidēre ‘I can see’). Sum links a subject to a predicate nominative."
-  },
-  {
-    "id": "ag-irreg-eo-fero-volo",
-    "ref": "203",
-    "title": "Irregular verbs: eō, ferō, volō",
-    "order": 260,
-    "text": "Eō ‘to go’: eō, īs, it, īmus, ītis, eunt; infinitive īre; perfect iī/īvī. Ferō ‘to carry’ lacks the connecting vowel in places: ferō, fers, fert, ferimus, fertis, ferunt; infinitive ferre; perfect tulī; participle lātus. Volō ‘to wish’: volō, vīs, vult, volumus, vultis, volunt; infinitive velle; perfect voluī; and its compounds nōlō (‘be unwilling’) and mālō (‘prefer’)."
-  },
-  {
-    "id": "ag-case-nom-voc",
-    "ref": "339",
-    "title": "The nominative and vocative",
-    "order": 270,
-    "text": "The nominative names the subject of a finite verb (puella cantat) and the predicate noun or adjective after a linking verb (Rōma est urbs; vir est fortis), which agrees with the subject. The vocative addresses someone directly (audī, amīce). The vocative is identical to the nominative except in second-declension -us nouns (voc. -e, serve) and -ius nouns (voc. -ī, fīlī)."
-  },
-  {
-    "id": "ag-case-acc",
-    "ref": "386",
-    "title": "The accusative case",
-    "order": 280,
-    "text": "The accusative marks the direct object of a transitive verb (puellam videō). It also expresses extent of space and duration of time (multōs annōs ‘for many years’; decem pedēs ‘ten feet’), the goal of motion with certain place names (Rōmam eō), and the subject of an infinitive in indirect statement. Some prepositions (ad, in ‘into’, per, trāns, ante, post) govern the accusative."
-  },
-  {
-    "id": "ag-case-gen",
-    "ref": "342",
-    "title": "The genitive case",
-    "order": 290,
-    "text": "The genitive chiefly expresses possession or connection (‘of’): liber puerī ‘the boy's book’. Other common uses: the partitive genitive (pars mīlitum ‘part of the soldiers’, satis pecūniae ‘enough money’), the genitive of description (vir magnae virtūtis), and the objective genitive (amor patriae ‘love of country’). It depends on another noun, not on the verb."
-  },
-  {
-    "id": "ag-case-dat",
-    "ref": "360",
-    "title": "The dative case",
-    "order": 300,
-    "text": "The dative marks the person or thing indirectly affected — the indirect object (‘to/for’): puellae rosam dō ‘I give a rose to the girl’. It also appears as the dative of reference or advantage (mihi ‘for me’), with certain intransitive verbs (crēdō, pāreō, persuādeō + dat.), and as the dative of possessor with sum (mihi est liber ‘I have a book’)."
-  },
-  {
-    "id": "ag-case-abl",
-    "ref": "398",
-    "title": "The ablative case",
-    "order": 310,
-    "text": "The ablative covers three original ideas: separation (‘from’), means/instrument (‘with, by’), and location (‘in, at’). Key uses without a preposition: means (gladiō ‘with a sword’), manner (magnā cūrā), and time when (prīmā lūce ‘at dawn’). With prepositions: ab/dē/ex + abl. for source, cum + abl. for accompaniment, in/sub + abl. for place where. The agent of a passive verb is ā/ab + ablative (ā rēge)."
-  },
-  {
-    "id": "ag-ablabs",
-    "ref": "419",
-    "title": "The ablative absolute",
-    "order": 320,
-    "text": "The ablative absolute is a noun (or pronoun) and a participle, both in the ablative, standing grammatically apart from the rest of the sentence and setting a circumstance: urbe captā, hostēs discessērunt ‘the city having been captured, the enemy withdrew’. It is usually rendered in English with ‘when/since/after/although’. Because sum has no present participle, two nouns or a noun and adjective may stand alone: Caesare duce ‘with Caesar as leader’."
-  },
-  {
-    "id": "ag-agreement",
-    "ref": "280",
-    "title": "Agreement of adjectives and verbs",
-    "order": 330,
-    "text": "A finite verb agrees with its subject in person and number (puer currit; puerī currunt). An adjective (or participle) agrees with the noun it modifies in gender, number, and case (bonae puellae, dat. sg.). A predicate adjective after sum agrees with the subject (viae longae sunt). With two subjects joined by et, the verb is usually plural."
-  },
-  {
-    "id": "ag-questions",
-    "ref": "332",
-    "title": "Questions",
-    "order": 340,
-    "text": "A yes/no question may attach the enclitic -ne to the first word (videsne? ‘do you see?’). Nōnne expects the answer ‘yes’ (nōnne vidēs? ‘surely you see?’), while num expects ‘no’ (num timēs? ‘you aren't afraid, are you?’). Information questions use interrogative words: quis, quid, cūr, ubi, quandō, quōmodo, quot. An indirect question depends on a verb of asking or knowing and takes the subjunctive."
-  },
-  {
-    "id": "ag-purpose-result",
-    "ref": "531",
-    "title": "Purpose and result clauses",
-    "order": 350,
-    "text": "Purpose clauses tell why an action is done: ut (negative nē) + subjunctive (venit ut videat ‘he comes in order to see’; nē videat ‘so that he may not see’). Result clauses tell what follows, often flagged by tam, tantus, tālis, ita, sīc in the main clause: ut (negative ut nōn) + subjunctive (tam fortis est ut vincat ‘he is so brave that he wins’). Both use the present or imperfect subjunctive by sequence of tenses."
-  },
-  {
-    "id": "ag-indirect-statement",
-    "ref": "579",
-    "title": "Indirect statement",
-    "order": 360,
-    "text": "After verbs of saying, thinking, knowing, and perceiving (dīcō, putō, sciō, videō, audiō), Latin reports a statement with the accusative-and-infinitive construction: the subject goes into the accusative and the verb into an infinitive. Dīcit puellam cantāre ‘he says that the girl is singing’; present infinitive = same time, perfect infinitive = prior time, future infinitive = later time. There is no word for ‘that’."
-  },
-  {
-    "id": "ag-conditions",
-    "ref": "513",
-    "title": "Conditional sentences",
-    "order": 370,
-    "text": "A condition has a protasis (sī/nisi clause) and an apodosis (main clause). Simple/factual conditions use the indicative (sī id facis, errās ‘if you are doing this, you are wrong’). Future-more-vivid uses the future indicative (sī veniēs, gaudēbō). Contrary-to-fact conditions use the subjunctive: present (imperfect subj., ‘if… were… would…’, sī id facerēs, errārēs) and past (pluperfect subj., ‘if… had…, would have…’)."
-  }
+ {
+  "id": "bn-013-gender-of-nouns",
+  "ref": "13-15",
+  "title": "Gender of Nouns",
+  "family": "nouns",
+  "order": 10,
+  "text": "There are three Genders,—Masculine, Feminine, and Neuter. Gender in Latin is either natural or grammatical.\nNatural Gender.\nThe gender of nouns is natural when it is based upon sex. Natural gender is confined entirely to names of persons; and these are—\n1. Masculine, if they denote males; as,—\nnauta, sailor; agricola, farmer.\n2. Feminine, if they denote females; as,—\nmāter, mother; rēgīna, queen.\nGrammatical Gender.\nGrammatical gender is determined not by sex, but by the general signification of the word, or the ending of its Nominative Singular. By grammatical gender, nouns denoting things or qualities are often Masculine or Feminine, simply by virtue of their signification or the ending of the Nominative Singular. The following are the general principles for determining grammatical gender:—\nA. Gender determined by Signification.\n1. Names of Rivers, Winds, and Months are Masculine; as,—\nSēquana, Seine; Eurus, east wind; Aprīlis, April.\n2. …"
+ },
+ {
+  "id": "bn-017-cases",
+  "ref": "17",
+  "title": "Cases",
+  "family": "nouns",
+  "order": 20,
+  "text": "There are six Cases in Latin:—\nNominative,  Case of Subject;\nGenitive,  Objective with of, or Possessive;\nDative,  Objective with to or for;\nAccusative,  Case of Direct Object;\nVocative,  Case of Address;\nAblative,  Objective with by, from, in,\nwith.\n1. LOCATIVE. Vestiges of another case, the Locative (denoting place where), occur in names of towns and in a few other words.\n2. OBLIQUE CASES. The Genitive, Dative, Accusative, and Ablative are called Oblique Cases.\n3. STEM AND CASE-ENDINGS. The different cases are formed by appending certain case-endings to a fundamental part called the Stem. Thus, portam (Accusative Singular) is formed by adding the case-ending -m to the stem porta-. But in most cases the final vowel of the stem has coalesced so closely with the actual case-ending that the latter has become more or less obscured. The apparent case-ending thus resulting is called a termination."
+ },
+ {
+  "id": "bn-018-the-five-declensions",
+  "ref": "18-19",
+  "title": "The Five Declensions",
+  "family": "nouns",
+  "order": 30,
+  "text": "There are five Declensions in Latin, distinguished from each other by the final letter of the Stem, and also by the Termination of the Genitive Singular, as follows:—\nDECLENSION.  FINAL LETTER OF STEM.  GEN. TERMINATION.\nFirst  ā  -ae\nSecond  ŏ  -ī\nThird  ĭ / Some consonant  -īs\nFourth  ŭ  -ūs\nFifth  ē  -ēī / -ĕī\nCases alike in Form.\n1. The Vocative is regularly like the Nominative, except in the singular of nouns in -us of the Second Declension.\n2. The Dative and Ablative Plural are always alike.\n3. In Neuters the Accusative and Nominative are always alike, and in the Plural end in -ă.\n4. In the Third, Fourth, and Fifth Declensions, the Accusative Plural is regularly like the Nominative.\nā-Stems."
+ },
+ {
+  "id": "bn-020-first-declension",
+  "ref": "20-22",
+  "title": "First Declension",
+  "family": "nouns",
+  "order": 40,
+  "text": "Pure Latin nouns of the First Declension regularly end, in the Nominative Singular, in -ă, weakened from -ā, and are of the Feminine Gender. They are declined as follows:—\nPorta, gate; stem, portā-.\nSINGULAR.\nCASES.  MEANINGS.  TERMINATIONS.\nNom.  porta  a gate (as subject)  -ă\nGen.  portae  of a gate  -ae\nDat.  portae  to or for a gate  -ae\nAcc.  portam  a gate (as object)  -am\nVoc.  porta  O gate!  -ă\nAbl.  portā  with, by, from, in a gate  -ā\nPLURAL.\nNom.  portae  gates (as subject)  -ae\nGen.  portārum  of gates  -ārum\nDat.  portīs  to or for gates  -īs\nAcc.  portās  gates (as object)  -ās\nVoc.  portae  O gates!  -ae\nAbl.  portīs  with, by, from, in gates  -īs\n1. The Latin has no article, and porta may mean either a gate or the gate; and in the Plural, gates or the gates.\nPeculiarities of Nouns of the First Declension.\n1. EXCEPTIONS IN GENDER. Nouns denoting males are Masculine; as, nauta, sailor; agricola, farmer; also, Hadria, Adriatic Sea.\n2. Rare Case-Endings,—\na) An old form of the Genitive Singular in -ās is preserved in the combination pater familiās, father of a family; also in māter familiās, fīlius familiās, fīlia familiās. …"
+ },
+ {
+  "id": "bn-023-second-declension",
+  "ref": "23-27",
+  "title": "Second Declension",
+  "family": "nouns",
+  "order": 50,
+  "text": "Pure Latin nouns of the Second Declension end in -us, -er, -ir, Masculine; -um, Neuter. Originally -us in the Nominative of the Masculine was -os; and -um of the Neuters -om. So also in the Accusative.\nNouns in -us and -um are declined as follows:—\nHortus, garden;  Bellum, war;\nstem, hortŏ-.  stem, bellŏ-.\nSINGULAR.\nTERMINATION.  TERMINATION.\nNom.  hortus  -us  bellum  -um\nGen.  hortī  -ī  bellī  -ī\nDat.  hortō  -ō  bellō  -ō\nAcc.  hortum  -um  bellum  -um\nVoc.  horte  -e  bellum  -um\nAbl.  hortō  -ō  bellō  -ō\nPLURAL.\nNom.  hortī  -ī  bella  -a\nGen.  hortōrum  -ōrum  bellōrum  -ōrum\nDat.  hortīs  -īs  bellīs  -īs\nAcc.  hortōs  -ōs  bella  -a\nVoc.  hortī  -ī  bella  -a\nAbl.  hortīs  -īs  bellīs  -īs\nNouns in -er and -ir are declined as follows:—\nPuer, boy;  Ager, field;  Vir, man;\nstem, puerŏ-  stem, agrŏ-  stem, virŏ-\nSINGULAR.  TERMINATION.\nNom.  puer  ager  vir  Wanting\nGen.  puerī  agrī  virī  -ī\nDat.  puerō  agrō  virō  -ō\nAcc.  puerum  agrum  virum  -um\nVoc.  puer  ager  vir  Wanting\nAbl.  puerō  agrō  virō  -ō\nPLURAL.\nNom.  puerī  agrī  virī  -ī\nGen.  puerōrum  agrōrum  virōrum  -ōrum\nDat.  puerīs  agrīs  virīs  -īs\nAcc.  puerōs  agrōs  virōs  -ōs\nVoc. …"
+ },
+ {
+  "id": "bn-028-third-declension",
+  "ref": "28-47",
+  "title": "Third Declension",
+  "family": "nouns",
+  "order": 60,
+  "text": "Nouns of the Third Declension end in -a, -e, -ī, -ō, -y, -c, -l, -n, -r, -s, -t, -x. The Third Declension includes several distinct classes of Stems,—\nI.  Pure Consonant-Stems.\nII.  ĭ-Stems.\nIII.  Consonant-Stems which have partially adapted themselves to the\ninflection of ĭ-Stems.\nIV.  A very few stems ending in a long vowel or a diphthong.\nV.  Irregular Nouns.\nI. Consonant-Stems.\n1. In these the stem appears in its unaltered form in all the oblique cases, so that the actual case-endings may be clearly recognized.\n2. Consonant-Stems fall into several natural subdivisions, according as the stem ends in a Mute, Liquid, Nasal, or Spirant.\nA. Mute-Stems.\nMute-Stems may end,—\n1. In a Labial (p); as, prīncep-s.\n2. In a Guttural (g or c); as, rēmex (rēmeg-s); dux (duc-s).\n3. In a Dental (d or t); as, lapis (lapid-s); mīles (mīlet-s).\n1. STEMS IN A LABIAL MUTE (p).\nPrīnceps, m., chief.\nSINGULAR.  TERMINATION.\nNom.  prīnceps  -s\nGen.  prīncipis  -is\nDat.  prīncipī  -ī\nAcc.  prīncipem  -em\nVoc.  prīnceps  -s\nAbl.  prīncipe  -e\nPLURAL.\nNom.  prīncipēs  -ēs\nGen.  prīncipum  -um\nDat.  prīncipibus  -ibus\nAcc.  prīncipēs  -ēs\nVoc.  prīncipēs  -ēs\nAbl.  prīncipibus  -ibus\n2. …"
+ },
+ {
+  "id": "bn-048-fourth-declension",
+  "ref": "48-50",
+  "title": "Fourth Declension",
+  "family": "nouns",
+  "order": 70,
+  "text": "Nouns of the Fourth Declension end in -us Masculine, and -ū Neuter. They are declined as follows:—\nFrūctus, m., fruit.  Cornū, n., horn.\nSINGULAR.  PLURAL.  SINGULAR.  PLURAL.\nNom.  frūctus  frūctūs  cornū  cornua\nGen.  frūctūs  frūctuum  cornūs  cornuum\nDat.  frūctuī  frūctibus  cornū  cornibus\nAcc.  frūctum  frūctūs  cornū  cornua\nVoc.  frūctus  frūctūs  cornū  cornua\nAbl.  frūctū  frūctibus  cornū  cornibus\nPeculiarities of Nouns of the Fourth Declension.\n1. Nouns in -us, particularly in early Latin, often form the Genitive Singular in -ī, following the analogy of nouns in -us of the Second Declension; as, senātī, ōrnātī. This is usually the case in Plautus and Terence.\n2. Nouns in -us sometimes have -ū in the Dative Singular, instead of -uī; as, frūctū (for frūctuī).\n3. The ending -ubus, instead of -ibus, occurs in the Dative and Ablative Plural of artūs (Plural), limbs; tribus, tribe; and in dis-syllables in -cus; as, artubus, tribubus, arcubus, lacubus. But with the exception of tribus, all these words admit the forms in -ibus as well as those in -ubus.\n4. …"
+ },
+ {
+  "id": "bn-051-fifth-declension",
+  "ref": "51-53",
+  "title": "Fifth Declension",
+  "family": "nouns",
+  "order": 80,
+  "text": "Nouns of the Fifth Declension end in -ēs, and are declined as follows:—\nDiēs, m., day.  Rēs, f., thing.\nSINGULAR.  PLURAL.  SINGULAR.  PLURAL.\nNom.  diēs  diēs  rēs  rēs\nGen.  diēī  diērum  rĕī  rērum\nDat.  diēī  diēbus  rĕī  rēbus\nAcc.  diem  diēs  rem  rēs\nVoc.  diēs  diēs  rēs  rēs\nAbl.  diē  diēbus  rē  rēbus\nPeculiarities of Nouns of the Fifth Declension.\n1. The ending of the Genitive and Dative Singular is -ĕī, instead of -ēī, when a consonant precedes; as, spĕī, rĕī, fidĕī.\n2. A Genitive ending -ī (for -ĕī) is found in plēbī (from plēbēs = plēbs) in the expressions tribūnus plēbī, tribune of the people, and plēbī scītum, decree of the people; sometimes also in other words.\n3. A Genitive and Dative form in -ē sometimes occurs; as, aciē.\n4. With the exception of diēs and rēs, most nouns of the Fifth Declension are not declined in the Plural. But aciēs, seriēs, speciēs, spēs, and a few others are used in the Nominative and Accusative Plural.\nGender in the Fifth Declension.\nNouns of the Fifth Declension are regularly Feminine, except diēs, day, and merīdiēs, mid-day. But diēs is sometimes Feminine in the Singular, particularly when it means an appointed day."
+ },
+ {
+  "id": "bn-054-defective-nouns",
+  "ref": "54-61",
+  "title": "Defective Nouns",
+  "family": "nouns",
+  "order": 90,
+  "text": "Here belong—\n1. Nouns used in the Singular only.\n2. Nouns used in the Plural only.\n3. Nouns used only in certain cases.\n4. Indeclinable Nouns.\nNouns used in the Singular only.\nMany nouns, from the nature of their signification, are regularly used in the Singular only. Thus:—\n1. Proper names; as, Cicerō, Cicero; Italia, Italy.\n2. Nouns denoting material; as, aes, copper; lac, milk.\n3. Abstract nouns; as, ignōrantia, ignorance; bonitās, goodness.\n4. But the above classes of words are sometimes used in the Plural. Thus:—\na) Proper names,—to denote different members of a family, or specimens of a type; as, Cicerōnēs, the Ciceros; Catōnēs, men like Cato.\nb) Names of materials,—to denote objects made of the material, or different kinds of the substance; as, aera, bronzes (i.e. bronze figures); ligna, woods.\nc) Abstract nouns,—to denote instances of the quality; as, ignōrantiae, cases of ignorance.\nNouns used in the Plural only.\nHere belong—\n1. Many geographical names; as, Thēbae, Thebes; Leuctra, Leuctra; Pompejī, Pompeii.\n2. Many names of festivals; as, Megalēsia, the Megalesian festival.\n3. Many special words, of which the following are the most important:—\nangustiae, narrow pass. …"
+ },
+ {
+  "id": "bn-063-adjectives-of-the-first-and-second",
+  "ref": "63-66",
+  "title": "Adjectives of the First and Second Declensions",
+  "family": "adj",
+  "order": 100,
+  "text": "In these the Masculine is declined like hortus, puer, or ager, the Feminine like porta, and the Neuter like bellum. Thus, Masculine like hortus:—\nBonus, good.\nSINGULAR.\nMASCULINE.  FEMININE.  NEUTER.\nNom.  bonus  bona  bonum\nGen.  bonī  bonae  bonī\nDat.  bonō  bonae  bonō\nAcc.  bonum  bonam  bonum\nVoc.  bone  bona  bonum\nAbl.  bonō  bonā  bonō\nPLURAL.\nNom.  bonī  bonae  bona\nGen.  bonōrum  bonārum  bonōrum\nDat.  bonīs  bonīs  bonīs\nAcc.  bonōs  bonās  bona\nVoc.  bonī  bonae  bona\nAbl.  bonīs  bonīs  bonīs\n1. The Gen. Sing. Masc. and Neut. of Adjectives in -ius ends in -iī (not in -ī as in case of Nouns; see § 25, 1; 2). So also the Voc. Sing. of such Adjectives ends in -ie, not in ī. Thus eximius forms Gen. eximiī; Voc. eximie.\n2. Distributives (see § 78, 1, c) regularly form the Gen. Plu. Masc. and Neut. in -um instead of -ōrum (compare § 25, 6); as, dēnum centēnum; but always singulōrum.\nMasculine like puer:—\nTener, tender.\nSINGULAR.\nMASCULINE.  FEMININE  NEUTER.\nNom.  tener  tenera  tenerum\nGen.  tenerī  tenerae  tenerī\nDat.  tenerō  tenerae  tenerō\nAcc.  tenerum  teneram  tenerum\nVoc.  tener  tenera  tenerum\nAbl.  tenerō  tenerā  tenerō\nPLURAL.\nNom. …"
+ },
+ {
+  "id": "bn-067-adjectives-of-the-third-declension",
+  "ref": "67-70",
+  "title": "Adjectives of the Third Declension",
+  "family": "adj",
+  "order": 110,
+  "text": "These fall into three classes,—\n1. Adjectives of three terminations in the Nominative Singular,—one for each gender.\n2. Adjectives of two terminations.\n3. Adjectives of one termination.\na. With the exception of Comparatives, and a few other words mentioned below in § 70, 1, all Adjectives of the Third Declension follow the inflection of ĭ-stems; i.e. they have the Ablative Singular in -ī, the Genitive Plural in -ium, the Accusative Plural in -īs (as well as -ēs) in the Masculine and Feminine, and the Nominative and Accusative Plural in -ia in Neuters.\nAdjectives of Three Terminations.\nThese are declined as follows:—\nĀcer, sharp.\nSINGULAR.\nMASCULINE.  FEMININE.  NEUTER.\nNom.  ācer  ācris  ācre\nGen.  ācris  ācris  ācris\nDat.  ācrī  ācrī  ācrī\nAcc.  ācrem  ācrem  ācre\nVoc.  ācer  ācris  ācre\nAbl.  ācrī  ācrī  ācrī\nPLURAL.\nNom.  ācrēs  ācrēs  ācria\nGen.  ācrium  ācrium  ācrium\nDat,  ācribus  ācribus  ācribus\nAcc.  ācrēs, -īs  ācrēs, -īs  ācria\nVoc.  ācrēs  ācrēs  ācria\nAbl.  ācribus  ācribus  ācribus\n1. …"
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives",
+  "ref": "71-75",
+  "title": "Comparison of Adjectives",
+  "family": "adj",
+  "order": 120,
+  "text": "1. There are three degrees of Comparison,—the Positive, the Comparative, and the Superlative.\n2. The Comparative is regularly formed by adding -ior (Neut. -ius), and the Superlative by adding -issimus (-a, -um), to the Stem of the Positive deprived of its final vowel; as,—\naltus, high,  altior, higher,  altissimus, highest,\nvery high.\nfortis, brave,  fortior,  fortissimus.\nfēlīx, fortunate,  fēlīcior,  fēlīcissimus.\nSo also Participles, when used as Adjectives; as,—\ndoctus, learned,  doctior,  doctissimus.\negēns, needy,  egentior,  egentissimus.\n3. Adjectives in -er form the Superlative by appending -rimus to the Nominative of the Positive. The Comparative is regular. Thus:—\nasper, rough,  asperior,  asperrimus.\npulcher, beautiful,  pulchrior,  pulcherrimus.\nācer, sharp,  ācrior,  ācerrimus.\nceler, swift,  celerior,  celerrimus.\na. Notice mātūrus, mātūrior, mātūrissimus or mātūrrimus.\n4. Five Adjectives in -ilis form the Superlative by adding -limus to the Stem of the Positive deprived of its final vowel. The Comparative is regular. …"
+ },
+ {
+  "id": "bn-076-formation-and-comparison-of-adverbs",
+  "ref": "76-77",
+  "title": "Formation and Comparison of Adverbs",
+  "family": "adj",
+  "order": 130,
+  "text": "Adverbs are for the most part derived from adjectives, and depend upon them for their comparison.\n1. Adverbs derived from adjectives of the First and Second Declensions form the Positive by changing -ī of the Genitive Singular to -ē; those derived from adjectives of the Third Declension, by changing -is of the Genitive Singular to -iter; as,—\ncārus,  cārē, dearly;\npulcher,  pulchrē, beautifully;\nācer,  ācriter, fiercely;\nlevis,  leviter, lightly.\na. But Adjectives in -ns, and a few others, add -er (instead of -iter), to form the Adverb; as,—\nsapiēns,  sapienter, wisely;\nsollers,  sollerter, skillfully.\nNote audāx, audācter, boldly.\n2. The Comparative of all Adverbs regularly consists of the Accusative Singular Neuter of the Comparative of the Adjective; while the Superlative of the Adverb is formed by changing the -ī of the Genitive Singular of the Superlative of the Adjective to -ē. …"
+ },
+ {
+  "id": "bn-078-numerals",
+  "ref": "78-81",
+  "title": "Numerals",
+  "family": "adj",
+  "order": 140,
+  "text": "Numerals may be divided into—\nI. Numeral Adjectives, comprising—\na. Cardinals; as, ūnus, one; duo, two; etc.\nb. Ordinals; as, prīmus, first; secundus, second; etc.\nc. Distributives; as, singulī, one by one; bīnī, two by two; etc.\nII. Numeral Adverbs; as, semel, once; bis, twice; etc.\nTABLE OF NUMERAL ADJECTIVES AND ADVERBS.\nCARDINALS.  ORDINALS.\n1.  ūnus, ūna, ūnum  prīmus, first\n2.  duo, duae, duo  secundus, second\n3.  trēs, tria  tertius, third\n4.  quattuor  quārtus, fourth\n5.  quīnque  quīntus, fifth\n6.  sex  sextus\n7.  septem  septimus\n8.  octo  octāvus\n9.  novem  nōnus\n10.  decem  decimus\n11.  ūndecim  ūndecimus\n12.  duodecim  duodecimus\n13.  tredecim  tertius decimus\n14.  quattuordecim  quārtus decimus\n15.  quīndecim  quīntus decimus\n16.  sēdecim,  sextus decimus\nsexdecim\n17.  septendecim  septimus decimus\n18.  duodēvīgintī  duodēvīcēsimus\n19.  ūndēvīgintī  ūndēvīcēsimus\n20.  vīgintī  vīcēsimus\n21.  vīgintī ūnus,  vīcēsimus prīmus,\nūnus et vīgintī  ūnus et vīcēsimus\n22.  vīgintī duo,  vīcēsimus secundus,\nduo et vīgintī  alter et vīcēsimus\n30.  trīgintā  trīcēsimus\n40.  quadrāgintā  quadrāgēsimus\n50.  quīnquāgintā  quīnquāgēsimus\n60.  sexāgintā  sexāgēsimus\n70. …"
+ },
+ {
+  "id": "bn-084-personal-pronouns",
+  "ref": "84",
+  "title": "Personal Pronouns",
+  "family": "pron",
+  "order": 150,
+  "text": "These correspond to the English I, you, he, she, it, etc., and are declined as follows:—\nFirst Person.  Second Person.  Third Person.\nSINGULAR.\nNom.  ego, I  tū, thou  is, he; ea, she; id,\nit\nGen.  meī  tuī  (For declension see § 87.)\nDat.  mihi  tibi\nAcc.  mē  tē\nVoc.  ——  tū\nAbl.  mē  tē\nPLURAL.\nNom.  nōs, we  vōs, you\nGen.  nostrum, nostrī  vestrum, vestrī\nDat.  nōbīs  vōbīs\nAcc.  nōs  vōs\nVoc.  ——  vōs\nAbl.  nōbīs  vōbīs\n1. A Dative Singular mī occurs in poetry.\n2. Emphatic forms in -met are occasionally found; as, egomet, I myself; tibimet, to you yourself; tū has tūte and tūtemet (written also tūtimet).\n3. In early Latin, mēd and tēd occur as Accusative and Ablative forms."
+ },
+ {
+  "id": "bn-085-reflexive-pronouns",
+  "ref": "85",
+  "title": "Reflexive Pronouns",
+  "family": "pron",
+  "order": 160,
+  "text": "These refer to the subject of the sentence or clause in which they stand; like myself, yourself, in 'I see myself,' etc. They are declined as follows:—\nFirst Person.  Second Person.  Third Person.\nSupplied by oblique  Supplied by oblique\ncases of ego.  cases of tū.\nGen.  meī, of myself  tuī, of thyself  suī\nDat.  mihi, to myself  tibi, to thyself  sibi\nAcc.  mē, myself  tē, thyself  sē or sēsē\nVoc.  ——  ——  ——\nAbl.  mē, with myself,  tē, with thyself,  sē or sēsē\netc.  etc.\n1. The Reflexive of the Third Person serves for all genders and for both numbers. Thus sui may mean, of himself, herself, itself, or of themselves; and so with the other forms.\n2. All of the Reflexive Pronouns have at times a reciprocal force; as,—\ninter sē pugnant, they fight with each other.\n3. In early Latin, sēd occurs as Accusative and Ablative."
+ },
+ {
+  "id": "bn-086-possessive-pronouns",
+  "ref": "86",
+  "title": "Possessive Pronouns",
+  "family": "pron",
+  "order": 170,
+  "text": "These are strictly adjectives of the First and Second Declensions, and are inflected as such. They are—\nFirst Person.  Second Person.\nmeus, -a, -um, my;  tuus, -a, -um, thy;\nnoster, nostra, nostrum,  vester, vestra, vestrum,\nour;  your;\nThird Person. suus, -a, -um, his, her, its, their.\n1. Suus is exclusively Reflexive; as,—\npater līberōs suōs amat, the father loves his children.\nOtherwise, his, her, its are regularly expressed by the Genitive Singular of is, viz. ejus; and their by the Genitive Plural, eōrum, eārum.\n2. The Vocative Singular Masculine of meus is mī.\n3. The enclitic -pte may be joined to the Ablative Singular of the Possessive Pronouns for the purpose of emphasis. This is particularly common in case of suō, suā; as, suōpte, suāpte."
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns",
+  "ref": "87",
+  "title": "Demonstrative Pronouns",
+  "family": "pron",
+  "order": 180,
+  "text": "These point out an object as here or there, or as previously mentioned. They are—\nhīc, this (where I am); iste, that (where you are); ille, that (something distinct from the speaker); is, that (weaker than ille); īdem, the same.\nHīc, iste, and ille are accordingly the Demonstratives of the First, Second, and Third Persons respectively.\nHīc, this.\nSINGULAR  PLURAL.\nMASCULINE.  FEMININE.  NEUTER.  MASCULINE.  FEMININE.  NEUTER.\nNom.  hīc  haec  hōc  hī  hae  haec\nGen.  hūjus  hūjus  hūjus  hōrum  hārum  hōrum\nDat.  huic  huic  huic  hīs  hīs  hīs\nAcc.  hunc  hanc  hōc  hōs  hās  haec\nAbl.  hōc  hāc  hōc  hīs  hīs  hīs\nIste, that, that of yours.\nSINGULAR.  PLURAL.\nMASCULINE.  FEMININE.  NEUTER.  MASCULINE.  FEMININE.  NEUTER.\nNom.  iste  ista  istud  istī  istae  ista\nGen.  istīus  istīus  istīus  istōrum  istārum  istōrum\nDat.  istī  istī  istī  istīs  istīs  istīs\nAcc.  istum  istam  istud  istōs  istās  ista\nAbl.  istō  istā  istō  istīs  istīs  istīs\nIlle (archaic olle), that, that one, he, is declined like iste.\nIs, he, this, that.\nSINGULAR  PLURAL.\nMASCULINE.  FEMININE.  NEUTER.  MASCULINE.  FEMININE.  NEUTER.\nNom.  is  ea  id  eī, iī,  eae  ea\n(ī)\nGen. …"
+ },
+ {
+  "id": "bn-088-the-intensive-pronoun",
+  "ref": "88",
+  "title": "The Intensive Pronoun",
+  "family": "pron",
+  "order": 190,
+  "text": "The Intensive Pronoun in Latin is ipse. It corresponds to the English myself, etc., in 'I myself, he himself.'\nSINGULAR  PLURAL.\nMASCULINE.  FEMININE.  NEUTER.  MASCULINE.  FEMININE.  NEUTER.\nNom.  ipse  ipsa  ipsum  ipsī  ipsae  ipsa\nGen.  ipsīus  ipsīus  ipsīus  ipsōrum  ipsārum  ipsōrum\nDat.  ipsī  ipsī  ipsī  ipsīs  ipsīs  ipsīs\nAcc.  ipsum  ipsam  ipsum  ipsōs  ipsās  ipsa\nAbl.  ipsō  ipsā  ipsō  ipsīs  ipsīs  ipsīs"
+ },
+ {
+  "id": "bn-089-the-relative-pronoun",
+  "ref": "89",
+  "title": "The Relative Pronoun",
+  "family": "pron",
+  "order": 200,
+  "text": "The Relative Pronoun is quī, who. It is declined:—\nSINGULAR  PLURAL.\nMASCULINE.  FEMININE.  NEUTER.  MASCULINE.  FEMININE.  NEUTER.\nNom.  quī  quae  quod  quī  quae  quae\nGen.  cūjus  cūjus  cūjus  quōrum  quārum  quōrum\nDat.  cui  cui  cui  quibus  quibus  quibus\nAcc.  quem  quam  quod  quōs  quās  quae\nAbl.  quō  quā  quō  quibus  quibus  quibus"
+ },
+ {
+  "id": "bn-090-interrogative-pronouns",
+  "ref": "90",
+  "title": "Interrogative Pronouns",
+  "family": "pron",
+  "order": 210,
+  "text": "The Interrogative Pronouns are quis, who? (substantive) and quī, what? what kind of? (adjective).\n1. Quis, who?\nSINGULAR.  PLURAL.\nMASC. AND FEM.  NEUTER\nNom.  quis  quid  The rare Plural\nGen.  cūjus  cūjus  follows the declension\nDat.  cui  cui  of the Relative Pronoun.\nAcc.  quem  quid\nAbl.  quō  quō\n2. Quī, what? what kind of? is declined precisely like the Relative Pronoun; viz. quī, quae, quod, etc.\na. An old Ablative quī occurs, in the sense of how? why?\nb. Quī is sometimes used for quis in Indirect Questions.\nc. Quis, when limiting words denoting persons, is sometimes an adjective. But in such cases quis homō = what man? whereas quī homō = what sort of man?\nd. Quis and quī may be strengthened by adding -nam. Thus:—\nSubstantive:  quisnam, who, pray? quidnam, what, pray?\nAdjective:  quīnam, quaenam, quodnam, of what kind, pray?"
+ },
+ {
+  "id": "bn-091-indefinite-pronouns",
+  "ref": "91",
+  "title": "Indefinite Pronouns",
+  "family": "pron",
+  "order": 220,
+  "text": "These have the general force of some one, any one.\nSUBSTANTIVES.  ADJECTIVES.\nM. AND F.  NEUT.  MASC.  FEM.  NEUT.\nquis,  quid,  quī,  quae, qua,  quod,\nany one, anything.  any.\naliquis,  aliquid,  aliquī,  aliqua,  aliquod,\nsome one,  any.\nsomething.\nquisquam,  quidquam,  quisquam,  quidquam,\nany one, anything.  any (rare)\nquispiam,  quidpiam,  quispiam,  quaepiam,  quodpiam,\nany one, anything.  any.\nquisque,  quidque,  quisque,  quaeque,  quodque,\neach.  each.\nquīvīs,  quaevīs,  quidvīs,  quīvis,  quaevīs,  quodvis,\nquīlibet,  quaelibet,  quidlibet  quilibet,  quaelibet,  quodlibet,\nany one (anything)  any you wish\nyou wish\nquīdam,  quaedam,  quiddam,  quīdam,  quaedam,  quoddam,\na certain person, or  a certain\nthing.\n1. In the Indefinite Pronouns, only the pronominal part is declined. Thus: Genitive Singular alicūjus, cūjuslibet, etc.\n2. Note that aliquī has aliqua in the Nominative Singular Feminine, also in the Nominative and Accusative Plural Neuter. Quī has both qua and quae in these same cases.\n3. Quīdam forms Accusative Singular quendam, quandam; Genitive Plural quōrundam, quārundam; the m being assimilated to n before d.\n4. …"
+ },
+ {
+  "id": "bn-092-pronominal-adjectives",
+  "ref": "92-96",
+  "title": "Pronominal Adjectives",
+  "family": "pron",
+  "order": 230,
+  "text": "The following adjectives, also, frequently have pronominal force:—\n1.  alius, another;  alter, the other;\nuter, which of two? (interr.);  neuter, neither;\nwhichever of two (rel.);\nūnus, one;  nūllus, no one (in oblique\ncases)\n2. The compounds,—\nuterque, utraque, utrumque, each of two; utercumque, utracumque, utrumcumque, whoever of two; uterlibet, utralibet, utrumlibet, either one you please; utervīs, utravīs, utrumvīs, either one you please; alteruter, alterutra, alterutrum, the one or the other.\nIn these, uter alone is declined. The rest of the word remains unchanged, except in case of alteruter, which may decline both parts; as,—\nNom.  alteruter  altera utra  alterum utrum\nGen.  alterius utrīus, etc.\nA Verb is a word which asserts something; as, est, he is; amat, he loves. The Inflection of Verbs is called Conjugation.\nVerbs have Voice, Mood, Tense, Number, and Person:—\n1. Two Voices,—Active and Passive.\n2. Three Moods,—Indicative, Subjunctive, Imperative.\n3. Six Tenses,—\nPresent,  Perfect,\nImperfect,  Pluperfect,\nFuture,  Future\nPerfect.\nBut the Subjunctive lacks the Future and Future Perfect; while the Imperative employs only the Present and Future.\n4. …"
+ },
+ {
+  "id": "bn-097-verb-stems",
+  "ref": "97",
+  "title": "Verb Stems",
+  "family": "verb-forms",
+  "order": 240,
+  "text": "Conjugation consists in appending certain endings to the Stem. We distinguish three different stems in a fully inflected verb,—\nI. Present Stem, from which are formed— 1. Present, Imperfect, and Future Indicative, 2. Present and Imperfect Subjunctive, 3. The Imperative, 4. The Present Infinitive, - (Active and Passive.) 5. The Present Active Participle, the Gerund, and Gerundive. II. Perfect Stem, from which are formed— 1. Perfect, Pluperfect, and Future Perfect Indicative, 2. Perfect and Pluperfect Subjunctive, 3. Perfect Infinitive, - (Active.) III. Participial Stem, from which are formed— 1. Perfect Participle, 2. Perfect, Pluperfect, and Future Perfect Indicative, 3. Perfect and Pluperfect Subjunctive, 4. Perfect Infinitive, - (Passive.)\nApparently from the same stem, though really of different origin, are the Supine, the Future Active Participle, the Future Infinitive Active and Passive."
+ },
+ {
+  "id": "bn-098-the-four-conjugations",
+  "ref": "98-99",
+  "title": "The Four Conjugations",
+  "family": "verb-forms",
+  "order": 250,
+  "text": "There are in Latin four regular Conjugations, distinguished from each other by the vowel of the termination of the Present Infinitive Active, as follows:—\nINFINITIVE  DISTINGUISHING\nCONJUGATION.  TERMINATION.  VOWEL.\nI.  -āre  ā\nII.  -ēre  ē\nIII.  -ĕre  ĕ\nIV.  -īre  ī\nPRINCIPAL PARTS. The Present Indicative, Present Infinitive, Perfect Indicative, and the Perfect Participle constitute the Principal Parts of a Latin verb,—so called because they contain the different stems, from which the full conjugation of the verb may be derived."
+ },
+ {
+  "id": "bn-100-conjugation-of-sum",
+  "ref": "100",
+  "title": "Conjugation of Sum",
+  "family": "verb-forms",
+  "order": 260,
+  "text": "The irregular verb sum is so important for the conjugation of all other verbs that its inflection is given at the outset.\nPRES. IND.  PRES. INF.  PERF. IND.  FUT. PARTIC.\nsum  esse  fuī  futūrus\nSINGULAR.  PLURAL.\nsum, I am,  sumus, we are,\nes, thou art,  estis, you are,\nest, he is;  sunt, they are.\neram, I was,  erāmus, we were,\nerās, thou wast,  erātis, you were,\nerat, he was;  erant, they were.\nerō, I shall be,  erimus, we shall be,\neris, thou wilt be,  eritis, you will be,\nerit, he will be;  erunt, they will be.\nfuī, I have been, I was,  fuimus, we have been, we were,\nfuistī, thou hast been, thou  fuistis, you have been, you\nwast,  were,\nfuit, he has been, he was;  fuērunt, fuēre,\nthey have been, they were.\nfueram, I had been,  fuerāmus, we had been,\nfuerās, thou hadst been,  fuerātis, you had been,\nfuerat, he had been;  fuerant, they had been.\nfuerō, I shall have been,  fuerimus, we shall have been,\nfueris, thou wilt have been,  fueritis, you will have been,\nfuerit, he will have been;  fuerint, they will have been.\nSUBJUNCTIVE.\nSINGULAR. …"
+ },
+ {
+  "id": "bn-101-first-conjugation-active-amo",
+  "ref": "101",
+  "title": "First conjugation, active — Amō",
+  "family": "verb-forms",
+  "order": 270,
+  "text": "Active Voice.—Amō, I love.\nPRES. IND.  PRES. INF.  PERF. IND.  PERF. PASS. PARTIC.\namō  amāre  amāvī  amātus\nSINGULAR.  PLURAL.\namō, I love,  amāmus, we love,\namās, you love,  amātis, you love,\namat, he loves;  amant, they love.\namābam, I was loving,  amābāmus, we were loving,\namābās, you were loving,  amābātis, you were loving,\namābat, he was loving;  amābant, they were loving\namābō, I shall love,  amābimus, we shall love,\namābis, you will love,  amābitis, you will love,\namābit, he will love;  amābunt, they will love.\namāvī, I have loved, I loved,  amāvimus, we have loved, we\nloved,\namāvistī, you have loved, you  amāvistis, you have loved, you\nloved  loved,\namāvit, he has loved, he loved;  amāvērunt, -ēre, they have\nloved, they loved.\namāveram, I had loved,  amāverāmus, we had loved,\namāverās, you had loved,  amāverātis, you had loved,\namāverat, he had loved;  amāverant, they had loved.\namāverō, I shall have loved,  amāverimus, we shall have\nloved,\namāveris, you will have loved,  amāveritis, you will have\nloved,\namāverit, he will have loved;  amāverint, they will have\nloved. …"
+ },
+ {
+  "id": "bn-102-first-conjugation-passive-amor",
+  "ref": "102",
+  "title": "First conjugation, passive — Amor",
+  "family": "verb-forms",
+  "order": 280,
+  "text": "Passive Voice.—Amor, I am loved.\nPRES. IND.  PRES. INF.  PERF. IND.\namōr  amārī  amātus sum\nI am loved.\nSINGULAR.  PLURAL.\namor  amāmur\namāris  amāminī\namātur  amantur\nI was loved.\namābar  amābāmur\namābāris, or -re  amābāmini\namābātur  amābantur\nI shall be loved.\namābor  amābimur\namāberis, or -re  amābiminī\namābitur  amābuntur\nI have been loved, or I was loved.\namātus (-a, -um) sum  amātī (-ae, -a) sumus\namātus es  amātī estis\namātus est  amātī sunt\nI had been loved.\namātus eram  amātī erāmus\namātus erās  amātī erātis\namātus erat  amātī erant\nI shall have been loved.\namātus erō  amātī erimus\namātus eris  amātī eritis\namātus erit  amātī erunt\nMay I be loved, let him be loved.\namer  amēmur\namēris, or -re  amēmini\namētur  amentur\nI should be loved, he would be loved.\namārer  amārēmur\namārēris, or -re  amārēminī\namārētur  amārentur\nI may have been loved.\namātus sim  amātī sīmus\namātus sīs  amāti sītis\namātus sit  amāti sint\nI should have been loved, he would have been loved.\namātus essem  amātī essēmus\namātus essēs  amātī essētis\namātus esset  amāti essent\nPres.  amāre, be thou  amāminī, be ye loved.\nloved;\nFut. …"
+ },
+ {
+  "id": "bn-103-second-conjugation-active-moneo",
+  "ref": "103",
+  "title": "Second conjugation, active — Moneō",
+  "family": "verb-forms",
+  "order": 290,
+  "text": "Active voice.—Moneō, I advise.\nPRES. IND.  PRES. INF.  PERF. IND.  PERF. PASS. PARTIC.\nmoneō  monēre  monuī  monitus\nI advise.\nSINGULAR.  PLURAL.\nmoneō  monēmus\nmonēs  monētis\nmonet  monent\nI was advising, or I advised.\nmonēbam  monēbāmus\nmonēbās  monēbātis\nmonēbat  monēbant\nI shall advise.\nmonēbō  monēbimus\nmonēbis  monēbitis\nmonēbit  monēbunt\nI have advised, or I advised.\nmonuī  monuimus\nmonuistī  monuistis\nmonuit  monuērunt, or -ēre\nI had advised.\nmonueram  monuerāmus\nmonuerās  monuerātis\nmonuerat  monuerant\nI shall have advised.\nmonuerō  monuerimus\nmonueris  monueritis\nmonuerit  monuerint\nMay I advise, let him advise.\nmoneam  moneāmus\nmoneās  moneātis\nmoneat  moneant\nI should advise, he would advise.\nmonērem  monērēmus\nmonērēs  monērētis\nmonēret  monērent\nI may have advised.\nmonuerim  monuerīmus\nmonuerīs  monuerītis\nmonuerit  monuerint\nI should have advised, he would have advised.\nmonuissem  monuissēmus\nmonuissēs  monuissētis\nmonuisset  monuissent\nPres.  monē, advise thou;  monēte, advise ye.\nFut.  monētō, thou shall  monētōte, ye shall advise,\nadvise,\nmonētō, he shall advise;  monentō, they shall advise.\nINFINITIVE.  PARTICIPLE.\nPres.  monēre, to advise.  Pres. …"
+ },
+ {
+  "id": "bn-104-second-conjugation-passive-moneor",
+  "ref": "104",
+  "title": "Second conjugation, passive — Moneor",
+  "family": "verb-forms",
+  "order": 300,
+  "text": "Passive voice.—Moneor, I am advised.\nPRES. IND.  PRES. INF.  PERF. IND.\nmoneor  monērī  monitus sum\nI am advised.\nSINGULAR.  PLURAL.\nmoneor  monēmur\nmonēris  monēminī\nmonētur  monentur\nI was advised.\nmonēbar  monēbāmur\nmonēbāris, or -re  monēbāminī\nmonēbātur  monēbantur\nI shall be advised.\nmonēbor  monēbimur\nmonēberis, or -re  monēbiminī\nmonēbitur  monēbuntur\nI have been advised, I was advised.\nmonitus sum  monitī sumus\nmonitus es  monitī estis\nmonitus est  monitī sunt\nI had been advised.\nmonitus eram  monitī erāmus\nmonitus erās  monitī erātis\nmonitus erat  monitī erant\nI shall have been advised.\nmonitus erō  monitī erimus\nmonitus eris  monitī eritis\nmonitus erit  monitī erunt\nMay I be advised, let him be advised.\nmonear  moneāmur\nmoneāris, or -re  moneāminī\nmoneātur  moneantur\nI should be advised, he would be advised.\nmonērer  monērēmur\nmonērēris, or -re  monērēminī\nmonērētur  monērentur\nI may have been advised.\nmonitus sim  monitī sīmus\nmonitus sīs  monitī sītis\nmonitus sit  monitī sint\nI should have been advised, he would have been advised.\nmonitus essem  monitī essēmus\nmonitus essēs  monitī essētis\nmonitus esset  monitī essent\nPres. …"
+ },
+ {
+  "id": "bn-105-third-conjugation-active-rego",
+  "ref": "105",
+  "title": "Third conjugation, active — Regō",
+  "family": "verb-forms",
+  "order": 310,
+  "text": "Active Voice.—Regō, I rule.\nPRES. IND.  PRES. INF.  PERF. IND.  PERF. PASS. PARTIC.\nregō  regere  rēxī  rēctus\nI rule\nSINGULAR.  PLURAL.\nregō  regimus\nregis  regitis\nregit  regunt\nI was ruling, or I ruled.\nregēbam  regēbāmus\nregēbās  regēbātis\nregēbat  regēbant\nI shall rule.\nregam  regēmus\nregēs  regētis\nreget  regent\nI have ruled, or I ruled\nrēxī  rēximus\nrēxistī  rēxistis\nrēxit  rēxērunt, or -ēre\nI had ruled.\nrēxeram  rēxerāmus\nrēxerās  rēxerātis\nrēxerat  rēxerant\nI shall have ruled.\nrēxerō  rēxerimus\nrēxeris  rēxeritis\nrēxerit  rēxerint\nMay I rule, let him rule.\nregam  regāmus\nregās  regātis\nregat  regant\nI should rule, he would rule.\nregerem  regerēmus\nregerēs  regerētis\nregeret  regerent\nI may have ruled.\nrēxerim  rēxerīmus\nrēxerīs  rēxerītis\nrēxerit  rēxerint\nI should have ruled, he would have ruled.\nrēxissem  rēxissēmus\nrēxissēs  rēxissētis\nrēxisset  rēxissent\nrege, rule thou;  regite, rule ye.\nregitō, thou shall rule,  regitōte, ye shall rule,\nregitō, he shall rule;  reguntō, they shall rule.\nINFINITIVE.  PARTICIPLE.\nregere, to rule.  Pres.  regēns, ruling.\nrēxisse, to have ruled.  (Gen. regentis.)\nrēctūrus esse, to be about to  Fut.  rēctūrus, about to\nrule  rule.\nGERUND. …"
+ },
+ {
+  "id": "bn-106-third-conjugation-passive-regor",
+  "ref": "106",
+  "title": "Third conjugation, passive — Regor",
+  "family": "verb-forms",
+  "order": 320,
+  "text": "Passive Voice.—Regor, I am ruled.\nPRES. IND.  PRES. INF.  PERF. IND.\nregor  regī  rēctus sum\nI am ruled.\nSINGULAR.  PLURAL.\nregor  regimur\nregeris  regiminī\nregitur  reguntur\nI was ruled.\nregēbar  regēbāmur\nregēbāris, or -re  regēbāminī\nregēbātur  regēbantur\nI shall be ruled.\nregar  regēmur\nregēris, or -re  regēminī\nregētur  regentur\nI have been ruled, or I was ruled.\nrēctus sum  rēctī sumus\nrēctus es  rēctī estis\nrēctus est  rēctī sunt\nI had been ruled.\nrēctus eram  rēctī erāmus\nrēctus erās  rēctī erātis\nrēctus erat  rēctī erant\nI shall have been ruled\nrēctus erō  rēctī erimus\nrēctus eris  rēctī eritis\nrēctus erit  rēctī erunt\nMay I be ruled, let him be ruled.\nregar  regāmur\nregāris, or -re  regāminī\nregātur  regantur\nI should be ruled, he would be ruled.\nregerer  regerēmur\nregerēris, or -re  regerēminī\nregerētur  regerentur\nI may have been ruled.\nrēctus sim  rēctī sīmus\nrēctus sīs  rēctī sītis\nrēctus sit  rēctī sint\nI should have been ruled, he would have been ruled.\nrēctus essem  rēctī essēmus\nrēctus essēs  rectī essētis\nrēctus esset  rectī essent\nPres.  regere, be thou ruled;  regiminī, be ye ruled.\nFut. …"
+ },
+ {
+  "id": "bn-107-fourth-conjugation-active-audio",
+  "ref": "107",
+  "title": "Fourth conjugation, active — Audiō",
+  "family": "verb-forms",
+  "order": 330,
+  "text": "Active voice.—Audiō, I hear.\nPRES. IND.  PRES. INF.  PERF. IND.  PERF. PASS. PARTIC.\naudiō  audīre  audīvī  audītus\nI hear.\nSINGULAR.  PLURAL.\naudiō  audīmus\naudīs  audītis\naudit  audiunt\nI was hearing, or I heard.\naudiēbam  audiēbāmus\naudiēbās  audiēbātis\naudiēbat  audiēbant\nI shall hear.\naudiam  audiēmus\naudiēs  audiētis\naudiet  audient\nI have heard, or I heard.\naudīvī  audīvimus\naudīvistī  audīvistis\naudīvit  audīvērunt, or -ēre\nI had heard.\naudīveram  audīverāmus\naudīverās  audīverātis\naudīverat  audīverant\nI shall have heard.\naudīverō  audīverimus\naudīveris  audīveritis\naudīverit  audīverint\nMay I hear, let him hear.\naudiam  audiāmus\naudiās  audiātis\naudiat  audiant\nI should hear, he would hear.\naudīrem  audīrēmus\naudīrēs  audīrētis\naudīret  audīrent\nI may have heard.\naudīverim  audīverīmus\naudīverīs  audīverītis\naudīverit  audīverint\nI should have heard, he would have heard.\naudīvissem  audīvissēmus\naudīvissēs  audīvissētis\naudīvisset  audīvissent\nPres.  audī, hear thou;  audīte, hear ye.\nFut.  audītō, thou shalt hear,  audītōte, ye shall hear,\naudītō, he shall hear;  audiuntō, they shall hear.\nINFINITIVE.  PARTICIPLE.\nPres.  audīre, to hear.  Pres.  audiēns, hearing.\nPerf. …"
+ },
+ {
+  "id": "bn-108-fourth-conjugation-passive-audior",
+  "ref": "108",
+  "title": "Fourth conjugation, passive — Audior",
+  "family": "verb-forms",
+  "order": 340,
+  "text": "Passive Voice.—Audior, I am heard.\nPRES. IND.  PRES. INF.  PERF. IND.\naudior  audīrī  audītus sum\nI am heard.\nSINGULAR.  PLURAL.\naudior  audīmur\naudīris  audīminī\naudītur  audiuntur\nI was heard.\naudiēbar  audiēbāmur\naudiēbāris, or -re  audiēbāminī\naudiēbātur  audiēbantur\nI shall be heard.\naudiar  audiēmur\naudiēris, or -re  audiēminī\naudiētur  audientur\nI have been heard, or I was heard.\naudītus sum  audītī sumus\naudītus es  audītī estis\naudītus est  audītī sunt\nI had been heard.\naudītus eram  audītī erāmus\naudītus erās  audītī erātis\naudītus erat  audītī erant\nI shall have been heard.\naudītus erō  audītī erimus\naudītus eris  audītī eritis\naudītus erit  audītī erunt\nMay I be heard, let him be heard.\naudiar  audiāmur\naudiāris, or -re  audiāminī\naudiātur  audiantur\nI should be heard, he would be heard.\naudīrer  audīrēmur\naudīrēris, or -re  audirēminī\naudīrētur  audīrentur\nI may have been heard.\naudītus sim  audītī sīmus\naudītus sīs  audītī sītis\naudītus sit  audītī sint\nI should have been heard, he would have been heard.\naudītus essem  audītī essēmus\naudītus essēs  audītī essētis\naudītus esset  audītī essent\nPres.  audīre, be thou heard;  audīminī, be ye heard.\nFut. …"
+ },
+ {
+  "id": "bn-109-verbs-in-io-of-the-third-conjugation",
+  "ref": "109-110",
+  "title": "Verbs in -iō of the Third Conjugation",
+  "family": "verb-forms",
+  "order": 350,
+  "text": "1. Verbs in -iō of the Third Conjugation take the endings of the Fourth Conjugation wherever the latter endings have two successive vowels. This occurs only in the Present System.\n2. Here belong—\na) capiō, to take; cupiō, to desire; faciō, to make; fodiō, to dig; fugiō, to flee; jaciō, to throw; pariō, to bear; quatiō, to shake; rapiō, to seize; sapiō, to taste.\nb) Compounds of laciō and speciō (both ante-classical); as, alliciō, entice; cōnspiciō, behold.\nc) The deponents gradior, to go; morior, to die, patior, to suffer.\nActive voice.—Capiō, I take.\nPRES. IND.  PRES. INF.  PERF. IND.  PERF. PASS. PARTIC.\ncapiō,  capere,  cēpī,  captus.\nSINGULAR.  PLURAL.\ncapiō, capis, capit;  capimus, capitis, capiunt.\ncapiēbam, -iēbās, -iēbat;  capiēbāmus, -iēbātis, -iēbant.\ncapiam, -iēs, -iet;  capiēmus, -iētis, -ient.\ncēpī, -istī, -it;  cēpimus, -istis, -ērunt or -ēre.\ncēperam, -erās, -erat;  cēperāmus, -erātis, -erant.\ncēperō, -eris, -erit;  cēperimus, -eritis, -erint.\ncapiam, -iās, -iat;  capiāmus, -iātis, -iant.\ncaperem, -erēs, -eret;  caperēmus, -erētis, -erent.\ncēperim, -eris, -erit;  cēperīmus, -erītis, -erint.\ncēpissem, -issēs, -isset;  cēpissēmus, -issētis, -issent.\nPres. …"
+ },
+ {
+  "id": "bn-111-third-conjugation-io-verbs-passive",
+  "ref": "111",
+  "title": "Third conjugation (-iō verbs), passive — Capior",
+  "family": "verb-forms",
+  "order": 360,
+  "text": "Passive Voice.—Capior, I am taken.\nPRES. IND.  PRES. INF.  PERF. IND.\ncapior,  capī,  captus sum.\nSINGULAR.  PLURAL.\ncapior, caperis, capitur;  capimur, capiminī, capiuntur.\ncapiēbar, -iēbāris, -iēbātur;  capiēbāmur, -iēbāminī, -iēbantur.\ncapiar, -iēris, -iētur;  capiēmur, -iēminī, -ientur.\ncaptus sum, es, est;  captī sumus, estis, sunt.\ncaptus eram, erās, erat;  captī erāmus, erātis, erant.\ncaptus erō, eris, erit;  captī erimus, eritis, erunt.\ncapiar, -iāris, -iātur;  capiāmur, -iāminī, -iantur.\ncaperer, -erēris, -erētur;  caperēmur, -erēminī, -erentur.\ncaptus sim, sīs, sit;  captī sīmus, sītis, sint.\ncaptus essem, essēs, esset;  captī essēmus, essētis, essent.\nPres.  capere;  capiminī.\nFut.  capitor,\ncapitor;  capiuntor.\nINFINITIVE.  PARTICIPLE.\nPres.  capī.\nPerf.  captus esse.  Perfect.  captus.\nFut.  captum īrī.  Gerundive.  capiendus."
+ },
+ {
+  "id": "bn-112-deponent-verbs",
+  "ref": "112-113",
+  "title": "Deponent Verbs",
+  "family": "verb-forms",
+  "order": 370,
+  "text": "Deponent Verbs have in the main Passive forms with Active or Neuter meaning. But—\na. They have the following Active forms: Future Infinitive, Present and Future Participles, Gerund, and Supine.\nb. They have the following Passive meanings: always in the Gerundive, and sometimes in the Perfect Passive Participle; as—\nsequendus, to be followed; adeptus, attained.\nParadigms of Deponent Verbs are—\nI. Conj.  mīror, mīrārī, mīrātus sum, admire.\nII. Conj.  vereor, vererī, veritus sum, fear.\nIII. Conj.  sequor, sequī, secūtus sum, follow.\nIV. Conj.  largior, largīrī, largītus sum, give.\nIII. (in -ior)  patior, patī, passus sum, suffer.\nI.  II.  III.  IV.  III (in\n-ior)\nPres.  mīror  vereor  sequor  largior  patior\nmīrāris  verēris  sequeris  largiris  pateris\nmīrātur  verētur  sequitur  largītur  patitur\nmīramur  verēmur  sequimur  largīmur  patimur\nmīrāminī  verēminī  sequiminī  largīminī  patiminī\nmīrantur  verentur  sequuntur  largiuntur  patiuntur\nImpf.  mīrābar  verēbar  sequēbar  largiēbar  patiēbar\nFut.  mīrābor  verēbor  sequar  largiar  patiar\nPerf.  mirātus sum  veritus sum  secūtus sum  largītus sum  passus sum\nPlup. …"
+ },
+ {
+  "id": "bn-114-semi-deponents",
+  "ref": "114",
+  "title": "Semi-deponents",
+  "family": "verb-forms",
+  "order": 380,
+  "text": "1. Semi-Deponents are verbs which have the Present System in the Active Voice, but the Perfect System in the Passive without change of meaning. Here belong—\naudeō,  audēre,  ausus sum, to dare.\ngaudeō,  gaudēre,  gāvīsus sum, to rejoice.\nsoleō,  solēre,  solitus sum, to be wont.\nfīdō,  fīdere,  fīsus sum, to trust.\n2. The following verbs have a Perfect Passive Participle with Active meaning:—\nadolēscō, grow up;  adultus, having grown up,\ncēnāre, dine;  cēnātus, having dined.\nplacēre, please;  placitus, having pleased, agreeable.\nprandēre, lunch;  prānsus, having lunched.\npōtāre, drink;  pōtus, having drunk.\njūrāre, swear;  jūrātus, having sworn.\na. Jūrātus is used in a passive sense also.\n3. Revertor and dēvertor both regularly form their Perfect in the Active Voice; viz.—\nrevertor,  revertī (Inf.),  revertī (Perf.), to return.\ndēvertor,  dēvertī (Inf.),  dēvertī (Perf.), to turn aside."
+ },
+ {
+  "id": "bn-115-periphrastic-conjugation",
+  "ref": "115",
+  "title": "Periphrastic Conjugation",
+  "family": "verb-forms",
+  "order": 390,
+  "text": "There are two Periphrastic Conjugations,—the Active and the Passive. The Active is formed by combining the Future Active Participle with the auxiliary sum, the Passive by combining the Gerundive with the same auxiliary.\nActive Periphrastic Conjugation.\nPres.  amātūrus (-a, -um) sum, I am about to love.\nInf.  amātūrus eram, I was about to love.\nFut.  amātūrus erō, I shall be about to love.\nPerf.  amātūrus fuī, I have been (was) about to love.\nPlup.  amātūrus fueram, I had been about to love.\nFut. P.  amātūrus fuerō, I shall have been about to love.\nPres.  amātūrus sim, may I be about to love.\nImp.  amātūrus essem, I should be about to love.\nPerf.  amātūrus fuerim, I may have been about to love.\nPlup.  amātūrus fuissem, I should have been about to love.\nPres.  amātūrus esse, to be about to love.\nPerf.  amātūrus fuisse, to have been about to love.\nPassive Periphrastic Conjugation.\nPres.  amandus (-a, -um) sum, I am to be loved, must be loved.\nImp.  amandus eram, I was to be loved.\nFut.  amandus erō, I shall deserve to be loved.\nPerf.  amandus fuī, I was to be loved.\nPlup.  amandus fueram, I had deserved to be loved.\nFut. P.  amandus fuerō, I shall have deserved to be loved.\nPres. …"
+ },
+ {
+  "id": "bn-116-peculiarities-of-conjugation",
+  "ref": "116",
+  "title": "Peculiarities of Conjugation",
+  "family": "verb-forms",
+  "order": 400,
+  "text": "1. Perfects in -āvī, -ēvī, and -īvī, with the forms derived from them, often drop the ve or vi before endings beginning with r or s. So also nōvī (from nōscō) and the compounds of mōvī (from moveō). Thus:—\namāvistī  amāstī  dēlēvistī  dēlēstī\namāvisse  amāsse  dēlēvisse  dēlēsse\namāvērunt  amārunt  dēlēvērunt  dēlērunt\namāverim  amārim  dēlēverim  dēlērim\namāveram  amāram  dēlēveram  dēlēram\namāverō  amārō  dēlēverō  dēlērō\nnōvistī  nōstī  nōverim  nōrim\nnōvisse  nōsse  nōveram  nōram\naudīvistī  audīstī  audīvisse  audīsse\n2. In the Gerund and Gerundive of the Third and Fourth Conjugations, the endings -undus, -undī, often occur instead of -endus and -endī, as faciundus, faciundī.\n3. Dīcō, dūcō, faciō, form the Imperatives, dīc, dūc, fac. But compounds of faciō form the Imperative in -fice, as cōnfice. Compounds of dīcō, dūcō, accent the ultima; as, ēdū´c, ēdī´c.\n4. Archaic and Poetic forms:—\na. The ending -ier in the Present Infinitive Passive; as, amārier, monērier, dīcier, for amārī, monērī, dīcī.\nb. The ending -ībam for -iēbam in Imperfects of the Fourth Conjugation, and -ībō for -iam in Futures; as, scībam, scībō, for sciēbam, sciam.\nc. …"
+ },
+ {
+  "id": "bn-117-formation-of-the-verb-stems",
+  "ref": "117-119",
+  "title": "Formation of the Verb Stems",
+  "family": "verb-forms",
+  "order": 410,
+  "text": "Many verbs employ the simple Verb Stem for the Present Stem; as, dīcere, amāre, monēre, audīre. Others modify the Verb Stem to form the Present, as follows:—\n1. By appending the vowels, ā, ē, ī; as,—\nPresent Stem  Verb Stem\njuvāre,  juvā-  juv-.\naugēre,  augē-  aug-.\nvincīre,  vincī-  vinc-.\n2. By adding i, as capiō, Present Stem capi- (Verb Stem cap-).\n3. By the insertion of n (m before labial-mutes) before the final consonant of the Verb Stem; as, fundō (Stem fud-), rumpō (Stem rup-).\n4. By appending -n to the Verb Stem; as,—\ncern-ō  pell-ō (for pel-nō).\n5. By appending t to the Verb Stem; as,—\nflect-ō.\n6. By appending sc to the Verb Stem; as,—\ncrēsc-ō.  scīsc-ō.\n7. By Reduplication, that is, by prefixing the initial consonant of the Verb Stem with i; as,—\ngi-gn-ō (root gen-),  si-st-ō (root sta-).\nFormation of the Perfect Stem.\nThe Perfect Stem is formed from the Verb Stem—\n1. By adding v (in case of Vowel Stems); as,—\namāv-ī,  dēlēv-ī,  audīv-ī.\n2. By adding u (in case of some Consonant Stems); as,—\nstrepu-ī,  genu-ī,  alu-ī.\n3. …"
+ },
+ {
+  "id": "bn-120-principal-parts-first-conjugation",
+  "ref": "120",
+  "title": "Principal parts: first conjugation",
+  "family": "verb-forms",
+  "order": 420,
+  "text": "I. PERFECT IN -VĪ.\namō  amāre  amāvī  amātus  love\nAll regular verbs of the First Conjugation follow this model.\npōtō  pōtāre  pōtāvī  pōtus (§ 114,  drink\n2)\ncrepō  crepāre  crepuī  crepitūrus  rattle\ncubō  cubāre  cubuī  cubitūrus  lie down\ndomō  domāre  domuī  domitus  tame\nfricō  fricāre  fricuī  frictus and  rub\nfricātus\nmicō  micāre  micuī  ——  glitter\ndīmicō  dīmicāre  dīmicāvī  dīmicātum  fight\n(est)\nex-plicō  explicāre  explicāvī  explicātus  unfold\n(-uī)  (-itus)\nim-plicō  implicāre  implicāvī  implicātus  entwine\n(-uī)  (-itus)\nsecō  secāre  secuī  sectus  cut\nsonō  sonāre  sonuī  sonātūrus  sound\ntonō  tonāre  tonuī  ——  thunder\nvetō  vetāre  vetuī  vetitus  forbid\njuvō  juvāre  jūvī  jūtus  help\nlavō  lavāre  lāvī  lautus  wash\nstō  stāre  stetī  stātūrus\nThese are all regular, and follow mīror, mīrārī, mīrātus sum.\nSecond (Ē-) Conjugation."
+ },
+ {
+  "id": "bn-121-principal-parts-second-conjugation",
+  "ref": "121",
+  "title": "Principal parts: second conjugation",
+  "family": "verb-forms",
+  "order": 430,
+  "text": "I. PERFECT IN -VĪ.\ndēleō  dēlēre  dēlēvī  dēlētus  destroy\nfleō  flēre  flēvī  flētus  weep, lament\ncom-pleō  complēre  complēvī  complētus  fill up\naboleō  abolēre  abolēvī  abolitus  destroy\ncieō  ciēre  cīvī  citus  set in motion\na. Type -eō, -ēre, -uī, -itus.\narceō  arcēre  arcuī  keep off\ncoerceō  coercēre  coercuī  coercitus  hold in check\nexerceō  exercēre  exercuī  exercitus  practise\ncaleō  calēre  caluī  calitūrus  be warm\ncareō  carēre  caruī  caritūrus  be without\ndoleō  dolēre  doluī  dolitūrus  grieve\nhabeō  habēre  habuī  habitus  have\ndēbeō  dēbēre  dēbuī  dēbitus  owe\npraebeō  praebēre  praebuī  praebitus  offer\njaceō  jacēre  jacuī  jacitūrus  lie\nmereō  merēre  meruī  meritus  earn, deserve\nmoneō  monēre  monuī  monitus  advise\nnoceō  nocēre  nocuī  nocitum (est)  injure\npāreō  pārēre  pāruī  pāritūrus  obey\nplaceō  placēre  placuī  placitūrus  please\ntaceō  tacēre  tacuī  tacitūrus  be silent\nterreō  terrēre  terruī  territus  frighten\nvaleō  valēre  valuī  valitūrus  be strong\nNOTE 1.—The following lack the Participial Stem:—\negeō  egēre  eguī  ——  want\nēmineō  ēminēre  ēminuī  ——  stand forth\nflōreō  flōrēre  flōruī  ——  bloom\nhorreō  horrēre  horruī  ——  bris …"
+ },
+ {
+  "id": "bn-122-principal-parts-third-conjugation",
+  "ref": "122",
+  "title": "Principal parts: third conjugation",
+  "family": "verb-forms",
+  "order": 440,
+  "text": "I. VERBS WITH PRESENT STEM ENDING IN A CONSONANT.\n1. Perfect in -sī.\na. Type -ō, -ĕre, -sī, -tus.\ncarpō  carpere  carpsī  carptus  pluck\nsculpō  sculpere  sculpsī  sculptus  chisel\nrēpō  rēpere  rēpsī  ——  creep\nserpō  serpere  serpsī  ——  crawl\nscribō  scribere  scrīpsī  scrīptus  write\nnūbō  nūbere  nūpsī  nūpta (woman  marry\nonly)\nregō  regere  rēxī  rēctus  govern\ntegō  tegere  tēxī  tēctus  cover\naf-flīgō  afflīgere  afflīxī  afflīctus  shatter\ndīcō  dīcere  dīxī  dictus  say\ndūcō  dūcere  dūxī  ductus  lead\ncoquō  coquere  coxī  coctus  cook\ntrahō  trahere  trāxī  trāctus  draw\nvehō  vehere  vexī  vectus  carry\ncingō  cingere  cīnxī  cīnctus  gird\ntingō  tingere  tīnxī  tīnctus  dip\njungō  jungere  jūnxī  jūnctus  join\nfingō  fingere  fīnxī  fīctus  would\npingō  pingere  pīnxī  pīctus  paint\nstringō  stringere  strīnxī  strictus  bind\n-stinguō  -stinguere  -stīnxī  -stīnctus  blot out\nunguō  unguere  ūnxī  ūnctus  anoint\nvīvō  vīvere  vīxī  vīctum (est)  live\ngerō  gerere  gessī  gestus  carry\nurō  ūrere  ussī  ūstus  burn\ntemnō  temnere  con-tempsī  con-temptus  despise\nb. …"
+ },
+ {
+  "id": "bn-123-principal-parts-fourth-conjugation",
+  "ref": "123",
+  "title": "Principal parts: fourth conjugation",
+  "family": "verb-forms",
+  "order": 450,
+  "text": "I. PERFECT ENDS IN -VĪ.\naudiō  audīre  audīvī  audītus  hear\nSo all regular Verbs of the Fourth Conjugation.\nsepeliō  sepelīre  sepelīvī  sepultus  bury\naperiō  aperīre  aperuī  apertus  open\noperiō  operīre  operuī  opertus  cover\nsaliō  salīre  saluī  ——  leap\nsaepiō  saepīre  saepsī  saeptus  hedge in\nsanciō  sancīre  sānxī  sānctus  ratify\nvinciō  vincīre  vinxī  vinctus  bind\namiciō  amicīre  ——  amictus  envelop\nfulciō  fulcīre  fulsī  fultus  prop up\nreferciō  refercīre  refersī  refertus  fill\nsarciō  sarcīre  sarsī  sartus  patch\nhauriō  haurīre  hausī  haustus  draw\nsentiō  sentīre  sēnsī  sēnsus  feel\nveniō  venīre  vēnī  ventum (est)  come\nadveniō  advenīre  advēnī  adventum (est)  arrive\ninveniō  invenīre  invēnī  inventus  find\nreperiō  reperīre  repperī  repertus  find\ncomperiō  comperīre  comperī  compertus  learn\nferiō  ferīre  ——  ——  strike\nēsuriō  ēsurīre  ——  ——  be hungry\nlargior  largīrī  largītus sum  bestow\nSo many others. …"
+ },
+ {
+  "id": "bn-124-irregular-verbs",
+  "ref": "124-126",
+  "title": "Irregular Verbs",
+  "family": "verb-forms",
+  "order": 460,
+  "text": "A number of Verbs are called Irregular. The most important are sum, dō, edō, ferō, volō, nōlō, mālō, eō, fīō. The peculiarity of these Verbs is that they append the personal endings in many forms directly to the stem, instead of employing a connecting vowel, as fer-s (2d Sing. of fer-ō), instead of fer-i-s. They are but the relics of what was once in Latin a large class of Verbs.\nThe Inflection of sum has already been given. Its various compounds are inflected in the same way. They are—\nabsum  abesse  āfuī  am absent\nPres. Partic. absēns (absentis), absent.\nadsum  adesse  adfuī  am present\ndēsum  deesse  dēfuī  am lacking\ninsum  inesse  īnfuī  am in\nintersum  interesse  interfuī  am among\npraesum  praeesse  praefuī  am in charge of\nPres. Partic. praesēns (praesentis), present\nobsum  obesse  obfuī  hinder\nprōsum  prōdesse  prōfuī  am of advantage\nsubsum  subesse  subfuī  am underneath\nsupersum  superesse  superfuī  am left\nNOTE.—Prōsum is compounded of prōd (earlier form of prō) and sum; the d disappears before consonants, as prōsumus; but prōdestis.\nPossum. …"
+ },
+ {
+  "id": "bn-127-do-i-give",
+  "ref": "127",
+  "title": "Dō — I give",
+  "family": "verb-forms",
+  "order": 470,
+  "text": "Dō, I give.\ndō,  dăre,  dedī,  dătus.\nActive Voice.\nSINGULAR.  PLURAL.\nPres.  dō, dās, dat;  dămus, dătis, dant.\nImp.  dăbam, etc.;  dăbāmus.\nFut.  dăbō, etc.;  dăbimus.\nPerf.  dedī;  dedimus.\nPlup.  dederam;  dederāmus.\nFut. P.  dederō;  dederimus.\nPres.  dem;  dēmus.\nImp.  dărem;  dărēmus.\nPerf.  dederim;  dederīmus.\nPlup.  dedissem;  dedissēmus.\nPres.  dā;  dăte.\nFut.  dătō;  dătōte.\ndătō.  dantō.\nINFINITIVE.  PARTICIPLE.\nPres.  dăre.  dāns.\nPerf.  dedisse.\nFut.  dătūrus esse.  dătūrus.\nGERUND.  SUPINE.\ndandī, etc.  dătum, dătū.\n1. The passive is inflected regularly with the short vowel. Thus: dărī, dătur, dărētur, etc.\n2. The archaic and poetic Present Subjunctive forms duim, duint, perduit, perduint, etc., are not from the root da-, but from du-, a collateral root of similar meaning."
+ },
+ {
+  "id": "bn-128-edo-i-eat",
+  "ref": "128",
+  "title": "Edō — I eat",
+  "family": "verb-forms",
+  "order": 480,
+  "text": "Edō, I eat.\nedō,  ēsse,  ēdī,  ēsus.\nActive Voice.\nPres.  edō,  edimus,\nēs,  ēstis,\nēst;  edunt.\nImp.  ēssem,  ēssēmus,\nēssēs,  ēssētis,\nēsset;  ēssent.\nPres.  ēs;  ēste.\nFut.  ēstō;  ēstōte.\nēstō;  eduntō.\nPres. ēsse.\nPassive Voice.\nPres. 3d Sing. ēstur.\nImp. 3d Sing. ēssētur.\n1. Observe the long vowel of the forms in ēs-, which alone distinguishes them from the corresponding forms of esse, to be.\n2. Note comedō, comēsse, comēdī, comēsus or comēstus, consume.\n3. The Present Subjunctive has edim, -īs, -it, etc., less often edam, -ās, etc."
+ },
+ {
+  "id": "bn-129-fero-i-bear",
+  "ref": "129",
+  "title": "Ferō — I bear",
+  "family": "verb-forms",
+  "order": 490,
+  "text": "Ferō, I bear.\nferō,  ferre,  tulī,  lātus.\nActive Voice.\nPLURAL. SINGULAR.\nPres.  ferō, fers, fert;  ferimus, fertis, ferunt.\nImp.  ferēbam;  ferēbāmus.\nFut.  feram;  ferēmus.\nPerf.  tulī;  tulimus.\nPlup.  tuleram;  tulerāmus.\nFut. P.  tulerō;  tulerimus.\nPres.  feram;  ferāmus.\nImp.  ferrem;  ferrēmus.\nPerf.  tulerim;  tulerīmus.\nPlup.  tulissem;  tulissēmus.\nPres.  fer;  ferte.\nFut.  fertō;  fertōte.\nfertō;  feruntō.\nINFINITIVE.  PARTICIPLE.\nPres.  ferre.  Pres.  ferēns.\nPerf.  tulisse.\nFut.  lātūrus esse.  Fut.  lātūrus.\nGERUND.  SUPINE.\nGen.  ferendī.\nDat.  ferendō.\nAcc.  ferendum.  Acc.  lātum.\nAbl.  ferendō.  Abl.  lātū.\nPassive Voice.\nferor,  ferrī,  lātus sum,  to be borne.\nPLURAL. SINGULAR.\nPres.  feror, ferris, fertur;  ferimur, feriminī, feruntur.\nImp.  ferēbar;  ferēbāmur.\nFut.  ferar;  ferēmur.\nPerf.  lātus sum;  lātī sumus.\nPlup.  lātus eram;  lātī erāmus.\nFut. P.  lātus erō;  lātī erimus.\nPres.  ferar;  ferāmur.\nImp.  ferrer;  ferrēmur.\nPerf.  lātus sim;  lātī sīmus.\nPlup.  lātus essem;  lātī essēmus.\nPres.  ferre;  ferimimī.\nFut.  fertor;  ——\nfertor;  feruntor.\nINFINITIVE.  PARTICIPLE.\nPres.  ferrī.\nPerf.  lātus esse.  Perf.  lātus.\nFut.  lātum īrī.  Fut. …"
+ },
+ {
+  "id": "bn-130-volo-nolo-malo",
+  "ref": "130",
+  "title": "Volō, nōlō, mālō",
+  "family": "verb-forms",
+  "order": 500,
+  "text": "volō, nōlō, mālō.\nvolō,  velle,  voluī,  to wish.\nnōlō,  nōlle,  nōluī,  to be unwilling.\nmālō,  mālle,  māluī,  to prefer.\nPres.  volō,  nōlō,  mālō,\nvīs,  nōn vīs,  māvīs,\nvult;  nōn vult;  māvult;\nvolumus,  nōlumus,  mālumus,\nvultis,  nōn vultis,  māvultis,\nvolunt.  nōlunt.  mālunt.\nImp.  volēbam.  nōlēbam.  mālēbam.\nFut.  volam.  nōlam.  mālam.\nPerf.  voluī.  nōluī.  māluī.\nPlup.  volueram.  nōlueram.  mālueram.\nFut. P.  voluerō.  nōluerō.  māluerō.\nPres.  velim, -īs, -it,  nōlim.  mālīm.\netc.\nInf.  vellem, -ēs, -et,  nōllem.  māllem.\netc.\nPerf.  voluerim.  nōluerim.  māluerim.\nPluf.  voluissem.  nōluissem.  māluissem.\nPres.  nōlī;  nōlīte.\nFut.  nōlītō;  nōlītōte.\nnōlītō;  nōluntō.\nPres.  velle.  nōlle.  mālle.\nPerf.  voluisse.  nōluisse.  māluisse\nPres.  volēns  nōlēns.  ——"
+ },
+ {
+  "id": "bn-131-fio",
+  "ref": "131",
+  "title": "Fīō",
+  "family": "verb-forms",
+  "order": 510,
+  "text": "Fīō.\nfīō,  fīerī,  factus sum,  to become, be\nmade.\nSINGULAR,  PLURAL.\nPres.  fīō, fīs, fit;  fīmus, fītis, fīunt.\nInf.  fīēbam;  fīēbāmus.\nFut.  fīam;  fīēmus.\nPerf.  factus sum;  factī sumus.\nPluf.  factus eram;  factī erāmus.\nFut. P.  factus erō;  factī erimus.\nPres.  fīam;  fīāmus.\nImp.  fierem;  fierēmus.\nPerf.  factus sim;  factī sīmus.\nPlup.  factus essem;  factī essēmus.\nPres.  fī;  fīte.\nPres.  fierī.\nPerf.  factus esse.  Perf.  factus.\nFut.  factum īrī.  Ger.  faciendus.\nNOTE.—A few isolated forms of compounds of fīō occur; as, dēfit lacks; īnfit, begins."
+ },
+ {
+  "id": "bn-132-eo",
+  "ref": "132",
+  "title": "Eō",
+  "family": "verb-forms",
+  "order": 520,
+  "text": "Eō.\neō,  īre,  īvī,  itum (est),  to go.\nSINGULAR.  PLURAL.\nPres.  eō, īs, it;  īmus, ītis, eunt.\nImp.  ībam;  ībāmus.\nFut.  ībō;  ībimus.\nPerf.  īvī (iī);  īvimus (iimus).\nPlup.  īveram (ieram);  īverāmus (ierāmus)\nFut. P.  īverō (ierō);  īverimus (ierimus).\nSINGULAR.  PLURAL.\nPres.  eam;  eāmus.\nInf.  īrem;  īrēmus.\nPerf.  īverim (ierim);  īverīmus (ierīmus).\nPluf.  īvissem (iissem, īssem);  īvissēmus (iissēmus, īssēmus).\nPres.  ī;  īte.\nFut.  ītō;  ītōte,\nītō;  euntō.\nINFINITIVE.  PARTICIPLE.\nPres.  īre.  Pres.  iēns.\nPerf.  īvisse (īsse).  (Gen. euntis.)\nFut.  itūrus esse.  Fut.  itūrus.  Gerundive, eundum.\nGERUND.  SUPINE.\neundī, etc.  itum, itū.\n1. Transitive compounds of eō admit the full Passive inflection; as adeor, adīris, adītur, etc.\nDefective Verbs lack certain forms. The following are the most important:—"
+ },
+ {
+  "id": "bn-133-defective-verbs",
+  "ref": "133",
+  "title": "Defective verbs",
+  "family": "verb-forms",
+  "order": 530,
+  "text": "USED MAINLY IN THE PERFECT SYSTEM.\nCoepī,  Meminī,  Ōdī,\nI have  I remember.  I hate.\nbegun.\nPerf.  coepī.  meminī.  ōdī.\nPlup.  coeperam.  memineram.  ōderam.\nFut. P.  coeperō.  meminerō.  ōderō.\nPerf.  coeperim.  meminerim.  ōderim.\nPluf.  coepissem.  meminissem.  ōdissem.\nSing. mementō; Plur. mementōte.\nPerf.  coepisse.  meminisse.  ōdisse.\nFut.  coeptūrus esse.  ōsūrus esse.\nPerf.  coeptus, begun.  ōsus.\nFut.  coeptūrus.  ōsūrus.\n1. When coepī governs a Passive Infinitive it usually takes the form coeptus est; as, amārī coeptus est, he began to be loved.\n2. Note that meminī and ōdī, though Perfect in form, are Present in sense. Similarly the Pluperfect and Future Perfect have the force of the Imperfect and Future; as, memineram, I remembered; ōderō, I shall hate."
+ },
+ {
+  "id": "bn-134-inquam",
+  "ref": "134",
+  "title": "Inquam",
+  "family": "verb-forms",
+  "order": 540,
+  "text": "Inquam, I say (inserted between words of a direct quotation)\nSINGULAR.  PLURAL.\nPres.  inquam,  ——\ninquis,  ——\ninquit;  inquiunt.\nFut.  ——  ——\ninquiēs,  ——\ninquiet.  ——\nPerf. 3d Sing. inquit."
+ },
+ {
+  "id": "bn-135-ajo-i-say",
+  "ref": "135",
+  "title": "Ajō — I say",
+  "family": "verb-forms",
+  "order": 550,
+  "text": "Ajō, I say.\nSINGULAR.  PLURAL\nPres.  ajō,  ——\naīs,  ——\nait;  ajunt.\nImp.  ajēbam,  ajēbāmus,\najēbās,  ajēbātis,\najēbat;  ajēbant.\nPerf 3d Sing. aït.\nPres 3d Sing. ajat.\nNOTE.—For aīsne, do you mean? aīn is common."
+ },
+ {
+  "id": "bn-136-fari-to-speak",
+  "ref": "136",
+  "title": "Fārī — to speak",
+  "family": "verb-forms",
+  "order": 560,
+  "text": "Fārī, to speak.\nThis is inflected regularly in the perfect tenses. In the Present System it has—\nSINGULAR.  PLURAL.\nPres.  ——  ——\n——  ——\nfātur.  ——\nFut.  fābor,  ——\n——  ——\nfābitur.  ——\nImpv.  fāre.\nInf.  fārī.\nPres.  fantis, fantī, etc.\nPartic.\nGerund,  fandī; D. and Abl., fandō.\nG.,\nGerundive,  fandus.\nNOTE.—Forms of fārī are rare. More frequent are its compounds; as,— affātur, he addresses; praefāmur, we say in advance."
+ },
+ {
+  "id": "bn-137-other-defective-forms",
+  "ref": "137",
+  "title": "Other defective forms",
+  "family": "verb-forms",
+  "order": 570,
+  "text": "OTHER DEFECTIVE FORMS.\n1. Queō, quīre, quīvī, to be able, and nequeō, nequīre, nequīvī, to be unable, are inflected like eō, but occur chiefly in the Present Tense, and there only in special forms.\n2. Quaesō, I entreat; quaesumus, we entreat.\n3. Cedo (2d sing. Impv.), cette (2d plu.); give me, tell me.\n4. Salvē, salvēte, hail. Also Infinitive, salvēre.\n5. Havē (avē), havēte, hail. Also Infinitive, havēre."
+ },
+ {
+  "id": "bn-138-impersonal-verbs",
+  "ref": "138",
+  "title": "Impersonal Verbs",
+  "family": "verb-forms",
+  "order": 580,
+  "text": "Impersonal Verbs correspond to the English, it snows, it seems, etc. They have no personal subject, but may take an Infinitive, a Clause, or a Neuter Pronoun; as, mē pudet hōc fēcisse, lit. it shames me to have done this; hōc decet, this is fitting. Here belong—\nI. Verbs denoting operations of the weather; as,—\nfulget  fulsit  it lightens\ntonat  tonuit  it thunders\ngrandinat  ——  it hails\nningit  ninxit  it snows\npluit  pluit  it rains\nII. Special Verbs.\npaenitet  paenitēre  paenituit  it repents\npiget  pigēre  piguit  it grieves\npudet  pudēre  puduit  it causes shame\ntaedet  taedēre  taeduit  it disgusts\nmiseret  miserēre  miseruit  it causes pity\nlibet  libēre  libuit  it pleases\nlicet  licēre  licuit  it is lawful\noportet  oportēre  oportuit  it is fitting\ndecet  decēre  decuit  it is becoming\ndēdecet  dēdecēre  dēdecuit  it is unbecoming\nrēfert  rēferre  rētulit  it concerns\nIII. …"
+ },
+ {
+  "id": "bn-140-adverbs",
+  "ref": "140",
+  "title": "Adverbs",
+  "family": "particles",
+  "order": 590,
+  "text": "Adverbs denote manner, place, time, or degree Most adverbs are in origin case-forms which have become stereotyped by usage. The common adverbial terminations have already been given above (§ 76). The following TABLE OF CORRELATIVES is important:—\nRELATIVE AND  DEMONSTRATIVE.  INDEFINITE.\nubi, where; where?  hīc, here.  alicubī, ūsquam,\nibi, illīc, istīc,  ūspiam, somewhere.\nthere.\nquō, whither;  hūc, hither.  aliquō, to some\nwhither?  eō, istūc, illūc,  place.\nthither.\nunde, whence;  hinc, hence.  alicunde, from\nwhence?  inde, istinc, illinc,  somewhere.\nthence.\nquā, where; where?  hāc, by this way.  aliquā, by some way.\neā, istāc, illāc, by that way.\ncum, when.  nunc, now.  aliquandō, umquam,\nquandō, when?  tum, tunc, then.  sometime, ever.\nquotiēns, as often  totiēns, so often.  aliquotiēns, some\nas; how often?  number of times.\nquam, as much as;  tam, so much.  aliquantum,\nhow much?  somewhat."
+ },
+ {
+  "id": "bn-141-prepositions",
+  "ref": "141-144",
+  "title": "Prepositions",
+  "family": "particles",
+  "order": 600,
+  "text": "Prepositions show relations of words. The following Prepositions govern the Accusative:—\nad, to.  contrā, against.  post, after.\nadversus,  ergā, toward.  praeter, past.\nagainst.  extrā, outside.  prope, near.\nadversum, toward,  īnfrā, below.  propter, on account\nagainst.  inter, between.  of.\nante, before.  intrā, within.  secundum, after.\napud, with,  jūxtā, near.  subter, beneath.\nnear.  ob, on account  super, over.\ncircā, around.  of.  suprā, above.\ncirciter, about.  penes, in the hands  trāns, across.\ncircum, around.  of.  ultrā, beyond.\ncis, this side  per, through.  versus, toward.\nof.  pōne, behind.\ncitrā, this side of.\n1. Ūsque is often prefixed to ad, in the sense of even; as,—\nūsque ad urbem, even to the city.\n2. Versus always follows its case; as,—\nRōmam versus, toward Rome.\nIt may be combined with a preceding Preposition; as,—\nad urbem versus, toward the city.\n3. …"
+ },
+ {
+  "id": "bn-145-conjunctions-and-interjections",
+  "ref": "145",
+  "title": "Conjunctions and Interjections",
+  "family": "particles",
+  "order": 610,
+  "text": "1. Conjunctions are used to connect ideas. For Coördinate Conjunctions, see §§ 341 ff. Subordinate Conjunctions are treated in connection with Subordinate Clauses.\n2. Interjections express emotion. Thus:—\n1. Surprise; as, ēn, ecce, ō. 2. Joy; as, iō, euoe. 3. Sorrow and Pain; as, heu, ēheu, vae, prō. 4. Calling; as, heus, eho."
+ },
+ {
+  "id": "bn-161-classification-of-sentences",
+  "ref": "161",
+  "title": "Classification of Sentences",
+  "family": "noun-syntax",
+  "order": 620,
+  "text": "Sentences may be classified as follows:—\n1. DECLARATIVE, which state something; as,—\npuer scrībit, the boy is writing.\n2. INTERROGATIVE, Which ask a question; as,—\nquid puer scrībit, what is the boy writing?\n3. EXCLAMATORY, which are in the form of an exclamation; as,—\nquot librōs scrībit, how many books he writes!\n4. IMPERATIVE, which express a command or an admonition; as,—\nscrībe, write!"
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences",
+  "ref": "162",
+  "title": "Form of Interrogative Sentences",
+  "family": "noun-syntax",
+  "order": 630,
+  "text": "Questions may be either Word-Questions or Sentence-Questions.\n1. Word-Questions. These are introduced by the various interrogative pronouns and adverbs, such as—quis, quī, quālis, quantus, quot, quotiēns, quō, quā, etc. Thus:—\nquis venit, who comes? quam dīū manēbit, how long will he stay?\n2. Sentence-Questions. These are introduced—\na) By nōnne implying the answer 'yes'; as,—\nnōnne vidētis, do you not see?\nb) By num implying the answer 'no'; as,—\nnum exspectās, do you expect? (i.e. you don't expect, do you?)\nc) by the enclitic -ne, appended to the emphatic word (which usually stands first), and simply asking for information; as,—\nvidēsne, do you see?\nA question introduced by -ne may receive a special implication from the context; as,—\nsēnsistīne, did you not perceive?\nd) Sometimes by no special word, particularly in expressions of surprise or indignation; as,—\ntū in jūdicum cōnspectum venīre audēs, do you dare to come into the presence of the judges?\n3. Rhetorical Questions. These are questions merely in form, being employed to express an emphatic assertion; as, quis dubitat, who doubts? (= no one doubts).\n4. Double Questions. …"
+ },
+ {
+  "id": "bn-163-subject-and-predicate",
+  "ref": "163",
+  "title": "Subject and Predicate",
+  "family": "noun-syntax",
+  "order": 640,
+  "text": "The two essential parts of a sentence are the SUBJECT and PREDICATE.\nThe SUBJECT is that concerning which something is said, asked, etc. The PREDICATE is that which is said, asked, etc., concerning the SUBJECT."
+ },
+ {
+  "id": "bn-164-simple-and-compound-sentences",
+  "ref": "164-165",
+  "title": "Simple and Compound Sentences",
+  "family": "noun-syntax",
+  "order": 650,
+  "text": "Sentences containing but one Subject and one Predicate are called SIMPLE SENTENCES, those containing more are called COMPOUND SENTENCES. Thus puer librōs legit, the boy reads books, is a Simple Sentence; but puer librōs legit et epistulās scrībit, the boy reads books and writes letters, is a Compound Sentence. The different members of a Compound Sentence are called Clauses.\nCOÖRDINATE AND SUBORDINATE CLAUSES. Clauses which stand upon an equality are called COÖRDINATE; a Clause dependent on another is called SUBORDINATE. Thus in puer librōs legit et epistulās scrībit the two clauses are Coördinate; but in puer librōs legit quōs pater scrībit, the boy reads the books which his father writes, the second clause is Subordinate to the first."
+ },
+ {
+  "id": "bn-166-subject",
+  "ref": "166",
+  "title": "Subject",
+  "family": "noun-syntax",
+  "order": 660,
+  "text": "The Subject of a Finite Verb (i.e. any form of the Indicative, Subjunctive, or Imperative) is in the Nominative Case.\n1. The Subject may be—\na) A Noun or Pronoun; as,—\npuer scrībit, the boy writes;\nhīc scrībit, this man writes.\nb) An Infinitive; as,—\ndecōrum est prō patriā morī, to die for one's county is a noble thing.\nc) A Clause; as,—\nopportūnē accīdit quod vīdistī, it happened opportunely that you saw.\n2. A Personal Pronoun as Subject is usually implied in the Verb and is not separately expressed; as,—\nscrībō, I write; videt, he sees.\na. But for the purpose of emphasis or contrast the Pronoun is expressed; as,—\nego scrībō et tū legis, I write, and you read.\n3. The verb is sometimes omitted when it can be easily supplied from the context, especially the auxiliary sum; as,—\nrēctē ille (sc. facit), he does rightly; consul profectus (sc. est), the consul set out."
+ },
+ {
+  "id": "bn-167-predicate-nouns",
+  "ref": "167-168",
+  "title": "Predicate Nouns",
+  "family": "noun-syntax",
+  "order": 670,
+  "text": "A PREDICATE NOUN is one connected with the Subject by some form of the verb Sum or a similar verb.\nA Predicate Noun agrees with its Subject in Case; as,—\nCicerō ōrātor fuit, Cicero was an orator;\nNuma creātus est rēx, Numa was elected king.\n1. when possible, the Predicate Noun usually agrees with its Subect in Gender also; as,—\nphilosophia est vītae magistra, philosophy is the guide of life.\n2. Besides sum, the verbs most frequently accompanied by a Predicate Noun are—\na) fiō, ēvādō, exsistō; maneō; videor; as,—\nCroesus nōn semper mānsit rēx, Croesus did not always remain king.\nb) Passive verbs of making, calling, regarding, etc.; as, creor, appellor, habeor; as,—\nRōmulus rēx appellatus est, Romulus was called king;\nhabitus est deus, he was regarded as a god."
+ },
+ {
+  "id": "bn-169-appositives",
+  "ref": "169",
+  "title": "Appositives",
+  "family": "noun-syntax",
+  "order": 680,
+  "text": "1. An Appositive is a Noun explaining or defining another Noun denoting the same person or thing; as,—\nCicerō cōnsul, Cicero, the Consul;\nurbs Rōma, the city Rome.\n2. An Appositive agrees with its Subject in Case; as,—\nopera Cicerōnīs ōrātōris, the works of Cicero, the orator;\napud Hērodotum, patrem historiae, in the works of Herodotus, the father of history.\n3. When possible, the Appositive agrees with its Subject in Gender also; as,—\nassentātiō adjūtrīx vitiōrum, flattery, the promoter of evils.\n4. A Locative may take in Apposition the Ablative of urbs or oppidum, with or without a preposition; as,—\nCorinthī, Achāiae urbe, or in Achāiae urbe, at Corinth, a city of Greece.\n5. PARTITIVE APPOSITION. A Noun denoting a whole is frequently followed by an Appositive denoting a part; as,—\nmīlitēs, fortissimus quisque, hostibus restitērunt, the soldiers, all the bravest of them, resisted the enemy."
+ },
+ {
+  "id": "bn-171-the-vocative",
+  "ref": "171",
+  "title": "The Vocative",
+  "family": "noun-syntax",
+  "order": 690,
+  "text": "The Vocative is the Case of direct address; as,—\ncrēdite mihi, jūdicēs, believe me, judges.\n1. By a species of attraction, the Nominative is occasionally used for the Vocative, especially in poetry and formal prose; as, audī tū, populus Albānus, hear ye, Alban people!\n2. Similarly the Appositive of a Vocative may, in poetry, stand in the Nominative; as, nāte, mea magna potentia sōlus, O son, alone the source of my great power."
+ },
+ {
+  "id": "bn-172-the-accusative",
+  "ref": "172-174",
+  "title": "The Accusative",
+  "family": "noun-syntax",
+  "order": 700,
+  "text": "The Accusative is the Case of the Direct Object.\nThe Direct Object may express either of the two following relations:—\nA. The PERSON OR THING AFFECTED by the action; as,—\ncōnsulem interfēcit, he slew the consul;\nlegō librum, I read the book.\nB. The RESULT PRODUCED by the action; as,—\nlibrum scrīpsī, I wrote a book (i.e. produced one);\ntemplum struit, he constructs a temple.\nVerbs that admit a Direct Object of either of these two types are\na. Verbs that regularly take a Direct Object are sometimes used without it. They are then said to be employed absolutely; as,—\nrūmor est meum gnātum amāre, it is rumored that my son is in love.\nAccusative of the Person or Thing Affected."
+ },
+ {
+  "id": "bn-175-the-accusative-case",
+  "ref": "175-185",
+  "title": "The accusative case",
+  "family": "noun-syntax",
+  "order": 710,
+  "text": "1. This is the most frequent use of the Accusative; as in—\nparentēs amāmus, we love our parents;\nmare aspicit, he gazes at the sea.\n2. The following classes of Verbs taking an Accusative of this kind are worthy of note:—\na) Many Intransitive Verbs, when compounded with a Preposition, become Transitive. Thus:—\n1) Compounds of circum, praeter, trāns; as,—\nhostēs circumstāre, to surround the enemy;\nurbem praeterīre, to pass by the city;\nmūrōs trānscendere, to climb over the walls.\n2) Less frequently, compounds of ad, per, in, sub; as,—\nadīre urbem, to visit the city;\nperagrāre Italiam, to travel through Italy;\ninīre magistrātum, to take office;\nsubīre perīculum, to undergo danger.\nb) Many Verbs expressing emotions, regularly Intransitive, have also a Transitive use; as,—\nqueror fātum, I lament my fate;\ndoleō ejus mortem, I grieve at his death;\nrīdeō tuam stultitiam, I laugh at your folly.\nSo also lūgeō, maereō, mourn; gemō, bemoan; horreō, shudder, and others.\nc) The impersonals decet, it becomes; dēdecet, it is unbecoming; juvat, it pleases, take the Accusative of the Person Affected; as,—\nmē decet haec dīcere, it becomes me to say this. …"
+ },
+ {
+  "id": "bn-186-the-dative",
+  "ref": "186-193",
+  "title": "The Dative",
+  "family": "noun-syntax",
+  "order": 720,
+  "text": "The Dative case, in general, expresses relations which are designated in English by the prepositions to and for.\nDative of Indirect Object.\nThe commonest use of the Dative is to denote the person to whom something is given, said, or done. Thus:—\nI. With transitive verbs in connection with the Accusative; as,—\nhanc pecūniam mihi dat, he gives me this money;\nhaec nōbīs dīxit, he said this to us.\na. Some verbs which take this construction (particularly dōnō and circumdō) admit also the Accusative of the person along with the Ablative of the thing. Thus:—\nEither Themistoclī mūnera dōnāvit, he presented gifts to Themistocles, or\nThemistoclem mūneribus dōnāvit, he presented Themistocles with gifts;\nurbī mūrōs circumdat, he builds walls around the city, or\nurbem mūrīs circumdat, he surrounds the city with walls\nII. With many intransitive verbs; as,—\nnūllī labōrī cēdit, he yields to no labor.\na. Here belong many verbs signifying favor, help, injure, please, displease, trust, distrust, command, obey, serve, resist, indulge, spare, pardon, envy, threaten, be angry, believe, persuade, and the like; as,—\nCaesar populāribus favet, Caesar favors (i.e. …"
+ },
+ {
+  "id": "bn-195-genitive-with-nouns",
+  "ref": "195-203",
+  "title": "Genitive with Nouns",
+  "family": "noun-syntax",
+  "order": 730,
+  "text": "With Nouns the Genitive is the case which defines the meaning of the limited noun more closely. This relation is generally indicated in English by the preposition of. There are the following varieties of the Genitive with Nouns:—\nGenitive of Origin,  Objective Genitive,\nGenitive of Material,  Genitive of the Whole,\nGenitive of Possession,  Appositional Genitive,\nSubjective Genitive,  Genitive of Quality.\nGenitive of Origin; as,—\nMārcī fīlius, the son of Marcus.\nGenitive of Material; as,—\ntalentum aurī, a talent of gold;\nacervus frūmentī, a pile of grain.\nGenitive of Possession or Ownership; as,—\ndomus Cicerōnis, Cicero's house.\n1. Here belongs the Genitive with causā and grātiā. The Genitive always precedes; as,—\nhominum causā, for the sake of men;\nmeōrum amīcōrum grātiā, for the sake of my friends.\n2. The Possessive Genitive is often used predicatively, especially with esse and fierī; as,—\ndomus est rēgis, the house is the king's;\nstultī est in errōre manēre, it is (the part) of a fool to remain in error;\ndē bellō jūdicium imperātōris est, nōn mīlitum, the decision concerning war belongs to the general, not to the soldiers.\na. …"
+ },
+ {
+  "id": "bn-204-genitive-with-adjectives",
+  "ref": "204",
+  "title": "Genitive with Adjectives",
+  "family": "noun-syntax",
+  "order": 740,
+  "text": "The Genitive is used with many Adjectives to limit the extent of their application. Thus:—\n1. With adjectives signifying desire, knowledge, familiarity, memory, participation, power, fullness, and their opposites; as,—\nstudiōsus discendī, desirous of learning;\nperītus bellī, skilled in war;\nīnsuētus labōris, unused to toil;\nimmemor mandātī tuī, unmindful of your commission;\nplēna perīculōrum est vīta, life is full of dangers.\na. Some participles used adjectively also take the Genitive; as,—\ndiligēns vēritātis, fond of truth;\namāns patriae, devoted to one's country.\n2. Sometimes with proprius and commūnis; as,—\nvirī propria est fortitūdō, bravery is characteristic of a man.\nmemoria est commūnis omnium artium, memory is common to all professions.\na. proprius and commūnis are also construed with the Dative.\n3. With similis the Genitive is the commoner construction in Cicero, when the reference is to living objects; as,—\nfīlius patris simillimus est, the son is exactly like his father;\nmeī similis, like me; vestrī similis, like you.\nWhen the reference is to things, both Genitive and Dative occur; as,—\nmors somnō (or somnī) similis est, death is like sleep.\n4. …"
+ },
+ {
+  "id": "bn-205-genitive-with-verbs",
+  "ref": "205-212",
+  "title": "Genitive with Verbs",
+  "family": "noun-syntax",
+  "order": 750,
+  "text": "The Genitive is used with the following classes of Verbs:—\nMemini, Reminīscor, Oblīvīscor.\n1. WHEN REFERRING TO PERSONS—\na. meminī always takes the Genitive of personal or reflexive pronouns; as,—\nmeī meminerīs, remember me!\nnostrī meminit, he remembers us.\nWith other words denoting persons meminī takes the Accusative, rarely the Genitive; as,—\nSullam meminī, I recall Sulla;\nvīvōrum meminī, I remember the living.\nb. oblīvīscor regularly takes the Genitive; as,—\nEpicūrī nōn licet oblīvīscī, we mustn't forget Epicurus.\n2. WHEN REFERRING TO THINGS, meminī, reminīscor, oblīvīscor take sometimes the Genitive, sometimes the Accusative, without difference of meaning; as,—\nanimus praeteritōrum meminit, the mind remembers the past;\nmeministīne nōmina, do you remember the names?\nreminīscere veteris incommodī, remember the former disaster;\nreminīscēns acerbitātem, remembering the bitterness.\na. But neuter pronouns, and adjectives used substantively, regularly stand in the Accusative; as,—\nhaec meminī, I remember this;\nmulta reminīscor, I remember many things.\n3. …"
+ },
+ {
+  "id": "bn-213-the-ablative",
+  "ref": "213",
+  "title": "The Ablative",
+  "family": "noun-syntax",
+  "order": 760,
+  "text": "The Latin Ablative unites in itself three cases which were originally distinct both in form and in meaning; viz.—\nThe Ablative or from-case. The Instrumental or with-case. The Locative or where-case.\nThe uses of the Latin Ablative accordingly fall into Genuine Ablative uses, Instrumental uses, and Locative uses.\nAblative of Separation."
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses",
+  "ref": "214-217",
+  "title": "Genuine Ablative Uses",
+  "family": "noun-syntax",
+  "order": 770,
+  "text": "The Ablative of Separation is construed sometimes with, sometimes without, a preposition.\n1. The following words regularly take the Ablative without a preposition:—\na) The Verbs of freeing: līberō, solvō, levō;\nb) The Verbs of depriving: prīvō, spoliō, exuō, fraudō, nūdō;\nc) The Verbs of lacking: egeō, careō, vacō;\nd) The corresponding Adjectives, līber, inānis, vacuus, nūdus,\nand some others of similar meaning.\nThus:—\ncūrīs līberātus, freed from cares;\nCaesar hostēs armīs exuit, Caesar stripped the enemy of their arms;\ncaret sēnsū commūnī, he lacks common sense;\nauxiliō eget, he needs help;\nbonōrum vīta vacua est metū, the life of the good is free from fear.\nNOTE 1.—Yet Adjectives and līberō may take the preposition ab,—regularly so with the Ablative of persons; as,—\nurbem ā tyrannō līberārunt, they freed the city from the tyrant.\nNOTE 2.—Indigeō usually takes the Genitive. See § 212, 1, a.\n2. Of Verbs signifying to keep from, to remove, to withdraw, some take the preposition, others omit it. The same Verb often admits both constructions. …"
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative",
+  "ref": "218-227",
+  "title": "Instrumental Uses of the Ablative",
+  "family": "noun-syntax",
+  "order": 780,
+  "text": "The Ablative is used to denote means or instrument; as,—\nAlexander sagittā vulnerātus est, Alexander was wounded by an arrow.\nThere are the following special varieties of this Ablative:—\n1. Ūtor, fruor, fungor, potior, vescor, and their compounds take the Ablative; as,—\ndīvitiīs ūtitur, he uses his wealth (lit. he benefits himself by his wealth);\nvītā fruitur, he enjoys life (lit. he enjoys himself by life);\nmūnere fungor, I perform my duty (lit. I busy myself with duty);\ncarne vescuntur, they eat flesh (lit. feed themselves by means of);\ncastrīs potītus est, he got possession of the camp (lit. made himself powerful by the camp).\na.. Potior sometimes governs the Genitive. See § 212, 2.\n2. With opus est (rarely ūsus est), there is need; as,—\nduce nōbīs opus est, we need a leader.\na. A Neuter Pronoun or Adjective often stands as subject with opus as predicate. Thus:—\nhōc mihi opus est, this is necessary for me.\nb. An ordinary substantive rarely stands as subject. Thus dux nōbīs opus est is a rare form of expression.\nc. Note the occasional use of a perfect passive participle with opus est; as,—\nopus est properātō, there is need of haste.\n3. …"
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative",
+  "ref": "228-231",
+  "title": "Locative Uses of the Ablative",
+  "family": "noun-syntax",
+  "order": 790,
+  "text": "The place where is regularly denoted by the Ablative with a preposition; as,—\nin urbe habitat, he dwells in the city.\n1. But certain words stand in the Ablative without a preposition; viz.—\na) Names of towns,—except Singulars of the First and Second Declensions (see § 232, 1); as,—\nCarthāginī, at Carthage;\nAthēnis, at Athens;\nVejīs, at Veii.\nb) The general words locō, locīs, parte; also many words modified by tōtus or even by other Adjectives; as,—\nhōc locō, at this place;\ntōtīs castrīs, in the whole camp.\nc) The special words: forīs, out of doors; rūrī, in the country, terrā marīque, on land and sea.\nd) The poets freely omit the preposition with any word denoting place; as,—\nstant lītore puppēs, the sterns rest on the beach.\nB. Place from which.\nPlace from which is regularly denoted by the Ablative with a preposition; as,—\nab Italiā profectus est, he set out from Italy;\nex urbe rediit, he returned from the city.\n1. …"
+ },
+ {
+  "id": "bn-232-the-locative",
+  "ref": "232-233",
+  "title": "The Locative",
+  "family": "noun-syntax",
+  "order": 800,
+  "text": "The Locative case occurs chiefly in the following words:—\n1. Regularly in the Singular of names of towns and small islands of the first and second declensions, to denote the place in which; as,—\nRōmae, at Rome;  Corinthī, at Corinth;\nRhodī, at Rhodes.\n2. In the following special forms:—\ndomī, at home;  humī, on the ground;\nbellī, in war;  mīlitiae, in war;\nvesperī, at evening;  herī, yesterday.\n3. Note the phrase pendēre animī, lit. to be in suspense in one's mind.\n4. For urbs and oppidum in apposition with a Locative, see § 169, 4.\n1. The word with which an Adjective agrees is called its Subject.\n2. Attributive and Predicate Adjectives. An Attributive Adjective is one that limits its subject directly; as,—\nvir sapiēns, a wise man.\nA Predicate Adjective is one that limits its subject through the medium of a verb (usually esse); as,—\nvir est sapiēns, the man is wise;\nvir vidēbātur sapiēns, the man seemed wise;\nvir jūdicātus est sapiēns, the man was judged wise;\nhunc virum sapientem jūdicāvimus, we adjudged this man wise.\n3. Participles and Adjective Pronouns have the construction of Adjectives."
+ },
+ {
+  "id": "bn-234-agreement-of-adjectives",
+  "ref": "234-235",
+  "title": "Agreement of Adjectives",
+  "family": "adj-pron-syntax",
+  "order": 810,
+  "text": "Agreement with One Noun. When an Adjective limits one noun it agrees with it in Gender, Number, and Case.\n1. Two Adjectives in the Singular may limit a noun in the Plural, as; prīma et vīcēsima legiōnēs, the first and twentieth legions.\n2. A Predicate Adjective may stand in the Neuter when its Subject is Masculine or Feminine and denotes a thing; as,—\nomnium rērum mors est extrēmum, death is the end of all things.\nAgreement with Two or More Nouns.\n1. When the Adjective is Attributive, it regularly agrees in number with the nearest noun; as,—\npater tuus et māter, your father and mother;\neadem alacritās et studium, the same eagerness and zeal.\n2. When the Adjective is Predicative, it is regularly Plural; as,—\npāx et concordia sunt pulchrae, peace and concord are glorious.\n1. When the Adjective is Attributive, it regularly agrees in gender with the nearest noun; as,—\nrēs operae multae ac labōris, a matter of much effort and labor.\n2. …"
+ },
+ {
+  "id": "bn-236-adjectives-used-substantively",
+  "ref": "236-238",
+  "title": "Adjectives Used Substantively",
+  "family": "adj-pron-syntax",
+  "order": 820,
+  "text": "1. PLURAL ADJECTIVES USED SUBSTANTIVELY. Adjectives are quite freely used as Substantives in the Plural. The Masculine denotes persons; the Neuter denotes things; as,—\ndoctī, scholars;  parva, small things;\nmalī, the wicked;  magna, great things;\nGraecī, the Greeks;  ūtilia, useful things;\nnostrī, our men.\n2. Neuter Plural Adjectives thus used are confined mainly to the Nominative and Accusative cases. Such forms as magnōrum, omnium; magnīs, omnibus, would ordinarily lead to ambiguity; yet where there is no ambiguity, they sometimes occur; as,—\nparvīs compōnere magna, to compare great things with small\nOtherwise the Latin says: magnārum rērum, magnīs rēbus, etc.\nSINGULAR ADJECTIVES USED SUBSTANTIVELY. Adjectives are less freely used as Substantives in the Singular than in the Plural.\n1. Masculine Adjectives occur only occasionally in this use; as,—\nprobus invidet nēminī, the honest man envies nobody.\na. Usually vir, homō, or some similar word is employed; as,—\nhomō doctus, a scholar;\nvir Rōmānus, a Roman.\nb. But when limited by a pronoun any adjective may be so used; as,—\nhīc doctus, this scholar;\ndoctus quīdam, a certain scholar.\n2. …"
+ },
+ {
+  "id": "bn-239-adjectives-with-the-force-of-adverbs",
+  "ref": "239",
+  "title": "Adjectives with the Force of Adverbs",
+  "family": "adj-pron-syntax",
+  "order": 830,
+  "text": "The Latin often uses an Adjective where the English idiom employs an Adverb or an adverbial phrase; as,—\nsenātus frequēns convēnit, the senate assembled in great numbers;\nfuit assiduus mēcum, he was constantly with me."
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives",
+  "ref": "240",
+  "title": "Comparatives and Superlatives",
+  "family": "adj-pron-syntax",
+  "order": 840,
+  "text": "1. The Comparative often corresponds to the English Positive with 'rather,' 'somewhat,' 'too'; as,—\nsenectūs est loquācior, old age is rather talkative.\n2. So the Superlative often corresponds to the Positive with 'very'; as,—\nvir fortissimus, a very brave man.\n3. Strengthening Words. Vel and quam are often used with the Superlative as strengthening particles, vel with the force of 'very,' and quam with the force of 'as possible'; as,—\nvel maximus, the very greatest;\nquam maximae cōpiae, as great forces as possible.\n4. Phrases of the type 'more rich than brave' regularly take the Comparative in both members; as,—\nexercitus erat dītior quam fortior, the army was more rich than brave."
+ },
+ {
+  "id": "bn-241-other-peculiarities",
+  "ref": "241",
+  "title": "Other Peculiarities",
+  "family": "adj-pron-syntax",
+  "order": 850,
+  "text": "1. Certain Adjectives may be used to denote a part of an object, chiefly prīmus, extrēmus, summus, medius, īnfimus, īmus; as,—\nsummus mōns, the top of the mountain;\nextrēmā hieme, in the last part of the winter.\n2. Prior, prīmus, ultimus, and postrēmus are frequently equivalent to a relative clause; as,—\nprīmus eam vīdī, I was the first who saw her;\nultimus dēcessit, he was the last who withdrew.\n3. When multus and another adjective both limit the same noun et is generally used; as,—\nmultae et magnae cōgitātiōnēs, many (and) great thoughts."
+ },
+ {
+  "id": "bn-242-syntax-of-personal-pronouns",
+  "ref": "242",
+  "title": "Syntax of personal pronouns",
+  "family": "adj-pron-syntax",
+  "order": 860,
+  "text": "1. The Personal Pronouns as subjects of verbs are, as a rule, not expressed except for the purpose of emphasis, contrast, or clearness. Thus ordinarily:—\nvideō, I see; amat, he loves.\nBut ego tē videō, et tū mē vidēs, I see you, and you see me.\n2. The Genitives meī, tuī, nostrī, vestrī are used only as Objective Genitives; nostrum and vestrum as Genitives of the Whole. Thus:—\nmemor tuī, mindful of you;\ndēsīderium vestrī, longing for you;\nnēmō vestrum, no one of you.\na. But nostrum and vestrum are regularly used in the place of the Possessive in the phrases omnium nostrum, omnium vestrum.\n3. The First Plural is often used for the First Singular of Pronouns and Verbs. Compare the Eng. editorial 'we.'\n4. When two Verbs govern the same object, the Latin does not use a pronoun with the second, as is the rule in English. Thus:—\nvirtūs amīcitiās conciliat et cōnservat, virtue establishes friendships and maintains them (not eās cōnservat)."
+ },
+ {
+  "id": "bn-243-syntax-of-possessive-pronouns",
+  "ref": "243",
+  "title": "Syntax of possessive pronouns",
+  "family": "adj-pron-syntax",
+  "order": 870,
+  "text": "1. The Possessive Pronouns, as a rule, are not employed except for the purpose of clearness. Thus:—\npatrem amō, I love my father;\ndē fīliī morte flēbās, you wept for the death of your son.\nBut—\ndē morte fīliī meī flēbās, you wept for the death of my son.\na. When expressed merely for the sake of clearness, the possessive usually stands after its noun; but in order to indicate emphasis or contrast, it precedes; as,—\nsuā manū līberōs occīdit, with his own hand he slew his children;\nmeā quidem sententiā, in my opinion at least.\n2. Sometimes the Possessive Pronouns are used with the force of an Objective Genitive; as,—\nmetus vester, fear of you;\ndēsīderium tuum, longing for you.\n3. For special emphasis, the Latin employs ipsīus or ipsōrum, in apposition with the Genitive idea implied in the Possessive; as,—\nmeā ipsīus operā, by my own help;\nnostrā ipsōrum operā, by our own help.\na. So sometimes other Genitives; as,—\nmeā ūnīus operā, by the assistance of me alone."
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns",
+  "ref": "244",
+  "title": "Syntax of reflexive pronouns",
+  "family": "adj-pron-syntax",
+  "order": 880,
+  "text": "1. The Reflexive Pronoun sē and the Possessive Reflexive suus have a double use:—\nI. They may refer to the subject of the clause (either principal or subordinate) in which they stand,—'Direct Reflexives'; as,—\nsē amant, they love themselves;\nsuōs amīcōs adjuvāt, he helps his own friends;\neum ōrāvī, ut sē servāret, I besought him to save himself.\nII. They may stand in a subordinate clause and refer to the subject of the principal clause,—'Indirect Reflexives'; as,—\nmē ōrāvit ut sē dēfenderem, he besought me to defend him (lit. that I defend himself);\nmē ōrāvērunt, ut fortūnārum suārum dēfēnsiōnem susciperem, they besought me to undertake the defense of their fortunes.\na. The Indirect Reflexive is mainly restricted to those clauses which express the thought, not of the author, but of the subject of the principal clause.\n2. The Genitive suī is regularly employed, like meī and tuī, as an Objective Genitive, e.g. oblītus suī, forgetful of himself; but it occasionally occurs—particularly in post-Augustan writers—in place of the Possessive suus; as, fruitur fāmā suī, he enjoys his own fame.\n3. …"
+ },
+ {
+  "id": "bn-245-reciprocal-pronouns",
+  "ref": "245",
+  "title": "Reciprocal Pronouns",
+  "family": "adj-pron-syntax",
+  "order": 890,
+  "text": "1. The Latin has no special reciprocal pronoun ('each other'), but expresses the reciprocal notion by the phrases: inter nōs, inter vōs, inter sē; as,—\nBelgae obsidēs inter sē dedērunt, the Belgae gave each other hostages (lit. among themselves);\namāmus inter nōs, we love each other;\nGallī inter sē cohortātī sunt, the Gauls exhorted each other.\na. Note that the Object is not expressed in sentences of this type.\nHīc, Ille, Iste."
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns",
+  "ref": "246-249",
+  "title": "Syntax of demonstrative pronouns",
+  "family": "adj-pron-syntax",
+  "order": 900,
+  "text": "1. Where hīc and ille are used in contrast, hīc usually refers to the latter of two objects, and ille to the former.\n2. Hīc and ille are often used in the sense of 'the following'; as,—\nThemistoclēs hīs verbīs epistulam mīsit, Themistocles sent a letter (couched) in the following words;\nillud intellegō, omnium ōra in mē conversa esse, I understand this, that the faces of all are turned toward me.\n3. Ille often means the famous; as, Solōn ille, the famous Solon.\n4. Iste frequently involves contempt; as, iste homō, that fellow!\n5. The above pronouns, along with is, are usually attracted to the gender of a predicate noun; as, hīc est honor, meminisse officium suum, this is an honor, to be mindful of one's duty.\nIs.\n1. Is often serves as the antecedent of the relative quī. Thus:—\nMaximum, eum quī Tarentum recēpit, dīlēxī, I loved Maximus, the man who retook Tarentum.\na. Closely akin to this usage is is in the sense of such (= tālis); as,—\nnōn sum is quī terrear, I am not such a person as to be frightened.\nb. …"
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns",
+  "ref": "250-251",
+  "title": "Syntax of relative pronouns",
+  "family": "adj-pron-syntax",
+  "order": 910,
+  "text": "Agreement. 1. The Relative Pronoun agrees with its antecedent in Gender, Number, and Person, but its case is determined by its construction in the clause in which it stands; as,—\nmulier quam vidēbāmus, the woman whom we saw;\nbona quibus fruimur, the blessings which we enjoy.\n2. Where the antecedent is compound, the same principles for number and gender prevail as in case of predicate adjectives under similar conditions (see § 235, B, 2). Thus:—\npater et fīlius, qui captī sunt, the father and son who were captured;\nstultitia et timiditās quae fugienda sunt, folly and cowardice which must be shunned;\nhonōrēs et victōriae quae sunt fortuīta, honors and victories, which are accidental.\n3. The Relative regularly agrees with a predicate noun (either Nominative or Accusative) instead of its antecedent; as,—\ncarcer, quae lautumiae vocantur, the prison, which is called Lautumiae;\nBelgae, quae est tertia pars, the Belgians, who are the third part.\n4. Sometimes the Relative takes its gender and number from the meaning of its antecedent; as,—\npars quī bēstiīs objectī sunt, a part (of the men) who were thrown to beasts.\n5. …"
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns",
+  "ref": "252",
+  "title": "Syntax of indefinite pronouns",
+  "family": "adj-pron-syntax",
+  "order": 920,
+  "text": "1. Quis, any one, is the weakest of the Indefinites, and stands usually in combination with sī, nisi, nē, num; as,—\nsī quis putat, if any one thinks.\n2. Aliquis (adj. aliquī) is more definite than quis, and corresponds usually to the English some one, somebody, some; as,—\nnunc aliquis dīcat mihī, now let somebody tell me;\nutinam modo agātur aliquid, oh that something may be done.\n3. Quīdam, a certain one, is still more definite than aliquis; as,—\nhomō quīdam, a certain man (i.e., one whom I have in mind).\na. Quīdam (with or without quasi, as if) is sometimes used in the sense: a sort of, kind of; as,—\ncognātiō quaedam, a sort of relationship;\nmors est quasi quaedam migrātiō, death is a kind of transfer as it were.\n4. …"
+ },
+ {
+  "id": "bn-253-syntax-of-pronominal-adjectives",
+  "ref": "253",
+  "title": "Syntax of pronominal adjectives",
+  "family": "adj-pron-syntax",
+  "order": 930,
+  "text": "1. Alius, another, and alter, the other, are often used correlatively; as,—\naliud loquitur, aliud sentit, he says one thing, he thinks another;\naliī resistunt, aliī fugiunt, some resist, others flee;\nalter exercitum perdidit, alter vēndidit, one ruined the army, the other sold it;\nalterī sē in montem recēpērunt, alterī ad impedīmenta sē contulērunt, the one party retreated to the mountain, the others betook themselves to the baggage.\n2. Where the English says one does one thing, another another, the Latin uses a more condensed form of statement; as,—\nalius aliud amat, one likes one thing, another another;\naliud aliīs placet, one thing pleases some, another others.\na. So sometimes with adverbs; as,—\naliī aliō fugiunt, some flee in one direction, others in another.\n3. The Latin also expresses the notion 'each other' by means of alius repeated; as,—\nGallī alius alium cohortātī sunt, the Gauls encouraged each other.\n4. Cēterī means the rest, all the others; as,—\ncēterīs praestāre, to be superior to all the others.\n5. Reliquī means the others in the sense of the rest, those remaining,—hence is the regular word with numerals; as,—\nreliquī sex, the six others.\n6. …"
+ },
+ {
+  "id": "bn-254-agreement",
+  "ref": "254-255",
+  "title": "Agreement",
+  "family": "verb-syntax",
+  "order": 940,
+  "text": "1. Agreement in Number and Person. A Finite Verb agrees with its subject in Number and Person; as,—\nvōs vidētis, you see;\npater fīliōs īnstituit, the father trains his sons.\n2. Agreement in Gender. In the compound forms of the verb the participle regularly agrees with its subject in gender; as,—\nsēditiō repressa est, the mutiny was checked.\n3. But when a predicate noun is of different gender or number from its subject, the verb usually agrees with its nearest substantive; as,—\nTarquiniī māterna patria erat, Tarquinii was his native country on his mother's side;\nnōn omnis error stultitia est dīcenda, not every error is to be called folly.\na. Less frequently the verb agrees with an appositive; as,—\nCoriolī, oppidum Volscōrum, captum est, Corioli, a town of the Volsci, was captured.\n4. Construction according to Sense. Sometimes the verb agrees with its subject according to sense instead of strict grammatical form. Thus:—\na) In Number; as,—\nmultitūdō hominum convēnerant, a crowd of men had gathered.\nb) In Gender; as,—\nduo mīlia crucibus adfīxī sunt, two thousand (men) were crucified.\nWith Two or More Subjects.\n1. Agreement in Number. …"
+ },
+ {
+  "id": "bn-256-voices",
+  "ref": "256",
+  "title": "Voices",
+  "family": "verb-syntax",
+  "order": 950,
+  "text": "1. The Passive Voice sometimes retains traces of its original middle or reflexive meaning; as,—\nego nōn patiar eum dēfendī, I shall not allow him to defend himself.\n2. In imitation of Greek usage many perfect passive participles are used by the poets as indirect middles, i.e. the subject is viewed as acting not upon itself, but as doing something in his own interest; as,—\nvēlātus tempora, having veiled his temples.\na. Occasionally finite forms of the verb are thus used; as,—\ntunicā indūcitur artūs, he covers his limbs with a tunic.\n3. Intransitive Verbs may be used impersonally in the passive; as,—\ncurritur, people run (lit. it is run);\nventum est, he (they, etc.) came (lit. it was come)."
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative",
+  "ref": "257",
+  "title": "Tenses of the Indicative",
+  "family": "verb-syntax",
+  "order": 960,
+  "text": "1. The Latin tenses express two distinct notions:—\na) The period of time to which the action belongs: Present, Past, or Future.\nb) The kind of action: Undefined, Going on, or Completed.\nThe Latin with its six tenses is able to express each of the three kinds of action for each of the three periods of time (making practically nine tenses). It does this by employing certain tenses in more than one way, as may be seen by the following table:—\nKIND OF  PERIOD OF TIME.\nPRESENT.  PAST.  FUTURE.\nUNDEFINED  Present:  Historical  Future:\nscrībō, I write.  Perfect:  scrībam, I shall\nscrīpsī, I  write.\nwrote.\nGOING ON.  Present:  Imperfect:  Future:\nscrībō, I am  scrībēbam, I was  scrībam, I shall\nwriting.  writing.  be writing.\nCOMPLETED.  Present  Pluperfect:  Future Perfect:\nPerfect:  scrīpseram, I had  scrīpserō, I\nscrīpsī, I have  written.  shall have\nwritten.  written.\n2. It will be seen that the Present may express Undefined action or action Going on; so also the Future. The Perfect likewise has a double use, according as it denotes action Completed in present time (Present Perfect) or Undefined action belonging to past time (Historical Perfect).\nPrincipal and Historical Tenses."
+ },
+ {
+  "id": "bn-258-principal-and-historical-tenses",
+  "ref": "258-265",
+  "title": "Principal and historical tenses",
+  "family": "verb-syntax",
+  "order": 970,
+  "text": "Tenses which denote Present or Future time are called Principal (or Primary) Tenses, those which denote Past time are called Historical (or Secondary).\nThe Principal Tenses of the Indicative are: Present, Future, Present Perfect, Future Perfect.\nThe Historical Tenses are: Imperfect, Historical Perfect, Pluperfect.\nPresent Indicative.\nBesides the two uses indicated in the table, the Present Indicative presents the following peculiarities:—\n1. It is used to denote a general truth, i.e. something true not merely in the present but at all times ('Gnomic Present'); as,—\nvirtūs conciliat amīcitiās et cōnservat, virtue establishes ties of friendship and maintains them (i.e. always does so).\n2. It is used of an attempted action ('Conative Present'); as,—\ndum vītant vitia, in contrāria currunt, while they try to avoid (vītant) vices, they rush into opposite ones.\n3. In lively narration the Present is often used of a past action ('Historical Present'); as,—\nCaesar imperat magnum numerum obsidum, Caesar demanded a large number of hostages (lit. demands).\n4. …"
+ },
+ {
+  "id": "bn-266-tenses-of-the-subjunctive",
+  "ref": "266-267",
+  "title": "Tenses of the Subjunctive",
+  "family": "verb-syntax",
+  "order": 980,
+  "text": "A. In Independent sentences. See §§ 272-280.\nB. In Dependent Sentences. In dependent sentences the tenses of the subjunctive usually conform to the so-called\nSequence of Tenses.\n1. In the Subjunctive the Present and Perfect are Principal tenses, the Imperfect and Pluperfect, Historical.\n2. By the Sequence of Tenses Principal tenses are followed by Principal, Historical by Historical. Thus:—\nvideō quid faciās, I see what you are doing.\nvidēbō quid faciās, I shall see what you are doing.\nvīderō quid faciās, I shall have seen what you are doing.\nvideō quid fēcerīs, I see what you have done.\nvidēbō quid fēcerīs, I shall see what you have done.\nvīderō quid fēcerīs, I shall have seen what you have done.\nvidēbam quid facerēs, I saw what you were doing.\nvīdī quid facerēs, I saw what you were doing.\nvīderam quid facerēs, I had seen what you were doing.\nvidēbam quid fēcissēs, I saw what you had done.\nvīdī quid fēcissēs, I saw what you had done.\nvīderam quid fēcissēs, I had seen what you had done.\n3. The Present and Imperfect Subjunctive denote incomplete action, the Perfect and Pluperfect completed action, exactly as in the Indicative.\nPeculiarities of Sequence."
+ },
+ {
+  "id": "bn-268-sequence-of-tenses",
+  "ref": "268-269",
+  "title": "Sequence of tenses",
+  "family": "verb-syntax",
+  "order": 990,
+  "text": "1. The Perfect Indicative is usually an historical tense (even when translated in English as a Present Perfect), and so is followed by the Imperfect and Pluperfect Subjunctive; as,—\ndēmōnstrāvī quārē ad causam accēderem, I have shown why I took the case (lit. I showed why, etc.).\n2. A dependent Perfect Infinitive is treated as an historical tense wherever, if resolved into an equivalent Indicative, it would be historical; as,—\nvideor ostendisse quālēs deī essent, I seem to have shown of what nature the gods are (ostendisse here corresponds to an Indicative, ostendī, I showed).\n3. The Historical Present is sometimes regarded as a principal tense, sometimes as historical. Thus:—\nSulla suōs hortātur ut fortī animō sint, Sulla exhorts his soldiers to be stout-hearted;\nGallōs hortātur ut arma caperent, he exhorted the Gauls to take arms.\n4. Conditional sentences of the 'contrary-to-fact' type are not affected by the principles for the Sequence of Tenses; as,—\nhonestum tāle est ut, vel sī ignōrārent id hominēs, suā tamen pulchritūdine laudabīle esset, virtue is such a thing that even if men were ignorant of it, it would still be worthy of praise for its own loveliness.\n5. …"
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive",
+  "ref": "270",
+  "title": "Tenses of the Infinitive",
+  "family": "verb-syntax",
+  "order": 1000,
+  "text": "1. The tenses of the Infinitive denote time not absolutely, but with reference to the verb on which they depend. Thus:—\na) The Present Infinitive represents an act as contemporaneous with the time of the verb on which it depends; as,—\nvidētur honōrēs adsequī, he seems to be gaining honors;\nvidēbātur honōrēs adsequī, he seemed to be gaining honors.\nb) The Perfect Infinitive represents an act as prior to the time of the verb on which it depends; as,—\nvidētur honōrēs adsecūtus esse, he seems to have gained honors;\nvīsus est honōrēs adsecūtus esse, he seemed to have gained honors.\nc) The Future Infinitive represents an act as subsequent to that of the verb on which it depends; as,—\nvidētur honōrēs adsecūtūrus esse, he seems to be about to gain honors;\nvīsus est honōrēs adsecūtūrus esse, he seemed to be about to gain honors.\n2. Where the English says 'ought to have done,' 'might have done,' etc., the Latin uses dēbuī, oportuit, potuī (dēbēbam, oportēbat, poteram), with the Present Infinitive; as,—\ndēbuit dīcere, he ought to have said (lit. owed it to say);\nopōrtuit venīre, he ought to have come;\npotuit vidēre, he might have seen.\na. …"
+ },
+ {
+  "id": "bn-271-moods-in-independent-sentences",
+  "ref": "271-272",
+  "title": "Moods in Independent Sentences",
+  "family": "verb-syntax",
+  "order": 1010,
+  "text": "The Indicative is used for the statement of facts, the supposition of facts, or inquiry after facts.\n1. Note the following idiomatic uses:—\na) With possum; as,—\npossum multa dīcere, I might say much;\npoteram multa dīcere, I might have said much (§ 270, 2).\nb) In such expressions as longum est, aequum est, melius est, difficile est, ūtilius est, and some others; as,—\nlongum est ea dīcere, it would be tedious to tell that;\ndifficile est omnia persequī, it would be difficult to enumerate everything.\nThe Subjunctive in Independent Sentences.\nThe Subjunctive is used in Independent Sentences to express something—\n1. As willed—Volitive Subjunctive; 2. As desired—Optative Subjunctive; 3. Conceived of as possible—Potential Subjunctive."
+ },
+ {
+  "id": "bn-273-volitive-subjunctive",
+  "ref": "273",
+  "title": "Volitive Subjunctive",
+  "family": "verb-syntax",
+  "order": 1020,
+  "text": "The Volitive Subjunctive represents the action as willed. It always implies authority on the part of the speaker, and has the following varieties:—"
+ },
+ {
+  "id": "bn-274-hortatory-subjunctive",
+  "ref": "274",
+  "title": "Hortatory Subjunctive",
+  "family": "verb-syntax",
+  "order": 1030,
+  "text": "The Hortatory Subjunctive expresses an exhortation. This use is confined to the first person plural of the Present. The negative is nē. Thus:—\neāmus, let us go;\namēmus patriam, let us love our country;\nnē dēspērēmus, let us not despair."
+ },
+ {
+  "id": "bn-275-jussive-subjunctive",
+  "ref": "275",
+  "title": "Jussive Subjunctive",
+  "family": "verb-syntax",
+  "order": 1040,
+  "text": "The Jussive Subjunctive expresses a command. The Jussive stands regularly in the Present Tense, and is used—\n1. Most frequently in the third singular and the third plural; as,—\ndīcat, let him tell;\ndīcant, let them tell;\nquārē sēcēdant improbī, wherefore let the wicked depart!\n2. Less frequently in the second person, often with indefinite force; as,—\nistō bonō ūtāre, use that advantage;\nmodestē vīvās, live temperately."
+ },
+ {
+  "id": "bn-276-prohibitive-subjunctive",
+  "ref": "276",
+  "title": "Prohibitive Subjunctive",
+  "family": "verb-syntax",
+  "order": 1050,
+  "text": "The Subjunctive is used in the second and third persons singular and plural, with nē, to express a prohibition. Both Present and Perfect occur, and without appreciable difference of meaning; as,—\nnē repugnētis, do not resist!\ntū vērō istam nē relīquerīs, don't leave her!\nimpiī nē plācāre audeant deōs, let not the impious dare to appease the gods!\na. Neither of these constructions is frequent in classical prose.\nb. A commoner method of expressing a prohibition in the second person is by the use of nōlī (nōlīte) with a following infinitive, or by cavē or cavē nē with the Subjunctive; as,—\nnōlī hōc facere, don't do this (lit. be unwilling to do)!\nnōlīte mentīrī, do not lie!\ncavē ignōscās, cavē tē misereat, do not forgive, do not pity!\ncavē nē haec faciās, do not do this (lit. take care lest you do)!"
+ },
+ {
+  "id": "bn-277-deliberative-subjunctive",
+  "ref": "277",
+  "title": "Deliberative Subjunctive",
+  "family": "verb-syntax",
+  "order": 1060,
+  "text": "The Deliberative Subjunctive is used in questions and exclamations implying doubt, indignation, the impossibility of an act, obligation, or propriety. The Present is used referring to present time, the Imperfect referring to past. The negative is nōn. Thus:—\nquid faciam, what shall I do?\nego redeam, I go back!\nhuic cēdāmus! hūjus condiciōnēs audiāmus! are we to bow to him! are we to listen to his terms!\nquid facerem, what was I to do?\nhunc ego nōn dīligam, should I not cherish this man?\na. These Deliberative Questions are usually purely Rhetorical in character, and do not expect an answer."
+ },
+ {
+  "id": "bn-278-concessive-subjunctive",
+  "ref": "278",
+  "title": "Concessive Subjunctive",
+  "family": "verb-syntax",
+  "order": 1070,
+  "text": "The Subjunctive is used to indicate something as granted or conceded for the sake of argument. The Present is used for present time, the Perfect regularly for past. The negative is nē. Thus:—\nsit hōc vērum, I grant that this is true (lit. let this be true);\nnē sint in senectūte vīrēs, I grant there is not strength in old age;\nfuerit malus cīvis aliīs; tibi quandō esse coepit, I grant that he was a bad citizen to others; when did he begin to be so toward you?"
+ },
+ {
+  "id": "bn-279-optative-subjunctive",
+  "ref": "279",
+  "title": "Optative Subjunctive",
+  "family": "verb-syntax",
+  "order": 1080,
+  "text": "The Optative Subjunctive occurs in expressions of wishing. The negative is regularly nē.\n1. The Present Tense, often accompanied by utinam, is used where the wish is conceived of as possible.\ndī istaec prohibeant, may the gods prevent that!\nfalsus utinam vātēs sim, oh that I may be a false prophet!\nnē veniant, may they not come!\n2. The Imperfect expresses, in the form of a wish, the regret that something is not so now; the Pluperfect that something was not so in the past. The Imperfect and Pluperfect are regularly accompanied by utinam; as,—\nutinam istud ex animō dīcerēs, would that you were saying that in earnest (i.e. I regret that you are not saying it in earnest);\nPēlīdēs utinam vītāsset Apollinis arcūs, would that Achilles had escaped the bow of Apollo;\nutinam nē nātus essem, would that I had not been born."
+ },
+ {
+  "id": "bn-280-potential-subjunctive",
+  "ref": "280-281",
+  "title": "Potential Subjunctive",
+  "family": "verb-syntax",
+  "order": 1090,
+  "text": "The Potential Subjunctive expresses a possibility. The negative is nōn. The following uses are to be noted:—\n1. The 'May' Potential.—The Potential Subjunctive may designate a mere possibility (English auxiliary may). Both Present and Perfect occur, and without appreciable difference of meaning. Thus:—\ndīcat aliquis, some one may say;\ndīxerit aliquis, some one may say.\na. This construction is by no means frequent, and is confined mainly to a few phrases like those given as examples.\n2. 'Should'-'Would' Potential.—The Potential Subjunctive may represent something as depending upon a condition expressed or understood (English auxiliary should, would). Both Present and Perfect occur, and without appreciable difference of meaning. Thus:—\nfortūnam citius reperiās quam retineās, one would more quickly find Fortune than keep it (i.e. if one should make the trial);\ncrēdiderim, I should believe.\na. Here belongs the use of velim, mālim, nōlim, as softened forms of statement for volō, mālō, nōlō. Thus:—\nvelim mihi ignōscās, I wish you would forgive me;\nnōlim putēs mē jocārī, I don't want you to think I'm joking.\nb. …"
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses",
+  "ref": "282-288",
+  "title": "Moods in Dependent Clauses",
+  "family": "verb-syntax",
+  "order": 1100,
+  "text": "1. Clauses of Purpose are introduced most commonly by ut (utī), quō (that, in order that), nē (in order that not, lest), and stand in the Subjunctive, as,—\nedimus ut vīvāmus, we eat that we may live;\nadjūtā mē quō hōc fīat facilius, help me, in order that this may be done more easily;\nportās clausit, nē quam oppidānī injūriam acciperent, he closed the gates, lest the townspeople should receive any injury.\na. Quō, as a rule, is employed only when the purpose clause contains a comparative or a comparative idea. Occasional exceptions occur; as,—\nhaec faciunt quō Chremētem absterreant, they are doing this in order to frighten Chremes.\nb. Ut nē is sometimes found instead of nē. Thus:—\nut nē quid neglegenter agāmus, in order that we may not do anything carelessly.\nc. Ut nōn (not nē) is used where the negation belongs to some single word, instead of to the purpose clause as a whole. Thus:—\nut nōn ējectus ad aliēnōs, sed invītātus ad tuōs videāre, that you may seem not driven out among strangers, but invited to your own friends.\nd. …"
+ },
+ {
+  "id": "bn-289-cum-clauses",
+  "ref": "289-290",
+  "title": "Cum clauses",
+  "family": "verb-syntax",
+  "order": 1110,
+  "text": "When cum refers to the Present or Future it regularly takes the Indicative; as,—\ntum tua rēs agitur, pariēs cum proximus ārdet, your own interests are at stake when your neighbor's house is burning;\ncum vidēbis, tum sciēs, when you see, then you will know.\na. The Indicative of the Present or Future may denote also a recurring action; as,—\nstabilitās amīcitiae cōnfirmārī potest, cum hominēs cupīdinibus imperābunt, firm friendship can be established whenever men shall control their desires.\nC. OTHER USES OF Cum.\n1. Cum Explicative. Cum, with the Indicative, is sometimes used to indicate the identity of one act with another; as,—\ncum tacent clāmant, their silence is a shout (lit. when they are silent, they shout).\n2. Cum ... tum. When cum ... tum mean both ... and, the cum-clause is in the Indicative; but when cum has the force of while, though, it may take the Subjunctive; as,—\ncum tē semper dīlēxerim, tum tuīs factīs incēnsus sum, while I have always loved you, at the same time I am stirred by your conduct.\nClauses introduced by Antequam and Priusquam."
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the",
+  "ref": "291",
+  "title": "Antequam and priusquam with the indicative",
+  "family": "verb-syntax",
+  "order": 1120,
+  "text": "Antequam and priusquam (often written ante ... quam, prius ... quam) take the Indicative to denote an actual fact.\n1. Sometimes the Present or Future Perfect; as,—\nprius respondēs quam rogō, you answer before I ask;\nnihil contrā disputābō priusquam dīxerit, I will say nothing in opposition, before he speaks.\n2. Sometimes the Perfect, especially after negative clauses; as,—\nnōn prius jugulandī fīnis fuit, quam Sulla omnēs suōs dīvitiīs explēvit, there was no end of murder until Sulla satisfied all his henchmen with wealth."
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive",
+  "ref": "292-300",
+  "title": "Temporal clauses with the subjunctive",
+  "family": "verb-syntax",
+  "order": 1130,
+  "text": "Antequam and priusquam take the Subjunctive to denote an act as anticipated.\n1. Thus the Subjunctive may denote—\na) An act in preparation for which the main act takes place; as,—\npriusquam dīmicārent, foedus īctum est, i.e. in anticipation of the fight, a treaty was struck.\nBy an extension of this usage, the Subjunctive is sometimes used of general truths, where the anticipatory notion has faded out; as,—\ntempestās minātur antequam surgat, the tempest threatens before it rises.\nb) An act anticipated and forestalled; as,—\npriusquam tēlum adicī posset, omnis aciēs terga vertit, before a spear could be hurled, the whole army fled.\nc) An act anticipated and deprecated; as,—\nanimum omittunt priusquam locō dēmigrent, they die rather than quit their post.\n2. After historical tenses the Imperfect Subjunctive is used, especially by some writers, where the notion of anticipation has practically vanished; as,—\nsōl antequam sē abderet fugientem vīdit Antōnium, the sun before it set saw Antony fleeing.\nClauses introduced by Dum, Dōnec, Quoad.\n1. …"
+ },
+ {
+  "id": "bn-301-conditional-sentences",
+  "ref": "301-313",
+  "title": "Conditional Sentences",
+  "family": "verb-syntax",
+  "order": 1140,
+  "text": "Conditional Sentences are compound sentences (§ 164) consisting of two parts, the Protasis (or condition), usually introduced by sī, nisi, or sīn, and the Apodosis (or conclusion). There are the following types of Conditional Sentences:—\nFirst Type.—Nothing Implied as to the Reality of the Supposed Case.\n1. Here we regularly have the Indicative in both Protasis and Apodosis. Any tense may be used; as,—\nsī hōc crēdis, errās, if you believe this, you are mistaken;\nnātūram sī sequēmur, numquam aberrābimus, if we follow Nature, we shall never go astray;\nsī hōc dīxistī, errāstī, if you said this, you were in error.\n2. Sometimes the Protasis takes the Indefinite Second Person Singular (§ 356, 3) of the Present or Perfect Subjunctive, with the force of the Indicative; as,—\nmemoria minuitur, nisi eam exerceās, memory is impaired unless you exercise it.\n3. Here belong also those conditional sentences in which the Protasis denotes a repeated action (compare §§ 287, 2; 288, 3); as,—\nsī quis equitum dēciderat, peditēs circumsistēbant, if any one of the horsemen fell, the foot-soldiers gathered about him.\na. …"
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse",
+  "ref": "314-316",
+  "title": "Moods in Indirect Discourse",
+  "family": "verb-syntax",
+  "order": 1150,
+  "text": "1. Declarative Sentences upon becoming Indirect change their main clause to the Infinitive with Subject Accusative, while all subordinate clauses take the Subjunctive; as,—\nRēgulus dīxit quam diū jūre jūrandō hostium tenērētur nōn esse sē senātōrem, Regulus said that as long as he was held by his pledge to the enemy he was not a senator. (Direct: quam diū teneor nōn sum senātor.)\n2. The verb of saying, thinking, etc., is sometimes to be inferred from the context; as,—\ntum Rōmulus lēgātōs circā vīcīnās gentēs mīsit quī societātem cōnūbiumque peterent: urbēs quoque, ut cētera, ex īnfimō nāscī, then Romulus sent envoys around among the neighboring tribes, to ask for alliance and the right of intermarriage, (saying that) cities, like everything else, start from a modest beginning.\n3. Subordinate clauses which contain an explanatory statement of the writer and so are not properly a part of the Indirect Discourse, or which emphasize the fact stated, take the Indicative; as,—\nnūntiātum est Ariovistum ad occupandum Vesontiōnem, quod est oppidum maximum Sēquanōrum contendere, it was reported that Ariovistus was hastening to seize Vesontio, which is the largest town of the Sequani.\n4. …"
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse",
+  "ref": "317-318",
+  "title": "Tenses in Indirect Discourse",
+  "family": "verb-syntax",
+  "order": 1160,
+  "text": "These are used in accordance with the regular principles for the use of the Infinitive as given in § 270.\na. The Perfect Infinitive may represent any past tense of the Indicative of Direct Discourse. Thus:—\nsciō tē haec ēgisse may mean—\nI know you were doing this.(Direct: haec agēbās.)\nI know you did this. (Direct: haec ēgistī.)\nI know you had done this. (Direct: haec ēgerās.)\nB. Tenses of the Subjunctive.\nThese follow the regular principle for the Sequence of Tenses, being Principal if the verb of saying is Principal; Historical if it is Historical. Yet for the sake of vividness, we often find the Present Subjunctive used after an historical tense (Repraesentātiō); as,—\nCaesar respondit, sī obsidēs dentur, sēsē pācem esse factūrum, Caesar replied that, if hostages be given, he would make peace.\na. For the sequence after the Perfect Infinitive, see § 268, 2.\nConditional Sentences of the First Type."
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect",
+  "ref": "319-322",
+  "title": "Conditional Sentences in Indirect Discourse",
+  "family": "verb-syntax",
+  "order": 1170,
+  "text": "A. THE APODOSIS. Any tense of the Indicative is changed to the corresponding tense of the Infinitive (§§ 270; 317, a).\nB. THE PROTASIS. The protasis takes those tenses of the Subjunctive which are required by the Sequence of Tenses.\nExamples:—\nDIRECT.  INDIRECT.\nsī hōc crēdis, errās,  dīcō, sī hōc crēdās, tē errāre;\ndīxī, sī hōc crēderēs, tē errāre.\nsī hōc crēdēs, errābis,  dīcō, sī hōc crēdās, tē errātūrum\nesse; dīxī, sī hōc crēderēs, tē errātūrum esse.\nsī hōc crēdideris, errābis,  dīcō, sī hōc crēderīs, tē errātūrum\nesse; dīxī, sī hōc crēdidissēs, tē errātūrum esse.\nsī hōc crēdēbās, errāvistī,  dīcō, sī hōc crēderēs, tē errāvisse;\ndīxī, sī hōc crēderēs, tē errāvisse.\na. Note that a Future Perfect Indicative of the Direct Discourse regularly appears in the Indirect as a Perfect Subjunctive after a principal tense, and as a Pluperfect Subjunctive after an historical tense.\nConditional Sentences of the Second Type.\nA. THE APODOSIS. The Present Subjunctive of the Direct Discourse regularly becomes the Future Infinitive of the Indirect.\nB. THE PROTASIS. …"
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse",
+  "ref": "323",
+  "title": "Implied Indirect Discourse",
+  "family": "verb-syntax",
+  "order": 1180,
+  "text": "The Subjunctive is often used in subordinate clauses whose indirect character is merely implied by the context; as,—\ndēmōnstrābantur mihi praetereā, quae Sōcratēs dē immortālitāte animōrum disseruisset, there were explained to me besides, the arguments which Socrates had set forth concerning the immortality of the soul (i.e. the arguments which, it was said, Socrates had set forth);\nPaetus omnēs librōs quōs pater suus relīquisset mihi dōnāvit, Paetus gave me all the books which (as he said) his father had left."
+ },
+ {
+  "id": "bn-324-subjunctive-by-attraction",
+  "ref": "324",
+  "title": "Subjunctive by Attraction",
+  "family": "verb-syntax",
+  "order": 1190,
+  "text": "1. Subordinate clauses dependent upon the Subjunctive are frequently attracted into the same mood especially when they do not express a fact, but constitute an essential part of one complex idea; as,—\nnēmō avārus adhūc inventus est, cui, quod habēret, esset satis, no miser has yet been found who was satisfed with what he had;\ncum dīversās causās afferrent, dum fōrmam suī quisque et animī et ingeniī redderent, as they brought forward different arguments, while each mirrored his own individual type of mind and natural bent;\nquod ego fatear, pudeat? should I be ashamed of a thing which I admit?\n2. Similarly a subordinate clause dependent upon an Infinitive is put in the Subjunctive when the two form one closely united whole; as,—\nmōs est Athēnīs quotannīs in cōntiōne laudārī eōs quī sint in proeliīs interfectī, it is the custom at Athens every year for those to be publicly eulogized who have been killed in battle. (Here the notion of 'praising those who fell in battle' forms an inseparable whole.)"
+ },
+ {
+  "id": "bn-326-the-infinitive",
+  "ref": "326-335",
+  "title": "The Infinitive",
+  "family": "verb-syntax",
+  "order": 1200,
+  "text": "This is used chiefly as Subject or Object but also as Predicate or Appositive.\nNOTE.—The Infinitive was originally a Dative, and traces of this are still to be seen in the poetical use of the Infinitive to express purpose; as, nec dulcēs occurrent ōscula nātī praeripere, and no sweet children will run to snatch kisses.\nA. As Subject.\n1. The Infinitive without Subject Accusative is used as the Subject of esse and various impersonal verbs, particularly opus est, necesse est, oportet, juvat, dēlectat, placet, libet, licet, praestat, decet, pudet, interest, etc.; as,—\ndulce et decōrum est prō patriā morī, it is sweet and noble to die for one's country;\nvirōrum est fortium toleranter dolōrem patī, it is the part of brave men to endure pain with patience;\nsenātuī placuit lēgātōs mittere, the Senate decided (lit. it pleased the Senate) to send envoys.\n2. Even though the Infinitive itself appears without Subject, it may take a Predicate Noun or Adjective in the Accusative; as,—\naliud est īrācundum esse, aliud īrātum, it is one thing to be irascible, another to be angry;\nimpūne quaelibet facere, id est rēgem esse, to do whatever you please with impunity, that is to be a king.\na. …"
+ },
+ {
+  "id": "bn-336-participles",
+  "ref": "336-337",
+  "title": "Participles",
+  "family": "verb-syntax",
+  "order": 1210,
+  "text": "1. The tenses of the Participle, like those of the infinitive (see § 270), express time not absolutely, but with reference to the verb upon which the Participle depends.\n2. The Present Participle denotes action contemporary with that of the verb. Thus:—\naudiō tē loquentem = you ARE speaking and I hear you;\naudiēbam tē loquentem = you WERE speaking and I heard you;\naudiam tē loquentem = you WILL BE speaking and I shall hear you.\na. The Present Participle is sometimes employed with Conative force; as,—\nassurgentem rēgem resupīnat, as the king was trying to rise, he threw him down.\n3. The Perfect Passive Participle denotes action prior to that of the verb. Thus:—\nlocūtus taceō = I HAVE spoken and am silent;\nlocūtus tacui = I HAD spoken and then was silent;\nlocūtus tacēbō = I SHALL speak and then shall be silent.\n4. The absolute time of the action of a participle, therefore, is determined entirely by the finite verb with which it is connected.\n5. Certain Perfect Passive Participles of Deponent and Semi-Deponent Verbs are used as Presents; viz. …"
+ },
+ {
+  "id": "bn-338-the-gerund",
+  "ref": "338-339",
+  "title": "The Gerund",
+  "family": "verb-syntax",
+  "order": 1220,
+  "text": "As a verbal noun the Gerund admits noun constructions as follows:—\n1. Genitive. The Genitive of the Gerund is used—\na) With Nouns, as objective or Appositional Genitive (see §§ 200, 202); as,—\ncupiditās dominandī, desire of ruling;\nars scrībendī, the art of writing.\nb) With Adjectives; as,—\ncupidus audiendī, desirous of hearing.\nc) With causā, grātiā; as,—\ndiscendī causā, for the sake of learning.\n2. Dative. The Dative of the Gerund is used—\na) With Adjectives; as,—\naqua ūtilis est bibendō, water is useful for drinking.\nb) With Verbs (rarely); as,—\nadfuī scrībendō, I was present at the writing.\n3. Accusative. The Accusative of the Gerund is used only with Prepositions, chiefly ad and in to denote purpose; as,—\nhomō ad agendum nātus est, man is born for action.\n4. Ablative. The Ablative of the Gerund is used—\na) Without a Preposition, as an Ablative of Means, Cause, etc. …"
+ },
+ {
+  "id": "bn-340-the-supine",
+  "ref": "340",
+  "title": "The Supine",
+  "family": "verb-syntax",
+  "order": 1230,
+  "text": "1. The Supine in -um is used after Verbs of motion to express purpose; as,—\nlēgātī ad Caesarem grātulātum convēnērunt, envoys came to Caesar to congratulate him.\na. The Supine in -um may take an Object; as,—\npācem petītum ōrātōrēs Rōmam mittunt, they send envoys to Rome to ask for peace.\nb. Note the phrase:—\ndō (collocō) fīliam nūptum, I give my daughter in marriage.\n2. The Supine in -ū is used as an Ablative of Specification with facilis, difficilis, incrēdibilis, jūcundus, optimus, etc.; also with fās est, nefās est, opus est; as,—\nhaec rēs est facilis cognitū, this thing is easy to learn;\nhōc est optimum factū, this is best to do.\na. Only a few Supines in -ū are in common use, chiefly audītū, cognitū, dictū, factū, vīsū.\nb. The Supine in -ū never takes an Object."
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions",
+  "ref": "341-346",
+  "title": "Coördinate Conjunctions",
+  "family": "style",
+  "order": 1240,
+  "text": "Copulative Conjunctions. These join one word, phrase, or clause to another.\n1. a) et simply connects.\nb) -que joins more closely than et, and is used especially where the two members have an internal connection with each other; as,—\nparentēs līberīque, parents and children;\ncum hominēs aestū febrīque jactantur, when people are tossed about with heat and fever.\nc) atque (ac) usually emphasizes the second of the two things connected,—and also, and indeed, and in fact. After words of likeness and difference, atque (ac) has the force of as, than. Thus:—\nego idem sentiō ac tū, I think the same as you;\nhaud aliter ac, not otherwise than.\nd) neque (nec) means and not, neither, nor.\n2. a) -que is an enclitic, and is appended always to the second of two words connected. …"
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs",
+  "ref": "347",
+  "title": "Syntax of adverbs",
+  "family": "style",
+  "order": 1250,
+  "text": "1. The following particles, sometimes classed as Conjunctions, are more properly Adverbs:—\netiam, also, even.\nquoque (always post-positive), also.\nquidem (always post-positive) lays stress upon the preceding word. It is sometimes equivalent to the English indeed, in fact, but more frequently cannot be rendered, except by vocal emphasis.\nnē ... quidem means not even; the emphatic word or phrase always stands between; as, nē ille quidem, not even he.\ntamen and vērō, in addition to their use as Conjunctions, are often employed as Adverbs.\n2. Negatives. Two negatives are regularly equivalent to an affirmative as in English, as nōn nūllī, some; but when nōn, nēmō, nihil, numquam, etc., are accompanied by neque ... neque, nōn ... nōn, nōn modo, or nē ... quidem, the latter particles simply take up the negation and emphasize it; as,—\nhabeō hīc nēminem neque amīcum neque cognātum, I have here no one, neither friend nor relative.\nnōn enim praetereundum est nē id quidem, for not even that must be passed by.\na. Haud in Cicero and Caesar occurs almost exclusively as a modifier of Adjectives and Adverbs, and in the phrase haud sciō an. Later writers use it freely with verbs."
+ },
+ {
+  "id": "bn-348-word-order",
+  "ref": "348-349",
+  "title": "Word-order",
+  "family": "style",
+  "order": 1260,
+  "text": "In the normal arrangement of the Latin sentence the Subject stands at the beginning of the sentence, the Predicate at the end; as,—\nDārīus classem quīngentārum nāvium comparāvit, Darius got ready a fleet of five hundred ships.\nBut for the sake of emphasis the normal arrangement is often abandoned, and the emphatic word is put at the beginning, less frequently at the end of the sentence; as,—\nmagnus in hōc bellō Themistoclēs fuit, GREAT was Themistocles in this war;\naliud iter habēmus nūllum, other course we have NONE."
+ },
+ {
+  "id": "bn-350-word-order-special-principles",
+  "ref": "350",
+  "title": "Word-order: special principles",
+  "family": "style",
+  "order": 1270,
+  "text": "1. Nouns. A Genitive or other oblique case regularly follows the word upon which it depends. Thus:—\na) Depending upon a Noun:—\ntribūnus plēbis, tribune of the plebs;\nfīlius rēgis, son of the king;\nvir magnī animī, a man of noble spirit.\nYet always senātūs cōnsultum, plēbis scītum.\nb) Depending upon an Adjective:—\nignārus rērum, ignorant of affairs;\ndignī amīcitiā, worthy of friendship;\nplūs aequō, more than (what is) fair.\n2. Appositives. An Appositive regularly follows its Subject; as,—\nPhilippus, rēx Macedonum, Philip, king of the Macedonians;\nadsentātiō, vitiōrum adjūtrīx, flattery, promoter of evils.\nYet flūmen Rhēnus, the River Rhine; and always in good prose urbs Rōma, the city Rome.\n3. The Vocative usually follows one or more words; as,—\naudī, Caesar, hear, Caesar!\n4. Adjectives. No general law can be laid down for the position of Adjectives. On the whole they precede the noun oftener than they follow it.\na. Adjectives of quantity (including numerals) regularly precede their noun; as,—\nomnēs hominēs, all men;\nseptingentae nāvēs, seven hundred vessels.\nb. …"
+ },
+ {
+  "id": "bn-351-sentence-structure",
+  "ref": "351-352",
+  "title": "Sentence-structure",
+  "family": "style",
+  "order": 1280,
+  "text": "1. Unity of Subject.—In complex sentences the Latin regularly holds to unity of Subject in the different members; as,—\nCaesar prīmum suō, deinde omnium ex cōnspectū remōtīs equīs, ut aequātō perīculō spem fugae tolleret, cohortātus suōs proelium commīsit, Caesar having first removed his own horse from sight, then the horses of all, in order, by making the danger equal, to take away hope of flight, encouraged his men and joined battle.\n2. A word serving as the common Subject or Object of the main clause and a subordinate one, stands before both; as,—\nHaeduī cum sē dēfendere nōn possent, lēgātōs ad Caesarem mittunt, since the Haedui could not defend themselves, they sent envoys to Caesar;\nille etsī flagrābat bellandī cupiditāte, tamen pācī serviendum putāvit, although he was burning with a desire to fight, yet he thought he ought to aim at peace.\na. …"
+ },
+ {
+  "id": "bn-353-style-nouns",
+  "ref": "353",
+  "title": "Style: nouns",
+  "family": "style",
+  "order": 1290,
+  "text": "1. Where a distinct reference to several persons or things is involved, the Latin is frequently much more exact in the use of the Plural than is the English; as,—\ndomōs eunt, they go home (i.e. to their homes);\nGermānī corpora cūrant, the Germans care for the body;\nanimōs mīlitum recreat, he renews the courage of the soldiers;\ndiēs noctēsque timēre, to be in a state of fear day and night.\n2. In case of Neuter Pronouns and Adjectives used substantively, the Latin often employs the Plural where the English uses the Singular; as,—\nomnia sunt perdīta, everything is lost;\nquae cum ita sint, since this is so;\nhaec omnibus pervulgāta sunt, this is very well known to all.\n3. The Latin is usually more concrete than the English, and especially less bold in the personification of abstract qualities. Thus:—\nā puerō, ā puerīs, from boyhood;\nSullā dictātōre, in Sulla's dictatorship;\nmē duce, under my leadership;\nRōmānī cum Carthāginiēnsibus pācem fēcērunt = Rome made peace with Carthage;\nliber doctrīnae plēnus = a learned book;\nprūdentiā Themistoclīs Graecia servāta est = Themistocles's foresight saved Greece.\n4. …"
+ },
+ {
+  "id": "bn-354-style-adjectives",
+  "ref": "354",
+  "title": "Style: adjectives",
+  "family": "style",
+  "order": 1300,
+  "text": "1. Special Latin Equivalents for English Adjectives are—\na) A Genitive; as,—\nvirtūtēs animī = moral virtues;\ndolōrēs corporis = bodily ills.\nb) An Abstract Noun; as,—\nnovitās reī = the strange circumstance;\nasperitās viārum = rough roads.\nc) Hendiadys (see § 374, 4); as,—\nratiō et ōrdō = systematic order;\nārdor et impetus = eager onset.\nd) Sometimes an Adverb; as,—\nomnēs circā populī, all the surrounding tribes;\nsuōs semper hostēs, their perpetual foes.\n2. Often a Latin Noun is equivalent to an English Noun modified by an Adjective; as,—\ndoctrīna, theoretical knowledge;\nprūdentia, practical knowledge;\noppidum, walled town;\nlibellus, little book.\n3. Adjectives are not used in immediate agreement with proper names; but an Adjective may limit vir, homō, ille, or some other word used as an Appositive of a proper name; as,—\nSōcratēs, homō sapiēns = the wise Socrates;\nScīpiō, vir fortissimus = the doughty Scipio;\nSyrācūsae, urbs praeclārissima = famous Syracuse.\n4. An Adjective may be equivalent to a Possessive or Subjective Genitive; as,—\npāstor rēgius, the shepherd of the king;\ntumultus servīlis, the uprising of the slaves."
+ },
+ {
+  "id": "bn-355-style-pronouns",
+  "ref": "355",
+  "title": "Style: pronouns",
+  "family": "style",
+  "order": 1310,
+  "text": "1. In Compound Sentences the Relative Pronoun has a fondness for connecting itself with the subordinate clause rather than the main one; as,—\nā quō cum quaererētur, quid maximē expedīret, respondit, when it was asked of him what was best, he replied. (Less commonly, quī, cum ab eō quaererētur, respondit.)\n2. Uterque, ambō. Uterque means each of two; ambō means both; as,—\nuterque frāter abiit, each of the two brothers departed (i.e. separately);\nambō frātrēs abiērunt, i.e. the two brothers departed together.\na. The Plural of uterque occurs—\n1) With Nouns used only in the Plural (see § 56); as,—\nin utrīsque castrīs, in each camp.\n2) Where there is a distinct reference to two groups of persons or things; as,—\nutrīque ducēs clārī fuērunt, the generals on each side (several in number) were famous."
+ },
+ {
+  "id": "bn-356-style-verbs",
+  "ref": "356",
+  "title": "Style: verbs",
+  "family": "style",
+  "order": 1320,
+  "text": "1. In case of Defective and Deponent Verbs, a Passive is supplied:—\na) By the corresponding verbal Nouns in combination with esse, etc.; as,—\nin odiō sumus, we are hated;\nin invidiā sum, I am envied;\nadmīrātiōnī est, he is admired;\noblīviōne obruitur, he is forgotten (lit. is overwhelmed by oblivion);\nin ūsū esse, to be used.\nb) By the Passive of Verbs of related meaning. Thus:—\nagitārī as Passive of persequī;\ntemptārī as Passive of adorīrī.\n2. The lack of the Perfect Active Participle in Latin is supplied—\na) Sometimes by the Perfect Passive Participle of the Deponent; as,—\nadhortātus, having exhorted;\nveritus, having feared.\nb) By the Ablative Absolute; as,—\nhostium agrīs vāstātīs Caesar exercitum redūxit, having ravaged the country of the enemy, Caesar led back his army.\nc) By subordinate clauses; as,—\neō cum advēnisset, castra posuit, having arrived there, he pitched a camp;\nhostes quī in urbem irrūperant, the enemy having burst into the city.\n3. The Latin agrees with English in the stylistic employment of the Second Person Singular in an indefinite sense (= 'one'). Cf. …"
+ },
+ {
+  "id": "bn-357-peculiarities-in-the-use-of-the",
+  "ref": "357",
+  "title": "Peculiarities in the Use of the Accusative",
+  "family": "style",
+  "order": 1330,
+  "text": "1. To denote 'so many years, etc., afterwards or before' the Latin employs not merely the Ablative of Degree of Difference with post and ante (see § 223), but has other forms of expression. Thus:—\npost quīnque annōs, five years afterward;\npaucōs ante diēs, a few days before;\nante quadriennium, four years before;\npost diem quārtum quam ab urbe discesserāmus, four days after we had left the city;\nante tertium annum quam dēcesserat, three years before he had died.\n2. The Latin seldom combines both Subject and Object with the same Infinitive; as,—\nRōmānōs Hannibalem vīcisse cōnstat.\nSuch a sentence would be ambiguous, and might mean either that the Romans had conquered Hannibal, or that Hannibal had conquered the Romans. Perspicuity was gained by the use of the Passive Infinitive; as,—\nRōmānōs ab Hannibale victōs esse cōnstat, it is well established that the Romans were defeated by Hannibal."
+ },
+ {
+  "id": "bn-358-peculiarities-in-connection-with-the",
+  "ref": "358",
+  "title": "Peculiarities in Connection with the Use of the Dative",
+  "family": "style",
+  "order": 1340,
+  "text": "1. The English for does not always correspond to a Dative notion in Latin, but is often the equivalent of prō with the Ablative, viz. in the senses—\na) In defense of; as,—\nprō patriā morī, to die for one's country.\nb) Instead of, in behalf of; as,—\nūnus prō omnibus dīxit, one spoke for all;\nhaec prō lēge dicta sunt, these things were said for the law.\nc) In proportion to; as,—\nprō multitūdine hominum eōrum fīnēs erant angustī, for the population, their territory was small.\n2. Similarly, English to when it indicates motion is rendered in Latin by ad.\na. Note, however, that the Latin may say either scrībere ad aliquem, or scrībere alicui, according as the idea of motion is or is not predominant. So in several similar expressions.\n3. In the poets, verbs of mingling with, contending with, joining, clinging to, etc., sometimes take the Dative. This construction is a Grecism. Thus:—\nsē miscet virīs, he mingles with the men;\ncontendis Homērō, you contend with Homer;\ndextrae dextram jungere, to clasp hand with hand."
+ },
+ {
+  "id": "bn-359-peculiarities-in-the-use-of-the-genitive",
+  "ref": "359",
+  "title": "Peculiarities in the Use of the Genitive",
+  "family": "style",
+  "order": 1350,
+  "text": "1. The Possessive Genitive gives emphasis to the possessor, the Dative of Possessor emphasizes the fact of possession; as,—\nhortus patris est, the garden is my father's;\nmihi hortus est, I possess a garden.\n2. The Latin can say either stultī or stultum est dīcere, it is foolish to say; but Adjectives of one ending permit only the Genitive; as,—\nsapientis est haec sēcum reputāre, it is the part of a wise man to consider this."
+ }
 ]
