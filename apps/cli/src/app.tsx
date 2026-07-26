@@ -440,17 +440,18 @@ function VocabReview({
   reveal: boolean;
 }) {
   if (!card) return null;
+  // English on the front: the student produces the Latin, as everywhere else.
   return (
     <Box flexDirection="column" marginTop={1}>
-      <Text dimColor>Vocabulary review</Text>
+      <Text dimColor>Vocabulary review · say it in Latin</Text>
       <Box marginTop={1}>
-        <Text bold color="magenta">
-          {card.citation}
-        </Text>
+        <Text bold>{card.gloss}</Text>
       </Box>
       {reveal && (
         <Box marginTop={1}>
-          <Text color="cyan">→ {card.gloss}</Text>
+          <Text color="magenta" bold>
+            → {card.citation}
+          </Text>
         </Box>
       )}
     </Box>

@@ -109,12 +109,14 @@ describe("CLI App (write → compare → self-grade)", () => {
     await tick();
     expect(session.progress().topicCards["ag-decl1"]).toBeDefined();
     expect(lastFrame()).toContain("Vocabulary review");
-    expect(lastFrame()).toContain("manus, manūs (f)");
+    // English on the front; the Latin citation is what you have to produce.
+    expect(lastFrame()).toContain("hand");
+    expect(lastFrame()).not.toContain("manus, manūs (f)");
 
-    // Reveal gloss, grade it -> advance to the second topic.
+    // Reveal the citation, grade it -> advance to the second topic.
     stdin.write(" ");
     await tick();
-    expect(lastFrame()).toContain("hand");
+    expect(lastFrame()).toContain("manus, manūs (f)");
     stdin.write("3");
     await tick();
     expect(lastFrame()).toContain("Second declension nouns");
