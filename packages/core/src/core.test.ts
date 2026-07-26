@@ -198,6 +198,43 @@ describe("Session mastery", () => {
     expect(mastery(s2, "ag1")).toBe(2); // accumulates from the floor onwards
   });
 
+  it("keeps a capped trail of what was written on a topic, newest first", () => {
+    const s = new Session(new Content(fixture));
+    const at = (day: number) => new Date(`2026-01-${String(day).padStart(2, "0")}T00:00:00Z`);
+    for (let i = 1; i <= 12; i++) {
+      s.recordAttempt(
+        "ag1",
+        { prompt: `q${i}`, answer: "puellae", submitted: `a${i}`, rating: 3 },
+        at(i),
+      );
+    }
+    const trail = s.attemptsFor("ag1");
+    // Ten kept, the two oldest dropped; most recent first for reading.
+    expect(trail).toHaveLength(10);
+    expect(trail[0]!.prompt).toBe("q12");
+    expect(trail[0]!.submitted).toBe("a12");
+    expect(trail[0]!.at).toBe(at(12).toISOString());
+    expect(trail.at(-1)!.prompt).toBe("q3");
+    // Trails are per topic.
+    expect(s.attemptsFor("ag2")).toEqual([]);
+  });
+
+  it("loads progress files written before answers were kept", () => {
+    const s1 = new Session(new Content(fixture));
+    s1.gradeTopic("ag1", 3, now);
+    const legacy = JSON.parse(JSON.stringify(s1.progress()));
+    delete legacy.attempts; // as an older file on disk would be
+
+    const s2 = new Session(new Content(fixture), legacy);
+    expect(s2.attemptsFor("ag1")).toEqual([]);
+    s2.recordAttempt(
+      "ag1",
+      { prompt: "puella (nom. pl.)?", answer: "puellae", submitted: "puellā", rating: 2 },
+      now,
+    );
+    expect(s2.attemptsFor("ag1")).toHaveLength(1);
+  });
+
   it("marks due topics and topics that have no tests", () => {
     const withoutTests: ContentData = {
       ...fixture,

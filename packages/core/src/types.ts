@@ -96,6 +96,24 @@ export interface VocabCardState extends LemmaEntry {
   fsrs: SerializedCard;
 }
 
+/**
+ * One answered question, kept so the topic's earlier attempts can be re-read
+ * after a later one. Self-grading leaves no other trace of what was actually
+ * written, and a topic comes back for months: this is that trace.
+ */
+export interface Attempt {
+  /** The English prompt that was asked. */
+  prompt: string;
+  /** The reference answer it was shown against. */
+  answer: string;
+  /** What the student typed; empty if they submitted nothing. */
+  submitted: string;
+  /** The self-grade given. Same scale as the scheduler's `Rating`. */
+  rating: 1 | 2 | 3 | 4;
+  /** When it was graded, ISO. */
+  at: string;
+}
+
 export interface Progress {
   version: number;
   /** Section id of the student's placed level, or null before placement. */
@@ -114,6 +132,8 @@ export interface Progress {
   knownSections: string[];
   /** sectionId -> ids of tests recently served (to rotate variety). */
   seenTests: Record<string, string[]>;
+  /** sectionId -> its recent answered questions, oldest first. */
+  attempts: Record<string, Attempt[]>;
   /** Count of new topics introduced (drives spot-check cadence). */
   newTopicsIntroduced: number;
   /** Whether the initial placement test has been completed/skipped. */
@@ -130,6 +150,7 @@ export function emptyProgress(): Progress {
     vocabCards: {},
     knownSections: [],
     seenTests: {},
+    attempts: {},
     newTopicsIntroduced: 0,
     placementDone: false,
     updatedAt: new Date().toISOString(),

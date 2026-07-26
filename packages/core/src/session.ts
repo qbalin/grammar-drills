@@ -11,6 +11,7 @@ import {
 } from "./scheduler.js";
 import {
   emptyProgress,
+  type Attempt,
   type LemmaEntry,
   type Progress,
   type Test,
@@ -18,6 +19,12 @@ import {
 } from "./types.js";
 
 const SEEN_HISTORY = 10; // remember this many recently-served tests per section
+
+/**
+ * Answered questions kept per topic. Capped, not unbounded: the whole progress
+ * file is rewritten (and, on GitHub storage, committed) on every save.
+ */
+const ATTEMPT_HISTORY = 10;
 
 /** Mastery runs 1 (not mastered) to 4 (mastered); the bars show the span between. */
 const MASTERY_MIN = 1;
@@ -72,8 +79,9 @@ export class Session {
   ) {
     this.p = progress ?? emptyProgress();
     // Progress files written before mastery tracking have no map; there is no
-    // migration layer, so default it here.
+    // migration layer, so default it here. Same for the answer trail.
     this.p.topicMastery ??= {};
+    this.p.attempts ??= {};
   }
 
   // --- placement -----------------------------------------------------------
@@ -180,6 +188,28 @@ export class Session {
       }
     }
     this.touch();
+  }
+
+  /**
+   * Keep an answered question on its topic. Only the last `ATTEMPT_HISTORY` per
+   * topic survive, oldest dropped first.
+   */
+  recordAttempt(
+    sectionId: string,
+    attempt: Omit<Attempt, "at">,
+    now: Date = new Date(),
+  ): void {
+    const kept = this.p.attempts[sectionId] ?? [];
+    this.p.attempts[sectionId] = [
+      ...kept,
+      { ...attempt, at: now.toISOString() },
+    ].slice(-ATTEMPT_HISTORY);
+    this.touch();
+  }
+
+  /** What was written on a topic before now, most recent first. */
+  attemptsFor(sectionId: string): Attempt[] {
+    return [...(this.p.attempts[sectionId] ?? [])].reverse();
   }
 
   /**
