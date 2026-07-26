@@ -4,11 +4,13 @@ import TextInput from "ink-text-input";
 import {
   Content,
   Session,
+  type FamilyProgress,
   type LemmaEntry,
   type Question,
   type Rating,
   type StorageAdapter,
   type Test,
+  type TopicProgress,
 } from "@latin-tutor/core";
 
 interface Props {
@@ -24,6 +26,7 @@ type Phase =
   | { t: "vocab-pick"; form: string; candidates: LemmaEntry[] }
   | { t: "vocab-review-front"; cardId: string }
   | { t: "vocab-review-back"; cardId: string }
+  | { t: "map"; from: "graded" | "done" }
   | { t: "done" };
 
 export function App({ session, content, storage }: Props) {
@@ -44,9 +47,25 @@ export function App({ session, content, storage }: Props) {
   const [submitted, setSubmitted] = useState(""); // the answer the student submitted
   const [flash, setFlash] = useState<string | null>(null);
   const [tick, setTick] = useState(0);
+  const [mapIndex, setMapIndex] = useState(0);
 
   const question: Question | undefined = test?.questions[qIndex];
   const section = sectionId ? content.getSection(sectionId) : undefined;
+
+  // The grammar map: families in display order, and the same topics flattened
+  // so the cursor can walk straight across family boundaries.
+  const families = useMemo(() => session.familyProgress(), [tick, session]);
+  const mapTopics = useMemo(() => families.flatMap((f) => f.topics), [families]);
+  const overall = useMemo(() => session.overallPercent(), [tick, session]);
+  const familyStarts = useMemo(() => {
+    const starts: number[] = [];
+    let n = 0;
+    for (const f of families) {
+      starts.push(n);
+      n += f.topics.length;
+    }
+    return starts;
+  }, [families]);
 
   const save = () => {
     void storage.save(session.progress()).catch(() => {});
@@ -182,6 +201,52 @@ export function App({ session, content, storage }: Props) {
     setPhase({ t: "vocab-pick", form, candidates });
   };
 
+  /** Open the grammar map, parked on the current topic (or the first unstudied one). */
+  const openMap = (from: "graded" | "done") => {
+    let i = mapTopics.findIndex((t) => t.sectionId === sectionId);
+    if (i < 0) i = mapTopics.findIndex((t) => t.mastery === undefined);
+    setMapIndex(i < 0 ? 0 : i);
+    setFlash(null);
+    setPhase({ t: "map", from });
+  };
+
+  /** Jump the cursor to the first topic of the previous/next non-empty family. */
+  const jumpFamily = (dir: -1 | 1) => {
+    setMapIndex((i) => {
+      let current = 0;
+      for (let k = 0; k < familyStarts.length; k++) {
+        if (families[k]!.topics.length > 0 && familyStarts[k]! <= i) current = k;
+      }
+      for (let k = current + dir; k >= 0 && k < families.length; k += dir) {
+        if (families[k]!.topics.length > 0) return familyStarts[k]!;
+      }
+      return i; // already at the first/last populated family
+    });
+  };
+
+  /** Serve a test on the topic under the cursor and quiz it right now. */
+  const quizSelected = () => {
+    const target = mapTopics[mapIndex];
+    if (!target) return;
+    const t = session.serveTest(target.sectionId);
+    if (!t) {
+      setFlash(`No tests for “${target.title}” yet.`);
+      return;
+    }
+    save();
+    const fresh = target.mastery === undefined;
+    setFlash(null);
+    setSectionId(target.sectionId);
+    setTest(t);
+    setQIndex(0);
+    setInput("");
+    setSubmitted("");
+    setIsNewTopic(fresh);
+    setShowGrammar(fresh); // teach the rule first when it's new ground
+    setPhase({ t: "answering" });
+    setTick((n) => n + 1);
+  };
+
   useInput((ch, key) => {
     // While typing (answering / vocab-input) the TextInput owns the keys.
     if (phase.t === "answering") {
@@ -200,10 +265,21 @@ export function App({ session, content, storage }: Props) {
       case "graded": {
         if (ch >= "1" && ch <= "4") gradeAndContinue(Number(ch) as Rating);
         else if (ch === "g") setShowGrammar((s) => !s);
+        else if (ch === "m" && !inPlacement) openMap("graded");
         else if (ch === "v") {
           setInput("");
           setPhase({ t: "vocab-input" });
         }
+        break;
+      }
+      case "map": {
+        if (key.leftArrow) setMapIndex((i) => Math.max(0, i - 1));
+        else if (key.rightArrow)
+          setMapIndex((i) => Math.min(mapTopics.length - 1, i + 1));
+        else if (key.upArrow) jumpFamily(-1);
+        else if (key.downArrow) jumpFamily(1);
+        else if (key.return) quizSelected();
+        else if (key.escape || ch === "m") setPhase({ t: phase.from });
         break;
       }
       case "vocab-pick": {
@@ -235,7 +311,8 @@ export function App({ session, content, storage }: Props) {
         break;
       }
       case "done": {
-        if (key.return || ch === " ") {
+        if (ch === "m") openMap("done");
+        else if (key.return || ch === " ") {
           save();
           exit();
         }
@@ -267,7 +344,17 @@ export function App({ session, content, storage }: Props) {
         </Box>
       )}
 
-      {showGrammar && section && (
+      {phase.t === "map" && mapTopics[mapIndex] && (
+        <GrammarMap
+          families={families}
+          cursor={mapIndex}
+          overall={overall}
+          topic={mapTopics[mapIndex]!}
+          text={content.getSection(mapTopics[mapIndex]!.sectionId)?.text ?? ""}
+        />
+      )}
+
+      {showGrammar && section && phase.t !== "map" && (
         <GrammarDrawer text={section.text} refLabel={section.ref} title={section.title} />
       )}
 
@@ -313,7 +400,10 @@ export function App({ session, content, storage }: Props) {
 
       {phase.t === "done" && (
         <Box marginTop={1}>
-          <Text color="green">✓ Nothing due right now. Well done — press Enter to exit.</Text>
+          <Text color="green">
+            ✓ Nothing due right now. Well done — press m to explore the grammar map, or Enter to
+            exit.
+          </Text>
         </Box>
       )}
 
@@ -353,6 +443,181 @@ function StatusBar({
       <Text dimColor>
         topics {stats.topics} (due {stats.dueTopics}) · vocab {stats.vocab} (due {stats.dueVocab})
       </Text>
+    </Box>
+  );
+}
+
+// --- grammar map ------------------------------------------------------------
+
+/** Mastery as a 0–1 fraction; an ungraded topic reads as 0. */
+function masteryFraction(t: TopicProgress): number {
+  return ((t.mastery ?? 1) - 1) / 3;
+}
+
+/** One cell of a bar: how far along the topic is, at a glance. */
+function cellStyle(t: TopicProgress): { glyph: string; color: string; dim: boolean } {
+  if (t.mastery === undefined) return { glyph: "░", color: "gray", dim: true };
+  const level = Math.floor(t.mastery);
+  if (level >= 4) return { glyph: "█", color: "green", dim: t.assumed };
+  if (level >= 3) return { glyph: "▓", color: "cyan", dim: false };
+  if (level >= 2) return { glyph: "▒", color: "yellow", dim: false };
+  return { glyph: "░", color: "yellow", dim: false };
+}
+
+/** Cells in a family's fixed-width summary bar. */
+const SUMMARY_CELLS = 6;
+/** Families per row of the summary block. */
+const PER_ROW = 3;
+
+function summaryGlyphs(percent: number): string {
+  const filled = Math.round(percent * SUMMARY_CELLS);
+  return "\u2588".repeat(filled) + "\u2591".repeat(SUMMARY_CELLS - filled);
+}
+
+/**
+ * Every family as a fixed-width summary bar, the selected one highlighted.
+ * One cell per topic cannot be shown for all families at once — the syllabus
+ * is 135 topics, which needs ~161 columns — so the per-topic detail belongs to
+ * the selected family alone (`FamilyBar`).
+ */
+function FamilySummary({
+  families,
+  selected,
+}: {
+  families: FamilyProgress[];
+  selected: string;
+}) {
+  const width = Math.max(...families.map((f) => f.label.length));
+  const rows: FamilyProgress[][] = [];
+  for (let i = 0; i < families.length; i += PER_ROW) {
+    rows.push(families.slice(i, i + PER_ROW));
+  }
+  return (
+    <Box flexDirection="column">
+      {rows.map((row, ri) => (
+        <Box key={ri}>
+          {row.map((f) => {
+            const on = f.id === selected;
+            return (
+              <Box key={f.id}>
+                <Text bold={on} color={on ? "cyan" : undefined} dimColor={!on}>
+                  {f.label.padEnd(width)}
+                </Text>
+                <Text> </Text>
+                <Text color={f.percent > 0 ? "green" : "gray"} dimColor={f.percent === 0}>
+                  {summaryGlyphs(f.percent)}
+                </Text>
+                <Text dimColor>{` ${String(Math.round(f.percent * 100)).padStart(3)}%  `}</Text>
+              </Box>
+            );
+          })}
+        </Box>
+      ))}
+    </Box>
+  );
+}
+
+/** The selected family in full: one cell per topic, with the cursor caret. */
+function FamilyBar({
+  family,
+  cursorInFamily,
+}: {
+  family: FamilyProgress;
+  cursorInFamily: number;
+}) {
+  return (
+    <Box flexDirection="column">
+      <Box>
+        {family.topics.map((t, i) => {
+          const s = cellStyle(t);
+          return (
+            <Text
+              key={t.sectionId}
+              color={s.color}
+              dimColor={s.dim}
+              inverse={i === cursorInFamily}
+            >
+              {s.glyph}
+            </Text>
+          );
+        })}
+      </Box>
+      <Text color="cyan">{" ".repeat(Math.max(0, cursorInFamily)) + "\u25b2"}</Text>
+    </Box>
+  );
+}
+
+function GrammarMap({
+  families,
+  cursor,
+  overall,
+  topic,
+  text,
+}: {
+  families: FamilyProgress[];
+  cursor: number;
+  overall: number;
+  topic: TopicProgress;
+  text: string;
+}) {
+  // Locate the cursor: which family it falls in, and where inside that family.
+  let offset = 0;
+  let selected = families[0]!;
+  let inFamily = 0;
+  for (const f of families) {
+    if (f.topics.length === 0) continue;
+    if (cursor < offset + f.topics.length) {
+      selected = f;
+      inFamily = cursor - offset;
+      break;
+    }
+    offset += f.topics.length;
+  }
+
+  // Extracted sections carry paradigm tables, which are many short lines; clip
+  // by line as well as by length so the map stays compact. The full text is
+  // still one `g` away in the grammar drawer.
+  const lines = text.split("\n");
+  const head = lines.slice(0, 5).join("\n");
+  const clipped =
+    (head.length > 400 ? head.slice(0, 400) : head) +
+    (lines.length > 5 || head.length > 400 ? " \u2026" : "");
+  const mastery =
+    topic.mastery === undefined
+      ? "not started"
+      : `${Math.round(masteryFraction(topic) * 100)}% mastered${topic.assumed ? " (assumed)" : ""}`;
+
+  return (
+    <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+      <Box marginBottom={1} justifyContent="space-between">
+        <Text bold color="magenta">
+          Grammar map
+        </Text>
+        <Text dimColor>{Math.round(overall * 100)}% mastered overall</Text>
+      </Box>
+
+      <FamilySummary families={families} selected={selected.id} />
+
+      <Box marginTop={1}>
+        <Text>
+          <Text bold color="cyan">{selected.label}</Text>
+          <Text dimColor>
+            {`  ${selected.topics.length} topics \u00b7 ${inFamily + 1}/${selected.topics.length}`}
+          </Text>
+        </Text>
+      </Box>
+      <FamilyBar family={selected} cursorInFamily={inFamily} />
+
+      <Box marginTop={1}>
+        <Text>
+          <Text color="gray">§ {topic.ref} </Text>
+          <Text bold>{topic.title}</Text>
+          {topic.due ? <Text color="yellow"> · due</Text> : null}
+          {!topic.hasTests ? <Text dimColor> · no tests</Text> : null}
+          <Text dimColor> — {mastery}</Text>
+        </Text>
+      </Box>
+      <Text>{clipped}</Text>
     </Box>
   );
 }
@@ -462,10 +727,12 @@ function HintBar({ phase, placement }: { phase: Phase["t"]; placement?: boolean 
   const hint =
     phase === "answering"
       ? "type your Latin · Enter submit · Esc grammar"
-      : phase === "graded"
+      : phase === "map"
+        ? "← → topic · ↑ ↓ family · Enter quiz me on this · Esc close"
+        : phase === "graded"
         ? placement
           ? "3–4 you knew it (continue) · 1–2 start here"
-          : "1–4 self-grade (1 again · 4 easy) · v record vocab · g grammar · q quit"
+          : "1–4 self-grade (1 again · 4 easy) · v vocab · g grammar · m map · q quit"
         : phase === "vocab-review-front"
           ? "Space/Enter reveal · q quit"
           : phase === "vocab-review-back"
@@ -474,7 +741,7 @@ function HintBar({ phase, placement }: { phase: Phase["t"]; placement?: boolean 
               ? "Enter to look up the word"
               : phase === "vocab-pick"
                 ? "1–9 choose · Esc cancel"
-                : "Enter exit";
+                : "m grammar map · Enter exit";
   return (
     <Box marginTop={1}>
       <Text dimColor>{hint}</Text>

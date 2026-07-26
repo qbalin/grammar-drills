@@ -12,8 +12,9 @@ import { App } from "./app.js";
 
 const fixture: ContentData = {
   grammar: [
-    { id: "ag-decl1", ref: "34", title: "First declension nouns", text: "First-declension nouns end in -a.", order: 10 },
-    { id: "ag-decl2", ref: "35", title: "Second declension nouns", text: "Second-declension nouns end in -us.", order: 20 },
+    { id: "ag-decl1", ref: "34", title: "First declension nouns", family: "nouns", text: "First-declension nouns end in -a.", order: 10 },
+    { id: "ag-decl2", ref: "35", title: "Second declension nouns", family: "nouns", text: "Second-declension nouns end in -us.", order: 20 },
+    { id: "ag-verb-pres", ref: "174", title: "Present indicative active", family: "verb-forms", text: "The present stem takes the personal endings.", order: 130 },
   ],
   tests: {
     "ag-decl1": [
@@ -31,6 +32,15 @@ const fixture: ContentData = {
         sectionId: "ag-decl2",
         questions: [
           { prompt: "The master frees the slave.", answer: "dominus servum līberat", kind: "translate-en-la", vocab: ["dominus", "servum", "līberat"] },
+        ],
+      },
+    ],
+    "ag-verb-pres": [
+      {
+        id: "ag-verb-pres-t1",
+        sectionId: "ag-verb-pres",
+        questions: [
+          { prompt: "The poet praises the queen.", answer: "poēta rēgīnam laudat", kind: "translate-en-la", vocab: ["poēta", "rēgīnam", "laudat"] },
         ],
       },
     ],
@@ -121,6 +131,84 @@ describe("CLI App (write → compare → self-grade)", () => {
     await tick();
     expect(lastFrame()).toContain("Second declension nouns");
     expect(lastFrame()).toContain("The master frees the slave.");
+
+    unmount();
+  });
+
+  it("opens the grammar map, walks it, and quizzes the chosen topic", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    // Straight into the first new topic; answer it to reach the graded screen.
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("correct");
+
+    // `m` opens the map, parked on the topic being studied (§ 34).
+    stdin.write("m");
+    await tick();
+    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Nouns");
+    expect(lastFrame()).toContain("Verbs");
+    expect(lastFrame()).toContain("§ 34");
+
+    // Right arrow walks one topic along the bar.
+    stdin.write("\u001B[C");
+    await tick();
+    expect(lastFrame()).toContain("Second declension nouns");
+    expect(lastFrame()).toContain("not started");
+
+    // Down arrow jumps to the next family.
+    stdin.write("\u001B[B");
+    await tick();
+    expect(lastFrame()).toContain("Present indicative active");
+
+    // Enter quizzes that topic immediately, teaching the rule first.
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("The present stem takes the personal endings.");
+    expect(lastFrame()).toContain("Translate into Latin");
+    expect(lastFrame()).toContain("The poet praises the queen.");
+
+    // Grading it creates the card and starts its mastery score.
+    stdin.write("\r");
+    await tick();
+    stdin.write("3");
+    await tick();
+    expect(session.progress().topicMastery["ag-verb-pres"]).toBe(2);
+
+    unmount();
+  });
+
+  it("escapes the map back to the question", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("m");
+    await tick();
+    expect(lastFrame()).toContain("Grammar map");
+
+    stdin.write("\u001B");
+    await tick();
+    expect(lastFrame()).not.toContain("Grammar map");
+    expect(lastFrame()).toContain("your answer");
+    expect(lastFrame()).toContain("puella rosam amat");
 
     unmount();
   });
