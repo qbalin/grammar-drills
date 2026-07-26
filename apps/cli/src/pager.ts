@@ -41,6 +41,26 @@ export function wrapLines(text: string, width: number): string[] {
   return out;
 }
 
+/**
+ * The opening `height` screen lines of `text`, padded to exactly that many.
+ *
+ * Clipping by source line shows wildly unequal amounts of a section — five
+ * lines of a paradigm table is a handful of words, five lines of prose is a
+ * paragraph — and leaves the surrounding box changing height as the cursor
+ * moves. Wrapping first makes a line a line, so every section gets the same
+ * window and the map holds still.
+ */
+export function previewWindow(
+  text: string,
+  width: number,
+  height: number,
+): { lines: string[]; truncated: boolean } {
+  const wrapped = wrapLines(text, width);
+  const lines = wrapped.slice(0, height);
+  while (lines.length < height) lines.push("");
+  return { lines, truncated: wrapped.length > height };
+}
+
 /** Largest scroll offset that still fills the viewport. */
 export function maxScroll(lineCount: number, height: number): number {
   return Math.max(0, lineCount - height);

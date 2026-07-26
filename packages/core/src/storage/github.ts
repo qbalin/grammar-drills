@@ -57,20 +57,54 @@ export class GitHubStorage implements StorageAdapter {
   }
 
   async load(): Promise<Progress | null> {
+    return (await this.loadMeta()).progress;
+  }
+
+  /**
+   * `load()`, but also reporting the blob sha it read. The web app compares the
+   * remote `updatedAt` against the local one before deciding whose progress
+   * wins, and would otherwise have to fetch the file a second time to commit.
+   */
+  async loadMeta(): Promise<{ progress: Progress | null; sha?: string }> {
     const res = await fetch(`${this.url()}?ref=${this.branch}`, {
       headers: this.headers(),
     });
-    if (res.status === 404) return null;
+    if (res.status === 404) {
+      this.sha = undefined;
+      return { progress: null };
+    }
     if (!res.ok) {
       throw new Error(`GitHub load failed: ${res.status} ${await res.text()}`);
     }
     const body = (await res.json()) as { content: string; sha: string };
     this.sha = body.sha;
-    return JSON.parse(b64decode(body.content)) as Progress;
+    return {
+      progress: JSON.parse(b64decode(body.content)) as Progress,
+      sha: body.sha,
+    };
   }
 
   async save(progress: Progress): Promise<void> {
-    const res = await fetch(this.url(), {
+    // Updating an existing file needs its current sha. In the CLI a `load()`
+    // always precedes the first `save()`, so one was in hand; a browser tab
+    // reloads with an empty instance and would send none, which GitHub rejects.
+    // Fetch it when it is missing, and re-fetch once if another device commits
+    // between our read and our write.
+    if (this.sha === undefined) await this.readSha();
+    let res = await this.put(progress);
+    if (res.status === 409 || res.status === 422) {
+      await this.readSha();
+      res = await this.put(progress);
+    }
+    if (!res.ok) {
+      throw new Error(`GitHub save failed: ${res.status} ${await res.text()}`);
+    }
+    const body = (await res.json()) as { content: { sha: string } };
+    this.sha = body.content.sha;
+  }
+
+  private put(progress: Progress): Promise<Response> {
+    return fetch(this.url(), {
       method: "PUT",
       headers: { ...this.headers(), "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -80,10 +114,20 @@ export class GitHubStorage implements StorageAdapter {
         ...(this.sha ? { sha: this.sha } : {}),
       }),
     });
-    if (!res.ok) {
-      throw new Error(`GitHub save failed: ${res.status} ${await res.text()}`);
+  }
+
+  /** Learn the current blob sha, leaving it unset when the file doesn't exist. */
+  private async readSha(): Promise<void> {
+    const res = await fetch(`${this.url()}?ref=${this.branch}`, {
+      headers: this.headers(),
+    });
+    if (res.status === 404) {
+      this.sha = undefined;
+      return;
     }
-    const body = (await res.json()) as { content: { sha: string } };
-    this.sha = body.content.sha;
+    if (!res.ok) {
+      throw new Error(`GitHub load failed: ${res.status} ${await res.text()}`);
+    }
+    this.sha = ((await res.json()) as { sha: string }).sha;
   }
 }

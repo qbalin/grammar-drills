@@ -46,7 +46,7 @@ most-frequent-first for you to disambiguate.
 packages/core/   Isomorphic runtime: types, FSRS scheduler, session state
                  machine, form→citation lemmatizer, storage adapters. No LLM.
 apps/cli/        Delightful terminal UI (Ink). The v1 surface.
-apps/web/        Single no-backend web page over the same core (follow-on).
+apps/web/        Installable, offline, no-backend phone app over the same core.
 content/         Frozen, shipped content:
                    grammar.json      — 135 topics parsed from Bennett's New Latin
                                         Grammar (public domain); `ref` cites its §§.
@@ -55,6 +55,7 @@ content/         Frozen, shipped content:
 scripts/         Offline content tooling (not used at runtime):
                    parse-grammar.py  — rebuilds grammar.json from Gutenberg #15665.
                    gen-tests.mjs     — writes tests/<id>.json (see "Generation").
+                   build-web-content.mjs — repacks content/ for the web app.
 ```
 
 ## Run the CLI
@@ -75,6 +76,48 @@ answers on this topic · `Esc` peek at the grammar mid-answer · `m` grammar map
 The grammar pane shows the **whole** section — Bennett's paradigm sections run
 to hundreds of lines — so it pages: `↑ ↓` a line, `PgUp/PgDn` a screen, with
 `lines 25–33 of 90` under the text saying where you are.
+
+## Taking a keypress back
+
+Three single keys drive the whole loop, so all three get pressed by mistake, and
+none of them is a dead end:
+
+- **`Esc`** leaves a vocabulary recording opened by a stray `v` — nothing looked
+  up, nothing saved. (So does Enter on an empty box.)
+- **`u`** goes back to the answer box when Enter came too early: the half-written
+  answer is still there, and nothing has been graded.
+- **`^Z`** (`u` on any screen without a text box) takes back the self-grade just
+  given. The question comes back exactly as you left it, and so does everything
+  the grade touched — the card, the mastery score, the answer trail, your place
+  in placement. Re-grading then counts once, not twice.
+
+One grade deep, and only the most recent: this is an undo for the keypress you
+just regret, not a history to walk back through. The web app has the same three,
+as *keep writing*, the sheet's close button, and an **↺** in the status bar.
+
+## Run on a phone
+
+`apps/web/` is the same engine as an installable web app, for anyone who is
+never going to open a terminal. It is a static page: no backend, no account, and
+the whole study loop works offline once installed.
+
+```bash
+pnpm --filter @latin-tutor/web dev      # build the content bundle and serve
+pnpm --filter @latin-tutor/web build    # -> apps/web/dist, deployable anywhere
+```
+
+Pushing to `main` publishes it to GitHub Pages
+(`.github/workflows/deploy-web.yml`); students open that URL once and *Add to
+Home Screen*. Same loop — write the Latin, compare, self-grade 1–4 — with a
+**Reveal** button for when typing a sentence on glass is not happening, the
+grade buttons labelled with the interval each one buys, and the grammar map
+redrawn as tappable topics.
+
+The dictionary is the one thing that could not be shipped as-is:
+`lemmas.json.gz` inflates to 43 MB, which no phone should parse. The build
+repacks it — 242,746 forms turn out to point at only 6,747 distinct lemmas — into
+a 1 MB lemma table plus a sorted form index that is bisected as raw text instead
+of parsed. See [`apps/web/README.md`](apps/web/README.md).
 
 ## Earlier answers on a topic
 
@@ -151,8 +194,20 @@ A-syntax ░░░░░░   0%  V-syntax ░░░░░░   1%  Style    ░
 Adj/Adv  5 topics · 1/5
 ░░▓░░
 ▲
-§ 63-66 Adjectives of the First and Second Declensions — not started
+§ 63-66 Adjectives of the First and Second Declensions
+not started
+In these the Masculine is declined like hortus, puer, or ager, the
+Feminine like porta, and the Neuter like bellum. Thus, Masculine like
+hortus:—
+Bonus, good.
+SINGULAR.
+press g to read § 63-66 in full
 ```
+
+Below the cursor sits the opening of that section, **the same five wrapped
+lines for every topic** — clipped by source line it would be a paragraph of
+prose for one topic and a handful of words for a paradigm table, and the map
+would change height under you as you walked it.
 
 Each topic carries a **mastery score from 1 (not mastered) to 4 (mastered)**,
 moved by your self-grades: good/easy `+1`, hard `+0.5`, again `−1`. A single
@@ -171,6 +226,7 @@ Normal spaced repetition resumes once the test is done.
 Progress is user data, saved through a pluggable `StorageAdapter`:
 
 - **Local file** (CLI default) — `~/.latin-tutor/progress.json`.
+- **`localStorage`** (web default), with export/import to a JSON file.
 - **Private GitHub repo** — `GitHubStorage` commits the JSON via the GitHub REST
   API with a personal access token (no backend). Google Drive/etc. can be added
   as further adapters.

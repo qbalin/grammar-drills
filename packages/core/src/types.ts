@@ -65,11 +65,26 @@ export interface LemmaEntry {
 /** Normalized inflected form -> ranked lemma candidates. */
 export type LemmaMap = Record<string, LemmaEntry[]>;
 
+/**
+ * Resolves an inflected form to ranked citations, however it likes.
+ *
+ * The CLI holds the whole `LemmaMap` in memory, which is free off a local disk.
+ * The web app cannot: the map inflates to 43 MB. It supplies an index that
+ * bisects a sorted blob instead, so the two surfaces share `Content` without
+ * sharing a representation.
+ */
+export interface LemmaLookup {
+  lookup(form: string): LemmaEntry[];
+}
+
 export interface ContentData {
   grammar: GrammarSection[];
   /** sectionId -> its ~50 pre-generated tests. */
   tests: Record<string, Test[]>;
-  lemmas: LemmaMap;
+  /** The whole form map, for callers that can afford to hold it. */
+  lemmas?: LemmaMap;
+  /** An alternative to `lemmas`; takes precedence when both are given. */
+  lemmaLookup?: LemmaLookup;
 }
 
 // ---------------------------------------------------------------------------

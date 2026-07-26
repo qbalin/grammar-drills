@@ -5,6 +5,7 @@ import {
   deserializeCard,
   isDue,
   newCard,
+  preview,
   rate,
   serializeCard,
   type Rating,
@@ -14,6 +15,7 @@ import {
   type Attempt,
   type LemmaEntry,
   type Progress,
+  type SerializedCard,
   type Test,
   type VocabCardState,
 } from "./types.js";
@@ -213,6 +215,25 @@ export class Session {
   }
 
   /**
+   * When each grade would bring a topic back. Self-grading is a judgement made
+   * in the dark unless the four choices show what they cost; an untouched topic
+   * previews against a fresh card, which is what grading it would create.
+   */
+  previewTopic(sectionId: string, now: Date = new Date()): Record<Rating, Date> {
+    const stored = this.p.topicCards[sectionId];
+    return preview(stored ? deserializeCard(stored) : newCard(now), now);
+  }
+
+  /** The same, for a vocabulary card; undefined if there is no such card. */
+  previewVocab(
+    cardId: string,
+    now: Date = new Date(),
+  ): Record<Rating, Date> | undefined {
+    const stored = this.p.vocabCards[cardId];
+    return stored ? preview(deserializeCard(stored.fsrs), now) : undefined;
+  }
+
+  /**
    * Record an unknown word from its inflected form. The canonical citation is
    * supplied by the caller after resolving it via `content.lookup`. Deduped by
    * lemma so re-recording the same word is a no-op. Returns the card id.
@@ -241,6 +262,26 @@ export class Session {
 
   vocabCard(cardId: string): VocabCardState | undefined {
     return this.p.vocabCards[cardId];
+  }
+
+  /**
+   * The earliest moment anything comes back, or undefined if nothing is
+   * scheduled. A rest screen that says when to return is a better ending than
+   * one that just says there is nothing to do.
+   */
+  nextDue(now: Date = new Date()): Date | undefined {
+    let soonest: number | undefined;
+    const consider = (card: SerializedCard) => {
+      const at = new Date(card.due).getTime();
+      if (at > now.getTime() && (soonest === undefined || at < soonest)) {
+        soonest = at;
+      }
+    };
+    for (const [id, card] of Object.entries(this.p.topicCards)) {
+      if (this.content.getSection(id)) consider(card);
+    }
+    for (const state of Object.values(this.p.vocabCards)) consider(state.fsrs);
+    return soonest === undefined ? undefined : new Date(soonest);
   }
 
   /** Counts for a status line. */
@@ -308,6 +349,28 @@ export class Session {
 
   progress(): Progress {
     return this.p;
+  }
+
+  /**
+   * A detached copy of everything the session mutates — the material for an
+   * undo. Progress is plain JSON and the engine keeps no state outside it, so
+   * a deep clone is the whole story: grading, placement and vocabulary all
+   * take back together.
+   */
+  snapshot(): Progress {
+    return structuredClone(this.p);
+  }
+
+  /**
+   * Put a snapshot back, discarding everything done since it was taken. The
+   * copy is cloned in, so the same snapshot can be restored more than once and
+   * the caller's copy stays clean.
+   */
+  restore(snapshot: Progress): void {
+    this.p = structuredClone(snapshot);
+    // An undo is itself a change: the stored copy is now out of date, and the
+    // sync comparison reads `updatedAt` to decide that.
+    this.touch();
   }
 
   // --- internals -----------------------------------------------------------

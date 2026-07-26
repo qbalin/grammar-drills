@@ -4,6 +4,7 @@ export {
   newCard,
   rate,
   isDue,
+  preview,
   serializeCard,
   deserializeCard,
   type Rating,

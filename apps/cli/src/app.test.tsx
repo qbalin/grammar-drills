@@ -282,6 +282,163 @@ describe("CLI App (write → compare → self-grade)", () => {
     unmount();
   });
 
+  // --- taking things back ---------------------------------------------------
+  //
+  // Three keypresses drive the whole loop, so all three are pressed by mistake:
+  // `v` into a recording you did not want, Enter before the answer is finished,
+  // and a self-grade on the wrong number. None of them should be a dead end.
+
+  it("escapes a vocabulary recording opened by mistake", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+
+    stdin.write("v");
+    await tick();
+    expect(lastFrame()).toContain("Record vocabulary");
+    expect(lastFrame()).toContain("Esc cancel");
+
+    stdin.write("\u001B");
+    await tick();
+    expect(lastFrame()).not.toContain("Record vocabulary");
+    // Back on the answer, with nothing recorded.
+    expect(lastFrame()).toContain("your answer");
+    expect(lastFrame()).toContain("puella rosam amat");
+    expect(Object.keys(session.progress().vocabCards)).toHaveLength(0);
+
+    // Enter on an empty box is the other way out, and no more an error.
+    stdin.write("v");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).not.toContain("Record vocabulary");
+    expect(lastFrame()).not.toContain("No dictionary match");
+
+    unmount();
+  });
+
+  it("goes back to the answer box when Enter came too early", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosa"); // still being written
+    await tick();
+    stdin.write("\r"); // …and submitted by accident
+    await tick();
+    expect(lastFrame()).toContain("your answer");
+    expect(lastFrame()).toContain("u keep typing");
+
+    stdin.write("u");
+    await tick();
+    // Back to typing, the half-written answer intact and the cursor after it.
+    expect(lastFrame()).not.toContain("your answer");
+    expect(lastFrame()).toContain("puella rosa");
+    expect(lastFrame()).toContain("Enter submit");
+
+    stdin.write("m amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("your answer");
+    expect(lastFrame()).toContain("puella rosam amat");
+    // Nothing was graded on the way, so nothing was written down.
+    expect(session.progress().topicCards["ag-decl1"]).toBeUndefined();
+
+    unmount();
+  });
+
+  it("takes back a self-grade given by mistake, schedule and trail with it", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("1"); // meant 4
+    await tick();
+
+    // The grade landed and the next topic is up.
+    expect(session.progress().topicMastery["ag-decl1"]).toBe(1);
+    expect(lastFrame()).toContain("Second declension nouns");
+    expect(lastFrame()).toContain("^Z undo grade");
+
+    stdin.write("\u001A"); // ^Z
+    await tick();
+
+    // The question is back, exactly as it was left.
+    expect(lastFrame()).toContain("First declension nouns");
+    expect(lastFrame()).toContain("The girl loves the rose.");
+    expect(lastFrame()).toContain("puella rosam amat");
+    expect(lastFrame()).toContain("Grade taken back");
+    // …and so is the engine: no card, no mastery, no attempt, nothing saved.
+    expect(session.progress().topicCards["ag-decl1"]).toBeUndefined();
+    expect(session.progress().topicMastery["ag-decl1"]).toBeUndefined();
+    expect(session.attemptsFor("ag-decl1")).toHaveLength(0);
+    expect(storage.saved.topicMastery["ag-decl1"]).toBeUndefined();
+
+    // One grade deep and no further: with that one taken back, there is
+    // nothing older waiting behind it.
+    stdin.write("u"); // back to the box…
+    await tick();
+    stdin.write("\u001A");
+    await tick();
+    expect(lastFrame()).toContain("Nothing to take back");
+
+    // Re-submit and grade it properly: the grade applies once, not twice.
+    stdin.write("\r");
+    await tick();
+    stdin.write("4");
+    await tick();
+    expect(session.progress().topicMastery["ag-decl1"]).toBe(2);
+    expect(session.attemptsFor("ag-decl1")).toHaveLength(1);
+    expect(session.attemptsFor("ag-decl1")[0]).toMatchObject({ rating: 4 });
+
+    unmount();
+  });
+
+  it("leaves the answer being written alone when there is nothing to take back", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosam");
+    await tick();
+    stdin.write("\u001A"); // ^Z reaches the box as a plain "z"
+    await tick();
+    expect(lastFrame()).toContain("Nothing to take back");
+
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("puella rosam");
+    expect(lastFrame()).not.toContain("puella rosamz");
+
+    unmount();
+  });
+
   // Bennett's sections run to hundreds of lines. Every one of them has to be
   // readable: no clipping, no ellipsis standing in for the rest of the rule.
   const longText = Array.from({ length: 90 }, (_, i) => `rule line ${i + 1}`).join("\n");
@@ -326,6 +483,63 @@ describe("CLI App (write → compare → self-grade)", () => {
     stdin.write("\u001B[6~");
     await tick();
     expect(lastFrame()).toContain("rule line 90");
+
+    unmount();
+  });
+
+  // Browsing the map should show each topic's section on the same terms. The
+  // three sections here are the shapes the syllabus actually holds: a paradigm
+  // table of many short lines, an unbroken paragraph of prose, and a one-liner.
+  const shapesFixture: ContentData = {
+    ...fixture,
+    grammar: [
+      { ...fixture.grammar[0]!, text: "amō\namās\namat\namāmus\namātis\namant\namābam" },
+      { ...fixture.grammar[1]!, text: "the girl loves the rose in the garden ".repeat(40).trim() },
+      { ...fixture.grammar[2]!, text: "Deponent verbs are passive in form." },
+    ],
+  };
+
+  it("gives every topic the same window on its section as the cursor moves", async () => {
+    const content = new Content(shapesFixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("m");
+    await tick();
+
+    const heights: number[] = [];
+    const previews: string[] = [];
+    for (let i = 0; i < shapesFixture.grammar.length; i++) {
+      const frame = lastFrame()!;
+      heights.push(frame.split("\n").length);
+      previews.push(frame);
+      stdin.write("\u001B[C"); // → next topic
+      await tick();
+    }
+
+    // The cursor really moved: each topic showed its own section.
+    expect(previews[0]).toContain("amās");
+    expect(previews[1]).toContain("the girl loves the rose");
+    expect(previews[2]).toContain("Deponent verbs are passive in form.");
+
+    // Nothing below the preview shifted on the way — the table does not get a
+    // handful of words where the prose gets a paragraph.
+    expect(new Set(heights).size).toBe(1);
+
+    // The one-liner is shown whole, and says so rather than promising more.
+    expect(previews[2]).toContain("all of § 174");
+    expect(previews[2]).not.toContain("read § 174 in full");
+    // The long ones point at the reader.
+    expect(previews[0]).toContain("read § 34 in full");
+    expect(previews[1]).toContain("read § 35 in full");
 
     unmount();
   });

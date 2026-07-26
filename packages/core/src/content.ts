@@ -37,7 +37,13 @@ export class Content {
       .map((s) => s.id);
   }
 
+  /**
+   * Rank-ordered citations for an inflected form, most frequent first. Empty
+   * when the form is unknown *or* when no dictionary has been supplied at all —
+   * a miss is a hint to the student, never a verdict on their spelling.
+   */
   lookup(form: string): LemmaEntry[] {
-    return lookupForm(this.data.lemmas, form);
+    if (this.data.lemmaLookup) return this.data.lemmaLookup.lookup(form);
+    return this.data.lemmas ? lookupForm(this.data.lemmas, form) : [];
   }
 }

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { Content } from "./content.js";
 import { normalize } from "./normalize.js";
-import { newCard, rate } from "./scheduler.js";
+import { newCard, preview, rate } from "./scheduler.js";
 import { Session } from "./session.js";
 import type { ContentData } from "./types.js";
 
@@ -43,6 +43,26 @@ describe("scheduler", () => {
     const easy = rate(newCard(now), 4, now);
     expect(again.due.getTime()).toBeLessThan(easy.due.getTime());
   });
+
+  it("previews each grade's due date without applying one", () => {
+    const now = new Date("2026-01-01T00:00:00Z");
+    const card = newCard(now);
+    const p = preview(card, now);
+    // The four grades run from soonest to latest, and every one is in future.
+    expect(p[1].getTime()).toBeLessThan(p[2].getTime());
+    expect(p[2].getTime()).toBeLessThan(p[3].getTime());
+    expect(p[3].getTime()).toBeLessThan(p[4].getTime());
+    expect(p[1].getTime()).toBeGreaterThan(now.getTime());
+    // A preview is not a review: the card is untouched.
+    expect(card.reps).toBe(0);
+    expect(card.due.getTime()).toBe(now.getTime());
+  });
+
+  it("previews the same due date the matching grade then applies", () => {
+    const now = new Date("2026-01-01T00:00:00Z");
+    const card = newCard(now);
+    expect(rate(card, 3, now).due.getTime()).toBe(preview(card, now)[3].getTime());
+  });
 });
 
 describe("Content + lemmatizer", () => {
@@ -57,6 +77,23 @@ describe("Content + lemmatizer", () => {
   it("lists teachable topics in book order", () => {
     const c = new Content(fixture);
     expect(c.topicIds()).toEqual(["ag1", "ag2"]);
+  });
+
+  it("prefers an injected lookup over the in-memory map", () => {
+    // What the web app does: no `lemmas` at all, just an index it can bisect.
+    const entry = { lemma: "rex", citation: "rex, rēgis", gloss: "king", pos: "noun" };
+    const c = new Content({
+      ...fixture,
+      lemmas: undefined,
+      lemmaLookup: { lookup: (f) => (f === "regem" ? [entry] : []) },
+    });
+    expect(c.lookup("regem")).toEqual([entry]);
+    expect(c.lookup("manibus")).toEqual([]);
+  });
+
+  it("reports a miss rather than throwing when no dictionary is loaded", () => {
+    const c = new Content({ ...fixture, lemmas: undefined });
+    expect(c.lookup("manibus")).toEqual([]);
   });
 });
 
@@ -110,6 +147,35 @@ describe("Session", () => {
       kind: "new-topic",
       sectionId: "ag2",
     });
+  });
+
+  it("puts back a snapshot, undoing everything done since", () => {
+    const now = new Date("2026-01-01T00:00:00Z");
+    const s = new Session(new Content(fixture));
+    s.gradeTopic("ag1", 3, now);
+
+    const before = s.snapshot();
+
+    // A grade, an answer and a word — the whole of a mistaken step.
+    s.gradeTopic("ag2", 1, now);
+    s.recordAttempt("ag2", { prompt: "p", answer: "a", submitted: "b", rating: 1 }, now);
+    s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
+    expect(s.progress().topicCards.ag2).toBeDefined();
+
+    s.restore(before);
+    expect(s.progress().topicCards.ag2).toBeUndefined();
+    expect(s.progress().topicMastery.ag2).toBeUndefined();
+    expect(s.attemptsFor("ag2")).toHaveLength(0);
+    expect(Object.keys(s.progress().vocabCards)).toHaveLength(0);
+    // What came before the snapshot is untouched.
+    expect(s.progress().topicCards.ag1).toBeDefined();
+
+    // The snapshot is a copy, not a window: grading on does not edit it, and
+    // it can be restored again.
+    s.gradeTopic("ag2", 4, now);
+    expect(before.topicCards.ag2).toBeUndefined();
+    s.restore(before);
+    expect(s.progress().topicCards.ag2).toBeUndefined();
   });
 
   it("serializes and restores progress round-trip", () => {

@@ -23,6 +23,26 @@ export function isDue(card: Card, now: Date = new Date()): boolean {
   return card.due.getTime() <= now.getTime();
 }
 
+/**
+ * When each of the four grades would bring the card back — the numbers a UI
+ * can put on its grade buttons, so a self-grade shows its consequence.
+ *
+ * Due dates rather than day counts: a card in its learning steps comes back in
+ * minutes, and `scheduled_days` rounds all of those to 0.
+ */
+export function preview(
+  card: Card,
+  now: Date = new Date(),
+): Record<Rating, Date> {
+  const log = engine.repeat(card, now);
+  return {
+    1: log[1].card.due,
+    2: log[2].card.due,
+    3: log[3].card.due,
+    4: log[4].card.due,
+  };
+}
+
 export function serializeCard(card: Card): SerializedCard {
   return {
     due: card.due.toISOString(),

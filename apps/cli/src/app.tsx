@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Text, useApp, useInput, useStdout } from "ink";
 import TextInput from "ink-text-input";
-import { positionLabel, scrolled, wrapLines } from "./pager.js";
+import { positionLabel, previewWindow, scrolled, wrapLines } from "./pager.js";
 import { attemptLines, type HistoryLine } from "./history.js";
 import {
   Content,
   Session,
   type FamilyProgress,
   type LemmaEntry,
+  type Progress,
   type Question,
   type Rating,
   type StorageAdapter,
@@ -32,6 +33,25 @@ type Phase =
   | { t: "read"; from: "graded" | "done" } // a section read in full, from the map
   | { t: "done" };
 
+/**
+ * Everything needed to put the last grade back: the engine's state before it
+ * was applied, and the screen it was given on. Self-grading is a keypress, and
+ * a mistyped one otherwise schedules a topic for months with no way back — so
+ * one grade, the most recent, is always takeable.
+ */
+interface GradeUndo {
+  progress: Progress;
+  /** The screen the grade was given on — a question, or a vocabulary card. */
+  phase: Phase;
+  sectionId: string | null;
+  test: Test | null;
+  qIndex: number;
+  submitted: string;
+  isNewTopic: boolean;
+  inPlacement: boolean;
+  placementIndex: number;
+}
+
 export function App({ session, content, storage }: Props) {
   const { exit } = useApp();
   const { stdout } = useStdout();
@@ -54,6 +74,10 @@ export function App({ session, content, storage }: Props) {
   const [tick, setTick] = useState(0);
   const [mapIndex, setMapIndex] = useState(0);
   const [scroll, setScroll] = useState(0); // first visible line of the grammar pane
+  const [undo, setUndo] = useState<GradeUndo | null>(null); // the last grade, takeable
+  // ^Z reaches the answer box as a plain "z", and the box's own key handler
+  // runs after this component's — so the character is dropped on its way in.
+  const swallowInput = useRef<string | null>(null);
 
   const question: Question | undefined = test?.questions[qIndex];
   const section = sectionId ? content.getSection(sectionId) : undefined;
@@ -97,6 +121,13 @@ export function App({ session, content, storage }: Props) {
     () => wrapLines(mapSection?.text ?? "", paneWidth),
     [mapSection?.text, paneWidth],
   );
+  // The map's taste of the section under the cursor: the same window for every
+  // topic, so browsing shows each one equally and the map does not jump.
+  const mapPreview = useMemo(
+    () => previewWindow(mapSection?.text ?? "", paneWidth, PREVIEW_LINES),
+    [mapSection?.text, paneWidth],
+  );
+
   // What was written on this topic before. Read after the answer is on screen,
   // never while it is still being typed: earlier attempts hold reference
   // answers, and the same question comes round again.
@@ -137,6 +168,13 @@ export function App({ session, content, storage }: Props) {
     else if (key.pageUp) scrollPane(lineCount, height, -page);
     else return false;
     return true;
+  };
+
+  /** Text arriving from the answer box, less anything ^Z left behind. */
+  const changeInput = (value: string) => {
+    const forced = swallowInput.current;
+    swallowInput.current = null;
+    setInput(forced ?? value);
   };
 
   const advance = () => {
@@ -235,7 +273,23 @@ export function App({ session, content, storage }: Props) {
     advance();
   };
 
+  /** Everything a grade is about to overwrite, so it can be put back. */
+  const takeUndo = (from: Phase): GradeUndo => ({
+    progress: session.snapshot(),
+    phase: from,
+    sectionId,
+    test,
+    qIndex,
+    submitted,
+    isNewTopic,
+    inPlacement,
+    placementIndex,
+  });
+
   const gradeAndContinue = (rating: Rating) => {
+    // Taken before anything is written, so the undo covers the recorded answer
+    // as well as the schedule — re-grading then leaves one attempt, not two.
+    setUndo(takeUndo({ t: "graded" }));
     // Kept before the grade is applied, so it covers placement too: what you
     // wrote on a topic is worth having whichever pass it was written in.
     if (sectionId && question) {
@@ -264,8 +318,47 @@ export function App({ session, content, storage }: Props) {
     }
   };
 
+  /**
+   * Take back the grade just given. The question it was given on comes back,
+   * answer and all, and the engine returns to the state it was in before —
+   * schedule, mastery, attempt trail, placement position.
+   */
+  const undoGrade = () => {
+    if (!undo) return;
+    session.restore(undo.progress);
+    save();
+    setSectionId(undo.sectionId);
+    setTest(undo.test);
+    setQIndex(undo.qIndex);
+    setSubmitted(undo.submitted);
+    setIsNewTopic(undo.isNewTopic);
+    setInPlacement(undo.inPlacement);
+    setPlacementIndex(undo.placementIndex);
+    setInput("");
+    setShowGrammar(false);
+    setShowHistory(false);
+    setUndo(null); // one step back, no further
+    setFlash("Grade taken back — grade it again.");
+    setPhase(undo.phase);
+    setTick((n) => n + 1);
+  };
+
+  /** Take back the answer just submitted: back to the box, text and all. */
+  const undoSubmit = () => {
+    setInput(submitted);
+    setShowHistory(false);
+    setFlash(null);
+    setPhase({ t: "answering" });
+  };
+
   const recordForm = (form: string) => {
     setInput("");
+    // Enter on an empty box is the other way out of a recording opened by
+    // mistake; there is nothing to look up.
+    if (form.trim() === "") {
+      setPhase({ t: "graded" });
+      return;
+    }
     const candidates = content.lookup(form);
     if (candidates.length === 0) {
       setFlash(`No dictionary match for “${form}”.`);
@@ -334,10 +427,27 @@ export function App({ session, content, storage }: Props) {
     // except the arrows, which it ignores, so they can page the drawer.
     if (phase.t === "answering") {
       if (key.escape) setShowGrammar((s) => !s); // peek at grammar mid-answer
-      else if (showGrammar) handleScrollKey(key, drawerLines.length, drawerHeight);
+      // ^Z rather than a letter: every letter here goes into the answer. It
+      // reaches back past this question to the grade that opened it.
+      else if (key.ctrl && ch === "z") {
+        if (undo) {
+          swallowInput.current = ""; // leaving the box; it starts empty next time
+          undoGrade();
+        } else {
+          swallowInput.current = input; // stay put, text untouched
+          setFlash("Nothing to take back.");
+        }
+      } else if (showGrammar) {
+        handleScrollKey(key, drawerLines.length, drawerHeight);
+      }
       return;
     }
-    if (phase.t === "vocab-input") return;
+    if (phase.t === "vocab-input") {
+      // The one key the text box leaves alone — and the way out of a recording
+      // opened by a stray `v`.
+      if (key.escape) setPhase({ t: "graded" });
+      return;
+    }
 
     if (ch === "q") {
       save();
@@ -359,6 +469,7 @@ export function App({ session, content, storage }: Props) {
           setShowGrammar(false);
           setShowHistory((s) => !s);
         } else if (ch === "m" && !inPlacement) openMap("graded");
+        else if (ch === "u") undoSubmit(); // Enter came too early
         else if (ch === "v") {
           setInput("");
           setPhase({ t: "vocab-input" });
@@ -398,19 +509,24 @@ export function App({ session, content, storage }: Props) {
       case "vocab-review-front": {
         if (key.return || ch === " ")
           setPhase({ t: "vocab-review-back", cardId: phase.cardId });
+        // A grade can advance straight into a vocabulary card; the way back to
+        // it has to be here too.
+        else if (ch === "u") undoGrade();
         break;
       }
       case "vocab-review-back": {
         if (ch >= "1" && ch <= "4") {
+          setUndo(takeUndo(phase));
           session.gradeVocab(phase.cardId, Number(ch) as Rating);
           save();
           setTick((n) => n + 1);
           advance();
-        }
+        } else if (ch === "u") undoGrade();
         break;
       }
       case "done": {
         if (ch === "m") openMap("done");
+        else if (ch === "u") undoGrade();
         else if (key.return || ch === " ") {
           save();
           exit();
@@ -449,7 +565,7 @@ export function App({ session, content, storage }: Props) {
           cursor={mapIndex}
           overall={overall}
           topic={mapTopics[mapIndex]!}
-          text={mapSection?.text ?? ""}
+          preview={mapPreview}
         />
       )}
 
@@ -491,7 +607,7 @@ export function App({ session, content, storage }: Props) {
           graded={phase.t === "graded"}
           submitted={submitted}
           input={input}
-          onChange={setInput}
+          onChange={changeInput}
           onSubmit={submitAnswer}
         />
       )}
@@ -546,6 +662,7 @@ export function App({ session, content, storage }: Props) {
           (showHistory && historyLines.length > drawerHeight)
         }
         history={attempts.length > 0}
+        undo={undo !== null}
       />
     </Box>
   );
@@ -597,6 +714,8 @@ function cellStyle(t: TopicProgress): { glyph: string; color: string; dim: boole
   return { glyph: "░", color: "yellow", dim: false };
 }
 
+/** Screen lines of a section the map previews — the same for every topic. */
+const PREVIEW_LINES = 5;
 /** Cells in a family's fixed-width summary bar. */
 const SUMMARY_CELLS = 6;
 /** Families per row of the summary block. */
@@ -685,13 +804,14 @@ function GrammarMap({
   cursor,
   overall,
   topic,
-  text,
+  preview,
 }: {
   families: FamilyProgress[];
   cursor: number;
   overall: number;
   topic: TopicProgress;
-  text: string;
+  /** Exactly `PREVIEW_LINES` pre-wrapped lines, and whether more follows. */
+  preview: { lines: string[]; truncated: boolean };
 }) {
   // Locate the cursor: which family it falls in, and where inside that family.
   let offset = 0;
@@ -707,13 +827,6 @@ function GrammarMap({
     offset += f.topics.length;
   }
 
-  // Sections carry paradigm tables, which are many short lines; the map shows
-  // only an opening taste of one, clipped by line as well as by length so the
-  // map stays compact. `g` opens the section in full in the reader.
-  const lines = text.split("\n");
-  const head = lines.slice(0, 5).join("\n");
-  const truncated = lines.length > 5 || head.length > 400;
-  const clipped = (head.length > 400 ? head.slice(0, 400) : head) + (truncated ? " \u2026" : "");
   const mastery =
     topic.mastery === undefined
       ? "not started"
@@ -740,17 +853,29 @@ function GrammarMap({
       </Box>
       <FamilyBar family={selected} cursorInFamily={inFamily} />
 
-      <Box marginTop={1}>
+      {/* Title and status go on separate lines: together they outrun the pane
+          for a third of the syllabus, and a header that wraps for some topics
+          and not others shifts everything below it as the cursor moves. */}
+      <Box marginTop={1} flexDirection="column">
         <Text>
           <Text color="gray">§ {topic.ref} </Text>
           <Text bold>{topic.title}</Text>
+        </Text>
+        <Text>
+          <Text dimColor>{mastery}</Text>
           {topic.due ? <Text color="yellow"> · due</Text> : null}
           {!topic.hasTests ? <Text dimColor> · no tests</Text> : null}
-          <Text dimColor> — {mastery}</Text>
         </Text>
       </Box>
-      <Text>{clipped}</Text>
-      {truncated && <Text dimColor>press g to read § {topic.ref} in full</Text>}
+      {/* Pre-wrapped and padded to a fixed height: every topic shows the same
+          amount of its section, and the box below does not shift as the cursor
+          moves. `g` opens the whole section in the reader. */}
+      {preview.lines.map((line, i) => (
+        <Text key={i}>{line === "" ? " " : line}</Text>
+      ))}
+      <Text dimColor>
+        {preview.truncated ? `press g to read § ${topic.ref} in full` : `all of § ${topic.ref}`}
+      </Text>
     </Box>
   );
 }
@@ -928,6 +1053,7 @@ function HintBar({
   placement,
   paging,
   history,
+  undo,
 }: {
   phase: Phase["t"];
   placement?: boolean;
@@ -935,30 +1061,35 @@ function HintBar({
   paging?: boolean;
   /** There is something in the topic's answer trail to show. */
   history?: boolean;
+  /** A grade was just given and can still be taken back. */
+  undo?: boolean;
 }) {
   const scrollHint = paging ? " · ↑↓ scroll" : "";
   // Only offered once the topic has a trail: `h` does nothing before that.
   const historyHint = history ? " · h earlier" : "";
+  // Offered only while there is a grade to take back, on every screen a grade
+  // can land you on.
+  const undoHint = undo ? " · u undo grade" : "";
   const hint =
     phase === "answering"
-      ? `type your Latin · Enter submit · Esc grammar${scrollHint}`
+      ? `type your Latin · Enter submit · Esc grammar${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
         ? "← → topic · ↑ ↓ family · g read section · Enter quiz me on this · Esc close"
         : phase === "read"
           ? "↑ ↓ scroll · PgUp/PgDn page · Esc back to map · q quit"
         : phase === "graded"
         ? placement
-          ? "3–4 you knew it (continue) · 1–2 start here"
-          : `1–4 self-grade (1 again · 4 easy) · v vocab · g grammar${historyHint}${scrollHint} · m map · q quit`
+          ? "3–4 you knew it (continue) · 1–2 start here · u keep typing"
+          : `1–4 self-grade (1 again · 4 easy) · u keep typing · v vocab · g grammar${historyHint}${scrollHint} · m map · q quit`
         : phase === "vocab-review-front"
-          ? "Space/Enter reveal · q quit"
+          ? `Space/Enter reveal${undoHint} · q quit`
           : phase === "vocab-review-back"
-            ? "1–4 self-grade · q quit"
+            ? `1–4 self-grade${undoHint} · q quit`
             : phase === "vocab-input"
-              ? "Enter to look up the word"
+              ? "Enter to look up the word · Esc cancel"
               : phase === "vocab-pick"
                 ? "1–9 choose · Esc cancel"
-                : "m grammar map · Enter exit";
+                : `m grammar map${undoHint} · Enter exit`;
   return (
     <Box marginTop={1}>
       <Text dimColor>{hint}</Text>

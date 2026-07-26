@@ -4,3 +4,7 @@ dist/
 .DS_Store
 # Progress files are user data, never committed to the app repo
 *.progress.json
+# Built from content/ by scripts/build-web-content.mjs and make-icons.mjs on
+# every web build; committing it would duplicate 5 MB already in the repo.
+apps/web/public/content/
+apps/web/public/icons/

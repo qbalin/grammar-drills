@@ -1,0 +1,855 @@
+/*
+ * Latina — one accent, two typefaces, nothing else.
+ *
+ * Latin is set in a serif and English chrome in the system sans, so the two
+ * languages never blur into each other. Paradigm tables from the grammar are
+ * monospace and preformatted; they use runs of spaces as columns and collapse
+ * into nonsense without it.
+ */
+
+:root {
+  --ink: #12121a;
+  --ink-raised: #1b1b26;
+  --ink-sunken: #0d0d13;
+  --line: #2a2a38;
+  --text: #e9e7e2;
+  --text-dim: #9a97a4;
+  --text-faint: #6a6776;
+  --gold: #e8c98a;
+  --gold-dim: #8a7a52;
+  --green: #7fc99a;
+  --amber: #e0a95e;
+  --red: #d98a86;
+
+  --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui,
+    sans-serif;
+  --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+
+  --radius: 14px;
+  --tap: 44px; /* the smallest thing a thumb should have to hit */
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  color-scheme: dark;
+}
+
+/* The palette is designed dark. In daylight it inverts to warm paper rather
+   than flipping to plain white, so the gold accent still reads. */
+@media (prefers-color-scheme: light) {
+  :root {
+    --ink: #faf7f0;
+    --ink-raised: #fffdf8;
+    --ink-sunken: #f0ece2;
+    --line: #ded7c8;
+    --text: #23212a;
+    --text-dim: #625f6b;
+    --text-faint: #918d99;
+    --gold: #9a7620;
+    --gold-dim: #c4ab73;
+    --green: #2f7d52;
+    --amber: #a06a12;
+    --red: #a3423c;
+    color-scheme: light;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overscroll-behavior-y: none;
+}
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100%;
+  /* 100dvh, not 100vh: mobile browsers shrink the viewport when the URL bar or
+     the keyboard appears, and vh does not follow. */
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* --- app frame ------------------------------------------------------------ */
+
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 34rem;
+  margin: 0 auto;
+  padding-top: var(--safe-top);
+}
+
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* --- status bar ----------------------------------------------------------- */
+
+.status {
+  padding: 0.35rem 1.1rem 0.2rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.status__row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.status__row:last-child {
+  align-items: baseline;
+}
+
+.status__spacer {
+  flex: 1;
+}
+
+/* The title owns the second row outright; only a title long even for that
+   width gets clipped. */
+.status__title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.status__ref {
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+  flex: none;
+}
+
+.status__counts {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.badge {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  color: var(--gold);
+}
+
+.badge--placement {
+  color: var(--amber);
+}
+
+.iconbtn {
+  min-width: var(--tap);
+  min-height: var(--tap);
+  display: grid;
+  place-items: center;
+  margin: -0.6rem 0;
+  color: var(--text-dim);
+  border-radius: 999px;
+}
+
+.iconbtn:active {
+  background: var(--ink-raised);
+}
+
+/* --- the question card ---------------------------------------------------- */
+
+.study {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0 1.1rem;
+}
+
+.study__scroll {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  min-height: 0;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0.5rem 0 0.9rem;
+}
+
+.prompt {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  line-height: 1.35;
+  margin: 0 0 1.4rem;
+  text-wrap: balance;
+}
+
+.answer-field {
+  width: 100%;
+  min-height: 5.5rem;
+  padding: 0.85rem 0.95rem;
+  background: var(--ink-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.45;
+  resize: none;
+  /* 16px+ keeps iOS Safari from zooming the viewport on focus. */
+}
+
+.answer-field:focus {
+  outline: none;
+  border-color: var(--gold-dim);
+}
+
+.answer-field::placeholder {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* Latin needs macrons that no phone keyboard offers. Nothing grades the
+   answer, so these are for the writer's own satisfaction. */
+.macrons {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
+}
+
+.macrons button {
+  flex: 1;
+  min-height: 2.2rem;
+  border-radius: 9px;
+  background: var(--ink-raised);
+  border: 1px solid var(--line);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--text-dim);
+}
+
+.macrons button:active {
+  background: var(--gold-dim);
+  color: var(--ink);
+}
+
+/* --- the comparison ------------------------------------------------------- */
+
+.compare {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.compare__block {
+  padding: 0.8rem 0.95rem;
+  border-radius: var(--radius);
+  background: var(--ink-raised);
+  border: 1px solid var(--line);
+}
+
+.compare__block--reference {
+  border-color: var(--gold-dim);
+  background: color-mix(in srgb, var(--gold) 8%, var(--ink-raised));
+}
+
+.compare__label {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.3rem;
+}
+
+.compare__text {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.compare__text--empty {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.compare__text--reference {
+  color: var(--gold);
+}
+
+.note {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  margin-top: 0.5rem;
+}
+
+/* --- buttons -------------------------------------------------------------- */
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.7rem 0 calc(0.7rem + var(--safe-bottom));
+}
+
+.btn {
+  flex: 1;
+  min-height: var(--tap);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--ink-raised);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: grid;
+  place-items: center;
+  transition: transform 0.08s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn--primary {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #17140c;
+}
+
+.btn--quiet {
+  background: none;
+  color: var(--text-dim);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+}
+
+.linkrow {
+  display: flex;
+  gap: 1.1rem;
+  justify-content: center;
+  padding: 0.2rem 0 0.6rem;
+}
+
+.linkrow button {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  min-height: 2.4rem;
+  padding: 0 0.3rem;
+}
+
+/* --- the grade bar -------------------------------------------------------- */
+
+.grades {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.45rem;
+  padding: 0.7rem 0 calc(0.7rem + var(--safe-bottom));
+}
+
+.grade {
+  min-height: 3.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--ink-raised);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  transition: transform 0.08s ease;
+}
+
+.grade:active {
+  transform: scale(0.95);
+}
+
+.grade__label {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* The interval each grade buys. Self-grading is otherwise a guess in the
+   dark — this makes the choice show its consequence. */
+.grade__when {
+  font-size: 0.68rem;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.grade--1 .grade__label { color: var(--red); }
+.grade--2 .grade__label { color: var(--amber); }
+.grade--3 .grade__label { color: var(--green); }
+.grade--4 .grade__label { color: var(--gold); }
+
+/* --- sheets --------------------------------------------------------------- */
+
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  animation: fade 0.18s ease;
+}
+
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  max-height: 88dvh;
+  background: var(--ink);
+  border-top: 1px solid var(--line);
+  border-radius: 18px 18px 0 0;
+  animation: rise 0.22s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.sheet__inner {
+  width: 100%;
+  max-width: 34rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.sheet__grip {
+  width: 2.2rem;
+  height: 0.25rem;
+  border-radius: 999px;
+  background: var(--line);
+  margin: 0.55rem auto 0;
+  flex: none;
+}
+
+.sheet__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.7rem 1.1rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  flex: none;
+}
+
+.sheet__title {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.sheet__body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.9rem 1.1rem calc(1.4rem + var(--safe-bottom));
+  min-height: 0;
+}
+
+@keyframes rise {
+  from { transform: translateY(100%); }
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+}
+
+/* --- the grammar reader --------------------------------------------------- */
+
+/*
+ * Bennett's paradigm tables were flattened to one line each, with runs of
+ * spaces holding the columns apart. `pre-wrap` in a monospace face is the only
+ * thing that keeps `amō  amās  amat` legible; reflowing it destroys the
+ * endings, which are the entire lesson.
+ */
+.grammar {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  tab-size: 4;
+}
+
+.grammar__scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* --- the grammar map ------------------------------------------------------ */
+
+.map__overall {
+  padding: 0.4rem 1.1rem 1rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.family {
+  border-bottom: 1px solid var(--line);
+}
+
+.family__head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.1rem;
+  min-height: var(--tap);
+  text-align: left;
+}
+
+.family__name {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.family__pct {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  min-width: 2.5rem;
+  text-align: right;
+}
+
+.family__meter {
+  width: 4.5rem;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--line);
+  overflow: hidden;
+  flex: none;
+}
+
+.family__meter > i {
+  display: block;
+  height: 100%;
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+.dots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2.1rem, 1fr));
+  gap: 0.3rem;
+  padding: 0.2rem 1.1rem 1rem;
+}
+
+.dot {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--ink-raised);
+  position: relative;
+  display: grid;
+  place-items: center;
+  font-size: 0.6rem;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Mastery bands, 1 through 4. */
+.dot--m1 { background: color-mix(in srgb, var(--amber) 22%, var(--ink-raised)); }
+.dot--m2 { background: color-mix(in srgb, var(--amber) 45%, var(--ink-raised)); }
+.dot--m3 { background: color-mix(in srgb, var(--green) 55%, var(--ink-raised)); }
+.dot--m4 { background: var(--green); color: var(--ink); }
+
+/* Placement passed the topic rather than the student earning it. */
+.dot--assumed { opacity: 0.55; }
+
+.dot--due::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--gold);
+  border: 1.5px solid var(--ink);
+}
+
+.dot--untested { border-style: dashed; }
+
+/* --- lists ---------------------------------------------------------------- */
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  min-height: var(--tap);
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row__main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* These are spans (a button may not contain a div), so they need telling to
+   stack — otherwise the citation and its gloss run into one line. */
+.row__title {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+}
+
+.row__sub {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-top: 0.1rem;
+}
+
+.row__chev {
+  color: var(--text-faint);
+  flex: none;
+}
+
+/* --- attempts ------------------------------------------------------------- */
+
+.attempt {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+.attempt:last-child {
+  border-bottom: none;
+}
+
+.attempt__meta {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  margin-bottom: 0.25rem;
+}
+
+.attempt__prompt {
+  color: var(--text-dim);
+  margin-bottom: 0.2rem;
+}
+
+.attempt__written {
+  font-family: var(--serif);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.attempt__written--empty {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* --- forms ---------------------------------------------------------------- */
+
+.field {
+  display: block;
+  margin-bottom: 0.9rem;
+}
+
+.field__label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-bottom: 0.3rem;
+}
+
+.field input {
+  width: 100%;
+  min-height: var(--tap);
+  padding: 0 0.8rem;
+  background: var(--ink-raised);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: var(--gold-dim);
+}
+
+.field__hint {
+  font-size: 0.76rem;
+  color: var(--text-faint);
+  margin-top: 0.3rem;
+}
+
+.section-title {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 1.6rem 0 0.6rem;
+}
+
+.section-title:first-child {
+  margin-top: 0.3rem;
+}
+
+/* --- toast ---------------------------------------------------------------- */
+
+.toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Clear of the grade bar: a toast that covers Hard and Good would hide the
+     two buttons most likely to be wanted next. */
+  bottom: calc(5.6rem + var(--safe-bottom));
+  z-index: 20;
+  max-width: calc(100% - 2rem);
+  padding: 0.6rem 0.95rem;
+  border-radius: 999px;
+  background: var(--ink-raised);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-size: 0.85rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  animation: rise-fade 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.toast button {
+  color: var(--gold);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@keyframes rise-fade {
+  from { opacity: 0; transform: translate(-50%, 0.5rem); }
+}
+
+/* --- rest / loading ------------------------------------------------------- */
+
+.centered {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem 1.5rem calc(2rem + var(--safe-bottom));
+  text-align: center;
+}
+
+.centered h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.centered p {
+  color: var(--text-dim);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.spinner {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid var(--line);
+  border-top-color: var(--gold);
+  border-radius: 999px;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* A quiet ring that fills as the syllabus does. */
+.ring {
+  --pct: 0;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(
+    var(--gold) calc(var(--pct) * 1%),
+    var(--line) 0
+  );
+  margin-bottom: 0.6rem;
+}
+
+.ring > span {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 999px;
+  background: var(--ink);
+  display: grid;
+  place-items: center;
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Everything decorative stops when the reader asks it to. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
