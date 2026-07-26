@@ -212,4 +212,89 @@ describe("CLI App (write → compare → self-grade)", () => {
 
     unmount();
   });
+
+  // Bennett's sections run to hundreds of lines. Every one of them has to be
+  // readable: no clipping, no ellipsis standing in for the rest of the rule.
+  const longText = Array.from({ length: 90 }, (_, i) => `rule line ${i + 1}`).join("\n");
+  const longFixture: ContentData = {
+    ...fixture,
+    grammar: [{ ...fixture.grammar[0]!, text: longText }, ...fixture.grammar.slice(1)],
+  };
+
+  it("pages the grammar drawer through a long section, ellipsis-free", async () => {
+    const content = new Content(longFixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    // A new topic teaches first, so the drawer opens at the top of the section.
+    await tick();
+    expect(lastFrame()).toContain("rule line 1");
+    expect(lastFrame()).not.toContain("rule line 90");
+    // The drawer says where the reader is, and never trails off into an
+    // ellipsis standing in for text it will not show.
+    expect(lastFrame()).toContain("of 90");
+    const drawer = lastFrame()!.split("Translate into Latin")[0]!;
+    expect(drawer).not.toContain("…");
+
+    // One line down, mid-answer: the window moves on.
+    stdin.write("\u001B[B");
+    await tick();
+    expect(lastFrame()).toContain("rule line 2");
+    expect(lastFrame()).toContain("lines 2–");
+
+    // Paging reaches the end of the section.
+    for (let i = 0; i < 20; i++) {
+      stdin.write("\u001B[6~");
+      await tick();
+    }
+    expect(lastFrame()).toContain("rule line 90");
+    expect(lastFrame()).toContain("end");
+
+    // Paging never runs off the bottom.
+    stdin.write("\u001B[6~");
+    await tick();
+    expect(lastFrame()).toContain("rule line 90");
+
+    unmount();
+  });
+
+  it("reads the section under the map cursor in full", async () => {
+    const content = new Content(longFixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("m");
+    await tick();
+    // The map previews the section and says where the rest of it is.
+    expect(lastFrame()).toContain("read § 34 in full");
+
+    stdin.write("g");
+    await tick();
+    expect(lastFrame()).not.toContain("Grammar map");
+    expect(lastFrame()).toContain("rule line 1");
+
+    for (let i = 0; i < 20; i++) {
+      stdin.write("\u001B[6~");
+      await tick();
+    }
+    expect(lastFrame()).toContain("rule line 90");
+
+    // Esc goes back to the map, not out of it.
+    stdin.write("\u001B");
+    await tick();
+    expect(lastFrame()).toContain("Grammar map");
+
+    unmount();
+  });
 });

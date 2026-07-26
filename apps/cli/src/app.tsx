@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Box, Text, useApp, useInput } from "ink";
+import { Box, Text, useApp, useInput, useStdout } from "ink";
 import TextInput from "ink-text-input";
+import { positionLabel, scrolled, wrapLines } from "./pager.js";
 import {
   Content,
   Session,
@@ -27,10 +28,12 @@ type Phase =
   | { t: "vocab-review-front"; cardId: string }
   | { t: "vocab-review-back"; cardId: string }
   | { t: "map"; from: "graded" | "done" }
+  | { t: "read"; from: "graded" | "done" } // a section read in full, from the map
   | { t: "done" };
 
 export function App({ session, content, storage }: Props) {
   const { exit } = useApp();
+  const { stdout } = useStdout();
 
   const [sectionId, setSectionId] = useState<string | null>(null);
   const [test, setTest] = useState<Test | null>(null);
@@ -48,9 +51,19 @@ export function App({ session, content, storage }: Props) {
   const [flash, setFlash] = useState<string | null>(null);
   const [tick, setTick] = useState(0);
   const [mapIndex, setMapIndex] = useState(0);
+  const [scroll, setScroll] = useState(0); // first visible line of the grammar pane
 
   const question: Question | undefined = test?.questions[qIndex];
   const section = sectionId ? content.getSection(sectionId) : undefined;
+
+  // Sections run long, so grammar is paged. The text is wrapped here, to the
+  // real terminal width, so a scroll step moves exactly one screen line.
+  const cols = stdout?.columns ?? 80;
+  const rows = stdout?.rows ?? 24;
+  const paneWidth = Math.max(24, cols - 7); // app padding + border + pane padding
+  // The drawer shares the screen with the question; the reader owns it.
+  const drawerHeight = Math.max(4, Math.min(18, rows - 15));
+  const readerHeight = Math.max(6, rows - 9);
 
   // The grammar map: families in display order, and the same topics flattened
   // so the cursor can walk straight across family boundaries.
@@ -67,8 +80,47 @@ export function App({ session, content, storage }: Props) {
     return starts;
   }, [families]);
 
+  const mapSection = useMemo(() => {
+    const id = mapTopics[mapIndex]?.sectionId;
+    return id ? content.getSection(id) : undefined;
+  }, [mapTopics, mapIndex, content]);
+
+  // Two panes can be reading: the drawer (the topic being drilled) and the
+  // reader (the topic under the map cursor). Only one is on screen at a time.
+  const drawerLines = useMemo(
+    () => wrapLines(section?.text ?? "", paneWidth),
+    [section?.text, paneWidth],
+  );
+  const readerLines = useMemo(
+    () => wrapLines(mapSection?.text ?? "", paneWidth),
+    [mapSection?.text, paneWidth],
+  );
+
+  // Whatever the pane is showing, show it from the top.
+  useEffect(() => setScroll(0), [sectionId, showGrammar, mapIndex, phase.t]);
+
   const save = () => {
     void storage.save(session.progress()).catch(() => {});
+  };
+
+  /** Move the visible window of the open grammar pane. */
+  const scrollPane = (lines: string[], height: number, delta: number) => {
+    setScroll((s) => scrolled(s, delta, lines.length, height));
+  };
+
+  /** Arrow/page keys for a pane; true if the key was a scroll key. */
+  const handleScrollKey = (
+    key: { upArrow: boolean; downArrow: boolean; pageUp: boolean; pageDown: boolean },
+    lines: string[],
+    height: number,
+  ): boolean => {
+    const page = Math.max(1, height - 1);
+    if (key.downArrow) scrollPane(lines, height, 1);
+    else if (key.upArrow) scrollPane(lines, height, -1);
+    else if (key.pageDown) scrollPane(lines, height, page);
+    else if (key.pageUp) scrollPane(lines, height, -page);
+    else return false;
+    return true;
   };
 
   const advance = () => {
@@ -248,9 +300,11 @@ export function App({ session, content, storage }: Props) {
   };
 
   useInput((ch, key) => {
-    // While typing (answering / vocab-input) the TextInput owns the keys.
+    // While typing (answering / vocab-input) the TextInput owns the keys —
+    // except the arrows, which it ignores, so they can page the drawer.
     if (phase.t === "answering") {
       if (key.escape) setShowGrammar((s) => !s); // peek at grammar mid-answer
+      else if (showGrammar) handleScrollKey(key, drawerLines, drawerHeight);
       return;
     }
     if (phase.t === "vocab-input") return;
@@ -263,6 +317,7 @@ export function App({ session, content, storage }: Props) {
 
     switch (phase.t) {
       case "graded": {
+        if (showGrammar && handleScrollKey(key, drawerLines, drawerHeight)) break;
         if (ch >= "1" && ch <= "4") gradeAndContinue(Number(ch) as Rating);
         else if (ch === "g") setShowGrammar((s) => !s);
         else if (ch === "m" && !inPlacement) openMap("graded");
@@ -279,7 +334,13 @@ export function App({ session, content, storage }: Props) {
         else if (key.upArrow) jumpFamily(-1);
         else if (key.downArrow) jumpFamily(1);
         else if (key.return) quizSelected();
+        else if (ch === "g") setPhase({ t: "read", from: phase.from });
         else if (key.escape || ch === "m") setPhase({ t: phase.from });
+        break;
+      }
+      case "read": {
+        if (handleScrollKey(key, readerLines, readerHeight)) break;
+        if (key.escape || ch === "g" || ch === "m") setPhase({ t: "map", from: phase.from });
         break;
       }
       case "vocab-pick": {
@@ -350,12 +411,28 @@ export function App({ session, content, storage }: Props) {
           cursor={mapIndex}
           overall={overall}
           topic={mapTopics[mapIndex]!}
-          text={content.getSection(mapTopics[mapIndex]!.sectionId)?.text ?? ""}
+          text={mapSection?.text ?? ""}
         />
       )}
 
-      {showGrammar && section && phase.t !== "map" && (
-        <GrammarDrawer text={section.text} refLabel={section.ref} title={section.title} />
+      {phase.t === "read" && mapSection && (
+        <GrammarPane
+          lines={readerLines}
+          scroll={scroll}
+          height={readerHeight}
+          refLabel={mapSection.ref}
+          title={mapSection.title}
+        />
+      )}
+
+      {showGrammar && section && phase.t !== "map" && phase.t !== "read" && (
+        <GrammarPane
+          lines={drawerLines}
+          scroll={scroll}
+          height={drawerHeight}
+          refLabel={section.ref}
+          title={section.title}
+        />
       )}
 
       {(phase.t === "answering" || phase.t === "graded") && question && (
@@ -413,7 +490,11 @@ export function App({ session, content, storage }: Props) {
         </Box>
       )}
 
-      <HintBar phase={phase.t} placement={inPlacement} />
+      <HintBar
+        phase={phase.t}
+        placement={inPlacement}
+        paging={showGrammar && drawerLines.length > drawerHeight}
+      />
     </Box>
   );
 }
@@ -574,14 +655,13 @@ function GrammarMap({
     offset += f.topics.length;
   }
 
-  // Extracted sections carry paradigm tables, which are many short lines; clip
-  // by line as well as by length so the map stays compact. The full text is
-  // still one `g` away in the grammar drawer.
+  // Sections carry paradigm tables, which are many short lines; the map shows
+  // only an opening taste of one, clipped by line as well as by length so the
+  // map stays compact. `g` opens the section in full in the reader.
   const lines = text.split("\n");
   const head = lines.slice(0, 5).join("\n");
-  const clipped =
-    (head.length > 400 ? head.slice(0, 400) : head) +
-    (lines.length > 5 || head.length > 400 ? " \u2026" : "");
+  const truncated = lines.length > 5 || head.length > 400;
+  const clipped = (head.length > 400 ? head.slice(0, 400) : head) + (truncated ? " \u2026" : "");
   const mastery =
     topic.mastery === undefined
       ? "not started"
@@ -618,26 +698,47 @@ function GrammarMap({
         </Text>
       </Box>
       <Text>{clipped}</Text>
+      {truncated && <Text dimColor>press g to read § {topic.ref} in full</Text>}
     </Box>
   );
 }
 
-function GrammarDrawer({
-  text,
+/**
+ * A window onto one grammar section. Sections run to hundreds of lines, so the
+ * pane shows `height` of them at `scroll` and the reader pages through the
+ * rest — nothing in the section is out of reach.
+ */
+function GrammarPane({
+  lines,
+  scroll,
+  height,
   refLabel,
   title,
 }: {
-  text: string;
+  lines: string[];
+  scroll: number;
+  height: number;
   refLabel: string;
   title: string;
 }) {
-  const clipped = text.length > 1200 ? text.slice(0, 1200) + "…" : text;
+  const visible = lines.slice(scroll, scroll + height);
+  const more = lines.length > height;
+  const atEnd = scroll + height >= lines.length;
   return (
     <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
       <Text color="gray">
         § {refLabel} — {title}
       </Text>
-      <Text>{clipped}</Text>
+      {/* Pre-wrapped: one entry per screen line, so the count drives scrolling. */}
+      {visible.map((line, i) => (
+        <Text key={scroll + i}>{line === "" ? " " : line}</Text>
+      ))}
+      {more && (
+        <Text dimColor>
+          {positionLabel(scroll, height, lines.length)}
+          {atEnd ? " · end" : " · ↑↓ scroll, PgUp/PgDn page"}
+        </Text>
+      )}
     </Box>
   );
 }
@@ -723,16 +824,28 @@ function VocabReview({
   );
 }
 
-function HintBar({ phase, placement }: { phase: Phase["t"]; placement?: boolean }) {
+function HintBar({
+  phase,
+  placement,
+  paging,
+}: {
+  phase: Phase["t"];
+  placement?: boolean;
+  /** The grammar pane is open and has more lines than fit. */
+  paging?: boolean;
+}) {
+  const scrollHint = paging ? " · ↑↓ scroll" : "";
   const hint =
     phase === "answering"
-      ? "type your Latin · Enter submit · Esc grammar"
+      ? `type your Latin · Enter submit · Esc grammar${scrollHint}`
       : phase === "map"
-        ? "← → topic · ↑ ↓ family · Enter quiz me on this · Esc close"
+        ? "← → topic · ↑ ↓ family · g read section · Enter quiz me on this · Esc close"
+        : phase === "read"
+          ? "↑ ↓ scroll · PgUp/PgDn page · Esc back to map · q quit"
         : phase === "graded"
         ? placement
           ? "3–4 you knew it (continue) · 1–2 start here"
-          : "1–4 self-grade (1 again · 4 easy) · v vocab · g grammar · m map · q quit"
+          : `1–4 self-grade (1 again · 4 easy) · v vocab · g grammar${scrollHint} · m map · q quit`
         : phase === "vocab-review-front"
           ? "Space/Enter reveal · q quit"
           : phase === "vocab-review-back"

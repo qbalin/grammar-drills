@@ -90,7 +90,7 @@ exist to remap.
 | Distinct inflected forms | 8,736 |
 | Duplicate prompts / answers | 0 / 0 |
 | Vocab resolving in `lemmas.json.gz` | 95.6% of occurrences |
-| Tests | 20 passing (`pnpm -r test`) |
+| Tests | 30 passing (`pnpm -r test`) |
 | Typecheck + build | clean |
 | Git | **everything still uncommitted on `main`** (~140 changed/untracked paths) |
 
@@ -359,13 +359,16 @@ for t in json.load(open('content/tests/bn-338-the-gerund.json'))[:1]:
 - **`lemmas.json.gz` covers only ~7k lemmas** and cannot resolve ~6.5% of the
   bundle's own forms — generated vocab is validated against `dictionary.db`
   instead. A student pressing `v` on a rare word may see "No dictionary match".
-- Section `text` holds flattened paradigm tables, so it is many short lines.
-  The map clips to 5 lines / 400 chars; the `g` drawer clips at 1200.
+- Section `text` holds flattened paradigm tables, so it is many short lines —
+  up to 284 of them, ~16k characters. It is stored **whole**: only the map's
+  preview clips (5 lines / 400 chars), and it points at `g`, which opens the
+  section in a pager. `apps/cli/src/pager.ts` wraps the text to the terminal
+  width so a scroll step is one screen line; the panes never truncate.
 
 ## Verify
 
 ```bash
-pnpm -r test                              # 20 tests
+pnpm -r test                              # 30 tests
 pnpm --filter @latin-tutor/cli typecheck
 pnpm --filter @latin-tutor/core build
 pnpm cli -- --progress /tmp/scratch.progress.json   # press m for the map

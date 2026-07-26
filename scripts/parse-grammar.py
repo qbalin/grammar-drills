@@ -200,8 +200,12 @@ def strip_markup(text):
     return text.replace("_", "")                 # leftover unpaired marks
 
 
-def clean_text(raw, budget=1200):
-    """Readable prose for a terminal drawer: paragraphs joined, tables flattened."""
+def clean_text(raw):
+    """Readable prose: paragraphs joined, paradigm tables flattened.
+
+    The whole section is kept. The reader pages through it (see the CLI's
+    grammar pager); truncating here would put part of the grammar permanently
+    out of the student's reach."""
     out, para = [], []
     for line in raw.split("\n"):
         if not line.strip():
@@ -223,15 +227,7 @@ def clean_text(raw, budget=1200):
 
     # Paragraphs are unwrapped now, so italic spans sit on a single line.
     text = strip_markup("\n".join(out))
-    text = re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{2,}", "\n", text)).strip()
-    if len(text) <= budget:
-        return text
-    cut = text[:budget]
-    for stop in (". ", ".\n", "; "):
-        i = cut.rfind(stop)
-        if i > budget * 0.6:
-            return cut[: i + 1].strip() + " …"
-    return cut.rstrip() + " …"
+    return re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{2,}", "\n", text)).strip()
 
 
 def titleise(heading):

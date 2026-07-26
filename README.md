@@ -68,8 +68,12 @@ pnpm --filter @latin-tutor/cli start -- --content ./content --progress ./my.prog
 
 Flow: (placement on first run →) read the English prompt, **type your Latin and
 press Enter**, compare with the reference answer, then `1–4` self-grade
-(1 again · 4 easy). `v` record a word · `g` grammar extract · `Esc` peek at the
+(1 again · 4 easy). `v` record a word · `g` grammar section · `Esc` peek at the
 grammar mid-answer · `m` grammar map · `q` quit (autosaves).
+
+The grammar pane shows the **whole** section — Bennett's paradigm sections run
+to hundreds of lines — so it pages: `↑ ↓` a line, `PgUp/PgDn` a screen, with
+`lines 25–33 of 90` under the text saying where you are.
 
 ## The grammar
 
@@ -98,9 +102,10 @@ English→Latin translation exercise: Part I (sounds, accent, quantity), Part IV
 | Noun syntax · Adj/Pron syntax · Verb syntax | 19 · 13 · 30 | Part V |
 | Word-order & style | 12 | Part V, *Hints on Latin Style* |
 
-Each topic's `text` is the section's own prose, with Gutenberg markup removed,
-hard wrapping undone and paradigm tables flattened to one line apiece so the
-endings survive in a terminal-width drawer.
+Each topic's `text` is the section's own prose **in full**, with Gutenberg
+markup removed, hard wrapping undone and paradigm tables flattened to one line
+apiece so the endings survive in a terminal-width pane. Nothing is trimmed to a
+character budget: what the parser drops, the student can never read.
 
 [pg]: https://www.gutenberg.org/ebooks/15665
 
@@ -127,8 +132,10 @@ lucky answer therefore can't mark a topic mastered, and one bad day can't wipe
 one. Topics passed in placement show as mastered but assumed.
 
 `← →` walks the cursor along the bars (including topics you have never met),
-`↑ ↓` jumps between families, and **Enter serves a test on the selected topic
-straight away** — the way to explore ahead of where the scheduler has taken you.
+`↑ ↓` jumps between families, `g` opens the selected section in full (scrolling
+as above, `Esc` back to the map), and **Enter serves a test on the selected
+topic straight away** — the way to explore ahead of where the scheduler has
+taken you.
 Normal spaced repetition resumes once the test is done.
 
 ## Progress storage
