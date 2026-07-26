@@ -44,13 +44,13 @@ jobs:
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
         run: pnpm --filter @latin-tutor/web build
+      # Pages must already be switched on for the repo, with Settings → Pages →
+      # Source set to "GitHub Actions". That is a one-time manual step and
+      # cannot be automated from here: `enablement: true` asks this action to
+      # create the site, and the workflow's GITHUB_TOKEN is refused ("Resource
+      # not accessible by integration") because creating a Pages site needs
+      # admin on the repo, which a workflow token cannot grant itself.
       - uses: actions/configure-pages@v5
-        with:
-          # Turn Pages on if it is not already, rather than failing with "Get
-          # Pages site failed" until someone finds the setting by hand. The
-          # point of this app is that a student needs no setup; the same should
-          # hold for whoever deploys it.
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: apps/web/dist
