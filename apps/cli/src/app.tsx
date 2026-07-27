@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Text, useApp, useInput, useStdout } from "ink";
 import TextInput from "ink-text-input";
-import { positionLabel, previewWindow, scrolled, wrapLines } from "./pager.js";
+import { layoutSection, positionLabel, previewWindow, scrolled } from "./pager.js";
 import {
   attemptLines,
   questionBankLines,
@@ -130,11 +130,11 @@ export function App({ session, content, storage }: Props) {
   // Two panes can be reading: the drawer (the topic being drilled) and the
   // reader (the topic under the map cursor). Only one is on screen at a time.
   const drawerLines = useMemo(
-    () => wrapLines(section?.text ?? "", paneWidth),
+    () => layoutSection(section?.text ?? "", paneWidth),
     [section?.text, paneWidth],
   );
   const readerLines = useMemo(
-    () => wrapLines(mapSection?.text ?? "", paneWidth),
+    () => layoutSection(mapSection?.text ?? "", paneWidth),
     [mapSection?.text, paneWidth],
   );
   // The map's taste of the section under the cursor: the same window for every

@@ -511,8 +511,10 @@ describe("CLI App (write → compare → self-grade)", () => {
     expect(lastFrame()).toContain("rule line 1");
     expect(lastFrame()).not.toContain("rule line 90");
     // The drawer says where the reader is, and never trails off into an
-    // ellipsis standing in for text it will not show.
-    expect(lastFrame()).toContain("of 90");
+    // ellipsis standing in for text it will not show. The count is of screen
+    // lines, which the blank lines between blocks put above the 90 source ones.
+    const total = Number(lastFrame()!.match(/of (\d+)/)![1]);
+    expect(total).toBeGreaterThanOrEqual(90);
     const drawer = lastFrame()!.split("Translate into Latin")[0]!;
     expect(drawer).not.toContain("…");
 
@@ -522,8 +524,8 @@ describe("CLI App (write → compare → self-grade)", () => {
     expect(lastFrame()).toContain("rule line 2");
     expect(lastFrame()).toContain("lines 2–");
 
-    // Paging reaches the end of the section.
-    for (let i = 0; i < 20; i++) {
+    // Paging reaches the end of the section — however many pages that takes.
+    for (let i = 0; i < total && !lastFrame()!.includes("· end"); i++) {
       stdin.write("\u001B[6~");
       await tick();
     }

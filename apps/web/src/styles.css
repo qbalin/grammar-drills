@@ -2,9 +2,8 @@
  * Latina — one accent, two typefaces, nothing else.
  *
  * Latin is set in a serif and English chrome in the system sans, so the two
- * languages never blur into each other. Paradigm tables from the grammar are
- * monospace and preformatted; they use runs of spaces as columns and collapse
- * into nonsense without it.
+ * languages never blur into each other. The grammar reader is a book page and
+ * follows the same rule: serif for the text, sans for the labels around it.
  */
 
 :root {
@@ -510,23 +509,110 @@ button {
 /* --- the grammar reader --------------------------------------------------- */
 
 /*
- * Bennett's paradigm tables were flattened to one line each, with runs of
- * spaces holding the columns apart. `pre-wrap` in a monospace face is the only
- * thing that keeps `amō  amās  amat` legible; reflowing it destroys the
- * endings, which are the entire lesson.
+ * A section is a page of a book, so it is set like one: the serif, a long
+ * measure, and real space between the blocks. `parseBlocks` recovers the
+ * structure that the text extract had flattened, which is what lets the
+ * paradigms be actual tables — their columns line up because the layout says
+ * so, not because of a preserved run of spaces.
  */
 .grammar {
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  line-height: 1.65;
-  white-space: pre-wrap;
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  line-height: 1.7;
   overflow-wrap: break-word;
-  tab-size: 4;
+  padding-bottom: 1.5rem;
 }
 
-.grammar__scroll {
+.gr-p {
+  margin: 0 0 0.9rem;
+}
+
+.gr-h {
+  font-size: 0.78rem;
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 1.6rem 0 0.7rem;
+}
+
+/* Marker in its own column, so a wrapped sub-point hangs under its text
+   rather than sliding back under the number that introduced it. */
+.gr-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 0.55rem;
+  margin: 0 0 0.8rem;
+}
+
+.gr-item--1 {
+  padding-left: 1rem;
+}
+
+.gr-item--2 {
+  padding-left: 2rem;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+
+.gr-marker {
+  font-variant-numeric: tabular-nums;
+  color: var(--gold-dim);
+}
+
+/*
+ * The paradigms. Six columns of endings will not fit a phone, and reflowing
+ * them is not an option — a declension read across a wrapped line teaches
+ * nothing. So the table keeps its width and scrolls inside this box, which is
+ * why the page itself no longer needs `overflow-x`.
+ */
+.gr-tablewrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.gr-table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.gr-table th,
+.gr-table td {
+  padding: 0.22rem 0.7rem 0.22rem 0;
+  text-align: left;
+  vertical-align: baseline;
+  /* An ending broken across two lines is a different ending. */
+  white-space: nowrap;
+}
+
+.gr-table th {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.35rem;
+}
+
+/* The stub column names the row; it is furniture, not the lesson. */
+.gr-row--body td:first-child {
+  color: var(--text-dim);
+  padding-right: 1.1rem;
+}
+
+.gr-divider {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  padding-top: 0.8rem;
 }
 
 /* --- the grammar map ------------------------------------------------------ */

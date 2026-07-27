@@ -17,6 +17,7 @@ export {
   familyLabel,
   type FamilyId,
 } from "./families.js";
+export { parseBlocks, type Block, type Row } from "./grammar-blocks.js";
 export {
   Session,
   type Action,

@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { maxScroll, positionLabel, previewWindow, scrolled, wrapLines } from "./pager.js";
+import {
+  layoutSection,
+  maxScroll,
+  positionLabel,
+  previewWindow,
+  scrolled,
+  wrapLines,
+} from "./pager.js";
 
 describe("wrapLines", () => {
   it("keeps short lines as they are", () => {
@@ -25,10 +32,82 @@ describe("wrapLines", () => {
   });
 });
 
+describe("layoutSection", () => {
+  it("puts a blank line between blocks, so a section is not one wall", () => {
+    expect(layoutSection("The girl loves the rose.\nThe farmer sees her.", 40)).toEqual([
+      "The girl loves the rose.",
+      "",
+      "The farmer sees her.",
+    ]);
+  });
+
+  it("indents a sub-point and hangs the rest of it under its own text", () => {
+    const lines = layoutSection("a. An old Ablative quī occurs in this sense.", 28);
+    expect(lines[0]).toBe("     a. An old Ablative quī");
+    // Every continuation clears the marker rather than sliding back under it.
+    expect(lines.slice(1)).toEqual(["        occurs in this", "        sense."]);
+    expect(lines.every((l) => l.length <= 28)).toBe(true);
+  });
+
+  it("indents a numbered point less deeply than a lettered one", () => {
+    const [numbered] = layoutSection("1. Quis, who?", 40);
+    const [lettered] = layoutSection("a. Quis, who?", 40);
+    expect(numbered!.search(/\S/)).toBeLessThan(lettered!.search(/\S/));
+  });
+
+  it("pads paradigm columns so the endings line up down the page", () => {
+    const lines = layoutSection(
+      ["Nom.  puella  puellae", "Gen.  puellae  puellārum"].join("\n"),
+      40,
+    );
+    expect(lines).toEqual([
+      "  Nom.  puella   puellae",
+      "  Gen.  puellae  puellārum",
+    ]);
+    // The column each ending sits in is the same on every row.
+    expect(lines.map((l) => l.indexOf("puella"))).toEqual([8, 8]);
+  });
+
+  it("spreads a caption over the group of columns it names", () => {
+    const lines = layoutSection(
+      [
+        "SINGULAR  PLURAL.",
+        "MASC.  FEM.  NEUT.  MASC.  FEM.  NEUT.",
+        "Nom.  hīc  haec  hōc  hī  hae  haec",
+      ].join("\n"),
+      60,
+    );
+    // "PLURAL." starts where the plural forms start, not one column in.
+    expect(lines[0]!.indexOf("PLURAL.")).toBe(lines[1]!.lastIndexOf("MASC."));
+  });
+
+  it("keeps a divider with the table it divides", () => {
+    const lines = layoutSection(
+      ["SINGULAR.", "Nom.  tussis", "PLURAL.", "Nom.  tussēs"].join("\n"),
+      40,
+    );
+    // One block: no blank line splits the paradigm in two.
+    expect(lines).toEqual(["  SINGULAR.", "  Nom.  tussis", "  PLURAL.", "  Nom.  tussēs"]);
+  });
+
+  it("leaves a table unpadded rather than pushing it off a narrow screen", () => {
+    // A terminal cannot scroll sideways, so there is nowhere for overflow to go.
+    const row = "Nom.  hīc  haec  hōc  hī  hae  haec";
+    expect(layoutSection(row, 20).every((l) => l.length <= 20)).toBe(true);
+  });
+});
+
 describe("previewWindow", () => {
   // A paradigm table and a paragraph of prose are the two extremes the map has
   // to sit between: clipped by source line they show utterly unequal amounts.
-  const table = "amō\namās\namat\namāmus\namātis\namant";
+  const table = [
+    "SINGULAR.",
+    "1st.  amō  moneō",
+    "2nd.  amās  monēs",
+    "3rd.  amat  monet",
+    "PLURAL.",
+    "1st.  amāmus  monēmus",
+  ].join("\n");
   const prose = "the girl loves the rose in the garden ".repeat(6).trim();
 
   it("gives every section the same window, whatever its shape", () => {
@@ -44,12 +123,12 @@ describe("previewWindow", () => {
 
   it("reports that there is more to read, and keeps the opening line", () => {
     const { lines, truncated } = previewWindow(table, 40, 5);
-    expect(lines[0]).toBe("amō");
-    expect(lines[4]).toBe("amātis");
+    expect(lines[0]).toBe("  SINGULAR.");
+    expect(lines[4]).toBe("  PLURAL.");
     expect(truncated).toBe(true);
   });
 
-  it("counts wrapped lines, not source lines", () => {
+  it("counts laid-out lines, not source lines", () => {
     // One source line, but it does not fit in five lines of forty columns.
     expect(previewWindow(prose, 40, 5).truncated).toBe(true);
     expect(previewWindow(prose, 40, 5).lines.every((l) => l.length <= 40)).toBe(true);
