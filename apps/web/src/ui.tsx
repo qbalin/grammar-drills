@@ -144,8 +144,13 @@ const SLOP_PX = 10;
  *
  * The press is deliberately slow (500 ms) and dies on any real movement: the
  * answer scrolls, and a scroll that saved a vocabulary card would be worse than
- * no gesture at all. Right-click does the same thing on a desktop, and so does
- * Enter on a focused word.
+ * no gesture at all. Right-click does the same thing on a desktop.
+ *
+ * The words are bare spans — no roles, no labels. Announcing a hundred and
+ * twenty "Record amat" buttons would turn a Latin sentence into a list of
+ * controls for anyone using a screen reader, and the sentence is the thing they
+ * came for. The gesture is an enhancement; *record a word* below stays the
+ * spelled-out route, and it is a real button with a real text field.
  */
 export function HoldableLatin({
   text,
@@ -185,11 +190,10 @@ export function HoldableLatin({
           <span
             key={i}
             className={`word${held === i ? " word--held" : ""}`}
-            role="button"
-            tabIndex={0}
-            aria-label={`Record ${token}`}
+            data-word={token}
             onPointerDown={(e) => {
               const from = { x: e.clientX, y: e.clientY };
+              // A finger that travels was aiming past the word, not at it.
               const move = (m: PointerEvent) => {
                 if (
                   Math.abs(m.clientX - from.x) > SLOP_PX ||
@@ -198,10 +202,16 @@ export function HoldableLatin({
                   cancel();
                 }
               };
+              // And a page that moves under the finger settles it outright.
+              // Captured, because a scroll event does not bubble and the
+              // scroller here is the answer pane, not the window.
+              const scrolled = () => cancel();
               addEventListener("pointermove", move);
-              // Whatever ends the press, the listener goes with it.
+              addEventListener("scroll", scrolled, true);
+              // Whatever ends the press, the listeners go with it.
               const done = () => {
                 removeEventListener("pointermove", move);
+                removeEventListener("scroll", scrolled, true);
                 cancel();
               };
               addEventListener("pointerup", done, { once: true });
@@ -209,17 +219,9 @@ export function HoldableLatin({
               setHeld(i);
               timer.current = setTimeout(() => fire(token), HOLD_MS);
             }}
-            // Scrolling the answer must never record a word.
-            onScroll={cancel}
             onContextMenu={(e) => {
               e.preventDefault();
               fire(token);
-            }}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                fire(token);
-              }
             }}
           >
             {token}

@@ -163,12 +163,15 @@ export function VocabReview({
   schedule,
   onReveal,
   onGrade,
+  onEdit,
 }: {
   card: VocabCardState;
   revealed: boolean;
   schedule?: Record<Rating, Date>;
   onReveal: () => void;
   onGrade: (r: Rating) => void;
+  /** A wrong citation is never more obvious than when it is being reviewed. */
+  onEdit: () => void;
 }) {
   return (
     <>
@@ -193,6 +196,9 @@ export function VocabReview({
           </div>
         )}
       </div>
+      <div className="linkrow">
+        <button onClick={onEdit}>✎ edit this word</button>
+      </div>
       {revealed ? (
         <GradeBar onGrade={onGrade} schedule={schedule} />
       ) : (
@@ -215,10 +221,12 @@ export function Rest({
   overall,
   nextDue,
   onOpenMap,
+  onOpenSchedule,
 }: {
   overall: number;
   nextDue?: Date;
   onOpenMap: () => void;
+  onOpenSchedule: () => void;
 }) {
   return (
     <div className="centered">
@@ -233,9 +241,15 @@ export function Rest({
             })}.`
           : "Well done."}
       </p>
-      <div className="actions" style={{ width: "100%", maxWidth: "18rem" }}>
+      <div
+        className="actions"
+        style={{ width: "100%", maxWidth: "18rem", flexDirection: "column" }}
+      >
         <button className="btn" onClick={onOpenMap}>
           Explore the grammar map
+        </button>
+        <button className="btn" onClick={onOpenSchedule}>
+          See what's coming
         </button>
       </div>
     </div>

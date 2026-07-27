@@ -835,6 +835,10 @@ export function App({ content, session, storage }: Props) {
           dictionaryReady={dictionaryReady()}
           caching={dictLoading}
           onCacheDictionary={cacheDictionary}
+          vocabCount={stats.vocab}
+          onOpenVocab={() =>
+            setOverlay({ t: "vocab-list", back: { t: "settings" } })
+          }
           onReset={() => {
             storage.clearLocal();
             location.reload();

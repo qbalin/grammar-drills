@@ -155,9 +155,22 @@ button {
   flex: none;
 }
 
+/* Also the way in to the schedule: the count is already the short answer to
+   "how much is waiting", and the sheet is the long one. */
 .status__counts {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
+  background: none;
+  border: none;
+  padding: 0.2rem 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline dotted var(--line);
+  text-underline-offset: 3px;
+}
+
+.status__counts:active {
+  color: var(--gold);
 }
 
 .badge {
@@ -307,11 +320,6 @@ button {
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
-}
-
-.word:focus-visible {
-  outline: 2px solid var(--gold-dim);
-  outline-offset: 1px;
 }
 
 /* Held, but not yet long enough — so the gesture shows itself before it fires. */
@@ -650,6 +658,21 @@ button {
   font-size: 0.82rem;
   color: var(--text-dim);
   margin-top: 0.1rem;
+}
+
+/* The reference Latin under a question's English prompt. */
+.row__answer {
+  display: block;
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  color: var(--gold);
+  margin-top: 0.15rem;
+}
+
+/* A row that only reports — the schedule's, which is not tappable: there is
+   nothing to do about a date. */
+.row--static {
+  cursor: default;
 }
 
 .row__chev {

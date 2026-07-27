@@ -1,4 +1,11 @@
-import { render, screen, within } from "@testing-library/react";
+import {
+  act,
+  cleanup,
+  fireEvent,
+  render,
+  screen,
+  within,
+} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import {
@@ -69,6 +76,11 @@ const fixture: ContentData = {
       { lemma: "mānis", citation: "mānis, māne", gloss: "good", pos: "adj", rank: 4091 },
     ],
     regem: [{ lemma: "rex", citation: "rex, rēgis", gloss: "king", pos: "noun", rank: 88 }],
+    // Words that appear in the answers above, so they can be held down there.
+    rosam: [{ lemma: "rosa", citation: "rosa, rosae (f)", gloss: "rose", pos: "noun", rank: 900 }],
+    amat: [
+      { lemma: "amō", citation: "amō, amāre, amāvī, amātum", gloss: "to love", pos: "verb", rank: 125 },
+    ],
   },
 };
 
@@ -82,6 +94,37 @@ function mount(progress?: Progress) {
 
 /** True while the placement probes are still running. */
 const inPlacement = () => document.querySelector(".badge--placement") !== null;
+
+/**
+ * The Latin sentences on screen, written and reference.
+ *
+ * Both are rendered a word at a time so each can be held down and recorded, so
+ * no single element holds the whole sentence and `getByText` cannot see it.
+ */
+const sentences = () =>
+  // `Array.from`, not a spread: the DOM lib here is the non-iterable one.
+  Array.from(document.querySelectorAll(".compare__text")).map((el) =>
+    el.textContent?.trim(),
+  );
+
+/** The span carrying one word of a sentence on screen. */
+const wordSpan = (word: string) =>
+  Array.from(document.querySelectorAll<HTMLElement>(".word")).find(
+    (el) => el.dataset.word?.replace(/[^\p{Letter}]/gu, "") === word,
+  );
+
+/** Let real time pass, since the hold is timed rather than counted. */
+const passTime = (ms: number) =>
+  act(() => new Promise((resolve) => setTimeout(resolve, ms)));
+
+/** Hold a word down long enough to record it. */
+async function holdWord(word: string, then?: () => void) {
+  const span = wordSpan(word);
+  if (!span) throw new Error(`no word “${word}” on screen`);
+  fireEvent.pointerDown(span, { clientX: 20, clientY: 20 });
+  then?.();
+  await passTime(700);
+}
 
 /** Study past the placement probes, so the tests start on ordinary ground. */
 async function skipPlacement(user: ReturnType<typeof userEvent.setup>) {
@@ -115,6 +158,32 @@ describe("the study loop", () => {
     );
   });
 
+  it("stays in placement while a word is recorded, and resumes it after a reload", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+
+    // Pass the first probe, so placement is genuinely mid-run.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Knew it/ }));
+    expect(screen.getByText(/Placement · 2 of/)).toBeDefined();
+
+    // Recording a word is an aside, not an exit: the probe is still on screen.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /record a word/ }));
+    await user.type(screen.getByRole("textbox"), "regem");
+    await user.click(screen.getByRole("button", { name: "Look up" }));
+    expect(session.vocabCard("v-rex")).toBeDefined();
+    expect(inPlacement()).toBe(true);
+    expect(screen.getByText(/Placement · 2 of/)).toBeDefined();
+
+    // And the run itself outlives the page: passing a probe fills knownSections,
+    // which used to make a reload look like a finished placement.
+    cleanup();
+    mount(new SyncingStorage().read() ?? undefined);
+    expect(inPlacement()).toBe(true);
+    expect(screen.getByText(/Placement · 2 of/)).toBeDefined();
+  });
+
   it("takes topics as known up to a passed placement probe", async () => {
     const user = userEvent.setup();
     const { session } = mount();
@@ -138,9 +207,8 @@ describe("the study loop", () => {
 
     // Both halves of the comparison, and no automatic verdict on either.
     expect(screen.getByText("You wrote")).toBeDefined();
-    expect(screen.getByText("Puella rosa amo.")).toBeDefined();
     expect(screen.getByText("Reference")).toBeDefined();
-    expect(screen.getByText("Puella rosam amat.")).toBeDefined();
+    expect(sentences()).toEqual(["Puella rosa amo.", "Puella rosam amat."]);
 
     await user.click(screen.getByRole("button", { name: /Good/ }));
     expect(session.progress().topicMastery.decl1).toBe(2);
@@ -314,6 +382,189 @@ describe("vocabulary", () => {
   });
 });
 
+describe("holding a word", () => {
+  it("records a word held down in the reference answer", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    await holdWord("rosam");
+
+    // Straight to the card — no sheet, nothing retyped.
+    expect(session.vocabCard("v-rosa")?.citation).toBe("rosa, rosae (f)");
+    expect(screen.getByText("Saved rosa, rosae (f)")).toBeDefined();
+  });
+
+  it("records a word held down in what you wrote, punctuation and all", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosam amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    // "amat." is held; the full stop is the sentence's, not the word's.
+    await holdWord("amat");
+    expect(session.vocabCard("v-amo")?.citation).toBe("amō, amāre, amāvī, amātum");
+  });
+
+  it("asks which word it was when the form is ambiguous", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.type(screen.getByLabelText("Your Latin"), "manibus");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    await holdWord("manibus");
+    expect(screen.getByRole("dialog", { name: /Which word/ })).toBeDefined();
+    await user.click(screen.getByRole("button", { name: /mānis/ }));
+    expect(session.vocabCard("v-manis")).toBeDefined();
+  });
+
+  it("does not record a word when the press was the start of a scroll", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    // A page that moves under the finger settles it: the press was a scroll,
+    // and a scroll that silently saved a card would be worse than no gesture.
+    await holdWord("rosam", () => {
+      fireEvent.scroll(document.querySelector(".study__scroll")!);
+    });
+
+    expect(Object.keys(session.progress().vocabCards)).toHaveLength(0);
+  });
+
+  it("leads from the confirmation to the card, for a press that grabbed the wrong word", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+
+    await user.click(screen.getByRole("button", { name: "Edit" }));
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+    await user.click(within(sheet).getByRole("button", { name: /Delete this word/ }));
+    await user.click(screen.getByRole("button", { name: /Delete “rosa, rosae \(f\)”/ }));
+
+    expect(session.vocabCard("v-rosa")).toBeUndefined();
+  });
+
+  it("offers no macron keys — the answer box is the whole of the writing surface", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    expect(document.querySelector(".macrons")).toBeNull();
+    expect(screen.queryByRole("button", { name: "ā" })).toBeNull();
+  });
+});
+
+describe("the vocabulary list", () => {
+  /** A word recorded, so there is something to list. */
+  async function withOneWord(user: ReturnType<typeof userEvent.setup>) {
+    const mounted = mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    return mounted;
+  }
+
+  it("edits a word's citation and meaning without disturbing its schedule", async () => {
+    const user = userEvent.setup();
+    const { session } = await withOneWord(user);
+    session.gradeVocab("v-rosa", 3);
+    const scheduled = session.vocabCard("v-rosa")!.fsrs.due;
+
+    await user.click(screen.getByRole("button", { name: "What is coming up" }));
+    await user.click(screen.getByRole("button", { name: /All 1 word/ }));
+    await user.click(screen.getByRole("button", { name: /rosa, rosae/ }));
+
+    const citation = screen.getByLabelText("Citation");
+    await user.clear(citation);
+    await user.type(citation, "rosa, rosae (f), first declension");
+    await user.clear(screen.getByLabelText("Meaning"));
+    await user.type(screen.getByLabelText("Meaning"), "a rose");
+    await user.click(screen.getByRole("button", { name: "Save" }));
+
+    const card = session.vocabCard("v-rosa")!;
+    expect(card.citation).toBe("rosa, rosae (f), first declension");
+    expect(card.gloss).toBe("a rose");
+    // The edit is not a review: the card keeps its place in the queue.
+    expect(card.fsrs.due).toBe(scheduled);
+    expect(card.fsrs.reps).toBe(1);
+    // And it is back on the list it was opened from.
+    expect(screen.getByRole("dialog", { name: "Vocabulary" })).toBeDefined();
+  });
+
+  it("reaches the list from Settings too, so a word can be fixed at any time", async () => {
+    const user = userEvent.setup();
+    await withOneWord(user);
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await user.click(screen.getByRole("button", { name: "1 word" }));
+    expect(screen.getByRole("dialog", { name: "Vocabulary" })).toBeDefined();
+    expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
+  });
+});
+
+describe("the schedule", () => {
+  it("says what is waiting and what comes back when", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Easy/ }));
+
+    await user.click(screen.getByRole("button", { name: "What is coming up" }));
+    const sheet = screen.getByRole("dialog", { name: "Coming up" });
+    // The topic just graded easy is days out, under a day of its own.
+    expect(within(sheet).getByText(/First declension/)).toBeDefined();
+    expect(within(sheet).getByText(/^in \d+d$/)).toBeDefined();
+  });
+
+  it("says so plainly when nothing is scheduled", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    await user.click(screen.getByRole("button", { name: "What is coming up" }));
+    expect(screen.getByText(/Nothing is scheduled yet/)).toBeDefined();
+  });
+});
+
+describe("a section's questions", () => {
+  it("lists every question with its answer, and one question's history", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+
+    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: /First declension/ }));
+    await user.click(screen.getByRole("button", { name: /All 2 questions/ }));
+
+    // Both of the section's questions, whether or not they have been served.
+    const list = screen.getByRole("dialog", { name: "All questions" });
+    expect(within(list).getByText("Puella rosam amat.")).toBeDefined();
+    expect(within(list).getByText("Nautae procellam timēbant.")).toBeDefined();
+    expect(within(list).getByText(/1 answer · last hard/)).toBeDefined();
+    expect(within(list).getByText("not answered yet")).toBeDefined();
+
+    await user.click(within(list).getByRole("button", { name: /The girl loves the rose/ }));
+    const one = screen.getByRole("dialog", { name: "Question" });
+    expect(within(one).getByText("Your answers")).toBeDefined();
+    expect(within(one).getByText("Puella rosa amat.")).toBeDefined();
+    expect(within(one).getByText(/hard/)).toBeDefined();
+    // The prompt is the sheet's own heading, so it is not repeated per answer.
+    expect(within(one).queryByText("The girl loves the rose.")).toBeDefined();
+    expect(session.attemptsForQuestion("decl1", "The girl loves the rose.")).toHaveLength(1);
+  });
+});
+
 // Three taps drive the whole loop, so all three land by mistake: the word
 // recorder, Submit, and a grade. None of them should be a dead end.
 describe("taking things back", () => {
@@ -349,7 +600,7 @@ describe("taking things back", () => {
     await user.type(field, "m amat.");
     await user.click(screen.getByRole("button", { name: "Submit" }));
     // Written and reference, now the same sentence.
-    expect(screen.getAllByText("Puella rosam amat.")).toHaveLength(2);
+    expect(sentences()).toEqual(["Puella rosam amat.", "Puella rosam amat."]);
     // Nothing was graded on the way, so nothing was written down.
     expect(session.progress().topicCards.decl1).toBeUndefined();
   });
@@ -373,7 +624,7 @@ describe("taking things back", () => {
     expect(screen.getByText("Translate into Latin · 1/2")).toBeDefined();
     expect(screen.getByText("The girl loves the rose.")).toBeDefined();
     expect(screen.getByText("You wrote")).toBeDefined();
-    expect(screen.getAllByText("Puella rosam amat.")).toHaveLength(2);
+    expect(sentences()).toEqual(["Puella rosam amat.", "Puella rosam amat."]);
     // …and so is the engine: no card, no mastery, no attempt.
     expect(session.progress().topicCards.decl1).toBeUndefined();
     expect(session.progress().topicMastery.decl1).toBeUndefined();

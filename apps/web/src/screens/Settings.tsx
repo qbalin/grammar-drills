@@ -33,6 +33,8 @@ export function SettingsSheet({
   dictionaryReady,
   onCacheDictionary,
   caching,
+  vocabCount,
+  onOpenVocab,
   onReset,
   onClose,
 }: {
@@ -45,6 +47,8 @@ export function SettingsSheet({
   dictionaryReady: boolean;
   onCacheDictionary: () => void;
   caching: boolean;
+  vocabCount: number;
+  onOpenVocab: () => void;
   onReset: () => void;
   onClose: () => void;
 }) {
@@ -66,6 +70,18 @@ export function SettingsSheet({
 
   return (
     <Sheet title="Settings" onClose={onClose}>
+      <div className="section-title">Vocabulary</div>
+      <p className="field__hint" style={{ marginTop: 0 }}>
+        {vocabCount === 0
+          ? "No words recorded yet. Hold a word in an answer to save it."
+          : "Every word you have recorded, with its citation and meaning both editable."}
+      </p>
+      <div className="actions">
+        <button className="btn" onClick={onOpenVocab} disabled={vocabCount === 0}>
+          {vocabCount} {vocabCount === 1 ? "word" : "words"}
+        </button>
+      </div>
+
       <div className="section-title">Your progress</div>
       <p className="field__hint" style={{ marginTop: 0 }}>
         Everything is stored on this device. Export a copy to move to another
