@@ -2,7 +2,12 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Text, useApp, useInput, useStdout } from "ink";
 import TextInput from "ink-text-input";
 import { positionLabel, previewWindow, scrolled, wrapLines } from "./pager.js";
-import { attemptLines, type HistoryLine } from "./history.js";
+import {
+  attemptLines,
+  questionBankLines,
+  scheduleLines,
+  type HistoryLine,
+} from "./history.js";
 import {
   Content,
   Session,
@@ -14,6 +19,7 @@ import {
   type StorageAdapter,
   type Test,
   type TopicProgress,
+  type VocabCardState,
 } from "@latin-tutor/core";
 
 interface Props {
@@ -22,6 +28,9 @@ interface Props {
   storage: StorageAdapter;
 }
 
+/** Where a pane was opened from, so Esc goes back where it came from. */
+type Origin = "graded" | "done";
+
 type Phase =
   | { t: "answering" }
   | { t: "graded" }
@@ -29,8 +38,12 @@ type Phase =
   | { t: "vocab-pick"; form: string; candidates: LemmaEntry[] }
   | { t: "vocab-review-front"; cardId: string }
   | { t: "vocab-review-back"; cardId: string }
-  | { t: "map"; from: "graded" | "done" }
-  | { t: "read"; from: "graded" | "done" } // a section read in full, from the map
+  | { t: "vocab-list"; from: Origin }
+  | { t: "vocab-edit"; cardId: string; from: Origin; field: "citation" | "gloss" }
+  | { t: "map"; from: Origin }
+  | { t: "read"; from: Origin } // a section read in full, from the map
+  | { t: "bank"; from: Origin } // every question of the topic under the cursor
+  | { t: "schedule"; from: Origin | "map" }
   | { t: "done" };
 
 /**
@@ -73,6 +86,9 @@ export function App({ session, content, storage }: Props) {
   const [flash, setFlash] = useState<string | null>(null);
   const [tick, setTick] = useState(0);
   const [mapIndex, setMapIndex] = useState(0);
+  const [vocabIndex, setVocabIndex] = useState(0); // cursor in the vocabulary list
+  const [draft, setDraft] = useState({ citation: "", gloss: "" }); // the card being edited
+  const [confirmDelete, setConfirmDelete] = useState(false);
   const [scroll, setScroll] = useState(0); // first visible line of the grammar pane
   const [undo, setUndo] = useState<GradeUndo | null>(null); // the last grade, takeable
   // ^Z reaches the answer box as a plain "z", and the box's own key handler
@@ -142,6 +158,21 @@ export function App({ session, content, storage }: Props) {
     () => attemptLines(attempts, paneWidth),
     [attempts, paneWidth],
   );
+
+  // The topic under the map cursor, as its whole question bank.
+  const bankLines = useMemo(() => {
+    const id = mapTopics[mapIndex]?.sectionId;
+    return id ? questionBankLines(session.questionBank(id), paneWidth) : [];
+    // `tick` is in here because an answer graded since is part of the bank.
+  }, [mapTopics, mapIndex, paneWidth, session, tick]);
+
+  const scheduleAll = useMemo(() => session.upcoming(), [session, tick]);
+  const schedLines = useMemo(
+    () => scheduleLines(scheduleAll, paneWidth),
+    [scheduleAll, paneWidth],
+  );
+
+  const vocab = useMemo(() => session.vocabList(), [session, tick]);
 
   // Whatever the pane is showing, show it from the top.
   useEffect(
@@ -237,13 +268,19 @@ export function App({ session, content, storage }: Props) {
   useEffect(() => {
     if (started.current) return;
     started.current = true;
+    // The whole dictionary is in memory here, so this is the cheapest place to
+    // bring cards saved against older citations up to the shipped ones.
+    if (session.refreshCitations() > 0) save();
     if (session.needsPlacement()) {
-      const list = session.placementTopics();
-      if (list.length > 0) {
+      // A run already under way is resumed where it stopped; only a fresh deck
+      // starts one. Without this, a placement interrupted by closing the
+      // terminal is simply lost — and study restarts at chapter one.
+      const run = session.placementState() ?? session.beginPlacement();
+      if (run.topics.length > 0) {
         setInPlacement(true);
-        setPlacementList(list);
-        setPlacementIndex(0);
-        loadPlacement(0, list);
+        setPlacementList(run.topics);
+        setPlacementIndex(run.index);
+        loadPlacement(run.index, run.topics);
         return;
       }
       session.endPlacement();
@@ -265,6 +302,8 @@ export function App({ session, content, storage }: Props) {
       const ni = placementIndex + 1;
       if (ni < placementList.length) {
         setPlacementIndex(ni);
+        session.advancePlacement(ni);
+        save();
         loadPlacement(ni, placementList);
         return;
       }
@@ -371,6 +410,9 @@ export function App({ session, content, storage }: Props) {
     if (candidates.length === 1) {
       session.recordVocab(candidates[0]!);
       save();
+      // The word count in the status bar, and the vocabulary list itself, are
+      // derived from the engine on every tick — so a new card has to bump it.
+      setTick((n) => n + 1);
       setFlash(`Saved: ${candidates[0]!.citation}`);
       setPhase({ t: "graded" });
       return;
@@ -385,6 +427,32 @@ export function App({ session, content, storage }: Props) {
     setMapIndex(i < 0 ? 0 : i);
     setFlash(null);
     setPhase({ t: "map", from });
+  };
+
+  /** Open the schedule of what is coming back. */
+  const openSchedule = (from: Origin | "map") => {
+    setFlash(null);
+    setPhase({ t: "schedule", from });
+  };
+
+  /** Open the vocabulary list, parked on its first card. */
+  const openVocabList = (from: Origin) => {
+    setFlash(null);
+    setConfirmDelete(false);
+    setVocabIndex(0);
+    setPhase({ t: "vocab-list", from });
+  };
+
+  /**
+   * Save the card being edited. Both fields are kept whichever one was being
+   * typed when Enter landed: the two are one edit, not two.
+   */
+  const saveVocabEdit = (cardId: string, from: Origin) => {
+    session.updateVocab(cardId, draft);
+    save();
+    setTick((n) => n + 1);
+    setFlash(`Saved ${draft.citation.trim()}.`);
+    setPhase({ t: "vocab-list", from });
   };
 
   /**
@@ -456,6 +524,18 @@ export function App({ session, content, storage }: Props) {
       if (key.escape) setPhase({ t: "graded" });
       return;
     }
+    // Editing a card is two text boxes; every letter belongs to them. This must
+    // return before `q` below, or typing a citation would quit the app.
+    if (phase.t === "vocab-edit") {
+      if (key.escape) setPhase({ t: "vocab-list", from: phase.from });
+      else if (key.tab) {
+        setPhase({
+          ...phase,
+          field: phase.field === "citation" ? "gloss" : "citation",
+        });
+      }
+      return;
+    }
 
     if (ch === "q") {
       save();
@@ -477,6 +557,8 @@ export function App({ session, content, storage }: Props) {
           setShowGrammar(false);
           setShowHistory((s) => !s);
         } else if (ch === "m" && !inPlacement) openMap("graded");
+        else if (ch === "s") openSchedule("graded");
+        else if (ch === "V") openVocabList("graded");
         else if (ch === "u") undoSubmit(); // Enter came too early
         else if (ch === "v") {
           setInput("");
@@ -492,6 +574,8 @@ export function App({ session, content, storage }: Props) {
         else if (key.downArrow) jumpFamily(1);
         else if (key.return) quizSelected();
         else if (ch === "g") setPhase({ t: "read", from: phase.from });
+        else if (ch === "a") setPhase({ t: "bank", from: phase.from });
+        else if (ch === "s") openSchedule("map");
         else if (key.escape || ch === "m") setPhase({ t: phase.from });
         break;
       }
@@ -500,12 +584,65 @@ export function App({ session, content, storage }: Props) {
         if (key.escape || ch === "g" || ch === "m") setPhase({ t: "map", from: phase.from });
         break;
       }
+      case "bank": {
+        if (handleScrollKey(key, bankLines.length, readerHeight)) break;
+        if (key.escape || ch === "a" || ch === "m") {
+          setPhase({ t: "map", from: phase.from });
+        }
+        break;
+      }
+      case "schedule": {
+        if (handleScrollKey(key, schedLines.length, readerHeight)) break;
+        if (key.escape || ch === "s") {
+          setPhase(phase.from === "map" ? { t: "map", from: "graded" } : { t: phase.from });
+        }
+        break;
+      }
+      case "vocab-list": {
+        if (vocab.length === 0) {
+          if (key.escape || ch === "V") setPhase({ t: phase.from });
+          break;
+        }
+        if (key.upArrow) setVocabIndex((i) => Math.max(0, i - 1));
+        else if (key.downArrow)
+          setVocabIndex((i) => Math.min(vocab.length - 1, i + 1));
+        else if (key.return || ch === "e") {
+          const card = vocab[vocabIndex];
+          if (card) {
+            setDraft({ citation: card.citation, gloss: card.gloss });
+            setConfirmDelete(false);
+            setPhase({ t: "vocab-edit", cardId: card.id, from: phase.from, field: "citation" });
+          }
+        } else if (ch === "x") {
+          const card = vocab[vocabIndex];
+          if (!card) break;
+          // Two presses, because one press of the wrong key would otherwise
+          // throw away a word and everything the schedule knows about it.
+          if (confirmDelete) {
+            session.deleteVocab(card.id);
+            save();
+            setConfirmDelete(false);
+            setVocabIndex((i) => Math.max(0, Math.min(i, vocab.length - 2)));
+            setFlash(`Deleted ${card.citation}.`);
+            setTick((n) => n + 1);
+          } else {
+            setConfirmDelete(true);
+            setFlash(`Press x again to delete ${card.citation}.`);
+          }
+        } else if (key.escape || ch === "V") {
+          setConfirmDelete(false);
+          setFlash(null);
+          setPhase({ t: phase.from });
+        }
+        break;
+      }
       case "vocab-pick": {
         if (ch >= "1" && ch <= String(Math.min(9, phase.candidates.length))) {
           const chosen = phase.candidates[Number(ch) - 1];
           if (chosen) {
             session.recordVocab(chosen);
             save();
+            setTick((n) => n + 1);
             setFlash(`Saved: ${chosen.citation}`);
           }
           setPhase({ t: "graded" });
@@ -534,6 +671,8 @@ export function App({ session, content, storage }: Props) {
       }
       case "done": {
         if (ch === "m") openMap("done");
+        else if (ch === "s") openSchedule("done");
+        else if (ch === "V") openVocabList("done");
         else if (ch === "u") undoGrade();
         else if (key.return || ch === " ") {
           save();
@@ -587,6 +726,70 @@ export function App({ session, content, storage }: Props) {
         />
       )}
 
+      {phase.t === "bank" && mapSection && (
+        <HistoryPane
+          lines={bankLines}
+          scroll={scroll}
+          height={readerHeight}
+          heading={`All questions on ${mapSection.title} — ${
+            content.questionsFor(mapSection.id).length
+          }, with your answers`}
+        />
+      )}
+
+      {phase.t === "schedule" && (
+        <HistoryPane
+          lines={schedLines}
+          scroll={scroll}
+          height={readerHeight}
+          heading={`Coming up — ${scheduleAll.length} scheduled, ${
+            scheduleAll.filter((e) => e.overdue).length
+          } waiting`}
+        />
+      )}
+
+      {phase.t === "vocab-list" && (
+        <VocabList cards={vocab} cursor={vocabIndex} height={readerHeight} />
+      )}
+
+      {phase.t === "vocab-edit" && (
+        <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+          <Text color="gray">Edit word — Tab switches field, Enter saves</Text>
+          <Box marginTop={1}>
+            <Text color={phase.field === "citation" ? "cyan" : undefined}>
+              {phase.field === "citation" ? "▸ " : "  "}citation
+            </Text>
+            <Text> </Text>
+            {phase.field === "citation" ? (
+              <TextInput
+                value={draft.citation}
+                onChange={(citation) => setDraft((d) => ({ ...d, citation }))}
+                onSubmit={() => saveVocabEdit(phase.cardId, phase.from)}
+              />
+            ) : (
+              <Text>{draft.citation}</Text>
+            )}
+          </Box>
+          <Box>
+            <Text color={phase.field === "gloss" ? "cyan" : undefined}>
+              {phase.field === "gloss" ? "▸ " : "  "}meaning {"  "}
+            </Text>
+            {phase.field === "gloss" ? (
+              <TextInput
+                value={draft.gloss}
+                onChange={(gloss) => setDraft((d) => ({ ...d, gloss }))}
+                onSubmit={() => saveVocabEdit(phase.cardId, phase.from)}
+              />
+            ) : (
+              <Text>{draft.gloss}</Text>
+            )}
+          </Box>
+          <Text dimColor>
+            The citation is what you are asked to produce; the meaning is the prompt.
+          </Text>
+        </Box>
+      )}
+
       {showGrammar && section && phase.t !== "map" && phase.t !== "read" && (
         <GrammarPane
           lines={drawerLines}
@@ -602,8 +805,9 @@ export function App({ session, content, storage }: Props) {
           lines={historyLines}
           scroll={scroll}
           height={drawerHeight}
-          count={attempts.length}
-          title={section?.title ?? "this topic"}
+          heading={`Earlier on ${section?.title ?? "this topic"} — ${attempts.length} ${
+            attempts.length === 1 ? "answer" : "answers"
+          }, newest first`}
         />
       )}
 
@@ -949,31 +1153,28 @@ function GrammarPane({
 }
 
 /**
- * Earlier answers on the topic now being drilled, newest first — the same
- * window-and-scroll treatment the grammar pane gets, since a topic keeps ten
- * attempts and each runs to three or four lines.
+ * Pre-toned lines in a scrolling window: the topic's earlier answers, a
+ * section's whole question bank, or the schedule. All three are documents rather
+ * than lists — read top to bottom, longer than the screen — so all three get the
+ * grammar pane's treatment, and the caller supplies the heading.
  */
 function HistoryPane({
   lines,
   scroll,
   height,
-  count,
-  title,
+  heading,
 }: {
   lines: HistoryLine[];
   scroll: number;
   height: number;
-  count: number;
-  title: string;
+  heading: string;
 }) {
   const visible = lines.slice(scroll, scroll + height);
   const more = lines.length > height;
   const atEnd = scroll + height >= lines.length;
   return (
     <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
-      <Text color="gray">
-        Earlier on {title} — {count} {count === 1 ? "answer" : "answers"}, newest first
-      </Text>
+      <Text color="gray">{heading}</Text>
       {visible.map((line, i) => (
         <Text
           key={scroll + i}
@@ -990,6 +1191,65 @@ function HistoryPane({
           {positionLabel(scroll, height, lines.length)}
           {atEnd ? " · end" : " · ↑↓ scroll, PgUp/PgDn page"}
         </Text>
+      )}
+    </Box>
+  );
+}
+
+/**
+ * Every word recorded, one per line, with a cursor.
+ *
+ * A list rather than a pager because the point is to *pick* one: until this
+ * existed a card could only be created and reviewed, so a word saved against the
+ * wrong candidate stayed wrong forever. The window follows the cursor, since a
+ * vocabulary outgrows a terminal early.
+ */
+function VocabList({
+  cards,
+  cursor,
+  height,
+}: {
+  cards: VocabCardState[];
+  cursor: number;
+  height: number;
+}) {
+  if (cards.length === 0) {
+    return (
+      <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+        <Text color="gray">Vocabulary — nothing recorded yet</Text>
+        <Text dimColor>Press v while an answer is on screen to record a word.</Text>
+      </Box>
+    );
+  }
+  // Keep the cursor in view without letting the window run off either end.
+  const rows = Math.max(1, height - 2);
+  const start = Math.max(0, Math.min(cursor - Math.floor(rows / 2), cards.length - rows));
+  const visible = cards.slice(Math.max(0, start), Math.max(0, start) + rows);
+  const now = Date.now();
+
+  return (
+    <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+      <Text color="gray">
+        Vocabulary — {cards.length} {cards.length === 1 ? "word" : "words"}, word{" "}
+        {cursor + 1} of {cards.length}
+      </Text>
+      {visible.map((card) => {
+        const on = cards[cursor]?.id === card.id;
+        const due = new Date(card.fsrs.due).getTime();
+        return (
+          <Box key={card.id}>
+            <Text color={on ? "cyan" : undefined} bold={on}>
+              {`${on ? "▸ " : "  "}${card.citation}`}
+            </Text>
+            <Text dimColor>{`  ${card.gloss}`}</Text>
+            <Text color={due <= now ? "yellow" : undefined} dimColor={due > now}>
+              {due <= now ? "  · due" : ""}
+            </Text>
+          </Box>
+        );
+      })}
+      {cards.length > rows && (
+        <Text dimColor>{positionLabel(Math.max(0, start), rows, cards.length)}</Text>
       )}
     </Box>
   );
@@ -1102,13 +1362,21 @@ function HintBar({
     phase === "answering"
       ? `type your Latin · Enter submit · Esc grammar${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
-        ? "← → topic · ↑ ↓ family · g read section · Enter quiz me on this · Esc close"
+        ? "← → topic · ↑ ↓ family · g read section · a all questions · s schedule · Enter quiz me · Esc close"
         : phase === "read"
           ? "↑ ↓ scroll · PgUp/PgDn page · Esc back to map · q quit"
+        : phase === "bank"
+          ? "↑ ↓ scroll · PgUp/PgDn page · Esc back to map · q quit"
+        : phase === "schedule"
+          ? "↑ ↓ scroll · PgUp/PgDn page · Esc close · q quit"
+        : phase === "vocab-list"
+          ? "↑ ↓ word · Enter edit · x delete · Esc close · q quit"
+        : phase === "vocab-edit"
+          ? "type · Tab switch field · Enter save · Esc cancel"
         : phase === "graded"
         ? placement
-          ? "3–4 you knew it (continue) · 1–2 start here · u keep typing"
-          : `1–4 self-grade (1 again · 4 easy) · u keep typing · v vocab · g grammar${historyHint}${scrollHint} · m map · q quit`
+          ? "3–4 you knew it (continue) · 1–2 start here · u keep typing · v vocab"
+          : `1–4 self-grade (1 again · 4 easy) · u keep typing · v vocab · V words · g grammar${historyHint}${scrollHint} · m map · s schedule · q quit`
         : phase === "vocab-review-front"
           ? `Space/Enter reveal${undoHint} · q quit`
           : phase === "vocab-review-back"
@@ -1117,7 +1385,7 @@ function HintBar({
               ? "Enter to look up the word · Esc cancel"
               : phase === "vocab-pick"
                 ? "1–9 choose · Esc cancel"
-                : `m grammar map${undoHint} · Enter exit`;
+                : `m grammar map · s schedule · V words${undoHint} · Enter exit`;
   return (
     <Box marginTop={1}>
       <Text dimColor>{hint}</Text>

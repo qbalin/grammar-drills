@@ -65,6 +65,9 @@ class MemoryStorage implements StorageAdapter {
 
 const tick = () => new Promise((r) => setTimeout(r, 30));
 
+/** What the terminal sends for Esc. */
+const ESC = "";
+
 describe("CLI App (write → compare → self-grade)", () => {
   it("runs placement, then teaches, takes a written answer, records vocab, grades", async () => {
     const content = new Content(fixture);
@@ -627,5 +630,187 @@ describe("CLI App (write → compare → self-grade)", () => {
     expect(lastFrame()).toContain("Grammar map");
 
     unmount();
+  });
+});
+
+describe("the schedule, the question bank and the vocabulary list", () => {
+  /** Study up to the compare screen, which is where every extra key lives. */
+  async function answered(session: Session, content: Content) {
+    const storage = new MemoryStorage();
+    const rendered = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+    await tick();
+    rendered.stdin.write("puella rosam amat");
+    await tick();
+    rendered.stdin.write("\r");
+    await tick();
+    return { ...rendered, storage };
+  }
+
+  it("shows what is coming back, and closes again", async () => {
+    const content = new Content(fixture);
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    // A topic already graded easy, so there is something scheduled to look at.
+    session.gradeTopic("ag-decl1", 4);
+    const { lastFrame, stdin, unmount } = await answered(session, content);
+
+    stdin.write("s");
+    await tick();
+
+    const frame = lastFrame()!;
+    expect(frame).toContain("Coming up");
+    expect(frame).toContain("First declension nouns");
+    expect(frame).toMatch(/in \d+ days|tomorrow/);
+
+    stdin.write(ESC);
+    await tick();
+    expect(lastFrame()).not.toContain("Coming up");
+
+    unmount();
+  });
+
+  it("lists every question of a topic with its answer and what was written", async () => {
+    const content = new Content(fixture);
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = await answered(session, content);
+    // Graded hard, so the answer is on the record; the loop then moves to the
+    // next topic, and answering it brings the map key back within reach.
+    stdin.write("2");
+    await tick();
+    stdin.write("dominus servum līberat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+
+    // The bank is reached from the map: left one topic, back to the first.
+    stdin.write("m");
+    await tick();
+    stdin.write("[D");
+    await tick();
+    stdin.write("a");
+    await tick();
+
+    const frame = lastFrame()!;
+    expect(frame).toContain("All questions on First declension nouns");
+    expect(frame).toContain("1. The girl loves the rose.");
+    expect(frame).toContain("puella rosam amat"); // the reference
+    expect(frame).toContain("graded hard"); // and the attempt under it
+
+    // Esc returns to the map rather than out of everything.
+    stdin.write(ESC);
+    await tick();
+    expect(lastFrame()).toContain("Grammar map");
+
+    unmount();
+  });
+
+  it("edits a recorded word without disturbing its schedule", async () => {
+    const content = new Content(fixture);
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = await answered(session, content);
+
+    // Record a word, then open the list of them.
+    stdin.write("v");
+    await tick();
+    stdin.write("manibus");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    session.gradeVocab("v-manus", 3);
+    const scheduled = session.vocabCard("v-manus")!.fsrs.due;
+
+    stdin.write("V");
+    await tick();
+    expect(lastFrame()).toContain("Vocabulary — 1 word");
+    expect(lastFrame()).toContain("manus, manūs (f)");
+
+    stdin.write("\r"); // edit the word under the cursor
+    await tick();
+    expect(lastFrame()).toContain("Edit word");
+    // The citation field opens holding what is there; append to it.
+    stdin.write(", 4th declension");
+    await tick();
+    stdin.write("\r");
+    await tick();
+
+    const card = session.vocabCard("v-manus")!;
+    expect(card.citation).toBe("manus, manūs (f), 4th declension");
+    expect(card.gloss).toBe("hand");
+    // An edit is not a review: the card keeps its place in the queue.
+    expect(card.fsrs.due).toBe(scheduled);
+    expect(card.fsrs.reps).toBe(1);
+    expect(lastFrame()).toContain("Saved manus, manūs (f), 4th declension.");
+
+    unmount();
+  });
+
+  it("takes two presses to delete a word", async () => {
+    const content = new Content(fixture);
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    const { lastFrame, stdin, unmount } = await answered(session, content);
+    stdin.write("v");
+    await tick();
+    stdin.write("manibus");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("V");
+    await tick();
+
+    stdin.write("x");
+    await tick();
+    // One press asks; the word is still there.
+    expect(lastFrame()).toContain("Press x again to delete manus, manūs (f).");
+    expect(session.vocabCard("v-manus")).toBeDefined();
+
+    stdin.write("x");
+    await tick();
+    expect(session.vocabCard("v-manus")).toBeUndefined();
+    expect(lastFrame()).toContain("Deleted manus, manūs (f).");
+
+    unmount();
+  });
+
+  it("keeps placement when a word is recorded, and resumes it after a restart", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, undefined);
+    const first = render(<App session={session} content={content} storage={storage} />);
+
+    await tick();
+    expect(first.lastFrame()).toContain("Placement 1/");
+    // Pass the first probe, so the run is genuinely under way.
+    first.stdin.write("\r");
+    await tick();
+    first.stdin.write("3");
+    await tick();
+    expect(first.lastFrame()).toContain("Placement 2/");
+
+    // Recording a word is an aside, not an exit.
+    first.stdin.write("\r");
+    await tick();
+    first.stdin.write("v");
+    await tick();
+    first.stdin.write("manibus");
+    await tick();
+    first.stdin.write("\r");
+    await tick();
+    expect(session.vocabCard("v-manus")).toBeDefined();
+    expect(first.lastFrame()).toContain("Placement 2/");
+    first.unmount();
+
+    // And the run outlives the process: passing a probe fills knownSections,
+    // which used to make a restart look like a finished placement.
+    const reopened = new Session(
+      content,
+      JSON.parse(JSON.stringify(session.progress())),
+    );
+    const second = render(
+      <App session={reopened} content={content} storage={storage} />,
+    );
+    await tick();
+    expect(second.lastFrame()).toContain("Placement 2/");
+    second.unmount();
   });
 });
