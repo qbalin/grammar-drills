@@ -33,12 +33,24 @@ canonical dictionary headword is built for you from a bundled form→citation ma
 ```
 manibus  →  manus, manūs (f): hand
 regem    →  rex, rēgis
-amāvērunt→  amō, amāre
+amāvērunt→  amō, amāre, amāvī, amātum
+ūsī      →  ūtor, ūtī, ūsus sum
 bonīs    →  bonus, bona, bonum
+fortibus →  fortis, forte
 ```
 
+Every part of speech is cited the way a dictionary cites it: verbs by their
+**principal parts**, adjectives by their **terminations** — three where they
+differ (`bonus, bona, bonum`), two where the masculine and feminine coincide
+(`fortis, forte`), and nominative-plus-genitive for the one-termination third
+declension (`fēlīx, fēlīcis`), which is the only shape that shows how to decline
+it. Deponents stop at the periphrastic perfect (`ūtor, ūtī, ūsus sum`), and a
+verb with no supine simply stops (`sum, esse, fuī`).
+
 Ambiguous forms (e.g. `manibus` also matches the adjective `mānis`) are offered
-most-frequent-first for you to disambiguate.
+most-frequent-first for you to disambiguate. Any card can be edited later —
+citation and gloss both — from the vocabulary list, and deleted if a stray press
+recorded the wrong word.
 
 ## Layout
 
@@ -55,6 +67,7 @@ content/         Frozen, shipped content:
 scripts/         Offline content tooling (not used at runtime):
                    parse-grammar.py  — rebuilds grammar.json from Gutenberg #15665.
                    gen-tests.mjs     — writes tests/<id>.json (see "Generation").
+                   canonical-forms.mjs — principal parts / adjective terminations.
                    build-web-content.mjs — repacks content/ for the web app.
 ```
 
@@ -278,6 +291,24 @@ Topics that already have a file are skipped, so a run interrupted by a usage
 limit resumes where it stopped. On a sustained limit it retries with a growing
 backoff and then stops, rather than marching through the remaining topics
 producing nothing.
+
+`scripts/canonical-forms.mjs` rewrites the citations in `lemmas.json.gz` so
+verbs carry their principal parts and adjectives their terminations. The parts
+cannot be recovered from what is shipped — the form keys are folded, so the
+perfect of *amō* is stored as `amaui` — and they come from the same
+`dictionary.db`, whose `forms` table is tagged and fully macronized:
+
+```bash
+node scripts/canonical-forms.mjs --dry     # report what would change
+node scripts/canonical-forms.mjs           # rewrite content/lemmas.json.gz
+node scripts/build-web-content.mjs         # repack the web app's copy
+```
+
+It rewrote 1,897 verbs (1,579 with all four parts) and 445 adjectives; the
+remainder are entries the dictionary cannot improve, which keep the citation
+they have. Vocabulary cards already saved carry their own copy of the citation,
+so `CITATIONS_VERSION` in `packages/core/src/types.ts` is bumped alongside and
+`Session.refreshCitations` catches them up on the next launch.
 
 Validation note: a word is checked case-folded, and an unknown word is allowed
 only when it is capitalised *mid-sentence* — i.e. a genuine proper noun. An

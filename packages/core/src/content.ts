@@ -3,6 +3,7 @@ import type {
   ContentData,
   GrammarSection,
   LemmaEntry,
+  Question,
   Test,
 } from "./types.js";
 
@@ -28,6 +29,17 @@ export class Content {
 
   testsFor(sectionId: string): Test[] {
     return this.data.tests[sectionId] ?? [];
+  }
+
+  /**
+   * Every question written for a section, across all its tests, in test order.
+   * A section carries 6–25 tests of four, so this is the bank the scheduler
+   * draws from — up to about a hundred questions.
+   */
+  questionsFor(sectionId: string): { testId: string; question: Question }[] {
+    return this.testsFor(sectionId).flatMap((test) =>
+      test.questions.map((question) => ({ testId: test.id, question })),
+    );
   }
 
   /** Section ids that actually have tests, in book order — the teachable topics. */

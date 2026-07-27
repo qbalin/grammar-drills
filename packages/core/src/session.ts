@@ -11,9 +11,11 @@ import {
   type Rating,
 } from "./scheduler.js";
 import {
+  CITATIONS_VERSION,
   emptyProgress,
   type Attempt,
   type LemmaEntry,
+  type PlacementRun,
   type Progress,
   type SerializedCard,
   type Test,
@@ -21,12 +23,6 @@ import {
 } from "./types.js";
 
 const SEEN_HISTORY = 10; // remember this many recently-served tests per section
-
-/**
- * Answered questions kept per topic. Capped, not unbounded: the whole progress
- * file is rewritten (and, on GitHub storage, committed) on every save.
- */
-const ATTEMPT_HISTORY = 10;
 
 /** Mastery runs 1 (not mastered) to 4 (mastered); the bars show the span between. */
 const MASTERY_MIN = 1;
@@ -61,6 +57,30 @@ export interface FamilyProgress {
   percent: number;
 }
 
+/** One thing the scheduler will ask for, and when. */
+export interface ScheduleEntry {
+  kind: "topic" | "vocab";
+  /** Section id, or vocabulary card id. */
+  id: string;
+  /** The section's title, or the word's citation. */
+  title: string;
+  /** The section's `ref`, or the word's gloss. */
+  sub?: string;
+  due: Date;
+  /** Already waiting rather than still to come. */
+  overdue: boolean;
+}
+
+/** One question of a section's bank, with what has been written on it. */
+export interface BankedQuestion {
+  testId: string;
+  prompt: string;
+  answer: string;
+  note?: string;
+  /** Earlier answers to this very question, newest first. */
+  attempts: Attempt[];
+}
+
 /** Mastery as a 0–1 fraction; an ungraded topic is 0. */
 function fraction(mastery: number | undefined): number {
   return ((mastery ?? MASTERY_MIN) - MASTERY_MIN) / (MASTERY_MAX - MASTERY_MIN);
@@ -81,20 +101,55 @@ export class Session {
   ) {
     this.p = progress ?? emptyProgress();
     // Progress files written before mastery tracking have no map; there is no
-    // migration layer, so default it here. Same for the answer trail.
+    // migration layer, so default it here. Same for the answer trail, the
+    // stored placement run, and the citation generation — a file written before
+    // any of them simply has none.
     this.p.topicMastery ??= {};
     this.p.attempts ??= {};
+    this.p.placement ??= null;
+    this.p.citationsVersion ??= 1;
   }
 
   // --- placement -----------------------------------------------------------
 
-  /** True on a fresh deck: run the placement test before normal study. */
+  /**
+   * True on a fresh deck, and true again for a placement left half-finished.
+   *
+   * The second clause is what makes the test survive a restart: passing a probe
+   * fills `knownSections`, so the fresh-deck test alone would report "no
+   * placement needed" the moment one was passed, and everything after it would
+   * be skipped. The stored run outranks that.
+   */
   needsPlacement(): boolean {
+    if (this.p.placementDone) return false;
+    if (this.p.placement) return true;
     return (
-      !this.p.placementDone &&
       Object.keys(this.p.topicCards).length === 0 &&
       this.p.knownSections.length === 0
     );
+  }
+
+  /** The placement run under way, or undefined if none was started. */
+  placementState(): PlacementRun | undefined {
+    return this.p.placement ?? undefined;
+  }
+
+  /**
+   * Start (or restart) a placement run and write it down. Returns the run, so
+   * a caller can begin without reading it back.
+   */
+  beginPlacement(count = 7): PlacementRun {
+    const run = { topics: this.placementTopics(count), index: 0 };
+    this.p.placement = run;
+    this.touch();
+    return run;
+  }
+
+  /** Remember which probe the student is on, so a restart resumes there. */
+  advancePlacement(index: number): void {
+    if (!this.p.placement) return;
+    this.p.placement = { ...this.p.placement, index };
+    this.touch();
   }
 
   /** Evenly-spaced teachable topics for the placement quiz, easiest first. */
@@ -128,6 +183,7 @@ export class Session {
   /** Finish placement; normal study then begins just past the frontier. */
   endPlacement(): void {
     this.p.placementDone = true;
+    this.p.placement = null;
     this.touch();
   }
 
@@ -193,8 +249,9 @@ export class Session {
   }
 
   /**
-   * Keep an answered question on its topic. Only the last `ATTEMPT_HISTORY` per
-   * topic survive, oldest dropped first.
+   * Keep an answered question on its topic. Nothing is dropped: a question can
+   * be away for a year, and the whole point of the trail is to still be there
+   * when it comes back.
    */
   recordAttempt(
     sectionId: string,
@@ -202,16 +259,42 @@ export class Session {
     now: Date = new Date(),
   ): void {
     const kept = this.p.attempts[sectionId] ?? [];
-    this.p.attempts[sectionId] = [
-      ...kept,
-      { ...attempt, at: now.toISOString() },
-    ].slice(-ATTEMPT_HISTORY);
+    this.p.attempts[sectionId] = [...kept, { ...attempt, at: now.toISOString() }];
     this.touch();
   }
 
   /** What was written on a topic before now, most recent first. */
   attemptsFor(sectionId: string): Attempt[] {
     return [...(this.p.attempts[sectionId] ?? [])].reverse();
+  }
+
+  /**
+   * The same, narrowed to one question. The prompt is a question's identity —
+   * it is what the student saw, and it is what the attempt recorded.
+   */
+  attemptsForQuestion(sectionId: string, prompt: string): Attempt[] {
+    return this.attemptsFor(sectionId).filter((a) => a.prompt === prompt);
+  }
+
+  /**
+   * Every question written for a section, with its reference answer and its own
+   * answer trail — the section's whole bank, not just what the scheduler has
+   * happened to serve.
+   */
+  questionBank(sectionId: string): BankedQuestion[] {
+    const byPrompt = new Map<string, Attempt[]>();
+    for (const a of this.attemptsFor(sectionId)) {
+      const kept = byPrompt.get(a.prompt);
+      if (kept) kept.push(a);
+      else byPrompt.set(a.prompt, [a]);
+    }
+    return this.content.questionsFor(sectionId).map(({ testId, question }) => ({
+      testId,
+      prompt: question.prompt,
+      answer: question.answer,
+      note: question.note,
+      attempts: byPrompt.get(question.prompt) ?? [],
+    }));
   }
 
   /**
@@ -264,6 +347,72 @@ export class Session {
     return this.p.vocabCards[cardId];
   }
 
+  /** Every word recorded, in dictionary order. */
+  vocabList(): VocabCardState[] {
+    return Object.values(this.p.vocabCards).sort((a, b) =>
+      normalize(a.citation).localeCompare(normalize(b.citation)),
+    );
+  }
+
+  /**
+   * Correct a card's two sides. The id and the scheduling are left alone, so
+   * fixing a citation months in never costs the card its history — which is the
+   * only reason editing is safe to offer at any time.
+   */
+  updateVocab(
+    cardId: string,
+    patch: Partial<Pick<VocabCardState, "citation" | "gloss">>,
+  ): void {
+    const card = this.p.vocabCards[cardId];
+    if (!card) return;
+    if (patch.citation !== undefined) card.citation = patch.citation.trim();
+    if (patch.gloss !== undefined) card.gloss = patch.gloss.trim();
+    this.touch();
+  }
+
+  /** Forget a word — the way back from a card saved by a stray press. */
+  deleteVocab(cardId: string): void {
+    if (!this.p.vocabCards[cardId]) return;
+    delete this.p.vocabCards[cardId];
+    this.touch();
+  }
+
+  /**
+   * Bring saved cards up to the shipped dictionary's current citations.
+   *
+   * A card keeps its own copy of the citation, so rebuilding the dictionary —
+   * giving verbs their four principal parts, say — would otherwise reach only
+   * words recorded afterwards. Runs once per generation, and never touches a
+   * citation the student has edited into something the dictionary does not say
+   * beyond replacing it with the dictionary's own newer form.
+   *
+   * Returns how many cards changed. A no-op when the dictionary is not loaded:
+   * every lookup misses, so nothing is overwritten with nothing.
+   */
+  refreshCitations(): number {
+    if ((this.p.citationsVersion ?? 1) >= CITATIONS_VERSION) return 0;
+    let changed = 0;
+    let looked = false;
+    for (const card of Object.values(this.p.vocabCards)) {
+      const candidates = this.content.lookup(card.lemma);
+      if (candidates.length > 0) looked = true;
+      const match = candidates.find(
+        (c) => c.lemma === card.lemma && c.pos === card.pos,
+      );
+      if (match && match.citation !== card.citation) {
+        card.citation = match.citation;
+        changed += 1;
+      }
+    }
+    // Only claim the generation once a dictionary was actually consulted;
+    // otherwise an offline launch would mark the cards done without reading one.
+    if (looked || Object.keys(this.p.vocabCards).length === 0) {
+      this.p.citationsVersion = CITATIONS_VERSION;
+    }
+    if (changed > 0 || looked) this.touch();
+    return changed;
+  }
+
   /**
    * The earliest moment anything comes back, or undefined if nothing is
    * scheduled. A rest screen that says when to return is a better ending than
@@ -282,6 +431,43 @@ export class Session {
     }
     for (const state of Object.values(this.p.vocabCards)) consider(state.fsrs);
     return soonest === undefined ? undefined : new Date(soonest);
+  }
+
+  /**
+   * Everything scheduled, soonest first — what is waiting now and what comes
+   * back when. `nextDue` answers the same question with one date; this is the
+   * whole list, for a screen that shows the week rather than the next minute.
+   */
+  upcoming(now: Date = new Date(), limit?: number): ScheduleEntry[] {
+    const out: ScheduleEntry[] = [];
+    for (const [id, card] of Object.entries(this.p.topicCards)) {
+      const section = this.content.getSection(id);
+      // A card for a section this bundle no longer carries is unshowable, and
+      // the rest of the engine already skips those.
+      if (!section) continue;
+      const due = new Date(card.due);
+      out.push({
+        kind: "topic",
+        id,
+        title: section.title,
+        sub: `§ ${section.ref}`,
+        due,
+        overdue: due.getTime() <= now.getTime(),
+      });
+    }
+    for (const card of Object.values(this.p.vocabCards)) {
+      const due = new Date(card.fsrs.due);
+      out.push({
+        kind: "vocab",
+        id: card.id,
+        title: card.citation,
+        sub: card.gloss,
+        due,
+        overdue: due.getTime() <= now.getTime(),
+      });
+    }
+    out.sort((a, b) => a.due.getTime() - b.due.getTime());
+    return limit === undefined ? out : out.slice(0, limit);
   }
 
   /** Counts for a status line. */

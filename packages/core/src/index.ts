@@ -20,6 +20,8 @@ export {
 export {
   Session,
   type Action,
+  type BankedQuestion,
+  type ScheduleEntry,
   type TopicProgress,
   type FamilyProgress,
 } from "./session.js";

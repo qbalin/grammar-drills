@@ -1,6 +1,5 @@
-import { useRef } from "react";
 import type { Question, Rating, VocabCardState } from "@latin-tutor/core";
-import { GradeBar, MacronKeys, Ring } from "../ui.js";
+import { GradeBar, HoldableLatin, Ring } from "../ui.js";
 
 /**
  * The question, being answered.
@@ -31,21 +30,6 @@ export function Answering({
   onSubmit: () => void;
   onReveal: () => void;
 }) {
-  const field = useRef<HTMLTextAreaElement>(null);
-
-  /** Put a macron vowel where the caret is, not at the end. */
-  const insert = (ch: string) => {
-    const el = field.current;
-    if (!el) return onChange(value + ch);
-    const start = el.selectionStart ?? value.length;
-    const end = el.selectionEnd ?? start;
-    onChange(value.slice(0, start) + ch + value.slice(end));
-    requestAnimationFrame(() => {
-      el.focus();
-      el.setSelectionRange(start + ch.length, start + ch.length);
-    });
-  };
-
   return (
     <>
       <div className="study__scroll">
@@ -54,7 +38,6 @@ export function Answering({
         </p>
         <p className="prompt">{question.prompt}</p>
         <textarea
-          ref={field}
           className="answer-field"
           value={value}
           onChange={(e) => onChange(e.target.value)}
@@ -72,7 +55,6 @@ export function Answering({
           spellCheck={false}
           aria-label="Your Latin"
         />
-        <MacronKeys onInsert={insert} />
       </div>
       <div className="actions">
         <button className="btn" onClick={onReveal}>
@@ -92,6 +74,10 @@ export function Answering({
  * The two are stacked rather than diffed: a Latin sentence has several right
  * word orders, and highlighting the differences would assert a precision the
  * app does not have and the language does not want.
+ *
+ * Every word in both is holdable: this is the screen where you meet a word you
+ * did not know, and the word is already here — asking for it to be retyped into
+ * a sheet is how a vocabulary list stays empty.
  */
 export function Graded({
   question,
@@ -104,6 +90,7 @@ export function Graded({
   onGrade,
   onResume,
   onRecordWord,
+  onHoldWord,
   onReadGrammar,
 }: {
   question: Question;
@@ -118,6 +105,8 @@ export function Graded({
   /** Back to the box: Submit or Reveal was tapped too early. */
   onResume: () => void;
   onRecordWord: () => void;
+  /** A word held down in either sentence. */
+  onHoldWord: (word: string) => void;
   onReadGrammar: () => void;
 }) {
   return (
@@ -135,18 +124,23 @@ export function Graded({
               <div
                 className={`compare__text${submitted.trim() ? "" : " compare__text--empty"}`}
               >
-                {submitted.trim() || "nothing"}
+                {submitted.trim() ? (
+                  <HoldableLatin text={submitted.trim()} onHold={onHoldWord} />
+                ) : (
+                  "nothing"
+                )}
               </div>
             </div>
           )}
           <div className="compare__block compare__block--reference">
             <div className="compare__label">Reference</div>
             <div className="compare__text compare__text--reference">
-              {question.answer}
+              <HoldableLatin text={question.answer} onHold={onHoldWord} />
             </div>
             {question.note && <div className="note">{question.note}</div>}
           </div>
         </div>
+        <p className="hint">Hold a word to save it to your vocabulary.</p>
       </div>
 
       <div className="linkrow">

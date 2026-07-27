@@ -136,15 +136,20 @@ export function MapSheet({
 export function TopicSheet({
   topic,
   attempts,
+  questionCount,
   onClose,
   onRead,
   onQuiz,
+  onQuestions,
 }: {
   topic: TopicProgress;
   attempts: Attempt[];
+  /** How many questions have been written for the topic. */
+  questionCount: number;
   onClose: () => void;
   onRead: () => void;
   onQuiz: () => void;
+  onQuestions: () => void;
 }) {
   return (
     <Sheet title={topic.title} subtitle={`§ ${topic.ref}`} onClose={onClose}>
@@ -164,6 +169,15 @@ export function TopicSheet({
           Quiz me
         </button>
       </div>
+      <div className="actions">
+        <button
+          className="btn btn--quiet"
+          onClick={onQuestions}
+          disabled={questionCount === 0}
+        >
+          All {questionCount} questions
+        </button>
+      </div>
 
       {attempts.length > 0 && <AttemptTrail attempts={attempts} />}
     </Sheet>
@@ -179,17 +193,26 @@ const RATING_WORD = ["", "again", "hard", "good", "easy"];
  * away for months. Without this the only evidence a topic was ever studied is a
  * number on a bar.
  */
-export function AttemptTrail({ attempts }: { attempts: Attempt[] }) {
+export function AttemptTrail({
+  attempts,
+  title = "Earlier answers",
+  /** Off when every attempt answers the same question, which is then the title. */
+  showPrompt = true,
+}: {
+  attempts: Attempt[];
+  title?: string;
+  showPrompt?: boolean;
+}) {
   return (
     <>
-      <div className="section-title">Earlier answers</div>
+      <div className="section-title">{title}</div>
       {attempts.map((a, i) => (
         <div className="attempt" key={`${a.at}-${i}`}>
           <div className="attempt__meta">
             <span>{ago(a.at)}</span>
             <span>· {RATING_WORD[a.rating]}</span>
           </div>
-          <div className="attempt__prompt">{a.prompt}</div>
+          {showPrompt && <div className="attempt__prompt">{a.prompt}</div>}
           <div
             className={`attempt__written${a.submitted.trim() ? "" : " attempt__written--empty"}`}
           >

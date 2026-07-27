@@ -129,6 +129,19 @@ export interface Attempt {
   at: string;
 }
 
+/**
+ * A placement run in flight: the probes it will ask and how far through it is.
+ *
+ * Held in progress rather than in the screen's own state so the test survives
+ * whatever ends the page — a reload, a crash, closing the terminal. Without it
+ * a half-finished placement is simply lost, and the student silently restarts
+ * at chapter one.
+ */
+export interface PlacementRun {
+  topics: string[];
+  index: number;
+}
+
 export interface Progress {
   version: number;
   /** Section id of the student's placed level, or null before placement. */
@@ -147,14 +160,33 @@ export interface Progress {
   knownSections: string[];
   /** sectionId -> ids of tests recently served (to rotate variety). */
   seenTests: Record<string, string[]>;
-  /** sectionId -> its recent answered questions, oldest first. */
+  /**
+   * sectionId -> every answer given on it, oldest first. Uncapped: a question
+   * you meet once a year is exactly the one whose earlier answers are worth
+   * having, and the cost is a progress file that grows with study.
+   */
   attempts: Record<string, Attempt[]>;
   /** Count of new topics introduced (drives spot-check cadence). */
   newTopicsIntroduced: number;
   /** Whether the initial placement test has been completed/skipped. */
   placementDone: boolean;
+  /** The placement run under way, if any. Cleared when placement ends. */
+  placement?: PlacementRun | null;
+  /**
+   * Which generation of the shipped citations the vocabulary cards carry. Cards
+   * store their citation, so a rebuilt dictionary would otherwise never reach
+   * the words already saved; `Session.refreshCitations` catches them up once.
+   */
+  citationsVersion?: number;
   updatedAt: string;
 }
+
+/**
+ * The generation of the shipped dictionary citations. Bumped whenever
+ * `scripts/canonical-forms.mjs` changes what a citation says — v2 gave verbs
+ * their four principal parts and adjectives their proper terminations.
+ */
+export const CITATIONS_VERSION = 2;
 
 export function emptyProgress(): Progress {
   return {
@@ -168,6 +200,9 @@ export function emptyProgress(): Progress {
     attempts: {},
     newTopicsIntroduced: 0,
     placementDone: false,
+    placement: null,
+    // A fresh deck has no cards, so it is already current by definition.
+    citationsVersion: CITATIONS_VERSION,
     updatedAt: new Date().toISOString(),
   };
 }

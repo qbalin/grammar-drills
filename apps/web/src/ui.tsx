@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import type { Rating } from "@latin-tutor/core";
 
 /** How long until a date, said the way a person would. */
@@ -128,25 +128,105 @@ export function GradeBar({
   );
 }
 
-/** The vowels Latin needs and no phone keyboard offers. */
-const MACRONS = ["ā", "ē", "ī", "ō", "ū", "ȳ"];
+/** How long a word must be held before it is taken as "record this". */
+const HOLD_MS = 500;
+/** A press that wanders this far was the start of a scroll, not a hold. */
+const SLOP_PX = 10;
 
-export function MacronKeys({ onInsert }: { onInsert: (ch: string) => void }) {
+/**
+ * Latin with every word holdable.
+ *
+ * Recording a word used to mean leaving the question, opening a sheet and
+ * retyping a word that was already on the screen — so in practice it happened
+ * for the words worth the detour and no others. Holding the word itself is the
+ * whole gesture, and it works on the sentence you wrote as well as the one you
+ * should have.
+ *
+ * The press is deliberately slow (500 ms) and dies on any real movement: the
+ * answer scrolls, and a scroll that saved a vocabulary card would be worse than
+ * no gesture at all. Right-click does the same thing on a desktop, and so does
+ * Enter on a focused word.
+ */
+export function HoldableLatin({
+  text,
+  onHold,
+}: {
+  text: string;
+  /** The held word, punctuation already stripped. */
+  onHold: (word: string) => void;
+}) {
+  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  const [held, setHeld] = useState<number | null>(null);
+
+  const cancel = () => {
+    clearTimeout(timer.current);
+    setHeld(null);
+  };
+  useEffect(() => cancel, []);
+
+  const fire = (raw: string) => {
+    cancel();
+    // Latin words arrive wearing the sentence's punctuation: `amat.`, `«rosam»`.
+    const word = raw.replace(/^[^\p{Letter}]+|[^\p{Letter}]+$/gu, "");
+    if (!word) return;
+    navigator.vibrate?.(8);
+    onHold(word);
+  };
+
+  // Split on whitespace but keep it, so the sentence's own spacing survives.
+  const tokens = text.split(/(\s+)/);
+
   return (
-    <div className="macrons">
-      {MACRONS.map((ch) => (
-        <button
-          key={ch}
-          type="button"
-          // Keep the keyboard up: losing focus mid-sentence to type one vowel
-          // would make these worse than not having them.
-          onMouseDown={(e) => e.preventDefault()}
-          onClick={() => onInsert(ch)}
-        >
-          {ch}
-        </button>
-      ))}
-    </div>
+    <>
+      {tokens.map((token, i) =>
+        /^\s+$/.test(token) || token === "" ? (
+          token
+        ) : (
+          <span
+            key={i}
+            className={`word${held === i ? " word--held" : ""}`}
+            role="button"
+            tabIndex={0}
+            aria-label={`Record ${token}`}
+            onPointerDown={(e) => {
+              const from = { x: e.clientX, y: e.clientY };
+              const move = (m: PointerEvent) => {
+                if (
+                  Math.abs(m.clientX - from.x) > SLOP_PX ||
+                  Math.abs(m.clientY - from.y) > SLOP_PX
+                ) {
+                  cancel();
+                }
+              };
+              addEventListener("pointermove", move);
+              // Whatever ends the press, the listener goes with it.
+              const done = () => {
+                removeEventListener("pointermove", move);
+                cancel();
+              };
+              addEventListener("pointerup", done, { once: true });
+              addEventListener("pointercancel", done, { once: true });
+              setHeld(i);
+              timer.current = setTimeout(() => fire(token), HOLD_MS);
+            }}
+            // Scrolling the answer must never record a word.
+            onScroll={cancel}
+            onContextMenu={(e) => {
+              e.preventDefault();
+              fire(token);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                fire(token);
+              }
+            }}
+          >
+            {token}
+          </span>
+        ),
+      )}
+    </>
   );
 }
 

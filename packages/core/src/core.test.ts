@@ -188,6 +188,155 @@ describe("Session", () => {
   });
 });
 
+describe("Session placement, resumed", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  /** Save and reload, the way closing the app and opening it again would. */
+  const reload = (s: Session) =>
+    new Session(new Content(fixture), JSON.parse(JSON.stringify(s.progress())));
+
+  it("remembers the probes and the position across a restart", () => {
+    const s = new Session(new Content(fixture));
+    const run = s.beginPlacement();
+    expect(run.topics).toEqual(["ag1", "ag2"]);
+    s.passPlacement("ag1");
+    s.advancePlacement(1);
+
+    // Passing a probe fills knownSections, which used to read as "placed".
+    const back = reload(s);
+    expect(back.needsPlacement()).toBe(true);
+    expect(back.placementState()).toEqual({ topics: ["ag1", "ag2"], index: 1 });
+  });
+
+  it("stays in placement when a word is recorded mid-probe", () => {
+    const s = new Session(new Content(fixture));
+    s.beginPlacement();
+    s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
+
+    expect(s.needsPlacement()).toBe(true);
+    expect(s.placementState()?.index).toBe(0);
+    expect(reload(s).placementState()?.index).toBe(0);
+  });
+
+  it("forgets the run once placement is over", () => {
+    const s = new Session(new Content(fixture));
+    s.beginPlacement();
+    s.endPlacement();
+    expect(s.placementState()).toBeUndefined();
+    expect(reload(s).needsPlacement()).toBe(false);
+  });
+
+  it("takes an undo back into placement", () => {
+    const s = new Session(new Content(fixture));
+    s.beginPlacement();
+    const before = s.snapshot();
+    s.passPlacement("ag1");
+    s.advancePlacement(1);
+
+    s.restore(before);
+    expect(s.placementState()?.index).toBe(0);
+    expect(s.progress().knownSections).toEqual([]);
+  });
+});
+
+describe("Session schedule", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+
+  it("lists what is waiting and what comes back, soonest first", () => {
+    const s = new Session(new Content(fixture));
+    s.gradeTopic("ag1", 4, now); // days away
+    s.gradeTopic("ag2", 1, now); // minutes away
+    const card = s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
+
+    const later = new Date("2026-01-01T00:01:00Z");
+    const due = s.upcoming(later);
+    expect(due.map((e) => e.id)).toEqual([card, "ag2", "ag1"]);
+    // A minute on, the word and the topic graded 'again' are both waiting; the
+    // one graded 'easy' is days out.
+    expect(due[0]).toMatchObject({ kind: "vocab", title: "manus, ūs (f)", overdue: true });
+    expect(due[1]).toMatchObject({ kind: "topic", sub: "§ 2", overdue: true });
+    expect(due.at(-1)).toMatchObject({ kind: "topic", sub: "§ 1", overdue: false });
+    expect(s.upcoming(later, 2)).toHaveLength(2);
+  });
+
+  it("agrees with nextDue, and skips cards for sections this bundle lost", () => {
+    const s = new Session(new Content(fixture));
+    s.gradeTopic("ag1", 3, now);
+    s.progress().topicCards.gone = s.progress().topicCards.ag1!;
+
+    expect(s.upcoming(now).map((e) => e.id)).toEqual(["ag1"]);
+    expect(s.upcoming(now)[0]!.due.getTime()).toBe(s.nextDue(now)!.getTime());
+  });
+
+  it("says nothing is scheduled on a fresh deck", () => {
+    expect(new Session(new Content(fixture)).upcoming(now)).toEqual([]);
+  });
+});
+
+describe("Session vocabulary", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  const record = (s: Session) =>
+    s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
+
+  it("lists, edits and deletes words without disturbing their schedule", () => {
+    const s = new Session(new Content(fixture));
+    const id = record(s);
+    s.gradeVocab(id, 3, now);
+    const scheduled = s.vocabCard(id)!.fsrs.due;
+
+    expect(s.vocabList().map((c) => c.id)).toEqual([id]);
+
+    s.updateVocab(id, { citation: "manus, manūs (f)", gloss: "  hand, band  " });
+    expect(s.vocabCard(id)?.citation).toBe("manus, manūs (f)");
+    expect(s.vocabCard(id)?.gloss).toBe("hand, band"); // trimmed
+    // The edit is not a review: the card keeps its history and its due date.
+    expect(s.vocabCard(id)?.fsrs.reps).toBe(1);
+    expect(s.vocabCard(id)?.fsrs.due).toBe(scheduled);
+
+    s.deleteVocab(id);
+    expect(s.vocabCard(id)).toBeUndefined();
+    expect(s.vocabList()).toEqual([]);
+    s.deleteVocab(id); // deleting twice is not an error
+  });
+
+  it("brings saved cards up to a rebuilt dictionary's citations, once", () => {
+    const s = new Session(new Content(fixture));
+    const id = record(s);
+    s.progress().citationsVersion = 1; // as a file written before the rebuild
+
+    // The dictionary now cites the word differently — four principal parts, a
+    // corrected termination, or as here a fuller genitive.
+    const rebuilt = new Content({
+      ...fixture,
+      lemmas: {
+        manus: [
+          { lemma: "manus", citation: "manus, manūs (f)", gloss: "hand", pos: "noun" },
+        ],
+      },
+    });
+    const after = new Session(rebuilt, s.progress());
+    expect(after.refreshCitations()).toBe(1);
+    expect(after.vocabCard(id)?.citation).toBe("manus, manūs (f)");
+    // Second launch: the generation is claimed, so nothing is re-read.
+    expect(after.refreshCitations()).toBe(0);
+  });
+
+  it("leaves cards alone when no dictionary is loaded", () => {
+    const s = new Session(new Content(fixture));
+    const id = record(s);
+    s.progress().citationsVersion = 1;
+
+    // Offline on the phone: the dictionary is a separate download.
+    const offline = new Session(
+      new Content({ ...fixture, lemmas: undefined }),
+      s.progress(),
+    );
+    expect(offline.refreshCitations()).toBe(0);
+    expect(offline.vocabCard(id)?.citation).toBe("manus, ūs (f)");
+    // And the generation is not claimed, so the next launch tries again.
+    expect(offline.progress().citationsVersion).toBe(1);
+  });
+});
+
 describe("Session mastery", () => {
   const now = new Date("2026-01-01T00:00:00Z");
   const mastery = (s: Session, id: string) =>
@@ -264,7 +413,7 @@ describe("Session mastery", () => {
     expect(mastery(s2, "ag1")).toBe(2); // accumulates from the floor onwards
   });
 
-  it("keeps a capped trail of what was written on a topic, newest first", () => {
+  it("keeps every answer written on a topic, newest first", () => {
     const s = new Session(new Content(fixture));
     const at = (day: number) => new Date(`2026-01-${String(day).padStart(2, "0")}T00:00:00Z`);
     for (let i = 1; i <= 12; i++) {
@@ -275,12 +424,12 @@ describe("Session mastery", () => {
       );
     }
     const trail = s.attemptsFor("ag1");
-    // Ten kept, the two oldest dropped; most recent first for reading.
-    expect(trail).toHaveLength(10);
+    // Nothing is dropped — the trail used to stop at ten.
+    expect(trail).toHaveLength(12);
     expect(trail[0]!.prompt).toBe("q12");
     expect(trail[0]!.submitted).toBe("a12");
     expect(trail[0]!.at).toBe(at(12).toISOString());
-    expect(trail.at(-1)!.prompt).toBe("q3");
+    expect(trail.at(-1)!.prompt).toBe("q1");
     // Trails are per topic.
     expect(s.attemptsFor("ag2")).toEqual([]);
   });
@@ -299,6 +448,36 @@ describe("Session mastery", () => {
       now,
     );
     expect(s2.attemptsFor("ag1")).toHaveLength(1);
+  });
+
+  it("groups a topic's answers by the question they answered", () => {
+    const s = new Session(new Content(fixture));
+    const at = (day: number) => new Date(`2026-01-${String(day).padStart(2, "0")}T00:00:00Z`);
+    s.recordAttempt("ag1", { prompt: "puella (nom. pl.)?", answer: "puellae", submitted: "puella", rating: 1 }, at(1));
+    s.recordAttempt("ag1", { prompt: "rosa (gen. sg.)?", answer: "rosae", submitted: "rosae", rating: 3 }, at(2));
+    s.recordAttempt("ag1", { prompt: "puella (nom. pl.)?", answer: "puellae", submitted: "puellae", rating: 4 }, at(3));
+
+    const trail = s.attemptsForQuestion("ag1", "puella (nom. pl.)?");
+    expect(trail.map((a) => a.rating)).toEqual([4, 1]); // newest first
+    expect(s.attemptsForQuestion("ag1", "never asked")).toEqual([]);
+  });
+
+  it("lists a section's whole question bank with each question's history", () => {
+    const s = new Session(new Content(fixture));
+    s.recordAttempt(
+      "ag1",
+      { prompt: "rosa (gen. sg.)?", answer: "rosae", submitted: "rosā", rating: 2 },
+      now,
+    );
+
+    const bank = s.questionBank("ag1");
+    // Both tests' questions, not only the one that has been served.
+    expect(bank.map((q) => q.prompt)).toEqual(["puella (nom. pl.)?", "rosa (gen. sg.)?"]);
+    expect(bank[0]!.answer).toBe("puellae");
+    expect(bank[0]!.attempts).toEqual([]);
+    expect(bank[1]!.attempts).toHaveLength(1);
+    expect(bank[1]!.attempts[0]!.submitted).toBe("rosā");
+    expect(s.questionBank("nope")).toEqual([]);
   });
 
   it("marks due topics and topics that have no tests", () => {

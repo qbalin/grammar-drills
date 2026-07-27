@@ -20,8 +20,15 @@ import { Sheet, Toast, ago } from "./ui.js";
 import { Answering, Graded, Rest, VocabReview } from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
 import { AttemptTrail, MapSheet, TopicSheet } from "./screens/Map.js";
+import { QuestionSheet, QuestionsSheet } from "./screens/Questions.js";
+import { ScheduleSheet } from "./screens/Schedule.js";
 import { SettingsSheet } from "./screens/Settings.js";
-import { VocabPickSheet, VocabSheet } from "./screens/Vocab.js";
+import {
+  VocabEditSheet,
+  VocabListSheet,
+  VocabPickSheet,
+  VocabSheet,
+} from "./screens/Vocab.js";
 
 /**
  * The quiz loop, ported from `apps/cli/src/app.tsx`.
@@ -62,10 +69,23 @@ type Overlay =
   | { t: "map" }
   | { t: "topic"; sectionId: string }
   | { t: "attempts"; sectionId: string }
-  | { t: "vocab-input" }
+  | { t: "questions"; sectionId: string }
+  | { t: "question"; sectionId: string; prompt: string }
+  | { t: "schedule" }
+  | { t: "vocab-list"; back?: Overlay }
+  | { t: "vocab-edit"; cardId: string; back?: Overlay }
+  /** `prefill` is a word held on the question; `auto` looks it up unattended. */
+  | { t: "vocab-input"; prefill?: string; auto?: boolean }
   | { t: "vocab-pick"; form: string; candidates: LemmaEntry[] }
   | { t: "settings" }
   | { t: "conflict"; remote: Progress };
+
+/** A toast, with the one action that undoes what it is announcing. */
+interface Flash {
+  message: string;
+  action?: string;
+  onAction?: () => void;
+}
 
 interface Props {
   content: Content;
@@ -95,7 +115,7 @@ export function App({ content, session, storage }: Props) {
   const [overlay, setOverlay] = useState<Overlay>(null);
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState("");
-  const [toast, setToast] = useState<string | null>(null);
+  const [toast, setToast] = useState<Flash | null>(null);
   const [dictLoading, setDictLoading] = useState(false);
   const [dictFailed, setDictFailed] = useState(false);
   const [syncState, setSyncState] = useState<SyncState>(storage.currentState());
@@ -110,7 +130,8 @@ export function App({ content, session, storage }: Props) {
     void storage.save(session.progress());
   }, [session, storage]);
 
-  const flash = (message: string) => setToast(message);
+  const flash = (message: string, action?: string, onAction?: () => void) =>
+    setToast({ message, action, onAction });
   useEffect(() => {
     if (!toast) return;
     const id = setTimeout(() => setToast(null), 2600);
@@ -191,12 +212,15 @@ export function App({ content, session, storage }: Props) {
     if (started.current) return;
     started.current = true;
     if (session.needsPlacement()) {
-      const list = session.placementTopics();
-      if (list.length > 0) {
+      // A run already under way is resumed where it stopped; only a fresh deck
+      // starts one. Placement is otherwise lost to anything that reloads the
+      // page — which on a phone is most ways a session ends.
+      const run = session.placementState() ?? session.beginPlacement();
+      if (run.topics.length > 0) {
         setInPlacement(true);
-        setPlacementList(list);
-        setPlacementIndex(0);
-        loadPlacement(0, list);
+        setPlacementList(run.topics);
+        setPlacementIndex(run.index);
+        loadPlacement(run.index, run.topics);
         return;
       }
       session.endPlacement();
@@ -228,6 +252,8 @@ export function App({ content, session, storage }: Props) {
       const next = placementIndex + 1;
       if (next < placementList.length) {
         setPlacementIndex(next);
+        session.advancePlacement(next);
+        save();
         loadPlacement(next, placementList);
         return;
       }
@@ -342,17 +368,30 @@ export function App({ content, session, storage }: Props) {
 
   // --- vocabulary ----------------------------------------------------------
 
-  const openVocab = () => {
-    setOverlay({ t: "vocab-input" });
+  /** Fetch the dictionary if this device has not got it yet. */
+  const ensureDictionary = useCallback(() => {
     if (dictionaryReady()) return;
     setDictLoading(true);
     void loadDictionary()
       // Remembered rather than only flashed: with no dictionary a lookup would
       // come back empty, and "no match" would blame the student's spelling for
       // a download that never happened.
-      .then(() => setDictFailed(false))
+      .then(() => {
+        setDictFailed(false);
+        // The moment a dictionary is in memory is the only moment cards saved
+        // against an older one can be brought up to its citations.
+        if (session.refreshCitations() > 0) {
+          save();
+          bump();
+        }
+      })
       .catch(() => setDictFailed(true))
       .finally(() => setDictLoading(false));
+  }, [save, session]);
+
+  const openVocab = (prefill?: string, auto = false) => {
+    setOverlay({ t: "vocab-input", prefill, auto });
+    ensureDictionary();
   };
 
   const lookupWord = (form: string) => {
@@ -367,11 +406,37 @@ export function App({ content, session, storage }: Props) {
     setOverlay({ t: "vocab-pick", form: form.trim(), candidates });
   };
 
+  /**
+   * A word held down in the answer or the reference. The gesture is cheap, so
+   * the way back has to be cheap too: the toast that confirms the save is also
+   * the way into the card, where it can be corrected or deleted.
+   */
+  const holdWord = (word: string) => {
+    if (dictionaryReady()) return lookupWord(word);
+    // Nothing to look up against yet — the sheet takes the word and fetches.
+    openVocab(word, true);
+  };
+
   const saveWord = (entry: LemmaEntry) => {
-    session.recordVocab(entry);
+    const id = session.recordVocab(entry);
     save();
     setOverlay(null);
-    flash(`Saved ${entry.citation}`);
+    flash(`Saved ${entry.citation}`, "Edit", () =>
+      setOverlay({ t: "vocab-edit", cardId: id }),
+    );
+    bump();
+  };
+
+  const editVocab = (cardId: string, patch: { citation: string; gloss: string }) => {
+    session.updateVocab(cardId, patch);
+    save();
+    bump();
+  };
+
+  const removeVocab = (cardId: string) => {
+    session.deleteVocab(cardId);
+    save();
+    flash("Word deleted.");
     bump();
   };
 
@@ -406,6 +471,10 @@ export function App({ content, session, storage }: Props) {
     void loadDictionary()
       .then(() => {
         setDictFailed(false);
+        if (session.refreshCitations() > 0) {
+          save();
+          bump();
+        }
         flash("Dictionary saved for offline use.");
       })
       .catch(() => {
@@ -433,11 +502,18 @@ export function App({ content, session, storage }: Props) {
           {!inPlacement && isNewTopic && phase.t !== "vocab-review" && (
             <span className="badge">new</span>
           )}
-          <span className="status__counts">
+          {/* The count is the natural way in to the schedule: it is already
+              the answer to "how much is waiting", and the sheet is the rest of
+              that answer. */}
+          <button
+            className="status__counts"
+            onClick={() => setOverlay({ t: "schedule" })}
+            aria-label="What is coming up"
+          >
             {stats.dueTopics + stats.dueVocab > 0
               ? `${stats.dueTopics + stats.dueVocab} due`
               : `${stats.vocab} words`}
-          </span>
+          </button>
           <span className="status__spacer" />
           {/* Offered only while there is a grade to take back, and on whatever
               screen the grade landed you on. */}
@@ -515,7 +591,8 @@ export function App({ content, session, storage }: Props) {
             labels={inPlacement ? PLACEMENT_LABELS : undefined}
             onGrade={grade}
             onResume={resumeWriting}
-            onRecordWord={openVocab}
+            onRecordWord={() => openVocab()}
+            onHoldWord={holdWord}
             onReadGrammar={() =>
               sectionId && setOverlay({ t: "grammar", sectionId })
             }
@@ -533,6 +610,7 @@ export function App({ content, session, storage }: Props) {
                 schedule={session.previewVocab(phase.cardId)}
                 onReveal={() => setPhase({ ...phase, revealed: true })}
                 onGrade={(r) => gradeVocab(phase.cardId, r)}
+                onEdit={() => setOverlay({ t: "vocab-edit", cardId: phase.cardId })}
               />
             );
           })()}
@@ -542,11 +620,21 @@ export function App({ content, session, storage }: Props) {
             overall={overall}
             nextDue={nextDue}
             onOpenMap={() => setOverlay({ t: "map" })}
+            onOpenSchedule={() => setOverlay({ t: "schedule" })}
           />
         )}
       </div>
 
-      {toast && <Toast message={toast} />}
+      {toast && (
+        <Toast
+          message={toast.message}
+          action={toast.action}
+          onAction={() => {
+            setToast(null);
+            toast.onAction?.();
+          }}
+        />
+      )}
 
       {overlay?.t === "grammar" &&
         (() => {
@@ -598,6 +686,7 @@ export function App({ content, session, storage }: Props) {
             <TopicSheet
               topic={topic}
               attempts={session.attemptsFor(topic.sectionId)}
+              questionCount={content.questionsFor(topic.sectionId).length}
               onClose={() => setOverlay({ t: "map" })}
               onRead={() =>
                 setOverlay({
@@ -610,6 +699,91 @@ export function App({ content, session, storage }: Props) {
                 setOverlay(null);
                 quizTopic(topic);
               }}
+              onQuestions={() =>
+                setOverlay({ t: "questions", sectionId: topic.sectionId })
+              }
+            />
+          );
+        })()}
+
+      {overlay?.t === "questions" &&
+        (() => {
+          const sec = content.getSection(overlay.sectionId);
+          if (!sec) return null;
+          return (
+            <QuestionsSheet
+              section={sec}
+              questions={session.questionBank(overlay.sectionId)}
+              onClose={() => setOverlay({ t: "topic", sectionId: overlay.sectionId })}
+              onPick={(q) =>
+                setOverlay({
+                  t: "question",
+                  sectionId: overlay.sectionId,
+                  prompt: q.prompt,
+                })
+              }
+            />
+          );
+        })()}
+
+      {overlay?.t === "question" &&
+        (() => {
+          const sec = content.getSection(overlay.sectionId);
+          const question = session
+            .questionBank(overlay.sectionId)
+            .find((q) => q.prompt === overlay.prompt);
+          if (!sec || !question) return null;
+          return (
+            <QuestionSheet
+              section={sec}
+              question={question}
+              onClose={() =>
+                setOverlay({ t: "questions", sectionId: overlay.sectionId })
+              }
+            />
+          );
+        })()}
+
+      {overlay?.t === "schedule" && (
+        <ScheduleSheet
+          entries={session.upcoming()}
+          vocabCount={stats.vocab}
+          onClose={() => setOverlay(null)}
+          onOpenVocab={() =>
+            setOverlay({ t: "vocab-list", back: { t: "schedule" } })
+          }
+        />
+      )}
+
+      {overlay?.t === "vocab-list" && (
+        <VocabListSheet
+          cards={session.vocabList()}
+          onClose={() => setOverlay(overlay.back ?? null)}
+          onPick={(card) =>
+            setOverlay({ t: "vocab-edit", cardId: card.id, back: overlay })
+          }
+        />
+      )}
+
+      {overlay?.t === "vocab-edit" &&
+        (() => {
+          const card = session.vocabCard(overlay.cardId);
+          // Deleted from underneath, or edited from a toast after an undo.
+          if (!card) return null;
+          const back = overlay.back ?? null;
+          return (
+            <VocabEditSheet
+              card={card}
+              onSave={(patch) => {
+                editVocab(card.id, patch);
+                setOverlay(back);
+                flash(`Saved ${patch.citation.trim()}`);
+              }}
+              onDelete={() => {
+                removeVocab(card.id);
+                setOverlay(back);
+              }}
+              onClose={() => setOverlay(back)}
             />
           );
         })()}
@@ -629,6 +803,8 @@ export function App({ content, session, storage }: Props) {
           status={
             dictLoading ? "loading" : dictFailed ? "unavailable" : "ready"
           }
+          initialForm={overlay.prefill}
+          autoLookup={overlay.auto}
           onLookup={lookupWord}
           onClose={() => setOverlay(null)}
         />
