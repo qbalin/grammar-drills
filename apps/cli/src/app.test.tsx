@@ -826,14 +826,19 @@ describe("the schedule, the question bank and the vocabulary list", () => {
   });
 });
 
+/** The keys that reach the answer box's own handler as raw bytes. */
+const CTRL_N = "";
+const DOWN = "[B";
+const RIGHT = "[C";
+
 /**
- * The words behind the question.
+ * The words of the question, and the map from anywhere.
  *
- * A beginner meets a question full of words nobody has taught them, and until
- * now the only thing to do about it was to submit nothing and grade yourself
- * `again`.
+ * Both exist for the same student: a beginner meets a question full of words
+ * nobody has taught them, and until now the only thing to do about it was to
+ * submit nothing and grade yourself `again`.
  */
-describe("the question's vocabulary", () => {
+describe("the question's vocabulary, and the map from anywhere", () => {
   /** Straight past placement, into the first topic's question. */
   const studying = () => {
     const content = new Content(fixture);
@@ -887,6 +892,116 @@ describe("the question's vocabulary", () => {
     unmount();
   });
 
+  it("opens the map mid-answer on ^N and gives the answer back untouched", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    stdin.write("puella ros");
+    await tick();
+
+    stdin.write(CTRL_N);
+    await tick();
+    expect(lastFrame()).toContain("Grammar map");
+
+    stdin.write(ESC);
+    await tick();
+    expect(lastFrame()).toContain("Translate into Latin");
+    // The `n` of ^N is swallowed on its way into the box, the way ^Z's `z` is.
+    expect(lastFrame()).toContain("puella ros");
+    expect(lastFrame()).not.toContain("puella rosn");
+    unmount();
+  });
+
+  it("asks twice before a map quiz throws away an answer being written", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    stdin.write("puella ros");
+    await tick();
+    stdin.write(CTRL_N);
+    await tick();
+    stdin.write(DOWN); // to a topic that is not the one being answered
+    await tick();
+    expect(lastFrame()).toContain("Present indicative active");
+
+    // The first Enter warns and serves nothing.
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("Press Enter again to leave the answer you are writing");
+    expect(lastFrame()).toContain("Grammar map");
+
+    // The second goes ahead.
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("The poet praises the queen.");
+    unmount();
+  });
+
+  it("forgets the warning when the cursor moves to a different topic", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    stdin.write("puella ros");
+    await tick();
+    stdin.write(CTRL_N);
+    await tick();
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("Press Enter again");
+
+    // The warning named a topic; moving renames it, so it is asked again.
+    stdin.write(RIGHT);
+    await tick();
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("Press Enter again");
+    expect(lastFrame()).toContain("Grammar map");
+    unmount();
+  });
+
+  it("reaches the map during placement, and ends the run rather than lying about it", async () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, undefined);
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={storage} />,
+    );
+    await tick();
+    expect(lastFrame()).toContain("Placement 1/");
+
+    // Until now `m` was suppressed for the whole of placement.
+    stdin.write(CTRL_N);
+    await tick();
+    expect(lastFrame()).toContain("Grammar map");
+
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("Press Enter again to stop the placement test");
+    stdin.write("\r");
+    await tick();
+    // The badge cannot go on saying "placement" over a topic that was never a
+    // probe — the next grade would be scored as one.
+    expect(lastFrame()).not.toContain("Placement 1/");
+    expect(session.progress().placementDone).toBe(true);
+    unmount();
+  });
+
+  it("brings the question back with its words open when w is pressed in the map", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("m");
+    await tick();
+    expect(lastFrame()).toContain("Grammar map");
+
+    // A pane over a pane reads as a mistake; the sentence is what was wanted.
+    stdin.write("w");
+    await tick();
+    expect(lastFrame()).toContain("Vocabulary — 3 words in this sentence");
+    expect(lastFrame()).toContain("The girl loves the rose.");
+    unmount();
+  });
+
   it("closes the word list again on the next question", async () => {
     const { lastFrame, stdin, unmount } = studying();
     await tick();
@@ -902,6 +1017,62 @@ describe("the question's vocabulary", () => {
     await tick();
     // A new question is a new sentence, and the crib for the last one is not it.
     expect(lastFrame()).not.toContain("Vocabulary — ");
+    unmount();
+  });
+
+  it("says so rather than doing nothing where there is no question to have words for", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    // Grade the whole deck out, to the screen with no question on it.
+    stdin.write("puella rosam amat");
+    await tick();
+    for (const key of ["\r", "3", "\r", "3", "\r", "3"]) {
+      stdin.write(key);
+      await tick();
+    }
+    expect(lastFrame()).toContain("Nothing due");
+
+    stdin.write("w");
+    await tick();
+    // A key that does nothing at all reads as a broken key.
+    expect(lastFrame()).toContain("The word list belongs to a question");
+    expect(lastFrame()).not.toContain("Vocabulary — ");
+    unmount();
+  });
+
+  it("puts back the screen the map was opened over, even through the schedule", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("3"); // grade on through to the end of the deck
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("3");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("3");
+    await tick();
+    expect(lastFrame()).toContain("Nothing due");
+
+    stdin.write("m");
+    await tick();
+    stdin.write("s");
+    await tick();
+    expect(lastFrame()).toContain("Coming up");
+    stdin.write(ESC);
+    await tick();
+    expect(lastFrame()).toContain("Grammar map");
+    stdin.write(ESC);
+    await tick();
+    // It came from `done`, so `done` is where it goes back to — not the grading
+    // bar hanging over a question that is not there.
+    expect(lastFrame()).toContain("Nothing due");
+    expect(lastFrame()).not.toContain("self-grade");
     unmount();
   });
 });

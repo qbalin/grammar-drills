@@ -30,8 +30,28 @@ interface Props {
   storage: StorageAdapter;
 }
 
-/** Where a pane was opened from, so Esc goes back where it came from. */
-type Origin = "graded" | "done";
+/**
+ * The screen a pane will put back when it closes: the whole phase that opened
+ * it, one level deep.
+ *
+ * It is every screen the study loop can rest on, because the map is reachable
+ * from all of them — the way the web app's map button sits in the header of
+ * every screen rather than on two of them. Panes are deliberately *not* in this
+ * union: a map drawn over a map has nothing to show, so `m` closes rather than
+ * stacks, and the type says so instead of leaving the key handler to remember.
+ */
+type Origin =
+  | { t: "answering" }
+  | { t: "graded" }
+  | { t: "vocab-review-front"; cardId: string }
+  | { t: "vocab-review-back"; cardId: string }
+  | { t: "done" };
+
+/** The map, named so the schedule can say it came from one and go back to it. */
+interface MapPhase {
+  t: "map";
+  from: Origin;
+}
 
 type Phase =
   | { t: "answering" }
@@ -42,11 +62,21 @@ type Phase =
   | { t: "vocab-review-back"; cardId: string }
   | { t: "vocab-list"; from: Origin }
   | { t: "vocab-edit"; cardId: string; from: Origin; field: "citation" | "gloss" }
-  | { t: "map"; from: Origin }
+  | MapPhase
   | { t: "read"; from: Origin } // a section read in full, from the map
   | { t: "bank"; from: Origin } // every question of the topic under the cursor
-  | { t: "schedule"; from: Origin | "map" }
+  | { t: "schedule"; from: Origin | MapPhase }
   | { t: "done" };
+
+/** The screen under a pane, following a schedule that was opened from the map. */
+function originOf(from: Origin | MapPhase): Origin {
+  return from.t === "map" ? from.from : from;
+}
+
+/** Whether a question is on screen there — the only place a word list belongs. */
+function hasQuestion(from: Origin): boolean {
+  return from.t === "answering" || from.t === "graded";
+}
 
 /**
  * Everything needed to put the last grade back: the engine's state before it
@@ -84,6 +114,9 @@ export function App({ session, content, storage }: Props) {
   const [showGrammar, setShowGrammar] = useState(false);
   const [showHistory, setShowHistory] = useState(false);
   const [showVocab, setShowVocab] = useState(false); // the question's word list
+  // Enter on the map serves a test at once; from a half-written answer or a
+  // placement run that costs something, so it is asked for twice.
+  const [confirmQuiz, setConfirmQuiz] = useState(false);
   const [input, setInput] = useState(""); // current typed answer / vocab form
   const [submitted, setSubmitted] = useState(""); // the answer the student submitted
   const [flash, setFlash] = useState<string | null>(null);
@@ -442,16 +475,37 @@ export function App({ session, content, storage }: Props) {
   };
 
   /** Open the grammar map, parked on the current topic (or the first unstudied one). */
-  const openMap = (from: "graded" | "done") => {
+  const openMap = (from: Origin) => {
     let i = mapTopics.findIndex((t) => t.sectionId === sectionId);
     if (i < 0) i = mapTopics.findIndex((t) => t.mastery === undefined);
     setMapIndex(i < 0 ? 0 : i);
     setFlash(null);
+    setConfirmQuiz(false);
     setPhase({ t: "map", from });
   };
 
+  /**
+   * Close the pane and put the question back with its word list open.
+   *
+   * `w` inside the map is pressed by someone who has lost the thread of the
+   * sentence, and the sentence is what they need back — not a pane drawn over a
+   * pane. Where there is no question at all the key still says something rather
+   * than quietly doing nothing.
+   */
+  const showWordsFor = (from: Origin) => {
+    if (!hasQuestion(from)) {
+      setFlash("The word list belongs to a question — press w while one is on screen.");
+      return;
+    }
+    setShowGrammar(false);
+    setShowHistory(false);
+    setShowVocab(true);
+    setFlash(null);
+    setPhase(from);
+  };
+
   /** Open the schedule of what is coming back. */
-  const openSchedule = (from: Origin | "map") => {
+  const openSchedule = (from: Origin | MapPhase) => {
     setFlash(null);
     setPhase({ t: "schedule", from });
   };
@@ -495,15 +549,41 @@ export function App({ session, content, storage }: Props) {
     });
   };
 
-  /** Serve a test on the topic under the cursor and quiz it right now. */
-  const quizSelected = () => {
+  /**
+   * Serve a test on the topic under the cursor and quiz it right now.
+   *
+   * From the graded screen or from `done` nothing is lost. From a half-written
+   * answer it throws that answer away, and from a placement run it ends the run
+   * outright — so both ask first, the two-press idiom `x` already uses in the
+   * vocabulary list.
+   */
+  const quizSelected = (from: Origin) => {
     const target = mapTopics[mapIndex];
     if (!target) return;
+    const costly = from.t === "answering" || inPlacement;
+    if (costly && !confirmQuiz) {
+      setConfirmQuiz(true);
+      setFlash(
+        inPlacement
+          ? `Press Enter again to stop the placement test and quiz “${target.title}”.`
+          : `Press Enter again to leave the answer you are writing and quiz “${target.title}”.`,
+      );
+      return;
+    }
     const t = session.serveTest(target.sectionId);
     if (!t) {
       setFlash(`No tests for “${target.title}” yet.`);
       return;
     }
+    // Choosing a topic yourself is the decision placement exists to make for
+    // you, so taking it back by hand ends the run. Without this the badge would
+    // go on saying "placement" and the next grade would run through
+    // `placementGrade`, advancing a test nobody is taking.
+    if (inPlacement) {
+      session.endPlacement();
+      setInPlacement(false);
+    }
+    setConfirmQuiz(false);
     save();
     const fresh = target.mastery === undefined;
     setFlash(null);
@@ -529,14 +609,20 @@ export function App({ session, content, storage }: Props) {
         setShowGrammar((s) => !s); // peek at grammar mid-answer
       }
       // Tab rather than a letter: every letter here goes into the answer. The
-      // answer box ignores Tab outright, so unlike ^Z below there is nothing to
-      // swallow on the way in.
+      // answer box ignores Tab outright, so unlike the chords below there is
+      // nothing to swallow on the way in.
       else if (key.tab) {
         setShowGrammar(false);
         setShowVocab((s) => !s);
       }
-      // ^Z rather than a letter: every letter here goes into the answer. It
-      // reaches back past this question to the grade that opened it.
+      // ^N for the map, and this one does need swallowing: the box lets through
+      // only the arrows, ^C and Tab, and appends everything else.
+      else if (key.ctrl && ch === "n") {
+        swallowInput.current = input; // the half-written answer stays as it is
+        openMap({ t: "answering" });
+      }
+      // ^Z rather than a letter, for the same reason. It reaches back past this
+      // question to the grade that opened it.
       else if (key.ctrl && ch === "z") {
         if (undo) {
           swallowInput.current = ""; // leaving the box; it starts empty next time
@@ -597,9 +683,9 @@ export function App({ session, content, storage }: Props) {
           setShowGrammar(false);
           setShowHistory(false);
           setShowVocab((s) => !s);
-        } else if (ch === "m" && !inPlacement) openMap("graded");
-        else if (ch === "s") openSchedule("graded");
-        else if (ch === "V") openVocabList("graded");
+        } else if (ch === "m") openMap({ t: "graded" });
+        else if (ch === "s") openSchedule({ t: "graded" });
+        else if (ch === "V") openVocabList({ t: "graded" });
         else if (ch === "u") undoSubmit(); // Enter came too early
         else if (ch === "v") {
           setInput("");
@@ -608,40 +694,60 @@ export function App({ session, content, storage }: Props) {
         break;
       }
       case "map": {
-        if (key.leftArrow) setMapIndex((i) => Math.max(0, i - 1));
-        else if (key.rightArrow)
+        // Any move renames the topic the warning was about, so the warning goes.
+        if (key.leftArrow) {
+          setConfirmQuiz(false);
+          setMapIndex((i) => Math.max(0, i - 1));
+        } else if (key.rightArrow) {
+          setConfirmQuiz(false);
           setMapIndex((i) => Math.min(mapTopics.length - 1, i + 1));
-        else if (key.upArrow) jumpFamily(-1);
-        else if (key.downArrow) jumpFamily(1);
-        else if (key.return) quizSelected();
+        } else if (key.upArrow) {
+          setConfirmQuiz(false);
+          jumpFamily(-1);
+        } else if (key.downArrow) {
+          setConfirmQuiz(false);
+          jumpFamily(1);
+        } else if (key.return) quizSelected(phase.from);
         else if (ch === "g") setPhase({ t: "read", from: phase.from });
         else if (ch === "a") setPhase({ t: "bank", from: phase.from });
-        else if (ch === "s") openSchedule("map");
-        else if (key.escape || ch === "m") setPhase({ t: phase.from });
+        else if (ch === "s") openSchedule(phase);
+        else if (ch === "w") showWordsFor(phase.from);
+        else if (key.escape || ch === "m") {
+          setConfirmQuiz(false);
+          setPhase(phase.from);
+        }
         break;
       }
       case "read": {
         if (handleScrollKey(key, readerLines.length, readerHeight)) break;
-        if (key.escape || ch === "g" || ch === "m") setPhase({ t: "map", from: phase.from });
+        if (ch === "w") showWordsFor(phase.from);
+        else if (key.escape || ch === "g" || ch === "m") {
+          setPhase({ t: "map", from: phase.from });
+        }
         break;
       }
       case "bank": {
         if (handleScrollKey(key, bankLines.length, readerHeight)) break;
-        if (key.escape || ch === "a" || ch === "m") {
+        if (ch === "w") showWordsFor(phase.from);
+        else if (key.escape || ch === "a" || ch === "m") {
           setPhase({ t: "map", from: phase.from });
         }
         break;
       }
       case "schedule": {
         if (handleScrollKey(key, schedLines.length, readerHeight)) break;
-        if (key.escape || ch === "s") {
-          setPhase(phase.from === "map" ? { t: "map", from: "graded" } : { t: phase.from });
-        }
+        // The map it came from is remembered whole, so closing the schedule puts
+        // back the map *and* the screen that map was opened over.
+        if (ch === "m") openMap(originOf(phase.from));
+        else if (ch === "w") showWordsFor(originOf(phase.from));
+        else if (key.escape || ch === "s") setPhase(phase.from);
         break;
       }
       case "vocab-list": {
         if (vocab.length === 0) {
-          if (key.escape || ch === "V") setPhase({ t: phase.from });
+          if (ch === "m") openMap(phase.from);
+          else if (ch === "w") showWordsFor(phase.from);
+          else if (key.escape || ch === "V") setPhase(phase.from);
           break;
         }
         if (key.upArrow) setVocabIndex((i) => Math.max(0, i - 1));
@@ -670,10 +776,16 @@ export function App({ session, content, storage }: Props) {
             setConfirmDelete(true);
             setFlash(`Press x again to delete ${card.citation}.`);
           }
+        } else if (ch === "m") {
+          setConfirmDelete(false);
+          openMap(phase.from);
+        } else if (ch === "w") {
+          setConfirmDelete(false);
+          showWordsFor(phase.from);
         } else if (key.escape || ch === "V") {
           setConfirmDelete(false);
           setFlash(null);
-          setPhase({ t: phase.from });
+          setPhase(phase.from);
         }
         break;
       }
@@ -698,6 +810,10 @@ export function App({ session, content, storage }: Props) {
         // A grade can advance straight into a vocabulary card; the way back to
         // it has to be here too.
         else if (ch === "u") undoGrade();
+        else if (ch === "m") openMap(phase);
+        else if (ch === "s") openSchedule(phase);
+        else if (ch === "V") openVocabList(phase);
+        else if (ch === "w") showWordsFor(phase);
         break;
       }
       case "vocab-review-back": {
@@ -708,12 +824,17 @@ export function App({ session, content, storage }: Props) {
           setTick((n) => n + 1);
           advance();
         } else if (ch === "u") undoGrade();
+        else if (ch === "m") openMap(phase);
+        else if (ch === "s") openSchedule(phase);
+        else if (ch === "V") openVocabList(phase);
+        else if (ch === "w") showWordsFor(phase);
         break;
       }
       case "done": {
-        if (ch === "m") openMap("done");
-        else if (ch === "s") openSchedule("done");
-        else if (ch === "V") openVocabList("done");
+        if (ch === "m") openMap({ t: "done" });
+        else if (ch === "s") openSchedule({ t: "done" });
+        else if (ch === "V") openVocabList({ t: "done" });
+        else if (ch === "w") showWordsFor({ t: "done" });
         else if (ch === "u") undoGrade();
         else if (key.return || ch === " ") {
           save();
@@ -928,6 +1049,11 @@ export function App({ session, content, storage }: Props) {
         }
         history={attempts.length > 0}
         words={question !== undefined}
+        // The map's Enter is destructive from exactly these two places, and the
+        // hint says which one before the key is pressed rather than after.
+        quizCosts={
+          phase.t === "map" && (phase.from.t === "answering" || inPlacement)
+        }
         undo={undo !== null}
       />
     </Box>
@@ -1444,6 +1570,7 @@ function HintBar({
   paging,
   history,
   words,
+  quizCosts,
   undo,
 }: {
   phase: Phase["t"];
@@ -1454,6 +1581,8 @@ function HintBar({
   history?: boolean;
   /** A question is on screen, so it has a word list to offer. */
   words?: boolean;
+  /** Enter on the map would throw away an answer, or end placement. */
+  quizCosts?: boolean;
   /** A grade was just given and can still be taken back. */
   undo?: boolean;
 }) {
@@ -1466,31 +1595,32 @@ function HintBar({
   // Offered only while there is a grade to take back, on every screen a grade
   // can land you on.
   const undoHint = undo ? " · u undo grade" : "";
+  const quizHint = quizCosts ? "Enter quiz me (leaves this behind)" : "Enter quiz me";
   const hint =
     phase === "answering"
-      ? `type your Latin · Enter submit · Esc grammar · Tab words${undo ? " · ^Z undo grade" : ""}${scrollHint}`
+      ? `type your Latin · Enter submit · Esc grammar · Tab words · ^N map${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
-        ? "← → topic · ↑ ↓ family · g read section · a all questions · s schedule · Enter quiz me · Esc close"
+        ? `← → topic · ↑ ↓ family · g read section · a all questions · s schedule${wordsHint} · ${quizHint} · Esc close`
         : phase === "read"
-          ? "↑ ↓ scroll · PgUp/PgDn page · Esc back to map · q quit"
+          ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to map · q quit`
         : phase === "bank"
-          ? "↑ ↓ scroll · PgUp/PgDn page · Esc back to map · q quit"
+          ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to map · q quit`
         : phase === "schedule"
-          ? "↑ ↓ scroll · PgUp/PgDn page · Esc close · q quit"
+          ? `↑ ↓ scroll · PgUp/PgDn page · m map${wordsHint} · Esc close · q quit`
         : phase === "vocab-list"
-          ? "↑ ↓ word · Enter edit · x delete · Esc close · q quit"
+          ? `↑ ↓ word · Enter edit · x delete · m map${wordsHint} · Esc close · q quit`
         : phase === "vocab-edit"
           ? "type · Tab switch field · Enter save · Esc cancel"
         : phase === "graded"
         ? placement
           // `w` earns its place here more than anywhere: placement asks about
           // topics you have never been taught.
-          ? `3–4 you knew it (continue) · 1–2 start here · u keep typing${wordsHint} · v vocab`
+          ? `3–4 you knew it (continue) · 1–2 start here · u keep typing${wordsHint} · m map · v vocab`
           : `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m map · s schedule · q quit`
         : phase === "vocab-review-front"
-          ? `Space/Enter reveal${undoHint} · q quit`
+          ? `Space/Enter reveal${undoHint} · m map · q quit`
           : phase === "vocab-review-back"
-            ? `1–4 self-grade${undoHint} · q quit`
+            ? `1–4 self-grade${undoHint} · m map · q quit`
             : phase === "vocab-input"
               ? "Enter to look up the word · Esc cancel"
               : phase === "vocab-pick"
