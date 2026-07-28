@@ -25,6 +25,55 @@ Spaced repetition runs on two independent [FSRS](https://github.com/open-spaced-
 tracks: **grammar topics** (driven by your self-grades) and **vocabulary** you
 record as you go.
 
+## The words behind a question
+
+The sentences are drawn from frequency ranks 400–6000, so a beginner regularly
+meets a question containing words nobody has taught them, and the only thing to
+do about it was to submit nothing and grade yourself *again*. Every question can
+now show its own vocabulary — **hidden until you ask for it**, `w` (or `Tab`
+while writing) in the CLI, a `Vocabulary — 6 words` line above the box on the
+web:
+
+```
+Vocabulary — 6 words in this sentence
+farmer's      agricola, agricolae (m)
+daughters     fīlia, fīliae (f)
+carrying      portō, portāre, portāvī, portātum
+water         aqua, aquae (f)
+deep          altus, alta, altum
+·             ex (prep)
+              out of, from; down from
+```
+
+It is a **crib, not a reveal**: the words are in the *English* sentence's order,
+never the Latin's, and in their dictionary form. Which word goes where, in which
+case, and with what ending is still the whole exercise.
+
+The English column is the prompt's own words, matched to the dictionary's gloss
+through a small English de-inflection (`carrying`→`carry`, `daughters`→
+`daughter`) plus a table of irregulars (`led`→`lead`, `men`→`man`). About **69%**
+of words find their partner that way; the rest show the dictionary's gloss under
+a `·`, and the **4.7%** the dictionary has never heard of (`dum`, `nam`,
+`tamen`, participles like `territī`) are listed and marked rather than quietly
+dropped — a sentence you are stuck on is the worst place to be handed a short
+list.
+
+Matching against the prompt also **decides which word an ambiguous form is**,
+which frequency alone gets wrong often enough to matter:
+
+| form | most frequent | what the prompt picks |
+|---|---|---|
+| `bellum` | `bellus, bella, bellum` *pretty* | `bellum, bellī (n)` *war* |
+| `dōna` | `dōnō, dōnāre` *to give* | `dōnum, dōnī` *gift* |
+| `rēgīna` | `rex, rēgis` *king* | `regina, rēgīnae` *queen* |
+| `mare` | `mās, mare` *male* | `mare, maris (n)` *sea* |
+
+Told unprompted that `bellum` means *pretty*, a beginner is worse off than with
+no crib at all. Across the 4,025 shipped questions the prompt overrules the
+frequency-first reading **2,443 times**. Nothing here calls a model: it is the
+shipped dictionary, the question's own English, and
+`packages/core/src/question-vocab.ts`.
+
 ## Recording vocabulary — automatic dictionary citations
 
 When you meet an unknown word, type it *as you saw it* (any inflected form). The
@@ -56,7 +105,8 @@ recorded the wrong word.
 
 ```
 packages/core/   Isomorphic runtime: types, FSRS scheduler, session state
-                 machine, form→citation lemmatizer, storage adapters. No LLM.
+                 machine, form→citation lemmatizer, per-question vocabulary,
+                 storage adapters. No LLM.
 apps/cli/        Delightful terminal UI (Ink). The v1 surface.
 apps/web/        Installable, offline, no-backend phone app over the same core.
 content/         Frozen, shipped content:
@@ -82,9 +132,13 @@ pnpm --filter @latin-tutor/cli start -- --content ./content --progress ./my.prog
 
 Flow: (placement on first run →) read the English prompt, **type your Latin and
 press Enter**, compare with the reference answer, then `1–4` self-grade
-(1 again · 4 easy). `v` record a word · `g` grammar section · `h` your earlier
-answers on this topic · `Esc` peek at the grammar mid-answer · `m` grammar map ·
-`q` quit (autosaves).
+(1 again · 4 easy). `w` the words of this question · `v` record a word ·
+`g` grammar section · `h` your earlier answers on this topic · `Esc` peek at the
+grammar mid-answer · `m` grammar map · `q` quit (autosaves).
+
+While the answer box has the keyboard, every letter goes into the answer, so the
+same two things are reached by chords: **`Tab`** the words, **`^N`** the map
+(alongside `Esc` for the grammar and `^Z` to take back a grade).
 
 The grammar pane shows the **whole** section — Bennett's paradigm sections run
 to hundreds of lines — so it pages: `↑ ↓` a line, `PgUp/PgDn` a screen, with
@@ -126,6 +180,13 @@ Home Screen*. Same loop — write the Latin, compare, self-grade 1–4 — with 
 grade buttons labelled with the interval each one buys, and the grammar map
 redrawn as tappable rows — one per topic, each naming its § and how far along it
 is, since a thumb wants a target and a screen has room for words.
+
+The question's vocabulary is a disclosure above the answer box rather than a
+sheet, on both the writing and the graded screen: a sheet would cover the box,
+and the moment it is wanted is the moment you are mid-sentence and stuck. The
+word count is taken from the sentence, so `Vocabulary — 6 words` is on screen and
+honest while the dictionary is still downloading — and opening it is what
+triggers that download, never a prefetch.
 
 The dictionary is the one thing that could not be shipped as-is:
 `lemmas.json.gz` inflates to 43 MB, which no phone should parse. The build
@@ -251,6 +312,23 @@ section in full (scrolling as above, `Esc` back to the map), and **Enter serves 
 test on the selected topic straight away** — the way to explore ahead of where the
 scheduler has taken you.
 Normal spaced repetition resumes once the test is done.
+
+The map opens from **every** screen, the way the web app's `▦` button does —
+mid-answer (`^N`, since the letters are the answer's), on a vocabulary card, from
+the schedule, and during placement, which used to suppress it. Whatever it was
+opened over is what `Esc` puts back, half-written answer and all.
+
+Enter is the one key there that costs something: from a half-written answer it
+throws that answer away, and during placement it ends the placement run. From
+those two places it asks first, and a second Enter goes ahead —
+
+```
+§ 100 Conjugation of sum
+Press Enter again to leave the answer you are writing and quiz “Conjugation of sum”.
+```
+
+— and moving the cursor cancels it, because the warning named a topic and `←`
+names a different one.
 
 ## Progress storage
 

@@ -10,6 +10,13 @@ export {
   type Rating,
 } from "./scheduler.js";
 export { lookupForm } from "./lemmatizer.js";
+export {
+  questionVocabulary,
+  latinWords,
+  stripPunctuation,
+  type VocabWord,
+  type VocabStatus,
+} from "./question-vocab.js";
 export { Content } from "./content.js";
 export {
   FAMILIES,

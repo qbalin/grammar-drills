@@ -742,3 +742,89 @@ describe("progress", () => {
     expect(saved?.updatedAt).toBe(session.progress().updatedAt);
   });
 });
+
+/**
+ * The words behind the question.
+ *
+ * The sentences are drawn from frequency ranks 400–6000, so a beginner meets
+ * words nobody has taught them. This is the way out that is not "submit nothing
+ * and grade yourself again".
+ */
+describe("the question's vocabulary", () => {
+  const toggle = () => screen.getByRole("button", { name: /Vocabulary/ });
+
+  it("stays folded away until it is asked for, on the answering screen", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    // Counted from the sentence, so the number is honest before any lookup.
+    expect(toggle().textContent).toContain("3 words");
+    expect(toggle().getAttribute("aria-expanded")).toBe("false");
+    expect(screen.queryByText("rosa, rosae (f)")).toBeNull();
+
+    await user.click(toggle());
+    expect(toggle().getAttribute("aria-expanded")).toBe("true");
+    // The prompt's own English against the Latin in its dictionary form.
+    expect(screen.getByText("rose")).toBeDefined();
+    expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
+    expect(screen.getByText("amō, amāre, amāvī, amātum")).toBeDefined();
+
+    await user.click(toggle());
+    expect(screen.queryByText("rosa, rosae (f)")).toBeNull();
+  });
+
+  it("names a word the dictionary has not got rather than leaving it out", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    await user.click(toggle());
+
+    // `Puella` is not in this fixture's dictionary; the sentence still needs it.
+    expect(screen.getByText("Puella")).toBeDefined();
+    expect(screen.getByText("not in the dictionary")).toBeDefined();
+  });
+
+  it("does not take the answer box away to show the words", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    const box = screen.getByLabelText("Your Latin");
+    await user.type(box, "Puella ros");
+    await user.click(toggle());
+
+    // Opened in place, above the box — the half-written answer is still there.
+    expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
+    expect((screen.getByLabelText("Your Latin") as HTMLTextAreaElement).value).toBe(
+      "Puella ros",
+    );
+  });
+
+  it("is still open after submitting, and closed on the next question", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    await user.click(toggle());
+    expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
+
+    // Submitting is the same sentence, so the crib stays where it was put.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
+
+    // Grading moves to a new sentence, and the last one's crib is not it.
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(toggle().getAttribute("aria-expanded")).toBe("false");
+  });
+
+  it("says the dictionary is missing rather than calling every word unknown", async () => {
+    dictionary.available = false;
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    await user.click(toggle());
+
+    expect(
+      screen.getByText(/dictionary hasn’t been saved to this device/),
+    ).toBeDefined();
+  });
+});
