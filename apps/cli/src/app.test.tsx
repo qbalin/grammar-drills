@@ -47,6 +47,15 @@ const fixture: ContentData = {
   },
   lemmas: {
     manibus: [{ lemma: "manus", citation: "manus, manūs (f)", gloss: "hand", pos: "noun", rank: 157 }],
+    // Enough of a dictionary for the first topic's question to have a word list.
+    // `rosam` carries a second reading so the crib has an ambiguity to resolve:
+    // the prompt says "rose", so the flower must beat the more frequent verb.
+    puella: [{ lemma: "puella", citation: "puella, puellae (f)", gloss: "girl, lass, maiden", pos: "noun", rank: 638 }],
+    rosam: [
+      { lemma: "rodo", citation: "rōdō, rōdere, rōsī, rōsum", gloss: "to gnaw, nibble at", pos: "verb", rank: 900 },
+      { lemma: "rosa", citation: "rosa, rosae (f)", gloss: "rose", pos: "noun", rank: 4845 },
+    ],
+    amat: [{ lemma: "amō", citation: "amō, amāre, amāvī, amātum", gloss: "to love; to like", pos: "verb", rank: 125 }],
   },
 };
 
@@ -814,5 +823,85 @@ describe("the schedule, the question bank and the vocabulary list", () => {
     await tick();
     expect(second.lastFrame()).toContain("Placement 2/");
     second.unmount();
+  });
+});
+
+/**
+ * The words behind the question.
+ *
+ * A beginner meets a question full of words nobody has taught them, and until
+ * now the only thing to do about it was to submit nothing and grade yourself
+ * `again`.
+ */
+describe("the question's vocabulary", () => {
+  /** Straight past placement, into the first topic's question. */
+  const studying = () => {
+    const content = new Content(fixture);
+    const storage = new MemoryStorage();
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    return {
+      session,
+      ...render(<App session={session} content={content} storage={storage} />),
+    };
+  };
+
+  it("shows the words behind the question on Tab, and hides them again", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    expect(lastFrame()).toContain("The girl loves the rose.");
+    // Hidden until asked for: that is the whole point of the feature.
+    expect(lastFrame()).not.toContain("Vocabulary — ");
+
+    stdin.write("\t");
+    await tick();
+    expect(lastFrame()).toContain("Vocabulary — 3 words in this sentence");
+    // The English the prompt used, beside the Latin in its dictionary form.
+    expect(lastFrame()).toContain("girl");
+    expect(lastFrame()).toContain("puella, puellae (f)");
+    expect(lastFrame()).toContain("amō, amāre, amāvī, amātum");
+    // The prompt says "rose", so the flower beats the more frequent verb.
+    expect(lastFrame()).toContain("rosa, rosae (f)");
+    expect(lastFrame()).not.toContain("rōdō, rōdere");
+
+    stdin.write("\t");
+    await tick();
+    expect(lastFrame()).not.toContain("Vocabulary — ");
+    unmount();
+  });
+
+  it("leaves the half-written answer alone while the words are consulted", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    stdin.write("puella ros");
+    await tick();
+    stdin.write("\t");
+    await tick();
+    // Tab reaches this component and never the answer box, so no tab character
+    // lands in the answer.
+    expect(lastFrame()).toContain("puella ros");
+    stdin.write("am amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain("puella rosam amat");
+    unmount();
+  });
+
+  it("closes the word list again on the next question", async () => {
+    const { lastFrame, stdin, unmount } = studying();
+    await tick();
+    stdin.write("puella rosam amat");
+    await tick();
+    stdin.write("\r");
+    await tick();
+    stdin.write("w");
+    await tick();
+    expect(lastFrame()).toContain("Vocabulary — ");
+
+    stdin.write("3");
+    await tick();
+    // A new question is a new sentence, and the crib for the last one is not it.
+    expect(lastFrame()).not.toContain("Vocabulary — ");
+    unmount();
   });
 });

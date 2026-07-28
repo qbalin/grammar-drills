@@ -8,9 +8,11 @@ import {
   scheduleLines,
   type HistoryLine,
 } from "./history.js";
+import { wordListLines, type WordListLine } from "./wordlist.js";
 import {
   Content,
   Session,
+  questionVocabulary,
   type FamilyProgress,
   type LemmaEntry,
   type Progress,
@@ -81,6 +83,7 @@ export function App({ session, content, storage }: Props) {
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
   const [showGrammar, setShowGrammar] = useState(false);
   const [showHistory, setShowHistory] = useState(false);
+  const [showVocab, setShowVocab] = useState(false); // the question's word list
   const [input, setInput] = useState(""); // current typed answer / vocab form
   const [submitted, setSubmitted] = useState(""); // the answer the student submitted
   const [flash, setFlash] = useState<string | null>(null);
@@ -174,10 +177,24 @@ export function App({ session, content, storage }: Props) {
 
   const vocab = useMemo(() => session.vocabList(), [session, tick]);
 
+  // The words of the question on screen: the English the prompt used against the
+  // Latin it wants, in its dictionary form. Built for every question and shown
+  // for none of them until asked for.
+  const vocabulary = useMemo(
+    () => (question ? questionVocabulary(content, question) : []),
+    [question, content],
+  );
+  const wordLines = useMemo(
+    () => wordListLines(vocabulary, paneWidth),
+    [vocabulary, paneWidth],
+  );
+  // Words, not screen lines: a citation that wrapped is still one word.
+  const wordCount = vocabulary.length;
+
   // Whatever the pane is showing, show it from the top.
   useEffect(
     () => setScroll(0),
-    [sectionId, showGrammar, showHistory, mapIndex, phase.t],
+    [sectionId, showGrammar, showHistory, showVocab, mapIndex, phase.t],
   );
 
   const save = () => {
@@ -215,6 +232,7 @@ export function App({ session, content, storage }: Props) {
     setFlash(null);
     setShowGrammar(false);
     setShowHistory(false);
+    setShowVocab(false);
     setInput("");
     setSubmitted("");
     const action = session.next();
@@ -259,6 +277,7 @@ export function App({ session, content, storage }: Props) {
     setSubmitted("");
     setShowGrammar(false);
     setShowHistory(false);
+    setShowVocab(false);
     setIsNewTopic(false);
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
@@ -351,6 +370,7 @@ export function App({ session, content, storage }: Props) {
       setQIndex(qIndex + 1);
       setShowGrammar(false);
       setShowHistory(false);
+      setShowVocab(false);
       setFlash(null);
       setInput("");
       setSubmitted("");
@@ -379,6 +399,7 @@ export function App({ session, content, storage }: Props) {
     setInput("");
     setShowGrammar(false);
     setShowHistory(false);
+    setShowVocab(false);
     setUndo(null); // one step back, no further
     setFlash("Grade taken back — grade it again.");
     setPhase(undo.phase);
@@ -494,6 +515,7 @@ export function App({ session, content, storage }: Props) {
     setIsNewTopic(fresh);
     setShowGrammar(fresh); // teach the rule first when it's new ground
     setShowHistory(false);
+    setShowVocab(false);
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
   };
@@ -502,7 +524,17 @@ export function App({ session, content, storage }: Props) {
     // While typing (answering / vocab-input) the TextInput owns the keys —
     // except the arrows, which it ignores, so they can page the drawer.
     if (phase.t === "answering") {
-      if (key.escape) setShowGrammar((s) => !s); // peek at grammar mid-answer
+      if (key.escape) {
+        setShowVocab(false);
+        setShowGrammar((s) => !s); // peek at grammar mid-answer
+      }
+      // Tab rather than a letter: every letter here goes into the answer. The
+      // answer box ignores Tab outright, so unlike ^Z below there is nothing to
+      // swallow on the way in.
+      else if (key.tab) {
+        setShowGrammar(false);
+        setShowVocab((s) => !s);
+      }
       // ^Z rather than a letter: every letter here goes into the answer. It
       // reaches back past this question to the grade that opened it.
       else if (key.ctrl && ch === "z") {
@@ -515,6 +547,8 @@ export function App({ session, content, storage }: Props) {
         }
       } else if (showGrammar) {
         handleScrollKey(key, drawerLines.length, drawerHeight);
+      } else if (showVocab) {
+        handleScrollKey(key, wordLines.length, drawerHeight);
       }
       return;
     }
@@ -547,15 +581,22 @@ export function App({ session, content, storage }: Props) {
       case "graded": {
         if (showGrammar && handleScrollKey(key, drawerLines.length, drawerHeight)) break;
         if (showHistory && handleScrollKey(key, historyLines.length, drawerHeight)) break;
+        if (showVocab && handleScrollKey(key, wordLines.length, drawerHeight)) break;
         if (ch >= "1" && ch <= "4") gradeAndContinue(Number(ch) as Rating);
-        // The two panes share the screen with the question: opening one closes
-        // the other rather than squeezing both.
+        // The three panes share the screen with the question: opening one closes
+        // the others rather than squeezing all of them.
         else if (ch === "g") {
           setShowHistory(false);
+          setShowVocab(false);
           setShowGrammar((s) => !s);
         } else if (ch === "h" && attempts.length > 0) {
           setShowGrammar(false);
+          setShowVocab(false);
           setShowHistory((s) => !s);
+        } else if (ch === "w") {
+          setShowGrammar(false);
+          setShowHistory(false);
+          setShowVocab((s) => !s);
         } else if (ch === "m" && !inPlacement) openMap("graded");
         else if (ch === "s") openSchedule("graded");
         else if (ch === "V") openVocabList("graded");
@@ -811,6 +852,17 @@ export function App({ session, content, storage }: Props) {
         />
       )}
 
+      {showVocab && question && (phase.t === "answering" || phase.t === "graded") && (
+        <WordListPane
+          lines={wordLines}
+          scroll={scroll}
+          height={drawerHeight}
+          heading={`Vocabulary — ${wordCount} ${
+            wordCount === 1 ? "word" : "words"
+          } in this sentence`}
+        />
+      )}
+
       {(phase.t === "answering" || phase.t === "graded") && question && (
         <QuestionView
           question={question}
@@ -871,9 +923,11 @@ export function App({ session, content, storage }: Props) {
         placement={inPlacement}
         paging={
           (showGrammar && drawerLines.length > drawerHeight) ||
-          (showHistory && historyLines.length > drawerHeight)
+          (showHistory && historyLines.length > drawerHeight) ||
+          (showVocab && wordLines.length > drawerHeight)
         }
         history={attempts.length > 0}
+        words={question !== undefined}
         undo={undo !== null}
       />
     </Box>
@@ -1197,6 +1251,54 @@ function HistoryPane({
 }
 
 /**
+ * The words of the question on screen, in two columns.
+ *
+ * It has the reading panes' shape — a scrolling window under a heading — but not
+ * their rendering: a `HistoryLine` carries one tone for a whole line, and here
+ * the English half and the Latin half are always coloured differently. The
+ * English is dim because it is the part the student can already read; the
+ * citation is green, the colour a right answer has everywhere else in the app,
+ * because it is the form they are being asked to produce.
+ */
+function WordListPane({
+  lines,
+  scroll,
+  height,
+  heading,
+}: {
+  lines: WordListLine[];
+  scroll: number;
+  height: number;
+  heading: string;
+}) {
+  const visible = lines.slice(scroll, scroll + height);
+  const more = lines.length > height;
+  const atEnd = scroll + height >= lines.length;
+  return (
+    <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+      <Text color="gray">{heading}</Text>
+      {visible.map((line, i) => (
+        <Text key={scroll + i}>
+          <Text dimColor>{line.english}</Text>
+          <Text
+            color={line.tone === "citation" ? "green" : undefined}
+            dimColor={line.tone !== "citation"}
+          >
+            {line.latin}
+          </Text>
+        </Text>
+      ))}
+      {more && (
+        <Text dimColor>
+          {positionLabel(scroll, height, lines.length)}
+          {atEnd ? " · end" : " · ↑↓ scroll, PgUp/PgDn page"}
+        </Text>
+      )}
+    </Box>
+  );
+}
+
+/**
  * Every word recorded, one per line, with a cursor.
  *
  * A list rather than a pager because the point is to *pick* one: until this
@@ -1341,6 +1443,7 @@ function HintBar({
   placement,
   paging,
   history,
+  words,
   undo,
 }: {
   phase: Phase["t"];
@@ -1349,18 +1452,23 @@ function HintBar({
   paging?: boolean;
   /** There is something in the topic's answer trail to show. */
   history?: boolean;
+  /** A question is on screen, so it has a word list to offer. */
+  words?: boolean;
   /** A grade was just given and can still be taken back. */
   undo?: boolean;
 }) {
   const scrollHint = paging ? " · ↑↓ scroll" : "";
   // Only offered once the topic has a trail: `h` does nothing before that.
   const historyHint = history ? " · h earlier" : "";
+  // Offered only where there is a question to have words for, the same way `h`
+  // waits for a trail. A key that is advertised has to do something.
+  const wordsHint = words ? " · w words here" : "";
   // Offered only while there is a grade to take back, on every screen a grade
   // can land you on.
   const undoHint = undo ? " · u undo grade" : "";
   const hint =
     phase === "answering"
-      ? `type your Latin · Enter submit · Esc grammar${undo ? " · ^Z undo grade" : ""}${scrollHint}`
+      ? `type your Latin · Enter submit · Esc grammar · Tab words${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
         ? "← → topic · ↑ ↓ family · g read section · a all questions · s schedule · Enter quiz me · Esc close"
         : phase === "read"
@@ -1375,8 +1483,10 @@ function HintBar({
           ? "type · Tab switch field · Enter save · Esc cancel"
         : phase === "graded"
         ? placement
-          ? "3–4 you knew it (continue) · 1–2 start here · u keep typing · v vocab"
-          : `1–4 self-grade (1 again · 4 easy) · u keep typing · v vocab · V words · g grammar${historyHint}${scrollHint} · m map · s schedule · q quit`
+          // `w` earns its place here more than anywhere: placement asks about
+          // topics you have never been taught.
+          ? `3–4 you knew it (continue) · 1–2 start here · u keep typing${wordsHint} · v vocab`
+          : `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m map · s schedule · q quit`
         : phase === "vocab-review-front"
           ? `Space/Enter reveal${undoHint} · q quit`
           : phase === "vocab-review-back"
@@ -1385,7 +1495,7 @@ function HintBar({
               ? "Enter to look up the word · Esc cancel"
               : phase === "vocab-pick"
                 ? "1–9 choose · Esc cancel"
-                : `m grammar map · s schedule · V words${undoHint} · Enter exit`;
+                : `m grammar map · s schedule · V my words${undoHint} · Enter exit`;
   return (
     <Box marginTop={1}>
       <Text dimColor>{hint}</Text>
