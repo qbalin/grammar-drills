@@ -14,6 +14,7 @@ import {
   CITATIONS_VERSION,
   emptyProgress,
   type Attempt,
+  type Focus,
   type LemmaEntry,
   type PlacementRun,
   type Progress,
@@ -31,6 +32,8 @@ const MASTERY_MAX = 4;
 export type Action =
   | { kind: "topic-review"; sectionId: string }
   | { kind: "new-topic"; sectionId: string }
+  /** More of a topic the student asked to stay on. */
+  | { kind: "drill"; sectionId: string }
   | { kind: "vocab-review"; cardId: string }
   | { kind: "done" };
 
@@ -47,6 +50,18 @@ export interface TopicProgress {
   assumed: boolean;
   hasTests: boolean;
   due: boolean;
+  /** Questions of this topic's bank that have been answered at least once. */
+  answered: number;
+  /** How many the bank holds — a test of four never exhausts it. */
+  questions: number;
+  /** Where this topic's family resumes; the topic a sweep would reach first. */
+  frontier: boolean;
+}
+
+/** How much of a topic's question bank has actually been met. */
+export interface Coverage {
+  answered: number;
+  total: number;
 }
 
 export interface FamilyProgress {
@@ -108,6 +123,18 @@ export class Session {
     this.p.attempts ??= {};
     this.p.placement ??= null;
     this.p.citationsVersion ??= 1;
+    // An empty frontier map means every family starts at its first topic,
+    // which is what a file written before per-family frontiers was doing.
+    // Nothing is derived from the old single `frontier`: it was never read, so
+    // deriving from it now would move a returning student.
+    this.p.frontiers ??= {};
+    this.p.focus ??= { kind: "sweep" };
+    this.p.openRound ??= null;
+    // A placement stored in the old evenly-spaced shape cannot be resumed by
+    // the per-family walk. It is at most a few sentences; start over.
+    if (this.p.placement && !("familyIndex" in this.p.placement)) {
+      this.p.placement = null;
+    }
   }
 
   // --- placement -----------------------------------------------------------
@@ -135,56 +162,149 @@ export class Session {
   }
 
   /**
-   * Start (or restart) a placement run and write it down. Returns the run, so
-   * a caller can begin without reading it back.
+   * Start (or restart) a placement run and write it down. Returns the first
+   * probe, or null when the bundle has no teachable topic at all.
    */
-  beginPlacement(count = 7): PlacementRun {
-    const run = { topics: this.placementTopics(count), index: 0 };
+  beginPlacement(): PlacementRun | null {
+    const run = this.openFamily(0);
     this.p.placement = run;
     this.touch();
     return run;
   }
 
-  /** Remember which probe the student is on, so a restart resumes there. */
-  advancePlacement(index: number): void {
-    if (!this.p.placement) return;
-    this.p.placement = { ...this.p.placement, index };
-    this.touch();
-  }
-
-  /** Evenly-spaced teachable topics for the placement quiz, easiest first. */
-  placementTopics(count = 7): string[] {
-    const ids = this.content.topicIds();
-    if (ids.length <= count) return ids;
-    const step = (ids.length - 1) / (count - 1);
-    const out: string[] = [];
-    for (let i = 0; i < count; i++) out.push(ids[Math.round(i * step)]!);
-    return [...new Set(out)];
+  /**
+   * The section the current probe is asking about, if a run is under way.
+   */
+  placementProbe(): string | undefined {
+    return this.p.placement?.probe;
   }
 
   /**
-   * Record that the student passed a placement topic: everything up to and
-   * including it is taken as already known, and the frontier advances there.
+   * How far through the run is, for a line that says so. `families` counts
+   * only the families this bundle has topics for.
    */
-  passPlacement(sectionId: string): void {
-    const sec = this.content.getSection(sectionId);
-    if (!sec) return;
-    const known = new Set(this.p.knownSections);
-    for (const s of this.content.sections()) {
-      if (this.content.testsFor(s.id).length > 0 && s.order <= sec.order) {
-        known.add(s.id);
-      }
-    }
-    this.p.knownSections = [...known];
-    this.p.frontier = sectionId;
-    this.touch();
+  placementProgress():
+    | { family: FamilyId; done: number; families: number; narrowing: boolean }
+    | undefined {
+    const run = this.p.placement;
+    if (!run) return undefined;
+    const probed = FAMILIES.filter(
+      (f) => this.familyTopics(f.id).length > 0,
+    ).map((f) => f.id);
+    const current = FAMILIES[run.familyIndex]?.id;
+    if (!current) return undefined;
+    return {
+      family: current,
+      done: Math.max(0, probed.indexOf(current)),
+      families: probed.length,
+      // The second probe of a family is not a new area, it is the same one
+      // being pinned down — so the counter holds and the word says why.
+      narrowing: run.asked > 0,
+    };
   }
 
-  /** Finish placement; normal study then begins just past the frontier. */
+  /**
+   * Answer the probe on the table and move the run on. Returns the next probe,
+   * or null when placement is over (which also ends the run).
+   *
+   * A failed probe settles that one family and moves to the next — it does not
+   * stop the test. Stopping at the first failure was the whole reason a
+   * student who knows the declensions but not the verbs could not say so.
+   */
+  answerPlacement(passed: boolean): PlacementRun | null {
+    const run = this.p.placement;
+    if (!run) return null;
+    const family = FAMILIES[run.familyIndex]?.id;
+    if (!family) {
+      this.endPlacement();
+      return null;
+    }
+    const topics = this.familyTopics(family);
+    const index = topics.indexOf(run.probe);
+    const highest = passed ? Math.max(run.passed, index) : run.passed;
+
+    // A second probe is only worth asking above one that passed: below it,
+    // there is nothing left to narrow.
+    const second = passed && run.asked === 0 ? this.upperProbe(topics, index) : -1;
+    if (second >= 0) {
+      const next = { ...run, asked: 1, passed: highest, probe: topics[second]! };
+      this.p.placement = next;
+      this.touch();
+      return next;
+    }
+
+    this.settleFamily(family, topics, highest);
+    const next = this.openFamily(run.familyIndex + 1);
+    this.p.placement = next;
+    if (!next) {
+      this.endPlacement();
+      return null;
+    }
+    this.touch();
+    return next;
+  }
+
+  /** Finish placement; normal study then begins at each family's frontier. */
   endPlacement(): void {
     this.p.placementDone = true;
     this.p.placement = null;
     this.touch();
+  }
+
+  // --- focus ---------------------------------------------------------------
+
+  /**
+   * Where new topics are coming from, with a spent focus reported as the sweep
+   * it has effectively become — a drilled-out topic or a finished family is no
+   * longer somewhere to be.
+   */
+  focusState(): Focus {
+    const f = this.p.focus;
+    if (f.kind === "topic") {
+      const { answered, total } = this.coverage(f.sectionId);
+      return total > 0 && answered < total ? f : { kind: "sweep" };
+    }
+    if (f.kind === "family") {
+      return this.firstAvailable(familyOf(f.id)) ? f : { kind: "sweep" };
+    }
+    return f;
+  }
+
+  setFocus(focus: Focus): void {
+    this.p.focus = focus;
+    this.touch();
+  }
+
+  /**
+   * Take the syllabus up from here: this section's family resumes at it, and
+   * that family becomes the focus. The topics behind it are skipped rather
+   * than marked known — the map goes on showing them unstudied, because they
+   * are.
+   */
+  studyFrom(sectionId: string): void {
+    const section = this.content.getSection(sectionId);
+    if (!section) return;
+    const family = familyOf(section.family);
+    this.p.frontiers[family] = sectionId;
+    this.p.focus = { kind: "family", id: family };
+    this.touch();
+  }
+
+  /** Stay on this topic and work the rest of its bank. */
+  drillTopic(sectionId: string): void {
+    this.setFocus({ kind: "topic", sectionId });
+  }
+
+  /** How much of a topic's bank has been answered at least once. */
+  coverage(sectionId: string): Coverage {
+    const asked = new Set(
+      (this.p.attempts[sectionId] ?? []).map((a) => a.prompt),
+    );
+    const questions = this.content.questionsFor(sectionId);
+    return {
+      answered: questions.filter((q) => asked.has(q.question.prompt)).length,
+      total: questions.length,
+    };
   }
 
   /** Decide the next step. Pure query — presenting is the caller's job. */
@@ -195,6 +315,11 @@ export class Session {
     const dueVocab = this.earliestDueVocab(now);
     if (dueVocab) return { kind: "vocab-review", cardId: dueVocab };
 
+    const focus = this.focusState();
+    if (focus.kind === "topic") {
+      return { kind: "drill", sectionId: focus.sectionId };
+    }
+
     const fresh = this.nextNewTopic();
     if (fresh) return { kind: "new-topic", sectionId: fresh };
 
@@ -204,31 +329,89 @@ export class Session {
   /**
    * Choose a test for a section, preferring ones not served recently so the
    * same topic feels fresh across sessions. Records it as seen.
+   *
+   * `prefer: "unanswered"` is what a drill asks for: the test holding the most
+   * questions never yet answered, so working a topic sweeps its bank instead
+   * of circling the six tests the rotation happens to like.
    */
-  serveTest(sectionId: string): Test | undefined {
+  serveTest(
+    sectionId: string,
+    opts?: { prefer?: "unanswered" },
+  ): Test | undefined {
     const tests = this.content.testsFor(sectionId);
     if (tests.length === 0) return undefined;
+    if (opts?.prefer === "unanswered") {
+      const asked = new Set(
+        (this.p.attempts[sectionId] ?? []).map((a) => a.prompt),
+      );
+      let best: Test[] = [];
+      let most = 0;
+      for (const test of tests) {
+        const fresh = test.questions.filter((q) => !asked.has(q.prompt)).length;
+        if (fresh > most) {
+          most = fresh;
+          best = [test];
+        } else if (fresh === most && most > 0) {
+          best.push(test);
+        }
+      }
+      // Nothing unanswered left anywhere: fall through to the plain rotation.
+      if (most > 0) return this.take(sectionId, best);
+    }
     let seen = this.p.seenTests[sectionId] ?? [];
     let pool = tests.filter((t) => !seen.includes(t.id));
     if (pool.length === 0) {
       seen = [];
       pool = tests;
+      this.p.seenTests[sectionId] = [];
     }
-    const test = pool[Math.floor(Math.random() * pool.length)]!;
-    this.p.seenTests[sectionId] = [...seen, test.id].slice(-SEEN_HISTORY);
-    this.touch();
-    return test;
+    return this.take(sectionId, pool);
   }
 
-  /** Apply a self-grade to a grammar topic, creating its card on first sight. */
-  gradeTopic(sectionId: string, rating: Rating, now: Date = new Date()): void {
+  /**
+   * Apply a self-grade to a grammar topic, creating its card on first sight.
+   *
+   * `roundId` is the served test's id, and it makes the round — not the
+   * question — the unit of scheduling. Every grade in a round rewinds the card
+   * to where it stood before the round and re-rates it with the worst grade
+   * given so far, so four questions cost one rep instead of four, and a round
+   * abandoned halfway still leaves a card that is the result of exactly one.
+   * Passing no `roundId` rates per call, which is what a placement probe — one
+   * sentence, one verdict — wants.
+   */
+  gradeTopic(
+    sectionId: string,
+    rating: Rating,
+    now: Date = new Date(),
+    roundId?: string,
+  ): void {
     const existing = this.p.topicCards[sectionId];
     const wasKnown = this.p.knownSections.includes(sectionId);
-    let card = existing ? deserializeCard(existing) : newCard(now);
-    card = rate(card, rating, now);
+    const open = this.p.openRound;
+    const continuing =
+      roundId !== undefined &&
+      open != null &&
+      open.roundId === roundId &&
+      open.sectionId === sectionId;
+
+    const before = continuing ? open.cardBefore : (existing ?? null);
+    const worst = (
+      continuing ? Math.min(open.worst, rating) : rating
+    ) as Rating;
+    const card = rate(
+      before ? deserializeCard(before) : newCard(now),
+      worst,
+      now,
+    );
     this.p.topicCards[sectionId] = serializeCard(card);
+    this.p.openRound =
+      roundId === undefined
+        ? null
+        : { sectionId, roundId, cardBefore: before, worst };
+
     // Mastery moves gradually, so one good answer can't mark a topic mastered
-    // and one bad day can't wipe it: good/easy +1, hard +0.5, again -1.
+    // and one bad day can't wipe it: good/easy +1, hard +0.5, again -1. It is
+    // per question, not per round: it is the count of what you got right.
     const delta = rating >= 3 ? 1 : rating === 2 ? 0.5 : -1;
     const base = this.p.topicMastery[sectionId] ?? MASTERY_MIN;
     this.p.topicMastery[sectionId] = Math.min(
@@ -242,9 +425,11 @@ export class Session {
         );
       } else {
         this.p.newTopicsIntroduced += 1;
-        this.p.frontier = sectionId;
       }
     }
+    // A topic drilled dry, or a family walked to its end, is no longer a place
+    // to be; settle that here rather than in `next`, which stays a pure query.
+    this.p.focus = this.focusState();
     this.touch();
   }
 
@@ -496,16 +681,21 @@ export class Session {
       const scored = this.p.topicMastery[s.id];
       const assumed = scored === undefined && known.has(s.id);
       const card = this.p.topicCards[s.id];
+      const family = familyOf(s.family);
+      const { answered, total } = this.coverage(s.id);
       return {
         sectionId: s.id,
         title: s.title,
         ref: s.ref,
         order: s.order,
-        family: familyOf(s.family),
+        family,
         mastery: assumed ? MASTERY_MAX : scored,
         assumed,
         hasTests: this.content.testsFor(s.id).length > 0,
         due: card ? isDue(deserializeCard(card), now) : false,
+        answered,
+        questions: total,
+        frontier: this.p.frontiers[family] === s.id,
       };
     });
   }
@@ -607,13 +797,115 @@ export class Session {
     return best;
   }
 
-  /** First teachable topic in book order not yet carded or known. */
+  /** Teachable topics of one family, in book order. */
+  private familyTopics(family: FamilyId): string[] {
+    return this.content
+      .sections()
+      .filter(
+        (s) =>
+          familyOf(s.family) === family &&
+          this.content.testsFor(s.id).length > 0,
+      )
+      .map((s) => s.id);
+  }
+
+  /** Where a family's new work resumes; 0 when it has no frontier yet. */
+  private frontierIndex(family: FamilyId, topics: string[]): number {
+    const at = this.p.frontiers[family];
+    const i = at === undefined ? -1 : topics.indexOf(at);
+    return i < 0 ? 0 : i;
+  }
+
+  /** Untouched, unknown, and not behind its family's frontier. */
+  private firstAvailable(family: FamilyId): string | null {
+    const topics = this.familyTopics(family);
+    for (const id of topics.slice(this.frontierIndex(family, topics))) {
+      if (!this.p.topicCards[id] && !this.p.knownSections.includes(id)) {
+        return id;
+      }
+    }
+    return null;
+  }
+
+  /**
+   * The next topic to teach.
+   *
+   * Book order, but each family picks up at its own frontier — so a student
+   * placed halfway through the nouns and nowhere in the verbs gets exactly
+   * that, without choosing a mode. A focused family is asked first; when it
+   * runs out, and when a sweep finds nothing ahead of the frontiers, the gaps
+   * left behind are filled, so the book still finishes.
+   */
   private nextNewTopic(): string | null {
+    const focus = this.focusState();
+    if (focus.kind === "family") {
+      const inFamily = this.firstAvailable(familyOf(focus.id));
+      if (inFamily) return inFamily;
+    }
+    for (const { id } of FAMILIES) {
+      const ahead = this.firstAvailable(id);
+      if (ahead) return ahead;
+    }
     for (const id of this.content.topicIds()) {
       if (!this.p.topicCards[id] && !this.p.knownSections.includes(id)) {
         return id;
       }
     }
     return null;
+  }
+
+  /** Serve one of `pool` at random and remember it. */
+  private take(sectionId: string, pool: Test[]): Test {
+    const test = pool[Math.floor(Math.random() * pool.length)]!;
+    const seen = this.p.seenTests[sectionId] ?? [];
+    this.p.seenTests[sectionId] = [...seen, test.id].slice(-SEEN_HISTORY);
+    this.touch();
+    return test;
+  }
+
+  /**
+   * The probe to ask above one that passed — the middle of what is left. -1
+   * when the passed probe was the family's last topic and there is nothing
+   * above it to narrow.
+   */
+  private upperProbe(topics: string[], passed: number): number {
+    const lo = passed + 1;
+    const hi = topics.length - 1;
+    return lo > hi ? -1 : Math.floor((lo + hi) / 2);
+  }
+
+  /** Begin the first family from `from` on that has any topics at all. */
+  private openFamily(from: number): PlacementRun | null {
+    for (let i = from; i < FAMILIES.length; i++) {
+      const topics = this.familyTopics(FAMILIES[i]!.id);
+      if (topics.length === 0) continue;
+      return {
+        familyIndex: i,
+        asked: 0,
+        passed: -1,
+        // The middle of the family: one sentence that halves it either way.
+        probe: topics[Math.floor((topics.length - 1) / 2)]!,
+      };
+    }
+    return null;
+  }
+
+  /**
+   * Write down what a family's probes established: its topics up to the
+   * highest one passed are taken as known, and it resumes just past them.
+   * Only ever this family — a prefix of the whole book is precisely the claim
+   * a per-family placement exists to stop making.
+   */
+  private settleFamily(
+    family: FamilyId,
+    topics: string[],
+    passed: number,
+  ): void {
+    if (passed < 0) return;
+    const known = new Set(this.p.knownSections);
+    for (const id of topics.slice(0, passed + 1)) known.add(id);
+    this.p.knownSections = [...known];
+    const resume = topics[passed + 1];
+    if (resume) this.p.frontiers[family] = resume;
   }
 }

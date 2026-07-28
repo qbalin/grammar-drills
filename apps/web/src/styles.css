@@ -186,6 +186,41 @@ button {
   color: var(--amber);
 }
 
+/* Where new topics are coming from, when that is not simply the book in
+   order. It sits on its own row with its way out beside it: a mode you cannot
+   see how to leave is a trap, not a feature. */
+.status__focus {
+  gap: 0.5rem;
+  padding-top: 0.15rem;
+}
+
+.badge--focus {
+  color: var(--gold);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.7rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.linkbtn {
+  background: none;
+  border: none;
+  padding: 0.2rem 0;
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  text-decoration: underline dotted var(--line);
+  text-underline-offset: 3px;
+}
+
+.linkbtn:active {
+  color: var(--gold);
+}
+
 .iconbtn {
   min-width: var(--tap);
   min-height: var(--tap);

@@ -130,22 +130,89 @@ export interface Attempt {
 }
 
 /**
- * A placement run in flight: the probes it will ask and how far through it is.
+ * A placement run in flight: which family is being probed and what the probes
+ * so far have said.
  *
  * Held in progress rather than in the screen's own state so the test survives
  * whatever ends the page — a reload, a crash, closing the terminal. Without it
  * a half-finished placement is simply lost, and the student silently restarts
  * at chapter one.
+ *
+ * The walk is one family at a time, in `FAMILIES` order, bisecting: a probe in
+ * the middle, then — if it passed — a second in the middle of what is left
+ * above it. Two probes per family at most, so the whole test is at most
+ * eighteen sentences and usually eleven.
  */
 export interface PlacementRun {
-  topics: string[];
-  index: number;
+  /** Index into `FAMILIES` of the family under test. */
+  familyIndex: number;
+  /** How many probes this family has been asked (0, 1 or 2). */
+  asked: number;
+  /** Highest topic index passed within this family, or -1 for none yet. */
+  passed: number;
+  /** The section id being asked right now. */
+  probe: string;
+}
+
+/**
+ * Where new topics come from. Reviews are never affected: everything due comes
+ * back on its own schedule in all three shapes.
+ *
+ * - `sweep` — the book in order, each family resuming at its own frontier.
+ *   The default, and on a fresh deck it is chapter one onwards.
+ * - `family` — one area at a time, for when a whole part of the grammar is the
+ *   thing you came to work on.
+ * - `topic` — stay on one section and work through the rest of its questions,
+ *   which a four-question test does not exhaust.
+ */
+export type Focus =
+  | { kind: "sweep" }
+  | { kind: "family"; id: string }
+  | { kind: "topic"; sectionId: string };
+
+/**
+ * A round of questions in flight — one served test — and the card as it stood
+ * before the round began.
+ *
+ * A test is four questions on one topic, and rating the topic's card once per
+ * question drove it four reps deep in a single sitting. The round is the unit
+ * instead: every grade in it rewinds the card to `cardBefore` and re-rates it
+ * with the worst grade given so far. The card on disk is therefore always the
+ * result of exactly one rep, whenever the round is abandoned.
+ */
+export interface OpenRound {
+  sectionId: string;
+  /** The served test's id — the round's identity, so no explicit end is needed. */
+  roundId: string;
+  /** The topic's card before the round, or null if the topic had none. */
+  cardBefore: SerializedCard | null;
+  /** The lowest grade given in the round so far. */
+  worst: 1 | 2 | 3 | 4;
 }
 
 export interface Progress {
   version: number;
-  /** Section id of the student's placed level, or null before placement. */
+  /**
+   * Dead. One section id for the whole syllabus, which could say "past the
+   * second declension" but never "past the second declension and nowhere near
+   * the verbs". `frontiers` replaced it; old files still carry this and it is
+   * left alone rather than migrated, so a returning student resumes exactly
+   * where they were.
+   */
   frontier: string | null;
+  /**
+   * familyId -> the section its new topics resume at. A family with no entry
+   * starts at its first topic, which is what a fresh deck has for all nine —
+   * so an empty map is the plain sweep from chapter one.
+   *
+   * Per family rather than one pointer, because that is the shape of the
+   * complaint: knowing the declensions says nothing about knowing the verbs.
+   */
+  frontiers: Record<string, string>;
+  /** Where new topics come from. Defaults to the sweep. */
+  focus: Focus;
+  /** The round of questions in flight, if any. */
+  openRound?: OpenRound | null;
   /** sectionId -> scheduling card for that grammar topic. */
   topicCards: Record<string, SerializedCard>;
   /**
@@ -192,6 +259,9 @@ export function emptyProgress(): Progress {
   return {
     version: 1,
     frontier: null,
+    frontiers: {},
+    focus: { kind: "sweep" },
+    openRound: null,
     topicCards: {},
     topicMastery: {},
     vocabCards: {},

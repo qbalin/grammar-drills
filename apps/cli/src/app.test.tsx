@@ -95,10 +95,23 @@ describe("CLI App (write → compare → self-grade)", () => {
     stdin.write("\r");
     await tick();
     expect(lastFrame()).toContain("correct");
-    // Grade 1 = don't know it yet -> placement ends, study starts here.
+    // Grade 1 = don't know it yet. The nouns settle at their start, and the
+    // test moves on to the next area rather than stopping: not knowing one
+    // part of the grammar says nothing about the others.
+    stdin.write("1");
+    await tick();
+    expect(session.progress().placementDone).toBe(false);
+    expect(lastFrame()).toContain("Verb forms");
+    expect(lastFrame()).toContain("The poet praises the queen.");
+
+    // Fail that one too, and the run is out of areas to ask about.
+    stdin.write("\r");
+    await tick();
     stdin.write("1");
     await tick();
     expect(session.progress().placementDone).toBe(true);
+    // Nothing was claimed as known, so study begins at chapter one.
+    expect(session.progress().knownSections).toEqual([]);
 
     // Now the first new topic: grammar drawer + English prompt + input box.
     expect(lastFrame()).toContain("First declension nouns");
@@ -197,6 +210,11 @@ describe("CLI App (write → compare → self-grade)", () => {
     stdin.write("3");
     await tick();
     expect(session.progress().topicMastery["ag-verb-pres"]).toBe(2);
+
+    // Enter is a look ahead and leaves nothing behind, so the loop picks up
+    // where it was. `f` is the key that moves your place — see below.
+    expect(lastFrame()).toContain("The girl loves the rose.");
+    expect(session.progress().frontiers).toEqual({});
 
     unmount();
   });
@@ -791,12 +809,13 @@ describe("the schedule, the question bank and the vocabulary list", () => {
 
     await tick();
     expect(first.lastFrame()).toContain("Placement 1/");
-    // Pass the first probe, so the run is genuinely under way.
+    // Pass the first probe, so the run is genuinely under way. Passing narrows
+    // within the same family rather than moving to the next.
     first.stdin.write("\r");
     await tick();
     first.stdin.write("3");
     await tick();
-    expect(first.lastFrame()).toContain("Placement 2/");
+    expect(first.lastFrame()).toContain("Nouns, narrowing");
 
     // Recording a word is an aside, not an exit.
     first.stdin.write("\r");
@@ -808,7 +827,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
     first.stdin.write("\r");
     await tick();
     expect(session.vocabCard("v-manus")).toBeDefined();
-    expect(first.lastFrame()).toContain("Placement 2/");
+    expect(first.lastFrame()).toContain("Nouns, narrowing");
     first.unmount();
 
     // And the run outlives the process: passing a probe fills knownSections,
@@ -821,7 +840,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
       <App session={reopened} content={content} storage={storage} />,
     );
     await tick();
-    expect(second.lastFrame()).toContain("Placement 2/");
+    expect(second.lastFrame()).toContain("Nouns, narrowing");
     second.unmount();
   });
 });
@@ -1073,6 +1092,130 @@ describe("the question's vocabulary, and the map from anywhere", () => {
     // bar hanging over a question that is not there.
     expect(lastFrame()).toContain("Nothing due");
     expect(lastFrame()).not.toContain("self-grade");
+    unmount();
+  });
+});
+
+/**
+ * A syllabus with room to move in: two noun topics, two verb ones, and a bank
+ * on the first noun topic that four questions cannot exhaust.
+ */
+const deep: ContentData = {
+  grammar: [
+    { id: "d1", ref: "34", title: "First declension nouns", family: "nouns", text: "-a.", order: 10 },
+    { id: "d2", ref: "35", title: "Second declension nouns", family: "nouns", text: "-us.", order: 20 },
+    { id: "v1", ref: "174", title: "Present indicative active", family: "verb-forms", text: "The present stem.", order: 130 },
+    { id: "v2", ref: "180", title: "Imperfect indicative active", family: "verb-forms", text: "The imperfect stem.", order: 140 },
+  ],
+  tests: {
+    d1: [1, 2, 3].map((n) => ({
+      id: `d1-t${n}`,
+      sectionId: "d1",
+      questions: [
+        { prompt: `d1 question ${n}a`, answer: "aa", kind: "translate-en-la" as const, vocab: [] },
+        { prompt: `d1 question ${n}b`, answer: "bb", kind: "translate-en-la" as const, vocab: [] },
+      ],
+    })),
+    d2: [{ id: "d2-t1", sectionId: "d2", questions: [{ prompt: "d2 question", answer: "cc", kind: "translate-en-la" as const, vocab: [] }] }],
+    v1: [{ id: "v1-t1", sectionId: "v1", questions: [{ prompt: "v1 question", answer: "dd", kind: "translate-en-la" as const, vocab: [] }] }],
+    v2: [{ id: "v2-t1", sectionId: "v2", questions: [{ prompt: "v2 question", answer: "ee", kind: "translate-en-la" as const, vocab: [] }] }],
+  },
+};
+
+describe("the three ways to move through the book", () => {
+  const open = () => {
+    const content = new Content(deep);
+    const session = new Session(content, { ...emptyProgress(), placementDone: true });
+    return {
+      session,
+      ...render(<App session={session} content={content} storage={new MemoryStorage()} />),
+    };
+  };
+
+  /** Answer whatever is on screen and grade it. */
+  const answer = async (stdin: { write(s: string): void }, rating = "3") => {
+    stdin.write("\r");
+    await tick();
+    stdin.write(rating);
+    await tick();
+  };
+
+  it("carries on from the topic f was pressed on, not from the beginning", async () => {
+    const { session, lastFrame, stdin, unmount } = open();
+    await tick();
+    // The sweep starts at chapter one, as it always has.
+    expect(lastFrame()).toContain("d1 question");
+
+    stdin.write(CTRL_N); // the map, from the answer box
+    await tick();
+    stdin.write(DOWN); // down to the verbs
+    await tick();
+    expect(lastFrame()).toContain("Present indicative active");
+
+    // From a half-written answer `f` costs something, so it is asked twice —
+    // the idiom Enter already uses.
+    stdin.write("f");
+    await tick();
+    expect(lastFrame()).toContain("Press f again");
+    stdin.write("f");
+    await tick();
+    expect(session.progress().frontiers).toEqual({ "verb-forms": "v1" });
+    expect(lastFrame()).toContain("v1 question");
+    expect(lastFrame()).toContain("on Verb forms");
+
+    // The bug this fixes: the next topic used to be the first of the book.
+    await answer(stdin);
+    expect(lastFrame()).toContain("v2 question");
+
+    // Only when the area is worked out does the sweep pick the rest up.
+    await answer(stdin);
+    expect(lastFrame()).toContain("d1 question");
+    expect(lastFrame()).not.toContain("on Verb forms");
+    unmount();
+  });
+
+  it("stays on a topic when . says so, and works its bank out", async () => {
+    const { session, lastFrame, stdin, unmount } = open();
+    await tick();
+    expect(lastFrame()).toContain("d1 question");
+
+    // Answer, and say "not yet" before grading. The round in hand is not
+    // thrown away: the second question of the test still comes.
+    stdin.write("\r");
+    await tick();
+    expect(lastFrame()).toContain(". more of this topic");
+    stdin.write(".");
+    await tick();
+    expect(lastFrame()).toContain("Staying on “First declension nouns”");
+    stdin.write("3");
+    await tick();
+    expect(lastFrame()).toContain("d1 question");
+    expect(lastFrame()).toContain("on First declension nouns");
+
+    // Six questions in the bank, one answered: five more sweep it out, and no
+    // question is served twice while any of the bank is untouched.
+    const asked = new Set<string>();
+    for (let i = 0; i < 5; i++) {
+      asked.add((lastFrame() ?? "").match(/d1 question \d[ab]/)?.[0] ?? "");
+      await answer(stdin);
+    }
+    expect(asked.size).toBe(5);
+    expect(session.coverage("d1")).toEqual({ answered: 6, total: 6 });
+
+    // Nothing left to practise, so the drill lets go and the book resumes.
+    expect(lastFrame()).toContain("d2 question");
+    expect(lastFrame()).not.toContain("on First declension nouns");
+    unmount();
+  });
+
+  it("costs a topic one review per round of questions, not one per question", async () => {
+    const { session, stdin, unmount } = open();
+    await tick();
+    await answer(stdin); // question 1 of the served test
+    await answer(stdin); // question 2 of the same test
+    expect(session.progress().topicCards.d1!.reps).toBe(1);
+    // Mastery still counts every question answered.
+    expect(session.progress().topicMastery.d1).toBe(3);
     unmount();
   });
 });

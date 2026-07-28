@@ -34,7 +34,11 @@ function masteryLabel(t: TopicProgress): string {
 function topicState(t: TopicProgress): string {
   return [
     masteryLabel(t),
+    // A topic is not finished when its mastery is: four questions do not sweep
+    // a bank of twenty-odd, and this is where that shows.
+    t.questions > 0 ? `${t.answered}/${t.questions} questions answered` : "",
     t.due ? "due now" : "",
+    t.frontier ? "study resumes here" : "",
     t.hasTests ? "" : "no tests written yet",
   ]
     .filter(Boolean)
@@ -128,10 +132,14 @@ export function MapSheet({
 }
 
 /**
- * One topic, chosen from the map: what it is, how it has gone, and the two
- * things worth doing with it — read the grammar, or be quizzed on it now
- * regardless of what the scheduler thinks. Studying ahead is the point of
- * having a map at all.
+ * One topic, chosen from the map: what it is, how it has gone, and the things
+ * worth doing with it. Reading the grammar and being quizzed once are the two
+ * that leave nothing behind.
+ *
+ * The other two move where study happens, which is the point of having a map
+ * at all: **Study from here** takes the syllabus up at this topic, so its area
+ * carries on from it instead of handing back chapter one; **Practise this**
+ * stays put and works through the questions a four-question test never reached.
  */
 export function TopicSheet({
   topic,
@@ -140,6 +148,8 @@ export function TopicSheet({
   onClose,
   onRead,
   onQuiz,
+  onStudyFrom,
+  onDrill,
   onQuestions,
 }: {
   topic: TopicProgress;
@@ -149,8 +159,11 @@ export function TopicSheet({
   onClose: () => void;
   onRead: () => void;
   onQuiz: () => void;
+  onStudyFrom: () => void;
+  onDrill: () => void;
   onQuestions: () => void;
 }) {
+  const left = topic.questions - topic.answered;
   return (
     <Sheet title={topic.title} subtitle={`§ ${topic.ref}`} onClose={onClose}>
       <p className="row__sub" style={{ marginTop: 0 }}>
@@ -167,6 +180,18 @@ export function TopicSheet({
           disabled={!topic.hasTests}
         >
           Quiz me
+        </button>
+      </div>
+      <div className="actions">
+        <button
+          className="btn"
+          onClick={onStudyFrom}
+          disabled={!topic.hasTests}
+        >
+          Study from here
+        </button>
+        <button className="btn" onClick={onDrill} disabled={left <= 0}>
+          {left > 0 ? `Practise these ${left}` : "All practised"}
         </button>
       </div>
       <div className="actions">

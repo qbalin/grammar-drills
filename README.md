@@ -17,9 +17,10 @@ LLM at runtime**. Two jobs that such apps usually give to a model are removed:
 The **syllabus** is not hand-written either: `content/grammar.json` is parsed
 straight out of a public-domain grammar (see [The grammar](#the-grammar)).
 
-A short **placement test** runs on a fresh deck: you translate one sentence per
-evenly-spaced topic and grade yourself; passed topics are taken as known and the
-frontier is set, so study begins at your level instead of chapter one.
+A short **placement test** runs on a fresh deck: it asks about each of the nine
+grammar families in turn, so it can hear "I know my declensions but not my
+verbs" instead of one linear cut. Study then begins at your level in each area
+rather than at chapter one — see [Three ways forward](#three-ways-forward).
 
 Spaced repetition runs on two independent [FSRS](https://github.com/open-spaced-repetition/ts-fsrs)
 tracks: **grammar topics** (driven by your self-grades) and **vocabulary** you
@@ -133,8 +134,9 @@ pnpm --filter @latin-tutor/cli start -- --content ./content --progress ./my.prog
 Flow: (placement on first run →) read the English prompt, **type your Latin and
 press Enter**, compare with the reference answer, then `1–4` self-grade
 (1 again · 4 easy). `w` the words of this question · `v` record a word ·
-`g` grammar section · `h` your earlier answers on this topic · `Esc` peek at the
-grammar mid-answer · `m` grammar map · `q` quit (autosaves).
+`g` grammar section · `h` your earlier answers on this topic · `.` stay on this
+topic · `Esc` peek at the grammar mid-answer · `m` grammar map · `q` quit
+(autosaves).
 
 While the answer box has the keyboard, every letter goes into the answer, so the
 same two things are reached by chords: **`Tab`** the words, **`^N`** the map
@@ -180,6 +182,12 @@ Home Screen*. Same loop — write the Latin, compare, self-grade 1–4 — with 
 grade buttons labelled with the interval each one buys, and the grammar map
 redrawn as tappable rows — one per topic, each naming its § and how far along it
 is, since a thumb wants a target and a screen has room for words.
+
+The CLI's two map keys become the two buttons beside *Quiz me* — **Study from
+here** and **Practise these 17** — and `.` becomes **↻ more of this** in the row
+under the answer. When either is running, a chip in the status bar says what is
+being studied and carries *back to the book* beside it: a mode you cannot see
+how to leave is a trap, not a feature.
 
 The question's vocabulary is a disclosure above the answer box rather than a
 sheet, on both the writing and the graded screen: a sheet would cover the box,
@@ -260,6 +268,48 @@ character budget: what the parser drops, the student can never read.
 
 [pg]: https://www.gutenberg.org/ebooks/15665
 
+## Three ways forward
+
+A syllabus of 135 topics is walked by more than one kind of student, and for a
+long time it was walked by only one: the next topic was the first one in book
+order you had not touched, so every route through the book ended up back at
+chapter one. Three things now decide where new topics come from. **Reviews are
+not one of them** — whatever is due comes back on its own schedule in all
+three, so spaced repetition is never starved by a choice about new ground.
+
+**The sweep** — the default, and the quick refresher. The book in order, except
+that each of the nine families picks up at **its own frontier**. On a fresh deck
+no family has one, so this is chapter one onwards, exactly as before. After a
+placement it is the same walk starting in nine different places.
+
+**An area** — one family at a time, set by `f` on the map (web: *Study from
+here*). Knowing your declensions and wanting to start at the verbs is the case
+this exists for: it moves that family's frontier to the topic you chose and
+draws new topics from it until the family runs out, then hands back to the
+sweep. The topics you skipped stay *unstudied* on the map rather than being
+marked known — they are — and the sweep collects them once nothing is ahead.
+
+**A topic** — `.` on the graded screen, or *Practise these 17* on the map. A
+section ships 19–93 questions (median 24) in tests of four, so doing well on one
+test and being moved on is not the same as having the topic. This stays put and
+serves the questions you have never answered, in preference to the ones you
+have, until the bank is dry — then it lets go by itself. The status bar carries
+the count while it runs, and the way out beside it.
+
+**The placement test** fills the frontiers in. It asks about each family in
+turn, bisecting: a sentence from the middle of the family, then — only if you
+passed — one from the middle of what is left above it. **A miss moves to the
+next family instead of ending the test**, which is what makes "declensions yes,
+verbs no" sayable at all. Nine families, at most two probes each: sixteen
+sentences over the shipped syllabus, and only that family's topics are ever
+claimed as known.
+
+**One round of questions is one review.** A served test is four sentences on one
+topic, and grading each of them used to drive four FSRS reps into the same card
+in a single sitting. The round is the unit instead, graded by the worst answer
+in it — a topic you get three of four right on is not one you have. Mastery
+still moves per question: it counts what you got right.
+
 ## The grammar map
 
 `m` opens the syllabus as a line per grammar family, the selected one expanded to
@@ -304,14 +354,23 @@ the map would change height under you as you walked it.
 Each topic carries a **mastery score from 1 (not mastered) to 4 (mastered)**,
 moved by your self-grades: good/easy `+1`, hard `+0.5`, again `−1`. A single
 lucky answer therefore can't mark a topic mastered, and one bad day can't wipe
-one. Topics passed in placement show as mastered but assumed.
+one. Topics passed in placement show as mastered but assumed. Beside the score
+sits **how much of the topic's bank you have answered** — `9/24 questions` — and
+they are different questions: a topic can be mastered on the four sentences it
+has served and still hold twenty you have never seen.
 
 `← →` walks the cursor along the bar (including topics you have never met),
 `↑ ↓` cycles between families and wraps at both ends, `g` opens the selected
-section in full (scrolling as above, `Esc` back to the map), and **Enter serves a
-test on the selected topic straight away** — the way to explore ahead of where the
-scheduler has taken you.
-Normal spaced repetition resumes once the test is done.
+section in full (scrolling as above, `Esc` back to the map), and two keys act on
+the topic under the cursor:
+
+- **Enter** serves a test on it straight away and *leaves nothing behind* — the
+  way to look ahead. Normal spaced repetition resumes once the test is done.
+- **`f`** takes the syllabus up from it: that family resumes there and becomes
+  where new topics come from. This is the one that sticks.
+
+From a half-written answer or a placement run, both cost something, so both ask
+twice before acting.
 
 The map opens from **every** screen, the way the web app's `▦` button does —
 mid-answer (`^N`, since the letters are the answer's), on a vocabulary card, from
@@ -340,11 +399,20 @@ Progress is user data, saved through a pluggable `StorageAdapter`:
   API with a personal access token (no backend). Google Drive/etc. can be added
   as further adapters.
 
-The answers you write are part of that file (`attempts`, keyed by topic). The
-whole file is rewritten — and, on GitHub storage, committed — on every save, so
-the trail is capped at the last **ten answers per topic**, oldest dropped first.
-A file written before the trail existed simply has none; it starts filling on
-the next answer.
+The answers you write are part of that file (`attempts`, keyed by topic), and
+none of them is dropped: a question you meet once a year is exactly the one
+whose earlier answers are worth having, and the cost is a file that grows with
+study. The whole file is rewritten — and, on GitHub storage, committed — on
+every save. A file written before the trail existed simply has none; it starts
+filling on the next answer. (Only `seenTests`, the rotation's memory, is capped,
+at ten per topic.)
+
+Where you are is in there too: `frontiers` (one resume point per grammar
+family), `focus` (which of the [three ways forward](#three-ways-forward) is
+running) and `openRound` (the round of questions in flight, so closing the app
+mid-test still leaves the topic with exactly one review). A file written before
+any of them has none, and defaults to the plain sweep from chapter one — which
+is what it was doing anyway.
 
 ## Generation (offline, one-time — not shipped)
 

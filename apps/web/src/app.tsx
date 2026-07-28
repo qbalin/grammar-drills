@@ -3,6 +3,8 @@ import {
   Content,
   Session,
   questionVocabulary,
+  familyLabel,
+  familyOf,
   type LemmaEntry,
   type Progress,
   type Rating,
@@ -62,7 +64,6 @@ interface GradeUndo {
   submitted: string;
   isNewTopic: boolean;
   inPlacement: boolean;
-  placementIndex: number;
 }
 
 type Overlay =
@@ -109,9 +110,9 @@ export function App({ content, session, storage }: Props) {
   const [qIndex, setQIndex] = useState(0);
   const [isNewTopic, setIsNewTopic] = useState(false);
 
+  // The run itself lives in progress — which probe, which family, what has
+  // passed — so this is only whether the loop is driving it.
   const [inPlacement, setInPlacement] = useState(false);
-  const [placementList, setPlacementList] = useState<string[]>([]);
-  const [placementIndex, setPlacementIndex] = useState(0);
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
   const [overlay, setOverlay] = useState<Overlay>(null);
@@ -145,6 +146,31 @@ export function App({ content, session, storage }: Props) {
   const families = useMemo(() => session.familyProgress(), [session, tick]);
   const overall = useMemo(() => session.overallPercent(), [session, tick]);
   const stats = useMemo(() => session.stats(), [session, tick]);
+  const placement = useMemo(
+    () => (inPlacement ? session.placementProgress() : undefined),
+    [session, tick, inPlacement],
+  );
+  const focus = useMemo(() => session.focusState(), [session, tick]);
+  const coverageHere = useMemo(
+    () => (sectionId ? session.coverage(sectionId) : null),
+    [sectionId, session, tick],
+  );
+  // The topic on screen as the map sees it, so "more of this" and the map's
+  // own buttons take the same argument.
+  const topicHere = useMemo(
+    () => families.flatMap((f) => f.topics).find((t) => t.sectionId === sectionId),
+    [families, sectionId],
+  );
+  // What the focus is called on screen, and nothing at all for the sweep.
+  const focusLabel = useMemo(() => {
+    if (focus.kind === "family") return familyLabel(familyOf(focus.id));
+    if (focus.kind === "topic") {
+      const { answered, total } = session.coverage(focus.sectionId);
+      const title = content.getSection(focus.sectionId)?.title ?? "this topic";
+      return `${title} · ${answered}/${total}`;
+    }
+    return null;
+  }, [focus, session, tick, content]);
 
   // The words behind the question on screen. `dictLoading` is a dependency on
   // purpose: everything looked up before the fetch landed resolved to nothing,
@@ -177,7 +203,12 @@ export function App({ content, session, storage }: Props) {
       bump();
       return;
     }
-    const served = session.serveTest(action.sectionId);
+    // A drill is asking for the rest of a topic, so it wants the questions it
+    // has not met rather than whichever test the rotation comes to next.
+    const served = session.serveTest(
+      action.sectionId,
+      action.kind === "drill" ? { prefer: "unanswered" } : undefined,
+    );
     if (!served) {
       // A topic with no tests cannot be studied; pass it so the scheduler moves
       // on rather than offering it again forever.
@@ -200,16 +231,16 @@ export function App({ content, session, storage }: Props) {
   }, [session]);
 
   const loadPlacement = useCallback(
-    (i: number, list: string[]) => {
-      const id = list[i];
-      if (id === undefined) {
-        session.endPlacement();
+    (id: string) => {
+      const served = session.serveTest(id);
+      if (!served) {
+        // No test for this probe — take it as unanswered and ask the next.
+        const next = session.answerPlacement(false);
+        if (next) return loadPlacement(next.probe);
         setInPlacement(false);
         advance();
         return;
       }
-      const served = session.serveTest(id);
-      if (!served) return loadPlacement(i + 1, list);
       setSectionId(id);
       setTest(served);
       setQIndex(0);
@@ -232,11 +263,9 @@ export function App({ content, session, storage }: Props) {
       // starts one. Placement is otherwise lost to anything that reloads the
       // page — which on a phone is most ways a session ends.
       const run = session.placementState() ?? session.beginPlacement();
-      if (run.topics.length > 0) {
+      if (run) {
         setInPlacement(true);
-        setPlacementList(run.topics);
-        setPlacementIndex(run.index);
-        loadPlacement(run.index, run.topics);
+        loadPlacement(run.probe);
         return;
       }
       session.endPlacement();
@@ -260,22 +289,19 @@ export function App({ content, session, storage }: Props) {
       });
   }, [session, storage]);
 
+  /**
+   * A probe answered. Failing settles that one family and moves to the next
+   * rather than ending the test — knowing the declensions and not the verbs is
+   * a thing the placement has to be able to hear.
+   */
   const placementGrade = (rating: Rating) => {
     if (!sectionId) return;
-    if (rating >= 3) {
-      session.passPlacement(sectionId);
-      save();
-      const next = placementIndex + 1;
-      if (next < placementList.length) {
-        setPlacementIndex(next);
-        session.advancePlacement(next);
-        save();
-        loadPlacement(next, placementList);
-        return;
-      }
-    }
-    session.endPlacement();
+    const next = session.answerPlacement(rating >= 3);
     save();
+    if (next) {
+      loadPlacement(next.probe);
+      return;
+    }
     setInPlacement(false);
     advance();
   };
@@ -290,7 +316,6 @@ export function App({ content, session, storage }: Props) {
     submitted,
     isNewTopic,
     inPlacement,
-    placementIndex,
   });
 
   /**
@@ -309,7 +334,6 @@ export function App({ content, session, storage }: Props) {
     setSubmitted(undo.submitted);
     setIsNewTopic(undo.isNewTopic);
     setInPlacement(undo.inPlacement);
-    setPlacementIndex(undo.placementIndex);
     setInput("");
     setOverlay(null);
     setUndo(null); // one step back, no further
@@ -332,15 +356,22 @@ export function App({ content, session, storage }: Props) {
     // Taken before anything is written, so the undo covers the recorded answer
     // as well as the schedule — re-grading then leaves one attempt, not two.
     setUndo(takeUndo(phase));
+    // Kept before the grade is applied, so it covers placement too: what you
+    // wrote on a topic is worth having whichever pass it was written in. The
+    // CLI has always done this; the web app used to return first and lose it.
+    if (sectionId && question) {
+      session.recordAttempt(sectionId, {
+        prompt: question.prompt,
+        answer: question.answer,
+        submitted,
+        rating,
+      });
+    }
     if (inPlacement) return placementGrade(rating);
     if (!sectionId || !question) return;
-    session.recordAttempt(sectionId, {
-      prompt: question.prompt,
-      answer: question.answer,
-      submitted,
-      rating,
-    });
-    session.gradeTopic(sectionId, rating);
+    // The test's id names the round, so its four questions cost the topic one
+    // review rather than four — graded by the worst of them.
+    session.gradeTopic(sectionId, rating, new Date(), test?.id);
     save();
     if (test && qIndex + 1 < test.questions.length) {
       setQIndex(qIndex + 1);
@@ -380,6 +411,47 @@ export function App({ content, session, storage }: Props) {
         : null,
     );
     bump();
+  };
+
+  /**
+   * Take the syllabus up from a chosen topic: its family resumes there and
+   * becomes what new topics are drawn from.
+   *
+   * "Quiz me" is a look ahead and leaves nothing behind on purpose. This is the
+   * other thing the map is for, and the one that used to be impossible:
+   * knowing your declensions and wanting to start at the verbs, rather than
+   * being handed chapter one again after every jump.
+   */
+  const studyFrom = (topic: TopicProgress) => {
+    session.studyFrom(topic.sectionId);
+    if (inPlacement) {
+      session.endPlacement();
+      setInPlacement(false);
+    }
+    save();
+    setOverlay(null);
+    advance();
+    flash(`Studying from “${topic.title}”.`);
+  };
+
+  /**
+   * Stay on a topic and work the rest of its questions. Four questions do not
+   * sweep a bank of twenty-odd, so doing well on a test and being moved
+   * straight on is not the same as having the topic.
+   */
+  const drillTopic = (topic: TopicProgress) => {
+    const { answered, total } = session.coverage(topic.sectionId);
+    if (answered >= total) {
+      return flash(`Every question on “${topic.title}” has been answered.`);
+    }
+    session.drillTopic(topic.sectionId);
+    save();
+    setOverlay(null);
+    // Mid-round the questions on the table were asked and are not thrown away;
+    // the drill takes over when the round ends.
+    if (topic.sectionId !== sectionId) advance();
+    else bump();
+    flash(`Staying on “${topic.title}” — ${total - answered} more to go.`);
   };
 
   // --- vocabulary ----------------------------------------------------------
@@ -581,9 +653,11 @@ export function App({ content, session, storage }: Props) {
           </button>
         </div>
         <div className="status__row">
-          {inPlacement ? (
+          {inPlacement && placement ? (
             <span className="status__title">
-              Placement · {placementIndex + 1} of {placementList.length}
+              Placement · {familyLabel(placement.family)}
+              {placement.narrowing ? ", narrowing" : ""} · area{" "}
+              {placement.done + 1} of {placement.families}
             </span>
           ) : (
             <>
@@ -592,6 +666,24 @@ export function App({ content, session, storage }: Props) {
             </>
           )}
         </div>
+        {/* What new topics are being drawn from, and the way out of it. The
+            plain sweep through the book says nothing: it is not a mode. */}
+        {!inPlacement && focusLabel && (
+          <div className="status__row status__focus">
+            <span className="badge badge--focus">on {focusLabel}</span>
+            <button
+              className="linkbtn"
+              onClick={() => {
+                session.setFocus({ kind: "sweep" });
+                save();
+                bump();
+                flash("Back to the book in order.");
+              }}
+            >
+              back to the book
+            </button>
+          </div>
+        )}
       </header>
 
       <div className="study">
@@ -642,6 +734,12 @@ export function App({ content, session, storage }: Props) {
             onHoldWord={holdWord}
             onReadGrammar={() =>
               sectionId && setOverlay({ t: "grammar", sectionId })
+            }
+            onMore={
+              !inPlacement && topicHere && coverageHere &&
+              coverageHere.answered < coverageHere.total
+                ? () => drillTopic(topicHere)
+                : undefined
             }
             vocabulary={
               <QuestionVocabulary
@@ -754,6 +852,8 @@ export function App({ content, session, storage }: Props) {
                 setOverlay(null);
                 quizTopic(topic);
               }}
+              onStudyFrom={() => studyFrom(topic)}
+              onDrill={() => drillTopic(topic)}
               onQuestions={() =>
                 setOverlay({ t: "questions", sectionId: topic.sectionId })
               }
