@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Content,
   Session,
+  questionVocabulary,
   type LemmaEntry,
   type Progress,
   type Rating,
@@ -23,6 +24,7 @@ import { AttemptTrail, MapSheet, TopicSheet } from "./screens/Map.js";
 import { QuestionSheet, QuestionsSheet } from "./screens/Questions.js";
 import { ScheduleSheet } from "./screens/Schedule.js";
 import { SettingsSheet } from "./screens/Settings.js";
+import { QuestionVocabulary } from "./screens/Vocabulary.js";
 import {
   VocabEditSheet,
   VocabListSheet,
@@ -118,6 +120,7 @@ export function App({ content, session, storage }: Props) {
   const [toast, setToast] = useState<Flash | null>(null);
   const [dictLoading, setDictLoading] = useState(false);
   const [dictFailed, setDictFailed] = useState(false);
+  const [showVocab, setShowVocab] = useState(false); // the question's word list
   const [syncState, setSyncState] = useState<SyncState>(storage.currentState());
   const [tick, setTick] = useState(0);
   const [undo, setUndo] = useState<GradeUndo | null>(null); // the last grade, takeable
@@ -142,6 +145,19 @@ export function App({ content, session, storage }: Props) {
   const families = useMemo(() => session.familyProgress(), [session, tick]);
   const overall = useMemo(() => session.overallPercent(), [session, tick]);
   const stats = useMemo(() => session.stats(), [session, tick]);
+
+  // The words behind the question on screen. `dictLoading` is a dependency on
+  // purpose: everything looked up before the fetch landed resolved to nothing,
+  // and those rows must not be the ones kept.
+  const vocabulary = useMemo(
+    () => (question ? questionVocabulary(content, question) : []),
+    [question, content, dictLoading],
+  );
+  // One reset covering every way a new question arrives — advancing, grading,
+  // quizzing from the map, taking a grade back — rather than one line in each.
+  // Submitting is not one of them: that is the same sentence, so a list opened
+  // while writing is still open beside the answer.
+  useEffect(() => setShowVocab(false), [question?.prompt, sectionId]);
 
   // --- the loop ------------------------------------------------------------
 
@@ -394,6 +410,29 @@ export function App({ content, session, storage }: Props) {
     ensureDictionary();
   };
 
+  /**
+   * Show or hide the words behind the question.
+   *
+   * The dictionary is ~930 KB and is fetched only when something asks for it —
+   * an explicit open, never a prefetch, because most questions are answered
+   * without ever wanting this.
+   */
+  const toggleVocab = () => {
+    if (!showVocab) ensureDictionary();
+    setShowVocab((open) => !open);
+  };
+
+  /**
+   * Asks `dictionaryReady()` rather than reading `dictFailed`, which is false
+   * until a fetch has actually failed — so a device that has never fetched at
+   * all would otherwise be reported as ready and every word as unknown.
+   */
+  const dictStatus = dictLoading
+    ? "loading"
+    : dictionaryReady()
+      ? "ready"
+      : "unavailable";
+
   const lookupWord = (form: string) => {
     const candidates = content.lookup(form);
     if (candidates.length === 0) {
@@ -577,6 +616,14 @@ export function App({ content, session, storage }: Props) {
               setSubmitted("");
               setPhase({ t: "graded", revealed: true });
             }}
+            vocabulary={
+              <QuestionVocabulary
+                words={vocabulary}
+                open={showVocab}
+                status={dictStatus}
+                onToggle={toggleVocab}
+              />
+            }
           />
         )}
 
@@ -595,6 +642,14 @@ export function App({ content, session, storage }: Props) {
             onHoldWord={holdWord}
             onReadGrammar={() =>
               sectionId && setOverlay({ t: "grammar", sectionId })
+            }
+            vocabulary={
+              <QuestionVocabulary
+                words={vocabulary}
+                open={showVocab}
+                status={dictStatus}
+                onToggle={toggleVocab}
+              />
             }
           />
         )}

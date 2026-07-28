@@ -333,6 +333,97 @@ button {
   margin: 0 0 0.4rem;
 }
 
+/* --- the question's vocabulary -------------------------------------------- */
+
+/* Quiet by design: it is an aid the student asks for, not part of the question,
+   so closed it reads as one dim line under the prompt. */
+.crib {
+  margin: 0.2rem 0 1rem;
+}
+
+.crib__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  min-height: 2.4rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.crib__caret {
+  font-size: 0.7rem;
+  color: var(--text-faint);
+}
+
+.crib__list {
+  border-top: 1px solid var(--line);
+}
+
+.crib__status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.crib__status p {
+  margin: 0;
+}
+
+/* Two columns rather than a run-on line, so the English reads down the page as
+   its own list. `minmax` because "led" and "farmer's" are both English, and a
+   fixed column would strand one or clip the other. Not `.row`, which is a
+   `--tap`-height target: these are prose, and six of them at 44px would be more
+   chrome than sentence. */
+.crib-row {
+  display: grid;
+  grid-template-columns: minmax(4.5rem, 8rem) 1fr;
+  gap: 0 0.8rem;
+  align-items: baseline;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.crib-row:last-child {
+  border-bottom: none;
+}
+
+.crib-row__english {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  overflow-wrap: break-word;
+}
+
+.crib-row__english--none {
+  color: var(--text-faint);
+}
+
+/* Serif and gold: the house rule is serif for Latin, and gold is the colour a
+   reference answer wears everywhere else. This is the form to produce. */
+.crib-row__citation {
+  display: block;
+  font-family: var(--serif);
+  color: var(--gold);
+}
+
+.crib-row__gloss {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.crib-row__missing {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-faint);
+}
+
 /* --- buttons -------------------------------------------------------------- */
 
 .actions {

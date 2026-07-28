@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { Question, Rating, VocabCardState } from "@latin-tutor/core";
 import { GradeBar, HoldableLatin, Ring } from "../ui.js";
 
@@ -21,6 +22,7 @@ export function Answering({
   onChange,
   onSubmit,
   onReveal,
+  vocabulary,
 }: {
   question: Question;
   index: number;
@@ -29,6 +31,12 @@ export function Answering({
   onChange: (v: string) => void;
   onSubmit: () => void;
   onReveal: () => void;
+  /**
+   * The question's words, folded away. It sits above the box rather than below
+   * it because this is the screen where a beginner is stuck on a word, and a
+   * crib under the fold of a phone is a crib nobody finds.
+   */
+  vocabulary?: ReactNode;
 }) {
   return (
     <>
@@ -37,6 +45,7 @@ export function Answering({
           Translate into Latin · {index + 1}/{total}
         </p>
         <p className="prompt">{question.prompt}</p>
+        {vocabulary}
         <textarea
           className="answer-field"
           value={value}
@@ -92,6 +101,7 @@ export function Graded({
   onRecordWord,
   onHoldWord,
   onReadGrammar,
+  vocabulary,
 }: {
   question: Question;
   submitted: string;
@@ -108,6 +118,8 @@ export function Graded({
   /** A word held down in either sentence. */
   onHoldWord: (word: string) => void;
   onReadGrammar: () => void;
+  /** The question's words, folded away — the same panel as while writing. */
+  vocabulary?: ReactNode;
 }) {
   return (
     <>
@@ -116,6 +128,7 @@ export function Graded({
           Translate into Latin · {index + 1}/{total}
         </p>
         <p className="prompt">{question.prompt}</p>
+        {vocabulary}
 
         <div className="compare">
           {!revealed && (
