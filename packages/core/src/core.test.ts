@@ -109,9 +109,8 @@ describe("Session", () => {
     const t1 = s.serveTest("ag1");
     expect(t1?.sectionId).toBe("ag1");
 
-    // Grade it easy -> creates the card, advances the frontier.
+    // Grade it easy -> creates the card, which is what takes it off the list.
     s.gradeTopic("ag1", 4, now);
-    expect(s.progress().frontier).toBe("ag1");
     expect(s.progress().newTopicsIntroduced).toBe(1);
 
     // ag1 no longer due, so the next new topic is ag2.
@@ -131,15 +130,16 @@ describe("Session", () => {
     expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "ag2" });
   });
 
-  it("runs placement: passing a topic marks it (and earlier) known and sets the frontier", () => {
+  it("runs placement: a passed probe marks its family's topics known", () => {
     const s = new Session(new Content(fixture));
     expect(s.needsPlacement()).toBe(true);
-    expect(s.placementTopics()).toEqual(["ag1", "ag2"]); // both, evenly spaced
+    // Two noun topics, so the probe is the first and the narrowing one is ag2.
+    expect(s.beginPlacement()?.probe).toBe("ag1");
 
-    s.passPlacement("ag1");
-    s.endPlacement();
+    expect(s.answerPlacement(true)?.probe).toBe("ag2");
+    expect(s.answerPlacement(false)).toBeNull(); // no other family has topics
     expect(s.progress().knownSections).toContain("ag1");
-    expect(s.progress().frontier).toBe("ag1");
+    expect(s.progress().frontiers.nouns).toBe("ag2");
     expect(s.needsPlacement()).toBe(false);
 
     // ag1 is known and skipped; study begins at ag2.
@@ -194,17 +194,20 @@ describe("Session placement, resumed", () => {
   const reload = (s: Session) =>
     new Session(new Content(fixture), JSON.parse(JSON.stringify(s.progress())));
 
-  it("remembers the probes and the position across a restart", () => {
+  it("remembers which probe is on the table across a restart", () => {
     const s = new Session(new Content(fixture));
-    const run = s.beginPlacement();
-    expect(run.topics).toEqual(["ag1", "ag2"]);
-    s.passPlacement("ag1");
-    s.advancePlacement(1);
+    expect(s.beginPlacement()?.probe).toBe("ag1");
+    s.answerPlacement(true);
 
     // Passing a probe fills knownSections, which used to read as "placed".
     const back = reload(s);
     expect(back.needsPlacement()).toBe(true);
-    expect(back.placementState()).toEqual({ topics: ["ag1", "ag2"], index: 1 });
+    expect(back.placementState()).toEqual({
+      familyIndex: 0,
+      asked: 1,
+      passed: 0,
+      probe: "ag2",
+    });
   });
 
   it("stays in placement when a word is recorded mid-probe", () => {
@@ -213,8 +216,8 @@ describe("Session placement, resumed", () => {
     s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
 
     expect(s.needsPlacement()).toBe(true);
-    expect(s.placementState()?.index).toBe(0);
-    expect(reload(s).placementState()?.index).toBe(0);
+    expect(s.placementProbe()).toBe("ag1");
+    expect(reload(s).placementProbe()).toBe("ag1");
   });
 
   it("forgets the run once placement is over", () => {
@@ -229,12 +232,22 @@ describe("Session placement, resumed", () => {
     const s = new Session(new Content(fixture));
     s.beginPlacement();
     const before = s.snapshot();
-    s.passPlacement("ag1");
-    s.advancePlacement(1);
+    s.answerPlacement(true);
+    s.answerPlacement(true);
 
     s.restore(before);
-    expect(s.placementState()?.index).toBe(0);
+    expect(s.placementProbe()).toBe("ag1");
     expect(s.progress().knownSections).toEqual([]);
+    expect(s.progress().frontiers).toEqual({});
+  });
+
+  it("starts over on a run stored in the old evenly-spaced shape", () => {
+    const s = new Session(new Content(fixture));
+    // What a file written before per-family placement carries.
+    const old = { ...s.progress(), placement: { topics: ["ag1"], index: 0 } };
+    const back = new Session(new Content(fixture), JSON.parse(JSON.stringify(old)));
+    expect(back.placementState()).toBeUndefined();
+    expect(back.needsPlacement()).toBe(true);
   });
 });
 
@@ -371,8 +384,9 @@ describe("Session mastery", () => {
 
   it("reports placement-passed topics as mastered but assumed", () => {
     const s = new Session(new Content(fixture));
-    s.passPlacement("ag1");
-    s.endPlacement();
+    s.beginPlacement();
+    s.answerPlacement(true); // ag1 passed
+    s.answerPlacement(false); // ag2 failed, settling the family at ag1
     const t = s.grammarMap(now).find((x) => x.sectionId === "ag1")!;
     expect(t.mastery).toBe(4);
     expect(t.assumed).toBe(true);
@@ -494,5 +508,305 @@ describe("Session mastery", () => {
     expect(map.find((t) => t.sectionId === "ag1")?.due).toBe(true);
     expect(map.find((t) => t.sectionId === "ag3")?.hasTests).toBe(false);
     expect(map.find((t) => t.sectionId === "ag1")?.hasTests).toBe(true);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// The three ways to move through the book. A wider fixture than `fixture`:
+// two families, several topics each, and a bank per topic big enough that four
+// questions do not exhaust it.
+// ---------------------------------------------------------------------------
+
+/** `n` topics in `family`, ids `<prefix>1..n`, each with `tests` tests of two. */
+function topics(
+  family: string,
+  prefix: string,
+  n: number,
+  tests = 1,
+): Pick<ContentData, "grammar" | "tests"> {
+  const grammar: ContentData["grammar"] = [];
+  const bank: ContentData["tests"] = {};
+  for (let i = 1; i <= n; i++) {
+    const id = `${prefix}${i}`;
+    grammar.push({ id, ref: String(i), title: `${prefix} ${i}`, family, text: "…", order: i });
+    bank[id] = Array.from({ length: tests }, (_, t) => ({
+      id: `${id}-t${t + 1}`,
+      sectionId: id,
+      questions: [
+        { prompt: `${id} q${t * 2 + 1}`, answer: "a", kind: "parse" as const, vocab: [] },
+        { prompt: `${id} q${t * 2 + 2}`, answer: "b", kind: "parse" as const, vocab: [] },
+      ],
+    }));
+  }
+  return { grammar, tests: bank };
+}
+
+/** Families are laid out in book order, so `order` has to run across them. */
+function book(...parts: Pick<ContentData, "grammar" | "tests">[]): ContentData {
+  let order = 0;
+  const grammar: ContentData["grammar"] = [];
+  const tests: ContentData["tests"] = {};
+  for (const part of parts) {
+    for (const s of part.grammar) grammar.push({ ...s, order: ++order });
+    Object.assign(tests, part.tests);
+  }
+  return { grammar, tests };
+}
+
+/** Three nouns and three verb-forms topics, three tests (six questions) each. */
+const wide = book(topics("nouns", "n", 3, 3), topics("verb-forms", "v", 3, 3));
+
+describe("Session progress: the sweep", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+
+  it("walks the book in order on a fresh deck — the quick refresher", () => {
+    const s = new Session(new Content(wide));
+    const served: string[] = [];
+    for (let i = 0; i < 6; i++) {
+      const action = s.next(now);
+      expect(action.kind).toBe("new-topic");
+      if (action.kind !== "new-topic") return;
+      served.push(action.sectionId);
+      // Graded 'easy' so it does not come back as a review mid-walk.
+      s.gradeTopic(action.sectionId, 4, now);
+    }
+    expect(served).toEqual(["n1", "n2", "n3", "v1", "v2", "v3"]);
+    expect(s.next(now)).toEqual({ kind: "done" });
+  });
+
+  it("starts each family at its own frontier, so one area can be ahead", () => {
+    const s = new Session(new Content(wide));
+    // Placed halfway through the nouns and nowhere in the verbs.
+    s.studyFrom("n3");
+    s.setFocus({ kind: "sweep" });
+    s.studyFrom("v1");
+    s.setFocus({ kind: "sweep" });
+
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n3" });
+    s.gradeTopic("n3", 4, now);
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v1" });
+  });
+
+  it("comes back for the topics the frontiers skipped, once nothing is ahead", () => {
+    const s = new Session(new Content(wide));
+    for (const id of ["n3", "v3"]) {
+      s.studyFrom(id);
+      s.gradeTopic(id, 4, now);
+    }
+    s.setFocus({ kind: "sweep" });
+    // Both families are worked out from their frontiers on, but the book is
+    // not: the topics jumped over are offered rather than reporting "done".
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n1" });
+    s.gradeTopic("n1", 4, now);
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n2" });
+  });
+});
+
+describe("Session progress: taking the syllabus up from a chosen topic", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+
+  it("goes on from where you jumped to, not back to the beginning", () => {
+    const s = new Session(new Content(wide));
+    s.studyFrom("v2");
+
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v2" });
+    s.gradeTopic("v2", 4, now, "v2-t1");
+    // The bug this fixes: `next` used to answer "n1" here, every time.
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v3" });
+  });
+
+  it("leaves the skipped topics unstudied on the map rather than known", () => {
+    const s = new Session(new Content(wide));
+    s.studyFrom("v2");
+    const map = s.grammarMap(now);
+    expect(map.find((t) => t.sectionId === "v1")?.mastery).toBeUndefined();
+    expect(map.find((t) => t.sectionId === "v1")?.assumed).toBe(false);
+    expect(map.find((t) => t.sectionId === "v2")?.frontier).toBe(true);
+    expect(s.progress().knownSections).toEqual([]);
+  });
+
+  it("works the focused family out, then falls back to the sweep", () => {
+    const s = new Session(new Content(wide));
+    s.studyFrom("v1");
+    expect(s.focusState()).toEqual({ kind: "family", id: "verb-forms" });
+
+    for (const id of ["v1", "v2", "v3"]) {
+      expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: id });
+      s.gradeTopic(id, 4, now);
+    }
+    // The family is spent, so the focus is too, and the nouns are next.
+    expect(s.focusState()).toEqual({ kind: "sweep" });
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n1" });
+  });
+});
+
+describe("Session progress: staying on a topic", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  /** Answer one whole served test, the way the apps do. */
+  const round = (s: Session, id: string, rating: 1 | 2 | 3 | 4 = 3) => {
+    const test = s.serveTest(id, { prefer: "unanswered" })!;
+    for (const q of test.questions) {
+      s.recordAttempt(id, { prompt: q.prompt, answer: q.answer, submitted: q.answer, rating }, now);
+      s.gradeTopic(id, rating, now, test.id);
+    }
+    return test;
+  };
+
+  it("keeps serving the same topic until its bank is worked out", () => {
+    const s = new Session(new Content(wide));
+    s.drillTopic("n1");
+
+    // Six questions in three tests of two: three rounds to sweep the bank.
+    for (let i = 0; i < 3; i++) {
+      expect(s.next(now)).toEqual({ kind: "drill", sectionId: "n1" });
+      round(s, "n1");
+    }
+    expect(s.coverage("n1")).toEqual({ answered: 6, total: 6 });
+    // Nothing left to practise here, so the drill releases itself.
+    expect(s.focusState()).toEqual({ kind: "sweep" });
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n2" });
+  });
+
+  it("serves questions never answered before, rather than rotating tests", () => {
+    const s = new Session(new Content(wide));
+    s.drillTopic("n1");
+    const asked: string[] = [];
+    for (let i = 0; i < 3; i++) {
+      asked.push(...round(s, "n1").questions.map((q) => q.prompt));
+    }
+    // Every question once — no repeat while any of the bank is untouched.
+    expect(new Set(asked).size).toBe(6);
+  });
+
+  it("still lets reviews and words come back while a drill is on", () => {
+    const s = new Session(new Content(wide));
+    s.gradeTopic("n2", 1, now); // due again in minutes
+    s.drillTopic("n1");
+    const soon = new Date("2026-01-01T00:30:00Z");
+    expect(s.next(soon)).toEqual({ kind: "topic-review", sectionId: "n2" });
+  });
+});
+
+describe("Session progress: a round of questions is one review", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+
+  it("costs the card one rep however many questions the round holds", () => {
+    const s = new Session(new Content(wide));
+    for (let i = 0; i < 4; i++) s.gradeTopic("n1", 3, now, "n1-t1");
+    expect(s.progress().topicCards.n1!.reps).toBe(1);
+    // Mastery is still per question — it counts what you got right.
+    expect(s.grammarMap(now).find((t) => t.sectionId === "n1")?.mastery).toBe(4);
+  });
+
+  it("schedules the round by its worst grade", () => {
+    const s = new Session(new Content(wide));
+    s.gradeTopic("n1", 4, now, "r");
+    s.gradeTopic("n1", 1, now, "r"); // one failed, so the round failed
+    s.gradeTopic("n1", 4, now, "r");
+
+    const alone = new Session(new Content(wide));
+    alone.gradeTopic("n1", 1, now);
+    expect(s.progress().topicCards.n1!.due).toBe(alone.progress().topicCards.n1!.due);
+  });
+
+  it("starts a new round on a new test, building on the last one", () => {
+    const s = new Session(new Content(wide));
+    s.gradeTopic("n1", 3, now, "n1-t1");
+    s.gradeTopic("n1", 3, now, "n1-t1");
+    s.gradeTopic("n1", 3, now, "n1-t2");
+    expect(s.progress().topicCards.n1!.reps).toBe(2);
+  });
+
+  it("rates per grade when no round is named, which is what a probe wants", () => {
+    const s = new Session(new Content(wide));
+    for (let i = 0; i < 4; i++) s.gradeTopic("n1", 3, now);
+    expect(s.progress().topicCards.n1!.reps).toBe(4);
+    expect(s.progress().openRound).toBeNull();
+  });
+
+  it("leaves one rep behind when a round is abandoned halfway", () => {
+    const s = new Session(new Content(wide));
+    s.gradeTopic("n1", 3, now, "n1-t1");
+    s.gradeTopic("n1", 3, now, "n1-t1");
+    // As if the terminal were closed here.
+    const back = new Session(new Content(wide), JSON.parse(JSON.stringify(s.progress())));
+    expect(back.progress().topicCards.n1!.reps).toBe(1);
+  });
+
+  it("takes an undo back across a round's earlier questions", () => {
+    const s = new Session(new Content(wide));
+    s.gradeTopic("n1", 4, now, "n1-t1");
+    const before = s.snapshot();
+    s.gradeTopic("n1", 1, now, "n1-t1"); // the round now stands at 'again'
+    const failed = s.progress().topicCards.n1!.due;
+
+    s.restore(before);
+    expect(s.progress().topicCards.n1!.due).not.toBe(failed);
+    // Re-grading from the restored point counts once, not twice.
+    s.gradeTopic("n1", 1, now, "n1-t1");
+    expect(s.progress().topicCards.n1!.due).toBe(failed);
+    expect(s.progress().topicCards.n1!.reps).toBe(1);
+  });
+});
+
+describe("Session placement, per family", () => {
+  it("probes the middle of each family and narrows above a pass", () => {
+    // Nine nouns, the shipped count, so the indices are the real ones.
+    const s = new Session(new Content(book(topics("nouns", "n", 9))));
+    expect(s.beginPlacement()?.probe).toBe("n5"); // 5 of 9
+    expect(s.answerPlacement(true)?.probe).toBe("n7"); // 7 of 9
+    expect(s.answerPlacement(true)).toBeNull();
+    expect(s.progress().frontiers.nouns).toBe("n8"); // start at 8
+    expect(s.progress().knownSections).toHaveLength(7);
+  });
+
+  it("asks one probe of a family it fails, and stops narrowing there", () => {
+    const s = new Session(new Content(book(topics("verb-forms", "v", 35))));
+    expect(s.beginPlacement()?.probe).toBe("v18"); // 18 of 35
+    expect(s.answerPlacement(false)).toBeNull();
+    expect(s.progress().frontiers["verb-forms"]).toBeUndefined(); // start at 1
+    expect(s.progress().knownSections).toEqual([]);
+  });
+
+  it("carries on past a failed family — the declensions-but-not-the-verbs case", () => {
+    const s = new Session(new Content(book(topics("nouns", "n", 3), topics("verb-forms", "v", 3))));
+    expect(s.beginPlacement()?.probe).toBe("n2");
+    expect(s.answerPlacement(true)?.probe).toBe("n3"); // narrowing the nouns
+    // Failing does not end the run: the verbs still get asked.
+    expect(s.answerPlacement(false)?.probe).toBe("v2");
+    expect(s.answerPlacement(false)).toBeNull();
+
+    expect(s.progress().frontiers).toEqual({ nouns: "n3" });
+    // Only nouns were claimed — never a prefix of the whole book.
+    expect(s.progress().knownSections).toEqual(["n1", "n2"]);
+
+    const now = new Date("2026-01-01T00:00:00Z");
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n3" });
+    s.gradeTopic("n3", 4, now);
+    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v1" });
+  });
+
+  it("says which family is being asked and how far through the test is", () => {
+    const s = new Session(new Content(wide));
+    s.beginPlacement();
+    expect(s.placementProgress()).toEqual({
+      family: "nouns",
+      done: 0,
+      families: 2,
+      narrowing: false,
+    });
+    // A second probe pins the same family down; it is not a new area.
+    s.answerPlacement(true);
+    expect(s.placementProgress()).toMatchObject({ family: "nouns", done: 0, narrowing: true });
+    s.answerPlacement(false);
+    expect(s.placementProgress()).toMatchObject({ family: "verb-forms", done: 1 });
+  });
+
+  it("takes a family of one without asking a second probe", () => {
+    const s = new Session(new Content(book(topics("nouns", "n", 1))));
+    expect(s.beginPlacement()?.probe).toBe("n1");
+    expect(s.answerPlacement(true)).toBeNull();
+    expect(s.progress().knownSections).toEqual(["n1"]);
+    expect(s.progress().frontiers.nouns).toBeUndefined(); // nothing left to resume at
   });
 });

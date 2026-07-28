@@ -29,6 +29,7 @@ export {
   Session,
   type Action,
   type BankedQuestion,
+  type Coverage,
   type ScheduleEntry,
   type TopicProgress,
   type FamilyProgress,
