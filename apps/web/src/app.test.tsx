@@ -140,15 +140,22 @@ beforeEach(() => {
 });
 
 describe("the study loop", () => {
-  it("opens on placement, and a failed probe starts study at the beginning", async () => {
+  it("carries on past a failed area, then starts study at the beginning", async () => {
     const user = userEvent.setup();
     const { session } = mount();
 
     expect(inPlacement()).toBe(true);
+    expect(screen.getByText(/Placement · Nouns/)).toBeDefined();
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /No idea/ }));
 
-    // Failing the first probe ends placement and leaves nothing assumed known.
+    // Failing the nouns settles them at their start and asks about the verbs
+    // instead of stopping: not knowing one area says nothing about the others.
+    expect(session.progress().placementDone).toBe(false);
+    expect(screen.getByText(/Placement · Verb forms/)).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /No idea/ }));
     expect(session.progress().placementDone).toBe(true);
     expect(session.progress().knownSections).toEqual([]);
     // Study begins at the first topic. Its title is in the status bar and again
@@ -156,16 +163,19 @@ describe("the study loop", () => {
     expect(document.querySelector(".status__title")?.textContent).toBe(
       "First declension",
     );
+    // What was written on a probe is kept, the way the CLI has always kept it.
+    expect(session.attemptsFor("decl1")).toHaveLength(1);
   });
 
   it("stays in placement while a word is recorded, and resumes it after a reload", async () => {
     const user = userEvent.setup();
     const { session } = mount();
 
-    // Pass the first probe, so placement is genuinely mid-run.
+    // Pass the first probe, so placement is genuinely mid-run. Passing narrows
+    // within the same area rather than moving on to the next.
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Knew it/ }));
-    expect(screen.getByText(/Placement · 2 of/)).toBeDefined();
+    expect(screen.getByText(/Placement · Nouns, narrowing/)).toBeDefined();
 
     // Recording a word is an aside, not an exit: the probe is still on screen.
     await user.click(screen.getByRole("button", { name: "Reveal" }));
@@ -174,26 +184,30 @@ describe("the study loop", () => {
     await user.click(screen.getByRole("button", { name: "Look up" }));
     expect(session.vocabCard("v-rex")).toBeDefined();
     expect(inPlacement()).toBe(true);
-    expect(screen.getByText(/Placement · 2 of/)).toBeDefined();
+    expect(screen.getByText(/Placement · Nouns, narrowing/)).toBeDefined();
 
     // And the run itself outlives the page: passing a probe fills knownSections,
     // which used to make a reload look like a finished placement.
     cleanup();
     mount(new SyncingStorage().read() ?? undefined);
     expect(inPlacement()).toBe(true);
-    expect(screen.getByText(/Placement · 2 of/)).toBeDefined();
+    expect(screen.getByText(/Placement · Nouns, narrowing/)).toBeDefined();
   });
 
-  it("takes topics as known up to a passed placement probe", async () => {
+  it("takes an area's topics as known up to its passed probe, and no further", async () => {
     const user = userEvent.setup();
     const { session } = mount();
 
-    // "Knew it" on the first probe passes it and everything before it.
+    // Pass the nouns probe, then miss the one narrowing above it.
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Knew it/ }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /No idea/ }));
 
-    expect(session.progress().knownSections).toContain("decl1");
-    expect(session.progress().frontier).toBe("decl1");
+    expect(session.progress().knownSections).toEqual(["decl1"]);
+    // The nouns resume above the probe that passed; the verbs, asked about
+    // separately, claim nothing at all.
+    expect(session.progress().frontiers).toEqual({ nouns: "decl2" });
   });
 
   it("shows what was written beside the reference, then grades", async () => {
@@ -551,7 +565,9 @@ describe("a section's questions", () => {
     const list = screen.getByRole("dialog", { name: "All questions" });
     expect(within(list).getByText("Puella rosam amat.")).toBeDefined();
     expect(within(list).getByText("Nautae procellam timēbant.")).toBeDefined();
-    expect(within(list).getByText(/1 answer · last hard/)).toBeDefined();
+    // Two: the placement probe asked this same question first, and what was
+    // written on it is kept.
+    expect(within(list).getByText(/2 answers · last hard/)).toBeDefined();
     expect(within(list).getByText("not answered yet")).toBeDefined();
 
     await user.click(within(list).getByRole("button", { name: /The girl loves the rose/ }));
@@ -561,7 +577,7 @@ describe("a section's questions", () => {
     expect(within(one).getByText(/hard/)).toBeDefined();
     // The prompt is the sheet's own heading, so it is not repeated per answer.
     expect(within(one).queryByText("The girl loves the rose.")).toBeDefined();
-    expect(session.attemptsForQuestion("decl1", "The girl loves the rose.")).toHaveLength(1);
+    expect(session.attemptsForQuestion("decl1", "The girl loves the rose.")).toHaveLength(2);
   });
 });
 
@@ -625,10 +641,11 @@ describe("taking things back", () => {
     expect(screen.getByText("The girl loves the rose.")).toBeDefined();
     expect(screen.getByText("You wrote")).toBeDefined();
     expect(sentences()).toEqual(["Puella rosam amat.", "Puella rosam amat."]);
-    // …and so is the engine: no card, no mastery, no attempt.
+    // …and so is the engine: no card, no mastery, and the trail back to the
+    // one answer placement left on this topic before study began.
     expect(session.progress().topicCards.decl1).toBeUndefined();
     expect(session.progress().topicMastery.decl1).toBeUndefined();
-    expect(session.attemptsFor("decl1")).toHaveLength(0);
+    expect(session.attemptsFor("decl1")).toHaveLength(1);
 
     // One grade deep and no further: nothing older waits behind it.
     expect(screen.queryByRole("button", { name: "Undo last grade" })).toBeNull();
@@ -636,7 +653,7 @@ describe("taking things back", () => {
     // Grading again applies once, not twice.
     await user.click(screen.getByRole("button", { name: /Easy/ }));
     expect(session.progress().topicMastery.decl1).toBe(2);
-    expect(session.attemptsFor("decl1")).toHaveLength(1);
+    expect(session.attemptsFor("decl1")).toHaveLength(2);
     expect(session.attemptsFor("decl1")[0]?.rating).toBe(4);
   });
 
@@ -826,5 +843,94 @@ describe("the question's vocabulary", () => {
     expect(
       screen.getByText(/dictionary hasn’t been saved to this device/),
     ).toBeDefined();
+  });
+});
+
+describe("the three ways to move through the book", () => {
+  /** The topic the status bar says is being studied. */
+  const onScreen = () =>
+    document.querySelector(".status__title")?.textContent ?? "";
+
+  /** Open the map, expand a family, and pick a topic's row inside it. */
+  const pickTopic = async (
+    user: ReturnType<typeof userEvent.setup>,
+    family: RegExp,
+    name: RegExp,
+  ) => {
+    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: family }));
+    await user.click(screen.getByRole("button", { name }));
+  };
+
+  it("quizzes a topic without moving where study is", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    await pickTopic(user, /Verb forms/, /Present indicative/);
+    await user.click(screen.getByRole("button", { name: "Quiz me" }));
+    expect(onScreen()).toBe("Present indicative");
+
+    // "Quiz me" is a look ahead and leaves nothing behind on purpose.
+    expect(session.progress().frontiers).toEqual({});
+    expect(session.focusState()).toEqual({ kind: "sweep" });
+  });
+
+  it("carries study on from the topic Study from here was tapped on", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    expect(onScreen()).toBe("First declension");
+
+    await pickTopic(user, /Verb forms/, /Present indicative/);
+    await user.click(screen.getByRole("button", { name: "Study from here" }));
+
+    expect(session.progress().frontiers).toEqual({ "verb-forms": "pres" });
+    expect(onScreen()).toBe("Present indicative");
+    expect(screen.getByText("on Verb forms")).toBeDefined();
+
+    // The way out is on screen beside it, and it goes back to the book.
+    await user.click(screen.getByRole("button", { name: "back to the book" }));
+    expect(session.focusState()).toEqual({ kind: "sweep" });
+  });
+
+  it("stays on a topic and works the questions a test never reached", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    // One of this topic's two questions has been answered, by the probe.
+    expect(session.coverage("decl1")).toEqual({ answered: 1, total: 2 });
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /more of this/ }));
+    expect(screen.getByText(/Staying on “First declension”/)).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(onScreen()).toBe("First declension");
+    // The one question nobody had answered is the one it serves.
+    expect(screen.getByText("The sailors feared the storm.")).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(session.coverage("decl1")).toEqual({ answered: 2, total: 2 });
+    // Nothing left to practise, so the drill lets go and the book resumes.
+    expect(session.focusState()).toEqual({ kind: "sweep" });
+    expect(onScreen()).toBe("Second declension");
+  });
+
+  it("costs a topic one review per round of questions, not one per question", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    // decl1's test holds two questions; both are one round.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    expect(session.progress().topicCards.decl1!.reps).toBe(1);
+    // Mastery still counts every question answered.
+    expect(session.progress().topicMastery.decl1).toBe(3);
   });
 });

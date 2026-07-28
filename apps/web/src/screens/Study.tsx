@@ -101,6 +101,7 @@ export function Graded({
   onRecordWord,
   onHoldWord,
   onReadGrammar,
+  onMore,
   vocabulary,
 }: {
   question: Question;
@@ -118,6 +119,12 @@ export function Graded({
   /** A word held down in either sentence. */
   onHoldWord: (word: string) => void;
   onReadGrammar: () => void;
+  /**
+   * Stay on this topic rather than being moved on. Absent when there is no
+   * more of it to have — a topic whose bank is worked out, or a placement
+   * probe, which is not a topic you are studying.
+   */
+  onMore?: () => void;
   /** The question's words, folded away — the same panel as while writing. */
   vocabulary?: ReactNode;
 }) {
@@ -160,6 +167,7 @@ export function Graded({
         <button onClick={onResume}>✎ keep writing</button>
         <button onClick={onRecordWord}>+ record a word</button>
         <button onClick={onReadGrammar}>§ grammar</button>
+        {onMore && <button onClick={onMore}>↻ more of this</button>}
       </div>
       <GradeBar onGrade={onGrade} schedule={schedule} labels={labels} />
     </>
