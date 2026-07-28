@@ -13,6 +13,8 @@ import {
   Content,
   Session,
   questionVocabulary,
+  familyLabel,
+  familyOf,
   type FamilyProgress,
   type LemmaEntry,
   type Progress,
@@ -94,7 +96,6 @@ interface GradeUndo {
   submitted: string;
   isNewTopic: boolean;
   inPlacement: boolean;
-  placementIndex: number;
 }
 
 export function App({ session, content, storage }: Props) {
@@ -106,17 +107,18 @@ export function App({ session, content, storage }: Props) {
   const [qIndex, setQIndex] = useState(0);
   const [isNewTopic, setIsNewTopic] = useState(false);
 
+  // The run itself lives in progress — which probe, which family, what has
+  // passed — so this is only whether the loop is driving it.
   const [inPlacement, setInPlacement] = useState(false);
-  const [placementList, setPlacementList] = useState<string[]>([]);
-  const [placementIndex, setPlacementIndex] = useState(0);
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
   const [showGrammar, setShowGrammar] = useState(false);
   const [showHistory, setShowHistory] = useState(false);
   const [showVocab, setShowVocab] = useState(false); // the question's word list
-  // Enter on the map serves a test at once; from a half-written answer or a
-  // placement run that costs something, so it is asked for twice.
-  const [confirmQuiz, setConfirmQuiz] = useState(false);
+  // Enter and f on the map both act at once; from a half-written answer or a
+  // placement run that costs something, so they are asked for twice. Which of
+  // the two is waiting, so the second press does what the warning named.
+  const [confirmMap, setConfirmMap] = useState<null | "quiz" | "study">(null);
   const [input, setInput] = useState(""); // current typed answer / vocab form
   const [submitted, setSubmitted] = useState(""); // the answer the student submitted
   const [flash, setFlash] = useState<string | null>(null);
@@ -277,7 +279,12 @@ export function App({ session, content, storage }: Props) {
       setPhase({ t: "vocab-review-front", cardId: action.cardId });
       return;
     }
-    const t = session.serveTest(action.sectionId);
+    // A drill is asking for the rest of a topic, so it wants the questions it
+    // has not met rather than whichever test the rotation comes to next.
+    const t = session.serveTest(
+      action.sectionId,
+      action.kind === "drill" ? { prefer: "unanswered" } : undefined,
+    );
     if (!t) {
       session.gradeTopic(action.sectionId, 3);
       advance();
@@ -292,13 +299,12 @@ export function App({ session, content, storage }: Props) {
     setTick((n) => n + 1);
   };
 
-  const loadPlacement = (i: number, list: string[]) => {
-    const id = list[i]!;
+  const loadPlacement = (id: string) => {
     const t = session.serveTest(id);
     if (!t) {
-      // no test for this topic — skip it
-      if (i + 1 < list.length) return loadPlacement(i + 1, list);
-      session.endPlacement();
+      // No test for this probe — take it as unanswered and ask the next.
+      const next = session.answerPlacement(false);
+      if (next) return loadPlacement(next.probe);
       setInPlacement(false);
       advance();
       return;
@@ -328,11 +334,9 @@ export function App({ session, content, storage }: Props) {
       // starts one. Without this, a placement interrupted by closing the
       // terminal is simply lost — and study restarts at chapter one.
       const run = session.placementState() ?? session.beginPlacement();
-      if (run.topics.length > 0) {
+      if (run) {
         setInPlacement(true);
-        setPlacementList(run.topics);
-        setPlacementIndex(run.index);
-        loadPlacement(run.index, run.topics);
+        loadPlacement(run.probe);
         return;
       }
       session.endPlacement();
@@ -346,23 +350,19 @@ export function App({ session, content, storage }: Props) {
     setPhase({ t: "graded" });
   };
 
+  /**
+   * A probe answered. Failing settles that one family and moves to the next
+   * rather than ending the test — knowing the declensions and not the verbs is
+   * a thing the placement has to be able to hear.
+   */
   const placementGrade = (rating: Rating) => {
     if (!sectionId) return;
-    if (rating >= 3) {
-      session.passPlacement(sectionId);
-      save();
-      const ni = placementIndex + 1;
-      if (ni < placementList.length) {
-        setPlacementIndex(ni);
-        session.advancePlacement(ni);
-        save();
-        loadPlacement(ni, placementList);
-        return;
-      }
-    }
-    // failed (1–2) or passed the last probe — placement is done
-    session.endPlacement();
+    const next = session.answerPlacement(rating >= 3);
     save();
+    if (next) {
+      loadPlacement(next.probe);
+      return;
+    }
     setInPlacement(false);
     advance();
   };
@@ -377,7 +377,6 @@ export function App({ session, content, storage }: Props) {
     submitted,
     isNewTopic,
     inPlacement,
-    placementIndex,
   });
 
   const gradeAndContinue = (rating: Rating) => {
@@ -396,7 +395,9 @@ export function App({ session, content, storage }: Props) {
     }
     if (inPlacement) return placementGrade(rating);
     if (!sectionId) return;
-    session.gradeTopic(sectionId, rating);
+    // The test's id names the round, so its four questions cost the topic one
+    // review rather than four — graded by the worst of them.
+    session.gradeTopic(sectionId, rating, new Date(), test?.id);
     save();
     setTick((n) => n + 1);
     if (test && qIndex + 1 < test.questions.length) {
@@ -428,7 +429,6 @@ export function App({ session, content, storage }: Props) {
     setSubmitted(undo.submitted);
     setIsNewTopic(undo.isNewTopic);
     setInPlacement(undo.inPlacement);
-    setPlacementIndex(undo.placementIndex);
     setInput("");
     setShowGrammar(false);
     setShowHistory(false);
@@ -480,7 +480,7 @@ export function App({ session, content, storage }: Props) {
     if (i < 0) i = mapTopics.findIndex((t) => t.mastery === undefined);
     setMapIndex(i < 0 ? 0 : i);
     setFlash(null);
-    setConfirmQuiz(false);
+    setConfirmMap(null);
     setPhase({ t: "map", from });
   };
 
@@ -561,8 +561,8 @@ export function App({ session, content, storage }: Props) {
     const target = mapTopics[mapIndex];
     if (!target) return;
     const costly = from.t === "answering" || inPlacement;
-    if (costly && !confirmQuiz) {
-      setConfirmQuiz(true);
+    if (costly && confirmMap !== "quiz") {
+      setConfirmMap("quiz");
       setFlash(
         inPlacement
           ? `Press Enter again to stop the placement test and quiz “${target.title}”.`
@@ -583,7 +583,7 @@ export function App({ session, content, storage }: Props) {
       session.endPlacement();
       setInPlacement(false);
     }
-    setConfirmQuiz(false);
+    setConfirmMap(null);
     save();
     const fresh = target.mastery === undefined;
     setFlash(null);
@@ -598,6 +598,67 @@ export function App({ session, content, storage }: Props) {
     setShowVocab(false);
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
+  };
+
+  /**
+   * Take the syllabus up from the topic under the cursor: its family resumes
+   * there and becomes the focus, and study carries on from it.
+   *
+   * Enter's one-off quiz leaves nothing behind on purpose — it is for looking
+   * ahead. This is the other thing a student wants from the map, and the one
+   * that used to be impossible: knowing your declensions and wanting to start
+   * at the verbs, rather than being handed chapter one again after every jump.
+   */
+  const studySelected = (from: Origin) => {
+    const target = mapTopics[mapIndex];
+    if (!target) return;
+    const costly = from.t === "answering" || inPlacement;
+    if (costly && confirmMap !== "study") {
+      setConfirmMap("study");
+      setFlash(
+        inPlacement
+          ? `Press f again to stop the placement test and study from “${target.title}”.`
+          : `Press f again to leave the answer you are writing and study from “${target.title}”.`,
+      );
+      return;
+    }
+    session.studyFrom(target.sectionId);
+    if (inPlacement) {
+      session.endPlacement();
+      setInPlacement(false);
+    }
+    setConfirmMap(null);
+    save();
+    setFlash(null);
+    advance();
+  };
+
+  /**
+   * Stay on the topic just answered and work the rest of its questions.
+   *
+   * Four questions do not sweep a bank of twenty-odd, so doing well on a test
+   * and being moved straight on is not the same as having the topic. This is
+   * the way to say "not yet".
+   *
+   * It takes effect when the round ends rather than at once: the questions
+   * still on the table were asked, and throwing them away is not what "more of
+   * this" means.
+   */
+  const drillHere = () => {
+    if (!sectionId) return;
+    const { answered, total } = session.coverage(sectionId);
+    if (answered >= total) {
+      setFlash(`Every question on “${section?.title}” has been answered.`);
+      return;
+    }
+    session.drillTopic(sectionId);
+    save();
+    setTick((n) => n + 1);
+    setFlash(
+      `Staying on “${section?.title}” — ${total - answered} more question${
+        total - answered === 1 ? "" : "s"
+      } to go.`,
+    );
   };
 
   useInput((ch, key) => {
@@ -684,6 +745,7 @@ export function App({ session, content, storage }: Props) {
           setShowHistory(false);
           setShowVocab((s) => !s);
         } else if (ch === "m") openMap({ t: "graded" });
+        else if (ch === ".") drillHere(); // more of this topic before moving on
         else if (ch === "s") openSchedule({ t: "graded" });
         else if (ch === "V") openVocabList({ t: "graded" });
         else if (ch === "u") undoSubmit(); // Enter came too early
@@ -696,24 +758,25 @@ export function App({ session, content, storage }: Props) {
       case "map": {
         // Any move renames the topic the warning was about, so the warning goes.
         if (key.leftArrow) {
-          setConfirmQuiz(false);
+          setConfirmMap(null);
           setMapIndex((i) => Math.max(0, i - 1));
         } else if (key.rightArrow) {
-          setConfirmQuiz(false);
+          setConfirmMap(null);
           setMapIndex((i) => Math.min(mapTopics.length - 1, i + 1));
         } else if (key.upArrow) {
-          setConfirmQuiz(false);
+          setConfirmMap(null);
           jumpFamily(-1);
         } else if (key.downArrow) {
-          setConfirmQuiz(false);
+          setConfirmMap(null);
           jumpFamily(1);
         } else if (key.return) quizSelected(phase.from);
+        else if (ch === "f") studySelected(phase.from);
         else if (ch === "g") setPhase({ t: "read", from: phase.from });
         else if (ch === "a") setPhase({ t: "bank", from: phase.from });
         else if (ch === "s") openSchedule(phase);
         else if (ch === "w") showWordsFor(phase.from);
         else if (key.escape || ch === "m") {
-          setConfirmQuiz(false);
+          setConfirmMap(null);
           setPhase(phase.from);
         }
         break;
@@ -846,24 +909,48 @@ export function App({ session, content, storage }: Props) {
   });
 
   const stats = useMemo(() => session.stats(), [tick, session]);
+  const placement = useMemo(
+    () => (inPlacement ? session.placementProgress() : undefined),
+    [tick, session, inPlacement],
+  );
+  const focus = useMemo(() => session.focusState(), [tick, session]);
+  const coverageHere = useMemo(
+    () => (sectionId ? session.coverage(sectionId) : null),
+    [sectionId, tick, session],
+  );
+  // What the focus is called on screen, and nothing at all for the sweep —
+  // the plain walk through the book is not a mode to be told about.
+  const focusLabel = useMemo(() => {
+    if (focus.kind === "family") return familyLabel(familyOf(focus.id));
+    if (focus.kind === "topic") {
+      const { answered, total } = session.coverage(focus.sectionId);
+      const title = content.getSection(focus.sectionId)?.title ?? "this topic";
+      return `${title} · ${answered}/${total} questions`;
+    }
+    return null;
+  }, [focus, tick, session, content]);
 
   return (
     <Box flexDirection="column" paddingX={1}>
       <StatusBar
         stats={stats}
         section={
-          inPlacement
-            ? `Placement ${placementIndex + 1}/${placementList.length}`
+          placement
+            ? `Placement ${placement.done + 1}/${placement.families} · ${familyLabel(
+                placement.family,
+              )}${placement.narrowing ? ", narrowing" : ""}`
             : section?.title ?? "—"
         }
         isNew={isNewTopic && !phase.t.startsWith("vocab-review")}
         placement={inPlacement}
+        focus={inPlacement ? null : focusLabel}
       />
 
       {inPlacement && (
         <Box marginBottom={1}>
           <Text color="yellow">
             Placement — translate as far as you can. Grade 3–4 if you knew it, 1–2 to start there.
+            One area at a time; a miss moves on to the next rather than ending the test.
           </Text>
         </Box>
       )}
@@ -893,9 +980,11 @@ export function App({ session, content, storage }: Props) {
           lines={bankLines}
           scroll={scroll}
           height={readerHeight}
+          // How much of the bank has actually been met, not just how big it
+          // is: the gap between the two is the reason to stay on a topic.
           heading={`All questions on ${mapSection.title} — ${
-            content.questionsFor(mapSection.id).length
-          }, with your answers`}
+            session.coverage(mapSection.id).answered
+          } of ${content.questionsFor(mapSection.id).length} answered`}
         />
       )}
 
@@ -1055,6 +1144,7 @@ export function App({ session, content, storage }: Props) {
           phase.t === "map" && (phase.from.t === "answering" || inPlacement)
         }
         undo={undo !== null}
+        more={!inPlacement && coverageHere !== null && coverageHere.answered < coverageHere.total}
       />
     </Box>
   );
@@ -1065,11 +1155,14 @@ function StatusBar({
   section,
   isNew,
   placement,
+  focus,
 }: {
   stats: { dueTopics: number; dueVocab: number; topics: number; vocab: number };
   section: string;
   isNew: boolean;
   placement?: boolean;
+  /** What new topics are being drawn from, or null for the plain sweep. */
+  focus?: string | null;
 }) {
   return (
     <Box justifyContent="space-between" marginBottom={1}>
@@ -1081,6 +1174,7 @@ function StatusBar({
         <Text bold color={placement ? "yellow" : undefined}>
           {section}
         </Text>
+        {focus ? <Text color="cyan"> · on {focus}</Text> : null}
       </Text>
       <Text dimColor>
         topics {stats.topics} (due {stats.dueTopics}) · vocab {stats.vocab} (due {stats.dueVocab})
@@ -1275,7 +1369,16 @@ function GrammarMap({
         </Text>
         <Text>
           <Text dimColor>{mastery}</Text>
+          {/* A topic is not finished when its mastery is: four questions do
+              not sweep a bank of twenty-odd, and this is where that shows. */}
+          {topic.questions > 0 ? (
+            <Text dimColor>
+              {" "}
+              · {topic.answered}/{topic.questions} questions
+            </Text>
+          ) : null}
           {topic.due ? <Text color="yellow"> · due</Text> : null}
+          {topic.frontier ? <Text color="cyan"> · resumes here</Text> : null}
           {!topic.hasTests ? <Text dimColor> · no tests</Text> : null}
         </Text>
       </Box>
@@ -1572,6 +1675,7 @@ function HintBar({
   words,
   quizCosts,
   undo,
+  more,
 }: {
   phase: Phase["t"];
   placement?: boolean;
@@ -1585,6 +1689,8 @@ function HintBar({
   quizCosts?: boolean;
   /** A grade was just given and can still be taken back. */
   undo?: boolean;
+  /** The topic on screen has questions nobody has answered yet. */
+  more?: boolean;
 }) {
   const scrollHint = paging ? " · ↑↓ scroll" : "";
   // Only offered once the topic has a trail: `h` does nothing before that.
@@ -1595,7 +1701,12 @@ function HintBar({
   // Offered only while there is a grade to take back, on every screen a grade
   // can land you on.
   const undoHint = undo ? " · u undo grade" : "";
-  const quizHint = quizCosts ? "Enter quiz me (leaves this behind)" : "Enter quiz me";
+  // Offered only while the topic has questions left to meet; a topic worked
+  // out has nothing more of itself to give.
+  const moreHint = more ? " · . more of this topic" : "";
+  const quizHint = quizCosts
+    ? "Enter quiz me · f study from here (both leave this behind)"
+    : "Enter quiz me · f study from here";
   const hint =
     phase === "answering"
       ? `type your Latin · Enter submit · Esc grammar · Tab words · ^N map${undo ? " · ^Z undo grade" : ""}${scrollHint}`
@@ -1616,7 +1727,7 @@ function HintBar({
           // `w` earns its place here more than anywhere: placement asks about
           // topics you have never been taught.
           ? `3–4 you knew it (continue) · 1–2 start here · u keep typing${wordsHint} · m map · v vocab`
-          : `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m map · s schedule · q quit`
+          : `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${moreHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m map · s schedule · q quit`
         : phase === "vocab-review-front"
           ? `Space/Enter reveal${undoHint} · m map · q quit`
           : phase === "vocab-review-back"
