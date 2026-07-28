@@ -11,6 +11,7 @@
  */
 
 import {
+  latinWords,
   normalize,
   type Attempt,
   type BankedQuestion,
@@ -70,12 +71,7 @@ export function relativeTime(at: string, now: Date = new Date()): string {
  * right rather than as a correction.
  */
 function matches(submitted: string, answer: string): boolean {
-  const fold = (s: string) =>
-    normalize(s)
-      .replace(/[^\p{Letter}\s]/gu, "")
-      .split(/\s+/)
-      .filter(Boolean)
-      .join(" ");
+  const fold = (s: string) => latinWords(normalize(s)).join(" ");
   return fold(submitted) !== "" && fold(submitted) === fold(answer);
 }
 

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import type { Rating } from "@latin-tutor/core";
+import { stripPunctuation, type Rating } from "@latin-tutor/core";
 
 /** How long until a date, said the way a person would. */
 export function until(from: Date, to: Date): string {
@@ -172,7 +172,9 @@ export function HoldableLatin({
   const fire = (raw: string) => {
     cancel();
     // Latin words arrive wearing the sentence's punctuation: `amat.`, `«rosam»`.
-    const word = raw.replace(/^[^\p{Letter}]+|[^\p{Letter}]+$/gu, "");
+    // Cut the same way the vocabulary crib cuts them, so a word you can hold is
+    // always a word the crib listed.
+    const word = stripPunctuation(raw);
     if (!word) return;
     navigator.vibrate?.(8);
     onHold(word);
