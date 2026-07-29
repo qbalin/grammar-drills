@@ -17,7 +17,10 @@
  *   lemmas.json.gz   the distinct lemmas, as LemmaEntry[] ~285 KB gz  lazy
  *   forms.txt.gz     `form\tidx[,idx...]` per line, sorted ~700 KB gz  lazy
  *
- * Usage: node scripts/build-web-content.mjs [--content ./content] [--out apps/web/public/content]
+ * Usage: node scripts/build-web-content.mjs [--pack languages/latin] [--out apps/web/public/content]
+ *
+ * `--pack` names a language pack directory; its `content/` is what gets
+ * repacked. `--content` still points straight at a content directory.
  */
 import { gunzipSync, gzipSync } from "node:zlib";
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
@@ -28,9 +31,15 @@ import { parseArgs } from "node:util";
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const { values } = parseArgs({
-  options: { content: { type: "string" }, out: { type: "string" } },
+  options: {
+    pack: { type: "string" },
+    content: { type: "string" },
+    out: { type: "string" },
+  },
 });
-const contentDir = values.content ?? join(repoRoot, "content");
+const packDir =
+  values.pack ?? join(repoRoot, "languages", process.env.LANG_PACK ?? "latin");
+const contentDir = values.content ?? join(packDir, "content");
 const outDir = values.out ?? join(repoRoot, "apps", "web", "public", "content");
 
 /** gzip at the highest level — these are written once and shipped forever. */

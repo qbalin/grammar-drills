@@ -1,5 +1,14 @@
 export * from "./types.js";
 export { normalize } from "./normalize.js";
+export { compileFold, type FoldSpec, type Fold } from "./fold.js";
+export {
+  parseProfile,
+  profileHash,
+  PackError,
+  type Profile,
+  type Family,
+  type GrammarStyle,
+} from "./pack.js";
 export {
   newCard,
   rate,

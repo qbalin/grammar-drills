@@ -4,7 +4,7 @@ import { FAMILIES, familyLabel, familyOf } from "./families.js";
 import type { GrammarSection } from "./types.js";
 
 const grammar: GrammarSection[] = JSON.parse(
-  readFileSync(new URL("../../../content/grammar.json", import.meta.url), "utf8"),
+  readFileSync(new URL("../../../languages/latin/content/grammar.json", import.meta.url), "utf8"),
 );
 
 describe("grammar families", () => {

@@ -321,7 +321,10 @@ def download(dest):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", help="Gutenberg #15665 plain text (downloaded if omitted)")
-    ap.add_argument("--out", default=os.path.join(REPO, "content", "grammar.json"))
+    ap.add_argument(
+        "--out",
+        default=os.path.join(REPO, "languages", "latin", "content", "grammar.json"),
+    )
     a = ap.parse_args()
 
     src = a.src or download(os.path.join(tempfile.gettempdir(), "bennett-15665.txt"))

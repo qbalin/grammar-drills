@@ -22,7 +22,8 @@ const REPO = dirname(dirname(fileURLToPath(import.meta.url)));
 const REF =
   process.env.LATIN_REF ??
   join(REPO, "..", "language_learning", "languages", "latin");
-const OUT = `${REPO}/content/tests`;
+const PACK = `${REPO}/languages/${process.env.LANG_PACK ?? "latin"}`;
+const OUT = `${PACK}/content/tests`;
 const MODEL = "claude-opus-4-8";
 const QUESTIONS = 4; // exactly 4 English→Latin sentences per test
 
@@ -249,7 +250,7 @@ async function generateTopic(topic) {
 }
 
 // ---- main -----------------------------------------------------------------
-const grammar = JSON.parse(readFileSync(`${REPO}/content/grammar.json`, "utf8"));
+const grammar = JSON.parse(readFileSync(`${PACK}/content/grammar.json`, "utf8"));
 // Explicit ids regenerate those; otherwise fill in only topics that lack a file.
 const topics = onlyTopics.length
   ? grammar.filter((t) => onlyTopics.includes(t.id))

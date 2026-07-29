@@ -1,7 +1,7 @@
 # Build the web app and publish it to GitHub Pages.
 #
 # The content bundle is generated during the build (`pnpm content`), not
-# committed, so the only inputs are `content/` and the app source.
+# committed, so the only inputs are the language pack and the app source.
 name: Deploy web app
 
 on:
@@ -10,7 +10,7 @@ on:
     paths:
       - "apps/web/**"
       - "packages/core/**"
-      - "content/**"
+      - "languages/**"
       - "scripts/build-web-content.mjs"
       - ".github/workflows/deploy-web.yml"
   workflow_dispatch:

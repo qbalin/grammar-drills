@@ -9,16 +9,22 @@ import { loadContent } from "./content-loader.js";
 import { LocalFileStorage } from "./storage-local.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const repoContent = join(here, "..", "..", "..", "content");
+const languages = join(here, "..", "..", "..", "languages");
 
 const { values } = parseArgs({
   options: {
+    pack: { type: "string" },
+    language: { type: "string" },
     content: { type: "string" },
     progress: { type: "string" },
   },
 });
 
-const contentDir = values.content ?? repoContent;
+// A pack is a directory; the language name is the short way to name one that
+// lives in this repo.
+const packDir =
+  values.pack ?? join(languages, values.language ?? process.env.LANG_PACK ?? "latin");
+const contentDir = values.content ?? join(packDir, "content");
 const progressPath =
   values.progress ?? join(homedir(), ".latin-tutor", "progress.json");
 

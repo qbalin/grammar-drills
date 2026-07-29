@@ -43,7 +43,13 @@ const DRY = args.includes("--dry");
 const REF =
   opt("--ref", process.env.LATIN_REF) ??
   join(REPO, "..", "language_learning", "languages", "latin");
-const MAP = join(REPO, "content", "lemmas.json.gz");
+const MAP = join(
+  REPO,
+  "languages",
+  process.env.LANG_PACK ?? "latin",
+  "content",
+  "lemmas.json.gz",
+);
 
 /** The same folding `packages/core/src/normalize.ts` does, for db lookups. */
 const normalize = (w) =>

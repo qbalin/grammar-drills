@@ -1,0 +1,30 @@
+{
+  "_comment": [
+    "What counts as the same word in this pack, and what does not.",
+    "The fold decides whether a written answer is marked right, so it needs",
+    "fixtures on both sides: pairs that MUST compare equal, and pairs that MUST",
+    "NOT. An over-eager fold marks wrong answers right forever, and nothing else",
+    "in the test suite would notice.",
+    "For Latin the macrons are editorial and u/v, i/j are spelling variants."
+  ],
+  "equal": [
+    ["puella", "puellā"],
+    ["Vī", "uī"],
+    ["vi", "uī"],
+    ["iam", "jam"],
+    ["Iūlius", "julius"],
+    ["servō", "seruo"],
+    ["MANUS", "manus"],
+    ["  amāre  ", "amare"],
+    ["Caesar", "caesar"],
+    ["poēta", "poeta"]
+  ],
+  "differ": [
+    ["puella", "puellae"],
+    ["amō", "amant"],
+    ["rēx", "regis"],
+    ["bellum", "bellus"],
+    ["manus", "manum"],
+    ["dominus", "domino"]
+  ]
+}
