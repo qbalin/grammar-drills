@@ -14,6 +14,7 @@ import {
   type ContentData,
   type Progress,
 } from "@latin-tutor/core";
+import { testProfile } from "@latin-tutor/core/testing";
 import { App } from "./app.js";
 import { SyncingStorage } from "./storage/sync.js";
 
@@ -85,7 +86,7 @@ const fixture: ContentData = {
 };
 
 function mount(progress?: Progress) {
-  const content = new Content(fixture);
+  const content = new Content(fixture, testProfile);
   const session = new Session(content, progress);
   const storage = new SyncingStorage();
   render(<App content={content} session={session} storage={storage} />);

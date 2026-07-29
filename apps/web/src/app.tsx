@@ -3,8 +3,6 @@ import {
   Content,
   Session,
   questionVocabulary,
-  familyLabel,
-  familyOf,
   type LemmaEntry,
   type Progress,
   type Rating,
@@ -163,7 +161,7 @@ export function App({ content, session, storage }: Props) {
   );
   // What the focus is called on screen, and nothing at all for the sweep.
   const focusLabel = useMemo(() => {
-    if (focus.kind === "family") return familyLabel(familyOf(focus.id));
+    if (focus.kind === "family") return content.familyLabel(content.familyOf(focus.id));
     if (focus.kind === "topic") {
       const { answered, total } = session.coverage(focus.sectionId);
       const title = content.getSection(focus.sectionId)?.title ?? "this topic";
@@ -655,7 +653,7 @@ export function App({ content, session, storage }: Props) {
         <div className="status__row">
           {inPlacement && placement ? (
             <span className="status__title">
-              Placement · {familyLabel(placement.family)}
+              Placement · {content.familyLabel(placement.family)}
               {placement.narrowing ? ", narrowing" : ""} · area{" "}
               {placement.done + 1} of {placement.families}
             </span>

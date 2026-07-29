@@ -6,7 +6,8 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
-    "./storage/github": "./src/storage/github.ts"
+    "./storage/github": "./src/storage/github.ts",
+    "./testing": "./src/profile.fixture.ts"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

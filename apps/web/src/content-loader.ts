@@ -5,6 +5,7 @@ import {
   type Test,
 } from "@latin-tutor/core";
 import { LemmaIndex } from "./lemma-index.js";
+import { profile } from "./pack.js";
 
 /**
  * The web twin of `apps/cli/src/content-loader.ts`: same bundle, fetched
@@ -84,7 +85,7 @@ export async function loadContent(): Promise<Content> {
   // handed to `Session` — so it gets a lookup that resolves at call time rather
   // than a rebuilt bundle. Before the download it reports a miss, which is
   // exactly how `Content.lookup` already describes an unknown word.
-  return new Content({ grammar, tests, lemmaLookup: lateBoundDictionary });
+  return new Content({ grammar, tests, lemmaLookup: lateBoundDictionary }, profile);
 }
 
 let loaded: LemmaIndex | undefined;

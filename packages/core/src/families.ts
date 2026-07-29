@@ -1,48 +1,39 @@
 /**
  * Grammar families — the coarse grouping the syllabus is displayed in.
  *
- * These follow the part/chapter structure of Bennett's *New Latin Grammar*:
- * Part II splits into the declension topics (nouns, adjectives, pronouns) and
- * the conjugation topics; Part III is the particles; Part V's chapters give
- * the syntax families. Each `GrammarSection` carries its family in the
- * content bundle, so nothing is inferred from the id here.
+ * Which families exist is a fact about the language's reference grammar, so the
+ * list lives in the pack's profile rather than here: Bennett's parts give Latin
+ * nine, Smyth would give Greek its own, and the engine only needs them to be
+ * ordered and named. Each `GrammarSection` carries its family in the content
+ * bundle, so nothing is inferred from the id.
+ *
+ * The order is load-bearing twice over: it is the order the map is drawn in,
+ * and it is the order placement walks. A shipped pack must never reorder its
+ * families, because `PlacementRun.familyIndex` is a position in this list and a
+ * saved run would resume in the wrong place.
  */
-
-export type FamilyId =
-  | "nouns"
-  | "adj"
-  | "pron"
-  | "verb-forms"
-  | "particles"
-  | "noun-syntax"
-  | "adj-pron-syntax"
-  | "verb-syntax"
-  | "style";
+import type { Family, Profile } from "./pack.js";
 
 /**
- * Display order, each family named the way it would be said aloud. There is no
+ * A family id. Plain string: the set is per-language, so there is no union to
+ * check against here. `familyOf` is what makes an unknown value safe.
+ */
+export type FamilyId = string;
+
+export type { Family };
+
+/** The family a section belongs to, defaulting sanely on unknown content. */
+export function familyOf(profile: Profile, family: string | undefined): FamilyId {
+  return family && profile.families.some((f) => f.id === family)
+    ? family
+    : profile.fallbackFamily;
+}
+
+/**
+ * The family's label, named the way it would be said aloud. There is no
  * abbreviated form: a map is for finding your way, and "Ptcl" tells a student
  * nothing about where they are.
  */
-export const FAMILIES: ReadonlyArray<{ id: FamilyId; label: string }> = [
-  { id: "nouns", label: "Nouns" },
-  { id: "adj", label: "Adjectives & adverbs" },
-  { id: "pron", label: "Pronouns" },
-  { id: "verb-forms", label: "Verb forms" },
-  { id: "particles", label: "Particles" },
-  { id: "noun-syntax", label: "Noun syntax" },
-  { id: "adj-pron-syntax", label: "Adjective & pronoun syntax" },
-  { id: "verb-syntax", label: "Verb syntax" },
-  { id: "style", label: "Word-order & style" },
-];
-
-const IDS = new Set<string>(FAMILIES.map((f) => f.id));
-
-/** The family a section belongs to, defaulting sanely on unknown content. */
-export function familyOf(family: string | undefined): FamilyId {
-  return family && IDS.has(family) ? (family as FamilyId) : "style";
-}
-
-export function familyLabel(id: FamilyId): string {
-  return FAMILIES.find((f) => f.id === id)?.label ?? id;
+export function familyLabel(profile: Profile, id: FamilyId): string {
+  return profile.families.find((f) => f.id === id)?.label ?? id;
 }

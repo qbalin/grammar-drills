@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { Content } from "./content.js";
+import { testProfile } from "./profile.fixture.js";
 import { latinWords, questionVocabulary } from "./question-vocab.js";
 import type { LemmaMap, Question } from "./types.js";
 
@@ -63,7 +64,7 @@ const lemmas: LemmaMap = {
   ],
 };
 
-const content = new Content({ grammar: [], tests: {}, lemmas });
+const content = new Content({ grammar: [], tests: {}, lemmas }, testProfile);
 
 /** Only `prompt` and `answer` matter here; the rest is the shipped shape. */
 const ask = (prompt: string, answer: string): Question => ({
@@ -182,7 +183,7 @@ describe("questionVocabulary", () => {
   });
 
   it("still names the words when no dictionary has been loaded at all", () => {
-    const bare = new Content({ grammar: [], tests: {} });
+    const bare = new Content({ grammar: [], tests: {} }, testProfile);
     const words = questionVocabulary(bare, ask("The girl loves the rose.", "puella rosam amat"));
     expect(words.map((w) => w.form)).toEqual(["puella", "rosam", "amat"]);
     expect(words.every((w) => w.entry === undefined)).toBe(true);

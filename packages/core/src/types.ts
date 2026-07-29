@@ -4,10 +4,10 @@
 
 /**
  * One topic of the grammar reference: a run of consecutive numbered sections
- * in Bennett's *New Latin Grammar*, extracted by `scripts/parse-grammar.py`.
+ * of the pack's source grammar, extracted by that pack's own parser.
  */
 export interface GrammarSection {
-  /** Stable id, e.g. "bn-020-first-declension". */
+  /** Stable id, prefixed per pack, e.g. "bn-020-first-declension". */
   id: string;
   /** The book's own section reference, e.g. "20-22" or "100". */
   ref: string;
@@ -24,11 +24,13 @@ export interface GrammarSection {
   order: number;
 }
 
-export type QuestionKind =
-  | "translate-la-en"
-  | "translate-en-la"
-  | "cloze"
-  | "parse";
+/**
+ * What a question asks. Per pack, by convention `translate-<l1>-<l2>` and its
+ * reverse, plus `cloze` and `parse`; the profile's `questions.produceKinds`
+ * says which of them put L2 in the student's hands, which is the only
+ * distinction the engine draws.
+ */
+export type QuestionKind = string;
 
 /** A single self-graded prompt within a test. */
 export interface Question {
@@ -36,7 +38,7 @@ export interface Question {
   /** The reference answer, revealed on demand. */
   answer: string;
   kind: QuestionKind;
-  /** Inflected Latin forms appearing in the item (validated against the dictionary). */
+  /** Inflected L2 forms appearing in the item (validated against the dictionary). */
   vocab: string[];
   /** Optional teaching note shown with the answer. */
   note?: string;
@@ -138,13 +140,17 @@ export interface Attempt {
  * a half-finished placement is simply lost, and the student silently restarts
  * at chapter one.
  *
- * The walk is one family at a time, in `FAMILIES` order, bisecting: a probe in
- * the middle, then — if it passed — a second in the middle of what is left
- * above it. Two probes per family at most, so the whole test is at most
- * eighteen sentences and usually eleven.
+ * The walk is one family at a time, in the pack's family order, bisecting: a
+ * probe in the middle, then — if it passed — a second in the middle of what is
+ * left above it. Two probes per family at most, so the whole test is at most
+ * twice as many sentences as the language has families, and usually far fewer.
  */
 export interface PlacementRun {
-  /** Index into `FAMILIES` of the family under test. */
+  /**
+   * Index into the pack's family list of the family under test. A position, so
+   * a shipped pack must never reorder its families: a saved run would resume
+   * against the wrong one.
+   */
   familyIndex: number;
   /** How many probes this family has been asked (0, 1 or 2). */
   asked: number;
@@ -202,8 +208,8 @@ export interface Progress {
   frontier: string | null;
   /**
    * familyId -> the section its new topics resume at. A family with no entry
-   * starts at its first topic, which is what a fresh deck has for all nine —
-   * so an empty map is the plain sweep from chapter one.
+   * starts at its first topic, which is what a fresh deck has for every family
+   * — so an empty map is the plain sweep from chapter one.
    *
    * Per family rather than one pointer, because that is the shape of the
    * complaint: knowing the declensions says nothing about knowing the verbs.
@@ -249,13 +255,14 @@ export interface Progress {
 }
 
 /**
- * The generation of the shipped dictionary citations. Bumped whenever
- * `scripts/canonical-forms.mjs` changes what a citation says — v2 gave verbs
- * their four principal parts and adjectives their proper terminations.
+ * A fresh deck.
+ *
+ * `citationsVersion` comes from the pack — it is that language's own count of
+ * how many times its citation conventions have been rewritten. A deck with no
+ * cards is current by definition, whatever the number, so the default is
+ * harmless for callers that have no profile to hand.
  */
-export const CITATIONS_VERSION = 2;
-
-export function emptyProgress(): Progress {
+export function emptyProgress(citationsVersion = 0): Progress {
   return {
     version: 1,
     frontier: null,
@@ -272,7 +279,7 @@ export function emptyProgress(): Progress {
     placementDone: false,
     placement: null,
     // A fresh deck has no cards, so it is already current by definition.
-    citationsVersion: CITATIONS_VERSION,
+    citationsVersion,
     updatedAt: new Date().toISOString(),
   };
 }

@@ -28,7 +28,6 @@ export {
 } from "./question-vocab.js";
 export { Content } from "./content.js";
 export {
-  FAMILIES,
   familyOf,
   familyLabel,
   type FamilyId,

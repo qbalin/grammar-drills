@@ -8,6 +8,7 @@ import {
   type Progress,
   type StorageAdapter,
 } from "@latin-tutor/core";
+import { testProfile } from "@latin-tutor/core/testing";
 import { App } from "./app.js";
 
 const fixture: ContentData = {
@@ -79,7 +80,7 @@ const ESC = "";
 
 describe("CLI App (write → compare → self-grade)", () => {
   it("runs placement, then teaches, takes a written answer, records vocab, grades", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, undefined);
     const { lastFrame, stdin, unmount } = render(
@@ -161,7 +162,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   });
 
   it("opens the grammar map, walks it, and quizzes the chosen topic", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -220,7 +221,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   });
 
   it("names every family in full and cycles through them", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -266,7 +267,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   });
 
   it("escapes the map back to the question", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -292,7 +293,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   });
 
   it("shows the topic's earlier answers on demand, and hides them again", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     // A run at this topic three days ago, before this session started.
@@ -367,7 +368,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   // and a self-grade on the wrong number. None of them should be a dead end.
 
   it("escapes a vocabulary recording opened by mistake", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -405,7 +406,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   });
 
   it("goes back to the answer box when Enter came too early", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -440,7 +441,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   });
 
   it("takes back a self-grade given by mistake, schedule and trail with it", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -495,7 +496,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   });
 
   it("leaves the answer being written alone when there is nothing to take back", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -526,7 +527,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   };
 
   it("pages the grammar drawer through a long section, ellipsis-free", async () => {
-    const content = new Content(longFixture);
+    const content = new Content(longFixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -580,7 +581,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   };
 
   it("gives every topic the same window on its section as the cursor moves", async () => {
-    const content = new Content(shapesFixture);
+    const content = new Content(shapesFixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -625,7 +626,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   });
 
   it("reads the section under the map cursor in full", async () => {
-    const content = new Content(longFixture);
+    const content = new Content(longFixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = render(
@@ -678,7 +679,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
   }
 
   it("shows what is coming back, and closes again", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     // A topic already graded easy, so there is something scheduled to look at.
     session.gradeTopic("ag-decl1", 4);
@@ -700,7 +701,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
   });
 
   it("lists every question of a topic with its answer and what was written", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = await answered(session, content);
     // Graded hard, so the answer is on the record; the loop then moves to the
@@ -735,7 +736,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
   });
 
   it("edits a recorded word without disturbing its schedule", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = await answered(session, content);
 
@@ -775,7 +776,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
   });
 
   it("takes two presses to delete a word", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     const { lastFrame, stdin, unmount } = await answered(session, content);
     stdin.write("v");
@@ -802,7 +803,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
   });
 
   it("keeps placement when a word is recorded, and resumes it after a restart", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, undefined);
     const first = render(<App session={session} content={content} storage={storage} />);
@@ -860,7 +861,7 @@ const RIGHT = "[C";
 describe("the question's vocabulary, and the map from anywhere", () => {
   /** Straight past placement, into the first topic's question. */
   const studying = () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     return {
@@ -976,7 +977,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   });
 
   it("reaches the map during placement, and ends the run rather than lying about it", async () => {
-    const content = new Content(fixture);
+    const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, undefined);
     const { lastFrame, stdin, unmount } = render(
@@ -1124,7 +1125,7 @@ const deep: ContentData = {
 
 describe("the three ways to move through the book", () => {
   const open = () => {
-    const content = new Content(deep);
+    const content = new Content(deep, testProfile);
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
     return {
       session,

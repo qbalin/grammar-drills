@@ -11,12 +11,23 @@ import { readFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { compileFold, parseProfile, profileHash, normalize } from "@latin-tutor/core";
+import {
+  compileFold,
+  familyLabel,
+  familyOf,
+  parseProfile,
+  profileHash,
+  normalize,
+  type GrammarSection,
+} from "@latin-tutor/core";
 
 const here = fileURLToPath(new URL(".", import.meta.url));
 const profile = parseProfile(JSON.parse(readFileSync(join(here, "profile.json"), "utf8")));
 const fixtures = JSON.parse(readFileSync(join(here, "fold.fixtures.json"), "utf8"));
 const fold = compileFold(profile.fold);
+const grammar: GrammarSection[] = JSON.parse(
+  readFileSync(join(here, "content", "grammar.json"), "utf8"),
+);
 
 describe("the Latin profile", () => {
   it("parses, and names itself after its directory", () => {
@@ -44,6 +55,42 @@ describe("the Latin profile", () => {
     const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
     raw.fallbackFamily = "syntax";
     expect(() => parseProfile(raw)).toThrow(/fallbackFamily/);
+  });
+});
+
+describe("the shipped syllabus against the profile", () => {
+  it("gives every section a family the map knows", () => {
+    const known = new Set(profile.families.map((f) => f.id));
+    const strays = grammar.filter((s) => !known.has(s.family ?? ""));
+    expect(strays.map((s) => `${s.id}:${s.family}`)).toEqual([]);
+  });
+
+  it("covers the whole syllabus with no section lost or double-counted", () => {
+    const counts = new Map(profile.families.map((f) => [f.id, 0]));
+    for (const s of grammar) {
+      const id = familyOf(profile, s.family);
+      counts.set(id, counts.get(id)! + 1);
+    }
+    expect([...counts.values()].reduce((a, b) => a + b, 0)).toBe(grammar.length);
+    // An empty family would render as a dead bar on the map.
+    expect([...counts.entries()].filter(([, n]) => n === 0)).toEqual([]);
+  });
+
+  it("names every family in words a student would recognise", () => {
+    expect(familyLabel(profile, "pron")).toBe("Pronouns");
+    expect(familyLabel(profile, "particles")).toBe("Particles");
+    expect(familyLabel(profile, "noun-syntax")).toBe("Noun syntax");
+    for (const f of profile.families) {
+      // No abbreviations: the map is read, not decoded.
+      expect(f.label).toMatch(/^[A-Z][a-z-]+( [&a-z-]+)*$/);
+    }
+  });
+
+  it("prefixes every section id the way the profile says", () => {
+    const wrong = grammar.filter(
+      (s) => !new RegExp(`^${profile.grammar.idPrefix}-\\d{3}-[a-z0-9-]+$`).test(s.id),
+    );
+    expect(wrong.map((s) => s.id)).toEqual([]);
   });
 });
 

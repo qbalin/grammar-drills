@@ -1,15 +1,36 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { join, basename } from "node:path";
-import { Content, type GrammarSection, type LemmaMap, type Test } from "@latin-tutor/core";
+import {
+  Content,
+  parseProfile,
+  type GrammarSection,
+  type LemmaMap,
+  type Profile,
+  type Test,
+} from "@latin-tutor/core";
+
+/** Read and validate a pack's profile. Throws with the offending path named. */
+export function loadProfile(packDir: string): Profile {
+  return parseProfile(
+    JSON.parse(readFileSync(join(packDir, "profile.json"), "utf8")),
+  );
+}
 
 /**
- * Load the frozen content bundle from a directory:
- *   grammar.json        - GrammarSection[]
- *   tests/<sectionId>.json - Test[]  (one file per generated topic)
- *   lemmas.json.gz      - gzipped LemmaMap
+ * Load a language pack: its profile, plus the frozen content bundle beneath it.
+ *   profile.json        - the shape of the language
+ *   content/grammar.json           - GrammarSection[]
+ *   content/tests/<sectionId>.json - Test[]  (one file per generated topic)
+ *   content/lemmas.json.gz         - gzipped LemmaMap
+ *
+ * `contentDir` overrides where the content is read from, for `--content`.
  */
-export function loadContent(dir: string): Content {
+export function loadPack(packDir: string, contentDir?: string): Content {
+  return loadContent(contentDir ?? join(packDir, "content"), loadProfile(packDir));
+}
+
+export function loadContent(dir: string, profile: Profile): Content {
   const grammar = JSON.parse(
     readFileSync(join(dir, "grammar.json"), "utf8"),
   ) as GrammarSection[];
@@ -30,5 +51,5 @@ export function loadContent(dir: string): Content {
     }
   }
 
-  return new Content({ grammar, tests, lemmas });
+  return new Content({ grammar, tests, lemmas }, profile);
 }
