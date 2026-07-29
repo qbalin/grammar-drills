@@ -31,7 +31,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  # Language-agnostic, so run once rather than once per pack.
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,6 +46,53 @@ jobs:
       # The engine must not learn a language. Cheap to check, and exactly the
       # kind of rule that erodes one convenient import at a time.
       - run: node scripts/check-core-purity.mjs
+
+  # Every pack has to build and hold its shape, not only the one that ships:
+  # a pack nobody deploys is still a pack somebody is working on, and the
+  # breakage to catch is the one that arrives while it is half-written.
+  #
+  # The question-coverage gates are not here. They belong to the pack being
+  # deployed, below, because a pack whose questions are still being generated
+  # fails them by definition and would report that as a broken build.
+  packs:
+    needs: test
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        pack: [latin, greek]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Build ${{ matrix.pack }}
+        env:
+          LANG_PACK: ${{ matrix.pack }}
+        run: pnpm --filter @lang-tutor/web build
+      - name: Fold and families
+        run: >
+          node --import tsx scripts/validate-pack.mjs
+          --pack languages/${{ matrix.pack }} --profile-only
+      - name: Syllabus shape
+        run: >
+          node --import tsx scripts/grammar-report.mjs
+          --pack languages/${{ matrix.pack }}
+
+  build:
+    needs: packs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
       - name: Build
         # Pages serves a project site from /<repo>/, and both the asset URLs and
         # the service worker's scope have to agree with that.
