@@ -166,11 +166,11 @@ export function App({ session, content, storage }: Props) {
   // Two panes can be reading: the drawer (the topic being drilled) and the
   // reader (the topic under the map cursor). Only one is on screen at a time.
   const drawerLines = useMemo(
-    () => layoutSection(section?.text ?? "", paneWidth),
+    () => layoutSection(section?.text ?? "", paneWidth, content.profile.grammar),
     [section?.text, paneWidth],
   );
   const readerLines = useMemo(
-    () => layoutSection(mapSection?.text ?? "", paneWidth),
+    () => layoutSection(mapSection?.text ?? "", paneWidth, content.profile.grammar),
     [mapSection?.text, paneWidth],
   );
   // The map's taste of the section under the cursor: the same window for every
@@ -179,7 +179,7 @@ export function App({ session, content, storage }: Props) {
   // rather than a map that runs off the screen.
   const previewLines = Math.max(2, Math.min(PREVIEW_LINES, rows - MAP_CHROME_LINES));
   const mapPreview = useMemo(
-    () => previewWindow(mapSection?.text ?? "", paneWidth, previewLines),
+    () => previewWindow(mapSection?.text ?? "", paneWidth, previewLines, content.profile.grammar),
     [mapSection?.text, paneWidth, previewLines],
   );
 
@@ -191,14 +191,14 @@ export function App({ session, content, storage }: Props) {
     [sectionId, tick, session],
   );
   const historyLines = useMemo(
-    () => attemptLines(attempts, paneWidth),
+    () => attemptLines(attempts, paneWidth, content.fold),
     [attempts, paneWidth],
   );
 
   // The topic under the map cursor, as its whole question bank.
   const bankLines = useMemo(() => {
     const id = mapTopics[mapIndex]?.sectionId;
-    return id ? questionBankLines(session.questionBank(id), paneWidth) : [];
+    return id ? questionBankLines(session.questionBank(id), paneWidth, content.fold) : [];
     // `tick` is in here because an answer graded since is part of the bank.
   }, [mapTopics, mapIndex, paneWidth, session, tick]);
 

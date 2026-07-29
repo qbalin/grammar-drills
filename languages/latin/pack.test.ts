@@ -2,9 +2,9 @@
  * Pack conformance for Latin.
  *
  * These are the tests that belong to the language rather than to the engine:
- * the profile parses, the fold does what the fixtures say, and — the one that
- * matters most during the restructure — the declared fold reproduces the
- * hand-written `normalize` exactly, over every key of the shipped dictionary.
+ * the profile parses, the shipped syllabus matches it, and the fold does what
+ * the fixtures say — including over every key of the shipped dictionary, which
+ * is the set the fold actually has to get right.
  */
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
@@ -17,7 +17,6 @@ import {
   familyOf,
   parseProfile,
   profileHash,
-  normalize,
   type GrammarSection,
 } from "@latin-tutor/core";
 
@@ -122,28 +121,36 @@ describe("the fold", () => {
   });
 });
 
-describe("the declared fold against the one it replaces", () => {
-  // The whole restructure turns on this: if the profile's fold and the
-  // hand-written `normalize` ever disagree, every dictionary lookup in the
-  // shipped bundle misses while the app looks perfectly healthy.
-  it("agrees with normalize on every key of the shipped dictionary", () => {
+describe("the fold against the shipped dictionary", () => {
+  // The dictionary's keys ARE fold output — `build-web-content.mjs` writes a
+  // sorted index of them that the web app bisects. So a fold that no longer
+  // reproduces its own keys would miss every lookup while the app looked
+  // perfectly healthy. Idempotence over the real key set is that check.
+  it("leaves every key of the shipped dictionary unchanged", () => {
     const raw = gunzipSync(readFileSync(join(here, "content", "lemmas.json.gz"))).toString("utf8");
     const keys = Object.keys(JSON.parse(raw) as Record<string, unknown>);
     expect(keys.length).toBeGreaterThan(200_000);
 
-    const disagreed: string[] = [];
+    const moved: string[] = [];
     for (const key of keys) {
-      if (fold(key) !== normalize(key)) disagreed.push(key);
-      if (disagreed.length > 5) break;
+      if (fold(key) !== key) moved.push(key);
+      if (moved.length > 5) break;
     }
-    expect(disagreed).toEqual([]);
+    expect(moved).toEqual([]);
   });
 
-  it("agrees with normalize on inflected forms as written, macrons and all", () => {
+  it("folds inflected forms as written onto the keys the dictionary holds", () => {
+    const raw = gunzipSync(readFileSync(join(here, "content", "lemmas.json.gz"))).toString("utf8");
+    const map = JSON.parse(raw) as Record<string, unknown[]>;
+    // Real forms as a sentence would write them, macrons and all: each has to
+    // land on an entry, which is the whole job of the fold at runtime. Common
+    // words only — a proper noun like `Jūlia` is absent from the dictionary by
+    // design, so it would be testing coverage rather than folding.
     const written = [
-      "Fīliae", "agricolae", "aquam", "ex", "altō", "puteō", "portābant",
-      "Vīvit", "Jūlia", "servōrum", "manibus", "amāvērunt", "rēgem", "bonīs",
+      "Fīliae", "agricolae", "aquam", "altō", "puteō", "portābant",
+      "servōrum", "manibus", "amāvērunt", "rēgem", "bonīs", "PVELLA",
     ];
-    for (const w of written) expect(fold(w)).toBe(normalize(w));
+    const missed = written.filter((w) => !map[fold(w)]);
+    expect(missed).toEqual([]);
   });
 });

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { Content } from "./content.js";
 import { testProfile } from "./profile.fixture.js";
-import { normalize } from "./normalize.js";
+import { compileFold } from "./fold.js";
 import { newCard, preview, rate } from "./scheduler.js";
 import { Session } from "./session.js";
 import type { ContentData } from "./types.js";
@@ -28,12 +28,14 @@ const fixture: ContentData = {
   },
 };
 
-describe("normalize", () => {
+const fold = compileFold(testProfile.fold);
+
+describe("the compiled fold", () => {
   it("strips macrons and folds v/j", () => {
-    expect(normalize("Vī")).toBe("ui");
-    expect(normalize("Manibus")).toBe("manibus");
-    expect(normalize("iam")).toBe(normalize("jam"));
-    expect(normalize("servō")).toBe("seruo");
+    expect(fold("Vī")).toBe("ui");
+    expect(fold("Manibus")).toBe("manibus");
+    expect(fold("iam")).toBe(fold("jam"));
+    expect(fold("servō")).toBe("seruo");
   });
 });
 

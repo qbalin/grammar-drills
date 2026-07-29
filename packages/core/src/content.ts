@@ -93,6 +93,6 @@ export class Content {
    */
   lookup(form: string): LemmaEntry[] {
     if (this.data.lemmaLookup) return this.data.lemmaLookup.lookup(form);
-    return this.data.lemmas ? lookupForm(this.data.lemmas, form) : [];
+    return this.data.lemmas ? lookupForm(this.data.lemmas, form, this.fold) : [];
   }
 }

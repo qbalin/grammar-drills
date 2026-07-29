@@ -1,5 +1,4 @@
 export * from "./types.js";
-export { normalize } from "./normalize.js";
 export { compileFold, type FoldSpec, type Fold } from "./fold.js";
 export {
   parseProfile,
@@ -21,11 +20,13 @@ export {
 export { lookupForm } from "./lemmatizer.js";
 export {
   questionVocabulary,
-  latinWords,
+  words,
   stripPunctuation,
   type VocabWord,
   type VocabStatus,
+  type VocabSource,
 } from "./question-vocab.js";
+export { l1For, type L1Adapter } from "./l1/index.js";
 export { Content } from "./content.js";
 export {
   familyOf,

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { Content } from "./content.js";
 import { testProfile } from "./profile.fixture.js";
-import { latinWords, questionVocabulary } from "./question-vocab.js";
+import { words, questionVocabulary } from "./question-vocab.js";
 import type { LemmaMap, Question } from "./types.js";
 
 /**
@@ -81,15 +81,15 @@ const crib = (prompt: string, answer: string) =>
 const pairs = (prompt: string, answer: string) =>
   crib(prompt, answer).map((w) => [w.english ?? null, w.entry?.citation ?? null]);
 
-describe("latinWords", () => {
+describe("words", () => {
   it("strips the punctuation around a word but not inside it", () => {
-    expect(latinWords("Fīliae agricolae aquam, ex altō puteō portābant.")).toEqual([
+    expect(words("Fīliae agricolae aquam, ex altō puteō portābant.")).toEqual([
       "Fīliae", "agricolae", "aquam", "ex", "altō", "puteō", "portābant",
     ]);
   });
 
   it("has nothing to say about an empty sentence", () => {
-    expect(latinWords("   ")).toEqual([]);
+    expect(words("   ")).toEqual([]);
   });
 });
 

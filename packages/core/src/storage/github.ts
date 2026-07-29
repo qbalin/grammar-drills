@@ -6,10 +6,15 @@ export interface GitHubConfig {
   token: string;
   owner: string;
   repo: string;
-  /** File path inside the repo. Defaults to `latin-progress.json`. */
+  /**
+   * File path inside the repo. Both apps pass the pack's own
+   * `storage.githubPath`; the fallback is only for a caller that has none.
+   */
   path?: string;
   /** Branch to commit to. Defaults to `main`. */
   branch?: string;
+  /** Commit subject; the timestamp is appended. */
+  message?: string;
 }
 
 // UTF-8-safe base64 that works in Node and the browser.
@@ -36,7 +41,7 @@ export class GitHubStorage implements StorageAdapter {
   private sha: string | undefined;
 
   constructor(private readonly cfg: GitHubConfig) {
-    this.path = cfg.path ?? "latin-progress.json";
+    this.path = cfg.path ?? "progress.json";
     this.branch = cfg.branch ?? "main";
   }
 
@@ -108,7 +113,7 @@ export class GitHubStorage implements StorageAdapter {
       method: "PUT",
       headers: { ...this.headers(), "Content-Type": "application/json" },
       body: JSON.stringify({
-        message: `Update Latin progress (${progress.updatedAt})`,
+        message: `${this.cfg.message ?? "Update progress"} (${progress.updatedAt})`,
         content: b64encode(JSON.stringify(progress, null, 2)),
         branch: this.branch,
         ...(this.sha ? { sha: this.sha } : {}),

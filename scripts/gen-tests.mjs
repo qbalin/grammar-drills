@@ -17,6 +17,7 @@ import { DatabaseSync } from "node:sqlite";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { compileFold, parseProfile } from "@latin-tutor/core";
 
 const REPO = dirname(dirname(fileURLToPath(import.meta.url)));
 const REF =
@@ -43,9 +44,13 @@ const onlyTopics = args;
 const dict = new DatabaseSync(`${REF}/dictionary.db`, { readOnly: true });
 const freq = new DatabaseSync(`${REF}/frequencies.db`, { readOnly: true });
 const formExists = dict.prepare("select 1 from forms where form_norm = ? limit 1");
-const normalize = (w) =>
-  w.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
-    .replace(/j/g, "i").replace(/v/g, "u");
+// The pack's own fold, not a copy of it: `dictionary.db.form_norm` was written
+// with this fold, so a second implementation drifting from it would silently
+// turn every lookup below into a miss and reject correct sentences.
+const profile = parseProfile(
+  JSON.parse(readFileSync(`${PACK}/profile.json`, "utf8")),
+);
+const normalize = compileFold(profile.fold);
 
 /**
  * Indeclinable function words — prepositions, conjunctions, particles, adverbs.
