@@ -28,28 +28,27 @@
   },
 
   "questions": {
-    "tests": 1699,
-    "questions": 6465,
+    "tests": 1722,
+    "questions": 6557,
     "topicsWithTests": 135,
     "duplicatePromptPct": 0.03,
-    "answerTokens": 44286,
+    "answerTokens": 44946,
     "dictResolvedPct": 94.4,
-    "bandLemmasUsed": 2726,
+    "bandLemmasUsed": 2732,
     "bandLemmasTotal": 5601,
-    "bandUtilisationPct": 48.7,
+    "bandUtilisationPct": 48.8,
     "keptRatioPct": 99.9,
-    "belowSizeScaledTarget": 6,
+    "belowSizeScaledTarget": 0,
+    "testsPerTopic": { "min": 6, "median": 11, "max": 26 },
     "_note": [
-      "Two backfill runs took the syllabus from 1,088 tests to 1,699 and the",
-      "topics below their size-scaled target from 95 to 6. The first stopped on",
-      "usage limits; the second was stopped by hand partway through Verb syntax.",
-      "Resume with:",
-      "  node --import tsx scripts/gen-tests.mjs --only-thin",
-      "which recomputes the deficit from what is on disk.",
+      "Three backfill runs took the syllabus from 1,088 tests to 1,722, and every",
+      "one of the 135 topics is now at or above its size-scaled target. The gap",
+      "the coverage report was built to expose is closed.",
       "",
-      "keptRatioPct covers the FIRST run only: gen-stats.json is written when a",
-      "run finishes, and the second was interrupted before it wrote anything. So",
-      "gate C6 has no data for the ~270 tests that run produced."
+      "keptRatioPct covers two of the three runs. gen-stats.json is written when",
+      "a run finishes, and the middle run was stopped by hand before it wrote",
+      "anything, so roughly 270 shipped tests have no rejection-rate data. C6",
+      "reads green on what it can see, not on everything."
     ]
   },
 

@@ -405,5 +405,141 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-355-style-pronouns-t7",
+  "sectionId": "bn-355-style-pronouns",
+  "questions": [
+   {
+    "prompt": "When it was asked of the merchant where he had hidden his wealth, he lied boldly.",
+    "answer": "ā quō cum quaererētur ubi dīvitiās cēlāvisset, audācter mentītus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ā",
+     "quō",
+     "cum",
+     "quaererētur",
+     "ubi",
+     "dīvitiās",
+     "cēlāvisset",
+     "audācter",
+     "mentītus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Both daughters, adorned with garlands, approached the altar together.",
+    "answer": "ambae fīliae, sertīs ōrnātae, ūnā ad āram accessērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ambae",
+     "fīliae",
+     "sertīs",
+     "ōrnātae",
+     "ūnā",
+     "ad",
+     "āram",
+     "accessērunt"
+    ]
+   },
+   {
+    "prompt": "Each of the two kings, when he was warned by the seer, scorned the omen.",
+    "answer": "uterque rēx, cum ā vāte monērētur, ōmen sprēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "uterque",
+     "rēx",
+     "cum",
+     "ā",
+     "vāte",
+     "monērētur",
+     "ōmen",
+     "sprēvit"
+    ]
+   },
+   {
+    "prompt": "The soldiers on each side, whom the long war had wearied, longed for their homes.",
+    "answer": "utrīque mīlitēs, quōs longum bellum fatīgāverat, domōs suās dēsīderābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "utrīque",
+     "mīlitēs",
+     "quōs",
+     "longum",
+     "bellum",
+     "fatīgāverat",
+     "domōs",
+     "suās",
+     "dēsīderābant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-355-style-pronouns-t8",
+  "sectionId": "bn-355-style-pronouns",
+  "questions": [
+   {
+    "prompt": "When it was asked of the sailor whither the storm had driven the ship, he pointed to the rocks with his finger.",
+    "answer": "ā quō cum quaererētur quō tempestās nāvem ēgisset, saxa digitō mōnstrāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ā",
+     "quō",
+     "cum",
+     "quaererētur",
+     "tempestās",
+     "nāvem",
+     "ēgisset",
+     "saxa",
+     "digitō",
+     "mōnstrāvit"
+    ]
+   },
+   {
+    "prompt": "Both consuls, having set aside their disagreement, defended the city together.",
+    "answer": "ambō cōnsulēs, discordiā dēpositā, urbem ūnā dēfendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ambō",
+     "cōnsulēs",
+     "discordiā",
+     "dēpositā",
+     "urbem",
+     "ūnā",
+     "dēfendērunt"
+    ]
+   },
+   {
+    "prompt": "Each of the two philosophers gave a different answer about the soul.",
+    "answer": "uterque philosophus dē animō dīversum respōnsum dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "uterque",
+     "philosophus",
+     "dē",
+     "animō",
+     "dīversum",
+     "respōnsum",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "In each camp the watchmen, fearing an ambush, kept the fires burning.",
+    "answer": "in utrīsque castrīs vigilēs, īnsidiās timentēs, ignēs ārdentēs servābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "utrīsque",
+     "castrīs",
+     "vigilēs",
+     "īnsidiās",
+     "timentēs",
+     "ignēs",
+     "ārdentēs",
+     "servābant"
+    ]
+   }
+  ]
  }
 ]

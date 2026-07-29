@@ -55,5 +55,24 @@
    "amīcōrumque": 1,
    "perīculōsior": 1
   }
+ },
+ {
+  "pack": "latin",
+  "topics": 6,
+  "calls": 6,
+  "rawQuestions": 92,
+  "keptQuestions": 92,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "noctēsque": 1,
+   "decem": 1,
+   "nimis": 1
+  }
  }
 ]

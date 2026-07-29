@@ -381,5 +381,377 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-353-style-nouns-t8",
+  "sectionId": "bn-353-style-nouns",
+  "questions": [
+   {
+    "prompt": "The weary soldiers, when the battle was over, cared for their bodies in camp.",
+    "answer": "Mīlitēs fessī, proeliō cōnfectō, corpora in castrīs cūrāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "fessī",
+     "proeliō",
+     "cōnfectō",
+     "corpora",
+     "in",
+     "castrīs",
+     "cūrāvērunt"
+    ]
+   },
+   {
+    "prompt": "After the victory the horsemen went home through the fields.",
+    "answer": "Post victōriam equitēs per agrōs domōs iērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "victōriam",
+     "equitēs",
+     "per",
+     "agrōs",
+     "domōs",
+     "iērunt"
+    ]
+   },
+   {
+    "prompt": "Day and night the sentries dreaded the enemy's sudden arrival.",
+    "answer": "Diēs noctēsque custōdēs subitum hostium adventum timēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Diēs",
+     "noctēsque",
+     "custōdēs",
+     "subitum",
+     "hostium",
+     "adventum",
+     "timēbant"
+    ]
+   },
+   {
+    "prompt": "The captives, freed at last, turned their minds toward their fatherland.",
+    "answer": "Captīvī tandem līberātī animōs ad patriam vertērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvī",
+     "tandem",
+     "līberātī",
+     "animōs",
+     "ad",
+     "patriam",
+     "vertērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-353-style-nouns-t9",
+  "sectionId": "bn-353-style-nouns",
+  "questions": [
+   {
+    "prompt": "When the citadel had been betrayed, everything was lost.",
+    "answer": "Arce prōditā, omnia perdita sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Arce",
+     "prōditā",
+     "omnia",
+     "perdita",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "Since these things are so, the camp must be abandoned before dawn.",
+    "answer": "Quae cum ita sint, ante lūcem castra relinquenda sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "cum",
+     "ita",
+     "sint",
+     "ante",
+     "lūcem",
+     "castra",
+     "relinquenda",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "All these things had long been well known throughout the whole province.",
+    "answer": "Haec omnia per tōtam prōvinciam iam diū pervulgāta erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "omnia",
+     "per",
+     "tōtam",
+     "prōvinciam",
+     "iam",
+     "diū",
+     "pervulgāta",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "The old man used to say that everything human is fleeting.",
+    "answer": "Senex omnia hūmāna cadūca esse dīcēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "omnia",
+     "hūmāna",
+     "cadūca",
+     "esse",
+     "dīcēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-353-style-nouns-t10",
+  "sectionId": "bn-353-style-nouns",
+  "questions": [
+   {
+    "prompt": "From boyhood the orator had devoted himself to the study of letters.",
+    "answer": "Ā puerō ōrātor sē litterārum studiō dēdiderat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ā",
+     "puerō",
+     "ōrātor",
+     "sē",
+     "litterārum",
+     "studiō",
+     "dēdiderat"
+    ]
+   },
+   {
+    "prompt": "In Pompey's consulship peace was at last restored to the weary city.",
+    "answer": "Pompēiō cōnsule pāx tandem fessae urbī reddita est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pompēiō",
+     "cōnsule",
+     "pāx",
+     "tandem",
+     "fessae",
+     "urbī",
+     "reddita",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Under your leadership the fleet will cross the sea without fear.",
+    "answer": "Tē duce classis sine timōre mare trānsībit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tē",
+     "duce",
+     "classis",
+     "sine",
+     "timōre",
+     "mare",
+     "trānsībit"
+    ]
+   },
+   {
+    "prompt": "With Hannibal as leader the Carthaginians crossed the lofty Alps.",
+    "answer": "Hannibale duce Poenī altās Alpēs superāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hannibale",
+     "duce",
+     "Poenī",
+     "altās",
+     "Alpēs",
+     "superāvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-353-style-nouns-t11",
+  "sectionId": "bn-353-style-nouns",
+  "questions": [
+   {
+    "prompt": "Arminius, the liberator of Germany, was feared by the Romans.",
+    "answer": "Arminius, Germāniae līberātor, ā Rōmānīs timēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Arminius",
+     "Germāniae",
+     "līberātor",
+     "ā",
+     "Rōmānīs",
+     "timēbātur"
+    ]
+   },
+   {
+    "prompt": "Numa, who succeeded Romulus, gave sacred laws to the people.",
+    "answer": "Numa, quī Rōmulō successit, sacrās lēgēs populō dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Numa",
+     "quī",
+     "Rōmulō",
+     "successit",
+     "sacrās",
+     "lēgēs",
+     "populō",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "Those who read my books praise the poet's wisdom.",
+    "answer": "Quī meōs librōs legunt poētae sapientiam laudant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "meōs",
+     "librōs",
+     "legunt",
+     "poētae",
+     "sapientiam",
+     "laudant"
+    ]
+   },
+   {
+    "prompt": "The professional accusers stirred up hatred against the innocent man.",
+    "answer": "Accūsātōrēs in innocentem virum odium concitāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Accūsātōrēs",
+     "in",
+     "innocentem",
+     "virum",
+     "odium",
+     "concitāvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-353-style-nouns-t12",
+  "sectionId": "bn-353-style-nouns",
+  "questions": [
+   {
+    "prompt": "Resentment at his injuries drove the young man to war.",
+    "answer": "Dolor injūriārum juvenem ad bellum impulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dolor",
+     "injūriārum",
+     "juvenem",
+     "ad",
+     "bellum",
+     "impulit"
+    ]
+   },
+   {
+    "prompt": "The coastal cities sent grain to the besieged army.",
+    "answer": "Urbēs maritimae frūmentum obsessō exercituī mīsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbēs",
+     "maritimae",
+     "frūmentum",
+     "obsessō",
+     "exercituī",
+     "mīsērunt"
+    ]
+   },
+   {
+    "prompt": "The battle fought at Cannae terrified the whole of Italy.",
+    "answer": "Pugna ad Cannās facta tōtam Ītaliam terruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pugna",
+     "ad",
+     "Cannās",
+     "facta",
+     "tōtam",
+     "Ītaliam",
+     "terruit"
+    ]
+   },
+   {
+    "prompt": "The book which is in my hands treats of old age.",
+    "answer": "Liber quī in meīs manibus est dē senectūte agit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Liber",
+     "quī",
+     "in",
+     "meīs",
+     "manibus",
+     "est",
+     "dē",
+     "senectūte",
+     "agit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-353-style-nouns-t13",
+  "sectionId": "bn-353-style-nouns",
+  "questions": [
+   {
+    "prompt": "His love for his country never weakened, even in exile.",
+    "answer": "Amor in patriam, etiam in exsiliō, numquam languit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amor",
+     "in",
+     "patriam",
+     "etiam",
+     "exsiliō",
+     "numquam",
+     "languit"
+    ]
+   },
+   {
+    "prompt": "The wise man awaited his departure from life with a calm mind.",
+    "answer": "Sapiēns excessum ē vītā aequō animō exspectābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "excessum",
+     "ē",
+     "vītā",
+     "aequō",
+     "animō",
+     "exspectābat"
+    ]
+   },
+   {
+    "prompt": "Hatred of the Romans united the neighboring tribes.",
+    "answer": "Odium ergā Rōmānōs fīnitimās gentēs jūnxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Odium",
+     "ergā",
+     "Rōmānōs",
+     "fīnitimās",
+     "gentēs",
+     "jūnxit"
+    ]
+   },
+   {
+    "prompt": "The passage to Britain was delayed by fierce storms.",
+    "answer": "Trānsitus in Britanniam saevīs tempestātibus retardātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Trānsitus",
+     "in",
+     "Britanniam",
+     "saevīs",
+     "tempestātibus",
+     "retardātus",
+     "est"
+    ]
+   }
+  ]
  }
 ]

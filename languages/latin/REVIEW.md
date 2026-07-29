@@ -36,17 +36,16 @@ sentence that is impeccably attested and means something other than the prompt.
 
 | Date | Reviewer | Sample | Verdict |
 |---|---|---|---|
-| — | *not yet signed off* | — | The automated gates C1–C7 pass on 6,465 questions. 2,440 of these were generated on 2026-07-29 across two backfill runs and have had no human read-through; the 4,025 that predate them were reviewed before the gates existed. |
+| — | *not yet signed off* | — | The automated gates C1–C7 pass on 6,557 questions. 2,532 of these were generated on 2026-07-29 across three backfill runs and have had no human read-through; the 4,025 that predate them were reviewed before the gates existed. This is now the largest unreviewed block in the pack and the most useful thing a next run could do. |
 
 ## Known state
 
-- 6 of 135 topics are still below their size-scaled target, down from 95. The
-  first backfill run stopped itself on usage limits; the second was stopped by
-  hand partway through Verb syntax. `gen-tests.mjs --only-thin` recomputes the
-  deficit and resumes.
-- Gate C6 (kept ratio) covers the first run only. `gen-stats.json` is written
-  when a run finishes, so the interrupted second run recorded nothing — roughly
-  270 of the shipped tests have no rejection-rate data behind them.
+- Every one of the 135 topics is at or above its size-scaled target: 6 tests at
+  the thinnest, 11 median, 26 at the largest. The coverage gap is closed.
+- Gate C6 (kept ratio) covers two of the three backfill runs. `gen-stats.json`
+  is written when a run finishes, and the middle run was stopped by hand, so
+  roughly 270 shipped tests have no rejection-rate data behind them. Writing
+  those stats incrementally would close it.
 - 41 distinct forms were accepted without a dictionary match across that run
   (the allowance is 2 per sentence). They are listed in `content/gen-stats.json`
   and are worth reading: a form that recurs is either a real gap in the

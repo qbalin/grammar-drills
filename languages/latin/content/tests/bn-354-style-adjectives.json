@@ -332,5 +332,256 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-354-style-adjectives-t7",
+  "sectionId": "bn-354-style-adjectives",
+  "questions": [
+   {
+    "prompt": "The moral virtues of the leader adorned famous Athens.",
+    "answer": "Virtūtēs animī ducis Athēnās, urbem praeclārissimam, ōrnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virtūtēs",
+     "animī",
+     "ducis",
+     "Athēnās",
+     "urbem",
+     "praeclārissimam",
+     "ōrnāvērunt"
+    ]
+   },
+   {
+    "prompt": "The strange circumstance frightened the wise king in the walled town.",
+    "answer": "Novitās reī rēgem sapientem in oppidō terruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Novitās",
+     "reī",
+     "rēgem",
+     "sapientem",
+     "in",
+     "oppidō",
+     "terruit"
+    ]
+   },
+   {
+    "prompt": "Systematic order governed the flock of the royal shepherd.",
+    "answer": "Ratiō et ōrdō gregem pāstōris rēgiī rēxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ratiō",
+     "et",
+     "ōrdō",
+     "gregem",
+     "pāstōris",
+     "rēgiī",
+     "rēxērunt"
+    ]
+   },
+   {
+    "prompt": "The surrounding tribes admired the doughty Scipio, a most valiant man.",
+    "answer": "Omnēs circā populī Scīpiōnem, virum fortissimum, admīrātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnēs",
+     "circā",
+     "populī",
+     "Scīpiōnem",
+     "virum",
+     "fortissimum",
+     "admīrātī",
+     "sunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-354-style-adjectives-t8",
+  "sectionId": "bn-354-style-adjectives",
+  "questions": [
+   {
+    "prompt": "The bodily ills of the old man delayed the journey.",
+    "answer": "Dolōrēs corporis senis iter tardāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dolōrēs",
+     "corporis",
+     "senis",
+     "iter",
+     "tardāvērunt"
+    ]
+   },
+   {
+    "prompt": "The eager onset of the cavalry broke the enemy's line.",
+    "answer": "Ārdor et impetus equitum aciem hostium frēgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ārdor",
+     "et",
+     "impetus",
+     "equitum",
+     "aciem",
+     "hostium",
+     "frēgērunt"
+    ]
+   },
+   {
+    "prompt": "The rough roads wearied the wise Socrates as he returned home.",
+    "answer": "Asperitās viārum Sōcratem, hominem sapientem, domum redeuntem fatīgāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Asperitās",
+     "viārum",
+     "Sōcratem",
+     "hominem",
+     "sapientem",
+     "domum",
+     "redeuntem",
+     "fatīgāvit"
+    ]
+   },
+   {
+    "prompt": "The uprising of the slaves shook the whole town by night.",
+    "answer": "Tumultus servīlis tōtum oppidum nocte concussit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tumultus",
+     "servīlis",
+     "tōtum",
+     "oppidum",
+     "nocte",
+     "concussit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-354-style-adjectives-t9",
+  "sectionId": "bn-354-style-adjectives",
+  "questions": [
+   {
+    "prompt": "In danger practical knowledge is worth more than theoretical knowledge.",
+    "answer": "In perīculō prūdentia plūris quam doctrīna valet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "perīculō",
+     "prūdentia",
+     "plūris",
+     "quam",
+     "doctrīna",
+     "valet"
+    ]
+   },
+   {
+    "prompt": "The king's shepherd guarded the little book with great care.",
+    "answer": "Pāstor rēgius libellum magnā cūrā custōdīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pāstor",
+     "rēgius",
+     "libellum",
+     "magnā",
+     "cūrā",
+     "custōdīvit"
+    ]
+   },
+   {
+    "prompt": "The surrounding tribes feared the eager onset of the legions.",
+    "answer": "Omnēs circā populī ārdōrem et impetum legiōnum timēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnēs",
+     "circā",
+     "populī",
+     "ārdōrem",
+     "et",
+     "impetum",
+     "legiōnum",
+     "timēbant"
+    ]
+   },
+   {
+    "prompt": "The strange circumstance revealed the moral virtues of the citizens.",
+    "answer": "Novitās reī virtūtēs animī cīvium patefēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Novitās",
+     "reī",
+     "virtūtēs",
+     "animī",
+     "cīvium",
+     "patefēcit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-354-style-adjectives-t10",
+  "sectionId": "bn-354-style-adjectives",
+  "questions": [
+   {
+    "prompt": "The bodily ills of the soldiers delayed the doughty Scipio.",
+    "answer": "Dolōrēs corporis mīlitum Scīpiōnem, virum fortissimum, morātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dolōrēs",
+     "corporis",
+     "mīlitum",
+     "Scīpiōnem",
+     "virum",
+     "fortissimum",
+     "morātī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "Systematic order and practical knowledge ruled famous Syracuse.",
+    "answer": "Ratiō et ōrdō ac prūdentia Syrācūsās, urbem praeclārissimam, rēxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ratiō",
+     "et",
+     "ōrdō",
+     "ac",
+     "prūdentia",
+     "Syrācūsās",
+     "urbem",
+     "praeclārissimam",
+     "rēxērunt"
+    ]
+   },
+   {
+    "prompt": "The rough roads and bodily ills wore out the shepherd of the king.",
+    "answer": "Asperitās viārum et dolōrēs corporis pāstōrem rēgium cōnfēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Asperitās",
+     "viārum",
+     "et",
+     "dolōrēs",
+     "corporis",
+     "pāstōrem",
+     "rēgium",
+     "cōnfēcērunt"
+    ]
+   },
+   {
+    "prompt": "The uprising of the slaves troubled the wise Socrates for many days.",
+    "answer": "Tumultus servīlis Sōcratem, hominem sapientem, multōs diēs vexāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tumultus",
+     "servīlis",
+     "Sōcratem",
+     "hominem",
+     "sapientem",
+     "multōs",
+     "diēs",
+     "vexāvit"
+    ]
+   }
+  ]
  }
 ]

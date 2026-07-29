@@ -386,5 +386,311 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-356-style-verbs-t8",
+  "sectionId": "bn-356-style-verbs",
+  "questions": [
+   {
+    "prompt": "Having exhorted his soldiers, the general led them against the walls of the town.",
+    "answer": "Adhortātus mīlitēs, dux eōs contrā moenia oppidī dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adhortātus",
+     "mīlitēs",
+     "dux",
+     "eōs",
+     "contrā",
+     "moenia",
+     "oppidī",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "Having feared the anger of the king, the envoys quickly returned home.",
+    "answer": "Veritī īram rēgis, lēgātī domum celeriter reversī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Veritī",
+     "īram",
+     "rēgis",
+     "lēgātī",
+     "domum",
+     "celeriter",
+     "reversī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "When the enemy had crossed the river, they attacked the camp.",
+    "answer": "Cum hostēs flūmen trānsīssent, castra oppugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "hostēs",
+     "flūmen",
+     "trānsīssent",
+     "castra",
+     "oppugnāvērunt"
+    ]
+   },
+   {
+    "prompt": "The citizens, who had endured many hardships, at last demanded peace.",
+    "answer": "Cīvēs, quī multōs labōrēs passī erant, tandem pācem poposcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvēs",
+     "quī",
+     "multōs",
+     "labōrēs",
+     "passī",
+     "erant",
+     "tandem",
+     "pācem",
+     "poposcērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-356-style-verbs-t9",
+  "sectionId": "bn-356-style-verbs",
+  "questions": [
+   {
+    "prompt": "The just king is loved by all, but the tyrant is hated.",
+    "answer": "Rēx iūstus ab omnibus amātur, sed tyrannus in odiō est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "iūstus",
+     "ab",
+     "omnibus",
+     "amātur",
+     "sed",
+     "tyrannus",
+     "in",
+     "odiō",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The wise old man is admired by the young men.",
+    "answer": "Senex sapiēns iuvenibus admīrātiōnī est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "sapiēns",
+     "iuvenibus",
+     "admīrātiōnī",
+     "est"
+    ]
+   },
+   {
+    "prompt": "This custom was once in use among the ancient Romans.",
+    "answer": "Hic mōs ōlim in ūsū erat apud Rōmānōs antīquōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "mōs",
+     "ōlim",
+     "in",
+     "ūsū",
+     "erat",
+     "apud",
+     "Rōmānōs",
+     "antīquōs"
+    ]
+   },
+   {
+    "prompt": "As long as you are rich, you are envied by many.",
+    "answer": "Dum dīves es, multīs in invidiā es.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "dīves",
+     "es",
+     "multīs",
+     "in",
+     "invidiā"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-356-style-verbs-t10",
+  "sectionId": "bn-356-style-verbs",
+  "questions": [
+   {
+    "prompt": "Having stormed the citadel, the soldiers plundered the houses of the rich.",
+    "answer": "Arce expugnātā, mīlitēs dīvitum domōs dīripuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Arce",
+     "expugnātā",
+     "mīlitēs",
+     "dīvitum",
+     "domōs",
+     "dīripuērunt"
+    ]
+   },
+   {
+    "prompt": "Having killed the tyrant, the citizens restored liberty to the state.",
+    "answer": "Tyrannō interfectō, cīvēs lībertātem cīvitātī reddidērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tyrannō",
+     "interfectō",
+     "cīvēs",
+     "lībertātem",
+     "cīvitātī",
+     "reddidērunt"
+    ]
+   },
+   {
+    "prompt": "When the war was finished, the general dismissed his weary troops.",
+    "answer": "Bellō cōnfectō, dux fessās cōpiās dīmīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bellō",
+     "cōnfectō",
+     "dux",
+     "fessās",
+     "cōpiās",
+     "dīmīsit"
+    ]
+   },
+   {
+    "prompt": "The plot having been discovered, the conspirators fled from the city by night.",
+    "answer": "Coniūrātiōne patefactā, coniūrātī nocte ex urbe fūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Coniūrātiōne",
+     "patefactā",
+     "coniūrātī",
+     "nocte",
+     "ex",
+     "urbe",
+     "fūgērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-356-style-verbs-t11",
+  "sectionId": "bn-356-style-verbs",
+  "questions": [
+   {
+    "prompt": "You would think that the whole army was in flight.",
+    "answer": "Tōtum exercitum in fugā esse putārēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tōtum",
+     "exercitum",
+     "in",
+     "fugā",
+     "esse",
+     "putārēs"
+    ]
+   },
+   {
+    "prompt": "What are you to do with so stubborn a man?",
+    "answer": "Quid tam pertinācī homine faciās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "tam",
+     "pertinācī",
+     "homine",
+     "faciās"
+    ]
+   },
+   {
+    "prompt": "You could see corpses scattered over the whole plain.",
+    "answer": "Cadāvera per tōtum campum sparsa vidērēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cadāvera",
+     "per",
+     "tōtum",
+     "campum",
+     "sparsa",
+     "vidērēs"
+    ]
+   },
+   {
+    "prompt": "Use your strength while the enemy hesitates.",
+    "answer": "Ūtāre vīribus dum hostis dubitat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ūtāre",
+     "vīribus",
+     "dum",
+     "hostis",
+     "dubitat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-356-style-verbs-t12",
+  "sectionId": "bn-356-style-verbs",
+  "questions": [
+   {
+    "prompt": "The runaway slave was being pursued through the whole forest by dogs.",
+    "answer": "Servus fugitīvus per tōtam silvam canibus agitābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Servus",
+     "fugitīvus",
+     "per",
+     "tōtam",
+     "silvam",
+     "canibus",
+     "agitābātur"
+    ]
+   },
+   {
+    "prompt": "Having encouraged one another, the rowers bravely bore the storm.",
+    "answer": "Adhortātī inter sē, rēmigēs tempestātem fortiter tulērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adhortātī",
+     "inter",
+     "sē",
+     "rēmigēs",
+     "tempestātem",
+     "fortiter",
+     "tulērunt"
+    ]
+   },
+   {
+    "prompt": "When the messenger had announced the victory, the whole city rejoiced.",
+    "answer": "Cum nūntius victōriam nūntiāvisset, tōta urbs gāvīsa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "nūntius",
+     "victōriam",
+     "nūntiāvisset",
+     "tōta",
+     "urbs",
+     "gāvīsa",
+     "est"
+    ]
+   },
+   {
+    "prompt": "If one seeks wisdom, one should shun idle pleasures.",
+    "answer": "Sī sapientiam petās, inānēs voluptātēs fugiās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "sapientiam",
+     "petās",
+     "inānēs",
+     "voluptātēs",
+     "fugiās"
+    ]
+   }
+  ]
  }
 ]
