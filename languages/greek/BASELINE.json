@@ -1,0 +1,97 @@
+{
+  "_comment": [
+    "What this pack measured when it was last validated.",
+    "",
+    "It is a record, not an input: the gates live in profile.json and are checked",
+    "by scripts/validate-pack.mjs. This is here so a later run can see whether a",
+    "number moved, and by how much, rather than only whether it still clears a",
+    "threshold. Regenerate with:",
+    "  node --import tsx scripts/validate-pack.mjs --pack languages/greek \\",
+    "    --ref ../language_learning/languages/ancient_greek --require-ref \\",
+    "    --built apps/web/public/content",
+    "",
+    "The question numbers below are a SNAPSHOT OF AN UNFINISHED RUN. Generation",
+    "was still going when this was written; see REVIEW.md."
+  ],
+  "measuredAt": "2026-07-29",
+  "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
+
+  "grammar": {
+    "topics": 485,
+    "families": 11,
+    "familyCounts": {
+      "nouns": 29, "adj": 9, "pron": 2, "verb-forms": 74,
+      "sentence-syntax": 20, "adj-pron-syntax": 41, "case-syntax": 72,
+      "verb-syntax": 63, "clause-syntax": 129, "particles": 42, "style": 4
+    },
+    "textChars": { "min": 122, "median": 2498, "p90": 7656, "max": 11959 },
+    "sourceSections": 3048,
+    "assigned": 2768,
+    "dropped": { "part-not-teachable": 266, "below-min-length": 14 },
+    "rowShapedLines": 1774,
+    "tableRowsRecovered": 1907,
+    "romanPoints": 9,
+    "_note": [
+      "Parsed from the Perseus TEI of Smyth, all four parts, §§ 1-3048 with no",
+      "gaps. The 266 not-teachable are Part I (letters, sounds, accent, §§ 1-188)",
+      "and Part III (word formation, §§ 822-899); the appendix's catalogue of",
+      "verbs carries no section numbers and is not a source section at all.",
+      "",
+      "Runs over 12000 chars are cut at a section boundary, which is why the max",
+      "sits well under maxTextChars. 22 topics still exceed 4x the median; all",
+      "are syntax chapters and all are inside the gate."
+    ]
+  },
+
+  "questions": {
+    "tests": 44,
+    "questions": 173,
+    "topicsWithTests": 3,
+    "topicsTotal": 485,
+    "testsWanted": 6957,
+    "keptRatioPct": 100.0,
+    "_note": [
+      "INCOMPLETE. Generation is a resumable run that had covered 3 of 485",
+      "topics when this was committed, so gates C1, C5 and C7 fail — a topic",
+      "with no questions is what C1 exists to report. Measured rate was about",
+      "2.1 tests a minute.",
+      "",
+      "Validation kept 100% of generated items over the first three topics,",
+      "which is the number to watch: Latin needed its function-word list",
+      "extended twice before it got there, and Greek needed no such list at all",
+      "because the reference dictionary is built from a morphological analyser",
+      "rather than a dump of inflected forms."
+    ]
+  },
+
+  "dictionary": {
+    "formKeys": 293953,
+    "distinctLemmas": 7194,
+    "rankRange": [1, 7000],
+    "refEntries": 114916,
+    "refForms": 1370285,
+    "refRankedLemmas": 22987,
+    "foldMatchesRefNormOnSample": 40000,
+    "lemmasResolvedOfTop7000": 7000,
+    "citationsRewrittenPct": 96.1,
+    "heldOutTextCoveragePct": 96.6,
+    "_note": [
+      "Both reference databases were built fresh for this pack from Eulexis",
+      "(GPLv3, Morpheus-derived) and a Perseus corpus of 46 works, ~900k words",
+      "of Attic prose plus Homer and Herodotus. They live in the sibling",
+      "language_learning repo and are not redistributed here; only the derived",
+      "top-7000 map ships.",
+      "",
+      "Every one of the top 7000 ranked lemmas resolved against the dictionary,",
+      "with none absent. Coverage on a held-out page of Xenophon and Plato is",
+      "96.6%; the three misses are one proper name and two elided forms."
+    ]
+  },
+
+  "bundle": {
+    "grammarJsonGz": "695 KB",
+    "testsJsonGz": "5 KB",
+    "lemmasJsonGz": "202 KB",
+    "formsTxtGz": "913 KB"
+  }
+}

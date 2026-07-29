@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "greek",
+
+  "l2": {
+    "code": "grc",
+    "name": "Greek",
+    "endonym": "Ἑλληνικά",
+    "script": "grek",
+    "direction": "ltr"
+  },
+  "l1": { "code": "en", "name": "English" },
+
+  "fold": {
+    "trim": true,
+    "caseFold": "lower",
+    "decompose": "NFD",
+    "stripMarks": ["\\u0300-\\u036f", "\\u0342", "\\u0345"],
+    "keepMarks": [],
+    "map": [["ς", "σ"]],
+    "recompose": "NFC"
+  },
+
+  "families": [
+    { "id": "nouns", "label": "Nouns" },
+    { "id": "adj", "label": "Adjectives, adverbs & numerals" },
+    { "id": "pron", "label": "Pronouns" },
+    { "id": "verb-forms", "label": "Verb forms" },
+    { "id": "sentence-syntax", "label": "The simple sentence" },
+    { "id": "adj-pron-syntax", "label": "Article, adjective & pronoun syntax" },
+    { "id": "case-syntax", "label": "Cases & prepositions" },
+    { "id": "verb-syntax", "label": "Verb syntax" },
+    { "id": "clause-syntax", "label": "Subordinate clauses" },
+    { "id": "particles", "label": "Particles" },
+    { "id": "style", "label": "Figures & style" }
+  ],
+  "fallbackFamily": "style",
+
+  "grammar": {
+    "source": {
+      "title": "Herbert Weir Smyth, A Greek Grammar for Colleges (New York, 1920)",
+      "url": "https://raw.githubusercontent.com/alpheios-project/grammar-smyth/master/src/smyth_eng_u.xml",
+      "licence": "text public domain (1920); Perseus Project digitization CC BY-SA 3.0"
+    },
+    "idPrefix": "sm",
+    "refPrefix": "§ ",
+    "paradigmLabels": [
+      "nom", "gen", "dat", "acc", "voc",
+      "n", "g", "d", "a", "v",
+      "sing", "singular", "dual", "du", "plur", "plural",
+      "1st", "2nd", "3rd", "1", "2", "3"
+    ],
+    "headingPattern": "^\\p{Lu}[\\p{Lu} .,'’—-]*\\.?$",
+    "headingFlags": "u",
+    "headingMaxLength": 40
+  },
+
+  "questions": {
+    "defaultKind": "translate-en-grc",
+    "produceKinds": ["translate-en-grc"]
+  },
+
+  "citationsVersion": 1,
+
+  "ui": {
+    "appName": "Ἑλληνικά",
+    "manifestName": "Ἑλληνικά — Ancient Greek tutor",
+    "description": "A spaced-repetition Ancient Greek tutor. Translate into Greek, grade yourself, and watch the grammar fill in.",
+    "promptDirection": "Translate into Greek",
+    "cliPlaceholder": "type your Greek, then Enter…",
+    "cliHint": "type your Greek",
+    "webPlaceholder": "write your Greek…",
+    "answerAriaLabel": "Your Greek",
+    "sayItIn": "say it in Greek",
+    "themeColor": "#12121a",
+    "backgroundColor": "#12121a"
+  },
+
+  "storage": {
+    "webProgressKey": "greek-tutor:progress",
+    "webSyncKey": "greek-tutor:sync",
+    "cliDir": ".greek-tutor",
+    "githubPath": "greek-progress.json",
+    "exportPrefix": "hellenika-progress",
+    "dictionaryCacheName": "hellenika-dictionary"
+  },
+
+  "grammarShape": {
+    "minTopics": 100,
+    "maxTopics": 500,
+    "minTextChars": 120,
+    "maxTextChars": 24000,
+    "medianTextCharsRange": [400, 4000],
+    "p90TextCharsMax": 8000,
+    "maxFamilySharePct": 40
+  },
+
+  "coverage": {
+    "minTestsPerTopic": 6,
+    "minQuestionsPerTopic": 16,
+    "topicsWithTestsPct": 100,
+    "maxDuplicatePromptPct": 1.0,
+    "minDictResolvedPct": 90,
+    "minBandUtilisationPct": 25,
+    "minKeptRatioPct": 40
+  }
+}

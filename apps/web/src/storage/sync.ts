@@ -6,7 +6,9 @@ import {
 import { LocalStorageAdapter } from "./local.js";
 import { profile } from "../pack.js";
 
-const CONFIG_KEY = "latin-tutor:sync";
+// Namespaced by the pack, like the progress key: each language keeps its own
+// repo settings even when they share an origin.
+const CONFIG_KEY = profile.storage.webSyncKey;
 
 export interface SyncConfig {
   token: string;
