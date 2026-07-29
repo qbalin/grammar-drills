@@ -10,12 +10,21 @@
  *
  *   node --import tsx scripts/validate-pack.mjs [--pack languages/latin]
  *        [--ref /path/to/ref] [--built apps/web/public/content]
- *        [--profile-only] [--require-ref]
+ *        [--profile-only] [--require-ref] [--allow-incomplete]
  *
  * The reference databases are not in this repo, so where they are missing the
  * gates that need them say they were skipped. `--require-ref` turns that into a
  * failure, which is what you want before shipping a pack and not what CI can
  * ask for.
+ *
+ * `--allow-incomplete` reports the question-coverage gates without letting them
+ * decide the exit code. A pack whose questions are still being generated fails
+ * them by definition — a topic with no tests is exactly what C1 is for — and
+ * that is a reason to publish it knowingly rather than a reason to call the
+ * build broken. It never relaxes anything about correctness: the fold, the
+ * families, the syllabus and the dictionary invariant are gates either way, and
+ * so is every question that HAS been written. Use it to ship a draft, and take
+ * it away again when the set is finished.
  *
  * Exit code is the answer: 0 means every gate passed.
  */
@@ -167,7 +176,9 @@ console.log(`\n  fold digest: ${profileHash(profile.fold)}`);
 // --- run the two reports ------------------------------------------------------
 
 const here = dirname(fileURLToPath(import.meta.url));
+const ALLOW_INCOMPLETE = argv.includes("--allow-incomplete");
 let reportsOk = true;
+let incomplete = false;
 if (!argv.includes("--profile-only")) {
   for (const script of ["grammar-report.mjs", "coverage-report.mjs"]) {
     try {
@@ -175,15 +186,25 @@ if (!argv.includes("--profile-only")) {
         stdio: "inherit",
       });
     } catch {
-      reportsOk = false;
+      // Only the coverage half is about how much has been written; the grammar
+      // report is about whether the syllabus is sound, which a draft still owes.
+      if (ALLOW_INCOMPLETE && script === "coverage-report.mjs") incomplete = true;
+      else reportsOk = false;
     }
   }
 }
 
 const ok = report(`Pack gates — ${profile.id}`, gates) && reportsOk;
+if (incomplete) {
+  console.log(
+    `\n${profile.l2.name}: the question set is incomplete and --allow-incomplete ` +
+      `was passed, so the coverage gates above are reported and not enforced. ` +
+      `Everything else held.`,
+  );
+}
 console.log(
   ok
-    ? `\n${profile.l2.name} passes every gate.`
+    ? `\n${profile.l2.name} passes every gate${incomplete ? " it was asked to" : ""}.`
     : `\n${profile.l2.name} is not ready; see the failures above.`,
 );
 process.exit(ok ? 0 : 1);

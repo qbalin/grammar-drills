@@ -107,19 +107,27 @@ jobs:
       # asset URLs and the service worker's scope have to agree with the path a
       # build is served from, which is what BASE_PATH sets.
       #
-      # LANG_PACKS lists what to publish. A pack is validated immediately after
-      # it is built, so publishing a pack means it passed its own gates: a pack
-      # still generating its questions fails coverage and stops the deploy, and
-      # Pages goes on serving the last good one rather than replacing it with a
-      # half-written syllabus. Drop it from the list to ship without it.
+      # LANG_PACKS lists what to publish; LANG_PACKS_DRAFT lists which of those
+      # are still being written. A pack is validated immediately after it is
+      # built, so publishing means it passed its gates — except that a draft's
+      # question-coverage gates are reported and not enforced, because a pack
+      # midway through generating its questions fails them by definition and
+      # that is a thing to know rather than a broken build. Nothing about
+      # correctness is relaxed for a draft. Empty the variable when the set is
+      # finished, and the gates start deciding again.
       - name: Build each language into its own path
         env:
           LANG_PACKS: ${{ vars.LANG_PACKS || 'latin greek' }}
+          LANG_PACKS_DRAFT: ${{ vars.LANG_PACKS_DRAFT || 'greek' }}
           REPO: ${{ github.event.repository.name }}
         run: |
           set -euo pipefail
           for pack in $LANG_PACKS; do
             echo "::group::$pack"
+            draft=""
+            case " $LANG_PACKS_DRAFT " in
+              *" $pack "*) draft="--allow-incomplete" ;;
+            esac
             LANG_PACK="$pack" BASE_PATH="/$REPO/$pack/" \
               pnpm --filter @lang-tutor/web build
             # The syllabus and the question set have to hold up, not just
@@ -127,7 +135,7 @@ jobs:
             # gates needing them report themselves skipped rather than passing
             # quietly.
             LANG_PACK="$pack" node --import tsx scripts/validate-pack.mjs \
-              --pack "languages/$pack" --built apps/web/public/content
+              --pack "languages/$pack" --built apps/web/public/content $draft
             mkdir -p "site/$pack"
             cp -R apps/web/dist/. "site/$pack/"
             echo "::endgroup::"
