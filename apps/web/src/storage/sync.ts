@@ -2,7 +2,7 @@ import {
   GitHubStorage,
   type Progress,
   type StorageAdapter,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 import { LocalStorageAdapter } from "./local.js";
 import { profile } from "../pack.js";
 

@@ -3,7 +3,7 @@ import {
   type GrammarSection,
   type LemmaEntry,
   type Test,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 import { LemmaIndex } from "./lemma-index.js";
 import { profile } from "./pack.js";
 

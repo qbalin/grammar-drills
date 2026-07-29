@@ -23,6 +23,18 @@ export default defineConfig({
   resolve: { alias: { "@pack/profile": profilePath } },
   plugins: [
     react(),
+    {
+      // The shell has to name the language too: the tab title and the iOS
+      // home-screen label are read before any of the app's code runs.
+      name: "pack-html",
+      transformIndexHtml(html: string) {
+        return html
+          .replace(/%APP_NAME%/g, profile.ui.appName)
+          .replace(/%DESCRIPTION%/g, profile.ui.description)
+          .replace(/%THEME_COLOR%/g, profile.ui.themeColor)
+          .replace(/%L1_CODE%/g, profile.l1.code);
+      },
+    },
     VitePWA({
       registerType: "prompt",
       // No `includeAssets`: the glob below already takes every icon, and naming

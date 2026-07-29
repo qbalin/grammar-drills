@@ -32,7 +32,7 @@ import { gunzipSync, gzipSync } from "node:zlib";
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { compileFold, parseProfile } from "@latin-tutor/core";
+import { compileFold, parseProfile } from "@lang-tutor/core";
 
 const PACK = dirname(fileURLToPath(import.meta.url));
 const REPO = dirname(dirname(PACK));

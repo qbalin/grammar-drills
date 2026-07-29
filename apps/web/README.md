@@ -46,9 +46,9 @@ It lives on the device. Two ways to move it:
 ## For developers
 
 ```bash
-pnpm --filter @latin-tutor/web dev      # builds the content bundle, then serves
-pnpm --filter @latin-tutor/web build    # -> apps/web/dist
-pnpm --filter @latin-tutor/web test
+pnpm --filter @lang-tutor/web dev      # builds the content bundle, then serves
+pnpm --filter @lang-tutor/web build    # -> apps/web/dist
+pnpm --filter @lang-tutor/web test
 ```
 
 `dev` and `build` both run `pnpm content` first, which is
@@ -85,7 +85,7 @@ gzip magic number and handles both.
 
 ### Structure
 
-The engine is `@latin-tutor/core`, unchanged and shared with the CLI: `Session`
+The engine is `@lang-tutor/core`, unchanged and shared with the CLI: `Session`
 holds the whole state machine, FSRS scheduling and mastery. This app is the
 touch surface over it.
 

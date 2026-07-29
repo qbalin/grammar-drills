@@ -58,10 +58,13 @@ export const testProfile: Profile = {
     manifestName: "Secunda — a tutor",
     description: "A tutor for tests.",
     promptDirection: "Translate into Second",
-    cliPlaceholder: "type your answer, then Enter…",
-    cliHint: "type your answer",
-    webPlaceholder: "write your answer…",
-    answerAriaLabel: "Your answer",
+    // Deliberately not the words "your answer": the CLI labels the submitted
+    // text that way, and a fixture that collided with it would make the
+    // undo tests assert nothing.
+    cliPlaceholder: "type it in Second, then Enter…",
+    cliHint: "type it in Second",
+    webPlaceholder: "write it in Second…",
+    answerAriaLabel: "Your Second",
     sayItIn: "say it in Second",
     themeColor: "#12121a",
     backgroundColor: "#12121a",

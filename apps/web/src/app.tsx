@@ -8,8 +8,9 @@ import {
   type Rating,
   type Test,
   type TopicProgress,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 import { dictionaryReady, loadDictionary } from "./content-loader.js";
+import { profile } from "./pack.js";
 import type { SyncState, SyncConfig } from "./storage/sync.js";
 import { SyncingStorage } from "./storage/sync.js";
 import {
@@ -660,7 +661,7 @@ export function App({ content, session, storage }: Props) {
           ) : (
             <>
               {section && <span className="status__ref">§ {section.ref}</span>}
-              <span className="status__title">{section?.title ?? "Latina"}</span>
+              <span className="status__title">{section?.title ?? profile.ui.appName}</span>
             </>
           )}
         </div>

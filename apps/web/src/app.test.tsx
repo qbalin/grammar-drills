@@ -13,8 +13,9 @@ import {
   Session,
   type ContentData,
   type Progress,
-} from "@latin-tutor/core";
-import { testProfile } from "@latin-tutor/core/testing";
+} from "@lang-tutor/core";
+import { testProfile } from "@lang-tutor/core/testing";
+import { profile } from "./pack.js";
 import { App } from "./app.js";
 import { SyncingStorage } from "./storage/sync.js";
 
@@ -234,12 +235,12 @@ describe("the study loop", () => {
     mount();
     await skipPlacement(user);
 
-    expect(screen.getByText("Translate into Latin · 1/2")).toBeDefined();
+    expect(screen.getByText(`${profile.ui.promptDirection} · 1/2`)).toBeDefined();
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
     // Same topic, next question — not a jump to the next topic.
-    expect(screen.getByText("Translate into Latin · 2/2")).toBeDefined();
+    expect(screen.getByText(`${profile.ui.promptDirection} · 2/2`)).toBeDefined();
     expect(screen.getByText("The sailors feared the storm.")).toBeDefined();
   });
 
@@ -385,7 +386,7 @@ describe("vocabulary", () => {
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
     // A new vocabulary card is due at once, so it comes up next.
-    expect(screen.getByText("Vocabulary · say it in Latin")).toBeDefined();
+    expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
     expect(screen.getByText("king")).toBeDefined();
     expect(screen.queryByText("rex, rēgis")).toBeNull(); // still hidden
 
@@ -633,12 +634,12 @@ describe("taking things back", () => {
 
     // The grade landed and the next question is up.
     expect(session.progress().topicMastery.decl1).toBe(1);
-    expect(screen.getByText("Translate into Latin · 2/2")).toBeDefined();
+    expect(screen.getByText(`${profile.ui.promptDirection} · 2/2`)).toBeDefined();
 
     await user.click(screen.getByRole("button", { name: "Undo last grade" }));
 
     // The question is back as it was left…
-    expect(screen.getByText("Translate into Latin · 1/2")).toBeDefined();
+    expect(screen.getByText(`${profile.ui.promptDirection} · 1/2`)).toBeDefined();
     expect(screen.getByText("The girl loves the rose.")).toBeDefined();
     expect(screen.getByText("You wrote")).toBeDefined();
     expect(sentences()).toEqual(["Puella rosam amat.", "Puella rosam amat."]);
@@ -671,14 +672,14 @@ describe("taking things back", () => {
     await user.click(screen.getByRole("button", { name: /Good/ }));
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
-    expect(screen.getByText("Vocabulary · say it in Latin")).toBeDefined();
+    expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
 
     await user.click(screen.getByRole("button", { name: "Show" }));
     await user.click(screen.getByRole("button", { name: /Again/ }));
     expect(session.vocabCard("v-rex")?.fsrs.reps).toBe(1);
 
     await user.click(screen.getByRole("button", { name: "Undo last grade" }));
-    expect(screen.getByText("Vocabulary · say it in Latin")).toBeDefined();
+    expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
     expect(screen.getByText("rex, rēgis")).toBeDefined(); // still revealed
     expect(session.vocabCard("v-rex")?.fsrs.reps).toBe(0);
   });

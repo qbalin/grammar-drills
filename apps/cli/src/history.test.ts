@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { compileFold } from "@latin-tutor/core";
-import { testProfile } from "@latin-tutor/core/testing";
+import { compileFold } from "@lang-tutor/core";
+import { testProfile } from "@lang-tutor/core/testing";
 
 /** The pack decides what counts as the same answer; these tests pin one. */
 const fold = compileFold(testProfile.fold);
-import type { Attempt } from "@latin-tutor/core";
+import type { Attempt } from "@lang-tutor/core";
 import { attemptLines, relativeTime } from "./history.js";
 
 const now = new Date("2026-01-10T12:00:00Z");

@@ -18,7 +18,7 @@ import {
   parseProfile,
   profileHash,
   type GrammarSection,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 
 const here = fileURLToPath(new URL(".", import.meta.url));
 const profile = parseProfile(JSON.parse(readFileSync(join(here, "profile.json"), "utf8")));

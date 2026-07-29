@@ -1,4 +1,4 @@
-import { parseBlocks, type Block, type GrammarSection } from "@latin-tutor/core";
+import { parseBlocks, type Block, type GrammarSection } from "@lang-tutor/core";
 import { Sheet } from "../ui.js";
 import { profile } from "../pack.js";
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Draw the app icon: a capital A under a macron — Ā, the mark that says "Latin"
+ * Draw the app icon from the pack's own glyph (languages/<pack>/icon.mjs)
  * faster than any word could.
  *
  * iOS needs a real PNG for `apple-touch-icon` and the manifest wants 192/512,
@@ -13,29 +13,28 @@
 import { deflateSync } from "node:zlib";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
+const here = dirname(fileURLToPath(import.meta.url));
 const outDir = join(
-  dirname(fileURLToPath(import.meta.url)),
+  here,
   "..",
   "public",
   "icons",
 );
 
-const INK = [0x12, 0x12, 0x1a]; // background, matching the app's theme colour
-const GOLD = [0xe8, 0xc9, 0x8a]; // the glyph
+// The glyph belongs to the language, not to the renderer: a Latin build draws
+// Ā, and another pack draws whatever says its language at a glance.
+const pack = process.env.LANG_PACK ?? "latin";
+const icon = (
+  await import(
+    pathToFileURL(join(here, "..", "..", "..", "languages", pack, "icon.mjs")).href
+  )
+).default;
 
-/**
- * The glyph in a 0..1 box, as capsules: [x1, y1, x2, y2, radius].
- * The apex sits at 0.5; the crossbar is set low, as Roman capitals have it.
- */
-const STROKE = 0.062;
-const CAPSULES = [
-  [0.5, 0.325, 0.235, 0.86, STROKE], // left stroke
-  [0.5, 0.325, 0.765, 0.86, STROKE], // right stroke
-  [0.335, 0.7, 0.665, 0.7, STROKE * 0.78], // crossbar
-  [0.285, 0.185, 0.715, 0.185, STROKE * 0.82], // macron
-];
+const INK = icon.ink;
+const GOLD = icon.gold;
+const CAPSULES = icon.capsules;
 
 /** Distance from a point to a line segment — the capsule's spine. */
 function distToSegment(px, py, x1, y1, x2, y2) {

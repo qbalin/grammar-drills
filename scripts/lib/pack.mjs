@@ -9,7 +9,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseProfile } from "@latin-tutor/core";
+import { parseProfile } from "@lang-tutor/core";
 
 export const REPO = dirname(dirname(dirname(fileURLToPath(import.meta.url))));
 

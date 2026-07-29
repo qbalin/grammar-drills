@@ -1,6 +1,6 @@
 import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import type { GrammarSection } from "@latin-tutor/core";
+import type { GrammarSection } from "@lang-tutor/core";
 import { GrammarSheet } from "./Grammar.js";
 
 /**

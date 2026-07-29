@@ -1,4 +1,4 @@
-import type { BankedQuestion, GrammarSection } from "@latin-tutor/core";
+import type { BankedQuestion, GrammarSection } from "@lang-tutor/core";
 import { Sheet, ago } from "../ui.js";
 import { AttemptTrail } from "./Map.js";
 

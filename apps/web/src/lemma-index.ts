@@ -1,4 +1,4 @@
-import type { LemmaEntry, LemmaLookup } from "@latin-tutor/core";
+import type { LemmaEntry, LemmaLookup } from "@lang-tutor/core";
 import { fold } from "./pack.js";
 
 /**

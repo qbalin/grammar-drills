@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { LemmaEntry } from "@latin-tutor/core";
+import type { LemmaEntry } from "@lang-tutor/core";
 import { LemmaIndex } from "./lemma-index.js";
 
 const entries: LemmaEntry[] = [

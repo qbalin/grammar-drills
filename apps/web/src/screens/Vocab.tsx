@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import type { LemmaEntry, VocabCardState } from "@latin-tutor/core";
+import type { LemmaEntry, VocabCardState } from "@lang-tutor/core";
 import { fold } from "../pack.js";
 import { Sheet, Spinner, ago, until } from "../ui.js";
 

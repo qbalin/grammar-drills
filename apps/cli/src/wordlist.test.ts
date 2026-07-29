@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { VocabWord } from "@latin-tutor/core";
+import type { VocabWord } from "@lang-tutor/core";
 import { wordListLines } from "./wordlist.js";
 
 const paired = (english: string, citation: string, gloss = ""): VocabWord => ({

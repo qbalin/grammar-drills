@@ -8,7 +8,7 @@ import {
   type LemmaMap,
   type Profile,
   type Test,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 
 /** Read and validate a pack's profile. Throws with the offending path named. */
 export function loadProfile(packDir: string): Profile {

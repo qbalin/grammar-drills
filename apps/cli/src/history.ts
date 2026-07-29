@@ -16,7 +16,7 @@ import {
   type Attempt,
   type BankedQuestion,
   type ScheduleEntry,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 import { wrapLines } from "./pager.js";
 
 /** How a line is coloured: the same vocabulary the graded screen uses. */

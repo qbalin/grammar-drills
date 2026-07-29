@@ -38,12 +38,30 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm -r test
+      # The engine must not learn a language. Cheap to check, and exactly the
+      # kind of rule that erodes one convenient import at a time.
+      - run: node scripts/check-core-purity.mjs
       - name: Build
         # Pages serves a project site from /<repo>/, and both the asset URLs and
         # the service worker's scope have to agree with that.
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
-        run: pnpm --filter @latin-tutor/web build
+          # One build per language. A second pack deploys from its own job with
+          # its own LANG_PACK and its own BASE_PATH — the storage keys and the
+          # dictionary cache name must differ, or two packs on one origin would
+          # share a progress file.
+          LANG_PACK: ${{ vars.LANG_PACK || 'latin' }}
+        run: pnpm --filter @lang-tutor/web build
+      # The syllabus and the question set have to hold up, not just compile.
+      # The reference databases are not available in CI, so the gates that need
+      # them report themselves skipped rather than passing quietly.
+      - name: Validate the language pack
+        env:
+          LANG_PACK: ${{ vars.LANG_PACK || 'latin' }}
+        run: >
+          node --import tsx scripts/validate-pack.mjs
+          --pack languages/${{ vars.LANG_PACK || 'latin' }}
+          --built apps/web/public/content
       # Pages must already be switched on for the repo, with Settings → Pages →
       # Source set to "GitHub Actions". That is a one-time manual step and
       # cannot be automated from here: `enablement: true` asks this action to

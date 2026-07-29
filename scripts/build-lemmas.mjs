@@ -28,7 +28,7 @@ import { existsSync, writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { compileFold } from "@latin-tutor/core";
+import { compileFold } from "@lang-tutor/core";
 import { loadLemmas, loadProfile, packDir, refDir } from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);

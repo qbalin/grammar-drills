@@ -3,7 +3,7 @@ import { homedir } from "node:os";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
-import { Session } from "@latin-tutor/core";
+import { Session } from "@lang-tutor/core";
 import { App } from "./app.js";
 import { loadPack } from "./content-loader.js";
 import { LocalFileStorage } from "./storage-local.js";

@@ -10,8 +10,8 @@
  * returns the finished screen lines. `wrapLines` underneath it is pure wrapping
  * and knows nothing about structure.
  */
-import type { GrammarStyle } from "@latin-tutor/core";
-import { parseBlocks, type Block, type Row } from "@latin-tutor/core";
+import type { GrammarStyle } from "@lang-tutor/core";
+import { parseBlocks, type Block, type Row } from "@lang-tutor/core";
 
 /** Wrap `text` to `width` columns; the result is one entry per screen line. */
 export function wrapLines(text: string, width: number): string[] {

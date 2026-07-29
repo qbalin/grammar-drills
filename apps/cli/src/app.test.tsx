@@ -7,8 +7,8 @@ import {
   type ContentData,
   type Progress,
   type StorageAdapter,
-} from "@latin-tutor/core";
-import { testProfile } from "@latin-tutor/core/testing";
+} from "@lang-tutor/core";
+import { testProfile } from "@lang-tutor/core/testing";
 import { App } from "./app.js";
 
 const fixture: ContentData = {
@@ -117,7 +117,7 @@ describe("CLI App (write → compare → self-grade)", () => {
     // Now the first new topic: grammar drawer + English prompt + input box.
     expect(lastFrame()).toContain("First declension nouns");
     expect(lastFrame()).toContain("The girl loves the rose.");
-    expect(lastFrame()).toContain("Translate into Latin");
+    expect(lastFrame()).toContain(testProfile.ui.promptDirection);
 
     // Write a Latin answer and submit it.
     stdin.write("puella rosa amat"); // deliberately imperfect (rosa vs rosam)
@@ -202,7 +202,7 @@ describe("CLI App (write → compare → self-grade)", () => {
     stdin.write("\r");
     await tick();
     expect(lastFrame()).toContain("The present stem takes the personal endings.");
-    expect(lastFrame()).toContain("Translate into Latin");
+    expect(lastFrame()).toContain(testProfile.ui.promptDirection);
     expect(lastFrame()).toContain("The poet praises the queen.");
 
     // Grading it creates the card and starts its mastery score.
@@ -543,7 +543,7 @@ describe("CLI App (write → compare → self-grade)", () => {
     // lines, which the blank lines between blocks put above the 90 source ones.
     const total = Number(lastFrame()!.match(/of (\d+)/)![1]);
     expect(total).toBeGreaterThanOrEqual(90);
-    const drawer = lastFrame()!.split("Translate into Latin")[0]!;
+    const drawer = lastFrame()!.split(testProfile.ui.promptDirection)[0]!;
     expect(drawer).not.toContain("…");
 
     // One line down, mid-answer: the window moves on.
@@ -924,7 +924,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
 
     stdin.write(ESC);
     await tick();
-    expect(lastFrame()).toContain("Translate into Latin");
+    expect(lastFrame()).toContain(testProfile.ui.promptDirection);
     // The `n` of ^N is swallowed on its way into the box, the way ^Z's `z` is.
     expect(lastFrame()).toContain("puella ros");
     expect(lastFrame()).not.toContain("puella rosn");

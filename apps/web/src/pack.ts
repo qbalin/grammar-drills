@@ -6,7 +6,7 @@
  * against the service worker, and the manifest and the running app cannot
  * disagree about which language they are.
  */
-import { compileFold, parseProfile } from "@latin-tutor/core";
+import { compileFold, parseProfile } from "@lang-tutor/core";
 import raw from "@pack/profile";
 
 export const profile = parseProfile(raw);

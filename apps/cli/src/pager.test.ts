@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { testProfile } from "@latin-tutor/core/testing";
+import { testProfile } from "@lang-tutor/core/testing";
 import {
   layoutSection,
   maxScroll,

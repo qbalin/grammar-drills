@@ -29,7 +29,7 @@ import { DatabaseSync } from "node:sqlite";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { compileFold } from "@latin-tutor/core";
+import { compileFold } from "@lang-tutor/core";
 import { loadProfile, packDir, refDir } from "./lib/pack.mjs";
 import { targetFor } from "./lib/target.mjs";
 

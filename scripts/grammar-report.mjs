@@ -18,7 +18,7 @@
  * is not automatable: a human has to read them and record the verdict in the
  * pack's REVIEW.md. Everything above it is.
  */
-import { parseBlocks } from "@latin-tutor/core";
+import { parseBlocks } from "@lang-tutor/core";
 import {
   gate,
   loadGrammar,

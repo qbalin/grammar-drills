@@ -1,13 +1,13 @@
 {
-  "name": "latin-tutor",
+  "name": "lang-tutor",
   "version": "0.1.0",
   "private": true,
-  "description": "Spaced-repetition Latin tutor that runs with no LLM at runtime",
+  "description": "Spaced-repetition language tutor that runs with no LLM at runtime",
   "type": "module",
   "scripts": {
     "build": "pnpm -r build",
     "test": "pnpm -r test && node scripts/check-core-purity.mjs",
-    "cli": "pnpm --filter @latin-tutor/cli start",
+    "cli": "pnpm --filter @lang-tutor/cli start",
     "validate": "node --import tsx scripts/validate-pack.mjs",
     "purity": "node scripts/check-core-purity.mjs"
   },
@@ -15,7 +15,7 @@
     "typescript": "^5.6.3",
     "vitest": "^2.1.8",
     "tsx": "^4.19.2",
-    "@latin-tutor/core": "workspace:*"
+    "@lang-tutor/core": "workspace:*"
   },
   "packageManager": "pnpm@11.16.0"
 }

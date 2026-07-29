@@ -8,7 +8,7 @@ importers:
 
   .:
     devDependencies:
-      '@latin-tutor/core':
+      '@lang-tutor/core':
         specifier: workspace:*
         version: link:packages/core
       tsx:
@@ -23,7 +23,7 @@ importers:
 
   apps/cli:
     dependencies:
-      '@latin-tutor/core':
+      '@lang-tutor/core':
         specifier: workspace:*
         version: link:../../packages/core
       ink:
@@ -57,7 +57,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@latin-tutor/core':
+      '@lang-tutor/core':
         specifier: workspace:*
         version: link:../../packages/core
       react:
@@ -106,7 +106,7 @@ importers:
 
   languages/latin:
     dependencies:
-      '@latin-tutor/core':
+      '@lang-tutor/core':
         specifier: workspace:*
         version: link:../../packages/core
     devDependencies:

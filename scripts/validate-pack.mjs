@@ -19,7 +19,7 @@ import { gunzipSync } from "node:zlib";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { DatabaseSync } from "node:sqlite";
-import { compileFold, profileHash } from "@latin-tutor/core";
+import { compileFold, profileHash } from "@lang-tutor/core";
 import { REPO, gate, loadProfile, packDir, refDir, report } from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);

@@ -128,7 +128,7 @@ scripts/         Offline content tooling (not used at runtime):
 pnpm install
 pnpm cli                      # uses ./content and ~/.latin-tutor/progress.json
 # or:
-pnpm --filter @latin-tutor/cli start -- --content ./content --progress ./my.progress.json
+pnpm --filter @lang-tutor/cli start -- --content ./content --progress ./my.progress.json
 ```
 
 Flow: (placement on first run →) read the English prompt, **type your Latin and
@@ -171,8 +171,8 @@ never going to open a terminal. It is a static page: no backend, no account, and
 the whole study loop works offline once installed.
 
 ```bash
-pnpm --filter @latin-tutor/web dev      # build the content bundle and serve
-pnpm --filter @latin-tutor/web build    # -> apps/web/dist, deployable anywhere
+pnpm --filter @lang-tutor/web dev      # build the content bundle and serve
+pnpm --filter @lang-tutor/web build    # -> apps/web/dist, deployable anywhere
 ```
 
 Pushing to `main` publishes it to GitHub Pages
@@ -468,5 +468,5 @@ JSON.
 
 ```bash
 pnpm -r test          # core + CLI test suites
-pnpm --filter @latin-tutor/cli typecheck
+pnpm --filter @lang-tutor/cli typecheck
 ```

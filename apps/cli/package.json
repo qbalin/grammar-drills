@@ -1,5 +1,5 @@
 {
-  "name": "@latin-tutor/cli",
+  "name": "@lang-tutor/cli",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -8,7 +8,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@latin-tutor/core": "workspace:*",
+    "@lang-tutor/core": "workspace:*",
     "ink": "^5.1.0",
     "ink-text-input": "^6.0.0",
     "react": "^18.3.1"

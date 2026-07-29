@@ -21,7 +21,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { compileFold, words } from "@latin-tutor/core";
+import { compileFold, words } from "@lang-tutor/core";
 import {
   gate,
   loadGrammar,

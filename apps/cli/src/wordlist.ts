@@ -8,7 +8,7 @@
  * narrow pane on its own.
  */
 
-import type { VocabWord } from "@latin-tutor/core";
+import type { VocabWord } from "@lang-tutor/core";
 import { wrapLines } from "./pager.js";
 
 /** How the Latin half of a line is coloured. */
