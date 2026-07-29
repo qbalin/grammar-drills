@@ -17,6 +17,16 @@ on:
       # did not re-run the checks.
       - "scripts/**"
       - ".github/workflows/deploy-web.yml"
+  # The same checks before the merge, not only after it. PR #4 merged a pack
+  # whose gates nobody had run in CI, which worked out and need not have.
+  # Building and validating is cheap; the deploy jobs below sit out a PR.
+  pull_request:
+    paths:
+      - "apps/web/**"
+      - "packages/core/**"
+      - "languages/**"
+      - "scripts/**"
+      - ".github/workflows/deploy-web.yml"
   workflow_dispatch:
 
 permissions:
@@ -82,8 +92,10 @@ jobs:
           node --import tsx scripts/grammar-report.mjs
           --pack languages/${{ matrix.pack }}
 
+  # Everything below publishes, so it has no business running on a PR.
   build:
     needs: packs
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -159,6 +171,7 @@ jobs:
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

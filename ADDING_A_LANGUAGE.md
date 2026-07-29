@@ -51,9 +51,17 @@ repo, and finding out on step 7 that one is missing wastes everything before it.
 **A public-domain reference grammar with numbered sections.** The numbering is
 what makes automatic splitting possible; without it you are segmenting prose by
 hand. Bennett's *New Latin Grammar* (Project Gutenberg #15665) for Latin,
-Smyth's *Greek Grammar* (CCEL) for Greek. Check the licence before writing a
-parser, and record it in `profile.grammar.source` — it is printed by
-`validate-pack` so nobody has to go looking later.
+Smyth's *Greek Grammar* for Greek. Check the licence before writing a parser,
+and record it in `profile.grammar.source` — it is printed by `validate-pack` so
+nobody has to go looking later.
+
+**Check the edition is the whole book.** This is worth a few minutes because it
+is invisible later: CCEL's Smyth, which earlier drafts of this file named, holds
+only Parts I and II — §§ 1–573, the letters and the inflections. It stops before
+Syntax, which is 2,149 of the book's 3,048 sections, and a pack built on it
+would teach every ending and nothing about using them. The Greek pack uses the
+Perseus Project's TEI instead. Count the sections in the source against the
+book's own last section number before writing a parser against it.
 
 **A `dictionary.db` and a `frequencies.db` for the language**, built by the
 sibling `language_learning` project. Their schema is Appendix A. This repo
@@ -83,9 +91,16 @@ fixtures in *both* directions.
 // languages/greek/fold.fixtures.json
 {
   "equal":  [["λόγος", "λογος"], ["ἄνθρωπος", "ανθρωπος"], /* ≥20 from real text */],
-  "differ": [["λόγος", "λόγου"], ["ἀγορά", "ἁγορά"], /* ≥20 */]
+  "differ": [["λόγος", "λόγου"], ["πόλις", "πόλεως"], /* ≥20 — base letters differ */]
 }
 ```
+
+Put a pair under `differ` only if the fold you chose really keeps it apart. An
+earlier draft of this file offered `["ἀγορά", "ἁγορά"]` as a must-differ pair
+and variant A folds it equal — breathings are inside `̀-ͯ` and get
+stripped with everything else. Fixtures are cheap to write and the gate will
+tell you which side a pair belongs on; guessing puts the pack's own documented
+behaviour at odds with itself.
 
 ### What Greek has to decide
 
@@ -308,6 +323,21 @@ Resuming is **by count against the target**, not by whether a file exists —
 which is the bug this replaced, where a topic that yielded three tests against a
 target of twelve was skipped by every run thereafter.
 
+**The limit is the constraint, not the clock.** Greek wants 6,957 tests across
+485 topics, and the obvious speed-up — shard the topic list and run several
+processes at once — does not work: five parallel runs each managed three to five
+topics, hit the account's usage limit, retried five times and stopped. They
+spent the budget five times faster rather than finishing five times sooner.
+Parallelism helps only if the limit is not what you are up against; otherwise
+run one, let it stop, and rerun it when the limit resets. A wrapper that reruns
+`--fill` until `--plan` reports nothing left turns "it stopped" into "it
+finished" without anyone watching.
+
+A pack this size is not a single sitting. If you need it shippable sooner, the
+lever is the target rather than the throughput: `coverage.minTestsPerTopic`
+tests per topic is what C1 and C2 actually require, which for Greek is 2,910
+tests instead of 6,957. Ship at the floor and top up with `--only-thin` later.
+
 ### Gates
 
 ```bash
@@ -364,6 +394,24 @@ lookup while both halves look perfectly healthy on their own.
 That last line is the real test of the whole exercise. If `packages/core`
 changed, the change is a missing interface: put it on the profile, backfill it
 into Latin, and note what the abstraction had missed.
+
+### Shipping before the questions are done
+
+A pack's syllabus finishes long before its question set does, and the two are
+worth deploying on different days. `--allow-incomplete` reports the coverage
+gates without letting them set the exit code:
+
+```bash
+node --import tsx scripts/validate-pack.mjs --pack languages/greek \
+  --built apps/web/public/content --allow-incomplete
+```
+
+It relaxes nothing about correctness — the fold, the families, the syllabus, the
+dictionary invariant and every question that *has* been written are all still
+gates, and a pack with a real defect fails with the flag exactly as without it.
+In CI, `LANG_PACKS_DRAFT` names the packs that get it. Empty that variable when
+the set is finished, and say in `REVIEW.md` that C8 is unsigned until someone
+has actually read thirty items.
 
 Then record what the pack measured in `BASELINE.json`, so the next run can see
 whether a number moved rather than only whether it still clears a threshold.
