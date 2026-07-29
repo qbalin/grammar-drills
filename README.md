@@ -1,25 +1,39 @@
-# Latina — a spaced-repetition Latin tutor that runs with no LLM
+# A spaced-repetition language tutor that runs with no LLM
 
-A Latin tutor in the spirit of a normal SRS language app, but **nothing calls an
-LLM at runtime**. Two jobs that such apps usually give to a model are removed:
+A tutor in the spirit of a normal SRS language app, but **nothing calls an LLM
+at runtime**. Two jobs that such apps usually give to a model are removed:
 
 - **Grading** — you grade yourself. Each question is an English sentence you
-  translate **into Latin**: you type your answer, submit it, and see *your answer
-  next to the reference answer*, then rate your mastery of the *topic* 1–4. No
-  automatic grader is needed.
-- **Writing exercises** — done **offline, once, with Claude Opus 4.8**, then
-  frozen to static JSON. Each topic ships with a set of rich, varied
-  English→Latin translation tests (4 sentences each) so a due topic serves a
-  fresh one each time. Every Latin form in every reference answer is validated
-  against a real Latin dictionary before it is frozen. The generator is **not**
-  part of this repo — the app only reads the frozen content.
+  translate **into the language you are learning**: you type your answer, submit
+  it, and see *your answer next to the reference answer*, then rate your mastery
+  of the *topic* 1–4. No automatic grader is needed.
+- **Writing exercises** — done **offline, once**, then frozen to static JSON.
+  Each topic ships with a set of rich, varied translation tests (4 sentences
+  each) so a due topic serves a fresh one each time. Every form in every
+  reference answer is validated against a real dictionary before it is frozen
+  (`scripts/gen-tests.mjs`); the app itself only reads the frozen content.
 
-The **syllabus** is not hand-written either: `content/grammar.json` is parsed
-straight out of a public-domain grammar (see [The grammar](#the-grammar)).
+The **syllabus** is not hand-written either: each language's `grammar.json` is
+parsed straight out of a public-domain grammar (see [The grammar](#the-grammar)).
 
-A short **placement test** runs on a fresh deck: it asks about each of the nine
-grammar families in turn, so it can hear "I know my declensions but not my
-verbs" instead of one linear cut. Study then begins at your level in each area
+## One engine, many languages
+
+Everything specific to a language lives in a **language pack** under
+`languages/<name>/` — how to fold a word, what the grammar families are called,
+how the language cites a word, what to tell a model when asking for practice
+sentences. `packages/core` holds the engine and is not allowed to know about any
+of it; CI checks that it does not.
+
+Latin (Bennett's *New Latin Grammar*, 135 topics, 4,025 questions) is the pack
+that ships. **To add another, follow [ADDING_A_LANGUAGE.md](ADDING_A_LANGUAGE.md)** —
+a checklist where each step ends in a command whose exit code is the answer.
+
+The apps are built one language at a time: `pnpm cli -- --language latin`, and
+`LANG_PACK=latin pnpm --filter @lang-tutor/web build`.
+
+A short **placement test** runs on a fresh deck: it asks about each grammar
+family in turn, so it can hear "I know my declensions but not my verbs" instead
+of one linear cut. Study then begins at your level in each area
 rather than at chapter one — see [Three ways forward](#three-ways-forward).
 
 Spaced repetition runs on two independent [FSRS](https://github.com/open-spaced-repetition/ts-fsrs)
@@ -106,29 +120,34 @@ recorded the wrong word.
 
 ```
 packages/core/   Isomorphic runtime: types, FSRS scheduler, session state
-                 machine, form→citation lemmatizer, per-question vocabulary,
-                 storage adapters. No LLM.
+                 machine, the fold, form→citation lemmatizer, per-question
+                 vocabulary, storage adapters. Knows no language. No LLM.
 apps/cli/        Delightful terminal UI (Ink). The v1 surface.
 apps/web/        Installable, offline, no-backend phone app over the same core.
-content/         Frozen, shipped content:
-                   grammar.json      — 135 topics parsed from Bennett's New Latin
-                                        Grammar (public domain); `ref` cites its §§.
-                   lemmas.json.gz     — form→citation map (top ~7k lemmas, 1.6 MB gz).
-                   tests/<id>.json    — the Opus-generated tests (see "Generation").
-scripts/         Offline content tooling (not used at runtime):
-                   parse-grammar.py  — rebuilds grammar.json from Gutenberg #15665.
+languages/latin/ The Latin pack — everything Latin-specific:
+                   profile.json      — the shape of the language: the fold, the
+                                        families, the wording, the storage keys.
+                   fold.fixtures.json — what counts as the same word, both ways.
+                   grammar/parse.py  — rebuilds grammar.json from Gutenberg #15665.
+                   citations.mjs     — principal parts / adjective terminations.
+                   gen/config.mjs    — the generator prompt, band, function words.
+                   content/          — grammar.json (135 topics), tests/<id>.json,
+                                        lemmas.json.gz (top ~7k lemmas).
+scripts/         Offline tooling, language-agnostic (not used at runtime):
                    gen-tests.mjs     — writes tests/<id>.json (see "Generation").
-                   canonical-forms.mjs — principal parts / adjective terminations.
-                   build-web-content.mjs — repacks content/ for the web app.
+                   build-lemmas.mjs  — builds lemmas.json.gz from the reference DBs.
+                   grammar-report.mjs / coverage-report.mjs — the quality gates.
+                   validate-pack.mjs — every gate, in one command.
+                   build-web-content.mjs — repacks a pack for the web app.
 ```
 
 ## Run the CLI
 
 ```bash
 pnpm install
-pnpm cli                      # uses ./content and ~/.latin-tutor/progress.json
+pnpm cli                      # the Latin pack and ~/.latin-tutor/progress.json
 # or:
-pnpm --filter @lang-tutor/cli start -- --content ./content --progress ./my.progress.json
+pnpm --filter @lang-tutor/cli start -- --language latin --progress ./my.progress.json
 ```
 
 Flow: (placement on first run →) read the English prompt, **type your Latin and
@@ -231,13 +250,13 @@ round again.
 
 ## The grammar
 
-`content/grammar.json` is **parsed from Charles E. Bennett's *New Latin
+The Latin pack's the pack's `content/grammar.json` is **parsed from Charles E. Bennett's *New Latin
 Grammar*** (Boston, 1908) — [Project Gutenberg ebook #15665][pg], which is
-public domain and free to reuse. The parser is `scripts/parse-grammar.py`:
+public domain and free to reuse. The parser is `languages/latin/grammar/parse.py`:
 
 ```bash
-python3 scripts/parse-grammar.py            # downloads the text, rewrites content/grammar.json
-python3 scripts/parse-grammar.py --src bennett.txt --out /tmp/grammar.json
+python3 languages/latin/grammar/parse.py    # downloads the text, rewrites the pack's grammar.json
+python3 languages/latin/grammar/parse.py --src bennett.txt --out /tmp/grammar.json
 ```
 
 It takes the book's own structure as the syllabus. Bennett numbers 371
@@ -417,7 +436,7 @@ is what it was doing anyway.
 ## Generation (offline, one-time — not shipped)
 
 All three content files are already built. Only `grammar.json` rebuilds from a
-source in this repo (`scripts/parse-grammar.py`, above); the other two need the
+source in this repo (`languages/latin/grammar/parse.py`, above); the other two need the
 reference `language_learning` project checked out alongside this one for its
 `dictionary.db` (886k entries / 2.5M inflected forms) and `frequencies.db`
 (19,342 ranked lemmas).
@@ -428,9 +447,9 @@ sampled from frequency ranks 400–6000 so the sentences stay varied, and drops
 any item containing a Latin form that is not in `dictionary.db`:
 
 ```bash
-node scripts/gen-tests.mjs --target 6                        # every topic lacking a file
-node scripts/gen-tests.mjs --target 6 bn-020-first-declension   # one topic
-LATIN_REF=/elsewhere/languages/latin node scripts/gen-tests.mjs  # relocated reference DBs
+node --import tsx scripts/gen-tests.mjs --target 6                        # every topic lacking a file
+node --import tsx scripts/gen-tests.mjs --target 6 bn-020-first-declension   # one topic
+LANG_REF=/elsewhere/languages/latin node --import tsx scripts/gen-tests.mjs   # relocated reference DBs
 ```
 
 Topics that already have a file are skipped, so a run interrupted by a usage
@@ -438,15 +457,15 @@ limit resumes where it stopped. On a sustained limit it retries with a growing
 backoff and then stops, rather than marching through the remaining topics
 producing nothing.
 
-`scripts/canonical-forms.mjs` rewrites the citations in `lemmas.json.gz` so
+`languages/latin/citations.mjs` rewrites the citations in `lemmas.json.gz` so
 verbs carry their principal parts and adjectives their terminations. The parts
 cannot be recovered from what is shipped — the form keys are folded, so the
 perfect of *amō* is stored as `amaui` — and they come from the same
 `dictionary.db`, whose `forms` table is tagged and fully macronized:
 
 ```bash
-node scripts/canonical-forms.mjs --dry     # report what would change
-node scripts/canonical-forms.mjs           # rewrite content/lemmas.json.gz
+node --import tsx languages/latin/citations.mjs --dry   # report what would change
+node --import tsx languages/latin/citations.mjs   # rewrite the pack's lemmas.json.gz
 node scripts/build-web-content.mjs         # repack the web app's copy
 ```
 
