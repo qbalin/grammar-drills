@@ -100,7 +100,9 @@ gates.push(
 
 // --- G5: ids, order and titles ----------------------------------------------
 
-const idPattern = new RegExp(`^${profile.grammar.idPrefix}-\\d{3}-[a-z0-9-]+$`);
+// Three digits is the floor, not the width: Bennett stops at § 371 and Smyth
+// runs to § 3048, and a book with more than 999 sections cannot pad down to it.
+const idPattern = new RegExp(`^${profile.grammar.idPrefix}-\\d{3,}-[a-z0-9-]+$`);
 const badIds = grammar.filter((t) => !idPattern.test(t.id));
 const dupIds = grammar.length !== new Set(grammar.map((t) => t.id)).size;
 const ordered = [...grammar].sort((a, b) => a.order - b.order);
