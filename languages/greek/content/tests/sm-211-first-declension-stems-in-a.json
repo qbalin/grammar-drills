@@ -1357,5 +1357,424 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-211-first-declension-stems-in-a-t21",
+  "sectionId": "sm-211-first-declension-stems-in-a",
+  "questions": [
+   {
+    "prompt": "The old man, dwelling near the sea, was teaching the young man his art.",
+    "answer": "ὁ γέρων πρὸς τῇ θαλάττῃ οἰκῶν τὸν νεανίαν τὴν τέχνην ἐδίδασκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "πρὸς",
+     "τῇ",
+     "θαλάττῃ",
+     "οἰκῶν",
+     "τὸν",
+     "νεανίαν",
+     "τὴν",
+     "τέχνην",
+     "ἐδίδασκεν"
+    ]
+   },
+   {
+    "prompt": "The queen, honored by the citizens, ruled the land justly.",
+    "answer": "ἡ βασίλεια ὑπὸ τῶν πολιτῶν τιμωμένη τῆς χώρας δικαίως ἦρχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βασίλεια",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "τιμωμένη",
+     "τῆς",
+     "χώρας",
+     "δικαίως",
+     "ἦρχεν"
+    ]
+   },
+   {
+    "prompt": "We admire the daring of the sailors in the storm.",
+    "answer": "θαυμάζομεν τὴν τῶν ναυτῶν τόλμαν ἐν τῇ θυέλλῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζομεν",
+     "τὴν",
+     "τῶν",
+     "ναυτῶν",
+     "τόλμαν",
+     "ἐν",
+     "τῇ",
+     "θυέλλῃ"
+    ]
+   },
+   {
+    "prompt": "The judge did not trust the young man's tongue.",
+    "answer": "ὁ κριτὴς τῇ τοῦ νεανίου γλώττῃ οὐκ ἐπίστευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κριτὴς",
+     "τῇ",
+     "τοῦ",
+     "νεανίου",
+     "γλώττῃ",
+     "οὐκ",
+     "ἐπίστευεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-211-first-declension-stems-in-a-t22",
+  "sectionId": "sm-211-first-declension-stems-in-a",
+  "questions": [
+   {
+    "prompt": "After the victory the soldiers were pursuing the enemy.",
+    "answer": "οἱ στρατιῶται μετὰ τὴν νίκην τοὺς πολεμίους ἐδίωκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "μετὰ",
+     "τὴν",
+     "νίκην",
+     "τοὺς",
+     "πολεμίους",
+     "ἐδίωκον"
+    ]
+   },
+   {
+    "prompt": "The Persian, fleeing from the battle, threw away his shield.",
+    "answer": "ὁ Πέρσης ἐκ τῆς μάχης φεύγων τὴν ἀσπίδα ἀπέρριψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Πέρσης",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φεύγων",
+     "τὴν",
+     "ἀσπίδα",
+     "ἀπέρριψεν"
+    ]
+   },
+   {
+    "prompt": "The citizens were praising the general's judgment concerning the peace.",
+    "answer": "οἱ πολῖται τὴν τοῦ στρατηγοῦ γνώμην περὶ τῆς εἰρήνης ἐπῄνουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "τοῦ",
+     "στρατηγοῦ",
+     "γνώμην",
+     "περὶ",
+     "τῆς",
+     "εἰρήνης",
+     "ἐπῄνουν"
+    ]
+   },
+   {
+    "prompt": "On that day the assembly chose new stewards.",
+    "answer": "ἐκείνῃ τῇ ἡμέρᾳ ἡ ἐκκλησία νέους ταμίας εἵλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνῃ",
+     "τῇ",
+     "ἡμέρᾳ",
+     "ἡ",
+     "ἐκκλησία",
+     "νέους",
+     "ταμίας",
+     "εἵλετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-211-first-declension-stems-in-a-t23",
+  "sectionId": "sm-211-first-declension-stems-in-a",
+  "questions": [
+   {
+    "prompt": "The poet's tongue was delighting the maidens at the festival.",
+    "answer": "ἡ τοῦ ποιητοῦ γλῶττα τὰς κόρας ἐν τῇ ἑορτῇ ἔτερπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "ποιητοῦ",
+     "γλῶττα",
+     "τὰς",
+     "κόρας",
+     "ἐν",
+     "τῇ",
+     "ἑορτῇ",
+     "ἔτερπεν"
+    ]
+   },
+   {
+    "prompt": "Virtue, as the philosophers say, is better than wealth.",
+    "answer": "ἡ ἀρετή, ὡς οἱ φιλόσοφοι λέγουσι, κρείττων ἐστὶ τοῦ πλούτου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀρετή",
+     "ὡς",
+     "οἱ",
+     "φιλόσοφοι",
+     "λέγουσι",
+     "κρείττων",
+     "ἐστὶ",
+     "τοῦ",
+     "πλούτου"
+    ]
+   },
+   {
+    "prompt": "The pupils were learning many arts in the teacher's house.",
+    "answer": "οἱ μαθηταὶ πολλὰς τέχνας ἐν τῇ τοῦ διδασκάλου οἰκίᾳ ἐμάνθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μαθηταὶ",
+     "πολλὰς",
+     "τέχνας",
+     "ἐν",
+     "τῇ",
+     "τοῦ",
+     "διδασκάλου",
+     "οἰκίᾳ",
+     "ἐμάνθανον"
+    ]
+   },
+   {
+    "prompt": "The Muse gives honor to the poets through song.",
+    "answer": "ἡ μοῦσα τοῖς ποιηταῖς τιμὴν διὰ τῆς ᾠδῆς δίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μοῦσα",
+     "τοῖς",
+     "ποιηταῖς",
+     "τιμὴν",
+     "διὰ",
+     "τῆς",
+     "ᾠδῆς",
+     "δίδωσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-211-first-declension-stems-in-a-t24",
+  "sectionId": "sm-211-first-declension-stems-in-a",
+  "questions": [
+   {
+    "prompt": "At the same hour the sailors saw the shore of the island.",
+    "answer": "τῇ αὐτῇ ὥρᾳ οἱ ναῦται τὴν τῆς νήσου ἀκτὴν εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῇ",
+     "αὐτῇ",
+     "ὥρᾳ",
+     "οἱ",
+     "ναῦται",
+     "τὴν",
+     "τῆς",
+     "νήσου",
+     "ἀκτὴν",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "The farmer, working the land, feared the season of winter.",
+    "answer": "ὁ γεωργὸς τὴν χώραν ἐργαζόμενος τὴν τοῦ χειμῶνος ὥραν ἐφοβεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "τὴν",
+     "χώραν",
+     "ἐργαζόμενος",
+     "τοῦ",
+     "χειμῶνος",
+     "ὥραν",
+     "ἐφοβεῖτο"
+    ]
+   },
+   {
+    "prompt": "A shadow of the trees fell upon the sea.",
+    "answer": "σκιὰ τῶν δένδρων ἐπὶ τὴν θάλατταν ἔπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκιὰ",
+     "τῶν",
+     "δένδρων",
+     "ἐπὶ",
+     "τὴν",
+     "θάλατταν",
+     "ἔπεσεν"
+    ]
+   },
+   {
+    "prompt": "The young men crossed the river with great haste.",
+    "answer": "οἱ νεανίαι τὸν ποταμὸν μετὰ πολλῆς σπουδῆς διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "τὸν",
+     "ποταμὸν",
+     "μετὰ",
+     "πολλῆς",
+     "σπουδῆς",
+     "διέβησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-211-first-declension-stems-in-a-t25",
+  "sectionId": "sm-211-first-declension-stems-in-a",
+  "questions": [
+   {
+    "prompt": "The orator was accusing the citizen of treachery before the judges.",
+    "answer": "ὁ ῥήτωρ τὸν πολίτην προδοσίας παρὰ τοῖς κριταῖς ᾐτιᾶτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τὸν",
+     "πολίτην",
+     "προδοσίας",
+     "παρὰ",
+     "τοῖς",
+     "κριταῖς",
+     "ᾐτιᾶτο"
+    ]
+   },
+   {
+    "prompt": "Justice, as it seems, is the greatest of the virtues.",
+    "answer": "ἡ δικαιοσύνη, ὡς ἔοικεν, μεγίστη τῶν ἀρετῶν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "δικαιοσύνη",
+     "ὡς",
+     "ἔοικεν",
+     "μεγίστη",
+     "τῶν",
+     "ἀρετῶν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The master was punishing the slaves because of their laziness.",
+    "answer": "ὁ δεσπότης τοὺς δούλους διὰ τὴν ῥᾳθυμίαν ἐκόλαζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δεσπότης",
+     "τοὺς",
+     "δούλους",
+     "διὰ",
+     "τὴν",
+     "ῥᾳθυμίαν",
+     "ἐκόλαζεν"
+    ]
+   },
+   {
+    "prompt": "The judge, persuaded by the truth, freed the young man from the charges.",
+    "answer": "ὁ κριτὴς ὑπὸ τῆς ἀληθείας πεισθεὶς τὸν νεανίαν τῶν αἰτιῶν ἀπέλυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κριτὴς",
+     "ὑπὸ",
+     "τῆς",
+     "ἀληθείας",
+     "πεισθεὶς",
+     "τὸν",
+     "νεανίαν",
+     "τῶν",
+     "αἰτιῶν",
+     "ἀπέλυσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-211-first-declension-stems-in-a-t26",
+  "sectionId": "sm-211-first-declension-stems-in-a",
+  "questions": [
+   {
+    "prompt": "The steward placed the food upon the table.",
+    "answer": "ὁ ταμίας τὰ σιτία ἐπὶ τὴν τράπεζαν ἔθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ταμίας",
+     "τὰ",
+     "σιτία",
+     "ἐπὶ",
+     "τὴν",
+     "τράπεζαν",
+     "ἔθηκεν"
+    ]
+   },
+   {
+    "prompt": "The lioness, roused to anger, rushed upon the hunters.",
+    "answer": "ἡ λέαινα εἰς ὀργὴν ὁρμηθεῖσα τοῖς θηραταῖς ἐπέδραμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "λέαινα",
+     "εἰς",
+     "ὀργὴν",
+     "ὁρμηθεῖσα",
+     "τοῖς",
+     "θηραταῖς",
+     "ἐπέδραμεν"
+    ]
+   },
+   {
+    "prompt": "The bees make honey out of the flowers of the meadow.",
+    "answer": "αἱ μέλιτται ἐκ τῶν τοῦ λειμῶνος ἀνθῶν μέλι ποιοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "μέλιτται",
+     "ἐκ",
+     "τῶν",
+     "τοῦ",
+     "λειμῶνος",
+     "ἀνθῶν",
+     "μέλι",
+     "ποιοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The young man, being skilled in music, played the flute for the citizens.",
+    "answer": "ὁ νεανίας ἔμπειρος ὢν τῆς μουσικῆς τοῖς πολίταις ηὔλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "ἔμπειρος",
+     "ὢν",
+     "τῆς",
+     "μουσικῆς",
+     "τοῖς",
+     "πολίταις",
+     "ηὔλει"
+    ]
+   }
+  ]
  }
 ]

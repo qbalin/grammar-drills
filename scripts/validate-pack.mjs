@@ -178,33 +178,27 @@ console.log(`\n  fold digest: ${profileHash(profile.fold)}`);
 const here = dirname(fileURLToPath(import.meta.url));
 const ALLOW_INCOMPLETE = argv.includes("--allow-incomplete");
 let reportsOk = true;
-let incomplete = false;
 if (!argv.includes("--profile-only")) {
   for (const script of ["grammar-report.mjs", "coverage-report.mjs"]) {
+    // The flag is handed to the coverage report rather than used to ignore its
+    // exit code: only it knows which of its gates are about how much has been
+    // written and which are about whether it is right, and a draft is excused
+    // the first kind alone. The grammar report gets no such licence — a
+    // syllabus is either sound or it is not.
+    const args = ["--import", "tsx", join(here, script), "--pack", dir];
+    if (ALLOW_INCOMPLETE && script === "coverage-report.mjs") args.push("--allow-incomplete");
     try {
-      execFileSync(process.execPath, ["--import", "tsx", join(here, script), "--pack", dir], {
-        stdio: "inherit",
-      });
+      execFileSync(process.execPath, args, { stdio: "inherit" });
     } catch {
-      // Only the coverage half is about how much has been written; the grammar
-      // report is about whether the syllabus is sound, which a draft still owes.
-      if (ALLOW_INCOMPLETE && script === "coverage-report.mjs") incomplete = true;
-      else reportsOk = false;
+      reportsOk = false;
     }
   }
 }
 
 const ok = report(`Pack gates — ${profile.id}`, gates) && reportsOk;
-if (incomplete) {
-  console.log(
-    `\n${profile.l2.name}: the question set is incomplete and --allow-incomplete ` +
-      `was passed, so the coverage gates above are reported and not enforced. ` +
-      `Everything else held.`,
-  );
-}
 console.log(
   ok
-    ? `\n${profile.l2.name} passes every gate${incomplete ? " it was asked to" : ""}.`
+    ? `\n${profile.l2.name} passes every gate${ALLOW_INCOMPLETE ? " it was asked to" : ""}.`
     : `\n${profile.l2.name} is not ready; see the failures above.`,
 );
 process.exit(ok ? 0 : 1);

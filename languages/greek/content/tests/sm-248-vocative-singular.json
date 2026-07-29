@@ -435,5 +435,233 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-248-vocative-singular-t7",
+  "sectionId": "sm-248-vocative-singular",
+  "questions": [
+   {
+    "prompt": "Socrates, tell me whether the gods care for the affairs of men.",
+    "answer": "ὦ Σώκρατες, εἰπέ μοι εἰ οἱ θεοὶ τῶν ἀνθρωπίνων πραγμάτων ἐπιμέλονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Σώκρατες",
+     "εἰπέ",
+     "μοι",
+     "εἰ",
+     "οἱ",
+     "θεοὶ",
+     "τῶν",
+     "ἀνθρωπίνων",
+     "πραγμάτων",
+     "ἐπιμέλονται"
+    ]
+   },
+   {
+    "prompt": "Maiden, weave the robe which the goddess will wear at the festival.",
+    "answer": "ὦ νεᾶνι, ὕφαινε τὸν πέπλον ὃν ἡ θεὸς ἐν τῇ ἑορτῇ φορήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "νεᾶνι",
+     "ὕφαινε",
+     "τὸν",
+     "πέπλον",
+     "ὃν",
+     "ἡ",
+     "θεὸς",
+     "ἐν",
+     "τῇ",
+     "ἑορτῇ",
+     "φορήσει"
+    ]
+   },
+   {
+    "prompt": "Old man, cease from your toils and rest in the shade.",
+    "answer": "ὦ γέρον, παῦσαι τῶν πόνων καὶ ἀναπαύου ἐν τῇ σκιᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "γέρον",
+     "παῦσαι",
+     "τῶν",
+     "πόνων",
+     "καὶ",
+     "ἀναπαύου",
+     "ἐν",
+     "τῇ",
+     "σκιᾷ"
+    ]
+   },
+   {
+    "prompt": "Guard, open the gates, for the messengers are hurrying inside.",
+    "answer": "ὦ φύλαξ, ἄνοιγε τὰς πύλας· οἱ γὰρ ἄγγελοι σπεύδουσιν εἴσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "φύλαξ",
+     "ἄνοιγε",
+     "τὰς",
+     "πύλας",
+     "οἱ",
+     "γὰρ",
+     "ἄγγελοι",
+     "σπεύδουσιν",
+     "εἴσω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-248-vocative-singular-t8",
+  "sectionId": "sm-248-vocative-singular",
+  "questions": [
+   {
+    "prompt": "O Zeus, send rain upon the thirsting fields.",
+    "answer": "ὦ Ζεῦ, πέμψον ὑετὸν ἐπὶ τοὺς διψῶντας ἀγρούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Ζεῦ",
+     "πέμψον",
+     "ὑετὸν",
+     "ἐπὶ",
+     "τοὺς",
+     "διψῶντας",
+     "ἀγρούς"
+    ]
+   },
+   {
+    "prompt": "Artemis, you who love the hunt, guide the arrow at the stag.",
+    "answer": "ὦ Ἄρτεμι, ἡ τὴν θήραν φιλοῦσα, εὔθυνε τὸ βέλος ἐπὶ τὸν ἔλαφον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Ἄρτεμι",
+     "ἡ",
+     "τὴν",
+     "θήραν",
+     "φιλοῦσα",
+     "εὔθυνε",
+     "τὸ",
+     "βέλος",
+     "ἐπὶ",
+     "τὸν",
+     "ἔλαφον"
+    ]
+   },
+   {
+    "prompt": "Ox, endure the yoke, since without you the field cannot be ploughed.",
+    "answer": "ὦ βοῦ, ἀνέχου τὸν ζυγόν, ἐπεὶ ἄνευ σοῦ ὁ ἀγρὸς ἀροθῆναι οὐ δύναται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "βοῦ",
+     "ἀνέχου",
+     "τὸν",
+     "ζυγόν",
+     "ἐπεὶ",
+     "ἄνευ",
+     "σοῦ",
+     "ὁ",
+     "ἀγρὸς",
+     "ἀροθῆναι",
+     "οὐ",
+     "δύναται"
+    ]
+   },
+   {
+    "prompt": "Giant, not even you will escape the anger of the gods.",
+    "answer": "ὦ γίγαν, οὐδὲ σὺ τὴν τῶν θεῶν ὀργὴν φεύξῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "γίγαν",
+     "οὐδὲ",
+     "σὺ",
+     "τὴν",
+     "τῶν",
+     "θεῶν",
+     "ὀργὴν",
+     "φεύξῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-248-vocative-singular-t9",
+  "sectionId": "sm-248-vocative-singular",
+  "questions": [
+   {
+    "prompt": "Orator, do not incite the citizens against those who rule the city.",
+    "answer": "ὦ ῥῆτορ, μὴ παρόξυνε τοὺς πολίτας ἐπὶ τοὺς τῆς πόλεως ἄρχοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "ῥῆτορ",
+     "μὴ",
+     "παρόξυνε",
+     "τοὺς",
+     "πολίτας",
+     "ἐπὶ",
+     "τῆς",
+     "πόλεως",
+     "ἄρχοντας"
+    ]
+   },
+   {
+    "prompt": "O divinity, whoever you are, be gracious to those who honor you.",
+    "answer": "ὦ δαῖμον, ὅστις ποτὲ εἶ, ἵλεως γίγνου τοῖς σε τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "δαῖμον",
+     "ὅστις",
+     "ποτὲ",
+     "εἶ",
+     "ἵλεως",
+     "γίγνου",
+     "τοῖς",
+     "σε",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "Father, hand over to me the flock which you tended when you were young.",
+    "answer": "ὦ πάτερ, παράδος μοι τὴν ποίμνην ἣν νέος ὢν ἐποίμαινες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "πάτερ",
+     "παράδος",
+     "μοι",
+     "τὴν",
+     "ποίμνην",
+     "ἣν",
+     "νέος",
+     "ὢν",
+     "ἐποίμαινες"
+    ]
+   },
+   {
+    "prompt": "You who are sailing to Athens, carry this letter to my brother.",
+    "answer": "ὦ πλέων εἰς Ἀθήνας, φέρε ταύτην τὴν ἐπιστολὴν τῷ ἐμῷ ἀδελφῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "πλέων",
+     "εἰς",
+     "Ἀθήνας",
+     "φέρε",
+     "ταύτην",
+     "τὴν",
+     "ἐπιστολὴν",
+     "τῷ",
+     "ἐμῷ",
+     "ἀδελφῷ"
+    ]
+   }
+  ]
  }
 ]
