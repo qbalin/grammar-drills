@@ -36,11 +36,16 @@ sentence that is impeccably attested and means something other than the prompt.
 
 | Date | Reviewer | Sample | Verdict |
 |---|---|---|---|
-| — | *not yet signed off* | — | The automated gates C1–C7 pass on 4,025 shipped questions. |
+| — | *not yet signed off* | — | The automated gates C1–C7 pass on 5,388 questions. 1,363 of these were generated on 2026-07-29 and have had no human read-through; the 4,025 that predate it were reviewed before the gates existed. |
 
 ## Known state
 
-- 95 of 135 topics are below their size-scaled target. They clear the floor;
-  the backlog is real and is worked off with `gen-tests.mjs --only-thin`.
+- 40 of 135 topics are still below their size-scaled target, down from 95. The
+  first backfill run took 58 topics to target and stopped itself on usage
+  limits; `gen-tests.mjs --only-thin` recomputes the deficit and resumes.
+- 41 distinct forms were accepted without a dictionary match across that run
+  (the allowance is 2 per sentence). They are listed in `content/gen-stats.json`
+  and are worth reading: a form that recurs is either a real gap in the
+  dictionary or a word the generator invented.
 - `content/lemmas.json.gz` predates `scripts/build-lemmas.mjs` and is not
   regenerated; see `BASELINE.json` for the verified drift.

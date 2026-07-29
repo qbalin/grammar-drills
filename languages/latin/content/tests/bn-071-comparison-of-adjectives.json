@@ -693,5 +693,567 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t13",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The swiftest messenger carried the sharpest sword through the dense forest.",
+    "answer": "Celerrimus nūntius gladium ācerrimum per silvam dēnsam portāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Celerrimus",
+     "nūntius",
+     "gladium",
+     "ācerrimum",
+     "per",
+     "silvam",
+     "dēnsam",
+     "portāvit"
+    ]
+   },
+   {
+    "prompt": "This field is rougher than that one, but the meadow is the most beautiful.",
+    "answer": "Hic ager asperior est quam ille, sed prātum pulcherrimum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "ager",
+     "asperior",
+     "est",
+     "quam",
+     "ille",
+     "sed",
+     "prātum",
+     "pulcherrimum"
+    ]
+   },
+   {
+    "prompt": "A sharper mind endures the harshest labors.",
+    "answer": "Mēns ācrior labōrēs asperrimōs perfert.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mēns",
+     "ācrior",
+     "labōrēs",
+     "asperrimōs",
+     "perfert"
+    ]
+   },
+   {
+    "prompt": "The most beautiful maiden gave a very sharp reply to the arrogant king.",
+    "answer": "Virgō pulcherrima rēgī superbō respōnsum ācerrimum dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "pulcherrima",
+     "rēgī",
+     "superbō",
+     "respōnsum",
+     "ācerrimum",
+     "dedit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t14",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "A greater army won a better victory with smaller losses.",
+    "answer": "Māior exercitus meliōrem victōriam minōribus damnīs reportāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māior",
+     "exercitus",
+     "meliōrem",
+     "victōriam",
+     "minōribus",
+     "damnīs",
+     "reportāvit"
+    ]
+   },
+   {
+    "prompt": "The worst counsel brought greater dangers to the smallest town.",
+    "answer": "Pessimum cōnsilium māiōra perīcula minimō oppidō attulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pessimum",
+     "cōnsilium",
+     "māiōra",
+     "perīcula",
+     "minimō",
+     "oppidō",
+     "attulit"
+    ]
+   },
+   {
+    "prompt": "More soldiers perished, but the best leader remained unharmed.",
+    "answer": "Plūrēs mīlitēs periērunt, sed optimus dux incolumis mānsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Plūrēs",
+     "mīlitēs",
+     "periērunt",
+     "sed",
+     "optimus",
+     "dux",
+     "incolumis",
+     "mānsit"
+    ]
+   },
+   {
+    "prompt": "The largest gift is often worse than the smallest kindness.",
+    "answer": "Maximum dōnum saepe pēius est quam minima benignitās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Maximum",
+     "dōnum",
+     "saepe",
+     "pēius",
+     "est",
+     "quam",
+     "minima",
+     "benignitās"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t15",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The easiest task became the most difficult through the boy's carelessness.",
+    "answer": "Opus facillimum per neglegentiam puerī difficillimum factum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Opus",
+     "facillimum",
+     "per",
+     "neglegentiam",
+     "puerī",
+     "difficillimum",
+     "factum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The son was more like his father than his very lowly grandfather.",
+    "answer": "Fīlius patrī similior erat quam avō humillimō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fīlius",
+     "patrī",
+     "similior",
+     "erat",
+     "quam",
+     "avō",
+     "humillimō"
+    ]
+   },
+   {
+    "prompt": "Nothing is easier than to blame a very humble servant.",
+    "answer": "Nihil facilius est quam famulum humillimum culpāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "facilius",
+     "est",
+     "quam",
+     "famulum",
+     "humillimum",
+     "culpāre"
+    ]
+   },
+   {
+    "prompt": "The two brothers were very unlike, though born of the most similar parents.",
+    "answer": "Frātrēs duo dissimillimī erant, quamquam simillimīs parentibus nātī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Frātrēs",
+     "duo",
+     "dissimillimī",
+     "erant",
+     "quamquam",
+     "simillimīs",
+     "parentibus",
+     "nātī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t16",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The former consul held the highest power in the inmost part of the city.",
+    "answer": "Prior cōnsul summam potestātem in intimā urbis parte tenuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prior",
+     "cōnsul",
+     "summam",
+     "potestātem",
+     "in",
+     "intimā",
+     "urbis",
+     "parte",
+     "tenuit"
+    ]
+   },
+   {
+    "prompt": "The nearest harbor was safer than the farthest shore.",
+    "answer": "Portus proximus tūtior erat quam lītus ultimum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Portus",
+     "proximus",
+     "tūtior",
+     "erat",
+     "quam",
+     "lītus",
+     "ultimum"
+    ]
+   },
+   {
+    "prompt": "The gods below were more terrible than the gods above.",
+    "answer": "Dī īnferī superīs terribiliōrēs erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dī",
+     "īnferī",
+     "superīs",
+     "terribiliōrēs",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "In the last battle the bravest men fell in the front line.",
+    "answer": "In proeliō postrēmō fortissimī in prīmā aciē cecidērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "proeliō",
+     "postrēmō",
+     "fortissimī",
+     "prīmā",
+     "aciē",
+     "cecidērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t17",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The more slanderous poet was punished by a very magnificent king.",
+    "answer": "Poēta maledīcentior ā rēge magnificentissimō pūnītus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "maledīcentior",
+     "ā",
+     "rēge",
+     "magnificentissimō",
+     "pūnītus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The kindlier master freed the more thrifty servant.",
+    "answer": "Dominus benevolentior famulum frūgāliōrem līberāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dominus",
+     "benevolentior",
+     "famulum",
+     "frūgāliōrem",
+     "līberāvit"
+    ]
+   },
+   {
+    "prompt": "The richest merchant built the most magnificent house.",
+    "answer": "Mercātor dītissimus domum magnificentissimam aedificāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "dītissimus",
+     "domum",
+     "magnificentissimam",
+     "aedificāvit"
+    ]
+   },
+   {
+    "prompt": "A kindlier friend is preferable to a very slanderous companion.",
+    "answer": "Amīcus benevolentior comite maledīcentissimō potior est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amīcus",
+     "benevolentior",
+     "comite",
+     "maledīcentissimō",
+     "potior",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t18",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The oldest wine was sweeter than the newest.",
+    "answer": "Vīnum veterrimum dulcius erat quam novissimum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīnum",
+     "veterrimum",
+     "dulcius",
+     "erat",
+     "quam",
+     "novissimum"
+    ]
+   },
+   {
+    "prompt": "This place is more suitable than that higher hill.",
+    "answer": "Hic locus magis idōneus est quam collis altior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "locus",
+     "magis",
+     "idōneus",
+     "est",
+     "quam",
+     "collis",
+     "altior"
+    ]
+   },
+   {
+    "prompt": "The most faithful dog was guarding the last of the flock.",
+    "answer": "Canis fīdissimus postrēmum gregis custōdiēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Canis",
+     "fīdissimus",
+     "postrēmum",
+     "gregis",
+     "custōdiēbat"
+    ]
+   },
+   {
+    "prompt": "The most false witness defiled the most sacred altar.",
+    "answer": "Testis falsissimus āram sacerrimam violāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "falsissimus",
+     "āram",
+     "sacerrimam",
+     "violāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t19",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The rougher path led the weary soldiers to a very steep citadel.",
+    "answer": "Via asperior fessōs mīlitēs ad arcem praeruptissimam dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Via",
+     "asperior",
+     "fessōs",
+     "mīlitēs",
+     "ad",
+     "arcem",
+     "praeruptissimam",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "A kindlier master frees his more thrifty servants sooner.",
+    "answer": "Dominus benevolentior frūgāliōrēs servōs citius līberat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dominus",
+     "benevolentior",
+     "frūgāliōrēs",
+     "servōs",
+     "citius",
+     "līberat"
+    ]
+   },
+   {
+    "prompt": "The most magnificent temple stood in the inmost part of the ancient city.",
+    "answer": "Templum magnificentissimum in intimā parte urbis antīquae stābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Templum",
+     "magnificentissimum",
+     "in",
+     "intimā",
+     "parte",
+     "urbis",
+     "antīquae",
+     "stābat"
+    ]
+   },
+   {
+    "prompt": "Nothing is easier for the wisest men than to endure a harsher fate.",
+    "answer": "Nihil sapientissimīs virīs facilius est quam sortem asperiōrem ferre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "sapientissimīs",
+     "virīs",
+     "facilius",
+     "est",
+     "quam",
+     "sortem",
+     "asperiōrem",
+     "ferre"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t20",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The swifter horses carried the more slanderous poet to a farther town.",
+    "answer": "Equī celeriōrēs poētam maledīcentiōrem ad ulteriōrem urbem tulērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Equī",
+     "celeriōrēs",
+     "poētam",
+     "maledīcentiōrem",
+     "ad",
+     "ulteriōrem",
+     "urbem",
+     "tulērunt"
+    ]
+   },
+   {
+    "prompt": "The richest merchant offered smaller gifts than the poorer farmer.",
+    "answer": "Mercātor dītissimus minōra dōna quam agricola pauperior obtulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "dītissimus",
+     "minōra",
+     "dōna",
+     "quam",
+     "agricola",
+     "pauperior",
+     "obtulit"
+    ]
+   },
+   {
+    "prompt": "A more faithful friend is better than the greatest riches.",
+    "answer": "Amīcus fidēlior melior est quam maximae dīvitiae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amīcus",
+     "fidēlior",
+     "melior",
+     "est",
+     "quam",
+     "maximae",
+     "dīvitiae"
+    ]
+   },
+   {
+    "prompt": "The lower fields were more fertile, but the highest hills were safer.",
+    "answer": "Agrī īnferiōrēs fēcundiōrēs erant, sed collēs summī tūtiōrēs erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agrī",
+     "īnferiōrēs",
+     "fēcundiōrēs",
+     "erant",
+     "sed",
+     "collēs",
+     "summī",
+     "tūtiōrēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-t21",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The most similar twins had very different characters.",
+    "answer": "Geminī simillimī ingenia dissimillima habēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Geminī",
+     "simillimī",
+     "ingenia",
+     "dissimillima",
+     "habēbant"
+    ]
+   },
+   {
+    "prompt": "A more difficult war produced braver leaders and worse losses.",
+    "answer": "Bellum difficilius fortiōrēs ducēs et pejōra damna peperit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bellum",
+     "difficilius",
+     "fortiōrēs",
+     "ducēs",
+     "et",
+     "pejōra",
+     "damna",
+     "peperit"
+    ]
+   },
+   {
+    "prompt": "The oldest fisherman knew the nearest harbor better than the younger men.",
+    "answer": "Piscātor veterrimus portum proximum melius quam jūniōrēs nōverat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Piscātor",
+     "veterrimus",
+     "portum",
+     "proximum",
+     "melius",
+     "quam",
+     "jūniōrēs",
+     "nōverat"
+    ]
+   },
+   {
+    "prompt": "The livelier hunter climbed the higher tree more easily than his stronger brother.",
+    "answer": "Vēnātor alacrior arborem altiōrem facilius quam frāter fortior ascendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēnātor",
+     "alacrior",
+     "arborem",
+     "altiōrem",
+     "facilius",
+     "quam",
+     "frāter",
+     "fortior",
+     "ascendit"
+    ]
+   }
+  ]
  }
 ]

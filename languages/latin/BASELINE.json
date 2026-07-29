@@ -8,7 +8,7 @@
     "threshold. Regenerate with:",
     "  node --import tsx scripts/validate-pack.mjs --built apps/web/public/content"
   ],
-  "measuredAt": "2026-07-28",
+  "measuredAt": "2026-07-29",
   "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
 
   "grammar": {
@@ -28,27 +28,24 @@
   },
 
   "questions": {
-    "tests": 1088,
-    "questions": 4025,
+    "tests": 1429,
+    "questions": 5388,
     "topicsWithTests": 135,
-    "duplicatePromptPct": 0.0,
-    "answerTokens": 26671,
-    "dictResolvedPct": 95.0,
-    "bandLemmasUsed": 2415,
+    "duplicatePromptPct": 0.02,
+    "answerTokens": 36404,
+    "dictResolvedPct": 94.7,
+    "bandLemmasUsed": 2611,
     "bandLemmasTotal": 5601,
-    "bandUtilisationPct": 43.1,
-    "questionsPerTopicByFamily": {
-      "nouns": 39.1, "adj": 41.8, "pron": 30.9, "verb-forms": 24.9,
-      "particles": 23.7, "noun-syntax": 32.4, "adj-pron-syntax": 24.0,
-      "verb-syntax": 34.9, "style": 22.4
-    },
-    "belowSizeScaledTarget": 95,
+    "bandUtilisationPct": 46.6,
+    "keptRatioPct": 99.9,
+    "belowSizeScaledTarget": 40,
     "_note": [
-      "95 of 135 topics sit below their size-scaled target — they clear the C2",
-      "floor of 6 tests but a long topic deserves more. This is the backlog the",
-      "generator's coverage-driven resume exists to work off:",
-      "  node --import tsx scripts/gen-tests.mjs --only-thin --plan",
-      "reports 547 tests (~2188 questions) outstanding."
+      "The first backfill run took 58 of the 95 short topics to target, adding",
+      "341 tests / 1,363 questions, and stopped itself on usage limits with 37",
+      "topics left. Resume with:",
+      "  node --import tsx scripts/gen-tests.mjs --only-thin",
+      "which recomputes the deficit from what is on disk. 40 topics remain",
+      "below target; all 135 clear the C2 floor."
     ]
   },
 

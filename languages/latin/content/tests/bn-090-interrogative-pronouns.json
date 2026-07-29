@@ -314,5 +314,192 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-090-interrogative-pronouns-t7",
+  "sectionId": "bn-090-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "Who, pray, dared to open the sealed letters of the dying king?",
+    "answer": "Quisnam epistulās obsignātās rēgis morientis aperīre ausus est?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quisnam",
+     "epistulās",
+     "obsignātās",
+     "rēgis",
+     "morientis",
+     "aperīre",
+     "ausus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "What sort of soldier flees when the enemy attacks the city walls?",
+    "answer": "Quī mīles fugit, cum hostis moenia adgreditur?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "mīles",
+     "fugit",
+     "cum",
+     "hostis",
+     "moenia",
+     "adgreditur"
+    ]
+   },
+   {
+    "prompt": "Whose sausages did the starving dog snatch from the table?",
+    "answer": "Cūjus lucanicās canis ēsuriēns ā mēnsā surripuit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cūjus",
+     "lucanicās",
+     "canis",
+     "ēsuriēns",
+     "ā",
+     "mēnsā",
+     "surripuit"
+    ]
+   },
+   {
+    "prompt": "To whom did the exhausted traveler hand over his heavy pack?",
+    "answer": "Cui viātor dēfessus sarcinam gravem trādidit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cui",
+     "viātor",
+     "dēfessus",
+     "sarcinam",
+     "gravem",
+     "trādidit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-090-interrogative-pronouns-t8",
+  "sectionId": "bn-090-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "What did the fisherman find lying hidden beneath the hook?",
+    "answer": "Quid piscātor sub hāmō latēns repperit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "piscātor",
+     "sub",
+     "hāmō",
+     "latēns",
+     "repperit"
+    ]
+   },
+   {
+    "prompt": "What kind of reward, pray, did the general offer to the braver legions?",
+    "answer": "Quodnam praemium dux legiōnibus fortiōribus obtulit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quodnam",
+     "praemium",
+     "dux",
+     "legiōnibus",
+     "fortiōribus",
+     "obtulit"
+    ]
+   },
+   {
+    "prompt": "With whom did the orator, roused by anger, dispute in the forum?",
+    "answer": "Quōcum ōrātor, īrā incitātus, in forō contendit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōcum",
+     "ōrātor",
+     "īrā",
+     "incitātus",
+     "in",
+     "forō",
+     "contendit"
+    ]
+   },
+   {
+    "prompt": "Whose statue, torn down by the crowd, now lies in the mud?",
+    "answer": "Cūjus statua, ā turbā dēiecta, nunc in lutō jacet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cūjus",
+     "statua",
+     "ā",
+     "turbā",
+     "dēiecta",
+     "nunc",
+     "in",
+     "lutō",
+     "jacet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-090-interrogative-pronouns-t9",
+  "sectionId": "bn-090-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "Who conquered the remote peoples dwelling beyond the immense river?",
+    "answer": "Quis gentēs remōtās trāns flūmen immēnsum habitantēs vīcit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "gentēs",
+     "remōtās",
+     "trāns",
+     "flūmen",
+     "immēnsum",
+     "habitantēs",
+     "vīcit"
+    ]
+   },
+   {
+    "prompt": "What did the anxious mother whisper into the ear of the sleeping child?",
+    "answer": "Quid māter anxia in aurem puerī dormientis īnsusurrāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "māter",
+     "anxia",
+     "in",
+     "aurem",
+     "puerī",
+     "dormientis",
+     "īnsusurrāvit"
+    ]
+   },
+   {
+    "prompt": "What sort of orders did the commander give to the scattered cohorts?",
+    "answer": "Quae mandāta imperātor cohortibus dispersīs dedit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "mandāta",
+     "imperātor",
+     "cohortibus",
+     "dispersīs",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "For whom was the immense monument raised upon the shore?",
+    "answer": "Cui immēnsum monumentum in lītore ērēctum est?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cui",
+     "immēnsum",
+     "monumentum",
+     "in",
+     "lītore",
+     "ērēctum",
+     "est"
+    ]
+   }
+  ]
  }
 ]

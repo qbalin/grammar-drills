@@ -327,5 +327,139 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-133-defective-verbs-t7",
+  "sectionId": "bn-133-defective-verbs",
+  "questions": [
+   {
+    "prompt": "The general, having pitched camp, began to fortify the walls with great care.",
+    "answer": "Dux, castrīs positīs, magnā cūrā mūrōs mūnīre coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "castrīs",
+     "positīs",
+     "magnā",
+     "cūrā",
+     "mūrōs",
+     "mūnīre",
+     "coepit"
+    ]
+   },
+   {
+    "prompt": "We hate the arrogant judge who condemns the innocent for money.",
+    "answer": "Ōdimus superbum iūdicem quī innocentēs pecūniā damnat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōdimus",
+     "superbum",
+     "iūdicem",
+     "quī",
+     "innocentēs",
+     "pecūniā",
+     "damnat"
+    ]
+   },
+   {
+    "prompt": "Remember, my son, the promises which you made to your father.",
+    "answer": "Mementō, fīlī mī, prōmissa quae patrī tuō fēcistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mementō",
+     "fīlī",
+     "mī",
+     "prōmissa",
+     "quae",
+     "patrī",
+     "tuō",
+     "fēcistī"
+    ]
+   },
+   {
+    "prompt": "After the wall had begun to be built, the enemy attacked the city.",
+    "answer": "Postquam mūrus aedificārī coeptus est, hostēs urbem oppugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Postquam",
+     "mūrus",
+     "aedificārī",
+     "coeptus",
+     "est",
+     "hostēs",
+     "urbem",
+     "oppugnāvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-133-defective-verbs-t8",
+  "sectionId": "bn-133-defective-verbs",
+  "questions": [
+   {
+    "prompt": "I shall hate the traitors as long as I live, because they surrendered the citadel.",
+    "answer": "Ōderō prōditōrēs dum vīvam, quod arcem trādidērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōderō",
+     "prōditōrēs",
+     "dum",
+     "vīvam",
+     "quod",
+     "arcem",
+     "trādidērunt"
+    ]
+   },
+   {
+    "prompt": "The old woman still remembers the songs which the shepherds used to sing.",
+    "answer": "Anus etiam meminit carmina quae pāstōrēs canere solēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Anus",
+     "etiam",
+     "meminit",
+     "carmina",
+     "quae",
+     "pāstōrēs",
+     "canere",
+     "solēbant"
+    ]
+   },
+   {
+    "prompt": "When spring had come, the birds began to build their nests in the tall trees.",
+    "answer": "Cum vēr vēnisset, avēs in altīs arboribus nīdōs facere coepērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "vēr",
+     "vēnisset",
+     "avēs",
+     "in",
+     "altīs",
+     "arboribus",
+     "nīdōs",
+     "facere",
+     "coepērunt"
+    ]
+   },
+   {
+    "prompt": "Although he hated war, the wise king remembered the fallen soldiers with tears.",
+    "answer": "Quamquam bellum ōderat, rēx sapiēns mīlitēs cāsōs cum lacrimīs meminerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "bellum",
+     "ōderat",
+     "rēx",
+     "sapiēns",
+     "mīlitēs",
+     "cāsōs",
+     "cum",
+     "lacrimīs",
+     "meminerat"
+    ]
+   }
+  ]
  }
 ]

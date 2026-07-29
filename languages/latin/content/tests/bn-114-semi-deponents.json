@@ -407,5 +407,137 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-114-semi-deponents-t8",
+  "sectionId": "bn-114-semi-deponents",
+  "questions": [
+   {
+    "prompt": "The veterans, having sworn to obey, rejoiced that peace had at last been restored.",
+    "answer": "Veterānī, pārēre jūrātī, gāvīsī sunt pācem tandem redditam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Veterānī",
+     "pārēre",
+     "jūrātī",
+     "gāvīsī",
+     "sunt",
+     "pācem",
+     "tandem",
+     "redditam",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "Trusting in the gods, the priestess dared to enter the burning temple.",
+    "answer": "Deīs fīsa, sacerdōs templum ārdēns intrāre ausa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Deīs",
+     "fīsa",
+     "sacerdōs",
+     "templum",
+     "ārdēns",
+     "intrāre",
+     "ausa",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The old men, having dined lavishly, were wont to turn aside into the garden.",
+    "answer": "Senēs, laute cēnātī, in hortum dēvertī solēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senēs",
+     "laute",
+     "cēnātī",
+     "in",
+     "hortum",
+     "dēvertī",
+     "solēbant"
+    ]
+   },
+   {
+    "prompt": "Having grown up among soldiers, the boy was not afraid to trust the sword.",
+    "answer": "Inter mīlitēs adultus, puer gladiō fīdere nōn timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Inter",
+     "mīlitēs",
+     "adultus",
+     "puer",
+     "gladiō",
+     "fīdere",
+     "nōn",
+     "timēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-114-semi-deponents-t9",
+  "sectionId": "bn-114-semi-deponents",
+  "questions": [
+   {
+    "prompt": "We rejoice that you have returned unharmed from so great a war.",
+    "answer": "Gaudēmus tē ex tantō bellō incolumem revertisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gaudēmus",
+     "tē",
+     "ex",
+     "tantō",
+     "bellō",
+     "incolumem",
+     "revertisse"
+    ]
+   },
+   {
+    "prompt": "Having drunk deeply, the guests were accustomed to praise the host's generosity.",
+    "answer": "Largē pōtī, convīvae hospitis līberālitātem laudāre solēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Largē",
+     "pōtī",
+     "convīvae",
+     "hospitis",
+     "līberālitātem",
+     "laudāre",
+     "solēbant"
+    ]
+   },
+   {
+    "prompt": "The plan pleased the consul, who dared to attack the enemy by night.",
+    "answer": "Cōnsulī placuit cōnsilium, quī hostem noctū oppugnāre ausus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsulī",
+     "placuit",
+     "cōnsilium",
+     "quī",
+     "hostem",
+     "noctū",
+     "oppugnāre",
+     "ausus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Having lunched beside the river, the weary soldiers trusted the guide and set out.",
+    "answer": "Ad flūmen prānsī, mīlitēs fessī ducī fīsī profectī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ad",
+     "flūmen",
+     "prānsī",
+     "mīlitēs",
+     "fessī",
+     "ducī",
+     "fīsī",
+     "profectī",
+     "sunt"
+    ]
+   }
+  ]
  }
 ]

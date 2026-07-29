@@ -318,5 +318,122 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-085-reflexive-pronouns-t7",
+  "sectionId": "bn-085-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "The queen adorned herself with jewels before the great feast.",
+    "answer": "Rēgīna sē gemmīs ante magnum convīvium ōrnāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "sē",
+     "gemmīs",
+     "ante",
+     "magnum",
+     "convīvium",
+     "ōrnāvit"
+    ]
+   },
+   {
+    "prompt": "The boys were fighting among themselves in the empty forum.",
+    "answer": "Puerī inter sē in forō vacuō pugnābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puerī",
+     "inter",
+     "sē",
+     "in",
+     "forō",
+     "vacuō",
+     "pugnābant"
+    ]
+   },
+   {
+    "prompt": "You trust yourself too much, my friend.",
+    "answer": "Nimium tibi cōnfīdis, mī amīce.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nimium",
+     "tibi",
+     "cōnfīdis",
+     "mī",
+     "amīce"
+    ]
+   },
+   {
+    "prompt": "The wounded general dragged himself back into the camp.",
+    "answer": "Dux vulnerātus sē in castra trāxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "vulnerātus",
+     "sē",
+     "in",
+     "castra",
+     "trāxit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-085-reflexive-pronouns-t8",
+  "sectionId": "bn-085-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "I have prepared myself for every danger by long toil.",
+    "answer": "Mē longō labōre ad omne perīculum parāvī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mē",
+     "longō",
+     "labōre",
+     "ad",
+     "omne",
+     "perīculum",
+     "parāvī"
+    ]
+   },
+   {
+    "prompt": "The philosopher, content with himself, despised riches.",
+    "answer": "Philosophus sē contentus dīvitiās contempsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "sē",
+     "contentus",
+     "dīvitiās",
+     "contempsit"
+    ]
+   },
+   {
+    "prompt": "The enemies betrayed one another out of fear.",
+    "answer": "Hostēs inter sē metū prōdidērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostēs",
+     "inter",
+     "sē",
+     "metū",
+     "prōdidērunt"
+    ]
+   },
+   {
+    "prompt": "Devote yourself to virtue, young man, and flee idleness.",
+    "answer": "Tē virtūtī trāde, iuvenis, et ōtium fuge.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tē",
+     "virtūtī",
+     "trāde",
+     "iuvenis",
+     "et",
+     "ōtium",
+     "fuge"
+    ]
+   }
+  ]
  }
 ]

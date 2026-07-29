@@ -383,5 +383,211 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-140-adverbs-t7",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "Where the river bends, there the fishermen have set their nets.",
+    "answer": "Ubi flūmen sē flectit, ibi piscātōrēs rētia sua posuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ubi",
+     "flūmen",
+     "sē",
+     "flectit",
+     "ibi",
+     "piscātōrēs",
+     "rētia",
+     "sua",
+     "posuērunt"
+    ]
+   },
+   {
+    "prompt": "By that way the legions marched, by which no army had ever passed before.",
+    "answer": "Eā viā legiōnēs contendērunt, quā nūllus exercitus umquam anteā trānsierat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eā",
+     "viā",
+     "legiōnēs",
+     "contendērunt",
+     "quā",
+     "nūllus",
+     "exercitus",
+     "umquam",
+     "anteā",
+     "trānsierat"
+    ]
+   },
+   {
+    "prompt": "Whence the plague had come, no physician could tell.",
+    "answer": "Unde pestis vēnisset, nūllus medicus dīcere poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Unde",
+     "pestis",
+     "vēnisset",
+     "nūllus",
+     "medicus",
+     "dīcere",
+     "poterat"
+    ]
+   },
+   {
+    "prompt": "Thither the pilgrims journeyed, where the sacred spring was said to gush.",
+    "answer": "Illūc peregrīnī iter fēcērunt, ubi fōns sacer scatēre dīcēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illūc",
+     "peregrīnī",
+     "iter",
+     "fēcērunt",
+     "ubi",
+     "fōns",
+     "sacer",
+     "scatēre",
+     "dīcēbātur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-140-adverbs-t8",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "As often as the trumpet sounded, so often the horsemen charged again.",
+    "answer": "Quotiēns tuba sonuit, totiēns equitēs iterum impetum fēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quotiēns",
+     "tuba",
+     "sonuit",
+     "totiēns",
+     "equitēs",
+     "iterum",
+     "impetum",
+     "fēcērunt"
+    ]
+   },
+   {
+    "prompt": "Now the harbor is calm, but then it raged with a savage storm.",
+    "answer": "Nunc portus tranquillus est, tum autem saevā tempestāte furēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nunc",
+     "portus",
+     "tranquillus",
+     "est",
+     "tum",
+     "autem",
+     "saevā",
+     "tempestāte",
+     "furēbat"
+    ]
+   },
+   {
+    "prompt": "When the messenger arrived, then the general summoned his officers.",
+    "answer": "Cum nūntius advēnit, tunc imperātor centuriōnēs suōs convocāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "nūntius",
+     "advēnit",
+     "tunc",
+     "imperātor",
+     "centuriōnēs",
+     "suōs",
+     "convocāvit"
+    ]
+   },
+   {
+    "prompt": "When will the fleet set sail, which we now await with such longing?",
+    "answer": "Quandō classis solvet, quam nunc tantō dēsīderiō exspectāmus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quandō",
+     "classis",
+     "solvet",
+     "quam",
+     "nunc",
+     "tantō",
+     "dēsīderiō",
+     "exspectāmus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-140-adverbs-t9",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "So great was the famine that the citizens somewhere sought roots to eat.",
+    "answer": "Tam gravis erat famēs ut cīvēs alicubī rādīcēs edendās quaererent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tam",
+     "gravis",
+     "erat",
+     "famēs",
+     "ut",
+     "cīvēs",
+     "alicubī",
+     "rādīcēs",
+     "edendās",
+     "quaererent"
+    ]
+   },
+   {
+    "prompt": "If ever you find the ring somewhere, restore it at once to its owner.",
+    "answer": "Sī umquam ānulum alicubī invēneris, statim dominō suō redde.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "umquam",
+     "ānulum",
+     "alicubī",
+     "invēneris",
+     "statim",
+     "dominō",
+     "suō",
+     "redde"
+    ]
+   },
+   {
+    "prompt": "The wine was somewhat sweeter than the merchant had promised.",
+    "answer": "Vīnum aliquantō dulcius erat quam mercātor prōmīserat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīnum",
+     "aliquantō",
+     "dulcius",
+     "erat",
+     "quam",
+     "mercātor",
+     "prōmīserat"
+    ]
+   },
+   {
+    "prompt": "How bravely he once fought, who now trembles at every shadow!",
+    "answer": "Quam fortiter aliquandō pugnāvit, quī nunc ad omnem umbram tremit!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "fortiter",
+     "aliquandō",
+     "pugnāvit",
+     "quī",
+     "nunc",
+     "ad",
+     "omnem",
+     "umbram",
+     "tremit"
+    ]
+   }
+  ]
  }
 ]

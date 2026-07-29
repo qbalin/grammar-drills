@@ -302,5 +302,659 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t7",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "Death frees the wretched from all their sufferings.",
+    "answer": "Mors miserōs omnibus dolōribus līberat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mors",
+     "miserōs",
+     "omnibus",
+     "dolōribus",
+     "līberat"
+    ]
+   },
+   {
+    "prompt": "The victor stripped the conquered of their ancestral fields.",
+    "answer": "Victor victōs agrīs patriīs spoliāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Victor",
+     "victōs",
+     "agrīs",
+     "patriīs",
+     "spoliāvit"
+    ]
+   },
+   {
+    "prompt": "A grieving heart lacks all tranquility.",
+    "answer": "Maerēns pectus omnī tranquillitāte caret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Maerēns",
+     "pectus",
+     "omnī",
+     "tranquillitāte",
+     "caret"
+    ]
+   },
+   {
+    "prompt": "Old age relieved the weary king of his heavy scepter.",
+    "answer": "Senectūs fessum rēgem gravī scēptrō levāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senectūs",
+     "fessum",
+     "rēgem",
+     "gravī",
+     "scēptrō",
+     "levāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t8",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "A wise man abstains from excessive luxury.",
+    "answer": "Sapiēns vir nimiā luxuriā abstinet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "vir",
+     "nimiā",
+     "luxuriā",
+     "abstinet"
+    ]
+   },
+   {
+    "prompt": "The steep walls kept the enemy from the city.",
+    "answer": "Ardua moenia hostēs urbe prohibuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ardua",
+     "moenia",
+     "hostēs",
+     "urbe",
+     "prohibuērunt"
+    ]
+   },
+   {
+    "prompt": "The shepherd kept the wolves from the trembling flock.",
+    "answer": "Pāstor lupōs ā trepidō grege arcuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pāstor",
+     "lupōs",
+     "ā",
+     "trepidō",
+     "grege",
+     "arcuit"
+    ]
+   },
+   {
+    "prompt": "Shame held the young man back from wicked deeds.",
+    "answer": "Pudor iuvenem scelerātīs factīs abstinuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pudor",
+     "iuvenem",
+     "scelerātīs",
+     "factīs",
+     "abstinuit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t9",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "Born of a noble family, the youth despised idleness.",
+    "answer": "Nōbilī genere ortus, iuvenis ignāviam sprēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōbilī",
+     "genere",
+     "ortus",
+     "iuvenis",
+     "ignāviam",
+     "sprēvit"
+    ]
+   },
+   {
+    "prompt": "Sprung from me, the boy fears no toil.",
+    "answer": "Ex mē nātus, puer nūllum labōrem timet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ex",
+     "mē",
+     "nātus",
+     "puer",
+     "nūllum",
+     "labōrem",
+     "timet"
+    ]
+   },
+   {
+    "prompt": "Descended from Ulysses, he claimed a famous name for himself.",
+    "answer": "Ab Ulixe oriundus, clārum nōmen sibi vindicābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ab",
+     "Ulixe",
+     "oriundus",
+     "clārum",
+     "nōmen",
+     "sibi",
+     "vindicābat"
+    ]
+   },
+   {
+    "prompt": "High-born, she nevertheless scorned proud honors.",
+    "answer": "Summō locō nāta, tamen superbōs honōrēs spernēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Summō",
+     "locō",
+     "nāta",
+     "tamen",
+     "superbōs",
+     "honōrēs",
+     "spernēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t10",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "The traitor was condemned by a stern judge.",
+    "answer": "Prōditor ā sevērō iūdice damnātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prōditor",
+     "ā",
+     "sevērō",
+     "iūdice",
+     "damnātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The mountains were held by a great multitude of the enemy.",
+    "answer": "Montēs ā magnā multitūdine hostium tenēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Montēs",
+     "ā",
+     "magnā",
+     "multitūdine",
+     "hostium",
+     "tenēbantur"
+    ]
+   },
+   {
+    "prompt": "The wretched man was torn to pieces by savage dogs.",
+    "answer": "Miser ā saevīs canibus laniātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Miser",
+     "ā",
+     "saevīs",
+     "canibus",
+     "laniātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The city, deserted by Fortune, was captured by the enemy.",
+    "answer": "Urbs ā Fortūnā dēserta ab hostibus capta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbs",
+     "ā",
+     "Fortūnā",
+     "dēserta",
+     "ab",
+     "hostibus",
+     "capta",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t11",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "Nothing is sweeter to me than a peaceful life.",
+    "answer": "Nihil mihi vītā tranquillā dulcius est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "mihi",
+     "vītā",
+     "tranquillā",
+     "dulcius",
+     "est"
+    ]
+   },
+   {
+    "prompt": "In battle the general was braver than a lion.",
+    "answer": "Dux in proeliō leōne fortior erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "in",
+     "proeliō",
+     "leōne",
+     "fortior",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "More than twenty cities were burned by the raging fire.",
+    "answer": "Amplius vīgintī urbēs saevō igne incēnsae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amplius",
+     "vīgintī",
+     "urbēs",
+     "saevō",
+     "igne",
+     "incēnsae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "He returned home more quickly than expected.",
+    "answer": "Domum opīniōne celerius rediit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Domum",
+     "opīniōne",
+     "celerius",
+     "rediit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t12",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "Freed from his long chains, the captive praised the gods.",
+    "answer": "Longīs vinculīs solūtus, captīvus deōs laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Longīs",
+     "vinculīs",
+     "solūtus",
+     "captīvus",
+     "deōs",
+     "laudāvit"
+    ]
+   },
+   {
+    "prompt": "The soldiers, descended from ancient kings, feared no wounds.",
+    "answer": "Mīlitēs, ab antīquīs rēgibus oriundī, nūlla vulnera timēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "ab",
+     "antīquīs",
+     "rēgibus",
+     "oriundī",
+     "nūlla",
+     "vulnera",
+     "timēbant"
+    ]
+   },
+   {
+    "prompt": "The winner deprived his rival of all hope of victory.",
+    "answer": "Victor aemulum omnī spē victōriae prīvāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Victor",
+     "aemulum",
+     "omnī",
+     "spē",
+     "victōriae",
+     "prīvāvit"
+    ]
+   },
+   {
+    "prompt": "The tower was defended by a small band braver than the enemy.",
+    "answer": "Turris ā parvā manū hoste fortiōre dēfēnsa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Turris",
+     "ā",
+     "parvā",
+     "manū",
+     "hoste",
+     "fortiōre",
+     "dēfēnsa",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t13",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "The general freed the weary soldiers from a long siege.",
+    "answer": "Dux mīlitēs fessōs longā obsidiōne līberāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "mīlitēs",
+     "fessōs",
+     "longā",
+     "obsidiōne",
+     "līberāvit"
+    ]
+   },
+   {
+    "prompt": "The victorious enemy stripped the temple of its ancient gold.",
+    "answer": "Hostēs victōrēs templum vetere aurō spoliāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostēs",
+     "victōrēs",
+     "templum",
+     "vetere",
+     "aurō",
+     "spoliāvērunt"
+    ]
+   },
+   {
+    "prompt": "A soul empty of virtue lacks true joy.",
+    "answer": "Animus virtūte inānis vērō gaudiō caret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Animus",
+     "virtūte",
+     "inānis",
+     "vērō",
+     "gaudiō",
+     "caret"
+    ]
+   },
+   {
+    "prompt": "Deprived of all honor, the exile wandered through foreign lands.",
+    "answer": "Omnī honōre prīvātus, exsul per aliēnās terrās errābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnī",
+     "honōre",
+     "prīvātus",
+     "exsul",
+     "per",
+     "aliēnās",
+     "terrās",
+     "errābat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t14",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "The city was besieged by a great multitude of enemies.",
+    "answer": "Urbs ā magnā hostium multitūdine obsidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbs",
+     "ā",
+     "magnā",
+     "hostium",
+     "multitūdine",
+     "obsidēbātur"
+    ]
+   },
+   {
+    "prompt": "The traitor was betrayed by his own friends.",
+    "answer": "Prōditor ab amīcīs suīs prōditus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prōditor",
+     "ab",
+     "amīcīs",
+     "suīs",
+     "prōditus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The shepherd's flock was torn apart by savage wolves.",
+    "answer": "Grex pāstōris ā saevīs lupīs laniātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Grex",
+     "pāstōris",
+     "ā",
+     "saevīs",
+     "lupīs",
+     "laniātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The letter was written by a learned scribe and sent to the king.",
+    "answer": "Epistola ā doctō scrībā scrīpta et ad rēgem missa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Epistola",
+     "ā",
+     "doctō",
+     "scrībā",
+     "scrīpta",
+     "et",
+     "ad",
+     "rēgem",
+     "missa",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t15",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "Nothing is more precious than a faithful friend.",
+    "answer": "Nihil amīcō fidēlī pretiōsius est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "amīcō",
+     "fidēlī",
+     "pretiōsius",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The wise man's counsel was more useful than gold.",
+    "answer": "Sapientis cōnsilium aurō ūtilius fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapientis",
+     "cōnsilium",
+     "aurō",
+     "ūtilius",
+     "fuit"
+    ]
+   },
+   {
+    "prompt": "This road is shorter than that one, but far more dangerous.",
+    "answer": "Haec via illā brevior est, sed multō perīculōsior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "via",
+     "illā",
+     "brevior",
+     "est",
+     "sed",
+     "multō",
+     "perīculōsior"
+    ]
+   },
+   {
+    "prompt": "The enemy arrived more quickly than expected and stormed the walls.",
+    "answer": "Hostis opīniōne celerius vēnit et mūrōs oppugnāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostis",
+     "opīniōne",
+     "celerius",
+     "vēnit",
+     "et",
+     "mūrōs",
+     "oppugnāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t16",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "Born of a divine father, the hero feared no danger.",
+    "answer": "Patre dīvīnō nātus, hērōs nūllum perīculum timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Patre",
+     "dīvīnō",
+     "nātus",
+     "hērōs",
+     "nūllum",
+     "perīculum",
+     "timēbat"
+    ]
+   },
+   {
+    "prompt": "Sprung from me, my son will surpass his ancestors in glory.",
+    "answer": "Ex mē nātus, fīlius meus maiōrēs glōriā superābit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ex",
+     "mē",
+     "nātus",
+     "fīlius",
+     "meus",
+     "maiōrēs",
+     "glōriā",
+     "superābit"
+    ]
+   },
+   {
+    "prompt": "Descended from Ulysses, the young man kept boasting of his lineage.",
+    "answer": "Ab Ulixe oriundus, iuvenis genus suum ostentābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ab",
+     "Ulixe",
+     "oriundus",
+     "iuvenis",
+     "genus",
+     "suum",
+     "ostentābat"
+    ]
+   },
+   {
+    "prompt": "Born in a very humble station, he nevertheless attained the highest honors.",
+    "answer": "Humillimō locō nātus, tamen summōs honōrēs adeptus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Humillimō",
+     "locō",
+     "nātus",
+     "tamen",
+     "summōs",
+     "honōrēs",
+     "adeptus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-t17",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "The senate kept the ambitious consul from absolute power.",
+    "answer": "Senātus cōnsulem ambitiōsum dominātiōne prohibuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senātus",
+     "cōnsulem",
+     "ambitiōsum",
+     "dominātiōne",
+     "prohibuit"
+    ]
+   },
+   {
+    "prompt": "The philosopher abstained from wine and every pleasure.",
+    "answer": "Philosophus vīnō et omnī voluptāte abstinuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "vīnō",
+     "et",
+     "omnī",
+     "voluptāte",
+     "abstinuit"
+    ]
+   },
+   {
+    "prompt": "Let the wicked be separated from us by a stern decree.",
+    "answer": "Improbī ā nōbīs sevērō ēdictō sēcernantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Improbī",
+     "ā",
+     "nōbīs",
+     "sevērō",
+     "ēdictō",
+     "sēcernantur"
+    ]
+   },
+   {
+    "prompt": "The river divides our fields from the enemy's territory.",
+    "answer": "Flūmen agrōs nostrōs ab hostium fīnibus dīvidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Flūmen",
+     "agrōs",
+     "nostrōs",
+     "ab",
+     "hostium",
+     "fīnibus",
+     "dīvidit"
+    ]
+   }
+  ]
  }
 ]

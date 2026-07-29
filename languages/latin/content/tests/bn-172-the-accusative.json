@@ -324,5 +324,123 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-172-the-accusative-t7",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
+   {
+    "prompt": "The farmer, worn out by long toil, abandoned the fertile fields.",
+    "answer": "Agricola longō labōre cōnfectus agrōs fertilēs relīquit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "longō",
+     "labōre",
+     "cōnfectus",
+     "agrōs",
+     "fertilēs",
+     "relīquit"
+    ]
+   },
+   {
+    "prompt": "The philosopher despised riches and sought virtue alone.",
+    "answer": "Philosophus dīvitiās contempsit et sōlam virtūtem petīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "dīvitiās",
+     "contempsit",
+     "et",
+     "sōlam",
+     "virtūtem",
+     "petīvit"
+    ]
+   },
+   {
+    "prompt": "While the enemy hesitate, the leader seized the bridge.",
+    "answer": "Dum hostēs cūnctantur, dux pontem occupāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "hostēs",
+     "cūnctantur",
+     "dux",
+     "pontem",
+     "occupāvit"
+    ]
+   },
+   {
+    "prompt": "The maiden praised the songs which the poet had composed.",
+    "answer": "Virgō carmina quae poēta composuerat laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "carmina",
+     "quae",
+     "poēta",
+     "composuerat",
+     "laudāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-t8",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
+   {
+    "prompt": "Once the mountains had been conquered, the soldiers built a lasting road.",
+    "answer": "Montibus superātīs mīlitēs viam perpetuam mūnīvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Montibus",
+     "superātīs",
+     "mīlitēs",
+     "viam",
+     "perpetuam",
+     "mūnīvērunt"
+    ]
+   },
+   {
+    "prompt": "The greedy merchant sold the ship acquired at great price.",
+    "answer": "Mercātor avidus nāvem magnō pretiō comparātam vēndidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "avidus",
+     "nāvem",
+     "magnō",
+     "pretiō",
+     "comparātam",
+     "vēndidit"
+    ]
+   },
+   {
+    "prompt": "The daughter wove a soft garment for her weary mother.",
+    "answer": "Fīlia mollem vestem fessae mātrī texuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fīlia",
+     "mollem",
+     "vestem",
+     "fessae",
+     "mātrī",
+     "texuit"
+    ]
+   },
+   {
+    "prompt": "The orator moved the crowd with a bitter speech.",
+    "answer": "Ōrātor multitūdinem acerbā ōrātiōne mōvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "multitūdinem",
+     "acerbā",
+     "ōrātiōne",
+     "mōvit"
+    ]
+   }
+  ]
  }
 ]

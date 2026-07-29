@@ -362,5 +362,382 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-013-gender-of-nouns-t7",
+  "sectionId": "bn-013-gender-of-nouns",
+  "questions": [
+   {
+    "prompt": "The swift Rhône, deep in winter, carried off the merchant's boats.",
+    "answer": "Rhodanus rapidus, hieme altus, mercātōris lintrēs abstulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rhodanus",
+     "rapidus",
+     "hieme",
+     "altus",
+     "mercātōris",
+     "lintrēs",
+     "abstulit"
+    ]
+   },
+   {
+    "prompt": "In September the sailors feared the raging south wind.",
+    "answer": "Mēnse Septembrī nautae Austrum saevientem timēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mēnse",
+     "Septembrī",
+     "nautae",
+     "Austrum",
+     "saevientem",
+     "timēbant"
+    ]
+   },
+   {
+    "prompt": "The gentle west wind, blowing at first light, was delighting the weary farmer.",
+    "answer": "Favōnius lēnis, prīmā lūce flāns, agricolam fessum dēlectābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Favōnius",
+     "lēnis",
+     "prīmā",
+     "lūce",
+     "flāns",
+     "agricolam",
+     "fessum",
+     "dēlectābat"
+    ]
+   },
+   {
+    "prompt": "October, harsh with storms, had destroyed the poet's vineyards.",
+    "answer": "Octōber, tempestātibus asper, poētae vīneās dēlēverat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Octōber",
+     "tempestātibus",
+     "asper",
+     "poētae",
+     "vīneās",
+     "dēlēverat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-013-gender-of-nouns-t8",
+  "sectionId": "bn-013-gender-of-nouns",
+  "questions": [
+   {
+    "prompt": "The tall oak, struck by lightning, fell in the sacred grove.",
+    "answer": "Quercus alta, fulmine icta, in lūcō sacrō cecidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quercus",
+     "alta",
+     "fulmine",
+     "icta",
+     "in",
+     "lūcō",
+     "sacrō",
+     "cecidit"
+    ]
+   },
+   {
+    "prompt": "Ancient Corinth, famous for its wealth, was destroyed by the Romans.",
+    "answer": "Corinthus antīqua, dīvitiīs clāra, ā Rōmānīs dēlēta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Corinthus",
+     "antīqua",
+     "dīvitiīs",
+     "clāra",
+     "ā",
+     "Rōmānīs",
+     "dēlēta",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Rhodes, dear to sailors, nourishes many olive trees.",
+    "answer": "Rhodus, nautīs cāra, multās olīvās alit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rhodus",
+     "nautīs",
+     "cāra",
+     "multās",
+     "olīvās",
+     "alit"
+    ]
+   },
+   {
+    "prompt": "The wide-spreading beech gave shade to the resting shepherd.",
+    "answer": "Fāgus lāta pāstōrī quiēscentī umbram praebēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fāgus",
+     "lāta",
+     "pāstōrī",
+     "quiēscentī",
+     "umbram",
+     "praebēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-013-gender-of-nouns-t9",
+  "sectionId": "bn-013-gender-of-nouns",
+  "questions": [
+   {
+    "prompt": "The trustworthy scribe, sitting in the forum, wrote the general's letters.",
+    "answer": "Scrība fidēlis, in forō sedēns, ducis epistulās scrīpsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scrība",
+     "fidēlis",
+     "in",
+     "forō",
+     "sedēns",
+     "ducis",
+     "epistulās",
+     "scrīpsit"
+    ]
+   },
+   {
+    "prompt": "The bold pirate, to be feared throughout the whole sea, seized the rich merchant.",
+    "answer": "Pīrāta audāx, tōtō marī metuendus, mercātōrem dīvitem cēpit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pīrāta",
+     "audāx",
+     "tōtō",
+     "marī",
+     "metuendus",
+     "mercātōrem",
+     "dīvitem",
+     "cēpit"
+    ]
+   },
+   {
+    "prompt": "The diligent farmer, though weary, praised his devoted daughter.",
+    "answer": "Agricola dīligēns, quamquam fessus, fīliam piam laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "dīligēns",
+     "quamquam",
+     "fessus",
+     "fīliam",
+     "piam",
+     "laudāvit"
+    ]
+   },
+   {
+    "prompt": "The famous poet, crowned with laurel, sang of the ancient kings.",
+    "answer": "Poēta clārus, laurō corōnātus, dē rēgibus antīquīs cecinit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "clārus",
+     "laurō",
+     "corōnātus",
+     "dē",
+     "rēgibus",
+     "antīquīs",
+     "cecinit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-013-gender-of-nouns-t10",
+  "sectionId": "bn-013-gender-of-nouns",
+  "questions": [
+   {
+    "prompt": "The holy and revered priestess guarded the sacred flame by night.",
+    "answer": "Sacerdōs sāncta ac veneranda flammam sacram nocte custōdiēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sacerdōs",
+     "sāncta",
+     "ac",
+     "veneranda",
+     "flammam",
+     "sacram",
+     "nocte",
+     "custōdiēbat"
+    ]
+   },
+   {
+    "prompt": "Every citizen, mindful of the laws, obeyed the just consul.",
+    "answer": "Cīvis omnis, lēgum memor, cōnsulī iūstō pārēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvis",
+     "omnis",
+     "lēgum",
+     "memor",
+     "cōnsulī",
+     "iūstō",
+     "pārēbat"
+    ]
+   },
+   {
+    "prompt": "The anxious parent, worn out by cares, watched over the sleeping infant.",
+    "answer": "Parēns sollicitus, cūrīs cōnfectus, īnfantem dormientem cūrābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Parēns",
+     "sollicitus",
+     "cūrīs",
+     "cōnfectus",
+     "īnfantem",
+     "dormientem",
+     "cūrābat"
+    ]
+   },
+   {
+    "prompt": "The aged priest, standing at the altar, sacrificed a white bull to Jupiter.",
+    "answer": "Sacerdōs senex, ad āram stāns, taurum album Iovī immolāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sacerdōs",
+     "senex",
+     "ad",
+     "āram",
+     "stāns",
+     "taurum",
+     "album",
+     "Iovī",
+     "immolāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-013-gender-of-nouns-t11",
+  "sectionId": "bn-013-gender-of-nouns",
+  "questions": [
+   {
+    "prompt": "To conquer oneself is difficult, but pleasing to the gods.",
+    "answer": "Sē vincere difficile est, sed deīs grātum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sē",
+     "vincere",
+     "difficile",
+     "est",
+     "sed",
+     "deīs",
+     "grātum"
+    ]
+   },
+   {
+    "prompt": "Nothing is more precious than uncorrupted virtue.",
+    "answer": "Nihil est pretiōsius quam virtūs incorrupta.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "est",
+     "pretiōsius",
+     "quam",
+     "virtūs",
+     "incorrupta"
+    ]
+   },
+   {
+    "prompt": "To have lived well is a great reward for the wise man.",
+    "answer": "Bene vīxisse magnum praemium sapientī est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bene",
+     "vīxisse",
+     "magnum",
+     "praemium",
+     "sapientī",
+     "est"
+    ]
+   },
+   {
+    "prompt": "It is wrong to betray one's country to the enemy.",
+    "answer": "Nefās est patriam hostibus prōdere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nefās",
+     "est",
+     "patriam",
+     "hostibus",
+     "prōdere"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-013-gender-of-nouns-t12",
+  "sectionId": "bn-013-gender-of-nouns",
+  "questions": [
+   {
+    "prompt": "The cunning fox, lurking in the woods, snatched the farmer's goose.",
+    "answer": "Vulpēs callida, in silvīs latēns, agricolae ānserem rapuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vulpēs",
+     "callida",
+     "in",
+     "silvīs",
+     "latēns",
+     "agricolae",
+     "ānserem",
+     "rapuit"
+    ]
+   },
+   {
+    "prompt": "The swift eagle, sacred to Jupiter, seized the trembling hare.",
+    "answer": "Aquila celeris, Iovī sacra, leporem trepidantem rapuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aquila",
+     "celeris",
+     "Iovī",
+     "sacra",
+     "leporem",
+     "trepidantem",
+     "rapuit"
+    ]
+   },
+   {
+    "prompt": "The savage wolf, driven by hunger, wandered through the snowy fields.",
+    "answer": "Lupus saevus, famē āctus, per campōs nivōsōs errābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lupus",
+     "saevus",
+     "famē",
+     "āctus",
+     "per",
+     "campōs",
+     "nivōsōs",
+     "errābat"
+    ]
+   },
+   {
+    "prompt": "The white swan, gliding on the calm water, sang a sweet song.",
+    "answer": "Cygnus albus, in aquā tranquillā lābēns, dulce carmen cecinit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cygnus",
+     "albus",
+     "in",
+     "aquā",
+     "tranquillā",
+     "lābēns",
+     "dulce",
+     "carmen",
+     "cecinit"
+    ]
+   }
+  ]
  }
 ]

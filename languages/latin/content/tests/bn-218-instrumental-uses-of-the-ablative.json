@@ -1345,5 +1345,130 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-t25",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Having seized the camp, the victorious soldiers enjoyed a long peace.",
+    "answer": "Castrīs potītī, mīlitēs victōrēs longā pāce fruēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Castrīs",
+     "potītī",
+     "mīlitēs",
+     "victōrēs",
+     "longā",
+     "pāce",
+     "fruēbantur"
+    ]
+   },
+   {
+    "prompt": "We need a wise leader, since the enemy is approaching the gates.",
+    "answer": "Duce sapientī nōbīs opus est, cum hostis portīs appropinquet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Duce",
+     "sapientī",
+     "nōbīs",
+     "opus",
+     "est",
+     "cum",
+     "hostis",
+     "portīs",
+     "appropinquet"
+    ]
+   },
+   {
+    "prompt": "When the king had been killed, the citizens seized the freedom they had long desired.",
+    "answer": "Rēge interfectō, cīvēs lībertātem diū dēsīderātam rapuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēge",
+     "interfectō",
+     "cīvēs",
+     "lībertātem",
+     "diū",
+     "dēsīderātam",
+     "rapuērunt"
+    ]
+   },
+   {
+    "prompt": "The tower stood three feet higher than the ancient wall.",
+    "answer": "Turris tribus pedibus altior mūrō vetere stābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Turris",
+     "tribus",
+     "pedibus",
+     "altior",
+     "mūrō",
+     "vetere",
+     "stābat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-t26",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "A man of singular courage, he crossed the swollen river alone.",
+    "answer": "Vir singulārī virtūte flūmen tumidum sōlus trānsiit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vir",
+     "singulārī",
+     "virtūte",
+     "flūmen",
+     "tumidum",
+     "sōlus",
+     "trānsiit"
+    ]
+   },
+   {
+    "prompt": "The greedy merchant sold the stolen horse for a high price.",
+    "answer": "Mercātor avārus equum surreptum magnō vēndidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "avārus",
+     "equum",
+     "surreptum",
+     "magnō",
+     "vēndidit"
+    ]
+   },
+   {
+    "prompt": "The brave youth proved himself worthy of the highest honor.",
+    "answer": "Iuvenis fortis sē summō honōre dignum praebuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iuvenis",
+     "fortis",
+     "sē",
+     "summō",
+     "honōre",
+     "dignum",
+     "praebuit"
+    ]
+   },
+   {
+    "prompt": "Speaking with great dignity, the orator moved the crowd with his words.",
+    "answer": "Ōrātor magnā gravitāte locūtus turbam verbīs mōvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "magnā",
+     "gravitāte",
+     "locūtus",
+     "turbam",
+     "verbīs",
+     "mōvit"
+    ]
+   }
+  ]
  }
 ]

@@ -321,5 +321,242 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-204-genitive-with-adjectives-t7",
+  "sectionId": "bn-204-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "The helmsman, skilled in the stars, guided the ship safely through the night.",
+    "answer": "Gubernātor, sīderum perītus, nāvem per noctem tūtō dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gubernātor",
+     "sīderum",
+     "perītus",
+     "nāvem",
+     "per",
+     "noctem",
+     "tūtō",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "Full of wisdom, the aged priest despised riches.",
+    "answer": "Sapientiae plēnus, sacerdōs senex dīvitiās contempsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapientiae",
+     "plēnus",
+     "sacerdōs",
+     "senex",
+     "dīvitiās",
+     "contempsit"
+    ]
+   },
+   {
+    "prompt": "The queen, desirous of peace, sent envoys to the enemy.",
+    "answer": "Rēgīna, pācis cupida, lēgātōs ad hostēs mīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "pācis",
+     "cupida",
+     "lēgātōs",
+     "ad",
+     "hostēs",
+     "mīsit"
+    ]
+   },
+   {
+    "prompt": "Unmindful of the danger, the hunter pursued the boar through the woods.",
+    "answer": "Perīculī immemor, vēnātor aprum per silvās secūtus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Perīculī",
+     "immemor",
+     "vēnātor",
+     "aprum",
+     "per",
+     "silvās",
+     "secūtus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-204-genitive-with-adjectives-t8",
+  "sectionId": "bn-204-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "The philosopher, fond of truth, refuted the false witnesses.",
+    "answer": "Philosophus, vēritātis amāns, testēs falsōs refūtāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "vēritātis",
+     "amāns",
+     "testēs",
+     "falsōs",
+     "refūtāvit"
+    ]
+   },
+   {
+    "prompt": "Skilled in law, the orator defended the innocent man before the judges.",
+    "answer": "Iūris perītus, ōrātor īnsontem apud iūdicēs dēfendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūris",
+     "perītus",
+     "ōrātor",
+     "īnsontem",
+     "apud",
+     "iūdicēs",
+     "dēfendit"
+    ]
+   },
+   {
+    "prompt": "The general, greedy for power, seized the whole city.",
+    "answer": "Dux, potestātis avidus, urbem tōtam occupāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "potestātis",
+     "avidus",
+     "urbem",
+     "tōtam",
+     "occupāvit"
+    ]
+   },
+   {
+    "prompt": "The daughter is exactly like her mother in character.",
+    "answer": "Fīlia mōribus mātris simillima est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fīlia",
+     "mōribus",
+     "mātris",
+     "simillima",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-204-genitive-with-adjectives-t9",
+  "sectionId": "bn-204-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "Ignorant of the future, mortals fear death in vain.",
+    "answer": "Futūrī ignārī, mortālēs mortem frūstrā timent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Futūrī",
+     "ignārī",
+     "mortālēs",
+     "mortem",
+     "frūstrā",
+     "timent"
+    ]
+   },
+   {
+    "prompt": "Mindful of their ancient glory, the citizens took up arms.",
+    "answer": "Antīquae glōriae memorēs, cīvēs arma cēpērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antīquae",
+     "glōriae",
+     "memorēs",
+     "cīvēs",
+     "arma",
+     "cēpērunt"
+    ]
+   },
+   {
+    "prompt": "The forest, full of wild beasts, terrified the travelers.",
+    "answer": "Silva, ferārum plēna, viātōrēs terruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Silva",
+     "ferārum",
+     "plēna",
+     "viātōrēs",
+     "terruit"
+    ]
+   },
+   {
+    "prompt": "This virtue is characteristic of a wise man.",
+    "answer": "Haec virtūs sapientis propria est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "virtūs",
+     "sapientis",
+     "propria",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-204-genitive-with-adjectives-t10",
+  "sectionId": "bn-204-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "Eager for glory, the young soldier scaled the wall.",
+    "answer": "Glōriae appetēns, mīles iuvenis mūrum ascendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Glōriae",
+     "appetēns",
+     "mīles",
+     "iuvenis",
+     "mūrum",
+     "ascendit"
+    ]
+   },
+   {
+    "prompt": "Unaccustomed to toil, the wealthy youths quickly grew tired.",
+    "answer": "Labōris īnsuētī, iuvenēs dīvitēs celeriter dēfessī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Labōris",
+     "īnsuētī",
+     "iuvenēs",
+     "dīvitēs",
+     "celeriter",
+     "dēfessī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The teacher, desirous of learning, read many books each day.",
+    "answer": "Magister, discendī studiōsus, multōs librōs cotīdiē lēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "discendī",
+     "studiōsus",
+     "multōs",
+     "librōs",
+     "cotīdiē",
+     "lēgit"
+    ]
+   },
+   {
+    "prompt": "Fear of death is common to all mortals.",
+    "answer": "Mortis timor omnium mortālium commūnis est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mortis",
+     "timor",
+     "omnium",
+     "mortālium",
+     "commūnis",
+     "est"
+    ]
+   }
+  ]
  }
 ]

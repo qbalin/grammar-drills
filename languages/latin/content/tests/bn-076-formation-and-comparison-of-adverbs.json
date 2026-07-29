@@ -662,5 +662,127 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-076-formation-and-comparison-of-adverbs-t13",
+  "sectionId": "bn-076-formation-and-comparison-of-adverbs",
+  "questions": [
+   {
+    "prompt": "The wise leader governed the allied states most prudently.",
+    "answer": "Dux sapiēns cīvitātēs sociās prūdentissimē rēxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "sapiēns",
+     "cīvitātēs",
+     "sociās",
+     "prūdentissimē",
+     "rēxit"
+    ]
+   },
+   {
+    "prompt": "The merchant frequently and secretly filled his chest with coins.",
+    "answer": "Mercātor arcam nummīs crēbrō et occultē implēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "arcam",
+     "nummīs",
+     "crēbrō",
+     "et",
+     "occultē",
+     "implēbat"
+    ]
+   },
+   {
+    "prompt": "The soldiers, having endured hardships bravely, returned home rather late.",
+    "answer": "Mīlitēs, labōrēs fortiter passī, domum sērius revertērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "labōrēs",
+     "fortiter",
+     "passī",
+     "domum",
+     "sērius",
+     "revertērunt"
+    ]
+   },
+   {
+    "prompt": "The maiden was weaving the soft wool skillfully and quickly.",
+    "answer": "Virgō mollem lānam sollerter cito texēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "mollem",
+     "lānam",
+     "sollerter",
+     "cito",
+     "texēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-076-formation-and-comparison-of-adverbs-t14",
+  "sectionId": "bn-076-formation-and-comparison-of-adverbs",
+  "questions": [
+   {
+    "prompt": "The general drew up the battle line more boldly than he was accustomed.",
+    "answer": "Imperātor aciem audācius quam solēbat īnstrūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "aciem",
+     "audācius",
+     "quam",
+     "solēbat",
+     "īnstrūxit"
+    ]
+   },
+   {
+    "prompt": "The messenger announced the sad news gently and briefly.",
+    "answer": "Nūntius trīstem rem lēniter et breviter nūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "trīstem",
+     "rem",
+     "lēniter",
+     "et",
+     "breviter",
+     "nūntiāvit"
+    ]
+   },
+   {
+    "prompt": "The young man, who had lived worthlessly, afterward toiled most diligently.",
+    "answer": "Adulēscēns, quī nēquiter vīxerat, posteā dīligentissimē labōrāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adulēscēns",
+     "quī",
+     "nēquiter",
+     "vīxerat",
+     "posteā",
+     "dīligentissimē",
+     "labōrāvit"
+    ]
+   },
+   {
+    "prompt": "We suffered less than our enemies, but we conquered more gloriously.",
+    "answer": "Minus quam hostēs passī sumus, sed glōriōsius vīcimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Minus",
+     "quam",
+     "hostēs",
+     "passī",
+     "sumus",
+     "sed",
+     "glōriōsius",
+     "vīcimus"
+    ]
+   }
+  ]
  }
 ]

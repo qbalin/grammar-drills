@@ -347,5 +347,183 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-169-appositives-t7",
+  "sectionId": "bn-169-appositives",
+  "questions": [
+   {
+    "prompt": "Romulus, the founder of the city, was worshipped as a god.",
+    "answer": "Rōmulus, conditor urbis, ut deus colēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rōmulus",
+     "conditor",
+     "urbis",
+     "ut",
+     "deus",
+     "colēbātur"
+    ]
+   },
+   {
+    "prompt": "The poet praised Athens, the home of wisdom, in his song.",
+    "answer": "Poēta Athēnās, domicilium sapientiae, carmine laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "Athēnās",
+     "domicilium",
+     "sapientiae",
+     "carmine",
+     "laudāvit"
+    ]
+   },
+   {
+    "prompt": "Cato, a man of great severity, censured the luxury of the nobles.",
+    "answer": "Catō, vir magnae sevēritātis, lūxuriam nōbilium reprehendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catō",
+     "vir",
+     "magnae",
+     "sevēritātis",
+     "lūxuriam",
+     "nōbilium",
+     "reprehendit"
+    ]
+   },
+   {
+    "prompt": "The Greeks feared Darius, king of the Persians, crossing the sea.",
+    "answer": "Graecī Darīum, rēgem Persārum, mare trānseuntem timēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Graecī",
+     "Darīum",
+     "rēgem",
+     "Persārum",
+     "mare",
+     "trānseuntem",
+     "timēbant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-169-appositives-t8",
+  "sectionId": "bn-169-appositives",
+  "questions": [
+   {
+    "prompt": "Nature, the best guide, teaches us to live rightly.",
+    "answer": "Nātūra, optima dux, nōs rēctē vīvere docet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nātūra",
+     "optima",
+     "dux",
+     "nōs",
+     "rēctē",
+     "vīvere",
+     "docet"
+    ]
+   },
+   {
+    "prompt": "We visited Syracuse, a most beautiful city of Sicily.",
+    "answer": "Syrācūsās, pulcherrimam Siciliae urbem, vīsimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Syrācūsās",
+     "pulcherrimam",
+     "Siciliae",
+     "urbem",
+     "vīsimus"
+    ]
+   },
+   {
+    "prompt": "Scipio, the conqueror of Carthage, was honored with a triumph.",
+    "answer": "Scīpiō, victor Carthāginis, triumphō honōrātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scīpiō",
+     "victor",
+     "Carthāginis",
+     "triumphō",
+     "honōrātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The enemies, the boldest of all, attacked the camp by night.",
+    "answer": "Hostēs, audācissimus quisque, castra nocte oppugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostēs",
+     "audācissimus",
+     "quisque",
+     "castra",
+     "nocte",
+     "oppugnāvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-169-appositives-t9",
+  "sectionId": "bn-169-appositives",
+  "questions": [
+   {
+    "prompt": "Sulla, a cruel dictator, filled Rome with fear.",
+    "answer": "Sulla, dictātor crūdēlis, Rōmam metū complēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sulla",
+     "dictātor",
+     "crūdēlis",
+     "Rōmam",
+     "metū",
+     "complēvit"
+    ]
+   },
+   {
+    "prompt": "The old men admired Solon, the wisest lawgiver of the Athenians.",
+    "answer": "Senēs Solōnem, sapientissimum Athēniēnsium lēgum lātōrem, admīrābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senēs",
+     "Solōnem",
+     "sapientissimum",
+     "Athēniēnsium",
+     "lēgum",
+     "lātōrem",
+     "admīrābantur"
+    ]
+   },
+   {
+    "prompt": "Fortune, the mistress of human affairs, often deceives the proud.",
+    "answer": "Fortūna, domina rērum hūmānārum, superbōs saepe fallit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fortūna",
+     "domina",
+     "rērum",
+     "hūmānārum",
+     "superbōs",
+     "saepe",
+     "fallit"
+    ]
+   },
+   {
+    "prompt": "We came to Thebes, an ancient city of Boeotia, in summer.",
+    "answer": "Thēbās, antīquam Boeōtiae urbem, aestāte vēnimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Thēbās",
+     "antīquam",
+     "Boeōtiae",
+     "urbem",
+     "aestāte",
+     "vēnimus"
+    ]
+   }
+  ]
  }
 ]

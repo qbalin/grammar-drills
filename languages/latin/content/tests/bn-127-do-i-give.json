@@ -340,5 +340,136 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-127-do-i-give-t7",
+  "sectionId": "bn-127-do-i-give",
+  "questions": [
+   {
+    "prompt": "Having steered the ship through the storm, the helmsman gave a signal to the frightened crew.",
+    "answer": "Gubernātor, nāve per tempestātem gubernātā, sociīs trepidīs signum dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gubernātor",
+     "nāve",
+     "per",
+     "tempestātem",
+     "gubernātā",
+     "sociīs",
+     "trepidīs",
+     "signum",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "The stars give light to the travelers wandering in the dark night.",
+    "answer": "Stēllae lūmen viātōribus in nocte obscūrā errantibus dant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Stēllae",
+     "lūmen",
+     "viātōribus",
+     "in",
+     "nocte",
+     "obscūrā",
+     "errantibus",
+     "dant"
+    ]
+   },
+   {
+    "prompt": "You will give a just punishment to the enemy who inflicted so great an injury.",
+    "answer": "Poenam iūstam hostī dabis quī tantam iniūriam intulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poenam",
+     "iūstam",
+     "hostī",
+     "dabis",
+     "quī",
+     "tantam",
+     "iniūriam",
+     "intulit"
+    ]
+   },
+   {
+    "prompt": "Although we had given many gifts, the greedy man demanded more.",
+    "answer": "Quamquam multa dōna dederāmus, avārus plūra poposcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "multa",
+     "dōna",
+     "dederāmus",
+     "avārus",
+     "plūra",
+     "poposcit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-127-do-i-give-t8",
+  "sectionId": "bn-127-do-i-give",
+  "questions": [
+   {
+    "prompt": "The brave woman gives her hand to the trembling boy so that he may not be afraid.",
+    "answer": "Fēmina fortis manum puerō trementī dat nē timeat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fēmina",
+     "fortis",
+     "manum",
+     "puerō",
+     "trementī",
+     "dat",
+     "nē",
+     "timeat"
+    ]
+   },
+   {
+    "prompt": "If the general had given the signal earlier, the wounded would have been saved.",
+    "answer": "Sī dux signum mātūrius dedisset, vulnerātī servātī essent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "dux",
+     "signum",
+     "mātūrius",
+     "dedisset",
+     "vulnerātī",
+     "servātī",
+     "essent"
+    ]
+   },
+   {
+    "prompt": "The art of giving well delights both the giver and the one receiving.",
+    "answer": "Ars bene dandī et datōrem et accipientem dēlectat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ars",
+     "bene",
+     "dandī",
+     "et",
+     "datōrem",
+     "accipientem",
+     "dēlectat"
+    ]
+   },
+   {
+    "prompt": "When you have given the reward, the glad soldiers will return to the camp.",
+    "answer": "Cum praemium dederis, mīlitēs laetī in castra redībunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "praemium",
+     "dederis",
+     "mīlitēs",
+     "laetī",
+     "in",
+     "castra",
+     "redībunt"
+    ]
+   }
+  ]
  }
 ]

@@ -380,5 +380,133 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-097-verb-stems-t8",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "When the guest had watered the thirsty horses, he set out through the dark forest.",
+    "answer": "Cum hospes equōs sitientēs rigāvisset, per silvam obscūram profectus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "hospes",
+     "equōs",
+     "sitientēs",
+     "rigāvisset",
+     "per",
+     "silvam",
+     "obscūram",
+     "profectus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The witness had bound the captive with chains before the judge arrived.",
+    "answer": "Testis captīvum catēnīs obligāverat priusquam iūdex advēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "captīvum",
+     "catēnīs",
+     "obligāverat",
+     "priusquam",
+     "iūdex",
+     "advēnit"
+    ]
+   },
+   {
+    "prompt": "By dawn the soldiers will have surrounded the walls of the hostile city.",
+    "answer": "Prīmā lūce mīlitēs moenia urbis hostīlis cīnxerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmā",
+     "lūce",
+     "mīlitēs",
+     "moenia",
+     "urbis",
+     "hostīlis",
+     "cīnxerint"
+    ]
+   },
+   {
+    "prompt": "The parsimonious old man had hidden his gold in a hollow tree.",
+    "answer": "Senex parcus aurum suum in arbore cavā abdiderat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "parcus",
+     "aurum",
+     "suum",
+     "in",
+     "arbore",
+     "cavā",
+     "abdiderat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-097-verb-stems-t9",
+  "sectionId": "bn-097-verb-stems",
+  "questions": [
+   {
+    "prompt": "The gifts, brought back by the returning envoys, delighted the king.",
+    "answer": "Dōna ā lēgātīs redeuntibus relāta rēgem dēlectāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dōna",
+     "ā",
+     "lēgātīs",
+     "redeuntibus",
+     "relāta",
+     "rēgem",
+     "dēlectāvērunt"
+    ]
+   },
+   {
+    "prompt": "This deed is dreadful to see and dreadful to relate.",
+    "answer": "Hoc facinus dīrum vīsū et dīrum dictū est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "facinus",
+     "dīrum",
+     "vīsū",
+     "et",
+     "dictū",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The general promised that the bridge would be built within a few days.",
+    "answer": "Dux pontem paucīs diēbus aedificātum īrī prōmīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "pontem",
+     "paucīs",
+     "diēbus",
+     "aedificātum",
+     "īrī",
+     "prōmīsit"
+    ]
+   },
+   {
+    "prompt": "About to cross the sea, the merchants bound the ropes to the mast.",
+    "answer": "Pelagus trānsitūrī mercātōrēs fūnēs ad mālum nexuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pelagus",
+     "trānsitūrī",
+     "mercātōrēs",
+     "fūnēs",
+     "ad",
+     "mālum",
+     "nexuērunt"
+    ]
+   }
+  ]
  }
 ]

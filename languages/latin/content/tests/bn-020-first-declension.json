@@ -734,5 +734,136 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-020-first-declension-t14",
+  "sectionId": "bn-020-first-declension",
+  "questions": [
+   {
+    "prompt": "The farmer's daughters drew water from the deep spring with great care.",
+    "answer": "Fīliae agricolae aquam ē fonte altō magnā cūrā hausērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fīliae",
+     "agricolae",
+     "aquam",
+     "ē",
+     "fonte",
+     "altō",
+     "magnā",
+     "cūrā",
+     "hausērunt"
+    ]
+   },
+   {
+    "prompt": "Through the gates of the town the frightened crowd fled from the flames.",
+    "answer": "Per portās oppidī turba territa ā flammīs fūgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Per",
+     "portās",
+     "oppidī",
+     "turba",
+     "territa",
+     "ā",
+     "flammīs",
+     "fūgit"
+    ]
+   },
+   {
+    "prompt": "The sailor, deceived by his friend's treachery, lost his money and his fame.",
+    "answer": "Nauta, amīcae fraude dēceptus, pecūniam et fāmam āmīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nauta",
+     "amīcae",
+     "fraude",
+     "dēceptus",
+     "pecūniam",
+     "et",
+     "fāmam",
+     "āmīsit"
+    ]
+   },
+   {
+    "prompt": "For their daughters the mothers offered gifts to the goddesses with humble prayers.",
+    "answer": "Prō fīliābus mātrēs deābus dōna supplicibus precibus obtulērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prō",
+     "fīliābus",
+     "mātrēs",
+     "deābus",
+     "dōna",
+     "supplicibus",
+     "precibus",
+     "obtulērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-020-first-declension-t15",
+  "sectionId": "bn-020-first-declension",
+  "questions": [
+   {
+    "prompt": "At Rome the poets praised the queen's daring with many songs.",
+    "answer": "Rōmae poētae rēgīnae audāciam multīs carminibus laudāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rōmae",
+     "poētae",
+     "rēgīnae",
+     "audāciam",
+     "multīs",
+     "carminibus",
+     "laudāvērunt"
+    ]
+   },
+   {
+    "prompt": "The farmer feared the goddess's anger more than the storms of winter.",
+    "answer": "Agricola īram deae magis quam hiemis tempestātēs timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "īram",
+     "deae",
+     "magis",
+     "quam",
+     "hiemis",
+     "tempestātēs",
+     "timēbat"
+    ]
+   },
+   {
+    "prompt": "When the flames had destroyed the huts, the inhabitants sought a new homeland.",
+    "answer": "Cum flammae casās dēlēvissent, incolae novam patriam petīvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "flammae",
+     "casās",
+     "dēlēvissent",
+     "incolae",
+     "novam",
+     "patriam",
+     "petīvērunt"
+    ]
+   },
+   {
+    "prompt": "The sailors, saved by fortune, dedicated an altar to the goddess of the sea.",
+    "answer": "Nautae, fortūnā servātī, āram deae maris dēdicāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nautae",
+     "fortūnā",
+     "servātī",
+     "āram",
+     "deae",
+     "maris",
+     "dēdicāvērunt"
+    ]
+   }
+  ]
  }
 ]
