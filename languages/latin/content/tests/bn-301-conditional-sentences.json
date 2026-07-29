@@ -729,5 +729,871 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t13",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If you pursue wisdom, you will find true glory.",
+    "answer": "Sī sapientiam petēs, vēram glōriam inveniēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "sapientiam",
+     "petēs",
+     "vēram",
+     "glōriam",
+     "inveniēs"
+    ]
+   },
+   {
+    "prompt": "If the rivers overflow, the farmers abandon their ploughed fields.",
+    "answer": "Sī flūmina redundant, agricolae arva relinquunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "flūmina",
+     "redundant",
+     "agricolae",
+     "arva",
+     "relinquunt"
+    ]
+   },
+   {
+    "prompt": "If any horseman fell, his comrades used to gather around him.",
+    "answer": "Sī quis eques cecidērat, comitēs circumsistēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quis",
+     "eques",
+     "cecidērat",
+     "comitēs",
+     "circumsistēbant"
+    ]
+   },
+   {
+    "prompt": "If you have read the poet's scroll, you know his genius.",
+    "answer": "Sī poētae volūmen lēgistī, ingenium eius nōscis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "poētae",
+     "volūmen",
+     "lēgistī",
+     "ingenium",
+     "eius",
+     "nōscis"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t14",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If you should describe all the wars, time would fail you.",
+    "answer": "Sī omnia bella dēscrībās, tempus tē dēficiat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "omnia",
+     "bella",
+     "dēscrībās",
+     "tempus",
+     "tē",
+     "dēficiat"
+    ]
+   },
+   {
+    "prompt": "If anyone should deny the truth, he would deceive himself.",
+    "answer": "Sī quis vēritātem neget, sē ipsum fallat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quis",
+     "vēritātem",
+     "neget",
+     "sē",
+     "ipsum",
+     "fallat"
+    ]
+   },
+   {
+    "prompt": "If the citizens should neglect the laws, the republic would perish.",
+    "answer": "Sī cīvēs lēgēs neglegant, rēs pūblica pereat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "cīvēs",
+     "lēgēs",
+     "neglegant",
+     "rēs",
+     "pūblica",
+     "pereat"
+    ]
+   },
+   {
+    "prompt": "If you should ask the philosopher, he would answer prudently.",
+    "answer": "Sī philosophum rogēs, prūdenter respondeat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "philosophum",
+     "rogēs",
+     "prūdenter",
+     "respondeat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t15",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If my friends were present, I would not lack help.",
+    "answer": "Sī amīcī adessent, auxiliō nōn egērem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "amīcī",
+     "adessent",
+     "auxiliō",
+     "nōn",
+     "egērem"
+    ]
+   },
+   {
+    "prompt": "If wisdom accomplished nothing, it would not be sought after.",
+    "answer": "Sī sapientia nihil efficeret, nōn expeterētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "sapientia",
+     "nihil",
+     "efficeret",
+     "nōn",
+     "expeterētur"
+    ]
+   },
+   {
+    "prompt": "Unless I loved my country, I would be hard-hearted.",
+    "answer": "Nisi patriam amārem, ferreus essem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "patriam",
+     "amārem",
+     "ferreus",
+     "essem"
+    ]
+   },
+   {
+    "prompt": "If the fields were fertile, the farmer would rejoice in a rich harvest.",
+    "answer": "Sī arva fēcunda essent, agricola dīvite messe gaudēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "arva",
+     "fēcunda",
+     "essent",
+     "agricola",
+     "dīvite",
+     "messe",
+     "gaudēret"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t16",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If you had exercised your memory, you would not have forgotten the names.",
+    "answer": "Sī memoriam exercuissēs, nōmina nōn oblītus essēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "memoriam",
+     "exercuissēs",
+     "nōmina",
+     "nōn",
+     "oblītus",
+     "essēs"
+    ]
+   },
+   {
+    "prompt": "If the walls had been higher, the enemy would not have taken the city.",
+    "answer": "Sī moenia altiōra fuissent, hostēs urbem nōn cēpissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "moenia",
+     "altiōra",
+     "fuissent",
+     "hostēs",
+     "urbem",
+     "nōn",
+     "cēpissent"
+    ]
+   },
+   {
+    "prompt": "Unless a storm had arisen, the oarsmen would have reached the harbor.",
+    "answer": "Nisi tempestās orta esset, rēmigēs portum attigissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "tempestās",
+     "orta",
+     "esset",
+     "rēmigēs",
+     "portum",
+     "attigissent"
+    ]
+   },
+   {
+    "prompt": "If the leader had heard the shouts, he would have sent aid at once.",
+    "answer": "Sī dux clāmōrēs audīvisset, statim auxilium mīsisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "dux",
+     "clāmōrēs",
+     "audīvisset",
+     "statim",
+     "auxilium",
+     "mīsisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t17",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "He speaks as if he knew all things.",
+    "answer": "Loquitur quasi omnia sciat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Loquitur",
+     "quasi",
+     "omnia",
+     "sciat"
+    ]
+   },
+   {
+    "prompt": "The boy was trembling, as though the enemy were already at the gates.",
+    "answer": "Puer tremēbat, velut sī hostis iam ad portās esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puer",
+     "tremēbat",
+     "velut",
+     "sī",
+     "hostis",
+     "iam",
+     "ad",
+     "portās",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "You command me as though you had bought me with money.",
+    "answer": "Mihi imperās tamquam mē argentō ēmerīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mihi",
+     "imperās",
+     "tamquam",
+     "mē",
+     "argentō",
+     "ēmerīs"
+    ]
+   },
+   {
+    "prompt": "She was weeping as if she had lost her only son.",
+    "answer": "Flēbat quasi ūnicum fīlium āmīsisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Flēbat",
+     "quasi",
+     "ūnicum",
+     "fīlium",
+     "āmīsisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t18",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "However much the tyrant may threaten, the brave man does not yield.",
+    "answer": "Quamvīs tyrannus minētur, vir fortis nōn cēdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamvīs",
+     "tyrannus",
+     "minētur",
+     "vir",
+     "fortis",
+     "nōn",
+     "cēdit"
+    ]
+   },
+   {
+    "prompt": "Although the soldiers were weary, they pressed on through the night.",
+    "answer": "Quamquam mīlitēs fessī erant, per noctem contendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "mīlitēs",
+     "fessī",
+     "erant",
+     "per",
+     "noctem",
+     "contendērunt"
+    ]
+   },
+   {
+    "prompt": "If the rumor is true, let me flee; but if false, let me stay.",
+    "answer": "Sī fāma vēra est, fugiam; sīn falsa, maneam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "fāma",
+     "vēra",
+     "est",
+     "fugiam",
+     "sīn",
+     "falsa",
+     "maneam"
+    ]
+   },
+   {
+    "prompt": "Let the enemy rage, provided that the walls remain firm.",
+    "answer": "Saeviant hostēs, dummodo moenia firma maneant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Saeviant",
+     "hostēs",
+     "dummodo",
+     "moenia",
+     "firma",
+     "maneant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t19",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If the general trusts his own scouts, he moves the camp before dawn.",
+    "answer": "Sī dux explōrātōribus suīs cōnfīdit, castra ante lūcem movet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "dux",
+     "explōrātōribus",
+     "suīs",
+     "cōnfīdit",
+     "castra",
+     "ante",
+     "lūcem",
+     "movet"
+    ]
+   },
+   {
+    "prompt": "If you have read the poet's verses, you know his grief.",
+    "answer": "Sī versūs poētae lēgistī, dolōrem eius nōvistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "versūs",
+     "poētae",
+     "lēgistī",
+     "dolōrem",
+     "eius",
+     "nōvistī"
+    ]
+   },
+   {
+    "prompt": "If the fields are fertile, the farmers will gather abundant grain.",
+    "answer": "Sī agrī fēcundī sunt, agricolae frūmentum abundāns colligent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "agrī",
+     "fēcundī",
+     "sunt",
+     "agricolae",
+     "frūmentum",
+     "abundāns",
+     "colligent"
+    ]
+   },
+   {
+    "prompt": "If the winds were favorable, the merchants used to set out for the island.",
+    "answer": "Sī ventī secundī erant, mercātōrēs ad īnsulam proficīscēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "ventī",
+     "secundī",
+     "erant",
+     "mercātōrēs",
+     "ad",
+     "īnsulam",
+     "proficīscēbantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t20",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If you should trust a deceitful friend, you would err gravely.",
+    "answer": "Sī amīcō fallācī crēdās, graviter errēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "amīcō",
+     "fallācī",
+     "crēdās",
+     "graviter",
+     "errēs"
+    ]
+   },
+   {
+    "prompt": "If the king should demand tribute, the citizens would seize their arms.",
+    "answer": "Sī rēx tribūtum poscat, cīvēs arma capiant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "rēx",
+     "tribūtum",
+     "poscat",
+     "cīvēs",
+     "arma",
+     "capiant"
+    ]
+   },
+   {
+    "prompt": "If I should wish to recount all his crimes, the day would fail me.",
+    "answer": "Sī omnia eius scelera nārrāre velim, diēs mē dēficiat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "omnia",
+     "eius",
+     "scelera",
+     "nārrāre",
+     "velim",
+     "diēs",
+     "mē",
+     "dēficiat"
+    ]
+   },
+   {
+    "prompt": "If the enemy should cross the river, let us defend the walls bravely.",
+    "answer": "Sī hostis flūmen trānseat, moenia fortiter dēfendāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "hostis",
+     "flūmen",
+     "trānseat",
+     "moenia",
+     "fortiter",
+     "dēfendāmus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t21",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If the consul were wiser, he would not fear the anger of the people.",
+    "answer": "Sī cōnsul sapientior esset, populī īram nōn timēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "cōnsul",
+     "sapientior",
+     "esset",
+     "populī",
+     "īram",
+     "nōn",
+     "timēret"
+    ]
+   },
+   {
+    "prompt": "If the merchants had foreseen the shipwreck, they would have remained on land.",
+    "answer": "Sī mercātōrēs naufragium prōvīdissent, in terrā mānsissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "mercātōrēs",
+     "naufragium",
+     "prōvīdissent",
+     "in",
+     "terrā",
+     "mānsissent"
+    ]
+   },
+   {
+    "prompt": "If wisdom accomplished nothing, it would not be sought by the wise.",
+    "answer": "Sī sapientia nihil efficeret, ā sapientibus nōn expeterētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "sapientia",
+     "nihil",
+     "efficeret",
+     "ā",
+     "sapientibus",
+     "nōn",
+     "expeterētur"
+    ]
+   },
+   {
+    "prompt": "If you had guarded the letters carefully, the secret would not have been betrayed.",
+    "answer": "Sī litterās dīligenter custōdīvissēs, arcānum nōn prōditum esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "litterās",
+     "dīligenter",
+     "custōdīvissēs",
+     "arcānum",
+     "nōn",
+     "prōditum",
+     "esset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t22",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "Unless the guards keep watch, the citadel will be captured by night.",
+    "answer": "Nisi custōdēs vigilant, arx nocte capiētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "custōdēs",
+     "vigilant",
+     "arx",
+     "nocte",
+     "capiētur"
+    ]
+   },
+   {
+    "prompt": "Unless the physician had come quickly, the boy would have perished.",
+    "answer": "Nisi medicus celeriter vēnisset, puer periisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "medicus",
+     "celeriter",
+     "vēnisset",
+     "puer",
+     "periisset"
+    ]
+   },
+   {
+    "prompt": "If you do it, I shall be grateful; if you do not do it, I shall pardon you.",
+    "answer": "Sī fēceris, grātiam habēbō; sī nōn fēceris, ignōscam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "fēceris",
+     "grātiam",
+     "habēbō",
+     "nōn",
+     "ignōscam"
+    ]
+   },
+   {
+    "prompt": "If the road is safe, we will hasten; but if it is dangerous, we will stay in the camp.",
+    "answer": "Sī via tūta est, contendēmus; sīn perīculōsa, in castrīs manēbimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "via",
+     "tūta",
+     "est",
+     "contendēmus",
+     "sīn",
+     "perīculōsa",
+     "in",
+     "castrīs",
+     "manēbimus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t23",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "The old man speaks as if he himself had seen the whole war.",
+    "answer": "Senex ita loquitur quasi tōtum bellum ipse vīdisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "ita",
+     "loquitur",
+     "quasi",
+     "tōtum",
+     "bellum",
+     "ipse",
+     "vīdisset"
+    ]
+   },
+   {
+    "prompt": "The soldiers fled as if the enemy were already at the gates.",
+    "answer": "Mīlitēs fūgērunt velut sī hostis iam ad portās esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "fūgērunt",
+     "velut",
+     "sī",
+     "hostis",
+     "iam",
+     "ad",
+     "portās",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "The heir rejoices as though he had received a great inheritance.",
+    "answer": "Hērēs gaudet tamquam magnam hērēditātem accēperit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hērēs",
+     "gaudet",
+     "tamquam",
+     "magnam",
+     "hērēditātem",
+     "accēperit"
+    ]
+   },
+   {
+    "prompt": "The new consul gives orders as if he commanded the whole army.",
+    "answer": "Novus cōnsul imperat quasi tōtum exercitum regat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Novus",
+     "cōnsul",
+     "imperat",
+     "quasi",
+     "tōtum",
+     "exercitum",
+     "regat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t24",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "Granted that he is poor, yet he is an honest man.",
+    "answer": "Sit pauper, tamen probus vir est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sit",
+     "pauper",
+     "tamen",
+     "probus",
+     "vir",
+     "est"
+    ]
+   },
+   {
+    "prompt": "However much the tyrant may threaten, the free man does not fear.",
+    "answer": "Quamvīs tyrannus minētur, līber homō nōn timet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamvīs",
+     "tyrannus",
+     "minētur",
+     "līber",
+     "homō",
+     "nōn",
+     "timet"
+    ]
+   },
+   {
+    "prompt": "Although all men praise justice, few cultivate it.",
+    "answer": "Quamquam omnēs iūstitiam laudant, paucī eam colunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "omnēs",
+     "iūstitiam",
+     "laudant",
+     "paucī",
+     "eam",
+     "colunt"
+    ]
+   },
+   {
+    "prompt": "Let the citizens hate the leader, provided only that they fear the laws.",
+    "answer": "Ōderint cīvēs ducem, dum lēgēs metuant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōderint",
+     "cīvēs",
+     "ducem",
+     "dum",
+     "lēgēs",
+     "metuant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t25",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If the shepherd leads the lambs across the river, the wolves will not seize them.",
+    "answer": "Sī pāstor agnōs trāns flūmen dūcet, lupī eōs nōn rapient.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "pāstor",
+     "agnōs",
+     "trāns",
+     "flūmen",
+     "dūcet",
+     "lupī",
+     "eōs",
+     "nōn",
+     "rapient"
+    ]
+   },
+   {
+    "prompt": "If you should touch the serpent, you would die at once.",
+    "answer": "Sī anguem tangās, statim moriāris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "anguem",
+     "tangās",
+     "statim",
+     "moriāris"
+    ]
+   },
+   {
+    "prompt": "If the robber had set the fields on fire, the master would have punished him harshly.",
+    "answer": "Sī latrō agrōs incendisset, dominus eum graviter pūnīvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "latrō",
+     "agrōs",
+     "incendisset",
+     "dominus",
+     "eum",
+     "graviter",
+     "pūnīvisset"
+    ]
+   },
+   {
+    "prompt": "She mourns as though her son had been slain in battle.",
+    "answer": "Lūget quasi fīlius in proeliō caesus esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lūget",
+     "quasi",
+     "fīlius",
+     "in",
+     "proeliō",
+     "caesus",
+     "esset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-t26",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "If you detest cruelty, you love justice.",
+    "answer": "Sī crūdēlitātem dētestāris, jūstitiam amās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "crūdēlitātem",
+     "dētestāris",
+     "jūstitiam",
+     "amās"
+    ]
+   },
+   {
+    "prompt": "If the sick man were stronger, he would set out for Rome.",
+    "answer": "Sī aeger fortior esset, Rōmam proficīscerētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "aeger",
+     "fortior",
+     "esset",
+     "Rōmam",
+     "proficīscerētur"
+    ]
+   },
+   {
+    "prompt": "If the queen should hear these words, she would doubt our loyalty.",
+    "answer": "Sī rēgīna haec verba audiat, dē fidē nostrā dubitet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "rēgīna",
+     "haec",
+     "verba",
+     "audiat",
+     "dē",
+     "fidē",
+     "nostrā",
+     "dubitet"
+    ]
+   },
+   {
+    "prompt": "Unless the farmer had guarded the oxen, robbers would have driven them off.",
+    "answer": "Nisi agricola bovēs custōdīvisset, latrōnēs eōs abēgissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "agricola",
+     "bovēs",
+     "custōdīvisset",
+     "latrōnēs",
+     "eōs",
+     "abēgissent"
+    ]
+   }
+  ]
  }
 ]

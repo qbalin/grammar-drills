@@ -295,5 +295,1077 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t7",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The farmer sowed the fields and watered the tender vines.",
+    "answer": "Agricola agrōs sēmināvit tenerāsque vītēs rigāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "agrōs",
+     "sēmināvit",
+     "tenerās",
+     "que",
+     "vītēs",
+     "rigāvit"
+    ]
+   },
+   {
+    "prompt": "The physician restored the sick man's health and indeed strengthened his weary limbs.",
+    "answer": "Medicus valētūdinem aegrī refēcit atque fessa membra corrōborāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Medicus",
+     "valētūdinem",
+     "aegrī",
+     "refēcit",
+     "atque",
+     "fessa",
+     "membra",
+     "corrōborāvit"
+    ]
+   },
+   {
+    "prompt": "The exhausted sparrow sang no longer and did not fly.",
+    "answer": "Passer fessus nōn iam cecinit neque volāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Passer",
+     "fessus",
+     "nōn",
+     "iam",
+     "cecinit",
+     "neque",
+     "volāvit"
+    ]
+   },
+   {
+    "prompt": "The orator recited the poem and stirred the whole crowd.",
+    "answer": "Ōrātor carmen recitāvit tōtamque turbam permōvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "carmen",
+     "recitāvit",
+     "tōtam",
+     "que",
+     "turbam",
+     "permōvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t8",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The young man is both eager for praise and greedy for glory.",
+    "answer": "Iuvenis et laudis cupidus et glōriae avidus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iuvenis",
+     "et",
+     "laudis",
+     "cupidus",
+     "glōriae",
+     "avidus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Neither fear nor grief could break the brave man's spirit.",
+    "answer": "Neque metus neque dolor fortis virī animum frangere potuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Neque",
+     "metus",
+     "dolor",
+     "fortis",
+     "virī",
+     "animum",
+     "frangere",
+     "potuit"
+    ]
+   },
+   {
+    "prompt": "The consul was distinguished both in war and at the same time in peace.",
+    "answer": "Cōnsul cum in bellō tum in pāce clārus fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "cum",
+     "in",
+     "bellō",
+     "tum",
+     "pāce",
+     "clārus",
+     "fuit"
+    ]
+   },
+   {
+    "prompt": "At one moment he praised the king, at another he blamed him.",
+    "answer": "Tum rēgem laudābat, tum eundem reprehendēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tum",
+     "rēgem",
+     "laudābat",
+     "eundem",
+     "reprehendēbat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t9",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The runaway must either conquer or perish by the sword.",
+    "answer": "Fugitīvō aut vincendum aut ferrō moriendum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fugitīvō",
+     "aut",
+     "vincendum",
+     "ferrō",
+     "moriendum",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The wandering star is named Venus or Lucifer.",
+    "answer": "Errāns sīdus Venus vel Lūcifer nōminātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Errāns",
+     "sīdus",
+     "Venus",
+     "vel",
+     "Lūcifer",
+     "nōminātur"
+    ]
+   },
+   {
+    "prompt": "Whether by force or by cunning, he will seize the citadel.",
+    "answer": "Sīve vī sīve dolō arcem capiet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sīve",
+     "vī",
+     "dolō",
+     "arcem",
+     "capiet"
+    ]
+   },
+   {
+    "prompt": "Grant me two or three days to finish the work.",
+    "answer": "Duōs trēsve diēs mihi dā ad opus perficiendum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Duōs",
+     "trēs",
+     "ve",
+     "diēs",
+     "mihi",
+     "dā",
+     "ad",
+     "opus",
+     "perficiendum"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t10",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The arguments were weak, but the speaker's eloquence was great.",
+    "answer": "Argūmenta īnfirma erant, sed ōrātōris ēloquentia magna.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Argūmenta",
+     "īnfirma",
+     "erant",
+     "sed",
+     "ōrātōris",
+     "ēloquentia",
+     "magna"
+    ]
+   },
+   {
+    "prompt": "The father, however, forgave his son's fault.",
+    "answer": "Pater autem fīliī culpam ignōvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pater",
+     "autem",
+     "fīliī",
+     "culpam",
+     "ignōvit"
+    ]
+   },
+   {
+    "prompt": "You promise much; but you accomplish nothing.",
+    "answer": "Multa pollicēris; at nihil efficis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Multa",
+     "pollicēris",
+     "at",
+     "nihil",
+     "efficis"
+    ]
+   },
+   {
+    "prompt": "Though wounded, the soldier nevertheless held his ground.",
+    "answer": "Vulnerātus mīles tamen locum tenuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vulnerātus",
+     "mīles",
+     "tamen",
+     "locum",
+     "tenuit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t11",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The roads were blocked; and so the army halted in the valley.",
+    "answer": "Viae obstrūctae erant; itaque exercitus in valle cōnstitit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Viae",
+     "obstrūctae",
+     "erant",
+     "itaque",
+     "exercitus",
+     "in",
+     "valle",
+     "cōnstitit"
+    ]
+   },
+   {
+    "prompt": "All men desire the good; therefore virtue must be sought.",
+    "answer": "Omnēs hominēs bonum cupiunt; ergō virtūs petenda est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnēs",
+     "hominēs",
+     "bonum",
+     "cupiunt",
+     "ergō",
+     "virtūs",
+     "petenda",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The witnesses disagree; the truth, therefore, lies hidden.",
+    "answer": "Testēs dissentiunt; vēritās igitur latet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testēs",
+     "dissentiunt",
+     "vēritās",
+     "igitur",
+     "latet"
+    ]
+   },
+   {
+    "prompt": "The citizens rejoiced, for the tyrant had at last been driven out.",
+    "answer": "Cīvēs gaudēbant, nam tyrannus tandem expulsus erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvēs",
+     "gaudēbant",
+     "nam",
+     "tyrannus",
+     "tandem",
+     "expulsus",
+     "erat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t12",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "From unbridled greed spring hatreds, discords, wars.",
+    "answer": "Ex effrēnātā cupiditāte odia, discordiae, bella nāscuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ex",
+     "effrēnātā",
+     "cupiditāte",
+     "odia",
+     "discordiae",
+     "bella",
+     "nāscuntur"
+    ]
+   },
+   {
+    "prompt": "Fields and woods and rivers were laid waste by the war.",
+    "answer": "Agrī et silvae et flūmina bellō vastāta sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agrī",
+     "et",
+     "silvae",
+     "flūmina",
+     "bellō",
+     "vastāta",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The leader summoned the horsemen, footsoldiers, and archers.",
+    "answer": "Dux equitēs, peditēs sagittāriōsque convocāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "equitēs",
+     "peditēs",
+     "sagittāriōs",
+     "que",
+     "convocāvit"
+    ]
+   },
+   {
+    "prompt": "The teacher praised not only the boy's diligence but also his modesty.",
+    "answer": "Magister nōn sōlum puerī dīligentiam sed etiam modestiam laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "nōn",
+     "sōlum",
+     "puerī",
+     "dīligentiam",
+     "sed",
+     "etiam",
+     "modestiam",
+     "laudāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t13",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The general both fortified the camp and encouraged the weary soldiers.",
+    "answer": "Dux et castra mūnīvit et fessōs mīlitēs cohortātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "et",
+     "castra",
+     "mūnīvit",
+     "fessōs",
+     "mīlitēs",
+     "cohortātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Neither the storm nor the darkness frightened the bold men.",
+    "answer": "Neque tempestās neque tenebrae audācēs virōs terruērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Neque",
+     "tempestās",
+     "neque",
+     "tenebrae",
+     "audācēs",
+     "virōs",
+     "terruērunt"
+    ]
+   },
+   {
+    "prompt": "Both the parents and the children wept when the city had fallen.",
+    "answer": "Et parentēs et līberī flēvērunt, cum urbs cecidisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Et",
+     "parentēs",
+     "et",
+     "līberī",
+     "flēvērunt",
+     "cum",
+     "urbs",
+     "cecidisset"
+    ]
+   },
+   {
+    "prompt": "The orator was at once eloquent and yet modest.",
+    "answer": "Ōrātor cum disertus tum modestus erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "cum",
+     "disertus",
+     "tum",
+     "modestus",
+     "erat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t14",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The parents and children returned home unharmed.",
+    "answer": "Parentēs līberīque incolumēs domum regressī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Parentēs",
+     "līberīque",
+     "incolumēs",
+     "domum",
+     "regressī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "Tossed about by heat and fever, the sick man could not sleep.",
+    "answer": "Aestū febrīque jactātus, aeger dormīre nōn poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aestū",
+     "febrīque",
+     "jactātus",
+     "aeger",
+     "dormīre",
+     "nōn",
+     "poterat"
+    ]
+   },
+   {
+    "prompt": "And on account of that thing the senate summoned the consul.",
+    "answer": "Ob eamque rem senātus cōnsulem arcessīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ob",
+     "eamque",
+     "rem",
+     "senātus",
+     "cōnsulem",
+     "arcessīvit"
+    ]
+   },
+   {
+    "prompt": "The soldiers seized their weapons and burst out of the gates.",
+    "answer": "Mīlitēs arma rapuērunt ex portīsque ērūpērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "arma",
+     "rapuērunt",
+     "ex",
+     "portīsque",
+     "ērūpērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t15",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The judge thinks the same as the law prescribes.",
+    "answer": "Jūdex idem sentit ac lēx praescrībit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Jūdex",
+     "idem",
+     "sentit",
+     "ac",
+     "lēx",
+     "praescrībit"
+    ]
+   },
+   {
+    "prompt": "The wise man acts not otherwise than he speaks.",
+    "answer": "Sapiēns haud aliter ac loquitur agit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "haud",
+     "aliter",
+     "ac",
+     "loquitur",
+     "agit"
+    ]
+   },
+   {
+    "prompt": "The enemy destroyed the fields and in fact the very homes.",
+    "answer": "Hostis agrōs atque ipsās domōs dēlēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostis",
+     "agrōs",
+     "atque",
+     "ipsās",
+     "domōs",
+     "dēlēvit"
+    ]
+   },
+   {
+    "prompt": "This danger is far other than the one we feared.",
+    "answer": "Hoc perīculum longē aliud est ac id quod timēbāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "perīculum",
+     "longē",
+     "aliud",
+     "est",
+     "ac",
+     "id",
+     "quod",
+     "timēbāmus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t16",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Either swift death or joyful victory awaits the brave.",
+    "answer": "Aut celeris mors aut laeta victōria fortēs manet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aut",
+     "celeris",
+     "mors",
+     "aut",
+     "laeta",
+     "victōria",
+     "fortēs",
+     "manet"
+    ]
+   },
+   {
+    "prompt": "This region is called aether or heaven.",
+    "answer": "Haec regiō aethēr vel caelum nōminātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "regiō",
+     "aethēr",
+     "vel",
+     "caelum",
+     "nōminātur"
+    ]
+   },
+   {
+    "prompt": "Whether by force or by cunning, the tyrant seized power.",
+    "answer": "Sīve vī sīve dolō tyrannus imperium occupāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sīve",
+     "vī",
+     "dolō",
+     "tyrannus",
+     "imperium",
+     "occupāvit"
+    ]
+   },
+   {
+    "prompt": "You might call him a friend or a companion.",
+    "answer": "Eum amīcum vel comitem appellēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eum",
+     "amīcum",
+     "vel",
+     "comitem",
+     "appellēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t17",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The road was long, but the travelers were not weary.",
+    "answer": "Via longa erat, sed viātōrēs nōn fessī erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Via",
+     "longa",
+     "erat",
+     "sed",
+     "viātōrēs",
+     "nōn",
+     "fessī",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "The soldiers were few; the enemy, however, was numerous.",
+    "answer": "Mīlitēs paucī erant; hostēs autem multī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "paucī",
+     "erant",
+     "hostēs",
+     "autem",
+     "multī"
+    ]
+   },
+   {
+    "prompt": "You say the war is finished; but the cities still burn.",
+    "answer": "Bellum cōnfectum esse dīcis; at urbēs adhūc ārdent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bellum",
+     "cōnfectum",
+     "esse",
+     "dīcis",
+     "at",
+     "urbēs",
+     "adhūc",
+     "ārdent"
+    ]
+   },
+   {
+    "prompt": "Though wounded, the leader nevertheless held his ground.",
+    "answer": "Vulnerātus dux tamen locum tenuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vulnerātus",
+     "dux",
+     "tamen",
+     "locum",
+     "tenuit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t18",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The roads were flooded; and so the merchants remained in the town.",
+    "answer": "Viae inundātae erant; itaque mercātōrēs in oppidō mānsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Viae",
+     "inundātae",
+     "erant",
+     "itaque",
+     "mercātōrēs",
+     "in",
+     "oppidō",
+     "mānsērunt"
+    ]
+   },
+   {
+    "prompt": "He fears nothing; therefore he will conquer his enemies.",
+    "answer": "Nihil timet; ergō hostēs suōs vincet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "timet",
+     "ergō",
+     "hostēs",
+     "suōs",
+     "vincet"
+    ]
+   },
+   {
+    "prompt": "The judge therefore condemned the deceitful witness.",
+    "answer": "Jūdex igitur fallācem testem damnāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Jūdex",
+     "igitur",
+     "fallācem",
+     "testem",
+     "damnāvit"
+    ]
+   },
+   {
+    "prompt": "The city surrendered, for the defenders had no hope left.",
+    "answer": "Urbs sē dēdidit; nūllam enim spem dēfēnsōrēs habēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Urbs",
+     "sē",
+     "dēdidit",
+     "nūllam",
+     "enim",
+     "spem",
+     "dēfēnsōrēs",
+     "habēbant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t19",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Both the soldiers and the citizens feared the threatening storm.",
+    "answer": "Et mīlitēs et cīvēs tempestātem imminentem timēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Et",
+     "mīlitēs",
+     "cīvēs",
+     "tempestātem",
+     "imminentem",
+     "timēbant"
+    ]
+   },
+   {
+    "prompt": "The consul strengthened the walls and armed the young men.",
+    "answer": "Cōnsul mūrōs firmāvit iuvenēsque armāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "mūrōs",
+     "firmāvit",
+     "iuvenēsque",
+     "armāvit"
+    ]
+   },
+   {
+    "prompt": "The king summoned the nobles and also the priests.",
+    "answer": "Rēx nōbilēs atque sacerdōtēs convocāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "nōbilēs",
+     "atque",
+     "sacerdōtēs",
+     "convocāvit"
+    ]
+   },
+   {
+    "prompt": "Neither the mother nor the daughters wept at the news.",
+    "answer": "Neque māter neque fīliae nūntiō flēvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Neque",
+     "māter",
+     "fīliae",
+     "nūntiō",
+     "flēvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t20",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The exiles must either flee across the mountains or die.",
+    "answer": "Exsulēs aut trāns montēs prōfugere aut morī dēbent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Exsulēs",
+     "aut",
+     "trāns",
+     "montēs",
+     "prōfugere",
+     "morī",
+     "dēbent"
+    ]
+   },
+   {
+    "prompt": "This place is called a grove or a sacred wood.",
+    "answer": "Hic locus vel lūcus vel silva sacra nōminātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "locus",
+     "vel",
+     "lūcus",
+     "silva",
+     "sacra",
+     "nōminātur"
+    ]
+   },
+   {
+    "prompt": "Bring two or three witnesses to the trial.",
+    "answer": "Duōs trēsve testēs ad iūdicium addūc.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Duōs",
+     "trēsve",
+     "testēs",
+     "ad",
+     "iūdicium",
+     "addūc"
+    ]
+   },
+   {
+    "prompt": "Whether by land or by sea, the merchant seeks profit.",
+    "answer": "Sīve terrā sīve marī mercātor lucrum petit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sīve",
+     "terrā",
+     "marī",
+     "mercātor",
+     "lucrum",
+     "petit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t21",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The gifts were splendid, but the mind of the king was cruel.",
+    "answer": "Dōna splendida erant, sed animus rēgis crūdēlis erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dōna",
+     "splendida",
+     "erant",
+     "sed",
+     "animus",
+     "rēgis",
+     "crūdēlis",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "The father praised the elder son; the younger, however, he scolded.",
+    "answer": "Pater fīlium maiōrem laudāvit; minōrem autem obiūrgāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pater",
+     "fīlium",
+     "maiōrem",
+     "laudāvit",
+     "minōrem",
+     "autem",
+     "obiūrgāvit"
+    ]
+   },
+   {
+    "prompt": "You praise riches; but I prefer virtue.",
+    "answer": "Tū dīvitiās laudās; at ego virtūtem antepōnō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tū",
+     "dīvitiās",
+     "laudās",
+     "at",
+     "ego",
+     "virtūtem",
+     "antepōnō"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t22",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The gates were shut; and so the travelers waited outside.",
+    "answer": "Portae clausae erant; itaque viātōrēs forīs exspectābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Portae",
+     "clausae",
+     "erant",
+     "itaque",
+     "viātōrēs",
+     "forīs",
+     "exspectābant"
+    ]
+   },
+   {
+    "prompt": "You have heard the witnesses; believe them, therefore.",
+    "answer": "Testēs audīvistī; crēde igitur eīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testēs",
+     "audīvistī",
+     "crēde",
+     "igitur",
+     "eīs"
+    ]
+   },
+   {
+    "prompt": "The farmer was rejoicing, for the harvest was abundant.",
+    "answer": "Agricola gaudēbat; nam messis larga erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "gaudēbat",
+     "nam",
+     "messis",
+     "larga",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "We must hurry, for night is approaching.",
+    "answer": "Festīnandum est; nox enim appropinquat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Festīnandum",
+     "est",
+     "nox",
+     "enim",
+     "appropinquat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t23",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The leader excelled both in war and especially in peace.",
+    "answer": "Dux cum in bellō tum in pāce praestābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "cum",
+     "in",
+     "bellō",
+     "tum",
+     "pāce",
+     "praestābat"
+    ]
+   },
+   {
+    "prompt": "Not only the boys but also the girls learned the song.",
+    "answer": "Nōn sōlum puerī sed etiam puellae carmen didicērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "sōlum",
+     "puerī",
+     "sed",
+     "etiam",
+     "puellae",
+     "carmen",
+     "didicērunt"
+    ]
+   },
+   {
+    "prompt": "The mountain is both steep and covered with snow.",
+    "answer": "Mōns et arduus et nive tēctus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mōns",
+     "et",
+     "arduus",
+     "nive",
+     "tēctus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The tyrant neither spared the guilty nor pitied the innocent.",
+    "answer": "Tyrannus neque nocentibus pepercit neque innocentium miseritus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tyrannus",
+     "neque",
+     "nocentibus",
+     "pepercit",
+     "innocentium",
+     "miseritus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-t24",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Fear, grief, despair seized the conquered citizens.",
+    "answer": "Metus, dolor, dēspērātiō victōs cīvēs occupāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Metus",
+     "dolor",
+     "dēspērātiō",
+     "victōs",
+     "cīvēs",
+     "occupāvērunt"
+    ]
+   },
+   {
+    "prompt": "Hours and days and months pass swiftly away.",
+    "answer": "Hōrae et diēs et mēnsēs celeriter praetereunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōrae",
+     "et",
+     "diēs",
+     "mēnsēs",
+     "celeriter",
+     "praetereunt"
+    ]
+   },
+   {
+    "prompt": "Caesar led his legions into the lands of the Gauls, Belgians, and Germans.",
+    "answer": "Caesar legiōnēs in Gallōs, Belgās Germānōsque dēdūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "legiōnēs",
+     "in",
+     "Gallōs",
+     "Belgās",
+     "Germānōsque",
+     "dēdūxit"
+    ]
+   },
+   {
+    "prompt": "Strength failed the old man; his courage did not fail.",
+    "answer": "Vīrēs senem dēfēcērunt, animus nōn dēfēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīrēs",
+     "senem",
+     "dēfēcērunt",
+     "animus",
+     "nōn",
+     "dēfēcit"
+    ]
+   }
+  ]
  }
 ]

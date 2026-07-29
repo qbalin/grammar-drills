@@ -309,5 +309,232 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-253-syntax-of-pronominal-adjectives-t7",
+  "sectionId": "bn-253-syntax-of-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "Some praised the orator's speech, others jeered at it.",
+    "answer": "Aliī ōrātiōnem laudāvērunt, aliī dērīsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "aliī",
+     "ōrātiōnem",
+     "laudāvērunt",
+     "dērīsērunt"
+    ]
+   },
+   {
+    "prompt": "One soldier hurled his spear, the other drew his sword.",
+    "answer": "Alter hastam iēcit, alter gladium strīnxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "alter",
+     "hastam",
+     "iēcit",
+     "gladium",
+     "strīnxit"
+    ]
+   },
+   {
+    "prompt": "The terrified citizens fled apart, some one way, others another.",
+    "answer": "Territī cīvēs aliī aliō diffūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "territī",
+     "cīvēs",
+     "aliī",
+     "aliō",
+     "diffūgērunt"
+    ]
+   },
+   {
+    "prompt": "Some messenger or other announced that the walls had fallen.",
+    "answer": "Nescio quis nūntiāvit mūrōs cecidisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nescio",
+     "quis",
+     "nūntiāvit",
+     "mūrōs",
+     "cecidisse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-253-syntax-of-pronominal-adjectives-t8",
+  "sectionId": "bn-253-syntax-of-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "One officer procured the grain, the other armed the soldiers.",
+    "answer": "Alter frūmentum comparāvit, alter mīlitēs armāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "alter",
+     "frūmentum",
+     "comparāvit",
+     "mīlitēs",
+     "armāvit"
+    ]
+   },
+   {
+    "prompt": "In the assembly one man demands one thing, another another.",
+    "answer": "In contiōne alius aliud postulat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "contiōne",
+     "alius",
+     "aliud",
+     "postulat"
+    ]
+   },
+   {
+    "prompt": "The four others swam across the swollen river by night.",
+    "answer": "Reliquī quattuor flūmen tumidum nocte trānāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "reliquī",
+     "quattuor",
+     "flūmen",
+     "tumidum",
+     "nocte",
+     "trānāvērunt"
+    ]
+   },
+   {
+    "prompt": "This queen surpassed all the others in beauty and cunning.",
+    "answer": "Haec rēgīna cēterīs pulchritūdine et calliditāte praestitit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "rēgīna",
+     "cēterīs",
+     "pulchritūdine",
+     "et",
+     "calliditāte",
+     "praestitit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-253-syntax-of-pronominal-adjectives-t9",
+  "sectionId": "bn-253-syntax-of-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "The victorious enemies plundered one another amid the ruins.",
+    "answer": "Victōrēs hostēs alius alium inter ruīnās spoliāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "victōrēs",
+     "hostēs",
+     "alius",
+     "alium",
+     "inter",
+     "ruīnās",
+     "spoliāvērunt"
+    ]
+   },
+   {
+    "prompt": "One thing pleases some judges, another pleases others.",
+    "answer": "Aliud aliīs iūdicibus placet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "aliud",
+     "aliīs",
+     "iūdicibus",
+     "placet"
+    ]
+   },
+   {
+    "prompt": "Somehow or other the letter reached the exiled king.",
+    "answer": "Nescio quō pactō epistula ad rēgem exsulantem pervēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nescio",
+     "quō",
+     "pactō",
+     "epistula",
+     "ad",
+     "rēgem",
+     "exsulantem",
+     "pervēnit"
+    ]
+   },
+   {
+    "prompt": "The one party stormed the gates, the other set fire to the towers.",
+    "answer": "Alterī portās oppugnāvērunt, alterī turrēs incendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "alterī",
+     "portās",
+     "oppugnāvērunt",
+     "turrēs",
+     "incendērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-253-syntax-of-pronominal-adjectives-t10",
+  "sectionId": "bn-253-syntax-of-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "Among the young men one loves one thing, another another.",
+    "answer": "Inter iuvenēs alius aliud amat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "inter",
+     "iuvenēs",
+     "alius",
+     "aliud",
+     "amat"
+    ]
+   },
+   {
+    "prompt": "Some were carrying torches, others rolling stones down the slope.",
+    "answer": "Aliī facēs gerēbant, aliī saxa per clīvum volvēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "aliī",
+     "facēs",
+     "gerēbant",
+     "saxa",
+     "per",
+     "clīvum",
+     "volvēbant"
+    ]
+   },
+   {
+    "prompt": "One twin was braver, the other more prudent.",
+    "answer": "Alter geminus fortior, alter prūdentior erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "alter",
+     "geminus",
+     "fortior",
+     "prūdentior",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "The tyrant sent some soldier or other to guard the captives.",
+    "answer": "Tyrannus nescio quem mīlitem ad captīvōs custōdiendōs mīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tyrannus",
+     "nescio",
+     "quem",
+     "mīlitem",
+     "ad",
+     "captīvōs",
+     "custōdiendōs",
+     "mīsit"
+    ]
+   }
+  ]
  }
 ]

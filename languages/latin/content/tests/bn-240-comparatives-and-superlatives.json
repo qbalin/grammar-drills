@@ -297,5 +297,130 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-t7",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "The general was more cautious than bold, and so avoided the ambush.",
+    "answer": "Dux cautior quam audācior erat, itaque īnsidiās vītāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "cautior",
+     "quam",
+     "audācior",
+     "erat",
+     "itaque",
+     "īnsidiās",
+     "vītāvit"
+    ]
+   },
+   {
+    "prompt": "Send as many hostages as possible into the enemy's camp.",
+    "answer": "Quam plūrimōs obsidēs in castra hostium mitte.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "plūrimōs",
+     "obsidēs",
+     "in",
+     "castra",
+     "hostium",
+     "mitte"
+    ]
+   },
+   {
+    "prompt": "The very greatest fear seized the sleepless watchman at midnight.",
+    "answer": "Vel maximus timor vigilem media nocte occupāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vel",
+     "maximus",
+     "timor",
+     "vigilem",
+     "media",
+     "nocte",
+     "occupāvit"
+    ]
+   },
+   {
+    "prompt": "This building seems somewhat too high for so small a town.",
+    "answer": "Hoc aedificium altius quam prō tam parvā urbe vidētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "aedificium",
+     "altius",
+     "quam",
+     "prō",
+     "tam",
+     "parvā",
+     "urbe",
+     "vidētur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-t8",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "Old age is rather greedy, although it possesses much.",
+    "answer": "Senectūs avārior est, quamquam multa possidet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senectūs",
+     "avārior",
+     "est",
+     "quamquam",
+     "multa",
+     "possidet"
+    ]
+   },
+   {
+    "prompt": "The prudent leader chose the very safest road through the mountains.",
+    "answer": "Prūdēns dux tūtissimam viam per montēs dēlēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prūdēns",
+     "dux",
+     "tūtissimam",
+     "viam",
+     "per",
+     "montēs",
+     "dēlēgit"
+    ]
+   },
+   {
+    "prompt": "Gather as great forces as possible before winter comes.",
+    "answer": "Quam maximās cōpiās parā antequam hiems veniat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "maximās",
+     "cōpiās",
+     "parā",
+     "antequam",
+     "hiems",
+     "veniat"
+    ]
+   },
+   {
+    "prompt": "In the eyes of the gods the exile seemed more wretched than guilty.",
+    "answer": "Exsul superīs miserior quam nocentior vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Exsul",
+     "superīs",
+     "miserior",
+     "quam",
+     "nocentior",
+     "vidēbātur"
+    ]
+   }
+  ]
  }
 ]

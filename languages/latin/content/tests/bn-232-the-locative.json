@@ -349,5 +349,189 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-232-the-locative-t7",
+  "sectionId": "bn-232-the-locative",
+  "questions": [
+   {
+    "prompt": "At Capua the exiled king, stripped of his kingdom, lay dying on the ground.",
+    "answer": "Capuae rēx exsul, rēgnō prīvātus, humī moriēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Capuae",
+     "rēx",
+     "exsul",
+     "rēgnō",
+     "prīvātus",
+     "humī",
+     "moriēbātur"
+    ]
+   },
+   {
+    "prompt": "At Tarentum the merchant, once his wares had been sold, gladly stayed at home.",
+    "answer": "Tarentī mercātor, mercibus vēnditīs, domī laetus mānsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tarentī",
+     "mercātor",
+     "mercibus",
+     "vēnditīs",
+     "domī",
+     "laetus",
+     "mānsit"
+    ]
+   },
+   {
+    "prompt": "Yesterday at Delos the priest consulted the oracle about the war.",
+    "answer": "Herī Dēlī sacerdōs ōrāculum dē bellō cōnsuluit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "herī",
+     "Dēlī",
+     "sacerdōs",
+     "ōrāculum",
+     "dē",
+     "bellō",
+     "cōnsuluit"
+    ]
+   },
+   {
+    "prompt": "In suspense of mind, the general at Corinth awaited the outcome of the battle.",
+    "answer": "Animī pendēns, dux Corinthī pugnae ēventum exspectābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "animī",
+     "pendēns",
+     "dux",
+     "Corinthī",
+     "pugnae",
+     "ēventum",
+     "exspectābat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-232-the-locative-t8",
+  "sectionId": "bn-232-the-locative",
+  "questions": [
+   {
+    "prompt": "In war the fearless soldier scorned his wounds; at home he cultivated peace.",
+    "answer": "Bellī mīles intrepidus vulnera sprēvit; domī pācem coluit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bellī",
+     "mīles",
+     "intrepidus",
+     "vulnera",
+     "sprēvit",
+     "domī",
+     "pācem",
+     "coluit"
+    ]
+   },
+   {
+    "prompt": "At evening the weary shepherd, driving his flock, returned home.",
+    "answer": "Vesperī pāstor fessus, gregem agēns, domum rediit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vesperī",
+     "pāstor",
+     "fessus",
+     "gregem",
+     "agēns",
+     "domum",
+     "rediit"
+    ]
+   },
+   {
+    "prompt": "In war and at home alike, the consul was judged wise.",
+    "answer": "Bellī et domī cōnsul sapiēns jūdicātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bellī",
+     "et",
+     "domī",
+     "cōnsul",
+     "sapiēns",
+     "jūdicātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "In military service the young man endured many hardships.",
+    "answer": "Mīlitiae adulēscēns multōs labōrēs perpessus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīlitiae",
+     "adulēscēns",
+     "multōs",
+     "labōrēs",
+     "perpessus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-232-the-locative-t9",
+  "sectionId": "bn-232-the-locative",
+  "questions": [
+   {
+    "prompt": "At Miletus the philosopher used to teach that the soul is immortal.",
+    "answer": "Mīlētī philosophus animum immortālem esse docēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlētī",
+     "philosophus",
+     "animum",
+     "immortālem",
+     "esse",
+     "docēbat"
+    ]
+   },
+   {
+    "prompt": "Lying on the ground, the captives at Pergamum kept begging for mercy.",
+    "answer": "Humī jacentēs, captīvī Pergamī veniam ōrābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "humī",
+     "jacentēs",
+     "captīvī",
+     "Pergamī",
+     "veniam",
+     "ōrābant"
+    ]
+   },
+   {
+    "prompt": "In suspense of mind at home, the father awaited his son's letter.",
+    "answer": "Animī domī pendēns, pater fīliī litterās exspectābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "animī",
+     "domī",
+     "pendēns",
+     "pater",
+     "fīliī",
+     "litterās",
+     "exspectābat"
+    ]
+   },
+   {
+    "prompt": "At Antium the general, though brave in war, nevertheless seemed sad.",
+    "answer": "Antiī dux, bellī fortis, tamen trīstis vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antiī",
+     "dux",
+     "bellī",
+     "fortis",
+     "tamen",
+     "trīstis",
+     "vidēbātur"
+    ]
+   }
+  ]
  }
 ]

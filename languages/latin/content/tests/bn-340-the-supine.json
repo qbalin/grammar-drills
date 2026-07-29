@@ -344,5 +344,129 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-340-the-supine-t7",
+  "sectionId": "bn-340-the-supine",
+  "questions": [
+   {
+    "prompt": "The ambassadors came to the general to seek a truce.",
+    "answer": "Lēgātī ad ducem indūtiās petītum vēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgātī",
+     "ad",
+     "ducem",
+     "indūtiās",
+     "petītum",
+     "vēnērunt"
+    ]
+   },
+   {
+    "prompt": "This deed is dreadful to tell but glorious to see.",
+    "answer": "Hoc facinus foedum dictū sed glōriōsum vīsū est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "facinus",
+     "foedum",
+     "dictū",
+     "sed",
+     "glōriōsum",
+     "vīsū",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The farmers went out into the fields to gather the ripened crops.",
+    "answer": "Agricolae in agrōs mātūrās frūgēs collēctum exiērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricolae",
+     "in",
+     "agrōs",
+     "mātūrās",
+     "frūgēs",
+     "collēctum",
+     "exiērunt"
+    ]
+   },
+   {
+    "prompt": "The king gives his only daughter in marriage to a foreign prince.",
+    "answer": "Rēx ūnicam fīliam externō prīncipī nūptum dat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "ūnicam",
+     "fīliam",
+     "externō",
+     "prīncipī",
+     "nūptum",
+     "dat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-340-the-supine-t8",
+  "sectionId": "bn-340-the-supine",
+  "questions": [
+   {
+    "prompt": "The raging wolves came down from the mountains to devour the flocks.",
+    "answer": "Rabidī lupī dē montibus gregēs dēvorātum dēscendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rabidī",
+     "lupī",
+     "dē",
+     "montibus",
+     "gregēs",
+     "dēvorātum",
+     "dēscendērunt"
+    ]
+   },
+   {
+    "prompt": "The true cause of the war is difficult to discover.",
+    "answer": "Vēra causa bellī difficilis cognitū est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēra",
+     "causa",
+     "bellī",
+     "difficilis",
+     "cognitū",
+     "est"
+    ]
+   },
+   {
+    "prompt": "At first light the soldiers advanced to storm the enemy's citadel.",
+    "answer": "Prīmā lūce mīlitēs hostium arcem oppugnātum prōcessērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmā",
+     "lūce",
+     "mīlitēs",
+     "hostium",
+     "arcem",
+     "oppugnātum",
+     "prōcessērunt"
+    ]
+   },
+   {
+    "prompt": "The tyrant's cruelty was horrible to see and shameful to tell.",
+    "answer": "Crūdēlitās tyrannī horribilis vīsū et turpis dictū erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crūdēlitās",
+     "tyrannī",
+     "horribilis",
+     "vīsū",
+     "et",
+     "turpis",
+     "dictū",
+     "erat"
+    ]
+   }
+  ]
  }
 ]

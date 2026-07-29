@@ -342,5 +342,136 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-279-optative-subjunctive-t7",
+  "sectionId": "bn-279-optative-subjunctive",
+  "questions": [
+   {
+    "prompt": "May the kind gods grant a gentle death to the weary old man!",
+    "answer": "Utinam dī benignī senī fessō lēnem mortem largiantur!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "dī",
+     "benignī",
+     "senī",
+     "fessō",
+     "lēnem",
+     "mortem",
+     "largiantur"
+    ]
+   },
+   {
+    "prompt": "May our comrades reach the safe harbor before the storm rises!",
+    "answer": "Utinam comitēs nostrī tūtum portum antequam tempestās surgat petant!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "comitēs",
+     "nostrī",
+     "tūtum",
+     "portum",
+     "antequam",
+     "tempestās",
+     "surgat",
+     "petant"
+    ]
+   },
+   {
+    "prompt": "May the enemy not break through the gates guarded by brave men!",
+    "answer": "Nē hostēs portās ā virīs fortibus custōdītās perrumpant!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "hostēs",
+     "portās",
+     "ā",
+     "virīs",
+     "fortibus",
+     "custōdītās",
+     "perrumpant"
+    ]
+   },
+   {
+    "prompt": "Oh that the harvest may be abundant this year for the poor farmers!",
+    "answer": "Utinam messis hōc annō pauperibus agricolīs larga sit!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "messis",
+     "hōc",
+     "annō",
+     "pauperibus",
+     "agricolīs",
+     "larga",
+     "sit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-279-optative-subjunctive-t8",
+  "sectionId": "bn-279-optative-subjunctive",
+  "questions": [
+   {
+    "prompt": "Would that the citizens still honored the ancient laws of their ancestors!",
+    "answer": "Utinam cīvēs adhūc antīquās māiōrum lēgēs colerent!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "cīvēs",
+     "adhūc",
+     "antīquās",
+     "māiōrum",
+     "lēgēs",
+     "colerent"
+    ]
+   },
+   {
+    "prompt": "Would that the general were not now leading his army into a hopeless battle!",
+    "answer": "Utinam nē dux nunc exercitum in proelium dēspērātum dūceret!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "nē",
+     "dux",
+     "nunc",
+     "exercitum",
+     "in",
+     "proelium",
+     "dēspērātum",
+     "dūceret"
+    ]
+   },
+   {
+    "prompt": "Would that the king had listened to the warnings of the faithful seer!",
+    "answer": "Utinam rēx fīdī vātis monita audīvisset!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "rēx",
+     "fīdī",
+     "vātis",
+     "monita",
+     "audīvisset"
+    ]
+   },
+   {
+    "prompt": "Would that so cruel a tyrant had never seized power over the city!",
+    "answer": "Utinam tam crūdēlis tyrannus numquam imperium urbis occupāvisset!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "tam",
+     "crūdēlis",
+     "tyrannus",
+     "numquam",
+     "imperium",
+     "urbis",
+     "occupāvisset"
+    ]
+   }
+  ]
  }
 ]

@@ -410,5 +410,703 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t8",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "When the general had learned what was happening in the camp, he ordered the legions to advance.",
+    "answer": "Cum imperātor cognōvisset quid in castrīs gererētur, legiōnēs prōgredī iussit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "imperātor",
+     "cognōvisset",
+     "quid",
+     "in",
+     "castrīs",
+     "gererētur",
+     "legiōnēs",
+     "prōgredī",
+     "iussit"
+    ]
+   },
+   {
+    "prompt": "Since the magician could not appease the angry crowd, he fled from the tribunal by night.",
+    "answer": "Magus cum turbam īrātam plācāre nōn posset, nocte ā tribūnālī fūgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magus",
+     "cum",
+     "turbam",
+     "īrātam",
+     "plācāre",
+     "nōn",
+     "posset",
+     "nocte",
+     "ā",
+     "tribūnālī",
+     "fūgit"
+    ]
+   },
+   {
+    "prompt": "Although the disciple was worn out by long study, he approached the master with joy.",
+    "answer": "Discipulus etsī longō studiō dēfessus erat, tamen ad magistrum laetus accessit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Discipulus",
+     "etsī",
+     "longō",
+     "studiō",
+     "dēfessus",
+     "erat",
+     "tamen",
+     "ad",
+     "magistrum",
+     "laetus",
+     "accessit"
+    ]
+   },
+   {
+    "prompt": "After the poet had recited these verses, he set out from the city.",
+    "answer": "Postquam poēta hōs versūs recitāvit, ex urbe profectus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Postquam",
+     "poēta",
+     "hōs",
+     "versūs",
+     "recitāvit",
+     "ex",
+     "urbe",
+     "profectus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t9",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "When this had been announced to the consul, he hastened to leave the province.",
+    "answer": "Cōnsul, cum hoc eī nūntiātum esset, prōvinciā excēdere mātūrāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "cum",
+     "hoc",
+     "eī",
+     "nūntiātum",
+     "esset",
+     "prōvinciā",
+     "excēdere",
+     "mātūrāvit"
+    ]
+   },
+   {
+    "prompt": "Since a reward had been promised to the soldiers, they attacked the walls more fiercely.",
+    "answer": "Mīlitēs, cum praemium eīs prōmissum esset, mūrōs ācrius oppugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "cum",
+     "praemium",
+     "eīs",
+     "prōmissum",
+     "esset",
+     "mūrōs",
+     "ācrius",
+     "oppugnāvērunt"
+    ]
+   },
+   {
+    "prompt": "Although a day of trial had been appointed for the leader, he despised the threats of the people.",
+    "answer": "Dux etsī eī diēs dicta esset, tamen minās populī contempsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "etsī",
+     "eī",
+     "diēs",
+     "dicta",
+     "esset",
+     "tamen",
+     "minās",
+     "populī",
+     "contempsit"
+    ]
+   },
+   {
+    "prompt": "When a wound had been inflicted on the gladiator, the crowd fell silent.",
+    "answer": "Gladiātōrī cum vulnus illātum esset, turba conticuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gladiātōrī",
+     "cum",
+     "vulnus",
+     "illātum",
+     "esset",
+     "turba",
+     "conticuit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t10",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "The consul, lest he be forced to spend the winter in the mountains, ordered the army to hurry.",
+    "answer": "Cōnsul, nē in montibus hiemem cōnsūmere cōgerētur, exercitum contendere iussit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "nē",
+     "in",
+     "montibus",
+     "hiemem",
+     "cōnsūmere",
+     "cōgerētur",
+     "exercitum",
+     "contendere",
+     "iussit"
+    ]
+   },
+   {
+    "prompt": "The magician, in order to take away hope of escape, hid the keys of the gate.",
+    "answer": "Magus, ut spem fugae tolleret, portae clāvēs abscondit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magus",
+     "ut",
+     "spem",
+     "fugae",
+     "tolleret",
+     "portae",
+     "clāvēs",
+     "abscondit"
+    ]
+   },
+   {
+    "prompt": "The queen, so that she might soften the anger of the king, sent many gifts.",
+    "answer": "Rēgīna, ut rēgis īram mollīret, multa dōna mīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "ut",
+     "rēgis",
+     "īram",
+     "mollīret",
+     "multa",
+     "dōna",
+     "mīsit"
+    ]
+   },
+   {
+    "prompt": "Theseus, in order that he might find the way back, unrolled a thread through the dark halls.",
+    "answer": "Thēseus, ut viam regrediendī invenīret, per obscūrās aulās fīlum ēvolvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Thēseus",
+     "ut",
+     "viam",
+     "regrediendī",
+     "invenīret",
+     "per",
+     "obscūrās",
+     "aulās",
+     "fīlum",
+     "ēvolvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t11",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "It happened that on a single night all the statues were thrown down.",
+    "answer": "Accidit ut ūnā nocte omnia signa dēicerentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Accidit",
+     "ut",
+     "ūnā",
+     "nocte",
+     "omnia",
+     "signa",
+     "dēicerentur"
+    ]
+   },
+   {
+    "prompt": "So great was the storm that the sailors despaired of safety.",
+    "answer": "Tanta erat tempestās ut nautae dē salūte dēspērārent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tanta",
+     "erat",
+     "tempestās",
+     "ut",
+     "nautae",
+     "dē",
+     "salūte",
+     "dēspērārent"
+    ]
+   },
+   {
+    "prompt": "The general asked the scouts what the enemy were doing beyond the river.",
+    "answer": "Imperātor explōrātōrēs rogāvit quid hostēs trāns flūmen agerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "explōrātōrēs",
+     "rogāvit",
+     "quid",
+     "hostēs",
+     "trāns",
+     "flūmen",
+     "agerent"
+    ]
+   },
+   {
+    "prompt": "No one knew how great the danger was that threatened the city.",
+    "answer": "Nēmō sciēbat quantum perīculum urbī impendēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nēmō",
+     "sciēbat",
+     "quantum",
+     "perīculum",
+     "urbī",
+     "impendēret"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t12",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "If anyone should trust the magician, he would be a fool.",
+    "answer": "Sī quis magō crēdat, stultus sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quis",
+     "magō",
+     "crēdat",
+     "stultus",
+     "sit"
+    ]
+   },
+   {
+    "prompt": "Although the danger had been made equal, hope of flight was taken from all.",
+    "answer": "Etsī perīculum aequātum erat, spēs fugae omnibus adēmpta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Etsī",
+     "perīculum",
+     "aequātum",
+     "erat",
+     "spēs",
+     "fugae",
+     "omnibus",
+     "adēmpta",
+     "est"
+    ]
+   },
+   {
+    "prompt": "If the frugality of the citizens had been greater, the treasury would not have been exhausted.",
+    "answer": "Sī cīvium parsimōnia māior fuisset, aerārium nōn exhaustum esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "cīvium",
+     "parsimōnia",
+     "māior",
+     "fuisset",
+     "aerārium",
+     "nōn",
+     "exhaustum",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "Although the origanum was bitter, the physician mixed it into the drink.",
+    "answer": "Etsī orīganum amārum erat, medicus illud pōtiōnī admiscuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Etsī",
+     "orīganum",
+     "amārum",
+     "erat",
+     "medicus",
+     "illud",
+     "pōtiōnī",
+     "admiscuit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t13",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "Having pitched camp, the general, since he feared an ambush, ordered the watches to be increased.",
+    "answer": "Castrīs positīs, imperātor, cum īnsidiās timēret, vigiliās augērī iussit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Castrīs",
+     "positīs",
+     "imperātor",
+     "cum",
+     "īnsidiās",
+     "timēret",
+     "vigiliās",
+     "augērī",
+     "iussit"
+    ]
+   },
+   {
+    "prompt": "When the signal had been given, the soldiers, in order to break the enemy's line, charged with drawn swords.",
+    "answer": "Signō datō, mīlitēs, ut aciem hostium perrumperent, strictīs gladiīs impetum fēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Signō",
+     "datō",
+     "mīlitēs",
+     "ut",
+     "aciem",
+     "hostium",
+     "perrumperent",
+     "strictīs",
+     "gladiīs",
+     "impetum",
+     "fēcērunt"
+    ]
+   },
+   {
+    "prompt": "The magician, having veiled the tribunal in smoke, so terrified the people that all fled.",
+    "answer": "Magus, tribūnālī fūmō obtēctō, populum ita terruit ut omnēs fugerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magus",
+     "tribūnālī",
+     "fūmō",
+     "obtēctō",
+     "populum",
+     "ita",
+     "terruit",
+     "ut",
+     "omnēs",
+     "fugerent"
+    ]
+   },
+   {
+    "prompt": "After the king had been slain, the citizens, so that they might restore liberty, appointed two consuls.",
+    "answer": "Rēge interfectō, cīvēs, ut lībertātem restituerent, duōs cōnsulēs creāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēge",
+     "interfectō",
+     "cīvēs",
+     "ut",
+     "lībertātem",
+     "restituerent",
+     "duōs",
+     "cōnsulēs",
+     "creāvērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t14",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "Although the king had promised peace, he was secretly preparing war.",
+    "answer": "Rēx quamquam pācem prōmīserat, tamen bellum clam parābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "quamquam",
+     "pācem",
+     "prōmīserat",
+     "tamen",
+     "bellum",
+     "clam",
+     "parābat"
+    ]
+   },
+   {
+    "prompt": "When the general had drawn up his battle line, he ordered the trumpets to sound.",
+    "answer": "Dux, cum aciem īnstrūxisset, tubās canere iussit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "cum",
+     "aciem",
+     "īnstrūxisset",
+     "tubās",
+     "canere",
+     "iussit"
+    ]
+   },
+   {
+    "prompt": "If anyone should despise the laws, he would harm the whole state.",
+    "answer": "Sī quis lēgēs contemnat, tōtī cīvitātī noceat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quis",
+     "lēgēs",
+     "contemnat",
+     "tōtī",
+     "cīvitātī",
+     "noceat"
+    ]
+   },
+   {
+    "prompt": "It happened that in a single winter many temples were destroyed by fire.",
+    "answer": "Accidit ut ūnā hieme multa templa igne dēstruerentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Accidit",
+     "ut",
+     "ūnā",
+     "hieme",
+     "multa",
+     "templa",
+     "igne",
+     "dēstruerentur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t15",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "The envoys, since they could not persuade the senate, returned home in sorrow.",
+    "answer": "Lēgātī, cum senātuī persuādēre nōn possent, maestī domum rediērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgātī",
+     "cum",
+     "senātuī",
+     "persuādēre",
+     "nōn",
+     "possent",
+     "maestī",
+     "domum",
+     "rediērunt"
+    ]
+   },
+   {
+    "prompt": "The commander, when the ambush had been reported to him, ordered the cavalry to halt.",
+    "answer": "Imperātor, cum īnsidiae eī nūntiātae essent, equitēs cōnsistere iussit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "cum",
+     "īnsidiae",
+     "eī",
+     "nūntiātae",
+     "essent",
+     "equitēs",
+     "cōnsistere",
+     "iussit"
+    ]
+   },
+   {
+    "prompt": "Having seized the hill, the soldiers, because they feared the enemy, fortified the camp with a rampart.",
+    "answer": "Mīlitēs, colle occupātō, quod hostēs timēbant, castra vallō mūnīvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "colle",
+     "occupātō",
+     "quod",
+     "hostēs",
+     "timēbant",
+     "castra",
+     "vallō",
+     "mūnīvērunt"
+    ]
+   },
+   {
+    "prompt": "Although the leader had once saved the city, the citizens drove him into exile.",
+    "answer": "Ducem, quamquam urbem ōlim servāverat, cīvēs in exsilium ēgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ducem",
+     "quamquam",
+     "urbem",
+     "ōlim",
+     "servāverat",
+     "cīvēs",
+     "in",
+     "exsilium",
+     "ēgērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t16",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "The consul, lest the enemy escape by night, stationed guards at the gates.",
+    "answer": "Cōnsul, nē hostēs nocte effugerent, custōdēs ad portās collocāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "nē",
+     "hostēs",
+     "nocte",
+     "effugerent",
+     "custōdēs",
+     "ad",
+     "portās",
+     "collocāvit"
+    ]
+   },
+   {
+    "prompt": "After the poet had recited his verses, the crowd applauded with a great shout.",
+    "answer": "Postquam poēta versūs recitāvit, turba magnō clāmōre plausit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Postquam",
+     "poēta",
+     "versūs",
+     "recitāvit",
+     "turba",
+     "magnō",
+     "clāmōre",
+     "plausit"
+    ]
+   },
+   {
+    "prompt": "So great was the storm that the ships could not leave the harbor.",
+    "answer": "Tanta erat tempestās ut nāvēs portū ēgredī nōn possent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tanta",
+     "erat",
+     "tempestās",
+     "ut",
+     "nāvēs",
+     "portū",
+     "ēgredī",
+     "nōn",
+     "possent"
+    ]
+   },
+   {
+    "prompt": "The old man asked why the young men were neglecting their studies.",
+    "answer": "Senex rogāvit cūr iuvenēs studia neglegerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "rogāvit",
+     "cūr",
+     "iuvenēs",
+     "studia",
+     "neglegerent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-351-sentence-structure-t17",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "If there is any hope in the allies — and I know how small it is — we must fight.",
+    "answer": "Sī qua est in sociīs spēs, quam sciō quam sit exigua, pugnandum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "qua",
+     "est",
+     "in",
+     "sociīs",
+     "spēs",
+     "quam",
+     "sciō",
+     "sit",
+     "exigua",
+     "pugnandum"
+    ]
+   },
+   {
+    "prompt": "The enemy, after they had sent men to discover the plans of the Romans, withdrew into the woods.",
+    "answer": "Hostēs, cum hominēs mīsissent quī cōnsilia Rōmānōrum cognōscerent, in silvās sē recēpērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostēs",
+     "cum",
+     "hominēs",
+     "mīsissent",
+     "quī",
+     "cōnsilia",
+     "Rōmānōrum",
+     "cognōscerent",
+     "in",
+     "silvās",
+     "sē",
+     "recēpērunt"
+    ]
+   },
+   {
+    "prompt": "Although the farmer perceived why the fields were barren, he sowed the seeds again.",
+    "answer": "Agricola etsī intellegēbat quā dē causā agrī sterilēs essent, tamen sēmina iterum sēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "etsī",
+     "intellegēbat",
+     "quā",
+     "dē",
+     "causā",
+     "agrī",
+     "sterilēs",
+     "essent",
+     "tamen",
+     "sēmina",
+     "iterum",
+     "sēvit"
+    ]
+   },
+   {
+    "prompt": "Having freed the captives, the victorious king, in order to win their loyalty, gave them gifts.",
+    "answer": "Rēx victor, captīvīs līberātīs, ut eōrum fidem sibi conciliāret, dōna eīs dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "victor",
+     "captīvīs",
+     "līberātīs",
+     "ut",
+     "eōrum",
+     "fidem",
+     "sibi",
+     "conciliāret",
+     "dōna",
+     "eīs",
+     "dedit"
+    ]
+   }
+  ]
  }
 ]

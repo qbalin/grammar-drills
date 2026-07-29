@@ -342,5 +342,371 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-254-agreement-t7",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "You and I have endured many hardships together.",
+    "answer": "Tū et ego multōs labōrēs simul passī sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "et",
+     "ego",
+     "multōs",
+     "labōrēs",
+     "simul",
+     "passī",
+     "sumus"
+    ]
+   },
+   {
+    "prompt": "Neither the general nor the soldier feared the coming battle.",
+    "answer": "Neque dux neque mīles proelium ventūrum timēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "dux",
+     "mīles",
+     "proelium",
+     "ventūrum",
+     "timēbat"
+    ]
+   },
+   {
+    "prompt": "The father and his sons were praised by the venerable priest.",
+    "answer": "Pater et fīliī ā venerābilī sacerdōte laudātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pater",
+     "et",
+     "fīliī",
+     "ā",
+     "venerābilī",
+     "sacerdōte",
+     "laudātī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "A crowd of women had gathered before the gates of the temple.",
+    "answer": "Multitūdō mulierum ante templī portās convēnerant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multitūdō",
+     "mulierum",
+     "ante",
+     "templī",
+     "portās",
+     "convēnerant"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t8",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "Athens was the venerable homeland of the philosopher.",
+    "answer": "Athēnae philosophī venerābilis patria erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Athēnae",
+     "philosophī",
+     "venerābilis",
+     "patria",
+     "erat"
+    ]
+   },
+   {
+    "prompt": "Not every desire ought to be called a vice.",
+    "answer": "Nōn omnis cupīditās vitium est dīcendum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "omnis",
+     "cupīditās",
+     "vitium",
+     "est",
+     "dīcendum"
+    ]
+   },
+   {
+    "prompt": "Corinth, a city mighty in commerce, was destroyed by the Romans.",
+    "answer": "Corinthus, urbs mercātūrā potēns, ā Rōmānīs dēlēta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Corinthus",
+     "urbs",
+     "mercātūrā",
+     "potēns",
+     "ā",
+     "Rōmānīs",
+     "dēlēta",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Two thousand of the captives were sold into slavery.",
+    "answer": "Duo mīlia captīvōrum in servitūtem vēnditī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "duo",
+     "mīlia",
+     "captīvōrum",
+     "in",
+     "servitūtem",
+     "vēnditī",
+     "sunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t9",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "You and your sister will come to Rome next summer.",
+    "answer": "Tū et soror tua proximā aestāte Rōmam veniētis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "et",
+     "soror",
+     "tua",
+     "proximā",
+     "aestāte",
+     "Rōmam",
+     "veniētis"
+    ]
+   },
+   {
+    "prompt": "The queen and her handmaids were adorned with gold.",
+    "answer": "Rēgīna et ancillae aurō ōrnātae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēgīna",
+     "et",
+     "ancillae",
+     "aurō",
+     "ōrnātae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The king and the queen were slain by the same sword.",
+    "answer": "Rēx et rēgīna eōdem gladiō interfectī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēx",
+     "et",
+     "rēgīna",
+     "eōdem",
+     "gladiō",
+     "interfectī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "Either the consul or the senators will announce the decree.",
+    "answer": "Aut cōnsul aut senātōrēs dēcrētum prōnūntiābunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "aut",
+     "cōnsul",
+     "senātōrēs",
+     "dēcrētum",
+     "prōnūntiābunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t10",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "The Roman senate and people sent envoys to the king.",
+    "answer": "Senātus et populus Rōmānus lēgātōs ad rēgem mīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "senātus",
+     "et",
+     "populus",
+     "Rōmānus",
+     "lēgātōs",
+     "ad",
+     "rēgem",
+     "mīsit"
+    ]
+   },
+   {
+    "prompt": "In the camp remained the leader and a few soldiers.",
+    "answer": "In castrīs mānsit dux et paucī mīlitēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "castrīs",
+     "mānsit",
+     "dux",
+     "et",
+     "paucī",
+     "mīlitēs"
+    ]
+   },
+   {
+    "prompt": "The mother perished, and the most wretched infant too.",
+    "answer": "Māter periit et īnfāns miserrimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "māter",
+     "periit",
+     "et",
+     "īnfāns",
+     "miserrimus"
+    ]
+   },
+   {
+    "prompt": "Courage and loyalty is the mark of a good citizen.",
+    "answer": "Virtūs et fidēs bonī cīvis signum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "virtūs",
+     "et",
+     "fidēs",
+     "bonī",
+     "cīvis",
+     "signum",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t11",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "A great part of the citizens have fled from the city.",
+    "answer": "Magna pars cīvium ex urbe fūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magna",
+     "pars",
+     "cīvium",
+     "ex",
+     "urbe",
+     "fūgērunt"
+    ]
+   },
+   {
+    "prompt": "The whole army was cut down by the fierce enemy.",
+    "answer": "Tōtus exercitus ā ferō hoste caesus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tōtus",
+     "exercitus",
+     "ā",
+     "ferō",
+     "hoste",
+     "caesus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "Three thousand were led away into slavery.",
+    "answer": "Tria mīlia in servitūtem abductī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tria",
+     "mīlia",
+     "in",
+     "servitūtem",
+     "abductī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The crowd ran together to the gates and demanded bread.",
+    "answer": "Turba ad portās concurrērunt et pānem poposcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "turba",
+     "ad",
+     "portās",
+     "concurrērunt",
+     "et",
+     "pānem",
+     "poposcērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-t12",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "The letters, written in haste, were sent to the general.",
+    "answer": "Litterae, properanter scrīptae, ad ducem missae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "litterae",
+     "properanter",
+     "scrīptae",
+     "ad",
+     "ducem",
+     "missae",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The gifts, hidden in the temple, had been discovered by thieves.",
+    "answer": "Dōna, in templō occultāta, ā fūribus reperta erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dōna",
+     "in",
+     "templō",
+     "occultāta",
+     "ā",
+     "fūribus",
+     "reperta",
+     "erant"
+    ]
+   },
+   {
+    "prompt": "Both the leader and his companions were praised for their courage.",
+    "answer": "Et dux et comitēs ob virtūtem laudātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "et",
+     "dux",
+     "comitēs",
+     "ob",
+     "virtūtem",
+     "laudātī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "You and I were saved by the mercy of the gods.",
+    "answer": "Tū et ego deōrum clēmentiā servātī sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "et",
+     "ego",
+     "deōrum",
+     "clēmentiā",
+     "servātī",
+     "sumus"
+    ]
+   }
+  ]
  }
 ]

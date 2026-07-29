@@ -324,5 +324,369 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-236-adjectives-used-substantively-t7",
+  "sectionId": "bn-236-adjectives-used-substantively",
+  "questions": [
+   {
+    "prompt": "The powerful oppress the humble, but the gods defend the innocent.",
+    "answer": "Potentēs humilēs opprimunt, sed innocentēs deī dēfendunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Potentēs",
+     "humilēs",
+     "opprimunt",
+     "sed",
+     "innocentēs",
+     "deī",
+     "dēfendunt"
+    ]
+   },
+   {
+    "prompt": "Few endure difficult things, but many flee the harsh.",
+    "answer": "Paucī difficilia tolerant, multī autem aspera fugiunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Paucī",
+     "difficilia",
+     "tolerant",
+     "multī",
+     "autem",
+     "aspera",
+     "fugiunt"
+    ]
+   },
+   {
+    "prompt": "This wise man, content with little, teaches the young many things.",
+    "answer": "Hic sapiēns, parvō contentus, iuvenēs multa docet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "sapiēns",
+     "parvō",
+     "contentus",
+     "iuvenēs",
+     "multa",
+     "docet"
+    ]
+   },
+   {
+    "prompt": "The honest envy no one, the wicked fear everyone.",
+    "answer": "Probī nēminī invident, improbī omnēs metuunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Probī",
+     "nēminī",
+     "invident",
+     "improbī",
+     "omnēs",
+     "metuunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-236-adjectives-used-substantively-t8",
+  "sectionId": "bn-236-adjectives-used-substantively",
+  "questions": [
+   {
+    "prompt": "A certain brave man saved the citizens from great dangers.",
+    "answer": "Fortis quīdam cīvēs ē magnīs perīculīs servāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fortis",
+     "quīdam",
+     "cīvēs",
+     "ē",
+     "magnīs",
+     "perīculīs",
+     "servāvit"
+    ]
+   },
+   {
+    "prompt": "We seek the true and flee the false in all matters.",
+    "answer": "Vēra petimus, falsa fugimus, in omnibus rēbus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēra",
+     "petimus",
+     "falsa",
+     "fugimus",
+     "in",
+     "omnibus",
+     "rēbus"
+    ]
+   },
+   {
+    "prompt": "Nothing new delights the old, nothing ancient the young.",
+    "answer": "Nihil novī senēs iuvat, nihil antīquī iuvenēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "novī",
+     "senēs",
+     "iuvat",
+     "antīquī",
+     "iuvenēs"
+    ]
+   },
+   {
+    "prompt": "The learned seek something true amid many errors.",
+    "answer": "Doctī aliquid vērī inter multōs errōrēs quaerunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Doctī",
+     "aliquid",
+     "vērī",
+     "inter",
+     "multōs",
+     "errōrēs",
+     "quaerunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-236-adjectives-used-substantively-t9",
+  "sectionId": "bn-236-adjectives-used-substantively",
+  "questions": [
+   {
+    "prompt": "The pious hope for good things, the wicked fear evil ones.",
+    "answer": "Piī bona spērant, scelestī mala timent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Piī",
+     "bona",
+     "spērant",
+     "scelestī",
+     "mala",
+     "timent"
+    ]
+   },
+   {
+    "prompt": "That prudent man foresees future things and remembers past ones.",
+    "answer": "Ille prūdēns futūra prōvidet et praeterita meminit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ille",
+     "prūdēns",
+     "futūra",
+     "prōvidet",
+     "et",
+     "praeterita",
+     "meminit"
+    ]
+   },
+   {
+    "prompt": "In the midst of the battle the brave stood firm.",
+    "answer": "In mediō proeliī fortēs stetērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "mediō",
+     "proeliī",
+     "fortēs",
+     "stetērunt"
+    ]
+   },
+   {
+    "prompt": "The powerful often scorn useful things and pursue empty ones.",
+    "answer": "Potentēs saepe ūtilia contemnunt et inānia sequuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Potentēs",
+     "saepe",
+     "ūtilia",
+     "contemnunt",
+     "et",
+     "inānia",
+     "sequuntur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-236-adjectives-used-substantively-t10",
+  "sectionId": "bn-236-adjectives-used-substantively",
+  "questions": [
+   {
+    "prompt": "The wise bear adverse things with a calm mind, the foolish yield to them.",
+    "answer": "Sapientēs adversa aequō animō ferunt, stultī iīs cēdunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapientēs",
+     "adversa",
+     "aequō",
+     "animō",
+     "ferunt",
+     "stultī",
+     "iīs",
+     "cēdunt"
+    ]
+   },
+   {
+    "prompt": "A certain rich man built temples and gave much to the poor.",
+    "answer": "Dīves quīdam templa aedificāvit et pauperibus multa dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīves",
+     "quīdam",
+     "templa",
+     "aedificāvit",
+     "et",
+     "pauperibus",
+     "multa",
+     "dedit"
+    ]
+   },
+   {
+    "prompt": "Great things are accomplished by the diligent, small ones neglected by the idle.",
+    "answer": "Magna ā dīligentibus geruntur, parva ab ignāvīs negleguntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magna",
+     "ā",
+     "dīligentibus",
+     "geruntur",
+     "parva",
+     "ab",
+     "ignāvīs",
+     "negleguntur"
+    ]
+   },
+   {
+    "prompt": "The good praise honorable things, the wicked mock sacred ones.",
+    "answer": "Bonī honesta laudant, malī sacra dērīdent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bonī",
+     "honesta",
+     "laudant",
+     "malī",
+     "sacra",
+     "dērīdent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-236-adjectives-used-substantively-t11",
+  "sectionId": "bn-236-adjectives-used-substantively",
+  "questions": [
+   {
+    "prompt": "The old remember many things, the young hope for greater ones.",
+    "answer": "Senēs multa meminērunt, iuvenēs maiōra spērant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senēs",
+     "multa",
+     "meminērunt",
+     "iuvenēs",
+     "maiōra",
+     "spērant"
+    ]
+   },
+   {
+    "prompt": "This eloquent man persuaded the doubtful with true words.",
+    "answer": "Hic disertus dubiīs vērīs verbīs persuāsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "disertus",
+     "dubiīs",
+     "vērīs",
+     "verbīs",
+     "persuāsit"
+    ]
+   },
+   {
+    "prompt": "Fortune favors the bold and abandons the timid.",
+    "answer": "Fortūna audācēs iuvat et timidōs dēserit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fortūna",
+     "audācēs",
+     "iuvat",
+     "et",
+     "timidōs",
+     "dēserit"
+    ]
+   },
+   {
+    "prompt": "Something certain is sought by all amid uncertain things.",
+    "answer": "Aliquid certī inter incerta ab omnibus quaeritur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aliquid",
+     "certī",
+     "inter",
+     "incerta",
+     "ab",
+     "omnibus",
+     "quaeritur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-236-adjectives-used-substantively-t12",
+  "sectionId": "bn-236-adjectives-used-substantively",
+  "questions": [
+   {
+    "prompt": "The immortals see all things, both hidden and open.",
+    "answer": "Immortālēs omnia vident, et occulta et aperta.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Immortālēs",
+     "omnia",
+     "vident",
+     "et",
+     "occulta",
+     "aperta"
+    ]
+   },
+   {
+    "prompt": "A certain cruel man oppressed the weak and feared the strong.",
+    "answer": "Crūdēlis quīdam īnfirmōs oppressit et validōs timuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crūdēlis",
+     "quīdam",
+     "īnfirmōs",
+     "oppressit",
+     "et",
+     "validōs",
+     "timuit"
+    ]
+   },
+   {
+    "prompt": "In the midst of dangers the faithful never desert their friends.",
+    "answer": "In mediō perīculōrum fidēlēs amīcōs numquam dēserunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "mediō",
+     "perīculōrum",
+     "fidēlēs",
+     "amīcōs",
+     "numquam",
+     "dēserunt"
+    ]
+   },
+   {
+    "prompt": "The prudent choose useful things, the reckless pursue harmful ones.",
+    "answer": "Prūdentēs ūtilia legunt, temerāriī noxia sequuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prūdentēs",
+     "ūtilia",
+     "legunt",
+     "temerāriī",
+     "noxia",
+     "sequuntur"
+    ]
+   }
+  ]
  }
 ]

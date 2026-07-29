@@ -360,5 +360,129 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-276-prohibitive-subjunctive-t7",
+  "sectionId": "bn-276-prohibitive-subjunctive",
+  "questions": [
+   {
+    "prompt": "Let not the general, elated by victory, despise the strength of the enemy.",
+    "answer": "Nē dux, victōriā ēlātus, hostium vīrēs contemnat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "dux",
+     "victōriā",
+     "ēlātus",
+     "hostium",
+     "vīrēs",
+     "contemnat"
+    ]
+   },
+   {
+    "prompt": "Do not, comrades, entrust the fragile ship to the wintry sea.",
+    "answer": "Nōlīte, sociī, fragilem nāvem hībernō marī crēdere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōlīte",
+     "sociī",
+     "fragilem",
+     "nāvem",
+     "hībernō",
+     "marī",
+     "crēdere"
+    ]
+   },
+   {
+    "prompt": "Take care lest, deceived by flattery, you reveal your plans.",
+    "answer": "Cavē nē, adūlātiōne dēceptus, cōnsilia tua aperiās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cavē",
+     "nē",
+     "adūlātiōne",
+     "dēceptus",
+     "cōnsilia",
+     "tua",
+     "aperiās"
+    ]
+   },
+   {
+    "prompt": "Beware of drinking the wine offered by an unknown host.",
+    "answer": "Cavē vīnum ab hospite ignōtō oblātum bibās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cavē",
+     "vīnum",
+     "ab",
+     "hospite",
+     "ignōtō",
+     "oblātum",
+     "bibās"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-276-prohibitive-subjunctive-t8",
+  "sectionId": "bn-276-prohibitive-subjunctive",
+  "questions": [
+   {
+    "prompt": "Do not, judges, condemn the accused before you hear all the witnesses.",
+    "answer": "Nōlīte, iūdicēs, reum damnāre priusquam omnēs testēs audiātis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōlīte",
+     "iūdicēs",
+     "reum",
+     "damnāre",
+     "priusquam",
+     "omnēs",
+     "testēs",
+     "audiātis"
+    ]
+   },
+   {
+    "prompt": "Let the young man, however bold, not provoke the anger of the gods.",
+    "answer": "Nē adulēscēns, quamvīs audāx, deōrum īram lacessat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "adulēscēns",
+     "quamvīs",
+     "audāx",
+     "deōrum",
+     "īram",
+     "lacessat"
+    ]
+   },
+   {
+    "prompt": "Take care that you not, wearied by the journey, neglect the sacred rites.",
+    "answer": "Cavē nē, itinere fessus, sacra neglegās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cavē",
+     "nē",
+     "itinere",
+     "fessus",
+     "sacra",
+     "neglegās"
+    ]
+   },
+   {
+    "prompt": "Beware, farmer, of ploughing the barren field with weary oxen.",
+    "answer": "Cavē, agricola, sterilem agrum fessīs bōbus arēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cavē",
+     "agricola",
+     "sterilem",
+     "agrum",
+     "fessīs",
+     "bōbus",
+     "arēs"
+    ]
+   }
+  ]
  }
 ]

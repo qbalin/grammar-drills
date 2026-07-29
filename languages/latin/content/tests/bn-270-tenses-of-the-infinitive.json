@@ -322,5 +322,349 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-t7",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The queen seems to be ruling the kingdom wisely.",
+    "answer": "Rēgīna vidētur rēgnum sapienter regere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "vidētur",
+     "rēgnum",
+     "sapienter",
+     "regere"
+    ]
+   },
+   {
+    "prompt": "The merchants seem to have escaped the storm on the open sea.",
+    "answer": "Mercātōrēs videntur tempestātem in altō marī effūgisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātōrēs",
+     "videntur",
+     "tempestātem",
+     "in",
+     "altō",
+     "marī",
+     "effūgisse"
+    ]
+   },
+   {
+    "prompt": "The cook ought to have prepared the feast more carefully.",
+    "answer": "Coquus epulum dīligentius parāre dēbuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Coquus",
+     "epulum",
+     "dīligentius",
+     "parāre",
+     "dēbuit"
+    ]
+   },
+   {
+    "prompt": "I hope that the enemy will be driven from the walls.",
+    "answer": "Spērō fore ut hostēs ā moenibus arceantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Spērō",
+     "fore",
+     "ut",
+     "hostēs",
+     "ā",
+     "moenibus",
+     "arceantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-t8",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The scribe seemed to be writing the laws in the forum.",
+    "answer": "Scrība lēgēs in forō scrībere vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scrība",
+     "lēgēs",
+     "in",
+     "forō",
+     "scrībere",
+     "vidēbātur"
+    ]
+   },
+   {
+    "prompt": "The general seemed to have lost many soldiers in the battle.",
+    "answer": "Dux multōs mīlitēs in proeliō āmīsisse vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "multōs",
+     "mīlitēs",
+     "in",
+     "proeliō",
+     "āmīsisse",
+     "vidēbātur"
+    ]
+   },
+   {
+    "prompt": "You ought to have returned the money to the wretched widow.",
+    "answer": "Pecūniam miserae viduae reddere dēbuistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pecūniam",
+     "miserae",
+     "viduae",
+     "reddere",
+     "dēbuistī"
+    ]
+   },
+   {
+    "prompt": "He said that he would have gained enough glory.",
+    "answer": "Dīxit sē satis glōriae adeptum fore.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīxit",
+     "sē",
+     "satis",
+     "glōriae",
+     "adeptum",
+     "fore"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-t9",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The judge seems to be about to condemn the guilty man.",
+    "answer": "Jūdex nocentem damnātūrus esse vidētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Jūdex",
+     "nocentem",
+     "damnātūrus",
+     "esse",
+     "vidētur"
+    ]
+   },
+   {
+    "prompt": "The boys ought to have obeyed their stern teacher.",
+    "answer": "Puerī sevērō magistrō pārēre dēbuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Puerī",
+     "sevērō",
+     "magistrō",
+     "pārēre",
+     "dēbuērunt"
+    ]
+   },
+   {
+    "prompt": "The physician seemed to have healed the wounded soldier.",
+    "answer": "Medicus vulnerātum mīlitem sānāvisse vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Medicus",
+     "vulnerātum",
+     "mīlitem",
+     "sānāvisse",
+     "vidēbātur"
+    ]
+   },
+   {
+    "prompt": "I hope that the young man will repent of his recklessness.",
+    "answer": "Spērō fore ut adulēscentem paeniteat temeritātis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Spērō",
+     "fore",
+     "ut",
+     "adulēscentem",
+     "paeniteat",
+     "temeritātis"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-t10",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The ambassadors seem to be seeking peace from the senate.",
+    "answer": "Lēgātī pācem ā senātū petere videntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgātī",
+     "pācem",
+     "ā",
+     "senātū",
+     "petere",
+     "videntur"
+    ]
+   },
+   {
+    "prompt": "The tyrant seemed to have killed many citizens without cause.",
+    "answer": "Tyrannus multōs cīvēs sine causā interfēcisse vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tyrannus",
+     "multōs",
+     "cīvēs",
+     "sine",
+     "causā",
+     "interfēcisse",
+     "vidēbātur"
+    ]
+   },
+   {
+    "prompt": "The consul might have foreseen the impending danger.",
+    "answer": "Cōnsul imminēns perīculum prōvidēre potuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "imminēns",
+     "perīculum",
+     "prōvidēre",
+     "potuit"
+    ]
+   },
+   {
+    "prompt": "I hope the letter will have been written before dawn.",
+    "answer": "Spērō epistulam ante lūcem scrīptam fore.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Spērō",
+     "epistulam",
+     "ante",
+     "lūcem",
+     "scrīptam",
+     "fore"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-t11",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The maiden seems to be singing a sweet song beside the river.",
+    "answer": "Virgō dulce carmen apud flūmen canere vidētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgō",
+     "dulce",
+     "carmen",
+     "apud",
+     "flūmen",
+     "canere",
+     "vidētur"
+    ]
+   },
+   {
+    "prompt": "The soldiers seemed to be about to storm the walls of the city.",
+    "answer": "Mīlitēs moenia urbis oppugnātūrī esse vidēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "moenia",
+     "urbis",
+     "oppugnātūrī",
+     "esse",
+     "vidēbantur"
+    ]
+   },
+   {
+    "prompt": "The king ought to have listened to the wise old man.",
+    "answer": "Rēx sapientem senem audīre dēbuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "sapientem",
+     "senem",
+     "audīre",
+     "dēbuit"
+    ]
+   },
+   {
+    "prompt": "We hope that the enemy will be conquered in the great battle.",
+    "answer": "Spērāmus fore ut hostēs magnō proeliō vincantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Spērāmus",
+     "fore",
+     "ut",
+     "hostēs",
+     "magnō",
+     "proeliō",
+     "vincantur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-t12",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The orator seems to have moved the crowd with his words.",
+    "answer": "Ōrātor verbīs suīs turbam mōvisse vidētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "verbīs",
+     "suīs",
+     "turbam",
+     "mōvisse",
+     "vidētur"
+    ]
+   },
+   {
+    "prompt": "The farmer seemed to be about to sell his fields.",
+    "answer": "Agricola agrōs suōs vēnditūrus esse vidēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "agrōs",
+     "suōs",
+     "vēnditūrus",
+     "esse",
+     "vidēbātur"
+    ]
+   },
+   {
+    "prompt": "You ought to have feared the anger of the gods.",
+    "answer": "Īram deōrum timēre dēbuistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īram",
+     "deōrum",
+     "timēre",
+     "dēbuistī"
+    ]
+   },
+   {
+    "prompt": "The captives seemed to have endured cruel punishments bravely.",
+    "answer": "Captīvī crūdēlia supplicia fortiter tulisse vidēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvī",
+     "crūdēlia",
+     "supplicia",
+     "fortiter",
+     "tulisse",
+     "vidēbantur"
+    ]
+   }
+  ]
  }
 ]

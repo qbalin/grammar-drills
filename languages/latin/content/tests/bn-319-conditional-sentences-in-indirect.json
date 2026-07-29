@@ -396,5 +396,866 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t7",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "The historian wrote that if the king had spared the captives, the citizens would have praised him.",
+    "answer": "Historicus scrīpsit, sī rēx captīvīs pepercisset, cīvēs eum laudātūrōs fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Historicus",
+     "scrīpsit",
+     "sī",
+     "rēx",
+     "captīvīs",
+     "pepercisset",
+     "cīvēs",
+     "eum",
+     "laudātūrōs",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "He replied that if the scouts had reported the danger, the general would not have lost the army.",
+    "answer": "Respondit, sī explōrātōrēs perīculum nūntiāvissent, ducem exercitum nōn āmissūrum fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Respondit",
+     "sī",
+     "explōrātōrēs",
+     "perīculum",
+     "nūntiāvissent",
+     "ducem",
+     "exercitum",
+     "nōn",
+     "āmissūrum",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "The old woman said that if fortune had favored the exiles, they would have returned home.",
+    "answer": "Anus dīxit, sī fortūna exsulibus fāvisset, eōs domum reditūrōs fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Anus",
+     "dīxit",
+     "sī",
+     "fortūna",
+     "exsulibus",
+     "fāvisset",
+     "eōs",
+     "domum",
+     "reditūrōs",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "The lawyer claimed that if the laws had been just, the citizen would not have suffered.",
+    "answer": "Advocātus affirmāvit, sī lēgēs iūstae fuissent, cīvem nōn passūrum fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Advocātus",
+     "affirmāvit",
+     "sī",
+     "lēgēs",
+     "iūstae",
+     "fuissent",
+     "cīvem",
+     "nōn",
+     "passūrum",
+     "fuisse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t8",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "He says that if the sun shines, the farmers rejoice in the fields.",
+    "answer": "Dīcit, sī sōl lūceat, agricolās in agrīs gaudēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīcit",
+     "sī",
+     "sōl",
+     "lūceat",
+     "agricolās",
+     "in",
+     "agrīs",
+     "gaudēre"
+    ]
+   },
+   {
+    "prompt": "The helmsman knows that if the wind rises, the waves overwhelm the ships.",
+    "answer": "Gubernātor scit, sī ventus surgat, undās nāvēs opprimere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gubernātor",
+     "scit",
+     "sī",
+     "ventus",
+     "surgat",
+     "undās",
+     "nāvēs",
+     "opprimere"
+    ]
+   },
+   {
+    "prompt": "The general reported that if the soldiers had lacked grain, they had endured hunger bravely.",
+    "answer": "Dux nūntiāvit, sī mīlitēs frūmentō carērent, eōs famem fortiter tolerāvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "nūntiāvit",
+     "sī",
+     "mīlitēs",
+     "frūmentō",
+     "carērent",
+     "eōs",
+     "famem",
+     "fortiter",
+     "tolerāvisse"
+    ]
+   },
+   {
+    "prompt": "The prophet warned that if the people neglected the gods, the city would perish.",
+    "answer": "Vātēs monuit, sī populus deōs neglegeret, urbem peritūram esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vātēs",
+     "monuit",
+     "sī",
+     "populus",
+     "deōs",
+     "neglegeret",
+     "urbem",
+     "peritūram",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t9",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "He thinks that if anyone should seek wisdom, he would find true happiness.",
+    "answer": "Putat, sī quis sapientiam petat, eum vēram fēlīcitātem inventūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Putat",
+     "sī",
+     "quis",
+     "sapientiam",
+     "petat",
+     "eum",
+     "vēram",
+     "fēlīcitātem",
+     "inventūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The philosopher holds that if a man were to despise death, he would live free from fear.",
+    "answer": "Philosophus cēnset, sī vir mortem contemnat, eum sine metū vīctūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "cēnset",
+     "sī",
+     "vir",
+     "mortem",
+     "contemnat",
+     "eum",
+     "sine",
+     "metū",
+     "vīctūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The teacher said that if a student should study diligently, he would surpass his companions.",
+    "answer": "Magister dīxit, sī discipulus dīligenter studēret, eum sociōs superātūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "dīxit",
+     "sī",
+     "discipulus",
+     "dīligenter",
+     "studēret",
+     "eum",
+     "sociōs",
+     "superātūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "She believes that if fortune should smile, the exiles would recover their homeland.",
+    "answer": "Crēdit, sī fortūna arrīdeat, exsulēs patriam receptūrōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crēdit",
+     "sī",
+     "fortūna",
+     "arrīdeat",
+     "exsulēs",
+     "patriam",
+     "receptūrōs",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t10",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "He says that if the king were just, the people would obey the laws gladly.",
+    "answer": "Dīcit, sī rēx iūstus esset, populum lēgibus libenter pāritūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīcit",
+     "sī",
+     "rēx",
+     "iūstus",
+     "esset",
+     "populum",
+     "lēgibus",
+     "libenter",
+     "pāritūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The poet declares that if the muse were present, he would compose a nobler song.",
+    "answer": "Poēta affirmat, sī Mūsa adesset, sē nōbilius carmen compositūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "affirmat",
+     "sī",
+     "Mūsa",
+     "adesset",
+     "sē",
+     "nōbilius",
+     "carmen",
+     "compositūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The merchant thinks that if the sea were calm, the ships would carry great wealth.",
+    "answer": "Mercātor putat, sī mare tranquillum esset, nāvēs magnās opēs portātūrās esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "putat",
+     "sī",
+     "mare",
+     "tranquillum",
+     "esset",
+     "nāvēs",
+     "magnās",
+     "opēs",
+     "portātūrās",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The captive believes that if the guards were sleeping, he would escape through the gate.",
+    "answer": "Captīvus crēdit, sī custōdēs dormīrent, sē per portam effugitūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvus",
+     "crēdit",
+     "sī",
+     "custōdēs",
+     "dormīrent",
+     "sē",
+     "per",
+     "portam",
+     "effugitūrum",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t11",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "The chronicler relates that if the consul had obeyed the augur, he would have avoided disaster.",
+    "answer": "Scrīptor nārrat, sī cōnsul augurī pāruisset, eum clādem vītātūrum fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scrīptor",
+     "nārrat",
+     "sī",
+     "cōnsul",
+     "augurī",
+     "pāruisset",
+     "eum",
+     "clādem",
+     "vītātūrum",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "He said that if the traitor had been caught, he would have been punished severely.",
+    "answer": "Dīxit, sī prōditor captus esset, futūrum fuisse ut graviter pūnīrētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīxit",
+     "sī",
+     "prōditor",
+     "captus",
+     "esset",
+     "futūrum",
+     "fuisse",
+     "ut",
+     "graviter",
+     "pūnīrētur"
+    ]
+   },
+   {
+    "prompt": "The soldiers thought that if the bridge had not been broken, the cavalry would have crossed the river.",
+    "answer": "Mīlitēs putāvērunt, sī pōns nōn frāctus esset, equitēs flūmen trānsitūrōs fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "putāvērunt",
+     "sī",
+     "pōns",
+     "nōn",
+     "frāctus",
+     "esset",
+     "equitēs",
+     "flūmen",
+     "trānsitūrōs",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "The queen replied that if the enemy had besieged the city, the citizens would have defended the walls.",
+    "answer": "Rēgīna respondit, sī hostēs urbem obsēdissent, cīvēs mūrōs dēfēnsūrōs fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "respondit",
+     "sī",
+     "hostēs",
+     "urbem",
+     "obsēdissent",
+     "cīvēs",
+     "mūrōs",
+     "dēfēnsūrōs",
+     "fuisse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t12",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "I do not doubt that, if you had defended the city, you would have won great glory.",
+    "answer": "Nōn dubitō quīn, sī urbem dēfendissēs, magnam glōriam adeptūrus fuerīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "sī",
+     "urbem",
+     "dēfendissēs",
+     "magnam",
+     "glōriam",
+     "adeptūrus",
+     "fuerīs"
+    ]
+   },
+   {
+    "prompt": "The citizens were so terrified that they would have surrendered their arms, had not the general suddenly arrived.",
+    "answer": "Cīvēs ita territī sunt, ut arma trāditūrī fuerint, nisi dux subitō advēnisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvēs",
+     "ita",
+     "territī",
+     "sunt",
+     "ut",
+     "arma",
+     "trāditūrī",
+     "fuerint",
+     "nisi",
+     "dux",
+     "subitō",
+     "advēnisset"
+    ]
+   },
+   {
+    "prompt": "I ask whether, if you had remained at home, you would have escaped the plague.",
+    "answer": "Quaerō num, sī domī mānsissēs, pestem vītātūrus fuerīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quaerō",
+     "num",
+     "sī",
+     "domī",
+     "mānsissēs",
+     "pestem",
+     "vītātūrus",
+     "fuerīs"
+    ]
+   },
+   {
+    "prompt": "The defendants were acquitted, so that the people's zeal would have been able to rouse even the coldest judges.",
+    "answer": "Reī absolūtī sunt, ut frīgidissimōs quoque iūdicēs populī studia excitāre potuerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Reī",
+     "absolūtī",
+     "sunt",
+     "ut",
+     "frīgidissimōs",
+     "quoque",
+     "iūdicēs",
+     "populī",
+     "studia",
+     "excitāre",
+     "potuerint"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t13",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "The general boasted that if the soldiers had stormed the camp, they would have seized great spoils.",
+    "answer": "Dux glōriātus est, sī mīlitēs castra expugnāvissent, eōs magna spolia captūrōs fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "glōriātus",
+     "est",
+     "sī",
+     "mīlitēs",
+     "castra",
+     "expugnāvissent",
+     "eōs",
+     "magna",
+     "spolia",
+     "captūrōs",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "I do not doubt that if you had guarded the treasure, you would have earned praise.",
+    "answer": "Nōn dubitō quīn, sī thēsaurum custōdīvissēs, laudem meritūrus fuerīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "sī",
+     "thēsaurum",
+     "custōdīvissēs",
+     "laudem",
+     "meritūrus",
+     "fuerīs"
+    ]
+   },
+   {
+    "prompt": "He replied that if the enemy attacked, the citizens would defend the walls.",
+    "answer": "Respondit, sī hostēs oppugnārent, cīvēs mūrōs dēfēnsūrōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Respondit",
+     "sī",
+     "hostēs",
+     "oppugnārent",
+     "cīvēs",
+     "mūrōs",
+     "dēfēnsūrōs",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The augur foretold that if the omens were unfavorable, the army would retreat.",
+    "answer": "Augur praedīxit, sī ōmina adversa essent, exercitum sē receptūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Augur",
+     "praedīxit",
+     "sī",
+     "ōmina",
+     "adversa",
+     "essent",
+     "exercitum",
+     "sē",
+     "receptūrum",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t14",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "The witness swore that if the judge had listened, he would have acquitted the prisoner.",
+    "answer": "Testis iūrāvit, sī iūdex audīvisset, eum reum absolūtūrum fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "iūrāvit",
+     "sī",
+     "iūdex",
+     "audīvisset",
+     "eum",
+     "reum",
+     "absolūtūrum",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "He thinks that if we seek peace, we act wisely.",
+    "answer": "Putat, sī pācem petāmus, nōs sapienter agere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Putat",
+     "sī",
+     "pācem",
+     "petāmus",
+     "nōs",
+     "sapienter",
+     "agere"
+    ]
+   },
+   {
+    "prompt": "She announced that if the storm ceased, the fleet would sail.",
+    "answer": "Nūntiāvit, sī tempestās cessāret, classem nāvigātūram esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntiāvit",
+     "sī",
+     "tempestās",
+     "cessāret",
+     "classem",
+     "nāvigātūram",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "I have no doubt that if the walls had been stronger, the town would have been saved.",
+    "answer": "Nōn dubitō quīn, sī mūrī firmiōrēs fuissent, oppidum servātum esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "sī",
+     "mūrī",
+     "firmiōrēs",
+     "fuissent",
+     "oppidum",
+     "servātum",
+     "esset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t15",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "The old man declared that if his son returned, he would rejoice greatly.",
+    "answer": "Senex dēclārāvit, sī fīlius redīret, sē magnopere gāvīsūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "dēclārāvit",
+     "sī",
+     "fīlius",
+     "redīret",
+     "sē",
+     "magnopere",
+     "gāvīsūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "We knew that if the fire had spread, the whole city would have burned.",
+    "answer": "Scīvimus, sī ignis sē prōpāgāvisset, tōtam urbem ārsūram fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scīvimus",
+     "sī",
+     "ignis",
+     "sē",
+     "prōpāgāvisset",
+     "tōtam",
+     "urbem",
+     "ārsūram",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "The poet says that if the Muse inspires him, verses flow easily.",
+    "answer": "Poēta dīcit, sī Mūsa sē īnspīret, versūs facile fluere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "dīcit",
+     "sī",
+     "Mūsa",
+     "sē",
+     "īnspīret",
+     "versūs",
+     "facile",
+     "fluere"
+    ]
+   },
+   {
+    "prompt": "I do not doubt that if you had fought bravely, you would have been honored.",
+    "answer": "Nōn dubitō quīn, sī fortiter pugnāvissēs, honōrātus essēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "sī",
+     "fortiter",
+     "pugnāvissēs",
+     "honōrātus",
+     "essēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t16",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "The ambassador reported that if the king granted peace, the war would cease.",
+    "answer": "Lēgātus rettulit, sī rēx pācem largīrētur, bellum cessātūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgātus",
+     "rettulit",
+     "sī",
+     "rēx",
+     "pācem",
+     "largīrētur",
+     "bellum",
+     "cessātūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "He asserts that if a soldier fears death, he is unworthy of victory.",
+    "answer": "Adfirmat, sī mīles mortem timeat, eum victōriā indignum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adfirmat",
+     "sī",
+     "mīles",
+     "mortem",
+     "timeat",
+     "eum",
+     "victōriā",
+     "indignum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "They believed that if the bridge had held, the cavalry would have crossed safely.",
+    "answer": "Crēdidērunt, sī pōns mānsisset, equitātum tūtō trānsitūrum fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crēdidērunt",
+     "sī",
+     "pōns",
+     "mānsisset",
+     "equitātum",
+     "tūtō",
+     "trānsitūrum",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "The commander asks whether, if he had waited, the reinforcements would have arrived.",
+    "answer": "Imperātor quaerit, num, sī exspectāvisset, auxilia adventūra fuerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "quaerit",
+     "num",
+     "sī",
+     "exspectāvisset",
+     "auxilia",
+     "adventūra",
+     "fuerint"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t17",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "The merchant said that if prices rose, he would sell his goods.",
+    "answer": "Mercātor dīxit, sī pretia crēscerent, sē mercēs vēnditūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātor",
+     "dīxit",
+     "sī",
+     "pretia",
+     "crēscerent",
+     "sē",
+     "mercēs",
+     "vēnditūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The priest warns that if the people neglect the gods, disaster follows.",
+    "answer": "Sacerdōs monet, sī populus deōs neglegat, clādem sequī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sacerdōs",
+     "monet",
+     "sī",
+     "populus",
+     "deōs",
+     "neglegat",
+     "clādem",
+     "sequī"
+    ]
+   },
+   {
+    "prompt": "I do not doubt that if the general had advanced, he would have conquered the enemy.",
+    "answer": "Nōn dubitō quīn, sī dux prōgressus esset, hostēs superātūrus fuerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "sī",
+     "dux",
+     "prōgressus",
+     "esset",
+     "hostēs",
+     "superātūrus",
+     "fuerit"
+    ]
+   },
+   {
+    "prompt": "The philosopher taught that if anyone despised pleasure, he would be truly happy.",
+    "answer": "Philosophus docuit, sī quis voluptātem contemneret, eum vērē beātum futūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "docuit",
+     "sī",
+     "quis",
+     "voluptātem",
+     "contemneret",
+     "eum",
+     "vērē",
+     "beātum",
+     "futūrum",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-t18",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "The soldier admitted that if he had fled, he would have betrayed his comrades.",
+    "answer": "Mīles cōnfessus est, sī fūgisset, sē sociōs prōditūrum fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīles",
+     "cōnfessus",
+     "est",
+     "sī",
+     "fūgisset",
+     "sē",
+     "sociōs",
+     "prōditūrum",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "He believes that if fortune favors the bold, cowards deserve nothing.",
+    "answer": "Crēdit, sī fortūna audācēs adiuvet, ignāvōs nihil merērī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crēdit",
+     "sī",
+     "fortūna",
+     "audācēs",
+     "adiuvet",
+     "ignāvōs",
+     "nihil",
+     "merērī"
+    ]
+   },
+   {
+    "prompt": "The historian records that if Hannibal had marched on Rome, the republic would have fallen.",
+    "answer": "Historicus trādit, sī Hannibal in Rōmam contendisset, rem pūblicam cāsūram fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Historicus",
+     "trādit",
+     "sī",
+     "Hannibal",
+     "in",
+     "Rōmam",
+     "contendisset",
+     "rem",
+     "pūblicam",
+     "cāsūram",
+     "fuisse"
+    ]
+   },
+   {
+    "prompt": "The teacher asks whether, if the students had studied, they would have answered correctly.",
+    "answer": "Magister rogat, num, sī discipulī studuissent, rēctē respōnsūrī fuerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "rogat",
+     "num",
+     "sī",
+     "discipulī",
+     "studuissent",
+     "rēctē",
+     "respōnsūrī",
+     "fuerint"
+    ]
+   }
+  ]
  }
 ]

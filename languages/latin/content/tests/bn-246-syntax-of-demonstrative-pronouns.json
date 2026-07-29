@@ -355,5 +355,747 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t7",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Wealth and virtue are offered to the young man; the latter brings lasting praise, the former brief pleasure.",
+    "answer": "Adulēscentī dīvitiae et virtūs offeruntur; haec perpetuam laudem, illae brevem voluptātem afferunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adulēscentī",
+     "dīvitiae",
+     "et",
+     "virtūs",
+     "offeruntur",
+     "haec",
+     "perpetuam",
+     "laudem",
+     "illae",
+     "brevem",
+     "voluptātem",
+     "afferunt"
+    ]
+   },
+   {
+    "prompt": "Cicero wrote to his brother in the following words, that the republic was in the gravest danger.",
+    "answer": "Cicerō frātrī hīs verbīs scrīpsit, rem pūblicam in maximō perīculō esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cicerō",
+     "frātrī",
+     "hīs",
+     "verbīs",
+     "scrīpsit",
+     "rem",
+     "pūblicam",
+     "in",
+     "maximō",
+     "perīculō",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "I understand this, that the minds of all citizens are turned toward the new consul.",
+    "answer": "Illud intellegō, omnium cīvium animōs ad novum cōnsulem conversōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illud",
+     "intellegō",
+     "omnium",
+     "cīvium",
+     "animōs",
+     "ad",
+     "novum",
+     "cōnsulem",
+     "conversōs",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "That fellow, driven by envy, accused the innocent man before the judges.",
+    "answer": "Iste homō, invidiā incitātus, innocentem apud iūdicēs accūsāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iste",
+     "homō",
+     "invidiā",
+     "incitātus",
+     "innocentem",
+     "apud",
+     "iūdicēs",
+     "accūsāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t8",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "The famous Scipio, conqueror of Carthage, was honored by the whole people.",
+    "answer": "Scīpiō ille, victor Carthāginis, ā tōtō populō honōrātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Scīpiō",
+     "ille",
+     "victor",
+     "Carthāginis",
+     "ā",
+     "tōtō",
+     "populō",
+     "honōrātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "I loved Fabius, the man who by delaying restored the state.",
+    "answer": "Fabium, eum quī cūnctandō rem restituit, dīlēxī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fabium",
+     "eum",
+     "quī",
+     "cūnctandō",
+     "rem",
+     "restituit",
+     "dīlēxī"
+    ]
+   },
+   {
+    "prompt": "I am not such a woman as to be moved by empty threats.",
+    "answer": "Nōn sum ea quae inānibus minīs commovear.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "sum",
+     "ea",
+     "quae",
+     "inānibus",
+     "minīs",
+     "commovear"
+    ]
+   },
+   {
+    "prompt": "He did not perceive—a thing which he will soon regret—that many witnesses remained.",
+    "answer": "Nōn sēnsit, id quod mox dolēbit, multōs testēs superesse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "sēnsit",
+     "id",
+     "quod",
+     "mox",
+     "dolēbit",
+     "multōs",
+     "testēs",
+     "superesse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t9",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "No speeches delight me except those of Cicero.",
+    "answer": "Nūllae mē ōrātiōnēs dēlectant nisi Cicerōnis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūllae",
+     "mē",
+     "ōrātiōnēs",
+     "dēlectant",
+     "nisi",
+     "Cicerōnis"
+    ]
+   },
+   {
+    "prompt": "He had served in the army of Caesar and afterward in that of Pompey.",
+    "answer": "In exercitū Caesaris et posteā in Pompeī mīlitāverat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "exercitū",
+     "Caesaris",
+     "et",
+     "posteā",
+     "Pompeī",
+     "mīlitāverat"
+    ]
+   },
+   {
+    "prompt": "The general threatened the captives with imprisonment, and that too everlasting.",
+    "answer": "Dux captīvīs vincula, et ea sempiterna, minātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "captīvīs",
+     "vincula",
+     "et",
+     "ea",
+     "sempiterna",
+     "minātus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "A brave man, whom we also call wise, fears no dangers.",
+    "answer": "Vir fortis, quem eundem sapientem appellāmus, nūlla perīcula timet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vir",
+     "fortis",
+     "quem",
+     "eundem",
+     "sapientem",
+     "appellāmus",
+     "nūlla",
+     "perīcula",
+     "timet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t10",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "On that very day the enemy attacked the camp.",
+    "answer": "Eō ipsō diē hostēs castra oppugnāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eō",
+     "ipsō",
+     "diē",
+     "hostēs",
+     "castra",
+     "oppugnāvērunt"
+    ]
+   },
+   {
+    "prompt": "The gates opened of their own accord, and the terrified guards fled.",
+    "answer": "Portae ipsae sē aperuērunt, et perterritī custōdēs fūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Portae",
+     "ipsae",
+     "sē",
+     "aperuērunt",
+     "et",
+     "perterritī",
+     "custōdēs",
+     "fūgērunt"
+    ]
+   },
+   {
+    "prompt": "By mere fear the citizens were driven from the walls of the city.",
+    "answer": "Ipsō terrōre cīvēs ā moenibus urbis pulsī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ipsō",
+     "terrōre",
+     "cīvēs",
+     "ā",
+     "moenibus",
+     "urbis",
+     "pulsī",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The wise man cannot restrain himself when he is driven by anger.",
+    "answer": "Sapiēns sē ipse continēre nōn potest, cum īrā incitātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "sē",
+     "ipse",
+     "continēre",
+     "nōn",
+     "potest",
+     "cum",
+     "īrā",
+     "incitātur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t11",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "The soldiers feared that the leader would desert them and flee to the enemy.",
+    "answer": "Mīlitēs timuērunt nē dux ab ipsīs dēscīsceret et ad hostēs fugeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "timuērunt",
+     "nē",
+     "dux",
+     "ab",
+     "ipsīs",
+     "dēscīsceret",
+     "et",
+     "ad",
+     "hostēs",
+     "fugeret"
+    ]
+   },
+   {
+    "prompt": "Men ought to bear most calmly those things which have been brought about by their own fault.",
+    "answer": "Hominēs aequissimē ferre dēbent ea quae ipsōrum culpā contracta sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hominēs",
+     "aequissimē",
+     "ferre",
+     "dēbent",
+     "ea",
+     "quae",
+     "ipsōrum",
+     "culpā",
+     "contracta",
+     "sunt"
+    ]
+   },
+   {
+    "prompt": "The consul himself was present in person and encouraged the wavering ranks.",
+    "answer": "Cōnsul ipse aderat et dubitantēs ōrdinēs cohortābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "ipse",
+     "aderat",
+     "et",
+     "dubitantēs",
+     "ōrdinēs",
+     "cohortābātur"
+    ]
+   },
+   {
+    "prompt": "That wretched fellow squandered his inheritance and later begged for bread.",
+    "answer": "Iste miser patrimōnium dissipāvit et posteā pānem mendīcābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iste",
+     "miser",
+     "patrimōnium",
+     "dissipāvit",
+     "et",
+     "posteā",
+     "pānem",
+     "mendīcābat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t12",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "The king answered in the following words, that he would never surrender the citadel.",
+    "answer": "Rēx hīs verbīs respondit, sē numquam arcem trāditūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "hīs",
+     "verbīs",
+     "respondit",
+     "sē",
+     "numquam",
+     "arcem",
+     "trāditūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "A great grief crushed the mother, which likewise befell the father.",
+    "answer": "Magnus dolor mātrem oppressit, quod idem patrī contigit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magnus",
+     "dolor",
+     "mātrem",
+     "oppressit",
+     "quod",
+     "idem",
+     "patrī",
+     "contigit"
+    ]
+   },
+   {
+    "prompt": "We reached the very bank of the river, where the enemy were awaiting us.",
+    "answer": "Ad ipsam flūminis rīpam pervēnimus, ubi hostēs nōs exspectābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ad",
+     "ipsam",
+     "flūminis",
+     "rīpam",
+     "pervēnimus",
+     "ubi",
+     "hostēs",
+     "nōs",
+     "exspectābant"
+    ]
+   },
+   {
+    "prompt": "We honored the man who freed the captives from cruel bondage.",
+    "answer": "Eum quī captīvōs ā crūdēlī servitūte līberāvit honōrāvimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eum",
+     "quī",
+     "captīvōs",
+     "ā",
+     "crūdēlī",
+     "servitūte",
+     "līberāvit",
+     "honōrāvimus"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t13",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Caesar and Pompey waged war; the latter fled, the former conquered.",
+    "answer": "Caesar et Pompēius bellum gessērunt; hīc fūgit, ille vīcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "et",
+     "Pompēius",
+     "bellum",
+     "gessērunt",
+     "hīc",
+     "fūgit",
+     "ille",
+     "vīcit"
+    ]
+   },
+   {
+    "prompt": "The famous Socrates used to teach young men wisdom in the forum.",
+    "answer": "Sōcratēs ille iuvenēs sapientiam in forō docēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sōcratēs",
+     "ille",
+     "iuvenēs",
+     "sapientiam",
+     "in",
+     "forō",
+     "docēbat"
+    ]
+   },
+   {
+    "prompt": "I understand this, that fortune favors the brave.",
+    "answer": "Illud intellegō, fortūnam fortēs adiuvāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illud",
+     "intellegō",
+     "fortūnam",
+     "fortēs",
+     "adiuvāre"
+    ]
+   },
+   {
+    "prompt": "That fellow scorns the laws and fears no punishment.",
+    "answer": "Iste homō lēgēs contemnit et nūllam poenam timet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iste",
+     "homō",
+     "lēgēs",
+     "contemnit",
+     "et",
+     "nūllam",
+     "poenam",
+     "timet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t14",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "I honored Fabius, the man who by delaying restored the state.",
+    "answer": "Fabium, eum quī cūnctandō rem pūblicam restituit, honōrāvī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fabium",
+     "eum",
+     "quī",
+     "cūnctandō",
+     "rem",
+     "pūblicam",
+     "restituit",
+     "honōrāvī"
+    ]
+   },
+   {
+    "prompt": "You are not such a man as to betray your country.",
+    "answer": "Nōn is es quī patriam prōdās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "is",
+     "es",
+     "quī",
+     "patriam",
+     "prōdās"
+    ]
+   },
+   {
+    "prompt": "He conquered the enemy in a single battle — a thing which no one had hoped.",
+    "answer": "Hostēs, id quod nēmō spērāverat, ūnō proeliō vīcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hostēs",
+     "id",
+     "quod",
+     "nēmō",
+     "spērāverat",
+     "ūnō",
+     "proeliō",
+     "vīcit"
+    ]
+   },
+   {
+    "prompt": "The plays of Terence delight me, but not those of Plautus.",
+    "answer": "Terentī fābulae mē dēlectant, sed nōn Plautī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Terentī",
+     "fābulae",
+     "mē",
+     "dēlectant",
+     "sed",
+     "nōn",
+     "Plautī"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t15",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Cicero, whom we also call the father of his country, saved Rome.",
+    "answer": "Cicerō, quem eundem patrem patriae appellāmus, Rōmam servāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cicerō",
+     "quem",
+     "eundem",
+     "patrem",
+     "patriae",
+     "appellāmus",
+     "Rōmam",
+     "servāvit"
+    ]
+   },
+   {
+    "prompt": "He bore his exile, and that too undeserved, with a calm mind.",
+    "answer": "Exsilium, et id immeritum, aequō animō tulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "exsilium",
+     "et",
+     "id",
+     "immeritum",
+     "aequō",
+     "animō",
+     "tulit"
+    ]
+   },
+   {
+    "prompt": "On that very night the leader led his forces across the river.",
+    "answer": "Eā ipsā nocte dux cōpiās trāns flūmen dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eā",
+     "ipsā",
+     "nocte",
+     "dux",
+     "cōpiās",
+     "trāns",
+     "flūmen",
+     "dūxit"
+    ]
+   },
+   {
+    "prompt": "The gates opened of their own accord, and the city was taken by mere terror.",
+    "answer": "Portae sē ipsae aperuērunt, et urbs ipsō terrōre capta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "portae",
+     "sē",
+     "ipsae",
+     "aperuērunt",
+     "et",
+     "urbs",
+     "ipsō",
+     "terrōre",
+     "capta",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t16",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "The wise man cannot always control himself in anger.",
+    "answer": "Sapiēns sē ipse in īrā semper continēre nōn potest.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sapiēns",
+     "sē",
+     "ipse",
+     "in",
+     "īrā",
+     "semper",
+     "continēre",
+     "nōn",
+     "potest"
+    ]
+   },
+   {
+    "prompt": "The leader feared that his soldiers would desert him and cross over to the enemy.",
+    "answer": "Dux timēbat nē mīlitēs ab ipsō dēscīscerent et ad hostēs trānsīrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dux",
+     "timēbat",
+     "nē",
+     "mīlitēs",
+     "ab",
+     "ipsō",
+     "dēscīscerent",
+     "et",
+     "ad",
+     "hostēs",
+     "trānsīrent"
+    ]
+   },
+   {
+    "prompt": "The consul spoke these words: that the fatherland must be defended by all.",
+    "answer": "Cōnsul haec verba dīxit: patriam ab omnibus dēfendendam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnsul",
+     "haec",
+     "verba",
+     "dīxit",
+     "patriam",
+     "ab",
+     "omnibus",
+     "dēfendendam",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "This is true glory, to have deserved well of the republic.",
+    "answer": "Haec est vēra glōria, dē rē pūblicā bene meruisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "est",
+     "vēra",
+     "glōria",
+     "dē",
+     "rē",
+     "pūblicā",
+     "bene",
+     "meruisse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-t17",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "The famous Homer sang of the wrath of Achilles and the fall of Troy.",
+    "answer": "Homērus ille īram Achillis et excidium Trōiae cecinit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Homērus",
+     "ille",
+     "īram",
+     "Achillis",
+     "et",
+     "excidium",
+     "Trōiae",
+     "cecinit"
+    ]
+   },
+   {
+    "prompt": "This soldier, whom we likewise call brave, never fled from battle.",
+    "answer": "Hīc mīles, quem eundem fortem vocāmus, numquam ex proeliō fūgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hīc",
+     "mīles",
+     "quem",
+     "eundem",
+     "fortem",
+     "vocāmus",
+     "numquam",
+     "ex",
+     "proeliō",
+     "fūgit"
+    ]
+   },
+   {
+    "prompt": "The virtue of our ancestors was greater than that of their descendants.",
+    "answer": "Māiōrum virtūs māior fuit quam posterōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "māiōrum",
+     "virtūs",
+     "māior",
+     "fuit",
+     "quam",
+     "posterōrum"
+    ]
+   },
+   {
+    "prompt": "Riches and wisdom are sought by men; the latter is lasting, the former fleeting.",
+    "answer": "Dīvitiae et sapientia ab hominibus petuntur; haec perpetua, illae cadūcae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīvitiae",
+     "et",
+     "sapientia",
+     "ab",
+     "hominibus",
+     "petuntur",
+     "haec",
+     "perpetua",
+     "illae",
+     "cadūcae",
+     "sunt"
+    ]
+   }
+  ]
  }
 ]

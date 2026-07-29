@@ -380,5 +380,269 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-t7",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "The general too, worn out by the long march, praised his weary soldiers.",
+    "answer": "Dux quoque, longō itinere dēfessus, mīlitēs suōs laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "quoque",
+     "longō",
+     "itinere",
+     "dēfessus",
+     "mīlitēs",
+     "suōs",
+     "laudāvit"
+    ]
+   },
+   {
+    "prompt": "Not even the swiftest horse could escape the raging flames.",
+    "answer": "Nē celerrimus quidem equus flammās saevientēs effugere potuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "celerrimus",
+     "quidem",
+     "equus",
+     "flammās",
+     "saevientēs",
+     "effugere",
+     "potuit"
+    ]
+   },
+   {
+    "prompt": "You praise wisdom indeed, yet you never follow its counsels.",
+    "answer": "Sapientiam quidem laudās, numquam tamen cōnsilia eius sequeris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapientiam",
+     "quidem",
+     "laudās",
+     "numquam",
+     "tamen",
+     "cōnsilia",
+     "eius",
+     "sequeris"
+    ]
+   },
+   {
+    "prompt": "The tyrant held nothing dear, neither friends nor faithful citizens.",
+    "answer": "Tyrannus nihil cārum habēbat, neque amīcōs neque cīvēs fidēlēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tyrannus",
+     "nihil",
+     "cārum",
+     "habēbat",
+     "neque",
+     "amīcōs",
+     "cīvēs",
+     "fidēlēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-t8",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "Even in the greatest danger the leader kept his spirit calm.",
+    "answer": "Etiam in summō perīculō dux animum aequum servāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Etiam",
+     "in",
+     "summō",
+     "perīculō",
+     "dux",
+     "animum",
+     "aequum",
+     "servāvit"
+    ]
+   },
+   {
+    "prompt": "Not even by threats was the maiden compelled to betray her father.",
+    "answer": "Nē minīs quidem virgō coācta est patrem prōdere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "minīs",
+     "quidem",
+     "virgō",
+     "coācta",
+     "est",
+     "patrem",
+     "prōdere"
+    ]
+   },
+   {
+    "prompt": "The merchants were by no means safe, yet they kept making for the harbor.",
+    "answer": "Mercātōrēs haud tūtī erant, portum tamen petēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātōrēs",
+     "haud",
+     "tūtī",
+     "erant",
+     "portum",
+     "tamen",
+     "petēbant"
+    ]
+   },
+   {
+    "prompt": "Some fled from the city, but the rest defended the walls fiercely.",
+    "answer": "Nōn nūllī ex urbe fūgērunt, cēterī tamen mūrōs ācriter dēfendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "nūllī",
+     "ex",
+     "urbe",
+     "fūgērunt",
+     "cēterī",
+     "tamen",
+     "mūrōs",
+     "ācriter",
+     "dēfendērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-t9",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "The queen herself, moved by pity, freed even the captives.",
+    "answer": "Rēgīna ipsa, misericordiā mōta, etiam captīvōs līberāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēgīna",
+     "ipsa",
+     "misericordiā",
+     "mōta",
+     "etiam",
+     "captīvōs",
+     "līberāvit"
+    ]
+   },
+   {
+    "prompt": "I scarcely know whether the poet's glory will endure through the ages.",
+    "answer": "Haud sciō an poētae glōria per saecula mānsūra sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haud",
+     "sciō",
+     "an",
+     "poētae",
+     "glōria",
+     "per",
+     "saecula",
+     "mānsūra",
+     "sit"
+    ]
+   },
+   {
+    "prompt": "The old man had no hope, neither in the gods nor in men.",
+    "answer": "Senex nūllam spem habēbat, neque in deīs neque in hominibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "nūllam",
+     "spem",
+     "habēbat",
+     "neque",
+     "in",
+     "deīs",
+     "hominibus"
+    ]
+   },
+   {
+    "prompt": "The soldiers were weary; nevertheless they pursued the fleeing enemy.",
+    "answer": "Mīlitēs fessī erant; hostēs tamen fugientēs secūtī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "fessī",
+     "erant",
+     "hostēs",
+     "tamen",
+     "fugientēs",
+     "secūtī",
+     "sunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-t10",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "That victory indeed brought joy, but it cost much blood.",
+    "answer": "Ea quidem victōria gaudium attulit, sed multō sanguine cōnstitit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ea",
+     "quidem",
+     "victōria",
+     "gaudium",
+     "attulit",
+     "sed",
+     "multō",
+     "sanguine",
+     "cōnstitit"
+    ]
+   },
+   {
+    "prompt": "Not even the wise man, however great his virtue, escapes death.",
+    "answer": "Nē sapiēns quidem, quamvīs magnā virtūte, mortem effugit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "sapiēns",
+     "quidem",
+     "quamvīs",
+     "magnā",
+     "virtūte",
+     "mortem",
+     "effugit"
+    ]
+   },
+   {
+    "prompt": "The commander too was wounded, yet he did not leave the battle.",
+    "answer": "Imperātor quoque vulnerātus est, proelium tamen nōn relīquit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "quoque",
+     "vulnerātus",
+     "est",
+     "proelium",
+     "tamen",
+     "nōn",
+     "relīquit"
+    ]
+   },
+   {
+    "prompt": "No one ever entrusted anything to the treacherous slave.",
+    "answer": "Nēmō umquam quicquam servō perfidō crēdidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nēmō",
+     "umquam",
+     "quicquam",
+     "servō",
+     "perfidō",
+     "crēdidit"
+    ]
+   }
+  ]
  }
 ]

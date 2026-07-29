@@ -335,5 +335,201 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t7",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The teacher said that the clever pupil had solved all the questions.",
+    "answer": "Praeceptor dīxit discipulum sollertem omnēs quaestiōnēs solvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Praeceptor",
+     "dīxit",
+     "discipulum",
+     "sollertem",
+     "omnēs",
+     "quaestiōnēs",
+     "solvisse"
+    ]
+   },
+   {
+    "prompt": "I suspect that the guest concealed the truth out of shame.",
+    "answer": "Suspicor hospitem vēritātem pudōre cēlāvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Suspicor",
+     "hospitem",
+     "vēritātem",
+     "pudōre",
+     "cēlāvisse"
+    ]
+   },
+   {
+    "prompt": "The witness swears that he saw the murder committed in the cave.",
+    "answer": "Testis iūrat sē homicidium in antrō commissum vīdisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "iūrat",
+     "sē",
+     "homicidium",
+     "in",
+     "antrō",
+     "commissum",
+     "vīdisse"
+    ]
+   },
+   {
+    "prompt": "The old woman used to say that the ancient urn had been filled with water.",
+    "answer": "Anus dīcēbat urnam vetustam aquā complētam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Anus",
+     "dīcēbat",
+     "urnam",
+     "vetustam",
+     "aquā",
+     "complētam",
+     "esse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t8",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Caesar promised that he would spare the town if the leaders were captured.",
+    "answer": "Caesar pollicitus est sē oppidō parsūrum esse, sī ducēs captī essent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "pollicitus",
+     "est",
+     "sē",
+     "oppidō",
+     "parsūrum",
+     "esse",
+     "sī",
+     "ducēs",
+     "captī",
+     "essent"
+    ]
+   },
+   {
+    "prompt": "The general perceives that the soldiers will conquer because they are brave.",
+    "answer": "Dux sentit mīlitēs victūrōs esse quod fortēs sint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "sentit",
+     "mīlitēs",
+     "victūrōs",
+     "esse",
+     "quod",
+     "fortēs",
+     "sint"
+    ]
+   },
+   {
+    "prompt": "He replied that, if the gods should aid him, he would return home.",
+    "answer": "Respondit, sī dī sē adiuvārent, sē domum reditūrum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Respondit",
+     "sī",
+     "dī",
+     "sē",
+     "adiuvārent",
+     "domum",
+     "reditūrum",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The envoys announced that the king would give gifts to whoever had fought bravely.",
+    "answer": "Lēgātī nūntiāvērunt rēgem dōna datūrum esse eī quī fortiter pugnāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgātī",
+     "nūntiāvērunt",
+     "rēgem",
+     "dōna",
+     "datūrum",
+     "esse",
+     "eī",
+     "quī",
+     "fortiter",
+     "pugnāvisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-t9",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The teacher teaches that idleness corrupts the talents of the young.",
+    "answer": "Praeceptor docet inertiam ingenia iuvenum corrumpere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Praeceptor",
+     "docet",
+     "inertiam",
+     "ingenia",
+     "iuvenum",
+     "corrumpere"
+    ]
+   },
+   {
+    "prompt": "The physician said that the swelling had grown because the wound had been neglected.",
+    "answer": "Medicus dīxit tūber crēvisse quod vulnus neglēctum esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Medicus",
+     "dīxit",
+     "tūber",
+     "crēvisse",
+     "quod",
+     "vulnus",
+     "neglēctum",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "I know that you have often awaited the return of your friend.",
+    "answer": "Sciō tē reditum amīcī saepe exspectāvisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sciō",
+     "tē",
+     "reditum",
+     "amīcī",
+     "saepe",
+     "exspectāvisse"
+    ]
+   },
+   {
+    "prompt": "The captured woman complained that she had been dragged from her home by force.",
+    "answer": "Mulier abducta questa est sē vī ā domō abstractam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mulier",
+     "abducta",
+     "questa",
+     "est",
+     "sē",
+     "vī",
+     "ā",
+     "domō",
+     "abstractam",
+     "esse"
+    ]
+   }
+  ]
  }
 ]

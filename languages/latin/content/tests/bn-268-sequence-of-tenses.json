@@ -331,5 +331,1218 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t7",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The philosopher has shown why he had abandoned the false definition.",
+    "answer": "Philosophus dēmōnstrāvit cūr falsam dēfīnītiōnem relīquisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "dēmōnstrāvit",
+     "cūr",
+     "falsam",
+     "dēfīnītiōnem",
+     "relīquisset"
+    ]
+   },
+   {
+    "prompt": "The general asked what plan the enemy would adopt against the fleet.",
+    "answer": "Dux quaesīvit quod cōnsilium hostēs contrā classem caperent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "quaesīvit",
+     "quod",
+     "cōnsilium",
+     "hostēs",
+     "contrā",
+     "classem",
+     "caperent"
+    ]
+   },
+   {
+    "prompt": "I do not doubt that the merchant will soon repent of his greed.",
+    "answer": "Nōn dubitō quīn mercātōrem mox avāritiae suae paeniteat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "mercātōrem",
+     "mox",
+     "avāritiae",
+     "suae",
+     "paeniteat"
+    ]
+   },
+   {
+    "prompt": "The Gauls promised they would do whatever the leader should have ordered.",
+    "answer": "Gallī pollicitī sunt sē factūrōs esse quaecumque dux imperāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallī",
+     "pollicitī",
+     "sunt",
+     "sē",
+     "factūrōs",
+     "esse",
+     "quaecumque",
+     "dux",
+     "imperāvisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t8",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The commander exhorts his allies to endure adverse fortune with great courage.",
+    "answer": "Imperātor sociōs hortātur ut adversam fortūnam magnō animō sustineant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "sociōs",
+     "hortātur",
+     "ut",
+     "adversam",
+     "fortūnam",
+     "magnō",
+     "animō",
+     "sustineant"
+    ]
+   },
+   {
+    "prompt": "The consul exhorted the townsmen to defend the walls.",
+    "answer": "Cōnsul oppidānōs hortātur ut moenia dēfenderent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "oppidānōs",
+     "hortātur",
+     "ut",
+     "moenia",
+     "dēfenderent"
+    ]
+   },
+   {
+    "prompt": "Justice is such a thing that, even if all men scorned it, it would still be worthy of praise for its own worth.",
+    "answer": "Iūstitia tālis est ut, etiam sī omnēs eam contemnerent, tamen suā dignitāte laudanda esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūstitia",
+     "tālis",
+     "est",
+     "ut",
+     "etiam",
+     "sī",
+     "omnēs",
+     "eam",
+     "contemnerent",
+     "tamen",
+     "suā",
+     "dignitāte",
+     "laudanda",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "If you called only those happy who possessed riches, you would except almost no one.",
+    "answer": "Sī sōlōs beātōs dīcerēs quī dīvitiās habērent, paene nēminem exciperēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "sōlōs",
+     "beātōs",
+     "dīcerēs",
+     "quī",
+     "dīvitiās",
+     "habērent",
+     "paene",
+     "nēminem",
+     "exciperēs"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t9",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The historian seems to have related in what manner the city had fallen.",
+    "answer": "Historicus vidētur nārrāvisse quō modō urbs cecidisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Historicus",
+     "vidētur",
+     "nārrāvisse",
+     "quō",
+     "modō",
+     "urbs",
+     "cecidisset"
+    ]
+   },
+   {
+    "prompt": "The scouts seem to have concealed what they had found in the cave.",
+    "answer": "Explōrātōrēs videntur cēlāvisse quid in spēluncā invēnissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Explōrātōrēs",
+     "videntur",
+     "cēlāvisse",
+     "quid",
+     "in",
+     "spēluncā",
+     "invēnissent"
+    ]
+   },
+   {
+    "prompt": "The general was so moved by anger that he punished the deserter with death.",
+    "answer": "Dux tantā īrā commōtus est ut trānsfugam morte multāverit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "tantā",
+     "īrā",
+     "commōtus",
+     "est",
+     "ut",
+     "trānsfugam",
+     "morte",
+     "multāverit"
+    ]
+   },
+   {
+    "prompt": "The tyrant so devastated the region that it cannot be restored.",
+    "answer": "Tyrannus regiōnem ita vāstāvit ut restituī nōn possit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tyrannus",
+     "regiōnem",
+     "ita",
+     "vāstāvit",
+     "ut",
+     "restituī",
+     "nōn",
+     "possit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t10",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "I do not doubt that the envoy will come before nightfall.",
+    "answer": "Nōn dubitō quīn lēgātus ante noctem ventūrus sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "lēgātus",
+     "ante",
+     "noctem",
+     "ventūrus",
+     "sit"
+    ]
+   },
+   {
+    "prompt": "I did not doubt that the young man would return to his homeland.",
+    "answer": "Nōn dubitābam quīn adulēscēns in patriam reditūrus esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitābam",
+     "quīn",
+     "adulēscēns",
+     "in",
+     "patriam",
+     "reditūrus",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "I do not doubt that the walls will soon be destroyed.",
+    "answer": "Nōn dubitō quīn moenia brevī dēleantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "moenia",
+     "brevī",
+     "dēleantur"
+    ]
+   },
+   {
+    "prompt": "The soldiers asked who would lead them across the river.",
+    "answer": "Mīlitēs quaesīvērunt quis sē trāns flūmen ductūrus esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "quaesīvērunt",
+     "quis",
+     "sē",
+     "trāns",
+     "flūmen",
+     "ductūrus",
+     "esset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t11",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "I fear that the guest will arrive before the feast is prepared.",
+    "answer": "Timeō nē hospes veniat priusquam epulae parentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Timeō",
+     "nē",
+     "hospes",
+     "veniat",
+     "priusquam",
+     "epulae",
+     "parentur"
+    ]
+   },
+   {
+    "prompt": "The farmer feared that a sudden storm would ruin the ripe crops.",
+    "answer": "Agricola timēbat nē subita tempestās mātūrās segetēs corrumperet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "timēbat",
+     "nē",
+     "subita",
+     "tempestās",
+     "mātūrās",
+     "segetēs",
+     "corrumperet"
+    ]
+   },
+   {
+    "prompt": "The mother feared that her son would not return from the war.",
+    "answer": "Māter verēbātur nē fīlius ex bellō nōn redīret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māter",
+     "verēbātur",
+     "nē",
+     "fīlius",
+     "ex",
+     "bellō",
+     "nōn",
+     "redīret"
+    ]
+   },
+   {
+    "prompt": "Caesar was waiting to see what the enemy would attempt during the night.",
+    "answer": "Caesar exspectābat quid hostēs per noctem cōnārentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "exspectābat",
+     "quid",
+     "hostēs",
+     "per",
+     "noctem",
+     "cōnārentur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t12",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The citizens promised they would praise whatever the poet should have written.",
+    "answer": "Cīvēs pollicitī sunt sē laudātūrōs esse quidquid poēta scrīpsisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvēs",
+     "pollicitī",
+     "sunt",
+     "sē",
+     "laudātūrōs",
+     "esse",
+     "quidquid",
+     "poēta",
+     "scrīpsisset"
+    ]
+   },
+   {
+    "prompt": "The allies promise they will hand over whatever the victor shall have demanded.",
+    "answer": "Sociī pollicentur sē trāditūrōs esse quaecumque victor poposcerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sociī",
+     "pollicentur",
+     "sē",
+     "trāditūrōs",
+     "esse",
+     "quaecumque",
+     "victor",
+     "poposcerit"
+    ]
+   },
+   {
+    "prompt": "I do not know what the reason was why you came to me so late.",
+    "answer": "Nesciō quae causa fuerit cūr tam sērō ad mē venīrēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nesciō",
+     "quae",
+     "causa",
+     "fuerit",
+     "cūr",
+     "tam",
+     "sērō",
+     "ad",
+     "mē",
+     "venīrēs"
+    ]
+   },
+   {
+    "prompt": "The young man flourished with such eloquence that I have seen a sharper mind in no one.",
+    "answer": "Iuvenis tantā ēloquentiā flōruit ut in nūllō ācriōrem mentem vīderim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iuvenis",
+     "tantā",
+     "ēloquentiā",
+     "flōruit",
+     "ut",
+     "in",
+     "nūllō",
+     "ācriōrem",
+     "mentem",
+     "vīderim"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t13",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The general revealed why he had led the legions across the swollen river.",
+    "answer": "Dux aperuit cūr legiōnēs trāns flūmen tumidum dūxisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dux",
+     "aperuit",
+     "cūr",
+     "legiōnēs",
+     "trāns",
+     "flūmen",
+     "tumidum",
+     "dūxisset"
+    ]
+   },
+   {
+    "prompt": "The judge asked how much gold the thief had hidden in the field.",
+    "answer": "Iūdex rogāvit quantum aurī fūr in agrō cēlāvisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iūdex",
+     "rogāvit",
+     "quantum",
+     "aurī",
+     "fūr",
+     "in",
+     "agrō",
+     "cēlāvisset"
+    ]
+   },
+   {
+    "prompt": "I have shown by what plan our ancestors had preserved their liberty.",
+    "answer": "Dēmōnstrāvī quō cōnsiliō maiōrēs nostrī lībertātem servāvissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dēmōnstrāvī",
+     "quō",
+     "cōnsiliō",
+     "maiōrēs",
+     "nostrī",
+     "lībertātem",
+     "servāvissent"
+    ]
+   },
+   {
+    "prompt": "The messenger told in what manner the citadel had been taken by night.",
+    "answer": "Nūntius nārrāvit quō modō arx nocte capta esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūntius",
+     "nārrāvit",
+     "quō",
+     "modō",
+     "arx",
+     "nocte",
+     "capta",
+     "esset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t14",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The consul fortified the camp so that the enemy might not break through by night.",
+    "answer": "Cōnsul castra mūnīvit nē hostēs nocte perrumperent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnsul",
+     "castra",
+     "mūnīvit",
+     "nē",
+     "hostēs",
+     "nocte",
+     "perrumperent"
+    ]
+   },
+   {
+    "prompt": "Sulla urges his men to keep watch, lest a sudden sortie catch them off guard.",
+    "answer": "Sulla suōs hortātur ut vigilent nē subita ēruptiō incautōs opprimat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sulla",
+     "suōs",
+     "hortātur",
+     "ut",
+     "vigilent",
+     "nē",
+     "subita",
+     "ēruptiō",
+     "incautōs",
+     "opprimat"
+    ]
+   },
+   {
+    "prompt": "The queen sent envoys to beg peace from the victorious king.",
+    "answer": "Rēgīna lēgātōs mīsit ut pācem ā rēge victōre dēprecārentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēgīna",
+     "lēgātōs",
+     "mīsit",
+     "ut",
+     "pācem",
+     "ā",
+     "rēge",
+     "victōre",
+     "dēprecārentur"
+    ]
+   },
+   {
+    "prompt": "He hid the letters in the wax lest a traitor read the secret plan.",
+    "answer": "Litterās in cērā cēlāvit nē prōditor arcānum cōnsilium legeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "litterās",
+     "in",
+     "cērā",
+     "cēlāvit",
+     "nē",
+     "prōditor",
+     "arcānum",
+     "cōnsilium",
+     "legeret"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t15",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "So great a storm arose that the whole fleet was scattered along the shore.",
+    "answer": "Tanta tempestās orta est ut tōta classis in lītore dispergerētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tanta",
+     "tempestās",
+     "orta",
+     "est",
+     "ut",
+     "tōta",
+     "classis",
+     "in",
+     "lītore",
+     "dispergerētur"
+    ]
+   },
+   {
+    "prompt": "The orator spoke so eloquently that no one departed unmoved from the forum.",
+    "answer": "Ōrātor tam disertē dīxit ut nēmō immōtus ē forō discēderet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ōrātor",
+     "tam",
+     "disertē",
+     "dīxit",
+     "ut",
+     "nēmō",
+     "immōtus",
+     "ē",
+     "forō",
+     "discēderet"
+    ]
+   },
+   {
+    "prompt": "The king was so moved that he adjudged the envoy an enemy on the spot.",
+    "answer": "Rēx tantum mōtus est ut lēgātum statim hostem iūdicāverit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēx",
+     "tantum",
+     "mōtus",
+     "est",
+     "ut",
+     "lēgātum",
+     "statim",
+     "hostem",
+     "iūdicāverit"
+    ]
+   },
+   {
+    "prompt": "Verres so ruined the province that it cannot be restored afterward.",
+    "answer": "Verrēs prōvinciam ita perdidit ut ea posteā restituī nōn possit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Verrēs",
+     "prōvinciam",
+     "ita",
+     "perdidit",
+     "ut",
+     "ea",
+     "posteā",
+     "restituī",
+     "nōn",
+     "possit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t16",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "I fear that the enemy will attack the walls before dawn.",
+    "answer": "Timeō nē hostēs ante lūcem moenia oppugnent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "timeō",
+     "nē",
+     "hostēs",
+     "ante",
+     "lūcem",
+     "moenia",
+     "oppugnent"
+    ]
+   },
+   {
+    "prompt": "The mother was afraid that her son would not return from the war.",
+    "answer": "Māter timēbat nē fīlius ā bellō nōn redīret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "māter",
+     "timēbat",
+     "nē",
+     "fīlius",
+     "ā",
+     "bellō",
+     "nōn",
+     "redīret"
+    ]
+   },
+   {
+    "prompt": "We were afraid that the treaty would soon be broken by the faithless tribe.",
+    "answer": "Verēbāmur nē foedus brevī ā gente perfidā rumperētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "verēbāmur",
+     "nē",
+     "foedus",
+     "brevī",
+     "ā",
+     "gente",
+     "perfidā",
+     "rumperētur"
+    ]
+   },
+   {
+    "prompt": "The fishermen feared that a chance wave might overwhelm the little skiff.",
+    "answer": "Piscātōrēs timuērunt nē fluctus forte scapham parvam obrueret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "piscātōrēs",
+     "timuērunt",
+     "nē",
+     "fluctus",
+     "forte",
+     "scapham",
+     "parvam",
+     "obrueret"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t17",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "I do not doubt that the general will come with fresh forces.",
+    "answer": "Nōn dubitō quīn dux cum novīs cōpiīs ventūrus sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "dubitō",
+     "quīn",
+     "dux",
+     "cum",
+     "novīs",
+     "cōpiīs",
+     "ventūrus",
+     "sit"
+    ]
+   },
+   {
+    "prompt": "I did not doubt that our men would conquer in the coming battle.",
+    "answer": "Nōn dubitābam quīn nostrī in proeliō futūrō victūrī essent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "dubitābam",
+     "quīn",
+     "nostrī",
+     "in",
+     "proeliō",
+     "futūrō",
+     "victūrī",
+     "essent"
+    ]
+   },
+   {
+    "prompt": "I do not doubt that you will soon repent of so rash a deed.",
+    "answer": "Nōn dubitō quīn tē mox tam temerāriī factī paeniteat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "dubitō",
+     "quīn",
+     "tē",
+     "mox",
+     "tam",
+     "temerāriī",
+     "factī",
+     "paeniteat"
+    ]
+   },
+   {
+    "prompt": "I did not doubt that the city would soon be besieged by the legions.",
+    "answer": "Nōn dubitābam quīn urbs brevī ā legiōnibus obsidērētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "dubitābam",
+     "quīn",
+     "urbs",
+     "brevī",
+     "ā",
+     "legiōnibus",
+     "obsidērētur"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t18",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "Caesar was waiting to see what plan the enemy would adopt.",
+    "answer": "Caesar exspectābat quid cōnsiliī hostēs caperent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "exspectābat",
+     "quid",
+     "cōnsiliī",
+     "hostēs",
+     "caperent"
+    ]
+   },
+   {
+    "prompt": "The Gauls promised they would do whatever the leader should order.",
+    "answer": "Gallī pollicēbantur sē factūrōs esse quae dux imperāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallī",
+     "pollicēbantur",
+     "sē",
+     "factūrōs",
+     "esse",
+     "quae",
+     "dux",
+     "imperāret"
+    ]
+   },
+   {
+    "prompt": "Virtue is such a thing that, even if men were ignorant of it, it would still be worthy of praise.",
+    "answer": "Virtūs tālis est ut, etiam sī eam hominēs ignōrārent, tamen suā laude digna esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "virtūs",
+     "tālis",
+     "est",
+     "ut",
+     "etiam",
+     "sī",
+     "eam",
+     "hominēs",
+     "ignōrārent",
+     "tamen",
+     "suā",
+     "laude",
+     "digna",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "The teacher asked the boys what they would write on the wax tablet tomorrow.",
+    "answer": "Magister puerōs rogāvit quid crās in cērā scrīberent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magister",
+     "puerōs",
+     "rogāvit",
+     "quid",
+     "crās",
+     "in",
+     "cērā",
+     "scrīberent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t19",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The judge asked why the defendant had fled from the city.",
+    "answer": "Iūdex quaesīvit cūr reus ex urbe fūgisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iūdex",
+     "quaesīvit",
+     "cūr",
+     "reus",
+     "ex",
+     "urbe",
+     "fūgisset"
+    ]
+   },
+   {
+    "prompt": "The old woman revealed where the treasure had been hidden.",
+    "answer": "Anus mōnstrāvit ubi thēsaurus occultātus esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "anus",
+     "mōnstrāvit",
+     "ubi",
+     "thēsaurus",
+     "occultātus",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "The merchant did not know how great a storm was threatening the ships at sea.",
+    "answer": "Mercātor nesciēbat quanta tempestās nāvibus in marī imminēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mercātor",
+     "nesciēbat",
+     "quanta",
+     "tempestās",
+     "nāvibus",
+     "in",
+     "marī",
+     "imminēret"
+    ]
+   },
+   {
+    "prompt": "We understood by what cunning the traitor had opened the gates.",
+    "answer": "Intellēximus quā calliditāte prōditor portās aperuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "intellēximus",
+     "quā",
+     "calliditāte",
+     "prōditor",
+     "portās",
+     "aperuisset"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t20",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The queen urges her handmaids to weave the purple cloak carefully.",
+    "answer": "Rēgīna ancillās hortātur ut purpureum pallium dīligenter texant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēgīna",
+     "ancillās",
+     "hortātur",
+     "ut",
+     "purpureum",
+     "pallium",
+     "dīligenter",
+     "texant"
+    ]
+   },
+   {
+    "prompt": "The centurion warns the recruits to guard the rampart through the night.",
+    "answer": "Centuriō tīrōnēs monet ut vāllum per noctem custōdiant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "centuriō",
+     "tīrōnēs",
+     "monet",
+     "ut",
+     "vāllum",
+     "per",
+     "noctem",
+     "custōdiant"
+    ]
+   },
+   {
+    "prompt": "The exiled king begs the senators to restore his ancient realm to him.",
+    "answer": "Rēx exsul senātōrēs ōrat ut rēgnum vetus sibi reddant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēx",
+     "exsul",
+     "senātōrēs",
+     "ōrat",
+     "ut",
+     "rēgnum",
+     "vetus",
+     "sibi",
+     "reddant"
+    ]
+   },
+   {
+    "prompt": "The dying father persuades his sons to preserve the ancestral estate.",
+    "answer": "Pater moriēns fīliīs persuādet ut fundum avītum cōnservent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pater",
+     "moriēns",
+     "fīliīs",
+     "persuādet",
+     "ut",
+     "fundum",
+     "avītum",
+     "cōnservent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t21",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "I do not doubt that the proconsul will restore peace to the province.",
+    "answer": "Nōn dubitō quīn prōcōnsul pācem prōvinciae restitūtūrus sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "dubitō",
+     "quīn",
+     "prōcōnsul",
+     "pācem",
+     "prōvinciae",
+     "restitūtūrus",
+     "sit"
+    ]
+   },
+   {
+    "prompt": "We did not doubt that the fleet would soon return into the harbor.",
+    "answer": "Nōn dubitābāmus quīn classis mox in portum reditūra esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "dubitābāmus",
+     "quīn",
+     "classis",
+     "mox",
+     "in",
+     "portum",
+     "reditūra",
+     "esset"
+    ]
+   },
+   {
+    "prompt": "No one doubts that the orator will speak most eloquently before the people.",
+    "answer": "Nēmō dubitat quīn ōrātor apud populum ēloquentissimē dictūrus sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nēmō",
+     "dubitat",
+     "quīn",
+     "ōrātor",
+     "apud",
+     "populum",
+     "ēloquentissimē",
+     "dictūrus",
+     "sit"
+    ]
+   },
+   {
+    "prompt": "The king did not doubt that his allies would betray him in the war.",
+    "answer": "Rēx nōn dubitābat quīn sociī sē in bellō prōditūrī essent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēx",
+     "nōn",
+     "dubitābat",
+     "quīn",
+     "sociī",
+     "sē",
+     "in",
+     "bellō",
+     "prōditūrī",
+     "essent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t22",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The farmer fears that a sudden frost may ruin the tender vines.",
+    "answer": "Agricola timet nē subita pruīna tenerās vītēs corrumpat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "agricola",
+     "timet",
+     "nē",
+     "subita",
+     "pruīna",
+     "tenerās",
+     "vītēs",
+     "corrumpat"
+    ]
+   },
+   {
+    "prompt": "The sailors were afraid that the pirates would seize the merchant ship.",
+    "answer": "Nautae timēbant nē praedōnēs nāvem onerāriam caperent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nautae",
+     "timēbant",
+     "nē",
+     "praedōnēs",
+     "nāvem",
+     "onerāriam",
+     "caperent"
+    ]
+   },
+   {
+    "prompt": "The mother is afraid that her son will not return from the war.",
+    "answer": "Māter metuit nē fīlius ex bellō nōn redeat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "māter",
+     "metuit",
+     "nē",
+     "fīlius",
+     "ex",
+     "bellō",
+     "nōn",
+     "redeat"
+    ]
+   },
+   {
+    "prompt": "The consul feared that the wavering allies would abandon the alliance.",
+    "answer": "Cōnsul verēbātur nē sociī dubiī societātem dēsererent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnsul",
+     "verēbātur",
+     "nē",
+     "sociī",
+     "dubiī",
+     "societātem",
+     "dēsererent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t23",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "So great a plague fell upon the city that thousands of citizens perished.",
+    "answer": "Tanta pestis in urbem incidit ut mīlia cīvium periērint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tanta",
+     "pestis",
+     "in",
+     "urbem",
+     "incidit",
+     "ut",
+     "mīlia",
+     "cīvium",
+     "periērint"
+    ]
+   },
+   {
+    "prompt": "The orator spoke so vehemently that he moved the whole assembly to tears.",
+    "answer": "Ōrātor tam vehementer dīxit ut tōtam cōntiōnem ad lacrimās mōverit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ōrātor",
+     "tam",
+     "vehementer",
+     "dīxit",
+     "ut",
+     "tōtam",
+     "cōntiōnem",
+     "ad",
+     "lacrimās",
+     "mōverit"
+    ]
+   },
+   {
+    "prompt": "The tyrant so oppressed the people that no one dared to speak freely.",
+    "answer": "Tyrannus populum ita oppressit ut nēmō līberē loquī audēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tyrannus",
+     "populum",
+     "ita",
+     "oppressit",
+     "ut",
+     "nēmō",
+     "līberē",
+     "loquī",
+     "audēret"
+    ]
+   },
+   {
+    "prompt": "The general so fortified the camp that the enemy could not storm it.",
+    "answer": "Dux castra ita mūnīvit ut ea hostēs expugnāre nōn possent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dux",
+     "castra",
+     "ita",
+     "mūnīvit",
+     "ut",
+     "ea",
+     "hostēs",
+     "expugnāre",
+     "nōn",
+     "possent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-268-sequence-of-tenses-t24",
+  "sectionId": "bn-268-sequence-of-tenses",
+  "questions": [
+   {
+    "prompt": "The Gauls promise that they will do whatever the leader commands.",
+    "answer": "Gallī pollicentur sē factūrōs esse quaecumque dux imperet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallī",
+     "pollicentur",
+     "sē",
+     "factūrōs",
+     "esse",
+     "quaecumque",
+     "dux",
+     "imperet"
+    ]
+   },
+   {
+    "prompt": "The soldiers promised that they would follow wherever the commander should lead.",
+    "answer": "Mīlitēs pollicitī sunt sē secūtūrōs esse quōcumque imperātor dūceret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīlitēs",
+     "pollicitī",
+     "sunt",
+     "sē",
+     "secūtūrōs",
+     "esse",
+     "quōcumque",
+     "imperātor",
+     "dūceret"
+    ]
+   },
+   {
+    "prompt": "Caesar was waiting to see how large a force the enemy would gather.",
+    "answer": "Caesar exspectābat quantās cōpiās hostēs cōgerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "exspectābat",
+     "quantās",
+     "cōpiās",
+     "hostēs",
+     "cōgerent"
+    ]
+   },
+   {
+    "prompt": "The envoys promised that they would report whatever the king should have decided.",
+    "answer": "Lēgātī pollicitī sunt sē nūntiātūrōs esse quaecumque rēx statuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgātī",
+     "pollicitī",
+     "sunt",
+     "sē",
+     "nūntiātūrōs",
+     "esse",
+     "quaecumque",
+     "rēx",
+     "statuisset"
+    ]
+   }
+  ]
  }
 ]

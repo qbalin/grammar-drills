@@ -695,5 +695,292 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t14",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The general said that, as long as the river remained frozen with ice, the soldiers could cross safely.",
+    "answer": "Dux dīxit, quam diū flūmen glaciē concrētum manēret, mīlitēs tūtō trānsīre posse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "dīxit",
+     "quam",
+     "diū",
+     "flūmen",
+     "glaciē",
+     "concrētum",
+     "manēret",
+     "mīlitēs",
+     "tūtō",
+     "trānsīre",
+     "posse"
+    ]
+   },
+   {
+    "prompt": "The old woman confessed that she had hidden the gold which her husband had entrusted to her.",
+    "answer": "Anus cōnfessa est sē aurum, quod marītus eī crēdidisset, occuluisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Anus",
+     "cōnfessa",
+     "est",
+     "sē",
+     "aurum",
+     "quod",
+     "marītus",
+     "eī",
+     "crēdidisset",
+     "occuluisse"
+    ]
+   },
+   {
+    "prompt": "The scout reported that the chieftain, who was the boldest of the tribe, was hastening to seize the town.",
+    "answer": "Explōrātor nūntiāvit ducem, quī audācissimus gentis erat, ad oppidum occupandum contendere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Explōrātor",
+     "nūntiāvit",
+     "ducem",
+     "quī",
+     "audācissimus",
+     "gentis",
+     "erat",
+     "ad",
+     "oppidum",
+     "occupandum",
+     "contendere"
+    ]
+   },
+   {
+    "prompt": "The envoy said that he had seen the temple which stood on the highest hill.",
+    "answer": "Lēgātus dīxit templum, quod in summō colle stāret, vīdisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgātus",
+     "dīxit",
+     "templum",
+     "quod",
+     "in",
+     "summō",
+     "colle",
+     "stāret",
+     "vīdisse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t15",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The prisoner asked why he was being held in chains and what crime he had committed.",
+    "answer": "Captīvus rogāvit cūr in vinculīs tenērētur et quod scelus commīsisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Captīvus",
+     "rogāvit",
+     "cūr",
+     "in",
+     "vinculīs",
+     "tenērētur",
+     "et",
+     "quod",
+     "scelus",
+     "commīsisset"
+    ]
+   },
+   {
+    "prompt": "The soldiers did not know whither they should flee or what they were to do.",
+    "answer": "Mīlitēs nesciēbant quō fugerent aut quid facerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "nesciēbant",
+     "quō",
+     "fugerent",
+     "aut",
+     "quid",
+     "facerent"
+    ]
+   },
+   {
+    "prompt": "The chieftain replied, asking what the consul meant and why he was coming into his territory.",
+    "answer": "Dux respondit quid sibi cōnsul vellet cūrque in fīnēs suōs venīret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "respondit",
+     "quid",
+     "sibi",
+     "cōnsul",
+     "vellet",
+     "cūrque",
+     "in",
+     "fīnēs",
+     "suōs",
+     "venīret"
+    ]
+   },
+   {
+    "prompt": "The wise man asked what could be more shameful than to betray one's country.",
+    "answer": "Sapiēns rogāvit quid esse turpius quam patriam prōdere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapiēns",
+     "rogāvit",
+     "quid",
+     "esse",
+     "turpius",
+     "quam",
+     "patriam",
+     "prōdere"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t16",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The commander ordered the soldiers to lay down their arms and not to harm the captives.",
+    "answer": "Imperātor mīlitibus imperāvit ut arma dēpōnerent nēve captīvōs laederent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "mīlitibus",
+     "imperāvit",
+     "ut",
+     "arma",
+     "dēpōnerent",
+     "nēve",
+     "captīvōs",
+     "laederent"
+    ]
+   },
+   {
+    "prompt": "The mother begged her son not to attribute the victory to his own valor.",
+    "answer": "Māter fīlium ōrāvit nē victōriam suae virtūtī tribueret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māter",
+     "fīlium",
+     "ōrāvit",
+     "nē",
+     "victōriam",
+     "suae",
+     "virtūtī",
+     "tribueret"
+    ]
+   },
+   {
+    "prompt": "The prophet warned the king to spare the suppliants and to fear the gods.",
+    "answer": "Vātēs rēgem monuit ut supplicibus parceret deōsque timēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vātēs",
+     "rēgem",
+     "monuit",
+     "ut",
+     "supplicibus",
+     "parceret",
+     "deōsque",
+     "timēret"
+    ]
+   },
+   {
+    "prompt": "They said that he should not trust the promises of the enemy.",
+    "answer": "Dīxērunt nē hostium prōmissīs crēderet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīxērunt",
+     "nē",
+     "hostium",
+     "prōmissīs",
+     "crēderet"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-t17",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The historian wrote that the city had been founded by exiles who had fled from their homeland.",
+    "answer": "Historicus scrīpsit urbem ab exsulibus, quī ē patriā fūgissent, conditam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Historicus",
+     "scrīpsit",
+     "urbem",
+     "ab",
+     "exsulibus",
+     "quī",
+     "ē",
+     "patriā",
+     "fūgissent",
+     "conditam",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "He said that the citadel had been set as a bulwark against the barbarians, near which the enemy fleet had twice been wrecked.",
+    "answer": "Dīxit arcem barbarīs prōpugnāculum oppositam esse, apud quam classem hostium bis naufragium fēcisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīxit",
+     "arcem",
+     "barbarīs",
+     "prōpugnāculum",
+     "oppositam",
+     "esse",
+     "apud",
+     "quam",
+     "classem",
+     "hostium",
+     "bis",
+     "naufragium",
+     "fēcisse"
+    ]
+   },
+   {
+    "prompt": "We believe that those who despise death will conquer easily.",
+    "answer": "Crēdimus eōs, quī mortem contemnant, facile victūrōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crēdimus",
+     "eōs",
+     "quī",
+     "mortem",
+     "contemnant",
+     "facile",
+     "victūrōs",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The messenger announced that the enemy was hastening toward the town, which is the largest of the whole region.",
+    "answer": "Nūntius nūntiāvit hostēs ad oppidum, quod tōtīus regiōnis maximum est, contendere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "nūntiāvit",
+     "hostēs",
+     "ad",
+     "oppidum",
+     "quod",
+     "tōtīus",
+     "regiōnis",
+     "maximum",
+     "est",
+     "contendere"
+    ]
+   }
+  ]
  }
 ]

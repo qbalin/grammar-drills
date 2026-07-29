@@ -302,5 +302,127 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-277-deliberative-subjunctive-t7",
+  "sectionId": "bn-277-deliberative-subjunctive",
+  "questions": [
+   {
+    "prompt": "What shall I now say to the citizens who mock our defeat?",
+    "answer": "Quid nunc cīvibus dīcam quī clādem nostram dērīdent?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "nunc",
+     "cīvibus",
+     "dīcam",
+     "quī",
+     "clādem",
+     "nostram",
+     "dērīdent"
+    ]
+   },
+   {
+    "prompt": "Was I to spare the traitor who had deceived so many nobles?",
+    "answer": "Prōditōrī parcerem quī tot nōbilēs dēcēperat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prōditōrī",
+     "parcerem",
+     "quī",
+     "tot",
+     "nōbilēs",
+     "dēcēperat"
+    ]
+   },
+   {
+    "prompt": "Why should I weep, though the gods themselves have deserted me?",
+    "answer": "Cūr lacrimem, quamquam dī ipsī mē dēseruērunt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cūr",
+     "lacrimem",
+     "quamquam",
+     "dī",
+     "ipsī",
+     "mē",
+     "dēseruērunt"
+    ]
+   },
+   {
+    "prompt": "Are we to avenge our father, slain by his own brother?",
+    "answer": "Patrem ulcīscāmur ā frātre suō occīsum?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Patrem",
+     "ulcīscāmur",
+     "ā",
+     "frātre",
+     "suō",
+     "occīsum"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-277-deliberative-subjunctive-t8",
+  "sectionId": "bn-277-deliberative-subjunctive",
+  "questions": [
+   {
+    "prompt": "Where am I to seek refuge, now that winter closes every pass?",
+    "answer": "Quō perfugium petam, cum hiems omnem saltum claudat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quō",
+     "perfugium",
+     "petam",
+     "cum",
+     "hiems",
+     "omnem",
+     "saltum",
+     "claudat"
+    ]
+   },
+   {
+    "prompt": "Should I not pity the captives dragged through the streets in chains?",
+    "answer": "Nōn miserer captīvōs per viās catēnīs tractōs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "miserer",
+     "captīvōs",
+     "per",
+     "viās",
+     "catēnīs",
+     "tractōs"
+    ]
+   },
+   {
+    "prompt": "What was I to hope for, besieged on every side by the enemy?",
+    "answer": "Quid spērārem, undique ab hoste obsessus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "spērārem",
+     "undique",
+     "ab",
+     "hoste",
+     "obsessus"
+    ]
+   },
+   {
+    "prompt": "Are we to hand over our children to a cruel and faithless king?",
+    "answer": "Līberōs rēgī crūdēlī atque perfidō trādāmus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Līberōs",
+     "rēgī",
+     "crūdēlī",
+     "atque",
+     "perfidō",
+     "trādāmus"
+    ]
+   }
+  ]
  }
 ]
