@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
-import type { Question, Rating, VocabCardState } from "@latin-tutor/core";
+import type { Question, Rating, VocabCardState } from "@lang-tutor/core";
 import { GradeBar, HoldableLatin, Ring } from "../ui.js";
+import { profile } from "../pack.js";
 
 /**
  * The question, being answered.
@@ -42,7 +43,7 @@ export function Answering({
     <>
       <div className="study__scroll">
         <p className="eyebrow">
-          Translate into Latin · {index + 1}/{total}
+          {profile.ui.promptDirection} · {index + 1}/{total}
         </p>
         <p className="prompt">{question.prompt}</p>
         {vocabulary}
@@ -55,14 +56,14 @@ export function Answering({
             // button, since Enter there is how you write a second line.
             if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) onSubmit();
           }}
-          placeholder="write your Latin…"
+          placeholder={profile.ui.webPlaceholder}
           // Mobile autocorrect mangles Latin into English words; all of these
           // are needed, and `spellCheck` alone is not enough.
           autoCapitalize="off"
           autoCorrect="off"
           autoComplete="off"
           spellCheck={false}
-          aria-label="Your Latin"
+          aria-label={profile.ui.answerAriaLabel}
         />
       </div>
       <div className="actions">
@@ -132,7 +133,7 @@ export function Graded({
     <>
       <div className="study__scroll">
         <p className="eyebrow">
-          Translate into Latin · {index + 1}/{total}
+          {profile.ui.promptDirection} · {index + 1}/{total}
         </p>
         <p className="prompt">{question.prompt}</p>
         {vocabulary}
@@ -197,7 +198,7 @@ export function VocabReview({
   return (
     <>
       <div className="study__scroll">
-        <p className="eyebrow">Vocabulary · say it in Latin</p>
+        <p className="eyebrow">Vocabulary · {profile.ui.sayItIn}</p>
         <p className="prompt">{card.gloss}</p>
         {revealed && (
           <div className="compare">

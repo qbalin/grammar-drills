@@ -1,7 +1,9 @@
+import type { GrammarStyle } from "./pack.js";
+
 /**
  * Structure recovered from a grammar section's flat text.
  *
- * `scripts/parse-grammar.py` emits one block per line: `clean_text` joins each
+ * A pack's grammar parser emits one block per line: `clean_text` joins each
  * prose paragraph into a single line, and leaves each paradigm row on its own,
  * with cells held apart by exactly two spaces. What it does *not* keep is the
  * shape — the source indentation is stripped, the column gaps are all collapsed
@@ -36,11 +38,35 @@ export type Block =
 const TABLE_ROW = /\S {2}\S/;
 
 /**
- * A standalone all-caps line. Length-capped because a whole sentence can be
- * set in capitals in the book, and that is prose, not a label.
+ * The book's own typography, compiled from the pack's profile: what a heading
+ * line looks like and which words stub a paradigm row. Both are conventions of
+ * the source grammar rather than facts about the engine — Greek headings are
+ * set in Greek capitals and its rows are stubbed by Greek case names.
  */
-const CAPS = /^[A-Z][A-Z .,'’—-]*\.?$/;
-const CAPS_MAX = 40;
+interface Typography {
+  caps: RegExp;
+  capsMax: number;
+  label: RegExp;
+}
+
+const compiled = new WeakMap<GrammarStyle, Typography>();
+
+function typography(style: GrammarStyle): Typography {
+  const hit = compiled.get(style);
+  if (hit) return hit;
+  const made: Typography = {
+    caps: new RegExp(style.headingPattern, style.headingFlags),
+    capsMax: style.headingMaxLength,
+    // Anchored and case-insensitive here rather than in the profile, so a pack
+    // supplies a plain word list and cannot get the anchoring wrong.
+    label: new RegExp(
+      `^(${style.paradigmLabels.map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})\\.?$`,
+      "i",
+    ),
+  };
+  compiled.set(style, made);
+  return made;
+}
 
 const NUMBERED = /^(\d+)\.\s+(.*)$/;
 const LETTERED = /^([a-z])\.\s+(.*)$/;
@@ -48,16 +74,16 @@ const ROMAN = /^([IVXL]+)\.\s+(.*)$/;
 const PARENTHESISED = /^(\d+\))\s+(.*)$/;
 const NOTE = /^(NOTE\.?|Note\.?)\s*(?:—\s*)?(.*)$/;
 
-/**
- * The stub column of a paradigm: case names, numbers, persons. Their presence
- * is what tells a short row whether it is missing a cell at the *front* (a
- * column caption, which sits over the forms) or at the back.
+/*
+ * The stub column of a paradigm — case names, numbers, persons — comes from
+ * `profile.grammar.paradigmLabels`. Their presence is what tells a short row
+ * whether it is missing a cell at the *front* (a column caption, which sits
+ * over the forms) or at the back.
  *
- * The genders are deliberately absent. `MASC. FEM. NEUT.` heads the columns of
- * a declension; it never stubs a row, and counting it as a stub is what would
- * shunt the caption one column to the left of the forms it names.
+ * A pack's list should leave the genders out. `MASC. FEM. NEUT.` heads the
+ * columns of a declension; it never stubs a row, and counting it as a stub is
+ * what would shunt the caption one column to the left of the forms it names.
  */
-const LABEL = /^(nom|gen|dat|acc|abl|voc|loc|sing|singular|plur|plural|1st|2nd|3rd|1|2|3)\.?$/i;
 
 /** Split a paradigm row into its cells. */
 function cellsOf(line: string): string[] {
@@ -85,10 +111,10 @@ function isRomanPoint(cells: string[]): boolean {
  * left. Where the guess is wrong the cell still lands in the table, so the row
  * is never less readable than the run-on line it replaces.
  */
-function squareUp(rows: Row[]): { rows: Row[]; columns: number } {
+function squareUp(rows: Row[], label: RegExp): { rows: Row[]; columns: number } {
   const columns = Math.max(...rows.map((r) => r.cells.length));
   const hasLabelColumn = rows.some(
-    (r) => r.kind === "body" && r.cells.length === columns && LABEL.test(r.cells[0]!),
+    (r) => r.kind === "body" && r.cells.length === columns && label.test(r.cells[0]!),
   );
 
   const squared = rows.map((row): Row => {
@@ -101,7 +127,7 @@ function squareUp(rows: Row[]): { rows: Row[]; columns: number } {
     // belongs over the forms, even though it opens with a word that can also
     // stub a row.
     const captions =
-      hasLabelColumn && (!LABEL.test(cells[0] ?? "") || cells.every((c) => LABEL.test(c)));
+      hasLabelColumn && (!label.test(cells[0] ?? "") || cells.every((c) => label.test(c)));
     if (captions) cells.unshift("");
 
     // Captions that divide the form columns evenly cover a group each: two
@@ -126,7 +152,8 @@ function squareUp(rows: Row[]): { rows: Row[]; columns: number } {
  * `1.  ūnus  prīmus` is a table row and `1. The first declension...` is a list
  * item, and only the cell gaps tell them apart.
  */
-export function parseBlocks(text: string): Block[] {
+export function parseBlocks(text: string, style: GrammarStyle): Block[] {
+  const { caps, capsMax, label } = typography(style);
   const blocks: Block[] = [];
   let table: Row[] | null = null;
   // A caption is only a divider once forms turn up under it; until then it
@@ -139,7 +166,7 @@ export function parseBlocks(text: string): Block[] {
       pending = null;
     }
     if (!table) return;
-    blocks.push({ kind: "table", ...squareUp(table) });
+    blocks.push({ kind: "table", ...squareUp(table, label) });
     table = null;
   };
 
@@ -157,7 +184,7 @@ export function parseBlocks(text: string): Block[] {
       continue;
     }
 
-    if (CAPS.test(line) && line.length <= CAPS_MAX) {
+    if (caps.test(line) && line.length <= capsMax) {
       // Inside a paradigm, "SINGULAR." and "PLURAL." divide the rows; treated
       // as prose they would split one table into two, and two tables size their
       // columns independently — the alignment this exists to fix.

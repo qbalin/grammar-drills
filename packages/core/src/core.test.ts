@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { Content } from "./content.js";
-import { normalize } from "./normalize.js";
+import { testProfile } from "./profile.fixture.js";
+import { compileFold } from "./fold.js";
 import { newCard, preview, rate } from "./scheduler.js";
 import { Session } from "./session.js";
 import type { ContentData } from "./types.js";
@@ -27,12 +28,14 @@ const fixture: ContentData = {
   },
 };
 
-describe("normalize", () => {
+const fold = compileFold(testProfile.fold);
+
+describe("the compiled fold", () => {
   it("strips macrons and folds v/j", () => {
-    expect(normalize("Vī")).toBe("ui");
-    expect(normalize("Manibus")).toBe("manibus");
-    expect(normalize("iam")).toBe(normalize("jam"));
-    expect(normalize("servō")).toBe("seruo");
+    expect(fold("Vī")).toBe("ui");
+    expect(fold("Manibus")).toBe("manibus");
+    expect(fold("iam")).toBe(fold("jam"));
+    expect(fold("servō")).toBe("seruo");
   });
 });
 
@@ -67,7 +70,7 @@ describe("scheduler", () => {
 
 describe("Content + lemmatizer", () => {
   it("resolves an inflected form to a ranked citation", () => {
-    const c = new Content(fixture);
+    const c = new Content(fixture, testProfile);
     const hits = c.lookup("manibus");
     expect(hits[0]?.citation).toMatch(/^manus, ūs \(f\)/);
     // most frequent (lowest rank) comes first
@@ -75,7 +78,7 @@ describe("Content + lemmatizer", () => {
   });
 
   it("lists teachable topics in book order", () => {
-    const c = new Content(fixture);
+    const c = new Content(fixture, testProfile);
     expect(c.topicIds()).toEqual(["ag1", "ag2"]);
   });
 
@@ -86,13 +89,13 @@ describe("Content + lemmatizer", () => {
       ...fixture,
       lemmas: undefined,
       lemmaLookup: { lookup: (f) => (f === "regem" ? [entry] : []) },
-    });
+    }, testProfile);
     expect(c.lookup("regem")).toEqual([entry]);
     expect(c.lookup("manibus")).toEqual([]);
   });
 
   it("reports a miss rather than throwing when no dictionary is loaded", () => {
-    const c = new Content({ ...fixture, lemmas: undefined });
+    const c = new Content({ ...fixture, lemmas: undefined }, testProfile);
     expect(c.lookup("manibus")).toEqual([]);
   });
 });
@@ -100,7 +103,7 @@ describe("Content + lemmatizer", () => {
 describe("Session", () => {
   it("introduces topics in order, then reviews and records vocab", () => {
     const now = new Date("2026-01-01T00:00:00Z");
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
 
     // First action is the first new topic.
     expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "ag1" });
@@ -117,7 +120,7 @@ describe("Session", () => {
     expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "ag2" });
 
     // Record an unknown word from its inflected form.
-    const hit = new Content(fixture).lookup("manibus")[0]!;
+    const hit = new Content(fixture, testProfile).lookup("manibus")[0]!;
     const id = s.recordVocab(hit, now);
     expect(s.vocabCard(id)?.citation).toMatch(/^manus/);
     // Dedupe: recording again returns the same id, no growth.
@@ -131,7 +134,7 @@ describe("Session", () => {
   });
 
   it("runs placement: a passed probe marks its family's topics known", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     expect(s.needsPlacement()).toBe(true);
     // Two noun topics, so the probe is the first and the narrowing one is ag2.
     expect(s.beginPlacement()?.probe).toBe("ag1");
@@ -151,7 +154,7 @@ describe("Session", () => {
 
   it("puts back a snapshot, undoing everything done since", () => {
     const now = new Date("2026-01-01T00:00:00Z");
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.gradeTopic("ag1", 3, now);
 
     const before = s.snapshot();
@@ -159,7 +162,7 @@ describe("Session", () => {
     // A grade, an answer and a word — the whole of a mistaken step.
     s.gradeTopic("ag2", 1, now);
     s.recordAttempt("ag2", { prompt: "p", answer: "a", submitted: "b", rating: 1 }, now);
-    s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
+    s.recordVocab(new Content(fixture, testProfile).lookup("manibus")[0]!, now);
     expect(s.progress().topicCards.ag2).toBeDefined();
 
     s.restore(before);
@@ -180,10 +183,10 @@ describe("Session", () => {
 
   it("serializes and restores progress round-trip", () => {
     const now = new Date("2026-01-01T00:00:00Z");
-    const s1 = new Session(new Content(fixture));
+    const s1 = new Session(new Content(fixture, testProfile));
     s1.gradeTopic("ag1", 3, now);
     const json = JSON.parse(JSON.stringify(s1.progress()));
-    const s2 = new Session(new Content(fixture), json);
+    const s2 = new Session(new Content(fixture, testProfile), json);
     expect(s2.progress().topicCards.ag1).toBeDefined();
   });
 });
@@ -192,10 +195,10 @@ describe("Session placement, resumed", () => {
   const now = new Date("2026-01-01T00:00:00Z");
   /** Save and reload, the way closing the app and opening it again would. */
   const reload = (s: Session) =>
-    new Session(new Content(fixture), JSON.parse(JSON.stringify(s.progress())));
+    new Session(new Content(fixture, testProfile), JSON.parse(JSON.stringify(s.progress())));
 
   it("remembers which probe is on the table across a restart", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     expect(s.beginPlacement()?.probe).toBe("ag1");
     s.answerPlacement(true);
 
@@ -211,9 +214,9 @@ describe("Session placement, resumed", () => {
   });
 
   it("stays in placement when a word is recorded mid-probe", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.beginPlacement();
-    s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
+    s.recordVocab(new Content(fixture, testProfile).lookup("manibus")[0]!, now);
 
     expect(s.needsPlacement()).toBe(true);
     expect(s.placementProbe()).toBe("ag1");
@@ -221,7 +224,7 @@ describe("Session placement, resumed", () => {
   });
 
   it("forgets the run once placement is over", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.beginPlacement();
     s.endPlacement();
     expect(s.placementState()).toBeUndefined();
@@ -229,7 +232,7 @@ describe("Session placement, resumed", () => {
   });
 
   it("takes an undo back into placement", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.beginPlacement();
     const before = s.snapshot();
     s.answerPlacement(true);
@@ -242,10 +245,10 @@ describe("Session placement, resumed", () => {
   });
 
   it("starts over on a run stored in the old evenly-spaced shape", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     // What a file written before per-family placement carries.
     const old = { ...s.progress(), placement: { topics: ["ag1"], index: 0 } };
-    const back = new Session(new Content(fixture), JSON.parse(JSON.stringify(old)));
+    const back = new Session(new Content(fixture, testProfile), JSON.parse(JSON.stringify(old)));
     expect(back.placementState()).toBeUndefined();
     expect(back.needsPlacement()).toBe(true);
   });
@@ -255,10 +258,10 @@ describe("Session schedule", () => {
   const now = new Date("2026-01-01T00:00:00Z");
 
   it("lists what is waiting and what comes back, soonest first", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.gradeTopic("ag1", 4, now); // days away
     s.gradeTopic("ag2", 1, now); // minutes away
-    const card = s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
+    const card = s.recordVocab(new Content(fixture, testProfile).lookup("manibus")[0]!, now);
 
     const later = new Date("2026-01-01T00:01:00Z");
     const due = s.upcoming(later);
@@ -272,7 +275,7 @@ describe("Session schedule", () => {
   });
 
   it("agrees with nextDue, and skips cards for sections this bundle lost", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.gradeTopic("ag1", 3, now);
     s.progress().topicCards.gone = s.progress().topicCards.ag1!;
 
@@ -281,17 +284,17 @@ describe("Session schedule", () => {
   });
 
   it("says nothing is scheduled on a fresh deck", () => {
-    expect(new Session(new Content(fixture)).upcoming(now)).toEqual([]);
+    expect(new Session(new Content(fixture, testProfile)).upcoming(now)).toEqual([]);
   });
 });
 
 describe("Session vocabulary", () => {
   const now = new Date("2026-01-01T00:00:00Z");
   const record = (s: Session) =>
-    s.recordVocab(new Content(fixture).lookup("manibus")[0]!, now);
+    s.recordVocab(new Content(fixture, testProfile).lookup("manibus")[0]!, now);
 
   it("lists, edits and deletes words without disturbing their schedule", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     const id = record(s);
     s.gradeVocab(id, 3, now);
     const scheduled = s.vocabCard(id)!.fsrs.due;
@@ -312,7 +315,7 @@ describe("Session vocabulary", () => {
   });
 
   it("brings saved cards up to a rebuilt dictionary's citations, once", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     const id = record(s);
     s.progress().citationsVersion = 1; // as a file written before the rebuild
 
@@ -325,7 +328,7 @@ describe("Session vocabulary", () => {
           { lemma: "manus", citation: "manus, manūs (f)", gloss: "hand", pos: "noun" },
         ],
       },
-    });
+    }, testProfile);
     const after = new Session(rebuilt, s.progress());
     expect(after.refreshCitations()).toBe(1);
     expect(after.vocabCard(id)?.citation).toBe("manus, manūs (f)");
@@ -334,13 +337,13 @@ describe("Session vocabulary", () => {
   });
 
   it("leaves cards alone when no dictionary is loaded", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     const id = record(s);
     s.progress().citationsVersion = 1;
 
     // Offline on the phone: the dictionary is a separate download.
     const offline = new Session(
-      new Content({ ...fixture, lemmas: undefined }),
+      new Content({ ...fixture, lemmas: undefined }, testProfile),
       s.progress(),
     );
     expect(offline.refreshCitations()).toBe(0);
@@ -356,7 +359,7 @@ describe("Session mastery", () => {
     s.grammarMap(now).find((t) => t.sectionId === id)?.mastery;
 
   it("accumulates good grades and clamps at 4", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     expect(mastery(s, "ag1")).toBeUndefined(); // never graded
     s.gradeTopic("ag1", 3, now);
     expect(mastery(s, "ag1")).toBe(2);
@@ -368,7 +371,7 @@ describe("Session mastery", () => {
   });
 
   it("gives back ground on 'again' and half a step on 'hard', floored at 1", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.gradeTopic("ag1", 3, now);
     s.gradeTopic("ag1", 1, now);
     s.gradeTopic("ag1", 3, now);
@@ -383,7 +386,7 @@ describe("Session mastery", () => {
   });
 
   it("reports placement-passed topics as mastered but assumed", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.beginPlacement();
     s.answerPlacement(true); // ag1 passed
     s.answerPlacement(false); // ag2 failed, settling the family at ag1
@@ -399,7 +402,7 @@ describe("Session mastery", () => {
   });
 
   it("groups topics into families with a mastery percentage", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.gradeTopic("ag1", 3, now);
     s.gradeTopic("ag1", 3, now);
     s.gradeTopic("ag1", 3, now); // ag1 -> 4 (100%), ag2 untouched (0%)
@@ -416,19 +419,19 @@ describe("Session mastery", () => {
   });
 
   it("loads progress files written before mastery tracking", () => {
-    const s1 = new Session(new Content(fixture));
+    const s1 = new Session(new Content(fixture, testProfile));
     s1.gradeTopic("ag1", 3, now);
     const legacy = JSON.parse(JSON.stringify(s1.progress()));
     delete legacy.topicMastery; // as an older file on disk would be
 
-    const s2 = new Session(new Content(fixture), legacy);
+    const s2 = new Session(new Content(fixture, testProfile), legacy);
     expect(s2.grammarMap(now).find((t) => t.sectionId === "ag1")?.mastery).toBeUndefined();
     s2.gradeTopic("ag1", 3, now);
     expect(mastery(s2, "ag1")).toBe(2); // accumulates from the floor onwards
   });
 
   it("keeps every answer written on a topic, newest first", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     const at = (day: number) => new Date(`2026-01-${String(day).padStart(2, "0")}T00:00:00Z`);
     for (let i = 1; i <= 12; i++) {
       s.recordAttempt(
@@ -449,12 +452,12 @@ describe("Session mastery", () => {
   });
 
   it("loads progress files written before answers were kept", () => {
-    const s1 = new Session(new Content(fixture));
+    const s1 = new Session(new Content(fixture, testProfile));
     s1.gradeTopic("ag1", 3, now);
     const legacy = JSON.parse(JSON.stringify(s1.progress()));
     delete legacy.attempts; // as an older file on disk would be
 
-    const s2 = new Session(new Content(fixture), legacy);
+    const s2 = new Session(new Content(fixture, testProfile), legacy);
     expect(s2.attemptsFor("ag1")).toEqual([]);
     s2.recordAttempt(
       "ag1",
@@ -465,7 +468,7 @@ describe("Session mastery", () => {
   });
 
   it("groups a topic's answers by the question they answered", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     const at = (day: number) => new Date(`2026-01-${String(day).padStart(2, "0")}T00:00:00Z`);
     s.recordAttempt("ag1", { prompt: "puella (nom. pl.)?", answer: "puellae", submitted: "puella", rating: 1 }, at(1));
     s.recordAttempt("ag1", { prompt: "rosa (gen. sg.)?", answer: "rosae", submitted: "rosae", rating: 3 }, at(2));
@@ -477,7 +480,7 @@ describe("Session mastery", () => {
   });
 
   it("lists a section's whole question bank with each question's history", () => {
-    const s = new Session(new Content(fixture));
+    const s = new Session(new Content(fixture, testProfile));
     s.recordAttempt(
       "ag1",
       { prompt: "rosa (gen. sg.)?", answer: "rosae", submitted: "rosā", rating: 2 },
@@ -502,7 +505,7 @@ describe("Session mastery", () => {
         { id: "ag3", ref: "3", title: "Third declension", family: "nouns", text: "...", order: 3 },
       ],
     };
-    const s = new Session(new Content(withoutTests));
+    const s = new Session(new Content(withoutTests, testProfile));
     s.gradeTopic("ag1", 1, now); // 'again' -> due again almost immediately
     const map = s.grammarMap(new Date("2026-01-02T00:00:00Z"));
     expect(map.find((t) => t.sectionId === "ag1")?.due).toBe(true);
@@ -560,7 +563,7 @@ describe("Session progress: the sweep", () => {
   const now = new Date("2026-01-01T00:00:00Z");
 
   it("walks the book in order on a fresh deck — the quick refresher", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     const served: string[] = [];
     for (let i = 0; i < 6; i++) {
       const action = s.next(now);
@@ -575,7 +578,7 @@ describe("Session progress: the sweep", () => {
   });
 
   it("starts each family at its own frontier, so one area can be ahead", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     // Placed halfway through the nouns and nowhere in the verbs.
     s.studyFrom("n3");
     s.setFocus({ kind: "sweep" });
@@ -588,7 +591,7 @@ describe("Session progress: the sweep", () => {
   });
 
   it("comes back for the topics the frontiers skipped, once nothing is ahead", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     for (const id of ["n3", "v3"]) {
       s.studyFrom(id);
       s.gradeTopic(id, 4, now);
@@ -606,7 +609,7 @@ describe("Session progress: taking the syllabus up from a chosen topic", () => {
   const now = new Date("2026-01-01T00:00:00Z");
 
   it("goes on from where you jumped to, not back to the beginning", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.studyFrom("v2");
 
     expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v2" });
@@ -616,7 +619,7 @@ describe("Session progress: taking the syllabus up from a chosen topic", () => {
   });
 
   it("leaves the skipped topics unstudied on the map rather than known", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.studyFrom("v2");
     const map = s.grammarMap(now);
     expect(map.find((t) => t.sectionId === "v1")?.mastery).toBeUndefined();
@@ -626,7 +629,7 @@ describe("Session progress: taking the syllabus up from a chosen topic", () => {
   });
 
   it("works the focused family out, then falls back to the sweep", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.studyFrom("v1");
     expect(s.focusState()).toEqual({ kind: "family", id: "verb-forms" });
 
@@ -653,7 +656,7 @@ describe("Session progress: staying on a topic", () => {
   };
 
   it("keeps serving the same topic until its bank is worked out", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.drillTopic("n1");
 
     // Six questions in three tests of two: three rounds to sweep the bank.
@@ -668,7 +671,7 @@ describe("Session progress: staying on a topic", () => {
   });
 
   it("serves questions never answered before, rather than rotating tests", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.drillTopic("n1");
     const asked: string[] = [];
     for (let i = 0; i < 3; i++) {
@@ -679,7 +682,7 @@ describe("Session progress: staying on a topic", () => {
   });
 
   it("still lets reviews and words come back while a drill is on", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.gradeTopic("n2", 1, now); // due again in minutes
     s.drillTopic("n1");
     const soon = new Date("2026-01-01T00:30:00Z");
@@ -691,7 +694,7 @@ describe("Session progress: a round of questions is one review", () => {
   const now = new Date("2026-01-01T00:00:00Z");
 
   it("costs the card one rep however many questions the round holds", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     for (let i = 0; i < 4; i++) s.gradeTopic("n1", 3, now, "n1-t1");
     expect(s.progress().topicCards.n1!.reps).toBe(1);
     // Mastery is still per question — it counts what you got right.
@@ -699,18 +702,18 @@ describe("Session progress: a round of questions is one review", () => {
   });
 
   it("schedules the round by its worst grade", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.gradeTopic("n1", 4, now, "r");
     s.gradeTopic("n1", 1, now, "r"); // one failed, so the round failed
     s.gradeTopic("n1", 4, now, "r");
 
-    const alone = new Session(new Content(wide));
+    const alone = new Session(new Content(wide, testProfile));
     alone.gradeTopic("n1", 1, now);
     expect(s.progress().topicCards.n1!.due).toBe(alone.progress().topicCards.n1!.due);
   });
 
   it("starts a new round on a new test, building on the last one", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.gradeTopic("n1", 3, now, "n1-t1");
     s.gradeTopic("n1", 3, now, "n1-t1");
     s.gradeTopic("n1", 3, now, "n1-t2");
@@ -718,23 +721,23 @@ describe("Session progress: a round of questions is one review", () => {
   });
 
   it("rates per grade when no round is named, which is what a probe wants", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     for (let i = 0; i < 4; i++) s.gradeTopic("n1", 3, now);
     expect(s.progress().topicCards.n1!.reps).toBe(4);
     expect(s.progress().openRound).toBeNull();
   });
 
   it("leaves one rep behind when a round is abandoned halfway", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.gradeTopic("n1", 3, now, "n1-t1");
     s.gradeTopic("n1", 3, now, "n1-t1");
     // As if the terminal were closed here.
-    const back = new Session(new Content(wide), JSON.parse(JSON.stringify(s.progress())));
+    const back = new Session(new Content(wide, testProfile), JSON.parse(JSON.stringify(s.progress())));
     expect(back.progress().topicCards.n1!.reps).toBe(1);
   });
 
   it("takes an undo back across a round's earlier questions", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.gradeTopic("n1", 4, now, "n1-t1");
     const before = s.snapshot();
     s.gradeTopic("n1", 1, now, "n1-t1"); // the round now stands at 'again'
@@ -752,7 +755,7 @@ describe("Session progress: a round of questions is one review", () => {
 describe("Session placement, per family", () => {
   it("probes the middle of each family and narrows above a pass", () => {
     // Nine nouns, the shipped count, so the indices are the real ones.
-    const s = new Session(new Content(book(topics("nouns", "n", 9))));
+    const s = new Session(new Content(book(topics("nouns", "n", 9)), testProfile));
     expect(s.beginPlacement()?.probe).toBe("n5"); // 5 of 9
     expect(s.answerPlacement(true)?.probe).toBe("n7"); // 7 of 9
     expect(s.answerPlacement(true)).toBeNull();
@@ -761,7 +764,7 @@ describe("Session placement, per family", () => {
   });
 
   it("asks one probe of a family it fails, and stops narrowing there", () => {
-    const s = new Session(new Content(book(topics("verb-forms", "v", 35))));
+    const s = new Session(new Content(book(topics("verb-forms", "v", 35)), testProfile));
     expect(s.beginPlacement()?.probe).toBe("v18"); // 18 of 35
     expect(s.answerPlacement(false)).toBeNull();
     expect(s.progress().frontiers["verb-forms"]).toBeUndefined(); // start at 1
@@ -769,7 +772,7 @@ describe("Session placement, per family", () => {
   });
 
   it("carries on past a failed family — the declensions-but-not-the-verbs case", () => {
-    const s = new Session(new Content(book(topics("nouns", "n", 3), topics("verb-forms", "v", 3))));
+    const s = new Session(new Content(book(topics("nouns", "n", 3), topics("verb-forms", "v", 3)), testProfile));
     expect(s.beginPlacement()?.probe).toBe("n2");
     expect(s.answerPlacement(true)?.probe).toBe("n3"); // narrowing the nouns
     // Failing does not end the run: the verbs still get asked.
@@ -787,7 +790,7 @@ describe("Session placement, per family", () => {
   });
 
   it("says which family is being asked and how far through the test is", () => {
-    const s = new Session(new Content(wide));
+    const s = new Session(new Content(wide, testProfile));
     s.beginPlacement();
     expect(s.placementProgress()).toEqual({
       family: "nouns",
@@ -803,7 +806,7 @@ describe("Session placement, per family", () => {
   });
 
   it("takes a family of one without asking a second probe", () => {
-    const s = new Session(new Content(book(topics("nouns", "n", 1))));
+    const s = new Session(new Content(book(topics("nouns", "n", 1)), testProfile));
     expect(s.beginPlacement()?.probe).toBe("n1");
     expect(s.answerPlacement(true)).toBeNull();
     expect(s.progress().knownSections).toEqual(["n1"]);

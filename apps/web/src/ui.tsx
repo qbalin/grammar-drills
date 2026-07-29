@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { stripPunctuation, type Rating } from "@latin-tutor/core";
+import { stripPunctuation, type Rating } from "@lang-tutor/core";
 
 /** How long until a date, said the way a person would. */
 export function until(from: Date, to: Date): string {

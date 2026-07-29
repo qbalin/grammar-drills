@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import type { Attempt } from "@latin-tutor/core";
+import { compileFold } from "@lang-tutor/core";
+import { testProfile } from "@lang-tutor/core/testing";
+
+/** The pack decides what counts as the same answer; these tests pin one. */
+const fold = compileFold(testProfile.fold);
+import type { Attempt } from "@lang-tutor/core";
 import { attemptLines, relativeTime } from "./history.js";
 
 const now = new Date("2026-01-10T12:00:00Z");
@@ -34,7 +39,7 @@ describe("relativeTime", () => {
 
 describe("attemptLines", () => {
   it("shows the question, the answer written, and the correction", () => {
-    const lines = attemptLines([attempt()], 60, now);
+    const lines = attemptLines([attempt()], 60, fold, now);
     expect(text(lines)).toContain("3 days ago · graded hard");
     expect(text(lines)).toContain("The girl loves the rose.");
     expect(text(lines)).toContain("you     puella rosa amat");
@@ -50,6 +55,7 @@ describe("attemptLines", () => {
     const lines = attemptLines(
       [attempt({ submitted: "  puella rosam amat! " }), attempt({ submitted: "PVELLA rosam amat" })],
       60,
+      fold,
       now,
     );
     expect(text(lines)).toContain("✓       puella rosam amat!");
@@ -58,7 +64,7 @@ describe("attemptLines", () => {
   });
 
   it("keeps a blank answer legible and still corrects it", () => {
-    const lines = attemptLines([attempt({ submitted: "   " })], 60, now);
+    const lines = attemptLines([attempt({ submitted: "   " })], 60, fold, now);
     expect(text(lines)).toContain("you     —");
     expect(text(lines)).toContain("correct puella rosam amat");
   });
@@ -68,7 +74,7 @@ describe("attemptLines", () => {
       prompt: "The girl who lives in the great house loves the rose in the garden.",
       submitted: "puella quae in magna casa habitat rosam in horto amat bene",
     });
-    const lines = attemptLines([long, attempt()], 30, now);
+    const lines = attemptLines([long, attempt()], 30, fold, now);
     expect(lines.every((l) => l.text.length <= 30)).toBe(true);
     expect(lines.some((l) => l.text === "")).toBe(true); // one blank between entries
   });

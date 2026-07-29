@@ -1,4 +1,7 @@
 import { lookupForm } from "./lemmatizer.js";
+import { compileFold, type Fold } from "./fold.js";
+import { familyLabel, familyOf, type FamilyId } from "./families.js";
+import type { Family, Profile } from "./pack.js";
 import type {
   ContentData,
   GrammarSection,
@@ -8,14 +11,48 @@ import type {
 } from "./types.js";
 
 /**
- * Read-only view over the frozen content bundle. The CLI and web app each load
- * the JSON their own way (fs vs fetch) and hand the parsed data here.
+ * Read-only view over the frozen content bundle, and the way the language
+ * itself reaches the engine.
+ *
+ * The CLI and web app each load the JSON their own way (fs vs fetch) and hand
+ * the parsed data here along with the pack's profile. Everything downstream —
+ * the session, both apps — asks `Content` rather than importing a language
+ * fact from anywhere, which is what keeps `packages/core` free of them.
  */
 export class Content {
   private readonly byId: Map<string, GrammarSection>;
+  /** The compiled fold: what counts as the same word in this language. */
+  readonly fold: Fold;
 
-  constructor(private readonly data: ContentData) {
+  constructor(
+    private readonly data: ContentData,
+    readonly profile: Profile,
+  ) {
     this.byId = new Map(data.grammar.map((s) => [s.id, s]));
+    this.fold = compileFold(profile.fold);
+  }
+
+  /** The families, in the order the map is drawn and placement walks. */
+  get families(): readonly Family[] {
+    return this.profile.families;
+  }
+
+  familyOf(family: string | undefined): FamilyId {
+    return familyOf(this.profile, family);
+  }
+
+  familyLabel(id: FamilyId): string {
+    return familyLabel(this.profile, id);
+  }
+
+  /** A section reference as the book writes it, e.g. "§ 20-22". */
+  formatRef(ref: string): string {
+    return `${this.profile.grammar.refPrefix}${ref}`;
+  }
+
+  /** Whether a question's prompt is L1 and its answer L2 — the drillable direction. */
+  isProduceKind(kind: string): boolean {
+    return this.profile.questions.produceKinds.includes(kind);
   }
 
   /** All grammar sections in book order. */
@@ -56,6 +93,6 @@ export class Content {
    */
   lookup(form: string): LemmaEntry[] {
     if (this.data.lemmaLookup) return this.data.lemmaLookup.lookup(form);
-    return this.data.lemmas ? lookupForm(this.data.lemmas, form) : [];
+    return this.data.lemmas ? lookupForm(this.data.lemmas, form, this.fold) : [];
   }
 }

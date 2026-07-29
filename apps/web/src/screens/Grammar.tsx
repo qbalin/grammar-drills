@@ -1,5 +1,6 @@
-import { parseBlocks, type Block, type GrammarSection } from "@latin-tutor/core";
+import { parseBlocks, type Block, type GrammarSection } from "@lang-tutor/core";
 import { Sheet } from "../ui.js";
+import { profile } from "../pack.js";
 
 /**
  * One grammar section, in full.
@@ -33,7 +34,7 @@ export function GrammarSheet({
       action={action}
     >
       <div className="grammar">
-        {parseBlocks(section.text).map((block, i) => (
+        {parseBlocks(section.text, profile.grammar).map((block, i) => (
           <GrammarBlock key={i} block={block} />
         ))}
       </div>

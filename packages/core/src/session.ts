@@ -1,6 +1,5 @@
 import { Content } from "./content.js";
-import { FAMILIES, familyOf, type FamilyId } from "./families.js";
-import { normalize } from "./normalize.js";
+import { type FamilyId } from "./families.js";
 import {
   deserializeCard,
   isDue,
@@ -11,7 +10,6 @@ import {
   type Rating,
 } from "./scheduler.js";
 import {
-  CITATIONS_VERSION,
   emptyProgress,
   type Attempt,
   type Focus,
@@ -110,11 +108,25 @@ function fraction(mastery: number | undefined): number {
 export class Session {
   private p: Progress;
 
+  /**
+   * The pack's families, in the order the map is drawn and placement walks.
+   * Read through here rather than imported, so the engine carries no opinion
+   * about which families a language has.
+   */
+  private get families(): readonly { id: string; label: string }[] {
+    return this.content.families;
+  }
+
+  /** The generation of the shipped citations this pack is on. */
+  private get citationsVersion(): number {
+    return this.content.profile.citationsVersion;
+  }
+
   constructor(
     private readonly content: Content,
     progress?: Progress,
   ) {
-    this.p = progress ?? emptyProgress();
+    this.p = progress ?? emptyProgress(content.profile.citationsVersion);
     // Progress files written before mastery tracking have no map; there is no
     // migration layer, so default it here. Same for the answer trail, the
     // stored placement run, and the citation generation — a file written before
@@ -188,10 +200,10 @@ export class Session {
     | undefined {
     const run = this.p.placement;
     if (!run) return undefined;
-    const probed = FAMILIES.filter(
+    const probed = this.families.filter(
       (f) => this.familyTopics(f.id).length > 0,
     ).map((f) => f.id);
-    const current = FAMILIES[run.familyIndex]?.id;
+    const current = this.families[run.familyIndex]?.id;
     if (!current) return undefined;
     return {
       family: current,
@@ -214,7 +226,7 @@ export class Session {
   answerPlacement(passed: boolean): PlacementRun | null {
     const run = this.p.placement;
     if (!run) return null;
-    const family = FAMILIES[run.familyIndex]?.id;
+    const family = this.families[run.familyIndex]?.id;
     if (!family) {
       this.endPlacement();
       return null;
@@ -265,7 +277,7 @@ export class Session {
       return total > 0 && answered < total ? f : { kind: "sweep" };
     }
     if (f.kind === "family") {
-      return this.firstAvailable(familyOf(f.id)) ? f : { kind: "sweep" };
+      return this.firstAvailable(this.content.familyOf(f.id)) ? f : { kind: "sweep" };
     }
     return f;
   }
@@ -284,7 +296,7 @@ export class Session {
   studyFrom(sectionId: string): void {
     const section = this.content.getSection(sectionId);
     if (!section) return;
-    const family = familyOf(section.family);
+    const family = this.content.familyOf(section.family);
     this.p.frontiers[family] = sectionId;
     this.p.focus = { kind: "family", id: family };
     this.touch();
@@ -507,7 +519,7 @@ export class Session {
    * lemma so re-recording the same word is a no-op. Returns the card id.
    */
   recordVocab(entry: LemmaEntry, now: Date = new Date()): string {
-    const id = `v-${normalize(entry.lemma)}`;
+    const id = `v-${this.content.fold(entry.lemma)}`;
     if (!this.p.vocabCards[id]) {
       this.p.vocabCards[id] = {
         ...entry,
@@ -535,7 +547,7 @@ export class Session {
   /** Every word recorded, in dictionary order. */
   vocabList(): VocabCardState[] {
     return Object.values(this.p.vocabCards).sort((a, b) =>
-      normalize(a.citation).localeCompare(normalize(b.citation)),
+      this.content.fold(a.citation).localeCompare(this.content.fold(b.citation)),
     );
   }
 
@@ -575,7 +587,7 @@ export class Session {
    * every lookup misses, so nothing is overwritten with nothing.
    */
   refreshCitations(): number {
-    if ((this.p.citationsVersion ?? 1) >= CITATIONS_VERSION) return 0;
+    if ((this.p.citationsVersion ?? 1) >= this.citationsVersion) return 0;
     let changed = 0;
     let looked = false;
     for (const card of Object.values(this.p.vocabCards)) {
@@ -592,7 +604,7 @@ export class Session {
     // Only claim the generation once a dictionary was actually consulted;
     // otherwise an offline launch would mark the cards done without reading one.
     if (looked || Object.keys(this.p.vocabCards).length === 0) {
-      this.p.citationsVersion = CITATIONS_VERSION;
+      this.p.citationsVersion = this.citationsVersion;
     }
     if (changed > 0 || looked) this.touch();
     return changed;
@@ -635,7 +647,7 @@ export class Session {
         kind: "topic",
         id,
         title: section.title,
-        sub: `§ ${section.ref}`,
+        sub: this.content.formatRef(section.ref),
         due,
         overdue: due.getTime() <= now.getTime(),
       });
@@ -681,7 +693,7 @@ export class Session {
       const scored = this.p.topicMastery[s.id];
       const assumed = scored === undefined && known.has(s.id);
       const card = this.p.topicCards[s.id];
-      const family = familyOf(s.family);
+      const family = this.content.familyOf(s.family);
       const { answered, total } = this.coverage(s.id);
       return {
         sectionId: s.id,
@@ -703,7 +715,7 @@ export class Session {
   /** `grammarMap()` bucketed into families, in display order. */
   familyProgress(now: Date = new Date()): FamilyProgress[] {
     const map = this.grammarMap(now);
-    return FAMILIES.map(({ id, label }) => {
+    return this.families.map(({ id, label }) => {
       const topics = map.filter((t) => t.family === id);
       const percent =
         topics.length === 0
@@ -803,7 +815,7 @@ export class Session {
       .sections()
       .filter(
         (s) =>
-          familyOf(s.family) === family &&
+          this.content.familyOf(s.family) === family &&
           this.content.testsFor(s.id).length > 0,
       )
       .map((s) => s.id);
@@ -839,10 +851,10 @@ export class Session {
   private nextNewTopic(): string | null {
     const focus = this.focusState();
     if (focus.kind === "family") {
-      const inFamily = this.firstAvailable(familyOf(focus.id));
+      const inFamily = this.firstAvailable(this.content.familyOf(focus.id));
       if (inFamily) return inFamily;
     }
-    for (const { id } of FAMILIES) {
+    for (const { id } of this.families) {
       const ahead = this.firstAvailable(id);
       if (ahead) return ahead;
     }
@@ -876,8 +888,8 @@ export class Session {
 
   /** Begin the first family from `from` on that has any topics at all. */
   private openFamily(from: number): PlacementRun | null {
-    for (let i = from; i < FAMILIES.length; i++) {
-      const topics = this.familyTopics(FAMILIES[i]!.id);
+    for (let i = from; i < this.families.length; i++) {
+      const topics = this.familyTopics(this.families[i]!.id);
       if (topics.length === 0) continue;
       return {
         familyIndex: i,

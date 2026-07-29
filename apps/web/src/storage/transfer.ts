@@ -1,4 +1,4 @@
-import { emptyProgress, type Content, type Progress } from "@latin-tutor/core";
+import { emptyProgress, type Content, type Progress } from "@lang-tutor/core";
 
 /**
  * Moving progress between devices without GitHub.

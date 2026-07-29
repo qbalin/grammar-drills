@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Attempt, FamilyProgress, TopicProgress } from "@latin-tutor/core";
+import type { Attempt, FamilyProgress, TopicProgress } from "@lang-tutor/core";
 import { Ring, Sheet, ago } from "../ui.js";
 
 /**

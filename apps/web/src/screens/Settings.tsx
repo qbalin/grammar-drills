@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Sheet } from "../ui.js";
+import { profile } from "../pack.js";
 import type { SyncConfig, SyncState } from "../storage/sync.js";
 
 function stateLine(state: SyncState): string {
@@ -57,7 +58,7 @@ export function SettingsSheet({
       token: "",
       owner: "",
       repo: "",
-      path: "latin-progress.json",
+      path: profile.storage.githubPath,
       branch: "main",
     },
   );
@@ -137,7 +138,7 @@ export function SettingsSheet({
         <input
           value={draft.repo}
           onChange={set("repo")}
-          placeholder="latin-progress"
+          placeholder={profile.storage.githubPath.replace(/\.json$/, "")}
           autoCapitalize="off"
           autoCorrect="off"
           spellCheck={false}

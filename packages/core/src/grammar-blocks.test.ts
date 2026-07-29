@@ -1,10 +1,14 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
+import { testProfile } from "./profile.fixture.js";
 import { parseBlocks, type Block } from "./grammar-blocks.js";
 import type { GrammarSection } from "./types.js";
 
+/** The style is the pack's; these tests are about the shapes, not the book. */
+const parseBlocksStyled = (text: string) => parseBlocks(text, testProfile.grammar);
+
 const grammar: GrammarSection[] = JSON.parse(
-  readFileSync(new URL("../../../content/grammar.json", import.meta.url), "utf8"),
+  readFileSync(new URL("../../../languages/latin/content/grammar.json", import.meta.url), "utf8"),
 );
 
 const section = (ref: string) => {
@@ -18,26 +22,26 @@ const tables = (blocks: Block[]) =>
 
 describe("parseBlocks", () => {
   it("takes each prose paragraph as one block", () => {
-    expect(parseBlocks("The girl loves the rose.\nThe farmer sees her.")).toEqual([
+    expect(parseBlocksStyled("The girl loves the rose.\nThe farmer sees her.")).toEqual([
       { kind: "para", text: "The girl loves the rose." },
       { kind: "para", text: "The farmer sees her." },
     ]);
   });
 
   it("separates a list marker from what it introduces", () => {
-    expect(parseBlocks("1. Quis, who?")).toEqual([
+    expect(parseBlocksStyled("1. Quis, who?")).toEqual([
       { kind: "item", marker: "1.", text: "Quis, who?", level: 1 },
     ]);
-    expect(parseBlocks("a. An old Ablative quī occurs.")).toEqual([
+    expect(parseBlocksStyled("a. An old Ablative quī occurs.")).toEqual([
       { kind: "item", marker: "a.", text: "An old Ablative quī occurs.", level: 2 },
     ]);
-    expect(parseBlocks("2) Both forms occur.")).toEqual([
+    expect(parseBlocksStyled("2) Both forms occur.")).toEqual([
       { kind: "item", marker: "2)", text: "Both forms occur.", level: 2 },
     ]);
   });
 
   it("enumerates with roman numerals as well as arabic", () => {
-    expect(parseBlocks("III. Consonant-Stems.")).toEqual([
+    expect(parseBlocksStyled("III. Consonant-Stems.")).toEqual([
       { kind: "item", marker: "III.", text: "Consonant-Stems.", level: 1 },
     ]);
   });
@@ -45,13 +49,13 @@ describe("parseBlocks", () => {
   // The book types these with two spaces after the numeral, which is exactly
   // the shape of a two-column paradigm row.
   it("does not mistake a wide-set roman point for a paradigm row", () => {
-    expect(parseBlocks("I.  Pure Consonant-Stems.")).toEqual([
+    expect(parseBlocksStyled("I.  Pure Consonant-Stems.")).toEqual([
       { kind: "item", marker: "I.", text: "Pure Consonant-Stems.", level: 1 },
     ]);
   });
 
   it("reads a note as a sub-point, not as prose", () => {
-    expect(parseBlocks("NOTE.—The Plural is rare.")).toEqual([
+    expect(parseBlocksStyled("NOTE.—The Plural is rare.")).toEqual([
       { kind: "item", marker: "Note", text: "The Plural is rare.", level: 2 },
     ]);
   });
@@ -59,13 +63,13 @@ describe("parseBlocks", () => {
   // A row of cells and a numbered list item both open with "1."; only the gaps
   // between the cells tell them apart, so the table test has to come first.
   it("reads a numbered paradigm row as a table, not as a list", () => {
-    const blocks = parseBlocks("1.  ūnus  prīmus\n2.  duo  secundus");
+    const blocks = parseBlocksStyled("1.  ūnus  prīmus\n2.  duo  secundus");
     expect(blocks).toHaveLength(1);
     expect(blocks[0]!.kind).toBe("table");
   });
 
   it("splits a paradigm row on the gaps that hold its columns apart", () => {
-    const [table] = tables(parseBlocks("Nom.  puella  puellae\nGen.  puellae  puellārum"));
+    const [table] = tables(parseBlocksStyled("Nom.  puella  puellae\nGen.  puellae  puellārum"));
     expect(table!.columns).toBe(3);
     expect(table!.rows.map((r) => r.cells)).toEqual([
       ["Nom.", "puella", "puellae"],
@@ -76,7 +80,7 @@ describe("parseBlocks", () => {
   it("puts a short caption over the forms, not over the case labels", () => {
     // Six words heading a seven-column table: the stub column has no caption.
     const [table] = tables(
-      parseBlocks(
+      parseBlocksStyled(
         [
           "MASCULINE.  FEMININE.  NEUTER.  MASCULINE.  FEMININE.  NEUTER.",
           "Nom.  hīc  haec  hōc  hī  hae  haec",
@@ -94,7 +98,7 @@ describe("parseBlocks", () => {
     // Four captions over a five-column table. Read as a stub row it would sit
     // one column left, and every ending would be filed under the wrong number.
     const [table] = tables(
-      parseBlocks(
+      parseBlocksStyled(
         [
           "SINGULAR.  PLURAL.  SINGULAR.  PLURAL.",
           "Nom.  lapis  lapidēs  mīles  mīlitēs",
@@ -111,7 +115,7 @@ describe("parseBlocks", () => {
     // Two captions over six gendered columns: three apiece. Left one-to-one,
     // "PLURAL." would sit over the feminine singular and mislabel it.
     const [table] = tables(
-      parseBlocks(
+      parseBlocksStyled(
         [
           "SINGULAR  PLURAL.",
           "MASCULINE.  FEMININE.  NEUTER.  MASCULINE.  FEMININE.  NEUTER.",
@@ -130,13 +134,13 @@ describe("parseBlocks", () => {
 
   it("still reads a stub row that has run out of forms as a stub row", () => {
     const [table] = tables(
-      parseBlocks(["Sing.  amō  amās  amat", "Plur.  amāmus"].join("\n")),
+      parseBlocksStyled(["Sing.  amō  amās  amat", "Plur.  amāmus"].join("\n")),
     );
     expect(table!.rows[1]!.cells).toEqual(["Plur.", "amāmus", "", ""]);
   });
 
   it("keeps a caption that opens a paradigm inside it", () => {
-    const [table] = tables(parseBlocks("SINGULAR.\nNom.  puella\nGen.  puellae"));
+    const [table] = tables(parseBlocksStyled("SINGULAR.\nNom.  puella\nGen.  puellae"));
     expect(table!.rows[0]).toEqual({ cells: ["SINGULAR."], kind: "divider" });
   });
 
@@ -144,7 +148,7 @@ describe("parseBlocks", () => {
     // Split into two tables, each would size its columns alone and the endings
     // would stop lining up down the page — the whole point of the table.
     const [table] = tables(
-      parseBlocks(
+      parseBlocksStyled(
         [
           "Nom.  tussis  īgnis",
           "PLURAL.",
@@ -158,7 +162,7 @@ describe("parseBlocks", () => {
 
   it("takes a standalone capitalised label with no paradigm under it as a heading", () => {
     expect(
-      parseBlocks("RELATION OF ADVERBS AND PREPOSITIONS.\nThese regularly end in -is."),
+      parseBlocksStyled("RELATION OF ADVERBS AND PREPOSITIONS.\nThese regularly end in -is."),
     ).toEqual([
       { kind: "heading", text: "RELATION OF ADVERBS AND PREPOSITIONS." },
       { kind: "para", text: "These regularly end in -is." },
@@ -167,11 +171,11 @@ describe("parseBlocks", () => {
 
   it("does not mistake a shouted sentence for a label", () => {
     const shout = "THIS IS A LONG RUN OF CAPITALS THAT IS REALLY A SENTENCE.";
-    expect(parseBlocks(shout)).toEqual([{ kind: "para", text: shout }]);
+    expect(parseBlocksStyled(shout)).toEqual([{ kind: "para", text: shout }]);
   });
 
   it("keeps a caption with no forms under it as a heading", () => {
-    expect(parseBlocks("SINGULAR.")).toEqual([{ kind: "heading", text: "SINGULAR." }]);
+    expect(parseBlocksStyled("SINGULAR.")).toEqual([{ kind: "heading", text: "SINGULAR." }]);
   });
 
   describe("against the shipped grammar", () => {
@@ -182,7 +186,7 @@ describe("parseBlocks", () => {
       const strip = (t: string) =>
         t.replace(/NOTE\.?\s*(?:—\s*)?/g, "Note").replace(/\s+/g, "");
       for (const s of grammar) {
-        const seen = parseBlocks(s.text)
+        const seen = parseBlocksStyled(s.text)
           .flatMap((b) =>
             b.kind === "table"
               ? b.rows.flatMap((r) => r.cells)
@@ -197,7 +201,7 @@ describe("parseBlocks", () => {
 
     it("gives every table rows that cover exactly its columns", () => {
       for (const s of grammar) {
-        for (const t of tables(parseBlocks(s.text))) {
+        for (const t of tables(parseBlocksStyled(s.text))) {
           for (const row of t.rows) {
             if (row.kind === "divider") {
               expect(row.cells).toHaveLength(1);
@@ -212,7 +216,7 @@ describe("parseBlocks", () => {
     });
 
     it("reads the demonstrative paradigm as one seven-column table", () => {
-      const hic = tables(parseBlocks(section("87").text))[0]!;
+      const hic = tables(parseBlocksStyled(section("87").text))[0]!;
       expect(hic.columns).toBe(7);
       expect(hic.rows.find((r) => r.cells[0] === "Nom.")!.cells).toEqual([
         "Nom.", "hīc", "haec", "hōc", "hī", "hae", "haec",
@@ -220,7 +224,7 @@ describe("parseBlocks", () => {
     });
 
     it("holds an i-stem paradigm together across its SINGULAR/PLURAL divider", () => {
-      const blocks = parseBlocks(section("28-47").text);
+      const blocks = parseBlocksStyled(section("28-47").text);
       const tussis = tables(blocks).find((t) =>
         t.rows.some((r) => r.cells.includes("tussis")),
       )!;
@@ -229,7 +233,7 @@ describe("parseBlocks", () => {
     });
 
     it("finds prose, lists and tables in the section on interrogatives", () => {
-      const kinds = new Set(parseBlocks(section("90").text).map((b) => b.kind));
+      const kinds = new Set(parseBlocksStyled(section("90").text).map((b) => b.kind));
       expect(kinds).toEqual(new Set(["para", "item", "table"]));
     });
   });

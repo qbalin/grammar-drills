@@ -1,5 +1,5 @@
 {
-  "name": "@latin-tutor/web",
+  "name": "@lang-tutor/web",
   "version": "0.1.0",
   "type": "module",
   "private": true,
@@ -12,7 +12,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@latin-tutor/core": "workspace:*",
+    "@lang-tutor/core": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "latin",
+
+  "l2": {
+    "code": "la",
+    "name": "Latin",
+    "endonym": "Latina",
+    "script": "latn",
+    "direction": "ltr"
+  },
+  "l1": { "code": "en", "name": "English" },
+
+  "fold": {
+    "trim": true,
+    "caseFold": "lower",
+    "decompose": "NFD",
+    "stripMarks": ["\\u0300-\\u036f"],
+    "keepMarks": [],
+    "map": [["j", "i"], ["v", "u"]],
+    "recompose": "none"
+  },
+
+  "families": [
+    { "id": "nouns", "label": "Nouns" },
+    { "id": "adj", "label": "Adjectives & adverbs" },
+    { "id": "pron", "label": "Pronouns" },
+    { "id": "verb-forms", "label": "Verb forms" },
+    { "id": "particles", "label": "Particles" },
+    { "id": "noun-syntax", "label": "Noun syntax" },
+    { "id": "adj-pron-syntax", "label": "Adjective & pronoun syntax" },
+    { "id": "verb-syntax", "label": "Verb syntax" },
+    { "id": "style", "label": "Word-order & style" }
+  ],
+  "fallbackFamily": "style",
+
+  "grammar": {
+    "source": {
+      "title": "Charles E. Bennett, New Latin Grammar (Boston, 1908)",
+      "url": "https://www.gutenberg.org/files/15665/15665-0.txt",
+      "licence": "public domain (Project Gutenberg ebook #15665)"
+    },
+    "idPrefix": "bn",
+    "refPrefix": "§ ",
+    "paradigmLabels": [
+      "nom", "gen", "dat", "acc", "abl", "voc", "loc",
+      "sing", "singular", "plur", "plural",
+      "1st", "2nd", "3rd", "1", "2", "3"
+    ],
+    "headingPattern": "^[A-Z][A-Z .,'’—-]*\\.?$",
+    "headingFlags": "",
+    "headingMaxLength": 40
+  },
+
+  "questions": {
+    "defaultKind": "translate-en-la",
+    "produceKinds": ["translate-en-la"]
+  },
+
+  "citationsVersion": 2,
+
+  "ui": {
+    "appName": "Latina",
+    "manifestName": "Latina — Latin tutor",
+    "description": "A spaced-repetition Latin tutor. Translate into Latin, grade yourself, and watch the grammar fill in.",
+    "promptDirection": "Translate into Latin",
+    "cliPlaceholder": "type your Latin, then Enter…",
+    "cliHint": "type your Latin",
+    "webPlaceholder": "write your Latin…",
+    "answerAriaLabel": "Your Latin",
+    "sayItIn": "say it in Latin",
+    "themeColor": "#12121a",
+    "backgroundColor": "#12121a"
+  },
+
+  "storage": {
+    "webProgressKey": "latin-tutor:progress",
+    "webSyncKey": "latin-tutor:sync",
+    "cliDir": ".latin-tutor",
+    "githubPath": "latin-progress.json",
+    "exportPrefix": "latina-progress",
+    "dictionaryCacheName": "latina-dictionary"
+  },
+
+  "grammarShape": {
+    "minTopics": 60,
+    "maxTopics": 300,
+    "minTextChars": 120,
+    "maxTextChars": 24000,
+    "medianTextCharsRange": [400, 4000],
+    "p90TextCharsMax": 8000,
+    "maxFamilySharePct": 45
+  },
+
+  "coverage": {
+    "minTestsPerTopic": 6,
+    "minQuestionsPerTopic": 16,
+    "topicsWithTestsPct": 100,
+    "maxDuplicatePromptPct": 1.0,
+    "minDictResolvedPct": 90,
+    "minBandUtilisationPct": 25,
+    "minKeptRatioPct": 40
+  }
+}

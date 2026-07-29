@@ -2,8 +2,9 @@ import {
   GitHubStorage,
   type Progress,
   type StorageAdapter,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 import { LocalStorageAdapter } from "./local.js";
+import { profile } from "../pack.js";
 
 const CONFIG_KEY = "latin-tutor:sync";
 
@@ -32,7 +33,7 @@ export function loadSyncConfig(): SyncConfig | null {
       token: cfg.token,
       owner: cfg.owner,
       repo: cfg.repo,
-      path: cfg.path || "latin-progress.json",
+      path: cfg.path || profile.storage.githubPath,
       branch: cfg.branch || "main",
     };
   } catch {
@@ -88,7 +89,11 @@ export class SyncingStorage implements StorageAdapter {
   /** Point sync at a repo, or turn it off with `null`. */
   configure(config: SyncConfig | null): void {
     this.config = config;
-    this.remote = config ? new GitHubStorage(config) : null;
+    // The commit subject names the language rather than being stored with the
+    // credentials: it is a fact about this build, not about the user's repo.
+    this.remote = config
+      ? new GitHubStorage({ ...config, message: `Update ${profile.l2.name} progress` })
+      : null;
     saveSyncConfig(config);
     this.setState(config ? { kind: "idle" } : { kind: "off" });
   }

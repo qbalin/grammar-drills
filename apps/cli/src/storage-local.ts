@@ -1,6 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname } from "node:path";
-import type { Progress, StorageAdapter } from "@latin-tutor/core";
+import type { Progress, StorageAdapter } from "@lang-tutor/core";
 
 /** Persists progress to a local JSON file (the CLl's default store). */
 export class LocalFileStorage implements StorageAdapter {

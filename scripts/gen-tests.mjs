@@ -1,86 +1,84 @@
 // Offline exercise generator (never runs at runtime, needs no API key).
-// Drives Claude via the authenticated `claude -p` CLI to write English→Latin
-// translation tests per grammar topic, checks the Latin against the reference
-// dictionary.db, and freezes the result to content/tests/<id>.json.
+//
+// Drives Claude via the authenticated `claude -p` CLI to write L1→L2
+// translation tests per grammar topic, checks every L2 form against the
+// reference dictionary.db, and freezes the result to
+// languages/<pack>/content/tests/<id>.json.
+//
+// The language-specific half — the prompt, the function-word allowlist, the
+// frequency band, how many tests a topic wants — lives in the pack's
+// gen/config.mjs. Nothing about Latin is in this file.
 //
 // dictionary.db is incomplete, so a miss is not treated as proof of a bad
 // form: a sentence may carry up to --allow-unverified (default 2) unmatched
 // words, and every one is listed in a report at the end of the run.
 //
-//   node scripts/gen-tests.mjs [--target N] [--per M] [--sleep S] [topicId ...]
+//   node --import tsx scripts/gen-tests.mjs [--pack languages/latin]
+//        [--fill] [--only-thin] [--target N] [--per M] [--sleep S] [topicId ...]
 //
-// Topics that already have a file are skipped, so rerunning always resumes.
+// Resuming is by COUNT, not by whether a file exists. A topic that yielded
+// three tests against a target of twelve used to be skipped by every later run
+// — permanently thin, and invisible unless someone counted. `--fill` tops up
+// each topic to its size-scaled target and appends; `--only-thin` restricts
+// that to the topics actually short. Both are safe to re-run.
+//
 // Needs the reference project alongside this one for dictionary.db and
-// frequencies.db; override with LATIN_REF=/path/to/languages/latin.
+// frequencies.db; override with LANG_REF=/path/to/languages/<pack>.
 import { execFileSync } from "node:child_process";
 import { DatabaseSync } from "node:sqlite";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const REPO = dirname(dirname(fileURLToPath(import.meta.url)));
-const REF =
-  process.env.LATIN_REF ??
-  join(REPO, "..", "language_learning", "languages", "latin");
-const OUT = `${REPO}/content/tests`;
-const MODEL = "claude-opus-4-8";
-const QUESTIONS = 4; // exactly 4 English→Latin sentences per test
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { compileFold } from "@lang-tutor/core";
+import { loadProfile, packDir, refDir } from "./lib/pack.mjs";
+import { targetFor } from "./lib/target.mjs";
 
 const args = process.argv.slice(2);
 const opt = (name, def) => {
   const i = args.indexOf(name);
   return i >= 0 ? args.splice(i, 2)[1] : def;
 };
-const TARGET = Number(opt("--target", 12));
+const PLAN_ONLY = args.includes("--plan");
+const FILL = args.includes("--fill") || args.includes("--only-thin");
+const ONLY_THIN = args.includes("--only-thin");
+for (const flag of ["--fill", "--only-thin", "--plan"]) {
+  const i = args.indexOf(flag);
+  if (i >= 0) args.splice(i, 1);
+}
+
+const PACK = opt("--pack", packDir(process.argv.slice(2)));
+const profile = loadProfile(PACK);
+const config = (await import(pathToFileURL(join(PACK, "gen", "config.mjs")).href)).default;
+const REF = opt("--ref", refDir(profile, process.argv.slice(2)));
+const OUT = join(PACK, "content", "tests");
+const STATS = join(PACK, "content", "gen-stats.json");
+const MODEL = config.model;
+const QUESTIONS = config.questionsPerTest;
+
+// A flat target is what makes coverage uneven: a note on the locative and a
+// treatment of conditional sentences are not the same amount of grammar.
+const TARGET_OVERRIDE = args.indexOf("--target") >= 0 ? Number(opt("--target", 12)) : null;
+const targetOf = (topic) => TARGET_OVERRIDE ?? targetFor(topic, profile, config);
 const PER_CALL = Number(opt("--per", 6));
 const MAX_CALLS = Number(opt("--max", 4));
 const SLEEP_MS = Number(opt("--sleep", 1500)); // pace calls to respect usage limits
 // How many dictionary misses one sentence may carry before it is dropped.
-const ALLOW_UNVERIFIED = Number(opt("--allow-unverified", 2));
+const ALLOW_UNVERIFIED = Number(opt("--allow-unverified", config.allowUnverified));
 const onlyTopics = args;
 
 const dict = new DatabaseSync(`${REF}/dictionary.db`, { readOnly: true });
 const freq = new DatabaseSync(`${REF}/frequencies.db`, { readOnly: true });
 const formExists = dict.prepare("select 1 from forms where form_norm = ? limit 1");
-const normalize = (w) =>
-  w.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
-    .replace(/j/g, "i").replace(/v/g, "u");
+// The pack's own fold, not a copy of it: `dictionary.db.form_norm` was written
+// with this fold, so a second implementation drifting from it would silently
+// turn every lookup below into a miss and reject correct sentences.
+const normalize = compileFold(profile.fold);
 
 /**
- * Indeclinable function words — prepositions, conjunctions, particles, adverbs.
- *
- * `dictionary.db` is a Wiktionary dump built around *inflected* forms, and it
- * simply has no `forms` row for most indeclinables: 47 of the commonest are
- * absent, `utinam`, `antequam`, `priusquam`, `quoad`, `inter` and `invicem`
- * among them. Since a test is dropped when any one of its words fails, a topic
- * defined by such a word loses everything — optative subjunctive, temporal
- * clauses and reciprocal pronouns each scored a literal 0 out of 72 before this
- * list was extended.
- *
- * Every entry below was verified absent from dictionary.db. This whitelists
- * indeclinables only; inflected forms are still checked, which is the point.
+ * The pack's indeclinable function words, verified absent from its
+ * dictionary.db (see its gen/config.mjs for why the list has to exist).
  */
-const FUNCTION_WORDS = new Set(
-  [
-    // prepositions
-    "a","ab","ad","ante","apud","circum","contra","coram","cum","de","e","ex",
-    "extra","in","infra","inter","intra","ob","per","post","prae","praeter",
-    "pro","prope","propter","sine","sub","super","supra","trans","ultra",
-    // coordinating conjunctions and connectives
-    "ac","atque","aut","autem","enim","ergo","et","etiam","igitur","itaque",
-    "nam","namque","nec","neque","nisi","quia","quod","quoniam","sed","seu",
-    "sive","tamen","vel","verum","-que","que","-ne",
-    // subordinators
-    "antequam","priusquam","postquam","dum","donec","quoad","simulac","ubi",
-    "ut","uti","quin","quominus","quasi","tamquam","velut","ne","si","nedum",
-    // particles and common adverbs
-    "an","cur","haud","ita","iam","modo","non","num","nunc","quam","quidem",
-    "quoque","saepe","semper","sic","tam","tandem","tum","tunc","unde",
-    "utinam","vix","invicem","vicissim","mutuo","dumtaxat",
-    // the copula, which appears constantly
-    "est","sunt",
-  ].map(normalize),
-);
+const FUNCTION_WORDS = new Set(config.functionWords.map(normalize));
 /** Every form the dictionary could not confirm, for the end-of-run report. */
 const unverified = new Map();
 
@@ -101,8 +99,16 @@ function classify(raw, firstWord) {
   if (FUNCTION_WORDS.has(n)) return "ok";
   if (formExists.get(n)) return "ok";
   // A mid-sentence capital is a proper noun; the first word is capitalised by
-  // position, so it earns no such pass.
-  if (/^[A-Z]/.test(w) && normalize(w) !== normalize(firstWord ?? "")) return "ok";
+  // position, so it earns no such pass. Exempting every capital would wave
+  // through the first word of every answer, which is the whole failure this
+  // guards against. A script with no letter case turns the rule off.
+  if (
+    config.properNounExemption === "mid-sentence-capital" &&
+    w !== w.toLowerCase() &&
+    normalize(w) !== normalize(firstWord ?? "")
+  ) {
+    return "ok";
+  }
   unverified.set(w, (unverified.get(w) ?? 0) + 1);
   return "unverified";
 }
@@ -110,9 +116,9 @@ function classify(raw, firstWord) {
 // Sample richer vocabulary (intermediate/advanced bands) to seed variety.
 const richLemmas = freq
   .prepare(
-    "select lemma from frequency where rank between 400 and 6000 and pos in ('noun','verb','adj') order by rank",
+    `select lemma from frequency where rank between ? and ? and pos in (${config.band.pos.map(() => "?").join(",")}) order by rank`,
   )
-  .all()
+  .all(config.band.min, config.band.max, ...config.band.pos)
   .map((r) => r.lemma);
 function vocabHint(k = 20) {
   const pick = [];
@@ -120,17 +126,7 @@ function vocabHint(k = 20) {
   return [...new Set(pick)].join(", ");
 }
 
-const RULES = `You write Latin practice items for a spaced-repetition tutor. Each item is an English sentence the student translates INTO Latin; the student writes their Latin, then compares it with your reference answer and self-grades. So every item needs ONE clear, correct Latin translation.
-
-Rules:
-- EVERY question is an English→Latin translation. Never Latin→English, never fill-in-the-blank, never a parsing drill.
-- Make the sentences genuinely interesting and non-trivial: use subordinate clauses, participles, ablative phrases, adjectives, and varied word order where the grammar point allows — pitch them at an intermediate/advanced learner, not a first-week beginner. Length ~6–14 words.
-- Each sentence must clearly exercise the SPECIFIC grammar point below, but may combine it with other grammar the learner already knows.
-- Use rich, varied classical vocabulary — do NOT keep reusing puella/rosa/nauta/servus. Draw on words like these (and others you know): {{VOCAB}}. Vary vocabulary across the whole set.
-- "prompt" = the English sentence. "answer" = a correct classical Latin translation, with macrons on all long vowels.
-- "vocab" = EVERY distinct inflected Latin WORD FORM in your Latin answer, exactly as written with macrons — these are checked against a dictionary, so never invent forms.
-Output ONLY a JSON object, no markdown fences, no commentary:
-{"tests":[{"questions":[{"prompt":"<English>","answer":"<Latin>","vocab":["..."]}]}]}`;
+const RULES = config.rules;
 
 function callClaude(prompt) {
   let out;
@@ -169,35 +165,41 @@ function callClaude(prompt) {
   return JSON.parse(text.slice(s, e + 1)).tests ?? [];
 }
 
-function validate(topicId, rawTest, index) {
+/** A prompt reduced to what makes it the same question asked twice. */
+function promptKey(prompt) {
+  return String(prompt).toLowerCase().replace(/[^\p{Letter}\s]/gu, "").trim();
+}
+
+function validate(topicId, rawTest, index, stats, seenPrompts) {
   const questions = [];
   for (const q of rawTest.questions ?? []) {
-    if (!q.prompt || !q.answer) continue;
+    if (!q.prompt || !q.answer) { stats.rejected.noPrompt++; continue; }
+    if (seenPrompts.has(promptKey(q.prompt))) { stats.rejected.duplicate++; continue; }
     const vocab = (q.vocab ?? []).flatMap((v) => String(v).split(/\s+/)).filter(Boolean);
-    if (vocab.length === 0) continue;
+    if (vocab.length === 0) { stats.rejected.noVocab++; continue; }
     const firstWord = String(q.answer).trim().split(/\s+/)[0] ?? "";
     // A couple of dictionary misses in a sentence is normal — the reference is
     // incomplete. Many misses in one sentence is the signature of invented
     // Latin, so the item still goes.
     const misses = vocab.filter((v) => classify(v, firstWord) === "unverified").length;
-    if (misses > ALLOW_UNVERIFIED) continue;
-    questions.push({ prompt: q.prompt, answer: q.answer, kind: "translate-en-la", vocab });
+    if (misses > ALLOW_UNVERIFIED) { stats.rejected.tooManyMisses++; continue; }
+    questions.push({ prompt: q.prompt, answer: q.answer, kind: config.kind, vocab });
   }
-  // keep only well-formed tests of ~4 questions
-  if (questions.length < 3) return null;
+  // keep only well-formed tests
+  if (questions.length < config.minQuestionsPerTest) { stats.rejected.shortTest++; return null; }
   return { id: `${topicId}-t${index}`, sectionId: topicId, questions: questions.slice(0, QUESTIONS) };
 }
 
 function topicPrompt(topic, n, avoid) {
   return `${RULES.replace("{{VOCAB}}", vocabHint())}
 
-Grammar point — § ${topic.ref} ${topic.title}:
+Grammar point — ${profile.grammar.refPrefix}${topic.ref} ${topic.title}:
 """
 ${topic.text}
 """
 
-Write ${n} DISTINCT tests, each with exactly ${QUESTIONS} English→Latin sentences, all exercising this grammar point. Make the tests differ from one another in vocabulary and structure.${
-    avoid.length ? `\nDo not reuse these earlier English prompts:\n- ${avoid.slice(-24).join("\n- ")}` : ""
+Write ${n} DISTINCT tests, each with exactly ${QUESTIONS} ${profile.l1.name}→${profile.l2.name} sentences, all exercising this grammar point. Make the tests differ from one another in vocabulary and structure.${
+    avoid.length ? `\nDo not reuse these earlier ${profile.l1.name} prompts:\n- ${avoid.slice(-24).join("\n- ")}` : ""
   }`;
 }
 
@@ -206,16 +208,24 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 /** Waits between retries after a transient failure (usage limits, overload). */
 const BACKOFF_MS = [30_000, 60_000, 120_000, 300_000, 600_000];
 
-async function generateTopic(topic) {
+async function generateTopic(topic, want, alreadyWritten = [], startIndex = 0) {
   const tests = [];
-  const avoid = [];
-  const stats = { calls: 0, rawQ: 0, keptQ: 0, retries: 0 };
+  const avoid = [...alreadyWritten];
+  const stats = {
+    calls: 0, rawQ: 0, keptQ: 0, retries: 0,
+    rejected: { noPrompt: 0, noVocab: 0, tooManyMisses: 0, duplicate: 0, shortTest: 0 },
+  };
+  // A prompt already on disk for this topic must not come back a second time.
+  const seenPrompts = new Set(alreadyWritten.map(promptKey));
   let c = 0;
-  while (c < MAX_CALLS && tests.length < TARGET) {
+  // Calls scale with the deficit: topping a topic up by two tests should not
+  // cost the same four calls as writing it from nothing.
+  const maxCalls = Math.max(2, Math.min(MAX_CALLS, Math.ceil(want / PER_CALL) + 1));
+  while (c < maxCalls && tests.length < want) {
     stats.calls++;
     let raw;
     try {
-      raw = callClaude(topicPrompt(topic, Math.min(PER_CALL, TARGET - tests.length + 1), avoid));
+      raw = callClaude(topicPrompt(topic, Math.min(PER_CALL, want - tests.length + 1), avoid));
     } catch (e) {
       const msg = String(e.message).split("\n")[0];
       // A transient failure must not spend the topic's call budget — otherwise
@@ -235,32 +245,103 @@ async function generateTopic(topic) {
     c++;
     for (const rt of raw) {
       stats.rawQ += (rt.questions ?? []).length;
-      const v = validate(topic.id, rt, tests.length + 1);
+      const v = validate(topic.id, rt, startIndex + tests.length + 1, stats, seenPrompts);
       if (v) {
         stats.keptQ += v.questions.length;
         tests.push(v);
+        for (const q of v.questions) seenPrompts.add(promptKey(q.prompt));
         avoid.push(v.questions[0].prompt);
       }
     }
-    process.stdout.write(`  ${topic.id}: ${tests.length}/${TARGET} tests (call ${stats.calls})\r`);
+    process.stdout.write(`  ${topic.id}: ${tests.length}/${want} tests (call ${stats.calls})\r`);
     await sleep(SLEEP_MS);
   }
   return { tests, stats };
 }
 
 // ---- main -----------------------------------------------------------------
-const grammar = JSON.parse(readFileSync(`${REPO}/content/grammar.json`, "utf8"));
-// Explicit ids regenerate those; otherwise fill in only topics that lack a file.
-const topics = onlyTopics.length
-  ? grammar.filter((t) => onlyTopics.includes(t.id))
-  : grammar.filter((t) => !existsSync(`${OUT}/${t.id}.json`));
+const grammar = JSON.parse(readFileSync(`${PACK}/content/grammar.json`, "utf8"));
 mkdirSync(OUT, { recursive: true });
-console.log(`generating ${topics.length} topics: ${topics.map((t) => t.id).join(", ")}`);
+
+/** The tests already on disk for a topic, or [] if it has none. */
+function existing(topicId) {
+  const path = `${OUT}/${topicId}.json`;
+  if (!existsSync(path)) return [];
+  try {
+    return JSON.parse(readFileSync(path, "utf8"));
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * What still has to be written, and how much of it.
+ *
+ * Resuming by "does a file exist" is what let a topic stall at three tests
+ * forever. The deficit is against the topic's own size-scaled target, so a
+ * re-run converges instead of freezing the first partial result.
+ */
+const work = [];
+for (const topic of grammar) {
+  const have = existing(topic.id);
+  const target = targetOf(topic);
+  if (onlyTopics.length) {
+    // Named explicitly: regenerate from scratch unless filling.
+    if (onlyTopics.includes(topic.id)) {
+      work.push({ topic, have: FILL ? have : [], want: FILL ? target - have.length : target });
+    }
+    continue;
+  }
+  if (FILL) {
+    const deficit = target - have.length;
+    if (deficit > 0 && (!ONLY_THIN || have.length < profile.coverage.minTestsPerTopic || deficit > 0)) {
+      work.push({ topic, have, want: deficit });
+    }
+  } else if (have.length === 0) {
+    work.push({ topic, have: [], want: target });
+  }
+}
+
+if (!work.length) {
+  console.log("Nothing to do: every topic is at or above its target.");
+  process.exit(0);
+}
+console.log(
+  `${work.length} topics to write (${work.reduce((n, w) => n + w.want, 0)} tests):\n` +
+  work.slice(0, 12).map((w) => `  ${w.topic.id.padEnd(46)} ${w.have.length} -> ${w.have.length + w.want}`).join("\n") +
+  (work.length > 12 ? `\n  … and ${work.length - 12} more` : ""),
+);
+
+// `--plan` answers "what would this run do" without spending a single call,
+// which is the question worth asking before starting a long generation.
+if (PLAN_ONLY) {
+  const tests = work.reduce((n, w) => n + w.want, 0);
+  console.log(
+    `\n--plan: ${work.length} topics, ${tests} tests (~${tests * QUESTIONS} questions) would be generated.`,
+  );
+  process.exit(0);
+}
+
+const run = {
+  pack: profile.id,
+  topics: 0, calls: 0, rawQuestions: 0, keptQuestions: 0,
+  rejected: { noPrompt: 0, noVocab: 0, tooManyMisses: 0, duplicate: 0, shortTest: 0 },
+  unverifiedForms: {},
+};
 
 let totT = 0, totQ = 0, totRaw = 0, dryRun = 0;
-for (const topic of topics) {
+for (const { topic, have, want } of work) {
   const t0 = Date.now();
-  const { tests, stats } = await generateTopic(topic);
+  // Prompts already written for this topic: the model is told not to repeat
+  // them, and `validate` drops any that come back anyway.
+  const already = have.flatMap((t) => t.questions.map((q) => q.prompt));
+  const { tests, stats } = await generateTopic(topic, want, already, have.length);
+  run.topics++;
+  run.calls += stats.calls;
+  run.rawQuestions += stats.rawQ;
+  run.keptQuestions += stats.keptQ;
+  for (const [k, v] of Object.entries(stats.rejected)) run.rejected[k] += v;
+
   // Once the backoff ladder is exhausted the usage window is longer than this
   // run can wait out. Stop rather than march through the remaining topics
   // producing nothing — a later run resumes from the files already on disk.
@@ -268,7 +349,7 @@ for (const topic of topics) {
     if (++dryRun >= 2) {
       console.error(
         `\nStopping: ${dryRun} consecutive topics blocked by usage limits after ` +
-        `${BACKOFF_MS.length} retries. ${topics.length - topics.indexOf(topic) - 1} topics ` +
+        `${BACKOFF_MS.length} retries. ${work.length - work.findIndex((w) => w.topic === topic) - 1} topics ` +
         `left — rerun this command when the limit resets and it will pick up where it stopped.`,
       );
       break;
@@ -276,22 +357,41 @@ for (const topic of topics) {
   } else if (tests.length > 0) {
     dryRun = 0;
   }
-  if (tests.length > 0) writeFileSync(`${OUT}/${topic.id}.json`, JSON.stringify(tests, null, 1));
+  // Append rather than overwrite: what is already on disk was validated the
+  // same way and hand-reviewed, and throwing it away to re-earn it is waste.
+  if (tests.length > 0) {
+    writeFileSync(`${OUT}/${topic.id}.json`, JSON.stringify([...have, ...tests], null, 1));
+  }
   const q = tests.reduce((n, t) => n + t.questions.length, 0);
   totT += tests.length; totQ += q; totRaw += stats.rawQ;
   console.log(
-    `\n${topic.id.padEnd(22)} ${String(tests.length).padStart(2)} tests / ${String(q).padStart(3)} q  ` +
-    `(kept ${stats.keptQ}/${stats.rawQ} items · ${stats.calls} calls · ${((Date.now() - t0) / 1000).toFixed(0)}s)`,
+    `\n${topic.id.padEnd(22)} +${String(tests.length).padStart(2)} tests / ${String(q).padStart(3)} q  ` +
+    `(now ${have.length + tests.length}/${have.length + want} · kept ${stats.keptQ}/${stats.rawQ} items · ` +
+    `${stats.calls} calls · ${((Date.now() - t0) / 1000).toFixed(0)}s)`,
   );
 }
+
 if (unverified.size) {
   const top = [...unverified.entries()].sort((a, b) => b[1] - a[1]);
   const total = top.reduce((n, [, c]) => n + c, 0);
+  for (const [w, c] of top) run.unverifiedForms[w] = c;
   console.log(
     `\n${unverified.size} distinct forms (${total} uses) were accepted without a ` +
     `dictionary match; most frequent first:`,
   );
   console.log("  " + top.slice(0, 40).map(([w, c]) => `${w}(${c})`).join(" "));
 }
+
+// The rejection rate is the signal that the prompt is fighting the validator,
+// and it used to exist only as console output that scrolled away. Keep it:
+// `coverage-report.mjs` gate C6 reads this file.
+const history = existsSync(STATS) ? JSON.parse(readFileSync(STATS, "utf8")) : [];
+history.push(run);
+writeFileSync(STATS, JSON.stringify(history, null, 1));
+
 const rate = totRaw ? ((totQ / totRaw) * 100).toFixed(1) : "—";
-console.log(`\nDone: ${topics.length} topics · ${totT} tests · ${totQ} questions · validation kept ${rate}% of generated items.`);
+console.log(
+  `\nDone: ${run.topics} topics · ${totT} tests · ${totQ} questions · ` +
+  `validation kept ${rate}% of generated items.\n` +
+  `Run \`node --import tsx scripts/coverage-report.mjs --pack ${PACK}\` to check the gates.`,
+);

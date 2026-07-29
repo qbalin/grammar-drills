@@ -10,7 +10,8 @@
  * returns the finished screen lines. `wrapLines` underneath it is pure wrapping
  * and knows nothing about structure.
  */
-import { parseBlocks, type Block, type Row } from "@latin-tutor/core";
+import type { GrammarStyle } from "@lang-tutor/core";
+import { parseBlocks, type Block, type Row } from "@lang-tutor/core";
 
 /** Wrap `text` to `width` columns; the result is one entry per screen line. */
 export function wrapLines(text: string, width: number): string[] {
@@ -135,9 +136,13 @@ function layoutBlock(block: Block, width: number): string[] {
  * padded so the endings line up down the page, and a blank line between blocks
  * so a section reads as prose and tables rather than one unbroken wall.
  */
-export function layoutSection(text: string, width: number): string[] {
+export function layoutSection(
+  text: string,
+  width: number,
+  style: GrammarStyle,
+): string[] {
   const out: string[] = [];
-  for (const block of parseBlocks(text)) {
+  for (const block of parseBlocks(text, style)) {
     if (out.length > 0) out.push("");
     out.push(...layoutBlock(block, width));
   }
@@ -163,8 +168,9 @@ export function previewWindow(
   text: string,
   width: number,
   height: number,
+  style: GrammarStyle,
 ): { lines: string[]; truncated: boolean } {
-  const wrapped = layoutSection(text, width).filter((l) => l !== "");
+  const wrapped = layoutSection(text, width, style).filter((l) => l !== "");
   const lines = wrapped.slice(0, height);
   while (lines.length < height) lines.push("");
   return { lines, truncated: wrapped.length > height };

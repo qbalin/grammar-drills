@@ -1,4 +1,4 @@
-import type { VocabWord } from "@latin-tutor/core";
+import type { VocabWord } from "@lang-tutor/core";
 import { Spinner } from "../ui.js";
 
 /**

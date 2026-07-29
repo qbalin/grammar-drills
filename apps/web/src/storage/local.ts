@@ -1,4 +1,4 @@
-import type { Progress, StorageAdapter } from "@latin-tutor/core";
+import type { Progress, StorageAdapter } from "@lang-tutor/core";
 
 const KEY = "latin-tutor:progress";
 

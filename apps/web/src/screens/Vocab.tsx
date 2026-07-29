@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { normalize, type LemmaEntry, type VocabCardState } from "@latin-tutor/core";
+import type { LemmaEntry, VocabCardState } from "@lang-tutor/core";
+import { fold } from "../pack.js";
 import { Sheet, Spinner, ago, until } from "../ui.js";
 
 /**
@@ -168,11 +169,11 @@ export function VocabListSheet({
   onClose: () => void;
 }) {
   const [filter, setFilter] = useState("");
-  const needle = normalize(filter);
+  const needle = fold(filter);
   const shown = needle
     ? cards.filter(
         (c) =>
-          normalize(c.citation).includes(needle) ||
+          fold(c.citation).includes(needle) ||
           c.gloss.toLowerCase().includes(filter.trim().toLowerCase()),
       )
     : cards;

@@ -1,8 +1,9 @@
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { registerSW } from "virtual:pwa-register";
-import { Content, Session } from "@latin-tutor/core";
+import { Content, Session } from "@lang-tutor/core";
 import { loadContent } from "./content-loader.js";
+import { profile } from "./pack.js";
 import { SyncingStorage } from "./storage/sync.js";
 import { App } from "./app.js";
 import { Spinner, Toast } from "./ui.js";
@@ -70,7 +71,7 @@ function Boot() {
           <h1>Could not load the lessons.</h1>
           <p>{state.message}</p>
           <p>
-            If this is the first time you have opened Latina, you need to be
+            If this is the first time you have opened {profile.ui.appName}, you need to be
             online once so it can save itself to this device.
           </p>
         </div>

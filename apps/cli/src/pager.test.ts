@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { testProfile } from "@lang-tutor/core/testing";
 import {
   layoutSection,
   maxScroll,
@@ -7,6 +8,16 @@ import {
   scrolled,
   wrapLines,
 } from "./pager.js";
+
+/**
+ * The pack supplies the book's typography; these tests are about the layout, so
+ * they pin one style and vary the text.
+ */
+const style = testProfile.grammar;
+const layout = (text: string, width: number) => layoutSection(text, width, style);
+const preview = (text: string, width: number, height: number) =>
+  previewWindow(text, width, height, style);
+
 
 describe("wrapLines", () => {
   it("keeps short lines as they are", () => {
@@ -34,7 +45,7 @@ describe("wrapLines", () => {
 
 describe("layoutSection", () => {
   it("puts a blank line between blocks, so a section is not one wall", () => {
-    expect(layoutSection("The girl loves the rose.\nThe farmer sees her.", 40)).toEqual([
+    expect(layout("The girl loves the rose.\nThe farmer sees her.", 40)).toEqual([
       "The girl loves the rose.",
       "",
       "The farmer sees her.",
@@ -42,7 +53,7 @@ describe("layoutSection", () => {
   });
 
   it("indents a sub-point and hangs the rest of it under its own text", () => {
-    const lines = layoutSection("a. An old Ablative quī occurs in this sense.", 28);
+    const lines = layout("a. An old Ablative quī occurs in this sense.", 28);
     expect(lines[0]).toBe("     a. An old Ablative quī");
     // Every continuation clears the marker rather than sliding back under it.
     expect(lines.slice(1)).toEqual(["        occurs in this", "        sense."]);
@@ -50,13 +61,13 @@ describe("layoutSection", () => {
   });
 
   it("indents a numbered point less deeply than a lettered one", () => {
-    const [numbered] = layoutSection("1. Quis, who?", 40);
-    const [lettered] = layoutSection("a. Quis, who?", 40);
+    const [numbered] = layout("1. Quis, who?", 40);
+    const [lettered] = layout("a. Quis, who?", 40);
     expect(numbered!.search(/\S/)).toBeLessThan(lettered!.search(/\S/));
   });
 
   it("pads paradigm columns so the endings line up down the page", () => {
-    const lines = layoutSection(
+    const lines = layout(
       ["Nom.  puella  puellae", "Gen.  puellae  puellārum"].join("\n"),
       40,
     );
@@ -69,7 +80,7 @@ describe("layoutSection", () => {
   });
 
   it("spreads a caption over the group of columns it names", () => {
-    const lines = layoutSection(
+    const lines = layout(
       [
         "SINGULAR  PLURAL.",
         "MASC.  FEM.  NEUT.  MASC.  FEM.  NEUT.",
@@ -82,7 +93,7 @@ describe("layoutSection", () => {
   });
 
   it("keeps a divider with the table it divides", () => {
-    const lines = layoutSection(
+    const lines = layout(
       ["SINGULAR.", "Nom.  tussis", "PLURAL.", "Nom.  tussēs"].join("\n"),
       40,
     );
@@ -93,7 +104,7 @@ describe("layoutSection", () => {
   it("leaves a table unpadded rather than pushing it off a narrow screen", () => {
     // A terminal cannot scroll sideways, so there is nowhere for overflow to go.
     const row = "Nom.  hīc  haec  hōc  hī  hae  haec";
-    expect(layoutSection(row, 20).every((l) => l.length <= 20)).toBe(true);
+    expect(layout(row, 20).every((l) => l.length <= 20)).toBe(true);
   });
 });
 
@@ -111,18 +122,18 @@ describe("previewWindow", () => {
   const prose = "the girl loves the rose in the garden ".repeat(6).trim();
 
   it("gives every section the same window, whatever its shape", () => {
-    expect(previewWindow(table, 40, 5).lines).toHaveLength(5);
-    expect(previewWindow(prose, 40, 5).lines).toHaveLength(5);
+    expect(preview(table, 40, 5).lines).toHaveLength(5);
+    expect(preview(prose, 40, 5).lines).toHaveLength(5);
   });
 
   it("pads a section shorter than the window, so the box holds its height", () => {
-    const { lines, truncated } = previewWindow("one\ntwo", 40, 5);
+    const { lines, truncated } = preview("one\ntwo", 40, 5);
     expect(lines).toEqual(["one", "two", "", "", ""]);
     expect(truncated).toBe(false);
   });
 
   it("reports that there is more to read, and keeps the opening line", () => {
-    const { lines, truncated } = previewWindow(table, 40, 5);
+    const { lines, truncated } = preview(table, 40, 5);
     expect(lines[0]).toBe("  SINGULAR.");
     expect(lines[4]).toBe("  PLURAL.");
     expect(truncated).toBe(true);
@@ -130,8 +141,8 @@ describe("previewWindow", () => {
 
   it("counts laid-out lines, not source lines", () => {
     // One source line, but it does not fit in five lines of forty columns.
-    expect(previewWindow(prose, 40, 5).truncated).toBe(true);
-    expect(previewWindow(prose, 40, 5).lines.every((l) => l.length <= 40)).toBe(true);
+    expect(preview(prose, 40, 5).truncated).toBe(true);
+    expect(preview(prose, 40, 5).lines.every((l) => l.length <= 40)).toBe(true);
   });
 });
 

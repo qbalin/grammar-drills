@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Rewrite the dictionary citations in `content/lemmas.json.gz` so verbs and
+ * Rewrite the dictionary citations in the pack's `lemmas.json.gz` so verbs and
  * adjectives are cited the way a dictionary cites them.
  *
  * The shipped map was built from the reference project's `dictionary.db` but
@@ -21,19 +21,21 @@
  * `active,perfect`, `supine`, `masculine,nominative,singular`, …) and fully
  * macronized. An entry the dictionary cannot improve keeps the citation it has.
  *
- *   node scripts/canonical-forms.mjs [--dry] [--ref /path/to/languages/latin]
+ *   node --import tsx languages/latin/citations.mjs [--dry] [--ref /path/to/languages/latin]
  *
  * Offline tooling: nothing here runs at runtime. Follow it with
  * `node scripts/build-web-content.mjs` to repack the web app's copy, and bump
- * `CITATIONS_VERSION` in packages/core so saved vocabulary cards catch up.
+ * `citationsVersion` in the pack profile so saved vocabulary cards catch up.
  */
 import { DatabaseSync } from "node:sqlite";
 import { gunzipSync, gzipSync } from "node:zlib";
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { compileFold, parseProfile } from "@lang-tutor/core";
 
-const REPO = dirname(dirname(fileURLToPath(import.meta.url)));
+const PACK = dirname(fileURLToPath(import.meta.url));
+const REPO = dirname(dirname(PACK));
 const args = process.argv.slice(2);
 const opt = (name, def) => {
   const i = args.indexOf(name);
@@ -43,17 +45,14 @@ const DRY = args.includes("--dry");
 const REF =
   opt("--ref", process.env.LATIN_REF) ??
   join(REPO, "..", "language_learning", "languages", "latin");
-const MAP = join(REPO, "content", "lemmas.json.gz");
+const MAP = join(PACK, "content", "lemmas.json.gz");
 
-/** The same folding `packages/core/src/normalize.ts` does, for db lookups. */
-const normalize = (w) =>
-  w
-    .trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/j/g, "i")
-    .replace(/v/g, "u");
+// The pack's own fold. `dictionary.db.word_norm` was written with it, so a
+// separate copy here is exactly the drift this indirection exists to prevent.
+const profile = parseProfile(
+  JSON.parse(readFileSync(join(PACK, "profile.json"), "utf8")),
+);
+const normalize = compileFold(profile.fold);
 
 /**
  * Notes that arrive wearing the `canonical` tag.

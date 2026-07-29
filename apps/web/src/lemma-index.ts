@@ -1,4 +1,5 @@
-import { normalize, type LemmaEntry, type LemmaLookup } from "@latin-tutor/core";
+import type { LemmaEntry, LemmaLookup } from "@lang-tutor/core";
+import { fold } from "./pack.js";
 
 /**
  * The dictionary, as a phone can afford to hold it.
@@ -22,7 +23,7 @@ export class LemmaIndex implements LemmaLookup {
    * `lookupForm`'s contract. Empty when the form is unknown.
    */
   lookup(form: string): LemmaEntry[] {
-    const key = normalize(form);
+    const key = fold(form);
     if (key === "") return [];
     const line = this.find(key);
     if (line === null) return [];

@@ -5,7 +5,7 @@ import { gunzipSync } from "node:zlib";
 import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
-import type { GrammarSection, LemmaEntry, Test } from "@latin-tutor/core";
+import type { GrammarSection, LemmaEntry, Test } from "@lang-tutor/core";
 import { LemmaIndex } from "./lemma-index.js";
 
 /**
@@ -15,7 +15,7 @@ import { LemmaIndex } from "./lemma-index.js";
  * only a test over the real data can say so.
  *
  * `public/content/` is generated, not committed, so this skips when it is
- * missing — `pnpm --filter @latin-tutor/web content` builds it.
+ * missing — `pnpm --filter @lang-tutor/web content` builds it.
  */
 const dir = fileURLToPath(new URL("../public/content/", import.meta.url));
 const built = existsSync(`${dir}forms.txt.gz`);

@@ -1,4 +1,4 @@
-import type { ScheduleEntry } from "@latin-tutor/core";
+import type { ScheduleEntry } from "@lang-tutor/core";
 import { Sheet, until } from "../ui.js";
 
 /**

@@ -13,8 +13,7 @@ import {
   Content,
   Session,
   questionVocabulary,
-  familyLabel,
-  familyOf,
+  type Profile,
   type FamilyProgress,
   type LemmaEntry,
   type Progress,
@@ -24,7 +23,7 @@ import {
   type Test,
   type TopicProgress,
   type VocabCardState,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 
 interface Props {
   session: Session;
@@ -168,11 +167,11 @@ export function App({ session, content, storage }: Props) {
   // Two panes can be reading: the drawer (the topic being drilled) and the
   // reader (the topic under the map cursor). Only one is on screen at a time.
   const drawerLines = useMemo(
-    () => layoutSection(section?.text ?? "", paneWidth),
+    () => layoutSection(section?.text ?? "", paneWidth, content.profile.grammar),
     [section?.text, paneWidth],
   );
   const readerLines = useMemo(
-    () => layoutSection(mapSection?.text ?? "", paneWidth),
+    () => layoutSection(mapSection?.text ?? "", paneWidth, content.profile.grammar),
     [mapSection?.text, paneWidth],
   );
   // The map's taste of the section under the cursor: the same window for every
@@ -181,7 +180,7 @@ export function App({ session, content, storage }: Props) {
   // rather than a map that runs off the screen.
   const previewLines = Math.max(2, Math.min(PREVIEW_LINES, rows - MAP_CHROME_LINES));
   const mapPreview = useMemo(
-    () => previewWindow(mapSection?.text ?? "", paneWidth, previewLines),
+    () => previewWindow(mapSection?.text ?? "", paneWidth, previewLines, content.profile.grammar),
     [mapSection?.text, paneWidth, previewLines],
   );
 
@@ -193,14 +192,14 @@ export function App({ session, content, storage }: Props) {
     [sectionId, tick, session],
   );
   const historyLines = useMemo(
-    () => attemptLines(attempts, paneWidth),
+    () => attemptLines(attempts, paneWidth, content.fold),
     [attempts, paneWidth],
   );
 
   // The topic under the map cursor, as its whole question bank.
   const bankLines = useMemo(() => {
     const id = mapTopics[mapIndex]?.sectionId;
-    return id ? questionBankLines(session.questionBank(id), paneWidth) : [];
+    return id ? questionBankLines(session.questionBank(id), paneWidth, content.fold) : [];
     // `tick` is in here because an answer graded since is part of the bank.
   }, [mapTopics, mapIndex, paneWidth, session, tick]);
 
@@ -921,7 +920,7 @@ export function App({ session, content, storage }: Props) {
   // What the focus is called on screen, and nothing at all for the sweep —
   // the plain walk through the book is not a mode to be told about.
   const focusLabel = useMemo(() => {
-    if (focus.kind === "family") return familyLabel(familyOf(focus.id));
+    if (focus.kind === "family") return content.familyLabel(content.familyOf(focus.id));
     if (focus.kind === "topic") {
       const { answered, total } = session.coverage(focus.sectionId);
       const title = content.getSection(focus.sectionId)?.title ?? "this topic";
@@ -933,10 +932,11 @@ export function App({ session, content, storage }: Props) {
   return (
     <Box flexDirection="column" paddingX={1}>
       <StatusBar
+        appName={content.profile.ui.appName}
         stats={stats}
         section={
           placement
-            ? `Placement ${placement.done + 1}/${placement.families} · ${familyLabel(
+            ? `Placement ${placement.done + 1}/${placement.families} · ${content.familyLabel(
                 placement.family,
               )}${placement.narrowing ? ", narrowing" : ""}`
             : section?.title ?? "—"
@@ -1075,6 +1075,7 @@ export function App({ session, content, storage }: Props) {
 
       {(phase.t === "answering" || phase.t === "graded") && question && (
         <QuestionView
+          ui={content.profile.ui}
           question={question}
           index={qIndex}
           total={test?.questions.length ?? 0}
@@ -1110,7 +1111,7 @@ export function App({ session, content, storage }: Props) {
       )}
 
       {(phase.t === "vocab-review-front" || phase.t === "vocab-review-back") && (
-        <VocabReview card={session.vocabCard(phase.cardId)} reveal={phase.t === "vocab-review-back"} />
+        <VocabReview ui={content.profile.ui} card={session.vocabCard(phase.cardId)} reveal={phase.t === "vocab-review-back"} />
       )}
 
       {phase.t === "done" && (
@@ -1129,6 +1130,7 @@ export function App({ session, content, storage }: Props) {
       )}
 
       <HintBar
+        ui={content.profile.ui}
         phase={phase.t}
         placement={inPlacement}
         paging={
@@ -1151,12 +1153,14 @@ export function App({ session, content, storage }: Props) {
 }
 
 function StatusBar({
+  appName,
   stats,
   section,
   isNew,
   placement,
   focus,
 }: {
+  appName: string;
   stats: { dueTopics: number; dueVocab: number; topics: number; vocab: number };
   section: string;
   isNew: boolean;
@@ -1168,7 +1172,7 @@ function StatusBar({
     <Box justifyContent="space-between" marginBottom={1}>
       <Text>
         <Text color="magenta" bold>
-          Latina
+          {appName}
         </Text>{" "}
         · {isNew ? <Text color="green">new: </Text> : null}
         <Text bold color={placement ? "yellow" : undefined}>
@@ -1587,6 +1591,7 @@ function VocabList({
 }
 
 function QuestionView({
+  ui,
   question,
   index,
   total,
@@ -1596,6 +1601,7 @@ function QuestionView({
   onChange,
   onSubmit,
 }: {
+  ui: Profile["ui"];
   question: Question;
   index: number;
   total: number;
@@ -1608,7 +1614,7 @@ function QuestionView({
   return (
     <Box flexDirection="column">
       <Text dimColor>
-        Translate into Latin · {index + 1}/{total}
+        {ui.promptDirection} · {index + 1}/{total}
       </Text>
       <Box marginTop={1}>
         <Text bold>{question.prompt}</Text>
@@ -1621,7 +1627,7 @@ function QuestionView({
             value={input}
             onChange={onChange}
             onSubmit={onSubmit}
-            placeholder="type your Latin, then Enter…"
+            placeholder={ui.cliPlaceholder}
           />
         </Box>
       ) : (
@@ -1642,9 +1648,11 @@ function QuestionView({
 }
 
 function VocabReview({
+  ui,
   card,
   reveal,
 }: {
+  ui: Profile["ui"];
   card: { citation: string; gloss: string } | undefined;
   reveal: boolean;
 }) {
@@ -1652,7 +1660,7 @@ function VocabReview({
   // English on the front: the student produces the Latin, as everywhere else.
   return (
     <Box flexDirection="column" marginTop={1}>
-      <Text dimColor>Vocabulary review · say it in Latin</Text>
+      <Text dimColor>Vocabulary review · {ui.sayItIn}</Text>
       <Box marginTop={1}>
         <Text bold>{card.gloss}</Text>
       </Box>
@@ -1668,6 +1676,7 @@ function VocabReview({
 }
 
 function HintBar({
+  ui,
   phase,
   placement,
   paging,
@@ -1677,6 +1686,7 @@ function HintBar({
   undo,
   more,
 }: {
+  ui: Profile["ui"];
   phase: Phase["t"];
   placement?: boolean;
   /** An open pane has more lines than fit. */
@@ -1709,7 +1719,7 @@ function HintBar({
     : "Enter quiz me · f study from here";
   const hint =
     phase === "answering"
-      ? `type your Latin · Enter submit · Esc grammar · Tab words · ^N map${undo ? " · ^Z undo grade" : ""}${scrollHint}`
+      ? `${ui.cliHint} · Enter submit · Esc grammar · Tab words · ^N map${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
         ? `← → topic · ↑ ↓ family · g read section · a all questions · s schedule${wordsHint} · ${quizHint} · Esc close`
         : phase === "read"

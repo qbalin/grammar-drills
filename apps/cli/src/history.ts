@@ -11,12 +11,12 @@
  */
 
 import {
-  latinWords,
-  normalize,
+  words,
+  type Fold,
   type Attempt,
   type BankedQuestion,
   type ScheduleEntry,
-} from "@latin-tutor/core";
+} from "@lang-tutor/core";
 import { wrapLines } from "./pager.js";
 
 /** How a line is coloured: the same vocabulary the graded screen uses. */
@@ -65,14 +65,15 @@ export function relativeTime(at: string, now: Date = new Date()): string {
 }
 
 /**
- * True when what was written is the reference answer. Compared the way the
- * rest of the app compares Latin — macrons are editorial, u/v and i/j are
+ * True when what was written is the reference answer. Compared with the pack's
+ * own fold — for Latin that means macrons are editorial and u/v, i/j are
  * spelling variants — so a right answer typed without macrons still reads as
- * right rather than as a correction.
+ * right rather than as a correction. Which is exactly why the fold is the
+ * language's to declare and not this file's to assume.
  */
-function matches(submitted: string, answer: string): boolean {
-  const fold = (s: string) => latinWords(normalize(s)).join(" ");
-  return fold(submitted) !== "" && fold(submitted) === fold(answer);
+function matches(submitted: string, answer: string, fold: Fold): boolean {
+  const key = (s: string) => words(fold(s)).join(" ");
+  return key(submitted) !== "" && key(submitted) === key(answer);
 }
 
 /**
@@ -83,6 +84,7 @@ function matches(submitted: string, answer: string): boolean {
 export function attemptLines(
   attempts: Attempt[],
   width: number,
+  fold: Fold,
   now: Date = new Date(),
 ): HistoryLine[] {
   const out: HistoryLine[] = [];
@@ -95,7 +97,7 @@ export function attemptLines(
     wrap(`${relativeTime(a.at, now)} · graded ${grade}`, "meta");
     wrap(a.prompt, "prompt");
     const written = a.submitted.trim();
-    if (matches(written, a.answer)) {
+    if (matches(written, a.answer, fold)) {
       wrap(`${MATCHED}${written}`, "correct");
     } else {
       wrap(`${YOURS}${written || "—"}`, "yours");
@@ -117,6 +119,7 @@ export function attemptLines(
 export function questionBankLines(
   questions: BankedQuestion[],
   width: number,
+  fold: Fold,
   now: Date = new Date(),
 ): HistoryLine[] {
   const out: HistoryLine[] = [];
@@ -133,12 +136,12 @@ export function questionBankLines(
       const written = a.submitted.trim();
       wrap(
         `        ${relativeTime(a.at, now)} · graded ${grade}${
-          matches(written, a.answer) ? " · matched" : ""
+          matches(written, a.answer, fold) ? " · matched" : ""
         }`,
         "meta",
       );
       // The reference is already above; only what was written is news here.
-      if (!matches(written, a.answer)) {
+      if (!matches(written, a.answer, fold)) {
         wrap(`${YOURS}${written || "—"}`, "yours");
       }
     }
