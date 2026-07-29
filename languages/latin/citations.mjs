@@ -21,7 +21,7 @@
  * `active,perfect`, `supine`, `masculine,nominative,singular`, …) and fully
  * macronized. An entry the dictionary cannot improve keeps the citation it has.
  *
- *   node --import tsx scripts/canonical-forms.mjs [--dry] [--ref /path/to/languages/latin]
+ *   node --import tsx languages/latin/citations.mjs [--dry] [--ref /path/to/languages/latin]
  *
  * Offline tooling: nothing here runs at runtime. Follow it with
  * `node scripts/build-web-content.mjs` to repack the web app's copy, and bump
@@ -34,7 +34,8 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { compileFold, parseProfile } from "@latin-tutor/core";
 
-const REPO = dirname(dirname(fileURLToPath(import.meta.url)));
+const PACK = dirname(fileURLToPath(import.meta.url));
+const REPO = dirname(dirname(PACK));
 const args = process.argv.slice(2);
 const opt = (name, def) => {
   const i = args.indexOf(name);
@@ -44,18 +45,12 @@ const DRY = args.includes("--dry");
 const REF =
   opt("--ref", process.env.LATIN_REF) ??
   join(REPO, "..", "language_learning", "languages", "latin");
-const MAP = join(
-  REPO,
-  "languages",
-  process.env.LANG_PACK ?? "latin",
-  "content",
-  "lemmas.json.gz",
-);
+const MAP = join(PACK, "content", "lemmas.json.gz");
 
 // The pack's own fold. `dictionary.db.word_norm` was written with it, so a
 // separate copy here is exactly the drift this indirection exists to prevent.
 const profile = parseProfile(
-  JSON.parse(readFileSync(join(REPO, "languages", process.env.LANG_PACK ?? "latin", "profile.json"), "utf8")),
+  JSON.parse(readFileSync(join(PACK, "profile.json"), "utf8")),
 );
 const normalize = compileFold(profile.fold);
 

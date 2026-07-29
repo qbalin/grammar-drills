@@ -6,9 +6,10 @@
   "type": "module",
   "scripts": {
     "build": "pnpm -r build",
-    "test": "pnpm -r test",
+    "test": "pnpm -r test && node scripts/check-core-purity.mjs",
     "cli": "pnpm --filter @latin-tutor/cli start",
-    "validate": "node --import tsx scripts/validate-pack.mjs"
+    "validate": "node --import tsx scripts/validate-pack.mjs",
+    "purity": "node scripts/check-core-purity.mjs"
   },
   "devDependencies": {
     "typescript": "^5.6.3",

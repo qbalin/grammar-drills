@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build content/grammar.json from Bennett's *New Latin Grammar*.
+"""Build this pack's content/grammar.json from Bennett's *New Latin Grammar*.
 
 Source: Charles E. Bennett, "New Latin Grammar" (Boston, 1908), Project
 Gutenberg ebook #15665 — public domain, "almost no restrictions whatsoever".
@@ -11,7 +11,7 @@ English->Latin translation exercise — leaving Parts II (inflections),
 III (particles) and V (syntax).
 
 Usage:
-    python3 scripts/parse-grammar.py [--src bennett.txt] [--out content/grammar.json]
+    python3 languages/latin/grammar/parse.py [--src bennett.txt] [--out .../content/grammar.json]
 
 With no --src the Gutenberg text is downloaded to a temporary file.
 """
@@ -19,7 +19,7 @@ import argparse, io, json, os, re, sys, tempfile, unicodedata, urllib.request
 from collections import Counter
 
 GUTENBERG_URL = "https://www.gutenberg.org/files/15665/15665-0.txt"
-REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PACK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STARS = re.compile(r"^\s*(\*\s+){3,}\*?\s*$")
 PART = re.compile(r"^PART ([IVX]+)\.\s*$")
@@ -265,7 +265,23 @@ def derive_paradigm_title(first_line):
 
 
 def build(secs):
-    keep = [s for s in secs if s["part"] in TEACHABLE_PARTS]
+    """Topics, plus an account of what happened to every source section.
+
+    Nothing may merely disappear. A section either lands in a topic or is
+    dropped for a stated reason: what the parser silently discards, the student
+    can never read, and without the account there is no way to tell the two
+    apart from the outside.
+    """
+    dropped = []
+    keep = []
+    for s in secs:
+        if s["part"] in TEACHABLE_PARTS:
+            keep.append(s)
+        else:
+            # Sounds, word-formation and prosody: none of them can carry a
+            # translation exercise.
+            dropped.append({"n": s["n"], "reason": "part-not-teachable",
+                            "part": s["part"]})
 
     groups = []
     for s in keep:
@@ -275,9 +291,13 @@ def build(secs):
         groups[-1]["secs"].append(s)
 
     topics, order = [], 0
+    assigned = {}
     for g in groups:
         heading = (g["heading"] or "").strip().rstrip(".")
         if heading.upper() in SKIP_HEADINGS:
+            for s in g["secs"]:
+                dropped.append({"n": s["n"], "reason": "structural-heading",
+                                "heading": heading})
             continue
         n0 = g["secs"][0]["n"]
         first_line = next((l for l in g["secs"][0]["raw"].split("\n") if l.strip()), "")
@@ -291,7 +311,11 @@ def build(secs):
 
         text = clean_text("\n\n".join(s["raw"] for s in g["secs"]))
         if len(text) < 120:
-            continue  # too thin to teach
+            # Too thin to teach — but say so, rather than letting it vanish.
+            for s in g["secs"]:
+                dropped.append({"n": s["n"], "reason": "below-min-length",
+                                "chars": len(text)})
+            continue
 
         nums = [s["n"] for s in g["secs"]]
         ref = f"{nums[0]}" if len(nums) == 1 else f"{nums[0]}-{nums[-1]}"
@@ -299,15 +323,18 @@ def build(secs):
         if len(slug) > 40:  # trim to a word boundary, never mid-word
             slug = slug[:40].rsplit("-", 1)[0]
         order += 10
+        topic_id = f"bn-{nums[0]:03d}-{slug}"
+        for n in nums:
+            assigned[n] = topic_id
         topics.append({
-            "id": f"bn-{nums[0]:03d}-{slug}",
+            "id": topic_id,
             "ref": ref,
             "title": title,
             "family": family_of(g["part"], g["chapter"], nums[0]),
             "order": order,
             "text": text,
         })
-    return topics
+    return topics, assigned, dropped
 
 
 
@@ -323,7 +350,7 @@ if __name__ == "__main__":
     ap.add_argument("--src", help="Gutenberg #15665 plain text (downloaded if omitted)")
     ap.add_argument(
         "--out",
-        default=os.path.join(REPO, "languages", "latin", "content", "grammar.json"),
+        default=os.path.join(PACK, "content", "grammar.json"),
     )
     a = ap.parse_args()
 
@@ -334,8 +361,32 @@ if __name__ == "__main__":
     print(f"parsed §{min(nums)}-{max(nums)} ({len(sections)} sections, {len(gaps)} gaps)",
           file=sys.stderr)
 
-    topics = build(sections)
+    topics, assigned, dropped = build(sections)
     json.dump(topics, io.open(a.out, "w", encoding="utf8"), ensure_ascii=False, indent=1)
     print(f"{len(topics)} topics -> {a.out}", file=sys.stderr)
     print("families: " + ", ".join(f"{k} {v}" for k, v in
           Counter(t["family"] for t in topics).items()), file=sys.stderr)
+
+    # The account of every source section. `grammar-report.mjs` checks that it
+    # balances; a section that is neither assigned nor dropped is a parser bug.
+    lengths = sorted(len(t["text"]) for t in topics)
+    def pct(p):
+        return lengths[min(len(lengths) - 1, int(len(lengths) * p))] if lengths else 0
+    manifest = {
+        "source": {"title": "Bennett, New Latin Grammar (1908)",
+                   "url": GUTENBERG_URL,
+                   "licence": "public domain (Project Gutenberg #15665)"},
+        "sourceSections": nums,
+        "assigned": {str(k): v for k, v in sorted(assigned.items())},
+        "dropped": sorted(dropped, key=lambda d: d["n"]),
+        "topics": len(topics),
+        "families": dict(Counter(t["family"] for t in topics)),
+        "sizeChars": {"min": lengths[0] if lengths else 0, "median": pct(0.5),
+                      "p90": pct(0.9), "max": lengths[-1] if lengths else 0},
+    }
+    out_manifest = os.path.join(os.path.dirname(a.out), "grammar-coverage.json")
+    json.dump(manifest, io.open(out_manifest, "w", encoding="utf8"),
+              ensure_ascii=False, indent=1)
+    unaccounted = set(nums) - set(assigned) - {d["n"] for d in dropped}
+    print(f"accounted: {len(assigned)} assigned, {len(dropped)} dropped, "
+          f"{len(unaccounted)} unaccounted -> {out_manifest}", file=sys.stderr)

@@ -1,0 +1,78 @@
+{
+  "_comment": [
+    "What this pack measured when it was last validated.",
+    "",
+    "It is a record, not an input: the gates live in profile.json and are checked",
+    "by scripts/validate-pack.mjs. This is here so a later run can see whether a",
+    "number moved, and by how much, rather than only whether it still clears a",
+    "threshold. Regenerate with:",
+    "  node --import tsx scripts/validate-pack.mjs --built apps/web/public/content"
+  ],
+  "measuredAt": "2026-07-28",
+  "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
+
+  "grammar": {
+    "topics": 135,
+    "families": 9,
+    "familyCounts": {
+      "nouns": 9, "adj": 5, "pron": 9, "verb-forms": 35, "particles": 3,
+      "noun-syntax": 19, "adj-pron-syntax": 13, "verb-syntax": 30, "style": 12
+    },
+    "textChars": { "min": 147, "median": 1344, "p90": 5333, "max": 16462 },
+    "sourceSections": 371,
+    "assigned": 324,
+    "dropped": { "part-not-teachable": 36, "structural-heading": 11 },
+    "rowShapedLines": 2015,
+    "tableRowsRecovered": 2052,
+    "romanPoints": 10
+  },
+
+  "questions": {
+    "tests": 1088,
+    "questions": 4025,
+    "topicsWithTests": 135,
+    "duplicatePromptPct": 0.0,
+    "answerTokens": 26671,
+    "dictResolvedPct": 95.0,
+    "bandLemmasUsed": 2415,
+    "bandLemmasTotal": 5601,
+    "bandUtilisationPct": 43.1,
+    "questionsPerTopicByFamily": {
+      "nouns": 39.1, "adj": 41.8, "pron": 30.9, "verb-forms": 24.9,
+      "particles": 23.7, "noun-syntax": 32.4, "adj-pron-syntax": 24.0,
+      "verb-syntax": 34.9, "style": 22.4
+    },
+    "belowSizeScaledTarget": 95,
+    "_note": [
+      "95 of 135 topics sit below their size-scaled target — they clear the C2",
+      "floor of 6 tests but a long topic deserves more. This is the backlog the",
+      "generator's coverage-driven resume exists to work off:",
+      "  node --import tsx scripts/gen-tests.mjs --only-thin --plan",
+      "reports 547 tests (~2188 questions) outstanding."
+    ]
+  },
+
+  "dictionary": {
+    "formKeys": 242746,
+    "distinctLemmas": 6520,
+    "rankRange": [1, 7000],
+    "refEntries": 885996,
+    "refForms": 2492884,
+    "refRankedLemmas": 19342,
+    "foldMatchesRefNormOnSample": 40000,
+    "builderReproducesShippedKeysPct": 99.99,
+    "_note": [
+      "lemmas.json.gz predates scripts/build-lemmas.mjs and is NOT regenerated:",
+      "its citations carry the pack's citations.mjs rewrite. The builder is run",
+      "in --verify mode only; it reproduces 242,733 of 242,746 shipped keys and",
+      "would add 3,888 more. That difference is documented drift, not a defect."
+    ]
+  },
+
+  "bundle": {
+    "grammarJsonGz": "119 KB",
+    "testsJsonGz": "183 KB",
+    "lemmasJsonGz": "291 KB",
+    "formsTxtGz": "619 KB"
+  }
+}
