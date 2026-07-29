@@ -11,7 +11,11 @@ on:
       - "apps/web/**"
       - "packages/core/**"
       - "languages/**"
-      - "scripts/build-web-content.mjs"
+      # All of scripts/, not just the content build: this workflow also runs
+      # the purity guard and validate-pack, which pulls in the two reports and
+      # scripts/lib. Naming one file meant a change to the checks themselves
+      # did not re-run the checks.
+      - "scripts/**"
       - ".github/workflows/deploy-web.yml"
   workflow_dispatch:
 
