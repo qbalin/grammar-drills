@@ -1,6 +1,9 @@
 import type { Progress, StorageAdapter } from "@lang-tutor/core";
+import { profile } from "../pack.js";
 
-const KEY = "latin-tutor:progress";
+// Named by the pack, because one origin can serve several of them and two
+// languages sharing a key would overwrite each other's progress.
+const KEY = profile.storage.webProgressKey;
 
 /**
  * Progress in `localStorage` — the web twin of the CLI's `LocalFileStorage`.

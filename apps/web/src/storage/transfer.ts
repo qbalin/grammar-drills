@@ -1,4 +1,5 @@
 import { emptyProgress, type Content, type Progress } from "@lang-tutor/core";
+import { profile } from "../pack.js";
 
 /**
  * Moving progress between devices without GitHub.
@@ -16,7 +17,9 @@ export function exportProgress(progress: Progress): void {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = `latina-progress-${stamp}.json`;
+  // The pack names the file: a folder of exports should say which language
+  // each one came from.
+  a.download = `${profile.storage.exportPrefix}-${stamp}.json`;
   a.click();
   URL.revokeObjectURL(url);
 }
