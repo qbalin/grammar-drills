@@ -1,0 +1,613 @@
+[
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t1",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "The merchant, though poor, lent the young man ten minas.",
+    "answer": "ὁ ἔμπορος, καίπερ πενὴς ὤν, τῷ νεανίᾳ δέκα μνᾶς ἐδάνεισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἔμπορος",
+     "καίπερ",
+     "πενὴς",
+     "ὤν",
+     "τῷ",
+     "νεανίᾳ",
+     "δέκα",
+     "μνᾶς",
+     "ἐδάνεισεν"
+    ]
+   },
+   {
+    "prompt": "Those who have acquired many minas are not always happy.",
+    "answer": "οἱ πολλὰς μνᾶς κεκτημένοι οὐκ ἀεὶ εὐδαίμονές εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολλὰς",
+     "μνᾶς",
+     "κεκτημένοι",
+     "οὐκ",
+     "ἀεὶ",
+     "εὐδαίμονές",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "The jurors fined the orator five minas.",
+    "answer": "οἱ δικασταὶ τὸν ῥήτορα πέντε μναῖς ἐζημίωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τὸν",
+     "ῥήτορα",
+     "πέντε",
+     "μναῖς",
+     "ἐζημίωσαν"
+    ]
+   },
+   {
+    "prompt": "The stranger bought the small house for one mina.",
+    "answer": "ὁ ξένος τὴν μικρὰν οἰκίαν μιᾶς μνᾶς ἐπρίατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ξένος",
+     "τὴν",
+     "μικρὰν",
+     "οἰκίαν",
+     "μιᾶς",
+     "μνᾶς",
+     "ἐπρίατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t2",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "The citizens set up a bronze statue of Hermes in the marketplace.",
+    "answer": "οἱ πολῖται χαλκοῦν Ἑρμῆν ἐν τῇ ἀγορᾷ ἀνέστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "χαλκοῦν",
+     "Ἑρμῆν",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἀνέστησαν"
+    ]
+   },
+   {
+    "prompt": "The impious men mutilated the statues of Hermes by night.",
+    "answer": "οἱ ἀσεβεῖς τοὺς Ἑρμᾶς νυκτὸς περιέκοψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀσεβεῖς",
+     "τοὺς",
+     "Ἑρμᾶς",
+     "νυκτὸς",
+     "περιέκοψαν"
+    ]
+   },
+   {
+    "prompt": "We sacrificed to Athena, the guardian of the city.",
+    "answer": "τῇ Ἀθηνᾷ τῇ τῆς πόλεως φύλακι ἐθύσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῇ",
+     "Ἀθηνᾷ",
+     "τῆς",
+     "πόλεως",
+     "φύλακι",
+     "ἐθύσαμεν"
+    ]
+   },
+   {
+    "prompt": "The priest carried the gifts into the temple of Athena.",
+    "answer": "ὁ ἱερεὺς τὰ δῶρα εἰς τὸν τῆς Ἀθηνᾶς νεὼν εἰσήνεγκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "τὰ",
+     "δῶρα",
+     "εἰς",
+     "τὸν",
+     "τῆς",
+     "Ἀθηνᾶς",
+     "νεὼν",
+     "εἰσήνεγκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t3",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "The farmers who till the earth honor the gods.",
+    "answer": "οἱ τὴν γῆν ἐργαζόμενοι γεωργοὶ τοὺς θεοὺς τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὴν",
+     "γῆν",
+     "ἐργαζόμενοι",
+     "γεωργοὶ",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "Many trees grow out of the soil of Attica.",
+    "answer": "πολλὰ δένδρα ἐκ τῆς Ἀττικῆς γῆς φύεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "δένδρα",
+     "ἐκ",
+     "τῆς",
+     "Ἀττικῆς",
+     "γῆς",
+     "φύεται"
+    ]
+   },
+   {
+    "prompt": "The north wind, blowing from Thrace, distressed the sailors.",
+    "answer": "ὁ Βορρᾶς ἀπὸ τῆς Θρᾴκης πνέων τοὺς ναύτας ἐλύπει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Βορρᾶς",
+     "ἀπὸ",
+     "τῆς",
+     "Θρᾴκης",
+     "πνέων",
+     "τοὺς",
+     "ναύτας",
+     "ἐλύπει"
+    ]
+   },
+   {
+    "prompt": "The ships were not able to sail because of the north wind.",
+    "answer": "αἱ νῆες διὰ τὸν Βορρᾶν πλεῖν οὐκ ἐδύναντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "νῆες",
+     "διὰ",
+     "τὸν",
+     "Βορρᾶν",
+     "πλεῖν",
+     "οὐκ",
+     "ἐδύναντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t4",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "In the old man's garden a beautiful fig tree was standing.",
+    "answer": "ἐν τῷ τοῦ γέροντος κήπῳ καλὴ συκῆ εἱστήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῷ",
+     "τοῦ",
+     "γέροντος",
+     "κήπῳ",
+     "καλὴ",
+     "συκῆ",
+     "εἱστήκει"
+    ]
+   },
+   {
+    "prompt": "The boys were plucking the sweet fruit of the fig tree.",
+    "answer": "οἱ παῖδες τὸν γλυκὺν τῆς συκῆς καρπὸν ἐδρέποντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τὸν",
+     "γλυκὺν",
+     "τῆς",
+     "συκῆς",
+     "καρπὸν",
+     "ἐδρέποντο"
+    ]
+   },
+   {
+    "prompt": "The weasel that lived in the house used to hunt the mice.",
+    "answer": "ἡ γαλῆ ἡ ἐν τῇ οἰκίᾳ οἰκοῦσα τοὺς μῦς ἐθήρευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γαλῆ",
+     "ἐν",
+     "τῇ",
+     "οἰκίᾳ",
+     "οἰκοῦσα",
+     "τοὺς",
+     "μῦς",
+     "ἐθήρευεν"
+    ]
+   },
+   {
+    "prompt": "Aphrodite once changed a weasel into a woman.",
+    "answer": "ἡ Ἀφροδίτη ποτὲ γαλῆν εἰς γυναῖκα μετέβαλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "Ἀφροδίτη",
+     "ποτὲ",
+     "γαλῆν",
+     "εἰς",
+     "γυναῖκα",
+     "μετέβαλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t5",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "The traveler dedicated a golden image to Hermes.",
+    "answer": "ὁ ὁδοιπόρος χρυσοῦν ἄγαλμα τῷ Ἑρμῇ ἀνέθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ὁδοιπόρος",
+     "χρυσοῦν",
+     "ἄγαλμα",
+     "τῷ",
+     "Ἑρμῇ",
+     "ἀνέθηκεν"
+    ]
+   },
+   {
+    "prompt": "Hermes, the messenger of the gods, was leading the souls to Hades.",
+    "answer": "ὁ Ἑρμῆς ὁ τῶν θεῶν ἄγγελος τὰς ψυχὰς εἰς Ἅιδου ἦγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ἑρμῆς",
+     "τῶν",
+     "θεῶν",
+     "ἄγγελος",
+     "τὰς",
+     "ψυχὰς",
+     "εἰς",
+     "Ἅιδου",
+     "ἦγεν"
+    ]
+   },
+   {
+    "prompt": "The temple of Hermes stood near the gate of the city.",
+    "answer": "ὁ τοῦ Ἑρμοῦ νεὼς πρὸς τῇ τῆς πόλεως πύλῃ ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "Ἑρμοῦ",
+     "νεὼς",
+     "πρὸς",
+     "τῇ",
+     "τῆς",
+     "πόλεως",
+     "πύλῃ",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The thieves stole three minas out of the sanctuary.",
+    "answer": "οἱ κλῶπες τρεῖς μνᾶς ἐκ τοῦ ἱεροῦ ἔκλεψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κλῶπες",
+     "τρεῖς",
+     "μνᾶς",
+     "ἐκ",
+     "τοῦ",
+     "ἱεροῦ",
+     "ἔκλεψαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t6",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "The old man left all his property to his niece.",
+    "answer": "ὁ γέρων πᾶσαν τὴν οὐσίαν τῇ ἀδελφιδῇ κατέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "πᾶσαν",
+     "τὴν",
+     "οὐσίαν",
+     "τῇ",
+     "ἀδελφιδῇ",
+     "κατέλιπεν"
+    ]
+   },
+   {
+    "prompt": "The general gave his niece in marriage to a wealthy citizen.",
+    "answer": "ὁ στρατηγὸς τὴν ἀδελφιδῆν πλουσίῳ πολίτῃ ἐξέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "ἀδελφιδῆν",
+     "πλουσίῳ",
+     "πολίτῃ",
+     "ἐξέδωκεν"
+    ]
+   },
+   {
+    "prompt": "Apelles, the most skilled of painters, painted the king's portrait.",
+    "answer": "ὁ Ἀπελλῆς, ὁ τῶν ζωγράφων δεινότατος, τὴν τοῦ βασιλέως εἰκόνα ἔγραψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ἀπελλῆς",
+     "τῶν",
+     "ζωγράφων",
+     "δεινότατος",
+     "τὴν",
+     "τοῦ",
+     "βασιλέως",
+     "εἰκόνα",
+     "ἔγραψεν"
+    ]
+   },
+   {
+    "prompt": "The dead were buried in the land of their fathers.",
+    "answer": "οἱ νεκροὶ ἐν τῇ τῶν πατέρων γῇ ἐτάφησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεκροὶ",
+     "ἐν",
+     "τῇ",
+     "τῶν",
+     "πατέρων",
+     "γῇ",
+     "ἐτάφησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t7",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "Although the merchant had lost many minas, he did not cease from trade.",
+    "answer": "καίπερ πολλὰς μνᾶς ἀπολέσας, ὁ ἔμπορος τῆς ἐμπορίας οὐκ ἐπαύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "πολλὰς",
+     "μνᾶς",
+     "ἀπολέσας",
+     "ὁ",
+     "ἔμπορος",
+     "τῆς",
+     "ἐμπορίας",
+     "οὐκ",
+     "ἐπαύσατο"
+    ]
+   },
+   {
+    "prompt": "The sculptor made an image of Hermes worthy of the goddess Athena.",
+    "answer": "ὁ πλάστης ἄγαλμα Ἑρμοῦ τῆς θεᾶς Ἀθηνᾶς ἄξιον ἐποίησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλάστης",
+     "ἄγαλμα",
+     "Ἑρμοῦ",
+     "τῆς",
+     "θεᾶς",
+     "Ἀθηνᾶς",
+     "ἄξιον",
+     "ἐποίησεν"
+    ]
+   },
+   {
+    "prompt": "Since the north wind is blowing, the sailors do not dare to sail.",
+    "answer": "τοῦ Βορροῦ πνέοντος, οἱ ναῦται πλεῖν οὐ τολμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "Βορροῦ",
+     "πνέοντος",
+     "οἱ",
+     "ναῦται",
+     "πλεῖν",
+     "οὐ",
+     "τολμῶσιν"
+    ]
+   },
+   {
+    "prompt": "The earth nourishes those who honor the gods with just sacrifices.",
+    "answer": "ἡ γῆ τοὺς τοὺς θεοὺς δικαίαις θυσίαις τιμῶντας τρέφει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γῆ",
+     "τοὺς",
+     "θεοὺς",
+     "δικαίαις",
+     "θυσίαις",
+     "τιμῶντας",
+     "τρέφει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t8",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "The old man planted a fig tree in his niece's garden.",
+    "answer": "ὁ γέρων συκῆν ἐν τῷ τῆς ἀδελφιδῆς κήπῳ ἐφύτευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "συκῆν",
+     "ἐν",
+     "τῷ",
+     "τῆς",
+     "ἀδελφιδῆς",
+     "κήπῳ",
+     "ἐφύτευσεν"
+    ]
+   },
+   {
+    "prompt": "A weasel, hiding under the fig tree, was watching the birds.",
+    "answer": "γαλῆ, ὑπὸ τῇ συκῇ κρυπτομένη, τοὺς ὄρνιθας ἐτήρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γαλῆ",
+     "ὑπὸ",
+     "τῇ",
+     "συκῇ",
+     "κρυπτομένη",
+     "τοὺς",
+     "ὄρνιθας",
+     "ἐτήρει"
+    ]
+   },
+   {
+    "prompt": "The father gave ten minas to his niece as a dowry.",
+    "answer": "ὁ πατὴρ δέκα μνᾶς τῇ ἀδελφιδῇ προῖκα ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατὴρ",
+     "δέκα",
+     "μνᾶς",
+     "τῇ",
+     "ἀδελφιδῇ",
+     "προῖκα",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "The fruit of the fig trees is sweeter than the one in the market.",
+    "answer": "ὁ τῶν συκῶν καρπὸς ἡδίων ἐστὶ τοῦ ἐν τῇ ἀγορᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τῶν",
+     "συκῶν",
+     "καρπὸς",
+     "ἡδίων",
+     "ἐστὶ",
+     "τοῦ",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-227-contracts-feminines-and-masculines-t9",
+  "sectionId": "sm-227-contracts-feminines-and-masculines",
+  "questions": [
+   {
+    "prompt": "The Athenians set up many statues of Hermes along the roads.",
+    "answer": "οἱ Ἀθηναῖοι πολλοὺς Ἑρμᾶς παρὰ ταῖς ὁδοῖς ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "πολλοὺς",
+     "Ἑρμᾶς",
+     "παρὰ",
+     "ταῖς",
+     "ὁδοῖς",
+     "ἔστησαν"
+    ]
+   },
+   {
+    "prompt": "Apelles the painter used to honor Athena above all the gods.",
+    "answer": "ὁ Ἀπελλῆς ὁ ζωγράφος τὴν Ἀθηνᾶν πρὸ πάντων τῶν θεῶν ἐτίμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ἀπελλῆς",
+     "ζωγράφος",
+     "τὴν",
+     "Ἀθηνᾶν",
+     "πρὸ",
+     "πάντων",
+     "τῶν",
+     "θεῶν",
+     "ἐτίμα"
+    ]
+   },
+   {
+    "prompt": "Because the north wind was blowing hard, the ships could not put out from the land.",
+    "answer": "ἐπεὶ ὁ Βορρᾶς σφοδρῶς ἔπνει, αἱ νῆες ἀπὸ τῆς γῆς ἀπελθεῖν οὐκ ἐδύναντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὁ",
+     "Βορρᾶς",
+     "σφοδρῶς",
+     "ἔπνει",
+     "αἱ",
+     "νῆες",
+     "ἀπὸ",
+     "τῆς",
+     "γῆς",
+     "ἀπελθεῖν",
+     "οὐκ",
+     "ἐδύναντο"
+    ]
+   },
+   {
+    "prompt": "The general, having borrowed a hundred minas, gave pay to the soldiers.",
+    "answer": "ὁ στρατηγός, ἑκατὸν μνᾶς δανεισάμενος, τοῖς στρατιώταις μισθὸν ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἑκατὸν",
+     "μνᾶς",
+     "δανεισάμενος",
+     "τοῖς",
+     "στρατιώταις",
+     "μισθὸν",
+     "ἔδωκεν"
+    ]
+   }
+  ]
+ }
+]
