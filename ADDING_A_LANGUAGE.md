@@ -348,11 +348,18 @@ writing over each other's progress. The dictionary cache name must differ too.
 ## 9. The ship gate
 
 ```bash
-node --import tsx scripts/validate-pack.mjs --pack languages/greek --built apps/web/public/content
+node --import tsx scripts/validate-pack.mjs --pack languages/greek \
+  --built apps/web/public/content --require-ref
 pnpm -r test
 node scripts/check-core-purity.mjs
 git diff --stat packages/core          # must be empty
 ```
+
+`--require-ref` is the difference between this and what CI runs. The reference
+databases are not in this repo, so CI cannot check the fold against them and
+says those gates were skipped. You *can*, and before shipping a pack you must:
+a fold that disagrees with the dictionary it was built against misses every
+lookup while both halves look perfectly healthy on their own.
 
 That last line is the real test of the whole exercise. If `packages/core`
 changed, the change is a missing interface: put it on the profile, backfill it

@@ -9,7 +9,13 @@
  * the app folds with.
  *
  *   node --import tsx scripts/validate-pack.mjs [--pack languages/latin]
- *        [--ref /path/to/ref] [--built apps/web/public/content] [--profile-only]
+ *        [--ref /path/to/ref] [--built apps/web/public/content]
+ *        [--profile-only] [--require-ref]
+ *
+ * The reference databases are not in this repo, so where they are missing the
+ * gates that need them say they were skipped. `--require-ref` turns that into a
+ * failure, which is what you want before shipping a pack and not what CI can
+ * ask for.
  *
  * Exit code is the answer: 0 means every gate passed.
  */
@@ -23,6 +29,7 @@ import { compileFold, profileHash } from "@lang-tutor/core";
 import { REPO, gate, loadProfile, packDir, refDir, report } from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);
+const REQUIRE_REF = argv.includes("--require-ref");
 const dir = packDir(argv);
 const profile = loadProfile(dir);
 const fold = compileFold(profile.fold);
@@ -108,9 +115,20 @@ if (!argv.includes("--profile-only") && existsSync(dictPath)) {
     gates.push(gate("D3", false, `no frequencies.db at ${ref}`));
   }
 } else if (!argv.includes("--profile-only")) {
+  // The reference databases live in a sibling project and are never checked
+  // in, so CI genuinely cannot have them. An absent database is nothing to
+  // check rather than something that failed — the same call the coverage
+  // report makes for C5 and C7, and it has to be the same call here or the
+  // pack is unvalidatable anywhere but a machine with the sibling repo.
+  //
+  // `--require-ref` is for the one place absence IS a failure: a human about
+  // to ship a pack, who must have verified the fold against the dictionary it
+  // was built with. The playbook's ship gate passes it.
   gates.push(
-    gate("D1", false,
-      `no dictionary.db at ${ref} — set --ref or LANG_REF (see ADDING_A_LANGUAGE.md § the DB contract)`),
+    gate("D1", !REQUIRE_REF,
+      REQUIRE_REF
+        ? `no dictionary.db at ${ref} — set --ref or LANG_REF (see ADDING_A_LANGUAGE.md, appendix A)`
+        : `skipped — no dictionary.db at ${ref} (pass --require-ref to make this fatal)`),
   );
 }
 
