@@ -1,0 +1,498 @@
+[
+ {
+  "id": "sm-925-agreement-the-concords-t1",
+  "sectionId": "sm-925-agreement-the-concords",
+  "questions": [
+   {
+    "prompt": "Cyrus, the king of the Persians, marched against his brother.",
+    "answer": "Κῦρος, ὁ τῶν Περσῶν βασιλεύς, ἐπὶ τὸν ἀδελφὸν ἐστράτευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "ὁ",
+     "τῶν",
+     "Περσῶν",
+     "βασιλεύς",
+     "ἐπὶ",
+     "τὸν",
+     "ἀδελφὸν",
+     "ἐστράτευσεν"
+    ]
+   },
+   {
+    "prompt": "The wise men of the city honored the brave soldiers.",
+    "answer": "οἱ σοφοὶ τῆς πόλεως τοὺς ἀνδρείους στρατιώτας ἐτίμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "τῆς",
+     "πόλεως",
+     "τοὺς",
+     "ἀνδρείους",
+     "στρατιώτας",
+     "ἐτίμησαν"
+    ]
+   },
+   {
+    "prompt": "We, the citizens, wish to remain free.",
+    "answer": "ἡμεῖς οἱ πολῖται ἐλεύθεροι μένειν βουλόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμεῖς",
+     "οἱ",
+     "πολῖται",
+     "ἐλεύθεροι",
+     "μένειν",
+     "βουλόμεθα"
+    ]
+   },
+   {
+    "prompt": "The women, guardians of the children, feared the enemy.",
+    "answer": "αἱ γυναῖκες, φύλακες τῶν παίδων, τοὺς πολεμίους ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "φύλακες",
+     "τῶν",
+     "παίδων",
+     "τοὺς",
+     "πολεμίους",
+     "ἐφοβοῦντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-925-agreement-the-concords-t2",
+  "sectionId": "sm-925-agreement-the-concords",
+  "questions": [
+   {
+    "prompt": "I saw Socrates, the philosopher, in the marketplace.",
+    "answer": "τὸν Σωκράτη, τὸν φιλόσοφον, ἐν τῇ ἀγορᾷ εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "Σωκράτη",
+     "φιλόσοφον",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "The beautiful maidens were singing a sweet song.",
+    "answer": "αἱ καλαὶ παρθένοι γλυκὺ μέλος ᾖδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "καλαὶ",
+     "παρθένοι",
+     "γλυκὺ",
+     "μέλος",
+     "ᾖδον"
+    ]
+   },
+   {
+    "prompt": "You and I are friends of the just king.",
+    "answer": "σὺ καὶ ἐγὼ φίλοι τοῦ δικαίου βασιλέως ἐσμέν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "καὶ",
+     "ἐγὼ",
+     "φίλοι",
+     "τοῦ",
+     "δικαίου",
+     "βασιλέως",
+     "ἐσμέν"
+    ]
+   },
+   {
+    "prompt": "They gave gifts to Xenophon, the general.",
+    "answer": "δῶρα Ξενοφῶντι, τῷ στρατηγῷ, ἔδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῶρα",
+     "Ξενοφῶντι",
+     "τῷ",
+     "στρατηγῷ",
+     "ἔδοσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-925-agreement-the-concords-t3",
+  "sectionId": "sm-925-agreement-the-concords",
+  "questions": [
+   {
+    "prompt": "The old man, a witness of the deed, told the truth.",
+    "answer": "ὁ γέρων, μάρτυς τοῦ ἔργου, τὰ ἀληθῆ εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "μάρτυς",
+     "τοῦ",
+     "ἔργου",
+     "τὰ",
+     "ἀληθῆ",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "Great dangers await the bold sailors.",
+    "answer": "μεγάλοι κίνδυνοι τοὺς θρασεῖς ναύτας μένουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεγάλοι",
+     "κίνδυνοι",
+     "τοὺς",
+     "θρασεῖς",
+     "ναύτας",
+     "μένουσιν"
+    ]
+   },
+   {
+    "prompt": "The army, being large, frightened the villagers.",
+    "answer": "τὸ στράτευμα, μέγα ὄν, τοὺς κωμήτας ἐφόβησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "μέγα",
+     "ὄν",
+     "τοὺς",
+     "κωμήτας",
+     "ἐφόβησεν"
+    ]
+   },
+   {
+    "prompt": "We honor Athena, goddess of the city.",
+    "answer": "τὴν Ἀθηνᾶν, τὴν τῆς πόλεως θεόν, τιμῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "Ἀθηνᾶν",
+     "τῆς",
+     "πόλεως",
+     "θεόν",
+     "τιμῶμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-925-agreement-the-concords-t4",
+  "sectionId": "sm-925-agreement-the-concords",
+  "questions": [
+   {
+    "prompt": "The general himself led the weary soldiers home.",
+    "answer": "αὐτὸς ὁ στρατηγὸς τοὺς καμόντας στρατιώτας οἴκαδε ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτὸς",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "καμόντας",
+     "στρατιώτας",
+     "οἴκαδε",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "Leonidas, the Spartan, fell while fighting.",
+    "answer": "Λεωνίδας, ὁ Σπαρτιάτης, μαχόμενος ἔπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Λεωνίδας",
+     "ὁ",
+     "Σπαρτιάτης",
+     "μαχόμενος",
+     "ἔπεσεν"
+    ]
+   },
+   {
+    "prompt": "The wise words of the poets delight the young men.",
+    "answer": "οἱ σοφοὶ τῶν ποιητῶν λόγοι τοὺς νεανίας τέρπουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "τῶν",
+     "ποιητῶν",
+     "λόγοι",
+     "τοὺς",
+     "νεανίας",
+     "τέρπουσιν"
+    ]
+   },
+   {
+    "prompt": "The city, mistress of the sea, sent many ships.",
+    "answer": "ἡ πόλις, δέσποινα τῆς θαλάττης, πολλὰς ναῦς ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "δέσποινα",
+     "τῆς",
+     "θαλάττης",
+     "πολλὰς",
+     "ναῦς",
+     "ἔπεμψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-925-agreement-the-concords-t5",
+  "sectionId": "sm-925-agreement-the-concords",
+  "questions": [
+   {
+    "prompt": "These men, brave allies, saved the city.",
+    "answer": "οὗτοι οἱ ἄνδρες, ἀγαθοὶ σύμμαχοι, τὴν πόλιν ἔσωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "ἄνδρες",
+     "ἀγαθοὶ",
+     "σύμμαχοι",
+     "τὴν",
+     "πόλιν",
+     "ἔσωσαν"
+    ]
+   },
+   {
+    "prompt": "The small child fears the large dogs.",
+    "answer": "τὸ μικρὸν παιδίον τοὺς μεγάλους κύνας φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "μικρὸν",
+     "παιδίον",
+     "τοὺς",
+     "μεγάλους",
+     "κύνας",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "I trust you, my most faithful friend.",
+    "answer": "σοὶ πιστεύω, τῷ πιστοτάτῳ φίλῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοὶ",
+     "πιστεύω",
+     "τῷ",
+     "πιστοτάτῳ",
+     "φίλῳ"
+    ]
+   },
+   {
+    "prompt": "The islands, being fertile, nourish many inhabitants.",
+    "answer": "αἱ νῆσοι, εὔκαρποι οὖσαι, πολλοὺς οἰκήτορας τρέφουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "νῆσοι",
+     "εὔκαρποι",
+     "οὖσαι",
+     "πολλοὺς",
+     "οἰκήτορας",
+     "τρέφουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-925-agreement-the-concords-t6",
+  "sectionId": "sm-925-agreement-the-concords",
+  "questions": [
+   {
+    "prompt": "The just judge punished the wicked thieves.",
+    "answer": "ὁ δίκαιος δικαστὴς τοὺς πονηροὺς κλέπτας ἐκόλασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δίκαιος",
+     "δικαστὴς",
+     "τοὺς",
+     "πονηροὺς",
+     "κλέπτας",
+     "ἐκόλασεν"
+    ]
+   },
+   {
+    "prompt": "Alcibiades, a clever general, deceived the Athenians.",
+    "answer": "Ἀλκιβιάδης, δεινὸς στρατηγός, τοὺς Ἀθηναίους ἐξηπάτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀλκιβιάδης",
+     "δεινὸς",
+     "στρατηγός",
+     "τοὺς",
+     "Ἀθηναίους",
+     "ἐξηπάτησεν"
+    ]
+   },
+   {
+    "prompt": "We, the older ones, remember the ancient battles.",
+    "answer": "ἡμεῖς οἱ πρεσβύτεροι τῶν παλαιῶν μαχῶν μεμνήμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμεῖς",
+     "οἱ",
+     "πρεσβύτεροι",
+     "τῶν",
+     "παλαιῶν",
+     "μαχῶν",
+     "μεμνήμεθα"
+    ]
+   },
+   {
+    "prompt": "The swift horses of the enemy pursued the fleeing men.",
+    "answer": "οἱ ταχεῖς τῶν πολεμίων ἵπποι τοὺς φεύγοντας ἐδίωκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ταχεῖς",
+     "τῶν",
+     "πολεμίων",
+     "ἵπποι",
+     "τοὺς",
+     "φεύγοντας",
+     "ἐδίωκον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-925-agreement-the-concords-t7",
+  "sectionId": "sm-925-agreement-the-concords",
+  "questions": [
+   {
+    "prompt": "The maidens, daughters of the king, honored the goddess.",
+    "answer": "αἱ παρθένοι, θυγατέρες τοῦ βασιλέως, τὴν θεὸν ἐτίμων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "παρθένοι",
+     "θυγατέρες",
+     "τοῦ",
+     "βασιλέως",
+     "τὴν",
+     "θεόν",
+     "ἐτίμων"
+    ]
+   },
+   {
+    "prompt": "The animals were fleeing away from the fire.",
+    "answer": "τὰ ζῷα ἀπὸ τοῦ πυρὸς ἔφευγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ζῷα",
+     "ἀπὸ",
+     "τοῦ",
+     "πυρός",
+     "ἔφευγεν"
+    ]
+   },
+   {
+    "prompt": "Wise Solon gave the Athenians just laws.",
+    "answer": "ὁ σοφὸς Σόλων τοῖς Ἀθηναίοις δικαίους νόμους ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "Σόλων",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "δικαίους",
+     "νόμους",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "We trust Xenophon, a brave general.",
+    "answer": "Ξενοφῶντι, ἀνδρείῳ στρατηγῷ, πιστεύομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ξενοφῶντι",
+     "ἀνδρείῳ",
+     "στρατηγῷ",
+     "πιστεύομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-925-agreement-the-concords-t8",
+  "sectionId": "sm-925-agreement-the-concords",
+  "questions": [
+   {
+    "prompt": "The soldiers, although wounded, remained in the battle.",
+    "answer": "οἱ στρατιῶται, καίπερ τετρωμένοι, ἐν τῇ μάχῃ ἔμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "καίπερ",
+     "τετρωμένοι",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἔμενον"
+    ]
+   },
+   {
+    "prompt": "Thebes, a great city, resisted the Spartans.",
+    "answer": "αἱ Θῆβαι, μεγάλη πόλις, τοῖς Λακεδαιμονίοις ἀντέστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "Θῆβαι",
+     "μεγάλη",
+     "πόλις",
+     "τοῖς",
+     "Λακεδαιμονίοις",
+     "ἀντέστησαν"
+    ]
+   },
+   {
+    "prompt": "The crowd shouted and ran toward the gates.",
+    "answer": "τὸ πλῆθος ἐβόων καὶ πρὸς τὰς πύλας ἔτρεχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "πλῆθος",
+     "ἐβόων",
+     "καὶ",
+     "πρὸς",
+     "τὰς",
+     "πύλας",
+     "ἔτρεχον"
+    ]
+   },
+   {
+    "prompt": "Wealth and health are good things.",
+    "answer": "ὁ πλοῦτος καὶ ἡ ὑγίεια ἀγαθά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλοῦτος",
+     "καὶ",
+     "ἡ",
+     "ὑγίεια",
+     "ἀγαθά",
+     "ἐστιν"
+    ]
+   }
+  ]
+ }
+]

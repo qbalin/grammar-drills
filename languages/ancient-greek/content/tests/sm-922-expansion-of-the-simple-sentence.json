@@ -1,0 +1,754 @@
+[
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t1",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "Xenias and Pasion sailed away from the camp during the night.",
+    "answer": "Ξενίας καὶ Πασίων τῆς νυκτὸς ἀπὸ τοῦ στρατοπέδου ἀπέπλευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ξενίας",
+     "καὶ",
+     "Πασίων",
+     "τῆς",
+     "νυκτὸς",
+     "ἀπὸ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἀπέπλευσαν"
+    ]
+   },
+   {
+    "prompt": "The good general sent a crown of gold to the king.",
+    "answer": "ὁ ἀγαθὸς στρατηγὸς στέφανον χρυσοῦ τῷ βασιλεῖ ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀγαθὸς",
+     "στρατηγὸς",
+     "στέφανον",
+     "χρυσοῦ",
+     "τῷ",
+     "βασιλεῖ",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "Our father wishes to depart to Susa.",
+    "answer": "ὁ πατὴρ ἡμῶν εἰς Σοῦσα ἀπελθεῖν ἐθέλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατὴρ",
+     "ἡμῶν",
+     "εἰς",
+     "Σοῦσα",
+     "ἀπελθεῖν",
+     "ἐθέλει"
+    ]
+   },
+   {
+    "prompt": "The men of the present day honor two brave captains.",
+    "answer": "οἱ νῦν ἄνθρωποι δύο λοχαγοὺς ἀνδρείους τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νῦν",
+     "ἄνθρωποι",
+     "δύο",
+     "λοχαγοὺς",
+     "ἀνδρείους",
+     "τιμῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t2",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "During the night I hear the voice of the messenger.",
+    "answer": "τῆς νυκτὸς τῆς τοῦ μηνυτοῦ φωνῆς ἀκούω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "νυκτὸς",
+     "τοῦ",
+     "μηνυτοῦ",
+     "φωνῆς",
+     "ἀκούω"
+    ]
+   },
+   {
+    "prompt": "The soldiers followed the guide to the tents.",
+    "answer": "οἱ στρατιῶται τῷ ἡγεμόνι ἐπὶ τὰς σκηνὰς εἵποντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τῷ",
+     "ἡγεμόνι",
+     "ἐπὶ",
+     "τὰς",
+     "σκηνὰς",
+     "εἵποντο"
+    ]
+   },
+   {
+    "prompt": "He won the battle and loves us greatly.",
+    "answer": "τὴν μάχην ἐνίκησε καὶ ἡμᾶς σφόδρα ἀγαπᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "μάχην",
+     "ἐνίκησε",
+     "καὶ",
+     "ἡμᾶς",
+     "σφόδρα",
+     "ἀγαπᾷ"
+    ]
+   },
+   {
+    "prompt": "I see many of the citizens in the marketplace.",
+    "answer": "πολλοὺς τῶν πολιτῶν ἐν τῇ ἀγορᾷ ὁρῶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὺς",
+     "τῶν",
+     "πολιτῶν",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ὁρῶ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t3",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "I will begin my speech about the war.",
+    "answer": "ἄρξομαι λέγων περὶ τοῦ πολέμου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄρξομαι",
+     "λέγων",
+     "περὶ",
+     "τοῦ",
+     "πολέμου"
+    ]
+   },
+   {
+    "prompt": "The captain departed on the third day.",
+    "answer": "ὁ λοχαγὸς τριταῖος ἀπῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "λοχαγὸς",
+     "τριταῖος",
+     "ἀπῆλθεν"
+    ]
+   },
+   {
+    "prompt": "Let the general know well that the enemy are fleeing.",
+    "answer": "ὁ στρατηγὸς εὖ ἴστω ὅτι οἱ πολέμιοι φεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "εὖ",
+     "ἴστω",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "φεύγουσιν"
+    ]
+   },
+   {
+    "prompt": "He wishes to send messengers to the allies.",
+    "answer": "ἐθέλει ἀγγέλους πρὸς τοὺς συμμάχους ἀποστεῖλαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθέλει",
+     "ἀγγέλους",
+     "πρὸς",
+     "τοὺς",
+     "συμμάχους",
+     "ἀποστεῖλαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t4",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "The way down the hill was long and difficult.",
+    "answer": "ἡ ὁδὸς ἡ κατὰ τοῦ γηλόφου μακρὰ καὶ χαλεπὴ ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ὁδὸς",
+     "κατὰ",
+     "τοῦ",
+     "γηλόφου",
+     "μακρὰ",
+     "καὶ",
+     "χαλεπὴ",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "During the night the enemy went to the river.",
+    "answer": "τῆς νυκτὸς οἱ πολέμιοι ἐπὶ τὸν ποταμὸν ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "νυκτὸς",
+     "οἱ",
+     "πολέμιοι",
+     "ἐπὶ",
+     "τὸν",
+     "ποταμὸν",
+     "ἦλθον"
+    ]
+   },
+   {
+    "prompt": "That friend of ours announced these things to the citizens.",
+    "answer": "ὁ ἡμέτερος φίλος ταῦτα τοῖς πολίταις ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἡμέτερος",
+     "φίλος",
+     "ταῦτα",
+     "τοῖς",
+     "πολίταις",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "A crown of gold lies upon the head of the king.",
+    "answer": "στέφανος χρυσοῦ ἐπὶ τῇ τοῦ βασιλέως κεφαλῇ κεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στέφανος",
+     "χρυσοῦ",
+     "ἐπὶ",
+     "τῇ",
+     "τοῦ",
+     "βασιλέως",
+     "κεφαλῇ",
+     "κεῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t5",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "The captains departed and did so.",
+    "answer": "οἱ λοχαγοὶ ἀπῆλθον καὶ οὕτως ἐποίουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "λοχαγοὶ",
+     "ἀπῆλθον",
+     "καὶ",
+     "οὕτως",
+     "ἐποίουν"
+    ]
+   },
+   {
+    "prompt": "Cyrus and his brother marched against the king.",
+    "answer": "Κῦρος καὶ ὁ ἀδελφὸς ἐπὶ τὸν βασιλέα ἐστράτευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "καὶ",
+     "ὁ",
+     "ἀδελφὸς",
+     "ἐπὶ",
+     "τὸν",
+     "βασιλέα",
+     "ἐστράτευσαν"
+    ]
+   },
+   {
+    "prompt": "The wise men and the young children came into the city.",
+    "answer": "οἱ σοφοὶ ἄνδρες καὶ οἱ νέοι παῖδες εἰς τὴν πόλιν ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "ἄνδρες",
+     "καὶ",
+     "νέοι",
+     "παῖδες",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "ἦλθον"
+    ]
+   },
+   {
+    "prompt": "The soldiers took the city and burned the houses.",
+    "answer": "οἱ στρατιῶται τὴν πόλιν εἷλον καὶ τὰς οἰκίας ἐνέπρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὴν",
+     "πόλιν",
+     "εἷλον",
+     "καὶ",
+     "τὰς",
+     "οἰκίας",
+     "ἐνέπρησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t6",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "Cyrus, the king of the Persians, sent gifts.",
+    "answer": "Κῦρος ὁ τῶν Περσῶν βασιλεὺς δῶρα ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "ὁ",
+     "τῶν",
+     "Περσῶν",
+     "βασιλεὺς",
+     "δῶρα",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "We saw Xenophon, a man wise in generalship.",
+    "answer": "Ξενοφῶντα ἄνδρα σοφὸν τὴν στρατηγίαν εἴδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ξενοφῶντα",
+     "ἄνδρα",
+     "σοφὸν",
+     "τὴν",
+     "στρατηγίαν",
+     "εἴδομεν"
+    ]
+   },
+   {
+    "prompt": "The signal of the general appeared to the subjects.",
+    "answer": "τὸ τοῦ στρατηγοῦ σημεῖον τοῖς ὑπηκόοις ἐφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "σημεῖον",
+     "τοῖς",
+     "ὑπηκόοις",
+     "ἐφάνη"
+    ]
+   },
+   {
+    "prompt": "The tongue of men often reveals the truth.",
+    "answer": "ἡ τῶν ἀνθρώπων γλῶσσα πολλάκις τὴν ἀλήθειαν δηλοῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "ἀνθρώπων",
+     "γλῶσσα",
+     "πολλάκις",
+     "τὴν",
+     "ἀλήθειαν",
+     "δηλοῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t7",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "The wise general of the Athenians led the soldiers to the sea.",
+    "answer": "Ὁ σοφὸς στρατηγὸς τῶν Ἀθηναίων ἤγαγε τοὺς στρατιώτας ἐπὶ τὴν θάλατταν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "σοφὸς",
+     "στρατηγὸς",
+     "τῶν",
+     "Ἀθηναίων",
+     "ἤγαγε",
+     "τοὺς",
+     "στρατιώτας",
+     "ἐπὶ",
+     "τὴν",
+     "θάλατταν"
+    ]
+   },
+   {
+    "prompt": "Two children of the nymph were playing in the marsh.",
+    "answer": "Δύο παῖδες τῆς νύμφης ἔπαιζον ἐν τῷ ἕλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δύο",
+     "παῖδες",
+     "τῆς",
+     "νύμφης",
+     "ἔπαιζον",
+     "ἐν",
+     "τῷ",
+     "ἕλει"
+    ]
+   },
+   {
+    "prompt": "The men of the present day praise the ancient poets.",
+    "answer": "Οἱ νῦν ἄνθρωποι ἐπαινοῦσι τοὺς παλαιοὺς ποιητάς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "νῦν",
+     "ἄνθρωποι",
+     "ἐπαινοῦσι",
+     "τοὺς",
+     "παλαιοὺς",
+     "ποιητάς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t8",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "He followed the guide through the mountains.",
+    "answer": "Εἵπετο τῷ ἡγεμόνι διὰ τῶν ὀρῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἵπετο",
+     "τῷ",
+     "ἡγεμόνι",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν"
+    ]
+   },
+   {
+    "prompt": "I see many of the citizens fleeing from the city.",
+    "answer": "Ὁρῶ πολλοὺς τῶν πολιτῶν φεύγοντας ἐκ τῆς πόλεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁρῶ",
+     "πολλοὺς",
+     "τῶν",
+     "πολιτῶν",
+     "φεύγοντας",
+     "ἐκ",
+     "τῆς",
+     "πόλεως"
+    ]
+   },
+   {
+    "prompt": "The soldiers won the battle and pursued the enemy.",
+    "answer": "Οἱ στρατιῶται ἐνίκησαν τὴν μάχην καὶ ἐδίωξαν τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "ἐνίκησαν",
+     "τὴν",
+     "μάχην",
+     "καὶ",
+     "ἐδίωξαν",
+     "τοὺς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "He gave ten talents to the wise judge.",
+    "answer": "Ἔδωκε δέκα τάλαντα τῷ σοφῷ δικαστῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἔδωκε",
+     "δέκα",
+     "τάλαντα",
+     "τῷ",
+     "σοφῷ",
+     "δικαστῇ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t9",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "The old man wishes to depart to the temple.",
+    "answer": "Ὁ γέρων ἐθέλει ἀπελθεῖν εἰς τὸ ἱερόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "γέρων",
+     "ἐθέλει",
+     "ἀπελθεῖν",
+     "εἰς",
+     "τὸ",
+     "ἱερόν"
+    ]
+   },
+   {
+    "prompt": "The general began speaking about the danger.",
+    "answer": "Ὁ στρατηγὸς ἤρξατο λέγων περὶ τοῦ κινδύνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγὸς",
+     "ἤρξατο",
+     "λέγων",
+     "περὶ",
+     "τοῦ",
+     "κινδύνου"
+    ]
+   },
+   {
+    "prompt": "The maiden departed rejoicing on the third day.",
+    "answer": "Ἡ παρθένος ἀπῆλθε χαίρουσα τριταία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "παρθένος",
+     "ἀπῆλθε",
+     "χαίρουσα",
+     "τριταία"
+    ]
+   },
+   {
+    "prompt": "The children ceased weeping when their father arrived.",
+    "answer": "Οἱ παῖδες ἐπαύσαντο δακρύοντες ἐπεὶ ὁ πατὴρ ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "παῖδες",
+     "ἐπαύσαντο",
+     "δακρύοντες",
+     "ἐπεὶ",
+     "ὁ",
+     "πατὴρ",
+     "ἀφίκετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t10",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "He came during the night and departed at daybreak.",
+    "answer": "Τῆς νυκτὸς ἦλθε καὶ ἅμα τῇ ἡμέρᾳ ἀπῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τῆς",
+     "νυκτὸς",
+     "ἦλθε",
+     "καὶ",
+     "ἅμα",
+     "τῇ",
+     "ἡμέρᾳ",
+     "ἀπῆλθεν"
+    ]
+   },
+   {
+    "prompt": "Let him know well that we love him.",
+    "answer": "Εὖ ἴστω ὅτι ἀγαπῶμεν αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εὖ",
+     "ἴστω",
+     "ὅτι",
+     "ἀγαπῶμεν",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "The messengers arrived at the marsh in the spring.",
+    "answer": "Οἱ ἄγγελοι ἀφίκοντο εἰς τὸ ἕλος τοῦ ἔαρος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ἄγγελοι",
+     "ἀφίκοντο",
+     "εἰς",
+     "τὸ",
+     "ἕλος",
+     "τοῦ",
+     "ἔαρος"
+    ]
+   },
+   {
+    "prompt": "The men of former times honored the gods rightly.",
+    "answer": "Οἱ πάλαι ἄνθρωποι ὀρθῶς ἐτίμων τοὺς θεούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "πάλαι",
+     "ἄνθρωποι",
+     "ὀρθῶς",
+     "ἐτίμων",
+     "τοὺς",
+     "θεούς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t11",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "Cyrus the general marched against the great king.",
+    "answer": "Κῦρος ὁ στρατηγὸς ἐστράτευσεν ἐπὶ τὸν μέγαν βασιλέα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐστράτευσεν",
+     "ἐπὶ",
+     "τὸν",
+     "μέγαν",
+     "βασιλέα"
+    ]
+   },
+   {
+    "prompt": "We sailed to Ilium with the ships of the allies.",
+    "answer": "Ἐπλεύσαμεν εἰς Ἴλιον σὺν ταῖς ναυσὶ τῶν συμμάχων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐπλεύσαμεν",
+     "εἰς",
+     "Ἴλιον",
+     "σὺν",
+     "ταῖς",
+     "ναυσὶ",
+     "τῶν",
+     "συμμάχων"
+    ]
+   },
+   {
+    "prompt": "The road down the hill led to the fishy sea.",
+    "answer": "Ἡ ὁδὸς κατὰ τοῦ γηλόφου ἦγεν ἐπὶ τὴν ἰχθυόεσσαν θάλατταν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "ὁδὸς",
+     "κατὰ",
+     "τοῦ",
+     "γηλόφου",
+     "ἦγεν",
+     "ἐπὶ",
+     "τὴν",
+     "ἰχθυόεσσαν",
+     "θάλατταν"
+    ]
+   },
+   {
+    "prompt": "Our father, a brave man, fell in the battle.",
+    "answer": "Ὁ πατὴρ ἡμῶν, ἀνὴρ ἀνδρεῖος, ἔπεσεν ἐν τῇ μάχῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "πατὴρ",
+     "ἡμῶν",
+     "ἀνὴρ",
+     "ἀνδρεῖος",
+     "ἔπεσεν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-922-expansion-of-the-simple-sentence-t12",
+  "sectionId": "sm-922-expansion-of-the-simple-sentence",
+  "questions": [
+   {
+    "prompt": "The four sailors yoked the oxen to the wagon.",
+    "answer": "Οἱ τέσσαρες ναῦται ἔζευξαν τοὺς βοῦς τῇ ἁμάξῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "τέσσαρες",
+     "ναῦται",
+     "ἔζευξαν",
+     "τοὺς",
+     "βοῦς",
+     "τῇ",
+     "ἁμάξῃ"
+    ]
+   },
+   {
+    "prompt": "A friend of ours fought a noble fight against the Persians.",
+    "answer": "Φίλος ἡμέτερος ἐμαχέσατο καλὴν μάχην πρὸς τοὺς Πέρσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Φίλος",
+     "ἡμέτερος",
+     "ἐμαχέσατο",
+     "καλὴν",
+     "μάχην",
+     "πρὸς",
+     "τοὺς",
+     "Πέρσας"
+    ]
+   },
+   {
+    "prompt": "The judges punished the traitor with a heavy penalty.",
+    "answer": "Οἱ δικασταὶ ἐζημίωσαν τὸν προδότην μεγάλῃ ζημίᾳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "δικασταὶ",
+     "ἐζημίωσαν",
+     "τὸν",
+     "προδότην",
+     "μεγάλῃ",
+     "ζημίᾳ"
+    ]
+   },
+   {
+    "prompt": "The good citizens listened to the general's exhortation.",
+    "answer": "Οἱ ἀγαθοὶ πολῖται ἤκουσαν τῆς τοῦ στρατηγοῦ παραινέσεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ἀγαθοὶ",
+     "πολῖται",
+     "ἤκουσαν",
+     "τῆς",
+     "τοῦ",
+     "στρατηγοῦ",
+     "παραινέσεως"
+    ]
+   }
+  ]
+ }
+]

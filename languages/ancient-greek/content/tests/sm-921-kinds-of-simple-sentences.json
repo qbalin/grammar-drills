@@ -1,0 +1,381 @@
+[
+ {
+  "id": "sm-921-kinds-of-simple-sentences-t1",
+  "sectionId": "sm-921-kinds-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "The general summoned all the soldiers into the marketplace.",
+    "answer": "ὁ στρατηγὸς πάντας τοὺς στρατιώτας εἰς τὴν ἀγορὰν συνεκάλεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "πάντας",
+     "τοὺς",
+     "στρατιώτας",
+     "εἰς",
+     "τὴν",
+     "ἀγορὰν",
+     "συνεκάλεσεν"
+    ]
+   },
+   {
+    "prompt": "Do not neglect virtue, young men, but always pursue it.",
+    "answer": "μὴ ἀμελεῖτε, ὦ νεανίαι, τῆς ἀρετῆς, ἀλλὰ ἀεὶ αὐτὴν διώκετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἀμελεῖτε",
+     "ὦ",
+     "νεανίαι",
+     "τῆς",
+     "ἀρετῆς",
+     "ἀλλὰ",
+     "ἀεὶ",
+     "αὐτὴν",
+     "διώκετε"
+    ]
+   },
+   {
+    "prompt": "May the gods grant us a good and healthy life.",
+    "answer": "εἴθε οἱ θεοὶ ἡμῖν βίον ἀγαθὸν καὶ ὑγιεινὸν δοῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "θεοὶ",
+     "ἡμῖν",
+     "βίον",
+     "ἀγαθὸν",
+     "καὶ",
+     "ὑγιεινὸν",
+     "δοῖεν"
+    ]
+   },
+   {
+    "prompt": "Who left these clear proofs of his courage?",
+    "answer": "τίς ταῦτα τὰ σαφῆ τῆς ἀνδρείας τεκμήρια κατέλιπεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ταῦτα",
+     "τὰ",
+     "σαφῆ",
+     "τῆς",
+     "ἀνδρείας",
+     "τεκμήρια",
+     "κατέλιπεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-921-kinds-of-simple-sentences-t2",
+  "sectionId": "sm-921-kinds-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "How bravely the young men fought on behalf of their country!",
+    "answer": "ὡς ἀνδρείως οἱ νεανίαι ὑπὲρ τῆς πατρίδος ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀνδρείως",
+     "οἱ",
+     "νεανίαι",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἐμάχοντο"
+    ]
+   },
+   {
+    "prompt": "Would that Nestor were still alive among us!",
+    "answer": "εἴθε Νέστωρ ἔτι παρὰ ἡμῖν ἔζη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "Νέστωρ",
+     "ἔτι",
+     "παρὰ",
+     "ἡμῖν",
+     "ἔζη"
+    ]
+   },
+   {
+    "prompt": "Bring the sick man into the house and care for him.",
+    "answer": "τὸν νοσοῦντα εἰς τὴν οἰκίαν εἰσάγετε καὶ θεραπεύετε αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "νοσοῦντα",
+     "εἰς",
+     "τὴν",
+     "οἰκίαν",
+     "εἰσάγετε",
+     "καὶ",
+     "θεραπεύετε",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "The wise man acquires many friends through his justice.",
+    "answer": "ὁ σοφὸς διὰ τὴν δικαιοσύνην πολλοὺς φίλους κτᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "διὰ",
+     "τὴν",
+     "δικαιοσύνην",
+     "πολλοὺς",
+     "φίλους",
+     "κτᾶται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-921-kinds-of-simple-sentences-t3",
+  "sectionId": "sm-921-kinds-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Whither shall we flee, now that the enemy hold the gates?",
+    "answer": "ποῖ φύγωμεν, τῶν πολεμίων τὰς πύλας ἐχόντων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποῖ",
+     "φύγωμεν",
+     "τῶν",
+     "πολεμίων",
+     "τὰς",
+     "πύλας",
+     "ἐχόντων"
+    ]
+   },
+   {
+    "prompt": "Many and varied were the gifts which the king sent.",
+    "answer": "πολλὰ καὶ παντοδαπὰ ἦν τὰ δῶρα ἃ ὁ βασιλεὺς ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "καὶ",
+     "παντοδαπὰ",
+     "ἦν",
+     "τὰ",
+     "δῶρα",
+     "ἃ",
+     "ὁ",
+     "βασιλεὺς",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "Let each man guard the post assigned to him.",
+    "answer": "ἕκαστος τὴν ταχθεῖσαν τάξιν φυλαττέτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕκαστος",
+     "τὴν",
+     "ταχθεῖσαν",
+     "τάξιν",
+     "φυλαττέτω"
+    ]
+   },
+   {
+    "prompt": "May I never see my friends suffering such evils.",
+    "answer": "μήποτε ἴδοιμι τοὺς φίλους τοιαῦτα κακὰ πάσχοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήποτε",
+     "ἴδοιμι",
+     "τοὺς",
+     "φίλους",
+     "τοιαῦτα",
+     "κακὰ",
+     "πάσχοντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-921-kinds-of-simple-sentences-t4",
+  "sectionId": "sm-921-kinds-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Let us follow the guide and not linger.",
+    "answer": "ἀκολουθῶμεν τῷ ἡγεμόνι καὶ μὴ βραδύνωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκολουθῶμεν",
+     "τῷ",
+     "ἡγεμόνι",
+     "καὶ",
+     "μὴ",
+     "βραδύνωμεν"
+    ]
+   },
+   {
+    "prompt": "The physician thinks health more valuable than wealth.",
+    "answer": "ὁ ἰατρὸς τὴν ὑγίειαν τοῦ πλούτου τιμιωτέραν νομίζει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "τὴν",
+     "ὑγίειαν",
+     "τοῦ",
+     "πλούτου",
+     "τιμιωτέραν",
+     "νομίζει"
+    ]
+   },
+   {
+    "prompt": "Why did the judges reject so worthy a man?",
+    "answer": "διὰ τί οἱ δικασταὶ ἄνδρα οὕτω λόγιμον ἀπεδοκίμασαν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τί",
+     "οἱ",
+     "δικασταὶ",
+     "ἄνδρα",
+     "οὕτω",
+     "λόγιμον",
+     "ἀπεδοκίμασαν"
+    ]
+   },
+   {
+    "prompt": "What a noble deed you have accomplished today!",
+    "answer": "ὡς καλὸν ἔργον τήμερον εἴργασαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "καλὸν",
+     "ἔργον",
+     "τήμερον",
+     "εἴργασαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-921-kinds-of-simple-sentences-t5",
+  "sectionId": "sm-921-kinds-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Rejoicing at the victory, the citizens set up a trophy.",
+    "answer": "οἱ πολῖται τῇ νίκῃ γηθοῦντες τρόπαιον ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τῇ",
+     "νίκῃ",
+     "γηθοῦντες",
+     "τρόπαιον",
+     "ἔστησαν"
+    ]
+   },
+   {
+    "prompt": "Do not betray the city to the enemy.",
+    "answer": "μὴ προδῷς τὴν πόλιν τοῖς πολεμίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "προδῷς",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "Would that we had never begun this war!",
+    "answer": "εἴθε μήποτε τοῦδε τοῦ πολέμου ἠρξάμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "μήποτε",
+     "τοῦδε",
+     "τοῦ",
+     "πολέμου",
+     "ἠρξάμεθα"
+    ]
+   },
+   {
+    "prompt": "Do you not see the ships approaching the harbor?",
+    "answer": "ἆρα οὐχ ὁρᾷς τὰς ναῦς τῷ λιμένι προσπλεούσας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "οὐχ",
+     "ὁρᾷς",
+     "τὰς",
+     "ναῦς",
+     "τῷ",
+     "λιμένι",
+     "προσπλεούσας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-921-kinds-of-simple-sentences-t6",
+  "sectionId": "sm-921-kinds-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Nestor, the wisest of the Greeks, gave the best counsel.",
+    "answer": "Νέστωρ, ὁ σοφώτατος τῶν Ἑλλήνων, ἄριστα συνεβούλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Νέστωρ",
+     "ὁ",
+     "σοφώτατος",
+     "τῶν",
+     "Ἑλλήνων",
+     "ἄριστα",
+     "συνεβούλευσεν"
+    ]
+   },
+   {
+    "prompt": "Consider carefully, friends, what is going to happen.",
+    "answer": "ἐνθυμεῖσθε, ὦ φίλοι, ἀκριβῶς τὰ μέλλοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνθυμεῖσθε",
+     "ὦ",
+     "φίλοι",
+     "ἀκριβῶς",
+     "τὰ",
+     "μέλλοντα"
+    ]
+   },
+   {
+    "prompt": "What am I to say to the assembled people?",
+    "answer": "τί εἴπω τῷ συγκεκλημένῳ δήμῳ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "εἴπω",
+     "τῷ",
+     "συγκεκλημένῳ",
+     "δήμῳ"
+    ]
+   },
+   {
+    "prompt": "May you fare well and obtain all good things.",
+    "answer": "εὖ πράττοις καὶ πάντων τῶν ἀγαθῶν τύχοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "πράττοις",
+     "καὶ",
+     "πάντων",
+     "τῶν",
+     "ἀγαθῶν",
+     "τύχοις"
+    ]
+   }
+  ]
+ }
+]

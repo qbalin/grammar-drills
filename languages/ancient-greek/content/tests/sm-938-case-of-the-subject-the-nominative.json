@@ -1,0 +1,797 @@
+[
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t1",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "Cyrus was present, but his brother was still an exile.",
+    "answer": "Κῦρος παρῆν, ὁ δὲ ἀδελφὸς αὐτοῦ ἔτι φυγὰς ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "παρῆν",
+     "ὁ",
+     "δὲ",
+     "ἀδελφὸς",
+     "αὐτοῦ",
+     "ἔτι",
+     "φυγὰς",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The general seemed prudent, and his soldiers were brave.",
+    "answer": "ὁ στρατηγὸς συνετὸς ἐφαίνετο, καὶ οἱ στρατιῶται αὐτοῦ ἀνδρεῖοι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "συνετὸς",
+     "ἐφαίνετο",
+     "καὶ",
+     "οἱ",
+     "στρατιῶται",
+     "αὐτοῦ",
+     "ἀνδρεῖοι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "Socrates became a teacher of many young men in the city.",
+    "answer": "ὁ Σωκράτης διδάσκαλος πολλῶν νεανιῶν ἐν τῇ πόλει ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "διδάσκαλος",
+     "πολλῶν",
+     "νεανιῶν",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "Although he was a colonist, Miltiades became a citizen.",
+    "answer": "καίπερ ἄποικος ὤν, ὁ Μιλτιάδης πολίτης ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "ἄποικος",
+     "ὤν",
+     "ὁ",
+     "Μιλτιάδης",
+     "πολίτης",
+     "ἐγένετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t2",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "I, Themistocles, have come to you as a suppliant.",
+    "answer": "Θεμιστοκλῆς ἥκω παρὰ σὲ ἱκέτης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Θεμιστοκλῆς",
+     "ἥκω",
+     "παρὰ",
+     "σὲ",
+     "ἱκέτης"
+    ]
+   },
+   {
+    "prompt": "I, Xenophon, write these things to my friends at home.",
+    "answer": "Ξενοφῶν ταῦτα τοῖς οἴκοι φίλοις γράφω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ξενοφῶν",
+     "ταῦτα",
+     "τοῖς",
+     "οἴκοι",
+     "φίλοις",
+     "γράφω"
+    ]
+   },
+   {
+    "prompt": "Artaxerxes thinks that the Greeks are worthy of much honor.",
+    "answer": "Ἀρταξέρξης νομίζει τοὺς Ἕλληνας πολλῆς τιμῆς ἀξίους εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀρταξέρξης",
+     "νομίζει",
+     "τοὺς",
+     "Ἕλληνας",
+     "πολλῆς",
+     "τιμῆς",
+     "ἀξίους",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "I, Lysias, will speak the truth to the jurors.",
+    "answer": "Λυσίας τὴν ἀλήθειαν τοῖς δικασταῖς ἐρῶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Λυσίας",
+     "τὴν",
+     "ἀλήθειαν",
+     "τοῖς",
+     "δικασταῖς",
+     "ἐρῶ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t3",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "They captured one ship, but the rest escaped.",
+    "answer": "μίαν μὲν ναῦν λαμβάνουσιν, αἱ δὲ ἄλλαι ἀποφεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μίαν",
+     "μὲν",
+     "ναῦν",
+     "λαμβάνουσιν",
+     "αἱ",
+     "δὲ",
+     "ἄλλαι",
+     "ἀποφεύγουσιν"
+    ]
+   },
+   {
+    "prompt": "Hear what the laws command and what the citizens have transgressed.",
+    "answer": "ἀκούετε τί οἱ νόμοι κελεύουσι καὶ τί οἱ πολῖται παραβεβήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκούετε",
+     "τί",
+     "οἱ",
+     "νόμοι",
+     "κελεύουσι",
+     "καὶ",
+     "πολῖται",
+     "παραβεβήκασιν"
+    ]
+   },
+   {
+    "prompt": "The enemy attacked, but our men held the wall firmly.",
+    "answer": "οἱ πολέμιοι προσέβαλον, οἱ δὲ ἡμέτεροι τὸ τεῖχος βεβαίως εἶχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "προσέβαλον",
+     "δὲ",
+     "ἡμέτεροι",
+     "τὸ",
+     "τεῖχος",
+     "βεβαίως",
+     "εἶχον"
+    ]
+   },
+   {
+    "prompt": "The messengers announced these things, and the assembly rejoiced.",
+    "answer": "οἱ ἄγγελοι ταῦτα ἤγγειλαν, καὶ ἡ ἐκκλησία ἔχαιρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "ταῦτα",
+     "ἤγγειλαν",
+     "καὶ",
+     "ἡ",
+     "ἐκκλησία",
+     "ἔχαιρεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t4",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "While the king was ruling, the land was prosperous.",
+    "answer": "τοῦ βασιλέως ἄρχοντος, ἡ χώρα εὐδαίμων ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "βασιλέως",
+     "ἄρχοντος",
+     "ἡ",
+     "χώρα",
+     "εὐδαίμων",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The wise man, having considered these things, became more prudent.",
+    "answer": "ὁ σοφός, ταῦτα σκεψάμενος, συνετώτερος ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "ταῦτα",
+     "σκεψάμενος",
+     "συνετώτερος",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "The capture of the city was a wonderful thing to the Greeks.",
+    "answer": "ἡ τῆς πόλεως ἅλωσις θαυμαστὴ τοῖς Ἕλλησιν ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῆς",
+     "πόλεως",
+     "ἅλωσις",
+     "θαυμαστὴ",
+     "τοῖς",
+     "Ἕλλησιν",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The boy, though small, was a companion of the soldiers.",
+    "answer": "ὁ παῖς, καίπερ μικρὸς ὤν, ἑταῖρος τῶν στρατιωτῶν ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "καίπερ",
+     "μικρὸς",
+     "ὤν",
+     "ἑταῖρος",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t5",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "But as for friends, if one knows how to treat them, what shall we say they are?",
+    "answer": "οἱ δὲ φίλοι, ἐάν τις ἐπίστηται αὐτοῖς χρῆσθαι, τί φήσομεν αὐτοὺς εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δὲ",
+     "φίλοι",
+     "ἐάν",
+     "τις",
+     "ἐπίστηται",
+     "αὐτοῖς",
+     "χρῆσθαι",
+     "τί",
+     "φήσομεν",
+     "αὐτοὺς",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Wealth, if someone uses it well, becomes a great good.",
+    "answer": "ὁ πλοῦτος, ἐάν τις αὐτῷ καλῶς χρῆται, μέγα ἀγαθὸν γίγνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλοῦτος",
+     "ἐάν",
+     "τις",
+     "αὐτῷ",
+     "καλῶς",
+     "χρῆται",
+     "μέγα",
+     "ἀγαθὸν",
+     "γίγνεται"
+    ]
+   },
+   {
+    "prompt": "The gods, whom we honor, are the causes of good things.",
+    "answer": "οἱ θεοί, οὓς τιμῶμεν, αἴτιοι τῶν ἀγαθῶν εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "οὓς",
+     "τιμῶμεν",
+     "αἴτιοι",
+     "τῶν",
+     "ἀγαθῶν",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "This man, whom you see, is a stranger from Paros.",
+    "answer": "οὗτος ὁ ἀνήρ, ὃν ὁρᾶτε, ξένος ἐκ Πάρου ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "ἀνήρ",
+     "ὃν",
+     "ὁρᾶτε",
+     "ξένος",
+     "ἐκ",
+     "Πάρου",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t6",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "The old man became the leader of the colonists.",
+    "answer": "ὁ γέρων ἡγεμὼν τῶν ἀποίκων ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἡγεμὼν",
+     "τῶν",
+     "ἀποίκων",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "Death is not a terrible thing to the brave.",
+    "answer": "ὁ θάνατος οὐ δεινός ἐστι τοῖς ἀνδρείοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θάνατος",
+     "οὐ",
+     "δεινός",
+     "ἐστι",
+     "τοῖς",
+     "ἀνδρείοις"
+    ]
+   },
+   {
+    "prompt": "The general, having captured the city, remained a friend to the citizens.",
+    "answer": "ὁ στρατηγός, τὴν πόλιν ἑλών, φίλος τοῖς πολίταις ἔμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τὴν",
+     "πόλιν",
+     "ἑλών",
+     "φίλος",
+     "τοῖς",
+     "πολίταις",
+     "ἔμεινεν"
+    ]
+   },
+   {
+    "prompt": "The judges themselves are witnesses of what happened.",
+    "answer": "αὐτοὶ οἱ δικασταὶ μάρτυρές εἰσι τῶν γενομένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοὶ",
+     "οἱ",
+     "δικασταὶ",
+     "μάρτυρές",
+     "εἰσι",
+     "τῶν",
+     "γενομένων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t7",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "The general became a traitor, though he had once been brave.",
+    "answer": "ὁ στρατηγὸς προδότης ἐγένετο, καίπερ ποτὲ ἀνδρεῖος ὤν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "προδότης",
+     "ἐγένετο",
+     "καίπερ",
+     "ποτὲ",
+     "ἀνδρεῖος",
+     "ὤν"
+    ]
+   },
+   {
+    "prompt": "Wisdom is the greatest of goods for those who govern the city.",
+    "answer": "ἡ σοφία μέγιστον τῶν ἀγαθῶν ἐστι τοῖς τὴν πόλιν διοικοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφία",
+     "μέγιστον",
+     "τῶν",
+     "ἀγαθῶν",
+     "ἐστι",
+     "τοῖς",
+     "τὴν",
+     "πόλιν",
+     "διοικοῦσιν"
+    ]
+   },
+   {
+    "prompt": "Self-control seemed to Socrates the foundation of virtue.",
+    "answer": "ἡ ἐγκράτεια τῷ Σωκράτει κρηπὶς τῆς ἀρετῆς ἐδόκει εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐγκράτεια",
+     "τῷ",
+     "Σωκράτει",
+     "κρηπὶς",
+     "τῆς",
+     "ἀρετῆς",
+     "ἐδόκει",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "These men remained faithful allies throughout the whole war.",
+    "answer": "οὗτοι πιστοὶ σύμμαχοι διὰ παντὸς τοῦ πολέμου ἔμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "πιστοὶ",
+     "σύμμαχοι",
+     "διὰ",
+     "παντὸς",
+     "τοῦ",
+     "πολέμου",
+     "ἔμειναν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t8",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "When I say \"the city,\" I mean all the citizens.",
+    "answer": "ὅταν τὴν πόλιν λέγω, πάντας τοὺς πολίτας λέγω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "τὴν",
+     "πόλιν",
+     "λέγω",
+     "πάντας",
+     "τοὺς",
+     "πολίτας"
+    ]
+   },
+   {
+    "prompt": "He received from the people the shameful appellation — informer.",
+    "answer": "παρὰ τοῦ δήμου τὴν αἰσχρὰν ἐπωνυμίαν προσέλαβεν, ὁ συκοφάντης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρὰ",
+     "τοῦ",
+     "δήμου",
+     "τὴν",
+     "αἰσχρὰν",
+     "ἐπωνυμίαν",
+     "προσέλαβεν",
+     "ὁ",
+     "συκοφάντης"
+    ]
+   },
+   {
+    "prompt": "He named two virtues, self-control and justice.",
+    "answer": "δύο ἀρετὰς ὠνόμασεν, ἐγκράτεια καὶ δικαιοσύνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δύο",
+     "ἀρετὰς",
+     "ὠνόμασεν",
+     "ἐγκράτεια",
+     "καὶ",
+     "δικαιοσύνη"
+    ]
+   },
+   {
+    "prompt": "When I say \"you,\" I mean the young men who guard the acropolis.",
+    "answer": "ὅταν ὑμεῖς λέγω, λέγω τοὺς νεανίας τοὺς τὴν ἀκρόπολιν φυλάττοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὑμεῖς",
+     "λέγω",
+     "τοὺς",
+     "νεανίας",
+     "τὴν",
+     "ἀκρόπολιν",
+     "φυλάττοντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t9",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "The soldiers, having gathered on the plain, waited for the general.",
+    "answer": "οἱ στρατιῶται, εἰς τὸ πεδίον ἀθροισθέντες, τὸν στρατηγὸν ἀνέμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "εἰς",
+     "τὸ",
+     "πεδίον",
+     "ἀθροισθέντες",
+     "τὸν",
+     "στρατηγὸν",
+     "ἀνέμενον"
+    ]
+   },
+   {
+    "prompt": "The sheep, while the shepherd was sleeping, wandered over the mountains.",
+    "answer": "τὰ πρόβατα, τοῦ ποιμένος καθεύδοντος, ἀνὰ τὰ ὄρη ἐπλανᾶτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "πρόβατα",
+     "τοῦ",
+     "ποιμένος",
+     "καθεύδοντος",
+     "ἀνὰ",
+     "ὄρη",
+     "ἐπλανᾶτο"
+    ]
+   },
+   {
+    "prompt": "As many enemies as attacked the city were driven back.",
+    "answer": "ὁπόσοι πολέμιοι τῇ πόλει ἐπῆλθον, ἀπεώσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόσοι",
+     "πολέμιοι",
+     "τῇ",
+     "πόλει",
+     "ἐπῆλθον",
+     "ἀπεώσθησαν"
+    ]
+   },
+   {
+    "prompt": "The messenger who announced the victory was honored by everyone.",
+    "answer": "ὁ ἄγγελος ὁ τὴν νίκην ἀγγείλας ὑπὸ πάντων ἐτιμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τὴν",
+     "νίκην",
+     "ἀγγείλας",
+     "ὑπὸ",
+     "πάντων",
+     "ἐτιμήθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t10",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "Artaxerxes, the great king, thinks it just to demand tribute.",
+    "answer": "Ἀρταξέρξης, ὁ μέγας βασιλεύς, δίκαιον νομίζει φόρον αἰτεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀρταξέρξης",
+     "ὁ",
+     "μέγας",
+     "βασιλεύς",
+     "δίκαιον",
+     "νομίζει",
+     "φόρον",
+     "αἰτεῖν"
+    ]
+   },
+   {
+    "prompt": "I, Cyrus, have sent these gifts to you as to a friend.",
+    "answer": "Κῦρος ταῦτα τὰ δῶρα σοὶ ὡς φίλῳ πέπομφα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "ταῦτα",
+     "τὰ",
+     "δῶρα",
+     "σοὶ",
+     "ὡς",
+     "φίλῳ",
+     "πέπομφα"
+    ]
+   },
+   {
+    "prompt": "I, Xenophon, write to the soldiers who remain in Asia.",
+    "answer": "Ξενοφῶν τοῖς στρατιώταις τοῖς ἐν τῇ Ἀσίᾳ μένουσι γράφω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ξενοφῶν",
+     "τοῖς",
+     "στρατιώταις",
+     "ἐν",
+     "τῇ",
+     "Ἀσίᾳ",
+     "μένουσι",
+     "γράφω"
+    ]
+   },
+   {
+    "prompt": "Lysias declares that he did the city no injustice.",
+    "answer": "Λυσίας οὐδὲν ἀδικῆσαι τὴν πόλιν φησίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Λυσίας",
+     "οὐδὲν",
+     "ἀδικῆσαι",
+     "τὴν",
+     "πόλιν",
+     "φησίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t11",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "The laws command many things, but the citizens obey few.",
+    "answer": "οἱ νόμοι πολλὰ κελεύουσιν, οἱ δὲ πολῖται ὀλίγοις πείθονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νόμοι",
+     "πολλὰ",
+     "κελεύουσιν",
+     "δὲ",
+     "πολῖται",
+     "ὀλίγοις",
+     "πείθονται"
+    ]
+   },
+   {
+    "prompt": "The enemy were pursuing the fugitives, but they escaped into the wood.",
+    "answer": "οἱ πολέμιοι τοὺς φεύγοντας ἐδίωκον, οἱ δὲ εἰς τὴν ὕλην ἀπέφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τοὺς",
+     "φεύγοντας",
+     "ἐδίωκον",
+     "δὲ",
+     "εἰς",
+     "τὴν",
+     "ὕλην",
+     "ἀπέφυγον"
+    ]
+   },
+   {
+    "prompt": "But wealth, if someone uses it wisely, is a great good.",
+    "answer": "ὁ δὲ πλοῦτος, ἐάν τις αὐτῷ σωφρόνως χρῆται, μέγα ἀγαθόν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δὲ",
+     "πλοῦτος",
+     "ἐάν",
+     "τις",
+     "αὐτῷ",
+     "σωφρόνως",
+     "χρῆται",
+     "μέγα",
+     "ἀγαθόν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The women were carrying water, and the children gathering wood.",
+    "answer": "αἱ γυναῖκες ὕδωρ ἔφερον, οἱ δὲ παῖδες ξύλα συνέλεγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "ὕδωρ",
+     "ἔφερον",
+     "οἱ",
+     "δὲ",
+     "παῖδες",
+     "ξύλα",
+     "συνέλεγον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-938-case-of-the-subject-the-nominative-t12",
+  "sectionId": "sm-938-case-of-the-subject-the-nominative",
+  "questions": [
+   {
+    "prompt": "Neither of the two brothers was willing to become king.",
+    "answer": "οὐδέτερος τῶν ἀδελφῶν βασιλεὺς γενέσθαι ἤθελεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέτερος",
+     "τῶν",
+     "ἀδελφῶν",
+     "βασιλεὺς",
+     "γενέσθαι",
+     "ἤθελεν"
+    ]
+   },
+   {
+    "prompt": "Whatever sort the leader is, of such a sort do the soldiers become.",
+    "answer": "ὁποῖος ἂν ὁ ἡγεμὼν ᾖ, τοιοῦτοι γίγνονται οἱ στρατιῶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁποῖος",
+     "ἂν",
+     "ὁ",
+     "ἡγεμὼν",
+     "ᾖ",
+     "τοιοῦτοι",
+     "γίγνονται",
+     "οἱ",
+     "στρατιῶται"
+    ]
+   },
+   {
+    "prompt": "The old man appeared a wise judge to all in the assembly.",
+    "answer": "ὁ γέρων σοφὸς κριτὴς πᾶσι τοῖς ἐν τῇ ἐκκλησίᾳ ἐφαίνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "σοφὸς",
+     "κριτὴς",
+     "πᾶσι",
+     "τοῖς",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἐφαίνετο"
+    ]
+   },
+   {
+    "prompt": "Xenophon was chosen general by the soldiers.",
+    "answer": "ὁ Ξενοφῶν στρατηγὸς ὑπὸ τῶν στρατιωτῶν ᾑρέθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ξενοφῶν",
+     "στρατηγὸς",
+     "ὑπὸ",
+     "τῶν",
+     "στρατιωτῶν",
+     "ᾑρέθη"
+    ]
+   }
+  ]
+ }
+]
