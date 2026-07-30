@@ -1,7 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Text, useApp, useInput, useStdout } from "ink";
 import TextInput from "ink-text-input";
-import { layoutSection, positionLabel, previewWindow, scrolled } from "./pager.js";
+import {
+  layoutRichSection,
+  positionLabel,
+  previewRichWindow,
+  scrolled,
+  type RichLine,
+} from "./pager.js";
 import {
   attemptLines,
   questionBankLines,
@@ -167,11 +173,11 @@ export function App({ session, content, storage }: Props) {
   // Two panes can be reading: the drawer (the topic being drilled) and the
   // reader (the topic under the map cursor). Only one is on screen at a time.
   const drawerLines = useMemo(
-    () => layoutSection(section?.text ?? "", paneWidth, content.profile.grammar),
+    () => layoutRichSection(section?.text ?? "", paneWidth, content.profile.grammar),
     [section?.text, paneWidth],
   );
   const readerLines = useMemo(
-    () => layoutSection(mapSection?.text ?? "", paneWidth, content.profile.grammar),
+    () => layoutRichSection(mapSection?.text ?? "", paneWidth, content.profile.grammar),
     [mapSection?.text, paneWidth],
   );
   // The map's taste of the section under the cursor: the same window for every
@@ -180,7 +186,8 @@ export function App({ session, content, storage }: Props) {
   // rather than a map that runs off the screen.
   const previewLines = Math.max(2, Math.min(PREVIEW_LINES, rows - MAP_CHROME_LINES));
   const mapPreview = useMemo(
-    () => previewWindow(mapSection?.text ?? "", paneWidth, previewLines, content.profile.grammar),
+    () =>
+      previewRichWindow(mapSection?.text ?? "", paneWidth, previewLines, content.profile.grammar),
     [mapSection?.text, paneWidth, previewLines],
   );
 
@@ -1325,7 +1332,7 @@ function GrammarMap({
   overall: number;
   topic: TopicProgress;
   /** The same count of pre-wrapped lines for every topic, and whether more follows. */
-  preview: { lines: string[]; truncated: boolean };
+  preview: { lines: RichLine[]; truncated: boolean };
 }) {
   // Locate the cursor: which family it falls in, and where inside that family.
   let offset = 0;
@@ -1390,12 +1397,31 @@ function GrammarMap({
           amount of its section, and the box below does not shift as the cursor
           moves. `g` opens the whole section in the reader. */}
       {preview.lines.map((line, i) => (
-        <Text key={i}>{line === "" ? " " : line}</Text>
+        <Text key={i}>{line.length === 0 ? " " : <Styled line={line} />}</Text>
       ))}
       <Text dimColor>
         {preview.truncated ? `press g to read § ${topic.ref} in full` : `all of § ${topic.ref}`}
       </Text>
     </Box>
+  );
+}
+
+/**
+ * One laid-out line, with the emphasis the grammar set it in.
+ *
+ * Bennett bolds the *ending* inside each form and italicises the English
+ * gloss; a terminal can show both, and without them a paradigm is a list of
+ * words with nothing marking which part is the lesson.
+ */
+function Styled({ line }: { line: RichLine }) {
+  return (
+    <>
+      {line.map((run, i) => (
+        <Text key={i} bold={run.b} italic={run.i}>
+          {run.text}
+        </Text>
+      ))}
+    </>
   );
 }
 
@@ -1411,7 +1437,7 @@ function GrammarPane({
   refLabel,
   title,
 }: {
-  lines: string[];
+  lines: RichLine[];
   scroll: number;
   height: number;
   refLabel: string;
@@ -1427,7 +1453,7 @@ function GrammarPane({
       </Text>
       {/* Pre-wrapped: one entry per screen line, so the count drives scrolling. */}
       {visible.map((line, i) => (
-        <Text key={scroll + i}>{line === "" ? " " : line}</Text>
+        <Text key={scroll + i}>{line.length === 0 ? " " : <Styled line={line} />}</Text>
       ))}
       {more && (
         <Text dimColor>
