@@ -1,0 +1,332 @@
+[
+ {
+  "id": "bn-313-indirect-discourse-oratio-obliqua-t1",
+  "sectionId": "bn-313-indirect-discourse-oratio-obliqua",
+  "questions": [
+   {
+    "prompt": "The general reported that the enemy had abandoned the camp.",
+    "answer": "Dux nūntiāvit hostēs castra relīquisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "nūntiāvit",
+     "hostēs",
+     "castra",
+     "relīquisse"
+    ]
+   },
+   {
+    "prompt": "The philosopher taught that the soul is immortal.",
+    "answer": "Philosophus docuit animam immortālem esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Philosophus",
+     "docuit",
+     "animam",
+     "immortālem",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "We believe that virtue is always praised.",
+    "answer": "Crēdimus virtūtem semper laudārī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crēdimus",
+     "virtūtem",
+     "semper",
+     "laudārī"
+    ]
+   },
+   {
+    "prompt": "The messenger announced that the city had been captured.",
+    "answer": "Nūntius urbem captam esse renūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntius",
+     "urbem",
+     "captam",
+     "esse",
+     "renūntiāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-313-indirect-discourse-oratio-obliqua-t2",
+  "sectionId": "bn-313-indirect-discourse-oratio-obliqua",
+  "questions": [
+   {
+    "prompt": "The old man said that his sons had returned home.",
+    "answer": "Senex fīliōs suōs domum revēnisse dīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "fīliōs",
+     "suōs",
+     "domum",
+     "revēnisse",
+     "dīxit"
+    ]
+   },
+   {
+    "prompt": "The consul thought that peace could not be preserved.",
+    "answer": "Cōnsul pācem servārī nōn posse putāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "pācem",
+     "servārī",
+     "nōn",
+     "posse",
+     "putāvit"
+    ]
+   },
+   {
+    "prompt": "They deny that the gods neglect human affairs.",
+    "answer": "Negant deōs rēs hūmānās neglegere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Negant",
+     "deōs",
+     "rēs",
+     "hūmānās",
+     "neglegere"
+    ]
+   },
+   {
+    "prompt": "I know that you have written many letters.",
+    "answer": "Sciō tē multās litterās scrīpsisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sciō",
+     "tē",
+     "multās",
+     "litterās",
+     "scrīpsisse"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-313-indirect-discourse-oratio-obliqua-t3",
+  "sectionId": "bn-313-indirect-discourse-oratio-obliqua",
+  "questions": [
+   {
+    "prompt": "The witness swore that he had seen nothing.",
+    "answer": "Testis sē nihil vīdisse iūrāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Testis",
+     "sē",
+     "nihil",
+     "vīdisse",
+     "iūrāvit"
+    ]
+   },
+   {
+    "prompt": "The poet sang that Troy had fallen through treachery.",
+    "answer": "Poēta Trōiam dolō cecidisse cecinit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poēta",
+     "Trōiam",
+     "dolō",
+     "cecidisse",
+     "cecinit"
+    ]
+   },
+   {
+    "prompt": "We hope that our friends will come soon.",
+    "answer": "Spērāmus amīcōs nostrōs mox ventūrōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Spērāmus",
+     "amīcōs",
+     "nostrōs",
+     "mox",
+     "ventūrōs",
+     "esse"
+    ]
+   },
+   {
+    "prompt": "The teacher showed that the boys had learned nothing.",
+    "answer": "Magister puerōs nihil didicisse ostendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magister",
+     "puerōs",
+     "nihil",
+     "didicisse",
+     "ostendit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-313-indirect-discourse-oratio-obliqua-t4",
+  "sectionId": "bn-313-indirect-discourse-oratio-obliqua",
+  "questions": [
+   {
+    "prompt": "The scout reported that the bridge had been destroyed by the river.",
+    "answer": "Explōrātor pontem flūmine dēlētum esse nūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Explōrātor",
+     "pontem",
+     "flūmine",
+     "dēlētum",
+     "esse",
+     "nūntiāvit"
+    ]
+   },
+   {
+    "prompt": "Everyone believes that fortune favors the brave.",
+    "answer": "Omnēs crēdunt fortūnam fortibus favēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnēs",
+     "crēdunt",
+     "fortūnam",
+     "fortibus",
+     "favēre"
+    ]
+   },
+   {
+    "prompt": "The king promised that he would give great rewards.",
+    "answer": "Rēx sē magna praemia datūrum esse pollicitus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "sē",
+     "magna",
+     "praemia",
+     "datūrum",
+     "esse",
+     "pollicitus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "The merchants said that a storm was approaching.",
+    "answer": "Mercātōrēs tempestātem appropinquāre dīxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mercātōrēs",
+     "tempestātem",
+     "appropinquāre",
+     "dīxērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-313-indirect-discourse-oratio-obliqua-t5",
+  "sectionId": "bn-313-indirect-discourse-oratio-obliqua",
+  "questions": [
+   {
+    "prompt": "The historian wrote that Caesar had crossed the Rubicon.",
+    "answer": "Historicus Caesarem Rubicōnem trānsīsse scrīpsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Historicus",
+     "Caesarem",
+     "Rubicōnem",
+     "trānsīsse",
+     "scrīpsit"
+    ]
+   },
+   {
+    "prompt": "The doctor said that the wound could be healed quickly.",
+    "answer": "Medicus vulnus celeriter sānārī posse dīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Medicus",
+     "vulnus",
+     "celeriter",
+     "sānārī",
+     "posse",
+     "dīxit"
+    ]
+   },
+   {
+    "prompt": "I feel that winter is now at hand.",
+    "answer": "Sentiō hiemem iam adesse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sentiō",
+     "hiemem",
+     "iam",
+     "adesse"
+    ]
+   },
+   {
+    "prompt": "The judge declared that the man was innocent.",
+    "answer": "Iūdex hominem innocentem esse prōnūntiāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūdex",
+     "hominem",
+     "innocentem",
+     "esse",
+     "prōnūntiāvit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-313-indirect-discourse-oratio-obliqua-t6",
+  "sectionId": "bn-313-indirect-discourse-oratio-obliqua",
+  "questions": [
+   {
+    "prompt": "The farmer complained that the harvest had been ruined by rain.",
+    "answer": "Agricola messem imbre corruptam esse questus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agricola",
+     "messem",
+     "imbre",
+     "corruptam",
+     "esse",
+     "questus",
+     "est"
+    ]
+   },
+   {
+    "prompt": "We understand that all men desire glory.",
+    "answer": "Intellegimus omnēs hominēs glōriam cupere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Intellegimus",
+     "omnēs",
+     "hominēs",
+     "glōriam",
+     "cupere"
+    ]
+   },
+   {
+    "prompt": "The ambassadors announced that the war had been finished.",
+    "answer": "Lēgātī bellum cōnfectum esse nūntiāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lēgātī",
+     "bellum",
+     "cōnfectum",
+     "esse",
+     "nūntiāvērunt"
+    ]
+   },
+   {
+    "prompt": "You perceive that the times have changed.",
+    "answer": "Vidēs tempora mūtāta esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vidēs",
+     "tempora",
+     "mūtāta",
+     "esse"
+    ]
+   }
+  ]
+ }
+]
