@@ -4,71 +4,68 @@
   "sectionId": "sm-257-stems-in-a-dental-t-d-th",
   "questions": [
    {
-    "prompt": "The soldiers, having thrown away their shields, fled from the battle.",
-    "answer": "οἱ στρατιῶται τὰς ἀσπίδας ῥίψαντες ἐκ τῆς μάχης ἔφυγον.",
+    "prompt": "The hoplites, though hard pressed by the enemy, did not throw away their shields.",
+    "answer": "οἱ ὁπλῖται καίπερ ὑπὸ τῶν πολεμίων πιεζόμενοι τὰς ἀσπίδας οὐκ ἀπέβαλον.",
     "kind": "translate-en-grc",
     "vocab": [
      "οἱ",
-     "στρατιῶται",
+     "ὁπλῖται",
+     "καίπερ",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "πιεζόμενοι",
      "τὰς",
      "ἀσπίδας",
-     "ῥίψαντες",
-     "ἐκ",
+     "οὐκ",
+     "ἀπέβαλον"
+    ]
+   },
+   {
+    "prompt": "We shall never forget the gratitude which we owe to our fatherland.",
+    "answer": "οὐδέποτε τῆς χάριτος ἐπιλησόμεθα ἣν τῇ πατρίδι ὀφείλομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέποτε",
      "τῆς",
-     "μάχης",
-     "ἔφυγον"
+     "χάριτος",
+     "ἐπιλησόμεθα",
+     "ἣν",
+     "τῇ",
+     "πατρίδι",
+     "ὀφείλομεν"
     ]
    },
    {
-    "prompt": "We owe great thanks to the gods who saved the fatherland.",
-    "answer": "μεγάλην χάριν τοῖς θεοῖς ὀφείλομεν οἳ τὴν πατρίδα ἔσωσαν.",
+    "prompt": "The old men, having lost all hope, surrendered the city to the enemy.",
+    "answer": "οἱ γέροντες πᾶσαν τὴν ἐλπίδα ἀποβαλόντες τὴν πόλιν τοῖς πολεμίοις παρέδοσαν.",
     "kind": "translate-en-grc",
     "vocab": [
-     "μεγάλην",
-     "χάριν",
-     "τοῖς",
-     "θεοῖς",
-     "ὀφείλομεν",
-     "οἳ",
-     "τὴν",
-     "πατρίδα",
-     "ἔσωσαν"
-    ]
-   },
-   {
-    "prompt": "When the citizens had lost hope, the general nevertheless did not cease from the war.",
-    "answer": "ἐπεὶ οἱ πολῖται τὴν ἐλπίδα ἀπέβαλον, ὁ στρατηγὸς ὅμως τοῦ πολέμου οὐκ ἐπαύσατο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐπεὶ",
      "οἱ",
-     "πολῖται",
+     "γέροντες",
+     "πᾶσαν",
      "τὴν",
      "ἐλπίδα",
-     "ἀπέβαλον",
-     "ὁ",
-     "στρατηγὸς",
-     "ὅμως",
-     "τοῦ",
-     "πολέμου",
-     "οὐκ",
-     "ἐπαύσατο"
+     "ἀποβαλόντες",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "παρέδοσαν"
     ]
    },
    {
-    "prompt": "The exiles, having put on their helmets, fought on behalf of the fatherland.",
-    "answer": "οἱ φυγάδες τὰς κόρυθας περιθέμενοι ὑπὲρ τῆς πατρίδος ἐμάχοντο.",
+    "prompt": "Strife arose among the allies concerning the leadership.",
+    "answer": "ἔρις ἐν τοῖς συμμάχοις περὶ τῆς ἡγεμονίας ἐγένετο.",
     "kind": "translate-en-grc",
     "vocab": [
-     "οἱ",
-     "φυγάδες",
-     "τὰς",
-     "κόρυθας",
-     "περιθέμενοι",
-     "ὑπὲρ",
+     "ἔρις",
+     "ἐν",
+     "τοῖς",
+     "συμμάχοις",
+     "περὶ",
      "τῆς",
-     "πατρίδος",
-     "ἐμάχοντο"
+     "ἡγεμονίας",
+     "ἐγένετο"
     ]
    }
   ]
@@ -78,69 +75,69 @@
   "sectionId": "sm-257-stems-in-a-dental-t-d-th",
   "questions": [
    {
-    "prompt": "The old man, sitting beside the road, was telling stories to the children.",
-    "answer": "ὁ γέρων παρὰ τῇ ὁδῷ καθήμενος τοῖς παισὶ μύθους διηγεῖτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "παρὰ",
-     "τῇ",
-     "ὁδῷ",
-     "καθήμενος",
-     "τοῖς",
-     "παισὶ",
-     "μύθους",
-     "διηγεῖτο"
-    ]
-   },
-   {
-    "prompt": "The lion, driven by hunger, seized an ox in the fields.",
-    "answer": "ὁ λέων ὑπὸ τοῦ λιμοῦ ἐλαυνόμενος βοῦν ἐν τοῖς ἀγροῖς ἥρπασεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "λέων",
-     "ὑπὸ",
-     "τοῦ",
-     "λιμοῦ",
-     "ἐλαυνόμενος",
-     "βοῦν",
-     "ἐν",
-     "τοῖς",
-     "ἀγροῖς",
-     "ἥρπασεν"
-    ]
-   },
-   {
-    "prompt": "The poets say that the giants once fought against the gods.",
-    "answer": "οἱ ποιηταὶ φασὶ τοὺς γίγαντας ποτὲ τοῖς θεοῖς μαχέσασθαι.",
+    "prompt": "The hunters, having killed the lion, carried its hide into the city.",
+    "answer": "οἱ θηρευταὶ τὸν λέοντα ἀποκτείναντες τὸ δέρμα εἰς τὴν πόλιν ἐκόμισαν.",
     "kind": "translate-en-grc",
     "vocab": [
      "οἱ",
-     "ποιηταὶ",
-     "φασὶ",
+     "θηρευταὶ",
+     "τὸν",
+     "λέοντα",
+     "ἀποκτείναντες",
+     "τὸ",
+     "δέρμα",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "ἐκόμισαν"
+    ]
+   },
+   {
+    "prompt": "It is said that the giants once set mountains upon mountains.",
+    "answer": "λέγεται τοὺς γίγαντας ποτὲ ὄρη ἐπὶ ὄρη θεῖναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγεται",
      "τοὺς",
      "γίγαντας",
      "ποτὲ",
-     "τοῖς",
-     "θεοῖς",
-     "μαχέσασθαι"
+     "ὄρη",
+     "ἐπὶ",
+     "θεῖναι"
     ]
    },
    {
-    "prompt": "The elephants of the barbarians frightened the horses of the Greeks.",
-    "answer": "οἱ τῶν βαρβάρων ἐλέφαντες τοὺς τῶν Ἑλλήνων ἵππους ἐφόβησαν.",
+    "prompt": "The elephants, terrified by the fire, trampled their own soldiers.",
+    "answer": "οἱ ἐλέφαντες ὑπὸ τοῦ πυρὸς φοβηθέντες τοὺς ἑαυτῶν στρατιώτας κατεπάτησαν.",
     "kind": "translate-en-grc",
     "vocab": [
      "οἱ",
-     "τῶν",
-     "βαρβάρων",
      "ἐλέφαντες",
+     "ὑπὸ",
+     "τοῦ",
+     "πυρὸς",
+     "φοβηθέντες",
      "τοὺς",
-     "Ἑλλήνων",
-     "ἵππους",
-     "ἐφόβησαν"
+     "ἑαυτῶν",
+     "στρατιώτας",
+     "κατεπάτησαν"
+    ]
+   },
+   {
+    "prompt": "The child, suffering because of a tooth, was weeping the whole night.",
+    "answer": "ὁ παῖς διὰ τὸν ὀδόντα ἀλγῶν ὅλην τὴν νύκτα ἔκλαιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "διὰ",
+     "τὸν",
+     "ὀδόντα",
+     "ἀλγῶν",
+     "ὅλην",
+     "τὴν",
+     "νύκτα",
+     "ἔκλαιεν"
     ]
    }
   ]
@@ -150,68 +147,71 @@
   "sectionId": "sm-257-stems-in-a-dental-t-d-th",
   "questions": [
    {
-    "prompt": "The birds flying over the sea signal the storm to the sailors.",
-    "answer": "οἱ ὄρνιθες ὑπὲρ τὴν θάλατταν πετόμενοι τὸν χειμῶνα τοῖς ναύταις σημαίνουσιν.",
+    "prompt": "The slaves, wearing beautiful clothing, were serving the guests at the feast.",
+    "answer": "οἱ δοῦλοι καλὴν ἐσθῆτα φοροῦντες τοῖς ξένοις ἐν τῇ ἑορτῇ διηκόνουν.",
     "kind": "translate-en-grc",
     "vocab": [
      "οἱ",
-     "ὄρνιθες",
-     "ὑπὲρ",
-     "τὴν",
-     "θάλατταν",
-     "πετόμενοι",
-     "τὸν",
-     "χειμῶνα",
+     "δοῦλοι",
+     "καλὴν",
+     "ἐσθῆτα",
+     "φοροῦντες",
      "τοῖς",
-     "ναύταις",
-     "σημαίνουσιν"
+     "ξένοις",
+     "ἐν",
+     "τῇ",
+     "ἑορτῇ",
+     "διηκόνουν"
     ]
    },
    {
-    "prompt": "The wolf, having opened its mouth, showed its terrible teeth.",
-    "answer": "ὁ λύκος τὸ στόμα ἀνοίξας τοὺς δεινοὺς ὀδόντας ἔδειξεν.",
+    "prompt": "Everyone's laughter grieved the young man who had stumbled.",
+    "answer": "ὁ πάντων γέλως τὸν νεανίαν τὸν πταίσαντα ἐλύπησεν.",
     "kind": "translate-en-grc",
     "vocab": [
      "ὁ",
-     "λύκος",
-     "τὸ",
-     "στόμα",
-     "ἀνοίξας",
-     "τοὺς",
-     "δεινοὺς",
-     "ὀδόντας",
-     "ἔδειξεν"
-    ]
-   },
-   {
-    "prompt": "The laughter of the children filled the whole house with joy.",
-    "answer": "ὁ τῶν παίδων γέλως τὴν οἰκίαν πᾶσαν χαρᾶς ἐνέπλησεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "τῶν",
-     "παίδων",
+     "πάντων",
      "γέλως",
-     "τὴν",
-     "οἰκίαν",
-     "πᾶσαν",
-     "χαρᾶς",
-     "ἐνέπλησεν"
+     "τὸν",
+     "νεανίαν",
+     "πταίσαντα",
+     "ἐλύπησεν"
     ]
    },
    {
-    "prompt": "Strife fell upon the citizens concerning the safety of the city.",
-    "answer": "ἔρις τοῖς πολίταις περὶ τῆς σωτηρίας τῆς πόλεως ἐνέπεσεν.",
+    "prompt": "The soldiers, wiping the sweat from their faces, sat down beneath the tree.",
+    "answer": "οἱ στρατιῶται τὸν ἱδρῶτα ἀπὸ τῶν προσώπων ἀπομάττοντες ὑπὸ τῷ δένδρῳ ἐκαθέζοντο.",
     "kind": "translate-en-grc",
     "vocab": [
-     "ἔρις",
-     "τοῖς",
-     "πολίταις",
-     "περὶ",
-     "τῆς",
-     "σωτηρίας",
-     "πόλεως",
-     "ἐνέπεσεν"
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "ἱδρῶτα",
+     "ἀπὸ",
+     "τῶν",
+     "προσώπων",
+     "ἀπομάττοντες",
+     "ὑπὸ",
+     "τῷ",
+     "δένδρῳ",
+     "ἐκαθέζοντο"
+    ]
+   },
+   {
+    "prompt": "The general ordered the soldiers to put their helmets upon their heads.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας τὰς κόρυθας ταῖς κεφαλαῖς ἐπιθέσθαι ἐκέλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "τὰς",
+     "κόρυθας",
+     "ταῖς",
+     "κεφαλαῖς",
+     "ἐπιθέσθαι",
+     "ἐκέλευσεν"
     ]
    }
   ]
@@ -221,74 +221,68 @@
   "sectionId": "sm-257-stems-in-a-dental-t-d-th",
   "questions": [
    {
-    "prompt": "The old man, wearing shabby clothing, was asking a certain favor from the citizens.",
-    "answer": "ὁ γέρων φαύλην ἐσθῆτα φορῶν χάριν τινὰ παρὰ τῶν πολιτῶν ᾔτει.",
+    "prompt": "The birds, singing at dawn, wake the farmers from sleep.",
+    "answer": "οἱ ὄρνιθες ἅμα τῇ ἕῳ ᾄδοντες τοὺς γεωργοὺς ἐξ ὕπνου ἐγείρουσιν.",
     "kind": "translate-en-grc",
     "vocab": [
-     "ὁ",
-     "γέρων",
-     "φαύλην",
-     "ἐσθῆτα",
-     "φορῶν",
-     "χάριν",
-     "τινὰ",
-     "παρὰ",
-     "τῶν",
-     "πολιτῶν",
-     "ᾔτει"
-    ]
-   },
-   {
-    "prompt": "Wounded in the foot, the soldier could no longer follow the army.",
-    "answer": "τὸν πόδα τετρωμένος ὁ στρατιώτης οὐκέτι τῷ στρατεύματι ἕπεσθαι ἐδύνατο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸν",
-     "πόδα",
-     "τετρωμένος",
-     "ὁ",
-     "στρατιώτης",
-     "οὐκέτι",
-     "τῷ",
-     "στρατεύματι",
-     "ἕπεσθαι",
-     "ἐδύνατο"
-    ]
-   },
-   {
-    "prompt": "We have good hope that the gods will grant pardon to the suppliants.",
-    "answer": "ἀγαθὴν ἐλπίδα ἔχομεν ὅτι οἱ θεοὶ τοῖς ἱκέταις συγγνώμην δώσουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀγαθὴν",
-     "ἐλπίδα",
-     "ἔχομεν",
-     "ὅτι",
      "οἱ",
-     "θεοὶ",
-     "τοῖς",
-     "ἱκέταις",
-     "συγγνώμην",
-     "δώσουσιν"
+     "ὄρνιθες",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "ᾄδοντες",
+     "τοὺς",
+     "γεωργοὺς",
+     "ἐξ",
+     "ὕπνου",
+     "ἐγείρουσιν"
     ]
    },
    {
-    "prompt": "The runner, swift of foot, won the crown at the games.",
-    "answer": "ὁ δρομεὺς ταχὺς τοὺς πόδας ὢν τὸν στέφανον ἐν τοῖς ἀγῶσιν ἔλαβεν.",
+    "prompt": "Concern for his children did not allow the old man to rest.",
+    "answer": "ἡ τῶν παίδων φροντὶς τὸν γέροντα ἀναπαύεσθαι οὐκ εἴα.",
     "kind": "translate-en-grc",
     "vocab": [
-     "ὁ",
-     "δρομεὺς",
-     "ταχὺς",
-     "τοὺς",
-     "πόδας",
-     "ὢν",
+     "ἡ",
+     "τῶν",
+     "παίδων",
+     "φροντὶς",
      "τὸν",
-     "στέφανον",
-     "ἐν",
+     "γέροντα",
+     "ἀναπαύεσθαι",
+     "οὐκ",
+     "εἴα"
+    ]
+   },
+   {
+    "prompt": "The messengers signaled the victory to the citizens with torches.",
+    "answer": "οἱ ἄγγελοι τὴν νίκην τοῖς πολίταις λαμπάσιν ἐσήμηναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "τὴν",
+     "νίκην",
      "τοῖς",
-     "ἀγῶσιν",
-     "ἔλαβεν"
+     "πολίταις",
+     "λαμπάσιν",
+     "ἐσήμηναν"
+    ]
+   },
+   {
+    "prompt": "The exiles, longing for their fatherland, sent messengers to the assembly.",
+    "answer": "οἱ φυγάδες τὴν πατρίδα ποθοῦντες ἀγγέλους πρὸς τὴν ἐκκλησίαν ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "τὴν",
+     "πατρίδα",
+     "ποθοῦντες",
+     "ἀγγέλους",
+     "πρὸς",
+     "ἐκκλησίαν",
+     "ἔπεμψαν"
     ]
    }
   ]
@@ -298,65 +292,62 @@
   "sectionId": "sm-257-stems-in-a-dental-t-d-th",
   "questions": [
    {
-    "prompt": "The merchant ships, laden with grain, were sailing toward the harbor.",
-    "answer": "αἱ ὁλκάδες σίτου γέμουσαι πρὸς τὸν λιμένα ἔπλεον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "ὁλκάδες",
-     "σίτου",
-     "γέμουσαι",
-     "πρὸς",
-     "τὸν",
-     "λιμένα",
-     "ἔπλεον"
-    ]
-   },
-   {
-    "prompt": "By night the guards were carrying torches around the walls.",
-    "answer": "νυκτὸς οἱ φύλακες λαμπάδας περὶ τὰ τείχη ἔφερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "νυκτὸς",
-     "οἱ",
-     "φύλακες",
-     "λαμπάδας",
-     "περὶ",
-     "τὰ",
-     "τείχη",
-     "ἔφερον"
-    ]
-   },
-   {
-    "prompt": "Care for the city does not allow the good ruler to sleep.",
-    "answer": "ἡ τῆς πόλεως φροντὶς τὸν ἀγαθὸν ἄρχοντα καθεύδειν οὐκ ἐᾷ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "τῆς",
-     "πόλεως",
-     "φροντὶς",
-     "τὸν",
-     "ἀγαθὸν",
-     "ἄρχοντα",
-     "καθεύδειν",
-     "οὐκ",
-     "ἐᾷ"
-    ]
-   },
-   {
-    "prompt": "The citizens, having hated the tyranny, drove out the tyrant.",
-    "answer": "οἱ πολῖται τὴν τυραννίδα μισήσαντες τὸν τύραννον ἐξήλασαν.",
+    "prompt": "The Greeks marveled at the pyramids of the Egyptians.",
+    "answer": "οἱ Ἕλληνες τὰς τῶν Αἰγυπτίων πυραμίδας ἐθαύμαζον.",
     "kind": "translate-en-grc",
     "vocab": [
      "οἱ",
-     "πολῖται",
+     "Ἕλληνες",
+     "τὰς",
+     "τῶν",
+     "Αἰγυπτίων",
+     "πυραμίδας",
+     "ἐθαύμαζον"
+    ]
+   },
+   {
+    "prompt": "Having freed Hellas from tyranny, they were honored by all.",
+    "answer": "τὴν Ἑλλάδα τῆς τυραννίδος ἐλευθερώσαντες ὑπὸ πάντων ἐτιμῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
      "τὴν",
-     "τυραννίδα",
-     "μισήσαντες",
-     "τὸν",
-     "τύραννον",
-     "ἐξήλασαν"
+     "Ἑλλάδα",
+     "τῆς",
+     "τυραννίδος",
+     "ἐλευθερώσαντες",
+     "ὑπὸ",
+     "πάντων",
+     "ἐτιμῶντο"
+    ]
+   },
+   {
+    "prompt": "The young man, struck on the shield by a spear, did not fall.",
+    "answer": "ὁ νεανίας τὴν ἀσπίδα δόρατι πληγεὶς οὐκ ἔπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "τὴν",
+     "ἀσπίδα",
+     "δόρατι",
+     "πληγεὶς",
+     "οὐκ",
+     "ἔπεσεν"
+    ]
+   },
+   {
+    "prompt": "We are grateful to the gods for the freedom of Hellas.",
+    "answer": "χάριν τοῖς θεοῖς ὑπὲρ τῆς ἐλευθερίας τῆς Ἑλλάδος ἔχομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χάριν",
+     "τοῖς",
+     "θεοῖς",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "Ἑλλάδος",
+     "ἔχομεν"
     ]
    }
   ]
@@ -366,72 +357,427 @@
   "sectionId": "sm-257-stems-in-a-dental-t-d-th",
   "questions": [
    {
-    "prompt": "The seer, having examined the birds, proclaimed the oracle to the general.",
-    "answer": "ὁ μάντις τοὺς ὄρνιθας σκεψάμενος τὸν χρησμὸν τῷ στρατηγῷ προηγόρευσεν.",
+    "prompt": "Whenever night comes, the guards kindle the watch-fires.",
+    "answer": "ὁπόταν νὺξ γένηται, οἱ φύλακες τὰ πυρὰ ἅπτουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "νὺξ",
+     "γένηται",
+     "οἱ",
+     "φύλακες",
+     "τὰ",
+     "πυρὰ",
+     "ἅπτουσιν"
+    ]
+   },
+   {
+    "prompt": "Love of honor persuades the young to endure many toils.",
+    "answer": "ὁ τῆς τιμῆς ἔρως τοὺς νέους πείθει πολλοὺς πόνους ὑπομένειν.",
     "kind": "translate-en-grc",
     "vocab": [
      "ὁ",
-     "μάντις",
+     "τῆς",
+     "τιμῆς",
+     "ἔρως",
      "τοὺς",
-     "ὄρνιθας",
-     "σκεψάμενος",
-     "τὸν",
-     "χρησμὸν",
-     "τῷ",
-     "στρατηγῷ",
-     "προηγόρευσεν"
+     "νέους",
+     "πείθει",
+     "πολλοὺς",
+     "πόνους",
+     "ὑπομένειν"
     ]
    },
    {
-    "prompt": "We pity the old man, since he has lost all his hope.",
-    "answer": "τὸν γέροντα οἰκτείρομεν, ἐπεὶ πᾶσαν τὴν ἐλπίδα ἀπολώλεκεν.",
+    "prompt": "The laborers, worn out by toil, asked the master for their wages.",
+    "answer": "οἱ θῆτες ὑπὸ τοῦ πόνου κάμνοντες τὸν δεσπότην τὸν μισθὸν ᾔτουν.",
     "kind": "translate-en-grc",
     "vocab": [
+     "οἱ",
+     "θῆτες",
+     "ὑπὸ",
+     "τοῦ",
+     "πόνου",
+     "κάμνοντες",
      "τὸν",
-     "γέροντα",
-     "οἰκτείρομεν",
-     "ἐπεὶ",
-     "πᾶσαν",
-     "τὴν",
-     "ἐλπίδα",
-     "ἀπολώλεκεν"
+     "δεσπότην",
+     "μισθὸν",
+     "ᾔτουν"
     ]
    },
    {
-    "prompt": "The people, angered at the insolence of the giants, praised the courage of Heracles.",
-    "answer": "ὁ δῆμος τῇ τῶν γιγάντων ὕβρει ὀργισθεὶς τὴν τοῦ Ἡρακλέους ἀρετὴν ἐνεκωμίαζεν.",
+    "prompt": "The old man showed the boy the lion's teeth.",
+    "answer": "ὁ γέρων τῷ παιδὶ τοὺς τοῦ λέοντος ὀδόντας ἔδειξεν.",
     "kind": "translate-en-grc",
     "vocab": [
      "ὁ",
-     "δῆμος",
+     "γέρων",
+     "τῷ",
+     "παιδὶ",
+     "τοὺς",
+     "τοῦ",
+     "λέοντος",
+     "ὀδόντας",
+     "ἔδειξεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-257-stems-in-a-dental-t-d-th-t7",
+  "sectionId": "sm-257-stems-in-a-dental-t-d-th",
+  "questions": [
+   {
+    "prompt": "The serpent, hiding beneath the rocks, was guarding the golden apples.",
+    "answer": "ὁ δράκων ὑπὸ ταῖς πέτραις κρυπτόμενος τὰ χρύσεα μῆλα ἐφύλαττεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δράκων",
+     "ὑπὸ",
+     "ταῖς",
+     "πέτραις",
+     "κρυπτόμενος",
+     "τὰ",
+     "χρύσεα",
+     "μῆλα",
+     "ἐφύλαττεν"
+    ]
+   },
+   {
+    "prompt": "Since the night was long, the guards did not put down their shields.",
+    "answer": "μακρᾶς οὔσης τῆς νυκτὸς οἱ φύλακες τὰς ἀσπίδας οὐ κατέθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μακρᾶς",
+     "οὔσης",
+     "τῆς",
+     "νυκτὸς",
+     "οἱ",
+     "φύλακες",
+     "τὰς",
+     "ἀσπίδας",
+     "οὐ",
+     "κατέθεντο"
+    ]
+   },
+   {
+    "prompt": "The neighbors, envying the rich man, stirred up strife in the village.",
+    "answer": "οἱ γείτονες τῷ πλουσίῳ φθονοῦντες ἔριν ἐν τῇ κώμῃ ἤγειραν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γείτονες",
+     "τῷ",
+     "πλουσίῳ",
+     "φθονοῦντες",
+     "ἔριν",
+     "ἐν",
      "τῇ",
+     "κώμῃ",
+     "ἤγειραν"
+    ]
+   },
+   {
+    "prompt": "We ought to render thanks to those who die on behalf of their fatherland.",
+    "answer": "δεῖ ἡμᾶς χάριν ἀποδιδόναι τοῖς ὑπὲρ τῆς πατρίδος ἀποθνῄσκουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "ἡμᾶς",
+     "χάριν",
+     "ἀποδιδόναι",
+     "τοῖς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-257-stems-in-a-dental-t-d-th-t8",
+  "sectionId": "sm-257-stems-in-a-dental-t-d-th",
+  "questions": [
+   {
+    "prompt": "The old man, holding a torch, led the strangers through the darkness.",
+    "answer": "ὁ γέρων λαμπάδα ἔχων τοὺς ξένους διὰ τοῦ σκότους ἦγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "λαμπάδα",
+     "ἔχων",
+     "τοὺς",
+     "ξένους",
+     "διὰ",
+     "τοῦ",
+     "σκότους",
+     "ἦγεν"
+    ]
+   },
+   {
+    "prompt": "The lions, driven out of the plain, fled toward the mountains.",
+    "answer": "οἱ λέοντες ἐκ τοῦ πεδίου ἐξελαθέντες πρὸς τὰ ὄρη ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "λέοντες",
+     "ἐκ",
+     "τοῦ",
+     "πεδίου",
+     "ἐξελαθέντες",
+     "πρὸς",
+     "τὰ",
+     "ὄρη",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The tyranny of the few is more hateful than that of one man.",
+    "answer": "ἡ τῶν ὀλίγων τυραννὶς ἐχθίων ἐστὶν ἢ ἡ τοῦ ἑνός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "ὀλίγων",
+     "τυραννὶς",
+     "ἐχθίων",
+     "ἐστὶν",
+     "ἢ",
+     "τοῦ",
+     "ἑνός"
+    ]
+   },
+   {
+    "prompt": "The sweat poured down from the wrestler's skin.",
+    "answer": "ὁ ἱδρὼς ἀπὸ τοῦ χρωτὸς τοῦ παλαιστοῦ κατέρρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱδρὼς",
+     "ἀπὸ",
+     "τοῦ",
+     "χρωτὸς",
+     "παλαιστοῦ",
+     "κατέρρει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-257-stems-in-a-dental-t-d-th-t9",
+  "sectionId": "sm-257-stems-in-a-dental-t-d-th",
+  "questions": [
+   {
+    "prompt": "The child, frightened by the giant, hid behind his mother.",
+    "answer": "ὁ παῖς ὑπὸ τοῦ γίγαντος φοβηθεὶς ὄπισθεν τῆς μητρὸς ἐκρύπτετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "ὑπὸ",
+     "τοῦ",
+     "γίγαντος",
+     "φοβηθεὶς",
+     "ὄπισθεν",
+     "τῆς",
+     "μητρὸς",
+     "ἐκρύπτετο"
+    ]
+   },
+   {
+    "prompt": "Hope of freedom persuaded the exiles to take up their arms.",
+    "answer": "ἡ τῆς ἐλευθερίας ἐλπὶς τοὺς φυγάδας ἔπεισε τὰ ὅπλα λαβεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἐλπὶς",
+     "τοὺς",
+     "φυγάδας",
+     "ἔπεισε",
+     "τὰ",
+     "ὅπλα",
+     "λαβεῖν"
+    ]
+   },
+   {
+    "prompt": "The birds flew away before the hunter could stretch his bow.",
+    "answer": "οἱ ὄρνιθες ἀπέπτησαν πρὶν τὸν θηρευτὴν τὸ τόξον τεῖναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὄρνιθες",
+     "ἀπέπτησαν",
+     "πρὶν",
+     "τὸν",
+     "θηρευτὴν",
+     "τὸ",
+     "τόξον",
+     "τεῖναι"
+    ]
+   },
+   {
+    "prompt": "Those who fell fighting for their fatherland won undying gratitude.",
+    "answer": "οἱ ὑπὲρ τῆς πατρίδος μαχόμενοι πεσόντες ἀθάνατον χάριν ἐκτήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχόμενοι",
+     "πεσόντες",
+     "ἀθάνατον",
+     "χάριν",
+     "ἐκτήσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-257-stems-in-a-dental-t-d-th-t10",
+  "sectionId": "sm-257-stems-in-a-dental-t-d-th",
+  "questions": [
+   {
+    "prompt": "The soldiers threw the bodies of the giants down from the wall.",
+    "answer": "οἱ στρατιῶται τὰ τῶν γιγάντων σώματα ἀπὸ τοῦ τείχους κατέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
      "τῶν",
      "γιγάντων",
-     "ὕβρει",
-     "ὀργισθεὶς",
-     "τὴν",
+     "σώματα",
+     "ἀπὸ",
      "τοῦ",
-     "Ἡρακλέους",
-     "ἀρετὴν",
-     "ἐνεκωμίαζεν"
+     "τείχους",
+     "κατέβαλον"
     ]
    },
    {
-    "prompt": "Great favors bind friends to one another more than gifts do.",
-    "answer": "αἱ μεγάλαι χάριτες τοὺς φίλους ἀλλήλοις μᾶλλον ἢ τὰ δῶρα συνδέουσιν.",
+    "prompt": "Whenever the servant brought the key, he would open the gates at dawn.",
+    "answer": "ὁπότε ὁ θεράπων τὴν κλεῖδα λάβοι, τὰς πύλας ἅμα τῇ ἕῳ ἀνέῳγεν.",
     "kind": "translate-en-grc",
     "vocab": [
-     "αἱ",
-     "μεγάλαι",
-     "χάριτες",
+     "ὁπότε",
+     "ὁ",
+     "θεράπων",
+     "τὴν",
+     "κλεῖδα",
+     "λάβοι",
+     "τὰς",
+     "πύλας",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "ἀνέῳγεν"
+    ]
+   },
+   {
+    "prompt": "The orator's clever speech caused laughter among the jurors.",
+    "answer": "ὁ τοῦ ῥήτορος δεινὸς λόγος γέλωτα τοῖς δικασταῖς παρέσχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "ῥήτορος",
+     "δεινὸς",
+     "λόγος",
+     "γέλωτα",
+     "τοῖς",
+     "δικασταῖς",
+     "παρέσχεν"
+    ]
+   },
+   {
+    "prompt": "The helmet, struck by the stone, saved the soldier's head.",
+    "answer": "ἡ κόρυς ὑπὸ τοῦ λίθου πληγεῖσα τὴν τοῦ στρατιώτου κεφαλὴν ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "κόρυς",
+     "ὑπὸ",
+     "τοῦ",
+     "λίθου",
+     "πληγεῖσα",
+     "τὴν",
+     "στρατιώτου",
+     "κεφαλὴν",
+     "ἔσωσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-257-stems-in-a-dental-t-d-th-t11",
+  "sectionId": "sm-257-stems-in-a-dental-t-d-th",
+  "questions": [
+   {
+    "prompt": "The laborers who were building the wall received their wages from the general.",
+    "answer": "οἱ τὸ τεῖχος οἰκοδομοῦντες θῆτες τὸν μισθὸν παρὰ τοῦ στρατηγοῦ ἔλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὸ",
+     "τεῖχος",
+     "οἰκοδομοῦντες",
+     "θῆτες",
+     "τὸν",
+     "μισθὸν",
+     "παρὰ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἔλαβον"
+    ]
+   },
+   {
+    "prompt": "The tooth of the wild boar wounded the dog's foot.",
+    "answer": "ὁ τοῦ ἀγρίου συὸς ὀδοὺς τὸν τοῦ κυνὸς πόδα ἔτρωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "ἀγρίου",
+     "συὸς",
+     "ὀδοὺς",
+     "τὸν",
+     "κυνὸς",
+     "πόδα",
+     "ἔτρωσεν"
+    ]
+   },
+   {
+    "prompt": "The king sealed the letters with a golden seal.",
+    "answer": "ὁ βασιλεὺς τὰς ἐπιστολὰς χρυσέᾳ σφραγῖδι ἐσφράγισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τὰς",
+     "ἐπιστολὰς",
+     "χρυσέᾳ",
+     "σφραγῖδι",
+     "ἐσφράγισεν"
+    ]
+   },
+   {
+    "prompt": "The elephants of the Indians terrified the horses of the enemy.",
+    "answer": "οἱ τῶν Ἰνδῶν ἐλέφαντες τοὺς τῶν πολεμίων ἵππους ἐξέπληξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῶν",
+     "Ἰνδῶν",
+     "ἐλέφαντες",
      "τοὺς",
-     "φίλους",
-     "ἀλλήλοις",
-     "μᾶλλον",
-     "ἢ",
-     "τὰ",
-     "δῶρα",
-     "συνδέουσιν"
+     "πολεμίων",
+     "ἵππους",
+     "ἐξέπληξαν"
     ]
    }
   ]

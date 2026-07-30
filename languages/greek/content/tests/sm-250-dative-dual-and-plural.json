@@ -1,0 +1,680 @@
+[
+ {
+  "id": "sm-250-dative-dual-and-plural-t1",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "The lions fell upon the shepherds who were guarding the flocks.",
+    "answer": "οἱ λέοντες τοῖς τὰ ποίμνια φυλάττουσι ποιμέσιν ἐπέπεσον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "λέοντες",
+     "τοῖς",
+     "τὰ",
+     "ποίμνια",
+     "φυλάττουσι",
+     "ποιμέσιν",
+     "ἐπέπεσον"
+    ]
+   },
+   {
+    "prompt": "In the assembly the young men yielded to the old men.",
+    "answer": "οἱ νεανίαι ἐν τῇ ἐκκλησίᾳ τοῖς γέρουσιν ὑπεῖξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "τοῖς",
+     "γέρουσιν",
+     "ὑπεῖξαν"
+    ]
+   },
+   {
+    "prompt": "We always pray to the divinities who save the city.",
+    "answer": "ἀεὶ τοῖς δαίμοσιν οἳ τὴν πόλιν σῴζουσιν εὐχόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀεὶ",
+     "τοῖς",
+     "δαίμοσιν",
+     "οἳ",
+     "τὴν",
+     "πόλιν",
+     "σῴζουσιν",
+     "εὐχόμεθα"
+    ]
+   },
+   {
+    "prompt": "The citizens must obey the rulers of the city.",
+    "answer": "δεῖ τοὺς πολίτας τοῖς τῆς πόλεως ἄρχουσι πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "τοὺς",
+     "πολίτας",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "ἄρχουσι",
+     "πείθεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t2",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "The soldiers with their shields warded off the missiles of the barbarians.",
+    "answer": "οἱ στρατιῶται ταῖς ἀσπίσι τὰ τῶν βαρβάρων τοξεύματα ἠμύνοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ταῖς",
+     "ἀσπίσι",
+     "τὰ",
+     "τῶν",
+     "βαρβάρων",
+     "τοξεύματα",
+     "ἠμύνοντο"
+    ]
+   },
+   {
+    "prompt": "With torches the guards watched over the citadel throughout the nights.",
+    "answer": "οἱ φύλακες λαμπάσι τὰς νύκτας τὴν ἀκρόπολιν ἐφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "λαμπάσι",
+     "τὰς",
+     "νύκτας",
+     "τὴν",
+     "ἀκρόπολιν",
+     "ἐφύλαττον"
+    ]
+   },
+   {
+    "prompt": "Before the battle the general emboldened the soldiers with good hopes.",
+    "answer": "ὁ στρατηγὸς πρὸ τῆς μάχης τοὺς στρατιώτας ἀγαθαῖς ἐλπίσιν ἐθάρρυνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "τοὺς",
+     "στρατιώτας",
+     "ἀγαθαῖς",
+     "ἐλπίσιν",
+     "ἐθάρρυνεν"
+    ]
+   },
+   {
+    "prompt": "The citizens rendered thanks to the guards who had saved the city.",
+    "answer": "οἱ πολῖται τοῖς τὴν πόλιν σώσασι φύλαξι χάριν ἀπέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τοῖς",
+     "τὴν",
+     "πόλιν",
+     "σώσασι",
+     "φύλαξι",
+     "χάριν",
+     "ἀπέδοσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t3",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "Time brings many diseases upon mortal bodies.",
+    "answer": "ὁ χρόνος πολλὰς νόσους τοῖς θνητοῖς σώμασιν ἐπιφέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χρόνος",
+     "πολλὰς",
+     "νόσους",
+     "τοῖς",
+     "θνητοῖς",
+     "σώμασιν",
+     "ἐπιφέρει"
+    ]
+   },
+   {
+    "prompt": "The poet adorned the deeds of the ancestors with stately verses.",
+    "answer": "ὁ ποιητὴς τὰ τῶν προγόνων ἔργα σεμνοῖς ἔπεσιν ἐκόσμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιητὴς",
+     "τὰ",
+     "τῶν",
+     "προγόνων",
+     "ἔργα",
+     "σεμνοῖς",
+     "ἔπεσιν",
+     "ἐκόσμησεν"
+    ]
+   },
+   {
+    "prompt": "The Athenians trusted in their walls and in their ships.",
+    "answer": "οἱ Ἀθηναῖοι τοῖς τείχεσι καὶ ταῖς ναυσὶν ἐπίστευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τοῖς",
+     "τείχεσι",
+     "καὶ",
+     "ταῖς",
+     "ναυσὶν",
+     "ἐπίστευον"
+    ]
+   },
+   {
+    "prompt": "The gods grant good fortune to just cities.",
+    "answer": "οἱ θεοὶ ταῖς δικαίαις πόλεσιν ἀγαθὴν τύχην διδόασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "ταῖς",
+     "δικαίαις",
+     "πόλεσιν",
+     "ἀγαθὴν",
+     "τύχην",
+     "διδόασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t4",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "The gods gave many good things to men and to women.",
+    "answer": "οἱ θεοὶ πολλὰ ἀγαθὰ ἀνδράσι καὶ γυναιξὶν ἔδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "πολλὰ",
+     "ἀγαθὰ",
+     "ἀνδράσι",
+     "καὶ",
+     "γυναιξὶν",
+     "ἔδοσαν"
+    ]
+   },
+   {
+    "prompt": "The ambassadors announced the victory to the kings of the Persians.",
+    "answer": "οἱ πρέσβεις τοῖς τῶν Περσῶν βασιλεῦσι τὴν νίκην ἤγγειλαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "τοῖς",
+     "τῶν",
+     "Περσῶν",
+     "βασιλεῦσι",
+     "τὴν",
+     "νίκην",
+     "ἤγγειλαν"
+    ]
+   },
+   {
+    "prompt": "The children always used to obey their fathers and their mothers.",
+    "answer": "οἱ παῖδες τοῖς πατράσι καὶ ταῖς μητράσιν ἀεὶ ἐπείθοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τοῖς",
+     "πατράσι",
+     "καὶ",
+     "ταῖς",
+     "μητράσιν",
+     "ἀεὶ",
+     "ἐπείθοντο"
+    ]
+   },
+   {
+    "prompt": "With trumpets the general gave the signal to the horsemen.",
+    "answer": "ὁ στρατηγὸς σάλπιγξι τοῖς ἱππεῦσι τὸ σημεῖον ἐσήμηνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "σάλπιγξι",
+     "τοῖς",
+     "ἱππεῦσι",
+     "τὸ",
+     "σημεῖον",
+     "ἐσήμηνεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t5",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "The hunter with his dogs was driving the beasts out of the mountains.",
+    "answer": "ὁ θηρευτὴς τοῖς κυσὶ τοὺς θῆρας ἐκ τῶν ὀρῶν ἐξήλαυνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θηρευτὴς",
+     "τοῖς",
+     "κυσὶ",
+     "τοὺς",
+     "θῆρας",
+     "ἐκ",
+     "τῶν",
+     "ὀρῶν",
+     "ἐξήλαυνεν"
+    ]
+   },
+   {
+    "prompt": "The farmer rejoices in the oxen that plow the field.",
+    "answer": "ὁ γεωργὸς τοῖς τὸν ἀγρὸν ἀροῦσι βουσὶ χαίρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "τοῖς",
+     "τὸν",
+     "ἀγρὸν",
+     "ἀροῦσι",
+     "βουσὶ",
+     "χαίρει"
+    ]
+   },
+   {
+    "prompt": "The messenger, worn out, could still barely stand on his two feet.",
+    "answer": "ὁ ἄγγελος κάμνων μόλις ἔτι τοῖν ποδοῖν ἵστατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "κάμνων",
+     "μόλις",
+     "ἔτι",
+     "τοῖν",
+     "ποδοῖν",
+     "ἵστατο"
+    ]
+   },
+   {
+    "prompt": "In a single night the whole village was burned down by the flames.",
+    "answer": "ὅλη ἡ κώμη μιᾷ νυκτὶ ταῖς φλοξὶ κατεκάη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅλη",
+     "ἡ",
+     "κώμη",
+     "μιᾷ",
+     "νυκτὶ",
+     "ταῖς",
+     "φλοξὶ",
+     "κατεκάη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t6",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "The old man carried the burden with both his hands.",
+    "answer": "ὁ γέρων ἀμφοτέραιν ταῖν χεροῖν τὸ φορτίον ἔφερεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἀμφοτέραιν",
+     "ταῖν",
+     "χεροῖν",
+     "τὸ",
+     "φορτίον",
+     "ἔφερεν"
+    ]
+   },
+   {
+    "prompt": "In the battle the Indians fought against the Greeks with elephants.",
+    "answer": "οἱ Ἰνδοὶ ἐν τῇ μάχῃ τοῖς Ἕλλησιν ἐλέφασιν ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἰνδοὶ",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "τοῖς",
+     "Ἕλλησιν",
+     "ἐλέφασιν",
+     "ἐμάχοντο"
+    ]
+   },
+   {
+    "prompt": "The people were persuaded by the orators and their clever words.",
+    "answer": "ὁ δῆμος τοῖς ῥήτορσι καὶ τοῖς δεινοῖς λόγοις ἐπείσθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "τοῖς",
+     "ῥήτορσι",
+     "καὶ",
+     "δεινοῖς",
+     "λόγοις",
+     "ἐπείσθη"
+    ]
+   },
+   {
+    "prompt": "Victory put courage into the minds of the leaders.",
+    "answer": "ἡ νίκη τοῖς ἡγεμόσι θάρσος ἐν ταῖς φρεσὶν ἐνέθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νίκη",
+     "τοῖς",
+     "ἡγεμόσι",
+     "θάρσος",
+     "ἐν",
+     "ταῖς",
+     "φρεσὶν",
+     "ἐνέθηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t7",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "The masters used to punish the disobedient slaves with whips.",
+    "answer": "οἱ δεσπόται τοὺς ἀπειθοῦντας δούλους μάστιξιν ἐκόλαζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δεσπόται",
+     "τοὺς",
+     "ἀπειθοῦντας",
+     "δούλους",
+     "μάστιξιν",
+     "ἐκόλαζον"
+    ]
+   },
+   {
+    "prompt": "The citizens used to trust the guards of the acropolis.",
+    "answer": "οἱ πολῖται τοῖς τῆς ἀκροπόλεως φύλαξιν ἐπίστευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τοῖς",
+     "τῆς",
+     "ἀκροπόλεως",
+     "φύλαξιν",
+     "ἐπίστευον"
+    ]
+   },
+   {
+    "prompt": "Cyrus promised many gifts to the Arabs before the march.",
+    "answer": "ὁ Κῦρος τοῖς Ἄραψι πολλὰ δῶρα πρὸ τῆς πορείας ὑπέσχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "τοῖς",
+     "Ἄραψι",
+     "πολλὰ",
+     "δῶρα",
+     "πρὸ",
+     "τῆς",
+     "πορείας",
+     "ὑπέσχετο"
+    ]
+   },
+   {
+    "prompt": "The soldiers warded off the advancing giants with their shields.",
+    "answer": "οἱ στρατιῶται τοὺς ἐπιόντας γίγαντας ταῖς ἀσπίσιν ἠμύναντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοὺς",
+     "ἐπιόντας",
+     "γίγαντας",
+     "ταῖς",
+     "ἀσπίσιν",
+     "ἠμύναντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t8",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "By night the lions were fearsome to the shepherds in the mountains.",
+    "answer": "νυκτὸς οἱ λέοντες τοῖς ἐν τοῖς ὄρεσι ποιμέσι φοβεροὶ ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτὸς",
+     "οἱ",
+     "λέοντες",
+     "τοῖς",
+     "ἐν",
+     "ὄρεσι",
+     "ποιμέσι",
+     "φοβεροὶ",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "The Greeks used to offer many sacrifices to the divinities before the battle.",
+    "answer": "οἱ Ἕλληνες πολλὰς θυσίας τοῖς δαίμοσι πρὸ τῆς μάχης ἔθυον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "πολλὰς",
+     "θυσίας",
+     "τοῖς",
+     "δαίμοσι",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "ἔθυον"
+    ]
+   },
+   {
+    "prompt": "The general with the horsemen came to the aid of the hard-pressed leaders.",
+    "answer": "ὁ στρατηγὸς σὺν τοῖς ἱππεῦσι τοῖς πονουμένοις ἡγεμόσιν ἐβοήθησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "σὺν",
+     "τοῖς",
+     "ἱππεῦσι",
+     "πονουμένοις",
+     "ἡγεμόσιν",
+     "ἐβοήθησεν"
+    ]
+   },
+   {
+    "prompt": "In the harbors great storms were destroying the ships of the merchants.",
+    "answer": "ἐν τοῖς λιμέσι μεγάλοι χειμῶνες τὰς τῶν ἐμπόρων ναῦς διέφθειρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τοῖς",
+     "λιμέσι",
+     "μεγάλοι",
+     "χειμῶνες",
+     "τὰς",
+     "τῶν",
+     "ἐμπόρων",
+     "ναῦς",
+     "διέφθειρον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t9",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "Old age brings many sufferings upon the bodies of men.",
+    "answer": "τὸ γῆρας πολλὰ πάθη τοῖς τῶν ἀνθρώπων σώμασι φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "γῆρας",
+     "πολλὰ",
+     "πάθη",
+     "τοῖς",
+     "τῶν",
+     "ἀνθρώπων",
+     "σώμασι",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "The poet honored the brave men with immortal names.",
+    "answer": "ὁ ποιητὴς τοὺς ἀνδρείους ἄνδρας ἀθανάτοις ὀνόμασιν ἐτίμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιητὴς",
+     "τοὺς",
+     "ἀνδρείους",
+     "ἄνδρας",
+     "ἀθανάτοις",
+     "ὀνόμασιν",
+     "ἐτίμησεν"
+    ]
+   },
+   {
+    "prompt": "The children rendered thanks to their fathers and their mothers.",
+    "answer": "οἱ παῖδες τοῖς πατράσι καὶ ταῖς μητράσι χάριν ἀπέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τοῖς",
+     "πατράσι",
+     "καὶ",
+     "ταῖς",
+     "μητράσι",
+     "χάριν",
+     "ἀπέδοσαν"
+    ]
+   },
+   {
+    "prompt": "The Athenians used to surpass the other Greeks in ships and in walls.",
+    "answer": "οἱ Ἀθηναῖοι τῶν ἄλλων Ἑλλήνων ναυσὶ καὶ τείχεσιν ὑπερεῖχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τῶν",
+     "ἄλλων",
+     "Ἑλλήνων",
+     "ναυσὶ",
+     "καὶ",
+     "τείχεσιν",
+     "ὑπερεῖχον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-250-dative-dual-and-plural-t10",
+  "sectionId": "sm-250-dative-dual-and-plural",
+  "questions": [
+   {
+    "prompt": "The farmer used to scatter grain for the birds in the courtyard.",
+    "answer": "ὁ γεωργὸς τοῖς ὄρνισι σῖτον ἐν τῇ αὐλῇ διέσπειρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "τοῖς",
+     "ὄρνισι",
+     "σῖτον",
+     "ἐν",
+     "τῇ",
+     "αὐλῇ",
+     "διέσπειρεν"
+    ]
+   },
+   {
+    "prompt": "The general used to give the signal to the soldiers with trumpets.",
+    "answer": "ὁ στρατηγὸς σάλπιγξι τοῖς στρατιώταις τὸ σημεῖον ἐδήλου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "σάλπιγξι",
+     "τοῖς",
+     "στρατιώταις",
+     "τὸ",
+     "σημεῖον",
+     "ἐδήλου"
+    ]
+   },
+   {
+    "prompt": "The old man with difficulty was standing on both his feet.",
+    "answer": "ὁ γέρων μόλις ἐπὶ τοῖν ποδοῖν ἵστατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "μόλις",
+     "ἐπὶ",
+     "τοῖν",
+     "ποδοῖν",
+     "ἵστατο"
+    ]
+   },
+   {
+    "prompt": "The Persians used to bring great gifts to their kings.",
+    "answer": "οἱ Πέρσαι τοῖς βασιλεῦσι μεγάλα δῶρα προσέφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "τοῖς",
+     "βασιλεῦσι",
+     "μεγάλα",
+     "δῶρα",
+     "προσέφερον"
+    ]
+   }
+  ]
+ }
+]

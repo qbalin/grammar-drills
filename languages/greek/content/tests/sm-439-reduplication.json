@@ -1,0 +1,394 @@
+[
+ {
+  "id": "sm-439-reduplication-t1",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The orator has written a long speech against the tyrant.",
+    "answer": "ὁ ῥήτωρ μακρὸν λόγον κατὰ τοῦ τυράννου γέγραφεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "μακρὸν",
+     "λόγον",
+     "κατὰ",
+     "τοῦ",
+     "τυράννου",
+     "γέγραφεν"
+    ]
+   },
+   {
+    "prompt": "The god has loosed the city from great dangers.",
+    "answer": "ὁ θεὸς τὴν πόλιν ἐκ μεγάλων κινδύνων λέλυκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεὸς",
+     "τὴν",
+     "πόλιν",
+     "ἐκ",
+     "μεγάλων",
+     "κινδύνων",
+     "λέλυκεν"
+    ]
+   },
+   {
+    "prompt": "This old man, though doing no wrong, has suffered many things at the hands of enemies.",
+    "answer": "ὅδε ὁ γέρων οὐδὲν ἀδικῶν πολλὰ ὑπὸ τῶν πολεμίων πέπονθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "ὁ",
+     "γέρων",
+     "οὐδὲν",
+     "ἀδικῶν",
+     "πολλὰ",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "πέπονθεν"
+    ]
+   },
+   {
+    "prompt": "The sun has already inclined toward the west.",
+    "answer": "ὁ ἥλιος ἤδη πρὸς τὴν ἑσπέραν κέκλικεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἥλιος",
+     "ἤδη",
+     "πρὸς",
+     "τὴν",
+     "ἑσπέραν",
+     "κέκλικεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t2",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The priest has sacrificed a bull to the gods.",
+    "answer": "ὁ ἱερεὺς τοῖς θεοῖς ταῦρον τέθυκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "τοῖς",
+     "θεοῖς",
+     "ταῦρον",
+     "τέθυκεν"
+    ]
+   },
+   {
+    "prompt": "The tyrant, having seized the power, has murdered many of the citizens.",
+    "answer": "ὁ τύραννος τὴν ἀρχὴν λαβὼν πολλοὺς τῶν πολιτῶν πεφόνευκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τὴν",
+     "ἀρχὴν",
+     "λαβὼν",
+     "πολλοὺς",
+     "τῶν",
+     "πολιτῶν",
+     "πεφόνευκεν"
+    ]
+   },
+   {
+    "prompt": "The maidens have danced for the goddess in the temple.",
+    "answer": "αἱ παρθένοι ἐν τῷ ἱερῷ τῇ θεῷ κεχορεύκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "παρθένοι",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "τῇ",
+     "θεῷ",
+     "κεχορεύκασιν"
+    ]
+   },
+   {
+    "prompt": "The hunter has caught a great wild beast in the mountains.",
+    "answer": "ὁ θηρευτὴς μέγαν θῆρα ἐν τοῖς ὄρεσι τεθήρακεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θηρευτὴς",
+     "μέγαν",
+     "θῆρα",
+     "ἐν",
+     "τοῖς",
+     "ὄρεσι",
+     "τεθήρακεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t3",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "I have heard many things about the wisdom of Socrates.",
+    "answer": "πολλὰ περὶ τῆς τοῦ Σωκράτους σοφίας ἀκήκοα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "περὶ",
+     "τῆς",
+     "τοῦ",
+     "Σωκράτους",
+     "σοφίας",
+     "ἀκήκοα"
+    ]
+   },
+   {
+    "prompt": "The witness, fearing the gods, has sworn a great oath before the judges.",
+    "answer": "ὁ μάρτυς τοὺς θεοὺς φοβούμενος μέγαν ὅρκον ἐναντίον τῶν δικαστῶν ὀμώμοκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάρτυς",
+     "τοὺς",
+     "θεοὺς",
+     "φοβούμενος",
+     "μέγαν",
+     "ὅρκον",
+     "ἐναντίον",
+     "τῶν",
+     "δικαστῶν",
+     "ὀμώμοκεν"
+    ]
+   },
+   {
+    "prompt": "The messenger has brought letters from the camp.",
+    "answer": "ὁ ἄγγελος γράμματα ἐκ τοῦ στρατοπέδου ἐνήνοχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "γράμματα",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἐνήνοχεν"
+    ]
+   },
+   {
+    "prompt": "The war has destroyed many of the cities of the Greeks.",
+    "answer": "ὁ πόλεμος πολλὰς τῶν Ἑλλήνων πόλεις ὀλώλεκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πόλεμος",
+     "πολλὰς",
+     "τῶν",
+     "Ἑλλήνων",
+     "πόλεις",
+     "ὀλώλεκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t4",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The enemy having fled, the general has taken the city by treachery.",
+    "answer": "τῶν πολεμίων φυγόντων ὁ στρατηγὸς τὴν πόλιν δόλῳ εἴληφεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "φυγόντων",
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "πόλιν",
+     "δόλῳ",
+     "εἴληφεν"
+    ]
+   },
+   {
+    "prompt": "The orator has spoken the truth about these matters.",
+    "answer": "ὁ ῥήτωρ περὶ τούτων τὰ ἀληθῆ εἴρηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "περὶ",
+     "τούτων",
+     "τὰ",
+     "ἀληθῆ",
+     "εἴρηκεν"
+    ]
+   },
+   {
+    "prompt": "This man has obtained the office by lot.",
+    "answer": "οὗτος τὴν ἀρχὴν κλήρῳ εἴληχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "τὴν",
+     "ἀρχὴν",
+     "κλήρῳ",
+     "εἴληχεν"
+    ]
+   },
+   {
+    "prompt": "The thief has been caught by the guards.",
+    "answer": "ὁ κλέπτης ὑπὸ τῶν φυλάκων εἴληπται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κλέπτης",
+     "ὑπὸ",
+     "τῶν",
+     "φυλάκων",
+     "εἴληπται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t5",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The sailor still remembers the ancient storms.",
+    "answer": "ὁ ναύτης ἔτι τῶν παλαιῶν χειμώνων μέμνηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ναύτης",
+     "ἔτι",
+     "τῶν",
+     "παλαιῶν",
+     "χειμώνων",
+     "μέμνηται"
+    ]
+   },
+   {
+    "prompt": "This citizen has acquired great wealth.",
+    "answer": "οὗτος ὁ πολίτης πολὺν πλοῦτον κέκτηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "πολίτης",
+     "πολὺν",
+     "πλοῦτον",
+     "κέκτηται"
+    ]
+   },
+   {
+    "prompt": "The tower which the ancients built has stood beside the sea for many years.",
+    "answer": "ὁ πύργος ὃν οἱ παλαιοὶ ᾠκοδόμησαν πολλὰ ἔτη παρὰ τῇ θαλάττῃ ἕστηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πύργος",
+     "ὃν",
+     "οἱ",
+     "παλαιοὶ",
+     "ᾠκοδόμησαν",
+     "πολλὰ",
+     "ἔτη",
+     "παρὰ",
+     "τῇ",
+     "θαλάττῃ",
+     "ἕστηκεν"
+    ]
+   },
+   {
+    "prompt": "A great change has occurred in the affairs of the city.",
+    "answer": "μεγάλη μεταβολὴ ἐν τοῖς τῆς πόλεως πράγμασι γέγονεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεγάλη",
+     "μεταβολὴ",
+     "ἐν",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "πράγμασι",
+     "γέγονεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t6",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The poet had written the song before he died.",
+    "answer": "ὁ ποιητὴς τὸ ᾆσμα ἐγεγράφει πρὶν ἀποθανεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιητὴς",
+     "τὸ",
+     "ᾆσμα",
+     "ἐγεγράφει",
+     "πρὶν",
+     "ἀποθανεῖν"
+    ]
+   },
+   {
+    "prompt": "The priests had already sacrificed when the enemy appeared.",
+    "answer": "οἱ ἱερεῖς ἤδη ἐτεθύκεσαν ὅτε οἱ πολέμιοι ἐφάνησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "ἤδη",
+     "ἐτεθύκεσαν",
+     "ὅτε",
+     "πολέμιοι",
+     "ἐφάνησαν"
+    ]
+   },
+   {
+    "prompt": "Now at last I have come to know the truth from the wise.",
+    "answer": "νῦν δὴ τὴν ἀλήθειαν παρὰ τῶν σοφῶν ἔγνωκα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "δὴ",
+     "τὴν",
+     "ἀλήθειαν",
+     "παρὰ",
+     "τῶν",
+     "σοφῶν",
+     "ἔγνωκα"
+    ]
+   },
+   {
+    "prompt": "The statue had stood in the temple before the city was captured.",
+    "answer": "τὸ ἄγαλμα ἐν τῷ ναῷ εἱστήκει πρὶν τὴν πόλιν ἁλῶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἄγαλμα",
+     "ἐν",
+     "τῷ",
+     "ναῷ",
+     "εἱστήκει",
+     "πρὶν",
+     "τὴν",
+     "πόλιν",
+     "ἁλῶναι"
+    ]
+   }
+  ]
+ }
+]

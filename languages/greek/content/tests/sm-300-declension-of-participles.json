@@ -1,0 +1,1555 @@
+[
+ {
+  "id": "sm-300-declension-of-participles-t1",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Those fleeing from the city fell into the hands of the enemy.",
+    "answer": "οἱ ἐκ τῆς πόλεως φεύγοντες εἰς τὰς τῶν πολεμίων χεῖρας ἐνέπεσον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "φεύγοντες",
+     "εἰς",
+     "τὰς",
+     "τῶν",
+     "πολεμίων",
+     "χεῖρας",
+     "ἐνέπεσον"
+    ]
+   },
+   {
+    "prompt": "We saw the woman carrying water from the spring.",
+    "answer": "τὴν γυναῖκα ὕδωρ ἀπὸ τῆς κρήνης φέρουσαν εἴδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "γυναῖκα",
+     "ὕδωρ",
+     "ἀπὸ",
+     "τῆς",
+     "κρήνης",
+     "φέρουσαν",
+     "εἴδομεν"
+    ]
+   },
+   {
+    "prompt": "He gave gifts to the men guarding the gates.",
+    "answer": "τοῖς τὰς πύλας φυλάττουσι δῶρα ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "τὰς",
+     "πύλας",
+     "φυλάττουσι",
+     "δῶρα",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "Being general, he led the army through the mountains.",
+    "answer": "στρατηγὸς ὢν διὰ τῶν ὀρῶν τὸ στράτευμα ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατηγὸς",
+     "ὢν",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "τὸ",
+     "στράτευμα",
+     "ἤγαγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t2",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Having freed the prisoners, the general marched away.",
+    "answer": "ὁ στρατηγὸς τοὺς δεσμώτας λύσας ἀπῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "δεσμώτας",
+     "λύσας",
+     "ἀπῆλθεν"
+    ]
+   },
+   {
+    "prompt": "The woman, having heard the things announced, wept bitterly.",
+    "answer": "ἡ γυνὴ τὰ ἀγγελθέντα ἀκούσασα πικρῶς ἐδάκρυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "τὰ",
+     "ἀγγελθέντα",
+     "ἀκούσασα",
+     "πικρῶς",
+     "ἐδάκρυσεν"
+    ]
+   },
+   {
+    "prompt": "Those who had left their shields fled to the ships.",
+    "answer": "οἱ τὰς ἀσπίδας λιπόντες εἰς τὰς ναῦς ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὰς",
+     "ἀσπίδας",
+     "λιπόντες",
+     "εἰς",
+     "ναῦς",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "He honored the soldiers who had conquered bravely.",
+    "answer": "τοὺς ἀνδρείως νικήσαντας στρατιώτας ἐτίμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ἀνδρείως",
+     "νικήσαντας",
+     "στρατιώτας",
+     "ἐτίμησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t3",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The men who had been captured were led to the king.",
+    "answer": "οἱ ληφθέντες πρὸς τὸν βασιλέα ἤχθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ληφθέντες",
+     "πρὸς",
+     "τὸν",
+     "βασιλέα",
+     "ἤχθησαν"
+    ]
+   },
+   {
+    "prompt": "Having been persuaded by his friends, he remained in the city.",
+    "answer": "ὑπὸ τῶν φίλων πεισθεὶς ἐν τῇ πόλει ἔμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῶν",
+     "φίλων",
+     "πεισθεὶς",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἔμεινεν"
+    ]
+   },
+   {
+    "prompt": "The city, having been destroyed by fire, was no longer inhabited.",
+    "answer": "ἡ πόλις ὑπὸ πυρὸς διαφθαρεῖσα οὐκέτι ᾠκεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ὑπὸ",
+     "πυρὸς",
+     "διαφθαρεῖσα",
+     "οὐκέτι",
+     "ᾠκεῖτο"
+    ]
+   },
+   {
+    "prompt": "We pitied the children who had been left in the temple.",
+    "answer": "τὰ ἐν τῷ ἱερῷ λειφθέντα παιδία ᾠκτίραμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "λειφθέντα",
+     "παιδία",
+     "ᾠκτίραμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t4",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The man who has done these things will pay the penalty.",
+    "answer": "ὁ ταῦτα πεποιηκὼς δίκην δώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ταῦτα",
+     "πεποιηκὼς",
+     "δίκην",
+     "δώσει"
+    ]
+   },
+   {
+    "prompt": "Knowing the truth, she kept silent.",
+    "answer": "τὴν ἀλήθειαν εἰδυῖα ἐσίγα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἀλήθειαν",
+     "εἰδυῖα",
+     "ἐσίγα"
+    ]
+   },
+   {
+    "prompt": "Those who have suffered many things easily learn wisdom.",
+    "answer": "οἱ πολλὰ πεπονθότες ῥᾳδίως σοφίαν μανθάνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολλὰ",
+     "πεπονθότες",
+     "ῥᾳδίως",
+     "σοφίαν",
+     "μανθάνουσιν"
+    ]
+   },
+   {
+    "prompt": "We trust the soldiers who have been born from noble fathers.",
+    "answer": "τοῖς ἐκ γενναίων πατέρων γεγονόσι στρατιώταις πιστεύομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ἐκ",
+     "γενναίων",
+     "πατέρων",
+     "γεγονόσι",
+     "στρατιώταις",
+     "πιστεύομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t5",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Those who honor the gods enjoy good fortune.",
+    "answer": "οἱ τοὺς θεοὺς τιμῶντες εὐτυχίας μετέχουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῶντες",
+     "εὐτυχίας",
+     "μετέχουσιν"
+    ]
+   },
+   {
+    "prompt": "We saw the general doing many terrible things.",
+    "answer": "τὸν στρατηγὸν πολλὰ δεινὰ ποιοῦντα εἴδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "στρατηγὸν",
+     "πολλὰ",
+     "δεινὰ",
+     "ποιοῦντα",
+     "εἴδομεν"
+    ]
+   },
+   {
+    "prompt": "Loving her children, the mother endured every toil.",
+    "answer": "τοὺς παῖδας φιλοῦσα ἡ μήτηρ πάντα πόνον ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "παῖδας",
+     "φιλοῦσα",
+     "ἡ",
+     "μήτηρ",
+     "πάντα",
+     "πόνον",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "He gave a reward to the man showing the road.",
+    "answer": "τῷ τὴν ὁδὸν δηλοῦντι μισθὸν ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "τὴν",
+     "ὁδὸν",
+     "δηλοῦντι",
+     "μισθὸν",
+     "ἔδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t6",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Giving money to the poor, he won great honor.",
+    "answer": "τοῖς πένησι χρήματα διδοὺς μεγάλην τιμὴν ἐκτήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πένησι",
+     "χρήματα",
+     "διδοὺς",
+     "μεγάλην",
+     "τιμὴν",
+     "ἐκτήσατο"
+    ]
+   },
+   {
+    "prompt": "The men who stood firm in the battle saved the city.",
+    "answer": "οἱ ἐν τῇ μάχῃ στάντες τὴν πόλιν ἔσωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "στάντες",
+     "τὴν",
+     "πόλιν",
+     "ἔσωσαν"
+    ]
+   },
+   {
+    "prompt": "Setting up the trophy on the hill, they sang a paean.",
+    "answer": "τὸ τρόπαιον ἐπὶ τῷ λόφῳ ἱστάντες παιᾶνα ᾖσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τρόπαιον",
+     "ἐπὶ",
+     "τῷ",
+     "λόφῳ",
+     "ἱστάντες",
+     "παιᾶνα",
+     "ᾖσαν"
+    ]
+   },
+   {
+    "prompt": "Being noble by nature, the young man despised money.",
+    "answer": "γενναῖος φὺς ὁ νεανίας τῶν χρημάτων κατεφρόνησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γενναῖος",
+     "φὺς",
+     "ὁ",
+     "νεανίας",
+     "τῶν",
+     "χρημάτων",
+     "κατεφρόνησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t7",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The soldiers marching through the plain saw the river.",
+    "answer": "οἱ διὰ τοῦ πεδίου βαδίζοντες στρατιῶται τὸν ποταμὸν εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "βαδίζοντες",
+     "στρατιῶται",
+     "τὸν",
+     "ποταμὸν",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "We admired the poet singing beautiful songs.",
+    "answer": "τὸν ποιητὴν καλὰ ᾄσματα ᾄδοντα ἐθαυμάζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ποιητὴν",
+     "καλὰ",
+     "ᾄσματα",
+     "ᾄδοντα",
+     "ἐθαυμάζομεν"
+    ]
+   },
+   {
+    "prompt": "To the woman ruling the household he entrusted everything.",
+    "answer": "τῇ τοῦ οἴκου ἀρχούσῃ πάντα ἐπίστευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῇ",
+     "τοῦ",
+     "οἴκου",
+     "ἀρχούσῃ",
+     "πάντα",
+     "ἐπίστευσεν"
+    ]
+   },
+   {
+    "prompt": "The ambassadors, being present, reported the words of the king.",
+    "answer": "οἱ πρέσβεις παρόντες τοὺς τοῦ βασιλέως λόγους ἀπήγγειλαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "παρόντες",
+     "τοὺς",
+     "τοῦ",
+     "βασιλέως",
+     "λόγους",
+     "ἀπήγγειλαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t8",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Having captured the city, the soldiers plundered the houses.",
+    "answer": "τὴν πόλιν λαβόντες οἱ στρατιῶται τὰς οἰκίας διήρπασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "πόλιν",
+     "λαβόντες",
+     "οἱ",
+     "στρατιῶται",
+     "τὰς",
+     "οἰκίας",
+     "διήρπασαν"
+    ]
+   },
+   {
+    "prompt": "The woman, having written a letter, sent a messenger.",
+    "answer": "ἡ γυνὴ ἐπιστολὴν γράψασα ἄγγελον ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "ἐπιστολὴν",
+     "γράψασα",
+     "ἄγγελον",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "He praised the citizens who had saved the fatherland.",
+    "answer": "τοὺς τὴν πατρίδα σώσαντας πολίτας ἐπῄνεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "τὴν",
+     "πατρίδα",
+     "σώσαντας",
+     "πολίτας",
+     "ἐπῄνεσεν"
+    ]
+   },
+   {
+    "prompt": "Having stopped the war, they made a treaty with the Persians.",
+    "answer": "τὸν πόλεμον παύσαντες σπονδὰς πρὸς τοὺς Πέρσας ἐποιήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "πόλεμον",
+     "παύσαντες",
+     "σπονδὰς",
+     "πρὸς",
+     "τοὺς",
+     "Πέρσας",
+     "ἐποιήσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t9",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The messenger, having been sent by the general, arrived at night.",
+    "answer": "ὁ ἄγγελος ὑπὸ τοῦ στρατηγοῦ πεμφθεὶς νυκτὸς ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ὑπὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "πεμφθεὶς",
+     "νυκτὸς",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "The soldiers who had been drawn up on the hill awaited the enemy.",
+    "answer": "οἱ ἐπὶ τῷ λόφῳ ταχθέντες στρατιῶται τοὺς πολεμίους ἔμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐπὶ",
+     "τῷ",
+     "λόφῳ",
+     "ταχθέντες",
+     "στρατιῶται",
+     "τοὺς",
+     "πολεμίους",
+     "ἔμενον"
+    ]
+   },
+   {
+    "prompt": "The maiden, having been frightened by the shout, fled into the house.",
+    "answer": "ἡ παρθένος τῇ βοῇ φοβηθεῖσα εἰς τὴν οἰκίαν ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "τῇ",
+     "βοῇ",
+     "φοβηθεῖσα",
+     "εἰς",
+     "τὴν",
+     "οἰκίαν",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "We honored the men who had been freed from slavery.",
+    "answer": "τοὺς ἐκ τῆς δουλείας λυθέντας ἐτιμήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ἐκ",
+     "τῆς",
+     "δουλείας",
+     "λυθέντας",
+     "ἐτιμήσαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t10",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The man who has suffered these things knows the power of fortune.",
+    "answer": "ὁ ταῦτα πεπονθὼς τὴν τῆς τύχης δύναμιν οἶδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ταῦτα",
+     "πεπονθὼς",
+     "τὴν",
+     "τῆς",
+     "τύχης",
+     "δύναμιν",
+     "οἶδεν"
+    ]
+   },
+   {
+    "prompt": "The woman knowing many things gave wise counsel.",
+    "answer": "ἡ πολλὰ εἰδυῖα σοφὴν βουλὴν ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πολλὰ",
+     "εἰδυῖα",
+     "σοφὴν",
+     "βουλὴν",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "We trust the men standing near the gates.",
+    "answer": "τοῖς παρὰ ταῖς πύλαις ἑστῶσι πιστεύομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "παρὰ",
+     "ταῖς",
+     "πύλαις",
+     "ἑστῶσι",
+     "πιστεύομεν"
+    ]
+   },
+   {
+    "prompt": "Those who have written these speeches will receive great honor.",
+    "answer": "οἱ τούτους τοὺς λόγους γεγραφότες μεγάλην τιμὴν λήψονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τούτους",
+     "τοὺς",
+     "λόγους",
+     "γεγραφότες",
+     "μεγάλην",
+     "τιμὴν",
+     "λήψονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t11",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "By showing his wounds he persuaded the citizens.",
+    "answer": "τὰ τραύματα δεικνὺς τοὺς πολίτας ἔπεισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τραύματα",
+     "δεικνὺς",
+     "τοὺς",
+     "πολίτας",
+     "ἔπεισεν"
+    ]
+   },
+   {
+    "prompt": "The priest, having placed the gifts on the altar, prayed to the god.",
+    "answer": "ὁ ἱερεὺς τὰ δῶρα ἐπὶ τὸν βωμὸν θεὶς τῷ θεῷ ηὔξατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "τὰ",
+     "δῶρα",
+     "ἐπὶ",
+     "τὸν",
+     "βωμὸν",
+     "θεὶς",
+     "τῷ",
+     "θεῷ",
+     "ηὔξατο"
+    ]
+   },
+   {
+    "prompt": "Having given money to the sailors, he sailed away.",
+    "answer": "τοῖς ναύταις ἀργύριον δοὺς ἀπέπλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ναύταις",
+     "ἀργύριον",
+     "δοὺς",
+     "ἀπέπλευσεν"
+    ]
+   },
+   {
+    "prompt": "We saw the general setting up the army in the plain.",
+    "answer": "τὸν στρατηγὸν ἐν τῷ πεδίῳ τὸ στράτευμα ἱστάντα εἴδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "στρατηγὸν",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "τὸ",
+     "στράτευμα",
+     "ἱστάντα",
+     "εἴδομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t12",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The citizens honoring the laws live happily.",
+    "answer": "οἱ τοὺς νόμους τιμῶντες εὐδαιμόνως ζῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "νόμους",
+     "τιμῶντες",
+     "εὐδαιμόνως",
+     "ζῶσιν"
+    ]
+   },
+   {
+    "prompt": "Those doing just things are dear to the gods.",
+    "answer": "οἱ τὰ δίκαια ποιοῦντες τοῖς θεοῖς φίλοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὰ",
+     "δίκαια",
+     "ποιοῦντες",
+     "τοῖς",
+     "θεοῖς",
+     "φίλοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "Born of noble parents, the maiden scorned wealth.",
+    "answer": "ἐκ γενναίων γονέων φῦσα ἡ παρθένος τοῦ πλούτου κατεφρόνησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "γενναίων",
+     "γονέων",
+     "φῦσα",
+     "ἡ",
+     "παρθένος",
+     "τοῦ",
+     "πλούτου",
+     "κατεφρόνησεν"
+    ]
+   },
+   {
+    "prompt": "They obeyed the general revealing his plan.",
+    "answer": "τῷ τὴν γνώμην δηλοῦντι στρατηγῷ ἐπείθοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "τὴν",
+     "γνώμην",
+     "δηλοῦντι",
+     "στρατηγῷ",
+     "ἐπείθοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t13",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The women carrying water to the temple sang a lovely song.",
+    "answer": "αἱ πρὸς τὸ ἱερὸν ὕδωρ φέρουσαι καλὴν ᾠδὴν ᾖδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "πρὸς",
+     "τὸ",
+     "ἱερὸν",
+     "ὕδωρ",
+     "φέρουσαι",
+     "καλὴν",
+     "ᾠδὴν",
+     "ᾖδον"
+    ]
+   },
+   {
+    "prompt": "We came upon a shepherd leading his flock down from the mountain.",
+    "answer": "ποιμένι τὰ βοσκήματα ἀπὸ τοῦ ὄρους ἄγοντι προσεμείξαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποιμένι",
+     "τὰ",
+     "βοσκήματα",
+     "ἀπὸ",
+     "τοῦ",
+     "ὄρους",
+     "ἄγοντι",
+     "προσεμείξαμεν"
+    ]
+   },
+   {
+    "prompt": "The child, being still young, could not carry the shield.",
+    "answer": "ὁ παῖς ἔτι νέος ὢν τὴν ἀσπίδα φέρειν οὐκ ἐδύνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "ἔτι",
+     "νέος",
+     "ὢν",
+     "τὴν",
+     "ἀσπίδα",
+     "φέρειν",
+     "οὐκ",
+     "ἐδύνατο"
+    ]
+   },
+   {
+    "prompt": "The men bearing the corpses out of the city were weeping.",
+    "answer": "οἱ τοὺς νεκροὺς ἐκ τῆς πόλεως ἐκφέροντες ἐδάκρυον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "νεκροὺς",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐκφέροντες",
+     "ἐδάκρυον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t14",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Honoring the gods with sacrifices, the citizens hoped for safety.",
+    "answer": "θυσίαις τοὺς θεοὺς τιμῶντες οἱ πολῖται σωτηρίαν ἤλπιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θυσίαις",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῶντες",
+     "οἱ",
+     "πολῖται",
+     "σωτηρίαν",
+     "ἤλπιζον"
+    ]
+   },
+   {
+    "prompt": "We admired the craftsman making a statue of the goddess.",
+    "answer": "τὸν τεχνίτην ἄγαλμα τῆς θεοῦ ποιοῦντα ἐθαυμάσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "τεχνίτην",
+     "ἄγαλμα",
+     "τῆς",
+     "θεοῦ",
+     "ποιοῦντα",
+     "ἐθαυμάσαμεν"
+    ]
+   },
+   {
+    "prompt": "The general, making the danger clear, persuaded the soldiers to flee.",
+    "answer": "ὁ στρατηγὸς τὸν κίνδυνον δηλῶν τοὺς στρατιώτας ἔπεισε φεύγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὸν",
+     "κίνδυνον",
+     "δηλῶν",
+     "τοὺς",
+     "στρατιώτας",
+     "ἔπεισε",
+     "φεύγειν"
+    ]
+   },
+   {
+    "prompt": "The woman loving her husband followed him even into exile.",
+    "answer": "ἡ τὸν ἄνδρα φιλοῦσα γυνὴ καὶ εἰς τὴν φυγὴν αὐτῷ ἠκολούθησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τὸν",
+     "ἄνδρα",
+     "φιλοῦσα",
+     "γυνὴ",
+     "καὶ",
+     "εἰς",
+     "τὴν",
+     "φυγὴν",
+     "αὐτῷ",
+     "ἠκολούθησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t15",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Having stopped the flight, the general drew up the army again.",
+    "answer": "ὁ στρατηγὸς τὴν φυγὴν παύσας τὸ στράτευμα αὖθις ἔταξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "φυγὴν",
+     "παύσας",
+     "τὸ",
+     "στράτευμα",
+     "αὖθις",
+     "ἔταξεν"
+    ]
+   },
+   {
+    "prompt": "Having written the letter, she gave it to a trusty slave.",
+    "answer": "τὴν ἐπιστολὴν γράψασα πιστῷ δούλῳ ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἐπιστολὴν",
+     "γράψασα",
+     "πιστῷ",
+     "δούλῳ",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "Having left the camp by night, the scouts escaped notice.",
+    "answer": "οἱ σκοποὶ νυκτὸς τὸ στρατόπεδον λιπόντες ἔλαθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σκοποὶ",
+     "νυκτὸς",
+     "τὸ",
+     "στρατόπεδον",
+     "λιπόντες",
+     "ἔλαθον"
+    ]
+   },
+   {
+    "prompt": "Having fallen into many dangers, the merchant nevertheless became rich.",
+    "answer": "ὁ ἔμπορος εἰς πολλοὺς κινδύνους ἐμπεσὼν ὅμως πλούσιος ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἔμπορος",
+     "εἰς",
+     "πολλοὺς",
+     "κινδύνους",
+     "ἐμπεσὼν",
+     "ὅμως",
+     "πλούσιος",
+     "ἐγένετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t16",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The soldiers, having been drawn up on the hill, awaited the enemy.",
+    "answer": "οἱ στρατιῶται ἐπὶ τῷ λόφῳ ταχθέντες τοὺς πολεμίους ἀνέμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐπὶ",
+     "τῷ",
+     "λόφῳ",
+     "ταχθέντες",
+     "τοὺς",
+     "πολεμίους",
+     "ἀνέμενον"
+    ]
+   },
+   {
+    "prompt": "The girl, having been frightened by the noise, fled into the chamber.",
+    "answer": "ἡ κόρη ὑπὸ τοῦ ψόφου φοβηθεῖσα εἰς τὸν θάλαμον ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "κόρη",
+     "ὑπὸ",
+     "τοῦ",
+     "ψόφου",
+     "φοβηθεῖσα",
+     "εἰς",
+     "τὸν",
+     "θάλαμον",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "Those who had been saved from the shipwreck gave thanks to the gods.",
+    "answer": "οἱ ἐκ τοῦ ναυαγίου σωθέντες τοῖς θεοῖς χάριν ἀπέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐκ",
+     "τοῦ",
+     "ναυαγίου",
+     "σωθέντες",
+     "τοῖς",
+     "θεοῖς",
+     "χάριν",
+     "ἀπέδοσαν"
+    ]
+   },
+   {
+    "prompt": "Having been left alone in the house, the child kept weeping.",
+    "answer": "μόνος ἐν τῇ οἰκίᾳ λειφθεὶς ὁ παῖς ἐδάκρυεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μόνος",
+     "ἐν",
+     "τῇ",
+     "οἰκίᾳ",
+     "λειφθεὶς",
+     "ὁ",
+     "παῖς",
+     "ἐδάκρυεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t17",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The man who has written these things about the war is wise.",
+    "answer": "ὁ ταῦτα περὶ τοῦ πολέμου γεγραφὼς σοφός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ταῦτα",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "γεγραφὼς",
+     "σοφός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Knowing the danger well, the pilot turned the ship toward the harbor.",
+    "answer": "ὁ κυβερνήτης τὸν κίνδυνον εὖ εἰδὼς τὴν ναῦν πρὸς τὸν λιμένα ἔτρεψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κυβερνήτης",
+     "τὸν",
+     "κίνδυνον",
+     "εὖ",
+     "εἰδὼς",
+     "τὴν",
+     "ναῦν",
+     "πρὸς",
+     "λιμένα",
+     "ἔτρεψεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers standing around the king were guarding him faithfully.",
+    "answer": "οἱ περὶ τὸν βασιλέα ἑστῶτες στρατιῶται πιστῶς αὐτὸν ἐφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "περὶ",
+     "τὸν",
+     "βασιλέα",
+     "ἑστῶτες",
+     "στρατιῶται",
+     "πιστῶς",
+     "αὐτὸν",
+     "ἐφύλαττον"
+    ]
+   },
+   {
+    "prompt": "We honored the woman who had suffered many terrible things for the city.",
+    "answer": "τὴν πολλὰ καὶ δεινὰ ὑπὲρ τῆς πόλεως πεπονθυῖαν γυναῖκα ἐτιμήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "πολλὰ",
+     "καὶ",
+     "δεινὰ",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "πεπονθυῖαν",
+     "γυναῖκα",
+     "ἐτιμήσαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t18",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Giving the signal, the general led the army against the gates.",
+    "answer": "τὸ σημεῖον διδοὺς ὁ στρατηγὸς τὸ στράτευμα πρὸς τὰς πύλας ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "σημεῖον",
+     "διδοὺς",
+     "ὁ",
+     "στρατηγὸς",
+     "στράτευμα",
+     "πρὸς",
+     "τὰς",
+     "πύλας",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "Placing the offerings upon the altar, the priest prayed to the goddess.",
+    "answer": "τὰ ἱερὰ ἐπὶ τὸν βωμὸν τιθεὶς ὁ ἱερεὺς τῇ θεῷ ηὔχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ἱερὰ",
+     "ἐπὶ",
+     "τὸν",
+     "βωμὸν",
+     "τιθεὶς",
+     "ὁ",
+     "ἱερεὺς",
+     "τῇ",
+     "θεῷ",
+     "ηὔχετο"
+    ]
+   },
+   {
+    "prompt": "Showing the way to the strangers, the boy guided them to the spring.",
+    "answer": "τὴν ὁδὸν τοῖς ξένοις δεικνὺς ὁ παῖς πρὸς τὴν κρήνην αὐτοῖς ἡγήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ὁδὸν",
+     "τοῖς",
+     "ξένοις",
+     "δεικνὺς",
+     "ὁ",
+     "παῖς",
+     "πρὸς",
+     "κρήνην",
+     "αὐτοῖς",
+     "ἡγήσατο"
+    ]
+   },
+   {
+    "prompt": "The men setting the ladders against the wall were pelted with stones.",
+    "answer": "οἱ τὰς κλίμακας πρὸς τὸ τεῖχος ἱστάντες λίθοις ἐβάλλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὰς",
+     "κλίμακας",
+     "πρὸς",
+     "τὸ",
+     "τεῖχος",
+     "ἱστάντες",
+     "λίθοις",
+     "ἐβάλλοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t19",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The maiden carrying flowers to the altar was singing.",
+    "answer": "ἡ παρθένος ἄνθη πρὸς τὸν βωμὸν φέρουσα ᾖδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "ἄνθη",
+     "πρὸς",
+     "τὸν",
+     "βωμὸν",
+     "φέρουσα",
+     "ᾖδεν"
+    ]
+   },
+   {
+    "prompt": "We admired the young men bravely helping the citizens.",
+    "answer": "τοὺς νεανίας τοῖς πολίταις ἀνδρείως βοηθοῦντας ἐθαυμάζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "νεανίας",
+     "τοῖς",
+     "πολίταις",
+     "ἀνδρείως",
+     "βοηθοῦντας",
+     "ἐθαυμάζομεν"
+    ]
+   },
+   {
+    "prompt": "Those who love wisdom despise wealth.",
+    "answer": "οἱ τὴν σοφίαν φιλοῦντες τοῦ πλούτου καταφρονοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὴν",
+     "σοφίαν",
+     "φιλοῦντες",
+     "τοῦ",
+     "πλούτου",
+     "καταφρονοῦσιν"
+    ]
+   },
+   {
+    "prompt": "I trust the woman speaking the truth.",
+    "answer": "τῇ τὴν ἀλήθειαν λεγούσῃ γυναικὶ πιστεύω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῇ",
+     "τὴν",
+     "ἀλήθειαν",
+     "λεγούσῃ",
+     "γυναικὶ",
+     "πιστεύω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t20",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Having freed the slaves, the master won great praise.",
+    "answer": "τοὺς δούλους ἐλευθερώσας ὁ δεσπότης μέγαν ἔπαινον ἐκτήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "δούλους",
+     "ἐλευθερώσας",
+     "ὁ",
+     "δεσπότης",
+     "μέγαν",
+     "ἔπαινον",
+     "ἐκτήσατο"
+    ]
+   },
+   {
+    "prompt": "The soldiers, having been sent into danger, did not flee.",
+    "answer": "οἱ στρατιῶται εἰς τὸν κίνδυνον πεμφθέντες οὐκ ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "εἰς",
+     "τὸν",
+     "κίνδυνον",
+     "πεμφθέντες",
+     "οὐκ",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Having persuaded the jurors, the orator saved the defendant.",
+    "answer": "τοὺς δικαστὰς πείσας ὁ ῥήτωρ τὸν φεύγοντα ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "δικαστὰς",
+     "πείσας",
+     "ὁ",
+     "ῥήτωρ",
+     "τὸν",
+     "φεύγοντα",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "The men left behind in the camp guarded the baggage.",
+    "answer": "οἱ ἐν τῷ στρατοπέδῳ λειφθέντες τὰ σκεύη ἐφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "λειφθέντες",
+     "τὰ",
+     "σκεύη",
+     "ἐφύλαττον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t21",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "Placing wreaths on the altars, they prayed to the gods.",
+    "answer": "στεφάνους ἐπὶ τοὺς βωμοὺς τιθέντες τοῖς θεοῖς ηὔχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στεφάνους",
+     "ἐπὶ",
+     "τοὺς",
+     "βωμοὺς",
+     "τιθέντες",
+     "τοῖς",
+     "θεοῖς",
+     "ηὔχοντο"
+    ]
+   },
+   {
+    "prompt": "The old men standing in the marketplace were watching the procession.",
+    "answer": "οἱ ἐν τῇ ἀγορᾷ ἑστῶτες γέροντες τὴν πομπὴν ἐθεῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἑστῶτες",
+     "γέροντες",
+     "τὴν",
+     "πομπὴν",
+     "ἐθεῶντο"
+    ]
+   },
+   {
+    "prompt": "Having given gifts to the ambassadors, the king dismissed them.",
+    "answer": "ὁ βασιλεὺς τοῖς πρέσβεσι δῶρα δοὺς αὐτοὺς ἀπέπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τοῖς",
+     "πρέσβεσι",
+     "δῶρα",
+     "δοὺς",
+     "αὐτοὺς",
+     "ἀπέπεμψεν"
+    ]
+   },
+   {
+    "prompt": "The one who betrays the city will be hated by all.",
+    "answer": "ὁ τὴν πόλιν προδιδοὺς ὑπὸ πάντων μισηθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τὴν",
+     "πόλιν",
+     "προδιδοὺς",
+     "ὑπὸ",
+     "πάντων",
+     "μισηθήσεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t22",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The woman who knows these things kept silent before the judges.",
+    "answer": "ἡ ταῦτα εἰδυῖα γυνὴ ἐναντίον τῶν δικαστῶν ἐσίγησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ταῦτα",
+     "εἰδυῖα",
+     "γυνὴ",
+     "ἐναντίον",
+     "τῶν",
+     "δικαστῶν",
+     "ἐσίγησεν"
+    ]
+   },
+   {
+    "prompt": "Those who have suffered such things pity the unfortunate.",
+    "answer": "οἱ τοιαῦτα πεπονθότες τοὺς δυστυχοῦντας οἰκτίρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοιαῦτα",
+     "πεπονθότες",
+     "τοὺς",
+     "δυστυχοῦντας",
+     "οἰκτίρουσιν"
+    ]
+   },
+   {
+    "prompt": "We honor the men who have died on behalf of freedom.",
+    "answer": "τοὺς ὑπὲρ τῆς ἐλευθερίας τεθνηκότας τιμῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "τεθνηκότας",
+     "τιμῶμεν"
+    ]
+   },
+   {
+    "prompt": "Being nobly born, the young man was ashamed to lie.",
+    "answer": "ἐκ γενναίων γεγονὼς ὁ νεανίας ψεύδεσθαι ᾐσχύνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "γενναίων",
+     "γεγονὼς",
+     "ὁ",
+     "νεανίας",
+     "ψεύδεσθαι",
+     "ᾐσχύνετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t23",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The citizens who honor the gods fear nothing.",
+    "answer": "οἱ τοὺς θεοὺς τιμῶντες οὐδὲν δεδίασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῶντες",
+     "οὐδὲν",
+     "δεδίασιν"
+    ]
+   },
+   {
+    "prompt": "By showing his courage he saved the fleeing soldiers.",
+    "answer": "τὴν ἀνδρείαν δεικνὺς τοὺς φεύγοντας στρατιώτας ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἀνδρείαν",
+     "δεικνὺς",
+     "τοὺς",
+     "φεύγοντας",
+     "στρατιώτας",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "Those who make war often destroy their own cities.",
+    "answer": "οἱ πόλεμον ποιοῦντες πολλάκις τὰς ἑαυτῶν πόλεις διαφθείρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πόλεμον",
+     "ποιοῦντες",
+     "πολλάκις",
+     "τὰς",
+     "ἑαυτῶν",
+     "πόλεις",
+     "διαφθείρουσιν"
+    ]
+   },
+   {
+    "prompt": "The slave revealing the plot was set free by the master.",
+    "answer": "ὁ τὴν ἐπιβουλὴν δηλῶν δοῦλος ὑπὸ τοῦ δεσπότου ἠλευθερώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τὴν",
+     "ἐπιβουλὴν",
+     "δηλῶν",
+     "δοῦλος",
+     "ὑπὸ",
+     "τοῦ",
+     "δεσπότου",
+     "ἠλευθερώθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t24",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "While the general was drawing up the army, the enemy attacked.",
+    "answer": "τοῦ στρατηγοῦ τὸ στράτευμα τάττοντος οἱ πολέμιοι προσέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "τὸ",
+     "στράτευμα",
+     "τάττοντος",
+     "οἱ",
+     "πολέμιοι",
+     "προσέβαλον"
+    ]
+   },
+   {
+    "prompt": "Seeing her son returning, the mother rejoiced.",
+    "answer": "τὸν υἱὸν ἐπανιόντα ἰδοῦσα ἡ μήτηρ ἐχάρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "υἱὸν",
+     "ἐπανιόντα",
+     "ἰδοῦσα",
+     "ἡ",
+     "μήτηρ",
+     "ἐχάρη"
+    ]
+   },
+   {
+    "prompt": "The woman who had been saved by the god dedicated a robe.",
+    "answer": "ἡ ὑπὸ τοῦ θεοῦ σωθεῖσα πέπλον ἀνέθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ὑπὸ",
+     "τοῦ",
+     "θεοῦ",
+     "σωθεῖσα",
+     "πέπλον",
+     "ἀνέθηκεν"
+    ]
+   },
+   {
+    "prompt": "Standing before the gates, the herald announced the victory.",
+    "answer": "πρὸ τῶν πυλῶν στὰς ὁ κῆρυξ τὴν νίκην ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸ",
+     "τῶν",
+     "πυλῶν",
+     "στὰς",
+     "ὁ",
+     "κῆρυξ",
+     "τὴν",
+     "νίκην",
+     "ἤγγειλεν"
+    ]
+   }
+  ]
+ }
+]

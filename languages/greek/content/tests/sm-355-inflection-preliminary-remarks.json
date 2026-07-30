@@ -1,0 +1,1165 @@
+[
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t1",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The soldiers were arming themselves against the barbarians.",
+    "answer": "οἱ στρατιῶται πρὸς τοὺς βαρβάρους ὡπλίζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πρὸς",
+     "τοὺς",
+     "βαρβάρους",
+     "ὡπλίζοντο"
+    ]
+   },
+   {
+    "prompt": "The general nobly defended himself against the enemy.",
+    "answer": "ὁ στρατηγὸς γενναίως τοὺς πολεμίους ἠμύνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "γενναίως",
+     "τοὺς",
+     "πολεμίους",
+     "ἠμύνατο"
+    ]
+   },
+   {
+    "prompt": "After washing herself in the river, the maiden returned home.",
+    "answer": "ἡ παρθένος ἐν τῷ ποταμῷ λουσαμένη οἴκαδε ἐπανῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "ἐν",
+     "τῷ",
+     "ποταμῷ",
+     "λουσαμένη",
+     "οἴκαδε",
+     "ἐπανῆλθεν"
+    ]
+   },
+   {
+    "prompt": "The citizens are preparing themselves for the coming war.",
+    "answer": "οἱ πολῖται πρὸς τὸν μέλλοντα πόλεμον παρασκευάζονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "πρὸς",
+     "τὸν",
+     "μέλλοντα",
+     "πόλεμον",
+     "παρασκευάζονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t2",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The old man reflected on the dangers of the journey.",
+    "answer": "ὁ γέρων τοὺς τῆς ὁδοῦ κινδύνους ἐνεθυμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τοὺς",
+     "τῆς",
+     "ὁδοῦ",
+     "κινδύνους",
+     "ἐνεθυμήθη"
+    ]
+   },
+   {
+    "prompt": "The king graciously granted freedom to the captives.",
+    "answer": "ὁ βασιλεὺς τοῖς αἰχμαλώτοις τὴν ἐλευθερίαν ἐχαρίσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τοῖς",
+     "αἰχμαλώτοις",
+     "τὴν",
+     "ἐλευθερίαν",
+     "ἐχαρίσατο"
+    ]
+   },
+   {
+    "prompt": "We wished to become friends to the Byzantines.",
+    "answer": "ἐβουλήθημεν τοῖς Βυζαντίοις φίλοι γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλήθημεν",
+     "τοῖς",
+     "Βυζαντίοις",
+     "φίλοι",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "The general, perceiving the ambush, led the army back.",
+    "answer": "ὁ στρατηγὸς τὴν ἐνέδραν αἰσθόμενος τὸ στράτευμα ἀπήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "ἐνέδραν",
+     "αἰσθόμενος",
+     "τὸ",
+     "στράτευμα",
+     "ἀπήγαγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t3",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The city was betrayed by the guards during the night.",
+    "answer": "ἡ πόλις ὑπὸ τῶν φυλάκων νυκτὸς προεδόθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ὑπὸ",
+     "τῶν",
+     "φυλάκων",
+     "νυκτὸς",
+     "προεδόθη"
+    ]
+   },
+   {
+    "prompt": "These things were done by the ambassadors on behalf of peace.",
+    "answer": "ταῦτα ὑπὸ τῶν πρέσβεων ὑπὲρ τῆς εἰρήνης ἐπράχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ὑπὸ",
+     "τῶν",
+     "πρέσβεων",
+     "ὑπὲρ",
+     "τῆς",
+     "εἰρήνης",
+     "ἐπράχθη"
+    ]
+   },
+   {
+    "prompt": "The soldiers were being pursued by the cavalry into the mountains.",
+    "answer": "οἱ στρατιῶται ὑπὸ τῶν ἱππέων εἰς τὰ ὄρη ἐδιώκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ὑπὸ",
+     "τῶν",
+     "ἱππέων",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἐδιώκοντο"
+    ]
+   },
+   {
+    "prompt": "Great honors will be given to the brave by the city.",
+    "answer": "μεγάλαι τιμαὶ τοῖς ἀνδρείοις ὑπὸ τῆς πόλεως δοθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεγάλαι",
+     "τιμαὶ",
+     "τοῖς",
+     "ἀνδρείοις",
+     "ὑπὸ",
+     "τῆς",
+     "πόλεως",
+     "δοθήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t4",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "We must honor the gods and obey the laws.",
+    "answer": "τοὺς θεοὺς τιμητέον καὶ τοῖς νόμοις πειστέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "θεοὺς",
+     "τιμητέον",
+     "καὶ",
+     "τοῖς",
+     "νόμοις",
+     "πειστέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The city must be helped by all the citizens.",
+    "answer": "ἡ πόλις πᾶσι τοῖς πολίταις ὠφελητέα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "πᾶσι",
+     "τοῖς",
+     "πολίταις",
+     "ὠφελητέα",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "We must not neglect the safety of our allies.",
+    "answer": "οὐκ ἀμελητέον ἡμῖν ἐστι τῆς τῶν συμμάχων σωτηρίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀμελητέον",
+     "ἡμῖν",
+     "ἐστι",
+     "τῆς",
+     "τῶν",
+     "συμμάχων",
+     "σωτηρίας"
+    ]
+   },
+   {
+    "prompt": "You must endure the present toils bravely.",
+    "answer": "τοὺς παρόντας πόνους ἀνδρείως ὑμῖν οἰστέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "παρόντας",
+     "πόνους",
+     "ἀνδρείως",
+     "ὑμῖν",
+     "οἰστέον",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t5",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "To rule justly seems more difficult than to obey.",
+    "answer": "τὸ δικαίως ἄρχειν χαλεπώτερον φαίνεται τοῦ πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "δικαίως",
+     "ἄρχειν",
+     "χαλεπώτερον",
+     "φαίνεται",
+     "τοῦ",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "Those who honor virtue are honored by all.",
+    "answer": "οἱ τὴν ἀρετὴν τιμῶντες ὑπὸ πάντων τιμῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὴν",
+     "ἀρετὴν",
+     "τιμῶντες",
+     "ὑπὸ",
+     "πάντων",
+     "τιμῶνται"
+    ]
+   },
+   {
+    "prompt": "The wise man, though he has learned many things, still wishes to learn.",
+    "answer": "ὁ σοφὸς πολλὰ μαθὼν ὅμως ἔτι μανθάνειν βούλεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "πολλὰ",
+     "μαθὼν",
+     "ὅμως",
+     "ἔτι",
+     "μανθάνειν",
+     "βούλεται"
+    ]
+   },
+   {
+    "prompt": "The general said that the enemy had been conquered.",
+    "answer": "ὁ στρατηγὸς ἔφη τοὺς πολεμίους νενικῆσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἔφη",
+     "τοὺς",
+     "πολεμίους",
+     "νενικῆσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t6",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The father stopped the boy, and himself ceased from his anger.",
+    "answer": "ὁ πατὴρ τὸν παῖδα ἔπαυσε καὶ αὐτὸς τῆς ὀργῆς ἐπαύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατὴρ",
+     "τὸν",
+     "παῖδα",
+     "ἔπαυσε",
+     "καὶ",
+     "αὐτὸς",
+     "τῆς",
+     "ὀργῆς",
+     "ἐπαύσατο"
+    ]
+   },
+   {
+    "prompt": "The citizens chose him general and provided money for the war.",
+    "answer": "οἱ πολῖται αὐτὸν στρατηγὸν εἵλοντο καὶ χρήματα εἰς τὸν πόλεμον παρέσχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "αὐτὸν",
+     "στρατηγὸν",
+     "εἵλοντο",
+     "καὶ",
+     "χρήματα",
+     "εἰς",
+     "τὸν",
+     "πόλεμον",
+     "παρέσχον"
+    ]
+   },
+   {
+    "prompt": "The citizens established laws for themselves.",
+    "answer": "οἱ πολῖται ἑαυτοῖς νόμους ἔθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἑαυτοῖς",
+     "νόμους",
+     "ἔθεντο"
+    ]
+   },
+   {
+    "prompt": "Having ransomed his son, the old man led him home.",
+    "answer": "ὁ γέρων τὸν υἱὸν λυσάμενος οἴκαδε ἀπήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τὸν",
+     "υἱὸν",
+     "λυσάμενος",
+     "οἴκαδε",
+     "ἀπήγαγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t7",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The young men were training themselves for the contest in the gymnasium.",
+    "answer": "οἱ νεανίαι ἐν τῷ γυμνασίῳ πρὸς τὸν ἀγῶνα ἐγυμνάζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "ἐν",
+     "τῷ",
+     "γυμνασίῳ",
+     "πρὸς",
+     "τὸν",
+     "ἀγῶνα",
+     "ἐγυμνάζοντο"
+    ]
+   },
+   {
+    "prompt": "The general ransomed the prisoners for himself with much gold.",
+    "answer": "ὁ στρατηγὸς τοὺς αἰχμαλώτους πολλῷ χρυσῷ ἐλύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "πολλῷ",
+     "χρυσῷ",
+     "ἐλύσατο"
+    ]
+   },
+   {
+    "prompt": "The citizens chose wise men as lawgivers for themselves.",
+    "answer": "οἱ πολῖται σοφοὺς ἄνδρας νομοθέτας εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "σοφοὺς",
+     "ἄνδρας",
+     "νομοθέτας",
+     "εἵλοντο"
+    ]
+   },
+   {
+    "prompt": "Before the festival the woman put a beautiful cloak around herself.",
+    "answer": "ἡ γυνὴ πρὸ τῆς ἑορτῆς καλὸν ἱμάτιον περιεβάλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "πρὸ",
+     "τῆς",
+     "ἑορτῆς",
+     "καλὸν",
+     "ἱμάτιον",
+     "περιεβάλετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t8",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The bridge was destroyed by the enemy during the night.",
+    "answer": "ἡ γέφυρα ὑπὸ τῶν πολεμίων νυκτὸς διεφθάρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γέφυρα",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "νυκτὸς",
+     "διεφθάρη"
+    ]
+   },
+   {
+    "prompt": "Many trophies were set up by the Athenians after the battle.",
+    "answer": "πολλὰ τρόπαια ὑπὸ τῶν Ἀθηναίων μετὰ τὴν μάχην ἱδρύθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "τρόπαια",
+     "ὑπὸ",
+     "τῶν",
+     "Ἀθηναίων",
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "ἱδρύθη"
+    ]
+   },
+   {
+    "prompt": "The messenger was sent by the king to the allies.",
+    "answer": "ὁ ἄγγελος ὑπὸ τοῦ βασιλέως πρὸς τοὺς συμμάχους ἐπέμφθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ὑπὸ",
+     "τοῦ",
+     "βασιλέως",
+     "πρὸς",
+     "τοὺς",
+     "συμμάχους",
+     "ἐπέμφθη"
+    ]
+   },
+   {
+    "prompt": "The truth will be revealed by time itself.",
+    "answer": "ἡ ἀλήθεια ὑπὸ αὐτοῦ τοῦ χρόνου δηλωθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "ὑπὸ",
+     "αὐτοῦ",
+     "τοῦ",
+     "χρόνου",
+     "δηλωθήσεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t9",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The soldiers followed the general into battle bravely.",
+    "answer": "οἱ στρατιῶται τῷ στρατηγῷ εἰς τὴν μάχην ἀνδρείως εἵποντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τῷ",
+     "στρατηγῷ",
+     "εἰς",
+     "τὴν",
+     "μάχην",
+     "ἀνδρείως",
+     "εἵποντο"
+    ]
+   },
+   {
+    "prompt": "The ambassadors arrived at the city on the third day.",
+    "answer": "οἱ πρέσβεις τῇ τρίτῃ ἡμέρᾳ εἰς τὴν πόλιν ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "τῇ",
+     "τρίτῃ",
+     "ἡμέρᾳ",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "The old man feared the anger of the gods.",
+    "answer": "ὁ γέρων τὴν τῶν θεῶν ὀργὴν ἐφοβήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τὴν",
+     "τῶν",
+     "θεῶν",
+     "ὀργὴν",
+     "ἐφοβήθη"
+    ]
+   },
+   {
+    "prompt": "The philosopher conversed with the young men about virtue.",
+    "answer": "ὁ φιλόσοφος τοῖς νεανίαις περὶ ἀρετῆς διελέχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τοῖς",
+     "νεανίαις",
+     "περὶ",
+     "ἀρετῆς",
+     "διελέχθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t10",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The river must be crossed before dawn.",
+    "answer": "ὁ ποταμὸς πρὸ τῆς ἕω διαβατέος ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμὸς",
+     "πρὸ",
+     "τῆς",
+     "ἕω",
+     "διαβατέος",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "We must guard against the plots of our enemies.",
+    "answer": "τὰς τῶν ἐχθρῶν ἐπιβουλὰς φυλακτέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "τῶν",
+     "ἐχθρῶν",
+     "ἐπιβουλὰς",
+     "φυλακτέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The truth must be told even to those who are angry.",
+    "answer": "ἡ ἀλήθεια καὶ τοῖς ὀργιζομένοις λεκτέα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "καὶ",
+     "τοῖς",
+     "ὀργιζομένοις",
+     "λεκτέα",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Death must not be feared by the brave.",
+    "answer": "ὁ θάνατος τοῖς ἀνδρείοις οὐ φοβητέος ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θάνατος",
+     "τοῖς",
+     "ἀνδρείοις",
+     "οὐ",
+     "φοβητέος",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t11",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "Those who fight on behalf of the fatherland are worthy of honor.",
+    "answer": "οἱ ὑπὲρ τῆς πατρίδος μαχόμενοι τιμῆς ἄξιοί εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχόμενοι",
+     "τιμῆς",
+     "ἄξιοί",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "The general, having drawn up the army, awaited the enemy.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα τάξας τοὺς πολεμίους ἀνέμενεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "τάξας",
+     "τοὺς",
+     "πολεμίους",
+     "ἀνέμενεν"
+    ]
+   },
+   {
+    "prompt": "We saw the children playing in the marketplace.",
+    "answer": "τοὺς παῖδας ἐν τῇ ἀγορᾷ παίζοντας εἴδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "παῖδας",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "παίζοντας",
+     "εἴδομεν"
+    ]
+   },
+   {
+    "prompt": "The city, having been captured by the enemy, was burned.",
+    "answer": "ἡ πόλις ὑπὸ τῶν πολεμίων ληφθεῖσα ἐνεπρήσθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "ληφθεῖσα",
+     "ἐνεπρήσθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t12",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "To die on behalf of one's country is noble.",
+    "answer": "τὸ ὑπὲρ τῆς πατρίδος ἀποθνῄσκειν καλόν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκειν",
+     "καλόν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The wise fear to do wrong more than to suffer it.",
+    "answer": "οἱ σοφοὶ τὸ ἀδικεῖν μᾶλλον ἢ τὸ ἀδικεῖσθαι φοβοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "τὸ",
+     "ἀδικεῖν",
+     "μᾶλλον",
+     "ἢ",
+     "ἀδικεῖσθαι",
+     "φοβοῦνται"
+    ]
+   },
+   {
+    "prompt": "It is not easy to persuade an angry crowd.",
+    "answer": "οὐ ῥᾴδιόν ἐστιν ὄχλον ὀργιζόμενον πεῖσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "ῥᾴδιόν",
+     "ἐστιν",
+     "ὄχλον",
+     "ὀργιζόμενον",
+     "πεῖσαι"
+    ]
+   },
+   {
+    "prompt": "The soldiers desired to return home after the war.",
+    "answer": "οἱ στρατιῶται μετὰ τὸν πόλεμον οἴκαδε ἐπανελθεῖν ἐπεθύμουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "μετὰ",
+     "τὸν",
+     "πόλεμον",
+     "οἴκαδε",
+     "ἐπανελθεῖν",
+     "ἐπεθύμουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t13",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The soldiers, fearing the enemy, armed themselves for battle.",
+    "answer": "οἱ στρατιῶται τοὺς πολεμίους φοβούμενοι εἰς μάχην ὡπλίζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοὺς",
+     "πολεμίους",
+     "φοβούμενοι",
+     "εἰς",
+     "μάχην",
+     "ὡπλίζοντο"
+    ]
+   },
+   {
+    "prompt": "The citizens bravely defended themselves against the invaders.",
+    "answer": "οἱ πολῖται τοὺς εἰσβαλόντας ἀνδρείως ἠμύνοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τοὺς",
+     "εἰσβαλόντας",
+     "ἀνδρείως",
+     "ἠμύνοντο"
+    ]
+   },
+   {
+    "prompt": "The king kept procuring money for himself from the allies.",
+    "answer": "ὁ βασιλεὺς παρὰ τῶν συμμάχων χρήματα ἐπορίζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "παρὰ",
+     "τῶν",
+     "συμμάχων",
+     "χρήματα",
+     "ἐπορίζετο"
+    ]
+   },
+   {
+    "prompt": "After the labor the young men washed themselves in the river.",
+    "answer": "μετὰ τὸν πόνον οἱ νεανίαι ἐν τῷ ποταμῷ ἐλούοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετὰ",
+     "τὸν",
+     "πόνον",
+     "οἱ",
+     "νεανίαι",
+     "ἐν",
+     "τῷ",
+     "ποταμῷ",
+     "ἐλούοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t14",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The temple, which the ancients built, was burned down by the barbarians.",
+    "answer": "ὁ νεώς, ὃν οἱ παλαιοὶ ᾠκοδόμησαν, ὑπὸ τῶν βαρβάρων κατεκαύθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεώς",
+     "ὃν",
+     "οἱ",
+     "παλαιοὶ",
+     "ᾠκοδόμησαν",
+     "ὑπὸ",
+     "τῶν",
+     "βαρβάρων",
+     "κατεκαύθη"
+    ]
+   },
+   {
+    "prompt": "Those who betray the city will be punished by the citizens.",
+    "answer": "οἱ τὴν πόλιν προδιδόντες ὑπὸ τῶν πολιτῶν κολασθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὴν",
+     "πόλιν",
+     "προδιδόντες",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "κολασθήσονται"
+    ]
+   },
+   {
+    "prompt": "Many things have been written by the poets about this war.",
+    "answer": "πολλὰ ὑπὸ τῶν ποιητῶν περὶ τούτου τοῦ πολέμου γέγραπται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "ὑπὸ",
+     "τῶν",
+     "ποιητῶν",
+     "περὶ",
+     "τούτου",
+     "τοῦ",
+     "πολέμου",
+     "γέγραπται"
+    ]
+   },
+   {
+    "prompt": "The prisoners were being led into the city by the guards.",
+    "answer": "οἱ αἰχμάλωτοι ὑπὸ τῶν φυλάκων εἰς τὴν πόλιν ἤγοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ὑπὸ",
+     "τῶν",
+     "φυλάκων",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "ἤγοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t15",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "Wishing to gratify the people, the orator spoke thus.",
+    "answer": "ὁ ῥήτωρ τῷ δήμῳ χαρίζεσθαι βουλόμενος οὕτως ἔλεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τῷ",
+     "δήμῳ",
+     "χαρίζεσθαι",
+     "βουλόμενος",
+     "οὕτως",
+     "ἔλεξεν"
+    ]
+   },
+   {
+    "prompt": "The general reflected on the dangers of the road.",
+    "answer": "ὁ στρατηγὸς τοὺς τῆς ὁδοῦ κινδύνους ἐνεθυμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "τῆς",
+     "ὁδοῦ",
+     "κινδύνους",
+     "ἐνεθυμήθη"
+    ]
+   },
+   {
+    "prompt": "On the fifth day the soldiers arrived at the sea.",
+    "answer": "οἱ στρατιῶται πέμπτῃ ἡμέρᾳ εἰς τὴν θάλατταν ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πέμπτῃ",
+     "ἡμέρᾳ",
+     "εἰς",
+     "τὴν",
+     "θάλατταν",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "The enemy received the ambassadors kindly and fought no longer.",
+    "answer": "οἱ πολέμιοι τοὺς πρέσβεις φιλοφρόνως ἐδέξαντο καὶ οὐκέτι ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τοὺς",
+     "πρέσβεις",
+     "φιλοφρόνως",
+     "ἐδέξαντο",
+     "καὶ",
+     "οὐκέτι",
+     "ἐμάχοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t16",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "For the young, learning is more pleasant than teaching.",
+    "answer": "τοῖς νέοις τὸ μανθάνειν ἥδιόν ἐστι τοῦ διδάσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "νέοις",
+     "τὸ",
+     "μανθάνειν",
+     "ἥδιόν",
+     "ἐστι",
+     "τοῦ",
+     "διδάσκειν"
+    ]
+   },
+   {
+    "prompt": "On account of desiring to rule, many men have done wrong.",
+    "answer": "διὰ τὸ ἐπιθυμεῖν ἄρχειν πολλοὶ ἠδίκησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τὸ",
+     "ἐπιθυμεῖν",
+     "ἄρχειν",
+     "πολλοὶ",
+     "ἠδίκησαν"
+    ]
+   },
+   {
+    "prompt": "The Athenians were eager to free the Greeks from the barbarians.",
+    "answer": "οἱ Ἀθηναῖοι τοὺς Ἕλληνας ἀπὸ τῶν βαρβάρων ἐλευθεροῦν ἐπεθύμουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τοὺς",
+     "Ἕλληνας",
+     "ἀπὸ",
+     "τῶν",
+     "βαρβάρων",
+     "ἐλευθεροῦν",
+     "ἐπεθύμουν"
+    ]
+   },
+   {
+    "prompt": "It is difficult to obey those who rule badly.",
+    "answer": "χαλεπόν ἐστι τοῖς κακῶς ἄρχουσι πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστι",
+     "τοῖς",
+     "κακῶς",
+     "ἄρχουσι",
+     "πείθεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t17",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "When the general had died in the battle, the soldiers fled to the mountains.",
+    "answer": "τοῦ στρατηγοῦ ἐν τῇ μάχῃ ἀποθανόντος οἱ στρατιῶται εἰς τὰ ὄρη ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀποθανόντος",
+     "οἱ",
+     "στρατιῶται",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The men captured in the war were sold.",
+    "answer": "οἱ ἐν τῷ πολέμῳ ληφθέντες ἄνδρες ἐπράθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "ληφθέντες",
+     "ἄνδρες",
+     "ἐπράθησαν"
+    ]
+   },
+   {
+    "prompt": "The general, encouraging his soldiers, led them against the enemy.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας παρακελευόμενος πρὸς τοὺς πολεμίους ἦγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "παρακελευόμενος",
+     "πρὸς",
+     "πολεμίους",
+     "ἦγεν"
+    ]
+   },
+   {
+    "prompt": "They sent messengers to announce the victory to the citizens.",
+    "answer": "ἀγγέλους ἔπεμψαν τοῖς πολίταις τὴν νίκην ἀγγελοῦντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγγέλους",
+     "ἔπεμψαν",
+     "τοῖς",
+     "πολίταις",
+     "τὴν",
+     "νίκην",
+     "ἀγγελοῦντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-355-inflection-preliminary-remarks-t18",
+  "sectionId": "sm-355-inflection-preliminary-remarks",
+  "questions": [
+   {
+    "prompt": "The good citizen must obey the laws of the city.",
+    "answer": "τῷ ἀγαθῷ πολίτῃ τοῖς τῆς πόλεως νόμοις πειστέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "ἀγαθῷ",
+     "πολίτῃ",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "νόμοις",
+     "πειστέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "This war must be waged by all the Greeks.",
+    "answer": "οὗτος ὁ πόλεμος πᾶσι τοῖς Ἕλλησι πολεμητέος ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "πόλεμος",
+     "πᾶσι",
+     "τοῖς",
+     "Ἕλλησι",
+     "πολεμητέος",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Virtue is teachable, as Protagoras used to say.",
+    "answer": "ἡ ἀρετὴ διδακτή ἐστιν, ὡς ὁ Πρωταγόρας ἔλεγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀρετὴ",
+     "διδακτή",
+     "ἐστιν",
+     "ὡς",
+     "ὁ",
+     "Πρωταγόρας",
+     "ἔλεγεν"
+    ]
+   },
+   {
+    "prompt": "The mountain, covered with snow, was impassable for the army.",
+    "answer": "τὸ ὄρος χιόνι κεκαλυμμένον τῷ στρατεύματι ἄβατον ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ὄρος",
+     "χιόνι",
+     "κεκαλυμμένον",
+     "τῷ",
+     "στρατεύματι",
+     "ἄβατον",
+     "ἦν"
+    ]
+   }
+  ]
+ }
+]
