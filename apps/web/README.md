@@ -1,8 +1,13 @@
-# Latina on the web
+# The tutor on the web
 
 The same tutor as the CLI, as a page you can install on a phone. No backend, no
 account, and nothing calls a model — the lessons are static files and your
 progress is yours.
+
+One build serves one language, so each is its own install with its own icon and
+its own progress: **Latina** for Latin, **Ἑλληνικά** for Ancient Greek. Pick one
+from <https://qbalin.github.io/grammar-drills/>, or install both — they share
+nothing and cannot overwrite each other.
 
 ## For students
 
@@ -15,8 +20,9 @@ It then opens like any other app and **works with no signal**. The first launch
 needs a connection so it can save the lessons to the device; after that it does
 not, except to sync (below), which is optional.
 
-**How it goes.** You get an English sentence and write it in Latin. Nothing
-marks you — you press Submit, see your sentence beside the reference, and say
+**How it goes.** You get an English sentence and write it in the language you
+are learning. Nothing marks you — you press Submit, see your sentence beside the
+reference, and say
 how it went: *Again*, *Hard*, *Good*, *Easy*. That grade schedules when the
 topic comes back, and each button shows when. If you can't face typing on a
 phone, **Reveal** shows the answer and you grade yourself the same way.
@@ -26,11 +32,12 @@ so you start where you actually are rather than at chapter one.
 
 Two more things worth knowing:
 
-- **§ grammar** opens the section from Bennett's grammar, in full, whenever you
-  want it. On a topic you have not met, it opens by itself first.
-- **+ record a word** takes any word as you met it — `manibus`, `amāvērunt` —
-  and works out the dictionary headword. Those words then come back for review
-  on their own schedule.
+- **§ grammar** opens the section from the source grammar — Bennett for Latin,
+  Smyth for Ancient Greek — in full, whenever you want it. On a topic you have
+  not met, it opens by itself first.
+- **+ record a word** takes any word as you met it — `manibus`, `amāvērunt`,
+  `λόγοις` — and works out the dictionary headword. Those words then come back
+  for review on their own schedule.
 
 ## Keeping your progress
 
