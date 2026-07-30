@@ -440,9 +440,15 @@ whether a number moved rather than only whether it still clears a threshold.
 
 ## Appendix A — the reference database contract
 
-Resolved from `--ref`, then `$LANG_REF`, then
-`../language_learning/languages/<pack>`. This repo reads these and never writes
-them.
+Resolved from `--ref`, then `$LANG_REF`, then the sibling checkout at
+`../language_learning/languages/<pack>` — trying both the pack id as written
+and its underscored spelling, because that project names `ancient_greek` what
+this one calls `ancient-greek`. A pack whose id is a single word is unaffected.
+This repo reads these and never writes them.
+
+`gen-tests` and `build-lemmas` cannot run without them and say which file is
+missing from which directory. The reports treat an absent reference as "gates
+skipped" instead; `--require-ref` turns that back into a failure.
 
 ```sql
 -- dictionary.db      (Latin: 885,996 entries / 2,492,884 forms)

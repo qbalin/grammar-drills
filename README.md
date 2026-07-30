@@ -489,6 +489,12 @@ limit resumes where it stopped. On a sustained limit it retries with a growing
 backoff and then stops, rather than marching through the remaining topics
 producing nothing.
 
+Calls per topic are budgeted from the deficit, so topping a topic up by two
+tests does not cost what writing it from nothing does. The ceiling (`--max`)
+defaults to whatever clears the pack's own largest target — set it by hand and
+a topic can no longer reach that target, which is a deficit `--fill` will chase
+forever without closing.
+
 `languages/latin/citations.mjs` rewrites the citations in `lemmas.json.gz` so
 verbs carry their principal parts and adjectives their terminations. The parts
 cannot be recovered from what is shipped — the form keys are folded, so the

@@ -59,15 +59,50 @@ export function loadLemmas(dir) {
   );
 }
 
-/** The reference dictionary/frequency dir: --ref, $LANG_REF, then the sibling. */
+/**
+ * The reference dictionary/frequency dir: --ref, $LANG_REF, then the sibling.
+ *
+ * The sibling project names its language directories with underscores
+ * (`ancient_greek`) and this one names its packs with hyphens
+ * (`ancient-greek`), so a single guess misses for every pack whose id is more
+ * than one word. It missed silently, too: the caller went straight to
+ * `new DatabaseSync(...)` and got `unable to open database file` with no path
+ * in it, which reads like a corrupt database rather than a wrong directory.
+ * Try both spellings and keep the first that is actually there.
+ */
 export function refDir(profile, argv = process.argv.slice(2)) {
   const i = argv.indexOf("--ref");
   if (i >= 0) return argv[i + 1];
-  return (
+  const explicit =
     process.env.LANG_REF ??
     // Kept for the pack that predates the rename.
-    (profile.id === "latin" ? process.env.LATIN_REF : undefined) ??
-    join(REPO, "..", "language_learning", "languages", profile.id)
+    (profile.id === "latin" ? process.env.LATIN_REF : undefined);
+  if (explicit) return explicit;
+  const siblings = join(REPO, "..", "language_learning", "languages");
+  const candidates = [profile.id, profile.id.replace(/-/g, "_")];
+  for (const name of candidates) {
+    if (existsSync(join(siblings, name, "dictionary.db"))) return join(siblings, name);
+  }
+  // Nothing found: hand back the canonical guess so the caller's own
+  // "is the reference here?" check reports a path a person can go and look at.
+  return join(siblings, profile.id);
+}
+
+/**
+ * Fail with the path when the reference databases are missing.
+ *
+ * `validate-pack` and `coverage-report` treat an absent reference as "gates
+ * skipped", which is right for them. `gen-tests` and `build-lemmas` cannot do
+ * their job without it and should say so in the one sentence that fixes it.
+ */
+export function requireRef(ref, profile) {
+  const missing = ["dictionary.db", "frequencies.db"].filter(
+    (db) => !existsSync(join(ref, db)),
+  );
+  if (!missing.length) return ref;
+  throw new Error(
+    `reference databases not found for ${profile.id}: ${missing.join(", ")} missing from ${ref}\n` +
+    `Point at them with --ref /path/to/languages/${profile.id} or LANG_REF=...`,
   );
 }
 

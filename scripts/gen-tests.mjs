@@ -32,8 +32,8 @@ import {
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { compileFold, plainText } from "@lang-tutor/core";
-import { loadProfile, packDir, refDir } from "./lib/pack.mjs";
-import { targetFor } from "./lib/target.mjs";
+import { loadProfile, packDir, refDir, requireRef } from "./lib/pack.mjs";
+import { TARGET_DEFAULTS, targetFor } from "./lib/target.mjs";
 
 const args = process.argv.slice(2);
 const opt = (name, def) => {
@@ -51,7 +51,7 @@ for (const flag of ["--fill", "--only-thin", "--plan"]) {
 const PACK = opt("--pack", packDir(process.argv.slice(2)));
 const profile = loadProfile(PACK);
 const config = (await import(pathToFileURL(join(PACK, "gen", "config.mjs")).href)).default;
-const REF = opt("--ref", refDir(profile, process.argv.slice(2)));
+const REF = requireRef(opt("--ref", refDir(profile, process.argv.slice(2))), profile);
 const OUT = join(PACK, "content", "tests");
 const STATS = join(PACK, "content", "gen-stats.json");
 const MODEL = config.model;
@@ -62,7 +62,20 @@ const QUESTIONS = config.questionsPerTest;
 const TARGET_OVERRIDE = args.indexOf("--target") >= 0 ? Number(opt("--target", 12)) : null;
 const targetOf = (topic) => TARGET_OVERRIDE ?? targetFor(topic, profile, config);
 const PER_CALL = Number(opt("--per", 6));
-const MAX_CALLS = Number(opt("--max", 4));
+// The ceiling on calls per topic has to clear the pack's own biggest target,
+// or the largest topics can never reach it. A flat 4 did not: the deficit
+// formula below asks for `ceil(25/6) + 1 = 5` calls to write a 25-test topic
+// and this clipped it to 4, which buys exactly 24 tests. Three topics in the
+// last run stopped one short for that reason, and `--fill` could not rescue
+// them — a re-run computes the same budget and clips it the same way, so the
+// deficit of 1 was permanent and invisible. Derive it instead.
+const BIGGEST_TARGET = Math.max(
+  TARGET_OVERRIDE ?? 0,
+  config.target?.maxTests ?? TARGET_DEFAULTS.maxTests,
+);
+const MAX_CALLS = Number(
+  opt("--max", Math.ceil(BIGGEST_TARGET / PER_CALL) + 1),
+);
 const SLEEP_MS = Number(opt("--sleep", 1500)); // pace calls to respect usage limits
 // How many dictionary misses one sentence may carry before it is dropped.
 const ALLOW_UNVERIFIED = Number(opt("--allow-unverified", config.allowUnverified));
