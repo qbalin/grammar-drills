@@ -14,6 +14,8 @@
  * A pack overrides the shape in `gen/config.mjs`; the defaults are calibrated
  * against a syllabus whose realized spread is 6–25 tests per topic.
  */
+import { plainText } from "@lang-tutor/core";
+
 const DEFAULTS = {
   minTests: 6,
   maxTests: 25,
@@ -28,7 +30,7 @@ export function targetFor(topic, profile, config = {}) {
     ...DEFAULTS,
     ...(config.target ?? {}),
   };
-  const over = Math.max(0, (topic.text?.length ?? 0) - baseChars);
+  const over = Math.max(0, plainText(topic.text ?? "").length - baseChars);
   const scaled = minTests + (maxTests - minTests) * (over / spanChars);
   return Math.min(maxTests, Math.max(minTests, Math.round(scaled)));
 }

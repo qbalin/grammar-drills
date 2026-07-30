@@ -31,7 +31,7 @@ import {
 } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { compileFold } from "@lang-tutor/core";
+import { compileFold, plainText } from "@lang-tutor/core";
 import { loadProfile, packDir, refDir } from "./lib/pack.mjs";
 import { targetFor } from "./lib/target.mjs";
 
@@ -205,7 +205,7 @@ function topicPrompt(topic, n, avoid) {
 
 Grammar point — ${profile.grammar.refPrefix}${topic.ref} ${topic.title}:
 """
-${topic.text}
+${plainText(topic.text)}
 """
 
 Write ${n} DISTINCT tests, each with exactly ${QUESTIONS} ${profile.l1.name}→${profile.l2.name} sentences, all exercising this grammar point. Make the tests differ from one another in vocabulary and structure.${
