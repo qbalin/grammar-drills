@@ -17,6 +17,16 @@ on:
       # did not re-run the checks.
       - "scripts/**"
       - ".github/workflows/deploy-web.yml"
+  # The same checks before the merge, not only after it. PR #4 merged a pack
+  # whose gates nobody had run in CI, which worked out and need not have.
+  # Building and validating is cheap; the deploy jobs below sit out a PR.
+  pull_request:
+    paths:
+      - "apps/web/**"
+      - "packages/core/**"
+      - "languages/**"
+      - "scripts/**"
+      - ".github/workflows/deploy-web.yml"
   workflow_dispatch:
 
 permissions:
@@ -82,8 +92,10 @@ jobs:
           node --import tsx scripts/grammar-report.mjs
           --pack languages/${{ matrix.pack }}
 
+  # Everything below publishes, so it has no business running on a PR.
   build:
     needs: packs
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -93,27 +105,59 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - name: Build
-        # Pages serves a project site from /<repo>/, and both the asset URLs and
-        # the service worker's scope have to agree with that.
+      # One build per language, each under its own path.
+      #
+      # The language is compiled in — the profile is aliased as a module, so the
+      # theme, the manifest, the icon, the strings and the dictionary cache name
+      # are all fixed at build time. There is no in-app switcher and adding one
+      # would be a much larger change. What makes two of them safe on one origin
+      # is that each pack namespaces its own storage keys; identical keys would
+      # be two languages writing over each other's progress.
+      #
+      # Pages takes one artifact per deployment, so the builds are collected into
+      # subdirectories of a single site rather than deployed separately. Both the
+      # asset URLs and the service worker's scope have to agree with the path a
+      # build is served from, which is what BASE_PATH sets.
+      #
+      # LANG_PACKS lists what to publish; LANG_PACKS_DRAFT lists which of those
+      # are still being written. A pack is validated immediately after it is
+      # built, so publishing means it passed its gates — except that a draft's
+      # question-coverage gates are reported and not enforced, because a pack
+      # midway through generating its questions fails them by definition and
+      # that is a thing to know rather than a broken build. Nothing about
+      # correctness is relaxed for a draft. Empty the variable when the set is
+      # finished, and the gates start deciding again.
+      - name: Build each language into its own path
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/
-          # One build per language. A second pack deploys from its own job with
-          # its own LANG_PACK and its own BASE_PATH — the storage keys and the
-          # dictionary cache name must differ, or two packs on one origin would
-          # share a progress file.
-          LANG_PACK: ${{ vars.LANG_PACK || 'latin' }}
-        run: pnpm --filter @lang-tutor/web build
-      # The syllabus and the question set have to hold up, not just compile.
-      # The reference databases are not available in CI, so the gates that need
-      # them report themselves skipped rather than passing quietly.
-      - name: Validate the language pack
+          LANG_PACKS: ${{ vars.LANG_PACKS || 'latin greek' }}
+          LANG_PACKS_DRAFT: ${{ vars.LANG_PACKS_DRAFT || 'greek' }}
+          REPO: ${{ github.event.repository.name }}
+        run: |
+          set -euo pipefail
+          for pack in $LANG_PACKS; do
+            echo "::group::$pack"
+            draft=""
+            case " $LANG_PACKS_DRAFT " in
+              *" $pack "*) draft="--allow-incomplete" ;;
+            esac
+            LANG_PACK="$pack" BASE_PATH="/$REPO/$pack/" \
+              pnpm --filter @lang-tutor/web build
+            # The syllabus and the question set have to hold up, not just
+            # compile. The reference databases are not in this repo, so the
+            # gates needing them report themselves skipped rather than passing
+            # quietly.
+            LANG_PACK="$pack" node --import tsx scripts/validate-pack.mjs \
+              --pack "languages/$pack" --built apps/web/public/content $draft
+            mkdir -p "site/$pack"
+            cp -R apps/web/dist/. "site/$pack/"
+            echo "::endgroup::"
+          done
+      # Something has to answer at the root, or the site's own URL 404s. Built
+      # from the packs' own profiles so a new language needs no edit here.
+      - name: Write the root index
         env:
-          LANG_PACK: ${{ vars.LANG_PACK || 'latin' }}
-        run: >
-          node --import tsx scripts/validate-pack.mjs
-          --pack languages/${{ vars.LANG_PACK || 'latin' }}
-          --built apps/web/public/content
+          LANG_PACKS: ${{ vars.LANG_PACKS || 'latin greek' }}
+        run: node scripts/build-site-index.mjs site
       # Pages must already be switched on for the repo, with Settings → Pages →
       # Source set to "GitHub Actions". That is a one-time manual step and
       # cannot be automated from here: `enablement: true` asks this action to
@@ -123,10 +167,11 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: apps/web/dist
+          path: site
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

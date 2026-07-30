@@ -1,0 +1,752 @@
+[
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t1",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The general's soldiers fled toward the sea.",
+    "answer": "οἱ τοῦ στρατηγοῦ στρατιῶται πρὸς τὴν θάλατταν ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "στρατιῶται",
+     "πρὸς",
+     "τὴν",
+     "θάλατταν",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "We admire the courage of the citizens.",
+    "answer": "θαυμάζομεν τὴν τῶν πολιτῶν ἀνδρείαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζομεν",
+     "τὴν",
+     "τῶν",
+     "πολιτῶν",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "The lion's teeth are terrible to the shepherds.",
+    "answer": "οἱ τοῦ λέοντος ὀδόντες δεινοί εἰσι τοῖς ποιμέσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοῦ",
+     "λέοντος",
+     "ὀδόντες",
+     "δεινοί",
+     "εἰσι",
+     "τοῖς",
+     "ποιμέσιν"
+    ]
+   },
+   {
+    "prompt": "He gave gifts worthy of the goddess.",
+    "answer": "δῶρα ἄξια τῆς θεᾶς ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῶρα",
+     "ἄξια",
+     "τῆς",
+     "θεᾶς",
+     "ἔδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t2",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The victories of the young men delighted the whole city.",
+    "answer": "αἱ τῶν νεανιῶν νῖκαι πᾶσαν τὴν πόλιν ηὔφραναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τῶν",
+     "νεανιῶν",
+     "νῖκαι",
+     "πᾶσαν",
+     "τὴν",
+     "πόλιν",
+     "ηὔφραναν"
+    ]
+   },
+   {
+    "prompt": "The opinions of the jurors were not just.",
+    "answer": "αἱ τῶν δικαστῶν γνῶμαι οὐ δίκαιαι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τῶν",
+     "δικαστῶν",
+     "γνῶμαι",
+     "οὐ",
+     "δίκαιαι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "Out of the tents the enemy carried off much booty.",
+    "answer": "ἐκ τῶν σκηνῶν οἱ πολέμιοι πολλὴν λείαν ἀνεκόμισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "τῶν",
+     "σκηνῶν",
+     "οἱ",
+     "πολέμιοι",
+     "πολλὴν",
+     "λείαν",
+     "ἀνεκόμισαν"
+    ]
+   },
+   {
+    "prompt": "The Muses honor the songs of the poets.",
+    "answer": "αἱ Μοῦσαι τὰς τῶν ποιητῶν ᾠδὰς τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "Μοῦσαι",
+     "τὰς",
+     "τῶν",
+     "ποιητῶν",
+     "ᾠδὰς",
+     "τιμῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t3",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The king's name was known to all the Greeks.",
+    "answer": "τὸ τοῦ βασιλέως ὄνομα πᾶσι τοῖς Ἕλλησιν γνωστὸν ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τοῦ",
+     "βασιλέως",
+     "ὄνομα",
+     "πᾶσι",
+     "τοῖς",
+     "Ἕλλησιν",
+     "γνωστὸν",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The bodies of the dead lay upon the plain.",
+    "answer": "τὰ τῶν νεκρῶν σώματα ἐν τῷ πεδίῳ ἔκειτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "νεκρῶν",
+     "σώματα",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ἔκειτο"
+    ]
+   },
+   {
+    "prompt": "We do not trust the words of the orators.",
+    "answer": "τοῖς τῶν ῥητόρων λόγοις οὐ πιστεύομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "τῶν",
+     "ῥητόρων",
+     "λόγοις",
+     "οὐ",
+     "πιστεύομεν"
+    ]
+   },
+   {
+    "prompt": "The general trusted the hopes of the soldiers.",
+    "answer": "ὁ στρατηγὸς ταῖς τῶν στρατιωτῶν ἐλπίσιν ἐπίστευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ταῖς",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐλπίσιν",
+     "ἐπίστευεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t4",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The graceful maidens danced in the marketplace.",
+    "answer": "αἱ χαρίεσσαι κόραι ἐν τῇ ἀγορᾷ ὠρχοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "χαρίεσσαι",
+     "κόραι",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ὠρχοῦντο"
+    ]
+   },
+   {
+    "prompt": "He considered the poet worthy of great honor.",
+    "answer": "τὸν ποιητὴν μεγάλης τιμῆς ἄξιον ἐνόμιζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ποιητὴν",
+     "μεγάλης",
+     "τιμῆς",
+     "ἄξιον",
+     "ἐνόμιζεν"
+    ]
+   },
+   {
+    "prompt": "We saw a graceful gift lying on the altar.",
+    "answer": "χαρίεν δῶρον ἐπὶ τῷ βωμῷ κείμενον εἴδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαρίεν",
+     "δῶρον",
+     "ἐπὶ",
+     "τῷ",
+     "βωμῷ",
+     "κείμενον",
+     "εἴδομεν"
+    ]
+   },
+   {
+    "prompt": "The deeds of just men are worthy of praise.",
+    "answer": "τὰ τῶν δικαίων ἔργα ἐπαίνου ἄξιά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "δικαίων",
+     "ἔργα",
+     "ἐπαίνου",
+     "ἄξιά",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t5",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The shouts of the fleeing men filled the camp.",
+    "answer": "αἱ τῶν φευγόντων βοαὶ τὸ στρατόπεδον ἐνέπλησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τῶν",
+     "φευγόντων",
+     "βοαὶ",
+     "τὸ",
+     "στρατόπεδον",
+     "ἐνέπλησαν"
+    ]
+   },
+   {
+    "prompt": "We heard the voices of the weeping women.",
+    "answer": "τὰς τῶν κλαιουσῶν γυναικῶν φωνὰς ἠκούσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "τῶν",
+     "κλαιουσῶν",
+     "γυναικῶν",
+     "φωνὰς",
+     "ἠκούσαμεν"
+    ]
+   },
+   {
+    "prompt": "The houses of those ruling were full of gold.",
+    "answer": "αἱ τῶν ἀρχόντων οἰκίαι χρυσοῦ μεσταὶ ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τῶν",
+     "ἀρχόντων",
+     "οἰκίαι",
+     "χρυσοῦ",
+     "μεσταὶ",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "He praised the toils of the laboring farmers.",
+    "answer": "τοὺς τῶν ἐργαζομένων γεωργῶν πόνους ἐπῄνεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "τῶν",
+     "ἐργαζομένων",
+     "γεωργῶν",
+     "πόνους",
+     "ἐπῄνεσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t6",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The temples of the gods stood upon the hills.",
+    "answer": "οἱ τῶν θεῶν ναοὶ ἐπὶ τοῖς λόφοις εἱστήκεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῶν",
+     "θεῶν",
+     "ναοὶ",
+     "ἐπὶ",
+     "τοῖς",
+     "λόφοις",
+     "εἱστήκεσαν"
+    ]
+   },
+   {
+    "prompt": "We were persuaded by the words of the wise man.",
+    "answer": "τοῖς τοῦ σοφοῦ λόγοις ἐπείσθημεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "τοῦ",
+     "σοφοῦ",
+     "λόγοις",
+     "ἐπείσθημεν"
+    ]
+   },
+   {
+    "prompt": "The evils of war are manifest to all.",
+    "answer": "τὰ τοῦ πολέμου κακὰ πᾶσι φανερά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τοῦ",
+     "πολέμου",
+     "κακὰ",
+     "πᾶσι",
+     "φανερά",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The rivers of the country flow toward the sea.",
+    "answer": "οἱ τῆς χώρας ποταμοὶ πρὸς τὴν θάλατταν ῥέουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῆς",
+     "χώρας",
+     "ποταμοὶ",
+     "πρὸς",
+     "τὴν",
+     "θάλατταν",
+     "ῥέουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t7",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The soldiers of the Athenians conquered the enemies both by land and by sea.",
+    "answer": "οἱ τῶν Ἀθηναίων στρατιῶται τοὺς πολεμίους καὶ κατὰ γῆν καὶ κατὰ θάλατταν ἐνίκησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῶν",
+     "Ἀθηναίων",
+     "στρατιῶται",
+     "τοὺς",
+     "πολεμίους",
+     "καὶ",
+     "κατὰ",
+     "γῆν",
+     "θάλατταν",
+     "ἐνίκησαν"
+    ]
+   },
+   {
+    "prompt": "The gifts of the goddess were pleasing to the citizens.",
+    "answer": "τὰ τῆς θεᾶς δῶρα τοῖς πολίταις ἀρεστὰ ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῆς",
+     "θεᾶς",
+     "δῶρα",
+     "τοῖς",
+     "πολίταις",
+     "ἀρεστὰ",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "We used to admire the wisdom of the poets and the courage of the generals.",
+    "answer": "τὴν τῶν ποιητῶν σοφίαν καὶ τὴν τῶν στρατηγῶν ἀνδρείαν ἐθαυμάζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "τῶν",
+     "ποιητῶν",
+     "σοφίαν",
+     "καὶ",
+     "στρατηγῶν",
+     "ἀνδρείαν",
+     "ἐθαυμάζομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t8",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The storm destroyed the ships of the merchants.",
+    "answer": "ὁ χειμὼν τὰς τῶν ἐμπόρων ναῦς διέφθειρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χειμὼν",
+     "τὰς",
+     "τῶν",
+     "ἐμπόρων",
+     "ναῦς",
+     "διέφθειρεν"
+    ]
+   },
+   {
+    "prompt": "We saw the tracks of the lion near the river.",
+    "answer": "τὰ τοῦ λέοντος ἴχνη πρὸς τῷ ποταμῷ εἴδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τοῦ",
+     "λέοντος",
+     "ἴχνη",
+     "πρὸς",
+     "τῷ",
+     "ποταμῷ",
+     "εἴδομεν"
+    ]
+   },
+   {
+    "prompt": "The heralds proclaimed the victory to the assembly.",
+    "answer": "οἱ κήρυκες τὴν νίκην τῇ ἐκκλησίᾳ ἐκήρυξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κήρυκες",
+     "τὴν",
+     "νίκην",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἐκήρυξαν"
+    ]
+   },
+   {
+    "prompt": "The virtue of good men is worthy of honor.",
+    "answer": "ἡ τῶν ἀγαθῶν ἀρετὴ τιμῆς ἀξία ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "ἀγαθῶν",
+     "ἀρετὴ",
+     "τιμῆς",
+     "ἀξία",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t9",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The children of the Greeks honored the gods with sacrifices.",
+    "answer": "οἱ τῶν Ἑλλήνων παῖδες τοὺς θεοὺς θυσίαις ἐτίμων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῶν",
+     "Ἑλλήνων",
+     "παῖδες",
+     "τοὺς",
+     "θεοὺς",
+     "θυσίαις",
+     "ἐτίμων"
+    ]
+   },
+   {
+    "prompt": "In winter the roads become difficult for the travelers.",
+    "answer": "ἐν τῷ χειμῶνι αἱ ὁδοὶ τοῖς ὁδοιπόροις χαλεπαὶ γίγνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῷ",
+     "χειμῶνι",
+     "αἱ",
+     "ὁδοὶ",
+     "τοῖς",
+     "ὁδοιπόροις",
+     "χαλεπαὶ",
+     "γίγνονται"
+    ]
+   },
+   {
+    "prompt": "The old man used to praise the deeds of the ancestors.",
+    "answer": "ὁ γέρων τὰ τῶν προγόνων ἔργα ἐπῄνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τὰ",
+     "τῶν",
+     "προγόνων",
+     "ἔργα",
+     "ἐπῄνει"
+    ]
+   },
+   {
+    "prompt": "The beauty of the maidens astonished the strangers.",
+    "answer": "τὸ τῶν παρθένων κάλλος τοὺς ξένους ἐξέπληξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τῶν",
+     "παρθένων",
+     "κάλλος",
+     "τοὺς",
+     "ξένους",
+     "ἐξέπληξεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t10",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The general led the army toward the camp of the enemies.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα πρὸς τὸ τῶν πολεμίων στρατόπεδον ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "πρὸς",
+     "τῶν",
+     "πολεμίων",
+     "στρατόπεδον",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "The tyrant feared the anger of the citizens.",
+    "answer": "ὁ τύραννος τὴν τῶν πολιτῶν ὀργὴν ἐφοβεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τὴν",
+     "τῶν",
+     "πολιτῶν",
+     "ὀργὴν",
+     "ἐφοβεῖτο"
+    ]
+   },
+   {
+    "prompt": "The wealth of the king was greater than the wealth of the whole city.",
+    "answer": "ὁ τοῦ βασιλέως πλοῦτος μείζων ἦν τοῦ τῆς ὅλης πόλεως πλούτου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "βασιλέως",
+     "πλοῦτος",
+     "μείζων",
+     "ἦν",
+     "τῆς",
+     "ὅλης",
+     "πόλεως",
+     "πλούτου"
+    ]
+   },
+   {
+    "prompt": "The waves of the sea kept breaking against the rocks.",
+    "answer": "τὰ τῆς θαλάττης κύματα πρὸς ταῖς πέτραις ἐρρήγνυτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῆς",
+     "θαλάττης",
+     "κύματα",
+     "πρὸς",
+     "ταῖς",
+     "πέτραις",
+     "ἐρρήγνυτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t11",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The words of the wise man persuaded the judges.",
+    "answer": "οἱ τοῦ σοφοῦ λόγοι τοὺς δικαστὰς ἔπεισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοῦ",
+     "σοφοῦ",
+     "λόγοι",
+     "τοὺς",
+     "δικαστὰς",
+     "ἔπεισαν"
+    ]
+   },
+   {
+    "prompt": "We heard the voices of the birds in the trees.",
+    "answer": "τὰς τῶν ὀρνίθων φωνὰς ἐν τοῖς δένδρεσιν ἠκούσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "τῶν",
+     "ὀρνίθων",
+     "φωνὰς",
+     "ἐν",
+     "τοῖς",
+     "δένδρεσιν",
+     "ἠκούσαμεν"
+    ]
+   },
+   {
+    "prompt": "The strength of the horses saved the men from danger.",
+    "answer": "ἡ τῶν ἵππων ἰσχὺς τοὺς ἄνδρας ἐκ τοῦ κινδύνου ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "ἵππων",
+     "ἰσχὺς",
+     "τοὺς",
+     "ἄνδρας",
+     "ἐκ",
+     "τοῦ",
+     "κινδύνου",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "The land of the Athenians used to nourish worthy citizens.",
+    "answer": "ἡ τῶν Ἀθηναίων γῆ χρηστοὺς πολίτας ἔτρεφεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "Ἀθηναίων",
+     "γῆ",
+     "χρηστοὺς",
+     "πολίτας",
+     "ἔτρεφεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-205-general-rules-for-the-accent-of-nouns-t12",
+  "sectionId": "sm-205-general-rules-for-the-accent-of-nouns",
+  "questions": [
+   {
+    "prompt": "The wounds of the soldiers were healed by the physician.",
+    "answer": "τὰ τῶν στρατιωτῶν τραύματα ὑπὸ τοῦ ἰατροῦ ἐθεραπεύθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "στρατιωτῶν",
+     "τραύματα",
+     "ὑπὸ",
+     "τοῦ",
+     "ἰατροῦ",
+     "ἐθεραπεύθη"
+    ]
+   },
+   {
+    "prompt": "The sailors feared the darkness of the night.",
+    "answer": "οἱ ναῦται τὸ τῆς νυκτὸς σκότος ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τὸ",
+     "τῆς",
+     "νυκτὸς",
+     "σκότος",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "The messengers reported the sufferings of the army.",
+    "answer": "οἱ ἄγγελοι τὰ τοῦ στρατεύματος πάθη ἀπήγγειλαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "τὰ",
+     "τοῦ",
+     "στρατεύματος",
+     "πάθη",
+     "ἀπήγγειλαν"
+    ]
+   },
+   {
+    "prompt": "The excellence of the young men delighted their fathers.",
+    "answer": "ἡ τῶν νεανιῶν ἀρετὴ τοὺς πατέρας ηὔφρανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "νεανιῶν",
+     "ἀρετὴ",
+     "τοὺς",
+     "πατέρας",
+     "ηὔφρανεν"
+    ]
+   }
+  ]
+ }
+]

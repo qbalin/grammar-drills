@@ -8,3 +8,6 @@ dist/
 # every web build; committing it would duplicate 5 MB already in the repo.
 apps/web/public/content/
 apps/web/public/icons/
+
+# The generation stats lock, held only while a run appends its record.
+languages/*/content/gen-stats.json.lock

@@ -48,6 +48,31 @@ const perTopic = grammar.map((t) => {
   return { topic: t, tests: list.length, questions, target: targetFor(t, profile) };
 });
 
+// --- C0: every test set belongs to a topic that exists -----------------------
+
+/*
+ * The other direction of C1, and the one that hides.
+ *
+ * Test files are named after their topic, so renaming a topic — which a change
+ * to the grammar parser's titles does — orphans the file that was written under
+ * the old name. Nothing else notices: the tests are still counted, the totals
+ * still go up, the topic they claim is simply not in the syllabus, and the
+ * questions are shipped where no student can reach them. Greek's
+ * `sm-228-second-declension-o-stems` survived a parser change, a build, a
+ * commit and a green CI run that way.
+ *
+ * This is a defect rather than a shortfall, so it is not scaled or thresholded:
+ * either delete the file or regenerate it under the topic's current id.
+ */
+const known = new Set(grammar.map((t) => t.id));
+const orphans = Object.keys(tests).filter((id) => !known.has(id));
+gates.push(
+  gate("C0", orphans.length === 0,
+    orphans.length
+      ? `${orphans.length} test set(s) name no topic in the syllabus — delete or regenerate: ${orphans.join(", ")}`
+      : `all ${Object.keys(tests).length} test sets name a topic that exists`),
+);
+
 // --- C1: every teachable topic has questions at all --------------------------
 
 const none = perTopic.filter((r) => r.tests === 0);
@@ -219,4 +244,32 @@ const ok = report(
   gates,
   { json: argv.includes("--json") },
 );
+
+/*
+ * Which of these gates are about how MUCH has been written, as opposed to
+ * whether what is written is sound.
+ *
+ * `--allow-incomplete` sets aside the first kind so a pack can be published
+ * while its questions are still being generated, and that distinction has to
+ * live here, with the gates. Swallowing this script's exit code from outside
+ * would set aside the second kind too, which is the whole thing worth keeping:
+ * an orphaned test set, a duplicated prompt, an answer whose words are not in
+ * the dictionary, a generator fighting its validator — none of those get better
+ * by writing more questions, and none of them are excused by a draft.
+ */
+const ABOUT_QUANTITY = new Set(["C1", "C2", "C3", "C7"]);
+if (!ok && argv.includes("--allow-incomplete")) {
+  const real = gates.filter((g) => !g.ok && !ABOUT_QUANTITY.has(g.id));
+  if (!real.length) {
+    console.log(
+      "\n--allow-incomplete: the failures above are all about how much has been " +
+        "written, not about whether it is right. Reported, not enforced.",
+    );
+    process.exit(0);
+  }
+  console.log(
+    `\n--allow-incomplete does not cover ${real.map((g) => g.id).join(", ")} — ` +
+      "those are defects in the questions that exist, not a shortfall in how many.",
+  );
+}
 process.exit(ok ? 0 : 1);

@@ -1,0 +1,426 @@
+[
+ {
+  "id": "sm-246-accusative-singular-t1",
+  "sectionId": "sm-246-accusative-singular",
+  "questions": [
+   {
+    "prompt": "The hunter, having tracked the lion for a long time, killed it beside the river.",
+    "answer": "ὁ θηρευτὴς τὸν λέοντα πολὺν χρόνον ἰχνεύσας παρὰ τῷ ποταμῷ ἀπέκτεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θηρευτὴς",
+     "τὸν",
+     "λέοντα",
+     "πολὺν",
+     "χρόνον",
+     "ἰχνεύσας",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ",
+     "ἀπέκτεινεν"
+    ]
+   },
+   {
+    "prompt": "The Persians, marveling at its size, led the elephant to the king.",
+    "answer": "οἱ Πέρσαι τὸ μέγεθος θαυμάζοντες τὸν ἐλέφαντα ὡς τὸν βασιλέα ἤγαγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "τὸ",
+     "μέγεθος",
+     "θαυμάζοντες",
+     "τὸν",
+     "ἐλέφαντα",
+     "ὡς",
+     "βασιλέα",
+     "ἤγαγον"
+    ]
+   },
+   {
+    "prompt": "The dog, catching sight of the vulture, drove it away from the corpse.",
+    "answer": "ὁ κύων τὸν γῦπα ἰδὼν ἀπὸ τοῦ νεκροῦ ἀπήλασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κύων",
+     "τὸν",
+     "γῦπα",
+     "ἰδὼν",
+     "ἀπὸ",
+     "τοῦ",
+     "νεκροῦ",
+     "ἀπήλασεν"
+    ]
+   },
+   {
+    "prompt": "In the assembly the citizens honored the orator with a crown.",
+    "answer": "ἐν τῇ ἐκκλησίᾳ οἱ πολῖται τὸν ῥήτορα στεφάνῳ ἐτίμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "ῥήτορα",
+     "στεφάνῳ",
+     "ἐτίμησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-246-accusative-singular-t2",
+  "sectionId": "sm-246-accusative-singular",
+  "questions": [
+   {
+    "prompt": "The general, fearing the power of the enemy, walled the city.",
+    "answer": "ὁ στρατηγὸς τὴν τῶν πολεμίων δύναμιν φοβούμενος τὴν πόλιν ἐτείχισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "τῶν",
+     "πολεμίων",
+     "δύναμιν",
+     "φοβούμενος",
+     "πόλιν",
+     "ἐτείχισεν"
+    ]
+   },
+   {
+    "prompt": "The child, seeing the snake in the grass, fled to his mother.",
+    "answer": "ὁ παῖς τὸν ὄφιν ἐν τῇ πόᾳ ἰδὼν πρὸς τὴν μητέρα ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "τὸν",
+     "ὄφιν",
+     "ἐν",
+     "τῇ",
+     "πόᾳ",
+     "ἰδὼν",
+     "πρὸς",
+     "τὴν",
+     "μητέρα",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "The fisherman, though he toiled the whole day, caught only one fish.",
+    "answer": "ὁ ἁλιεὺς καίπερ ὅλην τὴν ἡμέραν πονήσας ἕνα μόνον ἰχθῦν ἔλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἁλιεὺς",
+     "καίπερ",
+     "ὅλην",
+     "τὴν",
+     "ἡμέραν",
+     "πονήσας",
+     "ἕνα",
+     "μόνον",
+     "ἰχθῦν",
+     "ἔλαβεν"
+    ]
+   },
+   {
+    "prompt": "The farmer, having yoked the ox, ploughed the field.",
+    "answer": "ὁ γεωργὸς τὸν βοῦν ζεύξας τὸν ἀγρὸν ἤροσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "τὸν",
+     "βοῦν",
+     "ζεύξας",
+     "ἀγρὸν",
+     "ἤροσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-246-accusative-singular-t3",
+  "sectionId": "sm-246-accusative-singular",
+  "questions": [
+   {
+    "prompt": "The soldiers, although wounded, guarded the king in the battle.",
+    "answer": "οἱ στρατιῶται καίπερ τετρωμένοι τὸν βασιλέα ἐν τῇ μάχῃ ἐφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "καίπερ",
+     "τετρωμένοι",
+     "τὸν",
+     "βασιλέα",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἐφύλαττον"
+    ]
+   },
+   {
+    "prompt": "The citizens seized the murderer in the temple.",
+    "answer": "οἱ πολῖται τὸν φονέα ἐν τῷ ἱερῷ συνέλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "φονέα",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "συνέλαβον"
+    ]
+   },
+   {
+    "prompt": "The general, wishing to announce the victory, sent a horseman to the camp.",
+    "answer": "ὁ στρατηγὸς τὴν νίκην ἀγγεῖλαι βουλόμενος ἱππέα εἰς τὸ στρατόπεδον ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "νίκην",
+     "ἀγγεῖλαι",
+     "βουλόμενος",
+     "ἱππέα",
+     "εἰς",
+     "τὸ",
+     "στρατόπεδον",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "Every child ought to honor his own parent.",
+    "answer": "πάντα παῖδα χρὴ τὸν ἑαυτοῦ γονέα τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "παῖδα",
+     "χρὴ",
+     "τὸν",
+     "ἑαυτοῦ",
+     "γονέα",
+     "τιμᾶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-246-accusative-singular-t4",
+  "sectionId": "sm-246-accusative-singular",
+  "questions": [
+   {
+    "prompt": "The people felt great gratitude toward their benefactor.",
+    "answer": "ὁ δῆμος πρὸς τὸν εὐεργέτην μεγάλην χάριν εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "πρὸς",
+     "τὸν",
+     "εὐεργέτην",
+     "μεγάλην",
+     "χάριν",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "The general put an end to the strife among the allies.",
+    "answer": "ὁ στρατηγὸς τὴν ἐν τοῖς συμμάχοις ἔριν ἔπαυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "ἐν",
+     "τοῖς",
+     "συμμάχοις",
+     "ἔριν",
+     "ἔπαυσεν"
+    ]
+   },
+   {
+    "prompt": "The seer, watching the bird, foretold the outcome of the war.",
+    "answer": "ὁ μάντις τὸν ὄρνιν θεώμενος τὸ τοῦ πολέμου τέλος προηγόρευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάντις",
+     "τὸν",
+     "ὄρνιν",
+     "θεώμενος",
+     "τὸ",
+     "τοῦ",
+     "πολέμου",
+     "τέλος",
+     "προηγόρευεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers, seeing the general hopeful, took courage.",
+    "answer": "οἱ στρατιῶται τὸν στρατηγὸν εὔελπιν ὁρῶντες ἐθάρρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "στρατηγὸν",
+     "εὔελπιν",
+     "ὁρῶντες",
+     "ἐθάρρησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-246-accusative-singular-t5",
+  "sectionId": "sm-246-accusative-singular",
+  "questions": [
+   {
+    "prompt": "The soldier, having thrown away his shield, fled from the battle.",
+    "answer": "ὁ στρατιώτης τὴν ἀσπίδα ῥίψας ἐκ τῆς μάχης ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατιώτης",
+     "τὴν",
+     "ἀσπίδα",
+     "ῥίψας",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "The exiles longed for their fatherland even in a foreign land.",
+    "answer": "οἱ φυγάδες τὴν πατρίδα καὶ ἐν ξένῃ γῇ ἐπόθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "τὴν",
+     "πατρίδα",
+     "καὶ",
+     "ἐν",
+     "ξένῃ",
+     "γῇ",
+     "ἐπόθουν"
+    ]
+   },
+   {
+    "prompt": "The merchant, having opened the chest, showed the seal to the magistrate.",
+    "answer": "ὁ ἔμπορος τὴν κιβωτὸν ἀνοίξας τὴν σφραγῖδα τῷ ἄρχοντι ἔδειξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἔμπορος",
+     "τὴν",
+     "κιβωτὸν",
+     "ἀνοίξας",
+     "σφραγῖδα",
+     "τῷ",
+     "ἄρχοντι",
+     "ἔδειξεν"
+    ]
+   },
+   {
+    "prompt": "The messenger brought hope to the citizens besieged in the city.",
+    "answer": "ὁ ἄγγελος τοῖς ἐν τῇ πόλει πολιορκουμένοις πολίταις ἐλπίδα ἤνεγκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τοῖς",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "πολιορκουμένοις",
+     "πολίταις",
+     "ἐλπίδα",
+     "ἤνεγκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-246-accusative-singular-t6",
+  "sectionId": "sm-246-accusative-singular",
+  "questions": [
+   {
+    "prompt": "The steersman, as a storm was coming on, brought the ship safely into the harbor.",
+    "answer": "ὁ κυβερνήτης χειμῶνος ἐπιγιγνομένου τὴν ναῦν ἀσφαλῶς εἰς τὸν λιμένα εἰσήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κυβερνήτης",
+     "χειμῶνος",
+     "ἐπιγιγνομένου",
+     "τὴν",
+     "ναῦν",
+     "ἀσφαλῶς",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "εἰσήγαγεν"
+    ]
+   },
+   {
+    "prompt": "The citizens chose the bravest man as their leader.",
+    "answer": "οἱ πολῖται τὸν ἀνδρειότατον ἄνδρα ἡγεμόνα εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "ἀνδρειότατον",
+     "ἄνδρα",
+     "ἡγεμόνα",
+     "εἵλοντο"
+    ]
+   },
+   {
+    "prompt": "The guard, keeping the key of the gates, admitted no one by night.",
+    "answer": "ὁ φύλαξ τὴν τῶν πυλῶν κλεῖν ἔχων οὐδένα νυκτὸς εἰσεδέχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φύλαξ",
+     "τὴν",
+     "τῶν",
+     "πυλῶν",
+     "κλεῖν",
+     "ἔχων",
+     "οὐδένα",
+     "νυκτὸς",
+     "εἰσεδέχετο"
+    ]
+   },
+   {
+    "prompt": "The old man, leaning on his staff, was watching the shepherd.",
+    "answer": "ὁ γέρων τῇ βακτηρίᾳ ἐπερειδόμενος τὸν ποιμένα ἐθεώρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τῇ",
+     "βακτηρίᾳ",
+     "ἐπερειδόμενος",
+     "τὸν",
+     "ποιμένα",
+     "ἐθεώρει"
+    ]
+   }
+  ]
+ }
+]
