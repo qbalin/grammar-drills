@@ -1,4 +1,4 @@
-import { parseBlocks, type Block, type GrammarSection } from "@lang-tutor/core";
+import { parseBlocks, type Block, type GrammarSection, type Run } from "@lang-tutor/core";
 import { Sheet } from "../ui.js";
 import { profile } from "../pack.js";
 
@@ -42,19 +42,53 @@ export function GrammarSheet({
   );
 }
 
+/**
+ * Text with the emphasis the grammar set it in.
+ *
+ * Bennett bolds the *ending* inside each form and italicises the English
+ * gloss, which is the difference between a paradigm and a list of words. Packs
+ * whose source keeps none of that pass no runs and fall back to plain text.
+ */
+function Runs({ runs, text }: { runs?: Run[]; text: string }) {
+  if (!runs) return <>{text}</>;
+  return (
+    <>
+      {runs.map((run, i) =>
+        run.b || run.i ? (
+          <span key={i} className={`${run.b ? "gr-b" : ""} ${run.i ? "gr-i" : ""}`.trim()}>
+            {run.text}
+          </span>
+        ) : (
+          <span key={i}>{run.text}</span>
+        ),
+      )}
+    </>
+  );
+}
+
 function GrammarBlock({ block }: { block: Block }) {
   switch (block.kind) {
     case "para":
-      return <p className="gr-p">{block.text}</p>;
+      return (
+        <p className="gr-p">
+          <Runs runs={block.runs} text={block.text} />
+        </p>
+      );
 
     case "heading":
-      return <h3 className="gr-h">{block.text}</h3>;
+      return (
+        <h3 className="gr-h">
+          <Runs runs={block.runs} text={block.text} />
+        </h3>
+      );
 
     case "item":
       return (
         <div className={`gr-item gr-item--${block.level}`}>
           <span className="gr-marker">{block.marker}</span>
-          <span>{block.text}</span>
+          <span>
+            <Runs runs={block.runs} text={block.text} />
+          </span>
         </div>
       );
 
@@ -71,17 +105,19 @@ function GrammarBlock({ block }: { block: Block }) {
                 <tr key={i} className={`gr-row--${row.kind}`}>
                   {row.kind === "divider" ? (
                     <td className="gr-divider" colSpan={block.columns}>
-                      {row.cells[0]}
+                      <Runs runs={row.runs?.[0]} text={row.cells[0]!} />
                     </td>
                   ) : (
                     row.cells.map((cell, j) =>
                       row.kind === "head" ? (
                         // The stub column is never part of a caption group.
                         <th key={j} scope="col" colSpan={j === 0 ? 1 : (row.span ?? 1)}>
-                          {cell}
+                          <Runs runs={row.runs?.[j]} text={cell} />
                         </th>
                       ) : (
-                        <td key={j}>{cell}</td>
+                        <td key={j}>
+                          <Runs runs={row.runs?.[j]} text={cell} />
+                        </td>
                       ),
                     )
                   )}

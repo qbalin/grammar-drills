@@ -18,7 +18,7 @@
  * is not automatable: a human has to read them and record the verdict in the
  * pack's REVIEW.md. Everything above it is.
  */
-import { parseBlocks } from "@lang-tutor/core";
+import { parseBlocks, plainText } from "@lang-tutor/core";
 import {
   gate,
   loadGrammar,
@@ -36,7 +36,9 @@ const grammar = loadGrammar(dir);
 const coverage = loadGrammarCoverage(dir);
 const shape = profile.grammarShape;
 
-const lengths = grammar.map((t) => t.text.length).sort((a, b) => a - b);
+// Measured on the words, not on the inline emphasis markup around them.
+const size = new Map(grammar.map((t) => [t.id, plainText(t.text).trim().length]));
+const lengths = grammar.map((t) => size.get(t.id)).sort((a, b) => a - b);
 const median = percentile(lengths, 0.5);
 const p90 = percentile(lengths, 0.9);
 
@@ -58,7 +60,7 @@ gates.push(
   ),
 );
 
-const tooThin = grammar.filter((t) => t.text.trim().length < shape.minTextChars);
+const tooThin = grammar.filter((t) => size.get(t.id) < shape.minTextChars);
 gates.push(
   gate("G2", tooThin.length === 0,
     tooThin.length
@@ -66,7 +68,7 @@ gates.push(
       : `every topic has at least ${shape.minTextChars} chars (min ${lengths[0]})`),
 );
 
-const tooBig = grammar.filter((t) => t.text.length > shape.maxTextChars);
+const tooBig = grammar.filter((t) => size.get(t.id) > shape.maxTextChars);
 const inRange = median >= shape.medianTextCharsRange[0] && median <= shape.medianTextCharsRange[1];
 gates.push(
   gate("G3", inRange && p90 <= shape.p90TextCharsMax && tooBig.length === 0,
@@ -76,11 +78,11 @@ gates.push(
 
 // A topic several times the median is the one a single set of tests can never
 // cover; flag it for splitting rather than failing the pack over it.
-const outsized = grammar.filter((t) => t.text.length > median * 4);
+const outsized = grammar.filter((t) => size.get(t.id) > median * 4);
 if (outsized.length) {
   console.log(
     `note: ${outsized.length} topics exceed 4× the median length and are candidates for splitting:\n` +
-      outsized.map((t) => `      ${t.id} (${t.text.length} chars)`).join("\n"),
+      outsized.map((t) => `      ${t.id} (${size.get(t.id)} chars)`).join("\n"),
   );
 }
 
@@ -194,14 +196,14 @@ if (sampleAt >= 0) {
   const n = Number(argv[sampleAt + 1] ?? 12);
   // Stratified: the smallest and the largest are where segmentation goes wrong,
   // so they are never left to chance.
-  const bySize = [...grammar].sort((a, b) => a.text.length - b.text.length);
+  const bySize = [...grammar].sort((a, b) => size.get(a.id) - size.get(b.id));
   const picked = [bySize[0], bySize[bySize.length - 1]];
   const step = Math.max(1, Math.floor(grammar.length / (n - 2)));
   for (let i = 0; picked.length < n && i < grammar.length; i += step) picked.push(grammar[i]);
 
   console.log(`\n${"=".repeat(72)}\nRead these ${picked.length} topics and record the verdict in the pack's REVIEW.md.\n${"=".repeat(72)}`);
   for (const t of picked) {
-    console.log(`\n--- ${t.id}  ${profile.grammar.refPrefix}${t.ref}  [${t.family}]  ${t.text.length} chars`);
+    console.log(`\n--- ${t.id}  ${profile.grammar.refPrefix}${t.ref}  [${t.family}]  ${size.get(t.id)} chars`);
     console.log(`    ${t.title}\n`);
     if (argv.includes("--render")) {
       for (const block of parseBlocks(t.text, profile.grammar)) {

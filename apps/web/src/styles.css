@@ -741,6 +741,22 @@ button {
   padding-top: 0.8rem;
 }
 
+/*
+ * The grammar's own emphasis. Bennett bolds the *ending* inside each form —
+ * am**ō**, am**āmus** — and italicises the English gloss, so these two rules
+ * are what tells the student which letters are the lesson and which words are
+ * only there to explain it.
+ */
+.gr-b {
+  font-weight: 650;
+  color: var(--text);
+}
+
+.gr-i {
+  font-style: italic;
+  color: var(--text-dim);
+}
+
 /* --- the grammar map ------------------------------------------------------ */
 
 .map__overall {

@@ -11,7 +11,66 @@
  * and knows nothing about structure.
  */
 import type { GrammarStyle } from "@lang-tutor/core";
-import { parseBlocks, type Block, type Row } from "@lang-tutor/core";
+import { parseBlocks, type Block, type Row, type Run } from "@lang-tutor/core";
+
+/**
+ * One screen line, in the pieces the grammar set it in.
+ *
+ * Everything here lays out the *plain* text and carries the emphasis along for
+ * the ride: a column is as wide as its widest word, and a word is no wider for
+ * being bold. `layoutSection` drops the styling again for callers that only
+ * want strings, so the two can never disagree about where a line breaks.
+ */
+export type RichLine = Run[];
+
+const plainOf = (line: RichLine): string => line.map((r) => r.text).join("");
+const spacer = (n: number): Run[] => (n > 0 ? [{ text: " ".repeat(n) }] : []);
+
+/** A cell's emphasis, or the cell itself where the pack's source had none. */
+function cellRuns(row: Row, i: number): Run[] {
+  const runs = row.runs?.[i];
+  return runs && runs.length > 0 ? runs : [{ text: row.cells[i] ?? "" }];
+}
+
+function trimEndRuns(line: RichLine): RichLine {
+  const out = line.map((r) => ({ ...r }));
+  while (out.length > 0) {
+    const last = out[out.length - 1]!;
+    last.text = last.text.replace(/\s+$/, "");
+    if (last.text !== "") break;
+    out.pop();
+  }
+  return out;
+}
+
+/**
+ * `wrapLines`, but keeping each piece's emphasis.
+ *
+ * The break points come from `wrapLines` itself rather than from a second
+ * implementation of the same rules: every line it returns is a contiguous
+ * stretch of the text it was given, so walking them in order is enough to find
+ * where each one sat and which runs cover it.
+ */
+export function wrapRuns(runs: RichLine, width: number): RichLine[] {
+  const text = plainOf(runs);
+  const out: RichLine[] = [];
+  let at = 0;
+  for (const piece of wrapLines(text, width)) {
+    const from = text.indexOf(piece, at);
+    const to = from + piece.length;
+    at = to;
+    const line: Run[] = [];
+    let cursor = 0;
+    for (const run of runs) {
+      const start = Math.max(from, cursor);
+      const end = Math.min(to, cursor + run.text.length);
+      if (end > start) line.push({ ...run, text: run.text.slice(start - cursor, end - cursor) });
+      cursor += run.text.length;
+    }
+    out.push(line);
+  }
+  return out;
+}
 
 /** Wrap `text` to `width` columns; the result is one entry per screen line. */
 export function wrapLines(text: string, width: number): string[] {
@@ -66,7 +125,7 @@ function layoutTable(
   rows: readonly Row[],
   columns: number,
   width: number,
-): string[] | null {
+): RichLine[] | null {
   // Only rows that occupy one column each can set a column's width; a caption
   // covering three of them says nothing about how wide any one of them is.
   const plain = rows.filter((r) => r.kind !== "divider" && (r.span ?? 1) === 1);
@@ -80,35 +139,42 @@ function layoutTable(
   const groupWidth = (from: number, span: number) =>
     widths.slice(from, from + span).reduce((a, b) => a + b, 0) + GAP.length * (span - 1);
 
-  const pad = " ".repeat(INDENT[1]);
+  const pad: Run = { text: " ".repeat(INDENT[1]) };
   return rows.map((row) => {
-    if (row.kind === "divider") return pad + row.cells[0];
+    if (row.kind === "divider") return [pad, ...cellRuns(row, 0)];
     const span = row.span ?? 1;
     let col = 0;
-    return (
-      pad +
-      row.cells
-        .map((c, i) => {
-          // The stub column is never part of a caption group.
-          const cover = i === 0 ? 1 : span;
-          const w = groupWidth(col, cover);
-          col += cover;
-          return c.padEnd(w);
-        })
-        .join(GAP)
-        .trimEnd()
-    );
+    const line: Run[] = [pad];
+    row.cells.forEach((cell, i) => {
+      // The stub column is never part of a caption group.
+      const cover = i === 0 ? 1 : span;
+      const w = groupWidth(col, cover);
+      col += cover;
+      if (i > 0) line.push({ text: GAP });
+      line.push(...cellRuns(row, i), ...spacer(w - cell.length));
+    });
+    return trimEndRuns(line);
   });
 }
 
+/** The rows of a table that will not fit, one cell after another. */
+function rawRow(row: Row): RichLine {
+  const line: Run[] = [];
+  row.cells.forEach((_, i) => {
+    if (i > 0) line.push({ text: GAP });
+    line.push(...cellRuns(row, i));
+  });
+  return trimEndRuns(line);
+}
+
 /** The screen lines for one block. */
-function layoutBlock(block: Block, width: number): string[] {
+function layoutBlock(block: Block, width: number): RichLine[] {
   switch (block.kind) {
     case "para":
-      return wrapLines(block.text, width);
+      return wrapRuns(block.runs ?? [{ text: block.text }], width);
 
     case "heading":
-      return wrapLines(block.text, width);
+      return wrapRuns(block.runs ?? [{ text: block.text }], width);
 
     case "item": {
       const indent = INDENT[block.level];
@@ -116,14 +182,14 @@ function layoutBlock(block: Block, width: number): string[] {
       const hang = " ".repeat(head.length);
       // Wrap to what is left after the marker, then hang the rest under the
       // text so the marker stays the only thing in the left margin.
-      const body = wrapLines(block.text, Math.max(8, width - head.length));
-      return body.map((line, i) => (i === 0 ? head : hang) + line);
+      const body = wrapRuns(block.runs ?? [{ text: block.text }], Math.max(8, width - head.length));
+      return body.map((line, i) => [{ text: i === 0 ? head : hang }, ...line]);
     }
 
     case "table":
       return (
         layoutTable(block.rows, block.columns, width) ??
-        block.rows.flatMap((r) => wrapLines(r.cells.join(GAP).trimEnd(), width))
+        block.rows.flatMap((r) => wrapRuns(rawRow(r), width))
       );
   }
 }
@@ -136,17 +202,26 @@ function layoutBlock(block: Block, width: number): string[] {
  * padded so the endings line up down the page, and a blank line between blocks
  * so a section reads as prose and tables rather than one unbroken wall.
  */
+export function layoutRichSection(
+  text: string,
+  width: number,
+  style: GrammarStyle,
+): RichLine[] {
+  const out: RichLine[] = [];
+  for (const block of parseBlocks(text, style)) {
+    if (out.length > 0) out.push([]);
+    out.push(...layoutBlock(block, width));
+  }
+  return out;
+}
+
+/** The same lines as strings, for callers with nothing to style them with. */
 export function layoutSection(
   text: string,
   width: number,
   style: GrammarStyle,
 ): string[] {
-  const out: string[] = [];
-  for (const block of parseBlocks(text, style)) {
-    if (out.length > 0) out.push("");
-    out.push(...layoutBlock(block, width));
-  }
-  return out;
+  return layoutRichSection(text, width, style).map(plainOf);
 }
 
 /**
@@ -170,9 +245,20 @@ export function previewWindow(
   height: number,
   style: GrammarStyle,
 ): { lines: string[]; truncated: boolean } {
-  const wrapped = layoutSection(text, width, style).filter((l) => l !== "");
+  const window = previewRichWindow(text, width, height, style);
+  return { lines: window.lines.map(plainOf), truncated: window.truncated };
+}
+
+/** `previewWindow`, keeping the emphasis for a caller that can show it. */
+export function previewRichWindow(
+  text: string,
+  width: number,
+  height: number,
+  style: GrammarStyle,
+): { lines: RichLine[]; truncated: boolean } {
+  const wrapped = layoutRichSection(text, width, style).filter((l) => plainOf(l) !== "");
   const lines = wrapped.slice(0, height);
-  while (lines.length < height) lines.push("");
+  while (lines.length < height) lines.push([]);
   return { lines, truncated: wrapped.length > height };
 }
 

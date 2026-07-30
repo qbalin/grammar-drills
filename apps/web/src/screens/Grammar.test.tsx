@@ -79,4 +79,26 @@ describe("the grammar reader", () => {
     const para = screen.getByText("The Interrogative Pronouns are quis and quī.");
     expect(para.tagName).toBe("P");
   });
+
+  it("shows the emphasis the grammar set a form in", () => {
+    // Bennett bolds the *ending* inside the form and italicises the gloss;
+    // without them a paradigm is a list of words with nothing marking which
+    // part is the lesson.
+    render(
+      <GrammarSheet
+        section={{ ...section, text: "am⟦b:ō⟧, ⟦i:I love⟧  am⟦b:āmus⟧" }}
+        onClose={() => {}}
+      />,
+    );
+    const cell = screen.getAllByRole("cell")[0]!;
+    expect(cell.textContent).toBe("amō, I love");
+    expect(within(cell).getByText("ō").className).toBe("gr-b");
+    expect(within(cell).getByText("I love").className).toBe("gr-i");
+  });
+
+  it("leaves a pack whose source carries no emphasis exactly as it was", () => {
+    mount();
+    const cell = screen.getByRole("row", { name: /quis/ });
+    expect(within(cell).queryByText("", { selector: ".gr-b, .gr-i" })).toBeNull();
+  });
 });
