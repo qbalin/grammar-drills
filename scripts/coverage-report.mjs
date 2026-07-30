@@ -20,6 +20,7 @@
  */
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
+import { pathToFileURL } from "node:url";
 import { DatabaseSync } from "node:sqlite";
 import { compileFold, words } from "@lang-tutor/core";
 import {
@@ -41,6 +42,26 @@ const tests = loadTests(dir);
 const fold = compileFold(profile.fold);
 const limits = profile.coverage;
 const gates = [];
+
+/*
+ * The generator's own config, because two of these gates are about what the
+ * generator was told to do and cannot be judged against a guess at it.
+ *
+ * C7 asks whether the frequency band the prompts draw vocabulary from is
+ * actually being exercised, which is only a question about the band the pack
+ * declares. This used to read a hardcoded 400-6000 with no part-of-speech
+ * filter — the same numbers Latin happens to use, so Latin never noticed.
+ * Greek draws 400-4500 nouns, verbs and adjectives, and was being marked
+ * against 5,601 lemmas including 2,300 it was never asked to use.
+ *
+ * A pack without a gen/config.mjs has generated nothing yet, so the defaults
+ * are as good an answer as exists.
+ */
+const configPath = join(dir, "gen", "config.mjs");
+const config = existsSync(configPath)
+  ? (await import(pathToFileURL(configPath).href)).default
+  : {};
+const band = { min: 400, max: 6000, pos: [], ...(config.band ?? {}) };
 
 const perTopic = grammar.map((t) => {
   const list = tests[t.id] ?? [];
@@ -177,9 +198,12 @@ if (existsSync(dictPath)) {
 
   if (existsSync(freqPath)) {
     const freq = new DatabaseSync(freqPath, { readOnly: true });
-    const band = freq
-      .prepare("select lemma from frequency where rank between ? and ?")
-      .all(400, 6000)
+    const posFilter = band.pos.length
+      ? ` and pos in (${band.pos.map(() => "?").join(",")})`
+      : "";
+    const bandLemmas = freq
+      .prepare(`select lemma from frequency where rank between ? and ?${posFilter}`)
+      .all(band.min, band.max, ...band.pos)
       .map((r) => fold(r.lemma));
     // A form of a band lemma counts: the sentences inflect, so the bare lemma
     // is usually not what appears.
@@ -193,11 +217,13 @@ if (existsSync(dictPath)) {
         if (hit) used.add(hit.w);
       }
     }
-    const inBand = band.filter((l) => used.has(l)).length;
-    const pctBand = (inBand / Math.max(1, band.length)) * 100;
+    const inBand = bandLemmas.filter((l) => used.has(l)).length;
+    const pctBand = (inBand / Math.max(1, bandLemmas.length)) * 100;
     gates.push(
       gate("C7", pctBand >= limits.minBandUtilisationPct,
-        `${inBand} of ${band.length} band lemmas used (${pctBand.toFixed(1)}%, want ≥${limits.minBandUtilisationPct}%)`),
+        `${inBand} of ${bandLemmas.length} band lemmas used (${pctBand.toFixed(1)}%, ` +
+        `want ≥${limits.minBandUtilisationPct}%; band ${band.min}-${band.max}` +
+        `${band.pos.length ? ` ${band.pos.join("/")}` : ""})`),
     );
   }
 } else {

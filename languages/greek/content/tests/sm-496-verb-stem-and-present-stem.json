@@ -1,0 +1,398 @@
+[
+ {
+  "id": "sm-496-verb-stem-and-present-stem-t1",
+  "sectionId": "sm-496-verb-stem-and-present-stem",
+  "questions": [
+   {
+    "prompt": "The priest sacrifices an ox to the gods before the battle.",
+    "answer": "ὁ ἱερεὺς βοῦν τοῖς θεοῖς πρὸ τῆς μάχης θύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "βοῦν",
+     "τοῖς",
+     "θεοῖς",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "θύει"
+    ]
+   },
+   {
+    "prompt": "We educate the young men so that they may become good citizens.",
+    "answer": "τοὺς νεανίας παιδεύομεν ἵνα ἀγαθοὶ πολῖται γίγνωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "νεανίας",
+     "παιδεύομεν",
+     "ἵνα",
+     "ἀγαθοὶ",
+     "πολῖται",
+     "γίγνωνται"
+    ]
+   },
+   {
+    "prompt": "The citizens are trying to stop the war, though the allies are unwilling.",
+    "answer": "οἱ πολῖται τὸν πόλεμον παύειν πειρῶνται, τῶν συμμάχων ἀκόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "πόλεμον",
+     "παύειν",
+     "πειρῶνται",
+     "τῶν",
+     "συμμάχων",
+     "ἀκόντων"
+    ]
+   },
+   {
+    "prompt": "While the enemy were sailing away, we were planting trees in the plain.",
+    "answer": "τῶν πολεμίων ἀποπλεόντων, δένδρα ἐν τῷ πεδίῳ ἐφυτεύομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἀποπλεόντων",
+     "δένδρα",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ἐφυτεύομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-496-verb-stem-and-present-stem-t2",
+  "sectionId": "sm-496-verb-stem-and-present-stem",
+  "questions": [
+   {
+    "prompt": "The messenger announces that the king is sending the army.",
+    "answer": "ὁ ἄγγελος ἀγγέλλει ὅτι ὁ βασιλεὺς τὸ στράτευμα στέλλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἀγγέλλει",
+     "ὅτι",
+     "βασιλεὺς",
+     "τὸ",
+     "στράτευμα",
+     "στέλλει"
+    ]
+   },
+   {
+    "prompt": "The farmers sow seed in the field each year.",
+    "answer": "οἱ γεωργοὶ σπέρμα ἐν τῷ ἀγρῷ ἑκάστου ἔτους σπείρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γεωργοὶ",
+     "σπέρμα",
+     "ἐν",
+     "τῷ",
+     "ἀγρῷ",
+     "ἑκάστου",
+     "ἔτους",
+     "σπείρουσιν"
+    ]
+   },
+   {
+    "prompt": "The judges decide the case, while the citizens are afraid.",
+    "answer": "οἱ δικασταὶ τὴν δίκην κρίνουσι, τῶν πολιτῶν φοβουμένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τὴν",
+     "δίκην",
+     "κρίνουσι",
+     "τῶν",
+     "πολιτῶν",
+     "φοβουμένων"
+    ]
+   },
+   {
+    "prompt": "The soldiers, raising their shields, hurl stones at the enemy.",
+    "answer": "οἱ στρατιῶται, τὰς ἀσπίδας αἴροντες, λίθους ἐπὶ τοὺς πολεμίους βάλλουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὰς",
+     "ἀσπίδας",
+     "αἴροντες",
+     "λίθους",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους",
+     "βάλλουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-496-verb-stem-and-present-stem-t3",
+  "sectionId": "sm-496-verb-stem-and-present-stem",
+  "questions": [
+   {
+    "prompt": "The slaves are digging a ditch around the camp.",
+    "answer": "οἱ δοῦλοι τάφρον περὶ τὸ στρατόπεδον σκάπτουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοῦλοι",
+     "τάφρον",
+     "περὶ",
+     "τὸ",
+     "στρατόπεδον",
+     "σκάπτουσιν"
+    ]
+   },
+   {
+    "prompt": "The woodcutters cut down the trees beside the river.",
+    "answer": "οἱ ὑλοτόμοι τὰ δένδρα παρὰ τὸν ποταμὸν κόπτουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑλοτόμοι",
+     "τὰ",
+     "δένδρα",
+     "παρὰ",
+     "τὸν",
+     "ποταμὸν",
+     "κόπτουσιν"
+    ]
+   },
+   {
+    "prompt": "The general hides the money, fearing the enemy.",
+    "answer": "ὁ στρατηγὸς τὰ χρήματα κρύπτει, τοὺς πολεμίους φοβούμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὰ",
+     "χρήματα",
+     "κρύπτει",
+     "τοὺς",
+     "πολεμίους",
+     "φοβούμενος"
+    ]
+   },
+   {
+    "prompt": "Wine harms those who drink it immoderately.",
+    "answer": "ὁ οἶνος βλάπτει τοὺς ἀμέτρως αὐτὸν πίνοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "οἶνος",
+     "βλάπτει",
+     "τοὺς",
+     "ἀμέτρως",
+     "αὐτὸν",
+     "πίνοντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-496-verb-stem-and-present-stem-t4",
+  "sectionId": "sm-496-verb-stem-and-present-stem",
+  "questions": [
+   {
+    "prompt": "The herald proclaims peace throughout the whole city.",
+    "answer": "ὁ κῆρυξ εἰρήνην κατὰ πᾶσαν τὴν πόλιν κηρύττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "εἰρήνην",
+     "κατὰ",
+     "πᾶσαν",
+     "τὴν",
+     "πόλιν",
+     "κηρύττει"
+    ]
+   },
+   {
+    "prompt": "The guards watch the gates, fearing the enemy's attack.",
+    "answer": "οἱ φύλακες τὰς πύλας φυλάττουσι, τὴν τῶν πολεμίων ἔφοδον φοβούμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "τὰς",
+     "πύλας",
+     "φυλάττουσι",
+     "τὴν",
+     "τῶν",
+     "πολεμίων",
+     "ἔφοδον",
+     "φοβούμενοι"
+    ]
+   },
+   {
+    "prompt": "The taxiarch draws up the hoplites in the plain.",
+    "answer": "ὁ ταξίαρχος τοὺς ὁπλίτας ἐν τῷ πεδίῳ τάττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ταξίαρχος",
+     "τοὺς",
+     "ὁπλίτας",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "τάττει"
+    ]
+   },
+   {
+    "prompt": "The citizens, hoping for freedom, do many noble deeds.",
+    "answer": "οἱ πολῖται, ἐλευθερίαν ἐλπίζοντες, πολλὰ καὶ καλὰ πράττουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἐλευθερίαν",
+     "ἐλπίζοντες",
+     "πολλὰ",
+     "καὶ",
+     "καλὰ",
+     "πράττουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-496-verb-stem-and-present-stem-t5",
+  "sectionId": "sm-496-verb-stem-and-present-stem",
+  "questions": [
+   {
+    "prompt": "The young men learn many things from their teachers.",
+    "answer": "οἱ νεανίαι πολλὰ παρὰ τῶν διδασκάλων μανθάνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "πολλὰ",
+     "παρὰ",
+     "τῶν",
+     "διδασκάλων",
+     "μανθάνουσιν"
+    ]
+   },
+   {
+    "prompt": "The soldiers take up their weapons and rush toward the mountain.",
+    "answer": "οἱ στρατιῶται τὰ ὅπλα λαμβάνουσι καὶ πρὸς τὸ ὄρος ὁρμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ὅπλα",
+     "λαμβάνουσι",
+     "καὶ",
+     "πρὸς",
+     "τὸ",
+     "ὄρος",
+     "ὁρμῶσιν"
+    ]
+   },
+   {
+    "prompt": "Perceiving the danger, the sailors cut the ropes.",
+    "answer": "οἱ ναῦται, τὸν κίνδυνον αἰσθανόμενοι, τὰ σχοινία τέμνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τὸν",
+     "κίνδυνον",
+     "αἰσθανόμενοι",
+     "τὰ",
+     "σχοινία",
+     "τέμνουσιν"
+    ]
+   },
+   {
+    "prompt": "The dog bites the stranger who is approaching the house.",
+    "answer": "ὁ κύων δάκνει τὸν ξένον τὸν τῇ οἰκίᾳ προσιόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κύων",
+     "δάκνει",
+     "τὸν",
+     "ξένον",
+     "τῇ",
+     "οἰκίᾳ",
+     "προσιόντα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-496-verb-stem-and-present-stem-t6",
+  "sectionId": "sm-496-verb-stem-and-present-stem",
+  "questions": [
+   {
+    "prompt": "The wise man recognizes his own ignorance.",
+    "answer": "ὁ σοφὸς τὴν ἑαυτοῦ ἀμαθίαν γιγνώσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τὴν",
+     "ἑαυτοῦ",
+     "ἀμαθίαν",
+     "γιγνώσκει"
+    ]
+   },
+   {
+    "prompt": "The soldiers who fight bravely find glory.",
+    "answer": "οἱ ἀνδρείως μαχόμενοι στρατιῶται δόξαν εὑρίσκουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀνδρείως",
+     "μαχόμενοι",
+     "στρατιῶται",
+     "δόξαν",
+     "εὑρίσκουσιν"
+    ]
+   },
+   {
+    "prompt": "The old teacher teaches the children their letters.",
+    "answer": "ὁ γέρων διδάσκαλος τοὺς παῖδας τὰ γράμματα διδάσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "διδάσκαλος",
+     "τοὺς",
+     "παῖδας",
+     "τὰ",
+     "γράμματα",
+     "διδάσκει"
+    ]
+   },
+   {
+    "prompt": "Those who die on behalf of their country become immortal.",
+    "answer": "οἱ ὑπὲρ τῆς πατρίδος ἀποθνῄσκοντες ἀθάνατοι γίγνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκοντες",
+     "ἀθάνατοι",
+     "γίγνονται"
+    ]
+   }
+  ]
+ }
+]

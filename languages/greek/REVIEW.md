@@ -52,11 +52,29 @@ sentence that is impeccably attested and means something other than the prompt.
 
 ## Known state
 
-- **The question set is incomplete.** 485 topics want 6,957 tests; generation is
+- **The question set is incomplete.** 78 of 485 topics have tests; generation is
   a long resumable run and was still going when this was committed. Until it
-  finishes, gates C1, C5 and C7 fail by definition — a topic with no questions
-  is exactly what C1 is for. Resume with:
-  `node --import tsx scripts/gen-tests.mjs --pack languages/greek --fill`
+  finishes, gates C1 and C3 fail by definition — a topic with no questions is
+  exactly what C1 is for. (C5 and C7 pass already: 99.7% of answer tokens are
+  attested and 39.5% of the band is exercised.)
+
+  It is being written **floor-first**: every empty topic gets
+  `coverage.minTestsPerTopic` tests, which is what C1 and C2 actually require,
+  and the size-scaled targets get topped up afterwards. That is 2,442 tests to
+  reach the floor against 5,776 to reach full target, and it puts questions in
+  front of a student on every topic sooner.
+  `node --import tsx scripts/gen-tests.mjs --pack languages/greek --target 6`
+  writes the empty ones; `--fill` afterwards tops everything up.
+
+- **The floor alone will not turn C3 green, and the reason is not starvation.**
+  C3 is two-sided — a family fails at under 0.5× or over 2× the pack mean. With
+  every remaining topic at 24 questions the pack mean lands at 27.4, and the two
+  small families generated earlier at full size-scaled targets sit above the
+  ceiling: `adj` 83.6 and `pron` 103.5 q/topic. They are over-served, not the
+  rest under-served, and nothing is wrong with them. At full targets everywhere
+  the mean is 57.7 and all eleven families fall inside 28.8–115.3, so the top-up
+  pass is what closes C3. Until then Greek needs `--allow-incomplete`, which is
+  what `LANG_PACKS_DRAFT` is for.
 - **The fold is variant A** — accents, breathings and the iota subscript all
   fold away, and so does final sigma. The cost is written into
   `fold.fixtures.json` under `equal`, where it can be read: ἀγορά/ἁγορά and

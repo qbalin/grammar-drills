@@ -1,0 +1,385 @@
+[
+ {
+  "id": "sm-532-future-system-t1",
+  "sectionId": "sm-532-future-system",
+  "questions": [
+   {
+    "prompt": "The general will honor the brave soldiers after the victory.",
+    "answer": "ὁ στρατηγὸς τοὺς ἀνδρείους στρατιώτας μετὰ τὴν νίκην τιμήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "ἀνδρείους",
+     "στρατιώτας",
+     "μετὰ",
+     "τὴν",
+     "νίκην",
+     "τιμήσει"
+    ]
+   },
+   {
+    "prompt": "We shall write these things in a letter to the king.",
+    "answer": "ταῦτα ἐν ἐπιστολῇ τῷ βασιλεῖ γράψομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἐν",
+     "ἐπιστολῇ",
+     "τῷ",
+     "βασιλεῖ",
+     "γράψομεν"
+    ]
+   },
+   {
+    "prompt": "The wise man will persuade the jurors with true words.",
+    "answer": "ὁ σοφὸς τοὺς δικαστὰς ἀληθέσι λόγοις πείσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τοὺς",
+     "δικαστὰς",
+     "ἀληθέσι",
+     "λόγοις",
+     "πείσει"
+    ]
+   },
+   {
+    "prompt": "The enemy will disturb the whole camp during the night.",
+    "answer": "οἱ πολέμιοι πᾶν τὸ στρατόπεδον διὰ τῆς νυκτὸς ταράξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "πᾶν",
+     "τὸ",
+     "στρατόπεδον",
+     "διὰ",
+     "τῆς",
+     "νυκτὸς",
+     "ταράξουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-532-future-system-t2",
+  "sectionId": "sm-532-future-system",
+  "questions": [
+   {
+    "prompt": "The soldiers will remain in the camp until dawn.",
+    "answer": "οἱ στρατιῶται ἐν τῷ στρατοπέδῳ μέχρι τῆς ἕω μενοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "μέχρι",
+     "τῆς",
+     "ἕω",
+     "μενοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The messenger will announce the victory to the citizens.",
+    "answer": "ὁ ἄγγελος τοῖς πολίταις τὴν νίκην ἀγγελεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τοῖς",
+     "πολίταις",
+     "τὴν",
+     "νίκην",
+     "ἀγγελεῖ"
+    ]
+   },
+   {
+    "prompt": "The seer will reveal the will of the gods to the king.",
+    "answer": "ὁ μάντις τὴν τῶν θεῶν βουλὴν τῷ βασιλεῖ φανεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάντις",
+     "τὴν",
+     "τῶν",
+     "θεῶν",
+     "βουλὴν",
+     "τῷ",
+     "βασιλεῖ",
+     "φανεῖ"
+    ]
+   },
+   {
+    "prompt": "If you throw the stone, you will kill the dog.",
+    "answer": "εἰ τὸν λίθον βαλεῖς, τὸν κύνα ἀποκτενεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸν",
+     "λίθον",
+     "βαλεῖς",
+     "κύνα",
+     "ἀποκτενεῖς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-532-future-system-t3",
+  "sectionId": "sm-532-future-system",
+  "questions": [
+   {
+    "prompt": "The general will drive the enemy out of the country.",
+    "answer": "ὁ στρατηγὸς τοὺς πολεμίους ἐκ τῆς χώρας ἐλᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "πολεμίους",
+     "ἐκ",
+     "τῆς",
+     "χώρας",
+     "ἐλᾷ"
+    ]
+   },
+   {
+    "prompt": "The brave will fight on behalf of their fatherland.",
+    "answer": "οἱ ἀγαθοὶ ὑπὲρ τῆς πατρίδος μαχοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀγαθοὶ",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχοῦνται"
+    ]
+   },
+   {
+    "prompt": "The judges will not consider these men citizens.",
+    "answer": "οἱ δικασταὶ τούτους τοὺς ἄνδρας πολίτας οὐ νομιοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τούτους",
+     "τοὺς",
+     "ἄνδρας",
+     "πολίτας",
+     "οὐ",
+     "νομιοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The soldiers will carry the wounded man into the tent.",
+    "answer": "οἱ στρατιῶται τὸν τετρωμένον εἰς τὴν σκηνὴν κομιοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "τετρωμένον",
+     "εἰς",
+     "τὴν",
+     "σκηνὴν",
+     "κομιοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-532-future-system-t4",
+  "sectionId": "sm-532-future-system",
+  "questions": [
+   {
+    "prompt": "The cowards will flee from the battle.",
+    "answer": "οἱ δειλοὶ ἐκ τῆς μάχης φεύξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δειλοὶ",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φεύξονται"
+    ]
+   },
+   {
+    "prompt": "You will hear the truth from the messenger.",
+    "answer": "τὴν ἀλήθειαν παρὰ τοῦ ἀγγέλου ἀκούσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἀλήθειαν",
+     "παρὰ",
+     "τοῦ",
+     "ἀγγέλου",
+     "ἀκούσῃ"
+    ]
+   },
+   {
+    "prompt": "The old man will fall from his horse into the river.",
+    "answer": "ὁ γέρων ἀπὸ τοῦ ἵππου εἰς τὸν ποταμὸν πεσεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἀπὸ",
+     "τοῦ",
+     "ἵππου",
+     "εἰς",
+     "τὸν",
+     "ποταμὸν",
+     "πεσεῖται"
+    ]
+   },
+   {
+    "prompt": "When the general comes, we shall know the plans of the enemy.",
+    "answer": "ἐπειδὰν ὁ στρατηγὸς ἔλθῃ, τὰς τῶν πολεμίων βουλὰς γνωσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ὁ",
+     "στρατηγὸς",
+     "ἔλθῃ",
+     "τὰς",
+     "τῶν",
+     "πολεμίων",
+     "βουλὰς",
+     "γνωσόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-532-future-system-t5",
+  "sectionId": "sm-532-future-system",
+  "questions": [
+   {
+    "prompt": "The hungry soldiers will eat the bread and drink the wine.",
+    "answer": "οἱ πεινῶντες στρατιῶται τὸν ἄρτον ἔδονται καὶ τὸν οἶνον πίονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πεινῶντες",
+     "στρατιῶται",
+     "τὸν",
+     "ἄρτον",
+     "ἔδονται",
+     "καὶ",
+     "οἶνον",
+     "πίονται"
+    ]
+   },
+   {
+    "prompt": "Tomorrow we shall sail toward the islands.",
+    "answer": "αὔριον πρὸς τὰς νήσους πλευσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὔριον",
+     "πρὸς",
+     "τὰς",
+     "νήσους",
+     "πλευσόμεθα"
+    ]
+   },
+   {
+    "prompt": "The wind will blow violently from the sea.",
+    "answer": "ὁ ἄνεμος σφοδρῶς ἀπὸ τῆς θαλάττης πνεύσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄνεμος",
+     "σφοδρῶς",
+     "ἀπὸ",
+     "τῆς",
+     "θαλάττης",
+     "πνεύσεται"
+    ]
+   },
+   {
+    "prompt": "The child will not drink the cold water.",
+    "answer": "τὸ παιδίον τὸ ψυχρὸν ὕδωρ οὐ πίεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "παιδίον",
+     "ψυχρὸν",
+     "ὕδωρ",
+     "οὐ",
+     "πίεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-532-future-system-t6",
+  "sectionId": "sm-532-future-system",
+  "questions": [
+   {
+    "prompt": "The wise man, honoring the gods, will lead a happy life.",
+    "answer": "ὁ σοφὸς τοὺς θεοὺς τιμῶν εὐδαίμονα βίον ἄξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῶν",
+     "εὐδαίμονα",
+     "βίον",
+     "ἄξει"
+    ]
+   },
+   {
+    "prompt": "Whoever does these things will pay a great penalty.",
+    "answer": "ὅστις ταῦτα πράξει, μεγάλην δίκην δώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ταῦτα",
+     "πράξει",
+     "μεγάλην",
+     "δίκην",
+     "δώσει"
+    ]
+   },
+   {
+    "prompt": "The general will destroy the city and enslave its inhabitants.",
+    "answer": "ὁ στρατηγὸς τὴν πόλιν ὀλεῖ καὶ τοὺς ἐνοίκους δουλώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "πόλιν",
+     "ὀλεῖ",
+     "καὶ",
+     "τοὺς",
+     "ἐνοίκους",
+     "δουλώσει"
+    ]
+   },
+   {
+    "prompt": "You will find many friends, but few true ones.",
+    "answer": "πολλοὺς μὲν φίλους εὑρήσεις, ὀλίγους δὲ ἀληθεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὺς",
+     "μὲν",
+     "φίλους",
+     "εὑρήσεις",
+     "ὀλίγους",
+     "δὲ",
+     "ἀληθεῖς"
+    ]
+   }
+  ]
+ }
+]
