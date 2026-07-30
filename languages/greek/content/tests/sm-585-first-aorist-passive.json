@@ -1,0 +1,390 @@
+[
+ {
+  "id": "sm-585-first-aorist-passive-t1",
+  "sectionId": "sm-585-first-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The prisoners were freed by the general after the battle.",
+    "answer": "οἱ αἰχμάλωτοι ὑπὸ τοῦ στρατηγοῦ μετὰ τὴν μάχην ἐλύθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ὑπὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "ἐλύθησαν"
+    ]
+   },
+   {
+    "prompt": "Those who fought bravely were honored by the whole city.",
+    "answer": "οἱ ἀνδρείως μαχεσάμενοι ὑπὸ τῆς πόλεως ὅλης ἐτιμήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀνδρείως",
+     "μαχεσάμενοι",
+     "ὑπὸ",
+     "τῆς",
+     "πόλεως",
+     "ὅλης",
+     "ἐτιμήθησαν"
+    ]
+   },
+   {
+    "prompt": "We were persuaded by the ambassadors to make peace.",
+    "answer": "ὑπὸ τῶν πρέσβεων ἐπείσθημεν εἰρήνην ποιήσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῶν",
+     "πρέσβεων",
+     "ἐπείσθημεν",
+     "εἰρήνην",
+     "ποιήσασθαι"
+    ]
+   },
+   {
+    "prompt": "The gates were guarded through the whole night by the young men.",
+    "answer": "αἱ θύραι διὰ ὅλης τῆς νυκτὸς ὑπὸ τῶν νεανιῶν ἐφυλάχθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "θύραι",
+     "διὰ",
+     "ὅλης",
+     "τῆς",
+     "νυκτὸς",
+     "ὑπὸ",
+     "τῶν",
+     "νεανιῶν",
+     "ἐφυλάχθησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-585-first-aorist-passive-t2",
+  "sectionId": "sm-585-first-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The children were led to the teacher by their father.",
+    "answer": "τὰ παιδία ὑπὸ τοῦ πατρὸς πρὸς τὸν διδάσκαλον ἤχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "παιδία",
+     "ὑπὸ",
+     "τοῦ",
+     "πατρὸς",
+     "πρὸς",
+     "τὸν",
+     "διδάσκαλον",
+     "ἤχθη"
+    ]
+   },
+   {
+    "prompt": "Messengers were sent by the king to the allies.",
+    "answer": "ἄγγελοι ὑπὸ τοῦ βασιλέως πρὸς τοὺς συμμάχους ἐπέμφθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγγελοι",
+     "ὑπὸ",
+     "τοῦ",
+     "βασιλέως",
+     "πρὸς",
+     "τοὺς",
+     "συμμάχους",
+     "ἐπέμφθησαν"
+    ]
+   },
+   {
+    "prompt": "Few of the soldiers were saved after the shipwreck.",
+    "answer": "ὀλίγοι τῶν στρατιωτῶν μετὰ τὴν ναυαγίαν ἐσώθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀλίγοι",
+     "τῶν",
+     "στρατιωτῶν",
+     "μετὰ",
+     "τὴν",
+     "ναυαγίαν",
+     "ἐσώθησαν"
+    ]
+   },
+   {
+    "prompt": "The plan was revealed to the enemy by a traitor.",
+    "answer": "τὸ βούλευμα ὑπὸ προδότου τοῖς πολεμίοις ἐδηλώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "βούλευμα",
+     "ὑπὸ",
+     "προδότου",
+     "τοῖς",
+     "πολεμίοις",
+     "ἐδηλώθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-585-first-aorist-passive-t3",
+  "sectionId": "sm-585-first-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The farmers were harmed by the long war.",
+    "answer": "οἱ γεωργοὶ ὑπὸ τοῦ μακροῦ πολέμου ἐβλάφθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γεωργοὶ",
+     "ὑπὸ",
+     "τοῦ",
+     "μακροῦ",
+     "πολέμου",
+     "ἐβλάφθησαν"
+    ]
+   },
+   {
+    "prompt": "We were hindered by the storm from sailing to the island.",
+    "answer": "ὑπὸ τοῦ χειμῶνος ἐκωλύθημεν εἰς τὴν νῆσον πλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τοῦ",
+     "χειμῶνος",
+     "ἐκωλύθημεν",
+     "εἰς",
+     "τὴν",
+     "νῆσον",
+     "πλεῖν"
+    ]
+   },
+   {
+    "prompt": "The citizens were forced to hand over their weapons.",
+    "answer": "οἱ πολῖται τὰ ὅπλα παραδοῦναι ἠναγκάσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὰ",
+     "ὅπλα",
+     "παραδοῦναι",
+     "ἠναγκάσθησαν"
+    ]
+   },
+   {
+    "prompt": "The army was thrown into confusion by the sudden attack.",
+    "answer": "τὸ στράτευμα ὑπὸ τῆς αἰφνιδίου προσβολῆς ἐταράχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "ὑπὸ",
+     "τῆς",
+     "αἰφνιδίου",
+     "προσβολῆς",
+     "ἐταράχθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-585-first-aorist-passive-t4",
+  "sectionId": "sm-585-first-aorist-passive",
+  "questions": [
+   {
+    "prompt": "Great gifts were given to the victors by the people.",
+    "answer": "μεγάλα δῶρα τοῖς νικήσασιν ὑπὸ τοῦ δήμου ἐδόθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεγάλα",
+     "δῶρα",
+     "τοῖς",
+     "νικήσασιν",
+     "ὑπὸ",
+     "τοῦ",
+     "δήμου",
+     "ἐδόθη"
+    ]
+   },
+   {
+    "prompt": "The trophy was set up on the hill by the generals.",
+    "answer": "τὸ τρόπαιον ἐπὶ τοῦ λόφου ὑπὸ τῶν στρατηγῶν ἐτέθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τρόπαιον",
+     "ἐπὶ",
+     "τοῦ",
+     "λόφου",
+     "ὑπὸ",
+     "τῶν",
+     "στρατηγῶν",
+     "ἐτέθη"
+    ]
+   },
+   {
+    "prompt": "Ten men were chosen by the assembly to judge the matter.",
+    "answer": "δέκα ἄνδρες ὑπὸ τῆς ἐκκλησίας ᾑρέθησαν τὸ πρᾶγμα κρῖναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέκα",
+     "ἄνδρες",
+     "ὑπὸ",
+     "τῆς",
+     "ἐκκλησίας",
+     "ᾑρέθησαν",
+     "τὸ",
+     "πρᾶγμα",
+     "κρῖναι"
+    ]
+   },
+   {
+    "prompt": "The victims were sacrificed to the gods before the battle.",
+    "answer": "τὰ ἱερεῖα τοῖς θεοῖς πρὸ τῆς μάχης ἐτύθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ἱερεῖα",
+     "τοῖς",
+     "θεοῖς",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "ἐτύθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-585-first-aorist-passive-t5",
+  "sectionId": "sm-585-first-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The victory was announced to the citizens by a herald.",
+    "answer": "ἡ νίκη τοῖς πολίταις ὑπὸ κήρυκος ἠγγέλθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νίκη",
+     "τοῖς",
+     "πολίταις",
+     "ὑπὸ",
+     "κήρυκος",
+     "ἠγγέλθη"
+    ]
+   },
+   {
+    "prompt": "Freedom was proclaimed throughout the whole land.",
+    "answer": "ἡ ἐλευθερία κατὰ πᾶσαν τὴν χώραν ἐκηρύχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐλευθερία",
+     "κατὰ",
+     "πᾶσαν",
+     "τὴν",
+     "χώραν",
+     "ἐκηρύχθη"
+    ]
+   },
+   {
+    "prompt": "The captured slaves were sold in the marketplace.",
+    "answer": "οἱ ληφθέντες δοῦλοι ἐν τῇ ἀγορᾷ ἐπωλήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ληφθέντες",
+     "δοῦλοι",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἐπωλήθησαν"
+    ]
+   },
+   {
+    "prompt": "The wise man was called happy by all.",
+    "answer": "ὁ σοφὸς ὑπὸ πάντων εὐδαίμων ἐκλήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "ὑπὸ",
+     "πάντων",
+     "εὐδαίμων",
+     "ἐκλήθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-585-first-aorist-passive-t6",
+  "sectionId": "sm-585-first-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The truth was at last shown to the judges.",
+    "answer": "ἡ ἀλήθεια τέλος τοῖς δικασταῖς ἐφάνθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "τέλος",
+     "τοῖς",
+     "δικασταῖς",
+     "ἐφάνθη"
+    ]
+   },
+   {
+    "prompt": "The wounded were brought into the camp by their comrades.",
+    "answer": "οἱ τετρωμένοι ὑπὸ τῶν ἑταίρων εἰς τὸ στρατόπεδον ἐκομίσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τετρωμένοι",
+     "ὑπὸ",
+     "τῶν",
+     "ἑταίρων",
+     "εἰς",
+     "τὸ",
+     "στρατόπεδον",
+     "ἐκομίσθησαν"
+    ]
+   },
+   {
+    "prompt": "These boys were well educated by good teachers.",
+    "answer": "οὗτοι οἱ παῖδες ὑπὸ ἀγαθῶν διδασκάλων εὖ ἐπαιδεύθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "παῖδες",
+     "ὑπὸ",
+     "ἀγαθῶν",
+     "διδασκάλων",
+     "εὖ",
+     "ἐπαιδεύθησαν"
+    ]
+   },
+   {
+    "prompt": "A colony was founded beside the river by the Corinthians.",
+    "answer": "ἀποικία παρὰ τὸν ποταμὸν ὑπὸ τῶν Κορινθίων ᾠκίσθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποικία",
+     "παρὰ",
+     "τὸν",
+     "ποταμὸν",
+     "ὑπὸ",
+     "τῶν",
+     "Κορινθίων",
+     "ᾠκίσθη"
+    ]
+   }
+  ]
+ }
+]
