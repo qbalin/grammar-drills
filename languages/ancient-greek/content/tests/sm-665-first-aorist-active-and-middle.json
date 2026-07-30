@@ -1,0 +1,386 @@
+[
+ {
+  "id": "sm-665-first-aorist-active-and-middle-t1",
+  "sectionId": "sm-665-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "After the general freed the prisoners, the citizens praised him.",
+    "answer": "ἐπεὶ ὁ στρατηγὸς τοὺς αἰχμαλώτους ἔλυσεν, οἱ πολῖται αὐτὸν ἐπῄνεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "ὁ",
+     "στρατηγός",
+     "τούς",
+     "αἰχμαλώτους",
+     "ἔλυσεν",
+     "οἱ",
+     "πολῖται",
+     "αὐτόν",
+     "ἐπῄνεσαν"
+    ]
+   },
+   {
+    "prompt": "The soldiers displayed their courage in the battle by the river.",
+    "answer": "οἱ στρατιῶται τὴν ἀνδρείαν ἐν τῇ πρὸς τῷ ποταμῷ μάχῃ ἔδειξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τήν",
+     "ἀνδρείαν",
+     "ἐν",
+     "τῇ",
+     "πρός",
+     "τῷ",
+     "ποταμῷ",
+     "μάχῃ",
+     "ἔδειξαν"
+    ]
+   },
+   {
+    "prompt": "The old man ransomed his own son from the enemy.",
+    "answer": "ὁ γέρων τὸν ἑαυτοῦ υἱὸν παρὰ τῶν πολεμίων ἐλύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τόν",
+     "ἑαυτοῦ",
+     "υἱόν",
+     "παρά",
+     "τῶν",
+     "πολεμίων",
+     "ἐλύσατο"
+    ]
+   },
+   {
+    "prompt": "The messenger announced the victory to the assembled citizens.",
+    "answer": "ὁ ἄγγελος τοῖς συνειλεγμένοις πολίταις τὴν νίκην ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τοῖς",
+     "συνειλεγμένοις",
+     "πολίταις",
+     "τήν",
+     "νίκην",
+     "ἤγγειλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-665-first-aorist-active-and-middle-t2",
+  "sectionId": "sm-665-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "Having freed the city, the general sailed away to Athens.",
+    "answer": "λύσας τὴν πόλιν ὁ στρατηγὸς εἰς τὰς Ἀθήνας ἀπέπλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λύσας",
+     "τήν",
+     "πόλιν",
+     "ὁ",
+     "στρατηγός",
+     "εἰς",
+     "τάς",
+     "Ἀθήνας",
+     "ἀπέπλευσεν"
+    ]
+   },
+   {
+    "prompt": "The woman, having sent the letter, awaited the answer.",
+    "answer": "ἡ γυνὴ τὴν ἐπιστολὴν πέμψασα τὴν ἀπόκρισιν ἀνέμενεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "τήν",
+     "ἐπιστολήν",
+     "πέμψασα",
+     "ἀπόκρισιν",
+     "ἀνέμενεν"
+    ]
+   },
+   {
+    "prompt": "Those who had persuaded the people repented afterwards.",
+    "answer": "οἱ τὸν δῆμον πείσαντες ὕστερον μετεμέλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τόν",
+     "δῆμον",
+     "πείσαντες",
+     "ὕστερον",
+     "μετεμέλοντο"
+    ]
+   },
+   {
+    "prompt": "Having ransomed themselves, the captives returned home.",
+    "answer": "λυσάμενοι ἑαυτοὺς οἱ αἰχμάλωτοι οἴκαδε ἐπανῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λυσάμενοι",
+     "ἑαυτούς",
+     "οἱ",
+     "αἰχμάλωτοι",
+     "οἴκαδε",
+     "ἐπανῆλθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-665-first-aorist-active-and-middle-t3",
+  "sectionId": "sm-665-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "May the gods save the city from danger.",
+    "answer": "οἱ θεοὶ τὴν πόλιν ἐκ τοῦ κινδύνου σώσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "τήν",
+     "πόλιν",
+     "ἐκ",
+     "τοῦ",
+     "κινδύνου",
+     "σώσειαν"
+    ]
+   },
+   {
+    "prompt": "I would gladly teach the young men virtue.",
+    "answer": "ἡδέως ἂν τοὺς νεανίας τὴν ἀρετὴν διδάξαιμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἄν",
+     "τούς",
+     "νεανίας",
+     "τήν",
+     "ἀρετήν",
+     "διδάξαιμι"
+    ]
+   },
+   {
+    "prompt": "If anyone should harm the temple, he would pay the penalty.",
+    "answer": "εἴ τις τὸ ἱερὸν βλάψειεν, δίκην ἂν δοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "τό",
+     "ἱερόν",
+     "βλάψειεν",
+     "δίκην",
+     "ἄν",
+     "δοίη"
+    ]
+   },
+   {
+    "prompt": "Would that you might free your homeland from the tyrant.",
+    "answer": "εἴθε τὴν πατρίδα ἐκ τοῦ τυράννου λύσειας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "τήν",
+     "πατρίδα",
+     "ἐκ",
+     "τοῦ",
+     "τυράννου",
+     "λύσειας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-665-first-aorist-active-and-middle-t4",
+  "sectionId": "sm-665-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "Let us free the slaves and honor the gods.",
+    "answer": "τοὺς δούλους λύσωμεν καὶ τοὺς θεοὺς τιμήσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "δούλους",
+     "λύσωμεν",
+     "καί",
+     "θεούς",
+     "τιμήσωμεν"
+    ]
+   },
+   {
+    "prompt": "Do not harm the man who has done no wrong.",
+    "answer": "μὴ βλάψῃς τὸν ἄνδρα τὸν μηδὲν ἀδικήσαντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "βλάψῃς",
+     "τόν",
+     "ἄνδρα",
+     "μηδέν",
+     "ἀδικήσαντα"
+    ]
+   },
+   {
+    "prompt": "We are afraid that the enemy may destroy the walls.",
+    "answer": "φοβούμεθα μὴ οἱ πολέμιοι τὰ τείχη λύσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβούμεθα",
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "τά",
+     "τείχη",
+     "λύσωσιν"
+    ]
+   },
+   {
+    "prompt": "The general sends scouts so that they may point out the road.",
+    "answer": "ὁ στρατηγὸς σκοποὺς πέμπει ἵνα τὴν ὁδὸν δείξωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "σκοπούς",
+     "πέμπει",
+     "ἵνα",
+     "τήν",
+     "ὁδόν",
+     "δείξωσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-665-first-aorist-active-and-middle-t5",
+  "sectionId": "sm-665-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "Free the prisoners at once, general!",
+    "answer": "λῦσον εὐθὺς τοὺς αἰχμαλώτους, ὦ στρατηγέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λῦσον",
+     "εὐθύς",
+     "τούς",
+     "αἰχμαλώτους",
+     "ὦ",
+     "στρατηγέ"
+    ]
+   },
+   {
+    "prompt": "Show the strangers the road to the harbor.",
+    "answer": "δεῖξον τοῖς ξένοις τὴν εἰς τὸν λιμένα ὁδόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖξον",
+     "τοῖς",
+     "ξένοις",
+     "τήν",
+     "εἰς",
+     "τόν",
+     "λιμένα",
+     "ὁδόν"
+    ]
+   },
+   {
+    "prompt": "The father ordered his son to save the money.",
+    "answer": "ὁ πατὴρ τὸν υἱὸν ἐκέλευσε τὰ χρήματα σῶσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατήρ",
+     "τόν",
+     "υἱόν",
+     "ἐκέλευσε",
+     "τά",
+     "χρήματα",
+     "σῶσαι"
+    ]
+   },
+   {
+    "prompt": "It is noble to help your friends and to honor the gods.",
+    "answer": "καλόν ἐστι τοῖς φίλοις βοηθῆσαι καὶ τοὺς θεοὺς τιμῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλόν",
+     "ἐστι",
+     "τοῖς",
+     "φίλοις",
+     "βοηθῆσαι",
+     "καί",
+     "τούς",
+     "θεούς",
+     "τιμῆσαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-665-first-aorist-active-and-middle-t6",
+  "sectionId": "sm-665-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "The Athenians provided themselves with allies before the war.",
+    "answer": "οἱ Ἀθηναῖοι πρὸ τοῦ πολέμου συμμάχους παρεσκευάσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "πρό",
+     "τοῦ",
+     "πολέμου",
+     "συμμάχους",
+     "παρεσκευάσαντο"
+    ]
+   },
+   {
+    "prompt": "After making a truce, both armies withdrew.",
+    "answer": "σπονδὰς ποιησάμενοι ἀμφότερα τὰ στρατόπεδα ἀνεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σπονδάς",
+     "ποιησάμενοι",
+     "ἀμφότερα",
+     "τά",
+     "στρατόπεδα",
+     "ἀνεχώρησαν"
+    ]
+   },
+   {
+    "prompt": "The king ransomed his daughter with much gold.",
+    "answer": "ὁ βασιλεὺς τὴν θυγατέρα πολλῷ χρυσῷ ἐλύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεύς",
+     "τήν",
+     "θυγατέρα",
+     "πολλῷ",
+     "χρυσῷ",
+     "ἐλύσατο"
+    ]
+   },
+   {
+    "prompt": "The young men trained themselves for the contest.",
+    "answer": "οἱ νεανίαι πρὸς τὸν ἀγῶνα ἐγυμνάσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "πρός",
+     "τόν",
+     "ἀγῶνα",
+     "ἐγυμνάσαντο"
+    ]
+   }
+  ]
+ }
+]

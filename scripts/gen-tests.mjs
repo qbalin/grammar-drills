@@ -135,7 +135,15 @@ function callClaude(prompt) {
   try {
     out = execFileSync(
       "claude",
-      ["-p", prompt, "--model", MODEL, "--output-format", "json"],
+      // `--tools ""` denies the subprocess every tool. `claude -p` is an agent,
+      // not a completion: asked for a JSON object it may instead pick up Write
+      // and put the file on disk itself, then answer in prose. The generator
+      // sees "no JSON in result" and reports +0 tests while a full file lands
+      // anyway — skipping validate(), which is where attestation, the
+      // duplicate-prompt check and id assignment live. That happened to
+      // sm-574 and sm-599 in the run before this flag existed. Writing
+      // sentences needs no tools, so the fix is to have none to reach for.
+      ["-p", prompt, "--model", MODEL, "--output-format", "json", "--tools", ""],
       { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], maxBuffer: 64 * 1024 * 1024 },
     );
   } catch (e) {
