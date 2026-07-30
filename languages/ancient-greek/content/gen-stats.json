@@ -979,5 +979,56 @@
    "καταλελοίπειν": 1,
    "κίχρησιν": 1
   }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 6,
+  "calls": 20,
+  "rawQuestions": 468,
+  "keptQuestions": 465,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 3,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "προέδωκεν": 2,
+   "ἔτρεον": 2,
+   "ναυπηγήσονται": 1,
+   "ἐνθυμησόμεθα": 1,
+   "ἀγάσομαι": 1,
+   "γηρασόμεθα": 1,
+   "ἁρπασόμεθα": 1,
+   "φθησόμεθα": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 8,
+  "calls": 21,
+  "rawQuestions": 440,
+  "keptQuestions": 437,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 3,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἔθεμεν": 2,
+   "ἔθεσαν": 1,
+   "πήξουσι": 1,
+   "προῆκας": 1,
+   "σβέντος": 1,
+   "προῶμεν": 1,
+   "προήγαγεν": 1,
+   "παρατέθηκεν": 1,
+   "εὐξόμεναι": 1,
+   "προῇς": 1,
+   "καθήσθων": 1
+  }
  }
 ]

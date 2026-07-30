@@ -1,0 +1,395 @@
+[
+ {
+  "id": "sm-754-the-futures-t1",
+  "sectionId": "sm-754-the-futures",
+  "questions": [
+   {
+    "prompt": "The general will give money to the soldiers before the battle.",
+    "answer": "ὁ στρατηγὸς τοῖς στρατιώταις χρήματα πρὸ τῆς μάχης δώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοῖς",
+     "στρατιώταις",
+     "χρήματα",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "δώσει"
+    ]
+   },
+   {
+    "prompt": "The captives will be given back to the enemy tomorrow.",
+    "answer": "οἱ αἰχμάλωτοι αὔριον τοῖς πολεμίοις ἀποδοθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "αὔριον",
+     "τοῖς",
+     "πολεμίοις",
+     "ἀποδοθήσονται"
+    ]
+   },
+   {
+    "prompt": "I will not surrender the city, though the enemy are pressing hard.",
+    "answer": "οὐ παραδώσω τὴν πόλιν, καίπερ τῶν πολεμίων ἐγκειμένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "παραδώσω",
+     "τὴν",
+     "πόλιν",
+     "καίπερ",
+     "τῶν",
+     "πολεμίων",
+     "ἐγκειμένων"
+    ]
+   },
+   {
+    "prompt": "The jurors will cast a just vote about these matters.",
+    "answer": "οἱ δικασταὶ δικαίαν ψῆφον περὶ τούτων δώσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "δικαίαν",
+     "ψῆφον",
+     "περὶ",
+     "τούτων",
+     "δώσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-754-the-futures-t2",
+  "sectionId": "sm-754-the-futures",
+  "questions": [
+   {
+    "prompt": "The lawgiver will establish new laws for the citizens.",
+    "answer": "ὁ νομοθέτης τοῖς πολίταις νόμους καινοὺς θήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νομοθέτης",
+     "τοῖς",
+     "πολίταις",
+     "νόμους",
+     "καινοὺς",
+     "θήσει"
+    ]
+   },
+   {
+    "prompt": "These laws will be established by the assembly itself.",
+    "answer": "οὗτοι οἱ νόμοι ὑπὸ αὐτῆς τῆς ἐκκλησίας τεθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "νόμοι",
+     "ὑπὸ",
+     "αὐτῆς",
+     "τῆς",
+     "ἐκκλησίας",
+     "τεθήσονται"
+    ]
+   },
+   {
+    "prompt": "I will make you an ally, if you keep your oaths.",
+    "answer": "σύμμαχόν σε θήσομαι, ἐὰν τοὺς ὅρκους φυλάττῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύμμαχόν",
+     "σε",
+     "θήσομαι",
+     "ἐὰν",
+     "τοὺς",
+     "ὅρκους",
+     "φυλάττῃς"
+    ]
+   },
+   {
+    "prompt": "The priests will place the sacrificial victim upon the altar.",
+    "answer": "οἱ ἱερεῖς τὸ ἱερεῖον ἐπὶ τὸν βωμὸν θήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "τὸ",
+     "ἱερεῖον",
+     "ἐπὶ",
+     "τὸν",
+     "βωμὸν",
+     "θήσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-754-the-futures-t3",
+  "sectionId": "sm-754-the-futures",
+  "questions": [
+   {
+    "prompt": "The soldiers will set up a trophy in the plain.",
+    "answer": "οἱ στρατιῶται τρόπαιον ἐν τῷ πεδίῳ στήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τρόπαιον",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "στήσουσιν"
+    ]
+   },
+   {
+    "prompt": "The statue will be set up in the marketplace by the citizens.",
+    "answer": "ὁ ἀνδριὰς ἐν τῇ ἀγορᾷ ὑπὸ τῶν πολιτῶν σταθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀνδριὰς",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "σταθήσεται"
+    ]
+   },
+   {
+    "prompt": "The guards will stand firm at the gates throughout the whole night.",
+    "answer": "οἱ φύλακες ἐπὶ ταῖς πύλαις διὰ ὅλης τῆς νυκτὸς ἑστήξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "ἐπὶ",
+     "ταῖς",
+     "πύλαις",
+     "διὰ",
+     "ὅλης",
+     "τῆς",
+     "νυκτὸς",
+     "ἑστήξουσιν"
+    ]
+   },
+   {
+    "prompt": "The general will halt the army beside the river.",
+    "answer": "ὁ στρατηγὸς παρὰ τὸν ποταμὸν τὸ στράτευμα στήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "παρὰ",
+     "τὸν",
+     "ποταμὸν",
+     "τὸ",
+     "στράτευμα",
+     "στήσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-754-the-futures-t4",
+  "sectionId": "sm-754-the-futures",
+  "questions": [
+   {
+    "prompt": "The teacher will show the students the road to virtue.",
+    "answer": "ὁ διδάσκαλος τοῖς μαθηταῖς τὴν ὁδὸν τὴν πρὸς ἀρετὴν δείξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "τοῖς",
+     "μαθηταῖς",
+     "τὴν",
+     "ὁδὸν",
+     "πρὸς",
+     "ἀρετὴν",
+     "δείξει"
+    ]
+   },
+   {
+    "prompt": "The truth will be shown clearly to all by the witnesses.",
+    "answer": "ἡ ἀλήθεια πᾶσι σαφῶς ὑπὸ τῶν μαρτύρων δειχθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "πᾶσι",
+     "σαφῶς",
+     "ὑπὸ",
+     "τῶν",
+     "μαρτύρων",
+     "δειχθήσεται"
+    ]
+   },
+   {
+    "prompt": "I will prove that this man is guilty of the theft.",
+    "answer": "ἀποδείξω τοῦτον τὸν ἄνδρα τῆς κλοπῆς αἴτιον ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποδείξω",
+     "τοῦτον",
+     "τὸν",
+     "ἄνδρα",
+     "τῆς",
+     "κλοπῆς",
+     "αἴτιον",
+     "ὄντα"
+    ]
+   },
+   {
+    "prompt": "The wise man will display his courage in the midst of dangers.",
+    "answer": "ὁ σοφὸς ἐν τοῖς κινδύνοις τὴν ἀνδρείαν ἐπιδείξεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "ἐν",
+     "τοῖς",
+     "κινδύνοις",
+     "τὴν",
+     "ἀνδρείαν",
+     "ἐπιδείξεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-754-the-futures-t5",
+  "sectionId": "sm-754-the-futures",
+  "questions": [
+   {
+    "prompt": "The general will release the captives on the following day.",
+    "answer": "ὁ στρατηγὸς τῇ ὑστεραίᾳ τοὺς αἰχμαλώτους ἀφήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τῇ",
+     "ὑστεραίᾳ",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ἀφήσει"
+    ]
+   },
+   {
+    "prompt": "The captives will be released, if they pay a ransom.",
+    "answer": "οἱ αἰχμάλωτοι ἀφεθήσονται, ἐὰν λύτρα καταβάλωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ἀφεθήσονται",
+     "ἐὰν",
+     "λύτρα",
+     "καταβάλωσιν"
+    ]
+   },
+   {
+    "prompt": "We will not let the hostages go before receiving pledges.",
+    "answer": "οὐ μεθήσομεν τοὺς ὁμήρους πρὶν πίστεις λαβεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μεθήσομεν",
+     "τοὺς",
+     "ὁμήρους",
+     "πρὶν",
+     "πίστεις",
+     "λαβεῖν"
+    ]
+   },
+   {
+    "prompt": "They will hurl their arrows against the enemy from the walls.",
+    "answer": "τὰ τοξεύματα ἐπὶ τοὺς πολεμίους ἀπὸ τῶν τειχῶν ἥσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τοξεύματα",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους",
+     "ἀπὸ",
+     "τῶν",
+     "τειχῶν",
+     "ἥσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-754-the-futures-t6",
+  "sectionId": "sm-754-the-futures",
+  "questions": [
+   {
+    "prompt": "The soldiers will fix their spears in the ground and take rest.",
+    "answer": "οἱ στρατιῶται τὰ δόρατα εἰς τὴν γῆν πήξουσι καὶ ἀναπαύσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "δόρατα",
+     "εἰς",
+     "τὴν",
+     "γῆν",
+     "πήξουσι",
+     "καὶ",
+     "ἀναπαύσονται"
+    ]
+   },
+   {
+    "prompt": "The ice will freeze upon the river during the winter.",
+    "answer": "ὁ κρύσταλλος ἐπὶ τῷ ποταμῷ τοῦ χειμῶνος παγήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κρύσταλλος",
+     "ἐπὶ",
+     "τῷ",
+     "ποταμῷ",
+     "τοῦ",
+     "χειμῶνος",
+     "παγήσεται"
+    ]
+   },
+   {
+    "prompt": "The cook will mix wine with water for the guests.",
+    "answer": "ὁ μάγειρος οἶνον ὕδατι τοῖς ξένοις μείξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάγειρος",
+     "οἶνον",
+     "ὕδατι",
+     "τοῖς",
+     "ξένοις",
+     "μείξει"
+    ]
+   },
+   {
+    "prompt": "The merchants will weigh out the gold on the scale.",
+    "answer": "οἱ ἔμποροι τὸ χρυσίον ἐπὶ τῷ σταθμῷ στήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἔμποροι",
+     "τὸ",
+     "χρυσίον",
+     "ἐπὶ",
+     "τῷ",
+     "σταθμῷ",
+     "στήσουσιν"
+    ]
+   }
+  ]
+ }
+]

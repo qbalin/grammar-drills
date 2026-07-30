@@ -1,0 +1,734 @@
+[
+ {
+  "id": "sm-900-definitions-t1",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "A herald came into the marketplace.",
+    "answer": "κῆρυξ εἰς τὴν ἀγορὰν ἦλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κῆρυξ",
+     "εἰς",
+     "τὴν",
+     "ἀγορὰν",
+     "ἦλθεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers marched through the plain, and the general followed them.",
+    "answer": "οἱ στρατιῶται διὰ τοῦ πεδίου ἐπορεύοντο, καὶ ὁ στρατηγὸς αὐτοῖς εἵπετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἐπορεύοντο",
+     "καὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "αὐτοῖς",
+     "εἵπετο"
+    ]
+   },
+   {
+    "prompt": "Whenever it was necessary to cross the river, each man made haste.",
+    "answer": "ὁπότε δέοι τὸν ποταμὸν διαβαίνειν, ἔσπευδεν ἕκαστος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "δέοι",
+     "τὸν",
+     "ποταμὸν",
+     "διαβαίνειν",
+     "ἔσπευδεν",
+     "ἕκαστος"
+    ]
+   },
+   {
+    "prompt": "It is necessary for the young to obey the laws.",
+    "answer": "δεῖ τοὺς νέους τοῖς νόμοις πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "τοὺς",
+     "νέους",
+     "τοῖς",
+     "νόμοις",
+     "πείθεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t2",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "The wise woman, sitting in the temple, was silent.",
+    "answer": "ἡ σοφὴ γυνὴ ἐν τῷ ἱερῷ καθημένη ἐσίγα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφὴ",
+     "γυνὴ",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "καθημένη",
+     "ἐσίγα"
+    ]
+   },
+   {
+    "prompt": "The spring came, and the trees grew.",
+    "answer": "τὸ ἔαρ ἦλθεν, καὶ τὰ δένδρα ηὔξανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἔαρ",
+     "ἦλθεν",
+     "καὶ",
+     "τὰ",
+     "δένδρα",
+     "ηὔξανεν"
+    ]
+   },
+   {
+    "prompt": "When the enemy had fled, the citizens rejoiced.",
+    "answer": "ἐπεὶ οἱ πολέμιοι ἔφυγον, οἱ πολῖται ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "πολέμιοι",
+     "ἔφυγον",
+     "πολῖται",
+     "ἔχαιρον"
+    ]
+   },
+   {
+    "prompt": "Alas, the good man is dead.",
+    "answer": "φεῦ, ὁ ἀγαθὸς ἀνὴρ τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεῦ",
+     "ὁ",
+     "ἀγαθὸς",
+     "ἀνὴρ",
+     "τέθνηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t3",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "The general's courage saved the army.",
+    "answer": "ἡ τοῦ στρατηγοῦ ἀνδρεία τὸν στρατὸν ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀνδρεία",
+     "τὸν",
+     "στρατὸν",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "The wind stopped, but the sailors were nonetheless afraid.",
+    "answer": "ὁ ἄνεμος ἐπαύσατο, οἱ δὲ ναῦται ὅμως ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄνεμος",
+     "ἐπαύσατο",
+     "οἱ",
+     "δὲ",
+     "ναῦται",
+     "ὅμως",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "Whoever loves wisdom seeks the truth.",
+    "answer": "ὅστις τὴν σοφίαν φιλεῖ, τὴν ἀλήθειαν ζητεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τὴν",
+     "σοφίαν",
+     "φιλεῖ",
+     "ἀλήθειαν",
+     "ζητεῖ"
+    ]
+   },
+   {
+    "prompt": "It is not permitted to speak ill of the dead.",
+    "answer": "οὐκ ἔξεστι τοὺς τεθνεῶτας κακῶς λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔξεστι",
+     "τοὺς",
+     "τεθνεῶτας",
+     "κακῶς",
+     "λέγειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t4",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "O citizens, listen to me!",
+    "answer": "ὦ πολῖται, ἀκούσατέ μου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "πολῖται",
+     "ἀκούσατέ",
+     "μου"
+    ]
+   },
+   {
+    "prompt": "The children were carrying gifts to the goddess.",
+    "answer": "οἱ παῖδες δῶρα τῇ θεῷ ἔφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "δῶρα",
+     "τῇ",
+     "θεῷ",
+     "ἔφερον"
+    ]
+   },
+   {
+    "prompt": "Cyrus divided the spoils, and gave gifts to the soldiers.",
+    "answer": "ὁ Κῦρος τὰ λάφυρα διεῖλεν, καὶ τοῖς στρατιώταις δῶρα ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "τὰ",
+     "λάφυρα",
+     "διεῖλεν",
+     "καὶ",
+     "τοῖς",
+     "στρατιώταις",
+     "δῶρα",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "When spring had come, the ships sailed out of the harbor.",
+    "answer": "τοῦ ἔαρος ἐλθόντος, αἱ νῆες ἐκ τοῦ λιμένος ἐξέπλευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "ἔαρος",
+     "ἐλθόντος",
+     "αἱ",
+     "νῆες",
+     "ἐκ",
+     "λιμένος",
+     "ἐξέπλευσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t5",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "One must not neglect the laws.",
+    "answer": "χρὴ τῶν νόμων μὴ ἀμελεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρὴ",
+     "τῶν",
+     "νόμων",
+     "μὴ",
+     "ἀμελεῖν"
+    ]
+   },
+   {
+    "prompt": "Wisdom increases the happiness of men.",
+    "answer": "ἡ σοφία τὴν τῶν ἀνθρώπων εὐδαιμονίαν αὐξάνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφία",
+     "τὴν",
+     "τῶν",
+     "ἀνθρώπων",
+     "εὐδαιμονίαν",
+     "αὐξάνει"
+    ]
+   },
+   {
+    "prompt": "The herald proclaimed peace, and all the citizens rejoiced.",
+    "answer": "ὁ κῆρυξ εἰρήνην ἐκήρυξεν, καὶ πάντες οἱ πολῖται ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "εἰρήνην",
+     "ἐκήρυξεν",
+     "καὶ",
+     "πάντες",
+     "οἱ",
+     "πολῖται",
+     "ἔχαιρον"
+    ]
+   },
+   {
+    "prompt": "The soldiers, when they saw the sea, shouted loudly.",
+    "answer": "οἱ στρατιῶται, ἐπεὶ τὴν θάλατταν εἶδον, μέγα ἐβόησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐπεὶ",
+     "τὴν",
+     "θάλατταν",
+     "εἶδον",
+     "μέγα",
+     "ἐβόησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t6",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "O, the wisdom of the wise!",
+    "answer": "ὦ τῆς τῶν σοφῶν σοφίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "τῆς",
+     "τῶν",
+     "σοφῶν",
+     "σοφίας"
+    ]
+   },
+   {
+    "prompt": "The just man honors the gods.",
+    "answer": "ὁ δίκαιος τοὺς θεοὺς τιμᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δίκαιος",
+     "τοὺς",
+     "θεοὺς",
+     "τιμᾷ"
+    ]
+   },
+   {
+    "prompt": "Night came on, and the enemy marched away.",
+    "answer": "νὺξ ἐπεγένετο, καὶ οἱ πολέμιοι ἀπήλασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νὺξ",
+     "ἐπεγένετο",
+     "καὶ",
+     "οἱ",
+     "πολέμιοι",
+     "ἀπήλασαν"
+    ]
+   },
+   {
+    "prompt": "It befits the young to honor their elders.",
+    "answer": "πρέπει τοὺς νέους τοὺς πρεσβυτέρους τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρέπει",
+     "τοὺς",
+     "νέους",
+     "πρεσβυτέρους",
+     "τιμᾶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t7",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "The messenger who had come from the enemy reported everything.",
+    "answer": "ὁ ἄγγελος ὁ παρὰ τῶν πολεμίων ἥκων πάντα ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "παρὰ",
+     "τῶν",
+     "πολεμίων",
+     "ἥκων",
+     "πάντα",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers, having crossed the river, pitched camp.",
+    "answer": "οἱ στρατιῶται τὸν ποταμὸν διαβάντες ἐστρατοπεδεύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "ποταμὸν",
+     "διαβάντες",
+     "ἐστρατοπεδεύσαντο"
+    ]
+   },
+   {
+    "prompt": "The poet's song delighted the whole city.",
+    "answer": "ἡ τοῦ ποιητοῦ ᾠδὴ πᾶσαν τὴν πόλιν ἔτερψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "ποιητοῦ",
+     "ᾠδὴ",
+     "πᾶσαν",
+     "τὴν",
+     "πόλιν",
+     "ἔτερψεν"
+    ]
+   },
+   {
+    "prompt": "The judges sitting in the court punished the traitor.",
+    "answer": "οἱ ἐν τῷ δικαστηρίῳ καθήμενοι δικασταὶ τὸν προδότην ἐκόλασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῷ",
+     "δικαστηρίῳ",
+     "καθήμενοι",
+     "δικασταὶ",
+     "τὸν",
+     "προδότην",
+     "ἐκόλασαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t8",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "The sun set, and the soldiers lit fires.",
+    "answer": "ὁ ἥλιος ἔδυ, καὶ οἱ στρατιῶται πυρὰ ἀνέκαυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἥλιος",
+     "ἔδυ",
+     "καὶ",
+     "οἱ",
+     "στρατιῶται",
+     "πυρὰ",
+     "ἀνέκαυσαν"
+    ]
+   },
+   {
+    "prompt": "On the next day they marched through the plain, but the enemy kept following.",
+    "answer": "τῇ δὲ ὑστεραίᾳ διὰ τοῦ πεδίου ἐπορεύοντο, οἱ δὲ πολέμιοι εἵποντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῇ",
+     "δὲ",
+     "ὑστεραίᾳ",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἐπορεύοντο",
+     "οἱ",
+     "πολέμιοι",
+     "εἵποντο"
+    ]
+   },
+   {
+    "prompt": "Either the gods help us or we shall perish.",
+    "answer": "ἢ οἱ θεοὶ ἡμῖν βοηθοῦσιν ἢ ἀπολούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἢ",
+     "οἱ",
+     "θεοὶ",
+     "ἡμῖν",
+     "βοηθοῦσιν",
+     "ἀπολούμεθα"
+    ]
+   },
+   {
+    "prompt": "The orator spoke well, and the people applauded.",
+    "answer": "ὁ ῥήτωρ εὖ ἔλεξεν, καὶ ὁ δῆμος ἐπῄνεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "εὖ",
+     "ἔλεξεν",
+     "καὶ",
+     "δῆμος",
+     "ἐπῄνεσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t9",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "Whenever it was necessary to cross the river, everyone hurried.",
+    "answer": "ὁπότε δέοι τὸν ποταμὸν διαβαίνειν, ἔσπευδεν ἕκαστος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "δέοι",
+     "τὸν",
+     "ποταμὸν",
+     "διαβαίνειν",
+     "ἔσπευδεν",
+     "ἕκαστος"
+    ]
+   },
+   {
+    "prompt": "When the general died, the army was thrown into confusion.",
+    "answer": "ἐπεὶ ὁ στρατηγὸς ἀπέθανεν, τὸ στράτευμα ἐταράχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀπέθανεν",
+     "τὸ",
+     "στράτευμα",
+     "ἐταράχθη"
+    ]
+   },
+   {
+    "prompt": "Because they feared the storm, the sailors remained in the harbor.",
+    "answer": "ἐπειδὴ τὸν χειμῶνα ἐφοβοῦντο, οἱ ναῦται ἐν τῷ λιμένι ἔμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "τὸν",
+     "χειμῶνα",
+     "ἐφοβοῦντο",
+     "οἱ",
+     "ναῦται",
+     "ἐν",
+     "τῷ",
+     "λιμένι",
+     "ἔμενον"
+    ]
+   },
+   {
+    "prompt": "If you honor the gods, you will be happy.",
+    "answer": "ἐὰν τοὺς θεοὺς τιμᾷς, εὐδαίμων ἔσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τοὺς",
+     "θεοὺς",
+     "τιμᾷς",
+     "εὐδαίμων",
+     "ἔσῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t10",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "O Zeus, save the city!",
+    "answer": "ὦ Ζεῦ, σῷζε τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Ζεῦ",
+     "σῷζε",
+     "τὴν",
+     "πόλιν"
+    ]
+   },
+   {
+    "prompt": "Alas, how wretched I am!",
+    "answer": "οἴμοι, ὡς ἄθλιός εἰμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἴμοι",
+     "ὡς",
+     "ἄθλιός",
+     "εἰμι"
+    ]
+   },
+   {
+    "prompt": "Friends, do not abandon me!",
+    "answer": "ὦ φίλοι, μή με καταλίπητε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "φίλοι",
+     "μή",
+     "με",
+     "καταλίπητε"
+    ]
+   },
+   {
+    "prompt": "Yes, I myself heard the herald.",
+    "answer": "ναί, αὐτὸς τοῦ κήρυκος ἤκουσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ναί",
+     "αὐτὸς",
+     "τοῦ",
+     "κήρυκος",
+     "ἤκουσα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t11",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "It is necessary for the citizens to guard the walls.",
+    "answer": "δεῖ τοὺς πολίτας τὰ τείχη φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "τοὺς",
+     "πολίτας",
+     "τὰ",
+     "τείχη",
+     "φυλάττειν"
+    ]
+   },
+   {
+    "prompt": "It seems best to the generals to lead the army away.",
+    "answer": "δοκεῖ τοῖς στρατηγοῖς ἀπάγειν τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκεῖ",
+     "τοῖς",
+     "στρατηγοῖς",
+     "ἀπάγειν",
+     "τὸ",
+     "στράτευμα"
+    ]
+   },
+   {
+    "prompt": "One ought to obey those who rule well.",
+    "answer": "χρὴ τοῖς καλῶς ἄρχουσι πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρὴ",
+     "τοῖς",
+     "καλῶς",
+     "ἄρχουσι",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "It is possible for the wise to bear misfortunes nobly.",
+    "answer": "ἔξεστι τοῖς σοφοῖς τὰς συμφορὰς γενναίως φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστι",
+     "τοῖς",
+     "σοφοῖς",
+     "τὰς",
+     "συμφορὰς",
+     "γενναίως",
+     "φέρειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-900-definitions-t12",
+  "sectionId": "sm-900-definitions",
+  "questions": [
+   {
+    "prompt": "The truth, though bitter, is useful.",
+    "answer": "ἡ ἀλήθεια, καίπερ πικρὰ οὖσα, ὠφέλιμός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "καίπερ",
+     "πικρὰ",
+     "οὖσα",
+     "ὠφέλιμός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "When night came on, the enemy attacked the camp.",
+    "answer": "νυκτὸς ἐπιγενομένης, οἱ πολέμιοι τῷ στρατοπέδῳ ἐπέθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτὸς",
+     "ἐπιγενομένης",
+     "οἱ",
+     "πολέμιοι",
+     "τῷ",
+     "στρατοπέδῳ",
+     "ἐπέθεντο"
+    ]
+   },
+   {
+    "prompt": "Farewell, and remember our words!",
+    "answer": "χαῖρε, καὶ τῶν ἡμετέρων λόγων μέμνησο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαῖρε",
+     "καὶ",
+     "τῶν",
+     "ἡμετέρων",
+     "λόγων",
+     "μέμνησο"
+    ]
+   },
+   {
+    "prompt": "The children, having learned their letters, were praised by the teacher.",
+    "answer": "οἱ παῖδες τὰ γράμματα μαθόντες ὑπὸ τοῦ διδασκάλου ἐπῃνέθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τὰ",
+     "γράμματα",
+     "μαθόντες",
+     "ὑπὸ",
+     "τοῦ",
+     "διδασκάλου",
+     "ἐπῃνέθησαν"
+    ]
+   }
+  ]
+ }
+]

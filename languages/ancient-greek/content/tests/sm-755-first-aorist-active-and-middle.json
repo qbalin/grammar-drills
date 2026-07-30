@@ -1,0 +1,520 @@
+[
+ {
+  "id": "sm-755-first-aorist-active-and-middle-t1",
+  "sectionId": "sm-755-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "The king gave the herald a golden crown.",
+    "answer": "ὁ βασιλεὺς τῷ κήρυκι στέφανον χρυσοῦν ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τῷ",
+     "κήρυκι",
+     "στέφανον",
+     "χρυσοῦν",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "Since you gave the servant his freedom, everyone praises you.",
+    "answer": "ἐπεὶ τῷ θεράποντι τὴν ἐλευθερίαν ἔδωκας, πάντες σε ἐπαινοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τῷ",
+     "θεράποντι",
+     "τὴν",
+     "ἐλευθερίαν",
+     "ἔδωκας",
+     "πάντες",
+     "σε",
+     "ἐπαινοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The gods gave mortals many good things.",
+    "answer": "οἱ θεοὶ τοῖς θνητοῖς πολλὰ ἀγαθὰ ἔδωκαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "τοῖς",
+     "θνητοῖς",
+     "πολλὰ",
+     "ἀγαθὰ",
+     "ἔδωκαν"
+    ]
+   },
+   {
+    "prompt": "I gave my daughter to the noble man in marriage.",
+    "answer": "ἐγὼ τὴν θυγατέρα τῷ γενναίῳ ἀνδρὶ ἔδωκα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "τὴν",
+     "θυγατέρα",
+     "τῷ",
+     "γενναίῳ",
+     "ἀνδρὶ",
+     "ἔδωκα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-755-first-aorist-active-and-middle-t2",
+  "sectionId": "sm-755-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "I placed the sword upon the altar.",
+    "answer": "ἐγὼ τὸ ἄορ ἐπὶ τὸν βωμὸν ἔθηκα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "τὸ",
+     "ἄορ",
+     "ἐπὶ",
+     "τὸν",
+     "βωμὸν",
+     "ἔθηκα"
+    ]
+   },
+   {
+    "prompt": "The lawgiver established good laws for the citizens.",
+    "answer": "ὁ νομοθέτης τοῖς πολίταις νόμους ἀγαθοὺς ἔθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νομοθέτης",
+     "τοῖς",
+     "πολίταις",
+     "νόμους",
+     "ἀγαθοὺς",
+     "ἔθηκεν"
+    ]
+   },
+   {
+    "prompt": "You dedicated the beautiful robe to the goddess.",
+    "answer": "τὸν καλὸν πέπλον τῇ θεᾷ ἀνέθηκας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "καλὸν",
+     "πέπλον",
+     "τῇ",
+     "θεᾷ",
+     "ἀνέθηκας"
+    ]
+   },
+   {
+    "prompt": "Where did you put the letter which the messenger brought?",
+    "answer": "ποῦ τὴν ἐπιστολὴν ἔθηκας ἣν ὁ ἄγγελος ἤνεγκεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποῦ",
+     "τὴν",
+     "ἐπιστολὴν",
+     "ἔθηκας",
+     "ἣν",
+     "ὁ",
+     "ἄγγελος",
+     "ἤνεγκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-755-first-aorist-active-and-middle-t3",
+  "sectionId": "sm-755-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "The judge released the slave from his chains.",
+    "answer": "ὁ δικαστὴς τὸν δοῦλον ἐκ τῶν δεσμῶν ἀφῆκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστὴς",
+     "τὸν",
+     "δοῦλον",
+     "ἐκ",
+     "τῶν",
+     "δεσμῶν",
+     "ἀφῆκεν"
+    ]
+   },
+   {
+    "prompt": "I let the arrow fly at the wild beast.",
+    "answer": "ἐγὼ τὸ βέλος ἐπὶ τὸ θηρίον ἧκα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "τὸ",
+     "βέλος",
+     "ἐπὶ",
+     "θηρίον",
+     "ἧκα"
+    ]
+   },
+   {
+    "prompt": "Since you let the prisoners go, the enemy escaped.",
+    "answer": "ἐπεὶ τοὺς αἰχμαλώτους ἀφῆκας, οἱ πολέμιοι ἐξέφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ἀφῆκας",
+     "οἱ",
+     "πολέμιοι",
+     "ἐξέφυγον"
+    ]
+   },
+   {
+    "prompt": "The general dismissed the assembly at daybreak.",
+    "answer": "ὁ στρατηγὸς ἅμα τῇ ἡμέρᾳ τὴν ἐκκλησίαν ἀφῆκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἅμα",
+     "τῇ",
+     "ἡμέρᾳ",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἀφῆκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-755-first-aorist-active-and-middle-t4",
+  "sectionId": "sm-755-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "The Athenians set up a trophy after the victory.",
+    "answer": "οἱ Ἀθηναῖοι μετὰ τὴν νίκην τρόπαιον ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "μετὰ",
+     "τὴν",
+     "νίκην",
+     "τρόπαιον",
+     "ἔστησαν"
+    ]
+   },
+   {
+    "prompt": "The people appointed him general over the army.",
+    "answer": "ὁ δῆμος αὐτὸν στρατηγὸν ἐπὶ τῷ στρατεύματι κατέστησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "αὐτὸν",
+     "στρατηγὸν",
+     "ἐπὶ",
+     "τῷ",
+     "στρατεύματι",
+     "κατέστησεν"
+    ]
+   },
+   {
+    "prompt": "I stationed the guards at the gates of the city.",
+    "answer": "ἐγὼ τοὺς φύλακας ἐπὶ ταῖς πύλαις τῆς πόλεως ἔστησα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "τοὺς",
+     "φύλακας",
+     "ἐπὶ",
+     "ταῖς",
+     "πύλαις",
+     "τῆς",
+     "πόλεως",
+     "ἔστησα"
+    ]
+   },
+   {
+    "prompt": "You raised up the fallen man and led him home.",
+    "answer": "τὸν πεσόντα ἄνδρα ἀνέστησας καὶ οἴκαδε ἤγαγες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "πεσόντα",
+     "ἄνδρα",
+     "ἀνέστησας",
+     "καὶ",
+     "οἴκαδε",
+     "ἤγαγες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-755-first-aorist-active-and-middle-t5",
+  "sectionId": "sm-755-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "Having conquered the enemy in the battle, they set up a trophy for themselves.",
+    "answer": "τοὺς πολεμίους ἐν τῇ μάχῃ νικήσαντες τρόπαιον ἐστήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "πολεμίους",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "νικήσαντες",
+     "τρόπαιον",
+     "ἐστήσαντο"
+    ]
+   },
+   {
+    "prompt": "The wise man handed over the books to his pupils.",
+    "answer": "ὁ σοφὸς τὰ βιβλία τοῖς μαθηταῖς παρέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τὰ",
+     "βιβλία",
+     "τοῖς",
+     "μαθηταῖς",
+     "παρέδωκεν"
+    ]
+   },
+   {
+    "prompt": "I imposed a heavy penalty on the traitor.",
+    "answer": "ἐγὼ τῷ προδότῃ μεγάλην ζημίαν ἐπέθηκα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "τῷ",
+     "προδότῃ",
+     "μεγάλην",
+     "ζημίαν",
+     "ἐπέθηκα"
+    ]
+   },
+   {
+    "prompt": "You gave back all the money to the orphan.",
+    "answer": "τὸ ἀργύριον ἅπαν τῷ ὀρφανῷ ἀπέδωκας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἀργύριον",
+     "ἅπαν",
+     "τῷ",
+     "ὀρφανῷ",
+     "ἀπέδωκας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-755-first-aorist-active-and-middle-t6",
+  "sectionId": "sm-755-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "The old man placed his hope in the gods.",
+    "answer": "ὁ γέρων τὴν ἐλπίδα ἐν τοῖς θεοῖς ἔθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τὴν",
+     "ἐλπίδα",
+     "ἐν",
+     "τοῖς",
+     "θεοῖς",
+     "ἔθηκεν"
+    ]
+   },
+   {
+    "prompt": "You sent a messenger ahead to the enemies' camp.",
+    "answer": "ἄγγελον εἰς τὸ τῶν πολεμίων στρατόπεδον προῆκας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγγελον",
+     "εἰς",
+     "τὸ",
+     "τῶν",
+     "πολεμίων",
+     "στρατόπεδον",
+     "προῆκας"
+    ]
+   },
+   {
+    "prompt": "The general established a garrison in the city.",
+    "answer": "ὁ στρατηγὸς φρουρὰν ἐν τῇ πόλει κατέστησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "φρουρὰν",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "κατέστησεν"
+    ]
+   },
+   {
+    "prompt": "I gave the dog food, and it followed me.",
+    "answer": "ἐγὼ τῷ κυνὶ σῖτον ἔδωκα, ὁ δὲ ἐμοὶ εἵπετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "τῷ",
+     "κυνὶ",
+     "σῖτον",
+     "ἔδωκα",
+     "ὁ",
+     "δὲ",
+     "ἐμοὶ",
+     "εἵπετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-755-first-aorist-active-and-middle-t7",
+  "sectionId": "sm-755-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "After the victory the general gave his soldiers a worthy reward.",
+    "answer": "μετὰ τὴν νίκην ὁ στρατηγὸς τοῖς στρατιώταις ἀξίαν δωρεὰν ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετὰ",
+     "τὴν",
+     "νίκην",
+     "ὁ",
+     "στρατηγὸς",
+     "τοῖς",
+     "στρατιώταις",
+     "ἀξίαν",
+     "δωρεὰν",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "Having captured the city, the enemy set up statues in the marketplace.",
+    "answer": "τὴν πόλιν ἑλόντες οἱ πολέμιοι ἀγάλματα ἐν τῇ ἀγορᾷ ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "πόλιν",
+     "ἑλόντες",
+     "οἱ",
+     "πολέμιοι",
+     "ἀγάλματα",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἔστησαν"
+    ]
+   },
+   {
+    "prompt": "I hurled my spear at the tyrant as he fled.",
+    "answer": "ἐπὶ τὸν τύραννον φεύγοντα τὸ δόρυ ἧκα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπὶ",
+     "τὸν",
+     "τύραννον",
+     "φεύγοντα",
+     "τὸ",
+     "δόρυ",
+     "ἧκα"
+    ]
+   },
+   {
+    "prompt": "The lawgiver laid down just laws for the citizens.",
+    "answer": "ὁ νομοθέτης τοῖς πολίταις νόμους δικαίους ἔθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νομοθέτης",
+     "τοῖς",
+     "πολίταις",
+     "νόμους",
+     "δικαίους",
+     "ἔθηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-755-first-aorist-active-and-middle-t8",
+  "sectionId": "sm-755-first-aorist-active-and-middle",
+  "questions": [
+   {
+    "prompt": "Yesterday you gave the stranger money and food.",
+    "answer": "χθὲς τῷ ξένῳ ἀργύριον καὶ σῖτον ἔδωκας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χθὲς",
+     "τῷ",
+     "ξένῳ",
+     "ἀργύριον",
+     "καὶ",
+     "σῖτον",
+     "ἔδωκας"
+    ]
+   },
+   {
+    "prompt": "The old man released the prisoner from his chains.",
+    "answer": "ὁ γέρων τὸν δεσμώτην ἐκ τῶν δεσμῶν ἀφῆκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τὸν",
+     "δεσμώτην",
+     "ἐκ",
+     "τῶν",
+     "δεσμῶν",
+     "ἀφῆκεν"
+    ]
+   },
+   {
+    "prompt": "He placed in the temple the beautiful statue which the craftsman had made.",
+    "answer": "τὸ καλὸν ἄγαλμα ὃ ὁ τεχνίτης ἐποίησεν ἐν τῷ ἱερῷ ἔθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "καλὸν",
+     "ἄγαλμα",
+     "ὃ",
+     "ὁ",
+     "τεχνίτης",
+     "ἐποίησεν",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "ἔθηκεν"
+    ]
+   },
+   {
+    "prompt": "After the war the citizens set up an altar for themselves by the sea.",
+    "answer": "μετὰ τὸν πόλεμον οἱ πολῖται πρὸς τῇ θαλάττῃ βωμὸν ἐστήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετὰ",
+     "τὸν",
+     "πόλεμον",
+     "οἱ",
+     "πολῖται",
+     "πρὸς",
+     "τῇ",
+     "θαλάττῃ",
+     "βωμὸν",
+     "ἐστήσαντο"
+    ]
+   }
+  ]
+ }
+]

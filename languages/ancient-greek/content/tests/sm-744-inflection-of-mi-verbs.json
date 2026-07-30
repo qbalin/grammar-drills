@@ -1,0 +1,971 @@
+[
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t1",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The general gives gifts to the soldiers.",
+    "answer": "ὁ στρατηγὸς δῶρα τοῖς στρατιώταις δίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "δῶρα",
+     "τοῖς",
+     "στρατιώταις",
+     "δίδωσιν"
+    ]
+   },
+   {
+    "prompt": "The judges give the prizes to those who win.",
+    "answer": "οἱ κριταὶ τὰ ἆθλα τοῖς νικῶσι διδόασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κριταὶ",
+     "τὰ",
+     "ἆθλα",
+     "τοῖς",
+     "νικῶσι",
+     "διδόασιν"
+    ]
+   },
+   {
+    "prompt": "Giving him his hand, he led the old man.",
+    "answer": "τὴν χεῖρα διδοὺς τὸν γέροντα ἦγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "χεῖρα",
+     "διδοὺς",
+     "τὸν",
+     "γέροντα",
+     "ἦγεν"
+    ]
+   },
+   {
+    "prompt": "It is noble to give money to friends.",
+    "answer": "καλόν ἐστι χρήματα τοῖς φίλοις διδόναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλόν",
+     "ἐστι",
+     "χρήματα",
+     "τοῖς",
+     "φίλοις",
+     "διδόναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t2",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The lawgiver establishes laws for the citizens.",
+    "answer": "ὁ νομοθέτης νόμους τοῖς πολίταις τίθησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νομοθέτης",
+     "νόμους",
+     "τοῖς",
+     "πολίταις",
+     "τίθησιν"
+    ]
+   },
+   {
+    "prompt": "They place the weapons on the ground.",
+    "answer": "τὰ ὅπλα ἐπὶ τῆς γῆς τιθέασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ὅπλα",
+     "ἐπὶ",
+     "τῆς",
+     "γῆς",
+     "τιθέασιν"
+    ]
+   },
+   {
+    "prompt": "Having placed a crown on his head, they honored him.",
+    "answer": "στέφανον ἐπὶ τῇ κεφαλῇ θέντες ἐτίμησαν αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στέφανον",
+     "ἐπὶ",
+     "τῇ",
+     "κεφαλῇ",
+     "θέντες",
+     "ἐτίμησαν",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "The soldiers were placing their shields on the ground.",
+    "answer": "οἱ στρατιῶται τὰς ἀσπίδας ἐπὶ τῆς γῆς ἐτίθεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὰς",
+     "ἀσπίδας",
+     "ἐπὶ",
+     "τῆς",
+     "γῆς",
+     "ἐτίθεσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t3",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "After the battle the general sets up a trophy.",
+    "answer": "ὁ στρατηγὸς μετὰ τὴν μάχην τρόπαιον ἵστησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "τρόπαιον",
+     "ἵστησιν"
+    ]
+   },
+   {
+    "prompt": "The soldiers stand near the gates.",
+    "answer": "οἱ στρατιῶται πρὸς ταῖς πύλαις ἑστᾶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πρὸς",
+     "ταῖς",
+     "πύλαις",
+     "ἑστᾶσιν"
+    ]
+   },
+   {
+    "prompt": "Stand up, and tell me the truth.",
+    "answer": "στῆθι καὶ εἰπέ μοι τὴν ἀλήθειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στῆθι",
+     "καὶ",
+     "εἰπέ",
+     "μοι",
+     "τὴν",
+     "ἀλήθειαν"
+    ]
+   },
+   {
+    "prompt": "The citizens wish to set up a statue of the goddess.",
+    "answer": "οἱ πολῖται βούλονται ἄγαλμα τῆς θεοῦ ἱστάναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "βούλονται",
+     "ἄγαλμα",
+     "τῆς",
+     "θεοῦ",
+     "ἱστάναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t4",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The messenger says that the enemy are approaching.",
+    "answer": "ὁ ἄγγελος τοὺς πολεμίους προσιέναι φησίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τοὺς",
+     "πολεμίους",
+     "προσιέναι",
+     "φησίν"
+    ]
+   },
+   {
+    "prompt": "They say that the king is unjust.",
+    "answer": "τὸν βασιλέα ἄδικον εἶναί φασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "βασιλέα",
+     "ἄδικον",
+     "εἶναί",
+     "φασιν"
+    ]
+   },
+   {
+    "prompt": "I say that virtue is teachable.",
+    "answer": "φημὶ τὴν ἀρετὴν διδακτὴν εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φημὶ",
+     "τὴν",
+     "ἀρετὴν",
+     "διδακτὴν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "These things you say, but you do the opposite.",
+    "answer": "ταῦτα μὲν φῄς, τὰ δὲ ἐναντία πράττεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "μὲν",
+     "φῄς",
+     "τὰ",
+     "δὲ",
+     "ἐναντία",
+     "πράττεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t5",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The teacher shows the way to the young men.",
+    "answer": "ὁ διδάσκαλος τὴν ὁδὸν τοῖς νεανίαις δείκνυσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "τὴν",
+     "ὁδὸν",
+     "τοῖς",
+     "νεανίαις",
+     "δείκνυσιν"
+    ]
+   },
+   {
+    "prompt": "The witnesses show the truth to the jurors.",
+    "answer": "οἱ μάρτυρες τὴν ἀλήθειαν τοῖς δικασταῖς δεικνύασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μάρτυρες",
+     "τὴν",
+     "ἀλήθειαν",
+     "τοῖς",
+     "δικασταῖς",
+     "δεικνύασιν"
+    ]
+   },
+   {
+    "prompt": "The men send arrows at the wall.",
+    "answer": "οἱ ἄνδρες τοξεύματα ἐπὶ τὸ τεῖχος ἱᾶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄνδρες",
+     "τοξεύματα",
+     "ἐπὶ",
+     "τὸ",
+     "τεῖχος",
+     "ἱᾶσιν"
+    ]
+   },
+   {
+    "prompt": "Let go of the rope which you are holding.",
+    "answer": "ἄφες τὸ σχοινίον ὃ κατέχεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄφες",
+     "τὸ",
+     "σχοινίον",
+     "ὃ",
+     "κατέχεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t6",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "While the general was setting up the trophy, the soldiers rejoiced.",
+    "answer": "τοῦ στρατηγοῦ τὸ τρόπαιον ἱστάντος, οἱ στρατιῶται ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "τὸ",
+     "τρόπαιον",
+     "ἱστάντος",
+     "οἱ",
+     "στρατιῶται",
+     "ἔχαιρον"
+    ]
+   },
+   {
+    "prompt": "Those who give generously to the poor are fortunate.",
+    "answer": "εὐδαίμονές εἰσιν οἱ τοῖς πένησιν ἀφθόνως διδόντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐδαίμονές",
+     "εἰσιν",
+     "οἱ",
+     "τοῖς",
+     "πένησιν",
+     "ἀφθόνως",
+     "διδόντες"
+    ]
+   },
+   {
+    "prompt": "Having set down his burden, the slave rested.",
+    "answer": "τὸ φορτίον καταθεὶς ὁ δοῦλος ἀνεπαύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "φορτίον",
+     "καταθεὶς",
+     "ὁ",
+     "δοῦλος",
+     "ἀνεπαύσατο"
+    ]
+   },
+   {
+    "prompt": "Give back to the citizens the money which you took.",
+    "answer": "ἀπόδος τοῖς πολίταις τὰ χρήματα ἃ ἔλαβες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπόδος",
+     "τοῖς",
+     "πολίταις",
+     "τὰ",
+     "χρήματα",
+     "ἃ",
+     "ἔλαβες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t7",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The wise woman gives splendid gifts to the strangers.",
+    "answer": "Ἡ σοφὴ γυνὴ τοῖς ξένοις λαμπρὰ δῶρα δίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "σοφὴ",
+     "γυνὴ",
+     "τοῖς",
+     "ξένοις",
+     "λαμπρὰ",
+     "δῶρα",
+     "δίδωσιν"
+    ]
+   },
+   {
+    "prompt": "They place the shields upon the wagon.",
+    "answer": "Τὰς ἀσπίδας ἐπὶ τὴν ἀπήνην τιθέασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὰς",
+     "ἀσπίδας",
+     "ἐπὶ",
+     "τὴν",
+     "ἀπήνην",
+     "τιθέασιν"
+    ]
+   },
+   {
+    "prompt": "The priests were setting up an altar for the gods.",
+    "answer": "Οἱ ἱερεῖς τοῖς θεοῖς βωμὸν ἵστασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ἱερεῖς",
+     "τοῖς",
+     "θεοῖς",
+     "βωμὸν",
+     "ἵστασαν"
+    ]
+   },
+   {
+    "prompt": "Give me a clear proof, o judges.",
+    "answer": "Δότε μοι σαφὲς μαρτύριον, ὦ δικασταί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δότε",
+     "μοι",
+     "σαφὲς",
+     "μαρτύριον",
+     "ὦ",
+     "δικασταί"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t8",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "He says that the enemy are weak.",
+    "answer": "Φησὶ τοὺς πολεμίους ἀσθενεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Φησὶ",
+     "τοὺς",
+     "πολεμίους",
+     "ἀσθενεῖν"
+    ]
+   },
+   {
+    "prompt": "Stand fast, o soldiers, and do not flee.",
+    "answer": "Στῆτε, ὦ στρατιῶται, καὶ μὴ φεύγετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Στῆτε",
+     "ὦ",
+     "στρατιῶται",
+     "καὶ",
+     "μὴ",
+     "φεύγετε"
+    ]
+   },
+   {
+    "prompt": "The general releases the prisoners.",
+    "answer": "Ὁ στρατηγὸς τοὺς αἰχμαλώτους ἀφίησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ἀφίησιν"
+    ]
+   },
+   {
+    "prompt": "Speak the truth, o boy.",
+    "answer": "Φαθὶ τὴν ἀλήθειαν, ὦ παῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Φαθὶ",
+     "τὴν",
+     "ἀλήθειαν",
+     "ὦ",
+     "παῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t9",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The old man shows the road to the wanderers.",
+    "answer": "Ὁ γέρων τοῖς νομάσι τὴν ὁδὸν δείκνυσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "γέρων",
+     "τοῖς",
+     "νομάσι",
+     "τὴν",
+     "ὁδὸν",
+     "δείκνυσιν"
+    ]
+   },
+   {
+    "prompt": "They were showing their courage in the battle.",
+    "answer": "Τὴν ἀρετὴν ἐν τῇ μάχῃ ἐδείκνυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὴν",
+     "ἀρετὴν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἐδείκνυσαν"
+    ]
+   },
+   {
+    "prompt": "The citizens set the laws in the marketplace.",
+    "answer": "Οἱ πολῖται τοὺς νόμους ἐν τῇ ἀγορᾷ ἔθεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "πολῖται",
+     "τοὺς",
+     "νόμους",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἔθεσαν"
+    ]
+   },
+   {
+    "prompt": "Show us the way, o guide.",
+    "answer": "Δείκνυ ἡμῖν τὴν ὁδόν, ὦ ἡγεμών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δείκνυ",
+     "ἡμῖν",
+     "τὴν",
+     "ὁδόν",
+     "ὦ",
+     "ἡγεμών"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t10",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The soldiers lay down their arms.",
+    "answer": "Οἱ στρατιῶται τὰ ὅπλα τίθενται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ὅπλα",
+     "τίθενται"
+    ]
+   },
+   {
+    "prompt": "The king gives his daughter to the noble young man.",
+    "answer": "Ὁ βασιλεὺς τὴν θυγατέρα τῷ γενναίῳ νεανίᾳ δίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "βασιλεὺς",
+     "τὴν",
+     "θυγατέρα",
+     "τῷ",
+     "γενναίῳ",
+     "νεανίᾳ",
+     "δίδωσιν"
+    ]
+   },
+   {
+    "prompt": "Do you place great hope in the gods?",
+    "answer": "Ἆρα μεγάλην ἐλπίδα ἐν τοῖς θεοῖς τίθεσαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἆρα",
+     "μεγάλην",
+     "ἐλπίδα",
+     "ἐν",
+     "τοῖς",
+     "θεοῖς",
+     "τίθεσαι"
+    ]
+   },
+   {
+    "prompt": "Let him give back the money to the widow.",
+    "answer": "Ἀποδιδότω τὸ ἀργύριον τῇ χήρᾳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀποδιδότω",
+     "τὸ",
+     "ἀργύριον",
+     "τῇ",
+     "χήρᾳ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t11",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "It is noble to give one's life for the fatherland.",
+    "answer": "Καλόν ἐστι τὴν ψυχὴν ὑπὲρ τῆς πατρίδος διδόναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Καλόν",
+     "ἐστι",
+     "τὴν",
+     "ψυχὴν",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "διδόναι"
+    ]
+   },
+   {
+    "prompt": "Giving many gifts, the king gained the friendship of the allies.",
+    "answer": "Πολλὰ δῶρα διδοὺς ὁ βασιλεὺς τὴν τῶν συμμάχων φιλίαν ἐκτήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πολλὰ",
+     "δῶρα",
+     "διδοὺς",
+     "ὁ",
+     "βασιλεὺς",
+     "τὴν",
+     "τῶν",
+     "συμμάχων",
+     "φιλίαν",
+     "ἐκτήσατο"
+    ]
+   },
+   {
+    "prompt": "Those standing near the gates were watching the horsemen.",
+    "answer": "Οἱ πρὸς ταῖς πύλαις ἑστῶτες τοὺς ἱππέας ἐθεῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "πρὸς",
+     "ταῖς",
+     "πύλαις",
+     "ἑστῶτες",
+     "τοὺς",
+     "ἱππέας",
+     "ἐθεῶντο"
+    ]
+   },
+   {
+    "prompt": "He wishes to set up a trophy of the victory.",
+    "answer": "Βούλεται τρόπαιον τῆς νίκης στῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Βούλεται",
+     "τρόπαιον",
+     "τῆς",
+     "νίκης",
+     "στῆσαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t12",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "Let us set up the statue in the temple.",
+    "answer": "Στήσωμεν τὸ ἄγαλμα ἐν τῷ ἱερῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Στήσωμεν",
+     "τὸ",
+     "ἄγαλμα",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ"
+    ]
+   },
+   {
+    "prompt": "If anyone gives money to the poor, he is just.",
+    "answer": "Ἐάν τις τοῖς πένησιν ἀργύριον διδῷ, δίκαιός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "τις",
+     "τοῖς",
+     "πένησιν",
+     "ἀργύριον",
+     "διδῷ",
+     "δίκαιός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "I would gladly give my hand to a faithful friend.",
+    "answer": "Ἡδέως ἂν πιστῷ φίλῳ τὴν χεῖρα δοίην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡδέως",
+     "ἂν",
+     "πιστῷ",
+     "φίλῳ",
+     "τὴν",
+     "χεῖρα",
+     "δοίην"
+    ]
+   },
+   {
+    "prompt": "Stand fast, o soldier, and guard the wall.",
+    "answer": "Στῆθι, ὦ στρατιῶτα, καὶ φύλαττε τὸ τεῖχος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Στῆθι",
+     "ὦ",
+     "στρατιῶτα",
+     "καὶ",
+     "φύλαττε",
+     "τὸ",
+     "τεῖχος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t13",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The priest places the wreath upon the altar.",
+    "answer": "ὁ ἱερεὺς τὸν στέφανον ἐπὶ τὸν βωμὸν τίθησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "τὸν",
+     "στέφανον",
+     "ἐπὶ",
+     "βωμὸν",
+     "τίθησιν"
+    ]
+   },
+   {
+    "prompt": "They stand on the wall and await the enemy.",
+    "answer": "ἐπὶ τῷ τείχει ἑστᾶσι καὶ τοὺς πολεμίους μένουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπὶ",
+     "τῷ",
+     "τείχει",
+     "ἑστᾶσι",
+     "καὶ",
+     "τοὺς",
+     "πολεμίους",
+     "μένουσιν"
+    ]
+   },
+   {
+    "prompt": "The judges give the prize to the victor.",
+    "answer": "οἱ κριταὶ τῷ νικῶντι τὸ ἆθλον διδόασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κριταὶ",
+     "τῷ",
+     "νικῶντι",
+     "τὸ",
+     "ἆθλον",
+     "διδόασιν"
+    ]
+   },
+   {
+    "prompt": "Stand up, old man, and speak the truth.",
+    "answer": "ἀνάστηθι, ὦ γέρον, καὶ τὰ ἀληθῆ λέγε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνάστηθι",
+     "ὦ",
+     "γέρον",
+     "καὶ",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t14",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The archers shoot their arrows at the enemy.",
+    "answer": "οἱ τοξόται τὰ βέλη ἐπὶ τοὺς πολεμίους ἱᾶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοξόται",
+     "τὰ",
+     "βέλη",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους",
+     "ἱᾶσιν"
+    ]
+   },
+   {
+    "prompt": "You say that you are willing to die for your friends.",
+    "answer": "φῂς ἐθέλειν ὑπὲρ τῶν φίλων ἀποθνῄσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φῂς",
+     "ἐθέλειν",
+     "ὑπὲρ",
+     "τῶν",
+     "φίλων",
+     "ἀποθνῄσκειν"
+    ]
+   },
+   {
+    "prompt": "The generals hand over the city to the enemy.",
+    "answer": "οἱ στρατηγοὶ τὴν πόλιν τοῖς πολεμίοις παραδιδόασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατηγοὶ",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "παραδιδόασιν"
+    ]
+   },
+   {
+    "prompt": "Release the prisoners, for they have done nothing wrong.",
+    "answer": "ἄφες τοὺς δεσμώτας· οὐδὲν γὰρ ἠδίκησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄφες",
+     "τοὺς",
+     "δεσμώτας",
+     "οὐδὲν",
+     "γὰρ",
+     "ἠδίκησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t15",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "The guide showed the strangers the sacred grove.",
+    "answer": "ὁ ἡγεμὼν τοῖς ξένοις τὸ ἱερὸν ἄλσος ἐδείκνυ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἡγεμὼν",
+     "τοῖς",
+     "ξένοις",
+     "τὸ",
+     "ἱερὸν",
+     "ἄλσος",
+     "ἐδείκνυ"
+    ]
+   },
+   {
+    "prompt": "The priests were placing the first-fruits upon the altar.",
+    "answer": "οἱ ἱερεῖς τὰς ἀπαρχὰς ἐπὶ τῷ βωμῷ ἐτίθεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "τὰς",
+     "ἀπαρχὰς",
+     "ἐπὶ",
+     "τῷ",
+     "βωμῷ",
+     "ἐτίθεσαν"
+    ]
+   },
+   {
+    "prompt": "The old men, standing in the marketplace, were conversing.",
+    "answer": "οἱ γέροντες ἐν τῇ ἀγορᾷ ἑστῶτες διελέγοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἑστῶτες",
+     "διελέγοντο"
+    ]
+   },
+   {
+    "prompt": "Show me the shortest road, stranger.",
+    "answer": "δείκνυ μοι, ὦ ξένε, τὴν βραχυτάτην ὁδόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δείκνυ",
+     "μοι",
+     "ὦ",
+     "ξένε",
+     "τὴν",
+     "βραχυτάτην",
+     "ὁδόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-744-inflection-of-mi-verbs-t16",
+  "sectionId": "sm-744-inflection-of-mi-verbs",
+  "questions": [
+   {
+    "prompt": "Let us set up an altar to the gods here.",
+    "answer": "βωμὸν τοῖς θεοῖς ἐνθάδε ἱστῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βωμὸν",
+     "τοῖς",
+     "θεοῖς",
+     "ἐνθάδε",
+     "ἱστῶμεν"
+    ]
+   },
+   {
+    "prompt": "If anyone gives money to the poor, he does a noble deed.",
+    "answer": "εἴ τις τοῖς πένησι χρήματα δίδωσιν, καλὸν ἔργον πράττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "τοῖς",
+     "πένησι",
+     "χρήματα",
+     "δίδωσιν",
+     "καλὸν",
+     "ἔργον",
+     "πράττει"
+    ]
+   },
+   {
+    "prompt": "The horseman leapt down and stood beside his horse.",
+    "answer": "ὁ ἱππεὺς καταπηδήσας παρὰ τὸν ἵππον ἔστη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱππεὺς",
+     "καταπηδήσας",
+     "παρὰ",
+     "τὸν",
+     "ἵππον",
+     "ἔστη"
+    ]
+   },
+   {
+    "prompt": "Would that the god might grant us victory.",
+    "answer": "εἴθε ὁ θεὸς ἡμῖν νίκην διδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ὁ",
+     "θεὸς",
+     "ἡμῖν",
+     "νίκην",
+     "διδοίη"
+    ]
+   }
+  ]
+ }
+]
