@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { testProfile } from "./profile.fixture.js";
-import { parseBlocks, type Block } from "./grammar-blocks.js";
+import { parseBlocks, plainText, type Block } from "./grammar-blocks.js";
 import type { GrammarSection } from "./types.js";
 
 /** The style is the pack's; these tests are about the shapes, not the book. */
@@ -178,7 +178,71 @@ describe("parseBlocks", () => {
     expect(parseBlocksStyled("SINGULAR.")).toEqual([{ kind: "heading", text: "SINGULAR." }]);
   });
 
+  describe("inline emphasis", () => {
+    it("classifies a line by its words, not by the markup around them", () => {
+      // `⟦b:1.⟧ The first…` is a numbered point. Reading the sigils as text
+      // would make it a paragraph, and the marker would land in the margin.
+      expect(parseBlocksStyled("⟦b:1.⟧ The ⟦i:first⟧ declension.")).toEqual([
+        {
+          kind: "item",
+          marker: "1.",
+          text: "The first declension.",
+          runs: [{ text: "The " }, { text: "first", i: true }, { text: " declension." }],
+          level: 1,
+        },
+      ]);
+    });
+
+    it("keeps a bolded caption a divider of the table it heads", () => {
+      const [table] = tables(parseBlocksStyled("⟦b:SINGULAR.⟧\nNom.  puella\nGen.  puellae"));
+      expect(table!.rows[0]).toEqual({
+        cells: ["SINGULAR."],
+        runs: [[{ text: "SINGULAR.", b: true }]],
+        kind: "divider",
+      });
+    });
+
+    it("takes a row the source set across every column as a divider", () => {
+      // `Hīc, this.` heads a paradigm exactly as `PLURAL.` does, but nothing
+      // about the words says so — only the source's own full-width row does.
+      const [table] = tables(parseBlocksStyled("⟦=⟧Hīc, this.\nNom.  hīc  haec"));
+      expect(table!.rows.map((r) => r.kind)).toEqual(["divider", "body"]);
+      expect(table!.rows[0]!.cells).toEqual(["Hīc, this."]);
+    });
+
+    it("gives each cell of a row the emphasis that sat in it", () => {
+      const [table] = tables(parseBlocksStyled("am⟦b:ō⟧, ⟦i:I love⟧  am⟦b:āmus⟧"));
+      expect(table!.rows[0]).toEqual({
+        cells: ["amō, I love", "amāmus"],
+        runs: [
+          [{ text: "am" }, { text: "ō", b: true }, { text: ", " }, { text: "I love", i: true }],
+          [{ text: "am" }, { text: "āmus", b: true }],
+        ],
+        kind: "body",
+      });
+    });
+
+    it("carries a literal bracket through doubled", () => {
+      expect(plainText("⟦⟦not markup⟧⟧")).toBe("⟦not markup⟧");
+      expect(parseBlocksStyled("⟦i:a⟧ ⟦⟦b⟧⟧")).toEqual([
+        { kind: "para", text: "a ⟦b⟧", runs: [{ text: "a", i: true }, { text: " ⟦b⟧" }] },
+      ]);
+    });
+
+    it("leaves a pack whose source carries no emphasis untouched", () => {
+      expect(parseBlocksStyled("Nom.  puella")).toEqual([
+        { kind: "table", columns: 2, rows: [{ cells: ["Nom.", "puella"], kind: "body" }] },
+      ]);
+    });
+  });
+
   describe("against the shipped grammar", () => {
+    it("leaves no markup in the plain text of any section", () => {
+      for (const s of grammar) {
+        expect(plainText(s.text), `§${s.ref}`).not.toMatch(/⟦|⟧/);
+      }
+    });
+
     it("loses no text from any section", () => {
       // Nothing may be dropped on the way into a block: the reader is shown
       // blocks and nothing else, so a character lost here is lost for good.
@@ -195,7 +259,9 @@ describe("parseBlocks", () => {
                 : [b.text],
           )
           .join(" ");
-        expect(strip(seen), `§${s.ref}`).toBe(strip(s.text));
+        // Against the *plain* extract: a block carries its emphasis in `runs`,
+        // so the markup around a word is not part of the word.
+        expect(strip(seen), `§${s.ref}`).toBe(strip(plainText(s.text)));
       }
     });
 

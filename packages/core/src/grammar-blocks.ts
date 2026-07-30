@@ -16,9 +16,25 @@ import type { GrammarStyle } from "./pack.js";
  * here knows about either — no DOM, no Ink, no widths.
  */
 
+/**
+ * A stretch of text set one way.
+ *
+ * The grammars mean something by their type: Bennett bolds the *ending* inside
+ * each form — `am`**`ō`** — and italicises the English gloss, so a paradigm
+ * read without them is a list of words with nothing marking which part is the
+ * lesson. Where a pack's source keeps that, it survives to here.
+ */
+export interface Run {
+  text: string;
+  b?: true;
+  i?: true;
+}
+
 /** One row of a paradigm table. */
 export interface Row {
   cells: string[];
+  /** The same cells with their emphasis, when the pack's source carried any. */
+  runs?: Run[][];
   /** `head` labels the columns, `divider` spans them ("PLURAL."). */
   kind: "head" | "body" | "divider";
   /**
@@ -29,13 +45,144 @@ export interface Row {
 }
 
 export type Block =
-  | { kind: "para"; text: string }
-  | { kind: "item"; marker: string; text: string; level: 1 | 2 }
-  | { kind: "heading"; text: string }
+  | { kind: "para"; text: string; runs?: Run[] }
+  | { kind: "item"; marker: string; text: string; runs?: Run[]; level: 1 | 2 }
+  | { kind: "heading"; text: string; runs?: Run[] }
   | { kind: "table"; rows: Row[]; columns: number };
 
 /** Two or more spaces between two non-spaces: a row of cells, not a sentence. */
 const TABLE_ROW = /\S {2}\S/;
+
+/*
+ * Emphasis rides in the flat text as `⟦k:…⟧`, k in {b, i}.
+ *
+ * The extract has one job the markup must not get in the way of: two spaces
+ * mean a new column, and nothing else does. So the delimiters contain no space
+ * and cannot invent one. They are also asymmetric, which lets a run nest inside
+ * another without an ambiguity rule, and they occur in no source the packs
+ * draw on — a literal bracket that ever did would be doubled by the parser and
+ * halved here.
+ *
+ * Everything below classifies lines by their *plain* text. A line that opens
+ * `⟦b:1.⟧ The first declension` is a numbered point, and would stop looking
+ * like one the moment the classifier saw the markup.
+ */
+const OPEN = "⟦";
+const CLOSE = "⟧";
+/** A row the book set across every column: a mood, a tense, a caption. */
+const FULL_WIDTH = `${OPEN}=${CLOSE}`;
+/**
+ * Where one table ends and the next begins.
+ *
+ * Two tables that touch in the source — §101 sets the principal parts of `amō`
+ * immediately above its conjugation — have nothing between them for the
+ * classifier to notice, so without this they run together and are sized to the
+ * wider of the two: four columns of principal parts pulling a two-column
+ * paradigm out to arm's length. A pack that emits none loses nothing.
+ */
+const TABLE_END = `${OPEN}/${CLOSE}`;
+/**
+ * A cell with nothing in it.
+ *
+ * Two adjacent separators would read as one wide gap, so a row that skips a
+ * column has to say so. Without it, `arceō  arcēre  arcuī  ⟦.⟧  keep off` loses
+ * its empty participle column and the gloss slides under the participles of
+ * every verb above it.
+ */
+const EMPTY_CELL = `${OPEN}.${CLOSE}`;
+
+interface Decoded {
+  plain: string;
+  /** Undefined when the line carried no emphasis, which is most of them. */
+  runs?: Run[];
+}
+
+function decode(line: string): Decoded {
+  if (!line.includes(OPEN) && !line.includes(CLOSE)) return { plain: line };
+  const runs: Run[] = [];
+  const open: string[] = [];
+  let plain = "";
+  let buf = "";
+  const flush = () => {
+    if (!buf) return;
+    const run: Run = { text: buf };
+    if (open.includes("b")) run.b = true;
+    if (open.includes("i")) run.i = true;
+    runs.push(run);
+    plain += buf;
+    buf = "";
+  };
+  for (let i = 0; i < line.length; ) {
+    const c = line[i]!;
+    if (c === OPEN && line[i + 1] === OPEN) {
+      buf += OPEN;
+      i += 2;
+    } else if (line.startsWith(EMPTY_CELL, i)) {
+      i += EMPTY_CELL.length;
+    } else if (c === OPEN && line[i + 2] === ":" && (line[i + 1] === "b" || line[i + 1] === "i")) {
+      flush();
+      open.push(line[i + 1]!);
+      i += 3;
+    } else if (c === CLOSE && line[i + 1] === CLOSE) {
+      buf += CLOSE;
+      i += 2;
+    } else if (c === CLOSE && open.length > 0) {
+      flush();
+      open.pop();
+      i += 1;
+    } else {
+      buf += c;
+      i += 1;
+    }
+  }
+  flush();
+  const styled = runs.some((r) => r.b || r.i);
+  return { plain, runs: styled ? merge(runs) : undefined };
+}
+
+/** `<i>of the</i> <i>city</i>` is one italic run, not three. */
+function merge(runs: Run[]): Run[] {
+  const out: Run[] = [];
+  for (const run of runs) {
+    const last = out[out.length - 1];
+    if (last && !!last.b === !!run.b && !!last.i === !!run.i) last.text += run.text;
+    else out.push({ ...run });
+  }
+  return out;
+}
+
+/** The runs covering `plain.slice(from, to)`, or undefined if there are none. */
+function sliceRuns(runs: Run[] | undefined, from: number, to: number): Run[] | undefined {
+  if (!runs) return undefined;
+  const out: Run[] = [];
+  let at = 0;
+  for (const run of runs) {
+    const start = Math.max(from, at);
+    const end = Math.min(to, at + run.text.length);
+    if (end > start) out.push({ ...run, text: run.text.slice(start - at, end - at) });
+    at += run.text.length;
+  }
+  return out.length > 0 ? out : undefined;
+}
+
+/**
+ * The extract with its emphasis dropped.
+ *
+ * Anything that measures a section — how long it is, how many tests it should
+ * carry, what to put in a prompt — has to measure the words, not the markup
+ * around them.
+ */
+export function plainText(text: string): string {
+  return text
+    .split("\n")
+    .filter((line) => line.trim() !== TABLE_END)
+    .map((line) => {
+      const body = line.startsWith(FULL_WIDTH) ? line.slice(FULL_WIDTH.length) : line;
+      // Cell by cell, so a skipped column leaves its gap where it was.
+      return body.split(/ {2,}/).map((cell) => decode(cell).plain).join("  ");
+    })
+    .join("\n");
+}
 
 /**
  * The book's own typography, compiled from the pack's profile: what a heading
@@ -85,9 +232,15 @@ const NOTE = /^(NOTE\.?|Note\.?)\s*(?:—\s*)?(.*)$/;
  * what would shunt the caption one column to the left of the forms it names.
  */
 
-/** Split a paradigm row into its cells. */
-function cellsOf(line: string): string[] {
-  return line.trim().split(/ {2,}/);
+/**
+ * Split a paradigm row into its cells.
+ *
+ * On the line as written, before its emphasis is decoded: the markup holds no
+ * spaces of its own and a cell never holds two, so the column gaps are exactly
+ * where they look, and each cell can then be decoded on its own.
+ */
+function cellsOf(line: string): Decoded[] {
+  return line.trim().split(/ {2,}/).map(decode);
 }
 
 /**
@@ -113,13 +266,28 @@ function isRomanPoint(cells: string[]): boolean {
  */
 function squareUp(rows: Row[], label: RegExp): { rows: Row[]; columns: number } {
   const columns = Math.max(...rows.map((r) => r.cells.length));
-  const hasLabelColumn = rows.some(
-    (r) => r.kind === "body" && r.cells.length === columns && label.test(r.cells[0]!),
-  );
+  // Most of the full-width rows, not merely one of them. §101 sets the whole of
+  // `amō` as one table: two columns of finite forms, then the infinitives and
+  // participles side by side in four, and those last rows do open with `Acc.`
+  // and `Abl.` Read as proof of a stub column, they would turn every finite
+  // form above them into a caption for columns that are not there.
+  const wide = rows.filter((r) => r.kind === "body" && r.cells.length === columns);
+  const stubs = wide.filter((r) => label.test(r.cells[0]!)).length;
+  const hasLabelColumn = stubs * 2 > wide.length;
 
   const squared = rows.map((row): Row => {
-    if (row.kind === "divider" || row.cells.length === columns) return row;
+    if (row.kind === "divider") return row;
+    if (row.cells.length === columns) {
+      // `SINGULAR.  PLURAL.` over a two-column paradigm names its columns even
+      // though it is as wide as the forms below it. Nothing but labels, and
+      // nothing under a label is a label, so it can only be a caption.
+      const allLabels = row.cells.every((c) => label.test(c));
+      return allLabels && !hasLabelColumn ? { ...row, kind: "head" } : row;
+    }
     const cells = [...row.cells];
+    // Emphasis moves with the cell it belongs to, whichever way the row is
+    // squared up; a cell invented here has none.
+    const runs = row.runs ? [...row.runs] : undefined;
     // A short row is a caption for the form columns — missing its cell at the
     // front, not the back — unless it is a stub row that simply runs out of
     // forms. A row of nothing but labels is always a caption: `SINGULAR.
@@ -128,18 +296,24 @@ function squareUp(rows: Row[], label: RegExp): { rows: Row[]; columns: number } 
     // stub a row.
     const captions =
       hasLabelColumn && (!label.test(cells[0] ?? "") || cells.every((c) => label.test(c)));
-    if (captions) cells.unshift("");
+    if (captions) {
+      cells.unshift("");
+      runs?.unshift([]);
+    }
 
     // Captions that divide the form columns evenly cover a group each: two
     // over six gendered columns is singular and plural, three apiece. Anything
     // that does not divide is left one-to-one, which is where it started.
     const groups = cells.length - 1;
     if (captions && groups > 0 && (columns - 1) % groups === 0 && (columns - 1) / groups > 1) {
-      return { cells, kind: "head", span: (columns - 1) / groups };
+      return { cells, runs, kind: "head", span: (columns - 1) / groups };
     }
 
-    while (cells.length < columns) cells.push("");
-    return { cells, kind: captions ? "head" : row.kind };
+    while (cells.length < columns) {
+      cells.push("");
+      runs?.push([]);
+    }
+    return { cells, runs, kind: captions ? "head" : row.kind };
   });
 
   return { rows: squared, columns };
@@ -158,11 +332,17 @@ export function parseBlocks(text: string, style: GrammarStyle): Block[] {
   let table: Row[] | null = null;
   // A caption is only a divider once forms turn up under it; until then it
   // could equally be a heading standing on its own.
-  let pending: string | null = null;
+  let pending: Decoded | null = null;
+
+  const divider = (d: Decoded): Row => ({
+    cells: [d.plain],
+    runs: d.runs && [d.runs],
+    kind: "divider",
+  });
 
   const closeTable = () => {
     if (pending) {
-      blocks.push({ kind: "heading", text: pending });
+      blocks.push({ kind: "heading", text: pending.plain, runs: pending.runs });
       pending = null;
     }
     if (!table) return;
@@ -171,46 +351,75 @@ export function parseBlocks(text: string, style: GrammarStyle): Block[] {
   };
 
   for (const raw of text.split("\n")) {
-    const line = raw.trim();
-    if (!line) continue;
-
-    const cells = TABLE_ROW.test(line) ? cellsOf(line) : null;
-    if (cells && !isRomanPoint(cells)) {
-      if (pending) {
-        (table ??= []).push({ cells: [pending], kind: "divider" });
-        pending = null;
-      }
-      (table ??= []).push({ cells, kind: "body" });
+    const trimmed = raw.trim();
+    if (!trimmed) continue;
+    if (trimmed === TABLE_END) {
+      closeTable();
       continue;
     }
+    // A row the source set across the whole table says so outright, rather
+    // than being recognised by its capitals: `Hīc, this.` heads a paradigm
+    // just as `PLURAL.` does, and read as prose it would split the table in
+    // two — and two tables size their columns independently.
+    const full = trimmed.startsWith(FULL_WIDTH);
+    const line = full ? trimmed.slice(FULL_WIDTH.length).trim() : trimmed;
+    if (!line) continue;
 
-    if (caps.test(line) && line.length <= capsMax) {
+    if (!full) {
+      const cells = TABLE_ROW.test(line) ? cellsOf(line) : null;
+      if (cells && !isRomanPoint(cells.map((c) => c.plain))) {
+        if (pending) {
+          (table ??= []).push(divider(pending));
+          pending = null;
+        }
+        (table ??= []).push({
+          cells: cells.map((c) => c.plain),
+          runs: cells.some((c) => c.runs)
+            ? cells.map((c) => c.runs ?? [{ text: c.plain }])
+            : undefined,
+          kind: "body",
+        });
+        continue;
+      }
+    }
+
+    const { plain, runs } = decode(line);
+
+    if (full || (caps.test(plain) && plain.length <= capsMax)) {
       // Inside a paradigm, "SINGULAR." and "PLURAL." divide the rows; treated
-      // as prose they would split one table into two, and two tables size their
-      // columns independently — the alignment this exists to fix.
-      if (table) table.push({ cells: [line], kind: "divider" });
+      // as prose they would split one table into two.
+      if (table) table.push(divider({ plain, runs }));
       else {
-        if (pending) blocks.push({ kind: "heading", text: pending });
-        pending = line;
+        if (pending) blocks.push({ kind: "heading", text: pending.plain, runs: pending.runs });
+        pending = { plain, runs };
       }
       continue;
     }
 
     closeTable();
 
+    /** An item's marker is not part of its text, so nor is the marker's type. */
+    const item = (marker: string, body: string, level: 1 | 2): Block => ({
+      kind: "item",
+      marker,
+      text: body,
+      runs: sliceRuns(runs, plain.length - body.length, plain.length),
+      level,
+    });
+
     let m: RegExpMatchArray | null;
-    if ((m = line.match(NUMBERED))) {
-      blocks.push({ kind: "item", marker: `${m[1]}.`, text: m[2]!, level: 1 });
-    } else if ((m = line.match(ROMAN))) {
-      blocks.push({ kind: "item", marker: `${m[1]}.`, text: m[2]!, level: 1 });
-    } else if ((m = line.match(LETTERED))) {
-      blocks.push({ kind: "item", marker: `${m[1]}.`, text: m[2]!, level: 2 });
-    } else if ((m = line.match(PARENTHESISED))) {
-      blocks.push({ kind: "item", marker: m[1]!, text: m[2]!, level: 2 });
-    } else if ((m = line.match(NOTE))) {
-      blocks.push({ kind: "item", marker: "Note", text: m[2]!, level: 2 });
+    if ((m = plain.match(NUMBERED))) {
+      blocks.push(item(`${m[1]}.`, m[2]!, 1));
+    } else if ((m = plain.match(ROMAN))) {
+      blocks.push(item(`${m[1]}.`, m[2]!, 1));
+    } else if ((m = plain.match(LETTERED))) {
+      blocks.push(item(`${m[1]}.`, m[2]!, 2));
+    } else if ((m = plain.match(PARENTHESISED))) {
+      blocks.push(item(m[1]!, m[2]!, 2));
+    } else if ((m = plain.match(NOTE))) {
+      blocks.push(item("Note", m[2]!, 2));
     } else {
-      blocks.push({ kind: "para", text: line });
+      blocks.push({ kind: "para", text: plain, runs });
     }
   }
 
