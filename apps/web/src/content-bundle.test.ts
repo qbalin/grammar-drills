@@ -64,7 +64,7 @@ const WORKED: Record<string, Array<[string, string]>> = {
     ["amāvērunt", "amō"],
     ["bonīs", "bonus"],
   ],
-  greek: [
+  "ancient-greek": [
     ["λόγοις", "τοῦ λόγου"],
     ["πόλεως", "ἡ πόλις"],
     ["ἔλυσαν", "λύσω"],
@@ -120,7 +120,7 @@ describe.skipIf(!built)("the built content bundle", () => {
     // still be there behind the noun. Greek's fold is the more aggressive of
     // the two, so ambiguity is the rule rather than the exception — λόγῳ and
     // λόγω, dative and Doric genitive, arrive as one key.
-    const form = profile.id === "greek" ? "ἀρετήν" : "manibus";
+    const form = profile.id === "ancient-greek" ? "ἀρετήν" : "manibus";
     const hits = index.lookup(form);
     expect(hits.length, form).toBeGreaterThan(1);
   });

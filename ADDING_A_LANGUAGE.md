@@ -24,12 +24,12 @@ field on the profile — add it to `packages/core/src/pack.ts`, give Latin its
 value too, and say in the commit what the abstraction had missed. Reaching into
 `languages/` from core is never the answer.
 
-**One build per language.** The CLI takes `--language greek`; the web app is
-built with `LANG_PACK=greek` and deployed to its own URL. There is no in-app
+**One build per language.** The CLI takes `--language ancient-greek`; the web app is
+built with `LANG_PACK=ancient-greek` and deployed to its own URL. There is no in-app
 switcher, and adding one is a bigger change than adding a language.
 
 ```
-languages/greek/
+languages/ancient-greek/
   profile.json          the shape of the language                      step 3
   fold.fixtures.json    what counts as the same word, both ways        step 2
   grammar/parse.py      your grammar -> content/grammar.json           step 4
@@ -88,7 +88,7 @@ forever, and nothing else in the test suite notices. That is why a pack ships
 fixtures in *both* directions.
 
 ```jsonc
-// languages/greek/fold.fixtures.json
+// languages/ancient-greek/fold.fixtures.json
 {
   "equal":  [["λόγος", "λογος"], ["ἄνθρωπος", "ανθρωπος"], /* ≥20 from real text */],
   "differ": [["λόγος", "λόγου"], ["πόλις", "πόλεως"], /* ≥20 — base letters differ */]
@@ -135,7 +135,7 @@ Three things that are not optional:
 Latin sets `recompose: "none"` — after stripping the macrons there is nothing
 left to recompose, and "none" is what reproduces its historical keys exactly.
 
-**Gate A.** `node --import tsx scripts/validate-pack.mjs --pack languages/greek --profile-only`
+**Gate A.** `node --import tsx scripts/validate-pack.mjs --pack languages/ancient-greek --profile-only`
 — A1 wants ≥5 must-equal and ≥3 must-differ pairs; aim well past that. Then
 **Gate D2** once the databases exist: the fold must reproduce
 `dictionary.db.form_norm` exactly. This is the invariant that spans both
@@ -221,7 +221,7 @@ Six rules, all of them learned the hard way:
 ### Gates
 
 ```bash
-node --import tsx scripts/grammar-report.mjs --pack languages/greek
+node --import tsx scripts/grammar-report.mjs --pack languages/ancient-greek
 ```
 
 G1–G8 must be green: topic count, no empty topic, a sane size distribution,
@@ -234,7 +234,7 @@ deliberately not to.
 **G9 is a human gate and cannot be automated:**
 
 ```bash
-node --import tsx scripts/grammar-report.mjs --pack languages/greek --sample 12 --render
+node --import tsx scripts/grammar-report.mjs --pack languages/ancient-greek --sample 12 --render
 ```
 
 Read all twelve, as the student would meet them. Does each stand alone? Did the
@@ -247,7 +247,7 @@ unsigned gate is an unchecked gate.
 ## 5. Build the dictionary map
 
 ```bash
-node --import tsx scripts/build-lemmas.mjs --pack languages/greek --ref $LANG_REF
+node --import tsx scripts/build-lemmas.mjs --pack languages/ancient-greek --ref $LANG_REF
 ```
 
 This makes `content/lemmas.json.gz`: folded form → ranked lemma candidates. It
@@ -312,10 +312,10 @@ Write `languages/<name>/gen/config.mjs`. Copy Latin's and replace:
 Then:
 
 ```bash
-node --import tsx scripts/gen-tests.mjs --pack languages/greek --plan   # what would it do
-node --import tsx scripts/gen-tests.mjs --pack languages/greek          # topics with nothing
-node --import tsx scripts/gen-tests.mjs --pack languages/greek --fill   # top everything up
-node --import tsx scripts/gen-tests.mjs --pack languages/greek --only-thin
+node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek --plan   # what would it do
+node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek          # topics with nothing
+node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek --fill   # top everything up
+node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek --only-thin
 ```
 
 Every run is resumable and appends, so a usage limit costs nothing but time.
@@ -341,7 +341,7 @@ tests instead of 6,957. Ship at the floor and top up with `--only-thin` later.
 ### Gates
 
 ```bash
-node --import tsx scripts/coverage-report.mjs --pack languages/greek
+node --import tsx scripts/coverage-report.mjs --pack languages/ancient-greek
 ```
 
 C1 every topic has questions · C2 none below the floor · C3 no family starved ·
@@ -365,8 +365,8 @@ Latin's Ā). A letterform the capsule renderer cannot draw (Ω, ж, ا) should s
 `icons/*.png` directly instead.
 
 ```bash
-LANG_PACK=greek pnpm --filter @lang-tutor/web build
-pnpm cli -- --language greek
+LANG_PACK=ancient-greek pnpm --filter @lang-tutor/web build
+pnpm cli -- --language ancient-greek
 ```
 
 **Check the storage strings differ from every other pack.** Two packs served
@@ -378,7 +378,7 @@ writing over each other's progress. The dictionary cache name must differ too.
 ## 9. The ship gate
 
 ```bash
-node --import tsx scripts/validate-pack.mjs --pack languages/greek \
+node --import tsx scripts/validate-pack.mjs --pack languages/ancient-greek \
   --built apps/web/public/content --require-ref
 pnpm -r test
 node scripts/check-core-purity.mjs
@@ -402,7 +402,7 @@ worth deploying on different days. `--allow-incomplete` reports the coverage
 gates without letting them set the exit code:
 
 ```bash
-node --import tsx scripts/validate-pack.mjs --pack languages/greek \
+node --import tsx scripts/validate-pack.mjs --pack languages/ancient-greek \
   --built apps/web/public/content --allow-incomplete
 ```
 

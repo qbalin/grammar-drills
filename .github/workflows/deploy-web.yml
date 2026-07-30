@@ -70,7 +70,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pack: [latin, greek]
+        pack: [latin, ancient-greek]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -129,8 +129,8 @@ jobs:
       # finished, and the gates start deciding again.
       - name: Build each language into its own path
         env:
-          LANG_PACKS: ${{ vars.LANG_PACKS || 'latin greek' }}
-          LANG_PACKS_DRAFT: ${{ vars.LANG_PACKS_DRAFT || 'greek' }}
+          LANG_PACKS: ${{ vars.LANG_PACKS || 'latin ancient-greek' }}
+          LANG_PACKS_DRAFT: ${{ vars.LANG_PACKS_DRAFT || 'ancient-greek' }}
           REPO: ${{ github.event.repository.name }}
         run: |
           set -euo pipefail
@@ -156,7 +156,7 @@ jobs:
       # from the packs' own profiles so a new language needs no edit here.
       - name: Write the root index
         env:
-          LANG_PACKS: ${{ vars.LANG_PACKS || 'latin greek' }}
+          LANG_PACKS: ${{ vars.LANG_PACKS || 'latin ancient-greek' }}
         run: node scripts/build-site-index.mjs site
       # Pages must already be switched on for the repo, with Settings → Pages →
       # Source set to "GitHub Actions". That is a one-time manual step and

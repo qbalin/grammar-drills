@@ -2,7 +2,7 @@
  * Shared pack loading for the offline scripts.
  *
  * Every script here works on a pack directory rather than on a hardcoded path,
- * which is the whole point of the exercise: `--pack languages/greek` has to be
+ * which is the whole point of the exercise: `--pack languages/ancient-greek` has to be
  * the only difference between running these for one language and another.
  */
 import { existsSync, readFileSync, readdirSync } from "node:fs";

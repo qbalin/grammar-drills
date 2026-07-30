@@ -31,8 +31,8 @@
  * the reference project's own Attic prose (Thucydides, Plato, Xenophon, Lysias)
  * is asked which form the language actually writes. See `rank` below.
  *
- *   node --import tsx languages/greek/citations.mjs [--dry]
- *        [--pack languages/greek] [--ref /path/to/languages/ancient_greek]
+ *   node --import tsx languages/ancient-greek/citations.mjs [--dry]
+ *        [--pack languages/ancient-greek] [--ref /path/to/languages/ancient_greek]
  *
  * Offline tooling: nothing here runs at runtime. Follow it with
  * `node scripts/build-web-content.mjs` to repack the web app's copy, and bump

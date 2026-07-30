@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "id": "greek",
+  "id": "ancient-greek",
 
   "l2": {
     "code": "grc",
-    "name": "Greek",
+    "name": "Ancient Greek",
     "endonym": "Ἑλληνικά",
     "script": "grek",
     "direction": "ltr"
@@ -77,10 +77,10 @@
   },
 
   "storage": {
-    "webProgressKey": "greek-tutor:progress",
-    "webSyncKey": "greek-tutor:sync",
-    "cliDir": ".greek-tutor",
-    "githubPath": "greek-progress.json",
+    "webProgressKey": "ancient-greek-tutor:progress",
+    "webSyncKey": "ancient-greek-tutor:sync",
+    "cliDir": ".ancient-greek-tutor",
+    "githubPath": "ancient-greek-progress.json",
     "exportPrefix": "hellenika-progress",
     "dictionaryCacheName": "hellenika-dictionary"
   },
