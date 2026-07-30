@@ -11,7 +11,7 @@ Every topic is shown to the student verbatim, so what the parser mangles the
 student meets mangled, and what it drops the student can never read.
 
 ```
-node --import tsx scripts/grammar-report.mjs --pack languages/greek --sample 12 --render
+node --import tsx scripts/grammar-report.mjs --pack languages/ancient-greek --sample 12 --render
 ```
 
 Read all twelve. The questions to hold in mind:
@@ -63,7 +63,7 @@ sentence that is impeccably attested and means something other than the prompt.
   and the size-scaled targets get topped up afterwards. That is 2,442 tests to
   reach the floor against 5,776 to reach full target, and it puts questions in
   front of a student on every topic sooner.
-  `node --import tsx scripts/gen-tests.mjs --pack languages/greek --target 6`
+  `node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek --target 6`
   writes the empty ones; `--fill` afterwards tops everything up.
 
 - **The floor alone will not turn C3 green, and the reason is not starvation.**

@@ -24,12 +24,28 @@ how the language cites a word, what to tell a model when asking for practice
 sentences. `packages/core` holds the engine and is not allowed to know about any
 of it; CI checks that it does not.
 
-Latin (Bennett's *New Latin Grammar*, 135 topics, 4,025 questions) is the pack
-that ships. **To add another, follow [ADDING_A_LANGUAGE.md](ADDING_A_LANGUAGE.md)** —
-a checklist where each step ends in a command whose exit code is the answer.
+Two packs ship:
+
+| Pack | Grammar | Syllabus | Questions |
+| --- | --- | --- | --- |
+| `latin` | Bennett, *New Latin Grammar* | 135 topics | 6,557 over all 135 |
+| `ancient-greek` | Smyth, *A Greek Grammar for Colleges* | 485 topics | 3,533 over 78 so far |
+
+Ancient Greek is still being written — its syllabus is complete and its questions
+are being generated topic by topic, so it publishes with its coverage gates
+reported rather than enforced (see `LANG_PACKS_DRAFT` in the deploy workflow).
+**To add a third, follow [ADDING_A_LANGUAGE.md](ADDING_A_LANGUAGE.md)** — a
+checklist where each step ends in a command whose exit code is the answer.
 
 The apps are built one language at a time: `pnpm cli -- --language latin`, and
-`LANG_PACK=latin pnpm --filter @lang-tutor/web build`.
+`LANG_PACK=ancient-greek pnpm --filter @lang-tutor/web build`. Each web build is
+its own installable app at its own URL, with its own icon and its own stored
+progress; there is no in-app switcher.
+
+**Installable now:** <https://qbalin.github.io/grammar-drills/> — [Latina](https://qbalin.github.io/grammar-drills/latin/)
+(Latin) and [Ἑλληνικά](https://qbalin.github.io/grammar-drills/ancient-greek/)
+(Ancient Greek). Open either on a phone and add it to the home screen; it then
+works with no signal.
 
 A short **placement test** runs on a fresh deck: it asks about each grammar
 family in turn, so it can hear "I know my declensions but not my verbs" instead
@@ -194,9 +210,11 @@ pnpm --filter @lang-tutor/web dev      # build the content bundle and serve
 pnpm --filter @lang-tutor/web build    # -> apps/web/dist, deployable anywhere
 ```
 
-Pushing to `main` publishes it to GitHub Pages
-(`.github/workflows/deploy-web.yml`); students open that URL once and *Add to
-Home Screen*. Same loop — write the Latin, compare, self-grade 1–4 — with a
+Pushing to `main` publishes every pack to GitHub Pages
+(`.github/workflows/deploy-web.yml`): one build per language at
+`/<pack>/`, under a landing page that links to each. Students open the URL for
+the language they want, once, and *Add to Home Screen*. Same loop — write the
+sentence, compare, self-grade 1–4 — with a
 **Reveal** button for when typing a sentence on glass is not happening, the
 grade buttons labelled with the interval each one buys, and the grammar map
 redrawn as tappable rows — one per topic, each naming its § and how far along it
@@ -250,9 +268,10 @@ round again.
 
 ## The grammar
 
-The Latin pack's the pack's `content/grammar.json` is **parsed from Charles E. Bennett's *New Latin
-Grammar*** (Boston, 1908) — [Project Gutenberg ebook #15665][pg], which is
-public domain and free to reuse. The parser is `languages/latin/grammar/parse.py`:
+The Latin pack's `content/grammar.json` is **parsed from Charles E. Bennett's
+*New Latin Grammar*** (Boston, 1908) — [Project Gutenberg ebook #15665][pg],
+which is public domain and free to reuse. The parser is
+`languages/latin/grammar/parse.py`:
 
 ```bash
 python3 languages/latin/grammar/parse.py    # downloads the text, rewrites the pack's grammar.json

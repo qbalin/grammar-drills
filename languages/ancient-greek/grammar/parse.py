@@ -12,7 +12,7 @@ English->Greek translation exercise, as is the appendix's catalogue of verbs;
 that leaves Part II (inflection) and Part IV (syntax).
 
 Usage:
-    python3 languages/greek/grammar/parse.py [--src smyth.xml] [--out .../content/grammar.json]
+    python3 languages/ancient-greek/grammar/parse.py [--src smyth.xml] [--out .../content/grammar.json]
 
 With no --src the TEI is downloaded to a temporary file.
 

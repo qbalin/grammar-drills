@@ -30,7 +30,7 @@ const grammar: GrammarSection[] = JSON.parse(
 
 describe("the Greek profile", () => {
   it("parses, and names itself after its directory", () => {
-    expect(profile.id).toBe("greek");
+    expect(profile.id).toBe("ancient-greek");
     expect(profile.l2.code).toBe("grc");
   });
 

@@ -104,7 +104,7 @@ importers:
         specifier: ^7.4.1
         version: 7.4.1
 
-  languages/greek:
+  languages/ancient-greek:
     dependencies:
       '@lang-tutor/core':
         specifier: workspace:*

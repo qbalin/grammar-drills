@@ -6,7 +6,7 @@
     "by scripts/validate-pack.mjs. This is here so a later run can see whether a",
     "number moved, and by how much, rather than only whether it still clears a",
     "threshold. Regenerate with:",
-    "  node --import tsx scripts/validate-pack.mjs --pack languages/greek \\",
+    "  node --import tsx scripts/validate-pack.mjs --pack languages/ancient-greek \\",
     "    --ref ../language_learning/languages/ancient_greek --require-ref \\",
     "    --built apps/web/public/content",
     "",
