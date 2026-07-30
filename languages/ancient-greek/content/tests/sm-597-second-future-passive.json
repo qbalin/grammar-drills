@@ -1,0 +1,391 @@
+[
+ {
+  "id": "sm-597-second-future-passive-t1",
+  "sectionId": "sm-597-second-future-passive",
+  "questions": [
+   {
+    "prompt": "If you do these things, you will be harmed by the enemy.",
+    "answer": "ἐὰν ταῦτα πράττῃς, ὑπὸ τῶν πολεμίων βλαβήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ταῦτα",
+     "πράττῃς",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "βλαβήσῃ"
+    ]
+   },
+   {
+    "prompt": "The enemy will be routed by our cavalry.",
+    "answer": "οἱ πολέμιοι ὑπὸ τῶν ἡμετέρων ἱππέων τραπήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ὑπὸ",
+     "τῶν",
+     "ἡμετέρων",
+     "ἱππέων",
+     "τραπήσονται"
+    ]
+   },
+   {
+    "prompt": "This land will be destroyed by the barbarians.",
+    "answer": "ἥδε ἡ χώρα ὑπὸ τῶν βαρβάρων φθαρήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥδε",
+     "ἡ",
+     "χώρα",
+     "ὑπὸ",
+     "τῶν",
+     "βαρβάρων",
+     "φθαρήσεται"
+    ]
+   },
+   {
+    "prompt": "Those who have fled will be destroyed by hunger.",
+    "answer": "οἱ φυγόντες ὑπὸ τοῦ λιμοῦ διαφθαρήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγόντες",
+     "ὑπὸ",
+     "τοῦ",
+     "λιμοῦ",
+     "διαφθαρήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-597-second-future-passive-t2",
+  "sectionId": "sm-597-second-future-passive",
+  "questions": [
+   {
+    "prompt": "These laws will be written down by the lawgiver.",
+    "answer": "οἵδε οἱ νόμοι ὑπὸ τοῦ νομοθέτου γραφήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἵδε",
+     "οἱ",
+     "νόμοι",
+     "ὑπὸ",
+     "τοῦ",
+     "νομοθέτου",
+     "γραφήσονται"
+    ]
+   },
+   {
+    "prompt": "The trees along the road will be cut down by the soldiers.",
+    "answer": "τὰ παρὰ τὴν ὁδὸν δένδρα ὑπὸ τῶν στρατιωτῶν κοπήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "παρὰ",
+     "τὴν",
+     "ὁδὸν",
+     "δένδρα",
+     "ὑπὸ",
+     "τῶν",
+     "στρατιωτῶν",
+     "κοπήσεται"
+    ]
+   },
+   {
+    "prompt": "The victory will be announced to the citizens tomorrow.",
+    "answer": "ἡ νίκη τοῖς πολίταις αὔριον ἀγγελήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νίκη",
+     "τοῖς",
+     "πολίταις",
+     "αὔριον",
+     "ἀγγελήσεται"
+    ]
+   },
+   {
+    "prompt": "The shields of the cowards will be thrown away in the flight.",
+    "answer": "αἱ τῶν δειλῶν ἀσπίδες ἐν τῇ φυγῇ ῥιφήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τῶν",
+     "δειλῶν",
+     "ἀσπίδες",
+     "ἐν",
+     "τῇ",
+     "φυγῇ",
+     "ῥιφήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-597-second-future-passive-t3",
+  "sectionId": "sm-597-second-future-passive",
+  "questions": [
+   {
+    "prompt": "The truth will at last appear clearly to all the judges.",
+    "answer": "ἡ ἀλήθεια τέλος πᾶσι τοῖς δικασταῖς σαφῶς φανήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "τέλος",
+     "πᾶσι",
+     "τοῖς",
+     "δικασταῖς",
+     "σαφῶς",
+     "φανήσεται"
+    ]
+   },
+   {
+    "prompt": "Those who died in the battle will be buried by their kinsmen.",
+    "answer": "οἱ ἐν τῇ μάχῃ ἀποθανόντες ὑπὸ τῶν οἰκείων ταφήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀποθανόντες",
+     "ὑπὸ",
+     "τῶν",
+     "οἰκείων",
+     "ταφήσονται"
+    ]
+   },
+   {
+    "prompt": "The seed will be sown in the fields in spring.",
+    "answer": "τὸ σπέρμα ἐν τοῖς ἀγροῖς τοῦ ἦρος σπαρήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "σπέρμα",
+     "ἐν",
+     "τοῖς",
+     "ἀγροῖς",
+     "τοῦ",
+     "ἦρος",
+     "σπαρήσεται"
+    ]
+   },
+   {
+    "prompt": "This boy will be reared in the country by his grandfather.",
+    "answer": "ὅδε ὁ παῖς ἐν τῇ χώρᾳ ὑπὸ τοῦ πάππου τραφήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "ὁ",
+     "παῖς",
+     "ἐν",
+     "τῇ",
+     "χώρᾳ",
+     "ὑπὸ",
+     "τοῦ",
+     "πάππου",
+     "τραφήσεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-597-second-future-passive-t4",
+  "sectionId": "sm-597-second-future-passive",
+  "questions": [
+   {
+    "prompt": "The snow on the mountains will be melted by the sun.",
+    "answer": "ἡ ἐν τοῖς ὄρεσι χιὼν ὑπὸ τοῦ ἡλίου τακήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐν",
+     "τοῖς",
+     "ὄρεσι",
+     "χιὼν",
+     "ὑπὸ",
+     "τοῦ",
+     "ἡλίου",
+     "τακήσεται"
+    ]
+   },
+   {
+    "prompt": "The whole river will be frozen by the cold this winter.",
+    "answer": "ὁ ποταμὸς ὅλος ὑπὸ τοῦ ψύχους τοῦδε τοῦ χειμῶνος παγήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμὸς",
+     "ὅλος",
+     "ὑπὸ",
+     "τοῦ",
+     "ψύχους",
+     "τοῦδε",
+     "χειμῶνος",
+     "παγήσεται"
+    ]
+   },
+   {
+    "prompt": "The bridge will be broken by the force of the river.",
+    "answer": "ἡ γέφυρα ὑπὸ τῆς τοῦ ποταμοῦ βίας ῥαγήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γέφυρα",
+     "ὑπὸ",
+     "τῆς",
+     "τοῦ",
+     "ποταμοῦ",
+     "βίας",
+     "ῥαγήσεται"
+    ]
+   },
+   {
+    "prompt": "The corpses left unburied will rot in the sun.",
+    "answer": "οἱ ἄταφοι νεκροὶ ἐν τῷ ἡλίῳ σαπήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄταφοι",
+     "νεκροὶ",
+     "ἐν",
+     "τῷ",
+     "ἡλίῳ",
+     "σαπήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-597-second-future-passive-t5",
+  "sectionId": "sm-597-second-future-passive",
+  "questions": [
+   {
+    "prompt": "If you approach the wall, you will be struck by a stone.",
+    "answer": "ἐὰν τῷ τείχει προσέλθῃς, λίθῳ πληγήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τῷ",
+     "τείχει",
+     "προσέλθῃς",
+     "λίθῳ",
+     "πληγήσῃ"
+    ]
+   },
+   {
+    "prompt": "When they see the fire, the enemy will be panic-stricken.",
+    "answer": "τὸ πῦρ ἰδόντες οἱ πολέμιοι ἐκπλαγήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "πῦρ",
+     "ἰδόντες",
+     "οἱ",
+     "πολέμιοι",
+     "ἐκπλαγήσονται"
+    ]
+   },
+   {
+    "prompt": "The general will be tripped up by his own overconfidence.",
+    "answer": "ὁ στρατηγὸς ὑπὸ τοῦ ἑαυτοῦ θράσους σφαλήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ὑπὸ",
+     "τοῦ",
+     "ἑαυτοῦ",
+     "θράσους",
+     "σφαλήσεται"
+    ]
+   },
+   {
+    "prompt": "In time the stones of the road will be worn away by many feet.",
+    "answer": "χρόνῳ οἱ τῆς ὁδοῦ λίθοι ὑπὸ πολλῶν ποδῶν τριβήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρόνῳ",
+     "οἱ",
+     "τῆς",
+     "ὁδοῦ",
+     "λίθοι",
+     "ὑπὸ",
+     "πολλῶν",
+     "ποδῶν",
+     "τριβήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-597-second-future-passive-t6",
+  "sectionId": "sm-597-second-future-passive",
+  "questions": [
+   {
+    "prompt": "The general, hearing the shout, will turn toward the sea.",
+    "answer": "ὁ στρατηγὸς τὴν βοὴν ἀκούσας πρὸς τὴν θάλατταν στραφήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "βοὴν",
+     "ἀκούσας",
+     "πρὸς",
+     "θάλατταν",
+     "στραφήσεται"
+    ]
+   },
+   {
+    "prompt": "Much blood will flow from these wounds.",
+    "answer": "πολὺ αἷμα ἐκ τούτων τῶν τραυμάτων ῥυήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολὺ",
+     "αἷμα",
+     "ἐκ",
+     "τούτων",
+     "τῶν",
+     "τραυμάτων",
+     "ῥυήσεται"
+    ]
+   },
+   {
+    "prompt": "Many of the sailors will be drowned in the storm.",
+    "answer": "πολλοὶ τῶν ναυτῶν ἐν τῷ χειμῶνι πνιγήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὶ",
+     "τῶν",
+     "ναυτῶν",
+     "ἐν",
+     "τῷ",
+     "χειμῶνι",
+     "πνιγήσονται"
+    ]
+   },
+   {
+    "prompt": "The whole army will be gathered on the plain by the king.",
+    "answer": "πᾶν τὸ στράτευμα ἐν τῷ πεδίῳ ὑπὸ τοῦ βασιλέως συλλεγήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶν",
+     "τὸ",
+     "στράτευμα",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ὑπὸ",
+     "τοῦ",
+     "βασιλέως",
+     "συλλεγήσεται"
+    ]
+   }
+  ]
+ }
+]
