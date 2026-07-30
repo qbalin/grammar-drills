@@ -179,9 +179,17 @@ questions can cover; one that drops sections silently produces a syllabus with
 holes nobody can see.
 
 Write `languages/<name>/grammar/parse.<ext>`. The input can be anything —
-Bennett is a Gutenberg text file and Smyth is HTML, so the Greek parser walks
-`toc_uni.htm`, follows the chapter pages, and reads `<p>` and `<table>` nodes
-rather than looking for columns of spaces. Nothing downstream knows or cares.
+Bennett is Gutenberg HTML and Smyth is TEI XML, so both parsers read `<p>` and
+`<table>` nodes rather than looking for columns of spaces. Nothing downstream
+knows or cares.
+
+Prefer a marked-up edition over a plain-text one wherever the book has both.
+Bennett was parsed from Gutenberg's plain text until 2026-07-30, and the cost
+was structural: in fixed-width output a table cell wraps across physical lines,
+so a parser reading a line as a row truncates the cell at the column edge and
+leaves the remainder as a loose line. The table of correlatives in §140 arrived
+as four fragments with its first heading cut down to "RELATIVE AND". No
+downstream cleverness recovers that; only the markup does.
 
 ### The output contract
 
@@ -197,25 +205,37 @@ rather than looking for columns of spaces. Nothing downstream knows or cares.
 }
 ```
 
-Six rules, all of them learned the hard way:
+Seven rules, all of them learned the hard way:
 
 1. **A topic is a run of consecutive sections under one heading.** The book's
    own structure is the syllabus. Do not invent a taxonomy.
 2. **Never truncate.** The whole run goes in `text`; the reader pages through
    it. What the parser drops, the student can never read.
 3. **Flatten paradigm tables, do not discard them.** One row per line, cells
-   separated by **exactly two spaces**. That is what `parseBlocks` reconstructs
-   the table from, and gate G6 checks that every row-shaped line comes back.
-4. **Small.** Under `grammarShape.minTextChars` is too thin to teach; over
+   separated by **exactly two spaces** — and never two inside a cell, since the
+   gap is the only thing saying where a column begins. That is what
+   `parseBlocks` reconstructs the table from, and gate G6 checks that every
+   row-shaped line comes back. A row the source set across every column — a
+   mood, a tense, a caption — is prefixed `⟦=⟧`; it becomes a divider that
+   stays inside the table instead of prose that splits it in two.
+4. **Keep the emphasis, if the source has any.** Wrap each stretch in
+   `⟦b:…⟧` or `⟦i:…⟧`; double a literal `⟦` or `⟧`. A reference grammar means
+   something by its type — Bennett bolds the *ending* inside each form and
+   italicises the English gloss — and a paradigm stripped of it is a list of
+   words with nothing marking which part is the lesson. The brackets contain no
+   space, so they cannot invent a column, and every classifier reads the line
+   with them removed. Emitting none is fine: Smyth does, and its topics render
+   exactly as before.
+5. **Small.** Under `grammarShape.minTextChars` is too thin to teach; over
    `maxTextChars` should be split at a sub-heading rather than shipped as a wall.
-5. **Unique titles.** Reference grammars reuse headings across parts — Bennett
-   needed 24 hand-written overrides for exactly this, and Smyth will need its
+6. **Unique titles.** Reference grammars reuse headings across parts — Bennett
+   needed 17 hand-written overrides for exactly this, and Smyth will need its
    own. A duplicate title is an unnavigable map, and G5 fails on it.
-6. **Account for every source section.** Also emit
+7. **Account for every source section.** Also emit
    `content/grammar-coverage.json`: each source section is either `assigned` to
    a topic or `dropped` with a stated reason, and the two must add up. Nothing
-   may merely disappear. (Latin: 371 sections = 324 assigned + 47 dropped, 36
-   for being in a part that cannot carry a translation exercise and 11 for being
+   may merely disappear. (Latin: 376 sections = 325 assigned + 51 dropped, 39
+   for being in a part that cannot carry a translation exercise and 12 for being
    structural headings.)
 
 ### Gates
@@ -474,6 +494,7 @@ misses while both halves look perfectly healthy on their own. Gate D2 samples
 | A family renders as a dead bar on the map | It has no topics — G4. The grammar parser's family assignment is wrong for that part of the book. |
 | The generator rejects almost everything | The function-word list is short (C6). Query `dictionary.db` for the indeclinables of the topics scoring zero and add the ones genuinely absent. |
 | A paradigm reads as a run-on sentence | The parser did not separate the cells with exactly two spaces — G6. |
+| A table breaks in half around a stray one-word paragraph | A cell wrapped across lines in the source, or a full-width caption was not marked `⟦=⟧`. |
 | Answers marked right that are wrong | The fold is too aggressive. Add the pair to `fold.fixtures.json` under `differ` and watch it fail. |
 | A topic is enormous and its questions feel repetitive | It is over 4× the median (noted by `grammar-report`). Split the run. |
 | Two languages overwrite each other's progress | Their `profile.storage` keys are the same. They must all differ. |

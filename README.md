@@ -28,7 +28,7 @@ Two packs ship:
 
 | Pack | Grammar | Syllabus | Questions |
 | --- | --- | --- | --- |
-| `latin` | Bennett, *New Latin Grammar* | 135 topics | 6,557 over all 135 |
+| `latin` | Bennett, *New Latin Grammar* | 114 topics | 6,581 over all 114 |
 | `ancient-greek` | Smyth, *A Greek Grammar for Colleges* | 485 topics | 3,533 over 78 so far |
 
 Ancient Greek is still being written — its syllabus is complete and its questions
@@ -147,7 +147,7 @@ languages/latin/ The Latin pack — everything Latin-specific:
                    grammar/parse.py  — rebuilds grammar.json from Gutenberg #15665.
                    citations.mjs     — principal parts / adjective terminations.
                    gen/config.mjs    — the generator prompt, band, function words.
-                   content/          — grammar.json (135 topics), tests/<id>.json,
+                   content/          — grammar.json (114 topics), tests/<id>.json,
                                         lemmas.json.gz (top ~7k lemmas).
 scripts/         Offline tooling, language-agnostic (not used at runtime):
                    gen-tests.mjs     — writes tests/<id>.json (see "Generation").
@@ -274,24 +274,34 @@ which is public domain and free to reuse. The parser is
 `languages/latin/grammar/parse.py`:
 
 ```bash
-python3 languages/latin/grammar/parse.py    # downloads the text, rewrites the pack's grammar.json
-python3 languages/latin/grammar/parse.py --src bennett.txt --out /tmp/grammar.json
+python3 languages/latin/grammar/parse.py    # downloads the book, rewrites the pack's grammar.json
+python3 languages/latin/grammar/parse.py --src bennett.htm --out /tmp/grammar.json
 ```
 
-It takes the book's own structure as the syllabus. Bennett numbers 371
-sections and groups runs of them under one heading; each such run becomes one
-topic, so §20–22 is *First Declension* and §301–313 is *Conditional Sentences*.
-Three of the six parts are dropped, because none of them can carry an
-English→Latin translation exercise: Part I (sounds, accent, quantity), Part IV
-(word formation) and Part VI (prosody). What remains is Parts II, III and V —
-**135 topics** across nine families:
+It reads the **HTML** edition rather than the plain text one. In the plain text
+a paradigm is a fixed-width column layout whose cells wrap across physical
+lines, and nothing downstream can tell a wrapped cell from a new row: the table
+of correlatives in §140 arrived with its first heading cut off at the column
+edge ("RELATIVE AND", the "INTERROGATIVE." lost) and its continuation lines
+loose between four fragments of what is one table. The HTML has real
+`<table>`/`<tr>`/`<td>`, so a row is a row and a cell is a cell — and it has the
+`<b>`/`<i>` the plain text throws away, which is how am**ō** keeps the bold on
+the ending that *is* the lesson.
+
+It takes the book's own structure as the syllabus. Bennett numbers 375 sections
+and groups runs of them under one heading; each such run becomes one topic, so
+§20–22 is *First Declension* and §301–312 is *Conditional Sentences*. Three of
+the six parts are dropped, because none of them can carry an English→Latin
+translation exercise: Part I (sounds, accent, quantity), Part IV (word
+formation) and Part VI (prosody). What remains is Parts II, III and V —
+**114 topics** across nine families:
 
 | Family | Topics | Bennett |
 |---|---|---|
 | Nouns · Adjectives & adverbs · Pronouns | 9 · 5 · 9 | Part II, *Declension* |
-| Verb forms | 35 | Part II, *Conjugation* |
+| Verb forms | 17 | Part II, *Conjugation* |
 | Particles | 3 | Part III |
-| Noun syntax · Adjective & pronoun syntax · Verb syntax | 19 · 13 · 30 | Part V |
+| Noun syntax · Adjective & pronoun syntax · Verb syntax | 18 · 13 · 28 | Part V |
 | Word-order & style | 12 | Part V, *Hints on Latin Style* |
 
 Those nine names are the only ones there are: `FAMILIES` in
@@ -299,16 +309,19 @@ Those nine names are the only ones there are: `FAMILIES` in
 it as-is. Abbreviating them for a narrow column ("Ptcl", "N-syntax") saved eight
 characters and cost the student any idea of where they were.
 
-Each topic's `text` is the section's own prose **in full**, with Gutenberg
-markup removed, hard wrapping undone and paradigm tables flattened to one line
-apiece so the endings survive in a terminal-width pane. Nothing is trimmed to a
-character budget: what the parser drops, the student can never read.
+Each topic's `text` is the section's own prose **in full**: one line per
+paragraph, one line per table row with its cells held apart by exactly two
+spaces, and each stretch the book emphasised wrapped in `⟦b:…⟧` or `⟦i:…⟧`.
+Those brackets contain no space, so they cannot invent a column, and
+`plainText` in core strips them for anything that measures the words rather
+than the markup. Nothing is trimmed to a character budget: what the parser
+drops, the student can never read.
 
 [pg]: https://www.gutenberg.org/ebooks/15665
 
 ## Three ways forward
 
-A syllabus of 135 topics is walked by more than one kind of student, and for a
+A syllabus of 114 topics is walked by more than one kind of student, and for a
 long time it was walked by only one: the next topic was the first one in book
 order you had not touched, so every route through the book ended up back at
 chapter one. Three things now decide where new topics come from. **Reviews are
@@ -351,7 +364,7 @@ still moves per question: it counts what you got right.
 ## The grammar map
 
 `m` opens the syllabus as a line per grammar family, the selected one expanded to
-one cell per topic. (One cell per topic for all 135 at once would need ~161
+one cell per topic. (One cell per topic for all 114 at once would need ~136
 columns.)
 
 ```

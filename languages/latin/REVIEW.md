@@ -24,6 +24,7 @@ Read all twelve. The questions to hold in mind:
 | Date | Reviewer | Sampled ids | Verdict |
 |---|---|---|---|
 | — | *not yet signed off* | — | The automated gates G1–G8 pass. The read-through has not been done for this pack; it inherits a syllabus that was in use before the gates existed. |
+| 2026-07-30 | *not signed off — machine check only* | §13-15, §71-75, §92-96, §101-102, §115, §120-123, §140, §162, §205-212, §242, §266-269, §273, §282-290, §336-337 | The reparse from HTML was checked by rendering, not by a reader. §140 (the table of correlatives) is whole and three-columned where it used to arrive as four fragments with its first heading cut down to "RELATIVE AND". Paragraph fragments of twelve characters or less — the signature of a cell that wrapped in the source — fell from 136 to 49, and the 49 that remain are the book's own short sub-headings ("ā-Stems.", "Here belong—"). Still wanted from a human: whether the merged topics read as one topic, and whether the new titles are the book's. |
 
 ## C8 — generated question review
 
@@ -40,8 +41,12 @@ sentence that is impeccably attested and means something other than the prompt.
 
 ## Known state
 
-- Every one of the 135 topics is at or above its size-scaled target: 6 tests at
-  the thinnest, 11 median, 26 at the largest. The coverage gap is closed.
+- Every one of the 114 topics is at or above its size-scaled target: 6 tests at
+  the thinnest, 12 median, 63 at the largest. The coverage gap is closed.
+- The 63 is a merge, not a windfall: §124-132 was six separate topics under the
+  old parser and its six banks were carried onto one. A merged topic's drills
+  were written against a narrower heading than the one they now sit under, which
+  is worth a read even though every gate passes.
 - Gate C6 (kept ratio) covers two of the three backfill runs. `gen-stats.json`
   is written when a run finishes, and the middle run was stopped by hand, so
   roughly 270 shipped tests have no rejection-rate data behind them. Writing
