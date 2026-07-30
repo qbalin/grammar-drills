@@ -2,6 +2,8 @@ node_modules/
 dist/
 *.tsbuildinfo
 .DS_Store
+# Left behind by the packs' Python grammar parsers.
+__pycache__/
 # Progress files are user data, never committed to the app repo
 *.progress.json
 # Built from content/ by scripts/build-web-content.mjs and make-icons.mjs on
