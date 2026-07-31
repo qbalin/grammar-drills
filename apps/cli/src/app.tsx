@@ -305,6 +305,19 @@ export function App({ session, content, storage }: Props) {
     setTick((n) => n + 1);
   };
 
+  // A word can be deleted from the vocabulary pane while the card underneath is
+  // the one being reviewed — `phase.from` then points at a card the session no
+  // longer has, and escaping back to it draws an empty pane. Heal the phase
+  // rather than leave the student on a card that is gone.
+  useEffect(() => {
+    if (
+      (phase.t === "vocab-review-front" || phase.t === "vocab-review-back") &&
+      !session.vocabCard(phase.cardId)
+    ) {
+      advance();
+    }
+  }, [phase, session, tick]);
+
   const loadPlacement = (id: string) => {
     const t = session.serveTest(id);
     if (!t) {
@@ -946,7 +959,12 @@ export function App({ session, content, storage }: Props) {
             ? `Placement ${placement.done + 1}/${placement.families} · ${content.familyLabel(
                 placement.family,
               )}${placement.narrowing ? ", narrowing" : ""}`
-            : section?.title ?? "—"
+            // The ref belongs beside the title here as it does on the web: it
+            // is how you find the topic in the book, and the grammar drawer
+            // (Esc) was the only place it appeared.
+            : section
+              ? `${content.formatRef(section.ref)} ${section.title}`
+              : "—"
         }
         isNew={isNewTopic && !phase.t.startsWith("vocab-review")}
         placement={inPlacement}
@@ -1084,8 +1102,8 @@ export function App({ session, content, storage }: Props) {
         <QuestionView
           ui={content.profile.ui}
           question={question}
-          index={qIndex}
-          total={test?.questions.length ?? 0}
+          index={inPlacement ? undefined : qIndex}
+          total={inPlacement ? undefined : test?.questions.length ?? 0}
           graded={phase.t === "graded"}
           submitted={submitted}
           input={input}
@@ -1629,8 +1647,14 @@ function QuestionView({
 }: {
   ui: Profile["ui"];
   question: Question;
-  index: number;
-  total: number;
+  /**
+   * Where this question sits in the test, and how many it holds. Absent during
+   * placement, which serves one question per probe: the counter would read
+   * "1/4" on every screen — the test's size, not the run's length — and the
+   * status bar already carries the number that means something.
+   */
+  index?: number;
+  total?: number;
   graded: boolean;
   submitted: string;
   input: string;
@@ -1640,7 +1664,8 @@ function QuestionView({
   return (
     <Box flexDirection="column">
       <Text dimColor>
-        {ui.promptDirection} · {index + 1}/{total}
+        {ui.promptDirection}
+        {total ? ` · ${(index ?? 0) + 1}/${total}` : ""}
       </Text>
       <Box marginTop={1}>
         <Text bold>{question.prompt}</Text>

@@ -26,8 +26,14 @@ export function Answering({
   vocabulary,
 }: {
   question: Question;
-  index: number;
-  total: number;
+  /**
+   * Where this question sits in the test, and how many it holds. Absent during
+   * placement, which serves one question per probe: the counter would read
+   * "1/4" on every screen — the test's size, not the run's length — and the
+   * header already carries the number that means something.
+   */
+  index?: number;
+  total?: number;
   value: string;
   onChange: (v: string) => void;
   onSubmit: () => void;
@@ -43,7 +49,8 @@ export function Answering({
     <>
       <div className="study__scroll">
         <p className="eyebrow">
-          {profile.ui.promptDirection} · {index + 1}/{total}
+          {profile.ui.promptDirection}
+          {total ? ` · ${(index ?? 0) + 1}/${total}` : ""}
         </p>
         <p className="prompt">{question.prompt}</p>
         {vocabulary}
@@ -109,8 +116,9 @@ export function Graded({
   submitted: string;
   /** True when the answer was shown rather than written. */
   revealed: boolean;
-  index: number;
-  total: number;
+  /** As on `Answering`: absent during placement. */
+  index?: number;
+  total?: number;
   schedule?: Record<Rating, Date>;
   labels?: Record<Rating, string>;
   onGrade: (r: Rating) => void;
@@ -133,7 +141,8 @@ export function Graded({
     <>
       <div className="study__scroll">
         <p className="eyebrow">
-          {profile.ui.promptDirection} · {index + 1}/{total}
+          {profile.ui.promptDirection}
+          {total ? ` · ${(index ?? 0) + 1}/${total}` : ""}
         </p>
         <p className="prompt">{question.prompt}</p>
         {vocabulary}

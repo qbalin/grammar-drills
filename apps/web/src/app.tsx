@@ -254,6 +254,14 @@ export function App({ content, session, storage }: Props) {
     [advance, session],
   );
 
+  // The net under `removeVocab`, not a substitute for it: a card under review
+  // can also vanish because a sync adopted another device's progress. The
+  // review body draws nothing for a card the session cannot find, so heal the
+  // phase rather than leave an empty screen behind it.
+  useEffect(() => {
+    if (phase.t === "vocab-review" && !session.vocabCard(phase.cardId)) advance();
+  }, [phase, session, advance, tick]);
+
   const started = useRef(false);
   useEffect(() => {
     if (started.current) return;
@@ -560,7 +568,12 @@ export function App({ content, session, storage }: Props) {
     session.deleteVocab(cardId);
     save();
     flash("Word deleted.");
-    bump();
+    // Deleting the card that is being reviewed leaves the phase pointing at
+    // something the session no longer has, and the review body renders nothing
+    // for a card it cannot find — an empty screen with no grade bar and no way
+    // on. Grading advances the loop; deleting has to as well.
+    if (phase.t === "vocab-review" && phase.cardId === cardId) advance();
+    else bump();
   };
 
   // --- settings ------------------------------------------------------------
@@ -671,11 +684,23 @@ export function App({ content, session, storage }: Props) {
               {placement.narrowing ? ", narrowing" : ""} · area{" "}
               {placement.done + 1} of {placement.families}
             </span>
+          ) : section ? (
+            // The way in to the grammar while the question is still on screen.
+            // The graded view has always had its `§ grammar` link, but the
+            // screen you are stuck on is the one you are writing on, and there
+            // the topic's name was the only thing to reach for and did nothing.
+            <button
+              className="status__topic"
+              onClick={() =>
+                setOverlay({ t: "grammar", sectionId: section.id, back: overlay })
+              }
+              aria-label={`Read the grammar for ${section.title}`}
+            >
+              <span className="status__ref">{content.formatRef(section.ref)}</span>
+              <span className="status__title">{section.title}</span>
+            </button>
           ) : (
-            <>
-              {section && <span className="status__ref">§ {section.ref}</span>}
-              <span className="status__title">{section?.title ?? profile.ui.appName}</span>
-            </>
+            <span className="status__title">{profile.ui.appName}</span>
           )}
         </div>
         {/* What new topics are being drawn from, and the way out of it. The
@@ -708,8 +733,8 @@ export function App({ content, session, storage }: Props) {
         {phase.t === "answering" && question && (
           <Answering
             question={question}
-            index={qIndex}
-            total={test?.questions.length ?? 0}
+            index={inPlacement ? undefined : qIndex}
+            total={inPlacement ? undefined : test?.questions.length ?? 0}
             value={input}
             onChange={setInput}
             onSubmit={() => {
@@ -737,8 +762,8 @@ export function App({ content, session, storage }: Props) {
             question={question}
             submitted={submitted}
             revealed={phase.revealed}
-            index={qIndex}
-            total={test?.questions.length ?? 0}
+            index={inPlacement ? undefined : qIndex}
+            total={inPlacement ? undefined : test?.questions.length ?? 0}
             schedule={inPlacement ? undefined : schedule}
             labels={inPlacement ? PLACEMENT_LABELS : undefined}
             onGrade={grade}

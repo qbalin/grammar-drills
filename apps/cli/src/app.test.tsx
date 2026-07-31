@@ -91,6 +91,13 @@ describe("CLI App (write → compare → self-grade)", () => {
     await tick();
     expect(lastFrame()).toContain("Placement 1/");
     expect(lastFrame()).toContain("The girl loves the rose.");
+    // No within-test counter here: placement serves one question per probe and
+    // starts each at index 0, so the counter could only ever read "1 of the
+    // test's size". "Placement 1/" above is the number that means something.
+    expect(lastFrame()).toContain(testProfile.ui.promptDirection);
+    expect(lastFrame()).not.toMatch(
+      new RegExp(`${testProfile.ui.promptDirection} · \\d+/\\d+`),
+    );
     stdin.write("nesciō"); // "I don't know"
     await tick();
     stdin.write("\r");

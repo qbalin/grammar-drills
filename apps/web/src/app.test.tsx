@@ -98,6 +98,14 @@ function mount(progress?: Progress) {
 const inPlacement = () => document.querySelector(".badge--placement") !== null;
 
 /**
+ * The small line above the prompt, which carries the within-test counter.
+ * Scoped inside the scroller, because placement adds an eyebrow of its own
+ * above it ("translate as far as you can").
+ */
+const eyebrow = () =>
+  document.querySelector(".study__scroll .eyebrow")?.textContent ?? "";
+
+/**
  * The Latin sentences on screen, written and reference.
  *
  * Both are rendered a word at a time so each can be held down and recorded, so
@@ -178,6 +186,32 @@ describe("the study loop", () => {
     );
     // What was written on a probe is kept, the way the CLI has always kept it.
     expect(session.attemptsFor("decl1")).toHaveLength(1);
+  });
+
+  it("counts questions through the test, and not at all during placement", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    // Placement serves one question per probe and starts each at index 0, so a
+    // within-test counter here could only ever read "1/4" — the size of the
+    // test it was drawn from, which is not a number about the run. The status
+    // bar's "area N of M" is the one that means something.
+    expect(inPlacement()).toBe(true);
+    expect(eyebrow()).toBe(profile.ui.promptDirection);
+    expect(eyebrow()).not.toMatch(/\d+\/\d+/);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    expect(eyebrow()).not.toMatch(/\d+\/\d+/);
+    expect(screen.getByText(/Placement · Nouns · area 1 of/)).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: /No idea/ }));
+    await skipPlacement(user);
+
+    // Ordinary study does carry the counter, and it advances through the test.
+    expect(inPlacement()).toBe(false);
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 1/2`);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 2/2`);
   });
 
   it("stays in placement while a word is recorded, and resumes it after a reload", async () => {
@@ -478,6 +512,36 @@ describe("holding a word", () => {
     expect(session.vocabCard("v-rosa")).toBeUndefined();
   });
 
+  it("moves on to the next card when the word under review is deleted", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    // Record a word, then work through the rest of the test: a card recorded
+    // now is due now, so the loop serves it as soon as the questions run out.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    for (let i = 0; i < 6 && !screen.queryByText("rose"); i++) {
+      const reveal = screen.queryByRole("button", { name: "Reveal" });
+      if (reveal) await user.click(reveal);
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+    expect(screen.getByText("rose")).toBeDefined();
+
+    // Delete it from under the review. Grading advances the loop; deleting used
+    // to leave the phase pointing at a card the session no longer had, and the
+    // body rendered nothing at all — a black screen with no way forward.
+    await user.click(screen.getByRole("button", { name: /edit this word/ }));
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+    await user.click(within(sheet).getByRole("button", { name: /Delete this word/ }));
+    await user.click(screen.getByRole("button", { name: /Delete “rosa, rosae \(f\)”/ }));
+
+    expect(session.vocabCard("v-rosa")).toBeUndefined();
+    // The next due card is on screen, and the study body is not empty.
+    expect(screen.getByLabelText("Your Latin")).toBeDefined();
+    expect(document.querySelector(".prompt")?.textContent).toBeTruthy();
+  });
+
   it("offers no macron keys — the answer box is the whole of the writing surface", async () => {
     const user = userEvent.setup();
     mount();
@@ -571,7 +635,10 @@ describe("a section's questions", () => {
     await user.click(screen.getByRole("button", { name: /Hard/ }));
 
     await user.click(screen.getByRole("button", { name: "Grammar map" }));
-    await user.click(screen.getByRole("button", { name: /First declension/ }));
+    // Scoped to the map: the status bar names the same topic, and tapping it
+    // opens the grammar rather than the topic sheet.
+    const map = screen.getByRole("dialog", { name: "Grammar map" });
+    await user.click(within(map).getByRole("button", { name: /First declension/ }));
     await user.click(screen.getByRole("button", { name: /All 2 questions/ }));
 
     // Both of the section's questions, whether or not they have been served.
@@ -693,6 +760,48 @@ describe("taking things back", () => {
     expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
     expect(screen.getByText("rex, rēgis")).toBeDefined(); // still revealed
     expect(session.vocabCard("v-rex")?.fsrs.reps).toBe(0);
+  });
+});
+
+describe("the topic in the status bar", () => {
+  it("opens the grammar while the question is still unanswered", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    // A new topic teaches first, so close what it opened and get to the box.
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    expect(screen.getByLabelText("Your Latin")).toBeDefined();
+
+    // The screen you are stuck on is the one you are writing on, and until now
+    // the topic's name there was the only thing to reach for and did nothing.
+    await user.click(
+      screen.getByRole("button", { name: "Read the grammar for First declension" }),
+    );
+    const sheet = screen.getByRole("dialog", { name: "First declension" });
+    expect(within(sheet).getByText(/First-declension nouns end in -a/)).toBeDefined();
+    expect(within(sheet).getByText("§ 20-22")).toBeDefined();
+
+    // Closing goes back to the question, with what was written still there.
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    expect(screen.getByLabelText("Your Latin")).toBeDefined();
+  });
+
+  it("returns to the sheet it was opened over", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Close" }));
+
+    // Opened over the schedule, closing the grammar restores the schedule
+    // rather than dropping the student back on the question.
+    await user.click(screen.getByRole("button", { name: "What is coming up" }));
+    expect(screen.getByRole("dialog", { name: "Coming up" })).toBeDefined();
+    await user.click(
+      screen.getByRole("button", { name: "Read the grammar for First declension" }),
+    );
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    expect(screen.getByRole("dialog", { name: "Coming up" })).toBeDefined();
   });
 });
 

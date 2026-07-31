@@ -136,6 +136,28 @@ button {
   flex: 1;
 }
 
+/* Ref and title are one tap target: both name the topic, and either is the
+   thing a stuck student reaches for. The row's flex now lives here, so the
+   title inside can still take the width and clip. */
+.status__topic {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.2rem 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.status__topic:active .status__title {
+  color: var(--gold);
+}
+
 /* The title owns the second row outright; only a title long even for that
    width gets clipped. */
 .status__title {
@@ -146,6 +168,13 @@ button {
   white-space: nowrap;
   color: var(--text);
   font-weight: 500;
+  text-decoration: underline dotted var(--line);
+  text-underline-offset: 3px;
+}
+
+/* Standing alone as the app's name, it is a label rather than a way in. */
+span.status__title {
+  text-decoration: none;
 }
 
 .status__ref {
