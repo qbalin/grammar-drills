@@ -1193,5 +1193,182 @@
    "shortTest": 0
   },
   "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 20,
+  "rawQuestions": 56,
+  "keptQuestions": 56,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 24,
+  "rawQuestions": 36,
+  "keptQuestions": 36,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 26,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "πεπαύκασιν": 1,
+   "στρατοπεδεύσουσιν": 1,
+   "ἐπεπαύκεσαν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 5,
+  "calls": 27,
+  "rawQuestions": 40,
+  "keptQuestions": 40,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἐτέταχθε": 1,
+   "παρεσκευάσθων": 1,
+   "ἐλέλυσθε": 1,
+   "ἐξελαθησόμεθα": 1,
+   "ἐτύφη": 1,
+   "ἐμάγη": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 27,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "εἴλιττον": 1,
+   "ἐλελύκεσαν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 25,
+  "rawQuestions": 56,
+  "keptQuestions": 56,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "προλίπωμεν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 27,
+  "rawQuestions": 72,
+  "keptQuestions": 71,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 1,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "δουλοῦσιν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 27,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ὀρώρυχεν": 1,
+   "ὀρωρύχαμεν": 1,
+   "ἔψαυκεν": 1,
+   "ἐκτίκασιν": 1,
+   "ἀγήγερκεν": 1,
+   "ὀλωλέκασιν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 25,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "προδοῦ": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 29,
+  "rawQuestions": 64,
+  "keptQuestions": 64,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {}
  }
 ]

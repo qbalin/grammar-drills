@@ -401,5 +401,397 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-590-second-aorist-passive-t7",
+  "sectionId": "sm-590-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The letter was written by the philosopher in the prison.",
+    "answer": "ἡ ἐπιστολὴ ὑπὸ τοῦ φιλοσόφου ἐν τῷ δεσμωτηρίῳ ἐγράφη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιστολή",
+     "ὑπό",
+     "τοῦ",
+     "φιλοσόφου",
+     "ἐν",
+     "τῷ",
+     "δεσμωτηρίῳ",
+     "ἐγράφη"
+    ]
+   },
+   {
+    "prompt": "The children were reared well by their nurse.",
+    "answer": "οἱ παῖδες ὑπὸ τῆς τροφοῦ καλῶς ἐτράφησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "ὑπό",
+     "τῆς",
+     "τροφοῦ",
+     "καλῶς",
+     "ἐτράφησαν"
+    ]
+   },
+   {
+    "prompt": "The two armies were mingled together in the confusion of the night.",
+    "answer": "τὰ δύο στρατεύματα ἐν τῷ τῆς νυκτὸς θορύβῳ ἐμίγη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "δύο",
+     "στρατεύματα",
+     "ἐν",
+     "τῷ",
+     "τῆς",
+     "νυκτός",
+     "θορύβῳ",
+     "ἐμίγη"
+    ]
+   },
+   {
+    "prompt": "The ships were destroyed by the storm near the harbor.",
+    "answer": "αἱ νῆες ὑπὸ τοῦ χειμῶνος πρὸς τῷ λιμένι διεφθάρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "νῆες",
+     "ὑπό",
+     "τοῦ",
+     "χειμῶνος",
+     "πρός",
+     "τῷ",
+     "λιμένι",
+     "διεφθάρησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-590-second-aorist-passive-t8",
+  "sectionId": "sm-590-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The tent was fixed by the soldiers upon the hill.",
+    "answer": "ἡ σκηνὴ ὑπὸ τῶν στρατιωτῶν ἐπὶ τοῦ λόφου ἐπάγη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σκηνή",
+     "ὑπό",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐπί",
+     "τοῦ",
+     "λόφου",
+     "ἐπάγη"
+    ]
+   },
+   {
+    "prompt": "The messenger rejoiced when he had announced the victory.",
+    "answer": "ὁ ἄγγελος τὴν νίκην ἀπαγγείλας ἐχάρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τήν",
+     "νίκην",
+     "ἀπαγγείλας",
+     "ἐχάρη"
+    ]
+   },
+   {
+    "prompt": "The enemy were struck down by the arrows.",
+    "answer": "οἱ πολέμιοι ὑπὸ τῶν τοξευμάτων ἐπλήγησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ὑπό",
+     "τῶν",
+     "τοξευμάτων",
+     "ἐπλήγησαν"
+    ]
+   },
+   {
+    "prompt": "The horses were yoked to the chariot before dawn.",
+    "answer": "οἱ ἵπποι πρὸ τῆς ἕω τῷ ἅρματι ἐζύγησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἵπποι",
+     "πρό",
+     "τῆς",
+     "ἕω",
+     "τῷ",
+     "ἅρματι",
+     "ἐζύγησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-590-second-aorist-passive-t9",
+  "sectionId": "sm-590-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The slaves were cruelly flayed by their master.",
+    "answer": "οἱ δοῦλοι ὑπὸ τοῦ δεσπότου χαλεπῶς ἐδάρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοῦλοι",
+     "ὑπό",
+     "τοῦ",
+     "δεσπότου",
+     "χαλεπῶς",
+     "ἐδάρησαν"
+    ]
+   },
+   {
+    "prompt": "The victim was slaughtered at the altar by the priest.",
+    "answer": "τὸ ἱερεῖον ἐπὶ τοῦ βωμοῦ ὑπὸ τοῦ ἱερέως ἐσφάγη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "ἱερεῖον",
+     "ἐπί",
+     "τοῦ",
+     "βωμοῦ",
+     "ὑπό",
+     "ἱερέως",
+     "ἐσφάγη"
+    ]
+   },
+   {
+    "prompt": "The letters written on the stone were worn away by time.",
+    "answer": "τὰ ἐν τῷ λίθῳ γεγραμμένα γράμματα ὑπὸ τοῦ χρόνου ἐτρίβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἐν",
+     "τῷ",
+     "λίθῳ",
+     "γεγραμμένα",
+     "γράμματα",
+     "ὑπό",
+     "τοῦ",
+     "χρόνου",
+     "ἐτρίβη"
+    ]
+   },
+   {
+    "prompt": "The soldiers were turned to flight by the sudden attack.",
+    "answer": "οἱ στρατιῶται ὑπὸ τῆς αἰφνιδίου προσβολῆς ἐτράπησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ὑπό",
+     "τῆς",
+     "αἰφνιδίου",
+     "προσβολῆς",
+     "ἐτράπησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-590-second-aorist-passive-t10",
+  "sectionId": "sm-590-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The nets were woven by the fishermen throughout the winter.",
+    "answer": "τὰ δίκτυα ὑπὸ τῶν ἁλιέων διὰ τοῦ χειμῶνος ἐπλάκη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "δίκτυα",
+     "ὑπό",
+     "τῶν",
+     "ἁλιέων",
+     "διά",
+     "τοῦ",
+     "χειμῶνος",
+     "ἐπλάκη"
+    ]
+   },
+   {
+    "prompt": "The children went mad when they saw the monster.",
+    "answer": "οἱ παῖδες ἰδόντες τὸ τέρας ἐμάνησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "ἰδόντες",
+     "τό",
+     "τέρας",
+     "ἐμάνησαν"
+    ]
+   },
+   {
+    "prompt": "The bones of the fallen were buried in the ancestral tomb.",
+    "answer": "τὰ τῶν πεσόντων ὀστᾶ ἐν τῷ πατρῴῳ τάφῳ ἐτάφη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "πεσόντων",
+     "ὀστᾶ",
+     "ἐν",
+     "τῷ",
+     "πατρῴῳ",
+     "τάφῳ",
+     "ἐτάφη"
+    ]
+   },
+   {
+    "prompt": "The hidden treasure was stolen by the attendants.",
+    "answer": "ὁ κεκρυμμένος θησαυρὸς ὑπὸ τῶν θεραπόντων ἐκλάπη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κεκρυμμένος",
+     "θησαυρός",
+     "ὑπό",
+     "τῶν",
+     "θεραπόντων",
+     "ἐκλάπη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-590-second-aorist-passive-t11",
+  "sectionId": "sm-590-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The whole city was set smoldering by the fire.",
+    "answer": "πᾶσα ἡ πόλις ὑπὸ τοῦ πυρὸς ἐτύφη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶσα",
+     "ἡ",
+     "πόλις",
+     "ὑπό",
+     "τοῦ",
+     "πυρός",
+     "ἐτύφη"
+    ]
+   },
+   {
+    "prompt": "The meat left in the sun quickly rotted.",
+    "answer": "τὰ ἐν τῷ ἡλίῳ λειφθέντα κρέα ταχέως ἐσάπη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἐν",
+     "τῷ",
+     "ἡλίῳ",
+     "λειφθέντα",
+     "κρέα",
+     "ταχέως",
+     "ἐσάπη"
+    ]
+   },
+   {
+    "prompt": "The army was dispatched to Egypt by the king.",
+    "answer": "τὸ στράτευμα εἰς Αἴγυπτον ὑπὸ τοῦ βασιλέως ἐστάλη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "στράτευμα",
+     "εἰς",
+     "Αἴγυπτον",
+     "ὑπό",
+     "τοῦ",
+     "βασιλέως",
+     "ἐστάλη"
+    ]
+   },
+   {
+    "prompt": "The mast was broken by the violence of the wind.",
+    "answer": "ὁ ἱστὸς ὑπὸ τῆς τοῦ ἀνέμου βίας ἐρράγη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱστός",
+     "ὑπό",
+     "τῆς",
+     "τοῦ",
+     "ἀνέμου",
+     "βίας",
+     "ἐρράγη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-590-second-aorist-passive-t12",
+  "sectionId": "sm-590-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The soldiers were injured by the falling stones.",
+    "answer": "οἱ στρατιῶται ὑπὸ τῶν πιπτόντων λίθων ἐβλάβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ὑπό",
+     "τῶν",
+     "πιπτόντων",
+     "λίθων",
+     "ἐβλάβησαν"
+    ]
+   },
+   {
+    "prompt": "The truth appeared clearly to all after the trial.",
+    "answer": "ἡ ἀλήθεια πᾶσι σαφῶς μετὰ τὴν δίκην ἐφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "πᾶσι",
+     "σαφῶς",
+     "μετά",
+     "τήν",
+     "δίκην",
+     "ἐφάνη"
+    ]
+   },
+   {
+    "prompt": "The bread was kneaded by the maidservant before dawn.",
+    "answer": "ὁ ἄρτος ὑπὸ τῆς θεραπαίνης πρὸ τῆς ἕω ἐμάγη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄρτος",
+     "ὑπό",
+     "τῆς",
+     "θεραπαίνης",
+     "πρό",
+     "ἕω",
+     "ἐμάγη"
+    ]
+   },
+   {
+    "prompt": "Many of the good men were tripped up by the flatterer's words.",
+    "answer": "πολλοὶ τῶν ἀγαθῶν ὑπὸ τῶν τοῦ κόλακος λόγων ἐσφάλησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοί",
+     "τῶν",
+     "ἀγαθῶν",
+     "ὑπό",
+     "τοῦ",
+     "κόλακος",
+     "λόγων",
+     "ἐσφάλησαν"
+    ]
+   }
+  ]
  }
 ]

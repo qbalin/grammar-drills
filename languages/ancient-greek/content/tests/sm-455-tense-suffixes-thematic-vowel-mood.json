@@ -400,5 +400,826 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t7",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "The sailors row all night so that they may reach the harbor before dawn.",
+    "answer": "οἱ ναῦται πᾶσαν τὴν νύκτα ἐλαύνουσιν ἵνα πρὸ τῆς ἕω εἰς τὸν λιμένα ἀφίκωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "πᾶσαν",
+     "τὴν",
+     "νύκτα",
+     "ἐλαύνουσιν",
+     "ἵνα",
+     "πρὸ",
+     "τῆς",
+     "ἕω",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "ἀφίκωνται"
+    ]
+   },
+   {
+    "prompt": "The old man hides the letter lest the servants read it.",
+    "answer": "ὁ γέρων τὴν ἐπιστολὴν κρύπτει μὴ οἱ θεράποντες αὐτὴν ἀναγνῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τὴν",
+     "ἐπιστολὴν",
+     "κρύπτει",
+     "μὴ",
+     "οἱ",
+     "θεράποντες",
+     "αὐτὴν",
+     "ἀναγνῶσιν"
+    ]
+   },
+   {
+    "prompt": "We are training the young men so that they may become brave in battle.",
+    "answer": "τοὺς νεανίας γυμνάζομεν ἵνα ἀνδρεῖοι ἐν τῇ μάχῃ γένωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "νεανίας",
+     "γυμνάζομεν",
+     "ἵνα",
+     "ἀνδρεῖοι",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "γένωνται"
+    ]
+   },
+   {
+    "prompt": "The women were weaving garments in order that the soldiers might not suffer from the cold.",
+    "answer": "αἱ γυναῖκες ἱμάτια ὕφαινον ὅπως οἱ στρατιῶται μὴ ὑπὸ τοῦ ψύχους πάσχοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "ἱμάτια",
+     "ὕφαινον",
+     "ὅπως",
+     "οἱ",
+     "στρατιῶται",
+     "μὴ",
+     "ὑπὸ",
+     "τοῦ",
+     "ψύχους",
+     "πάσχοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t8",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "No one would willingly choose slavery instead of freedom.",
+    "answer": "οὐδεὶς ἂν ἑκὼν δουλείαν ἀντὶ ἐλευθερίας ἕλοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἂν",
+     "ἑκὼν",
+     "δουλείαν",
+     "ἀντὶ",
+     "ἐλευθερίας",
+     "ἕλοιτο"
+    ]
+   },
+   {
+    "prompt": "A wise man would bear poverty more easily than disgrace.",
+    "answer": "σοφὸς ἀνὴρ πενίαν ῥᾷον ἢ αἰσχύνην φέροι ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφὸς",
+     "ἀνὴρ",
+     "πενίαν",
+     "ῥᾷον",
+     "ἢ",
+     "αἰσχύνην",
+     "φέροι",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "Perhaps the general might lead the army across the river before night.",
+    "answer": "ἴσως ὁ στρατηγὸς τὸ στράτευμα πρὸ νυκτὸς διὰ τοῦ ποταμοῦ ἀγάγοι ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσως",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "πρὸ",
+     "νυκτὸς",
+     "διὰ",
+     "τοῦ",
+     "ποταμοῦ",
+     "ἀγάγοι",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "Who would not admire the courage of these men?",
+    "answer": "τίς οὐκ ἂν θαυμάσειε τὴν τῶνδε τῶν ἀνδρῶν ἀνδρείαν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὐκ",
+     "ἂν",
+     "θαυμάσειε",
+     "τὴν",
+     "τῶνδε",
+     "τῶν",
+     "ἀνδρῶν",
+     "ἀνδρείαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t9",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "Would that the citizens might honor their benefactors!",
+    "answer": "εἴθε οἱ πολῖται τοὺς εὐεργέτας τιμῷεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "πολῖται",
+     "τοὺς",
+     "εὐεργέτας",
+     "τιμῷεν"
+    ]
+   },
+   {
+    "prompt": "May the gods grant that we return safe to our homes!",
+    "answer": "εἴθε οἱ θεοὶ δοῖεν ἡμῖν σῶς εἰς τοὺς οἴκους νοστῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "θεοὶ",
+     "δοῖεν",
+     "ἡμῖν",
+     "σῶς",
+     "εἰς",
+     "τοὺς",
+     "οἴκους",
+     "νοστῆσαι"
+    ]
+   },
+   {
+    "prompt": "O that I could persuade you to abandon this plan!",
+    "answer": "εἴθε δυναίμην ὑμᾶς πεῖσαι ταύτην τὴν βουλὴν καταλιπεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "δυναίμην",
+     "ὑμᾶς",
+     "πεῖσαι",
+     "ταύτην",
+     "τὴν",
+     "βουλὴν",
+     "καταλιπεῖν"
+    ]
+   },
+   {
+    "prompt": "May we never become forgetful of those who died for the city.",
+    "answer": "μηδέποτε γενοίμεθα ἐπιλήσμονες τῶν ὑπὲρ τῆς πόλεως ἀποθανόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδέποτε",
+     "γενοίμεθα",
+     "ἐπιλήσμονες",
+     "τῶν",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "ἀποθανόντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t10",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "Let us send heralds to the enemy to ask for a truce.",
+    "answer": "πέμπωμεν κήρυκας πρὸς τοὺς πολεμίους σπονδὰς αἰτήσοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμπωμεν",
+     "κήρυκας",
+     "πρὸς",
+     "τοὺς",
+     "πολεμίους",
+     "σπονδὰς",
+     "αἰτήσοντας"
+    ]
+   },
+   {
+    "prompt": "Shall we remain here, or shall we flee to the mountains?",
+    "answer": "μένωμεν ἐνθάδε, ἢ φεύγωμεν εἰς τὰ ὄρη;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μένωμεν",
+     "ἐνθάδε",
+     "ἢ",
+     "φεύγωμεν",
+     "εἰς",
+     "τὰ",
+     "ὄρη"
+    ]
+   },
+   {
+    "prompt": "Let us not be persuaded by the flatterers who deceive the people.",
+    "answer": "μὴ πειθώμεθα τοῖς κόλαξι τοῖς τὸν δῆμον ἐξαπατῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "πειθώμεθα",
+     "τοῖς",
+     "κόλαξι",
+     "τὸν",
+     "δῆμον",
+     "ἐξαπατῶσιν"
+    ]
+   },
+   {
+    "prompt": "What am I to say to the judges about these accusations?",
+    "answer": "τί εἴπω τοῖς δικασταῖς περὶ τούτων τῶν κατηγοριῶν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "εἴπω",
+     "τοῖς",
+     "δικασταῖς",
+     "περὶ",
+     "τούτων",
+     "τῶν",
+     "κατηγοριῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t11",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "If we capture the city, we will treat the inhabitants gently.",
+    "answer": "ἐὰν τὴν πόλιν ἕλωμεν, τοῖς ἐνοικοῦσι πρᾴως χρησόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὴν",
+     "πόλιν",
+     "ἕλωμεν",
+     "τοῖς",
+     "ἐνοικοῦσι",
+     "πρᾴως",
+     "χρησόμεθα"
+    ]
+   },
+   {
+    "prompt": "If the ambassadors should arrive, the king would receive them kindly.",
+    "answer": "εἰ οἱ πρέσβεις ἀφίκοιντο, ὁ βασιλεὺς αὐτοὺς φιλοφρόνως δέχοιτο ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πρέσβεις",
+     "ἀφίκοιντο",
+     "ὁ",
+     "βασιλεὺς",
+     "αὐτοὺς",
+     "φιλοφρόνως",
+     "δέχοιτο",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "Whoever obeys the laws willingly is worthy of honor.",
+    "answer": "ὃς ἂν τοῖς νόμοις ἑκὼν πείθηται, τιμῆς ἄξιός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃς",
+     "ἂν",
+     "τοῖς",
+     "νόμοις",
+     "ἑκὼν",
+     "πείθηται",
+     "τιμῆς",
+     "ἄξιός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "If you had guarded the gates, the enemy would not have entered.",
+    "answer": "εἰ τὰς πύλας ἐφυλάξατε, οἱ πολέμιοι οὐκ ἂν εἰσῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰς",
+     "πύλας",
+     "ἐφυλάξατε",
+     "οἱ",
+     "πολέμιοι",
+     "οὐκ",
+     "ἂν",
+     "εἰσῆλθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t12",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "I fear lest we may not have enough provisions for the journey.",
+    "answer": "δέδοικα μὴ οὐχ ἱκανὰ ἐπιτήδεια ἔχωμεν εἰς τὴν ὁδόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μὴ",
+     "οὐχ",
+     "ἱκανὰ",
+     "ἐπιτήδεια",
+     "ἔχωμεν",
+     "εἰς",
+     "τὴν",
+     "ὁδόν"
+    ]
+   },
+   {
+    "prompt": "Let us wait until the scouts return from the camp.",
+    "answer": "περιμένωμεν ἕως ἂν οἱ σκοποὶ ἐκ τοῦ στρατοπέδου ἐπανέλθωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περιμένωμεν",
+     "ἕως",
+     "ἂν",
+     "οἱ",
+     "σκοποὶ",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἐπανέλθωσιν"
+    ]
+   },
+   {
+    "prompt": "We must teach the children so that they may learn to honor the gods.",
+    "answer": "δεῖ τοὺς παῖδας διδάσκειν ἵνα τοὺς θεοὺς τιμᾶν μανθάνωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "τοὺς",
+     "παῖδας",
+     "διδάσκειν",
+     "ἵνα",
+     "θεοὺς",
+     "τιμᾶν",
+     "μανθάνωσιν"
+    ]
+   },
+   {
+    "prompt": "Would that the general had not despised our warnings!",
+    "answer": "εἴθε ὁ στρατηγὸς μὴ τὰς ἡμετέρας παραινέσεις ὑπερεῖδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ὁ",
+     "στρατηγὸς",
+     "μὴ",
+     "τὰς",
+     "ἡμετέρας",
+     "παραινέσεις",
+     "ὑπερεῖδεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t13",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "The farmers guard the vineyards so that the thieves may not steal the grape-clusters.",
+    "answer": "Οἱ γεωργοὶ τοὺς ἀμπελῶνας φυλάττουσιν ἵνα μὴ οἱ κλῶπες τὴν σταφυλὴν κλέπτωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "γεωργοὶ",
+     "τοὺς",
+     "ἀμπελῶνας",
+     "φυλάττουσιν",
+     "ἵνα",
+     "μὴ",
+     "οἱ",
+     "κλῶπες",
+     "τὴν",
+     "σταφυλὴν",
+     "κλέπτωσιν"
+    ]
+   },
+   {
+    "prompt": "Let us hasten to the harbor before the ship sails away.",
+    "answer": "Ἐπειγώμεθα πρὸς τὸν λιμένα πρὶν τὴν ναῦν ἀποπλεῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐπειγώμεθα",
+     "πρὸς",
+     "τὸν",
+     "λιμένα",
+     "πρὶν",
+     "τὴν",
+     "ναῦν",
+     "ἀποπλεῦσαι"
+    ]
+   },
+   {
+    "prompt": "May the gods grant us to return safely to our fatherland.",
+    "answer": "Εἴθε οἱ θεοὶ δοῖεν ἡμῖν ἀσφαλῶς εἰς τὴν πατρίδα ἐπανελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἴθε",
+     "οἱ",
+     "θεοὶ",
+     "δοῖεν",
+     "ἡμῖν",
+     "ἀσφαλῶς",
+     "εἰς",
+     "τὴν",
+     "πατρίδα",
+     "ἐπανελθεῖν"
+    ]
+   },
+   {
+    "prompt": "Whenever the sun sets, the shepherds drive the flocks into the fold.",
+    "answer": "Ὅταν ὁ ἥλιος δύηται, οἱ ποιμένες τὰ ποίμνια εἰς τὴν αὐλὴν ἐλαύνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὅταν",
+     "ὁ",
+     "ἥλιος",
+     "δύηται",
+     "οἱ",
+     "ποιμένες",
+     "τὰ",
+     "ποίμνια",
+     "εἰς",
+     "τὴν",
+     "αὐλὴν",
+     "ἐλαύνουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t14",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "If the citizens should trust the tyrant, they would soon change their minds.",
+    "answer": "Εἰ οἱ πολῖται τῷ τυράννῳ πιστεύοιεν, ταχέως ἂν μεταγνοῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "οἱ",
+     "πολῖται",
+     "τῷ",
+     "τυράννῳ",
+     "πιστεύοιεν",
+     "ταχέως",
+     "ἂν",
+     "μεταγνοῖεν"
+    ]
+   },
+   {
+    "prompt": "Who could ever endure the insolence of these men?",
+    "answer": "Τίς ἂν ποτε τὴν τῶνδε τῶν ἀνδρῶν ὕβριν ἀνέχοιτο;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τίς",
+     "ἂν",
+     "ποτε",
+     "τὴν",
+     "τῶνδε",
+     "τῶν",
+     "ἀνδρῶν",
+     "ὕβριν",
+     "ἀνέχοιτο"
+    ]
+   },
+   {
+    "prompt": "I would gladly learn what the oracle prophesied about the war.",
+    "answer": "Ἡδέως ἂν μάθοιμι ὅ τι τὸ μαντεῖον περὶ τοῦ πολέμου ἐμαντεύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡδέως",
+     "ἂν",
+     "μάθοιμι",
+     "ὅ",
+     "τι",
+     "τὸ",
+     "μαντεῖον",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "ἐμαντεύσατο"
+    ]
+   },
+   {
+    "prompt": "If you were to honor the gods, you would fare better in all things.",
+    "answer": "Εἰ τοὺς θεοὺς τιμῴης, ἄμεινον ἂν ἐν πᾶσι πράττοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῴης",
+     "ἄμεινον",
+     "ἂν",
+     "ἐν",
+     "πᾶσι",
+     "πράττοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t15",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "Shall we obey the general, or shall we question the seer?",
+    "answer": "Πειθώμεθα τῷ στρατηγῷ, ἢ τὸν μάντιν ἐρώμεθα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πειθώμεθα",
+     "τῷ",
+     "στρατηγῷ",
+     "ἢ",
+     "τὸν",
+     "μάντιν",
+     "ἐρώμεθα"
+    ]
+   },
+   {
+    "prompt": "Let us not abandon our allies in the danger.",
+    "answer": "Μὴ τοὺς συμμάχους ἐν τῷ κινδύνῳ προλίπωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μὴ",
+     "τοὺς",
+     "συμμάχους",
+     "ἐν",
+     "τῷ",
+     "κινδύνῳ",
+     "προλίπωμεν"
+    ]
+   },
+   {
+    "prompt": "Where are we to flee, now that the walls have fallen?",
+    "answer": "Ποῖ φύγωμεν, τῶν τειχῶν πεπτωκότων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ποῖ",
+     "φύγωμεν",
+     "τῶν",
+     "τειχῶν",
+     "πεπτωκότων"
+    ]
+   },
+   {
+    "prompt": "Let the young men train, so that they may become strong.",
+    "answer": "Οἱ νεανίαι γυμναζέσθων ἵνα ἰσχυροὶ γένωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "νεανίαι",
+     "γυμναζέσθων",
+     "ἵνα",
+     "ἰσχυροὶ",
+     "γένωνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t16",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "I fear that the enemy may have already seized the bridge.",
+    "answer": "Δέδοικα μὴ οἱ πολέμιοι τὴν γέφυραν ἤδη καταλάβωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δέδοικα",
+     "μὴ",
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "γέφυραν",
+     "ἤδη",
+     "καταλάβωσιν"
+    ]
+   },
+   {
+    "prompt": "We sent scouts so that the army might not fall into an ambush.",
+    "answer": "Κατασκόπους ἐπέμψαμεν ὅπως μὴ τὸ στράτευμα εἰς ἐνέδραν ἐμπέσοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κατασκόπους",
+     "ἐπέμψαμεν",
+     "ὅπως",
+     "μὴ",
+     "τὸ",
+     "στράτευμα",
+     "εἰς",
+     "ἐνέδραν",
+     "ἐμπέσοι"
+    ]
+   },
+   {
+    "prompt": "The old man feared that his sons might not return from the battle.",
+    "answer": "Ὁ γέρων ἐφοβεῖτο μὴ οἱ υἱοὶ ἐκ τῆς μάχης οὐκ ἐπανέλθοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "γέρων",
+     "ἐφοβεῖτο",
+     "μὴ",
+     "οἱ",
+     "υἱοὶ",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "οὐκ",
+     "ἐπανέλθοιεν"
+    ]
+   },
+   {
+    "prompt": "He asked the prisoners whence they had come and whither they were marching.",
+    "answer": "Ἤρετο τοὺς αἰχμαλώτους πόθεν ἔλθοιεν καὶ ποῖ πορεύοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἤρετο",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "πόθεν",
+     "ἔλθοιεν",
+     "καὶ",
+     "ποῖ",
+     "πορεύοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t17",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "Whoever loves virtue will be honored by all.",
+    "answer": "Ὅστις ἂν τὴν ἀρετὴν ἀγαπᾷ, ὑπὸ πάντων τιμηθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὅστις",
+     "ἂν",
+     "τὴν",
+     "ἀρετὴν",
+     "ἀγαπᾷ",
+     "ὑπὸ",
+     "πάντων",
+     "τιμηθήσεται"
+    ]
+   },
+   {
+    "prompt": "As often as the general spoke, the soldiers listened eagerly.",
+    "answer": "Ὁσάκις ὁ στρατηγὸς λέγοι, οἱ στρατιῶται προθύμως ἤκουον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁσάκις",
+     "ὁ",
+     "στρατηγὸς",
+     "λέγοι",
+     "οἱ",
+     "στρατιῶται",
+     "προθύμως",
+     "ἤκουον"
+    ]
+   },
+   {
+    "prompt": "Whenever we set out, a favorable wind would arise.",
+    "answer": "Ὁπότε ὁρμῴμεθα, ἄνεμος οὔριος ἐγίγνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁπότε",
+     "ὁρμῴμεθα",
+     "ἄνεμος",
+     "οὔριος",
+     "ἐγίγνετο"
+    ]
+   },
+   {
+    "prompt": "Let whoever wishes to speak come forward into the middle.",
+    "answer": "Ὅστις ἂν βούληται λέγειν, εἰς τὸ μέσον παρίτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὅστις",
+     "ἂν",
+     "βούληται",
+     "λέγειν",
+     "εἰς",
+     "τὸ",
+     "μέσον",
+     "παρίτω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t18",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "May you never suffer such things at the hands of your enemies!",
+    "answer": "Μήποτε τοιαῦτα ὑπὸ τῶν ἐχθρῶν πάθοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μήποτε",
+     "τοιαῦτα",
+     "ὑπὸ",
+     "τῶν",
+     "ἐχθρῶν",
+     "πάθοις"
+    ]
+   },
+   {
+    "prompt": "Would that the god might place courage in the souls of the soldiers!",
+    "answer": "Εἴθε ὁ θεὸς θάρσος ἐν ταῖς τῶν στρατιωτῶν ψυχαῖς θείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἴθε",
+     "ὁ",
+     "θεὸς",
+     "θάρσος",
+     "ἐν",
+     "ταῖς",
+     "τῶν",
+     "στρατιωτῶν",
+     "ψυχαῖς",
+     "θείη"
+    ]
+   },
+   {
+    "prompt": "No one would give so great power to a single man.",
+    "answer": "Οὐδεὶς ἂν τοσαύτην δύναμιν ἑνὶ ἀνδρὶ δοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὐδεὶς",
+     "ἂν",
+     "τοσαύτην",
+     "δύναμιν",
+     "ἑνὶ",
+     "ἀνδρὶ",
+     "δοίη"
+    ]
+   },
+   {
+    "prompt": "May we stand firm and never yield to fear.",
+    "answer": "Εἴθε βεβαίως σταίημεν καὶ μηδέποτε τῷ φόβῳ εἴξαιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἴθε",
+     "βεβαίως",
+     "σταίημεν",
+     "καὶ",
+     "μηδέποτε",
+     "τῷ",
+     "φόβῳ",
+     "εἴξαιμεν"
+    ]
+   }
+  ]
  }
 ]

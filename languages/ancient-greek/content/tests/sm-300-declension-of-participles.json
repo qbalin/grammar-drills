@@ -1551,5 +1551,148 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t25",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The sailors sailing toward Corcyra saw the ships of the enemy.",
+    "answer": "οἱ πρὸς τὴν Κέρκυραν προσπλέοντες ναῦται τὰς τῶν πολεμίων ναῦς εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρὸς",
+     "τὴν",
+     "Κέρκυραν",
+     "προσπλέοντες",
+     "ναῦται",
+     "τὰς",
+     "τῶν",
+     "πολεμίων",
+     "ναῦς",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "Having given money to the soldiers, the king sent them against the enemy.",
+    "answer": "δοὺς χρήματα τοῖς στρατιώταις ὁ βασιλεὺς ἔπεμψεν αὐτοὺς ἐπὶ τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοὺς",
+     "χρήματα",
+     "τοῖς",
+     "στρατιώταις",
+     "ὁ",
+     "βασιλεὺς",
+     "ἔπεμψεν",
+     "αὐτοὺς",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "We saw the women bringing bread to the standing old men.",
+    "answer": "εἴδομεν τὰς γυναῖκας ἄρτους τοῖς ἑστῶσι γέρουσι φερούσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴδομεν",
+     "τὰς",
+     "γυναῖκας",
+     "ἄρτους",
+     "τοῖς",
+     "ἑστῶσι",
+     "γέρουσι",
+     "φερούσας"
+    ]
+   },
+   {
+    "prompt": "The young man, showing his strength to all, saved the fleeing citizens.",
+    "answer": "ὁ νεανίας τὴν ἑαυτοῦ ῥώμην πᾶσι δεικνὺς ἔσωσε τοὺς φεύγοντας πολίτας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "τὴν",
+     "ἑαυτοῦ",
+     "ῥώμην",
+     "πᾶσι",
+     "δεικνὺς",
+     "ἔσωσε",
+     "τοὺς",
+     "φεύγοντας",
+     "πολίτας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-300-declension-of-participles-t26",
+  "sectionId": "sm-300-declension-of-participles",
+  "questions": [
+   {
+    "prompt": "The girl giving gifts to her friends was loved by all.",
+    "answer": "ἡ κόρη δῶρα τοῖς φίλοις διδοῦσα ὑπὸ πάντων ἐφιλεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "κόρη",
+     "δῶρα",
+     "τοῖς",
+     "φίλοις",
+     "διδοῦσα",
+     "ὑπὸ",
+     "πάντων",
+     "ἐφιλεῖτο"
+    ]
+   },
+   {
+    "prompt": "Those who honor their parents are wise.",
+    "answer": "οἱ τοὺς γονέας τιμῶντες σοφοί εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "γονέας",
+     "τιμῶντες",
+     "σοφοί",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "Knowing the danger, the general nevertheless led the army across the river.",
+    "answer": "εἰδὼς τὸν κίνδυνον ὁ στρατηγὸς ὅμως τὸ στράτευμα διὰ τοῦ ποταμοῦ ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰδὼς",
+     "τὸν",
+     "κίνδυνον",
+     "ὁ",
+     "στρατηγὸς",
+     "ὅμως",
+     "τὸ",
+     "στράτευμα",
+     "διὰ",
+     "τοῦ",
+     "ποταμοῦ",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "We trust the men who have suffered many things on behalf of the city.",
+    "answer": "πιστεύομεν τοῖς πολλὰ ὑπὲρ τῆς πόλεως πεπονθόσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστεύομεν",
+     "τοῖς",
+     "πολλὰ",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "πεπονθόσιν"
+    ]
+   }
+  ]
  }
 ]

@@ -390,5 +390,780 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-439-reduplication-t7",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The soldiers, having thrown away their shields, have fled from the battle.",
+    "answer": "οἱ στρατιῶται τὰς ἀσπίδας ῥίψαντες ἐκ τῆς μάχης πεφεύγασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τάς",
+     "ἀσπίδας",
+     "ῥίψαντες",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "πεφεύγασιν"
+    ]
+   },
+   {
+    "prompt": "The old woman has dug a deep pit in the garden.",
+    "answer": "ἡ γραῦς βαθὺν βόθρον ἐν τῷ κήπῳ ὀρώρυχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "βαθύν",
+     "βόθρον",
+     "ἐν",
+     "τῷ",
+     "κήπῳ",
+     "ὀρώρυχεν"
+    ]
+   },
+   {
+    "prompt": "The general has sworn to lead the army back home.",
+    "answer": "ὁ στρατηγὸς ὀμώμοκεν τὸ στράτευμα οἴκαδε ἀπάξειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ὀμώμοκεν",
+     "τό",
+     "στράτευμα",
+     "οἴκαδε",
+     "ἀπάξειν"
+    ]
+   },
+   {
+    "prompt": "The slaves have carried the corpses out of the city.",
+    "answer": "οἱ δοῦλοι τοὺς νεκροὺς ἐκ τῆς πόλεως ἐξενηνόχασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοῦλοι",
+     "τούς",
+     "νεκρούς",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐξενηνόχασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t8",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The letters have been written by the general himself.",
+    "answer": "αἱ ἐπιστολαὶ ὑπὸ αὐτοῦ τοῦ στρατηγοῦ γεγραμμέναι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "ἐπιστολαί",
+     "ὑπό",
+     "αὐτοῦ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "γεγραμμέναι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "The seeds have been sown throughout the whole field.",
+    "answer": "τὰ σπέρματα κατὰ πάντα τὸν ἀγρὸν ἔσπαρται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "σπέρματα",
+     "κατά",
+     "πάντα",
+     "τόν",
+     "ἀγρόν",
+     "ἔσπαρται"
+    ]
+   },
+   {
+    "prompt": "Many trophies have been set up by the victorious Athenians.",
+    "answer": "πολλὰ τρόπαια ὑπὸ τῶν νικώντων Ἀθηναίων ἕστηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλά",
+     "τρόπαια",
+     "ὑπό",
+     "τῶν",
+     "νικώντων",
+     "Ἀθηναίων",
+     "ἕστηκεν"
+    ]
+   },
+   {
+    "prompt": "The truth has been said, and the whole plot has been revealed.",
+    "answer": "τὸ ἀληθὲς εἴρηται, καὶ πᾶσα ἡ ἐπιβουλὴ δεδήλωται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "ἀληθές",
+     "εἴρηται",
+     "καί",
+     "πᾶσα",
+     "ἡ",
+     "ἐπιβουλή",
+     "δεδήλωται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t9",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The enemy had crossed the river before dawn.",
+    "answer": "οἱ πολέμιοι πρὸ τῆς ἕω τὸν ποταμὸν διεβεβήκεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "πρό",
+     "τῆς",
+     "ἕω",
+     "τόν",
+     "ποταμόν",
+     "διεβεβήκεσαν"
+    ]
+   },
+   {
+    "prompt": "The citizens had entrusted their children to the wise old man.",
+    "answer": "οἱ πολῖται τοὺς παῖδας τῷ σοφῷ γέροντι ἐπεπιστεύκεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τούς",
+     "παῖδας",
+     "τῷ",
+     "σοφῷ",
+     "γέροντι",
+     "ἐπεπιστεύκεσαν"
+    ]
+   },
+   {
+    "prompt": "The women had heard the terrible news before the men returned.",
+    "answer": "αἱ γυναῖκες τὰ δεινὰ ἠκηκόεσαν πρὶν τοὺς ἄνδρας ἐπανελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "τά",
+     "δεινά",
+     "ἠκηκόεσαν",
+     "πρίν",
+     "τούς",
+     "ἄνδρας",
+     "ἐπανελθεῖν"
+    ]
+   },
+   {
+    "prompt": "The proud city had long ago perished.",
+    "answer": "ἡ ὑπερήφανος πόλις πάλαι ἀπωλώλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ὑπερήφανος",
+     "πόλις",
+     "πάλαι",
+     "ἀπωλώλει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t10",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "Since the enemy have fled, we have gained control of the whole camp.",
+    "answer": "τῶν πολεμίων πεφευγότων, παντὸς τοῦ στρατοπέδου κεκρατήκαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "πεφευγότων",
+     "παντός",
+     "τοῦ",
+     "στρατοπέδου",
+     "κεκρατήκαμεν"
+    ]
+   },
+   {
+    "prompt": "The man who has learned these things has become wise.",
+    "answer": "ὁ ταῦτα μεμαθηκὼς σοφὸς γέγονεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ταῦτα",
+     "μεμαθηκώς",
+     "σοφός",
+     "γέγονεν"
+    ]
+   },
+   {
+    "prompt": "Those who have suffered many things have not forgotten the war.",
+    "answer": "οἱ πολλὰ πεπονθότες τοῦ πολέμου οὐκ ἐπιλελησμένοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολλά",
+     "πεπονθότες",
+     "τοῦ",
+     "πολέμου",
+     "οὐκ",
+     "ἐπιλελησμένοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "The wall having fallen, the enemy have entered the city.",
+    "answer": "τοῦ τείχους πεπτωκότος, οἱ πολέμιοι εἰς τὴν πόλιν εἰσεληλύθασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "τείχους",
+     "πεπτωκότος",
+     "οἱ",
+     "πολέμιοι",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "εἰσεληλύθασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t11",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The father gives gifts to his children every day.",
+    "answer": "ὁ πατὴρ κατὰ ἑκάστην ἡμέραν τοῖς παισὶ δῶρα δίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατήρ",
+     "κατά",
+     "ἑκάστην",
+     "ἡμέραν",
+     "τοῖς",
+     "παισί",
+     "δῶρα",
+     "δίδωσιν"
+    ]
+   },
+   {
+    "prompt": "The general led the army into the plain.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα εἰς τὸ πεδίον ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "εἰς",
+     "πεδίον",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "The old men place wreaths upon the altars of the gods.",
+    "answer": "οἱ γέροντες στεφάνους ἐπὶ τοὺς τῶν θεῶν βωμοὺς τιθέασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "στεφάνους",
+     "ἐπί",
+     "τούς",
+     "τῶν",
+     "θεῶν",
+     "βωμούς",
+     "τιθέασιν"
+    ]
+   },
+   {
+    "prompt": "The wise man knows himself and thus becomes happy.",
+    "answer": "ὁ σοφὸς ἑαυτὸν γιγνώσκει καὶ οὕτως εὐδαίμων γίγνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "ἑαυτόν",
+     "γιγνώσκει",
+     "καί",
+     "οὕτως",
+     "εὐδαίμων",
+     "γίγνεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t12",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The drugs have been mixed in the cup.",
+    "answer": "τὰ φάρμακα ἐν τῇ κύλικι κέκραται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "φάρμακα",
+     "ἐν",
+     "τῇ",
+     "κύλικι",
+     "κέκραται"
+    ]
+   },
+   {
+    "prompt": "The tyrant has been confuted by the young man's arguments.",
+    "answer": "ὁ τύραννος ὑπὸ τῶν τοῦ νεανίου λόγων ἐλήλεγκται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "ὑπό",
+     "τῶν",
+     "τοῦ",
+     "νεανίου",
+     "λόγων",
+     "ἐλήλεγκται"
+    ]
+   },
+   {
+    "prompt": "The army has been collected from all the allied cities.",
+    "answer": "τὸ στράτευμα ἐκ πασῶν τῶν συμμαχίδων πόλεων συνείλεκται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "στράτευμα",
+     "ἐκ",
+     "πασῶν",
+     "τῶν",
+     "συμμαχίδων",
+     "πόλεων",
+     "συνείλεκται"
+    ]
+   },
+   {
+    "prompt": "The maiden has been awakened by the sudden noise.",
+    "answer": "ἡ παρθένος ὑπὸ τοῦ αἰφνιδίου ψόφου ἐγήγερται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "ὑπό",
+     "τοῦ",
+     "αἰφνιδίου",
+     "ψόφου",
+     "ἐγήγερται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t13",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The old men have carried the king's corpse out of the city.",
+    "answer": "οἱ γέροντες τὸν τοῦ βασιλέως νεκρὸν ἐκ τῆς πόλεως ἐξενηνόχασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "τὸν",
+     "τοῦ",
+     "βασιλέως",
+     "νεκρὸν",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐξενηνόχασιν"
+    ]
+   },
+   {
+    "prompt": "We have already dug a deep ditch around the wall.",
+    "answer": "τάφρον βαθεῖαν περὶ τὸ τεῖχος ἤδη ὀρωρύχαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάφρον",
+     "βαθεῖαν",
+     "περὶ",
+     "τὸ",
+     "τεῖχος",
+     "ἤδη",
+     "ὀρωρύχαμεν"
+    ]
+   },
+   {
+    "prompt": "The general has sent the horsemen against the enemy.",
+    "answer": "ὁ στρατηγὸς τοὺς ἱππέας ἐπὶ τοὺς πολεμίους πέπομφεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "ἱππέας",
+     "ἐπὶ",
+     "πολεμίους",
+     "πέπομφεν"
+    ]
+   },
+   {
+    "prompt": "The children have heard the wondrous deeds of the ancients.",
+    "answer": "οἱ παῖδες τὰ θαυμαστὰ τῶν παλαιῶν ἔργα ἀκηκόασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τὰ",
+     "θαυμαστὰ",
+     "τῶν",
+     "παλαιῶν",
+     "ἔργα",
+     "ἀκηκόασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t14",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The seeds have been sown throughout the whole country.",
+    "answer": "τὰ σπέρματα ἀνὰ πᾶσαν τὴν χώραν ἔσπαρται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "σπέρματα",
+     "ἀνὰ",
+     "πᾶσαν",
+     "τὴν",
+     "χώραν",
+     "ἔσπαρται"
+    ]
+   },
+   {
+    "prompt": "The truth has been clearly stated by the ambassadors.",
+    "answer": "τὸ ἀληθὲς σαφῶς ὑπὸ τῶν πρέσβεων εἴρηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἀληθὲς",
+     "σαφῶς",
+     "ὑπὸ",
+     "τῶν",
+     "πρέσβεων",
+     "εἴρηται"
+    ]
+   },
+   {
+    "prompt": "These things have been well done by the allies.",
+    "answer": "ταῦτα εὖ ὑπὸ τῶν συμμάχων πέπρακται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "εὖ",
+     "ὑπὸ",
+     "τῶν",
+     "συμμάχων",
+     "πέπρακται"
+    ]
+   },
+   {
+    "prompt": "All the citizens have sworn the oath.",
+    "answer": "πάντες οἱ πολῖται τὸν ὅρκον ὀμωμόκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "ὅρκον",
+     "ὀμωμόκασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t15",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The enemy had already destroyed the villages before we arrived.",
+    "answer": "οἱ πολέμιοι τὰς κώμας ἤδη διεφθάρκεσαν πρὶν ἡμᾶς ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τὰς",
+     "κώμας",
+     "ἤδη",
+     "διεφθάρκεσαν",
+     "πρὶν",
+     "ἡμᾶς",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "I had received the letter before the messenger went away.",
+    "answer": "τὴν ἐπιστολὴν εἰλήφη πρὶν τὸν ἄγγελον ἀπελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἐπιστολὴν",
+     "εἰλήφη",
+     "πρὶν",
+     "τὸν",
+     "ἄγγελον",
+     "ἀπελθεῖν"
+    ]
+   },
+   {
+    "prompt": "The tyrant had killed many of the noble men.",
+    "answer": "ὁ τύραννος πολλοὺς τῶν ἀγαθῶν ἀνδρῶν ἀπεκτόνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "πολλοὺς",
+     "τῶν",
+     "ἀγαθῶν",
+     "ἀνδρῶν",
+     "ἀπεκτόνει"
+    ]
+   },
+   {
+    "prompt": "The soldiers had fled to the mountains when the general died.",
+    "answer": "οἱ στρατιῶται εἰς τὰ ὄρη ἐπεφεύγεσαν ἐπεὶ ὁ στρατηγὸς ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἐπεφεύγεσαν",
+     "ἐπεὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀπέθανεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t16",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "Those who have written these things about the war are wise.",
+    "answer": "οἱ ταῦτα περὶ τοῦ πολέμου γεγραφότες σοφοί εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ταῦτα",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "γεγραφότες",
+     "σοφοί",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "Having learned the truth, the judges have freed the prisoner.",
+    "answer": "τὸ ἀληθὲς μαθόντες οἱ δικασταὶ τὸν δεσμώτην λελύκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἀληθὲς",
+     "μαθόντες",
+     "οἱ",
+     "δικασταὶ",
+     "τὸν",
+     "δεσμώτην",
+     "λελύκασιν"
+    ]
+   },
+   {
+    "prompt": "The woman who has borne many children is honored by all.",
+    "answer": "ἡ πολλοὺς παῖδας τετοκυῖα ὑπὸ πάντων τιμᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πολλοὺς",
+     "παῖδας",
+     "τετοκυῖα",
+     "ὑπὸ",
+     "πάντων",
+     "τιμᾶται"
+    ]
+   },
+   {
+    "prompt": "I know that the allies have come into great danger.",
+    "answer": "οἶδα τοὺς συμμάχους εἰς μέγαν κίνδυνον ἐληλυθότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶδα",
+     "τοὺς",
+     "συμμάχους",
+     "εἰς",
+     "μέγαν",
+     "κίνδυνον",
+     "ἐληλυθότας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t17",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "Whoever knows himself is truly wise.",
+    "answer": "ὅστις ἑαυτὸν γιγνώσκει ὡς ἀληθῶς σοφός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἑαυτὸν",
+     "γιγνώσκει",
+     "ὡς",
+     "ἀληθῶς",
+     "σοφός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The general led the army through the enemy's country.",
+    "answer": "ὁ στρατηγὸς διὰ τῆς τῶν πολεμίων χώρας τὸ στράτευμα ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "διὰ",
+     "τῆς",
+     "τῶν",
+     "πολεμίων",
+     "χώρας",
+     "τὸ",
+     "στράτευμα",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "Fortune often gives great things to those who dare.",
+    "answer": "ἡ τύχη πολλάκις τοῖς τολμῶσι μεγάλα δίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τύχη",
+     "πολλάκις",
+     "τοῖς",
+     "τολμῶσι",
+     "μεγάλα",
+     "δίδωσιν"
+    ]
+   },
+   {
+    "prompt": "The slaves brought gifts to the temple of the goddess.",
+    "answer": "οἱ δοῦλοι δῶρα εἰς τὸ τῆς θεοῦ ἱερὸν ἤνεγκαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοῦλοι",
+     "δῶρα",
+     "εἰς",
+     "τὸ",
+     "τῆς",
+     "θεοῦ",
+     "ἱερὸν",
+     "ἤνεγκαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t18",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The physician has touched the wound gently.",
+    "answer": "ὁ ἰατρὸς τοῦ τραύματος πρᾴως ἔψαυκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "τοῦ",
+     "τραύματος",
+     "πρᾴως",
+     "ἔψαυκεν"
+    ]
+   },
+   {
+    "prompt": "The colonists have founded a new city beside the river.",
+    "answer": "οἱ ἄποικοι καινὴν πόλιν παρὰ τῷ ποταμῷ ἐκτίκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄποικοι",
+     "καινὴν",
+     "πόλιν",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ",
+     "ἐκτίκασιν"
+    ]
+   },
+   {
+    "prompt": "The general has gathered a great army in a few days.",
+    "answer": "ὁ στρατηγὸς ἐν ὀλίγαις ἡμέραις μέγα στράτευμα ἀγήγερκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐν",
+     "ὀλίγαις",
+     "ἡμέραις",
+     "μέγα",
+     "στράτευμα",
+     "ἀγήγερκεν"
+    ]
+   },
+   {
+    "prompt": "The enemy have destroyed the fair temples of the gods.",
+    "answer": "οἱ πολέμιοι τὰ καλὰ τῶν θεῶν ἱερὰ ὀλωλέκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τὰ",
+     "καλὰ",
+     "τῶν",
+     "θεῶν",
+     "ἱερὰ",
+     "ὀλωλέκασιν"
+    ]
+   }
+  ]
  }
 ]

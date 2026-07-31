@@ -400,5 +400,812 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-428-augment-t7",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "When the enemy had fled, the soldiers were pursuing them toward the mountains.",
+    "answer": "φυγόντων τῶν πολεμίων οἱ στρατιῶται ἐδίωκον αὐτοὺς πρὸς τὰ ὄρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυγόντων",
+     "τῶν",
+     "πολεμίων",
+     "οἱ",
+     "στρατιῶται",
+     "ἐδίωκον",
+     "αὐτοὺς",
+     "πρὸς",
+     "τὰ",
+     "ὄρη"
+    ]
+   },
+   {
+    "prompt": "The general laid waste the villages which he had captured.",
+    "answer": "ὁ στρατηγὸς τὰς κώμας ἃς εἷλεν ἠρήμωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὰς",
+     "κώμας",
+     "ἃς",
+     "εἷλεν",
+     "ἠρήμωσεν"
+    ]
+   },
+   {
+    "prompt": "The old man kept throwing stones at the dogs.",
+    "answer": "ὁ γέρων λίθους ἐπὶ τοὺς κύνας ἔρριπτεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "λίθους",
+     "ἐπὶ",
+     "τοὺς",
+     "κύνας",
+     "ἔρριπτεν"
+    ]
+   },
+   {
+    "prompt": "The citizens willingly kept following the general through the enemy's land.",
+    "answer": "οἱ πολῖται ἑκόντες εἵποντο τῷ στρατηγῷ διὰ τῆς τῶν πολεμίων χώρας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἑκόντες",
+     "εἵποντο",
+     "τῷ",
+     "στρατηγῷ",
+     "διὰ",
+     "τῆς",
+     "τῶν",
+     "πολεμίων",
+     "χώρας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t8",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "The messenger announced the capture of the city.",
+    "answer": "ὁ ἄγγελος τὴν τῆς πόλεως ἅλωσιν ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τὴν",
+     "τῆς",
+     "πόλεως",
+     "ἅλωσιν",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "Before daybreak the general led the army out of the plain.",
+    "answer": "ὁ στρατηγὸς πρὸ ἡμέρας τὸ στράτευμα ἐκ τοῦ πεδίου ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "πρὸ",
+     "ἡμέρας",
+     "τὸ",
+     "στράτευμα",
+     "ἐκ",
+     "τοῦ",
+     "πεδίου",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "The young men were praying to the gods in the temple.",
+    "answer": "οἱ νεανίαι τοῖς θεοῖς ἐν τῷ ἱερῷ ηὔχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "τοῖς",
+     "θεοῖς",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "ηὔχοντο"
+    ]
+   },
+   {
+    "prompt": "The old woman was singing a mournful song.",
+    "answer": "ἡ γραῦς μέλος οἰκτρὸν ᾖδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "μέλος",
+     "οἰκτρὸν",
+     "ᾖδεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t9",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "When the king arrived, the soldiers had already pulled down the walls.",
+    "answer": "ἀφικομένου τοῦ βασιλέως οἱ στρατιῶται ἤδη τὰ τείχη καθῃρήκεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφικομένου",
+     "τοῦ",
+     "βασιλέως",
+     "οἱ",
+     "στρατιῶται",
+     "ἤδη",
+     "τὰ",
+     "τείχη",
+     "καθῃρήκεσαν"
+    ]
+   },
+   {
+    "prompt": "He saw the ships sailing into the harbor.",
+    "answer": "εἶδε τὰς ναῦς εἰς τὸν λιμένα εἰσπλεούσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶδε",
+     "τὰς",
+     "ναῦς",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "εἰσπλεούσας"
+    ]
+   },
+   {
+    "prompt": "The bull broke its yoke and fled into the mountains.",
+    "answer": "ὁ ταῦρος τὸν ζυγὸν ἔρρηξεν καὶ εἰς τὰ ὄρη ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ταῦρος",
+     "τὸν",
+     "ζυγὸν",
+     "ἔρρηξεν",
+     "καὶ",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "The woman entertained the strangers in her house.",
+    "answer": "ἡ γυνὴ τοὺς ξένους ἐν τῇ οἰκίᾳ εἱστίασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "τοὺς",
+     "ξένους",
+     "ἐν",
+     "τῇ",
+     "οἰκίᾳ",
+     "εἱστίασεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t10",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "The boys were rolling stones down the hill.",
+    "answer": "οἱ παῖδες λίθους κατὰ τοῦ λόφου εἴλιττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "λίθους",
+     "κατὰ",
+     "τοῦ",
+     "λόφου",
+     "εἴλιττον"
+    ]
+   },
+   {
+    "prompt": "The general accustomed the soldiers to toil.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας τῷ πόνῳ εἴθισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "τῷ",
+     "πόνῳ",
+     "εἴθισεν"
+    ]
+   },
+   {
+    "prompt": "The enemy pushed our men away from the wall.",
+    "answer": "οἱ πολέμιοι τοὺς ἡμετέρους ἀπὸ τοῦ τείχους ἔωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τοὺς",
+     "ἡμετέρους",
+     "ἀπὸ",
+     "τοῦ",
+     "τείχους",
+     "ἔωσαν"
+    ]
+   },
+   {
+    "prompt": "The Athenians were permitting the allies to depart.",
+    "answer": "οἱ Ἀθηναῖοι τοὺς συμμάχους ἀπελθεῖν εἴων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τοὺς",
+     "συμμάχους",
+     "ἀπελθεῖν",
+     "εἴων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t11",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "When the general had died, the soldiers chose another.",
+    "answer": "τοῦ στρατηγοῦ ἀποθανόντος οἱ στρατιῶται ἄλλον εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀποθανόντος",
+     "οἱ",
+     "στρατιῶται",
+     "ἄλλον",
+     "εἵλοντο"
+    ]
+   },
+   {
+    "prompt": "The Persians shamefully insulted the envoys of the Greeks.",
+    "answer": "οἱ Πέρσαι τοὺς τῶν Ἑλλήνων πρέσβεις αἰσχρῶς ὕβρισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "τοὺς",
+     "τῶν",
+     "Ἑλλήνων",
+     "πρέσβεις",
+     "αἰσχρῶς",
+     "ὕβρισαν"
+    ]
+   },
+   {
+    "prompt": "The sailors were dragging the ship onto the land.",
+    "answer": "οἱ ναῦται τὴν ναῦν ἐπὶ τὴν γῆν εἷλκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τὴν",
+     "ναῦν",
+     "ἐπὶ",
+     "γῆν",
+     "εἷλκον"
+    ]
+   },
+   {
+    "prompt": "The orator was hoping to persuade the assembly.",
+    "answer": "ὁ ῥήτωρ τὴν ἐκκλησίαν πείσειν ἤλπιζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τὴν",
+     "ἐκκλησίαν",
+     "πείσειν",
+     "ἤλπιζεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t12",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "The workmen were building the temple beside the marketplace.",
+    "answer": "οἱ ἐργάται τὸν νεὼν παρὰ τὴν ἀγορὰν ᾠκοδόμουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐργάται",
+     "τὸν",
+     "νεὼν",
+     "παρὰ",
+     "τὴν",
+     "ἀγορὰν",
+     "ᾠκοδόμουν"
+    ]
+   },
+   {
+    "prompt": "The soldiers were laboring at the wall throughout the whole day.",
+    "answer": "οἱ στρατιῶται διὰ ὅλης τῆς ἡμέρας περὶ τὸ τεῖχος εἰργάζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "διὰ",
+     "ὅλης",
+     "τῆς",
+     "ἡμέρας",
+     "περὶ",
+     "τὸ",
+     "τεῖχος",
+     "εἰργάζοντο"
+    ]
+   },
+   {
+    "prompt": "The king held the whole land under his own rule.",
+    "answer": "ὁ βασιλεὺς πᾶσαν τὴν χώραν ὑπὸ τῇ ἑαυτοῦ ἀρχῇ εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "πᾶσαν",
+     "τὴν",
+     "χώραν",
+     "ὑπὸ",
+     "τῇ",
+     "ἑαυτοῦ",
+     "ἀρχῇ",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "The old men were supplicating the gods on behalf of the city.",
+    "answer": "οἱ γέροντες τοὺς θεοὺς ὑπὲρ τῆς πόλεως ἱκέτευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "τοὺς",
+     "θεοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "ἱκέτευον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t13",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "The wealthy physician used to entertain the strangers in his own house.",
+    "answer": "ὁ πλούσιος ἰατρὸς τοὺς ξένους ἐν τῇ ἑαυτοῦ οἰκίᾳ εἱστία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "ἰατρὸς",
+     "τοὺς",
+     "ξένους",
+     "ἐν",
+     "τῇ",
+     "ἑαυτοῦ",
+     "οἰκίᾳ",
+     "εἱστία"
+    ]
+   },
+   {
+    "prompt": "When the citizens had chosen a general, they marched against the enemy.",
+    "answer": "ἐπεὶ οἱ πολῖται στρατηγὸν εἵλοντο, ἐπὶ τοὺς πολεμίους ἐστράτευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "πολῖται",
+     "στρατηγὸν",
+     "εἵλοντο",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους",
+     "ἐστράτευσαν"
+    ]
+   },
+   {
+    "prompt": "The horsemen were pursuing the fleeing barbarians across the plain.",
+    "answer": "οἱ ἱππεῖς τοὺς φεύγοντας βαρβάρους διὰ τοῦ πεδίου ἐδίωκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱππεῖς",
+     "τοὺς",
+     "φεύγοντας",
+     "βαρβάρους",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἐδίωκον"
+    ]
+   },
+   {
+    "prompt": "The old man had seen many terrible things in his long life.",
+    "answer": "ὁ γέρων πολλὰ καὶ δεινὰ ἐν τῷ μακρῷ βίῳ ἑωράκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "πολλὰ",
+     "καὶ",
+     "δεινὰ",
+     "ἐν",
+     "τῷ",
+     "μακρῷ",
+     "βίῳ",
+     "ἑωράκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t14",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "Because a storm was approaching, the general allowed the soldiers to rest.",
+    "answer": "ἐπεὶ χειμὼν προσῄει, ὁ στρατηγὸς τοὺς στρατιώτας ἀναπαύεσθαι εἴα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "χειμὼν",
+     "προσῄει",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "ἀναπαύεσθαι",
+     "εἴα"
+    ]
+   },
+   {
+    "prompt": "The sailors, fearing the storm, were pushing the ship onto the shore.",
+    "answer": "οἱ ναῦται τὸν χειμῶνα φοβούμενοι τὴν ναῦν εἰς τὴν ἀκτὴν ἐώθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τὸν",
+     "χειμῶνα",
+     "φοβούμενοι",
+     "τὴν",
+     "ναῦν",
+     "εἰς",
+     "ἀκτὴν",
+     "ἐώθουν"
+    ]
+   },
+   {
+    "prompt": "The woman was buying purple garments from the Phoenician merchant.",
+    "answer": "ἡ γυνὴ παρὰ τοῦ Φοίνικος ἐμπόρου πορφυρᾶ ἱμάτια ἐωνεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "παρὰ",
+     "τοῦ",
+     "Φοίνικος",
+     "ἐμπόρου",
+     "πορφυρᾶ",
+     "ἱμάτια",
+     "ἐωνεῖτο"
+    ]
+   },
+   {
+    "prompt": "Before the sea-battle the sailors prayed to Poseidon.",
+    "answer": "πρὸ τῆς ναυμαχίας οἱ ναῦται τῷ Ποσειδῶνι ηὔξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸ",
+     "τῆς",
+     "ναυμαχίας",
+     "οἱ",
+     "ναῦται",
+     "τῷ",
+     "Ποσειδῶνι",
+     "ηὔξαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t15",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "The slaves were dragging the wagon up the steep road.",
+    "answer": "οἱ δοῦλοι τὴν ἅμαξαν ἀνὰ τὴν ὁδὸν τὴν ὀρθίαν εἷλκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοῦλοι",
+     "τὴν",
+     "ἅμαξαν",
+     "ἀνὰ",
+     "ὁδὸν",
+     "ὀρθίαν",
+     "εἷλκον"
+    ]
+   },
+   {
+    "prompt": "The soldiers followed their general even into danger.",
+    "answer": "οἱ στρατιῶται τῷ στρατηγῷ καὶ εἰς τὸν κίνδυνον εἵποντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τῷ",
+     "στρατηγῷ",
+     "καὶ",
+     "εἰς",
+     "τὸν",
+     "κίνδυνον",
+     "εἵποντο"
+    ]
+   },
+   {
+    "prompt": "The craftsmen were working the silver with great skill.",
+    "answer": "οἱ τεχνῖται τὸν ἄργυρον μετὰ πολλῆς τέχνης εἰργάζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τεχνῖται",
+     "τὸν",
+     "ἄργυρον",
+     "μετὰ",
+     "πολλῆς",
+     "τέχνης",
+     "εἰργάζοντο"
+    ]
+   },
+   {
+    "prompt": "The serpent was slowly creeping toward the sleeping child.",
+    "answer": "ὁ ὄφις βραδέως πρὸς τὸ καθεῦδον παιδίον εἷρπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ὄφις",
+     "βραδέως",
+     "πρὸς",
+     "τὸ",
+     "καθεῦδον",
+     "παιδίον",
+     "εἷρπεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t16",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "From the towers the barbarians were hurling stones at the gates.",
+    "answer": "ἀπὸ τῶν πύργων οἱ βάρβαροι λίθους πρὸς τὰς πύλας ἔρριπτον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπὸ",
+     "τῶν",
+     "πύργων",
+     "οἱ",
+     "βάρβαροι",
+     "λίθους",
+     "πρὸς",
+     "τὰς",
+     "πύλας",
+     "ἔρριπτον"
+    ]
+   },
+   {
+    "prompt": "The great earthquake broke the walls of the city in the night.",
+    "answer": "ὁ μέγας σεισμὸς τὰ τείχη τῆς πόλεως νυκτὸς ἔρρηξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μέγας",
+     "σεισμὸς",
+     "τὰ",
+     "τείχη",
+     "τῆς",
+     "πόλεως",
+     "νυκτὸς",
+     "ἔρρηξεν"
+    ]
+   },
+   {
+    "prompt": "At dawn the soldiers had already loosed the prisoners.",
+    "answer": "ἅμα τῇ ἡμέρᾳ οἱ στρατιῶται τοὺς δεσμώτας ἐλελύκεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τῇ",
+     "ἡμέρᾳ",
+     "οἱ",
+     "στρατιῶται",
+     "τοὺς",
+     "δεσμώτας",
+     "ἐλελύκεσαν"
+    ]
+   },
+   {
+    "prompt": "Before the festival the child had already learned the letters.",
+    "answer": "πρὸ τῆς ἑορτῆς τὸ παιδίον ἤδη τὰ γράμματα ἐμεμαθήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸ",
+     "τῆς",
+     "ἑορτῆς",
+     "τὸ",
+     "παιδίον",
+     "ἤδη",
+     "τὰ",
+     "γράμματα",
+     "ἐμεμαθήκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t17",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "While the general was sacrificing, the enemy attacked the camp.",
+    "answer": "θύοντος τοῦ στρατηγοῦ, οἱ πολέμιοι τῷ στρατοπέδῳ προσέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θύοντος",
+     "τοῦ",
+     "στρατηγοῦ",
+     "οἱ",
+     "πολέμιοι",
+     "τῷ",
+     "στρατοπέδῳ",
+     "προσέβαλον"
+    ]
+   },
+   {
+    "prompt": "The herald joyfully announced the victory to the citizens.",
+    "answer": "ὁ κῆρυξ ἡδέως τὴν νίκην τοῖς πολίταις ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ἡδέως",
+     "τὴν",
+     "νίκην",
+     "τοῖς",
+     "πολίταις",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "The young men were hoping to gain glory in the war.",
+    "answer": "οἱ νεανίαι δόξαν ἐν τῷ πολέμῳ κτήσεσθαι ἤλπιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "δόξαν",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "κτήσεσθαι",
+     "ἤλπιζον"
+    ]
+   },
+   {
+    "prompt": "At last the city was captured while the citizens were still sleeping.",
+    "answer": "τέλος ἡ πόλις ἑάλω τῶν πολιτῶν ἔτι καθευδόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τέλος",
+     "ἡ",
+     "πόλις",
+     "ἑάλω",
+     "τῶν",
+     "πολιτῶν",
+     "ἔτι",
+     "καθευδόντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-428-augment-t18",
+  "sectionId": "sm-428-augment",
+  "questions": [
+   {
+    "prompt": "The guards held the citadel against the enemy.",
+    "answer": "οἱ φύλακες τὴν ἀκρόπολιν πρὸς τοὺς πολεμίους εἶχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "τὴν",
+     "ἀκρόπολιν",
+     "πρὸς",
+     "τοὺς",
+     "πολεμίους",
+     "εἶχον"
+    ]
+   },
+   {
+    "prompt": "The ambassadors were asking the great king for peace.",
+    "answer": "οἱ πρέσβεις τὸν μέγαν βασιλέα εἰρήνην ᾔτουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "τὸν",
+     "μέγαν",
+     "βασιλέα",
+     "εἰρήνην",
+     "ᾔτουν"
+    ]
+   },
+   {
+    "prompt": "The citizens heard the herald's voice in the assembly.",
+    "answer": "οἱ πολῖται τῆς τοῦ κήρυκος φωνῆς ἐν τῇ ἐκκλησίᾳ ἤκουσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τῆς",
+     "τοῦ",
+     "κήρυκος",
+     "φωνῆς",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἤκουσαν"
+    ]
+   },
+   {
+    "prompt": "The judge was questioning the witnesses about the crime.",
+    "answer": "ὁ δικαστὴς τοὺς μάρτυρας περὶ τοῦ ἀδικήματος ἠρώτα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστὴς",
+     "τοὺς",
+     "μάρτυρας",
+     "περὶ",
+     "τοῦ",
+     "ἀδικήματος",
+     "ἠρώτα"
+    ]
+   }
+  ]
  }
 ]

@@ -428,5 +428,845 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-423-accent-t7",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Say the truth, herald, and do not hide the danger from us.",
+    "answer": "Εἰπὲ τὴν ἀλήθειαν, ὦ κῆρυξ, καὶ μὴ κρύπτε ἡμᾶς τὸν κίνδυνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰπέ",
+     "τήν",
+     "ἀλήθειαν",
+     "ὦ",
+     "κῆρυξ",
+     "καί",
+     "μή",
+     "κρύπτε",
+     "ἡμᾶς",
+     "τόν",
+     "κίνδυνον"
+    ]
+   },
+   {
+    "prompt": "Come quickly into the tent, friend, before the general departs.",
+    "answer": "Ἐλθὲ ταχέως εἰς τὴν σκηνήν, ὦ φίλε, πρὶν τὸν στρατηγὸν ἀπελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐλθέ",
+     "ταχέως",
+     "εἰς",
+     "τήν",
+     "σκηνήν",
+     "ὦ",
+     "φίλε",
+     "πρίν",
+     "τόν",
+     "στρατηγόν",
+     "ἀπελθεῖν"
+    ]
+   },
+   {
+    "prompt": "Behold the beauty of the harbor, stranger, and marvel at the ships.",
+    "answer": "Ἰδὲ τὸ κάλλος τοῦ λιμένος, ὦ ξένε, καὶ θαύμαζε τὰς ναῦς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἰδέ",
+     "τό",
+     "κάλλος",
+     "τοῦ",
+     "λιμένος",
+     "ὦ",
+     "ξένε",
+     "καί",
+     "θαύμαζε",
+     "τάς",
+     "ναῦς"
+    ]
+   },
+   {
+    "prompt": "Take the letter, slave, and find the road to the city.",
+    "answer": "Λαβὲ τὴν ἐπιστολήν, ὦ δοῦλε, καὶ εὑρὲ τὴν ὁδὸν εἰς τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Λαβέ",
+     "τήν",
+     "ἐπιστολήν",
+     "ὦ",
+     "δοῦλε",
+     "καί",
+     "εὑρέ",
+     "ὁδόν",
+     "εἰς",
+     "πόλιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t8",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Put the cloak around your shoulders, old man, for the wind is cold.",
+    "answer": "Περίθες τοῖς ὤμοις τὸ ἱμάτιον, ὦ γέρον· ψυχρὸς γάρ ἐστιν ὁ ἄνεμος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Περίθες",
+     "τοῖς",
+     "ὤμοις",
+     "τό",
+     "ἱμάτιον",
+     "ὦ",
+     "γέρον",
+     "ψυχρός",
+     "γάρ",
+     "ἐστιν",
+     "ὁ",
+     "ἄνεμος"
+    ]
+   },
+   {
+    "prompt": "Set the helmet upon your head, soldier, before you enter the battle.",
+    "answer": "Ἐπίθες τῇ κεφαλῇ τὸ κράνος, ὦ στρατιῶτα, πρὶν εἰς τὴν μάχην εἰσελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐπίθες",
+     "τῇ",
+     "κεφαλῇ",
+     "τό",
+     "κράνος",
+     "ὦ",
+     "στρατιῶτα",
+     "πρίν",
+     "εἰς",
+     "τήν",
+     "μάχην",
+     "εἰσελθεῖν"
+    ]
+   },
+   {
+    "prompt": "Hold on, stranger, and recount in full everything you saw in the camp.",
+    "answer": "Ἐπίσχες, ὦ ξένε, καὶ κάτειπε πάντα ἃ ἐν τῷ στρατοπέδῳ εἶδες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐπίσχες",
+     "ὦ",
+     "ξένε",
+     "καί",
+     "κάτειπε",
+     "πάντα",
+     "ἅ",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "εἶδες"
+    ]
+   },
+   {
+    "prompt": "Depart from the gates, guard, and take the young men along.",
+    "answer": "Ἄπελθε ἀπὸ τῶν πυλῶν, ὦ φύλαξ, καὶ παράλαβε τοὺς νεανίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἄπελθε",
+     "ἀπό",
+     "τῶν",
+     "πυλῶν",
+     "ὦ",
+     "φύλαξ",
+     "καί",
+     "παράλαβε",
+     "τούς",
+     "νεανίας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t9",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Take hold of my hand, child, and become brave.",
+    "answer": "Λαβοῦ τῆς χειρός μου, ὦ παῖ, καὶ γενοῦ ἀνδρεῖος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Λαβοῦ",
+     "τῆς",
+     "χειρός",
+     "μου",
+     "ὦ",
+     "παῖ",
+     "καί",
+     "γενοῦ",
+     "ἀνδρεῖος"
+    ]
+   },
+   {
+    "prompt": "Do not betray the city to the enemy, citizen.",
+    "answer": "Μὴ προδοῦ τὴν πόλιν, ὦ πολῖτα, τοῖς πολεμίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μή",
+     "προδοῦ",
+     "τήν",
+     "πόλιν",
+     "ὦ",
+     "πολῖτα",
+     "τοῖς",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "Sell the oxen, farmer, and set down the heavy plough.",
+    "answer": "Ἀπόδου τοὺς βοῦς, ὦ γεωργέ, καὶ κατάθου τὸ βαρὺ ἄροτρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀπόδου",
+     "τούς",
+     "βοῦς",
+     "ὦ",
+     "γεωργέ",
+     "καί",
+     "κατάθου",
+     "τό",
+     "βαρύ",
+     "ἄροτρον"
+    ]
+   },
+   {
+    "prompt": "Obey the laws, young man, and choose the just life.",
+    "answer": "Πιθοῦ τοῖς νόμοις, ὦ νεανία, καὶ ἑλοῦ τὸν δίκαιον βίον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πιθοῦ",
+     "τοῖς",
+     "νόμοις",
+     "ὦ",
+     "νεανία",
+     "καί",
+     "ἑλοῦ",
+     "τόν",
+     "δίκαιον",
+     "βίον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t10",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "The general says that the soldiers are brave.",
+    "answer": "Ὁ στρατηγὸς τοὺς στρατιώτας ἀνδρείους εἶναί φησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγός",
+     "τούς",
+     "στρατιώτας",
+     "ἀνδρείους",
+     "εἶναι",
+     "φησίν"
+    ]
+   },
+   {
+    "prompt": "You say that the gods are always present with the just.",
+    "answer": "Φῂς τοὺς θεοὺς ἀεὶ τοῖς δικαίοις παρεῖναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Φῄς",
+     "τούς",
+     "θεούς",
+     "ἀεί",
+     "τοῖς",
+     "δικαίοις",
+     "παρεῖναι"
+    ]
+   },
+   {
+    "prompt": "We are present in the marketplace, but the archers are absent.",
+    "answer": "Ἡμεῖς μὲν πάρεσμεν ἐν τῇ ἀγορᾷ, οἱ δὲ τοξόται ἄπεισιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡμεῖς",
+     "μέν",
+     "πάρεσμεν",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "οἱ",
+     "δέ",
+     "τοξόται",
+     "ἄπεισιν"
+    ]
+   },
+   {
+    "prompt": "The philosophers say that the soul is immortal.",
+    "answer": "Οἱ φιλόσοφοι τὴν ψυχὴν ἀθάνατον εἶναί φασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "φιλόσοφοι",
+     "τήν",
+     "ψυχήν",
+     "ἀθάνατον",
+     "εἶναι",
+     "φασίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t11",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "The general wishes to free the captives before nightfall.",
+    "answer": "Ὁ στρατηγὸς βούλεται τοὺς αἰχμαλώτους λῦσαι πρὸ τῆς νυκτός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγός",
+     "βούλεται",
+     "τούς",
+     "αἰχμαλώτους",
+     "λῦσαι",
+     "πρό",
+     "τῆς",
+     "νυκτός"
+    ]
+   },
+   {
+    "prompt": "It is noble to stand firm in the battle and not to flee.",
+    "answer": "Καλόν ἐστιν ἐν τῇ μάχῃ στῆναι καὶ μὴ φεύγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Καλόν",
+     "ἐστιν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "στῆναι",
+     "καί",
+     "μή",
+     "φεύγειν"
+    ]
+   },
+   {
+    "prompt": "The soldiers seem to have loosed the ships from the harbor.",
+    "answer": "Οἱ στρατιῶται δοκοῦσι τὰς ναῦς ἐκ τοῦ λιμένος λελυκέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "δοκοῦσι",
+     "τάς",
+     "ναῦς",
+     "ἐκ",
+     "τοῦ",
+     "λιμένος",
+     "λελυκέναι"
+    ]
+   },
+   {
+    "prompt": "The old men wished to take hold of the sacred altar.",
+    "answer": "Οἱ γέροντες ἐβούλοντο τοῦ ἱεροῦ βωμοῦ λαβέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "γέροντες",
+     "ἐβούλοντο",
+     "τοῦ",
+     "ἱεροῦ",
+     "βωμοῦ",
+     "λαβέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t12",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Throw away your fear, young men, and go into the battle.",
+    "answer": "Ἀποβάλλετε τὸν φόβον, ὦ νεανίαι, καὶ εἰς τὴν μάχην ἴτε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀποβάλλετε",
+     "τόν",
+     "φόβον",
+     "ὦ",
+     "νεανίαι",
+     "καί",
+     "εἰς",
+     "τήν",
+     "μάχην",
+     "ἴτε"
+    ]
+   },
+   {
+    "prompt": "The guards were leading the prisoners out of the city.",
+    "answer": "Οἱ φύλακες τοὺς δεσμώτας ἐκ τῆς πόλεως ἐξῆγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "φύλακες",
+     "τούς",
+     "δεσμώτας",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐξῆγον"
+    ]
+   },
+   {
+    "prompt": "The messenger was absent when the citizens gathered together.",
+    "answer": "Ὁ ἄγγελος ἀπῆν ὅτε οἱ πολῖται συνῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ἄγγελος",
+     "ἀπῆν",
+     "ὅτε",
+     "οἱ",
+     "πολῖται",
+     "συνῆλθον"
+    ]
+   },
+   {
+    "prompt": "Release the slaves, master, and lead them out of the house.",
+    "answer": "Ἀπόλυσον τοὺς δούλους, ὦ δέσποτα, καὶ ἔξαγε αὐτοὺς ἐκ τῆς οἰκίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀπόλυσον",
+     "τούς",
+     "δούλους",
+     "ὦ",
+     "δέσποτα",
+     "καί",
+     "ἔξαγε",
+     "αὐτούς",
+     "ἐκ",
+     "τῆς",
+     "οἰκίας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t13",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Tell the truth, boy, and do not conceal your own fault.",
+    "answer": "εἰπέ, ὦ παῖ, τὴν ἀλήθειαν, καὶ μὴ κρύπτε τὴν σεαυτοῦ ἁμαρτίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰπέ",
+     "ὦ",
+     "παῖ",
+     "τήν",
+     "ἀλήθειαν",
+     "καί",
+     "μή",
+     "κρύπτε",
+     "σεαυτοῦ",
+     "ἁμαρτίαν"
+    ]
+   },
+   {
+    "prompt": "Come into our house, stranger, and find rest from your toils.",
+    "answer": "ἐλθέ, ὦ ξένε, εἰς τὴν ἡμετέραν οἰκίαν, καὶ ἀνάπαυλαν τῶν πόνων εὑρέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλθέ",
+     "ὦ",
+     "ξένε",
+     "εἰς",
+     "τήν",
+     "ἡμετέραν",
+     "οἰκίαν",
+     "καί",
+     "ἀνάπαυλαν",
+     "τῶν",
+     "πόνων",
+     "εὑρέ"
+    ]
+   },
+   {
+    "prompt": "Look at the multitude of the enemy, young man, and do not be afraid.",
+    "answer": "ἰδέ, ὦ νεανία, τὸ τῶν πολεμίων πλῆθος, καὶ μὴ φοβοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἰδέ",
+     "ὦ",
+     "νεανία",
+     "τό",
+     "τῶν",
+     "πολεμίων",
+     "πλῆθος",
+     "καί",
+     "μή",
+     "φοβοῦ"
+    ]
+   },
+   {
+    "prompt": "Take the sword, soldier, and fight bravely.",
+    "answer": "λαβέ, ὦ στρατιῶτα, τὸ φάσγανον, καὶ ἀνδρείως μάχου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λαβέ",
+     "ὦ",
+     "στρατιῶτα",
+     "τό",
+     "φάσγανον",
+     "καί",
+     "ἀνδρείως",
+     "μάχου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t14",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Set the wreath upon the altar, priest, before you pray.",
+    "answer": "ἐπίθες τὸν στέφανον ἐπὶ τὸν βωμόν, ὦ ἱερεῦ, πρὶν εὔχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπίθες",
+     "τόν",
+     "στέφανον",
+     "ἐπί",
+     "βωμόν",
+     "ὦ",
+     "ἱερεῦ",
+     "πρίν",
+     "εὔχεσθαι"
+    ]
+   },
+   {
+    "prompt": "Hold on a little, young man, and wait for the general.",
+    "answer": "ἐπίσχες ὀλίγον, ὦ νεανία, καὶ τὸν στρατηγὸν ἀνάμεινον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπίσχες",
+     "ὀλίγον",
+     "ὦ",
+     "νεανία",
+     "καί",
+     "τόν",
+     "στρατηγόν",
+     "ἀνάμεινον"
+    ]
+   },
+   {
+    "prompt": "Hand over the letter to the king, messenger.",
+    "answer": "ἀπόδος τὴν ἐπιστολὴν τῷ βασιλεῖ, ὦ ἄγγελε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπόδος",
+     "τήν",
+     "ἐπιστολήν",
+     "τῷ",
+     "βασιλεῖ",
+     "ὦ",
+     "ἄγγελε"
+    ]
+   },
+   {
+    "prompt": "Go away out of the camp, herald, and announce these things to the citizens.",
+    "answer": "ἄπελθε ἐκ τοῦ στρατοπέδου, ὦ κῆρυξ, καὶ ταῦτα τοῖς πολίταις κάτειπε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄπελθε",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ὦ",
+     "κῆρυξ",
+     "καί",
+     "ταῦτα",
+     "τοῖς",
+     "πολίταις",
+     "κάτειπε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t15",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Lay hold of virtue, young man, and become good.",
+    "answer": "λαβοῦ τῆς ἀρετῆς, ὦ νεανία, καὶ ἀγαθὸς γενοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λαβοῦ",
+     "τῆς",
+     "ἀρετῆς",
+     "ὦ",
+     "νεανία",
+     "καί",
+     "ἀγαθός",
+     "γενοῦ"
+    ]
+   },
+   {
+    "prompt": "Choose the noblest death rather than a shameful life.",
+    "answer": "ἑλοῦ τὸν κάλλιστον θάνατον μᾶλλον ἢ βίον αἰσχρόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑλοῦ",
+     "τόν",
+     "κάλλιστον",
+     "θάνατον",
+     "μᾶλλον",
+     "ἤ",
+     "βίον",
+     "αἰσχρόν"
+    ]
+   },
+   {
+    "prompt": "Put the offerings into the temple, priestess, and pray to the gods.",
+    "answer": "ἐνθοῦ τὰ ἱερὰ εἰς τὸν ναόν, ὦ ἱέρεια, καὶ τοῖς θεοῖς εὖξαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνθοῦ",
+     "τά",
+     "ἱερά",
+     "εἰς",
+     "τόν",
+     "ναόν",
+     "ὦ",
+     "ἱέρεια",
+     "καί",
+     "τοῖς",
+     "θεοῖς",
+     "εὖξαι"
+    ]
+   },
+   {
+    "prompt": "Sell the house, friend, and put down your wealth in a safe place.",
+    "answer": "ἀπόδου τὴν οἰκίαν, ὦ φίλε, καὶ τὸν πλοῦτον ἐν ἀσφαλεῖ κατάθου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπόδου",
+     "τήν",
+     "οἰκίαν",
+     "ὦ",
+     "φίλε",
+     "καί",
+     "τόν",
+     "πλοῦτον",
+     "ἐν",
+     "ἀσφαλεῖ",
+     "κατάθου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t16",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "The general ordered the soldiers to stand and to wait for the allies.",
+    "answer": "ὁ στρατηγὸς ἐκέλευσε τοὺς στρατιώτας στῆναι καὶ τοὺς συμμάχους ἀναμεῖναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἐκέλευσε",
+     "τούς",
+     "στρατιώτας",
+     "στῆναι",
+     "καί",
+     "συμμάχους",
+     "ἀναμεῖναι"
+    ]
+   },
+   {
+    "prompt": "The captives were hoping to be set free by the general.",
+    "answer": "οἱ αἰχμάλωτοι ἤλπιζον ὑπὸ τοῦ στρατηγοῦ λυθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ἤλπιζον",
+     "ὑπό",
+     "τοῦ",
+     "στρατηγοῦ",
+     "λυθῆναι"
+    ]
+   },
+   {
+    "prompt": "It is difficult to educate the young well.",
+    "answer": "χαλεπόν ἐστι τοὺς νέους καλῶς παιδεῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστι",
+     "τούς",
+     "νέους",
+     "καλῶς",
+     "παιδεῦσαι"
+    ]
+   },
+   {
+    "prompt": "The exiles kept saying that their comrades had been left behind.",
+    "answer": "οἱ φυγάδες ἔλεγον τοὺς ἑταίρους καταλελεῖφθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "ἔλεγον",
+     "τούς",
+     "ἑταίρους",
+     "καταλελεῖφθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t17",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "When the general was absent, the soldiers were afraid.",
+    "answer": "ἐπεὶ ὁ στρατηγὸς ἀπῆν, οἱ στρατιῶται ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "ὁ",
+     "στρατηγός",
+     "ἀπῆν",
+     "οἱ",
+     "στρατιῶται",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "The enemy entered the city by night and freed the prisoners.",
+    "answer": "οἱ πολέμιοι νυκτὸς εἰς τὴν πόλιν εἰσῆλθον καὶ τοὺς δεσμώτας ἀπέλυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "νυκτός",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "εἰσῆλθον",
+     "καί",
+     "τούς",
+     "δεσμώτας",
+     "ἀπέλυσαν"
+    ]
+   },
+   {
+    "prompt": "The messenger arrived at the camp before the battle.",
+    "answer": "ὁ ἄγγελος πρὸ τῆς μάχης εἰς τὸ στρατόπεδον ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "πρό",
+     "τῆς",
+     "μάχης",
+     "εἰς",
+     "τό",
+     "στρατόπεδον",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "They were releasing the captives and leading them out of the country.",
+    "answer": "τοὺς αἰχμαλώτους ἀπέλυον καὶ ἐκ τῆς χώρας ἐξῆγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "αἰχμαλώτους",
+     "ἀπέλυον",
+     "καί",
+     "ἐκ",
+     "τῆς",
+     "χώρας",
+     "ἐξῆγον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t18",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Let us fight bravely, so that our fatherland may be set free.",
+    "answer": "μαχώμεθα ἀνδρείως ἵνα ἡ πατρὶς ἡμῶν λυθῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μαχώμεθα",
+     "ἀνδρείως",
+     "ἵνα",
+     "ἡ",
+     "πατρίς",
+     "ἡμῶν",
+     "λυθῇ"
+    ]
+   },
+   {
+    "prompt": "The citizens honor those who die on behalf of freedom.",
+    "answer": "οἱ πολῖται τιμῶσι τοὺς ὑπὲρ τῆς ἐλευθερίας ἀποθνῄσκοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τιμῶσι",
+     "τούς",
+     "ὑπέρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἀποθνῄσκοντας"
+    ]
+   },
+   {
+    "prompt": "The soldiers will show themselves brave in the battle.",
+    "answer": "οἱ στρατιῶται ἐν τῇ μάχῃ ἀνδρεῖοι φανοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀνδρεῖοι",
+     "φανοῦνται"
+    ]
+   },
+   {
+    "prompt": "The wise understand that all men are mortal.",
+    "answer": "οἱ σοφοὶ ἐπίστανται πάντας ἀνθρώπους θνητοὺς ὄντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοί",
+     "ἐπίστανται",
+     "πάντας",
+     "ἀνθρώπους",
+     "θνητούς",
+     "ὄντας"
+    ]
+   }
+  ]
  }
 ]

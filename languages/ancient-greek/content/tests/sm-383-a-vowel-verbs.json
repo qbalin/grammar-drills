@@ -391,5 +391,820 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t7",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "The good doctor heals those who were wounded in the battle.",
+    "answer": "ὁ ἀγαθὸς ἰατρὸς τοὺς ἐν τῇ μάχῃ τρωθέντας θεραπεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀγαθὸς",
+     "ἰατρὸς",
+     "τοὺς",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "τρωθέντας",
+     "θεραπεύει"
+    ]
+   },
+   {
+    "prompt": "The exiles kept beseeching the king to spare the city.",
+    "answer": "οἱ φυγάδες τὸν βασιλέα ἱκέτευον φείσασθαι τῆς πόλεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "τὸν",
+     "βασιλέα",
+     "ἱκέτευον",
+     "φείσασθαι",
+     "τῆς",
+     "πόλεως"
+    ]
+   },
+   {
+    "prompt": "Tomorrow the citizens will deliberate about the war in the assembly.",
+    "answer": "οἱ πολῖται αὔριον ἐν τῇ ἐκκλησίᾳ περὶ τοῦ πολέμου βουλεύσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "αὔριον",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "βουλεύσουσιν"
+    ]
+   },
+   {
+    "prompt": "The young men dance for the god at the festival.",
+    "answer": "οἱ νεανίαι ἐν τῇ ἑορτῇ τῷ θεῷ χορεύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "ἐν",
+     "τῇ",
+     "ἑορτῇ",
+     "τῷ",
+     "θεῷ",
+     "χορεύουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t8",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "The general encamped the army near the sea.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα πρὸς τῇ θαλάττῃ ἐστρατοπέδευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "πρὸς",
+     "τῇ",
+     "θαλάττῃ",
+     "ἐστρατοπέδευσεν"
+    ]
+   },
+   {
+    "prompt": "The priest sacrificed a goat before the god gave an oracle.",
+    "answer": "ὁ ἱερεὺς αἶγα ἔθυσε πρὶν τὸν θεὸν χρῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "αἶγα",
+     "ἔθυσε",
+     "πρὶν",
+     "τὸν",
+     "θεὸν",
+     "χρῆσαι"
+    ]
+   },
+   {
+    "prompt": "Having conquered the enemy, the general freed the captives.",
+    "answer": "τοὺς πολεμίους νικήσας ὁ στρατηγὸς τοὺς αἰχμαλώτους ἔλυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "πολεμίους",
+     "νικήσας",
+     "ὁ",
+     "στρατηγὸς",
+     "αἰχμαλώτους",
+     "ἔλυσεν"
+    ]
+   },
+   {
+    "prompt": "The Athenians campaigned against the islanders.",
+    "answer": "οἱ Ἀθηναῖοι ἐπὶ τοὺς νησιώτας ἐστράτευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ἐπὶ",
+     "τοὺς",
+     "νησιώτας",
+     "ἐστράτευσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t9",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "The priests sacrifice a bull so that the god may stop the plague.",
+    "answer": "οἱ ἱερεῖς ταῦρον θύουσιν ἵνα ὁ θεὸς τὴν νόσον παύσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "ταῦρον",
+     "θύουσιν",
+     "ἵνα",
+     "ὁ",
+     "θεὸς",
+     "τὴν",
+     "νόσον",
+     "παύσῃ"
+    ]
+   },
+   {
+    "prompt": "If the citizens trust the demagogue, they will suffer terrible things.",
+    "answer": "ἐὰν οἱ πολῖται τῷ δημαγωγῷ πιστεύσωσι, δεινὰ πείσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "πολῖται",
+     "τῷ",
+     "δημαγωγῷ",
+     "πιστεύσωσι",
+     "δεινὰ",
+     "πείσονται"
+    ]
+   },
+   {
+    "prompt": "The general was afraid that the enemy might loose the bridge.",
+    "answer": "ὁ στρατηγὸς ἐφοβεῖτο μὴ οἱ πολέμιοι τὴν γέφυραν λύσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐφοβεῖτο",
+     "μὴ",
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "γέφυραν",
+     "λύσειαν"
+    ]
+   },
+   {
+    "prompt": "Whoever serves the gods well is dear to them.",
+    "answer": "ὅστις ἂν τοῖς θεοῖς καλῶς δουλεύῃ, φίλος αὐτοῖς ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἂν",
+     "τοῖς",
+     "θεοῖς",
+     "καλῶς",
+     "δουλεύῃ",
+     "φίλος",
+     "αὐτοῖς",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t10",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "Cease from war, and educate your children well.",
+    "answer": "παύσασθε τοῦ πολέμου καὶ παιδεύετε καλῶς τοὺς παῖδας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παύσασθε",
+     "τοῦ",
+     "πολέμου",
+     "καὶ",
+     "παιδεύετε",
+     "καλῶς",
+     "τοὺς",
+     "παῖδας"
+    ]
+   },
+   {
+    "prompt": "Sacrifice to the gods before you march out, soldiers.",
+    "answer": "θύσατε τοῖς θεοῖς πρὶν ἐξιέναι, ὦ στρατιῶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θύσατε",
+     "τοῖς",
+     "θεοῖς",
+     "πρὶν",
+     "ἐξιέναι",
+     "ὦ",
+     "στρατιῶται"
+    ]
+   },
+   {
+    "prompt": "The general ordered the soldiers to guard the camp.",
+    "answer": "ὁ στρατηγὸς ἐκέλευσε τοὺς στρατιώτας φυλάττειν τὸ στρατόπεδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκέλευσε",
+     "τοὺς",
+     "στρατιώτας",
+     "φυλάττειν",
+     "τὸ",
+     "στρατόπεδον"
+    ]
+   },
+   {
+    "prompt": "It is noble to free one's fatherland from slavery.",
+    "answer": "καλόν ἐστι τὴν πατρίδα ἐκ δουλείας λύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλόν",
+     "ἐστι",
+     "τὴν",
+     "πατρίδα",
+     "ἐκ",
+     "δουλείας",
+     "λύειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t11",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "The general ransomed his own son from the enemy.",
+    "answer": "ὁ στρατηγὸς τὸν ἑαυτοῦ υἱὸν παρὰ τῶν πολεμίων ἐλύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὸν",
+     "ἑαυτοῦ",
+     "υἱὸν",
+     "παρὰ",
+     "τῶν",
+     "πολεμίων",
+     "ἐλύσατο"
+    ]
+   },
+   {
+    "prompt": "The best young men were educated by Socrates.",
+    "answer": "οἱ ἄριστοι νεανίαι ὑπὸ τοῦ Σωκράτους ἐπαιδεύθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄριστοι",
+     "νεανίαι",
+     "ὑπὸ",
+     "τοῦ",
+     "Σωκράτους",
+     "ἐπαιδεύθησαν"
+    ]
+   },
+   {
+    "prompt": "The city was freed from the tyrant by the exiles.",
+    "answer": "ἡ πόλις ὑπὸ τῶν φυγάδων ἀπὸ τοῦ τυράννου ἐλύθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ὑπὸ",
+     "τῶν",
+     "φυγάδων",
+     "ἀπὸ",
+     "τοῦ",
+     "τυράννου",
+     "ἐλύθη"
+    ]
+   },
+   {
+    "prompt": "The generals will deliberate about the retreat.",
+    "answer": "οἱ στρατηγοὶ περὶ τῆς ἀναχωρήσεως βουλεύσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατηγοὶ",
+     "περὶ",
+     "τῆς",
+     "ἀναχωρήσεως",
+     "βουλεύσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t12",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "This teacher has educated the sons of the noblest citizens.",
+    "answer": "οὗτος ὁ διδάσκαλος τοὺς τῶν ἀρίστων πολιτῶν υἱοὺς πεπαίδευκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "διδάσκαλος",
+     "τοὺς",
+     "τῶν",
+     "ἀρίστων",
+     "πολιτῶν",
+     "υἱοὺς",
+     "πεπαίδευκεν"
+    ]
+   },
+   {
+    "prompt": "The enemy had already encamped when we arrived.",
+    "answer": "οἱ πολέμιοι ἤδη ἐστρατοπεδεύκεσαν ἐπεὶ ἀφικόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ἤδη",
+     "ἐστρατοπεδεύκεσαν",
+     "ἐπεὶ",
+     "ἀφικόμεθα"
+    ]
+   },
+   {
+    "prompt": "After many battles the ambassadors have stopped the war.",
+    "answer": "οἱ πρέσβεις μετὰ πολλὰς μάχας τὸν πόλεμον πεπαύκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "μετὰ",
+     "πολλὰς",
+     "μάχας",
+     "τὸν",
+     "πόλεμον",
+     "πεπαύκασιν"
+    ]
+   },
+   {
+    "prompt": "For many years the citizens have trusted the general.",
+    "answer": "οἱ πολῖται τῷ στρατηγῷ πολλὰ ἔτη πεπιστεύκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τῷ",
+     "στρατηγῷ",
+     "πολλὰ",
+     "ἔτη",
+     "πεπιστεύκασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t13",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "The good citizens trust the laws which the lawgiver established.",
+    "answer": "οἱ ἀγαθοὶ πολῖται πιστεύουσι τοῖς νόμοις οὓς ὁ νομοθέτης ἔθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀγαθοί",
+     "πολῖται",
+     "πιστεύουσι",
+     "τοῖς",
+     "νόμοις",
+     "οὕς",
+     "ὁ",
+     "νομοθέτης",
+     "ἔθηκεν"
+    ]
+   },
+   {
+    "prompt": "The priest was sacrificing to the gods, but the soldiers were fleeing.",
+    "answer": "ὁ μὲν ἱερεὺς τοῖς θεοῖς ἔθυεν, οἱ δὲ στρατιῶται ἔφευγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μέν",
+     "ἱερεύς",
+     "τοῖς",
+     "θεοῖς",
+     "ἔθυεν",
+     "οἱ",
+     "δέ",
+     "στρατιῶται",
+     "ἔφευγον"
+    ]
+   },
+   {
+    "prompt": "The general himself deliberates with himself about the present danger.",
+    "answer": "ὁ στρατηγὸς αὐτὸς πρὸς ἑαυτὸν περὶ τοῦ παρόντος κινδύνου βουλεύεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "αὐτός",
+     "πρός",
+     "ἑαυτόν",
+     "περί",
+     "τοῦ",
+     "παρόντος",
+     "κινδύνου",
+     "βουλεύεται"
+    ]
+   },
+   {
+    "prompt": "You serve the tyrant, but we obey the laws.",
+    "answer": "σὺ μὲν τῷ τυράννῳ δουλεύεις, ἡμεῖς δὲ τοῖς νόμοις πειθόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "μέν",
+     "τῷ",
+     "τυράννῳ",
+     "δουλεύεις",
+     "ἡμεῖς",
+     "δέ",
+     "τοῖς",
+     "νόμοις",
+     "πειθόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t14",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "The lawgiver will free the city from these present evils.",
+    "answer": "ὁ νομοθέτης τὴν πόλιν ἀπὸ τῶν παρόντων κακῶν λύσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νομοθέτης",
+     "τήν",
+     "πόλιν",
+     "ἀπό",
+     "τῶν",
+     "παρόντων",
+     "κακῶν",
+     "λύσει"
+    ]
+   },
+   {
+    "prompt": "We shall stop the war and educate the young men in virtue.",
+    "answer": "παύσομεν τὸν πόλεμον καὶ τοὺς νεανίας εἰς ἀρετὴν παιδεύσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παύσομεν",
+     "τόν",
+     "πόλεμον",
+     "καί",
+     "τούς",
+     "νεανίας",
+     "εἰς",
+     "ἀρετήν",
+     "παιδεύσομεν"
+    ]
+   },
+   {
+    "prompt": "The citizens will ransom their captured children with gold.",
+    "answer": "οἱ πολῖται τοὺς ἑαλωκότας παῖδας χρυσίῳ λύσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τούς",
+     "ἑαλωκότας",
+     "παῖδας",
+     "χρυσίῳ",
+     "λύσονται"
+    ]
+   },
+   {
+    "prompt": "The enemy will encamp beside the river before night.",
+    "answer": "οἱ πολέμιοι πρὸ τῆς νυκτὸς παρὰ τῷ ποταμῷ στρατοπεδεύσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "πρό",
+     "τῆς",
+     "νυκτός",
+     "παρά",
+     "τῷ",
+     "ποταμῷ",
+     "στρατοπεδεύσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t15",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "The lawgiver, having freed the slaves, gave them citizenship.",
+    "answer": "ὁ νομοθέτης τοὺς δούλους λύσας πολιτείαν αὐτοῖς ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νομοθέτης",
+     "τούς",
+     "δούλους",
+     "λύσας",
+     "πολιτείαν",
+     "αὐτοῖς",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "The god stopped the plague, and the citizens sacrificed a bull.",
+    "answer": "ὁ θεὸς τὴν νόσον ἔπαυσεν, οἱ δὲ πολῖται ταῦρον ἔθυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεός",
+     "τήν",
+     "νόσον",
+     "ἔπαυσεν",
+     "οἱ",
+     "δέ",
+     "πολῖται",
+     "ταῦρον",
+     "ἔθυσαν"
+    ]
+   },
+   {
+    "prompt": "The prisoners ransomed themselves and went off homeward.",
+    "answer": "οἱ αἰχμάλωτοι ἑαυτοὺς ἐλύσαντο καὶ οἴκαδε ἀπῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ἑαυτούς",
+     "ἐλύσαντο",
+     "καί",
+     "οἴκαδε",
+     "ἀπῆλθον"
+    ]
+   },
+   {
+    "prompt": "The general encamped beside the sea and ordered the guards to keep watch.",
+    "answer": "ὁ στρατηγὸς παρὰ τῇ θαλάττῃ ἐστρατοπέδευσε καὶ τοὺς φύλακας ἐκέλευσε φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "παρά",
+     "τῇ",
+     "θαλάττῃ",
+     "ἐστρατοπέδευσε",
+     "καί",
+     "τούς",
+     "φύλακας",
+     "ἐκέλευσε",
+     "φυλάττειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t16",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "The teacher has educated the sons of the citizens well.",
+    "answer": "ὁ διδάσκαλος τοὺς τῶν πολιτῶν υἱοὺς καλῶς πεπαίδευκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "τούς",
+     "τῶν",
+     "πολιτῶν",
+     "υἱούς",
+     "καλῶς",
+     "πεπαίδευκεν"
+    ]
+   },
+   {
+    "prompt": "The enemy had already stopped the battle when the ambassadors arrived.",
+    "answer": "οἱ πολέμιοι ἤδη τὴν μάχην ἐπεπαύκεσαν ἐπεὶ πρέσβεις ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ἤδη",
+     "τήν",
+     "μάχην",
+     "ἐπεπαύκεσαν",
+     "ἐπεί",
+     "πρέσβεις",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "The prisoners who were captured in the war have now been freed.",
+    "answer": "οἱ ἐν τῷ πολέμῳ ἁλόντες αἰχμάλωτοι νῦν λέλυνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "ἁλόντες",
+     "αἰχμάλωτοι",
+     "νῦν",
+     "λέλυνται"
+    ]
+   },
+   {
+    "prompt": "We have sacrificed to all the gods, but the god has not stopped the war.",
+    "answer": "πᾶσι τοῖς θεοῖς τεθύκαμεν, ὁ δὲ θεὸς τὸν πόλεμον οὐ πέπαυκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶσι",
+     "τοῖς",
+     "θεοῖς",
+     "τεθύκαμεν",
+     "ὁ",
+     "δέ",
+     "θεός",
+     "τόν",
+     "πόλεμον",
+     "οὐ",
+     "πέπαυκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t17",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "Let us free the city, that the citizens may no longer serve the tyrant.",
+    "answer": "λύσωμεν τὴν πόλιν, ἵνα οἱ πολῖται μηκέτι τῷ τυράννῳ δουλεύωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λύσωμεν",
+     "τήν",
+     "πόλιν",
+     "ἵνα",
+     "οἱ",
+     "πολῖται",
+     "μηκέτι",
+     "τῷ",
+     "τυράννῳ",
+     "δουλεύωσιν"
+    ]
+   },
+   {
+    "prompt": "The general sacrificed, that the god might stop the plague.",
+    "answer": "ὁ στρατηγὸς ἔθυσεν, ἵνα ὁ θεὸς τὴν νόσον παύσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἔθυσεν",
+     "ἵνα",
+     "θεός",
+     "τήν",
+     "νόσον",
+     "παύσειεν"
+    ]
+   },
+   {
+    "prompt": "If we should trust the enemy, we would quickly be destroyed.",
+    "answer": "εἰ τοῖς πολεμίοις πιστεύοιμεν, ταχέως ἂν διαφθαρείημεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοῖς",
+     "πολεμίοις",
+     "πιστεύοιμεν",
+     "ταχέως",
+     "ἄν",
+     "διαφθαρείημεν"
+    ]
+   },
+   {
+    "prompt": "Would that the citizens might educate their children toward virtue!",
+    "answer": "εἴθε οἱ πολῖται τοὺς παῖδας πρὸς ἀρετὴν παιδεύοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "πολῖται",
+     "τούς",
+     "παῖδας",
+     "πρός",
+     "ἀρετήν",
+     "παιδεύοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-383-a-vowel-verbs-t18",
+  "sectionId": "sm-383-a-vowel-verbs",
+  "questions": [
+   {
+    "prompt": "Stop the war, citizens, and free the prisoners!",
+    "answer": "παύσατε τὸν πόλεμον, ὦ πολῖται, καὶ λύσατε τοὺς αἰχμαλώτους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παύσατε",
+     "τόν",
+     "πόλεμον",
+     "ὦ",
+     "πολῖται",
+     "καί",
+     "λύσατε",
+     "τούς",
+     "αἰχμαλώτους"
+    ]
+   },
+   {
+    "prompt": "The young men are being educated by the wisest teachers.",
+    "answer": "οἱ νεανίαι ὑπὸ τῶν σοφωτάτων διδασκάλων παιδεύονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "ὑπό",
+     "τῶν",
+     "σοφωτάτων",
+     "διδασκάλων",
+     "παιδεύονται"
+    ]
+   },
+   {
+    "prompt": "The city was freed from the tyrant by the citizens themselves.",
+    "answer": "ἡ πόλις ὑπὸ τῶν πολιτῶν αὐτῶν ἀπὸ τοῦ τυράννου ἐλύθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ὑπό",
+     "τῶν",
+     "πολιτῶν",
+     "αὐτῶν",
+     "ἀπό",
+     "τοῦ",
+     "τυράννου",
+     "ἐλύθη"
+    ]
+   },
+   {
+    "prompt": "The young men will be educated well by the laws and become good citizens.",
+    "answer": "οἱ νεανίαι ὑπὸ τῶν νόμων καλῶς παιδευθήσονται καὶ ἀγαθοὶ πολῖται γενήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "ὑπό",
+     "τῶν",
+     "νόμων",
+     "καλῶς",
+     "παιδευθήσονται",
+     "καί",
+     "ἀγαθοί",
+     "πολῖται",
+     "γενήσονται"
+    ]
+   }
+  ]
  }
 ]
