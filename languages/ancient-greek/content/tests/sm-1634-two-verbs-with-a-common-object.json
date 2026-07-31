@@ -1,0 +1,339 @@
+[
+ {
+  "id": "sm-1634-two-verbs-with-a-common-object-t1",
+  "sectionId": "sm-1634-two-verbs-with-a-common-object",
+  "questions": [
+   {
+    "prompt": "Having accused the generals, he banished them from the city.",
+    "answer": "τοῖς στρατηγοῖς ἐγκαλέσας ἐξέβαλεν ἐκ τῆς πόλεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "στρατηγοῖς",
+     "ἐγκαλέσας",
+     "ἐξέβαλεν",
+     "ἐκ",
+     "τῆς",
+     "πόλεως"
+    ]
+   },
+   {
+    "prompt": "Having come to the aid of the citizens, he saved them out of the danger.",
+    "answer": "τοῖς πολίταις βοηθήσας ἔσωσεν ἐκ τοῦ κινδύνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πολίταις",
+     "βοηθήσας",
+     "ἔσωσεν",
+     "ἐκ",
+     "τοῦ",
+     "κινδύνου"
+    ]
+   },
+   {
+    "prompt": "Trusting the allies, he used to honor them exceedingly.",
+    "answer": "τοῖς συμμάχοις πιστεύων σφόδρα ἐτίμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "συμμάχοις",
+     "πιστεύων",
+     "σφόδρα",
+     "ἐτίμα"
+    ]
+   },
+   {
+    "prompt": "Threatening the enemy, he pursued them through the whole night.",
+    "answer": "τοῖς πολεμίοις ἀπειλῶν ἐδίωκε διὰ πάσης τῆς νυκτός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πολεμίοις",
+     "ἀπειλῶν",
+     "ἐδίωκε",
+     "διά",
+     "πάσης",
+     "τῆς",
+     "νυκτός"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1634-two-verbs-with-a-common-object-t2",
+  "sectionId": "sm-1634-two-verbs-with-a-common-object",
+  "questions": [
+   {
+    "prompt": "Having taken command of the army, he led it against the barbarians.",
+    "answer": "τοῦ στρατεύματος ἄρξας ἦγεν ἐπὶ τοὺς βαρβάρους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατεύματος",
+     "ἄρξας",
+     "ἦγεν",
+     "ἐπί",
+     "τούς",
+     "βαρβάρους"
+    ]
+   },
+   {
+    "prompt": "Having spared the prisoners, he set them free.",
+    "answer": "τῶν αἰχμαλώτων φεισάμενος ἀπέλυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "αἰχμαλώτων",
+     "φεισάμενος",
+     "ἀπέλυσεν"
+    ]
+   },
+   {
+    "prompt": "Having gained control of the city, he razed it to the ground.",
+    "answer": "τῆς πόλεως κρατήσας κατέσκαψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "πόλεως",
+     "κρατήσας",
+     "κατέσκαψεν"
+    ]
+   },
+   {
+    "prompt": "Caring for the orphans, he was raising them in his own house.",
+    "answer": "τῶν ὀρφανῶν ἐπιμελόμενος ἔτρεφεν ἐν τῇ ἑαυτοῦ οἰκίᾳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ὀρφανῶν",
+     "ἐπιμελόμενος",
+     "ἔτρεφεν",
+     "ἐν",
+     "τῇ",
+     "ἑαυτοῦ",
+     "οἰκίᾳ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1634-two-verbs-with-a-common-object-t3",
+  "sectionId": "sm-1634-two-verbs-with-a-common-object",
+  "questions": [
+   {
+    "prompt": "Having summoned the soldiers, he exhorted them to fight bravely.",
+    "answer": "καλέσας παρεκελεύετο τοῖς στρατιώταις ἀνδρείως μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλέσας",
+     "παρεκελεύετο",
+     "τοῖς",
+     "στρατιώταις",
+     "ἀνδρείως",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "Having seized the messenger, he threatened him with death.",
+    "answer": "λαβὼν τῷ ἀγγέλῳ θάνατον ἠπείλησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λαβών",
+     "τῷ",
+     "ἀγγέλῳ",
+     "θάνατον",
+     "ἠπείλησεν"
+    ]
+   },
+   {
+    "prompt": "Having caught the thieves, he did not spare them.",
+    "answer": "λαβὼν τῶν κλεπτῶν οὐκ ἐφείσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λαβών",
+     "τῶν",
+     "κλεπτῶν",
+     "οὐκ",
+     "ἐφείσατο"
+    ]
+   },
+   {
+    "prompt": "Having gathered the Greeks together, he ruled over them.",
+    "answer": "συναγαγὼν τῶν Ἑλλήνων ἦρχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συναγαγών",
+     "τῶν",
+     "Ἑλλήνων",
+     "ἦρχεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1634-two-verbs-with-a-common-object-t4",
+  "sectionId": "sm-1634-two-verbs-with-a-common-object",
+  "questions": [
+   {
+    "prompt": "Obeying the laws, he always honored them.",
+    "answer": "τοῖς νόμοις πειθόμενος ἀεὶ ἐτίμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "νόμοις",
+     "πειθόμενος",
+     "ἀεί",
+     "ἐτίμα"
+    ]
+   },
+   {
+    "prompt": "Envying the wealthy, the demagogue kept harming them.",
+    "answer": "τοῖς πλουσίοις φθονῶν ὁ δημαγωγὸς ἔβλαπτεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πλουσίοις",
+     "φθονῶν",
+     "ὁ",
+     "δημαγωγός",
+     "ἔβλαπτεν"
+    ]
+   },
+   {
+    "prompt": "Following the guide, they imitated him in all things.",
+    "answer": "τῷ ἡγεμόνι ἑπόμενοι ἐν πᾶσιν ἐμιμοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "ἡγεμόνι",
+     "ἑπόμενοι",
+     "ἐν",
+     "πᾶσιν",
+     "ἐμιμοῦντο"
+    ]
+   },
+   {
+    "prompt": "Listening to the philosopher, the young men admired him.",
+    "answer": "τοῦ φιλοσόφου ἀκούοντες οἱ νεανίαι ἐθαύμαζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "φιλοσόφου",
+     "ἀκούοντες",
+     "οἱ",
+     "νεανίαι",
+     "ἐθαύμαζον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1634-two-verbs-with-a-common-object-t5",
+  "sectionId": "sm-1634-two-verbs-with-a-common-object",
+  "questions": [
+   {
+    "prompt": "Accusing the tyrant, they hated him.",
+    "answer": "τοῦ τυράννου κατηγοροῦντες ἐμίσουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "τυράννου",
+     "κατηγοροῦντες",
+     "ἐμίσουν"
+    ]
+   },
+   {
+    "prompt": "Desiring wealth, they pursued it eagerly.",
+    "answer": "τοῦ πλούτου ἐπιθυμοῦντες προθύμως ἐδίωκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πλούτου",
+     "ἐπιθυμοῦντες",
+     "προθύμως",
+     "ἐδίωκον"
+    ]
+   },
+   {
+    "prompt": "Neglecting his children, he abandoned them in the country.",
+    "answer": "τῶν παίδων ἀμελῶν ἐν τῇ χώρᾳ κατέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "παίδων",
+     "ἀμελῶν",
+     "ἐν",
+     "τῇ",
+     "χώρᾳ",
+     "κατέλιπεν"
+    ]
+   },
+   {
+    "prompt": "Remembering his friends, he did good to them.",
+    "answer": "τῶν φίλων μεμνημένος εὐεργέτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "φίλων",
+     "μεμνημένος",
+     "εὐεργέτει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1634-two-verbs-with-a-common-object-t6",
+  "sectionId": "sm-1634-two-verbs-with-a-common-object",
+  "questions": [
+   {
+    "prompt": "Falling upon the foremost, they routed them.",
+    "answer": "τοῖς πρώτοις προσπεσόντες ἔτρεψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πρώτοις",
+     "προσπεσόντες",
+     "ἔτρεψαν"
+    ]
+   },
+   {
+    "prompt": "Having given the stranger guides, he ordered him to proceed.",
+    "answer": "τῷ ξένῳ δοὺς ἡγεμόνας ἐκέλευσε πορεύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "ξένῳ",
+     "δούς",
+     "ἡγεμόνας",
+     "ἐκέλευσε",
+     "πορεύεσθαι"
+    ]
+   },
+   {
+    "prompt": "Having met the ambassadors, he received them kindly.",
+    "answer": "τοῖς πρέσβεσιν ἐντυχὼν φιλοφρόνως ἐδέξατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πρέσβεσιν",
+     "ἐντυχών",
+     "φιλοφρόνως",
+     "ἐδέξατο"
+    ]
+   },
+   {
+    "prompt": "Having rebuked the young men, he did not let them go.",
+    "answer": "τοῖς νεανίαις ἐπιπλήξας οὐκ ἀφῆκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "νεανίαις",
+     "ἐπιπλήξας",
+     "οὐκ",
+     "ἀφῆκεν"
+    ]
+   }
+  ]
+ }
+]
