@@ -1,0 +1,795 @@
+[
+ {
+  "id": "sm-1283-vocative-t1",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O Socrates, do you think that virtue can be taught?",
+    "answer": "ὦ Σώκρατες, ἆρα οἴει τὴν ἀρετὴν διδακτὴν εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Σώκρατες",
+     "ἆρα",
+     "οἴει",
+     "τὴν",
+     "ἀρετὴν",
+     "διδακτὴν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Tell me, boy, who taught you these things?",
+    "answer": "εἰπέ μοι, ὦ παῖ, τίς σε ταῦτα ἐδίδαξεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰπέ",
+     "μοι",
+     "ὦ",
+     "παῖ",
+     "τίς",
+     "σε",
+     "ταῦτα",
+     "ἐδίδαξεν"
+    ]
+   },
+   {
+    "prompt": "You gentlemen who are present, know these things well.",
+    "answer": "ὦ ἄνδρες οἱ παρόντες, εὖ ἴστε ταῦτα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "ἄνδρες",
+     "οἱ",
+     "παρόντες",
+     "εὖ",
+     "ἴστε",
+     "ταῦτα"
+    ]
+   },
+   {
+    "prompt": "Cyrus and the rest of you Persians, listen to the general.",
+    "answer": "ὦ Κῦρε καὶ οἱ ἄλλοι Πέρσαι, ἀκούετε τοῦ στρατηγοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Κῦρε",
+     "καὶ",
+     "οἱ",
+     "ἄλλοι",
+     "Πέρσαι",
+     "ἀκούετε",
+     "τοῦ",
+     "στρατηγοῦ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t2",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "Do you hear, Aeschines, what the citizens are saying?",
+    "answer": "ἀκούεις, Αἰσχίνη, ἃ οἱ πολῖται λέγουσιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκούεις",
+     "Αἰσχίνη",
+     "ἃ",
+     "οἱ",
+     "πολῖται",
+     "λέγουσιν"
+    ]
+   },
+   {
+    "prompt": "Wretch, why did you betray your friends?",
+    "answer": "κακόδαιμον, διὰ τί τοὺς φίλους προέδωκας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κακόδαιμον",
+     "διὰ",
+     "τί",
+     "τοὺς",
+     "φίλους",
+     "προέδωκας"
+    ]
+   },
+   {
+    "prompt": "Stop, you scoundrel, or you will suffer terrible things!",
+    "answer": "παῦσαι, μιαρέ, ἢ δεινὰ πείσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παῦσαι",
+     "μιαρέ",
+     "ἢ",
+     "δεινὰ",
+     "πείσῃ"
+    ]
+   },
+   {
+    "prompt": "Zeus and you gods, look upon these deeds!",
+    "answer": "ὦ Ζεῦ καὶ θεοί, ἐπίδετε τὰ ἔργα ταῦτα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Ζεῦ",
+     "καὶ",
+     "θεοί",
+     "ἐπίδετε",
+     "τὰ",
+     "ἔργα",
+     "ταῦτα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t3",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "Ho there, Xanthias, what is happening to you?",
+    "answer": "οὗτος, τί πάσχεις, ὦ Ξανθία;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "τί",
+     "πάσχεις",
+     "ὦ",
+     "Ξανθία"
+    ]
+   },
+   {
+    "prompt": "You there, why are you fleeing from the battle?",
+    "answer": "ὦ οὗτος, διὰ τί φεύγεις ἐκ τῆς μάχης;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "οὗτος",
+     "διὰ",
+     "τί",
+     "φεύγεις",
+     "ἐκ",
+     "τῆς",
+     "μάχης"
+    ]
+   },
+   {
+    "prompt": "Boy, follow me and carry the books.",
+    "answer": "ὁ παῖς, ἀκολούθει μοι καὶ φέρε τὰ βιβλία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "ἀκολούθει",
+     "μοι",
+     "καὶ",
+     "φέρε",
+     "τὰ",
+     "βιβλία"
+    ]
+   },
+   {
+    "prompt": "You there, Ajax, why do you rage so?",
+    "answer": "ὦ οὗτος, Αἴας, τί οὕτω μαίνῃ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "οὗτος",
+     "Αἴας",
+     "τί",
+     "οὕτω",
+     "μαίνῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t4",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "If you wish, Socrates, I will show you the truth.",
+    "answer": "εἰ βούλει, ὦ Σώκρατες, ἐγώ σοι τὴν ἀλήθειαν δείξω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "βούλει",
+     "ὦ",
+     "Σώκρατες",
+     "ἐγώ",
+     "σοι",
+     "τὴν",
+     "ἀλήθειαν",
+     "δείξω"
+    ]
+   },
+   {
+    "prompt": "Since the enemy are near, general, we must guard the walls.",
+    "answer": "ἐπεὶ οἱ πολέμιοι ἐγγύς εἰσιν, ὦ στρατηγέ, φυλακτέον ἐστὶ τὰ τείχη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "πολέμιοι",
+     "ἐγγύς",
+     "εἰσιν",
+     "ὦ",
+     "στρατηγέ",
+     "φυλακτέον",
+     "ἐστὶ",
+     "τὰ",
+     "τείχη"
+    ]
+   },
+   {
+    "prompt": "I think, o judges, that this man speaks the truth.",
+    "answer": "οἶμαι, ὦ ἄνδρες δικασταί, τοῦτον ἀληθῆ λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "ὦ",
+     "ἄνδρες",
+     "δικασταί",
+     "τοῦτον",
+     "ἀληθῆ",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "Do not, my friends, abandon those who are fighting for the city.",
+    "answer": "μὴ, ὦ φίλοι, τοὺς ὑπὲρ τῆς πόλεως μαχομένους προδῶτε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ὦ",
+     "φίλοι",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "μαχομένους",
+     "προδῶτε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t5",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O city and people, who will save you now?",
+    "answer": "ὦ πόλις καὶ δῆμε, τίς ὑμᾶς νῦν σώσει;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "πόλις",
+     "καὶ",
+     "δῆμε",
+     "τίς",
+     "ὑμᾶς",
+     "νῦν",
+     "σώσει"
+    ]
+   },
+   {
+    "prompt": "Oh the noble man, how bravely he died!",
+    "answer": "ὢ γενναῖος, ὡς ἀνδρείως ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὢ",
+     "γενναῖος",
+     "ὡς",
+     "ἀνδρείως",
+     "ἀπέθανεν"
+    ]
+   },
+   {
+    "prompt": "Blessed are you gods, who suffer no evil!",
+    "answer": "ὦ μακάριοι θεοί, οἳ οὐδὲν κακὸν πάσχετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "μακάριοι",
+     "θεοί",
+     "οἳ",
+     "οὐδὲν",
+     "κακὸν",
+     "πάσχετε"
+    ]
+   },
+   {
+    "prompt": "Oh dearest of friends, do not abandon me now.",
+    "answer": "ὦ φίλτατε, μή με νῦν προλίπῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "φίλτατε",
+     "μή",
+     "με",
+     "νῦν",
+     "προλίπῃς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t6",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O Cyrus, having conquered the enemy, you have saved us all.",
+    "answer": "ὦ Κῦρε, νικήσας τοὺς πολεμίους, πάντας ἡμᾶς σέσωκας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Κῦρε",
+     "νικήσας",
+     "τοὺς",
+     "πολεμίους",
+     "πάντας",
+     "ἡμᾶς",
+     "σέσωκας"
+    ]
+   },
+   {
+    "prompt": "Master, while the slaves were sleeping, thieves broke into the house.",
+    "answer": "ὦ δέσποτα, καθευδόντων τῶν δούλων, κλῶπες εἰς τὴν οἰκίαν εἰσῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "δέσποτα",
+     "καθευδόντων",
+     "τῶν",
+     "δούλων",
+     "κλῶπες",
+     "εἰς",
+     "τὴν",
+     "οἰκίαν",
+     "εἰσῆλθον"
+    ]
+   },
+   {
+    "prompt": "Children, honor the gods and obey your parents.",
+    "answer": "ὦ παῖδες, τιμᾶτε τοὺς θεοὺς καὶ πείθεσθε τοῖς γονεῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "παῖδες",
+     "τιμᾶτε",
+     "τοὺς",
+     "θεοὺς",
+     "καὶ",
+     "πείθεσθε",
+     "τοῖς",
+     "γονεῦσιν"
+    ]
+   },
+   {
+    "prompt": "O queen, I marvel that you endure such great misfortunes.",
+    "answer": "ὦ βασίλεια, θαυμάζω ὅτι τηλικαύτας συμφορὰς φέρεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "βασίλεια",
+     "θαυμάζω",
+     "ὅτι",
+     "τηλικαύτας",
+     "συμφορὰς",
+     "φέρεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t7",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O Zeus and gods, why do you allow the unjust to prosper?",
+    "answer": "ὦ Ζεῦ καὶ θεοί, διὰ τί τοὺς ἀδίκους εὐτυχεῖν ἐᾶτε;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Ζεῦ",
+     "καί",
+     "θεοί",
+     "διά",
+     "τί",
+     "τούς",
+     "ἀδίκους",
+     "εὐτυχεῖν",
+     "ἐᾶτε"
+    ]
+   },
+   {
+    "prompt": "Wretch, you will not escape the guardians of justice.",
+    "answer": "μιαρέ, οὐ λήσεις τοὺς φύλακας τῆς δίκης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μιαρέ",
+     "οὐ",
+     "λήσεις",
+     "τούς",
+     "φύλακας",
+     "τῆς",
+     "δίκης"
+    ]
+   },
+   {
+    "prompt": "I ask you, Socrates, whether the soul is immortal.",
+    "answer": "ἐρωτῶ σε, ὦ Σώκρατες, εἰ ἀθάνατός ἐστιν ἡ ψυχή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐρωτῶ",
+     "σε",
+     "ὦ",
+     "Σώκρατες",
+     "εἰ",
+     "ἀθάνατος",
+     "ἐστιν",
+     "ἡ",
+     "ψυχή"
+    ]
+   },
+   {
+    "prompt": "You, gentlemen who are present, listen to the herald.",
+    "answer": "ὦ ἄνδρες οἱ παρόντες, ἀκούσατε τοῦ κήρυκος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "ἄνδρες",
+     "οἱ",
+     "παρόντες",
+     "ἀκούσατε",
+     "τοῦ",
+     "κήρυκος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t8",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O daughter, having endured many misfortunes, you have shown yourself brave.",
+    "answer": "ὦ θύγατερ, πολλὰς δυστυχίας ὑπομείνασα, ἀνδρείαν σαυτὴν παρέσχες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "θύγατερ",
+     "πολλάς",
+     "δυστυχίας",
+     "ὑπομείνασα",
+     "ἀνδρείαν",
+     "σαυτήν",
+     "παρέσχες"
+    ]
+   },
+   {
+    "prompt": "Priest, do you really sacrifice to the gods on behalf of such men?",
+    "answer": "ἱερεῦ, ἦ ὑπὲρ τοιούτων ἀνδρῶν τοῖς θεοῖς θύεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἱερεῦ",
+     "ἦ",
+     "ὑπέρ",
+     "τοιούτων",
+     "ἀνδρῶν",
+     "τοῖς",
+     "θεοῖς",
+     "θύεις"
+    ]
+   },
+   {
+    "prompt": "Ho there, boy, why are you carrying the barley to the market?",
+    "answer": "οὗτος, ὦ παῖ, διὰ τί τὰ ἄλφιτα εἰς τὴν ἀγορὰν φέρεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὦ",
+     "παῖ",
+     "διά",
+     "τί",
+     "τά",
+     "ἄλφιτα",
+     "εἰς",
+     "τήν",
+     "ἀγοράν",
+     "φέρεις"
+    ]
+   },
+   {
+    "prompt": "Tell me, friends, which of you will help the general?",
+    "answer": "εἴπατέ μοι, ὦ φίλοι, τίς ὑμῶν τῷ στρατηγῷ βοηθήσει;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴπατε",
+     "μοι",
+     "ὦ",
+     "φίλοι",
+     "τίς",
+     "ὑμῶν",
+     "τῷ",
+     "στρατηγῷ",
+     "βοηθήσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t9",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O man hateful to the gods, you have destroyed your fatherland.",
+    "answer": "ὦ θεοῖς ἐχθρέ, τὴν πατρίδα ἀπώλεσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "θεοῖς",
+     "ἐχθρέ",
+     "τήν",
+     "πατρίδα",
+     "ἀπώλεσας"
+    ]
+   },
+   {
+    "prompt": "O Zeus, may you grant victory to those fighting for freedom.",
+    "answer": "ὦ Ζεῦ, δοίης νίκην τοῖς ὑπὲρ τῆς ἐλευθερίας μαχομένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Ζεῦ",
+     "δοίης",
+     "νίκην",
+     "τοῖς",
+     "ὑπέρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "μαχομένοις"
+    ]
+   },
+   {
+    "prompt": "You there, where are you rushing with such haste?",
+    "answer": "οὗτος σύ, ποῖ μετὰ τοσαύτης σπουδῆς σπεύδεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "σύ",
+     "ποῖ",
+     "μετά",
+     "τοσαύτης",
+     "σπουδῆς",
+     "σπεύδεις"
+    ]
+   },
+   {
+    "prompt": "Cleon and the rest of you generals, do not flee the danger.",
+    "answer": "ὦ Κλέων καὶ οἱ ἄλλοι στρατηγοί, μὴ φεύγετε τὸν κίνδυνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Κλέων",
+     "καί",
+     "οἱ",
+     "ἄλλοι",
+     "στρατηγοί",
+     "μή",
+     "φεύγετε",
+     "τόν",
+     "κίνδυνον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t10",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O children, obey your parents, for they raised you.",
+    "answer": "ὦ παῖδες, πείθεσθε τοῖς γονεῦσιν· ἔθρεψαν γὰρ ὑμᾶς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "παῖδες",
+     "πείθεσθε",
+     "τοῖς",
+     "γονεῦσιν",
+     "ἔθρεψαν",
+     "γάρ",
+     "ὑμᾶς"
+    ]
+   },
+   {
+    "prompt": "Slave, you will pay the penalty if you deceive your master.",
+    "answer": "δοῦλε, δώσεις δίκην, ἐὰν τὸν δεσπότην ἐξαπατήσῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοῦλε",
+     "δώσεις",
+     "δίκην",
+     "ἐάν",
+     "τόν",
+     "δεσπότην",
+     "ἐξαπατήσῃς"
+    ]
+   },
+   {
+    "prompt": "Since the enemy are approaching, general, lead out the soldiers.",
+    "answer": "τῶν πολεμίων προσιόντων, ὦ στρατηγέ, ἔξαγε τοὺς στρατιώτας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "προσιόντων",
+     "ὦ",
+     "στρατηγέ",
+     "ἔξαγε",
+     "τούς",
+     "στρατιώτας"
+    ]
+   },
+   {
+    "prompt": "O noble man, you who died on behalf of your friends!",
+    "answer": "ὦ γενναῖος, ὃς ὑπὲρ τῶν φίλων ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "γενναῖος",
+     "ὅς",
+     "ὑπέρ",
+     "τῶν",
+     "φίλων",
+     "ἀπέθανεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t11",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O Athenians, you must not neglect the safety of the allies.",
+    "answer": "ὦ ἄνδρες Ἀθηναῖοι, οὐ χρὴ ὑμᾶς τῆς τῶν συμμάχων σωτηρίας ἀμελεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "ἄνδρες",
+     "Ἀθηναῖοι",
+     "οὐ",
+     "χρή",
+     "ὑμᾶς",
+     "τῆς",
+     "τῶν",
+     "συμμάχων",
+     "σωτηρίας",
+     "ἀμελεῖν"
+    ]
+   },
+   {
+    "prompt": "Stranger, have you really seen the temple of the goddess?",
+    "answer": "ξένε, ἦ ἀληθῶς τὸ τῆς θεοῦ ἱερὸν ἑώρακας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ξένε",
+     "ἦ",
+     "ἀληθῶς",
+     "τό",
+     "τῆς",
+     "θεοῦ",
+     "ἱερόν",
+     "ἑώρακας"
+    ]
+   },
+   {
+    "prompt": "Take courage, women, for the men have conquered the barbarians.",
+    "answer": "θαρρεῖτε, ὦ γυναῖκες· οἱ γὰρ ἄνδρες τοὺς βαρβάρους νενικήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαρρεῖτε",
+     "ὦ",
+     "γυναῖκες",
+     "οἱ",
+     "γάρ",
+     "ἄνδρες",
+     "τούς",
+     "βαρβάρους",
+     "νενικήκασιν"
+    ]
+   },
+   {
+    "prompt": "You there, old man, why do you sit apart from the others?",
+    "answer": "ὦ οὗτος, γέρον, διὰ τί χωρὶς τῶν ἄλλων κάθησαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "οὗτος",
+     "γέρον",
+     "διά",
+     "τί",
+     "χωρίς",
+     "τῶν",
+     "ἄλλων",
+     "κάθησαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1283-vocative-t12",
+  "sectionId": "sm-1283-vocative",
+  "questions": [
+   {
+    "prompt": "O Zeus and all you gods, save us from the present dangers.",
+    "answer": "ὦ Ζεῦ καὶ πάντες θεοί, σώσατε ἡμᾶς ἐκ τῶν παρόντων κινδύνων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "Ζεῦ",
+     "καί",
+     "πάντες",
+     "θεοί",
+     "σώσατε",
+     "ἡμᾶς",
+     "ἐκ",
+     "τῶν",
+     "παρόντων",
+     "κινδύνων"
+    ]
+   },
+   {
+    "prompt": "Coward, you abandoned your comrades in the battle.",
+    "answer": "δειλέ, τοὺς ἑταίρους ἐν τῇ μάχῃ κατέλιπες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δειλέ",
+     "τούς",
+     "ἑταίρους",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "κατέλιπες"
+    ]
+   },
+   {
+    "prompt": "I know well, judges, that this man speaks the truth.",
+    "answer": "εὖ οἶδα, ὦ ἄνδρες δικασταί, ὅτι ὅδε τὰ ἀληθῆ λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "οἶδα",
+     "ὦ",
+     "ἄνδρες",
+     "δικασταί",
+     "ὅτι",
+     "ὅδε",
+     "τά",
+     "ἀληθῆ",
+     "λέγει"
+    ]
+   },
+   {
+    "prompt": "Boy, follow me and carry these books.",
+    "answer": "ὦ παῖ, ἀκολούθει μοι καὶ φέρε ταῦτα τὰ βιβλία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "παῖ",
+     "ἀκολούθει",
+     "μοι",
+     "καί",
+     "φέρε",
+     "ταῦτα",
+     "τά",
+     "βιβλία"
+    ]
+   }
+  ]
+ }
+]

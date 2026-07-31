@@ -1,0 +1,602 @@
+[
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t1",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "Justice, as the wise say, is more useful than wealth.",
+    "answer": "ἡ δικαιοσύνη, ὡς οἱ σοφοὶ λέγουσιν, ὠφελιμωτέρα ἐστὶ τοῦ πλούτου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "δικαιοσύνη",
+     "ὡς",
+     "οἱ",
+     "σοφοί",
+     "λέγουσιν",
+     "ὠφελιμωτέρα",
+     "ἐστί",
+     "τοῦ",
+     "πλούτου"
+    ]
+   },
+   {
+    "prompt": "The goodwill of the allies saved the city in the war.",
+    "answer": "ἡ τῶν συμμάχων εὔνοια ἔσωσε τὴν πόλιν ἐν τῷ πολέμῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "συμμάχων",
+     "εὔνοια",
+     "ἔσωσε",
+     "τήν",
+     "πόλιν",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ"
+    ]
+   },
+   {
+    "prompt": "Freedom is dearer to the Greeks than life itself.",
+    "answer": "ἡ ἐλευθερία τοῖς Ἕλλησι φιλτέρα ἐστὶ τοῦ βίου αὐτοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐλευθερία",
+     "τοῖς",
+     "Ἕλλησι",
+     "φιλτέρα",
+     "ἐστί",
+     "τοῦ",
+     "βίου",
+     "αὐτοῦ"
+    ]
+   },
+   {
+    "prompt": "Cowardice destroyed the army before the battle began.",
+    "answer": "ἡ δειλία διέφθειρε τὸ στράτευμα πρὶν τὴν μάχην ἄρξασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "δειλία",
+     "διέφθειρε",
+     "τό",
+     "στράτευμα",
+     "πρίν",
+     "τήν",
+     "μάχην",
+     "ἄρξασθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t2",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "What is temperance, and what is madness?",
+    "answer": "τί σωφροσύνη, τί δὲ μανία;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "σωφροσύνη",
+     "δέ",
+     "μανία"
+    ]
+   },
+   {
+    "prompt": "Praise is the beginning of friendship, blame of enmity.",
+    "answer": "ἀρχὴ φιλίας μὲν ἔπαινος, ἔχθρας δὲ ψόγος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀρχή",
+     "φιλίας",
+     "μέν",
+     "ἔπαινος",
+     "ἔχθρας",
+     "δέ",
+     "ψόγος"
+    ]
+   },
+   {
+    "prompt": "Agriculture nourishes the body, but music delights the soul.",
+    "answer": "γεωργία μὲν τὸ σῶμα τρέφει, μουσικὴ δὲ τὴν ψυχὴν εὐφραίνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γεωργία",
+     "μέν",
+     "τό",
+     "σῶμα",
+     "τρέφει",
+     "μουσική",
+     "δέ",
+     "τήν",
+     "ψυχήν",
+     "εὐφραίνει"
+    ]
+   },
+   {
+    "prompt": "Wisdom without justice often becomes injustice.",
+    "answer": "σοφία ἄνευ δικαιοσύνης πολλάκις ἀδικία γίγνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφία",
+     "ἄνευ",
+     "δικαιοσύνης",
+     "πολλάκις",
+     "ἀδικία",
+     "γίγνεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t3",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "The trench was great in depth and in width.",
+    "answer": "ἡ τάφρος μεγάλη ἦν βάθος καὶ εὖρος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τάφρος",
+     "μεγάλη",
+     "ἦν",
+     "βάθος",
+     "καί",
+     "εὖρος"
+    ]
+   },
+   {
+    "prompt": "A man Greek by race led the strangers across the river.",
+    "answer": "ἀνὴρ γένος Ἕλλην τοὺς ξένους διὰ τοῦ ποταμοῦ ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνήρ",
+     "γένος",
+     "Ἕλλην",
+     "τούς",
+     "ξένους",
+     "διά",
+     "τοῦ",
+     "ποταμοῦ",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "The wall, being huge in height, kept frightening the enemies.",
+    "answer": "τὸ τεῖχος, μέγα ὂν ὕψος, τοὺς πολεμίους ἐφόβει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "τεῖχος",
+     "μέγα",
+     "ὄν",
+     "ὕψος",
+     "τούς",
+     "πολεμίους",
+     "ἐφόβει"
+    ]
+   },
+   {
+    "prompt": "The young man, Cyrus by name, was gathering an army.",
+    "answer": "ὁ νεανίας, ὄνομα Κῦρος, στράτευμα συνέλεγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "ὄνομα",
+     "Κῦρος",
+     "στράτευμα",
+     "συνέλεγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t4",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "Because he honored justice, all the citizens trusted him.",
+    "answer": "ἐπεὶ τὴν δικαιοσύνην ἐτίμα, πάντες οἱ πολῖται αὐτῷ ἐπίστευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "τήν",
+     "δικαιοσύνην",
+     "ἐτίμα",
+     "πάντες",
+     "οἱ",
+     "πολῖται",
+     "αὐτῷ",
+     "ἐπίστευον"
+    ]
+   },
+   {
+    "prompt": "Ambition drives many men to death.",
+    "answer": "ἡ φιλοτιμία πολλοὺς εἰς τὸν θάνατον ἄγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φιλοτιμία",
+     "πολλούς",
+     "εἰς",
+     "τόν",
+     "θάνατον",
+     "ἄγει"
+    ]
+   },
+   {
+    "prompt": "We admire the courage of those who died for freedom.",
+    "answer": "θαυμάζομεν τὴν ἀνδρείαν τῶν ὑπὲρ τῆς ἐλευθερίας ἀποθανόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζομεν",
+     "τήν",
+     "ἀνδρείαν",
+     "τῶν",
+     "ὑπέρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἀποθανόντων"
+    ]
+   },
+   {
+    "prompt": "Poverty is not shameful, but idleness is.",
+    "answer": "ἡ μὲν πενία οὐκ αἰσχρά, ἡ δὲ ἀργία αἰσχρά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μέν",
+     "πενία",
+     "οὐκ",
+     "αἰσχρά",
+     "δέ",
+     "ἀργία",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t5",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "Death frees the soul from the body, as Socrates used to say.",
+    "answer": "ὁ θάνατος τὴν ψυχὴν τοῦ σώματος ἀπαλλάττει, ὡς ὁ Σωκράτης ἔλεγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θάνατος",
+     "τήν",
+     "ψυχήν",
+     "τοῦ",
+     "σώματος",
+     "ἀπαλλάττει",
+     "ὡς",
+     "Σωκράτης",
+     "ἔλεγεν"
+    ]
+   },
+   {
+    "prompt": "Body and soul alike need training.",
+    "answer": "σῶμα καὶ ψυχὴ ὁμοίως παιδείας δέονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σῶμα",
+     "καί",
+     "ψυχή",
+     "ὁμοίως",
+     "παιδείας",
+     "δέονται"
+    ]
+   },
+   {
+    "prompt": "The general's usual idleness handed the city over to the enemies.",
+    "answer": "ἡ τοῦ στρατηγοῦ σχολὴ τὴν πόλιν τοῖς πολεμίοις παρέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "σχολή",
+     "τήν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "παρέδωκεν"
+    ]
+   },
+   {
+    "prompt": "The mind, whenever it has been trained, rules the desires.",
+    "answer": "ὁ νοῦς, ἐπειδὰν παιδευθῇ, τῶν ἐπιθυμιῶν ἄρχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νοῦς",
+     "ἐπειδάν",
+     "παιδευθῇ",
+     "τῶν",
+     "ἐπιθυμιῶν",
+     "ἄρχει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t6",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "With justice ruling, the city flourished for many years.",
+    "answer": "τῆς δικαιοσύνης ἀρχούσης, ἡ πόλις πολλὰ ἔτη ἤνθει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "δικαιοσύνης",
+     "ἀρχούσης",
+     "ἡ",
+     "πόλις",
+     "πολλά",
+     "ἔτη",
+     "ἤνθει"
+    ]
+   },
+   {
+    "prompt": "Fear of death often produces cowardice in the soldiers.",
+    "answer": "ὁ τοῦ θανάτου φόβος πολλάκις δειλίαν τοῖς στρατιώταις ἐμποιεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "θανάτου",
+     "φόβος",
+     "πολλάκις",
+     "δειλίαν",
+     "τοῖς",
+     "στρατιώταις",
+     "ἐμποιεῖ"
+    ]
+   },
+   {
+    "prompt": "Wisdom and moderation are the greatest of the virtues.",
+    "answer": "σοφία καὶ σωφροσύνη μέγισται τῶν ἀρετῶν εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφία",
+     "καί",
+     "σωφροσύνη",
+     "μέγισται",
+     "τῶν",
+     "ἀρετῶν",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "The beauty of the maidens astonished the foreigners.",
+    "answer": "τὸ τῶν παρθένων κάλλος τοὺς ξένους ἐξέπληξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "τῶν",
+     "παρθένων",
+     "κάλλος",
+     "τούς",
+     "ξένους",
+     "ἐξέπληξεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t7",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "The goodwill of the citizens saved the city in the war.",
+    "answer": "ἡ τῶν πολιτῶν εὔνοια τὴν πόλιν ἐν τῷ πολέμῳ ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "πολιτῶν",
+     "εὔνοια",
+     "τὴν",
+     "πόλιν",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "Wisdom, which the philosophers pursue, is more precious than gold.",
+    "answer": "ἡ σοφία, ἣν οἱ φιλόσοφοι διώκουσιν, τιμιωτέρα ἐστὶ τοῦ χρυσοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφία",
+     "ἣν",
+     "οἱ",
+     "φιλόσοφοι",
+     "διώκουσιν",
+     "τιμιωτέρα",
+     "ἐστὶ",
+     "τοῦ",
+     "χρυσοῦ"
+    ]
+   },
+   {
+    "prompt": "Temperance and courage are habits of the good soul.",
+    "answer": "σωφροσύνη καὶ ἀνδρεία ἕξεις εἰσὶ τῆς ἀγαθῆς ψυχῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σωφροσύνη",
+     "καὶ",
+     "ἀνδρεία",
+     "ἕξεις",
+     "εἰσὶ",
+     "τῆς",
+     "ἀγαθῆς",
+     "ψυχῆς"
+    ]
+   },
+   {
+    "prompt": "The wall was great in height and in width.",
+    "answer": "τὸ τεῖχος μέγα ἦν ὕψος τε καὶ πλάτος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τεῖχος",
+     "μέγα",
+     "ἦν",
+     "ὕψος",
+     "τε",
+     "καὶ",
+     "πλάτος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t8",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "The ancients considered music and agriculture noble arts.",
+    "answer": "μουσικὴν καὶ γεωργίαν οἱ παλαιοὶ καλὰς τέχνας ἐνόμιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μουσικὴν",
+     "καὶ",
+     "γεωργίαν",
+     "οἱ",
+     "παλαιοὶ",
+     "καλὰς",
+     "τέχνας",
+     "ἐνόμιζον"
+    ]
+   },
+   {
+    "prompt": "The general's valour saved the army from destruction.",
+    "answer": "ἡ τοῦ στρατηγοῦ ἀρετὴ τὸ στράτευμα ἐκ τῆς φθορᾶς ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀρετὴ",
+     "τὸ",
+     "στράτευμα",
+     "ἐκ",
+     "τῆς",
+     "φθορᾶς",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "Fear often destroys good judgment in battle.",
+    "answer": "ὁ φόβος πολλάκις τὴν ἀγαθὴν γνώμην ἐν τῇ μάχῃ διαφθείρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φόβος",
+     "πολλάκις",
+     "τὴν",
+     "ἀγαθὴν",
+     "γνώμην",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "διαφθείρει"
+    ]
+   },
+   {
+    "prompt": "The river was worth seeing in size and in beauty.",
+    "answer": "ὁ ποταμὸς ἄξιος ἦν θέας μέγεθος καὶ κάλλος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμὸς",
+     "ἄξιος",
+     "ἦν",
+     "θέας",
+     "μέγεθος",
+     "καὶ",
+     "κάλλος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1131-the-article-with-abstract-substantives-t9",
+  "sectionId": "sm-1131-the-article-with-abstract-substantives",
+  "questions": [
+   {
+    "prompt": "Freedom is more precious to the Greeks than life itself.",
+    "answer": "ἡ ἐλευθερία τιμιωτέρα ἐστὶ τοῖς Ἕλλησιν αὐτοῦ τοῦ βίου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐλευθερία",
+     "τιμιωτέρα",
+     "ἐστὶ",
+     "τοῖς",
+     "Ἕλλησιν",
+     "αὐτοῦ",
+     "τοῦ",
+     "βίου"
+    ]
+   },
+   {
+    "prompt": "Ignorance, not wickedness, is the cause of many evils.",
+    "answer": "ἡ ἀμαθία, οὐχ ἡ κακία, πολλῶν κακῶν αἰτία ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀμαθία",
+     "οὐχ",
+     "κακία",
+     "πολλῶν",
+     "κακῶν",
+     "αἰτία",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The wise pursue knowledge for the sake of the soul.",
+    "answer": "οἱ σοφοὶ τὴν ἐπιστήμην διώκουσι ψυχῆς ἕνεκα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "τὴν",
+     "ἐπιστήμην",
+     "διώκουσι",
+     "ψυχῆς",
+     "ἕνεκα"
+    ]
+   },
+   {
+    "prompt": "By birth he was a Persian, but in tongue a Greek.",
+    "answer": "γένος μὲν ἦν Πέρσης, τὴν δὲ γλῶτταν Ἕλλην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γένος",
+     "μὲν",
+     "ἦν",
+     "Πέρσης",
+     "τὴν",
+     "δὲ",
+     "γλῶτταν",
+     "Ἕλλην"
+    ]
+   }
+  ]
+ }
+]

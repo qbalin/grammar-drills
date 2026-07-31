@@ -1,0 +1,703 @@
+[
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t1",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "Immortal is the memory that the brave men leave behind.",
+    "answer": "ἀθάνατος ἡ μνήμη ἣν οἱ ἀνδρεῖοι καταλείπουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀθάνατος",
+     "ἡ",
+     "μνήμη",
+     "ἥν",
+     "οἱ",
+     "ἀνδρεῖοι",
+     "καταλείπουσιν"
+    ]
+   },
+   {
+    "prompt": "Incurable was the young man's disease, as the physician said.",
+    "answer": "ἀνίατος ἦν ἡ τοῦ νεανίου νόσος, ὡς ὁ ἰατρὸς ἔφη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνίατος",
+     "ἦν",
+     "ἡ",
+     "τοῦ",
+     "νεανίου",
+     "νόσος",
+     "ὡς",
+     "ὁ",
+     "ἰατρός",
+     "ἔφη"
+    ]
+   },
+   {
+    "prompt": "Wise and temperate is the man who is willing to learn.",
+    "answer": "σοφὸς καὶ σώφρων ὁ ἀνὴρ ὁ μανθάνειν ἐθέλων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφός",
+     "καί",
+     "σώφρων",
+     "ὁ",
+     "ἀνήρ",
+     "μανθάνειν",
+     "ἐθέλων"
+    ]
+   },
+   {
+    "prompt": "The old man's body was weak, but his soul was healthy.",
+    "answer": "ἀσθενὲς ἦν τὸ τοῦ γέροντος σῶμα, ὑγιὴς δὲ ἡ ψυχή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀσθενές",
+     "ἦν",
+     "τό",
+     "τοῦ",
+     "γέροντος",
+     "σῶμα",
+     "ὑγιής",
+     "δέ",
+     "ἡ",
+     "ψυχή"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t2",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "They towed away the triremes empty of their crews.",
+    "answer": "κενὰς ἀφείλκυσαν τὰς τριήρεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κενάς",
+     "ἀφείλκυσαν",
+     "τάς",
+     "τριήρεις"
+    ]
+   },
+   {
+    "prompt": "The king was marching with his head bare.",
+    "answer": "ψιλὴν ἔχων τὴν κεφαλὴν ὁ βασιλεὺς ἐπορεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ψιλήν",
+     "ἔχων",
+     "τήν",
+     "κεφαλήν",
+     "ὁ",
+     "βασιλεύς",
+     "ἐπορεύετο"
+    ]
+   },
+   {
+    "prompt": "The soldiers captured the city while it was still unguarded.",
+    "answer": "ἀφύλακτον ἔτι οὖσαν τὴν πόλιν οἱ στρατιῶται εἷλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφύλακτον",
+     "ἔτι",
+     "οὖσαν",
+     "τήν",
+     "πόλιν",
+     "οἱ",
+     "στρατιῶται",
+     "εἷλον"
+    ]
+   },
+   {
+    "prompt": "They will leave behind the memory of their deeds undying.",
+    "answer": "ἀθάνατον τὴν τῶν ἔργων μνήμην καταλείψουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀθάνατον",
+     "τήν",
+     "τῶν",
+     "ἔργων",
+     "μνήμην",
+     "καταλείψουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t3",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "This wise old man educated many young men.",
+    "answer": "οὗτος ὁ σοφὸς γέρων πολλοὺς νεανίας ἐπαίδευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "σοφός",
+     "γέρων",
+     "πολλούς",
+     "νεανίας",
+     "ἐπαίδευσεν"
+    ]
+   },
+   {
+    "prompt": "I never saw that beautiful spring.",
+    "answer": "ἐκεῖνο τὸ καλὸν ἔαρ οὐδέποτε εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνο",
+     "τό",
+     "καλόν",
+     "ἔαρ",
+     "οὐδέποτε",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "These allies came willingly to the Greeks.",
+    "answer": "οὗτοι οἱ σύμμαχοι ἑκόντες πρὸς τοὺς Ἕλληνας ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "σύμμαχοι",
+     "ἑκόντες",
+     "πρός",
+     "τούς",
+     "Ἕλληνας",
+     "ἦλθον"
+    ]
+   },
+   {
+    "prompt": "That harsh punishment terrified the whole city.",
+    "answer": "ἐκείνη ἡ χαλεπὴ τιμωρία πᾶσαν τὴν πόλιν ἐφόβησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνη",
+     "ἡ",
+     "χαλεπή",
+     "τιμωρία",
+     "πᾶσαν",
+     "τήν",
+     "πόλιν",
+     "ἐφόβησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t4",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The king himself was leading the army toward the sea.",
+    "answer": "αὐτὸς ὁ βασιλεὺς τὸ στράτευμα πρὸς τὴν θάλατταν ἦγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτός",
+     "ὁ",
+     "βασιλεύς",
+     "τό",
+     "στράτευμα",
+     "πρός",
+     "τήν",
+     "θάλατταν",
+     "ἦγεν"
+    ]
+   },
+   {
+    "prompt": "All the soldiers, being willing, followed the general.",
+    "answer": "πάντες οἱ στρατιῶται ἑκόντες τῷ στρατηγῷ συνείποντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "οἱ",
+     "στρατιῶται",
+     "ἑκόντες",
+     "τῷ",
+     "στρατηγῷ",
+     "συνείποντο"
+    ]
+   },
+   {
+    "prompt": "Most of these fled to the mountains at dawn.",
+    "answer": "τούτων οἱ πλεῖστοι ἅμα τῇ ἠοῖ εἰς τὰ ὄρη ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτων",
+     "οἱ",
+     "πλεῖστοι",
+     "ἅμα",
+     "τῇ",
+     "ἠοῖ",
+     "εἰς",
+     "τά",
+     "ὄρη",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The bravest of his companions died in the battle.",
+    "answer": "οἱ ἄριστοι τῶν περὶ αὐτὸν ἐν τῇ μάχῃ κατέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄριστοι",
+     "τῶν",
+     "περί",
+     "αὐτόν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "κατέθανον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t5",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "It is impossible for the ignorant to rule well.",
+    "answer": "ἀδύνατόν ἐστι τοὺς ἀμαθεῖς καλῶς ἄρχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατον",
+     "ἐστι",
+     "τούς",
+     "ἀμαθεῖς",
+     "καλῶς",
+     "ἄρχειν"
+    ]
+   },
+   {
+    "prompt": "Glad was the messenger when he announced the victory.",
+    "answer": "ἄσμενος ἦν ὁ ἄγγελος ὅτε τὴν νίκην ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄσμενος",
+     "ἦν",
+     "ὁ",
+     "ἄγγελος",
+     "ὅτε",
+     "τήν",
+     "νίκην",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "Shrewd is the man who recognizes his own weakness.",
+    "answer": "συνετὸς ὁ τὴν ἑαυτοῦ ἀσθένειαν γιγνώσκων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συνετός",
+     "ὁ",
+     "τήν",
+     "ἑαυτοῦ",
+     "ἀσθένειαν",
+     "γιγνώσκων"
+    ]
+   },
+   {
+    "prompt": "The man who wishes to have more is never healthy.",
+    "answer": "ὑγιὴς οὐδέποτέ ἐστιν ὁ πλεονεκτεῖν ἐθέλων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑγιής",
+     "οὐδέποτε",
+     "ἐστιν",
+     "ὁ",
+     "πλεονεκτεῖν",
+     "ἐθέλων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t6",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "He asked how large the army was that he was leading.",
+    "answer": "ἐπήρετο πόσον τι ἄγοι τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπήρετο",
+     "πόσον",
+     "τι",
+     "ἄγοι",
+     "τό",
+     "στράτευμα"
+    ]
+   },
+   {
+    "prompt": "They received the leadership from their willing allies.",
+    "answer": "παρὰ ἑκόντων τῶν συμμάχων τὴν ἡγεμονίαν ἔλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρά",
+     "ἑκόντων",
+     "τῶν",
+     "συμμάχων",
+     "τήν",
+     "ἡγεμονίαν",
+     "ἔλαβον"
+    ]
+   },
+   {
+    "prompt": "This spring the soldiers marched into the hollow land.",
+    "answer": "τούτου τοῦ ἔαρος οἱ στρατιῶται εἰς τὴν κοίλην χώραν ἐπορεύθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτου",
+     "τοῦ",
+     "ἔαρος",
+     "οἱ",
+     "στρατιῶται",
+     "εἰς",
+     "τήν",
+     "κοίλην",
+     "χώραν",
+     "ἐπορεύθησαν"
+    ]
+   },
+   {
+    "prompt": "Both the generals, struck by arrows, died.",
+    "answer": "ἀμφότεροι οἱ στρατηγοὶ τοξεύμασι βληθέντες ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀμφότεροι",
+     "οἱ",
+     "στρατηγοί",
+     "τοξεύμασι",
+     "βληθέντες",
+     "ἀπέθανον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t7",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "Difficult is the road that leads up to virtue.",
+    "answer": "χαλεπὴ ἡ ὁδὸς ἡ πρὸς τὴν ἀρετὴν ἀνάγουσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπή",
+     "ἡ",
+     "ὁδός",
+     "πρός",
+     "τήν",
+     "ἀρετήν",
+     "ἀνάγουσα"
+    ]
+   },
+   {
+    "prompt": "The judges seemed just to all the citizens who were present.",
+    "answer": "δίκαιοι ἐδόκουν οἱ δικασταὶ πᾶσι τοῖς παροῦσι πολίταις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δίκαιοι",
+     "ἐδόκουν",
+     "οἱ",
+     "δικασταί",
+     "πᾶσι",
+     "τοῖς",
+     "παροῦσι",
+     "πολίταις"
+    ]
+   },
+   {
+    "prompt": "Small was the house of the old man, but beautiful.",
+    "answer": "μῑκρὰ ἦν ἡ τοῦ γέροντος οἰκία, καλὴ δέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μῑκρά",
+     "ἦν",
+     "ἡ",
+     "τοῦ",
+     "γέροντος",
+     "οἰκία",
+     "καλή",
+     "δέ"
+    ]
+   },
+   {
+    "prompt": "Although wounded, the general appeared fearless to his soldiers.",
+    "answer": "καίπερ τετρωμένος ἄφοβος ἐφαίνετο ὁ στρατηγὸς τοῖς στρατιώταις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "τετρωμένος",
+     "ἄφοβος",
+     "ἐφαίνετο",
+     "ὁ",
+     "στρατηγός",
+     "τοῖς",
+     "στρατιώταις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t8",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "This wise woman persuaded the whole assembly.",
+    "answer": "αὕτη ἡ σοφὴ γυνὴ πᾶσαν τὴν ἐκκλησίαν ἔπεισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "σοφή",
+     "γυνή",
+     "πᾶσαν",
+     "τήν",
+     "ἐκκλησίαν",
+     "ἔπεισεν"
+    ]
+   },
+   {
+    "prompt": "I admire that clever physician whom the city honors.",
+    "answer": "θαυμάζω ἐκεῖνον τὸν δεινὸν ἰᾱτρὸν ὃν ἡ πόλις τῑμᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "ἐκεῖνον",
+     "τόν",
+     "δεινόν",
+     "ἰᾱτρόν",
+     "ὅν",
+     "ἡ",
+     "πόλις",
+     "τῑμᾷ"
+    ]
+   },
+   {
+    "prompt": "These gifts the king sent to the general himself.",
+    "answer": "ταῦτα τὰ δῶρα ὁ βασιλεὺς αὐτῷ τῷ στρατηγῷ ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "τά",
+     "δῶρα",
+     "ὁ",
+     "βασιλεύς",
+     "αὐτῷ",
+     "τῷ",
+     "στρατηγῷ",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "This danger is greater than that one.",
+    "answer": "οὗτος ὁ κίνδῡνος μείζων ἐστὶν ἐκείνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "κίνδῡνος",
+     "μείζων",
+     "ἐστίν",
+     "ἐκείνου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t9",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The king himself was leading the soldiers against the enemy.",
+    "answer": "αὐτὸς ὁ βασιλεὺς τοὺς στρατιώτᾱς ἐπὶ τοὺς πολεμίους ἦγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτός",
+     "ὁ",
+     "βασιλεύς",
+     "τούς",
+     "στρατιώτᾱς",
+     "ἐπί",
+     "πολεμίους",
+     "ἦγεν"
+    ]
+   },
+   {
+    "prompt": "With my very own eyes I saw the ships being burned.",
+    "answer": "αὐτοῖς τοῖς ὀφθαλμοῖς εἶδον τὰς ναῦς καιομένᾱς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοῖς",
+     "τοῖς",
+     "ὀφθαλμοῖς",
+     "εἶδον",
+     "τάς",
+     "ναῦς",
+     "καιομένᾱς"
+    ]
+   },
+   {
+    "prompt": "His house is large, but their fields are small.",
+    "answer": "ἡ οἰκία αὐτοῦ μεγάλη, οἱ δὲ ἀγροὶ αὐτῶν μῑκροί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "οἰκία",
+     "αὐτοῦ",
+     "μεγάλη",
+     "οἱ",
+     "δέ",
+     "ἀγροί",
+     "αὐτῶν",
+     "μῑκροί"
+    ]
+   },
+   {
+    "prompt": "The queen herself set the captives free.",
+    "answer": "αὐτὴ ἡ βασίλεια τοὺς αἰχμαλώτους ἠλευθέρωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτή",
+     "ἡ",
+     "βασίλεια",
+     "τούς",
+     "αἰχμαλώτους",
+     "ἠλευθέρωσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t10",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "Most of these fled out of the city.",
+    "answer": "τούτων οἱ πλεῖστοι ἐκ τῆς πόλεως ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτων",
+     "οἱ",
+     "πλεῖστοι",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The bravest of those around him died in the battle.",
+    "answer": "οἱ ἄριστοι τῶν περὶ αὐτὸν ἐν τῇ μάχῃ ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄριστοι",
+     "τῶν",
+     "περί",
+     "αὐτόν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀπέθανον"
+    ]
+   },
+   {
+    "prompt": "All the soldiers, having thrown down their weapons, fled.",
+    "answer": "πάντες οἱ στρατιῶται τὰ ὅπλα ῥί̄ψαντες ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "οἱ",
+     "στρατιῶται",
+     "τά",
+     "ὅπλα",
+     "ῥί̄ψαντες",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Few of the enemy escaped the danger.",
+    "answer": "τῶν πολεμίων ὀλίγοι τὸν κίνδῡνον διέφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ὀλίγοι",
+     "τόν",
+     "κίνδῡνον",
+     "διέφυγον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-t11",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "In a single night they captured the city undefended.",
+    "answer": "μιᾷ νυκτὶ τὴν πόλιν ἀφύλακτον εἷλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μιᾷ",
+     "νυκτί",
+     "τήν",
+     "πόλιν",
+     "ἀφύλακτον",
+     "εἷλον"
+    ]
+   },
+   {
+    "prompt": "Holding his sword bare, he charged against the enemy.",
+    "answer": "γυμνὸν ἔχων τὸ ξίφος ἐπὶ τοὺς πολεμίους ὥρμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γυμνόν",
+     "ἔχων",
+     "τό",
+     "ξίφος",
+     "ἐπί",
+     "τούς",
+     "πολεμίους",
+     "ὥρμησεν"
+    ]
+   },
+   {
+    "prompt": "They left the field unsown that year.",
+    "answer": "ἄσπορον τὸν ἀγρὸν ἐκεῖνον τὸν ἐνιαυτὸν κατέλιπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄσπορον",
+     "τόν",
+     "ἀγρόν",
+     "ἐκεῖνον",
+     "ἐνιαυτόν",
+     "κατέλιπον"
+    ]
+   },
+   {
+    "prompt": "The doctor sent the sick man home cured.",
+    "answer": "ὁ ἰᾱτρὸς τὸν κάμνοντα ὑγιῆ οἴκαδε ἀπέπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰᾱτρός",
+     "τόν",
+     "κάμνοντα",
+     "ὑγιῆ",
+     "οἴκαδε",
+     "ἀπέπεμψεν"
+    ]
+   }
+  ]
+ }
+]

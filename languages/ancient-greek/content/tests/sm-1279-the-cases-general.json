@@ -1,0 +1,731 @@
+[
+ {
+  "id": "sm-1279-the-cases-general-t1",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "The soldiers struck the enemy with their spears.",
+    "answer": "οἱ στρατιῶται τοὺς πολεμίους τοῖς δόρασιν ἔπαισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τούς",
+     "πολεμίους",
+     "τοῖς",
+     "δόρασιν",
+     "ἔπαισαν"
+    ]
+   },
+   {
+    "prompt": "We conquered by cunning rather than by force.",
+    "answer": "δόλῳ μᾶλλον ἢ βίᾳ ἐνικήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δόλῳ",
+     "μᾶλλον",
+     "ἤ",
+     "βίᾳ",
+     "ἐνικήσαμεν"
+    ]
+   },
+   {
+    "prompt": "The general honored the brave with gifts.",
+    "answer": "ὁ στρατηγὸς τοὺς ἀνδρείους δώροις ἐτίμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τούς",
+     "ἀνδρείους",
+     "δώροις",
+     "ἐτίμησεν"
+    ]
+   },
+   {
+    "prompt": "The messenger revealed the truth by his silence.",
+    "answer": "ὁ ἄγγελος τῇ σιγῇ τὴν ἀλήθειαν ἐδήλωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τῇ",
+     "σιγῇ",
+     "τήν",
+     "ἀλήθειαν",
+     "ἐδήλωσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t2",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "On the third day the army arrived at the river.",
+    "answer": "τῇ τρίτῃ ἡμέρᾳ ἡ στρατιὰ πρὸς τὸν ποταμὸν ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῇ",
+     "τρίτῃ",
+     "ἡμέρᾳ",
+     "ἡ",
+     "στρατιά",
+     "πρός",
+     "τόν",
+     "ποταμόν",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "On that night the enemies fled from the camp.",
+    "answer": "ἐκείνῃ τῇ νυκτὶ οἱ πολέμιοι ἐκ τοῦ στρατοπέδου ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνῃ",
+     "τῇ",
+     "νυκτί",
+     "οἱ",
+     "πολέμιοι",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "At Marathon the Athenians defeated the Persians.",
+    "answer": "Μαραθῶνι οἱ Ἀθηναῖοι τοὺς Πέρσας ἐνίκησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μαραθῶνι",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τούς",
+     "Πέρσας",
+     "ἐνίκησαν"
+    ]
+   },
+   {
+    "prompt": "Every year they celebrate the festival at Athens.",
+    "answer": "κατὰ ἕκαστον ἔτος Ἀθήνησι τὴν ἑορτὴν ἑορτάζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατά",
+     "ἕκαστον",
+     "ἔτος",
+     "Ἀθήνησι",
+     "τήν",
+     "ἑορτήν",
+     "ἑορτάζουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t3",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "When night came on he ceased from his labor.",
+    "answer": "τῆς νυκτὸς ἐπιγενομένης τοῦ πόνου ἐπαύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "νυκτός",
+     "ἐπιγενομένης",
+     "τοῦ",
+     "πόνου",
+     "ἐπαύσατο"
+    ]
+   },
+   {
+    "prompt": "The citizens deprived the tyrant of his power.",
+    "answer": "οἱ πολῖται τὸν τύραννον τῆς ἀρχῆς ἀπεστέρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τόν",
+     "τύραννον",
+     "τῆς",
+     "ἀρχῆς",
+     "ἀπεστέρησαν"
+    ]
+   },
+   {
+    "prompt": "The wise man refrains from shameful pleasures.",
+    "answer": "ὁ σοφὸς τῶν αἰσχρῶν ἡδονῶν ἀπέχεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "τῶν",
+     "αἰσχρῶν",
+     "ἡδονῶν",
+     "ἀπέχεται"
+    ]
+   },
+   {
+    "prompt": "The children long for their absent father.",
+    "answer": "οἱ παῖδες τοῦ ἀπόντος πατρὸς ἐπιθυμοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τοῦ",
+     "ἀπόντος",
+     "πατρός",
+     "ἐπιθυμοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t4",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "The king ruled over many nations.",
+    "answer": "ὁ βασιλεὺς πολλῶν ἐθνῶν ἦρχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεύς",
+     "πολλῶν",
+     "ἐθνῶν",
+     "ἦρχεν"
+    ]
+   },
+   {
+    "prompt": "Remember the words of your teacher.",
+    "answer": "τῶν τοῦ διδασκάλου λόγων μέμνησο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "τοῦ",
+     "διδασκάλου",
+     "λόγων",
+     "μέμνησο"
+    ]
+   },
+   {
+    "prompt": "The general took command of the whole army.",
+    "answer": "ὁ στρατηγὸς πάσης τῆς στρατιᾶς ἐκράτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "πάσης",
+     "τῆς",
+     "στρατιᾶς",
+     "ἐκράτησεν"
+    ]
+   },
+   {
+    "prompt": "We heard the voice of the herald.",
+    "answer": "τῆς τοῦ κήρυκος φωνῆς ἠκούσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "τοῦ",
+     "κήρυκος",
+     "φωνῆς",
+     "ἠκούσαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t5",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "The soldiers obeyed their general willingly.",
+    "answer": "οἱ στρατιῶται τῷ στρατηγῷ ἑκόντες ἐπείθοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τῷ",
+     "στρατηγῷ",
+     "ἑκόντες",
+     "ἐπείθοντο"
+    ]
+   },
+   {
+    "prompt": "The gods help those who toil.",
+    "answer": "οἱ θεοὶ τοῖς πονοῦσι βοηθοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "τοῖς",
+     "πονοῦσι",
+     "βοηθοῦσιν"
+    ]
+   },
+   {
+    "prompt": "We met the strangers near the gates.",
+    "answer": "τοῖς ξένοις πρὸς ταῖς πύλαις ἐνετύχομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ξένοις",
+     "πρός",
+     "ταῖς",
+     "πύλαις",
+     "ἐνετύχομεν"
+    ]
+   },
+   {
+    "prompt": "The young man followed the philosopher everywhere.",
+    "answer": "ὁ νεανίας τῷ φιλοσόφῳ πανταχοῦ ἠκολούθει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "τῷ",
+     "φιλοσόφῳ",
+     "πανταχοῦ",
+     "ἠκολούθει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t6",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "Virtue is more precious than gold.",
+    "answer": "ἡ ἀρετὴ χρυσοῦ τιμιωτέρα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀρετή",
+     "χρυσοῦ",
+     "τιμιωτέρα",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The army marched out with much shouting.",
+    "answer": "ἡ στρατιὰ πολλῇ βοῇ ἐξῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "στρατιά",
+     "πολλῇ",
+     "βοῇ",
+     "ἐξῆλθεν"
+    ]
+   },
+   {
+    "prompt": "They fought the barbarians with the allies.",
+    "answer": "τοῖς βαρβάροις μετὰ τῶν συμμάχων ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "βαρβάροις",
+     "μετά",
+     "τῶν",
+     "συμμάχων",
+     "ἐμάχοντο"
+    ]
+   },
+   {
+    "prompt": "The old man surpassed everyone in wisdom.",
+    "answer": "ὁ γέρων σοφίᾳ πάντων διέφερεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "σοφίᾳ",
+     "πάντων",
+     "διέφερεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t7",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "The general honored the brave men with gifts.",
+    "answer": "τοὺς ἀλκίμους δώροις ὁ στρατηγὸς ἐτίμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "ἀλκίμους",
+     "δώροις",
+     "ὁ",
+     "στρατηγός",
+     "ἐτίμησεν"
+    ]
+   },
+   {
+    "prompt": "The Colchians conquered the enemy by cunning, not by force.",
+    "answer": "οἱ Κόλχοι δόλῳ, οὐ βίᾳ, τοὺς πολεμίους ἐνίκησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Κόλχοι",
+     "δόλῳ",
+     "οὐ",
+     "βίᾳ",
+     "τούς",
+     "πολεμίους",
+     "ἐνίκησαν"
+    ]
+   },
+   {
+    "prompt": "We nourish the body with food, but the soul with wisdom.",
+    "answer": "τὸ μὲν σῶμα σίτῳ, τὴν δὲ ψυχὴν σοφίᾳ τρέφομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "μέν",
+     "σῶμα",
+     "σίτῳ",
+     "τήν",
+     "δέ",
+     "ψυχήν",
+     "σοφίᾳ",
+     "τρέφομεν"
+    ]
+   },
+   {
+    "prompt": "The old man walks slowly, leaning on a staff.",
+    "answer": "ὁ γέρων βραδέως βαδίζει, βακτηρίᾳ ἐρειδόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "βραδέως",
+     "βαδίζει",
+     "βακτηρίᾳ",
+     "ἐρειδόμενος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t8",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "On that night the citizens fled out of the city.",
+    "answer": "ἐκείνῃ τῇ νυκτὶ οἱ πολῖται ἐκ τῆς πόλεως ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνῃ",
+     "τῇ",
+     "νυκτί",
+     "οἱ",
+     "πολῖται",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "At Marathon they fought a great battle against the barbarians.",
+    "answer": "Μαραθῶνι μεγάλην μάχην πρὸς τοὺς βαρβάρους ἐμαχέσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μαραθῶνι",
+     "μεγάλην",
+     "μάχην",
+     "πρός",
+     "τούς",
+     "βαρβάρους",
+     "ἐμαχέσαντο"
+    ]
+   },
+   {
+    "prompt": "In the same year the plague fell upon the Athenians.",
+    "answer": "τῷ αὐτῷ ἔτει ἡ νόσος τοῖς Ἀθηναίοις ἐνέπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "αὐτῷ",
+     "ἔτει",
+     "ἡ",
+     "νόσος",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "ἐνέπεσεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers remained on the plain for many days.",
+    "answer": "οἱ στρατιῶται πολλὰς ἡμέρας ἐν τῷ πεδίῳ ἔμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πολλάς",
+     "ἡμέρας",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ἔμενον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t9",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "The exile was deprived of his fatherland and his friends.",
+    "answer": "ὁ φυγὰς τῆς πατρίδος καὶ τῶν φίλων ἐστερήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φυγάς",
+     "τῆς",
+     "πατρίδος",
+     "καί",
+     "τῶν",
+     "φίλων",
+     "ἐστερήθη"
+    ]
+   },
+   {
+    "prompt": "Cease from your folly and obey the wise.",
+    "answer": "παῦσαι τῆς ἀνοίας καὶ τοῖς σοφοῖς πείθου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παῦσαι",
+     "τῆς",
+     "ἀνοίας",
+     "καί",
+     "τοῖς",
+     "σοφοῖς",
+     "πείθου"
+    ]
+   },
+   {
+    "prompt": "The good man abstains from wine and from all excess.",
+    "answer": "ὁ ἀγαθὸς οἴνου καὶ πάσης ὑπερβολῆς ἀπέχεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀγαθός",
+     "οἴνου",
+     "καί",
+     "πάσης",
+     "ὑπερβολῆς",
+     "ἀπέχεται"
+    ]
+   },
+   {
+    "prompt": "The river flows from the high mountains.",
+    "answer": "ὁ ποταμὸς ἀπὸ τῶν ὑψηλῶν ὀρῶν ῥεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμός",
+     "ἀπό",
+     "τῶν",
+     "ὑψηλῶν",
+     "ὀρῶν",
+     "ῥεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t10",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "To a free man nothing is sweeter than freedom itself.",
+    "answer": "τῷ ἐλευθέρῳ οὐδὲν γλυκύτερον αὐτῆς τῆς ἐλευθερίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "ἐλευθέρῳ",
+     "οὐδέν",
+     "γλυκύτερον",
+     "αὐτῆς",
+     "τῆς",
+     "ἐλευθερίας"
+    ]
+   },
+   {
+    "prompt": "The wise desire virtue more than pleasure.",
+    "answer": "οἱ σοφοὶ ἀρετῆς μᾶλλον ἢ ἡδονῆς ἐπιθυμοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοί",
+     "ἀρετῆς",
+     "μᾶλλον",
+     "ἤ",
+     "ἡδονῆς",
+     "ἐπιθυμοῦσιν"
+    ]
+   },
+   {
+    "prompt": "Few of the citizens remembered the ancient laws.",
+    "answer": "ὀλίγοι τῶν πολιτῶν τῶν ἀρχαίων νόμων ἐμέμνηντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀλίγοι",
+     "τῶν",
+     "πολιτῶν",
+     "ἀρχαίων",
+     "νόμων",
+     "ἐμέμνηντο"
+    ]
+   },
+   {
+    "prompt": "The good judge is worthy of great honor among the citizens.",
+    "answer": "ὁ ἀγαθὸς δικαστὴς μεγάλης παρὰ τοῖς πολίταις τιμῆς ἄξιος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀγαθός",
+     "δικαστής",
+     "μεγάλης",
+     "παρά",
+     "τοῖς",
+     "πολίταις",
+     "τιμῆς",
+     "ἄξιος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t11",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "The young man trusts his teacher in all things.",
+    "answer": "ὁ νεανίας τῷ διδασκάλῳ ἐν πᾶσι πιστεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "τῷ",
+     "διδασκάλῳ",
+     "ἐν",
+     "πᾶσι",
+     "πιστεύει"
+    ]
+   },
+   {
+    "prompt": "The gods always help the just.",
+    "answer": "οἱ θεοὶ τοῖς δικαίοις ἀεὶ βοηθοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "τοῖς",
+     "δικαίοις",
+     "ἀεί",
+     "βοηθοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The general met the ambassadors at the gates.",
+    "answer": "ὁ στρατηγὸς τοῖς πρέσβεσι πρὸς ταῖς πύλαις ἐνέτυχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τοῖς",
+     "πρέσβεσι",
+     "πρός",
+     "ταῖς",
+     "πύλαις",
+     "ἐνέτυχεν"
+    ]
+   },
+   {
+    "prompt": "It befits good citizens to obey the laws of the city.",
+    "answer": "τοῖς ἀγαθοῖς πολίταις προσήκει τοῖς τῆς πόλεως νόμοις πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ἀγαθοῖς",
+     "πολίταις",
+     "προσήκει",
+     "τῆς",
+     "πόλεως",
+     "νόμοις",
+     "πείθεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1279-the-cases-general-t12",
+  "sectionId": "sm-1279-the-cases-general",
+  "questions": [
+   {
+    "prompt": "The tyrant ruled the citizens through fear.",
+    "answer": "ὁ τύραννος τῶν πολιτῶν φόβῳ ἦρχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τῶν",
+     "πολιτῶν",
+     "φόβῳ",
+     "ἦρχεν"
+    ]
+   },
+   {
+    "prompt": "The Spartans gained control of the sea after the war.",
+    "answer": "οἱ Λακεδαιμόνιοι μετὰ τὸν πόλεμον τῆς θαλάττης ἐκράτησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "μετά",
+     "τόν",
+     "πόλεμον",
+     "τῆς",
+     "θαλάττης",
+     "ἐκράτησαν"
+    ]
+   },
+   {
+    "prompt": "The slave was freed from his master by the law.",
+    "answer": "ὁ δοῦλος ὑπὸ τοῦ νόμου τοῦ δεσπότου ἠλευθερώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "ὑπό",
+     "τοῦ",
+     "νόμου",
+     "δεσπότου",
+     "ἠλευθερώθη"
+    ]
+   },
+   {
+    "prompt": "The children surpassed their fathers in wisdom.",
+    "answer": "οἱ παῖδες τῶν πατέρων σοφίᾳ διέφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τῶν",
+     "πατέρων",
+     "σοφίᾳ",
+     "διέφερον"
+    ]
+   }
+  ]
+ }
+]

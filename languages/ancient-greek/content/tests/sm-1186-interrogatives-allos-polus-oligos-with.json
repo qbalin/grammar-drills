@@ -1,0 +1,631 @@
+[
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t1",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "We were conversing about the laws; which ones do you mean?",
+    "answer": "περὶ τῶν νόμων διελεγόμεθα· τοὺς ποίους λέγεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "τῶν",
+     "νόμων",
+     "διελεγόμεθα",
+     "τοὺς",
+     "ποίους",
+     "λέγεις"
+    ]
+   },
+   {
+    "prompt": "You promised gifts to the soldiers; the what gifts?",
+    "answer": "δῶρα τοῖς στρατιώταις ὑπέσχου· τὰ ποῖα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῶρα",
+     "τοῖς",
+     "στρατιώταις",
+     "ὑπέσχου",
+     "τὰ",
+     "ποῖα"
+    ]
+   },
+   {
+    "prompt": "The ambassadors have arrived; from which city?",
+    "answer": "οἱ πρέσβεις ἥκουσιν· ἀπὸ τῆς ποίας πόλεως;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἥκουσιν",
+     "ἀπὸ",
+     "τῆς",
+     "ποίας",
+     "πόλεως"
+    ]
+   },
+   {
+    "prompt": "He was blaming the generals; which ones does he wish to punish?",
+    "answer": "τοὺς στρατηγοὺς ᾐτιᾶτο· τοὺς τίνας κολάσαι βούλεται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "στρατηγοὺς",
+     "ᾐτιᾶτο",
+     "τίνας",
+     "κολάσαι",
+     "βούλεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t2",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "The rest of Greece feared the power of the Persians.",
+    "answer": "ἡ ἄλλη Ἑλλὰς τὴν τῶν Περσῶν δύναμιν ἐφοβεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἄλλη",
+     "Ἑλλὰς",
+     "τὴν",
+     "τῶν",
+     "Περσῶν",
+     "δύναμιν",
+     "ἐφοβεῖτο"
+    ]
+   },
+   {
+    "prompt": "The other Greeks abandoned the allies during the siege.",
+    "answer": "οἱ ἄλλοι Ἕλληνες ἐν τῇ πολιορκίᾳ τοὺς συμμάχους ἐγκατέλιπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄλλοι",
+     "Ἕλληνες",
+     "ἐν",
+     "τῇ",
+     "πολιορκίᾳ",
+     "τοὺς",
+     "συμμάχους",
+     "ἐγκατέλιπον"
+    ]
+   },
+   {
+    "prompt": "Some fled, but the rest remained in the camp.",
+    "answer": "οἱ μὲν ἔφυγον, οἱ δὲ ἄλλοι ἐν τῷ στρατοπέδῳ ἔμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "ἔφυγον",
+     "δὲ",
+     "ἄλλοι",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "ἔμειναν"
+    ]
+   },
+   {
+    "prompt": "The other civic affairs he entrusted to his friends.",
+    "answer": "τὰ ἄλλα τὰ πολιτικὰ τοῖς φίλοις ἐπέτρεψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ἄλλα",
+     "πολιτικὰ",
+     "τοῖς",
+     "φίλοις",
+     "ἐπέτρεψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t3",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "The multitude prefer wealth to virtue.",
+    "answer": "οἱ πολλοὶ τὸν πλοῦτον μᾶλλον τῆς ἀρετῆς προτιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολλοὶ",
+     "τὸν",
+     "πλοῦτον",
+     "μᾶλλον",
+     "τῆς",
+     "ἀρετῆς",
+     "προτιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "The greater part of the army was destroyed in the winter.",
+    "answer": "τὸ πολὺ τοῦ στρατεύματος ἐν τῷ χειμῶνι διεφθάρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "πολὺ",
+     "τοῦ",
+     "στρατεύματος",
+     "ἐν",
+     "τῷ",
+     "χειμῶνι",
+     "διεφθάρη"
+    ]
+   },
+   {
+    "prompt": "The majority voted to make war on the islanders.",
+    "answer": "οἱ πλείονες πολεμεῖν τοῖς νησιώταις ἐψηφίσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πλείονες",
+     "πολεμεῖν",
+     "τοῖς",
+     "νησιώταις",
+     "ἐψηφίσαντο"
+    ]
+   },
+   {
+    "prompt": "Most of the citizens kept choosing peace.",
+    "answer": "οἱ πλεῖστοι τῶν πολιτῶν τὴν εἰρήνην προῃροῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πλεῖστοι",
+     "τῶν",
+     "πολιτῶν",
+     "τὴν",
+     "εἰρήνην",
+     "προῃροῦντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t4",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "The oligarchs were plotting against the people.",
+    "answer": "οἱ ὀλίγοι τῷ δήμῳ ἐπεβούλευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὀλίγοι",
+     "τῷ",
+     "δήμῳ",
+     "ἐπεβούλευον"
+    ]
+   },
+   {
+    "prompt": "Few of the soldiers were willing to guard the wall by night.",
+    "answer": "ὀλίγοι τῶν στρατιωτῶν νυκτὸς τὸ τεῖχος φυλάττειν ἤθελον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀλίγοι",
+     "τῶν",
+     "στρατιωτῶν",
+     "νυκτὸς",
+     "τὸ",
+     "τεῖχος",
+     "φυλάττειν",
+     "ἤθελον"
+    ]
+   },
+   {
+    "prompt": "The multitude drove the oligarchs out of the city.",
+    "answer": "οἱ πολλοὶ τοὺς ὀλίγους ἐκ τῆς πόλεως ἐξέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολλοὶ",
+     "τοὺς",
+     "ὀλίγους",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐξέβαλον"
+    ]
+   },
+   {
+    "prompt": "A few of the citizens preferred the oligarchs to the people.",
+    "answer": "ὀλίγοι τῶν πολιτῶν τοὺς ὀλίγους τοῦ δήμου προετίμων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀλίγοι",
+     "τῶν",
+     "πολιτῶν",
+     "τοὺς",
+     "ὀλίγους",
+     "τοῦ",
+     "δήμου",
+     "προετίμων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t5",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "When the general saw that the corpses were many, he wept.",
+    "answer": "ἐπεὶ ὁ στρατηγὸς πολλοὺς εἶδε τοὺς νεκρούς, ἐδάκρυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "πολλοὺς",
+     "εἶδε",
+     "τοὺς",
+     "νεκρούς",
+     "ἐδάκρυσεν"
+    ]
+   },
+   {
+    "prompt": "There was abundance of wine at the feast.",
+    "answer": "πολὺς ἦν ὁ οἶνος ἐν τῇ ἑορτῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολὺς",
+     "ἦν",
+     "ὁ",
+     "οἶνος",
+     "ἐν",
+     "τῇ",
+     "ἑορτῇ"
+    ]
+   },
+   {
+    "prompt": "The women who were lamenting the fallen were many.",
+    "answer": "πολλαὶ ἦσαν αἱ γυναῖκες αἱ τοὺς πεσόντας θρηνοῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλαὶ",
+     "ἦσαν",
+     "αἱ",
+     "γυναῖκες",
+     "τοὺς",
+     "πεσόντας",
+     "θρηνοῦσαι"
+    ]
+   },
+   {
+    "prompt": "When he perceived that the dangers were many, he withdrew from the war.",
+    "answer": "ἐπεὶ πολλοὺς ᾔσθετο τοὺς κινδύνους, τοῦ πολέμου ἀπέστη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "πολλοὺς",
+     "ᾔσθετο",
+     "τοὺς",
+     "κινδύνους",
+     "τοῦ",
+     "πολέμου",
+     "ἀπέστη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t6",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "You are praising a poet; which one do you mean?",
+    "answer": "ποιητήν τινα ἐπαινεῖς· τὸν ποῖον λέγεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποιητήν",
+     "τινα",
+     "ἐπαινεῖς",
+     "τὸν",
+     "ποῖον",
+     "λέγεις"
+    ]
+   },
+   {
+    "prompt": "The rest of the day they spent hunting.",
+    "answer": "τὴν ἄλλην ἡμέραν θηρῶντες διέτριψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἄλλην",
+     "ἡμέραν",
+     "θηρῶντες",
+     "διέτριψαν"
+    ]
+   },
+   {
+    "prompt": "To whom do you bid us come, us being who?",
+    "answer": "παρὰ τίνας τοὺς ἡμᾶς κελεύεις ἐλθεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρὰ",
+     "τίνας",
+     "τοὺς",
+     "ἡμᾶς",
+     "κελεύεις",
+     "ἐλθεῖν"
+    ]
+   },
+   {
+    "prompt": "The others were silent, but Socrates alone answered.",
+    "answer": "οἱ μὲν ἄλλοι ἐσίγων, μόνος δὲ Σωκράτης ἀπεκρίνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "ἄλλοι",
+     "ἐσίγων",
+     "μόνος",
+     "δὲ",
+     "Σωκράτης",
+     "ἀπεκρίνατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t7",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "You made mention of many evils; which ones do you mean?",
+    "answer": "πολλῶν κακῶν ἐμνήσθης· τὰ ποῖα λέγεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλῶν",
+     "κακῶν",
+     "ἐμνήσθης",
+     "τὰ",
+     "ποῖα",
+     "λέγεις"
+    ]
+   },
+   {
+    "prompt": "The other Greeks used to admire the excellence of the Spartans.",
+    "answer": "οἱ ἄλλοι Ἕλληνες τὴν τῶν Λακεδαιμονίων ἀρετὴν ἐθαύμαζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄλλοι",
+     "Ἕλληνες",
+     "τὴν",
+     "τῶν",
+     "Λακεδαιμονίων",
+     "ἀρετὴν",
+     "ἐθαύμαζον"
+    ]
+   },
+   {
+    "prompt": "The oligarchs seized the acropolis by night.",
+    "answer": "οἱ ὀλίγοι τὴν ἀκρόπολιν νυκτὸς κατέλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὀλίγοι",
+     "τὴν",
+     "ἀκρόπολιν",
+     "νυκτὸς",
+     "κατέλαβον"
+    ]
+   },
+   {
+    "prompt": "When the soldiers saw that the meat was abundant, they rejoiced.",
+    "answer": "ἐπεὶ οἱ στρατιῶται πολλὰ ἑώρων τὰ κρέα, ἥσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "στρατιῶται",
+     "πολλὰ",
+     "ἑώρων",
+     "τὰ",
+     "κρέα",
+     "ἥσθησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t8",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "The ambassadors brought gifts; which ones do you mean?",
+    "answer": "οἱ πρέσβεις δῶρα ἤνεγκαν· τὰ ποῖα λέγεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "δῶρα",
+     "ἤνεγκαν",
+     "τὰ",
+     "ποῖα",
+     "λέγεις"
+    ]
+   },
+   {
+    "prompt": "The rest of the army fled into the mountains.",
+    "answer": "τὸ ἄλλο στράτευμα εἰς τὰ ὄρη ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἄλλο",
+     "στράτευμα",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "The majority voted to help the allies.",
+    "answer": "οἱ πλείονες τοῖς συμμάχοις βοηθεῖν ἐψηφίσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πλείονες",
+     "τοῖς",
+     "συμμάχοις",
+     "βοηθεῖν",
+     "ἐψηφίσαντο"
+    ]
+   },
+   {
+    "prompt": "The multitude tend the body more than the soul.",
+    "answer": "οἱ πολλοὶ τὰ σώματα μᾶλλον ἢ τὰς ψυχὰς θεραπεύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολλοὶ",
+     "τὰ",
+     "σώματα",
+     "μᾶλλον",
+     "ἢ",
+     "τὰς",
+     "ψυχὰς",
+     "θεραπεύουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t9",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "Follow me to the house; to which one do you mean?",
+    "answer": "ἀκολούθει μοι πρὸς τὴν οἰκίαν· πρὸς τὴν ποίαν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκολούθει",
+     "μοι",
+     "πρὸς",
+     "τὴν",
+     "οἰκίαν",
+     "ποίαν"
+    ]
+   },
+   {
+    "prompt": "While the others were sleeping, the guard was not asleep.",
+    "answer": "τῶν ἄλλων καθευδόντων ὁ φύλαξ οὐκ ἐκάθευδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἄλλων",
+     "καθευδόντων",
+     "ὁ",
+     "φύλαξ",
+     "οὐκ",
+     "ἐκάθευδεν"
+    ]
+   },
+   {
+    "prompt": "The greater part of the money was spent on the war.",
+    "answer": "τὸ πολὺ τῶν χρημάτων εἰς τὸν πόλεμον ἀνηλώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "πολὺ",
+     "τῶν",
+     "χρημάτων",
+     "εἰς",
+     "τὸν",
+     "πόλεμον",
+     "ἀνηλώθη"
+    ]
+   },
+   {
+    "prompt": "Cyrus, when he saw that the enemy were numerous, grew afraid.",
+    "answer": "ὁ Κῦρος, ἐπεὶ πολλοὺς ἑώρα τοὺς πολεμίους, ἐφοβεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "ἐπεὶ",
+     "πολλοὺς",
+     "ἑώρα",
+     "τοὺς",
+     "πολεμίους",
+     "ἐφοβεῖτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1186-interrogatives-allos-polus-oligos-with-t10",
+  "sectionId": "sm-1186-interrogatives-allos-polus-oligos-with",
+  "questions": [
+   {
+    "prompt": "You are blaming some of the citizens; which ones do you mean?",
+    "answer": "ἐνίους τῶν πολιτῶν μέμφῃ· τοὺς ποίους λέγεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνίους",
+     "τῶν",
+     "πολιτῶν",
+     "μέμφῃ",
+     "τοὺς",
+     "ποίους",
+     "λέγεις"
+    ]
+   },
+   {
+    "prompt": "One man alone stood up, but the rest kept silent.",
+    "answer": "εἷς μόνος ἀνέστη, οἱ δὲ ἄλλοι ἐσίγων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἷς",
+     "μόνος",
+     "ἀνέστη",
+     "οἱ",
+     "δὲ",
+     "ἄλλοι",
+     "ἐσίγων"
+    ]
+   },
+   {
+    "prompt": "The most fear death, but the few despise it.",
+    "answer": "οἱ μὲν πλεῖστοι τὸν θάνατον φοβοῦνται, οἱ δὲ ὀλίγοι καταφρονοῦσιν αὐτοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "πλεῖστοι",
+     "τὸν",
+     "θάνατον",
+     "φοβοῦνται",
+     "δὲ",
+     "ὀλίγοι",
+     "καταφρονοῦσιν",
+     "αὐτοῦ"
+    ]
+   },
+   {
+    "prompt": "Most of the sailors perished in the storm.",
+    "answer": "οἱ πλεῖστοι τῶν ναυτῶν ἐν τῷ χειμῶνι διεφθάρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πλεῖστοι",
+     "τῶν",
+     "ναυτῶν",
+     "ἐν",
+     "τῷ",
+     "χειμῶνι",
+     "διεφθάρησαν"
+    ]
+   }
+  ]
+ }
+]

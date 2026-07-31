@@ -1,0 +1,782 @@
+[
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t1",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Someone will pay the penalty for these wrongs.",
+    "answer": "δώσει τις δίκην τῶν ἁμαρτημάτων τούτων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δώσει",
+     "τις",
+     "δίκην",
+     "τῶν",
+     "ἁμαρτημάτων",
+     "τούτων"
+    ]
+   },
+   {
+    "prompt": "If anyone approaches, tell him to wait.",
+    "answer": "ἐάν τις προσίῃ, κέλευε αὐτὸν μένειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "προσίῃ",
+     "κέλευε",
+     "αὐτόν",
+     "μένειν"
+    ]
+   },
+   {
+    "prompt": "But everybody detests that tyrant.",
+    "answer": "ἀλλὰ μισεῖ τις τὸν τύραννον ἐκεῖνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "μισεῖ",
+     "τις",
+     "τόν",
+     "τύραννον",
+     "ἐκεῖνον"
+    ]
+   },
+   {
+    "prompt": "I saw something wonderful in the marketplace.",
+    "answer": "εἶδόν τι θαυμαστὸν ἐν τῇ ἀγορᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶδόν",
+     "τι",
+     "θαυμαστόν",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t2",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "A certain messenger announced the victory to the general.",
+    "answer": "ἄγγελός τις τὴν νίκην τῷ στρατηγῷ ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγγελός",
+     "τις",
+     "τήν",
+     "νίκην",
+     "τῷ",
+     "στρατηγῷ",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "Another dignitary sailed to the islands with the soldiers.",
+    "answer": "ἕτερός τις δυνάστης εἰς τὰς νήσους μετὰ τῶν στρατιωτῶν ἔπλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕτερός",
+     "τις",
+     "δυνάστης",
+     "εἰς",
+     "τάς",
+     "νήσους",
+     "μετά",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἔπλευσεν"
+    ]
+   },
+   {
+    "prompt": "The daimones are a sort of gods, as it seems.",
+    "answer": "οἱ δαίμονες θεοί τινές εἰσιν, ὡς ἔοικεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δαίμονες",
+     "θεοί",
+     "τινές",
+     "εἰσιν",
+     "ὡς",
+     "ἔοικεν"
+    ]
+   },
+   {
+    "prompt": "A very terrible man led the army through the mountains.",
+    "answer": "δεινός τις ἀνὴρ τὸ στράτευμα διὰ τῶν ὀρῶν ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινός",
+     "τις",
+     "ἀνήρ",
+     "τό",
+     "στράτευμα",
+     "διά",
+     "τῶν",
+     "ὀρῶν",
+     "ἤγαγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t3",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "About thirty ships arrived at the harbor.",
+    "answer": "τριάκοντά τινες νῆες εἰς τὸν λιμένα ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τριάκοντά",
+     "τινες",
+     "νῆες",
+     "εἰς",
+     "τόν",
+     "λιμένα",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "He seemed to say something of moment about the war.",
+    "answer": "ἔδοξέ τι λέγειν περὶ τοῦ πολέμου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξέ",
+     "τι",
+     "λέγειν",
+     "περί",
+     "τοῦ",
+     "πολέμου"
+    ]
+   },
+   {
+    "prompt": "The old man is pretty nearly persuaded by these words.",
+    "answer": "ὁ γέρων σχεδόν τι πέπεισται τοῖς λόγοις τούτοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "σχεδόν",
+     "τι",
+     "πέπεισται",
+     "τοῖς",
+     "λόγοις",
+     "τούτοις"
+    ]
+   },
+   {
+    "prompt": "A sort of gadfly roused the citizens in the assembly.",
+    "answer": "μύωψ τις τοὺς πολίτας ἐν τῇ ἐκκλησίᾳ ἤγειρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μύωψ",
+     "τις",
+     "τούς",
+     "πολίτας",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἤγειρεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t4",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Those men wish to seem to be somebody among the Greeks.",
+    "answer": "ἐκεῖνοι βούλονται δοκεῖν τινες εἶναι ἐν τοῖς Ἕλλησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνοι",
+     "βούλονται",
+     "δοκεῖν",
+     "τινες",
+     "εἶναι",
+     "ἐν",
+     "τοῖς",
+     "Ἕλλησιν"
+    ]
+   },
+   {
+    "prompt": "Few or none of the enemy escaped.",
+    "answer": "ἢ τις ἢ οὐδεὶς τῶν πολεμίων ἐξέφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤ",
+     "τις",
+     "οὐδείς",
+     "τῶν",
+     "πολεμίων",
+     "ἐξέφυγεν"
+    ]
+   },
+   {
+    "prompt": "The prisoner knows little or nothing about the plot.",
+    "answer": "ὁ δεσμώτης ἢ τι ἢ οὐδὲν περὶ τῆς ἐπιβουλῆς οἶδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δεσμώτης",
+     "ἤ",
+     "τι",
+     "οὐδέν",
+     "περί",
+     "τῆς",
+     "ἐπιβουλῆς",
+     "οἶδεν"
+    ]
+   },
+   {
+    "prompt": "The young man thought he was somebody because of his wealth.",
+    "answer": "ὁ νεανίας ᾤετό τις εἶναι διὰ τὸν πλοῦτον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "ᾤετό",
+     "τις",
+     "εἶναι",
+     "διά",
+     "τόν",
+     "πλοῦτον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t5",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Every one praises the man who dies for his country.",
+    "answer": "πᾶς τις ἐπαινεῖ τὸν ὑπὲρ τῆς πατρίδος ἀποθνῄσκοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶς",
+     "τις",
+     "ἐπαινεῖ",
+     "τόν",
+     "ὑπέρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκοντα"
+    ]
+   },
+   {
+    "prompt": "Each one guards his own possessions carefully.",
+    "answer": "ἕκαστός τις τὰ ἑαυτοῦ χρήματα ἐπιμελῶς φυλάττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕκαστός",
+     "τις",
+     "τά",
+     "ἑαυτοῦ",
+     "χρήματα",
+     "ἐπιμελῶς",
+     "φυλάττει"
+    ]
+   },
+   {
+    "prompt": "Someone, you know who, will pay the penalty before long.",
+    "answer": "δώσει τις δίκην οὐκ εἰς μακράν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δώσει",
+     "τις",
+     "δίκην",
+     "οὐκ",
+     "εἰς",
+     "μακράν"
+    ]
+   },
+   {
+    "prompt": "Whenever the master arrives, whoever he is, obey him.",
+    "answer": "ὅταν ὁ δεσπότης παρῇ τις, πείθεσθε αὐτῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "δεσπότης",
+     "παρῇ",
+     "τις",
+     "πείθεσθε",
+     "αὐτῷ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t6",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "When someone had betrayed the city, the citizens fled.",
+    "answer": "προδόντος τινὸς τὴν πόλιν, οἱ πολῖται ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προδόντος",
+     "τινός",
+     "τήν",
+     "πόλιν",
+     "οἱ",
+     "πολῖται",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "I wish to learn something worthy of memory from you.",
+    "answer": "βούλομαι μαθεῖν τι παρὰ σοῦ ἄξιον μνήμης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βούλομαι",
+     "μαθεῖν",
+     "τι",
+     "παρά",
+     "σοῦ",
+     "ἄξιον",
+     "μνήμης"
+    ]
+   },
+   {
+    "prompt": "If some god helps us, we shall conquer the barbarians.",
+    "answer": "ἐάν τις θεὸς ἡμῖν βοηθῇ, τοὺς βαρβάρους νικήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "θεός",
+     "ἡμῖν",
+     "βοηθῇ",
+     "τούς",
+     "βαρβάρους",
+     "νικήσομεν"
+    ]
+   },
+   {
+    "prompt": "A certain craftsman built a marvelous house near the temple.",
+    "answer": "τέκτων τις θαυμαστὴν οἰκίαν πρὸς τῷ ἱερῷ ᾠκοδόμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τέκτων",
+     "τις",
+     "θαυμαστήν",
+     "οἰκίαν",
+     "πρός",
+     "τῷ",
+     "ἱερῷ",
+     "ᾠκοδόμησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t7",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "A wise man once said that everyone fears death.",
+    "answer": "ἔφη σοφός τις ἀνὴρ πάντα τινὰ τὸν θάνατον φοβεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "σοφός",
+     "τις",
+     "ἀνὴρ",
+     "πάντα",
+     "τινὰ",
+     "τὸν",
+     "θάνατον",
+     "φοβεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "Someone will soon regret these deeds.",
+    "answer": "ταχέως μεταμελήσει τινὶ τούτων τῶν ἔργων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταχέως",
+     "μεταμελήσει",
+     "τινὶ",
+     "τούτων",
+     "τῶν",
+     "ἔργων"
+    ]
+   },
+   {
+    "prompt": "Certain philosophers say that the soul is a sort of harmony.",
+    "answer": "φιλόσοφοί τινες τὴν ψυχὴν ἁρμονίαν τινὰ εἶναί φασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φιλόσοφοί",
+     "τινες",
+     "τὴν",
+     "ψυχὴν",
+     "ἁρμονίαν",
+     "τινὰ",
+     "εἶναί",
+     "φασιν"
+    ]
+   },
+   {
+    "prompt": "Cyrus, as it seemed to all, was a very clever general.",
+    "answer": "ὁ Κῦρος, ὡς πᾶσιν ἐδόκει, δεινός τις ἦν στρατηγός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "ὡς",
+     "πᾶσιν",
+     "ἐδόκει",
+     "δεινός",
+     "τις",
+     "ἦν",
+     "στρατηγός"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t8",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Whenever someone knocks at the door, the slave opens it.",
+    "answer": "ἐπειδάν τις τὴν θύραν κόπτῃ, ὁ δοῦλος ἀνοίγει αὐτήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "τις",
+     "τὴν",
+     "θύραν",
+     "κόπτῃ",
+     "ὁ",
+     "δοῦλος",
+     "ἀνοίγει",
+     "αὐτήν"
+    ]
+   },
+   {
+    "prompt": "A foreigner was leading a strange animal through the marketplace.",
+    "answer": "ξένος τις θαυμαστόν τι ζῷον διὰ τῆς ἀγορᾶς ἦγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ξένος",
+     "τις",
+     "θαυμαστόν",
+     "τι",
+     "ζῷον",
+     "διὰ",
+     "τῆς",
+     "ἀγορᾶς",
+     "ἦγεν"
+    ]
+   },
+   {
+    "prompt": "The prisoners knew little or nothing about the plot.",
+    "answer": "οἱ δεσμῶται περὶ τῆς ἐπιβουλῆς ἤ τι ἢ οὐδὲν ᾔδεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δεσμῶται",
+     "περὶ",
+     "τῆς",
+     "ἐπιβουλῆς",
+     "ἤ",
+     "τι",
+     "ἢ",
+     "οὐδὲν",
+     "ᾔδεσαν"
+    ]
+   },
+   {
+    "prompt": "Those who seem to be somebody are often envied by the citizens.",
+    "answer": "οἱ δοκοῦντές τινες εἶναι πολλάκις ὑπὸ τῶν πολιτῶν φθονοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοκοῦντές",
+     "τινες",
+     "εἶναι",
+     "πολλάκις",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "φθονοῦνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t9",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "In the assembly each one wished to state his own opinion.",
+    "answer": "ἐν τῇ ἐκκλησίᾳ ἕκαστός τις τὴν ἑαυτοῦ γνώμην εἰπεῖν ἐβούλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἕκαστός",
+     "τις",
+     "τὴν",
+     "ἑαυτοῦ",
+     "γνώμην",
+     "εἰπεῖν",
+     "ἐβούλετο"
+    ]
+   },
+   {
+    "prompt": "About a hundred hoplites were left behind in the camp.",
+    "answer": "ἑκατόν τινες ὁπλῖται ἐν τῷ στρατοπέδῳ κατελείφθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑκατόν",
+     "τινες",
+     "ὁπλῖται",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "κατελείφθησαν"
+    ]
+   },
+   {
+    "prompt": "The work is pretty nearly finished, as the craftsman said.",
+    "answer": "σχεδόν τι τὸ ἔργον πέπρακται, ὡς ἔφη ὁ δημιουργός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σχεδόν",
+     "τι",
+     "τὸ",
+     "ἔργον",
+     "πέπρακται",
+     "ὡς",
+     "ἔφη",
+     "ὁ",
+     "δημιουργός"
+    ]
+   },
+   {
+    "prompt": "The ambassador seemed to say something important to the council about the peace.",
+    "answer": "ὁ πρεσβευτὴς ἔδοξέ τι λέγειν τῇ βουλῇ περὶ τῆς εἰρήνης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πρεσβευτὴς",
+     "ἔδοξέ",
+     "τι",
+     "λέγειν",
+     "τῇ",
+     "βουλῇ",
+     "περὶ",
+     "τῆς",
+     "εἰρήνης"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t10",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Whatever things one desires, these he eagerly pursues.",
+    "answer": "ἃ ἂν ἐπιθυμῇ τις, ταῦτα προθύμως διώκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "ἂν",
+     "ἐπιθυμῇ",
+     "τις",
+     "ταῦτα",
+     "προθύμως",
+     "διώκει"
+    ]
+   },
+   {
+    "prompt": "Perhaps someone of those present does not believe these things.",
+    "answer": "ἴσως τις τῶν παρόντων οὐ πιστεύει τούτοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσως",
+     "τις",
+     "τῶν",
+     "παρόντων",
+     "οὐ",
+     "πιστεύει",
+     "τούτοις"
+    ]
+   },
+   {
+    "prompt": "The philosopher called himself a sort of gadfly for the city.",
+    "answer": "ὁ φιλόσοφος ἑαυτὸν μύωπά τινα τῇ πόλει προσηγόρευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "ἑαυτὸν",
+     "μύωπά",
+     "τινα",
+     "τῇ",
+     "πόλει",
+     "προσηγόρευσεν"
+    ]
+   },
+   {
+    "prompt": "You are saying something wonderful, my friend, and credible to no one.",
+    "answer": "θαυμαστόν τι λέγεις, ὦ ἑταῖρε, καὶ οὐδενὶ πιστόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμαστόν",
+     "τι",
+     "λέγεις",
+     "ὦ",
+     "ἑταῖρε",
+     "καὶ",
+     "οὐδενὶ",
+     "πιστόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t11",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Certain messengers, two in number, came bringing letters.",
+    "answer": "ἄγγελοί τινες, δύο τὸν ἀριθμόν, ἦλθον ἐπιστολὰς φέροντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγγελοί",
+     "τινες",
+     "δύο",
+     "τὸν",
+     "ἀριθμόν",
+     "ἦλθον",
+     "ἐπιστολὰς",
+     "φέροντες"
+    ]
+   },
+   {
+    "prompt": "If the daimones are a sort of gods, we must honor them.",
+    "answer": "εἰ θεοί τινές εἰσιν οἱ δαίμονες, χρὴ αὐτοὺς τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "θεοί",
+     "τινές",
+     "εἰσιν",
+     "οἱ",
+     "δαίμονες",
+     "χρὴ",
+     "αὐτοὺς",
+     "τιμᾶν"
+    ]
+   },
+   {
+    "prompt": "Of those who returned, few or none were unharmed.",
+    "answer": "τῶν ἐπανελθόντων ἤ τις ἢ οὐδεὶς ἀβλαβὴς ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἐπανελθόντων",
+     "ἤ",
+     "τις",
+     "ἢ",
+     "οὐδεὶς",
+     "ἀβλαβὴς",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "Some general or other, whoever he is, will lead the army.",
+    "answer": "στρατηγός τις, ὅστις ποτέ ἐστιν, τὸ στράτευμα ἄξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατηγός",
+     "τις",
+     "ὅστις",
+     "ποτέ",
+     "ἐστιν",
+     "τὸ",
+     "στράτευμα",
+     "ἄξει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-t12",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "One might reasonably wonder at what has happened.",
+    "answer": "θαυμάσειεν ἄν τις εἰκότως ἐπὶ τοῖς γεγενημένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάσειεν",
+     "ἄν",
+     "τις",
+     "εἰκότως",
+     "ἐπὶ",
+     "τοῖς",
+     "γεγενημένοις"
+    ]
+   },
+   {
+    "prompt": "When a certain old man had fallen silent, everyone turned toward him.",
+    "answer": "γέροντός τινος σιγήσαντος, πάντες πρὸς αὐτὸν ἐτράποντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γέροντός",
+     "τινος",
+     "σιγήσαντος",
+     "πάντες",
+     "πρὸς",
+     "αὐτὸν",
+     "ἐτράποντο"
+    ]
+   },
+   {
+    "prompt": "The orator was a rather clever speaker, but untrustworthy.",
+    "answer": "ὁ ῥήτωρ δεινὸς μέν τις ἦν λέγειν, ἄπιστος δέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "δεινὸς",
+     "μέν",
+     "τις",
+     "ἦν",
+     "λέγειν",
+     "ἄπιστος",
+     "δέ"
+    ]
+   },
+   {
+    "prompt": "Although he had accomplished nothing, he supposed he was something great.",
+    "answer": "οὐδὲν διαπραξάμενος, ᾤετο μέγα τι εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "διαπραξάμενος",
+     "ᾤετο",
+     "μέγα",
+     "τι",
+     "εἶναι"
+    ]
+   }
+  ]
+ }
+]

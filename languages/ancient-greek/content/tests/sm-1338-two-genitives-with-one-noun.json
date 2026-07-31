@@ -1,0 +1,426 @@
+[
+ {
+  "id": "sm-1338-two-genitives-with-one-noun-t1",
+  "sectionId": "sm-1338-two-genitives-with-one-noun",
+  "questions": [
+   {
+    "prompt": "The general's command of the army frightened the enemy.",
+    "answer": "ἡ τοῦ στρατηγοῦ τῆς στρατιᾶς ἀρχὴ τοὺς πολεμίους ἐφόβησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "τῆς",
+     "στρατιᾶς",
+     "ἀρχὴ",
+     "τοὺς",
+     "πολεμίους",
+     "ἐφόβησεν"
+    ]
+   },
+   {
+    "prompt": "Because of their fear of the tyrant the citizens fled the city.",
+    "answer": "διὰ τὸν αὑτῶν φόβον τοῦ τυράννου οἱ πολῖται τὴν πόλιν ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τὸν",
+     "αὑτῶν",
+     "φόβον",
+     "τοῦ",
+     "τυράννου",
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "πόλιν",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The Athenians' seizure of the island provoked the Spartans.",
+    "answer": "ἡ τῶν Ἀθηναίων τῆς νήσου κατάληψις τοὺς Λακεδαιμονίους παρώξυνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "Ἀθηναίων",
+     "τῆς",
+     "νήσου",
+     "κατάληψις",
+     "τοὺς",
+     "Λακεδαιμονίους",
+     "παρώξυνεν"
+    ]
+   },
+   {
+    "prompt": "The old men praised the poet's song about the gods.",
+    "answer": "οἱ πρεσβῦται τὴν τοῦ ποιητοῦ τῶν θεῶν ᾠδὴν ἐπῄνεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρεσβῦται",
+     "τὴν",
+     "τοῦ",
+     "ποιητοῦ",
+     "τῶν",
+     "θεῶν",
+     "ᾠδὴν",
+     "ἐπῄνεσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1338-two-genitives-with-one-noun-t2",
+  "sectionId": "sm-1338-two-genitives-with-one-noun",
+  "questions": [
+   {
+    "prompt": "The accusation of the young man of theft seemed unjust.",
+    "answer": "ἡ τοῦ νεανίου κλοπῆς κατηγορία ἄδικος ἐφαίνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "νεανίου",
+     "κλοπῆς",
+     "κατηγορία",
+     "ἄδικος",
+     "ἐφαίνετο"
+    ]
+   },
+   {
+    "prompt": "The soldiers' desire for freedom grew stronger every day.",
+    "answer": "ἡ τῶν στρατιωτῶν τῆς ἐλευθερίας ἐπιθυμία κατὰ ἑκάστην ἡμέραν ηὐξάνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "στρατιωτῶν",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἐπιθυμία",
+     "κατὰ",
+     "ἑκάστην",
+     "ἡμέραν",
+     "ηὐξάνετο"
+    ]
+   },
+   {
+    "prompt": "Pericles' leadership of the people was praised by many.",
+    "answer": "ἡ τοῦ Περικλέους τοῦ δήμου ἡγεμονία ὑπὸ πολλῶν ἐπῃνεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "Περικλέους",
+     "δήμου",
+     "ἡγεμονία",
+     "ὑπὸ",
+     "πολλῶν",
+     "ἐπῃνεῖτο"
+    ]
+   },
+   {
+    "prompt": "The enemy's hope of victory vanished after the battle.",
+    "answer": "ἡ τῶν πολεμίων τῆς νίκης ἐλπὶς μετὰ τὴν μάχην ἠφανίσθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "πολεμίων",
+     "τῆς",
+     "νίκης",
+     "ἐλπὶς",
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "ἠφανίσθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1338-two-genitives-with-one-noun-t3",
+  "sectionId": "sm-1338-two-genitives-with-one-noun",
+  "questions": [
+   {
+    "prompt": "The mother's care of the children was admired by all.",
+    "answer": "ἡ τῆς μητρὸς τῶν παίδων ἐπιμέλεια ὑπὸ πάντων ἐθαυμάζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῆς",
+     "μητρὸς",
+     "τῶν",
+     "παίδων",
+     "ἐπιμέλεια",
+     "ὑπὸ",
+     "πάντων",
+     "ἐθαυμάζετο"
+    ]
+   },
+   {
+    "prompt": "The sailors feared the sea's mastery of the ship.",
+    "answer": "οἱ ναῦται τὸ τῆς θαλάττης τοῦ πλοίου κράτος ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τὸ",
+     "τῆς",
+     "θαλάττης",
+     "τοῦ",
+     "πλοίου",
+     "κράτος",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "The philosopher's knowledge of the stars astounded the students.",
+    "answer": "ἡ τοῦ φιλοσόφου τῶν ἄστρων ἐπιστήμη τοὺς μαθητὰς ἐξέπληξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "φιλοσόφου",
+     "τῶν",
+     "ἄστρων",
+     "ἐπιστήμη",
+     "τοὺς",
+     "μαθητὰς",
+     "ἐξέπληξεν"
+    ]
+   },
+   {
+    "prompt": "The Persians' invasion of Greece was remembered for a long time.",
+    "answer": "ἡ τῶν Περσῶν τῆς Ἑλλάδος εἰσβολὴ ἐπὶ πολὺν χρόνον ἐμνημονεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "Περσῶν",
+     "τῆς",
+     "Ἑλλάδος",
+     "εἰσβολὴ",
+     "ἐπὶ",
+     "πολὺν",
+     "χρόνον",
+     "ἐμνημονεύετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1338-two-genitives-with-one-noun-t4",
+  "sectionId": "sm-1338-two-genitives-with-one-noun",
+  "questions": [
+   {
+    "prompt": "The king's trust in his friends saved the empire.",
+    "answer": "ἡ τοῦ βασιλέως τῶν φίλων πίστις τὴν ἀρχὴν ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "βασιλέως",
+     "τῶν",
+     "φίλων",
+     "πίστις",
+     "τὴν",
+     "ἀρχὴν",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "The people's love of freedom overcame their fear of the tyrant.",
+    "answer": "ὁ τοῦ δήμου τῆς ἐλευθερίας ἔρως τὸν τοῦ τυράννου φόβον ἐνίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "δήμου",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἔρως",
+     "τὸν",
+     "τυράννου",
+     "φόβον",
+     "ἐνίκησεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers admired the leader's endurance of hardships.",
+    "answer": "οἱ στρατιῶται τὴν τοῦ ἡγεμόνος τῶν πόνων καρτερίαν ἐθαύμαζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὴν",
+     "τοῦ",
+     "ἡγεμόνος",
+     "τῶν",
+     "πόνων",
+     "καρτερίαν",
+     "ἐθαύμαζον"
+    ]
+   },
+   {
+    "prompt": "The Corinthians' occupation of the harbor grieved the allies.",
+    "answer": "ἡ τῶν Κορινθίων τοῦ λιμένος κατοχὴ τοὺς συμμάχους ἐλύπησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "Κορινθίων",
+     "τοῦ",
+     "λιμένος",
+     "κατοχὴ",
+     "τοὺς",
+     "συμμάχους",
+     "ἐλύπησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1338-two-genitives-with-one-noun-t5",
+  "sectionId": "sm-1338-two-genitives-with-one-noun",
+  "questions": [
+   {
+    "prompt": "The orator's praise of the dead moved the whole assembly.",
+    "answer": "ὁ τοῦ ῥήτορος τῶν τεθνεώτων ἔπαινος ὅλην τὴν ἐκκλησίαν ἐκίνησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "ῥήτορος",
+     "τῶν",
+     "τεθνεώτων",
+     "ἔπαινος",
+     "ὅλην",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἐκίνησεν"
+    ]
+   },
+   {
+    "prompt": "The general's neglect of the guards brought about the city's capture.",
+    "answer": "ἡ τοῦ στρατηγοῦ τῶν φυλάκων ἀμέλεια τὴν τῆς πόλεως ἅλωσιν παρέσχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "τῶν",
+     "φυλάκων",
+     "ἀμέλεια",
+     "τὴν",
+     "τῆς",
+     "πόλεως",
+     "ἅλωσιν",
+     "παρέσχεν"
+    ]
+   },
+   {
+    "prompt": "We honored the citizens' defense of the country.",
+    "answer": "τὴν τῶν πολιτῶν τῆς χώρας ἄμυναν ἐτιμήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "τῶν",
+     "πολιτῶν",
+     "τῆς",
+     "χώρας",
+     "ἄμυναν",
+     "ἐτιμήσαμεν"
+    ]
+   },
+   {
+    "prompt": "The father delighted in his son's love of learning.",
+    "answer": "ὁ πατὴρ τῇ τοῦ υἱοῦ τῆς μαθήσεως φιλίᾳ ἥδετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατὴρ",
+     "τῇ",
+     "τοῦ",
+     "υἱοῦ",
+     "τῆς",
+     "μαθήσεως",
+     "φιλίᾳ",
+     "ἥδετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1338-two-genitives-with-one-noun-t6",
+  "sectionId": "sm-1338-two-genitives-with-one-noun",
+  "questions": [
+   {
+    "prompt": "The Thebans' betrayal of their allies harmed the whole war.",
+    "answer": "ἡ τῶν Θηβαίων τῶν συμμάχων προδοσία ὅλον τὸν πόλεμον ἔβλαψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "Θηβαίων",
+     "συμμάχων",
+     "προδοσία",
+     "ὅλον",
+     "τὸν",
+     "πόλεμον",
+     "ἔβλαψεν"
+    ]
+   },
+   {
+    "prompt": "The doctor's care of the sick won great honor.",
+    "answer": "ἡ τοῦ ἰατροῦ τῶν νοσούντων θεραπεία μεγάλην τιμὴν ἤνεγκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "ἰατροῦ",
+     "τῶν",
+     "νοσούντων",
+     "θεραπεία",
+     "μεγάλην",
+     "τιμὴν",
+     "ἤνεγκεν"
+    ]
+   },
+   {
+    "prompt": "The old men marveled at the young men's contempt of danger.",
+    "answer": "οἱ πρεσβῦται τὴν τῶν νεανιῶν τοῦ κινδύνου καταφρόνησιν ἐθαύμασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρεσβῦται",
+     "τὴν",
+     "τῶν",
+     "νεανιῶν",
+     "τοῦ",
+     "κινδύνου",
+     "καταφρόνησιν",
+     "ἐθαύμασαν"
+    ]
+   },
+   {
+    "prompt": "Nicias' command of the fleet ended in disaster.",
+    "answer": "ἡ τοῦ Νικίου τῶν νεῶν ἀρχὴ εἰς συμφορὰν ἐτελεύτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "Νικίου",
+     "τῶν",
+     "νεῶν",
+     "ἀρχὴ",
+     "εἰς",
+     "συμφορὰν",
+     "ἐτελεύτησεν"
+    ]
+   }
+  ]
+ }
+]
