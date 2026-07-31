@@ -1,0 +1,887 @@
+[
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t1",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "The beautiful temple and grove delight the citizens.",
+    "answer": "ὁ καλὸς νεὼς καὶ ἄλσος τοὺς πολίτας τέρπουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "καλὸς",
+     "νεὼς",
+     "καὶ",
+     "ἄλσος",
+     "τοὺς",
+     "πολίτας",
+     "τέρπουσιν"
+    ]
+   },
+   {
+    "prompt": "The wise father and mother teach their children well.",
+    "answer": "ὁ σοφὸς πατὴρ καὶ μήτηρ τοὺς παῖδας εὖ διδάσκουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "πατὴρ",
+     "καὶ",
+     "μήτηρ",
+     "τοὺς",
+     "παῖδας",
+     "εὖ",
+     "διδάσκουσιν"
+    ]
+   },
+   {
+    "prompt": "We honor the brave soldier and citizen alike.",
+    "answer": "τὸν ἀνδρεῖον στρατιώτην καὶ πολίτην ὁμοίως τιμῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἀνδρεῖον",
+     "στρατιώτην",
+     "καὶ",
+     "πολίτην",
+     "ὁμοίως",
+     "τιμῶμεν"
+    ]
+   },
+   {
+    "prompt": "The old man saw the fair maiden and youth in the marketplace.",
+    "answer": "ὁ γέρων τὴν καλὴν κόρην καὶ νεανίαν ἐν τῇ ἀγορᾷ εἶδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τὴν",
+     "καλὴν",
+     "κόρην",
+     "καὶ",
+     "νεανίαν",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "εἶδεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t2",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "Having one body and one soul, he endured everything.",
+    "answer": "ἓν σῶμα ἔχων καὶ μίαν ψυχὴν πάντα ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἓν",
+     "σῶμα",
+     "ἔχων",
+     "καὶ",
+     "μίαν",
+     "ψυχὴν",
+     "πάντα",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "The good king and the good queen ruled the land justly.",
+    "answer": "ὁ ἀγαθὸς βασιλεὺς καὶ ἡ ἀγαθὴ βασίλεια τὴν χώραν δικαίως ἦρχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀγαθὸς",
+     "βασιλεὺς",
+     "καὶ",
+     "ἡ",
+     "ἀγαθὴ",
+     "βασίλεια",
+     "τὴν",
+     "χώραν",
+     "δικαίως",
+     "ἦρχον"
+    ]
+   },
+   {
+    "prompt": "A great danger and a great toil await those who fight.",
+    "answer": "μέγας κίνδυνος καὶ μέγας πόνος τοὺς μαχομένους μένουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέγας",
+     "κίνδυνος",
+     "καὶ",
+     "πόνος",
+     "τοὺς",
+     "μαχομένους",
+     "μένουσιν"
+    ]
+   },
+   {
+    "prompt": "I remember a dear comrade and a dear teacher of my youth.",
+    "answer": "μέμνημαι φίλου ἑταίρου καὶ φίλου διδασκάλου τῆς ἐμῆς νεότητος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνημαι",
+     "φίλου",
+     "ἑταίρου",
+     "καὶ",
+     "διδασκάλου",
+     "τῆς",
+     "ἐμῆς",
+     "νεότητος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t3",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "They came upon a large deserted city.",
+    "answer": "εἰς πόλιν ἐρήμην μεγάλην ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "πόλιν",
+     "ἐρήμην",
+     "μεγάλην",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "We found a long narrow road leading to the sea.",
+    "answer": "ὁδὸν μακρὰν στενὴν εὕρομεν πρὸς τὴν θάλατταν φέρουσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁδὸν",
+     "μακρὰν",
+     "στενὴν",
+     "εὕρομεν",
+     "πρὸς",
+     "τὴν",
+     "θάλατταν",
+     "φέρουσαν"
+    ]
+   },
+   {
+    "prompt": "A cold clear river flowed through the plain.",
+    "answer": "ποταμὸς ψυχρὸς καθαρὸς διὰ τοῦ πεδίου ἔρρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποταμὸς",
+     "ψυχρὸς",
+     "καθαρὸς",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἔρρει"
+    ]
+   },
+   {
+    "prompt": "The soldiers admired the huge stout tower.",
+    "answer": "οἱ στρατιῶται τὸν μέγαν στιβαρὸν πύργον ἐθαύμαζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "μέγαν",
+     "στιβαρὸν",
+     "πύργον",
+     "ἐθαύμαζον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t4",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "They carried a spear, heavy, huge, stout.",
+    "answer": "ἔφερον ἔγχος βαρύ, μέγα, στιβαρόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφερον",
+     "ἔγχος",
+     "βαρύ",
+     "μέγα",
+     "στιβαρόν"
+    ]
+   },
+   {
+    "prompt": "In the market they were selling flesh of lambs, kids, and swine.",
+    "answer": "ἐν τῇ ἀγορᾷ κρέα ἄρνεια, ἐρίφεια, χοίρεια ἐπώλουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "κρέα",
+     "ἄρνεια",
+     "ἐρίφεια",
+     "χοίρεια",
+     "ἐπώλουν"
+    ]
+   },
+   {
+    "prompt": "The old woman was wearing a garment, dark, long, worn.",
+    "answer": "ἡ γραῦς ἱμάτιον μέλαν, μακρόν, τετριμμένον ἐφόρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "ἱμάτιον",
+     "μέλαν",
+     "μακρόν",
+     "τετριμμένον",
+     "ἐφόρει"
+    ]
+   },
+   {
+    "prompt": "A gentle, wise, just man rules best.",
+    "answer": "πρᾷος, σοφός, δίκαιος ἀνὴρ ἄριστα ἄρχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρᾷος",
+     "σοφός",
+     "δίκαιος",
+     "ἀνὴρ",
+     "ἄριστα",
+     "ἄρχει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t5",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "The gods gave the city many blessings.",
+    "answer": "οἱ θεοὶ τῇ πόλει πολλὰ καὶ ἀγαθὰ ἔδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "τῇ",
+     "πόλει",
+     "πολλὰ",
+     "καὶ",
+     "ἀγαθὰ",
+     "ἔδοσαν"
+    ]
+   },
+   {
+    "prompt": "The exiles suffered many dreadful things.",
+    "answer": "οἱ φυγάδες πολλὰ καὶ δεινὰ ἔπαθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "πολλὰ",
+     "καὶ",
+     "δεινὰ",
+     "ἔπαθον"
+    ]
+   },
+   {
+    "prompt": "A true gentleman never betrays his friends.",
+    "answer": "ὁ καλὸς καὶ ἀγαθὸς τοὺς φίλους οὔποτε προδίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "καλὸς",
+     "καὶ",
+     "ἀγαθὸς",
+     "τοὺς",
+     "φίλους",
+     "οὔποτε",
+     "προδίδωσιν"
+    ]
+   },
+   {
+    "prompt": "We heard many wondrous things about the war.",
+    "answer": "πολλὰ καὶ θαυμαστὰ περὶ τοῦ πολέμου ἠκούσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "καὶ",
+     "θαυμαστὰ",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "ἠκούσαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t6",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "Your enemies fled from the plain.",
+    "answer": "οἱ ὑμέτεροι δυσμενεῖς ἐκ τοῦ πεδίου ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑμέτεροι",
+     "δυσμενεῖς",
+     "ἐκ",
+     "τοῦ",
+     "πεδίου",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "He shares in the fairest of the arts.",
+    "answer": "μετέχει τῆς καλλίστης τῶν τεχνῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετέχει",
+     "τῆς",
+     "καλλίστης",
+     "τῶν",
+     "τεχνῶν"
+    ]
+   },
+   {
+    "prompt": "Our friends were helping the poor in the city.",
+    "answer": "οἱ ἡμέτεροι φίλοι τοῖς ἐν τῇ πόλει πένησιν ἐβοήθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἡμέτεροι",
+     "φίλοι",
+     "τοῖς",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "πένησιν",
+     "ἐβοήθουν"
+    ]
+   },
+   {
+    "prompt": "The general chose the bravest of the young men.",
+    "answer": "ὁ στρατηγὸς τοὺς ἀνδρειοτάτους τῶν νεανιῶν εἵλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "ἀνδρειοτάτους",
+     "τῶν",
+     "νεανιῶν",
+     "εἵλετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t7",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "The good king and queen honored the strangers.",
+    "answer": "ὁ ἀγαθὸς βασιλεὺς καὶ βασίλεια τοὺς ξένους ἐτίμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀγαθὸς",
+     "βασιλεὺς",
+     "καὶ",
+     "βασίλεια",
+     "τοὺς",
+     "ξένους",
+     "ἐτίμησαν"
+    ]
+   },
+   {
+    "prompt": "The new house and garden please the master.",
+    "answer": "ὁ καινὸς οἶκος καὶ κῆπος τὸν δεσπότην τέρπουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "καινὸς",
+     "οἶκος",
+     "καὶ",
+     "κῆπος",
+     "τὸν",
+     "δεσπότην",
+     "τέρπουσιν"
+    ]
+   },
+   {
+    "prompt": "The wise poet and orator were praised by everyone.",
+    "answer": "ὁ σοφὸς ποιητὴς καὶ ῥήτωρ ὑπὸ πάντων ἐπῃνέθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "ποιητὴς",
+     "καὶ",
+     "ῥήτωρ",
+     "ὑπὸ",
+     "πάντων",
+     "ἐπῃνέθησαν"
+    ]
+   },
+   {
+    "prompt": "The strong ox and mule carried the load.",
+    "answer": "ὁ ἰσχυρὸς βοῦς καὶ ἡμίονος τὸ φορτίον ἐκόμισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰσχυρὸς",
+     "βοῦς",
+     "καὶ",
+     "ἡμίονος",
+     "τὸ",
+     "φορτίον",
+     "ἐκόμισαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t8",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "The soldier had one shield and one sword.",
+    "answer": "ὁ στρατιώτης μίαν ἀσπίδα καὶ ἓν ξίφος εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατιώτης",
+     "μίαν",
+     "ἀσπίδα",
+     "καὶ",
+     "ἓν",
+     "ξίφος",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "We honor a true friend and a true ally.",
+    "answer": "τὸν ἀληθῆ φίλον καὶ τὸν ἀληθῆ σύμμαχον τιμῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἀληθῆ",
+     "φίλον",
+     "καὶ",
+     "σύμμαχον",
+     "τιμῶμεν"
+    ]
+   },
+   {
+    "prompt": "A brave people and a brave king saved the land.",
+    "answer": "δῆμος ἀνδρεῖος καὶ βασιλεὺς ἀνδρεῖος τὴν χώραν ἔσωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆμος",
+     "ἀνδρεῖος",
+     "καὶ",
+     "βασιλεὺς",
+     "τὴν",
+     "χώραν",
+     "ἔσωσαν"
+    ]
+   },
+   {
+    "prompt": "He built a great wall and a great tower.",
+    "answer": "μέγα τεῖχος καὶ μέγαν πύργον ᾠκοδόμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέγα",
+     "τεῖχος",
+     "καὶ",
+     "μέγαν",
+     "πύργον",
+     "ᾠκοδόμησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t9",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "They brought gifts golden, silver, bronze.",
+    "answer": "δῶρα χρύσεα, ἀργύρεα, χάλκεα ἤνεγκαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῶρα",
+     "χρύσεα",
+     "ἀργύρεα",
+     "χάλκεα",
+     "ἤνεγκαν"
+    ]
+   },
+   {
+    "prompt": "They found a small deserted village.",
+    "answer": "κώμην ἐρήμην μικρὰν ηὗρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κώμην",
+     "ἐρήμην",
+     "μικρὰν",
+     "ηὗρον"
+    ]
+   },
+   {
+    "prompt": "The soldiers suffered many terrible things.",
+    "answer": "πολλὰ καὶ δεινὰ ἔπαθον οἱ στρατιῶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "καὶ",
+     "δεινὰ",
+     "ἔπαθον",
+     "οἱ",
+     "στρατιῶται"
+    ]
+   },
+   {
+    "prompt": "The general promised the soldiers many good things.",
+    "answer": "πολλὰ καὶ ἀγαθὰ τοῖς στρατιώταις ὁ στρατηγὸς ὑπέσχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "καὶ",
+     "ἀγαθὰ",
+     "τοῖς",
+     "στρατιώταις",
+     "ὁ",
+     "στρατηγὸς",
+     "ὑπέσχετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t10",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "The aristocrats ruled the city justly.",
+    "answer": "οἱ καλοὶ καὶ ἀγαθοὶ τῆς πόλεως δικαίως ἦρχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "καλοὶ",
+     "καὶ",
+     "ἀγαθοὶ",
+     "τῆς",
+     "πόλεως",
+     "δικαίως",
+     "ἦρχον"
+    ]
+   },
+   {
+    "prompt": "They considered Socrates a truly good man.",
+    "answer": "τὸν Σωκράτη καλὸν καὶ ἀγαθὸν ἐνόμιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "Σωκράτη",
+     "καλὸν",
+     "καὶ",
+     "ἀγαθὸν",
+     "ἐνόμιζον"
+    ]
+   },
+   {
+    "prompt": "Our friends helped your enemies.",
+    "answer": "οἱ ἡμέτεροι φίλοι τοῖς ὑμετέροις ἐχθροῖς ἐβοήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἡμέτεροι",
+     "φίλοι",
+     "τοῖς",
+     "ὑμετέροις",
+     "ἐχθροῖς",
+     "ἐβοήθησαν"
+    ]
+   },
+   {
+    "prompt": "He chose the most beautiful of the maidens.",
+    "answer": "τὴν καλλίστην τῶν παρθένων εἵλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "καλλίστην",
+     "τῶν",
+     "παρθένων",
+     "εἵλετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t11",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "The golden crown and staff shone in the sun.",
+    "answer": "ὁ χρύσεος στέφανος καὶ σκῆπτρον ἐν τῷ ἡλίῳ ἔλαμπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χρύσεος",
+     "στέφανος",
+     "καὶ",
+     "σκῆπτρον",
+     "ἐν",
+     "τῷ",
+     "ἡλίῳ",
+     "ἔλαμπον"
+    ]
+   },
+   {
+    "prompt": "He lost one eye and one hand in the battle.",
+    "answer": "ἕνα ὀφθαλμὸν καὶ μίαν χεῖρα ἐν τῇ μάχῃ ἀπέβαλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕνα",
+     "ὀφθαλμὸν",
+     "καὶ",
+     "μίαν",
+     "χεῖρα",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀπέβαλεν"
+    ]
+   },
+   {
+    "prompt": "Our brave men conquered the enemy.",
+    "answer": "οἱ ἡμέτεροι ἀνδρεῖοι τοὺς πολεμίους ἐνίκησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἡμέτεροι",
+     "ἀνδρεῖοι",
+     "τοὺς",
+     "πολεμίους",
+     "ἐνίκησαν"
+    ]
+   },
+   {
+    "prompt": "The aristocrat always helps his own friends.",
+    "answer": "ὁ καλὸς καὶ ἀγαθὸς τοῖς ἑαυτοῦ φίλοις ἀεὶ βοηθεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "καλὸς",
+     "καὶ",
+     "ἀγαθὸς",
+     "τοῖς",
+     "ἑαυτοῦ",
+     "φίλοις",
+     "ἀεὶ",
+     "βοηθεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t12",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "The wise mother and father raised the children well.",
+    "answer": "ἡ σοφὴ μήτηρ καὶ πατὴρ τοὺς παῖδας εὖ ἔθρεψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφὴ",
+     "μήτηρ",
+     "καὶ",
+     "πατὴρ",
+     "τοὺς",
+     "παῖδας",
+     "εὖ",
+     "ἔθρεψαν"
+    ]
+   },
+   {
+    "prompt": "He wrote a long and clever letter.",
+    "answer": "μακρὰν καὶ σοφὴν ἐπιστολὴν ἔγραψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μακρὰν",
+     "καὶ",
+     "σοφὴν",
+     "ἐπιστολὴν",
+     "ἔγραψεν"
+    ]
+   },
+   {
+    "prompt": "He drank from a clear cold spring.",
+    "answer": "ἀπὸ κρήνης καθαρᾶς ψυχρᾶς ἔπιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπὸ",
+     "κρήνης",
+     "καθαρᾶς",
+     "ψυχρᾶς",
+     "ἔπιεν"
+    ]
+   },
+   {
+    "prompt": "He praised the good but blamed the wicked.",
+    "answer": "τοὺς μὲν ἀγαθοὺς ἐπῄνεσε, τοὺς δὲ κακοὺς ἔψεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "μὲν",
+     "ἀγαθοὺς",
+     "ἐπῄνεσε",
+     "δὲ",
+     "κακοὺς",
+     "ἔψεξεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t13",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "The wise poet and orator persuaded the assembly.",
+    "answer": "ὁ σοφὸς ποιητὴς καὶ ῥήτωρ τὴν ἐκκλησίαν ἔπεισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "ποιητὴς",
+     "καὶ",
+     "ῥήτωρ",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἔπεισαν"
+    ]
+   },
+   {
+    "prompt": "Having one hope and one refuge, he endured the siege.",
+    "answer": "ἔχων μίαν ἐλπίδα καὶ μίαν καταφυγὴν τὴν πολιορκίαν ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔχων",
+     "μίαν",
+     "ἐλπίδα",
+     "καὶ",
+     "καταφυγὴν",
+     "τὴν",
+     "πολιορκίαν",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "The exiles suffered many terrible things in the war.",
+    "answer": "οἱ φυγάδες πολλὰ καὶ δεινὰ ἐν τῷ πολέμῳ ἔπαθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "πολλὰ",
+     "καὶ",
+     "δεινὰ",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "ἔπαθον"
+    ]
+   },
+   {
+    "prompt": "Our enemies destroyed the ancient temples.",
+    "answer": "οἱ ἡμέτεροι πολέμιοι τὰ παλαιὰ ἱερὰ διέφθειραν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἡμέτεροι",
+     "πολέμιοι",
+     "τὰ",
+     "παλαιὰ",
+     "ἱερὰ",
+     "διέφθειραν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1030-agreement-of-attributive-adjectives-t14",
+  "sectionId": "sm-1030-agreement-of-attributive-adjectives",
+  "questions": [
+   {
+    "prompt": "A man wise, just, brave ruled the city.",
+    "answer": "ἀνὴρ σοφός, δίκαιος, ἀνδρεῖος τῆς πόλεως ἦρχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνὴρ",
+     "σοφός",
+     "δίκαιος",
+     "ἀνδρεῖος",
+     "τῆς",
+     "πόλεως",
+     "ἦρχεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers crossed a broad deep river at dawn.",
+    "answer": "οἱ στρατιῶται ποταμὸν εὐρὺν βαθὺν ἅμα τῇ ἕῳ διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ποταμὸν",
+     "εὐρὺν",
+     "βαθὺν",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "διέβησαν"
+    ]
+   },
+   {
+    "prompt": "It is the mark of a truly good man to help his friends.",
+    "answer": "καλοῦ καὶ ἀγαθοῦ ἀνδρός ἐστι τοῖς φίλοις βοηθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλοῦ",
+     "καὶ",
+     "ἀγαθοῦ",
+     "ἀνδρός",
+     "ἐστι",
+     "τοῖς",
+     "φίλοις",
+     "βοηθεῖν"
+    ]
+   },
+   {
+    "prompt": "The philosopher shares in the fairest of the arts.",
+    "answer": "ὁ φιλόσοφος μετέχει τῆς καλλίστης τῶν τεχνῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "μετέχει",
+     "τῆς",
+     "καλλίστης",
+     "τῶν",
+     "τεχνῶν"
+    ]
+   }
+  ]
+ }
+]
