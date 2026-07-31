@@ -1,0 +1,690 @@
+[
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t1",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "About midnight the guards fled from the camp.",
+    "answer": "περὶ μέσας νύκτας οἱ φύλακες ἐκ τοῦ στρατοπέδου ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "μέσας",
+     "νύκτας",
+     "οἱ",
+     "φύλακες",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Just before daylight the general led the army out.",
+    "answer": "ἅμα ἕῳ ὁ στρατηγὸς τὸ στράτευμα ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "ἕῳ",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "By night we sailed, and by day we rested.",
+    "answer": "νυκτὸς μὲν ἐπλέομεν, ἡμέρας δὲ ἀνεπαυόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτὸς",
+     "μὲν",
+     "ἐπλέομεν",
+     "ἡμέρας",
+     "δὲ",
+     "ἀνεπαυόμεθα"
+    ]
+   },
+   {
+    "prompt": "From childhood he was educated in music.",
+    "answer": "ἐκ παίδων ἐπαιδεύθη ἐν μουσικῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "παίδων",
+     "ἐπαιδεύθη",
+     "ἐν",
+     "μουσικῇ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t2",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "Man is the measure of all things.",
+    "answer": "πάντων μέτρον ἄνθρωπός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντων",
+     "μέτρον",
+     "ἄνθρωπός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "God helps those who toil.",
+    "answer": "θεὸς τοῖς πονοῦσι βοηθεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θεὸς",
+     "τοῖς",
+     "πονοῦσι",
+     "βοηθεῖ"
+    ]
+   },
+   {
+    "prompt": "A good general considers the safety of his soldiers.",
+    "answer": "στρατηγὸς ἀγαθὸς τῆς τῶν στρατιωτῶν σωτηρίας φροντίζει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατηγὸς",
+     "ἀγαθὸς",
+     "τῆς",
+     "τῶν",
+     "στρατιωτῶν",
+     "σωτηρίας",
+     "φροντίζει"
+    ]
+   },
+   {
+    "prompt": "It is difficult for man to know himself.",
+    "answer": "χαλεπόν ἐστιν ἀνθρώπῳ ἑαυτὸν γιγνώσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστιν",
+     "ἀνθρώπῳ",
+     "ἑαυτὸν",
+     "γιγνώσκειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t3",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "The soldiers stood out of reach of the missiles.",
+    "answer": "οἱ στρατιῶται ἔξω βελῶν ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἔξω",
+     "βελῶν",
+     "ἔστησαν"
+    ]
+   },
+   {
+    "prompt": "In the beginning of the speech he praised the jurors.",
+    "answer": "ἐν ἀρχῇ τοῦ λόγου τοὺς δικαστὰς ἐπῄνεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἀρχῇ",
+     "τοῦ",
+     "λόγου",
+     "τοὺς",
+     "δικαστὰς",
+     "ἐπῄνεσεν"
+    ]
+   },
+   {
+    "prompt": "At daybreak the enemy attacked the city.",
+    "answer": "ὄρθρου οἱ πολέμιοι τῇ πόλει ἐπέθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄρθρου",
+     "οἱ",
+     "πολέμιοι",
+     "τῇ",
+     "πόλει",
+     "ἐπέθεντο"
+    ]
+   },
+   {
+    "prompt": "In war many suffer unexpected things.",
+    "answer": "ἐν πολέμῳ πολλοὶ ἀπροσδόκητα πάσχουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "πολέμῳ",
+     "πολλοὶ",
+     "ἀπροσδόκητα",
+     "πάσχουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t4",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "They sent men to preoccupy the heights.",
+    "answer": "ἔπεμψαν προκαταληψομένους τὰ ἄκρα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπεμψαν",
+     "προκαταληψομένους",
+     "τὰ",
+     "ἄκρα"
+    ]
+   },
+   {
+    "prompt": "At midday they rested beside the river.",
+    "answer": "μέσον ἡμέρας παρὰ τῷ ποταμῷ ἀνεπαύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέσον",
+     "ἡμέρας",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ",
+     "ἀνεπαύσαντο"
+    ]
+   },
+   {
+    "prompt": "Cold and heat are hard for the sick to bear.",
+    "answer": "ψυχρὸν καὶ θερμὸν τοῖς κάμνουσι χαλεπά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ψυχρὸν",
+     "καὶ",
+     "θερμὸν",
+     "τοῖς",
+     "κάμνουσι",
+     "χαλεπά",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "In the evening the wise man ceases from his labors.",
+    "answer": "ἑσπέρας ὁ σοφὸς τῶν πόνων παύεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑσπέρας",
+     "ὁ",
+     "σοφὸς",
+     "τῶν",
+     "πόνων",
+     "παύεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t5",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "Virtue is honored among all the Greeks.",
+    "answer": "ἀρετὴ παρὰ πᾶσι τοῖς Ἕλλησι τιμᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀρετὴ",
+     "παρὰ",
+     "πᾶσι",
+     "τοῖς",
+     "Ἕλλησι",
+     "τιμᾶται"
+    ]
+   },
+   {
+    "prompt": "Death is fearful to cowards, but not to the brave.",
+    "answer": "θάνατος τοῖς δειλοῖς φοβερός ἐστιν, τοῖς δὲ ἀνδρείοις οὔ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θάνατος",
+     "τοῖς",
+     "δειλοῖς",
+     "φοβερός",
+     "ἐστιν",
+     "δὲ",
+     "ἀνδρείοις",
+     "οὔ"
+    ]
+   },
+   {
+    "prompt": "In spring the soldiers marched against the barbarians.",
+    "answer": "ἦρος οἱ στρατιῶται ἐπὶ τοὺς βαρβάρους ἐστράτευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦρος",
+     "οἱ",
+     "στρατιῶται",
+     "ἐπὶ",
+     "τοὺς",
+     "βαρβάρους",
+     "ἐστράτευσαν"
+    ]
+   },
+   {
+    "prompt": "Wisdom without justice brings harm.",
+    "answer": "σοφία ἄνευ δικαιοσύνης βλάβην φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφία",
+     "ἄνευ",
+     "δικαιοσύνης",
+     "βλάβην",
+     "φέρει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t6",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "At the season of the year the crops ripen.",
+    "answer": "ὥρᾳ ἔτους οἱ καρποὶ πεπαίνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥρᾳ",
+     "ἔτους",
+     "οἱ",
+     "καρποὶ",
+     "πεπαίνονται"
+    ]
+   },
+   {
+    "prompt": "In the afternoon the assembly was dissolved.",
+    "answer": "δείλης ἡ ἐκκλησία διελύθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δείλης",
+     "ἡ",
+     "ἐκκλησία",
+     "διελύθη"
+    ]
+   },
+   {
+    "prompt": "A king ought to guard the laws.",
+    "answer": "βασιλέα χρὴ τοὺς νόμους φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βασιλέα",
+     "χρὴ",
+     "τοὺς",
+     "νόμους",
+     "φυλάττειν"
+    ]
+   },
+   {
+    "prompt": "By day we work, hoping for rest at evening.",
+    "answer": "ἡμέρας ἐργαζόμεθα, ἐλπίζοντες ἑσπέρας ἀνάπαυσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμέρας",
+     "ἐργαζόμεθα",
+     "ἐλπίζοντες",
+     "ἑσπέρας",
+     "ἀνάπαυσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t7",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "From childhood he longed for the hunt.",
+    "answer": "ἐκ παίδων θήρας ἐπεθύμει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "παίδων",
+     "θήρας",
+     "ἐπεθύμει"
+    ]
+   },
+   {
+    "prompt": "By night the enemy assaulted the wall.",
+    "answer": "νυκτὸς οἱ πολέμιοι τῷ τείχει προσέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτός",
+     "οἱ",
+     "πολέμιοι",
+     "τῷ",
+     "τείχει",
+     "προσέβαλον"
+    ]
+   },
+   {
+    "prompt": "Just before daylight the general led out the army.",
+    "answer": "ἅμα ἕῳ ὁ στρατηγὸς τὸ στράτευμα ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "ἕῳ",
+     "ὁ",
+     "στρατηγός",
+     "τὸ",
+     "στράτευμα",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "About midnight the messenger arrived at the gates.",
+    "answer": "περὶ μέσας νύκτας ὁ ἄγγελος ἀφίκετο πρὸς τὰς πύλας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περί",
+     "μέσας",
+     "νύκτας",
+     "ὁ",
+     "ἄγγελος",
+     "ἀφίκετο",
+     "πρός",
+     "τὰς",
+     "πύλας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t8",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "A god does not envy the fortunate.",
+    "answer": "θεὸς τοῖς εὐδαίμοσιν οὐ φθονεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θεός",
+     "τοῖς",
+     "εὐδαίμοσιν",
+     "οὐ",
+     "φθονεῖ"
+    ]
+   },
+   {
+    "prompt": "War teaches men many things.",
+    "answer": "πόλεμος πολλὰ τοὺς ἀνθρώπους διδάσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόλεμος",
+     "πολλά",
+     "τοὺς",
+     "ἀνθρώπους",
+     "διδάσκει"
+    ]
+   },
+   {
+    "prompt": "Injustice dissolves friendship.",
+    "answer": "ἀδικία φιλίαν λύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδικία",
+     "φιλίαν",
+     "λύει"
+    ]
+   },
+   {
+    "prompt": "Death is common to all men.",
+    "answer": "θάνατος πᾶσιν ἀνθρώποις κοινός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θάνατος",
+     "πᾶσιν",
+     "ἀνθρώποις",
+     "κοινός",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t9",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "In the beginning of the speech the orator praised the laws.",
+    "answer": "ἐν ἀρχῇ τοῦ λόγου ὁ ῥήτωρ τοὺς νόμους ἐπῄνεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἀρχῇ",
+     "τοῦ",
+     "λόγου",
+     "ὁ",
+     "ῥήτωρ",
+     "τοὺς",
+     "νόμους",
+     "ἐπῄνεσεν"
+    ]
+   },
+   {
+    "prompt": "By land and by sea the Athenians ruled.",
+    "answer": "κατὰ γῆν καὶ κατὰ θάλατταν οἱ Ἀθηναῖοι ἦρχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατά",
+     "γῆν",
+     "καί",
+     "θάλατταν",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ἦρχον"
+    ]
+   },
+   {
+    "prompt": "In war fortune has great power.",
+    "answer": "ἐν πολέμῳ ἡ τύχη μέγα δύναται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "πολέμῳ",
+     "ἡ",
+     "τύχη",
+     "μέγα",
+     "δύναται"
+    ]
+   },
+   {
+    "prompt": "Out of fear they abandoned the city.",
+    "answer": "διὰ φόβον τὴν πόλιν ἐξέλιπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διά",
+     "φόβον",
+     "τὴν",
+     "πόλιν",
+     "ἐξέλιπον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t10",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "At midday the travellers rested beside the spring.",
+    "answer": "μέσον ἡμέρας οἱ ὁδοιπόροι παρὰ τῇ κρήνῃ ἀνεπαύοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέσον",
+     "ἡμέρας",
+     "οἱ",
+     "ὁδοιπόροι",
+     "παρά",
+     "τῇ",
+     "κρήνῃ",
+     "ἀνεπαύοντο"
+    ]
+   },
+   {
+    "prompt": "Heat and cold are hard on the body.",
+    "answer": "θερμὸν καὶ ψυχρὸν τῷ σώματι χαλεπά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θερμόν",
+     "καί",
+     "ψυχρόν",
+     "τῷ",
+     "σώματι",
+     "χαλεπά",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Good men benefit their friends.",
+    "answer": "ἀγαθοὶ τοὺς φίλους ὠφελοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγαθοί",
+     "τοὺς",
+     "φίλους",
+     "ὠφελοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The utter destruction of the enemy is near.",
+    "answer": "τῶν πολεμίων ἄρδην ὄλεθρος ἐγγύς ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἄρδην",
+     "ὄλεθρος",
+     "ἐγγύς",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t11",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "In the evening the farmer returned from the field.",
+    "answer": "ἑσπέρας ὁ γεωργὸς ἐκ τοῦ ἀγροῦ ἐπανῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑσπέρας",
+     "ὁ",
+     "γεωργός",
+     "ἐκ",
+     "τοῦ",
+     "ἀγροῦ",
+     "ἐπανῆλθεν"
+    ]
+   },
+   {
+    "prompt": "In spring the Macedonians invaded the enemy's country.",
+    "answer": "ἦρος οἱ Μακεδόνες εἰς τὴν πολεμίαν ἐνέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦρος",
+     "οἱ",
+     "Μακεδόνες",
+     "εἰς",
+     "τὴν",
+     "πολεμίαν",
+     "ἐνέβαλον"
+    ]
+   },
+   {
+    "prompt": "At daybreak the sailors loosed the ships.",
+    "answer": "ἅμα ὄρθρῳ οἱ ναῦται τὰς ναῦς ἔλυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "ὄρθρῳ",
+     "οἱ",
+     "ναῦται",
+     "τὰς",
+     "ναῦς",
+     "ἔλυσαν"
+    ]
+   },
+   {
+    "prompt": "In the afternoon they held an assembly.",
+    "answer": "περὶ δείλην ἐκκλησίαν ἐποιήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περί",
+     "δείλην",
+     "ἐκκλησίαν",
+     "ἐποιήσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-t12",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "A general must take care of the soldiers.",
+    "answer": "στρατηγὸν δεῖ τῶν στρατιωτῶν ἐπιμελεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατηγόν",
+     "δεῖ",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐπιμελεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "Hope nourishes the wretched.",
+    "answer": "ἐλπὶς τοὺς ἀθλίους τρέφει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλπίς",
+     "τοὺς",
+     "ἀθλίους",
+     "τρέφει"
+    ]
+   },
+   {
+    "prompt": "Wealth without virtue is not enviable.",
+    "answer": "πλοῦτος ἄνευ ἀρετῆς οὐ ζηλωτός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πλοῦτος",
+     "ἄνευ",
+     "ἀρετῆς",
+     "οὐ",
+     "ζηλωτός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "By day they worked, by night they slept.",
+    "answer": "ἡμέρας μὲν ἠργάζοντο, νυκτὸς δὲ ἐκάθευδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμέρας",
+     "μέν",
+     "ἠργάζοντο",
+     "νυκτός",
+     "δέ",
+     "ἐκάθευδον"
+    ]
+   }
+  ]
+ }
+]

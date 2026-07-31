@@ -1,0 +1,620 @@
+[
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t1",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "The acropolis is still called \"city\" by the citizens.",
+    "answer": "καλεῖται ἡ ἀκρόπολις ἔτι ὑπὸ τῶν πολιτῶν πόλις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλεῖται",
+     "ἡ",
+     "ἀκρόπολις",
+     "ἔτι",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "πόλις"
+    ]
+   },
+   {
+    "prompt": "Chaerephon was a companion of mine from youth.",
+    "answer": "ὁ Χαιρεφῶν ἑταῖρος ἐμὸς ἐκ νεότητος ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Χαιρεφῶν",
+     "ἑταῖρος",
+     "ἐμὸς",
+     "ἐκ",
+     "νεότητος",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The soldiers appointed Cyrus general.",
+    "answer": "οἱ στρατιῶται τὸν Κῦρον στρατηγὸν ἀπέδειξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "Κῦρον",
+     "στρατηγὸν",
+     "ἀπέδειξαν"
+    ]
+   },
+   {
+    "prompt": "Wisdom seemed to Socrates to be the greatest good.",
+    "answer": "ἡ σοφία τῷ Σωκράτει μέγιστον ἀγαθὸν ἐδόκει εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφία",
+     "τῷ",
+     "Σωκράτει",
+     "μέγιστον",
+     "ἀγαθὸν",
+     "ἐδόκει",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t2",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "These men were those who avoided the trial.",
+    "answer": "οὗτοι ἦσαν οἱ τὴν κρίσιν φεύγοντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "ἦσαν",
+     "οἱ",
+     "τὴν",
+     "κρίσιν",
+     "φεύγοντες"
+    ]
+   },
+   {
+    "prompt": "He suspected that the one slandering him was Menon.",
+    "answer": "ὑπώπτευε δὲ τὸν διαβάλλοντα εἶναι Μένωνα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπώπτευε",
+     "δὲ",
+     "τὸν",
+     "διαβάλλοντα",
+     "εἶναι",
+     "Μένωνα"
+    ]
+   },
+   {
+    "prompt": "The enactors of the laws are the weak and the many.",
+    "answer": "οἱ τοὺς νόμους τιθέντες οἱ ἀσθενεῖς εἰσι καὶ οἱ πολλοί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "νόμους",
+     "τιθέντες",
+     "ἀσθενεῖς",
+     "εἰσι",
+     "καὶ",
+     "πολλοί"
+    ]
+   },
+   {
+    "prompt": "They kept striking Dexippus, calling him the traitor.",
+    "answer": "ἔβαλλον τὸν Δέξιππον τὸν προδότην ἀνακαλοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔβαλλον",
+     "τὸν",
+     "Δέξιππον",
+     "προδότην",
+     "ἀνακαλοῦντες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t3",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "Cyrus was the third to cross the river.",
+    "answer": "ὁ Κῦρος τρίτος τὸν ποταμὸν διέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "τρίτος",
+     "τὸν",
+     "ποταμὸν",
+     "διέβη"
+    ]
+   },
+   {
+    "prompt": "This road is broader than that one.",
+    "answer": "ἥδε ἡ ὁδὸς εὐρυτέρα ἐκείνης ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥδε",
+     "ἡ",
+     "ὁδὸς",
+     "εὐρυτέρα",
+     "ἐκείνης",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The enemies' army was many times larger than ours.",
+    "answer": "ὁ τῶν πολεμίων στρατὸς πολλαπλάσιος τοῦ ἡμετέρου ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τῶν",
+     "πολεμίων",
+     "στρατὸς",
+     "πολλαπλάσιος",
+     "τοῦ",
+     "ἡμετέρου",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "Solon became the first lawgiver of the Athenians.",
+    "answer": "ὁ Σόλων πρῶτος νομοθέτης τῶν Ἀθηναίων ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σόλων",
+     "πρῶτος",
+     "νομοθέτης",
+     "τῶν",
+     "Ἀθηναίων",
+     "ἐγένετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t4",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "Socrates said that virtue and knowledge are the same thing.",
+    "answer": "ὁ Σωκράτης ἔφη τὴν ἀρετὴν καὶ τὴν ἐπιστήμην τὸ αὐτὸ εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "ἔφη",
+     "τὴν",
+     "ἀρετὴν",
+     "καὶ",
+     "ἐπιστήμην",
+     "τὸ",
+     "αὐτὸ",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "What happened turned out the opposite of their hope.",
+    "answer": "τὰ συμβάντα τὸ ἐναντίον τῆς ἐλπίδος ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "συμβάντα",
+     "τὸ",
+     "ἐναντίον",
+     "τῆς",
+     "ἐλπίδος",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "This man was named king by the soldiers.",
+    "answer": "οὗτος ὑπὸ τῶν στρατιωτῶν βασιλεὺς ὠνομάσθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὑπὸ",
+     "τῶν",
+     "στρατιωτῶν",
+     "βασιλεὺς",
+     "ὠνομάσθη"
+    ]
+   },
+   {
+    "prompt": "Darius made his younger son satrap.",
+    "answer": "ὁ Δαρεῖος τὸν νεώτερον υἱὸν σατράπην κατέστησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Δαρεῖος",
+     "τὸν",
+     "νεώτερον",
+     "υἱὸν",
+     "σατράπην",
+     "κατέστησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t5",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "The young man became a friend of Socrates.",
+    "answer": "ὁ νεανίας φίλος τῷ Σωκράτει ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "φίλος",
+     "τῷ",
+     "Σωκράτει",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "This place is called \"market\" by the citizens.",
+    "answer": "οὗτος ὁ τόπος ἀγορὰ ὑπὸ τῶν πολιτῶν καλεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "τόπος",
+     "ἀγορὰ",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "καλεῖται"
+    ]
+   },
+   {
+    "prompt": "They appointed him judge of the contest.",
+    "answer": "αὐτὸν κριτὴν τοῦ ἀγῶνος ἀπέδειξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτὸν",
+     "κριτὴν",
+     "τοῦ",
+     "ἀγῶνος",
+     "ἀπέδειξαν"
+    ]
+   },
+   {
+    "prompt": "Xenophon was thought to be a wise general.",
+    "answer": "ὁ Ξενοφῶν στρατηγὸς σοφὸς ἐνομίζετο εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ξενοφῶν",
+     "στρατηγὸς",
+     "σοφὸς",
+     "ἐνομίζετο",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t6",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "The Persians consider the king a god.",
+    "answer": "οἱ Πέρσαι τὸν βασιλέα θεὸν νομίζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "τὸν",
+     "βασιλέα",
+     "θεὸν",
+     "νομίζουσιν"
+    ]
+   },
+   {
+    "prompt": "This war became the cause of many evils.",
+    "answer": "ὅδε ὁ πόλεμος αἴτιος πολλῶν κακῶν ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "ὁ",
+     "πόλεμος",
+     "αἴτιος",
+     "πολλῶν",
+     "κακῶν",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "He was the first of the Greeks to cross into Asia.",
+    "answer": "πρῶτος τῶν Ἑλλήνων εἰς τὴν Ἀσίαν διέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρῶτος",
+     "τῶν",
+     "Ἑλλήνων",
+     "εἰς",
+     "τὴν",
+     "Ἀσίαν",
+     "διέβη"
+    ]
+   },
+   {
+    "prompt": "The one who persuaded the Athenians was Alcibiades.",
+    "answer": "ὁ πείσας τοὺς Ἀθηναίους Ἀλκιβιάδης ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πείσας",
+     "τοὺς",
+     "Ἀθηναίους",
+     "Ἀλκιβιάδης",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t7",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "The soldiers chose this man general.",
+    "answer": "οἱ στρατιῶται τοῦτον τὸν ἄνδρα στρατηγὸν εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοῦτον",
+     "τὸν",
+     "ἄνδρα",
+     "στρατηγὸν",
+     "εἵλοντο"
+    ]
+   },
+   {
+    "prompt": "Wisdom is called the beginning of happiness by the philosophers.",
+    "answer": "ἡ σοφία ἀρχὴ τῆς εὐδαιμονίας ὑπὸ τῶν φιλοσόφων καλεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφία",
+     "ἀρχὴ",
+     "τῆς",
+     "εὐδαιμονίας",
+     "ὑπὸ",
+     "τῶν",
+     "φιλοσόφων",
+     "καλεῖται"
+    ]
+   },
+   {
+    "prompt": "Although he was young, he was appointed leader of the army.",
+    "answer": "καίπερ νέος ὤν, ἡγεμὼν τοῦ στρατεύματος κατέστη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "νέος",
+     "ὤν",
+     "ἡγεμὼν",
+     "τοῦ",
+     "στρατεύματος",
+     "κατέστη"
+    ]
+   },
+   {
+    "prompt": "The citizens made Solon a lawgiver.",
+    "answer": "οἱ πολῖται τὸν Σόλωνα νομοθέτην ἐποίησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "Σόλωνα",
+     "νομοθέτην",
+     "ἐποίησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t8",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "I thought that this woman was the wisest of all.",
+    "answer": "ᾤμην ταύτην τὴν γυναῖκα πασῶν σοφωτάτην εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾤμην",
+     "ταύτην",
+     "τὴν",
+     "γυναῖκα",
+     "πασῶν",
+     "σοφωτάτην",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Xenophon was a friend of mine, brave in battle.",
+    "answer": "ὁ Ξενοφῶν ἑταῖρος ἐμὸς ἦν, ἐν ταῖς μάχαις ἀνδρεῖος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ξενοφῶν",
+     "ἑταῖρος",
+     "ἐμὸς",
+     "ἦν",
+     "ἐν",
+     "ταῖς",
+     "μάχαις",
+     "ἀνδρεῖος"
+    ]
+   },
+   {
+    "prompt": "Darius was the first to sail across the sea.",
+    "answer": "ὁ Δαρεῖος πρῶτος διὰ τῆς θαλάττης ἔπλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Δαρεῖος",
+     "πρῶτος",
+     "διὰ",
+     "τῆς",
+     "θαλάττης",
+     "ἔπλευσεν"
+    ]
+   },
+   {
+    "prompt": "This road seemed to us shorter than the other.",
+    "answer": "αὕτη ἡ ὁδὸς βραχυτέρα τῆς ἑτέρας ἡμῖν ἐδόκει εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "ὁδὸς",
+     "βραχυτέρα",
+     "τῆς",
+     "ἑτέρας",
+     "ἡμῖν",
+     "ἐδόκει",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t9",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "They kept striking the young man, calling him the traitor.",
+    "answer": "τὸν νεανίαν ἔβαλλον τὸν προδότην ἀνακαλοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "νεανίαν",
+     "ἔβαλλον",
+     "προδότην",
+     "ἀνακαλοῦντες"
+    ]
+   },
+   {
+    "prompt": "These were the men who had betrayed the city.",
+    "answer": "οὗτοι ἦσαν οἱ τὴν πόλιν προδόντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "ἦσαν",
+     "οἱ",
+     "τὴν",
+     "πόλιν",
+     "προδόντες"
+    ]
+   },
+   {
+    "prompt": "He suspected that it was Meno who slandered him.",
+    "answer": "ὑπώπτευε δὲ εἶναι τὸν διαβάλλοντα Μένωνα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπώπτευε",
+     "δὲ",
+     "εἶναι",
+     "τὸν",
+     "διαβάλλοντα",
+     "Μένωνα"
+    ]
+   },
+   {
+    "prompt": "The men who make the laws are the weak.",
+    "answer": "οἱ τοὺς νόμους τιθέμενοι οἱ ἀσθενεῖς εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "νόμους",
+     "τιθέμενοι",
+     "ἀσθενεῖς",
+     "εἰσίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1150-the-article-and-a-predicate-noun-t10",
+  "sectionId": "sm-1150-the-article-and-a-predicate-noun",
+  "questions": [
+   {
+    "prompt": "Slavery and death are not the same thing.",
+    "answer": "ἡ δουλεία καὶ ὁ θάνατος οὐ τὸ αὐτό ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "δουλεία",
+     "καὶ",
+     "ὁ",
+     "θάνατος",
+     "οὐ",
+     "τὸ",
+     "αὐτό",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Freedom seemed to them to be the opposite of slavery.",
+    "answer": "ἡ ἐλευθερία τὸ ἐναντίον τῆς δουλείας αὐτοῖς ἐδόκει εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐλευθερία",
+     "τὸ",
+     "ἐναντίον",
+     "τῆς",
+     "δουλείας",
+     "αὐτοῖς",
+     "ἐδόκει",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "This man is the one of the two brothers who fled.",
+    "answer": "οὗτός ἐστιν ὁ ἕτερος τοῖν φυγόντοιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτός",
+     "ἐστιν",
+     "ὁ",
+     "ἕτερος",
+     "τοῖν",
+     "φυγόντοιν"
+    ]
+   },
+   {
+    "prompt": "Everyone knew that Pericles was the leader of the people.",
+    "answer": "πάντες ᾔδεσαν τὸν Περικλέα τὸν τοῦ δήμου προστάτην ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ᾔδεσαν",
+     "τὸν",
+     "Περικλέα",
+     "τοῦ",
+     "δήμου",
+     "προστάτην",
+     "ὄντα"
+    ]
+   }
+  ]
+ }
+]

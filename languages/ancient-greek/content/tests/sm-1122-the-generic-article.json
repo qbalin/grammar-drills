@@ -1,0 +1,651 @@
+[
+ {
+  "id": "sm-1122-the-generic-article-t1",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "The wise man fears the gods more than death.",
+    "answer": "ὁ σοφὸς τοὺς θεοὺς μᾶλλον ἢ τὸν θάνατον φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τοὺς",
+     "θεοὺς",
+     "μᾶλλον",
+     "ἢ",
+     "τὸν",
+     "θάνατον",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "The old praise things past, but blame things present.",
+    "answer": "οἱ γέροντες τὰ μὲν παλαιὰ ἐπαινοῦσιν, τὰ δὲ παρόντα ψέγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "τὰ",
+     "μὲν",
+     "παλαιὰ",
+     "ἐπαινοῦσιν",
+     "δὲ",
+     "παρόντα",
+     "ψέγουσιν"
+    ]
+   },
+   {
+    "prompt": "Whoever wishes is permitted to speak in the assembly.",
+    "answer": "τῷ βουλομένῳ ἔξεστιν ἐν τῇ ἐκκλησίᾳ λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "βουλομένῳ",
+     "ἔξεστιν",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "The cowards flee, but the brave stand fast in the battle.",
+    "answer": "οἱ μὲν δειλοὶ φεύγουσιν, οἱ δὲ ἀνδρεῖοι ἐν τῇ μάχῃ μένουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "δειλοὶ",
+     "φεύγουσιν",
+     "δὲ",
+     "ἀνδρεῖοι",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "μένουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t2",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "The unjust man is hateful to the gods.",
+    "answer": "ὁ ἄδικος τοῖς θεοῖς ἐχθρός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄδικος",
+     "τοῖς",
+     "θεοῖς",
+     "ἐχθρός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The good citizen obeys the laws willingly.",
+    "answer": "ὁ ἀγαθὸς πολίτης τοῖς νόμοις ἑκὼν πείθεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀγαθὸς",
+     "πολίτης",
+     "τοῖς",
+     "νόμοις",
+     "ἑκὼν",
+     "πείθεται"
+    ]
+   },
+   {
+    "prompt": "The rich despise the poor, and the poor envy the rich.",
+    "answer": "οἱ πλούσιοι τῶν πενήτων καταφρονοῦσιν, οἱ δὲ πένητες τοῖς πλουσίοις φθονοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πλούσιοι",
+     "τῶν",
+     "πενήτων",
+     "καταφρονοῦσιν",
+     "δὲ",
+     "πένητες",
+     "τοῖς",
+     "πλουσίοις",
+     "φθονοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The man who flees the battle is a coward.",
+    "answer": "ὁ τὴν μάχην φεύγων δειλός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τὴν",
+     "μάχην",
+     "φεύγων",
+     "δειλός",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t3",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "Everyone who loves wisdom seeks the truth.",
+    "answer": "πᾶς ὁ τὴν σοφίαν φιλῶν τὴν ἀλήθειαν ζητεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶς",
+     "ὁ",
+     "τὴν",
+     "σοφίαν",
+     "φιλῶν",
+     "ἀλήθειαν",
+     "ζητεῖ"
+    ]
+   },
+   {
+    "prompt": "The tyrant fears the citizens more than the enemy.",
+    "answer": "ὁ τύραννος τοὺς πολίτας μᾶλλον ἢ τοὺς πολεμίους φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τοὺς",
+     "πολίτας",
+     "μᾶλλον",
+     "ἢ",
+     "πολεμίους",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "Farmers honor the earth as a mother.",
+    "answer": "οἱ γεωργοὶ τὴν γῆν ὡς μητέρα τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γεωργοὶ",
+     "τὴν",
+     "γῆν",
+     "ὡς",
+     "μητέρα",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "The flatterer harms his friends more than his enemies.",
+    "answer": "ὁ κόλαξ τοὺς φίλους μᾶλλον ἢ τοὺς ἐχθροὺς βλάπτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κόλαξ",
+     "τοὺς",
+     "φίλους",
+     "μᾶλλον",
+     "ἢ",
+     "ἐχθροὺς",
+     "βλάπτει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t4",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "The general said that the good soldier must obey his commander.",
+    "answer": "ὁ στρατηγὸς ἔφη τὸν ἀγαθὸν στρατιώτην δεῖν τῷ ἄρχοντι πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἔφη",
+     "τὸν",
+     "ἀγαθὸν",
+     "στρατιώτην",
+     "δεῖν",
+     "τῷ",
+     "ἄρχοντι",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "The young are quick toward hope, the old slow.",
+    "answer": "οἱ μὲν νέοι ταχεῖς πρὸς τὴν ἐλπίδα, οἱ δὲ γέροντες βραδεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "νέοι",
+     "ταχεῖς",
+     "πρὸς",
+     "τὴν",
+     "ἐλπίδα",
+     "δὲ",
+     "γέροντες",
+     "βραδεῖς"
+    ]
+   },
+   {
+    "prompt": "You will not lack those who will be willing to fight for the city.",
+    "answer": "οὐκ ἀπορήσετε τῶν ἐθελησόντων ὑπὲρ τῆς πόλεως μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀπορήσετε",
+     "τῶν",
+     "ἐθελησόντων",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "The informer is a vile thing, as Demosthenes says.",
+    "answer": "πονηρὸν ὁ συκοφάντης ἐστίν, ὡς Δημοσθένης λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πονηρὸν",
+     "ὁ",
+     "συκοφάντης",
+     "ἐστίν",
+     "ὡς",
+     "Δημοσθένης",
+     "λέγει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t5",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "The just man would rather suffer wrong than do it.",
+    "answer": "ὁ δίκαιος βούλοιτο ἂν ἀδικεῖσθαι μᾶλλον ἢ ἀδικεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δίκαιος",
+     "βούλοιτο",
+     "ἂν",
+     "ἀδικεῖσθαι",
+     "μᾶλλον",
+     "ἢ",
+     "ἀδικεῖν"
+    ]
+   },
+   {
+    "prompt": "The gods love the man who honors his parents.",
+    "answer": "οἱ θεοὶ τὸν τοὺς γονέας τιμῶντα φιλοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "τὸν",
+     "τοὺς",
+     "γονέας",
+     "τιμῶντα",
+     "φιλοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The one who pursues pleasure alone becomes a slave.",
+    "answer": "ὁ τὴν ἡδονὴν μόνην διώκων δοῦλος γίγνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τὴν",
+     "ἡδονὴν",
+     "μόνην",
+     "διώκων",
+     "δοῦλος",
+     "γίγνεται"
+    ]
+   },
+   {
+    "prompt": "The wise honor the truth, but the foolish flee it.",
+    "answer": "οἱ μὲν φρόνιμοι τὴν ἀλήθειαν τιμῶσιν, οἱ δὲ ἄφρονες αὐτὴν φεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "φρόνιμοι",
+     "τὴν",
+     "ἀλήθειαν",
+     "τιμῶσιν",
+     "δὲ",
+     "ἄφρονες",
+     "αὐτὴν",
+     "φεύγουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t6",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "The physician heals the body, but the philosopher the soul.",
+    "answer": "ὁ μὲν ἰατρὸς τὸ σῶμα θεραπεύει, ὁ δὲ φιλόσοφος τὴν ψυχήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὲν",
+     "ἰατρὸς",
+     "τὸ",
+     "σῶμα",
+     "θεραπεύει",
+     "δὲ",
+     "φιλόσοφος",
+     "τὴν",
+     "ψυχήν"
+    ]
+   },
+   {
+    "prompt": "It is hard for the poor man to speak the truth to a tyrant.",
+    "answer": "χαλεπόν ἐστι τῷ πένητι τὴν ἀλήθειαν πρὸς τὸν τύραννον λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστι",
+     "τῷ",
+     "πένητι",
+     "τὴν",
+     "ἀλήθειαν",
+     "πρὸς",
+     "τὸν",
+     "τύραννον",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "A guide will lead the army through the mountains.",
+    "answer": "ὁ ἡγησόμενος τὸ στράτευμα διὰ τῶν ὀρῶν ἄξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἡγησόμενος",
+     "τὸ",
+     "στράτευμα",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "ἄξει"
+    ]
+   },
+   {
+    "prompt": "The brave die once, but the cowards many times.",
+    "answer": "οἱ μὲν ἀνδρεῖοι ἅπαξ ἀποθνῄσκουσιν, οἱ δὲ δειλοὶ πολλάκις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "ἀνδρεῖοι",
+     "ἅπαξ",
+     "ἀποθνῄσκουσιν",
+     "δὲ",
+     "δειλοὶ",
+     "πολλάκις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t7",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "The coward flees the danger, but the brave man awaits it.",
+    "answer": "ὁ μὲν δειλὸς φεύγει τὸν κίνδυνον, ὁ δὲ ἀνδρεῖος ὑπομένει αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὲν",
+     "δειλὸς",
+     "φεύγει",
+     "τὸν",
+     "κίνδυνον",
+     "δὲ",
+     "ἀνδρεῖος",
+     "ὑπομένει",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "The tyrant fears his own citizens more than the enemy.",
+    "answer": "ὁ τύραννος τοὺς ἑαυτοῦ πολίτας φοβεῖται μᾶλλον ἢ τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τοὺς",
+     "ἑαυτοῦ",
+     "πολίτας",
+     "φοβεῖται",
+     "μᾶλλον",
+     "ἢ",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "The flatterer is a dangerous thing in the city.",
+    "answer": "χαλεπὸν ὁ κόλαξ ἐν τῇ πόλει ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπὸν",
+     "ὁ",
+     "κόλαξ",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The farmer honors the earth as a mother.",
+    "answer": "ὁ γεωργὸς τὴν γῆν ὥσπερ μητέρα τιμᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "τὴν",
+     "γῆν",
+     "ὥσπερ",
+     "μητέρα",
+     "τιμᾷ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t8",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "The old honor the laws more than the young.",
+    "answer": "οἱ γέροντες τοὺς νόμους μᾶλλον τιμῶσιν ἢ οἱ νέοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "τοὺς",
+     "νόμους",
+     "μᾶλλον",
+     "τιμῶσιν",
+     "ἢ",
+     "νέοι"
+    ]
+   },
+   {
+    "prompt": "The brave are willing to die for their fatherland.",
+    "answer": "οἱ ἀνδρεῖοι ὑπὲρ τῆς πατρίδος ἀποθνῄσκειν ἐθέλουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀνδρεῖοι",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκειν",
+     "ἐθέλουσιν"
+    ]
+   },
+   {
+    "prompt": "The wise do not envy the fortunate.",
+    "answer": "οἱ σοφοὶ τοῖς εὐτυχέσιν οὐ φθονοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "τοῖς",
+     "εὐτυχέσιν",
+     "οὐ",
+     "φθονοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The wicked easily deceive the trusting.",
+    "answer": "οἱ πονηροὶ τοὺς πιστεύοντας ῥᾳδίως ἐξαπατῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πονηροὶ",
+     "τοὺς",
+     "πιστεύοντας",
+     "ῥᾳδίως",
+     "ἐξαπατῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t9",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "It is permitted for anyone who wishes to speak in the assembly.",
+    "answer": "ἔξεστι τῷ βουλομένῳ λέγειν ἐν τῇ ἐκκλησίᾳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστι",
+     "τῷ",
+     "βουλομένῳ",
+     "λέγειν",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ"
+    ]
+   },
+   {
+    "prompt": "You will not lack those willing to fight for the city.",
+    "answer": "οὐκ ἀπορήσετε τῶν ἐθελησόντων ὑπὲρ τῆς πόλεως μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀπορήσετε",
+     "τῶν",
+     "ἐθελησόντων",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "Those who make war love neither justice nor peace.",
+    "answer": "οἱ πολεμοῦντες οὔτε δικαιοσύνην οὔτε εἰρήνην φιλοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολεμοῦντες",
+     "οὔτε",
+     "δικαιοσύνην",
+     "εἰρήνην",
+     "φιλοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The one who rules well obeys the laws first.",
+    "answer": "ὁ καλῶς ἄρχων πρῶτος τοῖς νόμοις πείθεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "καλῶς",
+     "ἄρχων",
+     "πρῶτος",
+     "τοῖς",
+     "νόμοις",
+     "πείθεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1122-the-generic-article-t10",
+  "sectionId": "sm-1122-the-generic-article",
+  "questions": [
+   {
+    "prompt": "Everyone who does wrong will pay the penalty.",
+    "answer": "πᾶς ὁ ἀδικῶν δίκην δώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶς",
+     "ὁ",
+     "ἀδικῶν",
+     "δίκην",
+     "δώσει"
+    ]
+   },
+   {
+    "prompt": "Every idle man harms the city.",
+    "answer": "πᾶς ὁ ἀργὸς βλάπτει τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶς",
+     "ὁ",
+     "ἀργὸς",
+     "βλάπτει",
+     "τὴν",
+     "πόλιν"
+    ]
+   },
+   {
+    "prompt": "The generous give eagerly even to strangers.",
+    "answer": "οἱ ἐλευθέριοι καὶ τοῖς ξένοις προθύμως διδόασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐλευθέριοι",
+     "καὶ",
+     "τοῖς",
+     "ξένοις",
+     "προθύμως",
+     "διδόασιν"
+    ]
+   },
+   {
+    "prompt": "The victor should spare the conquered.",
+    "answer": "τὸν νικῶντα δεῖ φείδεσθαι τῶν νικωμένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "νικῶντα",
+     "δεῖ",
+     "φείδεσθαι",
+     "τῶν",
+     "νικωμένων"
+    ]
+   }
+  ]
+ }
+]

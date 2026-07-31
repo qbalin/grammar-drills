@@ -1,0 +1,669 @@
+[
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t1",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "They begged the leader to prove himself as zealous as possible.",
+    "answer": "τοῦ ἡγεμόνος ἐδέοντο ὡς προθυμοτάτου γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "ἡγεμόνος",
+     "ἐδέοντο",
+     "ὡς",
+     "προθυμοτάτου",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "I beg you to become kindly toward me.",
+    "answer": "δέομαι ὑμῶν εὐμενῶν μοι γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέομαι",
+     "ὑμῶν",
+     "εὐμενῶν",
+     "μοι",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "We beg the citizens to appear courageous in the battle.",
+    "answer": "τῶν πολιτῶν δεόμεθα θαρσαλέων ἐν τῇ μάχῃ φανῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολιτῶν",
+     "δεόμεθα",
+     "θαρσαλέων",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "φανῆναι"
+    ]
+   },
+   {
+    "prompt": "I begged my kinsman by marriage to become faithful to me.",
+    "answer": "ἐδεόμην τοῦ κηδεστοῦ πιστοῦ μοι γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδεόμην",
+     "τοῦ",
+     "κηδεστοῦ",
+     "πιστοῦ",
+     "μοι",
+     "γενέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t2",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "They begged Cyrus to become their protector.",
+    "answer": "τοῦ Κύρου ἐδέοντο προστάτην γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "Κύρου",
+     "ἐδέοντο",
+     "προστάτην",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "I beg you to be willing to hear me, considering the number of the charges.",
+    "answer": "δέομαι ὑμῶν ἐθέλειν ἐμοῦ ἀκοῦσαι, λογιζομένους τὸ πλῆθος τῶν αἰτιῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέομαι",
+     "ὑμῶν",
+     "ἐθέλειν",
+     "ἐμοῦ",
+     "ἀκοῦσαι",
+     "λογιζομένους",
+     "τό",
+     "πλῆθος",
+     "τῶν",
+     "αἰτιῶν"
+    ]
+   },
+   {
+    "prompt": "We begged the allies to become our leaders.",
+    "answer": "τῶν συμμάχων ἐδεόμεθα ἡγεμόνας ἡμῖν γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "συμμάχων",
+     "ἐδεόμεθα",
+     "ἡγεμόνας",
+     "ἡμῖν",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "I beg the soldier to be appointed guard of the gate.",
+    "answer": "τοῦ στρατιώτου δέομαι φύλακα τῆς πύλης καταστῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατιώτου",
+     "δέομαι",
+     "φύλακα",
+     "τῆς",
+     "πύλης",
+     "καταστῆναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t3",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "Now it is in your power to prove yourself a good man.",
+    "answer": "νῦν σοι ἔξεστιν ἀνδρὶ ἀγαθῷ γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "σοι",
+     "ἔξεστιν",
+     "ἀνδρί",
+     "ἀγαθῷ",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "It is in your power to become friends to the Lacedaemonians.",
+    "answer": "Λακεδαιμονίοις ἔξεστιν ὑμῖν φίλους γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Λακεδαιμονίοις",
+     "ἔξεστιν",
+     "ὑμῖν",
+     "φίλους",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "It is possible for the young men to rush courageously into the battle.",
+    "answer": "τοῖς νεανίαις ἔξεστι θαρσαλέοις εἰς τὴν μάχην ὁρμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "νεανίαις",
+     "ἔξεστι",
+     "θαρσαλέοις",
+     "εἰς",
+     "τήν",
+     "μάχην",
+     "ὁρμᾶν"
+    ]
+   },
+   {
+    "prompt": "It is possible for the citizen to be appointed leader of the army.",
+    "answer": "τῷ πολίτῃ ἔξεστιν ἡγεμόνι τοῦ στρατεύματος καταστῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "πολίτῃ",
+     "ἔξεστιν",
+     "ἡγεμόνι",
+     "τοῦ",
+     "στρατεύματος",
+     "καταστῆναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t4",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "They decided to arm themselves fully and advance.",
+    "answer": "ἔδοξεν αὐτοῖς ἐξοπλισαμένοις προϊέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "ἐξοπλισαμένοις",
+     "προϊέναι"
+    ]
+   },
+   {
+    "prompt": "The generals decided to station pickets and summon the soldiers.",
+    "answer": "ἔδοξε τοῖς στρατηγοῖς προφύλακας καταστήσαντας συγκαλεῖν τοὺς στρατιώτας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξε",
+     "τοῖς",
+     "στρατηγοῖς",
+     "προφύλακας",
+     "καταστήσαντας",
+     "συγκαλεῖν",
+     "τούς",
+     "στρατιώτας"
+    ]
+   },
+   {
+    "prompt": "The enemy decided to destroy the bridge and withdraw.",
+    "answer": "ἔδοξε τοῖς πολεμίοις τὴν γέφυραν λύσαντας ἀναχωρεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξε",
+     "τοῖς",
+     "πολεμίοις",
+     "τήν",
+     "γέφυραν",
+     "λύσαντας",
+     "ἀναχωρεῖν"
+    ]
+   },
+   {
+    "prompt": "They decided to send envoys and ask for peace.",
+    "answer": "ἔδοξεν αὐτοῖς πρέσβεις πέμψασιν εἰρήνην αἰτεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "πρέσβεις",
+     "πέμψασιν",
+     "εἰρήνην",
+     "αἰτεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t5",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "It is expedient for them to be friends rather than enemies.",
+    "answer": "συμφέρει αὐτοῖς φίλους εἶναι μᾶλλον ἢ πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμφέρει",
+     "αὐτοῖς",
+     "φίλους",
+     "εἶναι",
+     "μᾶλλον",
+     "ἤ",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "It is expedient for the city to remain free.",
+    "answer": "συμφέρει τῇ πόλει ἐλευθέρᾳ μένειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμφέρει",
+     "τῇ",
+     "πόλει",
+     "ἐλευθέρᾳ",
+     "μένειν"
+    ]
+   },
+   {
+    "prompt": "It befits the young to be temperate.",
+    "answer": "προσήκει τοῖς νέοις σώφροσιν εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσήκει",
+     "τοῖς",
+     "νέοις",
+     "σώφροσιν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "It was expedient for the allies to appear eager.",
+    "answer": "συνέφερε τοῖς συμμάχοις προθύμους φαίνεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συνέφερε",
+     "τοῖς",
+     "συμμάχοις",
+     "προθύμους",
+     "φαίνεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t6",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "They begged the king to become their leader.",
+    "answer": "τοῦ βασιλέως ἐδεήθησαν ἡγεμόνα αὐτοῖς γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "βασιλέως",
+     "ἐδεήθησαν",
+     "ἡγεμόνα",
+     "αὐτοῖς",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "Begging the soldiers to become brave, the general encouraged them.",
+    "answer": "τῶν στρατιωτῶν δεόμενος ἀνδρείων γενέσθαι, ὁ στρατηγὸς αὐτοὺς ἐθάρσυνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "στρατιωτῶν",
+     "δεόμενος",
+     "ἀνδρείων",
+     "γενέσθαι",
+     "ὁ",
+     "στρατηγός",
+     "αὐτούς",
+     "ἐθάρσυνεν"
+    ]
+   },
+   {
+    "prompt": "It was possible for the Athenians to be masters of the sea.",
+    "answer": "ἐξῆν τοῖς Ἀθηναίοις κυρίοις τῆς θαλάττης εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξῆν",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "κυρίοις",
+     "τῆς",
+     "θαλάττης",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "With the enemy pressing hard, it was expedient for the soldiers to remain steadfast.",
+    "answer": "τῶν πολεμίων ἐπικειμένων, συνέφερε τοῖς στρατιώταις βεβαίοις μένειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἐπικειμένων",
+     "συνέφερε",
+     "τοῖς",
+     "στρατιώταις",
+     "βεβαίοις",
+     "μένειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t7",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "They begged the general to show himself as brave as possible.",
+    "answer": "τοῦ στρατηγοῦ ἐδέοντο ὡς ἀνδρειοτάτου γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἐδέοντο",
+     "ὡς",
+     "ἀνδρειοτάτου",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "The citizens begged Lysias to become their advocate.",
+    "answer": "οἱ πολῖται τοῦ Λυσίου ἐδέοντο συνήγορον γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τοῦ",
+     "Λυσίου",
+     "ἐδέοντο",
+     "συνήγορον",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "I beg you to become worthy of such an honor.",
+    "answer": "δέομαι ὑμῶν ἀξίων τῆς τοιαύτης τιμῆς γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέομαι",
+     "ὑμῶν",
+     "ἀξίων",
+     "τῆς",
+     "τοιαύτης",
+     "τιμῆς",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "They entreated the king to become an ally to the Greeks.",
+    "answer": "τοῦ βασιλέως ἐδέοντο σύμμαχον τοῖς Ἕλλησι γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "βασιλέως",
+     "ἐδέοντο",
+     "σύμμαχον",
+     "τοῖς",
+     "Ἕλλησι",
+     "γενέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t8",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "Now it is possible for you to become free.",
+    "answer": "νῦν σοι ἔξεστιν ἐλευθέρῳ γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "σοι",
+     "ἔξεστιν",
+     "ἐλευθέρῳ",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "It is in the citizens' power to prove themselves saviors of their country.",
+    "answer": "τοῖς πολίταις ἔξεστι σωτῆρσι τῆς πατρίδος γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πολίταις",
+     "ἔξεστι",
+     "σωτῆρσι",
+     "τῆς",
+     "πατρίδος",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "It is possible for you to become leaders of the allies.",
+    "answer": "ἔξεστιν ὑμῖν ἡγεμόνας τῶν συμμάχων γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστιν",
+     "ὑμῖν",
+     "ἡγεμόνας",
+     "τῶν",
+     "συμμάχων",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "It is possible for the enemy to become friends rather than foes.",
+    "answer": "τοῖς πολεμίοις ἔξεστι φίλοις μᾶλλον ἢ ἐχθροῖς γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πολεμίοις",
+     "ἔξεστι",
+     "φίλοις",
+     "μᾶλλον",
+     "ἢ",
+     "ἐχθροῖς",
+     "γενέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t9",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "They decided, having seized the heights beforehand, to await the enemy.",
+    "answer": "ἔδοξεν αὐτοῖς τὰ ἄκρα προκαταλαβοῦσι τὸν πολέμιον περιμένειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "τὰ",
+     "ἄκρα",
+     "προκαταλαβοῦσι",
+     "τὸν",
+     "πολέμιον",
+     "περιμένειν"
+    ]
+   },
+   {
+    "prompt": "They resolved, having stationed guards, to lead out the army.",
+    "answer": "ἔδοξεν αὐτοῖς φύλακας καταστήσαντας ἐξάγειν τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "φύλακας",
+     "καταστήσαντας",
+     "ἐξάγειν",
+     "τὸ",
+     "στράτευμα"
+    ]
+   },
+   {
+    "prompt": "It seemed best to them, having made a truce, to send envoys to the king.",
+    "answer": "ἔδοξεν αὐτοῖς σπονδὰς ποιησαμένοις πρέσβεις πρὸς τὸν βασιλέα πέμπειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "σπονδὰς",
+     "ποιησαμένοις",
+     "πρέσβεις",
+     "πρὸς",
+     "τὸν",
+     "βασιλέα",
+     "πέμπειν"
+    ]
+   },
+   {
+    "prompt": "They decided, having crossed the river, to encamp upon the hill.",
+    "answer": "ἔδοξεν αὐτοῖς τὸν ποταμὸν διαβᾶσιν ἐπὶ τῷ λόφῳ στρατοπεδεύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "τὸν",
+     "ποταμὸν",
+     "διαβᾶσιν",
+     "ἐπὶ",
+     "τῷ",
+     "λόφῳ",
+     "στρατοπεδεύεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t10",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "It is expedient for the city to remain faithful to its allies.",
+    "answer": "συμφέρει τῇ πόλει πιστῇ τοῖς συμμάχοις παραμένειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμφέρει",
+     "τῇ",
+     "πόλει",
+     "πιστῇ",
+     "τοῖς",
+     "συμμάχοις",
+     "παραμένειν"
+    ]
+   },
+   {
+    "prompt": "It befits the young to prove themselves obedient to their elders.",
+    "answer": "πρέπει τοῖς νέοις πειθομένοις τοῖς πρεσβυτέροις φαίνεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρέπει",
+     "τοῖς",
+     "νέοις",
+     "πειθομένοις",
+     "πρεσβυτέροις",
+     "φαίνεσθαι"
+    ]
+   },
+   {
+    "prompt": "It is fitting for you to prove yourself moderate.",
+    "answer": "προσήκει σοι σώφρονα φανῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσήκει",
+     "σοι",
+     "σώφρονα",
+     "φανῆναι"
+    ]
+   },
+   {
+    "prompt": "It is to the Athenians' advantage to become masters of the sea.",
+    "answer": "συμφέρει τοῖς Ἀθηναίοις κυρίοις τῆς θαλάττης γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμφέρει",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "κυρίοις",
+     "τῆς",
+     "θαλάττης",
+     "γενέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-t11",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "The soldiers begged Xenophon to become their commander.",
+    "answer": "οἱ στρατιῶται τοῦ Ξενοφῶντος ἐδέοντο ἄρχοντα γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοῦ",
+     "Ξενοφῶντος",
+     "ἐδέοντο",
+     "ἄρχοντα",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "Now it is possible for the Persians to become friends to the Greeks.",
+    "answer": "νῦν τοῖς Πέρσαις ἔξεστι φίλοις τοῖς Ἕλλησι γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "τοῖς",
+     "Πέρσαις",
+     "ἔξεστι",
+     "φίλοις",
+     "Ἕλλησι",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "They decided, having drawn up the army, to attack the camp.",
+    "answer": "ἔδοξεν αὐτοῖς τὸ στράτευμα παρατάξασι τῷ στρατοπέδῳ προσβάλλειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "τὸ",
+     "στράτευμα",
+     "παρατάξασι",
+     "τῷ",
+     "στρατοπέδῳ",
+     "προσβάλλειν"
+    ]
+   },
+   {
+    "prompt": "It befits a good general to prove himself cautious.",
+    "answer": "προσήκει ἀγαθῷ στρατηγῷ εὐλαβεῖ εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσήκει",
+     "ἀγαθῷ",
+     "στρατηγῷ",
+     "εὐλαβεῖ",
+     "εἶναι"
+    ]
+   }
+  ]
+ }
+]

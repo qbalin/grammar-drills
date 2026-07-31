@@ -1,0 +1,859 @@
+[
+ {
+  "id": "sm-1044-with-one-subject-t1",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "The army provided food for itself by ravaging the enemies' country.",
+    "answer": "τὸ στράτευμα σῖτον ἑαυτῷ ἐπορίζετο τὴν τῶν πολεμίων χώραν δῃοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "σῖτον",
+     "ἑαυτῷ",
+     "ἐπορίζετο",
+     "τὴν",
+     "τῶν",
+     "πολεμίων",
+     "χώραν",
+     "δῃοῦντες"
+    ]
+   },
+   {
+    "prompt": "No one slept, because they were all mourning those who had perished in the battle.",
+    "answer": "οὐδεὶς ἐκοιμήθη τοὺς ἐν τῇ μάχῃ ἀπολωλότας πενθοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἐκοιμήθη",
+     "τοὺς",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀπολωλότας",
+     "πενθοῦντες"
+    ]
+   },
+   {
+    "prompt": "The city marched out against the enemy, trusting in the eagerness of their allies.",
+    "answer": "ἡ πόλις πρὸς τοὺς πολεμίους ἐξῆλθον τῇ τῶν συμμάχων προθυμίᾳ πιστεύοντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "πρὸς",
+     "τοὺς",
+     "πολεμίους",
+     "ἐξῆλθον",
+     "τῇ",
+     "τῶν",
+     "συμμάχων",
+     "προθυμίᾳ",
+     "πιστεύοντες"
+    ]
+   },
+   {
+    "prompt": "The people, having seized the traitors, shut them up in the prison.",
+    "answer": "ὁ δῆμος τοὺς προδότας λαβόντες ἐν τῷ δεσμωτηρίῳ κατέκλεισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "τοὺς",
+     "προδότας",
+     "λαβόντες",
+     "ἐν",
+     "τῷ",
+     "δεσμωτηρίῳ",
+     "κατέκλεισαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t2",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "Peace is a fine thing and beneficial to all men.",
+    "answer": "καλὸν ἡ εἰρήνη καὶ πᾶσι τοῖς ἀνθρώποις ὠφέλιμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλὸν",
+     "ἡ",
+     "εἰρήνη",
+     "καὶ",
+     "πᾶσι",
+     "τοῖς",
+     "ἀνθρώποις",
+     "ὠφέλιμον"
+    ]
+   },
+   {
+    "prompt": "Despotism is an object of mistrust to free states.",
+    "answer": "ἄπιστον ταῖς ἐλευθέραις πόλεσιν ἡ τυραννίς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄπιστον",
+     "ταῖς",
+     "ἐλευθέραις",
+     "πόλεσιν",
+     "ἡ",
+     "τυραννίς"
+    ]
+   },
+   {
+    "prompt": "Chaeronea, lying upon the borders, is the frontier of Boeotia.",
+    "answer": "ἡ Χαιρώνεια ἔσχατόν ἐστι τῆς Βοιωτίας πρὸς τοῖς ὅροις κειμένη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "Χαιρώνεια",
+     "ἔσχατόν",
+     "ἐστι",
+     "τῆς",
+     "Βοιωτίας",
+     "πρὸς",
+     "τοῖς",
+     "ὅροις",
+     "κειμένη"
+    ]
+   },
+   {
+    "prompt": "The state is greater than a single man.",
+    "answer": "μεῖζον ἡ πόλις ἑνὸς ἀνδρός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεῖζον",
+     "ἡ",
+     "πόλις",
+     "ἑνὸς",
+     "ἀνδρός"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t3",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "It is pleasant to have many friends amid dangers.",
+    "answer": "ἡδὺ πολλοὺς φίλους ἐν τοῖς κινδύνοις ἔχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδὺ",
+     "πολλοὺς",
+     "φίλους",
+     "ἐν",
+     "τοῖς",
+     "κινδύνοις",
+     "ἔχειν"
+    ]
+   },
+   {
+    "prompt": "It is noble to die fighting for one's fatherland.",
+    "answer": "καλὸν ὑπὲρ τῆς πατρίδος μαχόμενον ἀποθνῄσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλὸν",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχόμενον",
+     "ἀποθνῄσκειν"
+    ]
+   },
+   {
+    "prompt": "It is difficult to rule many and manifold peoples.",
+    "answer": "χαλεπὸν πολλῶν καὶ παντοίων ἐθνῶν ἄρχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπὸν",
+     "πολλῶν",
+     "καὶ",
+     "παντοίων",
+     "ἐθνῶν",
+     "ἄρχειν"
+    ]
+   },
+   {
+    "prompt": "It is clear that the enemy do not fear us.",
+    "answer": "δῆλόν ἐστιν ὅτι οἱ πολέμιοι ἡμᾶς οὐ φοβοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆλόν",
+     "ἐστιν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "ἡμᾶς",
+     "οὐ",
+     "φοβοῦνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t4",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "A good counsellor is the most useful of all possessions.",
+    "answer": "σύμβουλος ἀγαθὸς χρησιμώτατον ἁπάντων τῶν κτημάτων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύμβουλος",
+     "ἀγαθὸς",
+     "χρησιμώτατον",
+     "ἁπάντων",
+     "τῶν",
+     "κτημάτων"
+    ]
+   },
+   {
+    "prompt": "Envy is the most grievous of diseases.",
+    "answer": "χαλεπώτατος τῶν νόσων ὁ φθόνος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπώτατος",
+     "τῶν",
+     "νόσων",
+     "ὁ",
+     "φθόνος"
+    ]
+   },
+   {
+    "prompt": "When everything was ready, the admiral put out to sea.",
+    "answer": "ἐπειδὴ ἑτοῖμα ἦν πάντα, ὁ ναύαρχος ἀνήγετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "ἑτοῖμα",
+     "ἦν",
+     "πάντα",
+     "ὁ",
+     "ναύαρχος",
+     "ἀνήγετο"
+    ]
+   },
+   {
+    "prompt": "It was impossible for the few to resist the enemy.",
+    "answer": "ἀδύνατα ἦν τοῖς ὀλίγοις τοὺς πολεμίους ἀμύνεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατα",
+     "ἦν",
+     "τοῖς",
+     "ὀλίγοις",
+     "τοὺς",
+     "πολεμίους",
+     "ἀμύνεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t5",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "Both burst out laughing when they had looked at each other.",
+    "answer": "ἐγελασάτην ἄμφω βλέψαντες εἰς ἀλλήλους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγελασάτην",
+     "ἄμφω",
+     "βλέψαντες",
+     "εἰς",
+     "ἀλλήλους"
+    ]
+   },
+   {
+    "prompt": "These two cities have become the cause of very many blessings for the Greeks.",
+    "answer": "τὼ πόλει τούτω πλείστων ἀγαθῶν αἰτίαι τοῖς Ἕλλησι γεγένηνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "πόλει",
+     "τούτω",
+     "πλείστων",
+     "ἀγαθῶν",
+     "αἰτίαι",
+     "τοῖς",
+     "Ἕλλησι",
+     "γεγένηνται"
+    ]
+   },
+   {
+    "prompt": "The generals decided that the attempt must be made upon the enemy.",
+    "answer": "ἐδόκει τοῖς στρατηγοῖς ἐπιχειρητέα εἶναι τοῖς πολεμίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδόκει",
+     "τοῖς",
+     "στρατηγοῖς",
+     "ἐπιχειρητέα",
+     "εἶναι",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "The walls must be guarded by the young men.",
+    "answer": "τὰ τείχη φυλακτέα ἐστὶ τοῖς νεανίαις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τείχη",
+     "φυλακτέα",
+     "ἐστὶ",
+     "τοῖς",
+     "νεανίαις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t6",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "It is disgraceful for the young to flee toils and hardship.",
+    "answer": "αἰσχρὸν τοῖς νέοις τοὺς πόνους καὶ τὴν ἀπορίαν φεύγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρὸν",
+     "τοῖς",
+     "νέοις",
+     "τοὺς",
+     "πόνους",
+     "καὶ",
+     "τὴν",
+     "ἀπορίαν",
+     "φεύγειν"
+    ]
+   },
+   {
+    "prompt": "It is hard to keep one's zeal amid difficulties.",
+    "answer": "χαλεπὸν ἐν ταῖς ἀπορίαις τὴν προθυμίαν φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπὸν",
+     "ἐν",
+     "ταῖς",
+     "ἀπορίαις",
+     "τὴν",
+     "προθυμίαν",
+     "φυλάττειν"
+    ]
+   },
+   {
+    "prompt": "Death for the sake of freedom is the noblest of deeds.",
+    "answer": "κάλλιστον τῶν ἔργων ἡ ὑπὲρ τῆς ἐλευθερίας τελευτή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κάλλιστον",
+     "τῶν",
+     "ἔργων",
+     "ἡ",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "τελευτή"
+    ]
+   },
+   {
+    "prompt": "A secure stronghold is the safest of all things.",
+    "answer": "ἀσφαλέστατον πάντων τὸ ἐχυρὸν χωρίον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀσφαλέστατον",
+     "πάντων",
+     "τὸ",
+     "ἐχυρὸν",
+     "χωρίον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t7",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "The army bivouacked in the plain, guarding the baggage.",
+    "answer": "τὸ στράτευμα ἐν τῷ πεδίῳ ηὐλίζετο τὰ σκεύη φυλάττοντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ηὐλίζετο",
+     "τὰ",
+     "σκεύη",
+     "φυλάττοντες"
+    ]
+   },
+   {
+    "prompt": "No one went to sleep, all fearing the coming battle.",
+    "answer": "οὐδεὶς ἐκοιμήθη τὴν μέλλουσαν μάχην δεδιότες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἐκοιμήθη",
+     "τὴν",
+     "μέλλουσαν",
+     "μάχην",
+     "δεδιότες"
+    ]
+   },
+   {
+    "prompt": "The city sent envoys, wishing to make a treaty.",
+    "answer": "ἡ πόλις πρέσβεις ἔπεμψε σπονδὰς ποιήσασθαι βουλόμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "πρέσβεις",
+     "ἔπεμψε",
+     "σπονδὰς",
+     "ποιήσασθαι",
+     "βουλόμενοι"
+    ]
+   },
+   {
+    "prompt": "The people rushed to the assembly, eager to hear the general.",
+    "answer": "ὁ δῆμος εἰς τὴν ἐκκλησίαν ὥρμησε τοῦ στρατηγοῦ ἀκοῦσαι προθυμούμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "εἰς",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ὥρμησε",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀκοῦσαι",
+     "προθυμούμενοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t8",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "Freedom is a sweet thing to all who are free.",
+    "answer": "γλυκὺ ἡ ἐλευθερία πᾶσι τοῖς ἐλευθέροις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γλυκὺ",
+     "ἡ",
+     "ἐλευθερία",
+     "πᾶσι",
+     "τοῖς",
+     "ἐλευθέροις"
+    ]
+   },
+   {
+    "prompt": "Prudence is a noble thing for men in dangers.",
+    "answer": "καλὸν ἡ φρόνησις τοῖς ἐν κινδύνοις ἀνθρώποις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλὸν",
+     "ἡ",
+     "φρόνησις",
+     "τοῖς",
+     "ἐν",
+     "κινδύνοις",
+     "ἀνθρώποις"
+    ]
+   },
+   {
+    "prompt": "Flattery is a perilous thing to those in power.",
+    "answer": "σφαλερὸν ἡ κολακεία τοῖς δυναστεύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σφαλερὸν",
+     "ἡ",
+     "κολακεία",
+     "τοῖς",
+     "δυναστεύουσιν"
+    ]
+   },
+   {
+    "prompt": "Justice is a stronger thing than wealth.",
+    "answer": "κρεῖττον ἡ δικαιοσύνη τοῦ πλούτου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κρεῖττον",
+     "ἡ",
+     "δικαιοσύνη",
+     "τοῦ",
+     "πλούτου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t9",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "Fear is the most shameful of all evils.",
+    "answer": "αἴσχιστον πάντων τῶν κακῶν ὁ φόβος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἴσχιστον",
+     "πάντων",
+     "τῶν",
+     "κακῶν",
+     "ὁ",
+     "φόβος"
+    ]
+   },
+   {
+    "prompt": "Health is the most pleasant of goods for a mortal.",
+    "answer": "ἥδιστον τῶν ἀγαθῶν ἡ ὑγίεια θνητῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥδιστον",
+     "τῶν",
+     "ἀγαθῶν",
+     "ἡ",
+     "ὑγίεια",
+     "θνητῷ"
+    ]
+   },
+   {
+    "prompt": "A faithful friend is the most precious of possessions.",
+    "answer": "τιμιώτατον τῶν κτημάτων φίλος πιστός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμιώτατον",
+     "τῶν",
+     "κτημάτων",
+     "φίλος",
+     "πιστός"
+    ]
+   },
+   {
+    "prompt": "The general was the bravest of the soldiers.",
+    "answer": "ὁ στρατηγὸς ἀνδρειότατος ἦν τῶν στρατιωτῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἀνδρειότατος",
+     "ἦν",
+     "τῶν",
+     "στρατιωτῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t10",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "It is clear that these men are lying.",
+    "answer": "δῆλον ὅτι οὗτοι ψεύδονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆλον",
+     "ὅτι",
+     "οὗτοι",
+     "ψεύδονται"
+    ]
+   },
+   {
+    "prompt": "It is difficult to rule many men well.",
+    "answer": "χαλεπὸν πολλῶν καλῶς ἄρχειν ἀνθρώπων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπὸν",
+     "πολλῶν",
+     "καλῶς",
+     "ἄρχειν",
+     "ἀνθρώπων"
+    ]
+   },
+   {
+    "prompt": "It is noble to die on behalf of one's country.",
+    "answer": "καλὸν ὑπὲρ τῆς πατρίδος ἀποθνῄσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλὸν",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκειν"
+    ]
+   },
+   {
+    "prompt": "It is evident that the city is in danger.",
+    "answer": "φανερὸν ὅτι ἡ πόλις κινδυνεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φανερὸν",
+     "ὅτι",
+     "ἡ",
+     "πόλις",
+     "κινδυνεύει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t11",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "When everything was ready, the general led out the army.",
+    "answer": "ἐπεὶ ἑτοῖμα ἦν, ὁ στρατηγὸς τὸ στράτευμα ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ἑτοῖμα",
+     "ἦν",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "It was impossible to cross the river.",
+    "answer": "ἀδύνατα ἦν τὸν ποταμὸν διαβῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατα",
+     "ἦν",
+     "τὸν",
+     "ποταμὸν",
+     "διαβῆναι"
+    ]
+   },
+   {
+    "prompt": "It seemed that the city must be helped.",
+    "answer": "ἐδόκει τῇ πόλει βοηθητέα εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδόκει",
+     "τῇ",
+     "πόλει",
+     "βοηθητέα",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "The laws must be obeyed.",
+    "answer": "πειστέα ἐστὶ τοῖς νόμοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πειστέα",
+     "ἐστὶ",
+     "τοῖς",
+     "νόμοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t12",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "Oenoe is the frontier of Attica toward Boeotia.",
+    "answer": "ἔστιν ἡ Οἰνόη ἔσχατον τῆς Ἀττικῆς πρὸς Βοιωτίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστιν",
+     "ἡ",
+     "Οἰνόη",
+     "ἔσχατον",
+     "τῆς",
+     "Ἀττικῆς",
+     "πρὸς",
+     "Βοιωτίαν"
+    ]
+   },
+   {
+    "prompt": "The two brothers proved brave in the battle.",
+    "answer": "τὼ ἀδελφώ ἐν τῇ μάχῃ ἀνδρεῖοι ἐγένοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "ἀδελφώ",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀνδρεῖοι",
+     "ἐγένοντο"
+    ]
+   },
+   {
+    "prompt": "The cavalry pursued the enemy, shouting loudly.",
+    "answer": "ἡ ἵππος τοὺς πολεμίους ἐδίωκε μέγα βοῶντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἵππος",
+     "τοὺς",
+     "πολεμίους",
+     "ἐδίωκε",
+     "μέγα",
+     "βοῶντες"
+    ]
+   },
+   {
+    "prompt": "Poverty is a hard thing for the well-born.",
+    "answer": "χαλεπὸν ἡ πενία τοῖς εὖ γεγονόσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπὸν",
+     "ἡ",
+     "πενία",
+     "τοῖς",
+     "εὖ",
+     "γεγονόσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t13",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "The garrison surrendered the citadel, having despaired of safety.",
+    "answer": "ἡ φρουρὰ τὴν ἀκρόπολιν παρέδωκεν, ἀπογνόντες τὴν σωτηρίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φρουρά",
+     "τὴν",
+     "ἀκρόπολιν",
+     "παρέδωκεν",
+     "ἀπογνόντες",
+     "σωτηρίαν"
+    ]
+   },
+   {
+    "prompt": "No one departed, since they were all praising the general's courage.",
+    "answer": "οὐδεὶς ἀπῆλθεν, τὴν τοῦ στρατηγοῦ ἀρετὴν πάντες ἐπαινοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἀπῆλθεν",
+     "τὴν",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀρετὴν",
+     "πάντες",
+     "ἐπαινοῦντες"
+    ]
+   },
+   {
+    "prompt": "Is it noble to endure hardships for one's country?",
+    "answer": "ἆρα καλὸν ὑπὲρ τῆς πατρίδος τοὺς πόνους ὑπομένειν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "καλὸν",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "τοὺς",
+     "πόνους",
+     "ὑπομένειν"
+    ]
+   },
+   {
+    "prompt": "Wisdom is a precious thing to those who cultivate it.",
+    "answer": "τίμιον ἡ σοφία τοῖς ἀσκοῦσιν αὐτήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίμιον",
+     "ἡ",
+     "σοφία",
+     "τοῖς",
+     "ἀσκοῦσιν",
+     "αὐτήν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-t14",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "Envy is the most grievous of the diseases of the soul.",
+    "answer": "χαλεπώτατον τῶν τῆς ψυχῆς νοσημάτων ἐστὶν ὁ φθόνος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπώτατον",
+     "τῶν",
+     "τῆς",
+     "ψυχῆς",
+     "νοσημάτων",
+     "ἐστὶν",
+     "ὁ",
+     "φθόνος"
+    ]
+   },
+   {
+    "prompt": "Plataea is on the frontier of Boeotia toward Attica.",
+    "answer": "ἡ Πλάταια ἔσχατόν ἐστι τῆς Βοιωτίας πρὸς τὴν Ἀττικήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "Πλάταια",
+     "ἔσχατον",
+     "ἐστι",
+     "τῆς",
+     "Βοιωτίας",
+     "πρὸς",
+     "τὴν",
+     "Ἀττικήν"
+    ]
+   },
+   {
+    "prompt": "It was impossible to besiege the city in winter.",
+    "answer": "ἀδύνατα ἦν τοῦ χειμῶνος τὴν πόλιν πολιορκεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατα",
+     "ἦν",
+     "τοῦ",
+     "χειμῶνος",
+     "τὴν",
+     "πόλιν",
+     "πολιορκεῖν"
+    ]
+   },
+   {
+    "prompt": "These two men became most useful to the city.",
+    "answer": "τούτω τὼ ἄνδρε χρησιμώτατοι τῇ πόλει ἐγένοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτω",
+     "τὼ",
+     "ἄνδρε",
+     "χρησιμώτατοι",
+     "τῇ",
+     "πόλει",
+     "ἐγένοντο"
+    ]
+   }
+  ]
+ }
+]
