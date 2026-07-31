@@ -1370,5 +1370,22 @@
    "shortTest": 0
   },
   "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 1,
+  "calls": 1,
+  "rawQuestions": 24,
+  "keptQuestions": 24,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἀγωνιστέον": 1
+  }
  }
 ]
