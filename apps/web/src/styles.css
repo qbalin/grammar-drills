@@ -418,12 +418,28 @@ button {
   grid-template-columns: minmax(4.5rem, 8rem) 1fr;
   gap: 0 0.8rem;
   align-items: baseline;
-  padding: 0.4rem 0;
+  padding: 0.4rem 0.35rem;
+  /* Paid back on the outside, so the rule below still runs the full width and
+     only the held tint is inset. */
+  margin: 0 -0.35rem;
   border-bottom: 1px solid var(--line);
+  /* The row answers to a hold, so it must not answer to the selection and the
+     callout menu a long press would otherwise raise on top of it. */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 .crib-row:last-child {
   border-bottom: none;
+}
+
+/* Held, but not yet long enough — the same tint the sentence's words wear, so
+   the gesture reads as one gesture wherever it is made. */
+.crib-row--held {
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--gold) 28%, transparent);
 }
 
 .crib-row__english {

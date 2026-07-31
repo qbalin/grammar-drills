@@ -128,6 +128,17 @@ async function holdWord(word: string, then?: () => void) {
   await passTime(700);
 }
 
+/** Hold down the crib row that carries this text, long enough to record it. */
+async function holdCribRow(text: string, then?: () => void) {
+  const row = Array.from(document.querySelectorAll<HTMLElement>(".crib-row")).find(
+    (el) => el.textContent?.includes(text),
+  );
+  if (!row) throw new Error(`no vocabulary row reading “${text}”`);
+  fireEvent.pointerDown(row, { clientX: 20, clientY: 20 });
+  then?.();
+  await passTime(700);
+}
+
 /** Study past the placement probes, so the tests start on ordinary ground. */
 async function skipPlacement(user: ReturnType<typeof userEvent.setup>) {
   while (inPlacement()) {
@@ -833,6 +844,46 @@ describe("the question's vocabulary", () => {
     // Grading moves to a new sentence, and the last one's crib is not it.
     await user.click(screen.getByRole("button", { name: /Good/ }));
     expect(toggle().getAttribute("aria-expanded")).toBe("false");
+  });
+
+  it("records a word held down in the list, without asking which word it was", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.click(toggle());
+
+    await holdCribRow("rosa, rosae (f)");
+
+    // The crib is the lookup, so by the time a row is on screen there is
+    // nothing left to disambiguate — the row names the entry it found.
+    expect(screen.queryByRole("dialog", { name: /Which word/ })).toBeNull();
+    expect(session.vocabCard("v-rosa")?.citation).toBe("rosa, rosae (f)");
+    expect(screen.getByText("Saved rosa, rosae (f)")).toBeDefined();
+  });
+
+  it("stops at a scroll, so reading the list past the fold saves nothing", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.click(toggle());
+
+    await holdCribRow("rosa, rosae (f)", () => {
+      fireEvent.scroll(document.querySelector(".study__scroll")!);
+    });
+
+    expect(Object.keys(session.progress().vocabCards)).toHaveLength(0);
+  });
+
+  it("says as much when the held row is a word the dictionary has not got", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.click(toggle());
+
+    await holdCribRow("not in the dictionary");
+
+    expect(Object.keys(session.progress().vocabCards)).toHaveLength(0);
+    expect(screen.getByText(/No dictionary match for “Puella”/)).toBeDefined();
   });
 
   it("says the dictionary is missing rather than calling every word unknown", async () => {

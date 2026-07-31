@@ -1,5 +1,5 @@
 import type { VocabWord } from "@lang-tutor/core";
-import { Spinner } from "../ui.js";
+import { Spinner, useHold } from "../ui.js";
 
 /**
  * The words behind the question, folded away until asked for.
@@ -11,19 +11,31 @@ import { Spinner } from "../ui.js";
  * It is a crib, not a reveal — the English of the prompt against the Latin in
  * its dictionary form, in the prompt's order. Which word goes where, and in
  * which case, is still the exercise.
+ *
+ * A row can be held down to record the word, on the same terms as a word in the
+ * sentence: this is where a student meets the word they did not know, so it is
+ * the likeliest place to want it kept. The row is the target rather than the
+ * citation alone, because a citation is `rosa, rosae (f)` — three tokens and a
+ * comma — and asking a thumb to land on one of them would be asking it to pick
+ * a word out of a dictionary entry. The row already stands for exactly one
+ * word, so the whole row takes the press.
  */
 export function QuestionVocabulary({
   words,
   open,
   status,
   onToggle,
+  onHold,
 }: {
   words: VocabWord[];
   open: boolean;
   /** Whether the dictionary is on this device yet, and if not, why. */
   status: "ready" | "loading" | "unavailable";
   onToggle: () => void;
+  /** A row held down: record the word it stands for. */
+  onHold: (word: VocabWord) => void;
 }) {
+  const { isHeld, hold } = useHold();
   if (words.length === 0) return null;
   return (
     <div className="crib">
@@ -60,7 +72,11 @@ export function QuestionVocabulary({
           ) : null}
           {status !== "loading" &&
             words.map((word) => (
-              <div className="crib-row" key={word.form}>
+              <div
+                className={`crib-row${isHeld(word.form) ? " crib-row--held" : ""}`}
+                key={word.form}
+                {...hold(word.form, () => onHold(word))}
+              >
                 <span
                   className={`crib-row__english${
                     word.english ? "" : " crib-row__english--none"

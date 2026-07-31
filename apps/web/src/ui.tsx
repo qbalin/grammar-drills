@@ -1,4 +1,11 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type MouseEvent as ReactMouseEvent,
+  type PointerEvent as ReactPointerEvent,
+  type ReactNode,
+} from "react";
 import { stripPunctuation, type Rating } from "@lang-tutor/core";
 
 /** How long until a date, said the way a person would. */
@@ -134,6 +141,74 @@ const HOLD_MS = 500;
 const SLOP_PX = 10;
 
 /**
+ * The hold gesture, for anything on screen that names a word.
+ *
+ * It lives apart from the sentence below because the vocabulary crib wants the
+ * very same press: a student who opened the crib because they were stuck is the
+ * student most likely to want the word kept, and until this existed the crib
+ * was the one place a word could be read but not taken — the sentence answered
+ * to a hold, the list of words behind it did not.
+ *
+ * One press at a time, so `key` says which element is under the finger.
+ */
+export function useHold() {
+  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  const [held, setHeld] = useState<string | null>(null);
+
+  const cancel = () => {
+    clearTimeout(timer.current);
+    setHeld(null);
+  };
+  useEffect(() => cancel, []);
+
+  const fire = (run: () => void) => {
+    cancel();
+    navigator.vibrate?.(8);
+    run();
+  };
+
+  return {
+    /** Whether this element is the one currently held down. */
+    isHeld: (key: string) => held === key,
+    /** The handlers that make one element holdable. */
+    hold: (key: string, run: () => void) => ({
+      onPointerDown: (e: ReactPointerEvent) => {
+        const from = { x: e.clientX, y: e.clientY };
+        // A finger that travels was aiming past the word, not at it.
+        const move = (m: PointerEvent) => {
+          if (
+            Math.abs(m.clientX - from.x) > SLOP_PX ||
+            Math.abs(m.clientY - from.y) > SLOP_PX
+          ) {
+            cancel();
+          }
+        };
+        // And a page that moves under the finger settles it outright.
+        // Captured, because a scroll event does not bubble and the scroller
+        // here is the answer pane, not the window.
+        const scrolled = () => cancel();
+        addEventListener("pointermove", move);
+        addEventListener("scroll", scrolled, true);
+        // Whatever ends the press, the listeners go with it.
+        const done = () => {
+          removeEventListener("pointermove", move);
+          removeEventListener("scroll", scrolled, true);
+          cancel();
+        };
+        addEventListener("pointerup", done, { once: true });
+        addEventListener("pointercancel", done, { once: true });
+        setHeld(key);
+        timer.current = setTimeout(() => fire(run), HOLD_MS);
+      },
+      onContextMenu: (e: ReactMouseEvent) => {
+        e.preventDefault();
+        fire(run);
+      },
+    }),
+  };
+}
+
+/**
  * Latin with every word holdable.
  *
  * Recording a word used to mean leaving the question, opening a sheet and
@@ -160,76 +235,33 @@ export function HoldableLatin({
   /** The held word, punctuation already stripped. */
   onHold: (word: string) => void;
 }) {
-  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
-  const [held, setHeld] = useState<number | null>(null);
-
-  const cancel = () => {
-    clearTimeout(timer.current);
-    setHeld(null);
-  };
-  useEffect(() => cancel, []);
-
-  const fire = (raw: string) => {
-    cancel();
-    // Latin words arrive wearing the sentence's punctuation: `amat.`, `«rosam»`.
-    // Cut the same way the vocabulary crib cuts them, so a word you can hold is
-    // always a word the crib listed.
-    const word = stripPunctuation(raw);
-    if (!word) return;
-    navigator.vibrate?.(8);
-    onHold(word);
-  };
+  const { isHeld, hold } = useHold();
 
   // Split on whitespace but keep it, so the sentence's own spacing survives.
   const tokens = text.split(/(\s+)/);
 
   return (
     <>
-      {tokens.map((token, i) =>
-        /^\s+$/.test(token) || token === "" ? (
-          token
-        ) : (
+      {tokens.map((token, i) => {
+        if (/^\s+$/.test(token) || token === "") return token;
+        // Latin words arrive wearing the sentence's punctuation: `amat.`,
+        // `«rosam»`. Cut the same way the vocabulary crib cuts them, so a word
+        // you can hold is always a word the crib listed. A token that is all
+        // punctuation names no word, and gets no gesture rather than a hold
+        // that lights up and then quietly does nothing.
+        const word = stripPunctuation(token);
+        const key = String(i);
+        return (
           <span
             key={i}
-            className={`word${held === i ? " word--held" : ""}`}
+            className={`word${word && isHeld(key) ? " word--held" : ""}`}
             data-word={token}
-            onPointerDown={(e) => {
-              const from = { x: e.clientX, y: e.clientY };
-              // A finger that travels was aiming past the word, not at it.
-              const move = (m: PointerEvent) => {
-                if (
-                  Math.abs(m.clientX - from.x) > SLOP_PX ||
-                  Math.abs(m.clientY - from.y) > SLOP_PX
-                ) {
-                  cancel();
-                }
-              };
-              // And a page that moves under the finger settles it outright.
-              // Captured, because a scroll event does not bubble and the
-              // scroller here is the answer pane, not the window.
-              const scrolled = () => cancel();
-              addEventListener("pointermove", move);
-              addEventListener("scroll", scrolled, true);
-              // Whatever ends the press, the listeners go with it.
-              const done = () => {
-                removeEventListener("pointermove", move);
-                removeEventListener("scroll", scrolled, true);
-                cancel();
-              };
-              addEventListener("pointerup", done, { once: true });
-              addEventListener("pointercancel", done, { once: true });
-              setHeld(i);
-              timer.current = setTimeout(() => fire(token), HOLD_MS);
-            }}
-            onContextMenu={(e) => {
-              e.preventDefault();
-              fire(token);
-            }}
+            {...(word ? hold(key, () => onHold(word)) : {})}
           >
             {token}
           </span>
-        ),
-      )}
+        );
+      })}
     </>
   );
 }

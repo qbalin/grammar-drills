@@ -8,6 +8,7 @@ import {
   type Rating,
   type Test,
   type TopicProgress,
+  type VocabWord,
 } from "@lang-tutor/core";
 import { dictionaryReady, loadDictionary } from "./content-loader.js";
 import { profile } from "./pack.js";
@@ -527,6 +528,18 @@ export function App({ content, session, storage }: Props) {
     openVocab(word, true);
   };
 
+  /**
+   * A row held down in the vocabulary crib.
+   *
+   * The crib has already done the lookup — that is what it is showing — so the
+   * entry it found is the one to save, and no pick sheet is needed even for a
+   * form several words share: the row names one of them, and it is the one on
+   * screen. A row with nothing found falls back to the ordinary hold, which
+   * either says so or fetches the dictionary the row is missing.
+   */
+  const holdCribWord = (word: VocabWord) =>
+    word.entry ? saveWord(word.entry) : holdWord(word.form);
+
   const saveWord = (entry: LemmaEntry) => {
     const id = session.recordVocab(entry);
     save();
@@ -713,6 +726,7 @@ export function App({ content, session, storage }: Props) {
                 open={showVocab}
                 status={dictStatus}
                 onToggle={toggleVocab}
+                onHold={holdCribWord}
               />
             }
           />
@@ -746,6 +760,7 @@ export function App({ content, session, storage }: Props) {
                 open={showVocab}
                 status={dictStatus}
                 onToggle={toggleVocab}
+                onHold={holdCribWord}
               />
             }
           />
