@@ -1,0 +1,934 @@
+[
+ {
+  "id": "sm-1600-accusative-of-respect-t1",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "The old man, though wise, has a pain in his head.",
+    "answer": "ὁ γέρων, καίπερ σοφὸς ὤν, τὴν κεφαλὴν ἀλγεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "καίπερ",
+     "σοφὸς",
+     "ὤν",
+     "τὴν",
+     "κεφαλὴν",
+     "ἀλγεῖ"
+    ]
+   },
+   {
+    "prompt": "The soldier who fled was wounded in the shoulder.",
+    "answer": "ὁ στρατιώτης ὃς ἔφυγεν τὸν ὦμον ἐτρώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατιώτης",
+     "ὃς",
+     "ἔφυγεν",
+     "τὸν",
+     "ὦμον",
+     "ἐτρώθη"
+    ]
+   },
+   {
+    "prompt": "Swift of foot, Achilles pursued the enemy.",
+    "answer": "ὠκὺς τοὺς πόδας ὁ Ἀχιλλεὺς τοὺς πολεμίους ἐδίωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὠκὺς",
+     "τοὺς",
+     "πόδας",
+     "ὁ",
+     "Ἀχιλλεὺς",
+     "πολεμίους",
+     "ἐδίωκεν"
+    ]
+   },
+   {
+    "prompt": "The child, weeping, has a pain in his finger.",
+    "answer": "ὁ παῖς δακρύων τὸν δάκτυλον ἀλγεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "δακρύων",
+     "τὸν",
+     "δάκτυλον",
+     "ἀλγεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t2",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "Woman differs from man in nature.",
+    "answer": "ἡ γυνὴ τοῦ ἀνδρὸς διαφέρει τὴν φύσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "τοῦ",
+     "ἀνδρὸς",
+     "διαφέρει",
+     "τὴν",
+     "φύσιν"
+    ]
+   },
+   {
+    "prompt": "There is a river, Cydnus by name, two plethra in width.",
+    "answer": "ἔστι ποταμός, Κύδνος ὄνομα, εὖρος δύο πλέθρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστι",
+     "ποταμός",
+     "Κύδνος",
+     "ὄνομα",
+     "εὖρος",
+     "δύο",
+     "πλέθρων"
+    ]
+   },
+   {
+    "prompt": "The enemies were about ten thousand in number.",
+    "answer": "οἱ πολέμιοι ἦσαν πλῆθος ὡς μύριοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ἦσαν",
+     "πλῆθος",
+     "ὡς",
+     "μύριοι"
+    ]
+   },
+   {
+    "prompt": "Tell me of what race you are.",
+    "answer": "εἰπέ μοι ὅστις εἶ γένος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰπέ",
+     "μοι",
+     "ὅστις",
+     "εἶ",
+     "γένος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t3",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "In all things the tyrant was base.",
+    "answer": "πάντα κακὸς ἦν ὁ τύραννος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "κακὸς",
+     "ἦν",
+     "ὁ",
+     "τύραννος"
+    ]
+   },
+   {
+    "prompt": "The Persians were terrible in battle.",
+    "answer": "οἱ Πέρσαι δεινοὶ ἦσαν μάχην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "δεινοὶ",
+     "ἦσαν",
+     "μάχην"
+    ]
+   },
+   {
+    "prompt": "Each of us is good in the things which he understands.",
+    "answer": "ἕκαστος ἡμῶν ἀγαθός ἐστιν ταῦτα ἃ ἐπίσταται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕκαστος",
+     "ἡμῶν",
+     "ἀγαθός",
+     "ἐστιν",
+     "ταῦτα",
+     "ἃ",
+     "ἐπίσταται"
+    ]
+   },
+   {
+    "prompt": "The general was noble in soul, but weak in body.",
+    "answer": "ὁ στρατηγὸς γενναῖος ἦν τὴν ψυχήν, ἀσθενὴς δὲ τὸ σῶμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "γενναῖος",
+     "ἦν",
+     "τὴν",
+     "ψυχήν",
+     "ἀσθενὴς",
+     "δὲ",
+     "τὸ",
+     "σῶμα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t4",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "The young men, youths in appearance, spoke boldly.",
+    "answer": "οἱ νεανίσκοι, νέοι τὰς ὄψεις, θαρραλέως ἔλεγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίσκοι",
+     "νέοι",
+     "τὰς",
+     "ὄψεις",
+     "θαρραλέως",
+     "ἔλεγον"
+    ]
+   },
+   {
+    "prompt": "Mortal women must not rival the goddesses in form.",
+    "answer": "οὐ χρὴ τὰς θνητὰς ταῖς θεαῖς τὸ εἶδος ἐρίζειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "χρὴ",
+     "τὰς",
+     "θνητὰς",
+     "ταῖς",
+     "θεαῖς",
+     "τὸ",
+     "εἶδος",
+     "ἐρίζειν"
+    ]
+   },
+   {
+    "prompt": "The mountain was great in height and terrible to behold.",
+    "answer": "τὸ ὄρος μέγα ἦν τὸ ὕψος καὶ δεινὸν ἰδεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ὄρος",
+     "μέγα",
+     "ἦν",
+     "ὕψος",
+     "καὶ",
+     "δεινὸν",
+     "ἰδεῖν"
+    ]
+   },
+   {
+    "prompt": "This man is a Greek by birth, but a barbarian in his ways.",
+    "answer": "οὗτος Ἕλλην ἐστὶ τὸ γένος, βάρβαρος δὲ τοὺς τρόπους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "Ἕλλην",
+     "ἐστὶ",
+     "τὸ",
+     "γένος",
+     "βάρβαρος",
+     "δὲ",
+     "τοὺς",
+     "τρόπους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t5",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "The young man, grieved in his soul, kept silent.",
+    "answer": "ὁ νεανίας τὴν ψυχὴν λυπούμενος ἐσίγα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "τὴν",
+     "ψυχὴν",
+     "λυπούμενος",
+     "ἐσίγα"
+    ]
+   },
+   {
+    "prompt": "The general was bold in spirit and prudent in judgement.",
+    "answer": "ὁ στρατηγὸς θρασὺς ἦν τὸ φρόνημα καὶ σώφρων τὴν γνώμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "θρασὺς",
+     "ἦν",
+     "τὸ",
+     "φρόνημα",
+     "καὶ",
+     "σώφρων",
+     "τὴν",
+     "γνώμην"
+    ]
+   },
+   {
+    "prompt": "Though sound in body, he was nevertheless sick in mind.",
+    "answer": "ὑγιὴς ὢν τὸ σῶμα ὅμως ἐνόσει τὴν διάνοιαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑγιὴς",
+     "ὢν",
+     "τὸ",
+     "σῶμα",
+     "ὅμως",
+     "ἐνόσει",
+     "τὴν",
+     "διάνοιαν"
+    ]
+   },
+   {
+    "prompt": "The woman, stricken in mind, fled from the house.",
+    "answer": "ἡ γυνή, ἐκπεπληγμένη τὸν νοῦν, ἐκ τῆς οἰκίας ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "ἐκπεπληγμένη",
+     "τὸν",
+     "νοῦν",
+     "ἐκ",
+     "τῆς",
+     "οἰκίας",
+     "ἔφυγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t6",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "The slave was better than his master in wisdom.",
+    "answer": "ὁ δοῦλος ἀμείνων ἦν τοῦ δεσπότου τὴν σοφίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "ἀμείνων",
+     "ἦν",
+     "τοῦ",
+     "δεσπότου",
+     "τὴν",
+     "σοφίαν"
+    ]
+   },
+   {
+    "prompt": "This horse is superior to that one in speed.",
+    "answer": "οὗτος ὁ ἵππος κρείττων ἐστὶν ἐκείνου τὸ τάχος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "ἵππος",
+     "κρείττων",
+     "ἐστὶν",
+     "ἐκείνου",
+     "τὸ",
+     "τάχος"
+    ]
+   },
+   {
+    "prompt": "The Spartans surpassed the others in courage.",
+    "answer": "οἱ Λακεδαιμόνιοι τῶν ἄλλων διέφερον τὴν ἀνδρείαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "τῶν",
+     "ἄλλων",
+     "διέφερον",
+     "τὴν",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "The boy, though small in size, was strong in his hands.",
+    "answer": "ὁ παῖς, καίπερ μικρὸς ὢν τὸ μέγεθος, ἰσχυρὸς ἦν τὰς χεῖρας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "καίπερ",
+     "μικρὸς",
+     "ὢν",
+     "τὸ",
+     "μέγεθος",
+     "ἰσχυρὸς",
+     "ἦν",
+     "τὰς",
+     "χεῖρας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t7",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "Achilles, swift of foot, was pursuing the enemy across the plain.",
+    "answer": "Ἀχιλλεὺς πόδας ὠκὺς τοὺς πολεμίους διὰ τοῦ πεδίου ἐδίωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀχιλλεύς",
+     "πόδας",
+     "ὠκύς",
+     "τούς",
+     "πολεμίους",
+     "διά",
+     "τοῦ",
+     "πεδίου",
+     "ἐδίωκεν"
+    ]
+   },
+   {
+    "prompt": "The soldier, wounded in the hand, threw away his sword.",
+    "answer": "ὁ στρατιώτης τὴν χεῖρα τετρωμένος τὸ ξίφος ἀπέρριψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατιώτης",
+     "τήν",
+     "χεῖρα",
+     "τετρωμένος",
+     "τό",
+     "ξίφος",
+     "ἀπέρριψεν"
+    ]
+   },
+   {
+    "prompt": "The old man has a pain in his eyes and cannot see the light.",
+    "answer": "ὁ γέρων τοὺς ὀφθαλμοὺς ἀλγεῖ καὶ οὐ δύναται τὸ φῶς ὁρᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τούς",
+     "ὀφθαλμούς",
+     "ἀλγεῖ",
+     "καί",
+     "οὐ",
+     "δύναται",
+     "τό",
+     "φῶς",
+     "ὁρᾶν"
+    ]
+   },
+   {
+    "prompt": "Blind in his eyes, the prophet nevertheless knew the truth.",
+    "answer": "τυφλὸς τὰ ὄμματα ὁ μάντις ὅμως τὴν ἀλήθειαν ᾔδει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τυφλός",
+     "τά",
+     "ὄμματα",
+     "ὁ",
+     "μάντις",
+     "ὅμως",
+     "τήν",
+     "ἀλήθειαν",
+     "ᾔδει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t8",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "A river, Cydnus by name, flows through the plain which the army was crossing.",
+    "answer": "ποταμός, Κύδνος ὄνομα, διὰ τοῦ πεδίου ῥεῖ ὃ ὁ στρατὸς διέβαινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποταμός",
+     "Κύδνος",
+     "ὄνομα",
+     "διά",
+     "τοῦ",
+     "πεδίου",
+     "ῥεῖ",
+     "ὅ",
+     "ὁ",
+     "στρατός",
+     "διέβαινεν"
+    ]
+   },
+   {
+    "prompt": "The wall which they built was fifty feet in height.",
+    "answer": "τὸ τεῖχος ὃ ᾠκοδόμησαν πεντήκοντα πόδας ὕψος ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "τεῖχος",
+     "ὅ",
+     "ᾠκοδόμησαν",
+     "πεντήκοντα",
+     "πόδας",
+     "ὕψος",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The enemy, about ten thousand in number, occupied the hill.",
+    "answer": "οἱ πολέμιοι, πλῆθος ὡς μύριοι, τὸν λόφον κατέλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "πλῆθος",
+     "ὡς",
+     "μύριοι",
+     "τόν",
+     "λόφον",
+     "κατέλαβον"
+    ]
+   },
+   {
+    "prompt": "Tell me, stranger, of what race you are.",
+    "answer": "εἰπέ μοι, ὦ ξένε, ὅστις εἶ γένος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰπέ",
+     "μοι",
+     "ὦ",
+     "ξένε",
+     "ὅστις",
+     "εἶ",
+     "γένος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t9",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "Terrible in battle, the Spartans used to terrify the enemy.",
+    "answer": "δεινοὶ μάχην οἱ Λακεδαιμόνιοι τοὺς πολεμίους ἐφόβουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινοί",
+     "μάχην",
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "τούς",
+     "πολεμίους",
+     "ἐφόβουν"
+    ]
+   },
+   {
+    "prompt": "Each of us is good in the things which he knows.",
+    "answer": "ἕκαστος ἡμῶν ἀγαθός ἐστι ταῦτα ἃ ἐπίσταται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕκαστος",
+     "ἡμῶν",
+     "ἀγαθός",
+     "ἐστι",
+     "ταῦτα",
+     "ἅ",
+     "ἐπίσταται"
+    ]
+   },
+   {
+    "prompt": "The boy, though small in body, was great in spirit.",
+    "answer": "ὁ παῖς, σμικρὸς τὸ σῶμα ὤν, μέγας τὴν ψυχὴν ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "σμικρός",
+     "τό",
+     "σῶμα",
+     "ὤν",
+     "μέγας",
+     "τήν",
+     "ψυχήν",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "Place yourselves in thought in that ancient time.",
+    "answer": "γένεσθε τὴν διάνοιαν ἐν ἐκείνῳ τῷ παλαιῷ χρόνῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γένεσθε",
+     "τήν",
+     "διάνοιαν",
+     "ἐν",
+     "ἐκείνῳ",
+     "τῷ",
+     "παλαιῷ",
+     "χρόνῳ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t10",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "The younger brother surpassed the elder in wisdom.",
+    "answer": "ὁ νεώτερος ἀδελφὸς τοῦ πρεσβυτέρου διέφερε τὴν σοφίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεώτερος",
+     "ἀδελφός",
+     "τοῦ",
+     "πρεσβυτέρου",
+     "διέφερε",
+     "τήν",
+     "σοφίαν"
+    ]
+   },
+   {
+    "prompt": "This man is better than that one in respect to courage.",
+    "answer": "οὗτος ἐκείνου ἀμείνων ἐστὶ τὴν ἀνδρείαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ἐκείνου",
+     "ἀμείνων",
+     "ἐστί",
+     "τήν",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "The girl was like her mother in form.",
+    "answer": "ἡ κόρη τῇ μητρὶ ὁμοία ἦν τὸ εἶδος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "κόρη",
+     "τῇ",
+     "μητρί",
+     "ὁμοία",
+     "ἦν",
+     "τό",
+     "εἶδος"
+    ]
+   },
+   {
+    "prompt": "The Persians differed from the Greeks in their customs.",
+    "answer": "οἱ Πέρσαι τῶν Ἑλλήνων διέφερον τὰ ἤθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "τῶν",
+     "Ἑλλήνων",
+     "διέφερον",
+     "τά",
+     "ἤθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t11",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "The mother, grieving in her heart, was bewailing her son.",
+    "answer": "ἡ μήτηρ, τὴν καρδίαν ἀλγοῦσα, τὸν υἱὸν ὠλοφύρετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "τήν",
+     "καρδίαν",
+     "ἀλγοῦσα",
+     "τόν",
+     "υἱόν",
+     "ὠλοφύρετο"
+    ]
+   },
+   {
+    "prompt": "Sick in body but sound in mind, the philosopher kept teaching.",
+    "answer": "νοσῶν τὸ σῶμα, ὑγιὴς δὲ τὸν νοῦν, ὁ φιλόσοφος ἐδίδασκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νοσῶν",
+     "τό",
+     "σῶμα",
+     "ὑγιής",
+     "δέ",
+     "τόν",
+     "νοῦν",
+     "ὁ",
+     "φιλόσοφος",
+     "ἐδίδασκεν"
+    ]
+   },
+   {
+    "prompt": "Lame in one foot, the beggar kept begging in the marketplace.",
+    "answer": "χωλὸς τὸν ἕτερον πόδα ὁ πτωχὸς ἐν τῇ ἀγορᾷ προσῄτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χωλός",
+     "τόν",
+     "ἕτερον",
+     "πόδα",
+     "ὁ",
+     "πτωχός",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "προσῄτει"
+    ]
+   },
+   {
+    "prompt": "The soldiers, weary in their limbs, were resting beside the river.",
+    "answer": "οἱ στρατιῶται, τὰ μέλη κάμνοντες, παρὰ τῷ ποταμῷ ἀνεπαύοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τά",
+     "μέλη",
+     "κάμνοντες",
+     "παρά",
+     "τῷ",
+     "ποταμῷ",
+     "ἀνεπαύοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t12",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "White in hair, the old woman kept remembering her youth.",
+    "answer": "λευκὴ τὰς τρίχας ἡ γραῦς τῆς νεότητος ἐμέμνητο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λευκή",
+     "τάς",
+     "τρίχας",
+     "ἡ",
+     "γραῦς",
+     "τῆς",
+     "νεότητος",
+     "ἐμέμνητο"
+    ]
+   },
+   {
+    "prompt": "The stranger, a Libyan by race, used to speak Greek well.",
+    "answer": "ὁ ξένος, Λίβυς τὸ γένος, καλῶς ἑλληνιστὶ ἔλεγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ξένος",
+     "Λίβυς",
+     "τό",
+     "γένος",
+     "καλῶς",
+     "ἑλληνιστί",
+     "ἔλεγεν"
+    ]
+   },
+   {
+    "prompt": "Beautiful in face but wicked in soul, she used to deceive many.",
+    "answer": "καλὴ τὸ πρόσωπον, πονηρὰ δὲ τὴν ψυχήν, πολλοὺς ἐξηπάτα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλή",
+     "τό",
+     "πρόσωπον",
+     "πονηρά",
+     "δέ",
+     "τήν",
+     "ψυχήν",
+     "πολλούς",
+     "ἐξηπάτα"
+    ]
+   },
+   {
+    "prompt": "The horse, black in color, was swift in its running.",
+    "answer": "ὁ ἵππος, μέλας τὴν χρόαν, θοὸς τὸν δρόμον ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἵππος",
+     "μέλας",
+     "τήν",
+     "χρόαν",
+     "θοός",
+     "τόν",
+     "δρόμον",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t13",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "The general, wounded in the shoulder, nevertheless led the army.",
+    "answer": "ὁ στρατηγός, τὸν ὦμον τετρωμένος, ὅμως ἦγε τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τὸν",
+     "ὦμον",
+     "τετρωμένος",
+     "ὅμως",
+     "ἦγε",
+     "τὸ",
+     "στράτευμα"
+    ]
+   },
+   {
+    "prompt": "The boy, blind in his eyes, was nevertheless wise in mind.",
+    "answer": "ὁ παῖς, τυφλὸς τοὺς ὀφθαλμούς, ὅμως σοφὸς τὸν νοῦν ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "τυφλὸς",
+     "τοὺς",
+     "ὀφθαλμούς",
+     "ὅμως",
+     "σοφὸς",
+     "τὸν",
+     "νοῦν",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The city, small in size, defeated the great king.",
+    "answer": "ἡ πόλις, μικρὰ τὸ μέγεθος, τὸν μέγαν βασιλέα ἐνίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "μικρὰ",
+     "τὸ",
+     "μέγεθος",
+     "τὸν",
+     "μέγαν",
+     "βασιλέα",
+     "ἐνίκησεν"
+    ]
+   },
+   {
+    "prompt": "The barbarians, about ten thousand in number, fled out of the plain.",
+    "answer": "οἱ βάρβαροι, τὸ πλῆθος ὡς μύριοι, ἐκ τοῦ πεδίου ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "βάρβαροι",
+     "τὸ",
+     "πλῆθος",
+     "ὡς",
+     "μύριοι",
+     "ἐκ",
+     "τοῦ",
+     "πεδίου",
+     "ἔφυγον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1600-accusative-of-respect-t14",
+  "sectionId": "sm-1600-accusative-of-respect",
+  "questions": [
+   {
+    "prompt": "The old man, terrible in speech, persuaded the assembly.",
+    "answer": "ὁ γέρων, δεινὸς τὸν λόγον, ἔπεισε τὴν ἐκκλησίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "δεινὸς",
+     "τὸν",
+     "λόγον",
+     "ἔπεισε",
+     "τὴν",
+     "ἐκκλησίαν"
+    ]
+   },
+   {
+    "prompt": "The herald, swift of foot, announced the victory to the citizens.",
+    "answer": "ὁ κῆρυξ, ὠκὺς τοὺς πόδας, τὴν νίκην τοῖς πολίταις ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ὠκὺς",
+     "τοὺς",
+     "πόδας",
+     "τὴν",
+     "νίκην",
+     "τοῖς",
+     "πολίταις",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "The maiden surpassed the others in beauty of form.",
+    "answer": "ἡ παρθένος τῶν ἄλλων τὸ εἶδος ὑπερεῖχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "τῶν",
+     "ἄλλων",
+     "τὸ",
+     "εἶδος",
+     "ὑπερεῖχεν"
+    ]
+   },
+   {
+    "prompt": "The stranger, a Persian by race, knew the tongue of the Greeks well.",
+    "answer": "ὁ ξένος, Πέρσης τὸ γένος, τὴν τῶν Ἑλλήνων φωνὴν ἠπίστατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ξένος",
+     "Πέρσης",
+     "τὸ",
+     "γένος",
+     "τὴν",
+     "τῶν",
+     "Ἑλλήνων",
+     "φωνὴν",
+     "ἠπίστατο"
+    ]
+   }
+  ]
+ }
+]

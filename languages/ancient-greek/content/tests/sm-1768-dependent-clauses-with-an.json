@@ -1,0 +1,496 @@
+[
+ {
+  "id": "sm-1768-dependent-clauses-with-an-t1",
+  "sectionId": "sm-1768-dependent-clauses-with-an",
+  "questions": [
+   {
+    "prompt": "If you fight bravely, you will save the city.",
+    "answer": "ἐὰν ἀνδρείως μάχησθε, τὴν πόλιν σώσετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἀνδρείως",
+     "μάχησθε",
+     "τήν",
+     "πόλιν",
+     "σώσετε"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy attack, the guards flee.",
+    "answer": "ὅταν οἱ πολέμιοι προσβάλλωσιν, οἱ φύλακες φεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "οἱ",
+     "πολέμιοι",
+     "προσβάλλωσιν",
+     "φύλακες",
+     "φεύγουσιν"
+    ]
+   },
+   {
+    "prompt": "Whoever does these things will pay the penalty.",
+    "answer": "ὃς ἂν ταῦτα ποιῇ, δίκην δώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅς",
+     "ἄν",
+     "ταῦτα",
+     "ποιῇ",
+     "δίκην",
+     "δώσει"
+    ]
+   },
+   {
+    "prompt": "When you arrive, we will deliberate about the war.",
+    "answer": "ἐπειδὰν ἀφίκῃ, περὶ τοῦ πολέμου βουλευσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "ἀφίκῃ",
+     "περί",
+     "τοῦ",
+     "πολέμου",
+     "βουλευσόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1768-dependent-clauses-with-an-t2",
+  "sectionId": "sm-1768-dependent-clauses-with-an",
+  "questions": [
+   {
+    "prompt": "If the general commands it, the soldiers will obey.",
+    "answer": "ἐὰν ὁ στρατηγὸς κελεύῃ, οἱ στρατιῶται πείσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "στρατηγός",
+     "κελεύῃ",
+     "οἱ",
+     "στρατιῶται",
+     "πείσονται"
+    ]
+   },
+   {
+    "prompt": "Whenever they sacrifice to the gods, they hope for victory.",
+    "answer": "ὅταν τοῖς θεοῖς θύωσιν, νίκην ἐλπίζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "τοῖς",
+     "θεοῖς",
+     "θύωσιν",
+     "νίκην",
+     "ἐλπίζουσιν"
+    ]
+   },
+   {
+    "prompt": "Whatever the oracle says, we will do.",
+    "answer": "ὅ τι ἂν ὁ χρησμὸς λέγῃ, ποιήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "ἄν",
+     "ὁ",
+     "χρησμός",
+     "λέγῃ",
+     "ποιήσομεν"
+    ]
+   },
+   {
+    "prompt": "After the ships sail away, the harbor will be deserted.",
+    "answer": "ἐπειδὰν αἱ νῆες ἀποπλεύσωσιν, ὁ λιμὴν ἔρημος ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "αἱ",
+     "νῆες",
+     "ἀποπλεύσωσιν",
+     "ὁ",
+     "λιμήν",
+     "ἔρημος",
+     "ἔσται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1768-dependent-clauses-with-an-t3",
+  "sectionId": "sm-1768-dependent-clauses-with-an",
+  "questions": [
+   {
+    "prompt": "Wherever you go, I will follow.",
+    "answer": "ὅποι ἂν ἴῃς, ἕψομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅποι",
+     "ἄν",
+     "ἴῃς",
+     "ἕψομαι"
+    ]
+   },
+   {
+    "prompt": "Let as many as wish to speak in the assembly speak.",
+    "answer": "ὅσοι ἂν βούλωνται, ἐν τῇ ἐκκλησίᾳ λεγόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅσοι",
+     "ἄν",
+     "βούλωνται",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "λεγόντων"
+    ]
+   },
+   {
+    "prompt": "Whenever winter comes, the farmers rest.",
+    "answer": "ὅταν ὁ χειμὼν ἔλθῃ, οἱ γεωργοὶ ἡσυχάζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "χειμών",
+     "ἔλθῃ",
+     "οἱ",
+     "γεωργοί",
+     "ἡσυχάζουσιν"
+    ]
+   },
+   {
+    "prompt": "Whoever guards the walls saves the citizens.",
+    "answer": "ὃς ἂν τὰ τείχη φυλάττῃ, τοὺς πολίτας σῴζει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅς",
+     "ἄν",
+     "τά",
+     "τείχη",
+     "φυλάττῃ",
+     "τούς",
+     "πολίτας",
+     "σῴζει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1768-dependent-clauses-with-an-t4",
+  "sectionId": "sm-1768-dependent-clauses-with-an",
+  "questions": [
+   {
+    "prompt": "We will wait until the messenger returns.",
+    "answer": "μενοῦμεν ἕως ἂν ὁ ἄγγελος ἐπανέλθῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μενοῦμεν",
+     "ἕως",
+     "ἄν",
+     "ὁ",
+     "ἄγγελος",
+     "ἐπανέλθῃ"
+    ]
+   },
+   {
+    "prompt": "Whenever the trumpet sounds, advance quickly.",
+    "answer": "ὅταν ἡ σάλπιγξ σημήνῃ, ταχέως προχωρεῖτε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ἡ",
+     "σάλπιγξ",
+     "σημήνῃ",
+     "ταχέως",
+     "προχωρεῖτε"
+    ]
+   },
+   {
+    "prompt": "After you have heard everything, judge justly.",
+    "answer": "ἐπειδὰν πάντα ἀκούσῃς, δικαίως κρῖνε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "πάντα",
+     "ἀκούσῃς",
+     "δικαίως",
+     "κρῖνε"
+    ]
+   },
+   {
+    "prompt": "Do not act before you consider the matter.",
+    "answer": "μὴ πρᾶττε πρὶν ἂν τὸ πρᾶγμα σκέψῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "πρᾶττε",
+     "πρίν",
+     "ἄν",
+     "τό",
+     "πρᾶγμα",
+     "σκέψῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1768-dependent-clauses-with-an-t5",
+  "sectionId": "sm-1768-dependent-clauses-with-an",
+  "questions": [
+   {
+    "prompt": "If we cross the river, we will be safe.",
+    "answer": "ἐὰν τὸν ποταμὸν διαβῶμεν, σῷοι ἐσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τόν",
+     "ποταμόν",
+     "διαβῶμεν",
+     "σῷοι",
+     "ἐσόμεθα"
+    ]
+   },
+   {
+    "prompt": "Whenever he sees danger, he keeps quiet.",
+    "answer": "ὅταν κίνδυνον ὁρᾷ, ἡσυχίαν ἄγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "κίνδυνον",
+     "ὁρᾷ",
+     "ἡσυχίαν",
+     "ἄγει"
+    ]
+   },
+   {
+    "prompt": "Whichever road you choose leads to the sea.",
+    "answer": "ἣν ἂν ὁδὸν ἕλῃ, πρὸς τὴν θάλατταν φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥν",
+     "ἄν",
+     "ὁδόν",
+     "ἕλῃ",
+     "πρός",
+     "τήν",
+     "θάλατταν",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "When night falls, light the fires.",
+    "answer": "ἐπειδὰν νὺξ γένηται, τὰ πυρὰ ἅψατε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "νύξ",
+     "γένηται",
+     "τά",
+     "πυρά",
+     "ἅψατε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1768-dependent-clauses-with-an-t6",
+  "sectionId": "sm-1768-dependent-clauses-with-an",
+  "questions": [
+   {
+    "prompt": "If the citizens trust the laws, the city flourishes.",
+    "answer": "ἐὰν οἱ πολῖται τοῖς νόμοις πιστεύωσιν, ἡ πόλις ἀνθεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "πολῖται",
+     "τοῖς",
+     "νόμοις",
+     "πιστεύωσιν",
+     "ἡ",
+     "πόλις",
+     "ἀνθεῖ"
+    ]
+   },
+   {
+    "prompt": "Whenever the poet sings, everyone listens gladly.",
+    "answer": "ὅταν ὁ ποιητὴς ᾄδῃ, πάντες ἡδέως ἀκούουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "ποιητής",
+     "ᾄδῃ",
+     "πάντες",
+     "ἡδέως",
+     "ἀκούουσιν"
+    ]
+   },
+   {
+    "prompt": "Whoever flees the battle brings shame upon himself.",
+    "answer": "ὃς ἂν τὴν μάχην φύγῃ, αἰσχύνην ἑαυτῷ φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅς",
+     "ἄν",
+     "τήν",
+     "μάχην",
+     "φύγῃ",
+     "αἰσχύνην",
+     "ἑαυτῷ",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "After the generals deliberate, they will announce the plan.",
+    "answer": "ἐπειδὰν οἱ στρατηγοὶ βουλεύσωνται, τὴν γνώμην ἀγγελοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "οἱ",
+     "στρατηγοί",
+     "βουλεύσωνται",
+     "τήν",
+     "γνώμην",
+     "ἀγγελοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1768-dependent-clauses-with-an-t7",
+  "sectionId": "sm-1768-dependent-clauses-with-an",
+  "questions": [
+   {
+    "prompt": "Whenever the sailors see a storm, they turn the ship toward land.",
+    "answer": "ὅταν οἱ ναῦται χειμῶνα ἴδωσι, τὴν ναῦν πρὸς τὴν γῆν τρέπουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "οἱ",
+     "ναῦται",
+     "χειμῶνα",
+     "ἴδωσι",
+     "τὴν",
+     "ναῦν",
+     "πρὸς",
+     "γῆν",
+     "τρέπουσιν"
+    ]
+   },
+   {
+    "prompt": "If you buy this house, you will regret it.",
+    "answer": "ἐὰν ταύτην τὴν οἰκίαν πρίῃ, μεταμελήσει σοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ταύτην",
+     "τὴν",
+     "οἰκίαν",
+     "πρίῃ",
+     "μεταμελήσει",
+     "σοι"
+    ]
+   },
+   {
+    "prompt": "Whoever labors and sweats will gather the fruits.",
+    "answer": "ὃς ἂν πονῇ καὶ ἱδρῷ, τοὺς καρποὺς κομιεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃς",
+     "ἂν",
+     "πονῇ",
+     "καὶ",
+     "ἱδρῷ",
+     "τοὺς",
+     "καρποὺς",
+     "κομιεῖται"
+    ]
+   },
+   {
+    "prompt": "When the general arrives, we will take counsel about the war.",
+    "answer": "ἐπειδὰν ὁ στρατηγὸς ἀφίκηται, βουλευσόμεθα περὶ τοῦ πολέμου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀφίκηται",
+     "βουλευσόμεθα",
+     "περὶ",
+     "τοῦ",
+     "πολέμου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1768-dependent-clauses-with-an-t8",
+  "sectionId": "sm-1768-dependent-clauses-with-an",
+  "questions": [
+   {
+    "prompt": "If the enemy attack the walls, the guards will bravely resist.",
+    "answer": "ἐὰν οἱ πολέμιοι τοῖς τείχεσι προσβάλωσιν, οἱ φύλακες ἀνδρείως ἀμυνοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "πολέμιοι",
+     "τοῖς",
+     "τείχεσι",
+     "προσβάλωσιν",
+     "φύλακες",
+     "ἀνδρείως",
+     "ἀμυνοῦνται"
+    ]
+   },
+   {
+    "prompt": "As often as he speaks, everyone listens in silence.",
+    "answer": "ὁσάκις ἂν λέγῃ, πάντες σιγῇ ἀκούουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁσάκις",
+     "ἂν",
+     "λέγῃ",
+     "πάντες",
+     "σιγῇ",
+     "ἀκούουσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever winter comes, the farmers cease from their labors.",
+    "answer": "ὅταν ὁ χειμὼν ἔλθῃ, οἱ γεωργοὶ τῶν πόνων παύονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "χειμὼν",
+     "ἔλθῃ",
+     "οἱ",
+     "γεωργοὶ",
+     "τῶν",
+     "πόνων",
+     "παύονται"
+    ]
+   },
+   {
+    "prompt": "After you have practiced the art, you will teach the young men.",
+    "answer": "ἐπειδὰν τὴν τέχνην μελετήσῃς, τοὺς νεανίας διδάξεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "τὴν",
+     "τέχνην",
+     "μελετήσῃς",
+     "τοὺς",
+     "νεανίας",
+     "διδάξεις"
+    ]
+   }
+  ]
+ }
+]
