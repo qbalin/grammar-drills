@@ -1,0 +1,634 @@
+[
+ {
+  "id": "sm-1018-syntax-of-adjectives-t1",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The wise general led the brave soldiers out of the difficult country.",
+    "answer": "ὁ σοφὸς στρατηγὸς τοὺς ἀνδρείους στρατιώτας ἐκ τῆς χαλεπῆς χώρας ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "στρατηγὸς",
+     "τοὺς",
+     "ἀνδρείους",
+     "στρατιώτας",
+     "ἐκ",
+     "τῆς",
+     "χαλεπῆς",
+     "χώρας",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "This just judge always honors truthful men.",
+    "answer": "οὗτος ὁ δίκαιος δικαστὴς ἀεὶ τοὺς ἀληθεῖς ἄνδρας τιμᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "δίκαιος",
+     "δικαστὴς",
+     "ἀεὶ",
+     "τοὺς",
+     "ἀληθεῖς",
+     "ἄνδρας",
+     "τιμᾷ"
+    ]
+   },
+   {
+    "prompt": "The loving daughter cared for her aged father.",
+    "answer": "ἡ φιλοῦσα θυγάτηρ τοῦ γεραιοῦ πατρὸς ἐπεμελεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φιλοῦσα",
+     "θυγάτηρ",
+     "τοῦ",
+     "γεραιοῦ",
+     "πατρὸς",
+     "ἐπεμελεῖτο"
+    ]
+   },
+   {
+    "prompt": "We were admiring the beautiful temples of the small city.",
+    "answer": "τὰ καλὰ ἱερὰ τῆς μικρᾶς πόλεως ἐθαυμάζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "καλὰ",
+     "ἱερὰ",
+     "τῆς",
+     "μικρᾶς",
+     "πόλεως",
+     "ἐθαυμάζομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t2",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The contest for freedom is glorious.",
+    "answer": "καλὸς ὁ ὑπὲρ τῆς ἐλευθερίας ἀγών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλὸς",
+     "ὁ",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἀγών"
+    ]
+   },
+   {
+    "prompt": "These things which the poet said are true.",
+    "answer": "ταῦτα ἃ ὁ ποιητὴς εἶπεν ἀληθῆ ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἃ",
+     "ὁ",
+     "ποιητὴς",
+     "εἶπεν",
+     "ἀληθῆ",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The roads through the mountains were long and dangerous.",
+    "answer": "μακραὶ καὶ χαλεπαὶ ἦσαν αἱ διὰ τῶν ὀρῶν ὁδοί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μακραὶ",
+     "καὶ",
+     "χαλεπαὶ",
+     "ἦσαν",
+     "αἱ",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "ὁδοί"
+    ]
+   },
+   {
+    "prompt": "The natures which seem to be best are also difficult to teach.",
+    "answer": "αἱ ἄρισται δοκοῦσαι εἶναι φύσεις χαλεπαί εἰσι διδάξαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "ἄρισται",
+     "δοκοῦσαι",
+     "εἶναι",
+     "φύσεις",
+     "χαλεπαί",
+     "εἰσι",
+     "διδάξαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t3",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The cities in Asia sent envoys to the king.",
+    "answer": "αἱ ἐν τῇ Ἀσίᾳ πόλεις πρέσβεις παρὰ τὸν βασιλέα ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "ἐν",
+     "τῇ",
+     "Ἀσίᾳ",
+     "πόλεις",
+     "πρέσβεις",
+     "παρὰ",
+     "τὸν",
+     "βασιλέα",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "The men on the wall saw the enemy approaching.",
+    "answer": "οἱ ἐπὶ τῷ τείχει ἄνδρες τοὺς πολεμίους προσιόντας εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐπὶ",
+     "τῷ",
+     "τείχει",
+     "ἄνδρες",
+     "τοὺς",
+     "πολεμίους",
+     "προσιόντας",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "The fear of the people in the city kept growing.",
+    "answer": "ὁ τῶν ἐν τῇ πόλει ἀνθρώπων φόβος ἀεὶ ηὐξάνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τῶν",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἀνθρώπων",
+     "φόβος",
+     "ἀεὶ",
+     "ηὐξάνετο"
+    ]
+   },
+   {
+    "prompt": "Those with Cyrus fought bravely against the Greeks.",
+    "answer": "οἱ σὺν Κύρῳ ἀνδρείως πρὸς τοὺς Ἕλληνας ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σὺν",
+     "Κύρῳ",
+     "ἀνδρείως",
+     "πρὸς",
+     "τοὺς",
+     "Ἕλληνας",
+     "ἐμάχοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t4",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The citizens who were present praised the speaker.",
+    "answer": "οἱ παρόντες πολῖται τὸν λέγοντα ἐπῄνεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παρόντες",
+     "πολῖται",
+     "τὸν",
+     "λέγοντα",
+     "ἐπῄνεσαν"
+    ]
+   },
+   {
+    "prompt": "We pity those who have suffered such terrible things.",
+    "answer": "τοὺς τοιαῦτα δεινὰ πεπονθότας οἰκτίρομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "τοιαῦτα",
+     "δεινὰ",
+     "πεπονθότας",
+     "οἰκτίρομεν"
+    ]
+   },
+   {
+    "prompt": "The general rewarded the soldiers who had fought well.",
+    "answer": "ὁ στρατηγὸς τοὺς εὖ μαχεσαμένους στρατιώτας ἐτίμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "εὖ",
+     "μαχεσαμένους",
+     "στρατιώτας",
+     "ἐτίμησεν"
+    ]
+   },
+   {
+    "prompt": "Those who rule the sea often despise the weak.",
+    "answer": "οἱ τῆς θαλάττης ἄρχοντες πολλάκις τῶν ἀσθενῶν καταφρονοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῆς",
+     "θαλάττης",
+     "ἄρχοντες",
+     "πολλάκις",
+     "τῶν",
+     "ἀσθενῶν",
+     "καταφρονοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t5",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "Demosthenes the orator persuaded you Athenians.",
+    "answer": "Δημοσθένης ὁ ῥήτωρ ὑμᾶς τοὺς Ἀθηναίους ἔπεισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δημοσθένης",
+     "ὁ",
+     "ῥήτωρ",
+     "ὑμᾶς",
+     "τοὺς",
+     "Ἀθηναίους",
+     "ἔπεισεν"
+    ]
+   },
+   {
+    "prompt": "Cyrus the king honored Clearchus the general.",
+    "answer": "Κῦρος ὁ βασιλεὺς Κλέαρχον τὸν στρατηγὸν ἐτίμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "ὁ",
+     "βασιλεὺς",
+     "Κλέαρχον",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐτίμησεν"
+    ]
+   },
+   {
+    "prompt": "We the Greeks fought against the barbarians for freedom.",
+    "answer": "ἡμεῖς οἱ Ἕλληνες ὑπὲρ τῆς ἐλευθερίας τοῖς βαρβάροις ἐμαχόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμεῖς",
+     "οἱ",
+     "Ἕλληνες",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "τοῖς",
+     "βαρβάροις",
+     "ἐμαχόμεθα"
+    ]
+   },
+   {
+    "prompt": "Socrates the philosopher used to teach many young men in Athens.",
+    "answer": "Σωκράτης ὁ φιλόσοφος πολλοὺς νεανίας ἐν ταῖς Ἀθήναις ἐδίδασκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Σωκράτης",
+     "ὁ",
+     "φιλόσοφος",
+     "πολλοὺς",
+     "νεανίας",
+     "ἐν",
+     "ταῖς",
+     "Ἀθήναις",
+     "ἐδίδασκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t6",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The king gave the victor a crown of gold.",
+    "answer": "ὁ βασιλεὺς τῷ νικήσαντι στέφανον χρυσοῦ ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τῷ",
+     "νικήσαντι",
+     "στέφανον",
+     "χρυσοῦ",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "The ancients used to honor the gods with many sacrifices.",
+    "answer": "οἱ πάλαι πολλαῖς θυσίαις τοὺς θεοὺς ἐτίμων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πάλαι",
+     "πολλαῖς",
+     "θυσίαις",
+     "τοὺς",
+     "θεοὺς",
+     "ἐτίμων"
+    ]
+   },
+   {
+    "prompt": "I am of the same opinion as the wise old men.",
+    "answer": "τῆς αὐτῆς γνώμης εἰμὶ τοῖς σοφοῖς γέρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "αὐτῆς",
+     "γνώμης",
+     "εἰμὶ",
+     "τοῖς",
+     "σοφοῖς",
+     "γέρουσιν"
+    ]
+   },
+   {
+    "prompt": "The men of today do not resemble the men of old.",
+    "answer": "οἱ νῦν ἄνθρωποι τοῖς πάλαι οὐκ ἐοίκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νῦν",
+     "ἄνθρωποι",
+     "τοῖς",
+     "πάλαι",
+     "οὐκ",
+     "ἐοίκασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t7",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "This just man always helps his own friends.",
+    "answer": "οὗτος ὁ δίκαιος ἀνὴρ ἀεὶ τοὺς ἑαυτοῦ φίλους ὠφελεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "δίκαιος",
+     "ἀνὴρ",
+     "ἀεὶ",
+     "τοὺς",
+     "ἑαυτοῦ",
+     "φίλους",
+     "ὠφελεῖ"
+    ]
+   },
+   {
+    "prompt": "We were admiring the beautiful temple of the goddess.",
+    "answer": "τὸ καλὸν τῆς θεοῦ ἱερὸν ἐθαυμάζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "καλὸν",
+     "τῆς",
+     "θεοῦ",
+     "ἱερὸν",
+     "ἐθαυμάζομεν"
+    ]
+   },
+   {
+    "prompt": "The wicked slaves fled from the harsh master.",
+    "answer": "οἱ πονηροὶ δοῦλοι τὸν χαλεπὸν δεσπότην ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πονηροὶ",
+     "δοῦλοι",
+     "τὸν",
+     "χαλεπὸν",
+     "δεσπότην",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The wise old woman dwelt in the small village.",
+    "answer": "ἡ σοφὴ γραῦς ἐν τῇ μικρᾷ κώμῃ ᾤκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφὴ",
+     "γραῦς",
+     "ἐν",
+     "τῇ",
+     "μικρᾷ",
+     "κώμῃ",
+     "ᾤκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t8",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "These things are true, but not pleasant.",
+    "answer": "ταῦτα ἀληθῆ μέν ἐστιν, ἡδέα δὲ οὔ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἀληθῆ",
+     "μέν",
+     "ἐστιν",
+     "ἡδέα",
+     "δὲ",
+     "οὔ"
+    ]
+   },
+   {
+    "prompt": "The road to the sea is long and difficult.",
+    "answer": "μακρὰ καὶ χαλεπὴ ἡ εἰς τὴν θάλατταν ὁδός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μακρὰ",
+     "καὶ",
+     "χαλεπὴ",
+     "ἡ",
+     "εἰς",
+     "τὴν",
+     "θάλατταν",
+     "ὁδός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The soldiers appeared brave in the battle.",
+    "answer": "οἱ στρατιῶται ἐν τῇ μάχῃ ἀνδρεῖοι ἐφάνησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀνδρεῖοι",
+     "ἐφάνησαν"
+    ]
+   },
+   {
+    "prompt": "Wealth without virtue does not seem good to the wise.",
+    "answer": "ὁ πλοῦτος ἄνευ ἀρετῆς οὐκ ἀγαθὸς τοῖς σοφοῖς δοκεῖ εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλοῦτος",
+     "ἄνευ",
+     "ἀρετῆς",
+     "οὐκ",
+     "ἀγαθὸς",
+     "τοῖς",
+     "σοφοῖς",
+     "δοκεῖ",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t9",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The men fighting for their country won great glory.",
+    "answer": "οἱ ὑπὲρ τῆς πατρίδος μαχόμενοι μεγάλην δόξαν ἐκτήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχόμενοι",
+     "μεγάλην",
+     "δόξαν",
+     "ἐκτήσαντο"
+    ]
+   },
+   {
+    "prompt": "Cyrus the king ruled over many nations.",
+    "answer": "Κῦρος ὁ βασιλεὺς πολλῶν ἐθνῶν ἦρχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "ὁ",
+     "βασιλεὺς",
+     "πολλῶν",
+     "ἐθνῶν",
+     "ἦρχεν"
+    ]
+   },
+   {
+    "prompt": "We honor Solon the lawgiver even now.",
+    "answer": "Σόλωνα τὸν νομοθέτην καὶ νῦν τιμῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Σόλωνα",
+     "τὸν",
+     "νομοθέτην",
+     "καὶ",
+     "νῦν",
+     "τιμῶμεν"
+    ]
+   },
+   {
+    "prompt": "Those who were sailing to the island saw the burning ships.",
+    "answer": "οἱ εἰς τὴν νῆσον πλέοντες τὰς καιομένας ναῦς εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "εἰς",
+     "τὴν",
+     "νῆσον",
+     "πλέοντες",
+     "τὰς",
+     "καιομένας",
+     "ναῦς",
+     "εἶδον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1018-syntax-of-adjectives-t10",
+  "sectionId": "sm-1018-syntax-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The battle in Boeotia destroyed the power of the enemy.",
+    "answer": "ἡ ἐν Βοιωτίᾳ μάχη τὴν τῶν πολεμίων δύναμιν διέφθειρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐν",
+     "Βοιωτίᾳ",
+     "μάχη",
+     "τὴν",
+     "τῶν",
+     "πολεμίων",
+     "δύναμιν",
+     "διέφθειρεν"
+    ]
+   },
+   {
+    "prompt": "A statue of stone stood in the marketplace.",
+    "answer": "ἀνδριὰς λίθου ἐν τῇ ἀγορᾷ εἱστήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνδριὰς",
+     "λίθου",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "εἱστήκει"
+    ]
+   },
+   {
+    "prompt": "I am of the same opinion as the men of old.",
+    "answer": "τῆς αὐτῆς γνώμης εἰμὶ τοῖς παλαιοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "αὐτῆς",
+     "γνώμης",
+     "εἰμὶ",
+     "τοῖς",
+     "παλαιοῖς"
+    ]
+   }
+  ]
+ }
+]
