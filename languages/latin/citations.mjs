@@ -21,30 +21,22 @@
  * `active,perfect`, `supine`, `masculine,nominative,singular`, …) and fully
  * macronized. An entry the dictionary cannot improve keeps the citation it has.
  *
- *   node --import tsx languages/latin/citations.mjs [--dry] [--ref /path/to/languages/latin]
+ *   node --import tsx languages/latin/citations.mjs --ref /path/to/languages/latin [--dry]
  *
  * Offline tooling: nothing here runs at runtime. Follow it with
  * `node scripts/build-web-content.mjs` to repack the web app's copy, and bump
  * `citationsVersion` in the pack profile so saved vocabulary cards catch up.
  */
-import { DatabaseSync } from "node:sqlite";
 import { gunzipSync, gzipSync } from "node:zlib";
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { compileFold, parseProfile } from "@lang-tutor/core";
+import { openReference, requireDictionary } from "../../scripts/lib/reference.mjs";
 
 const PACK = dirname(fileURLToPath(import.meta.url));
-const REPO = dirname(dirname(PACK));
 const args = process.argv.slice(2);
-const opt = (name, def) => {
-  const i = args.indexOf(name);
-  return i >= 0 ? args.splice(i, 2)[1] : def;
-};
 const DRY = args.includes("--dry");
-const REF =
-  opt("--ref", process.env.LATIN_REF) ??
-  join(REPO, "..", "language_learning", "languages", "latin");
 const MAP = join(PACK, "content", "lemmas.json.gz");
 
 // The pack's own fold. `dictionary.db.word_norm` was written with it, so a
@@ -73,17 +65,21 @@ const isForm = (s) => s && !NOT_A_FORM.test(s) && s.split(/\s+/).length <= 2;
 
 // --- the reference dictionary -----------------------------------------------
 
-const db = new DatabaseSync(join(REF, "dictionary.db"), { readOnly: true });
-const findEntry = db.prepare(
-  "select id from entries where word_norm = ? and pos = ? limit 1",
-);
-const findForms = db.prepare("select form, tags from forms where entry_id = ?");
+// The principal parts are not in the shipped map and cannot be got back from
+// it — its keys are folded, so the perfect of `amō` is stored as `amaui` — so
+// this is one of the two scripts that genuinely needs the full dictionary.
+let ref;
+try {
+  ref = requireDictionary(openReference(PACK, profile, args), profile);
+} catch (e) {
+  console.error(e.message);
+  process.exit(1);
+}
 
 /** Every tagged form of one dictionary entry, or [] when there is no entry. */
 function formsOf(lemma, pos) {
-  const row = findEntry.get(normalize(lemma), pos);
-  if (!row) return [];
-  return findForms.all(row.id).map((r) => ({ form: r.form, tags: r.tags ?? "" }));
+  const [entry] = ref.entriesFor(normalize(lemma), pos);
+  return entry ? ref.formsFor(entry.id) : [];
 }
 
 const tagged = (forms, tags) => forms.filter((f) => f.tags === tags).map((f) => f.form);
@@ -312,7 +308,7 @@ const sample = (pos, n) =>
     .slice(0, n)
     .map((e) => rewritten.get(`${e.lemma}|${e.pos}`));
 
-console.log(`Reference: ${REF}`);
+console.log(`Reference: ${ref.label}`);
 console.log(
   `Verbs      ${stats.verb} rewritten (${stats.verbFull} with all four parts)`,
 );

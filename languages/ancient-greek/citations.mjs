@@ -38,13 +38,13 @@
  * `node scripts/build-web-content.mjs` to repack the web app's copy, and bump
  * `citationsVersion` in the pack profile so saved vocabulary cards catch up.
  */
-import { DatabaseSync } from "node:sqlite";
 import { gzipSync } from "node:zlib";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { compileFold } from "@lang-tutor/core";
-import { loadLemmas, loadProfile, packDir, refDir } from "../../scripts/lib/pack.mjs";
+import { loadLemmas, loadProfile, packDir } from "../../scripts/lib/pack.mjs";
+import { openReference, requireDictionary } from "../../scripts/lib/reference.mjs";
 
 const argv = process.argv.slice(2);
 const DRY = argv.includes("--dry");
@@ -56,7 +56,6 @@ const dir = argv.includes("--pack") || argv.includes("--language")
   ? packDir(argv)
   : dirname(fileURLToPath(import.meta.url));
 const profile = loadProfile(dir);
-const ref = refDir(profile, argv);
 const MAP = join(dir, "content", "lemmas.json.gz");
 
 // The pack's own fold. `dictionary.db.word_norm` was written with it, so a
@@ -65,15 +64,16 @@ const fold = compileFold(profile.fold);
 
 // --- the reference dictionary -----------------------------------------------
 
-if (!existsSync(join(ref, "dictionary.db"))) {
-  console.error(`No dictionary.db at ${ref}.\nSet --ref or LANG_REF.`);
+// The tagged, fully accented forms a citation is made of exist nowhere else:
+// the shipped map's keys are folded, so `πόλεως` is stored as `πολεωσ` and the
+// accents cannot be put back from it.
+let ref;
+try {
+  ref = requireDictionary(openReference(dir, profile, argv), profile);
+} catch (e) {
+  console.error(e.message);
   process.exit(1);
 }
-const db = new DatabaseSync(join(ref, "dictionary.db"), { readOnly: true });
-const findEntry = db.prepare(
-  "select id, word from entries where word_norm = ? and pos = ?",
-);
-const findForms = db.prepare("select form, tags from forms where entry_id = ?");
 
 /**
  * Every tagged form of one dictionary entry, or [] when there is no entry.
@@ -85,12 +85,10 @@ const findForms = db.prepare("select form, tags from forms where entry_id = ?");
  * headword is spelled exactly like the record's wins when there is one.
  */
 function formsOf(lemma, pos) {
-  const rows = findEntry.all(fold(lemma), pos);
+  const rows = ref.entriesFor(fold(lemma), pos);
   if (!rows.length) return [];
   const row = rows.find((r) => r.word === lemma) ?? rows[0];
-  return findForms
-    .all(row.id)
-    .map((r) => ({ form: r.form, tags: (r.tags ?? "").split(",") }));
+  return ref.formsFor(row.id).map((r) => ({ form: r.form, tags: r.tags.split(",") }));
 }
 
 // --- choosing between forms of the same slot --------------------------------
@@ -144,7 +142,7 @@ const spelling = (s) =>
  */
 function atticIndex() {
   const counts = new Map();
-  const texts = join(ref, "texts");
+  const texts = join(ref.dir, "texts");
   if (!existsSync(texts)) return counts;
   for (const file of readdirSync(texts)) {
     if (!file.endsWith(".txt") || /^(homer|herodotus)/.test(file)) continue;
@@ -432,7 +430,7 @@ const sample = (pos, n) =>
     .slice(0, n)
     .map((r) => rewritten.get(identity(r)));
 
-console.log(`Reference: ${ref}`);
+console.log(`Reference: ${ref.label}`);
 console.log(
   `Attic prose: ${attested.size} distinct words indexed for tie-breaking`,
 );

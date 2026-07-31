@@ -22,17 +22,18 @@
 // each topic to its size-scaled target and appends; `--only-thin` restricts
 // that to the topics actually short. Both are safe to re-run.
 //
-// Needs the reference project alongside this one for dictionary.db and
-// frequencies.db; override with LANG_REF=/path/to/languages/<pack>.
+// Needs `claude -p` and nothing else: attestation and the vocabulary band come
+// from the pack's own content. Point --ref/$LANG_REF at the full reference
+// databases to check against those instead.
 import { execFileSync } from "node:child_process";
-import { DatabaseSync } from "node:sqlite";
 import {
   readFileSync, writeFileSync, mkdirSync, existsSync, openSync, closeSync, rmSync,
 } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { compileFold, plainText } from "@lang-tutor/core";
-import { loadProfile, packDir, refDir, requireRef } from "./lib/pack.mjs";
+import { loadProfile, packDir } from "./lib/pack.mjs";
+import { openReference } from "./lib/reference.mjs";
 import { TARGET_DEFAULTS, targetFor } from "./lib/target.mjs";
 
 const args = process.argv.slice(2);
@@ -51,7 +52,7 @@ for (const flag of ["--fill", "--only-thin", "--plan"]) {
 const PACK = opt("--pack", packDir(process.argv.slice(2)));
 const profile = loadProfile(PACK);
 const config = (await import(pathToFileURL(join(PACK, "gen", "config.mjs")).href)).default;
-const REF = requireRef(opt("--ref", refDir(profile, process.argv.slice(2))), profile);
+const ref = openReference(PACK, profile, process.argv.slice(2));
 const OUT = join(PACK, "content", "tests");
 const STATS = join(PACK, "content", "gen-stats.json");
 const MODEL = config.model;
@@ -81,17 +82,14 @@ const SLEEP_MS = Number(opt("--sleep", 1500)); // pace calls to respect usage li
 const ALLOW_UNVERIFIED = Number(opt("--allow-unverified", config.allowUnverified));
 const onlyTopics = args;
 
-const dict = new DatabaseSync(`${REF}/dictionary.db`, { readOnly: true });
-const freq = new DatabaseSync(`${REF}/frequencies.db`, { readOnly: true });
-const formExists = dict.prepare("select 1 from forms where form_norm = ? limit 1");
-// The pack's own fold, not a copy of it: `dictionary.db.form_norm` was written
+// The pack's own fold, not a copy of it: the reference's form keys were written
 // with this fold, so a second implementation drifting from it would silently
 // turn every lookup below into a miss and reject correct sentences.
 const normalize = compileFold(profile.fold);
 
 /**
- * The pack's indeclinable function words, verified absent from its
- * dictionary.db (see its gen/config.mjs for why the list has to exist).
+ * The pack's indeclinable function words, absent from the reference dictionary
+ * (see its gen/config.mjs for why the list has to exist).
  */
 const FUNCTION_WORDS = new Set(config.functionWords.map(normalize));
 /** Every form the dictionary could not confirm, for the end-of-run report. */
@@ -101,9 +99,10 @@ const unverified = new Map();
  * Classify one form: "ok" (confirmed, or a known indeclinable, or a
  * mid-sentence proper noun) or "unverified".
  *
- * dictionary.db is authoritative when it answers, but it demonstrably has
- * holes — it is built around inflected forms and lacks 47 of the commonest
- * indeclinables outright — so treating a miss as proof of a bad form throws
+ * The reference is authoritative when it answers, but neither backend is
+ * complete — the dictionary is built around inflected forms and lacks 47 of
+ * the commonest indeclinables outright; the pack's map stops at the frequency
+ * ceiling it was built to — so treating a miss as proof of a bad form throws
  * away correct Latin. Misses are counted rather than fatal; `validate` caps
  * how many a single sentence may carry.
  */
@@ -112,7 +111,7 @@ function classify(raw, firstWord) {
   if (!w) return "ok";
   const n = normalize(w);
   if (FUNCTION_WORDS.has(n)) return "ok";
-  if (formExists.get(n)) return "ok";
+  if (ref.attests(n)) return "ok";
   // A mid-sentence capital is a proper noun; the first word is capitalised by
   // position, so it earns no such pass. Exempting every capital would wave
   // through the first word of every answer, which is the whole failure this
@@ -129,12 +128,9 @@ function classify(raw, firstWord) {
 }
 
 // Sample richer vocabulary (intermediate/advanced bands) to seed variety.
-const richLemmas = freq
-  .prepare(
-    `select lemma from frequency where rank between ? and ? and pos in (${config.band.pos.map(() => "?").join(",")}) order by rank`,
-  )
-  .all(config.band.min, config.band.max, ...config.band.pos)
-  .map((r) => r.lemma);
+// The printed headword, not the folded key: this goes into a prompt, and a
+// Greek lemma stripped of its accents and breathings is no use to the model.
+const richLemmas = ref.band(config.band).map((r) => r.lemma);
 function vocabHint(k = 20) {
   const pick = [];
   for (let i = 0; i < k; i++) pick.push(richLemmas[Math.floor(Math.random() * richLemmas.length)]);

@@ -38,12 +38,12 @@
  * that can never be looked up. Off by default, because only some references
  * have them.
  */
-import { existsSync, writeFileSync } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { join } from "node:path";
-import { DatabaseSync } from "node:sqlite";
 import { compileFold } from "@lang-tutor/core";
-import { loadLemmas, loadProfile, packDir, refDir } from "./lib/pack.mjs";
+import { loadLemmas, loadProfile, packDir } from "./lib/pack.mjs";
+import { openReference, requireDictionary } from "./lib/reference.mjs";
 
 const argv = process.argv.slice(2);
 const opt = (name, def) => {
@@ -53,7 +53,16 @@ const opt = (name, def) => {
 const dir = packDir(argv);
 const profile = loadProfile(dir);
 const fold = compileFold(profile.fold);
-const ref = refDir(profile, argv);
+// This is one of the two things the pack's own content cannot answer for: it is
+// what *builds* that content, out of glosses, genders and inflection tables
+// that only the dictionary holds.
+let ref;
+try {
+  ref = requireDictionary(openReference(dir, profile, argv), profile);
+} catch (e) {
+  console.error(e.message);
+  process.exit(1);
+}
 const VERIFY = argv.includes("--verify");
 const MERGE = argv.includes("--merge");
 const DROP_ARTIFACTS = argv.includes("--drop-artifacts");
@@ -63,28 +72,9 @@ const OUT = opt("--out", join(dir, "content", "lemmas.json.gz"));
 /** Analyser notation rather than a word anyone could type. */
 const ARTIFACT = /[-+]/;
 
-for (const db of ["dictionary.db", "frequencies.db"]) {
-  if (!existsSync(join(ref, db))) {
-    console.error(
-      `No ${db} at ${ref}.\nSet --ref or LANG_REF; see ADDING_A_LANGUAGE.md for the schema these must have.`,
-    );
-    process.exit(1);
-  }
-}
-
-const dict = new DatabaseSync(join(ref, "dictionary.db"), { readOnly: true });
-const freq = new DatabaseSync(join(ref, "frequencies.db"), { readOnly: true });
-
 // Ranked lemmas are the spine: the map exists to answer "what is this word",
 // and a word nobody writes is not worth the bytes on a phone.
-const ranked = freq
-  .prepare("select lemma, lemma_norm, pos, rank from frequency where rank <= ? order by rank")
-  .all(MAX_RANK);
-
-const entriesFor = dict.prepare(
-  "select id, word, pos, data from entries where word_norm = ? and pos = ?",
-);
-const formsFor = dict.prepare("select form from forms where entry_id = ?");
+const ranked = ref.ranked(MAX_RANK);
 
 /**
  * The first few senses, joined. A whole Wiktionary entry is far too much to put
@@ -133,7 +123,7 @@ let lemmas = 0;
 let missing = 0;
 
 for (const row of ranked) {
-  const entries = entriesFor.all(row.lemma_norm ?? fold(row.lemma), row.pos ?? "");
+  const entries = ref.entriesFor(row.lemma_norm ?? fold(row.lemma), row.pos);
   if (!entries.length) {
     missing++;
     continue;
@@ -155,7 +145,7 @@ for (const row of ranked) {
 
     // The headword itself is a form: a lemma with no inflection table still
     // has to be findable by the word the student typed.
-    const forms = new Set([entry.word, ...formsFor.all(entry.id).map((f) => f.form)]);
+    const forms = new Set([entry.word, ...ref.formsFor(entry.id).map((f) => f.form)]);
     for (const form of forms) {
       const key = fold(form);
       if (!key) continue;
@@ -212,6 +202,7 @@ if (VERIFY) {
   process.exit(pct >= 99 ? 0 : 1);
 }
 
+ref.close();
 writeFileSync(OUT, gzipSync(Buffer.from(JSON.stringify(map), "utf8"), { level: 9 }));
 console.log(`wrote ${OUT}`);
 console.log(

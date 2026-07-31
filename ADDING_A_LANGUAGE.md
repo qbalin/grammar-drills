@@ -63,10 +63,13 @@ would teach every ending and nothing about using them. The Greek pack uses the
 Perseus Project's TEI instead. Count the sections in the source against the
 book's own last section number before writing a parser against it.
 
-**A `dictionary.db` and a `frequencies.db` for the language**, built by the
-sibling `language_learning` project. Their schema is Appendix A. This repo
-consumes them and never builds them. If they do not exist yet, commission them
-first: everything from step 5 on is blocked without them.
+**A `dictionary.db` and a `frequencies.db` for the language**, built by
+`scripts/reference/` — see its README, and Appendix A for the schema they must
+have. They are large (Latin's dictionary is 474 MB) and are never committed;
+they are needed to *build* a pack's lemma map and citations, and for nothing
+afterwards. Everything from step 5 on is blocked without them, so build them
+early. You will also need a plain-text corpus of the language for the frequency
+list — Project Gutenberg or Perseus — in the dialect the pack means to teach.
 
 **A prompt language.** Only English ships an adapter
 (`packages/core/src/l1/english.ts`). A pack can name another in `profile.l1`,
@@ -440,15 +443,23 @@ whether a number moved rather than only whether it still clears a threshold.
 
 ## Appendix A — the reference database contract
 
-Resolved from `--ref`, then `$LANG_REF`, then the sibling checkout at
-`../language_learning/languages/<pack>` — trying both the pack id as written
-and its underscored spelling, because that project names `ancient_greek` what
-this one calls `ancient-greek`. A pack whose id is a single word is unaffected.
-This repo reads these and never writes them.
+Built by `scripts/reference/` (see its README) into
+`languages/<pack>/reference/`, and resolved from `--ref`, then `$LANG_REF`.
+There is no fallback path: the dictionary is either pointed at or absent, and
+absent is a supported state.
 
-`gen-tests` and `build-lemmas` cannot run without them and say which file is
-missing from which directory. The reports treat an absent reference as "gates
-skipped" instead; `--require-ref` turns that back into a failure.
+**Most things do not need it.** The gates, both reports and `gen-tests` answer
+from what the pack ships — `content/lemmas.json.gz` for attestation and
+`reference/frequency.tsv.gz` for the vocabulary band — which is why they run in
+CI and on any machine. On Latin the shipped map attests 98.4% of generated
+answer tokens where the dictionary manages 94.4%, because a Wiktionary dump is
+built around inflected forms and misses common indeclinables.
+
+Two things do need it, because they are what *builds* the shipped map:
+`scripts/build-lemmas.mjs` and the pack's own `citations.mjs`. Both refuse to
+run without it and say so. `--require-ref` makes `validate-pack` insist on it
+too, which is what a human shipping a pack wants and not something CI can ask
+for.
 
 ```sql
 -- dictionary.db      (Latin: 885,996 entries / 2,492,884 forms)
@@ -485,10 +496,17 @@ whole-string equality (`tags = 'infinitive,present'`) and others by membership.
 A pack with different conventions writes its own queries; only the schema and
 the tag format are the contract.
 
-**The invariant that matters most:** `form_norm` and `word_norm` must be
-produced by the *same fold the pack declares*. If they drift, every lookup
-misses while both halves look perfectly healthy on their own. Gate D2 samples
-40,000 rows to check exactly this.
+**The invariant that matters most:** `form_norm`, `word_norm` and `lemma_norm`
+must be produced by the *same fold the pack declares*. If they drift, every
+lookup misses while both halves look perfectly healthy on their own. Gate D2
+checks exactly this — against 40,000 sampled dictionary rows when `--ref` is
+given, and otherwise against every key of the shipped lemma map and every row
+of the committed frequency list, which were written by the same pipeline.
+
+The distilled list the repo commits is `reference/frequency.tsv.gz`: rank,
+lemma, `lemma_norm`, pos, tab-separated and gzipped, ~200 KB. Produced by
+`scripts/make-reference.mjs`, and `--check` re-derives it to confirm the
+committed file is still the one the database yields.
 
 ---
 

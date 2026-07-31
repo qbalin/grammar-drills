@@ -15,13 +15,13 @@
  *   node --import tsx scripts/coverage-report.mjs [--pack languages/latin]
  *                                                 [--ref /path/to/ref] [--json]
  *
- * C5 and C7 need the reference databases; without them both are skipped and
- * said to be skipped, rather than quietly passing.
+ * C5 and C7 ask the reference whether the generated Latin is real and whether
+ * it uses the vocabulary it was told to. Both are answered from the pack's own
+ * content unless `--ref` points at the full reference databases.
  */
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
-import { DatabaseSync } from "node:sqlite";
 import { compileFold, words } from "@lang-tutor/core";
 import {
   gate,
@@ -29,9 +29,9 @@ import {
   loadProfile,
   loadTests,
   packDir,
-  refDir,
   report,
 } from "./lib/pack.mjs";
+import { openReference } from "./lib/reference.mjs";
 import { targetFor } from "./lib/target.mjs";
 
 const argv = process.argv.slice(2);
@@ -173,63 +173,44 @@ gates.push(
     `${duplicates} duplicate prompts of ${allQuestions.length} (${dupPct.toFixed(2)}%, allowed ${limits.maxDuplicatePromptPct}%)`),
 );
 
-// --- C5 / C7: what the reference databases can say ---------------------------
+// --- C5 / C7: what the reference can say --------------------------------------
 
-const ref = refDir(profile, argv);
-const dictPath = join(ref, "dictionary.db");
-const freqPath = join(ref, "frequencies.db");
+const ref = openReference(dir, profile, argv);
 
-if (existsSync(dictPath)) {
-  const db = new DatabaseSync(dictPath, { readOnly: true });
-  const attested = db.prepare("select 1 from forms where form_norm = ? limit 1");
-  let total = 0;
-  let resolved = 0;
-  for (const q of allQuestions) {
-    for (const w of words(q.answer)) {
-      total++;
-      if (attested.get(fold(w))) resolved++;
-    }
+let total = 0;
+let resolved = 0;
+for (const q of allQuestions) {
+  for (const w of words(q.answer)) {
+    total++;
+    if (ref.attests(fold(w))) resolved++;
   }
-  const pct = (resolved / Math.max(1, total)) * 100;
-  gates.push(
-    gate("C5", pct >= limits.minDictResolvedPct,
-      `${pct.toFixed(1)}% of ${total} answer tokens attested (want ≥${limits.minDictResolvedPct}%)`),
-  );
-
-  if (existsSync(freqPath)) {
-    const freq = new DatabaseSync(freqPath, { readOnly: true });
-    const posFilter = band.pos.length
-      ? ` and pos in (${band.pos.map(() => "?").join(",")})`
-      : "";
-    const bandLemmas = freq
-      .prepare(`select lemma from frequency where rank between ? and ?${posFilter}`)
-      .all(band.min, band.max, ...band.pos)
-      .map((r) => fold(r.lemma));
-    // A form of a band lemma counts: the sentences inflect, so the bare lemma
-    // is usually not what appears.
-    const lemmaOf = db.prepare(
-      "select e.word_norm w from forms f join entries e on e.id = f.entry_id where f.form_norm = ? limit 1",
-    );
-    const used = new Set();
-    for (const q of allQuestions) {
-      for (const w of words(q.answer)) {
-        const hit = lemmaOf.get(fold(w));
-        if (hit) used.add(hit.w);
-      }
-    }
-    const inBand = bandLemmas.filter((l) => used.has(l)).length;
-    const pctBand = (inBand / Math.max(1, bandLemmas.length)) * 100;
-    gates.push(
-      gate("C7", pctBand >= limits.minBandUtilisationPct,
-        `${inBand} of ${bandLemmas.length} band lemmas used (${pctBand.toFixed(1)}%, ` +
-        `want ≥${limits.minBandUtilisationPct}%; band ${band.min}-${band.max}` +
-        `${band.pos.length ? ` ${band.pos.join("/")}` : ""})`),
-    );
-  }
-} else {
-  gates.push(gate("C5", true, `skipped — no dictionary.db at ${ref}`));
-  gates.push(gate("C7", true, `skipped — no dictionary.db at ${ref}`));
 }
+const pct = (resolved / Math.max(1, total)) * 100;
+gates.push(
+  gate("C5", pct >= limits.minDictResolvedPct,
+    `${pct.toFixed(1)}% of ${total} answer tokens attested (want ≥${limits.minDictResolvedPct}%)`),
+);
+
+const bandLemmas = ref.band(band).map((r) => r.lemma_norm);
+// A form of a band lemma counts: the sentences inflect, so the bare lemma is
+// usually not what appears.
+const used = new Set();
+for (const q of allQuestions) {
+  for (const w of words(q.answer)) {
+    const lemma = ref.lemmaOf(fold(w));
+    if (lemma) used.add(lemma);
+  }
+}
+const inBand = bandLemmas.filter((l) => used.has(l)).length;
+const pctBand = (inBand / Math.max(1, bandLemmas.length)) * 100;
+gates.push(
+  gate("C7", pctBand >= limits.minBandUtilisationPct,
+    `${inBand} of ${bandLemmas.length} band lemmas used (${pctBand.toFixed(1)}%, ` +
+    `want ≥${limits.minBandUtilisationPct}%; band ${band.min}-${band.max}` +
+    `${band.pos.length ? ` ${band.pos.join("/")}` : ""})`),
+);
+
+ref.close();
 
 // --- C6: what the generator threw away ---------------------------------------
 

@@ -493,22 +493,29 @@ is what it was doing anyway.
 
 ## Generation (offline, one-time — not shipped)
 
-All three content files are already built. Only `grammar.json` rebuilds from a
-source in this repo (`languages/latin/grammar/parse.py`, above); the other two need the
-reference `language_learning` project checked out alongside this one for its
-`dictionary.db` (886k entries / 2.5M inflected forms) and `frequencies.db`
-(19,342 ranked lemmas).
+All three content files are already built, and everything here runs against
+what the repo already holds. `grammar.json` rebuilds from a source in this repo
+(`languages/latin/grammar/parse.py`, above). `lemmas.json.gz` is the one file
+that needs the reference dictionary — 474 MB of Wiktionary, built locally by
+`scripts/reference/` and never committed — because it is made out of it.
 
 The per-topic tests are produced by `scripts/gen-tests.mjs`, which drives Claude
 Opus via the authenticated `claude -p` CLI, seeds each prompt with vocabulary
 sampled from frequency ranks 400–6000 so the sentences stay varied, and drops
-any item containing a Latin form that is not in `dictionary.db`:
+any item containing a Latin form the pack cannot attest:
 
 ```bash
 node --import tsx scripts/gen-tests.mjs --target 6                        # every topic lacking a file
 node --import tsx scripts/gen-tests.mjs --target 6 bn-020-first-declension   # one topic
-LANG_REF=/elsewhere/languages/latin node --import tsx scripts/gen-tests.mjs   # relocated reference DBs
+node --import tsx scripts/gen-tests.mjs --ref languages/latin/reference   # check against the full dictionary
 ```
+
+Attestation comes from the pack's own `lemmas.json.gz` unless `--ref` points at
+a dictionary. That is not a compromise: on Latin the shipped map attests 98.4%
+of generated answer tokens against the dictionary's 94.4%, because a Wiktionary
+dump is built around inflected forms and misses common indeclinables — the same
+holes the `functionWords` list in `languages/latin/gen/config.mjs` exists to
+paper over.
 
 Topics that already have a file are skipped, so a run interrupted by a usage
 limit resumes where it stopped. On a sustained limit it retries with a growing
@@ -528,8 +535,9 @@ perfect of *amō* is stored as `amaui` — and they come from the same
 `dictionary.db`, whose `forms` table is tagged and fully macronized:
 
 ```bash
-node --import tsx languages/latin/citations.mjs --dry   # report what would change
-node --import tsx languages/latin/citations.mjs   # rewrite the pack's lemmas.json.gz
+REF=languages/latin/reference   # built by scripts/reference/; see its README
+node --import tsx languages/latin/citations.mjs --ref $REF --dry   # what would change
+node --import tsx languages/latin/citations.mjs --ref $REF   # rewrite lemmas.json.gz
 node scripts/build-web-content.mjs         # repack the web app's copy
 ```
 
