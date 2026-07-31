@@ -447,8 +447,34 @@ Progress is user data, saved through a pluggable `StorageAdapter`:
 - **Local file** (CLI default) — `~/.latin-tutor/progress.json`.
 - **`localStorage`** (web default), with export/import to a JSON file.
 - **Private GitHub repo** — `GitHubStorage` commits the JSON via the GitHub REST
-  API with a personal access token (no backend). Google Drive/etc. can be added
-  as further adapters.
+  API with a fine-grained token that can read and write that repo's contents (no
+  backend). Google Drive/etc. can be added as further adapters.
+
+Both apps can mirror to GitHub, and the local copy stays authoritative in each:
+it is written synchronously on every grade, and the push is a four-second
+trailing debounce so a four-question test becomes one commit.
+
+On the web, **Settings → Sync with GitHub**. In the terminal:
+
+```
+tutor --setup-sync      # asks for owner, repo, file, branch, token
+```
+
+It checks the repo before writing anything — a token with the wrong scope
+otherwise fails four seconds after a grade, with the next question already on
+screen. Settings land in `sync.json` beside `progress.json` in the pack's
+`cliDir` (`~/.latin-tutor/sync.json`), created `0600` because it holds a token.
+Beside rather than inside: progress is exported and adopted wholesale between
+devices, and a credential in it would travel too. `GITHUB_TOKEN` overrides the
+stored token, and `--setup-sync` leaves the token out of the file entirely when
+the environment already carries it.
+
+The terminal flushes on exit rather than on `visibilitychange`, which is the
+browser's equivalent; without that the last grades of a session would sit in the
+debounce. Both check for a newer remote copy **at startup only**, and resolve it
+whole-file, last-writer-wins after asking. Two devices studying at once will
+still lose one of them: merging two spaced-repetition schedules is a much larger
+problem than this is trying to solve.
 
 The answers you write are part of that file (`attempts`, keyed by topic), and
 none of them is dropped: a question you meet once a year is exactly the one

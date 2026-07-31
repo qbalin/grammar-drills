@@ -1,10 +1,15 @@
 import {
   GitHubStorage,
+  PUSH_DELAY_MS,
+  describeSyncError,
   type Progress,
   type StorageAdapter,
+  type SyncState,
 } from "@lang-tutor/core";
 import { LocalStorageAdapter } from "./local.js";
 import { profile } from "../pack.js";
+
+export type { SyncState };
 
 // Namespaced by the pack, like the progress key: each language keeps its own
 // repo settings even when they share an origin.
@@ -17,13 +22,6 @@ export interface SyncConfig {
   path: string;
   branch: string;
 }
-
-export type SyncState =
-  | { kind: "off" }
-  | { kind: "idle"; at?: string }
-  | { kind: "pushing" }
-  | { kind: "offline" }
-  | { kind: "error"; message: string };
 
 export function loadSyncConfig(): SyncConfig | null {
   try {
@@ -51,9 +49,6 @@ export function saveSyncConfig(cfg: SyncConfig | null): void {
     /* storage blocked; sync simply stays off */
   }
 }
-
-/** How long to sit on a change before committing it. */
-const PUSH_DELAY_MS = 4000;
 
 /**
  * Local-first progress storage with an optional GitHub mirror.
@@ -183,19 +178,9 @@ export class SyncingStorage implements StorageAdapter {
     }
   }
 
+  /** The shared mapping, told what only the browser knows. */
   private describeError(err: unknown): SyncState {
-    if (!navigator.onLine) return { kind: "offline" };
-    const message = err instanceof Error ? err.message : String(err);
-    if (/\b401\b/.test(message)) {
-      return { kind: "error", message: "GitHub rejected the token." };
-    }
-    if (/\b404\b/.test(message)) {
-      return { kind: "error", message: "Repo or branch not found." };
-    }
-    if (/\b403\b/.test(message)) {
-      return { kind: "error", message: "The token cannot write to that repo." };
-    }
-    return { kind: "error", message };
+    return describeSyncError(err, navigator.onLine);
   }
 
   private setState(s: SyncState): void {

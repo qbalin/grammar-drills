@@ -45,3 +45,9 @@ export {
 } from "./session.js";
 export type { StorageAdapter } from "./storage/index.js";
 export { GitHubStorage, type GitHubConfig } from "./storage/github.js";
+export {
+  PUSH_DELAY_MS,
+  describeSyncError,
+  syncStateLine,
+  type SyncState,
+} from "./storage/sync.js";
