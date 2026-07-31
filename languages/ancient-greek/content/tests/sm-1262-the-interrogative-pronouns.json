@@ -1,0 +1,645 @@
+[
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t1",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "Who among the citizens betrayed the city to the enemy?",
+    "answer": "τίς τῶν πολῑτῶν τὴν πόλιν τοῖς πολεμίοις προέδωκεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "τῶν",
+     "πολῑτῶν",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "προέδωκεν"
+    ]
+   },
+   {
+    "prompt": "What did the general say to the soldiers before the battle?",
+    "answer": "τί ὁ στρατηγὸς τοῖς στρατιώταις πρὸ τῆς μάχης εἶπεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ὁ",
+     "στρατηγὸς",
+     "τοῖς",
+     "στρατιώταις",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "Whom do you fear, now that the tyrant is dead?",
+    "answer": "τίνα φοβῇ, τοῦ τυράννου τεθνηκότος;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "φοβῇ",
+     "τοῦ",
+     "τυράννου",
+     "τεθνηκότος"
+    ]
+   },
+   {
+    "prompt": "By what means did they capture so great a city?",
+    "answer": "τίνι τρόπῳ τοσαύτην πόλιν εἷλον;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνι",
+     "τρόπῳ",
+     "τοσαύτην",
+     "πόλιν",
+     "εἷλον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t2",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "I do not know who wrote these things about the war.",
+    "answer": "οὐκ οἶδα ὅστις ταῦτα περὶ τοῦ πολέμου ἔγραψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "οἶδα",
+     "ὅστις",
+     "ταῦτα",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "ἔγραψεν"
+    ]
+   },
+   {
+    "prompt": "Consider what envy is and what shame is.",
+    "answer": "σκόπει ὅ τι ἐστὶν ὁ φθόνος καὶ ὅ τι ἡ αἰσχύνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκόπει",
+     "ὅ",
+     "τι",
+     "ἐστὶν",
+     "ὁ",
+     "φθόνος",
+     "καὶ",
+     "ἡ",
+     "αἰσχύνη"
+    ]
+   },
+   {
+    "prompt": "The judges asked whom the woman had accused.",
+    "answer": "οἱ δικασταὶ ἤροντο ὅντινα ἡ γυνὴ ᾐτιάσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ἤροντο",
+     "ὅντινα",
+     "ἡ",
+     "γυνὴ",
+     "ᾐτιάσατο"
+    ]
+   },
+   {
+    "prompt": "It is unclear by what means the enemy crossed the river.",
+    "answer": "ἄδηλόν ἐστιν ὅτῳ τρόπῳ οἱ πολέμιοι τὸν ποταμὸν διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄδηλόν",
+     "ἐστιν",
+     "ὅτῳ",
+     "τρόπῳ",
+     "οἱ",
+     "πολέμιοι",
+     "τὸν",
+     "ποταμὸν",
+     "διέβησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t3",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "What man would endure such disgrace?",
+    "answer": "τίς ἀνὴρ τοιαύτην αἰσχύνην ἂν ὑπομείνειεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἀνὴρ",
+     "τοιαύτην",
+     "αἰσχύνην",
+     "ἂν",
+     "ὑπομείνειεν"
+    ]
+   },
+   {
+    "prompt": "In what city do laws such as these prevail?",
+    "answer": "ἐν τίνι πόλει τοιοῦτοι νόμοι κρατοῦσιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τίνι",
+     "πόλει",
+     "τοιοῦτοι",
+     "νόμοι",
+     "κρατοῦσιν"
+    ]
+   },
+   {
+    "prompt": "What hope remains for us, now that the allies have fled?",
+    "answer": "τίς ἐλπὶς ἡμῖν λείπεται, τῶν συμμάχων πεφευγότων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἐλπὶς",
+     "ἡμῖν",
+     "λείπεται",
+     "τῶν",
+     "συμμάχων",
+     "πεφευγότων"
+    ]
+   },
+   {
+    "prompt": "Which of the gods did the poet honor most?",
+    "answer": "τίνα τῶν θεῶν ὁ ποιητὴς μάλιστα ἐτίμησεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "τῶν",
+     "θεῶν",
+     "ὁ",
+     "ποιητὴς",
+     "μάλιστα",
+     "ἐτίμησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t4",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "What is justice, and what is a good citizen?",
+    "answer": "τί ἐστιν ἡ δικαιοσύνη, τίς δὲ ὁ ἀγαθὸς πολίτης;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ἐστιν",
+     "ἡ",
+     "δικαιοσύνη",
+     "τίς",
+     "δὲ",
+     "ὁ",
+     "ἀγαθὸς",
+     "πολίτης"
+    ]
+   },
+   {
+    "prompt": "But these things that you say, what are they?",
+    "answer": "ταῦτα δὲ ἃ λέγεις τί ἐστιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "δὲ",
+     "ἃ",
+     "λέγεις",
+     "τί",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "What are these things that the ambassadors announce?",
+    "answer": "τίνα ἐστὶ ταῦτα ἃ οἱ πρέσβεις ἀγγέλλουσιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "ἐστὶ",
+     "ταῦτα",
+     "ἃ",
+     "οἱ",
+     "πρέσβεις",
+     "ἀγγέλλουσιν"
+    ]
+   },
+   {
+    "prompt": "I asked what wisdom is and who the wise man is.",
+    "answer": "ἠρόμην ὅ τι ἐστὶν ἡ σοφία καὶ ὅστις ὁ σοφός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠρόμην",
+     "ὅ",
+     "τι",
+     "ἐστὶν",
+     "ἡ",
+     "σοφία",
+     "καὶ",
+     "ὅστις",
+     "ὁ",
+     "σοφός"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t5",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "Whom did you see fleeing through the marketplace?",
+    "answer": "τίνα εἶδες διὰ τῆς ἀγορᾶς φεύγοντα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "εἶδες",
+     "διὰ",
+     "τῆς",
+     "ἀγορᾶς",
+     "φεύγοντα"
+    ]
+   },
+   {
+    "prompt": "What shall we do, surrounded on all sides by enemies?",
+    "answer": "τί ποιήσομεν, ὑπὸ τῶν πολεμίων πανταχόθεν κυκλωθέντες;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ποιήσομεν",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "πανταχόθεν",
+     "κυκλωθέντες"
+    ]
+   },
+   {
+    "prompt": "Nobody knew whose the corpse lying near the gates was.",
+    "answer": "οὐδεὶς ᾔδει ὅτου εἴη ὁ νεκρὸς ὁ πρὸς ταῖς πύλαις κείμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ᾔδει",
+     "ὅτου",
+     "εἴη",
+     "ὁ",
+     "νεκρὸς",
+     "πρὸς",
+     "ταῖς",
+     "πύλαις",
+     "κείμενος"
+    ]
+   },
+   {
+    "prompt": "For what reason did the king send so many gifts?",
+    "answer": "τίνος ἕνεκα ὁ βασιλεὺς τοσαῦτα δῶρα ἔπεμψεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνος",
+     "ἕνεκα",
+     "ὁ",
+     "βασιλεὺς",
+     "τοσαῦτα",
+     "δῶρα",
+     "ἔπεμψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t6",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "Who will save us, if the general falls in the battle?",
+    "answer": "τίς ἡμᾶς σώσει, ἐὰν ὁ στρατηγὸς ἐν τῇ μάχῃ πέσῃ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἡμᾶς",
+     "σώσει",
+     "ἐὰν",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "πέσῃ"
+    ]
+   },
+   {
+    "prompt": "Ask the old man what befell the city long ago.",
+    "answer": "ἐροῦ τὸν γέροντα ὅ τι τῇ πόλει πάλαι συνέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐροῦ",
+     "τὸν",
+     "γέροντα",
+     "ὅ",
+     "τι",
+     "τῇ",
+     "πόλει",
+     "πάλαι",
+     "συνέβη"
+    ]
+   },
+   {
+    "prompt": "To whom did the dying man entrust his children?",
+    "answer": "τίνι ὁ ἀποθνῄσκων τοὺς παῖδας ἐπέτρεψεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνι",
+     "ὁ",
+     "ἀποθνῄσκων",
+     "τοὺς",
+     "παῖδας",
+     "ἐπέτρεψεν"
+    ]
+   },
+   {
+    "prompt": "Whose are these horses that stand before the tent?",
+    "answer": "τίνος οἱ ἵπποι εἰσὶν οὗτοι οἱ πρὸ τῆς σκηνῆς ἑστῶτες;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνος",
+     "οἱ",
+     "ἵπποι",
+     "εἰσὶν",
+     "οὗτοι",
+     "πρὸ",
+     "τῆς",
+     "σκηνῆς",
+     "ἑστῶτες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t7",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "What did the ambassadors want to accomplish by these words?",
+    "answer": "τί ἐβούλοντο οἱ πρέσβεις τούτοις τοῖς λόγοις διαπράξασθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ἐβούλοντο",
+     "οἱ",
+     "πρέσβεις",
+     "τούτοις",
+     "τοῖς",
+     "λόγοις",
+     "διαπράξασθαι"
+    ]
+   },
+   {
+    "prompt": "Who among the Thasians handed over the keys of the city?",
+    "answer": "τίς τῶν Θασίων τὰς κλεῖς τῆς πόλεως παρέδωκεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "τῶν",
+     "Θασίων",
+     "τὰς",
+     "κλεῖς",
+     "τῆς",
+     "πόλεως",
+     "παρέδωκεν"
+    ]
+   },
+   {
+    "prompt": "I do not know what the wealthy man promised to the crowd.",
+    "answer": "οὐκ οἶδα ὅ τι ὁ ἀφνειὸς τῷ ὄχλῳ ὑπέσχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "οἶδα",
+     "ὅ",
+     "τι",
+     "ὁ",
+     "ἀφνειὸς",
+     "τῷ",
+     "ὄχλῳ",
+     "ὑπέσχετο"
+    ]
+   },
+   {
+    "prompt": "What sort of art teaches men to speak justly?",
+    "answer": "τίς ἡ τέχνη ἡ διδάσκουσα τοὺς ἀνθρώπους δικαίως λέγειν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἡ",
+     "τέχνη",
+     "διδάσκουσα",
+     "τοὺς",
+     "ἀνθρώπους",
+     "δικαίως",
+     "λέγειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t8",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "Whom do you think the soldiers will choose as general?",
+    "answer": "τίνα οἴει τοὺς στρατιώτας στρατηγὸν αἱρήσεσθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "οἴει",
+     "τοὺς",
+     "στρατιώτας",
+     "στρατηγὸν",
+     "αἱρήσεσθαι"
+    ]
+   },
+   {
+    "prompt": "Considering what envy really is, he kept silent.",
+    "answer": "σκοπῶν ὅ τι εἴη ὁ φθόνος ἐσιώπα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκοπῶν",
+     "ὅ",
+     "τι",
+     "εἴη",
+     "ὁ",
+     "φθόνος",
+     "ἐσιώπα"
+    ]
+   },
+   {
+    "prompt": "Who marveled at the starry heaven during the night?",
+    "answer": "τίς ἐθαύμασε τὸν ἀστερόεντα οὐρανὸν τῆς νυκτός;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἐθαύμασε",
+     "τὸν",
+     "ἀστερόεντα",
+     "οὐρανὸν",
+     "τῆς",
+     "νυκτός"
+    ]
+   },
+   {
+    "prompt": "I asked what the Armenian intended to do.",
+    "answer": "ἠρόμην ὅ τι ὁ Ἀρμένιος μέλλοι πράττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠρόμην",
+     "ὅ",
+     "τι",
+     "ὁ",
+     "Ἀρμένιος",
+     "μέλλοι",
+     "πράττειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t9",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "What did the messenger announce concerning the battle?",
+    "answer": "τί ὁ ἄγγελος περὶ τῆς μάχης ἀπήγγειλεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ὁ",
+     "ἄγγελος",
+     "περὶ",
+     "τῆς",
+     "μάχης",
+     "ἀπήγγειλεν"
+    ]
+   },
+   {
+    "prompt": "Who guarded the gates while the citizens were sleeping?",
+    "answer": "τίς τὰς πύλας ἐφύλαττε τῶν πολιτῶν καθευδόντων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "τὰς",
+     "πύλας",
+     "ἐφύλαττε",
+     "τῶν",
+     "πολιτῶν",
+     "καθευδόντων"
+    ]
+   },
+   {
+    "prompt": "Say who the tyrant was that seized the acropolis.",
+    "answer": "εἰπὲ τίς ὁ τύραννος ἦν ὁ τὴν ἀκρόπολιν καταλαβών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰπὲ",
+     "τίς",
+     "ὁ",
+     "τύραννος",
+     "ἦν",
+     "τὴν",
+     "ἀκρόπολιν",
+     "καταλαβών"
+    ]
+   },
+   {
+    "prompt": "The judges wondered why the accuser wrote such an indictment.",
+    "answer": "οἱ δικασταὶ ἐθαύμαζον διὰ τί ὁ κατήγορος τοιαύτην γραφὴν ἔγραψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ἐθαύμαζον",
+     "διὰ",
+     "τί",
+     "ὁ",
+     "κατήγορος",
+     "τοιαύτην",
+     "γραφὴν",
+     "ἔγραψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1262-the-interrogative-pronouns-t10",
+  "sectionId": "sm-1262-the-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "What is friendship, and who is a friend?",
+    "answer": "τί ἡ φιλία, τίς ὁ φίλος;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ἡ",
+     "φιλία",
+     "τίς",
+     "ὁ",
+     "φίλος"
+    ]
+   },
+   {
+    "prompt": "Who sent these letters to the Armenian king?",
+    "answer": "τίς ταύτας τὰς ἐπιστολὰς τῷ Ἀρμενίῳ βασιλεῖ ἔπεμψεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ταύτας",
+     "τὰς",
+     "ἐπιστολὰς",
+     "τῷ",
+     "Ἀρμενίῳ",
+     "βασιλεῖ",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "We do not know whom the assembly will send as ambassador.",
+    "answer": "οὐκ ἴσμεν ὅντινα ἡ ἐκκλησία πρεσβευτὴν πέμψει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἴσμεν",
+     "ὅντινα",
+     "ἡ",
+     "ἐκκλησία",
+     "πρεσβευτὴν",
+     "πέμψει"
+    ]
+   },
+   {
+    "prompt": "What frightened the crowd gathered in the marketplace?",
+    "answer": "τί τὸν ὄχλον τὸν ἐν τῇ ἀγορᾷ συνειλεγμένον ἐφόβησεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "τὸν",
+     "ὄχλον",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "συνειλεγμένον",
+     "ἐφόβησεν"
+    ]
+   }
+  ]
+ }
+]
