@@ -1,0 +1,507 @@
+[
+ {
+  "id": "sm-1665-syntax-of-prepositions-1665-t1",
+  "sectionId": "sm-1665-syntax-of-prepositions-1665",
+  "questions": [
+   {
+    "prompt": "About virtue the old man wished to converse with the young men.",
+    "answer": "ἀρετῆς πέρι ὁ γέρων τοῖς νεανίαις διαλέγεσθαι ἐβούλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀρετῆς",
+     "πέρι",
+     "ὁ",
+     "γέρων",
+     "τοῖς",
+     "νεανίαις",
+     "διαλέγεσθαι",
+     "ἐβούλετο"
+    ]
+   },
+   {
+    "prompt": "The general understands nothing about naval battles.",
+    "answer": "ὁ στρατηγὸς ναυμαχιῶν πέρι οὐδὲν ἐπαΐει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ναυμαχιῶν",
+     "πέρι",
+     "οὐδὲν",
+     "ἐπαΐει"
+    ]
+   },
+   {
+    "prompt": "Concerning both the holy and the unholy the priest spoke.",
+    "answer": "τοῦ ὁσίου τε πέρι καὶ τοῦ ἀνοσίου ὁ ἱερεὺς ἔλεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "ὁσίου",
+     "τε",
+     "πέρι",
+     "καὶ",
+     "ἀνοσίου",
+     "ὁ",
+     "ἱερεὺς",
+     "ἔλεξεν"
+    ]
+   },
+   {
+    "prompt": "About these things I know nothing, neither great nor small.",
+    "answer": "τούτων πέρι οὐδὲν οἶδα, οὔτε μέγα οὔτε μικρόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτων",
+     "πέρι",
+     "οὐδὲν",
+     "οἶδα",
+     "οὔτε",
+     "μέγα",
+     "μικρόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1665-syntax-of-prepositions-1665-t2",
+  "sectionId": "sm-1665-syntax-of-prepositions-1665",
+  "questions": [
+   {
+    "prompt": "For the sake of freedom the citizens fought at sea against the tyrant.",
+    "answer": "τῆς ἐλευθερίας ἕνεκα οἱ πολῖται πρὸς τὸν τύραννον ἐναυμάχησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "ἐλευθερίας",
+     "ἕνεκα",
+     "οἱ",
+     "πολῖται",
+     "πρὸς",
+     "τὸν",
+     "τύραννον",
+     "ἐναυμάχησαν"
+    ]
+   },
+   {
+    "prompt": "For the sake of money he betrayed the city.",
+    "answer": "χρημάτων ἕνεκα τὴν πόλιν προέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρημάτων",
+     "ἕνεκα",
+     "τὴν",
+     "πόλιν",
+     "προέδωκεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers endured many things for the sake of glory.",
+    "answer": "οἱ στρατιῶται πολλὰ δόξης ἕνεκα ὑπέμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πολλὰ",
+     "δόξης",
+     "ἕνεκα",
+     "ὑπέμειναν"
+    ]
+   },
+   {
+    "prompt": "For the sake of the children the mother endured these dangers.",
+    "answer": "τῶν παίδων ἕνεκα ἡ μήτηρ τούτους τοὺς κινδύνους ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "παίδων",
+     "ἕνεκα",
+     "ἡ",
+     "μήτηρ",
+     "τούτους",
+     "τοὺς",
+     "κινδύνους",
+     "ὑπέμεινεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1665-syntax-of-prepositions-1665-t3",
+  "sectionId": "sm-1665-syntax-of-prepositions-1665",
+  "questions": [
+   {
+    "prompt": "For the sake of the gods honor your parents.",
+    "answer": "τῶν θεῶν χάριν τοὺς γονέας τίμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "θεῶν",
+     "χάριν",
+     "τοὺς",
+     "γονέας",
+     "τίμα"
+    ]
+   },
+   {
+    "prompt": "He said these things for the sake of persuasion, not of truth.",
+    "answer": "πειθοῦς χάριν, οὐκ ἀληθείας, ταῦτα εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πειθοῦς",
+     "χάριν",
+     "οὐκ",
+     "ἀληθείας",
+     "ταῦτα",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "For the sake of what did you come to the assembly?",
+    "answer": "τίνος χάριν εἰς τὴν ἐκκλησίαν ἦλθες;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνος",
+     "χάριν",
+     "εἰς",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἦλθες"
+    ]
+   },
+   {
+    "prompt": "For the sake of my friend I remained in the danger.",
+    "answer": "τοῦ φίλου χάριν ἐν τῷ κινδύνῳ ἔμεινα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "φίλου",
+     "χάριν",
+     "ἐν",
+     "τῷ",
+     "κινδύνῳ",
+     "ἔμεινα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1665-syntax-of-prepositions-1665-t4",
+  "sectionId": "sm-1665-syntax-of-prepositions-1665",
+  "questions": [
+   {
+    "prompt": "Without the gods no one accomplishes great deeds.",
+    "answer": "θεῶν ἄνευ οὐδεὶς μεγάλα ἔργα πράττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θεῶν",
+     "ἄνευ",
+     "οὐδεὶς",
+     "μεγάλα",
+     "ἔργα",
+     "πράττει"
+    ]
+   },
+   {
+    "prompt": "Without justice the city cannot be saved.",
+    "answer": "δίκης ἄνευ ἡ πόλις οὐ δύναται σῴζεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δίκης",
+     "ἄνευ",
+     "ἡ",
+     "πόλις",
+     "οὐ",
+     "δύναται",
+     "σῴζεσθαι"
+    ]
+   },
+   {
+    "prompt": "Without the general's command the soldiers did not attack.",
+    "answer": "τοῦ στρατηγοῦ κελεύσματος ἄνευ οἱ στρατιῶται οὐκ ἐπέθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "κελεύσματος",
+     "ἄνευ",
+     "οἱ",
+     "στρατιῶται",
+     "οὐκ",
+     "ἐπέθεντο"
+    ]
+   },
+   {
+    "prompt": "Without toil there is no virtue for men.",
+    "answer": "πόνου ἄνευ οὐκ ἔστιν ἀρετὴ τοῖς ἀνθρώποις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόνου",
+     "ἄνευ",
+     "οὐκ",
+     "ἔστιν",
+     "ἀρετὴ",
+     "τοῖς",
+     "ἀνθρώποις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1665-syntax-of-prepositions-1665-t5",
+  "sectionId": "sm-1665-syntax-of-prepositions-1665",
+  "questions": [
+   {
+    "prompt": "Socrates questioned the sophist about courage and cowardice.",
+    "answer": "τῆς ἀνδρείας τε πέρι καὶ τῆς δειλίας ὁ Σωκράτης τὸν σοφιστὴν ἤρετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "ἀνδρείας",
+     "τε",
+     "πέρι",
+     "καὶ",
+     "δειλίας",
+     "ὁ",
+     "Σωκράτης",
+     "τὸν",
+     "σοφιστὴν",
+     "ἤρετο"
+    ]
+   },
+   {
+    "prompt": "About the voyage the sailors were disputing.",
+    "answer": "τοῦ πλοῦ πέρι οἱ ναῦται ἠμφισβήτουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πλοῦ",
+     "πέρι",
+     "οἱ",
+     "ναῦται",
+     "ἠμφισβήτουν"
+    ]
+   },
+   {
+    "prompt": "The wise man cares little about wealth.",
+    "answer": "ὁ σοφὸς πλούτου πέρι ὀλίγον φροντίζει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "πλούτου",
+     "πέρι",
+     "ὀλίγον",
+     "φροντίζει"
+    ]
+   },
+   {
+    "prompt": "About these matters we shall deliberate tomorrow.",
+    "answer": "τούτων πέρι αὔριον βουλευσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτων",
+     "πέρι",
+     "αὔριον",
+     "βουλευσόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1665-syntax-of-prepositions-1665-t6",
+  "sectionId": "sm-1665-syntax-of-prepositions-1665",
+  "questions": [
+   {
+    "prompt": "For the sake of safety they abandoned their homes.",
+    "answer": "σωτηρίας ἕνεκα τὰς οἰκίας κατέλιπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σωτηρίας",
+     "ἕνεκα",
+     "τὰς",
+     "οἰκίας",
+     "κατέλιπον"
+    ]
+   },
+   {
+    "prompt": "For the sake of peace the ambassadors conversed about the treaty.",
+    "answer": "εἰρήνης χάριν οἱ πρέσβεις τῶν σπονδῶν πέρι διελέχθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰρήνης",
+     "χάριν",
+     "οἱ",
+     "πρέσβεις",
+     "τῶν",
+     "σπονδῶν",
+     "πέρι",
+     "διελέχθησαν"
+    ]
+   },
+   {
+    "prompt": "About wisdom the philosopher wrote many things.",
+    "answer": "σοφίας πέρι ὁ φιλόσοφος πολλὰ ἔγραψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφίας",
+     "πέρι",
+     "ὁ",
+     "φιλόσοφος",
+     "πολλὰ",
+     "ἔγραψεν"
+    ]
+   },
+   {
+    "prompt": "For the sake of the fatherland the young men died bravely.",
+    "answer": "τῆς πατρίδος ἕνεκα οἱ νεανίαι ἀνδρείως ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "πατρίδος",
+     "ἕνεκα",
+     "οἱ",
+     "νεανίαι",
+     "ἀνδρείως",
+     "ἀπέθανον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1665-syntax-of-prepositions-1665-t7",
+  "sectionId": "sm-1665-syntax-of-prepositions-1665",
+  "questions": [
+   {
+    "prompt": "Concerning both the just and the unjust the philosophers disputed for a long time.",
+    "answer": "τοῦ δικαίου τε πέρι καὶ τοῦ ἀδίκου οἱ φιλόσοφοι πολὺν χρόνον ἤρισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "δικαίου",
+     "τε",
+     "πέρι",
+     "καὶ",
+     "ἀδίκου",
+     "οἱ",
+     "φιλόσοφοι",
+     "πολὺν",
+     "χρόνον",
+     "ἤρισαν"
+    ]
+   },
+   {
+    "prompt": "Concerning both the soul and the body the physician spoke wisely.",
+    "answer": "τῆς ψυχῆς τε πέρι καὶ τοῦ σώματος ὁ ἰατρὸς σοφῶς εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "ψυχῆς",
+     "τε",
+     "πέρι",
+     "καὶ",
+     "τοῦ",
+     "σώματος",
+     "ὁ",
+     "ἰατρὸς",
+     "σοφῶς",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "About wisdom the young men often questioned Socrates.",
+    "answer": "σοφίας πέρι οἱ νέοι πολλάκις τὸν Σωκράτη ἤροντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφίας",
+     "πέρι",
+     "οἱ",
+     "νέοι",
+     "πολλάκις",
+     "τὸν",
+     "Σωκράτη",
+     "ἤροντο"
+    ]
+   },
+   {
+    "prompt": "While the enemy were fleeing, we deliberated about peace.",
+    "answer": "τῶν πολεμίων φευγόντων εἰρήνης πέρι ἐβουλευόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "φευγόντων",
+     "εἰρήνης",
+     "πέρι",
+     "ἐβουλευόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1665-syntax-of-prepositions-1665-t8",
+  "sectionId": "sm-1665-syntax-of-prepositions-1665",
+  "questions": [
+   {
+    "prompt": "For the sake of glory the youths endured many dangers.",
+    "answer": "δόξης ἕνεκα οἱ νεανίσκοι πολλοὺς κινδύνους ὑπέμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δόξης",
+     "ἕνεκα",
+     "οἱ",
+     "νεανίσκοι",
+     "πολλοὺς",
+     "κινδύνους",
+     "ὑπέμειναν"
+    ]
+   },
+   {
+    "prompt": "For the sake of the goddess the priests sacrificed a beautiful bull.",
+    "answer": "τῆς θεᾶς χάριν οἱ ἱερεῖς καλὸν ταῦρον ἔθυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "θεᾶς",
+     "χάριν",
+     "οἱ",
+     "ἱερεῖς",
+     "καλὸν",
+     "ταῦρον",
+     "ἔθυσαν"
+    ]
+   },
+   {
+    "prompt": "Without weapons the soldiers, though brave, could not conquer.",
+    "answer": "ὅπλων ἄνευ οἱ στρατιῶται, καίπερ ἀνδρεῖοι ὄντες, νικῆσαι οὐκ ἐδύναντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπλων",
+     "ἄνευ",
+     "οἱ",
+     "στρατιῶται",
+     "καίπερ",
+     "ἀνδρεῖοι",
+     "ὄντες",
+     "νικῆσαι",
+     "οὐκ",
+     "ἐδύναντο"
+    ]
+   },
+   {
+    "prompt": "For the sake of knowledge the philosopher journeyed to Egypt.",
+    "answer": "ἐπιστήμης χάριν ὁ φιλόσοφος εἰς Αἴγυπτον ἀπεδήμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπιστήμης",
+     "χάριν",
+     "ὁ",
+     "φιλόσοφος",
+     "εἰς",
+     "Αἴγυπτον",
+     "ἀπεδήμησεν"
+    ]
+   }
+  ]
+ }
+]

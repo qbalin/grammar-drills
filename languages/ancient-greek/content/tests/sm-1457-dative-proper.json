@@ -1,0 +1,501 @@
+[
+ {
+  "id": "sm-1457-dative-proper-t1",
+  "sectionId": "sm-1457-dative-proper",
+  "questions": [
+   {
+    "prompt": "The general obeyed the laws of the city.",
+    "answer": "ὁ στρατηγὸς τοῖς τῆς πόλεως νόμοις ἐπείθετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "νόμοις",
+     "ἐπείθετο"
+    ]
+   },
+   {
+    "prompt": "We came to the aid of our allies who were in danger.",
+    "answer": "τοῖς συμμάχοις κινδυνεύουσιν ἐβοηθήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "συμμάχοις",
+     "κινδυνεύουσιν",
+     "ἐβοηθήσαμεν"
+    ]
+   },
+   {
+    "prompt": "This man is a friend to the Athenians and an enemy to the Spartans.",
+    "answer": "οὗτος τοῖς μὲν Ἀθηναίοις φίλος, τοῖς δὲ Λακεδαιμονίοις ἐχθρός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "τοῖς",
+     "μὲν",
+     "Ἀθηναίοις",
+     "φίλος",
+     "δὲ",
+     "Λακεδαιμονίοις",
+     "ἐχθρός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The children followed their father through the marketplace.",
+    "answer": "οἱ παῖδες τῷ πατρὶ διὰ τῆς ἀγορᾶς ἠκολούθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τῷ",
+     "πατρὶ",
+     "διὰ",
+     "τῆς",
+     "ἀγορᾶς",
+     "ἠκολούθουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1457-dative-proper-t2",
+  "sectionId": "sm-1457-dative-proper",
+  "questions": [
+   {
+    "prompt": "The old man has many friends in the city.",
+    "answer": "τῷ γέροντι πολλοὶ φίλοι εἰσὶν ἐν τῇ πόλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "γέροντι",
+     "πολλοὶ",
+     "φίλοι",
+     "εἰσὶν",
+     "ἐν",
+     "τῇ",
+     "πόλει"
+    ]
+   },
+   {
+    "prompt": "This deed is like the deeds of the ancients.",
+    "answer": "τοῦτο τὸ ἔργον ὅμοιόν ἐστι τοῖς τῶν παλαιῶν ἔργοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ἔργον",
+     "ὅμοιόν",
+     "ἐστι",
+     "τοῖς",
+     "τῶν",
+     "παλαιῶν",
+     "ἔργοις"
+    ]
+   },
+   {
+    "prompt": "The soldiers trusted their leader, though the danger was great.",
+    "answer": "οἱ στρατιῶται τῷ ἡγεμόνι ἐπίστευον, καίπερ μεγάλου ὄντος τοῦ κινδύνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τῷ",
+     "ἡγεμόνι",
+     "ἐπίστευον",
+     "καίπερ",
+     "μεγάλου",
+     "ὄντος",
+     "τοῦ",
+     "κινδύνου"
+    ]
+   },
+   {
+    "prompt": "A great name remains to the man who died nobly.",
+    "answer": "τῷ καλῶς ἀποθανόντι μέγα ὄνομα μένει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "καλῶς",
+     "ἀποθανόντι",
+     "μέγα",
+     "ὄνομα",
+     "μένει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1457-dative-proper-t3",
+  "sectionId": "sm-1457-dative-proper",
+  "questions": [
+   {
+    "prompt": "The poet's songs please everyone.",
+    "answer": "τὰ τοῦ ποιητοῦ ᾄσματα πᾶσιν ἀρέσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τοῦ",
+     "ποιητοῦ",
+     "ᾄσματα",
+     "πᾶσιν",
+     "ἀρέσκει"
+    ]
+   },
+   {
+    "prompt": "The gods are angry at the impious.",
+    "answer": "οἱ θεοὶ τοῖς ἀσεβέσιν ὀργίζονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "τοῖς",
+     "ἀσεβέσιν",
+     "ὀργίζονται"
+    ]
+   },
+   {
+    "prompt": "The mother prepared a fine dinner for her guests.",
+    "answer": "ἡ μήτηρ τοῖς ξένοις καλὸν δεῖπνον παρεσκεύασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "τοῖς",
+     "ξένοις",
+     "καλὸν",
+     "δεῖπνον",
+     "παρεσκεύασεν"
+    ]
+   },
+   {
+    "prompt": "The judge will not yield to the threats of the powerful.",
+    "answer": "ὁ δικαστὴς ταῖς τῶν δυνατῶν ἀπειλαῖς οὐκ εἴξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστὴς",
+     "ταῖς",
+     "τῶν",
+     "δυνατῶν",
+     "ἀπειλαῖς",
+     "οὐκ",
+     "εἴξει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1457-dative-proper-t4",
+  "sectionId": "sm-1457-dative-proper",
+  "questions": [
+   {
+    "prompt": "It seemed good to the citizens to send envoys to the king.",
+    "answer": "ἔδοξε τοῖς πολίταις πρέσβεις πρὸς τὸν βασιλέα πέμπειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξε",
+     "τοῖς",
+     "πολίταις",
+     "πρέσβεις",
+     "πρὸς",
+     "τὸν",
+     "βασιλέα",
+     "πέμπειν"
+    ]
+   },
+   {
+    "prompt": "It is not possible for the coward to set up a trophy.",
+    "answer": "οὐκ ἔξεστι τῷ δειλῷ τρόπαιον ἀναστῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔξεστι",
+     "τῷ",
+     "δειλῷ",
+     "τρόπαιον",
+     "ἀναστῆσαι"
+    ]
+   },
+   {
+    "prompt": "The wise man is content with little.",
+    "answer": "ὁ σοφὸς ὀλίγοις ἀρκεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "ὀλίγοις",
+     "ἀρκεῖται"
+    ]
+   },
+   {
+    "prompt": "These things happened to us against our expectation.",
+    "answer": "ταῦτα ἡμῖν παρὰ δόξαν συνέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἡμῖν",
+     "παρὰ",
+     "δόξαν",
+     "συνέβη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1457-dative-proper-t5",
+  "sectionId": "sm-1457-dative-proper",
+  "questions": [
+   {
+    "prompt": "Freedom is dear to all the Greeks.",
+    "answer": "ἡ ἐλευθερία πᾶσι τοῖς Ἕλλησι φίλη ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐλευθερία",
+     "πᾶσι",
+     "τοῖς",
+     "Ἕλλησι",
+     "φίλη",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The land is common to both the victors and the vanquished.",
+    "answer": "ἡ γῆ κοινή ἐστι τοῖς τε νικῶσι καὶ τοῖς νικωμένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γῆ",
+     "κοινή",
+     "ἐστι",
+     "τοῖς",
+     "τε",
+     "νικῶσι",
+     "καὶ",
+     "νικωμένοις"
+    ]
+   },
+   {
+    "prompt": "This road is hard for the travelers to walk.",
+    "answer": "αὕτη ἡ ὁδὸς χαλεπὴ τοῖς ὁδοιπόροις βαδίζειν ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "ὁδὸς",
+     "χαλεπὴ",
+     "τοῖς",
+     "ὁδοιπόροις",
+     "βαδίζειν",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The messenger brought good news to the general.",
+    "answer": "ὁ ἄγγελος ἀγαθὰ τῷ στρατηγῷ ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἀγαθὰ",
+     "τῷ",
+     "στρατηγῷ",
+     "ἤγγειλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1457-dative-proper-t6",
+  "sectionId": "sm-1457-dative-proper",
+  "questions": [
+   {
+    "prompt": "Many envy the man who is fortunate.",
+    "answer": "πολλοὶ τῷ εὐτυχοῦντι φθονοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὶ",
+     "τῷ",
+     "εὐτυχοῦντι",
+     "φθονοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The tyrant threatened the citizens with death.",
+    "answer": "ὁ τύραννος τοῖς πολίταις θάνατον ἠπείλησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τοῖς",
+     "πολίταις",
+     "θάνατον",
+     "ἠπείλησεν"
+    ]
+   },
+   {
+    "prompt": "The slave served his master faithfully for many years.",
+    "answer": "ὁ δοῦλος τῷ δεσπότῃ πιστῶς πολλὰ ἔτη ἐδούλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "τῷ",
+     "δεσπότῃ",
+     "πιστῶς",
+     "πολλὰ",
+     "ἔτη",
+     "ἐδούλευσεν"
+    ]
+   },
+   {
+    "prompt": "The son resembles his father in both body and soul.",
+    "answer": "ὁ υἱὸς τῷ πατρὶ καὶ τὸ σῶμα καὶ τὴν ψυχὴν ἔοικεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "υἱὸς",
+     "τῷ",
+     "πατρὶ",
+     "καὶ",
+     "τὸ",
+     "σῶμα",
+     "τὴν",
+     "ψυχὴν",
+     "ἔοικεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1457-dative-proper-t7",
+  "sectionId": "sm-1457-dative-proper",
+  "questions": [
+   {
+    "prompt": "The judges trusted the witnesses who had been present.",
+    "answer": "οἱ δικασταὶ τοῖς μάρτυσι τοῖς παροῦσιν ἐπίστευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τοῖς",
+     "μάρτυσι",
+     "παροῦσιν",
+     "ἐπίστευον"
+    ]
+   },
+   {
+    "prompt": "This gift is dear to the goddess.",
+    "answer": "τοῦτο τὸ δῶρον τῇ θεᾷ φίλον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "δῶρον",
+     "τῇ",
+     "θεᾷ",
+     "φίλον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "After the battle the physician healed the wounds for the soldiers.",
+    "answer": "μετὰ τὴν μάχην ὁ ἰατρὸς τοῖς στρατιώταις τὰ τραύματα ἰάσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "ὁ",
+     "ἰατρὸς",
+     "τοῖς",
+     "στρατιώταις",
+     "τὰ",
+     "τραύματα",
+     "ἰάσατο"
+    ]
+   },
+   {
+    "prompt": "For cowards it is impossible to conquer the enemy.",
+    "answer": "τοῖς δειλοῖς ἀδύνατον τοὺς πολεμίους νικῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "δειλοῖς",
+     "ἀδύνατον",
+     "τοὺς",
+     "πολεμίους",
+     "νικῆσαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1457-dative-proper-t8",
+  "sectionId": "sm-1457-dative-proper",
+  "questions": [
+   {
+    "prompt": "The Boeotians eagerly came to the aid of their allies.",
+    "answer": "οἱ Βοιωτοὶ τοῖς συμμάχοις προθύμως ἐβοήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Βοιωτοὶ",
+     "τοῖς",
+     "συμμάχοις",
+     "προθύμως",
+     "ἐβοήθησαν"
+    ]
+   },
+   {
+    "prompt": "Wisdom is useful to those wishing to rule well.",
+    "answer": "ἡ σοφία χρησίμη ἐστὶ τοῖς καλῶς ἄρχειν βουλομένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφία",
+     "χρησίμη",
+     "ἐστὶ",
+     "τοῖς",
+     "καλῶς",
+     "ἄρχειν",
+     "βουλομένοις"
+    ]
+   },
+   {
+    "prompt": "The slave always served his master faithfully.",
+    "answer": "ὁ δοῦλος τῷ δεσπότῃ πιστῶς ἀεὶ ὑπηρέτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "τῷ",
+     "δεσπότῃ",
+     "πιστῶς",
+     "ἀεὶ",
+     "ὑπηρέτει"
+    ]
+   },
+   {
+    "prompt": "As the enemy were approaching, these things befell the king contrary to hope.",
+    "answer": "τῶν πολεμίων προσιόντων ταῦτα τῷ βασιλεῖ παρὰ ἐλπίδα συνέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "προσιόντων",
+     "ταῦτα",
+     "τῷ",
+     "βασιλεῖ",
+     "παρὰ",
+     "ἐλπίδα",
+     "συνέβη"
+    ]
+   }
+  ]
+ }
+]

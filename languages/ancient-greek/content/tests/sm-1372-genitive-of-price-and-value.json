@@ -1,0 +1,714 @@
+[
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t1",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The general bought the horses for two talents of silver.",
+    "answer": "ὁ στρατηγὸς δυοῖν ταλάντοιν ἀργυρίου τοὺς ἵππους ἐπρίατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "δυοῖν",
+     "ταλάντοιν",
+     "ἀργυρίου",
+     "τοὺς",
+     "ἵππους",
+     "ἐπρίατο"
+    ]
+   },
+   {
+    "prompt": "The merchant sold his slaves for a great sum of money.",
+    "answer": "ὁ ἔμπορος πολλοῦ ἀργυρίου τοὺς δούλους ἀπέδοτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἔμπορος",
+     "πολλοῦ",
+     "ἀργυρίου",
+     "τοὺς",
+     "δούλους",
+     "ἀπέδοτο"
+    ]
+   },
+   {
+    "prompt": "It is not possible to buy wisdom for gold.",
+    "answer": "οὐκ ἔστι τὴν σοφίαν χρυσίου πρίασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστι",
+     "τὴν",
+     "σοφίαν",
+     "χρυσίου",
+     "πρίασθαι"
+    ]
+   },
+   {
+    "prompt": "For how much did you buy this cloak?",
+    "answer": "πόσου τοῦτο τὸ ἱμάτιον ἐπρίω;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόσου",
+     "τοῦτο",
+     "τὸ",
+     "ἱμάτιον",
+     "ἐπρίω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t2",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The Spartans valued freedom more highly than life.",
+    "answer": "οἱ Λακεδαιμόνιοι τὴν ἐλευθερίαν περὶ πλείονος ἢ τὸν βίον ἐποιοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "τὴν",
+     "ἐλευθερίαν",
+     "περὶ",
+     "πλείονος",
+     "ἢ",
+     "τὸν",
+     "βίον",
+     "ἐποιοῦντο"
+    ]
+   },
+   {
+    "prompt": "Socrates valued justice above all things.",
+    "answer": "ὁ Σωκράτης τὴν δικαιοσύνην περὶ πλείστου ἐποιεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "τὴν",
+     "δικαιοσύνην",
+     "περὶ",
+     "πλείστου",
+     "ἐποιεῖτο"
+    ]
+   },
+   {
+    "prompt": "Wise men value money little, but virtue greatly.",
+    "answer": "οἱ σοφοὶ τὰ χρήματα περὶ ὀλίγου, τὴν δὲ ἀρετὴν περὶ πολλοῦ ποιοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "τὰ",
+     "χρήματα",
+     "περὶ",
+     "ὀλίγου",
+     "τὴν",
+     "δὲ",
+     "ἀρετὴν",
+     "πολλοῦ",
+     "ποιοῦνται"
+    ]
+   },
+   {
+    "prompt": "The tyrant valued the laws least of all.",
+    "answer": "ὁ τύραννος τοὺς νόμους περὶ ἐλαχίστου ἐποιεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τοὺς",
+     "νόμους",
+     "περὶ",
+     "ἐλαχίστου",
+     "ἐποιεῖτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t3",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The jurors fixed the penalty at death for the traitor.",
+    "answer": "οἱ δικασταὶ τῷ προδότῃ θανάτου ἐτίμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τῷ",
+     "προδότῃ",
+     "θανάτου",
+     "ἐτίμησαν"
+    ]
+   },
+   {
+    "prompt": "The accuser proposed death as the penalty.",
+    "answer": "ὁ κατήγορος θανάτου ἐτιμήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κατήγορος",
+     "θανάτου",
+     "ἐτιμήσατο"
+    ]
+   },
+   {
+    "prompt": "But shall I then propose exile as my penalty?",
+    "answer": "ἀλλὰ δὴ φυγῆς τιμήσωμαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "δὴ",
+     "φυγῆς",
+     "τιμήσωμαι"
+    ]
+   },
+   {
+    "prompt": "They were prosecuting the orator on a capital charge.",
+    "answer": "τὸν ῥήτορα θανάτου ἐδίωκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ῥήτορα",
+     "θανάτου",
+     "ἐδίωκον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t4",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The Chaldaeans serve as soldiers for pay.",
+    "answer": "οἱ Χαλδαῖοι μισθοῦ στρατεύονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Χαλδαῖοι",
+     "μισθοῦ",
+     "στρατεύονται"
+    ]
+   },
+   {
+    "prompt": "The farmer hired the workmen for a drachma.",
+    "answer": "ὁ γεωργὸς τοὺς ἐργάτας δραχμῆς ἐμισθώσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "τοὺς",
+     "ἐργάτας",
+     "δραχμῆς",
+     "ἐμισθώσατο"
+    ]
+   },
+   {
+    "prompt": "For how much does the sophist teach the young men?",
+    "answer": "πόσου ὁ σοφιστὴς τοὺς νεανίας διδάσκει;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόσου",
+     "ὁ",
+     "σοφιστὴς",
+     "τοὺς",
+     "νεανίας",
+     "διδάσκει"
+    ]
+   },
+   {
+    "prompt": "He teaches for five minae.",
+    "answer": "πέντε μνῶν διδάσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέντε",
+     "μνῶν",
+     "διδάσκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t5",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "I will not barter my honor for any gain.",
+    "answer": "οὐκ ἀνταλλάξομαι τὴν τιμὴν οὐδενὸς κέρδους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀνταλλάξομαι",
+     "τὴν",
+     "τιμὴν",
+     "οὐδενὸς",
+     "κέρδους"
+    ]
+   },
+   {
+    "prompt": "These things are worth much silver.",
+    "answer": "ταῦτα πολλοῦ ἀργυρίου ἄξιά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "πολλοῦ",
+     "ἀργυρίου",
+     "ἄξιά",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "They deemed Themistocles worthy of the greatest gifts.",
+    "answer": "τὸν Θεμιστοκλέα τῶν μεγίστων δωρεῶν ἠξίωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "Θεμιστοκλέα",
+     "τῶν",
+     "μεγίστων",
+     "δωρεῶν",
+     "ἠξίωσαν"
+    ]
+   },
+   {
+    "prompt": "Nothing is worth more than freedom.",
+    "answer": "οὐδὲν πλείονος ἄξιόν ἐστιν τῆς ἐλευθερίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "πλείονος",
+     "ἄξιόν",
+     "ἐστιν",
+     "τῆς",
+     "ἐλευθερίας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t6",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "You charge nobody anything for your company.",
+    "answer": "οὐδένα τῆς συνουσίας ἀργύριον πράττεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδένα",
+     "τῆς",
+     "συνουσίας",
+     "ἀργύριον",
+     "πράττεις"
+    ]
+   },
+   {
+    "prompt": "Having bought the grain for a small price, the admiral distributed it.",
+    "answer": "ὁ ναύαρχος ὀλίγου τὸν σῖτον πριάμενος διένειμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ναύαρχος",
+     "ὀλίγου",
+     "τὸν",
+     "σῖτον",
+     "πριάμενος",
+     "διένειμεν"
+    ]
+   },
+   {
+    "prompt": "I bought this little chariot for three minae.",
+    "answer": "τὸν διφρίσκον τριῶν μνῶν ἐπριάμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "διφρίσκον",
+     "τριῶν",
+     "μνῶν",
+     "ἐπριάμην"
+    ]
+   },
+   {
+    "prompt": "I esteem it greatly to have heard these things from the philosopher.",
+    "answer": "πολλοῦ ποιοῦμαι ταῦτα ἀκηκοέναι παρὰ τοῦ φιλοσόφου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοῦ",
+     "ποιοῦμαι",
+     "ταῦτα",
+     "ἀκηκοέναι",
+     "παρὰ",
+     "τοῦ",
+     "φιλοσόφου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t7",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The merchant sold the slave to the foreigner for two minae.",
+    "answer": "ὁ ἔμπορος τῷ ξένῳ τὸν δοῦλον δυοῖν μναῖν ἀπέδοτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἔμπορος",
+     "τῷ",
+     "ξένῳ",
+     "τὸν",
+     "δοῦλον",
+     "δυοῖν",
+     "μναῖν",
+     "ἀπέδοτο"
+    ]
+   },
+   {
+    "prompt": "Having bought the house for much silver, he repented.",
+    "answer": "πολλοῦ ἀργυρίου τὴν οἰκίαν πριάμενος μετεμέλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοῦ",
+     "ἀργυρίου",
+     "τὴν",
+     "οἰκίαν",
+     "πριάμενος",
+     "μετεμέλετο"
+    ]
+   },
+   {
+    "prompt": "The farmer will not sell his oxen for so little.",
+    "answer": "ὁ γεωργὸς τοὺς βοῦς οὐκ ἀποδώσεται οὕτως ὀλίγου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "τοὺς",
+     "βοῦς",
+     "οὐκ",
+     "ἀποδώσεται",
+     "οὕτως",
+     "ὀλίγου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t8",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "Wise men value virtue more highly than wealth.",
+    "answer": "οἱ σοφοὶ τὴν ἀρετὴν περὶ πλείονος ἢ τὸν πλοῦτον ποιοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "τὴν",
+     "ἀρετὴν",
+     "περὶ",
+     "πλείονος",
+     "ἢ",
+     "τὸν",
+     "πλοῦτον",
+     "ποιοῦνται"
+    ]
+   },
+   {
+    "prompt": "The tyrant valued his own safety least of all.",
+    "answer": "ὁ τύραννος τὴν ἑαυτοῦ σωτηρίαν περὶ ἐλαχίστου ἐποιεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τὴν",
+     "ἑαυτοῦ",
+     "σωτηρίαν",
+     "περὶ",
+     "ἐλαχίστου",
+     "ἐποιεῖτο"
+    ]
+   },
+   {
+    "prompt": "I esteem it greatly to have learned from the philosopher.",
+    "answer": "περὶ πολλοῦ ποιοῦμαι παρὰ τοῦ φιλοσόφου μεμαθηκέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "πολλοῦ",
+     "ποιοῦμαι",
+     "παρὰ",
+     "τοῦ",
+     "φιλοσόφου",
+     "μεμαθηκέναι"
+    ]
+   },
+   {
+    "prompt": "Do not value the body more than the soul.",
+    "answer": "μὴ περὶ πλείονος ποιοῦ τὸ σῶμα ἢ τὴν ψυχήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "περὶ",
+     "πλείονος",
+     "ποιοῦ",
+     "τὸ",
+     "σῶμα",
+     "ἢ",
+     "τὴν",
+     "ψυχήν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t9",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The Arcadians served the Persians for a great wage.",
+    "answer": "οἱ Ἀρκάδες τοῖς Πέρσαις πολλοῦ μισθοῦ ἐστρατεύοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀρκάδες",
+     "τοῖς",
+     "Πέρσαις",
+     "πολλοῦ",
+     "μισθοῦ",
+     "ἐστρατεύοντο"
+    ]
+   },
+   {
+    "prompt": "He hired the workmen for a drachma a day.",
+    "answer": "τοὺς ἐργάτας δραχμῆς ἐμισθώσατο κατὰ ἑκάστην ἡμέραν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ἐργάτας",
+     "δραχμῆς",
+     "ἐμισθώσατο",
+     "κατὰ",
+     "ἑκάστην",
+     "ἡμέραν"
+    ]
+   },
+   {
+    "prompt": "For how much do you teach the young men?",
+    "answer": "πόσου τοὺς νεανίας διδάσκεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόσου",
+     "τοὺς",
+     "νεανίας",
+     "διδάσκεις"
+    ]
+   },
+   {
+    "prompt": "The general let out the mines for a talent.",
+    "answer": "ὁ στρατηγὸς τὰ μέταλλα ταλάντου ἐμίσθωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὰ",
+     "μέταλλα",
+     "ταλάντου",
+     "ἐμίσθωσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t10",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The accuser proposed death as the penalty for the thief.",
+    "answer": "ὁ κατήγορος τῷ κλέπτῃ θανάτου ἐτιμήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κατήγορος",
+     "τῷ",
+     "κλέπτῃ",
+     "θανάτου",
+     "ἐτιμήσατο"
+    ]
+   },
+   {
+    "prompt": "Shall I propose exile as my penalty?",
+    "answer": "ἆρα φυγῆς τιμήσωμαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "φυγῆς",
+     "τιμήσωμαι"
+    ]
+   },
+   {
+    "prompt": "The jury fixed the penalty at ten minae for him.",
+    "answer": "οἱ δικασταὶ αὐτῷ δέκα μνῶν ἐτίμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "αὐτῷ",
+     "δέκα",
+     "μνῶν",
+     "ἐτίμησαν"
+    ]
+   },
+   {
+    "prompt": "They prosecuted the general on a capital charge.",
+    "answer": "τὸν στρατηγὸν θανάτου ἐδίωξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "στρατηγὸν",
+     "θανάτου",
+     "ἐδίωξαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t11",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The Athenians deemed Themistocles worthy of the greatest honors.",
+    "answer": "οἱ Ἀθηναῖοι τὸν Θεμιστοκλέα τῶν μεγίστων τιμῶν ἠξίωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τὸν",
+     "Θεμιστοκλέα",
+     "τῶν",
+     "μεγίστων",
+     "τιμῶν",
+     "ἠξίωσαν"
+    ]
+   },
+   {
+    "prompt": "This deed is worth much praise.",
+    "answer": "τοῦτο τὸ ἔργον πολλοῦ ἐπαίνου ἄξιόν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ἔργον",
+     "πολλοῦ",
+     "ἐπαίνου",
+     "ἄξιόν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Freedom is worth more than all the gold of the king.",
+    "answer": "ἡ ἐλευθερία πλείονος ἀξία ἐστὶν ἢ πᾶς ὁ τοῦ βασιλέως χρυσός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐλευθερία",
+     "πλείονος",
+     "ἀξία",
+     "ἐστὶν",
+     "ἢ",
+     "πᾶς",
+     "ὁ",
+     "τοῦ",
+     "βασιλέως",
+     "χρυσός"
+    ]
+   },
+   {
+    "prompt": "He considered nothing worth more than his fatherland.",
+    "answer": "οὐδὲν πλείονος ἄξιον τῆς πατρίδος ἐνόμιζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "πλείονος",
+     "ἄξιον",
+     "τῆς",
+     "πατρίδος",
+     "ἐνόμιζεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-t12",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "The soldiers who serve for pay do not always remain trustworthy.",
+    "answer": "οἱ μισθοῦ στρατευόμενοι στρατιῶται οὐκ ἀεὶ μένουσι πιστοί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μισθοῦ",
+     "στρατευόμενοι",
+     "στρατιῶται",
+     "οὐκ",
+     "ἀεὶ",
+     "μένουσι",
+     "πιστοί"
+    ]
+   },
+   {
+    "prompt": "Socrates said that he would sell his freedom for no price.",
+    "answer": "ὁ Σωκράτης ἔφη τὴν ἐλευθερίαν οὐδενὸς ἀποδώσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "ἔφη",
+     "τὴν",
+     "ἐλευθερίαν",
+     "οὐδενὸς",
+     "ἀποδώσεσθαι"
+    ]
+   },
+   {
+    "prompt": "For three minae the sophist promised to teach the art of speaking.",
+    "answer": "τριῶν μνῶν ὁ σοφιστὴς τὴν τοῦ λέγειν τέχνην διδάξειν ὑπέσχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τριῶν",
+     "μνῶν",
+     "ὁ",
+     "σοφιστὴς",
+     "τὴν",
+     "τοῦ",
+     "λέγειν",
+     "τέχνην",
+     "διδάξειν",
+     "ὑπέσχετο"
+    ]
+   },
+   {
+    "prompt": "Since the ship had been bought for a great sum, they guarded it carefully.",
+    "answer": "ἐπεὶ ἡ ναῦς πολλοῦ ἐωνημένη ἦν, ἐπιμελῶς αὐτὴν ἐφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ἡ",
+     "ναῦς",
+     "πολλοῦ",
+     "ἐωνημένη",
+     "ἦν",
+     "ἐπιμελῶς",
+     "αὐτὴν",
+     "ἐφύλαττον"
+    ]
+   }
+  ]
+ }
+]

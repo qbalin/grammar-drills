@@ -1,0 +1,528 @@
+[
+ {
+  "id": "sm-1529-with-adjectives-etc-t1",
+  "sectionId": "sm-1529-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "The Thebans became allies to the Athenians against the king.",
+    "answer": "οἱ Θηβαῖοι σύμμαχοι τοῖς Ἀθηναίοις ἐγένοντο ἐπὶ τὸν βασιλέα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Θηβαῖοι",
+     "σύμμαχοι",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "ἐγένοντο",
+     "ἐπὶ",
+     "τὸν",
+     "βασιλέα"
+    ]
+   },
+   {
+    "prompt": "This country borders on the land of the Persians.",
+    "answer": "αὕτη ἡ χώρα ὅμορός ἐστι τῇ τῶν Περσῶν γῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "χώρα",
+     "ὅμορός",
+     "ἐστι",
+     "τῇ",
+     "τῶν",
+     "Περσῶν",
+     "γῇ"
+    ]
+   },
+   {
+    "prompt": "These deeds are conformable to the words of the general.",
+    "answer": "ταῦτα τὰ ἔργα ἀκόλουθά ἐστι τοῖς τοῦ στρατηγοῦ λόγοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "τὰ",
+     "ἔργα",
+     "ἀκόλουθά",
+     "ἐστι",
+     "τοῖς",
+     "τοῦ",
+     "στρατηγοῦ",
+     "λόγοις"
+    ]
+   },
+   {
+    "prompt": "The wise man's opinion is at variance with the laws of the city.",
+    "answer": "ἡ τοῦ σοφοῦ γνώμη διάφορός ἐστι τοῖς τῆς πόλεως νόμοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "σοφοῦ",
+     "γνώμη",
+     "διάφορός",
+     "ἐστι",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "νόμοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1529-with-adjectives-etc-t2",
+  "sectionId": "sm-1529-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "Good fortune is common to all the citizens.",
+    "answer": "ἡ εὐτυχία κοινή ἐστι πᾶσι τοῖς πολίταις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "εὐτυχία",
+     "κοινή",
+     "ἐστι",
+     "πᾶσι",
+     "τοῖς",
+     "πολίταις"
+    ]
+   },
+   {
+    "prompt": "His words were in harmony with his deeds.",
+    "answer": "οἱ λόγοι αὐτοῦ σύμφωνοι ἦσαν τοῖς ἔργοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "λόγοι",
+     "αὐτοῦ",
+     "σύμφωνοι",
+     "ἦσαν",
+     "τοῖς",
+     "ἔργοις"
+    ]
+   },
+   {
+    "prompt": "This young man is akin to the king in blood.",
+    "answer": "οὗτος ὁ νεανίας συγγενής ἐστι τῷ βασιλεῖ κατὰ τὸ γένος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "νεανίας",
+     "συγγενής",
+     "ἐστι",
+     "τῷ",
+     "βασιλεῖ",
+     "κατὰ",
+     "τὸ",
+     "γένος"
+    ]
+   },
+   {
+    "prompt": "The priest shared with the generals the blame for the disaster.",
+    "answer": "ὁ ἱερεὺς μεταίτιος ἦν τοῖς στρατηγοῖς τῆς συμφορᾶς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "μεταίτιος",
+     "ἦν",
+     "τοῖς",
+     "στρατηγοῖς",
+     "τῆς",
+     "συμφορᾶς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1529-with-adjectives-etc-t3",
+  "sectionId": "sm-1529-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "Acting conformably to the law, the judge freed the slave.",
+    "answer": "ἑπομένως τῷ νόμῳ ὁ δικαστὴς τὸν δοῦλον ἠλευθέρωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑπομένως",
+     "τῷ",
+     "νόμῳ",
+     "ὁ",
+     "δικαστὴς",
+     "τὸν",
+     "δοῦλον",
+     "ἠλευθέρωσεν"
+    ]
+   },
+   {
+    "prompt": "The law next to this one forbids the same things.",
+    "answer": "ὁ ἑξῆς νόμος τούτῳ τὰ αὐτὰ ἀπαγορεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἑξῆς",
+     "νόμος",
+     "τούτῳ",
+     "τὰ",
+     "αὐτὰ",
+     "ἀπαγορεύει"
+    ]
+   },
+   {
+    "prompt": "The soldiers arrived at the same time as the general.",
+    "answer": "οἱ στρατιῶται ἅμα τῷ στρατηγῷ ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἅμα",
+     "τῷ",
+     "στρατηγῷ",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "He always spoke conformably to the ancestral customs.",
+    "answer": "ἀεὶ ἔλεγεν ἑπομένως τοῖς πατρίοις ἔθεσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀεὶ",
+     "ἔλεγεν",
+     "ἑπομένως",
+     "τοῖς",
+     "πατρίοις",
+     "ἔθεσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1529-with-adjectives-etc-t4",
+  "sectionId": "sm-1529-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "Intercourse with the wisest men benefits the young.",
+    "answer": "ἡ κοινωνία τοῖς σοφωτάτοις ἀνδράσιν ὠφελεῖ τοὺς νέους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "κοινωνία",
+     "τοῖς",
+     "σοφωτάτοις",
+     "ἀνδράσιν",
+     "ὠφελεῖ",
+     "τοὺς",
+     "νέους"
+    ]
+   },
+   {
+    "prompt": "The attack on the fort took place at night.",
+    "answer": "ἡ ἐπιδρομὴ τῷ τειχίσματι νυκτὸς ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιδρομὴ",
+     "τῷ",
+     "τειχίσματι",
+     "νυκτὸς",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "The philosophers desire intercourse with the gods.",
+    "answer": "οἱ φιλόσοφοι ἐπιθυμοῦσι τῆς κοινωνίας τοῖς θεοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φιλόσοφοι",
+     "ἐπιθυμοῦσι",
+     "τῆς",
+     "κοινωνίας",
+     "τοῖς",
+     "θεοῖς"
+    ]
+   },
+   {
+    "prompt": "The general ordered an attack on the enemy's camp.",
+    "answer": "ὁ στρατηγὸς ἐκέλευσεν ἐπιδρομὴν τῷ τῶν πολεμίων στρατοπέδῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκέλευσεν",
+     "ἐπιδρομὴν",
+     "τῷ",
+     "τῶν",
+     "πολεμίων",
+     "στρατοπέδῳ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1529-with-adjectives-etc-t5",
+  "sectionId": "sm-1529-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "Since the island borders on Attica, the Athenians guard it.",
+    "answer": "ἐπεὶ ἡ νῆσος ὅμορός ἐστι τῇ Ἀττικῇ, οἱ Ἀθηναῖοι αὐτὴν φυλάττουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ἡ",
+     "νῆσος",
+     "ὅμορός",
+     "ἐστι",
+     "τῇ",
+     "Ἀττικῇ",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "αὐτὴν",
+     "φυλάττουσιν"
+    ]
+   },
+   {
+    "prompt": "Those who are allies to us fight bravely.",
+    "answer": "οἱ σύμμαχοι ἡμῖν ὄντες ἀνδρείως μάχονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "ἡμῖν",
+     "ὄντες",
+     "ἀνδρείως",
+     "μάχονται"
+    ]
+   },
+   {
+    "prompt": "The danger is common to those ruling and those being ruled.",
+    "answer": "ὁ κίνδυνος κοινός ἐστι τοῖς τε ἄρχουσι καὶ τοῖς ἀρχομένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κίνδυνος",
+     "κοινός",
+     "ἐστι",
+     "τοῖς",
+     "τε",
+     "ἄρχουσι",
+     "καὶ",
+     "ἀρχομένοις"
+    ]
+   },
+   {
+    "prompt": "Being at variance with the demagogue, he left the assembly.",
+    "answer": "διάφορος ὢν τῷ δημαγωγῷ ἀπῆλθεν ἐκ τῆς ἐκκλησίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διάφορος",
+     "ὢν",
+     "τῷ",
+     "δημαγωγῷ",
+     "ἀπῆλθεν",
+     "ἐκ",
+     "τῆς",
+     "ἐκκλησίας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1529-with-adjectives-etc-t6",
+  "sectionId": "sm-1529-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "The customs of the barbarians are not conformable to ours.",
+    "answer": "τὰ τῶν βαρβάρων ἔθη οὐκ ἀκόλουθά ἐστι τοῖς ἡμετέροις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "βαρβάρων",
+     "ἔθη",
+     "οὐκ",
+     "ἀκόλουθά",
+     "ἐστι",
+     "τοῖς",
+     "ἡμετέροις"
+    ]
+   },
+   {
+    "prompt": "He proved to be a faithful ally to the exiles.",
+    "answer": "πιστὸς σύμμαχος τοῖς φυγάσιν ἐφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστὸς",
+     "σύμμαχος",
+     "τοῖς",
+     "φυγάσιν",
+     "ἐφάνη"
+    ]
+   },
+   {
+    "prompt": "Wisdom is common to gods and men alike.",
+    "answer": "ἡ σοφία κοινή ἐστι θεοῖς καὶ ἀνθρώποις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφία",
+     "κοινή",
+     "ἐστι",
+     "θεοῖς",
+     "καὶ",
+     "ἀνθρώποις"
+    ]
+   },
+   {
+    "prompt": "This opinion is in harmony with the truth.",
+    "answer": "αὕτη ἡ δόξα σύμφωνός ἐστι τῇ ἀληθείᾳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "δόξα",
+     "σύμφωνός",
+     "ἐστι",
+     "τῇ",
+     "ἀληθείᾳ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1529-with-adjectives-etc-t7",
+  "sectionId": "sm-1529-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "Although they were allies to us, the Thebans refused to fight.",
+    "answer": "καίπερ σύμμαχοι ἡμῖν ὄντες, οἱ Θηβαῖοι οὐκ ἠθέλησαν μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "σύμμαχοι",
+     "ἡμῖν",
+     "ὄντες",
+     "οἱ",
+     "Θηβαῖοι",
+     "οὐκ",
+     "ἠθέλησαν",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "The Athenians inhabit the country bordering on the sea.",
+    "answer": "οἱ Ἀθηναῖοι τὴν τῇ θαλάττῃ ὅμορον χώραν οἰκοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τὴν",
+     "τῇ",
+     "θαλάττῃ",
+     "ὅμορον",
+     "χώραν",
+     "οἰκοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The fear of death is common to all mortals.",
+    "answer": "ὁ τοῦ θανάτου φόβος κοινός ἐστι πᾶσι τοῖς θνητοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "θανάτου",
+     "φόβος",
+     "κοινός",
+     "ἐστι",
+     "πᾶσι",
+     "τοῖς",
+     "θνητοῖς"
+    ]
+   },
+   {
+    "prompt": "The old man, being at variance with his sons, departed from the city.",
+    "answer": "ὁ γέρων, διάφορος ὢν τοῖς υἱέσιν, ἐκ τῆς πόλεως ἀπῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "διάφορος",
+     "ὢν",
+     "τοῖς",
+     "υἱέσιν",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἀπῆλθεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1529-with-adjectives-etc-t8",
+  "sectionId": "sm-1529-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "The verses of the poet are in harmony with the truth.",
+    "answer": "τὰ τοῦ ποιητοῦ ἔπη σύμφωνα τῇ ἀληθείᾳ ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τοῦ",
+     "ποιητοῦ",
+     "ἔπη",
+     "σύμφωνα",
+     "τῇ",
+     "ἀληθείᾳ",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "At daybreak they made an attack on the fort.",
+    "answer": "ἅμα τῇ ἡμέρᾳ ἐπιδρομὴν τῷ τειχίσματι ἐποιήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τῇ",
+     "ἡμέρᾳ",
+     "ἐπιδρομὴν",
+     "τῷ",
+     "τειχίσματι",
+     "ἐποιήσαντο"
+    ]
+   },
+   {
+    "prompt": "Intercourse with good men makes the young temperate.",
+    "answer": "ἡ τοῖς ἀγαθοῖς κοινωνία τοὺς νέους σώφρονας ἀπεργάζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῖς",
+     "ἀγαθοῖς",
+     "κοινωνία",
+     "τοὺς",
+     "νέους",
+     "σώφρονας",
+     "ἀπεργάζεται"
+    ]
+   },
+   {
+    "prompt": "The law next to this one concerns thieves.",
+    "answer": "ὁ ἑξῆς νόμος τούτῳ περὶ τῶν κλεπτῶν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἑξῆς",
+     "νόμος",
+     "τούτῳ",
+     "περὶ",
+     "τῶν",
+     "κλεπτῶν",
+     "ἐστιν"
+    ]
+   }
+  ]
+ }
+]

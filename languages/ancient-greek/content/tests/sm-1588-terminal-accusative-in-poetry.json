@@ -1,0 +1,509 @@
+[
+ {
+  "id": "sm-1588-terminal-accusative-in-poetry-t1",
+  "sectionId": "sm-1588-terminal-accusative-in-poetry",
+  "questions": [
+   {
+    "prompt": "The messenger, having come to the city, announced the victory.",
+    "answer": "Ἄστυ μολὼν ὁ ἄγγελος τὴν νίκην ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄστυ",
+     "μολών",
+     "ὁ",
+     "ἄγγελος",
+     "τήν",
+     "νίκην",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "When night had come, they reached the land of the enemies.",
+    "answer": "Νυκτὸς ἐλθούσης τὴν τῶν πολεμίων γῆν ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτός",
+     "ἐλθούσης",
+     "τήν",
+     "τῶν",
+     "πολεμίων",
+     "γῆν",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "We shall convey the maiden to Greece.",
+    "answer": "Πέμψομεν τὴν παρθένον Ἑλλάδα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμψομεν",
+     "τήν",
+     "παρθένον",
+     "Ἑλλάδα"
+    ]
+   },
+   {
+    "prompt": "The old man came to the halls of the king.",
+    "answer": "Ὁ γέρων τὰ τοῦ βασιλέως δώματα ἵκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τά",
+     "τοῦ",
+     "βασιλέως",
+     "δώματα",
+     "ἵκετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1588-terminal-accusative-in-poetry-t2",
+  "sectionId": "sm-1588-terminal-accusative-in-poetry",
+  "questions": [
+   {
+    "prompt": "The exiles, having left their fatherland, arrived at Athens.",
+    "answer": "Οἱ φυγάδες τὴν πατρίδα λιπόντες Ἀθήνας ἵκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "τήν",
+     "πατρίδα",
+     "λιπόντες",
+     "Ἀθήνας",
+     "ἵκοντο"
+    ]
+   },
+   {
+    "prompt": "I hasten to the temple that I may pray to the goddess.",
+    "answer": "Σπεύδω τὸν ναὸν ὡς τῇ θεῷ προσεύξωμαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σπεύδω",
+     "τόν",
+     "ναόν",
+     "ὡς",
+     "τῇ",
+     "θεῷ",
+     "προσεύξωμαι"
+    ]
+   },
+   {
+    "prompt": "After the storm the sailors gladly came to the shore.",
+    "answer": "Μετὰ τὸν χειμῶνα οἱ ναῦται ἄσμενοι τὴν ἀκτὴν ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετά",
+     "τόν",
+     "χειμῶνα",
+     "οἱ",
+     "ναῦται",
+     "ἄσμενοι",
+     "τήν",
+     "ἀκτήν",
+     "ἦλθον"
+    ]
+   },
+   {
+    "prompt": "Zeus sent Hermes to the earth.",
+    "answer": "Ὁ Ζεὺς τὸν Ἑρμῆν χθόνα ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ζεύς",
+     "τόν",
+     "Ἑρμῆν",
+     "χθόνα",
+     "ἔπεμψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1588-terminal-accusative-in-poetry-t3",
+  "sectionId": "sm-1588-terminal-accusative-in-poetry",
+  "questions": [
+   {
+    "prompt": "Having accomplished the deed, the hero returned to his home.",
+    "answer": "Τὸ ἔργον πράξας ὁ ἥρως τὸν οἶκον ἐνόστησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "ἔργον",
+     "πράξας",
+     "ὁ",
+     "ἥρως",
+     "τόν",
+     "οἶκον",
+     "ἐνόστησεν"
+    ]
+   },
+   {
+    "prompt": "The suppliants ran to the altar of the god.",
+    "answer": "Οἱ ἱκέται τὸν τοῦ θεοῦ βωμὸν ἔδραμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱκέται",
+     "τόν",
+     "τοῦ",
+     "θεοῦ",
+     "βωμόν",
+     "ἔδραμον"
+    ]
+   },
+   {
+    "prompt": "Before dawn we shall lead the army to the mountain.",
+    "answer": "Πρὸ τῆς ἕω τὸ στράτευμα τὸ ὄρος ἄξομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρό",
+     "τῆς",
+     "ἕω",
+     "τό",
+     "στράτευμα",
+     "ὄρος",
+     "ἄξομεν"
+    ]
+   },
+   {
+    "prompt": "The stranger, though weary, was reaching our tents.",
+    "answer": "Ὁ ξένος καίπερ κάμνων τὰς ἡμετέρας σκηνὰς ἵκανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ξένος",
+     "καίπερ",
+     "κάμνων",
+     "τάς",
+     "ἡμετέρας",
+     "σκηνάς",
+     "ἵκανεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1588-terminal-accusative-in-poetry-t4",
+  "sectionId": "sm-1588-terminal-accusative-in-poetry",
+  "questions": [
+   {
+    "prompt": "The messenger of the gods flew swiftly to Olympus.",
+    "answer": "Ὁ τῶν θεῶν ἄγγελος ταχέως τὸν Ὄλυμπον ἔπτατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τῶν",
+     "θεῶν",
+     "ἄγγελος",
+     "ταχέως",
+     "τόν",
+     "Ὄλυμπον",
+     "ἔπτατο"
+    ]
+   },
+   {
+    "prompt": "Wishing to see the contest, they went to the plain.",
+    "answer": "Τὸν ἀγῶνα ἰδεῖν βουλόμενοι τὸ πεδίον ἔβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "ἀγῶνα",
+     "ἰδεῖν",
+     "βουλόμενοι",
+     "τό",
+     "πεδίον",
+     "ἔβησαν"
+    ]
+   },
+   {
+    "prompt": "The child, frightened, ran to its mother.",
+    "answer": "Τὸ παιδίον φοβηθὲν τὴν μητέρα ἔδραμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "παιδίον",
+     "φοβηθέν",
+     "τήν",
+     "μητέρα",
+     "ἔδραμεν"
+    ]
+   },
+   {
+    "prompt": "At last the wanderer came to the house of his friends.",
+    "answer": "Τέλος ὁ πλανώμενος τὸν τῶν φίλων οἶκον ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τέλος",
+     "ὁ",
+     "πλανώμενος",
+     "τόν",
+     "τῶν",
+     "φίλων",
+     "οἶκον",
+     "ἀφίκετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1588-terminal-accusative-in-poetry-t5",
+  "sectionId": "sm-1588-terminal-accusative-in-poetry",
+  "questions": [
+   {
+    "prompt": "The god will send the hero to Hades.",
+    "answer": "Ὁ θεὸς τὸν ἥρωα τὸν Ἅιδην πέμψει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεός",
+     "τόν",
+     "ἥρωα",
+     "Ἅιδην",
+     "πέμψει"
+    ]
+   },
+   {
+    "prompt": "When the war had ceased, the general came back to the city.",
+    "answer": "Τοῦ πολέμου παυσαμένου ὁ στρατηγὸς τὸ ἄστυ κατῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "παυσαμένου",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "ἄστυ",
+     "κατῆλθεν"
+    ]
+   },
+   {
+    "prompt": "Having crossed the river, the soldiers came to the camp.",
+    "answer": "Τὸν ποταμὸν διαβάντες οἱ στρατιῶται τὸ στρατόπεδον ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "ποταμόν",
+     "διαβάντες",
+     "οἱ",
+     "στρατιῶται",
+     "τό",
+     "στρατόπεδον",
+     "ἦλθον"
+    ]
+   },
+   {
+    "prompt": "The maidens went to the spring to fetch water.",
+    "answer": "Αἱ παρθένοι τὴν κρήνην ἐχώρησαν ὕδωρ οἰσόμεναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "παρθένοι",
+     "τήν",
+     "κρήνην",
+     "ἐχώρησαν",
+     "ὕδωρ",
+     "οἰσόμεναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1588-terminal-accusative-in-poetry-t6",
+  "sectionId": "sm-1588-terminal-accusative-in-poetry",
+  "questions": [
+   {
+    "prompt": "The herald, sent by the king, came to our land.",
+    "answer": "Ὁ κῆρυξ ὑπὸ τοῦ βασιλέως πεμφθεὶς τὴν ἡμετέραν γῆν ἦλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ὑπό",
+     "τοῦ",
+     "βασιλέως",
+     "πεμφθείς",
+     "τήν",
+     "ἡμετέραν",
+     "γῆν",
+     "ἦλθεν"
+    ]
+   },
+   {
+    "prompt": "Let us hasten to the ships, for the enemy is approaching.",
+    "answer": "Σπεύδωμεν τὰς ναῦς, οἱ γὰρ πολέμιοι προσέρχονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σπεύδωμεν",
+     "τάς",
+     "ναῦς",
+     "οἱ",
+     "γάρ",
+     "πολέμιοι",
+     "προσέρχονται"
+    ]
+   },
+   {
+    "prompt": "The poet says that the goddess came to the wedding of Peleus.",
+    "answer": "Ὁ ποιητὴς λέγει τὴν θεὸν τοὺς τοῦ Πηλέως γάμους μολεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιητής",
+     "λέγει",
+     "τήν",
+     "θεόν",
+     "τούς",
+     "τοῦ",
+     "Πηλέως",
+     "γάμους",
+     "μολεῖν"
+    ]
+   },
+   {
+    "prompt": "Fleeing the tyrant, the wise man came to Sicily.",
+    "answer": "Τὸν τύραννον φεύγων ὁ σοφὸς τὴν Σικελίαν ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "τύραννον",
+     "φεύγων",
+     "ὁ",
+     "σοφός",
+     "τήν",
+     "Σικελίαν",
+     "ἀφίκετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1588-terminal-accusative-in-poetry-t7",
+  "sectionId": "sm-1588-terminal-accusative-in-poetry",
+  "questions": [
+   {
+    "prompt": "Having fled the battle, the soldier reached his father's house.",
+    "answer": "φυγὼν τὴν μάχην ὁ στρατιώτης δόμον τοῦ πατρὸς ἵκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυγών",
+     "τήν",
+     "μάχην",
+     "ὁ",
+     "στρατιώτης",
+     "δόμον",
+     "τοῦ",
+     "πατρός",
+     "ἵκετο"
+    ]
+   },
+   {
+    "prompt": "The messenger came to the suitors bearing evil tidings.",
+    "answer": "ὁ ἄγγελος μνηστῆρας ἀφίκετο κακὰ φέρων ἀγγέλματα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "μνηστῆρας",
+     "ἀφίκετο",
+     "κακά",
+     "φέρων",
+     "ἀγγέλματα"
+    ]
+   },
+   {
+    "prompt": "The wanderer, worn out by his toils, arrived at a foreign land.",
+    "answer": "ὁ ἀλήτης πόνοις τετρυμένος ξένην ἵκανε γαῖαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀλήτης",
+     "πόνοις",
+     "τετρυμένος",
+     "ξένην",
+     "ἵκανε",
+     "γαῖαν"
+    ]
+   },
+   {
+    "prompt": "We shall convey the captive maiden to Greece.",
+    "answer": "τὴν αἰχμάλωτον κόρην Ἑλλάδα πέμψομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "αἰχμάλωτον",
+     "κόρην",
+     "Ἑλλάδα",
+     "πέμψομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1588-terminal-accusative-in-poetry-t8",
+  "sectionId": "sm-1588-terminal-accusative-in-poetry",
+  "questions": [
+   {
+    "prompt": "The hero, having slain the beast, came to the city of Cadmus.",
+    "answer": "ὁ ἥρως τὸ θηρίον κτείνας ἄστυ Καδμεῖον ἔμολεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἥρως",
+     "τό",
+     "θηρίον",
+     "κτείνας",
+     "ἄστυ",
+     "Καδμεῖον",
+     "ἔμολεν"
+    ]
+   },
+   {
+    "prompt": "At dawn the old man reached the halls of the king.",
+    "answer": "ἅμα ἕῳ ὁ γέρων δώματα τοῦ βασιλέως ἵκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "ἕῳ",
+     "ὁ",
+     "γέρων",
+     "δώματα",
+     "τοῦ",
+     "βασιλέως",
+     "ἵκετο"
+    ]
+   },
+   {
+    "prompt": "The maiden hastens to the grove of the nymphs.",
+    "answer": "ἡ παρθένος ἄλσος τῶν Νυμφῶν σπεύδει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "ἄλσος",
+     "τῶν",
+     "Νυμφῶν",
+     "σπεύδει"
+    ]
+   },
+   {
+    "prompt": "The gods will send the soul of the dead man to Hades.",
+    "answer": "οἱ θεοὶ τὴν τοῦ θανόντος ψυχὴν Ἅιδην πέμψουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "τήν",
+     "τοῦ",
+     "θανόντος",
+     "ψυχήν",
+     "Ἅιδην",
+     "πέμψουσιν"
+    ]
+   }
+  ]
+ }
+]

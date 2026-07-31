@@ -1,0 +1,688 @@
+[
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t1",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "The general gave the brave soldiers many gifts after the battle.",
+    "answer": "ὁ στρατηγὸς τοῖς ἀνδρείοις στρατιώταις πολλὰ δῶρα μετὰ τὴν μάχην ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοῖς",
+     "ἀνδρείοις",
+     "στρατιώταις",
+     "πολλὰ",
+     "δῶρα",
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "The king presented a beautiful horse to the man who had saved his daughter.",
+    "answer": "ὁ βασιλεὺς καλὸν ἵππον ἐδωρήσατο τῷ τὴν θυγατέρα σώσαντι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "καλὸν",
+     "ἵππον",
+     "ἐδωρήσατο",
+     "τῷ",
+     "τὴν",
+     "θυγατέρα",
+     "σώσαντι"
+    ]
+   },
+   {
+    "prompt": "The citizens distributed the spoils to those who had fought bravely.",
+    "answer": "οἱ πολῖται τὰ λάφυρα διένειμαν τοῖς ἀνδρείως μαχεσαμένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὰ",
+     "λάφυρα",
+     "διένειμαν",
+     "τοῖς",
+     "ἀνδρείως",
+     "μαχεσαμένοις"
+    ]
+   },
+   {
+    "prompt": "Cyrus gave the soldiers pay for six months.",
+    "answer": "ὁ Κῦρος τοῖς στρατιώταις ἓξ μηνῶν μισθὸν ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "τοῖς",
+     "στρατιώταις",
+     "ἓξ",
+     "μηνῶν",
+     "μισθὸν",
+     "ἔδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t2",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "The Athenians sent a messenger to the general who was in the camp.",
+    "answer": "οἱ Ἀθηναῖοι ἄγγελον τῷ ἐν τῷ στρατοπέδῳ στρατηγῷ ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ἄγγελον",
+     "τῷ",
+     "ἐν",
+     "στρατοπέδῳ",
+     "στρατηγῷ",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "The messengers announced the victory to the citizens gathered in the marketplace.",
+    "answer": "οἱ ἄγγελοι τὴν νίκην ἤγγειλαν τοῖς πολίταις τοῖς ἐν τῇ ἀγορᾷ συνειλεγμένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "τὴν",
+     "νίκην",
+     "ἤγγειλαν",
+     "τοῖς",
+     "πολίταις",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "συνειλεγμένοις"
+    ]
+   },
+   {
+    "prompt": "The general wrote these things to the ephors before the battle.",
+    "answer": "ὁ στρατηγὸς ταῦτα τοῖς ἐφόροις πρὸ τῆς μάχης ἔγραψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ταῦτα",
+     "τοῖς",
+     "ἐφόροις",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "ἔγραψεν"
+    ]
+   },
+   {
+    "prompt": "The god declared many things to those who had come to the oracle.",
+    "answer": "ὁ θεὸς πολλὰ ἐδήλωσε τοῖς εἰς τὸ μαντεῖον ἀφικομένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεὸς",
+     "πολλὰ",
+     "ἐδήλωσε",
+     "τοῖς",
+     "εἰς",
+     "τὸ",
+     "μαντεῖον",
+     "ἀφικομένοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t3",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "I promise the soldier ten talents, if he helps us.",
+    "answer": "ὑπισχνοῦμαι τῷ στρατιώτῃ δέκα τάλαντα, ἐὰν ἡμῖν βοηθήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπισχνοῦμαι",
+     "τῷ",
+     "στρατιώτῃ",
+     "δέκα",
+     "τάλαντα",
+     "ἐὰν",
+     "ἡμῖν",
+     "βοηθήσῃ"
+    ]
+   },
+   {
+    "prompt": "They entrusted this command to me, though I was young.",
+    "answer": "ταύτην τὴν ἀρχὴν ἐμοὶ ἐπέτρεψαν, καίπερ νέῳ ὄντι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτην",
+     "τὴν",
+     "ἀρχὴν",
+     "ἐμοὶ",
+     "ἐπέτρεψαν",
+     "καίπερ",
+     "νέῳ",
+     "ὄντι"
+    ]
+   },
+   {
+    "prompt": "The old man laid this charge upon his sons before dying.",
+    "answer": "ὁ γέρων ταύτην τὴν ἐντολὴν τοῖς υἱοῖς ἐπέθηκε πρὶν ἀποθανεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ταύτην",
+     "τὴν",
+     "ἐντολὴν",
+     "τοῖς",
+     "υἱοῖς",
+     "ἐπέθηκε",
+     "πρὶν",
+     "ἀποθανεῖν"
+    ]
+   },
+   {
+    "prompt": "The general advised the Athenians to guard the harbor.",
+    "answer": "ὁ στρατηγὸς τοῖς Ἀθηναίοις παρῄνεσε τὸν λιμένα φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "παρῄνεσε",
+     "τὸν",
+     "λιμένα",
+     "φυλάττειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t4",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "The teacher showed the students the road leading to the city.",
+    "answer": "ὁ διδάσκαλος τοῖς μαθηταῖς τὴν ὁδὸν τὴν εἰς τὴν πόλιν φέρουσαν ἔδειξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "τοῖς",
+     "μαθηταῖς",
+     "τὴν",
+     "ὁδὸν",
+     "εἰς",
+     "πόλιν",
+     "φέρουσαν",
+     "ἔδειξεν"
+    ]
+   },
+   {
+    "prompt": "It is not right to compare a small thing to a great one.",
+    "answer": "οὐ δίκαιόν ἐστι μικρὸν μεγάλῳ εἰκάζειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιόν",
+     "ἐστι",
+     "μικρὸν",
+     "μεγάλῳ",
+     "εἰκάζειν"
+    ]
+   },
+   {
+    "prompt": "The traitors handed over the city to the enemy at night.",
+    "answer": "οἱ προδόται τὴν πόλιν τοῖς πολεμίοις νυκτὸς παρέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "προδόται",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "νυκτὸς",
+     "παρέδοσαν"
+    ]
+   },
+   {
+    "prompt": "The king assigned the fairest gifts to those who had labored most.",
+    "answer": "ὁ βασιλεὺς τὰ κάλλιστα δῶρα τοῖς μάλιστα πονήσασιν ἀπένειμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τὰ",
+     "κάλλιστα",
+     "δῶρα",
+     "τοῖς",
+     "μάλιστα",
+     "πονήσασιν",
+     "ἀπένειμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t5",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "The messenger reported to the general that the enemy were approaching.",
+    "answer": "ὁ ἄγγελος τῷ στρατηγῷ ἀπήγγειλεν ὅτι οἱ πολέμιοι προσέρχονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τῷ",
+     "στρατηγῷ",
+     "ἀπήγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "προσέρχονται"
+    ]
+   },
+   {
+    "prompt": "I will tell you the truth, even if you do not wish to hear it.",
+    "answer": "ἐγὼ ὑμῖν τὴν ἀλήθειαν ἐρῶ, καὶ εἰ μὴ βούλεσθε ἀκούειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "ὑμῖν",
+     "τὴν",
+     "ἀλήθειαν",
+     "ἐρῶ",
+     "καὶ",
+     "εἰ",
+     "μὴ",
+     "βούλεσθε",
+     "ἀκούειν"
+    ]
+   },
+   {
+    "prompt": "The philosopher explained to his companions the nature of the soul.",
+    "answer": "ὁ φιλόσοφος τοῖς ἑταίροις τὴν τῆς ψυχῆς φύσιν ἐξηγήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τοῖς",
+     "ἑταίροις",
+     "τὴν",
+     "τῆς",
+     "ψυχῆς",
+     "φύσιν",
+     "ἐξηγήσατο"
+    ]
+   },
+   {
+    "prompt": "The general enjoined silence upon the soldiers as they marched through the mountains.",
+    "answer": "ὁ στρατηγὸς σιγὴν τοῖς στρατιώταις προσέταξε διὰ τῶν ὀρῶν πορευομένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "σιγὴν",
+     "τοῖς",
+     "στρατιώταις",
+     "προσέταξε",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "πορευομένοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t6",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "This land was given to him by the king.",
+    "answer": "αὕτη ἡ χώρα ἐκείνῳ ὑπὸ τοῦ βασιλέως ἐδόθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "χώρα",
+     "ἐκείνῳ",
+     "ὑπὸ",
+     "τοῦ",
+     "βασιλέως",
+     "ἐδόθη"
+    ]
+   },
+   {
+    "prompt": "When the war had ended, the citizens granted freedom to the slaves.",
+    "answer": "τοῦ πολέμου παυσαμένου, οἱ πολῖται τοῖς δούλοις τὴν ἐλευθερίαν ἔδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "παυσαμένου",
+     "οἱ",
+     "πολῖται",
+     "τοῖς",
+     "δούλοις",
+     "τὴν",
+     "ἐλευθερίαν",
+     "ἔδοσαν"
+    ]
+   },
+   {
+    "prompt": "The Persians offered gifts to the gods before beginning the war.",
+    "answer": "οἱ Πέρσαι τοῖς θεοῖς δῶρα προσέφερον πρὶν τὸν πόλεμον ἄρξασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "τοῖς",
+     "θεοῖς",
+     "δῶρα",
+     "προσέφερον",
+     "πρὶν",
+     "τὸν",
+     "πόλεμον",
+     "ἄρξασθαι"
+    ]
+   },
+   {
+    "prompt": "The Hyrcanian, having received the horse, rendered great thanks to the king.",
+    "answer": "ὁ Ὑρκάνιος τὸν ἵππον λαβὼν πολλὴν τῷ βασιλεῖ χάριν ἀπέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ὑρκάνιος",
+     "τὸν",
+     "ἵππον",
+     "λαβὼν",
+     "πολλὴν",
+     "τῷ",
+     "βασιλεῖ",
+     "χάριν",
+     "ἀπέδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t7",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "Cyrus entrusted this command to that man whom he trusted most.",
+    "answer": "ὁ Κῦρος ταύτην τὴν ἀρχὴν ἐκείνῳ τῷ ἀνδρὶ ἐπέτρεψεν ᾧ μάλιστα ἐπίστευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "ταύτην",
+     "τὴν",
+     "ἀρχὴν",
+     "ἐκείνῳ",
+     "τῷ",
+     "ἀνδρὶ",
+     "ἐπέτρεψεν",
+     "ᾧ",
+     "μάλιστα",
+     "ἐπίστευεν"
+    ]
+   },
+   {
+    "prompt": "The king presented a silver cup to the ambassador of the Persians.",
+    "answer": "ὁ βασιλεὺς φιάλην ἀργυρᾶν τῷ τῶν Περσῶν πρεσβευτῇ ἐδωρήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "φιάλην",
+     "ἀργυρᾶν",
+     "τῷ",
+     "τῶν",
+     "Περσῶν",
+     "πρεσβευτῇ",
+     "ἐδωρήσατο"
+    ]
+   },
+   {
+    "prompt": "They distributed the spoils to the soldiers who had fought bravely.",
+    "answer": "τὰ λάφυρα τοῖς στρατιώταις διένειμαν τοῖς ἀνδρείως μεμαχημένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "λάφυρα",
+     "τοῖς",
+     "στρατιώταις",
+     "διένειμαν",
+     "ἀνδρείως",
+     "μεμαχημένοις"
+    ]
+   },
+   {
+    "prompt": "The wealthy citizen gave the poor much money.",
+    "answer": "ὁ πλούσιος πολίτης τοῖς πένησι πολλὰ χρήματα ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "πολίτης",
+     "τοῖς",
+     "πένησι",
+     "πολλὰ",
+     "χρήματα",
+     "ἔδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t8",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "Socrates advised the young men to pursue virtue.",
+    "answer": "ὁ Σωκράτης τοῖς νεανίαις παρῄνει τὴν ἀρετὴν διώκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "τοῖς",
+     "νεανίαις",
+     "παρῄνει",
+     "τὴν",
+     "ἀρετὴν",
+     "διώκειν"
+    ]
+   },
+   {
+    "prompt": "I promise you a great reward, if you tell the truth.",
+    "answer": "ὑπισχνοῦμαι μεγάλην σοι δωρεάν, ἐὰν τὰ ἀληθῆ λέγῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπισχνοῦμαι",
+     "μεγάλην",
+     "σοι",
+     "δωρεάν",
+     "ἐὰν",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγῃς"
+    ]
+   },
+   {
+    "prompt": "The general enjoined a difficult task upon the allies.",
+    "answer": "ὁ στρατηγὸς χαλεπὸν ἔργον τοῖς συμμάχοις ἐπέταξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "χαλεπὸν",
+     "ἔργον",
+     "τοῖς",
+     "συμμάχοις",
+     "ἐπέταξεν"
+    ]
+   },
+   {
+    "prompt": "I lay this charge upon you, to guard the city faithfully.",
+    "answer": "τοῦτο δέ σοι ἐφίεμαι, τὴν πόλιν πιστῶς φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "δέ",
+     "σοι",
+     "ἐφίεμαι",
+     "τὴν",
+     "πόλιν",
+     "πιστῶς",
+     "φυλάττειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t9",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "The Spartans sent ambassadors to the general of the enemy.",
+    "answer": "οἱ Λακεδαιμόνιοι πρέσβεις τῷ τῶν πολεμίων στρατηγῷ ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "πρέσβεις",
+     "τῷ",
+     "τῶν",
+     "πολεμίων",
+     "στρατηγῷ",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "The old man told the children a wondrous story.",
+    "answer": "ὁ γέρων τοῖς παισὶ θαυμαστὸν μῦθον ἔλεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τοῖς",
+     "παισὶ",
+     "θαυμαστὸν",
+     "μῦθον",
+     "ἔλεξεν"
+    ]
+   },
+   {
+    "prompt": "The craftsman showed the strangers his own works.",
+    "answer": "ὁ δημιουργὸς τοῖς ξένοις τὰ ἑαυτοῦ ἔργα ἐπέδειξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δημιουργὸς",
+     "τοῖς",
+     "ξένοις",
+     "τὰ",
+     "ἑαυτοῦ",
+     "ἔργα",
+     "ἐπέδειξεν"
+    ]
+   },
+   {
+    "prompt": "The poet compared human life to a shadow.",
+    "answer": "ὁ ποιητὴς τὸν ἀνθρώπινον βίον σκιᾷ εἴκασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιητὴς",
+     "τὸν",
+     "ἀνθρώπινον",
+     "βίον",
+     "σκιᾷ",
+     "εἴκασεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-t10",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "This honor was given to the general by the citizens.",
+    "answer": "αὕτη ἡ τιμὴ τῷ στρατηγῷ ὑπὸ τῶν πολιτῶν ἐδόθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "τιμὴ",
+     "τῷ",
+     "στρατηγῷ",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "ἐδόθη"
+    ]
+   },
+   {
+    "prompt": "The servants brought much food to the guests as they reclined.",
+    "answer": "οἱ θεράποντες τοῖς κατακειμένοις ξένοις πολλὰ σιτία προσέφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεράποντες",
+     "τοῖς",
+     "κατακειμένοις",
+     "ξένοις",
+     "πολλὰ",
+     "σιτία",
+     "προσέφερον"
+    ]
+   },
+   {
+    "prompt": "The messenger announced to the Athenians that the fleet had been destroyed.",
+    "answer": "ὁ ἄγγελος τοῖς Ἀθηναίοις ἤγγειλεν ὅτι ὁ στόλος διεφθαρμένος εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "ἤγγειλεν",
+     "ὅτι",
+     "στόλος",
+     "διεφθαρμένος",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "The king granted freedom to the captives.",
+    "answer": "ὁ βασιλεὺς τοῖς αἰχμαλώτοις τὴν ἐλευθερίαν ἐχαρίσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τοῖς",
+     "αἰχμαλώτοις",
+     "τὴν",
+     "ἐλευθερίαν",
+     "ἐχαρίσατο"
+    ]
+   }
+  ]
+ }
+]

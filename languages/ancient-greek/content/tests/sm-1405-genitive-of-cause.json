@@ -1,0 +1,996 @@
+[
+ {
+  "id": "sm-1405-genitive-of-cause-t1",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "Everyone admired the general for his wisdom.",
+    "answer": "πάντες τὸν στρατηγὸν ἐθαύμαζον τῆς σοφίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "τόν",
+     "στρατηγόν",
+     "ἐθαύμαζον",
+     "τῆς",
+     "σοφίας"
+    ]
+   },
+   {
+    "prompt": "The assembly praised the ambassadors for their zeal.",
+    "answer": "ἡ ἐκκλησία τοὺς πρέσβεις ᾔνεσε τῆς προθυμίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐκκλησία",
+     "τούς",
+     "πρέσβεις",
+     "ᾔνεσε",
+     "τῆς",
+     "προθυμίας"
+    ]
+   },
+   {
+    "prompt": "The soldiers pitied the prisoners for their suffering.",
+    "answer": "οἱ στρατιῶται τοὺς αἰχμαλώτους ᾤκτιραν τοῦ πάθους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τούς",
+     "αἰχμαλώτους",
+     "ᾤκτιραν",
+     "τοῦ",
+     "πάθους"
+    ]
+   },
+   {
+    "prompt": "Alas for the man who trusted his enemies!",
+    "answer": "φεῦ τοῦ ἀνδρὸς ὃς τοῖς πολεμίοις ἐπίστευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεῦ",
+     "τοῦ",
+     "ἀνδρός",
+     "ὅς",
+     "τοῖς",
+     "πολεμίοις",
+     "ἐπίστευσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t2",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "I do not envy the rich for their wealth.",
+    "answer": "οὐ ζηλῶ τοὺς πλουσίους τοῦ πλούτου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "ζηλῶ",
+     "τούς",
+     "πλουσίους",
+     "τοῦ",
+     "πλούτου"
+    ]
+   },
+   {
+    "prompt": "You will never blame me for my advice.",
+    "answer": "οὐδέποτε ἐμὲ μέμψῃ τῆς βουλῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέποτε",
+     "ἐμέ",
+     "μέμψῃ",
+     "τῆς",
+     "βουλῆς"
+    ]
+   },
+   {
+    "prompt": "I hate the traitor for his cowardice.",
+    "answer": "στυγῶ τὸν προδότην τῆς δειλίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στυγῶ",
+     "τόν",
+     "προδότην",
+     "τῆς",
+     "δειλίας"
+    ]
+   },
+   {
+    "prompt": "The citizens were angry at the general for the defeat.",
+    "answer": "οἱ πολῖται τῷ στρατηγῷ τῆς ἥττης ὠργίζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τῷ",
+     "στρατηγῷ",
+     "τῆς",
+     "ἥττης",
+     "ὠργίζοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t3",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "They resolved to take vengeance on the barbarians for their treachery.",
+    "answer": "ἔγνωσαν τοὺς βαρβάρους τῆς προδοσίας τιμωρήσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγνωσαν",
+     "τούς",
+     "βαρβάρους",
+     "τῆς",
+     "προδοσίας",
+     "τιμωρήσασθαι"
+    ]
+   },
+   {
+    "prompt": "The judges forgave the young man for his error.",
+    "answer": "οἱ δικασταὶ τῷ νεανίᾳ συνέγνωσαν τῆς ἁμαρτίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "τῷ",
+     "νεανίᾳ",
+     "συνέγνωσαν",
+     "τῆς",
+     "ἁμαρτίας"
+    ]
+   },
+   {
+    "prompt": "We rejoice with you at what has happened.",
+    "answer": "συγχαίρομέν σοι τῶν γεγενημένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συγχαίρομεν",
+     "σοι",
+     "τῶν",
+     "γεγενημένων"
+    ]
+   },
+   {
+    "prompt": "It is not right to grieve over the dead.",
+    "answer": "οὐ δίκαιόν ἐστι τῶν τεθνεώτων χαλεπῶς φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιον",
+     "ἐστι",
+     "τῶν",
+     "τεθνεώτων",
+     "χαλεπῶς",
+     "φέρειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t4",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "We have no dispute with the king about the empire.",
+    "answer": "οὐ βασιλεῖ ἀντιποιούμεθα τῆς ἀρχῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "βασιλεῖ",
+     "ἀντιποιούμεθα",
+     "τῆς",
+     "ἀρχῆς"
+    ]
+   },
+   {
+    "prompt": "He disputed the possession of the land with his brother.",
+    "answer": "τῷ ἀδελφῷ τῆς χώρας ἠμφισβήτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "ἀδελφῷ",
+     "τῆς",
+     "χώρας",
+     "ἠμφισβήτησεν"
+    ]
+   },
+   {
+    "prompt": "The Thebans laid claim to the city.",
+    "answer": "οἱ Θηβαῖοι τῆς πόλεως ἀντεποιοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Θηβαῖοι",
+     "τῆς",
+     "πόλεως",
+     "ἀντεποιοῦντο"
+    ]
+   },
+   {
+    "prompt": "Will he oppose us about the withdrawal of the army?",
+    "answer": "ἆρα ἡμῖν ἐναντιώσεται τῆς τοῦ στρατοῦ ἀναχωρήσεως;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "ἡμῖν",
+     "ἐναντιώσεται",
+     "τῆς",
+     "τοῦ",
+     "στρατοῦ",
+     "ἀναχωρήσεως"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t5",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "We admired the old man for his gentleness.",
+    "answer": "ἠγάσθημεν τὸν γέροντα τῆς πρᾳότητος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠγάσθημεν",
+     "τόν",
+     "γέροντα",
+     "τῆς",
+     "πρᾳότητος"
+    ]
+   },
+   {
+    "prompt": "I counted you happy for your character.",
+    "answer": "ηὐδαιμόνισά σε τοῦ τρόπου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ηὐδαιμόνισα",
+     "σε",
+     "τοῦ",
+     "τρόπου"
+    ]
+   },
+   {
+    "prompt": "It is just to praise the stranger for his kindness.",
+    "answer": "δίκαιόν ἐστι τὸν ξένον αἰνέσαι τῆς εὐνοίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δίκαιον",
+     "ἐστι",
+     "τόν",
+     "ξένον",
+     "αἰνέσαι",
+     "τῆς",
+     "εὐνοίας"
+    ]
+   },
+   {
+    "prompt": "Alas for the folly of the young!",
+    "answer": "φεῦ τῆς τῶν νέων ἀνοίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεῦ",
+     "τῆς",
+     "τῶν",
+     "νέων",
+     "ἀνοίας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t6",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "I wonder at your boldness, that you dare to say such things.",
+    "answer": "θαυμάζω σε τῆς τόλμης, ὅτι τοιαῦτα λέγειν τολμᾷς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "σε",
+     "τῆς",
+     "τόλμης",
+     "ὅτι",
+     "τοιαῦτα",
+     "λέγειν",
+     "τολμᾷς"
+    ]
+   },
+   {
+    "prompt": "Do not be angry at me for the truth.",
+    "answer": "μή μοι ὀργίζου τῆς ἀληθείας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "μοι",
+     "ὀργίζου",
+     "τῆς",
+     "ἀληθείας"
+    ]
+   },
+   {
+    "prompt": "The Athenians punished the traitors for their crime.",
+    "answer": "οἱ Ἀθηναῖοι τοὺς προδότας τοῦ ἀδικήματος ἐτιμωρήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τούς",
+     "προδότας",
+     "τοῦ",
+     "ἀδικήματος",
+     "ἐτιμωρήσαντο"
+    ]
+   },
+   {
+    "prompt": "I admire you for your courage, but I blame you for your rashness.",
+    "answer": "ἄγαμαί σε τῆς ἀνδρείας, μέμφομαι δέ σε τῆς προπετείας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγαμαι",
+     "σε",
+     "τῆς",
+     "ἀνδρείας",
+     "μέμφομαι",
+     "δέ",
+     "προπετείας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t7",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "I wondered at the citizens for the zeal with which they fought.",
+    "answer": "ἐθαύμασα τοὺς πολίτας τῆς προθυμίας ᾗ ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαύμασα",
+     "τοὺς",
+     "πολίτας",
+     "τῆς",
+     "προθυμίας",
+     "ᾗ",
+     "ἐμάχοντο"
+    ]
+   },
+   {
+    "prompt": "The king admired the young man for his moderation, though he was still young.",
+    "answer": "ὁ βασιλεὺς ἠγάσθη τὸν νεανίαν τῆς σωφροσύνης καίπερ ἔτι νέον ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "ἠγάσθη",
+     "τὸν",
+     "νεανίαν",
+     "τῆς",
+     "σωφροσύνης",
+     "καίπερ",
+     "ἔτι",
+     "νέον",
+     "ὄντα"
+    ]
+   },
+   {
+    "prompt": "The judges praised the stranger for his justice, because he had spoken the truth.",
+    "answer": "οἱ δικασταὶ ἐπῄνεσαν τὸν ξένον τῆς δικαιοσύνης, ὅτι τὰ ἀληθῆ εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ἐπῄνεσαν",
+     "τὸν",
+     "ξένον",
+     "τῆς",
+     "δικαιοσύνης",
+     "ὅτι",
+     "τὰ",
+     "ἀληθῆ",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "I envy you for your good fortune, but I pity you for your folly.",
+    "answer": "ζηλῶ σε τῆς εὐτυχίας, τῆς δὲ ἀνοίας οἰκτίρω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ζηλῶ",
+     "σε",
+     "τῆς",
+     "εὐτυχίας",
+     "δὲ",
+     "ἀνοίας",
+     "οἰκτίρω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t8",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "Do not blame the messenger for the news, which he did not make himself.",
+    "answer": "μὴ μέμφου τῷ ἀγγέλῳ τῶν ἀγγελμάτων, ἃ οὐκ ἐποίησεν αὐτός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "μέμφου",
+     "τῷ",
+     "ἀγγέλῳ",
+     "τῶν",
+     "ἀγγελμάτων",
+     "ἃ",
+     "οὐκ",
+     "ἐποίησεν",
+     "αὐτός"
+    ]
+   },
+   {
+    "prompt": "The people were angry at the generals for what they stole.",
+    "answer": "ὁ δῆμος ὠργίζετο τοῖς στρατηγοῖς ὧν ἔκλεπτον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "ὠργίζετο",
+     "τοῖς",
+     "στρατηγοῖς",
+     "ὧν",
+     "ἔκλεπτον"
+    ]
+   },
+   {
+    "prompt": "I hate the tyrant for his cruelty, because he rules so harshly.",
+    "answer": "μισῶ τὸν τύραννον τῆς ὠμότητος, ὅτι οὕτω χαλεπῶς ἄρχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μισῶ",
+     "τὸν",
+     "τύραννον",
+     "τῆς",
+     "ὠμότητος",
+     "ὅτι",
+     "οὕτω",
+     "χαλεπῶς",
+     "ἄρχει"
+    ]
+   },
+   {
+    "prompt": "It is not reasonable to grieve for those who have died nobly.",
+    "answer": "οὐκ εἰκός ἐστι χαλεπῶς φέρειν τῶν καλῶς ἀποθανόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "εἰκός",
+     "ἐστι",
+     "χαλεπῶς",
+     "φέρειν",
+     "τῶν",
+     "καλῶς",
+     "ἀποθανόντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t9",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "He pitied the captives for their suffering and set them free.",
+    "answer": "ᾤκτιρε τοὺς αἰχμαλώτους τοῦ πάθους καὶ ἠλευθέρωσεν αὐτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾤκτιρε",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "τοῦ",
+     "πάθους",
+     "καὶ",
+     "ἠλευθέρωσεν",
+     "αὐτούς"
+    ]
+   },
+   {
+    "prompt": "After the battle they took vengeance on the enemy for their attack.",
+    "answer": "μετὰ τὴν μάχην ἐτιμωρήσαντο τοὺς πολεμίους τῆς ἐπιθέσεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "ἐτιμωρήσαντο",
+     "τοὺς",
+     "πολεμίους",
+     "τῆς",
+     "ἐπιθέσεως"
+    ]
+   },
+   {
+    "prompt": "We must forgive the young men for their desire for glory.",
+    "answer": "χρὴ συγγιγνώσκειν τοῖς νεανίαις τῆς τῆς δόξης ἐπιθυμίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρὴ",
+     "συγγιγνώσκειν",
+     "τοῖς",
+     "νεανίαις",
+     "τῆς",
+     "δόξης",
+     "ἐπιθυμίας"
+    ]
+   },
+   {
+    "prompt": "I share the joy of my friends at what has happened.",
+    "answer": "συγχαίρω τοῖς φίλοις τῶν γεγενημένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συγχαίρω",
+     "τοῖς",
+     "φίλοις",
+     "τῶν",
+     "γεγενημένων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t10",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "The Thebans laid claim to the whole territory.",
+    "answer": "οἱ Θηβαῖοι τῆς χώρας πάσης ἀντεποιοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Θηβαῖοι",
+     "τῆς",
+     "χώρας",
+     "πάσης",
+     "ἀντεποιοῦντο"
+    ]
+   },
+   {
+    "prompt": "He disputed the kingship with his brother.",
+    "answer": "ἠμφισβήτησε τῷ ἀδελφῷ τῆς βασιλείας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠμφισβήτησε",
+     "τῷ",
+     "ἀδελφῷ",
+     "τῆς",
+     "βασιλείας"
+    ]
+   },
+   {
+    "prompt": "He will oppose us about the retreat of the army.",
+    "answer": "ἐναντιώσεται ἡμῖν τῆς τοῦ στρατεύματος ἀναχωρήσεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐναντιώσεται",
+     "ἡμῖν",
+     "τῆς",
+     "τοῦ",
+     "στρατεύματος",
+     "ἀναχωρήσεως"
+    ]
+   },
+   {
+    "prompt": "We do not dispute the leadership with the allies.",
+    "answer": "οὐ τοῖς συμμάχοις ἀντιποιούμεθα τῆς ἡγεμονίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "τοῖς",
+     "συμμάχοις",
+     "ἀντιποιούμεθα",
+     "τῆς",
+     "ἡγεμονίας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t11",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "Alas for the man, how he has suffered!",
+    "answer": "φεῦ τοῦ ἀνδρός, ὡς πέπονθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεῦ",
+     "τοῦ",
+     "ἀνδρός",
+     "ὡς",
+     "πέπονθεν"
+    ]
+   },
+   {
+    "prompt": "Alas for my misfortune!",
+    "answer": "οἴμοι τῆς δυστυχίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἴμοι",
+     "τῆς",
+     "δυστυχίας"
+    ]
+   },
+   {
+    "prompt": "I wondered at the daring of those who remained.",
+    "answer": "ἐθαύμασα τῆς τόλμης τῶν μεινάντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαύμασα",
+     "τῆς",
+     "τόλμης",
+     "τῶν",
+     "μεινάντων"
+    ]
+   },
+   {
+    "prompt": "I thought you fortunate because of your prudence.",
+    "answer": "σὲ ηὐδαιμόνισα τῆς φρονήσεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὲ",
+     "ηὐδαιμόνισα",
+     "τῆς",
+     "φρονήσεως"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t12",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "The soldiers admired their commander for his courage in the battle.",
+    "answer": "οἱ στρατιῶται ἠγάσθησαν τὸν ἡγεμόνα τῆς ἀνδρείας ἐν τῇ μάχῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἠγάσθησαν",
+     "τὸν",
+     "ἡγεμόνα",
+     "τῆς",
+     "ἀνδρείας",
+     "ἐν",
+     "τῇ",
+     "μάχῃ"
+    ]
+   },
+   {
+    "prompt": "The father blamed his son for his idleness.",
+    "answer": "ὁ πατὴρ ἐμέμψατο τῷ παιδὶ τῆς ῥᾳθυμίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατὴρ",
+     "ἐμέμψατο",
+     "τῷ",
+     "παιδὶ",
+     "τῆς",
+     "ῥᾳθυμίας"
+    ]
+   },
+   {
+    "prompt": "The Athenians envied the Spartans for their discipline.",
+    "answer": "οἱ Ἀθηναῖοι ἐζήλουν τοὺς Λακεδαιμονίους τῆς εὐταξίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ἐζήλουν",
+     "τοὺς",
+     "Λακεδαιμονίους",
+     "τῆς",
+     "εὐταξίας"
+    ]
+   },
+   {
+    "prompt": "It is right to praise the woman for her loyalty.",
+    "answer": "δίκαιόν ἐστι τὴν γυναῖκα αἰνέσαι τῆς πίστεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δίκαιόν",
+     "ἐστι",
+     "τὴν",
+     "γυναῖκα",
+     "αἰνέσαι",
+     "τῆς",
+     "πίστεως"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t13",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "The judges praised the orator for the moderation which he showed in his defense.",
+    "answer": "οἱ δικασταὶ τὸν ῥήτορα τῆς σωφροσύνης ἐπῄνεσαν, ἣν ἐν τῇ ἀπολογίᾳ ἐπεδείξατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "τόν",
+     "ῥήτορα",
+     "τῆς",
+     "σωφροσύνης",
+     "ἐπῄνεσαν",
+     "ἥν",
+     "ἐν",
+     "τῇ",
+     "ἀπολογίᾳ",
+     "ἐπεδείξατο"
+    ]
+   },
+   {
+    "prompt": "We blame the general for his rashness, by which he destroyed the army.",
+    "answer": "τὸν στρατηγὸν τῆς προπετείας μεμφόμεθα, ᾗ τὸ στράτευμα ἀπώλεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "στρατηγόν",
+     "τῆς",
+     "προπετείας",
+     "μεμφόμεθα",
+     "ᾗ",
+     "τό",
+     "στράτευμα",
+     "ἀπώλεσεν"
+    ]
+   },
+   {
+    "prompt": "The citizens envied the victor for his good fortune, though praising his virtue.",
+    "answer": "οἱ πολῖται τὸν νικήσαντα τῆς εὐτυχίας ἐζήλωσαν, καίπερ τὴν ἀρετὴν ἐπαινοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τόν",
+     "νικήσαντα",
+     "τῆς",
+     "εὐτυχίας",
+     "ἐζήλωσαν",
+     "καίπερ",
+     "τήν",
+     "ἀρετήν",
+     "ἐπαινοῦντες"
+    ]
+   },
+   {
+    "prompt": "Alas for the folly of the man!",
+    "answer": "φεῦ τῆς τοῦ ἀνδρὸς ἀνοίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεῦ",
+     "τῆς",
+     "τοῦ",
+     "ἀνδρός",
+     "ἀνοίας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t14",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "The old woman was angry at her son for his idleness, though she loved him.",
+    "answer": "ἡ γραῦς τῷ υἱῷ τῆς ῥᾳθυμίας ὠργίζετο, καίπερ αὐτὸν φιλοῦσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "τῷ",
+     "υἱῷ",
+     "τῆς",
+     "ῥᾳθυμίας",
+     "ὠργίζετο",
+     "καίπερ",
+     "αὐτόν",
+     "φιλοῦσα"
+    ]
+   },
+   {
+    "prompt": "We pitied the widow for her poverty and gave her money.",
+    "answer": "τὴν χήραν τῆς πενίας ᾠκτίραμεν καὶ ἀργύριον αὐτῇ ἐδώκαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "χήραν",
+     "τῆς",
+     "πενίας",
+     "ᾠκτίραμεν",
+     "καί",
+     "ἀργύριον",
+     "αὐτῇ",
+     "ἐδώκαμεν"
+    ]
+   },
+   {
+    "prompt": "The people grew angry at the orators for their thefts.",
+    "answer": "ὁ δῆμος τοῖς ῥήτορσι τῶν κλοπῶν ὠργίσθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "τοῖς",
+     "ῥήτορσι",
+     "τῶν",
+     "κλοπῶν",
+     "ὠργίσθη"
+    ]
+   },
+   {
+    "prompt": "It is not reasonable to grieve about the things that have happened.",
+    "answer": "οὐκ εἰκός ἐστι χαλεπῶς φέρειν τῶν γεγενημένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "εἰκός",
+     "ἐστι",
+     "χαλεπῶς",
+     "φέρειν",
+     "τῶν",
+     "γεγενημένων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t15",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "I wondered at the wisdom of those who were ruling the city.",
+    "answer": "ἐθαύμασα τῆς σοφίας τῶν τὴν πόλιν ἀρχόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαύμασα",
+     "τῆς",
+     "σοφίας",
+     "τῶν",
+     "τήν",
+     "πόλιν",
+     "ἀρχόντων"
+    ]
+   },
+   {
+    "prompt": "Admiring the stranger for his zeal, they honored him greatly.",
+    "answer": "τὸν ξένον τῆς προθυμίας ἀγασθέντες σφόδρα ἐτίμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "ξένον",
+     "τῆς",
+     "προθυμίας",
+     "ἀγασθέντες",
+     "σφόδρα",
+     "ἐτίμησαν"
+    ]
+   },
+   {
+    "prompt": "They took vengeance on the enemy for the attack which they had made on the walls.",
+    "answer": "τοὺς πολεμίους τῆς ἐπιθέσεως ἐτιμωρήσαντο, ἣν ἐπὶ τὰ τείχη ἐποιήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "πολεμίους",
+     "τῆς",
+     "ἐπιθέσεως",
+     "ἐτιμωρήσαντο",
+     "ἥν",
+     "ἐπί",
+     "τά",
+     "τείχη",
+     "ἐποιήσαντο"
+    ]
+   },
+   {
+    "prompt": "I count you happy because of your disposition, since you bear misfortunes easily.",
+    "answer": "εὐδαιμονίζω σε τοῦ τρόπου, ὅτι ῥᾳδίως τὰς συμφορὰς φέρεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐδαιμονίζω",
+     "σε",
+     "τοῦ",
+     "τρόπου",
+     "ὅτι",
+     "ῥᾳδίως",
+     "τάς",
+     "συμφοράς",
+     "φέρεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-t16",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "The brothers disputed with one another about their father's house.",
+    "answer": "οἱ ἀδελφοὶ ἀλλήλοις τῆς τοῦ πατρὸς οἰκίας ἠμφισβήτουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀδελφοί",
+     "ἀλλήλοις",
+     "τῆς",
+     "τοῦ",
+     "πατρός",
+     "οἰκίας",
+     "ἠμφισβήτουν"
+    ]
+   },
+   {
+    "prompt": "They opposed the generals about the retreat, fearing the cavalry of the enemy.",
+    "answer": "τοῖς στρατηγοῖς τῆς ἀναχωρήσεως ἐναντιοῦντο, τὴν τῶν πολεμίων ἵππον φοβούμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "στρατηγοῖς",
+     "τῆς",
+     "ἀναχωρήσεως",
+     "ἐναντιοῦντο",
+     "τήν",
+     "τῶν",
+     "πολεμίων",
+     "ἵππον",
+     "φοβούμενοι"
+    ]
+   },
+   {
+    "prompt": "The whole plot was contrived for the purpose of destroying the city.",
+    "answer": "πᾶσα ἡ ἐπιβουλὴ συνεσκευάσθη τοῦ τὴν πόλιν ἀπολέσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶσα",
+     "ἡ",
+     "ἐπιβουλή",
+     "συνεσκευάσθη",
+     "τοῦ",
+     "τήν",
+     "πόλιν",
+     "ἀπολέσαι"
+    ]
+   },
+   {
+    "prompt": "We lay claim to the leadership, since we were the first to fight the barbarians.",
+    "answer": "τῆς ἡγεμονίας ἀντιποιούμεθα, ἐπειδὴ πρῶτοι τοῖς βαρβάροις ἐμαχεσάμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "ἡγεμονίας",
+     "ἀντιποιούμεθα",
+     "ἐπειδή",
+     "πρῶτοι",
+     "τοῖς",
+     "βαρβάροις",
+     "ἐμαχεσάμεθα"
+    ]
+   }
+  ]
+ }
+]

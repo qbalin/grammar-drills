@@ -1,0 +1,750 @@
+[
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t1",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "When the danger was threatening, the soldiers chose Xenophon general.",
+    "answer": "οἱ στρατιῶται, τοῦ κινδύνου ἐπιόντος, τὸν Ξενοφῶντα στρατηγὸν εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοῦ",
+     "κινδύνου",
+     "ἐπιόντος",
+     "τὸν",
+     "Ξενοφῶντα",
+     "στρατηγόν",
+     "εἵλοντο"
+    ]
+   },
+   {
+    "prompt": "They appointed the old man judge of the contest.",
+    "answer": "τὸν πρεσβύτην δικαστὴν τοῦ ἀγῶνος ἀπέδειξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "πρεσβύτην",
+     "δικαστήν",
+     "τοῦ",
+     "ἀγῶνος",
+     "ἀπέδειξαν"
+    ]
+   },
+   {
+    "prompt": "It is not just to consider the bad good at random.",
+    "answer": "οὐ δίκαιόν ἐστι τοὺς κακοὺς μάτην χρηστοὺς νομίζειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιόν",
+     "ἐστι",
+     "τοὺς",
+     "κακούς",
+     "μάτην",
+     "χρηστούς",
+     "νομίζειν"
+    ]
+   },
+   {
+    "prompt": "The citizens, admiring his wisdom, named him lawgiver.",
+    "answer": "οἱ πολῖται, τὴν σοφίαν αὐτοῦ θαυμάζοντες, νομοθέτην αὐτὸν ὠνόμασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "σοφίαν",
+     "αὐτοῦ",
+     "θαυμάζοντες",
+     "νομοθέτην",
+     "αὐτόν",
+     "ὠνόμασαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t2",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "He has made himself master of the whole city.",
+    "answer": "ἑαυτὸν δεσπότην πάσης τῆς πόλεως ἐποίησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑαυτόν",
+     "δεσπότην",
+     "πάσης",
+     "τῆς",
+     "πόλεως",
+     "ἐποίησεν"
+    ]
+   },
+   {
+    "prompt": "If you make me your servant, I will gladly obey you.",
+    "answer": "ἐὰν ἐμὲ σὸν θεράποντα ποιήσῃς, ἡδέως σοι πείσομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἐμέ",
+     "σόν",
+     "θεράποντα",
+     "ποιήσῃς",
+     "ἡδέως",
+     "σοι",
+     "πείσομαι"
+    ]
+   },
+   {
+    "prompt": "The teacher rendered everything easy to learn for his pupils.",
+    "answer": "ὁ διδάσκαλος πάντα εὐμαθῆ τοῖς μαθηταῖς παρεῖχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "πάντα",
+     "εὐμαθῆ",
+     "τοῖς",
+     "μαθηταῖς",
+     "παρεῖχεν"
+    ]
+   },
+   {
+    "prompt": "War makes many men bold, but few wise.",
+    "answer": "ὁ πόλεμος πολλοὺς μὲν θρασεῖς, ὀλίγους δὲ σοφοὺς ποιεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πόλεμος",
+     "πολλούς",
+     "μέν",
+     "θρασεῖς",
+     "ὀλίγους",
+     "δέ",
+     "σοφούς",
+     "ποιεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t3",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "Long ago you used to call me father, but now you flee me as an enemy.",
+    "answer": "πάλαι μὲν πατέρα με ἐκάλεις, νῦν δὲ ὡς πολέμιον φεύγεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάλαι",
+     "μέν",
+     "πατέρα",
+     "με",
+     "ἐκάλεις",
+     "νῦν",
+     "δέ",
+     "ὡς",
+     "πολέμιον",
+     "φεύγεις"
+    ]
+   },
+   {
+    "prompt": "The Greeks call this man a sophist.",
+    "answer": "οἱ Ἕλληνες σοφιστὴν ὀνομάζουσι τὸν ἄνδρα εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "σοφιστήν",
+     "ὀνομάζουσι",
+     "τὸν",
+     "ἄνδρα",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Showing yourself a sophist before the Greeks, you take money.",
+    "answer": "εἰς τοὺς Ἕλληνας σαυτὸν σοφιστὴν παρέχων χρήματα λαμβάνεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τοὺς",
+     "Ἕλληνας",
+     "σαυτόν",
+     "σοφιστήν",
+     "παρέχων",
+     "χρήματα",
+     "λαμβάνεις"
+    ]
+   },
+   {
+    "prompt": "I shall consider your silence a consent.",
+    "answer": "τὴν σιγήν σου συγχώρησιν θήσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "σιγήν",
+     "σου",
+     "συγχώρησιν",
+     "θήσω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t4",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "Timotheus was elected general by the Athenians.",
+    "answer": "Τιμόθεος ὑπὸ τῶν Ἀθηναίων στρατηγὸς ἐχειροτονήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τιμόθεος",
+     "ὑπό",
+     "τῶν",
+     "Ἀθηναίων",
+     "στρατηγός",
+     "ἐχειροτονήθη"
+    ]
+   },
+   {
+    "prompt": "He himself was chosen general in the assembly.",
+    "answer": "αὐτὸς ἐν τῇ ἐκκλησίᾳ στρατηγὸς ᾑρέθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτός",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "στρατηγός",
+     "ᾑρέθη"
+    ]
+   },
+   {
+    "prompt": "Those who established good laws shall be called lawgivers.",
+    "answer": "οἱ τοὺς ἀγαθοὺς νόμους θέντες νομοθέται κληθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "ἀγαθούς",
+     "νόμους",
+     "θέντες",
+     "νομοθέται",
+     "κληθήσονται"
+    ]
+   },
+   {
+    "prompt": "The young man was appointed guardian of the children.",
+    "answer": "ὁ νεανίας τῶν παίδων ἐπίτροπος ἀπεδείχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "τῶν",
+     "παίδων",
+     "ἐπίτροπος",
+     "ἀπεδείχθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t5",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "The judges considered his silence a confession.",
+    "answer": "οἱ δικασταὶ τὴν σιγὴν αὐτοῦ ὁμολογίαν ἐνόμιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "τὴν",
+     "σιγήν",
+     "αὐτοῦ",
+     "ὁμολογίαν",
+     "ἐνόμιζον"
+    ]
+   },
+   {
+    "prompt": "Many consider wealth the greatest good.",
+    "answer": "πολλοὶ τὸν πλοῦτον μέγιστον ἀγαθὸν ἡγοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοί",
+     "τὸν",
+     "πλοῦτον",
+     "μέγιστον",
+     "ἀγαθόν",
+     "ἡγοῦνται"
+    ]
+   },
+   {
+    "prompt": "The general chose the king himself as arbitrator of the dispute.",
+    "answer": "ὁ στρατηγὸς τῆς διαφορᾶς αὐτὸν τὸν βασιλέα δικαστὴν εἵλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τῆς",
+     "διαφορᾶς",
+     "αὐτόν",
+     "τὸν",
+     "βασιλέα",
+     "δικαστήν",
+     "εἵλετο"
+    ]
+   },
+   {
+    "prompt": "He promised to make his flatterers the richest of the citizens.",
+    "answer": "ἐπηγγέλλετο τοὺς κόλακας τοὺς ἑαυτοῦ πλουσιωτάτους τῶν πολιτῶν ποιήσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπηγγέλλετο",
+     "τοὺς",
+     "κόλακας",
+     "ἑαυτοῦ",
+     "πλουσιωτάτους",
+     "τῶν",
+     "πολιτῶν",
+     "ποιήσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t6",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "I gave them the ransom as a free gift.",
+    "answer": "ἔδωκα αὐτοῖς τὰ λύτρα δωρεάν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδωκα",
+     "αὐτοῖς",
+     "τὰ",
+     "λύτρα",
+     "δωρεάν"
+    ]
+   },
+   {
+    "prompt": "The people appointed the brave soldier commander of the fleet.",
+    "answer": "ὁ δῆμος τὸν ἀνδρεῖον στρατιώτην ναύαρχον ἀπέδειξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "τὸν",
+     "ἀνδρεῖον",
+     "στρατιώτην",
+     "ναύαρχον",
+     "ἀπέδειξεν"
+    ]
+   },
+   {
+    "prompt": "Nature made the lion strongest of the beasts.",
+    "answer": "ἡ φύσις τὸν λέοντα ἰσχυρότατον τῶν θηρίων ἐποίησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φύσις",
+     "τὸν",
+     "λέοντα",
+     "ἰσχυρότατον",
+     "τῶν",
+     "θηρίων",
+     "ἐποίησεν"
+    ]
+   },
+   {
+    "prompt": "The Persians called Cyrus their father because of his justice.",
+    "answer": "οἱ Πέρσαι τὸν Κῦρον διὰ τὴν δικαιοσύνην πατέρα ἐκάλουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "τὸν",
+     "Κῦρον",
+     "διά",
+     "τὴν",
+     "δικαιοσύνην",
+     "πατέρα",
+     "ἐκάλουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t7",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "The citizens showed themselves faithful guardians of freedom.",
+    "answer": "οἱ πολῖται ἑαυτοὺς πιστοὺς φύλακας τῆς ἐλευθερίας παρέσχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἑαυτοὺς",
+     "πιστοὺς",
+     "φύλακας",
+     "τῆς",
+     "ἐλευθερίας",
+     "παρέσχον"
+    ]
+   },
+   {
+    "prompt": "Do not consider bad men good, nor good men worthless.",
+    "answer": "μὴ νόμιζε τοὺς κακοὺς ἀγαθούς, μηδὲ τοὺς ἀγαθοὺς φαύλους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "νόμιζε",
+     "τοὺς",
+     "κακοὺς",
+     "ἀγαθούς",
+     "μηδὲ",
+     "ἀγαθοὺς",
+     "φαύλους"
+    ]
+   },
+   {
+    "prompt": "The Persians called Cyrus their king while he was still young.",
+    "answer": "οἱ Πέρσαι τὸν Κῦρον ἔτι νέον ὄντα βασιλέα ἐκάλουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "τὸν",
+     "Κῦρον",
+     "ἔτι",
+     "νέον",
+     "ὄντα",
+     "βασιλέα",
+     "ἐκάλουν"
+    ]
+   },
+   {
+    "prompt": "He showed himself a sophist before the assembled Greeks.",
+    "answer": "εἰς τοὺς συνειλεγμένους Ἕλληνας ἑαυτὸν σοφιστὴν παρεῖχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τοὺς",
+     "συνειλεγμένους",
+     "Ἕλληνας",
+     "ἑαυτὸν",
+     "σοφιστὴν",
+     "παρεῖχεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t8",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "They elected Pericles general many times.",
+    "answer": "τὸν Περικλέα πολλάκις στρατηγὸν ἐχειροτόνησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "Περικλέα",
+     "πολλάκις",
+     "στρατηγὸν",
+     "ἐχειροτόνησαν"
+    ]
+   },
+   {
+    "prompt": "I shall consider your gift a sign of friendship.",
+    "answer": "τὸ σὸν δῶρον σημεῖον φιλίας θήσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "σὸν",
+     "δῶρον",
+     "σημεῖον",
+     "φιλίας",
+     "θήσω"
+    ]
+   },
+   {
+    "prompt": "If you make me your servant, I shall serve you faithfully.",
+    "answer": "ἐὰν ἐμὲ σὸν θεράποντα ποιήσῃς, πιστῶς σοι ὑπηρετήσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ἐμὲ",
+     "σὸν",
+     "θεράποντα",
+     "ποιήσῃς",
+     "πιστῶς",
+     "σοι",
+     "ὑπηρετήσω"
+    ]
+   },
+   {
+    "prompt": "The people named him founder of the city.",
+    "answer": "ὁ δῆμος αὐτὸν οἰκιστὴν τῆς πόλεως ὠνόμασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "αὐτὸν",
+     "οἰκιστὴν",
+     "τῆς",
+     "πόλεως",
+     "ὠνόμασεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t9",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "The general was chosen leader of the whole expedition.",
+    "answer": "ὁ στρατηγὸς ἡγεμὼν πάσης τῆς στρατείας ᾑρέθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἡγεμὼν",
+     "πάσης",
+     "τῆς",
+     "στρατείας",
+     "ᾑρέθη"
+    ]
+   },
+   {
+    "prompt": "They call the man wise, although he understands nothing.",
+    "answer": "σοφὸν τὸν ἄνδρα καλοῦσιν, καίπερ οὐδὲν ἐπιστάμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφὸν",
+     "τὸν",
+     "ἄνδρα",
+     "καλοῦσιν",
+     "καίπερ",
+     "οὐδὲν",
+     "ἐπιστάμενον"
+    ]
+   },
+   {
+    "prompt": "The Athenians appointed him ambassador to the king.",
+    "answer": "οἱ Ἀθηναῖοι αὐτὸν πρεσβευτὴν πρὸς τὸν βασιλέα ἀπέδειξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "αὐτὸν",
+     "πρεσβευτὴν",
+     "πρὸς",
+     "τὸν",
+     "βασιλέα",
+     "ἀπέδειξαν"
+    ]
+   },
+   {
+    "prompt": "Render everything easy to learn for the young.",
+    "answer": "πάντα τοῖς νέοις εὐμαθῆ παρέχε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "τοῖς",
+     "νέοις",
+     "εὐμαθῆ",
+     "παρέχε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t10",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "The soldiers proclaimed the brave youth their king.",
+    "answer": "οἱ στρατιῶται τὸν ἀνδρεῖον νεανίαν βασιλέα ἀνεῖπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "ἀνδρεῖον",
+     "νεανίαν",
+     "βασιλέα",
+     "ἀνεῖπον"
+    ]
+   },
+   {
+    "prompt": "Consider no one happy before his death.",
+    "answer": "μηδένα νόμιζε εὐδαίμονα πρὸ τῆς τελευτῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδένα",
+     "νόμιζε",
+     "εὐδαίμονα",
+     "πρὸ",
+     "τῆς",
+     "τελευτῆς"
+    ]
+   },
+   {
+    "prompt": "The city proclaimed him its benefactor.",
+    "answer": "ἡ πόλις αὐτὸν εὐεργέτην ἀνηγόρευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "αὐτὸν",
+     "εὐεργέτην",
+     "ἀνηγόρευσεν"
+    ]
+   },
+   {
+    "prompt": "They will themselves be called lawgivers of the new city.",
+    "answer": "αὐτοὶ νομοθέται τῆς νέας πόλεως κληθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοὶ",
+     "νομοθέται",
+     "τῆς",
+     "νέας",
+     "πόλεως",
+     "κληθήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t11",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "The wise consider virtue the greatest good.",
+    "answer": "οἱ σοφοὶ τὴν ἀρετὴν μέγιστον ἀγαθὸν νομίζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοὶ",
+     "τὴν",
+     "ἀρετὴν",
+     "μέγιστον",
+     "ἀγαθὸν",
+     "νομίζουσιν"
+    ]
+   },
+   {
+    "prompt": "He appointed his own son guardian of the children.",
+    "answer": "τὸν ἑαυτοῦ υἱὸν ἐπίτροπον τῶν παίδων κατέστησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἑαυτοῦ",
+     "υἱὸν",
+     "ἐπίτροπον",
+     "τῶν",
+     "παίδων",
+     "κατέστησεν"
+    ]
+   },
+   {
+    "prompt": "You used to call me a friend, but now you consider me an enemy.",
+    "answer": "φίλον με ἐκάλεις, νῦν δὲ πολέμιόν με νομίζεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φίλον",
+     "με",
+     "ἐκάλεις",
+     "νῦν",
+     "δὲ",
+     "πολέμιόν",
+     "νομίζεις"
+    ]
+   },
+   {
+    "prompt": "The general was appointed satrap of the whole region.",
+    "answer": "ὁ στρατηγὸς σατράπης πάσης τῆς χώρας κατεστάθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "σατράπης",
+     "πάσης",
+     "τῆς",
+     "χώρας",
+     "κατεστάθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-t12",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "Nature has made man a political animal.",
+    "answer": "ἡ φύσις τὸν ἄνθρωπον πολιτικὸν ζῷον πεποίηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φύσις",
+     "τὸν",
+     "ἄνθρωπον",
+     "πολιτικὸν",
+     "ζῷον",
+     "πεποίηκεν"
+    ]
+   },
+   {
+    "prompt": "They chose the old man arbitrator of the dispute.",
+    "answer": "τὸν γέροντα διαιτητὴν τῆς διαφορᾶς εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "γέροντα",
+     "διαιτητὴν",
+     "τῆς",
+     "διαφορᾶς",
+     "εἵλοντο"
+    ]
+   },
+   {
+    "prompt": "I consider this deed a proof of his courage.",
+    "answer": "τοῦτο τὸ ἔργον τεκμήριον τῆς ἀνδρείας αὐτοῦ ποιοῦμαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ἔργον",
+     "τεκμήριον",
+     "τῆς",
+     "ἀνδρείας",
+     "αὐτοῦ",
+     "ποιοῦμαι"
+    ]
+   },
+   {
+    "prompt": "The soldiers were chosen judges of the contest.",
+    "answer": "οἱ στρατιῶται κριταὶ τοῦ ἀγῶνος ᾑρέθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "κριταὶ",
+     "τοῦ",
+     "ἀγῶνος",
+     "ᾑρέθησαν"
+    ]
+   }
+  ]
+ }
+]
