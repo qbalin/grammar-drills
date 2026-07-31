@@ -1,0 +1,552 @@
+[
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t1",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "You and I have often deceived the enemy.",
+    "answer": "ἐγὼ καὶ σὺ πολλάκις τοὺς πολεμίους ἐξηπατήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγώ",
+     "καί",
+     "σύ",
+     "πολλάκις",
+     "τούς",
+     "πολεμίους",
+     "ἐξηπατήσαμεν"
+    ]
+   },
+   {
+    "prompt": "The whole space between the mountains was three stades.",
+    "answer": "ἅπαν τὸ μέσον τῶν ὀρῶν στάδιοι τρεῖς ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅπαν",
+     "τό",
+     "μέσον",
+     "τῶν",
+     "ὀρῶν",
+     "στάδιοι",
+     "τρεῖς",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "The suppliants fear lest the general vote against them.",
+    "answer": "οἱ ἱκέται φοβοῦνται μὴ ὁ στρατηγὸς ἀποψηφίσηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱκέται",
+     "φοβοῦνται",
+     "μή",
+     "ὁ",
+     "στρατηγός",
+     "ἀποψηφίσηται"
+    ]
+   },
+   {
+    "prompt": "We shall all go back again to the sea.",
+    "answer": "ἅπαντες πάλιν πρὸς τὴν θάλατταν ἄπιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅπαντες",
+     "πάλιν",
+     "πρός",
+     "τήν",
+     "θάλατταν",
+     "ἄπιμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t2",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "These two little boys are dear to me.",
+    "answer": "τὼ παιδίω τώδε φίλω ἐστὸν ἐμοί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τώ",
+     "παιδίω",
+     "τώδε",
+     "φίλω",
+     "ἐστόν",
+     "ἐμοί"
+    ]
+   },
+   {
+    "prompt": "The two brothers were both brave.",
+    "answer": "τὼ ἀδελφὼ ἀμφοτέρω ἀνδρείω ἤστην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τώ",
+     "ἀδελφώ",
+     "ἀμφοτέρω",
+     "ἀνδρείω",
+     "ἤστην"
+    ]
+   },
+   {
+    "prompt": "You chase after pleasure as if it were a good.",
+    "answer": "τὴν ἡδονὴν διώκετε ὡς ἀγαθὸν ὄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "ἡδονήν",
+     "διώκετε",
+     "ὡς",
+     "ἀγαθόν",
+     "ὄν"
+    ]
+   },
+   {
+    "prompt": "That crowd was ten thousand men.",
+    "answer": "ἐκεῖνος ὁ ὄχλος μύριοι ἄνδρες ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνος",
+     "ὁ",
+     "ὄχλος",
+     "μύριοι",
+     "ἄνδρες",
+     "ἦσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t3",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "I fear lest you may suffer these things.",
+    "answer": "δέδοικα μὴ ταῦτα πάθητε ὑμεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μή",
+     "ταῦτα",
+     "πάθητε",
+     "ὑμεῖς"
+    ]
+   },
+   {
+    "prompt": "You and your brother are cowards.",
+    "answer": "σὺ καὶ ὁ ἀδελφὸς δειλοί ἐστε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "καί",
+     "ὁ",
+     "ἀδελφός",
+     "δειλοί",
+     "ἐστε"
+    ]
+   },
+   {
+    "prompt": "They pursue wealth as if it were the greatest good.",
+    "answer": "τὸν πλοῦτον διώκουσιν ὡς μέγιστον ἀγαθὸν ὄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "πλοῦτον",
+     "διώκουσιν",
+     "ὡς",
+     "μέγιστον",
+     "ἀγαθόν",
+     "ὄν"
+    ]
+   },
+   {
+    "prompt": "This decree was passed by the assembly.",
+    "answer": "τοῦτο τὸ ψήφισμα ὑπὸ τῆς ἐκκλησίας ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τό",
+     "ψήφισμα",
+     "ὑπό",
+     "τῆς",
+     "ἐκκλησίας",
+     "ἐγένετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t4",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "The soldiers, having conquered the enemy, went off home.",
+    "answer": "οἱ στρατιῶται νικήσαντες τοὺς πολεμίους οἴκαδε ἀπῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "νικήσαντες",
+     "τούς",
+     "πολεμίους",
+     "οἴκαδε",
+     "ἀπῆλθον"
+    ]
+   },
+   {
+    "prompt": "You and I saw the terrible sea.",
+    "answer": "ἐγὼ καὶ σὺ τὸν σμερδαλέον πόντον εἴδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγώ",
+     "καί",
+     "σύ",
+     "τόν",
+     "σμερδαλέον",
+     "πόντον",
+     "εἴδομεν"
+    ]
+   },
+   {
+    "prompt": "The army was two thousand hoplites.",
+    "answer": "τὸ στράτευμα δισχίλιοι ὁπλῖται ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "στράτευμα",
+     "δισχίλιοι",
+     "ὁπλῖται",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "We honor the law as being something divine.",
+    "answer": "τὸν νόμον τιμῶμεν ὡς θεῖόν τι ὄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "νόμον",
+     "τιμῶμεν",
+     "ὡς",
+     "θεῖον",
+     "τι",
+     "ὄν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t5",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "If the others vote against us, we shall all depart.",
+    "answer": "ἐὰν οἱ ἄλλοι ἀποψηφίσωνται, ἅπαντες ἄπιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "ἄλλοι",
+     "ἀποψηφίσωνται",
+     "ἅπαντες",
+     "ἄπιμεν"
+    ]
+   },
+   {
+    "prompt": "These two women are wise.",
+    "answer": "τὼ γυναῖκε τώδε σοφὼ ἐστόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τώ",
+     "γυναῖκε",
+     "τώδε",
+     "σοφώ",
+     "ἐστόν"
+    ]
+   },
+   {
+    "prompt": "The remnant of the army was a hundred men.",
+    "answer": "τὸ λοιπὸν τοῦ στρατεύματος ἑκατὸν ἄνδρες ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "λοιπόν",
+     "τοῦ",
+     "στρατεύματος",
+     "ἑκατόν",
+     "ἄνδρες",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "I and my companions guarded the camp.",
+    "answer": "ἐγὼ καὶ οἱ ἑταῖροι τὸ στρατόπεδον ἐφυλάξαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγώ",
+     "καί",
+     "οἱ",
+     "ἑταῖροι",
+     "τό",
+     "στρατόπεδον",
+     "ἐφυλάξαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t6",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "I fear lest the general display his folly.",
+    "answer": "δέδοικα μὴ ὁ στρατηγὸς τὴν ἀφροσύνην ἐνδείξηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μή",
+     "ὁ",
+     "στρατηγός",
+     "τήν",
+     "ἀφροσύνην",
+     "ἐνδείξηται"
+    ]
+   },
+   {
+    "prompt": "You and the citizens fear the Persian king.",
+    "answer": "σὺ καὶ οἱ πολῖται τὸν Περσικὸν βασιλέα φοβεῖσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "καί",
+     "οἱ",
+     "πολῖται",
+     "τόν",
+     "Περσικόν",
+     "βασιλέα",
+     "φοβεῖσθε"
+    ]
+   },
+   {
+    "prompt": "The whole throng of the suppliants was many.",
+    "answer": "πᾶν τὸ πλῆθος τῶν ἱκετῶν πολλοὶ ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶν",
+     "τό",
+     "πλῆθος",
+     "τῶν",
+     "ἱκετῶν",
+     "πολλοί",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "They were lamenting over the child as though he were dead.",
+    "answer": "ὠλοφύροντο τὸ παιδίον ὡς νεκρὸν ὄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὠλοφύροντο",
+     "τό",
+     "παιδίον",
+     "ὡς",
+     "νεκρόν",
+     "ὄν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t7",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "The women, having heard the herald, fled into the temple.",
+    "answer": "αἱ γυναῖκες τὸν κήρυκα ἀκούσασαι εἰς τὸ ἱερὸν ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "τὸν",
+     "κήρυκα",
+     "ἀκούσασαι",
+     "εἰς",
+     "τὸ",
+     "ἱερὸν",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "This decree became the cause of great misfortunes.",
+    "answer": "τοῦτο τὸ ψήφισμα αἴτιον μεγάλων συμφορῶν ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ψήφισμα",
+     "αἴτιον",
+     "μεγάλων",
+     "συμφορῶν",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "The whole space between the rivers was ten stades.",
+    "answer": "ἅπαν τὸ μεταξὺ τῶν ποταμῶν στάδιοι δέκα ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅπαν",
+     "τὸ",
+     "μεταξὺ",
+     "τῶν",
+     "ποταμῶν",
+     "στάδιοι",
+     "δέκα",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "These two soldiers were guarding the gates.",
+    "answer": "τούτω τὼ στρατιώτα τὰς πύλας ἐφυλαττέτην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτω",
+     "τὼ",
+     "στρατιώτα",
+     "τὰς",
+     "πύλας",
+     "ἐφυλαττέτην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t8",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "This victory became the beginning of freedom for the Greeks.",
+    "answer": "αὕτη ἡ νίκη ἀρχὴ τῆς ἐλευθερίας τοῖς Ἕλλησιν ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "νίκη",
+     "ἀρχὴ",
+     "τῆς",
+     "ἐλευθερίας",
+     "τοῖς",
+     "Ἕλλησιν",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "The generals, having drawn up the army, awaited the enemy.",
+    "answer": "οἱ στρατηγοὶ τὴν στρατιὰν τάξαντες τοὺς πολεμίους ἀνέμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατηγοὶ",
+     "τὴν",
+     "στρατιὰν",
+     "τάξαντες",
+     "τοὺς",
+     "πολεμίους",
+     "ἀνέμενον"
+    ]
+   },
+   {
+    "prompt": "You honor wealth as though it were a good thing.",
+    "answer": "τὸν πλοῦτον τιμᾷς ὡς ἀγαθὸν ὄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "πλοῦτον",
+     "τιμᾷς",
+     "ὡς",
+     "ἀγαθὸν",
+     "ὄν"
+    ]
+   },
+   {
+    "prompt": "My brother and I were guarding the ships.",
+    "answer": "ὁ ἀδελφὸς καὶ ἐγὼ τὰς ναῦς ἐφυλάττομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀδελφὸς",
+     "καὶ",
+     "ἐγὼ",
+     "τὰς",
+     "ναῦς",
+     "ἐφυλάττομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-t9",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "The whole army was four thousand hoplites.",
+    "answer": "πᾶν τὸ στράτευμα ὁπλῖται τετρακισχίλιοι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶν",
+     "τὸ",
+     "στράτευμα",
+     "ὁπλῖται",
+     "τετρακισχίλιοι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "The deeds of the children were worthy of praise.",
+    "answer": "τὰ τῶν παίδων ἔργα ἐπαίνου ἄξια ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "παίδων",
+     "ἔργα",
+     "ἐπαίνου",
+     "ἄξια",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "This man, whom everyone honored, became a tyrant.",
+    "answer": "οὗτος ὁ ἀνήρ, ὃν πάντες ἐτίμων, τύραννος ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "ἀνήρ",
+     "ὃν",
+     "πάντες",
+     "ἐτίμων",
+     "τύραννος",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "You and your father are worthy of great honor.",
+    "answer": "σὺ καὶ ὁ πατὴρ μεγάλης τιμῆς ἄξιοι ἐστέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "καὶ",
+     "ὁ",
+     "πατὴρ",
+     "μεγάλης",
+     "τιμῆς",
+     "ἄξιοι",
+     "ἐστέ"
+    ]
+   }
+  ]
+ }
+]

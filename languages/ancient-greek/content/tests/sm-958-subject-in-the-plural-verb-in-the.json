@@ -1,0 +1,711 @@
+[
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t1",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The trees in the garden bear beautiful fruit.",
+    "answer": "τὰ ἐν τῷ κήπῳ δένδρα καλὸν καρπὸν φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἐν",
+     "τῷ",
+     "κήπῳ",
+     "δένδρα",
+     "καλόν",
+     "καρπόν",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "The sacrifices were propitious, so the general led out the army.",
+    "answer": "τὰ σφάγια καλὰ ἦν, ὥστε ὁ στρατηγὸς τὸ στράτευμα ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "σφάγια",
+     "καλά",
+     "ἦν",
+     "ὥστε",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "The weapons of the enemy lay upon the plain.",
+    "answer": "τὰ τῶν πολεμίων ὅπλα ἐν τῷ πεδίῳ ἔκειτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "πολεμίων",
+     "ὅπλα",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ἔκειτο"
+    ]
+   },
+   {
+    "prompt": "The children always love those who nurture them.",
+    "answer": "τὰ τέκνα τοὺς τρέφοντας ἀεὶ φιλεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τέκνα",
+     "τούς",
+     "τρέφοντας",
+     "ἀεί",
+     "φιλεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t2",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The stars shine brightly throughout the whole night.",
+    "answer": "τὰ ἄστρα διὰ ὅλης τῆς νυκτὸς λαμπρῶς λάμπει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἄστρα",
+     "διά",
+     "ὅλης",
+     "τῆς",
+     "νυκτός",
+     "λαμπρῶς",
+     "λάμπει"
+    ]
+   },
+   {
+    "prompt": "The affairs of the city were then in a bad state.",
+    "answer": "τὰ τῆς πόλεως πράγματα τότε κακῶς εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῆς",
+     "πόλεως",
+     "πράγματα",
+     "τότε",
+     "κακῶς",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "Many gifts were sent by the king to the Greeks.",
+    "answer": "πολλὰ δῶρα ὑπὸ τοῦ βασιλέως τοῖς Ἕλλησιν ἐπέμφθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλά",
+     "δῶρα",
+     "ὑπό",
+     "τοῦ",
+     "βασιλέως",
+     "τοῖς",
+     "Ἕλλησιν",
+     "ἐπέμφθη"
+    ]
+   },
+   {
+    "prompt": "The waves kept dashing against the ships all day long.",
+    "answer": "τὰ κύματα ταῖς ναυσὶ πᾶσαν τὴν ἡμέραν προσέπιπτεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "κύματα",
+     "ταῖς",
+     "ναυσί",
+     "πᾶσαν",
+     "τήν",
+     "ἡμέραν",
+     "προσέπιπτεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t3",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The animals that live in the forest fear men.",
+    "answer": "τὰ ἐν τῇ ὕλῃ ζῷα τοὺς ἀνθρώπους φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἐν",
+     "τῇ",
+     "ὕλῃ",
+     "ζῷα",
+     "τούς",
+     "ἀνθρώπους",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "The walls of the city had been destroyed by the enemy.",
+    "answer": "τὰ τῆς πόλεως τείχη ὑπὸ τῶν πολεμίων καθῄρητο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῆς",
+     "πόλεως",
+     "τείχη",
+     "ὑπό",
+     "τῶν",
+     "πολεμίων",
+     "καθῄρητο"
+    ]
+   },
+   {
+    "prompt": "The good things of life do not remain forever.",
+    "answer": "τὰ τοῦ βίου ἀγαθὰ οὐκ ἀεὶ μένει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τοῦ",
+     "βίου",
+     "ἀγαθά",
+     "οὐκ",
+     "ἀεί",
+     "μένει"
+    ]
+   },
+   {
+    "prompt": "The leaves fall from the trees in autumn.",
+    "answer": "τὰ φύλλα τοῦ μετοπώρου ἀπὸ τῶν δένδρων πίπτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "φύλλα",
+     "τοῦ",
+     "μετοπώρου",
+     "ἀπό",
+     "τῶν",
+     "δένδρων",
+     "πίπτει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t4",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The deeds of brave men win great praise.",
+    "answer": "τὰ τῶν ἀνδρείων ἔργα μέγαν ἔπαινον φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "ἀνδρείων",
+     "ἔργα",
+     "μέγαν",
+     "ἔπαινον",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "The letters that the messenger brought gladdened the king.",
+    "answer": "τὰ γράμματα ἃ ὁ ἄγγελος ἤνεγκε τὸν βασιλέα ηὔφρανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "γράμματα",
+     "ἅ",
+     "ὁ",
+     "ἄγγελος",
+     "ἤνεγκε",
+     "τόν",
+     "βασιλέα",
+     "ηὔφρανεν"
+    ]
+   },
+   {
+    "prompt": "The mountains had been covered with deep snow.",
+    "answer": "τὰ ὄρη βαθείᾳ χιόνι ἐκεκάλυπτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ὄρη",
+     "βαθείᾳ",
+     "χιόνι",
+     "ἐκεκάλυπτο"
+    ]
+   },
+   {
+    "prompt": "Many evils befall those who love money.",
+    "answer": "πολλὰ κακὰ τοῖς τὰ χρήματα φιλοῦσι συμβαίνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλά",
+     "κακά",
+     "τοῖς",
+     "τά",
+     "χρήματα",
+     "φιλοῦσι",
+     "συμβαίνει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t5",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The teams of horses stood ready before the gates.",
+    "answer": "τὰ ζεύγη πρὸ τῶν πυλῶν ἕτοιμα εἱστήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ζεύγη",
+     "πρό",
+     "τῶν",
+     "πυλῶν",
+     "ἕτοιμα",
+     "εἱστήκει"
+    ]
+   },
+   {
+    "prompt": "The words of the wise often persuade the young.",
+    "answer": "τὰ τῶν σοφῶν ῥήματα πολλάκις τοὺς νέους πείθει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "σοφῶν",
+     "ῥήματα",
+     "πολλάκις",
+     "τούς",
+     "νέους",
+     "πείθει"
+    ]
+   },
+   {
+    "prompt": "The bones of the dead lay unburied.",
+    "answer": "τὰ τῶν νεκρῶν ὀστᾶ ἄταφα ἔκειτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "νεκρῶν",
+     "ὀστᾶ",
+     "ἄταφα",
+     "ἔκειτο"
+    ]
+   },
+   {
+    "prompt": "The missiles of the archers kept falling upon the phalanx.",
+    "answer": "τὰ τῶν τοξοτῶν βέλη εἰς τὴν φάλαγγα ἔπιπτεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "τοξοτῶν",
+     "βέλη",
+     "εἰς",
+     "τήν",
+     "φάλαγγα",
+     "ἔπιπτεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t6",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The children of the citizens were being educated in the gymnasia.",
+    "answer": "τὰ τῶν πολιτῶν τέκνα ἐν τοῖς γυμνασίοις ἐπαιδεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "πολιτῶν",
+     "τέκνα",
+     "ἐν",
+     "τοῖς",
+     "γυμνασίοις",
+     "ἐπαιδεύετο"
+    ]
+   },
+   {
+    "prompt": "Everything that comes about by the will of the gods turns out well.",
+    "answer": "πάντα ὅσα κατὰ τὴν τῶν θεῶν βούλησιν γίγνεται καλῶς ἀποβαίνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "ὅσα",
+     "κατά",
+     "τήν",
+     "τῶν",
+     "θεῶν",
+     "βούλησιν",
+     "γίγνεται",
+     "καλῶς",
+     "ἀποβαίνει"
+    ]
+   },
+   {
+    "prompt": "The fields beside the river bore abundant fruit.",
+    "answer": "τὰ πρὸς τῷ ποταμῷ πεδία πολὺν καρπὸν ἔφερεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "πρός",
+     "τῷ",
+     "ποταμῷ",
+     "πεδία",
+     "πολύν",
+     "καρπόν",
+     "ἔφερεν"
+    ]
+   },
+   {
+    "prompt": "The temples of the gods had been adorned with gold.",
+    "answer": "τὰ τῶν θεῶν ἱερὰ χρυσῷ ἐκεκόσμητο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "θεῶν",
+     "ἱερά",
+     "χρυσῷ",
+     "ἐκεκόσμητο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t7",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The gifts of the gods delight the souls of mortals.",
+    "answer": "τὰ τῶν θεῶν δῶρα τὰς τῶν θνητῶν ψυχὰς τέρπει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "θεῶν",
+     "δῶρα",
+     "τάς",
+     "θνητῶν",
+     "ψυχάς",
+     "τέρπει"
+    ]
+   },
+   {
+    "prompt": "The weapons of the enemy were lying upon the ground.",
+    "answer": "τὰ τῶν πολεμίων ὅπλα ἐπὶ τῇ γῇ ἔκειτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "πολεμίων",
+     "ὅπλα",
+     "ἐπί",
+     "τῇ",
+     "γῇ",
+     "ἔκειτο"
+    ]
+   },
+   {
+    "prompt": "Many evils befall those who trust the tyrant.",
+    "answer": "πολλὰ κακὰ συμβαίνει τοῖς τῷ τυράννῳ πιστεύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλά",
+     "κακά",
+     "συμβαίνει",
+     "τοῖς",
+     "τῷ",
+     "τυράννῳ",
+     "πιστεύουσιν"
+    ]
+   },
+   {
+    "prompt": "The magistrates of the city sent the ambassadors away.",
+    "answer": "τὰ τέλη τῆς πόλεως τοὺς πρέσβεις ἐξέπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τέλη",
+     "τῆς",
+     "πόλεως",
+     "τούς",
+     "πρέσβεις",
+     "ἐξέπεμψαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t8",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The affairs of the Athenians were then in a bad state.",
+    "answer": "τὰ τῶν Ἀθηναίων τότε κακῶς εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "Ἀθηναίων",
+     "τότε",
+     "κακῶς",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "The walls of the city were razed by the enemy.",
+    "answer": "τὰ τῆς πόλεως τείχη ὑπὸ τῶν πολεμίων κατεσκάφη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῆς",
+     "πόλεως",
+     "τείχη",
+     "ὑπό",
+     "τῶν",
+     "πολεμίων",
+     "κατεσκάφη"
+    ]
+   },
+   {
+    "prompt": "All the animals in the field were fleeing the fire.",
+    "answer": "πάντα τὰ ἐν τῷ ἀγρῷ ζῷα τὸ πῦρ ἔφευγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "τά",
+     "ἐν",
+     "τῷ",
+     "ἀγρῷ",
+     "ζῷα",
+     "τό",
+     "πῦρ",
+     "ἔφευγεν"
+    ]
+   },
+   {
+    "prompt": "The trophies of our ancestors adorn the temples.",
+    "answer": "τὰ τῶν προγόνων τρόπαια τοὺς ναοὺς κοσμεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "προγόνων",
+     "τρόπαια",
+     "τούς",
+     "ναούς",
+     "κοσμεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t9",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The things said by the general seemed true to all.",
+    "answer": "τὰ ὑπὸ τοῦ στρατηγοῦ λεχθέντα πᾶσιν ἀληθῆ ἐδόκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ὑπό",
+     "τοῦ",
+     "στρατηγοῦ",
+     "λεχθέντα",
+     "πᾶσιν",
+     "ἀληθῆ",
+     "ἐδόκει"
+    ]
+   },
+   {
+    "prompt": "The things done in war are often terrible.",
+    "answer": "τὰ ἐν πολέμῳ πραττόμενα πολλάκις δεινά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἐν",
+     "πολέμῳ",
+     "πραττόμενα",
+     "πολλάκις",
+     "δεινά",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Many tracks of wild beasts were plain in the snow.",
+    "answer": "πολλὰ θηρίων ἴχνη ἐν τῇ χιόνι φανερὰ ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλά",
+     "θηρίων",
+     "ἴχνη",
+     "ἐν",
+     "τῇ",
+     "χιόνι",
+     "φανερά",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "Whatever the gods give is good.",
+    "answer": "ἃ ἂν οἱ θεοὶ διδῶσιν ἀγαθά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅ",
+     "ἄν",
+     "οἱ",
+     "θεοί",
+     "διδῶσιν",
+     "ἀγαθά",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t10",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The children of the Persians were learning to ride.",
+    "answer": "τὰ τῶν Περσῶν παιδία ἱππεύειν ἐμάνθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "Περσῶν",
+     "παιδία",
+     "ἱππεύειν",
+     "ἐμάνθανεν"
+    ]
+   },
+   {
+    "prompt": "The mountains of that land are high and rugged.",
+    "answer": "τὰ τῆς χώρας ἐκείνης ὄρη ὑψηλὰ καὶ τραχέα ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῆς",
+     "χώρας",
+     "ἐκείνης",
+     "ὄρη",
+     "ὑψηλά",
+     "καί",
+     "τραχέα",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The bodies of the dead were being carried out of the city.",
+    "answer": "τὰ τῶν νεκρῶν σώματα ἐκ τῆς πόλεως ἐξεφέρετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "νεκρῶν",
+     "σώματα",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐξεφέρετο"
+    ]
+   },
+   {
+    "prompt": "There are in this city both rulers and a populace.",
+    "answer": "ἔστιν ἐν τῇδε τῇ πόλει καὶ ἄρχοντες καὶ δῆμος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστιν",
+     "ἐν",
+     "τῇδε",
+     "τῇ",
+     "πόλει",
+     "καί",
+     "ἄρχοντες",
+     "δῆμος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-t11",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The sacred offerings lay upon the altar.",
+    "answer": "τὰ ἱερὰ ἐπὶ τοῦ βωμοῦ ἔκειτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἱερά",
+     "ἐπί",
+     "τοῦ",
+     "βωμοῦ",
+     "ἔκειτο"
+    ]
+   },
+   {
+    "prompt": "The letters which the king wrote reached the satrap.",
+    "answer": "τὰ γράμματα ἃ ὁ βασιλεὺς ἔγραψε πρὸς τὸν σατράπην ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "γράμματα",
+     "ἅ",
+     "ὁ",
+     "βασιλεύς",
+     "ἔγραψε",
+     "πρός",
+     "τόν",
+     "σατράπην",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "Great and beautiful are the works of the wise.",
+    "answer": "μεγάλα καὶ καλὰ ἐστι τὰ τῶν σοφῶν ἔργα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεγάλα",
+     "καί",
+     "καλά",
+     "ἐστι",
+     "τά",
+     "τῶν",
+     "σοφῶν",
+     "ἔργα"
+    ]
+   },
+   {
+    "prompt": "The weapons flashed brightly in the sunlight.",
+    "answer": "τὰ ὅπλα ἐν τῷ ἡλίῳ λαμπρῶς ἔλαμπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ὅπλα",
+     "ἐν",
+     "τῷ",
+     "ἡλίῳ",
+     "λαμπρῶς",
+     "ἔλαμπεν"
+    ]
+   }
+  ]
+ }
+]

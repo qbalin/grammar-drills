@@ -1,0 +1,355 @@
+[
+ {
+  "id": "sm-954-subject-in-the-dual-verb-in-the-plural-t1",
+  "sectionId": "sm-954-subject-in-the-dual-verb-in-the-plural",
+  "questions": [
+   {
+    "prompt": "The two brothers fled out of the city.",
+    "answer": "τὼ ἀδελφὼ ἐκ τῆς πόλεως ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "ἀδελφὼ",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Two young men ran up to the general.",
+    "answer": "δύο νεανίσκω τῷ στρατηγῷ προσέδραμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δύο",
+     "νεανίσκω",
+     "τῷ",
+     "στρατηγῷ",
+     "προσέδραμον"
+    ]
+   },
+   {
+    "prompt": "The two horses were carrying the heavy weapons.",
+    "answer": "τὼ ἵππω τὰ βαρέα ὅπλα ἔφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "ἵππω",
+     "τὰ",
+     "βαρέα",
+     "ὅπλα",
+     "ἔφερον"
+    ]
+   },
+   {
+    "prompt": "The two dogs guarded the flock through the night.",
+    "answer": "τὼ κύνε διὰ τῆς νυκτὸς τὴν ποίμνην ἐφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "κύνε",
+     "διὰ",
+     "τῆς",
+     "νυκτὸς",
+     "τὴν",
+     "ποίμνην",
+     "ἐφύλαττον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-954-subject-in-the-dual-verb-in-the-plural-t2",
+  "sectionId": "sm-954-subject-in-the-dual-verb-in-the-plural",
+  "questions": [
+   {
+    "prompt": "The two men persuaded the citizens to fight.",
+    "answer": "τὼ ἄνδρε τοὺς πολίτας ἔπεισαν μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "ἄνδρε",
+     "τοὺς",
+     "πολίτας",
+     "ἔπεισαν",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "Both hands were trembling from fear.",
+    "answer": "τὼ χεῖρε ὑπὸ φόβου ἔτρεμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "χεῖρε",
+     "ὑπὸ",
+     "φόβου",
+     "ἔτρεμον"
+    ]
+   },
+   {
+    "prompt": "The two children were playing in the courtyard.",
+    "answer": "τὼ παῖδε ἐν τῇ αὐλῇ ἔπαιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "παῖδε",
+     "ἐν",
+     "τῇ",
+     "αὐλῇ",
+     "ἔπαιζον"
+    ]
+   },
+   {
+    "prompt": "The two goddesses saved the sailors out of the storm.",
+    "answer": "τὼ θεὼ τοὺς ναύτας ἐκ τοῦ χειμῶνος ἔσωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "θεὼ",
+     "τοὺς",
+     "ναύτας",
+     "ἐκ",
+     "τοῦ",
+     "χειμῶνος",
+     "ἔσωσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-954-subject-in-the-dual-verb-in-the-plural-t3",
+  "sectionId": "sm-954-subject-in-the-dual-verb-in-the-plural",
+  "questions": [
+   {
+    "prompt": "His two eyes shone like fire.",
+    "answer": "τὼ ὀφθαλμὼ ὥσπερ πῦρ ἔλαμπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "ὀφθαλμὼ",
+     "ὥσπερ",
+     "πῦρ",
+     "ἔλαμπον"
+    ]
+   },
+   {
+    "prompt": "The two oxen were dragging the plough across the field.",
+    "answer": "τὼ βόε τὸ ἄροτρον διὰ τοῦ ἀγροῦ εἷλκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "βόε",
+     "τὸ",
+     "ἄροτρον",
+     "διὰ",
+     "τοῦ",
+     "ἀγροῦ",
+     "εἷλκον"
+    ]
+   },
+   {
+    "prompt": "The two women were weaving a beautiful cloak.",
+    "answer": "τὼ γυναῖκε καλὸν ἱμάτιον ὕφαινον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "γυναῖκε",
+     "καλὸν",
+     "ἱμάτιον",
+     "ὕφαινον"
+    ]
+   },
+   {
+    "prompt": "The two slaves carried the wine up from the harbor.",
+    "answer": "τὼ δούλω τὸν οἶνον ἐκ τοῦ λιμένος ἀνέφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "δούλω",
+     "τὸν",
+     "οἶνον",
+     "ἐκ",
+     "τοῦ",
+     "λιμένος",
+     "ἀνέφερον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-954-subject-in-the-dual-verb-in-the-plural-t4",
+  "sectionId": "sm-954-subject-in-the-dual-verb-in-the-plural",
+  "questions": [
+   {
+    "prompt": "We two set out together toward Athens.",
+    "answer": "νὼ ἅμα εἰς τὰς Ἀθήνας ὡρμήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νὼ",
+     "ἅμα",
+     "εἰς",
+     "τὰς",
+     "Ἀθήνας",
+     "ὡρμήσαμεν"
+    ]
+   },
+   {
+    "prompt": "You two conquered the enemy in a single day.",
+    "answer": "σφὼ τοὺς πολεμίους ἐν μιᾷ ἡμέρᾳ ἐνικήσατε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σφὼ",
+     "τοὺς",
+     "πολεμίους",
+     "ἐν",
+     "μιᾷ",
+     "ἡμέρᾳ",
+     "ἐνικήσατε"
+    ]
+   },
+   {
+    "prompt": "The two generals led the army out of danger.",
+    "answer": "τὼ στρατηγὼ τὸ στράτευμα ἐκ τοῦ κινδύνου ἐξήγαγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "στρατηγὼ",
+     "τὸ",
+     "στράτευμα",
+     "ἐκ",
+     "τοῦ",
+     "κινδύνου",
+     "ἐξήγαγον"
+    ]
+   },
+   {
+    "prompt": "The two friends swore to help each other.",
+    "answer": "τὼ φίλω ὤμοσαν ἀλλήλοις βοηθήσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "φίλω",
+     "ὤμοσαν",
+     "ἀλλήλοις",
+     "βοηθήσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-954-subject-in-the-dual-verb-in-the-plural-t5",
+  "sectionId": "sm-954-subject-in-the-dual-verb-in-the-plural",
+  "questions": [
+   {
+    "prompt": "The two gifts pleased the king exceedingly.",
+    "answer": "τὼ δώρω τῷ βασιλεῖ σφόδρα ἤρεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "δώρω",
+     "τῷ",
+     "βασιλεῖ",
+     "σφόδρα",
+     "ἤρεσαν"
+    ]
+   },
+   {
+    "prompt": "The two trees gave shade to the travelers.",
+    "answer": "τὼ δένδρω τοῖς ὁδοιπόροις σκιὰν παρεῖχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "δένδρω",
+     "τοῖς",
+     "ὁδοιπόροις",
+     "σκιὰν",
+     "παρεῖχον"
+    ]
+   },
+   {
+    "prompt": "The two spears were lying upon the ground.",
+    "answer": "τὼ δόρατε ἐπὶ τῆς γῆς ἔκειντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "δόρατε",
+     "ἐπὶ",
+     "τῆς",
+     "γῆς",
+     "ἔκειντο"
+    ]
+   },
+   {
+    "prompt": "The two armies drew up against each other.",
+    "answer": "τὼ στρατεύματε ἀλλήλοις ἀντετάξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "στρατεύματε",
+     "ἀλλήλοις",
+     "ἀντετάξαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-954-subject-in-the-dual-verb-in-the-plural-t6",
+  "sectionId": "sm-954-subject-in-the-dual-verb-in-the-plural",
+  "questions": [
+   {
+    "prompt": "The two comrades stood by each other in the battle.",
+    "answer": "τὼ ἑταίρω ἐν τῇ μάχῃ ἀλλήλοις παρέστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "ἑταίρω",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀλλήλοις",
+     "παρέστησαν"
+    ]
+   },
+   {
+    "prompt": "The two rivers flow into the same sea.",
+    "answer": "τὼ ποταμὼ εἰς τὴν αὐτὴν θάλατταν ῥέουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "ποταμὼ",
+     "εἰς",
+     "τὴν",
+     "αὐτὴν",
+     "θάλατταν",
+     "ῥέουσιν"
+    ]
+   },
+   {
+    "prompt": "The two guards were sleeping beside the gates.",
+    "answer": "τὼ φύλακε παρὰ ταῖς πύλαις ἐκάθευδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "φύλακε",
+     "παρὰ",
+     "ταῖς",
+     "πύλαις",
+     "ἐκάθευδον"
+    ]
+   },
+   {
+    "prompt": "The two maidens were singing a lovely song.",
+    "answer": "τὼ παρθένω καλὸν ᾆσμα ᾖδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "παρθένω",
+     "καλὸν",
+     "ᾆσμα",
+     "ᾖδον"
+    ]
+   }
+  ]
+ }
+]
