@@ -1,0 +1,370 @@
+[
+ {
+  "id": "sm-1336-genitive-of-value-t1",
+  "sectionId": "sm-1336-genitive-of-value",
+  "questions": [
+   {
+    "prompt": "Although poor, he bought the little house for two talents.",
+    "answer": "καίπερ πένης ὤν, τὸ οἰκίδιον δυοῖν ταλάντοιν ἐπρίατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "πένης",
+     "ὤν",
+     "τὸ",
+     "οἰκίδιον",
+     "δυοῖν",
+     "ταλάντοιν",
+     "ἐπρίατο"
+    ]
+   },
+   {
+    "prompt": "The merchant sold the cloak for thirty drachmas.",
+    "answer": "ὁ ἔμπορος τὸ ἱμάτιον τριάκοντα δραχμῶν ἀπέδοτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἔμπορος",
+     "τὸ",
+     "ἱμάτιον",
+     "τριάκοντα",
+     "δραχμῶν",
+     "ἀπέδοτο"
+    ]
+   },
+   {
+    "prompt": "This ring is worth a hundred staters.",
+    "answer": "οὗτος ὁ δακτύλιος ἑκατὸν στατήρων ἄξιός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "δακτύλιος",
+     "ἑκατὸν",
+     "στατήρων",
+     "ἄξιός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "I would never sell my freedom for so much gold.",
+    "answer": "τὴν ἐλευθερίαν οὐκ ἄν ποτε τοσούτου χρυσίου ἀποδοίμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἐλευθερίαν",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "τοσούτου",
+     "χρυσίου",
+     "ἀποδοίμην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1336-genitive-of-value-t2",
+  "sectionId": "sm-1336-genitive-of-value",
+  "questions": [
+   {
+    "prompt": "The Athenians valued their freedom most highly.",
+    "answer": "οἱ Ἀθηναῖοι τὴν ἐλευθερίαν πλείστου ἐτίμων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τὴν",
+     "ἐλευθερίαν",
+     "πλείστου",
+     "ἐτίμων"
+    ]
+   },
+   {
+    "prompt": "The philosopher held wealth of little account.",
+    "answer": "ὁ φιλόσοφος τὸν πλοῦτον ὀλίγου ἐποιεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τὸν",
+     "πλοῦτον",
+     "ὀλίγου",
+     "ἐποιεῖτο"
+    ]
+   },
+   {
+    "prompt": "Brave men reckon a noble death worth much.",
+    "answer": "οἱ ἀνδρεῖοι τὸν καλὸν θάνατον πολλοῦ ἡγοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀνδρεῖοι",
+     "τὸν",
+     "καλὸν",
+     "θάνατον",
+     "πολλοῦ",
+     "ἡγοῦνται"
+    ]
+   },
+   {
+    "prompt": "Value virtue highly, but wealth little.",
+    "answer": "τὴν ἀρετὴν πολλοῦ, τὸν δὲ πλοῦτον ὀλίγου τίμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἀρετὴν",
+     "πολλοῦ",
+     "τὸν",
+     "δὲ",
+     "πλοῦτον",
+     "ὀλίγου",
+     "τίμα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1336-genitive-of-value-t3",
+  "sectionId": "sm-1336-genitive-of-value",
+  "questions": [
+   {
+    "prompt": "Because of the field, he is defending a suit worth five talents.",
+    "answer": "διὰ τὸν ἀγρὸν πέντε ταλάντων δίκην φεύγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τὸν",
+     "ἀγρὸν",
+     "πέντε",
+     "ταλάντων",
+     "δίκην",
+     "φεύγει"
+    ]
+   },
+   {
+    "prompt": "They brought against me an action involving a thousand drachmas.",
+    "answer": "χιλίων δραχμῶν δίκην μοι ἔλαχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χιλίων",
+     "δραχμῶν",
+     "δίκην",
+     "μοι",
+     "ἔλαχον"
+    ]
+   },
+   {
+    "prompt": "The accuser assessed the penalty at ten minas.",
+    "answer": "ὁ κατήγορος δέκα μνῶν ἐτιμήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κατήγορος",
+     "δέκα",
+     "μνῶν",
+     "ἐτιμήσατο"
+    ]
+   },
+   {
+    "prompt": "Having been convicted, he paid a fine of a talent.",
+    "answer": "ἁλοὺς ταλάντου ζημίαν ἀπέτεισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἁλοὺς",
+     "ταλάντου",
+     "ζημίαν",
+     "ἀπέτεισεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1336-genitive-of-value-t4",
+  "sectionId": "sm-1336-genitive-of-value",
+  "questions": [
+   {
+    "prompt": "The offerings dedicated to the god were worth three talents.",
+    "answer": "τὰ τῷ θεῷ ἀνατεθέντα ἱερὰ τριῶν ταλάντων ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῷ",
+     "θεῷ",
+     "ἀνατεθέντα",
+     "ἱερὰ",
+     "τριῶν",
+     "ταλάντων",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "A robe worth a mina lay upon the couch.",
+    "answer": "πέπλος μνᾶς ἄξιος ἐπὶ τῆς κλίνης ἔκειτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέπλος",
+     "μνᾶς",
+     "ἄξιος",
+     "ἐπὶ",
+     "τῆς",
+     "κλίνης",
+     "ἔκειτο"
+    ]
+   },
+   {
+    "prompt": "These weapons, though old, are worth many drachmas.",
+    "answer": "τὰ ὅπλα ταῦτα, καίπερ παλαιὰ ὄντα, πολλῶν δραχμῶν ἄξιά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ὅπλα",
+     "ταῦτα",
+     "καίπερ",
+     "παλαιὰ",
+     "ὄντα",
+     "πολλῶν",
+     "δραχμῶν",
+     "ἄξιά",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "He gave the child a gift worth a hundred drachmas.",
+    "answer": "τῷ παιδὶ δῶρον ἑκατὸν δραχμῶν ἄξιον ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "παιδὶ",
+     "δῶρον",
+     "ἑκατὸν",
+     "δραχμῶν",
+     "ἄξιον",
+     "ἔδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1336-genitive-of-value-t5",
+  "sectionId": "sm-1336-genitive-of-value",
+  "questions": [
+   {
+    "prompt": "They ransomed the captives at so great a price.",
+    "answer": "τοὺς αἰχμαλώτους τοσούτων χρημάτων ἐλύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "αἰχμαλώτους",
+     "τοσούτων",
+     "χρημάτων",
+     "ἐλύσαντο"
+    ]
+   },
+   {
+    "prompt": "The city hired the mercenaries for a talent a month.",
+    "answer": "ἡ πόλις τοὺς μισθοφόρους ταλάντου τοῦ μηνὸς ἐμισθώσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "τοὺς",
+     "μισθοφόρους",
+     "ταλάντου",
+     "τοῦ",
+     "μηνὸς",
+     "ἐμισθώσατο"
+    ]
+   },
+   {
+    "prompt": "Would you sell your father for a little silver?",
+    "answer": "ἆρα τὸν πατέρα ὀλίγου ἀργυρίου ἀποδοῖο ἄν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "τὸν",
+     "πατέρα",
+     "ὀλίγου",
+     "ἀργυρίου",
+     "ἀποδοῖο",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "The traitor is betraying the city for much gold.",
+    "answer": "ὁ προδότης τὴν πόλιν πολλοῦ χρυσίου προδίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "προδότης",
+     "τὴν",
+     "πόλιν",
+     "πολλοῦ",
+     "χρυσίου",
+     "προδίδωσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1336-genitive-of-value-t6",
+  "sectionId": "sm-1336-genitive-of-value",
+  "questions": [
+   {
+    "prompt": "A threepenny scoundrel would say anything.",
+    "answer": "ἀνὴρ τριῶν δραχμῶν πονηρὸς πᾶν ἂν εἴποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνὴρ",
+     "τριῶν",
+     "δραχμῶν",
+     "πονηρὸς",
+     "πᾶν",
+     "ἂν",
+     "εἴποι"
+    ]
+   },
+   {
+    "prompt": "This land is worth many talents to its owners.",
+    "answer": "ἡ χώρα αὕτη πολλῶν ταλάντων τοῖς κεκτημένοις ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "χώρα",
+     "αὕτη",
+     "πολλῶν",
+     "ταλάντων",
+     "τοῖς",
+     "κεκτημένοις",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "He bought his safety with much money.",
+    "answer": "τὴν σωτηρίαν πολλῶν χρημάτων ἐπρίατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "σωτηρίαν",
+     "πολλῶν",
+     "χρημάτων",
+     "ἐπρίατο"
+    ]
+   },
+   {
+    "prompt": "Nothing is worth more than a true friend.",
+    "answer": "οὐδὲν πλείονος ἄξιόν ἐστιν ἢ φίλος ἀληθής.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "πλείονος",
+     "ἄξιόν",
+     "ἐστιν",
+     "ἢ",
+     "φίλος",
+     "ἀληθής"
+    ]
+   }
+  ]
+ }
+]

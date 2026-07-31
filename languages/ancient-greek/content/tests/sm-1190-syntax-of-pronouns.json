@@ -1,0 +1,404 @@
+[
+ {
+  "id": "sm-1190-syntax-of-pronouns-t1",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "Since you are not willing to help me, I myself will fight against the enemies.",
+    "answer": "ἐπεὶ ὑμεῖς οὐ θέλετε ἐμοὶ βοηθεῖν, ἐγὼ αὐτὸς τοῖς πολεμίοις μαχοῦμαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "ὑμεῖς",
+     "οὐ",
+     "θέλετε",
+     "ἐμοί",
+     "βοηθεῖν",
+     "ἐγώ",
+     "αὐτός",
+     "τοῖς",
+     "πολεμίοις",
+     "μαχοῦμαι"
+    ]
+   },
+   {
+    "prompt": "You conquer by fortune, but we by valor.",
+    "answer": "σὺ μὲν τύχῃ νικᾷς, ἡμεῖς δὲ ἀρετῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "μέν",
+     "τύχῃ",
+     "νικᾷς",
+     "ἡμεῖς",
+     "δέ",
+     "ἀρετῇ"
+    ]
+   },
+   {
+    "prompt": "You have received pledges from me, and I from you.",
+    "answer": "σὺ μὲν παρὰ ἐμοῦ πιστὰ ἔλαβες, ἐγὼ δὲ παρὰ σοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "μέν",
+     "παρά",
+     "ἐμοῦ",
+     "πιστά",
+     "ἔλαβες",
+     "ἐγώ",
+     "δέ",
+     "σοῦ"
+    ]
+   },
+   {
+    "prompt": "We will endure the toils, but you will enjoy the rewards.",
+    "answer": "ἡμεῖς μὲν τοὺς πόνους ὑπομενοῦμεν, ὑμεῖς δὲ τῶν ἄθλων ἀπολαύσετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμεῖς",
+     "μέν",
+     "τούς",
+     "πόνους",
+     "ὑπομενοῦμεν",
+     "ὑμεῖς",
+     "δέ",
+     "τῶν",
+     "ἄθλων",
+     "ἀπολαύσετε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t2",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "Cyrus, having persuaded me, sent me toward the king.",
+    "answer": "Κῦρος πείσας ἐμὲ πρὸς τὸν βασιλέα ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "πείσας",
+     "ἐμέ",
+     "πρός",
+     "τόν",
+     "βασιλέα",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "These pledges he gave to me, not to you.",
+    "answer": "ταῦτα τὰ πιστὰ ἐμοὶ ἔδωκεν, οὐ σοί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "τά",
+     "πιστά",
+     "ἐμοί",
+     "ἔδωκεν",
+     "οὐ",
+     "σοί"
+    ]
+   },
+   {
+    "prompt": "The general spoke to me first, then afterward to you.",
+    "answer": "ὁ στρατηγὸς πρῶτον μὲν πρὸς ἐμὲ ἔλεξεν, ἔπειτα δὲ πρὸς σέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "πρῶτον",
+     "μέν",
+     "πρός",
+     "ἐμέ",
+     "ἔλεξεν",
+     "ἔπειτα",
+     "δέ",
+     "σέ"
+    ]
+   },
+   {
+    "prompt": "Everyone was looking toward me, wanting to hear the news.",
+    "answer": "πάντες πρὸς ἐμὲ ἔβλεπον, τὰ ἀγγελθέντα ἀκοῦσαι βουλόμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "πρός",
+     "ἐμέ",
+     "ἔβλεπον",
+     "τά",
+     "ἀγγελθέντα",
+     "ἀκοῦσαι",
+     "βουλόμενοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t3",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "Those men, whom you saw yesterday, have already departed.",
+    "answer": "ἐκεῖνοι, οὓς χθὲς εἶδες, ἤδη ἀπεληλύθασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνοι",
+     "οὕς",
+     "χθές",
+     "εἶδες",
+     "ἤδη",
+     "ἀπεληλύθασιν"
+    ]
+   },
+   {
+    "prompt": "This man present here saved the city in the war.",
+    "answer": "ὅδε τὴν πόλιν ἐν τῷ πολέμῳ ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "τήν",
+     "πόλιν",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "I trust this man, but I do not trust that one.",
+    "answer": "τούτῳ μὲν πιστεύω, ἐκείνῳ δὲ οὐ πιστεύω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτῳ",
+     "μέν",
+     "πιστεύω",
+     "ἐκείνῳ",
+     "δέ",
+     "οὐ"
+    ]
+   },
+   {
+    "prompt": "That woman, absent from the city, is greatly missed by the citizens.",
+    "answer": "ἐκείνη, ἀποῦσα ἐκ τῆς πόλεως, ὑπὸ τῶν πολιτῶν πολὺ ποθεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνη",
+     "ἀποῦσα",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ὑπό",
+     "τῶν",
+     "πολιτῶν",
+     "πολύ",
+     "ποθεῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t4",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "Some fled to the mountains, others remained in the plain.",
+    "answer": "οἱ μὲν εἰς τὰ ὄρη ἔφυγον, οἱ δὲ ἐν τῷ πεδίῳ ἔμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "εἰς",
+     "τά",
+     "ὄρη",
+     "ἔφυγον",
+     "δέ",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ἔμειναν"
+    ]
+   },
+   {
+    "prompt": "He himself remained, though he sent the soldiers away.",
+    "answer": "αὐτὸς μὲν ἔμεινεν, τοὺς δὲ στρατιώτας ἀπέπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτός",
+     "μέν",
+     "ἔμεινεν",
+     "τούς",
+     "δέ",
+     "στρατιώτας",
+     "ἀπέπεμψεν"
+    ]
+   },
+   {
+    "prompt": "The one praised the general, the other blamed him.",
+    "answer": "ὁ μὲν τὸν στρατηγὸν ἐπῄνεσεν, ὁ δὲ ἐμέμψατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μέν",
+     "τόν",
+     "στρατηγόν",
+     "ἐπῄνεσεν",
+     "δέ",
+     "ἐμέμψατο"
+    ]
+   },
+   {
+    "prompt": "The others obeyed the laws, but he himself did whatever he wished.",
+    "answer": "οἱ μὲν ἄλλοι τοῖς νόμοις ἐπείθοντο, αὐτὸς δὲ ἐποίει ὅ τι ἐβούλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "ἄλλοι",
+     "τοῖς",
+     "νόμοις",
+     "ἐπείθοντο",
+     "αὐτός",
+     "δέ",
+     "ἐποίει",
+     "ὅ",
+     "τι",
+     "ἐβούλετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t5",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "If you do not wish to answer, then you tell me the truth.",
+    "answer": "εἰ μὴ βούλει ἀποκρίνασθαι, σὺ δὲ τὸ ἀληθὲς λέγε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μή",
+     "βούλει",
+     "ἀποκρίνασθαι",
+     "σύ",
+     "δέ",
+     "τό",
+     "ἀληθές",
+     "λέγε"
+    ]
+   },
+   {
+    "prompt": "You yourself know from how great dangers we were saved.",
+    "answer": "σὺ αὐτὸς οἶσθα ἐξ ὅσων κινδύνων ἐσώθημεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "αὐτός",
+     "οἶσθα",
+     "ἐξ",
+     "ὅσων",
+     "κινδύνων",
+     "ἐσώθημεν"
+    ]
+   },
+   {
+    "prompt": "I, for my part, will guard the gates through the whole night.",
+    "answer": "ἔγωγε τὰς πύλας διὰ ὅλης τῆς νυκτὸς φυλάξω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγωγε",
+     "τάς",
+     "πύλας",
+     "διά",
+     "ὅλης",
+     "τῆς",
+     "νυκτός",
+     "φυλάξω"
+    ]
+   },
+   {
+    "prompt": "You, come here and hear what I have suffered.",
+    "answer": "σὺ δεῦρο ἐλθὲ καὶ ἄκουσον ἃ πέπονθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "δεῦρο",
+     "ἐλθέ",
+     "καί",
+     "ἄκουσον",
+     "ἅ",
+     "πέπονθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t6",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "You put your trust in wealth, but I in the gods.",
+    "answer": "σὺ μὲν τῷ πλούτῳ πιστεύεις, ἐγὼ δὲ τοῖς θεοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "μέν",
+     "τῷ",
+     "πλούτῳ",
+     "πιστεύεις",
+     "ἐγώ",
+     "δέ",
+     "τοῖς",
+     "θεοῖς"
+    ]
+   },
+   {
+    "prompt": "Nobody among us wishes to march against those men.",
+    "answer": "οὐδεὶς ἡμῶν βούλεται ἐπὶ ἐκείνους στρατεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἡμῶν",
+     "βούλεται",
+     "ἐπί",
+     "ἐκείνους",
+     "στρατεύειν"
+    ]
+   },
+   {
+    "prompt": "Concerning me they said many false things in the assembly.",
+    "answer": "περὶ ἐμοῦ πολλὰ ψευδῆ ἐν τῇ ἐκκλησίᾳ ἔλεξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περί",
+     "ἐμοῦ",
+     "πολλά",
+     "ψευδῆ",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἔλεξαν"
+    ]
+   },
+   {
+    "prompt": "This man here will lead us, and that one will guard the baggage.",
+    "answer": "ὅδε μὲν ἡμᾶς ἡγήσεται, ἐκεῖνος δὲ τὰ σκεύη φυλάξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "μέν",
+     "ἡμᾶς",
+     "ἡγήσεται",
+     "ἐκεῖνος",
+     "δέ",
+     "τά",
+     "σκεύη",
+     "φυλάξει"
+    ]
+   }
+  ]
+ }
+]

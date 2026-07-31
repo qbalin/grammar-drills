@@ -1,0 +1,755 @@
+[
+ {
+  "id": "sm-1066-comparative-t1",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The physician is wiser than the general.",
+    "answer": "ὁ ἰατρὸς σοφώτερός ἐστι τοῦ στρατηγοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "σοφώτερός",
+     "ἐστι",
+     "τοῦ",
+     "στρατηγοῦ"
+    ]
+   },
+   {
+    "prompt": "The gifts of the enemies are more dangerous than their swords.",
+    "answer": "αἱ τῶν πολεμίων δωρεαὶ σφαλερώτεραί εἰσι τῶν ξιφῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τῶν",
+     "πολεμίων",
+     "δωρεαὶ",
+     "σφαλερώτεραί",
+     "εἰσι",
+     "ξιφῶν"
+    ]
+   },
+   {
+    "prompt": "This wine is sweeter than that one.",
+    "answer": "οὗτος ὁ οἶνος ἡδίων ἐστὶν ἢ ἐκεῖνος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "οἶνος",
+     "ἡδίων",
+     "ἐστὶν",
+     "ἢ",
+     "ἐκεῖνος"
+    ]
+   },
+   {
+    "prompt": "The sailors endured the storm more bravely than the hoplites.",
+    "answer": "οἱ ναῦται τὸν χειμῶνα ἀνδρειότερον ὑπέμειναν τῶν ὁπλιτῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τὸν",
+     "χειμῶνα",
+     "ἀνδρειότερον",
+     "ὑπέμειναν",
+     "τῶν",
+     "ὁπλιτῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t2",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "I love the city more than my own life.",
+    "answer": "φιλῶ τὴν πόλιν μᾶλλον ἢ τὸν ἐμαυτοῦ βίον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φιλῶ",
+     "τὴν",
+     "πόλιν",
+     "μᾶλλον",
+     "ἢ",
+     "τὸν",
+     "ἐμαυτοῦ",
+     "βίον"
+    ]
+   },
+   {
+    "prompt": "It is far nobler to die fighting than to flee.",
+    "answer": "πολὺ κάλλιόν ἐστι μαχόμενον ἀποθνῄσκειν ἢ φεύγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολὺ",
+     "κάλλιόν",
+     "ἐστι",
+     "μαχόμενον",
+     "ἀποθνῄσκειν",
+     "ἢ",
+     "φεύγειν"
+    ]
+   },
+   {
+    "prompt": "The young men are much bolder than the old.",
+    "answer": "οἱ νεανίαι πολλῷ θρασύτεροί εἰσι τῶν γερόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "πολλῷ",
+     "θρασύτεροί",
+     "εἰσι",
+     "τῶν",
+     "γερόντων"
+    ]
+   },
+   {
+    "prompt": "Poverty is still harder to bear than disease.",
+    "answer": "ἡ πενία ἔτι χαλεπωτέρα ἐστὶ τῆς νόσου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πενία",
+     "ἔτι",
+     "χαλεπωτέρα",
+     "ἐστὶ",
+     "τῆς",
+     "νόσου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t3",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The general sends more than a thousand soldiers.",
+    "answer": "ὁ στρατηγὸς πλείους ἢ χιλίους στρατιώτας πέμπει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "πλείους",
+     "ἢ",
+     "χιλίους",
+     "στρατιώτας",
+     "πέμπει"
+    ]
+   },
+   {
+    "prompt": "The old man has lived more than seventy years.",
+    "answer": "ὁ γέρων πλείω ἑβδομήκοντα ἔτη βεβίωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "πλείω",
+     "ἑβδομήκοντα",
+     "ἔτη",
+     "βεβίωκεν"
+    ]
+   },
+   {
+    "prompt": "We waited not less than ten days.",
+    "answer": "οὐκ ἔλαττον δέκα ἡμέρας περιεμείναμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔλαττον",
+     "δέκα",
+     "ἡμέρας",
+     "περιεμείναμεν"
+    ]
+   },
+   {
+    "prompt": "The enemy had more ships than we did.",
+    "answer": "οἱ πολέμιοι πλείους ναῦς εἶχον ἢ ἡμεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "πλείους",
+     "ναῦς",
+     "εἶχον",
+     "ἢ",
+     "ἡμεῖς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t4",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The evil is too great for the city to bear.",
+    "answer": "μεῖζον τὸ κακόν ἐστιν ἢ ὥστε τὴν πόλιν φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεῖζον",
+     "τὸ",
+     "κακόν",
+     "ἐστιν",
+     "ἢ",
+     "ὥστε",
+     "τὴν",
+     "πόλιν",
+     "φέρειν"
+    ]
+   },
+   {
+    "prompt": "The army was too small to conquer the barbarians.",
+    "answer": "τὸ στράτευμα ἔλαττον ἦν ἢ ὥστε τοὺς βαρβάρους νικᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "ἔλαττον",
+     "ἦν",
+     "ἢ",
+     "ὥστε",
+     "τοὺς",
+     "βαρβάρους",
+     "νικᾶν"
+    ]
+   },
+   {
+    "prompt": "More arms were taken than there were slain men.",
+    "answer": "πλείω ὅπλα ἐλήφθη ἢ κατὰ τοὺς νεκρούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πλείω",
+     "ὅπλα",
+     "ἐλήφθη",
+     "ἢ",
+     "κατὰ",
+     "τοὺς",
+     "νεκρούς"
+    ]
+   },
+   {
+    "prompt": "The gift was greater than befitted his fortune.",
+    "answer": "ἡ δωρεὰ μείζων ἦν ἢ κατὰ τὴν τύχην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "δωρεὰ",
+     "μείζων",
+     "ἦν",
+     "ἢ",
+     "κατὰ",
+     "τὴν",
+     "τύχην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t5",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The students become quicker to learn than they were before.",
+    "answer": "οἱ μαθηταὶ εὐμαθέστεροι ἑαυτῶν γίγνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μαθηταὶ",
+     "εὐμαθέστεροι",
+     "ἑαυτῶν",
+     "γίγνονται"
+    ]
+   },
+   {
+    "prompt": "In peace the citizens become richer than before.",
+    "answer": "ἐν εἰρήνῃ οἱ πολῖται πλουσιώτεροι ἑαυτῶν γίγνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "εἰρήνῃ",
+     "οἱ",
+     "πολῖται",
+     "πλουσιώτεροι",
+     "ἑαυτῶν",
+     "γίγνονται"
+    ]
+   },
+   {
+    "prompt": "This peace is more necessary than honorable.",
+    "answer": "αὕτη ἡ εἰρήνη ἀναγκαιοτέρα ἐστὶν ἢ καλλίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "εἰρήνη",
+     "ἀναγκαιοτέρα",
+     "ἐστὶν",
+     "ἢ",
+     "καλλίων"
+    ]
+   },
+   {
+    "prompt": "Our fleet is not inferior to that of the enemy.",
+    "answer": "τὸ ναυτικὸν ἡμῶν οὐ χεῖρόν ἐστι τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ναυτικὸν",
+     "ἡμῶν",
+     "οὐ",
+     "χεῖρόν",
+     "ἐστι",
+     "τῶν",
+     "πολεμίων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t6",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The old man was proceeding rather carelessly toward the camp.",
+    "answer": "ὁ γέρων ἀμελέστερον πρὸς τὸ στρατόπεδον ἐπορεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἀμελέστερον",
+     "πρὸς",
+     "τὸ",
+     "στρατόπεδον",
+     "ἐπορεύετο"
+    ]
+   },
+   {
+    "prompt": "A noble death is more desirable than a shameful life.",
+    "answer": "αἱρετώτερός ἐστιν ὁ καλὸς θάνατος ἀντὶ τοῦ αἰσχροῦ βίου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱρετώτερός",
+     "ἐστιν",
+     "ὁ",
+     "καλὸς",
+     "θάνατος",
+     "ἀντὶ",
+     "τοῦ",
+     "αἰσχροῦ",
+     "βίου"
+    ]
+   },
+   {
+    "prompt": "Do not value money more highly than justice.",
+    "answer": "μὴ τὰ χρήματα περὶ πλείονος ποιοῦ πρὸ τοῦ δικαίου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "τὰ",
+     "χρήματα",
+     "περὶ",
+     "πλείονος",
+     "ποιοῦ",
+     "πρὸ",
+     "τοῦ",
+     "δικαίου"
+    ]
+   },
+   {
+    "prompt": "The braver they appear, the more worthy of anger they are.",
+    "answer": "ὅσῳ ἀνδρειότεροι φαίνονται, τοσούτῳ μᾶλλον ὀργῆς ἄξιοί εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅσῳ",
+     "ἀνδρειότεροι",
+     "φαίνονται",
+     "τοσούτῳ",
+     "μᾶλλον",
+     "ὀργῆς",
+     "ἄξιοί",
+     "εἰσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t7",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The judges were more just than the orators.",
+    "answer": "οἱ δικασταὶ δικαιότεροι ἦσαν τῶν ῥητόρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "δικαιότεροι",
+     "ἦσαν",
+     "τῶν",
+     "ῥητόρων"
+    ]
+   },
+   {
+    "prompt": "In the dangers the soldiers became braver than themselves.",
+    "answer": "ἐν τοῖς κινδύνοις οἱ στρατιῶται ἀνδρειότεροι ἑαυτῶν ἐγίγνοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τοῖς",
+     "κινδύνοις",
+     "οἱ",
+     "στρατιῶται",
+     "ἀνδρειότεροι",
+     "ἑαυτῶν",
+     "ἐγίγνοντο"
+    ]
+   },
+   {
+    "prompt": "The wise man chooses to die nobly rather than to live shamefully.",
+    "answer": "ὁ σοφὸς αἱρεῖται καλῶς ἀποθνῄσκειν μᾶλλον ἢ αἰσχρῶς ζῆν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "αἱρεῖται",
+     "καλῶς",
+     "ἀποθνῄσκειν",
+     "μᾶλλον",
+     "ἢ",
+     "αἰσχρῶς",
+     "ζῆν"
+    ]
+   },
+   {
+    "prompt": "The river was too great for the army to cross.",
+    "answer": "ὁ ποταμὸς μείζων ἦν ἢ ὥστε τὸ στράτευμα διαβῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμὸς",
+     "μείζων",
+     "ἦν",
+     "ἢ",
+     "ὥστε",
+     "τὸ",
+     "στράτευμα",
+     "διαβῆναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t8",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The city had more than ten thousand citizens.",
+    "answer": "ἡ πόλις πλέον μυρίων πολιτῶν εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "πλέον",
+     "μυρίων",
+     "πολιτῶν",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "This road is much shorter than that one.",
+    "answer": "ἥδε ἡ ὁδὸς πολλῷ βραχυτέρα ἐκείνης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥδε",
+     "ἡ",
+     "ὁδὸς",
+     "πολλῷ",
+     "βραχυτέρα",
+     "ἐκείνης"
+    ]
+   },
+   {
+    "prompt": "We have been educated by a better teacher than they.",
+    "answer": "ὑπὸ ἀμείνονος διδασκάλου πεπαιδεύμεθα ἢ οὗτοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "ἀμείνονος",
+     "διδασκάλου",
+     "πεπαιδεύμεθα",
+     "ἢ",
+     "οὗτοι"
+    ]
+   },
+   {
+    "prompt": "The peace was more necessary than honorable.",
+    "answer": "ἡ εἰρήνη ἀναγκαιοτέρα ἢ καλλίων ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "εἰρήνη",
+     "ἀναγκαιοτέρα",
+     "ἢ",
+     "καλλίων",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t9",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The archers were shooting a longer distance than the enemy.",
+    "answer": "οἱ τοξόται μακρότερον τῶν πολεμίων ἐτόξευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοξόται",
+     "μακρότερον",
+     "τῶν",
+     "πολεμίων",
+     "ἐτόξευον"
+    ]
+   },
+   {
+    "prompt": "In peace the cities hold better opinions.",
+    "answer": "ἐν εἰρήνῃ αἱ πόλεις ἀμείνους τὰς γνώμας ἔχουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "εἰρήνῃ",
+     "αἱ",
+     "πόλεις",
+     "ἀμείνους",
+     "τὰς",
+     "γνώμας",
+     "ἔχουσιν"
+    ]
+   },
+   {
+    "prompt": "He chose death rather than slavery.",
+    "answer": "εἵλετο τὸν θάνατον πρὸ τῆς δουλείας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἵλετο",
+     "τὸν",
+     "θάνατον",
+     "πρὸ",
+     "τῆς",
+     "δουλείας"
+    ]
+   },
+   {
+    "prompt": "The wound was too grave for the physician.",
+    "answer": "τὸ τραῦμα μεῖζον ἦν ἢ κατὰ τὸν ἰατρόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τραῦμα",
+     "μεῖζον",
+     "ἦν",
+     "ἢ",
+     "κατὰ",
+     "τὸν",
+     "ἰατρόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t10",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "The poor need more help than the rich.",
+    "answer": "οἱ πένητες πλείονος βοηθείας ἢ οἱ πλούσιοι δέονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πένητες",
+     "πλείονος",
+     "βοηθείας",
+     "ἢ",
+     "πλούσιοι",
+     "δέονται"
+    ]
+   },
+   {
+    "prompt": "We have acquired a fleet not inferior to the enemy's.",
+    "answer": "ναυτικὸν κεκτήμεθα οὐ χεῖρον τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ναυτικὸν",
+     "κεκτήμεθα",
+     "οὐ",
+     "χεῖρον",
+     "τῶν",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "The greater the dangers, the more they deserve praise.",
+    "answer": "ὅσῳ μείζονες οἱ κίνδυνοι, τοσούτῳ μᾶλλον ἐπαίνου εἰσὶν ἄξιοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅσῳ",
+     "μείζονες",
+     "οἱ",
+     "κίνδυνοι",
+     "τοσούτῳ",
+     "μᾶλλον",
+     "ἐπαίνου",
+     "εἰσὶν",
+     "ἄξιοι"
+    ]
+   },
+   {
+    "prompt": "The victory turned out greater than our expectation.",
+    "answer": "ἡ νίκη κρείττων τῆς ἐλπίδος ἀπέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νίκη",
+     "κρείττων",
+     "τῆς",
+     "ἐλπίδος",
+     "ἀπέβη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t11",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "Freedom is sweeter than gold.",
+    "answer": "ἡ ἐλευθερία τοῦ χρυσοῦ ἡδίων ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐλευθερία",
+     "τοῦ",
+     "χρυσοῦ",
+     "ἡδίων",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The winter became more severe than the actual season.",
+    "answer": "ὁ χειμὼν χαλεπώτερος ἐγένετο παρὰ τὴν καθεστηκυῖαν ὥραν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χειμὼν",
+     "χαλεπώτερος",
+     "ἐγένετο",
+     "παρὰ",
+     "τὴν",
+     "καθεστηκυῖαν",
+     "ὥραν"
+    ]
+   },
+   {
+    "prompt": "We choose a noble death rather than a shameful life.",
+    "answer": "τὸν καλὸν θάνατον αἱρούμεθα ἀντὶ τοῦ αἰσχροῦ βίου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "καλὸν",
+     "θάνατον",
+     "αἱρούμεθα",
+     "ἀντὶ",
+     "τοῦ",
+     "αἰσχροῦ",
+     "βίου"
+    ]
+   },
+   {
+    "prompt": "The burden was too heavy for the boy to carry.",
+    "answer": "τὸ φορτίον βαρύτερον ἦν ἢ ὥστε τὸν παῖδα φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "φορτίον",
+     "βαρύτερον",
+     "ἦν",
+     "ἢ",
+     "ὥστε",
+     "τὸν",
+     "παῖδα",
+     "φέρειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-t12",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "While the general was leading, the soldiers marched more eagerly than before.",
+    "answer": "ἡγουμένου τοῦ στρατηγοῦ οἱ στρατιῶται προθυμότερον ἑαυτῶν ἐπορεύοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡγουμένου",
+     "τοῦ",
+     "στρατηγοῦ",
+     "οἱ",
+     "στρατιῶται",
+     "προθυμότερον",
+     "ἑαυτῶν",
+     "ἐπορεύοντο"
+    ]
+   },
+   {
+    "prompt": "He led more than three hundred horsemen.",
+    "answer": "πλείους ἢ τριακοσίους ἱππέας ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πλείους",
+     "ἢ",
+     "τριακοσίους",
+     "ἱππέας",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "One must look to experience rather than to fortune.",
+    "answer": "δεῖ βλέπειν εἰς τὴν ἐμπειρίαν μᾶλλον τῆς τύχης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "βλέπειν",
+     "εἰς",
+     "τὴν",
+     "ἐμπειρίαν",
+     "μᾶλλον",
+     "τῆς",
+     "τύχης"
+    ]
+   },
+   {
+    "prompt": "The allies came later than was fitting.",
+    "answer": "οἱ σύμμαχοι ὕστερον τοῦ δέοντος ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "ὕστερον",
+     "τοῦ",
+     "δέοντος",
+     "ἦλθον"
+    ]
+   }
+  ]
+ }
+]

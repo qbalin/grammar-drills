@@ -1,0 +1,774 @@
+[
+ {
+  "id": "sm-1196-the-possessive-pronouns-t1",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "My friends praise your father, but they fear your brother.",
+    "answer": "οἱ ἐμοὶ φίλοι τὸν σὸν πατέρα ἐπαινοῦσιν, τὸν δὲ σὸν ἀδελφὸν φοβοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐμοὶ",
+     "φίλοι",
+     "τὸν",
+     "σὸν",
+     "πατέρα",
+     "ἐπαινοῦσιν",
+     "δὲ",
+     "ἀδελφὸν",
+     "φοβοῦνται"
+    ]
+   },
+   {
+    "prompt": "Your eyes are more beautiful than mine, my child.",
+    "answer": "οἱ σοὶ ὀφθαλμοὶ καλλίονές εἰσι τῶν ἐμῶν, ὦ παῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοὶ",
+     "ὀφθαλμοὶ",
+     "καλλίονές",
+     "εἰσι",
+     "τῶν",
+     "ἐμῶν",
+     "ὦ",
+     "παῖ"
+    ]
+   },
+   {
+    "prompt": "Out of friendship for me the general spared the captives.",
+    "answer": "φιλίᾳ τῇ ἐμῇ ὁ στρατηγὸς τῶν αἰχμαλώτων ἐφείσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φιλίᾳ",
+     "τῇ",
+     "ἐμῇ",
+     "ὁ",
+     "στρατηγὸς",
+     "τῶν",
+     "αἰχμαλώτων",
+     "ἐφείσατο"
+    ]
+   },
+   {
+    "prompt": "A friend of mine betrayed the city to the enemy.",
+    "answer": "φίλος ἐμὸς τὴν πόλιν τοῖς πολεμίοις προέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φίλος",
+     "ἐμὸς",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "προέδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t2",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "I sent my own brother to Athens.",
+    "answer": "τὸν ἐμαυτοῦ ἀδελφὸν εἰς τὰς Ἀθήνας ἔπεμψα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἐμαυτοῦ",
+     "ἀδελφὸν",
+     "εἰς",
+     "τὰς",
+     "Ἀθήνας",
+     "ἔπεμψα"
+    ]
+   },
+   {
+    "prompt": "You are laughing at your own misfortunes and at mine.",
+    "answer": "ἐπὶ τοῖς σεαυτοῦ κακοῖς καὶ ἐπὶ τοῖς ἐμοῖς γελᾷς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπὶ",
+     "τοῖς",
+     "σεαυτοῦ",
+     "κακοῖς",
+     "καὶ",
+     "ἐμοῖς",
+     "γελᾷς"
+    ]
+   },
+   {
+    "prompt": "He loves his own wife more than his children.",
+    "answer": "τὴν ἑαυτοῦ γυναῖκα μᾶλλον ἢ τοὺς παῖδας στέργει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἑαυτοῦ",
+     "γυναῖκα",
+     "μᾶλλον",
+     "ἢ",
+     "τοὺς",
+     "παῖδας",
+     "στέργει"
+    ]
+   },
+   {
+    "prompt": "She sees her own mother standing at the gates.",
+    "answer": "τὴν ἑαυτῆς μητέρα ὁρᾷ ἐπὶ ταῖς πύλαις ἑστῶσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἑαυτῆς",
+     "μητέρα",
+     "ὁρᾷ",
+     "ἐπὶ",
+     "ταῖς",
+     "πύλαις",
+     "ἑστῶσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t3",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "I see his friend, but certainly not hers.",
+    "answer": "ὁρῶ τὸν φίλον αὐτοῦ, οὐ μέντοι τὸν αὐτῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶ",
+     "τὸν",
+     "φίλον",
+     "αὐτοῦ",
+     "οὐ",
+     "μέντοι",
+     "αὐτῆς"
+    ]
+   },
+   {
+    "prompt": "They came to Ariaeus and his army.",
+    "answer": "ἀφίκοντο παρὰ Ἀριαῖον καὶ τὴν ἐκείνου στρατιάν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφίκοντο",
+     "παρὰ",
+     "Ἀριαῖον",
+     "καὶ",
+     "τὴν",
+     "ἐκείνου",
+     "στρατιάν"
+    ]
+   },
+   {
+    "prompt": "Knowing his courage, we chose him as general.",
+    "answer": "τὴν ἀνδρείαν αὐτοῦ γιγνώσκοντες στρατηγὸν αὐτὸν εἱλόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἀνδρείαν",
+     "αὐτοῦ",
+     "γιγνώσκοντες",
+     "στρατηγὸν",
+     "αὐτὸν",
+     "εἱλόμεθα"
+    ]
+   },
+   {
+    "prompt": "Because of distrust of them the allies withdrew.",
+    "answer": "διὰ τὴν ἐκείνων ἀπιστίαν οἱ σύμμαχοι ἀπεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τὴν",
+     "ἐκείνων",
+     "ἀπιστίαν",
+     "οἱ",
+     "σύμμαχοι",
+     "ἀπεχώρησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t4",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "Our friend betrayed your city to the barbarians.",
+    "answer": "ὁ ἡμέτερος φίλος τὴν ὑμετέραν πόλιν τοῖς βαρβάροις προέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἡμέτερος",
+     "φίλος",
+     "τὴν",
+     "ὑμετέραν",
+     "πόλιν",
+     "τοῖς",
+     "βαρβάροις",
+     "προέδωκεν"
+    ]
+   },
+   {
+    "prompt": "Teach your own children to honor the gods.",
+    "answer": "διδάσκετε τοὺς παῖδας τοὺς ὑμετέρους αὐτῶν τοὺς θεοὺς τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διδάσκετε",
+     "τοὺς",
+     "παῖδας",
+     "ὑμετέρους",
+     "αὐτῶν",
+     "θεοὺς",
+     "τιμᾶν"
+    ]
+   },
+   {
+    "prompt": "We are making a search for you or for something of yours.",
+    "answer": "ζήτησιν ποιούμεθα ἢ ὑμῶν ἢ τῶν ὑμετέρων τινός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ζήτησιν",
+     "ποιούμεθα",
+     "ἢ",
+     "ὑμῶν",
+     "τῶν",
+     "ὑμετέρων",
+     "τινός"
+    ]
+   },
+   {
+    "prompt": "Let us not appear inferior to our own fame.",
+    "answer": "μὴ φαινώμεθα τῆς δόξης ἐνδεέστεροι τῆς ἡμετέρας αὐτῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "φαινώμεθα",
+     "τῆς",
+     "δόξης",
+     "ἐνδεέστεροι",
+     "ἡμετέρας",
+     "αὐτῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t5",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "They despised their own allies during the war.",
+    "answer": "τῶν ἑαυτῶν συμμάχων ἐν τῷ πολέμῳ κατεφρόνουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἑαυτῶν",
+     "συμμάχων",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "κατεφρόνουν"
+    ]
+   },
+   {
+    "prompt": "The Boeotians furnished their own contingent.",
+    "answer": "οἱ Βοιωτοὶ τὸ σφέτερον μέρος παρείχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Βοιωτοὶ",
+     "τὸ",
+     "σφέτερον",
+     "μέρος",
+     "παρείχοντο"
+    ]
+   },
+   {
+    "prompt": "They summoned their own slaves as witnesses.",
+    "answer": "τοὺς οἰκέτας τοὺς σφετέρους αὐτῶν μάρτυρας ἐπεκαλοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "οἰκέτας",
+     "σφετέρους",
+     "αὐτῶν",
+     "μάρτυρας",
+     "ἐπεκαλοῦντο"
+    ]
+   },
+   {
+    "prompt": "They loved their own friends more than the citizens.",
+    "answer": "τοὺς ἑαυτῶν φίλους μᾶλλον ἢ τοὺς πολίτας ἔστεργον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ἑαυτῶν",
+     "φίλους",
+     "μᾶλλον",
+     "ἢ",
+     "πολίτας",
+     "ἔστεργον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t6",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "You love your father, though he often frightens you.",
+    "answer": "στέργεις τὸν πατέρα, καίπερ πολλάκις σε φοβοῦντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στέργεις",
+     "τὸν",
+     "πατέρα",
+     "καίπερ",
+     "πολλάκις",
+     "σε",
+     "φοβοῦντα"
+    ]
+   },
+   {
+    "prompt": "My own courage saved me in the battle.",
+    "answer": "ἡ ἐμὴ ἀνδρεία ἐν τῇ μάχῃ ἔσωσέ με.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐμὴ",
+     "ἀνδρεία",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἔσωσέ",
+     "με"
+    ]
+   },
+   {
+    "prompt": "Fear of you compelled the slaves to flee.",
+    "answer": "τὸ ὑμέτερον δέος τοὺς δούλους φεύγειν ἠνάγκασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ὑμέτερον",
+     "δέος",
+     "τοὺς",
+     "δούλους",
+     "φεύγειν",
+     "ἠνάγκασεν"
+    ]
+   },
+   {
+    "prompt": "The brother of my mother died in Sicily.",
+    "answer": "ὁ ἀδελφὸς τῆς μητρὸς τῆς ἐμῆς ἐν Σικελίᾳ ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀδελφὸς",
+     "τῆς",
+     "μητρὸς",
+     "ἐμῆς",
+     "ἐν",
+     "Σικελίᾳ",
+     "ἀπέθανεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t7",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "I received my own pay from the general.",
+    "answer": "ἔλαβον τὸν ἐμαυτοῦ μισθὸν παρὰ τοῦ στρατηγοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλαβον",
+     "τὸν",
+     "ἐμαυτοῦ",
+     "μισθὸν",
+     "παρὰ",
+     "τοῦ",
+     "στρατηγοῦ"
+    ]
+   },
+   {
+    "prompt": "You love your own mother, although she blames you.",
+    "answer": "στέργεις τὴν σὴν μητέρα, καίπερ σε αἰτιωμένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στέργεις",
+     "τὴν",
+     "σὴν",
+     "μητέρα",
+     "καίπερ",
+     "σε",
+     "αἰτιωμένην"
+    ]
+   },
+   {
+    "prompt": "My eyes would be more beautiful than yours.",
+    "answer": "οἱ ἐμοὶ ὀφθαλμοὶ καλλίονες ἂν εἶεν τῶν σῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐμοὶ",
+     "ὀφθαλμοὶ",
+     "καλλίονες",
+     "ἂν",
+     "εἶεν",
+     "τῶν",
+     "σῶν"
+    ]
+   },
+   {
+    "prompt": "He sees my father, not your brother.",
+    "answer": "ὁρᾷ τὸν ἐμὸν πατέρα, οὐ τὸν σὸν ἀδελφόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρᾷ",
+     "τὸν",
+     "ἐμὸν",
+     "πατέρα",
+     "οὐ",
+     "σὸν",
+     "ἀδελφόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t8",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "The soldier abandoned his own shield in the battle.",
+    "answer": "ὁ στρατιώτης τὴν ἑαυτοῦ ἀσπίδα ἐν τῇ μάχῃ ἀπέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατιώτης",
+     "τὴν",
+     "ἑαυτοῦ",
+     "ἀσπίδα",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀπέλιπεν"
+    ]
+   },
+   {
+    "prompt": "I know his courage, but I distrust her words.",
+    "answer": "γιγνώσκω τὴν ἀνδρείαν αὐτοῦ, ἀπιστῶ δὲ τοῖς λόγοις αὐτῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γιγνώσκω",
+     "τὴν",
+     "ἀνδρείαν",
+     "αὐτοῦ",
+     "ἀπιστῶ",
+     "δὲ",
+     "τοῖς",
+     "λόγοις",
+     "αὐτῆς"
+    ]
+   },
+   {
+    "prompt": "She led her own children out of the burning house.",
+    "answer": "τοὺς ἑαυτῆς παῖδας ἐκ τῆς καιομένης οἰκίας ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ἑαυτῆς",
+     "παῖδας",
+     "ἐκ",
+     "τῆς",
+     "καιομένης",
+     "οἰκίας",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "We saw his army, not that of the king.",
+    "answer": "τὴν ἐκείνου στρατιὰν εἴδομεν, οὐ τὴν τοῦ βασιλέως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἐκείνου",
+     "στρατιὰν",
+     "εἴδομεν",
+     "οὐ",
+     "τοῦ",
+     "βασιλέως"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t9",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "We defended our own city bravely.",
+    "answer": "τὴν ἡμετέραν αὐτῶν πόλιν ἀνδρείως ἠμύναμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἡμετέραν",
+     "αὐτῶν",
+     "πόλιν",
+     "ἀνδρείως",
+     "ἠμύναμεν"
+    ]
+   },
+   {
+    "prompt": "Teach your own children to honour the gods.",
+    "answer": "διδάσκετε τοὺς παῖδας τοὺς ὑμετέρους αὐτῶν τοὺς θεοὺς τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διδάσκετε",
+     "τοὺς",
+     "παῖδας",
+     "ὑμετέρους",
+     "αὐτῶν",
+     "θεοὺς",
+     "τιμᾶν"
+    ]
+   },
+   {
+    "prompt": "Our friend appears more trustworthy than yours.",
+    "answer": "ὁ ἡμέτερος φίλος πιστότερος τοῦ ὑμετέρου φαίνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἡμέτερος",
+     "φίλος",
+     "πιστότερος",
+     "τοῦ",
+     "ὑμετέρου",
+     "φαίνεται"
+    ]
+   },
+   {
+    "prompt": "Do not betray your own fatherland, citizens.",
+    "answer": "μὴ προδίδοτε τὴν ὑμετέραν αὐτῶν πατρίδα, ὦ πολῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "προδίδοτε",
+     "τὴν",
+     "ὑμετέραν",
+     "αὐτῶν",
+     "πατρίδα",
+     "ὦ",
+     "πολῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t10",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "They call their own slaves as witnesses.",
+    "answer": "τοὺς οἰκέτας τοὺς σφετέρους αὐτῶν ἐπικαλοῦνται μάρτυρας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "οἰκέτας",
+     "σφετέρους",
+     "αὐτῶν",
+     "ἐπικαλοῦνται",
+     "μάρτυρας"
+    ]
+   },
+   {
+    "prompt": "The soldiers buried their own dead after the victory.",
+    "answer": "οἱ στρατιῶται τοὺς ἑαυτῶν νεκροὺς μετὰ τὴν νίκην ἔθαψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοὺς",
+     "ἑαυτῶν",
+     "νεκροὺς",
+     "μετὰ",
+     "τὴν",
+     "νίκην",
+     "ἔθαψαν"
+    ]
+   },
+   {
+    "prompt": "I admire their ships, but I distrust their leaders.",
+    "answer": "τὰς ναῦς αὐτῶν θαυμάζω, τοῖς δὲ ἡγεμόσι τοῖς ἐκείνων ἀπιστῶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "ναῦς",
+     "αὐτῶν",
+     "θαυμάζω",
+     "τοῖς",
+     "δὲ",
+     "ἡγεμόσι",
+     "ἐκείνων",
+     "ἀπιστῶ"
+    ]
+   },
+   {
+    "prompt": "They contrived that their own names were added to the treaty.",
+    "answer": "διεπράξαντο τὰ ὀνόματα σφῶν αὐτῶν προσγραφῆναι ταῖς σπονδαῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διεπράξαντο",
+     "τὰ",
+     "ὀνόματα",
+     "σφῶν",
+     "αὐτῶν",
+     "προσγραφῆναι",
+     "ταῖς",
+     "σπονδαῖς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t11",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "Out of friendship for me the citizens spared my brother.",
+    "answer": "φιλίᾳ τῇ ἐμῇ οἱ πολῖται τοῦ ἀδελφοῦ τοῦ ἐμοῦ ἐφείσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φιλίᾳ",
+     "τῇ",
+     "ἐμῇ",
+     "οἱ",
+     "πολῖται",
+     "τοῦ",
+     "ἀδελφοῦ",
+     "ἐμοῦ",
+     "ἐφείσαντο"
+    ]
+   },
+   {
+    "prompt": "The valour of us soldiers saved the city.",
+    "answer": "ἡ ἡμετέρα τῶν στρατιωτῶν ἀρετὴ τὴν πόλιν ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἡμετέρα",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἀρετὴ",
+     "τὴν",
+     "πόλιν",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "Fear of you kept the enemy away from the walls.",
+    "answer": "ὁ σὸς φόβος τοὺς πολεμίους τῶν τειχῶν ἀπεῖργεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σὸς",
+     "φόβος",
+     "τοὺς",
+     "πολεμίους",
+     "τῶν",
+     "τειχῶν",
+     "ἀπεῖργεν"
+    ]
+   },
+   {
+    "prompt": "It is not right for us to appear inferior to our own fame.",
+    "answer": "οὐ δίκαιον ἡμᾶς τῆς ἡμετέρας αὐτῶν δόξης ἐνδεεστέρους φαίνεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιον",
+     "ἡμᾶς",
+     "τῆς",
+     "ἡμετέρας",
+     "αὐτῶν",
+     "δόξης",
+     "ἐνδεεστέρους",
+     "φαίνεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-t12",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "You honour your father and obey your mother.",
+    "answer": "τιμᾷς τὸν πατέρα καὶ πείθῃ τῇ μητρί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμᾷς",
+     "τὸν",
+     "πατέρα",
+     "καὶ",
+     "πείθῃ",
+     "τῇ",
+     "μητρί"
+    ]
+   },
+   {
+    "prompt": "He loves his own wife and educates his children.",
+    "answer": "στέργει τὴν ἑαυτοῦ γυναῖκα καὶ παιδεύει τοὺς παῖδας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στέργει",
+     "τὴν",
+     "ἑαυτοῦ",
+     "γυναῖκα",
+     "καὶ",
+     "παιδεύει",
+     "τοὺς",
+     "παῖδας"
+    ]
+   },
+   {
+    "prompt": "A friend of mine announced these things in the marketplace.",
+    "answer": "φίλος ἐμὸς ἐν τῇ ἀγορᾷ ταῦτα ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φίλος",
+     "ἐμὸς",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ταῦτα",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "My friend, not yours, will lead the army.",
+    "answer": "ὁ ἐμὸς φίλος, οὐχ ὁ σός, τὴν στρατιὰν ἄξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἐμὸς",
+     "φίλος",
+     "οὐχ",
+     "σός",
+     "τὴν",
+     "στρατιὰν",
+     "ἄξει"
+    ]
+   }
+  ]
+ }
+]

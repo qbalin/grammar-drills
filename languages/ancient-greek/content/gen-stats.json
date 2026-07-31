@@ -1030,5 +1030,168 @@
    "προῇς": 1,
    "καθήσθων": 1
   }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 18,
+  "rawQuestions": 48,
+  "keptQuestions": 46,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 2,
+   "shortTest": 0
+  },
+  "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 20,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 19,
+  "rawQuestions": 68,
+  "keptQuestions": 68,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 23,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἐδακνέτην": 1,
+   "ἐδιδασκέτην": 1,
+   "ἀποδοῖο": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 30,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "προέδωκεν": 2,
+   "ἠμύναμεν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 27,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 28,
+  "rawQuestions": 72,
+  "keptQuestions": 72,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "προέδωκεν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 31,
+  "rawQuestions": 48,
+  "keptQuestions": 47,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 1,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἀνέθεσαν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 26,
+  "rawQuestions": 60,
+  "keptQuestions": 60,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἐπῃτιάθη": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 29,
+  "rawQuestions": 72,
+  "keptQuestions": 71,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 1,
+   "shortTest": 0
+  },
+  "unverifiedForms": {}
  }
 ]
