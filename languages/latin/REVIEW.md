@@ -55,5 +55,24 @@ sentence that is impeccably attested and means something other than the prompt.
   (the allowance is 2 per sentence). They are listed in `content/gen-stats.json`
   and are worth reading: a form that recurs is either a real gap in the
   dictionary or a word the generator invented.
-- `content/lemmas.json.gz` predates `scripts/build-lemmas.mjs` and is not
-  regenerated; see `BASELINE.json` for the verified drift.
+- `content/lemmas.json.gz` **is now rebuilt** by `scripts/build-lemmas.mjs`
+  (`--merge --drop-artifacts --max-rank 12000`) and no longer predates it. The
+  map it replaced was missing `dum`, `tamen`, `iam`, `nam`, `tam`, `nunc`,
+  `semper`, `inter` and `sub` outright, despite all nine being in
+  `dictionary.db` under a matching part of speech. Unresolved answer tokens fall
+  from 5.31% to 1.60%; the map goes from 242,746 keys to 353,557.
+- **Citing nouns is part of that rebuild.** `citations.mjs` improved verbs and
+  adjectives only, because the map had arrived with noun citations already in it
+  from whatever built it before this repo could. The first real rebuild wrote
+  3,842 bare headwords over them, so nouns and names are now derived here too —
+  nominative, genitive, gender — and anything still underivable is cited by its
+  part of speech (`et (conj)`), which is the convention the old map used. There
+  are now **no** bare citations in the map, against 54 before, and no shared
+  lemma's citation came out worse than the one it replaced.
+- What is still unresolved is mostly **perfect participles** — `territi`,
+  `polliciti`, `gauisi`, `deleta`, `mirati` — which have *zero* rows in
+  `dictionary.db.forms`. No rank cutoff reaches them; only generated morphology
+  would, which nothing here does.
+- **Enclitics are looked through** now: `ēloquentiamque` resolves to
+  `ēloquentia` via `profile.enclitics`, and only when the whole form resolves to
+  nothing, so `neque` is still `neque`.

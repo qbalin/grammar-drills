@@ -21,6 +21,8 @@
     "recompose": "none"
   },
 
+  "enclitics": ["que", "ve", "ne"],
+
   "families": [
     { "id": "nouns", "label": "Nouns" },
     { "id": "adj", "label": "Adjectives & adverbs" },
@@ -57,7 +59,7 @@
     "produceKinds": ["translate-en-la"]
   },
 
-  "citationsVersion": 2,
+  "citationsVersion": 3,
 
   "ui": {
     "appName": "Latina",

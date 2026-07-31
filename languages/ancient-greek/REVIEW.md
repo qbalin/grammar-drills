@@ -89,6 +89,18 @@ sentence that is impeccably attested and means something other than the prompt.
   double-compounds (`ἐν-ξέω`), whose form tables hold no finite verb to build
   parts from. They are excluded from the frequency list for that reason, so
   they are almost never what a student is shown.
+- **The vocabulary map was rebuilt at rank 12000.** It had been built at 7000,
+  which left `πρό` (rank 11227), `ἀντί` (14972) and `εἴθε` (9558) out of the
+  crib entirely — `πρό` alone was 134 of the misses. Rebuilding with
+  `--merge --drop-artifacts --max-rank 12000` takes the unresolved share of
+  answer tokens from 1.97% to 0.92% and the map from 276,027 keys to 386,391.
+  `--merge` is not optional here: a plain rebuild gains 24,780 keys and *loses*
+  6,854, which is a regression on whatever word the student is looking at.
+  `--drop-artifacts` sheds 2,618 Morpheus hyphen/plus compounds nobody can type.
+- **What is still unresolved is compounds and rarities**, not function words:
+  προεδωκεν, προηλθον, προιεναι (προ- compounds the analyser holds only as
+  `προ+…`), λαφυρα, κυνηγεται, δρομευσ. Raising the cutoff further reaches some
+  of them; the table in the plan for this change has the cost.
 - **The syllabus is Perseus's TEI, not CCEL.** CCEL publishes only Parts I–II of
   Smyth, §§ 1–573 — no syntax at all, which is 2,149 of the 3,048 sections. A
   pack built on it would teach the forms and nothing about using them.

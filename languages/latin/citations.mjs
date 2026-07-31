@@ -61,7 +61,14 @@ const normalize = compileFold(profile.fold);
  * the headword itself, so `sum` reports five "canonical forms", four of which
  * are sentences ("no supine stem except in the future active participle").
  */
-const NOT_A_FORM = /conjugation|passive|gerund|supine|perfect|irregular|^no /i;
+// Bounded by letters rather than by `\b`, because these are whole words in a
+// note and also substrings of real Latin. Unanchored, `perfect` rejects
+// `perfecta`; anchored with `\b` it still rejects `perfectūs`, because a macron
+// is not a `\w` character and the boundary fires in the middle of the word.
+// `\p{L}` with the `u` flag is the only spelling that holds for a macronized
+// language.
+const NOT_A_FORM =
+  /(?<!\p{L})(conjugation|passive|gerund|supine|perfect|irregular)(?!\p{L})|^no /iu;
 const isForm = (s) => s && !NOT_A_FORM.test(s) && s.split(/\s+/).length <= 2;
 
 // --- the reference dictionary -----------------------------------------------
@@ -107,7 +114,11 @@ function verbCitation(forms, lemma) {
   const supine =
     tagged(forms, "supine").filter(isForm)[0] ??
     tagged(forms, "accusative,noun-from-verb,supine").filter(isForm)[0];
-  if (!infinitive || !perfect) return undefined;
+  // Without the perfect there is still the infinitive, and `pulpo, pulpāre`
+  // names the conjugation where the bare headword names nothing. Only a verb
+  // with neither is beyond help.
+  if (!infinitive) return undefined;
+  if (!perfect) return `${headword(forms, lemma)}, ${infinitive}`;
   // A deponent's perfect is already periphrastic (`ūsus sum`), and that is where
   // its citation stops: `ūtor, ūtī, ūsus sum, ūsum` is nobody's dictionary entry.
   const parts = perfect.includes(" ")
@@ -162,6 +173,50 @@ function adjectiveCitation(forms, lemma) {
   return genitive ? `${m}, ${genitive}` : m;
 }
 
+// --- nouns ------------------------------------------------------------------
+
+/** The one-letter gender a dictionary prints after a noun. */
+const GENDER_MARK = {
+  masculine: "m",
+  feminine: "f",
+  neuter: "n",
+  common: "c",
+};
+
+/**
+ * `rex, rēgis` · `manus, manūs (f)` · `agricola, agricolae (m)`.
+ *
+ * A noun is cited by its nominative and genitive singular, because the genitive
+ * is what names the declension and so what lets the student inflect it at all;
+ * the gender follows in brackets when the dictionary knows it and the ending
+ * does not already give it away.
+ *
+ * This had no branch here until now, and did not obviously need one: the map
+ * shipped with noun citations already in it, made by whatever built the map
+ * before this repo could. The moment `build-lemmas.mjs` could rebuild the map,
+ * that stopped being true — a rebuild wrote 3,842 bare headwords over them —
+ * and a citation nobody can reproduce is a citation that vanishes on the next
+ * rebuild. So it is derived here, from the same tagged forms the verbs use.
+ */
+function nounCitation(forms, entry) {
+  const nominative = headword(forms, entry.lemma);
+  const genitive = forms.find(
+    (f) =>
+      hasTag(f, "genitive") &&
+      hasTag(f, "singular") &&
+      !hasTag(f, "plural") &&
+      isForm(f.form),
+  )?.form;
+  // No comparison between the two: `manus, manūs` differs by the macron alone
+  // and `sitis, sitis` not at all, and both are how a dictionary prints them.
+  // The adjectives suppress a repeat because three identical nominatives say
+  // nothing three times; a noun's second slot is the genitive by position, so
+  // it says something even when it looks the same.
+  if (!genitive) return undefined;
+  const mark = GENDER_MARK[entry.gender ?? ""];
+  return mark ? `${nominative}, ${genitive} (${mark})` : `${nominative}, ${genitive}`;
+}
+
 /**
  * The last resort for an adjective the dictionary does not hold: `X, X, X`
  * says nothing three times, so at least stop saying it.
@@ -188,24 +243,49 @@ for (const entries of Object.values(map)) {
 }
 
 const rewritten = new Map(); // `lemma|pos` -> new citation
-const stats = { verb: 0, verbFull: 0, adj: 0, adjCollapsed: 0, missed: [] };
+const stats = { verb: 0, verbFull: 0, adj: 0, adjCollapsed: 0, noun: 0, marked: 0, missed: [] };
+
+/**
+ * `et (conj)` · `in (prep)` · `Horus (name)`.
+ *
+ * What a word with nothing to inflect is cited as. A bare `et` in the crib is
+ * indistinguishable from a word whose citation simply failed to build, and the
+ * part of speech is the one useful thing there is to say about an indeclinable.
+ * This is the fallback under every branch above, and it is why the shipped map
+ * had 54 bare citations out of 6,747 rather than thousands.
+ */
+const posMarked = (entry) => `${entry.lemma} (${entry.pos})`;
+
+// `name` rides with `noun`: a proper noun is declined and cited the same way,
+// and Rōma, Rōmae is as much use to the student as rex, rēgis.
+const NOUNISH = new Set(["noun", "name"]);
 
 for (const [key, entry] of distinct) {
-  if (entry.pos !== "verb" && entry.pos !== "adj") continue;
-  const forms = formsOf(entry.lemma, entry.pos);
-  const citation =
+  const inflected =
+    entry.pos === "verb" || entry.pos === "adj" || NOUNISH.has(entry.pos);
+  const forms = inflected ? formsOf(entry.lemma, entry.pos) : [];
+  const derived =
     entry.pos === "verb"
       ? verbCitation(forms, entry.lemma)
-      : adjectiveCitation(forms, entry.lemma) ?? collapseRepeats(entry.citation);
+      : entry.pos === "adj"
+        ? adjectiveCitation(forms, entry.lemma) ?? collapseRepeats(entry.citation)
+        : NOUNISH.has(entry.pos)
+          ? nounCitation(forms, entry)
+          : undefined;
+  // Anything the branches above could not build falls back to the part of
+  // speech, so no entry is left as its own bare headword.
+  const citation = derived ?? posMarked(entry);
 
-  if (!citation || citation === entry.citation) {
-    if (!citation) stats.missed.push(`${entry.lemma} (${entry.pos})`);
-    continue;
-  }
+  if (citation === entry.citation) continue;
+  if (!derived) stats.missed.push(`${entry.lemma} (${entry.pos})`);
   rewritten.set(key, citation);
-  if (entry.pos === "verb") {
+  if (!derived) {
+    stats.marked += 1;
+  } else if (entry.pos === "verb") {
     stats.verb += 1;
     if (citation.split(", ").length === 4) stats.verbFull += 1;
+  } else if (NOUNISH.has(entry.pos)) {
+    stats.noun += 1;
   } else if (forms.length === 0) {
     stats.adjCollapsed += 1;
   } else {
@@ -239,9 +319,12 @@ console.log(
 console.log(
   `Adjectives ${stats.adj} rewritten, ${stats.adjCollapsed} repeated triples collapsed`,
 );
-console.log(`Unimproved ${stats.missed.length} entries keep their citation`);
+console.log(`Nouns      ${stats.noun} rewritten (nominative, genitive, gender)`);
+console.log(`Marked     ${stats.marked} cited by part of speech, having nothing to inflect`);
+console.log(`Unimproved ${stats.missed.length} entries the dictionary could not build a citation for`);
 console.log(`  e.g. ${sample("verb", 3).join(" · ")}`);
 console.log(`       ${sample("adj", 3).join(" · ")}`);
+console.log(`       ${sample("noun", 3).join(" · ")}`);
 console.log(`${touched} of the map's entries updated`);
 
 if (DRY) {

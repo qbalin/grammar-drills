@@ -18,11 +18,25 @@
  *
  *   node --import tsx scripts/build-lemmas.mjs [--pack languages/latin]
  *        [--ref /path/to/ref] [--max-rank 7000] [--verify] [--out path]
+ *        [--merge] [--drop-artifacts]
  *
  * `--verify` builds the map and compares it against the one already shipped
  * without writing anything. Use it on a pack whose map predates this script:
  * a high key overlap says the builder agrees with however the original was
  * made, which is the only evidence available that it is doing the right thing.
+ *
+ * `--merge` keeps the shipped map's keys that this build does not produce,
+ * rather than replacing the file outright. That matters on a pack whose map
+ * predates the script: rebuilding Greek gains 24,780 keys and loses 6,854, and
+ * the loss is a real regression for the student even though the gain is bigger.
+ * A rebuild is the right default for a new pack; a merge is the right thing for
+ * a pack that already shipped.
+ *
+ * `--drop-artifacts` skips form keys carrying a hyphen or a plus. Morpheus
+ * writes double-compounds as `ἐν-ξέω` and `προ+εξαναλωμενου`, which are
+ * analyser notation rather than words: nobody types them, so they are bytes
+ * that can never be looked up. Off by default, because only some references
+ * have them.
  */
 import { existsSync, writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
@@ -41,8 +55,13 @@ const profile = loadProfile(dir);
 const fold = compileFold(profile.fold);
 const ref = refDir(profile, argv);
 const VERIFY = argv.includes("--verify");
+const MERGE = argv.includes("--merge");
+const DROP_ARTIFACTS = argv.includes("--drop-artifacts");
 const MAX_RANK = Number(opt("--max-rank", 7000));
 const OUT = opt("--out", join(dir, "content", "lemmas.json.gz"));
+
+/** Analyser notation rather than a word anyone could type. */
+const ARTIFACT = /[-+]/;
 
 for (const db of ["dictionary.db", "frequencies.db"]) {
   if (!existsSync(join(ref, db))) {
@@ -140,8 +159,26 @@ for (const row of ranked) {
     for (const form of forms) {
       const key = fold(form);
       if (!key) continue;
+      if (DROP_ARTIFACTS && ARTIFACT.test(key)) continue;
       (map[key] ??= []).push(record);
     }
+  }
+}
+
+const built = Object.keys(map).length;
+
+// A key this build did not produce, but the shipped map has, is a word the
+// student can look up today. Dropping it to gain others is still a regression
+// on the word in front of them, so a merge keeps it. Where both have the key,
+// this build wins: its records carry whatever the reference says now.
+let kept = 0;
+if (MERGE && !VERIFY) {
+  const shipped = loadLemmas(dir);
+  for (const key of Object.keys(shipped)) {
+    if (key in map) continue;
+    if (DROP_ARTIFACTS && ARTIFACT.test(key)) continue;
+    map[key] = shipped[key];
+    kept++;
   }
 }
 
@@ -154,7 +191,8 @@ for (const key of Object.keys(map)) {
 const keys = Object.keys(map);
 console.log(
   `${lemmas} lemmas of the top ${MAX_RANK} resolved (${missing} absent from the dictionary) ` +
-    `-> ${keys.length} folded form keys`,
+    `-> ${built} folded form keys` +
+    (MERGE && !VERIFY ? `, plus ${kept} kept from the shipped map -> ${keys.length}` : ""),
 );
 
 if (VERIFY) {

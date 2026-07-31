@@ -87,6 +87,34 @@ export function words(text: string): string[] {
   return text.split(/\s+/).map(stripPunctuation).filter((word) => word !== "");
 }
 
+/**
+ * The dictionary's readings of one form, looking through an enclitic if it has
+ * to.
+ *
+ * `ēloquentiamque` is one token to a whitespace split and no word to any
+ * dictionary, because the `-que` is a separate particle the orthography glues
+ * on. The generator's own `vocab` splits them; the crib reads the answer, so
+ * without this it shows "not in the dictionary" for a word the student can see
+ * is ordinary.
+ *
+ * The whole form is always tried first and wins whenever it resolves: `neque`
+ * and `quisque` are words in their own right, and a rule that took the ending
+ * off on sight would replace a right answer with a wrong one.
+ */
+function readings(source: VocabSource, form: string): LemmaEntry[] {
+  const whole = source.lookup(form);
+  if (whole.length) return whole;
+  for (const enclitic of source.profile.enclitics ?? []) {
+    if (form.length <= enclitic.length) continue;
+    const stem = form.slice(0, -enclitic.length);
+    // Compared folded: the answer is accented and the enclitic list is not.
+    if (source.fold(form.slice(-enclitic.length)) !== source.fold(enclitic)) continue;
+    const found = source.lookup(stem);
+    if (found.length) return found;
+  }
+  return whole;
+}
+
 /** A form matched to a reading of it and a word of the prompt. */
 interface Match {
   entry: LemmaEntry;
@@ -159,7 +187,7 @@ export function questionVocabulary(
     return true;
   });
 
-  const candidates = forms.map((form) => source.lookup(form));
+  const candidates = forms.map((form) => readings(source, form));
   const matched = new Array<Match | null>(forms.length).fill(null);
   const taken = new Set<number>();
 

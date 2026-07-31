@@ -48,6 +48,17 @@ export interface Profile {
   /** The prompt language. Selects the L1 adapter; only "en" ships today. */
   l1: { code: string; name: string };
   fold: FoldSpec;
+  /**
+   * Particles the language writes joined to the end of the word before them,
+   * so `ēloquentiam` + `que` is written `ēloquentiamque` — one token to the
+   * crib, and one the dictionary has never heard of. Listed unaccented and
+   * without their hyphen. Empty or absent where the language has none.
+   *
+   * Only the vocabulary lookup uses these, and only as a fallback when the
+   * whole form resolves to nothing: a word that is already in the dictionary
+   * is never taken apart on suspicion.
+   */
+  enclitics?: string[];
   /** Display order, which is also the order placement walks. */
   families: Family[];
   fallbackFamily: string;
@@ -196,14 +207,17 @@ function parseFold(raw: unknown): FoldSpec {
 /** Parse and validate a raw profile. Throws `PackError` naming the offending path. */
 export function parseProfile(raw: unknown): Profile {
   const top = object(raw, "profile");
-  const allowed = [
+  const required = [
     "schema", "id", "l2", "l1", "fold", "families", "fallbackFamily", "grammar",
     "questions", "citationsVersion", "ui", "storage", "grammarShape", "coverage",
   ];
+  /** Present or absent; a pack that predates them stays valid. */
+  const optional = ["enclitics"];
+  const allowed = [...required, ...optional];
   for (const key of Object.keys(top)) {
     if (!allowed.includes(key)) throw new PackError(`profile.${key}: unknown key`);
   }
-  for (const key of allowed) {
+  for (const key of required) {
     if (!(key in top)) throw new PackError(`profile.${key}: missing`);
   }
   if (top.schema !== 1) {
@@ -258,6 +272,15 @@ export function parseProfile(raw: unknown): Profile {
     }),
     l1: fields<Profile["l1"]>(top.l1, "profile.l1", { code: "string", name: "string" }),
     fold: parseFold(top.fold),
+    enclitics:
+      top.enclitics === undefined
+        ? undefined
+        : array(top.enclitics, "profile.enclitics").map((e, i) => {
+            if (typeof e !== "string" || !e) {
+              throw new PackError(`profile.enclitics[${i}]: expected a non-empty string`);
+            }
+            return e;
+          }),
     families,
     fallbackFamily,
     grammar,

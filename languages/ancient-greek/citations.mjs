@@ -41,13 +41,20 @@
 import { DatabaseSync } from "node:sqlite";
 import { gzipSync } from "node:zlib";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { join, resolve } from "node:path";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { compileFold } from "@lang-tutor/core";
 import { loadLemmas, loadProfile, packDir, refDir } from "../../scripts/lib/pack.mjs";
 
 const argv = process.argv.slice(2);
 const DRY = argv.includes("--dry");
-const dir = packDir(argv);
+// This pack, unless told otherwise. `packDir` falls back to Latin when nothing
+// names a pack, which is right for the shared scripts and wrong here: run
+// without a flag, this rewrote Latin's map with Greek's citation rules and
+// reported success. A pack-local script belongs to its own pack.
+const dir = argv.includes("--pack") || argv.includes("--language")
+  ? packDir(argv)
+  : dirname(fileURLToPath(import.meta.url));
 const profile = loadProfile(dir);
 const ref = refDir(profile, argv);
 const MAP = join(dir, "content", "lemmas.json.gz");

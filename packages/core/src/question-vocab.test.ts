@@ -182,6 +182,52 @@ describe("questionVocabulary", () => {
     expect(words[0]?.english).toBe("Water");
   });
 
+  describe("enclitics", () => {
+    // The orthography glues these on, so the answer holds one token and the
+    // dictionary holds none: `aquamque` is `aquam` + `que` and the crib used to
+    // apologise for a word the student can see is ordinary.
+    const withEnclitics = new Content(
+      {
+        grammar: [],
+        tests: {},
+        lemmas: {
+          ...lemmas,
+          // A word that ends in an enclitic and is nonetheless a word, with a
+          // commoner stem sitting behind it: the trap the rule has to avoid.
+          mane: [{ lemma: "mane", citation: "mane (adv)", gloss: "in the morning", pos: "adv", rank: 1500 }],
+          ma: [{ lemma: "ma", citation: "ma (n)", gloss: "mother", pos: "noun", rank: 12 }],
+        },
+      },
+      { ...testProfile, enclitics: ["que", "ve", "ne"] },
+    );
+    const look = (answer: string, form: string) =>
+      questionVocabulary(withEnclitics, ask("x", answer)).find(
+        (w) => w.form === form,
+      );
+
+    it("looks through a trailing enclitic to the word underneath", () => {
+      expect(look("aquamque", "aquamque")?.entry?.citation).toBe("aqua, aquae (f)");
+      expect(look("manune", "manune")?.entry?.citation).toBe("manus, manūs (f)");
+    });
+
+    it("keeps the form as the answer wrote it, not the stem", () => {
+      // The row still names what is on the page; only the lookup looked past it.
+      expect(look("aquamque", "aquamque")?.form).toBe("aquamque");
+    });
+
+    it("prefers the whole word wherever the dictionary has one", () => {
+      // `mane` ends in `ne` and `ma` is in the dictionary and far commoner, so
+      // a rule that stripped the ending on sight would replace a right answer
+      // with a wrong one. The whole form is tried first and wins.
+      expect(look("mane", "mane")?.entry?.citation).toBe("mane (adv)");
+    });
+
+    it("does nothing at all for a pack that declares none", () => {
+      // `content` is built on the unmodified fixture.
+      expect(questionVocabulary(content, ask("x", "aquamque"))[0]?.entry).toBeUndefined();
+    });
+  });
+
   it("still names the words when no dictionary has been loaded at all", () => {
     const bare = new Content({ grammar: [], tests: {} }, testProfile);
     const words = questionVocabulary(bare, ask("The girl loves the rose.", "puella rosam amat"));
