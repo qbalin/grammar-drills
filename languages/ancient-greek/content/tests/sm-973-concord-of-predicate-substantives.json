@@ -1,0 +1,514 @@
+[
+ {
+  "id": "sm-973-concord-of-predicate-substantives-t1",
+  "sectionId": "sm-973-concord-of-predicate-substantives",
+  "questions": [
+   {
+    "prompt": "Telamon, who fought nobly, was the general of the allies.",
+    "answer": "Ὁ Τελαμών, ὃς γενναίως ἐμάχετο, στρατηγὸς τῶν συμμάχων ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Τελαμών",
+     "ὅς",
+     "γενναίως",
+     "ἐμάχετο",
+     "στρατηγός",
+     "τῶν",
+     "συμμάχων",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The seer became a trustworthy adviser to the king.",
+    "answer": "Ὁ μάντις τῷ βασιλεῖ σύμβουλος πιστὸς ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάντις",
+     "τῷ",
+     "βασιλεῖ",
+     "σύμβουλος",
+     "πιστός",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "Freedom is the greatest good for the citizens.",
+    "answer": "Ἡ ἐλευθερία τοῖς πολίταις μέγιστον ἀγαθόν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐλευθερία",
+     "τοῖς",
+     "πολίταις",
+     "μέγιστον",
+     "ἀγαθόν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "These men were once the masters of the sea.",
+    "answer": "Οὗτοι οἱ ἄνδρες ποτὲ τῆς θαλάττης δεσπόται ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "ἄνδρες",
+     "ποτέ",
+     "τῆς",
+     "θαλάττης",
+     "δεσπόται",
+     "ἦσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-973-concord-of-predicate-substantives-t2",
+  "sectionId": "sm-973-concord-of-predicate-substantives",
+  "questions": [
+   {
+    "prompt": "We claim to be free, though we serve a bitter master.",
+    "answer": "Ἐλεύθεροι εἶναι ἀξιοῦμεν, καίπερ πικρῷ δεσπότῃ δουλεύοντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλεύθεροι",
+     "εἶναι",
+     "ἀξιοῦμεν",
+     "καίπερ",
+     "πικρῷ",
+     "δεσπότῃ",
+     "δουλεύοντες"
+    ]
+   },
+   {
+    "prompt": "He denied that he had come uninvited and as an enemy.",
+    "answer": "Ἠρνεῖτο ἄκλητος καὶ πολέμιος ἥκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠρνεῖτο",
+     "ἄκλητος",
+     "καί",
+     "πολέμιος",
+     "ἥκειν"
+    ]
+   },
+   {
+    "prompt": "She thought that she was the wisest of women.",
+    "answer": "Ὤιετο σοφωτάτη τῶν γυναικῶν εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤιετο",
+     "σοφωτάτη",
+     "τῶν",
+     "γυναικῶν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "You seem to be a clever craftsman.",
+    "answer": "Δοκεῖς δεινὸς δημιουργὸς εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκεῖς",
+     "δεινός",
+     "δημιουργός",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-973-concord-of-predicate-substantives-t3",
+  "sectionId": "sm-973-concord-of-predicate-substantives",
+  "questions": [
+   {
+    "prompt": "For mortals the affairs of the gods are a riddle.",
+    "answer": "Τοῖς θνητοῖς τὰ τῶν θεῶν πράγματα αἴνιγμά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "θνητοῖς",
+     "τά",
+     "τῶν",
+     "θεῶν",
+     "πράγματα",
+     "αἴνιγμα",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "In that war Alexander was everything.",
+    "answer": "Ἐν ἐκείνῳ τῷ πολέμῳ πάντα ἦν ὁ Ἀλέξανδρος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἐκείνῳ",
+     "τῷ",
+     "πολέμῳ",
+     "πάντα",
+     "ἦν",
+     "ὁ",
+     "Ἀλέξανδρος"
+    ]
+   },
+   {
+    "prompt": "Fire and air are the first principles of all things.",
+    "answer": "Τὸ πῦρ καὶ ὁ ἀὴρ ἀρχαὶ τῶν πάντων εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "πῦρ",
+     "καί",
+     "ὁ",
+     "ἀήρ",
+     "ἀρχαί",
+     "τῶν",
+     "πάντων",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "Wealth, as they say, is the servant of the wise.",
+    "answer": "Ὁ πλοῦτος, ὡς φασι, θεράπων τῶν σοφῶν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλοῦτος",
+     "ὡς",
+     "φασί",
+     "θεράπων",
+     "τῶν",
+     "σοφῶν",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-973-concord-of-predicate-substantives-t4",
+  "sectionId": "sm-973-concord-of-predicate-substantives",
+  "questions": [
+   {
+    "prompt": "The citizens chose him general of the army.",
+    "answer": "Οἱ πολῖται αὐτὸν στρατηγὸν τοῦ στρατεύματος εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "αὐτόν",
+     "στρατηγόν",
+     "τοῦ",
+     "στρατεύματος",
+     "εἵλοντο"
+    ]
+   },
+   {
+    "prompt": "They appointed the harmost guardian of the acropolis.",
+    "answer": "Τὸν ἁρμοστὴν φύλακα τῆς ἀκροπόλεως κατέστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "ἁρμοστήν",
+     "φύλακα",
+     "τῆς",
+     "ἀκροπόλεως",
+     "κατέστησαν"
+    ]
+   },
+   {
+    "prompt": "We consider this man a worthy ally.",
+    "answer": "Τοῦτον τὸν ἄνδρα σύμμαχον ἄξιον νομίζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτον",
+     "τόν",
+     "ἄνδρα",
+     "σύμμαχον",
+     "ἄξιον",
+     "νομίζομεν"
+    ]
+   },
+   {
+    "prompt": "The people named the orator their leader.",
+    "answer": "Ὁ δῆμος τὸν ῥήτορα ἡγεμόνα ὠνόμασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "τόν",
+     "ῥήτορα",
+     "ἡγεμόνα",
+     "ὠνόμασεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-973-concord-of-predicate-substantives-t5",
+  "sectionId": "sm-973-concord-of-predicate-substantives",
+  "questions": [
+   {
+    "prompt": "Though he was a foreigner, he nevertheless became a benefactor of the city.",
+    "answer": "Ξένος ὢν ὅμως εὐεργέτης τῆς πόλεως ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ξένος",
+     "ὤν",
+     "ὅμως",
+     "εὐεργέτης",
+     "τῆς",
+     "πόλεως",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "Since the war was long, the young men had become experienced soldiers.",
+    "answer": "Τοῦ πολέμου μακροῦ ὄντος, οἱ νεανίαι ἔμπειροι στρατιῶται ἐγεγόνεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "μακροῦ",
+     "ὄντος",
+     "οἱ",
+     "νεανίαι",
+     "ἔμπειροι",
+     "στρατιῶται",
+     "ἐγεγόνεσαν"
+    ]
+   },
+   {
+    "prompt": "Although he was poor, the seer remained a free man.",
+    "answer": "Καίπερ πένης ὤν, ὁ μάντις ἐλεύθερος ἔμενεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "πένης",
+     "ὤν",
+     "ὁ",
+     "μάντις",
+     "ἐλεύθερος",
+     "ἔμενεν"
+    ]
+   },
+   {
+    "prompt": "The women, being suppliants, sat at the altar.",
+    "answer": "Αἱ γυναῖκες ἱκέτιδες οὖσαι πρὸς τῷ βωμῷ ἐκάθηντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "ἱκέτιδες",
+     "οὖσαι",
+     "πρός",
+     "τῷ",
+     "βωμῷ",
+     "ἐκάθηντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-973-concord-of-predicate-substantives-t6",
+  "sectionId": "sm-973-concord-of-predicate-substantives",
+  "questions": [
+   {
+    "prompt": "The concubine was once a queen among the barbarians.",
+    "answer": "Ἡ παλλακὴ ποτὲ βασίλεια ἐν τοῖς βαρβάροις ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παλλακή",
+     "ποτέ",
+     "βασίλεια",
+     "ἐν",
+     "τοῖς",
+     "βαρβάροις",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "This man seems to me to be the true master.",
+    "answer": "Οὗτος ὁ ἀνὴρ ἀληθινὸς δεσπότης εἶναί μοι δοκεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "ἀνήρ",
+     "ἀληθινός",
+     "δεσπότης",
+     "εἶναι",
+     "μοι",
+     "δοκεῖ"
+    ]
+   },
+   {
+    "prompt": "The evil-doer proved to be a bitter enemy to his friends.",
+    "answer": "Ὁ κάκουργος πικρὸς ἐχθρὸς τοῖς φίλοις ἐφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κάκουργος",
+     "πικρός",
+     "ἐχθρός",
+     "τοῖς",
+     "φίλοις",
+     "ἐφάνη"
+    ]
+   },
+   {
+    "prompt": "The attendants confessed that they were the cause of the fire.",
+    "answer": "Οἱ θεράποντες ὡμολόγησαν αἴτιοι τοῦ πυρὸς εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεράποντες",
+     "ὡμολόγησαν",
+     "αἴτιοι",
+     "τοῦ",
+     "πυρός",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-973-concord-of-predicate-substantives-t7",
+  "sectionId": "sm-973-concord-of-predicate-substantives",
+  "questions": [
+   {
+    "prompt": "Cyrus was a just judge of his subjects.",
+    "answer": "Κῦρος δικαστὴς δίκαιος ἦν τῶν ὑπηκόων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "δικαστὴς",
+     "δίκαιος",
+     "ἦν",
+     "τῶν",
+     "ὑπηκόων"
+    ]
+   },
+   {
+    "prompt": "These men, although they claim to be allies, are in truth enemies.",
+    "answer": "οὗτοι, καίπερ σύμμαχοι εἶναι ἀξιοῦντες, τῇ ἀληθείᾳ πολέμιοι τυγχάνουσιν ὄντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "καίπερ",
+     "σύμμαχοι",
+     "εἶναι",
+     "ἀξιοῦντες",
+     "τῇ",
+     "ἀληθείᾳ",
+     "πολέμιοι",
+     "τυγχάνουσιν",
+     "ὄντες"
+    ]
+   },
+   {
+    "prompt": "War, as the poets say, is the father of all things.",
+    "answer": "ὁ πόλεμος, ὡς οἱ ποιηταὶ λέγουσιν, πατὴρ πάντων ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πόλεμος",
+     "ὡς",
+     "οἱ",
+     "ποιηταὶ",
+     "λέγουσιν",
+     "πατὴρ",
+     "πάντων",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Solon, whom all the Greeks honored, became a lawgiver for the Athenians.",
+    "answer": "Σόλων, ὃν πάντες οἱ Ἕλληνες ἐτίμων, νομοθέτης τοῖς Ἀθηναίοις ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Σόλων",
+     "ὃν",
+     "πάντες",
+     "οἱ",
+     "Ἕλληνες",
+     "ἐτίμων",
+     "νομοθέτης",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "ἐγένετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-973-concord-of-predicate-substantives-t8",
+  "sectionId": "sm-973-concord-of-predicate-substantives",
+  "questions": [
+   {
+    "prompt": "Xenophon showed himself a brave leader of the soldiers.",
+    "answer": "ὁ Ξενοφῶν ἡγεμὼν ἀνδρεῖος τῶν στρατιωτῶν ἐφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ξενοφῶν",
+     "ἡγεμὼν",
+     "ἀνδρεῖος",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐφάνη"
+    ]
+   },
+   {
+    "prompt": "We who now rule were long ago slaves of the Persians.",
+    "answer": "ἡμεῖς οἱ νῦν ἄρχοντες πάλαι τῶν Περσῶν δοῦλοι ἦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμεῖς",
+     "οἱ",
+     "νῦν",
+     "ἄρχοντες",
+     "πάλαι",
+     "τῶν",
+     "Περσῶν",
+     "δοῦλοι",
+     "ἦμεν"
+    ]
+   },
+   {
+    "prompt": "Because he wished to appear wise, he kept silent in the assembly.",
+    "answer": "βουλόμενος σοφὸς φαίνεσθαι, ἐν τῇ ἐκκλησίᾳ ἐσίγα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλόμενος",
+     "σοφὸς",
+     "φαίνεσθαι",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἐσίγα"
+    ]
+   },
+   {
+    "prompt": "This woman was the mother of the king and queen of the land.",
+    "answer": "αὕτη ἡ γυνὴ μήτηρ τοῦ βασιλέως καὶ βασίλεια τῆς χώρας ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "γυνὴ",
+     "μήτηρ",
+     "τοῦ",
+     "βασιλέως",
+     "καὶ",
+     "βασίλεια",
+     "τῆς",
+     "χώρας",
+     "ἦν"
+    ]
+   }
+  ]
+ }
+]
