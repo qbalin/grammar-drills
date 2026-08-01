@@ -16,11 +16,18 @@ const packName = process.env.LANG_PACK ?? "latin";
 const profilePath = fileURLToPath(
   new URL(`../../languages/${packName}/profile.json`, import.meta.url),
 );
+// What this language throws when the confetti fires. Beside the profile
+// because it is the same kind of thing: the pack's own look, compiled in.
+const confettiPath = fileURLToPath(
+  new URL(`../../languages/${packName}/confetti.mjs`, import.meta.url),
+);
 const profile = JSON.parse(readFileSync(profilePath, "utf8"));
 
 export default defineConfig({
   base,
-  resolve: { alias: { "@pack/profile": profilePath } },
+  resolve: {
+    alias: { "@pack/profile": profilePath, "@pack/confetti": confettiPath },
+  },
   plugins: [
     react(),
     {

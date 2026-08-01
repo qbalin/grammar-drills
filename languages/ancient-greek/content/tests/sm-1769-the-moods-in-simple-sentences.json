@@ -381,5 +381,370 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1769-the-moods-in-simple-sentences-t7",
+  "sectionId": "sm-1769-the-moods-in-simple-sentences",
+  "questions": [
+   {
+    "prompt": "The soldiers were unprepared, and the enemy attacked at dawn.",
+    "answer": "οἱ στρατιῶται ἀπαράσκευοι ἦσαν, καὶ οἱ πολέμιοι ἅμα τῇ ἕῳ προσέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἀπαράσκευοι",
+     "ἦσαν",
+     "καί",
+     "πολέμιοι",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "προσέβαλον"
+    ]
+   },
+   {
+    "prompt": "No one could easily persuade such a man.",
+    "answer": "οὐδεὶς ἂν ῥᾳδίως τοιοῦτον ἄνδρα πείσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἄν",
+     "ῥᾳδίως",
+     "τοιοῦτον",
+     "ἄνδρα",
+     "πείσειεν"
+    ]
+   },
+   {
+    "prompt": "The general drew up the army along the riverbank.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα παρὰ τὴν ὄχθην παρέταξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "παρά",
+     "τήν",
+     "ὄχθην",
+     "παρέταξεν"
+    ]
+   },
+   {
+    "prompt": "Perhaps you would find no more reliable friend.",
+    "answer": "ἴσως οὐκ ἂν εὕροις φίλον βεβαιότερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσως",
+     "οὐκ",
+     "ἄν",
+     "εὕροις",
+     "φίλον",
+     "βεβαιότερον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1769-the-moods-in-simple-sentences-t8",
+  "sectionId": "sm-1769-the-moods-in-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Let us guard against the plots of our enemies.",
+    "answer": "φυλαττώμεθα τὰς τῶν πολεμίων ἐπιβουλάς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλαττώμεθα",
+     "τάς",
+     "τῶν",
+     "πολεμίων",
+     "ἐπιβουλάς"
+    ]
+   },
+   {
+    "prompt": "What shall I say to the judges about these matters?",
+    "answer": "τί εἴπω τοῖς δικασταῖς περὶ τούτων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "εἴπω",
+     "τοῖς",
+     "δικασταῖς",
+     "περί",
+     "τούτων"
+    ]
+   },
+   {
+    "prompt": "Let us not abandon those who saved the city.",
+    "answer": "μὴ προδῶμεν τοὺς τὴν πόλιν σώσαντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "προδῶμεν",
+     "τούς",
+     "τήν",
+     "πόλιν",
+     "σώσαντας"
+    ]
+   },
+   {
+    "prompt": "Shall we launch the triremes or wait?",
+    "answer": "πότερον τὰς τριήρεις καθέλκωμεν ἢ μένωμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τάς",
+     "τριήρεις",
+     "καθέλκωμεν",
+     "ἤ",
+     "μένωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1769-the-moods-in-simple-sentences-t9",
+  "sectionId": "sm-1769-the-moods-in-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Pay attention, children, to the words of your teacher.",
+    "answer": "προσέχετε, ὦ παῖδες, τοῖς τοῦ διδασκάλου λόγοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσέχετε",
+     "ὦ",
+     "παῖδες",
+     "τοῖς",
+     "τοῦ",
+     "διδασκάλου",
+     "λόγοις"
+    ]
+   },
+   {
+    "prompt": "Save us from the present dangers, O gods.",
+    "answer": "ῥύσασθε ἡμᾶς, ὦ θεοί, τῶν παρόντων κινδύνων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ῥύσασθε",
+     "ἡμᾶς",
+     "ὦ",
+     "θεοί",
+     "τῶν",
+     "παρόντων",
+     "κινδύνων"
+    ]
+   },
+   {
+    "prompt": "Let the general lead the army through the plain.",
+    "answer": "ὁ στρατηγὸς ἀγέτω τὸ στράτευμα διὰ τοῦ πεδίου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἀγέτω",
+     "τό",
+     "στράτευμα",
+     "διά",
+     "τοῦ",
+     "πεδίου"
+    ]
+   },
+   {
+    "prompt": "Answer me truly, for I have been wronged.",
+    "answer": "ἀπόκριναί μοι ἀληθῶς· ἠδίκημαι γάρ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπόκριναι",
+     "μοι",
+     "ἀληθῶς",
+     "ἠδίκημαι",
+     "γάρ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1769-the-moods-in-simple-sentences-t10",
+  "sectionId": "sm-1769-the-moods-in-simple-sentences",
+  "questions": [
+   {
+    "prompt": "May the gods grant victory to those fighting for their country.",
+    "answer": "εἴθε οἱ θεοὶ νίκην δοῖεν τοῖς ὑπὲρ τῆς πατρίδος μαχομένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "θεοί",
+     "νίκην",
+     "δοῖεν",
+     "τοῖς",
+     "ὑπέρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχομένοις"
+    ]
+   },
+   {
+    "prompt": "Would that I had never trusted such a friend!",
+    "answer": "εἴθε μηδέποτε τοιούτῳ φίλῳ ἐπίστευσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "μηδέποτε",
+     "τοιούτῳ",
+     "φίλῳ",
+     "ἐπίστευσα"
+    ]
+   },
+   {
+    "prompt": "May we never become slaves to the barbarians.",
+    "answer": "μήποτε δοῦλοι τοῖς βαρβάροις γενοίμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήποτε",
+     "δοῦλοι",
+     "τοῖς",
+     "βαρβάροις",
+     "γενοίμεθα"
+    ]
+   },
+   {
+    "prompt": "May you fare well and return safely from the war.",
+    "answer": "εὖ πράττοις καὶ σῶς ἐκ τοῦ πολέμου ἐπανέλθοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "πράττοις",
+     "καί",
+     "σῶς",
+     "ἐκ",
+     "τοῦ",
+     "πολέμου",
+     "ἐπανέλθοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1769-the-moods-in-simple-sentences-t11",
+  "sectionId": "sm-1769-the-moods-in-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Do not laugh at those who suffer misfortune.",
+    "answer": "μὴ καταγέλα τῶν δυστυχούντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "καταγέλα",
+     "τῶν",
+     "δυστυχούντων"
+    ]
+   },
+   {
+    "prompt": "Do not betray the city to the enemy.",
+    "answer": "μὴ προδῷς τὴν πόλιν τοῖς πολεμίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "προδῷς",
+     "τήν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "Never fear death more than disgrace.",
+    "answer": "μηδέποτε τὸν θάνατον μᾶλλον τῆς αἰσχύνης φοβηθῇς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδέποτε",
+     "τόν",
+     "θάνατον",
+     "μᾶλλον",
+     "τῆς",
+     "αἰσχύνης",
+     "φοβηθῇς"
+    ]
+   },
+   {
+    "prompt": "Do not vote to acquit men so wicked.",
+    "answer": "μὴ ἀποψηφίσησθε τῶν οὕτω πονηρῶν ἀνδρῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ἀποψηφίσησθε",
+     "τῶν",
+     "οὕτω",
+     "πονηρῶν",
+     "ἀνδρῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1769-the-moods-in-simple-sentences-t12",
+  "sectionId": "sm-1769-the-moods-in-simple-sentences",
+  "questions": [
+   {
+    "prompt": "The swift-footed messenger reached the camp before nightfall.",
+    "answer": "ὁ ὠκύπους ἄγγελος πρὸ νυκτὸς εἰς τὸ στρατόπεδον ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ὠκύπους",
+     "ἄγγελος",
+     "πρό",
+     "νυκτός",
+     "εἰς",
+     "τό",
+     "στρατόπεδον",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "Who would not admire men so brave?",
+    "answer": "τίς οὐκ ἂν θαυμάσειε τοὺς οὕτως ἀνδρείους;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὐκ",
+     "ἄν",
+     "θαυμάσειε",
+     "τούς",
+     "οὕτως",
+     "ἀνδρείους"
+    ]
+   },
+   {
+    "prompt": "During the night they fortified the camp with a stockade.",
+    "answer": "τὴν νύκτα τὸ στρατόπεδον σταυρώματι ὠχύρωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "νύκτα",
+     "τό",
+     "στρατόπεδον",
+     "σταυρώματι",
+     "ὠχύρωσαν"
+    ]
+   },
+   {
+    "prompt": "I would gladly hear what you say about the allies.",
+    "answer": "ἡδέως ἂν ἀκούσαιμι ἃ λέγεις περὶ τῶν συμμάχων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἄν",
+     "ἀκούσαιμι",
+     "ἅ",
+     "λέγεις",
+     "περί",
+     "τῶν",
+     "συμμάχων"
+    ]
+   }
+  ]
  }
 ]

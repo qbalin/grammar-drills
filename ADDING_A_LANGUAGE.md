@@ -387,6 +387,15 @@ Give the pack an `icon.mjs` — the glyph as capsule geometry, in a 0..1 box (se
 Latin's Ā). A letterform the capsule renderer cannot draw (Ω, ж, ا) should ship
 `icons/*.png` directly instead.
 
+Give it a `confetti.mjs` too — the silhouettes this language throws every ten to
+twenty answers. Each is SVG path data in a 24x24 box, filled with fill-rule
+evenodd, which is where the detail comes from: a piece is one flat colour, so a
+subpath drawn *inside* another reads as a hole and two that overlap punch holes
+in each other. Draw shapes that nest or touch, never cross. `throws` groups the
+names that may share one burst — a group of one is a burst of only that shape.
+Draw them at 40px, then look at them at 11px, which is the size they are thrown
+at; anything that needs its fine detail to be recognized will not survive.
+
 ```bash
 LANG_PACK=ancient-greek pnpm --filter @lang-tutor/web build
 pnpm cli -- --language ancient-greek

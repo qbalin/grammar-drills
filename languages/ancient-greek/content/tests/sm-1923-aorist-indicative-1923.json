@@ -394,5 +394,375 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1923-aorist-indicative-1923-t7",
+  "sectionId": "sm-1923-aorist-indicative-1923",
+  "questions": [
+   {
+    "prompt": "When the tyrant died, his son became king.",
+    "answer": "τελευτήσαντος τοῦ τυράννου ὁ υἱὸς αὐτοῦ ἐβασίλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τελευτήσαντος",
+     "τοῦ",
+     "τυράννου",
+     "ὁ",
+     "υἱὸς",
+     "αὐτοῦ",
+     "ἐβασίλευσεν"
+    ]
+   },
+   {
+    "prompt": "The child, seeing his mother, burst into tears.",
+    "answer": "ὁ παῖς ἰδὼν τὴν μητέρα ἐδάκρυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "ἰδὼν",
+     "τὴν",
+     "μητέρα",
+     "ἐδάκρυσεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers plucked up courage and attacked the enemy.",
+    "answer": "οἱ στρατιῶται ἐθάρρησαν καὶ τοῖς πολεμίοις ἐπέθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐθάρρησαν",
+     "καὶ",
+     "τοῖς",
+     "πολεμίοις",
+     "ἐπέθεντο"
+    ]
+   },
+   {
+    "prompt": "After the general fell silent, everyone waited.",
+    "answer": "σιγήσαντος τοῦ στρατηγοῦ πάντες περιέμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σιγήσαντος",
+     "τοῦ",
+     "στρατηγοῦ",
+     "πάντες",
+     "περιέμειναν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1923-aorist-indicative-1923-t8",
+  "sectionId": "sm-1923-aorist-indicative-1923",
+  "questions": [
+   {
+    "prompt": "The orator persuaded the assembly to make war.",
+    "answer": "ὁ ῥήτωρ ἔπεισε τὴν ἐκκλησίαν πολεμεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "ἔπεισε",
+     "τὴν",
+     "ἐκκλησίαν",
+     "πολεμεῖν"
+    ]
+   },
+   {
+    "prompt": "The messenger brought the letters to the king.",
+    "answer": "ὁ ἄγγελος τὰς ἐπιστολὰς πρὸς τὸν βασιλέα ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τὰς",
+     "ἐπιστολὰς",
+     "πρὸς",
+     "τὸν",
+     "βασιλέα",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "The smith sharpened the sword during the night.",
+    "answer": "ὁ χαλκεὺς τὸ ξίφος τῆς νυκτὸς ἔθηξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χαλκεὺς",
+     "τὸ",
+     "ξίφος",
+     "τῆς",
+     "νυκτὸς",
+     "ἔθηξεν"
+    ]
+   },
+   {
+    "prompt": "The stone, hurled from the wall, struck the horseman.",
+    "answer": "ὁ λίθος ἀπὸ τοῦ τείχους ῥιφθεὶς τὸν ἱππέα ἔβαλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "λίθος",
+     "ἀπὸ",
+     "τοῦ",
+     "τείχους",
+     "ῥιφθεὶς",
+     "τὸν",
+     "ἱππέα",
+     "ἔβαλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1923-aorist-indicative-1923-t9",
+  "sectionId": "sm-1923-aorist-indicative-1923",
+  "questions": [
+   {
+    "prompt": "In this way the Athenians fortified their city.",
+    "answer": "τούτῳ τῷ τρόπῳ οἱ Ἀθηναῖοι τὴν πόλιν ἐτείχισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτῳ",
+     "τῷ",
+     "τρόπῳ",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τὴν",
+     "πόλιν",
+     "ἐτείχισαν"
+    ]
+   },
+   {
+    "prompt": "The peace lasted fourteen years.",
+    "answer": "τέτταρα καὶ δέκα ἔτη ἔμειναν αἱ σπονδαί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τέτταρα",
+     "καὶ",
+     "δέκα",
+     "ἔτη",
+     "ἔμειναν",
+     "αἱ",
+     "σπονδαί"
+    ]
+   },
+   {
+    "prompt": "I came, I saw, I conquered.",
+    "answer": "ἦλθον, εἶδον, ἐνίκησα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦλθον",
+     "εἶδον",
+     "ἐνίκησα"
+    ]
+   },
+   {
+    "prompt": "For many years the Persians ruled over Asia.",
+    "answer": "πολλὰ ἔτη οἱ Πέρσαι τῆς Ἀσίας ἦρξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "ἔτη",
+     "οἱ",
+     "Πέρσαι",
+     "τῆς",
+     "Ἀσίας",
+     "ἦρξαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1923-aorist-indicative-1923-t10",
+  "sectionId": "sm-1923-aorist-indicative-1923",
+  "questions": [
+   {
+    "prompt": "Many men, desiring greater things, have lost what they had.",
+    "answer": "πολλοὶ μειζόνων ἐπιθυμοῦντες τὰ παρόντα ἀπώλεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὶ",
+     "μειζόνων",
+     "ἐπιθυμοῦντες",
+     "τὰ",
+     "παρόντα",
+     "ἀπώλεσαν"
+    ]
+   },
+   {
+    "prompt": "The tongue has brought many a man to ruin.",
+    "answer": "ἡ γλῶττα πολλοὺς εἰς ὄλεθρον ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γλῶττα",
+     "πολλοὺς",
+     "εἰς",
+     "ὄλεθρον",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "A fool learns by suffering.",
+    "answer": "παθὼν ὁ ἄφρων ἔγνω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παθὼν",
+     "ὁ",
+     "ἄφρων",
+     "ἔγνω"
+    ]
+   },
+   {
+    "prompt": "Faint-hearted men have never yet raised a trophy.",
+    "answer": "ἄνδρες ἀθυμοῦντες οὔπω τρόπαιον ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄνδρες",
+     "ἀθυμοῦντες",
+     "οὔπω",
+     "τρόπαιον",
+     "ἔστησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1923-aorist-indicative-1923-t11",
+  "sectionId": "sm-1923-aorist-indicative-1923",
+  "questions": [
+   {
+    "prompt": "I have summoned you here, friends, so that I may reveal my plan.",
+    "answer": "παρεκάλεσα ὑμᾶς ἐνθάδε, ὦ φίλοι, ἵνα τὴν βουλὴν δηλώσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρεκάλεσα",
+     "ὑμᾶς",
+     "ἐνθάδε",
+     "ὦ",
+     "φίλοι",
+     "ἵνα",
+     "τὴν",
+     "βουλὴν",
+     "δηλώσω"
+    ]
+   },
+   {
+    "prompt": "The war has made us poorer than before.",
+    "answer": "ὁ πόλεμος πενεστέρους ἡμᾶς ἐποίησεν ἢ πρότερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πόλεμος",
+     "πενεστέρους",
+     "ἡμᾶς",
+     "ἐποίησεν",
+     "ἢ",
+     "πρότερον"
+    ]
+   },
+   {
+    "prompt": "He has left none of his slaves, but has sold them all.",
+    "answer": "τῶν οἰκετῶν οὐδένα κατέλιπεν, ἀλλὰ πάντας ἀπέδοτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "οἰκετῶν",
+     "οὐδένα",
+     "κατέλιπεν",
+     "ἀλλὰ",
+     "πάντας",
+     "ἀπέδοτο"
+    ]
+   },
+   {
+    "prompt": "I have acquired these possessions through my own toil.",
+    "answer": "ταῦτα τὰ κτήματα τῷ ἐμαυτοῦ πόνῳ ἐκτησάμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "τὰ",
+     "κτήματα",
+     "τῷ",
+     "ἐμαυτοῦ",
+     "πόνῳ",
+     "ἐκτησάμην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1923-aorist-indicative-1923-t12",
+  "sectionId": "sm-1923-aorist-indicative-1923",
+  "questions": [
+   {
+    "prompt": "Cyrus, having gathered an army, marched against his brother.",
+    "answer": "ὁ Κῦρος στρατιὰν συλλέξας ἐπὶ τὸν ἀδελφὸν ἐστράτευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "στρατιὰν",
+     "συλλέξας",
+     "ἐπὶ",
+     "τὸν",
+     "ἀδελφὸν",
+     "ἐστράτευσεν"
+    ]
+   },
+   {
+    "prompt": "When night fell, the enemy fled into the mountains.",
+    "answer": "νυκτὸς γενομένης οἱ πολέμιοι εἰς τὰ ὄρη ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτὸς",
+     "γενομένης",
+     "οἱ",
+     "πολέμιοι",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The wolf, leaping upon the flock, destroyed many sheep.",
+    "answer": "ὁ λύκος ἐπὶ τὸ ποίμνιον ἐπιπεσὼν πολλὰ πρόβατα διέφθειρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "λύκος",
+     "ἐπὶ",
+     "τὸ",
+     "ποίμνιον",
+     "ἐπιπεσὼν",
+     "πολλὰ",
+     "πρόβατα",
+     "διέφθειρεν"
+    ]
+   },
+   {
+    "prompt": "The blind old man, though poor, bore his fate nobly.",
+    "answer": "ὁ τυφλὸς γέρων καίπερ πένης ὢν τὴν τύχην γενναίως ἤνεγκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τυφλὸς",
+     "γέρων",
+     "καίπερ",
+     "πένης",
+     "ὢν",
+     "τὴν",
+     "τύχην",
+     "γενναίως",
+     "ἤνεγκεν"
+    ]
+   }
+  ]
  }
 ]

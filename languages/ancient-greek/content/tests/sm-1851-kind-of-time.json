@@ -369,5 +369,381 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t7",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "The doctor was healing the wounded throughout the whole night.",
+    "answer": "ὁ ἰατρὸς τοὺς τετρωμένους διὰ ὅλης τῆς νυκτὸς ἐθεράπευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "τοὺς",
+     "τετρωμένους",
+     "διὰ",
+     "ὅλης",
+     "τῆς",
+     "νυκτὸς",
+     "ἐθεράπευεν"
+    ]
+   },
+   {
+    "prompt": "The enemy have destroyed the villages by the river.",
+    "answer": "οἱ πολέμιοι τὰς πρὸς τῷ ποταμῷ κώμας διεφθάρκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τὰς",
+     "πρὸς",
+     "τῷ",
+     "ποταμῷ",
+     "κώμας",
+     "διεφθάρκασιν"
+    ]
+   },
+   {
+    "prompt": "We shall roast the meat over the fire.",
+    "answer": "τὰ κρέα ἐπὶ τοῦ πυρὸς ὀπτήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "κρέα",
+     "ἐπὶ",
+     "τοῦ",
+     "πυρὸς",
+     "ὀπτήσομεν"
+    ]
+   },
+   {
+    "prompt": "Yesterday the ambassadors persuaded the assembly.",
+    "answer": "χθὲς οἱ πρέσβεις τὴν ἐκκλησίαν ἔπεισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χθὲς",
+     "οἱ",
+     "πρέσβεις",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἔπεισαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t8",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "Before the battle the soldiers had already fortified the camp.",
+    "answer": "πρὸ τῆς μάχης οἱ στρατιῶται τὸ στρατόπεδον ἤδη ἐτετειχίκεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "οἱ",
+     "στρατιῶται",
+     "τὸ",
+     "στρατόπεδον",
+     "ἤδη",
+     "ἐτετειχίκεσαν"
+    ]
+   },
+   {
+    "prompt": "The letter will have been written before the messenger departs.",
+    "answer": "ἡ ἐπιστολὴ γεγράψεται πρὶν ἂν ὁ ἄγγελος ἀπέλθῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιστολὴ",
+     "γεγράψεται",
+     "πρὶν",
+     "ἂν",
+     "ὁ",
+     "ἄγγελος",
+     "ἀπέλθῃ"
+    ]
+   },
+   {
+    "prompt": "The philosopher is teaching the young men about the stars.",
+    "answer": "ὁ φιλόσοφος τοὺς νεανίας περὶ τῶν ἄστρων διδάσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τοὺς",
+     "νεανίας",
+     "περὶ",
+     "τῶν",
+     "ἄστρων",
+     "διδάσκει"
+    ]
+   },
+   {
+    "prompt": "The prisoners were begging the king for their lives.",
+    "answer": "οἱ αἰχμάλωτοι τὸν βασιλέα περὶ τῆς ψυχῆς ἐλίσσοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "τὸν",
+     "βασιλέα",
+     "περὶ",
+     "τῆς",
+     "ψυχῆς",
+     "ἐλίσσοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t9",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "When the general had died, the soldiers fled.",
+    "answer": "ἀποθανόντος τοῦ στρατηγοῦ οἱ στρατιῶται ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποθανόντος",
+     "τοῦ",
+     "στρατηγοῦ",
+     "οἱ",
+     "στρατιῶται",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "I shall remind you of the old treaties.",
+    "answer": "ἀναμνήσω σε τῶν παλαιῶν σπονδῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀναμνήσω",
+     "σε",
+     "τῶν",
+     "παλαιῶν",
+     "σπονδῶν"
+    ]
+   },
+   {
+    "prompt": "The wise man has learned many things from his teachers.",
+    "answer": "ὁ σοφὸς πολλὰ παρὰ τῶν διδασκάλων μεμάθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "πολλὰ",
+     "παρὰ",
+     "τῶν",
+     "διδασκάλων",
+     "μεμάθηκεν"
+    ]
+   },
+   {
+    "prompt": "The horses are carrying the booty into the city.",
+    "answer": "οἱ ἵπποι τὴν λείαν εἰς τὴν πόλιν φέρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἵπποι",
+     "τὴν",
+     "λείαν",
+     "εἰς",
+     "πόλιν",
+     "φέρουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t10",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "The children were sitting silently in the marketplace.",
+    "answer": "οἱ παῖδες σιγῇ ἐν τῇ ἀγορᾷ ἐκάθηντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "σιγῇ",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἐκάθηντο"
+    ]
+   },
+   {
+    "prompt": "The nurse gave food to the sick child.",
+    "answer": "ἡ τροφὸς τῷ κάμνοντι παιδὶ σιτία ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τροφὸς",
+     "τῷ",
+     "κάμνοντι",
+     "παιδὶ",
+     "σιτία",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers will encourage one another before the danger.",
+    "answer": "οἱ στρατιῶται πρὸ τοῦ κινδύνου ἀλλήλους θαρσυνοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πρὸ",
+     "τοῦ",
+     "κινδύνου",
+     "ἀλλήλους",
+     "θαρσυνοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The poet has composed a hymn in honor of the gods.",
+    "answer": "ὁ ποιητὴς ὕμνον εἰς τοὺς θεοὺς πεποίηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιητὴς",
+     "ὕμνον",
+     "εἰς",
+     "τοὺς",
+     "θεοὺς",
+     "πεποίηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t11",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "The enemy had destroyed the fields before the winter.",
+    "answer": "οἱ πολέμιοι τοὺς ἀγροὺς πρὸ τοῦ χειμῶνος διεφθάρκεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τοὺς",
+     "ἀγροὺς",
+     "πρὸ",
+     "τοῦ",
+     "χειμῶνος",
+     "διεφθάρκεσαν"
+    ]
+   },
+   {
+    "prompt": "The astronomer observes the courses of the stars each night.",
+    "answer": "ὁ ἀστρονόμος τὰς τῶν ἄστρων περιόδους ἑκάστης νυκτὸς σκοπεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀστρονόμος",
+     "τὰς",
+     "τῶν",
+     "ἄστρων",
+     "περιόδους",
+     "ἑκάστης",
+     "νυκτὸς",
+     "σκοπεῖ"
+    ]
+   },
+   {
+    "prompt": "The wise woman asked the stranger many questions.",
+    "answer": "ἡ σοφὴ γυνὴ τὸν ξένον πολλὰ ἤρετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφὴ",
+     "γυνὴ",
+     "τὸν",
+     "ξένον",
+     "πολλὰ",
+     "ἤρετο"
+    ]
+   },
+   {
+    "prompt": "We shall not abandon our allies in the war.",
+    "answer": "οὐκ ἐγκαταλείψομεν τοὺς συμμάχους ἐν τῷ πολέμῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐγκαταλείψομεν",
+     "τοὺς",
+     "συμμάχους",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t12",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "The general has drawn up the army for battle.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα εἰς μάχην παρατέταχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "εἰς",
+     "μάχην",
+     "παρατέταχεν"
+    ]
+   },
+   {
+    "prompt": "The general was encouraging the frightened soldiers.",
+    "answer": "ὁ στρατηγὸς τοὺς φοβουμένους στρατιώτας ἐθάρσυνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "φοβουμένους",
+     "στρατιώτας",
+     "ἐθάρσυνεν"
+    ]
+   },
+   {
+    "prompt": "The soldier will always remember the danger.",
+    "answer": "ὁ στρατιώτης τοῦ κινδύνου ἀεὶ μεμνήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατιώτης",
+     "τοῦ",
+     "κινδύνου",
+     "ἀεὶ",
+     "μεμνήσεται"
+    ]
+   },
+   {
+    "prompt": "The old man freed the captives from their bonds.",
+    "answer": "ὁ γέρων τοὺς αἰχμαλώτους τῶν δεσμῶν ἔλυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "τῶν",
+     "δεσμῶν",
+     "ἔλυσεν"
+    ]
+   }
+  ]
  }
 ]

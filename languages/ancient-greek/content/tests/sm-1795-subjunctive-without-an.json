@@ -384,5 +384,379 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1795-subjunctive-without-an-t7",
+  "sectionId": "sm-1795-subjunctive-without-an",
+  "questions": [
+   {
+    "prompt": "Come now, let us consider the danger before we set out.",
+    "answer": "ἄγε δή, τὸν κίνδυνον σκοπῶμεν πρὶν ἐξορμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγε",
+     "δή",
+     "τόν",
+     "κίνδυνον",
+     "σκοπῶμεν",
+     "πρίν",
+     "ἐξορμᾶν"
+    ]
+   },
+   {
+    "prompt": "Let me now speak about the treaty, citizens.",
+    "answer": "φέρε δὴ περὶ τῶν σπονδῶν εἴπω, ὦ πολῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φέρε",
+     "δή",
+     "περί",
+     "τῶν",
+     "σπονδῶν",
+     "εἴπω",
+     "ὦ",
+     "πολῖται"
+    ]
+   },
+   {
+    "prompt": "Let us not lose heart, though the enemy are pressing hard.",
+    "answer": "μὴ ἀθυμῶμεν, καίπερ τῶν πολεμίων ἐπικειμένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ἀθυμῶμεν",
+     "καίπερ",
+     "τῶν",
+     "πολεμίων",
+     "ἐπικειμένων"
+    ]
+   },
+   {
+    "prompt": "Let us hear the man who has just arrived from Sparta.",
+    "answer": "ἀκούσωμεν τοῦ ἀνδρὸς τοῦ ἄρτι ἐκ Λακεδαίμονος ἥκοντος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκούσωμεν",
+     "τοῦ",
+     "ἀνδρός",
+     "ἄρτι",
+     "ἐκ",
+     "Λακεδαίμονος",
+     "ἥκοντος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1795-subjunctive-without-an-t8",
+  "sectionId": "sm-1795-subjunctive-without-an",
+  "questions": [
+   {
+    "prompt": "Do not, young men, betray the city to the tyrant.",
+    "answer": "μὴ προδῶτε, ὦ νεανίαι, τὴν πόλιν τῷ τυράννῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "προδῶτε",
+     "ὦ",
+     "νεανίαι",
+     "τήν",
+     "πόλιν",
+     "τῷ",
+     "τυράννῳ"
+    ]
+   },
+   {
+    "prompt": "Let no one suppose that these things were done unjustly.",
+    "answer": "ὑπολάβῃ δὲ μηδεὶς ἀδίκως ταῦτα πεπρᾶχθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπολάβῃ",
+     "δέ",
+     "μηδείς",
+     "ἀδίκως",
+     "ταῦτα",
+     "πεπρᾶχθαι"
+    ]
+   },
+   {
+    "prompt": "Do not fear the shouting of the crowd, judges.",
+    "answer": "μὴ φοβηθῆτε τὴν τοῦ ὄχλου κραυγήν, ὦ δικασταί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "φοβηθῆτε",
+     "τήν",
+     "τοῦ",
+     "ὄχλου",
+     "κραυγήν",
+     "ὦ",
+     "δικασταί"
+    ]
+   },
+   {
+    "prompt": "Do not do this, my friend, lest you seem to be impious.",
+    "answer": "μὴ ποιήσῃς ταῦτα, ὦ φίλε, ἵνα μὴ ἀσεβὴς δοκῇς εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ποιήσῃς",
+     "ταῦτα",
+     "ὦ",
+     "φίλε",
+     "ἵνα",
+     "ἀσεβής",
+     "δοκῇς",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1795-subjunctive-without-an-t9",
+  "sectionId": "sm-1795-subjunctive-without-an",
+  "questions": [
+   {
+    "prompt": "Shall we speak or keep silence about what happened?",
+    "answer": "εἴπωμεν ἢ σιγῶμεν περὶ τῶν γενομένων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴπωμεν",
+     "ἤ",
+     "σιγῶμεν",
+     "περί",
+     "τῶν",
+     "γενομένων"
+    ]
+   },
+   {
+    "prompt": "What am I to do? Where shall I flee, now that all is lost?",
+    "answer": "τί δράσω; ποῖ φύγω, πάντων ἤδη ἀπολωλότων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "δράσω",
+     "ποῖ",
+     "φύγω",
+     "πάντων",
+     "ἤδη",
+     "ἀπολωλότων"
+    ]
+   },
+   {
+    "prompt": "Shall we not say that virtue is teachable?",
+    "answer": "μὴ φῶμεν τὴν ἀρετὴν διδακτὴν εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "φῶμεν",
+     "τήν",
+     "ἀρετήν",
+     "διδακτήν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Do you wish me to tell you the whole truth?",
+    "answer": "βούλει σοι πᾶσαν τὴν ἀλήθειαν εἴπω;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βούλει",
+     "σοι",
+     "πᾶσαν",
+     "τήν",
+     "ἀλήθειαν",
+     "εἴπω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1795-subjunctive-without-an-t10",
+  "sectionId": "sm-1795-subjunctive-without-an",
+  "questions": [
+   {
+    "prompt": "I rather suspect it is bad form to tell the truth so openly.",
+    "answer": "μὴ ἀγροικότερον ᾖ τὸ ἀληθὲς οὕτω φανερῶς εἰπεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ἀγροικότερον",
+     "ᾖ",
+     "τό",
+     "ἀληθές",
+     "οὕτω",
+     "φανερῶς",
+     "εἰπεῖν"
+    ]
+   },
+   {
+    "prompt": "I rather think virtue is perhaps not something teachable.",
+    "answer": "μὴ οὐκ ᾖ διδακτὸν ἡ ἀρετή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οὐκ",
+     "ᾖ",
+     "διδακτόν",
+     "ἡ",
+     "ἀρετή"
+    ]
+   },
+   {
+    "prompt": "But I rather think this may not be so, as you claim.",
+    "answer": "ἀλλὰ μὴ οὐχ οὕτως ἔχῃ, ὡς σὺ φῄς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "μή",
+     "οὐχ",
+     "οὕτως",
+     "ἔχῃ",
+     "ὡς",
+     "σύ",
+     "φῄς"
+    ]
+   },
+   {
+    "prompt": "I rather fear we are not saying these things correctly.",
+    "answer": "μὴ οὐκ ὀρθῶς ταῦτα λέγωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οὐκ",
+     "ὀρθῶς",
+     "ταῦτα",
+     "λέγωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1795-subjunctive-without-an-t11",
+  "sectionId": "sm-1795-subjunctive-without-an",
+  "questions": [
+   {
+    "prompt": "Alas, what is to become of me, now that my father is dead?",
+    "answer": "οἴμοι, τί πάθω, τοῦ πατρὸς τεθνηκότος;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἴμοι",
+     "τί",
+     "πάθω",
+     "τοῦ",
+     "πατρός",
+     "τεθνηκότος"
+    ]
+   },
+   {
+    "prompt": "What am I to become, wretched as I am among enemies?",
+    "answer": "τί γένωμαι, δείλαιος ὢν ἐν πολεμίοις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "γένωμαι",
+     "δείλαιος",
+     "ὤν",
+     "ἐν",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "Let us flee to the mountains before the enemy surround us.",
+    "answer": "φύγωμεν εἰς τὰ ὄρη πρὶν τοὺς πολεμίους ἡμᾶς κυκλώσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φύγωμεν",
+     "εἰς",
+     "τά",
+     "ὄρη",
+     "πρίν",
+     "τούς",
+     "πολεμίους",
+     "ἡμᾶς",
+     "κυκλώσασθαι"
+    ]
+   },
+   {
+    "prompt": "Shall I trust the messenger, or shall I not believe his words?",
+    "answer": "πιστεύσω τῷ ἀγγέλῳ, ἢ μὴ πείθωμαι τοῖς λόγοις αὐτοῦ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστεύσω",
+     "τῷ",
+     "ἀγγέλῳ",
+     "ἤ",
+     "μή",
+     "πείθωμαι",
+     "τοῖς",
+     "λόγοις",
+     "αὐτοῦ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1795-subjunctive-without-an-t12",
+  "sectionId": "sm-1795-subjunctive-without-an",
+  "questions": [
+   {
+    "prompt": "Let us honor the gods and never neglect the sacrifices.",
+    "answer": "τοὺς θεοὺς τιμῶμεν καὶ τῶν θυσιῶν μηδέποτε ἀμελῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "θεούς",
+     "τιμῶμεν",
+     "καί",
+     "τῶν",
+     "θυσιῶν",
+     "μηδέποτε",
+     "ἀμελῶμεν"
+    ]
+   },
+   {
+    "prompt": "Do not, judges, condemn a man who is innocent.",
+    "answer": "μὴ καταψηφίσησθε, ὦ δικασταί, ἀνδρὸς ἀναιτίου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "καταψηφίσησθε",
+     "ὦ",
+     "δικασταί",
+     "ἀνδρός",
+     "ἀναιτίου"
+    ]
+   },
+   {
+    "prompt": "How shall anyone say that these deeds are just?",
+    "answer": "πῶς τις φῇ ταῦτα δίκαια εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "τις",
+     "φῇ",
+     "ταῦτα",
+     "δίκαια",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Come, let us consider whether the law harms the citizens.",
+    "answer": "φέρε δή, σκεψώμεθα εἰ ὁ νόμος τοὺς πολίτας βλάπτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φέρε",
+     "δή",
+     "σκεψώμεθα",
+     "εἰ",
+     "ὁ",
+     "νόμος",
+     "τούς",
+     "πολίτας",
+     "βλάπτει"
+    ]
+   }
+  ]
  }
 ]
