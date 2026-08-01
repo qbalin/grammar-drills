@@ -22,3 +22,8 @@ languages/*/reference/*.db
 languages/*/reference/texts/
 # Downloads the ingest scripts cache rather than re-fetch.
 .cache/
+
+# Reference images dropped in while redrawing the confetti. Megabytes of
+# photographs of shields and coins; the drawings they informed are the artefact
+# worth keeping, and they carry no licence anyone here checked.
+tmp_images/
