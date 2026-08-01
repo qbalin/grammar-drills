@@ -1,0 +1,381 @@
+[
+ {
+  "id": "sm-2688-negative-sentences-t1",
+  "sectionId": "sm-2688-negative-sentences",
+  "questions": [
+   {
+    "prompt": "The young man did not steal the food out of the marketplace.",
+    "answer": "ὁ νεανίσκος τὸ ὄψον ἐκ τῆς ἀγορᾶς οὐκ ἔκλεψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίσκος",
+     "τὸ",
+     "ὄψον",
+     "ἐκ",
+     "τῆς",
+     "ἀγορᾶς",
+     "οὐκ",
+     "ἔκλεψεν"
+    ]
+   },
+   {
+    "prompt": "Do not set fire to the houses of the neighboring peoples.",
+    "answer": "μὴ ἐμπρήσῃς τὰς τῶν πλησιοχώρων οἰκίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἐμπρήσῃς",
+     "τὰς",
+     "τῶν",
+     "πλησιοχώρων",
+     "οἰκίας"
+    ]
+   },
+   {
+    "prompt": "May the enemy no longer plunder our fields.",
+    "answer": "μηκέτι οἱ πολέμιοι τοὺς ἀγροὺς συλῷεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηκέτι",
+     "οἱ",
+     "πολέμιοι",
+     "τοὺς",
+     "ἀγροὺς",
+     "συλῷεν"
+    ]
+   },
+   {
+    "prompt": "Those who are not present are not able to help us.",
+    "answer": "οἱ μὴ παρόντες οὐ δύνανται ἡμῖν βοηθῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὴ",
+     "παρόντες",
+     "οὐ",
+     "δύνανται",
+     "ἡμῖν",
+     "βοηθῆσαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2688-negative-sentences-t2",
+  "sectionId": "sm-2688-negative-sentences",
+  "questions": [
+   {
+    "prompt": "No one saw the general fleeing out of the battle.",
+    "answer": "οὐδεὶς εἶδε τὸν στρατηγὸν ἐκ τῆς μάχης φεύγοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "εἶδε",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φεύγοντα"
+    ]
+   },
+   {
+    "prompt": "Let no one reveal these things to the enemy.",
+    "answer": "μηδεὶς ταῦτα τοῖς πολεμίοις μηνυέτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδεὶς",
+     "ταῦτα",
+     "τοῖς",
+     "πολεμίοις",
+     "μηνυέτω"
+    ]
+   },
+   {
+    "prompt": "We are guarding the walls so that the enemy may not enter the city.",
+    "answer": "φυλάττομεν τὰ τείχη ἵνα μὴ οἱ πολέμιοι εἰς τὴν πόλιν εἰσέλθωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάττομεν",
+     "τὰ",
+     "τείχη",
+     "ἵνα",
+     "μὴ",
+     "οἱ",
+     "πολέμιοι",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "εἰσέλθωσιν"
+    ]
+   },
+   {
+    "prompt": "I fear that the young men are not fighting bravely.",
+    "answer": "φοβοῦμαι μὴ οἱ νεανίσκοι οὐκ ἀνδρείως μάχωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μὴ",
+     "οἱ",
+     "νεανίσκοι",
+     "οὐκ",
+     "ἀνδρείως",
+     "μάχωνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2688-negative-sentences-t3",
+  "sectionId": "sm-2688-negative-sentences",
+  "questions": [
+   {
+    "prompt": "The soldiers were not willing to march against the neighboring city.",
+    "answer": "οἱ στρατιῶται οὐκ ἤθελον ἐπὶ τὴν πλησιόχωρον πόλιν ἐλαύνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "οὐκ",
+     "ἤθελον",
+     "ἐπὶ",
+     "τὴν",
+     "πλησιόχωρον",
+     "πόλιν",
+     "ἐλαύνειν"
+    ]
+   },
+   {
+    "prompt": "If you do not share the spoils, the allies will be angry.",
+    "answer": "εἰ μὴ τῶν λαφύρων μεταδώσεις, οἱ σύμμαχοι ὀργιοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὴ",
+     "τῶν",
+     "λαφύρων",
+     "μεταδώσεις",
+     "οἱ",
+     "σύμμαχοι",
+     "ὀργιοῦνται"
+    ]
+   },
+   {
+    "prompt": "Whoever does not obey the laws is punished.",
+    "answer": "ὃς ἂν τοῖς νόμοις μὴ πείθηται, κολάζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃς",
+     "ἂν",
+     "τοῖς",
+     "νόμοις",
+     "μὴ",
+     "πείθηται",
+     "κολάζεται"
+    ]
+   },
+   {
+    "prompt": "The stranger neither sailed with us nor helped the sailors.",
+    "answer": "ὁ ξένος οὔτε συνέπλευσεν ἡμῖν οὔτε τοῖς ναύταις ἐβοήθησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ξένος",
+     "οὔτε",
+     "συνέπλευσεν",
+     "ἡμῖν",
+     "τοῖς",
+     "ναύταις",
+     "ἐβοήθησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2688-negative-sentences-t4",
+  "sectionId": "sm-2688-negative-sentences",
+  "questions": [
+   {
+    "prompt": "The general ordered the soldiers not to flee.",
+    "answer": "ὁ στρατηγὸς ἐκέλευσε τοὺς στρατιώτας μὴ φεύγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκέλευσε",
+     "τοὺς",
+     "στρατιώτας",
+     "μὴ",
+     "φεύγειν"
+    ]
+   },
+   {
+    "prompt": "He says that the Armenians did not burn the villages.",
+    "answer": "φησὶ τοὺς Ἀρμενίους τὰς κώμας οὐκ ἐμπρῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φησὶ",
+     "τοὺς",
+     "Ἀρμενίους",
+     "τὰς",
+     "κώμας",
+     "οὐκ",
+     "ἐμπρῆσαι"
+    ]
+   },
+   {
+    "prompt": "May we never suffer such disgraceful things.",
+    "answer": "μήποτε τοιαῦτα αἰσχρὰ πάθοιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήποτε",
+     "τοιαῦτα",
+     "αἰσχρὰ",
+     "πάθοιμεν"
+    ]
+   },
+   {
+    "prompt": "Since the guard was not present, the prisoners escaped.",
+    "answer": "τοῦ φύλακος οὐ παρόντος, οἱ δεσμῶται ἀπέφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "φύλακος",
+     "οὐ",
+     "παρόντος",
+     "οἱ",
+     "δεσμῶται",
+     "ἀπέφυγον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2688-negative-sentences-t5",
+  "sectionId": "sm-2688-negative-sentences",
+  "questions": [
+   {
+    "prompt": "It was certainly not the Ionians who betrayed the city.",
+    "answer": "οὐχὶ οἱ Ἰώνιοι τὴν πόλιν προέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχὶ",
+     "οἱ",
+     "Ἰώνιοι",
+     "τὴν",
+     "πόλιν",
+     "προέδοσαν"
+    ]
+   },
+   {
+    "prompt": "Do not trust the flatterer, nor share your plans with him.",
+    "answer": "μὴ τῷ κόλακι πίστευε μηδὲ τὰ βουλεύματα αὐτῷ μεταδίδου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "τῷ",
+     "κόλακι",
+     "πίστευε",
+     "μηδὲ",
+     "τὰ",
+     "βουλεύματα",
+     "αὐτῷ",
+     "μεταδίδου"
+    ]
+   },
+   {
+    "prompt": "The old man did not see well, nor did he hear the herald.",
+    "answer": "ὁ γέρων οὐ καλῶς ἑώρα οὐδὲ τοῦ κήρυκος ἤκουσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "οὐ",
+     "καλῶς",
+     "ἑώρα",
+     "οὐδὲ",
+     "τοῦ",
+     "κήρυκος",
+     "ἤκουσεν"
+    ]
+   },
+   {
+    "prompt": "The sophists fabricate the things that do not exist.",
+    "answer": "οἱ σοφισταὶ τὰ μὴ ὄντα λογοποιοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφισταὶ",
+     "τὰ",
+     "μὴ",
+     "ὄντα",
+     "λογοποιοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2688-negative-sentences-t6",
+  "sectionId": "sm-2688-negative-sentences",
+  "questions": [
+   {
+    "prompt": "See to it that the children do not fall into the river.",
+    "answer": "ὅρα ὅπως οἱ παῖδες μὴ εἰς τὸν ποταμὸν πεσοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "ὅπως",
+     "οἱ",
+     "παῖδες",
+     "μὴ",
+     "εἰς",
+     "τὸν",
+     "ποταμὸν",
+     "πεσοῦνται"
+    ]
+   },
+   {
+    "prompt": "Did the Armenians not send gifts to the king?",
+    "answer": "ἆρα οὐχ οἱ Ἀρμένιοι δῶρα τῷ βασιλεῖ ἔπεμψαν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "οὐχ",
+     "οἱ",
+     "Ἀρμένιοι",
+     "δῶρα",
+     "τῷ",
+     "βασιλεῖ",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "Do not despise the counsel of the elders.",
+    "answer": "μὴ καταφρόνει τῆς τῶν πρεσβυτέρων βουλῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "καταφρόνει",
+     "τῆς",
+     "τῶν",
+     "πρεσβυτέρων",
+     "βουλῆς"
+    ]
+   },
+   {
+    "prompt": "He was punished because he did not tell the truth.",
+    "answer": "ἐκολάσθη ὅτι τὰ ἀληθῆ οὐκ εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκολάσθη",
+     "ὅτι",
+     "τὰ",
+     "ἀληθῆ",
+     "οὐκ",
+     "εἶπεν"
+    ]
+   }
+  ]
+ }
+]
