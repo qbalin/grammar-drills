@@ -303,7 +303,7 @@ export function App({ content, session, storage }: Props) {
    * once per grade that actually lands — not once per tap, so a grade that
    * returns early because there is no question does not spend the count.
    */
-  const { canvas: confettiCanvas, answered } = useConfetti();
+  const { canvas: confettiCanvas, answered, fire: fireConfetti } = useConfetti();
 
   /**
    * A probe answered. Failing settles that one family and moves to the next
@@ -1031,6 +1031,7 @@ export function App({ content, session, storage }: Props) {
           config={storage.currentConfig()}
           state={syncState}
           onConfigure={configureSync}
+          onFireConfetti={fireConfetti}
           onExport={() => exportProgress(session.progress())}
           onImport={() => void doImport()}
           onPull={() =>

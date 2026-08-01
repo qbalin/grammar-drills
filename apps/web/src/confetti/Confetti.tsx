@@ -51,12 +51,15 @@ function prefersReducedMotion(): boolean {
  * Path2D is built per burst rather than at module load: this module is
  * imported by the test environment, where Path2D does not exist, and a throw at
  * import time would take the whole app down with it.
+ *
+ * `only` names the group to throw; without it one is drawn at random, which is
+ * what a real burst does.
  */
-function buildThrow(): { paths: Path2D[]; ok: boolean } {
+function buildThrow(only?: string[]): { paths: Path2D[]; ok: boolean } {
   if (typeof Path2D === "undefined") return { paths: [], ok: false };
   const groups = pack.throws;
   if (!groups?.length) return { paths: [], ok: false };
-  const group = groups[Math.floor(Math.random() * groups.length)];
+  const group = only ?? groups[Math.floor(Math.random() * groups.length)];
   const paths: Path2D[] = [];
   for (const name of group) {
     const d = pack.shapes[name];
@@ -65,7 +68,20 @@ function buildThrow(): { paths: Path2D[]; ok: boolean } {
   return { paths, ok: paths.length > 0 };
 }
 
-export function useConfetti(): { canvas: React.ReactNode; answered: () => void } {
+/** What a burst may be asked to do differently. Only the playground asks. */
+export type BurstOptions = {
+  /** Throw exactly these shapes rather than a random group. */
+  group?: string[];
+  pieces?: number;
+  shapedShare?: number;
+  size?: number;
+};
+
+export function useConfetti(): {
+  canvas: React.ReactNode;
+  answered: () => void;
+  fire: (options?: BurstOptions) => void;
+} {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const cadence = useRef<Cadence>(begin());
   const raf = useRef(0);
@@ -121,13 +137,20 @@ export function useConfetti(): { canvas: React.ReactNode; answered: () => void }
     }
   }, []);
 
-  const burst = useCallback(() => {
+  const burst = useCallback((options: BurstOptions = {}) => {
+    // The playground gets no exemption from this. A student who has asked for
+    // no animation and an author testing on the same machine are the same
+    // browser making the same request, and one rule is easier to trust than
+    // two — the playground says so on screen rather than overriding it.
     if (prefersReducedMotion()) return;
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) return;
-    const { paths, ok } = buildThrow();
+    const { paths, ok } = buildThrow(options.group);
     if (!ok) return;
+    const pieces_ = options.pieces ?? PIECES;
+    const shaped = options.shapedShare ?? SHAPED_SHARE;
+    const size = options.size ?? SIZE;
 
     const dpr = window.devicePixelRatio || 1;
     const w = canvas.clientWidth;
@@ -138,16 +161,16 @@ export function useConfetti(): { canvas: React.ReactNode; answered: () => void }
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     const colors = pack.colors?.length ? pack.colors : ["#e8c98a"];
-    pieces.current = Array.from({ length: PIECES }, () => ({
+    pieces.current = Array.from({ length: pieces_ }, () => ({
       x: w / 2 + (Math.random() - 0.5) * w * 0.5,
       y: h * 0.62 + (Math.random() - 0.5) * 40,
       vx: (Math.random() - 0.5) * 5.5,
       vy: -5.5 - Math.random() * 5.5,
       rot: Math.random() * Math.PI * 2,
       vr: (Math.random() - 0.5) * 0.24,
-      size: SIZE * (0.75 + Math.random() * 0.5),
+      size: size * (0.75 + Math.random() * 0.5),
       color: colors[Math.floor(Math.random() * colors.length)],
-      shape: Math.random() < SHAPED_SHARE ? paths[Math.floor(Math.random() * paths.length)] : null,
+      shape: Math.random() < shaped ? paths[Math.floor(Math.random() * paths.length)] : null,
       life: 1,
     }));
     cancelAnimationFrame(raf.current);
@@ -167,5 +190,5 @@ export function useConfetti(): { canvas: React.ReactNode; answered: () => void }
   }, [burst]);
 
   const canvas = <canvas ref={canvasRef} className="confetti" aria-hidden="true" />;
-  return { canvas, answered };
+  return { canvas, answered, fire: burst };
 }
