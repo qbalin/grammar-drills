@@ -1,0 +1,375 @@
+[
+ {
+  "id": "sm-2344-modifications-of-the-protasis-t1",
+  "sectionId": "sm-2344-modifications-of-the-protasis",
+  "questions": [
+   {
+    "prompt": "If you had been keeping quiet, you would not have suffered these things.",
+    "answer": "ἡσυχάζων οὐκ ἂν ταῦτα ἔπασχες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡσυχάζων",
+     "οὐκ",
+     "ἄν",
+     "ταῦτα",
+     "ἔπασχες"
+    ]
+   },
+   {
+    "prompt": "The general, had he learned this beforehand, would not have been deceived.",
+    "answer": "ὁ στρατηγὸς ταῦτα προμαθὼν οὐκ ἂν ἐξηπατήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ταῦτα",
+     "προμαθών",
+     "οὐκ",
+     "ἄν",
+     "ἐξηπατήθη"
+    ]
+   },
+   {
+    "prompt": "Had you been present, you would have come to the aid of your friends.",
+    "answer": "παρὼν τοῖς φίλοις ἂν ἐβοήθησας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρών",
+     "τοῖς",
+     "φίλοις",
+     "ἄν",
+     "ἐβοήθησας"
+    ]
+   },
+   {
+    "prompt": "If there is any justice, the wicked will be punished.",
+    "answer": "δίκης οὔσης οἱ πονηροὶ κολασθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δίκης",
+     "οὔσης",
+     "οἱ",
+     "πονηροί",
+     "κολασθήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2344-modifications-of-the-protasis-t2",
+  "sectionId": "sm-2344-modifications-of-the-protasis",
+  "questions": [
+   {
+    "prompt": "If any other city is free, this one too is free.",
+    "answer": "εἴ τις καὶ ἄλλη πόλις ἐλευθέρα, καὶ ἥδε ἐλευθέρα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "καί",
+     "ἄλλη",
+     "πόλις",
+     "ἐλευθέρα",
+     "ἥδε",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "We must apply ourselves to our fatherland, now if ever.",
+    "answer": "δεῖ τῇ πατρίδι βοηθεῖν, εἴπερ ποτέ, καὶ νῦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "τῇ",
+     "πατρίδι",
+     "βοηθεῖν",
+     "εἴπερ",
+     "ποτέ",
+     "καί",
+     "νῦν"
+    ]
+   },
+   {
+    "prompt": "If any man was brave, that soldier was brave.",
+    "answer": "εἴ τις καὶ ἄλλος, ὁ στρατιώτης ἐκεῖνος ἀνδρεῖος ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "καί",
+     "ἄλλος",
+     "ὁ",
+     "στρατιώτης",
+     "ἐκεῖνος",
+     "ἀνδρεῖος",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "If ever at any other time, now too the citizens fear the tyrant.",
+    "answer": "εἴ ποτε καὶ ἄλλοτε, καὶ νῦν οἱ πολῖται τὸν τύραννον φοβοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "ποτε",
+     "καί",
+     "ἄλλοτε",
+     "νῦν",
+     "οἱ",
+     "πολῖται",
+     "τόν",
+     "τύραννον",
+     "φοβοῦνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2344-modifications-of-the-protasis-t3",
+  "sectionId": "sm-2344-modifications-of-the-protasis",
+  "questions": [
+   {
+    "prompt": "We see no one except a few of the enemy.",
+    "answer": "οὐδένα ὁρῶμεν εἰ μὴ ὀλίγους τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδένα",
+     "ὁρῶμεν",
+     "εἰ",
+     "μή",
+     "ὀλίγους",
+     "τῶν",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "Except for the general, the army would have perished.",
+    "answer": "εἰ μὴ διὰ τὸν στρατηγόν, τὸ στράτευμα ἂν ἀπώλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μή",
+     "διά",
+     "τόν",
+     "στρατηγόν",
+     "τό",
+     "στράτευμα",
+     "ἄν",
+     "ἀπώλετο"
+    ]
+   },
+   {
+    "prompt": "Give back the money; otherwise we shall make war upon you.",
+    "answer": "ἀπόδοτε τὰ χρήματα· εἰ δὲ μή, πολεμήσομεν ὑμῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπόδοτε",
+     "τά",
+     "χρήματα",
+     "εἰ",
+     "δέ",
+     "μή",
+     "πολεμήσομεν",
+     "ὑμῖν"
+    ]
+   },
+   {
+    "prompt": "I could never have discovered the truth except by toiling.",
+    "answer": "οὐκ ἄν ποτε τὴν ἀλήθειαν ἐξηῦρον, εἰ μὴ πονήσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "τήν",
+     "ἀλήθειαν",
+     "ἐξηῦρον",
+     "εἰ",
+     "μή",
+     "πονήσας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2344-modifications-of-the-protasis-t4",
+  "sectionId": "sm-2344-modifications-of-the-protasis",
+  "questions": [
+   {
+    "prompt": "Where in the world would one find such a friend?",
+    "answer": "ποῦ ἄν τις τοιοῦτον φίλον εὕροι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποῦ",
+     "ἄν",
+     "τις",
+     "τοιοῦτον",
+     "φίλον",
+     "εὕροι"
+    ]
+   },
+   {
+    "prompt": "I should not be able to state the number accurately.",
+    "answer": "τὸν ἀριθμὸν οὐκ ἂν δυναίμην ἀκριβῶς εἰπεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "ἀριθμόν",
+     "οὐκ",
+     "ἄν",
+     "δυναίμην",
+     "ἀκριβῶς",
+     "εἰπεῖν"
+    ]
+   },
+   {
+    "prompt": "Who would willingly choose slavery instead of freedom?",
+    "answer": "τίς ἂν ἑκὼν δουλείαν ἀντὶ ἐλευθερίας ἕλοιτο;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἄν",
+     "ἑκών",
+     "δουλείαν",
+     "ἀντί",
+     "ἐλευθερίας",
+     "ἕλοιτο"
+    ]
+   },
+   {
+    "prompt": "No one would justly blame these men.",
+    "answer": "οὐδεὶς ἂν δικαίως τούτους μέμφοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἄν",
+     "δικαίως",
+     "τούτους",
+     "μέμφοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2344-modifications-of-the-protasis-t5",
+  "sectionId": "sm-2344-modifications-of-the-protasis",
+  "questions": [
+   {
+    "prompt": "With the enemy at hand, we would not remain in the city.",
+    "answer": "τῶν πολεμίων παρόντων οὐκ ἂν ἐν τῇ πόλει μένοιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "παρόντων",
+     "οὐκ",
+     "ἄν",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "μένοιμεν"
+    ]
+   },
+   {
+    "prompt": "Whoever should do these things would justly be punished.",
+    "answer": "ὃς ταῦτα ποιοίη δικαίως ἂν κολασθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅς",
+     "ταῦτα",
+     "ποιοίη",
+     "δικαίως",
+     "ἄν",
+     "κολασθείη"
+    ]
+   },
+   {
+    "prompt": "For thus they would fight most eagerly.",
+    "answer": "οὕτω γὰρ ἂν προθυμότατα μάχοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "γάρ",
+     "ἄν",
+     "προθυμότατα",
+     "μάχοιντο"
+    ]
+   },
+   {
+    "prompt": "Should they be defeated, not one of them would be left.",
+    "answer": "ἡττηθέντων οὐδεὶς ἂν αὐτῶν λειφθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡττηθέντων",
+     "οὐδείς",
+     "ἄν",
+     "αὐτῶν",
+     "λειφθείη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2344-modifications-of-the-protasis-t6",
+  "sectionId": "sm-2344-modifications-of-the-protasis",
+  "questions": [
+   {
+    "prompt": "With such allies you would easily conquer.",
+    "answer": "μετὰ τοιούτων συμμάχων ῥᾳδίως ἂν νικῴης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετά",
+     "τοιούτων",
+     "συμμάχων",
+     "ῥᾳδίως",
+     "ἄν",
+     "νικῴης"
+    ]
+   },
+   {
+    "prompt": "I should justly have been punished by the judges.",
+    "answer": "δικαίως ἂν ὑπὸ τῶν δικαστῶν ἐκολάσθην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δικαίως",
+     "ἄν",
+     "ὑπό",
+     "τῶν",
+     "δικαστῶν",
+     "ἐκολάσθην"
+    ]
+   },
+   {
+    "prompt": "Do not do these things; but if you do, you will bear the blame.",
+    "answer": "μὴ ταῦτα ποιήσῃς· εἰ δὲ μή, τὴν αἰτίαν ἕξεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ταῦτα",
+     "ποιήσῃς",
+     "εἰ",
+     "δέ",
+     "τήν",
+     "αἰτίαν",
+     "ἕξεις"
+    ]
+   },
+   {
+    "prompt": "A man who loved his country would not betray it.",
+    "answer": "ἀνὴρ ὃς φιλοίη τὴν πατρίδα οὐκ ἂν αὐτὴν προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνήρ",
+     "ὅς",
+     "φιλοίη",
+     "τήν",
+     "πατρίδα",
+     "οὐκ",
+     "ἄν",
+     "αὐτήν",
+     "προδοίη"
+    ]
+   }
+  ]
+ }
+]

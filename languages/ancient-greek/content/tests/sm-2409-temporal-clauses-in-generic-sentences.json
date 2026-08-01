@@ -1,0 +1,436 @@
+[
+ {
+  "id": "sm-2409-temporal-clauses-in-generic-sentences-t1",
+  "sectionId": "sm-2409-temporal-clauses-in-generic-sentences",
+  "questions": [
+   {
+    "prompt": "Whenever the enemy make an assault, the young men guarding the gates shout loudly.",
+    "answer": "ὅταν οἱ πολέμιοι προσβολὴν ποιῶνται, οἱ τὰς πύλας φυλάττοντες νεανίαι μέγα βοῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "οἱ",
+     "πολέμιοι",
+     "προσβολήν",
+     "ποιῶνται",
+     "τάς",
+     "πύλας",
+     "φυλάττοντες",
+     "νεανίαι",
+     "μέγα",
+     "βοῶσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever the poet sings well, the whole city praises him.",
+    "answer": "ὁπόταν ὁ ποιητὴς καλῶς ᾄδῃ, πᾶσα ἡ πόλις αὐτὸν ἐπαινεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "ὁ",
+     "ποιητής",
+     "καλῶς",
+     "ᾄδῃ",
+     "πᾶσα",
+     "ἡ",
+     "πόλις",
+     "αὐτόν",
+     "ἐπαινεῖ"
+    ]
+   },
+   {
+    "prompt": "Whenever we commit some error, our friends are the first to see it.",
+    "answer": "ὅταν ἁμαρτίαν τινὰ ἁμαρτάνωμεν, οἱ φίλοι πρῶτοι ὁρῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ἁμαρτίαν",
+     "τινά",
+     "ἁμαρτάνωμεν",
+     "οἱ",
+     "φίλοι",
+     "πρῶτοι",
+     "ὁρῶσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever a brave man falls in battle, the citizens honor him with a fine tomb.",
+    "answer": "ὅταν ἄλκιμος ἀνὴρ ἐν μάχῃ πέσῃ, οἱ πολῖται καλῷ τάφῳ αὐτὸν τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ἄλκιμος",
+     "ἀνήρ",
+     "ἐν",
+     "μάχῃ",
+     "πέσῃ",
+     "οἱ",
+     "πολῖται",
+     "καλῷ",
+     "τάφῳ",
+     "αὐτόν",
+     "τιμῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2409-temporal-clauses-in-generic-sentences-t2",
+  "sectionId": "sm-2409-temporal-clauses-in-generic-sentences",
+  "questions": [
+   {
+    "prompt": "Whenever the general has drawn up the army, he orders the soldiers to be brave.",
+    "answer": "ἐπειδὰν ὁ στρατηγὸς τὸ στράτευμα τάξῃ, τοὺς στρατιώτας ἀνδρείους εἶναι κελεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "τάξῃ",
+     "τούς",
+     "στρατιώτας",
+     "ἀνδρείους",
+     "εἶναι",
+     "κελεύει"
+    ]
+   },
+   {
+    "prompt": "Whenever night has come, the guards light many fires.",
+    "answer": "ἐπειδὰν νὺξ γένηται, οἱ φύλακες πολλὰ πυρὰ καίουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "νύξ",
+     "γένηται",
+     "οἱ",
+     "φύλακες",
+     "πολλά",
+     "πυρά",
+     "καίουσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever he hands over these rights to another, he destroys his own power.",
+    "answer": "ὅταν ταῦτα τὰ δίκαια ἑτέρῳ παραδῷ, τὴν ἑαυτοῦ δύναμιν καταλύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ταῦτα",
+     "τά",
+     "δίκαια",
+     "ἑτέρῳ",
+     "παραδῷ",
+     "τήν",
+     "ἑαυτοῦ",
+     "δύναμιν",
+     "καταλύει"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy enslave certain people, they often force them to become better.",
+    "answer": "ὅταν οἱ πολέμιοι καταδουλώσωνταί τινας, πολλάκις βελτίους αὐτοὺς εἶναι ἀναγκάζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "οἱ",
+     "πολέμιοι",
+     "καταδουλώσωνται",
+     "τινας",
+     "πολλάκις",
+     "βελτίους",
+     "αὐτούς",
+     "εἶναι",
+     "ἀναγκάζουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2409-temporal-clauses-in-generic-sentences-t3",
+  "sectionId": "sm-2409-temporal-clauses-in-generic-sentences",
+  "questions": [
+   {
+    "prompt": "As long as the walls stand, the city fears no one.",
+    "answer": "ἕως ἂν τὰ τείχη ἑστήκῃ, ἡ πόλις οὐδένα φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἄν",
+     "τά",
+     "τείχη",
+     "ἑστήκῃ",
+     "ἡ",
+     "πόλις",
+     "οὐδένα",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "On each occasion we wait until the herald announces the contest.",
+    "answer": "ἑκάστοτε περιμένομεν ἕως ἂν ὁ κῆρυξ τὸν ἀγῶνα ἀγγείλῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑκάστοτε",
+     "περιμένομεν",
+     "ἕως",
+     "ἄν",
+     "ὁ",
+     "κῆρυξ",
+     "τόν",
+     "ἀγῶνα",
+     "ἀγγείλῃ"
+    ]
+   },
+   {
+    "prompt": "No one departs before the assembly has been dissolved.",
+    "answer": "οὐδεὶς ἀπέρχεται πρὶν ἂν ἡ ἐκκλησία λυθῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἀπέρχεται",
+     "πρίν",
+     "ἄν",
+     "ἡ",
+     "ἐκκλησία",
+     "λυθῇ"
+    ]
+   },
+   {
+    "prompt": "As long as a man remains poor, few call him a friend.",
+    "answer": "ἕως ἂν πένης τις ᾖ, ὀλίγοι φίλον αὐτὸν προσαγορεύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἄν",
+     "πένης",
+     "τις",
+     "ᾖ",
+     "ὀλίγοι",
+     "φίλον",
+     "αὐτόν",
+     "προσαγορεύουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2409-temporal-clauses-in-generic-sentences-t4",
+  "sectionId": "sm-2409-temporal-clauses-in-generic-sentences",
+  "questions": [
+   {
+    "prompt": "Whenever the old man came into the market, he used to greet everyone.",
+    "answer": "ὁπότε ὁ γέρων εἰς τὴν ἀγορὰν ἔλθοι, πάντας προσηγόρευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ὁ",
+     "γέρων",
+     "εἰς",
+     "τήν",
+     "ἀγοράν",
+     "ἔλθοι",
+     "πάντας",
+     "προσηγόρευεν"
+    ]
+   },
+   {
+    "prompt": "Whenever the soldiers were hungry, the king used to wait until they had eaten something.",
+    "answer": "ὁπότε οἱ στρατιῶται πεινῷεν, ὁ βασιλεὺς ἀνέμενεν ἕως ἐμφάγοιέν τι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "στρατιῶται",
+     "πεινῷεν",
+     "ὁ",
+     "βασιλεύς",
+     "ἀνέμενεν",
+     "ἕως",
+     "ἐμφάγοιεν",
+     "τι"
+    ]
+   },
+   {
+    "prompt": "Whenever Cyrus looked at any of the men, he would praise them.",
+    "answer": "ὁπότε ὁ Κῦρος τῶν ἀνδρῶν τινας προσβλέψειεν, ἐπῄνει ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ὁ",
+     "Κῦρος",
+     "τῶν",
+     "ἀνδρῶν",
+     "τινας",
+     "προσβλέψειεν",
+     "ἐπῄνει",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy were about to attack, the young men used to sing and dance.",
+    "answer": "ὁπότε οἱ πολέμιοι προσβάλλειν μέλλοιεν, οἱ νεανίαι ᾖδον καὶ ἐχόρευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "πολέμιοι",
+     "προσβάλλειν",
+     "μέλλοιεν",
+     "νεανίαι",
+     "ᾖδον",
+     "καί",
+     "ἐχόρευον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2409-temporal-clauses-in-generic-sentences-t5",
+  "sectionId": "sm-2409-temporal-clauses-in-generic-sentences",
+  "questions": [
+   {
+    "prompt": "Whenever the general is present, the soldiers, though tired, fight eagerly.",
+    "answer": "ὅταν ὁ στρατηγὸς παρῇ, οἱ στρατιῶται καίπερ κάμνοντες προθύμως μάχονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "στρατηγός",
+     "παρῇ",
+     "οἱ",
+     "στρατιῶται",
+     "καίπερ",
+     "κάμνοντες",
+     "προθύμως",
+     "μάχονται"
+    ]
+   },
+   {
+    "prompt": "Whenever winter comes, the farmers, ceasing from their toils, rest at home.",
+    "answer": "ὅταν ὁ χειμὼν ἔλθῃ, οἱ γεωργοὶ τῶν πόνων παυόμενοι οἴκοι ἡσυχάζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "χειμών",
+     "ἔλθῃ",
+     "οἱ",
+     "γεωργοί",
+     "τῶν",
+     "πόνων",
+     "παυόμενοι",
+     "οἴκοι",
+     "ἡσυχάζουσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever the sun has set, the ships, sailing through the night, reach the harbor.",
+    "answer": "ἐπειδὰν ὁ ἥλιος δύῃ, αἱ νῆες διὰ τῆς νυκτὸς πλέουσαι εἰς τὸν λιμένα ἀφικνοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "ὁ",
+     "ἥλιος",
+     "δύῃ",
+     "αἱ",
+     "νῆες",
+     "διά",
+     "τῆς",
+     "νυκτός",
+     "πλέουσαι",
+     "εἰς",
+     "τόν",
+     "λιμένα",
+     "ἀφικνοῦνται"
+    ]
+   },
+   {
+    "prompt": "Whenever the citizens are being wronged, they choose a bold man as general.",
+    "answer": "ὅταν οἱ πολῖται ἀδικῶνται, ἄνδρα θρασὺν στρατηγὸν αἱροῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "οἱ",
+     "πολῖται",
+     "ἀδικῶνται",
+     "ἄνδρα",
+     "θρασύν",
+     "στρατηγόν",
+     "αἱροῦνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2409-temporal-clauses-in-generic-sentences-t6",
+  "sectionId": "sm-2409-temporal-clauses-in-generic-sentences",
+  "questions": [
+   {
+    "prompt": "Whenever it was possible, the sailors used to rest their oars.",
+    "answer": "ὁπότε ἐξείη, οἱ ναῦται τὰ ἐρετμὰ ἀνέπαυον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ἐξείη",
+     "οἱ",
+     "ναῦται",
+     "τά",
+     "ἐρετμά",
+     "ἀνέπαυον"
+    ]
+   },
+   {
+    "prompt": "Whenever the messenger arrived, we used to wait until he told everything.",
+    "answer": "ὁπότε ὁ ἄγγελος ἀφίκοιτο, περιεμένομεν ἕως πάντα εἴποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ὁ",
+     "ἄγγελος",
+     "ἀφίκοιτο",
+     "περιεμένομεν",
+     "ἕως",
+     "πάντα",
+     "εἴποι"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy withdrew, the general used to lead the army back to the camp.",
+    "answer": "ὁπότε οἱ πολέμιοι ἀναχωρήσειαν, ὁ στρατηγὸς τὸ στράτευμα εἰς τὸ στρατόπεδον ἀπῆγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "πολέμιοι",
+     "ἀναχωρήσειαν",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "εἰς",
+     "στρατόπεδον",
+     "ἀπῆγεν"
+    ]
+   },
+   {
+    "prompt": "Whenever grief seized him, he was silent and looked at the ground.",
+    "answer": "ὁπότε λύπη αὐτὸν λάβοι, ἐσίγα καὶ εἰς τὴν γῆν ἔβλεπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "λύπη",
+     "αὐτόν",
+     "λάβοι",
+     "ἐσίγα",
+     "καί",
+     "εἰς",
+     "τήν",
+     "γῆν",
+     "ἔβλεπεν"
+    ]
+   }
+  ]
+ }
+]

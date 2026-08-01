@@ -1,0 +1,379 @@
+[
+ {
+  "id": "sm-2335-general-conditions-t1",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever a friend approaches, we greet him gladly.",
+    "answer": "ἐὰν φίλος ἐπέρχηται, ἡδέως αὐτὸν ἀσπαζόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "φίλος",
+     "ἐπέρχηται",
+     "ἡδέως",
+     "αὐτόν",
+     "ἀσπαζόμεθα"
+    ]
+   },
+   {
+    "prompt": "If ever the soldiers see the enemy, they hurl their javelins.",
+    "answer": "ἐὰν οἱ στρατιῶται τοὺς πολεμίους ὁρῶσιν, τὰ ἀκόντια βάλλουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "στρατιῶται",
+     "τούς",
+     "πολεμίους",
+     "ὁρῶσιν",
+     "τά",
+     "ἀκόντια",
+     "βάλλουσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever the wise man learns something, he rejoices.",
+    "answer": "ἐὰν ὁ σοφὸς μανθάνῃ τι, χαίρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "σοφός",
+     "μανθάνῃ",
+     "τι",
+     "χαίρει"
+    ]
+   },
+   {
+    "prompt": "If ever we suffer terrible things, we blame the gods.",
+    "answer": "ἐὰν δεινὰ πάσχωμεν, τοὺς θεοὺς αἰτιώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "δεινά",
+     "πάσχωμεν",
+     "τούς",
+     "θεούς",
+     "αἰτιώμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t2",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever a stranger arrived, the old man received him kindly.",
+    "answer": "εἰ ξένος ἀφίκοιτο, ὁ γέρων αὐτὸν εὐμενῶς ἐδέχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ξένος",
+     "ἀφίκοιτο",
+     "ὁ",
+     "γέρων",
+     "αὐτόν",
+     "εὐμενῶς",
+     "ἐδέχετο"
+    ]
+   },
+   {
+    "prompt": "Whenever the general spoke, the soldiers listened.",
+    "answer": "εἰ ὁ στρατηγὸς λέγοι, οἱ στρατιῶται ἤκουον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγός",
+     "λέγοι",
+     "οἱ",
+     "στρατιῶται",
+     "ἤκουον"
+    ]
+   },
+   {
+    "prompt": "If ever anyone fled, they pursued him.",
+    "answer": "εἴ τις φεύγοι, ἐδίωκον αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "φεύγοι",
+     "ἐδίωκον",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "Whenever the children did wrong, the teacher punished them.",
+    "answer": "εἰ οἱ παῖδες ἁμαρτάνοιεν, ὁ διδάσκαλος αὐτοὺς ἐκόλαζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "παῖδες",
+     "ἁμαρτάνοιεν",
+     "ὁ",
+     "διδάσκαλος",
+     "αὐτούς",
+     "ἐκόλαζεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t3",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "If ever mortals honor the gods, they become dearer to them.",
+    "answer": "ἐὰν οἱ θνητοὶ τοὺς θεοὺς τιμῶσιν, φίλτεροι αὐτοῖς γίγνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "θνητοί",
+     "τούς",
+     "θεούς",
+     "τιμῶσιν",
+     "φίλτεροι",
+     "αὐτοῖς",
+     "γίγνονται"
+    ]
+   },
+   {
+    "prompt": "Whenever the sea is calm, the sailors sail out.",
+    "answer": "ἐὰν ἡ θάλαττα γαληνὴ ᾖ, οἱ ναῦται ἐκπλέουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἡ",
+     "θάλαττα",
+     "γαληνή",
+     "ᾖ",
+     "οἱ",
+     "ναῦται",
+     "ἐκπλέουσιν"
+    ]
+   },
+   {
+    "prompt": "If ever the body is healthy, the soul too is strong.",
+    "answer": "ἐὰν τὸ σῶμα ὑγιαίνῃ, καὶ ἡ ψυχὴ ἐρρωμένη ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τό",
+     "σῶμα",
+     "ὑγιαίνῃ",
+     "καί",
+     "ἡ",
+     "ψυχή",
+     "ἐρρωμένη",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Whenever we conquer the enemy, we set up a trophy.",
+    "answer": "ἐὰν τοὺς πολεμίους νικῶμεν, τρόπαιον ἵσταμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τούς",
+     "πολεμίους",
+     "νικῶμεν",
+     "τρόπαιον",
+     "ἵσταμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t4",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever the enemy attacked, the citizens fled into the city.",
+    "answer": "εἰ οἱ πολέμιοι ἐπίοιεν, οἱ πολῖται εἰς τὴν πόλιν ἔφευγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "ἐπίοιεν",
+     "πολῖται",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "ἔφευγον"
+    ]
+   },
+   {
+    "prompt": "If ever Socrates asked a question, the young men were at a loss.",
+    "answer": "εἰ ὁ Σωκράτης ἐρωτῴη τι, οἱ νεανίαι ἠπόρουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Σωκράτης",
+     "ἐρωτῴη",
+     "τι",
+     "οἱ",
+     "νεανίαι",
+     "ἠπόρουν"
+    ]
+   },
+   {
+    "prompt": "Whenever the wine ran out, the guests departed.",
+    "answer": "εἰ ὁ οἶνος ἐπιλείποι, οἱ ξένοι ἀπῇσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "οἶνος",
+     "ἐπιλείποι",
+     "οἱ",
+     "ξένοι",
+     "ἀπῇσαν"
+    ]
+   },
+   {
+    "prompt": "If ever the king grew angry, everyone feared him.",
+    "answer": "εἰ ὁ βασιλεὺς ὀργίζοιτο, πάντες αὐτὸν ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "βασιλεύς",
+     "ὀργίζοιτο",
+     "πάντες",
+     "αὐτόν",
+     "ἐφοβοῦντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t5",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever we wish to learn, we go to the teachers.",
+    "answer": "ἐὰν μανθάνειν βουλώμεθα, παρὰ τοὺς διδασκάλους ἐρχόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "μανθάνειν",
+     "βουλώμεθα",
+     "παρά",
+     "τούς",
+     "διδασκάλους",
+     "ἐρχόμεθα"
+    ]
+   },
+   {
+    "prompt": "If ever a general fears the danger, he does not win the victory.",
+    "answer": "ἐὰν στρατηγὸς τὸν κίνδυνον φοβῆται, νίκην οὐ φέρεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "στρατηγός",
+     "τόν",
+     "κίνδυνον",
+     "φοβῆται",
+     "νίκην",
+     "οὐ",
+     "φέρεται"
+    ]
+   },
+   {
+    "prompt": "Whenever the poet sings, everyone listens in silence.",
+    "answer": "ἐὰν ὁ ποιητὴς ᾄδῃ, πάντες σιγῇ ἀκούουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "ποιητής",
+     "ᾄδῃ",
+     "πάντες",
+     "σιγῇ",
+     "ἀκούουσιν"
+    ]
+   },
+   {
+    "prompt": "If ever justice rules, the city prospers.",
+    "answer": "ἐὰν ἡ δικαιοσύνη ἄρχῃ, ἡ πόλις εὐδαιμονεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἡ",
+     "δικαιοσύνη",
+     "ἄρχῃ",
+     "πόλις",
+     "εὐδαιμονεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t6",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever the hunters caught a wild beast, they rejoiced exceedingly.",
+    "answer": "εἰ οἱ θηραταὶ θηρίον λάβοιεν, σφόδρα ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "θηραταί",
+     "θηρίον",
+     "λάβοιεν",
+     "σφόδρα",
+     "ἔχαιρον"
+    ]
+   },
+   {
+    "prompt": "If ever a slave disobeyed, the master grew angry.",
+    "answer": "εἰ δοῦλος ἀπειθοίη, ὁ δεσπότης ὠργίζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δοῦλος",
+     "ἀπειθοίη",
+     "ὁ",
+     "δεσπότης",
+     "ὠργίζετο"
+    ]
+   },
+   {
+    "prompt": "Whenever they saw the light, they hoped for safety.",
+    "answer": "εἰ τὸ φῶς ἴδοιεν, σωτηρίαν ἤλπιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τό",
+     "φῶς",
+     "ἴδοιεν",
+     "σωτηρίαν",
+     "ἤλπιζον"
+    ]
+   },
+   {
+    "prompt": "If ever the physician healed the wound, they praised him.",
+    "answer": "εἰ ὁ ἰατρὸς τὴν ὠτειλὴν ἰάσαιτο, ἐπῄνουν αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἰατρός",
+     "τήν",
+     "ὠτειλήν",
+     "ἰάσαιτο",
+     "ἐπῄνουν",
+     "αὐτόν"
+    ]
+   }
+  ]
+ }
+]
