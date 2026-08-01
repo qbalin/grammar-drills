@@ -1,0 +1,400 @@
+[
+ {
+  "id": "sm-1942-epistolary-tenses-t1",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "I send you this letter through the messenger who arrived yesterday.",
+    "answer": "ταύτην σοι τὴν ἐπιστολὴν ἔπεμψα διὰ τοῦ ἀγγέλου ὃς χθὲς ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτην",
+     "σοι",
+     "τήν",
+     "ἐπιστολήν",
+     "ἔπεμψα",
+     "διά",
+     "τοῦ",
+     "ἀγγέλου",
+     "ὅς",
+     "χθές",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "I send you these gifts as a token of friendship.",
+    "answer": "ταῦτά σοι τὰ δῶρα ἀπέσταλκα φιλίας σημεῖον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "σοι",
+     "τά",
+     "δῶρα",
+     "ἀπέσταλκα",
+     "φιλίας",
+     "σημεῖον"
+    ]
+   },
+   {
+    "prompt": "Negotiate with the ambassadors whom I send to you.",
+    "answer": "πρᾶττε μετὰ τῶν πρέσβεων οὕς σοι ἔπεμψα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρᾶττε",
+     "μετά",
+     "τῶν",
+     "πρέσβεων",
+     "οὕς",
+     "σοι",
+     "ἔπεμψα"
+    ]
+   },
+   {
+    "prompt": "I write these things to you so that you may know the truth.",
+    "answer": "ταῦτά σοι ἔγραψα ἵνα τὴν ἀλήθειαν εἰδῇς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "σοι",
+     "ἔγραψα",
+     "ἵνα",
+     "τήν",
+     "ἀλήθειαν",
+     "εἰδῇς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t2",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "After the signal had been given, the soldiers advanced.",
+    "answer": "ἐπεὶ ἐσήμηνεν, οἱ στρατιῶται ἐπῇσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "ἐσήμηνεν",
+     "οἱ",
+     "στρατιῶται",
+     "ἐπῇσαν"
+    ]
+   },
+   {
+    "prompt": "When they had come together, the general spoke as follows.",
+    "answer": "ἐπειδὴ συνῆλθον, ὁ στρατηγὸς τοιάδε ἔλεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδή",
+     "συνῆλθον",
+     "ὁ",
+     "στρατηγός",
+     "τοιάδε",
+     "ἔλεξεν"
+    ]
+   },
+   {
+    "prompt": "They kept fighting until the Athenians had sailed away.",
+    "answer": "ἐμάχοντο μέχρι οἱ Ἀθηναῖοι ἀπέπλευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμάχοντο",
+     "μέχρι",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ἀπέπλευσαν"
+    ]
+   },
+   {
+    "prompt": "They turned toward the harbor from which they had put out to sea.",
+    "answer": "ἐτράποντο πρὸς τὸν λιμένα ὅθεν ἀνηγάγοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐτράποντο",
+     "πρός",
+     "τόν",
+     "λιμένα",
+     "ὅθεν",
+     "ἀνηγάγοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t3",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "Having captured the city, the Argives dedicate these spoils to the goddess.",
+    "answer": "τὴν πόλιν ἑλόντες οἱ Ἀργεῖοι ταῦτα τὰ λάφυρα τῇ θεῷ ἀνέθεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "πόλιν",
+     "ἑλόντες",
+     "οἱ",
+     "Ἀργεῖοι",
+     "ταῦτα",
+     "τά",
+     "λάφυρα",
+     "τῇ",
+     "θεῷ",
+     "ἀνέθεσαν"
+    ]
+   },
+   {
+    "prompt": "I send you my son, whom I have taught everything.",
+    "answer": "τὸν υἱόν σοι ἔπεμψα, ὃν πάντα ἐδίδαξα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "υἱόν",
+     "σοι",
+     "ἔπεμψα",
+     "ὅν",
+     "πάντα",
+     "ἐδίδαξα"
+    ]
+   },
+   {
+    "prompt": "Up to the time this account was being written, the peace held.",
+    "answer": "μέχρι οὗ ὅδε ὁ λόγος ἐγράφετο, ἡ εἰρήνη ἔμενεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέχρι",
+     "οὗ",
+     "ὅδε",
+     "ὁ",
+     "λόγος",
+     "ἐγράφετο",
+     "ἡ",
+     "εἰρήνη",
+     "ἔμενεν"
+    ]
+   },
+   {
+    "prompt": "Sokrates sends greetings to his friends and says that he himself is well.",
+    "answer": "Σωκράτης τοῖς φίλοις χαίρειν ἐπέστελλε καὶ αὐτὸς εὖ ἔχειν ἔφασκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Σωκράτης",
+     "τοῖς",
+     "φίλοις",
+     "χαίρειν",
+     "ἐπέστελλε",
+     "καί",
+     "αὐτός",
+     "εὖ",
+     "ἔχειν",
+     "ἔφασκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t4",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "He asked me to give him the letter which I had written home.",
+    "answer": "ἐκέλευσέ με τὴν ἐπιστολήν, ἣν οἴκαδε ἔγραψα, αὐτῷ δοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκέλευσε",
+     "με",
+     "τήν",
+     "ἐπιστολήν",
+     "ἥν",
+     "οἴκαδε",
+     "ἔγραψα",
+     "αὐτῷ",
+     "δοῦναι"
+    ]
+   },
+   {
+    "prompt": "Since the enemy had ravaged the land, the citizens fled to the mountains.",
+    "answer": "ἐπειδὴ οἱ πολέμιοι τὴν χώραν ἐδῄωσαν, οἱ πολῖται εἰς τὰ ὄρη ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδή",
+     "οἱ",
+     "πολέμιοι",
+     "τήν",
+     "χώραν",
+     "ἐδῄωσαν",
+     "πολῖται",
+     "εἰς",
+     "τά",
+     "ὄρη",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "When night had fallen, the soldiers withdrew quietly.",
+    "answer": "ἐπεὶ νὺξ ἐγένετο, οἱ στρατιῶται ἡσυχῇ ἀνεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "νύξ",
+     "ἐγένετο",
+     "οἱ",
+     "στρατιῶται",
+     "ἡσυχῇ",
+     "ἀνεχώρησαν"
+    ]
+   },
+   {
+    "prompt": "Because they had betrayed the city, they were punished by the assembly.",
+    "answer": "ὅτι τὴν πόλιν προέδοσαν, ὑπὸ τῆς ἐκκλησίας ἐκολάσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτι",
+     "τήν",
+     "πόλιν",
+     "προέδοσαν",
+     "ὑπό",
+     "τῆς",
+     "ἐκκλησίας",
+     "ἐκολάσθησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t5",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "They did not stop before they had captured the city.",
+    "answer": "οὐ πρότερον ἐπαύσαντο πρὶν τὴν πόλιν εἷλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πρότερον",
+     "ἐπαύσαντο",
+     "πρίν",
+     "τήν",
+     "πόλιν",
+     "εἷλον"
+    ]
+   },
+   {
+    "prompt": "They waited until the ships had returned from the harbor.",
+    "answer": "ἔμειναν ἕως αἱ νῆες ἐκ τοῦ λιμένος ἐπανῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔμειναν",
+     "ἕως",
+     "αἱ",
+     "νῆες",
+     "ἐκ",
+     "τοῦ",
+     "λιμένος",
+     "ἐπανῆλθον"
+    ]
+   },
+   {
+    "prompt": "During the time that he waited, he learned all he could.",
+    "answer": "ἐν τῷ χρόνῳ ὃν ἐπέσχεν, ὅσα ἐδύνατο κατενόησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῷ",
+     "χρόνῳ",
+     "ὅν",
+     "ἐπέσχεν",
+     "ὅσα",
+     "ἐδύνατο",
+     "κατενόησεν"
+    ]
+   },
+   {
+    "prompt": "As soon as the herald had proclaimed peace, the people rejoiced.",
+    "answer": "ἐπειδὴ τάχιστα ὁ κῆρυξ τὴν εἰρήνην ἀνεῖπεν, ὁ δῆμος ἐχάρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδή",
+     "τάχιστα",
+     "ὁ",
+     "κῆρυξ",
+     "τήν",
+     "εἰρήνην",
+     "ἀνεῖπεν",
+     "δῆμος",
+     "ἐχάρη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t6",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "I send you this discourse, which I composed with much care.",
+    "answer": "ἀπέσταλκά σοι τόνδε τὸν λόγον, ὃν σὺν πολλῇ σπουδῇ συνέθηκα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέσταλκα",
+     "σοι",
+     "τόνδε",
+     "τόν",
+     "λόγον",
+     "ὅν",
+     "σύν",
+     "πολλῇ",
+     "σπουδῇ",
+     "συνέθηκα"
+    ]
+   },
+   {
+    "prompt": "I send along with the letter the money which I promised.",
+    "answer": "ἅμα τῇ ἐπιστολῇ τὸ ἀργύριον ἔπεμψα ὃ ὑπεσχόμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τῇ",
+     "ἐπιστολῇ",
+     "τό",
+     "ἀργύριον",
+     "ἔπεμψα",
+     "ὅ",
+     "ὑπεσχόμην"
+    ]
+   },
+   {
+    "prompt": "When the enemy had sailed away, the Athenians set up a trophy.",
+    "answer": "ἐπεὶ οἱ πολέμιοι ἀπέπλευσαν, οἱ Ἀθηναῖοι τρόπαιον ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "οἱ",
+     "πολέμιοι",
+     "ἀπέπλευσαν",
+     "Ἀθηναῖοι",
+     "τρόπαιον",
+     "ἔστησαν"
+    ]
+   },
+   {
+    "prompt": "The eldest of the brothers held the power up to the time these things were written.",
+    "answer": "ὁ πρεσβύτατος τῶν ἀδελφῶν τὴν ἀρχὴν εἶχε μέχρι οὗ ταῦτα ἐγράφετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πρεσβύτατος",
+     "τῶν",
+     "ἀδελφῶν",
+     "τήν",
+     "ἀρχήν",
+     "εἶχε",
+     "μέχρι",
+     "οὗ",
+     "ταῦτα",
+     "ἐγράφετο"
+    ]
+   }
+  ]
+ }
+]
