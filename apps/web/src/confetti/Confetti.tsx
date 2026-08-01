@@ -11,41 +11,11 @@
  */
 import { useCallback, useEffect, useRef } from "react";
 import pack from "@pack/confetti";
-import { profile } from "../pack.js";
-import { begin, countAnswer, parse, serialize, type Cadence } from "./cadence.js";
 import { shade, shapesOf, type ConfettiPack } from "./shapes.js";
+import { DEFAULTS, browserStore, enabledGroups } from "./bench.js";
 
-/** Named by the pack, like every other key this app writes. */
-const KEY = `${profile.storage.webProgressKey}:confetti`;
-
-/**
- * How a burst behaves when nobody has said otherwise.
- *
- * Gathered into one object rather than left as loose constants because the
- * playground now sets every one of them, and a knob whose default lives
- * somewhere else is a knob that drifts. These are the numbers the playground's
- * "copy as defaults" writes back.
- */
-export const DEFAULTS = {
-  /** How many pieces a burst throws. */
-  pieces: 40,
-  /** Piece size in CSS pixels, before the per-piece spread. */
-  size: 17,
-  /** Half-width of the size spread, as a fraction: 0.25 is 75%–125%. */
-  sizeSpread: 0.25,
-  /** Where the burst starts, down the viewport. */
-  originY: 0.62,
-  /** How wide it starts, as a fraction of viewport width. */
-  spreadX: 0.5,
-  /** Upward launch speed in CSS pixels per frame, before its own jitter. */
-  speed: 5.5,
-  /** Gravity, per frame, in CSS pixels. */
-  gravity: 0.34,
-  /** Half-width of the spin, in radians per frame. */
-  spin: 0.12,
-  /** How far down the viewport a piece must fall before it begins to fade. */
-  fadeAt: 0.72,
-};
+/** The colour an outline is drawn in, when one is asked for. */
+const INK = "#000000";
 
 /**
  * How much lighter or darker one piece may be than the colours its shape names.
@@ -83,17 +53,31 @@ type Built = { d: Path2D; fill: string | null }[];
  * imported by the test environment, where Path2D does not exist, and a throw at
  * import time would take the whole app down with it.
  *
- * `only` names the group to throw; without it one is drawn at random, which is
- * what a real burst does.
+ * `only` names the group to throw; without it one is drawn at random from the
+ * groups the bench has left live, or from the pack's own throws when there is
+ * no bench — which is every browser but one.
  */
 function buildThrow(source: ConfettiPack, only?: string[]): Built[] {
   if (typeof Path2D === "undefined") return [];
-  const groups = source.throws;
-  if (!groups?.length && !only) return [];
-  const group = only ?? groups[Math.floor(Math.random() * groups.length)];
+  const groups = only ? [only] : throwable(source);
+  if (!groups.length) return [];
+  const group = groups[Math.floor(Math.random() * groups.length)];
   return shapesOf(group, source).map((layers) =>
     layers.map((layer) => ({ d: new Path2D(layer.d), fill: layer.fill })),
   );
+}
+
+/**
+ * The groups a random burst may pick from.
+ *
+ * A curated bench wins over the pack, including when it has been curated down
+ * to nothing — that is a deliberate "throw none of these", and quietly falling
+ * back to the whole pack would make the toggles look broken. Only the absence
+ * of a bench falls back.
+ */
+function throwable(source: ConfettiPack): string[][] {
+  const curated = enabledGroups(browserStore(), new Set(Object.keys(source.shapes ?? {})));
+  return curated ?? source.throws ?? [];
 }
 
 /** What a burst may be asked to do differently. Only the playground asks. */
@@ -106,26 +90,15 @@ export type BurstOptions = Partial<typeof DEFAULTS> & {
 
 export function useConfetti(): {
   canvas: React.ReactNode;
-  answered: () => void;
   fire: (options?: BurstOptions) => void;
 } {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const cadence = useRef<Cadence>(begin());
   const raf = useRef(0);
   const pieces = useRef<Piece[]>([]);
   // Set per burst, because the playground can change them between two throws.
   const physics = useRef(DEFAULTS);
 
-  // The count carries across sessions: a student whose queue is eight cards a
-  // day would otherwise never reach the first burst.
-  useEffect(() => {
-    try {
-      cadence.current = parse(localStorage.getItem(KEY));
-    } catch {
-      cadence.current = begin();
-    }
-    return () => cancelAnimationFrame(raf.current);
-  }, []);
+  useEffect(() => () => cancelAnimationFrame(raf.current), []);
 
   const draw = useCallback(() => {
     const canvas = canvasRef.current;
@@ -133,8 +106,12 @@ export function useConfetti(): {
     if (!canvas || !ctx) return;
     const w = canvas.clientWidth;
     const h = canvas.clientHeight;
-    const { gravity, fadeAt } = physics.current;
+    const { gravity, fadeAt, outline } = physics.current;
     ctx.clearRect(0, 0, w, h);
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
+    ctx.strokeStyle = INK;
+    ctx.lineWidth = outline;
     let live = 0;
     for (const p of pieces.current) {
       p.vy += gravity;
@@ -160,6 +137,12 @@ export function useConfetti(): {
         ctx.fillStyle = layer.fill;
         ctx.fill(layer.path, "evenodd");
       }
+      // The outline is a second pass over the whole piece rather than a stroke
+      // after each fill: stroked as it went, half the linework would be buried
+      // under the next layer, which reads as a rendering fault rather than as
+      // an outline. Line width is in box units, so it keeps its weight against
+      // the shape as the size slider moves.
+      if (outline > 0) for (const layer of p.layers) ctx.stroke(layer.path);
       ctx.restore();
     }
     if (live) raf.current = requestAnimationFrame(draw);
@@ -175,13 +158,16 @@ export function useConfetti(): {
     // browser making the same request, and one rule is easier to trust than
     // two — the playground says so on screen rather than overriding it.
     if (prefersReducedMotion()) return;
-    const canvas = canvasRef.current;
-    const ctx = canvas?.getContext("2d");
-    if (!canvas || !ctx) return;
+    // Before the canvas is touched, not after. `buildThrow` is what knows this
+    // environment has no Path2D, and asking jsdom for a 2d context is a loud
+    // "not implemented" in the middle of an otherwise passing test run.
     const { group, source: from, ...knobs } = options;
     const source = from ?? (pack as ConfettiPack);
     const shapes = buildThrow(source, group);
     if (!shapes.length) return;
+    const canvas = canvasRef.current;
+    const ctx = canvas?.getContext("2d");
+    if (!canvas || !ctx) return;
 
     const settings = { ...DEFAULTS, ...stripUndefined(knobs) };
     physics.current = settings;
@@ -223,20 +209,8 @@ export function useConfetti(): {
     raf.current = requestAnimationFrame(draw);
   }, [draw]);
 
-  /** One answer graded, of any kind and any rating. */
-  const answered = useCallback(() => {
-    const { cadence: next, fire } = countAnswer(cadence.current);
-    cadence.current = next;
-    try {
-      localStorage.setItem(KEY, serialize(next));
-    } catch {
-      // Storage full or blocked. The count keeps working for this session.
-    }
-    if (fire) burst();
-  }, [burst]);
-
   const canvas = <canvas ref={canvasRef} className="confetti" aria-hidden="true" />;
-  return { canvas, answered, fire: burst };
+  return { canvas, fire: burst };
 }
 
 /**
