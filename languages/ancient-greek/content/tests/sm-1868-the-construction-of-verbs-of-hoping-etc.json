@@ -4,6 +4,366 @@
   "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
   "questions": [
    {
+    "prompt": "The general hoped that he would capture the walls of the enemy.",
+    "answer": "ὁ στρατηγὸς ἤλπιζε τὰ τείχη τῶν πολεμίων αἱρήσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἤλπιζε",
+     "τὰ",
+     "τείχη",
+     "τῶν",
+     "πολεμίων",
+     "αἱρήσειν"
+    ]
+   },
+   {
+    "prompt": "We hope to persuade the young men, although they resist.",
+    "answer": "ἐλπίζομεν τοὺς νεανίας πείσειν καίπερ ἀντιλέγοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλπίζομεν",
+     "τοὺς",
+     "νεανίας",
+     "πείσειν",
+     "καίπερ",
+     "ἀντιλέγοντας"
+    ]
+   },
+   {
+    "prompt": "Being in hope of ruling, he sailed to Sicily.",
+    "answer": "ἐν ἐλπίδι ὢν τοῦ ἄρχειν εἰς Σικελίαν ἔπλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἐλπίδι",
+     "ὢν",
+     "τοῦ",
+     "ἄρχειν",
+     "εἰς",
+     "Σικελίαν",
+     "ἔπλευσεν"
+    ]
+   },
+   {
+    "prompt": "They expected that the allies would quickly come to the rescue.",
+    "answer": "ἤλπιζον τοὺς συμμάχους ταχέως βοηθήσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤλπιζον",
+     "τοὺς",
+     "συμμάχους",
+     "ταχέως",
+     "βοηθήσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t2",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "The Paphlagonian promised to restore the territory.",
+    "answer": "ὁ Παφλαγὼν ὑπέσχετο τὴν χώραν ἀποδοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Παφλαγὼν",
+     "ὑπέσχετο",
+     "τὴν",
+     "χώραν",
+     "ἀποδοῦναι"
+    ]
+   },
+   {
+    "prompt": "The soldiers promised to deliberate about the new decree.",
+    "answer": "οἱ στρατιῶται ὑπέσχοντο περὶ τοῦ καινοῦ δόγματος βουλεύσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ὑπέσχοντο",
+     "περὶ",
+     "τοῦ",
+     "καινοῦ",
+     "δόγματος",
+     "βουλεύσεσθαι"
+    ]
+   },
+   {
+    "prompt": "He promised that he would do these things before night came.",
+    "answer": "ὑπέσχετο ταῦτα ποιήσειν πρὶν νύκτα γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέσχετο",
+     "ταῦτα",
+     "ποιήσειν",
+     "πρὶν",
+     "νύκτα",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "The ambassadors promised that they would bring gifts to the king.",
+    "answer": "οἱ πρέσβεις ὑπέσχοντο δῶρα τῷ βασιλεῖ οἴσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ὑπέσχοντο",
+     "δῶρα",
+     "τῷ",
+     "βασιλεῖ",
+     "οἴσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t3",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "The tyrant threatened that he would destroy the whole city.",
+    "answer": "ὁ τύραννος ἠπείλησε τὴν πόλιν ὅλην ἐκτρίψειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "ἠπείλησε",
+     "τὴν",
+     "πόλιν",
+     "ὅλην",
+     "ἐκτρίψειν"
+    ]
+   },
+   {
+    "prompt": "They threatened to kill everyone who had been caught in the city.",
+    "answer": "ἠπείλησαν ἀποκτεῖναι ἅπαντας τοὺς ἐν τῇ πόλει ληφθέντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠπείλησαν",
+     "ἀποκτεῖναι",
+     "ἅπαντας",
+     "τοὺς",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ληφθέντας"
+    ]
+   },
+   {
+    "prompt": "The enemy kept threatening that they would burn the ships.",
+    "answer": "οἱ πολέμιοι ἠπείλουν τὰς ναῦς καύσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ἠπείλουν",
+     "τὰς",
+     "ναῦς",
+     "καύσειν"
+    ]
+   },
+   {
+    "prompt": "Growing angry, he threatened that he would lead the army away.",
+    "answer": "ὀργιζόμενος ἠπείλησε τὸ στράτευμα ἀπάξειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀργιζόμενος",
+     "ἠπείλησε",
+     "τὸ",
+     "στράτευμα",
+     "ἀπάξειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t4",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "The jurors have sworn that they will give judgment justly.",
+    "answer": "οἱ δικασταὶ ὀμωμόκασι δικαίως δικάσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ὀμωμόκασι",
+     "δικαίως",
+     "δικάσειν"
+    ]
+   },
+   {
+    "prompt": "He swore that he had said nothing about the money.",
+    "answer": "ὤμοσε μηδὲν περὶ τῶν χρημάτων εἰρηκέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤμοσε",
+     "μηδὲν",
+     "περὶ",
+     "τῶν",
+     "χρημάτων",
+     "εἰρηκέναι"
+    ]
+   },
+   {
+    "prompt": "They compelled the king to swear that he would give back the land.",
+    "answer": "ἠνάγκασαν τὸν βασιλέα ὀμόσαι τὴν χώραν ἀποδώσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠνάγκασαν",
+     "τὸν",
+     "βασιλέα",
+     "ὀμόσαι",
+     "τὴν",
+     "χώραν",
+     "ἀποδώσειν"
+    ]
+   },
+   {
+    "prompt": "The old men swore that they had not drunk the wine.",
+    "answer": "οἱ γέροντες ὤμοσαν τὸν οἶνον μὴ πιεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "ὤμοσαν",
+     "τὸν",
+     "οἶνον",
+     "μὴ",
+     "πιεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t5",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "It is likely that we shall prevail over the barbarians.",
+    "answer": "εἰκός ἐστιν ἡμᾶς τῶν βαρβάρων ἐπικρατῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰκός",
+     "ἐστιν",
+     "ἡμᾶς",
+     "τῶν",
+     "βαρβάρων",
+     "ἐπικρατῆσαι"
+    ]
+   },
+   {
+    "prompt": "It is not likely that they will have a surplus of ships.",
+    "answer": "οὐκ εἰκός ἐστιν αὐτοὺς περιουσίαν νεῶν ἕξειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "εἰκός",
+     "ἐστιν",
+     "αὐτοὺς",
+     "περιουσίαν",
+     "νεῶν",
+     "ἕξειν"
+    ]
+   },
+   {
+    "prompt": "It was probable that no one would wish to remain with him.",
+    "answer": "εἰκὸς ἦν οὐδένα σὺν αὐτῷ μένειν βουλήσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰκὸς",
+     "ἦν",
+     "οὐδένα",
+     "σὺν",
+     "αὐτῷ",
+     "μένειν",
+     "βουλήσεσθαι"
+    ]
+   },
+   {
+    "prompt": "He expected to be able to rule the whole country.",
+    "answer": "ἤλπιζε δυνατὸς εἶναι πάσης τῆς χώρας ἄρχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤλπιζε",
+     "δυνατὸς",
+     "εἶναι",
+     "πάσης",
+     "τῆς",
+     "χώρας",
+     "ἄρχειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t6",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "We have not come together in order to make war on the king.",
+    "answer": "οὐ συνήλθομεν ὡς βασιλεῖ πολεμήσοντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "συνήλθομεν",
+     "ὡς",
+     "βασιλεῖ",
+     "πολεμήσοντες"
+    ]
+   },
+   {
+    "prompt": "They sent messengers to announce the capture of the fort.",
+    "answer": "ἔπεμψαν ἀγγέλους ἀγγελοῦντας τὴν τοῦ φρουρίου λῆψιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπεμψαν",
+     "ἀγγέλους",
+     "ἀγγελοῦντας",
+     "τὴν",
+     "τοῦ",
+     "φρουρίου",
+     "λῆψιν"
+    ]
+   },
+   {
+    "prompt": "Being eager to gain control of the sea, they built many ships.",
+    "answer": "ἐφιέμενοι τῆς θαλάττης ἄρξειν πολλὰς ναῦς ἐποιήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφιέμενοι",
+     "τῆς",
+     "θαλάττης",
+     "ἄρξειν",
+     "πολλὰς",
+     "ναῦς",
+     "ἐποιήσαντο"
+    ]
+   },
+   {
+    "prompt": "They intended to carry on the war zealously.",
+    "answer": "τὸν πόλεμον διενοοῦντο προθύμως οἴσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "πόλεμον",
+     "διενοοῦντο",
+     "προθύμως",
+     "οἴσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t7",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
     "prompt": "Being in hope that he would capture the city, the general advanced against the enemy.",
     "answer": "ἐν ἐλπίδι ὢν τὴν πόλιν αἱρήσειν ὁ στρατηγὸς ἐπὶ τοὺς πολεμίους ἐχώρησεν.",
     "kind": "translate-en-grc",
@@ -67,7 +427,7 @@
   ]
  },
  {
-  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t2",
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t8",
   "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
   "questions": [
    {
@@ -127,7 +487,7 @@
   ]
  },
  {
-  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t3",
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t9",
   "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
   "questions": [
    {
@@ -189,7 +549,7 @@
   ]
  },
  {
-  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t4",
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t10",
   "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
   "questions": [
    {
@@ -253,7 +613,7 @@
   ]
  },
  {
-  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t5",
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t11",
   "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
   "questions": [
    {
@@ -314,7 +674,7 @@
   ]
  },
  {
-  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t6",
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-t12",
   "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
   "questions": [
    {

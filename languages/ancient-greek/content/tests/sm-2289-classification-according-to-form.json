@@ -1,0 +1,410 @@
+[
+ {
+  "id": "sm-2289-classification-according-to-form-t1",
+  "sectionId": "sm-2289-classification-according-to-form",
+  "questions": [
+   {
+    "prompt": "If the shepherd guards the flock, the wolves do not attack.",
+    "answer": "εἰ ὁ ποιμὴν τὴν ἀγέλην φυλάττει, οἱ λύκοι οὐκ ἐπιτίθενται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ποιμὴν",
+     "τὴν",
+     "ἀγέλην",
+     "φυλάττει",
+     "οἱ",
+     "λύκοι",
+     "οὐκ",
+     "ἐπιτίθενται"
+    ]
+   },
+   {
+    "prompt": "If you send the ships to Cyzicus, we shall prevail over the enemy.",
+    "answer": "ἐὰν τὰς ναῦς εἰς Κύζικον συμπέμψῃς, τῶν πολεμίων ἐπικρατήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὰς",
+     "ναῦς",
+     "εἰς",
+     "Κύζικον",
+     "συμπέμψῃς",
+     "τῶν",
+     "πολεμίων",
+     "ἐπικρατήσομεν"
+    ]
+   },
+   {
+    "prompt": "If anyone should plot against the king, he would pay the penalty.",
+    "answer": "εἰ τις τῷ βασιλεῖ ἐπιβουλεύοι, δίκην ἂν ἀποτίνοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τις",
+     "τῷ",
+     "βασιλεῖ",
+     "ἐπιβουλεύοι",
+     "δίκην",
+     "ἂν",
+     "ἀποτίνοι"
+    ]
+   },
+   {
+    "prompt": "If you were pouring a libation to the gods, we would be rejoicing.",
+    "answer": "εἰ τοῖς θεοῖς ἔσπενδες, ἐχαίρομεν ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοῖς",
+     "θεοῖς",
+     "ἔσπενδες",
+     "ἐχαίρομεν",
+     "ἄν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2289-classification-according-to-form-t2",
+  "sectionId": "sm-2289-classification-according-to-form",
+  "questions": [
+   {
+    "prompt": "If the general had seized the opportunity, he would have taken the city.",
+    "answer": "εἰ ὁ στρατηγὸς τὸν καιρὸν ἔλαβεν, τὴν πόλιν ἂν εἷλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸν",
+     "καιρὸν",
+     "ἔλαβεν",
+     "τὴν",
+     "πόλιν",
+     "ἂν",
+     "εἷλεν"
+    ]
+   },
+   {
+    "prompt": "Whenever the boy learns music, he becomes better.",
+    "answer": "ἐὰν ὁ παῖς μουσικὴν μανθάνῃ, βελτίων γίγνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "παῖς",
+     "μουσικὴν",
+     "μανθάνῃ",
+     "βελτίων",
+     "γίγνεται"
+    ]
+   },
+   {
+    "prompt": "Whenever the soldiers went up into the plain, they suffered many hardships.",
+    "answer": "εἰ οἱ στρατιῶται εἰς τὸ πεδίον ἀναβαῖεν, πολλὰ πάθη ἔπασχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "στρατιῶται",
+     "εἰς",
+     "τὸ",
+     "πεδίον",
+     "ἀναβαῖεν",
+     "πολλὰ",
+     "πάθη",
+     "ἔπασχον"
+    ]
+   },
+   {
+    "prompt": "If we share in the spoils, we shall honor the leader.",
+    "answer": "ἐὰν τῶν λαφύρων μεταλάβωμεν, τὸν ἡγεμόνα τιμήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τῶν",
+     "λαφύρων",
+     "μεταλάβωμεν",
+     "τὸν",
+     "ἡγεμόνα",
+     "τιμήσομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2289-classification-according-to-form-t3",
+  "sectionId": "sm-2289-classification-according-to-form",
+  "questions": [
+   {
+    "prompt": "If the timber is dry, the fire burns swiftly.",
+    "answer": "εἰ ἡ ὕλη ξηρά ἐστιν, τὸ πῦρ ταχέως καίεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "ὕλη",
+     "ξηρά",
+     "ἐστιν",
+     "τὸ",
+     "πῦρ",
+     "ταχέως",
+     "καίεται"
+    ]
+   },
+   {
+    "prompt": "If the traveler should go through the country, he would see many marvels.",
+    "answer": "εἰ ὁ ὁδοιπόρος τὴν χώραν διεξέλθοι, πολλὰ ἂν θαυμάσια ἴδοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ὁδοιπόρος",
+     "τὴν",
+     "χώραν",
+     "διεξέλθοι",
+     "πολλὰ",
+     "ἂν",
+     "θαυμάσια",
+     "ἴδοι"
+    ]
+   },
+   {
+    "prompt": "If he were wielding the spear well, he would be frightening the enemy.",
+    "answer": "εἰ τὸ δόρυ καλῶς ἐνώμα, τοὺς πολεμίους ἂν ἐφόβει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸ",
+     "δόρυ",
+     "καλῶς",
+     "ἐνώμα",
+     "τοὺς",
+     "πολεμίους",
+     "ἂν",
+     "ἐφόβει"
+    ]
+   },
+   {
+    "prompt": "If the Abydene retreats, we shall pursue him.",
+    "answer": "ἐὰν ὁ Ἀβυδηνὸς χάζηται, διώξομεν αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "Ἀβυδηνὸς",
+     "χάζηται",
+     "διώξομεν",
+     "αὐτόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2289-classification-according-to-form-t4",
+  "sectionId": "sm-2289-classification-according-to-form",
+  "questions": [
+   {
+    "prompt": "If you had guarded the pass, the barbarians would not have crossed.",
+    "answer": "εἰ τὴν πάροδον ἐφύλαξας, οἱ βάρβαροι οὐκ ἂν διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὴν",
+     "πάροδον",
+     "ἐφύλαξας",
+     "οἱ",
+     "βάρβαροι",
+     "οὐκ",
+     "ἂν",
+     "διέβησαν"
+    ]
+   },
+   {
+    "prompt": "Whenever we make a truce, the citizens rejoice.",
+    "answer": "ἐὰν σπονδὰς ποιώμεθα, οἱ πολῖται χαίρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "σπονδὰς",
+     "ποιώμεθα",
+     "οἱ",
+     "πολῖται",
+     "χαίρουσιν"
+    ]
+   },
+   {
+    "prompt": "If the poet were to recount the expedition, all would listen.",
+    "answer": "εἰ ὁ ποιητὴς τὴν ἀνάβασιν διηγοῖτο, πάντες ἂν ἀκούοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ποιητὴς",
+     "τὴν",
+     "ἀνάβασιν",
+     "διηγοῖτο",
+     "πάντες",
+     "ἂν",
+     "ἀκούοιεν"
+    ]
+   },
+   {
+    "prompt": "If the sandals are new, the child walks easily.",
+    "answer": "εἰ τὰ πέδιλα καινά ἐστιν, τὸ παιδίον ῥᾳδίως βαδίζει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰ",
+     "πέδιλα",
+     "καινά",
+     "ἐστιν",
+     "τὸ",
+     "παιδίον",
+     "ῥᾳδίως",
+     "βαδίζει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2289-classification-according-to-form-t5",
+  "sectionId": "sm-2289-classification-according-to-form",
+  "questions": [
+   {
+    "prompt": "If the shepherds prevail over the robbers, they will save the flock.",
+    "answer": "ἐὰν οἱ ποιμένες τῶν λῃστῶν ἐπικρατήσωσιν, τὴν ἀγέλην σώσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "ποιμένες",
+     "τῶν",
+     "λῃστῶν",
+     "ἐπικρατήσωσιν",
+     "τὴν",
+     "ἀγέλην",
+     "σώσουσιν"
+    ]
+   },
+   {
+    "prompt": "If the allies were sending help, we would not be afraid.",
+    "answer": "εἰ οἱ σύμμαχοι βοήθειαν ἔπεμπον, οὐκ ἂν ἐφοβούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "σύμμαχοι",
+     "βοήθειαν",
+     "ἔπεμπον",
+     "οὐκ",
+     "ἂν",
+     "ἐφοβούμεθα"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy attacked, the guards fled to the hill.",
+    "answer": "εἰ οἱ πολέμιοι ἐπίθοιντο, οἱ φύλακες ἐπὶ τὸν λόφον ἔφευγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "ἐπίθοιντο",
+     "φύλακες",
+     "ἐπὶ",
+     "τὸν",
+     "λόφον",
+     "ἔφευγον"
+    ]
+   },
+   {
+    "prompt": "If the king had paid the penalty, the war would have ceased.",
+    "answer": "εἰ ὁ βασιλεὺς δίκην ἀπέτεισεν, ὁ πόλεμος ἂν ἐπαύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "βασιλεὺς",
+     "δίκην",
+     "ἀπέτεισεν",
+     "πόλεμος",
+     "ἂν",
+     "ἐπαύσατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2289-classification-according-to-form-t6",
+  "sectionId": "sm-2289-classification-according-to-form",
+  "questions": [
+   {
+    "prompt": "If the wood is full of game, the hunters remain there.",
+    "answer": "εἰ ἡ ὕλη θηρίων πλήρης ἐστίν, οἱ θηρευταὶ ἐκεῖ μένουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "ὕλη",
+     "θηρίων",
+     "πλήρης",
+     "ἐστίν",
+     "οἱ",
+     "θηρευταὶ",
+     "ἐκεῖ",
+     "μένουσιν"
+    ]
+   },
+   {
+    "prompt": "If you should honor the gods, you would live happily.",
+    "answer": "εἰ τοὺς θεοὺς τιμῴης, εὐδαιμόνως ἂν ζῴης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῴης",
+     "εὐδαιμόνως",
+     "ἂν",
+     "ζῴης"
+    ]
+   },
+   {
+    "prompt": "If the general leads the army up the river, we shall follow.",
+    "answer": "ἐὰν ὁ στρατηγὸς τὸν στρατὸν ἀνὰ τὸν ποταμὸν ἄγῃ, ἑψόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸν",
+     "στρατὸν",
+     "ἀνὰ",
+     "ποταμὸν",
+     "ἄγῃ",
+     "ἑψόμεθα"
+    ]
+   },
+   {
+    "prompt": "Whenever the orator speaks the truth, the judges trust him.",
+    "answer": "ἐὰν ὁ ῥήτωρ τὰ ἀληθῆ λέγῃ, οἱ δικασταὶ αὐτῷ πιστεύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "ῥήτωρ",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγῃ",
+     "οἱ",
+     "δικασταὶ",
+     "αὐτῷ",
+     "πιστεύουσιν"
+    ]
+   }
+  ]
+ }
+]

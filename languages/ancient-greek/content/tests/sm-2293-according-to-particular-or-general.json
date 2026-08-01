@@ -1,0 +1,397 @@
+[
+ {
+  "id": "sm-2293-according-to-particular-or-general-t1",
+  "sectionId": "sm-2293-according-to-particular-or-general",
+  "questions": [
+   {
+    "prompt": "Whenever the general leads the soldiers well, they follow willingly.",
+    "answer": "ἐὰν ὁ στρατηγὸς τοὺς στρατιώτας καλῶς ἄγῃ, ἑκόντες ἕπονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "στρατηγός",
+     "τούς",
+     "στρατιώτας",
+     "καλῶς",
+     "ἄγῃ",
+     "ἑκόντες",
+     "ἕπονται"
+    ]
+   },
+   {
+    "prompt": "If anyone honors the gods, the gods too honor him.",
+    "answer": "ἐάν τις τοὺς θεοὺς τιμᾷ, καὶ οἱ θεοὶ αὐτὸν τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "τούς",
+     "θεούς",
+     "τιμᾷ",
+     "καί",
+     "οἱ",
+     "θεοί",
+     "αὐτόν",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever the doctor heals the sick, the citizens praise him.",
+    "answer": "ἐὰν ὁ ἰατρὸς τοὺς νοσοῦντας ἰᾶται, οἱ πολῖται αὐτὸν ἐπαινοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "ἰατρός",
+     "τούς",
+     "νοσοῦντας",
+     "ἰᾶται",
+     "οἱ",
+     "πολῖται",
+     "αὐτόν",
+     "ἐπαινοῦσιν"
+    ]
+   },
+   {
+    "prompt": "If the enemy attack the city, we defend ourselves bravely.",
+    "answer": "ἐὰν οἱ πολέμιοι τῇ πόλει ἐπιτιθῶνται, ἀνδρείως ἀμυνόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "πολέμιοι",
+     "τῇ",
+     "πόλει",
+     "ἐπιτιθῶνται",
+     "ἀνδρείως",
+     "ἀμυνόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2293-according-to-particular-or-general-t2",
+  "sectionId": "sm-2293-according-to-particular-or-general",
+  "questions": [
+   {
+    "prompt": "Whenever the soldiers saw the king, they cheered.",
+    "answer": "εἰ οἱ στρατιῶται τὸν βασιλέα ἴδοιεν, ἀνεβόων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "στρατιῶται",
+     "τόν",
+     "βασιλέα",
+     "ἴδοιεν",
+     "ἀνεβόων"
+    ]
+   },
+   {
+    "prompt": "Whenever a citizen spoke the truth, Socrates praised him.",
+    "answer": "εἰ πολίτης τὰ ἀληθῆ λέγοι, ὁ Σωκράτης αὐτὸν ἐπῄνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "πολίτης",
+     "τά",
+     "ἀληθῆ",
+     "λέγοι",
+     "ὁ",
+     "Σωκράτης",
+     "αὐτόν",
+     "ἐπῄνει"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy approached, the guards fled.",
+    "answer": "εἰ οἱ πολέμιοι προσέλθοιεν, οἱ φύλακες ἔφευγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "προσέλθοιεν",
+     "φύλακες",
+     "ἔφευγον"
+    ]
+   },
+   {
+    "prompt": "Whenever Cyrus gave gifts, the friends rejoiced.",
+    "answer": "εἰ ὁ Κῦρος δῶρα διδοίη, οἱ φίλοι ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Κῦρος",
+     "δῶρα",
+     "διδοίη",
+     "οἱ",
+     "φίλοι",
+     "ἔχαιρον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2293-according-to-particular-or-general-t3",
+  "sectionId": "sm-2293-according-to-particular-or-general",
+  "questions": [
+   {
+    "prompt": "If the gods exist, they care for men.",
+    "answer": "εἰ θεοί εἰσιν, ἀνθρώπων ἐπιμελοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "θεοί",
+     "εἰσιν",
+     "ἀνθρώπων",
+     "ἐπιμελοῦνται"
+    ]
+   },
+   {
+    "prompt": "If Xenophon wrote these things, he speaks the truth.",
+    "answer": "εἰ ὁ Ξενοφῶν ταῦτα ἔγραψεν, ἀληθῆ λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Ξενοφῶν",
+     "ταῦτα",
+     "ἔγραψεν",
+     "ἀληθῆ",
+     "λέγει"
+    ]
+   },
+   {
+    "prompt": "If the general fell in the battle, the army is now in danger.",
+    "answer": "εἰ ὁ στρατηγὸς ἐν τῇ μάχῃ ἔπεσεν, τὸ στράτευμα νῦν κινδυνεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγός",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἔπεσεν",
+     "τό",
+     "στράτευμα",
+     "νῦν",
+     "κινδυνεύει"
+    ]
+   },
+   {
+    "prompt": "If you are wise, you honor your parents.",
+    "answer": "εἰ σοφὸς εἶ, τοὺς γονέας τιμᾷς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοφός",
+     "εἶ",
+     "τούς",
+     "γονέας",
+     "τιμᾷς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2293-according-to-particular-or-general-t4",
+  "sectionId": "sm-2293-according-to-particular-or-general",
+  "questions": [
+   {
+    "prompt": "Whenever a storm arises, the sailors are afraid.",
+    "answer": "ἐὰν χειμὼν γίγνηται, οἱ ναῦται φοβοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "χειμών",
+     "γίγνηται",
+     "οἱ",
+     "ναῦται",
+     "φοβοῦνται"
+    ]
+   },
+   {
+    "prompt": "If anyone flees to the temple, no one harms him.",
+    "answer": "ἐάν τις εἰς τὸ ἱερὸν καταφεύγῃ, οὐδεὶς αὐτὸν βλάπτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "εἰς",
+     "τό",
+     "ἱερόν",
+     "καταφεύγῃ",
+     "οὐδείς",
+     "αὐτόν",
+     "βλάπτει"
+    ]
+   },
+   {
+    "prompt": "Whenever the young men exercise, they become stronger.",
+    "answer": "ἐὰν οἱ νεανίαι γυμνάζωνται, ἰσχυρότεροι γίγνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "νεανίαι",
+     "γυμνάζωνται",
+     "ἰσχυρότεροι",
+     "γίγνονται"
+    ]
+   },
+   {
+    "prompt": "If the river rises, the farmers leave the fields.",
+    "answer": "ἐὰν ὁ ποταμὸς αὐξάνηται, οἱ γεωργοὶ τοὺς ἀγροὺς λείπουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "ποταμός",
+     "αὐξάνηται",
+     "οἱ",
+     "γεωργοί",
+     "τούς",
+     "ἀγρούς",
+     "λείπουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2293-according-to-particular-or-general-t5",
+  "sectionId": "sm-2293-according-to-particular-or-general",
+  "questions": [
+   {
+    "prompt": "Whenever Cyrus wished, he assembled the soldiers.",
+    "answer": "εἰ ὁ Κῦρος βούλοιτο, τοὺς στρατιώτας συνέλεγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Κῦρος",
+     "βούλοιτο",
+     "τούς",
+     "στρατιώτας",
+     "συνέλεγεν"
+    ]
+   },
+   {
+    "prompt": "Whenever a soldier disobeyed, the general punished him.",
+    "answer": "εἰ στρατιώτης ἀπειθοίη, ὁ στρατηγὸς αὐτὸν ἐκόλαζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "στρατιώτης",
+     "ἀπειθοίη",
+     "ὁ",
+     "στρατηγός",
+     "αὐτόν",
+     "ἐκόλαζεν"
+    ]
+   },
+   {
+    "prompt": "Whenever we came to the village, the inhabitants received us kindly.",
+    "answer": "εἰ εἰς τὴν κώμην ἀφικοίμεθα, οἱ ἔνοικοι φιλοφρόνως ἡμᾶς ἐδέχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "εἰς",
+     "τήν",
+     "κώμην",
+     "ἀφικοίμεθα",
+     "οἱ",
+     "ἔνοικοι",
+     "φιλοφρόνως",
+     "ἡμᾶς",
+     "ἐδέχοντο"
+    ]
+   },
+   {
+    "prompt": "Whenever the sun shone, the children played in the agora.",
+    "answer": "εἰ ὁ ἥλιος λάμποι, οἱ παῖδες ἐν τῇ ἀγορᾷ ἔπαιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἥλιος",
+     "λάμποι",
+     "οἱ",
+     "παῖδες",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἔπαιζον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2293-according-to-particular-or-general-t6",
+  "sectionId": "sm-2293-according-to-particular-or-general",
+  "questions": [
+   {
+    "prompt": "If the enemy attack, we shall guard the walls.",
+    "answer": "ἐὰν οἱ πολέμιοι ἐπίωσιν, τὰ τείχη φυλάξομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "πολέμιοι",
+     "ἐπίωσιν",
+     "τά",
+     "τείχη",
+     "φυλάξομεν"
+    ]
+   },
+   {
+    "prompt": "If you find the letter, you will bring it to me.",
+    "answer": "ἐὰν τὴν ἐπιστολὴν εὕρῃς, ἐμοὶ αὐτὴν οἴσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τήν",
+     "ἐπιστολήν",
+     "εὕρῃς",
+     "ἐμοί",
+     "αὐτήν",
+     "οἴσεις"
+    ]
+   },
+   {
+    "prompt": "Whenever the assembly gathers, the citizens deliberate about war.",
+    "answer": "ἐὰν ἡ ἐκκλησία ἀθροίζηται, οἱ πολῖται περὶ πολέμου βουλεύονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἡ",
+     "ἐκκλησία",
+     "ἀθροίζηται",
+     "οἱ",
+     "πολῖται",
+     "περί",
+     "πολέμου",
+     "βουλεύονται"
+    ]
+   },
+   {
+    "prompt": "If the ambassadors persuade the king, there will be peace.",
+    "answer": "ἐὰν οἱ πρέσβεις τὸν βασιλέα πείθωσιν, εἰρήνη ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "πρέσβεις",
+     "τόν",
+     "βασιλέα",
+     "πείθωσιν",
+     "εἰρήνη",
+     "ἔσται"
+    ]
+   }
+  ]
+ }
+]

@@ -4,6 +4,380 @@
   "sectionId": "sm-2016-infinitive-as-object-in-indirect",
   "questions": [
    {
+    "prompt": "The messenger says that the enemy are fleeing towards the mountain.",
+    "answer": "ὁ ἄγγελος τοὺς πολεμίους πρὸς τὸ ὄρος φεύγειν φησίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τοὺς",
+     "πολεμίους",
+     "πρὸς",
+     "τὸ",
+     "ὄρος",
+     "φεύγειν",
+     "φησίν"
+    ]
+   },
+   {
+    "prompt": "The general is said to have conquered the Boeotians in battle.",
+    "answer": "ὁ στρατηγὸς λέγεται τοὺς Βοιωτίους μάχῃ νικῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "λέγεται",
+     "τοὺς",
+     "Βοιωτίους",
+     "μάχῃ",
+     "νικῆσαι"
+    ]
+   },
+   {
+    "prompt": "The prisoners confess that they wronged the city.",
+    "answer": "οἱ αἰχμάλωτοι ὁμολογοῦσι τὴν πόλιν ἀδικῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ὁμολογοῦσι",
+     "τὴν",
+     "πόλιν",
+     "ἀδικῆσαι"
+    ]
+   },
+   {
+    "prompt": "The old man swore that he had never seen the priest.",
+    "answer": "ὁ γεραιὸς ὤμοσε τὸν ἱερέα οὐδεπώποτε ἰδεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεραιὸς",
+     "ὤμοσε",
+     "τὸν",
+     "ἱερέα",
+     "οὐδεπώποτε",
+     "ἰδεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2016-infinitive-as-object-in-indirect-t2",
+  "sectionId": "sm-2016-infinitive-as-object-in-indirect",
+  "questions": [
+   {
+    "prompt": "I think that virtue is more profitable than wealth.",
+    "answer": "νομίζω τὴν ἀρετὴν κερδαλεωτέραν εἶναι τοῦ πλούτου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "τὴν",
+     "ἀρετὴν",
+     "κερδαλεωτέραν",
+     "εἶναι",
+     "τοῦ",
+     "πλούτου"
+    ]
+   },
+   {
+    "prompt": "The Athenians thought that the gods were fighting on their side.",
+    "answer": "οἱ Ἀθηναῖοι τοὺς θεοὺς ἑαυτοῖς συμμαχεῖν ἐνόμιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τοὺς",
+     "θεοὺς",
+     "ἑαυτοῖς",
+     "συμμαχεῖν",
+     "ἐνόμιζον"
+    ]
+   },
+   {
+    "prompt": "Socrates believed that ignorance was very near to madness.",
+    "answer": "ὁ Σωκράτης τὴν ἀμαθίαν ἐγγυτάτω μανίας εἶναι ἡγεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "τὴν",
+     "ἀμαθίαν",
+     "ἐγγυτάτω",
+     "μανίας",
+     "εἶναι",
+     "ἡγεῖτο"
+    ]
+   },
+   {
+    "prompt": "We hope that the ships will arrive before night.",
+    "answer": "ἐλπίζομεν τὰς ναῦς πρὸ νυκτὸς ἥξειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλπίζομεν",
+     "τὰς",
+     "ναῦς",
+     "πρὸ",
+     "νυκτὸς",
+     "ἥξειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2016-infinitive-as-object-in-indirect-t3",
+  "sectionId": "sm-2016-infinitive-as-object-in-indirect",
+  "questions": [
+   {
+    "prompt": "The king promised that he would send gifts to the allies.",
+    "answer": "ὁ βασιλεὺς ὑπέσχετο δῶρα τοῖς συμμάχοις πέμψειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "ὑπέσχετο",
+     "δῶρα",
+     "τοῖς",
+     "συμμάχοις",
+     "πέμψειν"
+    ]
+   },
+   {
+    "prompt": "The enemy threatened that they would burn the fields.",
+    "answer": "οἱ πολέμιοι ἠπείλησαν τοὺς ἀγροὺς καύσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ἠπείλησαν",
+     "τοὺς",
+     "ἀγροὺς",
+     "καύσειν"
+    ]
+   },
+   {
+    "prompt": "I hope that I shall persuade the judges with the truth.",
+    "answer": "ἐλπίζω τοὺς δικαστὰς τῇ ἀληθείᾳ πείσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλπίζω",
+     "τοὺς",
+     "δικαστὰς",
+     "τῇ",
+     "ἀληθείᾳ",
+     "πείσειν"
+    ]
+   },
+   {
+    "prompt": "They swore that they would guard the walls faithfully.",
+    "answer": "ὤμοσαν τὰ τείχη πιστῶς φυλάξειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤμοσαν",
+     "τὰ",
+     "τείχη",
+     "πιστῶς",
+     "φυλάξειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2016-infinitive-as-object-in-indirect-t4",
+  "sectionId": "sm-2016-infinitive-as-object-in-indirect",
+  "questions": [
+   {
+    "prompt": "The guides say that there is no other road through the mountains.",
+    "answer": "οἱ ἡγεμόνες οὔ φασιν ἄλλην ὁδὸν διὰ τῶν ὀρῶν εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἡγεμόνες",
+     "οὔ",
+     "φασιν",
+     "ἄλλην",
+     "ὁδὸν",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "No one said that he knew the man who had fled.",
+    "answer": "οὐδεὶς ἔφασκε γιγνώσκειν τὸν ἄνδρα τὸν πεφευγότα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἔφασκε",
+     "γιγνώσκειν",
+     "τὸν",
+     "ἄνδρα",
+     "πεφευγότα"
+    ]
+   },
+   {
+    "prompt": "The woman denied that she had taken the sacred cups.",
+    "answer": "ἡ γυνὴ ἀπηρνήσατο τὰς ἱερὰς φιάλας λαβεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "ἀπηρνήσατο",
+     "τὰς",
+     "ἱερὰς",
+     "φιάλας",
+     "λαβεῖν"
+    ]
+   },
+   {
+    "prompt": "They assert that those who have died are not unhappy.",
+    "answer": "τοὺς τεθνηκότας οὔ φασιν ἀθλίους εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "τεθνηκότας",
+     "οὔ",
+     "φασιν",
+     "ἀθλίους",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2016-infinitive-as-object-in-indirect-t5",
+  "sectionId": "sm-2016-infinitive-as-object-in-indirect",
+  "questions": [
+   {
+    "prompt": "I perceive that the young men are neglecting their studies.",
+    "answer": "αἰσθάνομαι τοὺς νεανίας τῶν μαθημάτων ἀμελεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθάνομαι",
+     "τοὺς",
+     "νεανίας",
+     "τῶν",
+     "μαθημάτων",
+     "ἀμελεῖν"
+    ]
+   },
+   {
+    "prompt": "The sophist pretends that he knows all things.",
+    "answer": "ὁ σοφιστὴς προσποιεῖται πάντα ἐπίστασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφιστὴς",
+     "προσποιεῖται",
+     "πάντα",
+     "ἐπίστασθαι"
+    ]
+   },
+   {
+    "prompt": "The citizens dispute that the law is just.",
+    "answer": "οἱ πολῖται ἀμφισβητοῦσι τὸν νόμον δίκαιον εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἀμφισβητοῦσι",
+     "τὸν",
+     "νόμον",
+     "δίκαιον",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "We learned that the general had been betrayed by his friends.",
+    "answer": "ἐπυθόμεθα τὸν στρατηγὸν ὑπὸ τῶν φίλων προδοθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπυθόμεθα",
+     "τὸν",
+     "στρατηγὸν",
+     "ὑπὸ",
+     "τῶν",
+     "φίλων",
+     "προδοθῆναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2016-infinitive-as-object-in-indirect-t6",
+  "sectionId": "sm-2016-infinitive-as-object-in-indirect",
+  "questions": [
+   {
+    "prompt": "He said that the city would have been saved, if the allies had come.",
+    "answer": "ἔφη τὴν πόλιν ἂν σωθῆναι, εἰ οἱ σύμμαχοι ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "τὴν",
+     "πόλιν",
+     "ἂν",
+     "σωθῆναι",
+     "εἰ",
+     "οἱ",
+     "σύμμαχοι",
+     "ἦλθον"
+    ]
+   },
+   {
+    "prompt": "I think that the wise man would never do such things.",
+    "answer": "νομίζω τὸν σοφὸν οὐκ ἄν ποτε τοιαῦτα πρᾶξαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "τὸν",
+     "σοφὸν",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "τοιαῦτα",
+     "πρᾶξαι"
+    ]
+   },
+   {
+    "prompt": "The old man, though present, denied that he had heard the herald.",
+    "answer": "ὁ γέρων καίπερ παρὼν ἠρνήσατο τοῦ κήρυκος ἀκοῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "καίπερ",
+     "παρὼν",
+     "ἠρνήσατο",
+     "τοῦ",
+     "κήρυκος",
+     "ἀκοῦσαι"
+    ]
+   },
+   {
+    "prompt": "When the enemy had departed, the scouts said that the plain was empty.",
+    "answer": "τῶν πολεμίων ἀπελθόντων, οἱ σκοποὶ τὸ πεδίον ἔρημον εἶναι ἔφασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἀπελθόντων",
+     "οἱ",
+     "σκοποὶ",
+     "τὸ",
+     "πεδίον",
+     "ἔρημον",
+     "εἶναι",
+     "ἔφασαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2016-infinitive-as-object-in-indirect-t7",
+  "sectionId": "sm-2016-infinitive-as-object-in-indirect",
+  "questions": [
+   {
     "prompt": "The messenger said that the enemy were already fleeing toward the gates.",
     "answer": "ὁ ἄγγελος ἔφη τοὺς πολεμίους ἤδη πρὸς τὰς πύλας φεύγειν.",
     "kind": "translate-en-grc",
@@ -69,7 +443,7 @@
   ]
  },
  {
-  "id": "sm-2016-infinitive-as-object-in-indirect-t2",
+  "id": "sm-2016-infinitive-as-object-in-indirect-t8",
   "sectionId": "sm-2016-infinitive-as-object-in-indirect",
   "questions": [
    {
@@ -127,7 +501,7 @@
   ]
  },
  {
-  "id": "sm-2016-infinitive-as-object-in-indirect-t3",
+  "id": "sm-2016-infinitive-as-object-in-indirect-t9",
   "sectionId": "sm-2016-infinitive-as-object-in-indirect",
   "questions": [
    {
@@ -189,7 +563,7 @@
   ]
  },
  {
-  "id": "sm-2016-infinitive-as-object-in-indirect-t4",
+  "id": "sm-2016-infinitive-as-object-in-indirect-t10",
   "sectionId": "sm-2016-infinitive-as-object-in-indirect",
   "questions": [
    {
@@ -252,7 +626,7 @@
   ]
  },
  {
-  "id": "sm-2016-infinitive-as-object-in-indirect-t5",
+  "id": "sm-2016-infinitive-as-object-in-indirect-t11",
   "sectionId": "sm-2016-infinitive-as-object-in-indirect",
   "questions": [
    {
@@ -315,7 +689,7 @@
   ]
  },
  {
-  "id": "sm-2016-infinitive-as-object-in-indirect-t6",
+  "id": "sm-2016-infinitive-as-object-in-indirect-t12",
   "sectionId": "sm-2016-infinitive-as-object-in-indirect",
   "questions": [
    {

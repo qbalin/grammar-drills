@@ -4,6 +4,397 @@
   "sectionId": "sm-1835-imperative",
   "questions": [
    {
+    "prompt": "When the enemy are approaching, guard the gates and do not flee.",
+    "answer": "προσιόντων τῶν πολεμίων, φυλάττετε τὰς πύλας καὶ μὴ φεύγετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσιόντων",
+     "τῶν",
+     "πολεμίων",
+     "φυλάττετε",
+     "τὰς",
+     "πύλας",
+     "καὶ",
+     "μὴ",
+     "φεύγετε"
+    ]
+   },
+   {
+    "prompt": "Send the messenger to the general who commands the army.",
+    "answer": "πέμψατε τὸν ἄγγελον πρὸς τὸν στρατηγὸν τὸν τοῦ στρατοῦ ἡγεμονεύοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμψατε",
+     "τὸν",
+     "ἄγγελον",
+     "πρὸς",
+     "στρατηγὸν",
+     "τοῦ",
+     "στρατοῦ",
+     "ἡγεμονεύοντα"
+    ]
+   },
+   {
+    "prompt": "Drink the wine, friends, and rejoice, for the war has ceased.",
+    "answer": "πίνετε τὸν οἶνον, ὦ φίλοι, καὶ χαίρετε· πέπαυται γὰρ ὁ πόλεμος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πίνετε",
+     "τὸν",
+     "οἶνον",
+     "ὦ",
+     "φίλοι",
+     "καὶ",
+     "χαίρετε",
+     "πέπαυται",
+     "γὰρ",
+     "ὁ",
+     "πόλεμος"
+    ]
+   },
+   {
+    "prompt": "Do not trust those who promise much but accomplish little.",
+    "answer": "μὴ πιστεύετε τοῖς πολλὰ μὲν ὑπισχνουμένοις, ὀλίγα δὲ ἐπιτελοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "πιστεύετε",
+     "τοῖς",
+     "πολλὰ",
+     "μὲν",
+     "ὑπισχνουμένοις",
+     "ὀλίγα",
+     "δὲ",
+     "ἐπιτελοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1835-imperative-t2",
+  "sectionId": "sm-1835-imperative",
+  "questions": [
+   {
+    "prompt": "Tell me, child, who taught you these things.",
+    "answer": "εἰπέ μοι, ὦ παῖ, τίς σε ταῦτα ἐδίδαξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰπέ",
+     "μοι",
+     "ὦ",
+     "παῖ",
+     "τίς",
+     "σε",
+     "ταῦτα",
+     "ἐδίδαξεν"
+    ]
+   },
+   {
+    "prompt": "Have pity on the suppliants and release the captives.",
+    "answer": "ἐλέησον τοὺς ἱκέτας καὶ λῦσον τοὺς αἰχμαλώτους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλέησον",
+     "τοὺς",
+     "ἱκέτας",
+     "καὶ",
+     "λῦσον",
+     "αἰχμαλώτους"
+    ]
+   },
+   {
+    "prompt": "Be brave, soldier, and do not fear death.",
+    "answer": "θάρρει, ὦ στρατιῶτα, καὶ μὴ φοβοῦ τὸν θάνατον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θάρρει",
+     "ὦ",
+     "στρατιῶτα",
+     "καὶ",
+     "μὴ",
+     "φοβοῦ",
+     "τὸν",
+     "θάνατον"
+    ]
+   },
+   {
+    "prompt": "Consider carefully before undertaking so great a task.",
+    "answer": "σκόπει ἀκριβῶς πρὶν τοσούτῳ ἔργῳ ἐπιχειρεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκόπει",
+     "ἀκριβῶς",
+     "πρὶν",
+     "τοσούτῳ",
+     "ἔργῳ",
+     "ἐπιχειρεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1835-imperative-t3",
+  "sectionId": "sm-1835-imperative",
+  "questions": [
+   {
+    "prompt": "Let the citizens obey the laws which the ancestors established.",
+    "answer": "πειθέσθωσαν οἱ πολῖται τοῖς νόμοις οὓς οἱ πρόγονοι κατέστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πειθέσθωσαν",
+     "οἱ",
+     "πολῖται",
+     "τοῖς",
+     "νόμοις",
+     "οὓς",
+     "πρόγονοι",
+     "κατέστησαν"
+    ]
+   },
+   {
+    "prompt": "Let no one betray the city to the enemy.",
+    "answer": "μηδεὶς προδιδότω τὴν πόλιν τοῖς πολεμίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδεὶς",
+     "προδιδότω",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "Let the young men honor both the elders and the gods.",
+    "answer": "τιμάτωσαν οἱ νέοι τούς τε πρεσβυτέρους καὶ τοὺς θεούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμάτωσαν",
+     "οἱ",
+     "νέοι",
+     "τούς",
+     "τε",
+     "πρεσβυτέρους",
+     "καὶ",
+     "τοὺς",
+     "θεούς"
+    ]
+   },
+   {
+    "prompt": "Let the man who wishes to rule first learn to obey.",
+    "answer": "ὁ ἄρχειν βουλόμενος πρῶτον μανθανέτω πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄρχειν",
+     "βουλόμενος",
+     "πρῶτον",
+     "μανθανέτω",
+     "πείθεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1835-imperative-t4",
+  "sectionId": "sm-1835-imperative",
+  "questions": [
+   {
+    "prompt": "Do not marvel, judges, if I speak the truth boldly.",
+    "answer": "μὴ θαυμάζετε, ὦ δικασταί, εἰ τὰ ἀληθῆ θαρραλέως λέγω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "θαυμάζετε",
+     "ὦ",
+     "δικασταί",
+     "εἰ",
+     "τὰ",
+     "ἀληθῆ",
+     "θαρραλέως",
+     "λέγω"
+    ]
+   },
+   {
+    "prompt": "Never neglect those who once did you a favor.",
+    "answer": "μηδέποτε ἀμέλει τῶν ποτὲ σοι χαρισαμένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδέποτε",
+     "ἀμέλει",
+     "τῶν",
+     "ποτὲ",
+     "σοι",
+     "χαρισαμένων"
+    ]
+   },
+   {
+    "prompt": "Do not lead the army across the river by night.",
+    "answer": "μὴ διαβιβάζετε τὸν στρατὸν τὸν ποταμὸν νυκτός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "διαβιβάζετε",
+     "τὸν",
+     "στρατὸν",
+     "ποταμὸν",
+     "νυκτός"
+    ]
+   },
+   {
+    "prompt": "Do not answer me until you have considered everything.",
+    "answer": "μὴ ἀποκρίνου μοι πρὶν ἂν πάντα σκέψῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἀποκρίνου",
+     "μοι",
+     "πρὶν",
+     "ἂν",
+     "πάντα",
+     "σκέψῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1835-imperative-t5",
+  "sectionId": "sm-1835-imperative",
+  "questions": [
+   {
+    "prompt": "Provide the money, and I will build the ships.",
+    "answer": "παράσχες τὸ ἀργύριον, καὶ ἐγὼ τὰς ναῦς ποιήσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παράσχες",
+     "τὸ",
+     "ἀργύριον",
+     "καὶ",
+     "ἐγὼ",
+     "τὰς",
+     "ναῦς",
+     "ποιήσω"
+    ]
+   },
+   {
+    "prompt": "Hunt the wild beasts in the mountains, but harm no man.",
+    "answer": "θήρα τὰ θηρία ἐν τοῖς ὄρεσιν, ἄνθρωπον δὲ μηδένα βλάπτε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θήρα",
+     "τὰ",
+     "θηρία",
+     "ἐν",
+     "τοῖς",
+     "ὄρεσιν",
+     "ἄνθρωπον",
+     "δὲ",
+     "μηδένα",
+     "βλάπτε"
+    ]
+   },
+   {
+    "prompt": "Endure the present troubles, remembering the earlier ones.",
+    "answer": "ἀντέχε τοῖς παροῦσι κακοῖς, μεμνημένος τῶν προτέρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀντέχε",
+     "τοῖς",
+     "παροῦσι",
+     "κακοῖς",
+     "μεμνημένος",
+     "τῶν",
+     "προτέρων"
+    ]
+   },
+   {
+    "prompt": "Pay back to the god the debt which you owe.",
+    "answer": "ἀπόδος τῷ θεῷ τὴν τίσιν ἣν ὀφείλεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπόδος",
+     "τῷ",
+     "θεῷ",
+     "τὴν",
+     "τίσιν",
+     "ἣν",
+     "ὀφείλεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1835-imperative-t6",
+  "sectionId": "sm-1835-imperative",
+  "questions": [
+   {
+    "prompt": "Since the enemy are pursuing, cross the river quickly on the raft.",
+    "answer": "τῶν πολεμίων διωκόντων, διάβηθι τὸν ποταμὸν ἐπὶ τῆς σχεδίας ταχέως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "διωκόντων",
+     "διάβηθι",
+     "τὸν",
+     "ποταμὸν",
+     "ἐπὶ",
+     "τῆς",
+     "σχεδίας",
+     "ταχέως"
+    ]
+   },
+   {
+    "prompt": "Show yourself a good man, and do not shame your father.",
+    "answer": "ἀγαθὸν σεαυτὸν παρέχου, καὶ μὴ αἴσχυνε τὸν πατέρα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγαθὸν",
+     "σεαυτὸν",
+     "παρέχου",
+     "καὶ",
+     "μὴ",
+     "αἴσχυνε",
+     "τὸν",
+     "πατέρα"
+    ]
+   },
+   {
+    "prompt": "Learn the things worth knowing, for knowledge is a fine possession.",
+    "answer": "μάνθανε τὰ ἄξια ἐπίστασθαι· καλὸν γὰρ κτῆμα ἡ ἐπιστήμη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μάνθανε",
+     "τὰ",
+     "ἄξια",
+     "ἐπίστασθαι",
+     "καλὸν",
+     "γὰρ",
+     "κτῆμα",
+     "ἡ",
+     "ἐπιστήμη"
+    ]
+   },
+   {
+    "prompt": "Since night has come on, order the soldiers to make camp.",
+    "answer": "νυκτὸς ἐπελθούσης, κέλευε τοὺς στρατιώτας στρατοπεδεύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτὸς",
+     "ἐπελθούσης",
+     "κέλευε",
+     "τοὺς",
+     "στρατιώτας",
+     "στρατοπεδεύεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1835-imperative-t7",
+  "sectionId": "sm-1835-imperative",
+  "questions": [
+   {
     "prompt": "Flee from the city, children, before the enemy arrive.",
     "answer": "φεύγετε ἐκ τῆς πόλεως, ὦ παῖδες, πρὶν τοὺς πολεμίους ἀφικέσθαι.",
     "kind": "translate-en-grc",
@@ -68,7 +459,7 @@
   ]
  },
  {
-  "id": "sm-1835-imperative-t2",
+  "id": "sm-1835-imperative-t8",
   "sectionId": "sm-1835-imperative",
   "questions": [
    {
@@ -131,7 +522,7 @@
   ]
  },
  {
-  "id": "sm-1835-imperative-t3",
+  "id": "sm-1835-imperative-t9",
   "sectionId": "sm-1835-imperative",
   "questions": [
    {
@@ -197,7 +588,7 @@
   ]
  },
  {
-  "id": "sm-1835-imperative-t4",
+  "id": "sm-1835-imperative-t10",
   "sectionId": "sm-1835-imperative",
   "questions": [
    {
@@ -256,7 +647,7 @@
   ]
  },
  {
-  "id": "sm-1835-imperative-t5",
+  "id": "sm-1835-imperative-t11",
   "sectionId": "sm-1835-imperative",
   "questions": [
    {
@@ -317,7 +708,7 @@
   ]
  },
  {
-  "id": "sm-1835-imperative-t6",
+  "id": "sm-1835-imperative-t12",
   "sectionId": "sm-1835-imperative",
   "questions": [
    {

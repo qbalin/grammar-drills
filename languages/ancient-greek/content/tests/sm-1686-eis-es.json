@@ -4,6 +4,373 @@
   "sectionId": "sm-1686-eis-es",
   "questions": [
    {
+    "prompt": "After conquering the enemy, the general marched into the city.",
+    "answer": "νικήσας τοὺς πολεμίους ὁ στρατηγὸς εἰς τὴν πόλιν εἰσῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νικήσας",
+     "τοὺς",
+     "πολεμίους",
+     "ὁ",
+     "στρατηγὸς",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "εἰσῆλθεν"
+    ]
+   },
+   {
+    "prompt": "The messengers were sent to Athens.",
+    "answer": "οἱ ἄγγελοι εἰς τὰς Ἀθήνας ἐπέμφθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "εἰς",
+     "τὰς",
+     "Ἀθήνας",
+     "ἐπέμφθησαν"
+    ]
+   },
+   {
+    "prompt": "The sailors, fearing the storm, fled into the harbor.",
+    "answer": "οἱ ναῦται φοβούμενοι τὸν χειμῶνα εἰς τὸν λιμένα ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "φοβούμενοι",
+     "τὸν",
+     "χειμῶνα",
+     "εἰς",
+     "λιμένα",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "They threw the corpses into the river.",
+    "answer": "τοὺς νέκυας εἰς τὸν ποταμὸν ἔρριψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "νέκυας",
+     "εἰς",
+     "τὸν",
+     "ποταμὸν",
+     "ἔρριψαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1686-eis-es-t2",
+  "sectionId": "sm-1686-eis-es",
+  "questions": [
+   {
+    "prompt": "The boy walks to the teacher's each day.",
+    "answer": "ὁ παῖς ἑκάστης ἡμέρας εἰς διδασκάλου βαδίζει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "ἑκάστης",
+     "ἡμέρας",
+     "εἰς",
+     "διδασκάλου",
+     "βαδίζει"
+    ]
+   },
+   {
+    "prompt": "When night had fallen, they went down to the house of Hades.",
+    "answer": "νυκτὸς γενομένης εἰς ᾅδου κατέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτὸς",
+     "γενομένης",
+     "εἰς",
+     "ᾅδου",
+     "κατέβησαν"
+    ]
+   },
+   {
+    "prompt": "Socrates was often seen going to Callias's.",
+    "answer": "ὁ Σωκράτης πολλάκις ἑωρᾶτο εἰς Καλλίου ἰών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "πολλάκις",
+     "ἑωρᾶτο",
+     "εἰς",
+     "Καλλίου",
+     "ἰών"
+    ]
+   },
+   {
+    "prompt": "The suitors gathered at Penelope's.",
+    "answer": "οἱ μνηστῆρες εἰς Πηνελόπης συνῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μνηστῆρες",
+     "εἰς",
+     "Πηνελόπης",
+     "συνῆλθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1686-eis-es-t3",
+  "sectionId": "sm-1686-eis-es",
+  "questions": [
+   {
+    "prompt": "The soldiers armed themselves for battle.",
+    "answer": "οἱ στρατιῶται εἰς μάχην ὡπλίσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "εἰς",
+     "μάχην",
+     "ὡπλίσαντο"
+    ]
+   },
+   {
+    "prompt": "These things will be useful for the time to come.",
+    "answer": "ταῦτα εἰς τὸν ἔπειτα χρόνον χρήσιμα ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "εἰς",
+     "τὸν",
+     "ἔπειτα",
+     "χρόνον",
+     "χρήσιμα",
+     "ἔσται"
+    ]
+   },
+   {
+    "prompt": "The city fell into great danger.",
+    "answer": "ἡ πόλις εἰς μέγαν κίνδυνον κατέστη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "εἰς",
+     "μέγαν",
+     "κίνδυνον",
+     "κατέστη"
+    ]
+   },
+   {
+    "prompt": "He divided the army into two parts.",
+    "answer": "τὸ στράτευμα εἰς δύο μέρη διεῖλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "εἰς",
+     "δύο",
+     "μέρη",
+     "διεῖλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1686-eis-es-t4",
+  "sectionId": "sm-1686-eis-es",
+  "questions": [
+   {
+    "prompt": "The general, having gathered his soldiers, led them into the plain.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἀθροίσας εἰς τὸ πεδίον ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "ἀθροίσας",
+     "εἰς",
+     "τὸ",
+     "πεδίον",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "While the enemy were fleeing, we sailed into the harbor.",
+    "answer": "τῶν πολεμίων φευγόντων εἰς τὸν λιμένα εἰσεπλεύσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "φευγόντων",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "εἰσεπλεύσαμεν"
+    ]
+   },
+   {
+    "prompt": "They carried the wounded man into the tent.",
+    "answer": "τὸν τετρωμένον εἰς τὴν σκηνὴν ἐκόμισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "τετρωμένον",
+     "εἰς",
+     "τὴν",
+     "σκηνὴν",
+     "ἐκόμισαν"
+    ]
+   },
+   {
+    "prompt": "The women fled into the temple to escape death.",
+    "answer": "αἱ γυναῖκες εἰς τὸ ἱερὸν κατέφυγον ἵνα τὸν θάνατον ἐκφύγοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "εἰς",
+     "τὸ",
+     "ἱερὸν",
+     "κατέφυγον",
+     "ἵνα",
+     "τὸν",
+     "θάνατον",
+     "ἐκφύγοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1686-eis-es-t5",
+  "sectionId": "sm-1686-eis-es",
+  "questions": [
+   {
+    "prompt": "The rare gifts were distributed to the citizens.",
+    "answer": "τὰ σπάνια δῶρα εἰς τοὺς πολίτας διενεμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "σπάνια",
+     "δῶρα",
+     "εἰς",
+     "τοὺς",
+     "πολίτας",
+     "διενεμήθη"
+    ]
+   },
+   {
+    "prompt": "The army amounted to about two thousand.",
+    "answer": "τὸ στράτευμα εἰς δισχιλίους ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "εἰς",
+     "δισχιλίους",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "Looking to the future, he prepared everything.",
+    "answer": "εἰς τὸ μέλλον ἀποβλέψας πάντα παρεσκεύασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τὸ",
+     "μέλλον",
+     "ἀποβλέψας",
+     "πάντα",
+     "παρεσκεύασεν"
+    ]
+   },
+   {
+    "prompt": "We shall come into the city within ten days.",
+    "answer": "εἰς τὴν πόλιν δέκα ἡμερῶν ἥξομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "δέκα",
+     "ἡμερῶν",
+     "ἥξομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1686-eis-es-t6",
+  "sectionId": "sm-1686-eis-es",
+  "questions": [
+   {
+    "prompt": "The stranger entered the marketplace shouting.",
+    "answer": "ὁ ξένος βοῶν εἰς τὴν ἀγορὰν εἰσῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ξένος",
+     "βοῶν",
+     "εἰς",
+     "τὴν",
+     "ἀγορὰν",
+     "εἰσῆλθεν"
+    ]
+   },
+   {
+    "prompt": "Out of fear they threw themselves into the sea.",
+    "answer": "διὰ τὸν φόβον ἑαυτοὺς εἰς τὴν θάλατταν ἔρριψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τὸν",
+     "φόβον",
+     "ἑαυτοὺς",
+     "εἰς",
+     "τὴν",
+     "θάλατταν",
+     "ἔρριψαν"
+    ]
+   },
+   {
+    "prompt": "Let us send envoys to Sparta about peace.",
+    "answer": "εἰς τὴν Λακεδαίμονα πρέσβεις περὶ εἰρήνης πέμψωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τὴν",
+     "Λακεδαίμονα",
+     "πρέσβεις",
+     "περὶ",
+     "εἰρήνης",
+     "πέμψωμεν"
+    ]
+   },
+   {
+    "prompt": "The children ran into the field to play.",
+    "answer": "οἱ παῖδες εἰς τὸν ἀγρὸν ἔδραμον ἵνα παίζοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "εἰς",
+     "τὸν",
+     "ἀγρὸν",
+     "ἔδραμον",
+     "ἵνα",
+     "παίζοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1686-eis-es-t7",
+  "sectionId": "sm-1686-eis-es",
+  "questions": [
+   {
     "prompt": "The soldiers fled into the prison after the battle.",
     "answer": "οἱ στρατιῶται μετὰ τὴν μάχην εἰς τὸ δεσμωτήριον ἔφυγον.",
     "kind": "translate-en-grc",
@@ -65,7 +432,7 @@
   ]
  },
  {
-  "id": "sm-1686-eis-es-t2",
+  "id": "sm-1686-eis-es-t8",
   "sectionId": "sm-1686-eis-es",
   "questions": [
    {
@@ -132,7 +499,7 @@
   ]
  },
  {
-  "id": "sm-1686-eis-es-t3",
+  "id": "sm-1686-eis-es-t9",
   "sectionId": "sm-1686-eis-es",
   "questions": [
    {
@@ -192,7 +559,7 @@
   ]
  },
  {
-  "id": "sm-1686-eis-es-t4",
+  "id": "sm-1686-eis-es-t10",
   "sectionId": "sm-1686-eis-es",
   "questions": [
    {
@@ -255,7 +622,7 @@
   ]
  },
  {
-  "id": "sm-1686-eis-es-t5",
+  "id": "sm-1686-eis-es-t11",
   "sectionId": "sm-1686-eis-es",
   "questions": [
    {
@@ -321,7 +688,7 @@
   ]
  },
  {
-  "id": "sm-1686-eis-es-t6",
+  "id": "sm-1686-eis-es-t12",
   "sectionId": "sm-1686-eis-es",
   "questions": [
    {

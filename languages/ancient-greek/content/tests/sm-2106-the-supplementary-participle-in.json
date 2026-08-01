@@ -1,0 +1,336 @@
+[
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t1",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "We knew that the general had died in the battle.",
+    "answer": "ᾔδεμεν τὸν στρατηγὸν ἐν τῇ μάχῃ τεθνηκότα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔδεμεν",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "τεθνηκότα"
+    ]
+   },
+   {
+    "prompt": "He learned that the enemy were holding the bridge.",
+    "answer": "ἔμαθε τοὺς πολεμίους τὴν γέφυραν ἔχοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔμαθε",
+     "τοὺς",
+     "πολεμίους",
+     "τὴν",
+     "γέφυραν",
+     "ἔχοντας"
+    ]
+   },
+   {
+    "prompt": "You know that Cyrus betrayed us.",
+    "answer": "ἐπίστασαι τὸν Κῦρον ἡμᾶς προδόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπίστασαι",
+     "τὸν",
+     "Κῦρον",
+     "ἡμᾶς",
+     "προδόντα"
+    ]
+   },
+   {
+    "prompt": "I know that the soul is immortal.",
+    "answer": "οἶδα τὴν ψυχὴν ἀθάνατον οὖσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶδα",
+     "τὴν",
+     "ψυχὴν",
+     "ἀθάνατον",
+     "οὖσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t2",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "They knew that the invasion would take place.",
+    "answer": "ἔγνωσαν τὴν ἐσβολὴν ἐσομένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγνωσαν",
+     "τὴν",
+     "ἐσβολὴν",
+     "ἐσομένην"
+    ]
+   },
+   {
+    "prompt": "Who does not know that the war will come here?",
+    "answer": "τίς ἀγνοεῖ τὸν πόλεμον δεῦρο ἥξοντα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἀγνοεῖ",
+     "τὸν",
+     "πόλεμον",
+     "δεῦρο",
+     "ἥξοντα"
+    ]
+   },
+   {
+    "prompt": "I was the first to announce that Cyrus was marching against the king.",
+    "answer": "πρῶτος ἤγγειλα τὸν Κῦρον ἐπὶ τὸν βασιλέα ἐπιστρατεύοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρῶτος",
+     "ἤγγειλα",
+     "τὸν",
+     "Κῦρον",
+     "ἐπὶ",
+     "βασιλέα",
+     "ἐπιστρατεύοντα"
+    ]
+   },
+   {
+    "prompt": "We know that the allies will not send help.",
+    "answer": "ἴσμεν τοὺς συμμάχους βοήθειαν οὐ πέμψοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσμεν",
+     "τοὺς",
+     "συμμάχους",
+     "βοήθειαν",
+     "οὐ",
+     "πέμψοντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t3",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "This clause shows that the will is forged.",
+    "answer": "τοῦτο τὸ γράμμα δηλοῖ τὴν διαθήκην ψευδῆ οὖσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "γράμμα",
+     "δηλοῖ",
+     "τὴν",
+     "διαθήκην",
+     "ψευδῆ",
+     "οὖσαν"
+    ]
+   },
+   {
+    "prompt": "I will show that this man deserves death.",
+    "answer": "δείξω τοῦτον τὸν ἄνδρα θανάτου ἄξιον ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δείξω",
+     "τοῦτον",
+     "τὸν",
+     "ἄνδρα",
+     "θανάτου",
+     "ἄξιον",
+     "ὄντα"
+    ]
+   },
+   {
+    "prompt": "I convicted Philip of acting unjustly.",
+    "answer": "ἐξήλεγξα τὸν Φίλιππον ἀδικοῦντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξήλεγξα",
+     "τὸν",
+     "Φίλιππον",
+     "ἀδικοῦντα"
+    ]
+   },
+   {
+    "prompt": "The accusers proved that the exiles had long been scoundrels.",
+    "answer": "οἱ κατήγοροι ἀπέφηναν τοὺς φεύγοντας πάλαι πονηροὺς ὄντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κατήγοροι",
+     "ἀπέφηναν",
+     "τοὺς",
+     "φεύγοντας",
+     "πάλαι",
+     "πονηροὺς",
+     "ὄντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t4",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "The soul appears to be immortal.",
+    "answer": "φαίνεται ἡ ψυχὴ ἀθάνατος οὖσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φαίνεται",
+     "ἡ",
+     "ψυχὴ",
+     "ἀθάνατος",
+     "οὖσα"
+    ]
+   },
+   {
+    "prompt": "He will easily be convicted of lying.",
+    "answer": "ῥᾳδίως ἐλεγχθήσεται ψευδόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ῥᾳδίως",
+     "ἐλεγχθήσεται",
+     "ψευδόμενος"
+    ]
+   },
+   {
+    "prompt": "He will be shown to have done these things.",
+    "answer": "δειχθήσεται ταῦτα πεποιηκώς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δειχθήσεται",
+     "ταῦτα",
+     "πεποιηκώς"
+    ]
+   },
+   {
+    "prompt": "You seem to have forgotten the oaths.",
+    "answer": "ἔοικας τῶν ὅρκων ἐπιλελησμένος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔοικας",
+     "τῶν",
+     "ὅρκων",
+     "ἐπιλελησμένος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t5",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "I remember that you were in the company of Socrates.",
+    "answer": "μέμνημαι σὲ Σωκράτει συνόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνημαι",
+     "σὲ",
+     "Σωκράτει",
+     "συνόντα"
+    ]
+   },
+   {
+    "prompt": "We have gladly forgotten that we are old men.",
+    "answer": "ἡδέως ἐπιλελήσμεθα γέροντες ὄντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἐπιλελήσμεθα",
+     "γέροντες",
+     "ὄντες"
+    ]
+   },
+   {
+    "prompt": "I remember hearing this from the messenger.",
+    "answer": "μέμνημαι ταῦτα παρὰ τοῦ ἀγγέλου ἀκούσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνημαι",
+     "ταῦτα",
+     "παρὰ",
+     "τοῦ",
+     "ἀγγέλου",
+     "ἀκούσας"
+    ]
+   },
+   {
+    "prompt": "Do you not remember that we conquered the barbarians?",
+    "answer": "οὐ μέμνησαι ἡμᾶς τοὺς βαρβάρους νικήσαντας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μέμνησαι",
+     "ἡμᾶς",
+     "τοὺς",
+     "βαρβάρους",
+     "νικήσαντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t6",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "It was clear that he thought so.",
+    "answer": "δῆλος ἦν οὕτως οἰόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆλος",
+     "ἦν",
+     "οὕτως",
+     "οἰόμενος"
+    ]
+   },
+   {
+    "prompt": "It was evident that the king often sacrificed.",
+    "answer": "φανερὸς ἦν ὁ βασιλεὺς πολλάκις θύων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φανερὸς",
+     "ἦν",
+     "ὁ",
+     "βασιλεὺς",
+     "πολλάκις",
+     "θύων"
+    ]
+   },
+   {
+    "prompt": "I was conscious of knowing nothing wise.",
+    "answer": "συνῄδη ἐμαυτῷ οὐδὲν σοφὸν ἐπισταμένῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συνῄδη",
+     "ἐμαυτῷ",
+     "οὐδὲν",
+     "σοφὸν",
+     "ἐπισταμένῳ"
+    ]
+   },
+   {
+    "prompt": "The general clearly showed his distress at the messages.",
+    "answer": "ὁ στρατηγὸς τοῖς ἀγγέλμασιν ἀνιαθεὶς δῆλος ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοῖς",
+     "ἀγγέλμασιν",
+     "ἀνιαθεὶς",
+     "δῆλος",
+     "ἦν"
+    ]
+   }
+  ]
+ }
+]

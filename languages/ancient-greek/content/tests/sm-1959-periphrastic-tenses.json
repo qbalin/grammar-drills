@@ -4,6 +4,392 @@
   "sectionId": "sm-1959-periphrastic-tenses",
   "questions": [
    {
+    "prompt": "What I am about to say has long been the general's opinion.",
+    "answer": "ἃ μέλλω λέγειν πάλαι τῷ στρατηγῷ δοκεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "μέλλω",
+     "λέγειν",
+     "πάλαι",
+     "τῷ",
+     "στρατηγῷ",
+     "δοκεῖ"
+    ]
+   },
+   {
+    "prompt": "Cleander is likely to arrive tomorrow with the whole army.",
+    "answer": "ὁ Κλέανδρος αὔριον ἥξειν μέλλει σὺν παντὶ τῷ στρατεύματι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κλέανδρος",
+     "αὔριον",
+     "ἥξειν",
+     "μέλλει",
+     "σύν",
+     "παντί",
+     "τῷ",
+     "στρατεύματι"
+    ]
+   },
+   {
+    "prompt": "The enemy intended to close the harbors of the island.",
+    "answer": "οἱ πολέμιοι τοὺς τῆς νήσου λιμένας κλῄσειν ἔμελλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τούς",
+     "τῆς",
+     "νήσου",
+     "λιμένας",
+     "κλῄσειν",
+     "ἔμελλον"
+    ]
+   },
+   {
+    "prompt": "Why should I not fear a man so bold?",
+    "answer": "πῶς οὐ μέλλω φοβεῖσθαι ἄνδρα οὕτω θρασύν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "οὐ",
+     "μέλλω",
+     "φοβεῖσθαι",
+     "ἄνδρα",
+     "οὕτω",
+     "θρασύν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1959-periphrastic-tenses-t2",
+  "sectionId": "sm-1959-periphrastic-tenses",
+  "questions": [
+   {
+    "prompt": "Do you think that the young men are being corrupted?",
+    "answer": "ἡγῇ τοὺς νεανίας διαφθειρομένους εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡγῇ",
+     "τούς",
+     "νεανίας",
+     "διαφθειρομένους",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "These arts will have been ruined by the tyrant.",
+    "answer": "αἱ τέχναι ὑπὸ τοῦ τυράννου διεφθαρμέναι ἔσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τέχναι",
+     "ὑπό",
+     "τοῦ",
+     "τυράννου",
+     "διεφθαρμέναι",
+     "ἔσονται"
+    ]
+   },
+   {
+    "prompt": "This deed was advantageous to the Athenians.",
+    "answer": "ἦν τοῦτο τὸ ἔργον τοῖς Ἀθηναίοις συμφέρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦν",
+     "τοῦτο",
+     "τό",
+     "ἔργον",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "συμφέρον"
+    ]
+   },
+   {
+    "prompt": "Some were guarding the walls throughout the whole night.",
+    "answer": "τινὲς τὰ τείχη διὰ ὅλης τῆς νυκτὸς φυλάττοντες ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τινές",
+     "τά",
+     "τείχη",
+     "διά",
+     "ὅλης",
+     "τῆς",
+     "νυκτός",
+     "φυλάττοντες",
+     "ἦσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1959-periphrastic-tenses-t3",
+  "sectionId": "sm-1959-periphrastic-tenses",
+  "questions": [
+   {
+    "prompt": "Cyrus was about to halt the army there for the night.",
+    "answer": "ὁ Κῦρος ἐνταῦθα τὸ στράτευμα καταλύειν ἔμελλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "ἐνταῦθα",
+     "τό",
+     "στράτευμα",
+     "καταλύειν",
+     "ἔμελλεν"
+    ]
+   },
+   {
+    "prompt": "The allies would not have joined the campaign with the king.",
+    "answer": "οἱ σύμμαχοι οὐ συστρατεύειν ἔμελλον σὺν τῷ βασιλεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "οὐ",
+     "συστρατεύειν",
+     "ἔμελλον",
+     "σύν",
+     "τῷ",
+     "βασιλεῖ"
+    ]
+   },
+   {
+    "prompt": "Whenever many were likely to see Cyrus, he would summon his friends.",
+    "answer": "εἴ ποτε πολλοὶ μέλλοιεν ὄψεσθαι τὸν Κῦρον, τοὺς φίλους προσεκάλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ποτέ",
+     "πολλοί",
+     "μέλλοιεν",
+     "ὄψεσθαι",
+     "τόν",
+     "Κῦρον",
+     "τούς",
+     "φίλους",
+     "προσεκάλει"
+    ]
+   },
+   {
+    "prompt": "The stranger was destined to suffer many terrible things.",
+    "answer": "ὁ ξένος πολλὰ καὶ δεινὰ παθεῖν ἔμελλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ξένος",
+     "πολλά",
+     "καί",
+     "δεινά",
+     "παθεῖν",
+     "ἔμελλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1959-periphrastic-tenses-t4",
+  "sectionId": "sm-1959-periphrastic-tenses",
+  "questions": [
+   {
+    "prompt": "The orator will appear to have taken no heed of the laws.",
+    "answer": "ὁ ῥήτωρ τῶν νόμων οὐδὲν φροντίσας φανήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τῶν",
+     "νόμων",
+     "οὐδέν",
+     "φροντίσας",
+     "φανήσεται"
+    ]
+   },
+   {
+    "prompt": "The judges will appear to have wronged the good citizens.",
+    "answer": "οἱ δικασταὶ τοὺς ἀγαθοὺς πολίτας ἀδικήσαντες φανοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "τούς",
+     "ἀγαθούς",
+     "πολίτας",
+     "ἀδικήσαντες",
+     "φανοῦνται"
+    ]
+   },
+   {
+    "prompt": "The admiral appeared to have saved all the sailors.",
+    "answer": "ὁ ναύαρχος πάντας τοὺς ναύτας σώσας ἐφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ναύαρχος",
+     "πάντας",
+     "τούς",
+     "ναύτας",
+     "σώσας",
+     "ἐφάνη"
+    ]
+   },
+   {
+    "prompt": "This woman will appear to have felt no resentment at the insult.",
+    "answer": "ἡ γυνὴ ἐπὶ τῇ ὕβρει οὐδὲν ἀγανακτήσασα φανήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "ἐπί",
+     "τῇ",
+     "ὕβρει",
+     "οὐδέν",
+     "ἀγανακτήσασα",
+     "φανήσεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1959-periphrastic-tenses-t5",
+  "sectionId": "sm-1959-periphrastic-tenses",
+  "questions": [
+   {
+    "prompt": "How should this not be ridiculous to everyone?",
+    "answer": "πῶς οὐ μέλλει τοῦτο πᾶσι γελοῖον εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "οὐ",
+     "μέλλει",
+     "τοῦτο",
+     "πᾶσι",
+     "γελοῖον",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Why should I not obey the laws of the city?",
+    "answer": "τί οὐ μέλλω τοῖς τῆς πόλεως νόμοις πείθεσθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "οὐ",
+     "μέλλω",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "νόμοις",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "Whatever the god sends, this I am doomed to suffer.",
+    "answer": "ὅπερ ἂν ὁ θεὸς πέμπῃ, τοῦτο παθεῖν μέλλω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπερ",
+     "ἄν",
+     "ὁ",
+     "θεός",
+     "πέμπῃ",
+     "τοῦτο",
+     "παθεῖν",
+     "μέλλω"
+    ]
+   },
+   {
+    "prompt": "The soldiers were about to begin the battle at dawn.",
+    "answer": "οἱ στρατιῶται ἅμα τῇ ἕῳ τὴν μάχην ἄρξασθαι ἔμελλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "τήν",
+     "μάχην",
+     "ἄρξασθαι",
+     "ἔμελλον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1959-periphrastic-tenses-t6",
+  "sectionId": "sm-1959-periphrastic-tenses",
+  "questions": [
+   {
+    "prompt": "Will you not be silent before your father once and for all?",
+    "answer": "οὐ σιωπήσας ἤδη ποτὲ πρὸς τὸν πατέρα ἔσῃ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "σιωπήσας",
+     "ἤδη",
+     "ποτέ",
+     "πρός",
+     "τόν",
+     "πατέρα",
+     "ἔσῃ"
+    ]
+   },
+   {
+    "prompt": "They had carried the provisions up into the forts and kept them there.",
+    "answer": "τὰ ἐπιτήδεια εἰς τὰ φρούρια ἀνακεκομισμένοι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἐπιτήδεια",
+     "εἰς",
+     "φρούρια",
+     "ἀνακεκομισμένοι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "See that you do not destroy yourself by these plans.",
+    "answer": "ὅρα μὴ σαυτὸν τούτοις τοῖς βουλεύμασι κτείνας γένῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "μή",
+     "σαυτόν",
+     "τούτοις",
+     "τοῖς",
+     "βουλεύμασι",
+     "κτείνας",
+     "γένῃ"
+    ]
+   },
+   {
+    "prompt": "The herald has proclaimed peace to the whole city.",
+    "answer": "ὁ κῆρυξ πάσῃ τῇ πόλει εἰρήνην κηρύξας ἔχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "πάσῃ",
+     "τῇ",
+     "πόλει",
+     "εἰρήνην",
+     "κηρύξας",
+     "ἔχει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1959-periphrastic-tenses-t7",
+  "sectionId": "sm-1959-periphrastic-tenses",
+  "questions": [
+   {
     "prompt": "The judges were about to condemn the poor man to death.",
     "answer": "οἱ δικασταὶ τὸν πένητα θανάτῳ ζημιώσειν ἔμελλον.",
     "kind": "translate-en-grc",
@@ -67,7 +453,7 @@
   ]
  },
  {
-  "id": "sm-1959-periphrastic-tenses-t2",
+  "id": "sm-1959-periphrastic-tenses-t8",
   "sectionId": "sm-1959-periphrastic-tenses",
   "questions": [
    {
@@ -131,7 +517,7 @@
   ]
  },
  {
-  "id": "sm-1959-periphrastic-tenses-t3",
+  "id": "sm-1959-periphrastic-tenses-t9",
   "sectionId": "sm-1959-periphrastic-tenses",
   "questions": [
    {
@@ -190,7 +576,7 @@
   ]
  },
  {
-  "id": "sm-1959-periphrastic-tenses-t4",
+  "id": "sm-1959-periphrastic-tenses-t10",
   "sectionId": "sm-1959-periphrastic-tenses",
   "questions": [
    {
@@ -256,7 +642,7 @@
   ]
  },
  {
-  "id": "sm-1959-periphrastic-tenses-t5",
+  "id": "sm-1959-periphrastic-tenses-t11",
   "sectionId": "sm-1959-periphrastic-tenses",
   "questions": [
    {
@@ -314,7 +700,7 @@
   ]
  },
  {
-  "id": "sm-1959-periphrastic-tenses-t6",
+  "id": "sm-1959-periphrastic-tenses-t12",
   "sectionId": "sm-1959-periphrastic-tenses",
   "questions": [
    {

@@ -5,34 +5,384 @@
   "questions": [
    {
     "prompt": "The general prevented the soldiers from crossing the river.",
-    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἐκώλυσε τὸν ποταμὸν διαβαίνειν.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας τὸν ποταμὸν διαβαίνειν ἐκώλυσεν.",
     "kind": "translate-en-grc",
     "vocab": [
      "ὁ",
      "στρατηγὸς",
      "τοὺς",
      "στρατιώτας",
-     "ἐκώλυσε",
      "τὸν",
      "ποταμὸν",
-     "διαβαίνειν"
+     "διαβαίνειν",
+     "ἐκώλυσεν"
     ]
    },
    {
     "prompt": "Nothing prevents us from telling the truth.",
-    "answer": "οὐδὲν κωλύει ἡμᾶς μὴ οὐ τὰ ἀληθῆ λέγειν.",
+    "answer": "οὐδὲν κωλύει ἡμᾶς τὰ ἀληθῆ λέγειν.",
     "kind": "translate-en-grc",
     "vocab": [
      "οὐδὲν",
      "κωλύει",
      "ἡμᾶς",
-     "μὴ",
-     "οὐ",
      "τὰ",
      "ἀληθῆ",
      "λέγειν"
     ]
    },
+   {
+    "prompt": "The storm hindered the sailors from sailing out.",
+    "answer": "ὁ χειμὼν τοὺς ναύτας ἀπεῖργε μὴ ἐκπλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χειμὼν",
+     "τοὺς",
+     "ναύτας",
+     "ἀπεῖργε",
+     "μὴ",
+     "ἐκπλεῖν"
+    ]
+   },
+   {
+    "prompt": "What prevents you from remaining in the city?",
+    "answer": "τί σε κωλύει ἐν τῇ πόλει μένειν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "σε",
+     "κωλύει",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "μένειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2038-constructions-of-the-infinitive-with-t2",
+  "sectionId": "sm-2038-constructions-of-the-infinitive-with",
+  "questions": [
+   {
+    "prompt": "The laws forbid the citizens to bear arms in the assembly.",
+    "answer": "οἱ νόμοι τοὺς πολίτας εἴργουσιν ὅπλα ἐν τῇ ἐκκλησίᾳ φορεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νόμοι",
+     "τοὺς",
+     "πολίτας",
+     "εἴργουσιν",
+     "ὅπλα",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "φορεῖν"
+    ]
+   },
+   {
+    "prompt": "The fear of death did not prevent them from fighting bravely.",
+    "answer": "ὁ τοῦ θανάτου φόβος αὐτοὺς οὐκ ἐκώλυσεν ἀνδρείως μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "θανάτου",
+     "φόβος",
+     "αὐτοὺς",
+     "οὐκ",
+     "ἐκώλυσεν",
+     "ἀνδρείως",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "Nothing prevents me from knowing these things.",
+    "answer": "οὐδὲν κωλύει με ταῦτα μ�ὴ οὐκ εἰδέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "κωλύει",
+     "με",
+     "ταῦτα",
+     "μὴ",
+     "οὐκ",
+     "εἰδέναι"
+    ]
+   },
+   {
+    "prompt": "The wall prevented the enemy from entering the city.",
+    "answer": "τὸ τεῖχος τοὺς πολεμίους εἰς τὴν πόλιν εἰσιέναι ἐκώλυεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τεῖχος",
+     "τοὺς",
+     "πολεμίους",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "εἰσιέναι",
+     "ἐκώλυεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2038-constructions-of-the-infinitive-with-t3",
+  "sectionId": "sm-2038-constructions-of-the-infinitive-with",
+  "questions": [
+   {
+    "prompt": "The river kept the horsemen from crossing.",
+    "answer": "ὁ ποταμὸς τοὺς ἱππέας τοῦ διαβαίνειν εἶργεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμὸς",
+     "τοὺς",
+     "ἱππέας",
+     "τοῦ",
+     "διαβαίνειν",
+     "εἶργεν"
+    ]
+   },
+   {
+    "prompt": "Old age does not prevent the wise man from learning.",
+    "answer": "τὸ γῆρας τὸν σοφὸν οὐ κωλύει μανθάνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "γῆρας",
+     "τὸν",
+     "σοφὸν",
+     "οὐ",
+     "κωλύει",
+     "μανθάνειν"
+    ]
+   },
+   {
+    "prompt": "The elders restrained the young men from doing wrong.",
+    "answer": "οἱ γέροντες τοὺς νεανίας τοῦ ἀδικεῖν ἀπεῖργον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "τοὺς",
+     "νεανίας",
+     "τοῦ",
+     "ἀδικεῖν",
+     "ἀπεῖργον"
+    ]
+   },
+   {
+    "prompt": "What hinders us from making peace now?",
+    "answer": "τί κωλύει ἡμᾶς νῦν εἰρήνην ποιεῖσθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "κωλύει",
+     "ἡμᾶς",
+     "νῦν",
+     "εἰρήνην",
+     "ποιεῖσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2038-constructions-of-the-infinitive-with-t4",
+  "sectionId": "sm-2038-constructions-of-the-infinitive-with",
+  "questions": [
+   {
+    "prompt": "What prevents this from being true?",
+    "answer": "τί κωλύει τοῦτο ἀληθὲς εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "κωλύει",
+     "τοῦτο",
+     "ἀληθὲς",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "The darkness did not hinder them from finding the road.",
+    "answer": "τὸ σκότος αὐτοὺς οὐκ ἐκώλυσε τὴν ὁδὸν εὑρεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "σκότος",
+     "αὐτοὺς",
+     "οὐκ",
+     "ἐκώλυσε",
+     "τὴν",
+     "ὁδὸν",
+     "εὑρεῖν"
+    ]
+   },
+   {
+    "prompt": "Nothing prevented the allies from helping us.",
+    "answer": "οὐδὲν τοὺς συμμάχους ἐκώλυεν ἡμῖν βοηθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "τοὺς",
+     "συμμάχους",
+     "ἐκώλυεν",
+     "ἡμῖν",
+     "βοηθεῖν"
+    ]
+   },
+   {
+    "prompt": "Shame prevents the good man from lying.",
+    "answer": "ἡ αἰσχύνη τὸν ἀγαθὸν κωλύει ψεύδεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "αἰσχύνη",
+     "τὸν",
+     "ἀγαθὸν",
+     "κωλύει",
+     "ψεύδεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2038-constructions-of-the-infinitive-with-t5",
+  "sectionId": "sm-2038-constructions-of-the-infinitive-with",
+  "questions": [
+   {
+    "prompt": "The Athenians, though eager, were prevented from sailing to Sicily.",
+    "answer": "οἱ Ἀθηναῖοι καίπερ προθυμούμενοι ἐκωλύθησαν εἰς Σικελίαν πλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "καίπερ",
+     "προθυμούμενοι",
+     "ἐκωλύθησαν",
+     "εἰς",
+     "Σικελίαν",
+     "πλεῖν"
+    ]
+   },
+   {
+    "prompt": "Since the gates were shut, the guards prevented the messenger from entering.",
+    "answer": "κεκλεισμένων τῶν πυλῶν οἱ φύλακες τὸν ἄγγελον εἰσελθεῖν ἐκώλυον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κεκλεισμένων",
+     "τῶν",
+     "πυλῶν",
+     "οἱ",
+     "φύλακες",
+     "τὸν",
+     "ἄγγελον",
+     "εἰσελθεῖν",
+     "ἐκώλυον"
+    ]
+   },
+   {
+    "prompt": "Poverty does not prevent the brave from being happy.",
+    "answer": "ἡ πενία τοὺς ἀνδρείους οὐ κωλύει εὐδαίμονας εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πενία",
+     "τοὺς",
+     "ἀνδρείους",
+     "οὐ",
+     "κωλύει",
+     "εὐδαίμονας",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Who will prevent us from taking the city?",
+    "answer": "τίς ἡμᾶς κωλύσει τὴν πόλιν λαβεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἡμᾶς",
+     "κωλύσει",
+     "τὴν",
+     "πόλιν",
+     "λαβεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2038-constructions-of-the-infinitive-with-t6",
+  "sectionId": "sm-2038-constructions-of-the-infinitive-with",
+  "questions": [
+   {
+    "prompt": "The snow prevented the army from advancing.",
+    "answer": "ἡ χιὼν τὸ στράτευμα προϊέναι ἐκώλυεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "χιὼν",
+     "τὸ",
+     "στράτευμα",
+     "προϊέναι",
+     "ἐκώλυεν"
+    ]
+   },
+   {
+    "prompt": "Nothing will prevent me from telling you the whole truth.",
+    "answer": "οὐδὲν με κωλύσει πᾶσαν τὴν ἀλήθειαν σοι λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "με",
+     "κωλύσει",
+     "πᾶσαν",
+     "τὴν",
+     "ἀλήθειαν",
+     "σοι",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "The general's authority hindered the soldiers from fleeing.",
+    "answer": "ἡ τοῦ στρατηγοῦ ἀρχὴ τοὺς στρατιώτας τοῦ φεύγειν ἀπεῖργεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀρχὴ",
+     "τοὺς",
+     "στρατιώτας",
+     "τοῦ",
+     "φεύγειν",
+     "ἀπεῖργεν"
+    ]
+   },
+   {
+    "prompt": "What prevents the two cities from being friends?",
+    "answer": "τί κωλύει τὰς δύο πόλεις φίλας εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "κωλύει",
+     "τὰς",
+     "δύο",
+     "πόλεις",
+     "φίλας",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2038-constructions-of-the-infinitive-with-t7",
+  "sectionId": "sm-2038-constructions-of-the-infinitive-with",
+  "questions": [
    {
     "prompt": "The storm hindered them from sailing out.",
     "answer": "ὁ χειμὼν αὐτοὺς εἶρξε τοῦ μὴ ἐκπλεῖν.",
@@ -65,7 +415,7 @@
   ]
  },
  {
-  "id": "sm-2038-constructions-of-the-infinitive-with-t2",
+  "id": "sm-2038-constructions-of-the-infinitive-with-t8",
   "sectionId": "sm-2038-constructions-of-the-infinitive-with",
   "questions": [
    {
@@ -134,7 +484,7 @@
   ]
  },
  {
-  "id": "sm-2038-constructions-of-the-infinitive-with-t3",
+  "id": "sm-2038-constructions-of-the-infinitive-with-t9",
   "sectionId": "sm-2038-constructions-of-the-infinitive-with",
   "questions": [
    {
@@ -199,7 +549,7 @@
   ]
  },
  {
-  "id": "sm-2038-constructions-of-the-infinitive-with-t4",
+  "id": "sm-2038-constructions-of-the-infinitive-with-t10",
   "sectionId": "sm-2038-constructions-of-the-infinitive-with",
   "questions": [
    {
@@ -264,7 +614,7 @@
   ]
  },
  {
-  "id": "sm-2038-constructions-of-the-infinitive-with-t5",
+  "id": "sm-2038-constructions-of-the-infinitive-with-t11",
   "sectionId": "sm-2038-constructions-of-the-infinitive-with",
   "questions": [
    {
@@ -333,7 +683,7 @@
   ]
  },
  {
-  "id": "sm-2038-constructions-of-the-infinitive-with-t6",
+  "id": "sm-2038-constructions-of-the-infinitive-with-t12",
   "sectionId": "sm-2038-constructions-of-the-infinitive-with",
   "questions": [
    {

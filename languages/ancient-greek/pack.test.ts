@@ -7,6 +7,7 @@
  * is the set the fold actually has to get right.
  */
 import { describe, it, expect } from "vitest";
+import { checkConfetti } from "../../scripts/lib/confetti.mjs";
 import { readFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { join } from "node:path";
@@ -190,5 +191,24 @@ describe("the fold against the shipped dictionary", () => {
     expect(cite("λύω")).toBe("λύω, λύσω, ἔλυσα, λέλυκα, λέλυμαι, ἐλύθην");
     // The positive degree, not the superlative the corpus happens to prefer.
     expect(cite("καλός")).toBe("καλός, καλή, καλόν");
+  });
+});
+
+/**
+ * The confetti is a decoration, so the renderer is deliberately forgiving: a
+ * shape it cannot find is skipped rather than thrown, because failing mid-burst
+ * would be worse for a student than drawing badly. That forgiveness is only
+ * safe if something else is strict, and this is it.
+ */
+describe("confetti", () => {
+  it("names only shapes it has, paints only colours it has, and draws inside the box", async () => {
+    const pack = (await import("./confetti.mjs")).default;
+    expect(checkConfetti(pack, { name: "ancient-greek" })).toEqual([]);
+  });
+
+  it("throws every shape it defines", async () => {
+    const pack = (await import("./confetti.mjs")).default;
+    const thrown = new Set(pack.throws.flat());
+    expect([...Object.keys(pack.shapes)].filter((s) => !thrown.has(s))).toEqual([]);
   });
 });

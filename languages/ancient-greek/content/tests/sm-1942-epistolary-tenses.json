@@ -4,6 +4,399 @@
   "sectionId": "sm-1942-epistolary-tenses",
   "questions": [
    {
+    "prompt": "I send you this letter through the messenger whom you know.",
+    "answer": "ταύτην σοι τὴν ἐπιστολὴν ἔπεμψα διὰ τοῦ ἀγγέλου ὃν γιγνώσκεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτην",
+     "σοι",
+     "τὴν",
+     "ἐπιστολὴν",
+     "ἔπεμψα",
+     "διὰ",
+     "τοῦ",
+     "ἀγγέλου",
+     "ὃν",
+     "γιγνώσκεις"
+    ]
+   },
+   {
+    "prompt": "I have sent you the man whom you asked for; treat him well.",
+    "answer": "ἀπέσταλκά σοι τὸν ἄνδρα ὃν ᾔτησας· εὖ αὐτὸν ποίει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέσταλκά",
+     "σοι",
+     "τὸν",
+     "ἄνδρα",
+     "ὃν",
+     "ᾔτησας",
+     "εὖ",
+     "αὐτὸν",
+     "ποίει"
+    ]
+   },
+   {
+    "prompt": "Along with these gifts I send my brother, who will help you.",
+    "answer": "σὺν τούτοις τοῖς δώροις ἔπεμψα τὸν ἀδελφόν, ὃς σε ὠφελήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺν",
+     "τούτοις",
+     "τοῖς",
+     "δώροις",
+     "ἔπεμψα",
+     "τὸν",
+     "ἀδελφόν",
+     "ὃς",
+     "σε",
+     "ὠφελήσει"
+    ]
+   },
+   {
+    "prompt": "Write back to me quickly, for I send these things in haste.",
+    "answer": "ἀντίγραψόν μοι ταχέως· ταῦτα γὰρ σπεύδων ἔπεμψα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀντίγραψόν",
+     "μοι",
+     "ταχέως",
+     "ταῦτα",
+     "γὰρ",
+     "σπεύδων",
+     "ἔπεμψα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t2",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "After the trumpeter had given the signal, the soldiers advanced.",
+    "answer": "ἐπεὶ ἐσάλπιγξεν ὁ σαλπιγκτής, οἱ στρατιῶται ἐπῇσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ἐσάλπιγξεν",
+     "ὁ",
+     "σαλπιγκτής",
+     "οἱ",
+     "στρατιῶται",
+     "ἐπῇσαν"
+    ]
+   },
+   {
+    "prompt": "When they had come together, the general spoke as follows.",
+    "answer": "ἐπειδὴ συνῆλθον, ὁ στρατηγὸς τοιάδε ἔλεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "συνῆλθον",
+     "ὁ",
+     "στρατηγὸς",
+     "τοιάδε",
+     "ἔλεξεν"
+    ]
+   },
+   {
+    "prompt": "Since he had learned the truth, he no longer trusted the messenger.",
+    "answer": "ἐπεὶ τὴν ἀλήθειαν ἔμαθεν, οὐκέτι τῷ ἀγγέλῳ ἐπίστευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τὴν",
+     "ἀλήθειαν",
+     "ἔμαθεν",
+     "οὐκέτι",
+     "τῷ",
+     "ἀγγέλῳ",
+     "ἐπίστευεν"
+    ]
+   },
+   {
+    "prompt": "When the enemy had crossed the river, we fled to the mountain.",
+    "answer": "ἐπειδὴ οἱ πολέμιοι τὸν ποταμὸν διέβησαν, εἰς τὸ ὄρος ἐφύγομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "οἱ",
+     "πολέμιοι",
+     "τὸν",
+     "ποταμὸν",
+     "διέβησαν",
+     "εἰς",
+     "τὸ",
+     "ὄρος",
+     "ἐφύγομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t3",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "He gave me the letter which I had written to my father.",
+    "answer": "ἔδωκέ μοι τὴν ἐπιστολὴν ἣν τῷ πατρὶ ἔγραψα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδωκέ",
+     "μοι",
+     "τὴν",
+     "ἐπιστολὴν",
+     "ἣν",
+     "τῷ",
+     "πατρὶ",
+     "ἔγραψα"
+    ]
+   },
+   {
+    "prompt": "They returned to the harbor from which they had set out.",
+    "answer": "ἐπανῆλθον εἰς τὸν λιμένα ὅθεν ἀνηγάγοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπανῆλθον",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "ὅθεν",
+     "ἀνηγάγοντο"
+    ]
+   },
+   {
+    "prompt": "She recognized the stranger whom she had once received into her house.",
+    "answer": "ἐγνώρισε τὸν ξένον ὃν ποτὲ εἰς τὴν οἰκίαν ἐδέξατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγνώρισε",
+     "τὸν",
+     "ξένον",
+     "ὃν",
+     "ποτὲ",
+     "εἰς",
+     "τὴν",
+     "οἰκίαν",
+     "ἐδέξατο"
+    ]
+   },
+   {
+    "prompt": "We praised the soldiers who had captured the city.",
+    "answer": "ἐπῃνέσαμεν τοὺς στρατιώτας οἳ τὴν πόλιν εἷλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπῃνέσαμεν",
+     "τοὺς",
+     "στρατιώτας",
+     "οἳ",
+     "τὴν",
+     "πόλιν",
+     "εἷλον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t4",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "Before the sun had set, they pitched camp near the river.",
+    "answer": "πρὶν τὸν ἥλιον δῦναι, ἐστρατοπεδεύσαντο παρὰ τῷ ποταμῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὶν",
+     "τὸν",
+     "ἥλιον",
+     "δῦναι",
+     "ἐστρατοπεδεύσαντο",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ"
+    ]
+   },
+   {
+    "prompt": "They kept fighting until the Athenians had sailed away.",
+    "answer": "ἐμάχοντο μέχρι οἱ Ἀθηναῖοι ἀπέπλευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμάχοντο",
+     "μέχρι",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ἀπέπλευσαν"
+    ]
+   },
+   {
+    "prompt": "We waited until the herald had announced the peace.",
+    "answer": "περιεμείναμεν ἕως ὁ κῆρυξ τὴν εἰρήνην ἀνήγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περιεμείναμεν",
+     "ἕως",
+     "ὁ",
+     "κῆρυξ",
+     "τὴν",
+     "εἰρήνην",
+     "ἀνήγγειλεν"
+    ]
+   },
+   {
+    "prompt": "Before we had heard the whole story, we grew angry.",
+    "answer": "πρὶν πάντα τὸν λόγον ἀκοῦσαι, ὠργίσθημεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὶν",
+     "πάντα",
+     "τὸν",
+     "λόγον",
+     "ἀκοῦσαι",
+     "ὠργίσθημεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t5",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "When she had heard these things, she wept for a long time.",
+    "answer": "ὅτε ταῦτα ἤκουσεν, πολὺν χρόνον ἐδάκρυεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτε",
+     "ταῦτα",
+     "ἤκουσεν",
+     "πολὺν",
+     "χρόνον",
+     "ἐδάκρυεν"
+    ]
+   },
+   {
+    "prompt": "As soon as the enemy had appeared, the citizens shut the gates.",
+    "answer": "ὡς οἱ πολέμιοι ἐφάνησαν, οἱ πολῖται τὰς πύλας ἔκλεισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "οἱ",
+     "πολέμιοι",
+     "ἐφάνησαν",
+     "πολῖται",
+     "τὰς",
+     "πύλας",
+     "ἔκλεισαν"
+    ]
+   },
+   {
+    "prompt": "They punished him because he had wronged the citizens.",
+    "answer": "ἐκόλασαν αὐτὸν ὅτι τοὺς πολίτας ἠδίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκόλασαν",
+     "αὐτὸν",
+     "ὅτι",
+     "τοὺς",
+     "πολίτας",
+     "ἠδίκησεν"
+    ]
+   },
+   {
+    "prompt": "When the ships had appeared, the general ordered a retreat.",
+    "answer": "ὅτε αἱ νῆες ἐφάνησαν, ὁ στρατηγὸς ἀναχωρεῖν ἐκέλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτε",
+     "αἱ",
+     "νῆες",
+     "ἐφάνησαν",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀναχωρεῖν",
+     "ἐκέλευσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t6",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "The Argives, having captured Troy, dedicated these spoils to the goddess.",
+    "answer": "οἱ Ἀργεῖοι, τὴν Τροίαν ἑλόντες, ταῦτα τὰ λάφυρα τῇ θεᾷ ἀνέθεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀργεῖοι",
+     "τὴν",
+     "Τροίαν",
+     "ἑλόντες",
+     "ταῦτα",
+     "τὰ",
+     "λάφυρα",
+     "τῇ",
+     "θεᾷ",
+     "ἀνέθεσαν"
+    ]
+   },
+   {
+    "prompt": "Negotiate with Artabazus, whom I send to you, about the treaty.",
+    "answer": "πρᾶττε μετὰ Ἀρταβάζου, ὃν σοι ἔπεμψα, περὶ τῶν σπονδῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρᾶττε",
+     "μετὰ",
+     "Ἀρταβάζου",
+     "ὃν",
+     "σοι",
+     "ἔπεμψα",
+     "περὶ",
+     "τῶν",
+     "σπονδῶν"
+    ]
+   },
+   {
+    "prompt": "I have sent this book to you so that you may learn the truth.",
+    "answer": "ταύτην σοι τὴν βίβλον ἀπέσταλκα, ἵνα τὴν ἀλήθειαν μάθῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτην",
+     "σοι",
+     "τὴν",
+     "βίβλον",
+     "ἀπέσταλκα",
+     "ἵνα",
+     "ἀλήθειαν",
+     "μάθῃς"
+    ]
+   },
+   {
+    "prompt": "Up to the time when this account was being written, the city remained free.",
+    "answer": "μέχρι οὗ ὅδε ὁ λόγος ἐγράφετο, ἡ πόλις ἐλευθέρα ἔμενεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέχρι",
+     "οὗ",
+     "ὅδε",
+     "ὁ",
+     "λόγος",
+     "ἐγράφετο",
+     "ἡ",
+     "πόλις",
+     "ἐλευθέρα",
+     "ἔμενεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t7",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
     "prompt": "I send you this letter through the messenger who arrived yesterday.",
     "answer": "ταύτην σοι τὴν ἐπιστολὴν ἔπεμψα διὰ τοῦ ἀγγέλου ὃς χθὲς ἀφίκετο.",
     "kind": "translate-en-grc",
@@ -66,7 +459,7 @@
   ]
  },
  {
-  "id": "sm-1942-epistolary-tenses-t2",
+  "id": "sm-1942-epistolary-tenses-t8",
   "sectionId": "sm-1942-epistolary-tenses",
   "questions": [
    {
@@ -122,7 +515,7 @@
   ]
  },
  {
-  "id": "sm-1942-epistolary-tenses-t3",
+  "id": "sm-1942-epistolary-tenses-t9",
   "sectionId": "sm-1942-epistolary-tenses",
   "questions": [
    {
@@ -193,7 +586,7 @@
   ]
  },
  {
-  "id": "sm-1942-epistolary-tenses-t4",
+  "id": "sm-1942-epistolary-tenses-t10",
   "sectionId": "sm-1942-epistolary-tenses",
   "questions": [
    {
@@ -262,7 +655,7 @@
   ]
  },
  {
-  "id": "sm-1942-epistolary-tenses-t5",
+  "id": "sm-1942-epistolary-tenses-t11",
   "sectionId": "sm-1942-epistolary-tenses",
   "questions": [
    {
@@ -328,7 +721,7 @@
   ]
  },
  {
-  "id": "sm-1942-epistolary-tenses-t6",
+  "id": "sm-1942-epistolary-tenses-t12",
   "sectionId": "sm-1942-epistolary-tenses",
   "questions": [
    {

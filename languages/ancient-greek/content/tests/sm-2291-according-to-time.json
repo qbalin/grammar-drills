@@ -1,0 +1,406 @@
+[
+ {
+  "id": "sm-2291-according-to-time-t1",
+  "sectionId": "sm-2291-according-to-time",
+  "questions": [
+   {
+    "prompt": "If the messenger is telling the truth, the general is glad.",
+    "answer": "εἰ ὁ ἄγγελος τὰ ἀληθῆ λέγει, ὁ στρατηγὸς ἥδεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἄγγελος",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγει",
+     "στρατηγὸς",
+     "ἥδεται"
+    ]
+   },
+   {
+    "prompt": "If the guards abandoned the wall, the enemy captured the city.",
+    "answer": "εἰ οἱ φύλακες τὸ τεῖχος κατέλιπον, οἱ πολέμιοι τὴν πόλιν εἷλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "φύλακες",
+     "τὸ",
+     "τεῖχος",
+     "κατέλιπον",
+     "πολέμιοι",
+     "τὴν",
+     "πόλιν",
+     "εἷλον"
+    ]
+   },
+   {
+    "prompt": "If you are spending your father's money, you are doing wrong.",
+    "answer": "εἰ τὰ τοῦ πατρὸς χρήματα δαπανᾷς, ἀδικεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰ",
+     "τοῦ",
+     "πατρὸς",
+     "χρήματα",
+     "δαπανᾷς",
+     "ἀδικεῖς"
+    ]
+   },
+   {
+    "prompt": "If the sailors saw the storm, they turned the ship back.",
+    "answer": "εἰ οἱ ναῦται τὸν χειμῶνα εἶδον, τὴν ναῦν ἀνέστρεψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "ναῦται",
+     "τὸν",
+     "χειμῶνα",
+     "εἶδον",
+     "τὴν",
+     "ναῦν",
+     "ἀνέστρεψαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2291-according-to-time-t2",
+  "sectionId": "sm-2291-according-to-time",
+  "questions": [
+   {
+    "prompt": "Whenever the wine-pourer fills the cups, the guests rejoice.",
+    "answer": "ὅταν ὁ οἰνοχόος τὰς κύλικας πληροῖ, οἱ ξένοι χαίρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "οἰνοχόος",
+     "τὰς",
+     "κύλικας",
+     "πληροῖ",
+     "οἱ",
+     "ξένοι",
+     "χαίρουσιν"
+    ]
+   },
+   {
+    "prompt": "If anyone harms a stranger, he is punished by the gods.",
+    "answer": "ἐάν τις ξένον ἀδικῇ, ὑπὸ τῶν θεῶν κολάζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "ξένον",
+     "ἀδικῇ",
+     "ὑπὸ",
+     "τῶν",
+     "θεῶν",
+     "κολάζεται"
+    ]
+   },
+   {
+    "prompt": "Whenever the general gave the signal, the soldiers advanced.",
+    "answer": "ὁπότε ὁ στρατηγὸς τὸ σημεῖον δοίη, οἱ στρατιῶται προῇσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "σημεῖον",
+     "δοίη",
+     "οἱ",
+     "στρατιῶται",
+     "προῇσαν"
+    ]
+   },
+   {
+    "prompt": "If the boys ever neglected their studies, the teacher grew angry.",
+    "answer": "εἰ οἱ παῖδες τῶν μαθημάτων ἀμελοῖεν, ὁ διδάσκαλος ὠργίζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "παῖδες",
+     "τῶν",
+     "μαθημάτων",
+     "ἀμελοῖεν",
+     "ὁ",
+     "διδάσκαλος",
+     "ὠργίζετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2291-according-to-time-t3",
+  "sectionId": "sm-2291-according-to-time",
+  "questions": [
+   {
+    "prompt": "If you march up into the interior, you will find the enemy.",
+    "answer": "ἐὰν εἰς τὴν μεσόγειαν ἀναβῇς, τοὺς πολεμίους εὑρήσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "εἰς",
+     "τὴν",
+     "μεσόγειαν",
+     "ἀναβῇς",
+     "τοὺς",
+     "πολεμίους",
+     "εὑρήσεις"
+    ]
+   },
+   {
+    "prompt": "If the fleet sails out, we shall guard the harbor.",
+    "answer": "ἐὰν τὸ ναυτικὸν ἐκπλεύσῃ, τὸν λιμένα φυλάξομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὸ",
+     "ναυτικὸν",
+     "ἐκπλεύσῃ",
+     "τὸν",
+     "λιμένα",
+     "φυλάξομεν"
+    ]
+   },
+   {
+    "prompt": "If you cut off the enemy's supplies, they will soon flee.",
+    "answer": "ἐὰν τὰ τῶν πολεμίων ἐπιτήδεια ἀποκόψῃς, ταχέως φεύξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὰ",
+     "τῶν",
+     "πολεμίων",
+     "ἐπιτήδεια",
+     "ἀποκόψῃς",
+     "ταχέως",
+     "φεύξονται"
+    ]
+   },
+   {
+    "prompt": "If the ambassadors announce peace, the citizens will be glad.",
+    "answer": "ἐὰν οἱ πρέσβεις εἰρήνην ἀγγείλωσιν, οἱ πολῖται ἡσθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "πρέσβεις",
+     "εἰρήνην",
+     "ἀγγείλωσιν",
+     "πολῖται",
+     "ἡσθήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2291-according-to-time-t4",
+  "sectionId": "sm-2291-according-to-time",
+  "questions": [
+   {
+    "prompt": "If a stranger should come, we would receive him kindly.",
+    "answer": "εἰ ξένος ἔλθοι, φιλοφρόνως ἂν αὐτὸν δεχοίμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ξένος",
+     "ἔλθοι",
+     "φιλοφρόνως",
+     "ἂν",
+     "αὐτὸν",
+     "δεχοίμεθα"
+    ]
+   },
+   {
+    "prompt": "If you should spend all your money, you would suffer greatly.",
+    "answer": "εἰ πάντα τὰ χρήματα δαπανήσαις, μεγάλα ἂν πάσχοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "πάντα",
+     "τὰ",
+     "χρήματα",
+     "δαπανήσαις",
+     "μεγάλα",
+     "ἂν",
+     "πάσχοις"
+    ]
+   },
+   {
+    "prompt": "If the general should abandon the camp, the soldiers would be afraid.",
+    "answer": "εἰ ὁ στρατηγὸς τὸ στρατόπεδον καταλίποι, οἱ στρατιῶται ἂν φοβοῖντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στρατόπεδον",
+     "καταλίποι",
+     "οἱ",
+     "στρατιῶται",
+     "ἂν",
+     "φοβοῖντο"
+    ]
+   },
+   {
+    "prompt": "If someone should ask this, what would you answer?",
+    "answer": "εἰ τοῦτό τις ἐρωτῴη, τί ἂν ἀποκρίναιο;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοῦτό",
+     "τις",
+     "ἐρωτῴη",
+     "τί",
+     "ἂν",
+     "ἀποκρίναιο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2291-according-to-time-t5",
+  "sectionId": "sm-2291-according-to-time",
+  "questions": [
+   {
+    "prompt": "If you were telling the truth, we would believe you.",
+    "answer": "εἰ τὰ ἀληθῆ ἔλεγες, ἐπιστεύομεν ἄν σοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰ",
+     "ἀληθῆ",
+     "ἔλεγες",
+     "ἐπιστεύομεν",
+     "ἄν",
+     "σοι"
+    ]
+   },
+   {
+    "prompt": "If the city had walls, the enemy would not be attacking it.",
+    "answer": "εἰ ἡ πόλις τείχη εἶχεν, οἱ πολέμιοι οὐκ ἂν αὐτῇ προσέβαλλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "πόλις",
+     "τείχη",
+     "εἶχεν",
+     "οἱ",
+     "πολέμιοι",
+     "οὐκ",
+     "ἂν",
+     "αὐτῇ",
+     "προσέβαλλον"
+    ]
+   },
+   {
+    "prompt": "If we were rich, we would give money to our friends.",
+    "answer": "εἰ πλούσιοι ἦμεν, χρήματα ἂν τοῖς φίλοις ἐδίδομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "πλούσιοι",
+     "ἦμεν",
+     "χρήματα",
+     "ἂν",
+     "τοῖς",
+     "φίλοις",
+     "ἐδίδομεν"
+    ]
+   },
+   {
+    "prompt": "If the wind were blowing, the ships would be sailing out.",
+    "answer": "εἰ ὁ ἄνεμος ἔπνει, αἱ νῆες ἂν ἐξέπλεον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἄνεμος",
+     "ἔπνει",
+     "αἱ",
+     "νῆες",
+     "ἂν",
+     "ἐξέπλεον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2291-according-to-time-t6",
+  "sectionId": "sm-2291-according-to-time",
+  "questions": [
+   {
+    "prompt": "If the guards had kept watch, the city would not have been captured.",
+    "answer": "εἰ οἱ φύλακες ἐφρούρησαν, ἡ πόλις οὐκ ἂν ἑάλω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "φύλακες",
+     "ἐφρούρησαν",
+     "ἡ",
+     "πόλις",
+     "οὐκ",
+     "ἂν",
+     "ἑάλω"
+    ]
+   },
+   {
+    "prompt": "If you had obeyed your parents, you would not have made this mistake.",
+    "answer": "εἰ τοῖς γονεῦσιν ἐπείσθης, ταύτην τὴν ἁμαρτίαν οὐκ ἂν ἥμαρτες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοῖς",
+     "γονεῦσιν",
+     "ἐπείσθης",
+     "ταύτην",
+     "τὴν",
+     "ἁμαρτίαν",
+     "οὐκ",
+     "ἂν",
+     "ἥμαρτες"
+    ]
+   },
+   {
+    "prompt": "If the general had arrived, we would have won the battle.",
+    "answer": "εἰ ὁ στρατηγὸς ἀφίκετο, τὴν μάχην ἂν ἐνικήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀφίκετο",
+     "τὴν",
+     "μάχην",
+     "ἂν",
+     "ἐνικήσαμεν"
+    ]
+   },
+   {
+    "prompt": "If they had cut down the trees, they would have built the ships.",
+    "answer": "εἰ τὰ δένδρα ἔκειραν, τὰς ναῦς ἂν ἐναυπήγησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰ",
+     "δένδρα",
+     "ἔκειραν",
+     "τὰς",
+     "ναῦς",
+     "ἂν",
+     "ἐναυπήγησαν"
+    ]
+   }
+  ]
+ }
+]

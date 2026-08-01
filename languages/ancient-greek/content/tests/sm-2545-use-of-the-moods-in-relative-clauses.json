@@ -1,0 +1,397 @@
+[
+ {
+  "id": "sm-2545-use-of-the-moods-in-relative-clauses-t1",
+  "sectionId": "sm-2545-use-of-the-moods-in-relative-clauses",
+  "questions": [
+   {
+    "prompt": "They chose a general who would lead them safely back home.",
+    "answer": "στρατηγὸν εἵλοντο ὃς αὐτοὺς ἀσφαλῶς οἴκαδε ἄξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατηγόν",
+     "εἵλοντο",
+     "ὅς",
+     "αὐτούς",
+     "ἀσφαλῶς",
+     "οἴκαδε",
+     "ἄξει"
+    ]
+   },
+   {
+    "prompt": "Whoever obeys the laws is honored by the citizens.",
+    "answer": "ὃς ἂν τοῖς νόμοις πείθηται, ὑπὸ τῶν πολιτῶν τιμᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅς",
+     "ἄν",
+     "τοῖς",
+     "νόμοις",
+     "πείθηται",
+     "ὑπό",
+     "τῶν",
+     "πολιτῶν",
+     "τιμᾶται"
+    ]
+   },
+   {
+    "prompt": "There is no one who would willingly betray his friends.",
+    "answer": "οὐδείς ἐστιν ὃς τοὺς φίλους ἑκὼν προδοίη ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἐστιν",
+     "ὅς",
+     "τούς",
+     "φίλους",
+     "ἑκών",
+     "προδοίη",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "He praised the soldiers who had fought bravely by the river.",
+    "answer": "τοὺς στρατιώτας ἐπῄνεσεν οἳ ἀνδρείως παρὰ τῷ ποταμῷ ἐμαχέσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "στρατιώτας",
+     "ἐπῄνεσεν",
+     "οἵ",
+     "ἀνδρείως",
+     "παρά",
+     "τῷ",
+     "ποταμῷ",
+     "ἐμαχέσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2545-use-of-the-moods-in-relative-clauses-t2",
+  "sectionId": "sm-2545-use-of-the-moods-in-relative-clauses",
+  "questions": [
+   {
+    "prompt": "We were seeking a place from which we might watch the enemy.",
+    "answer": "χωρίον ἐζητοῦμεν ὅθεν τοὺς πολεμίους ὁρῷμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χωρίον",
+     "ἐζητοῦμεν",
+     "ὅθεν",
+     "τούς",
+     "πολεμίους",
+     "ὁρῷμεν"
+    ]
+   },
+   {
+    "prompt": "Whatever the gods give, the wise man bears nobly.",
+    "answer": "ἃ ἂν οἱ θεοὶ διδῶσιν, ὁ σοφὸς γενναίως φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅ",
+     "ἄν",
+     "οἱ",
+     "θεοί",
+     "διδῶσιν",
+     "ὁ",
+     "σοφός",
+     "γενναίως",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "He sent messengers who would announce the victory to the allies.",
+    "answer": "ἀγγέλους ἔπεμψεν οἳ τὴν νίκην τοῖς συμμάχοις ἀγγελοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγγέλους",
+     "ἔπεμψεν",
+     "οἵ",
+     "τήν",
+     "νίκην",
+     "τοῖς",
+     "συμμάχοις",
+     "ἀγγελοῦσιν"
+    ]
+   },
+   {
+    "prompt": "There is no city which such men could not save.",
+    "answer": "οὐκ ἔστι πόλις ἣν οἱ τοιοῦτοι ἄνδρες οὐκ ἂν σῴσαιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστι",
+     "πόλις",
+     "ἥν",
+     "οἱ",
+     "τοιοῦτοι",
+     "ἄνδρες",
+     "ἄν",
+     "σῴσαιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2545-use-of-the-moods-in-relative-clauses-t3",
+  "sectionId": "sm-2545-use-of-the-moods-in-relative-clauses",
+  "questions": [
+   {
+    "prompt": "I admire the man who boldly speaks the truth.",
+    "answer": "θαυμάζω τὸν ἄνδρα ὃς τὰ ἀληθῆ θαρραλέως λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "τόν",
+     "ἄνδρα",
+     "ὅς",
+     "τά",
+     "ἀληθῆ",
+     "θαρραλέως",
+     "λέγει"
+    ]
+   },
+   {
+    "prompt": "Such is the deed which no just man would have done.",
+    "answer": "τοιοῦτόν ἐστι τὸ ἔργον ὃ οὐδεὶς δίκαιος ἂν ἔπραξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιοῦτόν",
+     "ἐστι",
+     "τό",
+     "ἔργον",
+     "ὅ",
+     "οὐδείς",
+     "δίκαιος",
+     "ἄν",
+     "ἔπραξεν"
+    ]
+   },
+   {
+    "prompt": "Whoever arrives first will receive the prize.",
+    "answer": "ὃς ἂν πρῶτος ἔλθῃ, τὸ ἆθλον λήψεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅς",
+     "ἄν",
+     "πρῶτος",
+     "ἔλθῃ",
+     "τό",
+     "ἆθλον",
+     "λήψεται"
+    ]
+   },
+   {
+    "prompt": "May I get a guest-friend who would always do what is just.",
+    "answer": "γένοιτό μοι ξένος ὃς ἀεὶ τὰ δίκαια πράττοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γένοιτό",
+     "μοι",
+     "ξένος",
+     "ὅς",
+     "ἀεί",
+     "τά",
+     "δίκαια",
+     "πράττοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2545-use-of-the-moods-in-relative-clauses-t4",
+  "sectionId": "sm-2545-use-of-the-moods-in-relative-clauses",
+  "questions": [
+   {
+    "prompt": "The Cilician provided ships that would carry the army across.",
+    "answer": "ὁ Κίλιξ ναῦς παρέσχεν αἳ τὸ στράτευμα διαβιβάσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κίλιξ",
+     "ναῦς",
+     "παρέσχεν",
+     "αἵ",
+     "τό",
+     "στράτευμα",
+     "διαβιβάσουσιν"
+    ]
+   },
+   {
+    "prompt": "Whatever road you travel, guard against the enemy.",
+    "answer": "ἣν ἂν ὁδὸν πορεύῃ, φυλάττου τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥν",
+     "ἄν",
+     "ὁδόν",
+     "πορεύῃ",
+     "φυλάττου",
+     "τούς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "The gifts which the king sent pleased everyone.",
+    "answer": "τὰ δῶρα ἃ ὁ βασιλεὺς ἔπεμψεν πᾶσιν ἤρεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "δῶρα",
+     "ἅ",
+     "ὁ",
+     "βασιλεύς",
+     "ἔπεμψεν",
+     "πᾶσιν",
+     "ἤρεσεν"
+    ]
+   },
+   {
+    "prompt": "There is one hope by which we might yet be saved.",
+    "answer": "ἔστιν ἐλπὶς μία ᾗ ἔτι σωθεῖμεν ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστιν",
+     "ἐλπίς",
+     "μία",
+     "ᾗ",
+     "ἔτι",
+     "σωθεῖμεν",
+     "ἄν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2545-use-of-the-moods-in-relative-clauses-t5",
+  "sectionId": "sm-2545-use-of-the-moods-in-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Whoever kept fleeing, the general used to pursue.",
+    "answer": "ὃς ἀεὶ φεύγοι, τοῦτον ὁ στρατηγὸς ἐδίωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅς",
+     "ἀεί",
+     "φεύγοι",
+     "τοῦτον",
+     "ὁ",
+     "στρατηγός",
+     "ἐδίωκεν"
+    ]
+   },
+   {
+    "prompt": "He was not the sort of man who would have abandoned his post.",
+    "answer": "οὐκ ἦν ἀνὴρ ὃς τὴν τάξιν ἂν ἔλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἦν",
+     "ἀνήρ",
+     "ὅς",
+     "τήν",
+     "τάξιν",
+     "ἄν",
+     "ἔλιπεν"
+    ]
+   },
+   {
+    "prompt": "Those who help their friends are themselves also helped.",
+    "answer": "οἳ ἂν τοὺς φίλους ὠφελῶσιν, καὶ αὐτοὶ ὠφελοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἵ",
+     "ἄν",
+     "τούς",
+     "φίλους",
+     "ὠφελῶσιν",
+     "καί",
+     "αὐτοί",
+     "ὠφελοῦνται"
+    ]
+   },
+   {
+    "prompt": "They were looking for someone who would guide them through the mountains.",
+    "answer": "ἐζήτουν τινὰ ὃς αὐτοὺς διὰ τῶν ὀρῶν ἡγήσοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐζήτουν",
+     "τινά",
+     "ὅς",
+     "αὐτούς",
+     "διά",
+     "τῶν",
+     "ὀρῶν",
+     "ἡγήσοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2545-use-of-the-moods-in-relative-clauses-t6",
+  "sectionId": "sm-2545-use-of-the-moods-in-relative-clauses",
+  "questions": [
+   {
+    "prompt": "We honored those who died on behalf of their country.",
+    "answer": "ἐτιμήσαμεν ἐκείνους οἳ ὑπὲρ τῆς πατρίδος ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐτιμήσαμεν",
+     "ἐκείνους",
+     "οἵ",
+     "ὑπέρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀπέθανον"
+    ]
+   },
+   {
+    "prompt": "Whatever the city commands, this we shall do.",
+    "answer": "ἃ ἂν ἡ πόλις κελεύῃ, ταῦτα ποιήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅ",
+     "ἄν",
+     "ἡ",
+     "πόλις",
+     "κελεύῃ",
+     "ταῦτα",
+     "ποιήσομεν"
+    ]
+   },
+   {
+    "prompt": "I know no one who could bear such toils more easily.",
+    "answer": "οὐδένα οἶδα ὃς τοὺς τοιούτους πόνους ῥᾷον ἂν φέροι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδένα",
+     "οἶδα",
+     "ὅς",
+     "τούς",
+     "τοιούτους",
+     "πόνους",
+     "ῥᾷον",
+     "ἄν",
+     "φέροι"
+    ]
+   },
+   {
+    "prompt": "The general drew up the soldiers who were to receive the first attack.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἔταξεν οἳ τὴν πρώτην ἔφοδον δέξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τούς",
+     "στρατιώτας",
+     "ἔταξεν",
+     "οἵ",
+     "τήν",
+     "πρώτην",
+     "ἔφοδον",
+     "δέξονται"
+    ]
+   }
+  ]
+ }
+]

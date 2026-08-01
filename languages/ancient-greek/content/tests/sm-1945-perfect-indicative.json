@@ -4,6 +4,380 @@
   "sectionId": "sm-1945-perfect-indicative",
   "questions": [
    {
+    "prompt": "The enemy have broken the truce, and now we are in danger.",
+    "answer": "οἱ πολέμιοι τὰς σπονδὰς λελύκασι, καὶ νῦν ἐν κινδύνῳ ἐσμέν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τάς",
+     "σπονδάς",
+     "λελύκασι",
+     "καί",
+     "νῦν",
+     "ἐν",
+     "κινδύνῳ",
+     "ἐσμέν"
+    ]
+   },
+   {
+    "prompt": "The house has been well built by the workmen.",
+    "answer": "ἡ οἰκία ὑπὸ τῶν ἐργατῶν εὖ ᾠκοδόμηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "οἰκία",
+     "ὑπό",
+     "τῶν",
+     "ἐργατῶν",
+     "εὖ",
+     "ᾠκοδόμηται"
+    ]
+   },
+   {
+    "prompt": "I have formed the opinion that the general is wise.",
+    "answer": "ὑπείληφα τὸν στρατηγὸν σοφὸν εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπείληφα",
+     "τόν",
+     "στρατηγόν",
+     "σοφόν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "The tyrant has taken away their cities and still holds them.",
+    "answer": "ὁ τύραννος τὰς πόλεις παρῄρηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τάς",
+     "πόλεις",
+     "παρῄρηται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t2",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "I possess much gold, but I remember my poverty.",
+    "answer": "πολὺν χρυσὸν κέκτημαι, ἀλλὰ τῆς πενίας μέμνημαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολύν",
+     "χρυσόν",
+     "κέκτημαι",
+     "ἀλλά",
+     "τῆς",
+     "πενίας",
+     "μέμνημαι"
+    ]
+   },
+   {
+    "prompt": "This man is called wise, although he knows nothing.",
+    "answer": "οὗτος σοφὸς κέκληται, καίπερ οὐδὲν εἰδώς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "σοφός",
+     "κέκληται",
+     "καίπερ",
+     "οὐδέν",
+     "εἰδώς"
+    ]
+   },
+   {
+    "prompt": "The old king is dead, but his sons trust in fortune.",
+    "answer": "ὁ γέρων βασιλεὺς τέθνηκεν, οἱ δὲ παῖδες τῇ τύχῃ πεποίθασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "βασιλεύς",
+     "τέθνηκεν",
+     "οἱ",
+     "δέ",
+     "παῖδες",
+     "τῇ",
+     "τύχῃ",
+     "πεποίθασιν"
+    ]
+   },
+   {
+    "prompt": "We are accustomed to obey those who have recognized the truth.",
+    "answer": "εἰθίσμεθα τοῖς τὴν ἀλήθειαν ἐγνωκόσι πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰθίσμεθα",
+     "τοῖς",
+     "τήν",
+     "ἀλήθειαν",
+     "ἐγνωκόσι",
+     "πείθεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t3",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "The dog stands at the gates and roars.",
+    "answer": "ὁ κύων ἐπὶ ταῖς πύλαις ἕστηκε καὶ βέβρυχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κύων",
+     "ἐπί",
+     "ταῖς",
+     "πύλαις",
+     "ἕστηκε",
+     "καί",
+     "βέβρυχεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers, having seen the danger, are filled with alarm and shudder.",
+    "answer": "οἱ στρατιῶται τὸν κίνδυνον ἰδόντες πεφόβηνται καὶ πεφρίκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τόν",
+     "κίνδυνον",
+     "ἰδόντες",
+     "πεφόβηνται",
+     "καί",
+     "πεφρίκασιν"
+    ]
+   },
+   {
+    "prompt": "The woman gazes at the corpse and shouts loudly.",
+    "answer": "ἡ γυνὴ πρὸς τὸν νεκρὸν δέδορκε καὶ μέγα κέκραγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "πρός",
+     "τόν",
+     "νεκρόν",
+     "δέδορκε",
+     "καί",
+     "μέγα",
+     "κέκραγεν"
+    ]
+   },
+   {
+    "prompt": "Now that the enemy have fled, the whole city rejoices.",
+    "answer": "ἐπειδὴ οἱ πολέμιοι πεφεύγασι, πᾶσα ἡ πόλις γέγηθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδή",
+     "οἱ",
+     "πολέμιοι",
+     "πεφεύγασι",
+     "πᾶσα",
+     "ἡ",
+     "πόλις",
+     "γέγηθεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t4",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "Lack of discipline ere now has been the ruin of many armies.",
+    "answer": "ἡ ἀταξία πολλὰ ἤδη στρατεύματα ἀπολώλεκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀταξία",
+     "πολλά",
+     "ἤδη",
+     "στρατεύματα",
+     "ἀπολώλεκεν"
+    ]
+   },
+   {
+    "prompt": "Wealth has often destroyed those who did not know how to use it.",
+    "answer": "ὁ πλοῦτος πολλάκις τοὺς αὐτῷ χρῆσθαι μὴ ἐπισταμένους ἀπολώλεκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλοῦτος",
+     "πολλάκις",
+     "τούς",
+     "αὐτῷ",
+     "χρῆσθαι",
+     "μή",
+     "ἐπισταμένους",
+     "ἀπολώλεκεν"
+    ]
+   },
+   {
+    "prompt": "Time has taught many men to bear their misfortunes.",
+    "answer": "ὁ χρόνος πολλοὺς τὰς συμφορὰς φέρειν δεδίδαχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χρόνος",
+     "πολλούς",
+     "τάς",
+     "συμφοράς",
+     "φέρειν",
+     "δεδίδαχεν"
+    ]
+   },
+   {
+    "prompt": "A just judgment has often saved a city from destruction.",
+    "answer": "ἡ δικαία κρίσις πολλάκις πόλιν ἐκ τῆς ἀπωλείας σέσωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "δικαία",
+     "κρίσις",
+     "πολλάκις",
+     "πόλιν",
+     "ἐκ",
+     "τῆς",
+     "ἀπωλείας",
+     "σέσωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t5",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "The camp has been fortified, and the guards have been stationed.",
+    "answer": "τὸ στρατόπεδον τετείχισται, καὶ οἱ φύλακες καθεστήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "στρατόπεδον",
+     "τετείχισται",
+     "καί",
+     "οἱ",
+     "φύλακες",
+     "καθεστήκασιν"
+    ]
+   },
+   {
+    "prompt": "Everything has been prepared for the journey.",
+    "answer": "πάντα πρὸς τὴν πορείαν παρεσκεύασται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "πρός",
+     "τήν",
+     "πορείαν",
+     "παρεσκεύασται"
+    ]
+   },
+   {
+    "prompt": "The truth has been made clear to all the citizens.",
+    "answer": "ἡ ἀλήθεια πᾶσι τοῖς πολίταις δεδήλωται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "πᾶσι",
+     "τοῖς",
+     "πολίταις",
+     "δεδήλωται"
+    ]
+   },
+   {
+    "prompt": "These things have been resolved by the assembly.",
+    "answer": "ταῦτα ὑπὸ τῆς ἐκκλησίας βεβούλευται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ὑπό",
+     "τῆς",
+     "ἐκκλησίας",
+     "βεβούλευται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t6",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "If we conquer here too, everything has been accomplished for us.",
+    "answer": "ἐὰν ἐνταῦθα νικῶμεν, πάντα ἡμῖν πεποίηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἐνταῦθα",
+     "νικῶμεν",
+     "πάντα",
+     "ἡμῖν",
+     "πεποίηται"
+    ]
+   },
+   {
+    "prompt": "What fortune has lent you, these things she has taken back again.",
+    "answer": "ἃ ἡ τύχη σοι κέχρηκε, ταῦτα πάλιν ἀφῄρηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅ",
+     "ἡ",
+     "τύχη",
+     "σοι",
+     "κέχρηκε",
+     "ταῦτα",
+     "πάλιν",
+     "ἀφῄρηται"
+    ]
+   },
+   {
+    "prompt": "The men who have died for their country are honored by all.",
+    "answer": "οἱ ὑπὲρ τῆς πατρίδος τεθνηκότες ὑπὸ πάντων τιμῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑπέρ",
+     "τῆς",
+     "πατρίδος",
+     "τεθνηκότες",
+     "ὑπό",
+     "πάντων",
+     "τιμῶνται"
+    ]
+   },
+   {
+    "prompt": "Since we have come to trust one another, let us make peace.",
+    "answer": "ἐπειδὴ ἀλλήλοις πεπιστεύκαμεν, εἰρήνην ποιώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδή",
+     "ἀλλήλοις",
+     "πεπιστεύκαμεν",
+     "εἰρήνην",
+     "ποιώμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t7",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
     "prompt": "The enemy have broken the truce, and now we no longer trust them.",
     "answer": "οἱ πολέμιοι τὰς σπονδὰς λελύκασι, καὶ νῦν αὐτοῖς οὐκέτι πιστεύομεν.",
     "kind": "translate-en-grc",
@@ -68,7 +442,7 @@
   ]
  },
  {
-  "id": "sm-1945-perfect-indicative-t2",
+  "id": "sm-1945-perfect-indicative-t8",
   "sectionId": "sm-1945-perfect-indicative",
   "questions": [
    {
@@ -141,7 +515,7 @@
   ]
  },
  {
-  "id": "sm-1945-perfect-indicative-t3",
+  "id": "sm-1945-perfect-indicative-t9",
   "sectionId": "sm-1945-perfect-indicative",
   "questions": [
    {
@@ -212,7 +586,7 @@
   ]
  },
  {
-  "id": "sm-1945-perfect-indicative-t4",
+  "id": "sm-1945-perfect-indicative-t10",
   "sectionId": "sm-1945-perfect-indicative",
   "questions": [
    {
@@ -279,7 +653,7 @@
   ]
  },
  {
-  "id": "sm-1945-perfect-indicative-t5",
+  "id": "sm-1945-perfect-indicative-t11",
   "sectionId": "sm-1945-perfect-indicative",
   "questions": [
    {
@@ -337,7 +711,7 @@
   ]
  },
  {
-  "id": "sm-1945-perfect-indicative-t6",
+  "id": "sm-1945-perfect-indicative-t12",
   "sectionId": "sm-1945-perfect-indicative",
   "questions": [
    {

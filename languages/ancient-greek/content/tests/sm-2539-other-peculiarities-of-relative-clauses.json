@@ -1,0 +1,392 @@
+[
+ {
+  "id": "sm-2539-other-peculiarities-of-relative-clauses-t1",
+  "sectionId": "sm-2539-other-peculiarities-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Do you know the plan which I intend to carry out?",
+    "answer": "ἆρα γιγνώσκεις ἣν διανοοῦμαι πρᾶξαι τὴν βουλήν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "γιγνώσκεις",
+     "ἣν",
+     "διανοοῦμαι",
+     "πρᾶξαι",
+     "τὴν",
+     "βουλήν"
+    ]
+   },
+   {
+    "prompt": "You see the danger which I fear.",
+    "answer": "ὁρᾷς ὃν ἐγὼ φοβοῦμαι τὸν κίνδυνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρᾷς",
+     "ὃν",
+     "ἐγὼ",
+     "φοβοῦμαι",
+     "τὸν",
+     "κίνδυνον"
+    ]
+   },
+   {
+    "prompt": "Remember the oath which you swore.",
+    "answer": "μέμνησο ὃν ὤμοσας τὸν ὅρκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνησο",
+     "ὃν",
+     "ὤμοσας",
+     "τὸν",
+     "ὅρκον"
+    ]
+   },
+   {
+    "prompt": "The judges will examine the law which the accuser cites.",
+    "answer": "οἱ δικασταὶ σκέψονται ὃν ὁ κατήγορος λέγει τὸν νόμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "σκέψονται",
+     "ὃν",
+     "ὁ",
+     "κατήγορος",
+     "λέγει",
+     "τὸν",
+     "νόμον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2539-other-peculiarities-of-relative-clauses-t2",
+  "sectionId": "sm-2539-other-peculiarities-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "You will honor the men who saved the city, the soldiers and the generals.",
+    "answer": "τιμήσεις τοὺς ἄνδρας οἳ τὴν πόλιν ἔσωσαν, οἱ στρατιῶται καὶ οἱ στρατηγοί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμήσεις",
+     "τοὺς",
+     "ἄνδρας",
+     "οἳ",
+     "τὴν",
+     "πόλιν",
+     "ἔσωσαν",
+     "οἱ",
+     "στρατιῶται",
+     "καὶ",
+     "στρατηγοί"
+    ]
+   },
+   {
+    "prompt": "I praise those who fought bravely, the horsemen and the hoplites.",
+    "answer": "ἐπαινῶ τούτους οἳ ἀνδρείως ἐμαχέσαντο, οἱ ἱππεῖς καὶ οἱ ὁπλῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπαινῶ",
+     "τούτους",
+     "οἳ",
+     "ἀνδρείως",
+     "ἐμαχέσαντο",
+     "οἱ",
+     "ἱππεῖς",
+     "καὶ",
+     "ὁπλῖται"
+    ]
+   },
+   {
+    "prompt": "He addressed those whom he most respected, the elders and the priests.",
+    "answer": "προσηγόρευσε τούτους οὓς μάλιστα ᾐδεῖτο, τοὺς πρεσβυτέρους καὶ τοὺς ἱερέας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσηγόρευσε",
+     "τούτους",
+     "οὓς",
+     "μάλιστα",
+     "ᾐδεῖτο",
+     "τοὺς",
+     "πρεσβυτέρους",
+     "καὶ",
+     "ἱερέας"
+    ]
+   },
+   {
+    "prompt": "We shall obey the laws which the wise established, the written and the unwritten.",
+    "answer": "πεισόμεθα τοῖς νόμοις οὓς οἱ σοφοὶ κατέστησαν, τοὺς γεγραμμένους καὶ τοὺς ἀγράφους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πεισόμεθα",
+     "τοῖς",
+     "νόμοις",
+     "οὓς",
+     "οἱ",
+     "σοφοὶ",
+     "κατέστησαν",
+     "τοὺς",
+     "γεγραμμένους",
+     "καὶ",
+     "ἀγράφους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2539-other-peculiarities-of-relative-clauses-t3",
+  "sectionId": "sm-2539-other-peculiarities-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Whoever guards the walls, that man is worthy of great honor.",
+    "answer": "ὅστις ἂν τὰ τείχη φυλάττῃ, οὗτος ὁ ἀνὴρ μεγάλης τιμῆς ἄξιός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἂν",
+     "τὰ",
+     "τείχη",
+     "φυλάττῃ",
+     "οὗτος",
+     "ὁ",
+     "ἀνὴρ",
+     "μεγάλης",
+     "τιμῆς",
+     "ἄξιός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The things which the enemy destroyed, these the citizens rebuilt.",
+    "answer": "ἃ οἱ πολέμιοι διέφθειραν, ταῦτα οἱ πολῖται πάλιν ᾠκοδόμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "οἱ",
+     "πολέμιοι",
+     "διέφθειραν",
+     "ταῦτα",
+     "πολῖται",
+     "πάλιν",
+     "ᾠκοδόμησαν"
+    ]
+   },
+   {
+    "prompt": "Whomever the city trusts, these it appoints as generals.",
+    "answer": "οἷς ἂν ἡ πόλις πιστεύῃ, τούτους στρατηγοὺς καθίστησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἷς",
+     "ἂν",
+     "ἡ",
+     "πόλις",
+     "πιστεύῃ",
+     "τούτους",
+     "στρατηγοὺς",
+     "καθίστησιν"
+    ]
+   },
+   {
+    "prompt": "Whatever the god gives, this a wise man gladly receives.",
+    "answer": "ἃ ἂν ὁ θεὸς διδῷ, ταῦτα ὁ σοφὸς ἡδέως δέχεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "ἂν",
+     "ὁ",
+     "θεὸς",
+     "διδῷ",
+     "ταῦτα",
+     "σοφὸς",
+     "ἡδέως",
+     "δέχεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2539-other-peculiarities-of-relative-clauses-t4",
+  "sectionId": "sm-2539-other-peculiarities-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "They captured the fort of the enemy which stood there.",
+    "answer": "εἷλον τὸ τείχισμα ὃ ἦν αὐτόθι τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἷλον",
+     "τὸ",
+     "τείχισμα",
+     "ὃ",
+     "ἦν",
+     "αὐτόθι",
+     "τῶν",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "I was willing to give this man the pledge which was the most solemn.",
+    "answer": "ἤθελον τούτῳ ταύτην δοῦναι ἥτις εἴη μεγίστη πίστις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤθελον",
+     "τούτῳ",
+     "ταύτην",
+     "δοῦναι",
+     "ἥτις",
+     "εἴη",
+     "μεγίστη",
+     "πίστις"
+    ]
+   },
+   {
+    "prompt": "Show us what the just line of defense is.",
+    "answer": "ἐπίδειξον ἡμῖν ἥτις ἐστὶν ἡ δικαία ἀπολογία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπίδειξον",
+     "ἡμῖν",
+     "ἥτις",
+     "ἐστὶν",
+     "ἡ",
+     "δικαία",
+     "ἀπολογία"
+    ]
+   },
+   {
+    "prompt": "We admired the high tower which belonged to the city.",
+    "answer": "ἐθαυμάσαμεν τὸν ὑψηλὸν πύργον ὃς ἦν τῆς πόλεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαυμάσαμεν",
+     "τὸν",
+     "ὑψηλὸν",
+     "πύργον",
+     "ὃς",
+     "ἦν",
+     "τῆς",
+     "πόλεως"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2539-other-peculiarities-of-relative-clauses-t5",
+  "sectionId": "sm-2539-other-peculiarities-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "He led as many allies as he could.",
+    "answer": "ἤγαγε συμμάχους ὁπόσους πλείστους ἐδύνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤγαγε",
+     "συμμάχους",
+     "ὁπόσους",
+     "πλείστους",
+     "ἐδύνατο"
+    ]
+   },
+   {
+    "prompt": "As soon as the general arrived, we attacked.",
+    "answer": "ἐπεὶ τάχιστα ὁ στρατηγὸς ἀφίκετο, προσεβάλομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τάχιστα",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀφίκετο",
+     "προσεβάλομεν"
+    ]
+   },
+   {
+    "prompt": "Send as many ships as possible to the harbor.",
+    "answer": "πέμψον ναῦς ὡς πλείστας εἰς τὸν λιμένα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμψον",
+     "ναῦς",
+     "ὡς",
+     "πλείστας",
+     "εἰς",
+     "τὸν",
+     "λιμένα"
+    ]
+   },
+   {
+    "prompt": "As soon as they could, they fled to the mountain.",
+    "answer": "ὡς τάχιστα ἔφυγον πρὸς τὸ ὄρος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "τάχιστα",
+     "ἔφυγον",
+     "πρὸς",
+     "τὸ",
+     "ὄρος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2539-other-peculiarities-of-relative-clauses-t6",
+  "sectionId": "sm-2539-other-peculiarities-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "They halted where there is what men call the Sacred Way.",
+    "answer": "ἔστησαν ἔνθα καλεῖται ἱερὰ ὁδός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστησαν",
+     "ἔνθα",
+     "καλεῖται",
+     "ἱερὰ",
+     "ὁδός"
+    ]
+   },
+   {
+    "prompt": "We sacrificed where there is what is called the god's temple.",
+    "answer": "ἐθύσαμεν ἔνθα καλεῖται τοῦ θεοῦ ἱερόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθύσαμεν",
+     "ἔνθα",
+     "καλεῖται",
+     "τοῦ",
+     "θεοῦ",
+     "ἱερόν"
+    ]
+   },
+   {
+    "prompt": "They seize a fort which the citizens once built and used as a lawcourt.",
+    "answer": "καταλαμβάνουσι τεῖχος ὅ ποτε οἱ πολῖται τειχισάμενοι δικαστηρίῳ ἐχρῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καταλαμβάνουσι",
+     "τεῖχος",
+     "ὅ",
+     "ποτε",
+     "οἱ",
+     "πολῖται",
+     "τειχισάμενοι",
+     "δικαστηρίῳ",
+     "ἐχρῶντο"
+    ]
+   },
+   {
+    "prompt": "He showed us where there is what is called the tomb of the heroes.",
+    "answer": "ἔδειξεν ἡμῖν ἔνθα καλεῖται τῶν ἡρώων μνῆμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδειξεν",
+     "ἡμῖν",
+     "ἔνθα",
+     "καλεῖται",
+     "τῶν",
+     "ἡρώων",
+     "μνῆμα"
+    ]
+   }
+  ]
+ }
+]

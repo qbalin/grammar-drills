@@ -1,0 +1,407 @@
+[
+ {
+  "id": "sm-2418-temporal-clauses-denoting-purpose-t1",
+  "sectionId": "sm-2418-temporal-clauses-denoting-purpose",
+  "questions": [
+   {
+    "prompt": "The generals waited until the allies should arrive.",
+    "answer": "οἱ στρατηγοὶ ἔμενον ἕως οἱ σύμμαχοι ἀφίκοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατηγοί",
+     "ἔμενον",
+     "ἕως",
+     "σύμμαχοι",
+     "ἀφίκοιντο"
+    ]
+   },
+   {
+    "prompt": "They left a garrison until the citizens should settle these matters.",
+    "answer": "φυλακὴν κατέλιπον ἕως οἱ πολῖται ταῦτα διαπράξαιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλακήν",
+     "κατέλιπον",
+     "ἕως",
+     "οἱ",
+     "πολῖται",
+     "ταῦτα",
+     "διαπράξαιντο"
+    ]
+   },
+   {
+    "prompt": "We remained on the island until the ships should sail against the enemy.",
+    "answer": "ἐν τῇ νήσῳ ἐμείναμεν ἕως αἱ νῆες ἐπὶ τοὺς πολεμίους προσπλεύσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "νήσῳ",
+     "ἐμείναμεν",
+     "ἕως",
+     "αἱ",
+     "νῆες",
+     "ἐπί",
+     "τούς",
+     "πολεμίους",
+     "προσπλεύσειαν"
+    ]
+   },
+   {
+    "prompt": "The old man kept silent until his son should return home.",
+    "answer": "ὁ γέρων ἐσίγα ἕως ὁ υἱὸς οἴκαδε ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἐσίγα",
+     "ἕως",
+     "υἱός",
+     "οἴκαδε",
+     "ἐπανέλθοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2418-temporal-clauses-denoting-purpose-t2",
+  "sectionId": "sm-2418-temporal-clauses-denoting-purpose",
+  "questions": [
+   {
+    "prompt": "He left soldiers to guard the wall until the enemy should withdraw.",
+    "answer": "στρατιώτας κατέλιπε φυλάττειν τὸ τεῖχος ἕως ἂν οἱ πολέμιοι ἀποχωρήσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατιώτας",
+     "κατέλιπε",
+     "φυλάττειν",
+     "τό",
+     "τεῖχος",
+     "ἕως",
+     "ἄν",
+     "οἱ",
+     "πολέμιοι",
+     "ἀποχωρήσωσιν"
+    ]
+   },
+   {
+    "prompt": "Let us wait here until the general should give the signal.",
+    "answer": "ἐνθάδε μένωμεν ἕως ἂν ὁ στρατηγὸς τὸ σημεῖον δῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνθάδε",
+     "μένωμεν",
+     "ἕως",
+     "ἄν",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "σημεῖον",
+     "δῷ"
+    ]
+   },
+   {
+    "prompt": "Guard the prisoners until the judges should decide the case.",
+    "answer": "φυλάττετε τοὺς δεσμώτας ἕως ἂν οἱ δικασταὶ τὴν δίκην κρίνωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάττετε",
+     "τούς",
+     "δεσμώτας",
+     "ἕως",
+     "ἄν",
+     "οἱ",
+     "δικασταί",
+     "τήν",
+     "δίκην",
+     "κρίνωσιν"
+    ]
+   },
+   {
+    "prompt": "The sailors will hold the harbor until the fleet should come to their aid.",
+    "answer": "οἱ ναῦται τὸν λιμένα καθέξουσιν ἕως ἂν τὸ ναυτικὸν βοηθήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τόν",
+     "λιμένα",
+     "καθέξουσιν",
+     "ἕως",
+     "ἄν",
+     "τό",
+     "ναυτικόν",
+     "βοηθήσῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2418-temporal-clauses-denoting-purpose-t3",
+  "sectionId": "sm-2418-temporal-clauses-denoting-purpose",
+  "questions": [
+   {
+    "prompt": "Flee before the enemy should capture the city.",
+    "answer": "φεύγετε πρὶν τοὺς πολεμίους τὴν πόλιν ἑλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεύγετε",
+     "πρίν",
+     "τούς",
+     "πολεμίους",
+     "τήν",
+     "πόλιν",
+     "ἑλεῖν"
+    ]
+   },
+   {
+    "prompt": "They hid the money before the thieves should seize it.",
+    "answer": "τὰ χρήματα ἔκρυψαν πρὶν τοὺς κλῶπας ἁρπάσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "χρήματα",
+     "ἔκρυψαν",
+     "πρίν",
+     "τούς",
+     "κλῶπας",
+     "ἁρπάσαι"
+    ]
+   },
+   {
+    "prompt": "We must send messengers before the general should march away.",
+    "answer": "ἀγγέλους πεμπτέον ἐστὶ πρὶν τὸν στρατηγὸν ἀπελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγγέλους",
+     "πεμπτέον",
+     "ἐστί",
+     "πρίν",
+     "τόν",
+     "στρατηγόν",
+     "ἀπελθεῖν"
+    ]
+   },
+   {
+    "prompt": "The Greeks would not retreat before they should conquer the barbarians.",
+    "answer": "οἱ Ἕλληνες οὐκ ἀνεχώρουν πρὶν τοὺς βαρβάρους νικήσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "οὐκ",
+     "ἀνεχώρουν",
+     "πρίν",
+     "τούς",
+     "βαρβάρους",
+     "νικήσειαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2418-temporal-clauses-denoting-purpose-t4",
+  "sectionId": "sm-2418-temporal-clauses-denoting-purpose",
+  "questions": [
+   {
+    "prompt": "The ambassadors made a truce until the terms should be announced.",
+    "answer": "οἱ πρέσβεις σπονδὰς ἐποιήσαντο ἕως τὰ λεχθέντα ἀπαγγελθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "σπονδάς",
+     "ἐποιήσαντο",
+     "ἕως",
+     "τά",
+     "λεχθέντα",
+     "ἀπαγγελθείη"
+    ]
+   },
+   {
+    "prompt": "They held the other places, waiting until the Spartans should do what had been agreed.",
+    "answer": "τὰ ἄλλα χωρία εἶχον μένοντες ἕως οἱ Λακεδαιμόνιοι τὰ εἰρημένα ποιήσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἄλλα",
+     "χωρία",
+     "εἶχον",
+     "μένοντες",
+     "ἕως",
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "εἰρημένα",
+     "ποιήσειαν"
+    ]
+   },
+   {
+    "prompt": "The mother kept giving the child food until he should grow strong.",
+    "answer": "ἡ μήτηρ τῷ παιδὶ σῖτον παρεῖχεν ἕως ἰσχυρὸς γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "τῷ",
+     "παιδί",
+     "σῖτον",
+     "παρεῖχεν",
+     "ἕως",
+     "ἰσχυρός",
+     "γένοιτο"
+    ]
+   },
+   {
+    "prompt": "The soldiers guarded the pass until their comrades should escape.",
+    "answer": "οἱ στρατιῶται τὴν πάροδον ἐφύλαττον ἕως οἱ ἑταῖροι διαφύγοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τήν",
+     "πάροδον",
+     "ἐφύλαττον",
+     "ἕως",
+     "ἑταῖροι",
+     "διαφύγοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2418-temporal-clauses-denoting-purpose-t5",
+  "sectionId": "sm-2418-temporal-clauses-denoting-purpose",
+  "questions": [
+   {
+    "prompt": "He posted guards to remain until he himself should return with the army.",
+    "answer": "φύλακας κατέστησεν ἕως αὐτὸς σὺν τῷ στρατεύματι ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φύλακας",
+     "κατέστησεν",
+     "ἕως",
+     "αὐτός",
+     "σύν",
+     "τῷ",
+     "στρατεύματι",
+     "ἐπανέλθοι"
+    ]
+   },
+   {
+    "prompt": "Stay in the camp until the scouts should bring news.",
+    "answer": "ἐν τῷ στρατοπέδῳ μένετε ἕως ἂν οἱ σκοποὶ ἀγγελίαν φέρωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "μένετε",
+     "ἕως",
+     "ἄν",
+     "οἱ",
+     "σκοποί",
+     "ἀγγελίαν",
+     "φέρωσιν"
+    ]
+   },
+   {
+    "prompt": "The citizens chose men to care for the city until the laws should be established.",
+    "answer": "οἱ πολῖται ἄνδρας εἵλοντο ἐπιμελεῖσθαι τῆς πόλεως ἕως ἂν οἱ νόμοι τεθεῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἄνδρας",
+     "εἵλοντο",
+     "ἐπιμελεῖσθαι",
+     "τῆς",
+     "πόλεως",
+     "ἕως",
+     "ἄν",
+     "νόμοι",
+     "τεθεῖεν"
+    ]
+   },
+   {
+    "prompt": "We shall wait until you should persuade the assembly.",
+    "answer": "περιμενοῦμεν ἕως ἂν τὴν ἐκκλησίαν πείσῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περιμενοῦμεν",
+     "ἕως",
+     "ἄν",
+     "τήν",
+     "ἐκκλησίαν",
+     "πείσῃς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2418-temporal-clauses-denoting-purpose-t6",
+  "sectionId": "sm-2418-temporal-clauses-denoting-purpose",
+  "questions": [
+   {
+    "prompt": "The general drew up the army before the enemy should attack.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα παρέταξε πρὶν τοὺς πολεμίους προσβαλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "παρέταξε",
+     "πρίν",
+     "τούς",
+     "πολεμίους",
+     "προσβαλεῖν"
+    ]
+   },
+   {
+    "prompt": "Let us seize the heights before the barbarians should occupy them.",
+    "answer": "τὰ ἄκρα καταλάβωμεν πρὶν τοὺς βαρβάρους αὐτὰ κατασχεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἄκρα",
+     "καταλάβωμεν",
+     "πρίν",
+     "τούς",
+     "βαρβάρους",
+     "αὐτά",
+     "κατασχεῖν"
+    ]
+   },
+   {
+    "prompt": "They waited on the shore until the storm should cease.",
+    "answer": "ἐπὶ τῇ ἀκτῇ ἔμενον ἕως ὁ χειμὼν παύσαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπί",
+     "τῇ",
+     "ἀκτῇ",
+     "ἔμενον",
+     "ἕως",
+     "ὁ",
+     "χειμών",
+     "παύσαιτο"
+    ]
+   },
+   {
+    "prompt": "Guard the gates until I should give the command.",
+    "answer": "τὰς πύλας φυλάττετε ἕως ἂν ἐγὼ κελεύσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάς",
+     "πύλας",
+     "φυλάττετε",
+     "ἕως",
+     "ἄν",
+     "ἐγώ",
+     "κελεύσω"
+    ]
+   }
+  ]
+ }
+]

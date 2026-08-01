@@ -1,0 +1,401 @@
+[
+ {
+  "id": "sm-2577-dependent-statements-introduced-by-oti-t1",
+  "sectionId": "sm-2577-dependent-statements-introduced-by-oti",
+  "questions": [
+   {
+    "prompt": "The messenger announced that the enemy had fled during the night.",
+    "answer": "ὁ ἄγγελος ἀπήγγειλεν ὅτι οἱ πολέμιοι τῆς νυκτὸς ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἀπήγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "τῆς",
+     "νυκτὸς",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Socrates used to say that no one does wrong willingly.",
+    "answer": "ὁ Σωκράτης ἔλεγεν ὅτι οὐδεὶς ἑκὼν ἀδικεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "ἔλεγεν",
+     "ὅτι",
+     "οὐδεὶς",
+     "ἑκὼν",
+     "ἀδικεῖ"
+    ]
+   },
+   {
+    "prompt": "He declared that he would give the orphans money.",
+    "answer": "εἶπεν ὅτι τοῖς ὀρφανοῖς χρήματα δώσοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "τοῖς",
+     "ὀρφανοῖς",
+     "χρήματα",
+     "δώσοι"
+    ]
+   },
+   {
+    "prompt": "The witnesses testified that the young man had struck the old man.",
+    "answer": "οἱ μάρτυρες ἐμαρτύρησαν ὅτι ὁ νεανίας τὸν γέροντα ἐπάταξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μάρτυρες",
+     "ἐμαρτύρησαν",
+     "ὅτι",
+     "ὁ",
+     "νεανίας",
+     "τὸν",
+     "γέροντα",
+     "ἐπάταξεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2577-dependent-statements-introduced-by-oti-t2",
+  "sectionId": "sm-2577-dependent-statements-introduced-by-oti",
+  "questions": [
+   {
+    "prompt": "We know that virtue is more valuable than wealth.",
+    "answer": "ἴσμεν ὅτι ἡ ἀρετὴ πλούτου τιμιωτέρα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσμεν",
+     "ὅτι",
+     "ἡ",
+     "ἀρετὴ",
+     "πλούτου",
+     "τιμιωτέρα",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The general perceived that the soldiers were weary from the march.",
+    "answer": "ὁ στρατηγὸς ᾔσθετο ὅτι οἱ στρατιῶται ὑπὸ τῆς πορείας κάμνοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ᾔσθετο",
+     "ὅτι",
+     "οἱ",
+     "στρατιῶται",
+     "ὑπὸ",
+     "τῆς",
+     "πορείας",
+     "κάμνοιεν"
+    ]
+   },
+   {
+    "prompt": "You see that the road leads toward the mountains.",
+    "answer": "ὁρᾷς ὅτι ἡ ὁδὸς πρὸς τὰ ὄρη φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρᾷς",
+     "ὅτι",
+     "ἡ",
+     "ὁδὸς",
+     "πρὸς",
+     "τὰ",
+     "ὄρη",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "The child did not understand that his father had died.",
+    "answer": "ὁ παῖς οὐκ ἔγνω ὅτι ὁ πατὴρ αὐτοῦ τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "οὐκ",
+     "ἔγνω",
+     "ὅτι",
+     "πατὴρ",
+     "αὐτοῦ",
+     "τέθνηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2577-dependent-statements-introduced-by-oti-t3",
+  "sectionId": "sm-2577-dependent-statements-introduced-by-oti",
+  "questions": [
+   {
+    "prompt": "He slandered the citizens, alleging that they intended nothing sincere.",
+    "answer": "διέβαλλε τοὺς πολίτας ὡς οὐδὲν ὑγιὲς ἐν νῷ ἔχοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διέβαλλε",
+     "τοὺς",
+     "πολίτας",
+     "ὡς",
+     "οὐδὲν",
+     "ὑγιὲς",
+     "ἐν",
+     "νῷ",
+     "ἔχοιεν"
+    ]
+   },
+   {
+    "prompt": "The accusers convinced the jurors that Socrates deserved death.",
+    "answer": "οἱ κατήγοροι τοὺς δικαστὰς ἔπεισαν ὡς ἄξιος εἴη θανάτου ὁ Σωκράτης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κατήγοροι",
+     "τοὺς",
+     "δικαστὰς",
+     "ἔπεισαν",
+     "ὡς",
+     "ἄξιος",
+     "εἴη",
+     "θανάτου",
+     "ὁ",
+     "Σωκράτης"
+    ]
+   },
+   {
+    "prompt": "The local people believe that Hephaestus works at his forge.",
+    "answer": "οἱ ἐπιχώριοι νομίζουσιν ὡς ὁ Ἥφαιστος χαλκεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐπιχώριοι",
+     "νομίζουσιν",
+     "ὡς",
+     "ὁ",
+     "Ἥφαιστος",
+     "χαλκεύει"
+    ]
+   },
+   {
+    "prompt": "He pretended that he knew nothing of the plot.",
+    "answer": "προσεποιεῖτο ὡς οὐδὲν εἰδείη τῆς ἐπιβουλῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσεποιεῖτο",
+     "ὡς",
+     "οὐδὲν",
+     "εἰδείη",
+     "τῆς",
+     "ἐπιβουλῆς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2577-dependent-statements-introduced-by-oti-t4",
+  "sectionId": "sm-2577-dependent-statements-introduced-by-oti",
+  "questions": [
+   {
+    "prompt": "I rejoice that you have returned safe from the war.",
+    "answer": "χαίρω ὅτι σῶς ἐκ τοῦ πολέμου ἐπανελήλυθας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαίρω",
+     "ὅτι",
+     "σῶς",
+     "ἐκ",
+     "τοῦ",
+     "πολέμου",
+     "ἐπανελήλυθας"
+    ]
+   },
+   {
+    "prompt": "The soldiers were angry that the general had abandoned the wounded.",
+    "answer": "οἱ στρατιῶται ὠργίζοντο ὅτι ὁ στρατηγὸς τοὺς τετρωμένους καταλίποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ὠργίζοντο",
+     "ὅτι",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "τετρωμένους",
+     "καταλίποι"
+    ]
+   },
+   {
+    "prompt": "I wonder that the poet praises such wicked deeds.",
+    "answer": "θαυμάζω ὅτι ὁ ποιητὴς τοιαῦτα πονηρὰ ἔργα ἐπαινεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "ὅτι",
+     "ὁ",
+     "ποιητὴς",
+     "τοιαῦτα",
+     "πονηρὰ",
+     "ἔργα",
+     "ἐπαινεῖ"
+    ]
+   },
+   {
+    "prompt": "The mother grieved that her son had perished in the sea-fight.",
+    "answer": "ἡ μήτηρ ἤχθετο ὅτι ὁ υἱὸς ἐν τῇ ναυμαχίᾳ ἀπόλοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "ἤχθετο",
+     "ὅτι",
+     "ὁ",
+     "υἱὸς",
+     "ἐν",
+     "τῇ",
+     "ναυμαχίᾳ",
+     "ἀπόλοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2577-dependent-statements-introduced-by-oti-t5",
+  "sectionId": "sm-2577-dependent-statements-introduced-by-oti",
+  "questions": [
+   {
+    "prompt": "It is clear that these men are the worst of all.",
+    "answer": "δῆλόν ἐστιν ὅτι οὗτοι πάντων πονηρότατοί εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆλόν",
+     "ἐστιν",
+     "ὅτι",
+     "οὗτοι",
+     "πάντων",
+     "πονηρότατοί",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "You are evidently deceiving those who trust you.",
+    "answer": "δῆλος εἶ ὅτι τοὺς σοὶ πιστεύοντας ἐξαπατᾷς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆλος",
+     "εἶ",
+     "ὅτι",
+     "τοὺς",
+     "σοὶ",
+     "πιστεύοντας",
+     "ἐξαπατᾷς"
+    ]
+   },
+   {
+    "prompt": "This deserves praise, that they freed the Greeks from fear.",
+    "answer": "τοῦτο ἄξιον ἐπαίνου, ὅτι τοὺς Ἕλληνας τοῦ φόβου ἀπήλλαξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "ἄξιον",
+     "ἐπαίνου",
+     "ὅτι",
+     "τοὺς",
+     "Ἕλληνας",
+     "τοῦ",
+     "φόβου",
+     "ἀπήλλαξαν"
+    ]
+   },
+   {
+    "prompt": "As proof that this is so, read me the decree.",
+    "answer": "ὅτι δὲ ταῦτα οὕτως ἔχει, ἀνάγνωθί μοι τὸ ψήφισμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτι",
+     "δὲ",
+     "ταῦτα",
+     "οὕτως",
+     "ἔχει",
+     "ἀνάγνωθί",
+     "μοι",
+     "τὸ",
+     "ψήφισμα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2577-dependent-statements-introduced-by-oti-t6",
+  "sectionId": "sm-2577-dependent-statements-introduced-by-oti",
+  "questions": [
+   {
+    "prompt": "The scout revealed that the barbarians were encamping by the river.",
+    "answer": "ὁ σκοπὸς ἐδήλωσεν ὅτι οἱ βάρβαροι παρὰ τῷ ποταμῷ στρατοπεδεύοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σκοπὸς",
+     "ἐδήλωσεν",
+     "ὅτι",
+     "οἱ",
+     "βάρβαροι",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ",
+     "στρατοπεδεύοιντο"
+    ]
+   },
+   {
+    "prompt": "He said that, if they did not descend, he would burn the villages.",
+    "answer": "ἔλεγεν ὅτι, εἰ μὴ καταβαῖεν, ὅτι κατακαύσοι τὰς κώμας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "εἰ",
+     "μὴ",
+     "καταβαῖεν",
+     "κατακαύσοι",
+     "τὰς",
+     "κώμας"
+    ]
+   },
+   {
+    "prompt": "The captives announced that Orestes was dead.",
+    "answer": "οἱ αἰχμάλωτοι ἀπήγγειλαν ὅτι Ὀρέστης τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ἀπήγγειλαν",
+     "ὅτι",
+     "Ὀρέστης",
+     "τέθνηκεν"
+    ]
+   },
+   {
+    "prompt": "Everyone knows that the tyrant fears the wise.",
+    "answer": "πάντες ἴσασιν ὅτι ὁ τύραννος τοὺς σοφοὺς φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ἴσασιν",
+     "ὅτι",
+     "ὁ",
+     "τύραννος",
+     "τοὺς",
+     "σοφοὺς",
+     "φοβεῖται"
+    ]
+   }
+  ]
+ }
+]

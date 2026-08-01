@@ -1148,3 +1148,45 @@ span.status__title {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* The confetti, which lies over everything and is never in the way. Above the
+   sheets (z-index 20) because a burst that fired behind an open sheet would
+   look like a rendering fault rather than a reward. */
+.confetti {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 40;
+}
+
+/* The playground's gallery — author-only, and never on a student's screen.
+   Each card shows one shape at three sizes, the smallest being the size it is
+   actually thrown at, which is the one that decides whether it survives. */
+.shape-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+
+.shape-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+/* Baseline-aligned, so the three sizes read as one object seen from further
+   away rather than as three objects. */
+.shape-card__sizes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  min-height: 64px;
+}

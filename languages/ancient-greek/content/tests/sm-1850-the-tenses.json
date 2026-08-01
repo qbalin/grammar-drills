@@ -4,6 +4,398 @@
   "sectionId": "sm-1850-the-tenses",
   "questions": [
    {
+    "prompt": "The enemy have fled, and now we hold the city.",
+    "answer": "οἱ πολέμιοι πεφεύγασι, καὶ νῦν τὴν πόλιν ἔχομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "πεφεύγασι",
+     "καί",
+     "νῦν",
+     "τήν",
+     "πόλιν",
+     "ἔχομεν"
+    ]
+   },
+   {
+    "prompt": "While the general was still speaking, the soldiers took up their arms.",
+    "answer": "ἔτι λέγοντος τοῦ στρατηγοῦ, οἱ στρατιῶται τὰ ὅπλα ἀνέλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔτι",
+     "λέγοντος",
+     "τοῦ",
+     "στρατηγοῦ",
+     "οἱ",
+     "στρατιῶται",
+     "τά",
+     "ὅπλα",
+     "ἀνέλαβον"
+    ]
+   },
+   {
+    "prompt": "For a long time the citizens were building the wall, but they never finished it.",
+    "answer": "πολὺν χρόνον τὸ τεῖχος οἱ πολῖται ᾠκοδόμουν, ἐξετέλεσαν δὲ αὐτὸ οὐδέποτε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολύν",
+     "χρόνον",
+     "τό",
+     "τεῖχος",
+     "οἱ",
+     "πολῖται",
+     "ᾠκοδόμουν",
+     "ἐξετέλεσαν",
+     "δέ",
+     "αὐτό",
+     "οὐδέποτε"
+    ]
+   },
+   {
+    "prompt": "When you have learned these things, you will teach the young men.",
+    "answer": "ἐπειδὰν ταῦτα μάθῃς, τοὺς νεανίας διδάξεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "ταῦτα",
+     "μάθῃς",
+     "τούς",
+     "νεανίας",
+     "διδάξεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1850-the-tenses-t2",
+  "sectionId": "sm-1850-the-tenses",
+  "questions": [
+   {
+    "prompt": "The sailors are filling the ships, for they will soon set sail.",
+    "answer": "οἱ ναῦται τὰς ναῦς πληροῦσιν, αὐτίκα γὰρ ἀναπλεύσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τάς",
+     "ναῦς",
+     "πληροῦσιν",
+     "αὐτίκα",
+     "γάρ",
+     "ἀναπλεύσονται"
+    ]
+   },
+   {
+    "prompt": "The serpent bit the child, and the child immediately died.",
+    "answer": "ὁ ὄφις τὸ παιδίον ἔδακε, τὸ δὲ παιδίον εὐθὺς ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ὄφις",
+     "τό",
+     "παιδίον",
+     "ἔδακε",
+     "δέ",
+     "εὐθύς",
+     "ἀπέθανεν"
+    ]
+   },
+   {
+    "prompt": "The shepherd used to pasture his flocks near the river.",
+    "answer": "ὁ ποιμὴν τὰ ποίμνια παρὰ τῷ ποταμῷ ἔβοσκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιμήν",
+     "τά",
+     "ποίμνια",
+     "παρά",
+     "τῷ",
+     "ποταμῷ",
+     "ἔβοσκεν"
+    ]
+   },
+   {
+    "prompt": "We have made a treaty, so that no one may bear arms any longer.",
+    "answer": "σπονδὰς πεποιήμεθα, ἵνα μηδεὶς ἔτι ὅπλα φέρῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σπονδάς",
+     "πεποιήμεθα",
+     "ἵνα",
+     "μηδείς",
+     "ἔτι",
+     "ὅπλα",
+     "φέρῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1850-the-tenses-t3",
+  "sectionId": "sm-1850-the-tenses",
+  "questions": [
+   {
+    "prompt": "The messenger has arrived and reports that the king is dead.",
+    "answer": "ὁ ἄγγελος ἀφῖκται καὶ ἀγγέλλει ὅτι ὁ βασιλεὺς τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἀφῖκται",
+     "καί",
+     "ἀγγέλλει",
+     "ὅτι",
+     "βασιλεύς",
+     "τέθνηκεν"
+    ]
+   },
+   {
+    "prompt": "Those who had deserted to the enemy were punished.",
+    "answer": "οἱ πρὸς τοὺς πολεμίους αὐτομολήσαντες ἐκολάσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρός",
+     "τούς",
+     "πολεμίους",
+     "αὐτομολήσαντες",
+     "ἐκολάσθησαν"
+    ]
+   },
+   {
+    "prompt": "I wish to hear what you have suffered at the hands of these men.",
+    "answer": "βούλομαι ἀκοῦσαι ἃ ὑπὸ τούτων πέπονθας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βούλομαι",
+     "ἀκοῦσαι",
+     "ἅ",
+     "ὑπό",
+     "τούτων",
+     "πέπονθας"
+    ]
+   },
+   {
+    "prompt": "The trees which the farmers planted long ago now bear much fruit.",
+    "answer": "τὰ δένδρα ἃ οἱ γεωργοὶ πάλαι ἐφύτευσαν νῦν πολὺν καρπὸν φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "δένδρα",
+     "ἅ",
+     "οἱ",
+     "γεωργοί",
+     "πάλαι",
+     "ἐφύτευσαν",
+     "νῦν",
+     "πολύν",
+     "καρπόν",
+     "φέρει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1850-the-tenses-t4",
+  "sectionId": "sm-1850-the-tenses",
+  "questions": [
+   {
+    "prompt": "If you help us now, we shall never forget it.",
+    "answer": "ἐὰν ἡμῖν νῦν βοηθήσητε, οὐδέποτε τούτου ἐπιλησόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἡμῖν",
+     "νῦν",
+     "βοηθήσητε",
+     "οὐδέποτε",
+     "τούτου",
+     "ἐπιλησόμεθα"
+    ]
+   },
+   {
+    "prompt": "As long as the wall stands, the city will be safe.",
+    "answer": "ἕως ἂν τὸ τεῖχος ἑστήκῃ, ἡ πόλις σῴα ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἄν",
+     "τό",
+     "τεῖχος",
+     "ἑστήκῃ",
+     "ἡ",
+     "πόλις",
+     "σῴα",
+     "ἔσται"
+    ]
+   },
+   {
+    "prompt": "They were sacrificing to the gods when the earthquake happened.",
+    "answer": "ἔθυον τοῖς θεοῖς, ὅτε ὁ σεισμὸς ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔθυον",
+     "τοῖς",
+     "θεοῖς",
+     "ὅτε",
+     "ὁ",
+     "σεισμός",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "The old man has spent all his substance and now owes a great debt.",
+    "answer": "ὁ γέρων πᾶσαν τὴν οὐσίαν ἀνήλωκε, καὶ νῦν μέγα χρέος ὀφείλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "πᾶσαν",
+     "τήν",
+     "οὐσίαν",
+     "ἀνήλωκε",
+     "καί",
+     "νῦν",
+     "μέγα",
+     "χρέος",
+     "ὀφείλει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1850-the-tenses-t5",
+  "sectionId": "sm-1850-the-tenses",
+  "questions": [
+   {
+    "prompt": "Having captured the citadel, the soldiers guarded it carefully.",
+    "answer": "τὴν ἀκρόπολιν λαβόντες οἱ στρατιῶται ἐπιμελῶς αὐτὴν ἐφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "ἀκρόπολιν",
+     "λαβόντες",
+     "οἱ",
+     "στρατιῶται",
+     "ἐπιμελῶς",
+     "αὐτήν",
+     "ἐφύλαττον"
+    ]
+   },
+   {
+    "prompt": "Whenever he met a friend, he would give him a gift.",
+    "answer": "ὁπότε φίλῳ ἐντύχοι, δῶρον αὐτῷ ἐδίδου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "φίλῳ",
+     "ἐντύχοι",
+     "δῶρον",
+     "αὐτῷ",
+     "ἐδίδου"
+    ]
+   },
+   {
+    "prompt": "The woman was watering the garden when the stranger approached.",
+    "answer": "ἡ γυνὴ τὸν κῆπον ἦρδεν, ὅτε ὁ ξένος προσῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "τόν",
+     "κῆπον",
+     "ἦρδεν",
+     "ὅτε",
+     "ὁ",
+     "ξένος",
+     "προσῆλθεν"
+    ]
+   },
+   {
+    "prompt": "You have sworn oaths, and therefore you must keep faith.",
+    "answer": "ὅρκους ὀμώμοκας, καὶ διὰ τοῦτο δεῖ σε τὴν πίστιν φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρκους",
+     "ὀμώμοκας",
+     "καί",
+     "διά",
+     "τοῦτο",
+     "δεῖ",
+     "σε",
+     "τήν",
+     "πίστιν",
+     "φυλάττειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1850-the-tenses-t6",
+  "sectionId": "sm-1850-the-tenses",
+  "questions": [
+   {
+    "prompt": "He promised that he would send the money the next day.",
+    "answer": "ὑπέσχετο τὰ χρήματα τῇ ὑστεραίᾳ πέμψειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέσχετο",
+     "τά",
+     "χρήματα",
+     "τῇ",
+     "ὑστεραίᾳ",
+     "πέμψειν"
+    ]
+   },
+   {
+    "prompt": "I think that our allies have already conquered the barbarians.",
+    "answer": "οἶμαι τοὺς ἡμετέρους συμμάχους ἤδη τοὺς βαρβάρους νενικηκέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "τούς",
+     "ἡμετέρους",
+     "συμμάχους",
+     "ἤδη",
+     "βαρβάρους",
+     "νενικηκέναι"
+    ]
+   },
+   {
+    "prompt": "He said that the enemy had fled during the night.",
+    "answer": "ἔφη τοὺς πολεμίους τῆς νυκτὸς φυγεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "τούς",
+     "πολεμίους",
+     "τῆς",
+     "νυκτός",
+     "φυγεῖν"
+    ]
+   },
+   {
+    "prompt": "We hoped that the general would save the army.",
+    "answer": "ἠλπίζομεν τὸν στρατηγὸν τὸ στράτευμα σώσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠλπίζομεν",
+     "τόν",
+     "στρατηγόν",
+     "τό",
+     "στράτευμα",
+     "σώσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1850-the-tenses-t7",
+  "sectionId": "sm-1850-the-tenses",
+  "questions": [
+   {
     "prompt": "While the general was drawing up the army, the enemy fled.",
     "answer": "τοῦ στρατηγοῦ τὸ στράτευμα τάττοντος οἱ πολέμιοι ἔφυγον.",
     "kind": "translate-en-grc",
@@ -63,7 +455,7 @@
   ]
  },
  {
-  "id": "sm-1850-the-tenses-t2",
+  "id": "sm-1850-the-tenses-t8",
   "sectionId": "sm-1850-the-tenses",
   "questions": [
    {
@@ -126,7 +518,7 @@
   ]
  },
  {
-  "id": "sm-1850-the-tenses-t3",
+  "id": "sm-1850-the-tenses-t9",
   "sectionId": "sm-1850-the-tenses",
   "questions": [
    {
@@ -191,7 +583,7 @@
   ]
  },
  {
-  "id": "sm-1850-the-tenses-t4",
+  "id": "sm-1850-the-tenses-t10",
   "sectionId": "sm-1850-the-tenses",
   "questions": [
    {
@@ -254,7 +646,7 @@
   ]
  },
  {
-  "id": "sm-1850-the-tenses-t5",
+  "id": "sm-1850-the-tenses-t11",
   "sectionId": "sm-1850-the-tenses",
   "questions": [
    {
@@ -315,7 +707,7 @@
   ]
  },
  {
-  "id": "sm-1850-the-tenses-t6",
+  "id": "sm-1850-the-tenses-t12",
   "sectionId": "sm-1850-the-tenses",
   "questions": [
    {

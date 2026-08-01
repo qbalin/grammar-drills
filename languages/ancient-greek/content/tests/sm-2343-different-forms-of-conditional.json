@@ -1,0 +1,549 @@
+[
+ {
+  "id": "sm-2343-different-forms-of-conditional-t1",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If Cyrus had heard this, he would have marched; and now, if he hears it, he will march.",
+    "answer": "εἰ ταῦτα ἤκουσεν ὁ Κῦρος, ἐστράτευσεν ἄν· καὶ νῦν, ἐὰν ἀκούσῃ, στρατεύσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ταῦτα",
+     "ἤκουσεν",
+     "ὁ",
+     "Κῦρος",
+     "ἐστράτευσεν",
+     "ἄν",
+     "καὶ",
+     "νῦν",
+     "ἐὰν",
+     "ἀκούσῃ",
+     "στρατεύσει"
+    ]
+   },
+   {
+    "prompt": "If the general were present, he would help us; but if he comes, he will save the army.",
+    "answer": "εἰ ὁ στρατηγὸς παρῆν, ἐβοήθει ἂν ἡμῖν· εἰ δὲ ἥξει, σώσει τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "παρῆν",
+     "ἐβοήθει",
+     "ἂν",
+     "ἡμῖν",
+     "δὲ",
+     "ἥξει",
+     "σώσει",
+     "τὸ",
+     "στράτευμα"
+    ]
+   },
+   {
+    "prompt": "If you had trusted your friends, you would not have erred; but if you obey me now, you will be safe.",
+    "answer": "εἰ τοῖς φίλοις ἐπίστευσας, οὐκ ἂν ἥμαρτες· ἐὰν δὲ ἐμοὶ νῦν πείθῃ, σωθήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοῖς",
+     "φίλοις",
+     "ἐπίστευσας",
+     "οὐκ",
+     "ἂν",
+     "ἥμαρτες",
+     "ἐὰν",
+     "δὲ",
+     "ἐμοὶ",
+     "νῦν",
+     "πείθῃ",
+     "σωθήσῃ"
+    ]
+   },
+   {
+    "prompt": "If wisdom were teachable, the good would teach it; but if anyone learns it, he will be happy.",
+    "answer": "εἰ διδακτὸν ἦν ἡ σοφία, οἱ ἀγαθοὶ ἂν αὐτὴν ἐδίδασκον· ἐὰν δέ τις αὐτὴν μάθῃ, εὐδαίμων ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "διδακτὸν",
+     "ἦν",
+     "ἡ",
+     "σοφία",
+     "οἱ",
+     "ἀγαθοὶ",
+     "ἂν",
+     "αὐτὴν",
+     "ἐδίδασκον",
+     "ἐὰν",
+     "δέ",
+     "τις",
+     "μάθῃ",
+     "εὐδαίμων",
+     "ἔσται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2343-different-forms-of-conditional-t2",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If the citizens had honored justice, the city would now be free; and if they honor it, they will be saved.",
+    "answer": "εἰ οἱ πολῖται τὴν δικαιοσύνην ἐτίμησαν, ἐλευθέρα ἂν ἦν ἡ πόλις· ἐὰν δὲ αὐτὴν τιμῶσιν, σωθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "δικαιοσύνην",
+     "ἐτίμησαν",
+     "ἐλευθέρα",
+     "ἂν",
+     "ἦν",
+     "ἡ",
+     "πόλις",
+     "ἐὰν",
+     "δὲ",
+     "αὐτὴν",
+     "τιμῶσιν",
+     "σωθήσονται"
+    ]
+   },
+   {
+    "prompt": "If the enemy were braver, they would attack; but if they attack, we will conquer.",
+    "answer": "εἰ οἱ πολέμιοι ἀνδρειότεροι ἦσαν, προσέβαλλον ἄν· ἐὰν δὲ προσβάλωσιν, νικήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "ἀνδρειότεροι",
+     "ἦσαν",
+     "προσέβαλλον",
+     "ἄν",
+     "ἐὰν",
+     "δὲ",
+     "προσβάλωσιν",
+     "νικήσομεν"
+    ]
+   },
+   {
+    "prompt": "If you had spoken the truth, we would trust you; but if you lie now, no one will listen.",
+    "answer": "εἰ τὰ ἀληθῆ εἶπες, ἐπιστεύομεν ἄν σοι· ἐὰν δὲ νῦν ψεύδῃ, οὐδεὶς ἀκούσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰ",
+     "ἀληθῆ",
+     "εἶπες",
+     "ἐπιστεύομεν",
+     "ἄν",
+     "σοι",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "ψεύδῃ",
+     "οὐδεὶς",
+     "ἀκούσεται"
+    ]
+   },
+   {
+    "prompt": "If the gods willed it, all would be well; and if we pray, they will hear us.",
+    "answer": "εἰ οἱ θεοὶ ἐβούλοντο, πάντα καλῶς ἂν εἶχεν· ἐὰν δὲ εὐχώμεθα, ἀκούσονται ἡμῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "θεοὶ",
+     "ἐβούλοντο",
+     "πάντα",
+     "καλῶς",
+     "ἂν",
+     "εἶχεν",
+     "ἐὰν",
+     "δὲ",
+     "εὐχώμεθα",
+     "ἀκούσονται",
+     "ἡμῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2343-different-forms-of-conditional-t3",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If Socrates were alive, he would refute them; but if you philosophize, you will find the truth.",
+    "answer": "εἰ ὁ Σωκράτης ἔζη, ἤλεγχεν ἂν αὐτούς· ἐὰν δὲ φιλοσοφῇς, τὴν ἀλήθειαν εὑρήσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Σωκράτης",
+     "ἔζη",
+     "ἤλεγχεν",
+     "ἂν",
+     "αὐτούς",
+     "ἐὰν",
+     "δὲ",
+     "φιλοσοφῇς",
+     "τὴν",
+     "ἀλήθειαν",
+     "εὑρήσεις"
+    ]
+   },
+   {
+    "prompt": "If they had guarded the gates, the city would not have fallen; and if we guard them now, we will be safe.",
+    "answer": "εἰ τὰς πύλας ἐφύλαξαν, οὐκ ἂν ἑάλω ἡ πόλις· ἐὰν δὲ νῦν φυλάττωμεν, σωθησόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰς",
+     "πύλας",
+     "ἐφύλαξαν",
+     "οὐκ",
+     "ἂν",
+     "ἑάλω",
+     "ἡ",
+     "πόλις",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "φυλάττωμεν",
+     "σωθησόμεθα"
+    ]
+   },
+   {
+    "prompt": "If wealth made men happy, the rich would be blessed; but if you pursue virtue, you will be blessed truly.",
+    "answer": "εἰ ὁ πλοῦτος εὐδαίμονας ἐποίει, οἱ πλούσιοι ἂν ἐμακαρίζοντο· ἐὰν δὲ τὴν ἀρετὴν διώκῃς, ἀληθῶς μακάριος ἔσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "πλοῦτος",
+     "εὐδαίμονας",
+     "ἐποίει",
+     "οἱ",
+     "πλούσιοι",
+     "ἂν",
+     "ἐμακαρίζοντο",
+     "ἐὰν",
+     "δὲ",
+     "τὴν",
+     "ἀρετὴν",
+     "διώκῃς",
+     "ἀληθῶς",
+     "μακάριος",
+     "ἔσῃ"
+    ]
+   },
+   {
+    "prompt": "If the sailors had obeyed, they would have escaped the storm; but if they row now, they will reach the harbor.",
+    "answer": "εἰ οἱ ναῦται ἐπείσθησαν, τὸν χειμῶνα ἂν ἔφυγον· ἐὰν δὲ νῦν ἐλαύνωσιν, εἰς τὸν λιμένα ἀφίξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "ναῦται",
+     "ἐπείσθησαν",
+     "τὸν",
+     "χειμῶνα",
+     "ἂν",
+     "ἔφυγον",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "ἐλαύνωσιν",
+     "εἰς",
+     "λιμένα",
+     "ἀφίξονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2343-different-forms-of-conditional-t4",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If you were wise, you would keep silent; but if you speak, you will suffer harm.",
+    "answer": "εἰ σοφὸς ἦσθα, ἐσίγας ἄν· ἐὰν δὲ λέγῃς, κακὸν πείσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοφὸς",
+     "ἦσθα",
+     "ἐσίγας",
+     "ἄν",
+     "ἐὰν",
+     "δὲ",
+     "λέγῃς",
+     "κακὸν",
+     "πείσῃ"
+    ]
+   },
+   {
+    "prompt": "If Demosthenes had persuaded them, they would have fought; and if they fight now, they will win freedom.",
+    "answer": "εἰ ὁ Δημοσθένης αὐτοὺς ἔπεισεν, ἐμαχέσαντο ἄν· ἐὰν δὲ νῦν μάχωνται, τὴν ἐλευθερίαν κτήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Δημοσθένης",
+     "αὐτοὺς",
+     "ἔπεισεν",
+     "ἐμαχέσαντο",
+     "ἄν",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "μάχωνται",
+     "τὴν",
+     "ἐλευθερίαν",
+     "κτήσονται"
+    ]
+   },
+   {
+    "prompt": "If the earth were flat, the sun would not set; but if you study the stars, you will learn the truth.",
+    "answer": "εἰ ἡ γῆ πλατεῖα ἦν, ὁ ἥλιος οὐκ ἂν ἔδυνεν· ἐὰν δὲ τὰ ἄστρα σκοπῇς, τὴν ἀλήθειαν μαθήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "γῆ",
+     "πλατεῖα",
+     "ἦν",
+     "ὁ",
+     "ἥλιος",
+     "οὐκ",
+     "ἂν",
+     "ἔδυνεν",
+     "ἐὰν",
+     "δὲ",
+     "τὰ",
+     "ἄστρα",
+     "σκοπῇς",
+     "τὴν",
+     "ἀλήθειαν",
+     "μαθήσῃ"
+    ]
+   },
+   {
+    "prompt": "If the king had feared the gods, he would have spared the suppliants; but if he sins now, he will be punished.",
+    "answer": "εἰ ὁ βασιλεὺς τοὺς θεοὺς ἐφοβήθη, τῶν ἱκετῶν ἂν ἐφείσατο· ἐὰν δὲ νῦν ἀδικῇ, δίκην δώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "βασιλεὺς",
+     "τοὺς",
+     "θεοὺς",
+     "ἐφοβήθη",
+     "τῶν",
+     "ἱκετῶν",
+     "ἂν",
+     "ἐφείσατο",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "ἀδικῇ",
+     "δίκην",
+     "δώσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2343-different-forms-of-conditional-t5",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If we had more soldiers, we would besiege the city; but if we besiege it, the walls will fall.",
+    "answer": "εἰ πλείονας στρατιώτας εἴχομεν, τὴν πόλιν ἂν ἐπολιορκοῦμεν· ἐὰν δὲ πολιορκῶμεν, τὰ τείχη πεσεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "πλείονας",
+     "στρατιώτας",
+     "εἴχομεν",
+     "τὴν",
+     "πόλιν",
+     "ἂν",
+     "ἐπολιορκοῦμεν",
+     "ἐὰν",
+     "δὲ",
+     "πολιορκῶμεν",
+     "τὰ",
+     "τείχη",
+     "πεσεῖται"
+    ]
+   },
+   {
+    "prompt": "If the poet had told the truth, we would praise him; and if he sings again, we will listen gladly.",
+    "answer": "εἰ ὁ ποιητὴς τὰ ἀληθῆ εἶπεν, ἐπῃνοῦμεν ἂν αὐτόν· ἐὰν δὲ αὖθις ᾄδῃ, ἡδέως ἀκουσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ποιητὴς",
+     "τὰ",
+     "ἀληθῆ",
+     "εἶπεν",
+     "ἐπῃνοῦμεν",
+     "ἂν",
+     "αὐτόν",
+     "ἐὰν",
+     "δὲ",
+     "αὖθις",
+     "ᾄδῃ",
+     "ἡδέως",
+     "ἀκουσόμεθα"
+    ]
+   },
+   {
+    "prompt": "If justice ruled among men, no one would do wrong; but if you honor the laws, you will live well.",
+    "answer": "εἰ ἡ δικαιοσύνη ἐν τοῖς ἀνθρώποις ἐβασίλευεν, οὐδεὶς ἂν ἠδίκει· ἐὰν δὲ τοὺς νόμους τιμᾷς, καλῶς βιώσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "δικαιοσύνη",
+     "ἐν",
+     "τοῖς",
+     "ἀνθρώποις",
+     "ἐβασίλευεν",
+     "οὐδεὶς",
+     "ἂν",
+     "ἠδίκει",
+     "ἐὰν",
+     "δὲ",
+     "τοὺς",
+     "νόμους",
+     "τιμᾷς",
+     "καλῶς",
+     "βιώσῃ"
+    ]
+   },
+   {
+    "prompt": "If the ambassadors had arrived earlier, they would have prevented the war; but if they persuade the assembly, peace will come.",
+    "answer": "εἰ οἱ πρέσβεις θᾶττον ἀφίκοντο, τὸν πόλεμον ἂν ἐκώλυσαν· ἐὰν δὲ τὴν ἐκκλησίαν πείσωσιν, εἰρήνη ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πρέσβεις",
+     "θᾶττον",
+     "ἀφίκοντο",
+     "τὸν",
+     "πόλεμον",
+     "ἂν",
+     "ἐκώλυσαν",
+     "ἐὰν",
+     "δὲ",
+     "τὴν",
+     "ἐκκλησίαν",
+     "πείσωσιν",
+     "εἰρήνη",
+     "ἔσται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2343-different-forms-of-conditional-t6",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If you obeyed your teacher, you would be wiser; but if you read the books, you will become learned.",
+    "answer": "εἰ τῷ διδασκάλῳ ἐπείθου, σοφώτερος ἂν ἦσθα· ἐὰν δὲ τὰ βιβλία ἀναγιγνώσκῃς, σοφὸς γενήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῷ",
+     "διδασκάλῳ",
+     "ἐπείθου",
+     "σοφώτερος",
+     "ἂν",
+     "ἦσθα",
+     "ἐὰν",
+     "δὲ",
+     "τὰ",
+     "βιβλία",
+     "ἀναγιγνώσκῃς",
+     "σοφὸς",
+     "γενήσῃ"
+    ]
+   },
+   {
+    "prompt": "If the physician had come, he would have healed the child; and if he comes now, he will save many.",
+    "answer": "εἰ ὁ ἰατρὸς ἦλθεν, τὸ παιδίον ἂν ἰάσατο· ἐὰν δὲ νῦν ἔλθῃ, πολλοὺς σώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἰατρὸς",
+     "ἦλθεν",
+     "τὸ",
+     "παιδίον",
+     "ἂν",
+     "ἰάσατο",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "ἔλθῃ",
+     "πολλοὺς",
+     "σώσει"
+    ]
+   },
+   {
+    "prompt": "If the Athenians were wiser, they would not envy the good; but if they trust Pericles, they will prosper.",
+    "answer": "εἰ οἱ Ἀθηναῖοι σοφώτεροι ἦσαν, τοῖς ἀγαθοῖς οὐκ ἂν ἐφθόνουν· ἐὰν δὲ τῷ Περικλεῖ πιστεύωσιν, εὖ πράξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "σοφώτεροι",
+     "ἦσαν",
+     "τοῖς",
+     "ἀγαθοῖς",
+     "οὐκ",
+     "ἂν",
+     "ἐφθόνουν",
+     "ἐὰν",
+     "δὲ",
+     "τῷ",
+     "Περικλεῖ",
+     "πιστεύωσιν",
+     "εὖ",
+     "πράξουσιν"
+    ]
+   },
+   {
+    "prompt": "If fortune had favored us, we would have won; but if we endure, we will nevertheless be victorious.",
+    "answer": "εἰ ἡ τύχη ἡμῖν εὐμενὴς ἦν, ἐνικήσαμεν ἄν· ἐὰν δὲ καρτερῶμεν, ὅμως νικήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "τύχη",
+     "ἡμῖν",
+     "εὐμενὴς",
+     "ἦν",
+     "ἐνικήσαμεν",
+     "ἄν",
+     "ἐὰν",
+     "δὲ",
+     "καρτερῶμεν",
+     "ὅμως",
+     "νικήσομεν"
+    ]
+   }
+  ]
+ }
+]

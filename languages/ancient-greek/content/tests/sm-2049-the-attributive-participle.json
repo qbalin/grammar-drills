@@ -4,6 +4,377 @@
   "sectionId": "sm-2049-the-attributive-participle",
   "questions": [
    {
+    "prompt": "The danger threatening the city terrified the citizens.",
+    "answer": "ὁ τῇ πόλει ἐφεστηκὼς κίνδυνος τοὺς πολίτας ἐξέπληξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τῇ",
+     "πόλει",
+     "ἐφεστηκὼς",
+     "κίνδυνος",
+     "τοὺς",
+     "πολίτας",
+     "ἐξέπληξεν"
+    ]
+   },
+   {
+    "prompt": "Those who fled from the battle were punished by the general.",
+    "answer": "οἱ ἐκ τῆς μάχης φυγόντες ὑπὸ τοῦ στρατηγοῦ ἐκολάσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φυγόντες",
+     "ὑπὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἐκολάσθησαν"
+    ]
+   },
+   {
+    "prompt": "The present crisis has need of courageous men.",
+    "answer": "ὁ παρὼν καιρὸς ἀνδρῶν ἀνδρείων δεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παρὼν",
+     "καιρὸς",
+     "ἀνδρῶν",
+     "ἀνδρείων",
+     "δεῖται"
+    ]
+   },
+   {
+    "prompt": "Whoever wishes to speak, let him come forward.",
+    "answer": "ὁ βουλόμενος λέγειν προελθέτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βουλόμενος",
+     "λέγειν",
+     "προελθέτω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2049-the-attributive-participle-t2",
+  "sectionId": "sm-2049-the-attributive-participle",
+  "questions": [
+   {
+    "prompt": "The so-called islands of Aeolus lie in the sea.",
+    "answer": "αἱ τοῦ Αἰόλου καλούμεναι νῆσοι ἐν τῇ θαλάττῃ κεῖνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τοῦ",
+     "Αἰόλου",
+     "καλούμεναι",
+     "νῆσοι",
+     "ἐν",
+     "τῇ",
+     "θαλάττῃ",
+     "κεῖνται"
+    ]
+   },
+   {
+    "prompt": "The mountain named Cotylaeum is difficult to cross.",
+    "answer": "τὸ Κοτύλαιον ὀνομαζόμενον ὄρος χαλεπόν ἐστι διαβῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "Κοτύλαιον",
+     "ὀνομαζόμενον",
+     "ὄρος",
+     "χαλεπόν",
+     "ἐστι",
+     "διαβῆναι"
+    ]
+   },
+   {
+    "prompt": "The dead are honored by the living.",
+    "answer": "οἱ θανόντες ὑπὸ τῶν ζώντων τιμῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θανόντες",
+     "ὑπὸ",
+     "τῶν",
+     "ζώντων",
+     "τιμῶνται"
+    ]
+   },
+   {
+    "prompt": "The exile longed for his fatherland.",
+    "answer": "ὁ φεύγων τῆς πατρίδος ἐπόθει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φεύγων",
+     "τῆς",
+     "πατρίδος",
+     "ἐπόθει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2049-the-attributive-participle-t3",
+  "sectionId": "sm-2049-the-attributive-participle",
+  "questions": [
+   {
+    "prompt": "The general leading the army was wounded.",
+    "answer": "ὁ τὸ στράτευμα ἄγων στρατηγὸς ἐτρώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τὸ",
+     "στράτευμα",
+     "ἄγων",
+     "στρατηγὸς",
+     "ἐτρώθη"
+    ]
+   },
+   {
+    "prompt": "Those being wronged kept asking help from the gods.",
+    "answer": "οἱ ἀδικούμενοι παρὰ τῶν θεῶν βοήθειαν ᾔτουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀδικούμενοι",
+     "παρὰ",
+     "τῶν",
+     "θεῶν",
+     "βοήθειαν",
+     "ᾔτουν"
+    ]
+   },
+   {
+    "prompt": "The scouts sent by the king announced the enemy's approach.",
+    "answer": "οἱ ὑπὸ τοῦ βασιλέως πεμφθέντες σκοποὶ τὴν τῶν πολεμίων ἔφοδον ἤγγειλαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑπὸ",
+     "τοῦ",
+     "βασιλέως",
+     "πεμφθέντες",
+     "σκοποὶ",
+     "τὴν",
+     "τῶν",
+     "πολεμίων",
+     "ἔφοδον",
+     "ἤγγειλαν"
+    ]
+   },
+   {
+    "prompt": "The thief who stole the money was caught.",
+    "answer": "ὁ τὰ χρήματα κλέψας ἐλήφθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τὰ",
+     "χρήματα",
+     "κλέψας",
+     "ἐλήφθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2049-the-attributive-participle-t4",
+  "sectionId": "sm-2049-the-attributive-participle",
+  "questions": [
+   {
+    "prompt": "The future is unclear to all mortals.",
+    "answer": "τὸ μέλλον ἄδηλόν ἐστι πᾶσι τοῖς θνητοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "μέλλον",
+     "ἄδηλόν",
+     "ἐστι",
+     "πᾶσι",
+     "τοῖς",
+     "θνητοῖς"
+    ]
+   },
+   {
+    "prompt": "The victors set up a trophy on the plain.",
+    "answer": "οἱ νικῶντες τροπαῖον ἐν τῷ πεδίῳ ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νικῶντες",
+     "τροπαῖον",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ἔστησαν"
+    ]
+   },
+   {
+    "prompt": "Those who were afraid remained within the walls.",
+    "answer": "οἱ δεδιότες ἐντὸς τῶν τειχῶν ἔμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δεδιότες",
+     "ἐντὸς",
+     "τῶν",
+     "τειχῶν",
+     "ἔμενον"
+    ]
+   },
+   {
+    "prompt": "The man who had been saved rendered thanks to the gods.",
+    "answer": "ὁ σωθεὶς τοῖς θεοῖς χάριν ἀπέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σωθεὶς",
+     "τοῖς",
+     "θεοῖς",
+     "χάριν",
+     "ἀπέδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2049-the-attributive-participle-t5",
+  "sectionId": "sm-2049-the-attributive-participle",
+  "questions": [
+   {
+    "prompt": "The soldiers guarding the gates were not sleeping.",
+    "answer": "οἱ τὰς πύλας φυλάττοντες στρατιῶται οὐκ ἐκάθευδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὰς",
+     "πύλας",
+     "φυλάττοντες",
+     "στρατιῶται",
+     "οὐκ",
+     "ἐκάθευδον"
+    ]
+   },
+   {
+    "prompt": "The envoys sent to Olynthus persuaded the citizens.",
+    "answer": "οἱ εἰς Ὄλυνθον πεμφθέντες πρέσβεις τοὺς πολίτας ἔπεισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "εἰς",
+     "Ὄλυνθον",
+     "πεμφθέντες",
+     "πρέσβεις",
+     "τοὺς",
+     "πολίτας",
+     "ἔπεισαν"
+    ]
+   },
+   {
+    "prompt": "The letter written by the king astounded the ambassadors.",
+    "answer": "ἡ ὑπὸ τοῦ βασιλέως γραφεῖσα ἐπιστολὴ τοὺς πρέσβεις ἐξέπληξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ὑπὸ",
+     "τοῦ",
+     "βασιλέως",
+     "γραφεῖσα",
+     "ἐπιστολὴ",
+     "τοὺς",
+     "πρέσβεις",
+     "ἐξέπληξεν"
+    ]
+   },
+   {
+    "prompt": "The temple built by the ancestors still stands.",
+    "answer": "ὁ ὑπὸ τῶν προγόνων οἰκοδομηθεὶς ναὸς ἔτι ἕστηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ὑπὸ",
+     "τῶν",
+     "προγόνων",
+     "οἰκοδομηθεὶς",
+     "ναὸς",
+     "ἔτι",
+     "ἕστηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2049-the-attributive-participle-t6",
+  "sectionId": "sm-2049-the-attributive-participle",
+  "questions": [
+   {
+    "prompt": "The man who gave this opinion is worthy of praise.",
+    "answer": "ὁ ταύτην τὴν γνώμην εἰπὼν ἐπαίνου ἄξιός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ταύτην",
+     "τὴν",
+     "γνώμην",
+     "εἰπὼν",
+     "ἐπαίνου",
+     "ἄξιός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "We shall defend ourselves against anyone who wrongs the city.",
+    "answer": "τὸν τὴν πόλιν ἀδικοῦντα ἀμυνούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "τὴν",
+     "πόλιν",
+     "ἀδικοῦντα",
+     "ἀμυνούμεθα"
+    ]
+   },
+   {
+    "prompt": "The unmarried man has no troubles.",
+    "answer": "ὁ μὴ γαμῶν κακὰ οὐκ ἔχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὴ",
+     "γαμῶν",
+     "κακὰ",
+     "οὐκ",
+     "ἔχει"
+    ]
+   },
+   {
+    "prompt": "Those wishing to depart homeward questioned the general.",
+    "answer": "οἱ οἴκαδε βουλόμενοι ἀπιέναι τὸν στρατηγὸν ἠρώτησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "οἴκαδε",
+     "βουλόμενοι",
+     "ἀπιέναι",
+     "τὸν",
+     "στρατηγὸν",
+     "ἠρώτησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2049-the-attributive-participle-t7",
+  "sectionId": "sm-2049-the-attributive-participle",
+  "questions": [
+   {
     "prompt": "The present danger frightens the citizens.",
     "answer": "ὁ παρὼν κίνδυνος τοὺς πολίτας φοβεῖ.",
     "kind": "translate-en-grc",
@@ -61,7 +432,7 @@
   ]
  },
  {
-  "id": "sm-2049-the-attributive-participle-t2",
+  "id": "sm-2049-the-attributive-participle-t8",
   "sectionId": "sm-2049-the-attributive-participle",
   "questions": [
    {
@@ -119,7 +490,7 @@
   ]
  },
  {
-  "id": "sm-2049-the-attributive-participle-t3",
+  "id": "sm-2049-the-attributive-participle-t9",
   "sectionId": "sm-2049-the-attributive-participle",
   "questions": [
    {
@@ -175,7 +546,7 @@
   ]
  },
  {
-  "id": "sm-2049-the-attributive-participle-t4",
+  "id": "sm-2049-the-attributive-participle-t10",
   "sectionId": "sm-2049-the-attributive-participle",
   "questions": [
    {
@@ -234,7 +605,7 @@
   ]
  },
  {
-  "id": "sm-2049-the-attributive-participle-t5",
+  "id": "sm-2049-the-attributive-participle-t11",
   "sectionId": "sm-2049-the-attributive-participle",
   "questions": [
    {
@@ -248,20 +619,6 @@
      "τὸν",
      "δῆμον",
      "ἐξαπατᾷ"
-    ]
-   },
-   {
-    "prompt": "The unmarried man has no troubles.",
-    "answer": "ὁ μὴ γαμῶν ἄνθρωπος οὐκ ἔχει κακά.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "μὴ",
-     "γαμῶν",
-     "ἄνθρωπος",
-     "οὐκ",
-     "ἔχει",
-     "κακά"
     ]
    },
    {
@@ -292,7 +649,7 @@
   ]
  },
  {
-  "id": "sm-2049-the-attributive-participle-t6",
+  "id": "sm-2049-the-attributive-participle-t12",
   "sectionId": "sm-2049-the-attributive-participle",
   "questions": [
    {

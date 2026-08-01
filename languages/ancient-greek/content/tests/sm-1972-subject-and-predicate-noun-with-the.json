@@ -4,6 +4,374 @@
   "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
   "questions": [
    {
+    "prompt": "The general said that he himself was ready to die for his fatherland.",
+    "answer": "ὁ στρατηγὸς ἔφη ἕτοιμος ὑπὲρ τῆς πατρίδος ἀποθανεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἔφη",
+     "ἕτοιμος",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθανεῖν"
+    ]
+   },
+   {
+    "prompt": "I shall not admit that I have come uninvited to the feast.",
+    "answer": "οὐχ ὁμολογήσω ἄκλητος εἰς τὴν ἑορτὴν ἥκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὁμολογήσω",
+     "ἄκλητος",
+     "εἰς",
+     "τὴν",
+     "ἑορτὴν",
+     "ἥκειν"
+    ]
+   },
+   {
+    "prompt": "The ambassadors thought that they were wiser than the others.",
+    "answer": "οἱ πρέσβεις ᾤοντο σοφώτεροι τῶν ἄλλων εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ᾤοντο",
+     "σοφώτεροι",
+     "τῶν",
+     "ἄλλων",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "The woman claimed to be the daughter of the king.",
+    "answer": "ἡ γυνὴ ἔφη θυγάτηρ τοῦ βασιλέως εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "ἔφη",
+     "θυγάτηρ",
+     "τοῦ",
+     "βασιλέως",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t2",
+  "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
+  "questions": [
+   {
+    "prompt": "I maintain that the noble and good man is happy.",
+    "answer": "φημὶ τὸν καλὸν καὶ ἀγαθὸν ἄνδρα εὐδαίμονα εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φημὶ",
+     "τὸν",
+     "καλὸν",
+     "καὶ",
+     "ἀγαθὸν",
+     "ἄνδρα",
+     "εὐδαίμονα",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "We believe that you are to us both fatherland and friends.",
+    "answer": "νομίζομεν ὑμᾶς ἡμῖν εἶναι καὶ πατρίδα καὶ φίλους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζομεν",
+     "ὑμᾶς",
+     "ἡμῖν",
+     "εἶναι",
+     "καὶ",
+     "πατρίδα",
+     "φίλους"
+    ]
+   },
+   {
+    "prompt": "Everyone thought the young man to be brave.",
+    "answer": "πάντες τὸν νεανίαν ἀνδρεῖον εἶναι ᾤοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "τὸν",
+     "νεανίαν",
+     "ἀνδρεῖον",
+     "εἶναι",
+     "ᾤοντο"
+    ]
+   },
+   {
+    "prompt": "The judges judged the defendant to be guilty.",
+    "answer": "οἱ δικασταὶ τὸν φεύγοντα ἄδικον εἶναι ἔκριναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τὸν",
+     "φεύγοντα",
+     "ἄδικον",
+     "εἶναι",
+     "ἔκριναν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t3",
+  "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
+  "questions": [
+   {
+    "prompt": "It is in your power to become friends to the Lacedaemonians.",
+    "answer": "ἔξεστιν ὑμῖν τοῖς Λακεδαιμονίοις φίλοις γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστιν",
+     "ὑμῖν",
+     "τοῖς",
+     "Λακεδαιμονίοις",
+     "φίλοις",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "It is in our power to be good rather than base.",
+    "answer": "ἔξεστιν ἡμῖν ἀγαθοῖς μᾶλλον ἢ κακοῖς εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστιν",
+     "ἡμῖν",
+     "ἀγαθοῖς",
+     "μᾶλλον",
+     "ἢ",
+     "κακοῖς",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Now it is possible for you to become a real man.",
+    "answer": "νῦν σοι ἔξεστιν ἀνδρὶ γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "σοι",
+     "ἔξεστιν",
+     "ἀνδρὶ",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "It is fitting for the soldiers to be brave in the battle.",
+    "answer": "πρέπει τοῖς στρατιώταις ἀνδρείοις ἐν τῇ μάχῃ εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρέπει",
+     "τοῖς",
+     "στρατιώταις",
+     "ἀνδρείοις",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t4",
+  "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
+  "questions": [
+   {
+    "prompt": "One must be humane toward one's friends.",
+    "answer": "φιλάνθρωπον εἶναι δεῖ πρὸς τοὺς φίλους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φιλάνθρωπον",
+     "εἶναι",
+     "δεῖ",
+     "πρὸς",
+     "τοὺς",
+     "φίλους"
+    ]
+   },
+   {
+    "prompt": "In all things one must be just.",
+    "answer": "ἐν πᾶσι δίκαιον εἶναι χρή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "πᾶσι",
+     "δίκαιον",
+     "εἶναι",
+     "χρή"
+    ]
+   },
+   {
+    "prompt": "In dangers one must be courageous.",
+    "answer": "ἐν τοῖς κινδύνοις ἀνδρεῖον εἶναι δεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τοῖς",
+     "κινδύνοις",
+     "ἀνδρεῖον",
+     "εἶναι",
+     "δεῖ"
+    ]
+   },
+   {
+    "prompt": "It is easier to give advice than to endure suffering.",
+    "answer": "ῥᾷόν ἐστι παραινεῖν ἢ παθόντα καρτερεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ῥᾷόν",
+     "ἐστι",
+     "παραινεῖν",
+     "ἢ",
+     "παθόντα",
+     "καρτερεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t5",
+  "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
+  "questions": [
+   {
+    "prompt": "I think that I myself am more honest than the others.",
+    "answer": "οἶμαι ἐμαυτὸν ἐπιεικέστερον τῶν ἄλλων εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "ἐμαυτὸν",
+     "ἐπιεικέστερον",
+     "τῶν",
+     "ἄλλων",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "I thought that I ought to surpass them and to show myself more magnificent.",
+    "answer": "ἡγούμην περιεῖναι δεῖν αὐτῶν καὶ μεγαλοψυχότερος φαίνεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡγούμην",
+     "περιεῖναι",
+     "δεῖν",
+     "αὐτῶν",
+     "καὶ",
+     "μεγαλοψυχότερος",
+     "φαίνεσθαι"
+    ]
+   },
+   {
+    "prompt": "Cleon said that not he himself, but Nicias was in command.",
+    "answer": "Κλέων οὐκ ἔφη αὐτός, ἀλλὰ Νικίαν στρατηγεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κλέων",
+     "οὐκ",
+     "ἔφη",
+     "αὐτός",
+     "ἀλλὰ",
+     "Νικίαν",
+     "στρατηγεῖν"
+    ]
+   },
+   {
+    "prompt": "I think that I have made more money than any two others together.",
+    "answer": "οἶμαι ἐμὲ πλείω χρήματα εἰργάσθαι ἢ ἄλλους σύνδυο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "ἐμὲ",
+     "πλείω",
+     "χρήματα",
+     "εἰργάσθαι",
+     "ἢ",
+     "ἄλλους",
+     "σύνδυο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t6",
+  "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
+  "questions": [
+   {
+    "prompt": "Being rid of those who profess to be judges, he departed.",
+    "answer": "ἀπαλλαγεὶς τῶν φασκόντων δικαστῶν εἶναι ἀπῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπαλλαγεὶς",
+     "τῶν",
+     "φασκόντων",
+     "δικαστῶν",
+     "εἶναι",
+     "ἀπῆλθεν"
+    ]
+   },
+   {
+    "prompt": "He accomplished this by reason of his being severe.",
+    "answer": "τοῦτο ἐποίει ἐκ τοῦ χαλεπὸς εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "ἐποίει",
+     "ἐκ",
+     "τοῦ",
+     "χαλεπὸς",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "The city dispenses the offices to those who seem to be the most deserving.",
+    "answer": "ἡ πόλις τὰς ἀρχὰς δίδωσι τοῖς ἀρίστοις εἶναι δοκοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "τὰς",
+     "ἀρχὰς",
+     "δίδωσι",
+     "τοῖς",
+     "ἀρίστοις",
+     "εἶναι",
+     "δοκοῦσιν"
+    ]
+   },
+   {
+    "prompt": "The colonists are sent out to be the equals of those who stay behind.",
+    "answer": "οἱ ἄποικοι ἐκπέμπονται ἐπὶ τῷ ὅμοιοι τοῖς λειπομένοις εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄποικοι",
+     "ἐκπέμπονται",
+     "ἐπὶ",
+     "τῷ",
+     "ὅμοιοι",
+     "τοῖς",
+     "λειπομένοις",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t7",
+  "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
+  "questions": [
+   {
     "prompt": "The exile said that he had been a general of the Athenians.",
     "answer": "ὁ φυγὰς ἔφη στρατηγὸς τῶν Ἀθηναίων γενέσθαι.",
     "kind": "translate-en-grc",
@@ -58,7 +426,7 @@
   ]
  },
  {
-  "id": "sm-1972-subject-and-predicate-noun-with-the-t2",
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t8",
   "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
   "questions": [
    {
@@ -123,7 +491,7 @@
   ]
  },
  {
-  "id": "sm-1972-subject-and-predicate-noun-with-the-t3",
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t9",
   "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
   "questions": [
    {
@@ -185,7 +553,7 @@
   ]
  },
  {
-  "id": "sm-1972-subject-and-predicate-noun-with-the-t4",
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t10",
   "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
   "questions": [
    {
@@ -238,24 +606,9 @@
   ]
  },
  {
-  "id": "sm-1972-subject-and-predicate-noun-with-the-t5",
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t11",
   "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
   "questions": [
-   {
-    "prompt": "I think that I have made more money than any two others together.",
-    "answer": "οἶμαι ἐμὲ πλείω χρήματα εἰργάσθαι ἢ ἄλλους σύνδυο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἶμαι",
-     "ἐμέ",
-     "πλείω",
-     "χρήματα",
-     "εἰργάσθαι",
-     "ἤ",
-     "ἄλλους",
-     "σύνδυο"
-    ]
-   },
    {
     "prompt": "Deeming myself to be too honest, I kept silent.",
     "answer": "ἡγησάμενος ἐμαυτὸν ἐπιεικέστερον εἶναι ἐσιώπησα.",
@@ -266,22 +619,6 @@
      "ἐπιεικέστερον",
      "εἶναι",
      "ἐσιώπησα"
-    ]
-   },
-   {
-    "prompt": "Cleon said that not he himself, but Nicias was in command.",
-    "answer": "ὁ Κλέων οὐκ ἔφη αὐτός, ἀλλὰ τὸν Νικίαν στρατηγεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "Κλέων",
-     "οὐκ",
-     "ἔφη",
-     "αὐτός",
-     "ἀλλά",
-     "τόν",
-     "Νικίαν",
-     "στρατηγεῖν"
     ]
    },
    {
@@ -302,7 +639,7 @@
   ]
  },
  {
-  "id": "sm-1972-subject-and-predicate-noun-with-the-t6",
+  "id": "sm-1972-subject-and-predicate-noun-with-the-t12",
   "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
   "questions": [
    {
@@ -317,20 +654,6 @@
      "τοῦ",
      "χαλεπός",
      "εἶναι"
-    ]
-   },
-   {
-    "prompt": "Being rid of those who profess to be judges, he departed.",
-    "answer": "ἀπαλλαγεὶς τούτων τῶν φασκόντων δικαστῶν εἶναι ἀπῆλθεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπαλλαγείς",
-     "τούτων",
-     "τῶν",
-     "φασκόντων",
-     "δικαστῶν",
-     "εἶναι",
-     "ἀπῆλθεν"
     ]
    },
    {

@@ -4,6 +4,417 @@
   "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
   "questions": [
    {
+    "prompt": "The general ordered the soldiers to cross the river by night.",
+    "answer": "ὁ στρατηγὸς ἐκέλευσε τοὺς στρατιώτας νυκτὸς τὸν ποταμὸν διαβαίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκέλευσε",
+     "τοὺς",
+     "στρατιώτας",
+     "νυκτὸς",
+     "τὸν",
+     "ποταμὸν",
+     "διαβαίνειν"
+    ]
+   },
+   {
+    "prompt": "He bade the herald announce the victory to the citizens.",
+    "answer": "ἐκέλευσε τὸν κήρυκα τὴν νίκην τοῖς πολίταις ἀγγέλλειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκέλευσε",
+     "τὸν",
+     "κήρυκα",
+     "τὴν",
+     "νίκην",
+     "τοῖς",
+     "πολίταις",
+     "ἀγγέλλειν"
+    ]
+   },
+   {
+    "prompt": "The king commanded the shepherds to drive the flocks toward the mountain.",
+    "answer": "ὁ βασιλεὺς ἐκέλευσε τοὺς ποιμένας τὰ ποίμνια πρὸς τὸ ὄρος ἐλαύνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "ἐκέλευσε",
+     "τοὺς",
+     "ποιμένας",
+     "τὰ",
+     "ποίμνια",
+     "πρὸς",
+     "τὸ",
+     "ὄρος",
+     "ἐλαύνειν"
+    ]
+   },
+   {
+    "prompt": "Cyrus ordered his horsemen to pursue the fleeing enemy.",
+    "answer": "ὁ Κῦρος ἐκέλευσε τοὺς ἱππέας τοὺς φεύγοντας πολεμίους διώκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "ἐκέλευσε",
+     "τοὺς",
+     "ἱππέας",
+     "φεύγοντας",
+     "πολεμίους",
+     "διώκειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t2",
+  "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The suppliants begged the king to spare their children.",
+    "answer": "οἱ ἱκέται τοῦ βασιλέως ἐδέοντο τῶν παίδων φείδεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱκέται",
+     "τοῦ",
+     "βασιλέως",
+     "ἐδέοντο",
+     "τῶν",
+     "παίδων",
+     "φείδεσθαι"
+    ]
+   },
+   {
+    "prompt": "We kept asking the general to lead us out of the danger.",
+    "answer": "τοῦ στρατηγοῦ ἐδεόμεθα ἡμᾶς ἐκ τοῦ κινδύνου ἐξάγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἐδεόμεθα",
+     "ἡμᾶς",
+     "ἐκ",
+     "κινδύνου",
+     "ἐξάγειν"
+    ]
+   },
+   {
+    "prompt": "They begged the god to send rain upon the parched fields.",
+    "answer": "τοῦ θεοῦ ἐδέοντο ὑετὸν ἐπὶ τοὺς αὐχμηροὺς ἀγροὺς πέμπειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "θεοῦ",
+     "ἐδέοντο",
+     "ὑετὸν",
+     "ἐπὶ",
+     "τοὺς",
+     "αὐχμηροὺς",
+     "ἀγροὺς",
+     "πέμπειν"
+    ]
+   },
+   {
+    "prompt": "The old man asked his friends to bury him beside the sea.",
+    "answer": "ὁ γέρων τῶν φίλων ἐδεῖτο παρὰ τὴν θάλατταν ἑαυτὸν θάπτειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τῶν",
+     "φίλων",
+     "ἐδεῖτο",
+     "παρὰ",
+     "τὴν",
+     "θάλατταν",
+     "ἑαυτὸν",
+     "θάπτειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t3",
+  "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The law forbids the young to drink much wine.",
+    "answer": "ὁ νόμος κωλύει τοὺς νέους πολὺν οἶνον πίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νόμος",
+     "κωλύει",
+     "τοὺς",
+     "νέους",
+     "πολὺν",
+     "οἶνον",
+     "πίνειν"
+    ]
+   },
+   {
+    "prompt": "The storm prevented the sailors from putting out to sea.",
+    "answer": "ὁ χειμὼν ἐκώλυσε τοὺς ναύτας ἀνάγεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χειμὼν",
+     "ἐκώλυσε",
+     "τοὺς",
+     "ναύτας",
+     "ἀνάγεσθαι"
+    ]
+   },
+   {
+    "prompt": "Fear of the judges kept him from telling the truth.",
+    "answer": "ὁ τῶν δικαστῶν φόβος αὐτὸν ἐκώλυσε τὰ ἀληθῆ λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τῶν",
+     "δικαστῶν",
+     "φόβος",
+     "αὐτὸν",
+     "ἐκώλυσε",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "The deep snow kept the horsemen from riding across the plain.",
+    "answer": "ἡ βαθεῖα χιὼν τοὺς ἱππέας ἐκώλυσε διὰ τοῦ πεδίου ἱππεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βαθεῖα",
+     "χιὼν",
+     "τοὺς",
+     "ἱππέας",
+     "ἐκώλυσε",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἱππεύειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t4",
+  "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "A good education teaches men to obey the laws.",
+    "answer": "ἡ καλὴ παίδευσις τοὺς ἀνθρώπους διδάσκει τοῖς νόμοις πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "καλὴ",
+     "παίδευσις",
+     "τοὺς",
+     "ἀνθρώπους",
+     "διδάσκει",
+     "τοῖς",
+     "νόμοις",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "Socrates used to teach the young to distinguish the good from the base.",
+    "answer": "ὁ Σωκράτης τοὺς νέους ἐδίδασκε τοὺς ἀγαθοὺς ἀπὸ τῶν κακῶν διαγιγνώσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "τοὺς",
+     "νέους",
+     "ἐδίδασκε",
+     "ἀγαθοὺς",
+     "ἀπὸ",
+     "τῶν",
+     "κακῶν",
+     "διαγιγνώσκειν"
+    ]
+   },
+   {
+    "prompt": "Necessity teaches even the weak to bear their toils.",
+    "answer": "ἡ ἀνάγκη καὶ τοὺς ἀσθενεῖς διδάσκει τοὺς πόνους φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀνάγκη",
+     "καὶ",
+     "τοὺς",
+     "ἀσθενεῖς",
+     "διδάσκει",
+     "πόνους",
+     "φέρειν"
+    ]
+   },
+   {
+    "prompt": "The huntsman taught his sons to track the wild beasts.",
+    "answer": "ὁ κυνηγέτης τοὺς υἱοὺς ἐδίδαξε τὰ θηρία ἰχνεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κυνηγέτης",
+     "τοὺς",
+     "υἱοὺς",
+     "ἐδίδαξε",
+     "τὰ",
+     "θηρία",
+     "ἰχνεύειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t5",
+  "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The father would not allow his daughter to go out of the house.",
+    "answer": "ὁ πατὴρ τὴν θυγατέρα οὐκ εἴα ἐκ τῆς οἰκίας ἐξιέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατὴρ",
+     "τὴν",
+     "θυγατέρα",
+     "οὐκ",
+     "εἴα",
+     "ἐκ",
+     "τῆς",
+     "οἰκίας",
+     "ἐξιέναι"
+    ]
+   },
+   {
+    "prompt": "The Athenians permitted the strangers to dwell in the city.",
+    "answer": "οἱ Ἀθηναῖοι τοὺς ξένους εἴων ἐν τῇ πόλει οἰκεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τοὺς",
+     "ξένους",
+     "εἴων",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "οἰκεῖν"
+    ]
+   },
+   {
+    "prompt": "He entrusted his friends to manage his affairs while he was absent.",
+    "answer": "τοῖς φίλοις ἐπέτρεψε τὰ ἑαυτοῦ πράγματα ἀπὼν διοικεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "φίλοις",
+     "ἐπέτρεψε",
+     "τὰ",
+     "ἑαυτοῦ",
+     "πράγματα",
+     "ἀπὼν",
+     "διοικεῖν"
+    ]
+   },
+   {
+    "prompt": "The general let the soldiers rest after the battle.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας εἴα μετὰ τὴν μάχην ἀναπαύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "εἴα",
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "ἀναπαύεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t6",
+  "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The orator persuaded the citizens to make peace with the enemy.",
+    "answer": "ὁ ῥήτωρ τοὺς πολίτας ἔπεισε πρὸς τοὺς πολεμίους εἰρήνην ποιεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τοὺς",
+     "πολίτας",
+     "ἔπεισε",
+     "πρὸς",
+     "πολεμίους",
+     "εἰρήνην",
+     "ποιεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "She urged her brother to flee before the tyrant arrived.",
+    "answer": "τὸν ἀδελφὸν προέτρεψε φεύγειν πρὶν τὸν τύραννον ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἀδελφὸν",
+     "προέτρεψε",
+     "φεύγειν",
+     "πρὶν",
+     "τύραννον",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "Poverty compelled the farmer to sell his oxen.",
+    "answer": "ἡ πενία τὸν γεωργὸν ἠνάγκασε τοὺς βοῦς ἀποδίδοσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πενία",
+     "τὸν",
+     "γεωργὸν",
+     "ἠνάγκασε",
+     "τοὺς",
+     "βοῦς",
+     "ἀποδίδοσθαι"
+    ]
+   },
+   {
+    "prompt": "Hunger forced the wolves to come down into the villages.",
+    "answer": "ὁ λιμὸς τοὺς λύκους ἠνάγκασεν εἰς τὰς κώμας καταβαίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "λιμὸς",
+     "τοὺς",
+     "λύκους",
+     "ἠνάγκασεν",
+     "εἰς",
+     "τὰς",
+     "κώμας",
+     "καταβαίνειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t7",
+  "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
+  "questions": [
+   {
     "prompt": "The general ordered the soldiers to remain in the camp.",
     "answer": "ὁ στρατηγὸς ἐκέλευσε τοὺς στρατιώτας ἐν τῷ στρατοπέδῳ μένειν.",
     "kind": "translate-en-grc",
@@ -66,7 +477,7 @@
   ]
  },
  {
-  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t2",
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t8",
   "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
   "questions": [
    {
@@ -132,7 +543,7 @@
   ]
  },
  {
-  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t3",
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t9",
   "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
   "questions": [
    {
@@ -193,7 +604,7 @@
   ]
  },
  {
-  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t4",
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t10",
   "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
   "questions": [
    {
@@ -257,7 +668,7 @@
   ]
  },
  {
-  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t5",
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t11",
   "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
   "questions": [
    {
@@ -320,7 +731,7 @@
   ]
  },
  {
-  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t6",
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t12",
   "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
   "questions": [
    {

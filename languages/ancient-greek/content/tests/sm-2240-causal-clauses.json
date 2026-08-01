@@ -1,0 +1,397 @@
+[
+ {
+  "id": "sm-2240-causal-clauses-t1",
+  "sectionId": "sm-2240-causal-clauses",
+  "questions": [
+   {
+    "prompt": "Since the enemy had fled, the general led the soldiers back.",
+    "answer": "ἐπεὶ οἱ πολέμιοι ἔφυγον, ὁ στρατηγὸς τοὺς στρατιώτας ἀπήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "πολέμιοι",
+     "ἔφυγον",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "ἀπήγαγεν"
+    ]
+   },
+   {
+    "prompt": "The citizens praised him because he had saved the city.",
+    "answer": "οἱ πολῖται αὐτὸν ἐπῄνεσαν ὅτι τὴν πόλιν ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "αὐτὸν",
+     "ἐπῄνεσαν",
+     "ὅτι",
+     "τὴν",
+     "πόλιν",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "Since night was coming on, they made camp near the river.",
+    "answer": "ἐπειδὴ νὺξ ἐπῄει, πρὸς τῷ ποταμῷ ἐστρατοπεδεύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "νὺξ",
+     "ἐπῄει",
+     "πρὸς",
+     "τῷ",
+     "ποταμῷ",
+     "ἐστρατοπεδεύσαντο"
+    ]
+   },
+   {
+    "prompt": "I honor this man because he never betrayed his friends.",
+    "answer": "τοῦτον τὸν ἄνδρα τιμῶ διότι τοὺς φίλους οὐδέποτε προέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτον",
+     "τὸν",
+     "ἄνδρα",
+     "τιμῶ",
+     "διότι",
+     "τοὺς",
+     "φίλους",
+     "οὐδέποτε",
+     "προέδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2240-causal-clauses-t2",
+  "sectionId": "sm-2240-causal-clauses",
+  "questions": [
+   {
+    "prompt": "They blamed the general because, they alleged, he had not led them out.",
+    "answer": "τὸν στρατηγὸν ἐμέμφοντο ὅτι οὐκ ἐξαγάγοι σφᾶς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "στρατηγὸν",
+     "ἐμέμφοντο",
+     "ὅτι",
+     "οὐκ",
+     "ἐξαγάγοι",
+     "σφᾶς"
+    ]
+   },
+   {
+    "prompt": "The judges condemned him on the ground that he had betrayed the city.",
+    "answer": "οἱ δικασταὶ αὐτοῦ κατέγνωσαν ὡς τὴν πόλιν προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "αὐτοῦ",
+     "κατέγνωσαν",
+     "ὡς",
+     "τὴν",
+     "πόλιν",
+     "προδοίη"
+    ]
+   },
+   {
+    "prompt": "They were angry at Cyrus because, as they claimed, he was sending no help.",
+    "answer": "τῷ Κύρῳ ὠργίζοντο ὅτι βοήθειαν οὐ πέμποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "Κύρῳ",
+     "ὠργίζοντο",
+     "ὅτι",
+     "βοήθειαν",
+     "οὐ",
+     "πέμποι"
+    ]
+   },
+   {
+    "prompt": "The soldiers reproached their commander because he had abandoned the wounded.",
+    "answer": "οἱ στρατιῶται τὸν ἡγεμόνα ᾐτιῶντο ὅτι τοὺς τετρωμένους καταλίποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "ἡγεμόνα",
+     "ᾐτιῶντο",
+     "ὅτι",
+     "τοὺς",
+     "τετρωμένους",
+     "καταλίποι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2240-causal-clauses-t3",
+  "sectionId": "sm-2240-causal-clauses",
+  "questions": [
+   {
+    "prompt": "I am surprised if you will not help yourselves.",
+    "answer": "θαυμάζω εἰ μὴ βοηθήσετε ὑμῖν αὐτοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "εἰ",
+     "μὴ",
+     "βοηθήσετε",
+     "ὑμῖν",
+     "αὐτοῖς"
+    ]
+   },
+   {
+    "prompt": "I am indignant that the wicked prosper while the good fare badly.",
+    "answer": "ἀγανακτῶ εἰ οἱ μὲν πονηροὶ εὖ πράττουσιν, οἱ δὲ ἀγαθοὶ κακῶς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγανακτῶ",
+     "εἰ",
+     "οἱ",
+     "μὲν",
+     "πονηροὶ",
+     "εὖ",
+     "πράττουσιν",
+     "δὲ",
+     "ἀγαθοὶ",
+     "κακῶς"
+    ]
+   },
+   {
+    "prompt": "It is a shame if we shall betray those who trust us.",
+    "answer": "αἰσχρόν ἐστιν εἰ τοὺς πιστεύοντας ἡμῖν προδώσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστιν",
+     "εἰ",
+     "τοὺς",
+     "πιστεύοντας",
+     "ἡμῖν",
+     "προδώσομεν"
+    ]
+   },
+   {
+    "prompt": "They were ashamed that they had fled from the battle.",
+    "answer": "ᾐσχύνοντο εἰ ἐκ τῆς μάχης ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾐσχύνοντο",
+     "εἰ",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "ἔφυγον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2240-causal-clauses-t4",
+  "sectionId": "sm-2240-causal-clauses",
+  "questions": [
+   {
+    "prompt": "Do not be surprised that I take the present situation hard.",
+    "answer": "μὴ θαυμάζετε ὅτι τὰ παρόντα χαλεπῶς φέρω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "θαυμάζετε",
+     "ὅτι",
+     "τὰ",
+     "παρόντα",
+     "χαλεπῶς",
+     "φέρω"
+    ]
+   },
+   {
+    "prompt": "We are content that we have saved our lives.",
+    "answer": "ἀγαπῶμεν ὅτι τὰ σώματα διεσωσάμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγαπῶμεν",
+     "ὅτι",
+     "τὰ",
+     "σώματα",
+     "διεσωσάμεθα"
+    ]
+   },
+   {
+    "prompt": "I am glad that you have come safe from the enemy's land.",
+    "answer": "ἥδομαι ὅτι ἐκ τῆς τῶν πολεμίων χώρας σῶος ἀφῖξαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥδομαι",
+     "ὅτι",
+     "ἐκ",
+     "τῆς",
+     "τῶν",
+     "πολεμίων",
+     "χώρας",
+     "σῶος",
+     "ἀφῖξαι"
+    ]
+   },
+   {
+    "prompt": "The general was angry that the guards had fallen asleep.",
+    "answer": "ὁ στρατηγὸς ὠργίζετο ὅτι οἱ φύλακες κατέδαρθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ὠργίζετο",
+     "ὅτι",
+     "οἱ",
+     "φύλακες",
+     "κατέδαρθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2240-causal-clauses-t5",
+  "sectionId": "sm-2240-causal-clauses",
+  "questions": [
+   {
+    "prompt": "Since you would long ago have perished by yourselves, obey me now.",
+    "answer": "ἐπεὶ διὰ ὑμᾶς αὐτοὺς πάλαι ἂν ἀπολώλειτε, νῦν ἐμοὶ πείθεσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "διὰ",
+     "ὑμᾶς",
+     "αὐτοὺς",
+     "πάλαι",
+     "ἂν",
+     "ἀπολώλειτε",
+     "νῦν",
+     "ἐμοὶ",
+     "πείθεσθε"
+    ]
+   },
+   {
+    "prompt": "Since there is no one I would hear more gladly, stay with us.",
+    "answer": "ἐπεὶ οὐδενὸς ἂν ἥδιον ἀκούσαιμι, παράμεινον ἡμῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οὐδενὸς",
+     "ἂν",
+     "ἥδιον",
+     "ἀκούσαιμι",
+     "παράμεινον",
+     "ἡμῖν"
+    ]
+   },
+   {
+    "prompt": "Since then this is the case, we must deliberate about the war.",
+    "answer": "ἐπεὶ τοίνυν ταῦτα οὕτως ἔχει, βουλευτέον ἡμῖν περὶ τοῦ πολέμου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τοίνυν",
+     "ταῦτα",
+     "οὕτως",
+     "ἔχει",
+     "βουλευτέον",
+     "ἡμῖν",
+     "περὶ",
+     "τοῦ",
+     "πολέμου"
+    ]
+   },
+   {
+    "prompt": "The present state of affairs is difficult, since we are deprived of such generals.",
+    "answer": "χαλεπὰ τὰ παρόντα ἐστίν, ὁπότε τοιούτων στρατηγῶν στερόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπὰ",
+     "τὰ",
+     "παρόντα",
+     "ἐστίν",
+     "ὁπότε",
+     "τοιούτων",
+     "στρατηγῶν",
+     "στερόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2240-causal-clauses-t6",
+  "sectionId": "sm-2240-causal-clauses",
+  "questions": [
+   {
+    "prompt": "For this reason I trust him, because he has often kept his faith.",
+    "answer": "διὰ τοῦτο αὐτῷ πιστεύω, ὅτι πολλάκις τὴν πίστιν ἐτήρησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τοῦτο",
+     "αὐτῷ",
+     "πιστεύω",
+     "ὅτι",
+     "πολλάκις",
+     "τὴν",
+     "πίστιν",
+     "ἐτήρησεν"
+    ]
+   },
+   {
+    "prompt": "I am pleased at being honored by the citizens, since indeed I am a man.",
+    "answer": "ἥδομαι ὑπὸ τῶν πολιτῶν τιμώμενος, εἴπερ ἄνθρωπός εἰμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥδομαι",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "τιμώμενος",
+     "εἴπερ",
+     "ἄνθρωπός",
+     "εἰμι"
+    ]
+   },
+   {
+    "prompt": "He envied us because, as he supposed, we are able to benefit our friends.",
+    "answer": "ἐζήλωσεν ἡμᾶς ὡς τοὺς φίλους εὖ ποιεῖν δυνάμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐζήλωσεν",
+     "ἡμᾶς",
+     "ὡς",
+     "τοὺς",
+     "φίλους",
+     "εὖ",
+     "ποιεῖν",
+     "δυνάμεθα"
+    ]
+   },
+   {
+    "prompt": "Since you do not wish to march with me, I must use another plan.",
+    "answer": "ἐπεὶ ὑμεῖς οὐ βούλεσθε συμπορεύεσθαι, ἀνάγκη μοι ἑτέρᾳ γνώμῃ χρῆσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὑμεῖς",
+     "οὐ",
+     "βούλεσθε",
+     "συμπορεύεσθαι",
+     "ἀνάγκη",
+     "μοι",
+     "ἑτέρᾳ",
+     "γνώμῃ",
+     "χρῆσθαι"
+    ]
+   }
+  ]
+ }
+]

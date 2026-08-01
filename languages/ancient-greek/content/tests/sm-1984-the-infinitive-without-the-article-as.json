@@ -4,6 +4,373 @@
   "sectionId": "sm-1984-the-infinitive-without-the-article-as",
   "questions": [
    {
+    "prompt": "It is necessary for the soldiers to guard the walls by night.",
+    "answer": "δεῖ τοὺς στρατιώτας τὰ τείχη νύκτωρ φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "τοὺς",
+     "στρατιώτας",
+     "τὰ",
+     "τείχη",
+     "νύκτωρ",
+     "φυλάττειν"
+    ]
+   },
+   {
+    "prompt": "It seemed best to the generals to lead the army through the mountains.",
+    "answer": "ἔδοξε τοῖς στρατηγοῖς διὰ τῶν ὀρῶν τὸ στράτευμα ἄγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξε",
+     "τοῖς",
+     "στρατηγοῖς",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "τὸ",
+     "στράτευμα",
+     "ἄγειν"
+    ]
+   },
+   {
+    "prompt": "It is possible for the wise to bear misfortunes nobly.",
+    "answer": "ἔξεστι τοῖς σοφοῖς τὰς συμφορὰς καλῶς φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστι",
+     "τοῖς",
+     "σοφοῖς",
+     "τὰς",
+     "συμφοράς",
+     "καλῶς",
+     "φέρειν"
+    ]
+   },
+   {
+    "prompt": "It befits the young to honour the elders.",
+    "answer": "προσήκει τοῖς νέοις τοὺς πρεσβυτέρους τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσήκει",
+     "τοῖς",
+     "νέοις",
+     "τοὺς",
+     "πρεσβυτέρους",
+     "τιμᾶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1984-the-infinitive-without-the-article-as-t2",
+  "sectionId": "sm-1984-the-infinitive-without-the-article-as",
+  "questions": [
+   {
+    "prompt": "It is disgraceful to flee from the battle.",
+    "answer": "αἰσχρόν ἐστιν ἐκ τῆς μάχης φεύγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστιν",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φεύγειν"
+    ]
+   },
+   {
+    "prompt": "It is difficult to please all the citizens.",
+    "answer": "χαλεπόν ἐστι πᾶσι τοῖς πολίταις ἀρέσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστι",
+     "πᾶσι",
+     "τοῖς",
+     "πολίταις",
+     "ἀρέσκειν"
+    ]
+   },
+   {
+    "prompt": "It is just to help those who have been wronged.",
+    "answer": "δίκαιόν ἐστι τοῖς ἠδικημένοις βοηθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δίκαιόν",
+     "ἐστι",
+     "τοῖς",
+     "ἠδικημένοις",
+     "βοηθεῖν"
+    ]
+   },
+   {
+    "prompt": "It is worthwhile to remember the good ancestors.",
+    "answer": "ἄξιόν ἐστι τῶν ἀγαθῶν προγόνων μεμνῆσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄξιόν",
+     "ἐστι",
+     "τῶν",
+     "ἀγαθῶν",
+     "προγόνων",
+     "μεμνῆσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1984-the-infinitive-without-the-article-as-t3",
+  "sectionId": "sm-1984-the-infinitive-without-the-article-as",
+  "questions": [
+   {
+    "prompt": "One thing alone is best, to die for one's country.",
+    "answer": "ἓν μόνον ἄριστόν ἐστιν, ὑπὲρ τῆς πατρίδος ἀποθνῄσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἓν",
+     "μόνον",
+     "ἄριστόν",
+     "ἐστιν",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκειν"
+    ]
+   },
+   {
+    "prompt": "I gave you this command, to obey the laws.",
+    "answer": "ταύτην ὑμῖν τὴν ἐντολὴν ἔδωκα, τοῖς νόμοις πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτην",
+     "ὑμῖν",
+     "τὴν",
+     "ἐντολήν",
+     "ἔδωκα",
+     "τοῖς",
+     "νόμοις",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "This is the fairest thing of all, to help one's friends.",
+    "answer": "τοῦτο πάντων κάλλιστόν ἐστι, τοῖς φίλοις βοηθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "πάντων",
+     "κάλλιστόν",
+     "ἐστι",
+     "τοῖς",
+     "φίλοις",
+     "βοηθεῖν"
+    ]
+   },
+   {
+    "prompt": "I taught them all one thing, to follow their leader.",
+    "answer": "ἓν πάντας ἐδίδαξα, τῷ ἡγεμόνι ἕπεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἓν",
+     "πάντας",
+     "ἐδίδαξα",
+     "τῷ",
+     "ἡγεμόνι",
+     "ἕπεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1984-the-infinitive-without-the-article-as-t4",
+  "sectionId": "sm-1984-the-infinitive-without-the-article-as",
+  "questions": [
+   {
+    "prompt": "For to learn is to acquire knowledge.",
+    "answer": "τὸ γὰρ μανθάνειν ἐπιστήμην λαμβάνειν ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "γὰρ",
+     "μανθάνειν",
+     "ἐπιστήμην",
+     "λαμβάνειν",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "For to rule well is to benefit the ruled.",
+    "answer": "τὸ γὰρ καλῶς ἄρχειν τοὺς ἀρχομένους ὠφελεῖν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "γὰρ",
+     "καλῶς",
+     "ἄρχειν",
+     "τοὺς",
+     "ἀρχομένους",
+     "ὠφελεῖν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "For to be temperate is to master one's pleasures.",
+    "answer": "τὸ γὰρ σωφρονεῖν τῶν ἡδονῶν κρατεῖν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "γὰρ",
+     "σωφρονεῖν",
+     "τῶν",
+     "ἡδονῶν",
+     "κρατεῖν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "For to be free is to fear no one.",
+    "answer": "τὸ γὰρ ἐλεύθερον εἶναι μηδένα φοβεῖσθαι ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "γὰρ",
+     "ἐλεύθερον",
+     "εἶναι",
+     "μηδένα",
+     "φοβεῖσθαι",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1984-the-infinitive-without-the-article-as-t5",
+  "sectionId": "sm-1984-the-infinitive-without-the-article-as",
+  "questions": [
+   {
+    "prompt": "What must those who wish to be free do?",
+    "answer": "τί χρὴ ποιεῖν τοὺς ἐλευθέρους εἶναι βουλομένους;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "χρὴ",
+     "ποιεῖν",
+     "τοὺς",
+     "ἐλευθέρους",
+     "εἶναι",
+     "βουλομένους"
+    ]
+   },
+   {
+    "prompt": "It is time to deliberate about the coming war.",
+    "answer": "ὥρα ἐστὶ περὶ τοῦ μέλλοντος πολέμου βουλεύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥρα",
+     "ἐστὶ",
+     "περὶ",
+     "τοῦ",
+     "μέλλοντος",
+     "πολέμου",
+     "βουλεύεσθαι"
+    ]
+   },
+   {
+    "prompt": "It happened that the ambassadors arrived at the same time.",
+    "answer": "συνέβη τοὺς πρέσβεις ἅμα ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συνέβη",
+     "τοὺς",
+     "πρέσβεις",
+     "ἅμα",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "It is in our power to save the city now.",
+    "answer": "ἔξεστιν ἡμῖν νῦν τὴν πόλιν σῴζειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστιν",
+     "ἡμῖν",
+     "νῦν",
+     "τὴν",
+     "πόλιν",
+     "σῴζειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1984-the-infinitive-without-the-article-as-t6",
+  "sectionId": "sm-1984-the-infinitive-without-the-article-as",
+  "questions": [
+   {
+    "prompt": "Since the enemy are near, it is necessary to arm the young men quickly.",
+    "answer": "τῶν πολεμίων ἐγγὺς ὄντων δεῖ τοὺς νεανίας ταχέως ὁπλίζειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἐγγὺς",
+     "ὄντων",
+     "δεῖ",
+     "τοὺς",
+     "νεανίας",
+     "ταχέως",
+     "ὁπλίζειν"
+    ]
+   },
+   {
+    "prompt": "It is fitting for those who have received benefits to return gratitude.",
+    "answer": "πρέπει τοῖς εὖ πεπονθόσι χάριν ἀποδιδόναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρέπει",
+     "τοῖς",
+     "εὖ",
+     "πεπονθόσι",
+     "χάριν",
+     "ἀποδιδόναι"
+    ]
+   },
+   {
+    "prompt": "It is impossible to deceive the gods who see all things.",
+    "answer": "ἀδύνατόν ἐστι τοὺς θεοὺς τοὺς πάντα ὁρῶντας ἐξαπατᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατόν",
+     "ἐστι",
+     "τοὺς",
+     "θεοὺς",
+     "πάντα",
+     "ὁρῶντας",
+     "ἐξαπατᾶν"
+    ]
+   },
+   {
+    "prompt": "It is honourable to die fighting for freedom.",
+    "answer": "καλόν ἐστιν ὑπὲρ τῆς ἐλευθερίας μαχόμενον ἀποθνῄσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλόν",
+     "ἐστιν",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "μαχόμενον",
+     "ἀποθνῄσκειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1984-the-infinitive-without-the-article-as-t7",
+  "sectionId": "sm-1984-the-infinitive-without-the-article-as",
+  "questions": [
+   {
     "prompt": "It is necessary for the soldiers to guard the camp by night.",
     "answer": "δεῖ τοὺς στρατιώτας νύκτωρ τὸ στρατόπεδον φυλάττειν.",
     "kind": "translate-en-grc",
@@ -59,22 +426,9 @@
   ]
  },
  {
-  "id": "sm-1984-the-infinitive-without-the-article-as-t2",
+  "id": "sm-1984-the-infinitive-without-the-article-as-t8",
   "sectionId": "sm-1984-the-infinitive-without-the-article-as",
   "questions": [
-   {
-    "prompt": "It is disgraceful to flee from the battle.",
-    "answer": "αἰσχρόν ἐστιν ἐκ τῆς μάχης φεύγειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἰσχρόν",
-     "ἐστιν",
-     "ἐκ",
-     "τῆς",
-     "μάχης",
-     "φεύγειν"
-    ]
-   },
    {
     "prompt": "It befits the young to honour their elders.",
     "answer": "πρέπει τοῖς νέοις τοὺς γεραιτέρους τιμᾶν.",
@@ -116,7 +470,7 @@
   ]
  },
  {
-  "id": "sm-1984-the-infinitive-without-the-article-as-t3",
+  "id": "sm-1984-the-infinitive-without-the-article-as-t9",
   "sectionId": "sm-1984-the-infinitive-without-the-article-as",
   "questions": [
    {
@@ -177,7 +531,7 @@
   ]
  },
  {
-  "id": "sm-1984-the-infinitive-without-the-article-as-t4",
+  "id": "sm-1984-the-infinitive-without-the-article-as-t10",
   "sectionId": "sm-1984-the-infinitive-without-the-article-as",
   "questions": [
    {
@@ -235,7 +589,7 @@
   ]
  },
  {
-  "id": "sm-1984-the-infinitive-without-the-article-as-t5",
+  "id": "sm-1984-the-infinitive-without-the-article-as-t11",
   "sectionId": "sm-1984-the-infinitive-without-the-article-as",
   "questions": [
    {
@@ -288,7 +642,7 @@
   ]
  },
  {
-  "id": "sm-1984-the-infinitive-without-the-article-as-t6",
+  "id": "sm-1984-the-infinitive-without-the-article-as-t12",
   "sectionId": "sm-1984-the-infinitive-without-the-article-as",
   "questions": [
    {

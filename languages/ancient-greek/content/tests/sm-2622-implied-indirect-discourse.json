@@ -1,0 +1,407 @@
+[
+ {
+  "id": "sm-2622-implied-indirect-discourse-t1",
+  "sectionId": "sm-2622-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The soldiers were afraid if the general should abandon them on the mountain.",
+    "answer": "οἱ στρατιῶται ἐφοβοῦντο εἰ ὁ στρατηγὸς αὐτοὺς ἐν τῷ ὄρει καταλίποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐφοβοῦντο",
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "αὐτοὺς",
+     "ἐν",
+     "τῷ",
+     "ὄρει",
+     "καταλίποι"
+    ]
+   },
+   {
+    "prompt": "The old man gave his property to his friends, in case he should die childless.",
+    "answer": "ὁ γέρων τὰ χρήματα τοῖς φίλοις ἔδωκεν, εἴ πως τελευτήσειεν ἄπαις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τὰ",
+     "χρήματα",
+     "τοῖς",
+     "φίλοις",
+     "ἔδωκεν",
+     "εἴ",
+     "πως",
+     "τελευτήσειεν",
+     "ἄπαις"
+    ]
+   },
+   {
+    "prompt": "The citizens rejoiced if the enemy should raise the siege.",
+    "answer": "οἱ πολῖται ἔχαιρον εἰ οἱ πολέμιοι τὴν πολιορκίαν λύσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἔχαιρον",
+     "εἰ",
+     "πολέμιοι",
+     "τὴν",
+     "πολιορκίαν",
+     "λύσειαν"
+    ]
+   },
+   {
+    "prompt": "He was distressed if his son should suffer anything on the voyage.",
+    "answer": "ἤχθετο εἰ ὁ υἱὸς ἐν τῷ πλῷ πάθοι τι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤχθετο",
+     "εἰ",
+     "ὁ",
+     "υἱὸς",
+     "ἐν",
+     "τῷ",
+     "πλῷ",
+     "πάθοι",
+     "τι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2622-implied-indirect-discourse-t2",
+  "sectionId": "sm-2622-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They made a truce until the messengers should report what had happened.",
+    "answer": "σπονδὰς ἐποιήσαντο, ἕως οἱ ἄγγελοι ἀπαγγείλειαν τὰ γενόμενα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σπονδὰς",
+     "ἐποιήσαντο",
+     "ἕως",
+     "οἱ",
+     "ἄγγελοι",
+     "ἀπαγγείλειαν",
+     "τὰ",
+     "γενόμενα"
+    ]
+   },
+   {
+    "prompt": "He left a garrison behind until the allies should settle these matters.",
+    "answer": "φρουρὰν κατέλιπεν, ἕως οἱ σύμμαχοι ταῦτα διαπράξαιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φρουρὰν",
+     "κατέλιπεν",
+     "ἕως",
+     "οἱ",
+     "σύμμαχοι",
+     "ταῦτα",
+     "διαπράξαιντο"
+    ]
+   },
+   {
+    "prompt": "The sailors waited until the storm should cease.",
+    "answer": "οἱ ναῦται περιέμενον, ἕως ὁ χειμὼν παύσαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "περιέμενον",
+     "ἕως",
+     "ὁ",
+     "χειμὼν",
+     "παύσαιτο"
+    ]
+   },
+   {
+    "prompt": "The scouts remained on the hill until the army should come up.",
+    "answer": "οἱ σκοποὶ ἐπὶ τῷ λόφῳ ἔμενον, ἕως τὸ στράτευμα προσέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σκοποὶ",
+     "ἐπὶ",
+     "τῷ",
+     "λόφῳ",
+     "ἔμενον",
+     "ἕως",
+     "τὸ",
+     "στράτευμα",
+     "προσέλθοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2622-implied-indirect-discourse-t3",
+  "sectionId": "sm-2622-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He inquired about the letter which the messenger had brought.",
+    "answer": "ἤρετο περὶ τῆς ἐπιστολῆς ἣν ὁ ἄγγελος κομίσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤρετο",
+     "περὶ",
+     "τῆς",
+     "ἐπιστολῆς",
+     "ἣν",
+     "ὁ",
+     "ἄγγελος",
+     "κομίσειεν"
+    ]
+   },
+   {
+    "prompt": "She asked about the gifts which the stranger had given her.",
+    "answer": "ἤρετο περὶ τῶν δώρων ἃ ὁ ξένος αὐτῇ δοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤρετο",
+     "περὶ",
+     "τῶν",
+     "δώρων",
+     "ἃ",
+     "ὁ",
+     "ξένος",
+     "αὐτῇ",
+     "δοίη"
+    ]
+   },
+   {
+    "prompt": "He sought the road by which the guide had led them.",
+    "answer": "ἐζήτει τὴν ὁδὸν ᾗ ὁ ἡγεμὼν αὐτοὺς ἀγάγοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐζήτει",
+     "τὴν",
+     "ὁδὸν",
+     "ᾗ",
+     "ὁ",
+     "ἡγεμὼν",
+     "αὐτοὺς",
+     "ἀγάγοι"
+    ]
+   },
+   {
+    "prompt": "He asked for the reward which the king had promised.",
+    "answer": "ᾔτει τὸν μισθὸν ὃν ὁ βασιλεὺς ὑπόσχοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔτει",
+     "τὸν",
+     "μισθὸν",
+     "ὃν",
+     "ὁ",
+     "βασιλεὺς",
+     "ὑπόσχοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2622-implied-indirect-discourse-t4",
+  "sectionId": "sm-2622-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They came wishing to persuade the king, if they could, to march against the enemy.",
+    "answer": "ἀφίκοντο βουλόμενοι πεῖσαι τὸν βασιλέα, εἰ δύναιντο, στρατεῦσαι ἐπὶ τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφίκοντο",
+     "βουλόμενοι",
+     "πεῖσαι",
+     "τὸν",
+     "βασιλέα",
+     "εἰ",
+     "δύναιντο",
+     "στρατεῦσαι",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "He advised them to attack the city, if a suitable moment should arise.",
+    "answer": "συνεβούλευσεν αὐτοῖς προσβαλεῖν τῇ πόλει, εἰ καιρὸς γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συνεβούλευσεν",
+     "αὐτοῖς",
+     "προσβαλεῖν",
+     "τῇ",
+     "πόλει",
+     "εἰ",
+     "καιρὸς",
+     "γένοιτο"
+    ]
+   },
+   {
+    "prompt": "They begged the god to reveal, if it were possible, the things to come.",
+    "answer": "ἐδέοντο τοῦ θεοῦ φράσαι, εἰ οἷόν τε εἴη, τὰ μέλλοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδέοντο",
+     "τοῦ",
+     "θεοῦ",
+     "φράσαι",
+     "εἰ",
+     "οἷόν",
+     "τε",
+     "εἴη",
+     "τὰ",
+     "μέλλοντα"
+    ]
+   },
+   {
+    "prompt": "The general ordered the soldiers to withdraw, if the enemy should press hard.",
+    "answer": "ὁ στρατηγὸς ἐκέλευσε τοὺς στρατιώτας ἀναχωρεῖν, εἰ οἱ πολέμιοι βιάζοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκέλευσε",
+     "τοὺς",
+     "στρατιώτας",
+     "ἀναχωρεῖν",
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "βιάζοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2622-implied-indirect-discourse-t5",
+  "sectionId": "sm-2622-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He took care that the soldiers should have provisions.",
+    "answer": "ἐπεμελήθη ὅπως οἱ στρατιῶται τὰ ἐπιτήδεια ἔχοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεμελήθη",
+     "ὅπως",
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ἐπιτήδεια",
+     "ἔχοιεν"
+    ]
+   },
+   {
+    "prompt": "They contrived that no one should learn what had been done.",
+    "answer": "ἐμηχανήσαντο ὅπως μηδεὶς μάθοι τὰ πραχθέντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμηχανήσαντο",
+     "ὅπως",
+     "μηδεὶς",
+     "μάθοι",
+     "τὰ",
+     "πραχθέντα"
+    ]
+   },
+   {
+    "prompt": "The archon worked so that the walls should be guarded.",
+    "answer": "ὁ ἄρχων ἔπραττεν ὅπως τὰ τείχη φυλάττοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄρχων",
+     "ἔπραττεν",
+     "ὅπως",
+     "τὰ",
+     "τείχη",
+     "φυλάττοιτο"
+    ]
+   },
+   {
+    "prompt": "They planned how they might take the citadel.",
+    "answer": "ἐβουλεύσαντο ὅπως τὴν ἀκρόπολιν λάβοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλεύσαντο",
+     "ὅπως",
+     "τὴν",
+     "ἀκρόπολιν",
+     "λάβοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2622-implied-indirect-discourse-t6",
+  "sectionId": "sm-2622-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The mother trembled if her child should fall into the river.",
+    "answer": "ἡ μήτηρ ἔτρεμεν εἰ τὸ παιδίον εἰς τὸν ποταμὸν πέσοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "ἔτρεμεν",
+     "εἰ",
+     "τὸ",
+     "παιδίον",
+     "εἰς",
+     "τὸν",
+     "ποταμὸν",
+     "πέσοι"
+    ]
+   },
+   {
+    "prompt": "He hid the treasure, in case the robbers should come by night.",
+    "answer": "τὸν θησαυρὸν ἔκρυψεν, εἰ οἱ λῃσταὶ νυκτὸς ἔλθοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "θησαυρὸν",
+     "ἔκρυψεν",
+     "εἰ",
+     "οἱ",
+     "λῃσταὶ",
+     "νυκτὸς",
+     "ἔλθοιεν"
+    ]
+   },
+   {
+    "prompt": "The farmers guarded the vines until the grapes should ripen.",
+    "answer": "οἱ γεωργοὶ τὰς ἀμπέλους ἐφύλαττον, ἕως αἱ σταφυλαὶ ἀκμάσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γεωργοὶ",
+     "τὰς",
+     "ἀμπέλους",
+     "ἐφύλαττον",
+     "ἕως",
+     "αἱ",
+     "σταφυλαὶ",
+     "ἀκμάσειαν"
+    ]
+   },
+   {
+    "prompt": "He praised the wine which the servant had provided.",
+    "answer": "ἐπῄνεσε τὸν οἶνον ὃν ὁ θεράπων παράσχοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπῄνεσε",
+     "τὸν",
+     "οἶνον",
+     "ὃν",
+     "ὁ",
+     "θεράπων",
+     "παράσχοι"
+    ]
+   }
+  ]
+ }
+]
