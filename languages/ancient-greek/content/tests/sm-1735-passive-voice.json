@@ -1,0 +1,379 @@
+[
+ {
+  "id": "sm-1735-passive-voice-t1",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "The letter was written by the general during the night.",
+    "answer": "ἡ ἐπιστολὴ ὑπὸ τοῦ στρατηγοῦ νυκτὸς ἐγράφη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιστολή",
+     "ὑπό",
+     "τοῦ",
+     "στρατηγοῦ",
+     "νυκτός",
+     "ἐγράφη"
+    ]
+   },
+   {
+    "prompt": "Those who had been captured by the enemy were finally released.",
+    "answer": "οἱ ὑπὸ τῶν πολεμίων ληφθέντες τέλος ἀπελύθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὑπό",
+     "τῶν",
+     "πολεμίων",
+     "ληφθέντες",
+     "τέλος",
+     "ἀπελύθησαν"
+    ]
+   },
+   {
+    "prompt": "The city was destroyed, though the citizens were fighting bravely.",
+    "answer": "ἡ πόλις διεφθάρη, καίπερ τῶν πολιτῶν ἀνδρείως μαχομένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "διεφθάρη",
+     "καίπερ",
+     "τῶν",
+     "πολιτῶν",
+     "ἀνδρείως",
+     "μαχομένων"
+    ]
+   },
+   {
+    "prompt": "The soldiers, struck by many arrows, took to flight.",
+    "answer": "οἱ στρατιῶται πολλοῖς τοξεύμασι βληθέντες ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πολλοῖς",
+     "τοξεύμασι",
+     "βληθέντες",
+     "ἔφυγον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-t2",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "Everything has now been prepared by us for the long journey.",
+    "answer": "πάντα ἤδη ἡμῖν πρὸς τὴν μακρὰν πορείαν παρεσκεύασται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "ἤδη",
+     "ἡμῖν",
+     "πρός",
+     "τήν",
+     "μακράν",
+     "πορείαν",
+     "παρεσκεύασται"
+    ]
+   },
+   {
+    "prompt": "All these things have been well accomplished by the ambassadors in the city.",
+    "answer": "ταῦτα πάντα τοῖς πρέσβεσιν ἐν τῇ πόλει πέπρακται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "πάντα",
+     "τοῖς",
+     "πρέσβεσιν",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "πέπρακται"
+    ]
+   },
+   {
+    "prompt": "The truth has been spoken by the witness in the assembly.",
+    "answer": "ἡ ἀλήθεια ὑπὸ τοῦ μάρτυρος ἐν τῇ ἐκκλησίᾳ εἴρηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "ὑπό",
+     "τοῦ",
+     "μάρτυρος",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "εἴρηται"
+    ]
+   },
+   {
+    "prompt": "When the walls had been built, the citizens rejoiced.",
+    "answer": "ἐπεὶ τὰ τείχη ᾠκοδόμητο, οἱ πολῖται ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "τά",
+     "τείχη",
+     "ᾠκοδόμητο",
+     "οἱ",
+     "πολῖται",
+     "ἔχαιρον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-t3",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "Whoever revolts from the alliance will be punished with death.",
+    "answer": "ὃς ἂν τῆς συμμαχίας ἀφιστῆται θανάτῳ ζημιωθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅς",
+     "ἄν",
+     "τῆς",
+     "συμμαχίας",
+     "ἀφιστῆται",
+     "θανάτῳ",
+     "ζημιωθήσεται"
+    ]
+   },
+   {
+    "prompt": "If he is convicted, he will be led to prison.",
+    "answer": "ἐὰν ἁλῷ, εἰς τὸ δεσμωτήριον ἀχθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἁλῷ",
+     "εἰς",
+     "τό",
+     "δεσμωτήριον",
+     "ἀχθήσεται"
+    ]
+   },
+   {
+    "prompt": "These letters will be sent by the king to the satrap.",
+    "answer": "αὗται αἱ ἐπιστολαὶ ὑπὸ τοῦ βασιλέως τῷ σατράπῃ πεμφθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὗται",
+     "αἱ",
+     "ἐπιστολαί",
+     "ὑπό",
+     "τοῦ",
+     "βασιλέως",
+     "τῷ",
+     "σατράπῃ",
+     "πεμφθήσονται"
+    ]
+   },
+   {
+    "prompt": "The just man will be scourged and will have his eyes burnt out.",
+    "answer": "ὁ δίκαιος μαστιγωθήσεται καὶ ἐκκαυθήσεται τὼ ὀφθαλμώ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δίκαιος",
+     "μαστιγωθήσεται",
+     "καί",
+     "ἐκκαυθήσεται",
+     "τώ",
+     "ὀφθαλμώ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-t4",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "The allies did not think it right to be governed by us.",
+    "answer": "οἱ σύμμαχοι οὐκ ἠξίουν ὑπὸ ἡμῶν ἡγεμονεύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "οὐκ",
+     "ἠξίουν",
+     "ὑπό",
+     "ἡμῶν",
+     "ἡγεμονεύεσθαι"
+    ]
+   },
+   {
+    "prompt": "That general was condemned by the people.",
+    "answer": "ἐκεῖνος ὁ στρατηγὸς ὑπὸ τοῦ δήμου κατεψηφίσθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνος",
+     "ὁ",
+     "στρατηγός",
+     "ὑπό",
+     "τοῦ",
+     "δήμου",
+     "κατεψηφίσθη"
+    ]
+   },
+   {
+    "prompt": "They are warred upon by their neighbors and distrusted by all.",
+    "answer": "πολεμοῦνται ὑπὸ τῶν περιοίκων καὶ ἀπιστοῦνται ὑπὸ πάντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολεμοῦνται",
+     "ὑπό",
+     "τῶν",
+     "περιοίκων",
+     "καί",
+     "ἀπιστοῦνται",
+     "πάντων"
+    ]
+   },
+   {
+    "prompt": "Envied for his wealth by his companions, he nevertheless kept silent.",
+    "answer": "διὰ τὸν πλοῦτον φθονηθεὶς ὑπὸ τῶν ἑταίρων ὅμως ἐσιώπα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διά",
+     "τόν",
+     "πλοῦτον",
+     "φθονηθείς",
+     "ὑπό",
+     "τῶν",
+     "ἑταίρων",
+     "ὅμως",
+     "ἐσιώπα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-t5",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "Many of the soldiers were killed by the cavalry.",
+    "answer": "πολλοὶ τῶν στρατιωτῶν ὑπὸ τῶν ἱππέων ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοί",
+     "τῶν",
+     "στρατιωτῶν",
+     "ὑπό",
+     "ἱππέων",
+     "ἀπέθανον"
+    ]
+   },
+   {
+    "prompt": "Defeated by their own allies, they retreated to the mountains.",
+    "answer": "ὑπὸ τῶν συμμάχων ἡττηθέντες πρὸς τὰ ὄρη ἀνεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπό",
+     "τῶν",
+     "συμμάχων",
+     "ἡττηθέντες",
+     "πρός",
+     "τά",
+     "ὄρη",
+     "ἀνεχώρησαν"
+    ]
+   },
+   {
+    "prompt": "Socrates was being prosecuted for impiety by Meletus.",
+    "answer": "ὁ Σωκράτης ἀσεβείας ὑπὸ Μελήτου ἔφευγε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "ἀσεβείας",
+     "ὑπό",
+     "Μελήτου",
+     "ἔφευγε"
+    ]
+   },
+   {
+    "prompt": "If you are caught doing this, you will be punished.",
+    "answer": "ἐὰν ἁλῷς τοῦτο πράττων, δίκην δώσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ἁλῷς",
+     "τοῦτο",
+     "πράττων",
+     "δίκην",
+     "δώσεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-t6",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "The Boeotians, having received these instructions, withdrew.",
+    "answer": "οἱ Βοιωτοὶ ταῦτα ἐπεσταλμένοι ἀνεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Βοιωτοί",
+     "ταῦτα",
+     "ἐπεσταλμένοι",
+     "ἀνεχώρησαν"
+    ]
+   },
+   {
+    "prompt": "The prisoners were beheaded by the king.",
+    "answer": "οἱ αἰχμάλωτοι ὑπὸ τοῦ βασιλέως τὰς κεφαλὰς ἀπετμήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ὑπό",
+     "τοῦ",
+     "βασιλέως",
+     "τάς",
+     "κεφαλάς",
+     "ἀπετμήθησαν"
+    ]
+   },
+   {
+    "prompt": "The impious acts committed by him were made known to all the citizens.",
+    "answer": "τὰ αὐτῷ ἠσεβημένα ἅπασι τοῖς πολίταις ἐδηλώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "αὐτῷ",
+     "ἠσεβημένα",
+     "ἅπασι",
+     "τοῖς",
+     "πολίταις",
+     "ἐδηλώθη"
+    ]
+   },
+   {
+    "prompt": "When all their preparations had been completed, they set out against the enemy.",
+    "answer": "ἐπειδὴ αὐτοῖς πάντα παρεσκεύαστο, ἐπὶ τοὺς πολεμίους ἐξώρμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδή",
+     "αὐτοῖς",
+     "πάντα",
+     "παρεσκεύαστο",
+     "ἐπί",
+     "τούς",
+     "πολεμίους",
+     "ἐξώρμησαν"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,392 @@
+[
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t1",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The soldiers were asking the general for food, since they were suffering terribly.",
+    "answer": "οἱ στρατιῶται τὸν στρατηγὸν σῖτον ᾔτουν, ἐπεὶ δεινῶς ἔπασχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "στρατηγὸν",
+     "σῖτον",
+     "ᾔτουν",
+     "ἐπεὶ",
+     "δεινῶς",
+     "ἔπασχον"
+    ]
+   },
+   {
+    "prompt": "I am not asking you this, but whether the city will be saved.",
+    "answer": "οὐ τοῦτο ὑμᾶς ἐρωτῶ, ἀλλὰ εἰ ἡ πόλις σωθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "τοῦτο",
+     "ὑμᾶς",
+     "ἐρωτῶ",
+     "ἀλλὰ",
+     "εἰ",
+     "ἡ",
+     "πόλις",
+     "σωθήσεται"
+    ]
+   },
+   {
+    "prompt": "The ambassadors were demanding the ships of the allies.",
+    "answer": "οἱ πρέσβεις τοὺς συμμάχους τὰς ναῦς ἀπῄτουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "τοὺς",
+     "συμμάχους",
+     "τὰς",
+     "ναῦς",
+     "ἀπῄτουν"
+    ]
+   },
+   {
+    "prompt": "Persuade the king of this, that we did no wrong.",
+    "answer": "τοῦτο τὸν βασιλέα πεῖσον, ὅτι οὐδὲν ἠδικήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸν",
+     "βασιλέα",
+     "πεῖσον",
+     "ὅτι",
+     "οὐδὲν",
+     "ἠδικήσαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t2",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The tyrant deprived the citizens of their freedom.",
+    "answer": "ὁ τύραννος τοὺς πολίτας τὴν ἐλευθερίαν ἀπεστέρησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τοὺς",
+     "πολίτας",
+     "τὴν",
+     "ἐλευθερίαν",
+     "ἀπεστέρησεν"
+    ]
+   },
+   {
+    "prompt": "They took away the weapons from the prisoners.",
+    "answer": "τοὺς αἰχμαλώτους τὰ ὅπλα ἀφείλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "αἰχμαλώτους",
+     "τὰ",
+     "ὅπλα",
+     "ἀφείλοντο"
+    ]
+   },
+   {
+    "prompt": "Do not deprive me of the honor which I won in the battle.",
+    "answer": "μή με ἀποστερήσῃς τὴν τιμὴν ἣν ἐν τῇ μάχῃ ἐκτησάμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "με",
+     "ἀποστερήσῃς",
+     "τὴν",
+     "τιμὴν",
+     "ἣν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἐκτησάμην"
+    ]
+   },
+   {
+    "prompt": "Death deprived the old man of both his sons.",
+    "answer": "ὁ θάνατος τὸν γέροντα ἀμφοτέρους τοὺς υἱοὺς ἀφείλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θάνατος",
+     "τὸν",
+     "γέροντα",
+     "ἀμφοτέρους",
+     "τοὺς",
+     "υἱοὺς",
+     "ἀφείλετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t3",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "Chiron taught Achilles the art of medicine.",
+    "answer": "ὁ Χείρων τὸν Ἀχιλλέα τὴν ἰατρικὴν τέχνην ἐδίδαξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Χείρων",
+     "τὸν",
+     "Ἀχιλλέα",
+     "τὴν",
+     "ἰατρικὴν",
+     "τέχνην",
+     "ἐδίδαξεν"
+    ]
+   },
+   {
+    "prompt": "Nobody taught me this skill; for I learned it myself.",
+    "answer": "οὐδείς με ταύτην τὴν τέχνην ἐδίδαξεν· αὐτὸς γὰρ ἔμαθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "με",
+     "ταύτην",
+     "τὴν",
+     "τέχνην",
+     "ἐδίδαξεν",
+     "αὐτὸς",
+     "γὰρ",
+     "ἔμαθον"
+    ]
+   },
+   {
+    "prompt": "I will remind you of the dangers which we escaped together.",
+    "answer": "ἀναμνήσω ὑμᾶς τοὺς κινδύνους οὓς κοινῇ ἐφύγομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀναμνήσω",
+     "ὑμᾶς",
+     "τοὺς",
+     "κινδύνους",
+     "οὓς",
+     "κοινῇ",
+     "ἐφύγομεν"
+    ]
+   },
+   {
+    "prompt": "The teacher reminded the boys of their fathers' virtue.",
+    "answer": "ὁ διδάσκαλος τοὺς παῖδας τὴν τῶν πατέρων ἀρετὴν ἀνέμνησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "τοὺς",
+     "παῖδας",
+     "τὴν",
+     "τῶν",
+     "πατέρων",
+     "ἀρετὴν",
+     "ἀνέμνησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t4",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The king clothed the stranger in a beautiful robe.",
+    "answer": "ὁ βασιλεὺς τὸν ξένον καλὴν ἐσθῆτα ἠμφίεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τὸν",
+     "ξένον",
+     "καλὴν",
+     "ἐσθῆτα",
+     "ἠμφίεσεν"
+    ]
+   },
+   {
+    "prompt": "Cyrus put his own tunic on the boy.",
+    "answer": "ὁ Κῦρος τὸν παῖδα τὸν ἑαυτοῦ χιτῶνα ἠμφίεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "τὸν",
+     "παῖδα",
+     "ἑαυτοῦ",
+     "χιτῶνα",
+     "ἠμφίεσεν"
+    ]
+   },
+   {
+    "prompt": "The mother was concealing from her daughter the death of her husband.",
+    "answer": "ἡ μήτηρ τὴν θυγατέρα τὸν τοῦ ἀνδρὸς θάνατον ἔκρυπτεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "τὴν",
+     "θυγατέρα",
+     "τὸν",
+     "τοῦ",
+     "ἀνδρὸς",
+     "θάνατον",
+     "ἔκρυπτεν"
+    ]
+   },
+   {
+    "prompt": "They stripped the captured man of his oracular garb.",
+    "answer": "τὸν ληφθέντα τὴν χρηστηρίαν ἐσθῆτα ἐξέδυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ληφθέντα",
+     "τὴν",
+     "χρηστηρίαν",
+     "ἐσθῆτα",
+     "ἐξέδυσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t5",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "While the general was absent, the soldiers exacted pay of the officers.",
+    "answer": "τοῦ στρατηγοῦ ἀπόντος, οἱ στρατιῶται τοὺς ἄρχοντας μισθὸν ἐπράξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀπόντος",
+     "οἱ",
+     "στρατιῶται",
+     "τοὺς",
+     "ἄρχοντας",
+     "μισθὸν",
+     "ἐπράξαντο"
+    ]
+   },
+   {
+    "prompt": "Having conquered the enemy, they demanded hostages of the city.",
+    "answer": "νικήσαντες τοὺς πολεμίους, τὴν πόλιν ὁμήρους ᾔτησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νικήσαντες",
+     "τοὺς",
+     "πολεμίους",
+     "τὴν",
+     "πόλιν",
+     "ὁμήρους",
+     "ᾔτησαν"
+    ]
+   },
+   {
+    "prompt": "I cannot persuade you of this, although I speak true things.",
+    "answer": "οὐ δύναμαι ὑμᾶς τοῦτο πείθειν, καίπερ ἀληθῆ λέγων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δύναμαι",
+     "ὑμᾶς",
+     "τοῦτο",
+     "πείθειν",
+     "καίπερ",
+     "ἀληθῆ",
+     "λέγων"
+    ]
+   },
+   {
+    "prompt": "The judge asked the witness many things about the murder.",
+    "answer": "ὁ δικαστὴς τὸν μάρτυρα πολλὰ περὶ τοῦ φόνου ἠρώτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστὴς",
+     "τὸν",
+     "μάρτυρα",
+     "πολλὰ",
+     "περὶ",
+     "τοῦ",
+     "φόνου",
+     "ἠρώτησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t6",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The allies were deprived of their horses by the king.",
+    "answer": "οἱ σύμμαχοι ὑπὸ τοῦ βασιλέως τοὺς ἵππους ἀπεστερήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "ὑπὸ",
+     "τοῦ",
+     "βασιλέως",
+     "τοὺς",
+     "ἵππους",
+     "ἀπεστερήθησαν"
+    ]
+   },
+   {
+    "prompt": "The young man, having been instructed in music, delighted everyone.",
+    "answer": "ὁ νεανίας μουσικὴν παιδευθεὶς πάντας ἔτερπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "μουσικὴν",
+     "παιδευθεὶς",
+     "πάντας",
+     "ἔτερπεν"
+    ]
+   },
+   {
+    "prompt": "Man is taught nothing else except knowledge.",
+    "answer": "οὐδὲν ἄλλο διδάσκεται ὁ ἄνθρωπος ἢ ἐπιστήμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "ἄλλο",
+     "διδάσκεται",
+     "ὁ",
+     "ἄνθρωπος",
+     "ἢ",
+     "ἐπιστήμην"
+    ]
+   },
+   {
+    "prompt": "The people were deprived of their pay by the generals.",
+    "answer": "ὁ δῆμος ὑπὸ τῶν στρατηγῶν τὸν μισθὸν ἀφῃρέθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "ὑπὸ",
+     "τῶν",
+     "στρατηγῶν",
+     "τὸν",
+     "μισθὸν",
+     "ἀφῃρέθη"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,378 @@
+[
+ {
+  "id": "sm-1580-accusative-of-extent-t1",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The soldiers remained in the camp seven days.",
+    "answer": "οἱ στρατιῶται ἐν τῷ στρατοπέδῳ ἑπτὰ ἡμέρας ἔμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "ἑπτά",
+     "ἡμέρας",
+     "ἔμειναν"
+    ]
+   },
+   {
+    "prompt": "They made an alliance for a hundred years.",
+    "answer": "συμμαχίαν ἐποιήσαντο ἑκατὸν ἔτη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμμαχίαν",
+     "ἐποιήσαντο",
+     "ἑκατόν",
+     "ἔτη"
+    ]
+   },
+   {
+    "prompt": "Having conquered the enemy, the king ruled the land many years.",
+    "answer": "νικήσας τοὺς πολεμίους ὁ βασιλεὺς πολλὰ ἔτη τῆς χώρας ἦρξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νικήσας",
+     "τούς",
+     "πολεμίους",
+     "ὁ",
+     "βασιλεύς",
+     "πολλά",
+     "ἔτη",
+     "τῆς",
+     "χώρας",
+     "ἦρξεν"
+    ]
+   },
+   {
+    "prompt": "We waited for the messenger three whole days.",
+    "answer": "τρεῖς ὅλας ἡμέρας τὸν ἄγγελον περιεμείναμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τρεῖς",
+     "ὅλας",
+     "ἡμέρας",
+     "τόν",
+     "ἄγγελον",
+     "περιεμείναμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t2",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "He led the army over the narrow roads.",
+    "answer": "στενὰς ὁδοὺς τὴν στρατιὰν ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στενάς",
+     "ὁδούς",
+     "τήν",
+     "στρατιάν",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "Plataea is seventy stades distant from Thebes.",
+    "answer": "ἡ Πλάταια τῶν Θηβῶν ἑβδομήκοντα σταδίους ἀπέχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "Πλάταια",
+     "τῶν",
+     "Θηβῶν",
+     "ἑβδομήκοντα",
+     "σταδίους",
+     "ἀπέχει"
+    ]
+   },
+   {
+    "prompt": "The general advanced three stages, twenty parasangs.",
+    "answer": "ὁ στρατηγὸς τρεῖς σταθμούς, εἴκοσι παρασάγγας, ἐξήλασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τρεῖς",
+     "σταθμούς",
+     "εἴκοσι",
+     "παρασάγγας",
+     "ἐξήλασεν"
+    ]
+   },
+   {
+    "prompt": "Fleeing the storm, they sailed many stades along the shore.",
+    "answer": "φεύγοντες τὸν χειμῶνα πολλοὺς σταδίους παρὰ τὴν ἀκτὴν ἔπλευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεύγοντες",
+     "τόν",
+     "χειμῶνα",
+     "πολλούς",
+     "σταδίους",
+     "παρά",
+     "τήν",
+     "ἀκτήν",
+     "ἔπλευσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t3",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "Socrates, being seventy years old, died.",
+    "answer": "ὁ Σωκράτης ἑβδομήκοντα ἔτη γεγονὼς ἐτελεύτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "ἑβδομήκοντα",
+     "ἔτη",
+     "γεγονώς",
+     "ἐτελεύτησεν"
+    ]
+   },
+   {
+    "prompt": "My mother died two years ago.",
+    "answer": "ἡ ἐμὴ μήτηρ τρίτον ἔτος τουτὶ ἐτελεύτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐμή",
+     "μήτηρ",
+     "τρίτον",
+     "ἔτος",
+     "τουτί",
+     "ἐτελεύτησεν"
+    ]
+   },
+   {
+    "prompt": "The boy, being ten years old, is learning his letters.",
+    "answer": "ὁ παῖς δέκα ἔτη γεγονὼς τὰ γράμματα μανθάνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "δέκα",
+     "ἔτη",
+     "γεγονώς",
+     "τά",
+     "γράμματα",
+     "μανθάνει"
+    ]
+   },
+   {
+    "prompt": "He has been in the city since the day before yesterday.",
+    "answer": "τρίτην ἤδη ἡμέραν ἐπιδεδήμηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τρίτην",
+     "ἤδη",
+     "ἡμέραν",
+     "ἐπιδεδήμηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t4",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The enemy, though besieged many days, did not surrender themselves.",
+    "answer": "οἱ πολέμιοι πολλὰς ἡμέρας πολιορκούμενοι οὐ παρέδοσαν ἑαυτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "πολλάς",
+     "ἡμέρας",
+     "πολιορκούμενοι",
+     "οὐ",
+     "παρέδοσαν",
+     "ἑαυτούς"
+    ]
+   },
+   {
+    "prompt": "After the battle they marched the whole night toward the sea.",
+    "answer": "μετὰ τὴν μάχην ὅλην τὴν νύκτα πρὸς τὴν θάλατταν ἐπορεύθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετά",
+     "τήν",
+     "μάχην",
+     "ὅλην",
+     "νύκτα",
+     "πρός",
+     "θάλατταν",
+     "ἐπορεύθησαν"
+    ]
+   },
+   {
+    "prompt": "Cyrus reigned nine years and then died.",
+    "answer": "ὁ Κῦρος ἐννέα ἔτη ἐβασίλευσε καὶ ἔπειτα ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "ἐννέα",
+     "ἔτη",
+     "ἐβασίλευσε",
+     "καί",
+     "ἔπειτα",
+     "ἀπέθανεν"
+    ]
+   },
+   {
+    "prompt": "The wall extends forty stades around the whole city.",
+    "answer": "τὸ τεῖχος τεσσαράκοντα σταδίους περὶ ὅλην τὴν πόλιν διήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "τεῖχος",
+     "τεσσαράκοντα",
+     "σταδίους",
+     "περί",
+     "ὅλην",
+     "τήν",
+     "πόλιν",
+     "διήκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t5",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The old man, farming the field many years, grew rich.",
+    "answer": "ὁ γέρων πολλὰ ἔτη τὸν ἀγρὸν γεωργῶν πλούσιος ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "πολλά",
+     "ἔτη",
+     "τόν",
+     "ἀγρόν",
+     "γεωργῶν",
+     "πλούσιος",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "We journeyed five days through the desert.",
+    "answer": "πέντε ἡμέρας διὰ τῆς ἐρήμου ἐπορεύθημεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέντε",
+     "ἡμέρας",
+     "διά",
+     "τῆς",
+     "ἐρήμου",
+     "ἐπορεύθημεν"
+    ]
+   },
+   {
+    "prompt": "The tower is a hundred feet high.",
+    "answer": "ὁ πύργος ἑκατὸν πόδας ὑψηλός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πύργος",
+     "ἑκατόν",
+     "πόδας",
+     "ὑψηλός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "They fought the whole day beside the river.",
+    "answer": "ὅλην τὴν ἡμέραν παρὰ τὸν ποταμὸν ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅλην",
+     "τήν",
+     "ἡμέραν",
+     "παρά",
+     "τόν",
+     "ποταμόν",
+     "ἐμάχοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t6",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The child has now been sick three days.",
+    "answer": "ὁ παῖς τρεῖς ἡμέρας ἤδη νοσεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "τρεῖς",
+     "ἡμέρας",
+     "ἤδη",
+     "νοσεῖ"
+    ]
+   },
+   {
+    "prompt": "Having crossed the isthmus, the soldiers rested two days.",
+    "answer": "διαβάντες τὸν ἰσθμὸν οἱ στρατιῶται δύο ἡμέρας ἀνεπαύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαβάντες",
+     "τόν",
+     "ἰσθμόν",
+     "οἱ",
+     "στρατιῶται",
+     "δύο",
+     "ἡμέρας",
+     "ἀνεπαύσαντο"
+    ]
+   },
+   {
+    "prompt": "The exiles wandered over much land for many years.",
+    "answer": "οἱ φυγάδες πολλὰ ἔτη πολλὴν γῆν ἐπλανήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "πολλά",
+     "ἔτη",
+     "πολλήν",
+     "γῆν",
+     "ἐπλανήθησαν"
+    ]
+   },
+   {
+    "prompt": "Darius, being sixty years old, marched against the Greeks.",
+    "answer": "ὁ Δαρεῖος ἑξήκοντα ἔτη γεγονὼς ἐπὶ τοὺς Ἕλληνας ἐστράτευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Δαρεῖος",
+     "ἑξήκοντα",
+     "ἔτη",
+     "γεγονώς",
+     "ἐπί",
+     "τούς",
+     "Ἕλληνας",
+     "ἐστράτευσεν"
+    ]
+   }
+  ]
+ }
+]

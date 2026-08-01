@@ -1,0 +1,388 @@
+[
+ {
+  "id": "sm-1784-indicative-with-an-t1",
+  "sectionId": "sm-1784-indicative-with-an",
+  "questions": [
+   {
+    "prompt": "No one could have foreseen so great a disaster.",
+    "answer": "οὐδεὶς ἂν προεῖδε τοσαύτην συμφοράν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἂν",
+     "προεῖδε",
+     "τοσαύτην",
+     "συμφοράν"
+    ]
+   },
+   {
+    "prompt": "You might have thought that the soldiers were fleeing.",
+    "answer": "ᾠήθης ἂν τοὺς στρατιώτας φεύγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾠήθης",
+     "ἂν",
+     "τοὺς",
+     "στρατιώτας",
+     "φεύγειν"
+    ]
+   },
+   {
+    "prompt": "One would have admired the general's courage.",
+    "answer": "ἐθαύμασεν ἄν τις τὴν τοῦ στρατηγοῦ ἀνδρείαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαύμασεν",
+     "ἄν",
+     "τις",
+     "τὴν",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "Who could have endured such insolence from the enemy?",
+    "answer": "τίς ἂν ὑπέμεινε τοσαύτην ὕβριν παρὰ τῶν πολεμίων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "ὑπέμεινε",
+     "τοσαύτην",
+     "ὕβριν",
+     "παρὰ",
+     "τῶν",
+     "πολεμίων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1784-indicative-with-an-t2",
+  "sectionId": "sm-1784-indicative-with-an",
+  "questions": [
+   {
+    "prompt": "If the allies had come, we would have conquered easily.",
+    "answer": "εἰ οἱ σύμμαχοι ἦλθον, ῥᾳδίως ἂν ἐνικήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "σύμμαχοι",
+     "ἦλθον",
+     "ῥᾳδίως",
+     "ἂν",
+     "ἐνικήσαμεν"
+    ]
+   },
+   {
+    "prompt": "The city would have been destroyed, if the general had not been present.",
+    "answer": "ἡ πόλις ἂν διεφθάρη, εἰ μὴ ὁ στρατηγὸς παρῆν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ἂν",
+     "διεφθάρη",
+     "εἰ",
+     "μὴ",
+     "ὁ",
+     "στρατηγὸς",
+     "παρῆν"
+    ]
+   },
+   {
+    "prompt": "Even the coward would then have fought bravely.",
+    "answer": "καὶ ὁ δειλὸς ἂν τότε ἀνδρείως ἐμάχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ὁ",
+     "δειλὸς",
+     "ἂν",
+     "τότε",
+     "ἀνδρείως",
+     "ἐμάχετο"
+    ]
+   },
+   {
+    "prompt": "The judges would have acquitted him, if he had spoken the truth.",
+    "answer": "οἱ δικασταὶ ἂν αὐτὸν ἀπέλυσαν, εἰ τὰ ἀληθῆ εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ἂν",
+     "αὐτὸν",
+     "ἀπέλυσαν",
+     "εἰ",
+     "τὰ",
+     "ἀληθῆ",
+     "εἶπεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1784-indicative-with-an-t3",
+  "sectionId": "sm-1784-indicative-with-an",
+  "questions": [
+   {
+    "prompt": "I should have liked the citizens to trust the laws.",
+    "answer": "ἐβουλόμην ἂν τοὺς πολίτας τοῖς νόμοις πιστεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλόμην",
+     "ἂν",
+     "τοὺς",
+     "πολίτας",
+     "τοῖς",
+     "νόμοις",
+     "πιστεύειν"
+    ]
+   },
+   {
+    "prompt": "I wish the ambassadors were still present in the city.",
+    "answer": "ἐβουλόμην ἂν τοὺς πρέσβεις ἔτι ἐν τῇ πόλει παρεῖναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλόμην",
+     "ἂν",
+     "τοὺς",
+     "πρέσβεις",
+     "ἔτι",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "παρεῖναι"
+    ]
+   },
+   {
+    "prompt": "I should have wished my brother to hold the same opinion.",
+    "answer": "ἐβουλόμην ἂν τὸν ἀδελφὸν τὴν αὐτὴν γνώμην ἔχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλόμην",
+     "ἂν",
+     "τὸν",
+     "ἀδελφὸν",
+     "τὴν",
+     "αὐτὴν",
+     "γνώμην",
+     "ἔχειν"
+    ]
+   },
+   {
+    "prompt": "I wish the young men honoured their teachers.",
+    "answer": "ἐβουλόμην ἂν τοὺς νεανίας τοὺς διδασκάλους τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλόμην",
+     "ἂν",
+     "τοὺς",
+     "νεανίας",
+     "διδασκάλους",
+     "τιμᾶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1784-indicative-with-an-t4",
+  "sectionId": "sm-1784-indicative-with-an",
+  "questions": [
+   {
+    "prompt": "Whenever he saw the poor, he used to give money.",
+    "answer": "ὁπότε τοὺς πένητας ἴδοι, χρήματα ἂν ἐδίδου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "τοὺς",
+     "πένητας",
+     "ἴδοι",
+     "χρήματα",
+     "ἂν",
+     "ἐδίδου"
+    ]
+   },
+   {
+    "prompt": "Socrates used to question the young men in the marketplace.",
+    "answer": "ὁ Σωκράτης τοὺς νεανίσκους ἐν τῇ ἀγορᾷ ἂν διηρώτα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "τοὺς",
+     "νεανίσκους",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἂν",
+     "διηρώτα"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy approached, the farmers would flee to the mountains.",
+    "answer": "ὁπότε οἱ πολέμιοι προσέλθοιεν, οἱ γεωργοὶ εἰς τὰ ὄρη ἂν ἔφευγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "πολέμιοι",
+     "προσέλθοιεν",
+     "γεωργοὶ",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἂν",
+     "ἔφευγον"
+    ]
+   },
+   {
+    "prompt": "He was wont to say that virtue is teachable.",
+    "answer": "ἔλεξεν ἂν ὅτι ἡ ἀρετὴ διδακτή ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεξεν",
+     "ἂν",
+     "ὅτι",
+     "ἡ",
+     "ἀρετὴ",
+     "διδακτή",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1784-indicative-with-an-t5",
+  "sectionId": "sm-1784-indicative-with-an",
+  "questions": [
+   {
+    "prompt": "Seeing the fire, one would have fled at once.",
+    "answer": "ἰδών τις τὸ πῦρ εὐθὺς ἂν ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἰδών",
+     "τις",
+     "τὸ",
+     "πῦρ",
+     "εὐθὺς",
+     "ἂν",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "With the gods willing, the army would have crossed the river.",
+    "answer": "τῶν θεῶν βουλομένων, ὁ στρατὸς ἂν τὸν ποταμὸν διέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "θεῶν",
+     "βουλομένων",
+     "ὁ",
+     "στρατὸς",
+     "ἂν",
+     "τὸν",
+     "ποταμὸν",
+     "διέβη"
+    ]
+   },
+   {
+    "prompt": "You would not have believed how great the danger was.",
+    "answer": "οὐκ ἂν ἐπίστευσας ἡλίκος ὁ κίνδυνος ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἐπίστευσας",
+     "ἡλίκος",
+     "ὁ",
+     "κίνδυνος",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "Who would have dared to oppose so powerful a tyrant?",
+    "answer": "τίς ἂν ἐτόλμησε τοσούτῳ τυράννῳ ἐναντιοῦσθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "ἐτόλμησε",
+     "τοσούτῳ",
+     "τυράννῳ",
+     "ἐναντιοῦσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1784-indicative-with-an-t6",
+  "sectionId": "sm-1784-indicative-with-an",
+  "questions": [
+   {
+    "prompt": "If they were wise, they would not now be making war.",
+    "answer": "εἰ σοφοὶ ἦσαν, οὐκ ἂν νῦν ἐπολέμουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοφοὶ",
+     "ἦσαν",
+     "οὐκ",
+     "ἂν",
+     "νῦν",
+     "ἐπολέμουν"
+    ]
+   },
+   {
+    "prompt": "The sailors would have perished, had the storm not ceased.",
+    "answer": "οἱ ναῦται ἂν ἀπώλοντο, εἰ μὴ ὁ χειμὼν ἐπαύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "ἂν",
+     "ἀπώλοντο",
+     "εἰ",
+     "μὴ",
+     "ὁ",
+     "χειμὼν",
+     "ἐπαύσατο"
+    ]
+   },
+   {
+    "prompt": "Without your help I would never have completed the work.",
+    "answer": "ἄνευ τῆς σῆς βοηθείας οὐκ ἄν ποτε τὸ ἔργον ἐτέλεσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄνευ",
+     "τῆς",
+     "σῆς",
+     "βοηθείας",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "τὸ",
+     "ἔργον",
+     "ἐτέλεσα"
+    ]
+   },
+   {
+    "prompt": "A prudent man would have avoided such friends.",
+    "answer": "ὁ σώφρων ἂν τοὺς τοιούτους φίλους ἐξέφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σώφρων",
+     "ἂν",
+     "τοὺς",
+     "τοιούτους",
+     "φίλους",
+     "ἐξέφυγεν"
+    ]
+   }
+  ]
+ }
+]
