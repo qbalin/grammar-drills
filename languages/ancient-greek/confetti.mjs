@@ -1,7 +1,7 @@
 /**
  * What this pack throws when the confetti fires.
  *
- * Seven shapes, each thrown on its own. A burst that mixed an amphora with
+ * Eight shapes, each thrown on its own. A burst that mixed an amphora with
  * a trireme would read as a jumble; a burst that is all one thing reads as a
  * motif, and the student slowly collects the set.
  *
@@ -38,13 +38,16 @@ export default {
     // Ω — omega
     omega:
       "M12 2.6 C7.4 2.6 4.4 6.0 4.4 10.6 C4.4 13.4 5.6 15.8 7.6 17.2 L7.6 18.6 L3.6 18.6 L3.6 21.4 L10.4 21.4 L10.4 15.6 C8.4 14.8 7.4 13.0 7.4 10.8 C7.4 7.8 9.2 5.6 12 5.6 C14.8 5.6 16.6 7.8 16.6 10.8 C16.6 13.0 15.6 14.8 13.6 15.6 L13.6 21.4 L20.4 21.4 L20.4 18.6 L16.4 18.6 L16.4 17.2 C18.4 15.8 19.6 13.4 19.6 10.6 C19.6 6.0 16.6 2.6 12 2.6 Z",
+    // κεραυνός — thunderbolt of Zeus
+    keraunos:
+      "M15.4 1.2 L6.0 13.4 L10.9 13.4 L8.6 22.8 L18.4 10.2 L13.3 10.2 Z",
   },
 
   /**
    * One burst draws from exactly one of these groups. A group with a single
    * name is a burst of only that shape.
    */
-  throws: [["amphora"],["olive"],["lyre"],["trireme"],["capital"],["kylix"],["omega"]],
+  throws: [["amphora"],["olive"],["lyre"],["trireme"],["capital"],["kylix"],["omega"],["keraunos"]],
 
   /**
    * The colours a piece may take, warmest first. The pack's gold, which is the

@@ -35,7 +35,6 @@ export function ConfettiPlayground({
 }) {
   const [size, setSize] = useState(11);
   const [pieces, setPieces] = useState(64);
-  const [shaped, setShaped] = useState(35);
 
   // Stated rather than worked around: with reduced motion on, nothing fires,
   // and a playground whose buttons silently did nothing would read as a bug.
@@ -43,12 +42,7 @@ export function ConfettiPlayground({
     typeof matchMedia === "function" &&
     matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const options = (group?: string[]): BurstOptions => ({
-    group,
-    size,
-    pieces,
-    shapedShare: shaped / 100,
-  });
+  const options = (group?: string[]): BurstOptions => ({ group, size, pieces });
 
   return (
     <>
@@ -93,21 +87,6 @@ export function ConfettiPlayground({
           value={pieces}
           onChange={(e) => setPieces(Number(e.target.value))}
         />
-      </label>
-      <label className="field">
-        <span className="field__label">Shaped share — {shaped}%</span>
-        <input
-          type="range"
-          min={0}
-          max={100}
-          value={shaped}
-          onChange={(e) => setShaped(Number(e.target.value))}
-        />
-        <span className="field__hint">
-          How many pieces carry a silhouette rather than being a plain sliver.
-          The shipped value is 35%: often enough to be found, rare enough to
-          stay a find.
-        </span>
       </label>
     </>
   );

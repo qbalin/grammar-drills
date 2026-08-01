@@ -18,15 +18,6 @@ const KEY = `${profile.storage.webProgressKey}:confetti`;
 
 /** How many pieces a burst throws. */
 const PIECES = 64;
-/**
- * The share of pieces that carry a silhouette rather than being a plain sliver.
- *
- * The point of the thing is that it is *sometimes* a tiny amphora. At 1.0 the
- * shapes stop being a surprise and become the design; at 0.1 a student could
- * study for a month without noticing one. A third is often enough to be found
- * and rare enough to stay a find.
- */
-const SHAPED_SHARE = 0.35;
 /** Piece size in CSS pixels, before the per-piece jitter. */
 const SIZE = 11;
 /** Gravity, per frame, in CSS pixels. */
@@ -35,7 +26,7 @@ const GRAVITY = 0.34;
 type Piece = {
   x: number; y: number; vx: number; vy: number;
   rot: number; vr: number; size: number;
-  color: string; shape: Path2D | null; life: number;
+  color: string; shape: Path2D; life: number;
 };
 
 /**
@@ -73,7 +64,6 @@ export type BurstOptions = {
   /** Throw exactly these shapes rather than a random group. */
   group?: string[];
   pieces?: number;
-  shapedShare?: number;
   size?: number;
 };
 
@@ -120,14 +110,13 @@ export function useConfetti(): {
       ctx.translate(p.x, p.y);
       ctx.rotate(p.rot);
       ctx.fillStyle = p.color;
-      if (p.shape) {
-        const k = p.size / 24;
-        ctx.scale(k, k);
-        ctx.translate(-12, -12);
-        ctx.fill(p.shape, "evenodd");
-      } else {
-        ctx.fillRect(-p.size / 2, -p.size / 4, p.size, p.size / 2);
-      }
+      // Every piece is a silhouette. There are no plain slivers: a burst of
+      // this pack's own shapes is the whole point, and a rectangle is what
+      // confetti looks like everywhere else.
+      const k = p.size / 24;
+      ctx.scale(k, k);
+      ctx.translate(-12, -12);
+      ctx.fill(p.shape, "evenodd");
       ctx.restore();
     }
     if (live) raf.current = requestAnimationFrame(draw);
@@ -149,7 +138,6 @@ export function useConfetti(): {
     const { paths, ok } = buildThrow(options.group);
     if (!ok) return;
     const pieces_ = options.pieces ?? PIECES;
-    const shaped = options.shapedShare ?? SHAPED_SHARE;
     const size = options.size ?? SIZE;
 
     const dpr = window.devicePixelRatio || 1;
@@ -170,7 +158,7 @@ export function useConfetti(): {
       vr: (Math.random() - 0.5) * 0.24,
       size: size * (0.75 + Math.random() * 0.5),
       color: colors[Math.floor(Math.random() * colors.length)],
-      shape: Math.random() < shaped ? paths[Math.floor(Math.random() * paths.length)] : null,
+      shape: paths[Math.floor(Math.random() * paths.length)],
       life: 1,
     }));
     cancelAnimationFrame(raf.current);
