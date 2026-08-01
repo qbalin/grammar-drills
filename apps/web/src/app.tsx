@@ -299,11 +299,12 @@ export function App({ content, session, storage }: Props) {
   }, [session, storage]);
 
   /**
-   * The reward, and the count that decides when it comes. `answered` is called
-   * once per grade that actually lands — not once per tap, so a grade that
-   * returns early because there is no question does not spend the count.
+   * The reward. It comes at the end of a round of questions rather than on a
+   * count of answers: a burst that arrives mid-topic interrupts, and one that
+   * arrives as the last question of a test is graded marks something the
+   * student actually finished.
    */
-  const { canvas: confettiCanvas, answered, fire: fireConfetti } = useConfetti();
+  const { canvas: confettiCanvas, fire: fireConfetti } = useConfetti();
 
   /**
    * A probe answered. Failing settles that one family and moves to the next
@@ -313,7 +314,6 @@ export function App({ content, session, storage }: Props) {
   const placementGrade = (rating: Rating) => {
     if (!sectionId) return;
     const next = session.answerPlacement(rating >= 3);
-    answered();
     save();
     if (next) {
       loadPlacement(next.probe);
@@ -389,9 +389,6 @@ export function App({ content, session, storage }: Props) {
     // The test's id names the round, so its four questions cost the topic one
     // review rather than four — graded by the worst of them.
     session.gradeTopic(sectionId, rating, new Date(), test?.id);
-    // Every grade counts the same. The student pressing "again" is the one
-    // working hardest, and this is not a reward for being right.
-    answered();
     save();
     if (test && qIndex + 1 < test.questions.length) {
       setQIndex(qIndex + 1);
@@ -401,6 +398,10 @@ export function App({ content, session, storage }: Props) {
       setPhase({ t: "answering" });
       bump();
     } else {
+      // The round is done. Fired on the last question whatever it was graded:
+      // the student who pressed "again" four times is the one working hardest,
+      // and this is for finishing, not for being right.
+      fireConfetti();
       advance();
     }
   };
@@ -409,7 +410,6 @@ export function App({ content, session, storage }: Props) {
     navigator.vibrate?.(8);
     setUndo(takeUndo(phase));
     session.gradeVocab(cardId, rating);
-    answered();
     save();
     advance();
   };
