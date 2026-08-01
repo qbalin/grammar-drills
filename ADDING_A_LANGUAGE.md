@@ -387,14 +387,34 @@ Give the pack an `icon.mjs` — the glyph as capsule geometry, in a 0..1 box (se
 Latin's Ā). A letterform the capsule renderer cannot draw (Ω, ж, ا) should ship
 `icons/*.png` directly instead.
 
-Give it a `confetti.mjs` too — the silhouettes this language throws every ten to
-twenty answers. Each is SVG path data in a 24x24 box, filled with fill-rule
-evenodd, which is where the detail comes from: a piece is one flat colour, so a
-subpath drawn *inside* another reads as a hole and two that overlap punch holes
-in each other. Draw shapes that nest or touch, never cross. `throws` groups the
-names that may share one burst — a group of one is a burst of only that shape.
-Draw them at 40px, then look at them at 11px, which is the size they are thrown
-at; anything that needs its fine detail to be recognized will not survive.
+Give it a `confetti.mjs` too — the shapes this language throws every ten to
+twenty answers. A shape is a stack of layers, `[paint, path]`, painted back to
+front, each SVG path data in a 24x24 box:
+
+```js
+scutum: [
+  ["blood", "M6.2 2.0 … Z"],   // the board
+  ["gold",  "M11.5 10.2 … Z"], // the wings on it
+],
+```
+
+Every layer is filled with fill-rule evenodd, so a subpath drawn *inside*
+another **within one layer** reads as a hole — that is how a shield's boss or a
+wheel's hub is cut. Across layers there is no such rule: a later layer simply
+covers the one beneath. Reach for a second layer before reaching for a hole.
+
+Paints are names, resolved through the `palette` at the top of the file, so the
+pack's colours are tuned in one place. Pick them to be read rather than to be
+accurate — the point is that a leaf is green and a hull is not the colour of its
+oars. `throws` groups the names that may share one burst; a group of one is a
+burst of only that shape, and the choice is uniform over groups, so a shape
+listed twice shows up twice as often.
+
+Draw them at 40px, then look at them at 17px, which is the size they are thrown
+at; anything that needs its fine detail to be recognized will not survive. The
+playground under Settings shows both at once — see `apps/web/src/confetti/`.
+`pack.test.ts` calls `checkConfetti` from `scripts/lib/confetti.mjs`, which
+fails on a paint or a shape name that is not there.
 
 ```bash
 LANG_PACK=ancient-greek pnpm --filter @lang-tutor/web build
