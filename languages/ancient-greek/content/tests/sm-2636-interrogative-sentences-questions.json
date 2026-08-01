@@ -1,0 +1,376 @@
+[
+ {
+  "id": "sm-2636-interrogative-sentences-questions-t1",
+  "sectionId": "sm-2636-interrogative-sentences-questions",
+  "questions": [
+   {
+    "prompt": "Who said these things in the assembly?",
+    "answer": "τίς ἐν τῇ ἐκκλησίᾳ ταῦτα εἶπεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ταῦτα",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "Where did the general leave the soldiers?",
+    "answer": "ποῦ τοὺς στρατιώτας ὁ στρατηγὸς κατέλιπεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποῦ",
+     "τοὺς",
+     "στρατιώτας",
+     "ὁ",
+     "στρατηγὸς",
+     "κατέλιπεν"
+    ]
+   },
+   {
+    "prompt": "Why do you fear death, which is common to all?",
+    "answer": "διὰ τί τὸν θάνατον φοβῇ, ὃς πᾶσι κοινός ἐστιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τί",
+     "τὸν",
+     "θάνατον",
+     "φοβῇ",
+     "ὃς",
+     "πᾶσι",
+     "κοινός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "When will the ambassadors return from the king?",
+    "answer": "πότε οἱ πρέσβεις παρὰ τοῦ βασιλέως ἥξουσιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότε",
+     "οἱ",
+     "πρέσβεις",
+     "παρὰ",
+     "τοῦ",
+     "βασιλέως",
+     "ἥξουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2636-interrogative-sentences-questions-t2",
+  "sectionId": "sm-2636-interrogative-sentences-questions",
+  "questions": [
+   {
+    "prompt": "Do the citizens really honor the laws of the ancestors?",
+    "answer": "ἆρα οἱ πολῖται τοὺς τῶν προγόνων νόμους τιμῶσιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "οἱ",
+     "πολῖται",
+     "τοὺς",
+     "τῶν",
+     "προγόνων",
+     "νόμους",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "You are not afraid of the enemy, are you?",
+    "answer": "μῶν τοὺς πολεμίους φοβεῖσθε;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μῶν",
+     "τοὺς",
+     "πολεμίους",
+     "φοβεῖσθε"
+    ]
+   },
+   {
+    "prompt": "Isn't virtue more precious than gold?",
+    "answer": "ἆρα οὐχ ἡ ἀρετὴ τιμιωτέρα τοῦ χρυσοῦ ἐστιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "οὐχ",
+     "ἡ",
+     "ἀρετὴ",
+     "τιμιωτέρα",
+     "τοῦ",
+     "χρυσοῦ",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Did the poet write this song for the gods or for men?",
+    "answer": "πότερον ὁ ποιητὴς τόδε τὸ ᾆσμα τοῖς θεοῖς ἢ τοῖς ἀνθρώποις ἔγραψεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "ὁ",
+     "ποιητὴς",
+     "τόδε",
+     "τὸ",
+     "ᾆσμα",
+     "τοῖς",
+     "θεοῖς",
+     "ἢ",
+     "ἀνθρώποις",
+     "ἔγραψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2636-interrogative-sentences-questions-t3",
+  "sectionId": "sm-2636-interrogative-sentences-questions",
+  "questions": [
+   {
+    "prompt": "I ask who left the gates open.",
+    "answer": "ἐρωτῶ ὅστις τὰς πύλας ἀνεῳγμένας κατέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐρωτῶ",
+     "ὅστις",
+     "τὰς",
+     "πύλας",
+     "ἀνεῳγμένας",
+     "κατέλιπεν"
+    ]
+   },
+   {
+    "prompt": "No one knows where the fugitives are hiding.",
+    "answer": "οὐδεὶς οἶδεν ὅπου οἱ φεύγοντες κρύπτονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "οἶδεν",
+     "ὅπου",
+     "οἱ",
+     "φεύγοντες",
+     "κρύπτονται"
+    ]
+   },
+   {
+    "prompt": "The judges asked why he had betrayed the city.",
+    "answer": "οἱ δικασταὶ ἤροντο διὰ τί τὴν πόλιν προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ἤροντο",
+     "διὰ",
+     "τί",
+     "τὴν",
+     "πόλιν",
+     "προδοίη"
+    ]
+   },
+   {
+    "prompt": "It is unclear whether the messenger spoke the truth.",
+    "answer": "ἄδηλόν ἐστιν εἰ ὁ ἄγγελος τὰ ἀληθῆ εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄδηλόν",
+     "ἐστιν",
+     "εἰ",
+     "ὁ",
+     "ἄγγελος",
+     "τὰ",
+     "ἀληθῆ",
+     "εἶπεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2636-interrogative-sentences-questions-t4",
+  "sectionId": "sm-2636-interrogative-sentences-questions",
+  "questions": [
+   {
+    "prompt": "What shall we say to the assembled citizens?",
+    "answer": "τί εἴπωμεν τοῖς συνειλεγμένοις πολίταις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "εἴπωμεν",
+     "τοῖς",
+     "συνειλεγμένοις",
+     "πολίταις"
+    ]
+   },
+   {
+    "prompt": "Should we flee or remain and fight?",
+    "answer": "πότερον φύγωμεν ἢ μένοντες μαχώμεθα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "φύγωμεν",
+     "ἢ",
+     "μένοντες",
+     "μαχώμεθα"
+    ]
+   },
+   {
+    "prompt": "What was I to do, surrounded by so many enemies?",
+    "answer": "τί ἐχρῆν με ποιεῖν, ὑπὸ τοσούτων πολεμίων κυκλωθέντα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ἐχρῆν",
+     "με",
+     "ποιεῖν",
+     "ὑπὸ",
+     "τοσούτων",
+     "πολεμίων",
+     "κυκλωθέντα"
+    ]
+   },
+   {
+    "prompt": "Where shall I turn, now that my friends have abandoned me?",
+    "answer": "ποῖ τράπωμαι, τῶν φίλων με καταλιπόντων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποῖ",
+     "τράπωμαι",
+     "τῶν",
+     "φίλων",
+     "με",
+     "καταλιπόντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2636-interrogative-sentences-questions-t5",
+  "sectionId": "sm-2636-interrogative-sentences-questions",
+  "questions": [
+   {
+    "prompt": "Who would not admire such courage?",
+    "answer": "τίς οὐκ ἂν θαυμάσειε τὴν τοιαύτην ἀνδρείαν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὐκ",
+     "ἂν",
+     "θαυμάσειε",
+     "τὴν",
+     "τοιαύτην",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "How could I betray those who saved me?",
+    "answer": "πῶς ἂν προδοίην τοὺς ἐμὲ σώσαντας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἂν",
+     "προδοίην",
+     "τοὺς",
+     "ἐμὲ",
+     "σώσαντας"
+    ]
+   },
+   {
+    "prompt": "Is anyone so foolish as to trust a tyrant?",
+    "answer": "τίς οὕτως ἀνόητός ἐστιν ὥστε τυράννῳ πιστεύειν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὕτως",
+     "ἀνόητός",
+     "ἐστιν",
+     "ὥστε",
+     "τυράννῳ",
+     "πιστεύειν"
+    ]
+   },
+   {
+    "prompt": "What then do I consider the cause of these evils?",
+    "answer": "τί οὖν αἴτιον τούτων τῶν κακῶν εἶναι νομίζω;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "οὖν",
+     "αἴτιον",
+     "τούτων",
+     "τῶν",
+     "κακῶν",
+     "εἶναι",
+     "νομίζω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2636-interrogative-sentences-questions-t6",
+  "sectionId": "sm-2636-interrogative-sentences-questions",
+  "questions": [
+   {
+    "prompt": "You call the just man happy, do you not?",
+    "answer": "τὸν δίκαιον οὐ καλεῖς εὐδαίμονα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "δίκαιον",
+     "οὐ",
+     "καλεῖς",
+     "εὐδαίμονα"
+    ]
+   },
+   {
+    "prompt": "Did you say that wealth is a good or an evil?",
+    "answer": "τὸν πλοῦτον ἔλεγες πότερον ἀγαθὸν ἢ κακὸν εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "πλοῦτον",
+     "ἔλεγες",
+     "πότερον",
+     "ἀγαθὸν",
+     "ἢ",
+     "κακὸν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "How many ships did the Athenians send to Sicily?",
+    "answer": "πόσας ναῦς οἱ Ἀθηναῖοι εἰς τὴν Σικελίαν ἔπεμψαν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόσας",
+     "ναῦς",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "εἰς",
+     "τὴν",
+     "Σικελίαν",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "Whose is this land, so fertile and well-watered?",
+    "answer": "τίνος ἐστὶν ἥδε ἡ χώρα, οὕτως εὔκαρπος καὶ εὔυδρος οὖσα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνος",
+     "ἐστὶν",
+     "ἥδε",
+     "ἡ",
+     "χώρα",
+     "οὕτως",
+     "εὔκαρπος",
+     "καὶ",
+     "εὔυδρος",
+     "οὖσα"
+    ]
+   }
+  ]
+ }
+]

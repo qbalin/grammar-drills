@@ -1,0 +1,369 @@
+[
+ {
+  "id": "sm-2662-moods-in-direct-questions-t1",
+  "sectionId": "sm-2662-moods-in-direct-questions",
+  "questions": [
+   {
+    "prompt": "Who could say what the enemy are planning?",
+    "answer": "τίς ἂν εἴποι ὅ τι οἱ πολέμιοι βουλεύονται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "εἴποι",
+     "ὅ",
+     "τι",
+     "οἱ",
+     "πολέμιοι",
+     "βουλεύονται"
+    ]
+   },
+   {
+    "prompt": "Since I have been betrayed, what am I to say to the jurors?",
+    "answer": "ἐπεὶ προδέδομαι, τί εἴπω τοῖς δικασταῖς;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "προδέδομαι",
+     "τί",
+     "εἴπω",
+     "τοῖς",
+     "δικασταῖς"
+    ]
+   },
+   {
+    "prompt": "If someone had annulled the law, would you not have put him to death?",
+    "answer": "εἴ τις τὸν νόμον ἀνεῖλεν, ἆρα οὐκ ἂν ἀπεκτείνατε αὐτόν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "τὸν",
+     "νόμον",
+     "ἀνεῖλεν",
+     "ἆρα",
+     "οὐκ",
+     "ἂν",
+     "ἀπεκτείνατε",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "Why then do you not release the captives at once?",
+    "answer": "τί οὖν οὐκ εὐθὺς τοὺς αἰχμαλώτους ἀφῆκας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "οὖν",
+     "οὐκ",
+     "εὐθὺς",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ἀφῆκας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2662-moods-in-direct-questions-t2",
+  "sectionId": "sm-2662-moods-in-direct-questions",
+  "questions": [
+   {
+    "prompt": "What is to become of me, if the enemy capture the city?",
+    "answer": "τί πάθω, εἰ οἱ πολέμιοι τὴν πόλιν αἱρήσουσιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "πάθω",
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "πόλιν",
+     "αἱρήσουσιν"
+    ]
+   },
+   {
+    "prompt": "Are we to fight, or are we to flee?",
+    "answer": "πότερον μαχώμεθα ἢ φεύγωμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "μαχώμεθα",
+     "ἢ",
+     "φεύγωμεν"
+    ]
+   },
+   {
+    "prompt": "Who would not admire such courage?",
+    "answer": "τίς οὐκ ἂν θαυμάσειε τοιαύτην ἀνδρείαν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὐκ",
+     "ἂν",
+     "θαυμάσειε",
+     "τοιαύτην",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "How could you have endured so great a disgrace?",
+    "answer": "πῶς ἂν τοσαύτην αἰσχύνην ἤνεγκας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἂν",
+     "τοσαύτην",
+     "αἰσχύνην",
+     "ἤνεγκας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2662-moods-in-direct-questions-t3",
+  "sectionId": "sm-2662-moods-in-direct-questions",
+  "questions": [
+   {
+    "prompt": "Whom are we to send to the general?",
+    "answer": "τίνα πέμπωμεν πρὸς τὸν στρατηγόν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "πέμπωμεν",
+     "πρὸς",
+     "τὸν",
+     "στρατηγόν"
+    ]
+   },
+   {
+    "prompt": "Who could endure so great a thirst in the desert?",
+    "answer": "τίς ἂν τοσοῦτον δίψος ἐν τῇ ἐρήμῳ ὑπομείνειεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "τοσοῦτον",
+     "δίψος",
+     "ἐν",
+     "τῇ",
+     "ἐρήμῳ",
+     "ὑπομείνειεν"
+    ]
+   },
+   {
+    "prompt": "Do you not dread the anger of the gods?",
+    "answer": "ἆρα οὐ δειμαίνεις τὴν τῶν θεῶν ὀργήν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "οὐ",
+     "δειμαίνεις",
+     "τὴν",
+     "τῶν",
+     "θεῶν",
+     "ὀργήν"
+    ]
+   },
+   {
+    "prompt": "Why do you not reveal the whole plot to the citizens at once?",
+    "answer": "τί οὐκ εὐθὺς τοῖς πολίταις πᾶσαν τὴν ἐπιβουλὴν ἐμήνυσας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "οὐκ",
+     "εὐθὺς",
+     "τοῖς",
+     "πολίταις",
+     "πᾶσαν",
+     "τὴν",
+     "ἐπιβουλὴν",
+     "ἐμήνυσας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2662-moods-in-direct-questions-t4",
+  "sectionId": "sm-2662-moods-in-direct-questions",
+  "questions": [
+   {
+    "prompt": "Why would all men have envied the tyrants?",
+    "answer": "πῶς ἂν πάντες ἐζήλουν τοὺς τυράννους;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἂν",
+     "πάντες",
+     "ἐζήλουν",
+     "τοὺς",
+     "τυράννους"
+    ]
+   },
+   {
+    "prompt": "Am I to obey the laws or my friends?",
+    "answer": "πότερον τοῖς νόμοις ἢ τοῖς φίλοις πείθωμαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τοῖς",
+     "νόμοις",
+     "ἢ",
+     "φίλοις",
+     "πείθωμαι"
+    ]
+   },
+   {
+    "prompt": "Who could count the ships of the barbarians?",
+    "answer": "τίς ἂν ἀριθμήσειε τὰς τῶν βαρβάρων ναῦς;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "ἀριθμήσειε",
+     "τὰς",
+     "τῶν",
+     "βαρβάρων",
+     "ναῦς"
+    ]
+   },
+   {
+    "prompt": "What am I to suffer, having betrayed my own city?",
+    "answer": "τί πάθω τὴν ἐμαυτοῦ πόλιν προδούς;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "πάθω",
+     "τὴν",
+     "ἐμαυτοῦ",
+     "πόλιν",
+     "προδούς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2662-moods-in-direct-questions-t5",
+  "sectionId": "sm-2662-moods-in-direct-questions",
+  "questions": [
+   {
+    "prompt": "Since the enemy are near, where are we to encamp?",
+    "answer": "ἐπεὶ ἐγγύς εἰσιν οἱ πολέμιοι, ποῦ στρατοπεδευώμεθα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ἐγγύς",
+     "εἰσιν",
+     "οἱ",
+     "πολέμιοι",
+     "ποῦ",
+     "στρατοπεδευώμεθα"
+    ]
+   },
+   {
+    "prompt": "Who could tell of such disasters?",
+    "answer": "τίς τὰς τοιαύτας συμφορὰς φράζοι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "τὰς",
+     "τοιαύτας",
+     "συμφορὰς",
+     "φράζοι"
+    ]
+   },
+   {
+    "prompt": "How could I ever have trusted such a traitor?",
+    "answer": "πῶς ἂν τοιούτῳ προδότῃ ἐπίστευσα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἂν",
+     "τοιούτῳ",
+     "προδότῃ",
+     "ἐπίστευσα"
+    ]
+   },
+   {
+    "prompt": "Why do you not lead the army across the river now?",
+    "answer": "τί οὐ νῦν τὸν στρατὸν διὰ τοῦ ποταμοῦ ἤγαγες;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "οὐ",
+     "νῦν",
+     "τὸν",
+     "στρατὸν",
+     "διὰ",
+     "τοῦ",
+     "ποταμοῦ",
+     "ἤγαγες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2662-moods-in-direct-questions-t6",
+  "sectionId": "sm-2662-moods-in-direct-questions",
+  "questions": [
+   {
+    "prompt": "Who would willingly abandon his friends in danger?",
+    "answer": "τίς ἂν ἑκὼν τοὺς φίλους ἐν κινδύνῳ καταλίποι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "ἑκὼν",
+     "τοὺς",
+     "φίλους",
+     "ἐν",
+     "κινδύνῳ",
+     "καταλίποι"
+    ]
+   },
+   {
+    "prompt": "Are we to trust the oracle, or our own judgment?",
+    "answer": "πότερον τῷ χρησμῷ ἢ τῇ ἡμετέρᾳ γνώμῃ πιστεύωμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τῷ",
+     "χρησμῷ",
+     "ἢ",
+     "τῇ",
+     "ἡμετέρᾳ",
+     "γνώμῃ",
+     "πιστεύωμεν"
+    ]
+   },
+   {
+    "prompt": "Do you not see that the walls are already falling?",
+    "answer": "ἆρα οὐχ ὁρᾷς ὅτι τὰ τείχη ἤδη πίπτει;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "οὐχ",
+     "ὁρᾷς",
+     "ὅτι",
+     "τὰ",
+     "τείχη",
+     "ἤδη",
+     "πίπτει"
+    ]
+   },
+   {
+    "prompt": "What is to become of us, now that our leader is dead?",
+    "answer": "τί πάθωμεν, τοῦ ἡγεμόνος τεθνηκότος;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "πάθωμεν",
+     "τοῦ",
+     "ἡγεμόνος",
+     "τεθνηκότος"
+    ]
+   }
+  ]
+ }
+]
