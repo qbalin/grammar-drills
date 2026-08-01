@@ -1,0 +1,361 @@
+[
+ {
+  "id": "sm-2149-verbal-adjectives-in-teos-t1",
+  "sectionId": "sm-2149-verbal-adjectives-in-teos",
+  "questions": [
+   {
+    "prompt": "We must obey the laws of the city.",
+    "answer": "πειστέον ἡμῖν τοῖς τῆς πόλεως νόμοις ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πειστέον",
+     "ἡμῖν",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "νόμοις",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The wrongdoers must be punished by the judges.",
+    "answer": "οἱ ἀδικοῦντες τοῖς δικασταῖς κολαστέοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀδικοῦντες",
+     "τοῖς",
+     "δικασταῖς",
+     "κολαστέοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "Since the enemy are approaching, we must guard the walls.",
+    "answer": "τῶν πολεμίων προσιόντων φυλακτέον ἡμῖν τὰ τείχη ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "προσιόντων",
+     "φυλακτέον",
+     "ἡμῖν",
+     "τά",
+     "τείχη",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "We must not prefer wealth to virtue.",
+    "answer": "οὐ τὸν πλοῦτον πρὸ τῆς ἀρετῆς ἡμῖν αἱρετέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "τόν",
+     "πλοῦτον",
+     "πρό",
+     "τῆς",
+     "ἀρετῆς",
+     "ἡμῖν",
+     "αἱρετέον",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2149-verbal-adjectives-in-teos-t2",
+  "sectionId": "sm-2149-verbal-adjectives-in-teos",
+  "questions": [
+   {
+    "prompt": "The river must be crossed by us before night.",
+    "answer": "ὁ ποταμὸς ἡμῖν πρὸ νυκτὸς διαβατέος ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμός",
+     "ἡμῖν",
+     "πρό",
+     "νυκτός",
+     "διαβατέος",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "You must benefit your friends and harm your enemies.",
+    "answer": "τοὺς φίλους σοι εὐεργετητέον, τοὺς δὲ ἐχθροὺς βλαπτέον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "φίλους",
+     "σοι",
+     "εὐεργετητέον",
+     "δέ",
+     "ἐχθρούς",
+     "βλαπτέον"
+    ]
+   },
+   {
+    "prompt": "Those who wish to be free must fight bravely.",
+    "answer": "τοῖς ἐλευθέροις εἶναι βουλομένοις ἀνδρείως μαχητέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ἐλευθέροις",
+     "εἶναι",
+     "βουλομένοις",
+     "ἀνδρείως",
+     "μαχητέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The general must be honored by the soldiers.",
+    "answer": "ὁ στρατηγὸς τοῖς στρατιώταις τιμητέος ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τοῖς",
+     "στρατιώταις",
+     "τιμητέος",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2149-verbal-adjectives-in-teos-t3",
+  "sectionId": "sm-2149-verbal-adjectives-in-teos",
+  "questions": [
+   {
+    "prompt": "We must take care of the sick.",
+    "answer": "τῶν καμνόντων ἡμῖν ἐπιμελητέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "καμνόντων",
+     "ἡμῖν",
+     "ἐπιμελητέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "We must give and receive pledges.",
+    "answer": "πιστὰ ἡμῖν δοτέον καὶ ληπτέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστά",
+     "ἡμῖν",
+     "δοτέον",
+     "καί",
+     "ληπτέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "We must always tell the truth.",
+    "answer": "ἀεὶ ἡμῖν τὸ ἀληθὲς λεκτέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀεί",
+     "ἡμῖν",
+     "τό",
+     "ἀληθές",
+     "λεκτέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The allies must not be abandoned to the enemy.",
+    "answer": "οἱ σύμμαχοι τοῖς πολεμίοις οὐ παραδοτέοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "τοῖς",
+     "πολεμίοις",
+     "οὐ",
+     "παραδοτέοι",
+     "εἰσίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2149-verbal-adjectives-in-teos-t4",
+  "sectionId": "sm-2149-verbal-adjectives-in-teos",
+  "questions": [
+   {
+    "prompt": "The man who wishes to be happy must pursue temperance.",
+    "answer": "τὸν βουλόμενον εὐδαίμονα εἶναι σωφροσύνην διωκτέον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "βουλόμενον",
+     "εὐδαίμονα",
+     "εἶναι",
+     "σωφροσύνην",
+     "διωκτέον"
+    ]
+   },
+   {
+    "prompt": "We must guard against the flatteries of the wicked.",
+    "answer": "τὰς τῶν πονηρῶν κολακείας ἡμῖν φυλακτέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάς",
+     "τῶν",
+     "πονηρῶν",
+     "κολακείας",
+     "ἡμῖν",
+     "φυλακτέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The gods must be honored with sacrifices.",
+    "answer": "τοὺς θεοὺς θυσίαις τιμητέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "θεούς",
+     "θυσίαις",
+     "τιμητέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "We must help the state when it is in danger.",
+    "answer": "τῇ πόλει κινδυνευούσῃ ἡμῖν βοηθητέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῇ",
+     "πόλει",
+     "κινδυνευούσῃ",
+     "ἡμῖν",
+     "βοηθητέον",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2149-verbal-adjectives-in-teos-t5",
+  "sectionId": "sm-2149-verbal-adjectives-in-teos",
+  "questions": [
+   {
+    "prompt": "Virtue must be practiced from youth.",
+    "answer": "τὴν ἀρετὴν ἐκ νέου ἀσκητέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "ἀρετήν",
+     "ἐκ",
+     "νέου",
+     "ἀσκητέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The city must be benefited by the good citizens.",
+    "answer": "ἡ πόλις τοῖς ἀγαθοῖς πολίταις ὠφελητέα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "τοῖς",
+     "ἀγαθοῖς",
+     "πολίταις",
+     "ὠφελητέα",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Since we are wronged, we must defend ourselves.",
+    "answer": "ἀδικουμένοις ἡμῖν ἀμυντέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδικουμένοις",
+     "ἡμῖν",
+     "ἀμυντέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "This work must be done by us before the festival.",
+    "answer": "τοῦτο τὸ ἔργον πρὸ τῆς ἑορτῆς ἡμῖν πρακτέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τό",
+     "ἔργον",
+     "πρό",
+     "τῆς",
+     "ἑορτῆς",
+     "ἡμῖν",
+     "πρακτέον",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2149-verbal-adjectives-in-teos-t6",
+  "sectionId": "sm-2149-verbal-adjectives-in-teos",
+  "questions": [
+   {
+    "prompt": "One must obey the commands of the general.",
+    "answer": "τοῖς τοῦ στρατηγοῦ προστάγμασι πειστέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "τοῦ",
+     "στρατηγοῦ",
+     "προστάγμασι",
+     "πειστέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The children must be educated in music and gymnastics.",
+    "answer": "οἱ παῖδες μουσικῇ καὶ γυμναστικῇ παιδευτέοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "μουσικῇ",
+     "καί",
+     "γυμναστικῇ",
+     "παιδευτέοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "We must not trust those who often lie.",
+    "answer": "τοῖς πολλάκις ψευδομένοις οὐ πιστευτέον ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "πολλάκις",
+     "ψευδομένοις",
+     "οὐ",
+     "πιστευτέον",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The assembly voted that they must go to war.",
+    "answer": "ἡ ἐκκλησία ἐψηφίσατο πολεμητέα εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐκκλησία",
+     "ἐψηφίσατο",
+     "πολεμητέα",
+     "εἶναι"
+    ]
+   }
+  ]
+ }
+]

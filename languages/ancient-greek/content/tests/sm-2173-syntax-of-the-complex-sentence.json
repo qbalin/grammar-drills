@@ -1,0 +1,430 @@
+[
+ {
+  "id": "sm-2173-syntax-of-the-complex-sentence-t1",
+  "sectionId": "sm-2173-syntax-of-the-complex-sentence",
+  "questions": [
+   {
+    "prompt": "When the general was ill, he said that the enemy would soon arrive.",
+    "answer": "ἐπεὶ ὁ στρατηγὸς ἠσθένει, ἔλεγεν ὅτι οἱ πολέμιοι ταχέως ἥξοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἠσθένει",
+     "ἔλεγεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "ταχέως",
+     "ἥξοιεν"
+    ]
+   },
+   {
+    "prompt": "I know well that the citizens honor those who fight for freedom.",
+    "answer": "εὖ οἶδα ὅτι οἱ πολῖται τιμῶσι τοὺς ὑπὲρ τῆς ἐλευθερίας μαχομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "οἶδα",
+     "ὅτι",
+     "οἱ",
+     "πολῖται",
+     "τιμῶσι",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "μαχομένους"
+    ]
+   },
+   {
+    "prompt": "But whatever you intend to do, do at once, for the moment presses.",
+    "answer": "ὅ τι δὲ μέλλετε πράττειν, εὐθὺς πράττετε· ὁ γὰρ καιρὸς ἐπείγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "δὲ",
+     "μέλλετε",
+     "πράττειν",
+     "εὐθὺς",
+     "πράττετε",
+     "ὁ",
+     "γὰρ",
+     "καιρὸς",
+     "ἐπείγει"
+    ]
+   },
+   {
+    "prompt": "You see, the young men obey the laws which the ancestors established.",
+    "answer": "ὁρᾷς, οἱ νεανίαι πείθονται τοῖς νόμοις οὓς οἱ πρόγονοι κατέστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρᾷς",
+     "οἱ",
+     "νεανίαι",
+     "πείθονται",
+     "τοῖς",
+     "νόμοις",
+     "οὓς",
+     "πρόγονοι",
+     "κατέστησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2173-syntax-of-the-complex-sentence-t2",
+  "sectionId": "sm-2173-syntax-of-the-complex-sentence",
+  "questions": [
+   {
+    "prompt": "But if you decide otherwise—and may this never happen—the city will be destroyed.",
+    "answer": "εἰ δὲ ἄλλο τι γνώσεσθε, ὃ μὴ γένοιτο, ἡ πόλις διαφθαρήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δὲ",
+     "ἄλλο",
+     "τι",
+     "γνώσεσθε",
+     "ὃ",
+     "μὴ",
+     "γένοιτο",
+     "ἡ",
+     "πόλις",
+     "διαφθαρήσεται"
+    ]
+   },
+   {
+    "prompt": "Since the winter had come, the soldiers no longer wished to march.",
+    "answer": "ἐπεὶ δὲ ὁ χειμὼν ἦλθεν, οἱ στρατιῶται οὐκέτι ἐβούλοντο πορεύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "δὲ",
+     "ὁ",
+     "χειμὼν",
+     "ἦλθεν",
+     "οἱ",
+     "στρατιῶται",
+     "οὐκέτι",
+     "ἐβούλοντο",
+     "πορεύεσθαι"
+    ]
+   },
+   {
+    "prompt": "When Darius was ill and suspected his death, he wished his sons to be present.",
+    "answer": "ἐπεὶ δὲ ὁ Δαρεῖος ἠσθένει καὶ τὴν τελευτὴν ὑπώπτευεν, ἐβούλετο τοὺς παῖδας παρεῖναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "δὲ",
+     "ὁ",
+     "Δαρεῖος",
+     "ἠσθένει",
+     "καὶ",
+     "τὴν",
+     "τελευτὴν",
+     "ὑπώπτευεν",
+     "ἐβούλετο",
+     "τοὺς",
+     "παῖδας",
+     "παρεῖναι"
+    ]
+   },
+   {
+    "prompt": "Fortune cares better for us than we care for ourselves.",
+    "answer": "ἡ τύχη βέλτιον ἡμῶν ἐπιμελεῖται ἢ ἡμεῖς ἡμῶν αὐτῶν ἐπιμελούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τύχη",
+     "βέλτιον",
+     "ἡμῶν",
+     "ἐπιμελεῖται",
+     "ἢ",
+     "ἡμεῖς",
+     "αὐτῶν",
+     "ἐπιμελούμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2173-syntax-of-the-complex-sentence-t3",
+  "sectionId": "sm-2173-syntax-of-the-complex-sentence",
+  "questions": [
+   {
+    "prompt": "They said that men had come who would be able to report about the truce.",
+    "answer": "ἔλεγον ὅτι ἥκοιεν ἄνδρες οἵτινες ἱκανοὶ ἔσοιντο περὶ τῶν σπονδῶν ἀπαγγεῖλαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "ὅτι",
+     "ἥκοιεν",
+     "ἄνδρες",
+     "οἵτινες",
+     "ἱκανοὶ",
+     "ἔσοιντο",
+     "περὶ",
+     "τῶν",
+     "σπονδῶν",
+     "ἀπαγγεῖλαι"
+    ]
+   },
+   {
+    "prompt": "The messenger announced that the king had fled because he feared the enemy.",
+    "answer": "ὁ ἄγγελος ἤγγειλεν ὅτι ὁ βασιλεὺς φύγοι ἐπειδὴ τοὺς πολεμίους φοβοῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἤγγειλεν",
+     "ὅτι",
+     "βασιλεὺς",
+     "φύγοι",
+     "ἐπειδὴ",
+     "τοὺς",
+     "πολεμίους",
+     "φοβοῖτο"
+    ]
+   },
+   {
+    "prompt": "We learned that the ambassadors would say whatever the assembly ordered.",
+    "answer": "ἐμάθομεν ὅτι οἱ πρέσβεις λέξοιεν ὅ τι ἡ ἐκκλησία κελεύοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμάθομεν",
+     "ὅτι",
+     "οἱ",
+     "πρέσβεις",
+     "λέξοιεν",
+     "ὅ",
+     "τι",
+     "ἡ",
+     "ἐκκλησία",
+     "κελεύοι"
+    ]
+   },
+   {
+    "prompt": "The old man revealed that he knew who had done these things.",
+    "answer": "ὁ γέρων ἐδήλωσεν ὅτι εἰδείη ὅστις ταῦτα πράξειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἐδήλωσεν",
+     "ὅτι",
+     "εἰδείη",
+     "ὅστις",
+     "ταῦτα",
+     "πράξειεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2173-syntax-of-the-complex-sentence-t4",
+  "sectionId": "sm-2173-syntax-of-the-complex-sentence",
+  "questions": [
+   {
+    "prompt": "The sailors waited until the storm should cease.",
+    "answer": "οἱ ναῦται ἔμενον ἕως ὁ χειμὼν παύσαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "ἔμενον",
+     "ἕως",
+     "ὁ",
+     "χειμὼν",
+     "παύσαιτο"
+    ]
+   },
+   {
+    "prompt": "Whenever the general commands, the soldiers advance boldly.",
+    "answer": "ἐπειδὰν ὁ στρατηγὸς κελεύῃ, οἱ στρατιῶται θαρραλέως προχωροῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ὁ",
+     "στρατηγὸς",
+     "κελεύῃ",
+     "οἱ",
+     "στρατιῶται",
+     "θαρραλέως",
+     "προχωροῦσιν"
+    ]
+   },
+   {
+    "prompt": "The children fled before the master could see them.",
+    "answer": "τὰ τέκνα ἔφυγον πρὶν τὸν δεσπότην αὐτὰ ἰδεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τέκνα",
+     "ἔφυγον",
+     "πρὶν",
+     "τὸν",
+     "δεσπότην",
+     "αὐτὰ",
+     "ἰδεῖν"
+    ]
+   },
+   {
+    "prompt": "As long as the walls remained, the citizens were not afraid.",
+    "answer": "ἕως τὰ τείχη ἔμενεν, οἱ πολῖται οὐκ ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "τὰ",
+     "τείχη",
+     "ἔμενεν",
+     "οἱ",
+     "πολῖται",
+     "οὐκ",
+     "ἐφοβοῦντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2173-syntax-of-the-complex-sentence-t5",
+  "sectionId": "sm-2173-syntax-of-the-complex-sentence",
+  "questions": [
+   {
+    "prompt": "Since you have suffered much, I think, you deserve pity.",
+    "answer": "ἐπεὶ πολλὰ πέπονθας, οἶμαι, ἄξιος εἶ ἐλέου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "πολλὰ",
+     "πέπονθας",
+     "οἶμαι",
+     "ἄξιος",
+     "εἶ",
+     "ἐλέου"
+    ]
+   },
+   {
+    "prompt": "Although the enemy were many, the Greeks did not flee.",
+    "answer": "καίπερ τῶν πολεμίων πολλῶν ὄντων, οἱ Ἕλληνες οὐκ ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "τῶν",
+     "πολεμίων",
+     "πολλῶν",
+     "ὄντων",
+     "οἱ",
+     "Ἕλληνες",
+     "οὐκ",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Because the god is just, know well, the wicked will be punished.",
+    "answer": "ἐπειδὴ ὁ θεὸς δίκαιός ἐστιν, εὖ ἴσθι, οἱ κακοὶ κολασθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "ὁ",
+     "θεὸς",
+     "δίκαιός",
+     "ἐστιν",
+     "εὖ",
+     "ἴσθι",
+     "οἱ",
+     "κακοὶ",
+     "κολασθήσονται"
+    ]
+   },
+   {
+    "prompt": "Since the money had run out, the general dismissed the army.",
+    "answer": "ἐπεὶ τὰ χρήματα ἐπελελοίπει, ὁ στρατηγὸς τὸ στράτευμα ἀπέλυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τὰ",
+     "χρήματα",
+     "ἐπελελοίπει",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἀπέλυσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2173-syntax-of-the-complex-sentence-t6",
+  "sectionId": "sm-2173-syntax-of-the-complex-sentence",
+  "questions": [
+   {
+    "prompt": "Those who love wisdom endure toil gladly.",
+    "answer": "οἳ τὴν σοφίαν φιλοῦσιν ἡδέως τὸν πόνον ὑπομένουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἳ",
+     "τὴν",
+     "σοφίαν",
+     "φιλοῦσιν",
+     "ἡδέως",
+     "τὸν",
+     "πόνον",
+     "ὑπομένουσιν"
+    ]
+   },
+   {
+    "prompt": "The judge honors whoever speaks the truth.",
+    "answer": "ὁ κριτὴς τιμᾷ ὅστις ἂν τὰ ἀληθῆ λέγῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κριτὴς",
+     "τιμᾷ",
+     "ὅστις",
+     "ἂν",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγῃ"
+    ]
+   },
+   {
+    "prompt": "The wise man bears misfortune more easily than fools do.",
+    "answer": "ὁ σοφὸς τὴν συμφορὰν ῥᾷον φέρει ἢ οἱ ἄφρονες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τὴν",
+     "συμφορὰν",
+     "ῥᾷον",
+     "φέρει",
+     "ἢ",
+     "οἱ",
+     "ἄφρονες"
+    ]
+   },
+   {
+    "prompt": "The general, whom the soldiers trusted, led them home safely.",
+    "answer": "ὁ στρατηγός, ᾧ οἱ στρατιῶται ἐπίστευον, ἀσφαλῶς αὐτοὺς οἴκαδε ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ᾧ",
+     "οἱ",
+     "στρατιῶται",
+     "ἐπίστευον",
+     "ἀσφαλῶς",
+     "αὐτοὺς",
+     "οἴκαδε",
+     "ἤγαγεν"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,410 @@
+[
+ {
+  "id": "sm-2280-conditional-clauses-t1",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the enemy are holding the bridge, we cannot cross the river.",
+    "answer": "εἰ οἱ πολέμιοι τὴν γέφυραν ἔχουσιν, οὐ δυνάμεθα τὸν ποταμὸν διαβαίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "γέφυραν",
+     "ἔχουσιν",
+     "οὐ",
+     "δυνάμεθα",
+     "τὸν",
+     "ποταμὸν",
+     "διαβαίνειν"
+    ]
+   },
+   {
+    "prompt": "If Cyrus is wise, he honors those who fight bravely.",
+    "answer": "εἰ σοφός ἐστιν ὁ Κῦρος, τιμᾷ τοὺς ἀνδρείως μαχομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοφός",
+     "ἐστιν",
+     "ὁ",
+     "Κῦρος",
+     "τιμᾷ",
+     "τοὺς",
+     "ἀνδρείως",
+     "μαχομένους"
+    ]
+   },
+   {
+    "prompt": "If you are saying these things in earnest, I marvel greatly.",
+    "answer": "εἰ ταῦτα σπουδῇ λέγεις, θαυμάζω σφόδρα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ταῦτα",
+     "σπουδῇ",
+     "λέγεις",
+     "θαυμάζω",
+     "σφόδρα"
+    ]
+   },
+   {
+    "prompt": "If the gods care for men, they will not overlook the unjust.",
+    "answer": "εἰ οἱ θεοὶ τῶν ἀνθρώπων ἐπιμέλονται, οὐ περιόψονται τοὺς ἀδίκους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "θεοὶ",
+     "τῶν",
+     "ἀνθρώπων",
+     "ἐπιμέλονται",
+     "οὐ",
+     "περιόψονται",
+     "τοὺς",
+     "ἀδίκους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t2",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If you obey the general, you will be saved.",
+    "answer": "ἐὰν τῷ στρατηγῷ πείθῃ, σωθήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τῷ",
+     "στρατηγῷ",
+     "πείθῃ",
+     "σωθήσῃ"
+    ]
+   },
+   {
+    "prompt": "If the Assyrian attacks the city, we shall guard it with the triremes.",
+    "answer": "ἐὰν ὁ Ἀσσύριος τῇ πόλει προσβάλλῃ, ταῖς τριήρεσιν αὐτὴν φυλάξομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "Ἀσσύριος",
+     "τῇ",
+     "πόλει",
+     "προσβάλλῃ",
+     "ταῖς",
+     "τριήρεσιν",
+     "αὐτὴν",
+     "φυλάξομεν"
+    ]
+   },
+   {
+    "prompt": "If we find the money, we will give it to the soldiers.",
+    "answer": "ἐὰν τὰ χρήματα εὕρωμεν, τοῖς στρατιώταις αὐτὰ δώσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὰ",
+     "χρήματα",
+     "εὕρωμεν",
+     "τοῖς",
+     "στρατιώταις",
+     "αὐτὰ",
+     "δώσομεν"
+    ]
+   },
+   {
+    "prompt": "If the young man learns these things well, he will become useful to the city.",
+    "answer": "ἐὰν ὁ νεᾱνίᾱς ταῦτα καλῶς μάθῃ, χρήσιμος τῇ πόλει γενήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "νεᾱνίᾱς",
+     "ταῦτα",
+     "καλῶς",
+     "μάθῃ",
+     "χρήσιμος",
+     "τῇ",
+     "πόλει",
+     "γενήσεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t3",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If anyone should ask this, I would not know what to answer.",
+    "answer": "εἰ τίς τοῦτο ἐρωτῴη, οὐκ ἂν ἔχοιμι ὅ τι ἀποκρῑναίμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τίς",
+     "τοῦτο",
+     "ἐρωτῴη",
+     "οὐκ",
+     "ἂν",
+     "ἔχοιμι",
+     "ὅ",
+     "τι",
+     "ἀποκρῑναίμην"
+    ]
+   },
+   {
+    "prompt": "If the general were to lead us wisely, we would easily conquer.",
+    "answer": "εἰ ὁ στρατηγὸς σοφῶς ἡμᾶς ἄγοι, ῥᾳδίως ἂν νῑκῷμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "σοφῶς",
+     "ἡμᾶς",
+     "ἄγοι",
+     "ῥᾳδίως",
+     "ἂν",
+     "νῑκῷμεν"
+    ]
+   },
+   {
+    "prompt": "If you should honor the gods, you would be happy.",
+    "answer": "εἰ τοὺς θεοὺς τῑμῷης, εὐδαίμων ἂν εἴης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοὺς",
+     "θεοὺς",
+     "τῑμῷης",
+     "εὐδαίμων",
+     "ἂν",
+     "εἴης"
+    ]
+   },
+   {
+    "prompt": "If the ambassadors should come, we would gladly receive them.",
+    "answer": "εἰ οἱ πρέσβεις ἔλθοιεν, ἡδέως ἂν αὐτοὺς δεχοίμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πρέσβεις",
+     "ἔλθοιεν",
+     "ἡδέως",
+     "ἂν",
+     "αὐτοὺς",
+     "δεχοίμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t4",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If you were wise, you would not say such things.",
+    "answer": "εἰ σοφὸς ἦσθα, οὐκ ἂν τοιαῦτα ἔλεγες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοφὸς",
+     "ἦσθα",
+     "οὐκ",
+     "ἂν",
+     "τοιαῦτα",
+     "ἔλεγες"
+    ]
+   },
+   {
+    "prompt": "If the citizens loved freedom, they would fight for the city.",
+    "answer": "εἰ οἱ πολῖται τὴν ἐλευθερίᾱν ἐφίλουν, ὑπὲρ τῆς πόλεως ἂν ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "ἐλευθερίᾱν",
+     "ἐφίλουν",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "ἂν",
+     "ἐμάχοντο"
+    ]
+   },
+   {
+    "prompt": "If I had wings, I would fly to the islands.",
+    "answer": "εἰ πτερὰ εἶχον, εἰς τὰς νήσους ἂν ἐπετόμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "πτερὰ",
+     "εἶχον",
+     "εἰς",
+     "τὰς",
+     "νήσους",
+     "ἂν",
+     "ἐπετόμην"
+    ]
+   },
+   {
+    "prompt": "If Socrates were present, he would refute these arguments.",
+    "answer": "εἰ ὁ Σωκράτης παρῆν, τούτους τοὺς λόγους ἂν ἤλεγχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Σωκράτης",
+     "παρῆν",
+     "τούτους",
+     "τοὺς",
+     "λόγους",
+     "ἂν",
+     "ἤλεγχεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t5",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the general had not fled, the soldiers would have been saved.",
+    "answer": "εἰ ὁ στρατηγὸς μὴ ἔφυγεν, οἱ στρατιῶται ἂν ἐσώθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "μὴ",
+     "ἔφυγεν",
+     "οἱ",
+     "στρατιῶται",
+     "ἂν",
+     "ἐσώθησαν"
+    ]
+   },
+   {
+    "prompt": "If you had listened to me, you would not have made this mistake.",
+    "answer": "εἰ ἐμοὶ ἐπίθου, οὐκ ἂν ταύτην τὴν ἁμαρτίᾱν ἥμαρτες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἐμοὶ",
+     "ἐπίθου",
+     "οὐκ",
+     "ἂν",
+     "ταύτην",
+     "τὴν",
+     "ἁμαρτίᾱν",
+     "ἥμαρτες"
+    ]
+   },
+   {
+    "prompt": "If the Persians had captured Athens, Greece would have been enslaved.",
+    "answer": "εἰ οἱ Πέρσαι τὰς Ἀθήνᾱς εἷλον, ἡ Ἑλλὰς ἂν ἐδουλώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "Πέρσαι",
+     "τὰς",
+     "Ἀθήνᾱς",
+     "εἷλον",
+     "ἡ",
+     "Ἑλλὰς",
+     "ἂν",
+     "ἐδουλώθη"
+    ]
+   },
+   {
+    "prompt": "If we had had ships, we would have conquered the enemy by sea.",
+    "answer": "εἰ ναῦς εἴχομεν, τοὺς πολεμίους ἂν κατὰ θάλατταν ἐνῑκήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ναῦς",
+     "εἴχομεν",
+     "τοὺς",
+     "πολεμίους",
+     "ἂν",
+     "κατὰ",
+     "θάλατταν",
+     "ἐνῑκήσαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t6",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "Whenever a man is unjust, he becomes hateful to the gods.",
+    "answer": "ἐὰν ἄδικός τις ᾖ, τοῖς θεοῖς ἀπεχθάνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ἄδικός",
+     "τις",
+     "ᾖ",
+     "τοῖς",
+     "θεοῖς",
+     "ἀπεχθάνεται"
+    ]
+   },
+   {
+    "prompt": "Whenever the soldiers took a city, they used to divide the spoils.",
+    "answer": "εἰ οἱ στρατιῶται πόλιν λάβοιεν, τὰ λάφυρα διῃροῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "στρατιῶται",
+     "πόλιν",
+     "λάβοιεν",
+     "τὰ",
+     "λάφυρα",
+     "διῃροῦντο"
+    ]
+   },
+   {
+    "prompt": "If ever anyone spoke the truth, Cyrus used to honor him.",
+    "answer": "εἴ τις ἀληθῆ λέγοι, ὁ Κῦρος αὐτὸν ἐτίμᾱ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "ἀληθῆ",
+     "λέγοι",
+     "ὁ",
+     "Κῦρος",
+     "αὐτὸν",
+     "ἐτίμᾱ"
+    ]
+   },
+   {
+    "prompt": "Whenever we laugh at our friends, we do them wrong.",
+    "answer": "ἐὰν τῶν φίλων καταγελῶμεν, ἀδικοῦμεν αὐτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τῶν",
+     "φίλων",
+     "καταγελῶμεν",
+     "ἀδικοῦμεν",
+     "αὐτούς"
+    ]
+   }
+  ]
+ }
+]

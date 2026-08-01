@@ -1,0 +1,373 @@
+[
+ {
+  "id": "sm-1851-kind-of-time-t1",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "While the enemy are attacking, the citizens guard the walls.",
+    "answer": "Ἐπιστρατευόντων τῶν πολεμίων, οἱ πολῖται τὰ τείχη φυλάττουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐπιστρατευόντων",
+     "τῶν",
+     "πολεμίων",
+     "οἱ",
+     "πολῖται",
+     "τὰ",
+     "τείχη",
+     "φυλάττουσιν"
+    ]
+   },
+   {
+    "prompt": "The soldiers have built a wall around the camp.",
+    "answer": "Οἱ στρατιῶται τεῖχος περὶ τὸ στρατόπεδον ᾠκοδομήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "τεῖχος",
+     "περὶ",
+     "τὸ",
+     "στρατόπεδον",
+     "ᾠκοδομήκασιν"
+    ]
+   },
+   {
+    "prompt": "Now I understand why the wise man keeps silent.",
+    "answer": "Νῦν μανθάνω διὰ τί ὁ σοφὸς σιγᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Νῦν",
+     "μανθάνω",
+     "διὰ",
+     "τί",
+     "ὁ",
+     "σοφὸς",
+     "σιγᾷ"
+    ]
+   },
+   {
+    "prompt": "Because of his courage this man has become worthy of great honor.",
+    "answer": "Διὰ τὴν ἀνδρείαν οὗτος μεγάλης τιμῆς ἄξιος γέγονεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Διὰ",
+     "τὴν",
+     "ἀνδρείαν",
+     "οὗτος",
+     "μεγάλης",
+     "τιμῆς",
+     "ἄξιος",
+     "γέγονεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t2",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "The children were listening to the poet while he sang.",
+    "answer": "Οἱ παῖδες τοῦ ποιητοῦ ἠκροῶντο ᾄδοντος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "παῖδες",
+     "τοῦ",
+     "ποιητοῦ",
+     "ἠκροῶντο",
+     "ᾄδοντος"
+    ]
+   },
+   {
+    "prompt": "Every day the tyrant was doing evil to the citizens.",
+    "answer": "Κατὰ ἑκάστην ἡμέραν ὁ τύραννος τοὺς πολίτας ἐκακούργει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κατὰ",
+     "ἑκάστην",
+     "ἡμέραν",
+     "ὁ",
+     "τύραννος",
+     "τοὺς",
+     "πολίτας",
+     "ἐκακούργει"
+    ]
+   },
+   {
+    "prompt": "The strong horses were carrying the heavy weapons.",
+    "answer": "Οἱ ἰσχυροὶ ἵπποι τὰ βαρέα ὅπλα ἔφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ἰσχυροὶ",
+     "ἵπποι",
+     "τὰ",
+     "βαρέα",
+     "ὅπλα",
+     "ἔφερον"
+    ]
+   },
+   {
+    "prompt": "As long as the war lasted, the women were performing public services.",
+    "answer": "Ἕως ὁ πόλεμος ἔμενεν, αἱ γυναῖκες ἐλειτούργουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἕως",
+     "ὁ",
+     "πόλεμος",
+     "ἔμενεν",
+     "αἱ",
+     "γυναῖκες",
+     "ἐλειτούργουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t3",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "The general led the army against Argos.",
+    "answer": "Ὁ στρατηγὸς τὸ στράτευμα ἐπὶ τὸ Ἄργος ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἐπὶ",
+     "Ἄργος",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "When the enemy had gone away, the citizens rejoiced.",
+    "answer": "Ἀπελθόντων τῶν πολεμίων, οἱ πολῖται ἐχάρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀπελθόντων",
+     "τῶν",
+     "πολεμίων",
+     "οἱ",
+     "πολῖται",
+     "ἐχάρησαν"
+    ]
+   },
+   {
+    "prompt": "The wise man broke his staff and threw it away.",
+    "answer": "Ὁ σοφὸς τὴν βακτηρίαν ἔαξε καὶ ἀπέρριψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "σοφὸς",
+     "τὴν",
+     "βακτηρίαν",
+     "ἔαξε",
+     "καὶ",
+     "ἀπέρριψεν"
+    ]
+   },
+   {
+    "prompt": "The messenger announced the victory to the citizens.",
+    "answer": "Ὁ ἄγγελος τὴν νίκην τοῖς πολίταις ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ἄγγελος",
+     "τὴν",
+     "νίκην",
+     "τοῖς",
+     "πολίταις",
+     "ἤγγειλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t4",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "The soldiers had already fled before the general arrived.",
+    "answer": "Οἱ στρατιῶται ἤδη ἐπεφεύγεσαν πρὶν τὸν στρατηγὸν ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "ἤδη",
+     "ἐπεφεύγεσαν",
+     "πρὶν",
+     "τὸν",
+     "στρατηγὸν",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "The enemy had fortified the city with a double wall.",
+    "answer": "Οἱ πολέμιοι τὴν πόλιν διπλῷ τείχει ἐτετειχίκεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "πόλιν",
+     "διπλῷ",
+     "τείχει",
+     "ἐτετειχίκεσαν"
+    ]
+   },
+   {
+    "prompt": "I had written the letter before the messenger came.",
+    "answer": "Ἐγὼ τὴν ἐπιστολὴν ἐγεγράφη πρὶν τὸν ἄγγελον ἐλθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐγὼ",
+     "τὴν",
+     "ἐπιστολὴν",
+     "ἐγεγράφη",
+     "πρὶν",
+     "τὸν",
+     "ἄγγελον",
+     "ἐλθεῖν"
+    ]
+   },
+   {
+    "prompt": "The wise man had learned many things from the philosophers.",
+    "answer": "Ὁ σοφὸς πολλὰ παρὰ τῶν φιλοσόφων ἐμεμαθήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "σοφὸς",
+     "πολλὰ",
+     "παρὰ",
+     "τῶν",
+     "φιλοσόφων",
+     "ἐμεμαθήκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t5",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "Tomorrow the tyrant will march against the islanders.",
+    "answer": "Αὔριον ὁ τύραννος ἐπὶ τοὺς νησιώτας ἐπιστρατεύσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Αὔριον",
+     "ὁ",
+     "τύραννος",
+     "ἐπὶ",
+     "τοὺς",
+     "νησιώτας",
+     "ἐπιστρατεύσει"
+    ]
+   },
+   {
+    "prompt": "If you do this, you will receive great honor.",
+    "answer": "Ἐὰν ταῦτα ποιῇς, μεγάλην τιμὴν λήψῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐὰν",
+     "ταῦτα",
+     "ποιῇς",
+     "μεγάλην",
+     "τιμὴν",
+     "λήψῃ"
+    ]
+   },
+   {
+    "prompt": "The soldiers will draw up against the enemy on the plain.",
+    "answer": "Οἱ στρατιῶται τοῖς πολεμίοις ἐν τῷ πεδίῳ ἀντιτάξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "τοῖς",
+     "πολεμίοις",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ἀντιτάξονται"
+    ]
+   },
+   {
+    "prompt": "We shall never abandon those who fought on behalf of freedom.",
+    "answer": "Οὐδέποτε προδώσομεν τοὺς ὑπὲρ τῆς ἐλευθερίας μαχεσαμένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὐδέποτε",
+     "προδώσομεν",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "μαχεσαμένους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1851-kind-of-time-t6",
+  "sectionId": "sm-1851-kind-of-time",
+  "questions": [
+   {
+    "prompt": "Before you arrive, everything will have been accomplished.",
+    "answer": "Πρὶν σε ἀφικέσθαι, πάντα πεπράξεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πρὶν",
+     "σε",
+     "ἀφικέσθαι",
+     "πάντα",
+     "πεπράξεται"
+    ]
+   },
+   {
+    "prompt": "The tyrant will soon be dead, and the city will be free.",
+    "answer": "Ὁ τύραννος ταχέως τεθνήξει, ἡ δὲ πόλις ἐλευθέρα ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "τύραννος",
+     "ταχέως",
+     "τεθνήξει",
+     "ἡ",
+     "δὲ",
+     "πόλις",
+     "ἐλευθέρα",
+     "ἔσται"
+    ]
+   },
+   {
+    "prompt": "The gates will have been shut before nightfall.",
+    "answer": "Αἱ πύλαι πρὸ τῆς νυκτὸς κεκλείσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Αἱ",
+     "πύλαι",
+     "πρὸ",
+     "τῆς",
+     "νυκτὸς",
+     "κεκλείσονται"
+    ]
+   },
+   {
+    "prompt": "These things will have been written by tomorrow.",
+    "answer": "Ταῦτα εἰς αὔριον γεγράψεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ταῦτα",
+     "εἰς",
+     "αὔριον",
+     "γεγράψεται"
+    ]
+   }
+  ]
+ }
+]

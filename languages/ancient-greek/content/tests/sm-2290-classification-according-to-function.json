@@ -1,0 +1,398 @@
+[
+ {
+  "id": "sm-2290-classification-according-to-function-t1",
+  "sectionId": "sm-2290-classification-according-to-function",
+  "questions": [
+   {
+    "prompt": "If Cyrus is present, the soldiers gladly obey him.",
+    "answer": "εἰ πάρεστιν ὁ Κῦρος, οἱ στρατιῶται ἡδέως αὐτῷ πείθονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "πάρεστιν",
+     "ὁ",
+     "Κῦρος",
+     "οἱ",
+     "στρατιῶται",
+     "ἡδέως",
+     "αὐτῷ",
+     "πείθονται"
+    ]
+   },
+   {
+    "prompt": "If the Thessalian said these things, he was lying about the war.",
+    "answer": "εἰ ταῦτα ὁ Θετταλὸς εἶπεν, περὶ τοῦ πολέμου ἐψεύδετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ταῦτα",
+     "ὁ",
+     "Θετταλὸς",
+     "εἶπεν",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "ἐψεύδετο"
+    ]
+   },
+   {
+    "prompt": "If the river is deep, we do not cross it easily.",
+    "answer": "εἰ βαθὺς ἐστιν ὁ ποταμός, οὐ ῥᾳδίως αὐτὸν διαβαίνομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "βαθὺς",
+     "ἐστιν",
+     "ὁ",
+     "ποταμός",
+     "οὐ",
+     "ῥᾳδίως",
+     "αὐτὸν",
+     "διαβαίνομεν"
+    ]
+   },
+   {
+    "prompt": "If you honor the gods, you are dear to them.",
+    "answer": "εἰ τοὺς θεοὺς τιμᾷς, φίλος αὐτοῖς εἶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοὺς",
+     "θεοὺς",
+     "τιμᾷς",
+     "φίλος",
+     "αὐτοῖς",
+     "εἶ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2290-classification-according-to-function-t2",
+  "sectionId": "sm-2290-classification-according-to-function",
+  "questions": [
+   {
+    "prompt": "If a storm arises on the sea, the sailors will fear for the ship.",
+    "answer": "ἐὰν χειμὼν ἐν τῇ θαλάττῃ γένηται, οἱ ναῦται περὶ τῆς νεὼς φοβήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "χειμὼν",
+     "ἐν",
+     "τῇ",
+     "θαλάττῃ",
+     "γένηται",
+     "οἱ",
+     "ναῦται",
+     "περὶ",
+     "τῆς",
+     "νεὼς",
+     "φοβήσονται"
+    ]
+   },
+   {
+    "prompt": "If the enemy attack the walls, we will defend the city.",
+    "answer": "ἐὰν οἱ πολέμιοι τοῖς τείχεσιν ἐπιθῶνται, τὴν πόλιν ἀμυνούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "πολέμιοι",
+     "τοῖς",
+     "τείχεσιν",
+     "ἐπιθῶνται",
+     "τὴν",
+     "πόλιν",
+     "ἀμυνούμεθα"
+    ]
+   },
+   {
+    "prompt": "If we conquer the barbarians, we will free the Greeks.",
+    "answer": "ἐὰν τοὺς βαρβάρους νικήσωμεν, τοὺς Ἕλληνας ἐλευθερώσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τοὺς",
+     "βαρβάρους",
+     "νικήσωμεν",
+     "Ἕλληνας",
+     "ἐλευθερώσομεν"
+    ]
+   },
+   {
+    "prompt": "If you trust the Cretan, you will suffer terrible things.",
+    "answer": "ἐὰν τῷ Κρητὶ πιστεύσῃς, δεινὰ πείσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τῷ",
+     "Κρητὶ",
+     "πιστεύσῃς",
+     "δεινὰ",
+     "πείσῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2290-classification-according-to-function-t3",
+  "sectionId": "sm-2290-classification-according-to-function",
+  "questions": [
+   {
+    "prompt": "If anyone should honor virtue, he would be happy.",
+    "answer": "εἴ τις τὴν ἀρετὴν τιμῴη, εὐδαίμων ἂν εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "τὴν",
+     "ἀρετὴν",
+     "τιμῴη",
+     "εὐδαίμων",
+     "ἂν",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "If the general should march quickly, he would take the city.",
+    "answer": "εἰ ταχέως ὁ στρατηγὸς ἐλαύνοι, τὴν πόλιν ἂν λάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ταχέως",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐλαύνοι",
+     "τὴν",
+     "πόλιν",
+     "ἂν",
+     "λάβοι"
+    ]
+   },
+   {
+    "prompt": "If you should question him, he would tell the truth.",
+    "answer": "εἰ αὐτὸν ἐρωτῴης, τὰ ἀληθῆ ἂν λέγοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "αὐτὸν",
+     "ἐρωτῴης",
+     "τὰ",
+     "ἀληθῆ",
+     "ἂν",
+     "λέγοι"
+    ]
+   },
+   {
+    "prompt": "If the citizens should flee, the country would be destroyed.",
+    "answer": "εἰ οἱ πολῖται φεύγοιεν, ἡ χώρα ἂν διαφθαρείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολῖται",
+     "φεύγοιεν",
+     "ἡ",
+     "χώρα",
+     "ἂν",
+     "διαφθαρείη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2290-classification-according-to-function-t4",
+  "sectionId": "sm-2290-classification-according-to-function",
+  "questions": [
+   {
+    "prompt": "If you were wise, you would not be saying these things.",
+    "answer": "εἰ σοφὸς ἦσθα, ταῦτα οὐκ ἂν ἔλεγες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοφὸς",
+     "ἦσθα",
+     "ταῦτα",
+     "οὐκ",
+     "ἂν",
+     "ἔλεγες"
+    ]
+   },
+   {
+    "prompt": "If the Thessalians were present, we would be safe.",
+    "answer": "εἰ οἱ Θετταλοὶ παρῆσαν, σῷοι ἂν ἦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "Θετταλοὶ",
+     "παρῆσαν",
+     "σῷοι",
+     "ἂν",
+     "ἦμεν"
+    ]
+   },
+   {
+    "prompt": "If the king loved justice, he would honor the good.",
+    "answer": "εἰ ὁ βασιλεὺς τὴν δικαιοσύνην ἐφίλει, τοὺς ἀγαθοὺς ἂν ἐτίμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "βασιλεὺς",
+     "τὴν",
+     "δικαιοσύνην",
+     "ἐφίλει",
+     "τοὺς",
+     "ἀγαθοὺς",
+     "ἂν",
+     "ἐτίμα"
+    ]
+   },
+   {
+    "prompt": "If we had ships, we would rule the sea.",
+    "answer": "εἰ ναῦς εἴχομεν, τῆς θαλάττης ἂν ἤρχομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ναῦς",
+     "εἴχομεν",
+     "τῆς",
+     "θαλάττης",
+     "ἂν",
+     "ἤρχομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2290-classification-according-to-function-t5",
+  "sectionId": "sm-2290-classification-according-to-function",
+  "questions": [
+   {
+    "prompt": "If the soldiers had fought bravely, they would have conquered.",
+    "answer": "εἰ οἱ στρατιῶται ἀνδρείως ἐμαχέσαντο, ἐνίκησαν ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "στρατιῶται",
+     "ἀνδρείως",
+     "ἐμαχέσαντο",
+     "ἐνίκησαν",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "If you had obeyed the general, you would not have died.",
+    "answer": "εἰ τῷ στρατηγῷ ἐπίθου, οὐκ ἂν ἀπέθανες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῷ",
+     "στρατηγῷ",
+     "ἐπίθου",
+     "οὐκ",
+     "ἂν",
+     "ἀπέθανες"
+    ]
+   },
+   {
+    "prompt": "If Cyrus had survived, he would have ruled the Persians.",
+    "answer": "εἰ ὁ Κῦρος ἐσώθη, τῶν Περσῶν ἂν ἦρξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Κῦρος",
+     "ἐσώθη",
+     "τῶν",
+     "Περσῶν",
+     "ἂν",
+     "ἦρξεν"
+    ]
+   },
+   {
+    "prompt": "If they had guarded the gates, the enemy would not have entered.",
+    "answer": "εἰ τὰς πύλας ἐφύλαξαν, οἱ πολέμιοι οὐκ ἂν εἰσῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰς",
+     "πύλας",
+     "ἐφύλαξαν",
+     "οἱ",
+     "πολέμιοι",
+     "οὐκ",
+     "ἂν",
+     "εἰσῆλθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2290-classification-according-to-function-t6",
+  "sectionId": "sm-2290-classification-according-to-function",
+  "questions": [
+   {
+    "prompt": "Whenever the master is present, the slaves work.",
+    "answer": "ὅταν ὁ δεσπότης παρῇ, οἱ δοῦλοι ἐργάζονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "δεσπότης",
+     "παρῇ",
+     "οἱ",
+     "δοῦλοι",
+     "ἐργάζονται"
+    ]
+   },
+   {
+    "prompt": "If ever anyone wrongs the laws, he is punished by the city.",
+    "answer": "ἐάν τις τοὺς νόμους ἀδικῇ, ὑπὸ τῆς πόλεως κολάζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "τοὺς",
+     "νόμους",
+     "ἀδικῇ",
+     "ὑπὸ",
+     "τῆς",
+     "πόλεως",
+     "κολάζεται"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy attacked, the citizens used to flee.",
+    "answer": "ὁπότε οἱ πολέμιοι προσβάλοιεν, οἱ πολῖται ἔφευγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "πολέμιοι",
+     "προσβάλοιεν",
+     "πολῖται",
+     "ἔφευγον"
+    ]
+   },
+   {
+    "prompt": "If ever anyone spoke the truth, Socrates used to praise him.",
+    "answer": "εἴ τις τὰ ἀληθῆ λέγοι, ὁ Σωκράτης αὐτὸν ἐπῄνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγοι",
+     "ὁ",
+     "Σωκράτης",
+     "αὐτὸν",
+     "ἐπῄνει"
+    ]
+   }
+  ]
+ }
+]
