@@ -1,0 +1,374 @@
+[
+ {
+  "id": "sm-2663-indirect-dependent-questions-t1",
+  "sectionId": "sm-2663-indirect-dependent-questions",
+  "questions": [
+   {
+    "prompt": "The general asked the messenger who had betrayed the city.",
+    "answer": "ὁ στρατηγὸς ἤρετο τὸν ἄγγελον ὅστις τὴν πόλιν προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἤρετο",
+     "τὸν",
+     "ἄγγελον",
+     "ὅστις",
+     "τὴν",
+     "πόλιν",
+     "προδοίη"
+    ]
+   },
+   {
+    "prompt": "No one knew where the enemy were marching.",
+    "answer": "οὐδεὶς ᾔδει ὅποι οἱ πολέμιοι στρατεύοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ᾔδει",
+     "ὅποι",
+     "οἱ",
+     "πολέμιοι",
+     "στρατεύοιεν"
+    ]
+   },
+   {
+    "prompt": "Tell me what you consider courage to be.",
+    "answer": "εἰπέ μοι τί νομίζεις τὴν ἀνδρείαν εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰπέ",
+     "μοι",
+     "τί",
+     "νομίζεις",
+     "τὴν",
+     "ἀνδρείαν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "They asked him how large the army of the barbarians was.",
+    "answer": "ἠρώτων αὐτὸν ὁπόσον εἴη τὸ τῶν βαρβάρων στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠρώτων",
+     "αὐτὸν",
+     "ὁπόσον",
+     "εἴη",
+     "τὸ",
+     "τῶν",
+     "βαρβάρων",
+     "στράτευμα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2663-indirect-dependent-questions-t2",
+  "sectionId": "sm-2663-indirect-dependent-questions",
+  "questions": [
+   {
+    "prompt": "They sent messengers to ask whether the islanders were pirates.",
+    "answer": "ἔπεμψαν ἀγγέλους ἐρωτήσοντας εἰ οἱ νησιῶται λῃσταὶ εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπεμψαν",
+     "ἀγγέλους",
+     "ἐρωτήσοντας",
+     "εἰ",
+     "οἱ",
+     "νησιῶται",
+     "λῃσταὶ",
+     "εἶεν"
+    ]
+   },
+   {
+    "prompt": "I do not know whether I shall persuade the judges.",
+    "answer": "οὐκ οἶδα εἰ τοὺς δικαστὰς πείσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "οἶδα",
+     "εἰ",
+     "τοὺς",
+     "δικαστὰς",
+     "πείσω"
+    ]
+   },
+   {
+    "prompt": "He asked the soldier whether he had been wounded in the battle.",
+    "answer": "ἤρετο τὸν στρατιώτην εἰ ἐν τῇ μάχῃ τρωθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤρετο",
+     "τὸν",
+     "στρατιώτην",
+     "εἰ",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "τρωθείη"
+    ]
+   },
+   {
+    "prompt": "Let us consider whether virtue is teachable.",
+    "answer": "σκεψώμεθα εἰ ἡ ἀρετὴ διδακτή ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκεψώμεθα",
+     "εἰ",
+     "ἡ",
+     "ἀρετὴ",
+     "διδακτή",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2663-indirect-dependent-questions-t3",
+  "sectionId": "sm-2663-indirect-dependent-questions",
+  "questions": [
+   {
+    "prompt": "Being in doubt whither he should turn, he fled to a certain hill.",
+    "answer": "ἀπορῶν ὅποι τράποιτο ἐπὶ λόφον τινὰ κατέφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπορῶν",
+     "ὅποι",
+     "τράποιτο",
+     "ἐπὶ",
+     "λόφον",
+     "τινὰ",
+     "κατέφυγεν"
+    ]
+   },
+   {
+    "prompt": "I do not know what I am to say to the assembly.",
+    "answer": "οὐκ οἶδα ὅ τι εἴπω πρὸς τὴν ἐκκλησίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "οἶδα",
+     "ὅ",
+     "τι",
+     "εἴπω",
+     "πρὸς",
+     "τὴν",
+     "ἐκκλησίαν"
+    ]
+   },
+   {
+    "prompt": "The young men did not know whom they should obey.",
+    "answer": "οἱ νεανίαι οὐκ ᾔδεσαν ὅτῳ πείθοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "οὐκ",
+     "ᾔδεσαν",
+     "ὅτῳ",
+     "πείθοιντο"
+    ]
+   },
+   {
+    "prompt": "The orator asked whether he was to call the witness.",
+    "answer": "ὁ ῥήτωρ ἤρετο εἰ καλέσειε τὸν μάρτυρα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "ἤρετο",
+     "εἰ",
+     "καλέσειε",
+     "τὸν",
+     "μάρτυρα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2663-indirect-dependent-questions-t4",
+  "sectionId": "sm-2663-indirect-dependent-questions",
+  "questions": [
+   {
+    "prompt": "He sends a messenger, telling who he was.",
+    "answer": "πέμπει ἄγγελον εἰπὼν ὃς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμπει",
+     "ἄγγελον",
+     "εἰπὼν",
+     "ὃς",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "Do you see how many of us there are?",
+    "answer": "ὁρᾷς ἡμᾶς ὅσοι ἐσμέν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρᾷς",
+     "ἡμᾶς",
+     "ὅσοι",
+     "ἐσμέν"
+    ]
+   },
+   {
+    "prompt": "The guide showed them where the road was.",
+    "answer": "ὁ ἡγεμὼν ἔδειξεν αὐτοῖς ᾗ ἡ ὁδὸς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἡγεμὼν",
+     "ἔδειξεν",
+     "αὐτοῖς",
+     "ᾗ",
+     "ἡ",
+     "ὁδὸς",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "May you never come to know who you are.",
+    "answer": "μήποτε γνοίης ὃς εἶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήποτε",
+     "γνοίης",
+     "ὃς",
+     "εἶ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2663-indirect-dependent-questions-t5",
+  "sectionId": "sm-2663-indirect-dependent-questions",
+  "questions": [
+   {
+    "prompt": "I am considering whether it may not be best to keep silent.",
+    "answer": "φροντίζω μὴ κράτιστον ᾖ σιγᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φροντίζω",
+     "μὴ",
+     "κράτιστον",
+     "ᾖ",
+     "σιγᾶν"
+    ]
+   },
+   {
+    "prompt": "He kept inquiring of the prisoners whence they had come.",
+    "answer": "ἐπυνθάνετο τῶν αἰχμαλώτων ὁπόθεν ἥκοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπυνθάνετο",
+     "τῶν",
+     "αἰχμαλώτων",
+     "ὁπόθεν",
+     "ἥκοιεν"
+    ]
+   },
+   {
+    "prompt": "No one knows how the ambassadors persuaded the king.",
+    "answer": "οὐδεὶς οἶδεν ὅπως οἱ πρέσβεις τὸν βασιλέα ἔπεισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "οἶδεν",
+     "ὅπως",
+     "οἱ",
+     "πρέσβεις",
+     "τὸν",
+     "βασιλέα",
+     "ἔπεισαν"
+    ]
+   },
+   {
+    "prompt": "The women asked why the men had abandoned the walls.",
+    "answer": "αἱ γυναῖκες ἤροντο διὰ τί οἱ ἄνδρες τὰ τείχη λίποιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "ἤροντο",
+     "διὰ",
+     "τί",
+     "οἱ",
+     "ἄνδρες",
+     "τὰ",
+     "τείχη",
+     "λίποιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2663-indirect-dependent-questions-t6",
+  "sectionId": "sm-2663-indirect-dependent-questions",
+  "questions": [
+   {
+    "prompt": "When the ships had sailed away, we did not know where they were.",
+    "answer": "τῶν νεῶν ἀποπλευσασῶν οὐκ ᾔδεμεν ὅπου εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "νεῶν",
+     "ἀποπλευσασῶν",
+     "οὐκ",
+     "ᾔδεμεν",
+     "ὅπου",
+     "εἶεν"
+    ]
+   },
+   {
+    "prompt": "The child asked his father when the festival would take place.",
+    "answer": "ὁ παῖς τὸν πατέρα ἤρετο ὁπότε ἡ ἑορτὴ ἔσοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "τὸν",
+     "πατέρα",
+     "ἤρετο",
+     "ὁπότε",
+     "ἡ",
+     "ἑορτὴ",
+     "ἔσοιτο"
+    ]
+   },
+   {
+    "prompt": "Socrates used to ask the young men what justice is.",
+    "answer": "ὁ Σωκράτης ἠρώτα τοὺς νεανίας ὅ τι εἴη ἡ δικαιοσύνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "ἠρώτα",
+     "τοὺς",
+     "νεανίας",
+     "ὅ",
+     "τι",
+     "εἴη",
+     "ἡ",
+     "δικαιοσύνη"
+    ]
+   },
+   {
+    "prompt": "Having heard these things, they deliberated how they might save the city.",
+    "answer": "ταῦτα ἀκούσαντες ἐβουλεύοντο ὅπως τὴν πόλιν σώσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἀκούσαντες",
+     "ἐβουλεύοντο",
+     "ὅπως",
+     "τὴν",
+     "πόλιν",
+     "σώσειαν"
+    ]
+   }
+  ]
+ }
+]

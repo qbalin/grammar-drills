@@ -1,0 +1,404 @@
+[
+ {
+  "id": "sm-2617-complex-sentences-in-indirect-discourse-t1",
+  "sectionId": "sm-2617-complex-sentences-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he would help us, if we handed over the city.",
+    "answer": "εἶπεν ὅτι βοηθήσοι ἡμῖν, εἰ τὴν πόλιν παραδοίημεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "βοηθήσοι",
+     "ἡμῖν",
+     "εἰ",
+     "τὴν",
+     "πόλιν",
+     "παραδοίημεν"
+    ]
+   },
+   {
+    "prompt": "The messenger announced that the enemy would retreat, if we sent hostages.",
+    "answer": "ὁ ἄγγελος ἤγγειλεν ὅτι οἱ πολέμιοι ἀναχωρήσοιεν, εἰ ὁμήρους πέμποιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "ἀναχωρήσοιεν",
+     "εἰ",
+     "ὁμήρους",
+     "πέμποιμεν"
+    ]
+   },
+   {
+    "prompt": "He promised to give money, if anyone captured the thief.",
+    "answer": "ὑπέσχετο χρήματα δώσειν, εἴ τις τὸν κλέπτην λάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέσχετο",
+     "χρήματα",
+     "δώσειν",
+     "εἴ",
+     "τις",
+     "τὸν",
+     "κλέπτην",
+     "λάβοι"
+    ]
+   },
+   {
+    "prompt": "They said that they knew that the general would win, if the soldiers obeyed.",
+    "answer": "ἔφασαν εἰδέναι ὅτι ὁ στρατηγὸς νικήσοι, εἰ οἱ στρατιῶται πείθοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφασαν",
+     "εἰδέναι",
+     "ὅτι",
+     "ὁ",
+     "στρατηγὸς",
+     "νικήσοι",
+     "εἰ",
+     "οἱ",
+     "στρατιῶται",
+     "πείθοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2617-complex-sentences-in-indirect-discourse-t2",
+  "sectionId": "sm-2617-complex-sentences-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he would set out, whenever the general gave the signal.",
+    "answer": "εἶπεν ὅτι ἐξορμήσοι, ὁπότε ὁ στρατηγὸς σημήνειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "ἐξορμήσοι",
+     "ὁπότε",
+     "ὁ",
+     "στρατηγὸς",
+     "σημήνειεν"
+    ]
+   },
+   {
+    "prompt": "They announced that they would remain until the ships arrived.",
+    "answer": "ἤγγειλαν ὅτι μενοῖεν ἕως αἱ νῆες ἀφίκοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤγγειλαν",
+     "ὅτι",
+     "μενοῖεν",
+     "ἕως",
+     "αἱ",
+     "νῆες",
+     "ἀφίκοιντο"
+    ]
+   },
+   {
+    "prompt": "The old man said that he would speak, after the assembly had gathered.",
+    "answer": "ὁ γέρων ἔφη λέξειν, ἐπειδὴ ἡ ἐκκλησία συλλεγείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἔφη",
+     "λέξειν",
+     "ἐπειδὴ",
+     "ἡ",
+     "ἐκκλησία",
+     "συλλεγείη"
+    ]
+   },
+   {
+    "prompt": "He said that the citizens would flee, when the enemy attacked.",
+    "answer": "εἶπεν ὅτι οἱ πολῖται φεύξοιντο, ὁπότε οἱ πολέμιοι ἐπίθοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "οἱ",
+     "πολῖται",
+     "φεύξοιντο",
+     "ὁπότε",
+     "πολέμιοι",
+     "ἐπίθοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2617-complex-sentences-in-indirect-discourse-t3",
+  "sectionId": "sm-2617-complex-sentences-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he would honor whoever fought bravely.",
+    "answer": "εἶπεν ὅτι τιμήσοι ὅστις ἀνδρείως μάχοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "τιμήσοι",
+     "ὅστις",
+     "ἀνδρείως",
+     "μάχοιτο"
+    ]
+   },
+   {
+    "prompt": "They said that they had come bringing guides who would lead them home.",
+    "answer": "ἔφασαν ἥκειν ἡγεμόνας ἄγοντες οἳ σφᾶς οἴκαδε ἄξοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφασαν",
+     "ἥκειν",
+     "ἡγεμόνας",
+     "ἄγοντες",
+     "οἳ",
+     "σφᾶς",
+     "οἴκαδε",
+     "ἄξοιεν"
+    ]
+   },
+   {
+    "prompt": "The herald proclaimed that whoever revolted would be punished.",
+    "answer": "ὁ κῆρυξ προεῖπεν ὅτι ὃς ἀφίσταιτο ζημιωθήσοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "προεῖπεν",
+     "ὅτι",
+     "ὃς",
+     "ἀφίσταιτο",
+     "ζημιωθήσοιτο"
+    ]
+   },
+   {
+    "prompt": "He said that he was seeking a man who could save the city.",
+    "answer": "εἶπεν ὅτι ἄνδρα ζητοίη ὃς τὴν πόλιν σῴζειν δύναιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "ἄνδρα",
+     "ζητοίη",
+     "ὃς",
+     "τὴν",
+     "πόλιν",
+     "σῴζειν",
+     "δύναιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2617-complex-sentences-in-indirect-discourse-t4",
+  "sectionId": "sm-2617-complex-sentences-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he blamed them for what they had done before.",
+    "answer": "εἶπεν ὅτι μέμφοιτο αὐτοῖς ἃ πρόσθεν ἐποίησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "μέμφοιτο",
+     "αὐτοῖς",
+     "ἃ",
+     "πρόσθεν",
+     "ἐποίησαν"
+    ]
+   },
+   {
+    "prompt": "He said that he would enter into negotiations, if he received hostages.",
+    "answer": "εἶπεν ὅτι ἔλθοι ἂν εἰς λόγους, εἰ ὁμήρους λάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "ἔλθοι",
+     "ἂν",
+     "εἰς",
+     "λόγους",
+     "εἰ",
+     "ὁμήρους",
+     "λάβοι"
+    ]
+   },
+   {
+    "prompt": "They expected that the allies whom they had summoned would meet them.",
+    "answer": "ἤλπιζον τοὺς συμμάχους οὓς μετεπέμψαντο ἀπαντήσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤλπιζον",
+     "τοὺς",
+     "συμμάχους",
+     "οὓς",
+     "μετεπέμψαντο",
+     "ἀπαντήσεσθαι"
+    ]
+   },
+   {
+    "prompt": "He said that he did not praise the general, if he had done these things.",
+    "answer": "εἶπεν ὅτι τὸν στρατηγὸν οὐκ ἐπαινοίη, εἰ ταῦτα πεποιηκὼς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "τὸν",
+     "στρατηγὸν",
+     "οὐκ",
+     "ἐπαινοίη",
+     "εἰ",
+     "ταῦτα",
+     "πεποιηκὼς",
+     "εἴη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2617-complex-sentences-in-indirect-discourse-t5",
+  "sectionId": "sm-2617-complex-sentences-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he would smart for it, unless he kept quiet.",
+    "answer": "εἶπεν ὅτι οἰμώξοιτο, εἰ μὴ σιωπήσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "οἰμώξοιτο",
+     "εἰ",
+     "μὴ",
+     "σιωπήσειεν"
+    ]
+   },
+   {
+    "prompt": "They refused to go, unless someone gave them provisions.",
+    "answer": "οὐκ ἔφασαν ἰέναι, εἰ μή τις σφίσι τὰ ἐπιτήδεια διδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔφασαν",
+     "ἰέναι",
+     "εἰ",
+     "μή",
+     "τις",
+     "σφίσι",
+     "τὰ",
+     "ἐπιτήδεια",
+     "διδοίη"
+    ]
+   },
+   {
+    "prompt": "He said that they intended to attack him, whenever he led the army away.",
+    "answer": "εἶπεν ὅτι ἐπιτίθεσθαι μέλλοιεν αὐτῷ, ὁπότε ἀπάγοι τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "ἐπιτίθεσθαι",
+     "μέλλοιεν",
+     "αὐτῷ",
+     "ὁπότε",
+     "ἀπάγοι",
+     "τὸ",
+     "στράτευμα"
+    ]
+   },
+   {
+    "prompt": "He said that he was ready to lead them, to where they would obtain many good things.",
+    "answer": "ἔλεγεν ὅτι ἕτοιμος εἴη ἡγεῖσθαι αὐτοῖς, ἔνθα πολλὰ καὶ ἀγαθὰ λήψοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "ἕτοιμος",
+     "εἴη",
+     "ἡγεῖσθαι",
+     "αὐτοῖς",
+     "ἔνθα",
+     "πολλὰ",
+     "καὶ",
+     "ἀγαθὰ",
+     "λήψοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2617-complex-sentences-in-indirect-discourse-t6",
+  "sectionId": "sm-2617-complex-sentences-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He swore that he would free the slaves, if they served him faithfully.",
+    "answer": "ὤμοσεν ὅτι τοὺς δούλους ἐλευθερώσοι, εἰ πιστῶς δουλεύοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤμοσεν",
+     "ὅτι",
+     "τοὺς",
+     "δούλους",
+     "ἐλευθερώσοι",
+     "εἰ",
+     "πιστῶς",
+     "δουλεύοιεν"
+    ]
+   },
+   {
+    "prompt": "The swineherd said that he would guard the pigs until the master returned.",
+    "answer": "ὁ συβώτης ἔφη τοὺς χοίρους φυλάξειν ἕως ὁ δεσπότης ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "συβώτης",
+     "ἔφη",
+     "τοὺς",
+     "χοίρους",
+     "φυλάξειν",
+     "ἕως",
+     "δεσπότης",
+     "ἐπανέλθοι"
+    ]
+   },
+   {
+    "prompt": "He said that he would punish whoever stole the sacred vessels.",
+    "answer": "εἶπεν ὅτι κολάσοι ὅστις τὰ ἱερὰ σκεύη κλέψειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "κολάσοι",
+     "ὅστις",
+     "τὰ",
+     "ἱερὰ",
+     "σκεύη",
+     "κλέψειεν"
+    ]
+   },
+   {
+    "prompt": "They said that they would spend the money, if the city became prosperous.",
+    "answer": "ἔφασαν τὰ χρήματα δαπανήσειν, εἰ ἡ πόλις εὔπορος γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφασαν",
+     "τὰ",
+     "χρήματα",
+     "δαπανήσειν",
+     "εἰ",
+     "ἡ",
+     "πόλις",
+     "εὔπορος",
+     "γένοιτο"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,398 @@
+[
+ {
+  "id": "sm-2589-indirect-discourse-t1",
+  "sectionId": "sm-2589-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The herald announced that the enemy had abandoned the camp during the night.",
+    "answer": "ὁ κῆρυξ ἤγγειλεν ὅτι οἱ πολέμιοι νυκτὸς τὸ στρατόπεδον καταλίποιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "νυκτός",
+     "τό",
+     "στρατόπεδον",
+     "καταλίποιεν"
+    ]
+   },
+   {
+    "prompt": "The messengers said that they themselves were ready to help the allies.",
+    "answer": "οἱ ἄγγελοι ἔλεγον ὅτι αὐτοὶ ἕτοιμοι εἶεν τοῖς συμμάχοις βοηθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "ἔλεγον",
+     "ὅτι",
+     "αὐτοί",
+     "ἕτοιμοι",
+     "εἶεν",
+     "τοῖς",
+     "συμμάχοις",
+     "βοηθεῖν"
+    ]
+   },
+   {
+    "prompt": "Socrates used to say that he himself knew nothing noble.",
+    "answer": "ὁ Σωκράτης ἔλεγεν ὡς αὐτὸς οὐδὲν καλὸν εἰδείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "ἔλεγεν",
+     "ὡς",
+     "αὐτός",
+     "οὐδέν",
+     "καλόν",
+     "εἰδείη"
+    ]
+   },
+   {
+    "prompt": "The ambassadors replied that the king would send gifts to the city.",
+    "answer": "οἱ πρέσβεις ἀπεκρίναντο ὅτι ὁ βασιλεὺς δῶρα τῇ πόλει πέμψοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἀπεκρίναντο",
+     "ὅτι",
+     "ὁ",
+     "βασιλεύς",
+     "δῶρα",
+     "τῇ",
+     "πόλει",
+     "πέμψοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2589-indirect-discourse-t2",
+  "sectionId": "sm-2589-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The general thought that the soldiers had fought bravely.",
+    "answer": "ὁ στρατηγὸς ἐνόμιζε τοὺς στρατιώτας ἀνδρείως μαχέσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἐνόμιζε",
+     "τούς",
+     "στρατιώτας",
+     "ἀνδρείως",
+     "μαχέσασθαι"
+    ]
+   },
+   {
+    "prompt": "I believe the citizens will honor those who died for their country.",
+    "answer": "νομίζω τοὺς πολίτας τιμήσειν τοὺς ὑπὲρ τῆς πατρίδος ἀποθανόντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "τούς",
+     "πολίτας",
+     "τιμήσειν",
+     "ὑπέρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθανόντας"
+    ]
+   },
+   {
+    "prompt": "The prisoners believed that they would soon be released by the king.",
+    "answer": "οἱ αἰχμάλωτοι ᾤοντο ταχέως ὑπὸ τοῦ βασιλέως λυθήσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ᾤοντο",
+     "ταχέως",
+     "ὑπό",
+     "τοῦ",
+     "βασιλέως",
+     "λυθήσεσθαι"
+    ]
+   },
+   {
+    "prompt": "We supposed that the enemy had already crossed the river.",
+    "answer": "ὑπελαμβάνομεν τοὺς πολεμίους ἤδη τὸν ποταμὸν διαβεβηκέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπελαμβάνομεν",
+     "τούς",
+     "πολεμίους",
+     "ἤδη",
+     "τόν",
+     "ποταμόν",
+     "διαβεβηκέναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2589-indirect-discourse-t3",
+  "sectionId": "sm-2589-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The old man knew that his son was still alive.",
+    "answer": "ὁ γέρων ᾔδει τὸν υἱὸν ἔτι ζῶντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ᾔδει",
+     "τόν",
+     "υἱόν",
+     "ἔτι",
+     "ζῶντα"
+    ]
+   },
+   {
+    "prompt": "The sailors perceived that the storm was approaching quickly.",
+    "answer": "οἱ ναῦται ᾔσθοντο τὸν χειμῶνα ταχέως προσιόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "ᾔσθοντο",
+     "τόν",
+     "χειμῶνα",
+     "ταχέως",
+     "προσιόντα"
+    ]
+   },
+   {
+    "prompt": "We saw that the general had been wounded in the battle.",
+    "answer": "εἴδομεν τὸν στρατηγὸν ἐν τῇ μάχῃ τετρωμένον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴδομεν",
+     "τόν",
+     "στρατηγόν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "τετρωμένον"
+    ]
+   },
+   {
+    "prompt": "The judges learned that the witness had spoken falsely.",
+    "answer": "οἱ δικασταὶ ἔγνωσαν τὸν μάρτυρα ψευδῆ εἰρηκότα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "ἔγνωσαν",
+     "τόν",
+     "μάρτυρα",
+     "ψευδῆ",
+     "εἰρηκότα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2589-indirect-discourse-t4",
+  "sectionId": "sm-2589-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "No one knew where the enemy had pitched their camp.",
+    "answer": "οὐδεὶς ᾔδει ὅπου οἱ πολέμιοι στρατοπεδεύσαιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ᾔδει",
+     "ὅπου",
+     "οἱ",
+     "πολέμιοι",
+     "στρατοπεδεύσαιντο"
+    ]
+   },
+   {
+    "prompt": "The general asked the scouts how large the army of the barbarians was.",
+    "answer": "ὁ στρατηγὸς ἤρετο τοὺς σκοποὺς ὁπόσον εἴη τὸ τῶν βαρβάρων στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἤρετο",
+     "τούς",
+     "σκοπούς",
+     "ὁπόσον",
+     "εἴη",
+     "τό",
+     "τῶν",
+     "βαρβάρων",
+     "στράτευμα"
+    ]
+   },
+   {
+    "prompt": "I wish to learn who betrayed the city to the enemy.",
+    "answer": "βούλομαι μαθεῖν ὅστις τὴν πόλιν τοῖς πολεμίοις προύδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βούλομαι",
+     "μαθεῖν",
+     "ὅστις",
+     "τήν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "προύδωκεν"
+    ]
+   },
+   {
+    "prompt": "The citizens kept asking why the generals had abandoned the ships.",
+    "answer": "οἱ πολῖται ἠρώτων διὰ τί οἱ στρατηγοὶ τὰς ναῦς καταλίποιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἠρώτων",
+     "διά",
+     "τί",
+     "στρατηγοί",
+     "τάς",
+     "ναῦς",
+     "καταλίποιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2589-indirect-discourse-t5",
+  "sectionId": "sm-2589-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The young man promised that he would never betray his friends.",
+    "answer": "ὁ νεανίας ὑπέσχετο μηδέποτε τοὺς φίλους προδώσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "ὑπέσχετο",
+     "μηδέποτε",
+     "τούς",
+     "φίλους",
+     "προδώσειν"
+    ]
+   },
+   {
+    "prompt": "The soldiers hoped that they would capture the city before winter.",
+    "answer": "οἱ στρατιῶται ἤλπιζον τὴν πόλιν πρὸ τοῦ χειμῶνος αἱρήσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἤλπιζον",
+     "τήν",
+     "πόλιν",
+     "πρό",
+     "τοῦ",
+     "χειμῶνος",
+     "αἱρήσειν"
+    ]
+   },
+   {
+    "prompt": "He swore that he had not touched the sacred money.",
+    "answer": "ὤμοσε μὴ ἅψασθαι τῶν ἱερῶν χρημάτων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤμοσε",
+     "μή",
+     "ἅψασθαι",
+     "τῶν",
+     "ἱερῶν",
+     "χρημάτων"
+    ]
+   },
+   {
+    "prompt": "The king declared that he would free all the captives.",
+    "answer": "ὁ βασιλεὺς ἔφη πάντας τοὺς αἰχμαλώτους ἐλευθερώσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεύς",
+     "ἔφη",
+     "πάντας",
+     "τούς",
+     "αἰχμαλώτους",
+     "ἐλευθερώσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2589-indirect-discourse-t6",
+  "sectionId": "sm-2589-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Xenophon said that the soldiers were suffering terribly from hunger.",
+    "answer": "ὁ Ξενοφῶν ἔφη τοὺς στρατιώτας δεινῶς ὑπὸ τοῦ λιμοῦ πιέζεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ξενοφῶν",
+     "ἔφη",
+     "τούς",
+     "στρατιώτας",
+     "δεινῶς",
+     "ὑπό",
+     "τοῦ",
+     "λιμοῦ",
+     "πιέζεσθαι"
+    ]
+   },
+   {
+    "prompt": "The woman replied that she had seen the stranger near the gates.",
+    "answer": "ἡ γυνὴ ἀπεκρίνατο ὅτι τὸν ξένον παρὰ ταῖς πύλαις ἴδοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "τόν",
+     "ξένον",
+     "παρά",
+     "ταῖς",
+     "πύλαις",
+     "ἴδοι"
+    ]
+   },
+   {
+    "prompt": "Everyone knew that the tyrant feared the people.",
+    "answer": "πάντες ἠπίσταντο τὸν τύραννον τὸν δῆμον φοβούμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ἠπίσταντο",
+     "τόν",
+     "τύραννον",
+     "δῆμον",
+     "φοβούμενον"
+    ]
+   },
+   {
+    "prompt": "The philosopher taught that the soul is immortal.",
+    "answer": "ὁ φιλόσοφος ἐδίδασκε τὴν ψυχὴν ἀθάνατον εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "ἐδίδασκε",
+     "τήν",
+     "ψυχήν",
+     "ἀθάνατον",
+     "εἶναι"
+    ]
+   }
+  ]
+ }
+]
