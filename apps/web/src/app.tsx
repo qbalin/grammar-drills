@@ -11,6 +11,7 @@ import {
   type VocabWord,
 } from "@lang-tutor/core";
 import { dictionaryReady, loadDictionary } from "./content-loader.js";
+import { useConfetti } from "./confetti/Confetti.js";
 import { profile } from "./pack.js";
 import type { SyncState, SyncConfig } from "./storage/sync.js";
 import { SyncingStorage } from "./storage/sync.js";
@@ -298,6 +299,13 @@ export function App({ content, session, storage }: Props) {
   }, [session, storage]);
 
   /**
+   * The reward, and the count that decides when it comes. `answered` is called
+   * once per grade that actually lands — not once per tap, so a grade that
+   * returns early because there is no question does not spend the count.
+   */
+  const { canvas: confettiCanvas, answered } = useConfetti();
+
+  /**
    * A probe answered. Failing settles that one family and moves to the next
    * rather than ending the test — knowing the declensions and not the verbs is
    * a thing the placement has to be able to hear.
@@ -305,6 +313,7 @@ export function App({ content, session, storage }: Props) {
   const placementGrade = (rating: Rating) => {
     if (!sectionId) return;
     const next = session.answerPlacement(rating >= 3);
+    answered();
     save();
     if (next) {
       loadPlacement(next.probe);
@@ -380,6 +389,9 @@ export function App({ content, session, storage }: Props) {
     // The test's id names the round, so its four questions cost the topic one
     // review rather than four — graded by the worst of them.
     session.gradeTopic(sectionId, rating, new Date(), test?.id);
+    // Every grade counts the same. The student pressing "again" is the one
+    // working hardest, and this is not a reward for being right.
+    answered();
     save();
     if (test && qIndex + 1 < test.questions.length) {
       setQIndex(qIndex + 1);
@@ -397,6 +409,7 @@ export function App({ content, session, storage }: Props) {
     navigator.vibrate?.(8);
     setUndo(takeUndo(phase));
     session.gradeVocab(cardId, rating);
+    answered();
     save();
     advance();
   };
@@ -1071,6 +1084,8 @@ export function App({ content, session, storage }: Props) {
           {attempts.length === 0 && null}
         </Sheet>
       )}
+      {/* Last, so it lies over every sheet, and inert: it never takes a tap. */}
+      {confettiCanvas}
     </div>
   );
 }
