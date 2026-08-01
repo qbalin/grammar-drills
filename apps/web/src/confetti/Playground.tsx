@@ -1,11 +1,14 @@
 /**
  * The confetti playground — a way to see a burst without answering fifteen
- * questions to earn one, and a way to see a shape standing still.
+ * questions to earn one, a way to see a shape standing still, and a way to
+ * decide which shapes go together.
  *
- * Two halves, because a shape is judged twice. The gallery answers "is this a
- * helmet?", which you can only tell at rest and at the size it is actually
- * thrown. The sliders answer "does a burst of them feel right?", which you can
- * only tell in flight.
+ * Three halves, which is one more than a bench should have, because a shape is
+ * judged three ways. The gallery answers "is this a helmet?", which you can
+ * only tell at rest and at the size it is actually thrown. The sliders answer
+ * "does a burst of them feel right?", which you can only tell in flight. The
+ * composer answers "do these two belong together?", which was previously
+ * answered by editing the pack and reloading.
  *
  * It is not for students. It appears only when the repository owner in
  * Settings is this repo's author, which is a deliberately weak lock: the point
@@ -13,11 +16,23 @@
  * keep a secret. Anyone who types the name gets the toy, and nothing behind it
  * is worth guarding.
  */
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import pack from "@pack/confetti";
 import legacy from "@pack/confetti-legacy";
-import { DEFAULTS, type BurstOptions } from "./Confetti.js";
+import type { BurstOptions } from "./Confetti.js";
 import { layersOf, type ConfettiPack } from "./shapes.js";
+import {
+  DEFAULTS,
+  asDefaults,
+  asThrows,
+  browserStore,
+  loadGroups,
+  loadKnobs,
+  saveGroups,
+  saveKnobs,
+  type Group,
+  type Knobs,
+} from "./bench.js";
 
 /**
  * Whose build this is. The playground is a workbench for whoever maintains the
@@ -25,22 +40,19 @@ import { layersOf, type ConfettiPack } from "./shapes.js";
  */
 export const AUTHOR = "qbalin";
 
-/** Where a tuning session is kept, so a reload does not lose it. */
-const BENCH_KEY = "confetti:bench";
-
 /** Is the owner configured in Settings this repo's author? */
 export function isAuthor(owner: string | undefined | null): boolean {
   return (owner ?? "").trim().toLowerCase() === AUTHOR;
 }
 
 /** Named for the shapes it throws, so the buttons read as what they do. */
-function groupLabel(group: string[]): string {
-  return group.join(" + ");
+function groupLabel(shapes: string[]): string {
+  return shapes.join(" + ");
 }
 
 /** Every knob, with the range that is worth sweeping and how to read it. */
 type Knob = {
-  key: keyof typeof DEFAULTS;
+  key: keyof Knobs;
   label: string;
   min: number;
   max: number;
@@ -52,13 +64,13 @@ type Knob = {
 };
 
 const KNOBS: Knob[] = [
-  { key: "pieces", label: "Pieces", min: 6, max: 200, step: 1, format: (v) => `${v}` },
-  { key: "size", label: "Piece size", min: 6, max: 40, step: 1, format: (v) => `${v}px` },
+  { key: "pieces", label: "Pieces", min: 6, max: 400, step: 1, format: (v) => `${v}` },
+  { key: "size", label: "Piece size", min: 6, max: 64, step: 1, format: (v) => `${v}px` },
   {
     key: "sizeSpread",
     label: "Size spread",
     min: 0,
-    max: 0.8,
+    max: 0.9,
     step: 0.05,
     format: (v) => `±${Math.round(v * 100)}%`,
     hint: "How much bigger and smaller than that a piece may be.",
@@ -67,7 +79,7 @@ const KNOBS: Knob[] = [
     key: "originY",
     label: "Launch height",
     min: 0.05,
-    max: 0.95,
+    max: 1.1,
     step: 0.01,
     format: (v) => `${Math.round(v * 100)}% down`,
     hint: "0% is the top of the screen, 100% the bottom.",
@@ -76,21 +88,30 @@ const KNOBS: Knob[] = [
     key: "spreadX",
     label: "Launch width",
     min: 0,
-    max: 1.4,
+    max: 2,
     step: 0.05,
     format: (v) => `${Math.round(v * 100)}% of the screen`,
   },
-  { key: "speed", label: "Launch speed", min: 1, max: 16, step: 0.5, format: (v) => `${v}` },
-  { key: "gravity", label: "Gravity", min: 0.05, max: 1.2, step: 0.01, format: (v) => `${v}` },
-  { key: "spin", label: "Spin", min: 0, max: 0.6, step: 0.01, format: (v) => `±${v}` },
+  { key: "speed", label: "Launch speed", min: 1, max: 30, step: 0.5, format: (v) => `${v}` },
+  { key: "gravity", label: "Gravity", min: 0.05, max: 1.6, step: 0.01, format: (v) => `${v}` },
+  { key: "spin", label: "Spin", min: 0, max: 0.8, step: 0.01, format: (v) => `±${v}` },
   {
     key: "fadeAt",
     label: "Fades below",
     min: 0.1,
-    max: 1.5,
+    max: 2,
     step: 0.02,
     format: (v) => `${Math.round(v * 100)}% down`,
     hint: "Past 100% a piece leaves the screen before it starts to fade.",
+  },
+  {
+    key: "outline",
+    label: "Outline weight",
+    min: 0.1,
+    max: 2,
+    step: 0.05,
+    format: (v) => `${v} of 24`,
+    hint: "In the box the shapes are drawn in, so the line keeps its weight as the size changes.",
   },
 ];
 
@@ -110,11 +131,17 @@ function ShapeCard({
   name,
   source,
   thrown,
+  outline,
+  picked,
+  onPick,
   onThrow,
 }: {
   name: string;
   source: ConfettiPack;
   thrown: number;
+  outline: number;
+  picked: boolean;
+  onPick: () => void;
   onThrow: () => void;
 }) {
   const layers = layersOf(source.shapes[name], source);
@@ -124,18 +151,32 @@ function ShapeCard({
       {layers.map((layer, i) => (
         <path key={i} d={layer.d} fill={layer.fill ?? tint} fillRule="evenodd" />
       ))}
+      {/* The same second pass the canvas makes, for the same reason. */}
+      {outline > 0 &&
+        layers.map((layer, i) => (
+          <path
+            key={`o${i}`}
+            d={layer.d}
+            fill="none"
+            stroke="#000"
+            strokeWidth={outline}
+            strokeLinejoin="round"
+            strokeLinecap="round"
+          />
+        ))}
     </svg>
   );
   return (
-    <div className="shape-card">
-      <div className="shape-card__sizes">
+    <div className={`shape-card ${picked ? "shape-card--picked" : ""}`}>
+      <div className="shape-card__sizes" onClick={onThrow} title={`Throw ${name}`}>
         {svg(64)}
         {svg(24)}
         {svg(thrown)}
       </div>
-      <button className="btn btn--quiet" onClick={onThrow} title={`Throw ${name}`}>
-        {name}
-      </button>
+      <label className="shape-card__pick">
+        <input type="checkbox" checked={picked} onChange={onPick} />
+        <span>{name}</span>
+      </label>
     </div>
   );
 }
@@ -145,18 +186,19 @@ export function ConfettiPlayground({
 }: {
   onFire: (options?: BurstOptions) => void;
 }) {
-  const [knobs, setKnobs] = useState(() => loadBench());
+  const store = useMemo(() => browserStore(), []);
+  const [knobs, setKnobs] = useState(() => loadKnobs(store));
   const [set, setSet] = useState<SetName>("new");
+  const [picked, setPicked] = useState<string[]>([]);
+
+  const live = pack as ConfettiPack;
+  const known = useMemo(() => new Set(Object.keys(live.shapes)), [live]);
+  const [groups, setGroups] = useState<Group[]>(() => loadGroups(store, live.throws, known));
 
   // Kept so a tuning session survives a reload — you are usually reloading
   // because you just changed a path.
-  useEffect(() => {
-    try {
-      localStorage.setItem(BENCH_KEY, JSON.stringify(knobs));
-    } catch {
-      // Storage blocked. The sliders still work for this session.
-    }
-  }, [knobs]);
+  useEffect(() => saveKnobs(store, knobs), [store, knobs]);
+  useEffect(() => saveGroups(store, groups), [store, groups]);
 
   // Stated rather than worked around: with reduced motion on, nothing fires,
   // and a playground whose buttons silently did nothing would read as a bug.
@@ -167,6 +209,10 @@ export function ConfettiPlayground({
   const source = SETS[set].pack;
   const options = (group?: string[]): BurstOptions => ({ ...knobs, group, source });
   const names = Object.keys(source.shapes);
+  const on = groups.filter((g) => g.on).length;
+
+  const toggle = (name: string) =>
+    setPicked((p) => (p.includes(name) ? p.filter((n) => n !== name) : [...p, name]));
 
   return (
     <>
@@ -174,7 +220,7 @@ export function ConfettiPlayground({
       <p className="field__hint" style={{ marginTop: 0 }}>
         {muted
           ? "This device asks for reduced motion, so nothing will fire — by design, and there is no override. The gallery below still works."
-          : "Throw a burst now. A burst normally picks one throw group at random every ten to twenty answers."}
+          : "Tap a shape to throw it. A burst normally picks one live group at random every ten to twenty answers."}
       </p>
 
       <div className="actions">
@@ -202,40 +248,118 @@ export function ConfettiPlayground({
             name={name}
             source={source}
             thrown={knobs.size}
+            outline={knobs.outline}
+            picked={picked.includes(name)}
+            onPick={() => toggle(name)}
             onThrow={() => onFire(options([name]))}
           />
         ))}
       </div>
 
-      <div className="actions">
-        <button className="btn" onClick={() => onFire(options())}>
-          Random throw
-        </button>
-        {source.throws.map((group) => (
-          <button
-            key={group.join("-")}
-            className="btn"
-            onClick={() => onFire(options(group))}
-          >
-            {groupLabel(group)}
-          </button>
-        ))}
-      </div>
+      {/* Composing groups only makes sense against the set that ships. */}
+      {set === "new" && (
+        <>
+          <div className="actions">
+            <button className="btn" disabled={!picked.length} onClick={() => onFire(options(picked))}>
+              Throw the {picked.length} picked
+            </button>
+            <button
+              className="btn"
+              disabled={!picked.length}
+              onClick={() => {
+                setGroups((g) => [{ shapes: picked, on: true }, ...g]);
+                setPicked([]);
+              }}
+            >
+              Make a group
+            </button>
+            <button className="btn btn--quiet" disabled={!picked.length} onClick={() => setPicked([])}>
+              Clear
+            </button>
+          </div>
+
+          <div className="section-title">
+            Groups — {on} of {groups.length} live
+          </div>
+          <p className="field__hint" style={{ marginTop: 0 }}>
+            A real burst draws from the live ones, here and in the session behind
+            this sheet. Copy them out when you are happy, or they stay in this
+            browser.
+          </p>
+          <div className="group-list">
+            {groups.map((group, i) => (
+              <div className="group-row" key={`${group.shapes.join("-")}-${i}`}>
+                <label className="group-row__on">
+                  <input
+                    type="checkbox"
+                    checked={group.on}
+                    onChange={() =>
+                      setGroups((g) => g.map((x, j) => (i === j ? { ...x, on: !x.on } : x)))
+                    }
+                  />
+                  <span>{groupLabel(group.shapes)}</span>
+                </label>
+                <button
+                  className="btn btn--quiet group-row__throw"
+                  onClick={() => onFire(options(group.shapes))}
+                >
+                  Throw
+                </button>
+                <button
+                  className="btn btn--quiet group-row__drop"
+                  aria-label={`Delete ${groupLabel(group.shapes)}`}
+                  onClick={() => setGroups((g) => g.filter((_, j) => i !== j))}
+                >
+                  ✕
+                </button>
+              </div>
+            ))}
+          </div>
+
+          <div className="actions">
+            <button className="btn" onClick={() => onFire(options())}>
+              Random throw
+            </button>
+            <button
+              className="btn btn--quiet"
+              onClick={() => navigator.clipboard?.writeText(asThrows(groups))}
+              title="Copy the live groups as the throws block in confetti.mjs"
+            >
+              Copy throws
+            </button>
+            <button
+              className="btn btn--quiet"
+              onClick={() => setGroups(loadGroups({ getItem: () => null, setItem: () => {} }, live.throws, known))}
+            >
+              Reset groups
+            </button>
+          </div>
+        </>
+      )}
 
       {KNOBS.map((knob) => (
         <label className="field" key={knob.key}>
           <span className="field__label">
-            {knob.label} — {knob.format(knobs[knob.key])}
+            {knob.label} — {knob.key === "outline" && !knobs.outline ? "none" : knob.format(knobs[knob.key])}
           </span>
+          {knob.key === "outline" && (
+            <label className="field__check">
+              <input
+                type="checkbox"
+                checked={knobs.outline > 0}
+                onChange={(e) => setKnobs((k) => ({ ...k, outline: e.target.checked ? 0.7 : 0 }))}
+              />
+              <span>Outline every shape in black</span>
+            </label>
+          )}
           <input
             type="range"
             min={knob.min}
             max={knob.max}
             step={knob.step}
             value={knobs[knob.key]}
-            onChange={(e) =>
-              setKnobs((k) => ({ ...k, [knob.key]: Number(e.target.value) }))
-            }
+            disabled={knob.key === "outline" && !knobs.outline}
+            onChange={(e) => setKnobs((k) => ({ ...k, [knob.key]: Number(e.target.value) }))}
           />
           {knob.hint && <span className="field__hint">{knob.hint}</span>}
         </label>
@@ -243,53 +367,16 @@ export function ConfettiPlayground({
 
       <div className="actions">
         <button className="btn btn--quiet" onClick={() => setKnobs(DEFAULTS)}>
-          Reset
+          Reset sliders
         </button>
         <button
           className="btn btn--quiet"
           onClick={() => navigator.clipboard?.writeText(asDefaults(knobs))}
-          title="Copy these settings as the DEFAULTS block in Confetti.tsx"
+          title="Copy these settings as the DEFAULTS block in bench.ts"
         >
           Copy as defaults
         </button>
       </div>
     </>
   );
-}
-
-/** Where the sliders were left, ignoring anything that is no longer a knob. */
-export function loadBench(
-  read: () => string | null = () => {
-    try {
-      return localStorage.getItem(BENCH_KEY);
-    } catch {
-      return null;
-    }
-  },
-): typeof DEFAULTS {
-  const raw = read();
-  if (!raw) return DEFAULTS;
-  try {
-    const saved = JSON.parse(raw) as Record<string, unknown>;
-    const out = { ...DEFAULTS };
-    for (const key of Object.keys(DEFAULTS) as (keyof typeof DEFAULTS)[]) {
-      const v = Number(saved[key]);
-      if (Number.isFinite(v)) out[key] = v;
-    }
-    return out;
-  } catch {
-    return DEFAULTS;
-  }
-}
-
-/**
- * The sliders as the source they would be pasted into. Tuning a burst and then
- * squinting at nine slider labels to copy the numbers by hand is how a good
- * setting gets lost.
- */
-export function asDefaults(knobs: typeof DEFAULTS): string {
-  const body = (Object.keys(DEFAULTS) as (keyof typeof DEFAULTS)[])
-    .map((key) => `  ${key}: ${knobs[key]},`)
-    .join("\n");
-  return `export const DEFAULTS = {\n${body}\n};`;
 }

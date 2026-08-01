@@ -1181,6 +1181,11 @@ span.status__title {
   border-radius: 10px;
 }
 
+.shape-card--picked {
+  border-color: var(--gold);
+  background: color-mix(in srgb, var(--gold) 12%, transparent);
+}
+
 /* Baseline-aligned, so the three sizes read as one object seen from further
    away rather than as three objects. */
 .shape-card__sizes {
@@ -1189,4 +1194,69 @@ span.status__title {
   justify-content: center;
   gap: 6px;
   min-height: 64px;
+  cursor: pointer;
+}
+
+.shape-card__pick {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* The group composer. One row per throw group: live, throw it, drop it. */
+.group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 8px 0 16px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.group-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 6px;
+  border-radius: 8px;
+}
+
+.group-row:nth-child(odd) {
+  background: color-mix(in srgb, var(--line) 40%, transparent);
+}
+
+/* The name takes the slack, so the two buttons stay put down the list rather
+   than wandering with the length of each group's name. */
+.group-row__on {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.group-row__on span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.group-row__throw,
+.group-row__drop {
+  flex: none;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.field__check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 2px 0 6px;
+  font-size: 13px;
+  cursor: pointer;
 }
