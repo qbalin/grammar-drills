@@ -1,0 +1,540 @@
+[
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t1",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "Nothing then is dear to the lover unless it loves him in return.",
+    "answer": "οὐδὲν ἄρα ἐστὶ φίλον τῷ φιλοῦντι μὴ οὐκ ἀντιφιλοῦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέν",
+     "ἄρα",
+     "ἐστί",
+     "φίλον",
+     "τῷ",
+     "φιλοῦντι",
+     "μή",
+     "οὐκ",
+     "ἀντιφιλοῦν"
+    ]
+   },
+   {
+    "prompt": "No one is truly happy unless practicing virtue.",
+    "answer": "οὐδεὶς ἀληθῶς εὐδαίμων ἐστὶ μὴ οὐκ ἀρετὴν ἀσκῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἀληθῶς",
+     "εὐδαίμων",
+     "ἐστί",
+     "μή",
+     "οὐκ",
+     "ἀρετήν",
+     "ἀσκῶν"
+    ]
+   },
+   {
+    "prompt": "Nothing is beautiful except partaking of the beautiful itself.",
+    "answer": "οὐδὲν καλόν ἐστι μὴ οὐ τοῦ καλοῦ αὐτοῦ μετέχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέν",
+     "καλόν",
+     "ἐστί",
+     "μή",
+     "οὐ",
+     "τοῦ",
+     "καλοῦ",
+     "αὐτοῦ",
+     "μετέχον"
+    ]
+   },
+   {
+    "prompt": "No city is safe unless obeying the laws.",
+    "answer": "οὐδεμία πόλις ἀσφαλής ἐστι μὴ οὐ τοῖς νόμοις πειθομένη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεμία",
+     "πόλις",
+     "ἀσφαλής",
+     "ἐστί",
+     "μή",
+     "οὐ",
+     "τοῖς",
+     "νόμοις",
+     "πειθομένη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t2",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "I would be impious, were I not sacrificing to the gods.",
+    "answer": "ἀσεβὴς ἂν εἴην μὴ οὐ τοῖς θεοῖς θύων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀσεβής",
+     "ἄν",
+     "εἴην",
+     "μή",
+     "οὐ",
+     "τοῖς",
+     "θεοῖς",
+     "θύων"
+    ]
+   },
+   {
+    "prompt": "You would be shameless, were you not honoring your parents.",
+    "answer": "ἀναίσχυντος ἂν εἴης μὴ οὐ τοὺς γονέας τιμῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀναίσχυντος",
+     "ἄν",
+     "εἴης",
+     "μή",
+     "οὐ",
+     "τούς",
+     "γονέας",
+     "τιμῶν"
+    ]
+   },
+   {
+    "prompt": "He would be unjust, were he not giving back what he received.",
+    "answer": "ἄδικος ἂν εἴη μὴ οὐκ ἀποδιδοὺς ἃ ἔλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄδικος",
+     "ἄν",
+     "εἴη",
+     "μή",
+     "οὐκ",
+     "ἀποδιδούς",
+     "ἅ",
+     "ἔλαβεν"
+    ]
+   },
+   {
+    "prompt": "We would be ungrateful, were we not thanking our benefactors.",
+    "answer": "ἀχάριστοι ἂν εἴημεν μὴ οὐ τοῖς εὐεργέταις χάριν εἰδότες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀχάριστοι",
+     "ἄν",
+     "εἴημεν",
+     "μή",
+     "οὐ",
+     "τοῖς",
+     "εὐεργέταις",
+     "χάριν",
+     "εἰδότες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t3",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "It is impossible to become good unless learning.",
+    "answer": "ἀδύνατόν ἐστιν ἀγαθὸν γενέσθαι μὴ οὐ μανθάνοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατον",
+     "ἐστίν",
+     "ἀγαθόν",
+     "γενέσθαι",
+     "μή",
+     "οὐ",
+     "μανθάνοντα"
+    ]
+   },
+   {
+    "prompt": "It is not possible to be saved unless fighting.",
+    "answer": "οὐχ οἷόν τε σωθῆναι μὴ οὐ μαχόμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "οἷόν",
+     "τε",
+     "σωθῆναι",
+     "μή",
+     "οὐ",
+     "μαχόμενον"
+    ]
+   },
+   {
+    "prompt": "No one is able to rule well unless first ruling himself.",
+    "answer": "οὐδεὶς δύναται καλῶς ἄρχειν μὴ οὐ πρῶτον ἑαυτοῦ ἄρχων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "δύναται",
+     "καλῶς",
+     "ἄρχειν",
+     "μή",
+     "οὐ",
+     "πρῶτον",
+     "ἑαυτοῦ",
+     "ἄρχων"
+    ]
+   },
+   {
+    "prompt": "It is impossible for a general to conquer unless trusting his soldiers.",
+    "answer": "ἀδύνατόν ἐστι στρατηγὸν νικᾶν μὴ οὐ τοῖς στρατιώταις πιστεύοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατον",
+     "ἐστί",
+     "στρατηγόν",
+     "νικᾶν",
+     "μή",
+     "οὐ",
+     "τοῖς",
+     "στρατιώταις",
+     "πιστεύοντα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t4",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "She would be unholy, were she not burying her brother.",
+    "answer": "ἀνοσία ἂν εἴη μὴ οὐ τὸν ἀδελφὸν θάπτουσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνοσία",
+     "ἄν",
+     "εἴη",
+     "μή",
+     "οὐ",
+     "τόν",
+     "ἀδελφόν",
+     "θάπτουσα"
+    ]
+   },
+   {
+    "prompt": "The judges would be unjust, were they not listening to both parties.",
+    "answer": "ἄδικοι ἂν εἶεν οἱ δικασταὶ μὴ οὐκ ἀμφοτέρων ἀκούοντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄδικοι",
+     "ἄν",
+     "εἶεν",
+     "οἱ",
+     "δικασταί",
+     "μή",
+     "οὐκ",
+     "ἀμφοτέρων",
+     "ἀκούοντες"
+    ]
+   },
+   {
+    "prompt": "You would be foolish, were you not heeding the wiser.",
+    "answer": "ἀμαθὴς ἂν εἴης μὴ οὐ τοῖς σοφωτέροις πειθόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀμαθής",
+     "ἄν",
+     "εἴης",
+     "μή",
+     "οὐ",
+     "τοῖς",
+     "σοφωτέροις",
+     "πειθόμενος"
+    ]
+   },
+   {
+    "prompt": "We would be cowardly, were we not helping our allies.",
+    "answer": "ἄνανδροι ἂν εἴημεν μὴ οὐ τοῖς συμμάχοις βοηθοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄνανδροι",
+     "ἄν",
+     "εἴημεν",
+     "μή",
+     "οὐ",
+     "τοῖς",
+     "συμμάχοις",
+     "βοηθοῦντες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t5",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "No one is free unless mastering his desires.",
+    "answer": "οὐδεὶς ἐλεύθερός ἐστι μὴ οὐ τῶν ἐπιθυμιῶν κρατῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἐλεύθερος",
+     "ἐστί",
+     "μή",
+     "οὐ",
+     "τῶν",
+     "ἐπιθυμιῶν",
+     "κρατῶν"
+    ]
+   },
+   {
+    "prompt": "No one becomes wise unless having suffered.",
+    "answer": "οὐδεὶς σοφὸς γίγνεται μὴ οὐ παθών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "σοφός",
+     "γίγνεται",
+     "μή",
+     "οὐ",
+     "παθών"
+    ]
+   },
+   {
+    "prompt": "Nothing is safe for the city unless guarded by good laws.",
+    "answer": "οὐδὲν ἀσφαλὲς τῇ πόλει ἐστὶ μὴ οὐχ ὑπὸ νόμων ἀγαθῶν φυλαττόμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέν",
+     "ἀσφαλές",
+     "τῇ",
+     "πόλει",
+     "ἐστί",
+     "μή",
+     "οὐχ",
+     "ὑπό",
+     "νόμων",
+     "ἀγαθῶν",
+     "φυλαττόμενον"
+    ]
+   },
+   {
+    "prompt": "No one is dear to the gods unless being just.",
+    "answer": "οὐδεὶς τοῖς θεοῖς φίλος ἐστὶ μὴ οὐ δίκαιος ὤν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "τοῖς",
+     "θεοῖς",
+     "φίλος",
+     "ἐστί",
+     "μή",
+     "οὐ",
+     "δίκαιος",
+     "ὤν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t6",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "He would be faithless, were he not keeping his oaths.",
+    "answer": "ἄπιστος ἂν εἴη μὴ οὐ τοὺς ὅρκους φυλάττων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄπιστος",
+     "ἄν",
+     "εἴη",
+     "μή",
+     "οὐ",
+     "τούς",
+     "ὅρκους",
+     "φυλάττων"
+    ]
+   },
+   {
+    "prompt": "You would be uneducated, were you not reading the poets.",
+    "answer": "ἀπαίδευτος ἂν εἴης μὴ οὐ τοὺς ποιητὰς ἀναγιγνώσκων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπαίδευτος",
+     "ἄν",
+     "εἴης",
+     "μή",
+     "οὐ",
+     "τούς",
+     "ποιητάς",
+     "ἀναγιγνώσκων"
+    ]
+   },
+   {
+    "prompt": "It is impossible to be trusted unless telling the truth.",
+    "answer": "ἀδύνατόν ἐστι πιστεύεσθαι μὴ οὐ τὰ ἀληθῆ λέγοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατον",
+     "ἐστί",
+     "πιστεύεσθαι",
+     "μή",
+     "οὐ",
+     "τά",
+     "ἀληθῆ",
+     "λέγοντα"
+    ]
+   },
+   {
+    "prompt": "No one conquers in war unless daring dangers.",
+    "answer": "οὐδεὶς ἐν πολέμῳ νικᾷ μὴ οὐ τοὺς κινδύνους τολμῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἐν",
+     "πολέμῳ",
+     "νικᾷ",
+     "μή",
+     "οὐ",
+     "τούς",
+     "κινδύνους",
+     "τολμῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t7",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "I would be shameless, were I not helping my friends.",
+    "answer": "ἀναιδὴς γὰρ ἂν εἴην τοῖς φίλοις μὴ οὐ βοηθῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀναιδὴς",
+     "γὰρ",
+     "ἂν",
+     "εἴην",
+     "τοῖς",
+     "φίλοις",
+     "μὴ",
+     "οὐ",
+     "βοηθῶν"
+    ]
+   },
+   {
+    "prompt": "You would be ungrateful, were you not honoring your benefactors.",
+    "answer": "ἀχάριστος ἂν εἴης τοὺς εὐεργέτας μὴ οὐ τιμῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀχάριστος",
+     "ἂν",
+     "εἴης",
+     "τοὺς",
+     "εὐεργέτας",
+     "μὴ",
+     "οὐ",
+     "τιμῶν"
+    ]
+   },
+   {
+    "prompt": "He would be cowardly, were he not facing the danger.",
+    "answer": "δειλὸς ἂν εἴη τὸν κίνδυνον μὴ οὐχ ὑπομένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δειλὸς",
+     "ἂν",
+     "εἴη",
+     "τὸν",
+     "κίνδυνον",
+     "μὴ",
+     "οὐχ",
+     "ὑπομένων"
+    ]
+   },
+   {
+    "prompt": "We would be unjust, were we not returning the deposits.",
+    "answer": "ἄδικοι ἂν εἴημεν τὰς παρακαταθήκας μὴ οὐκ ἀποδιδόντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄδικοι",
+     "ἂν",
+     "εἴημεν",
+     "τὰς",
+     "παρακαταθήκας",
+     "μὴ",
+     "οὐκ",
+     "ἀποδιδόντες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t8",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "Nothing is truly noble unless it benefits the city.",
+    "answer": "οὐδὲν ὄντως ἐστι καλὸν μὴ οὐκ ὠφελοῦν τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "ὄντως",
+     "ἐστι",
+     "καλὸν",
+     "μὴ",
+     "οὐκ",
+     "ὠφελοῦν",
+     "τὴν",
+     "πόλιν"
+    ]
+   },
+   {
+    "prompt": "No one is wise unless knowing himself.",
+    "answer": "οὐδεὶς σοφός ἐστι μὴ οὐχ ἑαυτὸν γιγνώσκων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "σοφός",
+     "ἐστι",
+     "μὴ",
+     "οὐχ",
+     "ἑαυτὸν",
+     "γιγνώσκων"
+    ]
+   },
+   {
+    "prompt": "It is impossible to be happy unless being just.",
+    "answer": "ἀδύνατόν ἐστιν εὐδαίμονα εἶναι μὴ οὐ δίκαιον ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατόν",
+     "ἐστιν",
+     "εὐδαίμονα",
+     "εἶναι",
+     "μὴ",
+     "οὐ",
+     "δίκαιον",
+     "ὄντα"
+    ]
+   },
+   {
+    "prompt": "No city is prosperous unless obeying the laws.",
+    "answer": "οὐδεμία πόλις εὐδαίμων ἐστι μὴ οὐ τοῖς νόμοις πειθομένη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεμία",
+     "πόλις",
+     "εὐδαίμων",
+     "ἐστι",
+     "μὴ",
+     "οὐ",
+     "τοῖς",
+     "νόμοις",
+     "πειθομένη"
+    ]
+   }
+  ]
+ }
+]
