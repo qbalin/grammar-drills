@@ -102,6 +102,9 @@ export function QuestionSheet({
           attempts={question.attempts}
           title="Your answers"
           showPrompt={false}
+          /* The reference stands above, once; repeating it under every attempt
+             is noise on the one screen that already shows it. */
+          showAnswer={false}
         />
       ) : (
         <p className="field__hint">

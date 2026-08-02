@@ -1018,6 +1018,31 @@ span.status__title {
   font-style: italic;
 }
 
+/* The correction, in the gold the reference answer wears everywhere else, so
+   the eye reads it as the same thing rather than as another sentence of
+   yours. Labelled because without a word the two lines are indistinguishable
+   at a glance: both serif, both L2, one right and one not. */
+.attempt__answer {
+  font-family: var(--serif);
+  color: var(--gold);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  margin-top: 0.2rem;
+}
+
+.attempt__answer-label {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-right: 0.45rem;
+}
+
+.attempt__matched {
+  color: var(--gold);
+}
+
 /* --- forms ---------------------------------------------------------------- */
 
 .field {

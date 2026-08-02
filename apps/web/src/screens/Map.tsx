@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { answerMatches } from "@lang-tutor/core";
 import type { Attempt, FamilyProgress, TopicProgress } from "@lang-tutor/core";
 import { Ring, Sheet, ago } from "../ui.js";
+import { fold } from "../pack.js";
 
 /**
  * The syllabus as a map: nine families, each opening to a row per topic.
@@ -212,40 +214,64 @@ export function TopicSheet({
 const RATING_WORD = ["", "again", "hard", "good", "easy"];
 
 /**
- * What was written here before.
+ * What was written here before, and what it should have been.
  *
  * Grading yourself leaves no record of the actual sentence, and a topic can be
  * away for months. Without this the only evidence a topic was ever studied is a
  * number on a bar.
+ *
+ * The correction is half the point and used to be missing: a trail of your own
+ * sentences with nothing to read them against says you answered, not how. Each
+ * attempt carries the reference it was shown at the time — `a.answer`, not the
+ * question's answer today — so a trail stays true to what was on the screen
+ * even if the pack's questions are regenerated under it.
+ *
+ * It appears only where it is news. A right answer is marked and left alone,
+ * because printing the same sentence twice under "you" and "correct" is how a
+ * trail becomes unreadable; the terminal has drawn it this way all along.
  */
 export function AttemptTrail({
   attempts,
   title = "Earlier answers",
   /** Off when every attempt answers the same question, which is then the title. */
   showPrompt = true,
+  /** Off where the reference already stands above the trail, unrepeated. */
+  showAnswer = true,
 }: {
   /** Empty when the trail is already under a heading of its own. */
   title?: string;
   attempts: Attempt[];
   showPrompt?: boolean;
+  showAnswer?: boolean;
 }) {
   return (
     <>
       {title && <div className="section-title">{title}</div>}
-      {attempts.map((a, i) => (
-        <div className="attempt" key={`${a.at}-${i}`}>
-          <div className="attempt__meta">
-            <span>{ago(a.at)}</span>
-            <span>· {RATING_WORD[a.rating]}</span>
+      {attempts.map((a, i) => {
+        const written = a.submitted.trim();
+        const right = answerMatches(written, a.answer, fold);
+        return (
+          <div className="attempt" key={`${a.at}-${i}`}>
+            <div className="attempt__meta">
+              <span>{ago(a.at)}</span>
+              <span>· {RATING_WORD[a.rating]}</span>
+              {right && <span className="attempt__matched">· matched</span>}
+            </div>
+            {showPrompt && <div className="attempt__prompt">{a.prompt}</div>}
+            <div
+              className={`attempt__written${written ? "" : " attempt__written--empty"}`}
+            >
+              {written || "— nothing written"}
+            </div>
+            {showAnswer && !right && (
+              <div className="attempt__answer">
+                <span className="attempt__answer-label">correct</span>
+                {a.answer}
+              </div>
+            )}
           </div>
-          {showPrompt && <div className="attempt__prompt">{a.prompt}</div>}
-          <div
-            className={`attempt__written${a.submitted.trim() ? "" : " attempt__written--empty"}`}
-          >
-            {a.submitted.trim() || "— nothing written"}
-          </div>
-        </div>
-      ))}
+        );
+      })}
     </>
   );
 }

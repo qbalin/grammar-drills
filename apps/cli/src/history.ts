@@ -11,7 +11,7 @@
  */
 
 import {
-  words,
+  answerMatches,
   type Fold,
   type Attempt,
   type BankedQuestion,
@@ -64,17 +64,8 @@ export function relativeTime(at: string, now: Date = new Date()): string {
   return months === 1 ? "a month ago" : `${months} months ago`;
 }
 
-/**
- * True when what was written is the reference answer. Compared with the pack's
- * own fold — for Latin that means macrons are editorial and u/v, i/j are
- * spelling variants — so a right answer typed without macrons still reads as
- * right rather than as a correction. Which is exactly why the fold is the
- * language's to declare and not this file's to assume.
- */
-function matches(submitted: string, answer: string, fold: Fold): boolean {
-  const key = (s: string) => words(fold(s)).join(" ");
-  return key(submitted) !== "" && key(submitted) === key(answer);
-}
+/** True when what was written is the reference answer. The web asks the same. */
+const matches = answerMatches;
 
 /**
  * One attempt as screen lines: when it was, what was asked, what you wrote,

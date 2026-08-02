@@ -394,6 +394,63 @@ describe("the answer trail", () => {
     expect(expanded()).toBe("false");
   });
 
+  /**
+   * A trail of your own sentences with nothing to read them against says you
+   * answered, not how — which is the whole reason to open it weeks later.
+   */
+  it("puts the correction beside what was written, and only where it differs", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+
+    // The second question of the same topic, with the first now in the trail.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Earlier answers —/ }));
+    const trail = () => document.querySelector("#earlier-answers")!;
+    const corrections = () =>
+      Array.from(trail().querySelectorAll(".attempt__answer")).map((el) =>
+        el.textContent?.replace(/^correct/, "").trim(),
+      );
+
+    expect(trail().textContent).toContain("Puella rosa amat.");
+    // Which is not the sentence Latin wanted, and now the trail says so.
+    expect(corrections()).toContain("Puella rosam amat.");
+    // The placement probe was revealed rather than answered; nothing written
+    // is not a right answer, so it is corrected too.
+    expect(trail().textContent).toContain("— nothing written");
+    expect(corrections()).toHaveLength(2);
+  });
+
+  it("marks a right answer instead of printing it back as a correction", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    // Right, through the pack's fold and the same word split the crib uses:
+    // the capital and the full stop belong to the sentence, not the answer.
+    await user.type(screen.getByLabelText("Your Latin"), "puella rosam amat");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Earlier answers —/ }));
+    const trail = document.querySelector("#earlier-answers")!;
+
+    const right = Array.from(trail.querySelectorAll(".attempt")).filter((el) =>
+      el.textContent?.includes("puella rosam amat"),
+    );
+    expect(right).toHaveLength(1);
+    expect(right[0]!.querySelector(".attempt__matched")?.textContent).toBe(
+      "· matched",
+    );
+    // The reference is the sentence above it; the trail does not say it twice.
+    expect(right[0]!.querySelector(".attempt__answer")).toBeNull();
+  });
+
   it("does not carry the trail across to another topic's answers", async () => {
     const user = userEvent.setup();
     mount();

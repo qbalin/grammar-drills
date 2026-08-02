@@ -21,6 +21,7 @@ export { lookupForm } from "./lemmatizer.js";
 export {
   questionVocabulary,
   words,
+  answerMatches,
   stripPunctuation,
   type VocabWord,
   type VocabStatus,

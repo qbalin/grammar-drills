@@ -88,6 +88,27 @@ export function words(text: string): string[] {
 }
 
 /**
+ * True when what was written is the reference answer.
+ *
+ * Compared through the pack's own fold — for Latin that makes macrons editorial
+ * and u/v, i/j spelling variants — so a right answer typed without macrons
+ * reads as right rather than as a mistake. Which is why the fold is the
+ * language's to declare and not this file's to assume.
+ *
+ * Here rather than in an app because both of them ask it, of the same stored
+ * attempts, and two answers to "was this right" would show the student a
+ * correction on the phone against a ✓ in the terminal.
+ */
+export function answerMatches(
+  submitted: string,
+  answer: string,
+  fold: Fold,
+): boolean {
+  const key = (s: string) => words(fold(s)).join(" ");
+  return key(submitted) !== "" && key(submitted) === key(answer);
+}
+
+/**
  * The dictionary's readings of one form, looking through an enclitic if it has
  * to.
  *
