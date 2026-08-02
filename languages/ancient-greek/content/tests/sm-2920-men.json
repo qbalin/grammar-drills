@@ -1,0 +1,922 @@
+[
+ {
+  "id": "sm-2920-men-t1",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "You praise the general, and yet you were not obeying him.",
+    "answer": "ἐπαινεῖς τὸν στρατηγόν, καὶ μὴν οὐκ ἐπείθου αὐτῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπαινεῖς",
+     "τόν",
+     "στρατηγόν",
+     "καί",
+     "μήν",
+     "οὐκ",
+     "ἐπείθου",
+     "αὐτῷ"
+    ]
+   },
+   {
+    "prompt": "But surely nothing prevents the wise from being happy.",
+    "answer": "ἀλλὰ μὴν οὐδὲν κωλύει τοὺς σοφοὺς εὐδαίμονας εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "μήν",
+     "οὐδέν",
+     "κωλύει",
+     "τούς",
+     "σοφούς",
+     "εὐδαίμονας",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "He swore verily that he would bring the exiles back.",
+    "answer": "ὤμοσεν ἦ μὴν τοὺς φυγάδας κατάξειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤμοσεν",
+     "ἦ",
+     "μήν",
+     "τούς",
+     "φυγάδας",
+     "κατάξειν"
+    ]
+   },
+   {
+    "prompt": "Surely not; the enemy have not yet crossed the river.",
+    "answer": "οὐ μήν, οἱ πολέμιοι τὸν ποταμὸν οὔπω διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μήν",
+     "οἱ",
+     "πολέμιοι",
+     "τόν",
+     "ποταμόν",
+     "οὔπω",
+     "διέβησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t2",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "Truth is a fine thing, yet it is not easy to persuade the many.",
+    "answer": "καλὸν μὲν ἡ ἀλήθεια, οὐ μὴν ῥᾴδιον τοὺς πολλοὺς πείθειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλόν",
+     "μέν",
+     "ἡ",
+     "ἀλήθεια",
+     "οὐ",
+     "μήν",
+     "ῥᾴδιον",
+     "τούς",
+     "πολλούς",
+     "πείθειν"
+    ]
+   },
+   {
+    "prompt": "And besides, the allies sent us both ships and money.",
+    "answer": "καὶ μὴν οἱ σύμμαχοι καὶ ναῦς καὶ χρήματα ἡμῖν ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "μήν",
+     "οἱ",
+     "σύμμαχοι",
+     "ναῦς",
+     "χρήματα",
+     "ἡμῖν",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "And yet I will do it, even if you forbid it.",
+    "answer": "καὶ μὴν ποιήσω γε, καὶ εἰ σὺ ἀπαγορεύεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "μήν",
+     "ποιήσω",
+     "γε",
+     "εἰ",
+     "σύ",
+     "ἀπαγορεύεις"
+    ]
+   },
+   {
+    "prompt": "They speak of us as dead — and why should they not?",
+    "answer": "λέγουσιν ἡμᾶς ὡς ὀλωλότας· τί μήν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγουσιν",
+     "ἡμᾶς",
+     "ὡς",
+     "ὀλωλότας",
+     "τί",
+     "μήν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t3",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "You have wronged your friends; and yet you claim to be just.",
+    "answer": "ἠδίκηκας τοὺς φίλους· καὶ μὴν φῂς δίκαιος εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠδίκηκας",
+     "τούς",
+     "φίλους",
+     "καί",
+     "μήν",
+     "φῂς",
+     "δίκαιος",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "But surely the young men were eager to learn these things.",
+    "answer": "ἀλλὰ μὴν οἱ νεανίαι ταῦτα μανθάνειν ἐπεθύμουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "μήν",
+     "οἱ",
+     "νεανίαι",
+     "ταῦτα",
+     "μανθάνειν",
+     "ἐπεθύμουν"
+    ]
+   },
+   {
+    "prompt": "He promised, verily, never to abandon his post.",
+    "answer": "ὑπέσχετο ἦ μὴν μηδέποτε τὴν τάξιν λείψειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέσχετο",
+     "ἦ",
+     "μήν",
+     "μηδέποτε",
+     "τήν",
+     "τάξιν",
+     "λείψειν"
+    ]
+   },
+   {
+    "prompt": "Of course; we chose the oldest man as leader.",
+    "answer": "τί μήν; τὸν πρεσβύτατον ἡγεμόνα εἱλόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "μήν",
+     "τόν",
+     "πρεσβύτατον",
+     "ἡγεμόνα",
+     "εἱλόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t4",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "The city was being besieged; nevertheless the citizens did not surrender themselves.",
+    "answer": "ἐπολιορκεῖτο ἡ πόλις· οὐ μὴν ἀλλὰ οἱ πολῖται οὐ παρέδοσαν ἑαυτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπολιορκεῖτο",
+     "ἡ",
+     "πόλις",
+     "οὐ",
+     "μήν",
+     "ἀλλά",
+     "οἱ",
+     "πολῖται",
+     "παρέδοσαν",
+     "ἑαυτούς"
+    ]
+   },
+   {
+    "prompt": "And in truth also the god himself was favorable to the just.",
+    "answer": "καὶ μὴν καὶ ὁ θεὸς αὐτὸς τοῖς δικαίοις εὐμενὴς ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "μήν",
+     "ὁ",
+     "θεός",
+     "αὐτός",
+     "τοῖς",
+     "δικαίοις",
+     "εὐμενής",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "But surely you know that virtue cannot be taught?",
+    "answer": "ἀλλὰ μὴν οἶσθα ὅτι ἡ ἀρετὴ οὐ διδακτή ἐστιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "μήν",
+     "οἶσθα",
+     "ὅτι",
+     "ἡ",
+     "ἀρετή",
+     "οὐ",
+     "διδακτή",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "And lo, here is the messenger, present from the camp.",
+    "answer": "καὶ μὴν ὅδε ὁ ἄγγελος ἐκ τοῦ στρατοπέδου πάρεστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "μήν",
+     "ὅδε",
+     "ὁ",
+     "ἄγγελος",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "πάρεστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t5",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "You did us many wrongs; and yet we are not angry.",
+    "answer": "πολλὰ ἡμᾶς ἠδίκησας· οὐ μὴν ὀργιζόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλά",
+     "ἡμᾶς",
+     "ἠδίκησας",
+     "οὐ",
+     "μήν",
+     "ὀργιζόμεθα"
+    ]
+   },
+   {
+    "prompt": "But surely those who flee from danger are not brave.",
+    "answer": "ἀλλὰ μὴν οἱ τὸν κίνδυνον φεύγοντες οὐκ ἀνδρεῖοί εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "μήν",
+     "οἱ",
+     "τόν",
+     "κίνδυνον",
+     "φεύγοντες",
+     "οὐκ",
+     "ἀνδρεῖοι",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "He swore verily that he would punish the traitors harshly.",
+    "answer": "ὤμοσεν ἦ μὴν τοὺς προδότας χαλεπῶς κολάσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤμοσεν",
+     "ἦ",
+     "μήν",
+     "τούς",
+     "προδότας",
+     "χαλεπῶς",
+     "κολάσειν"
+    ]
+   },
+   {
+    "prompt": "And besides, we captured many of their weapons.",
+    "answer": "καὶ μὴν πολλὰ τῶν ὅπλων αὐτῶν εἵλομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "μήν",
+     "πολλά",
+     "τῶν",
+     "ὅπλων",
+     "αὐτῶν",
+     "εἵλομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t6",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "The soldiers were weary; nevertheless they kept pursuing the enemy.",
+    "answer": "ἔκαμνον οἱ στρατιῶται· οὐ μὴν ἀλλὰ τοὺς πολεμίους ἐδίωκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔκαμνον",
+     "οἱ",
+     "στρατιῶται",
+     "οὐ",
+     "μήν",
+     "ἀλλά",
+     "τούς",
+     "πολεμίους",
+     "ἐδίωκον"
+    ]
+   },
+   {
+    "prompt": "And yet, though defeated in the battle, he did not lose heart.",
+    "answer": "καὶ μὴν ἐν τῇ μάχῃ ἡττηθεὶς οὐκ ἠθύμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "μήν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἡττηθείς",
+     "οὐκ",
+     "ἠθύμησεν"
+    ]
+   },
+   {
+    "prompt": "But surely you would not betray those who trust you?",
+    "answer": "ἀλλὰ μὴν οὐκ ἂν προδοίης τοὺς σοὶ πιστεύοντας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "μήν",
+     "οὐκ",
+     "ἄν",
+     "προδοίης",
+     "τούς",
+     "σοί",
+     "πιστεύοντας"
+    ]
+   },
+   {
+    "prompt": "Of course I do; for I have often heard these things.",
+    "answer": "τί μὴν οὔ; πολλάκις γὰρ ταῦτα ἀκήκοα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "μήν",
+     "οὔ",
+     "πολλάκις",
+     "γάρ",
+     "ταῦτα",
+     "ἀκήκοα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t7",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "But surely nothing prevents us from telling the truth.",
+    "answer": "ἀλλὰ μὴν οὐδὲν κωλύει ἡμᾶς τὴν ἀλήθειαν λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴν",
+     "οὐδὲν",
+     "κωλύει",
+     "ἡμᾶς",
+     "τὴν",
+     "ἀλήθειαν",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "I swear verily to ward off the enemy.",
+    "answer": "ὄμνυμι ἦ μὴν τοὺς πολεμίους ἀμυνεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄμνυμι",
+     "ἦ",
+     "μὴν",
+     "τοὺς",
+     "πολεμίους",
+     "ἀμυνεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "And lo, here comes the messenger bringing fresh news.",
+    "answer": "καὶ μὴν ὅδε ὁ ἄγγελος ἔρχεται καινὰ ἀγγέλλων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "ὅδε",
+     "ὁ",
+     "ἄγγελος",
+     "ἔρχεται",
+     "καινὰ",
+     "ἀγγέλλων"
+    ]
+   },
+   {
+    "prompt": "You think we are already ruined — of course you do.",
+    "answer": "οἴει ἡμᾶς ἤδη ἀπολωλέναι· τί μήν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἴει",
+     "ἡμᾶς",
+     "ἤδη",
+     "ἀπολωλέναι",
+     "τί",
+     "μήν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t8",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "The wound was deep; and yet the soldier kept fighting.",
+    "answer": "τὸ ἕλκος βαθὺ ἦν· καὶ μὴν ὁ στρατιώτης ἐμάχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἕλκος",
+     "βαθὺ",
+     "ἦν",
+     "καὶ",
+     "μὴν",
+     "ὁ",
+     "στρατιώτης",
+     "ἐμάχετο"
+    ]
+   },
+   {
+    "prompt": "But surely you know that the weak have need of help.",
+    "answer": "ἀλλὰ μὴν οἶσθα ὅτι οἱ ἀσθενεῖς βοηθείας δέονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴν",
+     "οἶσθα",
+     "ὅτι",
+     "οἱ",
+     "ἀσθενεῖς",
+     "βοηθείας",
+     "δέονται"
+    ]
+   },
+   {
+    "prompt": "And besides, the general provided grain for the army.",
+    "answer": "καὶ μὴν σῖτον τῷ στρατεύματι ὁ στρατηγὸς παρέσχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "σῖτον",
+     "τῷ",
+     "στρατεύματι",
+     "ὁ",
+     "στρατηγὸς",
+     "παρέσχεν"
+    ]
+   },
+   {
+    "prompt": "Verily the gods will not overlook the wicked.",
+    "answer": "ἦ μὴν οἱ θεοὶ τοὺς πονηροὺς οὐ περιόψονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "οἱ",
+     "θεοὶ",
+     "τοὺς",
+     "πονηροὺς",
+     "οὐ",
+     "περιόψονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t9",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "Nevertheless the citizens, though few, kept guarding their freedom.",
+    "answer": "οὐ μὴν ἀλλὰ οἱ πολῖται, ὀλίγοι ὄντες, τὴν ἐλευθερίαν διεφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴν",
+     "ἀλλὰ",
+     "οἱ",
+     "πολῖται",
+     "ὀλίγοι",
+     "ὄντες",
+     "τὴν",
+     "ἐλευθερίαν",
+     "διεφύλαττον"
+    ]
+   },
+   {
+    "prompt": "And in truth also the women praised his courage.",
+    "answer": "καὶ μὴν καὶ αἱ γυναῖκες τὴν ἀνδρείαν αὐτοῦ ἐπῄνουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "αἱ",
+     "γυναῖκες",
+     "τὴν",
+     "ἀνδρείαν",
+     "αὐτοῦ",
+     "ἐπῄνουν"
+    ]
+   },
+   {
+    "prompt": "But what in truth do you think we ought to do?",
+    "answer": "ἀλλὰ τί μὴν οἴει ἡμᾶς δεῖν ποιεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "τί",
+     "μὴν",
+     "οἴει",
+     "ἡμᾶς",
+     "δεῖν",
+     "ποιεῖν"
+    ]
+   },
+   {
+    "prompt": "You are late; and yet I will wait for you.",
+    "answer": "ὀψὲ ἥκεις· καὶ μὴν περιμενῶ γε σε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀψὲ",
+     "ἥκεις",
+     "καὶ",
+     "μὴν",
+     "περιμενῶ",
+     "γε",
+     "σε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t10",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "Nay indeed, virtue is more precious than gold.",
+    "answer": "ἀλλὰ μὴν ἡ ἀρετὴ χρυσοῦ τιμιωτέρα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴν",
+     "ἡ",
+     "ἀρετὴ",
+     "χρυσοῦ",
+     "τιμιωτέρα",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "And verily the sun rises early in summer.",
+    "answer": "καὶ μὴν ὁ ἥλιος πρωὶ ἀνατέλλει τοῦ θέρους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "ὁ",
+     "ἥλιος",
+     "πρωὶ",
+     "ἀνατέλλει",
+     "τοῦ",
+     "θέρους"
+    ]
+   },
+   {
+    "prompt": "Surely not; for such a deed would be shameful.",
+    "answer": "οὐ μήν· αἰσχρὸν γὰρ ἂν εἴη τὸ τοιοῦτον ἔργον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μήν",
+     "αἰσχρὸν",
+     "γὰρ",
+     "ἂν",
+     "εἴη",
+     "τὸ",
+     "τοιοῦτον",
+     "ἔργον"
+    ]
+   },
+   {
+    "prompt": "And yet, here comes the king himself out of the palace.",
+    "answer": "καὶ μὴν ὅδε αὐτὸς ὁ βασιλεὺς ἐκ τῶν βασιλείων ἔρχεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "ὅδε",
+     "αὐτὸς",
+     "ὁ",
+     "βασιλεὺς",
+     "ἐκ",
+     "τῶν",
+     "βασιλείων",
+     "ἔρχεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t11",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "In truth I have suffered many things, yet I do not blame fortune.",
+    "answer": "ἦ μὴν πολλὰ πέπονθα, οὐ μὴν τὴν τύχην αἰτιῶμαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "πολλὰ",
+     "πέπονθα",
+     "οὐ",
+     "τὴν",
+     "τύχην",
+     "αἰτιῶμαι"
+    ]
+   },
+   {
+    "prompt": "And besides, he was teaching the children letters and music.",
+    "answer": "καὶ μὴν τοὺς παῖδας γράμματα καὶ μουσικὴν ἐδίδασκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "τοὺς",
+     "παῖδας",
+     "γράμματα",
+     "μουσικὴν",
+     "ἐδίδασκεν"
+    ]
+   },
+   {
+    "prompt": "But surely you were not ignorant of these dangers.",
+    "answer": "ἀλλὰ μὴν τούτους τοὺς κινδύνους οὐκ ἠγνόεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴν",
+     "τούτους",
+     "τοὺς",
+     "κινδύνους",
+     "οὐκ",
+     "ἠγνόεις"
+    ]
+   },
+   {
+    "prompt": "They call us cowards — of course they do.",
+    "answer": "δειλοὺς ἡμᾶς καλοῦσιν· τί μήν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δειλοὺς",
+     "ἡμᾶς",
+     "καλοῦσιν",
+     "τί",
+     "μήν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t12",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "And yet the physician was unable to heal the sick man.",
+    "answer": "καὶ μὴν ὁ ἰατρὸς τὸν κάμνοντα ἰάσασθαι οὐκ ἐδύνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "ὁ",
+     "ἰατρὸς",
+     "τὸν",
+     "κάμνοντα",
+     "ἰάσασθαι",
+     "οὐκ",
+     "ἐδύνατο"
+    ]
+   },
+   {
+    "prompt": "But surely we ought to honor those who die for their country.",
+    "answer": "ἀλλὰ μὴν χρὴ τιμᾶν τοὺς ὑπὲρ τῆς πατρίδος ἀποθνῄσκοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴν",
+     "χρὴ",
+     "τιμᾶν",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκοντας"
+    ]
+   },
+   {
+    "prompt": "Verily I will take vengeance on those who betrayed the city.",
+    "answer": "ἦ μὴν τιμωρήσομαι τοὺς τὴν πόλιν προδόντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "τιμωρήσομαι",
+     "τοὺς",
+     "τὴν",
+     "πόλιν",
+     "προδόντας"
+    ]
+   },
+   {
+    "prompt": "And in truth also the poets praised this deed.",
+    "answer": "καὶ μὴν καὶ οἱ ποιηταὶ τοῦτο τὸ ἔργον ἐπῄνεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "οἱ",
+     "ποιηταὶ",
+     "τοῦτο",
+     "τὸ",
+     "ἔργον",
+     "ἐπῄνεσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t13",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "But surely the just man fears nothing, although he is poor.",
+    "answer": "ἀλλὰ μὴν ὁ δίκαιος οὐδὲν φοβεῖται, καίπερ πένης ὤν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴν",
+     "ὁ",
+     "δίκαιος",
+     "οὐδὲν",
+     "φοβεῖται",
+     "καίπερ",
+     "πένης",
+     "ὤν"
+    ]
+   },
+   {
+    "prompt": "Verily I swear never to betray the city.",
+    "answer": "ἦ μὴν ὄμνυμι μήποτε τὴν πόλιν προδώσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "ὄμνυμι",
+     "μήποτε",
+     "τὴν",
+     "πόλιν",
+     "προδώσειν"
+    ]
+   },
+   {
+    "prompt": "And besides, the enemy seized the harbor before dawn.",
+    "answer": "καὶ μὴν οἱ πολέμιοι τὸν λιμένα πρὸ τῆς ἕω κατέλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "οἱ",
+     "πολέμιοι",
+     "τὸν",
+     "λιμένα",
+     "πρὸ",
+     "τῆς",
+     "ἕω",
+     "κατέλαβον"
+    ]
+   },
+   {
+    "prompt": "The storm was terrible; nevertheless the sailors saved the ship.",
+    "answer": "ὁ χειμὼν δεινὸς ἦν· οὐ μὴν ἀλλὰ οἱ ναῦται τὴν ναῦν ἔσωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χειμὼν",
+     "δεινὸς",
+     "ἦν",
+     "οὐ",
+     "μὴν",
+     "ἀλλὰ",
+     "οἱ",
+     "ναῦται",
+     "τὴν",
+     "ναῦν",
+     "ἔσωσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2920-men-t14",
+  "sectionId": "sm-2920-men",
+  "questions": [
+   {
+    "prompt": "And lo, here comes the messenger bearing the letters.",
+    "answer": "καὶ μὴν ὅδε ὁ ἄγγελος πάρεστι τὰς ἐπιστολὰς φέρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "μὴν",
+     "ὅδε",
+     "ὁ",
+     "ἄγγελος",
+     "πάρεστι",
+     "τὰς",
+     "ἐπιστολὰς",
+     "φέρων"
+    ]
+   },
+   {
+    "prompt": "They call these men brave; and why should they not?",
+    "answer": "καλοῦσι τούτους ἀνδρείους· τί μήν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλοῦσι",
+     "τούτους",
+     "ἀνδρείους",
+     "τί",
+     "μήν"
+    ]
+   },
+   {
+    "prompt": "But surely the general, though experienced, was deceived by the spies.",
+    "answer": "ἀλλὰ μὴν ὁ στρατηγός, καίπερ ἔμπειρος ὤν, ὑπὸ τῶν κατασκόπων ἐξηπατήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴν",
+     "ὁ",
+     "στρατηγός",
+     "καίπερ",
+     "ἔμπειρος",
+     "ὤν",
+     "ὑπὸ",
+     "τῶν",
+     "κατασκόπων",
+     "ἐξηπατήθη"
+    ]
+   },
+   {
+    "prompt": "And certainly the young men did not abandon their comrades.",
+    "answer": "οὐδὲ μὴν οἱ νεανίαι τοὺς ἑταίρους κατέλιπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "μὴν",
+     "οἱ",
+     "νεανίαι",
+     "τοὺς",
+     "ἑταίρους",
+     "κατέλιπον"
+    ]
+   }
+  ]
+ }
+]
