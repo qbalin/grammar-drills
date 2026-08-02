@@ -1,0 +1,596 @@
+[
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t1",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "I know that these men are not willing to betray their fatherland.",
+    "answer": "οἶδα ὅτι οὗτοι οὐ βούλονται τὴν πατρίδα προδοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶδα",
+     "ὅτι",
+     "οὗτοι",
+     "οὐ",
+     "βούλονται",
+     "τήν",
+     "πατρίδα",
+     "προδοῦναι"
+    ]
+   },
+   {
+    "prompt": "He answered that he would not accept the money offered by the tyrant.",
+    "answer": "ἀπεκρίνατο ὅτι οὐ δέξοιτο τὰ χρήματα τὰ ὑπὸ τοῦ τυράννου διδόμενα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "οὐ",
+     "δέξοιτο",
+     "τά",
+     "χρήματα",
+     "ὑπό",
+     "τοῦ",
+     "τυράννου",
+     "διδόμενα"
+    ]
+   },
+   {
+    "prompt": "The messenger reported that the enemy had not yet crossed the river.",
+    "answer": "ὁ ἄγγελος ἤγγειλεν ὅτι οἱ πολέμιοι οὔπω διαβεβήκασι τὸν ποταμόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "οὔπω",
+     "διαβεβήκασι",
+     "τόν",
+     "ποταμόν"
+    ]
+   },
+   {
+    "prompt": "We recognized that the general was neither foolish nor cowardly.",
+    "answer": "ἔγνωμεν ὅτι ὁ στρατηγὸς οὔτε ἀνόητος οὔτε δειλὸς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγνωμεν",
+     "ὅτι",
+     "ὁ",
+     "στρατηγός",
+     "οὔτε",
+     "ἀνόητος",
+     "δειλός",
+     "εἴη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t2",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He made clear that he would not abandon his companions.",
+    "answer": "ἐδήλωσεν ὡς οὐ καταλείψοι τοὺς ἑταίρους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδήλωσεν",
+     "ὡς",
+     "οὐ",
+     "καταλείψοι",
+     "τούς",
+     "ἑταίρους"
+    ]
+   },
+   {
+    "prompt": "They said that the citizens were not willing to surrender their weapons.",
+    "answer": "ἔλεγον ὡς οἱ πολῖται οὐκ ἐθέλοιεν τὰ ὅπλα παραδοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "ὡς",
+     "οἱ",
+     "πολῖται",
+     "οὐκ",
+     "ἐθέλοιεν",
+     "τά",
+     "ὅπλα",
+     "παραδοῦναι"
+    ]
+   },
+   {
+    "prompt": "The old man swore that he had never seen such a marvel.",
+    "answer": "ὁ γέρων ὤμοσεν ὡς οὐδέποτε τοιοῦτον θαῦμα ἑωράκοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ὤμοσεν",
+     "ὡς",
+     "οὐδέποτε",
+     "τοιοῦτον",
+     "θαῦμα",
+     "ἑωράκοι"
+    ]
+   },
+   {
+    "prompt": "The ambassadors declared that the king would not release the prisoners.",
+    "answer": "οἱ πρέσβεις ἀπήγγειλαν ὡς ὁ βασιλεὺς οὐκ ἀπολύσοι τοὺς αἰχμαλώτους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἀπήγγειλαν",
+     "ὡς",
+     "ὁ",
+     "βασιλεύς",
+     "οὐκ",
+     "ἀπολύσοι",
+     "τούς",
+     "αἰχμαλώτους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t3",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He gave orders that no one should flee from the battle.",
+    "answer": "προεῖπεν ὡς μηδεὶς φεύξοιτο ἐκ τῆς μάχης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προεῖπεν",
+     "ὡς",
+     "μηδείς",
+     "φεύξοιτο",
+     "ἐκ",
+     "τῆς",
+     "μάχης"
+    ]
+   },
+   {
+    "prompt": "The general commanded that no one should light a fire in the camp.",
+    "answer": "ὁ στρατηγὸς παρήγγειλεν ὡς μηδεὶς ἐν τῷ στρατοπέδῳ πῦρ καίοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "παρήγγειλεν",
+     "ὡς",
+     "μηδείς",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "πῦρ",
+     "καίοι"
+    ]
+   },
+   {
+    "prompt": "He warned them that no one should touch the sacred offerings.",
+    "answer": "προηγόρευσεν αὐτοῖς ὡς μηδεὶς τῶν ἱερῶν ἅπτοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προηγόρευσεν",
+     "αὐτοῖς",
+     "ὡς",
+     "μηδείς",
+     "τῶν",
+     "ἱερῶν",
+     "ἅπτοιτο"
+    ]
+   },
+   {
+    "prompt": "He gave the order that none of the soldiers should ravage the villages.",
+    "answer": "προεῖπεν ὡς μηδεὶς τῶν στρατιωτῶν τὰς κώμας πορθοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προεῖπεν",
+     "ὡς",
+     "μηδείς",
+     "τῶν",
+     "στρατιωτῶν",
+     "τάς",
+     "κώμας",
+     "πορθοίη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t4",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Everyone knew that the traitor had not escaped the notice of the judges.",
+    "answer": "πάντες ἠπίσταντο ὅτι ὁ προδότης οὐκ ἔλαθε τοὺς δικαστάς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ἠπίσταντο",
+     "ὅτι",
+     "ὁ",
+     "προδότης",
+     "οὐκ",
+     "ἔλαθε",
+     "τούς",
+     "δικαστάς"
+    ]
+   },
+   {
+    "prompt": "I am convinced that these things did not happen without the gods.",
+    "answer": "πέπεισμαι ὅτι ταῦτα οὐκ ἄνευ τῶν θεῶν ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέπεισμαι",
+     "ὅτι",
+     "ταῦτα",
+     "οὐκ",
+     "ἄνευ",
+     "τῶν",
+     "θεῶν",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "He proved that the accusation was neither just nor true.",
+    "answer": "ἀπέδειξεν ὅτι τὸ ἔγκλημα οὔτε δίκαιον οὔτε ἀληθὲς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέδειξεν",
+     "ὅτι",
+     "τό",
+     "ἔγκλημα",
+     "οὔτε",
+     "δίκαιον",
+     "ἀληθές",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "We learned that the enemy would not lay down their arms before nightfall.",
+    "answer": "ἐπυθόμεθα ὅτι οἱ πολέμιοι οὐ καταθήσοιντο τὰ ὅπλα πρὸ τῆς νυκτός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπυθόμεθα",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "οὐ",
+     "καταθήσοιντο",
+     "τά",
+     "ὅπλα",
+     "πρό",
+     "τῆς",
+     "νυκτός"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t5",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that, since the walls had not been finished, the city was in danger.",
+    "answer": "εἶπεν ὅτι, τῶν τειχῶν οὐκ ἐπιτετελεσμένων, ἡ πόλις κινδυνεύοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "τῶν",
+     "τειχῶν",
+     "οὐκ",
+     "ἐπιτετελεσμένων",
+     "ἡ",
+     "πόλις",
+     "κινδυνεύοι"
+    ]
+   },
+   {
+    "prompt": "She answered that she would not obey those who were not present.",
+    "answer": "ἀπεκρίνατο ὅτι οὐ πείσοιτο τοῖς μὴ παροῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "οὐ",
+     "πείσοιτο",
+     "τοῖς",
+     "μή",
+     "παροῦσιν"
+    ]
+   },
+   {
+    "prompt": "He said that the soldiers, though fewer, had not fled.",
+    "answer": "ἔλεξεν ὅτι οἱ στρατιῶται, καίπερ ἐλάττους ὄντες, οὐκ ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεξεν",
+     "ὅτι",
+     "οἱ",
+     "στρατιῶται",
+     "καίπερ",
+     "ἐλάττους",
+     "ὄντες",
+     "οὐκ",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "They perceived that the plot had not remained hidden.",
+    "answer": "ᾔσθοντο ὅτι ἡ ἐπιβουλὴ οὐ λέληθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔσθοντο",
+     "ὅτι",
+     "ἡ",
+     "ἐπιβουλή",
+     "οὐ",
+     "λέληθεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t6",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The seer foretold that the army would not return home.",
+    "answer": "ὁ μάντις προεῖπεν ὡς ὁ στρατὸς οὐ νοστήσοι οἴκαδε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάντις",
+     "προεῖπεν",
+     "ὡς",
+     "στρατός",
+     "οὐ",
+     "νοστήσοι",
+     "οἴκαδε"
+    ]
+   },
+   {
+    "prompt": "He wrote that he would never betray his allies in war.",
+    "answer": "ἔγραψεν ὅτι οὐδέποτε τοὺς συμμάχους ἐν πολέμῳ προδώσοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγραψεν",
+     "ὅτι",
+     "οὐδέποτε",
+     "τούς",
+     "συμμάχους",
+     "ἐν",
+     "πολέμῳ",
+     "προδώσοι"
+    ]
+   },
+   {
+    "prompt": "The witness swore that he had not seen the defendant near the harbor.",
+    "answer": "ὁ μάρτυς ὤμοσεν ὡς οὐκ εἶδε τὸν φεύγοντα πρὸς τῷ λιμένι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάρτυς",
+     "ὤμοσεν",
+     "ὡς",
+     "οὐκ",
+     "εἶδε",
+     "τόν",
+     "φεύγοντα",
+     "πρός",
+     "τῷ",
+     "λιμένι"
+    ]
+   },
+   {
+    "prompt": "It was announced that the fleet had not yet sailed out of the harbor.",
+    "answer": "ἠγγέλθη ὅτι ὁ στόλος οὔπω ἐκπεπλεύκοι ἐκ τοῦ λιμένος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠγγέλθη",
+     "ὅτι",
+     "ὁ",
+     "στόλος",
+     "οὔπω",
+     "ἐκπεπλεύκοι",
+     "ἐκ",
+     "τοῦ",
+     "λιμένος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t7",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he had never seen a braver soldier.",
+    "answer": "εἶπεν ὅτι οὐδέποτε ἀνδρειότερον στρατιώτην ἴδοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "οὐδέποτε",
+     "ἀνδρειότερον",
+     "στρατιώτην",
+     "ἴδοι"
+    ]
+   },
+   {
+    "prompt": "We think that no one is happy who lacks friends.",
+    "answer": "νομίζομεν ὅτι οὐδεὶς εὐδαίμων ἐστὶν ὃς φίλων στέρεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζομεν",
+     "ὅτι",
+     "οὐδεὶς",
+     "εὐδαίμων",
+     "ἐστὶν",
+     "ὃς",
+     "φίλων",
+     "στέρεται"
+    ]
+   },
+   {
+    "prompt": "She revealed that she would not obey those unjust laws.",
+    "answer": "ἐδήλωσεν ὅτι τοῖς ἀδίκοις νόμοις οὐ πείσοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδήλωσεν",
+     "ὅτι",
+     "τοῖς",
+     "ἀδίκοις",
+     "νόμοις",
+     "οὐ",
+     "πείσοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t8",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The general announced that no one should leave the camp by night.",
+    "answer": "ὁ στρατηγὸς προεῖπεν ὡς μηδεὶς νυκτὸς ἐκ τοῦ στρατοπέδου ἀπίοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "προεῖπεν",
+     "ὡς",
+     "μηδεὶς",
+     "νυκτὸς",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἀπίοι"
+    ]
+   },
+   {
+    "prompt": "He replied that he would never betray his friends for money.",
+    "answer": "ἀπεκρίνατο ὅτι οὐδέποτε τοὺς φίλους χρημάτων ἕνεκα προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "οὐδέποτε",
+     "τοὺς",
+     "φίλους",
+     "χρημάτων",
+     "ἕνεκα",
+     "προδοίη"
+    ]
+   },
+   {
+    "prompt": "It was clear to all that the young man was not lying.",
+    "answer": "πᾶσι δῆλον ἦν ὅτι ὁ νεανίας οὐ ψεύδοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶσι",
+     "δῆλον",
+     "ἦν",
+     "ὅτι",
+     "ὁ",
+     "νεανίας",
+     "οὐ",
+     "ψεύδοιτο"
+    ]
+   },
+   {
+    "prompt": "He wrote that the soldiers would not receive their pay before winter.",
+    "answer": "ἔγραψεν ὅτι οἱ στρατιῶται τὸν μισθὸν οὐ πρὸ τοῦ χειμῶνος λήψοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγραψεν",
+     "ὅτι",
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "μισθὸν",
+     "οὐ",
+     "πρὸ",
+     "τοῦ",
+     "χειμῶνος",
+     "λήψοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2710-negatives-of-indirect-discourse-t9",
+  "sectionId": "sm-2710-negatives-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "I believe that neither wealth nor honor makes men wise.",
+    "answer": "νομίζω ὅτι οὔτε πλοῦτος οὔτε τιμὴ σοφοὺς ποιεῖ τοὺς ἀνθρώπους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "ὅτι",
+     "οὔτε",
+     "πλοῦτος",
+     "τιμὴ",
+     "σοφοὺς",
+     "ποιεῖ",
+     "τοὺς",
+     "ἀνθρώπους"
+    ]
+   },
+   {
+    "prompt": "The prisoners swore that they had done no wrong.",
+    "answer": "οἱ αἰχμάλωτοι ὤμοσαν ὅτι οὐδὲν ἀδικήσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ὤμοσαν",
+     "ὅτι",
+     "οὐδὲν",
+     "ἀδικήσειαν"
+    ]
+   },
+   {
+    "prompt": "The ambassadors declared that the king would not send help.",
+    "answer": "οἱ πρέσβεις ἀπήγγειλαν ὅτι ὁ βασιλεὺς βοήθειαν οὐ πέμψοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἀπήγγειλαν",
+     "ὅτι",
+     "ὁ",
+     "βασιλεὺς",
+     "βοήθειαν",
+     "οὐ",
+     "πέμψοι"
+    ]
+   },
+   {
+    "prompt": "The herald proclaimed that no one should touch the sacred grove.",
+    "answer": "ὁ κῆρυξ ἐκήρυξεν ὡς μηδεὶς τοῦ ἱεροῦ ἄλσους ἅπτοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ἐκήρυξεν",
+     "ὡς",
+     "μηδεὶς",
+     "τοῦ",
+     "ἱεροῦ",
+     "ἄλσους",
+     "ἅπτοιτο"
+    ]
+   }
+  ]
+ }
+]
