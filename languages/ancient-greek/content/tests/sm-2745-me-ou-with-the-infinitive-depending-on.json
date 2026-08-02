@@ -1,0 +1,914 @@
+[
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t1",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "It is not possible for the general, having seen these things, not to fear the enemy.",
+    "answer": "οὐχ οἷόν τέ ἐστι τὸν στρατηγόν, ταῦτα ἰδόντα, μὴ οὐ φοβεῖσθαι τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "οἷόν",
+     "τέ",
+     "ἐστι",
+     "τὸν",
+     "στρατηγόν",
+     "ταῦτα",
+     "ἰδόντα",
+     "μὴ",
+     "οὐ",
+     "φοβεῖσθαι",
+     "τοὺς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "I am unable, having heard such things, not to admire the poet.",
+    "answer": "ἀδύνατός εἰμι, τοιαῦτα ἀκούσας, μὴ οὐ θαυμάζειν τὸν ποιητήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατός",
+     "εἰμι",
+     "τοιαῦτα",
+     "ἀκούσας",
+     "μὴ",
+     "οὐ",
+     "θαυμάζειν",
+     "τὸν",
+     "ποιητήν"
+    ]
+   },
+   {
+    "prompt": "No one who has fought so bravely can avoid being praised.",
+    "answer": "οὐδεὶς οὕτως ἀνδρείως μαχεσάμενος οἷός τέ ἐστι μὴ οὐκ ἐπαινεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "οὕτως",
+     "ἀνδρείως",
+     "μαχεσάμενος",
+     "οἷός",
+     "τέ",
+     "ἐστι",
+     "μὴ",
+     "οὐκ",
+     "ἐπαινεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "It was not possible for the citizens, besieged for so long, not to surrender the city.",
+    "answer": "οὐχ οἷόν τε ἦν τοὺς πολίτας, τοσοῦτον χρόνον πολιορκουμένους, μὴ οὐ παραδοῦναι τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "οἷόν",
+     "τε",
+     "ἦν",
+     "τοὺς",
+     "πολίτας",
+     "τοσοῦτον",
+     "χρόνον",
+     "πολιορκουμένους",
+     "μὴ",
+     "οὐ",
+     "παραδοῦναι",
+     "τὴν",
+     "πόλιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t2",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "It is not right for us, who have received such benefits, not to help our friends.",
+    "answer": "οὐχ ὅσιόν ἐστιν ἡμῖν, τοιαῦτα εὖ παθόντας, μὴ οὐ βοηθεῖν τοῖς φίλοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅσιόν",
+     "ἐστιν",
+     "ἡμῖν",
+     "τοιαῦτα",
+     "εὖ",
+     "παθόντας",
+     "μὴ",
+     "οὐ",
+     "βοηθεῖν",
+     "τοῖς",
+     "φίλοις"
+    ]
+   },
+   {
+    "prompt": "It is not just for the judges, who have heard the truth, not to acquit the man.",
+    "answer": "οὐ δίκαιόν ἐστι τοὺς δικαστάς, τὴν ἀλήθειαν ἀκούσαντας, μὴ οὐκ ἀπολύειν τὸν ἄνδρα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιόν",
+     "ἐστι",
+     "τοὺς",
+     "δικαστάς",
+     "τὴν",
+     "ἀλήθειαν",
+     "ἀκούσαντας",
+     "μὴ",
+     "οὐκ",
+     "ἀπολύειν",
+     "τὸν",
+     "ἄνδρα"
+    ]
+   },
+   {
+    "prompt": "It is not holy for the priests not to sacrifice to the gods before the battle.",
+    "answer": "οὐχ ὅσιόν ἐστι τοὺς ἱερέας μὴ οὐ θύειν τοῖς θεοῖς πρὸ τῆς μάχης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅσιόν",
+     "ἐστι",
+     "τοὺς",
+     "ἱερέας",
+     "μὴ",
+     "οὐ",
+     "θύειν",
+     "τοῖς",
+     "θεοῖς",
+     "πρὸ",
+     "τῆς",
+     "μάχης"
+    ]
+   },
+   {
+    "prompt": "It would not be just for me, being a friend, not to tell you the truth.",
+    "answer": "οὐ δίκαιον ἂν εἴη ἐμέ, φίλον ὄντα, μὴ οὐ τὰ ἀληθῆ σοι λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιον",
+     "ἂν",
+     "εἴη",
+     "ἐμέ",
+     "φίλον",
+     "ὄντα",
+     "μὴ",
+     "οὐ",
+     "τὰ",
+     "ἀληθῆ",
+     "σοι",
+     "λέγειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t3",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "It is irrational not to divide the argument in two.",
+    "answer": "ἄλογόν ἐστι μὴ οὐ τὸν λόγον διχῇ τέμνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄλογόν",
+     "ἐστι",
+     "μὴ",
+     "οὐ",
+     "τὸν",
+     "λόγον",
+     "διχῇ",
+     "τέμνειν"
+    ]
+   },
+   {
+    "prompt": "It is senseless for the young man, being so eager to learn, not to seek out a teacher.",
+    "answer": "ἀνόητόν ἐστι τὸν νεανίαν, οὕτω φιλομαθῆ ὄντα, μὴ οὐ ζητεῖν διδάσκαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνόητόν",
+     "ἐστι",
+     "τὸν",
+     "νεανίαν",
+     "οὕτω",
+     "φιλομαθῆ",
+     "ὄντα",
+     "μὴ",
+     "οὐ",
+     "ζητεῖν",
+     "διδάσκαλον"
+    ]
+   },
+   {
+    "prompt": "It is folly for those who have suffered such things not to guard against their enemies.",
+    "answer": "ἄνοιά ἐστι τοὺς τοιαῦτα παθόντας μὴ οὐ φυλάττεσθαι τοὺς ἐχθρούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄνοιά",
+     "ἐστι",
+     "τοὺς",
+     "τοιαῦτα",
+     "παθόντας",
+     "μὴ",
+     "οὐ",
+     "φυλάττεσθαι",
+     "τοὺς",
+     "ἐχθρούς"
+    ]
+   },
+   {
+    "prompt": "It is utterly senseless for me not to grant you this favour as well.",
+    "answer": "πάνυ ἀνόητόν ἐστιν ἐμὲ μὴ οὐ καὶ τοῦτο χαρίζεσθαί σοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάνυ",
+     "ἀνόητόν",
+     "ἐστιν",
+     "ἐμὲ",
+     "μὴ",
+     "οὐ",
+     "καὶ",
+     "τοῦτο",
+     "χαρίζεσθαί",
+     "σοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t4",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "It is disgraceful for the soldiers, who have sworn the oath, not to cooperate zealously.",
+    "answer": "αἰσχρόν ἐστι τοὺς στρατιώτας, τὸν ὅρκον ὀμόσαντας, μὴ οὐ συσπουδάζειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "τοὺς",
+     "στρατιώτας",
+     "τὸν",
+     "ὅρκον",
+     "ὀμόσαντας",
+     "μὴ",
+     "οὐ",
+     "συσπουδάζειν"
+    ]
+   },
+   {
+    "prompt": "It is terrible for a general not to share the dangers with his men.",
+    "answer": "δεινόν ἐστι στρατηγὸν μὴ οὐ κοινωνεῖν τῶν κινδύνων τοῖς στρατιώταις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινόν",
+     "ἐστι",
+     "στρατηγὸν",
+     "μὴ",
+     "οὐ",
+     "κοινωνεῖν",
+     "τῶν",
+     "κινδύνων",
+     "τοῖς",
+     "στρατιώταις"
+    ]
+   },
+   {
+    "prompt": "All were ashamed not to work eagerly together with the others.",
+    "answer": "πᾶσιν αἰσχύνη ἦν μὴ οὐ συσπουδάζειν τοῖς ἄλλοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶσιν",
+     "αἰσχύνη",
+     "ἦν",
+     "μὴ",
+     "οὐ",
+     "συσπουδάζειν",
+     "τοῖς",
+     "ἄλλοις"
+    ]
+   },
+   {
+    "prompt": "It is shameful for you at least, being wise, not to be willing to teach the young.",
+    "answer": "αἰσχρόν ἐστι σέ γε, σοφὸν ὄντα, μὴ οὐκ ἐθέλειν τοὺς νέους διδάσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "σέ",
+     "γε",
+     "σοφὸν",
+     "ὄντα",
+     "μὴ",
+     "οὐκ",
+     "ἐθέλειν",
+     "τοὺς",
+     "νέους",
+     "διδάσκειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t5",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "No one who speaks the truth can avoid being hated by the tyrant.",
+    "answer": "οὐδεὶς τὰ ἀληθῆ λέγων δύναται μὴ οὐ μισεῖσθαι ὑπὸ τοῦ τυράννου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγων",
+     "δύναται",
+     "μὴ",
+     "οὐ",
+     "μισεῖσθαι",
+     "ὑπὸ",
+     "τοῦ",
+     "τυράννου"
+    ]
+   },
+   {
+    "prompt": "The prisoners could not help obeying those who guarded them.",
+    "answer": "οἱ αἰχμάλωτοι οὐκ ἐδύναντο μὴ οὐ πείθεσθαι τοῖς φυλάττουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "οὐκ",
+     "ἐδύναντο",
+     "μὴ",
+     "οὐ",
+     "πείθεσθαι",
+     "τοῖς",
+     "φυλάττουσιν"
+    ]
+   },
+   {
+    "prompt": "It is not possible for the wise, when they have considered everything, not to fear death.",
+    "answer": "οὐκ ἔστι τοὺς σοφούς, πάντα σκεψαμένους, μὴ οὐ δεδιέναι τὸν θάνατον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστι",
+     "τοὺς",
+     "σοφούς",
+     "πάντα",
+     "σκεψαμένους",
+     "μὴ",
+     "οὐ",
+     "δεδιέναι",
+     "τὸν",
+     "θάνατον"
+    ]
+   },
+   {
+    "prompt": "No one who has done wrong can escape paying the penalty.",
+    "answer": "οὐδεὶς ἀδικήσας οἷός τέ ἐστι μὴ οὐ δίκην διδόναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἀδικήσας",
+     "οἷός",
+     "τέ",
+     "ἐστι",
+     "μὴ",
+     "οὐ",
+     "δίκην",
+     "διδόναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t6",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "It is not endurable for free men not to defend their own land.",
+    "answer": "οὐκ ἀνεκτόν ἐστιν ἐλευθέρους ἄνδρας μὴ οὐκ ἀμύνειν τῇ ἑαυτῶν χώρᾳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀνεκτόν",
+     "ἐστιν",
+     "ἐλευθέρους",
+     "ἄνδρας",
+     "μὴ",
+     "οὐκ",
+     "ἀμύνειν",
+     "τῇ",
+     "ἑαυτῶν",
+     "χώρᾳ"
+    ]
+   },
+   {
+    "prompt": "It is not right for you, as you promised, not to assist justice.",
+    "answer": "οὐχ ὅσιόν ἐστί σοι, ὥσπερ ὑπέσχου, μὴ οὐ βοηθεῖν τῇ δικαιοσύνῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅσιόν",
+     "ἐστί",
+     "σοι",
+     "ὥσπερ",
+     "ὑπέσχου",
+     "μὴ",
+     "οὐ",
+     "βοηθεῖν",
+     "τῇ",
+     "δικαιοσύνῃ"
+    ]
+   },
+   {
+    "prompt": "It is irrational not to make a two-fold division of the whole.",
+    "answer": "ἄλογόν ἐστι τὸ μὴ οὐ τὸ ὅλον διχῇ τέμνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄλογόν",
+     "ἐστι",
+     "τὸ",
+     "μὴ",
+     "οὐ",
+     "ὅλον",
+     "διχῇ",
+     "τέμνειν"
+    ]
+   },
+   {
+    "prompt": "They could not persuade the assembly that he was not a man planning great things.",
+    "answer": "οὐκ ἔπειθον τὴν ἐκκλησίαν τὸ μὴ οὐ μεγάλα βουλευόμενον εἶναι αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔπειθον",
+     "τὴν",
+     "ἐκκλησίαν",
+     "τὸ",
+     "μὴ",
+     "οὐ",
+     "μεγάλα",
+     "βουλευόμενον",
+     "εἶναι",
+     "αὐτόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t7",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "The judge, having heard both parties, cannot help condemning the wrongdoer.",
+    "answer": "οὐχ οἷός τέ ἐστιν ὁ δικαστής, ἀμφοτέρων ἀκούσας, μὴ οὐ καταψηφίζεσθαι τοῦ ἀδικοῦντος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "οἷός",
+     "τέ",
+     "ἐστιν",
+     "ὁ",
+     "δικαστής",
+     "ἀμφοτέρων",
+     "ἀκούσας",
+     "μὴ",
+     "οὐ",
+     "καταψηφίζεσθαι",
+     "τοῦ",
+     "ἀδικοῦντος"
+    ]
+   },
+   {
+    "prompt": "It is not holy for those who have received an oath not to guard their good faith.",
+    "answer": "οὐχ ὅσιόν ἐστι τοῖς ὅρκον δεξαμένοις μὴ οὐ τὴν πίστιν φυλάττειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅσιόν",
+     "ἐστι",
+     "τοῖς",
+     "ὅρκον",
+     "δεξαμένοις",
+     "μὴ",
+     "οὐ",
+     "τὴν",
+     "πίστιν",
+     "φυλάττειν"
+    ]
+   },
+   {
+    "prompt": "It is senseless for us, who long for wisdom, not to honor our teachers.",
+    "answer": "ἄνοιά ἐστιν ἡμῖν, σοφίαν ποθοῦσι, μὴ οὐ τιμᾶν τοὺς διδασκάλους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄνοιά",
+     "ἐστιν",
+     "ἡμῖν",
+     "σοφίαν",
+     "ποθοῦσι",
+     "μὴ",
+     "οὐ",
+     "τιμᾶν",
+     "τοὺς",
+     "διδασκάλους"
+    ]
+   },
+   {
+    "prompt": "It is not endurable for the citizens not to punish traitors.",
+    "answer": "οὐκ ἀνεκτόν ἐστι τοῖς πολίταις μὴ οὐ κολάζειν τοὺς προδότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀνεκτόν",
+     "ἐστι",
+     "τοῖς",
+     "πολίταις",
+     "μὴ",
+     "οὐ",
+     "κολάζειν",
+     "τοὺς",
+     "προδότας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t8",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "No one, seeing the injustice, is able not to pity those being wronged.",
+    "answer": "οὐδεὶς τὴν ἀδικίαν ὁρῶν οἷός τέ ἐστι μὴ οὐκ ἐλεεῖν τοὺς ἀδικουμένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "τὴν",
+     "ἀδικίαν",
+     "ὁρῶν",
+     "οἷός",
+     "τέ",
+     "ἐστι",
+     "μὴ",
+     "οὐκ",
+     "ἐλεεῖν",
+     "τοὺς",
+     "ἀδικουμένους"
+    ]
+   },
+   {
+    "prompt": "It is disgraceful for the general not to share the danger with his soldiers.",
+    "answer": "αἰσχρόν ἐστι τῷ στρατηγῷ μὴ οὐ συγκινδυνεύειν τοῖς στρατιώταις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "τῷ",
+     "στρατηγῷ",
+     "μὴ",
+     "οὐ",
+     "συγκινδυνεύειν",
+     "τοῖς",
+     "στρατιώταις"
+    ]
+   },
+   {
+    "prompt": "It is impossible for the wise not to seek the truth.",
+    "answer": "ἀδύνατόν ἐστι τοῖς σοφοῖς μὴ οὐ ζητεῖν τὴν ἀλήθειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατόν",
+     "ἐστι",
+     "τοῖς",
+     "σοφοῖς",
+     "μὴ",
+     "οὐ",
+     "ζητεῖν",
+     "τὴν",
+     "ἀλήθειαν"
+    ]
+   },
+   {
+    "prompt": "It is terrible for the guards not to keep watch over the walls.",
+    "answer": "δεινόν ἐστι τοὺς φύλακας μὴ οὐ φυλάττειν τὰ τείχη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινόν",
+     "ἐστι",
+     "τοὺς",
+     "φύλακας",
+     "μὴ",
+     "οὐ",
+     "φυλάττειν",
+     "τὰ",
+     "τείχη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t9",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "The ambassadors could not help announcing the peace.",
+    "answer": "οἱ πρέσβεις οὐκ ἐδύναντο μὴ οὐκ ἀγγέλλειν τὴν εἰρήνην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "οὐκ",
+     "ἐδύναντο",
+     "μὴ",
+     "ἀγγέλλειν",
+     "τὴν",
+     "εἰρήνην"
+    ]
+   },
+   {
+    "prompt": "It is not right for the king, since he has promised, not to give gifts to the poet.",
+    "answer": "οὐ δίκαιόν ἐστι τὸν βασιλέα, ὑποσχόμενον, μὴ οὐ διδόναι δῶρα τῷ ποιητῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιόν",
+     "ἐστι",
+     "τὸν",
+     "βασιλέα",
+     "ὑποσχόμενον",
+     "μὴ",
+     "διδόναι",
+     "δῶρα",
+     "τῷ",
+     "ποιητῇ"
+    ]
+   },
+   {
+    "prompt": "It is not possible for those who have sacked the city not to be punished.",
+    "answer": "οὐκ ἔστι τοῖς τὴν πόλιν διαπέρσασι μὴ οὐ κολάζεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστι",
+     "τοῖς",
+     "τὴν",
+     "πόλιν",
+     "διαπέρσασι",
+     "μὴ",
+     "οὐ",
+     "κολάζεσθαι"
+    ]
+   },
+   {
+    "prompt": "It is utterly senseless not to pack up the provisions before the march.",
+    "answer": "πάνυ ἀνόητόν ἐστι μὴ οὐ συσκευάζεσθαι τὰ ἐπιτήδεια πρὸ τῆς πορείας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάνυ",
+     "ἀνόητόν",
+     "ἐστι",
+     "μὴ",
+     "οὐ",
+     "συσκευάζεσθαι",
+     "τὰ",
+     "ἐπιτήδεια",
+     "πρὸ",
+     "τῆς",
+     "πορείας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t10",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "No one who has done wrong can avoid feeling shame before the gods.",
+    "answer": "οὐδεὶς ἀδικήσας οἷός τέ ἐστι μὴ οὐκ αἰσχύνεσθαι τοὺς θεούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἀδικήσας",
+     "οἷός",
+     "τέ",
+     "ἐστι",
+     "μὴ",
+     "οὐκ",
+     "αἰσχύνεσθαι",
+     "τοὺς",
+     "θεούς"
+    ]
+   },
+   {
+    "prompt": "It is not just for the jurors, having heard the truth, not to acquit the innocent.",
+    "answer": "οὐ δίκαιόν ἐστι τοὺς δικαστάς, τὴν ἀλήθειαν ἀκούσαντας, μὴ οὐκ ἀπολύειν τοὺς ἀναιτίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιόν",
+     "ἐστι",
+     "τοὺς",
+     "δικαστάς",
+     "τὴν",
+     "ἀλήθειαν",
+     "ἀκούσαντας",
+     "μὴ",
+     "οὐκ",
+     "ἀπολύειν",
+     "ἀναιτίους"
+    ]
+   },
+   {
+    "prompt": "It is not holy for the priest not to sacrifice to the goddess.",
+    "answer": "οὐχ ὅσιόν ἐστι τὸν ἱερέα μὴ οὐ θύειν τῇ θεῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅσιόν",
+     "ἐστι",
+     "τὸν",
+     "ἱερέα",
+     "μὴ",
+     "οὐ",
+     "θύειν",
+     "τῇ",
+     "θεῷ"
+    ]
+   },
+   {
+    "prompt": "It is not endurable for a free city not to resist those who enslave it.",
+    "answer": "οὐκ ἀνεκτόν ἐστι πόλει ἐλευθέρᾳ μὴ οὐκ ἀνθίστασθαι τοῖς δουλοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀνεκτόν",
+     "ἐστι",
+     "πόλει",
+     "ἐλευθέρᾳ",
+     "μὴ",
+     "ἀνθίστασθαι",
+     "τοῖς",
+     "δουλοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t11",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "It is not possible not to admire the courage of those who have died.",
+    "answer": "οὐχ οἷόν τέ ἐστι μὴ οὐ θαυμάζειν τὴν τῶν ἀποθανόντων ἀνδρείαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "οἷόν",
+     "τέ",
+     "ἐστι",
+     "μὴ",
+     "οὐ",
+     "θαυμάζειν",
+     "τὴν",
+     "τῶν",
+     "ἀποθανόντων",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "It is senseless for those who long for glory not to endure toils.",
+    "answer": "ἄνοιά ἐστι τοῖς δόξαν ποθοῦσι μὴ οὐχ ὑπομένειν τοὺς πόνους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄνοιά",
+     "ἐστι",
+     "τοῖς",
+     "δόξαν",
+     "ποθοῦσι",
+     "μὴ",
+     "οὐχ",
+     "ὑπομένειν",
+     "τοὺς",
+     "πόνους"
+    ]
+   },
+   {
+    "prompt": "It is disgraceful for the young not to obey the laws of the city.",
+    "answer": "αἰσχρόν ἐστι τοὺς νέους μὴ οὐ πείθεσθαι τοῖς τῆς πόλεως νόμοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "τοὺς",
+     "νέους",
+     "μὴ",
+     "οὐ",
+     "πείθεσθαι",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "νόμοις"
+    ]
+   },
+   {
+    "prompt": "The people could not help fearing the power of the tyrant.",
+    "answer": "ὁ δῆμος οὐκ ἐδύνατο μὴ οὐ φοβεῖσθαι τὴν τοῦ τυράννου δύναμιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "οὐκ",
+     "ἐδύνατο",
+     "μὴ",
+     "οὐ",
+     "φοβεῖσθαι",
+     "τὴν",
+     "τοῦ",
+     "τυράννου",
+     "δύναμιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-t12",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "It is not right for the wise man not to teach the younger men.",
+    "answer": "οὐ δίκαιόν ἐστι τὸν σοφὸν μὴ οὐ διδάσκειν τοὺς νεωτέρους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιόν",
+     "ἐστι",
+     "τὸν",
+     "σοφὸν",
+     "μὴ",
+     "διδάσκειν",
+     "τοὺς",
+     "νεωτέρους"
+    ]
+   },
+   {
+    "prompt": "It is impossible for those besieging the wall not to dig through it.",
+    "answer": "ἀδύνατόν ἐστι τοῖς τὸ τεῖχος πολιορκοῦσι μὴ οὐ διορύττειν αὐτό.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδύνατόν",
+     "ἐστι",
+     "τοῖς",
+     "τὸ",
+     "τεῖχος",
+     "πολιορκοῦσι",
+     "μὴ",
+     "οὐ",
+     "διορύττειν",
+     "αὐτό"
+    ]
+   },
+   {
+    "prompt": "No one, having considered the matter well, can avoid praising the law.",
+    "answer": "οὐδεὶς εὖ σκεψάμενος τὸ πρᾶγμα οἷός τέ ἐστι μὴ οὐκ ἐπαινεῖν τὸν νόμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "εὖ",
+     "σκεψάμενος",
+     "τὸ",
+     "πρᾶγμα",
+     "οἷός",
+     "τέ",
+     "ἐστι",
+     "μὴ",
+     "οὐκ",
+     "ἐπαινεῖν",
+     "τὸν",
+     "νόμον"
+    ]
+   },
+   {
+    "prompt": "It is terrible for the allies not to bring aid to the besieged.",
+    "answer": "δεινόν ἐστι τοὺς συμμάχους μὴ οὐ βοηθεῖν τοῖς πολιορκουμένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινόν",
+     "ἐστι",
+     "τοὺς",
+     "συμμάχους",
+     "μὴ",
+     "οὐ",
+     "βοηθεῖν",
+     "τοῖς",
+     "πολιορκουμένοις"
+    ]
+   }
+  ]
+ }
+]
