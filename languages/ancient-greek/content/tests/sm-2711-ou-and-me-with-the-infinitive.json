@@ -1,0 +1,560 @@
+[
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t1",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "He advised the citizens not to trust the tyrant.",
+    "answer": "συνεβούλευσε τοῖς πολίταις μὴ πιστεύειν τῷ τυράννῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συνεβούλευσε",
+     "τοῖς",
+     "πολίταις",
+     "μή",
+     "πιστεύειν",
+     "τῷ",
+     "τυράννῳ"
+    ]
+   },
+   {
+    "prompt": "He ordered the soldiers not to abandon the walls.",
+    "answer": "ἐκέλευσε τοὺς στρατιώτας μὴ λιπεῖν τὰ τείχη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκέλευσε",
+     "τούς",
+     "στρατιώτας",
+     "μή",
+     "λιπεῖν",
+     "τά",
+     "τείχη"
+    ]
+   },
+   {
+    "prompt": "One must not flee from danger.",
+    "answer": "χρὴ μὴ φεύγειν τὸν κίνδυνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρή",
+     "μή",
+     "φεύγειν",
+     "τόν",
+     "κίνδυνον"
+    ]
+   },
+   {
+    "prompt": "We beg you not to betray the city.",
+    "answer": "ἱκετεύομεν ὑμᾶς μὴ προδοῦναι τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἱκετεύομεν",
+     "ὑμᾶς",
+     "μή",
+     "προδοῦναι",
+     "τήν",
+     "πόλιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t2",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The general believes that he does not fear death.",
+    "answer": "ὁ στρατηγὸς νομίζει οὐ φοβεῖσθαι τὸν θάνατον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "νομίζει",
+     "οὐ",
+     "φοβεῖσθαι",
+     "τόν",
+     "θάνατον"
+    ]
+   },
+   {
+    "prompt": "They believed that the enemy would not attack.",
+    "answer": "ἐνόμιζον τοὺς πολεμίους οὐκ ἐπιθήσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνόμιζον",
+     "τούς",
+     "πολεμίους",
+     "οὐκ",
+     "ἐπιθήσεσθαι"
+    ]
+   },
+   {
+    "prompt": "I think that these men are not telling the truth.",
+    "answer": "οἴομαι τούτους οὐ τὰ ἀληθῆ λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἴομαι",
+     "τούτους",
+     "οὐ",
+     "τά",
+     "ἀληθῆ",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "The woman said that she had not seen the messenger.",
+    "answer": "ἡ γυνὴ ἔφη οὐχ ἑωρακέναι τὸν ἄγγελον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "ἔφη",
+     "οὐχ",
+     "ἑωρακέναι",
+     "τόν",
+     "ἄγγελον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t3",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "He gave a warning not to injure the allies.",
+    "answer": "ἔδωκε παράδειγμα τοῦ μὴ ἀδικεῖν τοὺς συμμάχους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδωκε",
+     "παράδειγμα",
+     "τοῦ",
+     "μή",
+     "ἀδικεῖν",
+     "τούς",
+     "συμμάχους"
+    ]
+   },
+   {
+    "prompt": "In order to avoid doing what was commanded, he fled.",
+    "answer": "ὑπὲρ τοῦ μὴ ποιῆσαι τὸ κελευόμενον ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέρ",
+     "τοῦ",
+     "μή",
+     "ποιῆσαι",
+     "τό",
+     "κελευόμενον",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "Not obeying the laws is shameful.",
+    "answer": "τὸ μὴ πείθεσθαι τοῖς νόμοις αἰσχρόν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "μή",
+     "πείθεσθαι",
+     "τοῖς",
+     "νόμοις",
+     "αἰσχρόν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Because of not wishing to fight, they were blamed.",
+    "answer": "διὰ τὸ μὴ βούλεσθαι μάχεσθαι ᾐτιάθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διά",
+     "τό",
+     "μή",
+     "βούλεσθαι",
+     "μάχεσθαι",
+     "ᾐτιάθησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t4",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "Having deliberated, they decided not to send the ambassadors.",
+    "answer": "βουλευσάμενοι ἔγνωσαν μὴ πέμπειν τοὺς πρέσβεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλευσάμενοι",
+     "ἔγνωσαν",
+     "μή",
+     "πέμπειν",
+     "τούς",
+     "πρέσβεις"
+    ]
+   },
+   {
+    "prompt": "It is possible for the wise man not to be deceived.",
+    "answer": "ἔξεστι τῷ σοφῷ μὴ ἐξαπατᾶσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστι",
+     "τῷ",
+     "σοφῷ",
+     "μή",
+     "ἐξαπατᾶσθαι"
+    ]
+   },
+   {
+    "prompt": "He persuaded his friends not to sail away.",
+    "answer": "ἔπεισε τοὺς φίλους μὴ ἀποπλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπεισε",
+     "τούς",
+     "φίλους",
+     "μή",
+     "ἀποπλεῖν"
+    ]
+   },
+   {
+    "prompt": "The old man taught his sons not to despise the poor.",
+    "answer": "ὁ γέρων τοὺς υἱοὺς ἐδίδαξε μὴ καταφρονεῖν τῶν πενήτων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τούς",
+     "υἱούς",
+     "ἐδίδαξε",
+     "μή",
+     "καταφρονεῖν",
+     "τῶν",
+     "πενήτων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t5",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The witness swore that he had not taken the money.",
+    "answer": "ὁ μάρτυς ὤμοσεν οὐ λαβεῖν τὸ ἀργύριον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάρτυς",
+     "ὤμοσεν",
+     "οὐ",
+     "λαβεῖν",
+     "τό",
+     "ἀργύριον"
+    ]
+   },
+   {
+    "prompt": "He declared that the soldiers were not willing to obey.",
+    "answer": "ἀπεφήνατο τοὺς στρατιώτας οὐκ ἐθέλειν πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεφήνατο",
+     "τούς",
+     "στρατιώτας",
+     "οὐκ",
+     "ἐθέλειν",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "We suppose that these things did not happen justly.",
+    "answer": "ὑπολαμβάνομεν ταῦτα οὐ δικαίως γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπολαμβάνομεν",
+     "ταῦτα",
+     "οὐ",
+     "δικαίως",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "The messenger reported that the city had not been captured.",
+    "answer": "ὁ ἄγγελος ἤγγειλε τὴν πόλιν οὐχ ἑαλωκέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἤγγειλε",
+     "τήν",
+     "πόλιν",
+     "οὐχ",
+     "ἑαλωκέναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t6",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "He praised them for not abandoning their post.",
+    "answer": "ἐπῄνεσεν αὐτοὺς ἐπὶ τῷ μὴ καταλιπεῖν τὴν τάξιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπῄνεσεν",
+     "αὐτούς",
+     "ἐπί",
+     "τῷ",
+     "μή",
+     "καταλιπεῖν",
+     "τήν",
+     "τάξιν"
+    ]
+   },
+   {
+    "prompt": "Because of not being present, he lost the prize.",
+    "answer": "διὰ τὸ μὴ παρεῖναι ἀπέβαλε τὸ ἆθλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διά",
+     "τό",
+     "μή",
+     "παρεῖναι",
+     "ἀπέβαλε",
+     "ἆθλον"
+    ]
+   },
+   {
+    "prompt": "There is nothing better than not fearing death.",
+    "answer": "ἔστιν οὐδὲν ἄμεινον τοῦ μὴ δεδιέναι τὸν θάνατον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστιν",
+     "οὐδέν",
+     "ἄμεινον",
+     "τοῦ",
+     "μή",
+     "δεδιέναι",
+     "τόν",
+     "θάνατον"
+    ]
+   },
+   {
+    "prompt": "The desire not to be ruled makes men brave.",
+    "answer": "ἡ τοῦ μὴ ἄρχεσθαι ἐπιθυμία ποιεῖ τοὺς ἀνθρώπους ἀνδρείους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "μή",
+     "ἄρχεσθαι",
+     "ἐπιθυμία",
+     "ποιεῖ",
+     "τούς",
+     "ἀνθρώπους",
+     "ἀνδρείους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t7",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The mother begged her son not to flee from the battle.",
+    "answer": "ἡ μήτηρ ἐδεῖτο τοῦ υἱοῦ μὴ φεύγειν ἐκ τῆς μάχης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "ἐδεῖτο",
+     "τοῦ",
+     "υἱοῦ",
+     "μή",
+     "φεύγειν",
+     "ἐκ",
+     "τῆς",
+     "μάχης"
+    ]
+   },
+   {
+    "prompt": "The generals ordered the soldiers not to leave the walls.",
+    "answer": "οἱ στρατηγοὶ τοῖς στρατιώταις προσέταξαν μὴ λείπειν τὰ τείχη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατηγοί",
+     "τοῖς",
+     "στρατιώταις",
+     "προσέταξαν",
+     "μή",
+     "λείπειν",
+     "τά",
+     "τείχη"
+    ]
+   },
+   {
+    "prompt": "It is necessary that cowards not rule the brave.",
+    "answer": "δεῖ τοὺς δειλοὺς μὴ ἄρχειν τῶν ἀνδρείων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "τούς",
+     "δειλούς",
+     "μή",
+     "ἄρχειν",
+     "τῶν",
+     "ἀνδρείων"
+    ]
+   },
+   {
+    "prompt": "Fearing the storm, the sailors chose not to sail.",
+    "answer": "τὸν χειμῶνα φοβούμενοι οἱ ναῦται εἵλοντο μὴ πλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "χειμῶνα",
+     "φοβούμενοι",
+     "οἱ",
+     "ναῦται",
+     "εἵλοντο",
+     "μή",
+     "πλεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t8",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The envoys said that they would not surrender the city.",
+    "answer": "οἱ πρέσβεις ἔφασαν οὐ παραδώσειν τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἔφασαν",
+     "οὐ",
+     "παραδώσειν",
+     "τήν",
+     "πόλιν"
+    ]
+   },
+   {
+    "prompt": "Socrates thought that he was not wiser than the others.",
+    "answer": "ὁ Σωκράτης ἐνόμιζεν οὐ σοφώτερος εἶναι τῶν ἄλλων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "ἐνόμιζεν",
+     "οὐ",
+     "σοφώτερος",
+     "εἶναι",
+     "τῶν",
+     "ἄλλων"
+    ]
+   },
+   {
+    "prompt": "The messenger reported that the enemy had not yet crossed the river.",
+    "answer": "ὁ ἄγγελος ἤγγειλε τοὺς πολεμίους οὔπω τὸν ποταμὸν διαβεβηκέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἤγγειλε",
+     "τούς",
+     "πολεμίους",
+     "οὔπω",
+     "τόν",
+     "ποταμόν",
+     "διαβεβηκέναι"
+    ]
+   },
+   {
+    "prompt": "I think that the wise man does not fear poverty.",
+    "answer": "νομίζω τὸν σοφὸν οὐ φοβεῖσθαι τὴν πενίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "τόν",
+     "σοφόν",
+     "οὐ",
+     "φοβεῖσθαι",
+     "τήν",
+     "πενίαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2711-ou-and-me-with-the-infinitive-t9",
+  "sectionId": "sm-2711-ou-and-me-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "The laws are the cause of one's not doing wrong.",
+    "answer": "τοῦ μὴ ἀδικεῖν οἱ νόμοι αἴτιοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "μή",
+     "ἀδικεῖν",
+     "οἱ",
+     "νόμοι",
+     "αἴτιοι"
+    ]
+   },
+   {
+    "prompt": "For the sake of not betraying the city he endured many things.",
+    "answer": "ὑπὲρ τοῦ μὴ προδοῦναι τὴν πόλιν πολλὰ ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέρ",
+     "τοῦ",
+     "μή",
+     "προδοῦναι",
+     "τήν",
+     "πόλιν",
+     "πολλά",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "Not obeying the laws destroys cities.",
+    "answer": "τὸ μὴ πείθεσθαι τοῖς νόμοις τὰς πόλεις διαφθείρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "μή",
+     "πείθεσθαι",
+     "τοῖς",
+     "νόμοις",
+     "τάς",
+     "πόλεις",
+     "διαφθείρει"
+    ]
+   },
+   {
+    "prompt": "Through their not honoring the gods they were considered impious.",
+    "answer": "τῷ μὴ τιμᾶν τοὺς θεοὺς ἀσεβεῖς ἐνομίζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "μή",
+     "τιμᾶν",
+     "τούς",
+     "θεούς",
+     "ἀσεβεῖς",
+     "ἐνομίζοντο"
+    ]
+   }
+  ]
+ }
+]
