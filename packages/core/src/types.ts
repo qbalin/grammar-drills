@@ -111,6 +111,17 @@ export interface VocabCardState extends LemmaEntry {
   id: string;
   created: string;
   fsrs: SerializedCard;
+  /**
+   * The student has written this card's citation themselves.
+   *
+   * A card is a copy of a dictionary entry, not a window onto one: editing it
+   * has never reached the dictionary, which is shipped content and read-only at
+   * runtime. This is the same rule pointing the other way — a citation the
+   * student has corrected is not the dictionary's to revise back on the next
+   * rebuild. Absent on the cards that were taken straight from an entry and
+   * left alone, which is most of them.
+   */
+  citationEdited?: boolean;
 }
 
 /**

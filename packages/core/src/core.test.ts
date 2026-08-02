@@ -336,6 +336,72 @@ describe("Session vocabulary", () => {
     expect(after.refreshCitations()).toBe(0);
   });
 
+  /** The same rebuilt dictionary the test above uses, as a fresh Content. */
+  const rebuiltContent = () =>
+    new Content({
+      ...fixture,
+      lemmas: {
+        manus: [
+          { lemma: "manus", citation: "manus, manūs (f)", gloss: "hand", pos: "noun" },
+        ],
+      },
+    }, testProfile);
+
+  it("never rewrites a citation the student has written", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const id = record(s);
+    // The form was ambiguous and the wrong candidate was saved, so the student
+    // fixes the card. That correction is the point of the edit sheet.
+    s.updateVocab(id, { citation: "manus, manūs (f), a company" });
+    expect(s.vocabCard(id)?.citationEdited).toBe(true);
+    s.progress().citationsVersion = 1;
+
+    // A later rebuild ships its own wording. The card is not the dictionary's
+    // any more, so it keeps the student's — and, being skipped, is not counted
+    // among the cards changed.
+    const after = new Session(rebuiltContent(), s.progress());
+    expect(after.refreshCitations()).toBe(0);
+    expect(after.vocabCard(id)?.citation).toBe("manus, manūs (f), a company");
+    // The generation is still claimed: a dictionary was read, and a run that
+    // skipped every card must not come back at every launch.
+    expect(after.progress().citationsVersion).toBe(testProfile.citationsVersion);
+  });
+
+  it("does not claim the card when the edit changed nothing, or only the gloss", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const id = record(s);
+    // Opening the sheet and saving the citation as it stands is not a
+    // correction, and neither is rewording the meaning.
+    s.updateVocab(id, { citation: "manus, ūs (f)", gloss: "hand, band" });
+    expect(s.vocabCard(id)?.citationEdited).toBeUndefined();
+    s.progress().citationsVersion = 1;
+
+    const after = new Session(rebuiltContent(), s.progress());
+    expect(after.refreshCitations()).toBe(1);
+    expect(after.vocabCard(id)?.citation).toBe("manus, manūs (f)");
+    // The rebuild improved the citation and left the student's meaning alone.
+    expect(after.vocabCard(id)?.gloss).toBe("hand, band");
+  });
+
+  it("edits the card and not the dictionary behind it", () => {
+    const content = new Content(fixture, testProfile);
+    const s = new Session(content);
+    const id = record(s);
+
+    s.updateVocab(id, { citation: "not what the dictionary says", gloss: "nor this" });
+
+    // The entry the card was made from is untouched, so the next student to
+    // meet the form is offered the dictionary's word, not this one's.
+    const [entry] = content.lookup("manibus");
+    expect(entry?.citation).toBe("manus, ūs (f)");
+    expect(entry?.gloss).toBe("hand");
+    // And a card recorded from that same entry afterwards comes out clean —
+    // the card is a copy of the entry, not a window onto it.
+    const fresh = new Session(content);
+    const again = fresh.recordVocab(content.lookup("manibus")[0]!, now);
+    expect(fresh.vocabCard(again)?.citation).toBe("manus, ūs (f)");
+  });
+
   it("leaves cards alone when no dictionary is loaded", () => {
     const s = new Session(new Content(fixture, testProfile));
     const id = record(s);

@@ -555,6 +555,15 @@ export class Session {
    * Correct a card's two sides. The id and the scheduling are left alone, so
    * fixing a citation months in never costs the card its history — which is the
    * only reason editing is safe to offer at any time.
+   *
+   * The edit reaches this card and nothing else. The dictionary is shipped
+   * content, built offline and read-only here, so a corrected citation was
+   * never going to be written back to it — but the reverse was true and is the
+   * same mistake from the other side: `refreshCitations` used to overwrite a
+   * hand-written citation the next time the pack shipped a new dictionary, so
+   * the correction lasted only until the next rebuild and the dictionary still
+   * effectively owned the card. A citation the student has written is theirs
+   * from then on, and is marked as such here.
    */
   updateVocab(
     cardId: string,
@@ -562,7 +571,15 @@ export class Session {
   ): void {
     const card = this.p.vocabCards[cardId];
     if (!card) return;
-    if (patch.citation !== undefined) card.citation = patch.citation.trim();
+    if (patch.citation !== undefined) {
+      const citation = patch.citation.trim();
+      // Only a real change claims the card. Opening the sheet and saving it
+      // untouched is not the student saying the dictionary is wrong.
+      if (citation !== card.citation) card.citationEdited = true;
+      card.citation = citation;
+    }
+    // The gloss needs no such mark: nothing ever rewrites it from the
+    // dictionary, so an edited meaning is already the student's for good.
     if (patch.gloss !== undefined) card.gloss = patch.gloss.trim();
     this.touch();
   }
@@ -579,9 +596,13 @@ export class Session {
    *
    * A card keeps its own copy of the citation, so rebuilding the dictionary —
    * giving verbs their four principal parts, say — would otherwise reach only
-   * words recorded afterwards. Runs once per generation, and never touches a
-   * citation the student has edited into something the dictionary does not say
-   * beyond replacing it with the dictionary's own newer form.
+   * words recorded afterwards. Runs once per generation.
+   *
+   * A card whose citation the student has written is skipped. This is what
+   * makes editing one mean anything: a correction that a later rebuild undoes
+   * is a correction the student has to make again, and they have no way to know
+   * it was undone. The dictionary's improvements are for the cards that are
+   * still the dictionary's.
    *
    * Returns how many cards changed. A no-op when the dictionary is not loaded:
    * every lookup misses, so nothing is overwritten with nothing.
@@ -592,7 +613,12 @@ export class Session {
     let looked = false;
     for (const card of Object.values(this.p.vocabCards)) {
       const candidates = this.content.lookup(card.lemma);
+      // Looked up even when the card is the student's, so that a run which
+      // skips every card still counts as a dictionary having been consulted
+      // and stamps the generation. Otherwise this would re-run at every launch
+      // for as long as the student's own cards were the only ones they had.
       if (candidates.length > 0) looked = true;
+      if (card.citationEdited) continue;
       const match = candidates.find(
         (c) => c.lemma === card.lemma && c.pos === card.pos,
       );
