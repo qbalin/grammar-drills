@@ -1031,7 +1031,6 @@ export function App({ content, session, storage }: Props) {
           config={storage.currentConfig()}
           state={syncState}
           onConfigure={configureSync}
-          onFireConfetti={fireConfetti}
           onExport={() => exportProgress(session.progress())}
           onImport={() => void doImport()}
           onPull={() =>

@@ -15,11 +15,6 @@
  * path in a single colour, and every piece of detail had to be a hole punched
  * in the silhouette.
  *
- * The older form — a bare path string — still renders, as one layer with no
- * colour of its own. `null` fill means "tint this piece from `colors`", which
- * is what every piece used to do. That is not nostalgia: it is what lets the
- * playground draw the old set beside the new one through this same code.
- *
  * Nothing here draws. This module is pure so it can be tested, which the canvas
  * renderer beside it cannot be — jsdom has no `Path2D`.
  */
@@ -28,35 +23,36 @@
 export type ConfettiPack = {
   shapes: Record<string, Shape>;
   throws: string[][];
-  /** Named colours a layer may ask for. Absent in the older form. */
+  /** Named colours a layer may ask for. */
   palette?: Record<string, string>;
-  /** The per-piece tints the older form used. Absent in the newer one. */
-  colors?: string[];
 };
 
-/** Either form: a bare path, or layers of `[paint, path]`. */
-export type Shape = string | [string, string][];
+/** A shape: layers of `[paint, path]`, painted back to front. */
+export type Shape = [string, string][];
 
-/** One layer, resolved. A null fill takes the piece's tint instead. */
-export type Layer = { d: string; fill: string | null };
+/** One layer, resolved. */
+export type Layer = { d: string; fill: string };
 
 /**
- * The layers of a shape, resolved against the pack's palette.
+ * What an unknown paint name is drawn in.
  *
- * An unknown paint name falls back to the piece's tint rather than throwing.
- * The pack tests are what catch a typo; a burst mid-session is not the place to
- * find out, and a piece drawn in the wrong gold beats a blank screen.
+ * The pack tests are what catch a typo — `checkConfetti` fails on a paint the
+ * palette does not have. A burst mid-session is not the place to find out, so
+ * one here draws in the pack's gold and carries on: a piece in the wrong colour
+ * beats a hole in the screen.
  */
+const UNPAINTED = "#e8c98a";
+
+/** The layers of a shape, resolved against the pack's palette. */
 export function layersOf(shape: Shape | undefined, pack: ConfettiPack): Layer[] {
   if (!shape) return [];
-  if (typeof shape === "string") return [{ d: shape, fill: null }];
   const palette = pack.palette ?? {};
   const layers: Layer[] = [];
   for (const layer of shape) {
     if (!Array.isArray(layer) || layer.length < 2) continue;
     const [paint, d] = layer;
     if (!d) continue;
-    layers.push({ d, fill: palette[paint] ?? null });
+    layers.push({ d, fill: palette[paint] ?? UNPAINTED });
   }
   return layers;
 }

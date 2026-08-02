@@ -12,10 +12,39 @@
 import { useCallback, useEffect, useRef } from "react";
 import pack from "@pack/confetti";
 import { shade, shapesOf, type ConfettiPack } from "./shapes.js";
-import { DEFAULTS, browserStore, enabledGroups } from "./bench.js";
 
-/** The colour an outline is drawn in, when one is asked for. */
-const INK = "#000000";
+/**
+ * How a burst behaves.
+ *
+ * These were sliders once, in a bench in Settings, alongside a playground that
+ * drew every shape the packs had so the good ones could be picked out. Both are
+ * gone: the tuning is finished, and a knob nobody is turning is a knob that
+ * drifts. What is left is the setting that was landed on.
+ */
+const PHYSICS = {
+  /** How many pieces a burst throws. */
+  pieces: 200,
+  /** Piece size in CSS pixels, before the per-piece spread. */
+  size: 40,
+  /** Half-width of the size spread, as a fraction: 0.65 is 35%-165%. */
+  sizeSpread: 0.65,
+  /** Where the burst starts, down the viewport. 1 is the bottom edge. */
+  originY: 1,
+  /** How wide it starts, as a fraction of viewport width. */
+  spreadX: 1.2,
+  /** Upward launch speed in CSS pixels per frame, before its own jitter. */
+  speed: 11,
+  /** Gravity, per frame, in CSS pixels. */
+  gravity: 0.2,
+  /** Half-width of the spin, in radians per frame. */
+  spin: 0.15,
+  /**
+   * How far down the viewport a piece falls before it begins to fade. Past 1 it
+   * is off the screen before it starts, which is why the burst reads as pieces
+   * leaving rather than pieces dissolving.
+   */
+  fadeAt: 1.7,
+};
 
 /**
  * How much lighter or darker one piece may be than the colours its shape names.
@@ -46,20 +75,18 @@ function prefersReducedMotion(): boolean {
 }
 
 /** A shape ready to draw: its layers, with the paths already built. */
-type Built = { d: Path2D; fill: string | null }[];
+type Built = { d: Path2D; fill: string }[];
 
 /**
  * Path2D is built per burst rather than at module load: this module is
  * imported by the test environment, where Path2D does not exist, and a throw at
  * import time would take the whole app down with it.
  *
- * `only` names the group to throw; without it one is drawn at random from the
- * groups the bench has left live, or from the pack's own throws when there is
- * no bench — which is every browser but one.
+ * One group is drawn at random from the pack's throws.
  */
-function buildThrow(source: ConfettiPack, only?: string[]): Built[] {
+function buildThrow(source: ConfettiPack): Built[] {
   if (typeof Path2D === "undefined") return [];
-  const groups = only ? [only] : throwable(source);
+  const groups = source.throws ?? [];
   if (!groups.length) return [];
   const group = groups[Math.floor(Math.random() * groups.length)];
   return shapesOf(group, source).map((layers) =>
@@ -67,36 +94,13 @@ function buildThrow(source: ConfettiPack, only?: string[]): Built[] {
   );
 }
 
-/**
- * The groups a random burst may pick from.
- *
- * A curated bench wins over the pack, including when it has been curated down
- * to nothing — that is a deliberate "throw none of these", and quietly falling
- * back to the whole pack would make the toggles look broken. Only the absence
- * of a bench falls back.
- */
-function throwable(source: ConfettiPack): string[][] {
-  const curated = enabledGroups(browserStore(), new Set(Object.keys(source.shapes ?? {})));
-  return curated ?? source.throws ?? [];
-}
-
-/** What a burst may be asked to do differently. Only the playground asks. */
-export type BurstOptions = Partial<typeof DEFAULTS> & {
-  /** Throw exactly these shapes rather than a random group. */
-  group?: string[];
-  /** Throw from a different pack — the playground's old set. */
-  source?: ConfettiPack;
-};
-
 export function useConfetti(): {
   canvas: React.ReactNode;
-  fire: (options?: BurstOptions) => void;
+  fire: () => void;
 } {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const raf = useRef(0);
   const pieces = useRef<Piece[]>([]);
-  // Set per burst, because the playground can change them between two throws.
-  const physics = useRef(DEFAULTS);
 
   useEffect(() => () => cancelAnimationFrame(raf.current), []);
 
@@ -106,12 +110,8 @@ export function useConfetti(): {
     if (!canvas || !ctx) return;
     const w = canvas.clientWidth;
     const h = canvas.clientHeight;
-    const { gravity, fadeAt, outline } = physics.current;
+    const { gravity, fadeAt } = PHYSICS;
     ctx.clearRect(0, 0, w, h);
-    ctx.lineJoin = "round";
-    ctx.lineCap = "round";
-    ctx.strokeStyle = INK;
-    ctx.lineWidth = outline;
     let live = 0;
     for (const p of pieces.current) {
       p.vy += gravity;
@@ -137,12 +137,6 @@ export function useConfetti(): {
         ctx.fillStyle = layer.fill;
         ctx.fill(layer.path, "evenodd");
       }
-      // The outline is a second pass over the whole piece rather than a stroke
-      // after each fill: stroked as it went, half the linework would be buried
-      // under the next layer, which reads as a rendering fault rather than as
-      // an outline. Line width is in box units, so it keeps its weight against
-      // the shape as the size slider moves.
-      if (outline > 0) for (const layer of p.layers) ctx.stroke(layer.path);
       ctx.restore();
     }
     if (live) raf.current = requestAnimationFrame(draw);
@@ -152,26 +146,19 @@ export function useConfetti(): {
     }
   }, []);
 
-  const burst = useCallback((options: BurstOptions = {}) => {
-    // The playground gets no exemption from this. A student who has asked for
-    // no animation and an author testing on the same machine are the same
-    // browser making the same request, and one rule is easier to trust than
-    // two — the playground says so on screen rather than overriding it.
+  const burst = useCallback(() => {
     if (prefersReducedMotion()) return;
     // Before the canvas is touched, not after. `buildThrow` is what knows this
     // environment has no Path2D, and asking jsdom for a 2d context is a loud
     // "not implemented" in the middle of an otherwise passing test run.
-    const { group, source: from, ...knobs } = options;
-    const source = from ?? (pack as ConfettiPack);
-    const shapes = buildThrow(source, group);
+    const source = pack as ConfettiPack;
+    const shapes = buildThrow(source);
     if (!shapes.length) return;
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) return;
 
-    const settings = { ...DEFAULTS, ...stripUndefined(knobs) };
-    physics.current = settings;
-    const { pieces: count, size, sizeSpread, originY, spreadX, speed, spin } = settings;
+    const { pieces: count, size, sizeSpread, originY, spreadX, speed, spin } = PHYSICS;
 
     const dpr = window.devicePixelRatio || 1;
     const w = canvas.clientWidth;
@@ -181,12 +168,8 @@ export function useConfetti(): {
     canvas.height = Math.round(h * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    // Only reached by a shape that names no colour of its own — the old set.
-    const tints = source.colors?.length ? source.colors : ["#e8c98a"];
-
     pieces.current = Array.from({ length: count }, () => {
       const built = shapes[Math.floor(Math.random() * shapes.length)];
-      const tint = tints[Math.floor(Math.random() * tints.length)];
       const light = 1 + (Math.random() - 0.5) * 2 * SHADE;
       return {
         x: w / 2 + (Math.random() - 0.5) * w * spreadX,
@@ -200,7 +183,7 @@ export function useConfetti(): {
         // object rather than as a differently coloured object.
         layers: built.map((layer) => ({
           path: layer.d,
-          fill: shade(layer.fill ?? tint, light),
+          fill: shade(layer.fill, light),
         })),
         life: 1,
       };
@@ -211,14 +194,4 @@ export function useConfetti(): {
 
   const canvas = <canvas ref={canvasRef} className="confetti" aria-hidden="true" />;
   return { canvas, fire: burst };
-}
-
-/**
- * Spreading `options` over the defaults would let an explicit `undefined` — a
- * slider that has not been touched — overwrite a default with nothing.
- */
-function stripUndefined<T extends object>(options: T): Partial<T> {
-  return Object.fromEntries(
-    Object.entries(options).filter(([, v]) => v !== undefined),
-  ) as Partial<T>;
 }

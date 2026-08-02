@@ -8,11 +8,9 @@ const pack: ConfettiPack = {
       ["blood", "M0 0 L1 1 Z"],
       ["gold", "M2 2 L3 3 Z"],
     ],
-    old: "M4 4 L5 5 Z",
     typo: [["nosuchpaint", "M6 6 Z"]],
   },
-  throws: [["scutum"], ["scutum", "old"]],
-  colors: ["#e8c98a"],
+  throws: [["scutum"], ["scutum", "typo"]],
 };
 
 describe("layersOf", () => {
@@ -23,13 +21,8 @@ describe("layersOf", () => {
     ]);
   });
 
-  /** The old set has to keep rendering, or there is nothing to compare against. */
-  it("reads a bare path as one layer that takes the piece's tint", () => {
-    expect(layersOf(pack.shapes.old, pack)).toEqual([{ d: "M4 4 L5 5 Z", fill: null }]);
-  });
-
-  it("falls back to the piece's tint when a paint name is unknown", () => {
-    expect(layersOf(pack.shapes.typo, pack)).toEqual([{ d: "M6 6 Z", fill: null }]);
+  it("draws a paint the palette does not have rather than dropping the layer", () => {
+    expect(layersOf(pack.shapes.typo, pack)).toEqual([{ d: "M6 6 Z", fill: "#e8c98a" }]);
   });
 
   it("has nothing to say about a shape that is not there", () => {
@@ -45,7 +38,7 @@ describe("layersOf", () => {
 
 describe("shapesOf", () => {
   it("gives one entry per shape the group names", () => {
-    expect(shapesOf(["scutum", "old"], pack)).toHaveLength(2);
+    expect(shapesOf(["scutum", "typo"], pack)).toHaveLength(2);
   });
 
   /**

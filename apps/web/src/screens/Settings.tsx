@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Sheet } from "../ui.js";
 import { profile } from "../pack.js";
-import type { BurstOptions } from "../confetti/Confetti.js";
-import { ConfettiPlayground, isAuthor } from "../confetti/Playground.js";
 import type { SyncConfig, SyncState } from "../storage/sync.js";
 
 function stateLine(state: SyncState): string {
@@ -40,13 +38,10 @@ export function SettingsSheet({
   onOpenVocab,
   onReset,
   onClose,
-  onFireConfetti,
 }: {
   config: SyncConfig | null;
   state: SyncState;
   onConfigure: (cfg: SyncConfig | null) => void;
-  /** Throw a burst on demand. Only the author's playground calls this. */
-  onFireConfetti: (options?: BurstOptions) => void;
   onExport: () => void;
   onImport: () => void;
   onPull: () => void;
@@ -203,12 +198,6 @@ export function SettingsSheet({
             Pull the copy from GitHub
           </button>
         </div>
-      )}
-
-      {/* The draft counts as well as the saved config, so typing the name
-          reveals the bench without having to connect sync first. */}
-      {(isAuthor(config?.owner) || isAuthor(draft.owner)) && (
-        <ConfettiPlayground onFire={onFireConfetti} />
       )}
 
       <div className="section-title">Start over</div>

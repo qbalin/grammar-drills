@@ -21,11 +21,6 @@ const profilePath = fileURLToPath(
 const confettiPath = fileURLToPath(
   new URL(`../../languages/${packName}/confetti.mjs`, import.meta.url),
 );
-// The set those shapes replaced, read only by the playground so the two can be
-// looked at side by side. Temporary — this alias goes with the file.
-const confettiLegacyPath = fileURLToPath(
-  new URL(`../../languages/${packName}/confetti.legacy.mjs`, import.meta.url),
-);
 const profile = JSON.parse(readFileSync(profilePath, "utf8"));
 
 export default defineConfig({
@@ -34,7 +29,6 @@ export default defineConfig({
     alias: {
       "@pack/profile": profilePath,
       "@pack/confetti": confettiPath,
-      "@pack/confetti-legacy": confettiLegacyPath,
     },
   },
   plugins: [

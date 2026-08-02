@@ -19,28 +19,11 @@ declare module "@pack/profile" {
 declare module "@pack/confetti" {
   const confetti: {
     /** SVG path data in a 24x24 box, layered, keyed by shape name. */
-    shapes: Record<string, string | [string, string][]>;
+    shapes: Record<string, [string, string][]>;
     /** One burst draws from exactly one of these groups. */
     throws: string[][];
     /** The colours a layer may name. */
     palette?: Record<string, string>;
-    /** Per-piece tints, for shapes that name no colour of their own. */
-    colors?: string[];
-  };
-  export default confetti;
-}
-
-/**
- * The shapes this pack threw before the current ones, read only by the
- * playground so the two sets can be compared. Temporary, and goes with the
- * `confetti.legacy.mjs` files themselves.
- */
-declare module "@pack/confetti-legacy" {
-  const confetti: {
-    shapes: Record<string, string | [string, string][]>;
-    throws: string[][];
-    palette?: Record<string, string>;
-    colors?: string[];
   };
   export default confetti;
 }
