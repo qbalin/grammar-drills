@@ -1,0 +1,702 @@
+[
+ {
+  "id": "sm-2690-position-of-ou-and-me-t1",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "We fought not for glory, but for freedom.",
+    "answer": "ἐμαχόμεθα οὐχ ὑπὲρ δόξης, ἀλλὰ ὑπὲρ ἐλευθερίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμαχόμεθα",
+     "οὐχ",
+     "ὑπὲρ",
+     "δόξης",
+     "ἀλλὰ",
+     "ἐλευθερίας"
+    ]
+   },
+   {
+    "prompt": "The soldiers did not flee, but stood their ground.",
+    "answer": "οἱ στρατιῶται ἔφυγον μὲν οὔ, παρέμειναν δέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἔφυγον",
+     "μὲν",
+     "οὔ",
+     "παρέμειναν",
+     "δέ"
+    ]
+   },
+   {
+    "prompt": "But let no one suppose that these things are easy.",
+    "answer": "ὑπολάβῃ δὲ μηδεὶς ῥᾴδια εἶναι ταῦτα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπολάβῃ",
+     "δὲ",
+     "μηδεὶς",
+     "ῥᾴδια",
+     "εἶναι",
+     "ταῦτα"
+    ]
+   },
+   {
+    "prompt": "The judges passed on us a sentence that was not just.",
+    "answer": "οἱ δικασταὶ περὶ ἡμῶν ἔγνωσαν μὴ τὰ δίκαια.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "περὶ",
+     "ἡμῶν",
+     "ἔγνωσαν",
+     "μὴ",
+     "τὰ",
+     "δίκαια"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t2",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "He gave the gift not to his friends, but to his enemies.",
+    "answer": "τὸ δῶρον ἔδωκεν οὐ τοῖς φίλοις, ἀλλὰ τοῖς ἐχθροῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "δῶρον",
+     "ἔδωκεν",
+     "οὐ",
+     "τοῖς",
+     "φίλοις",
+     "ἀλλὰ",
+     "ἐχθροῖς"
+    ]
+   },
+   {
+    "prompt": "We shall punish the enemy in no long time.",
+    "answer": "τοὺς πολεμίους τιμωρησόμεθα οὐκ εἰς μακράν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "πολεμίους",
+     "τιμωρησόμεθα",
+     "οὐκ",
+     "εἰς",
+     "μακράν"
+    ]
+   },
+   {
+    "prompt": "But let no one think that virtue is won without toil.",
+    "answer": "νομισάτω δὲ μηδεὶς ἄνευ πόνου κτᾶσθαι τὴν ἀρετήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομισάτω",
+     "δὲ",
+     "μηδεὶς",
+     "ἄνευ",
+     "πόνου",
+     "κτᾶσθαι",
+     "τὴν",
+     "ἀρετήν"
+    ]
+   },
+   {
+    "prompt": "We wish to assume that the king is not plotting against us.",
+    "answer": "βουλόμεθα τὸν βασιλέα μὴ ἐπιβουλεύειν ἡμῖν ὑπολαμβάνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλόμεθα",
+     "τὸν",
+     "βασιλέα",
+     "μὴ",
+     "ἐπιβουλεύειν",
+     "ἡμῖν",
+     "ὑπολαμβάνειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t3",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "The Persians attacked in disorderly fashion.",
+    "answer": "οἱ Πέρσαι προσέβαλον οὐ κατὰ κόσμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "προσέβαλον",
+     "οὐ",
+     "κατὰ",
+     "κόσμον"
+    ]
+   },
+   {
+    "prompt": "We are unable to wage war against a power unlike our own.",
+    "answer": "πολεμεῖν οὐ πρὸς ὁμοίαν παρασκευὴν ἀδύνατοί ἐσμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολεμεῖν",
+     "οὐ",
+     "πρὸς",
+     "ὁμοίαν",
+     "παρασκευὴν",
+     "ἀδύνατοί",
+     "ἐσμεν"
+    ]
+   },
+   {
+    "prompt": "He praised the deed, but did not praise the man.",
+    "answer": "τὸ μὲν ἔργον ἐπῄνεσε, τὸν δὲ ἄνδρα οὔ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "μὲν",
+     "ἔργον",
+     "ἐπῄνεσε",
+     "τὸν",
+     "δὲ",
+     "ἄνδρα",
+     "οὔ"
+    ]
+   },
+   {
+    "prompt": "Not one of the ships was saved.",
+    "answer": "τῶν νεῶν μία οὐκ ἐσώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "νεῶν",
+     "μία",
+     "οὐκ",
+     "ἐσώθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t4",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "The citizens chose war, not peace.",
+    "answer": "οἱ πολῖται τὸν πόλεμον εἵλοντο, οὐ τὴν εἰρήνην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "πόλεμον",
+     "εἵλοντο",
+     "οὐ",
+     "τὴν",
+     "εἰρήνην"
+    ]
+   },
+   {
+    "prompt": "But let no one blame the general for the defeat.",
+    "answer": "μεμφέσθω δὲ μηδεὶς τὸν στρατηγὸν τῆς ἥττης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεμφέσθω",
+     "δὲ",
+     "μηδεὶς",
+     "τὸν",
+     "στρατηγὸν",
+     "τῆς",
+     "ἥττης"
+    ]
+   },
+   {
+    "prompt": "We honor the man not for his wealth, but for his virtue.",
+    "answer": "τὸν ἄνδρα τιμῶμεν οὐ διὰ τὸν πλοῦτον, ἀλλὰ διὰ τὴν ἀρετήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἄνδρα",
+     "τιμῶμεν",
+     "οὐ",
+     "διὰ",
+     "πλοῦτον",
+     "ἀλλὰ",
+     "τὴν",
+     "ἀρετήν"
+    ]
+   },
+   {
+    "prompt": "You do not allow us even to bury the dead.",
+    "answer": "ἡμᾶς οὐδὲ θάπτειν τοὺς νεκροὺς ἐᾷς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμᾶς",
+     "οὐδὲ",
+     "θάπτειν",
+     "τοὺς",
+     "νεκροὺς",
+     "ἐᾷς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t5",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "The orator persuaded the people not by force, but by words.",
+    "answer": "ὁ ῥήτωρ τὸν δῆμον ἔπεισεν οὐ βίᾳ, ἀλλὰ λόγοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τὸν",
+     "δῆμον",
+     "ἔπεισεν",
+     "οὐ",
+     "βίᾳ",
+     "ἀλλὰ",
+     "λόγοις"
+    ]
+   },
+   {
+    "prompt": "But let no one hope for safety through flight.",
+    "answer": "ἐλπισάτω δὲ μηδεὶς διὰ φυγῆς σωτηρίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλπισάτω",
+     "δὲ",
+     "μηδεὶς",
+     "διὰ",
+     "φυγῆς",
+     "σωτηρίαν"
+    ]
+   },
+   {
+    "prompt": "The old man wished not to live long, but to die nobly.",
+    "answer": "ὁ γέρων ἐβούλετο οὐ πολὺν χρόνον ζῆν, ἀλλὰ καλῶς ἀποθανεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἐβούλετο",
+     "οὐ",
+     "πολὺν",
+     "χρόνον",
+     "ζῆν",
+     "ἀλλὰ",
+     "καλῶς",
+     "ἀποθανεῖν"
+    ]
+   },
+   {
+    "prompt": "We marched against the enemy, not against the allies.",
+    "answer": "ἐστρατεύσαμεν ἐπὶ τοὺς πολεμίους, οὐκ ἐπὶ τοὺς συμμάχους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐστρατεύσαμεν",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους",
+     "οὐκ",
+     "συμμάχους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t6",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "The general did not lead them out, but called them together.",
+    "answer": "ὁ στρατηγὸς ἐξήγαγε μὲν οὔ, συνεκάλεσε δέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐξήγαγε",
+     "μὲν",
+     "οὔ",
+     "συνεκάλεσε",
+     "δέ"
+    ]
+   },
+   {
+    "prompt": "The god sent the plague upon the Greeks, not upon the barbarians.",
+    "answer": "ὁ θεὸς τὴν νόσον ἔπεμψεν ἐπὶ τοὺς Ἕλληνας, οὐκ ἐπὶ τοὺς βαρβάρους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεὸς",
+     "τὴν",
+     "νόσον",
+     "ἔπεμψεν",
+     "ἐπὶ",
+     "τοὺς",
+     "Ἕλληνας",
+     "οὐκ",
+     "βαρβάρους"
+    ]
+   },
+   {
+    "prompt": "But let no one betray the city to the enemy.",
+    "answer": "προδότω δὲ μηδεὶς τὴν πόλιν τοῖς πολεμίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προδότω",
+     "δὲ",
+     "μηδεὶς",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "We think it best that the young man not marry yet.",
+    "answer": "ἡγούμεθα τὸν νεανίαν μήπω γαμεῖν ἄριστον εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡγούμεθα",
+     "τὸν",
+     "νεανίαν",
+     "μήπω",
+     "γαμεῖν",
+     "ἄριστον",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t7",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "The soldiers took up arms indeed, but did not fight.",
+    "answer": "οἱ στρατιῶται τὰ ὅπλα ἔλαβον μέν, ἐμαχέσαντο δὲ οὔ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τά",
+     "ὅπλα",
+     "ἔλαβον",
+     "μέν",
+     "ἐμαχέσαντο",
+     "δέ",
+     "οὔ"
+    ]
+   },
+   {
+    "prompt": "The old man praised virtue indeed, but did not practice it.",
+    "answer": "ὁ γέρων τὴν ἀρετὴν ἐπῄνεσε μέν, ἤσκησε δὲ οὔ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τήν",
+     "ἀρετήν",
+     "ἐπῄνεσε",
+     "μέν",
+     "ἤσκησε",
+     "δέ",
+     "οὔ"
+    ]
+   },
+   {
+    "prompt": "The physician came for the safety of the sick, not for their harm.",
+    "answer": "ὁ ἰατρὸς ἦλθεν ἐπὶ σωτηρίᾳ τῶν καμνόντων, οὐκ ἐπὶ βλάβῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρός",
+     "ἦλθεν",
+     "ἐπί",
+     "σωτηρίᾳ",
+     "τῶν",
+     "καμνόντων",
+     "οὐκ",
+     "βλάβῃ"
+    ]
+   },
+   {
+    "prompt": "If the jurors give a verdict about us that is not just, the city will be disgraced.",
+    "answer": "εἰ οἱ δικασταὶ γνώσονται περὶ ἡμῶν μὴ τὰ δίκαια, ἡ πόλις αἰσχυνθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "δικασταί",
+     "γνώσονται",
+     "περί",
+     "ἡμῶν",
+     "μή",
+     "τά",
+     "δίκαια",
+     "ἡ",
+     "πόλις",
+     "αἰσχυνθήσεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t8",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "The ambassadors pretended that the enemy was not approaching.",
+    "answer": "οἱ πρέσβεις προσεποιοῦντο τοὺς πολεμίους μὴ προσιέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "προσεποιοῦντο",
+     "τούς",
+     "πολεμίους",
+     "μή",
+     "προσιέναι"
+    ]
+   },
+   {
+    "prompt": "You do not permit us even to bury the dead.",
+    "answer": "ἡμᾶς οὐδὲ θάψαι τοὺς νεκροὺς ἐπιτρέπεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμᾶς",
+     "οὐδέ",
+     "θάψαι",
+     "τούς",
+     "νεκρούς",
+     "ἐπιτρέπεις"
+    ]
+   },
+   {
+    "prompt": "We prefer to assume that the tyrant is not plotting against us.",
+    "answer": "βουλόμεθα προσποιεῖσθαι τὸν τύραννον μὴ ἐπιβουλεύειν ἡμῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλόμεθα",
+     "προσποιεῖσθαι",
+     "τόν",
+     "τύραννον",
+     "μή",
+     "ἐπιβουλεύειν",
+     "ἡμῖν"
+    ]
+   },
+   {
+    "prompt": "He promised indeed to help us, but did not come.",
+    "answer": "ὑπέσχετο μὲν βοηθήσειν ἡμῖν, ἦλθε δὲ οὔ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέσχετο",
+     "μέν",
+     "βοηθήσειν",
+     "ἡμῖν",
+     "ἦλθε",
+     "δέ",
+     "οὔ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t9",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "We shall recover our freedom in no long time.",
+    "answer": "τὴν ἐλευθερίαν κομιούμεθα οὐκ εἰς μακράν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "ἐλευθερίαν",
+     "κομιούμεθα",
+     "οὐκ",
+     "εἰς",
+     "μακράν"
+    ]
+   },
+   {
+    "prompt": "They sailed to Sicily not for plunder, but for empire.",
+    "answer": "ἔπλευσαν εἰς Σικελίαν οὐκ ἐπὶ λείαν, ἀλλὰ ἐπὶ ἀρχήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπλευσαν",
+     "εἰς",
+     "Σικελίαν",
+     "οὐκ",
+     "ἐπί",
+     "λείαν",
+     "ἀλλά",
+     "ἀρχήν"
+    ]
+   },
+   {
+    "prompt": "The wise man lives not for the body, but for the soul.",
+    "answer": "ὁ σοφὸς ζῇ οὐ τῷ σώματι, ἀλλὰ τῇ ψυχῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "ζῇ",
+     "οὐ",
+     "τῷ",
+     "σώματι",
+     "ἀλλά",
+     "τῇ",
+     "ψυχῇ"
+    ]
+   },
+   {
+    "prompt": "But let no one suppose that the task is easy.",
+    "answer": "ὑπολάβῃ δὲ μηδεὶς ῥᾴδιον εἶναι τὸ ἔργον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπολάβῃ",
+     "δέ",
+     "μηδείς",
+     "ῥᾴδιον",
+     "εἶναι",
+     "τό",
+     "ἔργον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t10",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "The Spartans admired courage, not cleverness.",
+    "answer": "οἱ Λακεδαιμόνιοι τὴν ἀνδρείαν ἐθαύμαζον, οὐ τὴν δεινότητα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "τήν",
+     "ἀνδρείαν",
+     "ἐθαύμαζον",
+     "οὐ",
+     "δεινότητα"
+    ]
+   },
+   {
+    "prompt": "May the city be saved, but its enemies not.",
+    "answer": "σῴζοιτο μὲν ἡ πόλις, οἱ δὲ πολέμιοι μή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σῴζοιτο",
+     "μέν",
+     "ἡ",
+     "πόλις",
+     "οἱ",
+     "δέ",
+     "πολέμιοι",
+     "μή"
+    ]
+   },
+   {
+    "prompt": "They made the treaty not on equal terms.",
+    "answer": "ἐποιήσαντο τὰς σπονδὰς οὐκ ἐπὶ ἴσοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐποιήσαντο",
+     "τάς",
+     "σπονδάς",
+     "οὐκ",
+     "ἐπί",
+     "ἴσοις"
+    ]
+   },
+   {
+    "prompt": "We have come as friends, not as spies.",
+    "answer": "ἥκομεν φίλοι, οὐ κατάσκοποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥκομεν",
+     "φίλοι",
+     "οὐ",
+     "κατάσκοποι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-t11",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "The Athenians were unable to wage war against a force not like their own.",
+    "answer": "οἱ Ἀθηναῖοι ἀδύνατοι ἦσαν πολεμεῖν μὴ πρὸς ὁμοίαν παρασκευήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ἀδύνατοι",
+     "ἦσαν",
+     "πολεμεῖν",
+     "μή",
+     "πρός",
+     "ὁμοίαν",
+     "παρασκευήν"
+    ]
+   },
+   {
+    "prompt": "The juror does not permit us even to speak.",
+    "answer": "ἡμᾶς οὐδὲ λέγειν ὁ δικαστὴς ἐᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμᾶς",
+     "οὐδέ",
+     "λέγειν",
+     "ὁ",
+     "δικαστής",
+     "ἐᾷ"
+    ]
+   },
+   {
+    "prompt": "The sun rose, but the army did not advance.",
+    "answer": "ὁ ἥλιος ἀνέτειλεν, τὸ δὲ στράτευμα προῆλθεν οὔ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἥλιος",
+     "ἀνέτειλεν",
+     "τό",
+     "δέ",
+     "στράτευμα",
+     "προῆλθεν",
+     "οὔ"
+    ]
+   },
+   {
+    "prompt": "He promised to lead us not into danger, but to safety.",
+    "answer": "ὑπέσχετο ἡμᾶς ἄξειν οὐκ εἰς κίνδυνον, ἀλλὰ εἰς σωτηρίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέσχετο",
+     "ἡμᾶς",
+     "ἄξειν",
+     "οὐκ",
+     "εἰς",
+     "κίνδυνον",
+     "ἀλλά",
+     "σωτηρίαν"
+    ]
+   }
+  ]
+ }
+]
