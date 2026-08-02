@@ -1,0 +1,1960 @@
+[
+ {
+  "id": "sm-2763-some-negative-phrases-t1",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "Not only was the general brave, but his soldiers also endured the winter.",
+    "answer": "οὐχ ὅτι ὁ στρατηγὸς ἀνδρεῖος ἦν, ἀλλὰ καὶ οἱ στρατιῶται αὐτοῦ τὸν χειμῶνα ὑπέμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅτι",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀνδρεῖος",
+     "ἦν",
+     "ἀλλὰ",
+     "καὶ",
+     "οἱ",
+     "στρατιῶται",
+     "αὐτοῦ",
+     "τὸν",
+     "χειμῶνα",
+     "ὑπέμειναν"
+    ]
+   },
+   {
+    "prompt": "I think that not merely any private citizen but even the king himself would fear death.",
+    "answer": "οἶμαι μὴ ὅτι ἰδιώτην τινά, ἀλλὰ καὶ αὐτὸν τὸν βασιλέα τὸν θάνατον ἂν φοβεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "μὴ",
+     "ὅτι",
+     "ἰδιώτην",
+     "τινά",
+     "ἀλλὰ",
+     "καὶ",
+     "αὐτὸν",
+     "τὸν",
+     "βασιλέα",
+     "θάνατον",
+     "ἂν",
+     "φοβεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "Not only do the young men honor their teacher, but they also imitate him.",
+    "answer": "οὐχ ὅτι τὸν διδάσκαλον οἱ νεανίαι τιμῶσιν, ἀλλὰ καὶ μιμοῦνται αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅτι",
+     "τὸν",
+     "διδάσκαλον",
+     "οἱ",
+     "νεανίαι",
+     "τιμῶσιν",
+     "ἀλλὰ",
+     "καὶ",
+     "μιμοῦνται",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "Not only the citizens but even the foreigners praised the poet.",
+    "answer": "οὐχ ὅτι οἱ πολῖται, ἀλλὰ καὶ οἱ ξένοι τὸν ποιητὴν ἐπῄνεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅτι",
+     "οἱ",
+     "πολῖται",
+     "ἀλλὰ",
+     "καὶ",
+     "ξένοι",
+     "τὸν",
+     "ποιητὴν",
+     "ἐπῄνεσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t2",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "So far from being grateful, he was not even willing to speak.",
+    "answer": "οὐχ ὅπως χάριν εἶχεν, ἀλλὰ οὐδὲ λέγειν ἤθελεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "χάριν",
+     "εἶχεν",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "λέγειν",
+     "ἤθελεν"
+    ]
+   },
+   {
+    "prompt": "So far from sharing in freedom, we did not obtain even a moderate servitude.",
+    "answer": "οὐχ ὅπως τῆς ἐλευθερίας μετέχομεν, ἀλλὰ οὐδὲ δουλείας μετρίας ἐτύχομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τῆς",
+     "ἐλευθερίας",
+     "μετέχομεν",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "δουλείας",
+     "μετρίας",
+     "ἐτύχομεν"
+    ]
+   },
+   {
+    "prompt": "He considers himself not only not a citizen, but not even a free man.",
+    "answer": "νομίζει ἑαυτὸν μὴ ὅτι πολίτην εἶναι, ἀλλὰ οὐδὲ ἐλεύθερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζει",
+     "ἑαυτὸν",
+     "μὴ",
+     "ὅτι",
+     "πολίτην",
+     "εἶναι",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "ἐλεύθερον"
+    ]
+   },
+   {
+    "prompt": "So far from helping his friends, he did not even pity them.",
+    "answer": "οὐχ ὅπως τοὺς φίλους ὠφέλει, ἀλλὰ οὐδὲ ᾤκτιρεν αὐτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τοὺς",
+     "φίλους",
+     "ὠφέλει",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "ᾤκτιρεν",
+     "αὐτούς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t3",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "It was not even possible to sail, much less to rescue the men.",
+    "answer": "οὐδὲ πλεῖν, μὴ ὅτι ἀναιρεῖσθαι τοὺς ἄνδρας, δυνατὸν ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "πλεῖν",
+     "μὴ",
+     "ὅτι",
+     "ἀναιρεῖσθαι",
+     "τοὺς",
+     "ἄνδρας",
+     "δυνατὸν",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "He was not able to endure a small wound, much less death.",
+    "answer": "οὐκ ἐδύνατο μικρὸν ἕλκος ὑπομένειν, μὴ ὅτι θάνατον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐδύνατο",
+     "μικρὸν",
+     "ἕλκος",
+     "ὑπομένειν",
+     "μὴ",
+     "ὅτι",
+     "θάνατον"
+    ]
+   },
+   {
+    "prompt": "Does it seem easy to you to learn any subject so quickly, much less so great a one?",
+    "answer": "δοκεῖ σοι ῥᾴδιον εἶναι ταχέως μανθάνειν ὁτιοῦν πρᾶγμα, μὴ ὅτι τοσοῦτον;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκεῖ",
+     "σοι",
+     "ῥᾴδιον",
+     "εἶναι",
+     "ταχέως",
+     "μανθάνειν",
+     "ὁτιοῦν",
+     "πρᾶγμα",
+     "μὴ",
+     "ὅτι",
+     "τοσοῦτον"
+    ]
+   },
+   {
+    "prompt": "Not even a child could carry this burden, much less that one.",
+    "answer": "οὐδὲ παῖς τοῦτο τὸ φορτίον φέρειν δύναιτο ἄν, μὴ ὅτι ἐκεῖνο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "παῖς",
+     "τοῦτο",
+     "τὸ",
+     "φορτίον",
+     "φέρειν",
+     "δύναιτο",
+     "ἄν",
+     "μὴ",
+     "ὅτι",
+     "ἐκεῖνο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t4",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "He wears a cloak that is not only wretched but the same both in summer and in winter.",
+    "answer": "ἱμάτιον ἀμπέχεται οὐ μόνον φαῦλον, ἀλλὰ καὶ τὸ αὐτὸ θέρους τε καὶ χειμῶνος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἱμάτιον",
+     "ἀμπέχεται",
+     "οὐ",
+     "μόνον",
+     "φαῦλον",
+     "ἀλλὰ",
+     "καὶ",
+     "τὸ",
+     "αὐτὸ",
+     "θέρους",
+     "τε",
+     "χειμῶνος"
+    ]
+   },
+   {
+    "prompt": "Not only did they conquer the enemy, but they also freed the prisoners.",
+    "answer": "οὐ μόνον τοὺς πολεμίους ἐνίκησαν, ἀλλὰ καὶ τοὺς αἰχμαλώτους ἠλευθέρωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "τοὺς",
+     "πολεμίους",
+     "ἐνίκησαν",
+     "ἀλλὰ",
+     "καὶ",
+     "αἰχμαλώτους",
+     "ἠλευθέρωσαν"
+    ]
+   },
+   {
+    "prompt": "The philosopher used to teach not only the young but also the old.",
+    "answer": "ὁ φιλόσοφος οὐ μόνον τοὺς νέους, ἀλλὰ καὶ τοὺς γέροντας ἐδίδασκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "οὐ",
+     "μόνον",
+     "τοὺς",
+     "νέους",
+     "ἀλλὰ",
+     "καὶ",
+     "γέροντας",
+     "ἐδίδασκεν"
+    ]
+   },
+   {
+    "prompt": "She was not only beautiful but also wise.",
+    "answer": "οὐ μόνον καλὴ ἦν, ἀλλὰ καὶ σοφή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "καλὴ",
+     "ἦν",
+     "ἀλλὰ",
+     "καὶ",
+     "σοφή"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t5",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "There was no spring, except one on the acropolis itself.",
+    "answer": "οὐκ ἦν κρήνη, ὅ τι μὴ μία ἐν αὐτῇ τῇ ἀκροπόλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἦν",
+     "κρήνη",
+     "ὅ",
+     "τι",
+     "μὴ",
+     "μία",
+     "ἐν",
+     "αὐτῇ",
+     "τῇ",
+     "ἀκροπόλει"
+    ]
+   },
+   {
+    "prompt": "The soul withdraws from pleasures, except so far as it must make use of them.",
+    "answer": "ἡ ψυχὴ ἀναχωρεῖ τῶν ἡδονῶν, ὅσον μὴ ἀνάγκη αὐταῖς χρῆσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ψυχὴ",
+     "ἀναχωρεῖ",
+     "τῶν",
+     "ἡδονῶν",
+     "ὅσον",
+     "μὴ",
+     "ἀνάγκη",
+     "αὐταῖς",
+     "χρῆσθαι"
+    ]
+   },
+   {
+    "prompt": "I was almost torn to pieces by the crowd.",
+    "answer": "μόνον οὐ διεσπάσθην ὑπὸ τοῦ ὄχλου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μόνον",
+     "οὐ",
+     "διεσπάσθην",
+     "ὑπὸ",
+     "τοῦ",
+     "ὄχλου"
+    ]
+   },
+   {
+    "prompt": "He thought that he already all but held the city.",
+    "answer": "ἐνόμιζεν ὅσον οὐκ ἤδη ἔχειν τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνόμιζεν",
+     "ὅσον",
+     "οὐκ",
+     "ἤδη",
+     "ἔχειν",
+     "τὴν",
+     "πόλιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t6",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "The horse nearly threw him over its head; nevertheless Cyrus kept his seat.",
+    "answer": "ὁ ἵππος μικροῦ αὐτὸν ἐξετραχήλισεν· οὐ μὴν ἀλλὰ ἐπέμεινεν ὁ Κῦρος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἵππος",
+     "μικροῦ",
+     "αὐτὸν",
+     "ἐξετραχήλισεν",
+     "οὐ",
+     "μὴν",
+     "ἀλλὰ",
+     "ἐπέμεινεν",
+     "Κῦρος"
+    ]
+   },
+   {
+    "prompt": "Put thus it would seem to be unreasonable; nevertheless perhaps it has some sense.",
+    "answer": "τοῦτο ἄλογον εἶναι δοκεῖ· οὐ μέντοι ἀλλὰ ἴσως ἔχει τινὰ λόγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "ἄλογον",
+     "εἶναι",
+     "δοκεῖ",
+     "οὐ",
+     "μέντοι",
+     "ἀλλὰ",
+     "ἴσως",
+     "ἔχει",
+     "τινὰ",
+     "λόγον"
+    ]
+   },
+   {
+    "prompt": "Nor again has he spoken of the barbarians.",
+    "answer": "οὐ μὴν οὐδὲ τοὺς βαρβάρους εἴρηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴν",
+     "οὐδὲ",
+     "τοὺς",
+     "βαρβάρους",
+     "εἴρηκεν"
+    ]
+   },
+   {
+    "prompt": "Nor again do I bid you allow the enemy to harm our allies.",
+    "answer": "οὐ μὴν οὐδὲ κελεύω ὑμᾶς ἐᾶν τοὺς πολεμίους τοὺς συμμάχους βλάπτειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴν",
+     "οὐδὲ",
+     "κελεύω",
+     "ὑμᾶς",
+     "ἐᾶν",
+     "τοὺς",
+     "πολεμίους",
+     "συμμάχους",
+     "βλάπτειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t7",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "Not only the citizens but also the foreigners praised the orator's wisdom.",
+    "answer": "οὐ μόνον οἱ πολῖται ἀλλὰ καὶ οἱ ξένοι τὴν τοῦ ῥήτορος σοφίαν ἐπῄνουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "οἱ",
+     "πολῖται",
+     "ἀλλὰ",
+     "καὶ",
+     "ξένοι",
+     "τὴν",
+     "τοῦ",
+     "ῥήτορος",
+     "σοφίαν",
+     "ἐπῄνουν"
+    ]
+   },
+   {
+    "prompt": "Not only was Critias present, but his friends too remained in the marketplace.",
+    "answer": "οὐχ ὅτι ὁ Κριτίας παρῆν, ἀλλὰ καὶ οἱ φίλοι αὐτοῦ ἐν τῇ ἀγορᾷ ἔμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅτι",
+     "ὁ",
+     "Κριτίας",
+     "παρῆν",
+     "ἀλλὰ",
+     "καὶ",
+     "οἱ",
+     "φίλοι",
+     "αὐτοῦ",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἔμενον"
+    ]
+   },
+   {
+    "prompt": "The general praised not only the brave but also those who kept silent.",
+    "answer": "ὁ στρατηγὸς οὐ μόνον τοὺς ἀνδρείους ἀλλὰ καὶ τοὺς σιγῶντας ἐπῄνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "οὐ",
+     "μόνον",
+     "τοὺς",
+     "ἀνδρείους",
+     "ἀλλὰ",
+     "καὶ",
+     "σιγῶντας",
+     "ἐπῄνει"
+    ]
+   },
+   {
+    "prompt": "I think that not merely a private citizen but even the king would fear these things.",
+    "answer": "οἶμαι μὴ ὅτι ἰδιώτην ἀλλὰ καὶ τὸν βασιλέα ταῦτα ἂν φοβεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "μὴ",
+     "ὅτι",
+     "ἰδιώτην",
+     "ἀλλὰ",
+     "καὶ",
+     "τὸν",
+     "βασιλέα",
+     "ταῦτα",
+     "ἂν",
+     "φοβεῖσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t8",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "So far from being grateful to the citizens, he even betrayed the city.",
+    "answer": "οὐχ ὅπως χάριν τοῖς πολίταις εἶχεν, ἀλλὰ καὶ τὴν πόλιν προέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "χάριν",
+     "τοῖς",
+     "πολίταις",
+     "εἶχεν",
+     "ἀλλὰ",
+     "καὶ",
+     "τὴν",
+     "πόλιν",
+     "προέδωκεν"
+    ]
+   },
+   {
+    "prompt": "So far from helping his friends, he did not even defend himself.",
+    "answer": "οὐχ ὅπως τοὺς φίλους ὠφέλει, ἀλλὰ οὐδὲ ἑαυτὸν ἠμύνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τοὺς",
+     "φίλους",
+     "ὠφέλει",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "ἑαυτὸν",
+     "ἠμύνετο"
+    ]
+   },
+   {
+    "prompt": "Not only did they not share in freedom, but they did not obtain even a moderate peace.",
+    "answer": "οὐχ ὅπως τῆς ἐλευθερίας μετεῖχον, ἀλλὰ οὐδὲ εἰρήνης μετρίας ἔτυχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τῆς",
+     "ἐλευθερίας",
+     "μετεῖχον",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "εἰρήνης",
+     "μετρίας",
+     "ἔτυχον"
+    ]
+   },
+   {
+    "prompt": "So far from admiring the poet, the judges even condemned him.",
+    "answer": "οὐχ ὅπως τὸν ποιητὴν ἐθαύμαζον, ἀλλὰ καὶ κατεδίκαζον αὐτοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τὸν",
+     "ποιητὴν",
+     "ἐθαύμαζον",
+     "ἀλλὰ",
+     "καὶ",
+     "κατεδίκαζον",
+     "αὐτοῦ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t9",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "It is not easy to learn any subject whatever so quickly, much less one so great.",
+    "answer": "οὐ ῥᾴδιόν ἐστιν ὁτιοῦν πρᾶγμα οὕτω ταχέως μαθεῖν, μὴ ὅτι τοσοῦτον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "ῥᾴδιόν",
+     "ἐστιν",
+     "ὁτιοῦν",
+     "πρᾶγμα",
+     "οὕτω",
+     "ταχέως",
+     "μαθεῖν",
+     "μὴ",
+     "ὅτι",
+     "τοσοῦτον"
+    ]
+   },
+   {
+    "prompt": "He would give his house to no one for free, much less for less than its worth.",
+    "answer": "τὴν οἰκίαν οὐδενὶ ἂν προῖκα δοίη, μὴ ὅτι ἐλάττονος τῆς ἀξίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "οἰκίαν",
+     "οὐδενὶ",
+     "ἂν",
+     "προῖκα",
+     "δοίη",
+     "μὴ",
+     "ὅτι",
+     "ἐλάττονος",
+     "τῆς",
+     "ἀξίας"
+    ]
+   },
+   {
+    "prompt": "The child cannot even walk, much less run across the plain.",
+    "answer": "τὸ παιδίον οὐδὲ βαδίζειν δύναται, μὴ ὅτι διὰ τοῦ πεδίου τρέχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "παιδίον",
+     "οὐδὲ",
+     "βαδίζειν",
+     "δύναται",
+     "μὴ",
+     "ὅτι",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "τρέχειν"
+    ]
+   },
+   {
+    "prompt": "They were not able to guard the walls, much less to overpower the enemy.",
+    "answer": "οὐχ οἷοί τε ἦσαν τὰ τείχη φυλάττειν, μὴ ὅτι τῶν πολεμίων κρατεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "οἷοί",
+     "τε",
+     "ἦσαν",
+     "τὰ",
+     "τείχη",
+     "φυλάττειν",
+     "μὴ",
+     "ὅτι",
+     "τῶν",
+     "πολεμίων",
+     "κρατεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t10",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "No one knew the road, except a certain old man in the village.",
+    "answer": "οὐδεὶς τὴν ὁδὸν ᾔδει, ὅ τι μὴ γέρων τις ἐν τῇ κώμῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "τὴν",
+     "ὁδὸν",
+     "ᾔδει",
+     "ὅ",
+     "τι",
+     "μὴ",
+     "γέρων",
+     "τις",
+     "ἐν",
+     "τῇ",
+     "κώμῃ"
+    ]
+   },
+   {
+    "prompt": "They were masters of the land, so far as they did not advance far from the camp.",
+    "answer": "τῆς γῆς ἐκράτουν, ὅσον μὴ πολὺ ἀπὸ τοῦ στρατοπέδου προϊόντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "γῆς",
+     "ἐκράτουν",
+     "ὅσον",
+     "μὴ",
+     "πολὺ",
+     "ἀπὸ",
+     "τοῦ",
+     "στρατοπέδου",
+     "προϊόντες"
+    ]
+   },
+   {
+    "prompt": "The soul withdraws from the pleasures, except so far as it must use them.",
+    "answer": "ἡ ψυχὴ τῶν ἡδονῶν ἀναχωρεῖ, ὅσον μὴ ἀνάγκη αὐταῖς χρῆσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ψυχὴ",
+     "τῶν",
+     "ἡδονῶν",
+     "ἀναχωρεῖ",
+     "ὅσον",
+     "μὴ",
+     "ἀνάγκη",
+     "αὐταῖς",
+     "χρῆσθαι"
+    ]
+   },
+   {
+    "prompt": "There was no water in the fort, except a little in a well.",
+    "answer": "οὐκ ἦν ὕδωρ ἐν τῷ φρουρίῳ, ὅ τι μὴ ὀλίγον ἐν φρέατι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἦν",
+     "ὕδωρ",
+     "ἐν",
+     "τῷ",
+     "φρουρίῳ",
+     "ὅ",
+     "τι",
+     "μὴ",
+     "ὀλίγον",
+     "φρέατι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t11",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "The soldiers were almost torn apart by the crowd in the marketplace.",
+    "answer": "οἱ στρατιῶται μόνον οὐ διεσπάσθησαν ὑπὸ τοῦ ὄχλου ἐν τῇ ἀγορᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "μόνον",
+     "οὐ",
+     "διεσπάσθησαν",
+     "ὑπὸ",
+     "τοῦ",
+     "ὄχλου",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ"
+    ]
+   },
+   {
+    "prompt": "The old woman all but died of grief when she heard what had been announced.",
+    "answer": "ἡ γραῦς μόνον οὐκ ἀπέθανεν ὑπὸ λύπης, ἐπεὶ τὰ ἀγγελθέντα ἤκουσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "μόνον",
+     "οὐκ",
+     "ἀπέθανεν",
+     "ὑπὸ",
+     "λύπης",
+     "ἐπεὶ",
+     "τὰ",
+     "ἀγγελθέντα",
+     "ἤκουσεν"
+    ]
+   },
+   {
+    "prompt": "The enemy, all but present, were already frightening the villagers.",
+    "answer": "οἱ πολέμιοι, ὅσον οὐ παρόντες, ἤδη τοὺς κωμήτας ἐφόβουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ὅσον",
+     "οὐ",
+     "παρόντες",
+     "ἤδη",
+     "τοὺς",
+     "κωμήτας",
+     "ἐφόβουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t12",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "The ship nearly sank in the storm; nevertheless the sailors reached the harbor.",
+    "answer": "τὸ πλοῖον μικροῦ ἐν τῷ χειμῶνι κατέδυ· οὐ μὴν ἀλλὰ οἱ ναῦται εἰς τὸν λιμένα ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "πλοῖον",
+     "μικροῦ",
+     "ἐν",
+     "τῷ",
+     "χειμῶνι",
+     "κατέδυ",
+     "οὐ",
+     "μὴν",
+     "ἀλλὰ",
+     "οἱ",
+     "ναῦται",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "The plan seemed unreasonable; nevertheless it was sound.",
+    "answer": "τὸ βούλευμα ἄλογον ἐδόκει εἶναι· οὐ μέντοι ἀλλὰ ὀρθῶς εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "βούλευμα",
+     "ἄλογον",
+     "ἐδόκει",
+     "εἶναι",
+     "οὐ",
+     "μέντοι",
+     "ἀλλὰ",
+     "ὀρθῶς",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "Nor again has the poet spoken of the barbarians in his verses.",
+    "answer": "οὐ μὴν οὐδὲ τῶν βαρβάρων ὁ ποιητὴς ἐν τοῖς ἔπεσιν εἴρηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴν",
+     "οὐδὲ",
+     "τῶν",
+     "βαρβάρων",
+     "ὁ",
+     "ποιητὴς",
+     "ἐν",
+     "τοῖς",
+     "ἔπεσιν",
+     "εἴρηκεν"
+    ]
+   },
+   {
+    "prompt": "The horse was frightened by the shout; nevertheless the boy did not fall off.",
+    "answer": "ὁ ἵππος ὑπὸ τῆς κραυγῆς ἐφοβήθη· οὐ μὴν ἀλλὰ ὁ παῖς οὐ κατέπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἵππος",
+     "ὑπὸ",
+     "τῆς",
+     "κραυγῆς",
+     "ἐφοβήθη",
+     "οὐ",
+     "μὴν",
+     "ἀλλὰ",
+     "παῖς",
+     "κατέπεσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t13",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "Not only the general himself, but also his allies feared the enemy's cavalry.",
+    "answer": "οὐχ ὅτι αὐτὸς ὁ στρατηγός, ἀλλὰ καὶ οἱ σύμμαχοι τὴν τῶν πολεμίων ἵππον ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅτι",
+     "αὐτὸς",
+     "ὁ",
+     "στρατηγός",
+     "ἀλλὰ",
+     "καὶ",
+     "οἱ",
+     "σύμμαχοι",
+     "τὴν",
+     "τῶν",
+     "πολεμίων",
+     "ἵππον",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "I believe that not merely a boy but even an old man would fear the sea.",
+    "answer": "νομίζω μὴ ὅτι παῖδα, ἀλλὰ καὶ γέροντα τὴν θάλατταν ἂν φοβηθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "μὴ",
+     "ὅτι",
+     "παῖδα",
+     "ἀλλὰ",
+     "καὶ",
+     "γέροντα",
+     "τὴν",
+     "θάλατταν",
+     "ἂν",
+     "φοβηθῆναι"
+    ]
+   },
+   {
+    "prompt": "Not only did the citizens honor the poet, but the foreigners crowned him too.",
+    "answer": "οὐχ ὅτι οἱ πολῖται τὸν ποιητὴν ἐτίμων, ἀλλὰ καὶ οἱ ξένοι αὐτὸν ἐστεφάνουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅτι",
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "ποιητὴν",
+     "ἐτίμων",
+     "ἀλλὰ",
+     "καὶ",
+     "ξένοι",
+     "αὐτὸν",
+     "ἐστεφάνουν"
+    ]
+   },
+   {
+    "prompt": "Not only was the city besieged, but its walls also were thrown down.",
+    "answer": "οὐχ ὅτι ἡ πόλις ἐπολιορκεῖτο, ἀλλὰ καὶ τὰ τείχη αὐτῆς κατεσκάπτετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅτι",
+     "ἡ",
+     "πόλις",
+     "ἐπολιορκεῖτο",
+     "ἀλλὰ",
+     "καὶ",
+     "τὰ",
+     "τείχη",
+     "αὐτῆς",
+     "κατεσκάπτετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t14",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "So far from being grateful to his benefactors, he even slandered them.",
+    "answer": "οὐχ ὅπως τοῖς εὐεργέταις χάριν εἶχεν, ἀλλὰ καὶ διέβαλλεν αὐτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τοῖς",
+     "εὐεργέταις",
+     "χάριν",
+     "εἶχεν",
+     "ἀλλὰ",
+     "καὶ",
+     "διέβαλλεν",
+     "αὐτούς"
+    ]
+   },
+   {
+    "prompt": "So far from receiving gifts, the soldiers did not even get their pay.",
+    "answer": "οὐχ ὅπως δῶρα ἐλάμβανον, ἀλλὰ οὐδὲ τὸν μισθὸν οἱ στρατιῶται ἐκομίζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "δῶρα",
+     "ἐλάμβανον",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "τὸν",
+     "μισθὸν",
+     "οἱ",
+     "στρατιῶται",
+     "ἐκομίζοντο"
+    ]
+   },
+   {
+    "prompt": "He thinks himself not only not wealthy, but not even free of his debts.",
+    "answer": "νομίζει ἑαυτὸν μὴ ὅτι πλούσιον εἶναι, ἀλλὰ οὐδὲ τῶν χρεῶν ἐλεύθερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζει",
+     "ἑαυτὸν",
+     "μὴ",
+     "ὅτι",
+     "πλούσιον",
+     "εἶναι",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "τῶν",
+     "χρεῶν",
+     "ἐλεύθερον"
+    ]
+   },
+   {
+    "prompt": "So far from fleeing the danger, the young men even rejoiced at the battle.",
+    "answer": "οὐχ ὅπως τὸν κίνδυνον ἔφευγον, ἀλλὰ καὶ τῇ μάχῃ οἱ νεανίαι ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τὸν",
+     "κίνδυνον",
+     "ἔφευγον",
+     "ἀλλὰ",
+     "καὶ",
+     "τῇ",
+     "μάχῃ",
+     "οἱ",
+     "νεανίαι",
+     "ἔχαιρον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t15",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "It was not possible even to advance, much less to defeat the enemy.",
+    "answer": "οὐδὲ προϊέναι δυνατὸν ἦν, μὴ ὅτι νικῆσαι τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "προϊέναι",
+     "δυνατὸν",
+     "ἦν",
+     "μὴ",
+     "ὅτι",
+     "νικῆσαι",
+     "τοὺς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "Who would endure even slavery, much less death?",
+    "answer": "τίς ἂν καὶ δουλείαν ὑπομείνειεν, μὴ ὅτι θάνατον;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "καὶ",
+     "δουλείαν",
+     "ὑπομείνειεν",
+     "μὴ",
+     "ὅτι",
+     "θάνατον"
+    ]
+   },
+   {
+    "prompt": "The soldiers could not endure the cold, much less the enemy's assaults.",
+    "answer": "οἱ στρατιῶται τὸ ψῦχος οὐκ ἐδύναντο φέρειν, μή τί γε τὰς τῶν πολεμίων προσβολάς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸ",
+     "ψῦχος",
+     "οὐκ",
+     "ἐδύναντο",
+     "φέρειν",
+     "μή",
+     "τί",
+     "γε",
+     "τὰς",
+     "τῶν",
+     "πολεμίων",
+     "προσβολάς"
+    ]
+   },
+   {
+    "prompt": "The child cannot even read, much less understand such books.",
+    "answer": "τὸ παιδίον οὐδὲ ἀναγιγνώσκειν δύναται, μὴ ὅτι συνιέναι τοιαῦτα βιβλία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "παιδίον",
+     "οὐδὲ",
+     "ἀναγιγνώσκειν",
+     "δύναται",
+     "μὴ",
+     "ὅτι",
+     "συνιέναι",
+     "τοιαῦτα",
+     "βιβλία"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t16",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "Not only did the philosopher teach virtue, but he also practiced it himself.",
+    "answer": "οὐ μόνον τὴν ἀρετὴν ὁ φιλόσοφος ἐδίδασκεν, ἀλλὰ καὶ αὐτὸς ἤσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "τὴν",
+     "ἀρετὴν",
+     "ὁ",
+     "φιλόσοφος",
+     "ἐδίδασκεν",
+     "ἀλλὰ",
+     "καὶ",
+     "αὐτὸς",
+     "ἤσκει"
+    ]
+   },
+   {
+    "prompt": "He gave a gift not only small, but unworthy of a friend.",
+    "answer": "δῶρον ἔδωκεν οὐ μόνον μικρόν, ἀλλὰ φίλου ἀνάξιον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῶρον",
+     "ἔδωκεν",
+     "οὐ",
+     "μόνον",
+     "μικρόν",
+     "ἀλλὰ",
+     "φίλου",
+     "ἀνάξιον"
+    ]
+   },
+   {
+    "prompt": "He was not only unjust, but did not even fear the gods.",
+    "answer": "οὐ μόνον ἄδικος ἦν, ἀλλὰ οὐδὲ τοὺς θεοὺς ἐφοβεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "ἄδικος",
+     "ἦν",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "τοὺς",
+     "θεοὺς",
+     "ἐφοβεῖτο"
+    ]
+   },
+   {
+    "prompt": "Not only the wealthy but also the poor contributed to the war.",
+    "answer": "οὐ μόνον οἱ πλούσιοι, ἀλλὰ καὶ οἱ πένητες εἰς τὸν πόλεμον συνεισέφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "οἱ",
+     "πλούσιοι",
+     "ἀλλὰ",
+     "καὶ",
+     "πένητες",
+     "εἰς",
+     "τὸν",
+     "πόλεμον",
+     "συνεισέφερον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t17",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "There was no water anywhere, except a little in a small well.",
+    "answer": "οὐδαμοῦ ὕδωρ ἦν, ὅ τι μὴ ὀλίγον ἐν φρέατι μικρῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδαμοῦ",
+     "ὕδωρ",
+     "ἦν",
+     "ὅ",
+     "τι",
+     "μὴ",
+     "ὀλίγον",
+     "ἐν",
+     "φρέατι",
+     "μικρῷ"
+    ]
+   },
+   {
+    "prompt": "They were masters of the whole country, except so far as they feared the cavalry.",
+    "answer": "τῆς χώρας πάσης ἐκράτουν, ὅσον μὴ τὴν ἵππον ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "χώρας",
+     "πάσης",
+     "ἐκράτουν",
+     "ὅσον",
+     "μὴ",
+     "τὴν",
+     "ἵππον",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "No one was saved, except those on the acropolis.",
+    "answer": "οὐδεὶς ἐσώθη, ὅ τι μὴ οἱ ἐν τῇ ἀκροπόλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἐσώθη",
+     "ὅ",
+     "τι",
+     "μὴ",
+     "οἱ",
+     "ἐν",
+     "τῇ",
+     "ἀκροπόλει"
+    ]
+   },
+   {
+    "prompt": "They plundered everything, except what the priests had hidden in the temple.",
+    "answer": "πάντα διήρπασαν, ὅσα μὴ οἱ ἱερεῖς ἐν τῷ ναῷ ἔκρυψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "διήρπασαν",
+     "ὅσα",
+     "μὴ",
+     "οἱ",
+     "ἱερεῖς",
+     "ἐν",
+     "τῷ",
+     "ναῷ",
+     "ἔκρυψαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t18",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "The orator was almost stoned to death by the assembly.",
+    "answer": "μόνον οὐ κατελεύσθη ὁ ῥήτωρ ὑπὸ τῆς ἐκκλησίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μόνον",
+     "οὐ",
+     "κατελεύσθη",
+     "ὁ",
+     "ῥήτωρ",
+     "ὑπὸ",
+     "τῆς",
+     "ἐκκλησίας"
+    ]
+   },
+   {
+    "prompt": "He believed that he already all but had the victory.",
+    "answer": "ἐνόμιζεν ὅσον οὐκ ἤδη τὴν νίκην ἔχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνόμιζεν",
+     "ὅσον",
+     "οὐκ",
+     "ἤδη",
+     "τὴν",
+     "νίκην",
+     "ἔχειν"
+    ]
+   },
+   {
+    "prompt": "The wound was grievous; nevertheless the soldier remained in the ranks.",
+    "answer": "τὸ τραῦμα χαλεπὸν ἦν· οὐ μὴν ἀλλὰ ἔμεινεν ὁ στρατιώτης ἐν τῇ τάξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τραῦμα",
+     "χαλεπὸν",
+     "ἦν",
+     "οὐ",
+     "μὴν",
+     "ἀλλὰ",
+     "ἔμεινεν",
+     "ὁ",
+     "στρατιώτης",
+     "ἐν",
+     "τῇ",
+     "τάξει"
+    ]
+   },
+   {
+    "prompt": "Nor again has the general mentioned the losses of the allies.",
+    "answer": "οὐ μὴν οὐδὲ τὰς τῶν συμμάχων ζημίας ὁ στρατηγὸς εἴρηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴν",
+     "οὐδὲ",
+     "τὰς",
+     "τῶν",
+     "συμμάχων",
+     "ζημίας",
+     "ὁ",
+     "στρατηγὸς",
+     "εἴρηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t19",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "Not only did the king honor the poets, but he also gave gifts to the craftsmen.",
+    "answer": "οὐ μόνον τοὺς ποιητὰς ὁ βασιλεὺς ἐτίμα, ἀλλὰ καὶ τοῖς δημιουργοῖς δῶρα ἐδίδου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "τοὺς",
+     "ποιητὰς",
+     "ὁ",
+     "βασιλεὺς",
+     "ἐτίμα",
+     "ἀλλὰ",
+     "καὶ",
+     "τοῖς",
+     "δημιουργοῖς",
+     "δῶρα",
+     "ἐδίδου"
+    ]
+   },
+   {
+    "prompt": "Not only the young men but also the elders admired the philosopher's teaching.",
+    "answer": "οὐ μόνον οἱ νέοι ἀλλὰ καὶ οἱ πρεσβύτεροι τὴν τοῦ φιλοσόφου μάθησιν ἐθαύμαζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "οἱ",
+     "νέοι",
+     "ἀλλὰ",
+     "καὶ",
+     "πρεσβύτεροι",
+     "τὴν",
+     "τοῦ",
+     "φιλοσόφου",
+     "μάθησιν",
+     "ἐθαύμαζον"
+    ]
+   },
+   {
+    "prompt": "I think that not only a private man, but even the tyrant fears this poison.",
+    "answer": "οἶμαι μὴ ὅτι ἰδιώτην τινά, ἀλλὰ καὶ τὸν τύραννον τοῦτο τὸ φάρμακον φοβεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "μὴ",
+     "ὅτι",
+     "ἰδιώτην",
+     "τινά",
+     "ἀλλὰ",
+     "καὶ",
+     "τὸν",
+     "τύραννον",
+     "τοῦτο",
+     "τὸ",
+     "φάρμακον",
+     "φοβεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "The tyrant harmed not only strangers but also his own kinsmen.",
+    "answer": "ὁ τύραννος οὐ μόνον τοὺς ξένους ἀλλὰ καὶ τοὺς ἑαυτοῦ συγγενεῖς ἔβλαπτεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "οὐ",
+     "μόνον",
+     "τοὺς",
+     "ξένους",
+     "ἀλλὰ",
+     "καὶ",
+     "ἑαυτοῦ",
+     "συγγενεῖς",
+     "ἔβλαπτεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t20",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "So far from fleeing the danger, he even laughed at those who feared.",
+    "answer": "οὐχ ὅπως τὸν κίνδυνον ἔφευγεν, ἀλλὰ καὶ τῶν φοβουμένων κατεγέλα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τὸν",
+     "κίνδυνον",
+     "ἔφευγεν",
+     "ἀλλὰ",
+     "καὶ",
+     "τῶν",
+     "φοβουμένων",
+     "κατεγέλα"
+    ]
+   },
+   {
+    "prompt": "So far from pitying the captives, the general even sold them into slavery.",
+    "answer": "οὐχ ὅπως τοὺς αἰχμαλώτους ᾤκτιρεν, ἀλλὰ καὶ εἰς δουλείαν αὐτοὺς ἀπέδοτο ὁ στρατηγός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ᾤκτιρεν",
+     "ἀλλὰ",
+     "καὶ",
+     "εἰς",
+     "δουλείαν",
+     "αὐτοὺς",
+     "ἀπέδοτο",
+     "ὁ",
+     "στρατηγός"
+    ]
+   },
+   {
+    "prompt": "So far from being silent, the defendant even reviled the jurors.",
+    "answer": "μὴ ὅτι ἐσιώπα, ἀλλὰ καὶ τοὺς δικαστὰς ὁ φεύγων ἐλοιδόρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ὅτι",
+     "ἐσιώπα",
+     "ἀλλὰ",
+     "καὶ",
+     "τοὺς",
+     "δικαστὰς",
+     "ὁ",
+     "φεύγων",
+     "ἐλοιδόρει"
+    ]
+   },
+   {
+    "prompt": "So far from praising the poet, the crowd even threw stones.",
+    "answer": "οὐχ ὅπως τὸν ποιητὴν ἐπῄνει, ἀλλὰ καὶ λίθους ὁ ὄχλος ἔβαλλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τὸν",
+     "ποιητὴν",
+     "ἐπῄνει",
+     "ἀλλὰ",
+     "καὶ",
+     "λίθους",
+     "ὁ",
+     "ὄχλος",
+     "ἔβαλλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t21",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "So far from sharing in the honors, we did not even obtain safety.",
+    "answer": "οὐχ ὅπως τῶν τιμῶν μετείχομεν, ἀλλὰ οὐδὲ σωτηρίας ἐτυγχάνομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τῶν",
+     "τιμῶν",
+     "μετείχομεν",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "σωτηρίας",
+     "ἐτυγχάνομεν"
+    ]
+   },
+   {
+    "prompt": "The exile thought himself not only not an Athenian, but not even a Greek.",
+    "answer": "ὁ φυγὰς ἐνόμιζεν ἑαυτὸν μὴ ὅτι Ἀθηναῖον εἶναι, ἀλλὰ οὐδὲ Ἕλληνα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φυγὰς",
+     "ἐνόμιζεν",
+     "ἑαυτὸν",
+     "μὴ",
+     "ὅτι",
+     "Ἀθηναῖον",
+     "εἶναι",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "Ἕλληνα"
+    ]
+   },
+   {
+    "prompt": "So far from helping his friends, he did not even spare his kinsmen.",
+    "answer": "οὐχ ὅπως τοὺς φίλους ὠφέλει, ἀλλὰ οὐδὲ τῶν συγγενῶν ἐφείδετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τοὺς",
+     "φίλους",
+     "ὠφέλει",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "τῶν",
+     "συγγενῶν",
+     "ἐφείδετο"
+    ]
+   },
+   {
+    "prompt": "So far from receiving gifts, he was not even granted a hearing.",
+    "answer": "μὴ ὅτι δῶρα ἐλάμβανεν, ἀλλὰ οὐδὲ λόγου ἠξιοῦτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ὅτι",
+     "δῶρα",
+     "ἐλάμβανεν",
+     "ἀλλὰ",
+     "οὐδὲ",
+     "λόγου",
+     "ἠξιοῦτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t22",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "The enemy could not even hold the walls, much less capture the acropolis.",
+    "answer": "οἱ πολέμιοι οὐδὲ τὰ τείχη κατέχειν ἐδύναντο, μὴ ὅτι τὴν ἀκρόπολιν ἑλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "οὐδὲ",
+     "τὰ",
+     "τείχη",
+     "κατέχειν",
+     "ἐδύναντο",
+     "μὴ",
+     "ὅτι",
+     "τὴν",
+     "ἀκρόπολιν",
+     "ἑλεῖν"
+    ]
+   },
+   {
+    "prompt": "He was not able to walk, much less to run to the river.",
+    "answer": "οὐδὲ βαδίζειν οἷός τε ἦν, μὴ ὅτι πρὸς τὸν ποταμὸν τρέχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "βαδίζειν",
+     "οἷός",
+     "τε",
+     "ἦν",
+     "μὴ",
+     "ὅτι",
+     "πρὸς",
+     "τὸν",
+     "ποταμὸν",
+     "τρέχειν"
+    ]
+   },
+   {
+    "prompt": "Does it seem easy to you to endure a small toil, much less so great a war?",
+    "answer": "δοκεῖ σοι ῥᾴδιον εἶναι μικρὸν πόνον ἐνεγκεῖν, μὴ ὅτι τοσοῦτον πόλεμον;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκεῖ",
+     "σοι",
+     "ῥᾴδιον",
+     "εἶναι",
+     "μικρὸν",
+     "πόνον",
+     "ἐνεγκεῖν",
+     "μὴ",
+     "ὅτι",
+     "τοσοῦτον",
+     "πόλεμον"
+    ]
+   },
+   {
+    "prompt": "The child cannot lift a stone, much less a beam.",
+    "answer": "τὸ παιδίον οὐδὲ λίθον αἴρειν δύναται, μή τί γε δοκόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "παιδίον",
+     "οὐδὲ",
+     "λίθον",
+     "αἴρειν",
+     "δύναται",
+     "μή",
+     "τί",
+     "γε",
+     "δοκόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t23",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "The Greeks were masters of the land, except so far as they did not advance far from the ships.",
+    "answer": "οἱ Ἕλληνες τῆς γῆς ἐκράτουν, ὅσα μὴ πολὺ ἀπὸ τῶν νεῶν προῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "τῆς",
+     "γῆς",
+     "ἐκράτουν",
+     "ὅσα",
+     "μὴ",
+     "πολὺ",
+     "ἀπὸ",
+     "τῶν",
+     "νεῶν",
+     "προῆλθον"
+    ]
+   },
+   {
+    "prompt": "There was a road nowhere, except one through the marsh.",
+    "answer": "οὐδαμοῦ ὁδὸς ἦν, ὅ τι μὴ μία διὰ τοῦ ἕλους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδαμοῦ",
+     "ὁδὸς",
+     "ἦν",
+     "ὅ",
+     "τι",
+     "μὴ",
+     "μία",
+     "διὰ",
+     "τοῦ",
+     "ἕλους"
+    ]
+   },
+   {
+    "prompt": "The soul must withdraw from the pleasures, except so far as it must use them.",
+    "answer": "τὴν ψυχὴν ἀπὸ τῶν ἡδονῶν ἀναχωρεῖν δεῖ, ὅσον μὴ ἀνάγκη αὐταῖς χρῆσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ψυχὴν",
+     "ἀπὸ",
+     "τῶν",
+     "ἡδονῶν",
+     "ἀναχωρεῖν",
+     "δεῖ",
+     "ὅσον",
+     "μὴ",
+     "ἀνάγκη",
+     "αὐταῖς",
+     "χρῆσθαι"
+    ]
+   },
+   {
+    "prompt": "No one in the city was free, except so far as the law allowed.",
+    "answer": "οὐδεὶς ἐν τῇ πόλει ἐλεύθερος ἦν, ὅσον μὴ ὁ νόμος ἐπέτρεπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἐλεύθερος",
+     "ἦν",
+     "ὅσον",
+     "μὴ",
+     "ὁ",
+     "νόμος",
+     "ἐπέτρεπεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t24",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "The wall was almost captured by the enemy; nevertheless the citizens held out.",
+    "answer": "τὸ τεῖχος μόνον οὐχ ὑπὸ τῶν πολεμίων ἑάλω· οὐ μὴν ἀλλὰ ἀντεῖχον οἱ πολῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τεῖχος",
+     "μόνον",
+     "οὐχ",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "ἑάλω",
+     "οὐ",
+     "μὴν",
+     "ἀλλὰ",
+     "ἀντεῖχον",
+     "οἱ",
+     "πολῖται"
+    ]
+   },
+   {
+    "prompt": "The general thought that he all but already had the victory.",
+    "answer": "ὁ στρατηγὸς ὅσον οὐκ ἤδη τὴν νίκην ἔχειν ἐνόμιζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ὅσον",
+     "οὐκ",
+     "ἤδη",
+     "τὴν",
+     "νίκην",
+     "ἔχειν",
+     "ἐνόμιζεν"
+    ]
+   },
+   {
+    "prompt": "The plan seemed unreasonable; nevertheless it has sense.",
+    "answer": "ἐδόκει τὸ βούλευμα ἄλογον εἶναι· οὐ μέντοι ἀλλὰ λόγον ἔχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδόκει",
+     "τὸ",
+     "βούλευμα",
+     "ἄλογον",
+     "εἶναι",
+     "οὐ",
+     "μέντοι",
+     "ἀλλὰ",
+     "λόγον",
+     "ἔχει"
+    ]
+   },
+   {
+    "prompt": "Nor again has the poet spoken of the barbarians.",
+    "answer": "οὐ μὴν οὐδὲ περὶ τῶν βαρβάρων ὁ ποιητὴς εἴρηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴν",
+     "οὐδὲ",
+     "περὶ",
+     "τῶν",
+     "βαρβάρων",
+     "ὁ",
+     "ποιητὴς",
+     "εἴρηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t25",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "So far from praising the traitor, the assembly even condemned him to death.",
+    "answer": "οὐχ ὅπως τὸν προδότην ἐπῄνεσεν ἡ ἐκκλησία, ἀλλὰ καὶ θανάτου κατέγνω αὐτοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τὸν",
+     "προδότην",
+     "ἐπῄνεσεν",
+     "ἡ",
+     "ἐκκλησία",
+     "ἀλλὰ",
+     "καὶ",
+     "θανάτου",
+     "κατέγνω",
+     "αὐτοῦ"
+    ]
+   },
+   {
+    "prompt": "Not only did the wise admire the law, but the young also obeyed it.",
+    "answer": "οὐ μόνον οἱ σοφοὶ τὸν νόμον ἐθαύμαζον, ἀλλὰ καὶ οἱ νέοι αὐτῷ ἐπείθοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μόνον",
+     "οἱ",
+     "σοφοὶ",
+     "τὸν",
+     "νόμον",
+     "ἐθαύμαζον",
+     "ἀλλὰ",
+     "καὶ",
+     "νέοι",
+     "αὐτῷ",
+     "ἐπείθοντο"
+    ]
+   },
+   {
+    "prompt": "It was not even possible to flee, much less to conquer the barbarians.",
+    "answer": "οὐδὲ φυγεῖν δυνατὸν ἦν, μὴ ὅτι τοὺς βαρβάρους νικῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "φυγεῖν",
+     "δυνατὸν",
+     "ἦν",
+     "μὴ",
+     "ὅτι",
+     "τοὺς",
+     "βαρβάρους",
+     "νικῆσαι"
+    ]
+   },
+   {
+    "prompt": "The city was all but captured; nevertheless the citizens drove back the enemy.",
+    "answer": "μόνον οὐχ ἑάλω ἡ πόλις· οὐ μὴν ἀλλὰ οἱ πολῖται τοὺς πολεμίους ἀπεώσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μόνον",
+     "οὐχ",
+     "ἑάλω",
+     "ἡ",
+     "πόλις",
+     "οὐ",
+     "μὴν",
+     "ἀλλὰ",
+     "οἱ",
+     "πολῖται",
+     "τοὺς",
+     "πολεμίους",
+     "ἀπεώσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-t26",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "There was no harbor anywhere, except a small one near the mouth of the river.",
+    "answer": "οὐδαμοῦ λιμὴν ἦν, ὅ τι μὴ μικρός τις πρὸς τῷ στόματι τοῦ ποταμοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδαμοῦ",
+     "λιμὴν",
+     "ἦν",
+     "ὅ",
+     "τι",
+     "μὴ",
+     "μικρός",
+     "τις",
+     "πρὸς",
+     "τῷ",
+     "στόματι",
+     "τοῦ",
+     "ποταμοῦ"
+    ]
+   },
+   {
+    "prompt": "So far from being ashamed, he even boasted of his crimes.",
+    "answer": "οὐχ ὅπως ᾐσχύνετο, ἀλλὰ καὶ ἐπὶ τοῖς ἀδικήμασιν ἐσεμνύνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "ᾐσχύνετο",
+     "ἀλλὰ",
+     "καὶ",
+     "ἐπὶ",
+     "τοῖς",
+     "ἀδικήμασιν",
+     "ἐσεμνύνετο"
+    ]
+   },
+   {
+    "prompt": "Nor again did the general trust the messengers who had fled.",
+    "answer": "οὐ μὴν οὐδὲ τοῖς ἀγγέλοις τοῖς πεφευγόσιν ὁ στρατηγὸς ἐπίστευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴν",
+     "οὐδὲ",
+     "τοῖς",
+     "ἀγγέλοις",
+     "πεφευγόσιν",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐπίστευεν"
+    ]
+   },
+   {
+    "prompt": "You would not give your sword to a friend, much less to an enemy.",
+    "answer": "οὐκ ἂν φίλῳ τὸ ξίφος δοίης, μὴ ὅτι ἐχθρῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "φίλῳ",
+     "τὸ",
+     "ξίφος",
+     "δοίης",
+     "μὴ",
+     "ὅτι",
+     "ἐχθρῷ"
+    ]
+   }
+  ]
+ }
+]
