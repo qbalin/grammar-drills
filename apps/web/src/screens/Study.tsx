@@ -111,6 +111,7 @@ export function Graded({
   onReadGrammar,
   onMore,
   vocabulary,
+  history,
 }: {
   question: Question;
   submitted: string;
@@ -136,6 +137,12 @@ export function Graded({
   onMore?: () => void;
   /** The question's words, folded away — the same panel as while writing. */
   vocabulary?: ReactNode;
+  /**
+   * What was written on this topic before, folded away. Below the comparison
+   * rather than above it: the reference answer is what the screen is for, and
+   * this is what you reach for once you have read it.
+   */
+  history?: ReactNode;
 }) {
   return (
     <>
@@ -171,6 +178,7 @@ export function Graded({
           </div>
         </div>
         <p className="hint">Hold a word to save it to your vocabulary.</p>
+        {history}
       </div>
 
       <div className="linkrow">

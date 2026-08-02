@@ -23,7 +23,12 @@ import {
 import { Sheet, Toast, ago } from "./ui.js";
 import { Answering, Graded, Rest, VocabReview } from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
-import { AttemptTrail, MapSheet, TopicSheet } from "./screens/Map.js";
+import {
+  AttemptTrail,
+  EarlierAnswers,
+  MapSheet,
+  TopicSheet,
+} from "./screens/Map.js";
 import { QuestionSheet, QuestionsSheet } from "./screens/Questions.js";
 import { ScheduleSheet } from "./screens/Schedule.js";
 import { SettingsSheet } from "./screens/Settings.js";
@@ -31,6 +36,7 @@ import { QuestionVocabulary } from "./screens/Vocabulary.js";
 import {
   VocabEditSheet,
   VocabListSheet,
+  VocabNewSheet,
   VocabPickSheet,
   VocabSheet,
 } from "./screens/Vocab.js";
@@ -81,6 +87,8 @@ type Overlay =
   /** `prefill` is a word held on the question; `auto` looks it up unattended. */
   | { t: "vocab-input"; prefill?: string; auto?: boolean }
   | { t: "vocab-pick"; form: string; candidates: LemmaEntry[] }
+  /** A word the dictionary has not got, being written out by hand. */
+  | { t: "vocab-new"; form: string }
   | { t: "settings" }
   | { t: "conflict"; remote: Progress };
 
@@ -96,6 +104,13 @@ interface Props {
   session: Session;
   storage: SyncingStorage;
 }
+
+/**
+ * How long the floppy lingers once the push is done — long enough for a push
+ * that took milliseconds to have been seen at all, short enough that it is gone
+ * before the next answer. Matches the `.floppy--out` fade in the stylesheet.
+ */
+const FLOPPY_FADE_MS = 700;
 
 /** Placement asks whether you already knew it, not how it felt. */
 const PLACEMENT_LABELS: Record<Rating, string> = {
@@ -123,6 +138,7 @@ export function App({ content, session, storage }: Props) {
   const [dictLoading, setDictLoading] = useState(false);
   const [dictFailed, setDictFailed] = useState(false);
   const [showVocab, setShowVocab] = useState(false); // the question's word list
+  const [showTrail, setShowTrail] = useState(false); // this topic's earlier answers
   const [syncState, setSyncState] = useState<SyncState>(storage.currentState());
   const [tick, setTick] = useState(0);
   const [undo, setUndo] = useState<GradeUndo | null>(null); // the last grade, takeable
@@ -185,6 +201,10 @@ export function App({ content, session, storage }: Props) {
   // Submitting is not one of them: that is the same sentence, so a list opened
   // while writing is still open beside the answer.
   useEffect(() => setShowVocab(false), [question?.prompt, sectionId]);
+  // The trail folds away on the same terms, and additionally on submitting:
+  // it is a thing to consult once the reference answer is up, not a panel to
+  // find already open on the next question of the same topic.
+  useEffect(() => setShowTrail(false), [question?.prompt, sectionId, phase.t]);
 
   // --- the loop ------------------------------------------------------------
 
@@ -529,9 +549,11 @@ export function App({ content, session, storage }: Props) {
   const lookupWord = (form: string) => {
     const candidates = content.lookup(form);
     if (candidates.length === 0) {
-      // Not a verdict on the spelling: the dictionary is large but finite.
-      flash(`No dictionary match for “${form.trim()}”.`);
-      setOverlay(null);
+      // Not a verdict on the spelling: the dictionary is large but finite, and
+      // a miss is most often a name or a form it cannot cut. The student has
+      // already said this word is worth keeping, so the card is offered by hand
+      // rather than the word being dropped with a toast.
+      setOverlay({ t: "vocab-new", form: form.trim() });
       return;
     }
     if (candidates.length === 1) return saveWord(candidates[0]!);
@@ -593,6 +615,35 @@ export function App({ content, session, storage }: Props) {
 
   useEffect(() => storage.onStateChange(setSyncState), [storage]);
 
+  /**
+   * The floppy disk: a push to the cloud, shown while it happens and for a
+   * moment after.
+   *
+   * Sync is deliberately silent — it is debounced, it retries, and a failure is
+   * reported in Settings rather than interrupting the question. But silent also
+   * meant invisible, and a student who has just connected a repo has no way to
+   * see that anything ever leaves the device. This is that reassurance and
+   * nothing more: it appears, it goes, it is never in the way and never takes a
+   * tap. The failure it does not report is still Settings' to report.
+   *
+   * Two stages, so leaving is a fade rather than a disappearance — an element
+   * that unmounts cannot animate its own exit.
+   */
+  const [floppy, setFloppy] = useState<"in" | "out" | null>(null);
+  useEffect(() => {
+    if (syncState.kind === "pushing") {
+      setFloppy("in");
+      return;
+    }
+    // The push is over, however it ended. Fade what is showing and then drop
+    // it. `floppy` is deliberately not a dependency: the fade is itself a
+    // change to it, and re-running here would cancel the timer that is the
+    // other half of the fade.
+    setFloppy((showing) => (showing === "in" ? "out" : showing));
+    const id = setTimeout(() => setFloppy(null), FLOPPY_FADE_MS);
+    return () => clearTimeout(id);
+  }, [syncState]);
+
   const configureSync = (cfg: SyncConfig | null) => {
     storage.configure(cfg);
     if (cfg) void storage.saveNow(session.progress()).then(() => flash("Connected to GitHub."));
@@ -636,6 +687,8 @@ export function App({ content, session, storage }: Props) {
   // --- render --------------------------------------------------------------
 
   const schedule = sectionId ? session.previewTopic(sectionId) : undefined;
+  // Read on the graded screen, where the grade has not been given yet — so the
+  // attempt being made is not among these, and every row is an earlier one.
   const attempts = sectionId ? session.attemptsFor(sectionId) : [];
   const nextDue = session.nextDue();
 
@@ -664,6 +717,14 @@ export function App({ content, session, storage }: Props) {
               : `${stats.vocab} words`}
           </button>
           <span className="status__spacer" />
+          {/* Decoration, and hidden from screen readers on purpose: it says
+              nothing that is not already in Settings, and announcing every
+              push would talk over the question. */}
+          {floppy && (
+            <span className={`floppy floppy--${floppy}`} aria-hidden="true">
+              💾
+            </span>
+          )}
           {/* Offered only while there is a grade to take back, and on whatever
               screen the grade landed you on. */}
           {undo && (
@@ -799,6 +860,13 @@ export function App({ content, session, storage }: Props) {
                 status={dictStatus}
                 onToggle={toggleVocab}
                 onHold={holdCribWord}
+              />
+            }
+            history={
+              <EarlierAnswers
+                attempts={attempts}
+                open={showTrail}
+                onToggle={() => setShowTrail((open) => !open)}
               />
             }
           />
@@ -1013,6 +1081,23 @@ export function App({ content, session, storage }: Props) {
           initialForm={overlay.prefill}
           autoLookup={overlay.auto}
           onLookup={lookupWord}
+          onClose={() => setOverlay(null)}
+        />
+      )}
+
+      {overlay?.t === "vocab-new" && (
+        <VocabNewSheet
+          form={overlay.form}
+          // Written by hand, so there is no lemma to speak of: the form as it
+          // was met is the word's identity, which is what dedupes the card.
+          onSave={({ citation, gloss }) =>
+            saveWord({
+              lemma: overlay.form,
+              citation: citation.trim(),
+              gloss: gloss.trim(),
+              pos: "",
+            })
+          }
           onClose={() => setOverlay(null)}
         />
       )}

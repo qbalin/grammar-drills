@@ -201,6 +201,28 @@ span.status__title {
   color: var(--gold);
 }
 
+/* The push to the cloud, while it is happening. Small, dim and inert: it is
+   there to be caught out of the corner of an eye, not read. It fades in, and
+   `--out` fades it back down over the same 0.7s the app waits before dropping
+   it, so the two ends of its life match. */
+.floppy {
+  flex: none;
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0.55;
+  animation: floppy-in 0.25s ease;
+  pointer-events: none;
+}
+
+.floppy--out {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+@keyframes floppy-in {
+  from { opacity: 0; transform: translateY(-0.2rem); }
+}
+
 .badge {
   font-size: 0.65rem;
   letter-spacing: 0.08em;
@@ -422,6 +444,12 @@ span.status__title {
 
 .crib__list {
   border-top: 1px solid var(--line);
+}
+
+/* The attempt trail folded into the same disclosure. The attempts bring their
+   own rules and spacing, so this only opens a little air under the toggle. */
+.crib__list--trail {
+  padding-top: 0.5rem;
 }
 
 .crib__status {

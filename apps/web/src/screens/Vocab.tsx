@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { LemmaEntry, VocabCardState } from "@lang-tutor/core";
-import { fold } from "../pack.js";
+import { fold, profile } from "../pack.js";
 import { Sheet, Spinner, ago, until } from "../ui.js";
 
 /**
@@ -150,6 +150,101 @@ export function VocabPickSheet({
 }
 
 /**
+ * A word the dictionary has not got, written out by hand.
+ *
+ * The dictionary is large but finite, and a miss used to be the end of the
+ * road: a toast saying "no match" and a word the student had just decided was
+ * worth keeping, gone. A proper noun, a late coinage, a form the lemmatizer
+ * cannot cut — none of them are mistakes, and all of them are exactly the words
+ * a reader stops on. So the miss opens this instead, with the form already in
+ * the citation box.
+ *
+ * Both sides are required. A card is a pair — the meaning is the prompt and the
+ * citation is the answer — and one saved with either side blank is a card that
+ * can never be reviewed, only met and deleted.
+ */
+export function VocabNewSheet({
+  form,
+  onSave,
+  onClose,
+}: {
+  /** The word as it was met; the citation starts here and is edited from it. */
+  form: string;
+  onSave: (entry: { citation: string; gloss: string }) => void;
+  onClose: () => void;
+}) {
+  const [citation, setCitation] = useState(form.trim());
+  const [gloss, setGloss] = useState("");
+  const meaning = useRef<HTMLInputElement>(null);
+  const complete = citation.trim() !== "" && gloss.trim() !== "";
+
+  // The citation arrives filled in, so the meaning is the box with work to do.
+  useEffect(() => {
+    meaning.current?.focus();
+  }, []);
+
+  return (
+    <Sheet title="Write the card yourself" subtitle={form.trim()} onClose={onClose}>
+      <p className="field__hint" style={{ marginTop: 0 }}>
+        “{form.trim()}” is not in the dictionary, so there is no headword to
+        build. Write the card as you would want to be asked it.
+      </p>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (complete) onSave({ citation, gloss });
+        }}
+      >
+        <label className="field">
+          <span className="field__label">Citation</span>
+          <input
+            value={citation}
+            onChange={(e) => setCitation(e.target.value)}
+            autoCapitalize="off"
+            autoCorrect="off"
+            autoComplete="off"
+            spellCheck={false}
+            aria-label="Citation"
+          />
+          <span className="field__hint">
+            The form you are asked to produce — the dictionary's own naming, as
+            near as you can give it.
+          </span>
+        </label>
+        <label className="field">
+          <span className="field__label">Meaning</span>
+          <input
+            ref={meaning}
+            value={gloss}
+            onChange={(e) => setGloss(e.target.value)}
+            enterKeyHint="done"
+            aria-label="Meaning"
+          />
+          <span className="field__hint">
+            The prompt side: this is what you see before the {profile.l2.name}.
+          </span>
+        </label>
+        <div className="actions">
+          <button className="btn" type="button" onClick={onClose}>
+            Cancel
+          </button>
+          <button className="btn btn--primary" type="submit" disabled={!complete}>
+            Save
+          </button>
+        </div>
+      </form>
+      {!complete && (
+        // Said rather than only shown: a disabled button with no reason beside
+        // it reads as the app being broken, not as a field being empty.
+        <p className="field__hint">
+          Both sides are needed — a card with one side blank cannot be reviewed.
+        </p>
+      )}
+    </Sheet>
+  );
+}
+
+/**
  * Every word recorded.
  *
  * Until this existed a card could only be created and reviewed: a word saved
@@ -252,13 +347,17 @@ export function VocabEditSheet({
   const [confirmDelete, setConfirmDelete] = useState(false);
   const changed =
     citation.trim() !== card.citation || gloss.trim() !== card.gloss;
+  // The same rule a new card is held to: emptying the meaning here would leave
+  // a card with nothing on its prompt side, which is the one way an edit could
+  // break a word rather than fix it. Deleting is the way to be rid of a card.
+  const complete = citation.trim() !== "" && gloss.trim() !== "";
 
   return (
     <Sheet title="Edit word" subtitle={card.pos} onClose={onClose}>
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (citation.trim()) onSave({ citation, gloss });
+          if (complete) onSave({ citation, gloss });
         }}
       >
         <label className="field">
@@ -293,12 +392,17 @@ export function VocabEditSheet({
           <button
             className="btn btn--primary"
             type="submit"
-            disabled={!citation.trim() || !changed}
+            disabled={!complete || !changed}
           >
             Save
           </button>
         </div>
       </form>
+      {!complete && (
+        <p className="field__hint">
+          Both sides are needed — a card with one side blank cannot be reviewed.
+        </p>
+      )}
 
       <div className="section-title">Remove</div>
       {confirmDelete ? (

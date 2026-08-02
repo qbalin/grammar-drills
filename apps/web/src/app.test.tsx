@@ -91,7 +91,7 @@ function mount(progress?: Progress) {
   const session = new Session(content, progress);
   const storage = new SyncingStorage();
   render(<App content={content} session={session} storage={storage} />);
-  return { session, content };
+  return { session, content, storage };
 }
 
 /** True while the placement probes are still running. */
@@ -158,6 +158,7 @@ async function skipPlacement(user: ReturnType<typeof userEvent.setup>) {
 beforeEach(() => {
   localStorage.clear();
   dictionary.available = true;
+  vi.unstubAllGlobals();
 });
 
 describe("the study loop", () => {
@@ -352,6 +353,65 @@ describe("the answer trail", () => {
 
     expect(session.attemptsFor("decl1")[0]?.submitted).toBe("");
   });
+
+  it("folds the topic's earlier answers into the graded screen", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    // The em dash tells the disclosure from the grammar sheet's ↺, which is
+    // labelled "Earlier answers" too and is the long way round to the same
+    // thing.
+    const trail = () =>
+      screen.queryByRole("button", { name: /Earlier answers —/ });
+    const expanded = () => trail()?.getAttribute("aria-expanded");
+    const opened = () => document.querySelector("#earlier-answers");
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    // One already: the placement probe was answered on this topic.
+    expect(trail()?.textContent).toContain("1 on this topic");
+    expect(expanded()).toBe("false");
+    expect(opened()).toBeNull();
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+
+    // The second question of the same topic. The answer just graded has joined
+    // the trail; the question on screen has not.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    expect(trail()?.textContent).toContain("2 on this topic");
+    expect(expanded()).toBe("false");
+
+    await user.click(trail()!);
+    expect(expanded()).toBe("true");
+    expect(opened()!.textContent).toContain("Puella rosa amat.");
+    expect(opened()!.textContent).toContain("The girl loves the rose.");
+    expect(opened()!.textContent).toContain("hard");
+    expect(opened()!.textContent).not.toContain("The sailors feared the storm.");
+
+    // And it folds itself away again rather than following the student on.
+    await user.click(screen.getByRole("button", { name: /keep writing/ }));
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    expect(expanded()).toBe("false");
+  });
+
+  it("does not carry the trail across to another topic's answers", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    // Finish first declension, so its two attempts are on the record.
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+
+    // Second declension is new ground: its own trail is empty.
+    expect(document.querySelector(".status__title")?.textContent).toBe(
+      "Second declension",
+    );
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    expect(screen.queryByRole("button", { name: /Earlier answers/ })).toBeNull();
+  });
 });
 
 describe("vocabulary", () => {
@@ -386,7 +446,7 @@ describe("vocabulary", () => {
     expect(screen.getByText("Saved rex, rēgis")).toBeDefined();
   });
 
-  it("treats a dictionary miss as a note, not a rejection", async () => {
+  it("offers the card by hand when the dictionary has not got the word", async () => {
     const user = userEvent.setup();
     const { session } = mount();
     await skipPlacement(user);
@@ -396,10 +456,73 @@ describe("vocabulary", () => {
     await user.type(screen.getByRole("textbox"), "notaword");
     await user.click(screen.getByRole("button", { name: "Look up" }));
 
-    expect(screen.getByText(/No dictionary match/)).toBeDefined();
-    // The grading buttons are still there: nothing was blocked.
-    expect(screen.getByRole("button", { name: /Good/ })).toBeDefined();
+    // Not a toast and a shrug: the word the student asked to keep is still on
+    // the table, with the form already filled in as the citation.
+    const sheet = screen.getByRole("dialog", { name: "Write the card yourself" });
+    expect(within(sheet).getByLabelText("Citation")).toHaveProperty(
+      "value",
+      "notaword",
+    );
+
+    await user.type(within(sheet).getByLabelText("Meaning"), "a word I met");
+    await user.click(within(sheet).getByRole("button", { name: "Save" }));
+
+    expect(session.vocabCard("v-notaword")?.gloss).toBe("a word I met");
+    expect(screen.getByText("Saved notaword")).toBeDefined();
+  });
+
+  it("refuses a card with either side blank", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    await user.click(screen.getByRole("button", { name: /record a word/ }));
+    await user.type(screen.getByRole("textbox"), "notaword");
+    await user.click(screen.getByRole("button", { name: "Look up" }));
+
+    const sheet = screen.getByRole("dialog", { name: "Write the card yourself" });
+    const save = () => within(sheet).getByRole("button", { name: "Save" });
+    // The citation arrives filled and the meaning empty, so the card is
+    // half-written from the start and cannot be saved.
+    expect(save()).toHaveProperty("disabled", true);
+    expect(
+      within(sheet).getByText(/Both sides are needed/),
+    ).toBeDefined();
+
+    // Whitespace is not text: a space in the meaning leaves it just as blank.
+    await user.type(within(sheet).getByLabelText("Meaning"), "   ");
+    expect(save()).toHaveProperty("disabled", true);
+
+    // And emptying the other side is refused on the same terms.
+    await user.type(within(sheet).getByLabelText("Meaning"), "hand");
+    expect(save()).toHaveProperty("disabled", false);
+    await user.clear(within(sheet).getByLabelText("Citation"));
+    expect(save()).toHaveProperty("disabled", true);
+
+    // Submitting past the disabled button changes nothing either.
+    fireEvent.submit(sheet.querySelector("form")!);
     expect(Object.keys(session.progress().vocabCards)).toHaveLength(0);
+  });
+
+  it("refuses to blank a side of a word that already exists", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /record a word/ }));
+    await user.type(screen.getByRole("textbox"), "regem");
+    await user.click(screen.getByRole("button", { name: "Look up" }));
+    await user.click(screen.getByRole("button", { name: "Edit" }));
+
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+    await user.clear(within(sheet).getByLabelText("Meaning"));
+    expect(within(sheet).getByRole("button", { name: "Save" })).toHaveProperty(
+      "disabled",
+      true,
+    );
+    fireEvent.submit(sheet.querySelector("form")!);
+    expect(session.vocabCard("v-rex")?.gloss).toBe("king");
   });
 
   it("says the dictionary is missing rather than blaming the spelling", async () => {
@@ -868,6 +991,90 @@ describe("the grammar map", () => {
   });
 });
 
+/**
+ * Sync is silent by design — debounced, retried, and reported in Settings
+ * rather than in the way. The floppy is the one thing it says out loud, and it
+ * says it for a moment.
+ */
+describe("saving to the cloud", () => {
+  const floppy = () => document.querySelector(".floppy");
+
+  /** A GitHub that has no file yet, and whose commit finishes when we say. */
+  function stubGitHub() {
+    let finish: (() => void) | undefined;
+    const put = { ok: true, status: 200, json: async () => ({ content: { sha: "s2" } }) };
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (_url: string, init?: { method?: string }) => {
+        if (init?.method !== "PUT") return { ok: false, status: 404 };
+        await new Promise<void>((resolve) => (finish = resolve));
+        return put;
+      }),
+    );
+    return () => finish?.();
+  }
+
+  const CONFIG = {
+    token: "t",
+    owner: "someone",
+    repo: "progress",
+    path: "latin.json",
+    branch: "main",
+  };
+
+  it("shows a floppy while the push is in flight, then takes it away", async () => {
+    const commit = stubGitHub();
+    const { session, storage } = mount();
+
+    // Nothing is said while sync is off, which is every device by default.
+    expect(floppy()).toBeNull();
+
+    await act(async () => {
+      storage.configure(CONFIG);
+    });
+    expect(floppy()).toBeNull();
+
+    // A push, held open at the commit.
+    let pushed: Promise<void>;
+    await act(async () => {
+      pushed = storage.saveNow(session.progress());
+    });
+    expect(floppy()).not.toBeNull();
+    // Decoration only: it never takes a tap, and it is not read out.
+    expect(floppy()?.getAttribute("aria-hidden")).toBe("true");
+
+    await act(async () => {
+      commit();
+      await pushed;
+    });
+    // It fades rather than vanishing, so it is still there for a moment.
+    expect(floppy()?.className).toContain("floppy--out");
+    await passTime(900);
+    expect(floppy()).toBeNull();
+  });
+
+  it("says nothing when the push fails — Settings reports that", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({ ok: false, status: 401, text: async () => "nope" })),
+    );
+    const { session, storage } = mount();
+    await act(async () => {
+      storage.configure(CONFIG);
+    });
+    await act(async () => {
+      await storage.saveNow(session.progress());
+    });
+
+    // The push is over, failed. The floppy is on its way out rather than
+    // sitting on screen claiming a save that did not happen.
+    await passTime(900);
+    expect(floppy()).toBeNull();
+    // And the question was never interrupted by it.
+    expect(screen.getByRole("button", { name: "Reveal" })).toBeDefined();
+  });
+});
+
 describe("progress", () => {
   it("survives a reload through local storage", async () => {
     const user = userEvent.setup();
@@ -983,7 +1190,7 @@ describe("the question's vocabulary", () => {
     expect(Object.keys(session.progress().vocabCards)).toHaveLength(0);
   });
 
-  it("says as much when the held row is a word the dictionary has not got", async () => {
+  it("offers the card by hand when the held row is a word it has not got", async () => {
     const user = userEvent.setup();
     const { session } = mount();
     await skipPlacement(user);
@@ -991,8 +1198,14 @@ describe("the question's vocabulary", () => {
 
     await holdCribRow("not in the dictionary");
 
+    // The crib is where a word is most obviously missing, so it is the likeliest
+    // place to want to write one — the same sheet as from the lookup box.
+    const sheet = screen.getByRole("dialog", { name: "Write the card yourself" });
+    expect(within(sheet).getByLabelText("Citation")).toHaveProperty(
+      "value",
+      "Puella",
+    );
     expect(Object.keys(session.progress().vocabCards)).toHaveLength(0);
-    expect(screen.getByText(/No dictionary match for “Puella”/)).toBeDefined();
   });
 
   it("says the dictionary is missing rather than calling every word unknown", async () => {

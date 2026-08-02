@@ -224,13 +224,14 @@ export function AttemptTrail({
   /** Off when every attempt answers the same question, which is then the title. */
   showPrompt = true,
 }: {
-  attempts: Attempt[];
+  /** Empty when the trail is already under a heading of its own. */
   title?: string;
+  attempts: Attempt[];
   showPrompt?: boolean;
 }) {
   return (
     <>
-      <div className="section-title">{title}</div>
+      {title && <div className="section-title">{title}</div>}
       {attempts.map((a, i) => (
         <div className="attempt" key={`${a.at}-${i}`}>
           <div className="attempt__meta">
@@ -246,5 +247,49 @@ export function AttemptTrail({
         </div>
       ))}
     </>
+  );
+}
+
+/**
+ * The same trail, folded away on the graded screen.
+ *
+ * Seeing the reference answer is the moment "have I written this before, and
+ * what did I write?" is worth asking, and until now the answer was two sheets
+ * away — grammar, then its ↺. It is a disclosure rather than a sheet for the
+ * reason the vocabulary crib is: what it is being compared against is on this
+ * screen, and a sheet would cover it.
+ *
+ * Closed by default, and closed again on every new question. The trail is a
+ * reference, not part of the question.
+ */
+export function EarlierAnswers({
+  attempts,
+  open,
+  onToggle,
+}: {
+  attempts: Attempt[];
+  open: boolean;
+  onToggle: () => void;
+}) {
+  if (attempts.length === 0) return null;
+  return (
+    <div className="crib">
+      <button
+        className="crib__toggle"
+        aria-expanded={open}
+        aria-controls="earlier-answers"
+        onClick={onToggle}
+      >
+        <span className="crib__caret" aria-hidden="true">
+          {open ? "▾" : "▸"}
+        </span>
+        Earlier answers — {attempts.length} on this topic
+      </button>
+      {open && (
+        <div className="crib__list crib__list--trail" id="earlier-answers">
+          <AttemptTrail attempts={attempts} title="" />
+        </div>
+      )}
+    </div>
   );
 }
