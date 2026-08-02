@@ -492,6 +492,150 @@ describe("the answer trail", () => {
 });
 
 /**
+ * A phone does not close an app so much as take it away, and a test used to
+ * live entirely in the screen's own state. Closing it on question two came
+ * back at question one of a different test on a different topic: the first
+ * grade had rescheduled the card, so nothing was due and the scheduler went
+ * looking for new ground.
+ */
+describe("picking a test back up", () => {
+  /** What a reload is, from the app's side: unmount, re-read the device. */
+  const reopen = () => {
+    cleanup();
+    return mount(new SyncingStorage().read() ?? undefined);
+  };
+  const prompt = () => document.querySelector(".prompt")?.textContent;
+  const topic = () => document.querySelector(".status__title")?.textContent;
+
+  it("comes back to the same question of the same test", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    // decl1's test holds two questions. Answer the first.
+    expect(eyebrow()).toContain("· 1/2");
+    const first = prompt();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(eyebrow()).toContain("· 2/2");
+    const second = prompt();
+    expect(second).not.toBe(first);
+
+    const seen = [...(session.progress().seenTests.decl1 ?? [])];
+    reopen();
+
+    expect(eyebrow()).toContain("· 2/2");
+    expect(prompt()).toBe(second);
+    expect(topic()).toBe("First declension");
+    // Re-serving would re-roll the test and record it a second time; the round
+    // names its test, and the test is found rather than chosen again.
+    expect(new SyncingStorage().read()?.seenTests.decl1).toEqual(seen);
+  });
+
+  it("brings back the sentence being written, not just the question", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa");
+    // The draft is debounced while typing and flushed when the app goes away,
+    // which on a phone is the only moment there is.
+    fireEvent(window, new Event("pagehide"));
+    reopen();
+
+    expect(screen.getByLabelText("Your Latin")).toHaveProperty(
+      "value",
+      "Puella rosa",
+    );
+  });
+
+  it("comes back to the graded screen when the answer was already in", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /mark/ }));
+    await tapWord(user, ".compare__block--reference", "rosam");
+    fireEvent(window, new Event("pagehide"));
+    reopen();
+
+    // The comparison, what was written, and the words picked out before the
+    // grade — none of which had anywhere to live until the round did.
+    expect(sentences()).toContain("Puella rosa amat.");
+    expect(screen.getByRole("button", { name: /Good/ })).toBeDefined();
+    expect(
+      document.querySelectorAll(".compare__block--reference .word--b").length,
+    ).toBe(1);
+  });
+
+  it("does not pick up a round whose last question was graded", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+    // The finished round was let go of and the next topic took the table —
+    // on disk, not merely in memory. A round is only ever written by the
+    // branch that serves a test, so letting go has to be written too.
+    expect(topic()).toBe("Second declension");
+    expect(new SyncingStorage().read()?.openRound).toMatchObject({
+      sectionId: "decl2",
+      answered: 0,
+    });
+
+    reopen();
+    expect(topic()).toBe("Second declension");
+    expect(eyebrow()).toContain("· 1/1");
+  });
+
+  it("writes the round down when study moves on to a word instead", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    // A word saved now falls due before the next topic does, so finishing the
+    // round leads to a vocabulary card rather than another test — the branch
+    // of `advance` that serves nothing and used to write nothing either.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    expect(session.vocabList()).toHaveLength(1);
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+      if (screen.queryByRole("button", { name: "Reveal" })) {
+        await user.click(screen.getByRole("button", { name: "Reveal" }));
+      }
+    }
+    // A vocabulary card, not another test — so nothing served, and nothing
+    // would have been written without saying so on the way out.
+    expect(screen.getByRole("button", { name: "Show" })).toBeDefined();
+    expect(new SyncingStorage().read()?.openRound).toBeNull();
+  });
+
+  /** The one way out of a set, and the reason it has to be deliberate. */
+  it("hands the round over when another topic is quizzed from the map", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    expect(topic()).toBe("First declension");
+
+    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: /^Verb forms/ }));
+    await user.click(screen.getByRole("button", { name: /Present indicative/ }));
+    await user.click(screen.getByRole("button", { name: "Quiz me" }));
+    expect(topic()).toBe("Present indicative");
+
+    reopen();
+    expect(topic()).toBe("Present indicative");
+    expect(prompt()).toBe("The poet praises the queen.");
+  });
+});
+
+/**
  * The grade says the topic went badly. It never says which word, and very
  * often the topic under test was fine and something else in the sentence was
  * not — which is the thing worth finding again months later.

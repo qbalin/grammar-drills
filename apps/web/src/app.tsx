@@ -163,6 +163,43 @@ export function App({ content, session, storage }: Props) {
     void storage.save(session.progress());
   }, [session, storage]);
 
+  /**
+   * Keep the answer in flight on the device.
+   *
+   * Local only, and not through `save`: this fires as fast as a thumb types,
+   * and a keystroke is not something the mirror needs. Placement is left out —
+   * it serves one sentence per probe and resumes by probe, so there is no
+   * round to hang a draft on.
+   */
+  const keepDraft = useCallback(() => {
+    if (inPlacement || phase.t === "vocab-review" || phase.t === "done") return;
+    session.setDraft({
+      input,
+      ...(phase.t === "graded"
+        ? { graded: { submitted, revealed: phase.revealed } }
+        : {}),
+      ...(hasMarks(marks) ? { marks } : {}),
+    });
+    storage.saveLocal(session.progress());
+  }, [inPlacement, phase, input, submitted, marks, session, storage]);
+
+  // Typing is debounced, because the whole file is rewritten each time. Being
+  // hidden is not: on a phone that is the moment the app is taken away, and
+  // there may be no later one.
+  useEffect(() => {
+    const id = setTimeout(keepDraft, 400);
+    const onHide = () => {
+      if (document.visibilityState === "hidden") keepDraft();
+    };
+    addEventListener("visibilitychange", onHide);
+    addEventListener("pagehide", keepDraft);
+    return () => {
+      clearTimeout(id);
+      removeEventListener("visibilitychange", onHide);
+      removeEventListener("pagehide", keepDraft);
+    };
+  }, [keepDraft]);
+
   const flash = (message: string, action?: string, onAction?: () => void) =>
     setToast({ message, action, onAction });
   useEffect(() => {
@@ -218,16 +255,23 @@ export function App({ content, session, storage }: Props) {
     setInput("");
     setSubmitted("");
     setMarks({});
+    // Whatever was in flight is behind us by definition — this is the one
+    // place study moves on of its own accord.
+    session.endRound();
     const action = session.next();
     if (action.kind === "done") {
       setSectionId(null);
       setTest(null);
       setPhase({ t: "done" });
+      // Saved on the way out of every branch, not only the one that serves a
+      // test: letting go of the round is itself the thing worth writing down.
+      save();
       bump();
       return;
     }
     if (action.kind === "vocab-review") {
       setPhase({ t: "vocab-review", cardId: action.cardId, revealed: false });
+      save();
       bump();
       return;
     }
@@ -244,19 +288,20 @@ export function App({ content, session, storage }: Props) {
       advance();
       return;
     }
+    const isNew = action.kind === "new-topic";
     setSectionId(action.sectionId);
     setTest(served);
     setQIndex(0);
-    setIsNewTopic(action.kind === "new-topic");
+    setIsNewTopic(isNew);
     setPhase({ t: "answering" });
     // Teach before testing on new ground, exactly as the CLI does.
-    setOverlay(
-      action.kind === "new-topic"
-        ? { t: "grammar", sectionId: action.sectionId }
-        : null,
-    );
+    setOverlay(isNew ? { t: "grammar", sectionId: action.sectionId } : null);
+    // The round is on the table from here, and saved right away: the session
+    // this protects against is the one that ends without another grade in it.
+    session.beginRound(action.sectionId, served, isNew);
+    save();
     bump();
-  }, [session]);
+  }, [session, save]);
 
   const loadPlacement = useCallback(
     (id: string) => {
@@ -306,6 +351,30 @@ export function App({ content, session, storage }: Props) {
         return;
       }
       session.endPlacement();
+    }
+    // A test on the table is picked back up exactly where it was left. Without
+    // this, closing the app on question two of four came back at question one
+    // of a different test on a different topic — the first grade had already
+    // rescheduled the card, so `next` found nothing due and went looking for
+    // new ground. A set is left deliberately, from the map, or not at all.
+    const open = session.resumableRound();
+    if (open) {
+      setSectionId(open.sectionId);
+      setTest(open.test);
+      setQIndex(open.qIndex);
+      setIsNewTopic(open.isNew);
+      // The badge comes back but the grammar sheet does not: it was opened
+      // when the topic was served, and being taught the same section again on
+      // every reload is not teaching.
+      setInput(open.draft?.input ?? "");
+      const graded = open.draft?.graded;
+      setSubmitted(graded?.submitted ?? "");
+      setMarks(open.draft?.marks ?? {});
+      setPhase(
+        graded ? { t: "graded", revealed: graded.revealed } : { t: "answering" },
+      );
+      bump();
+      return;
     }
     advance();
   }, [advance, loadPlacement, session]);
@@ -454,6 +523,9 @@ export function App({ content, session, storage }: Props) {
   const quizTopic = (topic: TopicProgress) => {
     const served = session.serveTest(topic.sectionId);
     if (!served) return flash(`No tests written for “${topic.title}” yet.`);
+    // Choosing a topic from the map is the deliberate way out of a round, and
+    // the only one: this is what replaces whatever was on the table.
+    session.beginRound(topic.sectionId, served, topic.mastery === undefined);
     save();
     setSectionId(topic.sectionId);
     setTest(served);

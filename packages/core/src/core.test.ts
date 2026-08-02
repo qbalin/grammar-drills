@@ -868,6 +868,98 @@ describe("Session progress: a round of questions is one review", () => {
     expect(back.progress().topicCards.n1!.reps).toBe(1);
   });
 
+  /**
+   * A test used to live entirely in the screen's own state, so anything that
+   * ended the page put the student back at question one of a different test.
+   */
+  describe("picking a round back up", () => {
+    const start = (isNew = false) => {
+      const s = new Session(new Content(wide, testProfile));
+      const test = s.serveTest("n1")!;
+      s.beginRound("n1", test, isNew);
+      return { s, test };
+    };
+
+    it("opens when the test is served, before anything has been graded", () => {
+      const { s, test } = start(true);
+      const open = s.resumableRound()!;
+      expect(open.qIndex).toBe(0);
+      expect(open.isNew).toBe(true);
+      expect(open.test).toBe(test);
+      expect(s.progress().openRound!.worst).toBeNull();
+    });
+
+    it("comes back to the same test, without spending a rotation slot", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      const seen = [...s.progress().seenTests.n1!];
+
+      // As if the app had been swiped away and opened again.
+      const back = new Session(
+        new Content(wide, testProfile),
+        JSON.parse(JSON.stringify(s.progress())),
+      );
+      const open = back.resumableRound()!;
+      expect(open.sectionId).toBe("n1");
+      expect(open.test.id).toBe(test.id);
+      expect(open.qIndex).toBe(1); // the second of the two, not the first
+      // Re-serving would both re-roll the test and record it again.
+      expect(back.progress().seenTests.n1).toEqual(seen);
+    });
+
+    it("holds the card at one rep however the round is picked up", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      s.gradeTopic("n1", 1, now, test.id);
+      expect(s.progress().topicCards.n1!.reps).toBe(1);
+      expect(s.progress().openRound!.worst).toBe(1); // the worst of the two
+      expect(s.progress().openRound!.answered).toBe(2);
+    });
+
+    it("lets go once the last question is graded", () => {
+      const { s, test } = start();
+      for (const _ of test.questions) s.gradeTopic("n1", 3, now, test.id);
+      // Every question answered: there is nothing to come back to, even though
+      // the round is still on file for the card's sake.
+      expect(s.resumableRound()).toBeNull();
+      s.endRound();
+      expect(s.progress().openRound).toBeNull();
+    });
+
+    it("says nothing about a test this bundle no longer carries", () => {
+      const { s } = start();
+      s.progress().openRound!.roundId = "n1-t99";
+      expect(s.resumableRound()).toBeNull();
+    });
+
+    it("keeps the answer being written, and drops it once it is graded", () => {
+      const { s, test } = start();
+      s.setDraft({ input: "half a sen", marks: { answer: { 0: 1 } } });
+      // Deliberately not `touch`ed: a keystroke is not progress to push.
+      const stamp = s.progress().updatedAt;
+      expect(s.resumableRound()!.draft).toEqual({
+        input: "half a sen",
+        marks: { answer: { 0: 1 } },
+      });
+      expect(s.progress().updatedAt).toBe(stamp);
+
+      s.gradeTopic("n1", 3, now, test.id);
+      expect(s.resumableRound()!.draft).toBeUndefined();
+    });
+
+    it("drops a round stored before it recorded where the student was", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      const legacy = JSON.parse(JSON.stringify(s.progress()));
+      delete legacy.openRound.answered; // as an older file on disk would be
+      delete legacy.openRound.isNew;
+
+      const back = new Session(new Content(wide, testProfile), legacy);
+      expect(back.progress().openRound).toBeNull();
+      expect(back.resumableRound()).toBeNull();
+    });
+  });
+
   it("takes an undo back across a round's earlier questions", () => {
     const s = new Session(new Content(wide, testProfile));
     s.gradeTopic("n1", 4, now, "n1-t1");

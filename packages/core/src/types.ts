@@ -232,23 +232,51 @@ export type Focus =
   | { kind: "topic"; sectionId: string };
 
 /**
- * A round of questions in flight — one served test — and the card as it stood
- * before the round began.
+ * The answer being written, kept so that whatever ends the page does not also
+ * cost the sentence.
+ *
+ * Held on the round rather than beside it because it is only ever the answer
+ * to the round's current question: when the round moves on, this goes.
+ */
+export interface RoundDraft {
+  /** What is in the box. */
+  input: string;
+  /** Present once Submit or Reveal was tapped — that is, the graded screen. */
+  graded?: { submitted: string; revealed: boolean };
+  /** Words picked out before the grade, which the grade has not yet stored. */
+  marks?: AttemptMarks;
+}
+
+/**
+ * A round of questions in flight — one served test, where the student is in
+ * it, and the card as it stood before it began.
  *
  * A test is four questions on one topic, and rating the topic's card once per
  * question drove it four reps deep in a single sitting. The round is the unit
  * instead: every grade in it rewinds the card to `cardBefore` and re-rates it
  * with the worst grade given so far. The card on disk is therefore always the
  * result of exactly one rep, whenever the round is abandoned.
+ *
+ * It is also where the student is. A test used to live entirely in the
+ * screen's own state, so anything that ended the page — a reload, a swipe, the
+ * phone reclaiming memory — put you back at question one of a different,
+ * randomly rotated test. A round opens when a test is served and closes when
+ * its last question is graded, and in between it is enough to put the same
+ * sentence back on the screen.
  */
 export interface OpenRound {
   sectionId: string;
-  /** The served test's id — the round's identity, so no explicit end is needed. */
+  /** The served test's id — how the same test is found again, not re-rolled. */
   roundId: string;
   /** The topic's card before the round, or null if the topic had none. */
   cardBefore: SerializedCard | null;
-  /** The lowest grade given in the round so far. */
-  worst: 1 | 2 | 3 | 4;
+  /** The lowest grade given in the round so far, or null before the first. */
+  worst: 1 | 2 | 3 | 4 | null;
+  /** How many of the round's questions have been graded — where to resume. */
+  answered: number;
+  /** Whether the topic was new when the round was served; drives the badge. */
+  isNew: boolean;
+  draft?: RoundDraft;
 }
 
 export interface Progress {

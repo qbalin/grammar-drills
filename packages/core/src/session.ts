@@ -17,6 +17,7 @@ import {
   type LemmaEntry,
   type PlacementRun,
   type Progress,
+  type RoundDraft,
   type SerializedCard,
   type Test,
   type VocabCardState,
@@ -147,6 +148,12 @@ export class Session {
     // the per-family walk. It is at most a few sentences; start over.
     if (this.p.placement && !("familyIndex" in this.p.placement)) {
       this.p.placement = null;
+    }
+    // Likewise a round stored before it recorded where the student was in it.
+    // There is nowhere to resume such a round to, and the only job it had —
+    // holding the card at one rep — it has already finished doing.
+    if (this.p.openRound && !("answered" in this.p.openRound)) {
+      this.p.openRound = null;
     }
   }
 
@@ -381,6 +388,84 @@ export class Session {
     return this.take(sectionId, pool);
   }
 
+  // --- the round in flight ---------------------------------------------------
+
+  /**
+   * Take up a served test as the round in flight.
+   *
+   * Called when a test reaches the screen, not when it is first answered. The
+   * round used to open on its first grade, which meant a student one question
+   * in had no record of being anywhere — and a test is entirely the screen's
+   * own state, so anything that ended the page lost it. `cardBefore` is read
+   * here for the same reason: "the card as it stood before the round began" is
+   * what it says, and before the round began is now.
+   */
+  beginRound(sectionId: string, test: Test, isNew = false): void {
+    this.p.openRound = {
+      sectionId,
+      roundId: test.id,
+      cardBefore: this.p.topicCards[sectionId] ?? null,
+      worst: null,
+      answered: 0,
+      isNew,
+    };
+    this.touch();
+  }
+
+  /** Let go of the round: its last question is graded, or study moved on. */
+  endRound(): void {
+    if (!this.p.openRound) return;
+    this.p.openRound = null;
+    this.touch();
+  }
+
+  /**
+   * The round to put back on the screen, or null to ask `next` instead.
+   *
+   * The test is found by id rather than served again: `serveTest` picks at
+   * random and records what it picked, so re-calling it here would hand back a
+   * different test *and* spend a rotation slot on every reload.
+   *
+   * Null for a round whose questions are all graded, and for one naming a test
+   * this bundle no longer carries — a pack can be regenerated under a student
+   * mid-round, and the answer to that is the scheduler, not a crash.
+   */
+  resumableRound(): {
+    sectionId: string;
+    test: Test;
+    qIndex: number;
+    isNew: boolean;
+    draft?: RoundDraft;
+  } | null {
+    const open = this.p.openRound;
+    if (!open) return null;
+    const test = this.content
+      .testsFor(open.sectionId)
+      .find((t) => t.id === open.roundId);
+    if (!test || open.answered >= test.questions.length) return null;
+    return {
+      sectionId: open.sectionId,
+      test,
+      qIndex: open.answered,
+      isNew: open.isNew,
+      draft: open.draft,
+    };
+  }
+
+  /**
+   * Keep the answer being written, so a session that ends mid-sentence does
+   * not cost the sentence.
+   *
+   * Deliberately does not `touch()`. `updatedAt` is what the remote mirror
+   * compares, and a keystroke is not progress another device needs; bumping it
+   * here would queue a commit per letter typed.
+   */
+  setDraft(draft: RoundDraft | null): void {
+    if (!this.p.openRound) return;
+    if (draft) this.p.openRound.draft = draft;
+    else delete this.p.openRound.draft;
+  }
+
   /**
    * Apply a self-grade to a grammar topic, creating its card on first sight.
    *
@@ -408,8 +493,10 @@ export class Session {
       open.sectionId === sectionId;
 
     const before = continuing ? open.cardBefore : (existing ?? null);
+    // `worst` is null until the round's first grade, since a round now opens
+    // when its test is served rather than when it is first answered.
     const worst = (
-      continuing ? Math.min(open.worst, rating) : rating
+      continuing && open.worst !== null ? Math.min(open.worst, rating) : rating
     ) as Rating;
     const card = rate(
       before ? deserializeCard(before) : newCard(now),
@@ -420,7 +507,16 @@ export class Session {
     this.p.openRound =
       roundId === undefined
         ? null
-        : { sectionId, roundId, cardBefore: before, worst };
+        : {
+            sectionId,
+            roundId,
+            cardBefore: before,
+            worst,
+            // One more of the round's questions is behind us, and the draft
+            // was the answer to the one just graded.
+            answered: (continuing ? open.answered : 0) + 1,
+            isNew: continuing ? open.isNew : false,
+          };
 
     // Mastery moves gradually, so one good answer can't mark a topic mastered
     // and one bad day can't wipe it: good/easy +1, hard +0.5, again -1. It is

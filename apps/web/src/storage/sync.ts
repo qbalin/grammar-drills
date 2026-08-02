@@ -139,6 +139,17 @@ export class SyncingStorage implements StorageAdapter {
     this.timer = setTimeout(() => void this.flush(), PUSH_DELAY_MS);
   }
 
+  /**
+   * Write the device's copy only, leaving the mirror alone.
+   *
+   * For what changes as fast as it is typed — the answer in flight. That is
+   * worth having on this device the instant the app is taken away, and worth
+   * nothing to another one, so it must not become a commit per keystroke.
+   */
+  saveLocal(progress: Progress): void {
+    this.local.write(progress);
+  }
+
   /** Write the local copy and push it now, without waiting for the debounce. */
   async saveNow(progress: Progress): Promise<void> {
     this.local.write(progress);
