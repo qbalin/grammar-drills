@@ -124,7 +124,13 @@ export interface VocabCardState extends LemmaEntry {
   citationEdited?: boolean;
 }
 
-/** How loudly a word is picked out: 1 bold, 2 italic, 3 both. */
+/**
+ * What is being said about a word: 1 bold, 2 italic, 3 struck through.
+ *
+ * Three things to say and not two loudnesses and their sum. Bold-italic was
+ * the third step and nobody means it; struck is a verdict — *not this word* —
+ * and it is the one a wrong answer most often wants.
+ */
 export type Emphasis = 1 | 2 | 3;
 
 /**

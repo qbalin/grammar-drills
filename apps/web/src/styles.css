@@ -415,23 +415,39 @@ span.status__title {
 /* The student's own emphasis, on their own record.
    Deliberately not `.gr-b`/`.gr-i`: those belong to the grammar's runs, and
    `.gr-i` dims what it italicises — right for an editorial aside, wrong for
-   the one word somebody went to the trouble of picking out. */
+   the one word somebody went to the trouble of picking out. These are the
+   opposite errand and are drawn to be found from across the page. */
+
+/* `--serif` is a stack of system faces — ui-serif, Iowan Old Style, Palatino,
+   Georgia — and none of them has a weight above 700, so `900` renders exactly
+   as `700` does. The stroke is what actually thickens the glyph. */
 .word--b,
 .mark--b {
-  font-weight: 700;
+  font-weight: 800;
+  -webkit-text-stroke: 0.4px currentColor;
 }
 
+/* Two declarations, not one: anything that cannot parse an angle keeps the
+   plain italic, and everything else takes a slant steeper than the face's own. */
 .word--i,
 .mark--i {
   font-style: italic;
+  font-style: oblique 16deg;
 }
 
-/* Under the marker, so it is obvious which words answer to a tap. Dotted
-   rather than solid: the sentence is still the thing being read. */
+/* Struck: the third thing to say about a word, and the only one of the three
+   that is a verdict — *not this*. */
+.word--s,
+.mark--s {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 0.07em;
+}
+
+/* Under the marker, so it is obvious which words answer to a tap. A shadow
+   rather than an underline because `text-decoration` does not stack, and a
+   struck word needs that property for the strike. */
 .word--markable {
-  text-decoration: underline dotted
-    color-mix(in srgb, currentColor 40%, transparent);
-  text-underline-offset: 0.25em;
+  box-shadow: 0 1px 0 color-mix(in srgb, currentColor 30%, transparent);
 }
 
 .compare--marking .compare__block {

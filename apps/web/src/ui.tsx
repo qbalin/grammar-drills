@@ -213,15 +213,24 @@ export function useHold() {
   };
 }
 
-/** none → bold → italic → both → none. Four taps and the word is plain again. */
+/** none → bold → italic → struck → none. Four taps and the word is plain again. */
 export function cycleEmphasis(current?: Emphasis): Emphasis | undefined {
   return current === undefined ? 1 : current === 3 ? undefined : ((current + 1) as Emphasis);
 }
 
+/**
+ * The class suffix each emphasis puts on a word, indexed by `Emphasis`.
+ *
+ * A lookup rather than bit flags. Flags made 3 mean "1 and 2 together", which
+ * is a distinction nobody draws while studying and a fourth tap to get back
+ * from; struck is a third thing to say — *not this word* — and the app could
+ * not say it at all.
+ */
+const EMPHASIS = ["", "b", "i", "s"];
+
 /** The classes an emphasis puts on a word, under whichever prefix. */
 function emphasisClass(prefix: string, mark?: Emphasis): string {
-  if (!mark) return "";
-  return `${mark & 1 ? ` ${prefix}--b` : ""}${mark & 2 ? ` ${prefix}--i` : ""}`;
+  return mark ? ` ${prefix}--${EMPHASIS[mark]}` : "";
 }
 
 /**

@@ -342,7 +342,7 @@ export function AttemptTrail({
               </div>
             )}
             {marking && (
-              <div className="attempt__hint">Tap a word: bold, italic, both, off.</div>
+              <div className="attempt__hint">Tap a word: bold, italic, struck, off.</div>
             )}
           </div>
         );
