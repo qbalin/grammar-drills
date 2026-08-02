@@ -1060,6 +1060,23 @@ export default {
       ["crimson", "M10.65 14.88 C11.18 14.43 12.83 14.43 13.35 14.88 C12.83 15.48 11.18 15.48 10.65 14.88 Z"],
     ],
 
+    // λύχνος — the oil lamp, lit. The Latin pack has had one for a while and
+    // this one did not, which is the sort of thing a reference sheet is for.
+    // The flame sits square on the spout: trailing off the back of it, the
+    // whole thing turns into a fish.
+    lychnos: [
+      ["terracotta", "M3.2 15.4 C3.2 12.4 6.0 10.4 9.8 10.4 C13.6 10.4 16.4 12.4 16.4 15.4 C16.4 18.2 13.6 20.0 9.8 20.0 C6.0 20.0 3.2 18.2 3.2 15.4 Z"],
+      ["terracottaLight", "M3.2 15.4 C3.2 12.8 5.3 11.0 8.4 10.5 C6.4 11.4 5.2 13.0 5.2 15.2 C5.2 16.8 5.9 18.2 7.2 19.2 C4.8 18.5 3.2 17.1 3.2 15.4 Z"],
+      ["terracotta", "M15.0 13.2 L21.0 12.4 L21.4 15.6 L15.4 16.8 Z"],
+      ["terracottaDark", "M15.4 15.4 L21.2 14.2 L21.4 15.6 L15.4 16.8 Z"],
+      ["glaze", "M3.6 17.0 C4.8 19.0 7.2 20.0 9.8 20.0 C12.4 20.0 14.8 19.0 16.0 17.0 Z"],
+      ["glaze", "M7.8 13.6 A2.0 2.0 0 1 0 11.8 13.6 A2.0 2.0 0 1 0 7.8 13.6 Z"],
+      ["terracotta", "M7.4 13.6 A2.4 2.4 0 1 0 12.2 13.6 A2.4 2.4 0 1 0 7.4 13.6 Z M8.2 13.6 A1.6 1.6 0 1 0 11.4 13.6 A1.6 1.6 0 1 0 8.2 13.6 Z"],
+      ["crimson", "M21.8 13.6 C23.6 11.0 23.4 7.4 21.2 5.0 C21.6 8.2 20.4 9.8 19.4 11.0 C20.6 11.6 21.4 12.5 21.8 13.6 Z"],
+      ["gold", "M21.4 13.0 C22.5 11.2 22.4 8.8 21.1 7.2 C21.3 9.4 20.5 10.4 19.9 11.1 C20.6 11.6 21.1 12.3 21.4 13.0 Z"],
+      ["goldLight", "M21.0 12.4 C21.7 11.2 21.7 9.8 21.0 8.8 C21.0 10.2 20.6 10.9 20.2 11.4 C20.6 11.7 20.9 12.0 21.0 12.4 Z"],
+    ],
+
     // ---- first pass -------------------------------------------------
     // The drawings these replaced, kept beside them rather than instead of
     // them so the two can be compared and the better one chosen.
@@ -1202,5 +1219,6 @@ export default {
     ["athena", "glaux3"], ["poseidon", "trireme"],
     ["pegasos"], ["pegasos", "akropolis"],
     ["lampas"], ["lampas", "stephanosDaphnes"],
+    ["lychnos"], ["lychnos", "biblionApertum"],
   ],
 };
