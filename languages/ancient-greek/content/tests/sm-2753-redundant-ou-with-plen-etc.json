@@ -1,0 +1,546 @@
+[
+ {
+  "id": "sm-2753-redundant-ou-with-plen-etc-t1",
+  "sectionId": "sm-2753-redundant-ou-with-plen-etc",
+  "questions": [
+   {
+    "prompt": "The citizens honored all the gods except not Ares.",
+    "answer": "οἱ πολῖται πάντας τοὺς θεοὺς ἐτίμησαν πλὴν οὐκ Ἄρην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "πάντας",
+     "τοὺς",
+     "θεοὺς",
+     "ἐτίμησαν",
+     "πλὴν",
+     "οὐκ",
+     "Ἄρην"
+    ]
+   },
+   {
+    "prompt": "The messenger reported everything except not the magnitude of the danger.",
+    "answer": "ὁ ἄγγελος πάντα ἀπήγγειλε πλὴν οὐ τὸ μέγεθος τοῦ κινδύνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "πάντα",
+     "ἀπήγγειλε",
+     "πλὴν",
+     "οὐ",
+     "τὸ",
+     "μέγεθος",
+     "τοῦ",
+     "κινδύνου"
+    ]
+   },
+   {
+    "prompt": "They sailed to every island except not to Samos.",
+    "answer": "εἰς πάσας τὰς νήσους ἔπλευσαν πλὴν οὐκ εἰς Σάμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "πάσας",
+     "τὰς",
+     "νήσους",
+     "ἔπλευσαν",
+     "πλὴν",
+     "οὐκ",
+     "Σάμον"
+    ]
+   },
+   {
+    "prompt": "Everyone fled from the city except not the old men.",
+    "answer": "πάντες ἐκ τῆς πόλεως ἔφυγον πλὴν οὐχ οἱ γέροντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἔφυγον",
+     "πλὴν",
+     "οὐχ",
+     "οἱ",
+     "γέροντες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2753-redundant-ou-with-plen-etc-t2",
+  "sectionId": "sm-2753-redundant-ou-with-plen-etc",
+  "questions": [
+   {
+    "prompt": "The general trusted all his allies except not the Thebans.",
+    "answer": "ὁ στρατηγὸς πᾶσι τοῖς συμμάχοις ἐπίστευε πλὴν οὐ τοῖς Θηβαίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "πᾶσι",
+     "τοῖς",
+     "συμμάχοις",
+     "ἐπίστευε",
+     "πλὴν",
+     "οὐ",
+     "Θηβαίοις"
+    ]
+   },
+   {
+    "prompt": "She remembered all her friends except not her sister.",
+    "answer": "πάντων τῶν φίλων ἐμέμνητο πλὴν οὐ τῆς ἀδελφῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντων",
+     "τῶν",
+     "φίλων",
+     "ἐμέμνητο",
+     "πλὴν",
+     "οὐ",
+     "τῆς",
+     "ἀδελφῆς"
+    ]
+   },
+   {
+    "prompt": "They plundered every village except not the temple.",
+    "answer": "πάσας τὰς κώμας διήρπασαν πλὴν οὐ τὸ ἱερόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάσας",
+     "τὰς",
+     "κώμας",
+     "διήρπασαν",
+     "πλὴν",
+     "οὐ",
+     "τὸ",
+     "ἱερόν"
+    ]
+   },
+   {
+    "prompt": "He answered all the questions except not the last one.",
+    "answer": "πᾶσι τοῖς ἐρωτήμασιν ἀπεκρίνατο πλὴν οὐ τῷ τελευταίῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶσι",
+     "τοῖς",
+     "ἐρωτήμασιν",
+     "ἀπεκρίνατο",
+     "πλὴν",
+     "οὐ",
+     "τῷ",
+     "τελευταίῳ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2753-redundant-ou-with-plen-etc-t3",
+  "sectionId": "sm-2753-redundant-ou-with-plen-etc",
+  "questions": [
+   {
+    "prompt": "Before you know nothing certain, what use is it to grieve?",
+    "answer": "πρὶν οὐδὲν σαφὲς εἰδέναι, τί ὄφελος λυπεῖσθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὶν",
+     "οὐδὲν",
+     "σαφὲς",
+     "εἰδέναι",
+     "τί",
+     "ὄφελος",
+     "λυπεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "Why should you be afraid, before you have not clearly seen the enemy?",
+    "answer": "τί ἂν φοβοῖο, πρὶν οὐ σαφῶς τοὺς πολεμίους ἰδεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ἂν",
+     "φοβοῖο",
+     "πρὶν",
+     "οὐ",
+     "σαφῶς",
+     "τοὺς",
+     "πολεμίους",
+     "ἰδεῖν"
+    ]
+   },
+   {
+    "prompt": "What good is it to lament, before you have not learned anything true?",
+    "answer": "τί ὄφελος ὀδύρεσθαι, πρὶν οὐδὲν ἀληθὲς μαθεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ὄφελος",
+     "ὀδύρεσθαι",
+     "πρὶν",
+     "οὐδὲν",
+     "ἀληθὲς",
+     "μαθεῖν"
+    ]
+   },
+   {
+    "prompt": "How would you win, before you have not understood the plan?",
+    "answer": "πῶς ἂν νικῴης, πρὶν οὐ τὴν βουλὴν συνιέναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἂν",
+     "νικῴης",
+     "πρὶν",
+     "οὐ",
+     "τὴν",
+     "βουλὴν",
+     "συνιέναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2753-redundant-ou-with-plen-etc-t4",
+  "sectionId": "sm-2753-redundant-ou-with-plen-etc",
+  "questions": [
+   {
+    "prompt": "Know well that you fight not more for your own glory than not for the fatherland.",
+    "answer": "εὖ ἴστε ὅτι οὐ μᾶλλον ὑπὲρ τῆς ὑμετέρας δόξης μάχεσθε ἢ οὐχ ὑπὲρ τῆς πατρίδος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "ἴστε",
+     "ὅτι",
+     "οὐ",
+     "μᾶλλον",
+     "ὑπὲρ",
+     "τῆς",
+     "ὑμετέρας",
+     "δόξης",
+     "μάχεσθε",
+     "ἢ",
+     "οὐχ",
+     "πατρίδος"
+    ]
+   },
+   {
+    "prompt": "We punished him not more for his own crime than not for the common danger.",
+    "answer": "οὐ μᾶλλον ὑπὲρ τοῦ ἰδίου ἀδικήματος αὐτὸν ἐτιμωρησάμεθα ἢ οὐχ ὑπὲρ τοῦ κοινοῦ κινδύνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μᾶλλον",
+     "ὑπὲρ",
+     "τοῦ",
+     "ἰδίου",
+     "ἀδικήματος",
+     "αὐτὸν",
+     "ἐτιμωρησάμεθα",
+     "ἢ",
+     "οὐχ",
+     "κοινοῦ",
+     "κινδύνου"
+    ]
+   },
+   {
+    "prompt": "The general cared not more for the ships than not for the men.",
+    "answer": "ὁ στρατηγὸς οὐ μᾶλλον τῶν νεῶν ἐφρόντιζεν ἢ οὐ τῶν ἀνδρῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "οὐ",
+     "μᾶλλον",
+     "τῶν",
+     "νεῶν",
+     "ἐφρόντιζεν",
+     "ἢ",
+     "ἀνδρῶν"
+    ]
+   },
+   {
+    "prompt": "You will blame not the laws more than not the jurors themselves.",
+    "answer": "οὐ μᾶλλον τοὺς νόμους αἰτιάσεσθε ἢ οὐκ αὐτοὺς τοὺς δικαστάς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μᾶλλον",
+     "τοὺς",
+     "νόμους",
+     "αἰτιάσεσθε",
+     "ἢ",
+     "οὐκ",
+     "αὐτοὺς",
+     "δικαστάς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2753-redundant-ou-with-plen-etc-t5",
+  "sectionId": "sm-2753-redundant-ou-with-plen-etc",
+  "questions": [
+   {
+    "prompt": "Everyone shared in the danger except not the cowards.",
+    "answer": "πάντες τοῦ κινδύνου μετέσχον χωρὶς οὐ τῶν δειλῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "τοῦ",
+     "κινδύνου",
+     "μετέσχον",
+     "χωρὶς",
+     "οὐ",
+     "τῶν",
+     "δειλῶν"
+    ]
+   },
+   {
+    "prompt": "They were all destroyed except not a few.",
+    "answer": "πάντες διεφθάρησαν ἐκτὸς οὐκ ὀλίγων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "διεφθάρησαν",
+     "ἐκτὸς",
+     "οὐκ",
+     "ὀλίγων"
+    ]
+   },
+   {
+    "prompt": "The whole army was saved except not the wounded.",
+    "answer": "τὸ στράτευμα ἅπαν ἐσώθη χωρὶς οὐ τῶν τετρωμένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "ἅπαν",
+     "ἐσώθη",
+     "χωρὶς",
+     "οὐ",
+     "τῶν",
+     "τετρωμένων"
+    ]
+   },
+   {
+    "prompt": "Nothing was left except not the bare walls.",
+    "answer": "οὐδὲν ἐλείφθη ἐκτὸς οὐ τῶν ψιλῶν τειχῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "ἐλείφθη",
+     "ἐκτὸς",
+     "οὐ",
+     "τῶν",
+     "ψιλῶν",
+     "τειχῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2753-redundant-ou-with-plen-etc-t6",
+  "sectionId": "sm-2753-redundant-ou-with-plen-etc",
+  "questions": [
+   {
+    "prompt": "The orator persuaded the whole assembly except not the archons.",
+    "answer": "ὁ ῥήτωρ ἅπασαν τὴν ἐκκλησίαν ἔπεισε πλὴν οὐ τοὺς ἄρχοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "ἅπασαν",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἔπεισε",
+     "πλὴν",
+     "οὐ",
+     "τοὺς",
+     "ἄρχοντας"
+    ]
+   },
+   {
+    "prompt": "They captured all the ships except not the swiftest.",
+    "answer": "πάσας τὰς ναῦς εἷλον πλὴν οὐ τὴν ταχίστην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάσας",
+     "τὰς",
+     "ναῦς",
+     "εἷλον",
+     "πλὴν",
+     "οὐ",
+     "τὴν",
+     "ταχίστην"
+    ]
+   },
+   {
+    "prompt": "He learned all the arts except not music.",
+    "answer": "πάσας τὰς τέχνας ἔμαθε πλὴν οὐ τὴν μουσικήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάσας",
+     "τὰς",
+     "τέχνας",
+     "ἔμαθε",
+     "πλὴν",
+     "οὐ",
+     "τὴν",
+     "μουσικήν"
+    ]
+   },
+   {
+    "prompt": "The wise man fears nothing except not disgrace.",
+    "answer": "ὁ σοφὸς οὐδὲν φοβεῖται πλὴν οὐ τὴν αἰσχύνην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "οὐδὲν",
+     "φοβεῖται",
+     "πλὴν",
+     "οὐ",
+     "τὴν",
+     "αἰσχύνην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2753-redundant-ou-with-plen-etc-t7",
+  "sectionId": "sm-2753-redundant-ou-with-plen-etc",
+  "questions": [
+   {
+    "prompt": "The messenger reported everything except not the number of the enemy.",
+    "answer": "πάντα ἀπήγγειλεν ὁ ἄγγελος πλὴν οὐ τὸ πλῆθος τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "ἀπήγγειλεν",
+     "ὁ",
+     "ἄγγελος",
+     "πλήν",
+     "οὐ",
+     "τό",
+     "πλῆθος",
+     "τῶν",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "Do not pass judgment before you have not heard both parties.",
+    "answer": "μὴ κρίνῃς πρὶν οὐκ ἀμφοτέρων ἀκοῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "κρίνῃς",
+     "πρίν",
+     "οὐκ",
+     "ἀμφοτέρων",
+     "ἀκοῦσαι"
+    ]
+   },
+   {
+    "prompt": "Know well that you will not honor the wise more than not the just.",
+    "answer": "εὖ ἴστε ὅτι οὐ τοὺς σοφοὺς μᾶλλον τιμήσετε ἢ οὐ τοὺς δικαίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "ἴστε",
+     "ὅτι",
+     "οὐ",
+     "τούς",
+     "σοφούς",
+     "μᾶλλον",
+     "τιμήσετε",
+     "ἤ",
+     "δικαίους"
+    ]
+   },
+   {
+    "prompt": "Everyone was present except not the sick.",
+    "answer": "πάντες παρῆσαν ἐκτὸς οὐ τῶν νοσούντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "παρῆσαν",
+     "ἐκτός",
+     "οὐ",
+     "τῶν",
+     "νοσούντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2753-redundant-ou-with-plen-etc-t8",
+  "sectionId": "sm-2753-redundant-ou-with-plen-etc",
+  "questions": [
+   {
+    "prompt": "They burned all the houses except not the temple.",
+    "answer": "πάσας τὰς οἰκίας ἐνέπρησαν ἄνευ οὐ τοῦ ἱεροῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάσας",
+     "τάς",
+     "οἰκίας",
+     "ἐνέπρησαν",
+     "ἄνευ",
+     "οὐ",
+     "τοῦ",
+     "ἱεροῦ"
+    ]
+   },
+   {
+    "prompt": "But now the merchant appears to be traveling everywhere except not to Sparta.",
+    "answer": "νῦν δὲ φαίνεται ὁ ἔμπορος πανταχόσε πορευόμενος χωρὶς οὐκ εἰς Σπάρτην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "δέ",
+     "φαίνεται",
+     "ὁ",
+     "ἔμπορος",
+     "πανταχόσε",
+     "πορευόμενος",
+     "χωρίς",
+     "οὐκ",
+     "εἰς",
+     "Σπάρτην"
+    ]
+   },
+   {
+    "prompt": "Before you have not made trial of your friend, why do you trust him?",
+    "answer": "πρὶν οὐ πεῖραν τοῦ φίλου λαβεῖν, τί αὐτῷ πιστεύεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρίν",
+     "οὐ",
+     "πεῖραν",
+     "τοῦ",
+     "φίλου",
+     "λαβεῖν",
+     "τί",
+     "αὐτῷ",
+     "πιστεύεις"
+    ]
+   },
+   {
+    "prompt": "You will not admire the poet more than not the lawgiver.",
+    "answer": "οὐ τὸν ποιητὴν μᾶλλον θαυμάσεσθε ἢ οὐ τὸν νομοθέτην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "τόν",
+     "ποιητήν",
+     "μᾶλλον",
+     "θαυμάσεσθε",
+     "ἤ",
+     "νομοθέτην"
+    ]
+   }
+  ]
+ }
+]
