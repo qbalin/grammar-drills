@@ -1,0 +1,565 @@
+[
+ {
+  "id": "sm-2864-e-t1",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "I swear by the gods that in truth I will help you.",
+    "answer": "ὄμνυμι τοὺς θεοὺς ἦ μὴν βοηθήσειν σοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄμνυμι",
+     "τοὺς",
+     "θεοὺς",
+     "ἦ",
+     "μὴν",
+     "βοηθήσειν",
+     "σοι"
+    ]
+   },
+   {
+    "prompt": "The general swore upon his honour that he had not betrayed the army.",
+    "answer": "ὁ στρατηγὸς ὤμοσεν ἦ μὴν μ�ὴ προδοῦναι τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ὤμοσεν",
+     "ἦ",
+     "μὴν",
+     "μὴ",
+     "προδοῦναι",
+     "τὸ",
+     "στράτευμα"
+    ]
+   },
+   {
+    "prompt": "In truth I too suffered such a thing.",
+    "answer": "ἦ μὴν καὶ ἐγὼ τοιοῦτόν τι ἔπαθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "καὶ",
+     "ἐγὼ",
+     "τοιοῦτόν",
+     "τι",
+     "ἔπαθον"
+    ]
+   },
+   {
+    "prompt": "They gave their pledge that verily they would never abandon their allies.",
+    "answer": "ἔδοσαν πίστιν ἦ μὴν μηδέποτε τοὺς συμμάχους καταλείψειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοσαν",
+     "πίστιν",
+     "ἦ",
+     "μὴν",
+     "μηδέποτε",
+     "τοὺς",
+     "συμμάχους",
+     "καταλείψειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2864-e-t2",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "You are the one who wrote these things, are you not?",
+    "answer": "σὺ ταῦτα ἔγραψας, ἦ γάρ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "ταῦτα",
+     "ἔγραψας",
+     "ἦ",
+     "γάρ"
+    ]
+   },
+   {
+    "prompt": "What, do you really intend to sail against the enemy?",
+    "answer": "ἦ γὰρ διανοῇ πλεῖν ἐπὶ τοὺς πολεμίους;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "γὰρ",
+     "διανοῇ",
+     "πλεῖν",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "You are guarding the gates, are you not?",
+    "answer": "φυλάττεις τὰς πύλας, ἦ γάρ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάττεις",
+     "τὰς",
+     "πύλας",
+     "ἦ",
+     "γάρ"
+    ]
+   },
+   {
+    "prompt": "What, do you truly think the gods are unjust?",
+    "answer": "ἦ γὰρ ἡγῇ τοὺς θεοὺς ἀδίκους εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "γὰρ",
+     "ἡγῇ",
+     "τοὺς",
+     "θεοὺς",
+     "ἀδίκους",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2864-e-t3",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "You surely, methinks, know these things better than I.",
+    "answer": "ἦ που σὺ ταῦτα ἄμεινον ἐμοῦ οἶσθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "που",
+     "σὺ",
+     "ταῦτα",
+     "ἄμεινον",
+     "ἐμοῦ",
+     "οἶσθα"
+    ]
+   },
+   {
+    "prompt": "The old man, I ween, rejoices at his son's return.",
+    "answer": "ἦ που ὁ γέρων χαίρει τῇ τοῦ υἱοῦ ἐπανόδῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "που",
+     "ὁ",
+     "γέρων",
+     "χαίρει",
+     "τῇ",
+     "τοῦ",
+     "υἱοῦ",
+     "ἐπανόδῳ"
+    ]
+   },
+   {
+    "prompt": "Indeed the enemy, methinks, fear our approach.",
+    "answer": "ἦ που οἱ πολέμιοι τὴν ἡμετέραν ἔφοδον φοβοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "που",
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "ἡμετέραν",
+     "ἔφοδον",
+     "φοβοῦνται"
+    ]
+   },
+   {
+    "prompt": "You are surely, I ween, the wisest of all men now living.",
+    "answer": "ἦ που πάντων τῶν νῦν ὄντων σοφώτατος εἶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "που",
+     "πάντων",
+     "τῶν",
+     "νῦν",
+     "ὄντων",
+     "σοφώτατος",
+     "εἶ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2864-e-t4",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "Verily you have judged this matter rightly.",
+    "answer": "ἦ ὀρθῶς τοῦτο ἔκρινας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "ὀρθῶς",
+     "τοῦτο",
+     "ἔκρινας"
+    ]
+   },
+   {
+    "prompt": "In truth the soldiers fought bravely.",
+    "answer": "ἦ ἀνδρείως οἱ στρατιῶται ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "ἀνδρείως",
+     "οἱ",
+     "στρατιῶται",
+     "ἐμάχοντο"
+    ]
+   },
+   {
+    "prompt": "Verily, with the wind blowing, the voyage was difficult.",
+    "answer": "ἦ πνέοντος τοῦ ἀνέμου χαλεπὸς ἦν ὁ πλοῦς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "πνέοντος",
+     "τοῦ",
+     "ἀνέμου",
+     "χαλεπὸς",
+     "ἦν",
+     "ὁ",
+     "πλοῦς"
+    ]
+   },
+   {
+    "prompt": "In truth I have long been amazed at your courage.",
+    "answer": "ἦ πάλαι τέθηπα τὴν σὴν ἀνδρείαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "πάλαι",
+     "τέθηπα",
+     "τὴν",
+     "σὴν",
+     "ἀνδρείαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2864-e-t5",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "And do you really trust him, untrustworthy as he is?",
+    "answer": "ἦ καὶ πιστεύεις αὐτῷ ἀπίστῳ ὄντι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "καὶ",
+     "πιστεύεις",
+     "αὐτῷ",
+     "ἀπίστῳ",
+     "ὄντι"
+    ]
+   },
+   {
+    "prompt": "Do you really also wish to flee the danger?",
+    "answer": "ἦ καὶ βούλει τὸν κίνδυνον ἀποφυγεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "καὶ",
+     "βούλει",
+     "τὸν",
+     "κίνδυνον",
+     "ἀποφυγεῖν"
+    ]
+   },
+   {
+    "prompt": "Do you really then, being fortunate, still fear the future?",
+    "answer": "ἦ δὴ εὐτυχῶν ἔτι τὸ μέλλον φοβῇ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "δὴ",
+     "εὐτυχῶν",
+     "ἔτι",
+     "τὸ",
+     "μέλλον",
+     "φοβῇ"
+    ]
+   },
+   {
+    "prompt": "Do you in truth intend to bury him, when it is forbidden to the city?",
+    "answer": "ἦ δὴ ἐν νῷ ἔχεις θάπτειν αὐτόν, ἀπόρρητον ὂν τῇ πόλει;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "δὴ",
+     "ἐν",
+     "νῷ",
+     "ἔχεις",
+     "θάπτειν",
+     "αὐτόν",
+     "ἀπόρρητον",
+     "ὂν",
+     "τῇ",
+     "πόλει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2864-e-t6",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "The sailors swore upon their honour that they had seen land.",
+    "answer": "οἱ ναῦται ὤμοσαν ἦ μὴν γῆν ἰδεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "ὤμοσαν",
+     "ἦ",
+     "μὴν",
+     "γῆν",
+     "ἰδεῖν"
+    ]
+   },
+   {
+    "prompt": "Indeed, methinks, the citizens honour the just.",
+    "answer": "ἦ που τοὺς δικαίους οἱ πολῖται τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "που",
+     "τοὺς",
+     "δικαίους",
+     "οἱ",
+     "πολῖται",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "What, do you really scorn those who serve the city?",
+    "answer": "ἦ γὰρ καταφρονεῖς τῶν τῇ πόλει δουλευόντων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "γὰρ",
+     "καταφρονεῖς",
+     "τῶν",
+     "τῇ",
+     "πόλει",
+     "δουλευόντων"
+    ]
+   },
+   {
+    "prompt": "In truth, by Zeus, I will bring the ransom.",
+    "answer": "ἦ μὴν νὴ τὸν Δία τὰ λύτρα οἴσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "νὴ",
+     "τὸν",
+     "Δία",
+     "τὰ",
+     "λύτρα",
+     "οἴσω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2864-e-t7",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "Verily you speak nobly, my friend.",
+    "answer": "ἦ καλῶς λέγεις, ὦ φίλε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "καλῶς",
+     "λέγεις",
+     "ὦ",
+     "φίλε"
+    ]
+   },
+   {
+    "prompt": "In truth I suffered something terrible at the hands of the enemy.",
+    "answer": "ἦ μὴν ἔπαθόν τι δεινὸν ὑπὸ τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "ἔπαθόν",
+     "τι",
+     "δεινὸν",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "What, do you really intend to betray the city to the enemy?",
+    "answer": "ἦ γὰρ διανοῇ προδοῦναι τὴν πόλιν τοῖς πολεμίοις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "γὰρ",
+     "διανοῇ",
+     "προδοῦναι",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "You honor the gods, do you not?",
+    "answer": "ἦ γὰρ τοὺς θεοὺς τιμᾷς;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "γὰρ",
+     "τοὺς",
+     "θεοὺς",
+     "τιμᾷς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2864-e-t8",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "I swear by all the gods that in truth I did not touch your money.",
+    "answer": "ὄμνυμι τοὺς θεοὺς ἅπαντας ἦ μὴν μὴ ἅψασθαι τῶν σῶν χρημάτων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄμνυμι",
+     "τοὺς",
+     "θεοὺς",
+     "ἅπαντας",
+     "ἦ",
+     "μὴν",
+     "μὴ",
+     "ἅψασθαι",
+     "τῶν",
+     "σῶν",
+     "χρημάτων"
+    ]
+   },
+   {
+    "prompt": "Indeed, methinks, the general fears the coming battle.",
+    "answer": "ἦ που ὁ στρατηγὸς τὴν μέλλουσαν μάχην φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "που",
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "μέλλουσαν",
+     "μάχην",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "Do you really believe, then, that the gods are unjust?",
+    "answer": "ἦ δὴ νομίζεις τοὺς θεοὺς ἀδίκους εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "δὴ",
+     "νομίζεις",
+     "τοὺς",
+     "θεοὺς",
+     "ἀδίκους",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "In truth these men fought bravely on behalf of their fatherland.",
+    "answer": "ἦ μὴν οἵδε ἀνδρείως ὑπὲρ τῆς πατρίδος ἐμαχέσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "οἵδε",
+     "ἀνδρείως",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἐμαχέσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2864-e-t9",
+  "sectionId": "sm-2864-e",
+  "questions": [
+   {
+    "prompt": "Verily you have spoken the truth to all of us.",
+    "answer": "ἦ τὰ ἀληθῆ εἴρηκας πρὸς πάντας ἡμᾶς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "τὰ",
+     "ἀληθῆ",
+     "εἴρηκας",
+     "πρὸς",
+     "πάντας",
+     "ἡμᾶς"
+    ]
+   },
+   {
+    "prompt": "What, are you really willing to abandon your friends in danger?",
+    "answer": "ἦ καὶ ἐθέλεις τοὺς φίλους ἐν κινδύνῳ καταλιπεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "καὶ",
+     "ἐθέλεις",
+     "τοὺς",
+     "φίλους",
+     "ἐν",
+     "κινδύνῳ",
+     "καταλιπεῖν"
+    ]
+   },
+   {
+    "prompt": "You love wisdom, do you not?",
+    "answer": "ἦ γὰρ τὴν σοφίαν φιλεῖς;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "γὰρ",
+     "τὴν",
+     "σοφίαν",
+     "φιλεῖς"
+    ]
+   },
+   {
+    "prompt": "I swear by Zeus, upon my honor, that I will never betray you.",
+    "answer": "ὄμνυμι τὸν Δία ἦ μὴν μηδέποτε σε προδώσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄμνυμι",
+     "τὸν",
+     "Δία",
+     "ἦ",
+     "μὴν",
+     "μηδέποτε",
+     "σε",
+     "προδώσειν"
+    ]
+   }
+  ]
+ }
+]
