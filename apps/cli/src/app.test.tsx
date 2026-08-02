@@ -75,6 +75,20 @@ class MemoryStorage implements StorageAdapter {
 
 const tick = () => new Promise((r) => setTimeout(r, 30));
 
+/**
+ * Wait for the frame to say something, rather than for a duration. Ink renders
+ * on its own schedule and a loaded machine can take longer than any fixed sleep
+ * to put a keypress on screen — a `tick` before the assertion is a race that CI
+ * loses now and then. Fails with the frame it gave up on.
+ */
+const until = async (frame: () => string | undefined, want: string) => {
+  for (let i = 0; i < 100; i++) {
+    if (frame()?.includes(want)) return;
+    await new Promise((r) => setTimeout(r, 10));
+  }
+  throw new Error(`frame never showed ${JSON.stringify(want)}:\n\n${frame()}`);
+};
+
 /** What the terminal sends for Esc. */
 const ESC = "";
 
@@ -555,9 +569,8 @@ describe("CLI App (write → compare → self-grade)", () => {
 
     // One line down, mid-answer: the window moves on.
     stdin.write("\u001B[B");
-    await tick();
+    await until(lastFrame, "lines 2–");
     expect(lastFrame()).toContain("rule line 2");
-    expect(lastFrame()).toContain("lines 2–");
 
     // Paging reaches the end of the section — however many pages that takes.
     for (let i = 0; i < total && !lastFrame()!.includes("· end"); i++) {
