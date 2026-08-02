@@ -123,6 +123,26 @@ const wordSpan = (word: string) =>
     (el) => el.dataset.word?.replace(/[^\p{Letter}]/gu, "") === word,
   );
 
+/**
+ * The word spans of one block on screen — the reference, what you wrote, a row
+ * of the trail — since the same word can stand in more than one of them.
+ */
+const wordsIn = (selector: string) =>
+  Array.from(document.querySelectorAll<HTMLElement>(`${selector} .word`));
+
+/** Tap a word of one block, which is how a word is marked. */
+const tapWord = async (
+  user: ReturnType<typeof userEvent.setup>,
+  selector: string,
+  word: string,
+) => {
+  const span = wordsIn(selector).find(
+    (el) => el.dataset.word?.replace(/[^\p{Letter}]/gu, "") === word,
+  );
+  if (!span) throw new Error(`no word “${word}” in ${selector}`);
+  await user.click(span);
+};
+
 /** Let real time pass, since the hold is timed rather than counted. */
 const passTime = (ms: number) =>
   act(() => new Promise((resolve) => setTimeout(resolve, ms)));
@@ -468,6 +488,193 @@ describe("the answer trail", () => {
     );
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     expect(screen.queryByRole("button", { name: /Earlier answers/ })).toBeNull();
+  });
+});
+
+/**
+ * The grade says the topic went badly. It never says which word, and very
+ * often the topic under test was fine and something else in the sentence was
+ * not — which is the thing worth finding again months later.
+ */
+describe("marking up an answer", () => {
+  const mark = () => screen.getByRole("button", { name: /mark|done marking/ });
+  /** The words shown bold in one block, marked or read-only alike. */
+  const bold = (selector: string) =>
+    Array.from(
+      document.querySelectorAll(`${selector} .word--b, ${selector} .mark--b`),
+    ).map((el) => el.textContent);
+
+  it("keeps the words picked out on the attempt the grade records", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(mark());
+
+    await tapWord(user, ".compare__block--reference", "rosam");
+    await tapWord(user, ".prompt", "rose");
+    await tapWord(user, ".prompt", "rose"); // once more: bold becomes italic
+    await user.click(mark()); // done
+
+    // On screen while it is still the question in hand.
+    expect(bold(".compare__block--reference")).toEqual(["rosam"]);
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+
+    const [attempt] = session.attemptsFor("decl1");
+    expect(attempt?.marks).toEqual({ answer: { 1: 1 }, prompt: { 4: 2 } });
+  });
+
+  it("cycles a word back to plain in four taps, and stores nothing for it", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(mark());
+    for (const _ of [0, 1, 2, 3]) {
+      await tapWord(user, ".compare__block--reference", "rosam");
+    }
+    expect(bold(".compare__block--reference")).toEqual([]);
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    // Nothing picked out is nothing stored, so an attempt nobody marked reads
+    // on disk exactly as it did before marking existed.
+    expect(session.attemptsFor("decl1")[0]!.marks).toBeUndefined();
+  });
+
+  it("suspends the hold while marking, so a press cannot half-save a word", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(mark());
+    await holdWord("rosam");
+    expect(session.vocabList()).toHaveLength(0);
+
+    // And it comes straight back when the mode ends.
+    await user.click(mark());
+    await holdWord("rosam");
+    expect(session.vocabList().map((c) => c.citation)).toEqual(["rosa, rosae (f)"]);
+  });
+
+  it("shows an earlier answer's marks wherever the trail is", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(mark());
+    await tapWord(user, ".compare__block--reference", "rosam");
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+
+    // The next question of the same topic, with the marked answer behind it.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Earlier answers —/ }));
+    expect(bold("#earlier-answers .attempt__answer")).toEqual(["rosam"]);
+    expect(session.attemptsFor("decl1")[0]!.marks).toEqual({ answer: { 1: 1 } });
+  });
+
+  /**
+   * The point of being able to mark a recorded answer at all: a trail written
+   * before this existed has none, and it is the old ones that are worth it.
+   */
+  it("marks an answer already on the record, and saves it as it goes", async () => {
+    const user = userEvent.setup();
+    const { session, storage } = mount();
+    await skipPlacement(user);
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+    expect(session.attemptsFor("decl1")[0]!.marks).toBeUndefined();
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Earlier answers —/ }));
+    const row = () => document.querySelectorAll("#earlier-answers .attempt")[0]!;
+    await user.click(
+      within(row() as HTMLElement).getByRole("button", { name: "Mark up this answer" }),
+    );
+    await tapWord(user, ".attempt--marking .attempt__written", "rosa");
+
+    expect(bold(".attempt--marking .attempt__written")).toEqual(["rosa"]);
+    const [attempt] = session.attemptsFor("decl1");
+    expect(attempt!.marks).toEqual({ submitted: { 1: 1 } });
+    // Straight to disk: the app commits on every action, and this is one.
+    expect(storage.read()?.attempts.decl1?.at(-1)?.marks).toEqual({
+      submitted: { 1: 1 },
+    });
+  });
+
+  it("shows the reference under the marker on the sheet that hides it", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
+    await user.click(screen.getByRole("button", { name: /All 2 questions/ }));
+    await user.click(screen.getByRole("button", { name: /The girl loves the rose/ }));
+
+    // The question sheet leaves the correction and the prompt off every row —
+    // both stand above it, once. Under the marker they come back, because a
+    // row with nothing on it to mark is not a row you can mark.
+    expect(document.querySelector(".attempt .attempt__answer")).toBeNull();
+    // Two rows: the placement probe answered this question too.
+    await user.click(screen.getAllByRole("button", { name: "Mark up this answer" })[0]!);
+    expect(
+      document.querySelector(".attempt--marking .attempt__answer")?.textContent,
+    ).toContain("Puella rosam amat.");
+  });
+
+  it("drops the marks on a sentence that is rewritten, and keeps the rest", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(mark());
+    await tapWord(user, ".compare__block--reference", "rosam");
+    await tapWord(user, ".compare__block:not(.compare__block--reference)", "rosa");
+    await user.click(mark());
+
+    // Submit came too early; the answer is rewritten.
+    await user.click(screen.getByRole("button", { name: /keep writing/ }));
+    await user.clear(screen.getByLabelText("Your Latin"));
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosam amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    // The reference did not change, so its marks stand. What you wrote did,
+    // and its marks named positions in a sentence that no longer exists.
+    expect(session.attemptsFor("decl1")[0]!.marks).toEqual({ answer: { 1: 1 } });
+  });
+
+  it("keeps the marks through taking a grade back", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await skipPlacement(user);
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(mark());
+    await tapWord(user, ".compare__block--reference", "rosam");
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await user.click(screen.getByRole("button", { name: "Undo last grade" }));
+
+    expect(bold(".compare__block--reference")).toEqual(["rosam"]);
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+    // One attempt for the re-grade, not two, and it kept what was marked.
+    const trail = session.attemptsFor("decl1");
+    expect(trail).toHaveLength(2); // the placement probe, and this one
+    expect(trail[0]!.rating).toBe(2);
+    expect(trail[0]!.marks).toEqual({ answer: { 1: 1 } });
   });
 });
 
@@ -1334,9 +1541,16 @@ describe("the three ways to move through the book", () => {
     // One of this topic's two questions has been answered, by the probe.
     expect(session.coverage("decl1")).toEqual({ answered: 1, total: 2 });
     await user.click(screen.getByRole("button", { name: "Reveal" }));
-    await user.click(screen.getByRole("button", { name: /more of this/ }));
+    // The graded screen's ↻ gave its slot up to marking; the topic sheet has
+    // always offered the same drill by name, and it says how much is left.
+    // Nouns is the family being studied, so the map opens on it already.
+    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
+    await user.click(screen.getByRole("button", { name: "Practise these 1" }));
     expect(screen.getByText(/Staying on “First declension”/)).toBeDefined();
 
+    // The sheet closes onto the question that was on the table; the drill
+    // takes over when the round ends.
     await user.click(screen.getByRole("button", { name: /Good/ }));
     expect(onScreen()).toBe("First declension");
     // The one question nobody had answered is the one it serves.

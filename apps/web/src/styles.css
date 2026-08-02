@@ -412,6 +412,32 @@ span.status__title {
   background: color-mix(in srgb, var(--gold) 28%, transparent);
 }
 
+/* The student's own emphasis, on their own record.
+   Deliberately not `.gr-b`/`.gr-i`: those belong to the grammar's runs, and
+   `.gr-i` dims what it italicises — right for an editorial aside, wrong for
+   the one word somebody went to the trouble of picking out. */
+.word--b,
+.mark--b {
+  font-weight: 700;
+}
+
+.word--i,
+.mark--i {
+  font-style: italic;
+}
+
+/* Under the marker, so it is obvious which words answer to a tap. Dotted
+   rather than solid: the sentence is still the thing being read. */
+.word--markable {
+  text-decoration: underline dotted
+    color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 0.25em;
+}
+
+.compare--marking .compare__block {
+  border-color: color-mix(in srgb, var(--gold) 45%, var(--line));
+}
+
 .hint {
   font-size: 0.78rem;
   color: var(--text-faint);
@@ -1041,6 +1067,37 @@ span.status__title {
 
 .attempt__matched {
   color: var(--gold);
+}
+
+/* The way into marking an answer already on the record. It sits at the end of
+   the meta line rather than under the sentences: the row is a thing to read,
+   and a control on its own line would read as part of what was written. */
+.attempt__mark {
+  margin-left: auto;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  border-radius: 6px;
+}
+
+.attempt__mark[aria-pressed="true"] {
+  color: var(--gold);
+  background: color-mix(in srgb, var(--gold) 14%, transparent);
+}
+
+/* The row being marked is lifted out of the trail, because in it the words
+   answer to a tap and the neighbouring rows' do not. */
+.attempt--marking {
+  background: color-mix(in srgb, var(--gold) 6%, transparent);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.6rem;
+  margin: 0 -0.6rem;
+}
+
+.attempt__hint {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  margin-top: 0.4rem;
 }
 
 /* --- forms ---------------------------------------------------------------- */

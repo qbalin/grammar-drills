@@ -533,6 +533,72 @@ describe("Session mastery", () => {
     expect(s2.attemptsFor("ag1")).toHaveLength(1);
   });
 
+  /**
+   * A grade says a topic went badly and never which word. These are the words
+   * the student picked out afterwards, and they live on the attempt because
+   * the question is generated content and read-only at runtime.
+   */
+  describe("marking up an answer", () => {
+    const at = (day: number) =>
+      new Date(`2026-01-${String(day).padStart(2, "0")}T00:00:00Z`);
+    const twoAttempts = () => {
+      const s = new Session(new Content(fixture, testProfile));
+      s.recordAttempt("ag1", { prompt: "p1", answer: "puellae", submitted: "puella", rating: 1 }, at(1));
+      s.recordAttempt("ag1", { prompt: "p2", answer: "rosae", submitted: "rosa", rating: 2 }, at(2));
+      return s;
+    };
+
+    it("finds the attempt by its timestamp and leaves the others alone", () => {
+      const s = twoAttempts();
+      s.markAttempt("ag1", at(1).toISOString(), { answer: { 0: 3 } });
+
+      const trail = s.attemptsFor("ag1"); // newest first
+      expect(trail[1]!.marks).toEqual({ answer: { 0: 3 } });
+      expect(trail[0]!.marks).toBeUndefined();
+    });
+
+    it("keeps a mark through a save and a reload", () => {
+      const s = twoAttempts();
+      s.markAttempt("ag1", at(2).toISOString(), { prompt: { 1: 1 }, submitted: { 0: 2 } });
+
+      const onDisk = JSON.parse(JSON.stringify(s.progress()));
+      const reloaded = new Session(new Content(fixture, testProfile), onDisk);
+      expect(reloaded.attemptsFor("ag1")[0]!.marks).toEqual({
+        prompt: { 1: 1 },
+        submitted: { 0: 2 },
+      });
+    });
+
+    it("stores nothing rather than an empty mark, so unmarked stays unmarked", () => {
+      const s = twoAttempts();
+      s.markAttempt("ag1", at(1).toISOString(), { answer: { 0: 1 } });
+      // Cycled back off: the field goes, not an empty object in its place.
+      s.markAttempt("ag1", at(1).toISOString(), { answer: {} });
+
+      const attempt = s.attemptsFor("ag1")[1]!;
+      expect(attempt.marks).toBeUndefined();
+      expect("marks" in attempt).toBe(false);
+    });
+
+    it("says nothing about an attempt or a topic it has never heard of", () => {
+      const s = twoAttempts();
+      s.markAttempt("ag1", at(9).toISOString(), { answer: { 0: 1 } });
+      s.markAttempt("nope", at(1).toISOString(), { answer: { 0: 1 } });
+      expect(s.attemptsFor("ag1").every((a) => a.marks === undefined)).toBe(true);
+    });
+
+    it("marks an answer written before marking existed", () => {
+      const s = twoAttempts();
+      // As an older file on disk: attempts, and no marks anywhere in them.
+      const legacy = JSON.parse(JSON.stringify(s.progress()));
+      expect(JSON.stringify(legacy)).not.toContain("marks");
+
+      const s2 = new Session(new Content(fixture, testProfile), legacy);
+      s2.markAttempt("ag1", at(1).toISOString(), { answer: { 0: 1 } });
+      expect(s2.attemptsFor("ag1")[1]!.marks).toEqual({ answer: { 0: 1 } });
+    });
+  });
+
   it("groups a topic's answers by the question they answered", () => {
     const s = new Session(new Content(fixture, testProfile));
     const at = (day: number) => new Date(`2026-01-${String(day).padStart(2, "0")}T00:00:00Z`);

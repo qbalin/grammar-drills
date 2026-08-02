@@ -88,6 +88,47 @@ export function words(text: string): string[] {
 }
 
 /**
+ * One token of a sentence: a word, or the whitespace between two of them.
+ *
+ * The split keeps the spacing as tokens of its own so a sentence can be
+ * rebuilt from them exactly — a renderer that dropped the gaps and rejoined
+ * with a single space would quietly reflow the text it was showing.
+ *
+ * `index` is the word's position among the *words*, whitespace not counted,
+ * and it is what a mark is stored against. It is -1 for the gaps and for a
+ * token that is all punctuation, which names no word: those are the same
+ * tokens the hold gesture already refuses.
+ */
+export interface SentenceToken {
+  /** The token as the sentence wrote it, punctuation and all. */
+  text: string;
+  /** Whitespace rather than a word. */
+  space: boolean;
+  /** The bare word, punctuation stripped; empty when there is none. */
+  word: string;
+  index: number;
+}
+
+/**
+ * A sentence cut into its words and the gaps between them.
+ *
+ * Here beside `words` for the same reason `words` is here: everything that
+ * has to number a sentence's words has to number them the same way. The web's
+ * hold gesture split the sentence itself until the student's own emphasis
+ * needed positions that survive being written to disk and read back by
+ * another surface.
+ */
+export function sentenceTokens(text: string): SentenceToken[] {
+  let index = 0;
+  // Split on whitespace but keep it, so the sentence's own spacing survives.
+  return text.split(/(\s+)/).map((token) => {
+    const space = /^\s+$/.test(token) || token === "";
+    const word = space ? "" : stripPunctuation(token);
+    return { text: token, space, word, index: word ? index++ : -1 };
+  });
+}
+
+/**
  * True when what was written is the reference answer.
  *
  * Compared through the pack's own fold — for Latin that makes macrons editorial

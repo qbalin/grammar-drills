@@ -1,6 +1,11 @@
 import type { ReactNode } from "react";
-import type { Question, Rating, VocabCardState } from "@lang-tutor/core";
-import { GradeBar, HoldableLatin, Ring } from "../ui.js";
+import type {
+  AttemptMarks,
+  Question,
+  Rating,
+  VocabCardState,
+} from "@lang-tutor/core";
+import { GradeBar, Ring, Sentence } from "../ui.js";
 import { profile } from "../pack.js";
 
 /**
@@ -95,6 +100,12 @@ export function Answering({
  * Every word in both is holdable: this is the screen where you meet a word you
  * did not know, and the word is already here — asking for it to be retyped into
  * a sheet is how a vocabulary list stays empty.
+ *
+ * And every word in all three — the English too — can be picked out, which is
+ * the other thing this screen is for. Very often the topic under test went
+ * fine and something else in the sentence did not, and a grade cannot say
+ * which. Marking is a mode, entered from the link row, so the hold keeps its
+ * meaning outside it.
  */
 export function Graded({
   question,
@@ -104,12 +115,15 @@ export function Graded({
   total,
   schedule,
   labels,
+  marks,
+  marking,
   onGrade,
   onResume,
   onRecordWord,
   onHoldWord,
   onReadGrammar,
-  onMore,
+  onToggleMarking,
+  onMark,
   vocabulary,
   history,
 }: {
@@ -122,6 +136,10 @@ export function Graded({
   total?: number;
   schedule?: Record<Rating, Date>;
   labels?: Record<Rating, string>;
+  /** What has been picked out so far, riding along until the grade stores it. */
+  marks: AttemptMarks;
+  /** Whether a tap marks a word rather than doing nothing. */
+  marking: boolean;
   onGrade: (r: Rating) => void;
   /** Back to the box: Submit or Reveal was tapped too early. */
   onResume: () => void;
@@ -129,12 +147,9 @@ export function Graded({
   /** A word held down in either sentence. */
   onHoldWord: (word: string) => void;
   onReadGrammar: () => void;
-  /**
-   * Stay on this topic rather than being moved on. Absent when there is no
-   * more of it to have — a topic whose bank is worked out, or a placement
-   * probe, which is not a topic you are studying.
-   */
-  onMore?: () => void;
+  onToggleMarking: () => void;
+  /** A word tapped while marking: which text, and the word's index in it. */
+  onMark: (field: keyof AttemptMarks, index: number) => void;
   /** The question's words, folded away — the same panel as while writing. */
   vocabulary?: ReactNode;
   /**
@@ -151,10 +166,18 @@ export function Graded({
           {profile.ui.promptDirection}
           {total ? ` · ${(index ?? 0) + 1}/${total}` : ""}
         </p>
-        <p className="prompt">{question.prompt}</p>
+        <p className="prompt">
+          <Sentence
+            text={question.prompt}
+            marks={marks.prompt}
+            /* No hold: the prompt is the language the student already reads,
+               and there is nothing there worth a vocabulary card. */
+            onMark={marking ? (i) => onMark("prompt", i) : undefined}
+          />
+        </p>
         {vocabulary}
 
-        <div className="compare">
+        <div className={`compare${marking ? " compare--marking" : ""}`}>
           {!revealed && (
             <div className="compare__block">
               <div className="compare__label">You wrote</div>
@@ -162,7 +185,12 @@ export function Graded({
                 className={`compare__text${submitted.trim() ? "" : " compare__text--empty"}`}
               >
                 {submitted.trim() ? (
-                  <HoldableLatin text={submitted.trim()} onHold={onHoldWord} />
+                  <Sentence
+                    text={submitted.trim()}
+                    marks={marks.submitted}
+                    onHold={onHoldWord}
+                    onMark={marking ? (i) => onMark("submitted", i) : undefined}
+                  />
                 ) : (
                   "nothing"
                 )}
@@ -172,12 +200,21 @@ export function Graded({
           <div className="compare__block compare__block--reference">
             <div className="compare__label">Reference</div>
             <div className="compare__text compare__text--reference">
-              <HoldableLatin text={question.answer} onHold={onHoldWord} />
+              <Sentence
+                text={question.answer}
+                marks={marks.answer}
+                onHold={onHoldWord}
+                onMark={marking ? (i) => onMark("answer", i) : undefined}
+              />
             </div>
             {question.note && <div className="note">{question.note}</div>}
           </div>
         </div>
-        <p className="hint">Hold a word to save it to your vocabulary.</p>
+        <p className="hint">
+          {marking
+            ? "Tap a word: bold, italic, both, off."
+            : "Hold a word to save it to your vocabulary."}
+        </p>
         {history}
       </div>
 
@@ -185,7 +222,12 @@ export function Graded({
         <button onClick={onResume}>✎ keep writing</button>
         <button onClick={onRecordWord}>+ record a word</button>
         <button onClick={onReadGrammar}>§ grammar</button>
-        {onMore && <button onClick={onMore}>↻ more of this</button>}
+        {/* What the grade cannot say. `↻ more of this` had this slot and gave
+            it up: it only ever called the drill, which the map's topic sheet
+            offers by name and this screen was the second way to. */}
+        <button onClick={onToggleMarking} aria-pressed={marking}>
+          {marking ? "✓ done marking" : "✱ mark"}
+        </button>
       </div>
       <GradeBar onGrade={onGrade} schedule={schedule} labels={labels} />
     </>

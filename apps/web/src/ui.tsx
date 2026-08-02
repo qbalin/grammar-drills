@@ -6,7 +6,12 @@ import {
   type PointerEvent as ReactPointerEvent,
   type ReactNode,
 } from "react";
-import { stripPunctuation, type Rating } from "@lang-tutor/core";
+import {
+  sentenceTokens,
+  type Emphasis,
+  type Marks,
+  type Rating,
+} from "@lang-tutor/core";
 
 /** How long until a date, said the way a person would. */
 export function until(from: Date, to: Date): string {
@@ -208,58 +213,105 @@ export function useHold() {
   };
 }
 
+/** none → bold → italic → both → none. Four taps and the word is plain again. */
+export function cycleEmphasis(current?: Emphasis): Emphasis | undefined {
+  return current === undefined ? 1 : current === 3 ? undefined : ((current + 1) as Emphasis);
+}
+
+/** The classes an emphasis puts on a word, under whichever prefix. */
+function emphasisClass(prefix: string, mark?: Emphasis): string {
+  if (!mark) return "";
+  return `${mark & 1 ? ` ${prefix}--b` : ""}${mark & 2 ? ` ${prefix}--i` : ""}`;
+}
+
 /**
- * Latin with every word holdable.
+ * A sentence, word by word: holdable, markable, or neither.
  *
- * Recording a word used to mean leaving the question, opening a sheet and
- * retyping a word that was already on the screen — so in practice it happened
- * for the words worth the detour and no others. Holding the word itself is the
- * whole gesture, and it works on the sentence you wrote as well as the one you
- * should have.
+ * **Holding** records a word. Recording one used to mean leaving the question,
+ * opening a sheet and retyping a word that was already on the screen — so in
+ * practice it happened for the words worth the detour and no others. Holding
+ * the word itself is the whole gesture, and it works on the sentence you wrote
+ * as well as the one you should have.
  *
  * The press is deliberately slow (500 ms) and dies on any real movement: the
  * answer scrolls, and a scroll that saved a vocabulary card would be worse than
  * no gesture at all. Right-click does the same thing on a desktop.
  *
+ * **Marking** is the student's own emphasis on their own record, and it is a
+ * mode rather than a second gesture. The two are never live together: with
+ * `onMark` the hold is not wired up at all, so the press that means "save this
+ * word" cannot half-fire while you are picking words out. That is the whole
+ * reason marking is entered deliberately instead of living on the tap.
+ *
  * The words are bare spans — no roles, no labels. Announcing a hundred and
- * twenty "Record amat" buttons would turn a Latin sentence into a list of
- * controls for anyone using a screen reader, and the sentence is the thing they
- * came for. The gesture is an enhancement; *record a word* below stays the
+ * twenty "Record amat" buttons would turn a sentence into a list of controls
+ * for anyone using a screen reader, and the sentence is the thing they came
+ * for. The gesture is an enhancement; *record a word* below stays the
  * spelled-out route, and it is a real button with a real text field.
  */
-export function HoldableLatin({
+export function Sentence({
   text,
+  marks,
   onHold,
+  onMark,
 }: {
   text: string;
-  /** The held word, punctuation already stripped. */
-  onHold: (word: string) => void;
+  /** The emphasis the student left, by word index. */
+  marks?: Marks;
+  /** The held word, punctuation already stripped. Absent on the English. */
+  onHold?: (word: string) => void;
+  /** Marking mode: the tapped word's index. Suspends the hold while present. */
+  onMark?: (index: number) => void;
 }) {
   const { isHeld, hold } = useHold();
 
-  // Split on whitespace but keep it, so the sentence's own spacing survives.
-  const tokens = text.split(/(\s+)/);
-
   return (
     <>
-      {tokens.map((token, i) => {
-        if (/^\s+$/.test(token) || token === "") return token;
-        // Latin words arrive wearing the sentence's punctuation: `amat.`,
-        // `«rosam»`. Cut the same way the vocabulary crib cuts them, so a word
-        // you can hold is always a word the crib listed. A token that is all
-        // punctuation names no word, and gets no gesture rather than a hold
-        // that lights up and then quietly does nothing.
-        const word = stripPunctuation(token);
-        const key = String(i);
-        return (
-          <span
-            key={i}
-            className={`word${word && isHeld(key) ? " word--held" : ""}`}
-            data-word={token}
-            {...(word ? hold(key, () => onHold(word)) : {})}
-          >
-            {token}
+      {sentenceTokens(text).map((token, i) => {
+        // Whitespace, and tokens that are all punctuation, name no word: they
+        // get no gesture rather than one that lights up and quietly does
+        // nothing. Bare spacing passes through as text so nothing wraps it.
+        if (token.space) return token.text;
+        const mark = token.word ? marks?.[token.index] : undefined;
+
+        if (onMark && token.word) {
+          return (
+            <span
+              key={i}
+              className={`word word--markable${emphasisClass("word", mark)}`}
+              data-word={token.text}
+              onClick={() => onMark(token.index)}
+            >
+              {token.text}
+            </span>
+          );
+        }
+
+        if (onHold && token.word) {
+          const key = String(i);
+          return (
+            <span
+              key={i}
+              className={`word${isHeld(key) ? " word--held" : ""}${emphasisClass("word", mark)}`}
+              data-word={token.text}
+              {...hold(key, () => onHold(token.word))}
+            >
+              {token.text}
+            </span>
+          );
+        }
+
+        // Nothing to do with this word — the English prompt, or a punctuation
+        // token. `.word` is deliberately not used: it suppresses selection to
+        // keep iOS's magnifier off the hold gesture, and a sentence nobody can
+        // hold is a sentence that should still be selectable and copyable.
+        const emphasis = emphasisClass("mark", mark);
+        return emphasis ? (
+          <span key={i} className={emphasis.trim()}>
+            {token.text}
           </span>
+        ) : (
+          token.text
         );
       })}
     </>

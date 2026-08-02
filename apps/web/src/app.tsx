@@ -3,6 +3,7 @@ import {
   Content,
   Session,
   questionVocabulary,
+  type AttemptMarks,
   type LemmaEntry,
   type Progress,
   type Rating,
@@ -20,7 +21,7 @@ import {
   importProgress,
   pickProgressFile,
 } from "./storage/transfer.js";
-import { Sheet, Toast, ago } from "./ui.js";
+import { Sheet, Toast, ago, cycleEmphasis } from "./ui.js";
 import { Answering, Graded, Rest, VocabReview } from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
 import {
@@ -69,6 +70,7 @@ interface GradeUndo {
   test: Test | null;
   qIndex: number;
   submitted: string;
+  marks: AttemptMarks;
   isNewTopic: boolean;
   inPlacement: boolean;
 }
@@ -91,6 +93,11 @@ type Overlay =
   | { t: "vocab-new"; form: string }
   | { t: "settings" }
   | { t: "conflict"; remote: Progress };
+
+/** Whether anything at all has been picked out, across the three texts. */
+function hasMarks(marks: AttemptMarks): boolean {
+  return Object.values(marks).some((m) => m && Object.keys(m).length > 0);
+}
 
 /** A toast, with the one action that undoes what it is announcing. */
 interface Flash {
@@ -134,6 +141,11 @@ export function App({ content, session, storage }: Props) {
   const [overlay, setOverlay] = useState<Overlay>(null);
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState("");
+  // What has been picked out on the question in hand. It rides here rather
+  // than in the trail because the attempt it belongs to has not been recorded
+  // yet: the grade is what writes it.
+  const [marks, setMarks] = useState<AttemptMarks>({});
+  const [marking, setMarking] = useState(false);
   const [toast, setToast] = useState<Flash | null>(null);
   const [dictLoading, setDictLoading] = useState(false);
   const [dictFailed, setDictFailed] = useState(false);
@@ -168,16 +180,6 @@ export function App({ content, session, storage }: Props) {
     [session, tick, inPlacement],
   );
   const focus = useMemo(() => session.focusState(), [session, tick]);
-  const coverageHere = useMemo(
-    () => (sectionId ? session.coverage(sectionId) : null),
-    [sectionId, session, tick],
-  );
-  // The topic on screen as the map sees it, so "more of this" and the map's
-  // own buttons take the same argument.
-  const topicHere = useMemo(
-    () => families.flatMap((f) => f.topics).find((t) => t.sectionId === sectionId),
-    [families, sectionId],
-  );
   // What the focus is called on screen, and nothing at all for the sweep.
   const focusLabel = useMemo(() => {
     if (focus.kind === "family") return content.familyLabel(content.familyOf(focus.id));
@@ -205,12 +207,17 @@ export function App({ content, session, storage }: Props) {
   // it is a thing to consult once the reference answer is up, not a panel to
   // find already open on the next question of the same topic.
   useEffect(() => setShowTrail(false), [question?.prompt, sectionId, phase.t]);
+  // Marking ends with the screen it was entered on. What was marked survives —
+  // it is in `marks` until the grade writes it — but leaving the mode open
+  // would mean a hold that silently does nothing on the next question.
+  useEffect(() => setMarking(false), [question?.prompt, sectionId, phase.t]);
 
   // --- the loop ------------------------------------------------------------
 
   const advance = useCallback(() => {
     setInput("");
     setSubmitted("");
+    setMarks({});
     const action = session.next();
     if (action.kind === "done") {
       setSectionId(null);
@@ -267,6 +274,7 @@ export function App({ content, session, storage }: Props) {
       setQIndex(0);
       setInput("");
       setSubmitted("");
+      setMarks({});
       setIsNewTopic(false);
       setOverlay(null);
       setPhase({ t: "answering" });
@@ -351,6 +359,7 @@ export function App({ content, session, storage }: Props) {
     test,
     qIndex,
     submitted,
+    marks,
     isNewTopic,
     inPlacement,
   });
@@ -369,6 +378,9 @@ export function App({ content, session, storage }: Props) {
     setTest(undo.test);
     setQIndex(undo.qIndex);
     setSubmitted(undo.submitted);
+    // The words picked out come back with the sentence they were picked out
+    // of: re-grading should not cost the student the marking they just did.
+    setMarks(undo.marks);
     setIsNewTopic(undo.isNewTopic);
     setInPlacement(undo.inPlacement);
     setInput("");
@@ -402,6 +414,9 @@ export function App({ content, session, storage }: Props) {
         answer: question.answer,
         submitted,
         rating,
+        // Only when there is something to keep, so an unmarked attempt reads
+        // on disk exactly as it did before marking existed.
+        ...(hasMarks(marks) ? { marks } : {}),
       });
     }
     if (inPlacement) return placementGrade(rating);
@@ -414,6 +429,7 @@ export function App({ content, session, storage }: Props) {
       setQIndex(qIndex + 1);
       setInput("");
       setSubmitted("");
+      setMarks({});
       setOverlay(null);
       setPhase({ t: "answering" });
       bump();
@@ -444,6 +460,7 @@ export function App({ content, session, storage }: Props) {
     setQIndex(0);
     setInput("");
     setSubmitted("");
+    setMarks({});
     setIsNewTopic(topic.mastery === undefined);
     setPhase({ t: "answering" });
     setOverlay(
@@ -569,6 +586,35 @@ export function App({ content, session, storage }: Props) {
     if (dictionaryReady()) return lookupWord(word);
     // Nothing to look up against yet — the sheet takes the word and fetches.
     openVocab(word, true);
+  };
+
+  /**
+   * A word tapped while marking the question in hand.
+   *
+   * It only reaches the file when the grade does — the attempt does not exist
+   * until then, and a mark has nowhere to live without one. Which is also why
+   * marking is offered before grading rather than after: this is the screen
+   * where you can see what you got wrong.
+   */
+  const markHere = (field: keyof AttemptMarks, index: number) =>
+    setMarks((was) => {
+      const of = was[field] ?? {};
+      const next = cycleEmphasis(of[index]);
+      const { [index]: _cleared, ...rest } = of;
+      return { ...was, [field]: next ? { ...rest, [index]: next } : rest };
+    });
+
+  /**
+   * A word tapped in the trail, on an attempt already on the record — the only
+   * way an answer written before marking existed ever gets any.
+   *
+   * Curried by section because all four surfaces that show a trail have their
+   * own, and an attempt is found within one.
+   */
+  const markPast = (id: string) => (at: string, next: AttemptMarks) => {
+    session.markAttempt(id, at, next);
+    save();
+    bump();
   };
 
   /**
@@ -812,11 +858,18 @@ export function App({ content, session, storage }: Props) {
             value={input}
             onChange={setInput}
             onSubmit={() => {
+              // Marks on the reference and the prompt outlive a rewrite — the
+              // question has not changed. Marks on your own sentence do not:
+              // they name positions in a sentence that no longer exists.
+              if (input !== submitted) {
+                setMarks(({ submitted: _stale, ...rest }) => rest);
+              }
               setSubmitted(input);
               setPhase({ t: "graded", revealed: false });
             }}
             onReveal={() => {
               setSubmitted("");
+              setMarks(({ submitted: _stale, ...rest }) => rest);
               setPhase({ t: "graded", revealed: true });
             }}
             vocabulary={
@@ -840,6 +893,8 @@ export function App({ content, session, storage }: Props) {
             total={inPlacement ? undefined : test?.questions.length ?? 0}
             schedule={inPlacement ? undefined : schedule}
             labels={inPlacement ? PLACEMENT_LABELS : undefined}
+            marks={marks}
+            marking={marking}
             onGrade={grade}
             onResume={resumeWriting}
             onRecordWord={() => openVocab()}
@@ -847,12 +902,8 @@ export function App({ content, session, storage }: Props) {
             onReadGrammar={() =>
               sectionId && setOverlay({ t: "grammar", sectionId })
             }
-            onMore={
-              !inPlacement && topicHere && coverageHere &&
-              coverageHere.answered < coverageHere.total
-                ? () => drillTopic(topicHere)
-                : undefined
-            }
+            onToggleMarking={() => setMarking((on) => !on)}
+            onMark={markHere}
             vocabulary={
               <QuestionVocabulary
                 words={vocabulary}
@@ -867,6 +918,7 @@ export function App({ content, session, storage }: Props) {
                 attempts={attempts}
                 open={showTrail}
                 onToggle={() => setShowTrail((open) => !open)}
+                onMark={sectionId ? markPast(sectionId) : undefined}
               />
             }
           />
@@ -977,6 +1029,7 @@ export function App({ content, session, storage }: Props) {
               onQuestions={() =>
                 setOverlay({ t: "questions", sectionId: topic.sectionId })
               }
+              onMark={markPast(topic.sectionId)}
             />
           );
         })()}
@@ -1015,6 +1068,7 @@ export function App({ content, session, storage }: Props) {
               onClose={() =>
                 setOverlay({ t: "questions", sectionId: overlay.sectionId })
               }
+              onMark={markPast(overlay.sectionId)}
             />
           );
         })()}
@@ -1069,7 +1123,10 @@ export function App({ content, session, storage }: Props) {
           subtitle={content.getSection(overlay.sectionId)?.title}
           onClose={() => setOverlay({ t: "grammar", sectionId: overlay.sectionId })}
         >
-          <AttemptTrail attempts={session.attemptsFor(overlay.sectionId)} />
+          <AttemptTrail
+            attempts={session.attemptsFor(overlay.sectionId)}
+            onMark={markPast(overlay.sectionId)}
+          />
         </Sheet>
       )}
 

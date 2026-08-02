@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { answerMatches } from "@lang-tutor/core";
-import type { Attempt, FamilyProgress, TopicProgress } from "@lang-tutor/core";
-import { Ring, Sheet, ago } from "../ui.js";
+import type {
+  Attempt,
+  AttemptMarks,
+  FamilyProgress,
+  TopicProgress,
+} from "@lang-tutor/core";
+import { Ring, Sentence, Sheet, ago, cycleEmphasis } from "../ui.js";
 import { fold } from "../pack.js";
 
 /**
@@ -153,6 +158,7 @@ export function TopicSheet({
   onStudyFrom,
   onDrill,
   onQuestions,
+  onMark,
 }: {
   topic: TopicProgress;
   attempts: Attempt[];
@@ -164,6 +170,7 @@ export function TopicSheet({
   onStudyFrom: () => void;
   onDrill: () => void;
   onQuestions: () => void;
+  onMark?: (at: string, marks: AttemptMarks) => void;
 }) {
   const left = topic.questions - topic.answered;
   return (
@@ -206,7 +213,9 @@ export function TopicSheet({
         </button>
       </div>
 
-      {attempts.length > 0 && <AttemptTrail attempts={attempts} />}
+      {attempts.length > 0 && (
+        <AttemptTrail attempts={attempts} onMark={onMark} />
+      )}
     </Sheet>
   );
 }
@@ -229,6 +238,10 @@ const RATING_WORD = ["", "again", "hard", "good", "easy"];
  * It appears only where it is news. A right answer is marked and left alone,
  * because printing the same sentence twice under "you" and "correct" is how a
  * trail becomes unreadable; the terminal has drawn it this way all along.
+ *
+ * Whatever the student picked out is shown wherever the trail is, and with
+ * `onMark` it can be picked out here too — which is the only way a trail
+ * written before marking existed ever gets any.
  */
 export function AttemptTrail({
   attempts,
@@ -237,37 +250,99 @@ export function AttemptTrail({
   showPrompt = true,
   /** Off where the reference already stands above the trail, unrepeated. */
   showAnswer = true,
+  onMark,
 }: {
   /** Empty when the trail is already under a heading of its own. */
   title?: string;
   attempts: Attempt[];
   showPrompt?: boolean;
   showAnswer?: boolean;
+  /**
+   * Mark up a recorded attempt, named by its timestamp. Every tap saves: the
+   * app commits on every action everywhere else, and a trail with its own
+   * Save button would be the one place that does not.
+   */
+  onMark?: (at: string, marks: AttemptMarks) => void;
 }) {
+  /** The one attempt being marked, by `at`. One at a time, like the hold. */
+  const [editing, setEditing] = useState<string | null>(null);
+
   return (
     <>
       {title && <div className="section-title">{title}</div>}
       {attempts.map((a, i) => {
         const written = a.submitted.trim();
         const right = answerMatches(written, a.answer, fold);
+        const marking = editing === a.at;
+        const marks = a.marks ?? {};
+        const mark = (field: keyof AttemptMarks, index: number) => {
+          const of = marks[field] ?? {};
+          const next = cycleEmphasis(of[index]);
+          const { [index]: _gone, ...rest } = of;
+          onMark?.(a.at, {
+            ...marks,
+            [field]: next ? { ...rest, [index]: next } : rest,
+          });
+        };
+        // Under the marker everything is shown, whatever the surface usually
+        // hides. `showPrompt`/`showAnswer` are there to keep a trail readable,
+        // but the question sheet turns both off — and a row with nothing on it
+        // to mark is not a row you can mark.
+        const prompt = showPrompt || marking;
+        const answer = (showAnswer && !right) || marking;
         return (
-          <div className="attempt" key={`${a.at}-${i}`}>
+          <div className={`attempt${marking ? " attempt--marking" : ""}`} key={`${a.at}-${i}`}>
             <div className="attempt__meta">
               <span>{ago(a.at)}</span>
               <span>· {RATING_WORD[a.rating]}</span>
               {right && <span className="attempt__matched">· matched</span>}
+              {onMark && (
+                <button
+                  className="attempt__mark"
+                  aria-pressed={marking}
+                  aria-label={
+                    marking ? "Done marking this answer" : "Mark up this answer"
+                  }
+                  onClick={() => setEditing(marking ? null : a.at)}
+                >
+                  {marking ? "✓ done" : "✱"}
+                </button>
+              )}
             </div>
-            {showPrompt && <div className="attempt__prompt">{a.prompt}</div>}
+            {prompt && (
+              <div className="attempt__prompt">
+                <Sentence
+                  text={a.prompt}
+                  marks={marks.prompt}
+                  onMark={marking ? (n) => mark("prompt", n) : undefined}
+                />
+              </div>
+            )}
             <div
               className={`attempt__written${written ? "" : " attempt__written--empty"}`}
             >
-              {written || "— nothing written"}
+              {written ? (
+                <Sentence
+                  text={written}
+                  marks={marks.submitted}
+                  onMark={marking ? (n) => mark("submitted", n) : undefined}
+                />
+              ) : (
+                "— nothing written"
+              )}
             </div>
-            {showAnswer && !right && (
+            {answer && (
               <div className="attempt__answer">
                 <span className="attempt__answer-label">correct</span>
-                {a.answer}
+                <Sentence
+                  text={a.answer}
+                  marks={marks.answer}
+                  onMark={marking ? (n) => mark("answer", n) : undefined}
+                />
               </div>
+            )}
+            {marking && (
+              <div className="attempt__hint">Tap a word: bold, italic, both, off.</div>
             )}
           </div>
         );
@@ -292,10 +367,12 @@ export function EarlierAnswers({
   attempts,
   open,
   onToggle,
+  onMark,
 }: {
   attempts: Attempt[];
   open: boolean;
   onToggle: () => void;
+  onMark?: (at: string, marks: AttemptMarks) => void;
 }) {
   if (attempts.length === 0) return null;
   return (
@@ -313,7 +390,7 @@ export function EarlierAnswers({
       </button>
       {open && (
         <div className="crib__list crib__list--trail" id="earlier-answers">
-          <AttemptTrail attempts={attempts} title="" />
+          <AttemptTrail attempts={attempts} title="" onMark={onMark} />
         </div>
       )}
     </div>

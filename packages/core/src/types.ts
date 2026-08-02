@@ -124,6 +124,30 @@ export interface VocabCardState extends LemmaEntry {
   citationEdited?: boolean;
 }
 
+/** How loudly a word is picked out: 1 bold, 2 italic, 3 both. */
+export type Emphasis = 1 | 2 | 3;
+
+/**
+ * Word index -> emphasis, over one text. The index counts words and not
+ * characters — it is `SentenceToken.index`, the same cut the vocabulary crib
+ * and the hold gesture make — so a mark survives being written to disk and
+ * read back by a surface that wraps the sentence differently.
+ */
+export type Marks = Record<number, Emphasis>;
+
+/**
+ * What the student picked out in an attempt, per text.
+ *
+ * The three texts are marked separately because the pairing is the point: the
+ * English that triggers an idiom against the form the idiom takes. Marking one
+ * without the other says half of it.
+ */
+export interface AttemptMarks {
+  prompt?: Marks;
+  answer?: Marks;
+  submitted?: Marks;
+}
+
 /**
  * One answered question, kept so the topic's earlier attempts can be re-read
  * after a later one. Self-grading leaves no other trace of what was actually
@@ -140,6 +164,20 @@ export interface Attempt {
   rating: 1 | 2 | 3 | 4;
   /** When it was graded, ISO. */
   at: string;
+  /**
+   * The words the student picked out, on this attempt's own copies of the
+   * three texts.
+   *
+   * A grade says a topic went badly; it never says which word. Very often the
+   * topic under test was fine and something else in the sentence was not —
+   * an idiom, a case, a preposition — and that is the thing worth finding
+   * again months later. Absent on an attempt nobody marked, which is most.
+   *
+   * Held here rather than against the question because the question is
+   * generated content and read-only at runtime: marking an answer must never
+   * reach the bank.
+   */
+  marks?: AttemptMarks;
 }
 
 /**

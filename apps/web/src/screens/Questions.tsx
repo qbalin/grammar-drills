@@ -1,4 +1,8 @@
-import type { BankedQuestion, GrammarSection } from "@lang-tutor/core";
+import type {
+  AttemptMarks,
+  BankedQuestion,
+  GrammarSection,
+} from "@lang-tutor/core";
 import { Sheet, ago } from "../ui.js";
 import { AttemptTrail } from "./Map.js";
 
@@ -77,10 +81,12 @@ export function QuestionSheet({
   question,
   section,
   onClose,
+  onMark,
 }: {
   question: BankedQuestion;
   section: GrammarSection;
   onClose: () => void;
+  onMark?: (at: string, marks: AttemptMarks) => void;
 }) {
   return (
     <Sheet title="Question" subtitle={`§ ${section.ref}`} onClose={onClose}>
@@ -103,8 +109,10 @@ export function QuestionSheet({
           title="Your answers"
           showPrompt={false}
           /* The reference stands above, once; repeating it under every attempt
-             is noise on the one screen that already shows it. */
+             is noise on the one screen that already shows it. A row under the
+             marker shows it anyway — there has to be something there to mark. */
           showAnswer={false}
+          onMark={onMark}
         />
       ) : (
         <p className="field__hint">

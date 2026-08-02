@@ -12,6 +12,7 @@ import {
 import {
   emptyProgress,
   type Attempt,
+  type AttemptMarks,
   type Focus,
   type LemmaEntry,
   type PlacementRun,
@@ -457,6 +458,28 @@ export class Session {
   ): void {
     const kept = this.p.attempts[sectionId] ?? [];
     this.p.attempts[sectionId] = [...kept, { ...attempt, at: now.toISOString() }];
+    this.touch();
+  }
+
+  /**
+   * Mark up an attempt already on the record — the words the student wants to
+   * find again, on the sentences as they stood at the time.
+   *
+   * Addressed by its timestamp. An attempt has no id of its own and its
+   * position moves as the trail grows, but two of them cannot share a
+   * millisecond: grading is a tap, and the trail is one student's.
+   *
+   * Marks that pick nothing out are dropped rather than stored empty, so an
+   * attempt marked and then unmarked reads on disk like one nobody touched.
+   */
+  markAttempt(sectionId: string, at: string, marks: AttemptMarks): void {
+    const attempt = this.p.attempts[sectionId]?.find((a) => a.at === at);
+    if (!attempt) return;
+    const kept = Object.entries(marks).filter(
+      ([, m]) => m && Object.keys(m).length > 0,
+    );
+    if (kept.length === 0) delete attempt.marks;
+    else attempt.marks = Object.fromEntries(kept) as AttemptMarks;
     this.touch();
   }
 

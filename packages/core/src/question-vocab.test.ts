@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { Content } from "./content.js";
 import { testProfile } from "./profile.fixture.js";
-import { words, questionVocabulary } from "./question-vocab.js";
+import { words, questionVocabulary, sentenceTokens } from "./question-vocab.js";
 import type { LemmaMap, Question } from "./types.js";
 
 /**
@@ -90,6 +90,36 @@ describe("words", () => {
 
   it("has nothing to say about an empty sentence", () => {
     expect(words("   ")).toEqual([]);
+  });
+});
+
+describe("sentenceTokens", () => {
+  it("keeps the sentence's own spacing, so it can be laid back out exactly", () => {
+    const text = "Metu  actus,\nfūgit.";
+    expect(sentenceTokens(text).map((t) => t.text).join("")).toBe(text);
+  });
+
+  it("numbers the words and not the gaps between them", () => {
+    const tokens = sentenceTokens("Metu actus, fūgit.");
+    expect(tokens.filter((t) => !t.space).map((t) => [t.word, t.index])).toEqual([
+      ["Metu", 0],
+      ["actus", 1],
+      ["fūgit", 2],
+    ]);
+    expect(tokens.filter((t) => t.space).every((t) => t.index === -1)).toBe(true);
+  });
+
+  it("gives no index to a token that is all punctuation — it names no word", () => {
+    const tokens = sentenceTokens("rosam — puella");
+    expect(tokens.filter((t) => !t.space).map((t) => [t.text, t.index])).toEqual([
+      ["rosam", 0],
+      ["—", -1],
+      ["puella", 1],
+    ]);
+  });
+
+  it("has nothing to say about an empty sentence", () => {
+    expect(sentenceTokens("").every((t) => t.index === -1)).toBe(true);
   });
 });
 
