@@ -377,5 +377,394 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-635-contract-verbs-t7",
+  "sectionId": "sm-635-contract-verbs",
+  "questions": [
+   {
+    "prompt": "The old man, though poor, honors the gods with pure sacrifices.",
+    "answer": "ὁ γέρων, καίπερ πένης ὤν, τοὺς θεοὺς ἁγναῖς θυσίαις τιμᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "καίπερ",
+     "πένης",
+     "ὤν",
+     "τοὺς",
+     "θεοὺς",
+     "ἁγναῖς",
+     "θυσίαις",
+     "τιμᾷ"
+    ]
+   },
+   {
+    "prompt": "The children were laughing while the flute-player played.",
+    "answer": "οἱ παῖδες ἐγέλων, τοῦ αὐλητοῦ αὐλοῦντος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "ἐγέλων",
+     "τοῦ",
+     "αὐλητοῦ",
+     "αὐλοῦντος"
+    ]
+   },
+   {
+    "prompt": "The prudent commander manages the war skillfully.",
+    "answer": "ὁ φρόνιμος στρατηγὸς τὸν πόλεμον ἐμπείρως διοικεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φρόνιμος",
+     "στρατηγὸς",
+     "τὸν",
+     "πόλεμον",
+     "ἐμπείρως",
+     "διοικεῖ"
+    ]
+   },
+   {
+    "prompt": "The Spartans dwelt near the sea, fearing the invasion of the enemy.",
+    "answer": "οἱ Λακεδαιμόνιοι πρὸς τῇ θαλάττῃ ᾤκουν, τὴν τῶν πολεμίων εἰσβολὴν φοβούμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "πρὸς",
+     "τῇ",
+     "θαλάττῃ",
+     "ᾤκουν",
+     "τὴν",
+     "τῶν",
+     "πολεμίων",
+     "εἰσβολὴν",
+     "φοβούμενοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-635-contract-verbs-t8",
+  "sectionId": "sm-635-contract-verbs",
+  "questions": [
+   {
+    "prompt": "Let us honor the men who died on behalf of their country.",
+    "answer": "τιμῶμεν τοὺς ὑπὲρ τῆς πατρίδος ἀποθανόντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμῶμεν",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθανόντας"
+    ]
+   },
+   {
+    "prompt": "We flee lest the enemy capture and enslave us.",
+    "answer": "φεύγομεν μὴ οἱ πολέμιοι ἡμᾶς λαβόντες δουλῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεύγομεν",
+     "μὴ",
+     "οἱ",
+     "πολέμιοι",
+     "ἡμᾶς",
+     "λαβόντες",
+     "δουλῶσιν"
+    ]
+   },
+   {
+    "prompt": "The messengers hasten so that they may reveal the truth to the king.",
+    "answer": "οἱ ἄγγελοι σπεύδουσιν ἵνα τῷ βασιλεῖ τὴν ἀλήθειαν δηλῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "σπεύδουσιν",
+     "ἵνα",
+     "τῷ",
+     "βασιλεῖ",
+     "τὴν",
+     "ἀλήθειαν",
+     "δηλῶσιν"
+    ]
+   },
+   {
+    "prompt": "Whoever loves virtue also practices it.",
+    "answer": "ὅστις ἂν τὴν ἀρετὴν φιλῇ, καὶ ἀσκεῖ αὐτήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἂν",
+     "τὴν",
+     "ἀρετὴν",
+     "φιλῇ",
+     "καὶ",
+     "ἀσκεῖ",
+     "αὐτήν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-635-contract-verbs-t9",
+  "sectionId": "sm-635-contract-verbs",
+  "questions": [
+   {
+    "prompt": "Would that the citizens might always love freedom!",
+    "answer": "εἴθε οἱ πολῖται ἀεὶ τὴν ἐλευθερίαν φιλοῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "πολῖται",
+     "ἀεὶ",
+     "τὴν",
+     "ἐλευθερίαν",
+     "φιλοῖεν"
+    ]
+   },
+   {
+    "prompt": "I would gladly honor the gods with a beautiful sacrifice.",
+    "answer": "ἡδέως ἂν τοὺς θεοὺς καλῇ θυσίᾳ τιμῴην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἂν",
+     "τοὺς",
+     "θεοὺς",
+     "καλῇ",
+     "θυσίᾳ",
+     "τιμῴην"
+    ]
+   },
+   {
+    "prompt": "They sent a herald to ask what the enemy were doing.",
+    "answer": "κήρυκα ἔπεμψαν ἵνα ἐρωτῴη τί οἱ πολέμιοι ποιοῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κήρυκα",
+     "ἔπεμψαν",
+     "ἵνα",
+     "ἐρωτῴη",
+     "τί",
+     "οἱ",
+     "πολέμιοι",
+     "ποιοῖεν"
+    ]
+   },
+   {
+    "prompt": "The wise man would live justly even without laws.",
+    "answer": "ὁ σοφὸς δικαίως ἂν ζῴη καὶ ἄνευ νόμων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "δικαίως",
+     "ἂν",
+     "ζῴη",
+     "καὶ",
+     "ἄνευ",
+     "νόμων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-635-contract-verbs-t10",
+  "sectionId": "sm-635-contract-verbs",
+  "questions": [
+   {
+    "prompt": "The soldiers, though suffering much, were in want of provisions.",
+    "answer": "οἱ στρατιῶται τῶν ἐπιτηδείων ἐδέοντο, πολλὰ πάσχοντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τῶν",
+     "ἐπιτηδείων",
+     "ἐδέοντο",
+     "πολλὰ",
+     "πάσχοντες"
+    ]
+   },
+   {
+    "prompt": "The philosopher was inquiring into the nature of the soul.",
+    "answer": "ὁ φιλόσοφος τὴν τῆς ψυχῆς φύσιν ἐζήτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τὴν",
+     "τῆς",
+     "ψυχῆς",
+     "φύσιν",
+     "ἐζήτει"
+    ]
+   },
+   {
+    "prompt": "We rule the sea, but we fear the strength of the barbarians.",
+    "answer": "τῆς μὲν θαλάττης κρατοῦμεν, τὴν δὲ τῶν βαρβάρων ἰσχὺν φοβούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "μὲν",
+     "θαλάττης",
+     "κρατοῦμεν",
+     "τὴν",
+     "δὲ",
+     "τῶν",
+     "βαρβάρων",
+     "ἰσχὺν",
+     "φοβούμεθα"
+    ]
+   },
+   {
+    "prompt": "Those who were guarding the walls kept calling for help.",
+    "answer": "οἱ τὰ τείχη φυλάττοντες βοήθειαν ἐκάλουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὰ",
+     "τείχη",
+     "φυλάττοντες",
+     "βοήθειαν",
+     "ἐκάλουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-635-contract-verbs-t11",
+  "sectionId": "sm-635-contract-verbs",
+  "questions": [
+   {
+    "prompt": "The victory revealed the courage of the young men.",
+    "answer": "ἡ νίκη τὴν τῶν νεανιῶν ἀνδρείαν ἐδήλου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νίκη",
+     "τὴν",
+     "τῶν",
+     "νεανιῶν",
+     "ἀνδρείαν",
+     "ἐδήλου"
+    ]
+   },
+   {
+    "prompt": "The people were crowning the victors in the market-place.",
+    "answer": "ὁ δῆμος τοὺς νικῶντας ἐν τῇ ἀγορᾷ ἐστεφάνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "τοὺς",
+     "νικῶντας",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἐστεφάνου"
+    ]
+   },
+   {
+    "prompt": "The king was enslaving the free and freeing the slaves.",
+    "answer": "ὁ βασιλεὺς τοὺς μὲν ἐλευθέρους ἐδούλου, τοὺς δὲ δούλους ἠλευθέρου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τοὺς",
+     "μὲν",
+     "ἐλευθέρους",
+     "ἐδούλου",
+     "δὲ",
+     "δούλους",
+     "ἠλευθέρου"
+    ]
+   },
+   {
+    "prompt": "The soldiers, thirsting, were using the water of the spring.",
+    "answer": "οἱ στρατιῶται διψῶντες τῷ τῆς κρήνης ὕδατι ἐχρῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "διψῶντες",
+     "τῷ",
+     "τῆς",
+     "κρήνης",
+     "ὕδατι",
+     "ἐχρῶντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-635-contract-verbs-t12",
+  "sectionId": "sm-635-contract-verbs",
+  "questions": [
+   {
+    "prompt": "The hunters were pursuing the wild beasts through the mountains.",
+    "answer": "οἱ θηρευταὶ τὰ θηρία διὰ τῶν ὀρῶν ἐθήρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θηρευταὶ",
+     "τὰ",
+     "θηρία",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "ἐθήρων"
+    ]
+   },
+   {
+    "prompt": "The spectators were watching the contest in silence.",
+    "answer": "οἱ θεαταὶ σιγῇ τὸν ἀγῶνα ἐθεῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεαταὶ",
+     "σιγῇ",
+     "τὸν",
+     "ἀγῶνα",
+     "ἐθεῶντο"
+    ]
+   },
+   {
+    "prompt": "Whoever thinks rightly does not desire another's goods.",
+    "answer": "ὅστις ἂν ὀρθῶς φρονῇ, οὐκ ἐρᾷ τῶν ἀλλοτρίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἂν",
+     "ὀρθῶς",
+     "φρονῇ",
+     "οὐκ",
+     "ἐρᾷ",
+     "τῶν",
+     "ἀλλοτρίων"
+    ]
+   },
+   {
+    "prompt": "Would that the general might lead the soldiers wisely!",
+    "answer": "εἴθε ὁ στρατηγὸς σωφρόνως τῶν στρατιωτῶν ἡγοῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ὁ",
+     "στρατηγὸς",
+     "σωφρόνως",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἡγοῖτο"
+    ]
+   }
+  ]
  }
 ]

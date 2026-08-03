@@ -417,5 +417,610 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t7",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "The Thebans threw the garrison out of the citadel.",
+    "answer": "οἱ Θηβαῖοι τὴν φρουρὰν ἐκ τῆς ἀκροπόλεως ἐξέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Θηβαῖοι",
+     "τὴν",
+     "φρουρὰν",
+     "ἐκ",
+     "τῆς",
+     "ἀκροπόλεως",
+     "ἐξέβαλον"
+    ]
+   },
+   {
+    "prompt": "The general led the army out of the country before winter.",
+    "answer": "ὁ στρατηγὸς πρὸ τοῦ χειμῶνος τὸ στράτευμα ἐκ τῆς χώρας ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "πρὸ",
+     "τοῦ",
+     "χειμῶνος",
+     "τὸ",
+     "στράτευμα",
+     "ἐκ",
+     "τῆς",
+     "χώρας",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "The enemy fell upon the rear guard and killed many.",
+    "answer": "οἱ πολέμιοι τοῖς ὀπισθοφύλαξιν ἐπέπεσον καὶ πολλοὺς ἀπέκτειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τοῖς",
+     "ὀπισθοφύλαξιν",
+     "ἐπέπεσον",
+     "καὶ",
+     "πολλοὺς",
+     "ἀπέκτειναν"
+    ]
+   },
+   {
+    "prompt": "The allies handed over their weapons and departed.",
+    "answer": "οἱ σύμμαχοι τὰ ὅπλα παρέδοσαν καὶ ἀπεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "τὰ",
+     "ὅπλα",
+     "παρέδοσαν",
+     "καὶ",
+     "ἀπεχώρησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t8",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "For many years the people endured the tyrant's arrogance.",
+    "answer": "πολλὰ ἔτη ὁ δῆμος τὴν τοῦ τυράννου ὕβριν ἠνείχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "ἔτη",
+     "ὁ",
+     "δῆμος",
+     "τὴν",
+     "τοῦ",
+     "τυράννου",
+     "ὕβριν",
+     "ἠνείχετο"
+    ]
+   },
+   {
+    "prompt": "The children kept annoying the old philosopher in the marketplace.",
+    "answer": "οἱ παῖδες τὸν γέροντα φιλόσοφον ἐν τῇ ἀγορᾷ ἠνώχλουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τὸν",
+     "γέροντα",
+     "φιλόσοφον",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἠνώχλουν"
+    ]
+   },
+   {
+    "prompt": "Solon set upright the corrupted laws of the city.",
+    "answer": "ὁ Σόλων τοὺς διεφθαρμένους νόμους τῆς πόλεως ἐπηνώρθωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σόλων",
+     "τοὺς",
+     "διεφθαρμένους",
+     "νόμους",
+     "τῆς",
+     "πόλεως",
+     "ἐπηνώρθωσεν"
+    ]
+   },
+   {
+    "prompt": "The sick man could not endure the pains of his wounds.",
+    "answer": "ὁ κάμνων τὰς τῶν τραυμάτων ὀδύνας οὐκ ἠνέσχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κάμνων",
+     "τὰς",
+     "τῶν",
+     "τραυμάτων",
+     "ὀδύνας",
+     "οὐκ",
+     "ἠνέσχετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t9",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "The rich man built a great house near the sea.",
+    "answer": "ὁ πλούσιος μεγάλην οἰκίαν πρὸς τῇ θαλάττῃ ᾠκοδόμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "μεγάλην",
+     "οἰκίαν",
+     "πρὸς",
+     "τῇ",
+     "θαλάττῃ",
+     "ᾠκοδόμησεν"
+    ]
+   },
+   {
+    "prompt": "The orator accused the general of cowardice before the jurors.",
+    "answer": "ὁ ῥήτωρ τοῦ στρατηγοῦ δειλίαν ἐναντίον τῶν δικαστῶν κατηγόρησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "δειλίαν",
+     "ἐναντίον",
+     "τῶν",
+     "δικαστῶν",
+     "κατηγόρησεν"
+    ]
+   },
+   {
+    "prompt": "The citizens entrusted the city to a single man.",
+    "answer": "οἱ πολῖται ἑνὶ ἀνδρὶ τὴν πόλιν ἐνεχείρισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἑνὶ",
+     "ἀνδρὶ",
+     "τὴν",
+     "πόλιν",
+     "ἐνεχείρισαν"
+    ]
+   },
+   {
+    "prompt": "Although he had sworn, the traitor swore falsely in the assembly.",
+    "answer": "καίπερ ὀμωμοκὼς ὁ προδότης ἐν τῇ ἐκκλησίᾳ ἐπιώρκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "ὀμωμοκὼς",
+     "ὁ",
+     "προδότης",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἐπιώρκησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t10",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "The phalanx stepped forward and fell upon the enemy.",
+    "answer": "ἡ φάλαγξ προέβη καὶ τοῖς πολεμίοις προσέπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φάλαγξ",
+     "προέβη",
+     "καὶ",
+     "τοῖς",
+     "πολεμίοις",
+     "προσέπεσεν"
+    ]
+   },
+   {
+    "prompt": "Having crossed over the mountain, the soldiers descended into the plain.",
+    "answer": "ὑπερβάντες τὸ ὄρος οἱ στρατιῶται εἰς τὸ πεδίον κατέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπερβάντες",
+     "τὸ",
+     "ὄρος",
+     "οἱ",
+     "στρατιῶται",
+     "εἰς",
+     "πεδίον",
+     "κατέβησαν"
+    ]
+   },
+   {
+    "prompt": "The messengers went up to the king and announced peace.",
+    "answer": "οἱ ἄγγελοι πρὸς τὸν βασιλέα ἀνέβησαν καὶ εἰρήνην ἀπήγγειλαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "πρὸς",
+     "τὸν",
+     "βασιλέα",
+     "ἀνέβησαν",
+     "καὶ",
+     "εἰρήνην",
+     "ἀπήγγειλαν"
+    ]
+   },
+   {
+    "prompt": "When the horsemen had crossed the river, they pursued the fleeing enemy.",
+    "answer": "οἱ ἱππεῖς τὸν ποταμὸν διαβάντες τοὺς φεύγοντας πολεμίους ἐδίωξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱππεῖς",
+     "τὸν",
+     "ποταμὸν",
+     "διαβάντες",
+     "τοὺς",
+     "φεύγοντας",
+     "πολεμίους",
+     "ἐδίωξαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t11",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "The enemy have thrown many stones into the harbor.",
+    "answer": "οἱ πολέμιοι πολλοὺς λίθους εἰς τὸν λιμένα ἐμβεβλήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "πολλοὺς",
+     "λίθους",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "ἐμβεβλήκασιν"
+    ]
+   },
+   {
+    "prompt": "The general has collected many soldiers from the islands.",
+    "answer": "ὁ στρατηγὸς πολλοὺς στρατιώτας ἐκ τῶν νήσων συνείλοχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "πολλοὺς",
+     "στρατιώτας",
+     "ἐκ",
+     "τῶν",
+     "νήσων",
+     "συνείλοχεν"
+    ]
+   },
+   {
+    "prompt": "The citizens have thrown the wicked man out of the assembly.",
+    "answer": "οἱ πολῖται τὸν πονηρὸν ἄνδρα ἐκ τῆς ἐκκλησίας ἐκβεβλήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "πονηρὸν",
+     "ἄνδρα",
+     "ἐκ",
+     "τῆς",
+     "ἐκκλησίας",
+     "ἐκβεβλήκασιν"
+    ]
+   },
+   {
+    "prompt": "The army has advanced far beyond the borders.",
+    "answer": "τὸ στράτευμα πόρρω ὑπὲρ τοὺς ὅρους προβέβηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "πόρρω",
+     "ὑπὲρ",
+     "τοὺς",
+     "ὅρους",
+     "προβέβηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t12",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "The tyrant enjoyed the wealth of the city for a short time.",
+    "answer": "ὁ τύραννος ὀλίγον χρόνον τοῦ τῆς πόλεως πλούτου ἀπέλαυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "ὀλίγον",
+     "χρόνον",
+     "τοῦ",
+     "τῆς",
+     "πόλεως",
+     "πλούτου",
+     "ἀπέλαυσεν"
+    ]
+   },
+   {
+    "prompt": "The priests sat down beside the temple and prayed to the gods.",
+    "answer": "οἱ ἱερεῖς παρὰ τὸν νεὼν ἐκάθισαν καὶ τοῖς θεοῖς ηὔξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "παρὰ",
+     "τὸν",
+     "νεὼν",
+     "ἐκάθισαν",
+     "καὶ",
+     "τοῖς",
+     "θεοῖς",
+     "ηὔξαντο"
+    ]
+   },
+   {
+    "prompt": "The whole night the guards were sleeping beside the gates.",
+    "answer": "ὅλην τὴν νύκτα οἱ φύλακες παρὰ ταῖς πύλαις ἐκάθευδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅλην",
+     "τὴν",
+     "νύκτα",
+     "οἱ",
+     "φύλακες",
+     "παρὰ",
+     "ταῖς",
+     "πύλαις",
+     "ἐκάθευδον"
+    ]
+   },
+   {
+    "prompt": "Being still a boy, he already understood the words of the poets.",
+    "answer": "ἔτι παῖς ὢν ἤδη τοὺς τῶν ποιητῶν λόγους ἠπίστατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔτι",
+     "παῖς",
+     "ὢν",
+     "ἤδη",
+     "τοὺς",
+     "τῶν",
+     "ποιητῶν",
+     "λόγους",
+     "ἠπίστατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t13",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "The enemy invaded the country and destroyed the farms.",
+    "answer": "οἱ πολέμιοι εἰς τὴν χώραν εἰσέβαλον καὶ τοὺς ἀγροὺς διέφθειραν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "εἰς",
+     "τὴν",
+     "χώραν",
+     "εἰσέβαλον",
+     "καὶ",
+     "τοὺς",
+     "ἀγροὺς",
+     "διέφθειραν"
+    ]
+   },
+   {
+    "prompt": "The general drew up the soldiers in the plain.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἐν τῷ πεδίῳ παρέταξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "παρέταξεν"
+    ]
+   },
+   {
+    "prompt": "The sailors have thrown all the cargo out of the ship.",
+    "answer": "οἱ ναῦται πάντα τὸν φόρτον ἐκ τῆς νεὼς ἐκβεβλήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "πάντα",
+     "τὸν",
+     "φόρτον",
+     "ἐκ",
+     "τῆς",
+     "νεὼς",
+     "ἐκβεβλήκασιν"
+    ]
+   },
+   {
+    "prompt": "The council entrusted the money to the treasurers.",
+    "answer": "ἡ βουλὴ τὰ χρήματα τοῖς ταμίαις ἐνεχείρισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βουλὴ",
+     "τὰ",
+     "χρήματα",
+     "τοῖς",
+     "ταμίαις",
+     "ἐνεχείρισεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t14",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "The soldiers no longer endured the hardships of the march.",
+    "answer": "οἱ στρατιῶται οὐκέτι τοὺς τῆς πορείας πόνους ἠνείχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "οὐκέτι",
+     "τοὺς",
+     "τῆς",
+     "πορείας",
+     "πόνους",
+     "ἠνείχοντο"
+    ]
+   },
+   {
+    "prompt": "The orator accused the generals before the assembly.",
+    "answer": "ὁ ῥήτωρ τῶν στρατηγῶν ἐν τῇ ἐκκλησίᾳ κατηγόρησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τῶν",
+     "στρατηγῶν",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "κατηγόρησεν"
+    ]
+   },
+   {
+    "prompt": "The wealthy man has built a temple to the gods.",
+    "answer": "ὁ πλούσιος τοῖς θεοῖς ἱερὸν ᾠκοδόμηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "τοῖς",
+     "θεοῖς",
+     "ἱερὸν",
+     "ᾠκοδόμηκεν"
+    ]
+   },
+   {
+    "prompt": "The citizens held an assembly and voted for war.",
+    "answer": "οἱ πολῖται ἠκκλησίαζον καὶ τὸν πόλεμον ἐψηφίσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἠκκλησίαζον",
+     "καὶ",
+     "τὸν",
+     "πόλεμον",
+     "ἐψηφίσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-449-position-of-augment-and-reduplication-t15",
+  "sectionId": "sm-449-position-of-augment-and-reduplication",
+  "questions": [
+   {
+    "prompt": "The old man understood well the customs of the barbarians.",
+    "answer": "ὁ γέρων εὖ τὰ τῶν βαρβάρων ἤθη ἠπίστατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "εὖ",
+     "τὰ",
+     "τῶν",
+     "βαρβάρων",
+     "ἤθη",
+     "ἠπίστατο"
+    ]
+   },
+   {
+    "prompt": "The Spartans marched out of the city at dawn.",
+    "answer": "οἱ Λακεδαιμόνιοι ἅμα τῇ ἕῳ ἐκ τῆς πόλεως ἐξῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐξῆλθον"
+    ]
+   },
+   {
+    "prompt": "The slaves packed up the baggage for the journey.",
+    "answer": "οἱ δοῦλοι τὰ σκεύη πρὸς τὴν ὁδὸν συνεσκευάσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοῦλοι",
+     "τὰ",
+     "σκεύη",
+     "πρὸς",
+     "τὴν",
+     "ὁδὸν",
+     "συνεσκευάσαντο"
+    ]
+   },
+   {
+    "prompt": "The general collected the scattered soldiers into one place.",
+    "answer": "ὁ στρατηγὸς τοὺς ἐσκεδασμένους στρατιώτας εἰς ἓν χωρίον συνέλεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "ἐσκεδασμένους",
+     "στρατιώτας",
+     "εἰς",
+     "ἓν",
+     "χωρίον",
+     "συνέλεξεν"
+    ]
+   }
+  ]
  }
 ]

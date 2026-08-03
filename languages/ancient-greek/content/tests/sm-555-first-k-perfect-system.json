@@ -394,5 +394,538 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-555-first-k-perfect-system-t7",
+  "sectionId": "sm-555-first-k-perfect-system",
+  "questions": [
+   {
+    "prompt": "The wise lawgiver has given good laws to the citizens.",
+    "answer": "Ὁ σοφὸς νομοθέτης ἀγαθοὺς νόμους τοῖς πολίταις δέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "σοφὸς",
+     "νομοθέτης",
+     "ἀγαθοὺς",
+     "νόμους",
+     "τοῖς",
+     "πολίταις",
+     "δέδωκεν"
+    ]
+   },
+   {
+    "prompt": "The goddess has placed great hope in the souls of the soldiers.",
+    "answer": "Ἡ θεὰ μεγάλην ἐλπίδα ἐν ταῖς τῶν στρατιωτῶν ψυχαῖς τέθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "θεὰ",
+     "μεγάλην",
+     "ἐλπίδα",
+     "ἐν",
+     "ταῖς",
+     "τῶν",
+     "στρατιωτῶν",
+     "ψυχαῖς",
+     "τέθηκεν"
+    ]
+   },
+   {
+    "prompt": "The general has permitted the weary soldiers to rest.",
+    "answer": "Ὁ στρατηγὸς τοὺς κεκμηκότας στρατιώτας ἀναπαύεσθαι εἴακεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "κεκμηκότας",
+     "στρατιώτας",
+     "ἀναπαύεσθαι",
+     "εἴακεν"
+    ]
+   },
+   {
+    "prompt": "The poet has made a beautiful song about the ancient heroes.",
+    "answer": "Ὁ ποιητὴς καλὸν ᾆσμα περὶ τῶν παλαιῶν ἡρώων πεποίηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ποιητὴς",
+     "καλὸν",
+     "ᾆσμα",
+     "περὶ",
+     "τῶν",
+     "παλαιῶν",
+     "ἡρώων",
+     "πεποίηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-555-first-k-perfect-system-t8",
+  "sectionId": "sm-555-first-k-perfect-system",
+  "questions": [
+   {
+    "prompt": "The wise woman has persuaded her husband to spare the suppliants.",
+    "answer": "Ἡ σοφὴ γυνὴ τὸν ἄνδρα τῶν ἱκετῶν φείσασθαι πέπεικεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "σοφὴ",
+     "γυνὴ",
+     "τὸν",
+     "ἄνδρα",
+     "τῶν",
+     "ἱκετῶν",
+     "φείσασθαι",
+     "πέπεικεν"
+    ]
+   },
+   {
+    "prompt": "The merchants have brought many goods from the islands.",
+    "answer": "Οἱ ἔμποροι πολλὰ χρήματα ἐκ τῶν νήσων κεκομίκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ἔμποροι",
+     "πολλὰ",
+     "χρήματα",
+     "ἐκ",
+     "τῶν",
+     "νήσων",
+     "κεκομίκασιν"
+    ]
+   },
+   {
+    "prompt": "The enemy have seized the citadel by night.",
+    "answer": "Οἱ πολέμιοι τὴν ἀκρόπολιν νυκτὸς ἡρπάκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "ἀκρόπολιν",
+     "νυκτὸς",
+     "ἡρπάκασιν"
+    ]
+   },
+   {
+    "prompt": "The scout has told the general everything about the enemy's camp.",
+    "answer": "Ὁ σκοπὸς τῷ στρατηγῷ πάντα περὶ τοῦ τῶν πολεμίων στρατοπέδου πέφρακεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "σκοπὸς",
+     "τῷ",
+     "στρατηγῷ",
+     "πάντα",
+     "περὶ",
+     "τοῦ",
+     "τῶν",
+     "πολεμίων",
+     "στρατοπέδου",
+     "πέφρακεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-555-first-k-perfect-system-t9",
+  "sectionId": "sm-555-first-k-perfect-system",
+  "questions": [
+   {
+    "prompt": "The gods have made the omens plain to the seer.",
+    "answer": "Οἱ θεοὶ τῷ μάντει τὰ σημεῖα πεφάγκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "θεοὶ",
+     "τῷ",
+     "μάντει",
+     "τὰ",
+     "σημεῖα",
+     "πεφάγκασιν"
+    ]
+   },
+   {
+    "prompt": "The heralds have announced the victory throughout the whole city.",
+    "answer": "Οἱ κήρυκες τὴν νίκην ἀνὰ πᾶσαν τὴν πόλιν ἠγγέλκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "κήρυκες",
+     "τὴν",
+     "νίκην",
+     "ἀνὰ",
+     "πᾶσαν",
+     "πόλιν",
+     "ἠγγέλκασιν"
+    ]
+   },
+   {
+    "prompt": "The king has sent envoys to the satrap beyond the river.",
+    "answer": "Ὁ βασιλεὺς πρέσβεις πρὸς τὸν σατράπην πέραν τοῦ ποταμοῦ ἔσταλκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "βασιλεὺς",
+     "πρέσβεις",
+     "πρὸς",
+     "τὸν",
+     "σατράπην",
+     "πέραν",
+     "τοῦ",
+     "ποταμοῦ",
+     "ἔσταλκεν"
+    ]
+   },
+   {
+    "prompt": "The plague has destroyed the greater part of the army.",
+    "answer": "Ἡ νόσος τὸ πλεῖστον μέρος τοῦ στρατεύματος ἔφθαρκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "νόσος",
+     "τὸ",
+     "πλεῖστον",
+     "μέρος",
+     "τοῦ",
+     "στρατεύματος",
+     "ἔφθαρκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-555-first-k-perfect-system-t10",
+  "sectionId": "sm-555-first-k-perfect-system",
+  "questions": [
+   {
+    "prompt": "The hunter has thrown his spear at the wild boar.",
+    "answer": "Ὁ κυνηγέτης τὸ δόρυ ἐπὶ τὸν ἄγριον ὗν βέβληκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "κυνηγέτης",
+     "τὸ",
+     "δόρυ",
+     "ἐπὶ",
+     "τὸν",
+     "ἄγριον",
+     "ὗν",
+     "βέβληκεν"
+    ]
+   },
+   {
+    "prompt": "The brave general has fallen fighting for his country.",
+    "answer": "Ὁ ἀνδρεῖος στρατηγὸς ὑπὲρ τῆς πατρίδος μαχόμενος πέπτωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ἀνδρεῖος",
+     "στρατηγὸς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχόμενος",
+     "πέπτωκεν"
+    ]
+   },
+   {
+    "prompt": "The assembly has summoned the accused men to trial.",
+    "answer": "Ἡ ἐκκλησία τοὺς φεύγοντας εἰς τὴν κρίσιν κέκληκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "ἐκκλησία",
+     "τοὺς",
+     "φεύγοντας",
+     "εἰς",
+     "τὴν",
+     "κρίσιν",
+     "κέκληκεν"
+    ]
+   },
+   {
+    "prompt": "The woodcutters have cut down the trees near the sacred grove.",
+    "answer": "Οἱ ὑλοτόμοι τὰ δένδρα τὰ πρὸς τῷ ἱερῷ ἄλσει τετμήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ὑλοτόμοι",
+     "τὰ",
+     "δένδρα",
+     "πρὸς",
+     "τῷ",
+     "ἱερῷ",
+     "ἄλσει",
+     "τετμήκασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-555-first-k-perfect-system-t11",
+  "sectionId": "sm-555-first-k-perfect-system",
+  "questions": [
+   {
+    "prompt": "The father has divided his wealth among his three sons.",
+    "answer": "Ὁ πατὴρ τὸν πλοῦτον τοῖς τρισὶν υἱοῖς νενέμηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "πατὴρ",
+     "τὸν",
+     "πλοῦτον",
+     "τοῖς",
+     "τρισὶν",
+     "υἱοῖς",
+     "νενέμηκεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers have stretched a rope across the gate.",
+    "answer": "Οἱ στρατιῶται σχοινίον διὰ τῆς πύλης τετάκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "σχοινίον",
+     "διὰ",
+     "τῆς",
+     "πύλης",
+     "τετάκασιν"
+    ]
+   },
+   {
+    "prompt": "It has always been a care to the gods to save the just.",
+    "answer": "Ἀεὶ τοῖς θεοῖς μεμέληκεν τοὺς δικαίους σῴζειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀεὶ",
+     "τοῖς",
+     "θεοῖς",
+     "μεμέληκεν",
+     "τοὺς",
+     "δικαίους",
+     "σῴζειν"
+    ]
+   },
+   {
+    "prompt": "The wise judge has judged the difficult case fairly.",
+    "answer": "Ὁ σοφὸς δικαστὴς τὴν χαλεπὴν δίκην ὀρθῶς κέκρικεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "σοφὸς",
+     "δικαστὴς",
+     "τὴν",
+     "χαλεπὴν",
+     "δίκην",
+     "ὀρθῶς",
+     "κέκρικεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-555-first-k-perfect-system-t12",
+  "sectionId": "sm-555-first-k-perfect-system",
+  "questions": [
+   {
+    "prompt": "The young men have practiced virtue from childhood.",
+    "answer": "Οἱ νεανίαι ἐκ παίδων τὴν ἀρετὴν ἠσκήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "νεανίαι",
+     "ἐκ",
+     "παίδων",
+     "τὴν",
+     "ἀρετὴν",
+     "ἠσκήκασιν"
+    ]
+   },
+   {
+    "prompt": "The tyrant has wronged many of the noblest citizens.",
+    "answer": "Ὁ τύραννος πολλοὺς τῶν ἀρίστων πολιτῶν ἠδίκηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "τύραννος",
+     "πολλοὺς",
+     "τῶν",
+     "ἀρίστων",
+     "πολιτῶν",
+     "ἠδίκηκεν"
+    ]
+   },
+   {
+    "prompt": "The servants have prepared a great feast for the guests.",
+    "answer": "Οἱ θεράποντες τοῖς ξένοις μεγάλην ἑστίασιν ἐσκευάκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "θεράποντες",
+     "τοῖς",
+     "ξένοις",
+     "μεγάλην",
+     "ἑστίασιν",
+     "ἐσκευάκασιν"
+    ]
+   },
+   {
+    "prompt": "The philosopher has freed the young man from his ignorance.",
+    "answer": "Ὁ φιλόσοφος τὸν νεανίαν τῆς ἀμαθίας λέλυκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "φιλόσοφος",
+     "τὸν",
+     "νεανίαν",
+     "τῆς",
+     "ἀμαθίας",
+     "λέλυκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-555-first-k-perfect-system-t13",
+  "sectionId": "sm-555-first-k-perfect-system",
+  "questions": [
+   {
+    "prompt": "The ambassadors have announced the victory to the whole city.",
+    "answer": "οἱ πρέσβεις τὴν νίκην πάσῃ τῇ πόλει ἠγγέλκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "τὴν",
+     "νίκην",
+     "πάσῃ",
+     "τῇ",
+     "πόλει",
+     "ἠγγέλκασιν"
+    ]
+   },
+   {
+    "prompt": "While the tyrant is ruling, evil men have corrupted the customs of the ancestors.",
+    "answer": "τοῦ τυράννου ἄρχοντος, κακοὶ ἄνδρες τὰ τῶν προγόνων ἔθη διεφθάρκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "τυράννου",
+     "ἄρχοντος",
+     "κακοὶ",
+     "ἄνδρες",
+     "τὰ",
+     "τῶν",
+     "προγόνων",
+     "ἔθη",
+     "διεφθάρκασιν"
+    ]
+   },
+   {
+    "prompt": "The young man has hurled a stone at the fleeing thief.",
+    "answer": "ὁ νεανίας λίθον ἐπὶ τὸν φεύγοντα κλῶπα βέβληκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "λίθον",
+     "ἐπὶ",
+     "τὸν",
+     "φεύγοντα",
+     "κλῶπα",
+     "βέβληκεν"
+    ]
+   },
+   {
+    "prompt": "Many of the bravest men have died and now lie beneath the earth.",
+    "answer": "πολλοὶ τῶν ἀνδρειοτάτων τεθνήκασι καὶ νῦν κατὰ γῆς κεῖνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὶ",
+     "τῶν",
+     "ἀνδρειοτάτων",
+     "τεθνήκασι",
+     "καὶ",
+     "νῦν",
+     "κατὰ",
+     "γῆς",
+     "κεῖνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-555-first-k-perfect-system-t14",
+  "sectionId": "sm-555-first-k-perfect-system",
+  "questions": [
+   {
+    "prompt": "Cyrus had given many gifts to those who were fighting bravely.",
+    "answer": "ὁ Κῦρος πολλὰ δῶρα τοῖς ἀνδρείως μαχομένοις ἐδεδώκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "πολλὰ",
+     "δῶρα",
+     "τοῖς",
+     "ἀνδρείως",
+     "μαχομένοις",
+     "ἐδεδώκει"
+    ]
+   },
+   {
+    "prompt": "The priest had placed the sacred offerings upon the altar.",
+    "answer": "ὁ ἱερεὺς τὰ ἱερὰ ἐπὶ τὸν βωμὸν ἐτεθήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "τὰ",
+     "ἱερὰ",
+     "ἐπὶ",
+     "τὸν",
+     "βωμὸν",
+     "ἐτεθήκει"
+    ]
+   },
+   {
+    "prompt": "The messenger had persuaded the citizens to remain within the walls.",
+    "answer": "ὁ ἄγγελος τοὺς πολίτας ἐντὸς τῶν τειχῶν μένειν ἐπεπείκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "τοὺς",
+     "πολίτας",
+     "ἐντὸς",
+     "τῶν",
+     "τειχῶν",
+     "μένειν",
+     "ἐπεπείκει"
+    ]
+   },
+   {
+    "prompt": "The lawgiver has honored those who died on behalf of their fatherland.",
+    "answer": "ὁ νομοθέτης τοὺς ὑπὲρ τῆς πατρίδος ἀποθανόντας τετίμηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νομοθέτης",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθανόντας",
+     "τετίμηκεν"
+    ]
+   }
+  ]
  }
 ]

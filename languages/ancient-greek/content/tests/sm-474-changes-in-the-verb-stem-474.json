@@ -374,5 +374,1276 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t7",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The exiles have left their homes and now wander through Greece.",
+    "answer": "Οἱ φυγάδες τὰς οἰκίας λελοίπασιν καὶ διὰ τῆς Ἑλλάδος πλανῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "φυγάδες",
+     "τὰς",
+     "οἰκίας",
+     "λελοίπασιν",
+     "καὶ",
+     "διὰ",
+     "τῆς",
+     "Ἑλλάδος",
+     "πλανῶνται"
+    ]
+   },
+   {
+    "prompt": "Since the guide had abandoned the road, the soldiers wandered a long time.",
+    "answer": "Τοῦ ἡγεμόνος τὴν ὁδὸν λιπόντος, οἱ στρατιῶται πολὺν χρόνον ἐπλανήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τοῦ",
+     "ἡγεμόνος",
+     "τὴν",
+     "ὁδὸν",
+     "λιπόντος",
+     "οἱ",
+     "στρατιῶται",
+     "πολὺν",
+     "χρόνον",
+     "ἐπλανήθησαν"
+    ]
+   },
+   {
+    "prompt": "Those who have fled from the battle are ashamed before the citizens.",
+    "answer": "Οἱ ἐκ τῆς μάχης πεφευγότες αἰσχύνονται τοὺς πολίτας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "πεφευγότες",
+     "αἰσχύνονται",
+     "τοὺς",
+     "πολίτας"
+    ]
+   },
+   {
+    "prompt": "I trust the friends who have never deceived me.",
+    "answer": "Πέποιθα τοῖς φίλοις οἳ οὐδέποτε ἐμὲ ἐξηπάτησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πέποιθα",
+     "τοῖς",
+     "φίλοις",
+     "οἳ",
+     "οὐδέποτε",
+     "ἐμὲ",
+     "ἐξηπάτησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t8",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The king has sent letters to all the satraps.",
+    "answer": "Ὁ βασιλεὺς ἐπιστολὰς πρὸς πάντας τοὺς σατράπας πέπομφεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "βασιλεὺς",
+     "ἐπιστολὰς",
+     "πρὸς",
+     "πάντας",
+     "τοὺς",
+     "σατράπας",
+     "πέπομφεν"
+    ]
+   },
+   {
+    "prompt": "The citizens who have suffered such things hate the tyrant.",
+    "answer": "Οἱ τοιαῦτα πεπονθότες πολῖται μισοῦσι τὸν τύραννον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "τοιαῦτα",
+     "πεπονθότες",
+     "πολῖται",
+     "μισοῦσι",
+     "τὸν",
+     "τύραννον"
+    ]
+   },
+   {
+    "prompt": "The woman has borne three children to her husband.",
+    "answer": "Ἡ γυνὴ τρία τέκνα τῷ ἀνδρὶ τέτοκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "γυνὴ",
+     "τρία",
+     "τέκνα",
+     "τῷ",
+     "ἀνδρὶ",
+     "τέτοκεν"
+    ]
+   },
+   {
+    "prompt": "I have always loved my fatherland more than my own life.",
+    "answer": "Ἀεὶ τὴν πατρίδα μᾶλλον τῆς ψυχῆς ἔστοργα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀεὶ",
+     "τὴν",
+     "πατρίδα",
+     "μᾶλλον",
+     "τῆς",
+     "ψυχῆς",
+     "ἔστοργα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t9",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The barbarians, having been turned to flight, threw away their weapons.",
+    "answer": "Οἱ βάρβαροι τραπέντες τὰ ὅπλα ἀπέρριψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "βάρβαροι",
+     "τραπέντες",
+     "τὰ",
+     "ὅπλα",
+     "ἀπέρριψαν"
+    ]
+   },
+   {
+    "prompt": "These young men have been reared in the customs of their ancestors.",
+    "answer": "Οὗτοι οἱ νεανίαι ἐν τοῖς τῶν προγόνων ἔθεσι τεθραμμένοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὗτοι",
+     "οἱ",
+     "νεανίαι",
+     "ἐν",
+     "τοῖς",
+     "τῶν",
+     "προγόνων",
+     "ἔθεσι",
+     "τεθραμμένοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "Many of the soldiers were destroyed by the plague.",
+    "answer": "Πολλοὶ τῶν στρατιωτῶν ὑπὸ τῆς νόσου ἐφθάρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πολλοὶ",
+     "τῶν",
+     "στρατιωτῶν",
+     "ὑπὸ",
+     "τῆς",
+     "νόσου",
+     "ἐφθάρησαν"
+    ]
+   },
+   {
+    "prompt": "The army has been sent out against those who have revolted.",
+    "answer": "Τὸ στράτευμα ἐπὶ τοὺς ἀφεστῶτας ἔσταλται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὸ",
+     "στράτευμα",
+     "ἐπὶ",
+     "τοὺς",
+     "ἀφεστῶτας",
+     "ἔσταλται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t10",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The whole meadow has bloomed with the flowers of spring.",
+    "answer": "Ὁ λειμὼν ἅπας τοῖς τοῦ ἦρος ἄνθεσι τέθηλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "λειμὼν",
+     "ἅπας",
+     "τοῖς",
+     "τοῦ",
+     "ἦρος",
+     "ἄνθεσι",
+     "τέθηλεν"
+    ]
+   },
+   {
+    "prompt": "A new danger has appeared to the sailors.",
+    "answer": "Καινὸς κίνδυνος τοῖς ναύταις πέφηνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Καινὸς",
+     "κίνδυνος",
+     "τοῖς",
+     "ναύταις",
+     "πέφηνεν"
+    ]
+   },
+   {
+    "prompt": "This man, since he has gone mad, harms his own friends.",
+    "answer": "Οὗτος ὁ ἀνήρ, ἅτε μεμηνώς, τοὺς ἑαυτοῦ φίλους βλάπτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὗτος",
+     "ὁ",
+     "ἀνήρ",
+     "ἅτε",
+     "μεμηνώς",
+     "τοὺς",
+     "ἑαυτοῦ",
+     "φίλους",
+     "βλάπτει"
+    ]
+   },
+   {
+    "prompt": "The prisoners in the marketplace are crying out that they suffer unjustly.",
+    "answer": "Οἱ ἐν τῇ ἀγορᾷ δεσμῶται κεκράγασιν ὡς ἀδίκως πάσχουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "δεσμῶται",
+     "κεκράγασιν",
+     "ὡς",
+     "ἀδίκως",
+     "πάσχουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t11",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "These men have fought many battles on behalf of the city.",
+    "answer": "Οὗτοι πολλὰς μάχας ὑπὲρ τῆς πόλεως μεμάχηνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὗτοι",
+     "πολλὰς",
+     "μάχας",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "μεμάχηνται"
+    ]
+   },
+   {
+    "prompt": "The guards have remained at their posts through the whole night.",
+    "answer": "Οἱ φύλακες ἐν ταῖς τάξεσιν διὰ πάσης τῆς νυκτὸς μεμενήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "φύλακες",
+     "ἐν",
+     "ταῖς",
+     "τάξεσιν",
+     "διὰ",
+     "πάσης",
+     "τῆς",
+     "νυκτὸς",
+     "μεμενήκασιν"
+    ]
+   },
+   {
+    "prompt": "It seemed good to the general to lead the army by night.",
+    "answer": "Ἔδοξε τῷ στρατηγῷ νυκτὸς τὸ στράτευμα ἄγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἔδοξε",
+     "τῷ",
+     "στρατηγῷ",
+     "νυκτὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἄγειν"
+    ]
+   },
+   {
+    "prompt": "The citizens have long wished to be freed from this war.",
+    "answer": "Οἱ πολῖται πάλαι βεβούληνται τούτου τοῦ πολέμου ἀπαλλαγῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "πολῖται",
+     "πάλαι",
+     "βεβούληνται",
+     "τούτου",
+     "τοῦ",
+     "πολέμου",
+     "ἀπαλλαγῆναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t12",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The city has honored those who died in the war with public funerals.",
+    "answer": "Ἡ πόλις τοὺς ἐν τῷ πολέμῳ ἀποθανόντας δημοσίαις ταφαῖς τετίμηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "πόλις",
+     "τοὺς",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "ἀποθανόντας",
+     "δημοσίαις",
+     "ταφαῖς",
+     "τετίμηκεν"
+    ]
+   },
+   {
+    "prompt": "The witness has made the whole matter clear to the judges.",
+    "answer": "Ὁ μάρτυς τὸ πρᾶγμα ἅπαν τοῖς δικασταῖς δεδήλωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "μάρτυς",
+     "τὸ",
+     "πρᾶγμα",
+     "ἅπαν",
+     "τοῖς",
+     "δικασταῖς",
+     "δεδήλωκεν"
+    ]
+   },
+   {
+    "prompt": "The boys laughed when they saw the strange animal.",
+    "answer": "Οἱ παῖδες ἐγέλασαν ἰδόντες τὸ ἄτοπον ζῷον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "παῖδες",
+     "ἐγέλασαν",
+     "ἰδόντες",
+     "τὸ",
+     "ἄτοπον",
+     "ζῷον"
+    ]
+   },
+   {
+    "prompt": "The work has been finished by the craftsmen within a few days.",
+    "answer": "Τὸ ἔργον ὑπὸ τῶν τεχνιτῶν ἐν ὀλίγαις ἡμέραις τετέλεσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὸ",
+     "ἔργον",
+     "ὑπὸ",
+     "τῶν",
+     "τεχνιτῶν",
+     "ἐν",
+     "ὀλίγαις",
+     "ἡμέραις",
+     "τετέλεσται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t13",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The thief has stolen the general's shield.",
+    "answer": "ὁ κλέπτης τὴν τοῦ στρατηγοῦ ἀσπίδα κέκλοφεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κλέπτης",
+     "τήν",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀσπίδα",
+     "κέκλοφεν"
+    ]
+   },
+   {
+    "prompt": "Many of the soldiers have fled from the camp.",
+    "answer": "πολλοὶ τῶν στρατιωτῶν ἐκ τοῦ στρατοπέδου πεφεύγασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοί",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "πεφεύγασιν"
+    ]
+   },
+   {
+    "prompt": "The messenger who has come announces good things.",
+    "answer": "ὁ ἐληλυθὼς ἄγγελος ἀγαθὰ ἀπαγγέλλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἐληλυθώς",
+     "ἄγγελος",
+     "ἀγαθά",
+     "ἀπαγγέλλει"
+    ]
+   },
+   {
+    "prompt": "The god has sent many good things to the pious.",
+    "answer": "ὁ θεὸς τοῖς εὐσεβέσι πολλὰ ἀγαθὰ πέπομφεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεός",
+     "τοῖς",
+     "εὐσεβέσι",
+     "πολλά",
+     "ἀγαθά",
+     "πέπομφεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t14",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The seed has been scattered over the whole field.",
+    "answer": "τὸ σπέρμα κατὰ πᾶσαν τὴν ἄρουραν ἔσπαρται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "σπέρμα",
+     "κατά",
+     "πᾶσαν",
+     "τήν",
+     "ἄρουραν",
+     "ἔσπαρται"
+    ]
+   },
+   {
+    "prompt": "These young men were reared in the country.",
+    "answer": "οὗτοι οἱ νεανίαι ἐν τῇ χώρᾳ ἐτράφησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "νεανίαι",
+     "ἐν",
+     "τῇ",
+     "χώρᾳ",
+     "ἐτράφησαν"
+    ]
+   },
+   {
+    "prompt": "The army has been dispatched against the islands.",
+    "answer": "ὁ στρατὸς ἐπὶ τὰς νήσους ἔσταλται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατός",
+     "ἐπί",
+     "τάς",
+     "νήσους",
+     "ἔσταλται"
+    ]
+   },
+   {
+    "prompt": "The soul that has once been corrupted is healed with difficulty.",
+    "answer": "ἡ ψυχὴ ἡ ἅπαξ διαφθαρεῖσα χαλεπῶς ἰᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ψυχή",
+     "ἅπαξ",
+     "διαφθαρεῖσα",
+     "χαλεπῶς",
+     "ἰᾶται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t15",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The soldiers, having left their weapons in the camp, fled.",
+    "answer": "οἱ στρατιῶται τὰ ὅπλα ἐν τῷ στρατοπέδῳ λιπόντες ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τά",
+     "ὅπλα",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "λιπόντες",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "When the child had been born, great joy seized the household.",
+    "answer": "τοῦ παιδὸς γενομένου μεγάλη χαρὰ τὸν οἶκον κατέσχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "παιδός",
+     "γενομένου",
+     "μεγάλη",
+     "χαρά",
+     "τόν",
+     "οἶκον",
+     "κατέσχεν"
+    ]
+   },
+   {
+    "prompt": "Having taken the letters, I read them aloud in the assembly.",
+    "answer": "λαβὼν τὰς ἐπιστολὰς ἀνέγνων αὐτὰς ἐν τῇ ἐκκλησίᾳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λαβών",
+     "τάς",
+     "ἐπιστολάς",
+     "ἀνέγνων",
+     "αὐτάς",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ"
+    ]
+   },
+   {
+    "prompt": "The rock, struck by the waves, was broken apart.",
+    "answer": "ἡ πέτρα ὑπὸ τῶν κυμάτων πληγεῖσα διερράγη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πέτρα",
+     "ὑπό",
+     "τῶν",
+     "κυμάτων",
+     "πληγεῖσα",
+     "διερράγη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t16",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The whole plain has blossomed with green grass.",
+    "answer": "τὸ πεδίον ἅπαν χλωρᾷ πόᾳ τέθηλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "πεδίον",
+     "ἅπαν",
+     "χλωρᾷ",
+     "πόᾳ",
+     "τέθηλεν"
+    ]
+   },
+   {
+    "prompt": "A new star has appeared to the sailors by night.",
+    "answer": "καινὸν ἄστρον τοῖς ναύταις νυκτὸς πέφηνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καινόν",
+     "ἄστρον",
+     "τοῖς",
+     "ναύταις",
+     "νυκτός",
+     "πέφηνεν"
+    ]
+   },
+   {
+    "prompt": "The old man, inasmuch as he has gone mad, harms his own friends.",
+    "answer": "ὁ γέρων, ἅτε μεμηνώς, τοὺς ἑαυτοῦ φίλους βλάπτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἅτε",
+     "μεμηνώς",
+     "τούς",
+     "ἑαυτοῦ",
+     "φίλους",
+     "βλάπτει"
+    ]
+   },
+   {
+    "prompt": "This man has loved wisdom from his youth.",
+    "answer": "οὗτος ἐκ νέου τὴν σοφίαν ἔστοργεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ἐκ",
+     "νέου",
+     "τήν",
+     "σοφίαν",
+     "ἔστοργεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t17",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The soldiers have fought many battles for their freedom.",
+    "answer": "οἱ στρατιῶται πολλὰς μάχας ὑπὲρ τῆς ἐλευθερίας μεμάχηνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πολλάς",
+     "μάχας",
+     "ὑπέρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "μεμάχηνται"
+    ]
+   },
+   {
+    "prompt": "The garrison has remained in the citadel throughout the whole winter.",
+    "answer": "ἡ φρουρὰ ἐν τῇ ἀκροπόλει διὰ παντὸς τοῦ χειμῶνος μεμένηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φρουρά",
+     "ἐν",
+     "τῇ",
+     "ἀκροπόλει",
+     "διά",
+     "παντός",
+     "τοῦ",
+     "χειμῶνος",
+     "μεμένηκεν"
+    ]
+   },
+   {
+    "prompt": "It seemed good to the general to lead the army back.",
+    "answer": "ἔδοξε τῷ στρατηγῷ τὸ στράτευμα ἀπαγαγεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξε",
+     "τῷ",
+     "στρατηγῷ",
+     "τό",
+     "στράτευμα",
+     "ἀπαγαγεῖν"
+    ]
+   },
+   {
+    "prompt": "The general has distributed the spoils to the soldiers.",
+    "answer": "ὁ στρατηγὸς τὰ λάφυρα τοῖς στρατιώταις νενέμηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τά",
+     "λάφυρα",
+     "τοῖς",
+     "στρατιώταις",
+     "νενέμηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t18",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The citizens have honored the goddess with a beautiful temple.",
+    "answer": "οἱ πολῖται τὴν θεὸν καλῷ ναῷ τετιμήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τήν",
+     "θεόν",
+     "καλῷ",
+     "ναῷ",
+     "τετιμήκασιν"
+    ]
+   },
+   {
+    "prompt": "The orator has made everything clear to the jurors.",
+    "answer": "ὁ ῥήτωρ πάντα τοῖς δικασταῖς δεδήλωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "πάντα",
+     "τοῖς",
+     "δικασταῖς",
+     "δεδήλωκεν"
+    ]
+   },
+   {
+    "prompt": "The workmen have finished the wall before winter.",
+    "answer": "οἱ ἐργάται τὸ τεῖχος πρὸ τοῦ χειμῶνος τετελέκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐργάται",
+     "τό",
+     "τεῖχος",
+     "πρό",
+     "τοῦ",
+     "χειμῶνος",
+     "τετελέκασιν"
+    ]
+   },
+   {
+    "prompt": "The children laughed when they saw the strange animal.",
+    "answer": "οἱ παῖδες ἐγέλασαν ἰδόντες τὸ ἄτοπον ζῷον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "ἐγέλασαν",
+     "ἰδόντες",
+     "τό",
+     "ἄτοπον",
+     "ζῷον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t19",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The traitor, having left the city, has fled to the enemy.",
+    "answer": "ὁ προδότης τὴν πόλιν λελοιπὼς πρὸς τοὺς πολεμίους πέφευγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "προδότης",
+     "τὴν",
+     "πόλιν",
+     "λελοιπὼς",
+     "πρὸς",
+     "τοὺς",
+     "πολεμίους",
+     "πέφευγεν"
+    ]
+   },
+   {
+    "prompt": "We have suffered many terrible things at the hands of the barbarians.",
+    "answer": "πολλὰ καὶ δεινὰ ὑπὸ τῶν βαρβάρων πεπόνθαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "καὶ",
+     "δεινὰ",
+     "ὑπὸ",
+     "τῶν",
+     "βαρβάρων",
+     "πεπόνθαμεν"
+    ]
+   },
+   {
+    "prompt": "Those who have stolen the sacred vessels will pay the penalty.",
+    "answer": "οἱ τὰ ἱερὰ σκεύη κεκλοφότες δίκην δώσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὰ",
+     "ἱερὰ",
+     "σκεύη",
+     "κεκλοφότες",
+     "δίκην",
+     "δώσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t20",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The enemy, having been turned to flight, fled through the mountains.",
+    "answer": "οἱ πολέμιοι εἰς φυγὴν τραπέντες διὰ τῶν ὀρῶν ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "εἰς",
+     "φυγὴν",
+     "τραπέντες",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The young men were reared in the customs of their ancestors.",
+    "answer": "οἱ νεανίαι ἐν τοῖς τῶν προγόνων ἔθεσιν ἐτράφησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "ἐν",
+     "τοῖς",
+     "τῶν",
+     "προγόνων",
+     "ἔθεσιν",
+     "ἐτράφησαν"
+    ]
+   },
+   {
+    "prompt": "The whole army has been destroyed by the plague.",
+    "answer": "τὸ στράτευμα ὅλον ὑπὸ τῆς νόσου ἔφθαρται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "ὅλον",
+     "ὑπὸ",
+     "τῆς",
+     "νόσου",
+     "ἔφθαρται"
+    ]
+   },
+   {
+    "prompt": "The soldiers, in order to guard the walls, have been dispatched.",
+    "answer": "οἱ στρατιῶται φυλάξοντες τὰ τείχη ἐστάλησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "φυλάξοντες",
+     "τὰ",
+     "τείχη",
+     "ἐστάλησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t21",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "A strange star has appeared above the camp.",
+    "answer": "ἀστὴρ ξένος ὑπὲρ τοῦ στρατοπέδου πέφηνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀστὴρ",
+     "ξένος",
+     "ὑπὲρ",
+     "τοῦ",
+     "στρατοπέδου",
+     "πέφηνεν"
+    ]
+   },
+   {
+    "prompt": "The dogs are barking loudly at the strangers.",
+    "answer": "οἱ κύνες μέγα πρὸς τοὺς ξένους κεκράγασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κύνες",
+     "μέγα",
+     "πρὸς",
+     "τοὺς",
+     "ξένους",
+     "κεκράγασιν"
+    ]
+   },
+   {
+    "prompt": "The old woman, having gone mad, wanders about the streets.",
+    "answer": "ἡ γραῦς μεμηνυῖα περὶ τὰς ὁδοὺς πλανᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "μεμηνυῖα",
+     "περὶ",
+     "τὰς",
+     "ὁδοὺς",
+     "πλανᾶται"
+    ]
+   },
+   {
+    "prompt": "The tree beside the river has bloomed again.",
+    "answer": "τὸ παρὰ τὸν ποταμὸν δένδρον αὖθις τέθηλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "παρὰ",
+     "τὸν",
+     "ποταμὸν",
+     "δένδρον",
+     "αὖθις",
+     "τέθηλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t22",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The council honored the general who had won the battle.",
+    "answer": "ἡ βουλὴ τὸν στρατηγὸν τὸν τὴν μάχην νικήσαντα ἐτίμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βουλὴ",
+     "τὸν",
+     "στρατηγὸν",
+     "τὴν",
+     "μάχην",
+     "νικήσαντα",
+     "ἐτίμησεν"
+    ]
+   },
+   {
+    "prompt": "The wise man made clear to the young men the nature of virtue.",
+    "answer": "ὁ σοφὸς τοῖς νεανίαις τὴν τῆς ἀρετῆς φύσιν ἐδήλωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τοῖς",
+     "νεανίαις",
+     "τὴν",
+     "τῆς",
+     "ἀρετῆς",
+     "φύσιν",
+     "ἐδήλωσεν"
+    ]
+   },
+   {
+    "prompt": "Having hunted the whole day, the youths captured many wild beasts.",
+    "answer": "ὅλην τὴν ἡμέραν θηράσαντες οἱ νεανίαι πολλὰ θηρία εἷλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅλην",
+     "τὴν",
+     "ἡμέραν",
+     "θηράσαντες",
+     "οἱ",
+     "νεανίαι",
+     "πολλὰ",
+     "θηρία",
+     "εἷλον"
+    ]
+   },
+   {
+    "prompt": "The general permitted the soldiers to rest for a short time.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ὀλίγον χρόνον ἀναπαύεσθαι εἴασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "ὀλίγον",
+     "χρόνον",
+     "ἀναπαύεσθαι",
+     "εἴασεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t23",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The priest poured wine over the altar.",
+    "answer": "ὁ ἱερεὺς οἶνον ἐπὶ τὸν βωμὸν ἔχεεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "οἶνον",
+     "ἐπὶ",
+     "τὸν",
+     "βωμὸν",
+     "ἔχεεν"
+    ]
+   },
+   {
+    "prompt": "The workmen have completed the temple with great toil.",
+    "answer": "οἱ ἐργάται τὸν νεὼν μετὰ πολλοῦ πόνου τετελέκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐργάται",
+     "τὸν",
+     "νεὼν",
+     "μετὰ",
+     "πολλοῦ",
+     "πόνου",
+     "τετελέκασιν"
+    ]
+   },
+   {
+    "prompt": "The Athenians summoned the general to the assembly.",
+    "answer": "οἱ Ἀθηναῖοι τὸν στρατηγὸν εἰς τὴν ἐκκλησίαν ἐκάλεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τὸν",
+     "στρατηγὸν",
+     "εἰς",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἐκάλεσαν"
+    ]
+   },
+   {
+    "prompt": "The soldiers have remained in the same place for many days.",
+    "answer": "οἱ στρατιῶται ἐν τῷ αὐτῷ τόπῳ πολλὰς ἡμέρας μεμενήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τῷ",
+     "αὐτῷ",
+     "τόπῳ",
+     "πολλὰς",
+     "ἡμέρας",
+     "μεμενήκασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t24",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The messengers have come from the king with letters.",
+    "answer": "οἱ ἄγγελοι παρὰ τοῦ βασιλέως μετὰ ἐπιστολῶν ἐληλύθασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "παρὰ",
+     "τοῦ",
+     "βασιλέως",
+     "μετὰ",
+     "ἐπιστολῶν",
+     "ἐληλύθασιν"
+    ]
+   },
+   {
+    "prompt": "The snow on the mountains was melted by the sun.",
+    "answer": "ἡ ἐν τοῖς ὄρεσι χιὼν ὑπὸ τοῦ ἡλίου ἐτάκη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐν",
+     "τοῖς",
+     "ὄρεσι",
+     "χιὼν",
+     "ὑπὸ",
+     "τοῦ",
+     "ἡλίου",
+     "ἐτάκη"
+    ]
+   },
+   {
+    "prompt": "The soldiers pushed the enemy back from the gates.",
+    "answer": "οἱ στρατιῶται τοὺς πολεμίους ἀπὸ τῶν πυλῶν ἔωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοὺς",
+     "πολεμίους",
+     "ἀπὸ",
+     "τῶν",
+     "πυλῶν",
+     "ἔωσαν"
+    ]
+   },
+   {
+    "prompt": "A great danger has arisen for the city.",
+    "answer": "μέγας κίνδυνος τῇ πόλει γεγένηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέγας",
+     "κίνδυνος",
+     "τῇ",
+     "πόλει",
+     "γεγένηται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t25",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The soldiers who fled from the battle have escaped death.",
+    "answer": "οἱ ἐκ τῆς μάχης φυγόντες στρατιῶται τὸν θάνατον πεφεύγασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φυγόντες",
+     "στρατιῶται",
+     "τὸν",
+     "θάνατον",
+     "πεφεύγασιν"
+    ]
+   },
+   {
+    "prompt": "We have suffered terrible things at the hands of the enemy.",
+    "answer": "δεινὰ ὑπὸ τῶν πολεμίων πεπόνθαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινὰ",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "πεπόνθαμεν"
+    ]
+   },
+   {
+    "prompt": "The slave who has stolen the master's gold will be punished.",
+    "answer": "ὁ δοῦλος ὁ τὸν τοῦ δεσπότου χρυσὸν κεκλοφὼς κολασθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "τὸν",
+     "τοῦ",
+     "δεσπότου",
+     "χρυσὸν",
+     "κεκλοφὼς",
+     "κολασθήσεται"
+    ]
+   },
+   {
+    "prompt": "The guards have been awake through the whole night.",
+    "answer": "οἱ φύλακες διὰ ὅλης τῆς νυκτὸς ἐγρηγόρασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "διὰ",
+     "ὅλης",
+     "τῆς",
+     "νυκτὸς",
+     "ἐγρηγόρασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-474-changes-in-the-verb-stem-474-t26",
+  "sectionId": "sm-474-changes-in-the-verb-stem-474",
+  "questions": [
+   {
+    "prompt": "The messengers have been sent to Sparta by the council.",
+    "answer": "οἱ ἄγγελοι εἰς τὴν Σπάρτην ὑπὸ τῆς βουλῆς ἐστάλησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "εἰς",
+     "τὴν",
+     "Σπάρτην",
+     "ὑπὸ",
+     "τῆς",
+     "βουλῆς",
+     "ἐστάλησαν"
+    ]
+   },
+   {
+    "prompt": "The whole army has been destroyed by hunger and cold.",
+    "answer": "πᾶν τὸ στράτευμα ὑπὸ λιμοῦ καὶ ψύχους ἔφθαρται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶν",
+     "τὸ",
+     "στράτευμα",
+     "ὑπὸ",
+     "λιμοῦ",
+     "καὶ",
+     "ψύχους",
+     "ἔφθαρται"
+    ]
+   },
+   {
+    "prompt": "This young man was reared in the house of a wise man.",
+    "answer": "ὁ νεανίας οὗτος ἐν τῇ τοῦ σοφοῦ οἰκίᾳ ἐτράφη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "οὗτος",
+     "ἐν",
+     "τῇ",
+     "τοῦ",
+     "σοφοῦ",
+     "οἰκίᾳ",
+     "ἐτράφη"
+    ]
+   },
+   {
+    "prompt": "The general has summoned the soldiers to the assembly.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας εἰς τὴν ἐκκλησίαν κέκληκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "εἰς",
+     "τὴν",
+     "ἐκκλησίαν",
+     "κέκληκεν"
+    ]
+   }
+  ]
  }
 ]

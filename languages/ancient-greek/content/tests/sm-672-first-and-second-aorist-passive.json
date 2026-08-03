@@ -371,5 +371,599 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t7",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "Those who had been educated by good teachers became just.",
+    "answer": "Οἱ ὑπὸ ἀγαθῶν διδασκάλων παιδευθέντες δίκαιοι ἐγένοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ὑπὸ",
+     "ἀγαθῶν",
+     "διδασκάλων",
+     "παιδευθέντες",
+     "δίκαιοι",
+     "ἐγένοντο"
+    ]
+   },
+   {
+    "prompt": "The general, having been honored by the citizens, offered sacrifice.",
+    "answer": "Ὁ στρατηγὸς ὑπὸ τῶν πολιτῶν τιμηθεὶς ἔθυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγὸς",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "τιμηθεὶς",
+     "ἔθυσεν"
+    ]
+   },
+   {
+    "prompt": "It was announced to the Athenians that the ships had been destroyed.",
+    "answer": "Ἠγγέλθη τοῖς Ἀθηναίοις ὅτι αἱ νῆες διεφθάρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἠγγέλθη",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "ὅτι",
+     "αἱ",
+     "νῆες",
+     "διεφθάρησαν"
+    ]
+   },
+   {
+    "prompt": "When the enemy had been turned to flight, the hoplites pursued.",
+    "answer": "Τῶν πολεμίων εἰς φυγὴν τραπέντων, οἱ ὁπλῖται ἐδίωξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τῶν",
+     "πολεμίων",
+     "εἰς",
+     "φυγὴν",
+     "τραπέντων",
+     "οἱ",
+     "ὁπλῖται",
+     "ἐδίωξαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t8",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The gold was hidden by the slaves in the earth.",
+    "answer": "Ὁ χρυσὸς ὑπὸ τῶν δούλων ἐν τῇ γῇ ἐκρύφθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "χρυσὸς",
+     "ὑπὸ",
+     "τῶν",
+     "δούλων",
+     "ἐν",
+     "τῇ",
+     "γῇ",
+     "ἐκρύφθη"
+    ]
+   },
+   {
+    "prompt": "I fear that we may be harmed by their envy.",
+    "answer": "Φοβοῦμαι μὴ ὑπὸ τοῦ φθόνου αὐτῶν βλαβῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Φοβοῦμαι",
+     "μὴ",
+     "ὑπὸ",
+     "τοῦ",
+     "φθόνου",
+     "αὐτῶν",
+     "βλαβῶμεν"
+    ]
+   },
+   {
+    "prompt": "If the truth had been concealed, the judges would have erred.",
+    "answer": "Εἰ ἡ ἀλήθεια ἐκρύφθη, οἱ δικασταὶ ἂν ἥμαρτον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ἡ",
+     "ἀλήθεια",
+     "ἐκρύφθη",
+     "οἱ",
+     "δικασταὶ",
+     "ἂν",
+     "ἥμαρτον"
+    ]
+   },
+   {
+    "prompt": "The letter having been written, it was sent to the king.",
+    "answer": "Τῆς ἐπιστολῆς γραφείσης, πρὸς τὸν βασιλέα ἐπέμφθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τῆς",
+     "ἐπιστολῆς",
+     "γραφείσης",
+     "πρὸς",
+     "τὸν",
+     "βασιλέα",
+     "ἐπέμφθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t9",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The prisoners were freed by the magnificent king.",
+    "answer": "Οἱ αἰχμάλωτοι ὑπὸ τοῦ μεγαλοπρεποῦς βασιλέως ἐλύθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "αἰχμάλωτοι",
+     "ὑπὸ",
+     "τοῦ",
+     "μεγαλοπρεποῦς",
+     "βασιλέως",
+     "ἐλύθησαν"
+    ]
+   },
+   {
+    "prompt": "May the city be saved from so great a danger.",
+    "answer": "Εἴθε ἡ πόλις ἐκ τοσούτου κινδύνου σωθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἴθε",
+     "ἡ",
+     "πόλις",
+     "ἐκ",
+     "τοσούτου",
+     "κινδύνου",
+     "σωθείη"
+    ]
+   },
+   {
+    "prompt": "The soldiers who had been captured by the barbarians were sold.",
+    "answer": "Οἱ ὑπὸ τῶν βαρβάρων ληφθέντες στρατιῶται ἐπράθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ὑπὸ",
+     "τῶν",
+     "βαρβάρων",
+     "ληφθέντες",
+     "στρατιῶται",
+     "ἐπράθησαν"
+    ]
+   },
+   {
+    "prompt": "We arrived in order that the wounded might be saved.",
+    "answer": "Ἀφικόμεθα ἵνα οἱ τετρωμένοι σωθεῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀφικόμεθα",
+     "ἵνα",
+     "οἱ",
+     "τετρωμένοι",
+     "σωθεῖεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t10",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The wise man appeared in the assembly and spoke boldly.",
+    "answer": "Ὁ σοφὸς ἐν τῇ ἐκκλησίᾳ ἐφάνη καὶ θαρραλέως εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "σοφὸς",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἐφάνη",
+     "καὶ",
+     "θαρραλέως",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "When these things had appeared, everyone was amazed.",
+    "answer": "Τούτων φανέντων, πάντες ἐθαύμασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τούτων",
+     "φανέντων",
+     "πάντες",
+     "ἐθαύμασαν"
+    ]
+   },
+   {
+    "prompt": "The seed was sown by the farmers in spring.",
+    "answer": "Τὸ σπέρμα ὑπὸ τῶν γεωργῶν τοῦ ἦρος ἐσπάρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὸ",
+     "σπέρμα",
+     "ὑπὸ",
+     "τῶν",
+     "γεωργῶν",
+     "τοῦ",
+     "ἦρος",
+     "ἐσπάρη"
+    ]
+   },
+   {
+    "prompt": "The army was sent by the general toward the mountains.",
+    "answer": "Τὸ στράτευμα ὑπὸ τοῦ στρατηγοῦ πρὸς τὰ ὄρη ἐστάλη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὸ",
+     "στράτευμα",
+     "ὑπὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "πρὸς",
+     "τὰ",
+     "ὄρη",
+     "ἐστάλη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t11",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The old men were persuaded by the words of the orator.",
+    "answer": "Οἱ γέροντες ὑπὸ τῶν τοῦ ῥήτορος λόγων ἐπείσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "γέροντες",
+     "ὑπὸ",
+     "τῶν",
+     "τοῦ",
+     "ῥήτορος",
+     "λόγων",
+     "ἐπείσθησαν"
+    ]
+   },
+   {
+    "prompt": "The lawsuit was judged justly by the citizens.",
+    "answer": "Ἡ δίκη ὑπὸ τῶν πολιτῶν δικαίως ἐκρίθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "δίκη",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "δικαίως",
+     "ἐκρίθη"
+    ]
+   },
+   {
+    "prompt": "Whoever is persuaded by flatterers is easily deceived.",
+    "answer": "Ὅστις ἂν ὑπὸ τῶν κολάκων πεισθῇ ῥᾳδίως ἐξαπατᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὅστις",
+     "ἂν",
+     "ὑπὸ",
+     "τῶν",
+     "κολάκων",
+     "πεισθῇ",
+     "ῥᾳδίως",
+     "ἐξαπατᾶται"
+    ]
+   },
+   {
+    "prompt": "Having been persuaded by his friends, he remained in the city.",
+    "answer": "Ὑπὸ τῶν φίλων πεισθεὶς ἐν τῇ πόλει ἔμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὑπὸ",
+     "τῶν",
+     "φίλων",
+     "πεισθεὶς",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἔμεινεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t12",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The children were reared in the fields by their grandmother.",
+    "answer": "Οἱ παῖδες ἐν τοῖς ἀγροῖς ὑπὸ τῆς τήθης ἐτράφησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "παῖδες",
+     "ἐν",
+     "τοῖς",
+     "ἀγροῖς",
+     "ὑπὸ",
+     "τῆς",
+     "τήθης",
+     "ἐτράφησαν"
+    ]
+   },
+   {
+    "prompt": "The stones were thrown down from the walls by the defenders.",
+    "answer": "Οἱ λίθοι ἀπὸ τῶν τειχῶν ὑπὸ τῶν ἀμυνομένων ἐρρίφησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "λίθοι",
+     "ἀπὸ",
+     "τῶν",
+     "τειχῶν",
+     "ὑπὸ",
+     "τῶν",
+     "ἀμυνομένων",
+     "ἐρρίφησαν"
+    ]
+   },
+   {
+    "prompt": "The trees around the city were cut down by the enemy.",
+    "answer": "Τὰ περὶ τὴν πόλιν δένδρα ὑπὸ τῶν πολεμίων ἐκόπησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὰ",
+     "περὶ",
+     "τὴν",
+     "πόλιν",
+     "δένδρα",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "ἐκόπησαν"
+    ]
+   },
+   {
+    "prompt": "The corpses were buried beside the river by the survivors.",
+    "answer": "Οἱ νεκροὶ παρὰ τὸν ποταμὸν ὑπὸ τῶν περιγενομένων ἐτάφησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "νεκροὶ",
+     "παρὰ",
+     "τὸν",
+     "ποταμὸν",
+     "ὑπὸ",
+     "τῶν",
+     "περιγενομένων",
+     "ἐτάφησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t13",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "The messenger was sent away by the general before the battle.",
+    "answer": "ὁ ἄγγελος ὑπὸ τοῦ στρατηγοῦ πρὸ τῆς μάχης ἀπεπέμφθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ὑπὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "ἀπεπέμφθη"
+    ]
+   },
+   {
+    "prompt": "The gates were opened, and the enemy rushed into the city.",
+    "answer": "αἱ πύλαι ἀνεῴχθησαν, καὶ οἱ πολέμιοι εἰς τὴν πόλιν εἰσέδραμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "πύλαι",
+     "ἀνεῴχθησαν",
+     "καὶ",
+     "οἱ",
+     "πολέμιοι",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "εἰσέδραμον"
+    ]
+   },
+   {
+    "prompt": "Many of the soldiers were left behind in the camp because of their wounds.",
+    "answer": "πολλοὶ τῶν στρατιωτῶν διὰ τὰ τραύματα ἐν τῷ στρατοπέδῳ κατελείφθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὶ",
+     "τῶν",
+     "στρατιωτῶν",
+     "διὰ",
+     "τὰ",
+     "τραύματα",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "κατελείφθησαν"
+    ]
+   },
+   {
+    "prompt": "When the letter had been read aloud, the truth was revealed to all.",
+    "answer": "ἐπεὶ ἡ ἐπιστολὴ ἀνεγνώσθη, ἡ ἀλήθεια πᾶσιν ἐφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ἡ",
+     "ἐπιστολὴ",
+     "ἀνεγνώσθη",
+     "ἀλήθεια",
+     "πᾶσιν",
+     "ἐφάνη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t14",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "Having been abandoned by their allies, the citizens surrendered the city.",
+    "answer": "ὑπὸ τῶν συμμάχων καταλειφθέντες οἱ πολῖται τὴν πόλιν παρέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῶν",
+     "συμμάχων",
+     "καταλειφθέντες",
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "πόλιν",
+     "παρέδοσαν"
+    ]
+   },
+   {
+    "prompt": "The soldiers, having been drawn up in the plain, awaited the attack.",
+    "answer": "οἱ στρατιῶται ἐν τῷ πεδίῳ ταχθέντες τὴν προσβολὴν ἀνέμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ταχθέντες",
+     "τὴν",
+     "προσβολὴν",
+     "ἀνέμενον"
+    ]
+   },
+   {
+    "prompt": "It is not possible for the wicked to be honored by the gods.",
+    "answer": "οὐκ ἔξεστι τοὺς πονηροὺς ὑπὸ τῶν θεῶν τιμηθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔξεστι",
+     "τοὺς",
+     "πονηροὺς",
+     "ὑπὸ",
+     "τῶν",
+     "θεῶν",
+     "τιμηθῆναι"
+    ]
+   },
+   {
+    "prompt": "Those who had been saved from the sea gave thanks to the gods.",
+    "answer": "οἱ ἐκ τῆς θαλάττης σωθέντες τοῖς θεοῖς χάριν ἀπέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐκ",
+     "τῆς",
+     "θαλάττης",
+     "σωθέντες",
+     "τοῖς",
+     "θεοῖς",
+     "χάριν",
+     "ἀπέδοσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-672-first-and-second-aorist-passive-t15",
+  "sectionId": "sm-672-first-and-second-aorist-passive",
+  "questions": [
+   {
+    "prompt": "We fear that the city may be betrayed by the guards.",
+    "answer": "φοβούμεθα μὴ ἡ πόλις ὑπὸ τῶν φυλάκων προδοθῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβούμεθα",
+     "μὴ",
+     "ἡ",
+     "πόλις",
+     "ὑπὸ",
+     "τῶν",
+     "φυλάκων",
+     "προδοθῇ"
+    ]
+   },
+   {
+    "prompt": "If the army were destroyed, the whole land would be enslaved.",
+    "answer": "εἰ τὸ στράτευμα διαφθαρείη, πᾶσα ἡ χώρα δουλωθείη ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸ",
+     "στράτευμα",
+     "διαφθαρείη",
+     "πᾶσα",
+     "ἡ",
+     "χώρα",
+     "δουλωθείη",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "Let the temples not be defiled by the impious enemy.",
+    "answer": "μὴ μιανθήτω τὰ ἱερὰ ὑπὸ τῶν ἀνοσίων πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "μιανθήτω",
+     "τὰ",
+     "ἱερὰ",
+     "ὑπὸ",
+     "τῶν",
+     "ἀνοσίων",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "The general commanded that the prisoners be freed and sent home.",
+    "answer": "ὁ στρατηγὸς ἐκέλευσε τοὺς αἰχμαλώτους λυθῆναι καὶ οἴκαδε πεμφθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκέλευσε",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "λυθῆναι",
+     "καὶ",
+     "οἴκαδε",
+     "πεμφθῆναι"
+    ]
+   }
+  ]
  }
 ]

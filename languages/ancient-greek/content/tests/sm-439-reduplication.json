@@ -1165,5 +1165,387 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-439-reduplication-t19",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The wise men have written many books about virtue.",
+    "answer": "οἱ σοφοὶ πολλὰ βιβλία περὶ ἀρετῆς γεγράφασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφοί",
+     "πολλά",
+     "βιβλία",
+     "περί",
+     "ἀρετῆς",
+     "γεγράφασιν"
+    ]
+   },
+   {
+    "prompt": "The soldiers have fled out of the battle into the marketplace.",
+    "answer": "οἱ στρατιῶται ἐκ τῆς μάχης εἰς τὴν ἀγορὰν πεφεύγασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "εἰς",
+     "τήν",
+     "ἀγοράν",
+     "πεφεύγασιν"
+    ]
+   },
+   {
+    "prompt": "This orator has often harangued the assembly about peace.",
+    "answer": "ὁ ῥήτωρ οὗτος πολλάκις τὴν ἐκκλησίαν περὶ εἰρήνης ἠγόρευκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "οὗτος",
+     "πολλάκις",
+     "τήν",
+     "ἐκκλησίαν",
+     "περί",
+     "εἰρήνης",
+     "ἠγόρευκεν"
+    ]
+   },
+   {
+    "prompt": "The young men have learned the deeds of their ancestors.",
+    "answer": "οἱ νεανίαι τὰ τῶν προγόνων ἔργα μεμαθήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "τά",
+     "τῶν",
+     "προγόνων",
+     "ἔργα",
+     "μεμαθήκασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t20",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The gates of the city have been shut by the guards.",
+    "answer": "αἱ τῆς πόλεως πύλαι ὑπὸ τῶν φυλάκων κέκλεινται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τῆς",
+     "πόλεως",
+     "πύλαι",
+     "ὑπό",
+     "τῶν",
+     "φυλάκων",
+     "κέκλεινται"
+    ]
+   },
+   {
+    "prompt": "The letters have been written and sent to the general.",
+    "answer": "αἱ ἐπιστολαὶ γεγραμμέναι καὶ πεπεμμέναι εἰσὶ πρὸς τὸν στρατηγόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "ἐπιστολαί",
+     "γεγραμμέναι",
+     "καί",
+     "πεπεμμέναι",
+     "εἰσί",
+     "πρός",
+     "τόν",
+     "στρατηγόν"
+    ]
+   },
+   {
+    "prompt": "The city has been well governed by good laws.",
+    "answer": "ἡ πόλις ὑπὸ νόμων ἀγαθῶν καλῶς διῴκηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ὑπό",
+     "νόμων",
+     "ἀγαθῶν",
+     "καλῶς",
+     "διῴκηται"
+    ]
+   },
+   {
+    "prompt": "Many gifts have been given to the goddess by the women.",
+    "answer": "πολλὰ δῶρα τῇ θεῷ ὑπὸ τῶν γυναικῶν δέδοται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλά",
+     "δῶρα",
+     "τῇ",
+     "θεῷ",
+     "ὑπό",
+     "τῶν",
+     "γυναικῶν",
+     "δέδοται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t21",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The enemy had already fled before the sun set.",
+    "answer": "οἱ πολέμιοι ἤδη ἐπεφεύγεσαν πρὶν τὸν ἥλιον δῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ἤδη",
+     "ἐπεφεύγεσαν",
+     "πρίν",
+     "τόν",
+     "ἥλιον",
+     "δῦναι"
+    ]
+   },
+   {
+    "prompt": "The general had drawn up the army before the enemy appeared.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα ἐτετάχει πρὶν τοὺς πολεμίους φανῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "ἐτετάχει",
+     "πρίν",
+     "τούς",
+     "πολεμίους",
+     "φανῆναι"
+    ]
+   },
+   {
+    "prompt": "We had heard what was announced before the messenger arrived.",
+    "answer": "τὰ ἀγγελθέντα ἠκηκόεμεν πρὶν τὸν ἄγγελον ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἀγγελθέντα",
+     "ἠκηκόεμεν",
+     "πρίν",
+     "τόν",
+     "ἄγγελον",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "The citizens had chosen the judges before the festival began.",
+    "answer": "οἱ πολῖται τοὺς δικαστὰς ᾑρήκεσαν πρὶν τὴν ἑορτὴν ἄρξασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τούς",
+     "δικαστάς",
+     "ᾑρήκεσαν",
+     "πρίν",
+     "τήν",
+     "ἑορτήν",
+     "ἄρξασθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t22",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The statues have long stood in the marketplace.",
+    "answer": "οἱ ἀνδριάντες ἐν τῇ ἀγορᾷ πάλαι ἑστᾶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀνδριάντες",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "πάλαι",
+     "ἑστᾶσιν"
+    ]
+   },
+   {
+    "prompt": "I have acquired many friends through my labors.",
+    "answer": "πολλοὺς φίλους διὰ τῶν πόνων κέκτημαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλούς",
+     "φίλους",
+     "διά",
+     "τῶν",
+     "πόνων",
+     "κέκτημαι"
+    ]
+   },
+   {
+    "prompt": "The old men remember the ancient wars well.",
+    "answer": "οἱ γέροντες τῶν παλαιῶν πολέμων εὖ μέμνηνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "τῶν",
+     "παλαιῶν",
+     "πολέμων",
+     "εὖ",
+     "μέμνηνται"
+    ]
+   },
+   {
+    "prompt": "The gods have destroyed the tyrant's insolence.",
+    "answer": "οἱ θεοὶ τὴν τοῦ τυράννου ὕβριν ὀλωλέκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "τήν",
+     "τοῦ",
+     "τυράννου",
+     "ὕβριν",
+     "ὀλωλέκασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t23",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "Those who have taken the city receive great honors.",
+    "answer": "οἱ τὴν πόλιν εἰληφότες μεγάλας τιμὰς λαμβάνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τήν",
+     "πόλιν",
+     "εἰληφότες",
+     "μεγάλας",
+     "τιμάς",
+     "λαμβάνουσιν"
+    ]
+   },
+   {
+    "prompt": "Those who have suffered many evils have learned wisdom.",
+    "answer": "οἱ πολλὰ κακὰ πεπονθότες σοφίαν μεμαθήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολλά",
+     "κακά",
+     "πεπονθότες",
+     "σοφίαν",
+     "μεμαθήκασιν"
+    ]
+   },
+   {
+    "prompt": "The oaths that have been sworn by the kings are firm.",
+    "answer": "οἱ ὅρκοι οἱ ὑπὸ τῶν βασιλέων ὀμωμοσμένοι βέβαιοί εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὅρκοι",
+     "ὑπό",
+     "τῶν",
+     "βασιλέων",
+     "ὀμωμοσμένοι",
+     "βέβαιοι",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "Having sacrificed to the gods, the priests announced good things.",
+    "answer": "τοῖς θεοῖς τεθυκότες οἱ ἱερεῖς ἀγαθὰ ἤγγειλαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "θεοῖς",
+     "τεθυκότες",
+     "οἱ",
+     "ἱερεῖς",
+     "ἀγαθά",
+     "ἤγγειλαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-439-reduplication-t24",
+  "sectionId": "sm-439-reduplication",
+  "questions": [
+   {
+    "prompt": "The messenger says that the enemy have fled.",
+    "answer": "ὁ ἄγγελος λέγει τοὺς πολεμίους πεφευγέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "λέγει",
+     "τούς",
+     "πολεμίους",
+     "πεφευγέναι"
+    ]
+   },
+   {
+    "prompt": "I know that these things have been done well by you.",
+    "answer": "οἶδα ταῦτα καλῶς ὑπὸ σοῦ πεπρᾶχθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶδα",
+     "ταῦτα",
+     "καλῶς",
+     "ὑπό",
+     "σοῦ",
+     "πεπρᾶχθαι"
+    ]
+   },
+   {
+    "prompt": "If you do this, everything will have been ruined.",
+    "answer": "ἐὰν τοῦτο ποιήσῃς, πάντα ἀπολωλότα ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τοῦτο",
+     "ποιήσῃς",
+     "πάντα",
+     "ἀπολωλότα",
+     "ἔσται"
+    ]
+   },
+   {
+    "prompt": "The teacher has taught the children letters and music.",
+    "answer": "ὁ διδάσκαλος τοὺς παῖδας γράμματα καὶ μουσικὴν δεδίδαχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "τούς",
+     "παῖδας",
+     "γράμματα",
+     "καί",
+     "μουσικήν",
+     "δεδίδαχεν"
+    ]
+   }
+  ]
  }
 ]

@@ -384,5 +384,753 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t7",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The bridge has been left unguarded by the citizens.",
+    "answer": "ἡ γέφυρα ἀφύλακτος ὑπὸ τῶν πολιτῶν λέλειπται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γέφυρα",
+     "ἀφύλακτος",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "λέλειπται"
+    ]
+   },
+   {
+    "prompt": "The letter had been written by the general before the battle.",
+    "answer": "ἡ ἐπιστολὴ ὑπὸ τοῦ στρατηγοῦ πρὸ τῆς μάχης ἐγέγραπτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιστολὴ",
+     "ὑπὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "ἐγέγραπτο"
+    ]
+   },
+   {
+    "prompt": "These men have been persuaded by the ambassador to make a treaty.",
+    "answer": "οὗτοι ὑπὸ τοῦ πρέσβεως πεπεισμένοι εἰσὶ σπονδὰς ποιεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "ὑπὸ",
+     "τοῦ",
+     "πρέσβεως",
+     "πεπεισμένοι",
+     "εἰσὶ",
+     "σπονδὰς",
+     "ποιεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "Everything has been accomplished by the priests during the sacrifice.",
+    "answer": "πάντα ὑπὸ τῶν ἱερέων ἐν τῇ θυσίᾳ τετέλεσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "ὑπὸ",
+     "τῶν",
+     "ἱερέων",
+     "ἐν",
+     "τῇ",
+     "θυσίᾳ",
+     "τετέλεσται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t8",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The ships have been left in the harbor by the sailors.",
+    "answer": "αἱ νῆες ὑπὸ τῶν ναυτῶν ἐν τῷ λιμένι λελειμμέναι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "νῆες",
+     "ὑπὸ",
+     "τῶν",
+     "ναυτῶν",
+     "ἐν",
+     "τῷ",
+     "λιμένι",
+     "λελειμμέναι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "The crime has been revealed to the judges by the witnesses.",
+    "answer": "τὸ ἀδίκημα τοῖς δικασταῖς ὑπὸ τῶν μαρτύρων πέφανται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἀδίκημα",
+     "τοῖς",
+     "δικασταῖς",
+     "ὑπὸ",
+     "τῶν",
+     "μαρτύρων",
+     "πέφανται"
+    ]
+   },
+   {
+    "prompt": "The victory had been announced to the allies before the enemy's flight.",
+    "answer": "ἡ νίκη τοῖς συμμάχοις πρὸ τῆς τῶν πολεμίων φυγῆς ἤγγελτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νίκη",
+     "τοῖς",
+     "συμμάχοις",
+     "πρὸ",
+     "τῆς",
+     "τῶν",
+     "πολεμίων",
+     "φυγῆς",
+     "ἤγγελτο"
+    ]
+   },
+   {
+    "prompt": "The lying witness has been confuted by the orator.",
+    "answer": "ὁ ψευδὴς μάρτυς ὑπὸ τοῦ ῥήτορος ἐλήλεγκται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ψευδὴς",
+     "μάρτυς",
+     "ὑπὸ",
+     "τοῦ",
+     "ῥήτορος",
+     "ἐλήλεγκται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t9",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The letters having been written, the herald departed.",
+    "answer": "τῶν ἐπιστολῶν γεγραμμένων ὁ κῆρυξ ἀπῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἐπιστολῶν",
+     "γεγραμμένων",
+     "ὁ",
+     "κῆρυξ",
+     "ἀπῆλθεν"
+    ]
+   },
+   {
+    "prompt": "The accuser having been confuted, the defendant was acquitted.",
+    "answer": "τοῦ κατηγόρου ἐληλεγμένου ὁ φεύγων ἀπελύθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "κατηγόρου",
+     "ἐληλεγμένου",
+     "ὁ",
+     "φεύγων",
+     "ἀπελύθη"
+    ]
+   },
+   {
+    "prompt": "The guards having been left at the gates, we advanced.",
+    "answer": "τῶν φυλάκων ἐπὶ ταῖς πύλαις λελειμμένων προήλθομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "φυλάκων",
+     "ἐπὶ",
+     "ταῖς",
+     "πύλαις",
+     "λελειμμένων",
+     "προήλθομεν"
+    ]
+   },
+   {
+    "prompt": "The sacrifice having been completed, the general led out the army.",
+    "answer": "τῆς θυσίας τετελεσμένης ὁ στρατηγὸς τὸ στράτευμα ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "θυσίας",
+     "τετελεσμένης",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἐξήγαγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t10",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "I have been persuaded by these arguments to change my mind.",
+    "answer": "τούτοις τοῖς λόγοις πέπεισμαι τὴν γνώμην μεταβαλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτοις",
+     "τοῖς",
+     "λόγοις",
+     "πέπεισμαι",
+     "τὴν",
+     "γνώμην",
+     "μεταβαλεῖν"
+    ]
+   },
+   {
+    "prompt": "You have been left behind by your companions, friend.",
+    "answer": "ὑπὸ τῶν ἑταίρων, ὦ φίλε, λέλειψαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῶν",
+     "ἑταίρων",
+     "ὦ",
+     "φίλε",
+     "λέλειψαι"
+    ]
+   },
+   {
+    "prompt": "Many things worthy of memory have been done by us.",
+    "answer": "πολλὰ μνήμης ἄξια ὑπὸ ἡμῶν πέπρακται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "μνήμης",
+     "ἄξια",
+     "ὑπὸ",
+     "ἡμῶν",
+     "πέπρακται"
+    ]
+   },
+   {
+    "prompt": "It has been announced to us that the king is dead.",
+    "answer": "ἡμῖν ἤγγελται ὅτι ὁ βασιλεὺς τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμῖν",
+     "ἤγγελται",
+     "ὅτι",
+     "ὁ",
+     "βασιλεὺς",
+     "τέθνηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t11",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The camp had been left empty before we arrived.",
+    "answer": "τὸ στρατόπεδον κενὸν πρὶν ἀφικέσθαι ἡμᾶς ἐλέλειπτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στρατόπεδον",
+     "κενὸν",
+     "πρὶν",
+     "ἀφικέσθαι",
+     "ἡμᾶς",
+     "ἐλέλειπτο"
+    ]
+   },
+   {
+    "prompt": "These things had already been done when day dawned.",
+    "answer": "ταῦτα ἤδη ἐπέπρακτο ἐπεὶ ἡμέρα ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἤδη",
+     "ἐπέπρακτο",
+     "ἐπεὶ",
+     "ἡμέρα",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "The name of the traitor had been revealed to the generals.",
+    "answer": "τὸ τοῦ προδότου ὄνομα τοῖς στρατηγοῖς ἐπέφαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τοῦ",
+     "προδότου",
+     "ὄνομα",
+     "τοῖς",
+     "στρατηγοῖς",
+     "ἐπέφαντο"
+    ]
+   },
+   {
+    "prompt": "The witness had been confuted before he stopped speaking.",
+    "answer": "ὁ μάρτυς ἐλήλεγκτο πρὶν παύσασθαι λέγων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάρτυς",
+     "ἐλήλεγκτο",
+     "πρὶν",
+     "παύσασθαι",
+     "λέγων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t12",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The soldiers who have been left in the city are few.",
+    "answer": "οἱ ἐν τῇ πόλει λελειμμένοι στρατιῶται ὀλίγοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "λελειμμένοι",
+     "στρατιῶται",
+     "ὀλίγοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "He believes that the treaty has been written justly.",
+    "answer": "νομίζει τὰς σπονδὰς δικαίως γεγράφθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζει",
+     "τὰς",
+     "σπονδὰς",
+     "δικαίως",
+     "γεγράφθαι"
+    ]
+   },
+   {
+    "prompt": "I fear that these men have already been persuaded by the enemy.",
+    "answer": "φοβοῦμαι μὴ οὗτοι ἤδη ὑπὸ τῶν πολεμίων πεπεισμένοι ὦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μὴ",
+     "οὗτοι",
+     "ἤδη",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "πεπεισμένοι",
+     "ὦσιν"
+    ]
+   },
+   {
+    "prompt": "The things announced by the spies have been refuted by the facts.",
+    "answer": "τὰ ὑπὸ τῶν κατασκόπων ἠγγελμένα τοῖς ἔργοις ἐλήλεγκται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ὑπὸ",
+     "τῶν",
+     "κατασκόπων",
+     "ἠγγελμένα",
+     "τοῖς",
+     "ἔργοις",
+     "ἐλήλεγκται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t13",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "We have been persuaded by the general to remain in the camp.",
+    "answer": "ὑπὸ τοῦ στρατηγοῦ πεπείσμεθα ἐν τῷ στρατοπέδῳ μένειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "πεπείσμεθα",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "μένειν"
+    ]
+   },
+   {
+    "prompt": "These things have been announced to the citizens by the herald.",
+    "answer": "ταῦτα τοῖς πολίταις ὑπὸ τοῦ κήρυκος ἤγγελται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "τοῖς",
+     "πολίταις",
+     "ὑπὸ",
+     "τοῦ",
+     "κήρυκος",
+     "ἤγγελται"
+    ]
+   },
+   {
+    "prompt": "The task has been accomplished, and now the enemy are fleeing.",
+    "answer": "τὸ ἔργον πέπρακται, καὶ νῦν οἱ πολέμιοι φεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἔργον",
+     "πέπρακται",
+     "καὶ",
+     "νῦν",
+     "οἱ",
+     "πολέμιοι",
+     "φεύγουσιν"
+    ]
+   },
+   {
+    "prompt": "The truth has been shown to all by these events.",
+    "answer": "ἡ ἀλήθεια πᾶσιν ὑπὸ τούτων τῶν πραγμάτων πέφανται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "πᾶσιν",
+     "ὑπὸ",
+     "τούτων",
+     "τῶν",
+     "πραγμάτων",
+     "πέφανται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t14",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The gates had been left unguarded by the citizens.",
+    "answer": "αἱ πύλαι ἀφύλακτοι ὑπὸ τῶν πολιτῶν λελειμμέναι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "πύλαι",
+     "ἀφύλακτοι",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "λελειμμέναι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "Nothing had been announced to us about the battle.",
+    "answer": "οὐδὲν ἡμῖν περὶ τῆς μάχης ἤγγελτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "ἡμῖν",
+     "περὶ",
+     "τῆς",
+     "μάχης",
+     "ἤγγελτο"
+    ]
+   },
+   {
+    "prompt": "The decree had been written before the ambassadors arrived.",
+    "answer": "τὸ ψήφισμα ἐγέγραπτο πρὶν τοὺς πρέσβεις ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ψήφισμα",
+     "ἐγέγραπτο",
+     "πρὶν",
+     "τοὺς",
+     "πρέσβεις",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "The lying witness had been confuted by the orator.",
+    "answer": "ὁ ψευδὴς μάρτυς ὑπὸ τοῦ ῥήτορος ἐλήλεγκτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ψευδὴς",
+     "μάρτυς",
+     "ὑπὸ",
+     "τοῦ",
+     "ῥήτορος",
+     "ἐλήλεγκτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t15",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The war having been ended, the soldiers rejoiced.",
+    "answer": "τοῦ πολέμου τετελεσμένου, οἱ στρατιῶται ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "τετελεσμένου",
+     "οἱ",
+     "στρατιῶται",
+     "ἔχαιρον"
+    ]
+   },
+   {
+    "prompt": "The plan having been revealed, the citizens feared the enemy.",
+    "answer": "τῆς βουλῆς πεφασμένης, οἱ πολῖται τοὺς πολεμίους ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "βουλῆς",
+     "πεφασμένης",
+     "οἱ",
+     "πολῖται",
+     "τοὺς",
+     "πολεμίους",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "The truce having been accomplished, the cities were at peace.",
+    "answer": "τῶν σπονδῶν πεπραγμένων, αἱ πόλεις ἐν εἰρήνῃ ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "σπονδῶν",
+     "πεπραγμένων",
+     "αἱ",
+     "πόλεις",
+     "ἐν",
+     "εἰρήνῃ",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "The enemy having been persuaded, they laid down their arms.",
+    "answer": "τῶν πολεμίων πεπεισμένων, τὰ ὅπλα κατέθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "πεπεισμένων",
+     "τὰ",
+     "ὅπλα",
+     "κατέθεντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t16",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The things that have been done by the general are worthy of praise.",
+    "answer": "τὰ ὑπὸ τοῦ στρατηγοῦ πεπραγμένα ἐπαίνου ἄξιά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ὑπὸ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "πεπραγμένα",
+     "ἐπαίνου",
+     "ἄξιά",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The things written by the poet delighted the citizens.",
+    "answer": "τὰ ὑπὸ τοῦ ποιητοῦ γεγραμμένα τοὺς πολίτας ἔτερπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ὑπὸ",
+     "τοῦ",
+     "ποιητοῦ",
+     "γεγραμμένα",
+     "τοὺς",
+     "πολίτας",
+     "ἔτερπεν"
+    ]
+   },
+   {
+    "prompt": "The man refuted by the judges fled from the city.",
+    "answer": "ὁ ὑπὸ τῶν δικαστῶν ἐληλεγμένος ἐκ τῆς πόλεως ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ὑπὸ",
+     "τῶν",
+     "δικαστῶν",
+     "ἐληλεγμένος",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "The things announced to the assembly were not true.",
+    "answer": "τὰ τῇ ἐκκλησίᾳ ἠγγελμένα οὐκ ἀληθῆ ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἠγγελμένα",
+     "οὐκ",
+     "ἀληθῆ",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t17",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "He said that everything had been accomplished by the soldiers.",
+    "answer": "ἔφη πάντα ὑπὸ τῶν στρατιωτῶν πεπρᾶχθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "πάντα",
+     "ὑπὸ",
+     "τῶν",
+     "στρατιωτῶν",
+     "πεπρᾶχθαι"
+    ]
+   },
+   {
+    "prompt": "We know that the truth has been shown to the citizens.",
+    "answer": "ἴσμεν τὴν ἀλήθειαν τοῖς πολίταις πεφάνθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσμεν",
+     "τὴν",
+     "ἀλήθειαν",
+     "τοῖς",
+     "πολίταις",
+     "πεφάνθαι"
+    ]
+   },
+   {
+    "prompt": "I think that these letters have been written by the king himself.",
+    "answer": "οἶμαι ταύτας τὰς ἐπιστολὰς ὑπὸ αὐτοῦ τοῦ βασιλέως γεγράφθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "ταύτας",
+     "τὰς",
+     "ἐπιστολὰς",
+     "ὑπὸ",
+     "αὐτοῦ",
+     "τοῦ",
+     "βασιλέως",
+     "γεγράφθαι"
+    ]
+   },
+   {
+    "prompt": "They announced that the war had been ended.",
+    "answer": "ἤγγειλαν τὸν πόλεμον τετελέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤγγειλαν",
+     "τὸν",
+     "πόλεμον",
+     "τετελέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-403-perfect-and-pluperfect-middle-and-t18",
+  "sectionId": "sm-403-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "You have been refuted, and now you are silent.",
+    "answer": "ἐλήλεγξαι, καὶ νῦν σιωπᾷς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλήλεγξαι",
+     "καὶ",
+     "νῦν",
+     "σιωπᾷς"
+    ]
+   },
+   {
+    "prompt": "You have been persuaded by your friends to fight.",
+    "answer": "ὑπὸ τῶν φίλων πέπεισαι μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῶν",
+     "φίλων",
+     "πέπεισαι",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "Let the deed have been accomplished before night.",
+    "answer": "πεπράχθω τὸ ἔργον πρὸ τῆς νυκτός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πεπράχθω",
+     "τὸ",
+     "ἔργον",
+     "πρὸ",
+     "τῆς",
+     "νυκτός"
+    ]
+   },
+   {
+    "prompt": "I fear that the allies have been left behind.",
+    "answer": "δέδοικα μὴ οἱ σύμμαχοι λελειμμένοι ὦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μὴ",
+     "οἱ",
+     "σύμμαχοι",
+     "λελειμμένοι",
+     "ὦσιν"
+    ]
+   }
+  ]
  }
 ]

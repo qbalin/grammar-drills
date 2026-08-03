@@ -1221,5 +1221,152 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t19",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "Let us cross the marsh at dawn, so that the enemy may not see us.",
+    "answer": "διαβῶμεν τὸ ἕλος ἅμα τῇ ἕῳ, ἵνα οἱ πολέμιοι μὴ ἡμᾶς ἴδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαβῶμεν",
+     "τὸ",
+     "ἕλος",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "ἵνα",
+     "οἱ",
+     "πολέμιοι",
+     "μὴ",
+     "ἡμᾶς",
+     "ἴδωσιν"
+    ]
+   },
+   {
+    "prompt": "The sailors row hard, so that they may reach the island before night.",
+    "answer": "οἱ ναῦται σφόδρα ἐλαύνουσιν, ἵνα πρὸ τῆς νυκτὸς εἰς τὴν νῆσον ἀφίκωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "σφόδρα",
+     "ἐλαύνουσιν",
+     "ἵνα",
+     "πρὸ",
+     "τῆς",
+     "νυκτὸς",
+     "εἰς",
+     "τὴν",
+     "νῆσον",
+     "ἀφίκωνται"
+    ]
+   },
+   {
+    "prompt": "I fear that the seer may deceive the king with false hopes.",
+    "answer": "δέδοικα μὴ ὁ μάντις τὸν βασιλέα ψευδέσιν ἐλπίσιν ἐξαπατήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μὴ",
+     "ὁ",
+     "μάντις",
+     "τὸν",
+     "βασιλέα",
+     "ψευδέσιν",
+     "ἐλπίσιν",
+     "ἐξαπατήσῃ"
+    ]
+   },
+   {
+    "prompt": "Are we to trust the messenger, or shall we await the herald?",
+    "answer": "πιστεύωμεν τῷ ἀγγέλῳ, ἢ τὸν κήρυκα ἀναμείνωμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστεύωμεν",
+     "τῷ",
+     "ἀγγέλῳ",
+     "ἢ",
+     "τὸν",
+     "κήρυκα",
+     "ἀναμείνωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-455-tense-suffixes-thematic-vowel-mood-t20",
+  "sectionId": "sm-455-tense-suffixes-thematic-vowel-mood",
+  "questions": [
+   {
+    "prompt": "Would that the young men might cast off their idleness and pursue honor!",
+    "answer": "εἴθε οἱ νεανίαι τὴν ῥᾳθυμίαν ἀποβάλοιεν καὶ τὴν φιλοτιμίαν διώκοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "νεανίαι",
+     "τὴν",
+     "ῥᾳθυμίαν",
+     "ἀποβάλοιεν",
+     "καὶ",
+     "φιλοτιμίαν",
+     "διώκοιεν"
+    ]
+   },
+   {
+    "prompt": "No one could justly blame the general for such a retreat.",
+    "answer": "οὐδεὶς ἂν δικαίως τὸν στρατηγὸν τῆς τοιαύτης ἀναχωρήσεως μέμφοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἂν",
+     "δικαίως",
+     "τὸν",
+     "στρατηγὸν",
+     "τῆς",
+     "τοιαύτης",
+     "ἀναχωρήσεως",
+     "μέμφοιτο"
+    ]
+   },
+   {
+    "prompt": "The generals sent messengers, so that the allies might quickly send help.",
+    "answer": "ἔπεμψαν οἱ στρατηγοὶ ἀγγέλους, ἵνα οἱ σύμμαχοι ταχέως βοήθειαν πέμποιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπεμψαν",
+     "οἱ",
+     "στρατηγοὶ",
+     "ἀγγέλους",
+     "ἵνα",
+     "σύμμαχοι",
+     "ταχέως",
+     "βοήθειαν",
+     "πέμποιεν"
+    ]
+   },
+   {
+    "prompt": "If the general should divide the army, the enemy would easily conquer them.",
+    "answer": "εἰ ὁ στρατηγὸς τὸ στράτευμα διαιροίη, οἱ πολέμιοι ῥᾳδίως ἂν αὐτοὺς νικῷεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "διαιροίη",
+     "οἱ",
+     "πολέμιοι",
+     "ῥᾳδίως",
+     "ἂν",
+     "αὐτοὺς",
+     "νικῷεν"
+    ]
+   }
+  ]
  }
 ]

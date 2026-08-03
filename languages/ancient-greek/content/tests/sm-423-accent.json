@@ -1268,5 +1268,146 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-423-accent-t19",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "Find the road, old man, and lead the strangers into the city.",
+    "answer": "εὑρὲ τὴν ὁδόν, ὦ γέρον, καὶ ἄγε τοὺς ξένους εἰς τὴν πόλιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὑρὲ",
+     "τὴν",
+     "ὁδόν",
+     "ὦ",
+     "γέρον",
+     "καὶ",
+     "ἄγε",
+     "τοὺς",
+     "ξένους",
+     "εἰς",
+     "πόλιν"
+    ]
+   },
+   {
+    "prompt": "See the multitude of the ships, general, and take courage.",
+    "answer": "ἰδὲ τὸ πλῆθος τῶν νεῶν, ὦ στρατηγέ, καὶ θάρσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἰδὲ",
+     "τὸ",
+     "πλῆθος",
+     "τῶν",
+     "νεῶν",
+     "ὦ",
+     "στρατηγέ",
+     "καὶ",
+     "θάρσει"
+    ]
+   },
+   {
+    "prompt": "Recount the whole matter to the citizens, herald, and conceal nothing.",
+    "answer": "κάτειπε πᾶν τὸ πρᾶγμα τοῖς πολίταις, ὦ κῆρυξ, καὶ μηδὲν κρύπτε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κάτειπε",
+     "πᾶν",
+     "τὸ",
+     "πρᾶγμα",
+     "τοῖς",
+     "πολίταις",
+     "ὦ",
+     "κῆρυξ",
+     "καὶ",
+     "μηδὲν",
+     "κρύπτε"
+    ]
+   },
+   {
+    "prompt": "Lay hold of the shield, young man, and ward off the enemy.",
+    "answer": "λαβοῦ τῆς ἀσπίδος, ὦ νεανία, καὶ ἀμύνου τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λαβοῦ",
+     "τῆς",
+     "ἀσπίδος",
+     "ὦ",
+     "νεανία",
+     "καὶ",
+     "ἀμύνου",
+     "τοὺς",
+     "πολεμίους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-423-accent-t20",
+  "sectionId": "sm-423-accent",
+  "questions": [
+   {
+    "prompt": "It is noble to die bravely rather than to flee shamefully.",
+    "answer": "καλόν ἐστιν ἀνδρείως ἀποθανεῖν μᾶλλον ἢ αἰσχρῶς φυγεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλόν",
+     "ἐστιν",
+     "ἀνδρείως",
+     "ἀποθανεῖν",
+     "μᾶλλον",
+     "ἢ",
+     "αἰσχρῶς",
+     "φυγεῖν"
+    ]
+   },
+   {
+    "prompt": "The old man wished to leave his great wealth to his sons.",
+    "answer": "ὁ γέρων ἐβούλετο τὸν πολὺν πλοῦτον τοῖς υἱέσι καταλιπεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἐβούλετο",
+     "τὸν",
+     "πολὺν",
+     "πλοῦτον",
+     "τοῖς",
+     "υἱέσι",
+     "καταλιπεῖν"
+    ]
+   },
+   {
+    "prompt": "Put in the offerings, priest, and do not betray the gods.",
+    "answer": "ἐνθοῦ τὰ ἱερά, ὦ ἱερεῦ, καὶ μὴ προδοῦ τοὺς θεούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνθοῦ",
+     "τὰ",
+     "ἱερά",
+     "ὦ",
+     "ἱερεῦ",
+     "καὶ",
+     "μὴ",
+     "προδοῦ",
+     "τοὺς",
+     "θεούς"
+    ]
+   },
+   {
+    "prompt": "It is difficult to be set free from so many dangers.",
+    "answer": "χαλεπόν ἐστιν ἐκ τοσούτων κινδύνων ἀπολυθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστιν",
+     "ἐκ",
+     "τοσούτων",
+     "κινδύνων",
+     "ἀπολυθῆναι"
+    ]
+   }
+  ]
  }
 ]

@@ -374,5 +374,391 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-526-fifth-or-inceptive-class-verbs-in-sko-t7",
+  "sectionId": "sm-526-fifth-or-inceptive-class-verbs-in-sko",
+  "questions": [
+   {
+    "prompt": "The wise man knows how much he does not know.",
+    "answer": "ὁ σοφὸς γιγνώσκει ὅσα οὐ γιγνώσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "γιγνώσκει",
+     "ὅσα",
+     "οὐ"
+    ]
+   },
+   {
+    "prompt": "We found the boy sitting alone in the marketplace.",
+    "answer": "τὸν παῖδα ηὕρομεν μόνον ἐν τῇ ἀγορᾷ καθήμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "παῖδα",
+     "ηὕρομεν",
+     "μόνον",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "καθήμενον"
+    ]
+   },
+   {
+    "prompt": "Having learned these things, the young man became more temperate.",
+    "answer": "ταῦτα γνοὺς ὁ νεανίας σωφρονέστερος ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "γνοὺς",
+     "ὁ",
+     "νεανίας",
+     "σωφρονέστερος",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "It is not easy to find friends in misfortune.",
+    "answer": "οὐ ῥᾴδιόν ἐστιν ἐν ταῖς συμφοραῖς φίλους εὑρίσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "ῥᾴδιόν",
+     "ἐστιν",
+     "ἐν",
+     "ταῖς",
+     "συμφοραῖς",
+     "φίλους",
+     "εὑρίσκειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-526-fifth-or-inceptive-class-verbs-in-sko-t8",
+  "sectionId": "sm-526-fifth-or-inceptive-class-verbs-in-sko",
+  "questions": [
+   {
+    "prompt": "The philosopher taught his students to despise wealth.",
+    "answer": "ὁ φιλόσοφος τοὺς μαθητὰς ἐδίδασκε τοῦ πλούτου καταφρονεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τοὺς",
+     "μαθητὰς",
+     "ἐδίδασκε",
+     "τοῦ",
+     "πλούτου",
+     "καταφρονεῖν"
+    ]
+   },
+   {
+    "prompt": "Many of the brave men died fighting for the walls.",
+    "answer": "πολλοὶ τῶν ἀνδρείων ὑπὲρ τῶν τειχῶν μαχόμενοι ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὶ",
+     "τῶν",
+     "ἀνδρείων",
+     "ὑπὲρ",
+     "τειχῶν",
+     "μαχόμενοι",
+     "ἀπέθανον"
+    ]
+   },
+   {
+    "prompt": "Who will teach us the truth about the gods?",
+    "answer": "τίς ἡμᾶς διδάξει τὴν ἀλήθειαν τὴν περὶ τῶν θεῶν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἡμᾶς",
+     "διδάξει",
+     "τὴν",
+     "ἀλήθειαν",
+     "περὶ",
+     "τῶν",
+     "θεῶν"
+    ]
+   },
+   {
+    "prompt": "The tyrant feared lest the citizens should die willingly for freedom.",
+    "answer": "ὁ τύραννος ἐφοβεῖτο μὴ οἱ πολῖται ὑπὲρ τῆς ἐλευθερίας ἑκόντες ἀποθνῄσκοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "ἐφοβεῖτο",
+     "μὴ",
+     "οἱ",
+     "πολῖται",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἑκόντες",
+     "ἀποθνῄσκοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-526-fifth-or-inceptive-class-verbs-in-sko-t9",
+  "sectionId": "sm-526-fifth-or-inceptive-class-verbs-in-sko",
+  "questions": [
+   {
+    "prompt": "Remember the oaths which you swore to the allies.",
+    "answer": "μέμνησο τῶν ὅρκων οὓς τοῖς συμμάχοις ὤμοσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνησο",
+     "τῶν",
+     "ὅρκων",
+     "οὓς",
+     "τοῖς",
+     "συμμάχοις",
+     "ὤμοσας"
+    ]
+   },
+   {
+    "prompt": "This speech did not please the assembly.",
+    "answer": "οὗτος ὁ λόγος τῇ ἐκκλησίᾳ οὐκ ἤρεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "λόγος",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "οὐκ",
+     "ἤρεσεν"
+    ]
+   },
+   {
+    "prompt": "The old men remembered the war against the Persians.",
+    "answer": "οἱ γέροντες ἐμέμνηντο τοῦ πρὸς τοὺς Πέρσας πολέμου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "ἐμέμνηντο",
+     "τοῦ",
+     "πρὸς",
+     "τοὺς",
+     "Πέρσας",
+     "πολέμου"
+    ]
+   },
+   {
+    "prompt": "If the plan pleases you, let us carry it out at once.",
+    "answer": "εἰ σοι τὸ βούλευμα ἀρέσκει, εὐθὺς αὐτὸ πράττωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοι",
+     "τὸ",
+     "βούλευμα",
+     "ἀρέσκει",
+     "εὐθὺς",
+     "αὐτὸ",
+     "πράττωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-526-fifth-or-inceptive-class-verbs-in-sko-t10",
+  "sectionId": "sm-526-fifth-or-inceptive-class-verbs-in-sko",
+  "questions": [
+   {
+    "prompt": "The just man, though growing old, does not cease from toil.",
+    "answer": "ὁ δίκαιος καίπερ γηράσκων οὐ παύεται τοῦ πόνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δίκαιος",
+     "καίπερ",
+     "γηράσκων",
+     "οὐ",
+     "παύεται",
+     "τοῦ",
+     "πόνου"
+    ]
+   },
+   {
+    "prompt": "The city was captured, and its inhabitants were sold into slavery.",
+    "answer": "ἡ πόλις ἑάλω, καὶ οἱ ἐνοικοῦντες εἰς δουλείαν ἐπράθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ἑάλω",
+     "καὶ",
+     "οἱ",
+     "ἐνοικοῦντες",
+     "εἰς",
+     "δουλείαν",
+     "ἐπράθησαν"
+    ]
+   },
+   {
+    "prompt": "They spent all their money on the fortification of the harbor.",
+    "answer": "πάντα τὰ χρήματα εἰς τὸν τοῦ λιμένος τειχισμὸν ἀνήλωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "τὰ",
+     "χρήματα",
+     "εἰς",
+     "τὸν",
+     "τοῦ",
+     "λιμένος",
+     "τειχισμὸν",
+     "ἀνήλωσαν"
+    ]
+   },
+   {
+    "prompt": "We grow old quickly, but we learn wisdom slowly.",
+    "answer": "ταχέως μὲν γηράσκομεν, βραδέως δὲ σοφίαν μανθάνομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταχέως",
+     "μὲν",
+     "γηράσκομεν",
+     "βραδέως",
+     "δὲ",
+     "σοφίαν",
+     "μανθάνομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-526-fifth-or-inceptive-class-verbs-in-sko-t11",
+  "sectionId": "sm-526-fifth-or-inceptive-class-verbs-in-sko",
+  "questions": [
+   {
+    "prompt": "The soldiers suffered terribly from cold and hunger.",
+    "answer": "οἱ στρατιῶται δεινὰ ἔπασχον ὑπὸ ψύχους καὶ λιμοῦ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "δεινὰ",
+     "ἔπασχον",
+     "ὑπὸ",
+     "ψύχους",
+     "καὶ",
+     "λιμοῦ"
+    ]
+   },
+   {
+    "prompt": "Wounded in the thigh, the horseman fell from his horse.",
+    "answer": "τρωθεὶς τὸν μηρὸν ὁ ἱππεὺς ἀπὸ τοῦ ἵππου ἔπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τρωθεὶς",
+     "τὸν",
+     "μηρὸν",
+     "ὁ",
+     "ἱππεὺς",
+     "ἀπὸ",
+     "τοῦ",
+     "ἵππου",
+     "ἔπεσεν"
+    ]
+   },
+   {
+    "prompt": "Whoever does evil will suffer worse things in turn.",
+    "answer": "ὅστις ἂν κακὰ ποιῇ, χείρω πείσεται αὖθις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἂν",
+     "κακὰ",
+     "ποιῇ",
+     "χείρω",
+     "πείσεται",
+     "αὖθις"
+    ]
+   },
+   {
+    "prompt": "The starving men had even eaten the pack animals.",
+    "answer": "οἱ πεινῶντες καὶ τὰ ὑποζύγια βεβρώκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πεινῶντες",
+     "καὶ",
+     "τὰ",
+     "ὑποζύγια",
+     "βεβρώκασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-526-fifth-or-inceptive-class-verbs-in-sko-t12",
+  "sectionId": "sm-526-fifth-or-inceptive-class-verbs-in-sko",
+  "questions": [
+   {
+    "prompt": "The shepherd pastures his flocks on the mountain.",
+    "answer": "ὁ ποιμὴν ἐν τῷ ὄρει τὰ ποίμνια βόσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιμὴν",
+     "ἐν",
+     "τῷ",
+     "ὄρει",
+     "τὰ",
+     "ποίμνια",
+     "βόσκει"
+    ]
+   },
+   {
+    "prompt": "Wine intoxicates even the wisest of men.",
+    "answer": "ὁ οἶνος καὶ τοὺς σοφωτάτους μεθύσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "οἶνος",
+     "καὶ",
+     "τοὺς",
+     "σοφωτάτους",
+     "μεθύσκει"
+    ]
+   },
+   {
+    "prompt": "The slave, having stolen money, ran away by night.",
+    "answer": "ὁ δοῦλος ἀργύριον κλέψας νυκτὸς ἀπέδρα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "ἀργύριον",
+     "κλέψας",
+     "νυκτὸς",
+     "ἀπέδρα"
+    ]
+   },
+   {
+    "prompt": "War deprives cities of their finest young men.",
+    "answer": "ὁ πόλεμος τὰς πόλεις τῶν ἀρίστων νεανιῶν στερίσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πόλεμος",
+     "τὰς",
+     "πόλεις",
+     "τῶν",
+     "ἀρίστων",
+     "νεανιῶν",
+     "στερίσκει"
+    ]
+   }
+  ]
  }
 ]
