@@ -70,6 +70,7 @@ export class SyncingStorage implements StorageAdapter {
   private timer: ReturnType<typeof setTimeout> | undefined;
   private queued: Progress | null = null;
   private inFlight = false;
+  private sealed = false;
   private state: SyncState = { kind: "off" };
   private readonly listeners = new Set<(s: SyncState) => void>();
 
@@ -132,6 +133,7 @@ export class SyncingStorage implements StorageAdapter {
   }
 
   async save(progress: Progress): Promise<void> {
+    if (this.sealed) return;
     this.local.write(progress);
     if (!this.remote) return;
     this.queued = progress;
@@ -147,11 +149,13 @@ export class SyncingStorage implements StorageAdapter {
    * nothing to another one, so it must not become a commit per keystroke.
    */
   saveLocal(progress: Progress): void {
+    if (this.sealed) return;
     this.local.write(progress);
   }
 
   /** Write the local copy and push it now, without waiting for the debounce. */
   async saveNow(progress: Progress): Promise<void> {
+    if (this.sealed) return;
     this.local.write(progress);
     this.queued = progress;
     clearTimeout(this.timer);
@@ -167,8 +171,29 @@ export class SyncingStorage implements StorageAdapter {
     this.local.clear();
   }
 
+  /**
+   * Stop writing the device's copy, for good.
+   *
+   * Erasing progress and adopting another device's both end in a reload, and
+   * `location.reload()` does not take the page away on the spot: the unload it
+   * schedules fires `visibilitychange` and `pagehide` first, and the draft the
+   * app keeps on those writes the in-memory session straight back over what was
+   * just erased or replaced. The erase then survives exactly until the reload
+   * that was supposed to complete it. Sealing after the intended write is what
+   * makes it stick.
+   *
+   * The queued push goes with it: what is on its way up is the progress being
+   * discarded, and landing it on GitHub would hand it back on the next pull.
+   */
+  seal(): void {
+    this.sealed = true;
+    clearTimeout(this.timer);
+    this.queued = null;
+  }
+
   /** Push whatever is queued. Safe to call at any time. */
   async flush(): Promise<void> {
+    if (this.sealed) return;
     if (!this.remote || !this.queued || this.inFlight) return;
     if (!navigator.onLine) {
       this.setState({ kind: "offline" });

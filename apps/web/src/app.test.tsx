@@ -1582,6 +1582,125 @@ describe("progress", () => {
 });
 
 /**
+ * Throwing the device's copy away, and taking another one on.
+ *
+ * Both end the same way — write, then `location.reload()` — and the reload is
+ * not the instant thing it reads as. The page is still there for one more turn
+ * of the loop, long enough for the draft kept on `pagehide` to write the
+ * in-memory session back over what was just written. The erase survived until
+ * the reload that was meant to complete it, and the pull was replaced by the
+ * page it replaced.
+ */
+describe("erasing and replacing what is on the device", () => {
+  /** jsdom cannot navigate, and the point here is what happens before it would. */
+  const stubReload = () => {
+    const reload = vi.fn();
+    vi.stubGlobal("location", { ...window.location, reload });
+    return reload;
+  };
+
+  /** Leave the app on the way out, the way a browser does before unloading. */
+  const leave = () => {
+    fireEvent(window, new Event("pagehide"));
+    fireEvent(document, new Event("visibilitychange"));
+  };
+
+  it("erases progress for good, not just until the page goes away", async () => {
+    const user = userEvent.setup();
+    const reload = stubReload();
+    mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(new SyncingStorage().read()).not.toBeNull();
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    // Erasing asks twice, because there is no undo behind it.
+    await user.click(screen.getByRole("button", { name: /Erase progress/ }));
+    await user.click(screen.getByRole("button", { name: /Tap again to erase/ }));
+    expect(reload).toHaveBeenCalled();
+
+    // The reload the button asked for, and everything the page says on its way
+    // out. None of it may put the progress back.
+    leave();
+    expect(new SyncingStorage().read()).toBeNull();
+  });
+
+  it("keeps what it pulled from GitHub when the page it replaced goes away", async () => {
+    const user = userEvent.setup();
+    stubReload();
+
+    // The other device's copy, as the contents API hands it over.
+    const remote: Progress = {
+      ...new Session(new Content(fixture, testProfile)).progress(),
+      updatedAt: "2026-07-04T00:00:00.000Z",
+      topicMastery: { decl2: 5 },
+    };
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({
+        ok: true,
+        status: 200,
+        json: async () => ({ sha: "abc", content: btoa(JSON.stringify(remote)) }),
+      })),
+    );
+
+    const { storage } = mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await act(async () => {
+      storage.configure({
+        token: "t",
+        owner: "someone",
+        repo: "progress",
+        path: "latin.json",
+        branch: "main",
+      });
+    });
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await act(async () => {
+      await user.click(screen.getByRole("button", { name: /Pull the copy/ }));
+    });
+
+    leave();
+    const kept = new SyncingStorage().read();
+    expect(kept?.updatedAt).toBe("2026-07-04T00:00:00.000Z");
+    expect(kept?.topicMastery).toEqual({ decl2: 5 });
+  });
+
+  it("says so when the pull cannot reach the repo, rather than nothing at all", async () => {
+    const user = userEvent.setup();
+    stubReload();
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({ ok: false, status: 401, text: async () => "bad token" })),
+    );
+    const { storage } = mount();
+    await skipPlacement(user);
+    await act(async () => {
+      storage.configure({
+        token: "t",
+        owner: "someone",
+        repo: "progress",
+        path: "latin.json",
+        branch: "main",
+      });
+    });
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await act(async () => {
+      await user.click(screen.getByRole("button", { name: /Pull the copy/ }));
+    });
+
+    expect(document.querySelector(".toast")?.textContent).toContain(
+      "Could not pull",
+    );
+  });
+});
+
+/**
  * The words behind the question.
  *
  * The sentences are drawn from frequency ranks 400–6000, so a beginner meets
