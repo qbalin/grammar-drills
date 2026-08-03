@@ -1,0 +1,796 @@
+[
+ {
+  "id": "sm-3004-anacoluthon-t1",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "This man, who has suffered so much, no one pities him.",
+    "answer": "Οὗτος ὁ ἀνήρ, ὃς τοσαῦτα πέπονθεν, οὐδεὶς αὐτὸν ἐλεεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "ἀνήρ",
+     "ὅς",
+     "τοσαῦτα",
+     "πέπονθεν",
+     "οὐδείς",
+     "αὐτόν",
+     "ἐλεεῖ"
+    ]
+   },
+   {
+    "prompt": "The soldiers who fought so bravely, the general gave them gifts.",
+    "answer": "Οἱ στρατιῶται οἱ οὕτως ἀνδρείως μαχεσάμενοι, ὁ στρατηγὸς αὐτοῖς δῶρα ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "οὕτως",
+     "ἀνδρείως",
+     "μαχεσάμενοι",
+     "ὁ",
+     "στρατηγός",
+     "αὐτοῖς",
+     "δῶρα",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "As for the prisoners, since they have done no wrong, release them.",
+    "answer": "Οἱ αἰχμάλωτοι, ἐπεὶ οὐδὲν ἠδικήκασιν, ἄφετε αὐτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ἐπεί",
+     "οὐδέν",
+     "ἠδικήκασιν",
+     "ἄφετε",
+     "αὐτούς"
+    ]
+   },
+   {
+    "prompt": "The woman whose son died in the battle, the whole city honors her.",
+    "answer": "Ἡ γυνὴ ἧς ὁ υἱὸς ἐν τῇ μάχῃ ἀπέθανεν, πᾶσα ἡ πόλις αὐτὴν τιμᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "ἧς",
+     "ὁ",
+     "υἱός",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀπέθανεν",
+     "πᾶσα",
+     "πόλις",
+     "αὐτήν",
+     "τιμᾷ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t2",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "Many of the citizens they drove into exile, many they killed unjustly, many they disenfranchised.",
+    "answer": "Πολλοὺς μὲν τῶν πολιτῶν ἐξήλασαν, πολλοὺς δὲ ἀδίκως ἀπέκτειναν, πολλοὺς δὲ ἠτίμωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλούς",
+     "μέν",
+     "τῶν",
+     "πολιτῶν",
+     "ἐξήλασαν",
+     "δέ",
+     "ἀδίκως",
+     "ἀπέκτειναν",
+     "ἠτίμωσαν"
+    ]
+   },
+   {
+    "prompt": "This man persuaded the young, this man deceived the old, this man destroyed the city.",
+    "answer": "Οὗτος τοὺς νέους ἔπεισεν, οὗτος τοὺς γέροντας ἐξηπάτησεν, οὗτος τὴν πόλιν διέφθειρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "τούς",
+     "νέους",
+     "ἔπεισεν",
+     "γέροντας",
+     "ἐξηπάτησεν",
+     "τήν",
+     "πόλιν",
+     "διέφθειρεν"
+    ]
+   },
+   {
+    "prompt": "For the fatherland we fight, for the fatherland we die, for the fatherland we endure all things.",
+    "answer": "Ὑπὲρ τῆς πατρίδος μαχόμεθα, ὑπὲρ τῆς πατρίδος ἀποθνῄσκομεν, ὑπὲρ τῆς πατρίδος πάντα ὑπομένομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχόμεθα",
+     "ἀποθνῄσκομεν",
+     "πάντα",
+     "ὑπομένομεν"
+    ]
+   },
+   {
+    "prompt": "Now is the time to help, now to take courage, now to show ourselves brave men.",
+    "answer": "Νῦν καιρός ἐστι βοηθεῖν, νῦν θαρρεῖν, νῦν ἀγαθοὺς ἡμᾶς αὐτοὺς παρέχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "καιρός",
+     "ἐστι",
+     "βοηθεῖν",
+     "θαρρεῖν",
+     "ἀγαθούς",
+     "ἡμᾶς",
+     "αὐτούς",
+     "παρέχειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t3",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "By the same things through which the city became weak, we hope it will become strong.",
+    "answer": "Διὰ ὧν ἡ πόλις ἀσθενὴς ἐγένετο, διὰ τούτων αὐτὴν ἰσχυρὰν ἐλπίζομεν γενήσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διά",
+     "ὧν",
+     "ἡ",
+     "πόλις",
+     "ἀσθενής",
+     "ἐγένετο",
+     "τούτων",
+     "αὐτήν",
+     "ἰσχυράν",
+     "ἐλπίζομεν",
+     "γενήσεσθαι"
+    ]
+   },
+   {
+    "prompt": "The wise man takes joy in few things, but the fool in many.",
+    "answer": "Ὁ μὲν σοφὸς ὀλίγοις χαίρει, ὁ δὲ ἄφρων πολλοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μέν",
+     "σοφός",
+     "ὀλίγοις",
+     "χαίρει",
+     "δέ",
+     "ἄφρων",
+     "πολλοῖς"
+    ]
+   },
+   {
+    "prompt": "In war he was cowardly, but in peace bold.",
+    "answer": "Ἐν μὲν τῷ πολέμῳ δειλὸς ἦν, ἐν δὲ τῇ εἰρήνῃ θρασύς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "μέν",
+     "τῷ",
+     "πολέμῳ",
+     "δειλός",
+     "ἦν",
+     "δέ",
+     "τῇ",
+     "εἰρήνῃ",
+     "θρασύς"
+    ]
+   },
+   {
+    "prompt": "The free man speaks the truth, but the slave flatters his master.",
+    "answer": "Ὁ μὲν ἐλεύθερος τὰ ἀληθῆ λέγει, ὁ δὲ δοῦλος τὸν δεσπότην κολακεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μέν",
+     "ἐλεύθερος",
+     "τά",
+     "ἀληθῆ",
+     "λέγει",
+     "δέ",
+     "δοῦλος",
+     "τόν",
+     "δεσπότην",
+     "κολακεύει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t4",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "Thebes, Thebes, a neighboring city, has been swept away.",
+    "answer": "Θῆβαι, Θῆβαι, πόλις ἀστυγείτων, ἀνήρπασται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Θῆβαι",
+     "πόλις",
+     "ἀστυγείτων",
+     "ἀνήρπασται"
+    ]
+   },
+   {
+    "prompt": "He longs for blood, and blood he shall obtain.",
+    "answer": "Αἵματος ὀρέγεται, καὶ αἵματος τεύξεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἵματος",
+     "ὀρέγεται",
+     "καί",
+     "τεύξεται"
+    ]
+   },
+   {
+    "prompt": "War, war the citizens demand, not peace.",
+    "answer": "Πόλεμον, πόλεμον οἱ πολῖται αἰτοῦσιν, οὐκ εἰρήνην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόλεμον",
+     "οἱ",
+     "πολῖται",
+     "αἰτοῦσιν",
+     "οὐκ",
+     "εἰρήνην"
+    ]
+   },
+   {
+    "prompt": "Fear seized the army—fear that no one could master.",
+    "answer": "Φόβος τὸν στρατὸν ἔλαβεν, φόβος οὗ οὐδεὶς κρατῆσαι ἐδύνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φόβος",
+     "τόν",
+     "στρατόν",
+     "ἔλαβεν",
+     "οὗ",
+     "οὐδείς",
+     "κρατῆσαι",
+     "ἐδύνατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t5",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "I am at a loss what to mention first.",
+    "answer": "Ἀπορῶ τί πρῶτον εἴπω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπορῶ",
+     "τί",
+     "πρῶτον",
+     "εἴπω"
+    ]
+   },
+   {
+    "prompt": "I do not know whether I should stay or flee.",
+    "answer": "Οὐκ οἶδα πότερον μένω ἢ φύγω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "οἶδα",
+     "πότερον",
+     "μένω",
+     "ἤ",
+     "φύγω"
+    ]
+   },
+   {
+    "prompt": "What am I to say? Where shall I begin?",
+    "answer": "Τί εἴπω; πόθεν ἄρξωμαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "εἴπω",
+     "πόθεν",
+     "ἄρξωμαι"
+    ]
+   },
+   {
+    "prompt": "I am uncertain whether to praise you or blame you.",
+    "answer": "Ἀπορῶ πότερον ἐπαινέσω σε ἢ ψέξω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπορῶ",
+     "πότερον",
+     "ἐπαινέσω",
+     "σε",
+     "ἤ",
+     "ψέξω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t6",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "As for honors, some he will willingly share in, others he will shun.",
+    "answer": "Τὰς τιμάς, τῶν μὲν ἑκὼν μεθέξει, τὰς δὲ φεύξεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάς",
+     "τιμάς",
+     "τῶν",
+     "μέν",
+     "ἑκών",
+     "μεθέξει",
+     "δέ",
+     "φεύξεται"
+    ]
+   },
+   {
+    "prompt": "As for the pleasures, some he pursues, others he avoids.",
+    "answer": "Τὰς ἡδονάς, τὰς μὲν διώκει, τὰς δὲ φεύγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάς",
+     "ἡδονάς",
+     "μέν",
+     "διώκει",
+     "δέ",
+     "φεύγει"
+    ]
+   },
+   {
+    "prompt": "They came, they saw, they conquered.",
+    "answer": "Ἦλθον, εἶδον, ἐνίκησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦλθον",
+     "εἶδον",
+     "ἐνίκησαν"
+    ]
+   },
+   {
+    "prompt": "The multitude fled, throwing away their weapons.",
+    "answer": "Τὸ πλῆθος ἔφυγον, τὰ ὅπλα ῥίψαντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "πλῆθος",
+     "ἔφυγον",
+     "τά",
+     "ὅπλα",
+     "ῥίψαντες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t7",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "The general, since he has fought many battles, honor him greatly.",
+    "answer": "Ὁ στρατηγός, ἐπεὶ πολλὰς μάχας μεμάχηται, τῑμᾶτε αὐτὸν σφόδρα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγός",
+     "ἐπεί",
+     "πολλάς",
+     "μάχας",
+     "μεμάχηται",
+     "τῑμᾶτε",
+     "αὐτόν",
+     "σφόδρα"
+    ]
+   },
+   {
+    "prompt": "This woman, seeing that she nursed us, we all revere her.",
+    "answer": "Ἥδε ἡ γυνή, ἐπείπερ ἡμᾶς ἔθρεψε, πάντες αὐτὴν σεβόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἥδε",
+     "ἡ",
+     "γυνή",
+     "ἐπείπερ",
+     "ἡμᾶς",
+     "ἔθρεψε",
+     "πάντες",
+     "αὐτήν",
+     "σεβόμεθα"
+    ]
+   },
+   {
+    "prompt": "The soldiers who fled from the battle, the king punished them severely.",
+    "answer": "Οἱ στρατιῶται οἱ ἐκ τῆς μάχης φυγόντες, ὁ βασιλεὺς αὐτοὺς χαλεπῶς ἐκόλασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "οἱ",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φυγόντες",
+     "ὁ",
+     "βασιλεύς",
+     "αὐτούς",
+     "χαλεπῶς",
+     "ἐκόλασεν"
+    ]
+   },
+   {
+    "prompt": "The stranger, since he has arrived from a friendly land, let us receive him kindly.",
+    "answer": "Ὁ ξένος, ἐπεὶ ἐκ φιλίας χώρας ἀφῖκται, δεχώμεθα αὐτὸν φιλοφρόνως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ξένος",
+     "ἐπεί",
+     "ἐκ",
+     "φιλίας",
+     "χώρας",
+     "ἀφῖκται",
+     "δεχώμεθα",
+     "αὐτόν",
+     "φιλοφρόνως"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t8",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "As for wealth, those who possess it are not always happy.",
+    "answer": "Πλοῦτον, οἱ ἔχοντες αὐτὸν οὐκ ἀεὶ εὐδαίμονες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πλοῦτον",
+     "οἱ",
+     "ἔχοντες",
+     "αὐτόν",
+     "οὐκ",
+     "ἀεί",
+     "εὐδαίμονες"
+    ]
+   },
+   {
+    "prompt": "As regards the prisoners, it is unclear whether the general will release them.",
+    "answer": "Τοὺς αἰχμαλώτους, ἄδηλον εἰ ὁ στρατηγὸς αὐτοὺς λύσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τούς",
+     "αἰχμαλώτους",
+     "ἄδηλον",
+     "εἰ",
+     "ὁ",
+     "στρατηγός",
+     "αὐτούς",
+     "λύσει"
+    ]
+   },
+   {
+    "prompt": "As for honors, the wise man pursues those which make him better.",
+    "answer": "Τὰς τιμάς, ὁ σοφὸς διώκει ἐκείνας αἳ βελτίω αὐτὸν ποιοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τάς",
+     "τιμάς",
+     "ὁ",
+     "σοφός",
+     "διώκει",
+     "ἐκείνας",
+     "αἵ",
+     "βελτίω",
+     "αὐτόν",
+     "ποιοῦσιν"
+    ]
+   },
+   {
+    "prompt": "As regards the allies, no one knows whether they will help us.",
+    "answer": "Τοὺς συμμάχους, οὐδεὶς οἶδεν εἰ ἡμῖν βοηθήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τούς",
+     "συμμάχους",
+     "οὐδείς",
+     "οἶδεν",
+     "εἰ",
+     "ἡμῖν",
+     "βοηθήσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t9",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "Many of the enemy they killed, many they took alive, many they routed.",
+    "answer": "Πολλοὺς μὲν τῶν πολεμίων ἀπέκτειναν, πολλοὺς δὲ ἐζώγρησαν, πολλοὺς δὲ ἐτρέψαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πολλούς",
+     "μέν",
+     "τῶν",
+     "πολεμίων",
+     "ἀπέκτειναν",
+     "δέ",
+     "ἐζώγρησαν",
+     "ἐτρέψαντο"
+    ]
+   },
+   {
+    "prompt": "For you I fought, for you I suffered, for you I am now willing to die.",
+    "answer": "Ὑπὲρ ὑμῶν ἐμαχεσάμην, ὑπὲρ ὑμῶν ἔπαθον, ὑπὲρ ὑμῶν νῦν ἀποθνῄσκειν ἐθέλω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὑπέρ",
+     "ὑμῶν",
+     "ἐμαχεσάμην",
+     "ἔπαθον",
+     "νῦν",
+     "ἀποθνῄσκειν",
+     "ἐθέλω"
+    ]
+   },
+   {
+    "prompt": "Great is the city, great is its power, great is the enemies' fear.",
+    "answer": "Μεγάλη ἡ πόλις, μεγάλη ἡ δύναμις, μέγας ὁ τῶν πολεμίων φόβος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μεγάλη",
+     "ἡ",
+     "πόλις",
+     "δύναμις",
+     "μέγας",
+     "ὁ",
+     "τῶν",
+     "πολεμίων",
+     "φόβος"
+    ]
+   },
+   {
+    "prompt": "You wronged the gods, you wronged your parents, you wronged the whole city.",
+    "answer": "Ἠδίκησας τοὺς θεούς, ἠδίκησας τοὺς γονέας, ἠδίκησας τὴν πόλιν ὅλην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἠδίκησας",
+     "τούς",
+     "θεούς",
+     "γονέας",
+     "τήν",
+     "πόλιν",
+     "ὅλην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t10",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "The wise man is poor in money, but rich in virtue.",
+    "answer": "Ὁ σοφὸς χρημάτων μὲν πένης ἐστίν, ἀρετῆς δὲ πλούσιος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "σοφός",
+     "χρημάτων",
+     "μέν",
+     "πένης",
+     "ἐστίν",
+     "ἀρετῆς",
+     "δέ",
+     "πλούσιος"
+    ]
+   },
+   {
+    "prompt": "In peace the young bury the old, but in war the old bury the young.",
+    "answer": "Ἐν μὲν εἰρήνῃ οἱ νέοι τοὺς γέροντας θάπτουσιν, ἐν δὲ πολέμῳ οἱ γέροντες τοὺς νέους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐν",
+     "μέν",
+     "εἰρήνῃ",
+     "οἱ",
+     "νέοι",
+     "τούς",
+     "γέροντας",
+     "θάπτουσιν",
+     "δέ",
+     "πολέμῳ",
+     "γέροντες",
+     "νέους"
+    ]
+   },
+   {
+    "prompt": "Small in body, but great in soul, was that man.",
+    "answer": "Μικρὸς μὲν τὸ σῶμα, μέγας δὲ τὴν ψυχήν, ἦν ἐκεῖνος ὁ ἀνήρ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μικρός",
+     "μέν",
+     "τό",
+     "σῶμα",
+     "μέγας",
+     "δέ",
+     "τήν",
+     "ψυχήν",
+     "ἦν",
+     "ἐκεῖνος",
+     "ὁ",
+     "ἀνήρ"
+    ]
+   },
+   {
+    "prompt": "The base pursue pleasures, but the noble pursue toils.",
+    "answer": "Οἱ μὲν κακοὶ τὰς ἡδονὰς διώκουσιν, οἱ δὲ ἀγαθοὶ τοὺς πόνους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "μέν",
+     "κακοί",
+     "τάς",
+     "ἡδονάς",
+     "διώκουσιν",
+     "δέ",
+     "ἀγαθοί",
+     "τούς",
+     "πόνους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t11",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "I do not know whether I should praise your courage or lament your folly.",
+    "answer": "Οὐκ οἶδα πότερον τὴν ἀνδρείαν ὑμῶν ἐπαινέσω ἢ τὴν ἄνοιαν ὀλοφύρωμαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὐκ",
+     "οἶδα",
+     "πότερον",
+     "τήν",
+     "ἀνδρείαν",
+     "ὑμῶν",
+     "ἐπαινέσω",
+     "ἤ",
+     "ἄνοιαν",
+     "ὀλοφύρωμαι"
+    ]
+   },
+   {
+    "prompt": "What shall I say first, or where shall I begin?",
+    "answer": "Τί πρῶτον εἴπω, ἢ πόθεν ἄρξωμαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τί",
+     "πρῶτον",
+     "εἴπω",
+     "ἤ",
+     "πόθεν",
+     "ἄρξωμαι"
+    ]
+   },
+   {
+    "prompt": "I am at a loss whether to stay in the city or to flee to the mountains.",
+    "answer": "Ἀπορῶ πότερον ἐν τῇ πόλει μένω ἢ εἰς τὰ ὄρη φεύγω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀπορῶ",
+     "πότερον",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "μένω",
+     "ἤ",
+     "εἰς",
+     "τά",
+     "ὄρη",
+     "φεύγω"
+    ]
+   },
+   {
+    "prompt": "Whither shall I turn? To whom shall I entrust my children?",
+    "answer": "Ποῖ τράπωμαι; τίνι τοὺς παῖδας ἐπιτρέψω;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ποῖ",
+     "τράπωμαι",
+     "τίνι",
+     "τούς",
+     "παῖδας",
+     "ἐπιτρέψω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3004-anacoluthon-t12",
+  "sectionId": "sm-3004-anacoluthon",
+  "questions": [
+   {
+    "prompt": "Athens, Athens, mother of wisdom, why have you perished?",
+    "answer": "Αἱ Ἀθῆναι, αἱ Ἀθῆναι, μήτηρ σοφίας, διὰ τί ἀπολώλατε;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Αἱ",
+     "Ἀθῆναι",
+     "μήτηρ",
+     "σοφίας",
+     "διά",
+     "τί",
+     "ἀπολώλατε"
+    ]
+   },
+   {
+    "prompt": "The crowd, having heard this, they fled in fear.",
+    "answer": "Τὸ πλῆθος, ταῦτα ἀκούσαντες, ἔφυγον ὑπὸ φόβου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τό",
+     "πλῆθος",
+     "ταῦτα",
+     "ἀκούσαντες",
+     "ἔφυγον",
+     "ὑπό",
+     "φόβου"
+    ]
+   },
+   {
+    "prompt": "The army, when they learned this, decided to withdraw.",
+    "answer": "Τὸ στράτευμα, ἐπεὶ ταῦτα ἔμαθον, ἀναχωρεῖν ἐβουλεύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τό",
+     "στράτευμα",
+     "ἐπεί",
+     "ταῦτα",
+     "ἔμαθον",
+     "ἀναχωρεῖν",
+     "ἐβουλεύσαντο"
+    ]
+   },
+   {
+    "prompt": "He longs for glory; glory alone rules his soul.",
+    "answer": "Δόξης ἐπιθυμεῖ· δόξα μόνη τῆς ψυχῆς αὐτοῦ ἄρχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δόξης",
+     "ἐπιθυμεῖ",
+     "δόξα",
+     "μόνη",
+     "τῆς",
+     "ψυχῆς",
+     "αὐτοῦ",
+     "ἄρχει"
+    ]
+   }
+  ]
+ }
+]

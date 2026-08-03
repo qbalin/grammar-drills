@@ -1,0 +1,606 @@
+[
+ {
+  "id": "sm-2988-os-os-t1",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "Even so, the general did not abandon his post.",
+    "answer": "καὶ ὥς ὁ στρατηγὸς τὴν τάξιν οὐκ ἔλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "ὥς",
+     "ὁ",
+     "στρατηγός",
+     "τήν",
+     "τάξιν",
+     "οὐκ",
+     "ἔλιπεν"
+    ]
+   },
+   {
+    "prompt": "Not even thus did the citizens cease from fighting.",
+    "answer": "οὐδὲ ὥς οἱ πολῖται τῆς μάχης ἐπαύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέ",
+     "ὥς",
+     "οἱ",
+     "πολῖται",
+     "τῆς",
+     "μάχης",
+     "ἐπαύσαντο"
+    ]
+   },
+   {
+    "prompt": "The slave was punished in the same way as his master.",
+    "answer": "ὁ δοῦλος ὡσαύτως ἐκολάσθη ὥσπερ ὁ δεσπότης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "ὡσαύτως",
+     "ἐκολάσθη",
+     "ὥσπερ",
+     "δεσπότης"
+    ]
+   },
+   {
+    "prompt": "In very truth virtue is more precious than gold.",
+    "answer": "ὡς ἀληθῶς ἡ ἀρετὴ τοῦ χρυσοῦ τιμιωτέρα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀληθῶς",
+     "ἡ",
+     "ἀρετή",
+     "τοῦ",
+     "χρυσοῦ",
+     "τιμιωτέρα",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2988-os-os-t2",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "Even so, they were unwilling to surrender the city.",
+    "answer": "καὶ ὥς οὐκ ἤθελον τὴν πόλιν παραδοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "ὥς",
+     "οὐκ",
+     "ἤθελον",
+     "τήν",
+     "πόλιν",
+     "παραδοῦναι"
+    ]
+   },
+   {
+    "prompt": "But affairs turned out quite otherwise than we hoped.",
+    "answer": "ἀλλὰ ὡς ἑτέρως τὰ πράγματα ἀπέβη ἢ ἠλπίζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "ὡς",
+     "ἑτέρως",
+     "τά",
+     "πράγματα",
+     "ἀπέβη",
+     "ἤ",
+     "ἠλπίζομεν"
+    ]
+   },
+   {
+    "prompt": "The judge tried the poor in the same way as the rich.",
+    "answer": "ὁ δικαστὴς τοὺς πένητας ὡσαύτως ἔκρινεν ὥσπερ τοὺς πλουσίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστής",
+     "τούς",
+     "πένητας",
+     "ὡσαύτως",
+     "ἔκρινεν",
+     "ὥσπερ",
+     "πλουσίους"
+    ]
+   },
+   {
+    "prompt": "In very truth these men saved Greece.",
+    "answer": "ὡς ἀληθῶς οὗτοι οἱ ἄνδρες τὴν Ἑλλάδα ἔσωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀληθῶς",
+     "οὗτοι",
+     "οἱ",
+     "ἄνδρες",
+     "τήν",
+     "Ἑλλάδα",
+     "ἔσωσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2988-os-os-t3",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "Not even so were they willing to trust the oracle.",
+    "answer": "οὐδὲ ὥς ἤθελον τῷ χρησμῷ πιστεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέ",
+     "ὥς",
+     "ἤθελον",
+     "τῷ",
+     "χρησμῷ",
+     "πιστεύειν"
+    ]
+   },
+   {
+    "prompt": "Nevertheless the sailors sailed toward the harbor.",
+    "answer": "καὶ ὥς οἱ ναῦται πρὸς τὸν λιμένα ἔπλεον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "ὥς",
+     "οἱ",
+     "ναῦται",
+     "πρός",
+     "τόν",
+     "λιμένα",
+     "ἔπλεον"
+    ]
+   },
+   {
+    "prompt": "The old man walks just as his father used to walk.",
+    "answer": "ὁ γέρων ὡσαύτως βαδίζει ὥσπερ ὁ πατὴρ ἐβάδιζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ὡσαύτως",
+     "βαδίζει",
+     "ὥσπερ",
+     "πατήρ",
+     "ἐβάδιζεν"
+    ]
+   },
+   {
+    "prompt": "In very truth no one is wicked willingly.",
+    "answer": "ὡς ἀληθῶς οὐδεὶς ἑκὼν πονηρός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀληθῶς",
+     "οὐδείς",
+     "ἑκών",
+     "πονηρός",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2988-os-os-t4",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "Even so, the exiles did not give up hope of their return.",
+    "answer": "καὶ ὥς οἱ φυγάδες οὐκ ἀπέγνωσαν τὴν κάθοδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "ὥς",
+     "οἱ",
+     "φυγάδες",
+     "οὐκ",
+     "ἀπέγνωσαν",
+     "τήν",
+     "κάθοδον"
+    ]
+   },
+   {
+    "prompt": "Not even thus did the tyrant release the prisoners.",
+    "answer": "οὐδὲ ὥς ὁ τύραννος τοὺς δεσμώτας ἀπέλυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέ",
+     "ὥς",
+     "ὁ",
+     "τύραννος",
+     "τούς",
+     "δεσμώτας",
+     "ἀπέλυσεν"
+    ]
+   },
+   {
+    "prompt": "The woman adorned the temple in the same way every year.",
+    "answer": "ἡ γυνὴ τὸν νεὼν ὡσαύτως κατὰ ἕκαστον ἔτος ἐκόσμει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "τόν",
+     "νεών",
+     "ὡσαύτως",
+     "κατά",
+     "ἕκαστον",
+     "ἔτος",
+     "ἐκόσμει"
+    ]
+   },
+   {
+    "prompt": "Things came about quite otherwise than the seer foretold.",
+    "answer": "ὡς ἑτέρως τὰ πράγματα συνέβη ἢ ὁ μάντις προεῖπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἑτέρως",
+     "τά",
+     "πράγματα",
+     "συνέβη",
+     "ἤ",
+     "ὁ",
+     "μάντις",
+     "προεῖπεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2988-os-os-t5",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "In very truth freedom is sweeter than life.",
+    "answer": "ὡς ἀληθῶς ἡ ἐλευθερία τοῦ βίου γλυκυτέρα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀληθῶς",
+     "ἡ",
+     "ἐλευθερία",
+     "τοῦ",
+     "βίου",
+     "γλυκυτέρα",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Even so, the soldiers followed their commander into danger.",
+    "answer": "καὶ ὥς οἱ στρατιῶται τῷ ἡγεμόνι εἰς τὸν κίνδυνον ἠκολούθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "ὥς",
+     "οἱ",
+     "στρατιῶται",
+     "τῷ",
+     "ἡγεμόνι",
+     "εἰς",
+     "τόν",
+     "κίνδυνον",
+     "ἠκολούθουν"
+    ]
+   },
+   {
+    "prompt": "The teacher instructs the boys just as he himself was taught.",
+    "answer": "ὁ διδάσκαλος τοὺς παῖδας ὡσαύτως διδάσκει ὥσπερ αὐτὸς ἐδιδάχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "τούς",
+     "παῖδας",
+     "ὡσαύτως",
+     "διδάσκει",
+     "ὥσπερ",
+     "αὐτός",
+     "ἐδιδάχθη"
+    ]
+   },
+   {
+    "prompt": "Not even so did the assembly change its decision.",
+    "answer": "οὐδὲ ὥς ἡ ἐκκλησία τὴν γνώμην μετέβαλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέ",
+     "ὥς",
+     "ἡ",
+     "ἐκκλησία",
+     "τήν",
+     "γνώμην",
+     "μετέβαλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2988-os-os-t6",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "Nevertheless the doctor did not abandon the sick man.",
+    "answer": "καὶ ὥς ὁ ἰατρὸς τὸν κάμνοντα οὐκ ἐγκατέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "ὥς",
+     "ὁ",
+     "ἰατρός",
+     "τόν",
+     "κάμνοντα",
+     "οὐκ",
+     "ἐγκατέλιπεν"
+    ]
+   },
+   {
+    "prompt": "The Spartans arranged their camp in the same way as before.",
+    "answer": "οἱ Λακεδαιμόνιοι τὸ στρατόπεδον ὡσαύτως ὥσπερ πρότερον ἔταξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "τό",
+     "στρατόπεδον",
+     "ὡσαύτως",
+     "ὥσπερ",
+     "πρότερον",
+     "ἔταξαν"
+    ]
+   },
+   {
+    "prompt": "In very truth the good man is happy even in poverty.",
+    "answer": "ὡς ἀληθῶς ὁ ἀγαθὸς καὶ ἐν πενίᾳ εὐδαίμων ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀληθῶς",
+     "ὁ",
+     "ἀγαθός",
+     "καί",
+     "ἐν",
+     "πενίᾳ",
+     "εὐδαίμων",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "But the war ended quite otherwise than the Athenians expected.",
+    "answer": "ἀλλὰ ὡς ἑτέρως ὁ πόλεμος ἐτελεύτησεν ἢ οἱ Ἀθηναῖοι προσεδόκων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλά",
+     "ὡς",
+     "ἑτέρως",
+     "ὁ",
+     "πόλεμος",
+     "ἐτελεύτησεν",
+     "ἤ",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "προσεδόκων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2988-os-os-t7",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "Although he had been defeated in the battle, even so he sacrificed to the gods.",
+    "answer": "καίπερ ἐν τῇ μάχῃ νενικημένος, καὶ ὥς τοῖς θεοῖς ἔθυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "νενικημένος",
+     "καί",
+     "ὥς",
+     "τοῖς",
+     "θεοῖς",
+     "ἔθυσεν"
+    ]
+   },
+   {
+    "prompt": "The citizens threatened the orator, but even so he did not keep silent.",
+    "answer": "οἱ πολῖται τῷ ῥήτορι ἠπείλησαν, ὁ δὲ καὶ ὥς οὐκ ἐσίγησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τῷ",
+     "ῥήτορι",
+     "ἠπείλησαν",
+     "ὁ",
+     "δέ",
+     "καί",
+     "ὥς",
+     "οὐκ",
+     "ἐσίγησεν"
+    ]
+   },
+   {
+    "prompt": "The enemy pressed hard upon us, but not even so did we flee.",
+    "answer": "οἱ πολέμιοι σφόδρα ἡμῖν ἐνέκειντο, ἡμεῖς δὲ οὐδὲ ὥς ἐφύγομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "σφόδρα",
+     "ἡμῖν",
+     "ἐνέκειντο",
+     "ἡμεῖς",
+     "δέ",
+     "οὐδέ",
+     "ὥς",
+     "ἐφύγομεν"
+    ]
+   },
+   {
+    "prompt": "In very truth the wise man fears neither death nor exile.",
+    "answer": "ὡς ἀληθῶς ὁ σοφὸς οὔτε θάνατον οὔτε φυγὴν φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀληθῶς",
+     "ὁ",
+     "σοφός",
+     "οὔτε",
+     "θάνατον",
+     "φυγήν",
+     "φοβεῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2988-os-os-t8",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "The son manages the household in the same way as his father did.",
+    "answer": "ὁ υἱὸς τὸν οἶκον ὡσαύτως διοικεῖ ὥσπερ ὁ πατήρ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "υἱός",
+     "τόν",
+     "οἶκον",
+     "ὡσαύτως",
+     "διοικεῖ",
+     "ὥσπερ",
+     "πατήρ"
+    ]
+   },
+   {
+    "prompt": "We were hoping for victory, but everything turned out quite otherwise.",
+    "answer": "νίκην μὲν ἠλπίζομεν, πάντα δὲ ὡς ἑτέρως ἀπέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νίκην",
+     "μέν",
+     "ἠλπίζομεν",
+     "πάντα",
+     "δέ",
+     "ὡς",
+     "ἑτέρως",
+     "ἀπέβη"
+    ]
+   },
+   {
+    "prompt": "The slaves were punished, and the free men fared just the same.",
+    "answer": "οἱ μὲν δοῦλοι ἐκολάσθησαν, οἱ δὲ ἐλεύθεροι ὡσαύτως ἔπαθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "δοῦλοι",
+     "ἐκολάσθησαν",
+     "δέ",
+     "ἐλεύθεροι",
+     "ὡσαύτως",
+     "ἔπαθον"
+    ]
+   },
+   {
+    "prompt": "Do not trust the tyrant, and in no wise reveal your plans to him.",
+    "answer": "μὴ πίστευε τῷ τυράννῳ, μηδὲ ὥς αὐτῷ τὰ βουλεύματα δήλου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "πίστευε",
+     "τῷ",
+     "τυράννῳ",
+     "μηδέ",
+     "ὥς",
+     "αὐτῷ",
+     "τά",
+     "βουλεύματα",
+     "δήλου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2988-os-os-t9",
+  "sectionId": "sm-2988-os-os",
+  "questions": [
+   {
+    "prompt": "Though wounded in the hand, even so the soldier held his shield.",
+    "answer": "τὴν χεῖρα τετρωμένος, καὶ ὥς ὁ στρατιώτης τὴν ἀσπίδα κατεῖχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "χεῖρα",
+     "τετρωμένος",
+     "καί",
+     "ὥς",
+     "ὁ",
+     "στρατιώτης",
+     "ἀσπίδα",
+     "κατεῖχεν"
+    ]
+   },
+   {
+    "prompt": "Threaten me; but not even so will I betray my friends.",
+    "answer": "ἀπείλει μοι· ἀλλὰ οὐδὲ ὥς τοὺς φίλους προδώσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπείλει",
+     "μοι",
+     "ἀλλά",
+     "οὐδέ",
+     "ὥς",
+     "τούς",
+     "φίλους",
+     "προδώσω"
+    ]
+   },
+   {
+    "prompt": "Even if a man hides his crime, not even so will he escape the notice of the gods.",
+    "answer": "καὶ ἐὰν κρύπτῃ τις τὸ ἀδίκημα, οὐδὲ ὥς τοὺς θεοὺς λήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "ἐάν",
+     "κρύπτῃ",
+     "τις",
+     "τό",
+     "ἀδίκημα",
+     "οὐδέ",
+     "ὥς",
+     "τούς",
+     "θεούς",
+     "λήσει"
+    ]
+   },
+   {
+    "prompt": "In very truth the just man is happier than the tyrant.",
+    "answer": "ὡς ἀληθῶς ὁ δίκαιος τοῦ τυράννου εὐδαιμονέστερός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀληθῶς",
+     "ὁ",
+     "δίκαιος",
+     "τοῦ",
+     "τυράννου",
+     "εὐδαιμονέστερος",
+     "ἐστιν"
+    ]
+   }
+  ]
+ }
+]
