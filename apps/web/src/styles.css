@@ -872,6 +872,119 @@ span.status__title {
   color: var(--text-dim);
 }
 
+/* --- turning the page ----------------------------------------------------- */
+
+/*
+ * The swipe surface. It has to be at least as tall as the sheet's body, or a
+ * short section would leave most of the page ignoring the gesture — which
+ * reads as a swipe that works sometimes.
+ */
+.reader {
+  min-height: 100%;
+  /* The gesture is horizontal, so the browser can keep owning the vertical
+     scroll and never wait on us to decide. */
+  touch-action: pan-y;
+}
+
+/* A page comes in from the side the finger left towards. Short, because it
+   happens on every turn and a slow one is a slow reader. */
+.grammar--turn-next {
+  animation: page-next 0.2s ease-out;
+}
+
+.grammar--turn-prev {
+  animation: page-prev 0.2s ease-out;
+}
+
+@keyframes page-next {
+  from { transform: translateX(1.6rem); opacity: 0; }
+}
+
+@keyframes page-prev {
+  from { transform: translateX(-1.6rem); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grammar--turn-next,
+  .grammar--turn-prev {
+    animation: none;
+  }
+}
+
+/* What is either side, named. The swipe is the quick way; these are the way
+   anyone finds out there is one, and the only way from a keyboard. */
+.pager {
+  display: flex;
+  gap: 0.6rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.8rem;
+}
+
+.pager__btn,
+.pager__end {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.pager__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: var(--tap);
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--ink-raised);
+  text-align: left;
+}
+
+.pager__btn--next {
+  text-align: right;
+}
+
+.pager__btn:active {
+  border-color: var(--gold-dim);
+}
+
+.pager__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.pager__arrow {
+  color: var(--gold-dim);
+  font-size: 1.1rem;
+}
+
+.pager__ref {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+}
+
+.pager__title {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  /* One line: the pager says which way, not what the section contains. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pager__hint {
+  margin: 0.6rem 0 0;
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+
+/* The way from the page being read to what can be done with it. */
+.iconbtn--go {
+  color: var(--gold);
+}
+
 /* --- the grammar map ------------------------------------------------------ */
 
 .map__overall {

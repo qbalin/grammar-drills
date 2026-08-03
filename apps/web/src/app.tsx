@@ -79,7 +79,7 @@ type Overlay =
   | null
   | { t: "grammar"; sectionId: string; back?: Overlay }
   | { t: "map" }
-  | { t: "topic"; sectionId: string }
+  | { t: "topic"; sectionId: string; back?: Overlay }
   | { t: "attempts"; sectionId: string }
   | { t: "questions"; sectionId: string }
   | { t: "question"; sectionId: string; prompt: string }
@@ -207,6 +207,10 @@ export function App({ content, session, storage }: Props) {
     const id = setTimeout(() => setToast(null), 2600);
     return () => clearTimeout(id);
   }, [toast]);
+
+  // The book in order, which is what the grammar reader pages through. It is
+  // the content rather than the progress, so no tick touches it.
+  const sections = useMemo(() => content.sections(), [content]);
 
   // The engine is mutated in place, so views derive from it on every tick.
   const families = useMemo(() => session.familyProgress(), [session, tick]);
@@ -1035,12 +1039,29 @@ export function App({ content, session, storage }: Props) {
 
       {overlay?.t === "grammar" &&
         (() => {
-          const sec = content.getSection(overlay.sectionId);
+          const at = sections.findIndex((s) => s.id === overlay.sectionId);
+          const sec = sections[at];
           if (!sec) return null;
           const trail = session.attemptsFor(overlay.sectionId);
           return (
             <GrammarSheet
               section={sec}
+              prev={sections[at - 1]}
+              next={sections[at + 1]}
+              // Paging keeps whatever the sheet was opened over: reading on is
+              // still reading, so it must not cost the way back.
+              onPage={(to) => setOverlay({ ...overlay, sectionId: to.id })}
+              onStudy={() =>
+                setOverlay(
+                  // Straight back when the topic sheet is what opened this
+                  // page. Once the reader has paged away it is a different
+                  // topic, and that one is pushed on top.
+                  overlay.back?.t === "topic" &&
+                    overlay.back.sectionId === sec.id
+                    ? overlay.back
+                    : { t: "topic", sectionId: sec.id, back: overlay },
+                )
+              }
               onClose={() => setOverlay(overlay.back ?? null)}
               action={
                 trail.length > 0 ? (
@@ -1084,13 +1105,12 @@ export function App({ content, session, storage }: Props) {
               topic={topic}
               attempts={session.attemptsFor(topic.sectionId)}
               questionCount={content.questionsFor(topic.sectionId).length}
-              onClose={() => setOverlay({ t: "map" })}
+              // The map is where a topic is normally chosen, and where closing
+              // one goes back to — unless it was opened from the page being
+              // read, which is then what lies underneath.
+              onClose={() => setOverlay(overlay.back ?? { t: "map" })}
               onRead={() =>
-                setOverlay({
-                  t: "grammar",
-                  sectionId: topic.sectionId,
-                  back: { t: "topic", sectionId: topic.sectionId },
-                })
+                setOverlay({ t: "grammar", sectionId: topic.sectionId, back: overlay })
               }
               onQuiz={() => {
                 setOverlay(null);

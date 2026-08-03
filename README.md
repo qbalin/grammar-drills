@@ -220,6 +220,14 @@ grade buttons labelled with the interval each one buys, and the grammar map
 redrawn as tappable rows — one per topic, each naming its § and how far along it
 is, since a thumb wants a target and a screen has room for words.
 
+The grammar sheet **turns pages**: a swipe across it moves to the next or the
+previous section in book order, with the two neighbours named at the foot for
+thumbs that would rather tap and arrow keys for anyone on a desktop. Reading
+rarely stops at the one § you opened, and until this it cost a close, a map and
+another pick. The **→** in its head is the way from the section you have read to
+what can be done with it, so studying what you just found is one tap rather than
+a walk back through the map.
+
 The CLI's two map keys become the two buttons beside *Quiz me* — **Study from
 here** and **Practise these 17** — and `.` becomes **↻ more of this** in the row
 under the answer. When either is running, a chip in the status bar says what is

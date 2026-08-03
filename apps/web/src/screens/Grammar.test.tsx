@@ -1,5 +1,5 @@
-import { render, screen, within } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { fireEvent, render, screen, within } from "@testing-library/react";
+import { describe, expect, it, vi } from "vitest";
 import type { GrammarSection } from "@lang-tutor/core";
 import { GrammarSheet } from "./Grammar.js";
 
@@ -29,6 +29,56 @@ const section: GrammarSection = {
 
 const mount = () =>
   render(<GrammarSheet section={section} onClose={() => {}} />);
+
+/** The sections either side of it in the book. */
+const before: GrammarSection = {
+  id: "bn-089-reflexive-pronouns",
+  ref: "89",
+  title: "Reflexive Pronouns",
+  family: "pron",
+  order: 9,
+  text: "The Reflexive Pronoun of the third person is sē.",
+};
+const after: GrammarSection = {
+  id: "bn-091-relative-pronouns",
+  ref: "91",
+  title: "Relative Pronouns",
+  family: "pron",
+  order: 11,
+  text: "The Relative Pronoun is quī.",
+};
+
+/**
+ * The reader with the book around it, which is the only way it pages.
+ *
+ * jsdom has no `PointerEvent`, so a fired `pointerdown` carries no coordinates
+ * at all and every swipe would measure `NaN`. A `MouseEvent` under the pointer
+ * event's name is what React listens for anyway, and it does carry them.
+ */
+function mountPaged(props: Partial<Parameters<typeof GrammarSheet>[0]> = {}) {
+  const onPage = vi.fn();
+  render(
+    <GrammarSheet
+      section={section}
+      prev={before}
+      next={after}
+      onPage={onPage}
+      onClose={() => {}}
+      {...props}
+    />,
+  );
+  return { onPage };
+}
+
+/** A finger crossing the page, from x to x, drifting `dy` as it goes. */
+function swipe(from: number, to: number, dy = 0, at?: Element) {
+  const on = at ?? document.querySelector(".reader")!;
+  fireEvent(on, new MouseEvent("pointerdown", { clientX: from, clientY: 100, bubbles: true }));
+  fireEvent(
+    on,
+    new MouseEvent("pointerup", { clientX: to, clientY: 100 + dy, bubbles: true }),
+  );
+}
 
 describe("the grammar reader", () => {
   it("sets a paradigm as a table, so its columns line up", () => {
@@ -100,5 +150,84 @@ describe("the grammar reader", () => {
     mount();
     const cell = screen.getByRole("row", { name: /quis/ });
     expect(within(cell).queryByText("", { selector: ".gr-b, .gr-i" })).toBeNull();
+  });
+});
+
+/**
+ * Reading rarely stops at one section, and the book is in order — so the
+ * neighbours are a swipe away rather than a close, a map and another pick.
+ */
+describe("turning the page", () => {
+  it("names what is either side, so the gesture is not the only way through", () => {
+    mountPaged();
+    expect(
+      screen.getByRole("button", { name: "Previous section: § 89 Reflexive Pronouns" }),
+    ).toBeDefined();
+    expect(
+      screen.getByRole("button", { name: "Next section: § 91 Relative Pronouns" }),
+    ).toBeDefined();
+  });
+
+  it("offers nothing off either end of the book", () => {
+    mountPaged({ prev: undefined });
+    expect(screen.queryByRole("button", { name: /Previous section/ })).toBeNull();
+    expect(screen.getByRole("button", { name: /Next section/ })).toBeDefined();
+  });
+
+  it("goes forward on a swipe left and back on a swipe right", () => {
+    const { onPage } = mountPaged();
+    swipe(240, 100);
+    expect(onPage).toHaveBeenCalledWith(after);
+    swipe(100, 240);
+    expect(onPage).toHaveBeenLastCalledWith(before);
+  });
+
+  it("takes a short drag as a tap that wandered, not a page turn", () => {
+    const { onPage } = mountPaged();
+    swipe(200, 170);
+    expect(onPage).not.toHaveBeenCalled();
+  });
+
+  it("takes a mostly vertical drag as the reading it was", () => {
+    // A section runs to hundreds of lines; a thumb scrolling one is never
+    // perfectly straight, and losing the page over it would be maddening.
+    const { onPage } = mountPaged();
+    swipe(200, 120, 300);
+    expect(onPage).not.toHaveBeenCalled();
+  });
+
+  it("leaves a swipe over a wide paradigm to the paradigm", () => {
+    // Six columns of endings scroll sideways inside their own box. A finger
+    // that starts there is reading the table, and turning the page under it
+    // would put the endings it was crossing to out of reach.
+    const { onPage } = mountPaged();
+    const wrap = document.querySelector(".gr-tablewrap")!;
+    Object.defineProperty(wrap, "scrollWidth", { value: 600, configurable: true });
+    Object.defineProperty(wrap, "clientWidth", { value: 320, configurable: true });
+    swipe(240, 100, 0, wrap);
+    expect(onPage).not.toHaveBeenCalled();
+  });
+
+  it("turns the same two pages from a keyboard", () => {
+    const { onPage } = mountPaged();
+    fireEvent.keyDown(document, { key: "ArrowRight" });
+    expect(onPage).toHaveBeenCalledWith(after);
+    fireEvent.keyDown(document, { key: "ArrowLeft" });
+    expect(onPage).toHaveBeenLastCalledWith(before);
+  });
+
+  it("stays one page when nothing pages it", () => {
+    mount();
+    expect(screen.queryByRole("navigation")).toBeNull();
+    expect(screen.queryByRole("button", { name: /section/ })).toBeNull();
+  });
+
+  it("leads from the page being read to what can be done with it", () => {
+    const onStudy = vi.fn();
+    mountPaged({ onStudy });
+    fireEvent.click(
+      screen.getByRole("button", { name: "Study Interrogative Pronouns" }),
+    );
+    expect(onStudy).toHaveBeenCalled();
   });
 });

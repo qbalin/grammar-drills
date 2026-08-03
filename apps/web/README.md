@@ -34,7 +34,11 @@ Two more things worth knowing:
 
 - **§ grammar** opens the section from the source grammar — Bennett for Latin,
   Smyth for Ancient Greek — in full, whenever you want it. On a topic you have
-  not met, it opens by itself first.
+  not met, it opens by itself first. **Swipe across** to read on: the book is in
+  order, so the § next door is a thumb away rather than a close-map-pick, and
+  the two neighbours are named at the foot of the page for anyone who would
+  rather tap. The **→** in the head goes from the section you are reading to
+  what you can do with it — *Quiz me*, *Study from here*, *Practise these*.
 - **+ record a word** takes any word as you met it — `manibus`, `amāvērunt`,
   `λόγοις` — and works out the dictionary headword. Those words then come back
   for review on their own schedule.

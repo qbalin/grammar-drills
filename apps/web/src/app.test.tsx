@@ -143,6 +143,20 @@ const tapWord = async (
   await user.click(span);
 };
 
+/**
+ * A finger crossing the grammar reader, which is how its pages turn.
+ *
+ * jsdom has no `PointerEvent`, so a fired `pointerdown` carries no coordinates
+ * and every swipe would measure `NaN`. A `MouseEvent` under the pointer event's
+ * name is what React listens for anyway, and it does carry them.
+ */
+function swipe(from: number, to: number) {
+  const reader = document.querySelector(".reader");
+  if (!reader) throw new Error("no grammar reader on screen");
+  fireEvent(reader, new MouseEvent("pointerdown", { clientX: from, clientY: 100, bubbles: true }));
+  fireEvent(reader, new MouseEvent("pointerup", { clientX: to, clientY: 100, bubbles: true }));
+}
+
 /** Let real time pass, since the hold is timed rather than counted. */
 const passTime = (ms: number) =>
   act(() => new Promise((resolve) => setTimeout(resolve, ms)));
@@ -1396,6 +1410,76 @@ describe("the grammar map", () => {
     expect(
       within(sheet).getByText("First-declension nouns end in -a."),
     ).toBeDefined();
+  });
+});
+
+/**
+ * The section you opened is rarely the whole of what you wanted to read, and
+ * the § next door used to cost a close, a map and another pick. So the reader
+ * pages, and what it lands on can be studied without leaving it.
+ */
+describe("reading on", () => {
+  /** Open the map on First declension and read it. */
+  async function read(user: ReturnType<typeof userEvent.setup>) {
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    const map = screen.getByRole("dialog", { name: "Grammar map" });
+    await user.click(within(map).getByRole("button", { name: /First declension/ }));
+    await user.click(screen.getByRole("button", { name: /Read §/ }));
+  }
+
+  it("swipes on to the next section of the book, and studies it from there", async () => {
+    const user = userEvent.setup();
+    mount();
+    await read(user);
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+
+    swipe(240, 100);
+    const sheet = screen.getByRole("dialog", { name: "Second declension" });
+    expect(
+      within(sheet).getByText("Second-declension nouns end in -us."),
+    ).toBeDefined();
+
+    // The arrow is what turns reading a section into studying it: everything
+    // the map offers on a topic, reached from the page itself.
+    await user.click(screen.getByRole("button", { name: "Study Second declension" }));
+    const topic = screen.getByRole("dialog", { name: "Second declension" });
+    expect(within(topic).getByRole("button", { name: "Study from here" })).toBeDefined();
+    expect(within(topic).getByRole("button", { name: /Practise these/ })).toBeDefined();
+    await user.click(within(topic).getByRole("button", { name: "Quiz me" }));
+
+    expect(screen.getByText("The master frees the slave.")).toBeDefined();
+  });
+
+  it("goes back the way it came, page by page", async () => {
+    const user = userEvent.setup();
+    mount();
+    await read(user);
+
+    swipe(240, 100); // on to Second declension
+    swipe(100, 240); // and back to where the reading started
+    expect(
+      within(screen.getByRole("dialog", { name: "First declension" })).getByText(
+        "First-declension nouns end in -a.",
+      ),
+    ).toBeDefined();
+
+    // Paging away and asking what can be done with the new section stacks:
+    // closing is the page it was asked from, not the map two steps back.
+    swipe(240, 100);
+    await user.click(screen.getByRole("button", { name: "Study Second declension" }));
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    expect(
+      screen.getByRole("button", { name: /Previous section: § 20-22 First declension/ }),
+    ).toBeDefined();
+
+    // And under the reading, still, the topic and the map it was opened from.
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    const topic = screen.getByRole("dialog", { name: "First declension" });
+    expect(within(topic).getByRole("button", { name: "Quiz me" })).toBeDefined();
+    await user.click(within(topic).getByRole("button", { name: "Close" }));
+    expect(screen.getByRole("dialog", { name: "Grammar map" })).toBeDefined();
   });
 });
 
