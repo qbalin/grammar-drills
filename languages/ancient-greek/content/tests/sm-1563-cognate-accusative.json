@@ -391,5 +391,385 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t7",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The herald, having won the race in the stadium, received a crown.",
+    "answer": "ὁ κῆρυξ τὸ στάδιον νικήσας στέφανον ἐδέξατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "τό",
+     "στάδιον",
+     "νικήσας",
+     "στέφανον",
+     "ἐδέξατο"
+    ]
+   },
+   {
+    "prompt": "The old men go to law with the young man over the estate.",
+    "answer": "οἱ γέροντες δίκην τῷ νεανίᾳ περὶ τῆς οὐσίας δικάζονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "δίκην",
+     "τῷ",
+     "νεανίᾳ",
+     "περί",
+     "τῆς",
+     "οὐσίας",
+     "δικάζονται"
+    ]
+   },
+   {
+    "prompt": "We fulfilled our embassy in the same manner as before.",
+    "answer": "τὴν αὐτὴν πρεσβείαν ὥσπερ πρότερον ἐπρεσβεύσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "αὐτήν",
+     "πρεσβείαν",
+     "ὥσπερ",
+     "πρότερον",
+     "ἐπρεσβεύσαμεν"
+    ]
+   },
+   {
+    "prompt": "This boy is telling a great lie to his teacher.",
+    "answer": "οὗτος ὁ παῖς μέγα ψεῦδος πρὸς τὸν διδάσκαλον ψεύδεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "παῖς",
+     "μέγα",
+     "ψεῦδος",
+     "πρός",
+     "τόν",
+     "διδάσκαλον",
+     "ψεύδεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t8",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The athlete, having won an Olympic victory, was honored by all.",
+    "answer": "ὁ ἀθλητὴς τὰ Ὀλύμπια νικήσας ὑπὸ πάντων ἐτιμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀθλητής",
+     "τά",
+     "Ὀλύμπια",
+     "νικήσας",
+     "ὑπό",
+     "πάντων",
+     "ἐτιμήθη"
+    ]
+   },
+   {
+    "prompt": "The priests sacrifice the thank-offerings on behalf of the victory.",
+    "answer": "οἱ ἱερεῖς τὰ εὐαγγέλια ὑπὲρ τῆς νίκης θύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "τά",
+     "εὐαγγέλια",
+     "ὑπέρ",
+     "τῆς",
+     "νίκης",
+     "θύουσιν"
+    ]
+   },
+   {
+    "prompt": "The demagogue carried his resolution while the wise were opposing.",
+    "answer": "ὁ δημαγωγὸς τὴν γνώμην ἐνίκησε τῶν σοφῶν ἐναντιουμένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δημαγωγός",
+     "τήν",
+     "γνώμην",
+     "ἐνίκησε",
+     "τῶν",
+     "σοφῶν",
+     "ἐναντιουμένων"
+    ]
+   },
+   {
+    "prompt": "The defendant lost his case and paid the penalty.",
+    "answer": "ὁ φεύγων τὴν δίκην ὦφλε καὶ τὴν ζημίαν ἀπέτεισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φεύγων",
+     "τήν",
+     "δίκην",
+     "ὦφλε",
+     "καί",
+     "ζημίαν",
+     "ἀπέτεισεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t9",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "They fought this battle bravely beside the river.",
+    "answer": "ταύτην τὴν μάχην ἀνδρείως παρὰ τῷ ποταμῷ ἐμαχέσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτην",
+     "τήν",
+     "μάχην",
+     "ἀνδρείως",
+     "παρά",
+     "τῷ",
+     "ποταμῷ",
+     "ἐμαχέσαντο"
+    ]
+   },
+   {
+    "prompt": "The traitor made the promises which he did not fulfill.",
+    "answer": "ὁ προδότης τὰς ὑποσχέσεις ἃς οὐκ ἐτέλεσεν ὑπέσχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "προδότης",
+     "τάς",
+     "ὑποσχέσεις",
+     "ἅς",
+     "οὐκ",
+     "ἐτέλεσεν",
+     "ὑπέσχετο"
+    ]
+   },
+   {
+    "prompt": "The citizens bring a shameful charge against him.",
+    "answer": "οἱ πολῖται αἰσχρὰν αἰτίαν αὐτὸν αἰτιῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "αἰσχράν",
+     "αἰτίαν",
+     "αὐτόν",
+     "αἰτιῶνται"
+    ]
+   },
+   {
+    "prompt": "This war was waged by both sides without mercy.",
+    "answer": "οὗτος ὁ πόλεμος ὑπὸ ἀμφοτέρων ἀφειδῶς ἐπολεμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "πόλεμος",
+     "ὑπό",
+     "ἀμφοτέρων",
+     "ἀφειδῶς",
+     "ἐπολεμήθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t10",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "This man is too proud and despises the poor.",
+    "answer": "οὗτος μεῖζον φρονεῖ καὶ τῶν πενήτων καταφρονεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "μεῖζον",
+     "φρονεῖ",
+     "καί",
+     "τῶν",
+     "πενήτων",
+     "καταφρονεῖ"
+    ]
+   },
+   {
+    "prompt": "The exiles were on the side of the Lacedaemonians.",
+    "answer": "οἱ φυγάδες τὰ τῶν Λακεδαιμονίων ἐφρόνουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "τά",
+     "τῶν",
+     "Λακεδαιμονίων",
+     "ἐφρόνουν"
+    ]
+   },
+   {
+    "prompt": "They committed grave errors concerning the management of the war.",
+    "answer": "μεγάλα ἥμαρτον περὶ τὴν τοῦ πολέμου διοίκησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεγάλα",
+     "ἥμαρτον",
+     "περί",
+     "τήν",
+     "τοῦ",
+     "πολέμου",
+     "διοίκησιν"
+    ]
+   },
+   {
+    "prompt": "What use does the king wish to make of the prisoners?",
+    "answer": "τί βούλεται ὁ βασιλεὺς τοῖς αἰχμαλώτοις χρῆσθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "βούλεται",
+     "ὁ",
+     "βασιλεύς",
+     "τοῖς",
+     "αἰχμαλώτοις",
+     "χρῆσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t11",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "He indicts the general on a public charge of treason.",
+    "answer": "γράφεται τὸν στρατηγὸν γραφὴν προδοσίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γράφεται",
+     "τόν",
+     "στρατηγόν",
+     "γραφήν",
+     "προδοσίας"
+    ]
+   },
+   {
+    "prompt": "Being put on trial for impiety, Socrates defended himself.",
+    "answer": "γραφὴν ἀσεβείας φεύγων ὁ Σωκράτης ἀπελογήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γραφήν",
+     "ἀσεβείας",
+     "φεύγων",
+     "ὁ",
+     "Σωκράτης",
+     "ἀπελογήσατο"
+    ]
+   },
+   {
+    "prompt": "The old man went to law with his neighbor over the land.",
+    "answer": "ὁ γέρων δίκην τῷ γείτονι περὶ τῆς γῆς ἐδικάζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "δίκην",
+     "τῷ",
+     "γείτονι",
+     "περί",
+     "τῆς",
+     "γῆς",
+     "ἐδικάζετο"
+    ]
+   },
+   {
+    "prompt": "The orator won the case on behalf of the widow.",
+    "answer": "ὁ ῥήτωρ τὴν δίκην ὑπὲρ τῆς χήρας ἐνίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τήν",
+     "δίκην",
+     "ὑπέρ",
+     "τῆς",
+     "χήρας",
+     "ἐνίκησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t12",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The soldiers stood many watches during the siege.",
+    "answer": "οἱ στρατιῶται πολλὰς φυλακὰς ἐν τῇ πολιορκίᾳ ἐφύλαξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πολλάς",
+     "φυλακάς",
+     "ἐν",
+     "τῇ",
+     "πολιορκίᾳ",
+     "ἐφύλαξαν"
+    ]
+   },
+   {
+    "prompt": "The islanders paid tribute to the king unwillingly.",
+    "answer": "οἱ νησιῶται τὸν φόρον τῷ βασιλεῖ ἄκοντες ἔφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νησιῶται",
+     "τόν",
+     "φόρον",
+     "τῷ",
+     "βασιλεῖ",
+     "ἄκοντες",
+     "ἔφερον"
+    ]
+   },
+   {
+    "prompt": "The tyrant insulted the free men grievously.",
+    "answer": "ὁ τύραννος δεινὴν ὕβριν τοὺς ἐλευθέρους ὕβρισεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "δεινήν",
+     "ὕβριν",
+     "τούς",
+     "ἐλευθέρους",
+     "ὕβρισεν"
+    ]
+   },
+   {
+    "prompt": "They performed the duty of trierarch three times for the city.",
+    "answer": "τρεῖς τριηραρχίας ὑπὲρ τῆς πόλεως ἐτριηράρχησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τρεῖς",
+     "τριηραρχίας",
+     "ὑπέρ",
+     "τῆς",
+     "πόλεως",
+     "ἐτριηράρχησαν"
+    ]
+   }
+  ]
  }
 ]

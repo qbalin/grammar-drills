@@ -397,5 +397,736 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t7",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "You send messengers to the city, but I remain by the river.",
+    "answer": "πέμπεις ἀγγέλους εἰς τὴν πόλιν, ἐγὼ δὲ παρὰ τῷ ποταμῷ μένω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμπεις",
+     "ἀγγέλους",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "ἐγώ",
+     "δέ",
+     "παρά",
+     "τῷ",
+     "ποταμῷ",
+     "μένω"
+    ]
+   },
+   {
+    "prompt": "The priests sacrifice to the gods, but we watch the flame.",
+    "answer": "οἱ ἱερεῖς τοῖς θεοῖς θύουσιν, ἡμεῖς δὲ τὴν φλόγα θεώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "τοῖς",
+     "θεοῖς",
+     "θύουσιν",
+     "ἡμεῖς",
+     "δέ",
+     "τήν",
+     "φλόγα",
+     "θεώμεθα"
+    ]
+   },
+   {
+    "prompt": "Do you trust the general, or do you fear the enemy?",
+    "answer": "πιστεύεις τῷ στρατηγῷ, ἢ τοὺς πολεμίους φοβῇ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστεύεις",
+     "τῷ",
+     "στρατηγῷ",
+     "ἤ",
+     "τούς",
+     "πολεμίους",
+     "φοβῇ"
+    ]
+   },
+   {
+    "prompt": "I honor the gods and obey the laws of the city.",
+    "answer": "τοὺς θεοὺς τιμῶ καὶ τοῖς τῆς πόλεως νόμοις πείθομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "θεούς",
+     "τιμῶ",
+     "καί",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "νόμοις",
+     "πείθομαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t8",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "I was guarding the camp, but you were fleeing toward the sea.",
+    "answer": "ἐφύλαττον τὸ στρατόπεδον, σὺ δὲ πρὸς τὴν θάλατταν ἔφευγες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφύλαττον",
+     "τό",
+     "στρατόπεδον",
+     "σύ",
+     "δέ",
+     "πρός",
+     "τήν",
+     "θάλατταν",
+     "ἔφευγες"
+    ]
+   },
+   {
+    "prompt": "The two heralds were carrying the water across the plain.",
+    "answer": "τὼ ἀγγέλω τὸ ὕδωρ διὰ τοῦ πεδίου ἐκομιζέτην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τώ",
+     "ἀγγέλω",
+     "τό",
+     "ὕδωρ",
+     "διά",
+     "τοῦ",
+     "πεδίου",
+     "ἐκομιζέτην"
+    ]
+   },
+   {
+    "prompt": "We were receiving gifts, but the allies kept silent.",
+    "answer": "δῶρα ἐλαμβάνομεν, οἱ δὲ σύμμαχοι ἐσίγων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῶρα",
+     "ἐλαμβάνομεν",
+     "οἱ",
+     "δέ",
+     "σύμμαχοι",
+     "ἐσίγων"
+    ]
+   },
+   {
+    "prompt": "You were honoring virtue, but I was fearing disgrace.",
+    "answer": "σὺ μὲν τὴν ἀρετὴν ἐτίμας, ἐγὼ δὲ τὴν αἰσχύνην ἐφοβούμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "μέν",
+     "τήν",
+     "ἀρετήν",
+     "ἐτίμας",
+     "ἐγώ",
+     "δέ",
+     "αἰσχύνην",
+     "ἐφοβούμην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t9",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "The soldiers defend themselves against the Peloponnesians.",
+    "answer": "οἱ στρατιῶται τοὺς Πελοποννησίους ἀμύνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τούς",
+     "Πελοποννησίους",
+     "ἀμύνονται"
+    ]
+   },
+   {
+    "prompt": "You ransom the captive, but I fight near the gates.",
+    "answer": "σὺ μὲν τὸν αἰχμάλωτον λύῃ, ἐγὼ δὲ παρὰ ταῖς πύλαις μάχομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "μέν",
+     "τόν",
+     "αἰχμάλωτον",
+     "λύῃ",
+     "ἐγώ",
+     "δέ",
+     "παρά",
+     "ταῖς",
+     "πύλαις",
+     "μάχομαι"
+    ]
+   },
+   {
+    "prompt": "In the battle we were becoming braver than our comrades.",
+    "answer": "ἐν τῇ μάχῃ ἀνδρειότεροι τῶν ἑταίρων ἐγιγνόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀνδρειότεροι",
+     "τῶν",
+     "ἑταίρων",
+     "ἐγιγνόμεθα"
+    ]
+   },
+   {
+    "prompt": "The general was deliberating, and the soldiers were obeying.",
+    "answer": "ὁ στρατηγὸς ἐβουλεύετο, οἱ δὲ στρατιῶται ἐπείθοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἐβουλεύετο",
+     "οἱ",
+     "δέ",
+     "στρατιῶται",
+     "ἐπείθοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t10",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "Defend yourselves bravely, soldiers, against the enemy.",
+    "answer": "ἀνδρείως ἀμύνεσθε, ὦ στρατιῶται, τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνδρείως",
+     "ἀμύνεσθε",
+     "ὦ",
+     "στρατιῶται",
+     "τούς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "Let the priest sacrifice, and let the citizens be silent.",
+    "answer": "ὁ ἱερεὺς θυέτω, οἱ δὲ πολῖται σιγώντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεύς",
+     "θυέτω",
+     "οἱ",
+     "δέ",
+     "πολῖται",
+     "σιγώντων"
+    ]
+   },
+   {
+    "prompt": "Trust the gods, my child, and honor your parents.",
+    "answer": "πίστευε τοῖς θεοῖς, ὦ παῖ, καὶ τοὺς γονέας τίμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πίστευε",
+     "τοῖς",
+     "θεοῖς",
+     "ὦ",
+     "παῖ",
+     "καί",
+     "τούς",
+     "γονέας",
+     "τίμα"
+    ]
+   },
+   {
+    "prompt": "Save yourself from the danger, and let the others flee toward the ships.",
+    "answer": "σῴζου ἐκ τοῦ κινδύνου, οἱ δὲ ἄλλοι πρὸς τὰς ναῦς φευγόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σῴζου",
+     "ἐκ",
+     "τοῦ",
+     "κινδύνου",
+     "οἱ",
+     "δέ",
+     "ἄλλοι",
+     "πρός",
+     "τάς",
+     "ναῦς",
+     "φευγόντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t11",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "Let us march against the city and free the allies.",
+    "answer": "ἴωμεν ἐπὶ τὴν πόλιν καὶ τοὺς συμμάχους ἐλευθερώσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴωμεν",
+     "ἐπί",
+     "τήν",
+     "πόλιν",
+     "καί",
+     "τούς",
+     "συμμάχους",
+     "ἐλευθερώσωμεν"
+    ]
+   },
+   {
+    "prompt": "I fear that the enemy may capture the acropolis.",
+    "answer": "φοβοῦμαι μὴ οἱ πολέμιοι τὴν ἀκρόπολιν λάβωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "τήν",
+     "ἀκρόπολιν",
+     "λάβωσιν"
+    ]
+   },
+   {
+    "prompt": "May you become dear to the citizens, young man.",
+    "answer": "γένοιο τοῖς πολίταις φίλος, ὦ νεανία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γένοιο",
+     "τοῖς",
+     "πολίταις",
+     "φίλος",
+     "ὦ",
+     "νεανία"
+    ]
+   },
+   {
+    "prompt": "If we should honor the gods, we would become fortunate.",
+    "answer": "εἰ τοὺς θεοὺς τιμῷμεν, εὐδαίμονες ἂν γιγνοίμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τούς",
+     "θεούς",
+     "τιμῷμεν",
+     "εὐδαίμονες",
+     "ἄν",
+     "γιγνοίμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t12",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "I place the gifts upon the altar, but you give thanks to the god.",
+    "answer": "τὰ δῶρα ἐπὶ τὸν βωμὸν τίθημι, σὺ δὲ τῷ θεῷ χάριν δίδως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "δῶρα",
+     "ἐπί",
+     "τόν",
+     "βωμόν",
+     "τίθημι",
+     "σύ",
+     "δέ",
+     "τῷ",
+     "θεῷ",
+     "χάριν",
+     "δίδως"
+    ]
+   },
+   {
+    "prompt": "You know that the general is intelligent and just.",
+    "answer": "οἶσθα ὅτι ὁ στρατηγὸς συνετὸς καὶ δίκαιός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶσθα",
+     "ὅτι",
+     "ὁ",
+     "στρατηγός",
+     "συνετός",
+     "καί",
+     "δίκαιος",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The gods give victory to those who honor virtue.",
+    "answer": "οἱ θεοὶ νίκην διδόασι τοῖς τὴν ἀρετὴν τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "νίκην",
+     "διδόασι",
+     "τοῖς",
+     "τήν",
+     "ἀρετήν",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "Stand firm, soldiers, and do not abandon your posts.",
+    "answer": "ἵστασθε, ὦ στρατιῶται, καὶ μὴ τὰς τάξεις λείπετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἵστασθε",
+     "ὦ",
+     "στρατιῶται",
+     "καί",
+     "μή",
+     "τάς",
+     "τάξεις",
+     "λείπετε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t13",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "I give my daughter to the noble stranger, but you give nothing.",
+    "answer": "τὴν θυγατέρα τῷ γενναίῳ ξένῳ δίδωμι, σὺ δὲ οὐδὲν δίδως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "θυγατέρα",
+     "τῷ",
+     "γενναίῳ",
+     "ξένῳ",
+     "δίδωμι",
+     "σύ",
+     "δέ",
+     "οὐδέν",
+     "δίδως"
+    ]
+   },
+   {
+    "prompt": "The old seer says that the gods send favorable omens to the pious.",
+    "answer": "ὁ γέρων μάντις τοὺς θεοὺς τοῖς εὐσεβέσιν αἴσια σημεῖα πέμπειν φησίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "μάντις",
+     "τούς",
+     "θεούς",
+     "τοῖς",
+     "εὐσεβέσιν",
+     "αἴσια",
+     "σημεῖα",
+     "πέμπειν",
+     "φησίν"
+    ]
+   },
+   {
+    "prompt": "We set up a trophy, and the enemy flee toward the mountains.",
+    "answer": "τρόπαιον ἵσταμεν, οἱ δὲ πολέμιοι πρὸς τὰ ὄρη φεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τρόπαιον",
+     "ἵσταμεν",
+     "οἱ",
+     "δέ",
+     "πολέμιοι",
+     "πρός",
+     "τά",
+     "ὄρη",
+     "φεύγουσιν"
+    ]
+   },
+   {
+    "prompt": "You place a wreath upon the head of the victor.",
+    "answer": "στέφανον ἐπὶ τὴν τοῦ νικῶντος κεφαλὴν τίθης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στέφανον",
+     "ἐπί",
+     "τήν",
+     "τοῦ",
+     "νικῶντος",
+     "κεφαλήν",
+     "τίθης"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t14",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "I ransom myself from the enemy, but you fear the journey.",
+    "answer": "ἐμαυτὸν παρὰ τῶν πολεμίων λύομαι, σὺ δὲ τὴν ὁδὸν φοβῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμαυτόν",
+     "παρά",
+     "τῶν",
+     "πολεμίων",
+     "λύομαι",
+     "σύ",
+     "δέ",
+     "τήν",
+     "ὁδόν",
+     "φοβῇ"
+    ]
+   },
+   {
+    "prompt": "The general deliberates with the allies about the war.",
+    "answer": "ὁ στρατηγὸς μετὰ τῶν συμμάχων περὶ τοῦ πολέμου βουλεύεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "μετά",
+     "τῶν",
+     "συμμάχων",
+     "περί",
+     "τοῦ",
+     "πολέμου",
+     "βουλεύεται"
+    ]
+   },
+   {
+    "prompt": "We defend ourselves nobly, but the young men obey their fear.",
+    "answer": "γενναίως ἀμυνόμεθα, οἱ δὲ νεανίαι τῷ φόβῳ πείθονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γενναίως",
+     "ἀμυνόμεθα",
+     "οἱ",
+     "δέ",
+     "νεανίαι",
+     "τῷ",
+     "φόβῳ",
+     "πείθονται"
+    ]
+   },
+   {
+    "prompt": "You receive gifts from the king and rejoice.",
+    "answer": "δῶρα παρὰ τοῦ βασιλέως δέχεσθε καὶ ἥδεσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῶρα",
+     "παρά",
+     "τοῦ",
+     "βασιλέως",
+     "δέχεσθε",
+     "καί",
+     "ἥδεσθε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t15",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "The two brothers guard the walls throughout the night.",
+    "answer": "τὼ ἀδελφὼ τὰ τείχη διὰ τῆς νυκτὸς φυλάττετον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τώ",
+     "ἀδελφώ",
+     "τά",
+     "τείχη",
+     "διά",
+     "τῆς",
+     "νυκτός",
+     "φυλάττετον"
+    ]
+   },
+   {
+    "prompt": "You two were fighting bravely, but the enemy fled.",
+    "answer": "ἀνδρείως ἐμάχεσθον, οἱ δὲ πολέμιοι ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνδρείως",
+     "ἐμάχεσθον",
+     "οἱ",
+     "δέ",
+     "πολέμιοι",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The two horses were carrying the wounded man out of the battle.",
+    "answer": "τὼ ἵππω τὸν τετρωμένον ἐκ τῆς μάχης ἐφερέτην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τώ",
+     "ἵππω",
+     "τόν",
+     "τετρωμένον",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "ἐφερέτην"
+    ]
+   },
+   {
+    "prompt": "The two comrades ransomed themselves and departed homeward.",
+    "answer": "τὼ ἑταίρω ἐλυσάσθην καὶ οἴκαδε ἀπηλθέτην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τώ",
+     "ἑταίρω",
+     "ἐλυσάσθην",
+     "καί",
+     "οἴκαδε",
+     "ἀπηλθέτην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t16",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "Be brave, comrades, and follow the general.",
+    "answer": "ἀνδρεῖοι ἔστε, ὦ ἑταῖροι, καὶ τῷ στρατηγῷ ἕπεσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνδρεῖοι",
+     "ἔστε",
+     "ὦ",
+     "ἑταῖροι",
+     "καί",
+     "τῷ",
+     "στρατηγῷ",
+     "ἕπεσθε"
+    ]
+   },
+   {
+    "prompt": "Let the herald go to the city and announce the victory.",
+    "answer": "ὁ κῆρυξ εἰς τὴν πόλιν ἴτω καὶ τὴν νίκην ἀγγελλέτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "ἴτω",
+     "καί",
+     "νίκην",
+     "ἀγγελλέτω"
+    ]
+   },
+   {
+    "prompt": "Let the young men guard the fatherland faithfully.",
+    "answer": "οἱ νεανίαι τὴν πατρίδα πιστῶς φυλαττόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "τήν",
+     "πατρίδα",
+     "πιστῶς",
+     "φυλαττόντων"
+    ]
+   },
+   {
+    "prompt": "Stand firm, soldier, and ward off the enemy's spears.",
+    "answer": "στῆθι, ὦ στρατιῶτα, καὶ τὰ τῶν πολεμίων δόρατα ἄμυνε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στῆθι",
+     "ὦ",
+     "στρατιῶτα",
+     "καί",
+     "τά",
+     "τῶν",
+     "πολεμίων",
+     "δόρατα",
+     "ἄμυνε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-462-endings-of-the-verb-personal-endings-t17",
+  "sectionId": "sm-462-endings-of-the-verb-personal-endings",
+  "questions": [
+   {
+    "prompt": "May the gods grant victory to the just.",
+    "answer": "οἱ θεοὶ τοῖς δικαίοις νίκην δοῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "τοῖς",
+     "δικαίοις",
+     "νίκην",
+     "δοῖεν"
+    ]
+   },
+   {
+    "prompt": "I fear that the young men may not obey the laws.",
+    "answer": "φοβοῦμαι μὴ οἱ νεανίαι τοῖς νόμοις οὐ πείθωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οἱ",
+     "νεανίαι",
+     "τοῖς",
+     "νόμοις",
+     "οὐ",
+     "πείθωνται"
+    ]
+   },
+   {
+    "prompt": "If you should honor the gods, you would become dear to them.",
+    "answer": "εἰ τοὺς θεοὺς τιμῴης, φίλος ἂν αὐτοῖς γένοιο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τούς",
+     "θεούς",
+     "τιμῴης",
+     "φίλος",
+     "ἄν",
+     "αὐτοῖς",
+     "γένοιο"
+    ]
+   },
+   {
+    "prompt": "Let us march against the tyrant, so that we may free the city.",
+    "answer": "ἐπὶ τὸν τύραννον πορευώμεθα, ἵνα τὴν πόλιν ἐλευθερῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπί",
+     "τόν",
+     "τύραννον",
+     "πορευώμεθα",
+     "ἵνα",
+     "τήν",
+     "πόλιν",
+     "ἐλευθερῶμεν"
+    ]
+   }
+  ]
  }
 ]
