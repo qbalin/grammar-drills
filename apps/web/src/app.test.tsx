@@ -1769,8 +1769,8 @@ describe("the three ways to move through the book", () => {
     await user.click(screen.getByRole("button", { name: "Book order" }));
     expect(onScreen()).toBe("First declension");
     expect(session.bookCursor()).toBe("decl1");
-    // Reading the book says nothing here: the row above already names it.
-    expect(document.querySelector(".badge--focus")).toBeNull();
+    // Reading the book on is not a run, so the badge carries no count.
+    expect(document.querySelector(".status__row .badge")?.textContent).toBe("new");
   });
 
   it("reads on one topic to the next whatever the grade", async () => {
@@ -1806,7 +1806,7 @@ describe("the three ways to move through the book", () => {
     // A round is a whole test, so the run re-asks the answered question on the
     // way to the one it is for; the counter counts only the one it is for.
     expect(onScreen()).toBe("First declension");
-    expect(screen.getByText(/practising First declension · 0\/1/)).toBeDefined();
+    expect(document.querySelector(".status__row .badge")?.textContent).toBe("drill 0/1");
 
     for (const _ of [0, 1]) {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
@@ -1848,7 +1848,7 @@ describe("the three ways to move through the book", () => {
 
     await user.click(screen.getByRole("button", { name: "Practise all 2 again" }));
     expect(session.practice("decl1")).toEqual({ done: 0, total: 2 });
-    expect(screen.getByText(/practising First declension · 0\/2/)).toBeDefined();
+    expect(document.querySelector(".status__row .badge")?.textContent).toBe("drill 0/2");
   });
 
   it("finds the way back to the book from the stop screen", async () => {
@@ -1891,7 +1891,7 @@ describe("the three ways to move through the book", () => {
  * answer on screen at all.
  */
 describe("what is on screen, and why", () => {
-  /** The round badge: the first row's, never the focus chip on the third. */
+  /** The round badge, which a drill carries its run's progress in. */
   const badge = () =>
     document.querySelector(".status__row .badge")?.textContent ?? "";
   const title = () => document.querySelector(".status__title")?.textContent ?? "";
@@ -1954,13 +1954,14 @@ describe("what is on screen, and why", () => {
     s.drillTopic("decl1");
     mount(s.progress());
 
-    expect(badge()).toBe("drill");
+    // decl1's test holds two questions, and the run has answered neither yet.
+    expect(badge()).toBe("drill 0/2");
 
     cleanup();
     mount(new SyncingStorage().read() ?? undefined);
     // The round is the only place this is written down: `next` says it once,
     // and a reload never asks `next` again for a round already on the table.
-    expect(badge()).toBe("drill");
+    expect(badge()).toBe("drill 0/2");
   });
 });
 

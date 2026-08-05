@@ -232,17 +232,17 @@ a walk back through the index.
 The CLI's two index keys become three buttons on the topic sheet — **Study from
 here**, **Practise these 17** and **Book order** — so all three ways of reading
 the book are chosen in one place, and choosing one is also how you leave the
-last. When the book is not simply in order, a chip in the status bar says where
-it is reading from, or what run of practice is under way.
+last.
 
-Above it sit the two errands: **Explore** and **Review**, both labels always on
-screen, the live one pressed. Three links used to say the same two things one at
+The status bar leads with the two errands: **Explore** and **Review**, both
+labels always on screen, the live one pressed. Three links used to say the same two things one at
 a time — *set these aside and explore*, *back to reviews*, *back to the book* —
 so whichever state you were not in was invisible, and the one you were in looked
 like the only one there was.
 
-The bar also names **what is on screen and why** in one word — `review`, `new`,
-`drill`, `revisiting`, `vocabulary` — because for a long time it named exactly
+Beside the switch the bar names **what is on screen and why** in one word —
+`review`, `new`, `drill`, `revisiting`, `vocabulary` — and a `drill` carries
+its run's count with it, because for a long time it named exactly
 one of them. A card come back on schedule, a topic you asked to stay on and a
 topic the book has come back to are the same four sentences under the same
 title, and only *new* was ever said out loud, so "why am I being shown this"
@@ -359,7 +359,7 @@ are waiting and on the book when none are, switching is immediate rather than
 book by itself. Which errand you are on is not written down: a pile of reviews
 is exactly the thing a saved preference should not be able to hide, so every
 launch puts it back in front of you. With nothing due the switch greys out —
-there is no pile to go back to. The accent goes green while exploring, the same
+there is no pile to go back to. The accent goes green while reviewing, the same
 variable every button and meter already reads, so the app is a different colour
 for as long as it is a different errand.
 

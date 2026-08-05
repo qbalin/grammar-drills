@@ -226,25 +226,6 @@ export function App({ content, session, storage }: Props) {
   const overall = useMemo(() => session.overallPercent(), [session, tick]);
   const stats = useMemo(() => session.stats(), [session, tick]);
   const dueNow = stats.dueTopics + stats.dueVocab;
-  /**
-   * The run of practice under way, and nothing at all when the book is simply
-   * being read.
-   *
-   * Reading on says nothing here because the row above already says it: in
-   * explore mode the topic on screen *is* where the book has got to, and a
-   * chip repeating it under its own name would read as a second, different
-   * thing. A run is not repetition — it carries how far through it you are.
-   */
-  const focusLabel = useMemo(() => {
-    const run = session.practiseRun();
-    if (!run) return null;
-    const progress = session.practice(run.sectionId);
-    const title = content.getSection(run.sectionId)?.title ?? "this topic";
-    return progress
-      ? `practising ${title} · ${progress.done}/${progress.total}`
-      : null;
-  }, [session, tick, content]);
-
   // The words behind the question on screen. `dictLoading` is a dependency on
   // purpose: everything looked up before the fetch landed resolved to nothing,
   // and those rows must not be the ones kept.
@@ -854,6 +835,12 @@ export function App({ content, session, storage }: Props) {
     sweep: "revisiting",
     vocab: "vocabulary",
   };
+  // How far through a run of practice you are, said where the round is already
+  // named. It used to be a chip of its own reading "practising <topic> · 2/5",
+  // which spent a whole row repeating the title the row below carries. Only a
+  // drill has a run behind it, so only a drill counts.
+  const runProgress =
+    badge === "drill" && sectionId ? session.practice(sectionId) : null;
 
   const schedule = sectionId ? session.previewTopic(sectionId) : undefined;
   // Read on the graded screen, where the grade has not been given yet — so the
@@ -866,62 +853,87 @@ export function App({ content, session, storage }: Props) {
     // different enough to be worth telling apart from across the room, and a
     // colour does that before any word is read.
     <div className="app" data-mode={mode}>
-      {/* Two rows, because three tap targets and a count leave a phone-width
-          line no room for a title — and Bennett's titles run to
-          "Verbs in -io of the Third Conjugation". The topic gets its own line
-          and the whole width. */}
+      {/* Two rows, because the switch, the round's badge and four tap targets
+          leave a phone-width line no room for a title — and Bennett's titles
+          run to "Verbs in -io of the Third Conjugation". The topic gets the
+          second line, sharing it only with the count, which is short and
+          right-aligned and leaves the title everything else. */}
       <header className="status">
         <div className="status__row">
+          {/* The two errands, both always on screen. Three links used to say
+              the same two things one at a time — "set these aside and
+              explore", "back to reviews", "back to the book" — so whichever
+              state you were not in was invisible, and the one you were in
+              looked like the only one there was.
+
+              Both halves grey out together when nothing is due: with no pile
+              to go back to, Review is not a place to be, and dimming the pair
+              says so better than a live button that would bounce straight
+              back. */}
+          <div className="modes" role="group" aria-label="What to study">
+            <button
+              className="modes__pick"
+              aria-pressed={mode === "explore"}
+              disabled={dueNow === 0}
+              onClick={() => chooseMode("explore")}
+            >
+              Explore
+            </button>
+            <button
+              className="modes__pick"
+              aria-pressed={mode === "review"}
+              disabled={dueNow === 0}
+              onClick={() => chooseMode("review")}
+            >
+              Review
+            </button>
+          </div>
           {badge && (
-            <span className={`badge badge--${badge}`}>{badgeLabel[badge]}</span>
-          )}
-          {/* The count is the natural way in to the schedule: it is already
-              the answer to "how much is waiting", and the sheet is the rest of
-              that answer. */}
-          <button
-            className="status__counts"
-            onClick={() => setOverlay({ t: "schedule" })}
-            aria-label="What is coming up"
-          >
-            {/* What is due is what is due, on either errand. It used to read
-                "N waiting" while exploring, which was a second number for the
-                same pile and made the switch look like it had changed it. */}
-            {dueNow > 0 ? `${dueNow} due` : `${stats.vocab} words`}
-          </button>
-          <span className="status__spacer" />
-          {/* Decoration, and hidden from screen readers on purpose: it says
-              nothing that is not already in Settings, and announcing every
-              push would talk over the question. */}
-          {floppy && (
-            <span className={`floppy floppy--${floppy}`} aria-hidden="true">
-              💾
+            <span className={`badge badge--${badge}`}>
+              {badgeLabel[badge]}
+              {runProgress ? ` ${runProgress.done}/${runProgress.total}` : ""}
             </span>
           )}
-          {/* Offered only while there is a grade to take back, and on whatever
-              screen the grade landed you on. */}
-          {undo && (
+          <span className="status__spacer" />
+          {/* The tools travel together, and closed up: each is a tap target
+              with its own margin around the glyph, so the row's gap between
+              them was width spent twice. On a 375px phone that width is the
+              difference between the switch fitting on this line and not. */}
+          <div className="status__tools">
+            {/* Decoration, and hidden from screen readers on purpose: it says
+                nothing that is not already in Settings, and announcing every
+                push would talk over the question. */}
+            {floppy && (
+              <span className={`floppy floppy--${floppy}`} aria-hidden="true">
+                💾
+              </span>
+            )}
+            {/* Offered only while there is a grade to take back, and on
+                whatever screen the grade landed you on. */}
+            {undo && (
+              <button
+                className="iconbtn"
+                onClick={undoGrade}
+                aria-label="Undo last grade"
+              >
+                ↺
+              </button>
+            )}
             <button
               className="iconbtn"
-              onClick={undoGrade}
-              aria-label="Undo last grade"
+              onClick={() => setOverlay({ t: "map" })}
+              aria-label="Grammar index"
             >
-              ↺
+              📖
             </button>
-          )}
-          <button
-            className="iconbtn"
-            onClick={() => setOverlay({ t: "map" })}
-            aria-label="Grammar index"
-          >
-            📖
-          </button>
-          <button
-            className="iconbtn"
-            onClick={() => setOverlay({ t: "settings" })}
-            aria-label="Settings"
-          >
-            ⋯
-          </button>
+            <button
+              className="iconbtn"
+              onClick={() => setOverlay({ t: "settings" })}
+              aria-label="Settings"
+            >
+              ⋯
+            </button>
+          </div>
         </div>
         <div className="status__row">
           {badge === "vocab" ? (
@@ -949,38 +961,21 @@ export function App({ content, session, storage }: Props) {
           ) : (
             <span className="status__title">{profile.ui.appName}</span>
           )}
-        </div>
-        {/* The two errands, both always on screen. Three links used to say the
-            same two things one at a time — "set these aside and explore",
-            "back to reviews", "back to the book" — so whichever state you were
-            not in was invisible, and the one you were in looked like the only
-            one there was.
-
-            Both halves grey out together when nothing is due: with no pile to
-            go back to, Review is not a place to be, and dimming the pair says
-            so better than a live button that would bounce straight back. */}
-        <div className="status__row status__focus">
-          <div className="modes" role="group" aria-label="What to study">
-            <button
-              className="modes__pick"
-              aria-pressed={mode === "explore"}
-              disabled={dueNow === 0}
-              onClick={() => chooseMode("explore")}
-            >
-              Explore
-            </button>
-            <button
-              className="modes__pick"
-              aria-pressed={mode === "review"}
-              disabled={dueNow === 0}
-              onClick={() => chooseMode("review")}
-            >
-              Review
-            </button>
-          </div>
-          {mode === "explore" && focusLabel && (
-            <span className="badge badge--focus">{focusLabel}</span>
-          )}
+          {/* The count is the natural way in to the schedule: it is already
+              the answer to "how much is waiting", and the sheet is the rest of
+              that answer. It sits at the end of this line rather than the one
+              above because the switch took that line's spare width, and the
+              title has ellipsis to give where the count has none. */}
+          <button
+            className="status__counts"
+            onClick={() => setOverlay({ t: "schedule" })}
+            aria-label="What is coming up"
+          >
+            {/* What is due is what is due, on either errand. It used to read
+                "N waiting" while exploring, which was a second number for the
+                same pile and made the switch look like it had changed it. */}
+            {dueNow > 0 ? `${dueNow} due` : `${stats.vocab} words`}
+          </button>
         </div>
       </header>
 

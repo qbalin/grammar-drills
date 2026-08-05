@@ -108,12 +108,11 @@ button {
   padding-top: var(--safe-top);
 }
 
-/* One accent per errand. Reviewing keeps the gold; exploring moves the accent
+/* One accent per errand. Exploring keeps the gold; reviewing moves the accent
    to the green the progress meters already use for ground gained. It is the
    same variable, so every button, ring and meter follows without knowing which
-   errand it is on, and the header takes a hairline of it so the shift is
-   legible even on a screen with no accent showing. */
-.app[data-mode="explore"] {
+   errand it is on. */
+.app[data-mode="review"] {
   --gold: var(--green);
   --gold-dim: var(--green-dim);
 }
@@ -131,12 +130,6 @@ button {
   padding: 0.35rem 1.1rem 0.2rem;
   font-size: 0.8rem;
   color: var(--text-dim);
-  /* Held transparent so lighting it up in a mode costs no reflow. */
-  border-bottom: 1px solid transparent;
-}
-
-.app[data-mode="explore"] .status {
-  border-bottom-color: var(--gold-dim);
 }
 
 .status__row {
@@ -146,12 +139,22 @@ button {
   min-width: 0;
 }
 
-.status__row:last-child {
-  align-items: baseline;
+/* The line with the switch on it has the least room to give, and nothing on
+   it can ellipsis: it is a pill, a badge and a band of tap targets, all of
+   which are the width they are. The gaps are what it has to spend. */
+.status__row:first-child {
+  gap: 0.4rem;
 }
 
 .status__spacer {
   flex: 1;
+}
+
+/* Closed up on purpose — see the note in app.tsx. */
+.status__tools {
+  display: flex;
+  align-items: center;
+  flex: none;
 }
 
 /* Ref and title are one tap target: both name the topic, and either is the
@@ -204,6 +207,7 @@ span.status__title {
 /* Also the way in to the schedule: the count is already the short answer to
    "how much is waiting", and the sheet is the long one. */
 .status__counts {
+  flex: none;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
   background: none;
@@ -241,10 +245,16 @@ span.status__title {
   from { opacity: 0; transform: translateY(-0.2rem); }
 }
 
+/* It shares the top line with the switch, the count and up to four icons, so
+   it neither wraps nor shrinks — and a drill carries a climbing count, which
+   tabular figures keep from shifting the word beside it. */
 .badge {
+  flex: none;
+  white-space: nowrap;
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
   padding: 0.1rem 0.4rem;
   border-radius: 999px;
   border: 1px solid currentColor;
@@ -286,11 +296,6 @@ span.status__title {
    Both halves grey out together when nothing is due. There is no pile to go
    back to, so Review is not a place to be, and dimming the pair says that
    better than a live button that would bounce you straight back. */
-.status__focus {
-  gap: 0.5rem;
-  padding-top: 0.15rem;
-}
-
 .modes {
   display: inline-flex;
   flex: none;
@@ -300,13 +305,13 @@ span.status__title {
   background: var(--ink-sunken);
 }
 
-/* Deliberately under `--tap`: this row shares a phone-width status bar with a
-   focus chip, and a thumb-sized pill here would push the chip off it. The pair
-   together is wider than a thumb, and nothing else sits close enough to be hit
-   by mistake. */
+/* Deliberately under `--tap`: the switch shares a phone-width line with the
+   round badge, the count and up to four icons, and a thumb-sized pill here
+   would push them off it. The pair together is wider than a thumb, and the
+   nearest other target is a gap away. */
 .modes__pick {
   min-height: 1.9rem;
-  padding: 0.25rem 0.8rem;
+  padding: 0.25rem 0.5rem;
   color: var(--text-faint);
   font: inherit;
   font-size: 0.7rem;
@@ -323,19 +328,13 @@ span.status__title {
   opacity: 0.45;
 }
 
-.badge--focus {
-  color: var(--gold);
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 0.7rem;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
+/* Full height, but narrower than `--tap` across: the top line now carries the
+   switch as well, and four thumb-wide boxes there would push the last one off
+   a 375px screen. The glyph keeps a thumb's worth of vertical travel and the
+   row of them is one continuous band, so a hit that lands between two still
+   lands on one of them. */
 .iconbtn {
-  min-width: var(--tap);
+  min-width: 1.95rem;
   min-height: var(--tap);
   display: grid;
   place-items: center;
@@ -547,9 +546,9 @@ span.status__title {
 
 /* Fixed width so the label does not shift when the triangle turns. */
 .crib__caret {
-  width: 1rem;
+  width: 1.2rem;
   flex: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1;
   text-align: center;
   color: var(--text-dim);
@@ -1037,7 +1036,7 @@ span.status__title {
 
 .pager__arrow {
   color: var(--gold-dim);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .pager__ref {
@@ -1241,9 +1240,9 @@ span.status__title {
 /* Same treatment as the crib's caret: the row is the target, and the triangle
    should look like it belongs to something you can hit. */
 .row__chev {
-  width: 1rem;
+  width: 1.2rem;
   flex: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1;
   text-align: center;
   color: var(--text-dim);
