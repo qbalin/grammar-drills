@@ -31,14 +31,9 @@ export function Answering({
   vocabulary,
 }: {
   question: Question;
-  /**
-   * Where this question sits in the test, and how many it holds. Absent during
-   * placement, which serves one question per probe: the counter would read
-   * "1/4" on every screen — the test's size, not the run's length — and the
-   * header already carries the number that means something.
-   */
-  index?: number;
-  total?: number;
+  /** Where this question sits in the test, and how many the test holds. */
+  index: number;
+  total: number;
   value: string;
   onChange: (v: string) => void;
   onSubmit: () => void;
@@ -55,7 +50,7 @@ export function Answering({
       <div className="study__scroll">
         <p className="eyebrow">
           {profile.ui.promptDirection}
-          {total ? ` · ${(index ?? 0) + 1}/${total}` : ""}
+          {total > 0 ? ` · ${index + 1}/${total}` : ""}
         </p>
         <p className="prompt">{question.prompt}</p>
         {vocabulary}
@@ -114,7 +109,6 @@ export function Graded({
   index,
   total,
   schedule,
-  labels,
   marks,
   marking,
   onGrade,
@@ -131,11 +125,10 @@ export function Graded({
   submitted: string;
   /** True when the answer was shown rather than written. */
   revealed: boolean;
-  /** As on `Answering`: absent during placement. */
-  index?: number;
-  total?: number;
+  /** As on `Answering`. */
+  index: number;
+  total: number;
   schedule?: Record<Rating, Date>;
-  labels?: Record<Rating, string>;
   /** What has been picked out so far, riding along until the grade stores it. */
   marks: AttemptMarks;
   /** Whether a tap marks a word rather than doing nothing. */
@@ -164,7 +157,7 @@ export function Graded({
       <div className="study__scroll">
         <p className="eyebrow">
           {profile.ui.promptDirection}
-          {total ? ` · ${(index ?? 0) + 1}/${total}` : ""}
+          {total > 0 ? ` · ${index + 1}/${total}` : ""}
         </p>
         <p className="prompt">
           <Sentence
@@ -229,7 +222,7 @@ export function Graded({
           {marking ? "✓ done marking" : "✱ mark"}
         </button>
       </div>
-      <GradeBar onGrade={onGrade} schedule={schedule} labels={labels} />
+      <GradeBar onGrade={onGrade} schedule={schedule} />
     </>
   );
 }
@@ -294,9 +287,13 @@ export function VocabReview({
 }
 
 /**
- * Nothing is due. A rest screen rather than an empty one: the work is finished,
- * which is the good outcome, and the map is right there for anyone who wants to
- * push on anyway.
+ * The book is worked out. A rest screen rather than an empty one: the work is
+ * finished, which is the good outcome, and the index is right there for anyone
+ * who wants to push on anyway.
+ *
+ * Only ever reached from exploring. Clearing the reviews throws the switch
+ * back to the book rather than stopping, so "nothing due" is a thing the app
+ * passes through and never a screen it leaves you on.
  */
 export function Rest({
   overall,
@@ -312,7 +309,7 @@ export function Rest({
   return (
     <div className="centered">
       <Ring percent={overall} />
-      <h1>Nothing due.</h1>
+      <h1>The book is worked out.</h1>
       <p>
         {nextDue
           ? `The next topic comes back ${nextDue.toLocaleDateString(undefined, {
@@ -331,6 +328,53 @@ export function Rest({
         </button>
         <button className="btn" onClick={onOpenSchedule}>
           See what's coming
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * A practice run worked out.
+ *
+ * The loop stops here rather than moving on. "Stay on this topic" was an
+ * instruction, and sliding quietly off it is not how an instruction ends — the
+ * student would find a different topic on screen and have to work out that
+ * anything had happened. It is also the one moment when "what now" is a real
+ * question, so it is asked, with the three answers to it.
+ */
+export function Practised({
+  title,
+  total,
+  onAgain,
+  onBook,
+  onOpenMap,
+}: {
+  title: string;
+  /** How many questions the bank holds — what another run would be for. */
+  total: number;
+  onAgain: () => void;
+  onBook: () => void;
+  onOpenMap: () => void;
+}) {
+  return (
+    <div className="centered">
+      <h1>All practised.</h1>
+      <p>
+        Every question on {title} has been through this run.
+      </p>
+      <div
+        className="actions"
+        style={{ width: "100%", maxWidth: "18rem", flexDirection: "column" }}
+      >
+        <button className="btn btn--primary" onClick={onAgain}>
+          Practise all {total} again
+        </button>
+        <button className="btn" onClick={onBook}>
+          Back to the book in order
+        </button>
+        <button className="btn btn--quiet" onClick={onOpenMap}>
+          Grammar index
         </button>
       </div>
     </div>

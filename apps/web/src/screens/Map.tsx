@@ -34,7 +34,7 @@ function band(t: TopicProgress): number {
 function masteryLabel(t: TopicProgress): string {
   if (t.mastery === undefined) return "not started";
   const pct = Math.round((((t.mastery ?? 1) - 1) / 3) * 100);
-  return `${pct}% mastered${t.assumed ? " (assumed from placement)" : ""}`;
+  return `${pct}% mastered`;
 }
 
 /** Everything about a topic's standing, in words rather than in colour. */
@@ -66,7 +66,7 @@ function TopicRows({
           {/* The mastery colour is kept as a swatch, but it is now a second way
               of saying what the row already says. */}
           <span
-            className={`band band--m${band(t)}${t.assumed ? " band--assumed" : ""}`}
+            className={`band band--m${band(t)}`}
             aria-hidden="true"
           />
           <span className="row__main">
@@ -181,13 +181,13 @@ function Colophon() {
 
 /**
  * One topic, chosen from the map: what it is, how it has gone, and the things
- * worth doing with it. Reading the grammar and being quizzed once are the two
- * that leave nothing behind.
+ * worth doing with it.
  *
- * The other two move where study happens, which is the point of having a map
- * at all: **Study from here** takes the syllabus up at this topic, so its area
- * carries on from it instead of handing back chapter one; **Practise this**
- * stays put and works through the questions a four-question test never reached.
+ * Reading the grammar leaves nothing behind. The other three are the whole of
+ * what exploring can be doing, gathered here so that choosing one is also how
+ * you leave the last: **Book order** reads from the earliest topic still short
+ * of mastery, **Study from here** reads on from this one instead, and
+ * **Practise these** stays put and works this topic's questions out.
  */
 export function TopicSheet({
   topic,
@@ -195,7 +195,7 @@ export function TopicSheet({
   questionCount,
   onClose,
   onRead,
-  onQuiz,
+  onBookOrder,
   onStudyFrom,
   onDrill,
   onQuestions,
@@ -207,7 +207,7 @@ export function TopicSheet({
   questionCount: number;
   onClose: () => void;
   onRead: () => void;
-  onQuiz: () => void;
+  onBookOrder: () => void;
   onStudyFrom: () => void;
   onDrill: () => void;
   onQuestions: () => void;
@@ -226,22 +226,20 @@ export function TopicSheet({
         </button>
         <button
           className="btn btn--primary"
-          onClick={onQuiz}
-          disabled={!topic.hasTests}
-        >
-          Quiz me
-        </button>
-      </div>
-      <div className="actions">
-        <button
-          className="btn"
           onClick={onStudyFrom}
           disabled={!topic.hasTests}
         >
           Study from here
         </button>
-        <button className="btn" onClick={onDrill} disabled={left <= 0}>
-          {left > 0 ? `Practise these ${left}` : "All practised"}
+      </div>
+      <div className="actions">
+        {/* Never disabled once the topic has tests: a bank with nothing
+            unanswered left is exactly the one a second run is for. */}
+        <button className="btn" onClick={onDrill} disabled={!topic.hasTests}>
+          {left > 0 ? `Practise these ${left}` : `Practise all ${topic.questions}`}
+        </button>
+        <button className="btn" onClick={onBookOrder}>
+          Book order
         </button>
       </div>
       <div className="actions">

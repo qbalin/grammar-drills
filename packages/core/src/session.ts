@@ -13,9 +13,10 @@ import {
   emptyProgress,
   type Attempt,
   type AttemptMarks,
-  type Focus,
+  type LegacyProgress,
   type LemmaEntry,
-  type PlacementRun,
+  type Mode,
+  type PractiseRun,
   type Progress,
   type RoundDraft,
   type RoundVia,
@@ -32,9 +33,17 @@ const MASTERY_MAX = 4;
 
 export type Action =
   | { kind: "topic-review"; sectionId: string }
+  /** The topic the book has reached: never met, or met and come back to. */
   | { kind: "new-topic"; sectionId: string }
   /** More of a topic the student asked to stay on. */
   | { kind: "drill"; sectionId: string }
+  /**
+   * The practice run has nothing left to serve. Distinct from `done`, which
+   * means there is nothing to do at all: here there is plenty to do and the
+   * student asked to stay put, so the loop stops and says so rather than
+   * sliding onto a topic they did not ask for.
+   */
+  | { kind: "practised"; sectionId: string }
   | { kind: "vocab-review"; cardId: string }
   | { kind: "done" };
 
@@ -47,15 +56,13 @@ export interface TopicProgress {
   family: FamilyId;
   /** Cumulative score in [1, 4], or undefined if never graded. */
   mastery?: number;
-  /** Mastery taken from a passed placement rather than earned by grading. */
-  assumed: boolean;
   hasTests: boolean;
   due: boolean;
   /** Questions of this topic's bank that have been answered at least once. */
   answered: number;
   /** How many the bank holds — a test of four never exhausts it. */
   questions: number;
-  /** Where this topic's family resumes; the topic a sweep would reach first. */
+  /** Where the book cursor stands; the topic exploring would reach first. */
   frontier: boolean;
 }
 
@@ -102,6 +109,17 @@ function fraction(mastery: number | undefined): number {
   return ((mastery ?? MASTERY_MIN) - MASTERY_MIN) / (MASTERY_MAX - MASTERY_MIN);
 }
 
+const ROUND_VIA: readonly RoundVia[] = ["review", "new", "drill", "sweep"];
+
+/**
+ * Whether a saved round says something this version still understands. Written
+ * against the values rather than the type so a `via` that has since been
+ * retired — "quiz" — is caught rather than trusted.
+ */
+function isRoundVia(via: unknown): via is RoundVia {
+  return ROUND_VIA.some((v) => v === via);
+}
+
 /**
  * The runtime session engine. Holds the student's Progress and, given the
  * frozen Content, decides what to do next and applies self-grades — all
@@ -112,7 +130,7 @@ export class Session {
   private p: Progress;
 
   /**
-   * The pack's families, in the order the map is drawn and placement walks.
+   * The pack's families, in the order the grammar index is drawn.
    * Read through here rather than imported, so the engine carries no opinion
    * about which families a language has.
    */
@@ -131,246 +149,228 @@ export class Session {
   ) {
     this.p = progress ?? emptyProgress(content.profile.citationsVersion);
     // Progress files written before mastery tracking have no map; there is no
-    // migration layer, so default it here. Same for the answer trail, the
-    // stored placement run, and the citation generation — a file written before
-    // any of them simply has none.
+    // migration layer, so default it here. Same for the answer trail and the
+    // citation generation — a file written before either simply has none.
     this.p.topicMastery ??= {};
     this.p.attempts ??= {};
-    this.p.placement ??= null;
     this.p.citationsVersion ??= 1;
-    // An empty frontier map means every family starts at its first topic,
-    // which is what a file written before per-family frontiers was doing.
-    // Nothing is derived from the old single `frontier`: it was never read, so
-    // deriving from it now would move a returning student.
-    this.p.frontiers ??= {};
-    this.p.focus ??= { kind: "sweep" };
     this.p.openRound ??= null;
-    this.p.exploring ??= null;
-    // A placement stored in the old evenly-spaced shape cannot be resumed by
-    // the per-family walk. It is at most a few sentences; start over.
-    if (this.p.placement && !("familyIndex" in this.p.placement)) {
-      this.p.placement = null;
-    }
-    // Likewise a round stored before it recorded where the student was in it.
-    // There is nowhere to resume such a round to, and the only job it had —
-    // holding the card at one rep — it has already finished doing.
+    this.p.bookAt ??= null;
+    this.p.practise ??= null;
+    this.migrate();
+    // A round stored before it recorded where the student was in it. There is
+    // nowhere to resume such a round to, and the only job it had — holding the
+    // card at one rep — it has already finished doing.
     if (this.p.openRound && !("answered" in this.p.openRound)) {
       this.p.openRound = null;
     }
   }
 
-  // --- placement -----------------------------------------------------------
-
   /**
-   * True on a fresh deck, and true again for a placement left half-finished.
+   * Fold what older versions of this app wrote down into what it writes now,
+   * and drop the rest.
    *
-   * The second clause is what makes the test survive a restart: passing a probe
-   * fills `knownSections`, so the fresh-deck test alone would report "no
-   * placement needed" the moment one was passed, and everything after it would
-   * be skipped. The stored run outranks that.
+   * Read through `LegacyProgress` rather than a cast: these fields are real,
+   * they are on disk in every returning student's file, and the type system
+   * should be told about them rather than lied to.
    */
-  needsPlacement(): boolean {
-    if (this.p.placementDone) return false;
-    if (this.p.placement) return true;
-    return (
-      Object.keys(this.p.topicCards).length === 0 &&
-      this.p.knownSections.length === 0
-    );
+  private migrate(): void {
+    const old: LegacyProgress = this.p;
+
+    // Placement is gone, but what it wrote down was a claim the student made
+    // about themselves, and the map has always drawn those sections as fully
+    // mastered. So they become exactly that: the bars are unchanged, and the
+    // book cursor — which is placed by mastery — steps past them as it did.
+    if (old.knownSections) {
+      for (const id of old.knownSections) this.p.topicMastery[id] ??= MASTERY_MAX;
+      delete old.knownSections;
+    }
+    delete old.placement;
+    delete old.placementDone;
+    // Which errand you are on resets with every launch; a file cannot say.
+    delete old.exploring;
+
+    // One book-wide cursor replaces the per-family map, and only where the
+    // student had actually asked for one: a family focus is what "study from
+    // here" used to leave behind, and its frontier is where. A drill focus has
+    // no run marker to resume from, so it goes back to the book.
+    if (this.p.bookAt === null && old.focus?.kind === "family") {
+      this.p.bookAt = old.frontiers?.[old.focus.id] ?? null;
+    }
+    delete old.focus;
+    delete old.frontiers;
+
+    // "Quiz me" is gone. A round it opened is still four sentences on a topic,
+    // and what it was shown as is the honest answer — the same reading a round
+    // written before `via` existed gets.
+    const round = this.p.openRound;
+    if (round && !isRoundVia(round.via)) {
+      round.via = round.isNew ? "new" : "review";
+    }
   }
 
-  /** The placement run under way, or undefined if none was started. */
-  placementState(): PlacementRun | undefined {
-    return this.p.placement ?? undefined;
-  }
+  // --- what exploring is doing ---------------------------------------------
 
   /**
-   * Start (or restart) a placement run and write it down. Returns the first
-   * probe, or null when the bundle has no teachable topic at all.
-   */
-  beginPlacement(): PlacementRun | null {
-    const run = this.openFamily(0);
-    this.p.placement = run;
-    this.touch();
-    return run;
-  }
-
-  /**
-   * The section the current probe is asking about, if a run is under way.
-   */
-  placementProbe(): string | undefined {
-    return this.p.placement?.probe;
-  }
-
-  /**
-   * How far through the run is, for a line that says so. `families` counts
-   * only the families this bundle has topics for.
-   */
-  placementProgress():
-    | { family: FamilyId; done: number; families: number; narrowing: boolean }
-    | undefined {
-    const run = this.p.placement;
-    if (!run) return undefined;
-    const probed = this.families.filter(
-      (f) => this.familyTopics(f.id).length > 0,
-    ).map((f) => f.id);
-    const current = this.families[run.familyIndex]?.id;
-    if (!current) return undefined;
-    return {
-      family: current,
-      done: Math.max(0, probed.indexOf(current)),
-      families: probed.length,
-      // The second probe of a family is not a new area, it is the same one
-      // being pinned down — so the counter holds and the word says why.
-      narrowing: run.asked > 0,
-    };
-  }
-
-  /**
-   * Answer the probe on the table and move the run on. Returns the next probe,
-   * or null when placement is over (which also ends the run).
+   * The section exploring will serve next, placing the cursor if nothing has.
    *
-   * A failed probe settles that one family and moves to the next — it does not
-   * stop the test. Stopping at the first failure was the whole reason a
-   * student who knows the declensions but not the verbs could not say so.
+   * An unplaced cursor lands on the earliest topic short of the top band,
+   * which is what a fresh deck wants and what choosing book order asks for.
+   * Null only when the whole book is mastered.
    */
-  answerPlacement(passed: boolean): PlacementRun | null {
-    const run = this.p.placement;
-    if (!run) return null;
-    const family = this.families[run.familyIndex]?.id;
-    if (!family) {
-      this.endPlacement();
-      return null;
-    }
-    const topics = this.familyTopics(family);
-    const index = topics.indexOf(run.probe);
-    const highest = passed ? Math.max(run.passed, index) : run.passed;
-
-    // A second probe is only worth asking above one that passed: below it,
-    // there is nothing left to narrow.
-    const second = passed && run.asked === 0 ? this.upperProbe(topics, index) : -1;
-    if (second >= 0) {
-      const next = { ...run, asked: 1, passed: highest, probe: topics[second]! };
-      this.p.placement = next;
-      this.touch();
-      return next;
-    }
-
-    this.settleFamily(family, topics, highest);
-    const next = this.openFamily(run.familyIndex + 1);
-    this.p.placement = next;
-    if (!next) {
-      this.endPlacement();
-      return null;
-    }
-    this.touch();
-    return next;
+  bookCursor(): string | null {
+    const at = this.p.bookAt;
+    if (at !== null && at !== undefined && this.content.getSection(at)) return at;
+    return this.earliestUnmastered();
   }
-
-  /** Finish placement; normal study then begins at each family's frontier. */
-  endPlacement(): void {
-    this.p.placementDone = true;
-    this.p.placement = null;
-    this.touch();
-  }
-
-  // --- focus ---------------------------------------------------------------
 
   /**
-   * Where new topics are coming from, with a spent focus reported as the sweep
-   * it has effectively become — a drilled-out topic or a finished family is no
-   * longer somewhere to be.
+   * Step the cursor on to the next section of the book, whatever happened on
+   * this one.
+   *
+   * Forward regardless of the grade, and without skipping what is already
+   * mastered. A cursor that waited for mastery could not move past a topic
+   * going badly, which is the one topic a student most needs to be able to
+   * leave; and a cursor that skipped would make "read on from here" mean
+   * something other than reading on. Past the end it wraps to whatever the
+   * book still has short of mastery, so nothing is stranded behind it.
    */
-  focusState(): Focus {
-    const f = this.p.focus;
-    if (f.kind === "topic") {
-      const { answered, total } = this.coverage(f.sectionId);
-      return total > 0 && answered < total ? f : { kind: "sweep" };
-    }
-    if (f.kind === "family") {
-      return this.firstAvailable(this.content.familyOf(f.id)) ? f : { kind: "sweep" };
-    }
-    return f;
+  advanceCursor(): void {
+    const ids = this.content.topicIds();
+    const at = this.bookCursor();
+    const next = at === null ? -1 : ids.indexOf(at) + 1;
+    this.p.bookAt =
+      next > 0 && next < ids.length ? ids[next]! : this.earliestUnmastered();
+    this.touch();
   }
 
-  setFocus(focus: Focus): void {
-    this.p.focus = focus;
+  /** The first topic in book order that has not reached the top band. */
+  private earliestUnmastered(): string | null {
+    return this.content.topicIds().find((id) => !this.mastered(id)) ?? null;
+  }
+
+  /**
+   * The top mastery band — the bar full. Scores land on exact halves, so this
+   * is an equality test wearing a comparison's clothes.
+   */
+  private mastered(sectionId: string): boolean {
+    return (this.p.topicMastery[sectionId] ?? 0) >= MASTERY_MAX;
+  }
+
+  /**
+   * Whether this topic has ever been graded. What tells a genuinely new topic
+   * from one the book has come back to, which is the difference between
+   * teaching before testing and simply asking.
+   */
+  everGraded(sectionId: string): boolean {
+    return this.p.topicMastery[sectionId] !== undefined;
+  }
+
+  /** Read the book in order, from the earliest thing not yet mastered. */
+  bookOrder(): void {
+    this.p.practise = null;
+    this.p.bookAt = this.earliestUnmastered();
     this.touch();
   }
 
   /**
-   * Take the syllabus up from here: this section's family resumes at it, and
-   * that family becomes the focus. The topics behind it are skipped rather
-   * than marked known — the map goes on showing them unstudied, because they
-   * are.
+   * Take the book up from here and read on to the end of it, families and all.
+   *
+   * The topics behind it are skipped rather than marked known — the map goes
+   * on showing them unstudied, because they are — and the walk comes back
+   * round to them once it runs off the end.
    */
   studyFrom(sectionId: string): void {
-    const section = this.content.getSection(sectionId);
-    if (!section) return;
-    const family = this.content.familyOf(section.family);
-    this.p.frontiers[family] = sectionId;
-    this.p.focus = { kind: "family", id: family };
+    if (!this.content.getSection(sectionId)) return;
+    this.p.practise = null;
+    this.p.bookAt = sectionId;
     this.touch();
   }
 
-  /** Stay on this topic and work the rest of its bank. */
-  drillTopic(sectionId: string): void {
-    this.setFocus({ kind: "topic", sectionId });
-  }
-
-  // --- reviews set aside ------------------------------------------------------
-
-  /**
-   * The due cards this explore run is holding back: the ones that were already
-   * waiting when it began. A card reviewed since — a topic just learned and
-   * graded "again", due in a minute — is not one of them, so exploring keeps
-   * adding to the deck and keeps answering for what it added.
-   *
-   * Empty when no run is on, which is what makes every caller below simple.
-   */
-  private heldByExploring(now: Date): { topics: Set<string>; vocab: Set<string> } {
-    const run = this.p.exploring;
-    if (!run) return { topics: new Set(), vocab: new Set() };
-    const since = new Date(run.since);
-    const held = (card: SerializedCard | undefined) =>
-      !card?.last_review || new Date(card.last_review) < since;
-    return {
-      topics: new Set(
-        this.dueTopicIds(now).filter((id) => held(this.p.topicCards[id])),
-      ),
-      vocab: new Set(
-        this.dueVocabIds(now).filter((id) => held(this.p.vocabCards[id]?.fsrs)),
-      ),
-    };
-  }
-
-  /**
-   * Whether the student has put a backlog aside to go and learn something,
-   * reported false the moment there is no longer a backlog being held — the
-   * same shape as `focusState`, where a state with nothing left to do is not a
-   * state to be in.
-   *
-   * This is deliberately not "reviews are off". What is held comes back the
-   * moment there is nothing left to learn; what it buys is the order.
-   */
-  exploring(now: Date = new Date()): boolean {
-    return this.exploringHeld(now) > 0;
-  }
-
-  /** How many reviews the run is holding — the number the status bar carries. */
-  exploringHeld(now: Date = new Date()): number {
-    const held = this.heldByExploring(now);
-    return held.topics.size + held.vocab.size;
-  }
-
-  /** Set the backlog aside as it stands, or pick it back up. */
-  setExploring(on: boolean, now: Date = new Date()): void {
-    this.p.exploring = on ? { since: now.toISOString() } : null;
+  /** Stay on this topic and work a fresh run of its questions out. */
+  drillTopic(sectionId: string, now: Date = new Date()): void {
+    this.p.practise = { sectionId, since: now.toISOString() };
     this.touch();
   }
 
-  /** Commit a spent run, exactly as `gradeTopic` commits a spent focus. */
-  private settleExploring(now: Date): void {
-    if (this.p.exploring && !this.exploring(now)) this.p.exploring = null;
+  /** The run of practice in flight, if the topic has anything to ask at all. */
+  practiseRun(): PractiseRun | null {
+    const run = this.p.practise;
+    if (!run) return null;
+    return this.content.testsFor(run.sectionId).length > 0 ? run : null;
+  }
+
+  /**
+   * How a practice run stands: how many of its questions it has served, and
+   * how many it is for.
+   */
+  practice(sectionId: string): { done: number; total: number } | null {
+    const run = this.practiseRun();
+    if (!run || run.sectionId !== sectionId) return null;
+    const { set, served } = this.runSet(sectionId, run.since);
+    let done = 0;
+    for (const prompt of set) if (served.has(prompt)) done += 1;
+    return { done, total: set.size };
+  }
+
+  /**
+   * The next test of the practice run, or undefined once the run is worked out
+   * (which `next` will already have said).
+   *
+   * Tests are picked by how much of the run they still hold, tie-broken by
+   * whichever was served longest ago — so a run over a bank that has already
+   * been swept leads with what the student has not seen for longest.
+   */
+  servePractice(sectionId: string): Test | undefined {
+    const run = this.practiseRun();
+    if (!run || run.sectionId !== sectionId) return undefined;
+    const { set, served } = this.runSet(sectionId, run.since);
+    const left = (t: Test) =>
+      t.questions.filter((q) => set.has(q.prompt) && !served.has(q.prompt)).length;
+    const seen = this.p.seenTests[sectionId] ?? [];
+    const pick = this.content
+      .testsFor(sectionId)
+      .filter((t) => left(t) > 0)
+      // `seenTests` is in serve order, so a test's *last* mention is when it
+      // was last served — `indexOf` would rank a test served both first and
+      // most recently as the oldest. A never-served test (-1) leads.
+      .sort(
+        (a, b) => left(b) - left(a) || seen.lastIndexOf(a.id) - seen.lastIndexOf(b.id),
+      )[0];
+    return pick ? this.take(sectionId, [pick]) : undefined;
+  }
+
+  /** How many of the run's questions are still to come. */
+  private practiceLeft(run: PractiseRun): number {
+    const { set, served } = this.runSet(run.sectionId, run.since);
+    let left = 0;
+    for (const prompt of set) if (!served.has(prompt)) left += 1;
+    return left;
+  }
+
+  /**
+   * What one run is for, and what it has met.
+   *
+   * A first run is the questions a four-question test never reached; once
+   * there are none of those left, a run is the whole bank instead, which is
+   * what asking to practise a swept topic again can only mean. Both sets are
+   * read off the answer trail, so nothing has to be written down beside it and
+   * kept true.
+   *
+   * `before` is fixed for the life of the run — answers given during it are
+   * stamped at or after `since` — so which of the two sets this is cannot flip
+   * halfway through.
+   */
+  private runSet(
+    sectionId: string,
+    since: string,
+  ): { set: Set<string>; served: Set<string> } {
+    const trail = this.p.attempts[sectionId] ?? [];
+    const before = new Set(trail.filter((a) => a.at < since).map((a) => a.prompt));
+    const served = new Set(trail.filter((a) => a.at >= since).map((a) => a.prompt));
+    const bank = this.content.questionsFor(sectionId).map((q) => q.question.prompt);
+    const fresh = bank.filter((prompt) => !before.has(prompt));
+    return { set: new Set(fresh.length > 0 ? fresh : bank), served };
   }
 
   /** How much of a topic's bank has been answered at least once. */
@@ -386,74 +386,44 @@ export class Session {
   }
 
   /**
-   * Decide the next step. Pure query — presenting is the caller's job.
+   * Decide the next step, for the errand the caller is on. Pure query —
+   * presenting is the caller's job.
    *
-   * Reviews come first, because a card that is due is the whole point. An
-   * explore run does not change that rung so much as empty it: the pile that
-   * was already waiting when the run began drops to the bottom, while anything
-   * met during the run keeps its place at the top. So a new topic failed while
-   * exploring comes straight back, and the pile is served once there is nothing
-   * left to learn — deferred, never dropped, and `done` still means done.
+   * The two modes share no rung. Reviewing serves what is due and nothing
+   * else; exploring reads the book and nothing else. `done` therefore means
+   * two different true things — "nothing is waiting" and "the book is worked
+   * out" — and the caller, which knows which it asked for, is what says so.
+   *
+   * `now` stays the first argument so a call that only wants the reviews can
+   * go on being `next(now)`.
    */
-  next(now: Date = new Date()): Action {
-    const held = this.heldByExploring(now);
-
-    const dueTopic = this.earliestDueTopic(now, held.topics);
-    if (dueTopic) return { kind: "topic-review", sectionId: dueTopic };
-
-    const dueVocab = this.earliestDueVocab(now, held.vocab);
-    if (dueVocab) return { kind: "vocab-review", cardId: dueVocab };
-
-    const focus = this.focusState();
-    if (focus.kind === "topic") {
-      return { kind: "drill", sectionId: focus.sectionId };
+  next(now: Date = new Date(), mode: Mode = "review"): Action {
+    if (mode === "review") {
+      const dueTopic = this.earliestDueTopic(now);
+      if (dueTopic) return { kind: "topic-review", sectionId: dueTopic };
+      const dueVocab = this.earliestDueVocab(now);
+      if (dueVocab) return { kind: "vocab-review", cardId: dueVocab };
+      return { kind: "done" };
     }
 
-    const fresh = this.nextNewTopic();
-    if (fresh) return { kind: "new-topic", sectionId: fresh };
+    const run = this.practiseRun();
+    if (run) {
+      return this.practiceLeft(run) > 0
+        ? { kind: "drill", sectionId: run.sectionId }
+        : { kind: "practised", sectionId: run.sectionId };
+    }
 
-    // Nothing left to learn, so the run has nothing left to be for.
-    const backlogTopic = this.earliestDueTopic(now);
-    if (backlogTopic) return { kind: "topic-review", sectionId: backlogTopic };
-
-    const backlogVocab = this.earliestDueVocab(now);
-    if (backlogVocab) return { kind: "vocab-review", cardId: backlogVocab };
-
-    return { kind: "done" };
+    const ahead = this.bookCursor();
+    return ahead ? { kind: "new-topic", sectionId: ahead } : { kind: "done" };
   }
 
   /**
    * Choose a test for a section, preferring ones not served recently so the
    * same topic feels fresh across sessions. Records it as seen.
-   *
-   * `prefer: "unanswered"` is what a drill asks for: the test holding the most
-   * questions never yet answered, so working a topic sweeps its bank instead
-   * of circling the six tests the rotation happens to like.
    */
-  serveTest(
-    sectionId: string,
-    opts?: { prefer?: "unanswered" },
-  ): Test | undefined {
+  serveTest(sectionId: string): Test | undefined {
     const tests = this.content.testsFor(sectionId);
     if (tests.length === 0) return undefined;
-    if (opts?.prefer === "unanswered") {
-      const asked = new Set(
-        (this.p.attempts[sectionId] ?? []).map((a) => a.prompt),
-      );
-      let best: Test[] = [];
-      let most = 0;
-      for (const test of tests) {
-        const fresh = test.questions.filter((q) => !asked.has(q.prompt)).length;
-        if (fresh > most) {
-          most = fresh;
-          best = [test];
-        } else if (fresh === most && most > 0) {
-          best.push(test);
-        }
-      }
-      // Nothing unanswered left anywhere: fall through to the plain rotation.
-      if (most > 0) return this.take(sectionId, best);
-    }
     let seen = this.p.seenTests[sectionId] ?? [];
     let pool = tests.filter((t) => !seen.includes(t.id));
     if (pool.length === 0) {
@@ -560,8 +530,8 @@ export class Session {
    * to where it stood before the round and re-rates it with the worst grade
    * given so far, so four questions cost one rep instead of four, and a round
    * abandoned halfway still leaves a card that is the result of exactly one.
-   * Passing no `roundId` rates per call, which is what a placement probe — one
-   * sentence, one verdict — wants.
+   * Passing no `roundId` rates per call, which is what a topic with no tests
+   * written for it — one verdict, no round — wants.
    */
   gradeTopic(
     sectionId: string,
@@ -570,7 +540,6 @@ export class Session {
     roundId?: string,
   ): void {
     const existing = this.p.topicCards[sectionId];
-    const wasKnown = this.p.knownSections.includes(sectionId);
     const open = this.p.openRound;
     const continuing =
       roundId !== undefined &&
@@ -614,19 +583,7 @@ export class Session {
       MASTERY_MAX,
       Math.max(MASTERY_MIN, base + delta),
     );
-    if (!existing) {
-      if (wasKnown) {
-        this.p.knownSections = this.p.knownSections.filter(
-          (s) => s !== sectionId,
-        );
-      } else {
-        this.p.newTopicsIntroduced += 1;
-      }
-    }
-    // A topic drilled dry, or a family walked to its end, is no longer a place
-    // to be; settle that here rather than in `next`, which stays a pure query.
-    this.p.focus = this.focusState();
-    this.settleExploring(now);
+    if (!existing) this.p.newTopicsIntroduced += 1;
     this.touch();
   }
 
@@ -744,7 +701,6 @@ export class Session {
     if (!state) return;
     const card = rate(deserializeCard(state.fsrs), rating, now);
     state.fsrs = serializeCard(card);
-    this.settleExploring(now);
     this.touch();
   }
 
@@ -918,30 +874,25 @@ export class Session {
 
   /**
    * Every grammar section in book order with its mastery — the model behind the
-   * progress bars and the topic explorer. Sections passed in placement report a
-   * full but `assumed` mastery, since they were taken as known rather than graded.
+   * progress bars and the topic explorer.
    */
   grammarMap(now: Date = new Date()): TopicProgress[] {
-    const known = new Set(this.p.knownSections);
+    const cursor = this.bookCursor();
     return this.content.sections().map((s) => {
-      const scored = this.p.topicMastery[s.id];
-      const assumed = scored === undefined && known.has(s.id);
       const card = this.p.topicCards[s.id];
-      const family = this.content.familyOf(s.family);
       const { answered, total } = this.coverage(s.id);
       return {
         sectionId: s.id,
         title: s.title,
         ref: s.ref,
         order: s.order,
-        family,
-        mastery: assumed ? MASTERY_MAX : scored,
-        assumed,
+        family: this.content.familyOf(s.family),
+        mastery: this.p.topicMastery[s.id],
         hasTests: this.content.testsFor(s.id).length > 0,
         due: card ? isDue(deserializeCard(card), now) : false,
         answered,
         questions: total,
-        frontier: this.p.frontiers[family] === s.id,
+        frontier: cursor === s.id,
       };
     });
   }
@@ -976,7 +927,7 @@ export class Session {
   /**
    * A detached copy of everything the session mutates — the material for an
    * undo. Progress is plain JSON and the engine keeps no state outside it, so
-   * a deep clone is the whole story: grading, placement and vocabulary all
+   * a deep clone is the whole story: grading, the book cursor and vocabulary all
    * take back together.
    */
   snapshot(): Progress {
@@ -1051,63 +1002,6 @@ export class Session {
     return best;
   }
 
-  /** Teachable topics of one family, in book order. */
-  private familyTopics(family: FamilyId): string[] {
-    return this.content
-      .sections()
-      .filter(
-        (s) =>
-          this.content.familyOf(s.family) === family &&
-          this.content.testsFor(s.id).length > 0,
-      )
-      .map((s) => s.id);
-  }
-
-  /** Where a family's new work resumes; 0 when it has no frontier yet. */
-  private frontierIndex(family: FamilyId, topics: string[]): number {
-    const at = this.p.frontiers[family];
-    const i = at === undefined ? -1 : topics.indexOf(at);
-    return i < 0 ? 0 : i;
-  }
-
-  /** Untouched, unknown, and not behind its family's frontier. */
-  private firstAvailable(family: FamilyId): string | null {
-    const topics = this.familyTopics(family);
-    for (const id of topics.slice(this.frontierIndex(family, topics))) {
-      if (!this.p.topicCards[id] && !this.p.knownSections.includes(id)) {
-        return id;
-      }
-    }
-    return null;
-  }
-
-  /**
-   * The next topic to teach.
-   *
-   * Book order, but each family picks up at its own frontier — so a student
-   * placed halfway through the nouns and nowhere in the verbs gets exactly
-   * that, without choosing a mode. A focused family is asked first; when it
-   * runs out, and when a sweep finds nothing ahead of the frontiers, the gaps
-   * left behind are filled, so the book still finishes.
-   */
-  private nextNewTopic(): string | null {
-    const focus = this.focusState();
-    if (focus.kind === "family") {
-      const inFamily = this.firstAvailable(this.content.familyOf(focus.id));
-      if (inFamily) return inFamily;
-    }
-    for (const { id } of this.families) {
-      const ahead = this.firstAvailable(id);
-      if (ahead) return ahead;
-    }
-    for (const id of this.content.topicIds()) {
-      if (!this.p.topicCards[id] && !this.p.knownSections.includes(id)) {
-        return id;
-      }
-    }
-    return null;
-  }
-
   /** Serve one of `pool` at random and remember it. */
   private take(sectionId: string, pool: Test[]): Test {
     const test = pool[Math.floor(Math.random() * pool.length)]!;
@@ -1117,49 +1011,4 @@ export class Session {
     return test;
   }
 
-  /**
-   * The probe to ask above one that passed — the middle of what is left. -1
-   * when the passed probe was the family's last topic and there is nothing
-   * above it to narrow.
-   */
-  private upperProbe(topics: string[], passed: number): number {
-    const lo = passed + 1;
-    const hi = topics.length - 1;
-    return lo > hi ? -1 : Math.floor((lo + hi) / 2);
-  }
-
-  /** Begin the first family from `from` on that has any topics at all. */
-  private openFamily(from: number): PlacementRun | null {
-    for (let i = from; i < this.families.length; i++) {
-      const topics = this.familyTopics(this.families[i]!.id);
-      if (topics.length === 0) continue;
-      return {
-        familyIndex: i,
-        asked: 0,
-        passed: -1,
-        // The middle of the family: one sentence that halves it either way.
-        probe: topics[Math.floor((topics.length - 1) / 2)]!,
-      };
-    }
-    return null;
-  }
-
-  /**
-   * Write down what a family's probes established: its topics up to the
-   * highest one passed are taken as known, and it resumes just past them.
-   * Only ever this family — a prefix of the whole book is precisely the claim
-   * a per-family placement exists to stop making.
-   */
-  private settleFamily(
-    family: FamilyId,
-    topics: string[],
-    passed: number,
-  ): void {
-    if (passed < 0) return;
-    const known = new Set(this.p.knownSections);
-    for (const id of topics.slice(0, passed + 1)) known.add(id);
-    this.p.knownSections = [...known];
-    const resume = topics[passed + 1];
-    if (resume) this.p.frontiers[family] = resume;
-  }
 }

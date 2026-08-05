@@ -187,60 +187,38 @@ export interface Attempt {
 }
 
 /**
- * A placement run in flight: which family is being probed and what the probes
- * so far have said.
+ * The two errands the app can be on.
  *
- * Held in progress rather than in the screen's own state so the test survives
- * whatever ends the page — a reload, a crash, closing the terminal. Without it
- * a half-finished placement is simply lost, and the student silently restarts
- * at chapter one.
- *
- * The walk is one family at a time, in the pack's family order, bisecting: a
- * probe in the middle, then — if it passed — a second in the middle of what is
- * left above it. Two probes per family at most, so the whole test is at most
- * twice as many sentences as the language has families, and usually far fewer.
+ * Reviewing serves what is due and nothing else; exploring moves through the
+ * book and nothing else. Deliberately absent from `Progress`: which one you
+ * are on is a decision about this sitting, and a file that could remember it
+ * could also hide a waiting pile from you across a reload.
  */
-export interface PlacementRun {
-  /**
-   * Index into the pack's family list of the family under test. A position, so
-   * a shipped pack must never reorder its families: a saved run would resume
-   * against the wrong one.
-   */
-  familyIndex: number;
-  /** How many probes this family has been asked (0, 1 or 2). */
-  asked: number;
-  /** Highest topic index passed within this family, or -1 for none yet. */
-  passed: number;
-  /** The section id being asked right now. */
-  probe: string;
-}
+export type Mode = "review" | "explore";
 
 /**
- * Where new topics come from. Reviews are never affected: everything due comes
- * back on its own schedule in all three shapes.
+ * A run of practice on one topic: stay here and work its questions out.
  *
- * - `sweep` — the book in order, each family resuming at its own frontier.
- *   The default, and on a fresh deck it is chapter one onwards.
- * - `family` — one area at a time, for when a whole part of the grammar is the
- *   thing you came to work on.
- * - `topic` — stay on one section and work through the rest of its questions,
- *   which a four-question test does not exhaust.
+ * `since` is what makes a second run a second run. What the run has served is
+ * what has been answered since it began, read off the answer trail rather than
+ * written down beside it — the trail already records every answer with its
+ * timestamp, and a second list of the same facts is a second list to keep true.
  */
-export type Focus =
-  | { kind: "sweep" }
-  | { kind: "family"; id: string }
-  | { kind: "topic"; sectionId: string };
+export interface PractiseRun {
+  sectionId: string;
+  since: string;
+}
 
 /**
  * Why a round is on the table, which is the one thing the screen cannot work
  * out for itself once the round is under way.
  *
  * `next` says all of this in its `Action`, and the surface then forgets it: a
- * due review, a drill and a topic picked off the map are the same four
+ * due review, a drill and a topic the book has come back to are the same four
  * sentences on the same topic, and were shown as such. Kept on the round so it
  * also survives a reload, which nothing derived from `next` can.
  */
-export type RoundVia = "review" | "new" | "drill" | "quiz";
+export type RoundVia = "review" | "new" | "drill" | "sweep";
 
 /**
  * The answer being written, kept so that whatever ends the page does not also
@@ -306,32 +284,26 @@ export interface Progress {
    */
   frontier: string | null;
   /**
-   * familyId -> the section its new topics resume at. A family with no entry
-   * starts at its first topic, which is what a fresh deck has for every family
-   * — so an empty map is the plain sweep from chapter one.
+   * How far the walk through the book has got: the section exploring will
+   * serve next. Null until something places it.
    *
-   * Per family rather than one pointer, because that is the shape of the
-   * complaint: knowing the declensions says nothing about knowing the verbs.
+   * A cursor rather than a rule, and it steps forward whatever the grade. A
+   * rule — "the first topic not yet mastered" — cannot move past a topic that
+   * is going badly, which is the one topic a student most needs to be able to
+   * leave. Mastery decides only where the cursor is *put*: choosing book order
+   * drops it on the earliest topic short of the top band, and from there it
+   * simply reads on, one section to the next.
    */
-  frontiers: Record<string, string>;
-  /** Where new topics come from. Defaults to the sweep. */
-  focus: Focus;
+  bookAt?: string | null;
   /**
-   * A backlog set aside on purpose, so new ground can be reached while reviews
-   * are waiting. The scheduler otherwise serves every due card before it will
-   * teach anything, which is right for the student who came to study and wrong
-   * for the one who came to get further.
+   * The run of practice in flight, if any. Exploring serves this when it is
+   * set and the book cursor when it is not, which is the whole of what the
+   * explore sub-mode amounts to.
    *
-   * `since` is what makes it a backlog rather than a mute button: only cards
-   * last reviewed *before* the run began are held. A topic met during the run
-   * and graded "again" is due in a minute and comes straight back — it is the
-   * thing being explored, not the pile being avoided. What is held is deferred
-   * and never dropped: it is served once there is nothing left to learn.
-   *
-   * It lives in progress rather than screen state so a reload does not put the
-   * pile silently back in the way.
+   * Beside the cursor rather than instead of it, so a detour onto one topic
+   * does not cost a start point the student chose.
    */
-  exploring?: { since: string } | null;
+  practise?: PractiseRun | null;
   /** The round of questions in flight, if any. */
   openRound?: OpenRound | null;
   /** sectionId -> scheduling card for that grammar topic. */
@@ -344,8 +316,6 @@ export interface Progress {
   topicMastery: Record<string, number>;
   /** vocab card id -> state. */
   vocabCards: Record<string, VocabCardState>;
-  /** Sections proven known without an active card. */
-  knownSections: string[];
   /** sectionId -> ids of tests recently served (to rotate variety). */
   seenTests: Record<string, string[]>;
   /**
@@ -356,10 +326,6 @@ export interface Progress {
   attempts: Record<string, Attempt[]>;
   /** Count of new topics introduced (drives spot-check cadence). */
   newTopicsIntroduced: number;
-  /** Whether the initial placement test has been completed/skipped. */
-  placementDone: boolean;
-  /** The placement run under way, if any. Cleared when placement ends. */
-  placement?: PlacementRun | null;
   /**
    * Which generation of the shipped citations the vocabulary cards carry. Cards
    * store their citation, so a rebuilt dictionary would otherwise never reach
@@ -381,20 +347,49 @@ export function emptyProgress(citationsVersion = 0): Progress {
   return {
     version: 1,
     frontier: null,
-    frontiers: {},
-    focus: { kind: "sweep" },
+    bookAt: null,
+    practise: null,
     openRound: null,
     topicCards: {},
     topicMastery: {},
     vocabCards: {},
-    knownSections: [],
     seenTests: {},
     attempts: {},
     newTopicsIntroduced: 0,
-    placementDone: false,
-    placement: null,
     // A fresh deck has no cards, so it is already current by definition.
     citationsVersion,
     updatedAt: new Date().toISOString(),
   };
+}
+
+/**
+ * What this app used to write down and no longer does.
+ *
+ * Named rather than cast through, so the migration in `Session`'s constructor
+ * can read an old file without lying to the type checker, and so a deleted
+ * field leaves behind a record of what it was and what became of it. Every one
+ * of these is read once, folded into its replacement, and deleted.
+ */
+export interface LegacyProgress {
+  /**
+   * Shared with `Progress`, and the reason a `Progress` can be read as one of
+   * these at all: a type whose every field is optional is one anything can be
+   * assigned to, which is not a claim worth making about a saved file.
+   */
+  version: number;
+  /** Sections a placement probe passed. Folded into `topicMastery` at the top band. */
+  knownSections?: string[];
+  /** Whether the placement test had been sat. There is no placement test. */
+  placementDone?: boolean;
+  /** A placement run in flight. */
+  placement?: unknown;
+  /** The backlog set aside; which errand you are on is no longer written down. */
+  exploring?: unknown;
+  /** familyId -> resume point. Replaced by the one `bookAt` cursor. */
+  frontiers?: Record<string, string>;
+  /** Where new topics came from. Replaced by `bookAt` and `practise`. */
+  focus?:
+    | { kind: "sweep" }
+    | { kind: "family"; id: string }
+    | { kind: "topic"; sectionId: string };
 }

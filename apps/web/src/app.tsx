@@ -5,6 +5,7 @@ import {
   questionVocabulary,
   type AttemptMarks,
   type LemmaEntry,
+  type Mode,
   type Progress,
   type Rating,
   type RoundVia,
@@ -23,7 +24,7 @@ import {
   pickProgressFile,
 } from "./storage/transfer.js";
 import { Sheet, Toast, ago, cycleEmphasis } from "./ui.js";
-import { Answering, Graded, Rest, VocabReview } from "./screens/Study.js";
+import { Answering, Graded, Practised, Rest, VocabReview } from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
 import {
   AttemptTrail,
@@ -46,8 +47,8 @@ import {
 /**
  * The quiz loop, ported from `apps/cli/src/app.tsx`.
  *
- * The state machine is the CLI's — placement, answer, compare, grade, advance —
- * with two changes the medium forces. Its single `Phase` union splits in two:
+ * The state machine is the CLI's — answer, compare, grade, advance — with two
+ * changes the medium forces. Its single `Phase` union splits in two:
  * a `Phase` for where the loop is, and an `Overlay` for what is layered over
  * it, because a sheet on a phone covers the question rather than replacing it.
  * And the CLI's key handling becomes buttons.
@@ -57,6 +58,8 @@ type Phase =
   | { t: "answering" }
   | { t: "graded"; revealed: boolean }
   | { t: "vocab-review"; cardId: string; revealed: boolean }
+  /** A practice run worked out; the loop has stopped here on purpose. */
+  | { t: "practised"; sectionId: string }
   | { t: "done" };
 
 /**
@@ -73,7 +76,8 @@ interface GradeUndo {
   submitted: string;
   marks: AttemptMarks;
   via: RoundVia | null;
-  inPlacement: boolean;
+  /** Which errand it was given on — the grade may be the one that ended it. */
+  mode: Mode;
 }
 
 type Overlay =
@@ -120,14 +124,6 @@ interface Props {
  */
 const FLOPPY_FADE_MS = 700;
 
-/** Placement asks whether you already knew it, not how it felt. */
-const PLACEMENT_LABELS: Record<Rating, string> = {
-  1: "No idea",
-  2: "Shaky",
-  3: "Knew it",
-  4: "Easily",
-};
-
 export function App({ content, session, storage }: Props) {
   const [sectionId, setSectionId] = useState<string | null>(null);
   const [test, setTest] = useState<Test | null>(null);
@@ -137,9 +133,19 @@ export function App({ content, session, storage }: Props) {
   // round carries it across a reload.
   const [via, setVia] = useState<RoundVia | null>(null);
 
-  // The run itself lives in progress — which probe, which family, what has
-  // passed — so this is only whether the loop is driving it.
-  const [inPlacement, setInPlacement] = useState(false);
+  /**
+   * Which errand this is.
+   *
+   * Not read from the file and never written to it: a pile of reviews is
+   * exactly the thing a saved preference should not be able to hide, so the
+   * app opens on them whenever there are any and on the book when there are
+   * not. The explore sub-mode is remembered; which of the two you are on is a
+   * decision about this sitting.
+   */
+  const [mode, setMode] = useState<Mode>(() => {
+    const { dueTopics, dueVocab } = session.stats();
+    return dueTopics + dueVocab > 0 ? "review" : "explore";
+  });
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
   const [overlay, setOverlay] = useState<Overlay>(null);
@@ -171,12 +177,11 @@ export function App({ content, session, storage }: Props) {
    * Keep the answer in flight on the device.
    *
    * Local only, and not through `save`: this fires as fast as a thumb types,
-   * and a keystroke is not something the mirror needs. Placement is left out —
-   * it serves one sentence per probe and resumes by probe, so there is no
-   * round to hang a draft on.
+   * and a keystroke is not something the mirror needs. The screens with no
+   * sentence on them have nothing to keep.
    */
   const keepDraft = useCallback(() => {
-    if (inPlacement || phase.t === "vocab-review" || phase.t === "done") return;
+    if (phase.t !== "answering" && phase.t !== "graded") return;
     session.setDraft({
       input,
       ...(phase.t === "graded"
@@ -185,7 +190,7 @@ export function App({ content, session, storage }: Props) {
       ...(hasMarks(marks) ? { marks } : {}),
     });
     storage.saveLocal(session.progress());
-  }, [inPlacement, phase, input, submitted, marks, session, storage]);
+  }, [phase, input, submitted, marks, session, storage]);
 
   // Typing is debounced, because the whole file is rewritten each time. Being
   // hidden is not: on a phone that is the moment the app is taken away, and
@@ -220,37 +225,25 @@ export function App({ content, session, storage }: Props) {
   const families = useMemo(() => session.familyProgress(), [session, tick]);
   const overall = useMemo(() => session.overallPercent(), [session, tick]);
   const stats = useMemo(() => session.stats(), [session, tick]);
-  const placement = useMemo(
-    () => (inPlacement ? session.placementProgress() : undefined),
-    [session, tick, inPlacement],
-  );
-  const focus = useMemo(() => session.focusState(), [session, tick]);
-  // What the focus is called on screen, and nothing at all for the sweep.
-  //
-  // It says what it governs, because it governs less than it looks like it
-  // does: a focus steers where *new* topics come from and reviews arrive from
-  // wherever they are due, so "on Verb forms" over a first-declension review
-  // was a fair reading of a chip that was describing something else entirely.
+  const dueNow = stats.dueTopics + stats.dueVocab;
+  /**
+   * The run of practice under way, and nothing at all when the book is simply
+   * being read.
+   *
+   * Reading on says nothing here because the row above already says it: in
+   * explore mode the topic on screen *is* where the book has got to, and a
+   * chip repeating it under its own name would read as a second, different
+   * thing. A run is not repetition — it carries how far through it you are.
+   */
   const focusLabel = useMemo(() => {
-    if (focus.kind === "family") {
-      return `new topics from ${content.familyLabel(content.familyOf(focus.id))}`;
-    }
-    if (focus.kind === "topic") {
-      const { answered, total } = session.coverage(focus.sectionId);
-      const title = content.getSection(focus.sectionId)?.title ?? "this topic";
-      return `staying on ${title} · ${answered}/${total}`;
-    }
-    return null;
-  }, [focus, session, tick, content]);
-  const exploring = useMemo(() => session.exploring(), [session, tick]);
-  const held = useMemo(() => session.exploringHeld(), [session, tick]);
-  // Whether there is anything left to explore towards: a topic never graded
-  // that has questions to ask. Read off the family bars, which are computed
-  // for the map anyway.
-  const newGround = useMemo(
-    () => families.some((f) => f.topics.some((t) => t.mastery === undefined && t.hasTests)),
-    [families],
-  );
+    const run = session.practiseRun();
+    if (!run) return null;
+    const progress = session.practice(run.sectionId);
+    const title = content.getSection(run.sectionId)?.title ?? "this topic";
+    return progress
+      ? `practising ${title} · ${progress.done}/${progress.total}`
+      : null;
+  }, [session, tick, content]);
 
   // The words behind the question on screen. `dictLoading` is a dependency on
   // purpose: everything looked up before the fetch landed resolved to nothing,
@@ -275,91 +268,109 @@ export function App({ content, session, storage }: Props) {
 
   // --- the loop ------------------------------------------------------------
 
-  const advance = useCallback(() => {
-    setInput("");
-    setSubmitted("");
-    setMarks({});
-    // Whatever was in flight is behind us by definition — this is the one
-    // place study moves on of its own accord.
-    session.endRound();
-    const action = session.next();
-    if (action.kind === "done") {
-      setSectionId(null);
-      setTest(null);
-      setPhase({ t: "done" });
-      // Saved on the way out of every branch, not only the one that serves a
-      // test: letting go of the round is itself the thing worth writing down.
-      save();
-      bump();
-      return;
-    }
-    if (action.kind === "vocab-review") {
-      // The topic behind us is not what is on screen: a word is. Letting the
-      // section stand here is what used to put a grammar title, its reference
-      // and a way into its prose above a vocabulary card.
-      setVia(null);
-      setPhase({ t: "vocab-review", cardId: action.cardId, revealed: false });
-      save();
-      bump();
-      return;
-    }
-    // A drill is asking for the rest of a topic, so it wants the questions it
-    // has not met rather than whichever test the rotation comes to next.
-    const served = session.serveTest(
-      action.sectionId,
-      action.kind === "drill" ? { prefer: "unanswered" } : undefined,
-    );
-    if (!served) {
-      // A topic with no tests cannot be studied; pass it so the scheduler moves
-      // on rather than offering it again forever.
-      session.gradeTopic(action.sectionId, 3);
-      advance();
-      return;
-    }
-    const asked: RoundVia =
-      action.kind === "new-topic"
-        ? "new"
-        : action.kind === "drill"
-          ? "drill"
-          : "review";
-    const isNew = asked === "new";
-    setSectionId(action.sectionId);
-    setTest(served);
-    setQIndex(0);
-    setVia(asked);
-    setPhase({ t: "answering" });
-    // Teach before testing on new ground, exactly as the CLI does.
-    setOverlay(isNew ? { t: "grammar", sectionId: action.sectionId } : null);
-    // The round is on the table from here, and saved right away: the session
-    // this protects against is the one that ends without another grade in it.
-    session.beginRound(action.sectionId, served, isNew, asked);
-    save();
-    bump();
-  }, [session, save]);
-
-  const loadPlacement = useCallback(
-    (id: string) => {
-      const served = session.serveTest(id);
-      if (!served) {
-        // No test for this probe — take it as unanswered and ask the next.
-        const next = session.answerPlacement(false);
-        if (next) return loadPlacement(next.probe);
-        setInPlacement(false);
-        advance();
-        return;
-      }
-      setSectionId(id);
-      setTest(served);
-      setQIndex(0);
+  /**
+   * Move on to whatever the errand has next.
+   *
+   * `asked` defaults to the errand in hand, so an ordinary "carry on" is still
+   * a bare `advance()`. Switching passes the new errand explicitly, because
+   * `mode` will not have re-rendered yet at the point the switch calls this.
+   */
+  const advance = useCallback(
+    (asked: Mode = mode) => {
       setInput("");
       setSubmitted("");
       setMarks({});
-      setVia(null);
-      setOverlay(null);
+      // Whatever was in flight is behind us by definition — this is the one
+      // place study moves on of its own accord.
+      const ending = session.progress().openRound;
+      session.endRound();
+      // The book reads on when a round *it* served ends — whatever the grade
+      // was, and whether or not the round was finished. Keyed off what the
+      // round was rather than what the loop is doing next, so a review or a
+      // practice run in between costs the book nothing.
+      const wasBook = ending?.via === "new" || ending?.via === "sweep";
+      if (wasBook && ending?.sectionId === session.bookCursor()) {
+        session.advanceCursor();
+      }
+      const action = session.next(new Date(), asked);
+
+      if (action.kind === "done" && asked === "review") {
+        // The pile is cleared, so Review is no longer somewhere to be. The
+        // switch throws itself rather than leaving the student on a rest
+        // screen beside a book they could be reading.
+        setMode("explore");
+        flash("Nothing left due — back to the book.");
+        advance("explore");
+        return;
+      }
+      if (action.kind === "done") {
+        setSectionId(null);
+        setTest(null);
+        setPhase({ t: "done" });
+        // Saved on the way out of every branch, not only the one that serves a
+        // test: letting go of the round is itself the thing worth writing down.
+        save();
+        bump();
+        return;
+      }
+      if (action.kind === "practised") {
+        setSectionId(action.sectionId);
+        setTest(null);
+        setVia(null);
+        setPhase({ t: "practised", sectionId: action.sectionId });
+        save();
+        bump();
+        return;
+      }
+      if (action.kind === "vocab-review") {
+        // The topic behind us is not what is on screen: a word is. Letting the
+        // section stand here is what used to put a grammar title, its reference
+        // and a way into its prose above a vocabulary card.
+        setVia(null);
+        setPhase({ t: "vocab-review", cardId: action.cardId, revealed: false });
+        save();
+        bump();
+        return;
+      }
+
+      // A practice run serves out of its own set; everything else rotates.
+      const served =
+        action.kind === "drill"
+          ? session.servePractice(action.sectionId)
+          : session.serveTest(action.sectionId);
+      if (!served) {
+        // A topic with no tests cannot be studied; pass it so the loop moves on
+        // rather than offering it again forever.
+        session.gradeTopic(action.sectionId, 3);
+        if (action.kind === "new-topic") session.advanceCursor();
+        advance(asked);
+        return;
+      }
+      // Never met is not the same as never mastered: the book comes back to
+      // topics it has already taught, and teaching those again is not teaching.
+      const fresh = !session.everGraded(action.sectionId);
+      const via: RoundVia =
+        action.kind === "drill"
+          ? "drill"
+          : action.kind === "topic-review"
+            ? "review"
+            : fresh
+              ? "new"
+              : "sweep";
+      setSectionId(action.sectionId);
+      setTest(served);
+      setQIndex(0);
+      setVia(via);
       setPhase({ t: "answering" });
+      // Teach before testing on new ground, exactly as the CLI does.
+      setOverlay(fresh ? { t: "grammar", sectionId: action.sectionId } : null);
+      // The round is on the table from here, and saved right away: the session
+      // this protects against is the one that ends without another grade in it.
+      session.beginRound(action.sectionId, served, fresh, via);
+      save();
       bump();
     },
-    [advance, session],
+    [session, save, mode],
   );
 
   // The net under `removeVocab`, not a substitute for it: a card under review
@@ -374,25 +385,19 @@ export function App({ content, session, storage }: Props) {
   useEffect(() => {
     if (started.current) return;
     started.current = true;
-    if (session.needsPlacement()) {
-      // A run already under way is resumed where it stopped; only a fresh deck
-      // starts one. Placement is otherwise lost to anything that reloads the
-      // page — which on a phone is most ways a session ends.
-      const run = session.placementState() ?? session.beginPlacement();
-      if (run) {
-        setInPlacement(true);
-        loadPlacement(run.probe);
-        return;
-      }
-      session.endPlacement();
-    }
     // A test on the table is picked back up exactly where it was left. Without
     // this, closing the app on question two of four came back at question one
     // of a different test on a different topic — the first grade had already
     // rescheduled the card, so `next` found nothing due and went looking for
     // new ground. A set is left deliberately, from the map, or not at all.
+    //
+    // Only a round belonging to the errand this launch opens on, though. Which
+    // errand that is has already been decided by what is waiting, and a switch
+    // reading "Review" over a topic the book served would be naming something
+    // that is not happening. The round costs nothing to drop: its card is
+    // already at exactly one rep, which is what the round was for.
     const open = session.resumableRound();
-    if (open) {
+    if (open && (open.via === "review") === (mode === "review")) {
       setSectionId(open.sectionId);
       setTest(open.test);
       setQIndex(open.qIndex);
@@ -411,7 +416,7 @@ export function App({ content, session, storage }: Props) {
       return;
     }
     advance();
-  }, [advance, loadPlacement, session]);
+  }, [advance, session, mode]);
 
   // Notice progress from another device, and ask rather than pick a winner.
   useEffect(() => {
@@ -437,23 +442,6 @@ export function App({ content, session, storage }: Props) {
    */
   const { canvas: confettiCanvas, fire: fireConfetti } = useConfetti();
 
-  /**
-   * A probe answered. Failing settles that one family and moves to the next
-   * rather than ending the test — knowing the declensions and not the verbs is
-   * a thing the placement has to be able to hear.
-   */
-  const placementGrade = (rating: Rating) => {
-    if (!sectionId) return;
-    const next = session.answerPlacement(rating >= 3);
-    save();
-    if (next) {
-      loadPlacement(next.probe);
-      return;
-    }
-    setInPlacement(false);
-    advance();
-  };
-
   /** Everything a grade is about to overwrite, so it can be put back. */
   const takeUndo = (from: Phase): GradeUndo => ({
     progress: session.snapshot(),
@@ -464,13 +452,14 @@ export function App({ content, session, storage }: Props) {
     submitted,
     marks,
     via,
-    inPlacement,
+    mode,
   });
 
   /**
    * Take back the grade just given: the question comes back as it was left,
    * and the engine returns to the state it was in before — schedule, mastery,
-   * attempt trail, placement position.
+   * attempt trail, book cursor. The errand comes back too: the grade may be the
+   * one that emptied the pile and threw the switch.
    */
   const undoGrade = () => {
     if (!undo) return;
@@ -485,7 +474,7 @@ export function App({ content, session, storage }: Props) {
     // of: re-grading should not cost the student the marking they just did.
     setMarks(undo.marks);
     setVia(undo.via);
-    setInPlacement(undo.inPlacement);
+    setMode(undo.mode);
     setInput("");
     setOverlay(null);
     setUndo(null); // one step back, no further
@@ -508,9 +497,9 @@ export function App({ content, session, storage }: Props) {
     // Taken before anything is written, so the undo covers the recorded answer
     // as well as the schedule — re-grading then leaves one attempt, not two.
     setUndo(takeUndo(phase));
-    // Kept before the grade is applied, so it covers placement too: what you
-    // wrote on a topic is worth having whichever pass it was written in. The
-    // CLI has always done this; the web app used to return first and lose it.
+    // Kept before the grade is applied: what you wrote on a topic is worth
+    // having whichever errand it was written on. The CLI has always done this;
+    // the web app used to return first and lose it.
     if (sectionId && question) {
       session.recordAttempt(sectionId, {
         prompt: question.prompt,
@@ -522,7 +511,6 @@ export function App({ content, session, storage }: Props) {
         ...(hasMarks(marks) ? { marks } : {}),
       });
     }
-    if (inPlacement) return placementGrade(rating);
     if (!sectionId || !question) return;
     // The test's id names the round, so its four questions cost the topic one
     // review rather than four — graded by the worst of them.
@@ -553,104 +541,73 @@ export function App({ content, session, storage }: Props) {
     advance();
   };
 
-  /** Serve a test on any topic, now — the reason the map is worth having. */
-  const quizTopic = (topic: TopicProgress) => {
-    const served = session.serveTest(topic.sectionId);
-    if (!served) return flash(`No tests written for “${topic.title}” yet.`);
-    // Choosing a topic from the map is the deliberate way out of a round, and
-    // the only one: this is what replaces whatever was on the table.
-    // New to the student and asked for off the map are both true of a topic
-    // never studied: the first decides whether to teach it first, the second is
-    // what the badge says, and collapsing them would lose one or the other.
-    session.beginRound(
-      topic.sectionId,
-      served,
-      topic.mastery === undefined,
-      "quiz",
+  /**
+   * Change errand.
+   *
+   * At once, mid-round and all. A link that took effect at the end of the
+   * round was the old behaviour, and it made the choice feel like a request:
+   * the point of a switch is that a pile you can see is a pile you can put
+   * down now. Nothing is lost by it — every grade in the round has already
+   * been applied to the card, one rep's worth — except the sentence being
+   * written, which is the price of the switch being immediate.
+   */
+  const chooseMode = (next: Mode) => {
+    if (next === mode) return;
+    navigator.vibrate?.(8);
+    setMode(next);
+    advance(next);
+    flash(
+      next === "review"
+        ? `Back to the reviews — ${dueNow} waiting.`
+        : "Reviews set aside — back to the book.",
     );
+  };
+
+  /** Read the book in order again, from the earliest thing short of mastery. */
+  const bookOrder = () => {
+    session.bookOrder();
     save();
-    setSectionId(topic.sectionId);
-    setTest(served);
-    setQIndex(0);
-    setInput("");
-    setSubmitted("");
-    setMarks({});
-    setVia("quiz");
-    setPhase({ t: "answering" });
-    setOverlay(
-      topic.mastery === undefined
-        ? { t: "grammar", sectionId: topic.sectionId }
-        : null,
-    );
-    bump();
+    setOverlay(null);
+    setMode("explore");
+    advance("explore");
+    flash("Back to the book in order.");
   };
 
   /**
-   * Take the syllabus up from a chosen topic: its family resumes there and
-   * becomes what new topics are drawn from.
+   * Take the book up from a chosen topic and read on from there.
    *
-   * "Quiz me" is a look ahead and leaves nothing behind on purpose. This is the
-   * other thing the map is for, and the one that used to be impossible:
-   * knowing your declensions and wanting to start at the verbs, rather than
-   * being handed chapter one again after every jump.
+   * The one thing the index is really for, and the one that used to be
+   * impossible: knowing your declensions and wanting to start at the verbs,
+   * rather than being handed chapter one again after every jump.
    */
   const studyFrom = (topic: TopicProgress) => {
     session.studyFrom(topic.sectionId);
-    if (inPlacement) {
-      session.endPlacement();
-      setInPlacement(false);
-    }
     save();
     setOverlay(null);
-    advance();
-    flash(`Studying from “${topic.title}”.`);
+    // Choosing off the index is an instruction about the book, so it is also a
+    // request to be reading it; serving it "after the reviews" is the thing the
+    // switch exists to stop.
+    setMode("explore");
+    advance("explore");
+    flash(`Reading on from “${topic.title}”.`);
   };
 
   /**
-   * Set the backlog aside and go and learn something, or pick it back up.
-   *
-   * Mid-round the questions on the table were asked and are not thrown away —
-   * the switch takes over when the round ends, the same rule the drill follows.
-   * Anywhere else there is nothing to finish, so it takes effect at once.
-   */
-  const holdReviews = (on: boolean) => {
-    session.setExploring(on);
-    // Read after the switch: until it is thrown, nothing is being held.
-    const waiting = session.exploringHeld();
-    save();
-    const midRound =
-      test !== null && (phase.t === "answering" || phase.t === "graded");
-    if (midRound) bump();
-    else advance();
-    flash(
-      on
-        ? midRound
-          ? "Reviews set aside — new ground after this round."
-          : `Reviews set aside. ${waiting} waiting.`
-        : midRound
-          ? "Back to the reviews after this round."
-          : "Back to the reviews.",
-    );
-  };
-
-  /**
-   * Stay on a topic and work the rest of its questions. Four questions do not
+   * Stay on a topic and work a run of its questions out. Four questions do not
    * sweep a bank of twenty-odd, so doing well on a test and being moved
    * straight on is not the same as having the topic.
+   *
+   * A swept bank is not a reason to refuse: asking again is asking for the
+   * whole thing a second time, which is what a second run is.
    */
   const drillTopic = (topic: TopicProgress) => {
-    const { answered, total } = session.coverage(topic.sectionId);
-    if (answered >= total) {
-      return flash(`Every question on “${topic.title}” has been answered.`);
-    }
     session.drillTopic(topic.sectionId);
     save();
     setOverlay(null);
-    // Mid-round the questions on the table were asked and are not thrown away;
-    // the drill takes over when the round ends.
-    if (topic.sectionId !== sectionId) advance();
-    else bump();
-    flash(`Staying on “${topic.title}” — ${total - answered} more to go.`);
+    setMode("explore");
+    advance("explore");
+    const run = session.practice(topic.sectionId);
+    flash(`Practising “${topic.title}” — ${run?.total ?? 0} to go.`);
   };
 
   // --- vocabulary ----------------------------------------------------------
@@ -877,24 +834,24 @@ export function App({ content, session, storage }: Props) {
   // --- render --------------------------------------------------------------
 
   /**
-   * What is on screen and why, in one word. Every state of the loop has one:
-   * the badge was the only thing that ever named a mode, it named exactly one
-   * of them, and a due review, a drill and a topic picked off the map were left
+   * What is on screen and why, in one word.
+   *
+   * Not the errand — the switch says that. This is the round: a due review, a
+   * topic the book has just reached and one it has come back to are three
+   * different things happening under "Explore" and "Review", and were left
    * looking identical.
    */
-  const mode = inPlacement
-    ? "placement"
-    : phase.t === "vocab-review"
+  const badge =
+    phase.t === "vocab-review"
       ? "vocab"
-      : phase.t === "done"
+      : phase.t === "done" || phase.t === "practised"
         ? null // nothing is being worked on; the app's own name stands here
         : via;
-  const modeLabel: Record<string, string> = {
-    placement: "placement",
+  const badgeLabel: Record<string, string> = {
     review: "review",
     new: "new",
     drill: "drill",
-    quiz: "quiz",
+    sweep: "revisiting",
     vocab: "vocabulary",
   };
 
@@ -905,18 +862,18 @@ export function App({ content, session, storage }: Props) {
   const nextDue = session.nextDue();
 
   return (
-    // The mode reaches the stylesheet here: reviewing and exploring are
-    // different enough errands to be worth telling apart from across the room,
-    // and a colour does that before any word is read.
-    <div className="app" data-mode={exploring ? "explore" : (mode ?? "rest")}>
+    // The errand reaches the stylesheet here: reviewing and exploring are
+    // different enough to be worth telling apart from across the room, and a
+    // colour does that before any word is read.
+    <div className="app" data-mode={mode}>
       {/* Two rows, because three tap targets and a count leave a phone-width
           line no room for a title — and Bennett's titles run to
           "Verbs in -io of the Third Conjugation". The topic gets its own line
           and the whole width. */}
       <header className="status">
         <div className="status__row">
-          {mode && (
-            <span className={`badge badge--${mode}`}>{modeLabel[mode]}</span>
+          {badge && (
+            <span className={`badge badge--${badge}`}>{badgeLabel[badge]}</span>
           )}
           {/* The count is the natural way in to the schedule: it is already
               the answer to "how much is waiting", and the sheet is the rest of
@@ -926,11 +883,10 @@ export function App({ content, session, storage }: Props) {
             onClick={() => setOverlay({ t: "schedule" })}
             aria-label="What is coming up"
           >
-            {exploring
-              ? `${held} waiting`
-              : stats.dueTopics + stats.dueVocab > 0
-                ? `${stats.dueTopics + stats.dueVocab} due`
-                : `${stats.vocab} words`}
+            {/* What is due is what is due, on either errand. It used to read
+                "N waiting" while exploring, which was a second number for the
+                same pile and made the switch look like it had changed it. */}
+            {dueNow > 0 ? `${dueNow} due` : `${stats.vocab} words`}
           </button>
           <span className="status__spacer" />
           {/* Decoration, and hidden from screen readers on purpose: it says
@@ -968,13 +924,7 @@ export function App({ content, session, storage }: Props) {
           </button>
         </div>
         <div className="status__row">
-          {inPlacement && placement ? (
-            <span className="status__title">
-              Placement · {content.familyLabel(placement.family)}
-              {placement.narrowing ? ", narrowing" : ""} · area{" "}
-              {placement.done + 1} of {placement.families}
-            </span>
-          ) : mode === "vocab" ? (
+          {badge === "vocab" ? (
             // A word is on screen, so the topic studied before it is not what
             // this line is about — and its prose is not what a student reaching
             // for help here wants. It says what is being worked on and stops
@@ -1000,60 +950,46 @@ export function App({ content, session, storage }: Props) {
             <span className="status__title">{profile.ui.appName}</span>
           )}
         </div>
-        {/* The row of standing states, each with its way out beside it: a mode
-            you cannot see how to leave is a trap, not a feature. At most one at
-            a time — the backlog being held is the louder of the two and takes
-            the row, carrying the focus along inside its own label.
+        {/* The two errands, both always on screen. Three links used to say the
+            same two things one at a time — "set these aside and explore",
+            "back to reviews", "back to the book" — so whichever state you were
+            not in was invisible, and the one you were in looked like the only
+            one there was.
 
-            The plain sweep through the book still says nothing: it is not a
-            mode. But a review being served, with ground left to explore, is
-            the one state that gets a way out without a chip — it is the
-            default, and it was also the one nobody could see past. */}
-        {!inPlacement && exploring ? (
-          <div className="status__row status__focus">
-            <span className="badge badge--focus">
-              exploring{focusLabel ? ` · ${focusLabel}` : ""}
-            </span>
-            <button className="linkbtn" onClick={() => holdReviews(false)}>
-              back to reviews
-            </button>
-          </div>
-        ) : !inPlacement && focusLabel ? (
-          <div className="status__row status__focus">
-            <span className="badge badge--focus">{focusLabel}</span>
+            Both halves grey out together when nothing is due: with no pile to
+            go back to, Review is not a place to be, and dimming the pair says
+            so better than a live button that would bounce straight back. */}
+        <div className="status__row status__focus">
+          <div className="modes" role="group" aria-label="What to study">
             <button
-              className="linkbtn"
-              onClick={() => {
-                session.setFocus({ kind: "sweep" });
-                save();
-                bump();
-                flash("Back to the book in order.");
-              }}
+              className="modes__pick"
+              aria-pressed={mode === "explore"}
+              disabled={dueNow === 0}
+              onClick={() => chooseMode("explore")}
             >
-              back to the book
+              Explore
+            </button>
+            <button
+              className="modes__pick"
+              aria-pressed={mode === "review"}
+              disabled={dueNow === 0}
+              onClick={() => chooseMode("review")}
+            >
+              Review
             </button>
           </div>
-        ) : !inPlacement && (mode === "review" || mode === "vocab") && newGround ? (
-          <div className="status__row status__focus">
-            <button className="linkbtn" onClick={() => holdReviews(true)}>
-              set these aside and explore
-            </button>
-          </div>
-        ) : null}
+          {mode === "explore" && focusLabel && (
+            <span className="badge badge--focus">{focusLabel}</span>
+          )}
+        </div>
       </header>
 
       <div className="study">
-        {inPlacement && phase.t === "answering" && (
-          <p className="eyebrow" style={{ color: "var(--amber)" }}>
-            Translate as far as you can — this only finds where to start you.
-          </p>
-        )}
-
         {phase.t === "answering" && question && (
           <Answering
             question={question}
-            index={inPlacement ? undefined : qIndex}
-            total={inPlacement ? undefined : test?.questions.length ?? 0}
+            index={qIndex}
+            total={test?.questions.length ?? 0}
             value={input}
             onChange={setInput}
             onSubmit={() => {
@@ -1088,10 +1024,9 @@ export function App({ content, session, storage }: Props) {
             question={question}
             submitted={submitted}
             revealed={phase.revealed}
-            index={inPlacement ? undefined : qIndex}
-            total={inPlacement ? undefined : test?.questions.length ?? 0}
-            schedule={inPlacement ? undefined : schedule}
-            labels={inPlacement ? PLACEMENT_LABELS : undefined}
+            index={qIndex}
+            total={test?.questions.length ?? 0}
+            schedule={schedule}
             marks={marks}
             marking={marking}
             onGrade={grade}
@@ -1135,6 +1070,24 @@ export function App({ content, session, storage }: Props) {
                 onReveal={() => setPhase({ ...phase, revealed: true })}
                 onGrade={(r) => gradeVocab(phase.cardId, r)}
                 onEdit={() => setOverlay({ t: "vocab-edit", cardId: phase.cardId })}
+              />
+            );
+          })()}
+
+        {phase.t === "practised" &&
+          (() => {
+            const at = phase.sectionId;
+            return (
+              <Practised
+                title={content.getSection(at)?.title ?? "this topic"}
+                total={content.questionsFor(at).length}
+                onAgain={() => {
+                  session.drillTopic(at);
+                  save();
+                  advance("explore");
+                }}
+                onBook={bookOrder}
+                onOpenMap={() => setOverlay({ t: "map" })}
               />
             );
           })()}
@@ -1235,10 +1188,7 @@ export function App({ content, session, storage }: Props) {
               onRead={() =>
                 setOverlay({ t: "grammar", sectionId: topic.sectionId, back: overlay })
               }
-              onQuiz={() => {
-                setOverlay(null);
-                quizTopic(topic);
-              }}
+              onBookOrder={bookOrder}
               onStudyFrom={() => studyFrom(topic)}
               onDrill={() => drillTopic(topic)}
               onQuestions={() =>

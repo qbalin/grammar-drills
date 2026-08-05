@@ -32,7 +32,7 @@ export class Content {
     this.fold = compileFold(profile.fold);
   }
 
-  /** The families, in the order the map is drawn and placement walks. */
+  /** The families, in the order the grammar index is drawn. */
   get families(): readonly Family[] {
     return this.profile.families;
   }

@@ -113,13 +113,10 @@ const GRADES: { rating: Rating; label: string }[] = [
 export function GradeBar({
   onGrade,
   schedule,
-  labels,
 }: {
   onGrade: (rating: Rating) => void;
   /** When each grade lands, from `Session.previewTopic`/`previewVocab`. */
   schedule?: Record<Rating, Date>;
-  /** Placement asks a different question, so it needs different words. */
-  labels?: Record<Rating, string>;
 }) {
   const now = new Date();
   return (
@@ -130,7 +127,7 @@ export function GradeBar({
           className={`grade grade--${rating}`}
           onClick={() => onGrade(rating)}
         >
-          <span className="grade__label">{labels?.[rating] ?? label}</span>
+          <span className="grade__label">{label}</span>
           {schedule && (
             <span className="grade__when">{until(now, schedule[rating])}</span>
           )}

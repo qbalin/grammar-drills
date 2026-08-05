@@ -36,8 +36,8 @@ describe("the Greek profile", () => {
   });
 
   it("keeps the eleven families in book order", () => {
-    // Permanent: a saved placement stores a family's index, so reordering this
-    // list resumes an old run against the wrong one.
+    // This list is the order the grammar index is drawn in, and so the order a
+    // student learns to look things up in. Reordering it moves the furniture.
     expect(profile.families.map((f) => f.id)).toEqual([
       "nouns", "adj", "pron", "verb-forms",
       "sentence-syntax", "adj-pron-syntax", "case-syntax", "verb-syntax",

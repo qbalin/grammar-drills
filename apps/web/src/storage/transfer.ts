@@ -52,7 +52,6 @@ export function importProgress(raw: string, content: Content): Progress {
     topicMastery: keepKeys(parsed.topicMastery),
     seenTests: keepKeys(parsed.seenTests),
     attempts: keepKeys(parsed.attempts),
-    knownSections: (parsed.knownSections ?? []).filter(known),
     vocabCards: parsed.vocabCards ?? {},
     updatedAt: parsed.updatedAt ?? base.updatedAt,
   };

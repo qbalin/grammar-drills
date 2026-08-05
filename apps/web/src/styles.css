@@ -108,13 +108,11 @@ button {
   padding-top: var(--safe-top);
 }
 
-/* One accent, except for the one state that is a different errand.
-   Reviewing is what the app is for and keeps the gold; exploring — reviews
-   deliberately set aside to go and learn something — moves the accent to the
-   green the progress meters already use for ground gained. It is the same
-   variable, so every button, ring and meter follows without knowing about the
-   mode, and the header takes a hairline of it so the shift is legible even on
-   a screen with no accent showing. */
+/* One accent per errand. Reviewing keeps the gold; exploring moves the accent
+   to the green the progress meters already use for ground gained. It is the
+   same variable, so every button, ring and meter follows without knowing which
+   errand it is on, and the header takes a hairline of it so the shift is
+   legible even on a screen with no accent showing. */
 .app[data-mode="explore"] {
   --gold: var(--green);
   --gold-dim: var(--green-dim);
@@ -269,16 +267,60 @@ span.status__title {
   color: var(--green);
 }
 
-.badge--placement {
-  color: var(--amber);
+/* The book coming back to a topic it has already taught: not new, and not a
+   card that fell due either, so it is named rather than left looking like one
+   of the two things it is not. */
+.badge--sweep {
+  color: var(--text-faint);
 }
 
-/* Where new topics are coming from, when that is not simply the book in
-   order. It sits on its own row with its way out beside it: a mode you cannot
-   see how to leave is a trap, not a feature. */
+/* --- the two errands ------------------------------------------------------ */
+
+/* Reviewing and exploring are the whole of what this app can be doing, so the
+   choice between them is a switch and not a link. Three links used to say the
+   same two things one at a time — "set these aside and explore", "back to
+   reviews", "back to the book" — which meant whichever state you were not in
+   was never on screen, and the one you were in looked like the only one there
+   was.
+
+   Both halves grey out together when nothing is due. There is no pile to go
+   back to, so Review is not a place to be, and dimming the pair says that
+   better than a live button that would bounce you straight back. */
 .status__focus {
   gap: 0.5rem;
   padding-top: 0.15rem;
+}
+
+.modes {
+  display: inline-flex;
+  flex: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--ink-sunken);
+}
+
+/* Deliberately under `--tap`: this row shares a phone-width status bar with a
+   focus chip, and a thumb-sized pill here would push the chip off it. The pair
+   together is wider than a thumb, and nothing else sits close enough to be hit
+   by mistake. */
+.modes__pick {
+  min-height: 1.9rem;
+  padding: 0.25rem 0.8rem;
+  color: var(--text-faint);
+  font: inherit;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+.modes__pick[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--gold) 16%, transparent);
+  color: var(--gold);
+}
+
+/* The same 0.45 the buttons use, so "off" reads the same everywhere. */
+.modes__pick:disabled {
+  opacity: 0.45;
 }
 
 .badge--focus {
@@ -290,22 +332,6 @@ span.status__title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.linkbtn {
-  background: none;
-  border: none;
-  padding: 0.2rem 0;
-  color: var(--text-dim);
-  font: inherit;
-  font-size: 0.7rem;
-  white-space: nowrap;
-  text-decoration: underline dotted var(--line);
-  text-underline-offset: 3px;
-}
-
-.linkbtn:active {
-  color: var(--gold);
 }
 
 .iconbtn {
@@ -1146,9 +1172,6 @@ span.status__title {
 .band--m2 { background: color-mix(in srgb, var(--amber) 45%, var(--ink-raised)); }
 .band--m3 { background: color-mix(in srgb, var(--green) 55%, var(--ink-raised)); }
 .band--m4 { background: var(--green); }
-
-/* Placement passed the topic rather than the student earning it. */
-.band--assumed { opacity: 0.55; }
 
 /* --- lists ---------------------------------------------------------------- */
 

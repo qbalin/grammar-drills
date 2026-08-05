@@ -7,10 +7,8 @@
  * ordered and named. Each `GrammarSection` carries its family in the content
  * bundle, so nothing is inferred from the id.
  *
- * The order is load-bearing twice over: it is the order the map is drawn in,
- * and it is the order placement walks. A shipped pack must never reorder its
- * families, because `PlacementRun.familyIndex` is a position in this list and a
- * saved run would resume in the wrong place.
+ * The order is load-bearing: it is the order the grammar index is drawn in, and
+ * so the order a student comes to look things up in.
  */
 import type { Family, Profile } from "./pack.js";
 

@@ -22,6 +22,7 @@ import {
   type Profile,
   type FamilyProgress,
   type LemmaEntry,
+  type Mode,
   type Progress,
   type Question,
   type Rating,
@@ -74,6 +75,8 @@ type Phase =
   | { t: "read"; from: Origin } // a section read in full, from the map
   | { t: "bank"; from: Origin } // every question of the topic under the cursor
   | { t: "schedule"; from: Origin | MapPhase }
+  /** A practice run worked out; the loop has stopped here on purpose. */
+  | { t: "practised"; sectionId: string }
   | { t: "done" };
 
 /** The screen under a pane, following a schedule that was opened from the map. */
@@ -101,7 +104,8 @@ interface GradeUndo {
   qIndex: number;
   submitted: string;
   via: RoundVia | null;
-  inPlacement: boolean;
+  /** Which errand it was given on — the grade may be the one that ended it. */
+  mode: Mode;
 }
 
 export function App({ session, content, storage }: Props) {
@@ -113,21 +117,27 @@ export function App({ session, content, storage }: Props) {
   const [qIndex, setQIndex] = useState(0);
   // Why the round on the table was served. `next` says it once and the screen
   // would otherwise keep only "was it new", leaving a due review, a drill and a
-  // topic quizzed off the index looking identical.
+  // topic the book has come back to looking identical.
   const [via, setVia] = useState<RoundVia | null>(null);
 
-  // The run itself lives in progress — which probe, which family, what has
-  // passed — so this is only whether the loop is driving it.
-  const [inPlacement, setInPlacement] = useState(false);
+  /**
+   * Which errand this is. Never written to the file: a pile of reviews is
+   * exactly the thing a saved preference should not be able to hide, so every
+   * launch opens on them whenever there are any.
+   */
+  const [mode, setMode] = useState<Mode>(() => {
+    const { dueTopics, dueVocab } = session.stats();
+    return dueTopics + dueVocab > 0 ? "review" : "explore";
+  });
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
   const [showGrammar, setShowGrammar] = useState(false);
   const [showHistory, setShowHistory] = useState(false);
   const [showVocab, setShowVocab] = useState(false); // the question's word list
-  // Enter and f on the map both act at once; from a half-written answer or a
-  // placement run that costs something, so they are asked for twice. Which of
-  // the two is waiting, so the second press does what the warning named.
-  const [confirmMap, setConfirmMap] = useState<null | "quiz" | "study">(null);
+  // Enter and f on the map both act at once, which from a half-written answer
+  // costs something, so they are asked for twice. Which of the two is waiting,
+  // so the second press does what the warning named.
+  const [confirmMap, setConfirmMap] = useState<null | "practise" | "study">(null);
   const [input, setInput] = useState(""); // current typed answer / vocab form
   const [submitted, setSubmitted] = useState(""); // the answer the student submitted
   const [flash, setFlash] = useState<string | null>(null);
@@ -273,16 +283,45 @@ export function App({ session, content, storage }: Props) {
     setInput(forced ?? value);
   };
 
-  const advance = () => {
+  /**
+   * Move on to whatever the errand has next. `asked` defaults to the errand in
+   * hand; switching passes the new one, since `mode` has not re-rendered yet
+   * at the point the switch calls this.
+   */
+  const advance = (
+    asked: Mode = mode,
+    // The book reads on when a round it served ends, whatever the grade was
+    // and whether or not the round was finished. Read off this screen's own
+    // `via` rather than the saved round, since the CLI grades per test and
+    // never opens one. False on the recursive calls below: the round that
+    // ended has already been stepped past by the first of them.
+    stepBook = via === "new" || via === "sweep",
+  ) => {
     setFlash(null);
     setShowGrammar(false);
     setShowHistory(false);
     setShowVocab(false);
     setInput("");
     setSubmitted("");
-    const action = session.next();
+
+    if (stepBook && sectionId === session.bookCursor()) session.advanceCursor();
+
+    const action = session.next(new Date(), asked);
+    if (action.kind === "done" && asked === "review") {
+      // The pile is cleared, so Review is no longer somewhere to be.
+      setMode("explore");
+      setFlash("Nothing left due — back to the book.");
+      advance("explore", false);
+      return;
+    }
     if (action.kind === "done") {
       setPhase({ t: "done" });
+      return;
+    }
+    if (action.kind === "practised") {
+      setVia(null);
+      setSectionId(action.sectionId);
+      setPhase({ t: "practised", sectionId: action.sectionId });
       return;
     }
     if (action.kind === "vocab-review") {
@@ -291,28 +330,33 @@ export function App({ session, content, storage }: Props) {
       setPhase({ t: "vocab-review-front", cardId: action.cardId });
       return;
     }
-    // A drill is asking for the rest of a topic, so it wants the questions it
-    // has not met rather than whichever test the rotation comes to next.
-    const t = session.serveTest(
-      action.sectionId,
-      action.kind === "drill" ? { prefer: "unanswered" } : undefined,
-    );
+    // A practice run serves out of its own set; everything else rotates.
+    const t =
+      action.kind === "drill"
+        ? session.servePractice(action.sectionId)
+        : session.serveTest(action.sectionId);
     if (!t) {
       session.gradeTopic(action.sectionId, 3);
-      advance();
+      if (action.kind === "new-topic") session.advanceCursor();
+      advance(asked, false);
       return;
     }
+    // Never met is not the same as never mastered: the book comes back to
+    // topics it has already taught, and teaching those again is not teaching.
+    const fresh = !session.everGraded(action.sectionId);
     setSectionId(action.sectionId);
     setTest(t);
     setQIndex(0);
     setVia(
-      action.kind === "new-topic"
-        ? "new"
-        : action.kind === "drill"
-          ? "drill"
-          : "review",
+      action.kind === "drill"
+        ? "drill"
+        : action.kind === "topic-review"
+          ? "review"
+          : fresh
+            ? "new"
+            : "sweep",
     );
-    setShowGrammar(action.kind === "new-topic"); // teach first on a new topic
+    setShowGrammar(fresh); // teach first on ground never met
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
   };
@@ -330,29 +374,6 @@ export function App({ session, content, storage }: Props) {
     }
   }, [phase, session, tick]);
 
-  const loadPlacement = (id: string) => {
-    const t = session.serveTest(id);
-    if (!t) {
-      // No test for this probe — take it as unanswered and ask the next.
-      const next = session.answerPlacement(false);
-      if (next) return loadPlacement(next.probe);
-      setInPlacement(false);
-      advance();
-      return;
-    }
-    setSectionId(id);
-    setTest(t);
-    setQIndex(0);
-    setInput("");
-    setSubmitted("");
-    setShowGrammar(false);
-    setShowHistory(false);
-    setShowVocab(false);
-    setVia(null);
-    setPhase({ t: "answering" });
-    setTick((n) => n + 1);
-  };
-
   const started = useRef(false);
   useEffect(() => {
     if (started.current) return;
@@ -360,18 +381,6 @@ export function App({ session, content, storage }: Props) {
     // The whole dictionary is in memory here, so this is the cheapest place to
     // bring cards saved against older citations up to the shipped ones.
     if (session.refreshCitations() > 0) save();
-    if (session.needsPlacement()) {
-      // A run already under way is resumed where it stopped; only a fresh deck
-      // starts one. Without this, a placement interrupted by closing the
-      // terminal is simply lost — and study restarts at chapter one.
-      const run = session.placementState() ?? session.beginPlacement();
-      if (run) {
-        setInPlacement(true);
-        loadPlacement(run.probe);
-        return;
-      }
-      session.endPlacement();
-    }
     advance();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -379,23 +388,6 @@ export function App({ session, content, storage }: Props) {
   const submitAnswer = (value: string) => {
     setSubmitted(value);
     setPhase({ t: "graded" });
-  };
-
-  /**
-   * A probe answered. Failing settles that one family and moves to the next
-   * rather than ending the test — knowing the declensions and not the verbs is
-   * a thing the placement has to be able to hear.
-   */
-  const placementGrade = (rating: Rating) => {
-    if (!sectionId) return;
-    const next = session.answerPlacement(rating >= 3);
-    save();
-    if (next) {
-      loadPlacement(next.probe);
-      return;
-    }
-    setInPlacement(false);
-    advance();
   };
 
   /** Everything a grade is about to overwrite, so it can be put back. */
@@ -407,15 +399,15 @@ export function App({ session, content, storage }: Props) {
     qIndex,
     submitted,
     via,
-    inPlacement,
+    mode,
   });
 
   const gradeAndContinue = (rating: Rating) => {
     // Taken before anything is written, so the undo covers the recorded answer
     // as well as the schedule — re-grading then leaves one attempt, not two.
     setUndo(takeUndo({ t: "graded" }));
-    // Kept before the grade is applied, so it covers placement too: what you
-    // wrote on a topic is worth having whichever pass it was written in.
+    // Kept before the grade is applied: what you wrote on a topic is worth
+    // having whichever errand it was written on.
     if (sectionId && question) {
       session.recordAttempt(sectionId, {
         prompt: question.prompt,
@@ -424,7 +416,6 @@ export function App({ session, content, storage }: Props) {
         rating,
       });
     }
-    if (inPlacement) return placementGrade(rating);
     if (!sectionId) return;
     // The test's id names the round, so its four questions cost the topic one
     // review rather than four — graded by the worst of them.
@@ -448,7 +439,8 @@ export function App({ session, content, storage }: Props) {
   /**
    * Take back the grade just given. The question it was given on comes back,
    * answer and all, and the engine returns to the state it was in before —
-   * schedule, mastery, attempt trail, placement position.
+   * schedule, mastery, attempt trail, book cursor. The errand comes back too:
+   * the grade may be the one that emptied the pile and threw the switch.
    */
   const undoGrade = () => {
     if (!undo) return;
@@ -459,7 +451,7 @@ export function App({ session, content, storage }: Props) {
     setQIndex(undo.qIndex);
     setSubmitted(undo.submitted);
     setVia(undo.via);
-    setInPlacement(undo.inPlacement);
+    setMode(undo.mode);
     setInput("");
     setShowGrammar(false);
     setShowHistory(false);
@@ -581,136 +573,82 @@ export function App({ session, content, storage }: Props) {
   };
 
   /**
-   * Serve a test on the topic under the cursor and quiz it right now.
+   * Stay on the topic under the cursor and work a run of its questions out.
    *
    * From the graded screen or from `done` nothing is lost. From a half-written
-   * answer it throws that answer away, and from a placement run it ends the run
-   * outright — so both ask first, the two-press idiom `x` already uses in the
-   * vocabulary list.
+   * answer it throws that answer away, so it asks first — the two-press idiom
+   * `x` already uses in the vocabulary list.
    */
-  const quizSelected = (from: Origin) => {
+  const practiseSelected = (from: Origin) => {
     const target = mapTopics[mapIndex];
     if (!target) return;
-    const costly = from.t === "answering" || inPlacement;
-    if (costly && confirmMap !== "quiz") {
-      setConfirmMap("quiz");
+    if (from.t === "answering" && confirmMap !== "practise") {
+      setConfirmMap("practise");
       setFlash(
-        inPlacement
-          ? `Press Enter again to stop the placement test and quiz “${target.title}”.`
-          : `Press Enter again to leave the answer you are writing and quiz “${target.title}”.`,
+        `Press Enter again to leave the answer you are writing and practise “${target.title}”.`,
       );
       return;
     }
-    const t = session.serveTest(target.sectionId);
-    if (!t) {
+    if (!target.hasTests) {
       setFlash(`No tests for “${target.title}” yet.`);
       return;
     }
-    // Choosing a topic yourself is the decision placement exists to make for
-    // you, so taking it back by hand ends the run. Without this the badge would
-    // go on saying "placement" and the next grade would run through
-    // `placementGrade`, advancing a test nobody is taking.
-    if (inPlacement) {
-      session.endPlacement();
-      setInPlacement(false);
-    }
+    session.drillTopic(target.sectionId);
     setConfirmMap(null);
     save();
-    const fresh = target.mastery === undefined;
-    setFlash(null);
-    setSectionId(target.sectionId);
-    setTest(t);
-    setQIndex(0);
-    setInput("");
-    setSubmitted("");
-    setVia("quiz");
-    setShowGrammar(fresh); // teach the rule first when it's new ground
-    setShowHistory(false);
-    setShowVocab(false);
-    setPhase({ t: "answering" });
-    setTick((n) => n + 1);
+    setMode("explore");
+    advance("explore");
+    const run = session.practice(target.sectionId);
+    setFlash(`Practising “${target.title}” — ${run?.total ?? 0} to go.`);
   };
 
   /**
-   * Take the syllabus up from the topic under the cursor: its family resumes
-   * there and becomes the focus, and study carries on from it.
+   * Take the book up at the topic under the cursor and read on from there.
    *
-   * Enter's one-off quiz leaves nothing behind on purpose — it is for looking
-   * ahead. This is the other thing a student wants from the map, and the one
-   * that used to be impossible: knowing your declensions and wanting to start
-   * at the verbs, rather than being handed chapter one again after every jump.
+   * The thing a student wants from the index that used to be impossible:
+   * knowing your declensions and wanting to start at the verbs, rather than
+   * being handed chapter one again after every jump.
    */
   const studySelected = (from: Origin) => {
     const target = mapTopics[mapIndex];
     if (!target) return;
-    const costly = from.t === "answering" || inPlacement;
-    if (costly && confirmMap !== "study") {
+    if (from.t === "answering" && confirmMap !== "study") {
       setConfirmMap("study");
       setFlash(
-        inPlacement
-          ? `Press f again to stop the placement test and study from “${target.title}”.`
-          : `Press f again to leave the answer you are writing and study from “${target.title}”.`,
+        `Press f again to leave the answer you are writing and study from “${target.title}”.`,
       );
       return;
     }
     session.studyFrom(target.sectionId);
-    if (inPlacement) {
-      session.endPlacement();
-      setInPlacement(false);
-    }
     setConfirmMap(null);
     save();
     setFlash(null);
-    advance();
+    setMode("explore");
+    advance("explore");
+  };
+
+  /** Read the book in order again, from the earliest thing short of mastery. */
+  const bookOrder = () => {
+    session.bookOrder();
+    save();
+    setMode("explore");
+    advance("explore");
+    setFlash("Back to the book in order.");
   };
 
   /**
-   * Stay on the topic just answered and work the rest of its questions.
-   *
-   * Four questions do not sweep a bank of twenty-odd, so doing well on a test
-   * and being moved straight on is not the same as having the topic. This is
-   * the way to say "not yet".
-   *
-   * It takes effect when the round ends rather than at once: the questions
-   * still on the table were asked, and throwing them away is not what "more of
-   * this" means.
+   * Change errand — at once, mid-round and all. A pile you can see is a pile
+   * you can put down now; nothing is lost by it but the sentence being
+   * written, since every grade already given has been applied to the card.
    */
-  const drillHere = () => {
-    if (!sectionId) return;
-    const { answered, total } = session.coverage(sectionId);
-    if (answered >= total) {
-      setFlash(`Every question on “${section?.title}” has been answered.`);
-      return;
-    }
-    session.drillTopic(sectionId);
-    save();
-    setTick((n) => n + 1);
+  const chooseMode = (next: Mode) => {
+    if (next === mode) return;
+    setMode(next);
+    advance(next);
     setFlash(
-      `Staying on “${section?.title}” — ${total - answered} more question${
-        total - answered === 1 ? "" : "s"
-      } to go.`,
-    );
-  };
-
-  /**
-   * Set the backlog aside and go and learn something, or pick it back up.
-   *
-   * Takes effect when the round ends, for the same reason the drill does: the
-   * questions still on the table were asked, and dropping a written answer is
-   * not what "explore" means.
-   */
-  const toggleExploring = () => {
-    const on = !session.exploring();
-    session.setExploring(on);
-    const waiting = session.exploringHeld();
-    save();
-    setTick((n) => n + 1);
-    setFlash(
-      on
-        ? waiting > 0
-          ? `Reviews set aside — ${waiting} waiting. New ground after this round.`
-          : "Nothing is due, so there is nothing to set aside."
-        : "Back to the reviews after this round.",
+      next === "review"
+        ? `Back to the reviews — ${dueNow} waiting.`
+        : "Reviews set aside — back to the book.",
     );
   };
 
@@ -798,8 +736,8 @@ export function App({ session, content, storage }: Props) {
           setShowHistory(false);
           setShowVocab((s) => !s);
         } else if (ch === "m") openMap({ t: "graded" });
-        else if (ch === ".") drillHere(); // more of this topic before moving on
-        else if (ch === "x") toggleExploring(); // the pile can wait; teach me
+        else if (ch === "x") chooseMode(mode === "review" ? "explore" : "review");
+        else if (ch === "b") bookOrder(); // back to the book in order
         else if (ch === "s") openSchedule({ t: "graded" });
         else if (ch === "V") openVocabList({ t: "graded" });
         else if (ch === "u") undoSubmit(); // Enter came too early
@@ -823,7 +761,7 @@ export function App({ session, content, storage }: Props) {
         } else if (key.downArrow) {
           setConfirmMap(null);
           jumpFamily(1);
-        } else if (key.return) quizSelected(phase.from);
+        } else if (key.return) practiseSelected(phase.from);
         else if (ch === "f") studySelected(phase.from);
         else if (ch === "g") setPhase({ t: "read", from: phase.from });
         else if (ch === "a") setPhase({ t: "bank", from: phase.from });
@@ -963,42 +901,25 @@ export function App({ session, content, storage }: Props) {
   });
 
   const stats = useMemo(() => session.stats(), [tick, session]);
-  const placement = useMemo(
-    () => (inPlacement ? session.placementProgress() : undefined),
-    [tick, session, inPlacement],
-  );
-  const focus = useMemo(() => session.focusState(), [tick, session]);
+  const dueNow = stats.dueTopics + stats.dueVocab;
   const coverageHere = useMemo(
     () => (sectionId ? session.coverage(sectionId) : null),
     [sectionId, tick, session],
   );
-  // What the focus is called on screen, and nothing at all for the sweep —
-  // the plain walk through the book is not a mode to be told about. It says
-  // what it governs: a focus steers where *new* topics come from, and reviews
-  // arrive from wherever they are due.
+  // The run of practice under way, and nothing at all when the book is simply
+  // being read — the line above already names the topic the book is on.
   const focusLabel = useMemo(() => {
-    if (focus.kind === "family") {
-      return `new topics from ${content.familyLabel(content.familyOf(focus.id))}`;
-    }
-    if (focus.kind === "topic") {
-      const { answered, total } = session.coverage(focus.sectionId);
-      const title = content.getSection(focus.sectionId)?.title ?? "this topic";
-      return `staying on ${title} · ${answered}/${total} questions`;
-    }
-    return null;
-  }, [focus, tick, session, content]);
-  const exploring = useMemo(() => session.exploring(), [session, tick]);
-  const held = useMemo(() => session.exploringHeld(), [session, tick]);
+    const run = session.practiseRun();
+    if (!run) return null;
+    const progress = session.practice(run.sectionId);
+    const title = content.getSection(run.sectionId)?.title ?? "this topic";
+    return progress
+      ? `practising ${title} · ${progress.done}/${progress.total} questions`
+      : null;
+  }, [tick, session, content]);
 
-  /**
-   * What is on screen and why, in one word — every state of the loop has one.
-   * Placement has the bar's own colour, so it is not repeated here.
-   */
-  const mode = inPlacement
-    ? null
-    : phase.t.startsWith("vocab-review")
-      ? "vocab"
-      : via;
+  /** What is on screen and why, in one word — not which errand it is on. */
+  const badge = phase.t.startsWith("vocab-review") ? "vocab" : via;
 
   return (
     <Box flexDirection="column" paddingX={1}>
@@ -1006,41 +927,22 @@ export function App({ session, content, storage }: Props) {
         appName={content.profile.ui.appName}
         stats={stats}
         section={
-          placement
-            ? `Placement ${placement.done + 1}/${placement.families} · ${content.familyLabel(
-                placement.family,
-              )}${placement.narrowing ? ", narrowing" : ""}`
-            // The ref belongs beside the title here as it does on the web: it
-            // is how you find the topic in the book, and the grammar drawer
-            // (Esc) was the only place it appeared.
-            // A word is on screen, so the topic studied before it is not what
-            // this line is about. The citation is the answer being graded, so
-            // it says what is being worked on and stops there.
-            : phase.t.startsWith("vocab-review")
-              ? "Vocabulary"
-              : section
-                ? `${content.formatRef(section.ref)} ${section.title}`
-                : "—"
+          // The ref belongs beside the title here as it does on the web: it
+          // is how you find the topic in the book, and the grammar drawer
+          // (Esc) was the only place it appeared.
+          // A word is on screen, so the topic studied before it is not what
+          // this line is about. The citation is the answer being graded, so
+          // it says what is being worked on and stops there.
+          phase.t.startsWith("vocab-review")
+            ? "Vocabulary"
+            : section
+              ? `${content.formatRef(section.ref)} ${section.title}`
+              : "—"
         }
-        mode={mode}
-        placement={inPlacement}
-        focus={
-          inPlacement
-            ? null
-            : exploring
-              ? `exploring · ${held} waiting${focusLabel ? ` · ${focusLabel}` : ""}`
-              : focusLabel
-        }
+        mode={badge}
+        errand={mode}
+        focus={mode === "explore" ? focusLabel : null}
       />
-
-      {inPlacement && (
-        <Box marginBottom={1}>
-          <Text color="yellow">
-            Placement — translate as far as you can. Grade 3–4 if you knew it, 1–2 to start there.
-            One area at a time; a miss moves on to the next rather than ending the test.
-          </Text>
-        </Box>
-      )}
 
       {phase.t === "map" && mapTopics[mapIndex] && (
         <GrammarMap
@@ -1164,8 +1066,8 @@ export function App({ session, content, storage }: Props) {
         <QuestionView
           ui={content.profile.ui}
           question={question}
-          index={inPlacement ? undefined : qIndex}
-          total={inPlacement ? undefined : test?.questions.length ?? 0}
+          index={qIndex}
+          total={test?.questions.length ?? 0}
           graded={phase.t === "graded"}
           submitted={submitted}
           input={input}
@@ -1201,10 +1103,22 @@ export function App({ session, content, storage }: Props) {
         <VocabReview ui={content.profile.ui} card={session.vocabCard(phase.cardId)} reveal={phase.t === "vocab-review-back"} />
       )}
 
+      {phase.t === "practised" && (
+        <Box marginTop={1} flexDirection="column">
+          <Text color="green">
+            ✓ All practised — every question on “{section?.title ?? "this topic"}” has been
+            through this run.
+          </Text>
+          <Text dimColor>
+            Enter on this topic in the index (m) practises it again; b goes back to the book.
+          </Text>
+        </Box>
+      )}
+
       {phase.t === "done" && (
         <Box marginTop={1}>
           <Text color="green">
-            ✓ Nothing due right now. Well done — press m to explore the grammar index, or Enter to
+            ✓ The book is worked out. Well done — press m to read the grammar index, or Enter to
             exit.
           </Text>
         </Box>
@@ -1219,7 +1133,6 @@ export function App({ session, content, storage }: Props) {
       <HintBar
         ui={content.profile.ui}
         phase={phase.t}
-        placement={inPlacement}
         paging={
           (showGrammar && drawerLines.length > drawerHeight) ||
           (showHistory && historyLines.length > drawerHeight) ||
@@ -1227,22 +1140,13 @@ export function App({ session, content, storage }: Props) {
         }
         history={attempts.length > 0}
         words={question !== undefined}
-        // The map's Enter is destructive from exactly these two places, and the
-        // hint says which one before the key is pressed rather than after.
-        quizCosts={
-          phase.t === "map" && (phase.from.t === "answering" || inPlacement)
-        }
+        // The map's Enter throws away an answer being written, and the hint
+        // says so before the key is pressed rather than after.
+        practiseCosts={phase.t === "map" && phase.from.t === "answering"}
         undo={undo !== null}
-        more={!inPlacement && coverageHere !== null && coverageHere.answered < coverageHere.total}
-        explore={
-          inPlacement
-            ? null
-            : exploring
-              ? "stop"
-              : stats.dueTopics + stats.dueVocab > 0
-                ? "start"
-                : null
-        }
+        book={coverageHere !== null}
+        // Greyed out with nothing due, the way the web app greys its switch.
+        errand={dueNow > 0 ? mode : null}
       />
     </Box>
   );
@@ -1262,16 +1166,17 @@ function StatusBar({
   stats,
   section,
   mode,
-  placement,
+  errand,
   focus,
 }: {
   appName: string;
   stats: { dueTopics: number; dueVocab: number; topics: number; vocab: number };
   section: string;
-  /** What is on screen and why: `review`, `new`, `drill`, `quiz`, `vocab`. */
+  /** What is on screen and why: `review`, `new`, `drill`, `sweep`, `vocab`. */
   mode?: string | null;
-  placement?: boolean;
-  /** The standing state new topics are drawn from, or null for the sweep. */
+  /** Which of the two errands this is — the CLI's answer to the web switch. */
+  errand: Mode;
+  /** What exploring is doing, or null for the plain book in order. */
   focus?: string | null;
 }) {
   return (
@@ -1291,16 +1196,17 @@ function StatusBar({
               {mode}:{" "}
             </Text>
           ) : null}
-          <Text bold color={placement ? "yellow" : undefined}>
-            {section}
-          </Text>
+          <Text bold>{section}</Text>
         </Text>
         <Text dimColor>
           topics {stats.topics} (due {stats.dueTopics}) · vocab {stats.vocab} (due{" "}
           {stats.dueVocab})
         </Text>
       </Box>
-      {focus ? <Text color="cyan">{focus}</Text> : null}
+      <Text color="cyan">
+        {errand === "review" ? "reviewing" : "exploring"}
+        {focus ? ` · ${focus}` : ""}
+      </Text>
     </Box>
   );
 }
@@ -1316,7 +1222,7 @@ function masteryFraction(t: TopicProgress): number {
 function cellStyle(t: TopicProgress): { glyph: string; color: string; dim: boolean } {
   if (t.mastery === undefined) return { glyph: "░", color: "gray", dim: true };
   const level = Math.floor(t.mastery);
-  if (level >= 4) return { glyph: "█", color: "green", dim: t.assumed };
+  if (level >= 4) return { glyph: "█", color: "green", dim: false };
   if (level >= 3) return { glyph: "▓", color: "cyan", dim: false };
   if (level >= 2) return { glyph: "▒", color: "yellow", dim: false };
   return { glyph: "░", color: "yellow", dim: false };
@@ -1462,7 +1368,7 @@ function GrammarMap({
   const mastery =
     topic.mastery === undefined
       ? "not started"
-      : `${Math.round(masteryFraction(topic) * 100)}% mastered${topic.assumed ? " (assumed)" : ""}`;
+      : `${Math.round(masteryFraction(topic) * 100)}% mastered`;
 
   return (
     <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
@@ -1740,14 +1646,9 @@ function QuestionView({
 }: {
   ui: Profile["ui"];
   question: Question;
-  /**
-   * Where this question sits in the test, and how many it holds. Absent during
-   * placement, which serves one question per probe: the counter would read
-   * "1/4" on every screen — the test's size, not the run's length — and the
-   * status bar already carries the number that means something.
-   */
-  index?: number;
-  total?: number;
+  /** Where this question sits in the test, and how many the test holds. */
+  index: number;
+  total: number;
   graded: boolean;
   submitted: string;
   input: string;
@@ -1758,7 +1659,7 @@ function QuestionView({
     <Box flexDirection="column">
       <Text dimColor>
         {ui.promptDirection}
-        {total ? ` · ${(index ?? 0) + 1}/${total}` : ""}
+        {total > 0 ? ` · ${index + 1}/${total}` : ""}
       </Text>
       <Box marginTop={1}>
         <Text bold>{question.prompt}</Text>
@@ -1822,32 +1723,30 @@ function VocabReview({
 function HintBar({
   ui,
   phase,
-  placement,
   paging,
   history,
   words,
-  quizCosts,
+  practiseCosts,
   undo,
-  more,
-  explore,
+  book,
+  errand,
 }: {
   ui: Profile["ui"];
   phase: Phase["t"];
-  placement?: boolean;
   /** An open pane has more lines than fit. */
   paging?: boolean;
   /** There is something in the topic's answer trail to show. */
   history?: boolean;
   /** A question is on screen, so it has a word list to offer. */
   words?: boolean;
-  /** Enter on the map would throw away an answer, or end placement. */
-  quizCosts?: boolean;
+  /** Enter on the index would throw away an answer being written. */
+  practiseCosts?: boolean;
   /** A grade was just given and can still be taken back. */
   undo?: boolean;
-  /** The topic on screen has questions nobody has answered yet. */
-  more?: boolean;
-  /** Whether `x` would set the backlog aside, pick it back up, or nothing. */
-  explore?: "start" | "stop" | null;
+  /** A topic is on screen, so `b` has a book to send you back to. */
+  book?: boolean;
+  /** The errand `x` would leave, or null when there is nothing to switch to. */
+  errand?: Mode | null;
 }) {
   const scrollHint = paging ? " · ↑↓ scroll" : "";
   // Only offered once the topic has a trail: `h` does nothing before that.
@@ -1858,25 +1757,23 @@ function HintBar({
   // Offered only while there is a grade to take back, on every screen a grade
   // can land you on.
   const undoHint = undo ? " · u undo grade" : "";
-  // Offered only while the topic has questions left to meet; a topic worked
-  // out has nothing more of itself to give.
-  const moreHint = more ? " · . more of this topic" : "";
-  // Offered only where it would do something: with a pile waiting and ground
-  // left to cover, or while a run is on and there is a way back to offer.
-  const exploreHint =
-    explore === "start"
-      ? " · x set reviews aside"
-      : explore === "stop"
-        ? " · x back to reviews"
+  // Offered only where it would do something: `b` needs a topic on screen to
+  // be leaving, and `x` needs something due to switch to.
+  const bookHint = book ? " · b back to the book" : "";
+  const errandHint =
+    errand === "review"
+      ? " · x explore"
+      : errand === "explore"
+        ? " · x review"
         : "";
-  const quizHint = quizCosts
-    ? "Enter quiz me · f study from here (both leave this behind)"
-    : "Enter quiz me · f study from here";
+  const practiseHint = practiseCosts
+    ? "Enter practise this · f study from here (both leave this behind)"
+    : "Enter practise this · f study from here";
   const hint =
     phase === "answering"
       ? `${ui.cliHint} · Enter submit · Esc grammar · Tab words · ^N index${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
-        ? `← → topic · ↑ ↓ family · g read section · a all questions · s schedule${wordsHint} · ${quizHint} · Esc close`
+        ? `← → topic · ↑ ↓ family · g read section · a all questions · s schedule${wordsHint} · ${practiseHint} · Esc close`
         : phase === "read"
           ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to the index · q quit`
         : phase === "bank"
@@ -1888,11 +1785,7 @@ function HintBar({
         : phase === "vocab-edit"
           ? "type · Tab switch field · Enter save · Esc cancel"
         : phase === "graded"
-        ? placement
-          // `w` earns its place here more than anywhere: placement asks about
-          // topics you have never been taught.
-          ? `3–4 you knew it (continue) · 1–2 start here · u keep typing${wordsHint} · m index · v vocab`
-          : `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${moreHint}${exploreHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m index · s schedule · q quit`
+        ? `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${bookHint}${errandHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m index · s schedule · q quit`
         : phase === "vocab-review-front"
           ? `Space/Enter reveal${undoHint} · m index · q quit`
           : phase === "vocab-review-back"
@@ -1901,7 +1794,9 @@ function HintBar({
               ? "Enter to look up the word · Esc cancel"
               : phase === "vocab-pick"
                 ? "1–9 choose · Esc cancel"
-                : `m grammar index · s schedule · V my words${undoHint} · Enter exit`;
+                : phase === "practised"
+                  ? `m grammar index${bookHint}${errandHint} · V my words · Enter exit`
+                  : `m grammar index · s schedule · V my words${undoHint} · Enter exit`;
   return (
     <Box marginTop={1}>
       <Text dimColor>{hint}</Text>

@@ -4,7 +4,7 @@ import { testProfile } from "./profile.fixture.js";
 import { compileFold } from "./fold.js";
 import { newCard, preview, rate } from "./scheduler.js";
 import { Session } from "./session.js";
-import type { ContentData } from "./types.js";
+import { emptyProgress, type ContentData } from "./types.js";
 
 const fixture: ContentData = {
   grammar: [
@@ -105,19 +105,19 @@ describe("Session", () => {
     const now = new Date("2026-01-01T00:00:00Z");
     const s = new Session(new Content(fixture, testProfile));
 
-    // First action is the first new topic.
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "ag1" });
+    // Exploring opens on the first topic of the book; nothing is due yet.
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "ag1" });
+    expect(s.next(now)).toEqual({ kind: "done" });
 
     // Serving a test marks it seen; a second serve rotates variety.
     const t1 = s.serveTest("ag1");
     expect(t1?.sectionId).toBe("ag1");
 
-    // Grade it easy -> creates the card, which is what takes it off the list.
+    // Grade it easy -> creates the card, and the cursor reads on.
     s.gradeTopic("ag1", 4, now);
+    s.advanceCursor();
     expect(s.progress().newTopicsIntroduced).toBe(1);
-
-    // ag1 no longer due, so the next new topic is ag2.
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "ag2" });
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "ag2" });
 
     // Record an unknown word from its inflected form.
     const hit = new Content(fixture, testProfile).lookup("manibus")[0]!;
@@ -127,29 +127,10 @@ describe("Session", () => {
     expect(s.recordVocab(hit, now)).toBe(id);
     expect(Object.keys(s.progress().vocabCards)).toHaveLength(1);
 
-    // Vocab becomes due immediately on creation; grade it.
+    // Vocab becomes due immediately on creation, so the reviews have it.
     expect(s.next(now)).toEqual({ kind: "vocab-review", cardId: id });
     s.gradeVocab(id, 3, now);
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "ag2" });
-  });
-
-  it("runs placement: a passed probe marks its family's topics known", () => {
-    const s = new Session(new Content(fixture, testProfile));
-    expect(s.needsPlacement()).toBe(true);
-    // Two noun topics, so the probe is the first and the narrowing one is ag2.
-    expect(s.beginPlacement()?.probe).toBe("ag1");
-
-    expect(s.answerPlacement(true)?.probe).toBe("ag2");
-    expect(s.answerPlacement(false)).toBeNull(); // no other family has topics
-    expect(s.progress().knownSections).toContain("ag1");
-    expect(s.progress().frontiers.nouns).toBe("ag2");
-    expect(s.needsPlacement()).toBe(false);
-
-    // ag1 is known and skipped; study begins at ag2.
-    expect(s.next(new Date("2026-01-01T00:00:00Z"))).toEqual({
-      kind: "new-topic",
-      sectionId: "ag2",
-    });
+    expect(s.next(now)).toEqual({ kind: "done" });
   });
 
   it("puts back a snapshot, undoing everything done since", () => {
@@ -191,66 +172,77 @@ describe("Session", () => {
   });
 });
 
-describe("Session placement, resumed", () => {
+describe("Session: reading a file this app no longer writes", () => {
   const now = new Date("2026-01-01T00:00:00Z");
-  /** Save and reload, the way closing the app and opening it again would. */
-  const reload = (s: Session) =>
-    new Session(new Content(fixture, testProfile), JSON.parse(JSON.stringify(s.progress())));
+  /** Load a saved shape the way opening the app on an old file would. */
+  const load = (saved: object) =>
+    new Session(
+      new Content(fixture, testProfile),
+      JSON.parse(JSON.stringify({ ...emptyProgress(), ...saved })),
+    );
 
-  it("remembers which probe is on the table across a restart", () => {
-    const s = new Session(new Content(fixture, testProfile));
-    expect(s.beginPlacement()?.probe).toBe("ag1");
-    s.answerPlacement(true);
+  it("keeps what a passed placement claimed, as mastery", () => {
+    const s = load({ knownSections: ["ag1"] });
+    // The map always drew these as fully mastered, so that is what they become.
+    expect(s.grammarMap(now)[0]?.mastery).toBe(4);
+    // And the book steps past them, exactly as the frontier used to.
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "ag2" });
+  });
 
-    // Passing a probe fills knownSections, which used to read as "placed".
-    const back = reload(s);
-    expect(back.needsPlacement()).toBe(true);
-    expect(back.placementState()).toEqual({
-      familyIndex: 0,
-      asked: 1,
-      passed: 0,
-      probe: "ag2",
+  it("recovers one start point from a family focus and its frontier", () => {
+    const s = load({
+      focus: { kind: "family", id: "nouns" },
+      frontiers: { nouns: "ag2" },
     });
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "ag2" });
   });
 
-  it("stays in placement when a word is recorded mid-probe", () => {
-    const s = new Session(new Content(fixture, testProfile));
-    s.beginPlacement();
-    s.recordVocab(new Content(fixture, testProfile).lookup("manibus")[0]!, now);
-
-    expect(s.needsPlacement()).toBe(true);
-    expect(s.placementProbe()).toBe("ag1");
-    expect(reload(s).placementProbe()).toBe("ag1");
+  it("drops a drill stored under the old rule back to the book", () => {
+    const s = load({ focus: { kind: "topic", sectionId: "ag2" } });
+    // No run marker to resume from, so the book is where it goes.
+    expect(s.practiseRun()).toBeNull();
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "ag1" });
   });
 
-  it("forgets the run once placement is over", () => {
-    const s = new Session(new Content(fixture, testProfile));
-    s.beginPlacement();
-    s.endPlacement();
-    expect(s.placementState()).toBeUndefined();
-    expect(reload(s).needsPlacement()).toBe(false);
+  it("forgets a backlog that had been set aside", () => {
+    const s = load({ exploring: { since: "2025-12-01T00:00:00Z" } });
+    // Which errand you are on is not a thing a file gets to say any more.
+    expect(s.progress()).not.toHaveProperty("exploring");
   });
 
-  it("takes an undo back into placement", () => {
-    const s = new Session(new Content(fixture, testProfile));
-    s.beginPlacement();
-    const before = s.snapshot();
-    s.answerPlacement(true);
-    s.answerPlacement(true);
-
-    s.restore(before);
-    expect(s.placementProbe()).toBe("ag1");
-    expect(s.progress().knownSections).toEqual([]);
-    expect(s.progress().frontiers).toEqual({});
+  it("reads a round opened by the old Quiz me as what it was shown as", () => {
+    const round = {
+      sectionId: "ag1",
+      roundId: "ag1-t1",
+      cardBefore: null,
+      worst: null,
+      answered: 0,
+      isNew: false,
+      via: "quiz",
+    };
+    expect(load({ openRound: round }).progress().openRound?.via).toBe("review");
+    expect(
+      load({ openRound: { ...round, isNew: true } }).progress().openRound?.via,
+    ).toBe("new");
   });
 
-  it("starts over on a run stored in the old evenly-spaced shape", () => {
-    const s = new Session(new Content(fixture, testProfile));
-    // What a file written before per-family placement carries.
-    const old = { ...s.progress(), placement: { topics: ["ag1"], index: 0 } };
-    const back = new Session(new Content(fixture, testProfile), JSON.parse(JSON.stringify(old)));
-    expect(back.placementState()).toBeUndefined();
-    expect(back.needsPlacement()).toBe(true);
+  it("leaves the fields it has retired out of what it writes back", () => {
+    const saved = load({
+      knownSections: ["ag1"],
+      placementDone: true,
+      placement: { familyIndex: 0, asked: 0, passed: -1, probe: "ag1" },
+      frontiers: { nouns: "ag2" },
+      focus: { kind: "sweep" },
+    }).progress();
+    for (const gone of [
+      "knownSections",
+      "placementDone",
+      "placement",
+      "frontiers",
+      "focus",
+    ]) {
+      expect(saved).not.toHaveProperty(gone);
+    }
   });
 });
 
@@ -449,22 +441,6 @@ describe("Session mastery", () => {
     s.gradeTopic("ag2", 1, now);
     s.gradeTopic("ag2", 1, now);
     expect(mastery(s, "ag2")).toBe(1); // not mastered, never below
-  });
-
-  it("reports placement-passed topics as mastered but assumed", () => {
-    const s = new Session(new Content(fixture, testProfile));
-    s.beginPlacement();
-    s.answerPlacement(true); // ag1 passed
-    s.answerPlacement(false); // ag2 failed, settling the family at ag1
-    const t = s.grammarMap(now).find((x) => x.sectionId === "ag1")!;
-    expect(t.mastery).toBe(4);
-    expect(t.assumed).toBe(true);
-
-    // Grading it for real replaces the assumption with an earned score.
-    s.gradeTopic("ag1", 3, now);
-    const after = s.grammarMap(now).find((x) => x.sectionId === "ag1")!;
-    expect(after.assumed).toBe(false);
-    expect(after.mastery).toBe(2);
   });
 
   it("groups topics into families with a mastery percentage", () => {
@@ -691,138 +667,7 @@ function book(...parts: Pick<ContentData, "grammar" | "tests">[]): ContentData {
 /** Three nouns and three verb-forms topics, three tests (six questions) each. */
 const wide = book(topics("nouns", "n", 3, 3), topics("verb-forms", "v", 3, 3));
 
-describe("Session progress: the sweep", () => {
-  const now = new Date("2026-01-01T00:00:00Z");
-
-  it("walks the book in order on a fresh deck — the quick refresher", () => {
-    const s = new Session(new Content(wide, testProfile));
-    const served: string[] = [];
-    for (let i = 0; i < 6; i++) {
-      const action = s.next(now);
-      expect(action.kind).toBe("new-topic");
-      if (action.kind !== "new-topic") return;
-      served.push(action.sectionId);
-      // Graded 'easy' so it does not come back as a review mid-walk.
-      s.gradeTopic(action.sectionId, 4, now);
-    }
-    expect(served).toEqual(["n1", "n2", "n3", "v1", "v2", "v3"]);
-    expect(s.next(now)).toEqual({ kind: "done" });
-  });
-
-  it("starts each family at its own frontier, so one area can be ahead", () => {
-    const s = new Session(new Content(wide, testProfile));
-    // Placed halfway through the nouns and nowhere in the verbs.
-    s.studyFrom("n3");
-    s.setFocus({ kind: "sweep" });
-    s.studyFrom("v1");
-    s.setFocus({ kind: "sweep" });
-
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n3" });
-    s.gradeTopic("n3", 4, now);
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v1" });
-  });
-
-  it("comes back for the topics the frontiers skipped, once nothing is ahead", () => {
-    const s = new Session(new Content(wide, testProfile));
-    for (const id of ["n3", "v3"]) {
-      s.studyFrom(id);
-      s.gradeTopic(id, 4, now);
-    }
-    s.setFocus({ kind: "sweep" });
-    // Both families are worked out from their frontiers on, but the book is
-    // not: the topics jumped over are offered rather than reporting "done".
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n1" });
-    s.gradeTopic("n1", 4, now);
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n2" });
-  });
-});
-
-describe("Session progress: taking the syllabus up from a chosen topic", () => {
-  const now = new Date("2026-01-01T00:00:00Z");
-
-  it("goes on from where you jumped to, not back to the beginning", () => {
-    const s = new Session(new Content(wide, testProfile));
-    s.studyFrom("v2");
-
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v2" });
-    s.gradeTopic("v2", 4, now, "v2-t1");
-    // The bug this fixes: `next` used to answer "n1" here, every time.
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v3" });
-  });
-
-  it("leaves the skipped topics unstudied on the map rather than known", () => {
-    const s = new Session(new Content(wide, testProfile));
-    s.studyFrom("v2");
-    const map = s.grammarMap(now);
-    expect(map.find((t) => t.sectionId === "v1")?.mastery).toBeUndefined();
-    expect(map.find((t) => t.sectionId === "v1")?.assumed).toBe(false);
-    expect(map.find((t) => t.sectionId === "v2")?.frontier).toBe(true);
-    expect(s.progress().knownSections).toEqual([]);
-  });
-
-  it("works the focused family out, then falls back to the sweep", () => {
-    const s = new Session(new Content(wide, testProfile));
-    s.studyFrom("v1");
-    expect(s.focusState()).toEqual({ kind: "family", id: "verb-forms" });
-
-    for (const id of ["v1", "v2", "v3"]) {
-      expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: id });
-      s.gradeTopic(id, 4, now);
-    }
-    // The family is spent, so the focus is too, and the nouns are next.
-    expect(s.focusState()).toEqual({ kind: "sweep" });
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n1" });
-  });
-});
-
-describe("Session progress: staying on a topic", () => {
-  const now = new Date("2026-01-01T00:00:00Z");
-  /** Answer one whole served test, the way the apps do. */
-  const round = (s: Session, id: string, rating: 1 | 2 | 3 | 4 = 3) => {
-    const test = s.serveTest(id, { prefer: "unanswered" })!;
-    for (const q of test.questions) {
-      s.recordAttempt(id, { prompt: q.prompt, answer: q.answer, submitted: q.answer, rating }, now);
-      s.gradeTopic(id, rating, now, test.id);
-    }
-    return test;
-  };
-
-  it("keeps serving the same topic until its bank is worked out", () => {
-    const s = new Session(new Content(wide, testProfile));
-    s.drillTopic("n1");
-
-    // Six questions in three tests of two: three rounds to sweep the bank.
-    for (let i = 0; i < 3; i++) {
-      expect(s.next(now)).toEqual({ kind: "drill", sectionId: "n1" });
-      round(s, "n1");
-    }
-    expect(s.coverage("n1")).toEqual({ answered: 6, total: 6 });
-    // Nothing left to practise here, so the drill releases itself.
-    expect(s.focusState()).toEqual({ kind: "sweep" });
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n2" });
-  });
-
-  it("serves questions never answered before, rather than rotating tests", () => {
-    const s = new Session(new Content(wide, testProfile));
-    s.drillTopic("n1");
-    const asked: string[] = [];
-    for (let i = 0; i < 3; i++) {
-      asked.push(...round(s, "n1").questions.map((q) => q.prompt));
-    }
-    // Every question once — no repeat while any of the bank is untouched.
-    expect(new Set(asked).size).toBe(6);
-  });
-
-  it("still lets reviews and words come back while a drill is on", () => {
-    const s = new Session(new Content(wide, testProfile));
-    s.gradeTopic("n2", 1, now); // due again in minutes
-    s.drillTopic("n1");
-    const soon = new Date("2026-01-01T00:30:00Z");
-    expect(s.next(soon)).toEqual({ kind: "topic-review", sectionId: "n2" });
-  });
-});
-
-describe("Session progress: setting the backlog aside to explore", () => {
+describe("Session progress: the two errands", () => {
   const now = new Date("2026-01-01T00:00:00Z");
   const soon = new Date("2026-01-01T00:30:00Z");
 
@@ -834,70 +679,219 @@ describe("Session progress: setting the backlog aside to explore", () => {
     return s;
   };
 
-  it("serves everything due before new ground, until asked not to", () => {
+  it("serves nothing due while exploring, and nothing new while reviewing", () => {
     const s = withBacklog();
-    expect(s.next(soon)).toEqual({ kind: "topic-review", sectionId: "n1" });
-
-    s.setExploring(true, soon);
-    expect(s.next(soon)).toEqual({ kind: "new-topic", sectionId: "n3" });
+    expect(s.next(soon, "review")).toEqual({ kind: "topic-review", sectionId: "n1" });
+    // The book is where the cursor is, not where the backlog is.
+    expect(s.next(soon, "explore")).toEqual({ kind: "new-topic", sectionId: "n1" });
+    s.studyFrom("n3");
+    expect(s.next(soon, "explore")).toEqual({ kind: "new-topic", sectionId: "n3" });
+    expect(s.next(soon, "review")).toEqual({ kind: "topic-review", sectionId: "n1" });
   });
 
-  it("holds what was already waiting, and says how much", () => {
-    const s = withBacklog();
-    s.setExploring(true, soon);
-    expect(s.exploring(soon)).toBe(true);
-    expect(s.exploringHeld(soon)).toBe(2);
-  });
-
-  it("brings back a topic met while exploring, rather than holding that too", () => {
-    const s = withBacklog();
-    s.setExploring(true, soon);
-
-    // The new topic is failed, so it is due in minutes — and it is the thing
-    // being explored, not part of the pile that was put aside.
-    s.gradeTopic("n3", 1, soon);
-    const later = new Date("2026-01-01T01:00:00Z");
-    expect(s.next(later)).toEqual({ kind: "topic-review", sectionId: "n3" });
-    expect(s.exploringHeld(later)).toBe(2);
-  });
-
-  it("serves the held pile once there is nothing left to learn", () => {
-    const s = withBacklog();
-    s.setExploring(true, soon);
-    // Everything the syllabus has, learned and out of the way.
-    for (const id of ["n3", "v1", "v2", "v3"]) s.gradeTopic(id, 4, soon);
-
-    expect(s.next(soon)).toEqual({ kind: "topic-review", sectionId: "n1" });
-  });
-
-  it("is not a state to be in once nothing is being held", () => {
+  it("says the reviews are cleared rather than quietly reading on", () => {
     const s = new Session(new Content(wide, testProfile));
-    s.setExploring(true, now);
-    expect(s.exploring(now)).toBe(false);
-
-    // And a run with nothing left to hold is committed away, as a spent focus
-    // is, rather than lingering in the file.
-    s.gradeTopic("n1", 4, now);
-    expect(s.progress().exploring).toBeNull();
+    // Nothing is due and there is a whole book left; review still says done,
+    // because "done" is answered for the errand that was asked.
+    expect(s.next(now, "review")).toEqual({ kind: "done" });
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "n1" });
   });
 
-  it("survives a reload, so the pile is not silently back in the way", () => {
-    const s = withBacklog();
-    s.setExploring(true, soon);
-    const back = new Session(
-      new Content(wide, testProfile),
-      JSON.parse(JSON.stringify(s.progress())),
+  it("reports the book worked out only once every topic is mastered", () => {
+    const s = new Session(new Content(wide, testProfile));
+    for (const id of ["n1", "n2", "n3", "v1", "v2", "v3"]) {
+      // Four "easy" grades to reach the top band from nothing.
+      for (let i = 0; i < 4; i++) s.gradeTopic(id, 4, now);
+    }
+    expect(s.next(now, "explore")).toEqual({ kind: "done" });
+  });
+});
+
+describe("Session progress: the book cursor", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+
+  it("walks the book in order on a fresh deck — the quick refresher", () => {
+    const s = new Session(new Content(wide, testProfile));
+    const served: string[] = [];
+    for (let i = 0; i < 6; i++) {
+      const action = s.next(now, "explore");
+      expect(action.kind).toBe("new-topic");
+      if (action.kind !== "new-topic") return;
+      served.push(action.sectionId);
+      s.gradeTopic(action.sectionId, 4, now);
+      s.advanceCursor();
+    }
+    expect(served).toEqual(["n1", "n2", "n3", "v1", "v2", "v3"]);
+  });
+
+  it("moves on whatever the grade, so a bad topic cannot stall the book", () => {
+    const s = new Session(new Content(wide, testProfile));
+    // The old rule was "the first topic never graded", which could not be
+    // stalled either — but "the first topic not yet mastered" can, and this is
+    // the case that would have stalled it forever.
+    for (const expected of ["n1", "n2", "n3"]) {
+      expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: expected });
+      s.gradeTopic(expected, 1, now); // "again", every time
+      s.advanceCursor();
+    }
+    expect(s.grammarMap(now).find((t) => t.sectionId === "n1")?.mastery).toBe(1);
+  });
+
+  it("does not skip what is already mastered as it reads on", () => {
+    const s = new Session(new Content(wide, testProfile));
+    for (let i = 0; i < 4; i++) s.gradeTopic("n2", 4, now); // mastered
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "n1" });
+    s.advanceCursor();
+    // Reading on means reading on: n2 is next because it is next.
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "n2" });
+  });
+
+  it("wraps to what is left unmastered once it runs off the end", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.studyFrom("v3");
+    for (let i = 0; i < 4; i++) s.gradeTopic("v3", 4, now);
+    s.advanceCursor();
+    // Past the last section, so back to the earliest thing still short of it.
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "n1" });
+  });
+
+  it("puts the cursor on the earliest unmastered topic when asked for the book", () => {
+    const s = new Session(new Content(wide, testProfile));
+    for (let i = 0; i < 4; i++) s.gradeTopic("n1", 4, now);
+    s.studyFrom("v3");
+    s.bookOrder();
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "n2" });
+  });
+});
+
+describe("Session progress: reading on from a chosen topic", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+
+  it("goes on from where you jumped to, not back to the beginning", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.studyFrom("v2");
+
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "v2" });
+    s.gradeTopic("v2", 4, now, "v2-t1");
+    s.advanceCursor();
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "v3" });
+  });
+
+  it("reads on across the family boundary rather than stopping at it", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.studyFrom("n3");
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "n3" });
+    s.advanceCursor();
+    // The nouns are finished; the book carries straight on into the verbs.
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "v1" });
+  });
+
+  it("leaves the skipped topics unstudied on the map rather than known", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.studyFrom("v2");
+    const map = s.grammarMap(now);
+    expect(map.find((t) => t.sectionId === "v1")?.mastery).toBeUndefined();
+    expect(map.find((t) => t.sectionId === "v2")?.frontier).toBe(true);
+  });
+
+  it("drops a practice run, because it is a different answer to the same question", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.drillTopic("n1", now);
+    s.studyFrom("v1");
+    expect(s.practiseRun()).toBeNull();
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "v1" });
+  });
+});
+
+describe("Session progress: practising one topic", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  /** Answer one whole served test, the way the apps do. */
+  const round = (s: Session, id: string, at: Date = now) => {
+    const test = s.servePractice(id)!;
+    for (const q of test.questions) {
+      s.recordAttempt(id, { prompt: q.prompt, answer: q.answer, submitted: q.answer, rating: 3 }, at);
+      s.gradeTopic(id, 3, at, test.id);
+    }
+    return test;
+  };
+
+  it("serves questions never answered before, rather than rotating tests", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.drillTopic("n1", now);
+    const asked: string[] = [];
+    // Six questions in three tests of two: three rounds to sweep the bank.
+    for (let i = 0; i < 3; i++) {
+      expect(s.next(now, "explore")).toEqual({ kind: "drill", sectionId: "n1" });
+      asked.push(...round(s, "n1").questions.map((q) => q.prompt));
+    }
+    expect(new Set(asked).size).toBe(6);
+    expect(s.coverage("n1")).toEqual({ answered: 6, total: 6 });
+  });
+
+  it("stops and says so rather than slipping onto the next topic", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.drillTopic("n1", now);
+    for (let i = 0; i < 3; i++) round(s, "n1");
+    // The student asked to stay here. Moving them on is not the loop's call.
+    expect(s.next(now, "explore")).toEqual({ kind: "practised", sectionId: "n1" });
+  });
+
+  it("counts the run by what has been answered since it began", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.drillTopic("n1", now);
+    expect(s.practice("n1")).toEqual({ done: 0, total: 6 });
+    round(s, "n1");
+    expect(s.practice("n1")).toEqual({ done: 2, total: 6 });
+  });
+
+  it("takes the whole bank again on a second run", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.drillTopic("n1", now);
+    for (let i = 0; i < 3; i++) round(s, "n1");
+
+    // Nothing is unanswered any more, so a fresh run is the whole bank —
+    // asking to practise a swept topic can only mean the whole thing again.
+    const later = new Date("2026-01-02T00:00:00Z");
+    s.drillTopic("n1", later);
+    expect(s.practice("n1")).toEqual({ done: 0, total: 6 });
+    const second: string[] = [];
+    for (let i = 0; i < 3; i++) second.push(round(s, "n1", later).id);
+    expect(new Set(second).size).toBe(3);
+  });
+
+  it("leads a run with whatever was served longest ago", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.drillTopic("n1", now);
+    for (let i = 0; i < 3; i++) round(s, "n1");
+    expect(s.progress().seenTests.n1).toEqual(["n1-t1", "n1-t2", "n1-t3"]);
+
+    // Abandon a run after one test, so t1 is the most recently served rather
+    // than the least — the case that tells "last served" from "first served".
+    const later = new Date("2026-01-02T00:00:00Z");
+    s.drillTopic("n1", later);
+    expect(s.servePractice("n1")?.id).toBe("n1-t1");
+
+    const last = new Date("2026-01-03T00:00:00Z");
+    s.drillTopic("n1", last);
+    expect(s.servePractice("n1")?.id).toBe("n1-t2");
+  });
+
+  it("leaves the book cursor where it was, so the detour costs nothing", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.studyFrom("v2");
+    s.drillTopic("n1", now);
+    for (let i = 0; i < 3; i++) round(s, "n1");
+    s.bookOrder();
+    expect(s.practiseRun()).toBeNull();
+  });
+
+  it("is not a run at all on a topic with no tests written for it", () => {
+    const s = new Session(
+      new Content(book(topics("nouns", "n", 2), { grammar: [], tests: {} }), testProfile),
     );
-    expect(back.exploring(soon)).toBe(true);
-    expect(back.next(soon)).toEqual({ kind: "new-topic", sectionId: "n3" });
-  });
-
-  it("puts the pile back the moment it is picked up again", () => {
-    const s = withBacklog();
-    s.setExploring(true, soon);
-    s.setExploring(false, soon);
-    expect(s.exploring(soon)).toBe(false);
-    expect(s.next(soon)).toEqual({ kind: "topic-review", sectionId: "n1" });
+    s.drillTopic("nope", now);
+    expect(s.practiseRun()).toBeNull();
+    expect(s.next(now, "explore")).toEqual({ kind: "new-topic", sectionId: "n1" });
   });
 });
 
@@ -1076,67 +1070,5 @@ describe("Session progress: a round of questions is one review", () => {
     s.gradeTopic("n1", 1, now, "n1-t1");
     expect(s.progress().topicCards.n1!.due).toBe(failed);
     expect(s.progress().topicCards.n1!.reps).toBe(1);
-  });
-});
-
-describe("Session placement, per family", () => {
-  it("probes the middle of each family and narrows above a pass", () => {
-    // Nine nouns, the shipped count, so the indices are the real ones.
-    const s = new Session(new Content(book(topics("nouns", "n", 9)), testProfile));
-    expect(s.beginPlacement()?.probe).toBe("n5"); // 5 of 9
-    expect(s.answerPlacement(true)?.probe).toBe("n7"); // 7 of 9
-    expect(s.answerPlacement(true)).toBeNull();
-    expect(s.progress().frontiers.nouns).toBe("n8"); // start at 8
-    expect(s.progress().knownSections).toHaveLength(7);
-  });
-
-  it("asks one probe of a family it fails, and stops narrowing there", () => {
-    const s = new Session(new Content(book(topics("verb-forms", "v", 35)), testProfile));
-    expect(s.beginPlacement()?.probe).toBe("v18"); // 18 of 35
-    expect(s.answerPlacement(false)).toBeNull();
-    expect(s.progress().frontiers["verb-forms"]).toBeUndefined(); // start at 1
-    expect(s.progress().knownSections).toEqual([]);
-  });
-
-  it("carries on past a failed family — the declensions-but-not-the-verbs case", () => {
-    const s = new Session(new Content(book(topics("nouns", "n", 3), topics("verb-forms", "v", 3)), testProfile));
-    expect(s.beginPlacement()?.probe).toBe("n2");
-    expect(s.answerPlacement(true)?.probe).toBe("n3"); // narrowing the nouns
-    // Failing does not end the run: the verbs still get asked.
-    expect(s.answerPlacement(false)?.probe).toBe("v2");
-    expect(s.answerPlacement(false)).toBeNull();
-
-    expect(s.progress().frontiers).toEqual({ nouns: "n3" });
-    // Only nouns were claimed — never a prefix of the whole book.
-    expect(s.progress().knownSections).toEqual(["n1", "n2"]);
-
-    const now = new Date("2026-01-01T00:00:00Z");
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "n3" });
-    s.gradeTopic("n3", 4, now);
-    expect(s.next(now)).toEqual({ kind: "new-topic", sectionId: "v1" });
-  });
-
-  it("says which family is being asked and how far through the test is", () => {
-    const s = new Session(new Content(wide, testProfile));
-    s.beginPlacement();
-    expect(s.placementProgress()).toEqual({
-      family: "nouns",
-      done: 0,
-      families: 2,
-      narrowing: false,
-    });
-    // A second probe pins the same family down; it is not a new area.
-    s.answerPlacement(true);
-    expect(s.placementProgress()).toMatchObject({ family: "nouns", done: 0, narrowing: true });
-    s.answerPlacement(false);
-    expect(s.placementProgress()).toMatchObject({ family: "verb-forms", done: 1 });
-  });
-
-  it("takes a family of one without asking a second probe", () => {
-    const s = new Session(new Content(book(topics("nouns", "n", 1)), testProfile));
-    expect(s.beginPlacement()?.probe).toBe("n1");
-    expect(s.answerPlacement(true)).toBeNull();
-    expect(s.progress().knownSections).toEqual(["n1"]);
-    expect(s.progress().frontiers.nouns).toBeUndefined(); // nothing left to resume at
   });
 });

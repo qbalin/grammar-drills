@@ -63,7 +63,7 @@ export interface Profile {
    * is never taken apart on suspicion.
    */
   enclitics?: string[];
-  /** Display order, which is also the order placement walks. */
+  /** Display order — the order the grammar index is drawn in. */
   families: Family[];
   fallbackFamily: string;
   grammar: GrammarStyle;
