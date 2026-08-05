@@ -1,7 +1,6 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import type { GrammarSection } from "@lang-tutor/core";
-import { profile } from "../pack.js";
 import { GrammarSheet } from "./Grammar.js";
 
 /**
@@ -221,24 +220,6 @@ describe("turning the page", () => {
     mount();
     expect(screen.queryByRole("navigation")).toBeNull();
     expect(screen.queryByRole("button", { name: /section/ })).toBeNull();
-  });
-
-  it("credits the book at the foot of every page, and links it", () => {
-    // Not a page of this grammar was written here. Whose sentences these are,
-    // and where to go and read them, belongs on the page they are set on.
-    mountPaged();
-    const { title, url, licence } = profile.grammar.source;
-    const link = screen.getByRole("link", { name: title });
-    expect(link.getAttribute("href")).toBe(url);
-    expect(link.getAttribute("rel")).toBe("noopener noreferrer");
-    expect(screen.getByText(licence)).toBeDefined();
-  });
-
-  it("credits it on a page that does not page, too", () => {
-    mount();
-    expect(
-      screen.getByRole("link", { name: profile.grammar.source.title }),
-    ).toBeDefined();
   });
 
   it("leads from the page being read to what can be done with it", () => {

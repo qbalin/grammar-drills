@@ -7,7 +7,7 @@ import type {
   TopicProgress,
 } from "@lang-tutor/core";
 import { Ring, Sentence, Sheet, ago, cycleEmphasis } from "../ui.js";
-import { fold } from "../pack.js";
+import { fold, profile } from "../pack.js";
 
 /**
  * The syllabus as a map: nine families, each opening to a row per topic.
@@ -134,7 +134,48 @@ export function MapSheet({
           {open === f.id && <TopicRows topics={f.topics} onPick={onPick} />}
         </div>
       ))}
+
+      <Colophon />
     </Sheet>
+  );
+}
+
+/**
+ * Whose book this is, under the contents page of it.
+ *
+ * Not one line of this app's syllabus was written here: the families, the
+ * topics and the § numbers are a scholar's book, out of copyright, parsed into
+ * JSON by `grammar/parse.py`. The reader is entitled to know whose work they
+ * are being taught out of and to go and read the original — which is also the
+ * only honest way to ship someone else's book, whatever its licence permits.
+ *
+ * Here rather than at the foot of every section: it is the whole grammar being
+ * credited, not the page in hand, and a credit repeated under all 114 sections
+ * is furniture in the way of the reading. The index is the one place it is the
+ * subject.
+ *
+ * Everything in it is the pack's own `profile.grammar.source`, so a second
+ * language credits its own author.
+ */
+function Colophon() {
+  const { title, url, licence } = profile.grammar.source;
+  return (
+    <p className="colophon">
+      <a
+        className="colophon__link"
+        href={url}
+        target="_blank"
+        // `noreferrer` as well as `noopener`: this is a study app, and where
+        // someone is reading from is nobody else's business.
+        rel="noopener noreferrer"
+      >
+        {title}
+        <span className="colophon__out" aria-hidden="true">
+          ↗
+        </span>
+      </a>
+      <span className="colophon__licence">{licence}</span>
+    </p>
   );
 }
 

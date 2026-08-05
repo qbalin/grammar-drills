@@ -145,9 +145,18 @@ describe.skipIf(!built)("the built content bundle", () => {
 
   it("is sorted the way the bisection compares", () => {
     const lines = read("forms.txt.gz").split("\n");
+    // The comparison is the cheap part and `expect` is not: a quarter of a
+    // million assertions took this test past the timeout whenever the machine
+    // was busy with the rest of the suite. Find the first pair out of order,
+    // then assert once — the same check, and it names the pair either way.
+    let wrong = "";
     for (let i = 1; i < lines.length; i++) {
       // Code-unit order, and no duplicate keys.
-      expect(lines[i - 1]! < lines[i]!, `${lines[i - 1]} then ${lines[i]}`).toBe(true);
+      if (!(lines[i - 1]! < lines[i]!)) {
+        wrong = `${lines[i - 1]} then ${lines[i]}`;
+        break;
+      }
     }
+    expect(wrong, "out of order at").toBe("");
   });
 });

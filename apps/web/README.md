@@ -38,9 +38,10 @@ Two more things worth knowing:
   order, so the § next door is a thumb away rather than a close-map-pick, and
   the two neighbours are named at the foot of the page for anyone who would
   rather tap. The **→** in the head goes from the section you are reading to
-  what you can do with it — *Quiz me*, *Study from here*, *Practise these*. At
-  the foot of every page is whose book it is, licence and all, linked to the
-  edition it was parsed from: not a page of this grammar was written here.
+  what you can do with it — *Quiz me*, *Study from here*, *Practise these*.
+  Under the last line of the **grammar map** is whose book all of it is,
+  licence and all, linked to the edition it was parsed from: not a page of this
+  grammar was written here.
 - **+ record a word** takes any word as you met it — `manibus`, `amāvērunt`,
   `λόγοις` — and works out the dictionary headword. Those words then come back
   for review on their own schedule.

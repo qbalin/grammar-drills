@@ -1459,6 +1459,28 @@ describe("the grammar map", () => {
       within(sheet).getByText("First-declension nouns end in -a."),
     ).toBeDefined();
   });
+
+  it("credits the book the whole syllabus came out of, and links it", async () => {
+    // Not a line of this syllabus was written here — the families, the topics
+    // and the § numbers are somebody's book. The index is where that is said,
+    // once, rather than under all 114 sections.
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+
+    const map = screen.getByRole("dialog", { name: "Grammar map" });
+    const { title, url, licence } = profile.grammar.source;
+    const link = within(map).getByRole("link", { name: title });
+    expect(link.getAttribute("href")).toBe(url);
+    expect(link.getAttribute("rel")).toBe("noopener noreferrer");
+    expect(within(map).getByText(licence)).toBeDefined();
+
+    // And not repeated on every page of the reading.
+    await user.click(within(map).getByRole("button", { name: /First declension/ }));
+    await user.click(screen.getByRole("button", { name: /Read §/ }));
+    expect(screen.queryByRole("link", { name: title })).toBeNull();
+  });
 });
 
 /**

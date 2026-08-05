@@ -20,8 +20,8 @@ export interface Family {
 export interface GrammarStyle {
   /**
    * Provenance: who wrote the book, where it can be read, and under what.
-   * Printed by validate-pack, and set at the foot of every section the web
-   * reader shows — the text is someone else's work and says so.
+   * Printed by validate-pack, and set under the web app's grammar map — the
+   * whole syllabus is someone else's work and says so.
    */
   source: { title: string; url: string; licence: string };
   /** Section ids must start with this, e.g. "bn" for Bennett. */

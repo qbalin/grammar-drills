@@ -993,11 +993,11 @@ span.status__title {
   color: var(--text-faint);
 }
 
-/* Whose book this is. A colophon: last on the page, quiet, and every page. */
+/* Whose book this is: a colophon, under the last line of the contents. No rule
+   of its own — the family list already ends in one, and two hairlines a
+   centimetre apart read as a mistake. */
 .colophon {
-  margin: 1.4rem 0 0;
-  padding-top: 0.9rem;
-  border-top: 1px solid var(--line);
+  margin: 1.5rem 0 0.4rem;
   text-align: center;
   font-size: 0.72rem;
   line-height: 1.5;
