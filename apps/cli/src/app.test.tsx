@@ -89,6 +89,40 @@ const until = async (frame: () => string | undefined, want: string) => {
   throw new Error(`frame never showed ${JSON.stringify(want)}:\n\n${frame()}`);
 };
 
+/**
+ * Send input, then wait until the screen it produced is ready for the next.
+ *
+ * Two waits, and both are needed. The frame proves React rendered; the tick
+ * after it lets Ink re-register the key handlers, which it does in an effect.
+ * Input arriving between those two is read by the *previous* render's handler
+ * — Enter runs an `onSubmit` still closed over the empty box, so the answer
+ * vanishes and the graded screen reads "your answer —", and a letter meant for
+ * a text box is taken as the shortcut it was on the screen before. A fixed
+ * sleep covered both on a quiet machine and lost the race on a loaded one.
+ */
+const press = async (
+  stdin: { write(s: string): void },
+  frame: () => string | undefined,
+  keys: string,
+  /** Something the screen those keys produce says. Defaults to the keys. */
+  want = keys,
+) => {
+  // Re-sent if a whole second passes with no sign of it. Input that arrives
+  // before Ink has registered a handler is not queued, it is gone — which is
+  // what happens to the first keystrokes after `render`, whose handlers are
+  // still in an unflushed mount effect. A write is synchronous into the
+  // stream, so a second of silence means it was dropped rather than delayed,
+  // and sending it again cannot double up.
+  for (let attempt = 0; attempt < 3; attempt++) {
+    stdin.write(keys);
+    for (let i = 0; i < 100; i++) {
+      if (frame()?.includes(want)) return tick();
+      await new Promise((r) => setTimeout(r, 10));
+    }
+  }
+  throw new Error(`frame never showed ${JSON.stringify(want)}:\n\n${frame()}`);
+};
+
 /** What the terminal sends for Esc. */
 const ESC = "";
 
@@ -101,31 +135,24 @@ describe("CLI App (write → compare → self-grade)", () => {
       <App session={session} content={content} storage={storage} />,
     );
 
-    await tick();
-    // Now the first new topic: grammar drawer + English prompt + input box.
-    expect(lastFrame()).toContain("First declension nouns");
+    // The first new topic: grammar drawer + English prompt + input box.
+    await until(lastFrame, "First declension nouns");
     expect(lastFrame()).toContain("The girl loves the rose.");
     expect(lastFrame()).toContain(testProfile.ui.promptDirection);
 
     // Write a Latin answer and submit it.
-    stdin.write("puella rosa amat"); // deliberately imperfect (rosa vs rosam)
-    await tick();
-    stdin.write("\r");
-    await tick();
+    await press(stdin, lastFrame, "puella rosa amat"); // rosa, not rosam
+    await press(stdin, lastFrame, "\r", "your answer puella rosa amat");
     // The comparison shows the student's answer and the correct one.
-    expect(lastFrame()).toContain("your answer");
-    expect(lastFrame()).toContain("puella rosa amat");
     expect(lastFrame()).toContain("correct");
     expect(lastFrame()).toContain("puella rosam amat");
 
-    // Record a word from the answer.
-    stdin.write("v");
-    await tick();
-    stdin.write("manibus");
-    await tick();
-    stdin.write("\r");
-    await tick();
-    expect(lastFrame()).toContain("Saved: manus, manūs (f)");
+    // Record a word from the answer. The box has to be on screen before the
+    // word is typed: in the graded phase those letters are shortcuts, and the
+    // `m` of "manibus" would open the grammar index.
+    await press(stdin, lastFrame, "v", "Record vocabulary");
+    await press(stdin, lastFrame, "manibus");
+    await press(stdin, lastFrame, "\r", "Saved: manus, manūs (f)");
     expect(session.progress().vocabCards["v-manus"]).toBeDefined();
 
     // Self-grade (2 = faltered). The word is due now, but the book is the
