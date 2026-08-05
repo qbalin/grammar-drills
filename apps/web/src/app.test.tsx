@@ -1052,7 +1052,7 @@ describe("holding a word", () => {
     await user.click(screen.getByRole("button", { name: "Edit" }));
     const sheet = screen.getByRole("dialog", { name: "Edit word" });
     await user.click(within(sheet).getByRole("button", { name: /Delete this word/ }));
-    await user.click(screen.getByRole("button", { name: /Delete “rosa, rosae \(f\)”/ }));
+    await user.click(screen.getByRole("button", { name: "Confirm deletion" }));
 
     expect(session.vocabCard("v-rosa")).toBeUndefined();
   });
@@ -1079,7 +1079,7 @@ describe("holding a word", () => {
     await user.click(screen.getByRole("button", { name: /edit this word/ }));
     const sheet = screen.getByRole("dialog", { name: "Edit word" });
     await user.click(within(sheet).getByRole("button", { name: /Delete this word/ }));
-    await user.click(screen.getByRole("button", { name: /Delete “rosa, rosae \(f\)”/ }));
+    await user.click(screen.getByRole("button", { name: "Confirm deletion" }));
 
     expect(session.vocabCard("v-rosa")).toBeUndefined();
     // The next due card is on screen, and the study body is not empty.
@@ -1141,6 +1141,54 @@ describe("the vocabulary list", () => {
     await user.click(screen.getByRole("button", { name: "1 word" }));
     expect(screen.getByRole("dialog", { name: "Vocabulary" })).toBeDefined();
     expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
+  });
+
+  /**
+   * The two things in the app that cannot be taken back. Everything else has an
+   * undo; these have a second tap instead, and it has to look like one.
+   */
+  describe("confirming what cannot be undone", () => {
+    it("asks for the deletion rather than for the word again", async () => {
+      const user = userEvent.setup();
+      const { session } = await withOneWord(user);
+
+      await user.click(screen.getByRole("button", { name: "Edit" }));
+      const sheet = screen.getByRole("dialog", { name: "Edit word" });
+      await user.click(within(sheet).getByRole("button", { name: /Delete this word/ }));
+
+      // The citation used to be the confirming button's label, which reads as
+      // a name rather than as a warning — and the word is already on the sheet.
+      expect(screen.queryByRole("button", { name: /rosa, rosae/ })).toBeNull();
+      const confirm = screen.getByRole("button", { name: "Confirm deletion" });
+      expect(confirm.className).toContain("btn--danger");
+
+      // And it can be backed out of, with the card untouched.
+      await user.click(screen.getByRole("button", { name: "Keep it" }));
+      expect(screen.queryByRole("button", { name: "Confirm deletion" })).toBeNull();
+      expect(session.vocabCard("v-rosa")).toBeDefined();
+    });
+
+    it("says what erasing the device does before it does it", async () => {
+      const user = userEvent.setup();
+      const { session } = await withOneWord(user);
+
+      await user.click(screen.getByRole("button", { name: "Settings" }));
+      await user.click(
+        screen.getByRole("button", { name: "Erase progress on this device" }),
+      );
+
+      // Not "tap again" on the same button in the same place: a double tap
+      // could land on that, and the words did not say what would go.
+      const confirm = screen.getByRole("button", { name: "Confirm erasure" });
+      expect(confirm.className).toContain("btn--danger");
+      expect(
+        screen.getByText(/Every grade, schedule and recorded word/),
+      ).toBeDefined();
+
+      await user.click(screen.getByRole("button", { name: "Keep it" }));
+      expect(screen.queryByRole("button", { name: "Confirm erasure" })).toBeNull();
+      expect(session.vocabCard("v-rosa")).toBeDefined();
+    });
   });
 });
 

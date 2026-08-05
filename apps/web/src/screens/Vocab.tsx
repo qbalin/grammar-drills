@@ -406,14 +406,24 @@ export function VocabEditSheet({
 
       <div className="section-title">Remove</div>
       {confirmDelete ? (
-        <div className="actions">
-          <button className="btn" onClick={() => setConfirmDelete(false)}>
-            Keep it
-          </button>
-          <button className="btn btn--quiet" onClick={onDelete}>
-            Delete “{card.citation}”
-          </button>
-        </div>
+        <>
+          <div className="actions">
+            <button className="btn" onClick={() => setConfirmDelete(false)}>
+              Keep it
+            </button>
+            {/* What the button does, not what it does it to: the card being
+                edited is named at the top of the sheet and in the field above,
+                and a citation set in the confirming button read as a label
+                rather than as a warning. Red, because nothing brings the card
+                and the months of schedule on it back. */}
+            <button className="btn btn--danger" onClick={onDelete}>
+              Confirm deletion
+            </button>
+          </div>
+          <p className="field__hint">
+            The card and its review history go for good.
+          </p>
+        </>
       ) : (
         <div className="actions">
           <button className="btn btn--quiet" onClick={() => setConfirmDelete(true)}>

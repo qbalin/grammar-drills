@@ -208,8 +208,41 @@ export function GrammarSheet({
           // learns it is a reader for whom the buttons are the whole feature.
           <p className="pager__hint">Swipe across to turn the page.</p>
         )}
+        <Colophon />
       </div>
     </Sheet>
+  );
+}
+
+/**
+ * Whose book this is, at the foot of every page of it.
+ *
+ * Not one page of this app's grammar was written here: it is a scholar's book,
+ * out of copyright, parsed into JSON by `grammar/parse.py`. The reader is
+ * entitled to know whose sentences they are reading and to go and read the
+ * original — which is also the only honest way to ship someone else's work,
+ * whatever its licence permits. Everything here is the pack's own
+ * `profile.grammar.source`, so a second language credits its own author.
+ */
+function Colophon() {
+  const { title, url, licence } = profile.grammar.source;
+  return (
+    <p className="colophon">
+      <a
+        className="colophon__link"
+        href={url}
+        target="_blank"
+        // `noreferrer` as well as `noopener`: this is a study app, and where
+        // someone is reading from is nobody else's business.
+        rel="noopener noreferrer"
+      >
+        {title}
+        <span className="colophon__out" aria-hidden="true">
+          ↗
+        </span>
+      </a>
+      <span className="colophon__licence">{licence}</span>
+    </p>
   );
 }
 

@@ -30,7 +30,7 @@ for the engine: `packages/core` must not learn a language.
 | `citations.mjs` | rewrites citations in `lemmas.json.gz`; needs the reference dictionary |
 | `reference/frequency.tsv.gz` | committed, ~200 KB; ranked lemmas for the gates |
 | `fold.fixtures.json` | pairs that must fold alike and pairs that must not |
-| `icon.mjs` | the app icon's glyph, as capsule geometry |
+| `icon.mjs` | the app icon's glyph, as capsules or an SVG path |
 | `confetti.mjs` | the silhouettes thrown every 10–20 answers, and which may share a burst |
 | `BASELINE.json` | what the pack measured when last validated — a record, not an input |
 

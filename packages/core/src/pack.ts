@@ -18,7 +18,11 @@ export interface Family {
 
 /** How this language's reference grammar is laid out and rendered. */
 export interface GrammarStyle {
-  /** Provenance, printed by validate-pack; not used at runtime. */
+  /**
+   * Provenance: who wrote the book, where it can be read, and under what.
+   * Printed by validate-pack, and set at the foot of every section the web
+   * reader shows — the text is someone else's work and says so.
+   */
   source: { title: string; url: string; licence: string };
   /** Section ids must start with this, e.g. "bn" for Bennett. */
   idPrefix: string;

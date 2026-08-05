@@ -35,7 +35,7 @@ languages/ancient-greek/
   grammar/parse.py      your grammar -> content/grammar.json           step 4
   gen/config.mjs        the prompt, the band, the function words       step 7
   citations.mjs         how this language cites a word                 step 6
-  icon.mjs              the glyph, as capsule geometry                 step 8
+  icon.mjs              the glyph: capsules, or an SVG path            step 8
   content/              grammar.json · tests/ · lemmas.json.gz         built
   BASELINE.json         what it measured when it last passed           step 9
   REVIEW.md             the two gates a human has to sign              steps 4, 7
@@ -383,9 +383,14 @@ cannot see that, and neither can any of C1–C7. Record it in `REVIEW.md`.
 
 ## 8. Wire the build
 
-Give the pack an `icon.mjs` — the glyph as capsule geometry, in a 0..1 box (see
-Latin's Ā). A letterform the capsule renderer cannot draw (Ω, ж, ا) should ship
-`icons/*.png` directly instead.
+Give the pack an `icon.mjs` — the glyph, either of two ways. `capsules` is
+round-capped strokes in a 0..1 box, which is right for a letterform that is
+essentially pen strokes (Latin's Ā is four of them). `path` is SVG path data,
+filled even-odd and fitted to the icon box for you, which is right for anything
+with a bowl or a counter in it: one weight of stroke cannot draw Ω, and a Ω
+stitched out of capsules looks stitched. Greek's `icon.mjs` is four lines,
+because it imports the Ω its own `confetti.mjs` already draws — the same letter
+in the launcher and in the burst.
 
 Give it a `confetti.mjs` too — the shapes this language throws every ten to
 twenty answers. A shape is a stack of layers, `[paint, path]`, painted back to

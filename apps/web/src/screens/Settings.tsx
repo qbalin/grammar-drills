@@ -201,16 +201,31 @@ export function SettingsSheet({
       )}
 
       <div className="section-title">Start over</div>
-      <div className="actions">
-        <button
-          className="btn btn--quiet"
-          onClick={() => (confirmReset ? onReset() : setConfirmReset(true))}
-        >
-          {confirmReset
-            ? "Tap again to erase all progress"
-            : "Erase progress on this device"}
-        </button>
-      </div>
+      {confirmReset ? (
+        // The second tap is the irreversible one, so it says what it does and
+        // wears the colour for it — and it is no longer the same button in the
+        // same place, which is what made a double tap able to land on it.
+        <>
+          <div className="actions">
+            <button className="btn" onClick={() => setConfirmReset(false)}>
+              Keep it
+            </button>
+            <button className="btn btn--danger" onClick={onReset}>
+              Confirm erasure
+            </button>
+          </div>
+          <p className="field__hint">
+            Every grade, schedule and recorded word on this device goes. If it
+            has never been exported or synced, it cannot be got back.
+          </p>
+        </>
+      ) : (
+        <div className="actions">
+          <button className="btn btn--quiet" onClick={() => setConfirmReset(true)}>
+            Erase progress on this device
+          </button>
+        </div>
+      )}
     </Sheet>
   );
 }

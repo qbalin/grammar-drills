@@ -611,6 +611,19 @@ span.status__title {
   color: var(--text-dim);
 }
 
+/*
+ * The one button that cannot be taken back — deleting a word, erasing the
+ * device. Gold is the app's yes, and a destructive yes must not look like the
+ * others. `--ink` inverts with the theme, so the label stays legible on the red
+ * whichever way round the paper is.
+ */
+.btn--danger {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .btn:disabled {
   opacity: 0.45;
 }
@@ -978,6 +991,32 @@ span.status__title {
   text-align: center;
   font-size: 0.72rem;
   color: var(--text-faint);
+}
+
+/* Whose book this is. A colophon: last on the page, quiet, and every page. */
+.colophon {
+  margin: 1.4rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--text-faint);
+}
+
+.colophon__link {
+  color: var(--text-dim);
+  text-decoration: underline dotted var(--line);
+  text-underline-offset: 3px;
+}
+
+.colophon__out {
+  margin-left: 0.25rem;
+  color: var(--gold-dim);
+}
+
+.colophon__licence {
+  display: block;
 }
 
 /* The way from the page being read to what can be done with it. */
