@@ -17,6 +17,7 @@
   --gold: #e8c98a;
   --gold-dim: #8a7a52;
   --green: #7fc99a;
+  --green-dim: #4f7d61;
   --amber: #e0a95e;
   --red: #d98a86;
 
@@ -49,6 +50,7 @@
     --gold: #9a7620;
     --gold-dim: #c4ab73;
     --green: #2f7d52;
+    --green-dim: #8fb59d;
     --amber: #a06a12;
     --red: #a3423c;
     color-scheme: light;
@@ -106,6 +108,18 @@ button {
   padding-top: var(--safe-top);
 }
 
+/* One accent, except for the one state that is a different errand.
+   Reviewing is what the app is for and keeps the gold; exploring — reviews
+   deliberately set aside to go and learn something — moves the accent to the
+   green the progress meters already use for ground gained. It is the same
+   variable, so every button, ring and meter follows without knowing about the
+   mode, and the header takes a hairline of it so the shift is legible even on
+   a screen with no accent showing. */
+.app[data-mode="explore"] {
+  --gold: var(--green);
+  --gold-dim: var(--green-dim);
+}
+
 .screen {
   flex: 1;
   display: flex;
@@ -119,6 +133,12 @@ button {
   padding: 0.35rem 1.1rem 0.2rem;
   font-size: 0.8rem;
   color: var(--text-dim);
+  /* Held transparent so lighting it up in a mode costs no reflow. */
+  border-bottom: 1px solid transparent;
+}
+
+.app[data-mode="explore"] .status {
+  border-bottom-color: var(--gold-dim);
 }
 
 .status__row {
@@ -231,6 +251,22 @@ span.status__title {
   border-radius: 999px;
   border: 1px solid currentColor;
   color: var(--gold);
+}
+
+/* One badge names what is on screen and why, in every state the loop has.
+   Reviewing is the state you are in most of the time, so it is the quietest of
+   them — but it is still said, because "why am I being shown this" had no
+   answer at all when the only badge was `new`. */
+.badge--review {
+  color: var(--text-faint);
+}
+
+.badge--vocab {
+  color: var(--text-faint);
+}
+
+.badge--new {
+  color: var(--green);
 }
 
 .badge--placement {
@@ -469,19 +505,28 @@ span.status__title {
   margin: 0.2rem 0 1rem;
 }
 
+/* The whole row is the target, and it is a thumb's worth of it: the caret was
+   never the only thing tappable here, but at 0.7rem of the faintest ink on the
+   page it read as the only thing being offered, and as too small to bother
+   aiming at. */
 .crib__toggle {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   width: 100%;
-  min-height: 2.4rem;
+  min-height: var(--tap);
   font-size: 0.85rem;
   color: var(--text-dim);
 }
 
+/* Fixed width so the label does not shift when the triangle turns. */
 .crib__caret {
-  font-size: 0.7rem;
-  color: var(--text-faint);
+  width: 1rem;
+  flex: none;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--text-dim);
 }
 
 .crib__list {
@@ -1170,9 +1215,15 @@ span.status__title {
   cursor: default;
 }
 
+/* Same treatment as the crib's caret: the row is the target, and the triangle
+   should look like it belongs to something you can hit. */
 .row__chev {
-  color: var(--text-faint);
+  width: 1rem;
   flex: none;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--text-dim);
 }
 
 /* --- attempts ------------------------------------------------------------- */

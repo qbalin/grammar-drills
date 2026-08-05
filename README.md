@@ -170,11 +170,11 @@ Flow: (placement on first run →) read the English prompt, **type your Latin an
 press Enter**, compare with the reference answer, then `1–4` self-grade
 (1 again · 4 easy). `w` the words of this question · `v` record a word ·
 `g` grammar section · `h` your earlier answers on this topic · `.` stay on this
-topic · `Esc` peek at the grammar mid-answer · `m` grammar map · `q` quit
+topic · `Esc` peek at the grammar mid-answer · `m` grammar index · `q` quit
 (autosaves).
 
 While the answer box has the keyboard, every letter goes into the answer, so the
-same two things are reached by chords: **`Tab`** the words, **`^N`** the map
+same two things are reached by chords: **`Tab`** the words, **`^N`** the index
 (alongside `Esc` for the grammar and `^Z` to take back a grade).
 
 The grammar pane shows the **whole** section — Bennett's paradigm sections run
@@ -216,7 +216,7 @@ Pushing to `main` publishes every pack to GitHub Pages
 the language they want, once, and *Add to Home Screen*. Same loop — write the
 sentence, compare, self-grade 1–4 — with a
 **Reveal** button for when typing a sentence on glass is not happening, the
-grade buttons labelled with the interval each one buys, and the grammar map
+grade buttons labelled with the interval each one buys, and the grammar index
 redrawn as tappable rows — one per topic, each naming its § and how far along it
 is, since a thumb wants a target and a screen has room for words.
 
@@ -226,13 +226,24 @@ thumbs that would rather tap and arrow keys for anyone on a desktop. Reading
 rarely stops at the one § you opened, and until this it cost a close, a map and
 another pick. The **→** in its head is the way from the section you have read to
 what can be done with it, so studying what you just found is one tap rather than
-a walk back through the map.
+a walk back through the index.
 
-The CLI's two map keys become the two buttons beside *Quiz me* — **Study from
+The CLI's two index keys become the two buttons beside *Quiz me* — **Study from
 here** and **Practise these 17** — and `.` becomes **↻ more of this** in the row
 under the answer. When either is running, a chip in the status bar says what is
 being studied and carries *back to the book* beside it: a mode you cannot see
 how to leave is a trap, not a feature.
+
+The bar names **what is on screen and why** in one word — `review`, `new`,
+`drill`, `quiz`, `vocabulary`, `placement` — because for a long time it named
+exactly one of them. A card come back on schedule, a topic you asked to stay on
+and a topic quizzed off the index are the same four sentences under the same
+title, and only *new* was ever said out loud, so "why am I being shown this"
+had no answer on screen. It is written on the round rather than derived from
+the scheduler, which is what makes it survive a reload: `next` says why once,
+and a resumed round never asks it again. The line under it says what is being
+worked on and nothing else — a vocabulary card reads `Vocabulary`, where the
+grammar topic answered before it used to stand, reference, prose link and all.
 
 The question's vocabulary is a disclosure above the answer box rather than a
 sheet, on both the writing and the graded screen: a sheet would cover the box,
@@ -341,19 +352,34 @@ that each of the nine families picks up at **its own frontier**. On a fresh deck
 no family has one, so this is chapter one onwards, exactly as before. After a
 placement it is the same walk starting in nine different places.
 
-**An area** — one family at a time, set by `f` on the map (web: *Study from
+**An area** — one family at a time, set by `f` on the index (web: *Study from
 here*). Knowing your declensions and wanting to start at the verbs is the case
 this exists for: it moves that family's frontier to the topic you chose and
 draws new topics from it until the family runs out, then hands back to the
-sweep. The topics you skipped stay *unstudied* on the map rather than being
+sweep. The topics you skipped stay *unstudied* on the index rather than being
 marked known — they are — and the sweep collects them once nothing is ahead.
 
-**A topic** — `.` on the graded screen, or *Practise these 17* on the map. A
+**A topic** — `.` on the graded screen, or *Practise these 17* on the index. A
 section ships 19–93 questions (median 24) in tests of four, so doing well on one
 test and being moved on is not the same as having the topic. This stays put and
 serves the questions you have never answered, in preference to the ones you
 have, until the bank is dry — then it lets go by itself. The status bar carries
 the count while it runs, and the way out beside it.
+
+**Setting the backlog aside** is the one thing that does touch reviews, and it
+is the student's to throw. Everything due is served before anything new, which
+is right for the sitting you came to study and wrong for the one you came to
+get further in: twelve cards deep, the only way to reach an unstudied topic was
+to know that the index would quiz one. *Set these aside and explore* (`x` in the
+CLI) drops **the pile that was already waiting** to the bottom of the ladder —
+not reviews as such. A topic met while exploring and graded *again* is due in a
+minute and comes straight back, because it is the thing being explored rather
+than part of what was put aside. What is held is deferred and never dropped: it
+is served the moment there is nothing left to learn, so *Nothing due* still
+means nothing due. The status bar carries the count that is waiting and the way
+back beside it, and the accent goes green while the run is on — the same
+variable every button and meter already reads, so the app is a different colour
+for as long as it is a different errand.
 
 **The placement test** fills the frontiers in. It asks about each family in
 turn, bisecting: a sentence from the middle of the family, then — only if you
@@ -369,14 +395,14 @@ in a single sitting. The round is the unit instead, graded by the worst answer
 in it — a topic you get three of four right on is not one you have. Mastery
 still moves per question: it counts what you got right.
 
-## The grammar map
+## The grammar index
 
 `m` opens the syllabus as a line per grammar family, the selected one expanded to
 one cell per topic. (One cell per topic for all 114 at once would need ~136
 columns.)
 
 ```
-Grammar map                                       7% mastered overall
+Grammar index                                     7% mastered overall
 
   Nouns                       ███░░░  44%   9 topics
 ▸ Adjectives & adverbs        ██░░░░  27%   5 topics
@@ -420,7 +446,7 @@ has served and still hold twenty you have never seen.
 
 `← →` walks the cursor along the bar (including topics you have never met),
 `↑ ↓` cycles between families and wraps at both ends, `g` opens the selected
-section in full (scrolling as above, `Esc` back to the map), and two keys act on
+section in full (scrolling as above, `Esc` back to the index), and two keys act on
 the topic under the cursor:
 
 - **Enter** serves a test on it straight away and *leaves nothing behind* — the

@@ -822,6 +822,85 @@ describe("Session progress: staying on a topic", () => {
   });
 });
 
+describe("Session progress: setting the backlog aside to explore", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  const soon = new Date("2026-01-01T00:30:00Z");
+
+  /** Two topics failed, so two cards are due half an hour later. */
+  const withBacklog = () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.gradeTopic("n1", 1, now);
+    s.gradeTopic("n2", 1, now);
+    return s;
+  };
+
+  it("serves everything due before new ground, until asked not to", () => {
+    const s = withBacklog();
+    expect(s.next(soon)).toEqual({ kind: "topic-review", sectionId: "n1" });
+
+    s.setExploring(true, soon);
+    expect(s.next(soon)).toEqual({ kind: "new-topic", sectionId: "n3" });
+  });
+
+  it("holds what was already waiting, and says how much", () => {
+    const s = withBacklog();
+    s.setExploring(true, soon);
+    expect(s.exploring(soon)).toBe(true);
+    expect(s.exploringHeld(soon)).toBe(2);
+  });
+
+  it("brings back a topic met while exploring, rather than holding that too", () => {
+    const s = withBacklog();
+    s.setExploring(true, soon);
+
+    // The new topic is failed, so it is due in minutes — and it is the thing
+    // being explored, not part of the pile that was put aside.
+    s.gradeTopic("n3", 1, soon);
+    const later = new Date("2026-01-01T01:00:00Z");
+    expect(s.next(later)).toEqual({ kind: "topic-review", sectionId: "n3" });
+    expect(s.exploringHeld(later)).toBe(2);
+  });
+
+  it("serves the held pile once there is nothing left to learn", () => {
+    const s = withBacklog();
+    s.setExploring(true, soon);
+    // Everything the syllabus has, learned and out of the way.
+    for (const id of ["n3", "v1", "v2", "v3"]) s.gradeTopic(id, 4, soon);
+
+    expect(s.next(soon)).toEqual({ kind: "topic-review", sectionId: "n1" });
+  });
+
+  it("is not a state to be in once nothing is being held", () => {
+    const s = new Session(new Content(wide, testProfile));
+    s.setExploring(true, now);
+    expect(s.exploring(now)).toBe(false);
+
+    // And a run with nothing left to hold is committed away, as a spent focus
+    // is, rather than lingering in the file.
+    s.gradeTopic("n1", 4, now);
+    expect(s.progress().exploring).toBeNull();
+  });
+
+  it("survives a reload, so the pile is not silently back in the way", () => {
+    const s = withBacklog();
+    s.setExploring(true, soon);
+    const back = new Session(
+      new Content(wide, testProfile),
+      JSON.parse(JSON.stringify(s.progress())),
+    );
+    expect(back.exploring(soon)).toBe(true);
+    expect(back.next(soon)).toEqual({ kind: "new-topic", sectionId: "n3" });
+  });
+
+  it("puts the pile back the moment it is picked up again", () => {
+    const s = withBacklog();
+    s.setExploring(true, soon);
+    s.setExploring(false, soon);
+    expect(s.exploring(soon)).toBe(false);
+    expect(s.next(soon)).toEqual({ kind: "topic-review", sectionId: "n1" });
+  });
+});
+
 describe("Session progress: a round of questions is one review", () => {
   const now = new Date("2026-01-01T00:00:00Z");
 
@@ -945,6 +1024,30 @@ describe("Session progress: a round of questions is one review", () => {
 
       s.gradeTopic("n1", 3, now, test.id);
       expect(s.resumableRound()!.draft).toBeUndefined();
+    });
+
+    it("remembers what asked for the round, so a reload still says", () => {
+      const s = new Session(new Content(wide, testProfile));
+      const test = s.serveTest("n1")!;
+      s.beginRound("n1", test, false, "drill");
+      s.gradeTopic("n1", 3, now, test.id);
+
+      const back = new Session(
+        new Content(wide, testProfile),
+        JSON.parse(JSON.stringify(s.progress())),
+      );
+      // Without this a resumed drill and a resumed review are the same four
+      // sentences on the same topic, and were shown as such.
+      expect(back.resumableRound()!.via).toBe("drill");
+    });
+
+    it("reads a round written before rounds said why as what it was shown as", () => {
+      const { s } = start(true);
+      const legacy = JSON.parse(JSON.stringify(s.progress()));
+      delete legacy.openRound.via;
+
+      const back = new Session(new Content(wide, testProfile), legacy);
+      expect(back.resumableRound()!.via).toBe("new");
     });
 
     it("drops a round stored before it recorded where the student was", () => {

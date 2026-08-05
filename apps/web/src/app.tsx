@@ -7,6 +7,7 @@ import {
   type LemmaEntry,
   type Progress,
   type Rating,
+  type RoundVia,
   type Test,
   type TopicProgress,
   type VocabWord,
@@ -71,7 +72,7 @@ interface GradeUndo {
   qIndex: number;
   submitted: string;
   marks: AttemptMarks;
-  isNewTopic: boolean;
+  via: RoundVia | null;
   inPlacement: boolean;
 }
 
@@ -131,7 +132,10 @@ export function App({ content, session, storage }: Props) {
   const [sectionId, setSectionId] = useState<string | null>(null);
   const [test, setTest] = useState<Test | null>(null);
   const [qIndex, setQIndex] = useState(0);
-  const [isNewTopic, setIsNewTopic] = useState(false);
+  // Why the round on the table was served, which is the only thing the screen
+  // cannot work out for itself. `next` says it once and would forget it; the
+  // round carries it across a reload.
+  const [via, setVia] = useState<RoundVia | null>(null);
 
   // The run itself lives in progress — which probe, which family, what has
   // passed — so this is only whether the loop is driving it.
@@ -222,15 +226,31 @@ export function App({ content, session, storage }: Props) {
   );
   const focus = useMemo(() => session.focusState(), [session, tick]);
   // What the focus is called on screen, and nothing at all for the sweep.
+  //
+  // It says what it governs, because it governs less than it looks like it
+  // does: a focus steers where *new* topics come from and reviews arrive from
+  // wherever they are due, so "on Verb forms" over a first-declension review
+  // was a fair reading of a chip that was describing something else entirely.
   const focusLabel = useMemo(() => {
-    if (focus.kind === "family") return content.familyLabel(content.familyOf(focus.id));
+    if (focus.kind === "family") {
+      return `new topics from ${content.familyLabel(content.familyOf(focus.id))}`;
+    }
     if (focus.kind === "topic") {
       const { answered, total } = session.coverage(focus.sectionId);
       const title = content.getSection(focus.sectionId)?.title ?? "this topic";
-      return `${title} · ${answered}/${total}`;
+      return `staying on ${title} · ${answered}/${total}`;
     }
     return null;
   }, [focus, session, tick, content]);
+  const exploring = useMemo(() => session.exploring(), [session, tick]);
+  const held = useMemo(() => session.exploringHeld(), [session, tick]);
+  // Whether there is anything left to explore towards: a topic never graded
+  // that has questions to ask. Read off the family bars, which are computed
+  // for the map anyway.
+  const newGround = useMemo(
+    () => families.some((f) => f.topics.some((t) => t.mastery === undefined && t.hasTests)),
+    [families],
+  );
 
   // The words behind the question on screen. `dictLoading` is a dependency on
   // purpose: everything looked up before the fetch landed resolved to nothing,
@@ -274,6 +294,10 @@ export function App({ content, session, storage }: Props) {
       return;
     }
     if (action.kind === "vocab-review") {
+      // The topic behind us is not what is on screen: a word is. Letting the
+      // section stand here is what used to put a grammar title, its reference
+      // and a way into its prose above a vocabulary card.
+      setVia(null);
       setPhase({ t: "vocab-review", cardId: action.cardId, revealed: false });
       save();
       bump();
@@ -292,17 +316,23 @@ export function App({ content, session, storage }: Props) {
       advance();
       return;
     }
-    const isNew = action.kind === "new-topic";
+    const asked: RoundVia =
+      action.kind === "new-topic"
+        ? "new"
+        : action.kind === "drill"
+          ? "drill"
+          : "review";
+    const isNew = asked === "new";
     setSectionId(action.sectionId);
     setTest(served);
     setQIndex(0);
-    setIsNewTopic(isNew);
+    setVia(asked);
     setPhase({ t: "answering" });
     // Teach before testing on new ground, exactly as the CLI does.
     setOverlay(isNew ? { t: "grammar", sectionId: action.sectionId } : null);
     // The round is on the table from here, and saved right away: the session
     // this protects against is the one that ends without another grade in it.
-    session.beginRound(action.sectionId, served, isNew);
+    session.beginRound(action.sectionId, served, isNew, asked);
     save();
     bump();
   }, [session, save]);
@@ -324,7 +354,7 @@ export function App({ content, session, storage }: Props) {
       setInput("");
       setSubmitted("");
       setMarks({});
-      setIsNewTopic(false);
+      setVia(null);
       setOverlay(null);
       setPhase({ t: "answering" });
       bump();
@@ -366,7 +396,7 @@ export function App({ content, session, storage }: Props) {
       setSectionId(open.sectionId);
       setTest(open.test);
       setQIndex(open.qIndex);
-      setIsNewTopic(open.isNew);
+      setVia(open.via);
       // The badge comes back but the grammar sheet does not: it was opened
       // when the topic was served, and being taught the same section again on
       // every reload is not teaching.
@@ -433,7 +463,7 @@ export function App({ content, session, storage }: Props) {
     qIndex,
     submitted,
     marks,
-    isNewTopic,
+    via,
     inPlacement,
   });
 
@@ -454,7 +484,7 @@ export function App({ content, session, storage }: Props) {
     // The words picked out come back with the sentence they were picked out
     // of: re-grading should not cost the student the marking they just did.
     setMarks(undo.marks);
-    setIsNewTopic(undo.isNewTopic);
+    setVia(undo.via);
     setInPlacement(undo.inPlacement);
     setInput("");
     setOverlay(null);
@@ -529,7 +559,15 @@ export function App({ content, session, storage }: Props) {
     if (!served) return flash(`No tests written for “${topic.title}” yet.`);
     // Choosing a topic from the map is the deliberate way out of a round, and
     // the only one: this is what replaces whatever was on the table.
-    session.beginRound(topic.sectionId, served, topic.mastery === undefined);
+    // New to the student and asked for off the map are both true of a topic
+    // never studied: the first decides whether to teach it first, the second is
+    // what the badge says, and collapsing them would lose one or the other.
+    session.beginRound(
+      topic.sectionId,
+      served,
+      topic.mastery === undefined,
+      "quiz",
+    );
     save();
     setSectionId(topic.sectionId);
     setTest(served);
@@ -537,7 +575,7 @@ export function App({ content, session, storage }: Props) {
     setInput("");
     setSubmitted("");
     setMarks({});
-    setIsNewTopic(topic.mastery === undefined);
+    setVia("quiz");
     setPhase({ t: "answering" });
     setOverlay(
       topic.mastery === undefined
@@ -566,6 +604,33 @@ export function App({ content, session, storage }: Props) {
     setOverlay(null);
     advance();
     flash(`Studying from “${topic.title}”.`);
+  };
+
+  /**
+   * Set the backlog aside and go and learn something, or pick it back up.
+   *
+   * Mid-round the questions on the table were asked and are not thrown away —
+   * the switch takes over when the round ends, the same rule the drill follows.
+   * Anywhere else there is nothing to finish, so it takes effect at once.
+   */
+  const holdReviews = (on: boolean) => {
+    session.setExploring(on);
+    // Read after the switch: until it is thrown, nothing is being held.
+    const waiting = session.exploringHeld();
+    save();
+    const midRound =
+      test !== null && (phase.t === "answering" || phase.t === "graded");
+    if (midRound) bump();
+    else advance();
+    flash(
+      on
+        ? midRound
+          ? "Reviews set aside — new ground after this round."
+          : `Reviews set aside. ${waiting} waiting.`
+        : midRound
+          ? "Back to the reviews after this round."
+          : "Back to the reviews.",
+    );
   };
 
   /**
@@ -811,6 +876,28 @@ export function App({ content, session, storage }: Props) {
 
   // --- render --------------------------------------------------------------
 
+  /**
+   * What is on screen and why, in one word. Every state of the loop has one:
+   * the badge was the only thing that ever named a mode, it named exactly one
+   * of them, and a due review, a drill and a topic picked off the map were left
+   * looking identical.
+   */
+  const mode = inPlacement
+    ? "placement"
+    : phase.t === "vocab-review"
+      ? "vocab"
+      : phase.t === "done"
+        ? null // nothing is being worked on; the app's own name stands here
+        : via;
+  const modeLabel: Record<string, string> = {
+    placement: "placement",
+    review: "review",
+    new: "new",
+    drill: "drill",
+    quiz: "quiz",
+    vocab: "vocabulary",
+  };
+
   const schedule = sectionId ? session.previewTopic(sectionId) : undefined;
   // Read on the graded screen, where the grade has not been given yet — so the
   // attempt being made is not among these, and every row is an earlier one.
@@ -818,16 +905,18 @@ export function App({ content, session, storage }: Props) {
   const nextDue = session.nextDue();
 
   return (
-    <div className="app">
+    // The mode reaches the stylesheet here: reviewing and exploring are
+    // different enough errands to be worth telling apart from across the room,
+    // and a colour does that before any word is read.
+    <div className="app" data-mode={exploring ? "explore" : (mode ?? "rest")}>
       {/* Two rows, because three tap targets and a count leave a phone-width
           line no room for a title — and Bennett's titles run to
           "Verbs in -io of the Third Conjugation". The topic gets its own line
           and the whole width. */}
       <header className="status">
         <div className="status__row">
-          {inPlacement && <span className="badge badge--placement">placement</span>}
-          {!inPlacement && isNewTopic && phase.t !== "vocab-review" && (
-            <span className="badge">new</span>
+          {mode && (
+            <span className={`badge badge--${mode}`}>{modeLabel[mode]}</span>
           )}
           {/* The count is the natural way in to the schedule: it is already
               the answer to "how much is waiting", and the sheet is the rest of
@@ -837,9 +926,11 @@ export function App({ content, session, storage }: Props) {
             onClick={() => setOverlay({ t: "schedule" })}
             aria-label="What is coming up"
           >
-            {stats.dueTopics + stats.dueVocab > 0
-              ? `${stats.dueTopics + stats.dueVocab} due`
-              : `${stats.vocab} words`}
+            {exploring
+              ? `${held} waiting`
+              : stats.dueTopics + stats.dueVocab > 0
+                ? `${stats.dueTopics + stats.dueVocab} due`
+                : `${stats.vocab} words`}
           </button>
           <span className="status__spacer" />
           {/* Decoration, and hidden from screen readers on purpose: it says
@@ -864,9 +955,9 @@ export function App({ content, session, storage }: Props) {
           <button
             className="iconbtn"
             onClick={() => setOverlay({ t: "map" })}
-            aria-label="Grammar map"
+            aria-label="Grammar index"
           >
-            ▦
+            📖
           </button>
           <button
             className="iconbtn"
@@ -883,6 +974,13 @@ export function App({ content, session, storage }: Props) {
               {placement.narrowing ? ", narrowing" : ""} · area{" "}
               {placement.done + 1} of {placement.families}
             </span>
+          ) : mode === "vocab" ? (
+            // A word is on screen, so the topic studied before it is not what
+            // this line is about — and its prose is not what a student reaching
+            // for help here wants. It says what is being worked on and stops
+            // there: the word itself is the answer being graded, and printing
+            // it above the gloss would give the card away.
+            <span className="status__title">Vocabulary</span>
           ) : section ? (
             // The way in to the grammar while the question is still on screen.
             // The graded view has always had its `§ grammar` link, but the
@@ -902,11 +1000,27 @@ export function App({ content, session, storage }: Props) {
             <span className="status__title">{profile.ui.appName}</span>
           )}
         </div>
-        {/* What new topics are being drawn from, and the way out of it. The
-            plain sweep through the book says nothing: it is not a mode. */}
-        {!inPlacement && focusLabel && (
+        {/* The row of standing states, each with its way out beside it: a mode
+            you cannot see how to leave is a trap, not a feature. At most one at
+            a time — the backlog being held is the louder of the two and takes
+            the row, carrying the focus along inside its own label.
+
+            The plain sweep through the book still says nothing: it is not a
+            mode. But a review being served, with ground left to explore, is
+            the one state that gets a way out without a chip — it is the
+            default, and it was also the one nobody could see past. */}
+        {!inPlacement && exploring ? (
           <div className="status__row status__focus">
-            <span className="badge badge--focus">on {focusLabel}</span>
+            <span className="badge badge--focus">
+              exploring{focusLabel ? ` · ${focusLabel}` : ""}
+            </span>
+            <button className="linkbtn" onClick={() => holdReviews(false)}>
+              back to reviews
+            </button>
+          </div>
+        ) : !inPlacement && focusLabel ? (
+          <div className="status__row status__focus">
+            <span className="badge badge--focus">{focusLabel}</span>
             <button
               className="linkbtn"
               onClick={() => {
@@ -919,7 +1033,13 @@ export function App({ content, session, storage }: Props) {
               back to the book
             </button>
           </div>
-        )}
+        ) : !inPlacement && (mode === "review" || mode === "vocab") && newGround ? (
+          <div className="status__row status__focus">
+            <button className="linkbtn" onClick={() => holdReviews(true)}>
+              set these aside and explore
+            </button>
+          </div>
+        ) : null}
       </header>
 
       <div className="study">

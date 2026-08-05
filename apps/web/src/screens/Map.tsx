@@ -105,7 +105,7 @@ export function MapSheet({
   const total = families.reduce((n, f) => n + f.topics.length, 0);
 
   return (
-    <Sheet title="Grammar map" onClose={onClose}>
+    <Sheet title="Grammar index" onClose={onClose}>
       <div className="centered" style={{ padding: "0 0 1.2rem" }}>
         <Ring percent={overall} />
         <p>mastered across all {total} topics</p>

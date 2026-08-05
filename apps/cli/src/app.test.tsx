@@ -182,7 +182,7 @@ describe("CLI App (write → compare → self-grade)", () => {
     unmount();
   });
 
-  it("opens the grammar map, walks it, and quizzes the chosen topic", async () => {
+  it("opens the grammar index, walks it, and quizzes the chosen topic", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
     const session = new Session(content, { ...emptyProgress(), placementDone: true });
@@ -201,7 +201,7 @@ describe("CLI App (write → compare → self-grade)", () => {
     // `m` opens the map, parked on the topic being studied (§ 34).
     stdin.write("m");
     await tick();
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
     expect(lastFrame()).toContain("Nouns");
     expect(lastFrame()).toContain("Verb forms");
     expect(lastFrame()).toContain("§ 34");
@@ -302,11 +302,11 @@ describe("CLI App (write → compare → self-grade)", () => {
     await tick();
     stdin.write("m");
     await tick();
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
 
     stdin.write("\u001B");
     await tick();
-    expect(lastFrame()).not.toContain("Grammar map");
+    expect(lastFrame()).not.toContain("Grammar index");
     expect(lastFrame()).toContain("your answer");
     expect(lastFrame()).toContain("puella rosam amat");
 
@@ -665,7 +665,7 @@ describe("CLI App (write → compare → self-grade)", () => {
 
     stdin.write("g");
     await tick();
-    expect(lastFrame()).not.toContain("Grammar map");
+    expect(lastFrame()).not.toContain("Grammar index");
     expect(lastFrame()).toContain("rule line 1");
 
     for (let i = 0; i < 20; i++) {
@@ -677,7 +677,7 @@ describe("CLI App (write → compare → self-grade)", () => {
     // Esc goes back to the map, not out of it.
     stdin.write("\u001B");
     await tick();
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
 
     unmount();
   });
@@ -750,7 +750,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
     // Esc returns to the map rather than out of everything.
     stdin.write(ESC);
     await tick();
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
 
     unmount();
   });
@@ -940,7 +940,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
 
     stdin.write(CTRL_N);
     await tick();
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
 
     stdin.write(ESC);
     await tick();
@@ -966,7 +966,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
     stdin.write("\r");
     await tick();
     expect(lastFrame()).toContain("Press Enter again to leave the answer you are writing");
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
 
     // The second goes ahead.
     stdin.write("\r");
@@ -992,7 +992,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
     stdin.write("\r");
     await tick();
     expect(lastFrame()).toContain("Press Enter again");
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
     unmount();
   });
 
@@ -1009,7 +1009,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
     // Until now `m` was suppressed for the whole of placement.
     stdin.write(CTRL_N);
     await tick();
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
 
     stdin.write("\r");
     await tick();
@@ -1032,7 +1032,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
     await tick();
     stdin.write("m");
     await tick();
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
 
     // A pane over a pane reads as a mistake; the sentence is what was wanted.
     stdin.write("w");
@@ -1106,7 +1106,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
     expect(lastFrame()).toContain("Coming up");
     stdin.write(ESC);
     await tick();
-    expect(lastFrame()).toContain("Grammar map");
+    expect(lastFrame()).toContain("Grammar index");
     stdin.write(ESC);
     await tick();
     // It came from `done`, so `done` is where it goes back to — not the grading
@@ -1182,7 +1182,7 @@ describe("the three ways to move through the book", () => {
     await tick();
     expect(session.progress().frontiers).toEqual({ "verb-forms": "v1" });
     expect(lastFrame()).toContain("v1 question");
-    expect(lastFrame()).toContain("on Verb forms");
+    expect(lastFrame()).toContain("new topics from Verb forms");
 
     // The bug this fixes: the next topic used to be the first of the book.
     await answer(stdin);
@@ -1191,7 +1191,7 @@ describe("the three ways to move through the book", () => {
     // Only when the area is worked out does the sweep pick the rest up.
     await answer(stdin);
     expect(lastFrame()).toContain("d1 question");
-    expect(lastFrame()).not.toContain("on Verb forms");
+    expect(lastFrame()).not.toContain("new topics from Verb forms");
     unmount();
   });
 
@@ -1211,7 +1211,7 @@ describe("the three ways to move through the book", () => {
     stdin.write("3");
     await tick();
     expect(lastFrame()).toContain("d1 question");
-    expect(lastFrame()).toContain("on First declension nouns");
+    expect(lastFrame()).toContain("staying on First declension nouns");
 
     // Six questions in the bank, one answered: five more sweep it out, and no
     // question is served twice while any of the bank is untouched.
@@ -1225,7 +1225,7 @@ describe("the three ways to move through the book", () => {
 
     // Nothing left to practise, so the drill lets go and the book resumes.
     expect(lastFrame()).toContain("d2 question");
-    expect(lastFrame()).not.toContain("on First declension nouns");
+    expect(lastFrame()).not.toContain("staying on First declension nouns");
     unmount();
   });
 

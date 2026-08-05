@@ -637,7 +637,7 @@ describe("picking a test back up", () => {
     await skipPlacement(user);
     expect(topic()).toBe("First declension");
 
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
     await user.click(screen.getByRole("button", { name: /^Verb forms/ }));
     await user.click(screen.getByRole("button", { name: /Present indicative/ }));
     await user.click(screen.getByRole("button", { name: "Quiz me" }));
@@ -775,7 +775,7 @@ describe("marking up an answer", () => {
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
     await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
     await user.click(screen.getByRole("button", { name: /All 2 questions/ }));
     await user.click(screen.getByRole("button", { name: /The girl loves the rose/ }));
@@ -1227,10 +1227,10 @@ describe("a section's questions", () => {
     await user.click(screen.getByRole("button", { name: "Submit" }));
     await user.click(screen.getByRole("button", { name: /Hard/ }));
 
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
     // Scoped to the map: the status bar names the same topic, and tapping it
     // opens the grammar rather than the topic sheet.
-    const map = screen.getByRole("dialog", { name: "Grammar map" });
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
     await user.click(within(map).getByRole("button", { name: /First declension/ }));
     await user.click(screen.getByRole("button", { name: /All 2 questions/ }));
 
@@ -1398,13 +1398,13 @@ describe("the topic in the status bar", () => {
   });
 });
 
-describe("the grammar map", () => {
+describe("the grammar index", () => {
   it("quizzes any topic on demand, ahead of the scheduler", async () => {
     const user = userEvent.setup();
     mount();
     await skipPlacement(user);
 
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
     // Only the open family shows its topics; Verb forms is not the one open.
     await user.click(screen.getByRole("button", { name: /^Verb forms/ }));
     await user.click(screen.getByRole("button", { name: /Present indicative/ }));
@@ -1419,7 +1419,7 @@ describe("the grammar map", () => {
     mount();
     await skipPlacement(user);
 
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
 
     // Each topic is a row carrying Bennett's § reference, its title and where
     // the student stands on it — not a square labelled with its position.
@@ -1438,7 +1438,7 @@ describe("the grammar map", () => {
     mount();
     await skipPlacement(user);
 
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
     await user.click(screen.getByRole("button", { name: /Second declension/ }));
     await user.click(screen.getByRole("button", { name: /Read §/ }));
 
@@ -1467,9 +1467,9 @@ describe("the grammar map", () => {
     const user = userEvent.setup();
     mount();
     await skipPlacement(user);
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
 
-    const map = screen.getByRole("dialog", { name: "Grammar map" });
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
     const { title, url, licence } = profile.grammar.source;
     const link = within(map).getByRole("link", { name: title });
     expect(link.getAttribute("href")).toBe(url);
@@ -1493,8 +1493,8 @@ describe("reading on", () => {
   async function read(user: ReturnType<typeof userEvent.setup>) {
     await skipPlacement(user);
     await user.click(screen.getByRole("button", { name: "Close" }));
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
-    const map = screen.getByRole("dialog", { name: "Grammar map" });
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
     await user.click(within(map).getByRole("button", { name: /First declension/ }));
     await user.click(screen.getByRole("button", { name: /Read §/ }));
   }
@@ -1549,7 +1549,7 @@ describe("reading on", () => {
     const topic = screen.getByRole("dialog", { name: "First declension" });
     expect(within(topic).getByRole("button", { name: "Quiz me" })).toBeDefined();
     await user.click(within(topic).getByRole("button", { name: "Close" }));
-    expect(screen.getByRole("dialog", { name: "Grammar map" })).toBeDefined();
+    expect(screen.getByRole("dialog", { name: "Grammar index" })).toBeDefined();
   });
 });
 
@@ -1913,7 +1913,7 @@ describe("the three ways to move through the book", () => {
     family: RegExp,
     name: RegExp,
   ) => {
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
     await user.click(screen.getByRole("button", { name: family }));
     await user.click(screen.getByRole("button", { name }));
   };
@@ -1943,7 +1943,7 @@ describe("the three ways to move through the book", () => {
 
     expect(session.progress().frontiers).toEqual({ "verb-forms": "pres" });
     expect(onScreen()).toBe("Present indicative");
-    expect(screen.getByText("on Verb forms")).toBeDefined();
+    expect(screen.getByText("new topics from Verb forms")).toBeDefined();
 
     // The way out is on screen beside it, and it goes back to the book.
     await user.click(screen.getByRole("button", { name: "back to the book" }));
@@ -1961,7 +1961,7 @@ describe("the three ways to move through the book", () => {
     // The graded screen's ↻ gave its slot up to marking; the topic sheet has
     // always offered the same drill by name, and it says how much is left.
     // Nouns is the family being studied, so the map opens on it already.
-    await user.click(screen.getByRole("button", { name: "Grammar map" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
     await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
     await user.click(screen.getByRole("button", { name: "Practise these 1" }));
     expect(screen.getByText(/Staying on “First declension”/)).toBeDefined();
@@ -1995,5 +1995,164 @@ describe("the three ways to move through the book", () => {
     expect(session.progress().topicCards.decl1!.reps).toBe(1);
     // Mastery still counts every question answered.
     expect(session.progress().topicMastery.decl1).toBe(3);
+  });
+});
+
+/**
+ * The status bar used to name exactly one of the loop's states — `new` — so a
+ * due review, a drill and a topic picked off the index were the same four
+ * sentences under the same bare title, and "why am I being shown this" had no
+ * answer on screen at all.
+ */
+describe("what is on screen, and why", () => {
+  /** The mode badge: the first row's, never the focus chip on the third. */
+  const badge = () =>
+    document.querySelector(".status__row .badge")?.textContent ?? "";
+  const title = () => document.querySelector(".status__title")?.textContent ?? "";
+
+  /** A deck with a topic already failed, so a review is waiting on opening. */
+  const withBacklog = () => {
+    const s = new Session(new Content(fixture, testProfile));
+    s.endPlacement();
+    s.gradeTopic("decl1", 1, new Date(Date.now() - 60 * 60 * 1000));
+    return s.progress();
+  };
+
+  it("names new ground as new, and a card come back as a review", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    expect(badge()).toBe("new");
+
+    cleanup();
+    mount(withBacklog());
+    expect(badge()).toBe("review");
+    expect(title()).toBe("First declension");
+  });
+
+  it("names a topic asked for off the index, which is neither", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    await user.click(screen.getByRole("button", { name: /Verb forms/ }));
+    await user.click(screen.getByRole("button", { name: /Present indicative/ }));
+    await user.click(screen.getByRole("button", { name: "Quiz me" }));
+    expect(badge()).toBe("quiz");
+    expect(title()).toBe("Present indicative");
+  });
+
+  it("says a word is on the table, rather than the topic before it", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+
+    // Record a word, then finish the topic so its card comes up next.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /record a word/ }));
+    await user.type(screen.getByRole("textbox"), "regem");
+    await user.click(screen.getByRole("button", { name: "Look up" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    expect(badge()).toBe("vocabulary");
+    // It used to read "§ 20-22 First declension", with a way into the grammar
+    // of a topic that was not what the student was being asked about.
+    expect(title()).toBe("Vocabulary");
+    expect(document.querySelector(".status__ref")).toBeNull();
+    // And never the citation: that is the answer being graded.
+    expect(screen.queryByText("rex, rēgis")).toBeNull();
+  });
+
+  it("still says what a round was after the app has been closed and opened", async () => {
+    // A deck already staying on a topic, so the round served is a drill.
+    const s = new Session(new Content(fixture, testProfile));
+    s.endPlacement();
+    s.drillTopic("decl1");
+    mount(s.progress());
+
+    expect(badge()).toBe("drill");
+
+    cleanup();
+    mount(new SyncingStorage().read() ?? undefined);
+    // The round is the only place this is written down: `next` says it once,
+    // and a reload never asks `next` again for a round already on the table.
+    expect(badge()).toBe("drill");
+  });
+});
+
+describe("setting the reviews aside to explore", () => {
+  const badge = () =>
+    document.querySelector(".status__row .badge")?.textContent ?? "";
+  const title = () => document.querySelector(".status__title")?.textContent ?? "";
+  const counts = () => document.querySelector(".status__counts")?.textContent ?? "";
+  const mode = () => document.querySelector(".app")?.getAttribute("data-mode");
+
+  /** Both noun topics failed an hour ago, leaving the verbs as new ground. */
+  const withBacklog = () => {
+    const s = new Session(new Content(fixture, testProfile));
+    s.endPlacement();
+    const hourAgo = new Date(Date.now() - 60 * 60 * 1000);
+    s.gradeTopic("decl1", 1, hourAgo);
+    s.gradeTopic("decl2", 1, hourAgo);
+    return s.progress();
+  };
+
+  it("reaches new ground with a review waiting, and gives the way back", async () => {
+    const user = userEvent.setup();
+    const { session } = mount(withBacklog());
+    expect(badge()).toBe("review");
+    expect(counts()).toBe("2 due");
+
+    await user.click(
+      screen.getByRole("button", { name: "set these aside and explore" }),
+    );
+    // The questions on the table were asked and are not thrown away; the
+    // switch takes over when the round ends, as the drill does.
+    expect(screen.getByText(/Reviews set aside/)).toBeDefined();
+    expect(counts()).toBe("2 waiting");
+    expect(mode()).toBe("explore");
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    // Ground that was unreachable a moment ago: everything due used to be
+    // served before anything new, with no way past it but the index.
+    expect(badge()).toBe("new");
+    expect(title()).toBe("Present indicative");
+    // The other noun topic is still waiting, and still says so.
+    expect(screen.getByText("exploring")).toBeDefined();
+    expect(counts()).toBe("1 waiting");
+
+    await user.click(screen.getByRole("button", { name: "back to reviews" }));
+    expect(session.progress().exploring).toBeNull();
+    expect(screen.queryByText("exploring")).toBeNull();
+  });
+
+  it("keeps the run across a reload, so the pile is not silently back", async () => {
+    const user = userEvent.setup();
+    mount(withBacklog());
+    await user.click(
+      screen.getByRole("button", { name: "set these aside and explore" }),
+    );
+
+    cleanup();
+    const { session } = mount(new SyncingStorage().read() ?? undefined);
+    expect(session.exploring()).toBe(true);
+    expect(screen.getByText("exploring")).toBeDefined();
+  });
+
+  it("is not offered when there is nothing due to set aside", async () => {
+    const user = userEvent.setup();
+    mount();
+    await skipPlacement(user);
+    expect(badge()).toBe("new");
+    expect(
+      screen.queryByRole("button", { name: "set these aside and explore" }),
+    ).toBeNull();
   });
 });

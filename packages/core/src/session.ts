@@ -18,6 +18,7 @@ import {
   type PlacementRun,
   type Progress,
   type RoundDraft,
+  type RoundVia,
   type SerializedCard,
   type Test,
   type VocabCardState,
@@ -144,6 +145,7 @@ export class Session {
     this.p.frontiers ??= {};
     this.p.focus ??= { kind: "sweep" };
     this.p.openRound ??= null;
+    this.p.exploring ??= null;
     // A placement stored in the old evenly-spaced shape cannot be resumed by
     // the per-family walk. It is at most a few sentences; start over.
     if (this.p.placement && !("familyIndex" in this.p.placement)) {
@@ -315,6 +317,62 @@ export class Session {
     this.setFocus({ kind: "topic", sectionId });
   }
 
+  // --- reviews set aside ------------------------------------------------------
+
+  /**
+   * The due cards this explore run is holding back: the ones that were already
+   * waiting when it began. A card reviewed since — a topic just learned and
+   * graded "again", due in a minute — is not one of them, so exploring keeps
+   * adding to the deck and keeps answering for what it added.
+   *
+   * Empty when no run is on, which is what makes every caller below simple.
+   */
+  private heldByExploring(now: Date): { topics: Set<string>; vocab: Set<string> } {
+    const run = this.p.exploring;
+    if (!run) return { topics: new Set(), vocab: new Set() };
+    const since = new Date(run.since);
+    const held = (card: SerializedCard | undefined) =>
+      !card?.last_review || new Date(card.last_review) < since;
+    return {
+      topics: new Set(
+        this.dueTopicIds(now).filter((id) => held(this.p.topicCards[id])),
+      ),
+      vocab: new Set(
+        this.dueVocabIds(now).filter((id) => held(this.p.vocabCards[id]?.fsrs)),
+      ),
+    };
+  }
+
+  /**
+   * Whether the student has put a backlog aside to go and learn something,
+   * reported false the moment there is no longer a backlog being held — the
+   * same shape as `focusState`, where a state with nothing left to do is not a
+   * state to be in.
+   *
+   * This is deliberately not "reviews are off". What is held comes back the
+   * moment there is nothing left to learn; what it buys is the order.
+   */
+  exploring(now: Date = new Date()): boolean {
+    return this.exploringHeld(now) > 0;
+  }
+
+  /** How many reviews the run is holding — the number the status bar carries. */
+  exploringHeld(now: Date = new Date()): number {
+    const held = this.heldByExploring(now);
+    return held.topics.size + held.vocab.size;
+  }
+
+  /** Set the backlog aside as it stands, or pick it back up. */
+  setExploring(on: boolean, now: Date = new Date()): void {
+    this.p.exploring = on ? { since: now.toISOString() } : null;
+    this.touch();
+  }
+
+  /** Commit a spent run, exactly as `gradeTopic` commits a spent focus. */
+  private settleExploring(now: Date): void {
+    if (this.p.exploring && !this.exploring(now)) this.p.exploring = null;
+  }
+
   /** How much of a topic's bank has been answered at least once. */
   coverage(sectionId: string): Coverage {
     const asked = new Set(
@@ -327,12 +385,23 @@ export class Session {
     };
   }
 
-  /** Decide the next step. Pure query — presenting is the caller's job. */
+  /**
+   * Decide the next step. Pure query — presenting is the caller's job.
+   *
+   * Reviews come first, because a card that is due is the whole point. An
+   * explore run does not change that rung so much as empty it: the pile that
+   * was already waiting when the run began drops to the bottom, while anything
+   * met during the run keeps its place at the top. So a new topic failed while
+   * exploring comes straight back, and the pile is served once there is nothing
+   * left to learn — deferred, never dropped, and `done` still means done.
+   */
   next(now: Date = new Date()): Action {
-    const dueTopic = this.earliestDueTopic(now);
+    const held = this.heldByExploring(now);
+
+    const dueTopic = this.earliestDueTopic(now, held.topics);
     if (dueTopic) return { kind: "topic-review", sectionId: dueTopic };
 
-    const dueVocab = this.earliestDueVocab(now);
+    const dueVocab = this.earliestDueVocab(now, held.vocab);
     if (dueVocab) return { kind: "vocab-review", cardId: dueVocab };
 
     const focus = this.focusState();
@@ -342,6 +411,13 @@ export class Session {
 
     const fresh = this.nextNewTopic();
     if (fresh) return { kind: "new-topic", sectionId: fresh };
+
+    // Nothing left to learn, so the run has nothing left to be for.
+    const backlogTopic = this.earliestDueTopic(now);
+    if (backlogTopic) return { kind: "topic-review", sectionId: backlogTopic };
+
+    const backlogVocab = this.earliestDueVocab(now);
+    if (backlogVocab) return { kind: "vocab-review", cardId: backlogVocab };
 
     return { kind: "done" };
   }
@@ -400,7 +476,12 @@ export class Session {
    * here for the same reason: "the card as it stood before the round began" is
    * what it says, and before the round began is now.
    */
-  beginRound(sectionId: string, test: Test, isNew = false): void {
+  beginRound(
+    sectionId: string,
+    test: Test,
+    isNew = false,
+    via: RoundVia = isNew ? "new" : "review",
+  ): void {
     this.p.openRound = {
       sectionId,
       roundId: test.id,
@@ -408,6 +489,7 @@ export class Session {
       worst: null,
       answered: 0,
       isNew,
+      via,
     };
     this.touch();
   }
@@ -435,6 +517,7 @@ export class Session {
     test: Test;
     qIndex: number;
     isNew: boolean;
+    via: RoundVia;
     draft?: RoundDraft;
   } | null {
     const open = this.p.openRound;
@@ -448,6 +531,9 @@ export class Session {
       test,
       qIndex: open.answered,
       isNew: open.isNew,
+      // A round written before rounds said why they were served: what it was
+      // shown as is the honest answer, and that was the new badge or nothing.
+      via: open.via ?? (open.isNew ? "new" : "review"),
       draft: open.draft,
     };
   }
@@ -516,6 +602,7 @@ export class Session {
             // was the answer to the one just graded.
             answered: (continuing ? open.answered : 0) + 1,
             isNew: continuing ? open.isNew : false,
+            via: continuing ? (open.via ?? "review") : "review",
           };
 
     // Mastery moves gradually, so one good answer can't mark a topic mastered
@@ -539,6 +626,7 @@ export class Session {
     // A topic drilled dry, or a family walked to its end, is no longer a place
     // to be; settle that here rather than in `next`, which stays a pure query.
     this.p.focus = this.focusState();
+    this.settleExploring(now);
     this.touch();
   }
 
@@ -656,6 +744,7 @@ export class Session {
     if (!state) return;
     const card = rate(deserializeCard(state.fsrs), rating, now);
     state.fsrs = serializeCard(card);
+    this.settleExploring(now);
     this.touch();
   }
 
@@ -921,11 +1010,15 @@ export class Session {
       .map(([id]) => id);
   }
 
-  private earliestDueTopic(now: Date): string | null {
+  /** `skip` is what an explore run is holding; empty the rest of the time. */
+  private earliestDueTopic(
+    now: Date,
+    skip: ReadonlySet<string> = new Set(),
+  ): string | null {
     let best: string | null = null;
     let bestDue = Infinity;
     for (const [id, s] of Object.entries(this.p.topicCards)) {
-      if (!this.content.getSection(id)) continue;
+      if (!this.content.getSection(id) || skip.has(id)) continue;
       const card = deserializeCard(s);
       if (isDue(card, now) && card.due.getTime() < bestDue) {
         bestDue = card.due.getTime();
@@ -941,10 +1034,14 @@ export class Session {
       .map((s) => s.id);
   }
 
-  private earliestDueVocab(now: Date): string | null {
+  private earliestDueVocab(
+    now: Date,
+    skip: ReadonlySet<string> = new Set(),
+  ): string | null {
     let best: string | null = null;
     let bestDue = Infinity;
     for (const s of Object.values(this.p.vocabCards)) {
+      if (skip.has(s.id)) continue;
       const card = deserializeCard(s.fsrs);
       if (isDue(card, now) && card.due.getTime() < bestDue) {
         bestDue = card.due.getTime();

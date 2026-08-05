@@ -25,6 +25,7 @@ import {
   type Progress,
   type Question,
   type Rating,
+  type RoundVia,
   type StorageAdapter,
   type Test,
   type TopicProgress,
@@ -99,7 +100,7 @@ interface GradeUndo {
   test: Test | null;
   qIndex: number;
   submitted: string;
-  isNewTopic: boolean;
+  via: RoundVia | null;
   inPlacement: boolean;
 }
 
@@ -110,7 +111,10 @@ export function App({ session, content, storage }: Props) {
   const [sectionId, setSectionId] = useState<string | null>(null);
   const [test, setTest] = useState<Test | null>(null);
   const [qIndex, setQIndex] = useState(0);
-  const [isNewTopic, setIsNewTopic] = useState(false);
+  // Why the round on the table was served. `next` says it once and the screen
+  // would otherwise keep only "was it new", leaving a due review, a drill and a
+  // topic quizzed off the index looking identical.
+  const [via, setVia] = useState<RoundVia | null>(null);
 
   // The run itself lives in progress — which probe, which family, what has
   // passed — so this is only whether the loop is driving it.
@@ -150,7 +154,7 @@ export function App({ session, content, storage }: Props) {
   const drawerHeight = Math.max(4, Math.min(18, rows - 15));
   const readerHeight = Math.max(6, rows - 9);
 
-  // The grammar map: families in display order, and the same topics flattened
+  // The grammar index: families in display order, and the same topics flattened
   // so the cursor can walk straight across family boundaries.
   const families = useMemo(() => session.familyProgress(), [tick, session]);
   const mapTopics = useMemo(() => families.flatMap((f) => f.topics), [families]);
@@ -282,6 +286,8 @@ export function App({ session, content, storage }: Props) {
       return;
     }
     if (action.kind === "vocab-review") {
+      // A word is on screen, not the topic before it.
+      setVia(null);
       setPhase({ t: "vocab-review-front", cardId: action.cardId });
       return;
     }
@@ -299,7 +305,13 @@ export function App({ session, content, storage }: Props) {
     setSectionId(action.sectionId);
     setTest(t);
     setQIndex(0);
-    setIsNewTopic(action.kind === "new-topic");
+    setVia(
+      action.kind === "new-topic"
+        ? "new"
+        : action.kind === "drill"
+          ? "drill"
+          : "review",
+    );
     setShowGrammar(action.kind === "new-topic"); // teach first on a new topic
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
@@ -336,7 +348,7 @@ export function App({ session, content, storage }: Props) {
     setShowGrammar(false);
     setShowHistory(false);
     setShowVocab(false);
-    setIsNewTopic(false);
+    setVia(null);
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
   };
@@ -394,7 +406,7 @@ export function App({ session, content, storage }: Props) {
     test,
     qIndex,
     submitted,
-    isNewTopic,
+    via,
     inPlacement,
   });
 
@@ -446,7 +458,7 @@ export function App({ session, content, storage }: Props) {
     setTest(undo.test);
     setQIndex(undo.qIndex);
     setSubmitted(undo.submitted);
-    setIsNewTopic(undo.isNewTopic);
+    setVia(undo.via);
     setInPlacement(undo.inPlacement);
     setInput("");
     setShowGrammar(false);
@@ -493,7 +505,7 @@ export function App({ session, content, storage }: Props) {
     setPhase({ t: "vocab-pick", form, candidates });
   };
 
-  /** Open the grammar map, parked on the current topic (or the first unstudied one). */
+  /** Open the grammar index, parked on the current topic (or the first unstudied one). */
   const openMap = (from: Origin) => {
     let i = mapTopics.findIndex((t) => t.sectionId === sectionId);
     if (i < 0) i = mapTopics.findIndex((t) => t.mastery === undefined);
@@ -611,7 +623,7 @@ export function App({ session, content, storage }: Props) {
     setQIndex(0);
     setInput("");
     setSubmitted("");
-    setIsNewTopic(fresh);
+    setVia("quiz");
     setShowGrammar(fresh); // teach the rule first when it's new ground
     setShowHistory(false);
     setShowVocab(false);
@@ -677,6 +689,28 @@ export function App({ session, content, storage }: Props) {
       `Staying on “${section?.title}” — ${total - answered} more question${
         total - answered === 1 ? "" : "s"
       } to go.`,
+    );
+  };
+
+  /**
+   * Set the backlog aside and go and learn something, or pick it back up.
+   *
+   * Takes effect when the round ends, for the same reason the drill does: the
+   * questions still on the table were asked, and dropping a written answer is
+   * not what "explore" means.
+   */
+  const toggleExploring = () => {
+    const on = !session.exploring();
+    session.setExploring(on);
+    const waiting = session.exploringHeld();
+    save();
+    setTick((n) => n + 1);
+    setFlash(
+      on
+        ? waiting > 0
+          ? `Reviews set aside — ${waiting} waiting. New ground after this round.`
+          : "Nothing is due, so there is nothing to set aside."
+        : "Back to the reviews after this round.",
     );
   };
 
@@ -765,6 +799,7 @@ export function App({ session, content, storage }: Props) {
           setShowVocab((s) => !s);
         } else if (ch === "m") openMap({ t: "graded" });
         else if (ch === ".") drillHere(); // more of this topic before moving on
+        else if (ch === "x") toggleExploring(); // the pile can wait; teach me
         else if (ch === "s") openSchedule({ t: "graded" });
         else if (ch === "V") openVocabList({ t: "graded" });
         else if (ch === "u") undoSubmit(); // Enter came too early
@@ -938,16 +973,32 @@ export function App({ session, content, storage }: Props) {
     [sectionId, tick, session],
   );
   // What the focus is called on screen, and nothing at all for the sweep —
-  // the plain walk through the book is not a mode to be told about.
+  // the plain walk through the book is not a mode to be told about. It says
+  // what it governs: a focus steers where *new* topics come from, and reviews
+  // arrive from wherever they are due.
   const focusLabel = useMemo(() => {
-    if (focus.kind === "family") return content.familyLabel(content.familyOf(focus.id));
+    if (focus.kind === "family") {
+      return `new topics from ${content.familyLabel(content.familyOf(focus.id))}`;
+    }
     if (focus.kind === "topic") {
       const { answered, total } = session.coverage(focus.sectionId);
       const title = content.getSection(focus.sectionId)?.title ?? "this topic";
-      return `${title} · ${answered}/${total} questions`;
+      return `staying on ${title} · ${answered}/${total} questions`;
     }
     return null;
   }, [focus, tick, session, content]);
+  const exploring = useMemo(() => session.exploring(), [session, tick]);
+  const held = useMemo(() => session.exploringHeld(), [session, tick]);
+
+  /**
+   * What is on screen and why, in one word — every state of the loop has one.
+   * Placement has the bar's own colour, so it is not repeated here.
+   */
+  const mode = inPlacement
+    ? null
+    : phase.t.startsWith("vocab-review")
+      ? "vocab"
+      : via;
 
   return (
     <Box flexDirection="column" paddingX={1}>
@@ -962,13 +1013,24 @@ export function App({ session, content, storage }: Props) {
             // The ref belongs beside the title here as it does on the web: it
             // is how you find the topic in the book, and the grammar drawer
             // (Esc) was the only place it appeared.
-            : section
-              ? `${content.formatRef(section.ref)} ${section.title}`
-              : "—"
+            // A word is on screen, so the topic studied before it is not what
+            // this line is about. The citation is the answer being graded, so
+            // it says what is being worked on and stops there.
+            : phase.t.startsWith("vocab-review")
+              ? "Vocabulary"
+              : section
+                ? `${content.formatRef(section.ref)} ${section.title}`
+                : "—"
         }
-        isNew={isNewTopic && !phase.t.startsWith("vocab-review")}
+        mode={mode}
         placement={inPlacement}
-        focus={inPlacement ? null : focusLabel}
+        focus={
+          inPlacement
+            ? null
+            : exploring
+              ? `exploring · ${held} waiting${focusLabel ? ` · ${focusLabel}` : ""}`
+              : focusLabel
+        }
       />
 
       {inPlacement && (
@@ -1142,7 +1204,7 @@ export function App({ session, content, storage }: Props) {
       {phase.t === "done" && (
         <Box marginTop={1}>
           <Text color="green">
-            ✓ Nothing due right now. Well done — press m to explore the grammar map, or Enter to
+            ✓ Nothing due right now. Well done — press m to explore the grammar index, or Enter to
             exit.
           </Text>
         </Box>
@@ -1172,47 +1234,78 @@ export function App({ session, content, storage }: Props) {
         }
         undo={undo !== null}
         more={!inPlacement && coverageHere !== null && coverageHere.answered < coverageHere.total}
+        explore={
+          inPlacement
+            ? null
+            : exploring
+              ? "stop"
+              : stats.dueTopics + stats.dueVocab > 0
+                ? "start"
+                : null
+        }
       />
     </Box>
   );
 }
 
+/** The colour each mode is named in; reviewing is the quiet default. */
+const MODE_COLOUR: Record<string, string | undefined> = {
+  review: undefined,
+  new: "green",
+  drill: "cyan",
+  quiz: "magenta",
+  vocab: undefined,
+};
+
 function StatusBar({
   appName,
   stats,
   section,
-  isNew,
+  mode,
   placement,
   focus,
 }: {
   appName: string;
   stats: { dueTopics: number; dueVocab: number; topics: number; vocab: number };
   section: string;
-  isNew: boolean;
+  /** What is on screen and why: `review`, `new`, `drill`, `quiz`, `vocab`. */
+  mode?: string | null;
   placement?: boolean;
-  /** What new topics are being drawn from, or null for the plain sweep. */
+  /** The standing state new topics are drawn from, or null for the sweep. */
   focus?: string | null;
 }) {
   return (
-    <Box justifyContent="space-between" marginBottom={1}>
-      <Text>
-        <Text color="magenta" bold>
-          {appName}
-        </Text>{" "}
-        · {isNew ? <Text color="green">new: </Text> : null}
-        <Text bold color={placement ? "yellow" : undefined}>
-          {section}
+    // The standing state takes a line of its own, as it does on the web and
+    // for the same reason: "Verbs in -io of the Third Conjugation" and a
+    // sentence saying where new topics come from do not share a terminal
+    // width, and what got cut was always the end of the line.
+    <Box flexDirection="column" marginBottom={1}>
+      <Box justifyContent="space-between">
+        <Text>
+          <Text color="magenta" bold>
+            {appName}
+          </Text>{" "}
+          ·{" "}
+          {mode ? (
+            <Text color={MODE_COLOUR[mode]} dimColor={!MODE_COLOUR[mode]}>
+              {mode}:{" "}
+            </Text>
+          ) : null}
+          <Text bold color={placement ? "yellow" : undefined}>
+            {section}
+          </Text>
         </Text>
-        {focus ? <Text color="cyan"> · on {focus}</Text> : null}
-      </Text>
-      <Text dimColor>
-        topics {stats.topics} (due {stats.dueTopics}) · vocab {stats.vocab} (due {stats.dueVocab})
-      </Text>
+        <Text dimColor>
+          topics {stats.topics} (due {stats.dueTopics}) · vocab {stats.vocab} (due{" "}
+          {stats.dueVocab})
+        </Text>
+      </Box>
+      {focus ? <Text color="cyan">{focus}</Text> : null}
     </Box>
   );
 }
 
-// --- grammar map ------------------------------------------------------------
+// --- grammar index ------------------------------------------------------------
 
 /** Mastery as a 0–1 fraction; an ungraded topic reads as 0. */
 function masteryFraction(t: TopicProgress): number {
@@ -1375,7 +1468,7 @@ function GrammarMap({
     <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
       <Box marginBottom={1} justifyContent="space-between">
         <Text bold color="magenta">
-          Grammar map
+          Grammar index
         </Text>
         <Text dimColor>{Math.round(overall * 100)}% mastered overall</Text>
       </Box>
@@ -1736,6 +1829,7 @@ function HintBar({
   quizCosts,
   undo,
   more,
+  explore,
 }: {
   ui: Profile["ui"];
   phase: Phase["t"];
@@ -1752,6 +1846,8 @@ function HintBar({
   undo?: boolean;
   /** The topic on screen has questions nobody has answered yet. */
   more?: boolean;
+  /** Whether `x` would set the backlog aside, pick it back up, or nothing. */
+  explore?: "start" | "stop" | null;
 }) {
   const scrollHint = paging ? " · ↑↓ scroll" : "";
   // Only offered once the topic has a trail: `h` does nothing before that.
@@ -1765,39 +1861,47 @@ function HintBar({
   // Offered only while the topic has questions left to meet; a topic worked
   // out has nothing more of itself to give.
   const moreHint = more ? " · . more of this topic" : "";
+  // Offered only where it would do something: with a pile waiting and ground
+  // left to cover, or while a run is on and there is a way back to offer.
+  const exploreHint =
+    explore === "start"
+      ? " · x set reviews aside"
+      : explore === "stop"
+        ? " · x back to reviews"
+        : "";
   const quizHint = quizCosts
     ? "Enter quiz me · f study from here (both leave this behind)"
     : "Enter quiz me · f study from here";
   const hint =
     phase === "answering"
-      ? `${ui.cliHint} · Enter submit · Esc grammar · Tab words · ^N map${undo ? " · ^Z undo grade" : ""}${scrollHint}`
+      ? `${ui.cliHint} · Enter submit · Esc grammar · Tab words · ^N index${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
         ? `← → topic · ↑ ↓ family · g read section · a all questions · s schedule${wordsHint} · ${quizHint} · Esc close`
         : phase === "read"
-          ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to map · q quit`
+          ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to the index · q quit`
         : phase === "bank"
-          ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to map · q quit`
+          ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to the index · q quit`
         : phase === "schedule"
-          ? `↑ ↓ scroll · PgUp/PgDn page · m map${wordsHint} · Esc close · q quit`
+          ? `↑ ↓ scroll · PgUp/PgDn page · m index${wordsHint} · Esc close · q quit`
         : phase === "vocab-list"
-          ? `↑ ↓ word · Enter edit · x delete · m map${wordsHint} · Esc close · q quit`
+          ? `↑ ↓ word · Enter edit · x delete · m index${wordsHint} · Esc close · q quit`
         : phase === "vocab-edit"
           ? "type · Tab switch field · Enter save · Esc cancel"
         : phase === "graded"
         ? placement
           // `w` earns its place here more than anywhere: placement asks about
           // topics you have never been taught.
-          ? `3–4 you knew it (continue) · 1–2 start here · u keep typing${wordsHint} · m map · v vocab`
-          : `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${moreHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m map · s schedule · q quit`
+          ? `3–4 you knew it (continue) · 1–2 start here · u keep typing${wordsHint} · m index · v vocab`
+          : `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${moreHint}${exploreHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m index · s schedule · q quit`
         : phase === "vocab-review-front"
-          ? `Space/Enter reveal${undoHint} · m map · q quit`
+          ? `Space/Enter reveal${undoHint} · m index · q quit`
           : phase === "vocab-review-back"
-            ? `1–4 self-grade${undoHint} · m map · q quit`
+            ? `1–4 self-grade${undoHint} · m index · q quit`
             : phase === "vocab-input"
               ? "Enter to look up the word · Esc cancel"
               : phase === "vocab-pick"
                 ? "1–9 choose · Esc cancel"
-                : `m grammar map · s schedule · V my words${undoHint} · Enter exit`;
+                : `m grammar index · s schedule · V my words${undoHint} · Enter exit`;
   return (
     <Box marginTop={1}>
       <Text dimColor>{hint}</Text>

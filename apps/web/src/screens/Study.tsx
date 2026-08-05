@@ -327,7 +327,7 @@ export function Rest({
         style={{ width: "100%", maxWidth: "18rem", flexDirection: "column" }}
       >
         <button className="btn" onClick={onOpenMap}>
-          Explore the grammar map
+          Explore the grammar index
         </button>
         <button className="btn" onClick={onOpenSchedule}>
           See what's coming

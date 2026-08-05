@@ -232,6 +232,17 @@ export type Focus =
   | { kind: "topic"; sectionId: string };
 
 /**
+ * Why a round is on the table, which is the one thing the screen cannot work
+ * out for itself once the round is under way.
+ *
+ * `next` says all of this in its `Action`, and the surface then forgets it: a
+ * due review, a drill and a topic picked off the map are the same four
+ * sentences on the same topic, and were shown as such. Kept on the round so it
+ * also survives a reload, which nothing derived from `next` can.
+ */
+export type RoundVia = "review" | "new" | "drill" | "quiz";
+
+/**
  * The answer being written, kept so that whatever ends the page does not also
  * cost the sentence.
  *
@@ -274,8 +285,13 @@ export interface OpenRound {
   worst: 1 | 2 | 3 | 4 | null;
   /** How many of the round's questions have been graded — where to resume. */
   answered: number;
-  /** Whether the topic was new when the round was served; drives the badge. */
+  /** Whether the topic was new when the round was served; teaches before testing. */
   isNew: boolean;
+  /**
+   * What asked for this round. Optional: rounds written before it resume as
+   * `isNew ? "new" : "review"`, which is what they were being shown as anyway.
+   */
+  via?: RoundVia;
   draft?: RoundDraft;
 }
 
@@ -300,6 +316,22 @@ export interface Progress {
   frontiers: Record<string, string>;
   /** Where new topics come from. Defaults to the sweep. */
   focus: Focus;
+  /**
+   * A backlog set aside on purpose, so new ground can be reached while reviews
+   * are waiting. The scheduler otherwise serves every due card before it will
+   * teach anything, which is right for the student who came to study and wrong
+   * for the one who came to get further.
+   *
+   * `since` is what makes it a backlog rather than a mute button: only cards
+   * last reviewed *before* the run began are held. A topic met during the run
+   * and graded "again" is due in a minute and comes straight back — it is the
+   * thing being explored, not the pile being avoided. What is held is deferred
+   * and never dropped: it is served once there is nothing left to learn.
+   *
+   * It lives in progress rather than screen state so a reload does not put the
+   * pile silently back in the way.
+   */
+  exploring?: { since: string } | null;
   /** The round of questions in flight, if any. */
   openRound?: OpenRound | null;
   /** sectionId -> scheduling card for that grammar topic. */
