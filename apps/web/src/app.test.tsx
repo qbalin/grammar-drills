@@ -1665,7 +1665,7 @@ describe("erasing and replacing what is on the device", () => {
     await user.click(screen.getByRole("button", { name: "Settings" }));
     // Erasing asks twice, because there is no undo behind it.
     await user.click(screen.getByRole("button", { name: /Erase progress/ }));
-    await user.click(screen.getByRole("button", { name: /Tap again to erase/ }));
+    await user.click(screen.getByRole("button", { name: "Confirm erasure" }));
     expect(reload).toHaveBeenCalled();
 
     // The reload the button asked for, and everything the page says on its way
