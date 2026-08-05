@@ -774,7 +774,10 @@ export function App({ content, session, storage }: Props) {
 
   const adopt = (progress: Progress) => {
     storage.adopt(progress);
-    // The engine holds progress by reference, so a swap means a fresh page.
+    // The engine holds progress by reference, so a swap means a fresh page —
+    // and nothing of this one's may be written on the way out, or the draft
+    // kept on `pagehide` puts the replaced progress straight back.
+    storage.seal();
     location.reload();
   };
 
@@ -1268,10 +1271,23 @@ export function App({ content, session, storage }: Props) {
           onExport={() => exportProgress(session.progress())}
           onImport={() => void doImport()}
           onPull={() =>
-            void storage.fetchRemote().then((remote) => {
-              if (remote) adopt(remote);
-              else flash("Nothing saved on GitHub yet.");
-            })
+            void storage
+              .fetchRemote()
+              .then((remote) => {
+                if (remote) adopt(remote);
+                else flash("Nothing saved on GitHub yet.");
+              })
+              // A pull that cannot reach the repo used to reject into nothing:
+              // the sheet's status line changed and the button appeared to do
+              // nothing at all, which is indistinguishable from a pull that
+              // found no change to make. Say so.
+              .catch((err: unknown) =>
+                flash(
+                  err instanceof Error
+                    ? `Could not pull: ${err.message}`
+                    : "Could not pull from GitHub.",
+                ),
+              )
           }
           dictionaryReady={dictionaryReady()}
           caching={dictLoading}
@@ -1282,6 +1298,10 @@ export function App({ content, session, storage }: Props) {
           }
           onReset={() => {
             storage.clearLocal();
+            // Erasing and then reloading is two steps, and the draft kept on
+            // the way out lands between them. Seal, or the erase is undone by
+            // the very reload meant to finish it.
+            storage.seal();
             location.reload();
           }}
           onClose={() => setOverlay(null)}

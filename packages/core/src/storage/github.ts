@@ -32,6 +32,18 @@ function b64decode(b64: string): string {
 }
 
 /**
+ * Read the file from GitHub, never from the browser's copy of it.
+ *
+ * The contents API answers with `cache-control: max-age=60`, so a plain `fetch`
+ * is free to serve a minute-old body — and does, on a desktop browser with a
+ * real HTTP cache. "Pull the copy from GitHub" then returns the progress from
+ * before the other device pushed, which looks exactly like a pull that did
+ * nothing, and the stale `sha` that comes with it is the one the next save
+ * sends. Node's fetch has no such cache, so the CLI never saw it.
+ */
+const NO_STORE = { cache: "no-store" } as const;
+
+/**
  * Commits the progress JSON to a private GitHub repo the user owns, using the
  * GitHub REST API directly — no backend required, works from CLI or browser.
  */
@@ -73,6 +85,7 @@ export class GitHubStorage implements StorageAdapter {
   async loadMeta(): Promise<{ progress: Progress | null; sha?: string }> {
     const res = await fetch(`${this.url()}?ref=${this.branch}`, {
       headers: this.headers(),
+      ...NO_STORE,
     });
     if (res.status === 404) {
       this.sha = undefined;
@@ -125,6 +138,7 @@ export class GitHubStorage implements StorageAdapter {
   private async readSha(): Promise<void> {
     const res = await fetch(`${this.url()}?ref=${this.branch}`, {
       headers: this.headers(),
+      ...NO_STORE,
     });
     if (res.status === 404) {
       this.sha = undefined;

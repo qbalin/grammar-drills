@@ -380,5 +380,626 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t7",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "The messengers had already announced the victory to the people before we arrived in the city.",
+    "answer": "ἤδη τὴν νίκην οἱ ἄγγελοι τῷ δήμῳ ἠγγελκότες ἦσαν πρὶν ἡμᾶς εἰς τὴν πόλιν ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "τήν",
+     "νίκην",
+     "οἱ",
+     "ἄγγελοι",
+     "τῷ",
+     "δήμῳ",
+     "ἠγγελκότες",
+     "ἦσαν",
+     "πρίν",
+     "ἡμᾶς",
+     "εἰς",
+     "πόλιν",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "The old men had suffered many terrible things at the hands of the tyrant before they fled.",
+    "answer": "πολλὰ καὶ δεινὰ οἱ γέροντες ὑπὸ τοῦ τυράννου πεπονθότες ἦσαν πρὶν φυγεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλά",
+     "καί",
+     "δεινά",
+     "οἱ",
+     "γέροντες",
+     "ὑπό",
+     "τοῦ",
+     "τυράννου",
+     "πεπονθότες",
+     "ἦσαν",
+     "πρίν",
+     "φυγεῖν"
+    ]
+   },
+   {
+    "prompt": "The general with the cavalry had fled before the enemy took the camp.",
+    "answer": "ὁ στρατηγὸς μετὰ τῶν ἱππέων πεφευγὼς ἦν πρὶν τοὺς πολεμίους τὸ στρατόπεδον ἑλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "μετά",
+     "τῶν",
+     "ἱππέων",
+     "πεφευγώς",
+     "ἦν",
+     "πρίν",
+     "τούς",
+     "πολεμίους",
+     "τό",
+     "στρατόπεδον",
+     "ἑλεῖν"
+    ]
+   },
+   {
+    "prompt": "The citizens had already come to the aid of their neighbors by sea.",
+    "answer": "οἱ πολῖται τοῖς γείτοσι κατὰ θάλατταν ἤδη βεβοηθηκότες ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τοῖς",
+     "γείτοσι",
+     "κατά",
+     "θάλατταν",
+     "ἤδη",
+     "βεβοηθηκότες",
+     "ἦσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t8",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "By evening I shall have finished the whole work.",
+    "answer": "πρὸς ἑσπέραν ἅπαν τὸ ἔργον τετελεκὼς ἔσομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρός",
+     "ἑσπέραν",
+     "ἅπαν",
+     "τό",
+     "ἔργον",
+     "τετελεκώς",
+     "ἔσομαι"
+    ]
+   },
+   {
+    "prompt": "Before you return, I shall have persuaded the judges.",
+    "answer": "πρὶν σὲ ἐπανελθεῖν, τοὺς δικαστὰς πεπεικὼς ἔσομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρίν",
+     "σέ",
+     "ἐπανελθεῖν",
+     "τούς",
+     "δικαστάς",
+     "πεπεικώς",
+     "ἔσομαι"
+    ]
+   },
+   {
+    "prompt": "Within three days the soldiers will have destroyed the walls.",
+    "answer": "ἐντὸς τριῶν ἡμερῶν οἱ στρατιῶται τὰ τείχη διεφθαρκότες ἔσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐντός",
+     "τριῶν",
+     "ἡμερῶν",
+     "οἱ",
+     "στρατιῶται",
+     "τά",
+     "τείχη",
+     "διεφθαρκότες",
+     "ἔσονται"
+    ]
+   },
+   {
+    "prompt": "By tomorrow you will have learned all these things.",
+    "answer": "εἰς τὴν αὔριον πάντα ταῦτα μεμαθηκὼς ἔσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τήν",
+     "αὔριον",
+     "πάντα",
+     "ταῦτα",
+     "μεμαθηκώς",
+     "ἔσῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t9",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "It stands resolved by the assembly to march against the enemy.",
+    "answer": "δεδογμένον ἐστὶ τῇ ἐκκλησίᾳ ἐπὶ τοὺς πολεμίους στρατεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεδογμένον",
+     "ἐστί",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἐπί",
+     "τούς",
+     "πολεμίους",
+     "στρατεύειν"
+    ]
+   },
+   {
+    "prompt": "The letter had been written before the herald departed.",
+    "answer": "ἡ ἐπιστολὴ γεγραμμένη ἦν πρὶν τὸν κήρυκα ἀπελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιστολή",
+     "γεγραμμένη",
+     "ἦν",
+     "πρίν",
+     "τόν",
+     "κήρυκα",
+     "ἀπελθεῖν"
+    ]
+   },
+   {
+    "prompt": "Everything necessary for the journey had been prepared by the servants.",
+    "answer": "πάντα τὰ εἰς τὴν ὁδὸν ἀναγκαῖα ὑπὸ τῶν θεραπόντων παρεσκευασμένα ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "τά",
+     "εἰς",
+     "τήν",
+     "ὁδόν",
+     "ἀναγκαῖα",
+     "ὑπό",
+     "τῶν",
+     "θεραπόντων",
+     "παρεσκευασμένα",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "These things stand ordered in the general's letter.",
+    "answer": "ταῦτα ἐν τῇ τοῦ στρατηγοῦ ἐπιστολῇ προστεταγμένα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἐν",
+     "τῇ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἐπιστολῇ",
+     "προστεταγμένα",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t10",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "The soldiers have been drawn up on both wings.",
+    "answer": "οἱ στρατιῶται ἐπὶ τοῖς κέρασιν ἀμφοτέροις τεταγμένοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐπί",
+     "τοῖς",
+     "κέρασιν",
+     "ἀμφοτέροις",
+     "τεταγμένοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "The enemy had been scattered throughout the whole plain.",
+    "answer": "οἱ πολέμιοι κατὰ πᾶν τὸ πεδίον ἐσκεδασμένοι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "κατά",
+     "πᾶν",
+     "τό",
+     "πεδίον",
+     "ἐσκεδασμένοι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "The citizens have been persuaded by the orator's words.",
+    "answer": "οἱ πολῖται ὑπὸ τῶν τοῦ ῥήτορος λόγων πεπεισμένοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ὑπό",
+     "τῶν",
+     "τοῦ",
+     "ῥήτορος",
+     "λόγων",
+     "πεπεισμένοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "The ships had been prepared by the Athenians for the voyage.",
+    "answer": "αἱ νῆες ὑπὸ τῶν Ἀθηναίων πρὸς τὸν πλοῦν παρεσκευασμέναι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "νῆες",
+     "ὑπό",
+     "τῶν",
+     "Ἀθηναίων",
+     "πρός",
+     "τόν",
+     "πλοῦν",
+     "παρεσκευασμέναι",
+     "ἦσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t11",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "I fear that the enemy have already seized the mountain pass.",
+    "answer": "δέδοικα μὴ οἱ πολέμιοι τὴν πάροδον ἤδη κατειληφότες ὦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "τήν",
+     "πάροδον",
+     "ἤδη",
+     "κατειληφότες",
+     "ὦσιν"
+    ]
+   },
+   {
+    "prompt": "Let this decree have been proclaimed to all the allies.",
+    "answer": "τοῦτο τὸ ψήφισμα πᾶσι τοῖς συμμάχοις κεκηρυγμένον ἔστω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τό",
+     "ψήφισμα",
+     "πᾶσι",
+     "τοῖς",
+     "συμμάχοις",
+     "κεκηρυγμένον",
+     "ἔστω"
+    ]
+   },
+   {
+    "prompt": "Be resolved, soldiers, to obey your commanders.",
+    "answer": "πεπεισμένοι ἔστε, ὦ στρατιῶται, τοῖς ἄρχουσι πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πεπεισμένοι",
+     "ἔστε",
+     "ὦ",
+     "στρατιῶται",
+     "τοῖς",
+     "ἄρχουσι",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "See that you have learned these things before the teacher comes.",
+    "answer": "ὅρα ὅπως ταῦτα μεμαθηκὼς ᾖς πρὶν τὸν διδάσκαλον ἐλθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "ὅπως",
+     "ταῦτα",
+     "μεμαθηκώς",
+     "ᾖς",
+     "πρίν",
+     "τόν",
+     "διδάσκαλον",
+     "ἐλθεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t12",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "With these deeds you have thrown the whole army into confusion.",
+    "answer": "τούτοις τοῖς ἔργοις πᾶν τὸ στράτευμα ταράξας ἔχεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτοις",
+     "τοῖς",
+     "ἔργοις",
+     "πᾶν",
+     "τό",
+     "στράτευμα",
+     "ταράξας",
+     "ἔχεις"
+    ]
+   },
+   {
+    "prompt": "The god has established these laws for mortals.",
+    "answer": "ὁ θεὸς τούσδε τοὺς νόμους τοῖς θνητοῖς στήσας ἔχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεός",
+     "τούσδε",
+     "τούς",
+     "νόμους",
+     "τοῖς",
+     "θνητοῖς",
+     "στήσας",
+     "ἔχει"
+    ]
+   },
+   {
+    "prompt": "If you neglect these things, you will have been deceived by your enemies.",
+    "answer": "ἐὰν τούτων ἀμελῇς, ὑπὸ τῶν ἐχθρῶν ἐψευσμένος ἔσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τούτων",
+     "ἀμελῇς",
+     "ὑπό",
+     "τῶν",
+     "ἐχθρῶν",
+     "ἐψευσμένος",
+     "ἔσῃ"
+    ]
+   },
+   {
+    "prompt": "By that day the treaty will have been dissolved by both cities.",
+    "answer": "εἰς ἐκείνην τὴν ἡμέραν αἱ σπονδαὶ ὑπὸ ἀμφοτέρων τῶν πόλεων λελυμέναι ἔσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "ἐκείνην",
+     "τήν",
+     "ἡμέραν",
+     "αἱ",
+     "σπονδαί",
+     "ὑπό",
+     "ἀμφοτέρων",
+     "τῶν",
+     "πόλεων",
+     "λελυμέναι",
+     "ἔσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t13",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "The allies had come to our aid before the general returned.",
+    "answer": "οἱ σύμμαχοι βεβοηθηκότες ἦσαν πρὶν τὸν στρατηγὸν ἐπανελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "βεβοηθηκότες",
+     "ἦσαν",
+     "πρίν",
+     "τόν",
+     "στρατηγόν",
+     "ἐπανελθεῖν"
+    ]
+   },
+   {
+    "prompt": "The old man had suffered many terrible things at the hands of his enemies.",
+    "answer": "ὁ γέρων πολλὰ καὶ δεινὰ πεπονθὼς ἦν ὑπὸ τῶν ἐχθρῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "πολλά",
+     "καί",
+     "δεινά",
+     "πεπονθώς",
+     "ἦν",
+     "ὑπό",
+     "τῶν",
+     "ἐχθρῶν"
+    ]
+   },
+   {
+    "prompt": "I have set my hopes on the gods.",
+    "answer": "τὰς ἐλπίδας ἐν τοῖς θεοῖς τεθεικὼς εἰμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάς",
+     "ἐλπίδας",
+     "ἐν",
+     "τοῖς",
+     "θεοῖς",
+     "τεθεικώς",
+     "εἰμί"
+    ]
+   },
+   {
+    "prompt": "They had written many letters to the king before the war began.",
+    "answer": "πολλὰς ἐπιστολὰς πρὸς τὸν βασιλέα γεγραφότες ἦσαν πρὶν τὸν πόλεμον ἄρξασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλάς",
+     "ἐπιστολάς",
+     "πρός",
+     "τόν",
+     "βασιλέα",
+     "γεγραφότες",
+     "ἦσαν",
+     "πρίν",
+     "πόλεμον",
+     "ἄρξασθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t14",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "It stands written in the laws that no one may do these things.",
+    "answer": "γεγραμμένον ἐστὶν ἐν τοῖς νόμοις μηδένα ταῦτα ποιεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γεγραμμένον",
+     "ἐστίν",
+     "ἐν",
+     "τοῖς",
+     "νόμοις",
+     "μηδένα",
+     "ταῦτα",
+     "ποιεῖν"
+    ]
+   },
+   {
+    "prompt": "It had been ordered by the general that the ships put out to sea.",
+    "answer": "παρηγγελμένον ἦν ὑπὸ τοῦ στρατηγοῦ τὰς ναῦς ἀναγαγεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρηγγελμένον",
+     "ἦν",
+     "ὑπό",
+     "τοῦ",
+     "στρατηγοῦ",
+     "τάς",
+     "ναῦς",
+     "ἀναγαγεῖν"
+    ]
+   },
+   {
+    "prompt": "By the time you return, the whole city will have been destroyed.",
+    "answer": "ὅταν ἐπανέλθῃς, πᾶσα ἡ πόλις διεφθαρμένη ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ἐπανέλθῃς",
+     "πᾶσα",
+     "ἡ",
+     "πόλις",
+     "διεφθαρμένη",
+     "ἔσται"
+    ]
+   },
+   {
+    "prompt": "Once the treaty has been made, we shall have been freed from these dangers.",
+    "answer": "γενομένων τῶν σπονδῶν, τῶνδε τῶν κινδύνων ἀπηλλαγμένοι ἐσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γενομένων",
+     "τῶν",
+     "σπονδῶν",
+     "τῶνδε",
+     "κινδύνων",
+     "ἀπηλλαγμένοι",
+     "ἐσόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-599-periphrastic-forms-t15",
+  "sectionId": "sm-599-periphrastic-forms",
+  "questions": [
+   {
+    "prompt": "Let it stand written that these men proved brave.",
+    "answer": "γεγραμμένον ἔστω τούσδε τοὺς ἄνδρας ἀγαθοὺς γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γεγραμμένον",
+     "ἔστω",
+     "τούσδε",
+     "τούς",
+     "ἄνδρας",
+     "ἀγαθούς",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "By these deceits you have thrown the council into confusion.",
+    "answer": "τούτοις τοῖς δόλοις τὴν βουλὴν ταράξας ἔχεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτοις",
+     "τοῖς",
+     "δόλοις",
+     "τήν",
+     "βουλήν",
+     "ταράξας",
+     "ἔχεις"
+    ]
+   },
+   {
+    "prompt": "I fear that the enemy have already seized the harbor.",
+    "answer": "φοβοῦμαι μὴ οἱ πολέμιοι τὸν λιμένα ἤδη ᾑρηκότες ὦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "τόν",
+     "λιμένα",
+     "ἤδη",
+     "ᾑρηκότες",
+     "ὦσιν"
+    ]
+   },
+   {
+    "prompt": "If anyone had written such things, he would win great glory.",
+    "answer": "εἴ τις τοιαῦτα γεγραφὼς εἴη, μεγάλην ἂν δόξαν κτήσαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "τοιαῦτα",
+     "γεγραφώς",
+     "εἴη",
+     "μεγάλην",
+     "ἄν",
+     "δόξαν",
+     "κτήσαιτο"
+    ]
+   }
+  ]
  }
 ]

@@ -87,4 +87,26 @@ describe("GitHubStorage", () => {
     stubApi(null);
     expect(await new GitHubStorage(cfg).loadMeta()).toEqual({ progress: null });
   });
+
+  it("reads past the browser's cache, which GitHub invites it to keep", async () => {
+    // The contents API answers `cache-control: max-age=60`. A browser with a
+    // real HTTP cache honours that, and the pull comes back with the progress
+    // from before the other device pushed — indistinguishable from a pull that
+    // had nothing to bring — carrying the stale sha the next save would send.
+    const fetchMock = vi.fn(async (_url: string, init?: RequestInit) =>
+      (init?.method ?? "GET") === "GET"
+        ? Response.json({ sha: "abc", content: b64(JSON.stringify(emptyProgress())) })
+        : Response.json({ content: { sha: "abc+" } }),
+    );
+    vi.stubGlobal("fetch", fetchMock);
+
+    await new GitHubStorage(cfg).loadMeta();
+    await new GitHubStorage(cfg).save(emptyProgress()); // the sha lookup inside
+
+    const gets = fetchMock.mock.calls.filter(
+      ([, init]) => (init?.method ?? "GET") === "GET",
+    );
+    expect(gets).toHaveLength(2);
+    for (const [, init] of gets) expect(init?.cache).toBe("no-store");
+  });
 });

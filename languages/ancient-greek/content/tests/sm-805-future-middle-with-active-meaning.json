@@ -1568,5 +1568,141 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-805-future-middle-with-active-meaning-t25",
+  "sectionId": "sm-805-future-middle-with-active-meaning",
+  "questions": [
+   {
+    "prompt": "The hunter will seize the wild boar with his own hands.",
+    "answer": "Ὁ κυνηγέτης τὸν ἄγριον σῦν ταῖς ἑαυτοῦ χερσὶ λήψεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "κυνηγέτης",
+     "τόν",
+     "ἄγριον",
+     "σῦν",
+     "ταῖς",
+     "ἑαυτοῦ",
+     "χερσί",
+     "λήψεται"
+    ]
+   },
+   {
+    "prompt": "The young men, having heard the flute, will marvel and dance.",
+    "answer": "Οἱ νεανίαι ἀκούσαντες τοῦ αὐλοῦ θαυμάσονται καὶ ὀρχήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "νεανίαι",
+     "ἀκούσαντες",
+     "τοῦ",
+     "αὐλοῦ",
+     "θαυμάσονται",
+     "καί",
+     "ὀρχήσονται"
+    ]
+   },
+   {
+    "prompt": "When the ships have sailed away, we shall no longer be able to escape.",
+    "answer": "Τῶν νεῶν ἀποπλευσασῶν οὐκέτι φεύξεσθαι δυνησόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τῶν",
+     "νεῶν",
+     "ἀποπλευσασῶν",
+     "οὐκέτι",
+     "φεύξεσθαι",
+     "δυνησόμεθα"
+    ]
+   },
+   {
+    "prompt": "As soon as the child sees the honey, he will eagerly eat it.",
+    "answer": "Ἐπειδὰν τὸ παιδίον ἴδῃ τὸ μέλι, προθύμως αὐτὸ ἔδεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐπειδάν",
+     "τό",
+     "παιδίον",
+     "ἴδῃ",
+     "μέλι",
+     "προθύμως",
+     "αὐτό",
+     "ἔδεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-805-future-middle-with-active-meaning-t26",
+  "sectionId": "sm-805-future-middle-with-active-meaning",
+  "questions": [
+   {
+    "prompt": "Whenever a fair wind blows, the sailors will sail to the islands.",
+    "answer": "Ὅταν οὖρος πνέῃ, οἱ ναῦται εἰς τὰς νήσους πλεύσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὅταν",
+     "οὖρος",
+     "πνέῃ",
+     "οἱ",
+     "ναῦται",
+     "εἰς",
+     "τάς",
+     "νήσους",
+     "πλεύσονται"
+    ]
+   },
+   {
+    "prompt": "The general will grow old in the camp, but he will never flee from the enemy.",
+    "answer": "Ὁ στρατηγὸς ἐν τῷ στρατοπέδῳ γηράσεται, τοὺς δὲ πολεμίους οὐδέποτε φεύξεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγός",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "γηράσεται",
+     "τούς",
+     "δέ",
+     "πολεμίους",
+     "οὐδέποτε",
+     "φεύξεται"
+    ]
+   },
+   {
+    "prompt": "The strangers, having seen the statue, will marvel at the craftsman's skill.",
+    "answer": "Οἱ ξένοι τὸν ἀνδριάντα ἰδόντες θαυμάσονται τὴν τοῦ δημιουργοῦ τέχνην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ξένοι",
+     "τόν",
+     "ἀνδριάντα",
+     "ἰδόντες",
+     "θαυμάσονται",
+     "τήν",
+     "τοῦ",
+     "δημιουργοῦ",
+     "τέχνην"
+    ]
+   },
+   {
+    "prompt": "I do not think that the citizens will obey the tyrant.",
+    "answer": "Οὐκ οἴομαι τοὺς πολίτας τῷ τυράννῳ πείσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὐκ",
+     "οἴομαι",
+     "τούς",
+     "πολίτας",
+     "τῷ",
+     "τυράννῳ",
+     "πείσεσθαι"
+    ]
+   }
+  ]
  }
 ]

@@ -364,5 +364,651 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t7",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The ambassadors wished to persuade the assembly to make peace.",
+    "answer": "οἱ πρέσβεις ἐβούλοντο τὴν ἐκκλησίαν πεῖσαι εἰρήνην ποιήσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἐβούλοντο",
+     "τὴν",
+     "ἐκκλησίαν",
+     "πεῖσαι",
+     "εἰρήνην",
+     "ποιήσασθαι"
+    ]
+   },
+   {
+    "prompt": "It is difficult to endure hunger and thirst at the same time.",
+    "answer": "χαλεπόν ἐστι λιμὸν καὶ δίψαν ἅμα φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστι",
+     "λιμὸν",
+     "καὶ",
+     "δίψαν",
+     "ἅμα",
+     "φέρειν"
+    ]
+   },
+   {
+    "prompt": "The slave promised to bring the letters to his master.",
+    "answer": "ὁ δοῦλος ὑπέσχετο τὰς ἐπιστολὰς τῷ δεσπότῃ οἴσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "ὑπέσχετο",
+     "τὰς",
+     "ἐπιστολὰς",
+     "τῷ",
+     "δεσπότῃ",
+     "οἴσειν"
+    ]
+   },
+   {
+    "prompt": "To have learned philosophy is useful to the young.",
+    "answer": "τὸ φιλοσοφίαν μεμαθηκέναι χρήσιμόν ἐστι τοῖς νέοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "φιλοσοφίαν",
+     "μεμαθηκέναι",
+     "χρήσιμόν",
+     "ἐστι",
+     "τοῖς",
+     "νέοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t8",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The soldiers, having pitched their tents, rested from the march.",
+    "answer": "οἱ στρατιῶται τὰς σκηνὰς πήξαντες ἀνεπαύοντο τῆς πορείας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὰς",
+     "σκηνὰς",
+     "πήξαντες",
+     "ἀνεπαύοντο",
+     "τῆς",
+     "πορείας"
+    ]
+   },
+   {
+    "prompt": "Those fleeing from the battle were pursued by the horsemen.",
+    "answer": "οἱ ἐκ τῆς μάχης φεύγοντες ὑπὸ τῶν ἱππέων ἐδιώκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φεύγοντες",
+     "ὑπὸ",
+     "τῶν",
+     "ἱππέων",
+     "ἐδιώκοντο"
+    ]
+   },
+   {
+    "prompt": "The woman, having heard these things, wept for a long time.",
+    "answer": "ἡ γυνὴ ταῦτα ἀκούσασα πολὺν χρόνον ἐδάκρυεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "ταῦτα",
+     "ἀκούσασα",
+     "πολὺν",
+     "χρόνον",
+     "ἐδάκρυεν"
+    ]
+   },
+   {
+    "prompt": "We saw the deserters running toward the enemy's camp.",
+    "answer": "τοὺς αὐτομόλους εἴδομεν πρὸς τὸ τῶν πολεμίων στρατόπεδον θέοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "αὐτομόλους",
+     "εἴδομεν",
+     "πρὸς",
+     "τὸ",
+     "τῶν",
+     "πολεμίων",
+     "στρατόπεδον",
+     "θέοντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t9",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "We must free the prisoners before nightfall.",
+    "answer": "τοὺς αἰχμαλώτους λυτέον ἡμῖν πρὸ νυκτός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "αἰχμαλώτους",
+     "λυτέον",
+     "ἡμῖν",
+     "πρὸ",
+     "νυκτός"
+    ]
+   },
+   {
+    "prompt": "The truth must be told even to enemies.",
+    "answer": "ἡ ἀλήθεια λεκτέα ἐστὶ καὶ τοῖς πολεμίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀλήθεια",
+     "λεκτέα",
+     "ἐστὶ",
+     "καὶ",
+     "τοῖς",
+     "πολεμίοις"
+    ]
+   },
+   {
+    "prompt": "The general said that the river must be crossed at once.",
+    "answer": "ὁ στρατηγὸς ἔφη τὸν ποταμὸν εὐθὺς διαβατέον εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἔφη",
+     "τὸν",
+     "ποταμὸν",
+     "εὐθὺς",
+     "διαβατέον",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "The young must honor those who are wise.",
+    "answer": "τοὺς σοφοὺς τιμητέον ἐστὶ τοῖς νέοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "σοφοὺς",
+     "τιμητέον",
+     "ἐστὶ",
+     "τοῖς",
+     "νέοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t10",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The things done by the tyrant were not praiseworthy.",
+    "answer": "τὰ ὑπὸ τοῦ τυράννου πραχθέντα οὐκ ἐπαινετὰ ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ὑπὸ",
+     "τοῦ",
+     "τυράννου",
+     "πραχθέντα",
+     "οὐκ",
+     "ἐπαινετὰ",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The stars are visible to all throughout the whole night.",
+    "answer": "τὰ ἄστρα ὁρατά ἐστι πᾶσι διὰ ὅλης τῆς νυκτός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ἄστρα",
+     "ὁρατά",
+     "ἐστι",
+     "πᾶσι",
+     "διὰ",
+     "ὅλης",
+     "τῆς",
+     "νυκτός"
+    ]
+   },
+   {
+    "prompt": "The plans of the enemy were hidden from the general.",
+    "answer": "τὰ τῶν πολεμίων βουλεύματα κρυπτὰ ἦν τῷ στρατηγῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "πολεμίων",
+     "βουλεύματα",
+     "κρυπτὰ",
+     "ἦν",
+     "τῷ",
+     "στρατηγῷ"
+    ]
+   },
+   {
+    "prompt": "A trustworthy friend is more valuable than much gold.",
+    "answer": "ὁ πιστὸς φίλος πολλοῦ χρυσοῦ τιμιώτερός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πιστὸς",
+     "φίλος",
+     "πολλοῦ",
+     "χρυσοῦ",
+     "τιμιώτερός",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t11",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The enemy having withdrawn, the citizens opened the gates.",
+    "answer": "τῶν πολεμίων ἀποχωρησάντων οἱ πολῖται τὰς πύλας ἀνέῳξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἀποχωρησάντων",
+     "οἱ",
+     "πολῖται",
+     "τὰς",
+     "πύλας",
+     "ἀνέῳξαν"
+    ]
+   },
+   {
+    "prompt": "While the priests were sacrificing, the omens appeared favorable.",
+    "answer": "τῶν ἱερέων θυόντων τὰ ἱερὰ καλὰ ἐφαίνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἱερέων",
+     "θυόντων",
+     "τὰ",
+     "ἱερὰ",
+     "καλὰ",
+     "ἐφαίνετο"
+    ]
+   },
+   {
+    "prompt": "Winter having come, the soldiers suffered terribly from the cold.",
+    "answer": "τοῦ χειμῶνος γενομένου οἱ στρατιῶται δεινῶς ὑπὸ τοῦ ψύχους ἔπασχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "χειμῶνος",
+     "γενομένου",
+     "οἱ",
+     "στρατιῶται",
+     "δεινῶς",
+     "ὑπὸ",
+     "ψύχους",
+     "ἔπασχον"
+    ]
+   },
+   {
+    "prompt": "The general having been killed, the army fled without order.",
+    "answer": "τοῦ στρατηγοῦ ἀποθανόντος τὸ στράτευμα ἄνευ τάξεως ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀποθανόντος",
+     "τὸ",
+     "στράτευμα",
+     "ἄνευ",
+     "τάξεως",
+     "ἔφυγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t12",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The children learning letters were praised by the teacher.",
+    "answer": "οἱ παῖδες οἱ τὰ γράμματα μανθάνοντες ὑπὸ τοῦ διδασκάλου ἐπῃνοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "τὰ",
+     "γράμματα",
+     "μανθάνοντες",
+     "ὑπὸ",
+     "τοῦ",
+     "διδασκάλου",
+     "ἐπῃνοῦντο"
+    ]
+   },
+   {
+    "prompt": "It is shameful to flee, having abandoned one's comrades.",
+    "answer": "αἰσχρόν ἐστι φεύγειν τοὺς ἑταίρους καταλιπόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "φεύγειν",
+     "τοὺς",
+     "ἑταίρους",
+     "καταλιπόντα"
+    ]
+   },
+   {
+    "prompt": "The sailors, worn out by the storm, wished to remain in the harbor.",
+    "answer": "οἱ ναῦται ὑπὸ τοῦ χειμῶνος τετρυμένοι ἐβούλοντο ἐν τῷ λιμένι μένειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "ὑπὸ",
+     "τοῦ",
+     "χειμῶνος",
+     "τετρυμένοι",
+     "ἐβούλοντο",
+     "ἐν",
+     "τῷ",
+     "λιμένι",
+     "μένειν"
+    ]
+   },
+   {
+    "prompt": "Having conquered the barbarians, they resolved to build a trophy.",
+    "answer": "τοὺς βαρβάρους νικήσαντες ἔγνωσαν τρόπαιον στῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "βαρβάρους",
+     "νικήσαντες",
+     "ἔγνωσαν",
+     "τρόπαιον",
+     "στῆσαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t13",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The doctor undertook to heal the wound.",
+    "answer": "ὁ ἰατρὸς ἐνεχείρησε τὸ ἕλκος θεραπεῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "ἐνεχείρησε",
+     "τὸ",
+     "ἕλκος",
+     "θεραπεῦσαι"
+    ]
+   },
+   {
+    "prompt": "The goat wished to drink the milk.",
+    "answer": "ἡ αἴξ ἐβούλετο τὸ γάλα πιεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "αἴξ",
+     "ἐβούλετο",
+     "τὸ",
+     "γάλα",
+     "πιεῖν"
+    ]
+   },
+   {
+    "prompt": "It is fitting for the young to provide food to their parents.",
+    "answer": "πρέπει τοὺς νέους τοῖς γονεῦσι τροφὴν παρέχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρέπει",
+     "τοὺς",
+     "νέους",
+     "τοῖς",
+     "γονεῦσι",
+     "τροφὴν",
+     "παρέχειν"
+    ]
+   },
+   {
+    "prompt": "The carpenter promised to build the house within ten days.",
+    "answer": "ὁ τέκτων ὑπέσχετο τὴν οἰκίαν ἐν δέκα ἡμέραις οἰκοδομήσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τέκτων",
+     "ὑπέσχετο",
+     "τὴν",
+     "οἰκίαν",
+     "ἐν",
+     "δέκα",
+     "ἡμέραις",
+     "οἰκοδομήσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t14",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The soldiers were compelled to give their weapons to the enemy.",
+    "answer": "οἱ στρατιῶται ἠναγκάσθησαν τὰ ὅπλα τοῖς πολεμίοις δοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἠναγκάσθησαν",
+     "τὰ",
+     "ὅπλα",
+     "τοῖς",
+     "πολεμίοις",
+     "δοῦναι"
+    ]
+   },
+   {
+    "prompt": "It is not possible for a base man to become wise.",
+    "answer": "οὐκ ἔξεστι πονηρῷ ἀνδρὶ σοφῷ γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔξεστι",
+     "πονηρῷ",
+     "ἀνδρὶ",
+     "σοφῷ",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "The prisoners hoped to be freed by the king.",
+    "answer": "οἱ αἰχμάλωτοι ἤλπιζον ὑπὸ τοῦ βασιλέως λυθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ἤλπιζον",
+     "ὑπὸ",
+     "τοῦ",
+     "βασιλέως",
+     "λυθῆναι"
+    ]
+   },
+   {
+    "prompt": "The old men seem to know many things about fortune.",
+    "answer": "οἱ γέροντες δοκοῦσι πολλὰ περὶ τῆς τύχης εἰδέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "δοκοῦσι",
+     "πολλὰ",
+     "περὶ",
+     "τῆς",
+     "τύχης",
+     "εἰδέναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t15",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The deserter, having fled to the enemy, revealed the plan.",
+    "answer": "ὁ αὐτόμολος πρὸς τοὺς πολεμίους φυγὼν τὸ βούλευμα ἐδήλωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "αὐτόμολος",
+     "πρὸς",
+     "τοὺς",
+     "πολεμίους",
+     "φυγὼν",
+     "τὸ",
+     "βούλευμα",
+     "ἐδήλωσεν"
+    ]
+   },
+   {
+    "prompt": "The doctor, treating the sick, won a great reputation.",
+    "answer": "ὁ ἰατρὸς τοὺς κάμνοντας θεραπεύων μεγάλην δόξαν ἐκτήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "τοὺς",
+     "κάμνοντας",
+     "θεραπεύων",
+     "μεγάλην",
+     "δόξαν",
+     "ἐκτήσατο"
+    ]
+   },
+   {
+    "prompt": "The gods pity those who have suffered many things by fortune.",
+    "answer": "οἱ θεοὶ ἐλεοῦσι τοὺς πολλὰ ὑπὸ τῆς τύχης πεπονθότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "ἐλεοῦσι",
+     "τοὺς",
+     "πολλὰ",
+     "ὑπὸ",
+     "τῆς",
+     "τύχης",
+     "πεπονθότας"
+    ]
+   },
+   {
+    "prompt": "The wound having been healed, the soldier returned to the battle.",
+    "answer": "τοῦ ἕλκους θεραπευθέντος ὁ στρατιώτης εἰς τὴν μάχην ἐπανῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "ἕλκους",
+     "θεραπευθέντος",
+     "ὁ",
+     "στρατιώτης",
+     "εἰς",
+     "τὴν",
+     "μάχην",
+     "ἐπανῆλθεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-469-endings-of-the-infinitive-participle-t16",
+  "sectionId": "sm-469-endings-of-the-infinitive-participle",
+  "questions": [
+   {
+    "prompt": "The mountain is not passable in winter.",
+    "answer": "τὸ ὄρος τοῦ χειμῶνος οὐ διαβατόν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ὄρος",
+     "τοῦ",
+     "χειμῶνος",
+     "οὐ",
+     "διαβατόν",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The truth must be spoken even to enemies.",
+    "answer": "τὸ ἀληθὲς καὶ τοῖς πολεμίοις λεκτέον ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἀληθὲς",
+     "καὶ",
+     "τοῖς",
+     "πολεμίοις",
+     "λεκτέον",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Fortune is not to be trusted by the wise.",
+    "answer": "ἡ τύχη τοῖς σοφοῖς οὐ πιστευτέα ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τύχη",
+     "τοῖς",
+     "σοφοῖς",
+     "οὐ",
+     "πιστευτέα",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The weak must be cared for by the strong.",
+    "answer": "οἱ ἀσθενεῖς ὑπὸ τῶν ἰσχυρῶν θεραπευτέοι εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀσθενεῖς",
+     "ὑπὸ",
+     "τῶν",
+     "ἰσχυρῶν",
+     "θεραπευτέοι",
+     "εἰσιν"
+    ]
+   }
+  ]
  }
 ]
