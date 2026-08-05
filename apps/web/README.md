@@ -27,9 +27,6 @@ how it went: *Again*, *Hard*, *Good*, *Easy*. That grade schedules when the
 topic comes back, and each button shows when. If you can't face typing on a
 phone, **Reveal** shows the answer and you grade yourself the same way.
 
-On a brand new install a short **placement** runs first: one sentence per level,
-so you start where you actually are rather than at chapter one.
-
 Two more things worth knowing:
 
 - **§ grammar** opens the section from the source grammar — Bennett for Latin,
@@ -38,7 +35,7 @@ Two more things worth knowing:
   order, so the § next door is a thumb away rather than a close-map-pick, and
   the two neighbours are named at the foot of the page for anyone who would
   rather tap. The **→** in the head goes from the section you are reading to
-  what you can do with it — *Quiz me*, *Study from here*, *Practise these*.
+  what you can do with it — *Study from here*, *Practise these*, *Book order*.
   Under the last line of the **grammar map** is whose book all of it is,
   licence and all, linked to the edition it was parsed from: not a page of this
   grammar was written here.

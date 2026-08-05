@@ -47,10 +47,11 @@ progress; there is no in-app switcher.
 (Ancient Greek). Open either on a phone and add it to the home screen; it then
 works with no signal.
 
-A short **placement test** runs on a fresh deck: it asks about each grammar
-family in turn, so it can hear "I know my declensions but not my verbs" instead
-of one linear cut. Study then begins at your level in each area
-rather than at chapter one — see [Three ways forward](#three-ways-forward).
+Two errands, and a switch between them: **Review** serves what is due, and
+**Explore** reads the book. It opens on the reviews whenever any are waiting and
+on the book when none are, and it throws itself back to the book as soon as the
+pile is cleared. Where the book reads from is yours to say — see
+[Three ways forward](#three-ways-forward).
 
 Spaced repetition runs on two independent [FSRS](https://github.com/open-spaced-repetition/ts-fsrs)
 tracks: **grammar topics** (driven by your self-grades) and **vocabulary** you
@@ -166,11 +167,11 @@ pnpm cli                      # the Latin pack and ~/.latin-tutor/progress.json
 pnpm --filter @lang-tutor/cli start -- --language latin --progress ./my.progress.json
 ```
 
-Flow: (placement on first run →) read the English prompt, **type your Latin and
-press Enter**, compare with the reference answer, then `1–4` self-grade
-(1 again · 4 easy). `w` the words of this question · `v` record a word ·
-`g` grammar section · `h` your earlier answers on this topic · `.` stay on this
-topic · `Esc` peek at the grammar mid-answer · `m` grammar index · `q` quit
+Flow: read the English prompt, **type your Latin and press Enter**, compare with
+the reference answer, then `1–4` self-grade (1 again · 4 easy). `w` the words of
+this question · `v` record a word · `g` grammar section · `h` your earlier
+answers on this topic · `x` switch errand · `b` back to the book in order ·
+`Esc` peek at the grammar mid-answer · `m` grammar index · `q` quit
 (autosaves).
 
 While the answer box has the keyboard, every letter goes into the answer, so the
@@ -192,8 +193,8 @@ none of them is a dead end:
   answer is still there, and nothing has been graded.
 - **`^Z`** (`u` on any screen without a text box) takes back the self-grade just
   given. The question comes back exactly as you left it, and so does everything
-  the grade touched — the card, the mastery score, the answer trail, your place
-  in placement. Re-grading then counts once, not twice.
+  the grade touched — the card, the mastery score, the answer trail, the book
+  cursor, and which errand you were on. Re-grading then counts once, not twice.
 
 One grade deep, and only the most recent: this is an undo for the keypress you
 just regret, not a history to walk back through. The web app has the same three,
@@ -228,16 +229,22 @@ another pick. The **→** in its head is the way from the section you have read 
 what can be done with it, so studying what you just found is one tap rather than
 a walk back through the index.
 
-The CLI's two index keys become the two buttons beside *Quiz me* — **Study from
-here** and **Practise these 17** — and `.` becomes **↻ more of this** in the row
-under the answer. When either is running, a chip in the status bar says what is
-being studied and carries *back to the book* beside it: a mode you cannot see
-how to leave is a trap, not a feature.
+The CLI's two index keys become three buttons on the topic sheet — **Study from
+here**, **Practise these 17** and **Book order** — so all three ways of reading
+the book are chosen in one place, and choosing one is also how you leave the
+last. When the book is not simply in order, a chip in the status bar says where
+it is reading from, or what run of practice is under way.
 
-The bar names **what is on screen and why** in one word — `review`, `new`,
-`drill`, `quiz`, `vocabulary`, `placement` — because for a long time it named
-exactly one of them. A card come back on schedule, a topic you asked to stay on
-and a topic quizzed off the index are the same four sentences under the same
+Above it sit the two errands: **Explore** and **Review**, both labels always on
+screen, the live one pressed. Three links used to say the same two things one at
+a time — *set these aside and explore*, *back to reviews*, *back to the book* —
+so whichever state you were not in was invisible, and the one you were in looked
+like the only one there was.
+
+The bar also names **what is on screen and why** in one word — `review`, `new`,
+`drill`, `revisiting`, `vocabulary` — because for a long time it named exactly
+one of them. A card come back on schedule, a topic you asked to stay on and a
+topic the book has come back to are the same four sentences under the same
 title, and only *new* was ever said out loud, so "why am I being shown this"
 had no answer on screen. It is written on the round rather than derived from
 the scheduler, which is what makes it survive a reload: `next` says why once,
@@ -343,51 +350,46 @@ drops, the student can never read.
 A syllabus of 114 topics is walked by more than one kind of student, and for a
 long time it was walked by only one: the next topic was the first one in book
 order you had not touched, so every route through the book ended up back at
-chapter one. Three things now decide where new topics come from. **Reviews are
-not one of them** — whatever is due comes back on its own schedule in all
-three, so spaced repetition is never starved by a choice about new ground.
+chapter one.
 
-**The sweep** — the default, and the quick refresher. The book in order, except
-that each of the nine families picks up at **its own frontier**. On a fresh deck
-no family has one, so this is chapter one onwards, exactly as before. After a
-placement it is the same walk starting in nine different places.
-
-**An area** — one family at a time, set by `f` on the index (web: *Study from
-here*). Knowing your declensions and wanting to start at the verbs is the case
-this exists for: it moves that family's frontier to the topic you chose and
-draws new topics from it until the family runs out, then hands back to the
-sweep. The topics you skipped stay *unstudied* on the index rather than being
-marked known — they are — and the sweep collects them once nothing is ahead.
-
-**A topic** — `.` on the graded screen, or *Practise these 17* on the index. A
-section ships 19–93 questions (median 24) in tests of four, so doing well on one
-test and being moved on is not the same as having the topic. This stays put and
-serves the questions you have never answered, in preference to the ones you
-have, until the bank is dry — then it lets go by itself. The status bar carries
-the count while it runs, and the way out beside it.
-
-**Setting the backlog aside** is the one thing that does touch reviews, and it
-is the student's to throw. Everything due is served before anything new, which
-is right for the sitting you came to study and wrong for the one you came to
-get further in: twelve cards deep, the only way to reach an unstudied topic was
-to know that the index would quiz one. *Set these aside and explore* (`x` in the
-CLI) drops **the pile that was already waiting** to the bottom of the ladder —
-not reviews as such. A topic met while exploring and graded *again* is due in a
-minute and comes straight back, because it is the thing being explored rather
-than part of what was put aside. What is held is deferred and never dropped: it
-is served the moment there is nothing left to learn, so *Nothing due* still
-means nothing due. The status bar carries the count that is waiting and the way
-back beside it, and the accent goes green while the run is on — the same
+**Two errands, and a switch.** *Review* serves what is due and nothing else;
+*Explore* reads the book and nothing else. It opens on the reviews whenever any
+are waiting and on the book when none are, switching is immediate rather than
+"after this round", and clearing the last review throws the switch back to the
+book by itself. Which errand you are on is not written down: a pile of reviews
+is exactly the thing a saved preference should not be able to hide, so every
+launch puts it back in front of you. With nothing due the switch greys out —
+there is no pile to go back to. The accent goes green while exploring, the same
 variable every button and meter already reads, so the app is a different colour
 for as long as it is a different errand.
 
-**The placement test** fills the frontiers in. It asks about each family in
-turn, bisecting: a sentence from the middle of the family, then — only if you
-passed — one from the middle of what is left above it. **A miss moves to the
-next family instead of ending the test**, which is what makes "declensions yes,
-verbs no" sayable at all. Nine families, at most two probes each: sixteen
-sentences over the shipped syllabus, and only that family's topics are ever
-claimed as known.
+Exploring walks a **cursor** through the book, and it steps forward one section
+per round whatever the grade was, and whether or not the round was finished.
+That last part is the whole design: a rule like "the first topic not yet
+mastered" cannot move past a topic that is going badly, which is the one topic a
+student most needs to be able to leave. Mastery decides only where the cursor is
+*put*. Three things put it there, and they are remembered until another is
+chosen:
+
+**Book order** — the default, and the quick refresher. Drops the cursor on the
+earliest section still short of the top band and reads on from there.
+
+**Study from here** — the same walk begun where you say, set by `f` on the index
+(web: *Study from here*). Knowing your declensions and wanting to start at the
+verbs is the case this exists for. It reads on one section to the next from
+there, across the family boundaries and off the end of the book, where it wraps
+back to whatever it left behind. The sections you skipped stay *unstudied* on
+the index rather than being marked known — they are.
+
+**Practise these** — Enter on the index (web: *Practise these 17*). A section
+ships 19–93 questions (median 24) in tests of four, so doing well on one test
+and being moved on is not the same as having the topic. This stays put and works
+out the questions you have never answered; once there are none of those, asking
+again takes the whole bank a second time, leading with whatever you have not
+seen for longest. When the run is worked out the loop **stops and says so**
+rather than sliding onto the next topic: staying here was an instruction, and
+that is not how one ends. The status bar carries the run's count while it lasts,
+and it leaves the book cursor alone, so the detour costs you nothing.
 
 **One round of questions is one review.** A served test is four sentences on one
 topic, and grading each of them used to drive four FSRS reps into the same card
@@ -439,7 +441,7 @@ the map would change height under you as you walked it.
 Each topic carries a **mastery score from 1 (not mastered) to 4 (mastered)**,
 moved by your self-grades: good/easy `+1`, hard `+0.5`, again `−1`. A single
 lucky answer therefore can't mark a topic mastered, and one bad day can't wipe
-one. Topics passed in placement show as mastered but assumed. Beside the score
+one. Beside the score
 sits **how much of the topic's bank you have answered** — `9/24 questions` — and
 they are different questions: a topic can be mastered on the four sentences it
 has served and still hold twenty you have never seen.
@@ -449,26 +451,20 @@ has served and still hold twenty you have never seen.
 section in full (scrolling as above, `Esc` back to the index), and two keys act on
 the topic under the cursor:
 
-- **Enter** serves a test on it straight away and *leaves nothing behind* — the
-  way to look ahead. Normal spaced repetition resumes once the test is done.
-- **`f`** takes the syllabus up from it: that family resumes there and becomes
-  where new topics come from. This is the one that sticks.
-
-From a half-written answer or a placement run, both cost something, so both ask
-twice before acting.
+- **Enter** stays on it and works a run of its questions out.
+- **`f`** takes the book up from it and reads on from there.
 
 The map opens from **every** screen, the way the web app's `▦` button does —
-mid-answer (`^N`, since the letters are the answer's), on a vocabulary card, from
-the schedule, and during placement, which used to suppress it. Whatever it was
-opened over is what `Esc` puts back, half-written answer and all.
+mid-answer (`^N`, since the letters are the answer's), on a vocabulary card and
+from the schedule. Whatever it was opened over is what `Esc` puts back,
+half-written answer and all.
 
-Enter is the one key there that costs something: from a half-written answer it
-throws that answer away, and during placement it ends the placement run. From
-those two places it asks first, and a second Enter goes ahead —
+Both keys cost something from a half-written answer, since they throw it away,
+so from there each asks first and a second press goes ahead —
 
 ```
 § 100 Conjugation of sum
-Press Enter again to leave the answer you are writing and quiz “Conjugation of sum”.
+Press Enter again to leave the answer you are writing and practise “Conjugation of sum”.
 ```
 
 — and moving the cursor cancels it, because the warning named a topic and `←`
@@ -518,12 +514,14 @@ every save. A file written before the trail existed simply has none; it starts
 filling on the next answer. (Only `seenTests`, the rotation's memory, is capped,
 at ten per topic.)
 
-Where you are is in there too: `frontiers` (one resume point per grammar
-family), `focus` (which of the [three ways forward](#three-ways-forward) is
-running) and `openRound` (the round of questions in flight, so closing the app
-mid-test still leaves the topic with exactly one review). A file written before
-any of them has none, and defaults to the plain sweep from chapter one — which
-is what it was doing anyway.
+Where you are is in there too: `bookAt` (the cursor's section), `practise` (the
+run in flight, if any — together these are which of the
+[three ways forward](#three-ways-forward) is running) and `openRound` (the round
+of questions in flight, so closing the app mid-test still leaves the topic with
+exactly one review). Which *errand* you are on is deliberately not: it resets on
+every launch, so a waiting pile cannot be hidden from you by a saved preference.
+A file written before any of this has none, and opens on the earliest section
+short of the top band — which is what it was doing anyway.
 
 ## Generation (offline, one-time — not shipped)
 
