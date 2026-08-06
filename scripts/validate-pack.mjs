@@ -80,7 +80,12 @@ gates.push(
 
 // --- B: the reference data -----------------------------------------------------
 
-if (!argv.includes("--profile-only")) {
+// `--profile-only --require-ref` is the one combination that reaches here
+// without the rest: it is the check a new pack runs *before* building anything,
+// when it has a reference and no content yet, and D2 is the whole point of it.
+// Bare `--profile-only` still skips this, because without a reference to point
+// at there is nothing but the content it has not built to answer from.
+if (!argv.includes("--profile-only") || REQUIRE_REF) {
   // Both of these throw rather than return a verdict, because everywhere else
   // they are called there is nothing sensible to do afterwards. Here there is:
   // report it as the gate it is, and carry on to the ones that do not need it.

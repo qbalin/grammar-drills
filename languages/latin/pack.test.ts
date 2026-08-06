@@ -8,6 +8,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { checkConfetti } from "../../scripts/lib/confetti.mjs";
+import { genderOf, glossOf, tagValue } from "../../scripts/lib/lemma-fields.mjs";
 import { readFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { join } from "node:path";
@@ -153,6 +154,67 @@ describe("the fold against the shipped dictionary", () => {
     ];
     const missed = written.filter((w) => !map[fold(w)]);
     expect(missed).toEqual([]);
+  });
+});
+
+/**
+ * What `build-lemmas.mjs` reads out of one dictionary entry.
+ *
+ * The builder itself needs a 474 MB database and runs once per pack, so it is
+ * not a thing anyone can test. These three are the part of it with rules worth
+ * pinning down, and they are pure. The `data` blobs below are shaped exactly
+ * like the ones `ingest_dictionary.py` writes.
+ */
+describe("the fields a lemma record is made of", () => {
+  const entry = (...senses: unknown[]) => JSON.stringify({ senses });
+
+  it("keeps six senses, not three", () => {
+    const many = entry(...Array.from({ length: 9 }, (_, i) => ({ gloss: `sense ${i}` })));
+    expect(glossOf(many)).toBe(
+      "sense 0; sense 1; sense 2; sense 3; sense 4; sense 5",
+    );
+  });
+
+  it("skips senses with no gloss rather than joining a gap", () => {
+    expect(glossOf(entry({ gloss: "a" }, { tags: ["obsolete"] }, { gloss: "b" }))).toBe("a; b");
+  });
+
+  it("treats a malformed entry as one with nothing to say", () => {
+    expect(glossOf("{not json")).toBe("");
+    expect(genderOf("{not json")).toBeUndefined();
+    expect(tagValue("{not json", "declension-")).toBeUndefined();
+  });
+
+  // The bug this pack shipped with: gender was read from the senses alone, and
+  // wiktextract writes it on the headword row far more often than on a sense.
+  // `rex` is the real case — its senses carry a declension and no gender.
+  it("takes a gender from the headword row when no sense carries one", () => {
+    const rex = entry({ gloss: "king", tags: ["declension-3"] });
+    expect(genderOf(rex)).toBeUndefined();
+    expect(
+      genderOf(rex, [
+        { form: "rēx", tags: "canonical,masculine" },
+        { form: "rēgis", tags: "genitive,singular" },
+      ]),
+    ).toBe("masculine");
+  });
+
+  it("prefers the sense's gender to the headword row's", () => {
+    const both = entry({ gloss: "hand", tags: ["feminine"] });
+    expect(genderOf(both, [{ form: "manus", tags: "canonical,masculine" }])).toBe("feminine");
+  });
+
+  it("ignores a gender on a row that is not the headword", () => {
+    // An adjective's inflected rows are tagged by gender; that is agreement,
+    // not the lemma's own gender, and reading it would give every adjective one.
+    expect(genderOf(entry({ gloss: "good" }), [
+      { form: "bona", tags: "feminine,nominative,singular" },
+      { form: "bonum", tags: "neuter,nominative,singular" },
+    ])).toBeUndefined();
+  });
+
+  it("reads a declension off the sense tags", () => {
+    expect(tagValue(entry({ gloss: "girl", tags: ["declension-1"] }), "declension-")).toBe("1");
   });
 });
 
