@@ -109,6 +109,7 @@ export function Graded({
   index,
   total,
   schedule,
+  settled,
   marks,
   marking,
   onGrade,
@@ -130,6 +131,12 @@ export function Graded({
   index: number;
   total: number;
   schedule?: Record<Rating, Date>;
+  /**
+   * Whether the round is already settled at `again`, so every grade brings the
+   * topic back at the same time. The bar says so once rather than printing one
+   * interval four times.
+   */
+  settled?: boolean;
   /** What has been picked out so far, riding along until the grade stores it. */
   marks: AttemptMarks;
   /** Whether a tap marks a word rather than doing nothing. */
@@ -227,7 +234,7 @@ export function Graded({
           {marking ? "✓ done marking" : "✱ mark"}
         </button>
       </div>
-      <GradeBar onGrade={onGrade} schedule={schedule} />
+      <GradeBar onGrade={onGrade} schedule={schedule} settled={settled} />
     </>
   );
 }

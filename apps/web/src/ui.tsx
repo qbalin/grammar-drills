@@ -129,31 +129,51 @@ const GRADES: { rating: Rating; label: string }[] = [
 /**
  * The four self-grades, each showing when it would bring the card back. The
  * interval is the whole reason to think about the choice.
+ *
+ * A round is scheduled by its worst answer, so once `again` has been given the
+ * four intervals are one interval, and printing it under every button reads as
+ * a bug rather than as the truth. `settled` replaces the four with a single
+ * line saying what is now fixed — the grades still do their other work, since
+ * mastery and the answer trail move per question either way.
  */
 export function GradeBar({
   onGrade,
   schedule,
+  settled,
 }: {
   onGrade: (rating: Rating) => void;
   /** When each grade lands, from `Session.previewTopic`/`previewVocab`. */
   schedule?: Record<Rating, Date>;
+  /** Whether every grade now brings the topic back at the same time. */
+  settled?: boolean;
 }) {
   const now = new Date();
+  const showWhen = schedule && !settled;
+  // A fragment rather than a wrapper: `.grades` is a flex child of `.study`,
+  // and boxing it would put a block between them for one line of text.
   return (
-    <div className="grades">
-      {GRADES.map(({ rating, label }) => (
-        <button
-          key={rating}
-          className={`grade grade--${rating}`}
-          onClick={() => onGrade(rating)}
-        >
-          <span className="grade__label">{label}</span>
-          {schedule && (
-            <span className="grade__when">{until(now, schedule[rating])}</span>
-          )}
-        </button>
-      ))}
-    </div>
+    <>
+      {settled && schedule && (
+        <p className="grades__settled">
+          Back in {until(now, schedule[1])} whatever you press — the round is
+          graded by its weakest answer.
+        </p>
+      )}
+      <div className="grades" data-settled={settled ? "" : undefined}>
+        {GRADES.map(({ rating, label }) => (
+          <button
+            key={rating}
+            className={`grade grade--${rating}`}
+            onClick={() => onGrade(rating)}
+          >
+            <span className="grade__label">{label}</span>
+            {showWhen && (
+              <span className="grade__when">{until(now, schedule[rating])}</span>
+            )}
+          </button>
+        ))}
+      </div>
+    </>
   );
 }
 

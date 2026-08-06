@@ -917,6 +917,74 @@ describe("Session progress: a round of questions is one review", () => {
     expect(s.progress().topicCards.n1!.due).toBe(alone.progress().topicCards.n1!.due);
   });
 
+  /**
+   * The buttons have to promise what pressing them does. They previewed the
+   * stored card, which the round's earlier grades have already advanced and
+   * which the next grade rewinds past — so from the second question on, every
+   * label was an interval the round could no longer reach.
+   */
+  describe("previewing a grade inside a round", () => {
+    /** Where each rating would actually land, by doing it on a copy. */
+    const outcomes = (s: Session, roundId: string) =>
+      ([1, 2, 3, 4] as const).map((r) => {
+        const copy = new Session(
+          new Content(wide, testProfile),
+          JSON.parse(JSON.stringify(s.progress())),
+        );
+        copy.gradeTopic("n1", r, now, roundId);
+        return copy.progress().topicCards.n1!.due;
+      });
+
+    const labels = (s: Session, roundId?: string) => {
+      const p = s.previewTopic("n1", now, roundId);
+      return [p[1], p[2], p[3], p[4]].map((d) => d.toISOString());
+    };
+
+    it("says what each grade does at every question of the round", () => {
+      const s = new Session(new Content(wide, testProfile));
+      for (const grade of [3, 3, 1] as const) {
+        expect(labels(s, "r")).toEqual(outcomes(s, "r"));
+        s.gradeTopic("n1", grade, now, "r");
+      }
+      expect(labels(s, "r")).toEqual(outcomes(s, "r"));
+    });
+
+    it("floors every button at the worst grade the round has had", () => {
+      const s = new Session(new Content(wide, testProfile));
+      s.gradeTopic("n1", 1, now, "r");
+      // The round is lost, so nothing left to press can buy anything back.
+      const p = s.previewTopic("n1", now, "r");
+      expect(new Set([p[1], p[2], p[3], p[4]].map((d) => +d)).size).toBe(1);
+    });
+
+    it("previews the stored card when no round is named", () => {
+      const s = new Session(new Content(wide, testProfile));
+      s.gradeTopic("n1", 3, now, "r");
+      // A verdict outside a round rates what is on disk, and previews it too.
+      expect(labels(s)).toEqual(outcomes(new Session(
+        new Content(wide, testProfile),
+        JSON.parse(JSON.stringify({ ...s.progress(), openRound: null })),
+      ), "unrelated"));
+    });
+
+    it("ignores a round that is not the one being asked about", () => {
+      const s = new Session(new Content(wide, testProfile));
+      s.gradeTopic("n1", 1, now, "r");
+      // A different test is a different round: it starts from the card on disk.
+      expect(labels(s, "other")).toEqual(labels(s));
+    });
+
+    it("reports the worst grade so far, so a UI can say why the four agree", () => {
+      const s = new Session(new Content(wide, testProfile));
+      expect(s.roundWorst("n1", "r")).toBeNull();
+      s.gradeTopic("n1", 3, now, "r");
+      expect(s.roundWorst("n1", "r")).toBe(3);
+      s.gradeTopic("n1", 1, now, "r");
+      expect(s.roundWorst("n1", "r")).toBe(1);
+      expect(s.roundWorst("n1", "other")).toBeNull();
+    });
+  });
+
   it("starts a new round on a new test, building on the last one", () => {
     const s = new Session(new Content(wide, testProfile));
     s.gradeTopic("n1", 3, now, "n1-t1");

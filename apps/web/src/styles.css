@@ -758,6 +758,27 @@ span.status__title {
   font-variant-numeric: tabular-nums;
 }
 
+/* Said once, where four identical intervals would otherwise be.
+
+   It costs the buttons nothing to appear: the bar is anchored to the bottom of
+   the viewport, and `.grade` keeps its min-height when the intervals under the
+   labels go, so the line takes its space from the scrolling half of the screen
+   rather than pushing the targets down. A grade bar that moved under the thumb
+   mid-round would be worse than the numbers it replaces. */
+.grades__settled {
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--text-faint);
+  margin: 0;
+  padding: 0.7rem 0 0;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.grades[data-settled] {
+  padding-top: 0.45rem;
+}
+
 .grade--1 .grade__label { color: var(--red); }
 .grade--2 .grade__label { color: var(--amber); }
 .grade--3 .grade__label { color: var(--blue); }

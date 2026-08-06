@@ -662,10 +662,51 @@ export class Session {
    * When each grade would bring a topic back. Self-grading is a judgement made
    * in the dark unless the four choices show what they cost; an untouched topic
    * previews against a fresh card, which is what grading it would create.
+   *
+   * Inside a round it has to preview what `gradeTopic` will actually do, which
+   * is not what the stored card says: the card on disk has already been moved
+   * by the round's earlier grades, and the next grade rewinds past it. So the
+   * preview runs from `cardBefore` and floors each rating at the worst given so
+   * far — the same two rules, or the buttons promise intervals the round can no
+   * longer reach. Without a `roundId` it is the stored card, which is what a
+   * verdict outside a round rates.
    */
-  previewTopic(sectionId: string, now: Date = new Date()): Record<Rating, Date> {
-    const stored = this.p.topicCards[sectionId];
-    return preview(stored ? deserializeCard(stored) : newCard(now), now);
+  previewTopic(
+    sectionId: string,
+    now: Date = new Date(),
+    roundId?: string,
+  ): Record<Rating, Date> {
+    const open = this.p.openRound;
+    const continuing =
+      roundId !== undefined &&
+      open != null &&
+      open.roundId === roundId &&
+      open.sectionId === sectionId;
+
+    const base = continuing ? open.cardBefore : (this.p.topicCards[sectionId] ?? null);
+    const dates = preview(base ? deserializeCard(base) : newCard(now), now);
+    if (!continuing || open.worst === null) return dates;
+
+    const worst = open.worst;
+    return {
+      1: dates[1],
+      2: dates[Math.min(worst, 2) as Rating],
+      3: dates[Math.min(worst, 3) as Rating],
+      4: dates[Math.min(worst, 4) as Rating],
+    };
+  }
+
+  /**
+   * The worst grade given in the round so far, or null outside one and before
+   * its first grade. A UI reads this to say why its four buttons agree: once
+   * `again` has been given the round is decided, and four identical intervals
+   * look like a fault rather than the answer.
+   */
+  roundWorst(sectionId: string, roundId: string): Rating | null {
+    const open = this.p.openRound;
+    return open != null && open.roundId === roundId && open.sectionId === sectionId
+      ? open.worst
+      : null;
   }
 
   /** The same, for a vocabulary card; undefined if there is no such card. */

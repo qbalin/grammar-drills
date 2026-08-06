@@ -281,6 +281,25 @@ describe("the study loop", () => {
     expect(screen.getByRole("button", { name: /Easy/ }).textContent).toMatch(/\d+d$/);
   });
 
+  it("says it in words once the round can no longer be saved", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    // The round is scheduled by its worst answer, so this decides it.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Again/ }));
+
+    // On the round's second question, every grade now lands on the same day.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    expect(screen.getByText(/whatever you press/)).toBeDefined();
+    // Said once, rather than printed under all four — which reads as a fault.
+    for (const label of [/Again/, /Hard/, /Good/, /Easy/]) {
+      expect(screen.getByRole("button", { name: label }).textContent).not.toMatch(
+        /\d+[mhd]$/,
+      );
+    }
+  });
+
   it("rests once the book is worked out, rather than showing an empty screen", () => {
     // Every topic already at the top band, so the book has nowhere to go.
     mount({

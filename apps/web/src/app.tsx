@@ -910,7 +910,17 @@ export function App({ content, session, storage }: Props) {
   const runProgress =
     badge === "drill" && sectionId ? session.practice(sectionId) : null;
 
-  const schedule = sectionId ? session.previewTopic(sectionId) : undefined;
+  // The round has to be named, or the four buttons preview the stored card —
+  // which the round's earlier grades have already moved, and which the next
+  // grade rewinds past. Unnamed, they promise intervals the round cannot reach.
+  const schedule = sectionId
+    ? session.previewTopic(sectionId, new Date(), test?.id)
+    : undefined;
+  // Once `again` has been given the round is settled at its worst, so all four
+  // buttons bring the topic back at the same moment. True, but four identical
+  // numbers read as a fault, so the bar says it in words instead.
+  const roundSettled =
+    sectionId && test ? session.roundWorst(sectionId, test.id) === 1 : false;
   // Read on the graded screen, where the grade has not been given yet — so the
   // attempt being made is not among these, and every row is an earlier one.
   const attempts = sectionId ? session.attemptsFor(sectionId) : [];
@@ -1091,6 +1101,7 @@ export function App({ content, session, storage }: Props) {
             index={qIndex}
             total={test?.questions.length ?? 0}
             schedule={schedule}
+            settled={roundSettled}
             marks={marks}
             marking={marking}
             onGrade={grade}
