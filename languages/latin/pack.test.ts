@@ -59,6 +59,68 @@ describe("the Latin profile", () => {
   });
 });
 
+describe("the paradigm axes", () => {
+  const axes = profile.paradigms!;
+
+  it("lays out every part of speech the dictionary inflects", () => {
+    expect(Object.keys(axes).sort()).toEqual(
+      ["adj", "det", "noun", "num", "pron", "verb"].sort(),
+    );
+  });
+
+  it("sets the noun out as cases against number", () => {
+    const [table] = axes.noun!;
+    expect(table!.rows.map((r) => r.label)).toEqual([
+      "Nom.", "Gen.", "Dat.", "Acc.", "Abl.", "Voc.", "Loc.",
+    ]);
+    expect(table!.columns.map((c) => c.label)).toEqual(["Singular", "Plural"]);
+  });
+
+  /**
+   * The one rule in this block that is easy to get wrong and silent when you
+   * do: a future perfect carries every tag the perfect asks for, so unless its
+   * row names its tense in full it lands under the perfect and its own row
+   * comes out empty. See `buildParadigm`.
+   */
+  it("names the future perfect in full so it does not land under the perfect", () => {
+    for (const table of axes.verb!) {
+      const rows = table.rows.map((r) => r.tags.join(","));
+      const perfect = table.rows.find((r) => r.label === "Perfect");
+      const future = table.rows.find((r) => r.label === "Future perfect");
+      if (!future) continue;
+      expect(perfect, `${table.title} has a future perfect but no perfect`).toBeDefined();
+      expect(future.tags, rows.join(" | ")).toEqual(
+        expect.arrayContaining([...perfect!.tags, "future"]),
+      );
+    }
+  });
+
+  it("gives every verb table all six persons, or the imperative's four", () => {
+    for (const table of axes.verb!) {
+      const persons = table.columns.map((c) => c.label);
+      expect(persons.length, table.title).toBe(table.title === "Imperative" ? 4 : 6);
+    }
+  });
+
+  it("is optional, so a pack that has not written one still parses", () => {
+    const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
+    delete raw.paradigms;
+    expect(parseProfile(raw).paradigms).toBeUndefined();
+  });
+
+  it("rejects an axis that is not [tags, label]", () => {
+    const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
+    raw.paradigms.noun[0].rows[0] = ["nominative"];
+    expect(() => parseProfile(raw)).toThrow(/paradigms\.noun\[0\]\.rows\[0\]/);
+  });
+
+  it("rejects a table with rows and no columns", () => {
+    const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
+    raw.paradigms.noun[0].columns = [];
+    expect(() => parseProfile(raw)).toThrow(/needs both rows and columns/);
+  });
+});
+
 describe("the shipped syllabus against the profile", () => {
   it("gives every section a family the map knows", () => {
     const known = new Set(profile.families.map((f) => f.id));

@@ -5,7 +5,7 @@ import {
   type PointerEvent as ReactPointerEvent,
 } from "react";
 import { parseBlocks, type Block, type GrammarSection, type Run } from "@lang-tutor/core";
-import { Sheet } from "../ui.js";
+import { Sheet, TableBox } from "../ui.js";
 import { profile } from "../pack.js";
 
 /** How far a finger must travel across before it counts as a page turn. */
@@ -265,38 +265,30 @@ function GrammarBlock({ block }: { block: Block }) {
 
     case "table":
       return (
-        // A seven-column paradigm cannot fit a phone, and the fix is never to
-        // reflow it — the endings lined up in a column *are* the lesson. So the
-        // table scrolls sideways inside its own box, leaving the page itself
-        // scrolling only up and down.
-        <div className="gr-tablewrap">
-          <table className="gr-table">
-            <tbody>
-              {block.rows.map((row, i) => (
-                <tr key={i} className={`gr-row--${row.kind}`}>
-                  {row.kind === "divider" ? (
-                    <td className="gr-divider" colSpan={block.columns}>
-                      <Runs runs={row.runs?.[0]} text={row.cells[0]!} />
-                    </td>
+        <TableBox>
+          {block.rows.map((row, i) => (
+            <tr key={i} className={`gr-row--${row.kind}`}>
+              {row.kind === "divider" ? (
+                <td className="gr-divider" colSpan={block.columns}>
+                  <Runs runs={row.runs?.[0]} text={row.cells[0]!} />
+                </td>
+              ) : (
+                row.cells.map((cell, j) =>
+                  row.kind === "head" ? (
+                    // The stub column is never part of a caption group.
+                    <th key={j} scope="col" colSpan={j === 0 ? 1 : (row.span ?? 1)}>
+                      <Runs runs={row.runs?.[j]} text={cell} />
+                    </th>
                   ) : (
-                    row.cells.map((cell, j) =>
-                      row.kind === "head" ? (
-                        // The stub column is never part of a caption group.
-                        <th key={j} scope="col" colSpan={j === 0 ? 1 : (row.span ?? 1)}>
-                          <Runs runs={row.runs?.[j]} text={cell} />
-                        </th>
-                      ) : (
-                        <td key={j}>
-                          <Runs runs={row.runs?.[j]} text={cell} />
-                        </td>
-                      ),
-                    )
-                  )}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+                    <td key={j}>
+                      <Runs runs={row.runs?.[j]} text={cell} />
+                    </td>
+                  ),
+                )
+              )}
+            </tr>
+          ))}
+        </TableBox>
       );
   }
 }

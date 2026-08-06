@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Repack `content/` into the four assets the web app fetches.
+ * Repack `content/` into the five assets the web app fetches.
  *
  * The CLI reads `content/` straight off disk, where a 43 MB JSON costs nothing.
  * A phone cannot pay that: `lemmas.json.gz` inflates to 42.9 MB, and parsing it
@@ -16,6 +16,13 @@
  *   tests.json.gz    all 135 test files, merged          ~275 KB gz  eager
  *   lemmas.json.gz   the distinct lemmas, as LemmaEntry[] ~285 KB gz  lazy
  *   forms.txt.gz     `form\tidx[,idx...]` per line, sorted ~700 KB gz  lazy
+ *   paradigms.txt.gz every word's tagged forms, sorted   ~2.5 MB gz  lazier
+ *
+ * `paradigms.txt.gz` is copied through rather than repacked: it is already the
+ * line-oriented, bisectable, interned shape a phone can read, because
+ * `scripts/build-paradigms.mjs` wrote it that way. It is much the largest of
+ * the five and is fetched only when a student asks a word for its table, which
+ * is why it is neither precached nor loaded with the dictionary.
  *
  * Usage: node scripts/build-web-content.mjs [--pack languages/latin] [--out apps/web/public/content]
  *
@@ -23,7 +30,7 @@
  * repacked. `--content` still points straight at a content directory.
  */
 import { gunzipSync, gzipSync } from "node:zlib";
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -135,7 +142,8 @@ function buildLemmas() {
           `folded it; check packages/core/src/normalize.ts.`,
       );
     }
-    const ids = map[form].map((entry) => {
+    const ids = [];
+    for (const entry of map[form]) {
       const key = `${entry.lemma}|${entry.pos}`;
       let id = indexOf.get(key);
       if (id === undefined) {
@@ -143,8 +151,11 @@ function buildLemmas() {
         indexOf.set(key, id);
         entries.push(entry);
       }
-      return id;
-    });
+      // Named once per form, however many entries collapsed onto it. The
+      // dictionary has two `flumen` nouns and the repack makes them one, so
+      // without this the crib offers a choice between a word and itself.
+      if (!ids.includes(id)) ids.push(id);
+    }
     lines.push(`${form}\t${ids.join(",")}`);
   }
 
@@ -157,6 +168,33 @@ function buildLemmas() {
   return { forms: lines.length, lemmas: entries.length };
 }
 
+// --- paradigms ---------------------------------------------------------------
+
+/**
+ * Copied byte for byte, and absent without complaint.
+ *
+ * A pack that has not built its paradigms is a pack whose words show their
+ * citation and no table — a feature missing, not a build broken — so this
+ * reports the gap rather than failing on it.
+ */
+function buildParadigms() {
+  const from = join(contentDir, "paradigms.txt.gz");
+  if (!existsSync(from)) {
+    console.log(`  paradigms.txt.gz  not built for this pack — words will show no table`);
+    return null;
+  }
+  const gz = readFileSync(from);
+  writeFileSync(join(outDir, "paradigms.txt.gz"), gz);
+  const text = gunzipSync(gz).toString("utf8");
+  const words = text.indexOf("\n") === -1 ? 0 : text.split("\n").length - 1;
+  const kb = (n) => `${(n / 1024).toFixed(0)} KB`;
+  console.log(
+    `  ${"paradigms.txt.gz".padEnd(16)} ${kb(Buffer.byteLength(text)).padStart(8)} raw  ->  ` +
+      `${kb(gz.length).padStart(8)} gz`,
+  );
+  return { words };
+}
+
 // --- run --------------------------------------------------------------------
 
 mkdirSync(outDir, { recursive: true });
@@ -164,7 +202,9 @@ console.log(`Repacking ${contentDir} -> ${outDir}`);
 const grammar = buildGrammar();
 const tests = buildTests();
 const lemmas = buildLemmas();
+const paradigms = buildParadigms();
 console.log(
   `\n${grammar.length} sections · ${tests.tests} tests over ${tests.sections} topics · ` +
-    `${lemmas.lemmas} lemmas over ${lemmas.forms} forms`,
+    `${lemmas.lemmas} lemmas over ${lemmas.forms} forms` +
+    (paradigms ? ` · ${paradigms.words} words with a paradigm` : ""),
 );

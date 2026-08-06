@@ -26,6 +26,7 @@ export function QuestionVocabulary({
   status,
   onToggle,
   onHold,
+  onInspect,
 }: {
   words: VocabWord[];
   open: boolean;
@@ -34,6 +35,8 @@ export function QuestionVocabulary({
   onToggle: () => void;
   /** A row held down: record the word it stands for. */
   onHold: (word: VocabWord) => void;
+  /** Double-click: look the row's word up rather than record it. */
+  onInspect: (word: VocabWord) => void;
 }) {
   const { isHeld, hold } = useHold();
   if (words.length === 0) return null;
@@ -76,6 +79,7 @@ export function QuestionVocabulary({
                 className={`crib-row${isHeld(word.form) ? " crib-row--held" : ""}`}
                 key={word.form}
                 {...hold(word.form, () => onHold(word))}
+                onDoubleClick={() => onInspect(word)}
               >
                 <span
                   className={`crib-row__english${

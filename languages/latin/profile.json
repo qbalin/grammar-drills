@@ -23,6 +23,146 @@
 
   "enclitics": ["que", "ve", "ne"],
 
+  "paradigms": {
+    "noun": [
+      {
+        "rows": [
+          ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+          ["accusative", "Acc."], ["ablative", "Abl."], ["vocative", "Voc."],
+          ["locative", "Loc."]
+        ],
+        "columns": [["singular", "Singular"], ["plural", "Plural"]]
+      }
+    ],
+    "adj": [
+      {
+        "rows": [
+          ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+          ["accusative", "Acc."], ["ablative", "Abl."], ["vocative", "Voc."]
+        ],
+        "columns": [
+          ["masculine,singular", "M. sing."], ["feminine,singular", "F. sing."],
+          ["neuter,singular", "N. sing."], ["masculine,plural", "M. plur."],
+          ["feminine,plural", "F. plur."], ["neuter,plural", "N. plur."]
+        ]
+      }
+    ],
+    "pron": [
+      {
+        "rows": [
+          ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+          ["accusative", "Acc."], ["ablative", "Abl."]
+        ],
+        "columns": [
+          ["masculine,singular", "M. sing."], ["feminine,singular", "F. sing."],
+          ["neuter,singular", "N. sing."], ["masculine,plural", "M. plur."],
+          ["feminine,plural", "F. plur."], ["neuter,plural", "N. plur."]
+        ]
+      }
+    ],
+    "det": [
+      {
+        "rows": [
+          ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+          ["accusative", "Acc."], ["ablative", "Abl."]
+        ],
+        "columns": [
+          ["masculine,singular", "M. sing."], ["feminine,singular", "F. sing."],
+          ["neuter,singular", "N. sing."], ["masculine,plural", "M. plur."],
+          ["feminine,plural", "F. plur."], ["neuter,plural", "N. plur."]
+        ]
+      }
+    ],
+    "num": [
+      {
+        "rows": [
+          ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+          ["accusative", "Acc."], ["ablative", "Abl."]
+        ],
+        "columns": [
+          ["masculine,singular", "M. sing."], ["feminine,singular", "F. sing."],
+          ["neuter,singular", "N. sing."], ["masculine,plural", "M. plur."],
+          ["feminine,plural", "F. plur."], ["neuter,plural", "N. plur."]
+        ]
+      }
+    ],
+    "verb": [
+      {
+        "title": "Indicative, active",
+        "rows": [
+          ["present,indicative,active", "Present"],
+          ["imperfect,indicative,active", "Imperfect"],
+          ["future,indicative,active", "Future"],
+          ["perfect,indicative,active", "Perfect"],
+          ["pluperfect,indicative,active", "Pluperfect"],
+          ["future,perfect,indicative,active", "Future perfect"]
+        ],
+        "columns": [
+          ["first-person,singular", "1 sing."], ["second-person,singular", "2 sing."],
+          ["third-person,singular", "3 sing."], ["first-person,plural", "1 plur."],
+          ["second-person,plural", "2 plur."], ["third-person,plural", "3 plur."]
+        ]
+      },
+      {
+        "title": "Indicative, passive",
+        "rows": [
+          ["present,indicative,passive", "Present"],
+          ["imperfect,indicative,passive", "Imperfect"],
+          ["future,indicative,passive", "Future"],
+          ["perfect,indicative,passive", "Perfect"],
+          ["pluperfect,indicative,passive", "Pluperfect"],
+          ["future,perfect,indicative,passive", "Future perfect"]
+        ],
+        "columns": [
+          ["first-person,singular", "1 sing."], ["second-person,singular", "2 sing."],
+          ["third-person,singular", "3 sing."], ["first-person,plural", "1 plur."],
+          ["second-person,plural", "2 plur."], ["third-person,plural", "3 plur."]
+        ]
+      },
+      {
+        "title": "Subjunctive, active",
+        "rows": [
+          ["present,subjunctive,active", "Present"],
+          ["imperfect,subjunctive,active", "Imperfect"],
+          ["perfect,subjunctive,active", "Perfect"],
+          ["pluperfect,subjunctive,active", "Pluperfect"]
+        ],
+        "columns": [
+          ["first-person,singular", "1 sing."], ["second-person,singular", "2 sing."],
+          ["third-person,singular", "3 sing."], ["first-person,plural", "1 plur."],
+          ["second-person,plural", "2 plur."], ["third-person,plural", "3 plur."]
+        ]
+      },
+      {
+        "title": "Subjunctive, passive",
+        "rows": [
+          ["present,subjunctive,passive", "Present"],
+          ["imperfect,subjunctive,passive", "Imperfect"],
+          ["perfect,subjunctive,passive", "Perfect"],
+          ["pluperfect,subjunctive,passive", "Pluperfect"]
+        ],
+        "columns": [
+          ["first-person,singular", "1 sing."], ["second-person,singular", "2 sing."],
+          ["third-person,singular", "3 sing."], ["first-person,plural", "1 plur."],
+          ["second-person,plural", "2 plur."], ["third-person,plural", "3 plur."]
+        ]
+      },
+      {
+        "title": "Imperative",
+        "rows": [
+          ["present,imperative,active", "Present active"],
+          ["future,imperative,active", "Future active"],
+          ["present,imperative,passive", "Present passive"],
+          ["future,imperative,passive", "Future passive"]
+        ],
+        "columns": [
+          ["second-person,singular", "2 sing."], ["third-person,singular", "3 sing."],
+          ["second-person,plural", "2 plur."], ["third-person,plural", "3 plur."]
+        ]
+      }
+    ]
+  },
+
   "families": [
     { "id": "nouns", "label": "Nouns" },
     { "id": "adj", "label": "Adjectives & adverbs" },

@@ -52,8 +52,9 @@ export default defineConfig({
       workbox: {
         // The study loop must work on a plane, so the syllabus and every test
         // are precached (~300 KB gzipped). The dictionary is deliberately not:
-        // it is three times that size and only the vocabulary feature needs it,
-        // so it is fetched on demand and kept (see runtimeCaching below).
+        // it is several times that size and only the vocabulary feature needs
+        // it, so it is fetched on demand and kept (see runtimeCaching below).
+        // The paradigms are larger again and rarer again, and go the same way.
         globPatterns: [
           "**/*.{js,css,html,svg,png,woff2}",
           "content/grammar.json.gz",
@@ -61,11 +62,11 @@ export default defineConfig({
         ],
         runtimeCaching: [
           {
-            urlPattern: /\/content\/(lemmas\.json|forms\.txt)\.gz$/,
+            urlPattern: /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt)\.gz$/,
             handler: "CacheFirst",
             options: {
               cacheName: profile.storage.dictionaryCacheName,
-              expiration: { maxEntries: 4 },
+              expiration: { maxEntries: 6 },
               cacheableResponse: { statuses: [0, 200] },
             },
           },

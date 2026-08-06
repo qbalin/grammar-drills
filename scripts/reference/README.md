@@ -52,18 +52,25 @@ python3 scripts/reference/ingest_frequency.py --lang <pack>
 node --import tsx scripts/validate-pack.mjs --pack languages/<pack> \
   --ref languages/<pack>/reference --require-ref --profile-only
 
-# 5. The pack's lemma map, then its citations, then the committed frequency
-#    list. --max-rank is how far down the frequency list to build; pass more
-#    than the list is long to take all of it, which is what a pack should ship —
-#    a lemma left out is a word the app reports as unknown.
+# 5. The pack's lemma map and its paradigms, then its citations, then the
+#    committed frequency list. --max-rank is how far down the frequency list to
+#    build; pass more than the list is long to take all of it, which is what a
+#    pack should ship — a lemma left out is a word the app reports as unknown.
 node --import tsx scripts/build-lemmas.mjs --pack languages/<pack> \
   --ref languages/<pack>/reference --max-rank 20000
+node --import tsx scripts/build-paradigms.mjs --pack languages/<pack> \
+  --ref languages/<pack>/reference
 node --import tsx languages/<pack>/citations.mjs --ref languages/<pack>/reference
 node --import tsx scripts/make-reference.mjs --pack languages/<pack> \
   --ref languages/<pack>/reference
 ```
 
-Step 5's three outputs are what gets committed. After that the pack is
+`build-paradigms` is optional and is what lets a student ask a word for its own
+table; a pack without it shows citations and no tables. It needs
+`profile.paradigms` to say how that language's forms are laid out, which is the
+one part of it nobody else can write for you.
+
+Step 5's four outputs are what gets committed. After that the pack is
 self-contained and the databases can be deleted.
 
 ## The Latin corpus

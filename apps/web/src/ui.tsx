@@ -99,6 +99,26 @@ export function Sheet({
   );
 }
 
+/**
+ * The box a paradigm is set in.
+ *
+ * A seven-column paradigm cannot fit a phone, and the fix is never to reflow
+ * it — the endings lined up in a column *are* the lesson. So the table scrolls
+ * sideways inside its own box, leaving the page itself scrolling only up and
+ * down. The class is load-bearing beyond the styling: the grammar reader's
+ * page-turn swipe refuses to start inside a `.gr-tablewrap` that has somewhere
+ * to scroll, so a finger dragged across a wide table moves the table.
+ */
+export function TableBox({ children }: { children: ReactNode }) {
+  return (
+    <div className="gr-tablewrap">
+      <table className="gr-table">
+        <tbody>{children}</tbody>
+      </table>
+    </div>
+  );
+}
+
 const GRADES: { rating: Rating; label: string }[] = [
   { rating: 1, label: "Again" },
   { rating: 2, label: "Hard" },
@@ -243,6 +263,13 @@ function emphasisClass(prefix: string, mark?: Emphasis): string {
  * answer scrolls, and a scroll that saved a vocabulary card would be worse than
  * no gesture at all. Right-click does the same thing on a desktop.
  *
+ * **Double-clicking** asks the word what it is: its citation, its gender, and
+ * its own declension or conjugation rather than the model exemplar in the book.
+ * It costs nothing to sit beside the hold, because each of a double-click's two
+ * quick presses ends in a `pointerup` well inside those 500 ms, and that is
+ * what cancels a hold. Nothing is saved and nothing is changed, so unlike the
+ * hold it needs no confirmation and no way back.
+ *
  * **Marking** is the student's own emphasis on their own record, and it is a
  * mode rather than a second gesture. The two are never live together: with
  * `onMark` the hold is not wired up at all, so the press that means "save this
@@ -259,6 +286,7 @@ export function Sentence({
   text,
   marks,
   onHold,
+  onInspect,
   onMark,
 }: {
   text: string;
@@ -266,6 +294,8 @@ export function Sentence({
   marks?: Marks;
   /** The held word, punctuation already stripped. Absent on the English. */
   onHold?: (word: string) => void;
+  /** The double-clicked word, punctuation stripped. Rides along with the hold. */
+  onInspect?: (word: string) => void;
   /** Marking mode: the tapped word's index. Suspends the hold while present. */
   onMark?: (index: number) => void;
 }) {
@@ -301,6 +331,7 @@ export function Sentence({
               className={`word${isHeld(key) ? " word--held" : ""}${emphasisClass("word", mark)}`}
               data-word={token.text}
               {...hold(key, () => onHold(token.word))}
+              onDoubleClick={onInspect ? () => onInspect(token.word) : undefined}
             >
               {token.text}
             </span>

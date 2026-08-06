@@ -10,6 +10,7 @@
  * time for the web app, which is built one language at a time.
  */
 import type { FoldSpec } from "./fold.js";
+import type { ParadigmAxes, ParadigmBlock } from "./paradigm.js";
 
 export interface Family {
   id: string;
@@ -52,6 +53,21 @@ export interface Profile {
   /** The prompt language. Selects the L1 adapter; only "en" ships today. */
   l1: { code: string; name: string };
   fold: FoldSpec;
+  /**
+   * How each part of speech's forms are laid out when a word is inspected.
+   *
+   * By `pos`, a list of tables; each axis position is `["tag,tag", "Stub"]`,
+   * matched against the feature tags the reference gives a form. A form goes
+   * in every cell whose tags it carries, most specific winning — which is why
+   * a future perfect must name its tense in full or land under the perfect,
+   * and why one dative plural serving three genders is printed under all
+   * three. Forms that fit no cell are shown under the tables, not dropped.
+   * See `buildParadigm`.
+   *
+   * Absent where a pack has not written them yet, which is a pack whose words
+   * show their citation and no table rather than a pack that fails to build.
+   */
+  paradigms?: ParadigmAxes;
   /**
    * Particles the language writes joined to the end of the word before them,
    * so `ēloquentiam` + `que` is written `ēloquentiamque` — one token to the
@@ -167,6 +183,51 @@ function oneOf<T extends string>(raw: unknown, path: string, allowed: readonly T
   return raw as T;
 }
 
+/**
+ * An axis position, written `["tag,tag", "Stub"]` because a profile is read by
+ * people and `{ "tags": ["dative", "plural"], "label": "Dat." }` twelve times
+ * over is a wall. Tags are compared as a set, so their order here is free.
+ */
+function parseAxis(raw: unknown, path: string) {
+  const pair = array(raw, path);
+  if (pair.length !== 2 || typeof pair[0] !== "string" || typeof pair[1] !== "string") {
+    throw new PackError(`${path}: expected ["tag,tag", "label"] strings`);
+  }
+  const tags = pair[0].split(",").map((t) => t.trim()).filter(Boolean);
+  if (!tags.length) throw new PackError(`${path}: names no tags`);
+  return { tags, label: pair[1] };
+}
+
+function parseParadigms(raw: unknown): ParadigmAxes {
+  const byPos = object(raw, "profile.paradigms");
+  const out: ParadigmAxes = {};
+  for (const [pos, value] of Object.entries(byPos)) {
+    const where = `profile.paradigms.${pos}`;
+    out[pos] = array(value, where).map((block, i): ParadigmBlock => {
+      const b = object(block, `${where}[${i}]`);
+      for (const key of Object.keys(b)) {
+        if (!["title", "rows", "columns"].includes(key)) {
+          throw new PackError(`${where}[${i}].${key}: unknown key`);
+        }
+      }
+      if (b.title !== undefined && typeof b.title !== "string") {
+        throw new PackError(`${where}[${i}].title: expected a string`);
+      }
+      const rows = array(b.rows, `${where}[${i}].rows`).map((r, j) =>
+        parseAxis(r, `${where}[${i}].rows[${j}]`),
+      );
+      const columns = array(b.columns, `${where}[${i}].columns`).map((c, j) =>
+        parseAxis(c, `${where}[${i}].columns[${j}]`),
+      );
+      if (!rows.length || !columns.length) {
+        throw new PackError(`${where}[${i}]: a table needs both rows and columns`);
+      }
+      return { title: b.title as string | undefined, rows, columns };
+    });
+  }
+  return out;
+}
+
 function parseFold(raw: unknown): FoldSpec {
   const f = object(raw, "fold");
   for (const key of Object.keys(f)) {
@@ -216,7 +277,7 @@ export function parseProfile(raw: unknown): Profile {
     "questions", "citationsVersion", "ui", "storage", "grammarShape", "coverage",
   ];
   /** Present or absent; a pack that predates them stays valid. */
-  const optional = ["enclitics"];
+  const optional = ["enclitics", "paradigms"];
   const allowed = [...required, ...optional];
   for (const key of Object.keys(top)) {
     if (!allowed.includes(key)) throw new PackError(`profile.${key}: unknown key`);
@@ -276,6 +337,7 @@ export function parseProfile(raw: unknown): Profile {
     }),
     l1: fields<Profile["l1"]>(top.l1, "profile.l1", { code: "string", name: "string" }),
     fold: parseFold(top.fold),
+    paradigms: top.paradigms === undefined ? undefined : parseParadigms(top.paradigms),
     enclitics:
       top.enclitics === undefined
         ? undefined

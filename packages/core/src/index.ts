@@ -38,6 +38,15 @@ export {
 } from "./families.js";
 export { parseBlocks, plainText, type Block, type Row, type Run } from "./grammar-blocks.js";
 export {
+  buildParadigm,
+  type Paradigm,
+  type ParadigmAxes,
+  type ParadigmAxis,
+  type ParadigmBlock,
+  type ParadigmTableData,
+  type TaggedForm,
+} from "./paradigm.js";
+export {
   Session,
   type Action,
   type BankedQuestion,

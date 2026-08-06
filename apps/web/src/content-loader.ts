@@ -6,6 +6,7 @@ import {
 } from "@lang-tutor/core";
 import { LemmaIndex } from "./lemma-index.js";
 import { profile } from "./pack.js";
+import { ParadigmIndex } from "./paradigm-index.js";
 
 /**
  * The web twin of `apps/cli/src/content-loader.ts`: same bundle, fetched
@@ -114,6 +115,29 @@ export function loadDictionary(): Promise<LemmaIndex> {
     throw err;
   });
   return pending;
+}
+
+let paradigms: ParadigmIndex | undefined;
+let paradigmsPending: Promise<ParadigmIndex> | undefined;
+
+/**
+ * Fetch the paradigms, at most once per page.
+ *
+ * Separate from the dictionary, and later: it is bigger than the dictionary's
+ * two files together, and only a student who double-taps a word ever wants it.
+ * Loading it beside the crib would make the common gesture pay for the rare
+ * one.
+ */
+export function loadParadigms(): Promise<ParadigmIndex> {
+  if (paradigms) return Promise.resolve(paradigms);
+  paradigmsPending ??= (async () => {
+    paradigms = new ParadigmIndex(await fetchGzipped("paradigms.txt.gz"));
+    return paradigms;
+  })().catch((err) => {
+    paradigmsPending = undefined; // as above: one bad fetch, not a dead feature
+    throw err;
+  });
+  return paradigmsPending;
 }
 
 /** True once the dictionary is in memory, so the UI can skip its spinner. */

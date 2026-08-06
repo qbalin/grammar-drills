@@ -115,6 +115,7 @@ export function Graded({
   onResume,
   onRecordWord,
   onHoldWord,
+  onInspectWord,
   onReadGrammar,
   onToggleMarking,
   onMark,
@@ -139,6 +140,8 @@ export function Graded({
   onRecordWord: () => void;
   /** A word held down in either sentence. */
   onHoldWord: (word: string) => void;
+  /** Double-click: look the word up rather than record it. */
+  onInspectWord: (word: string) => void;
   onReadGrammar: () => void;
   onToggleMarking: () => void;
   /** A word tapped while marking: which text, and the word's index in it. */
@@ -182,6 +185,7 @@ export function Graded({
                     text={submitted.trim()}
                     marks={marks.submitted}
                     onHold={onHoldWord}
+                    onInspect={onInspectWord}
                     onMark={marking ? (i) => onMark("submitted", i) : undefined}
                   />
                 ) : (
@@ -197,6 +201,7 @@ export function Graded({
                 text={question.answer}
                 marks={marks.answer}
                 onHold={onHoldWord}
+                onInspect={onInspectWord}
                 onMark={marking ? (i) => onMark("answer", i) : undefined}
               />
             </div>
