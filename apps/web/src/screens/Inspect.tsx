@@ -40,8 +40,13 @@ export function InspectSheet({
   onClose: () => void;
 }) {
   const blocks = profile.paradigms?.tables[entry.pos];
-  const paradigm =
-    forms && blocks ? buildParadigm(forms, blocks, profile.paradigms) : undefined;
+  // Laid out even when the pack declares no table for this `pos`: a Latin
+  // adverb has a comparative and a superlative, and with no blocks to claim
+  // them they fall to `other` and are listed. Passing `undefined` here instead
+  // would render nothing at all and hide forms the word really has.
+  const paradigm = forms
+    ? buildParadigm(forms, blocks ?? [], profile.paradigms)
+    : undefined;
 
   return (
     <Sheet title={entry.citation} subtitle={form} onClose={onClose}>
