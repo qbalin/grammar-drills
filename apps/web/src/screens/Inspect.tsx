@@ -20,6 +20,8 @@ export function InspectSheet({
   others,
   forms,
   loading,
+  failed,
+  onRetry,
   onPick,
   onClose,
 }: {
@@ -31,6 +33,9 @@ export function InspectSheet({
   /** This entry's tagged forms, or undefined until they arrive. */
   forms?: TaggedForm[];
   loading: boolean;
+  /** The tables could not be fetched. Not the same as a word without any. */
+  failed: boolean;
+  onRetry: () => void;
   onPick: (entry: LemmaEntry) => void;
   onClose: () => void;
 }) {
@@ -114,9 +119,20 @@ export function InspectSheet({
         </>
       )}
 
+      {/* Only the last branch may say anything about the word itself.
+          `forms` is undefined until the paradigms arrive, and stays undefined
+          if the fetch failed — reporting either as "this word does not change"
+          told a student a plain falsehood about a word that declines. */}
+      {!loading && !forms && failed && (
+        <p className="field__hint">
+          Could not load the inflection tables.{" "}
+          <button onClick={onRetry}>Try again</button>
+        </p>
+      )}
+
       {/* Indeclinable, or a word the tables were never built for. Saying so is
           better than an empty sheet that reads as a failure. */}
-      {!loading && !paradigm?.tables.length && !paradigm?.other.length && (
+      {!loading && forms && !paradigm?.tables.length && !paradigm?.other.length && (
         <p className="field__hint">
           {blocks
             ? "No inflected forms — this word does not change."

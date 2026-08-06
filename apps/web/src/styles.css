@@ -1389,6 +1389,15 @@ span.status__title {
   margin-top: 0.3rem;
 }
 
+/* A hint that offers a way out — "could not load … try again" — carries the
+   action inline rather than growing a button row for one word. */
+.field__hint button {
+  font: inherit;
+  color: var(--gold);
+  text-decoration: underline;
+  padding: 0;
+}
+
 .section-title {
   font-size: 0.72rem;
   letter-spacing: 0.1em;
