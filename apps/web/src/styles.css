@@ -923,8 +923,19 @@ span.status__title {
   padding-bottom: 0.35rem;
 }
 
-/* The stub column names the row; it is furniture, not the lesson. */
-.gr-row--body td:first-child {
+/* The stub column names the row; it is furniture, not the lesson. The
+   inspected word's own table writes its stubs as `th scope="row"` — the same
+   furniture, said properly to a screen reader — so it is dressed to match
+   rather than taking the column-heading treatment above. */
+.gr-row--body td:first-child,
+.gr-row--body th[scope="row"] {
+  font-family: var(--serif);
+  font-size: inherit;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  border-bottom: none;
+  padding-bottom: 0.22rem;
   color: var(--text-dim);
   padding-right: 1.1rem;
 }
@@ -1510,4 +1521,39 @@ span.status__title {
   height: 100%;
   pointer-events: none;
   z-index: 40;
+}
+
+/*
+ * The inspected word's other readings.
+ *
+ * `manibus` is both the noun *manus* and the adjective *mānis*, and the sheet
+ * opens on whichever is commoner. The others sit here as chips rather than
+ * behind a picker: the sheet is a look, not a decision, and swapping to the
+ * other reading should cost the same as having opened it.
+ */
+.inspect__others {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+}
+
+.inspect__others .field__hint {
+  margin: 0;
+  width: 100%;
+}
+
+.chip {
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text-dim);
+}
+
+.chip:active {
+  color: var(--text);
+  border-color: var(--gold-dim);
 }

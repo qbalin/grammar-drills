@@ -24,13 +24,25 @@ import { SyncingStorage } from "./storage/sync.js";
 // the vocabulary flow can be driven without a network — except where the point
 // is what happens when the fetch cannot happen at all.
 const dictionary = { available: true };
-vi.mock("./content-loader.js", () => ({
-  loadDictionary: vi.fn(async () => {
-    if (!dictionary.available) throw new Error("offline");
-    return {} as never;
-  }),
-  dictionaryReady: () => dictionary.available,
-}));
+// The paradigms are a second, later fetch — the file `build-paradigms.mjs`
+// writes, small enough to spell out: a header of interned tag signatures, then
+// one tab-separated line per `lemma|pos`.
+const PARADIGMS = [
+  "nominative,singular|genitive,singular|nominative,plural",
+  "manus|noun\t0:manus\t1:manūs\t2:manūs",
+  "rex|noun\t0:rēx\t1:rēgis",
+].join("\n");
+vi.mock("./content-loader.js", async () => {
+  const { ParadigmIndex } = await import("./paradigm-index.js");
+  return {
+    loadDictionary: vi.fn(async () => {
+      if (!dictionary.available) throw new Error("offline");
+      return {} as never;
+    }),
+    dictionaryReady: () => dictionary.available,
+    loadParadigms: vi.fn(async () => new ParadigmIndex(PARADIGMS)),
+  };
+});
 
 /**
  * The web port of `apps/cli/src/app.test.tsx`. The scenarios are the CLI's,
@@ -162,6 +174,15 @@ async function holdWord(word: string, then?: () => void) {
   fireEvent.pointerDown(span, { clientX: 20, clientY: 20 });
   then?.();
   await passTime(700);
+}
+
+/** Double-click a word, which asks what it is rather than recording it. */
+async function inspectWord(word: string) {
+  const span = wordSpan(word);
+  if (!span) throw new Error(`no word “${word}” on screen`);
+  await act(async () => {
+    fireEvent.doubleClick(span);
+  });
 }
 
 /** Hold down the crib row that carries this text, long enough to record it. */
@@ -853,6 +874,84 @@ describe("vocabulary", () => {
 
     await user.click(screen.getByRole("button", { name: /Good/ }));
     expect(session.vocabCard("v-rex")?.fsrs.reps).toBe(1);
+  });
+});
+
+describe("looking a word up", () => {
+  it("shows the word's own table, not the model in the book", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.type(screen.getByLabelText("Your Latin"), "regem");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    await inspectWord("regem");
+
+    const sheet = screen.getByRole("dialog", { name: "rex, rēgis" });
+    expect(within(sheet).getByText("king")).toBeDefined();
+    // The forms as this word inflects them, in the cells the pack declared —
+    // the pack being the real one, since the app is built one language at a
+    // time and `profile` is compiled in.
+    expect(within(sheet).getByRole("columnheader", { name: "Singular" })).toBeDefined();
+    expect(within(sheet).getByRole("rowheader", { name: "Gen." })).toBeDefined();
+    expect(within(sheet).getByText("rēgis")).toBeDefined();
+  });
+
+  it("says what it knows about a word whose forms it has not got", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    // `rosa` is in the dictionary and not in the paradigm file — the ordinary
+    // case for a rarer word. The citation and the gloss are still the answer to
+    // most of what was asked, so the sheet opens rather than nothing happening.
+    await inspectWord("rosam");
+    const sheet = screen.getByRole("dialog", { name: "rosa, rosae (f)" });
+    expect(within(sheet).getByText("rose")).toBeDefined();
+    expect(within(sheet).queryByRole("table")).toBeNull();
+  });
+
+  // Unlike the hold, nothing here is being saved, so nothing here asks first:
+  // the commonest reading opens and the others are one tap away.
+  it("opens an ambiguous form on its commonest reading, with the rest beside it", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.type(screen.getByLabelText("Your Latin"), "manibus");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    await inspectWord("manibus");
+    expect(screen.queryByRole("dialog", { name: /Which word/ })).toBeNull();
+    expect(screen.getByRole("dialog", { name: "manus, manūs (f)" })).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: "mānis, māne" }));
+    const swapped = screen.getByRole("dialog", { name: "mānis, māne" });
+    // And back the way it came, by the same tap.
+    expect(within(swapped).getByRole("button", { name: "manus, manūs (f)" })).toBeDefined();
+  });
+
+  it("does nothing at all for a word the dictionary has not got", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.type(screen.getByLabelText("Your Latin"), "Puella");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    // Not the write-a-card sheet the hold offers: this gesture was a question,
+    // and there is no answer to give.
+    await user.click(screen.getByRole("button", { name: "Close" })); // the book
+    await inspectWord("Puella");
+    expect(screen.queryByRole("dialog")).toBeNull();
+  });
+
+  it("leaves the hold alone — the same word still records", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await user.type(screen.getByLabelText("Your Latin"), "regem");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    await inspectWord("regem");
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    await holdWord("regem");
+
+    expect(session.vocabCard("v-rex")?.citation).toBe("rex, rēgis");
   });
 });
 

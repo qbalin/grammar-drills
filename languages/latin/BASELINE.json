@@ -8,7 +8,7 @@
     "threshold. Regenerate with:",
     "  node --import tsx scripts/validate-pack.mjs --built apps/web/public/content"
   ],
-  "measuredAt": "2026-07-30",
+  "measuredAt": "2026-08-05",
   "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
 
   "grammar": {
@@ -18,14 +18,21 @@
       "nouns": 9, "adj": 5, "pron": 9, "verb-forms": 17, "particles": 3,
       "noun-syntax": 18, "adj-pron-syntax": 13, "verb-syntax": 28, "style": 12
     },
-    "textChars": { "min": 147, "median": 1773, "p90": 6008, "max": 17786 },
+    "textChars": { "min": 147, "median": 1803, "p90": 6010, "max": 17790 },
     "sourceSections": 376,
     "assigned": 325,
     "dropped": { "part-not-teachable": 39, "structural-heading": 12 },
-    "rowShapedLines": 1911,
-    "tableRowsRecovered": 2103,
-    "romanPoints": 10,
+    "rowShapedLines": 1921,
+    "tableRowsRecovered": 2098,
+    "romanPoints": 9,
     "_note": [
+      "Six of these numbers were already stale when the 2026-08-05 rebuild",
+      "remeasured them — median 1773 -> 1803, p90 6008 -> 6010, max 17786 ->",
+      "17790, rowShapedLines 1911 -> 1921, tableRowsRecovered 2103 -> 2098,",
+      "romanPoints 10 -> 9. Nothing in that rebuild touches the grammar, and",
+      "content/ and the built bundle report the same figures, so this is the",
+      "record catching up with a parse it had already been given.",
+      "",
       "The parser moved from Gutenberg's plain text to its HTML on 2026-07-30.",
       "Every number here moved with it, and none of the movements is a loss:",
       "",
@@ -82,26 +89,58 @@
   },
 
   "dictionary": {
-    "formKeys": 242746,
-    "distinctLemmas": 6520,
-    "rankRange": [1, 7000],
+    "formKeys": 491398,
+    "distinctLemmas": 19292,
+    "rankRange": [1, 19342],
+    "nounLemmas": 5680,
+    "nounLemmasWithGender": 5635,
+    "nounGenderPct": 99.2,
+    "meanGlossChars": 72,
     "refEntries": 885996,
     "refForms": 2492884,
     "refRankedLemmas": 19342,
     "foldMatchesRefNormOnSample": 40000,
-    "builderReproducesShippedKeysPct": 99.99,
+    "packResolvedPct": 99.3,
+    "packBandLemmasUsed": 2480,
     "_note": [
-      "lemmas.json.gz predates scripts/build-lemmas.mjs and is NOT regenerated:",
-      "its citations carry the pack's citations.mjs rewrite. The builder is run",
-      "in --verify mode only; it reproduces 242,733 of 242,746 shipped keys and",
-      "would add 3,888 more. That difference is documented drift, not a defect."
+      "Rebuilt on 2026-08-05, and this is the first record of a map that",
+      "scripts/build-lemmas.mjs actually produced. The old note here said the",
+      "file predated the builder and was run in --verify mode only; that is no",
+      "longer true, so the drift it documented is gone.",
+      "",
+      "Three things moved at once:",
+      "",
+      "formKeys 353,557 -> 491,398. --max-rank went from 12,000 to 20,000, which",
+      "is past the end of a 19,342-long frequency list: the map now holds every",
+      "lemma the list ranks. 429 of them the dictionary has no entry for and",
+      "legitimately miss. Built with --merge, which kept exactly one key the",
+      "join now drops — `post scriptum`, which the frequency list calls a noun",
+      "and the dictionary calls a phrase.",
+      "",
+      "nounGenderPct 43.2 -> 99.2. genderOf used to read sense tags only, and",
+      "wiktextract writes a noun's gender on the headword row (tagged",
+      "`canonical`) far more often than on a sense. Reading both is the fix; the",
+      "ingest already stored the rows. This is why citations now print",
+      "`rex, rēgis (m)` where they printed `rex, rēgis`, and why",
+      "profile.citationsVersion went 3 -> 4 to catch saved cards up.",
+      "",
+      "meanGlossChars 67 -> 72, from raising glossOf's sense cap 3 -> 6.",
+      "",
+      "packResolvedPct is C5 answered from what the pack ships, which is what a",
+      "student meets and what CI can check; it was 98.4%. The --ref figures in",
+      "the questions block above did not move, because the dictionary did not."
     ]
   },
 
   "bundle": {
-    "grammarJsonGz": "119 KB",
-    "testsJsonGz": "183 KB",
-    "lemmasJsonGz": "291 KB",
-    "formsTxtGz": "619 KB"
+    "grammarJsonGz": "129 KB",
+    "testsJsonGz": "298 KB",
+    "lemmasJsonGz": "842 KB",
+    "formsTxtGz": "1359 KB",
+    "_note": [
+      "The two dictionary files grew with the map — 291 -> 842 KB and 619 ->",
+      "1359 KB — and both are fetched on demand rather than precached, so what",
+      "the study loop costs on a plane is unchanged."
+    ]
   }
 }

@@ -42,6 +42,7 @@ import { writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { join } from "node:path";
 import { compileFold } from "@lang-tutor/core";
+import { genderOf, glossOf, tagValue } from "./lib/lemma-fields.mjs";
 import { loadLemmas, loadProfile, packDir } from "./lib/pack.mjs";
 import { openReference, requireDictionary } from "./lib/reference.mjs";
 
@@ -76,48 +77,6 @@ const ARTIFACT = /[-+]/;
 // and a word nobody writes is not worth the bytes on a phone.
 const ranked = ref.ranked(MAX_RANK);
 
-/**
- * The first few senses, joined. A whole Wiktionary entry is far too much to put
- * under a word in a crib, and the first senses are the ones a reader wants.
- */
-function glossOf(data) {
-  try {
-    const senses = JSON.parse(data).senses ?? [];
-    return senses
-      .map((s) => s.gloss)
-      .filter(Boolean)
-      .slice(0, 3)
-      .join("; ");
-  } catch {
-    return "";
-  }
-}
-
-function tagValue(data, prefix) {
-  try {
-    for (const sense of JSON.parse(data).senses ?? []) {
-      for (const tag of sense.tags ?? []) {
-        if (tag.startsWith(prefix)) return tag.slice(prefix.length);
-      }
-    }
-  } catch {
-    /* a malformed entry simply has no tags */
-  }
-  return undefined;
-}
-
-const GENDERS = ["masculine", "feminine", "neuter", "common"];
-function genderOf(data) {
-  try {
-    for (const sense of JSON.parse(data).senses ?? []) {
-      for (const tag of sense.tags ?? []) if (GENDERS.includes(tag)) return tag;
-    }
-  } catch {
-    /* as above */
-  }
-  return undefined;
-}
-
 const map = Object.create(null);
 let lemmas = 0;
 let missing = 0;
@@ -130,6 +89,9 @@ for (const row of ranked) {
   }
   lemmas++;
   for (const entry of entries) {
+    // Read once and used twice: the forms are where the map's keys come from,
+    // and the headword row among them is where the gender is written.
+    const rows = ref.formsFor(entry.id);
     const record = {
       lemma: entry.word,
       // Plain headword; the pack's citations.mjs makes it a real citation.
@@ -138,14 +100,14 @@ for (const row of ranked) {
       pos: entry.pos,
       rank: row.rank,
     };
-    const gender = genderOf(entry.data);
+    const gender = genderOf(entry.data, rows);
     if (gender) record.gender = gender;
     const declension = tagValue(entry.data, "declension-");
     if (declension) record.declension = declension;
 
     // The headword itself is a form: a lemma with no inflection table still
     // has to be findable by the word the student typed.
-    const forms = new Set([entry.word, ...ref.formsFor(entry.id).map((f) => f.form)]);
+    const forms = new Set([entry.word, ...rows.map((f) => f.form)]);
     for (const form of forms) {
       const key = fold(form);
       if (!key) continue;

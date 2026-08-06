@@ -1,4 +1,5 @@
 import type { LemmaEntry, LemmaLookup } from "@lang-tutor/core";
+import { bisect } from "./bisect.js";
 import { fold } from "./pack.js";
 
 /**
@@ -25,44 +26,11 @@ export class LemmaIndex implements LemmaLookup {
   lookup(form: string): LemmaEntry[] {
     const key = fold(form);
     if (key === "") return [];
-    const line = this.find(key);
+    const line = bisect(this.index, key);
     if (line === null) return [];
     return line
       .split(",")
       .map((n) => this.entries[Number(n)])
       .filter((e): e is LemmaEntry => e !== undefined);
-  }
-
-  /**
-   * Bisect for `key`, returning the text after its tab, or null.
-   *
-   * The window `[lo, hi)` always begins at a line boundary. A probe lands
-   * anywhere inside it, backs up to the start of its line — clamping to `lo`,
-   * since that back-up can cross out of the window — and compares. Whichever
-   * way the comparison goes, the window shrinks: `lo` moves past the end of the
-   * probed line, or `hi` moves to its start.
-   *
-   * Comparison is `<` on JS strings, which is code-unit order — exactly what
-   * `Array.sort()` used to write the file. A locale-aware collation here would
-   * silently miss entries.
-   */
-  private find(key: string): string | null {
-    let lo = 0;
-    let hi = this.index.length;
-    while (lo < hi) {
-      const mid = (lo + hi) >>> 1;
-      const start = Math.max(lo, this.index.lastIndexOf("\n", mid) + 1);
-      const eol = this.index.indexOf("\n", start);
-      const end = eol === -1 ? this.index.length : eol;
-      const tab = this.index.indexOf("\t", start);
-      const split = tab === -1 || tab > end ? end : tab;
-      const form = this.index.slice(start, split);
-      if (form === key) {
-        return split === end ? "" : this.index.slice(split + 1, end);
-      }
-      if (form < key) lo = end + 1;
-      else hi = start;
-    }
-    return null;
   }
 }

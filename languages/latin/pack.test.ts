@@ -8,6 +8,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { checkConfetti } from "../../scripts/lib/confetti.mjs";
+import { genderOf, glossOf, tagValue } from "../../scripts/lib/lemma-fields.mjs";
 import { readFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { join } from "node:path";
@@ -55,6 +56,68 @@ describe("the Latin profile", () => {
     const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
     raw.fallbackFamily = "syntax";
     expect(() => parseProfile(raw)).toThrow(/fallbackFamily/);
+  });
+});
+
+describe("the paradigm axes", () => {
+  const axes = profile.paradigms!;
+
+  it("lays out every part of speech the dictionary inflects", () => {
+    expect(Object.keys(axes).sort()).toEqual(
+      ["adj", "det", "noun", "num", "pron", "verb"].sort(),
+    );
+  });
+
+  it("sets the noun out as cases against number", () => {
+    const [table] = axes.noun!;
+    expect(table!.rows.map((r) => r.label)).toEqual([
+      "Nom.", "Gen.", "Dat.", "Acc.", "Abl.", "Voc.", "Loc.",
+    ]);
+    expect(table!.columns.map((c) => c.label)).toEqual(["Singular", "Plural"]);
+  });
+
+  /**
+   * The one rule in this block that is easy to get wrong and silent when you
+   * do: a future perfect carries every tag the perfect asks for, so unless its
+   * row names its tense in full it lands under the perfect and its own row
+   * comes out empty. See `buildParadigm`.
+   */
+  it("names the future perfect in full so it does not land under the perfect", () => {
+    for (const table of axes.verb!) {
+      const rows = table.rows.map((r) => r.tags.join(","));
+      const perfect = table.rows.find((r) => r.label === "Perfect");
+      const future = table.rows.find((r) => r.label === "Future perfect");
+      if (!future) continue;
+      expect(perfect, `${table.title} has a future perfect but no perfect`).toBeDefined();
+      expect(future.tags, rows.join(" | ")).toEqual(
+        expect.arrayContaining([...perfect!.tags, "future"]),
+      );
+    }
+  });
+
+  it("gives every verb table all six persons, or the imperative's four", () => {
+    for (const table of axes.verb!) {
+      const persons = table.columns.map((c) => c.label);
+      expect(persons.length, table.title).toBe(table.title === "Imperative" ? 4 : 6);
+    }
+  });
+
+  it("is optional, so a pack that has not written one still parses", () => {
+    const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
+    delete raw.paradigms;
+    expect(parseProfile(raw).paradigms).toBeUndefined();
+  });
+
+  it("rejects an axis that is not [tags, label]", () => {
+    const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
+    raw.paradigms.noun[0].rows[0] = ["nominative"];
+    expect(() => parseProfile(raw)).toThrow(/paradigms\.noun\[0\]\.rows\[0\]/);
+  });
+
+  it("rejects a table with rows and no columns", () => {
+    const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
+    raw.paradigms.noun[0].columns = [];
+    expect(() => parseProfile(raw)).toThrow(/needs both rows and columns/);
   });
 });
 
@@ -153,6 +216,67 @@ describe("the fold against the shipped dictionary", () => {
     ];
     const missed = written.filter((w) => !map[fold(w)]);
     expect(missed).toEqual([]);
+  });
+});
+
+/**
+ * What `build-lemmas.mjs` reads out of one dictionary entry.
+ *
+ * The builder itself needs a 474 MB database and runs once per pack, so it is
+ * not a thing anyone can test. These three are the part of it with rules worth
+ * pinning down, and they are pure. The `data` blobs below are shaped exactly
+ * like the ones `ingest_dictionary.py` writes.
+ */
+describe("the fields a lemma record is made of", () => {
+  const entry = (...senses: unknown[]) => JSON.stringify({ senses });
+
+  it("keeps six senses, not three", () => {
+    const many = entry(...Array.from({ length: 9 }, (_, i) => ({ gloss: `sense ${i}` })));
+    expect(glossOf(many)).toBe(
+      "sense 0; sense 1; sense 2; sense 3; sense 4; sense 5",
+    );
+  });
+
+  it("skips senses with no gloss rather than joining a gap", () => {
+    expect(glossOf(entry({ gloss: "a" }, { tags: ["obsolete"] }, { gloss: "b" }))).toBe("a; b");
+  });
+
+  it("treats a malformed entry as one with nothing to say", () => {
+    expect(glossOf("{not json")).toBe("");
+    expect(genderOf("{not json")).toBeUndefined();
+    expect(tagValue("{not json", "declension-")).toBeUndefined();
+  });
+
+  // The bug this pack shipped with: gender was read from the senses alone, and
+  // wiktextract writes it on the headword row far more often than on a sense.
+  // `rex` is the real case — its senses carry a declension and no gender.
+  it("takes a gender from the headword row when no sense carries one", () => {
+    const rex = entry({ gloss: "king", tags: ["declension-3"] });
+    expect(genderOf(rex)).toBeUndefined();
+    expect(
+      genderOf(rex, [
+        { form: "rēx", tags: "canonical,masculine" },
+        { form: "rēgis", tags: "genitive,singular" },
+      ]),
+    ).toBe("masculine");
+  });
+
+  it("prefers the sense's gender to the headword row's", () => {
+    const both = entry({ gloss: "hand", tags: ["feminine"] });
+    expect(genderOf(both, [{ form: "manus", tags: "canonical,masculine" }])).toBe("feminine");
+  });
+
+  it("ignores a gender on a row that is not the headword", () => {
+    // An adjective's inflected rows are tagged by gender; that is agreement,
+    // not the lemma's own gender, and reading it would give every adjective one.
+    expect(genderOf(entry({ gloss: "good" }), [
+      { form: "bona", tags: "feminine,nominative,singular" },
+      { form: "bonum", tags: "neuter,nominative,singular" },
+    ])).toBeUndefined();
+  });
+
+  it("reads a declension off the sense tags", () => {
+    expect(tagValue(entry({ gloss: "girl", tags: ["declension-1"] }), "declension-")).toBe("1");
   });
 });
 

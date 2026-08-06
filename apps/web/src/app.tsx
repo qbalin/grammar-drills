@@ -13,7 +13,8 @@ import {
   type TopicProgress,
   type VocabWord,
 } from "@lang-tutor/core";
-import { dictionaryReady, loadDictionary } from "./content-loader.js";
+import { dictionaryReady, loadDictionary, loadParadigms } from "./content-loader.js";
+import type { ParadigmIndex } from "./paradigm-index.js";
 import { useConfetti } from "./confetti/Confetti.js";
 import { profile } from "./pack.js";
 import type { SyncState, SyncConfig } from "./storage/sync.js";
@@ -26,6 +27,7 @@ import {
 import { Sheet, Toast, ago, cycleEmphasis } from "./ui.js";
 import { Answering, Graded, Practised, Rest, VocabReview } from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
+import { InspectSheet } from "./screens/Inspect.js";
 import {
   AttemptTrail,
   EarlierAnswers,
@@ -96,6 +98,12 @@ type Overlay =
   | { t: "vocab-pick"; form: string; candidates: LemmaEntry[] }
   /** A word the dictionary has not got, being written out by hand. */
   | { t: "vocab-new"; form: string }
+  /**
+   * A word double-clicked to be looked at. `entry` is the reading being shown
+   * and `others` the rest, tappable — a look is not a decision, so an
+   * ambiguous form opens on its commonest reading rather than on a picker.
+   */
+  | { t: "inspect"; form: string; entry: LemmaEntry; others: LemmaEntry[] }
   | { t: "settings" }
   | { t: "conflict"; remote: Progress };
 
@@ -159,6 +167,8 @@ export function App({ content, session, storage }: Props) {
   const [toast, setToast] = useState<Flash | null>(null);
   const [dictLoading, setDictLoading] = useState(false);
   const [dictFailed, setDictFailed] = useState(false);
+  const [paradigms, setParadigms] = useState<ParadigmIndex>();
+  const [paradigmsLoading, setParadigmsLoading] = useState(false);
   const [showVocab, setShowVocab] = useState(false); // the question's word list
   const [showTrail, setShowTrail] = useState(false); // this topic's earlier answers
   const [syncState, setSyncState] = useState<SyncState>(storage.currentState());
@@ -614,6 +624,24 @@ export function App({ content, session, storage }: Props) {
       .finally(() => setDictLoading(false));
   }, [save, session]);
 
+  /**
+   * Fetch the paradigms if this device has not got them yet.
+   *
+   * Kept apart from the dictionary and asked for later: it is larger than the
+   * dictionary's two files together and only this one gesture wants it, so the
+   * crib is not made to pay for a table nobody opened. A failure is silent —
+   * the sheet still has the citation, the gloss and the gender, which is most
+   * of what was asked.
+   */
+  const ensureParadigms = useCallback(() => {
+    if (paradigms) return;
+    setParadigmsLoading(true);
+    void loadParadigms()
+      .then(setParadigms)
+      .catch(() => {})
+      .finally(() => setParadigmsLoading(false));
+  }, [paradigms]);
+
   const openVocab = (prefill?: string, auto = false) => {
     setOverlay({ t: "vocab-input", prefill, auto });
     ensureDictionary();
@@ -668,6 +696,30 @@ export function App({ content, session, storage }: Props) {
   };
 
   /**
+   * A word double-clicked, to be looked at rather than saved.
+   *
+   * Nothing here commits anything, so nothing here asks. A form the dictionary
+   * has not got opens no sheet at all: an inspection with nothing to show is
+   * more confusing than a gesture that quietly did nothing, and the hold is
+   * still there for a word worth writing out by hand.
+   */
+  const inspectWord = (word: string) => {
+    ensureParadigms();
+    const open = () => {
+      const [entry, ...others] = content.lookup(word);
+      if (!entry) return;
+      setOverlay({ t: "inspect", form: word.trim(), entry, others });
+    };
+    if (dictionaryReady()) return open();
+    // Nothing to look up against yet. `content.lookup` is synchronous and
+    // would come back empty, so the first double-click on a fresh device
+    // would quietly do nothing — which is indistinguishable from the gesture
+    // not existing. Wait for the download this one time instead.
+    ensureDictionary();
+    void loadDictionary().then(open).catch(() => {});
+  };
+
+  /**
    * A word tapped while marking the question in hand.
    *
    * It only reaches the file when the grade does — the attempt does not exist
@@ -707,6 +759,17 @@ export function App({ content, session, storage }: Props) {
    */
   const holdCribWord = (word: VocabWord) =>
     word.entry ? saveWord(word.entry) : holdWord(word.form);
+
+  /**
+   * A row double-clicked in the crib. Same reasoning as the hold above: the
+   * row is already the answer to "which word is this", so it opens on its own
+   * entry with the readings it set aside offered beside it.
+   */
+  const inspectCribWord = (word: VocabWord) => {
+    if (!word.entry) return;
+    ensureParadigms();
+    setOverlay({ t: "inspect", form: word.form, entry: word.entry, others: word.others });
+  };
 
   const saveWord = (entry: LemmaEntry) => {
     const id = session.recordVocab(entry);
@@ -1009,6 +1072,7 @@ export function App({ content, session, storage }: Props) {
                 status={dictStatus}
                 onToggle={toggleVocab}
                 onHold={holdCribWord}
+                onInspect={inspectCribWord}
               />
             }
           />
@@ -1028,6 +1092,7 @@ export function App({ content, session, storage }: Props) {
             onResume={resumeWriting}
             onRecordWord={() => openVocab()}
             onHoldWord={holdWord}
+            onInspectWord={inspectWord}
             onReadGrammar={() =>
               sectionId && setOverlay({ t: "grammar", sectionId })
             }
@@ -1040,6 +1105,7 @@ export function App({ content, session, storage }: Props) {
                 status={dictStatus}
                 onToggle={toggleVocab}
                 onHold={holdCribWord}
+                onInspect={inspectCribWord}
               />
             }
             history={
@@ -1324,6 +1390,27 @@ export function App({ content, session, storage }: Props) {
           form={overlay.form}
           candidates={overlay.candidates}
           onPick={saveWord}
+          onClose={() => setOverlay(null)}
+        />
+      )}
+
+      {overlay?.t === "inspect" && (
+        <InspectSheet
+          form={overlay.form}
+          entry={overlay.entry}
+          others={overlay.others}
+          forms={paradigms?.formsFor(overlay.entry.lemma, overlay.entry.pos)}
+          loading={paradigmsLoading}
+          // Switching readings keeps the one showing among the others, so the
+          // way back is the same tap that got here.
+          onPick={(entry) =>
+            setOverlay({
+              t: "inspect",
+              form: overlay.form,
+              entry,
+              others: [overlay.entry, ...overlay.others.filter((o) => o !== entry)],
+            })
+          }
           onClose={() => setOverlay(null)}
         />
       )}

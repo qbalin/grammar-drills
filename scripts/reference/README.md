@@ -40,7 +40,7 @@ python3 scripts/reference/ingest_dictionary.py --lang old-english --kaikki-name 
 
 # 2. A corpus. Plain text, one work per file — Project Gutenberg is the usual
 #    source. What goes in here decides what the pack considers common, so it
-#    should be the kind of language the pack teaches.
+#    should be the kind of language the pack teaches. Latin's is listed below.
 mkdir -p languages/<pack>/reference/texts
 cp ~/downloads/*.txt languages/<pack>/reference/texts/
 
@@ -52,16 +52,56 @@ python3 scripts/reference/ingest_frequency.py --lang <pack>
 node --import tsx scripts/validate-pack.mjs --pack languages/<pack> \
   --ref languages/<pack>/reference --require-ref --profile-only
 
-# 5. The pack's lemma map, then its citations, then the committed frequency list.
+# 5. The pack's lemma map and its paradigms, then its citations, then the
+#    committed frequency list. --max-rank is how far down the frequency list to
+#    build; pass more than the list is long to take all of it, which is what a
+#    pack should ship — a lemma left out is a word the app reports as unknown.
 node --import tsx scripts/build-lemmas.mjs --pack languages/<pack> \
-  --ref languages/<pack>/reference --max-rank 12000
+  --ref languages/<pack>/reference --max-rank 20000
+node --import tsx scripts/build-paradigms.mjs --pack languages/<pack> \
+  --ref languages/<pack>/reference
 node --import tsx languages/<pack>/citations.mjs --ref languages/<pack>/reference
 node --import tsx scripts/make-reference.mjs --pack languages/<pack> \
   --ref languages/<pack>/reference
 ```
 
-Step 5's three outputs are what gets committed. After that the pack is
+`build-paradigms` is optional and is what lets a student ask a word for its own
+table; a pack without it shows citations and no tables. It needs
+`profile.paradigms` to say how that language's forms are laid out, which is the
+one part of it nobody else can write for you.
+
+Step 5's four outputs are what gets committed. After that the pack is
 self-contained and the databases can be deleted.
+
+## The Latin corpus
+
+`frequency.tsv.gz` is committed, so nothing in the ordinary run of things needs
+this. It is here because a frequency list nobody can reproduce is a set of
+numbers on trust, and step 3 above is the step a reader cannot repeat without
+knowing what went into it.
+
+Seven works, 3.4 MB of plain text, one file each:
+
+| file | work | source |
+|---|---|---|
+| `apicius-de-re-coquinaria.txt` | Apicius, *De re coquinaria* | Project Gutenberg [#16439](https://www.gutenberg.org/ebooks/16439) |
+| `augustine-confessiones.txt` | Augustine, *Confessiones* | Project Gutenberg [#33849](https://www.gutenberg.org/ebooks/33849) |
+| `caesar-de-bello-gallico.txt` | Caesar, *De bello Gallico* I–IV | Project Gutenberg [#218](https://www.gutenberg.org/ebooks/218) |
+| `catullus-carmina.txt` | Catullus, *Carmina* | Project Gutenberg [#23294](https://www.gutenberg.org/ebooks/23294) |
+| `cicero-orationes.txt` | Cicero, *Orationes* | Project Gutenberg [#226](https://www.gutenberg.org/ebooks/226) |
+| `ovid-opera.txt` | Ovid, *Metamorphoses* and others | a public plain-text edition |
+| `seneca-opera.txt` | Seneca, *Epistulae morales* and others | a public plain-text edition |
+
+The Gutenberg files are used as downloaded — `ingest_frequency.py` strips the
+licence boilerplate itself (`START OF THE PROJECT GUTENBERG EBOOK` … `END OF`),
+so trimming them by hand would only make the corpus harder to check. The last
+two carry no such header and are the two whose exact edition is not recoverable
+from the file; the ranks are not delicate about it, since a lemma's rank is
+decided by its share across the whole corpus and these are two works of seven.
+
+Anyone rebuilding this should expect the ranks to move a little, and everything
+downstream of them with it. `make-reference.mjs --check` is how you tell whether
+what you built is still the file the repo committed.
 
 `ADDING_A_LANGUAGE.md` is the full playbook; Appendix A specifies the schema
 these must produce, which matters if you build a dictionary some other way.
