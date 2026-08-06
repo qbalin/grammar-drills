@@ -44,6 +44,7 @@ export {
   type ParadigmAxis,
   type ParadigmBlock,
   type ParadigmTableData,
+  type ParadigmVariety,
   type TaggedForm,
 } from "./paradigm.js";
 export {

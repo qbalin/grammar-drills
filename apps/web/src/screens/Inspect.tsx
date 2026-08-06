@@ -34,8 +34,9 @@ export function InspectSheet({
   onPick: (entry: LemmaEntry) => void;
   onClose: () => void;
 }) {
-  const blocks = profile.paradigms?.[entry.pos];
-  const paradigm = forms && blocks ? buildParadigm(forms, blocks) : undefined;
+  const blocks = profile.paradigms?.tables[entry.pos];
+  const paradigm =
+    forms && blocks ? buildParadigm(forms, blocks, profile.paradigms) : undefined;
 
   return (
     <Sheet title={entry.citation} subtitle={form} onClose={onClose}>

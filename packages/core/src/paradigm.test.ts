@@ -41,12 +41,12 @@ describe("laying a word's forms out", () => {
     ]);
   });
 
-  // Most nouns have no locative, and an empty row reads as a gap in the word
-  // rather than a gap in the language.
-  it("drops a row nothing landed in, and keeps the columns whole", () => {
+  // Most Latin nouns have no locative and most Greek words are never written
+  // in the dual; an empty line reads as a gap in the word, not the language.
+  it("drops a row and a column nothing landed in", () => {
     const { tables } = buildParadigm([form("domī", "locative", "singular")], [CASES]);
-    expect(tables[0]!.rows.map((r) => r.label)).toEqual(["Loc."]);
-    expect(tables[0]!.columns).toEqual(["Sing.", "Plur."]);
+    expect(tables[0]!.rows).toEqual([{ label: "Loc.", cells: [["domī"]] }]);
+    expect(tables[0]!.columns).toEqual(["Sing."]);
   });
 
   // One dative plural serving three genders is three equally good claims, and
@@ -114,7 +114,56 @@ describe("laying a word's forms out", () => {
       [form("rēgēs", "nominative", "plural"), form("rēgēs", "nominative", "plural")],
       [CASES],
     );
-    expect(tables[0]!.rows[0]!.cells[1]).toEqual(["rēgēs"]);
+    expect(tables[0]!.columns).toEqual(["Plur."]);
+    expect(tables[0]!.rows).toEqual([{ label: "Nom.", cells: [["rēgēs"]] }]);
+  });
+
+  /**
+   * Greek writes one cell several ways and marks all but one as some dialect,
+   * so a genitive singular that should read `βασιλέως` offers five spellings.
+   * The standard one is often marked too — it is simply marked once where its
+   * rivals are marked twice — which is why this counts rather than excludes.
+   */
+  it("keeps a cell's least-marked spellings and drops the rest", () => {
+    const cell = [
+      { tags: ["genitive"], label: "Gen." },
+    ];
+    const columns = [{ tags: ["singular"], label: "Sing." }];
+    const { tables } = buildParadigm(
+      [
+        form("βασιλέος", "genitive", "singular", "epic", "ionic"),
+        form("βασιλέως", "genitive", "singular", "ionic"),
+        form("βασιλῆος", "genitive", "singular", "epic", "ionic"),
+      ],
+      [{ rows: cell, columns }],
+      { secondary: ["aeolic", "doric", "epic", "ionic"] },
+    );
+    expect(tables[0]!.rows[0]!.cells[0]).toEqual(["βασιλέως"]);
+  });
+
+  // Two marks apiece, and the tie is broken by the one that is Attic — which
+  // is what this pack teaches and the other is not.
+  it("prefers the variety being taught when the marks are level", () => {
+    const { tables } = buildParadigm(
+      [
+        form("τᾶς", "genitive", "singular", "aeolic", "doric"),
+        form("τῆς", "genitive", "singular", "attic", "epic", "ionic"),
+      ],
+      [{ rows: [{ tags: ["genitive"], label: "Gen." }], columns: [{ tags: ["singular"], label: "Sing." }] }],
+      { primary: ["attic"], secondary: ["aeolic", "doric", "epic", "ionic"] },
+    );
+    expect(tables[0]!.rows[0]!.cells[0]).toEqual(["τῆς"]);
+  });
+
+  it("keeps every spelling when the pack marks no tag as secondary", () => {
+    const { tables } = buildParadigm(
+      [
+        form("amāvistī", "genitive", "singular"),
+        form("amāstī", "genitive", "singular", "syncopated"),
+      ],
+      [CASES],
+    );
+    expect(tables[0]!.rows[0]!.cells[0]).toEqual(["amāvistī", "amāstī"]);
   });
 
   it("hands back what fit no cell rather than dropping it", () => {

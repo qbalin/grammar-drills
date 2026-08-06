@@ -21,6 +21,189 @@
     "recompose": "NFC"
   },
 
+  "paradigms": {
+    "primary": ["attic"],
+    "secondary": ["aeolic", "doric", "epic", "homeric", "ionic", "poetic"],
+    "tables": {
+      "noun": [
+        {
+          "rows": [
+            ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+            ["accusative", "Acc."], ["vocative", "Voc."]
+          ],
+          "columns": [
+            ["singular", "Singular"], ["dual", "Dual"], ["plural", "Plural"]
+          ]
+        }
+      ],
+      "name": [
+        {
+          "rows": [
+            ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+            ["accusative", "Acc."], ["vocative", "Voc."]
+          ],
+          "columns": [
+            ["singular", "Singular"], ["dual", "Dual"], ["plural", "Plural"]
+          ]
+        }
+      ],
+      "adj": [
+        {
+          "rows": [
+            ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+            ["accusative", "Acc."], ["vocative", "Voc."]
+          ],
+          "columns": [
+            ["masculine,singular", "M. sing."], ["feminine,singular", "F. sing."],
+            ["neuter,singular", "N. sing."], ["masculine,dual", "M. dual"],
+            ["feminine,dual", "F. dual"], ["neuter,dual", "N. dual"],
+            ["masculine,plural", "M. plur."], ["feminine,plural", "F. plur."],
+            ["neuter,plural", "N. plur."]
+          ]
+        }
+      ],
+      "pron": [
+        {
+          "rows": [
+            ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+            ["accusative", "Acc."]
+          ],
+          "columns": [
+            ["masculine,singular", "M. sing."], ["feminine,singular", "F. sing."],
+            ["neuter,singular", "N. sing."], ["masculine,dual", "M. dual"],
+            ["feminine,dual", "F. dual"], ["neuter,dual", "N. dual"],
+            ["masculine,plural", "M. plur."], ["feminine,plural", "F. plur."],
+            ["neuter,plural", "N. plur."]
+          ]
+        }
+      ],
+      "art": [
+        {
+          "rows": [
+            ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+            ["accusative", "Acc."]
+          ],
+          "columns": [
+            ["masculine,singular", "M. sing."], ["feminine,singular", "F. sing."],
+            ["neuter,singular", "N. sing."], ["masculine,dual", "M. dual"],
+            ["feminine,dual", "F. dual"], ["neuter,dual", "N. dual"],
+            ["masculine,plural", "M. plur."], ["feminine,plural", "F. plur."],
+            ["neuter,plural", "N. plur."]
+          ]
+        }
+      ],
+      "num": [
+        {
+          "rows": [
+            ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+            ["accusative", "Acc."]
+          ],
+          "columns": [
+            ["masculine,singular", "M. sing."], ["feminine,singular", "F. sing."],
+            ["neuter,singular", "N. sing."], ["masculine,plural", "M. plur."],
+            ["feminine,plural", "F. plur."], ["neuter,plural", "N. plur."]
+          ]
+        }
+      ],
+      "verb": [
+        {
+          "title": "Indicative, active",
+          "rows": [
+            ["present,indicative,active", "Present"],
+            ["imperfect,indicative,active", "Imperfect"],
+            ["future,indicative,active", "Future"],
+            ["aorist,indicative,active", "Aorist"],
+            ["perfect,indicative,active", "Perfect"],
+            ["pluperfect,indicative,active", "Pluperfect"],
+            ["future-perfect,indicative,active", "Future perfect"]
+          ],
+          "columns": [
+            ["first,singular", "1 sing."], ["second,singular", "2 sing."],
+            ["third,singular", "3 sing."], ["second,dual", "2 dual"],
+            ["third,dual", "3 dual"], ["first,plural", "1 plur."],
+            ["second,plural", "2 plur."], ["third,plural", "3 plur."]
+          ]
+        },
+        {
+          "title": "Indicative, middle & passive",
+          "rows": [
+            ["present,indicative,mediopassive", "Present"],
+            ["imperfect,indicative,mediopassive", "Imperfect"],
+            ["future,indicative,middle", "Future middle"],
+            ["future,indicative,passive", "Future passive"],
+            ["aorist,indicative,middle", "Aorist middle"],
+            ["aorist,indicative,passive", "Aorist passive"],
+            ["perfect,indicative,mediopassive", "Perfect"],
+            ["pluperfect,indicative,mediopassive", "Pluperfect"],
+            ["future-perfect,indicative,mediopassive", "Future perfect"]
+          ],
+          "columns": [
+            ["first,singular", "1 sing."], ["second,singular", "2 sing."],
+            ["third,singular", "3 sing."], ["second,dual", "2 dual"],
+            ["third,dual", "3 dual"], ["first,plural", "1 plur."],
+            ["second,plural", "2 plur."], ["third,plural", "3 plur."]
+          ]
+        },
+        {
+          "title": "Subjunctive",
+          "rows": [
+            ["present,subjunctive,active", "Present active"],
+            ["aorist,subjunctive,active", "Aorist active"],
+            ["perfect,subjunctive,active", "Perfect active"],
+            ["present,subjunctive,mediopassive", "Present mid./pass."],
+            ["aorist,subjunctive,middle", "Aorist middle"],
+            ["aorist,subjunctive,passive", "Aorist passive"],
+            ["perfect,subjunctive,mediopassive", "Perfect mid./pass."]
+          ],
+          "columns": [
+            ["first,singular", "1 sing."], ["second,singular", "2 sing."],
+            ["third,singular", "3 sing."], ["second,dual", "2 dual"],
+            ["third,dual", "3 dual"], ["first,plural", "1 plur."],
+            ["second,plural", "2 plur."], ["third,plural", "3 plur."]
+          ]
+        },
+        {
+          "title": "Optative",
+          "rows": [
+            ["present,optative,active", "Present active"],
+            ["future,optative,active", "Future active"],
+            ["aorist,optative,active", "Aorist active"],
+            ["perfect,optative,active", "Perfect active"],
+            ["present,optative,mediopassive", "Present mid./pass."],
+            ["future,optative,middle", "Future middle"],
+            ["future,optative,passive", "Future passive"],
+            ["aorist,optative,middle", "Aorist middle"],
+            ["aorist,optative,passive", "Aorist passive"],
+            ["perfect,optative,mediopassive", "Perfect mid./pass."]
+          ],
+          "columns": [
+            ["first,singular", "1 sing."], ["second,singular", "2 sing."],
+            ["third,singular", "3 sing."], ["second,dual", "2 dual"],
+            ["third,dual", "3 dual"], ["first,plural", "1 plur."],
+            ["second,plural", "2 plur."], ["third,plural", "3 plur."]
+          ]
+        },
+        {
+          "title": "Imperative",
+          "rows": [
+            ["present,imperative,active", "Present active"],
+            ["aorist,imperative,active", "Aorist active"],
+            ["perfect,imperative,active", "Perfect active"],
+            ["present,imperative,mediopassive", "Present mid./pass."],
+            ["aorist,imperative,middle", "Aorist middle"],
+            ["aorist,imperative,passive", "Aorist passive"],
+            ["perfect,imperative,mediopassive", "Perfect mid./pass."]
+          ],
+          "columns": [
+            ["second,singular", "2 sing."], ["third,singular", "3 sing."],
+            ["second,dual", "2 dual"], ["third,dual", "3 dual"],
+            ["second,plural", "2 plur."], ["third,plural", "3 plur."]
+          ]
+        }
+      ]
+    }
+  },
+
   "families": [
     { "id": "nouns", "label": "Nouns" },
     { "id": "adj", "label": "Adjectives, adverbs & numerals" },

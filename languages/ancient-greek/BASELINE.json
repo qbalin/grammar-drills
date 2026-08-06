@@ -12,7 +12,7 @@
     "The question numbers below are a SNAPSHOT OF AN UNFINISHED RUN. Generation",
     "was still going when this was written; see REVIEW.md."
   ],
-  "measuredAt": "2026-07-29",
+  "measuredAt": "2026-08-05",
   "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
 
   "grammar": {
@@ -64,34 +64,62 @@
   },
 
   "dictionary": {
-    "formKeys": 293953,
-    "distinctLemmas": 7194,
-    "rankRange": [1, 7000],
+    "formKeys": 497239,
+    "distinctLemmas": 24322,
+    "rankRange": [1, 22987],
     "refEntries": 114916,
     "refForms": 1370285,
     "refRankedLemmas": 22987,
     "foldMatchesRefNormOnSample": 40000,
-    "lemmasResolvedOfTop7000": 7000,
-    "citationsRewrittenPct": 96.1,
-    "heldOutTextCoveragePct": 96.6,
+    "lemmasResolvedOfTop22987": 22987,
+    "nounLemmas": 6490,
+    "nounLemmasWithGender": 6486,
+    "packResolvedPct": 99.5,
+    "paradigmWords": 23586,
+    "paradigmTagSignatures": 9466,
     "_note": [
-      "Both reference databases were built fresh for this pack from Eulexis",
-      "(GPLv3, Morpheus-derived) and a Perseus corpus of 46 works, ~900k words",
-      "of Attic prose plus Homer and Herodotus, using scripts/reference/. At",
-      "257 MB the dictionary is not committed and is not needed: what ships is",
-      "the derived map and the distilled frequency list, which is what the",
-      "gates read.",
+      "Both reference databases were built for this pack from Eulexis (GPLv3,",
+      "Morpheus-derived) and a corpus of 46 works, ~900k words of Attic prose",
+      "plus Homer and Herodotus, using scripts/reference/. At 257 MB the",
+      "dictionary is not committed and is not needed: what ships is the derived",
+      "map and the distilled frequency list, which is what the gates read.",
       "",
-      "Every one of the top 7000 ranked lemmas resolved against the dictionary,",
-      "with none absent. Coverage on a held-out page of Xenophon and Plato is",
-      "96.6%; the three misses are one proper name and two elided forms."
+      "Rebuilt on 2026-08-05 to the end of the frequency list rather than to",
+      "rank 12,000: formKeys 386,391 -> 497,239 and distinctLemmas 13,118 ->",
+      "24,322. Every one of the 22,987 ranked lemmas resolved, none absent.",
+      "",
+      "Gender and glosses did not move and were not meant to. The two fixes",
+      "that mattered for Latin do not apply here: Eulexis already writes a",
+      "gender on the sense of all but four noun lemmas, and gives every entry",
+      "exactly one sense, so there is no sense cap to raise. Coverage was the",
+      "whole of what Greek had wrong.",
+      "",
+      "Built with --merge and --drop-artifacts. The merge kept 5,331 keys the",
+      "join no longer produces; the artifact filter is why 28 lemmas of the old",
+      "map are gone, all of them Morpheus double-compound notation with a",
+      "hyphen in the headword — the crib was offering `ἐπί-εἴδομαι` as a",
+      "citation, and no reader would ever type it.",
+      "",
+      "No citationsVersion bump: of the 13,118 lemmas both maps hold, not one",
+      "citation changed.",
+      "",
+      "paradigmTagSignatures is 9,466 against Latin's 417, because Morpheus",
+      "tags nearly every form with the dialects it belongs to. That is also why",
+      "profile.paradigms declares a primary and secondary tag list where Latin",
+      "declares none: without it a genitive singular offers five spellings."
     ]
   },
 
   "bundle": {
     "grammarJsonGz": "695 KB",
-    "testsJsonGz": "5 KB",
-    "lemmasJsonGz": "202 KB",
-    "formsTxtGz": "913 KB"
+    "testsJsonGz": "1066 KB",
+    "lemmasJsonGz": "636 KB",
+    "formsTxtGz": "1694 KB",
+    "paradigmsTxtGz": "3594 KB",
+    "_note": [
+      "Only grammar and tests are precached. The three dictionary files are",
+      "fetched on demand, and the paradigms only when a word is asked for its",
+      "own table."
+    ]
   }
 }

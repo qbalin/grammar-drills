@@ -56,13 +56,15 @@ export interface Profile {
   /**
    * How each part of speech's forms are laid out when a word is inspected.
    *
-   * By `pos`, a list of tables; each axis position is `["tag,tag", "Stub"]`,
-   * matched against the feature tags the reference gives a form. A form goes
-   * in every cell whose tags it carries, most specific winning — which is why
-   * a future perfect must name its tense in full or land under the perfect,
-   * and why one dative plural serving three genders is printed under all
-   * three. Forms that fit no cell are shown under the tables, not dropped.
-   * See `buildParadigm`.
+   * `tables` holds, by `pos`, a list of tables; each axis position is
+   * `["tag,tag", "Stub"]`, matched against the feature tags the reference
+   * gives a form. A form goes in every cell whose tags it carries, most
+   * specific winning — which is why a future perfect must name its tense in
+   * full or land under the perfect, and why one dative plural serving three
+   * genders is printed under all three. `primary` and `secondary` name the
+   * tags that mark which variety of the language a form belongs to, so a cell
+   * can prefer the spelling this pack teaches. Forms that fit no cell are
+   * shown under the tables, not dropped. See `buildParadigm`.
    *
    * Absent where a pack has not written them yet, which is a pack whose words
    * show their citation and no table rather than a pack that fails to build.
@@ -199,11 +201,29 @@ function parseAxis(raw: unknown, path: string) {
 }
 
 function parseParadigms(raw: unknown): ParadigmAxes {
-  const byPos = object(raw, "profile.paradigms");
-  const out: ParadigmAxes = {};
+  const top = object(raw, "profile.paradigms");
+  for (const key of Object.keys(top)) {
+    if (!["primary", "secondary", "tables"].includes(key)) {
+      throw new PackError(`profile.paradigms.${key}: unknown key`);
+    }
+  }
+  const tags = (raw: unknown, where: string) =>
+    raw === undefined
+      ? undefined
+      : array(raw, where).map((tag, i) => {
+          if (typeof tag !== "string" || !tag) {
+            throw new PackError(`${where}[${i}]: expected a non-empty string`);
+          }
+          return tag;
+        });
+  const primary = tags(top.primary, "profile.paradigms.primary");
+  const secondary = tags(top.secondary, "profile.paradigms.secondary");
+
+  const byPos = object(top.tables, "profile.paradigms.tables");
+  const tables: Record<string, ParadigmBlock[]> = {};
   for (const [pos, value] of Object.entries(byPos)) {
-    const where = `profile.paradigms.${pos}`;
-    out[pos] = array(value, where).map((block, i): ParadigmBlock => {
+    const where = `profile.paradigms.tables.${pos}`;
+    tables[pos] = array(value, where).map((block, i): ParadigmBlock => {
       const b = object(block, `${where}[${i}]`);
       for (const key of Object.keys(b)) {
         if (!["title", "rows", "columns"].includes(key)) {
@@ -225,7 +245,7 @@ function parseParadigms(raw: unknown): ParadigmAxes {
       return { title: b.title as string | undefined, rows, columns };
     });
   }
-  return out;
+  return { primary, secondary, tables };
 }
 
 function parseFold(raw: unknown): FoldSpec {

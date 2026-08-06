@@ -63,13 +63,21 @@ describe("the paradigm axes", () => {
   const axes = profile.paradigms!;
 
   it("lays out every part of speech the dictionary inflects", () => {
-    expect(Object.keys(axes).sort()).toEqual(
+    expect(Object.keys(axes.tables).sort()).toEqual(
       ["adj", "det", "noun", "num", "pron", "verb"].sort(),
     );
   });
 
+  // Latin's variants — syncopated perfects, archaic spellings — are all being
+  // taught, so no cell prefers one over another. Greek is the pack that needs
+  // these, and the difference between the two is the whole point of the field.
+  it("marks no dialect, because it teaches all of them", () => {
+    expect(axes.primary).toBeUndefined();
+    expect(axes.secondary).toBeUndefined();
+  });
+
   it("sets the noun out as cases against number", () => {
-    const [table] = axes.noun!;
+    const [table] = axes.tables.noun!;
     expect(table!.rows.map((r) => r.label)).toEqual([
       "Nom.", "Gen.", "Dat.", "Acc.", "Abl.", "Voc.", "Loc.",
     ]);
@@ -83,7 +91,7 @@ describe("the paradigm axes", () => {
    * comes out empty. See `buildParadigm`.
    */
   it("names the future perfect in full so it does not land under the perfect", () => {
-    for (const table of axes.verb!) {
+    for (const table of axes.tables.verb!) {
       const rows = table.rows.map((r) => r.tags.join(","));
       const perfect = table.rows.find((r) => r.label === "Perfect");
       const future = table.rows.find((r) => r.label === "Future perfect");
@@ -96,7 +104,7 @@ describe("the paradigm axes", () => {
   });
 
   it("gives every verb table all six persons, or the imperative's four", () => {
-    for (const table of axes.verb!) {
+    for (const table of axes.tables.verb!) {
       const persons = table.columns.map((c) => c.label);
       expect(persons.length, table.title).toBe(table.title === "Imperative" ? 4 : 6);
     }
@@ -110,13 +118,13 @@ describe("the paradigm axes", () => {
 
   it("rejects an axis that is not [tags, label]", () => {
     const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
-    raw.paradigms.noun[0].rows[0] = ["nominative"];
-    expect(() => parseProfile(raw)).toThrow(/paradigms\.noun\[0\]\.rows\[0\]/);
+    raw.paradigms.tables.noun[0].rows[0] = ["nominative"];
+    expect(() => parseProfile(raw)).toThrow(/paradigms\.tables\.noun\[0\]\.rows\[0\]/);
   });
 
   it("rejects a table with rows and no columns", () => {
     const raw = JSON.parse(readFileSync(join(here, "profile.json"), "utf8"));
-    raw.paradigms.noun[0].columns = [];
+    raw.paradigms.tables.noun[0].columns = [];
     expect(() => parseProfile(raw)).toThrow(/needs both rows and columns/);
   });
 });

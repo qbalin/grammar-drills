@@ -194,6 +194,55 @@ describe("the fold against the shipped dictionary", () => {
   });
 });
 
+describe("the paradigm axes", () => {
+  const axes = profile.paradigms!;
+
+  it("lays out every part of speech the analyser inflects", () => {
+    expect(Object.keys(axes.tables).sort()).toEqual(
+      ["adj", "art", "name", "noun", "num", "pron", "verb"].sort(),
+    );
+  });
+
+  it("gives the noun three numbers, because Greek has a dual", () => {
+    const [table] = axes.tables.noun!;
+    expect(table!.columns.map((c) => c.label)).toEqual(["Singular", "Dual", "Plural"]);
+    expect(table!.rows.map((r) => r.label)).toEqual(["Nom.", "Gen.", "Dat.", "Acc.", "Voc."]);
+  });
+
+  /**
+   * Morpheus tags nearly every form with the dialects it belongs to, so a
+   * genitive singular arrives five ways. Without these two lists the table
+   * would print all five and leave the student to guess which is the Attic
+   * they are being taught — and the Attic one is usually marked too, so the
+   * lists have to name both sides.
+   */
+  it("names the dialect it teaches and the ones it does not", () => {
+    expect(axes.primary).toEqual(["attic"]);
+    expect(axes.secondary).toContain("epic");
+    expect(axes.secondary).toContain("doric");
+    // Naming a dialect on both lists would make the rule read itself backwards.
+    expect(axes.secondary!.filter((tag) => axes.primary!.includes(tag))).toEqual([]);
+  });
+
+  it("uses the analyser's own words for a person, not another language's", () => {
+    // `first-person` is what the Latin pack's source writes; this one writes
+    // `first`, and a column that names the wrong one silently never fills.
+    for (const table of axes.tables.verb!) {
+      for (const column of table.columns) {
+        expect(column.tags.some((t) => t.endsWith("-person")), column.label).toBe(false);
+      }
+    }
+  });
+
+  it("keeps the middle and the passive apart where the analyser does", () => {
+    const rows = axes.tables.verb!.flatMap((t) => t.rows.map((r) => r.tags.join(",")));
+    // Present and perfect are mediopassive — one form for both voices — while
+    // the future and the aorist have a passive of their own.
+    expect(rows).toContain("present,indicative,mediopassive");
+    expect(rows).toContain("aorist,indicative,passive");
+  });
+});
+
 /**
  * The confetti is a decoration, so the renderer is deliberately forgiving: a
  * shape it cannot find is skipped rather than thrown, because failing mid-burst

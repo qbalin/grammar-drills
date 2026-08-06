@@ -29,8 +29,33 @@ export interface ParadigmBlock {
   columns: ParadigmAxis[];
 }
 
-/** How one part of speech is laid out. Packs declare these by `pos`. */
-export type ParadigmAxes = Record<string, ParadigmBlock[]>;
+/**
+ * Which variety of the language a pack teaches, as tags.
+ *
+ * A cell keeps only its best spellings: most `primary` tags first, then fewest
+ * `secondary`. Without this a Greek genitive singular offers five spellings
+ * and the student has no way to tell which one the grammar they are reading
+ * means. Both halves earn their place. `βασιλέως` beats `βασιλῆος` on the
+ * second rule, being marked Ionic once where its rival is marked Epic as well
+ * — so this counts marks rather than excluding them, because in Greek the
+ * standard form is usually marked too. `τῆς` beats Doric `τᾶς` only on the
+ * first, the two being marked twice apiece and one of them Attic.
+ *
+ * A pack that declares neither keeps every spelling of every cell, which is
+ * the right answer for a language whose variants are all being taught.
+ */
+export interface ParadigmVariety {
+  /** Tags naming the variety being taught. */
+  primary?: string[];
+  /** Tags naming some other dialect, register or period. */
+  secondary?: string[];
+}
+
+/** How each part of speech is laid out, and what counts as a marked form. */
+export interface ParadigmAxes extends ParadigmVariety {
+  /** The tables, by `pos`. A `pos` absent here shows no table. */
+  tables: Record<string, ParadigmBlock[]>;
+}
 
 /** A form as the built artifact holds it: written as it is, and tagged. */
 export interface TaggedForm {
@@ -87,30 +112,59 @@ function place(
 /**
  * Lay `forms` out according to `blocks`.
  *
- * A row with nothing in it is dropped — most Latin nouns have no locative, and
- * an empty row reads as a gap in the word rather than a gap in the language.
- * Columns are kept whole, so the shapes of two words' tables can be compared.
+ * A row or column with nothing in it is dropped: most Latin nouns have no
+ * locative and most Greek words are never written in the dual, and an empty
+ * line reads as a gap in the word rather than a gap in the language.
  */
-export function buildParadigm(forms: TaggedForm[], blocks: ParadigmBlock[]): Paradigm {
+export function buildParadigm(
+  forms: TaggedForm[],
+  blocks: ParadigmBlock[],
+  variety: ParadigmVariety = {},
+): Paradigm {
+  const primary = new Set(variety.primary ?? []);
+  const secondary = new Set(variety.secondary ?? []);
+  /** Lower is better: primary tags earn credit, secondary ones cost. */
+  const marked = (form: TaggedForm) =>
+    form.tags.filter((tag) => secondary.has(tag)).length -
+    form.tags.filter((tag) => primary.has(tag)).length * (secondary.size + 1);
+
   const tables: ParadigmTableData[] = [];
   const placed = new Set<TaggedForm>();
 
   for (const block of blocks) {
-    const cells = block.rows.map(() => block.columns.map((): string[] => []));
+    const cells = block.rows.map(() => block.columns.map((): TaggedForm[] => []));
     for (const form of forms) {
       const tags = new Set(form.tags);
       for (const { row, column } of place(tags, block.rows, block.columns)) {
         placed.add(form);
-        // The same form can arrive twice — a spelling variant tagged
-        // `alternative` sits beside the plain one — but never twice identically.
-        if (!cells[row]![column]!.includes(form.form)) cells[row]![column]!.push(form.form);
+        cells[row]![column]!.push(form);
       }
     }
+
+    const spellings = (cell: TaggedForm[]) => {
+      const fewest = Math.min(...cell.map(marked));
+      const out: string[] = [];
+      for (const form of cell) {
+        // The same spelling can arrive twice — Greek writes one form under
+        // several dialects — but it is one spelling and is printed once.
+        if (marked(form) === fewest && !out.includes(form.form)) out.push(form.form);
+      }
+      return out;
+    };
+    const laid = cells.map((row) => row.map(spellings));
+
+    const keptColumns = block.columns
+      .map((axis, c) => ({ axis, c }))
+      .filter(({ c }) => laid.some((row) => row[c]!.length > 0));
     const rows = block.rows
-      .map((axis, r) => ({ label: axis.label, cells: cells[r]! }))
+      .map((axis, r) => ({ label: axis.label, cells: keptColumns.map(({ c }) => laid[r]![c]!) }))
       .filter((row) => row.cells.some((cell) => cell.length > 0));
     if (!rows.length) continue;
-    tables.push({ title: block.title, columns: block.columns.map((c) => c.label), rows });
+    tables.push({
+      title: block.title,
+      columns: keptColumns.map(({ axis }) => axis.label),
+      rows,
+    });
   }
 
   return { tables, other: forms.filter((form) => !placed.has(form)) };
