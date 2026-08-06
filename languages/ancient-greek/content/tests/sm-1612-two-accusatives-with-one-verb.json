@@ -433,5 +433,152 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1612-two-accusatives-with-one-verb-t7",
+  "sectionId": "sm-1612-two-accusatives-with-one-verb",
+  "questions": [
+   {
+    "prompt": "The victorious general made the enemies' fields plunder for his soldiers.",
+    "answer": "ὁ νικήσας στρατηγὸς τοὺς τῶν πολεμίων ἀγροὺς λείαν τοῖς στρατιώταις ἐποιήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νικήσας",
+     "στρατηγός",
+     "τούς",
+     "τῶν",
+     "πολεμίων",
+     "ἀγρούς",
+     "λείαν",
+     "τοῖς",
+     "στρατιώταις",
+     "ἐποιήσατο"
+    ]
+   },
+   {
+    "prompt": "The council, because it feared the tyrant, voted the destruction of the walls.",
+    "answer": "ἡ βουλή, ἐπειδὴ τὸν τύραννον ἐφοβεῖτο, τὴν τῶν τειχῶν φθορὰν ψήφους ἔθετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βουλή",
+     "ἐπειδή",
+     "τόν",
+     "τύραννον",
+     "ἐφοβεῖτο",
+     "τήν",
+     "τῶν",
+     "τειχῶν",
+     "φθοράν",
+     "ψήφους",
+     "ἔθετο"
+    ]
+   },
+   {
+    "prompt": "The soldiers blamed the general for having shamefully retreated.",
+    "answer": "οἱ στρατιῶται τὸν στρατηγὸν αἰσχρῶς ἀναχωρήσαντα μομφὴν εἶχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τόν",
+     "στρατηγόν",
+     "αἰσχρῶς",
+     "ἀναχωρήσαντα",
+     "μομφήν",
+     "εἶχον"
+    ]
+   },
+   {
+    "prompt": "The exiles, though they had suffered many things, never forgot their fatherland.",
+    "answer": "οἱ φυγάδες, καίπερ πολλὰ παθόντες, τὴν πατρίδα οὐδέποτε λῆστιν ἔσχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "καίπερ",
+     "πολλά",
+     "παθόντες",
+     "τήν",
+     "πατρίδα",
+     "οὐδέποτε",
+     "λῆστιν",
+     "ἔσχον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1612-two-accusatives-with-one-verb-t8",
+  "sectionId": "sm-1612-two-accusatives-with-one-verb",
+  "questions": [
+   {
+    "prompt": "When night had come on, the horsemen made the whole plain plunder.",
+    "answer": "νυκτὸς ἐπιγενομένης, οἱ ἱππεῖς πᾶν τὸ πεδίον λείαν ἐποιοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νυκτός",
+     "ἐπιγενομένης",
+     "οἱ",
+     "ἱππεῖς",
+     "πᾶν",
+     "τό",
+     "πεδίον",
+     "λείαν",
+     "ἐποιοῦντο"
+    ]
+   },
+   {
+    "prompt": "The Athenians, persuaded by the orator, voted the exile of the demagogue.",
+    "answer": "οἱ Ἀθηναῖοι, ὑπὸ τοῦ ῥήτορος πεισθέντες, τὴν τοῦ δημαγωγοῦ φυγὴν ψήφους ἔθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ὑπό",
+     "τοῦ",
+     "ῥήτορος",
+     "πεισθέντες",
+     "τήν",
+     "δημαγωγοῦ",
+     "φυγήν",
+     "ψήφους",
+     "ἔθεντο"
+    ]
+   },
+   {
+    "prompt": "The father blamed his son, who had squandered his estate.",
+    "answer": "ὁ πατὴρ τὸν υἱὸν τὴν οὐσίαν ἀπολέσαντα μομφὴν εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατήρ",
+     "τόν",
+     "υἱόν",
+     "τήν",
+     "οὐσίαν",
+     "ἀπολέσαντα",
+     "μομφήν",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "In their present good fortune they forgot the dangers that had passed.",
+    "answer": "ἐν τῇ παρούσῃ εὐτυχίᾳ τοὺς παρελθόντας κινδύνους λῆστιν ἔσχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "παρούσῃ",
+     "εὐτυχίᾳ",
+     "τούς",
+     "παρελθόντας",
+     "κινδύνους",
+     "λῆστιν",
+     "ἔσχον"
+    ]
+   }
+  ]
  }
 ]

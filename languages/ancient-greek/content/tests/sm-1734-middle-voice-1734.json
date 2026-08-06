@@ -432,5 +432,757 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t7",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "The judges chose the man who had captured the fortress.",
+    "answer": "οἱ δικασταὶ εἵλοντο τὸν ἄνδρα τὸν τὸ φρούριον ἑλόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "εἵλοντο",
+     "τόν",
+     "ἄνδρα",
+     "τό",
+     "φρούριον",
+     "ἑλόντα"
+    ]
+   },
+   {
+    "prompt": "The horsemen warded off the danger from the city, but the citizens requited the enemy.",
+    "answer": "οἱ ἱππεῖς τὸν κίνδυνον τῇ πόλει ἤμυνον, οἱ δὲ πολῖται τοὺς πολεμίους ἠμύνοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱππεῖς",
+     "τόν",
+     "κίνδυνον",
+     "τῇ",
+     "πόλει",
+     "ἤμυνον",
+     "δέ",
+     "πολῖται",
+     "τούς",
+     "πολεμίους",
+     "ἠμύνοντο"
+    ]
+   },
+   {
+    "prompt": "The old man, beginning his speech, praised the ancestors.",
+    "answer": "ὁ γέρων, ἀρχόμενος τοῦ λόγου, τοὺς προγόνους ἐπῄνεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἀρχόμενος",
+     "τοῦ",
+     "λόγου",
+     "τούς",
+     "προγόνους",
+     "ἐπῄνεσεν"
+    ]
+   },
+   {
+    "prompt": "The general gave back the weapons, but sold the captives.",
+    "answer": "ὁ στρατηγὸς τὰ ὅπλα ἀπέδωκεν, τοὺς δὲ αἰχμαλώτους ἀπέδοτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τά",
+     "ὅπλα",
+     "ἀπέδωκεν",
+     "τούς",
+     "δέ",
+     "αἰχμαλώτους",
+     "ἀπέδοτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t8",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "The priest attached the garland to the altar and touched the sacred fire.",
+    "answer": "ὁ ἱερεὺς τὸν στέφανον τῷ βωμῷ ἧψεν καὶ τοῦ ἱεροῦ πυρὸς ἥψατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεύς",
+     "τόν",
+     "στέφανον",
+     "τῷ",
+     "βωμῷ",
+     "ἧψεν",
+     "καί",
+     "τοῦ",
+     "ἱεροῦ",
+     "πυρός",
+     "ἥψατο"
+    ]
+   },
+   {
+    "prompt": "The wealthy man married a beautiful maiden, and she gladly married him.",
+    "answer": "ὁ πλούσιος καλὴν παρθένον ἔγημεν, ἡ δὲ ἡδέως αὐτῷ ἐγήματο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "καλήν",
+     "παρθένον",
+     "ἔγημεν",
+     "ἡ",
+     "δέ",
+     "ἡδέως",
+     "αὐτῷ",
+     "ἐγήματο"
+    ]
+   },
+   {
+    "prompt": "The banker lends silver at interest, but the poor man borrows unwillingly.",
+    "answer": "ὁ τραπεζίτης ἀργύριον ἐπὶ τόκῳ δανείζει, ὁ δὲ πένης ἄκων δανείζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τραπεζίτης",
+     "ἀργύριον",
+     "ἐπί",
+     "τόκῳ",
+     "δανείζει",
+     "δέ",
+     "πένης",
+     "ἄκων",
+     "δανείζεται"
+    ]
+   },
+   {
+    "prompt": "The archons give judgment, but the citizen goes to law with those who wronged him.",
+    "answer": "οἱ ἄρχοντες δικάζουσιν, ὁ δὲ πολίτης τοῖς ἀδικήσασι δικάζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄρχοντες",
+     "δικάζουσιν",
+     "ὁ",
+     "δέ",
+     "πολίτης",
+     "τοῖς",
+     "ἀδικήσασι",
+     "δικάζεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t9",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "After the chairman had put the matter to the vote, the people decreed peace.",
+    "answer": "ἐπεὶ ὁ ἐπιστάτης τὸ πρᾶγμα ἐπεψήφισεν, ὁ δῆμος εἰρήνην ἐπεψηφίσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "ὁ",
+     "ἐπιστάτης",
+     "τό",
+     "πρᾶγμα",
+     "ἐπεψήφισεν",
+     "δῆμος",
+     "εἰρήνην",
+     "ἐπεψηφίσατο"
+    ]
+   },
+   {
+    "prompt": "The soldiers held their shields, while the children clung to their mothers.",
+    "answer": "οἱ στρατιῶται τὰς ἀσπίδας εἶχον, τὰ δὲ παιδία τῶν μητέρων εἴχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τάς",
+     "ἀσπίδας",
+     "εἶχον",
+     "τά",
+     "δέ",
+     "παιδία",
+     "τῶν",
+     "μητέρων",
+     "εἴχετο"
+    ]
+   },
+   {
+    "prompt": "The general, wishing to take the auspices, sacrificed a goat beside the river.",
+    "answer": "ὁ στρατηγός, βουλόμενος θύεσθαι, αἶγα παρὰ τῷ ποταμῷ ἔθυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "βουλόμενος",
+     "θύεσθαι",
+     "αἶγα",
+     "παρά",
+     "τῷ",
+     "ποταμῷ",
+     "ἔθυσεν"
+    ]
+   },
+   {
+    "prompt": "The rich man let out his house, but I hired a small farm.",
+    "answer": "ὁ πλούσιος τὴν οἰκίαν ἐμίσθωσεν, ἐγὼ δὲ μικρὸν ἀγρὸν ἐμισθωσάμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "τήν",
+     "οἰκίαν",
+     "ἐμίσθωσεν",
+     "ἐγώ",
+     "δέ",
+     "μικρόν",
+     "ἀγρόν",
+     "ἐμισθωσάμην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t10",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "The words of the wise man stopped the quarrel, and the young men ceased from their anger.",
+    "answer": "οἱ τοῦ σοφοῦ λόγοι τὴν ἔριν ἔπαυσαν, οἱ δὲ νεανίαι τῆς ὀργῆς ἐπαύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοῦ",
+     "σοφοῦ",
+     "λόγοι",
+     "τήν",
+     "ἔριν",
+     "ἔπαυσαν",
+     "δέ",
+     "νεανίαι",
+     "τῆς",
+     "ὀργῆς",
+     "ἐπαύσαντο"
+    ]
+   },
+   {
+    "prompt": "The orator persuaded the assembly, but the soldiers were unwilling to obey the general.",
+    "answer": "ὁ ῥήτωρ τὴν ἐκκλησίαν ἔπεισεν, οἱ δὲ στρατιῶται τῷ στρατηγῷ πείθεσθαι οὐκ ἤθελον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τήν",
+     "ἐκκλησίαν",
+     "ἔπεισεν",
+     "οἱ",
+     "δέ",
+     "στρατιῶται",
+     "τῷ",
+     "στρατηγῷ",
+     "πείθεσθαι",
+     "οὐκ",
+     "ἤθελον"
+    ]
+   },
+   {
+    "prompt": "The wise lawgiver proposed a law, but the people enacted it for their own advantage.",
+    "answer": "ὁ σοφὸς νομοθέτης νόμον ἔθηκεν, ὁ δὲ δῆμος αὐτὸν ἐπὶ τῷ ἑαυτοῦ συμφέροντι ἔθετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "νομοθέτης",
+     "νόμον",
+     "ἔθηκεν",
+     "δέ",
+     "δῆμος",
+     "αὐτόν",
+     "ἐπί",
+     "τῷ",
+     "ἑαυτοῦ",
+     "συμφέροντι",
+     "ἔθετο"
+    ]
+   },
+   {
+    "prompt": "In order to avenge his friend, he took vengeance on the men who had betrayed him.",
+    "answer": "ἵνα τῷ φίλῳ τιμωρήσῃ, τοὺς προδόντας ἐτιμωρήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἵνα",
+     "τῷ",
+     "φίλῳ",
+     "τιμωρήσῃ",
+     "τούς",
+     "προδόντας",
+     "ἐτιμωρήσατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t11",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "Those who had wronged the strangers paid the penalty, for the king exacted vengeance.",
+    "answer": "οἱ τοὺς ξένους ἀδικήσαντες δίκην ἔτεισαν, ὁ γὰρ βασιλεὺς δίκην ἐτείσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τούς",
+     "ξένους",
+     "ἀδικήσαντες",
+     "δίκην",
+     "ἔτεισαν",
+     "ὁ",
+     "γάρ",
+     "βασιλεύς",
+     "ἐτείσατο"
+    ]
+   },
+   {
+    "prompt": "The guards watched the gates, but the wise general was on his guard against the traitors.",
+    "answer": "οἱ φύλακες τὰς πύλας ἐφύλαττον, ὁ δὲ σοφὸς στρατηγὸς τοὺς προδότας ἐφυλάττετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "τάς",
+     "πύλας",
+     "ἐφύλαττον",
+     "ὁ",
+     "δέ",
+     "σοφός",
+     "στρατηγός",
+     "τούς",
+     "προδότας",
+     "ἐφυλάττετο"
+    ]
+   },
+   {
+    "prompt": "Apollo gives oracles to mortals, but few use his counsels well.",
+    "answer": "ὁ Ἀπόλλων τοῖς θνητοῖς χρᾷ, ὀλίγοι δὲ ταῖς βουλαῖς εὖ χρῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ἀπόλλων",
+     "τοῖς",
+     "θνητοῖς",
+     "χρᾷ",
+     "ὀλίγοι",
+     "δέ",
+     "ταῖς",
+     "βουλαῖς",
+     "εὖ",
+     "χρῶνται"
+    ]
+   },
+   {
+    "prompt": "The Thebans took the initiative in the war, but the Athenians only defended themselves.",
+    "answer": "οἱ Θηβαῖοι τοῦ πολέμου ἦρξαν, οἱ δὲ Ἀθηναῖοι μόνον ἠμύνοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Θηβαῖοι",
+     "τοῦ",
+     "πολέμου",
+     "ἦρξαν",
+     "δέ",
+     "Ἀθηναῖοι",
+     "μόνον",
+     "ἠμύνοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t12",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "The statesman proposed a law, but his enemies brought suit against him.",
+    "answer": "ὁ πολιτικὸς νόμον ἔγραψεν, οἱ δὲ ἐχθροὶ αὐτὸν ἐγράψαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πολιτικός",
+     "νόμον",
+     "ἔγραψεν",
+     "οἱ",
+     "δέ",
+     "ἐχθροί",
+     "αὐτόν",
+     "ἐγράψαντο"
+    ]
+   },
+   {
+    "prompt": "The people, wishing to save the city, chose the man who had captured many ships.",
+    "answer": "ὁ δῆμος, βουλόμενος τὴν πόλιν σῴζειν, εἵλετο τὸν ἄνδρα τὸν πολλὰς ναῦς ἑλόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "βουλόμενος",
+     "τήν",
+     "πόλιν",
+     "σῴζειν",
+     "εἵλετο",
+     "τόν",
+     "ἄνδρα",
+     "πολλάς",
+     "ναῦς",
+     "ἑλόντα"
+    ]
+   },
+   {
+    "prompt": "The brave man warded off the blows from his brother and requited the aggressors.",
+    "answer": "ὁ ἀνδρεῖος τὰς πληγὰς τῷ ἀδελφῷ ἤμυνεν καὶ τοὺς ἄρξαντας ἠμύνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀνδρεῖος",
+     "τάς",
+     "πληγάς",
+     "τῷ",
+     "ἀδελφῷ",
+     "ἤμυνεν",
+     "καί",
+     "τούς",
+     "ἄρξαντας",
+     "ἠμύνατο"
+    ]
+   },
+   {
+    "prompt": "Fearing the storm, the sailors clung to the mast and held the oars firmly.",
+    "answer": "φοβούμενοι τὸν χειμῶνα, οἱ ναῦται τοῦ ἱστοῦ εἴχοντο καὶ τὰς κώπας βεβαίως εἶχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβούμενοι",
+     "τόν",
+     "χειμῶνα",
+     "οἱ",
+     "ναῦται",
+     "τοῦ",
+     "ἱστοῦ",
+     "εἴχοντο",
+     "καί",
+     "τάς",
+     "κώπας",
+     "βεβαίως",
+     "εἶχον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t13",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "The merchant sold his goods, but gave back the deposit to the stranger.",
+    "answer": "ὁ ἔμπορος τὰ χρήματα ἀπέδοτο, τὴν δὲ παρακαταθήκην τῷ ξένῳ ἀπέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἔμπορος",
+     "τά",
+     "χρήματα",
+     "ἀπέδοτο",
+     "τήν",
+     "δέ",
+     "παρακαταθήκην",
+     "τῷ",
+     "ξένῳ",
+     "ἀπέδωκεν"
+    ]
+   },
+   {
+    "prompt": "The rich man lent silver to the poor, but they borrowed at heavy interest.",
+    "answer": "ὁ πλούσιος τοῖς πένησιν ἀργύριον ἐδάνειζεν, οἱ δὲ ἐπὶ πολλῷ τόκῳ ἐδανείζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "τοῖς",
+     "πένησιν",
+     "ἀργύριον",
+     "ἐδάνειζεν",
+     "οἱ",
+     "δέ",
+     "ἐπί",
+     "πολλῷ",
+     "τόκῳ",
+     "ἐδανείζοντο"
+    ]
+   },
+   {
+    "prompt": "The soldiers chose him general, but they did not take the citadel.",
+    "answer": "οἱ στρατιῶται στρατηγὸν αὐτὸν εἵλοντο, τὴν δὲ ἀκρόπολιν οὐχ εἷλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "στρατηγόν",
+     "αὐτόν",
+     "εἵλοντο",
+     "τήν",
+     "δέ",
+     "ἀκρόπολιν",
+     "οὐχ",
+     "εἷλον"
+    ]
+   },
+   {
+    "prompt": "The god who gives oracles at Delphi ordered them to use their swords.",
+    "answer": "ὁ θεὸς ὁ ἐν Δελφοῖς χρῶν ἐκέλευσεν αὐτοὺς τοῖς ξίφεσι χρῆσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεός",
+     "ἐν",
+     "Δελφοῖς",
+     "χρῶν",
+     "ἐκέλευσεν",
+     "αὐτούς",
+     "τοῖς",
+     "ξίφεσι",
+     "χρῆσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t14",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "The Spartans took the initiative in war, but we shall retaliate on the aggressors.",
+    "answer": "οἱ Λακεδαιμόνιοι πολέμου ἦρξαν, ἡμεῖς δὲ τοὺς ἄρξαντας ἀμυνούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "πολέμου",
+     "ἦρξαν",
+     "ἡμεῖς",
+     "δέ",
+     "τούς",
+     "ἄρξαντας",
+     "ἀμυνούμεθα"
+    ]
+   },
+   {
+    "prompt": "When the poet was beginning his song, the children ceased from their play.",
+    "answer": "ἐπεὶ ὁ ποιητὴς τῆς ᾠδῆς ἤρχετο, οἱ παῖδες τῆς παιδιᾶς ἐπαύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "ὁ",
+     "ποιητής",
+     "τῆς",
+     "ᾠδῆς",
+     "ἤρχετο",
+     "οἱ",
+     "παῖδες",
+     "παιδιᾶς",
+     "ἐπαύσαντο"
+    ]
+   },
+   {
+    "prompt": "The general stopped the flight and persuaded the soldiers to obey him.",
+    "answer": "ὁ στρατηγὸς τὴν φυγὴν ἔπαυσε, καὶ τοὺς στρατιώτας ἔπεισε πείθεσθαι ἑαυτῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τήν",
+     "φυγήν",
+     "ἔπαυσε",
+     "καί",
+     "τούς",
+     "στρατιώτας",
+     "ἔπεισε",
+     "πείθεσθαι",
+     "ἑαυτῷ"
+    ]
+   },
+   {
+    "prompt": "Trusting in the gods, he helped his friends and took vengeance on their enemies.",
+    "answer": "τοῖς θεοῖς πεποιθὼς τοῖς φίλοις ἐτιμώρει καὶ τοὺς ἐχθροὺς ἐτιμωρεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "θεοῖς",
+     "πεποιθώς",
+     "φίλοις",
+     "ἐτιμώρει",
+     "καί",
+     "τούς",
+     "ἐχθρούς",
+     "ἐτιμωρεῖτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t15",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "The orator proposed a law and indicted the man who spoke against it.",
+    "answer": "ὁ ῥήτωρ νόμον ἔγραψε, καὶ τὸν ἀντιλέγοντα ἐγράψατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "νόμον",
+     "ἔγραψε",
+     "καί",
+     "τόν",
+     "ἀντιλέγοντα",
+     "ἐγράψατο"
+    ]
+   },
+   {
+    "prompt": "The archon was giving judgment justly, but the widow went to law with her kinsmen.",
+    "answer": "ὁ ἄρχων δικαίως ἐδίκαζεν, ἡ δὲ χήρα τοῖς συγγενέσιν ἐδικάζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄρχων",
+     "δικαίως",
+     "ἐδίκαζεν",
+     "ἡ",
+     "δέ",
+     "χήρα",
+     "τοῖς",
+     "συγγενέσιν",
+     "ἐδικάζετο"
+    ]
+   },
+   {
+    "prompt": "The priests were sacrificing oxen, while the general took the auspices before the battle.",
+    "answer": "οἱ ἱερεῖς βοῦς ἔθυον, ὁ δὲ στρατηγὸς πρὸ τῆς μάχης ἐθύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "βοῦς",
+     "ἔθυον",
+     "ὁ",
+     "δέ",
+     "στρατηγός",
+     "πρό",
+     "τῆς",
+     "μάχης",
+     "ἐθύετο"
+    ]
+   },
+   {
+    "prompt": "The brave man warded off the blows from his brother and requited the enemy.",
+    "answer": "ὁ ἀνδρεῖος τὰς πληγὰς τῷ ἀδελφῷ ἤμυνε, καὶ τοὺς πολεμίους ἠμύνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀνδρεῖος",
+     "τάς",
+     "πληγάς",
+     "τῷ",
+     "ἀδελφῷ",
+     "ἤμυνε",
+     "καί",
+     "τούς",
+     "πολεμίους",
+     "ἠμύνατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1734-middle-voice-1734-t16",
+  "sectionId": "sm-1734-middle-voice-1734",
+  "questions": [
+   {
+    "prompt": "The old man held the staff, but the child clung to his father's cloak.",
+    "answer": "ὁ γέρων τὴν βακτηρίαν εἶχεν, ὁ δὲ παῖς τοῦ ἱματίου τοῦ πατρὸς εἴχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τήν",
+     "βακτηρίαν",
+     "εἶχεν",
+     "δέ",
+     "παῖς",
+     "τοῦ",
+     "ἱματίου",
+     "πατρός",
+     "εἴχετο"
+    ]
+   },
+   {
+    "prompt": "The thief paid the penalty, but the judge exacted a penalty from the accomplices.",
+    "answer": "ὁ κλέπτης δίκην ἔτεισε, ὁ δὲ δικαστὴς παρὰ τῶν συνεργῶν δίκην ἐτείσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κλέπτης",
+     "δίκην",
+     "ἔτεισε",
+     "δέ",
+     "δικαστής",
+     "παρά",
+     "τῶν",
+     "συνεργῶν",
+     "ἐτείσατο"
+    ]
+   },
+   {
+    "prompt": "The watchmen guarded the gates, but the citizens were on their guard against the tyrant.",
+    "answer": "οἱ φύλακες τὰς πύλας ἐφύλαττον, οἱ δὲ πολῖται τὸν τύραννον ἐφυλάττοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "τάς",
+     "πύλας",
+     "ἐφύλαττον",
+     "δέ",
+     "πολῖται",
+     "τόν",
+     "τύραννον",
+     "ἐφυλάττοντο"
+    ]
+   },
+   {
+    "prompt": "The master let out the house, but the foreigner hired a small room.",
+    "answer": "ὁ δεσπότης τὴν οἰκίαν ἐμίσθου, ὁ δὲ ξένος μικρὸν οἴκημα ἐμισθοῦτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δεσπότης",
+     "τήν",
+     "οἰκίαν",
+     "ἐμίσθου",
+     "δέ",
+     "ξένος",
+     "μικρόν",
+     "οἴκημα",
+     "ἐμισθοῦτο"
+    ]
+   }
+  ]
  }
 ]

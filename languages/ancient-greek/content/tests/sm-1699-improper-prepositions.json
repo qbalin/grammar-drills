@@ -349,5 +349,391 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1699-improper-prepositions-t7",
+  "sectionId": "sm-1699-improper-prepositions",
+  "questions": [
+   {
+    "prompt": "Without a leader the army wandered through the mountains.",
+    "answer": "ἄνευ ἡγεμόνος τὸ στράτευμα διὰ τῶν ὀρῶν ἐπλανᾶτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄνευ",
+     "ἡγεμόνος",
+     "τὸ",
+     "στράτευμα",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "ἐπλανᾶτο"
+    ]
+   },
+   {
+    "prompt": "Apart from his companions the young man could not find the way.",
+    "answer": "ἄτερ τῶν ἑταίρων ὁ νεανίας τὴν ὁδὸν εὑρεῖν οὐκ ἐδύνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄτερ",
+     "τῶν",
+     "ἑταίρων",
+     "ὁ",
+     "νεανίας",
+     "τὴν",
+     "ὁδὸν",
+     "εὑρεῖν",
+     "οὐκ",
+     "ἐδύνατο"
+    ]
+   },
+   {
+    "prompt": "Separate from the others the priest was sacrificing to the gods.",
+    "answer": "χωρὶς τῶν ἄλλων ὁ ἱερεὺς τοῖς θεοῖς ἔθυεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χωρὶς",
+     "τῶν",
+     "ἄλλων",
+     "ὁ",
+     "ἱερεὺς",
+     "τοῖς",
+     "θεοῖς",
+     "ἔθυεν"
+    ]
+   },
+   {
+    "prompt": "Everyone perished in the storm except the helmsman.",
+    "answer": "πάντες ἐν τῷ χειμῶνι ἀπώλοντο πλὴν τοῦ κυβερνήτου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ἐν",
+     "τῷ",
+     "χειμῶνι",
+     "ἀπώλοντο",
+     "πλὴν",
+     "τοῦ",
+     "κυβερνήτου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1699-improper-prepositions-t8",
+  "sectionId": "sm-1699-improper-prepositions",
+  "questions": [
+   {
+    "prompt": "For the sake of glory the young men marched against the enemy.",
+    "answer": "τῆς δόξης ἕνεκα οἱ νεανίαι ἐπὶ τοὺς πολεμίους ἐστράτευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "δόξης",
+     "ἕνεκα",
+     "οἱ",
+     "νεανίαι",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους",
+     "ἐστράτευσαν"
+    ]
+   },
+   {
+    "prompt": "For the sake of peace the citizens sent ambassadors.",
+    "answer": "τῆς εἰρήνης χάριν οἱ πολῖται πρέσβεις ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "εἰρήνης",
+     "χάριν",
+     "οἱ",
+     "πολῖται",
+     "πρέσβεις",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "The tyrant ruled over the people after the manner of a master.",
+    "answer": "ὁ τύραννος δεσπότου δίκην τοῦ δήμου ἦρχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "δεσπότου",
+     "δίκην",
+     "τοῦ",
+     "δήμου",
+     "ἦρχεν"
+    ]
+   },
+   {
+    "prompt": "In the presence of the assembly the orator defended himself.",
+    "answer": "ἐναντίον τῆς ἐκκλησίας ὁ ῥήτωρ ἀπελογήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐναντίον",
+     "τῆς",
+     "ἐκκλησίας",
+     "ὁ",
+     "ῥήτωρ",
+     "ἀπελογήσατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1699-improper-prepositions-t9",
+  "sectionId": "sm-1699-improper-prepositions",
+  "questions": [
+   {
+    "prompt": "Near the temple stood a bronze statue of the goddess.",
+    "answer": "ἐγγὺς τοῦ ἱεροῦ χαλκοῦς ἀνδριὰς τῆς θεοῦ εἱστήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγγὺς",
+     "τοῦ",
+     "ἱεροῦ",
+     "χαλκοῦς",
+     "ἀνδριὰς",
+     "τῆς",
+     "θεοῦ",
+     "εἱστήκει"
+    ]
+   },
+   {
+    "prompt": "The travelers pitched their tents near the river.",
+    "answer": "οἱ ὁδοιπόροι πλησίον τοῦ ποταμοῦ τὰς σκηνὰς ἐπήξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὁδοιπόροι",
+     "πλησίον",
+     "τοῦ",
+     "ποταμοῦ",
+     "τὰς",
+     "σκηνὰς",
+     "ἐπήξαντο"
+    ]
+   },
+   {
+    "prompt": "Far from the sea the farmers were working the land.",
+    "answer": "πόρρω τῆς θαλάττης οἱ γεωργοὶ τὴν γῆν εἰργάζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόρρω",
+     "τῆς",
+     "θαλάττης",
+     "οἱ",
+     "γεωργοὶ",
+     "τὴν",
+     "γῆν",
+     "εἰργάζοντο"
+    ]
+   },
+   {
+    "prompt": "Between wisdom and folly there is a great difference.",
+    "answer": "μεταξὺ σοφίας καὶ ἀφροσύνης μεγάλη διαφορά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεταξὺ",
+     "σοφίας",
+     "καὶ",
+     "ἀφροσύνης",
+     "μεγάλη",
+     "διαφορά",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1699-improper-prepositions-t10",
+  "sectionId": "sm-1699-improper-prepositions",
+  "questions": [
+   {
+    "prompt": "Before the tribunal the defendant stood in silence.",
+    "answer": "ἔμπροσθεν τοῦ δικαστηρίου ὁ φεύγων σιγῇ ἔστη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔμπροσθεν",
+     "τοῦ",
+     "δικαστηρίου",
+     "ὁ",
+     "φεύγων",
+     "σιγῇ",
+     "ἔστη"
+    ]
+   },
+   {
+    "prompt": "Behind the army followed the baggage-carriers.",
+    "answer": "ὄπισθεν τοῦ στρατεύματος οἱ σκευοφόροι εἵποντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄπισθεν",
+     "τοῦ",
+     "στρατεύματος",
+     "οἱ",
+     "σκευοφόροι",
+     "εἵποντο"
+    ]
+   },
+   {
+    "prompt": "They carried the wounded men within the wall.",
+    "answer": "τοὺς τραυματίας εἴσω τοῦ τείχους ἐκόμισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "τραυματίας",
+     "εἴσω",
+     "τοῦ",
+     "τείχους",
+     "ἐκόμισαν"
+    ]
+   },
+   {
+    "prompt": "Outside the boundaries of the country the exiles were dwelling.",
+    "answer": "ἔξω τῶν ὅρων τῆς χώρας οἱ φυγάδες ᾤκουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξω",
+     "τῶν",
+     "ὅρων",
+     "τῆς",
+     "χώρας",
+     "οἱ",
+     "φυγάδες",
+     "ᾤκουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1699-improper-prepositions-t11",
+  "sectionId": "sm-1699-improper-prepositions",
+  "questions": [
+   {
+    "prompt": "The soldiers advanced as far as the enemy's wall.",
+    "answer": "οἱ στρατιῶται ἄχρι τοῦ τῶν πολεμίων τείχους προῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἄχρι",
+     "τοῦ",
+     "τῶν",
+     "πολεμίων",
+     "τείχους",
+     "προῆλθον"
+    ]
+   },
+   {
+    "prompt": "Until the present day they honor those men.",
+    "answer": "μέχρι τῆς νῦν ἡμέρας ἐκείνους τοὺς ἄνδρας τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέχρι",
+     "τῆς",
+     "νῦν",
+     "ἡμέρας",
+     "ἐκείνους",
+     "τοὺς",
+     "ἄνδρας",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "Fleeing from the battle they hastened straight to the harbor.",
+    "answer": "ἐκ τῆς μάχης φεύγοντες εὐθὺ τοῦ λιμένος ὥρμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φεύγοντες",
+     "εὐθὺ",
+     "τοῦ",
+     "λιμένος",
+     "ὥρμησαν"
+    ]
+   },
+   {
+    "prompt": "Across the strait the merchants were seeking gold.",
+    "answer": "πέραν τοῦ πορθμοῦ οἱ ἔμποροι χρυσὸν ἐζήτουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέραν",
+     "τοῦ",
+     "πορθμοῦ",
+     "οἱ",
+     "ἔμποροι",
+     "χρυσὸν",
+     "ἐζήτουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1699-improper-prepositions-t12",
+  "sectionId": "sm-1699-improper-prepositions",
+  "questions": [
+   {
+    "prompt": "Together with the dawn the ships sailed away.",
+    "answer": "ἅμα τῇ ἡμέρᾳ αἱ νῆες ἀπέπλευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τῇ",
+     "ἡμέρᾳ",
+     "αἱ",
+     "νῆες",
+     "ἀπέπλευσαν"
+    ]
+   },
+   {
+    "prompt": "The general was captured together with his soldiers.",
+    "answer": "ὁ στρατηγὸς ὁμοῦ τοῖς στρατιώταις ἑάλω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ὁμοῦ",
+     "τοῖς",
+     "στρατιώταις",
+     "ἑάλω"
+    ]
+   },
+   {
+    "prompt": "The messenger came to the general announcing what had happened.",
+    "answer": "ὁ ἄγγελος ὡς τὸν στρατηγὸν ἦλθεν ἀγγέλλων τὰ γεγενημένα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ὡς",
+     "τὸν",
+     "στρατηγὸν",
+     "ἦλθεν",
+     "ἀγγέλλων",
+     "τὰ",
+     "γεγενημένα"
+    ]
+   },
+   {
+    "prompt": "Unbeknown to his father the boy sailed off to Athens.",
+    "answer": "λάθρᾳ τοῦ πατρὸς ὁ παῖς εἰς τὰς Ἀθήνας ἀπέπλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λάθρᾳ",
+     "τοῦ",
+     "πατρὸς",
+     "ὁ",
+     "παῖς",
+     "εἰς",
+     "τὰς",
+     "Ἀθήνας",
+     "ἀπέπλευσεν"
+    ]
+   }
+  ]
  }
 ]

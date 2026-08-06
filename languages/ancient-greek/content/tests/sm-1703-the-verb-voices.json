@@ -386,5 +386,667 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t7",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "The tyrant had the captives put to death within the walls.",
+    "answer": "τοὺς αἰχμαλώτους ὁ τύραννος ἐντὸς τῶν τειχῶν ἀπέκτεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ὁ",
+     "τύραννος",
+     "ἐντὸς",
+     "τῶν",
+     "τειχῶν",
+     "ἀπέκτεινεν"
+    ]
+   },
+   {
+    "prompt": "The wealthy man had his sons instructed by the wisest teachers.",
+    "answer": "ὁ πλούσιος τοὺς υἱοὺς ὑπὸ τῶν σοφωτάτων διδασκάλων ἐπαίδευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "τοὺς",
+     "υἱοὺς",
+     "ὑπὸ",
+     "τῶν",
+     "σοφωτάτων",
+     "διδασκάλων",
+     "ἐπαίδευσεν"
+    ]
+   },
+   {
+    "prompt": "The people had the victor publicly proclaimed at the games.",
+    "answer": "ὁ δῆμος τὸν νικῶντα ἐν τοῖς ἀγῶσιν ἀνεκήρυξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "τὸν",
+     "νικῶντα",
+     "ἐν",
+     "τοῖς",
+     "ἀγῶσιν",
+     "ἀνεκήρυξεν"
+    ]
+   },
+   {
+    "prompt": "The mother had her dead son buried outside the city.",
+    "answer": "ἡ μήτηρ τὸν τεθνηκότα υἱὸν ἔξω τῆς πόλεως ἔθαψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "τὸν",
+     "τεθνηκότα",
+     "υἱὸν",
+     "ἔξω",
+     "τῆς",
+     "πόλεως",
+     "ἔθαψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t8",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "At dawn the general marched toward the enemy's camp.",
+    "answer": "ἅμα τῇ ἡμέρᾳ ὁ στρατηγὸς πρὸς τὸ τῶν πολεμίων στρατόπεδον ἤλαυνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τῇ",
+     "ἡμέρᾳ",
+     "ὁ",
+     "στρατηγὸς",
+     "πρὸς",
+     "τὸ",
+     "τῶν",
+     "πολεμίων",
+     "στρατόπεδον",
+     "ἤλαυνεν"
+    ]
+   },
+   {
+    "prompt": "The horsemen, worn out by the journey, halted beside the spring.",
+    "answer": "οἱ ἱππεῖς τῇ πορείᾳ κεκμηκότες παρὰ τὴν κρήνην κατέλυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱππεῖς",
+     "τῇ",
+     "πορείᾳ",
+     "κεκμηκότες",
+     "παρὰ",
+     "τὴν",
+     "κρήνην",
+     "κατέλυσαν"
+    ]
+   },
+   {
+    "prompt": "The sailors put in to shore near a small island.",
+    "answer": "οἱ ναῦται πρὸς νῆσον μικρὰν κατέσχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "πρὸς",
+     "νῆσον",
+     "μικρὰν",
+     "κατέσχον"
+    ]
+   },
+   {
+    "prompt": "The aged woman, having suffered many ills, died among her children.",
+    "answer": "ἡ γεραιὰ πολλὰ κακὰ παθοῦσα ἐν τοῖς τέκνοις ἐτελεύτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γεραιὰ",
+     "πολλὰ",
+     "κακὰ",
+     "παθοῦσα",
+     "ἐν",
+     "τοῖς",
+     "τέκνοις",
+     "ἐτελεύτησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t9",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "Those who fare well ought not to despise the unfortunate.",
+    "answer": "τοὺς εὖ πράττοντας οὐ χρὴ τῶν δυστυχούντων καταφρονεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "εὖ",
+     "πράττοντας",
+     "οὐ",
+     "χρὴ",
+     "τῶν",
+     "δυστυχούντων",
+     "καταφρονεῖν"
+    ]
+   },
+   {
+    "prompt": "The city's affairs are in a bad state because of the war.",
+    "answer": "τὰ τῆς πόλεως πράγματα διὰ τὸν πόλεμον κακῶς ἔχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῆς",
+     "πόλεως",
+     "πράγματα",
+     "διὰ",
+     "τὸν",
+     "πόλεμον",
+     "κακῶς",
+     "ἔχει"
+    ]
+   },
+   {
+    "prompt": "Everything is well, since the enemy have withdrawn.",
+    "answer": "καλῶς ἔχει πάντα, ἐπειδὴ οἱ πολέμιοι ἀπεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλῶς",
+     "ἔχει",
+     "πάντα",
+     "ἐπειδὴ",
+     "οἱ",
+     "πολέμιοι",
+     "ἀπεχώρησαν"
+    ]
+   },
+   {
+    "prompt": "Whoever fares badly often blames fortune rather than himself.",
+    "answer": "ὅστις ἂν κακῶς πράττῃ τὴν τύχην πολλάκις μᾶλλον ἢ ἑαυτὸν αἰτιᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἂν",
+     "κακῶς",
+     "πράττῃ",
+     "τὴν",
+     "τύχην",
+     "πολλάκις",
+     "μᾶλλον",
+     "ἢ",
+     "ἑαυτὸν",
+     "αἰτιᾶται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t10",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "Do not become a slanderer of your fellow citizens.",
+    "answer": "μὴ διάβολος γίγνου τῶν πολιτῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "διάβολος",
+     "γίγνου",
+     "τῶν",
+     "πολιτῶν"
+    ]
+   },
+   {
+    "prompt": "These men became the saviors of the whole city.",
+    "answer": "οὗτοι σωτῆρες τῆς ὅλης πόλεως ἐγένοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "σωτῆρες",
+     "τῆς",
+     "ὅλης",
+     "πόλεως",
+     "ἐγένοντο"
+    ]
+   },
+   {
+    "prompt": "The young man became an imitator of his noble father.",
+    "answer": "ὁ νεανίας μιμητὴς τοῦ γενναίου πατρὸς ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "μιμητὴς",
+     "τοῦ",
+     "γενναίου",
+     "πατρὸς",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "Let no one become a betrayer of his friends for the sake of money.",
+    "answer": "μηδεὶς προδότης τῶν φίλων ἕνεκα χρημάτων γιγνέσθω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδεὶς",
+     "προδότης",
+     "τῶν",
+     "φίλων",
+     "ἕνεκα",
+     "χρημάτων",
+     "γιγνέσθω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t11",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "The wounded soldier had a pain in his head all night.",
+    "answer": "ὁ τετρωμένος στρατιώτης τὴν κεφαλὴν ὅλην τὴν νύκτα ἤλγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τετρωμένος",
+     "στρατιώτης",
+     "τὴν",
+     "κεφαλὴν",
+     "ὅλην",
+     "νύκτα",
+     "ἤλγει"
+    ]
+   },
+   {
+    "prompt": "After many dangers the messenger arrived at the king's court.",
+    "answer": "μετὰ πολλοὺς κινδύνους ὁ ἄγγελος εἰς τὴν τοῦ βασιλέως αὐλὴν ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετὰ",
+     "πολλοὺς",
+     "κινδύνους",
+     "ὁ",
+     "ἄγγελος",
+     "εἰς",
+     "τὴν",
+     "τοῦ",
+     "βασιλέως",
+     "αὐλὴν",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "The child, frightened by the noise, was in pain and wept.",
+    "answer": "τὸ παιδίον τῷ ψόφῳ φοβηθὲν ἤλγει καὶ ἐδάκρυεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "παιδίον",
+     "τῷ",
+     "ψόφῳ",
+     "φοβηθὲν",
+     "ἤλγει",
+     "καὶ",
+     "ἐδάκρυεν"
+    ]
+   },
+   {
+    "prompt": "The hunter struck the wild boar with his spear.",
+    "answer": "ὁ κυνηγέτης τὸν ἄγριον σῦν τῷ δόρατι ἔβαλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κυνηγέτης",
+     "τὸν",
+     "ἄγριον",
+     "σῦν",
+     "τῷ",
+     "δόρατι",
+     "ἔβαλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t12",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "The judges decided that the accused man was guilty.",
+    "answer": "οἱ δικασταὶ ἔγνωσαν τὸν κατηγορούμενον ἀδικεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ἔγνωσαν",
+     "τὸν",
+     "κατηγορούμενον",
+     "ἀδικεῖν"
+    ]
+   },
+   {
+    "prompt": "The Greeks were victorious, though they were fewer in number.",
+    "answer": "οἱ Ἕλληνες ἐνίκων, καίπερ ἐλάττους ὄντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "ἐνίκων",
+     "καίπερ",
+     "ἐλάττους",
+     "ὄντες"
+    ]
+   },
+   {
+    "prompt": "It is disgraceful to be victorious by deceit rather than by valor.",
+    "answer": "αἰσχρόν ἐστι δόλῳ μᾶλλον ἢ ἀρετῇ νικᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "δόλῳ",
+     "μᾶλλον",
+     "ἢ",
+     "ἀρετῇ",
+     "νικᾶν"
+    ]
+   },
+   {
+    "prompt": "Whoever is guilty of nothing fears no accuser.",
+    "answer": "ὅστις μηδὲν ἀδικεῖ οὐδένα κατήγορον φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "μηδὲν",
+     "ἀδικεῖ",
+     "οὐδένα",
+     "κατήγορον",
+     "φοβεῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t13",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "Riding on his sweating horse, the messenger hastened toward the camp.",
+    "answer": "ἐλαύνων ἱδροῦντι τῷ ἵππῳ ὁ ἄγγελος πρὸς τὸ στρατόπεδον ἠπείγετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλαύνων",
+     "ἱδροῦντι",
+     "τῷ",
+     "ἵππῳ",
+     "ὁ",
+     "ἄγγελος",
+     "πρὸς",
+     "τὸ",
+     "στρατόπεδον",
+     "ἠπείγετο"
+    ]
+   },
+   {
+    "prompt": "At dawn the admiral set sail with the entire fleet toward Lesbos.",
+    "answer": "ἅμα τῇ ἕῳ ὁ ναύαρχος ἦρε παντὶ τῷ ναυτικῷ πρὸς τὴν Λέσβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "ὁ",
+     "ναύαρχος",
+     "ἦρε",
+     "παντὶ",
+     "τῷ",
+     "ναυτικῷ",
+     "πρὸς",
+     "τὴν",
+     "Λέσβον"
+    ]
+   },
+   {
+    "prompt": "Having marched three days, the soldiers halted near the great river.",
+    "answer": "τρεῖς ἡμέρας πορευθέντες οἱ στρατιῶται παρὰ τὸν μέγαν ποταμὸν κατέλυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τρεῖς",
+     "ἡμέρας",
+     "πορευθέντες",
+     "οἱ",
+     "στρατιῶται",
+     "παρὰ",
+     "τὸν",
+     "μέγαν",
+     "ποταμὸν",
+     "κατέλυσαν"
+    ]
+   },
+   {
+    "prompt": "Pay attention to the ambassadors who have come from Sparta.",
+    "answer": "προσέχετε τὸν νοῦν τοῖς πρέσβεσι τοῖς ἐκ τῆς Σπάρτης ἥκουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσέχετε",
+     "τὸν",
+     "νοῦν",
+     "τοῖς",
+     "πρέσβεσι",
+     "ἐκ",
+     "τῆς",
+     "Σπάρτης",
+     "ἥκουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t14",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "The city fares well, since the citizens are of one mind.",
+    "answer": "ἡ πόλις εὖ πράττει, ἐπειδὴ ὁμονοοῦσιν οἱ πολῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "εὖ",
+     "πράττει",
+     "ἐπειδὴ",
+     "ὁμονοοῦσιν",
+     "οἱ",
+     "πολῖται"
+    ]
+   },
+   {
+    "prompt": "Everything is well for us, and there is nothing to fear.",
+    "answer": "πάντα καλῶς ἔχει ἡμῖν, καὶ οὐδέν ἐστι δεινόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "καλῶς",
+     "ἔχει",
+     "ἡμῖν",
+     "καὶ",
+     "οὐδέν",
+     "ἐστι",
+     "δεινόν"
+    ]
+   },
+   {
+    "prompt": "Stop there, and go no farther!",
+    "answer": "ἔχε αὐτοῦ, καὶ μηκέτι περαιτέρω πρόβαινε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔχε",
+     "αὐτοῦ",
+     "καὶ",
+     "μηκέτι",
+     "περαιτέρω",
+     "πρόβαινε"
+    ]
+   },
+   {
+    "prompt": "As long as the general fared badly, the soldiers were disheartened.",
+    "answer": "ἕως κακῶς ἔπραττεν ὁ στρατηγός, ἠθύμουν οἱ στρατιῶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "κακῶς",
+     "ἔπραττεν",
+     "ὁ",
+     "στρατηγός",
+     "ἠθύμουν",
+     "οἱ",
+     "στρατιῶται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t15",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "The king had the palace burnt down before the enemy arrived.",
+    "answer": "ὁ βασιλεὺς τὰ βασίλεια κατέκαυσε πρὶν τοὺς πολεμίους ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τὰ",
+     "βασίλεια",
+     "κατέκαυσε",
+     "πρὶν",
+     "τοὺς",
+     "πολεμίους",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "The Athenians had the traitor put to death outside the walls.",
+    "answer": "οἱ Ἀθηναῖοι τὸν προδότην ἔξω τῶν τειχῶν ἀπέκτειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τὸν",
+     "προδότην",
+     "ἔξω",
+     "τῶν",
+     "τειχῶν",
+     "ἀπέκτειναν"
+    ]
+   },
+   {
+    "prompt": "The wealthy man built a temple to Athena on the acropolis.",
+    "answer": "ὁ πλούσιος ἱερὸν τῇ Ἀθηνᾷ ἐν τῇ ἀκροπόλει ᾠκοδόμησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "ἱερὸν",
+     "τῇ",
+     "Ἀθηνᾷ",
+     "ἐν",
+     "ἀκροπόλει",
+     "ᾠκοδόμησεν"
+    ]
+   },
+   {
+    "prompt": "After the battle they buried the dead with great honor.",
+    "answer": "μετὰ τὴν μάχην τοὺς νεκροὺς μετὰ πολλῆς τιμῆς ἔθαψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετὰ",
+     "τὴν",
+     "μάχην",
+     "τοὺς",
+     "νεκροὺς",
+     "πολλῆς",
+     "τιμῆς",
+     "ἔθαψαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1703-the-verb-voices-t16",
+  "sectionId": "sm-1703-the-verb-voices",
+  "questions": [
+   {
+    "prompt": "Do not become a betrayer of those who trust you.",
+    "answer": "μὴ γένῃ προδότης τῶν σοὶ πιστευόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "γένῃ",
+     "προδότης",
+     "τῶν",
+     "σοὶ",
+     "πιστευόντων"
+    ]
+   },
+   {
+    "prompt": "These men became avengers of their fathers' death.",
+    "answer": "οὗτοι τιμωροὶ τοῦ τῶν πατέρων θανάτου ἐγένοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "τιμωροὶ",
+     "τοῦ",
+     "τῶν",
+     "πατέρων",
+     "θανάτου",
+     "ἐγένοντο"
+    ]
+   },
+   {
+    "prompt": "The woman became a guardian of the sacred fire throughout the night.",
+    "answer": "ἡ γυνὴ φύλαξ τοῦ ἱεροῦ πυρὸς διὰ τῆς νυκτὸς ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "φύλαξ",
+     "τοῦ",
+     "ἱεροῦ",
+     "πυρὸς",
+     "διὰ",
+     "τῆς",
+     "νυκτὸς",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "May you never become guilty of injustice toward strangers.",
+    "answer": "μηδέποτε ἄδικος γένοιο περὶ τοὺς ξένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδέποτε",
+     "ἄδικος",
+     "γένοιο",
+     "περὶ",
+     "τοὺς",
+     "ξένους"
+    ]
+   }
+  ]
  }
 ]

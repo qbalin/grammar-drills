@@ -398,5 +398,789 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t7",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "The Sicilians honor the gods both in war and in peace.",
+    "answer": "Οἱ Σικελοὶ καὶ ἐν πολέμῳ καὶ ἐν εἰρήνῃ τοὺς θεοὺς τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "Σικελοὶ",
+     "καὶ",
+     "ἐν",
+     "πολέμῳ",
+     "εἰρήνῃ",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "We must send heralds either to a friend or to an enemy.",
+    "answer": "Χρὴ κήρυκας πέμπειν ἢ πρὸς φίλον ἢ πρὸς δυσμενῆ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Χρὴ",
+     "κήρυκας",
+     "πέμπειν",
+     "ἢ",
+     "πρὸς",
+     "φίλον",
+     "δυσμενῆ"
+    ]
+   },
+   {
+    "prompt": "The soldiers were oppressed both by the cold and by the hunger.",
+    "answer": "Οἱ στρατιῶται καὶ ὑπὸ τοῦ ψύχους καὶ ὑπὸ τοῦ λιμοῦ ἐπιέζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "καὶ",
+     "ὑπὸ",
+     "τοῦ",
+     "ψύχους",
+     "λιμοῦ",
+     "ἐπιέζοντο"
+    ]
+   },
+   {
+    "prompt": "The generals were deliberating both about the march and about the grain.",
+    "answer": "Οἱ στρατηγοὶ καὶ περὶ τῆς πορείᾱς καὶ περὶ τοῦ σίτου ἐβουλεύοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατηγοὶ",
+     "καὶ",
+     "περὶ",
+     "τῆς",
+     "πορείᾱς",
+     "τοῦ",
+     "σίτου",
+     "ἐβουλεύοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t8",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "The orator was speaking about the freedom and safety of the city.",
+    "answer": "Ὁ ῥήτωρ περὶ τῆς ἐλευθερίᾱς καὶ σωτηρίᾱς τῆς πόλεως ἔλεγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ῥήτωρ",
+     "περὶ",
+     "τῆς",
+     "ἐλευθερίᾱς",
+     "καὶ",
+     "σωτηρίᾱς",
+     "πόλεως",
+     "ἔλεγεν"
+    ]
+   },
+   {
+    "prompt": "They kept fighting on behalf of their children and wives.",
+    "answer": "Ὑπὲρ τῶν παιδίων καὶ γυναικῶν ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὑπὲρ",
+     "τῶν",
+     "παιδίων",
+     "καὶ",
+     "γυναικῶν",
+     "ἐμάχοντο"
+    ]
+   },
+   {
+    "prompt": "The messenger came with gifts and letters from the king.",
+    "answer": "Ὁ ἄγγελος σὺν δώροις καὶ ἐπιστολαῖς παρὰ τοῦ βασιλέως ἧκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ἄγγελος",
+     "σὺν",
+     "δώροις",
+     "καὶ",
+     "ἐπιστολαῖς",
+     "παρὰ",
+     "τοῦ",
+     "βασιλέως",
+     "ἧκεν"
+    ]
+   },
+   {
+    "prompt": "He wrote about the justice and virtue of the ancestors.",
+    "answer": "Περὶ τῆς δικαιοσύνης καὶ ἀρετῆς τῶν προγόνων ἔγραψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Περὶ",
+     "τῆς",
+     "δικαιοσύνης",
+     "καὶ",
+     "ἀρετῆς",
+     "τῶν",
+     "προγόνων",
+     "ἔγραψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t9",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "The treasure lies neither upon the earth nor beneath the sea.",
+    "answer": "Ὁ θησαυρὸς οὔτε ἐπὶ τῆς γῆς οὔτε ὑπὸ τῆς θαλάττης κεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "θησαυρὸς",
+     "οὔτε",
+     "ἐπὶ",
+     "τῆς",
+     "γῆς",
+     "ὑπὸ",
+     "θαλάττης",
+     "κεῖται"
+    ]
+   },
+   {
+    "prompt": "The birds fly both above the mountain and around the mountain.",
+    "answer": "Οἱ ὄρνιθες καὶ ὑπὲρ τοῦ ὄρους καὶ περὶ τὸ ὄρος πέτονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ὄρνιθες",
+     "καὶ",
+     "ὑπὲρ",
+     "τοῦ",
+     "ὄρους",
+     "περὶ",
+     "τὸ",
+     "ὄρος",
+     "πέτονται"
+    ]
+   },
+   {
+    "prompt": "The scouts ran now toward the camp, now away from the camp.",
+    "answer": "Οἱ σκοποὶ τοτὲ μὲν πρὸς τὸ στρατόπεδον, τοτὲ δὲ ἀπὸ τοῦ στρατοπέδου ἔθεον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "σκοποὶ",
+     "τοτὲ",
+     "μὲν",
+     "πρὸς",
+     "τὸ",
+     "στρατόπεδον",
+     "δὲ",
+     "ἀπὸ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἔθεον"
+    ]
+   },
+   {
+    "prompt": "The just man is harmed neither by friends nor by enemies.",
+    "answer": "Ὁ δίκαιος οὔτε ὑπὸ τῶν φίλων οὔτε ὑπὸ τῶν ἐχθρῶν βλάπτεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "δίκαιος",
+     "οὔτε",
+     "ὑπὸ",
+     "τῶν",
+     "φίλων",
+     "ἐχθρῶν",
+     "βλάπτεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t10",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "About three hundred of the Persians died in the battle.",
+    "answer": "Ἀπέθανον ἐν τῇ μάχῃ περὶ τριᾱκοσίους τῶν Περσῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀπέθανον",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "περὶ",
+     "τριᾱκοσίους",
+     "τῶν",
+     "Περσῶν"
+    ]
+   },
+   {
+    "prompt": "They killed about two hundred of the deserters beside the river.",
+    "answer": "Διέφθειραν εἰς διᾱκοσίους τῶν αὐτομόλων παρὰ τὸν ποταμόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Διέφθειραν",
+     "εἰς",
+     "διᾱκοσίους",
+     "τῶν",
+     "αὐτομόλων",
+     "παρὰ",
+     "τὸν",
+     "ποταμόν"
+    ]
+   },
+   {
+    "prompt": "When about five hundred had been gathered, the general led them out.",
+    "answer": "Συνειλεγμένων περὶ πεντακοσίους, ὁ στρατηγὸς αὐτοὺς ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Συνειλεγμένων",
+     "περὶ",
+     "πεντακοσίους",
+     "ὁ",
+     "στρατηγὸς",
+     "αὐτοὺς",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "About a hundred of the hoplites remained in the camp.",
+    "answer": "Περὶ ἑκατὸν τῶν ὁπλῑτῶν ἐν τῷ στρατοπέδῳ ἔμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Περὶ",
+     "ἑκατὸν",
+     "τῶν",
+     "ὁπλῑτῶν",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "ἔμειναν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t11",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "He is honored by those by whom he wishes to be honored.",
+    "answer": "Τῑμᾶται ὑπὸ ὧν βούλεται τῑμᾶσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τῑμᾶται",
+     "ὑπὸ",
+     "ὧν",
+     "βούλεται",
+     "τῑμᾶσθαι"
+    ]
+   },
+   {
+    "prompt": "The young man stayed in the same city in which he was born.",
+    "answer": "Ὁ νεᾱνίᾱς ἔμεινεν ἐν τῇ αὐτῇ πόλει ἐν ᾗ ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "νεᾱνίᾱς",
+     "ἔμεινεν",
+     "ἐν",
+     "τῇ",
+     "αὐτῇ",
+     "πόλει",
+     "ᾗ",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "Toward whatever each is fitted by nature, toward that he must turn himself.",
+    "answer": "Πρὸς ὃ ἕκαστος πέφῡκεν, πρὸς τοῦτο τρέπεσθαι δεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πρὸς",
+     "ὃ",
+     "ἕκαστος",
+     "πέφῡκεν",
+     "τοῦτο",
+     "τρέπεσθαι",
+     "δεῖ"
+    ]
+   },
+   {
+    "prompt": "He was harmed by those at whose hands he had once fared well.",
+    "answer": "Ἐβλάβη ὑπὸ ὧν εὖ ἐπεπόνθει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐβλάβη",
+     "ὑπὸ",
+     "ὧν",
+     "εὖ",
+     "ἐπεπόνθει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t12",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "Care for the city as for a father.",
+    "answer": "Τῆς πόλεως ὡς περὶ πατρὸς ἐπιμελεῖσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τῆς",
+     "πόλεως",
+     "ὡς",
+     "περὶ",
+     "πατρὸς",
+     "ἐπιμελεῖσθε"
+    ]
+   },
+   {
+    "prompt": "Speak to the jurors as to men who know the truth.",
+    "answer": "Λέγε τοῖς δικασταῖς ὡς πρὸς εἰδότας τὴν ἀλήθειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Λέγε",
+     "τοῖς",
+     "δικασταῖς",
+     "ὡς",
+     "πρὸς",
+     "εἰδότας",
+     "τὴν",
+     "ἀλήθειαν"
+    ]
+   },
+   {
+    "prompt": "They are anxious about wealth rather than about virtue.",
+    "answer": "Περὶ πλούτου μᾶλλον ἢ ἀρετῆς φροντίζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Περὶ",
+     "πλούτου",
+     "μᾶλλον",
+     "ἢ",
+     "ἀρετῆς",
+     "φροντίζουσιν"
+    ]
+   },
+   {
+    "prompt": "They owe their ruin to nothing so much as to doing such things.",
+    "answer": "Παρὰ οὐδὲν οὕτως ἀπώλοντο ὡς τὸ τοιαῦτα ποιεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Παρὰ",
+     "οὐδὲν",
+     "οὕτως",
+     "ἀπώλοντο",
+     "ὡς",
+     "τὸ",
+     "τοιαῦτα",
+     "ποιεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t13",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "The Greeks fought bravely both by land and by sea.",
+    "answer": "οἱ Ἕλληνες ἀνδρείως ἐμάχοντο καὶ κατὰ γῆν καὶ κατὰ θάλατταν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "ἀνδρείως",
+     "ἐμάχοντο",
+     "καί",
+     "κατά",
+     "γῆν",
+     "θάλατταν"
+    ]
+   },
+   {
+    "prompt": "The wise man is honored both in war and in the other occupations of life.",
+    "answer": "ὁ σοφὸς τιμᾶται καὶ κατὰ πόλεμον καὶ κατὰ τὴν ἄλλην δίαιταν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "τιμᾶται",
+     "καί",
+     "κατά",
+     "πόλεμον",
+     "τήν",
+     "ἄλλην",
+     "δίαιταν"
+    ]
+   },
+   {
+    "prompt": "We will send messengers both to the allies and to the enemies.",
+    "answer": "πέμψομεν ἀγγέλους καὶ πρὸς τοὺς συμμάχους καὶ πρὸς τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμψομεν",
+     "ἀγγέλους",
+     "καί",
+     "πρός",
+     "τούς",
+     "συμμάχους",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "The young man was in earnest both about virtue and about honor.",
+    "answer": "ὁ νεανίσκος ἐσπούδαζε καὶ περὶ ἀρετῆς καὶ περὶ τιμῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίσκος",
+     "ἐσπούδαζε",
+     "καί",
+     "περί",
+     "ἀρετῆς",
+     "τιμῆς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t14",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "The philosopher was conversing about wisdom and virtue.",
+    "answer": "ὁ φιλόσοφος διελέγετο περὶ σοφίας καὶ ἀρετῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "διελέγετο",
+     "περί",
+     "σοφίας",
+     "καί",
+     "ἀρετῆς"
+    ]
+   },
+   {
+    "prompt": "They were deliberating about the safety and freedom of the citizens.",
+    "answer": "ἐβουλεύοντο περὶ τῆς σωτηρίας καὶ ἐλευθερίας τῶν πολιτῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλεύοντο",
+     "περί",
+     "τῆς",
+     "σωτηρίας",
+     "καί",
+     "ἐλευθερίας",
+     "τῶν",
+     "πολιτῶν"
+    ]
+   },
+   {
+    "prompt": "The soldiers were fighting on behalf of their children and wives.",
+    "answer": "οἱ στρατιῶται ἐμάχοντο ὑπὲρ τῶν τέκνων καὶ γυναικῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐμάχοντο",
+     "ὑπέρ",
+     "τῶν",
+     "τέκνων",
+     "καί",
+     "γυναικῶν"
+    ]
+   },
+   {
+    "prompt": "He wrote about the laws and customs of the Persians.",
+    "answer": "ἔγραψε περὶ τῶν νόμων καὶ ἐθῶν τῶν Περσῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγραψε",
+     "περί",
+     "τῶν",
+     "νόμων",
+     "καί",
+     "ἐθῶν",
+     "Περσῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t15",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "The gods are neither upon the earth nor beneath the earth.",
+    "answer": "οἱ θεοὶ οὔτε ἐπὶ γῆς εἰσιν οὔτε ὑπὸ γῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοί",
+     "οὔτε",
+     "ἐπί",
+     "γῆς",
+     "εἰσιν",
+     "ὑπό"
+    ]
+   },
+   {
+    "prompt": "The road leads both toward the sea and away from the sea.",
+    "answer": "ἡ ὁδὸς φέρει καὶ πρὸς τὴν θάλατταν καὶ ἀπὸ τῆς θαλάττης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ὁδός",
+     "φέρει",
+     "καί",
+     "πρός",
+     "τήν",
+     "θάλατταν",
+     "ἀπό",
+     "τῆς",
+     "θαλάττης"
+    ]
+   },
+   {
+    "prompt": "The ships were sailing both into the harbor and out of the harbor.",
+    "answer": "αἱ νῆες ἔπλεον καὶ εἰς τὸν λιμένα καὶ ἐκ τοῦ λιμένος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "νῆες",
+     "ἔπλεον",
+     "καί",
+     "εἰς",
+     "τόν",
+     "λιμένα",
+     "ἐκ",
+     "τοῦ",
+     "λιμένος"
+    ]
+   },
+   {
+    "prompt": "The messenger came both from the king and to the king.",
+    "answer": "ὁ ἄγγελος ἦλθε καὶ παρὰ τοῦ βασιλέως καὶ πρὸς τὸν βασιλέα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἦλθε",
+     "καί",
+     "παρά",
+     "τοῦ",
+     "βασιλέως",
+     "πρός",
+     "τόν",
+     "βασιλέα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t16",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "The tyrant was hated by those whom he ruled.",
+    "answer": "ὁ τύραννος ἐμισεῖτο ὑπὸ ὧν ἦρχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "ἐμισεῖτο",
+     "ὑπό",
+     "ὧν",
+     "ἦρχεν"
+    ]
+   },
+   {
+    "prompt": "He was fighting in that war in which his brother died.",
+    "answer": "ἐμάχετο ἐν ἐκείνῳ τῷ πολέμῳ ᾧ ὁ ἀδελφὸς αὐτοῦ ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμάχετο",
+     "ἐν",
+     "ἐκείνῳ",
+     "τῷ",
+     "πολέμῳ",
+     "ᾧ",
+     "ὁ",
+     "ἀδελφός",
+     "αὐτοῦ",
+     "ἀπέθανεν"
+    ]
+   },
+   {
+    "prompt": "The teacher is loved by those for whom he cares.",
+    "answer": "ὁ διδάσκαλος φιλεῖται ὑπὸ ὧν ἐπιμελεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "φιλεῖται",
+     "ὑπό",
+     "ὧν",
+     "ἐπιμελεῖται"
+    ]
+   },
+   {
+    "prompt": "The people are persuaded by those to whom they gladly listen.",
+    "answer": "ὁ δῆμος πείθεται ὑπὸ ὧν ἡδέως ἀκούει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "πείθεται",
+     "ὑπό",
+     "ὧν",
+     "ἡδέως",
+     "ἀκούει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t17",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "To whatever work each man is naturally suited, to this he must apply himself.",
+    "answer": "πρὸς ὃ ἕκαστος πέφυκεν, πρὸς τοῦτο δεῖ αὐτὸν σπουδάζειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρός",
+     "ὅ",
+     "ἕκαστος",
+     "πέφυκεν",
+     "τοῦτο",
+     "δεῖ",
+     "αὐτόν",
+     "σπουδάζειν"
+    ]
+   },
+   {
+    "prompt": "About whatever things he was ignorant, about these he kept questioning the wise.",
+    "answer": "περὶ ὧν ἠγνόει, περὶ τούτων τοὺς σοφοὺς ἠρώτα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περί",
+     "ὧν",
+     "ἠγνόει",
+     "τούτων",
+     "τούς",
+     "σοφούς",
+     "ἠρώτα"
+    ]
+   },
+   {
+    "prompt": "Wealth arises from these, from those who work the land.",
+    "answer": "ὁ πλοῦτος γίγνεται ἐκ τούτων, ἐκ τῶν τὴν γῆν ἐργαζομένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλοῦτος",
+     "γίγνεται",
+     "ἐκ",
+     "τούτων",
+     "τῶν",
+     "τήν",
+     "γῆν",
+     "ἐργαζομένων"
+    ]
+   },
+   {
+    "prompt": "He learned these things from these men, from those who had seen the war.",
+    "answer": "ταῦτα ἔμαθε παρὰ τούτων, παρὰ τῶν τὸν πόλεμον ἑωρακότων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἔμαθε",
+     "παρά",
+     "τούτων",
+     "τῶν",
+     "τόν",
+     "πόλεμον",
+     "ἑωρακότων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-t18",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "About a thousand of the citizens fled out of the city.",
+    "answer": "ἔφυγον περὶ χιλίους τῶν πολιτῶν ἐκ τῆς πόλεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφυγον",
+     "περί",
+     "χιλίους",
+     "τῶν",
+     "πολιτῶν",
+     "ἐκ",
+     "τῆς",
+     "πόλεως"
+    ]
+   },
+   {
+    "prompt": "They killed about five hundred in the battle.",
+    "answer": "διέφθειραν εἰς πεντακοσίους ἐν τῇ μάχῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διέφθειραν",
+     "εἰς",
+     "πεντακοσίους",
+     "ἐν",
+     "τῇ",
+     "μάχῃ"
+    ]
+   },
+   {
+    "prompt": "They captured about three hundred of the enemy.",
+    "answer": "ἔλαβον περὶ τριακοσίους τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλαβον",
+     "περί",
+     "τριακοσίους",
+     "τῶν",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "Had it depended on the generals, the army would have been saved.",
+    "answer": "διὰ γε τοὺς στρατηγοὺς ἐσώθη ἂν ἡ στρατιά.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διά",
+     "γε",
+     "τούς",
+     "στρατηγούς",
+     "ἐσώθη",
+     "ἄν",
+     "ἡ",
+     "στρατιά"
+    ]
+   }
+  ]
  }
 ]

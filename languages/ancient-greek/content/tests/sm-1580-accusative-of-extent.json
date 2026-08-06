@@ -374,5 +374,399 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t7",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The sailors, fearing the storm, waited three months in the harbor.",
+    "answer": "οἱ ναῦται, τὸν χειμῶνα φοβούμενοι, τρεῖς μῆνας ἐν τῷ λιμένι ἔμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τὸν",
+     "χειμῶνα",
+     "φοβούμενοι",
+     "τρεῖς",
+     "μῆνας",
+     "ἐν",
+     "τῷ",
+     "λιμένι",
+     "ἔμειναν"
+    ]
+   },
+   {
+    "prompt": "The priests offered sacrifices for the whole festival.",
+    "answer": "οἱ ἱερεῖς ὅλην τὴν ἑορτὴν θυσίας ἔθυον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱερεῖς",
+     "ὅλην",
+     "τὴν",
+     "ἑορτὴν",
+     "θυσίας",
+     "ἔθυον"
+    ]
+   },
+   {
+    "prompt": "Having promised to help, he besieged the city for two years.",
+    "answer": "ἐπαγγειλάμενος βοηθήσειν, δύο ἔτη τὴν πόλιν ἐπολιόρκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπαγγειλάμενος",
+     "βοηθήσειν",
+     "δύο",
+     "ἔτη",
+     "τὴν",
+     "πόλιν",
+     "ἐπολιόρκει"
+    ]
+   },
+   {
+    "prompt": "The old woman, having lived eighty years, was honored by all.",
+    "answer": "ἡ γραῦς, ὀγδοήκοντα ἔτη βιώσασα, ὑπὸ πάντων ἐτιμᾶτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "ὀγδοήκοντα",
+     "ἔτη",
+     "βιώσασα",
+     "ὑπὸ",
+     "πάντων",
+     "ἐτιμᾶτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t8",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The camp is distant from the river twenty stades.",
+    "answer": "τὸ στρατόπεδον ἀπέχει τοῦ ποταμοῦ σταδίους εἴκοσι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στρατόπεδον",
+     "ἀπέχει",
+     "τοῦ",
+     "ποταμοῦ",
+     "σταδίους",
+     "εἴκοσι"
+    ]
+   },
+   {
+    "prompt": "The messenger, running the whole way, announced the victory.",
+    "answer": "ὁ ἄγγελος, πᾶσαν τὴν ὁδὸν δραμών, τὴν νίκην ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "πᾶσαν",
+     "τὴν",
+     "ὁδὸν",
+     "δραμών",
+     "νίκην",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers advanced five parasangs through the mountains.",
+    "answer": "οἱ στρατιῶται διὰ τῶν ὀρῶν πέντε παρασάγγας προῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "πέντε",
+     "παρασάγγας",
+     "προῆλθον"
+    ]
+   },
+   {
+    "prompt": "The tower, being a hundred feet high, was visible from afar.",
+    "answer": "ὁ πύργος, ἑκατὸν πόδας ὑψηλὸς ὤν, πόρρωθεν ἑωρᾶτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πύργος",
+     "ἑκατὸν",
+     "πόδας",
+     "ὑψηλὸς",
+     "ὤν",
+     "πόρρωθεν",
+     "ἑωρᾶτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t9",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "This is the third year since the general died.",
+    "answer": "τρίτον ἔτος τουτὶ ὁ στρατηγὸς τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τρίτον",
+     "ἔτος",
+     "τουτὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "τέθνηκεν"
+    ]
+   },
+   {
+    "prompt": "Cyrus, being already forty years old, marched against his brother.",
+    "answer": "Κῦρος, τετταράκοντα ἔτη ἤδη γεγονώς, ἐπὶ τὸν ἀδελφὸν ἐστράτευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "τετταράκοντα",
+     "ἔτη",
+     "ἤδη",
+     "γεγονώς",
+     "ἐπὶ",
+     "τὸν",
+     "ἀδελφὸν",
+     "ἐστράτευσεν"
+    ]
+   },
+   {
+    "prompt": "My father has now been ill for the fourth day.",
+    "answer": "ὁ πατὴρ νοσεῖ τετάρτην ἤδη ἡμέραν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατὴρ",
+     "νοσεῖ",
+     "τετάρτην",
+     "ἤδη",
+     "ἡμέραν"
+    ]
+   },
+   {
+    "prompt": "This is the fourth year now that Philip is besieging the city.",
+    "answer": "τέταρτον ἔτος τουτὶ Φίλιππος τὴν πόλιν πολιορκεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τέταρτον",
+     "ἔτος",
+     "τουτὶ",
+     "Φίλιππος",
+     "τὴν",
+     "πόλιν",
+     "πολιορκεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t10",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The assembly deliberated the entire day about peace.",
+    "answer": "ἡ ἐκκλησία ὅλην τὴν ἡμέραν περὶ τῆς εἰρήνης ἐβουλεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐκκλησία",
+     "ὅλην",
+     "τὴν",
+     "ἡμέραν",
+     "περὶ",
+     "τῆς",
+     "εἰρήνης",
+     "ἐβουλεύετο"
+    ]
+   },
+   {
+    "prompt": "Having captured the citadel, they guarded it many nights.",
+    "answer": "τὴν ἀκρόπολιν ἑλόντες, πολλὰς νύκτας αὐτὴν ἐφύλαττον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἀκρόπολιν",
+     "ἑλόντες",
+     "πολλὰς",
+     "νύκτας",
+     "αὐτὴν",
+     "ἐφύλαττον"
+    ]
+   },
+   {
+    "prompt": "The philosopher taught in the marketplace for many years.",
+    "answer": "ὁ φιλόσοφος πολλὰ ἔτη ἐν τῇ ἀγορᾷ ἐδίδασκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "πολλὰ",
+     "ἔτη",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἐδίδασκεν"
+    ]
+   },
+   {
+    "prompt": "The horsemen pursued the fleeing enemy thirty stades.",
+    "answer": "οἱ ἱππεῖς τοὺς φεύγοντας πολεμίους τριάκοντα σταδίους ἐδίωξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱππεῖς",
+     "τοὺς",
+     "φεύγοντας",
+     "πολεμίους",
+     "τριάκοντα",
+     "σταδίους",
+     "ἐδίωξαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t11",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The road, stretching many stades, leads to the sea.",
+    "answer": "ἡ ὁδὸς πολλοὺς σταδίους τείνουσα εἰς τὴν θάλατταν φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ὁδὸς",
+     "πολλοὺς",
+     "σταδίους",
+     "τείνουσα",
+     "εἰς",
+     "τὴν",
+     "θάλατταν",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "The wall, being ten feet thick, held off the enemy.",
+    "answer": "τὸ τεῖχος, δέκα πόδας παχὺ ὄν, τοὺς πολεμίους ἀπεῖργεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τεῖχος",
+     "δέκα",
+     "πόδας",
+     "παχὺ",
+     "ὄν",
+     "τοὺς",
+     "πολεμίους",
+     "ἀπεῖργεν"
+    ]
+   },
+   {
+    "prompt": "They marched over rough roads toward the mountain.",
+    "answer": "τραχείας ὁδοὺς πρὸς τὸ ὄρος ἐπορεύοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τραχείας",
+     "ὁδοὺς",
+     "πρὸς",
+     "τὸ",
+     "ὄρος",
+     "ἐπορεύοντο"
+    ]
+   },
+   {
+    "prompt": "The island is distant from the mainland only a few stades.",
+    "answer": "ἡ νῆσος ἀπέχει τῆς ἠπείρου ὀλίγους μόνον σταδίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νῆσος",
+     "ἀπέχει",
+     "τῆς",
+     "ἠπείρου",
+     "ὀλίγους",
+     "μόνον",
+     "σταδίους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-t12",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "The boy, being twelve years old, already speaks well.",
+    "answer": "ὁ παῖς, δώδεκα ἔτη γεγονώς, ἤδη εὖ λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "δώδεκα",
+     "ἔτη",
+     "γεγονώς",
+     "ἤδη",
+     "εὖ",
+     "λέγει"
+    ]
+   },
+   {
+    "prompt": "Having endured the siege many months, the citizens surrendered themselves.",
+    "answer": "πολλοὺς μῆνας τὴν πολιορκίαν ὑπομείναντες, οἱ πολῖται παρέδοσαν ἑαυτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὺς",
+     "μῆνας",
+     "τὴν",
+     "πολιορκίαν",
+     "ὑπομείναντες",
+     "οἱ",
+     "πολῖται",
+     "παρέδοσαν",
+     "ἑαυτούς"
+    ]
+   },
+   {
+    "prompt": "The general ruled the allies twenty years without war.",
+    "answer": "ὁ στρατηγὸς εἴκοσι ἔτη τῶν συμμάχων ἄνευ πολέμου ἦρξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "εἴκοσι",
+     "ἔτη",
+     "τῶν",
+     "συμμάχων",
+     "ἄνευ",
+     "πολέμου",
+     "ἦρξεν"
+    ]
+   },
+   {
+    "prompt": "This is the second year now since the plague fell upon the city.",
+    "answer": "δεύτερον ἔτος τουτὶ ἡ νόσος τῇ πόλει ἐνέπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεύτερον",
+     "ἔτος",
+     "τουτὶ",
+     "ἡ",
+     "νόσος",
+     "τῇ",
+     "πόλει",
+     "ἐνέπεσεν"
+    ]
+   }
+  ]
  }
 ]
