@@ -9,7 +9,8 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseProfile } from "@lang-tutor/core";
+import { bisect, parseProfile } from "@lang-tutor/core";
+import { joinLemmaIndex } from "./lemma-map.mjs";
 
 export const REPO = dirname(dirname(dirname(fileURLToPath(import.meta.url))));
 
@@ -53,10 +54,107 @@ export function loadTests(dir) {
   return out;
 }
 
+/**
+ * The pack's dictionary, in the split shape it ships: the distinct entries plus
+ * the sorted form index over them. See `scripts/lib/lemma-map.mjs` for why it is
+ * split, and `@lang-tutor/core`'s `LemmaIndex` for the reader a device uses.
+ *
+ * Packs built before the split shipped one denormalized `lemmas.json.gz`, and
+ * this still reads those — `build-lemmas.mjs --merge` has to be able to open the
+ * map a pack already shipped in order to keep the keys a rebuild would drop, and
+ * that map is the old shape right up until the rebuild replaces it.
+ *
+ * `lookup` and `has` bisect rather than building a map, so asking about a
+ * handful of forms costs a handful of probes. `forms()` streams the keys for the
+ * few callers that want all of them.
+ */
+export function loadLemmaIndex(dir) {
+  const entriesPath = join(dir, "content", "lemmas.json.gz");
+  const formsPath = join(dir, "content", "forms.txt.gz");
+  const parsed = JSON.parse(gunzipSync(readFileSync(entriesPath)).toString("utf8"));
+
+  if (!Array.isArray(parsed)) {
+    // The old shape. Adapt it rather than rejecting it, so a pack that has not
+    // been rebuilt yet still answers every question this one does.
+    const map = parsed;
+    return {
+      shape: "map",
+      entries: null,
+      index: null,
+      lookup: (key) => map[key] ?? [],
+      has: (key) => key in map,
+      forms: () => Object.keys(map),
+      size: () => Object.keys(map).length,
+      toMap: () => map,
+    };
+  }
+
+  if (!existsSync(formsPath)) {
+    throw new Error(
+      `${entriesPath} is a lemma table but ${formsPath} is missing — ` +
+        `the two are written together by scripts/build-lemmas.mjs. Rebuild the pack.`,
+    );
+  }
+  const index = gunzipSync(readFileSync(formsPath)).toString("utf8");
+  const ids = (key) => {
+    const line = bisect(index, key);
+    return line === null
+      ? []
+      : line
+          .split(",")
+          .filter(Boolean)
+          .map((n) => parsed[Number(n)])
+          .filter(Boolean);
+  };
+  return {
+    shape: "split",
+    entries: parsed,
+    index,
+    lookup: ids,
+    has: (key) => bisect(index, key) !== null,
+    forms: function* () {
+      let at = 0;
+      while (at < index.length) {
+        const eol = index.indexOf("\n", at);
+        const end = eol === -1 ? index.length : eol;
+        const tab = index.indexOf("\t", at);
+        yield index.slice(at, tab === -1 || tab > end ? end : tab);
+        at = end + 1;
+      }
+    },
+    size: () => parsed.length,
+    toMap: () => joinLemmaIndex({ entries: parsed, lines: index.split("\n") }),
+  };
+}
+
+/**
+ * Just the entry table — the distinct lemmas, without the form index.
+ *
+ * What a pack's `citations.mjs` wants: it rewrites one citation per lemma and
+ * has no interest in which forms point at it. That used to mean collapsing a
+ * map of 300k repeated records; now it is the file as written.
+ */
+export function loadLemmaTable(dir) {
+  const path = join(dir, "content", "lemmas.json.gz");
+  const parsed = JSON.parse(gunzipSync(readFileSync(path)).toString("utf8"));
+  if (!Array.isArray(parsed)) {
+    throw new Error(
+      `${path} is the old denormalized map, not a lemma table.\n` +
+        `Rebuild the pack with scripts/build-lemmas.mjs first.`,
+    );
+  }
+  return parsed;
+}
+
+/**
+ * The whole dictionary as `Record<form, LemmaEntry[]>`.
+ *
+ * The expensive direction, and increasingly so — this is the object the split
+ * shape exists to avoid building. Prefer `loadLemmaIndex`; reach for this only
+ * when every form really is the question.
+ */
 export function loadLemmas(dir) {
-  return JSON.parse(
-    gunzipSync(readFileSync(join(dir, "content", "lemmas.json.gz"))).toString("utf8"),
-  );
+  return loadLemmaIndex(dir).toMap();
 }
 
 export function percentile(sorted, p) {

@@ -227,16 +227,23 @@ function collapseRepeats(citation) {
 
 // --- rewrite ----------------------------------------------------------------
 
-const map = JSON.parse(gunzipSync(readFileSync(MAP)).toString("utf8"));
-
-/** `lemma|pos` -> the entry as first met, so each is looked up once. */
-const distinct = new Map();
-for (const entries of Object.values(map)) {
-  for (const e of entries) {
-    const key = `${e.lemma}|${e.pos}`;
-    if (!distinct.has(key)) distinct.set(key, e);
-  }
+const table = JSON.parse(gunzipSync(readFileSync(MAP)).toString("utf8"));
+if (!Array.isArray(table)) {
+  console.error(
+    `${MAP} is the old denormalized map. Rebuild the pack first:\n` +
+      `  node --import tsx scripts/build-lemmas.mjs --pack ${PACK} --ref ...`,
+  );
+  process.exit(1);
 }
+
+/**
+ * `lemma|pos` -> the entry, which is now the only copy of it.
+ *
+ * This used to collapse a map that repeated the entry under each of its form
+ * keys. The pack ships the distinct table itself now, so the table *is* the
+ * distinct list and a rewrite is one assignment rather than 240,000.
+ */
+const distinct = new Map(table.map((e) => [`${e.lemma}|${e.pos}`, e]));
 
 const rewritten = new Map(); // `lemma|pos` -> new citation
 const stats = { verb: 0, verbFull: 0, adj: 0, adjCollapsed: 0, noun: 0, marked: 0, missed: [] };
@@ -289,16 +296,12 @@ for (const [key, entry] of distinct) {
   }
 }
 
-// The map repeats an entry object per form key (242k forms, 6.7k lemmas), so
-// the table above is applied in one pass over every occurrence.
 let touched = 0;
-for (const entries of Object.values(map)) {
-  for (const e of entries) {
-    const citation = rewritten.get(`${e.lemma}|${e.pos}`);
-    if (citation) {
-      e.citation = citation;
-      touched += 1;
-    }
+for (const e of table) {
+  const citation = rewritten.get(`${e.lemma}|${e.pos}`);
+  if (citation) {
+    e.citation = citation;
+    touched += 1;
   }
 }
 
@@ -321,11 +324,11 @@ console.log(`Unimproved ${stats.missed.length} entries the dictionary could not 
 console.log(`  e.g. ${sample("verb", 3).join(" · ")}`);
 console.log(`       ${sample("adj", 3).join(" · ")}`);
 console.log(`       ${sample("noun", 3).join(" · ")}`);
-console.log(`${touched} of the map's entries updated`);
+console.log(`${touched} of the table's ${table.length} entries updated`);
 
 if (DRY) {
   console.log("\n--dry: nothing written");
 } else {
-  writeFileSync(MAP, gzipSync(Buffer.from(JSON.stringify(map), "utf8"), { level: 9 }));
+  writeFileSync(MAP, gzipSync(Buffer.from(JSON.stringify(table), "utf8"), { level: 9 }));
   console.log(`\nWrote ${MAP} — now run scripts/build-web-content.mjs`);
 }

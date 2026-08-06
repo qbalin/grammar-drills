@@ -655,9 +655,9 @@ export function App({ content, session, storage }: Props) {
   /**
    * Show or hide the words behind the question.
    *
-   * The dictionary is ~930 KB and is fetched only when something asks for it —
-   * an explicit open, never a prefetch, because most questions are answered
-   * without ever wanting this.
+   * The dictionary is several megabytes and is fetched only when something asks
+   * for it — an explicit open, never a prefetch, because most questions are
+   * answered without ever wanting this.
    */
   const toggleVocab = () => {
     if (!showVocab) ensureDictionary();

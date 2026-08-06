@@ -146,13 +146,25 @@ describe("the fold", () => {
 });
 
 describe("the fold against the shipped dictionary", () => {
-  // The dictionary's keys ARE fold output — `build-web-content.mjs` writes a
-  // sorted index of them that the web app bisects. So a fold that no longer
-  // reproduces its own keys would miss every lookup while the app looked
-  // perfectly healthy. Idempotence over the real key set is that check.
+  type Entry = { lemma: string; pos: string; citation: string };
+
+  /** The distinct entries, and the sorted form index that points into them. */
+  const table = (): Entry[] =>
+    JSON.parse(
+      gunzipSync(readFileSync(join(here, "content", "lemmas.json.gz"))).toString("utf8"),
+    );
+  const formLines = (): string[] =>
+    gunzipSync(readFileSync(join(here, "content", "forms.txt.gz")))
+      .toString("utf8")
+      .split("\n");
+  const formKeys = () => formLines().map((line) => line.split("\t")[0]);
+
+  // The dictionary's keys ARE fold output — `build-lemmas.mjs` writes a sorted
+  // index of them that both apps bisect. So a fold that no longer reproduces
+  // its own keys would miss every lookup while the app looked perfectly
+  // healthy. Idempotence over the real key set is that check.
   it("leaves every key of the shipped dictionary unchanged", () => {
-    const raw = gunzipSync(readFileSync(join(here, "content", "lemmas.json.gz"))).toString("utf8");
-    const keys = Object.keys(JSON.parse(raw) as Record<string, unknown>);
+    const keys = formKeys();
     expect(keys.length).toBeGreaterThan(200_000);
 
     const moved: string[] = [];
@@ -164,26 +176,30 @@ describe("the fold against the shipped dictionary", () => {
   });
 
   it("folds inflected forms as written onto the keys the dictionary holds", () => {
-    const raw = gunzipSync(readFileSync(join(here, "content", "lemmas.json.gz"))).toString("utf8");
-    const map = JSON.parse(raw) as Record<string, unknown[]>;
+    const keys = new Set(formKeys());
     // Real forms as a sentence would write them, accents and all: each has to
     // land on an entry, which is the whole job of the fold at runtime.
     const written = [
       "ἀνθρώπου", "λόγοις", "ἔλυσαν", "πόλεως", "σώματα", "στρατιῶται",
       "γυναῖκα", "ἐποίησε", "βασιλέως", "ἦλθον", "οἰκίαν", "ΛΟΓΟΣ",
     ];
-    const missed = written.filter((w) => !map[fold(w)]);
+    const missed = written.filter((w) => !keys.has(fold(w)));
     expect(missed).toEqual([]);
   });
 
   it("cites a noun with its article and a verb by its principal parts", () => {
     // What citations.mjs is for: the plain headword tells a reader neither the
     // gender nor how the word declines.
-    const raw = gunzipSync(readFileSync(join(here, "content", "lemmas.json.gz"))).toString("utf8");
-    const map = JSON.parse(raw) as Record<string, Array<{ lemma: string; citation: string }>>;
+    const entries = table();
+    const byForm = new Map(
+      formLines().map((line) => {
+        const [form, ids] = line.split("\t");
+        return [form, (ids ?? "").split(",").filter(Boolean).map(Number)];
+      }),
+    );
     const cite = (word: string) => {
-      const candidates = map[fold(word)] ?? [];
-      return (candidates.find((c) => c.lemma === word) ?? candidates[0])?.citation;
+      const candidates = (byForm.get(fold(word)) ?? []).map((i) => entries[i]);
+      return (candidates.find((c) => c?.lemma === word) ?? candidates[0])?.citation;
     };
     expect(cite("λόγος")).toBe("ὁ λόγος, τοῦ λόγου");
     expect(cite("πόλις")).toBe("ἡ πόλις, τῆς πόλεως");

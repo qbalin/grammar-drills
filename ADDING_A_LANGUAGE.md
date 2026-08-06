@@ -36,7 +36,8 @@ languages/ancient-greek/
   gen/config.mjs        the prompt, the band, the function words       step 7
   citations.mjs         how this language cites a word                 step 6
   icon.mjs              the glyph: capsules, or an SVG path            step 8
-  content/              grammar.json · tests/ · lemmas.json.gz         built
+  content/              grammar.json · tests/ · lemmas.json.gz ·
+                        forms.txt.gz                                   built
   BASELINE.json         what it measured when it last passed           step 9
   REVIEW.md             the two gates a human has to sign              steps 4, 7
 ```
@@ -267,15 +268,34 @@ unsigned gate is an unchecked gate.
 
 ---
 
-## 5. Build the dictionary map
+## 5. Build the dictionary
 
 ```bash
-node --import tsx scripts/build-lemmas.mjs --pack languages/ancient-greek --ref $LANG_REF
+node --import tsx scripts/build-lemmas.mjs --pack languages/ancient-greek \
+  --ref $LANG_REF --max-rank 25000
 ```
 
-This makes `content/lemmas.json.gz`: folded form → ranked lemma candidates. It
-takes the top ~7,000 lemmas by frequency, pulls each one's inflection table, and
-keys every form under the fold.
+This makes two files — `content/lemmas.json.gz`, the distinct lemma entries, and
+`content/forms.txt.gz`, a sorted `form\tidx[,idx…]` index over them. Together
+they are folded form → ranked lemma candidates; they are split because the map
+they replaced repeated a gloss under every form and inflated to 116 MB for a
+third of the words a pack now ships. Both apps bisect the index in place
+(`@lang-tutor/core`'s `LemmaIndex`), so neither ever builds the big object.
+
+**Ship every word the dictionary has, with a gloss.** Not only the words your
+corpus attests. `build-lemmas` does this by default: the *ranked* half is the
+frequency list joined against the dictionary, and the *tail* is every other
+lemma entry, unranked and briefly glossed. `--max-rank` sets how far down the
+frequency list the ranked half goes — pass more than the list is long.
+
+This matters more than it looks. A frequency list is a corpus, and a corpus is a
+few works; Latin's is seven. Ship the ranked half alone and a student who meets
+a perfectly ordinary word those authors happened not to use is told it is not a
+word. That is what happened with `reste`, and nothing in the pipeline complained
+— every gate was green. `scripts/reference/README.md` has the full account under
+"How much to ship"; the short version is that the tail costs about 2 MB gzipped
+on a download that already happens once, and carries no `rank`, which is what
+keeps the attestation gates exactly as strict as they were.
 
 **Gate C.** Tokenise a page of real text in the language and check the share
 that resolves — aim for ≥95% for a modern language, ≥90% for an ancient one. If
@@ -284,6 +304,10 @@ sentence in step 7, and a weak dictionary quietly strangles generation.
 `validate-pack` also prints the top 20 by frequency — read them. If they do not
 look like the commonest words of the language, the corpus or the lemmatiser is
 wrong, and nothing downstream can be trusted.
+
+Coverage here means the *ranked* half: C5 asks whether a generated answer token
+is a word the pack teaches, and it deliberately does not count the tail. A thin
+ranked half is still a real problem however many words the tail holds.
 
 ---
 

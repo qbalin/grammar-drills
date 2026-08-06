@@ -2,7 +2,7 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, statSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 // GitHub Pages serves a project site under /<repo>/, so the workflow sets
@@ -32,10 +32,28 @@ const contentVersion = (() => {
   return existsSync(path) ? readFileSync(path, "utf8").trim() : "dev";
 })();
 
+/**
+ * What the dictionary actually weighs, for the copy that warns about it.
+ *
+ * Three screens tell the student how big the one-time download is, and all
+ * three said "900 KB" long after it stopped being true — the number was written
+ * by hand and the dictionary grew to hold every word rather than only the ones
+ * a corpus attested. It also differs per pack, and there is one build per pack.
+ * So it is measured here instead, off the two files the app will fetch.
+ */
+const dictionaryBytes = (() => {
+  const dir = new URL("./public/content/", import.meta.url);
+  return ["lemmas.json.gz", "forms.txt.gz"].reduce((total, name) => {
+    const path = fileURLToPath(new URL(name, dir));
+    return total + (existsSync(path) ? statSync(path).size : 0);
+  }, 0);
+})();
+
 export default defineConfig({
   base,
   define: {
     __CONTENT_VERSION__: JSON.stringify(contentVersion),
+    __DICTIONARY_BYTES__: JSON.stringify(dictionaryBytes),
   },
   resolve: {
     alias: {

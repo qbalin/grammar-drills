@@ -11,10 +11,11 @@ import { ParadigmIndex } from "./paradigm-index.js";
 import { profile } from "./pack.js";
 
 /**
- * The built bundle, checked end to end: `scripts/build-web-content.mjs` writes
- * it, and `LemmaIndex` reads it. The repack is only safe if a form that
- * resolved through the 43 MB map still resolves through the 4 MB index, and
- * only a test over the real data can say so.
+ * The built bundle, checked end to end: the pack writes the lemma table and the
+ * form index, `scripts/build-web-content.mjs` copies them through, and
+ * `LemmaIndex` reads them. The split is only safe if a form that resolved
+ * through the map still resolves through the index, and only a test over the
+ * real data can say so.
  *
  * `public/content/` is generated, not committed, so this skips when it is
  * missing — `pnpm --filter @lang-tutor/web content` builds it.

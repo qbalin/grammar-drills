@@ -259,11 +259,19 @@ word count is taken from the sentence, so `Vocabulary — 6 words` is on screen 
 honest while the dictionary is still downloading — and opening it is what
 triggers that download, never a prefetch.
 
-The dictionary is the one thing that could not be shipped as-is:
-`lemmas.json.gz` inflates to 43 MB, which no phone should parse. The build
-repacks it — 242,746 forms turn out to point at only 6,747 distinct lemmas — into
-a 1 MB lemma table plus a sorted form index that is bisected as raw text instead
-of parsed. See [`apps/web/README.md`](apps/web/README.md).
+The dictionary is every word the reference holds — 55,312 Latin lemmas over
+893,854 inflected forms, not merely the ones a corpus attests. That distinction
+is the difference between looking `reste` up and being told it is not a word,
+which is what the app used to do: the frequency list it was built from is seven
+works long, and none of the seven ever needed a rope.
+
+Shipping all of it means never shipping the obvious shape. A `form → entries`
+map repeats each gloss under every form and would be some 300 MB of JSON, so a
+pack writes the two files apart — the distinct lemmas, and a sorted form index
+into them — and both apps bisect the index as raw text instead of parsing it.
+4.2 MB gzipped, fetched once, and only when a word is first looked up. See
+[`apps/web/README.md`](apps/web/README.md) and
+[`scripts/reference/README.md`](scripts/reference/README.md).
 
 ## Earlier answers on a topic
 

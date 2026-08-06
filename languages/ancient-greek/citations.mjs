@@ -43,7 +43,7 @@ import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { compileFold } from "@lang-tutor/core";
-import { loadLemmas, loadProfile, packDir } from "../../scripts/lib/pack.mjs";
+import { loadLemmaTable, loadProfile, packDir } from "../../scripts/lib/pack.mjs";
 import { openReference, requireDictionary } from "../../scripts/lib/reference.mjs";
 
 const argv = process.argv.slice(2);
@@ -345,28 +345,26 @@ function adjectiveCitation(forms, lemma) {
 
 // --- rewrite ----------------------------------------------------------------
 
-const map = loadLemmas(dir);
+const table = loadLemmaTable(dir);
 
 /**
- * `lemma|pos|gender` -> the record as first met, so each is looked up once.
+ * `lemma|pos|gender` -> the record, which is now the only copy of it.
  *
- * `build-lemmas.mjs` pushes one record object under every one of its forms, but
- * that sharing does not survive the round trip through JSON: the shipped map
- * parses back as 326k separate objects for 7.2k lemmas. Keying by identity
- * would dedupe nothing, so the work is keyed by the record's content and the
- * result applied to every occurrence in a second pass.
+ * The pack used to ship one record object per form key — 326k of them for 7.2k
+ * lemmas, and the sharing did not survive the round trip through JSON — so this
+ * collapsed them by content and applied the result in a second pass. The
+ * dictionary ships as a table of distinct entries now, so the collapse is a
+ * `Map` over it and the second pass is gone.
  *
- * Gender is part of the key because it is part of the answer. Wiktionary gives
- * ὁδός two entries, "road" masculine and "way" feminine, and the map carries
- * both: `ἡ ὁδός` is the one a reader wants and `ὁ ὁδός` for both would be a
- * gender error printed under the commoner word.
+ * Gender is still part of the key because it is part of the answer. Wiktionary
+ * gives ὁδός two entries, "road" masculine and "way" feminine, and the table
+ * carries both: `ἡ ὁδός` is the one a reader wants and `ὁ ὁδός` for both would
+ * be a gender error printed under the commoner word.
  */
 const identity = (r) => `${r.lemma}|${r.pos}|${r.gender ?? ""}`;
 const distinct = new Map();
-for (const records of Object.values(map)) {
-  for (const r of records) {
-    if (!distinct.has(identity(r))) distinct.set(identity(r), r);
-  }
+for (const r of table) {
+  if (!distinct.has(identity(r))) distinct.set(identity(r), r);
 }
 
 const rewritten = new Map(); // record identity -> new citation
@@ -408,16 +406,12 @@ for (const [key, r] of distinct) {
   }
 }
 
-// The map repeats a record per form key (276k keys, 7.2k lemmas), so the table
-// above is applied in one pass over every occurrence.
 let touched = 0;
-for (const records of Object.values(map)) {
-  for (const r of records) {
-    const citation = rewritten.get(identity(r));
-    if (citation) {
-      r.citation = citation;
-      touched += 1;
-    }
+for (const r of table) {
+  const citation = rewritten.get(identity(r));
+  if (citation) {
+    r.citation = citation;
+    touched += 1;
   }
 }
 
@@ -456,11 +450,11 @@ console.log(
 console.log(`  nouns  ${sample("noun", 3).join(" · ")}`);
 console.log(`  verbs  ${sample("verb", 3).join(" · ")}`);
 console.log(`  adjs   ${sample("adj", 3).join(" · ")}`);
-console.log(`${touched} of the map's ${Object.keys(map).length} form keys updated`);
+console.log(`${touched} of the table's ${table.length} entries updated`);
 
 if (DRY) {
   console.log("\n--dry: nothing written");
 } else {
-  writeFileSync(MAP, gzipSync(Buffer.from(JSON.stringify(map), "utf8"), { level: 9 }));
+  writeFileSync(MAP, gzipSync(Buffer.from(JSON.stringify(table), "utf8"), { level: 9 }));
   console.log(`\nWrote ${resolve(MAP)} — now run scripts/build-web-content.mjs`);
 }

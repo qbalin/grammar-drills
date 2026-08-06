@@ -202,14 +202,20 @@ describe("the fold", () => {
 });
 
 describe("the fold against the shipped dictionary", () => {
-  // The dictionary's keys ARE fold output — `build-web-content.mjs` writes a
-  // sorted index of them that the web app bisects. So a fold that no longer
-  // reproduces its own keys would miss every lookup while the app looked
-  // perfectly healthy. Idempotence over the real key set is that check.
+  /** The keys of `content/forms.txt.gz`, which are what a lookup bisects. */
+  const formKeys = () =>
+    gunzipSync(readFileSync(join(here, "content", "forms.txt.gz")))
+      .toString("utf8")
+      .split("\n")
+      .map((line) => line.split("\t")[0]);
+
+  // The dictionary's keys ARE fold output — `build-lemmas.mjs` writes a sorted
+  // index of them that both apps bisect. So a fold that no longer reproduces
+  // its own keys would miss every lookup while the app looked perfectly
+  // healthy. Idempotence over the real key set is that check.
   it("leaves every key of the shipped dictionary unchanged", () => {
-    const raw = gunzipSync(readFileSync(join(here, "content", "lemmas.json.gz"))).toString("utf8");
-    const keys = Object.keys(JSON.parse(raw) as Record<string, unknown>);
-    expect(keys.length).toBeGreaterThan(200_000);
+    const keys = formKeys();
+    expect(keys.length).toBeGreaterThan(800_000);
 
     const moved: string[] = [];
     for (const key of keys) {
@@ -220,8 +226,7 @@ describe("the fold against the shipped dictionary", () => {
   });
 
   it("folds inflected forms as written onto the keys the dictionary holds", () => {
-    const raw = gunzipSync(readFileSync(join(here, "content", "lemmas.json.gz"))).toString("utf8");
-    const map = JSON.parse(raw) as Record<string, unknown[]>;
+    const keys = new Set(formKeys());
     // Real forms as a sentence would write them, macrons and all: each has to
     // land on an entry, which is the whole job of the fold at runtime. Common
     // words only — a proper noun like `Jūlia` is absent from the dictionary by
@@ -230,8 +235,18 @@ describe("the fold against the shipped dictionary", () => {
       "Fīliae", "agricolae", "aquam", "altō", "puteō", "portābant",
       "servōrum", "manibus", "amāvērunt", "rēgem", "bonīs", "PVELLA",
     ];
-    const missed = written.filter((w) => !map[fold(w)]);
+    const missed = written.filter((w) => !keys.has(fold(w)));
     expect(missed).toEqual([]);
+  });
+
+  // The word that made the whole dictionary ship. `restis` is in Wiktionary and
+  // in nobody's corpus, so it used to come back "not in the dictionary" — and a
+  // student who met a rope on a page was told their spelling was wrong.
+  it("answers for a word no corpus attests", () => {
+    const keys = new Set(formKeys());
+    for (const form of ["reste", "restis", "restem", "restibus"]) {
+      expect(keys.has(fold(form))).toBe(true);
+    }
   });
 });
 

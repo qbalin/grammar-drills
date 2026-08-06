@@ -32,7 +32,7 @@ import { gunzipSync } from "node:zlib";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import { compileFold } from "@lang-tutor/core";
-import { loadLemmas } from "./pack.mjs";
+import { loadLemmaIndex } from "./pack.mjs";
 
 export const FREQUENCY_FILE = "frequency.tsv.gz";
 
@@ -101,7 +101,7 @@ function packReference(dir, profile) {
   // Both files are big and only some callers need either, so neither is read
   // until something asks a question that needs it.
   let map;
-  const lemmas = () => (map ??= loadLemmas(dir));
+  const lemmas = () => (map ??= loadLemmaIndex(dir));
 
   let rows;
   const frequency = () => {
@@ -135,14 +135,30 @@ function packReference(dir, profile) {
     // evidence" and decide without it.
     dir: null,
 
-    attests: (formNorm) => formNorm in lemmas(),
+    /**
+     * Attested means *a ranked lemma has this form* — not merely that the
+     * dictionary knows the word.
+     *
+     * The map used to be the ranked lemmas and nothing else, so "is this a key"
+     * and "is this a word we have any business teaching" were the same question.
+     * Now that the whole dictionary ships, they are not: 149k lemmas would
+     * attest almost anything, and C5 and `gen-tests`'s ok/unverified classifier
+     * would go quietly green on words no student will meet. Asking for a rank
+     * keeps this gate at exactly the strength it had when the map was small.
+     */
+    attests: (formNorm) => lemmas().lookup(formNorm).some((e) => e.rank != null),
 
     // The map is sorted most-frequent-first by build-lemmas, so the first
     // candidate is the reading the crib itself offers — the closest thing there
     // is to the dictionary join's arbitrary `limit 1`, and a better answer.
+    //
+    // Unranked candidates sort last, so a form that had a ranked reading still
+    // gets it. A form that had none now answers with a tail lemma where it used
+    // to answer with nothing — which cannot move C7, since a tail lemma is by
+    // definition absent from the frequency list and so from any band.
     lemmaOf(formNorm) {
-      const candidates = lemmas()[formNorm];
-      return candidates?.length ? fold(candidates[0].lemma) : undefined;
+      const candidates = lemmas().lookup(formNorm);
+      return candidates.length ? fold(candidates[0].lemma) : undefined;
     },
 
     ranked: (maxRank) => frequency().filter((r) => r.rank <= maxRank),
@@ -164,8 +180,12 @@ function packReference(dir, profile) {
      * did — and unlike it, this one can run in CI.
      */
     foldAgreement() {
-      const keys = Object.keys(lemmas());
-      const bad = keys.filter((k) => fold(k) !== k).map((k) => ({ shown: k, stored: fold(k) }));
+      const bad = [];
+      let checked = 0;
+      for (const k of lemmas().forms()) {
+        checked++;
+        if (fold(k) !== k) bad.push({ shown: k, stored: fold(k) });
+      }
       const freq = frequency();
       for (const r of freq) {
         if (fold(r.lemma) !== r.lemma_norm) {
@@ -173,7 +193,7 @@ function packReference(dir, profile) {
         }
       }
       return {
-        checked: keys.length + freq.length,
+        checked: checked + freq.length,
         bad,
         what: "the lemma map's keys and the frequency list's lemma_norm",
       };
@@ -181,12 +201,36 @@ function packReference(dir, profile) {
 
     entriesFor: () => { throw new Error("entriesFor needs the dictionary backend"); },
     formsFor: () => { throw new Error("formsFor needs the dictionary backend"); },
+    lemmaEntries: () => { throw new Error("lemmaEntries needs the dictionary backend"); },
 
     close() {},
   };
 }
 
 // --- the reference databases ---------------------------------------------------
+
+/** The senses of an entry's `data` blob, or none if it is junk. */
+function parseSenses(data) {
+  try {
+    return JSON.parse(data)?.senses ?? [];
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * The tags wiktextract writes on a sense that is only a wordform.
+ *
+ * `alt-of` is deliberately not here. An alternative spelling — `tago` for
+ * `tangō`, Old-Latin `en` for `in` — is a word a student can meet on a page and
+ * will want to look up, and unlike an inflection it is not reachable through
+ * some other entry's form table. Excluding it cost 4,703 lemmas and every one
+ * of them was a lookup someone could plausibly need.
+ */
+const INFLECTION_TAGS = ["form-of", "inflection", "participle"];
+
+const isInflection = (sense) =>
+  (sense.tags ?? []).some((t) => INFLECTION_TAGS.includes(t));
 
 function dictionaryReference(ref, profile) {
   const fold = compileFold(profile.fold);
@@ -269,6 +313,31 @@ function dictionaryReference(ref, profile) {
 
     /** Every entry under one folded headword and part of speech. */
     entriesFor: (wordNorm, pos) => entries.all(wordNorm, pos ?? ""),
+
+    /**
+     * Every entry the dictionary holds that is a word rather than a wordform.
+     *
+     * Most of a Wiktionary dump is not lemmas: 736,879 of Latin's 885,996
+     * entries exist only to say "this is the imperfect of that", and every one
+     * of them is already reachable through the `forms` table of the entry it
+     * points at. Keeping them would multiply the shipped dictionary five times
+     * over to add nothing a lookup could not already find.
+     *
+     * The test is that *every* sense is an inflection. A word whose senses are
+     * partly its own — `dictus` is the participle of `dico` and an adjective in
+     * its own right — is a lemma, and is kept.
+     *
+     * Yielded rather than returned: this is 886k rows and the caller wants them
+     * one at a time.
+     */
+    *lemmaEntries() {
+      for (const row of dict.prepare("select id, word, pos, data from entries").iterate()) {
+        const senses = parseSenses(row.data);
+        if (senses.length && senses.every(isInflection)) continue;
+        yield row;
+      }
+    },
+
     /** Every tagged form of one entry. Tags are comma-joined and sorted. */
     formsFor: (entryId) =>
       forms.all(entryId).map((r) => ({ form: r.form, tags: r.tags ?? "" })),

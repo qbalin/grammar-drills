@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Sheet } from "../ui.js";
+import { dictionarySize } from "../dictionary-size.js";
 import { profile } from "../pack.js";
 import type { SyncConfig, SyncState } from "../storage/sync.js";
 
@@ -100,8 +101,8 @@ export function SettingsSheet({
       <div className="section-title">Offline</div>
       <p className="field__hint" style={{ marginTop: 0 }}>
         The grammar and every test are already stored on this device. The
-        dictionary, which turns a word you met into its headword, is another
-        900 KB and is only fetched when you first record a word.
+        dictionary, which turns a word you met into its headword, is another{" "}
+        {dictionarySize()} and is only fetched when you first record a word.
       </p>
       <div className="actions">
         <button

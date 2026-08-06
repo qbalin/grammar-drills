@@ -2,20 +2,18 @@
 /**
  * Repack `content/` into the five assets the web app fetches.
  *
- * The CLI reads `content/` straight off disk, where a 43 MB JSON costs nothing.
- * A phone cannot pay that: `lemmas.json.gz` inflates to 42.9 MB, and parsing it
- * would blow both the time and the memory budget for a feature used a handful
- * of times a session. But the map is almost entirely repetition — 242,746 form
- * keys point at just 6,747 distinct lemmas, each carrying its own copy of the
- * gloss. Splitting it into a lemma table plus a form -> index index removes the
- * duplication (6.1 MB), and writing the index as sorted text rather than JSON
- * means the browser never builds a 242k-key object at all: it bisects the raw
- * string. See apps/web/src/lemma-index.ts for the reader.
+ * There is less to this than there was. The dictionary used to arrive here as
+ * one denormalized `Record<form, LemmaEntry[]>` and get split into a lemma
+ * table plus a sorted form index, because a phone could not parse the map. The
+ * pack ships it split now — the CLI could not parse it either once the whole
+ * dictionary went in — so the dictionary is copied through and this script is
+ * back to being about grammar and tests. See `scripts/lib/lemma-map.mjs` for
+ * the split and `@lang-tutor/core`'s `LemmaIndex` for the reader.
  *
  *   grammar.json.gz  the 135 sections, verbatim          ~122 KB gz  eager
  *   tests.json.gz    all 135 test files, merged          ~275 KB gz  eager
- *   lemmas.json.gz   the distinct lemmas, as LemmaEntry[] ~285 KB gz  lazy
- *   forms.txt.gz     `form\tidx[,idx...]` per line, sorted ~700 KB gz  lazy
+ *   lemmas.json.gz   the distinct lemmas, as LemmaEntry[] ~2.1 MB gz  lazy
+ *   forms.txt.gz     `form\tidx[,idx...]` per line, sorted ~3.2 MB gz  lazy
  *   paradigms.txt.gz every word's tagged forms, sorted   ~2.5 MB gz  lazier
  *
  * `paradigms.txt.gz` is copied through rather than repacked: it is already the
@@ -42,6 +40,7 @@ import {
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
+import { splitLemmaMap } from "./lib/lemma-map.mjs";
 
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -123,66 +122,42 @@ function buildTests() {
 // --- lemmas -----------------------------------------------------------------
 
 /**
- * The index is line-oriented and tab-separated, so a form may contain anything
- * except a tab or a line break. It need not be ASCII: 35 forms are ligatures or
- * medieval abbreviation glyphs (`quæ`, `cœlum`, `ꝯ`) that `normalize()` has no
- * reason to fold away, and they look up fine — the reader bisects a decoded JS
- * string, which compares by code unit whatever the alphabet.
- */
-const UNREPRESENTABLE = /[\t\r\n]/;
-
-/**
- * Collapse `Record<form, LemmaEntry[]>` into a table of distinct entries plus a
- * sorted `form\tidx[,idx...]` index into it.
+ * Copy the pack's dictionary through, splitting it first only if it is old.
  *
- * Two invariants the reader depends on:
- *  - candidate order within a form is preserved (`lookupForm` promises
- *    most-frequent-first, and the vocab picker offers them in that order);
- *  - lines are sorted by code unit, because the bisection compares that way.
+ * The split used to happen here: this script turned the pack's denormalized
+ * `Record<form, LemmaEntry[]>` into a lemma table plus a sorted index, because
+ * a phone could not afford the map. Now the pack ships split — the CLI could
+ * not afford it either, once the whole dictionary went in — so for a rebuilt
+ * pack there is nothing left to do but copy the two files and count them.
+ *
+ * A pack built before the split still ships the map, and `splitLemmaMap` is
+ * still here to handle it, so a half-migrated tree builds.
  */
 function buildLemmas() {
-  const map = JSON.parse(
+  const dictionary = JSON.parse(
     gunzipSync(readFileSync(join(contentDir, "lemmas.json.gz"))).toString(
       "utf8",
     ),
   );
 
-  const entries = [];
-  const indexOf = new Map(); // `lemma|pos` -> position in `entries`
-  const lines = [];
-
-  for (const form of Object.keys(map)) {
-    if (form === "" || UNREPRESENTABLE.test(form)) {
-      throw new Error(
-        `form key ${JSON.stringify(form)} is empty or holds a tab/line break — ` +
-          `the line-oriented index cannot represent it. normalize() should have ` +
-          `folded it; check packages/core/src/normalize.ts.`,
-      );
-    }
-    const ids = [];
-    for (const entry of map[form]) {
-      const key = `${entry.lemma}|${entry.pos}`;
-      let id = indexOf.get(key);
-      if (id === undefined) {
-        id = entries.length;
-        indexOf.set(key, id);
-        entries.push(entry);
-      }
-      // Named once per form, however many entries collapsed onto it. The
-      // dictionary has two `flumen` nouns and the repack makes them one, so
-      // without this the crib offers a choice between a word and itself.
-      if (!ids.includes(id)) ids.push(id);
-    }
-    lines.push(`${form}\t${ids.join(",")}`);
+  if (!Array.isArray(dictionary)) {
+    const { entries, lines, keys } = splitLemmaMap(dictionary);
+    writeGz("lemmas.json.gz", JSON.stringify(entries));
+    writeGz("forms.txt.gz", lines.join("\n"));
+    return { forms: lines.length, lemmas: entries.length, keys };
   }
 
-  // Sort by code unit — `Array.sort()`'s default, and what the reader bisects
-  // with. A locale-aware collation here would silently break lookups.
-  lines.sort();
-
-  writeGz("lemmas.json.gz", JSON.stringify(entries));
-  writeGz("forms.txt.gz", lines.join("\n"));
-  return { forms: lines.length, lemmas: entries.length, keys: indexOf };
+  const index = gunzipSync(readFileSync(join(contentDir, "forms.txt.gz"))).toString(
+    "utf8",
+  );
+  writeGz("lemmas.json.gz", JSON.stringify(dictionary));
+  writeGz("forms.txt.gz", index);
+  const keys = new Map(dictionary.map((e, i) => [`${e.lemma}|${e.pos}`, i]));
+  return {
+    forms: index ? index.split("\n").length : 0,
+    lemmas: dictionary.length,
+    keys,
+  };
 }
 
 // --- paradigms ---------------------------------------------------------------

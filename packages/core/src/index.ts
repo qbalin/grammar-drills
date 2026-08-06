@@ -18,6 +18,8 @@ export {
   type Rating,
 } from "./scheduler.js";
 export { lookupForm } from "./lemmatizer.js";
+export { bisect } from "./bisect.js";
+export { LemmaIndex } from "./lemma-index.js";
 export {
   questionVocabulary,
   words,

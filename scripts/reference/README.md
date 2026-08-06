@@ -52,10 +52,15 @@ python3 scripts/reference/ingest_frequency.py --lang <pack>
 node --import tsx scripts/validate-pack.mjs --pack languages/<pack> \
   --ref languages/<pack>/reference --require-ref --profile-only
 
-# 5. The pack's lemma map and its paradigms, then its citations, then the
-#    committed frequency list. --max-rank is how far down the frequency list to
-#    build; pass more than the list is long to take all of it, which is what a
-#    pack should ship — a lemma left out is a word the app reports as unknown.
+# 5. The pack's dictionary and its paradigms, then its citations, then the
+#    committed frequency list.
+#
+#    SHIP THE WHOLE DICTIONARY. Every word the reference holds, each with a
+#    gloss — not only the words the corpus ranks. See "How much to ship" below;
+#    this is the default and there is no reason to turn it off.
+#
+#    --max-rank is how far down the frequency list to build the *ranked* half;
+#    pass more than the list is long to take all of it.
 node --import tsx scripts/build-lemmas.mjs --pack languages/<pack> \
   --ref languages/<pack>/reference --max-rank 20000
 node --import tsx scripts/build-paradigms.mjs --pack languages/<pack> \
@@ -70,8 +75,54 @@ table; a pack without it shows citations and no tables. It needs
 `profile.paradigms` to say how that language's forms are laid out, which is the
 one part of it nobody else can write for you.
 
-Step 5's four outputs are what gets committed. After that the pack is
+Step 5's five outputs are what gets committed (`build-lemmas` writes two files,
+`content/lemmas.json.gz` and `content/forms.txt.gz`). After that the pack is
 self-contained and the databases can be deleted.
+
+## How much to ship: all of it
+
+**A pack ships every word its reference dictionary holds, with a gloss for each.
+Not only the words its corpus attests.** This is what `build-lemmas.mjs` does by
+default and the reason `--no-tail` exists only to describe what packs used to do.
+
+The mistake is easy to make and hard to see, because it fails silently and looks
+like nothing. The frequency list is built from a corpus, and a corpus is a
+handful of works: Latin's is seven. So a student who meets `reste` on a page and
+looks it up was told *"not in the dictionary"* — not because the dictionary
+lacked `restis`, which it has had all along with the ablative tagged, but
+because Caesar, Cicero, Ovid, Catullus, Seneca, Augustine and Apicius between
+them never needed a rope. Nothing in the pipeline complained. The pack looked
+complete, every gate was green, and the app called a real word a mistake.
+
+Two halves come out of one build, and they are not the same thing:
+
+| | ranked | tail |
+|---|---|---|
+| what | the frequency list joined against the dictionary | every other lemma entry the dictionary holds |
+| carries a `rank` | yes | **no**, deliberately |
+| gloss | `SENSE_LIMIT` senses (6) | 2 senses, 140 chars |
+| what it is for | the words the pack teaches | so a lookup always has an answer |
+
+The missing `rank` is load-bearing twice. It sorts the tail behind every ranked
+reading, so the crib still offers the word a student probably meant. And
+`packReference.attests` tests for it, so gate C5 and `gen-tests`'s
+`ok`/`unverified` classifier stay exactly as strict as they were when the pack
+shipped ranked lemmas alone — a bigger dictionary must not make it easier for
+the generator to pass off an obscure word as real.
+
+What the tail is *not* is every row in the dictionary. Most of a Wiktionary dump
+is wordform entries — 833,572 of Latin's 885,996 exist only to say "this is the
+imperfect of that" — and each is already reachable through the forms table of
+the entry it points at. `reference.lemmaEntries()` skips them by tag
+(`form-of`, `inflection`, `participle`), and keeps `alt-of`, because an
+alternative spelling is a word someone can meet and is not reachable any other
+way. A Morpheus-derived reference like Greek's has no such rows and the same
+rule simply finds nothing to skip.
+
+It costs about 2 MB gzipped, on a download that already happens once, lazily,
+and is then cached. Latin went from 19,292 lemmas to 55,312 and from a 2.1 MB
+dictionary to 4.2 MB; Greek from 24,322 to 97,028 and 2.3 MB to 5.0 MB. Nothing
+that is precached moved, so what the study loop costs offline is unchanged.
 
 ## The Latin corpus
 

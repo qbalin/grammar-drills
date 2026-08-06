@@ -71,23 +71,33 @@ sets it to `/<repo>/`); it defaults to `/`.
 
 ### What the build does to `content/`
 
-The CLI reads `content/` off disk, where `lemmas.json.gz` inflating to **43 MB**
-costs nothing. A phone cannot pay that. But the map is mostly repetition —
-242,746 forms pointing at only **6,747 distinct lemmas**, each carrying its own
-copy of the gloss — so the build splits it into a lemma table and a form → index
-index, and writes the index as sorted text that `src/lemma-index.ts` bisects in
-place rather than parsing into a 242k-key object.
+Less than it used to. The dictionary arrives from the pack already split into a
+lemma table and a sorted `form\tidx[,idx…]` index, so the build copies both
+through and the repack is really about grammar and tests.
+
+The split is what makes shipping the whole dictionary affordable. A single
+`Record<form, LemmaEntry[]>` repeats a lemma's gloss under each of its forms:
+Latin's 55,312 lemmas over 893,854 forms would be some **300 MB** of JSON, which
+is past what even the CLI can parse off a local disk. As a table plus an index
+it is 8.5 MB, and `@lang-tutor/core`'s `LemmaIndex` bisects the index where it
+lies rather than building an 894k-key object.
+
+Latin, as built today:
 
 | Asset | Raw | Gzipped | |
 |---|---|---|---|
-| `grammar.json.gz` | 348 KB | 119 KB | precached |
-| `tests.json.gz` | 696 KB | 183 KB | precached |
-| `lemmas.json.gz` | 1.0 MB | 277 KB | on demand |
-| `forms.txt.gz` | 3.9 MB | 619 KB | on demand |
+| `grammar.json.gz` | 448 KB | 129 KB | precached |
+| `tests.json.gz` | 1.1 MB | 298 KB | precached |
+| `lemmas.json.gz` | 8.3 MB | 1.8 MB | on demand |
+| `forms.txt.gz` | 15.5 MB | 2.4 MB | on demand |
+| `paradigms.txt.gz` | 10.9 MB | 2.5 MB | on demand, later |
 
-So the study loop is offline after a 302 KB install, and the dictionary — which
-only the vocabulary feature needs — is fetched when first used, or in advance
-from Settings.
+So the study loop is offline after a **427 KB** install, and the dictionary —
+which only the vocabulary feature needs — is fetched when first used, or in
+advance from Settings. The screens that warn about that download measure it at
+build time (`__DICTIONARY_BYTES__` in `vite.config.ts`) rather than naming a
+figure by hand, because the hand-written one went stale and was wrong for
+whichever pack it had not been written for.
 
 These are fetched as bytes and inflated in the app rather than left to
 `Content-Encoding`, because hosts disagree about whether a `.gz` file is

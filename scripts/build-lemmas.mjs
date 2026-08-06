@@ -11,6 +11,10 @@
  *
  *   { "manibus": [ { lemma, citation, gloss, pos, gender?, declension?, rank } ] }
  *
+ * written as the two files a pack ships — `content/lemmas.json.gz`, the
+ * distinct entries, and `content/forms.txt.gz`, the sorted index over them.
+ * See `scripts/lib/lemma-map.mjs`; the map itself is never serialized.
+ *
  * The citation here is the plain headword. Turning it into what a dictionary
  * actually prints — principal parts, adjective terminations, an article — is
  * per-language and belongs to the pack's own `citations.mjs`, which is run
@@ -18,7 +22,18 @@
  *
  *   node --import tsx scripts/build-lemmas.mjs [--pack languages/latin]
  *        [--ref /path/to/ref] [--max-rank 7000] [--verify] [--out path]
- *        [--merge] [--drop-artifacts]
+ *        [--merge] [--drop-artifacts] [--no-tail]
+ *
+ * Two halves come out of it. The **ranked** half is the frequency list joined
+ * against the dictionary: the words a corpus actually uses, each with its rank,
+ * its full gloss, and the gates' attention. The **tail** is every other lemma
+ * the dictionary holds — unranked, briefly glossed, and there for one reason:
+ * so a student who looks a word up gets an answer. Latin's frequency list is
+ * seven works long, and a word those seven authors never wrote used to come
+ * back "not in the dictionary" however plainly the dictionary had it.
+ *
+ * `--no-tail` builds the ranked half alone, which is what every pack shipped
+ * before the tail existed.
  *
  * `--verify` builds the map and compares it against the one already shipped
  * without writing anything. Use it on a pack whose map predates this script:
@@ -38,12 +53,13 @@
  * that can never be looked up. Off by default, because only some references
  * have them.
  */
-import { writeFileSync } from "node:fs";
+import { statSync, writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { join } from "node:path";
 import { compileFold } from "@lang-tutor/core";
 import { genderOf, glossOf, tagValue } from "./lib/lemma-fields.mjs";
-import { loadLemmas, loadProfile, packDir } from "./lib/pack.mjs";
+import { splitLemmaMap } from "./lib/lemma-map.mjs";
+import { loadLemmaIndex, loadProfile, packDir } from "./lib/pack.mjs";
 import { openReference, requireDictionary } from "./lib/reference.mjs";
 
 const argv = process.argv.slice(2);
@@ -67,11 +83,27 @@ try {
 const VERIFY = argv.includes("--verify");
 const MERGE = argv.includes("--merge");
 const DROP_ARTIFACTS = argv.includes("--drop-artifacts");
+const TAIL = !argv.includes("--no-tail");
 const MAX_RANK = Number(opt("--max-rank", 7000));
 const OUT = opt("--out", join(dir, "content", "lemmas.json.gz"));
+const OUT_FORMS = opt("--out-forms", join(dir, "content", "forms.txt.gz"));
 
 /** Analyser notation rather than a word anyone could type. */
 const ARTIFACT = /[-+]/;
+
+/** What the line-oriented form index cannot hold. */
+const UNREPRESENTABLE = /[\t\r\n]/;
+
+/**
+ * How much of a definition a word we do not teach is worth.
+ *
+ * `SENSE_LIMIT` is six, which is right for a band word the student will meet
+ * again and read carefully. The tail is 130,000 words they will meet once, to
+ * confirm what one of them means — and six senses each is 2 MB of phone. Two
+ * senses answer the question that was asked.
+ */
+const TAIL_SENSE_LIMIT = 2;
+const TAIL_GLOSS_CHARS = 140;
 
 // Ranked lemmas are the spine: the map exists to answer "what is this word",
 // and a word nobody writes is not worth the bytes on a phone.
@@ -80,6 +112,7 @@ const ranked = ref.ranked(MAX_RANK);
 const map = Object.create(null);
 let lemmas = 0;
 let missing = 0;
+let tail = 0;
 
 for (const row of ranked) {
   const entries = ref.entriesFor(row.lemma_norm ?? fold(row.lemma), row.pos);
@@ -117,6 +150,64 @@ for (const row of ranked) {
   }
 }
 
+// --- the tail ----------------------------------------------------------------
+
+/**
+ * Everything else the dictionary knows.
+ *
+ * The ranked list above is a corpus's vocabulary, not a language's: Latin's is
+ * seven works, so a student who writes `reste` gets told the ablative of
+ * `restis` is not a word, because Caesar and Cicero and Ovid between them never
+ * needed a rope. That is the wrong answer, and the right one was sitting in
+ * `dictionary.db` the whole time.
+ *
+ * These records carry no `rank`, which is the point twice over. It is true —
+ * nothing counted them — and it keeps them behind every ranked reading in the
+ * sort below, so the crib still defaults to the word a student is likely to
+ * have meant. It is also what `packReference.attests` now tests, so shipping
+ * the tail does not quietly loosen the gates that ask whether a generated
+ * sentence is made of real words.
+ */
+if (TAIL) {
+  const covered = new Set();
+  for (const key of Object.keys(map)) {
+    for (const record of map[key]) covered.add(`${record.lemma}|${record.pos}`);
+  }
+  for (const entry of ref.lemmaEntries()) {
+    if (covered.has(`${entry.word}|${entry.pos}`)) continue;
+    const gloss = glossOf(entry.data, TAIL_SENSE_LIMIT);
+    // A headword with nothing to say about itself is a row, not a definition:
+    // it would cost bytes to tell the student the word exists and no more.
+    if (!gloss) continue;
+    const rows = ref.formsFor(entry.id);
+    const record = {
+      lemma: entry.word,
+      citation: entry.word,
+      gloss: gloss.length > TAIL_GLOSS_CHARS ? gloss.slice(0, TAIL_GLOSS_CHARS) : gloss,
+      pos: entry.pos,
+    };
+    const gender = genderOf(entry.data, rows);
+    if (gender) record.gender = gender;
+    const declension = tagValue(entry.data, "declension-");
+    if (declension) record.declension = declension;
+
+    const forms = new Set([entry.word, ...rows.map((f) => f.form)]);
+    for (const form of forms) {
+      const key = fold(form);
+      if (!key) continue;
+      // Artifacts are analyser notation whatever the flag says here: the tail
+      // is the long half of the dictionary, and nobody types `ἐν-ξέω`.
+      if (ARTIFACT.test(key)) continue;
+      // The index is line-oriented, so a key holding a tab or a newline cannot
+      // be written at all. Vanishingly rare, and worth dropping rather than
+      // failing the build over — the ranked half is still checked strictly.
+      if (UNREPRESENTABLE.test(key)) continue;
+      (map[key] ??= []).push(record);
+    }
+    tail++;
+  }
+}
+
 const built = Object.keys(map).length;
 
 // A key this build did not produce, but the shipped map has, is a word the
@@ -125,11 +216,11 @@ const built = Object.keys(map).length;
 // this build wins: its records carry whatever the reference says now.
 let kept = 0;
 if (MERGE && !VERIFY) {
-  const shipped = loadLemmas(dir);
-  for (const key of Object.keys(shipped)) {
+  const shipped = loadLemmaIndex(dir);
+  for (const key of shipped.forms()) {
     if (key in map) continue;
     if (DROP_ARTIFACTS && ARTIFACT.test(key)) continue;
-    map[key] = shipped[key];
+    map[key] = shipped.lookup(key);
     kept++;
   }
 }
@@ -143,13 +234,13 @@ for (const key of Object.keys(map)) {
 const keys = Object.keys(map);
 console.log(
   `${lemmas} lemmas of the top ${MAX_RANK} resolved (${missing} absent from the dictionary) ` +
+    (TAIL ? `plus ${tail} unranked from the rest of the dictionary ` : "") +
     `-> ${built} folded form keys` +
     (MERGE && !VERIFY ? `, plus ${kept} kept from the shipped map -> ${keys.length}` : ""),
 );
 
 if (VERIFY) {
-  const shipped = loadLemmas(dir);
-  const shippedKeys = new Set(Object.keys(shipped));
+  const shippedKeys = new Set(loadLemmaIndex(dir).forms());
   const builtKeys = new Set(keys);
   const reproduced = [...shippedKeys].filter((k) => builtKeys.has(k)).length;
   const extra = [...builtKeys].filter((k) => !shippedKeys.has(k)).length;
@@ -165,8 +256,18 @@ if (VERIFY) {
 }
 
 ref.close();
-writeFileSync(OUT, gzipSync(Buffer.from(JSON.stringify(map), "utf8"), { level: 9 }));
-console.log(`wrote ${OUT}`);
+
+// Written split, never as the map: see scripts/lib/lemma-map.mjs. Serializing
+// `map` itself would be ~300 MB of JSON for the same dictionary, and nothing
+// downstream could parse it.
+const { entries, lines } = splitLemmaMap(map);
+writeFileSync(OUT, gzipSync(Buffer.from(JSON.stringify(entries), "utf8"), { level: 9 }));
+writeFileSync(OUT_FORMS, gzipSync(Buffer.from(lines.join("\n"), "utf8"), { level: 9 }));
+const mb = (n) => `${(n / 1024 / 1024).toFixed(2)} MB`;
+console.log(
+  `wrote ${OUT} (${entries.length} entries, ${mb(statSync(OUT).size)} gz)\n` +
+    `wrote ${OUT_FORMS} (${lines.length} forms, ${mb(statSync(OUT_FORMS).size)} gz)`,
+);
 console.log(
   `Next: run the pack's citations.mjs to turn headwords into real citations, ` +
     `then bump profile.citationsVersion.`,

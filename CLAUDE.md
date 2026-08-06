@@ -24,10 +24,11 @@ for the engine: `packages/core` must not learn a language.
 | path | what it is |
 |---|---|
 | `profile.json` | the pack's contract — fold, families, thresholds, UI strings |
-| `content/` | **generated**, and what ships: `grammar.json`, `tests/*.json`, `lemmas.json.gz` |
+| `content/` | **generated**, and what ships: `grammar.json`, `tests/*.json`, `lemmas.json.gz` + `forms.txt.gz` |
 | `grammar/parse.py` | builds `grammar.json` from a public source it downloads |
 | `gen/config.mjs` | what the question generator needs to know about this language |
 | `citations.mjs` | rewrites citations in `lemmas.json.gz`; needs the reference dictionary |
+| | *the dictionary is split: a lemma table plus a sorted form index over it* |
 | `reference/frequency.tsv.gz` | committed, ~200 KB; ranked lemmas for the gates |
 | `fold.fixtures.json` | pairs that must fold alike and pairs that must not |
 | `icon.mjs` | the app icon's glyph, as capsules or an SVG path |
@@ -35,6 +36,12 @@ for the engine: `packages/core` must not learn a language.
 | `BASELINE.json` | what the pack measured when last validated — a record, not an input |
 
 Do not hand-edit anything under `content/`; regenerate it.
+
+A pack ships **every word its reference dictionary holds, each with a gloss** —
+not only the words its corpus attests. `build-lemmas.mjs` does this by default.
+Ship the corpus's vocabulary alone and the app tells a student that a perfectly
+ordinary word is not a word, silently, with every gate green. See "How much to
+ship" in `scripts/reference/README.md`.
 
 ## Commands
 
