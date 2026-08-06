@@ -748,5 +748,965 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t13",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "These soldiers, whom the general trusted, betrayed the city at night.",
+    "answer": "οὗτοι οἱ στρατιῶται, οἷς ὁ στρατηγὸς ἐπίστευεν, ἐν νυκτὶ τὴν πόλιν προέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "στρατιῶται",
+     "οἷς",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐπίστευεν",
+     "ἐν",
+     "νυκτὶ",
+     "τὴν",
+     "πόλιν",
+     "προέδοσαν"
+    ]
+   },
+   {
+    "prompt": "This, said the philosopher, is the best education for the young.",
+    "answer": "αὕτη, ἔφη ὁ φιλόσοφος, ἀρίστη τοῖς νέοις παιδεία ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἔφη",
+     "ὁ",
+     "φιλόσοφος",
+     "ἀρίστη",
+     "τοῖς",
+     "νέοις",
+     "παιδεία",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Whatever you say, hold fast to these things and do not change.",
+    "answer": "ἃ ἂν εἴπῃς, τούτοις ἔμμενε καὶ μὴ μεταβάλλου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "ἂν",
+     "εἴπῃς",
+     "τούτοις",
+     "ἔμμενε",
+     "καὶ",
+     "μὴ",
+     "μεταβάλλου"
+    ]
+   },
+   {
+    "prompt": "These informers accuse the citizens for the sake of money.",
+    "answer": "οὗτοι οἱ συκοφάνται τοὺς πολίτας χρημάτων ἕνεκα αἰτιῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "συκοφάνται",
+     "τοὺς",
+     "πολίτας",
+     "χρημάτων",
+     "ἕνεκα",
+     "αἰτιῶνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t14",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "The messenger, having arrived from the camp, spoke as follows.",
+    "answer": "ὁ ἄγγελος ἐκ τοῦ στρατοπέδου ἀφικόμενος τοιάδε ἔλεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἀφικόμενος",
+     "τοιάδε",
+     "ἔλεξεν"
+    ]
+   },
+   {
+    "prompt": "I will tell you the following, so that you may know the truth.",
+    "answer": "τάδε ὑμῖν ἐρῶ, ἵνα τὴν ἀλήθειαν εἰδῆτε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάδε",
+     "ὑμῖν",
+     "ἐρῶ",
+     "ἵνα",
+     "τὴν",
+     "ἀλήθειαν",
+     "εἰδῆτε"
+    ]
+   },
+   {
+    "prompt": "Cyrus, after hearing such words, answered him as follows.",
+    "answer": "ὁ Κῦρος τοιαῦτα ἀκούσας τοιάδε πρὸς αὐτὸν ἀπεκρίνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "τοιαῦτα",
+     "ἀκούσας",
+     "τοιάδε",
+     "πρὸς",
+     "αὐτὸν",
+     "ἀπεκρίνατο"
+    ]
+   },
+   {
+    "prompt": "To the soldiers standing by the gates he gave the following orders.",
+    "answer": "τοῖς παρὰ ταῖς πύλαις παρεστῶσι στρατιώταις τάδε παρήγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "παρὰ",
+     "ταῖς",
+     "πύλαις",
+     "παρεστῶσι",
+     "στρατιώταις",
+     "τάδε",
+     "παρήγγειλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t15",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "In those days the Athenians ruled over many islands.",
+    "answer": "ἐν ἐκείναις ταῖς ἡμέραις οἱ Ἀθηναῖοι πολλῶν νήσων ἦρχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἐκείναις",
+     "ταῖς",
+     "ἡμέραις",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "πολλῶν",
+     "νήσων",
+     "ἦρχον"
+    ]
+   },
+   {
+    "prompt": "That famous Themistocles saved Greece by his own counsel.",
+    "answer": "Θεμιστοκλῆς ἐκεῖνος τῇ ἑαυτοῦ γνώμῃ τὴν Ἑλλάδα ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Θεμιστοκλῆς",
+     "ἐκεῖνος",
+     "τῇ",
+     "ἑαυτοῦ",
+     "γνώμῃ",
+     "τὴν",
+     "Ἑλλάδα",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "When the enemy saw us destroying their land, those men grew angry.",
+    "answer": "ὅτε οἱ πολέμιοι ἡμᾶς τὴν ἐκείνων γῆν φθείροντας εἶδον, ὠργίσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτε",
+     "οἱ",
+     "πολέμιοι",
+     "ἡμᾶς",
+     "τὴν",
+     "ἐκείνων",
+     "γῆν",
+     "φθείροντας",
+     "εἶδον",
+     "ὠργίσθησαν"
+    ]
+   },
+   {
+    "prompt": "You ought to trust those letters rather than these muster-rolls.",
+    "answer": "δεῖ ὑμᾶς ἐκείνοις τοῖς γράμμασι μᾶλλον ἢ τούτοις πιστεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "ὑμᾶς",
+     "ἐκείνοις",
+     "τοῖς",
+     "γράμμασι",
+     "μᾶλλον",
+     "ἢ",
+     "τούτοις",
+     "πιστεύειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t16",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "No free man would endure such treatment as this from a tyrant.",
+    "answer": "τοιαῦτα οὐδεὶς ἂν ἐλεύθερος ὑπὸ τυράννου παθεῖν ὑπομείνειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιαῦτα",
+     "οὐδεὶς",
+     "ἂν",
+     "ἐλεύθερος",
+     "ὑπὸ",
+     "τυράννου",
+     "παθεῖν",
+     "ὑπομείνειεν"
+    ]
+   },
+   {
+    "prompt": "Having suffered so many evils, the city nevertheless did not surrender itself.",
+    "answer": "τοσαῦτα κακὰ παθοῦσα ἡ πόλις ὅμως οὐ παρέδωκεν ἑαυτήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσαῦτα",
+     "κακὰ",
+     "παθοῦσα",
+     "ἡ",
+     "πόλις",
+     "ὅμως",
+     "οὐ",
+     "παρέδωκεν",
+     "ἑαυτήν"
+    ]
+   },
+   {
+    "prompt": "You say such things as no one in the city would say.",
+    "answer": "τοιαῦτα λέγεις, οἷα οὐδεὶς ἂν τῶν ἐν τῇ πόλει εἴποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιαῦτα",
+     "λέγεις",
+     "οἷα",
+     "οὐδεὶς",
+     "ἂν",
+     "τῶν",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "εἴποι"
+    ]
+   },
+   {
+    "prompt": "So great a storm arose that the sailors could no longer see the land.",
+    "answer": "τοσοῦτος χειμὼν ἐγένετο ὥστε οἱ ναῦται τὴν γῆν οὐκέτι ἑώρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτος",
+     "χειμὼν",
+     "ἐγένετο",
+     "ὥστε",
+     "οἱ",
+     "ναῦται",
+     "τὴν",
+     "γῆν",
+     "οὐκέτι",
+     "ἑώρων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t17",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Whomever the people choose, him they must obey.",
+    "answer": "ὃν ἂν ὁ δῆμος ἕληται, τούτῳ πείθεσθαι δεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃν",
+     "ἂν",
+     "ὁ",
+     "δῆμος",
+     "ἕληται",
+     "τούτῳ",
+     "πείθεσθαι",
+     "δεῖ"
+    ]
+   },
+   {
+    "prompt": "These men too, though brave, were put to death by the tyrant.",
+    "answer": "καὶ οὗτοι ἀνδρεῖοι ὄντες ὑπὸ τοῦ τυράννου ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "οὗτοι",
+     "ἀνδρεῖοι",
+     "ὄντες",
+     "ὑπὸ",
+     "τοῦ",
+     "τυράννου",
+     "ἀπέθανον"
+    ]
+   },
+   {
+    "prompt": "While the enemy pressed on, these soldiers alone did not flee.",
+    "answer": "τῶν πολεμίων ἐπικειμένων οὗτοι μόνοι οἱ στρατιῶται οὐκ ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἐπικειμένων",
+     "οὗτοι",
+     "μόνοι",
+     "οἱ",
+     "στρατιῶται",
+     "οὐκ",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Having set up an altar, on it they inscribed the names of the dead.",
+    "answer": "βωμὸν ἱδρυσάμενοι εἰς τοῦτον τὰ τῶν τεθνεώτων ὀνόματα ἔγραψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βωμὸν",
+     "ἱδρυσάμενοι",
+     "εἰς",
+     "τοῦτον",
+     "τὰ",
+     "τῶν",
+     "τεθνεώτων",
+     "ὀνόματα",
+     "ἔγραψαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t18",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "You there, why are you leading these strangers into the city?",
+    "answer": "οὗτος, τί τούσδε τοὺς ξένους εἰς τὴν πόλιν ἄγεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "τί",
+     "τούσδε",
+     "τοὺς",
+     "ξένους",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "ἄγεις"
+    ]
+   },
+   {
+    "prompt": "Consider this alone: what you will suffer if you are caught.",
+    "answer": "τοῦτο μόνον σκόπει, τί πείσῃ ἐὰν ἁλῷς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "μόνον",
+     "σκόπει",
+     "τί",
+     "πείσῃ",
+     "ἐὰν",
+     "ἁλῷς"
+    ]
+   },
+   {
+    "prompt": "This here is that man whom the whole city was seeking.",
+    "answer": "ὅδε ἐκεῖνος ὁ ἀνήρ ἐστιν ὃν ἡ πόλις ἅπασα ἐζήτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "ἐκεῖνος",
+     "ὁ",
+     "ἀνήρ",
+     "ἐστιν",
+     "ὃν",
+     "ἡ",
+     "πόλις",
+     "ἅπασα",
+     "ἐζήτει"
+    ]
+   },
+   {
+    "prompt": "The gods, robbing such men of their wits, use them as servants.",
+    "answer": "οἱ θεοὶ τοὺς τοιούτους τοῦ νοῦ ἀφαιρούμενοι ὑπηρέταις αὐτοῖς χρῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "τοὺς",
+     "τοιούτους",
+     "τοῦ",
+     "νοῦ",
+     "ἀφαιρούμενοι",
+     "ὑπηρέταις",
+     "αὐτοῖς",
+     "χρῶνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t19",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "After hearing such things, the general answered him as follows.",
+    "answer": "τοιαῦτα ἀκούσας ὁ στρατηγὸς τοιάδε ἀπεκρίνατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιαῦτα",
+     "ἀκούσας",
+     "ὁ",
+     "στρατηγός",
+     "τοιάδε",
+     "ἀπεκρίνατο"
+    ]
+   },
+   {
+    "prompt": "This man here, whom you see, betrayed the city to the enemy.",
+    "answer": "οὑτοσὶ ὁ ἀνήρ, ὃν ὁρᾷς, τὴν πόλιν τοῖς πολεμίοις προέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὑτοσί",
+     "ὁ",
+     "ἀνήρ",
+     "ὅν",
+     "ὁρᾷς",
+     "τήν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "προέδωκεν"
+    ]
+   },
+   {
+    "prompt": "That general, of whom you have often heard, is now dead.",
+    "answer": "ἐκεῖνος ὁ στρατηγός, οὗ πολλάκις ἀκήκοας, νῦν τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνος",
+     "ὁ",
+     "στρατηγός",
+     "οὗ",
+     "πολλάκις",
+     "ἀκήκοας",
+     "νῦν",
+     "τέθνηκεν"
+    ]
+   },
+   {
+    "prompt": "You there, what are you carrying under your cloak?",
+    "answer": "οὗτος, τί ὑπὸ τῷ ἱματίῳ φέρεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "τί",
+     "ὑπό",
+     "τῷ",
+     "ἱματίῳ",
+     "φέρεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t20",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "So great was the storm that the ships could not sail out.",
+    "answer": "τοσοῦτος ἦν ὁ χειμὼν ὥστε τὰς ναῦς μὴ δύνασθαι ἐκπλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτος",
+     "ἦν",
+     "ὁ",
+     "χειμών",
+     "ὥστε",
+     "τάς",
+     "ναῦς",
+     "μή",
+     "δύνασθαι",
+     "ἐκπλεῖν"
+    ]
+   },
+   {
+    "prompt": "So great is the courage of these men that they fear no danger.",
+    "answer": "τοσαύτη ἐστὶν ἡ τῶνδε τῶν ἀνδρῶν ἀνδρεία ὥστε οὐδένα κίνδυνον φοβοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσαύτη",
+     "ἐστί",
+     "ἡ",
+     "τῶνδε",
+     "τῶν",
+     "ἀνδρῶν",
+     "ἀνδρεία",
+     "ὥστε",
+     "οὐδένα",
+     "κίνδυνον",
+     "φοβοῦνται"
+    ]
+   },
+   {
+    "prompt": "The king wrote such a letter as no one expected.",
+    "answer": "τοιαύτην ἐπιστολὴν ἔγραψεν ὁ βασιλεὺς οἵαν οὐδεὶς προσεδόκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιαύτην",
+     "ἐπιστολήν",
+     "ἔγραψεν",
+     "ὁ",
+     "βασιλεύς",
+     "οἵαν",
+     "οὐδείς",
+     "προσεδόκησεν"
+    ]
+   },
+   {
+    "prompt": "Never before had I beheld so many horsemen in the plain.",
+    "answer": "οὐδέποτε πρότερον τοσούτους ἱππέας ἐν τῷ πεδίῳ ἐθεασάμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέποτε",
+     "πρότερον",
+     "τοσούτους",
+     "ἱππέας",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "ἐθεασάμην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t21",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Whatever you promise, hold fast to it.",
+    "answer": "ἃ ἂν ὑπόσχῃ, τούτοις ἔμμενε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅ",
+     "ἄν",
+     "ὑπόσχῃ",
+     "τούτοις",
+     "ἔμμενε"
+    ]
+   },
+   {
+    "prompt": "These citizens freed Greece, but we do not preserve this freedom.",
+    "answer": "οὗτοι οἱ πολῖται τὴν Ἑλλάδα ἠλευθέρωσαν, ἡμεῖς δὲ ταύτην οὐ σῴζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "πολῖται",
+     "τήν",
+     "Ἑλλάδα",
+     "ἠλευθέρωσαν",
+     "ἡμεῖς",
+     "δέ",
+     "ταύτην",
+     "οὐ",
+     "σῴζομεν"
+    ]
+   },
+   {
+    "prompt": "Trust those laws rather than these decrees.",
+    "answer": "ἐκείνοις τοῖς νόμοις μᾶλλον ἢ τούτοις τοῖς ψηφίσμασι πιστεύετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνοις",
+     "τοῖς",
+     "νόμοις",
+     "μᾶλλον",
+     "ἤ",
+     "τούτοις",
+     "ψηφίσμασι",
+     "πιστεύετε"
+    ]
+   },
+   {
+    "prompt": "That woman, whom everyone used to praise, has now fled the city.",
+    "answer": "ἐκείνη ἡ γυνή, ἣν πάντες ἐπῄνουν, νῦν ἐκ τῆς πόλεως πέφευγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνη",
+     "ἡ",
+     "γυνή",
+     "ἥν",
+     "πάντες",
+     "ἐπῄνουν",
+     "νῦν",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "πέφευγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t22",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Listen, judges, for I shall speak as follows about the war.",
+    "answer": "ἀκούσατε, ὦ δικασταί· τάδε γὰρ περὶ τοῦ πολέμου λέξω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκούσατε",
+     "ὦ",
+     "δικασταί",
+     "τάδε",
+     "γάρ",
+     "περί",
+     "τοῦ",
+     "πολέμου",
+     "λέξω"
+    ]
+   },
+   {
+    "prompt": "This is justice: to render to each what is fitting.",
+    "answer": "τοῦτό ἐστιν ἡ δικαιοσύνη, τὸ ἑκάστῳ τὸ προσῆκον ἀποδιδόναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "ἐστί",
+     "ἡ",
+     "δικαιοσύνη",
+     "τό",
+     "ἑκάστῳ",
+     "προσῆκον",
+     "ἀποδιδόναι"
+    ]
+   },
+   {
+    "prompt": "These things here I have suffered at the hands of my own friends.",
+    "answer": "τάδε ὑπὸ τῶν ἐμαυτοῦ φίλων πέπονθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάδε",
+     "ὑπό",
+     "τῶν",
+     "ἐμαυτοῦ",
+     "φίλων",
+     "πέπονθα"
+    ]
+   },
+   {
+    "prompt": "Consider this, soldiers: without discipline no army conquers.",
+    "answer": "τόδε ἐνθυμήθητε, ὦ στρατιῶται· ἄνευ εὐταξίας οὐδὲν στράτευμα νικᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόδε",
+     "ἐνθυμήθητε",
+     "ὦ",
+     "στρατιῶται",
+     "ἄνευ",
+     "εὐταξίας",
+     "οὐδέν",
+     "στράτευμα",
+     "νικᾷ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t23",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "This notorious informer accuses even the best of the citizens.",
+    "answer": "οὗτος ὁ συκοφάντης καὶ τοὺς ἀρίστους τῶν πολιτῶν κατηγορεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "συκοφάντης",
+     "καί",
+     "τούς",
+     "ἀρίστους",
+     "τῶν",
+     "πολιτῶν",
+     "κατηγορεῖ"
+    ]
+   },
+   {
+    "prompt": "He was banished, and that too by his own kinsmen.",
+    "answer": "ἐξέπεσε, καὶ ταῦτα ὑπὸ τῶν ἑαυτοῦ συγγενῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξέπεσε",
+     "καί",
+     "ταῦτα",
+     "ὑπό",
+     "τῶν",
+     "ἑαυτοῦ",
+     "συγγενῶν"
+    ]
+   },
+   {
+    "prompt": "These generals fought bravely, and they too died in the battle.",
+    "answer": "οὗτοι οἱ στρατηγοὶ ἀνδρείως ἐμαχέσαντο, καὶ οὗτοι ἐν τῇ μάχῃ ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "στρατηγοί",
+     "ἀνδρείως",
+     "ἐμαχέσαντο",
+     "καί",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀπέθανον"
+    ]
+   },
+   {
+    "prompt": "Consider this alone, namely what you will suffer if you flee.",
+    "answer": "τοῦτο μόνον σκόπει, τί πείσῃ ἐὰν φύγῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "μόνον",
+     "σκόπει",
+     "τί",
+     "πείσῃ",
+     "ἐάν",
+     "φύγῃς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t24",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "In those days our ancestors ruled the sea.",
+    "answer": "ἐν ἐκείνοις τοῖς χρόνοις οἱ ἡμέτεροι πρόγονοι τῆς θαλάττης ἦρχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἐκείνοις",
+     "τοῖς",
+     "χρόνοις",
+     "οἱ",
+     "ἡμέτεροι",
+     "πρόγονοι",
+     "τῆς",
+     "θαλάττης",
+     "ἦρχον"
+    ]
+   },
+   {
+    "prompt": "This is the best manner of learning virtue.",
+    "answer": "αὕτη ἀρίστη διδασκαλία τῆς ἀρετῆς ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἀρίστη",
+     "διδασκαλία",
+     "τῆς",
+     "ἀρετῆς",
+     "ἐστί"
+    ]
+   },
+   {
+    "prompt": "Whoever loves that man, let him also honor these children.",
+    "answer": "ὅστις ἐκεῖνον φιλεῖ, τούσδε τοὺς παῖδας τιμάτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἐκεῖνον",
+     "φιλεῖ",
+     "τούσδε",
+     "τούς",
+     "παῖδας",
+     "τιμάτω"
+    ]
+   },
+   {
+    "prompt": "Here at last is that man whom the whole city was seeking.",
+    "answer": "ὅδε ἐστὶν ἐκεῖνος ὁ ἀνήρ, ὃν πᾶσα ἡ πόλις ἐζήτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "ἐστί",
+     "ἐκεῖνος",
+     "ὁ",
+     "ἀνήρ",
+     "ὅν",
+     "πᾶσα",
+     "ἡ",
+     "πόλις",
+     "ἐζήτει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t25",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "That famous poet, whom everyone admires, died in exile.",
+    "answer": "ἐκεῖνος ὁ ποιητής, ὃν πάντες θαυμάζουσιν, ἐν τῇ φυγῇ ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνος",
+     "ὁ",
+     "ποιητής",
+     "ὅν",
+     "πάντες",
+     "θαυμάζουσιν",
+     "ἐν",
+     "τῇ",
+     "φυγῇ",
+     "ἀπέθανεν"
+    ]
+   },
+   {
+    "prompt": "Before the battle the general spoke to the soldiers as follows.",
+    "answer": "ὁ στρατηγὸς τοιάδε πρὸς τοὺς στρατιώτας πρὸ τῆς μάχης ἔλεξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τοιάδε",
+     "πρός",
+     "τούς",
+     "στρατιώτας",
+     "πρό",
+     "τῆς",
+     "μάχης",
+     "ἔλεξεν"
+    ]
+   },
+   {
+    "prompt": "This is justice: to render to each man what is due.",
+    "answer": "τοῦτό ἐστιν ἡ δικαιοσύνη, τὸ ἀποδιδόναι ἑκάστῳ τὰ προσήκοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "ἐστιν",
+     "ἡ",
+     "δικαιοσύνη",
+     "τό",
+     "ἀποδιδόναι",
+     "ἑκάστῳ",
+     "τά",
+     "προσήκοντα"
+    ]
+   },
+   {
+    "prompt": "Though they suffered so many evils under that tyrant, they nevertheless stood firm.",
+    "answer": "τοσαῦτα κακὰ ὑπὸ ἐκείνου τοῦ τυράννου παθόντες ὅμως ἔμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσαῦτα",
+     "κακά",
+     "ὑπό",
+     "ἐκείνου",
+     "τοῦ",
+     "τυράννου",
+     "παθόντες",
+     "ὅμως",
+     "ἔμειναν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1238-the-demonstrative-pronouns-t26",
+  "sectionId": "sm-1238-the-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Whoever cherishes wisdom, him the gods love.",
+    "answer": "ὅστις τὴν σοφίαν ἀσπάζεται, τοῦτον οἱ θεοὶ φιλοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τήν",
+     "σοφίαν",
+     "ἀσπάζεται",
+     "τοῦτον",
+     "οἱ",
+     "θεοί",
+     "φιλοῦσιν"
+    ]
+   },
+   {
+    "prompt": "You there, why are you hiding the fish under your cloak?",
+    "answer": "οὗτος, τί τοὺς ἰχθῦς ὑπὸ τῷ ἱματίῳ ἀποκρύπτεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "τί",
+     "τούς",
+     "ἰχθῦς",
+     "ὑπό",
+     "τῷ",
+     "ἱματίῳ",
+     "ἀποκρύπτεις"
+    ]
+   },
+   {
+    "prompt": "This freedom our ancestors won, but we ourselves do not guard it.",
+    "answer": "ταύτην τὴν ἐλευθερίαν οἱ πρόγονοι ἐκτήσαντο, ἡμεῖς δὲ αὐτὴν οὐ φυλάττομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτην",
+     "τήν",
+     "ἐλευθερίαν",
+     "οἱ",
+     "πρόγονοι",
+     "ἐκτήσαντο",
+     "ἡμεῖς",
+     "δέ",
+     "αὐτήν",
+     "οὐ",
+     "φυλάττομεν"
+    ]
+   },
+   {
+    "prompt": "Trust those laws rather than these witnesses.",
+    "answer": "ἐκείνοις τοῖς νόμοις μᾶλλον ἢ τούτοις τοῖς μάρτυσι πιστεύετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνοις",
+     "τοῖς",
+     "νόμοις",
+     "μᾶλλον",
+     "ἤ",
+     "τούτοις",
+     "μάρτυσι",
+     "πιστεύετε"
+    ]
+   }
+  ]
  }
 ]

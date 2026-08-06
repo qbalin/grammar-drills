@@ -1145,5 +1145,385 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t19",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The Athenians waged this war against the Spartans for many years.",
+    "answer": "Οἱ Ἀθηναῖοι τοῦτον τὸν πόλεμον πολλὰ ἔτη ἐπολέμησαν τοῖς Λακεδαιμονίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "Ἀθηναῖοι",
+     "τοῦτον",
+     "τὸν",
+     "πόλεμον",
+     "πολλὰ",
+     "ἔτη",
+     "ἐπολέμησαν",
+     "τοῖς",
+     "Λακεδαιμονίοις"
+    ]
+   },
+   {
+    "prompt": "The soldiers, having marched on many campaigns, longed for peace.",
+    "answer": "οἱ στρατιῶται πολλὰς στρατείας στρατευσάμενοι τῆς εἰρήνης ἐπεθύμουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πολλὰς",
+     "στρατείας",
+     "στρατευσάμενοι",
+     "τῆς",
+     "εἰρήνης",
+     "ἐπεθύμουν"
+    ]
+   },
+   {
+    "prompt": "Having fought a great battle by the river, they conquered.",
+    "answer": "Μεγάλην μάχην πρὸς τῷ ποταμῷ μαχεσάμενοι ἐνίκησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μεγάλην",
+     "μάχην",
+     "πρὸς",
+     "τῷ",
+     "ποταμῷ",
+     "μαχεσάμενοι",
+     "ἐνίκησαν"
+    ]
+   },
+   {
+    "prompt": "The general ran this danger on behalf of the city.",
+    "answer": "ὁ στρατηγὸς τοῦτον τὸν κίνδυνον ὑπὲρ τῆς πόλεως ἐκινδύνευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοῦτον",
+     "τὸν",
+     "κίνδυνον",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "ἐκινδύνευσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t20",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The father went to law with the guardian over a charge of theft.",
+    "answer": "ὁ πατὴρ τῷ ἐπιτρόπῳ δίκην κλοπῆς ἐδικάζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατὴρ",
+     "τῷ",
+     "ἐπιτρόπῳ",
+     "δίκην",
+     "κλοπῆς",
+     "ἐδικάζετο"
+    ]
+   },
+   {
+    "prompt": "The jurors, having heard the witnesses, decided the case.",
+    "answer": "οἱ δικασταὶ τῶν μαρτύρων ἀκούσαντες τὴν δίκην ἐδίκασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τῶν",
+     "μαρτύρων",
+     "ἀκούσαντες",
+     "τὴν",
+     "δίκην",
+     "ἐδίκασαν"
+    ]
+   },
+   {
+    "prompt": "Being on trial for a public charge of impiety, Socrates defended himself nobly.",
+    "answer": "γραφὴν ἀσεβείας φεύγων ὁ Σωκράτης καλῶς ἀπελογήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γραφὴν",
+     "ἀσεβείας",
+     "φεύγων",
+     "ὁ",
+     "Σωκράτης",
+     "καλῶς",
+     "ἀπελογήσατο"
+    ]
+   },
+   {
+    "prompt": "The old woman won her case against the merchant.",
+    "answer": "ἡ γραῦς τὸν ἔμπορον τὴν δίκην ἐνίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "τὸν",
+     "ἔμπορον",
+     "τὴν",
+     "δίκην",
+     "ἐνίκησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t21",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The tyrant, greatly elated at his power, despised everyone.",
+    "answer": "ὁ τύραννος μέγα φρονῶν ἐπὶ τῇ δυνάμει πάντων κατεφρόνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "μέγα",
+     "φρονῶν",
+     "ἐπὶ",
+     "τῇ",
+     "δυνάμει",
+     "πάντων",
+     "κατεφρόνει"
+    ]
+   },
+   {
+    "prompt": "The soldiers maltreated the captives terribly.",
+    "answer": "οἱ στρατιῶται τοὺς αἰχμαλώτους δεινὰ ὕβρισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "δεινὰ",
+     "ὕβρισαν"
+    ]
+   },
+   {
+    "prompt": "This witness lies greatly and deceives the jurors.",
+    "answer": "οὗτος ὁ μάρτυς μεγάλα ψεύδεται καὶ τοὺς δικαστὰς ἐξαπατᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ὁ",
+     "μάρτυς",
+     "μεγάλα",
+     "ψεύδεται",
+     "καὶ",
+     "τοὺς",
+     "δικαστὰς",
+     "ἐξαπατᾷ"
+    ]
+   },
+   {
+    "prompt": "The young men commit grave errors whenever they obey no one.",
+    "answer": "οἱ νεανίαι μεγάλα ἁμαρτάνουσιν ὅταν μηδενὶ πείθωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "μεγάλα",
+     "ἁμαρτάνουσιν",
+     "ὅταν",
+     "μηδενὶ",
+     "πείθωνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t22",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The priest offered the sacrifice for the good news of the victory.",
+    "answer": "ὁ ἱερεὺς τὰ εὐαγγέλια τῆς νίκης ἔθυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "τὰ",
+     "εὐαγγέλια",
+     "τῆς",
+     "νίκης",
+     "ἔθυσεν"
+    ]
+   },
+   {
+    "prompt": "The women made these prayers to Athena on behalf of the city.",
+    "answer": "αἱ γυναῖκες τάσδε τὰς εὐχὰς τῇ Ἀθηνᾷ ὑπὲρ τῆς πόλεως ηὔξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "τάσδε",
+     "τὰς",
+     "εὐχὰς",
+     "τῇ",
+     "Ἀθηνᾷ",
+     "ὑπὲρ",
+     "τῆς",
+     "πόλεως",
+     "ηὔξαντο"
+    ]
+   },
+   {
+    "prompt": "The wounded man kept crying a great cry throughout the night.",
+    "answer": "ὁ τετρωμένος μεγάλην βοὴν διὰ τῆς νυκτὸς ἐβόα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τετρωμένος",
+     "μεγάλην",
+     "βοὴν",
+     "διὰ",
+     "τῆς",
+     "νυκτὸς",
+     "ἐβόα"
+    ]
+   },
+   {
+    "prompt": "The athlete, having won an Olympic victory, was honored by the citizens.",
+    "answer": "ὁ ἀθλητὴς Ὀλύμπια νικήσας ὑπὸ τῶν πολιτῶν ἐτιμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀθλητὴς",
+     "Ὀλύμπια",
+     "νικήσας",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "ἐτιμήθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t23",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The child, having fallen ill of a terrible disease, died.",
+    "answer": "ὁ παῖς δεινὴν νόσον νοσήσας ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "δεινὴν",
+     "νόσον",
+     "νοσήσας",
+     "ἀπέθανεν"
+    ]
+   },
+   {
+    "prompt": "They went forth on another expedition against the barbarians.",
+    "answer": "ἄλλην ὁδὸν ἐπὶ τοὺς βαρβάρους ἐξῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄλλην",
+     "ὁδὸν",
+     "ἐπὶ",
+     "τοὺς",
+     "βαρβάρους",
+     "ἐξῆλθον"
+    ]
+   },
+   {
+    "prompt": "The Greeks waged the so-called Sacred War against the Phocians.",
+    "answer": "οἱ Ἕλληνες τὸν ἱερὸν καλούμενον πόλεμον ἐπὶ τοὺς Φωκέας ἐστράτευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "τὸν",
+     "ἱερὸν",
+     "καλούμενον",
+     "πόλεμον",
+     "ἐπὶ",
+     "τοὺς",
+     "Φωκέας",
+     "ἐστράτευσαν"
+    ]
+   },
+   {
+    "prompt": "War was waged in Asia for a long time.",
+    "answer": "πόλεμος ἐν τῇ Ἀσίᾳ πολὺν χρόνον ἐπολεμεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόλεμος",
+     "ἐν",
+     "τῇ",
+     "Ἀσίᾳ",
+     "πολὺν",
+     "χρόνον",
+     "ἐπολεμεῖτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-t24",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "The promises which he made to the allies he did not fulfill.",
+    "answer": "τὰς ὑποσχέσεις ἃς τοῖς συμμάχοις ὑπέσχετο οὐκ ἐπετέλεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "ὑποσχέσεις",
+     "ἃς",
+     "τοῖς",
+     "συμμάχοις",
+     "ὑπέσχετο",
+     "οὐκ",
+     "ἐπετέλεσεν"
+    ]
+   },
+   {
+    "prompt": "The charge which they bring against the general is not just.",
+    "answer": "ἡ αἰτία ἣν τὸν στρατηγὸν αἰτιῶνται οὐ δικαία ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "αἰτία",
+     "ἣν",
+     "τὸν",
+     "στρατηγὸν",
+     "αἰτιῶνται",
+     "οὐ",
+     "δικαία",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "This man shared the same exile as the best of the citizens.",
+    "answer": "οὗτος τὴν αὐτὴν φυγὴν ἔφυγε τοῖς ἀρίστοις τῶν πολιτῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "τὴν",
+     "αὐτὴν",
+     "φυγὴν",
+     "ἔφυγε",
+     "τοῖς",
+     "ἀρίστοις",
+     "τῶν",
+     "πολιτῶν"
+    ]
+   }
+  ]
  }
 ]

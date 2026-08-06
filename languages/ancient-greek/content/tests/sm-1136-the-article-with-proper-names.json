@@ -748,5 +748,586 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t13",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "Thucydides an Athenian wrote about the war.",
+    "answer": "Θουκυδίδης Ἀθηναῖος περὶ τοῦ πολέμου συνέγραψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Θουκυδίδης",
+     "Ἀθηναῖος",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "συνέγραψεν"
+    ]
+   },
+   {
+    "prompt": "The famous Pericles persuaded the Athenians to make war.",
+    "answer": "ὁ Περικλῆς τοὺς Ἀθηναίους ἔπεισε πολεμεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Περικλῆς",
+     "τοὺς",
+     "Ἀθηναίους",
+     "ἔπεισε",
+     "πολεμεῖν"
+    ]
+   },
+   {
+    "prompt": "Demosthenes the son of Alcisthenes commanded the fleet.",
+    "answer": "Δημοσθένης ὁ Ἀλκισθένους τῷ ναυτικῷ ἡγήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δημοσθένης",
+     "ὁ",
+     "Ἀλκισθένους",
+     "τῷ",
+     "ναυτικῷ",
+     "ἡγήσατο"
+    ]
+   },
+   {
+    "prompt": "After Cyrus had died, the soldiers chose Clearchus as general.",
+    "answer": "Κύρου ἀποθανόντος οἱ στρατιῶται Κλέαρχον στρατηγὸν εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κύρου",
+     "ἀποθανόντος",
+     "οἱ",
+     "στρατιῶται",
+     "Κλέαρχον",
+     "στρατηγὸν",
+     "εἵλοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t14",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "Athena, as they say, gave the olive to the city.",
+    "answer": "Ἀθηνᾶ, ὡς λέγουσι, τὴν ἐλαίαν τῇ πόλει ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀθηνᾶ",
+     "ὡς",
+     "λέγουσι",
+     "τὴν",
+     "ἐλαίαν",
+     "τῇ",
+     "πόλει",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "By Zeus, I will never betray my friends.",
+    "answer": "νὴ τὸν Δία, οὐδέποτε τοὺς φίλους προδώσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νὴ",
+     "τὸν",
+     "Δία",
+     "οὐδέποτε",
+     "τοὺς",
+     "φίλους",
+     "προδώσω"
+    ]
+   },
+   {
+    "prompt": "Near the sanctuary of Athena the citizens sacrificed oxen.",
+    "answer": "πρὸς τῷ τῆς Ἀθηνᾶς ἱερῷ οἱ πολῖται βοῦς ἔθυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸς",
+     "τῷ",
+     "τῆς",
+     "Ἀθηνᾶς",
+     "ἱερῷ",
+     "οἱ",
+     "πολῖται",
+     "βοῦς",
+     "ἔθυσαν"
+    ]
+   },
+   {
+    "prompt": "Before the battle they prayed to Zeus the guardian of freedom.",
+    "answer": "πρὸ τῆς μάχης τῷ Διὶ τῷ ἐλευθερίῳ ηὔξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "τῷ",
+     "Διὶ",
+     "ἐλευθερίῳ",
+     "ηὔξαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t15",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "The Greeks fought bravely against the barbarians at Marathon.",
+    "answer": "οἱ Ἕλληνες ἐν Μαραθῶνι πρὸς τοὺς βαρβάρους ἀνδρείως ἐμαχέσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "ἐν",
+     "Μαραθῶνι",
+     "πρὸς",
+     "τοὺς",
+     "βαρβάρους",
+     "ἀνδρείως",
+     "ἐμαχέσαντο"
+    ]
+   },
+   {
+    "prompt": "The war of the Athenians and the Corinthians lasted many years.",
+    "answer": "ὁ πόλεμος Ἀθηναίων καὶ Κορινθίων πολλὰ ἔτη διέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πόλεμος",
+     "Ἀθηναίων",
+     "καὶ",
+     "Κορινθίων",
+     "πολλὰ",
+     "ἔτη",
+     "διέμεινεν"
+    ]
+   },
+   {
+    "prompt": "The Spartans themselves crossed the river.",
+    "answer": "αὐτοὶ Λακεδαιμόνιοι τὸν ποταμὸν διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοὶ",
+     "Λακεδαιμόνιοι",
+     "τὸν",
+     "ποταμὸν",
+     "διέβησαν"
+    ]
+   },
+   {
+    "prompt": "The Persians honor both the sun and the fire.",
+    "answer": "Πέρσαι τόν τε ἥλιον καὶ τὸ πῦρ τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πέρσαι",
+     "τόν",
+     "τε",
+     "ἥλιον",
+     "καὶ",
+     "τὸ",
+     "πῦρ",
+     "τιμῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t16",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "The Persians crossed from Asia into Europe.",
+    "answer": "οἱ Πέρσαι ἐκ τῆς Ἀσίας εἰς τὴν Εὐρώπην διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "ἐκ",
+     "τῆς",
+     "Ἀσίας",
+     "εἰς",
+     "τὴν",
+     "Εὐρώπην",
+     "διέβησαν"
+    ]
+   },
+   {
+    "prompt": "The enemy ravaged Attica for many days.",
+    "answer": "οἱ πολέμιοι τὴν Ἀττικὴν πολλὰς ἡμέρας ἐπόρθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "Ἀττικὴν",
+     "πολλὰς",
+     "ἡμέρας",
+     "ἐπόρθουν"
+    ]
+   },
+   {
+    "prompt": "Merchants sailed to Egypt to buy grain.",
+    "answer": "ἔμποροι εἰς Αἴγυπτον ἔπλευσαν σῖτον ὠνησόμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔμποροι",
+     "εἰς",
+     "Αἴγυπτον",
+     "ἔπλευσαν",
+     "σῖτον",
+     "ὠνησόμενοι"
+    ]
+   },
+   {
+    "prompt": "The greater part of Sicily fears the tyrant.",
+    "answer": "Σικελίας τὸ πλεῖστον τὸν τύραννον φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Σικελίας",
+     "τὸ",
+     "πλεῖστον",
+     "τὸν",
+     "τύραννον",
+     "φοβεῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t17",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "Cyrus crossed the river Euphrates with the army.",
+    "answer": "Κῦρος τὸν Εὐφράτην ποταμὸν σὺν τῷ στρατεύματι διέβη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "τὸν",
+     "Εὐφράτην",
+     "ποταμὸν",
+     "σὺν",
+     "τῷ",
+     "στρατεύματι",
+     "διέβη"
+    ]
+   },
+   {
+    "prompt": "The Athenians settled the island of Salamis.",
+    "answer": "οἱ Ἀθηναῖοι τὴν Σαλαμῖνα νῆσον ᾤκισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τὴν",
+     "Σαλαμῖνα",
+     "νῆσον",
+     "ᾤκισαν"
+    ]
+   },
+   {
+    "prompt": "Pursued by the enemy, they fled to Mount Cithaeron.",
+    "answer": "ὑπὸ τῶν πολεμίων διωκόμενοι εἰς τὸ ὄρος τὸν Κιθαιρῶνα ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "διωκόμενοι",
+     "εἰς",
+     "τὸ",
+     "ὄρος",
+     "τὸν",
+     "Κιθαιρῶνα",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The merchants sailed into the Pontus.",
+    "answer": "οἱ ἔμποροι εἰς τὸν Πόντον εἰσέπλευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἔμποροι",
+     "εἰς",
+     "τὸν",
+     "Πόντον",
+     "εἰσέπλευσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t18",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "The King sent gifts to the ambassadors of the Greeks.",
+    "answer": "βασιλεὺς δῶρα τοῖς τῶν Ἑλλήνων πρέσβεσιν ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βασιλεὺς",
+     "δῶρα",
+     "τοῖς",
+     "τῶν",
+     "Ἑλλήνων",
+     "πρέσβεσιν",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "A father ought to educate his sons.",
+    "answer": "πατέρα χρὴ τοὺς υἱοὺς παιδεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πατέρα",
+     "χρὴ",
+     "τοὺς",
+     "υἱοὺς",
+     "παιδεύειν"
+    ]
+   },
+   {
+    "prompt": "On behalf of fatherland they died willingly.",
+    "answer": "ὑπὲρ πατρίδος ἑκόντες ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὲρ",
+     "πατρίδος",
+     "ἑκόντες",
+     "ἀπέθανον"
+    ]
+   },
+   {
+    "prompt": "When day had come, they went down into the city and to the marketplace.",
+    "answer": "ἡμέρας γενομένης εἰς ἄστυ καὶ εἰς ἀγορὰν κατέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμέρας",
+     "γενομένης",
+     "εἰς",
+     "ἄστυ",
+     "καὶ",
+     "ἀγορὰν",
+     "κατέβησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t19",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "Demosthenes the son of Alcisthenes became conspicuous in the war.",
+    "answer": "Δημοσθένης ὁ Ἀλκισθένους ἐν τῷ πολέμῳ κατάδηλος ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δημοσθένης",
+     "ὁ",
+     "Ἀλκισθένους",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ",
+     "κατάδηλος",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "The King, although he possessed much land, feared the Greeks.",
+    "answer": "βασιλεύς, καίπερ πολλὴν χώραν ἔχων, τοὺς Ἕλληνας ἐφοβεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βασιλεύς",
+     "καίπερ",
+     "πολλὴν",
+     "χώραν",
+     "ἔχων",
+     "τοὺς",
+     "Ἕλληνας",
+     "ἐφοβεῖτο"
+    ]
+   },
+   {
+    "prompt": "When Cyrus had died, the Greeks chose Xenophon as general.",
+    "answer": "Κύρου ἀποθανόντος, οἱ Ἕλληνες Ξενοφῶντα στρατηγὸν εἵλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κύρου",
+     "ἀποθανόντος",
+     "οἱ",
+     "Ἕλληνες",
+     "Ξενοφῶντα",
+     "στρατηγὸν",
+     "εἵλοντο"
+    ]
+   },
+   {
+    "prompt": "\"By Zeus,\" said Socrates, \"I have never yet sailed to Egypt.\"",
+    "answer": "νὴ τὸν Δία, ἔφη ὁ Σωκράτης, οὐδεπώποτε εἰς Αἴγυπτον ἔπλευσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νὴ",
+     "τὸν",
+     "Δία",
+     "ἔφη",
+     "ὁ",
+     "Σωκράτης",
+     "οὐδεπώποτε",
+     "εἰς",
+     "Αἴγυπτον",
+     "ἔπλευσα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t20",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "The army, having crossed the river Halys, encamped in Cappadocia.",
+    "answer": "τὸ στράτευμα τὸν Ἅλυν ποταμὸν διαβὰν ἐν τῇ Καππαδοκίᾳ ἐστρατοπεδεύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "τὸν",
+     "Ἅλυν",
+     "ποταμὸν",
+     "διαβὰν",
+     "ἐν",
+     "τῇ",
+     "Καππαδοκίᾳ",
+     "ἐστρατοπεδεύσατο"
+    ]
+   },
+   {
+    "prompt": "The Athenians sent ships to the island of Lesbos.",
+    "answer": "οἱ Ἀθηναῖοι ναῦς εἰς Λέσβον τὴν νῆσον ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ναῦς",
+     "εἰς",
+     "Λέσβον",
+     "τὴν",
+     "νῆσον",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "The soldiers marched through Mount Cithaeron into Boeotia.",
+    "answer": "οἱ στρατιῶται διὰ τοῦ Κιθαιρῶνος εἰς τὴν Βοιωτίαν ἐπορεύθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "διὰ",
+     "τοῦ",
+     "Κιθαιρῶνος",
+     "εἰς",
+     "τὴν",
+     "Βοιωτίαν",
+     "ἐπορεύθησαν"
+    ]
+   },
+   {
+    "prompt": "Xerxes wished to make Europe and Asia one country.",
+    "answer": "Ξέρξης τήν τε Εὐρώπην καὶ τὴν Ἀσίαν μίαν χώραν ποιῆσαι ἐβούλετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ξέρξης",
+     "τήν",
+     "τε",
+     "Εὐρώπην",
+     "καὶ",
+     "τὴν",
+     "Ἀσίαν",
+     "μίαν",
+     "χώραν",
+     "ποιῆσαι",
+     "ἐβούλετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-t21",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "At the Great Panathenaea the citizens honored Athena.",
+    "answer": "Παναθηναίοις τοῖς μεγάλοις οἱ πολῖται τὴν Ἀθηνᾶν ἐτίμων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Παναθηναίοις",
+     "τοῖς",
+     "μεγάλοις",
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "Ἀθηνᾶν",
+     "ἐτίμων"
+    ]
+   },
+   {
+    "prompt": "His mother and his wife awaited the general in the city.",
+    "answer": "ἡ μήτηρ καὶ ἡ γυνὴ τὸν στρατηγὸν ἐν τῷ ἄστει ἀνέμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "καὶ",
+     "γυνὴ",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐν",
+     "τῷ",
+     "ἄστει",
+     "ἀνέμενον"
+    ]
+   },
+   {
+    "prompt": "When the sun had risen, the sailors sailed out onto the sea.",
+    "answer": "ἀνατείλαντος τοῦ ἡλίου, οἱ ναῦται εἰς τὴν θάλατταν ἐξέπλευσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνατείλαντος",
+     "τοῦ",
+     "ἡλίου",
+     "οἱ",
+     "ναῦται",
+     "εἰς",
+     "τὴν",
+     "θάλατταν",
+     "ἐξέπλευσαν"
+    ]
+   },
+   {
+    "prompt": "The generals, on behalf of their fatherland, drew up the hoplites in the marketplace.",
+    "answer": "στρατηγοὶ ὑπὲρ τῆς πατρίδος τοὺς ὁπλίτας ἐν τῇ ἀγορᾷ ἔταξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατηγοὶ",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "τοὺς",
+     "ὁπλίτας",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἔταξαν"
+    ]
+   }
+  ]
  }
 ]

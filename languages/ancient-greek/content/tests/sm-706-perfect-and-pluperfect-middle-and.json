@@ -744,5 +744,366 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t13",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The temple has been adorned with many statues.",
+    "answer": "τὸ ἱερὸν πολλοῖς ἀγάλμασι κεκόσμηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἱερὸν",
+     "πολλοῖς",
+     "ἀγάλμασι",
+     "κεκόσμηται"
+    ]
+   },
+   {
+    "prompt": "Everything has been arranged well by the wise general.",
+    "answer": "πάντα καλῶς ὑπὸ τοῦ σοφοῦ στρατηγοῦ τέτακται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "καλῶς",
+     "ὑπὸ",
+     "τοῦ",
+     "σοφοῦ",
+     "στρατηγοῦ",
+     "τέτακται"
+    ]
+   },
+   {
+    "prompt": "The bodies of the dead have been buried beside the sea.",
+    "answer": "τὰ τῶν νεκρῶν σώματα παρὰ τῇ θαλάττῃ τέθαπται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "νεκρῶν",
+     "σώματα",
+     "παρὰ",
+     "τῇ",
+     "θαλάττῃ",
+     "τέθαπται"
+    ]
+   },
+   {
+    "prompt": "This deed has been done not without danger.",
+    "answer": "τοῦτο τὸ ἔργον οὐκ ἄνευ κινδύνου πέπρακται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ἔργον",
+     "οὐκ",
+     "ἄνευ",
+     "κινδύνου",
+     "πέπρακται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t14",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The wall had been thrown down before we arrived.",
+    "answer": "τὸ τεῖχος κατεβέβλητο πρὶν ἡμᾶς ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τεῖχος",
+     "κατεβέβλητο",
+     "πρὶν",
+     "ἡμᾶς",
+     "ἀφικέσθαι"
+    ]
+   },
+   {
+    "prompt": "The money had been hidden in the earth by the slaves.",
+    "answer": "τὰ χρήματα ἐν τῇ γῇ ὑπὸ τῶν δούλων ἐκέκρυπτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "χρήματα",
+     "ἐν",
+     "τῇ",
+     "γῇ",
+     "ὑπὸ",
+     "τῶν",
+     "δούλων",
+     "ἐκέκρυπτο"
+    ]
+   },
+   {
+    "prompt": "The soldiers had been drawn up in the plain.",
+    "answer": "οἱ στρατιῶται ἐν τῷ πεδίῳ τεταγμένοι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "τεταγμένοι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "Many things had been said by the ambassadors about the peace.",
+    "answer": "πολλὰ ὑπὸ τῶν πρέσβεων περὶ τῆς εἰρήνης εἴρητο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "ὑπὸ",
+     "τῶν",
+     "πρέσβεων",
+     "περὶ",
+     "τῆς",
+     "εἰρήνης",
+     "εἴρητο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t15",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "Those who possess many things are not always happy.",
+    "answer": "οἱ πολλὰ κεκτημένοι οὐκ ἀεί εἰσιν εὐδαίμονες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολλὰ",
+     "κεκτημένοι",
+     "οὐκ",
+     "ἀεί",
+     "εἰσιν",
+     "εὐδαίμονες"
+    ]
+   },
+   {
+    "prompt": "Let us remember the men who died on behalf of their country.",
+    "answer": "μεμνώμεθα τῶν ἀνδρῶν τῶν ὑπὲρ τῆς πατρίδος ἀποθανόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεμνώμεθα",
+     "τῶν",
+     "ἀνδρῶν",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθανόντων"
+    ]
+   },
+   {
+    "prompt": "Would that I possessed as much wisdom as you!",
+    "answer": "εἴθε τοσαύτην σοφίαν κεκτῄμην ὅσην σύ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "τοσαύτην",
+     "σοφίαν",
+     "κεκτῄμην",
+     "ὅσην",
+     "σύ"
+    ]
+   },
+   {
+    "prompt": "Remember that you are mortal!",
+    "answer": "μέμνησο ὅτι θνητὸς εἶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνησο",
+     "ὅτι",
+     "θνητὸς",
+     "εἶ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t16",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The messengers report that the city has been captured.",
+    "answer": "οἱ ἄγγελοι τὴν πόλιν ᾑρῆσθαι ἀγγέλλουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "τὴν",
+     "πόλιν",
+     "ᾑρῆσθαι",
+     "ἀγγέλλουσιν"
+    ]
+   },
+   {
+    "prompt": "He thinks that everything has been prepared for the journey.",
+    "answer": "πάντα πρὸς τὴν πορείαν παρεσκευάσθαι νομίζει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "πρὸς",
+     "τὴν",
+     "πορείαν",
+     "παρεσκευάσθαι",
+     "νομίζει"
+    ]
+   },
+   {
+    "prompt": "We know that these things have been written truly.",
+    "answer": "ταῦτα ἀληθῶς γεγράφθαι ἴσμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἀληθῶς",
+     "γεγράφθαι",
+     "ἴσμεν"
+    ]
+   },
+   {
+    "prompt": "I found the enemy already drawn up for battle.",
+    "answer": "τοὺς πολεμίους ἤδη εἰς μάχην τεταγμένους εὗρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "πολεμίους",
+     "ἤδη",
+     "εἰς",
+     "μάχην",
+     "τεταγμένους",
+     "εὗρον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t17",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "Cease from your toils, for the work has been finished.",
+    "answer": "πέπαυσο τῶν πόνων· τὸ γὰρ ἔργον πεπέρανται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέπαυσο",
+     "τῶν",
+     "πόνων",
+     "τὸ",
+     "γὰρ",
+     "ἔργον",
+     "πεπέρανται"
+    ]
+   },
+   {
+    "prompt": "Let this much have been said about the laws.",
+    "answer": "τοσαῦτα περὶ τῶν νόμων εἰρήσθω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσαῦτα",
+     "περὶ",
+     "τῶν",
+     "νόμων",
+     "εἰρήσθω"
+    ]
+   },
+   {
+    "prompt": "Do not be afraid, soldiers, of the multitude of the enemy!",
+    "answer": "μὴ πεφόβησθε, ὦ στρατιῶται, τὸ τῶν πολεμίων πλῆθος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "πεφόβησθε",
+     "ὦ",
+     "στρατιῶται",
+     "τὸ",
+     "τῶν",
+     "πολεμίων",
+     "πλῆθος"
+    ]
+   },
+   {
+    "prompt": "Let the guard have been posted upon the wall.",
+    "answer": "ἡ φυλακὴ ἐπὶ τῷ τείχει τετάχθω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φυλακὴ",
+     "ἐπὶ",
+     "τῷ",
+     "τείχει",
+     "τετάχθω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t18",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "If the camp has been fortified, we shall await the enemy.",
+    "answer": "εἰ τὸ στρατόπεδον τετείχισται, τοὺς πολεμίους μενοῦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸ",
+     "στρατόπεδον",
+     "τετείχισται",
+     "τοὺς",
+     "πολεμίους",
+     "μενοῦμεν"
+    ]
+   },
+   {
+    "prompt": "I fear that we have been slandered before the judges.",
+    "answer": "δέδοικα μὴ πρὸς τοὺς δικαστὰς διαβεβλήμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μὴ",
+     "πρὸς",
+     "τοὺς",
+     "δικαστὰς",
+     "διαβεβλήμεθα"
+    ]
+   },
+   {
+    "prompt": "The just man has been called a friend of the gods.",
+    "answer": "ὁ δίκαιος φίλος τῶν θεῶν κέκληται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δίκαιος",
+     "φίλος",
+     "τῶν",
+     "θεῶν",
+     "κέκληται"
+    ]
+   },
+   {
+    "prompt": "If anything has been badly arranged, the general sets it right.",
+    "answer": "ἐάν τι κακῶς τεταγμένον ᾖ, ὁ στρατηγὸς ἐπανορθοῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τι",
+     "κακῶς",
+     "τεταγμένον",
+     "ᾖ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐπανορθοῖ"
+    ]
+   }
+  ]
  }
 ]

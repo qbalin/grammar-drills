@@ -1494,5 +1494,136 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-768-irregular-mi-verbs-768-t25",
+  "sectionId": "sm-768-irregular-mi-verbs-768",
+  "questions": [
+   {
+    "prompt": "The Athenians were once masters of the sea.",
+    "answer": "οἱ Ἀθηναῖοι ποτὲ τῆς θαλάττης ἦσαν κύριοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ποτὲ",
+     "τῆς",
+     "θαλάττης",
+     "ἦσαν",
+     "κύριοι"
+    ]
+   },
+   {
+    "prompt": "Tomorrow I shall go to the market with my brother.",
+    "answer": "αὔριον εἰς τὴν ἀγορὰν μετὰ τοῦ ἀδελφοῦ εἶμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὔριον",
+     "εἰς",
+     "τὴν",
+     "ἀγορὰν",
+     "μετὰ",
+     "τοῦ",
+     "ἀδελφοῦ",
+     "εἶμι"
+    ]
+   },
+   {
+    "prompt": "He asserts that the laws are just, yet does not obey them.",
+    "answer": "φησὶ μὲν τοὺς νόμους δικαίους εἶναι, οὐ μέντοι πείθεται αὐτοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φησὶ",
+     "μὲν",
+     "τοὺς",
+     "νόμους",
+     "δικαίους",
+     "εἶναι",
+     "οὐ",
+     "μέντοι",
+     "πείθεται",
+     "αὐτοῖς"
+    ]
+   },
+   {
+    "prompt": "The archers kept letting their missiles fly at the approaching enemy.",
+    "answer": "οἱ τοξόται τὰ βέλη ἐπὶ τοὺς προσιόντας πολεμίους ἵεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοξόται",
+     "τὰ",
+     "βέλη",
+     "ἐπὶ",
+     "τοὺς",
+     "προσιόντας",
+     "πολεμίους",
+     "ἵεσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-768-irregular-mi-verbs-768-t26",
+  "sectionId": "sm-768-irregular-mi-verbs-768",
+  "questions": [
+   {
+    "prompt": "We endure toils in order that we may be free.",
+    "answer": "πόνους ὑπομένομεν ἵνα ἐλεύθεροι ὦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόνους",
+     "ὑπομένομεν",
+     "ἵνα",
+     "ἐλεύθεροι",
+     "ὦμεν"
+    ]
+   },
+   {
+    "prompt": "Though being a foreigner, he spoke better than the citizens.",
+    "answer": "ξένος ὢν ἄμεινον τῶν πολιτῶν ἔλεγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ξένος",
+     "ὢν",
+     "ἄμεινον",
+     "τῶν",
+     "πολιτῶν",
+     "ἔλεγεν"
+    ]
+   },
+   {
+    "prompt": "The general refused to lead the army into danger.",
+    "answer": "ὁ στρατηγὸς οὐκ ἔφη τὸ στράτευμα εἰς κίνδυνον ἄξειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "οὐκ",
+     "ἔφη",
+     "τὸ",
+     "στράτευμα",
+     "εἰς",
+     "κίνδυνον",
+     "ἄξειν"
+    ]
+   },
+   {
+    "prompt": "The women were sitting in the temple, lamenting the dead.",
+    "answer": "αἱ γυναῖκες ἐν τῷ ἱερῷ ἧντο τοὺς τεθνηκότας ὀλοφυρόμεναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "ἧντο",
+     "τοὺς",
+     "τεθνηκότας",
+     "ὀλοφυρόμεναι"
+    ]
+   }
+  ]
  }
 ]
