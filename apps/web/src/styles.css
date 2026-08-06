@@ -16,8 +16,8 @@
   --text-faint: #6a6776;
   --gold: #e8c98a;
   --gold-dim: #8a7a52;
-  --green: #7fc99a;
-  --green-dim: #4f7d61;
+  --blue: #7fb3dd;
+  --blue-dim: #4d6f8c;
   --amber: #e0a95e;
   --red: #d98a86;
 
@@ -49,8 +49,8 @@
     --text-faint: #918d99;
     --gold: #9a7620;
     --gold-dim: #c4ab73;
-    --green: #2f7d52;
-    --green-dim: #8fb59d;
+    --blue: #2b5f89;
+    --blue-dim: #8fadc6;
     --amber: #a06a12;
     --red: #a3423c;
     color-scheme: light;
@@ -109,12 +109,12 @@ button {
 }
 
 /* One accent per errand. Exploring keeps the gold; reviewing moves the accent
-   to the green the progress meters already use for ground gained. It is the
+   to the blue the progress meters already use for ground gained. It is the
    same variable, so every button, ring and meter follows without knowing which
    errand it is on. */
 .app[data-mode="review"] {
-  --gold: var(--green);
-  --gold-dim: var(--green-dim);
+  --gold: var(--blue);
+  --gold-dim: var(--blue-dim);
 }
 
 .screen {
@@ -274,7 +274,7 @@ span.status__title {
 }
 
 .badge--new {
-  color: var(--green);
+  color: var(--blue);
 }
 
 /* The book coming back to a topic it has already taught: not new, and not a
@@ -753,7 +753,7 @@ span.status__title {
 
 .grade--1 .grade__label { color: var(--red); }
 .grade--2 .grade__label { color: var(--amber); }
-.grade--3 .grade__label { color: var(--green); }
+.grade--3 .grade__label { color: var(--blue); }
 .grade--4 .grade__label { color: var(--gold); }
 
 /* --- sheets --------------------------------------------------------------- */
@@ -1180,8 +1180,8 @@ span.status__title {
 /* Mastery bands, 1 through 4. */
 .band--m1 { background: color-mix(in srgb, var(--amber) 22%, var(--ink-raised)); }
 .band--m2 { background: color-mix(in srgb, var(--amber) 45%, var(--ink-raised)); }
-.band--m3 { background: color-mix(in srgb, var(--green) 55%, var(--ink-raised)); }
-.band--m4 { background: var(--green); }
+.band--m3 { background: color-mix(in srgb, var(--blue) 55%, var(--ink-raised)); }
+.band--m4 { background: var(--blue); }
 
 /* --- lists ---------------------------------------------------------------- */
 
