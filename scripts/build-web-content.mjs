@@ -29,8 +29,16 @@
  * `--pack` names a language pack directory; its `content/` is what gets
  * repacked. `--content` still points straight at a content directory.
  */
+import { createHash } from "node:crypto";
 import { gunzipSync, gzipSync } from "node:zlib";
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import {
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -48,6 +56,15 @@ const packDir =
   values.pack ?? join(repoRoot, "languages", process.env.LANG_PACK ?? "latin");
 const contentDir = values.content ?? join(packDir, "content");
 const outDir = values.out ?? join(repoRoot, "apps", "web", "public", "content");
+
+/** The five, in the order the version stamp hashes them. */
+const ASSETS = [
+  "grammar.json.gz",
+  "tests.json.gz",
+  "lemmas.json.gz",
+  "forms.txt.gz",
+  "paradigms.txt.gz",
+];
 
 /** gzip at the highest level — these are written once and shipped forever. */
 function writeGz(name, text) {
@@ -165,7 +182,7 @@ function buildLemmas() {
 
   writeGz("lemmas.json.gz", JSON.stringify(entries));
   writeGz("forms.txt.gz", lines.join("\n"));
-  return { forms: lines.length, lemmas: entries.length };
+  return { forms: lines.length, lemmas: entries.length, keys: indexOf };
 }
 
 // --- paradigms ---------------------------------------------------------------
@@ -179,20 +196,30 @@ function buildLemmas() {
  */
 function buildParadigms() {
   const from = join(contentDir, "paradigms.txt.gz");
+  const to = join(outDir, "paradigms.txt.gz");
   if (!existsSync(from)) {
+    // Deleted, not merely skipped. `outDir` is reused between packs — the
+    // deploy builds every language into the same tree, one after another — so
+    // leaving the last pack's file behind would ship Latin's paradigms inside
+    // the Greek build, where every key misses and every word looks defective.
+    if (existsSync(to)) rmSync(to);
     console.log(`  paradigms.txt.gz  not built for this pack — words will show no table`);
     return null;
   }
   const gz = readFileSync(from);
-  writeFileSync(join(outDir, "paradigms.txt.gz"), gz);
+  writeFileSync(to, gz);
   const text = gunzipSync(gz).toString("utf8");
-  const words = text.indexOf("\n") === -1 ? 0 : text.split("\n").length - 1;
+  const lines = text.split("\n");
+  const words = text.indexOf("\n") === -1 ? 0 : lines.length - 1;
+  // The first line interns the tag signatures; every line after it is keyed
+  // `lemma|pos`, which is what a `LemmaEntry` already carries.
+  const keys = new Set(lines.slice(1).filter(Boolean).map((l) => l.split("\t")[0]));
   const kb = (n) => `${(n / 1024).toFixed(0)} KB`;
   console.log(
     `  ${"paradigms.txt.gz".padEnd(16)} ${kb(Buffer.byteLength(text)).padStart(8)} raw  ->  ` +
       `${kb(gz.length).padStart(8)} gz`,
   );
-  return { words };
+  return { words, keys };
 }
 
 // --- run --------------------------------------------------------------------
@@ -208,3 +235,34 @@ console.log(
     `${lemmas.lemmas} lemmas over ${lemmas.forms} forms` +
     (paradigms ? ` · ${paradigms.words} words with a paradigm` : ""),
 );
+
+/*
+ * A stamp the app hangs on every content URL.
+ *
+ * The five assets have fixed names and change with every rebuild, and three of
+ * them are held by the service worker under `CacheFirst` — which, by design,
+ * never asks again. Without something in the URL to move, a browser that
+ * fetched `paradigms.txt.gz` once keeps that copy for good, and a content fix
+ * reaches everyone except the people already using the app.
+ *
+ * Hashing the bytes rather than stamping the clock keeps the URL stable when
+ * the content is: rebuilding the same pack twice does not invalidate anyone's
+ * cache, and `vite.config.ts` reads this back to compile it in.
+ */
+const stamp = createHash("sha256");
+for (const name of ASSETS) {
+  const path = join(outDir, name);
+  if (existsSync(path)) stamp.update(name).update(readFileSync(path));
+}
+const version = stamp.digest("hex").slice(0, 12);
+writeFileSync(join(outDir, "version.txt"), version);
+console.log(`content version ${version}`);
+
+// How many of the dictionary's own entries the tables do not reach. Most are
+// genuinely indeclinable — `sine`, `aut`, `enim` decline for nobody — so this
+// is a number to watch rather than a gate: it is only alarming if it moves.
+if (paradigms) {
+  const missing = [...lemmas.keys.keys()].filter((key) => !paradigms.keys.has(key));
+  const share = ((missing.length / lemmas.lemmas) * 100).toFixed(1);
+  console.log(`${missing.length} of them have no paradigm (${share}%)`);
+}

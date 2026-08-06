@@ -2,7 +2,7 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 // GitHub Pages serves a project site under /<repo>/, so the workflow sets
@@ -23,8 +23,20 @@ const confettiPath = fileURLToPath(
 );
 const profile = JSON.parse(readFileSync(profilePath, "utf8"));
 
+// The content bundle's own hash, written by `scripts/build-web-content.mjs`,
+// which both `dev` and `build` run first. It rides on every content URL so a
+// rebuilt bundle is a different URL — see `contentUrl`. Missing only when vite
+// was started without `pnpm content`, and then nothing is cached to go stale.
+const contentVersion = (() => {
+  const path = fileURLToPath(new URL("./public/content/version.txt", import.meta.url));
+  return existsSync(path) ? readFileSync(path, "utf8").trim() : "dev";
+})();
+
 export default defineConfig({
   base,
+  define: {
+    __CONTENT_VERSION__: JSON.stringify(contentVersion),
+  },
   resolve: {
     alias: {
       "@pack/profile": profilePath,
@@ -62,11 +74,21 @@ export default defineConfig({
         ],
         runtimeCaching: [
           {
-            urlPattern: /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt)\.gz$/,
+            // The `?v=` stamp is part of the URL, so the pattern may not anchor
+            // at the extension — with `$` here the versioned request matched
+            // nothing, went uncached, and the dictionary was re-fetched every
+            // launch. Keeping the three files immutable-by-URL is what makes
+            // `CacheFirst` the right handler rather than a trap: a rebuilt
+            // bundle asks for a name nothing has cached, and the entry it
+            // replaces falls off the end of `maxEntries` on its own.
+            urlPattern: /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt)\.gz(\?|$)/,
             handler: "CacheFirst",
             options: {
               cacheName: profile.storage.dictionaryCacheName,
-              expiration: { maxEntries: 6 },
+              // Three files, and room for a couple of rebuilds' worth before
+              // the oldest is evicted. `maxAgeSeconds` is a backstop for a
+              // device that somehow holds a version nothing asks for again.
+              expiration: { maxEntries: 12, maxAgeSeconds: 60 * 60 * 24 * 60 },
               cacheableResponse: { statuses: [0, 200] },
             },
           },
