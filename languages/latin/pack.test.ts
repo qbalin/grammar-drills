@@ -64,8 +64,16 @@ describe("the paradigm axes", () => {
 
   it("lays out every part of speech the dictionary inflects", () => {
     expect(Object.keys(axes.tables).sort()).toEqual(
-      ["adj", "det", "noun", "num", "pron", "verb"].sort(),
+      ["adj", "det", "name", "noun", "num", "pron", "verb"].sort(),
     );
+  });
+
+  // `name` is not a courtesy entry. The dictionary holds 1,849 proper nouns and
+  // has full paradigms for 1,789 of them — Caesar declines through six cases
+  // and two numbers, Roma keeps a locative — and without a table of their own
+  // every one of them answered "no tables are built for this part of speech".
+  it("declines proper names exactly as it declines nouns", () => {
+    expect(axes.tables.name).toEqual(axes.tables.noun);
   });
 
   // Latin's variants — syncopated perfects, archaic spellings — are all being

@@ -35,6 +35,16 @@
           "columns": [["singular", "Singular"], ["plural", "Plural"]]
         }
       ],
+      "name": [
+        {
+          "rows": [
+            ["nominative", "Nom."], ["genitive", "Gen."], ["dative", "Dat."],
+            ["accusative", "Acc."], ["ablative", "Abl."], ["vocative", "Voc."],
+            ["locative", "Loc."]
+          ],
+          "columns": [["singular", "Singular"], ["plural", "Plural"]]
+        }
+      ],
       "adj": [
         {
           "rows": [

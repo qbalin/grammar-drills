@@ -5,8 +5,9 @@ import { gunzipSync } from "node:zlib";
 import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
-import type { GrammarSection, LemmaEntry, Test } from "@lang-tutor/core";
+import { buildParadigm, type GrammarSection, type LemmaEntry, type Test } from "@lang-tutor/core";
 import { LemmaIndex } from "./lemma-index.js";
+import { ParadigmIndex } from "./paradigm-index.js";
 import { profile } from "./pack.js";
 
 /**
@@ -141,6 +142,72 @@ describe.skipIf(!built)("the built content bundle", () => {
       expect(hits, form).toHaveLength(ids.length);
       expect(hits[0], form).toEqual(entries[Number(ids[0])]);
     }
+  });
+
+  /**
+   * The bug this is here to keep out: every part of the chain was correct on
+   * its own — the paradigms were built, the keys matched, `buildParadigm` laid
+   * them out — and a student still got "this word does not change" for
+   * `frater`. Nothing in the suite walked the whole chain over the real
+   * bundle, so nothing noticed. This does: dictionary form in, filled-in table
+   * out, through the same two classes the app uses.
+   */
+  it("lays out a real table for a word looked up through the real index", () => {
+    const entries = JSON.parse(read("lemmas.json.gz")) as LemmaEntry[];
+    const index = new LemmaIndex(entries, read("forms.txt.gz"));
+    const paradigms = new ParadigmIndex(read("paradigms.txt.gz"));
+
+    // A noun and a verb per pack, given as the form a student would meet
+    // rather than as the headword — the lemma is the app's job to find.
+    const worked =
+      profile.id === "ancient-greek"
+        ? ["ἀδελφοῦ", "ἔλυσαν"]
+        : ["fratrem", "aedificavit"];
+
+    for (const form of worked) {
+      const entry = index.lookup(form)[0];
+      expect(entry, form).toBeDefined();
+      const forms = paradigms.formsFor(entry!.lemma, entry!.pos);
+      expect(forms.length, `${form} -> ${entry!.lemma}|${entry!.pos}`).toBeGreaterThan(0);
+
+      const blocks = profile.paradigms?.tables[entry!.pos];
+      expect(blocks, `${entry!.pos} has no table`).toBeDefined();
+      const paradigm = buildParadigm(forms, blocks!, profile.paradigms);
+      expect(paradigm.tables.length, form).toBeGreaterThan(0);
+      // A table of empty cells would satisfy the count and help nobody.
+      const filled = paradigm.tables.flatMap((t) =>
+        t.rows.flatMap((r) => r.cells.flat()),
+      );
+      expect(filled.length, form).toBeGreaterThan(3);
+    }
+  });
+
+  /**
+   * Every `pos` the dictionary carries in quantity should either have a table
+   * or be genuinely uninflected. Latin's proper names had neither for a while:
+   * 1,789 of them shipped with full paradigms and no grid to print them in.
+   */
+  it("declares a table for every part of speech it ships paradigms for in bulk", () => {
+    const entries = JSON.parse(read("lemmas.json.gz")) as LemmaEntry[];
+    const keys = new Set(entries.map((e) => `${e.lemma}|${e.pos}`));
+    const withForms = new Map<string, number>();
+    for (const line of read("paradigms.txt.gz").split("\n").slice(1)) {
+      const key = line.slice(0, line.indexOf("\t"));
+      if (!keys.has(key)) continue;
+      const pos = key.slice(key.indexOf("|") + 1);
+      withForms.set(pos, (withForms.get(pos) ?? 0) + 1);
+    }
+    const tables = profile.paradigms?.tables ?? {};
+    // Not every inflecting `pos` can be a grid. A Latin adverb's whole
+    // paradigm is `celerius` and `celerrimē` — a comparative and a superlative
+    // with no third axis to cross them against, and `parseAxis` rightly
+    // refuses an axis that names no tags. Those are listed under "Other forms"
+    // instead, which is why the sheet lays forms out with or without blocks.
+    const LISTED = new Set(["adv"]);
+    const missing = [...withForms]
+      .filter(([pos, n]) => n >= 100 && !tables[pos] && !LISTED.has(pos))
+      .map(([pos, n]) => `${pos} (${n})`);
+    expect(missing).toEqual([]);
   });
 
   it("is sorted the way the bisection compares", () => {
