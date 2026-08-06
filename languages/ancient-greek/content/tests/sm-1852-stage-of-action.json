@@ -393,5 +393,846 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t7",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The orator was speaking well, and the jurors were being persuaded.",
+    "answer": "ὁ ῥήτωρ εὖ ἔλεγε, καὶ οἱ δικασταὶ ἐπείθοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "εὖ",
+     "ἔλεγε",
+     "καί",
+     "οἱ",
+     "δικασταί",
+     "ἐπείθοντο"
+    ]
+   },
+   {
+    "prompt": "The sun has set, and darkness now holds the plain.",
+    "answer": "ὁ ἥλιος δέδυκε, καὶ σκότος νῦν τὸ πεδίον ἔχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἥλιος",
+     "δέδυκε",
+     "καί",
+     "σκότος",
+     "νῦν",
+     "τό",
+     "πεδίον",
+     "ἔχει"
+    ]
+   },
+   {
+    "prompt": "The general encouraged the soldiers and led them against the wall.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἐθάρρυνε καὶ πρὸς τὸ τεῖχος αὐτοὺς ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τούς",
+     "στρατιώτας",
+     "ἐθάρρυνε",
+     "καί",
+     "πρός",
+     "τό",
+     "τεῖχος",
+     "αὐτούς",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "The treaty will have been written before the envoys depart.",
+    "answer": "αἱ σπονδαὶ γεγράψονται πρὶν τοὺς πρέσβεις ἀπελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "σπονδαί",
+     "γεγράψονται",
+     "πρίν",
+     "τούς",
+     "πρέσβεις",
+     "ἀπελθεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t8",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The child was learning the letters, but did not yet know them.",
+    "answer": "ὁ παῖς τὰ γράμματα ἐμάνθανεν, οὔπω δὲ αὐτὰ ᾔδει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "τά",
+     "γράμματα",
+     "ἐμάνθανεν",
+     "οὔπω",
+     "δέ",
+     "αὐτά",
+     "ᾔδει"
+    ]
+   },
+   {
+    "prompt": "The messenger ran into the city and announced the victory.",
+    "answer": "ὁ ἄγγελος εἰς τὴν πόλιν ἔδραμε καὶ τὴν νίκην ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "ἔδραμε",
+     "καί",
+     "νίκην",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "The wall has fallen, and the enemy have entered the city.",
+    "answer": "τὸ τεῖχος πέπτωκε, καὶ οἱ πολέμιοι εἰς τὴν πόλιν εἰσεληλύθασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "τεῖχος",
+     "πέπτωκε",
+     "καί",
+     "οἱ",
+     "πολέμιοι",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "εἰσεληλύθασιν"
+    ]
+   },
+   {
+    "prompt": "The barbarians will fight for a long time, yet they will not conquer.",
+    "answer": "οἱ βάρβαροι πολὺν χρόνον μαχοῦνται, οὐ μέντοι νικήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "βάρβαροι",
+     "πολύν",
+     "χρόνον",
+     "μαχοῦνται",
+     "οὐ",
+     "μέντοι",
+     "νικήσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t9",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "Socrates used to converse with the young men in the marketplace.",
+    "answer": "ὁ Σωκράτης τοῖς νεανίαις ἐν τῇ ἀγορᾷ διελέγετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "τοῖς",
+     "νεανίαις",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "διελέγετο"
+    ]
+   },
+   {
+    "prompt": "The woman wove the robe and gave it to the goddess.",
+    "answer": "ἡ γυνὴ τὸν πέπλον ὕφηνε καὶ τῇ θεᾷ ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "τόν",
+     "πέπλον",
+     "ὕφηνε",
+     "καί",
+     "τῇ",
+     "θεᾷ",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers have conquered, and the trophy now stands upon the hill.",
+    "answer": "οἱ στρατιῶται νενικήκασι, καὶ τὸ τρόπαιον νῦν ἐπὶ τῷ λόφῳ ἕστηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "νενικήκασι",
+     "καί",
+     "τό",
+     "τρόπαιον",
+     "νῦν",
+     "ἐπί",
+     "τῷ",
+     "λόφῳ",
+     "ἕστηκεν"
+    ]
+   },
+   {
+    "prompt": "The farmer had sent the grain into the city before the enemy arrived.",
+    "answer": "ὁ γεωργὸς τὸν σῖτον εἰς τὴν πόλιν ἐπεπόμφει πρὶν τοὺς πολεμίους ἀφικέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργός",
+     "τόν",
+     "σῖτον",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "ἐπεπόμφει",
+     "πρίν",
+     "τούς",
+     "πολεμίους",
+     "ἀφικέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t10",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The doctor kept trying to heal the sick man, but did not heal him.",
+    "answer": "ὁ ἰατρὸς τὸν νοσοῦντα ἰᾶτο, οὐ μέντοι ἰάσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρός",
+     "τόν",
+     "νοσοῦντα",
+     "ἰᾶτο",
+     "οὐ",
+     "μέντοι",
+     "ἰάσατο"
+    ]
+   },
+   {
+    "prompt": "The enemy have burned the villages, which now lie in ashes.",
+    "answer": "οἱ πολέμιοι τὰς κώμας κατακεκαύκασιν, αἳ νῦν ἐν σποδῷ κεῖνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τάς",
+     "κώμας",
+     "κατακεκαύκασιν",
+     "αἵ",
+     "νῦν",
+     "ἐν",
+     "σποδῷ",
+     "κεῖνται"
+    ]
+   },
+   {
+    "prompt": "The horseman leaped upon his horse and rode away.",
+    "answer": "ὁ ἱππεὺς ἐπὶ τὸν ἵππον ἀνεπήδησε καὶ ἀπήλασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱππεύς",
+     "ἐπί",
+     "τόν",
+     "ἵππον",
+     "ἀνεπήδησε",
+     "καί",
+     "ἀπήλασεν"
+    ]
+   },
+   {
+    "prompt": "By evening the gates will have been shut.",
+    "answer": "πρὸς ἑσπέραν αἱ πύλαι κεκλῄσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρός",
+     "ἑσπέραν",
+     "αἱ",
+     "πύλαι",
+     "κεκλῄσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t11",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The women were carrying water from the spring for a long time.",
+    "answer": "αἱ γυναῖκες ἐκ τῆς κρήνης ὕδωρ πολὺν χρόνον ἔφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "ἐκ",
+     "τῆς",
+     "κρήνης",
+     "ὕδωρ",
+     "πολύν",
+     "χρόνον",
+     "ἔφερον"
+    ]
+   },
+   {
+    "prompt": "The slave brought the wine and set it before the guests.",
+    "answer": "ὁ δοῦλος τὸν οἶνον ἤνεγκε καὶ τοῖς ξένοις παρέθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "τόν",
+     "οἶνον",
+     "ἤνεγκε",
+     "καί",
+     "τοῖς",
+     "ξένοις",
+     "παρέθηκεν"
+    ]
+   },
+   {
+    "prompt": "The philosopher has died, but his books remain.",
+    "answer": "ὁ φιλόσοφος τέθνηκε, τὰ δὲ βιβλία αὐτοῦ μένει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τέθνηκε",
+     "τά",
+     "δέ",
+     "βιβλία",
+     "αὐτοῦ",
+     "μένει"
+    ]
+   },
+   {
+    "prompt": "Whenever the sun rises, the birds begin to sing.",
+    "answer": "ὁπόταν ὁ ἥλιος ἀνατείλῃ, οἱ ὄρνιθες ᾄδειν ἄρχονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "ὁ",
+     "ἥλιος",
+     "ἀνατείλῃ",
+     "οἱ",
+     "ὄρνιθες",
+     "ᾄδειν",
+     "ἄρχονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t12",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The Athenians were besieging the town, but did not capture it.",
+    "answer": "οἱ Ἀθηναῖοι τὸ ἄστυ ἐπολιόρκουν, οὐ μέντοι εἷλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τό",
+     "ἄστυ",
+     "ἐπολιόρκουν",
+     "οὐ",
+     "μέντοι",
+     "εἷλον"
+    ]
+   },
+   {
+    "prompt": "The suppliant fell at the altar and grasped the god's knees.",
+    "answer": "ὁ ἱκέτης πρὸς τὸν βωμὸν ἔπεσε καὶ τῶν τοῦ θεοῦ γονάτων ἐλάβετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱκέτης",
+     "πρός",
+     "τόν",
+     "βωμόν",
+     "ἔπεσε",
+     "καί",
+     "τῶν",
+     "τοῦ",
+     "θεοῦ",
+     "γονάτων",
+     "ἐλάβετο"
+    ]
+   },
+   {
+    "prompt": "The river has risen, and now it covers the whole plain.",
+    "answer": "ὁ ποταμὸς ηὔξηται, καὶ νῦν πᾶν τὸ πεδίον κατέχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμός",
+     "ηὔξηται",
+     "καί",
+     "νῦν",
+     "πᾶν",
+     "τό",
+     "πεδίον",
+     "κατέχει"
+    ]
+   },
+   {
+    "prompt": "The general will draw up the army and will give the signal.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα τάξει καὶ τὸ σημεῖον δώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "τάξει",
+     "καί",
+     "σημεῖον",
+     "δώσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t13",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The herald was proclaiming the truce, but the soldiers did not obey.",
+    "answer": "ὁ κῆρυξ τὰς σπονδὰς ἐκήρυττεν, οἱ δὲ στρατιῶται οὐκ ἐπίθοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "τάς",
+     "σπονδάς",
+     "ἐκήρυττεν",
+     "οἱ",
+     "δέ",
+     "στρατιῶται",
+     "οὐκ",
+     "ἐπίθοντο"
+    ]
+   },
+   {
+    "prompt": "The general has drawn up the army, and now awaits the enemy.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα τέταχε, καὶ νῦν τοὺς πολεμίους ἀναμένει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "τέταχε",
+     "καί",
+     "νῦν",
+     "τούς",
+     "πολεμίους",
+     "ἀναμένει"
+    ]
+   },
+   {
+    "prompt": "The old men were sitting in the marketplace and telling stories about the ancestors.",
+    "answer": "οἱ γέροντες ἐν τῇ ἀγορᾷ ἐκάθηντο καὶ περὶ τῶν προγόνων μύθους ἔλεγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἐκάθηντο",
+     "καί",
+     "περί",
+     "τῶν",
+     "προγόνων",
+     "μύθους",
+     "ἔλεγον"
+    ]
+   },
+   {
+    "prompt": "The king will reign for many years and, honored by all, will die.",
+    "answer": "ὁ βασιλεὺς πολλὰ ἔτη βασιλεύσει καὶ ὑπὸ πάντων τιμώμενος τελευτήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεύς",
+     "πολλά",
+     "ἔτη",
+     "βασιλεύσει",
+     "καί",
+     "ὑπό",
+     "πάντων",
+     "τιμώμενος",
+     "τελευτήσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t14",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The general had already conquered the barbarians when the messenger arrived.",
+    "answer": "ὁ στρατηγὸς ἤδη τοὺς βαρβάρους ἐνενικήκει, ὅτε ὁ ἄγγελος ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἤδη",
+     "τούς",
+     "βαρβάρους",
+     "ἐνενικήκει",
+     "ὅτε",
+     "ἄγγελος",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "The maidens were weaving robes while their mother watched.",
+    "answer": "αἱ παρθένοι πέπλους ὕφαινον, τῆς μητρὸς θεωμένης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "παρθένοι",
+     "πέπλους",
+     "ὕφαινον",
+     "τῆς",
+     "μητρός",
+     "θεωμένης"
+    ]
+   },
+   {
+    "prompt": "The wine has been poured; let us make a libation to Dionysus.",
+    "answer": "ὁ οἶνος κέχυται· σπείσωμεν τῷ Διονύσῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "οἶνος",
+     "κέχυται",
+     "σπείσωμεν",
+     "τῷ",
+     "Διονύσῳ"
+    ]
+   },
+   {
+    "prompt": "The child, glancing at the strangers, immediately ran to his mother.",
+    "answer": "ὁ παῖς τοὺς ξένους ἰδὼν εὐθὺς πρὸς τὴν μητέρα ἔδραμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "τούς",
+     "ξένους",
+     "ἰδών",
+     "εὐθύς",
+     "πρός",
+     "τήν",
+     "μητέρα",
+     "ἔδραμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t15",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The snow was falling the whole night, and the roads became impassable.",
+    "answer": "ἡ χιὼν ὅλην τὴν νύκτα ἔπιπτε, καὶ αἱ ὁδοὶ ἄποροι ἐγένοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "χιών",
+     "ὅλην",
+     "τήν",
+     "νύκτα",
+     "ἔπιπτε",
+     "καί",
+     "αἱ",
+     "ὁδοί",
+     "ἄποροι",
+     "ἐγένοντο"
+    ]
+   },
+   {
+    "prompt": "The city has been walled, and the citizens no longer fear the enemy.",
+    "answer": "ἡ πόλις τετείχισται, καὶ οἱ πολῖται τοὺς πολεμίους οὐκέτι φοβοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "τετείχισται",
+     "καί",
+     "οἱ",
+     "πολῖται",
+     "τούς",
+     "πολεμίους",
+     "οὐκέτι",
+     "φοβοῦνται"
+    ]
+   },
+   {
+    "prompt": "The hunters were pursuing the deer through the wood the whole day.",
+    "answer": "οἱ κυνηγέται τὴν ἔλαφον διὰ τῆς ὕλης ὅλην τὴν ἡμέραν ἐδίωκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κυνηγέται",
+     "τήν",
+     "ἔλαφον",
+     "διά",
+     "τῆς",
+     "ὕλης",
+     "ὅλην",
+     "ἡμέραν",
+     "ἐδίωκον"
+    ]
+   },
+   {
+    "prompt": "As soon as the sun rose, the army set out.",
+    "answer": "ἐπεὶ πρῶτον ὁ ἥλιος ἀνέτειλε, τὸ στράτευμα ὡρμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "πρῶτον",
+     "ὁ",
+     "ἥλιος",
+     "ἀνέτειλε",
+     "τό",
+     "στράτευμα",
+     "ὡρμήθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t16",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The philosopher was trying to persuade the young men, but they kept laughing at him.",
+    "answer": "ὁ φιλόσοφος τοὺς νεανίας ἔπειθεν, οἱ δὲ αὐτοῦ κατεγέλων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τούς",
+     "νεανίας",
+     "ἔπειθεν",
+     "οἱ",
+     "δέ",
+     "αὐτοῦ",
+     "κατεγέλων"
+    ]
+   },
+   {
+    "prompt": "The temple has been built, and now the priests offer sacrifices.",
+    "answer": "ὁ νεὼς ᾠκοδόμηται, καὶ νῦν οἱ ἱερεῖς θυσίας θύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεώς",
+     "ᾠκοδόμηται",
+     "καί",
+     "νῦν",
+     "οἱ",
+     "ἱερεῖς",
+     "θυσίας",
+     "θύουσιν"
+    ]
+   },
+   {
+    "prompt": "The waves were dashing against the rocks throughout the whole storm.",
+    "answer": "τὰ κύματα πρὸς τὰς πέτρας ὅλον τὸν χειμῶνα προσέπιπτεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "κύματα",
+     "πρός",
+     "τάς",
+     "πέτρας",
+     "ὅλον",
+     "τόν",
+     "χειμῶνα",
+     "προσέπιπτεν"
+    ]
+   },
+   {
+    "prompt": "The soldier, hurling his spear, struck the fleeing enemy.",
+    "answer": "ὁ στρατιώτης τὸ δόρυ ἀκοντίσας τὸν φεύγοντα πολέμιον ἔβαλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατιώτης",
+     "τό",
+     "δόρυ",
+     "ἀκοντίσας",
+     "τόν",
+     "φεύγοντα",
+     "πολέμιον",
+     "ἔβαλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t17",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "By the time we return, the walls will have been thrown down.",
+    "answer": "ἐπειδὰν ἐπανέλθωμεν, τὰ τείχη καταβεβλήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "ἐπανέλθωμεν",
+     "τά",
+     "τείχη",
+     "καταβεβλήσεται"
+    ]
+   },
+   {
+    "prompt": "The general was leading the army toward the river when the scouts returned.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα πρὸς τὸν ποταμὸν ἦγε, ὅτε οἱ σκοποὶ ἐπανῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "πρός",
+     "τόν",
+     "ποταμόν",
+     "ἦγε",
+     "ὅτε",
+     "οἱ",
+     "σκοποί",
+     "ἐπανῆλθον"
+    ]
+   },
+   {
+    "prompt": "The messengers have announced the victory, and the whole city rejoices.",
+    "answer": "οἱ ἄγγελοι τὴν νίκην ἠγγέλκασι, καὶ πᾶσα ἡ πόλις χαίρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄγγελοι",
+     "τήν",
+     "νίκην",
+     "ἠγγέλκασι",
+     "καί",
+     "πᾶσα",
+     "ἡ",
+     "πόλις",
+     "χαίρει"
+    ]
+   },
+   {
+    "prompt": "The poet sang, and the whole assembly fell silent.",
+    "answer": "ὁ ποιητὴς ᾖσε, καὶ πᾶσα ἡ ἐκκλησία ἐσίγησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιητής",
+     "ᾖσε",
+     "καί",
+     "πᾶσα",
+     "ἡ",
+     "ἐκκλησία",
+     "ἐσίγησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1852-stage-of-action-t18",
+  "sectionId": "sm-1852-stage-of-action",
+  "questions": [
+   {
+    "prompt": "The slaves were carrying the stones to the wall throughout the day.",
+    "answer": "οἱ δοῦλοι τοὺς λίθους πρὸς τὸ τεῖχος ὅλην τὴν ἡμέραν ἔφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοῦλοι",
+     "τούς",
+     "λίθους",
+     "πρός",
+     "τό",
+     "τεῖχος",
+     "ὅλην",
+     "τήν",
+     "ἡμέραν",
+     "ἔφερον"
+    ]
+   },
+   {
+    "prompt": "The enemy have taken the citadel, and the guards have fled.",
+    "answer": "οἱ πολέμιοι τὴν ἀκρόπολιν εἰλήφασι, καὶ οἱ φύλακες πεφεύγασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τήν",
+     "ἀκρόπολιν",
+     "εἰλήφασι",
+     "καί",
+     "φύλακες",
+     "πεφεύγασιν"
+    ]
+   },
+   {
+    "prompt": "The physician kept mixing the drug, but the sick man refused to drink it.",
+    "answer": "ὁ ἰατρὸς τὸ φάρμακον ἐκεράννυ, ὁ δὲ κάμνων πιεῖν οὐκ ἤθελεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρός",
+     "τό",
+     "φάρμακον",
+     "ἐκεράννυ",
+     "δέ",
+     "κάμνων",
+     "πιεῖν",
+     "οὐκ",
+     "ἤθελεν"
+    ]
+   },
+   {
+    "prompt": "When the horseman heard the trumpet, he charged.",
+    "answer": "ὁ ἱππεὺς τῆς σάλπιγγος ἀκούσας εὐθὺς ἐπήλασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱππεύς",
+     "τῆς",
+     "σάλπιγγος",
+     "ἀκούσας",
+     "εὐθύς",
+     "ἐπήλασεν"
+    ]
+   }
+  ]
  }
 ]

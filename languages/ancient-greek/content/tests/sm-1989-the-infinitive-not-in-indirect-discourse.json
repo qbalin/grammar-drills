@@ -409,5 +409,144 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t7",
+  "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The priest advised the citizens to honor the gods before the battle.",
+    "answer": "ὁ ἱερεὺς συνεβούλευσε τοῖς πολίταις τοὺς θεοὺς πρὸ τῆς μάχης τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "συνεβούλευσε",
+     "τοῖς",
+     "πολίταις",
+     "τοὺς",
+     "θεοὺς",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "τιμᾶν"
+    ]
+   },
+   {
+    "prompt": "The tyrant forbade the exiles to return to their fatherland.",
+    "answer": "ὁ τύραννος ἀπηγόρευσε τοῖς φυγάσι μὴ εἰς τὴν πατρίδα κατελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "ἀπηγόρευσε",
+     "τοῖς",
+     "φυγάσι",
+     "μὴ",
+     "εἰς",
+     "τὴν",
+     "πατρίδα",
+     "κατελθεῖν"
+    ]
+   },
+   {
+    "prompt": "Necessity compelled the besieged to eat even the horses.",
+    "answer": "ἡ ἀνάγκη ἠνάγκασε τοὺς πολιορκουμένους καὶ τοὺς ἵππους ἐσθίειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀνάγκη",
+     "ἠνάγκασε",
+     "τοὺς",
+     "πολιορκουμένους",
+     "καὶ",
+     "ἵππους",
+     "ἐσθίειν"
+    ]
+   },
+   {
+    "prompt": "The general permitted the weary soldiers to lay down their arms.",
+    "answer": "ὁ στρατηγὸς ἐπέτρεψε τοῖς κάμνουσι στρατιώταις τὰ ὅπλα καταθέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐπέτρεψε",
+     "τοῖς",
+     "κάμνουσι",
+     "στρατιώταις",
+     "τὰ",
+     "ὅπλα",
+     "καταθέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1989-the-infinitive-not-in-indirect-discourse-t8",
+  "sectionId": "sm-1989-the-infinitive-not-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The ambassadors urged the Spartans to send help quickly.",
+    "answer": "οἱ πρέσβεις παρεκάλουν τοὺς Λακεδαιμονίους βοήθειαν ταχέως πέμπειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "παρεκάλουν",
+     "τοὺς",
+     "Λακεδαιμονίους",
+     "βοήθειαν",
+     "ταχέως",
+     "πέμπειν"
+    ]
+   },
+   {
+    "prompt": "Poverty taught the orphan to endure many hardships.",
+    "answer": "ἡ πενία ἐδίδαξε τὸν ὀρφανὸν πολλοὺς πόνους φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πενία",
+     "ἐδίδαξε",
+     "τὸν",
+     "ὀρφανὸν",
+     "πολλοὺς",
+     "πόνους",
+     "φέρειν"
+    ]
+   },
+   {
+    "prompt": "The judge did not allow the accuser to speak longer.",
+    "answer": "ὁ δικαστὴς οὐκ εἴασε τὸν κατήγορον μακρότερον λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστὴς",
+     "οὐκ",
+     "εἴασε",
+     "τὸν",
+     "κατήγορον",
+     "μακρότερον",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "The mother begged the physician to heal her sick child.",
+    "answer": "ἡ μήτηρ ἐδεῖτο τοῦ ἰατροῦ τὸ νοσοῦν τέκνον ἰᾶσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "ἐδεῖτο",
+     "τοῦ",
+     "ἰατροῦ",
+     "τὸ",
+     "νοσοῦν",
+     "τέκνον",
+     "ἰᾶσθαι"
+    ]
+   }
+  ]
  }
 ]

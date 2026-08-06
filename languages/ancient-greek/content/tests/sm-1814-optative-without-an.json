@@ -371,5 +371,656 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t7",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "Would that the sick might recover their health.",
+    "answer": "εἴθε οἱ νοσοῦντες τὴν ὑγίειαν ἀναλάβοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "νοσοῦντες",
+     "τὴν",
+     "ὑγίειαν",
+     "ἀναλάβοιεν"
+    ]
+   },
+   {
+    "prompt": "May the citizens honor virtue more than wealth.",
+    "answer": "οἱ πολῖται τὴν ἀρετὴν μᾶλλον ἢ τὸν πλοῦτον τιμῷεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "ἀρετὴν",
+     "μᾶλλον",
+     "ἢ",
+     "τὸν",
+     "πλοῦτον",
+     "τιμῷεν"
+    ]
+   },
+   {
+    "prompt": "Would that the general might return victorious from the battle.",
+    "answer": "εἰ γὰρ ὁ στρατηγὸς νικῶν ἐκ τῆς μάχης ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "γὰρ",
+     "ὁ",
+     "στρατηγὸς",
+     "νικῶν",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "ἐπανέλθοι"
+    ]
+   },
+   {
+    "prompt": "May you never suffer such grief again.",
+    "answer": "μήποτε αὖθις τοιαύτην λύπην πάθοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήποτε",
+     "αὖθις",
+     "τοιαύτην",
+     "λύπην",
+     "πάθοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t8",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "May I perish utterly, if I ever betray my friends.",
+    "answer": "ἐξολοίμην, εἰ ποτε τοὺς φίλους προδοίην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξολοίμην",
+     "εἰ",
+     "ποτε",
+     "τοὺς",
+     "φίλους",
+     "προδοίην"
+    ]
+   },
+   {
+    "prompt": "May the traitor perish miserably at the hands of the enemy.",
+    "answer": "κακῶς ὁ προδότης ὑπὸ τῶν πολεμίων ὄλοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κακῶς",
+     "ὁ",
+     "προδότης",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "ὄλοιτο"
+    ]
+   },
+   {
+    "prompt": "I will prove you a liar, or may I not live!",
+    "answer": "ἀποδείξω σε ψευδόμενον, ἢ μὴ ζῴην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποδείξω",
+     "σε",
+     "ψευδόμενον",
+     "ἢ",
+     "μὴ",
+     "ζῴην"
+    ]
+   },
+   {
+    "prompt": "May the gods destroy whoever first broke the oaths.",
+    "answer": "οἱ θεοὶ ἀπολέσειαν ὅστις πρῶτος τοὺς ὅρκους ἔλυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "ἀπολέσειαν",
+     "ὅστις",
+     "πρῶτος",
+     "τοὺς",
+     "ὅρκους",
+     "ἔλυσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t9",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "Let the herald announce the truce to both armies.",
+    "answer": "ὁ κῆρυξ τὰς σπονδὰς ἀμφοτέροις τοῖς στρατεύμασιν ἀγγέλλοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "τὰς",
+     "σπονδὰς",
+     "ἀμφοτέροις",
+     "τοῖς",
+     "στρατεύμασιν",
+     "ἀγγέλλοι"
+    ]
+   },
+   {
+    "prompt": "Let the wisest of the citizens rule the city.",
+    "answer": "ὁ σοφώτατος τῶν πολιτῶν τῆς πόλεως ἄρχοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφώτατος",
+     "τῶν",
+     "πολιτῶν",
+     "τῆς",
+     "πόλεως",
+     "ἄρχοι"
+    ]
+   },
+   {
+    "prompt": "Let each of the soldiers obey his commander.",
+    "answer": "ἕκαστος τῶν στρατιωτῶν τῷ ἄρχοντι πείθοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕκαστος",
+     "τῶν",
+     "στρατιωτῶν",
+     "τῷ",
+     "ἄρχοντι",
+     "πείθοιτο"
+    ]
+   },
+   {
+    "prompt": "Let those who fear the gods keep their promises.",
+    "answer": "οἱ τοὺς θεοὺς φοβούμενοι τὰς ὑποσχέσεις φυλάττοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοὺς",
+     "θεοὺς",
+     "φοβούμενοι",
+     "τὰς",
+     "ὑποσχέσεις",
+     "φυλάττοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t10",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "If ever they should throw away their freedom, which Heaven forbid.",
+    "answer": "ἐὰν ποτε τὴν ἐλευθερίαν ἀποβάλωσιν, ὃ μὴ γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ποτε",
+     "τὴν",
+     "ἐλευθερίαν",
+     "ἀποβάλωσιν",
+     "ὃ",
+     "μὴ",
+     "γένοιτο"
+    ]
+   },
+   {
+    "prompt": "Would that a wiser counsel might prevail among the allies.",
+    "answer": "εἰ γὰρ σοφωτέρα βουλὴ ἐν τοῖς συμμάχοις κρατήσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "γὰρ",
+     "σοφωτέρα",
+     "βουλὴ",
+     "ἐν",
+     "τοῖς",
+     "συμμάχοις",
+     "κρατήσειεν"
+    ]
+   },
+   {
+    "prompt": "Would that this plague might cease from the land.",
+    "answer": "εἴθε ἡ νόσος αὕτη ἐκ τῆς χώρας παύσαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ἡ",
+     "νόσος",
+     "αὕτη",
+     "ἐκ",
+     "τῆς",
+     "χώρας",
+     "παύσαιτο"
+    ]
+   },
+   {
+    "prompt": "May we, having endured many toils, at last find rest.",
+    "answer": "πολλοὺς πόνους ὑπομείναντες τέλος ἡσυχίαν εὕροιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὺς",
+     "πόνους",
+     "ὑπομείναντες",
+     "τέλος",
+     "ἡσυχίαν",
+     "εὕροιμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t11",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "Would that the orator might persuade the people to make peace.",
+    "answer": "εἴθε ὁ ῥήτωρ τὸν δῆμον πείσειεν εἰρήνην ποιεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ὁ",
+     "ῥήτωρ",
+     "τὸν",
+     "δῆμον",
+     "πείσειεν",
+     "εἰρήνην",
+     "ποιεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "May the child become dear to the gods and to his parents.",
+    "answer": "ὁ παῖς τοῖς τε θεοῖς καὶ τοῖς γονεῦσι φίλος γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "τοῖς",
+     "τε",
+     "θεοῖς",
+     "καὶ",
+     "γονεῦσι",
+     "φίλος",
+     "γένοιτο"
+    ]
+   },
+   {
+    "prompt": "Would that the young men might pursue virtue rather than pleasure.",
+    "answer": "εἰ γὰρ οἱ νεανίαι τὴν ἀρετὴν μᾶλλον ἢ τὴν ἡδονὴν διώκοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "γὰρ",
+     "οἱ",
+     "νεανίαι",
+     "τὴν",
+     "ἀρετὴν",
+     "μᾶλλον",
+     "ἢ",
+     "ἡδονὴν",
+     "διώκοιεν"
+    ]
+   },
+   {
+    "prompt": "May none of you ever become a slave to fear.",
+    "answer": "μηδεὶς ὑμῶν ποτε δοῦλος τοῦ φόβου γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδεὶς",
+     "ὑμῶν",
+     "ποτε",
+     "δοῦλος",
+     "τοῦ",
+     "φόβου",
+     "γένοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t12",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "The war being ended, would that we might rebuild the ruined temples.",
+    "answer": "τοῦ πολέμου παυσαμένου, εἴθε τὰ ἱερὰ τὰ διεφθαρμένα ἀνοικοδομήσαιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "παυσαμένου",
+     "εἴθε",
+     "τὰ",
+     "ἱερὰ",
+     "διεφθαρμένα",
+     "ἀνοικοδομήσαιμεν"
+    ]
+   },
+   {
+    "prompt": "May the gods grant victory to those who fight justly.",
+    "answer": "οἱ θεοὶ τοῖς δικαίως μαχομένοις νίκην δοῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "τοῖς",
+     "δικαίως",
+     "μαχομένοις",
+     "νίκην",
+     "δοῖεν"
+    ]
+   },
+   {
+    "prompt": "Would that I might see my children before I die.",
+    "answer": "εἴθε τοὺς παῖδας ἴδοιμι πρὶν ἀποθανεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "τοὺς",
+     "παῖδας",
+     "ἴδοιμι",
+     "πρὶν",
+     "ἀποθανεῖν"
+    ]
+   },
+   {
+    "prompt": "May the man who saved us receive great honor from the city.",
+    "answer": "ὁ σώσας ἡμᾶς μεγάλην τιμὴν παρὰ τῆς πόλεως λάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σώσας",
+     "ἡμᾶς",
+     "μεγάλην",
+     "τιμὴν",
+     "παρὰ",
+     "τῆς",
+     "πόλεως",
+     "λάβοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t13",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "Would that the general might lead the army safely through the mountains.",
+    "answer": "εἴθε ὁ στρατηγὸς τὸ στράτευμα ἀσφαλῶς διὰ τῶν ὀρῶν ἀγάγοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "ἀσφαλῶς",
+     "διά",
+     "τῶν",
+     "ὀρῶν",
+     "ἀγάγοι"
+    ]
+   },
+   {
+    "prompt": "Would that the citizens might value virtue more than wealth.",
+    "answer": "εἰ γὰρ οἱ πολῖται τὴν ἀρετὴν μᾶλλον τοῦ πλούτου τιμῷεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "γάρ",
+     "οἱ",
+     "πολῖται",
+     "τήν",
+     "ἀρετήν",
+     "μᾶλλον",
+     "τοῦ",
+     "πλούτου",
+     "τιμῷεν"
+    ]
+   },
+   {
+    "prompt": "Would that the messenger might arrive before night falls.",
+    "answer": "εἴθε ὁ ἄγγελος ἀφίκοιτο πρὶν νύκτα γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ὁ",
+     "ἄγγελος",
+     "ἀφίκοιτο",
+     "πρίν",
+     "νύκτα",
+     "γενέσθαι"
+    ]
+   },
+   {
+    "prompt": "Would that our allies might not abandon us in the danger.",
+    "answer": "εἴθε οἱ σύμμαχοι ἡμᾶς ἐν τῷ κινδύνῳ μὴ λίποιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "σύμμαχοι",
+     "ἡμᾶς",
+     "ἐν",
+     "τῷ",
+     "κινδύνῳ",
+     "μή",
+     "λίποιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t14",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "Let the guards keep watch throughout the whole night.",
+    "answer": "οἱ φύλακες διὰ ὅλης τῆς νυκτὸς φυλάττοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "διά",
+     "ὅλης",
+     "τῆς",
+     "νυκτός",
+     "φυλάττοιεν"
+    ]
+   },
+   {
+    "prompt": "Let the young men exercise their bodies in the gymnasium.",
+    "answer": "οἱ νεανίαι τὰ σώματα ἐν τῷ γυμνασίῳ γυμνάζοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "τά",
+     "σώματα",
+     "ἐν",
+     "τῷ",
+     "γυμνασίῳ",
+     "γυμνάζοιντο"
+    ]
+   },
+   {
+    "prompt": "Let each of the soldiers obey his commander willingly.",
+    "answer": "ἕκαστος τῶν στρατιωτῶν τῷ ἄρχοντι ἑκὼν πείθοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕκαστος",
+     "τῶν",
+     "στρατιωτῶν",
+     "τῷ",
+     "ἄρχοντι",
+     "ἑκών",
+     "πείθοιτο"
+    ]
+   },
+   {
+    "prompt": "Let the ambassadors speak the truth before the assembly.",
+    "answer": "οἱ πρέσβεις τὰ ἀληθῆ ἐναντίον τῆς ἐκκλησίας λέγοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "τά",
+     "ἀληθῆ",
+     "ἐναντίον",
+     "τῆς",
+     "ἐκκλησίας",
+     "λέγοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t15",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "May I perish, if I ever prove a traitor to my friends.",
+    "answer": "ἐξολοίμην, εἴ ποτε τοῖς φίλοις προδότης γενοίμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξολοίμην",
+     "εἴ",
+     "ποτε",
+     "τοῖς",
+     "φίλοις",
+     "προδότης",
+     "γενοίμην"
+    ]
+   },
+   {
+    "prompt": "May I not live, if I took bribes from the enemy.",
+    "answer": "μὴ ζῴην, εἰ παρὰ τῶν πολεμίων δῶρα ἐδεξάμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ζῴην",
+     "εἰ",
+     "παρά",
+     "τῶν",
+     "πολεμίων",
+     "δῶρα",
+     "ἐδεξάμην"
+    ]
+   },
+   {
+    "prompt": "May I never see the day on which the fatherland serves the enemy.",
+    "answer": "μηδέποτε ἐκείνην τὴν ἡμέραν ἴδοιμι, ἐν ᾗ ἡ πατρὶς δουλεύσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδέποτε",
+     "ἐκείνην",
+     "τήν",
+     "ἡμέραν",
+     "ἴδοιμι",
+     "ἐν",
+     "ᾗ",
+     "ἡ",
+     "πατρίς",
+     "δουλεύσει"
+    ]
+   },
+   {
+    "prompt": "May I perish utterly, if I ever forget your kindness.",
+    "answer": "κάκιστα ἀπολοίμην, εἴ ποτε τῆς σῆς χάριτος ἐπιλαθοίμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κάκιστα",
+     "ἀπολοίμην",
+     "εἴ",
+     "ποτε",
+     "τῆς",
+     "σῆς",
+     "χάριτος",
+     "ἐπιλαθοίμην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1814-optative-without-an-t16",
+  "sectionId": "sm-1814-optative-without-an",
+  "questions": [
+   {
+    "prompt": "May those who saved the city be honored by all.",
+    "answer": "οἱ τὴν πόλιν σώσαντες ὑπὸ πάντων τιμῷντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τήν",
+     "πόλιν",
+     "σώσαντες",
+     "ὑπό",
+     "πάντων",
+     "τιμῷντο"
+    ]
+   },
+   {
+    "prompt": "If ever the enemy should take the citadel, which Heaven forbid, we shall all perish.",
+    "answer": "ἐὰν οἱ πολέμιοι τὴν ἀκρόπολιν λάβωσιν, ὃ μὴ γένοιτο, πάντες ἀπολούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "πολέμιοι",
+     "τήν",
+     "ἀκρόπολιν",
+     "λάβωσιν",
+     "ὅ",
+     "μή",
+     "γένοιτο",
+     "πάντες",
+     "ἀπολούμεθα"
+    ]
+   },
+   {
+    "prompt": "Would that peace might come to the Greeks, which I most desire.",
+    "answer": "εἴθε τοῖς Ἕλλησιν εἰρήνη γένοιτο, ὃ μάλιστα βούλομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "τοῖς",
+     "Ἕλλησιν",
+     "εἰρήνη",
+     "γένοιτο",
+     "ὅ",
+     "μάλιστα",
+     "βούλομαι"
+    ]
+   },
+   {
+    "prompt": "May the god bring the wanderers safe to their fatherland.",
+    "answer": "ὁ θεὸς τοὺς πλανωμένους εἰς τὴν πατρίδα σῴζοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θεός",
+     "τούς",
+     "πλανωμένους",
+     "εἰς",
+     "τήν",
+     "πατρίδα",
+     "σῴζοι"
+    ]
+   }
+  ]
  }
 ]

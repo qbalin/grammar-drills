@@ -2230,5 +2230,168 @@
    "shortTest": 0
   },
   "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 8,
+  "calls": 22,
+  "rawQuestions": 232,
+  "keptQuestions": 231,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 1,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "προεθυμοῦντο": 1,
+   "προϊέναι": 1,
+   "προέτρεπε": 1,
+   "κατασκέψασθαι": 1,
+   "ἐπανεληλύθασιν": 1,
+   "οὐραγίαν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 8,
+  "calls": 27,
+  "rawQuestions": 240,
+  "keptQuestions": 240,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἠμφίεσται": 1,
+   "κατατεθείκασιν": 1,
+   "ἐβεβουλεύμην": 1,
+   "ἐκεκηρύχει": 1,
+   "τεθνήξω": 1,
+   "ἀναγεγράψομαι": 1,
+   "πεφυλάξεται": 1,
+   "προεῖπε": 1,
+   "εὐλαβὴς": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 8,
+  "calls": 28,
+  "rawQuestions": 292,
+  "keptQuestions": 292,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἀναγιγνώσκοις": 2,
+   "προαγάγωμεν": 1,
+   "κρύψωμαι": 1,
+   "οἴκοιν": 1,
+   "φεῦ": 1,
+   "ἀνοικοδομήσαιμεν": 1,
+   "ὑπείκοιμι": 1,
+   "διαβαίημεν": 1,
+   "διαβαῖμεν": 1,
+   "προλελοιπότων": 1,
+   "προάγοις": 1,
+   "καταψηφισάσθω": 1,
+   "ἐκφαίνετε": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 6,
+  "calls": 28,
+  "rawQuestions": 216,
+  "keptQuestions": 214,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 2,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "καταδύσειν": 2,
+   "τετειχίκασιν": 1,
+   "διατετάξεται": 1,
+   "προδεδώκοι": 1,
+   "τετειχικέναι": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 31,
+  "calls": 95,
+  "rawQuestions": 1112,
+  "keptQuestions": 1099,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 11,
+   "shortTest": 1
+  },
+  "unverifiedForms": {
+   "προῆλθον": 3,
+   "ἀναγιγνώσκοις": 3,
+   "προέδωκεν": 2,
+   "μομφήν": 2,
+   "λῆστιν": 2,
+   "κρύψασιν": 1,
+   "προέδοσαν": 1,
+   "δουλωθησόμεθα": 1,
+   "τιμητέοι": 1,
+   "ἐκάθευδον": 1,
+   "προεδόθη": 1,
+   "κληρονομίας": 1,
+   "τραπεζίτης": 1,
+   "ἐπιταχθήσῃ": 1,
+   "ἐπεστάλησαν": 1,
+   "καταφρονηθῶσιν": 1,
+   "νειφόμενοι": 1,
+   "περιτειχίσωμεν": 1,
+   "προέδωκα": 1,
+   "προέδωκας": 1,
+   "προεῖπεν": 1,
+   "προάγοις": 1,
+   "λιποῦσιν": 1,
+   "ἀποπλεύσειαν": 1,
+   "συλῶμεν": 1,
+   "ταράττωμεν": 1,
+   "μηνύσητε": 1,
+   "προδιδότω": 1,
+   "κατακεκαύκασιν": 1,
+   "ἠγγέλκασι": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 7,
+  "calls": 39,
+  "rawQuestions": 220,
+  "keptQuestions": 220,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "κατασκεψομένους": 2,
+   "προέδοσαν": 1,
+   "προῆλθεν": 1,
+   "ἐκάθευδεν": 1
+  }
  }
 ]

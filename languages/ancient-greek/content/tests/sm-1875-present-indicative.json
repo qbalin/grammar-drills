@@ -774,5 +774,911 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t13",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "The Spartans always exercise their bodies in the gymnasia.",
+    "answer": "οἱ Λακεδαιμόνιοι ἀεὶ τὰ σώματα ἐν τοῖς γυμνασίοις γυμνάζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "ἀεὶ",
+     "τὰ",
+     "σώματα",
+     "ἐν",
+     "τοῖς",
+     "γυμνασίοις",
+     "γυμνάζουσιν"
+    ]
+   },
+   {
+    "prompt": "Time teaches the wise, but fools it never persuades.",
+    "answer": "ὁ χρόνος τοὺς σοφοὺς διδάσκει, τοὺς δὲ ἄφρονας οὔποτε πείθει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χρόνος",
+     "τοὺς",
+     "σοφοὺς",
+     "διδάσκει",
+     "δὲ",
+     "ἄφρονας",
+     "οὔποτε",
+     "πείθει"
+    ]
+   },
+   {
+    "prompt": "Farmers sow the seeds in autumn and reap the grain in summer.",
+    "answer": "οἱ γεωργοὶ τοῦ μὲν μετοπώρου τὰ σπέρματα σπείρουσιν, τοῦ δὲ θέρους τὸν σῖτον θερίζουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γεωργοὶ",
+     "τοῦ",
+     "μὲν",
+     "μετοπώρου",
+     "τὰ",
+     "σπέρματα",
+     "σπείρουσιν",
+     "δὲ",
+     "θέρους",
+     "τὸν",
+     "σῖτον",
+     "θερίζουσιν"
+    ]
+   },
+   {
+    "prompt": "Bad company corrupts good character.",
+    "answer": "αἱ κακαὶ ὁμιλίαι τὰ χρηστὰ ἤθη φθείρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "κακαὶ",
+     "ὁμιλίαι",
+     "τὰ",
+     "χρηστὰ",
+     "ἤθη",
+     "φθείρουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t14",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "The ambassadors are trying to persuade the king to make peace.",
+    "answer": "οἱ πρέσβεις τὸν βασιλέα πείθουσιν εἰρήνην ποιεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "τὸν",
+     "βασιλέα",
+     "πείθουσιν",
+     "εἰρήνην",
+     "ποιεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "The traitors are attempting to hand over the citadel to the enemy.",
+    "answer": "οἱ προδόται τὴν ἀκρόπολιν τοῖς πολεμίοις παραδιδόασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "προδόται",
+     "τὴν",
+     "ἀκρόπολιν",
+     "τοῖς",
+     "πολεμίοις",
+     "παραδιδόασιν"
+    ]
+   },
+   {
+    "prompt": "Philip is preparing to march against Byzantium.",
+    "answer": "ὁ Φίλιππος ἐπὶ τὸ Βυζάντιον στρατεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Φίλιππος",
+     "ἐπὶ",
+     "τὸ",
+     "Βυζάντιον",
+     "στρατεύει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t15",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "If the citadel is taken, the whole city too is in their power.",
+    "answer": "εἰ ἡ ἀκρόπολις ἁλίσκεται, ἔχεται καὶ ἡ πόλις ἅπασα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "ἀκρόπολις",
+     "ἁλίσκεται",
+     "ἔχεται",
+     "καὶ",
+     "πόλις",
+     "ἅπασα"
+    ]
+   },
+   {
+    "prompt": "Unless you come to our aid, we are all perishing.",
+    "answer": "εἰ μὴ βοηθήσετε ἡμῖν, ἀπολλύμεθα πάντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὴ",
+     "βοηθήσετε",
+     "ἡμῖν",
+     "ἀπολλύμεθα",
+     "πάντες"
+    ]
+   },
+   {
+    "prompt": "Where in the world shall we now turn, comrades?",
+    "answer": "ποῖ δὴ νῦν τρεπόμεθα, ὦ ἄνδρες;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποῖ",
+     "δὴ",
+     "νῦν",
+     "τρεπόμεθα",
+     "ὦ",
+     "ἄνδρες"
+    ]
+   },
+   {
+    "prompt": "In time this expedition captures the city of Priam.",
+    "answer": "χρόνῳ ἡ ὁδὸς ἥδε τὴν τοῦ Πριάμου πόλιν αἱρεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρόνῳ",
+     "ἡ",
+     "ὁδὸς",
+     "ἥδε",
+     "τὴν",
+     "τοῦ",
+     "Πριάμου",
+     "πόλιν",
+     "αἱρεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t16",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "The barbarians pursue the Greeks as far as the sea and kill many.",
+    "answer": "οἱ βάρβαροι τοὺς Ἕλληνας μέχρι τῆς θαλάττης διώκουσι καὶ πολλοὺς ἀποκτείνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "βάρβαροι",
+     "τοὺς",
+     "Ἕλληνας",
+     "μέχρι",
+     "τῆς",
+     "θαλάττης",
+     "διώκουσι",
+     "καὶ",
+     "πολλοὺς",
+     "ἀποκτείνουσιν"
+    ]
+   },
+   {
+    "prompt": "While the citizens are sleeping, the enemy by night scales the walls.",
+    "answer": "τῶν πολιτῶν καθευδόντων, οἱ πολέμιοι νυκτὸς ἐπὶ τὰ τείχη ἀναβαίνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολιτῶν",
+     "καθευδόντων",
+     "οἱ",
+     "πολέμιοι",
+     "νυκτὸς",
+     "ἐπὶ",
+     "τὰ",
+     "τείχη",
+     "ἀναβαίνουσιν"
+    ]
+   },
+   {
+    "prompt": "In this year the king dies, and his son takes over the rule.",
+    "answer": "τούτῳ τῷ ἔτει ὁ βασιλεὺς τελευτᾷ, καὶ ὁ υἱὸς τὴν ἀρχὴν παραλαμβάνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτῳ",
+     "τῷ",
+     "ἔτει",
+     "ὁ",
+     "βασιλεὺς",
+     "τελευτᾷ",
+     "καὶ",
+     "υἱὸς",
+     "τὴν",
+     "ἀρχὴν",
+     "παραλαμβάνει"
+    ]
+   },
+   {
+    "prompt": "In the same year the Carthaginians capture two Greek cities.",
+    "answer": "κατὰ δὲ τὸν αὐτὸν ἐνιαυτὸν οἱ Καρχηδόνιοι δύο πόλεις Ἑλληνίδας αἱροῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατὰ",
+     "δὲ",
+     "τὸν",
+     "αὐτὸν",
+     "ἐνιαυτὸν",
+     "οἱ",
+     "Καρχηδόνιοι",
+     "δύο",
+     "πόλεις",
+     "Ἑλληνίδας",
+     "αἱροῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t17",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "For a long time I have been marveling at the general's daring.",
+    "answer": "πάλαι θαυμάζω τὴν τοῦ στρατηγοῦ τόλμαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάλαι",
+     "θαυμάζω",
+     "τὴν",
+     "τοῦ",
+     "στρατηγοῦ",
+     "τόλμαν"
+    ]
+   },
+   {
+    "prompt": "From what I hear, the allies are already deserting us.",
+    "answer": "ἐξ ὧν ἀκούω, οἱ σύμμαχοι ἤδη ἡμᾶς ἐγκαταλείπουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξ",
+     "ὧν",
+     "ἀκούω",
+     "οἱ",
+     "σύμμαχοι",
+     "ἤδη",
+     "ἡμᾶς",
+     "ἐγκαταλείπουσιν"
+    ]
+   },
+   {
+    "prompt": "These men have long been envying our good fortune.",
+    "answer": "οὗτοι πάλαι τῇ ἡμετέρᾳ εὐτυχίᾳ φθονοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "πάλαι",
+     "τῇ",
+     "ἡμετέρᾳ",
+     "εὐτυχίᾳ",
+     "φθονοῦσιν"
+    ]
+   },
+   {
+    "prompt": "As I keep saying, no city is saved without concord.",
+    "answer": "ὅπερ λέγω, οὐδεμία πόλις ἄνευ ὁμονοίας σῴζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπερ",
+     "λέγω",
+     "οὐδεμία",
+     "πόλις",
+     "ἄνευ",
+     "ὁμονοίας",
+     "σῴζεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t18",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "I have come from the camp to announce the victory to you.",
+    "answer": "ἥκω ἐκ τοῦ στρατοπέδου τὴν νίκην ὑμῖν ἀγγελῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥκω",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "τὴν",
+     "νίκην",
+     "ὑμῖν",
+     "ἀγγελῶν"
+    ]
+   },
+   {
+    "prompt": "The heralds are gone off into the enemy's camp.",
+    "answer": "οἱ κήρυκες οἴχονται εἰς τὸ τῶν πολεμίων στρατόπεδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κήρυκες",
+     "οἴχονται",
+     "εἰς",
+     "τὸ",
+     "τῶν",
+     "πολεμίων",
+     "στρατόπεδον"
+    ]
+   },
+   {
+    "prompt": "Report to the soldiers that we at least have conquered the king.",
+    "answer": "ἀπαγγέλλετε τοῖς στρατιώταις ὅτι ἡμεῖς γε νικῶμεν τὸν βασιλέα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπαγγέλλετε",
+     "τοῖς",
+     "στρατιώταις",
+     "ὅτι",
+     "ἡμεῖς",
+     "γε",
+     "νικῶμεν",
+     "τὸν",
+     "βασιλέα"
+    ]
+   },
+   {
+    "prompt": "This man is guilty of nothing, yet nonetheless he is an exile.",
+    "answer": "ὅδε μὲν οὐδὲν ἀδικεῖ, φεύγει δὲ ὅμως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "μὲν",
+     "οὐδὲν",
+     "ἀδικεῖ",
+     "φεύγει",
+     "δὲ",
+     "ὅμως"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t19",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "The wise man honors justice more than wealth.",
+    "answer": "ὁ σοφὸς τὴν δικαιοσύνην μᾶλλον ἢ τὸν πλοῦτον τιμᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τὴν",
+     "δικαιοσύνην",
+     "μᾶλλον",
+     "ἢ",
+     "τὸν",
+     "πλοῦτον",
+     "τιμᾷ"
+    ]
+   },
+   {
+    "prompt": "Time always brings the truth to light.",
+    "answer": "ὁ χρόνος ἀεὶ τὴν ἀλήθειαν εἰς φῶς ἄγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χρόνος",
+     "ἀεὶ",
+     "τὴν",
+     "ἀλήθειαν",
+     "εἰς",
+     "φῶς",
+     "ἄγει"
+    ]
+   },
+   {
+    "prompt": "Brave men do not fear death, but flee disgrace.",
+    "answer": "οἱ ἀνδρεῖοι τὸν θάνατον οὐ φοβοῦνται, τὴν δὲ αἰσχύνην φεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀνδρεῖοι",
+     "τὸν",
+     "θάνατον",
+     "οὐ",
+     "φοβοῦνται",
+     "τὴν",
+     "δὲ",
+     "αἰσχύνην",
+     "φεύγουσιν"
+    ]
+   },
+   {
+    "prompt": "Poverty often teaches men to be moderate.",
+    "answer": "ἡ πενία πολλάκις τοὺς ἀνθρώπους σωφρονεῖν διδάσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πενία",
+     "πολλάκις",
+     "τοὺς",
+     "ἀνθρώπους",
+     "σωφρονεῖν",
+     "διδάσκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t20",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "These orators are trying to persuade the people to make war.",
+    "answer": "οὗτοι οἱ ῥήτορες τὸν δῆμον πείθουσι πόλεμον ποιεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οἱ",
+     "ῥήτορες",
+     "τὸν",
+     "δῆμον",
+     "πείθουσι",
+     "πόλεμον",
+     "ποιεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "The young man offers his sister to the stranger as a wife.",
+    "answer": "ὁ νεανίας τὴν ἀδελφὴν τῷ ξένῳ γυναῖκα δίδωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "τὴν",
+     "ἀδελφὴν",
+     "τῷ",
+     "ξένῳ",
+     "γυναῖκα",
+     "δίδωσιν"
+    ]
+   },
+   {
+    "prompt": "The enemy are trying to lead the army across the mountains.",
+    "answer": "οἱ πολέμιοι τὸ στράτευμα διὰ τῶν ὀρῶν ἄγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τὸ",
+     "στράτευμα",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "ἄγουσιν"
+    ]
+   },
+   {
+    "prompt": "The philosopher is trying to teach the young men to despise wealth.",
+    "answer": "ὁ φιλόσοφος τοὺς νέους πλούτου καταφρονεῖν διδάσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τοὺς",
+     "νέους",
+     "πλούτου",
+     "καταφρονεῖν",
+     "διδάσκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t21",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "If you do not send help, we perish tomorrow.",
+    "answer": "εἰ μὴ βοήθειαν πέμπεις, αὔριον ἀπολλύμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὴ",
+     "βοήθειαν",
+     "πέμπεις",
+     "αὔριον",
+     "ἀπολλύμεθα"
+    ]
+   },
+   {
+    "prompt": "If the fleet is destroyed, the islands too obey the king.",
+    "answer": "εἰ τὸ ναυτικὸν διαφθείρεται, καὶ αἱ νῆσοι τῷ βασιλεῖ πείθονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸ",
+     "ναυτικὸν",
+     "διαφθείρεται",
+     "καὶ",
+     "αἱ",
+     "νῆσοι",
+     "τῷ",
+     "βασιλεῖ",
+     "πείθονται"
+    ]
+   },
+   {
+    "prompt": "Do we yield the road to the enemy, or fight here?",
+    "answer": "πότερον τὴν ὁδὸν τοῖς πολεμίοις παραχωροῦμεν ἢ ἐνθάδε μαχόμεθα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τὴν",
+     "ὁδὸν",
+     "τοῖς",
+     "πολεμίοις",
+     "παραχωροῦμεν",
+     "ἢ",
+     "ἐνθάδε",
+     "μαχόμεθα"
+    ]
+   },
+   {
+    "prompt": "If Philip advances, all Greece is in danger.",
+    "answer": "εἰ Φίλιππος προσέρχεται, πᾶσα ἡ Ἑλλὰς κινδυνεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "Φίλιππος",
+     "προσέρχεται",
+     "πᾶσα",
+     "ἡ",
+     "Ἑλλὰς",
+     "κινδυνεύει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t22",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "Cyrus draws up his soldiers and leads them against the king.",
+    "answer": "ὁ Κῦρος τοὺς στρατιώτας τάττει καὶ ἐπὶ βασιλέα ἄγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "τοὺς",
+     "στρατιώτας",
+     "τάττει",
+     "καὶ",
+     "ἐπὶ",
+     "βασιλέα",
+     "ἄγει"
+    ]
+   },
+   {
+    "prompt": "At daybreak the general sends a herald and asks for a truce.",
+    "answer": "ἅμα τῇ ἡμέρᾳ ὁ στρατηγὸς κήρυκα πέμπει καὶ σπονδὰς αἰτεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τῇ",
+     "ἡμέρᾳ",
+     "ὁ",
+     "στρατηγὸς",
+     "κήρυκα",
+     "πέμπει",
+     "καὶ",
+     "σπονδὰς",
+     "αἰτεῖ"
+    ]
+   },
+   {
+    "prompt": "The Athenians, when they hear these things, at once man the ships.",
+    "answer": "οἱ Ἀθηναῖοι, ἐπεὶ ταῦτα ἀκούουσιν, εὐθὺς τὰς ναῦς πληροῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "ἐπεὶ",
+     "ταῦτα",
+     "ἀκούουσιν",
+     "εὐθὺς",
+     "τὰς",
+     "ναῦς",
+     "πληροῦσιν"
+    ]
+   },
+   {
+    "prompt": "Xerxes crosses the river and pitches his camp on the plain.",
+    "answer": "ὁ Ξέρξης τὸν ποταμὸν διαβαίνει καὶ ἐν τῷ πεδίῳ στρατοπεδεύεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ξέρξης",
+     "τὸν",
+     "ποταμὸν",
+     "διαβαίνει",
+     "καὶ",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "στρατοπεδεύεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t23",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "For many years the Greeks have been fighting over this land.",
+    "answer": "πολλὰ ἔτη οἱ Ἕλληνες περὶ ταύτης τῆς χώρας μάχονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "ἔτη",
+     "οἱ",
+     "Ἕλληνες",
+     "περὶ",
+     "ταύτης",
+     "τῆς",
+     "χώρας",
+     "μάχονται"
+    ]
+   },
+   {
+    "prompt": "I have long known that this man is plotting against us.",
+    "answer": "πάλαι γιγνώσκω ὅτι οὗτος ἡμῖν ἐπιβουλεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάλαι",
+     "γιγνώσκω",
+     "ὅτι",
+     "οὗτος",
+     "ἡμῖν",
+     "ἐπιβουλεύει"
+    ]
+   },
+   {
+    "prompt": "From what I have heard, the enemy are already near the gates.",
+    "answer": "ἐξ ὧν ἀκούω, οἱ πολέμιοι ἤδη πρὸς ταῖς πύλαις εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξ",
+     "ὧν",
+     "ἀκούω",
+     "οἱ",
+     "πολέμιοι",
+     "ἤδη",
+     "πρὸς",
+     "ταῖς",
+     "πύλαις",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "For a long time I have been learning that flatterers harm their friends.",
+    "answer": "ἐκ πολλοῦ μανθάνω ὅτι οἱ κόλακες τοὺς φίλους βλάπτουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "πολλοῦ",
+     "μανθάνω",
+     "ὅτι",
+     "οἱ",
+     "κόλακες",
+     "τοὺς",
+     "φίλους",
+     "βλάπτουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t24",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "The messenger is come from the camp bearing letters.",
+    "answer": "ὁ ἄγγελος ἐκ τοῦ στρατοπέδου ἥκει ἐπιστολὰς φέρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἥκει",
+     "ἐπιστολὰς",
+     "φέρων"
+    ]
+   },
+   {
+    "prompt": "I am come to the assembly, but I have done no wrong.",
+    "answer": "ἥκω εἰς τὴν ἐκκλησίαν, ἀδικῶ δὲ οὐδέν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥκω",
+     "εἰς",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἀδικῶ",
+     "δὲ",
+     "οὐδέν"
+    ]
+   },
+   {
+    "prompt": "This man is an exile and is deprived of his native land.",
+    "answer": "οὗτος φεύγει καὶ τῆς πατρίδος στέρεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "φεύγει",
+     "καὶ",
+     "τῆς",
+     "πατρίδος",
+     "στέρεται"
+    ]
+   },
+   {
+    "prompt": "Announce to the citizens that we are victorious over the barbarians.",
+    "answer": "ἀπαγγέλλετε τοῖς πολίταις ὅτι τοὺς βαρβάρους νικῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπαγγέλλετε",
+     "τοῖς",
+     "πολίταις",
+     "ὅτι",
+     "τοὺς",
+     "βαρβάρους",
+     "νικῶμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t25",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "Fear often teaches men self-control.",
+    "answer": "Ὁ φόβος πολλάκις τοὺς ἀνθρώπους σωφροσύνην διδάσκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "φόβος",
+     "πολλάκις",
+     "τοὺς",
+     "ἀνθρώπους",
+     "σωφροσύνην",
+     "διδάσκει"
+    ]
+   },
+   {
+    "prompt": "Each day the old man walks around the marketplace conversing with the young men.",
+    "answer": "Ὁ γέρων ἑκάστης ἡμέρας περὶ τὴν ἀγορὰν περιέρχεται τοῖς νεανίαις διαλεγόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "γέρων",
+     "ἑκάστης",
+     "ἡμέρας",
+     "περὶ",
+     "τὴν",
+     "ἀγορὰν",
+     "περιέρχεται",
+     "τοῖς",
+     "νεανίαις",
+     "διαλεγόμενος"
+    ]
+   },
+   {
+    "prompt": "The generals are trying to persuade the soldiers not to leave their post.",
+    "answer": "Οἱ στρατηγοὶ τοὺς στρατιώτας πείθουσι μὴ λείπειν τὴν τάξιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατηγοὶ",
+     "τοὺς",
+     "στρατιώτας",
+     "πείθουσι",
+     "μὴ",
+     "λείπειν",
+     "τὴν",
+     "τάξιν"
+    ]
+   },
+   {
+    "prompt": "The heralds have come from Sparta to announce the peace.",
+    "answer": "Οἱ κήρυκες ἐκ τῆς Σπάρτης ἥκουσι τὴν εἰρήνην ἀγγελοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "κήρυκες",
+     "ἐκ",
+     "τῆς",
+     "Σπάρτης",
+     "ἥκουσι",
+     "τὴν",
+     "εἰρήνην",
+     "ἀγγελοῦντες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-t26",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "The Persians assault the wall and capture the city.",
+    "answer": "Οἱ Πέρσαι τῷ τείχει προσβάλλουσι καὶ τὴν πόλιν αἱροῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "Πέρσαι",
+     "τῷ",
+     "τείχει",
+     "προσβάλλουσι",
+     "καὶ",
+     "τὴν",
+     "πόλιν",
+     "αἱροῦσιν"
+    ]
+   },
+   {
+    "prompt": "For a long time the physician has been healing the sick with herbs.",
+    "answer": "Πάλαι ὁ ἰατρὸς τοὺς νοσοῦντας φαρμάκοις ἰᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πάλαι",
+     "ὁ",
+     "ἰατρὸς",
+     "τοὺς",
+     "νοσοῦντας",
+     "φαρμάκοις",
+     "ἰᾶται"
+    ]
+   },
+   {
+    "prompt": "If you do not obey the general, we are lost.",
+    "answer": "Εἰ μὴ τῷ στρατηγῷ πείσεσθε, ἀπολλύμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "μὴ",
+     "τῷ",
+     "στρατηγῷ",
+     "πείσεσθε",
+     "ἀπολλύμεθα"
+    ]
+   }
+  ]
  }
 ]

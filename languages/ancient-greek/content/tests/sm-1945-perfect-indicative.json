@@ -783,5 +783,419 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t13",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "I have heard the general's words, and now I know what we must do.",
+    "answer": "ἀκήκοα τοὺς τοῦ στρατηγοῦ λόγους, καὶ νῦν οἶδα ὅ τι δεῖ ποιεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκήκοα",
+     "τούς",
+     "τοῦ",
+     "στρατηγοῦ",
+     "λόγους",
+     "καί",
+     "νῦν",
+     "οἶδα",
+     "ὅ",
+     "τι",
+     "δεῖ",
+     "ποιεῖν"
+    ]
+   },
+   {
+    "prompt": "I have recognized the truth, and therefore I no longer fear death.",
+    "answer": "ἔγνωκα τὴν ἀλήθειαν, καὶ διὰ τοῦτο οὐκέτι τὸν θάνατον φοβοῦμαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγνωκα",
+     "τήν",
+     "ἀλήθειαν",
+     "καί",
+     "διά",
+     "τοῦτο",
+     "οὐκέτι",
+     "τόν",
+     "θάνατον",
+     "φοβοῦμαι"
+    ]
+   },
+   {
+    "prompt": "The philosopher has seen many wondrous things, but he trusts his own eyes.",
+    "answer": "ὁ φιλόσοφος πολλὰ καὶ θαυμαστὰ ἑώρακεν, ἀλλὰ τοῖς ἑαυτοῦ ὀφθαλμοῖς πέποιθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "πολλά",
+     "καί",
+     "θαυμαστά",
+     "ἑώρακεν",
+     "ἀλλά",
+     "τοῖς",
+     "ἑαυτοῦ",
+     "ὀφθαλμοῖς",
+     "πέποιθεν"
+    ]
+   },
+   {
+    "prompt": "Since I have suffered many terrible things, I have truly become wise.",
+    "answer": "ἐπεὶ πολλὰ καὶ δεινὰ πέπονθα, ἀληθῶς σοφὸς γέγονα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεί",
+     "πολλά",
+     "καί",
+     "δεινά",
+     "πέπονθα",
+     "ἀληθῶς",
+     "σοφός",
+     "γέγονα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t14",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "This woman possesses much gold, yet she has clothed herself in rags.",
+    "answer": "αὕτη ἡ γυνὴ πολὺν χρυσὸν κέκτηται, ῥάκη μέντοι ἠμφίεσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἡ",
+     "γυνή",
+     "πολύν",
+     "χρυσόν",
+     "κέκτηται",
+     "ῥάκη",
+     "μέντοι",
+     "ἠμφίεσται"
+    ]
+   },
+   {
+    "prompt": "The general's son is brave by nature, and he is called a lion.",
+    "answer": "ὁ τοῦ στρατηγοῦ υἱὸς ἀνδρεῖος πέφυκε, καὶ λέων κέκληται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "υἱός",
+     "ἀνδρεῖος",
+     "πέφυκε",
+     "καί",
+     "λέων",
+     "κέκληται"
+    ]
+   },
+   {
+    "prompt": "We have grown accustomed to hearing the orators, and we stand in the marketplace.",
+    "answer": "εἰθίσμεθα τῶν ῥητόρων ἀκούειν, καὶ ἐν τῇ ἀγορᾷ ἕσταμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰθίσμεθα",
+     "τῶν",
+     "ῥητόρων",
+     "ἀκούειν",
+     "καί",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἕσταμεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers trust their leader, for often he has saved them.",
+    "answer": "οἱ στρατιῶται τῷ ἡγεμόνι πεποίθασι, πολλάκις γὰρ αὐτοὺς σέσωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τῷ",
+     "ἡγεμόνι",
+     "πεποίθασι",
+     "πολλάκις",
+     "γάρ",
+     "αὐτούς",
+     "σέσωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t15",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "The hound gazes at the stranger and shudders with fear.",
+    "answer": "ὁ κύων εἰς τὸν ξένον δέδορκε καὶ ὑπὸ φόβου πέφρικεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κύων",
+     "εἰς",
+     "τόν",
+     "ξένον",
+     "δέδορκε",
+     "καί",
+     "ὑπό",
+     "φόβου",
+     "πέφρικεν"
+    ]
+   },
+   {
+    "prompt": "The children stand gaping, and their mothers are filled with alarm.",
+    "answer": "τὰ παιδία κέχηνεν, αἱ δὲ μητέρες αὐτῶν πεφόβηνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "παιδία",
+     "κέχηνεν",
+     "αἱ",
+     "δέ",
+     "μητέρες",
+     "αὐτῶν",
+     "πεφόβηνται"
+    ]
+   },
+   {
+    "prompt": "The old woman roars in her anger, but the slaves have fallen silent.",
+    "answer": "ἡ γραῦς ὑπὸ ὀργῆς βέβρυχεν, οἱ δὲ δμῶες σεσιγήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "ὑπό",
+     "ὀργῆς",
+     "βέβρυχεν",
+     "οἱ",
+     "δέ",
+     "δμῶες",
+     "σεσιγήκασιν"
+    ]
+   },
+   {
+    "prompt": "I greatly rejoice, for my son has come back unharmed from the war.",
+    "answer": "γέγηθα σφόδρα, ὁ γὰρ υἱὸς ἀβλαβὴς ἐκ τοῦ πολέμου ἀφῖκται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γέγηθα",
+     "σφόδρα",
+     "ὁ",
+     "γάρ",
+     "υἱός",
+     "ἀβλαβής",
+     "ἐκ",
+     "τοῦ",
+     "πολέμου",
+     "ἀφῖκται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t16",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "If we take the city, the whole war has been finished for us.",
+    "answer": "ἐὰν τὴν πόλιν ἕλωμεν, πᾶς ὁ πόλεμος ἡμῖν πεπέρανται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τήν",
+     "πόλιν",
+     "ἕλωμεν",
+     "πᾶς",
+     "ὁ",
+     "πόλεμος",
+     "ἡμῖν",
+     "πεπέρανται"
+    ]
+   },
+   {
+    "prompt": "Great wealth ere now has destroyed many households.",
+    "answer": "ὁ πλοῦτος ὁ πολὺς πολλοὺς ἤδη οἴκους ἀπολώλεκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλοῦτος",
+     "πολύς",
+     "πολλούς",
+     "ἤδη",
+     "οἴκους",
+     "ἀπολώλεκεν"
+    ]
+   },
+   {
+    "prompt": "On that day I was honored before the whole army.",
+    "answer": "ἐκείνῃ τῇ ἡμέρᾳ τετίμημαι ἐναντίον παντὸς τοῦ στρατεύματος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνῃ",
+     "τῇ",
+     "ἡμέρᾳ",
+     "τετίμημαι",
+     "ἐναντίον",
+     "παντός",
+     "τοῦ",
+     "στρατεύματος"
+    ]
+   },
+   {
+    "prompt": "Everything has been prepared, and the guests are already reclining.",
+    "answer": "πάντα παρεσκεύασται, καὶ οἱ ξένοι ἤδη κατάκεινται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "παρεσκεύασται",
+     "καί",
+     "οἱ",
+     "ξένοι",
+     "ἤδη",
+     "κατάκεινται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t17",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "The wall has been thrown down, and the enemy have entered the city.",
+    "answer": "τὸ τεῖχος καταβέβληται, καὶ οἱ πολέμιοι εἰς τὴν πόλιν εἰσεληλύθασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "τεῖχος",
+     "καταβέβληται",
+     "καί",
+     "οἱ",
+     "πολέμιοι",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "εἰσεληλύθασιν"
+    ]
+   },
+   {
+    "prompt": "The camp has been fortified, and the guards keep watch upon the towers.",
+    "answer": "τὸ στρατόπεδον τετείχισται, οἱ δὲ φύλακες ἐπὶ τῶν πύργων φυλάττουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "στρατόπεδον",
+     "τετείχισται",
+     "οἱ",
+     "δέ",
+     "φύλακες",
+     "ἐπί",
+     "τῶν",
+     "πύργων",
+     "φυλάττουσιν"
+    ]
+   },
+   {
+    "prompt": "The tyrant's statue has been set up in the temple.",
+    "answer": "ὁ τοῦ τυράννου ἀνδριὰς ἐν τῷ ἱερῷ ἵδρυται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τοῦ",
+     "τυράννου",
+     "ἀνδριάς",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "ἵδρυται"
+    ]
+   },
+   {
+    "prompt": "The corpse has been buried, and the mourners have departed.",
+    "answer": "ὁ νεκρὸς τέθαπται, οἱ δὲ πενθοῦντες ἀπεληλύθασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεκρός",
+     "τέθαπται",
+     "οἱ",
+     "δέ",
+     "πενθοῦντες",
+     "ἀπεληλύθασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-t18",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "Winter having come, all the rivers have frozen.",
+    "answer": "τοῦ χειμῶνος ἐλθόντος, οἱ ποταμοὶ πάντες πεπήγασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "χειμῶνος",
+     "ἐλθόντος",
+     "οἱ",
+     "ποταμοί",
+     "πάντες",
+     "πεπήγασιν"
+    ]
+   },
+   {
+    "prompt": "Now that the enemy have fled, the soldiers have laid down their arms.",
+    "answer": "τῶν πολεμίων πεφευγότων, οἱ στρατιῶται τὰ ὅπλα κατατεθείκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "πεφευγότων",
+     "οἱ",
+     "στρατιῶται",
+     "τά",
+     "ὅπλα",
+     "κατατεθείκασιν"
+    ]
+   },
+   {
+    "prompt": "The teacher having spoken, the boys have learned many things.",
+    "answer": "τοῦ διδασκάλου εἰρηκότος, οἱ παῖδες πολλὰ μεμαθήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "διδασκάλου",
+     "εἰρηκότος",
+     "οἱ",
+     "παῖδες",
+     "πολλά",
+     "μεμαθήκασιν"
+    ]
+   },
+   {
+    "prompt": "The ships having been destroyed, the citizens have sunk into despair.",
+    "answer": "τῶν νεῶν διεφθαρμένων, οἱ πολῖται εἰς ἀθυμίαν καθεστήκασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "νεῶν",
+     "διεφθαρμένων",
+     "οἱ",
+     "πολῖται",
+     "εἰς",
+     "ἀθυμίαν",
+     "καθεστήκασιν"
+    ]
+   }
+  ]
  }
 ]

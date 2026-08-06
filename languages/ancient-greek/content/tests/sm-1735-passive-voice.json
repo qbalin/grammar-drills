@@ -1496,5 +1496,140 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1735-passive-voice-t25",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "The young man was envied by his companions on account of his courage.",
+    "answer": "ὁ νεανίας ὑπὸ τῶν ἑταίρων διὰ τὴν ἀνδρείαν ἐφθονήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "ὑπὸ",
+     "τῶν",
+     "ἑταίρων",
+     "διὰ",
+     "τὴν",
+     "ἀνδρείαν",
+     "ἐφθονήθη"
+    ]
+   },
+   {
+    "prompt": "If the general is convicted, he will be punished with death by the assembly.",
+    "answer": "ἐὰν ὁ στρατηγὸς ἁλῷ, θανάτῳ ὑπὸ τῆς ἐκκλησίας ζημιωθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "στρατηγὸς",
+     "ἁλῷ",
+     "θανάτῳ",
+     "ὑπὸ",
+     "τῆς",
+     "ἐκκλησίας",
+     "ζημιωθήσεται"
+    ]
+   },
+   {
+    "prompt": "The allies were being warred against by those dwelling around their land.",
+    "answer": "οἱ σύμμαχοι ὑπὸ τῶν τὴν χώραν περιοικούντων ἐπολεμοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "ὑπὸ",
+     "τῶν",
+     "τὴν",
+     "χώραν",
+     "περιοικούντων",
+     "ἐπολεμοῦντο"
+    ]
+   },
+   {
+    "prompt": "Everything that needed to be done has been done by us.",
+    "answer": "πάντα ὅσα ἔδει πράττειν ἡμῖν πέπρακται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "ὅσα",
+     "ἔδει",
+     "πράττειν",
+     "ἡμῖν",
+     "πέπρακται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-t26",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "Many of the soldiers were killed by the cavalry in the battle.",
+    "answer": "πολλοὶ τῶν στρατιωτῶν ὑπὸ τῶν ἱππέων ἐν τῇ μάχῃ ἀπέθανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὶ",
+     "τῶν",
+     "στρατιωτῶν",
+     "ὑπὸ",
+     "ἱππέων",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀπέθανον"
+    ]
+   },
+   {
+    "prompt": "If you are caught doing these things, you will be punished by the magistrates.",
+    "answer": "ἐὰν ταῦτα πράττων ἁλῷς, ὑπὸ τῶν ἀρχόντων δίκην δώσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ταῦτα",
+     "πράττων",
+     "ἁλῷς",
+     "ὑπὸ",
+     "τῶν",
+     "ἀρχόντων",
+     "δίκην",
+     "δώσεις"
+    ]
+   },
+   {
+    "prompt": "Those who flatter the tyrant are well spoken of by no one.",
+    "answer": "οἱ τὸν τύραννον κολακεύοντες ὑπὸ οὐδενὸς εὖ ἀκούουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὸν",
+     "τύραννον",
+     "κολακεύοντες",
+     "ὑπὸ",
+     "οὐδενὸς",
+     "εὖ",
+     "ἀκούουσιν"
+    ]
+   },
+   {
+    "prompt": "The army having been defeated by the enemy, the general fled.",
+    "answer": "τοῦ στρατεύματος ὑπὸ τῶν πολεμίων ἡττηθέντος, ὁ στρατηγὸς ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "στρατεύματος",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "ἡττηθέντος",
+     "ὁ",
+     "στρατηγὸς",
+     "ἔφυγεν"
+    ]
+   }
+  ]
  }
 ]

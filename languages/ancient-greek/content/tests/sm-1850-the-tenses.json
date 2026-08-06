@@ -761,5 +761,136 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1850-the-tenses-t13",
+  "sectionId": "sm-1850-the-tenses",
+  "questions": [
+   {
+    "prompt": "The soldiers were ravaging the country for many days before they withdrew.",
+    "answer": "Οἱ στρατιῶται πολλὰς ἡμέρας τὴν χώραν ἐπόρθουν πρὶν ἀπελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "πολλὰς",
+     "ἡμέρας",
+     "τὴν",
+     "χώραν",
+     "ἐπόρθουν",
+     "πρὶν",
+     "ἀπελθεῖν"
+    ]
+   },
+   {
+    "prompt": "Although he had often conquered the barbarians, he now feared the Spartans.",
+    "answer": "Καίπερ πολλάκις τοὺς βαρβάρους νενικηκώς, νῦν τοὺς Λακεδαιμονίους ἐφοβεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Καίπερ",
+     "πολλάκις",
+     "τοὺς",
+     "βαρβάρους",
+     "νενικηκώς",
+     "νῦν",
+     "Λακεδαιμονίους",
+     "ἐφοβεῖτο"
+    ]
+   },
+   {
+    "prompt": "When the herald had spoken, the citizens shouted aloud.",
+    "answer": "Ἐπεὶ ὁ κῆρυξ εἶπεν, οἱ πολῖται ἀνεβόησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐπεὶ",
+     "ὁ",
+     "κῆρυξ",
+     "εἶπεν",
+     "οἱ",
+     "πολῖται",
+     "ἀνεβόησαν"
+    ]
+   },
+   {
+    "prompt": "The wall has been built, and now the guards are keeping watch.",
+    "answer": "Τὸ τεῖχος ᾠκοδόμηται, καὶ νῦν οἱ φύλακες φυλάττουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὸ",
+     "τεῖχος",
+     "ᾠκοδόμηται",
+     "καὶ",
+     "νῦν",
+     "οἱ",
+     "φύλακες",
+     "φυλάττουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1850-the-tenses-t14",
+  "sectionId": "sm-1850-the-tenses",
+  "questions": [
+   {
+    "prompt": "As long as the tyrant was alive, no one dared to speak freely.",
+    "answer": "Ἕως ὁ τύραννος ἔζη, οὐδεὶς ἐτόλμα παρρησιάζεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἕως",
+     "ὁ",
+     "τύραννος",
+     "ἔζη",
+     "οὐδεὶς",
+     "ἐτόλμα",
+     "παρρησιάζεσθαι"
+    ]
+   },
+   {
+    "prompt": "The physician, having healed many, has now himself fallen sick.",
+    "answer": "Ὁ ἰατρός, πολλοὺς ἰασάμενος, νῦν αὐτὸς νενόσηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ἰατρός",
+     "πολλοὺς",
+     "ἰασάμενος",
+     "νῦν",
+     "αὐτὸς",
+     "νενόσηκεν"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy attacked, the villagers would flee to the mountains.",
+    "answer": "Ὁπότε οἱ πολέμιοι προσβάλοιεν, οἱ κωμῆται εἰς τὰ ὄρη ἔφευγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁπότε",
+     "οἱ",
+     "πολέμιοι",
+     "προσβάλοιεν",
+     "κωμῆται",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἔφευγον"
+    ]
+   },
+   {
+    "prompt": "The poet will sing of those who died for their fatherland.",
+    "answer": "Ὁ ποιητὴς ᾄσεται τοὺς ὑπὲρ τῆς πατρίδος ἀποθανόντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ποιητὴς",
+     "ᾄσεται",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθανόντας"
+    ]
+   }
+  ]
  }
 ]

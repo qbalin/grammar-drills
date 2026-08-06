@@ -378,5 +378,267 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1955-future-perfect-t7",
+  "sectionId": "sm-1955-future-perfect",
+  "questions": [
+   {
+    "prompt": "The gates will be kept shut until the enemy withdraw.",
+    "answer": "αἱ πύλαι κεκλῄσονται ἕως ἂν οἱ πολέμιοι ἀναχωρήσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "πύλαι",
+     "κεκλῄσονται",
+     "ἕως",
+     "ἄν",
+     "οἱ",
+     "πολέμιοι",
+     "ἀναχωρήσωσιν"
+    ]
+   },
+   {
+    "prompt": "Speak the truth, and the whole quarrel will at once have been settled.",
+    "answer": "λέγε τὸ ἀληθές, καὶ ἡ ἔρις ὅλη εὐθὺς λελύσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγε",
+     "τό",
+     "ἀληθές",
+     "καί",
+     "ἡ",
+     "ἔρις",
+     "ὅλη",
+     "εὐθύς",
+     "λελύσεται"
+    ]
+   },
+   {
+    "prompt": "This man, once convicted, will be kept in prison for many years.",
+    "answer": "οὗτος ἁλοὺς δεδήσεται πολλὰ ἔτη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ἁλούς",
+     "δεδήσεται",
+     "πολλά",
+     "ἔτη"
+    ]
+   },
+   {
+    "prompt": "The soldiers will have been drawn up in line before dawn.",
+    "answer": "οἱ στρατιῶται πρὸ τῆς ἕω τετάξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "πρό",
+     "τῆς",
+     "ἕω",
+     "τετάξονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1955-future-perfect-t8",
+  "sectionId": "sm-1955-future-perfect",
+  "questions": [
+   {
+    "prompt": "Whoever has toiled well will possess an honorable name among men.",
+    "answer": "ὅστις ἂν εὖ πονήσῃ, καλὸν ὄνομα ἐν ἀνθρώποις κεκτήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἄν",
+     "εὖ",
+     "πονήσῃ",
+     "καλόν",
+     "ὄνομα",
+     "ἐν",
+     "ἀνθρώποις",
+     "κεκτήσεται"
+    ]
+   },
+   {
+    "prompt": "I shall remember your kindness as long as I live.",
+    "answer": "μεμνήσομαι τῆς σῆς εὐεργεσίας ἕως ἂν ζῶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεμνήσομαι",
+     "τῆς",
+     "σῆς",
+     "εὐεργεσίας",
+     "ἕως",
+     "ἄν",
+     "ζῶ"
+    ]
+   },
+   {
+    "prompt": "I shall be dead before I betray the city to the enemy.",
+    "answer": "τεθνήξω πρότερον ἢ τὴν πόλιν τοῖς πολεμίοις προδώσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τεθνήξω",
+     "πρότερον",
+     "ἤ",
+     "τήν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "προδώσω"
+    ]
+   },
+   {
+    "prompt": "Let the truth be spoken: we did wrong in making war on the Greeks.",
+    "answer": "εἰρήσεται γὰρ τὸ ἀληθές· ἡμάρτομεν τοῖς Ἕλλησι πολεμοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰρήσεται",
+     "γάρ",
+     "τό",
+     "ἀληθές",
+     "ἡμάρτομεν",
+     "τοῖς",
+     "Ἕλλησι",
+     "πολεμοῦντες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1955-future-perfect-t9",
+  "sectionId": "sm-1955-future-perfect",
+  "questions": [
+   {
+    "prompt": "Command it, and the deed will already have been done.",
+    "answer": "κέλευσον μόνον, καὶ τὸ ἔργον ἤδη πεπράξεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κέλευσον",
+     "μόνον",
+     "καί",
+     "τό",
+     "ἔργον",
+     "ἤδη",
+     "πεπράξεται"
+    ]
+   },
+   {
+    "prompt": "When the allies have deserted, not even one hope will be left to us.",
+    "answer": "τῶν συμμάχων ἀποστάντων, οὐδὲ μία ἐλπὶς ἡμῖν λελείψεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "συμμάχων",
+     "ἀποστάντων",
+     "οὐδέ",
+     "μία",
+     "ἐλπίς",
+     "ἡμῖν",
+     "λελείψεται"
+    ]
+   },
+   {
+    "prompt": "Once a truce has been made, the war between the cities will have ceased.",
+    "answer": "σπονδῶν γενομένων, ὁ πόλεμος ταῖς πόλεσι πεπαύσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σπονδῶν",
+     "γενομένων",
+     "ὁ",
+     "πόλεμος",
+     "ταῖς",
+     "πόλεσι",
+     "πεπαύσεται"
+    ]
+   },
+   {
+    "prompt": "As soon as I have paid the fine, I shall stand enrolled among the free men.",
+    "answer": "ἐπειδὰν τὴν ζημίαν ἐκτίσω, ἐν τοῖς ἐλευθέροις ἀναγεγράψομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "τήν",
+     "ζημίαν",
+     "ἐκτίσω",
+     "ἐν",
+     "τοῖς",
+     "ἐλευθέροις",
+     "ἀναγεγράψομαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1955-future-perfect-t10",
+  "sectionId": "sm-1955-future-perfect",
+  "questions": [
+   {
+    "prompt": "Before the assembly meets, we shall have determined everything.",
+    "answer": "πρὶν ἐκκλησίαν συλλεγῆναι, πάντα ἐγνωκότες ἐσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρίν",
+     "ἐκκλησίαν",
+     "συλλεγῆναι",
+     "πάντα",
+     "ἐγνωκότες",
+     "ἐσόμεθα"
+    ]
+   },
+   {
+    "prompt": "Even though we have fallen, the trophy will stand forever on the hill.",
+    "answer": "καὶ πεσόντων ἡμῶν, τὸ τρόπαιον ἐπὶ τῷ λόφῳ ἀεὶ ἑστήξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "πεσόντων",
+     "ἡμῶν",
+     "τό",
+     "τρόπαιον",
+     "ἐπί",
+     "τῷ",
+     "λόφῳ",
+     "ἀεί",
+     "ἑστήξει"
+    ]
+   },
+   {
+    "prompt": "Guard the walls well, and the city will be kept safe through the whole night.",
+    "answer": "φυλάττετε καλῶς τὰ τείχη, καὶ ἡ πόλις διὰ ὅλης τῆς νυκτὸς πεφυλάξεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάττετε",
+     "καλῶς",
+     "τά",
+     "τείχη",
+     "καί",
+     "ἡ",
+     "πόλις",
+     "διά",
+     "ὅλης",
+     "τῆς",
+     "νυκτός",
+     "πεφυλάξεται"
+    ]
+   },
+   {
+    "prompt": "When the ambassadors have arrived, the terms will already have been written down.",
+    "answer": "ἐπειδὰν οἱ πρέσβεις ἀφίκωνται, αἱ συνθῆκαι ἤδη γεγράψονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδάν",
+     "οἱ",
+     "πρέσβεις",
+     "ἀφίκωνται",
+     "αἱ",
+     "συνθῆκαι",
+     "ἤδη",
+     "γεγράψονται"
+    ]
+   }
+  ]
  }
 ]
