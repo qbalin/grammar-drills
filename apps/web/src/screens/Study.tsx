@@ -211,7 +211,7 @@ export function Graded({
         <p className="hint">
           {marking
             ? "Tap a word: bold, italic, struck, off."
-            : "Hold a word to save it to your vocabulary."}
+            : "Hold a word to save it to your vocabulary; double-tap it to look it up."}
         </p>
         {history}
       </div>

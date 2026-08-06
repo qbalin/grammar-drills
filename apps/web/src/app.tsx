@@ -169,6 +169,7 @@ export function App({ content, session, storage }: Props) {
   const [dictFailed, setDictFailed] = useState(false);
   const [paradigms, setParadigms] = useState<ParadigmIndex>();
   const [paradigmsLoading, setParadigmsLoading] = useState(false);
+  const [paradigmsFailed, setParadigmsFailed] = useState(false);
   const [showVocab, setShowVocab] = useState(false); // the question's word list
   const [showTrail, setShowTrail] = useState(false); // this topic's earlier answers
   const [syncState, setSyncState] = useState<SyncState>(storage.currentState());
@@ -629,16 +630,20 @@ export function App({ content, session, storage }: Props) {
    *
    * Kept apart from the dictionary and asked for later: it is larger than the
    * dictionary's two files together and only this one gesture wants it, so the
-   * crib is not made to pay for a table nobody opened. A failure is silent —
-   * the sheet still has the citation, the gloss and the gender, which is most
-   * of what was asked.
+   * crib is not made to pay for a table nobody opened.
+   *
+   * A failure is quiet but not silent. It used to be swallowed, and the sheet
+   * then read exactly like a word that has no forms — telling a student that
+   * `frater` does not change, which is a plain falsehood about a noun with a
+   * full paradigm. The sheet is told instead, and can offer the fetch again.
    */
   const ensureParadigms = useCallback(() => {
     if (paradigms) return;
+    setParadigmsFailed(false);
     setParadigmsLoading(true);
     void loadParadigms()
       .then(setParadigms)
-      .catch(() => {})
+      .catch(() => setParadigmsFailed(true))
       .finally(() => setParadigmsLoading(false));
   }, [paradigms]);
 
@@ -1401,6 +1406,8 @@ export function App({ content, session, storage }: Props) {
           others={overlay.others}
           forms={paradigms?.formsFor(overlay.entry.lemma, overlay.entry.pos)}
           loading={paradigmsLoading}
+          failed={paradigmsFailed}
+          onRetry={ensureParadigms}
           // Switching readings keeps the one showing among the others, so the
           // way back is the same tap that got here.
           onPick={(entry) =>

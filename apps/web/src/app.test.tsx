@@ -32,6 +32,10 @@ const PARADIGMS = [
   "manus|noun\t0:manus\t1:manūs\t2:manūs",
   "rex|noun\t0:rēx\t1:rēgis",
 ].join("\n");
+// The paradigm fetch can fail on its own — it is the largest asset and the
+// last to be asked for. Flagged separately from the dictionary because the two
+// failures look nothing alike to a student.
+const paradigmFile = { available: true };
 vi.mock("./content-loader.js", async () => {
   const { ParadigmIndex } = await import("./paradigm-index.js");
   return {
@@ -40,7 +44,10 @@ vi.mock("./content-loader.js", async () => {
       return {} as never;
     }),
     dictionaryReady: () => dictionary.available,
-    loadParadigms: vi.fn(async () => new ParadigmIndex(PARADIGMS)),
+    loadParadigms: vi.fn(async () => {
+      if (!paradigmFile.available) throw new Error("offline");
+      return new ParadigmIndex(PARADIGMS);
+    }),
   };
 });
 
@@ -908,6 +915,34 @@ describe("looking a word up", () => {
     const sheet = screen.getByRole("dialog", { name: "rosa, rosae (f)" });
     expect(within(sheet).getByText("rose")).toBeDefined();
     expect(within(sheet).queryByRole("table")).toBeNull();
+    // The tables arrived and this word is not in them, which is the one case
+    // that earns a statement about the word itself.
+    expect(within(sheet).getByText(/does not change/)).toBeDefined();
+  });
+
+  /**
+   * The bug this is here to keep out: a failed fetch used to be swallowed, and
+   * the sheet then read exactly like a word with no forms — telling a student
+   * that `rex` does not change, which is false about every noun in Latin. The
+   * app cannot say anything about the word until it has the file.
+   */
+  it("blames the download, not the word, when the tables do not arrive", async () => {
+    const user = userEvent.setup();
+    paradigmFile.available = false;
+    try {
+      mount();
+      await user.type(screen.getByLabelText("Your Latin"), "regem");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await inspectWord("regem");
+      const sheet = screen.getByRole("dialog", { name: "rex, rēgis" });
+      expect(within(sheet).getByText(/Could not load the inflection tables/)).toBeDefined();
+      expect(within(sheet).queryByText(/does not change/)).toBeNull();
+      // And a way to ask again, since the usual cause is a moment offline.
+      expect(within(sheet).getByRole("button", { name: "Try again" })).toBeDefined();
+    } finally {
+      paradigmFile.available = true;
+    }
   });
 
   // Unlike the hold, nothing here is being saved, so nothing here asks first:

@@ -27,14 +27,31 @@ import { ParadigmIndex } from "./paradigm-index.js";
  * for `/content/x`. That 404s every asset on Pages while working perfectly at a
  * root, so it is exactly the bug that survives local testing. Exported so a
  * test can pin it.
+ *
+ * `version` is the content bundle's hash, compiled in by `vite.config.ts`. The
+ * five assets have fixed names, and the service worker holds three of them
+ * under `CacheFirst` — which never revalidates. Hanging the hash on the URL is
+ * what lets new content reach a device that already has old content: same
+ * bytes, same URL, nobody re-downloads; new bytes, new URL, everybody does.
  */
-export function contentUrl(name: string, base: string, href: string): string {
+export function contentUrl(
+  name: string,
+  base: string,
+  href: string,
+  version?: string,
+): string {
   const dir = base.endsWith("/") ? base : `${base}/`;
-  return new URL(`${dir}content/${name}`, href).href;
+  const query = version ? `?v=${version}` : "";
+  return new URL(`${dir}content/${name}${query}`, href).href;
 }
 
 function url(name: string): string {
-  return contentUrl(name, import.meta.env.BASE_URL || "/", location.href);
+  return contentUrl(
+    name,
+    import.meta.env.BASE_URL || "/",
+    location.href,
+    __CONTENT_VERSION__,
+  );
 }
 
 async function fetchGzipped(name: string): Promise<string> {
