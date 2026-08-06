@@ -435,5 +435,439 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-723-first-or-simple-class-present-system-t7",
+  "sectionId": "sm-723-first-or-simple-class-present-system",
+  "questions": [
+   {
+    "prompt": "The lawgiver establishes good laws for the citizens, so that they may live well.",
+    "answer": "ὁ νομοθέτης νόμους ἀγαθοὺς τοῖς πολίταις τίθησιν, ἵνα εὖ ζῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νομοθέτης",
+     "νόμους",
+     "ἀγαθούς",
+     "τοῖς",
+     "πολίταις",
+     "τίθησιν",
+     "ἵνα",
+     "εὖ",
+     "ζῶσιν"
+    ]
+   },
+   {
+    "prompt": "The wealthy give money to the poor, since they pity their misfortune.",
+    "answer": "οἱ πλούσιοι τοῖς πένησιν ἀργύριον διδόασιν, ἐπεὶ τὴν συμφορὰν αὐτῶν οἰκτίρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πλούσιοι",
+     "τοῖς",
+     "πένησιν",
+     "ἀργύριον",
+     "διδόασιν",
+     "ἐπεί",
+     "τήν",
+     "συμφοράν",
+     "αὐτῶν",
+     "οἰκτίρουσιν"
+    ]
+   },
+   {
+    "prompt": "Setting up the trophy in the plain, the soldiers rejoice at the victory.",
+    "answer": "ἱστάντες τὸ τρόπαιον ἐν τῷ πεδίῳ οἱ στρατιῶται τῇ νίκῃ χαίρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἱστάντες",
+     "τό",
+     "τρόπαιον",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "οἱ",
+     "στρατιῶται",
+     "τῇ",
+     "νίκῃ",
+     "χαίρουσιν"
+    ]
+   },
+   {
+    "prompt": "I set the shield beside the spear and go toward the gates.",
+    "answer": "τὴν ἀσπίδα παρὰ τὸ δόρυ τίθημι καὶ πρὸς τὰς πύλας εἶμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "ἀσπίδα",
+     "παρά",
+     "τό",
+     "δόρυ",
+     "τίθημι",
+     "καί",
+     "πρός",
+     "τάς",
+     "πύλας",
+     "εἶμι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-723-first-or-simple-class-present-system-t8",
+  "sectionId": "sm-723-first-or-simple-class-present-system",
+  "questions": [
+   {
+    "prompt": "Although I understand the danger, I am not able to persuade the assembly.",
+    "answer": "καίπερ τὸν κίνδυνον ἐπιστάμενος, οὐ δύναμαι τὴν ἐκκλησίαν πείθειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "τόν",
+     "κίνδυνον",
+     "ἐπιστάμενος",
+     "οὐ",
+     "δύναμαι",
+     "τήν",
+     "ἐκκλησίαν",
+     "πείθειν"
+    ]
+   },
+   {
+    "prompt": "They say that the general is able to save the army.",
+    "answer": "φασὶ τὸν στρατηγὸν τὸ στράτευμα σῴζειν δύνασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φασί",
+     "τόν",
+     "στρατηγόν",
+     "τό",
+     "στράτευμα",
+     "σῴζειν",
+     "δύνασθαι"
+    ]
+   },
+   {
+    "prompt": "The wise man knows how both to rule and to be ruled.",
+    "answer": "ὁ σοφὸς ἐπίσταται καὶ ἄρχειν καὶ ἄρχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "ἐπίσταται",
+     "καί",
+     "ἄρχειν",
+     "ἄρχεσθαι"
+    ]
+   },
+   {
+    "prompt": "We say that these things are just, but you are not able to prove it.",
+    "answer": "φαμὲν ταῦτα δίκαια εἶναι, ὑμεῖς δὲ οὐ δύνασθε τοῦτο ἀποδεικνύναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φαμέν",
+     "ταῦτα",
+     "δίκαια",
+     "εἶναι",
+     "ὑμεῖς",
+     "δέ",
+     "οὐ",
+     "δύνασθε",
+     "τοῦτο",
+     "ἀποδεικνύναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-723-first-or-simple-class-present-system-t9",
+  "sectionId": "sm-723-first-or-simple-class-present-system",
+  "questions": [
+   {
+    "prompt": "The archers let fly their missiles against the ships of the barbarians.",
+    "answer": "οἱ τοξόται τὰ βέλη ἐπὶ τὰς τῶν βαρβάρων ναῦς ἱᾶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοξόται",
+     "τά",
+     "βέλη",
+     "ἐπί",
+     "τάς",
+     "τῶν",
+     "βαρβάρων",
+     "ναῦς",
+     "ἱᾶσιν"
+    ]
+   },
+   {
+    "prompt": "The judges release the prisoner, since no one accuses him.",
+    "answer": "οἱ δικασταὶ τὸν δεσμώτην ἀφιᾶσιν, ἐπεὶ οὐδεὶς αὐτοῦ κατηγορεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "τόν",
+     "δεσμώτην",
+     "ἀφιᾶσιν",
+     "ἐπεί",
+     "οὐδείς",
+     "αὐτοῦ",
+     "κατηγορεῖ"
+    ]
+   },
+   {
+    "prompt": "Standing before the army, the general cheers the soldiers on.",
+    "answer": "πρὸ τοῦ στρατεύματος ἱστάμενος ὁ στρατηγὸς τοὺς στρατιώτας παρακελεύεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρό",
+     "τοῦ",
+     "στρατεύματος",
+     "ἱστάμενος",
+     "ὁ",
+     "στρατηγός",
+     "τούς",
+     "στρατιώτας",
+     "παρακελεύεται"
+    ]
+   },
+   {
+    "prompt": "I let go of the rope, and the stone falls upon the ground.",
+    "answer": "τὸ σχοινίον ἀφίημι, καὶ ὁ λίθος ἐπὶ τὴν γῆν πίπτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "σχοινίον",
+     "ἀφίημι",
+     "καί",
+     "ὁ",
+     "λίθος",
+     "ἐπί",
+     "τήν",
+     "γῆν",
+     "πίπτει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-723-first-or-simple-class-present-system-t10",
+  "sectionId": "sm-723-first-or-simple-class-present-system",
+  "questions": [
+   {
+    "prompt": "The servants fill the cups with wine for the guests.",
+    "answer": "οἱ θεράποντες τὰς κύλικας οἴνου τοῖς ξένοις πιμπλᾶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεράποντες",
+     "τάς",
+     "κύλικας",
+     "οἴνου",
+     "τοῖς",
+     "ξένοις",
+     "πιμπλᾶσιν"
+    ]
+   },
+   {
+    "prompt": "The enemy burn the fields and destroy the farmhouses.",
+    "answer": "οἱ πολέμιοι τοὺς ἀγροὺς πιμπρᾶσι καὶ τὰς ἐπαύλεις διαφθείρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τούς",
+     "ἀγρούς",
+     "πιμπρᾶσι",
+     "καί",
+     "τάς",
+     "ἐπαύλεις",
+     "διαφθείρουσιν"
+    ]
+   },
+   {
+    "prompt": "The rich man lends horses to the young men who are going to war.",
+    "answer": "ὁ πλούσιος τοῖς εἰς τὸν πόλεμον ἰοῦσι νεανίαις ἵππους κίχρησιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "τοῖς",
+     "εἰς",
+     "τόν",
+     "πόλεμον",
+     "ἰοῦσι",
+     "νεανίαις",
+     "ἵππους",
+     "κίχρησιν"
+    ]
+   },
+   {
+    "prompt": "Good friends benefit us in misfortunes more than gold does.",
+    "answer": "οἱ ἀγαθοὶ φίλοι ἡμᾶς ἐν ταῖς συμφοραῖς μᾶλλον ἢ ὁ χρυσὸς ὀνινᾶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀγαθοί",
+     "φίλοι",
+     "ἡμᾶς",
+     "ἐν",
+     "ταῖς",
+     "συμφοραῖς",
+     "μᾶλλον",
+     "ἤ",
+     "ὁ",
+     "χρυσός",
+     "ὀνινᾶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-723-first-or-simple-class-present-system-t11",
+  "sectionId": "sm-723-first-or-simple-class-present-system",
+  "questions": [
+   {
+    "prompt": "The bodies of the fallen lie in the plain, and no one buries them.",
+    "answer": "τὰ τῶν πεσόντων σώματα ἐν τῷ πεδίῳ κεῖται, καὶ οὐδεὶς αὐτὰ θάπτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῶν",
+     "πεσόντων",
+     "σώματα",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "κεῖται",
+     "καί",
+     "οὐδείς",
+     "αὐτά",
+     "θάπτει"
+    ]
+   },
+   {
+    "prompt": "I admire those who are willing to die on behalf of freedom.",
+    "answer": "ἄγαμαι τοὺς ὑπὲρ τῆς ἐλευθερίας ἀποθνῄσκειν ἐθέλοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγαμαι",
+     "τούς",
+     "ὑπέρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἀποθνῄσκειν",
+     "ἐθέλοντας"
+    ]
+   },
+   {
+    "prompt": "The shield hangs upon the wall of my father's house.",
+    "answer": "ἡ ἀσπὶς ἀπὸ τοῦ τοίχου τῆς τοῦ πατρὸς οἰκίας κρέμαται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀσπίς",
+     "ἀπό",
+     "τοῦ",
+     "τοίχου",
+     "τῆς",
+     "πατρός",
+     "οἰκίας",
+     "κρέμαται"
+    ]
+   },
+   {
+    "prompt": "The old men sit in the market and say that the city is in danger.",
+    "answer": "οἱ γέροντες ἐν τῇ ἀγορᾷ ἧνται καὶ λέγουσιν ὅτι ἡ πόλις ἐν κινδύνῳ ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἧνται",
+     "καί",
+     "λέγουσιν",
+     "ὅτι",
+     "ἡ",
+     "πόλις",
+     "κινδύνῳ",
+     "ἐστίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-723-first-or-simple-class-present-system-t12",
+  "sectionId": "sm-723-first-or-simple-class-present-system",
+  "questions": [
+   {
+    "prompt": "It is necessary for the young to obey those who understand the laws.",
+    "answer": "χρὴ τοὺς νέους πείθεσθαι τοῖς τοὺς νόμους ἐπισταμένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρή",
+     "τούς",
+     "νέους",
+     "πείθεσθαι",
+     "τοῖς",
+     "νόμους",
+     "ἐπισταμένοις"
+    ]
+   },
+   {
+    "prompt": "Whenever the general gives the signal, the soldiers stand in order.",
+    "answer": "ὁπόταν ὁ στρατηγὸς τὸ σημεῖον διδῷ, οἱ στρατιῶται ἐν τάξει ἵστανται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "σημεῖον",
+     "διδῷ",
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τάξει",
+     "ἵστανται"
+    ]
+   },
+   {
+    "prompt": "You go into the temple and place a gift before the goddess.",
+    "answer": "εἰς τὸ ἱερὸν εἶ καὶ δῶρον πρὸ τῆς θεοῦ τίθης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τό",
+     "ἱερόν",
+     "εἶ",
+     "καί",
+     "δῶρον",
+     "πρό",
+     "τῆς",
+     "θεοῦ",
+     "τίθης"
+    ]
+   },
+   {
+    "prompt": "The things which are useful to the city are not always pleasant.",
+    "answer": "τὰ τῇ πόλει χρήσιμα ὄντα οὐκ ἀεὶ ἡδέα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τῇ",
+     "πόλει",
+     "χρήσιμα",
+     "ὄντα",
+     "οὐκ",
+     "ἀεί",
+     "ἡδέα",
+     "ἐστίν"
+    ]
+   }
+  ]
  }
 ]

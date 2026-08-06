@@ -366,5 +366,383 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t7",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The general's letters have been written with great care.",
+    "answer": "αἱ τοῦ στρατηγοῦ ἐπιστολαὶ μετὰ πολλῆς ἐπιμελείας γεγραμμέναι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἐπιστολαί",
+     "μετά",
+     "πολλῆς",
+     "ἐπιμελείας",
+     "γεγραμμέναι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "The enemy has been turned to flight by our cavalry.",
+    "answer": "οἱ πολέμιοι ὑπὸ τῶν ἡμετέρων ἱππέων εἰς φυγὴν τετραμμένοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ὑπό",
+     "τῶν",
+     "ἡμετέρων",
+     "ἱππέων",
+     "εἰς",
+     "φυγήν",
+     "τετραμμένοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "The messenger has been sent to the islands by the assembly.",
+    "answer": "ὁ ἄγγελος ὑπὸ τῆς ἐκκλησίας εἰς τὰς νήσους ἀπέσταλται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ὑπό",
+     "τῆς",
+     "ἐκκλησίας",
+     "εἰς",
+     "τάς",
+     "νήσους",
+     "ἀπέσταλται"
+    ]
+   },
+   {
+    "prompt": "The soldiers have been drawn up along the river.",
+    "answer": "οἱ στρατιῶται παρὰ τὸν ποταμὸν τεταγμένοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "παρά",
+     "τόν",
+     "ποταμόν",
+     "τεταγμένοι",
+     "εἰσίν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t8",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The bridge had been destroyed before the army crossed.",
+    "answer": "ἡ γέφυρα διέφθαρτο πρὶν τὸ στράτευμα διαβῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γέφυρα",
+     "διέφθαρτο",
+     "πρίν",
+     "τό",
+     "στράτευμα",
+     "διαβῆναι"
+    ]
+   },
+   {
+    "prompt": "The gates had been guarded by the citizens through the whole night.",
+    "answer": "αἱ πύλαι ὑπὸ τῶν πολιτῶν διὰ ὅλης τῆς νυκτὸς πεφυλαγμέναι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "πύλαι",
+     "ὑπό",
+     "τῶν",
+     "πολιτῶν",
+     "διά",
+     "ὅλης",
+     "τῆς",
+     "νυκτός",
+     "πεφυλαγμέναι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "The treasures had been hidden in the temple.",
+    "answer": "οἱ θησαυροὶ ἐν τῷ ἱερῷ κεκρυμμένοι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θησαυροί",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "κεκρυμμένοι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "The camp had been fortified before the enemy appeared.",
+    "answer": "τὸ στρατόπεδον ἐτετείχιστο πρὶν τοὺς πολεμίους φανῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "στρατόπεδον",
+     "ἐτετείχιστο",
+     "πρίν",
+     "τούς",
+     "πολεμίους",
+     "φανῆναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t9",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "The wise man possesses few things, but desires nothing.",
+    "answer": "ὁ σοφὸς ὀλίγα κέκτηται, οὐδενὸς δὲ ἐπιθυμεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "ὀλίγα",
+     "κέκτηται",
+     "οὐδενός",
+     "δέ",
+     "ἐπιθυμεῖ"
+    ]
+   },
+   {
+    "prompt": "Let us remember the dangers from which we have escaped.",
+    "answer": "μεμνώμεθα τῶν κινδύνων οὓς ἀποπεφεύγαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεμνώμεθα",
+     "τῶν",
+     "κινδύνων",
+     "οὕς",
+     "ἀποπεφεύγαμεν"
+    ]
+   },
+   {
+    "prompt": "I do not remember whether the messenger has been sent.",
+    "answer": "οὐ μέμνημαι εἰ ὁ ἄγγελος ἀπέσταλται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μέμνημαι",
+     "εἰ",
+     "ὁ",
+     "ἄγγελος",
+     "ἀπέσταλται"
+    ]
+   },
+   {
+    "prompt": "Those who possess wisdom have been called happy.",
+    "answer": "οἱ σοφίαν κεκτημένοι εὐδαίμονες κέκληνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σοφίαν",
+     "κεκτημένοι",
+     "εὐδαίμονες",
+     "κέκληνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t10",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "He says that the enemy has been defeated in the battle.",
+    "answer": "φησὶ τοὺς πολεμίους ἐν τῇ μάχῃ νενικῆσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φησί",
+     "τούς",
+     "πολεμίους",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "νενικῆσθαι"
+    ]
+   },
+   {
+    "prompt": "It seems that the truth has been concealed by the rulers.",
+    "answer": "δοκεῖ ἡ ἀλήθεια ὑπὸ τῶν ἀρχόντων κεκρύφθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκεῖ",
+     "ἡ",
+     "ἀλήθεια",
+     "ὑπό",
+     "τῶν",
+     "ἀρχόντων",
+     "κεκρύφθαι"
+    ]
+   },
+   {
+    "prompt": "We believe that the city has been betrayed by the guards.",
+    "answer": "νομίζομεν τὴν πόλιν ὑπὸ τῶν φυλάκων προδεδόσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζομεν",
+     "τήν",
+     "πόλιν",
+     "ὑπό",
+     "τῶν",
+     "φυλάκων",
+     "προδεδόσθαι"
+    ]
+   },
+   {
+    "prompt": "The general, having been persuaded by his friends, led away the army.",
+    "answer": "ὁ στρατηγὸς ὑπὸ τῶν φίλων πεπεισμένος τὸ στράτευμα ἀπήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ὑπό",
+     "τῶν",
+     "φίλων",
+     "πεπεισμένος",
+     "τό",
+     "στράτευμα",
+     "ἀπήγαγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t11",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "Let these things have been done for the sake of the city.",
+    "answer": "πεπράχθω ταῦτα ὑπὲρ τῆς πόλεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πεπράχθω",
+     "ταῦτα",
+     "ὑπέρ",
+     "τῆς",
+     "πόλεως"
+    ]
+   },
+   {
+    "prompt": "Stop, and do not be afraid of the danger!",
+    "answer": "πέπαυσο καὶ μὴ πεφόβησο τὸν κίνδυνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέπαυσο",
+     "καί",
+     "μή",
+     "πεφόβησο",
+     "τόν",
+     "κίνδυνον"
+    ]
+   },
+   {
+    "prompt": "Remember that we have escaped many dangers.",
+    "answer": "μέμνησο ὅτι πολλοὺς κινδύνους διαπεφεύγαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνησο",
+     "ὅτι",
+     "πολλούς",
+     "κινδύνους",
+     "διαπεφεύγαμεν"
+    ]
+   },
+   {
+    "prompt": "Let the phalanx have been drawn up on the hill.",
+    "answer": "ἡ φάλαγξ ἐπὶ τῷ λόφῳ τετάχθω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "φάλαγξ",
+     "ἐπί",
+     "τῷ",
+     "λόφῳ",
+     "τετάχθω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-706-perfect-and-pluperfect-middle-and-t12",
+  "sectionId": "sm-706-perfect-and-pluperfect-middle-and",
+  "questions": [
+   {
+    "prompt": "If the walls have been built, we shall be saved.",
+    "answer": "ἐὰν τὰ τείχη ᾠκοδομημένα ᾖ, σωθησόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τά",
+     "τείχη",
+     "ᾠκοδομημένα",
+     "ᾖ",
+     "σωθησόμεθα"
+    ]
+   },
+   {
+    "prompt": "He feared that the letter might have been badly written.",
+    "answer": "ἐφοβεῖτο μὴ ἡ ἐπιστολὴ κακῶς γεγραμμένη εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "μή",
+     "ἡ",
+     "ἐπιστολή",
+     "κακῶς",
+     "γεγραμμένη",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "Whoever has been left in the city, let him guard the walls.",
+    "answer": "ὅστις ἂν ἐν τῇ πόλει λελειμμένος ᾖ, φυλαττέτω τὰ τείχη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἄν",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "λελειμμένος",
+     "ᾖ",
+     "φυλαττέτω",
+     "τά",
+     "τείχη"
+    ]
+   },
+   {
+    "prompt": "They deliberated whether the treaty had been broken by the allies.",
+    "answer": "ἐβουλεύοντο εἰ αἱ σπονδαὶ ὑπὸ τῶν συμμάχων λελυμέναι εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλεύοντο",
+     "εἰ",
+     "αἱ",
+     "σπονδαί",
+     "ὑπό",
+     "τῶν",
+     "συμμάχων",
+     "λελυμέναι",
+     "εἶεν"
+    ]
+   }
+  ]
  }
 ]

@@ -814,5 +814,336 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-627-present-and-imperfect-active-and-middle-t13",
+  "sectionId": "sm-627-present-and-imperfect-active-and-middle",
+  "questions": [
+   {
+    "prompt": "While the priest was sacrificing to the gods, the people were praying.",
+    "answer": "θυόντος τοῦ ἱερέως τοῖς θεοῖς ὁ δῆμος ηὔχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θυόντος",
+     "τοῦ",
+     "ἱερέως",
+     "τοῖς",
+     "θεοῖς",
+     "ὁ",
+     "δῆμος",
+     "ηὔχετο"
+    ]
+   },
+   {
+    "prompt": "The judge honors those who tell the truth.",
+    "answer": "ὁ δικαστὴς τιμᾷ τοὺς τὰ ἀληθῆ λέγοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστὴς",
+     "τιμᾷ",
+     "τοὺς",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγοντας"
+    ]
+   },
+   {
+    "prompt": "The old men were seizing the weapons and hastening toward the gates.",
+    "answer": "οἱ γέροντες τὰ ὅπλα ἥρπαζον καὶ πρὸς τὰς πύλας ἔσπευδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γέροντες",
+     "τὰ",
+     "ὅπλα",
+     "ἥρπαζον",
+     "καὶ",
+     "πρὸς",
+     "τὰς",
+     "πύλας",
+     "ἔσπευδον"
+    ]
+   },
+   {
+    "prompt": "We do not fear death, for we trust the gods.",
+    "answer": "τὸν θάνατον οὐ φοβούμεθα· τοῖς γὰρ θεοῖς πιστεύομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "θάνατον",
+     "οὐ",
+     "φοβούμεθα",
+     "τοῖς",
+     "γὰρ",
+     "θεοῖς",
+     "πιστεύομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-627-present-and-imperfect-active-and-middle-t14",
+  "sectionId": "sm-627-present-and-imperfect-active-and-middle",
+  "questions": [
+   {
+    "prompt": "The city was being ruled by unjust men.",
+    "answer": "ἡ πόλις ὑπὸ ἀνδρῶν ἀδίκων ἤρχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ὑπὸ",
+     "ἀνδρῶν",
+     "ἀδίκων",
+     "ἤρχετο"
+    ]
+   },
+   {
+    "prompt": "The maidens were being taught music by the poet.",
+    "answer": "αἱ παρθένοι ὑπὸ τοῦ ποιητοῦ μουσικὴν ἐδιδάσκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "παρθένοι",
+     "ὑπὸ",
+     "τοῦ",
+     "ποιητοῦ",
+     "μουσικὴν",
+     "ἐδιδάσκοντο"
+    ]
+   },
+   {
+    "prompt": "Wisdom is honored more than wealth by the wise.",
+    "answer": "ἡ σοφία μᾶλλον ἢ ὁ πλοῦτος ὑπὸ τῶν σοφῶν τιμᾶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σοφία",
+     "μᾶλλον",
+     "ἢ",
+     "ὁ",
+     "πλοῦτος",
+     "ὑπὸ",
+     "τῶν",
+     "σοφῶν",
+     "τιμᾶται"
+    ]
+   },
+   {
+    "prompt": "The generals were deliberating about the war throughout the night.",
+    "answer": "οἱ στρατηγοὶ περὶ τοῦ πολέμου διὰ τῆς νυκτὸς ἐβουλεύοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατηγοὶ",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "διὰ",
+     "τῆς",
+     "νυκτὸς",
+     "ἐβουλεύοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-627-present-and-imperfect-active-and-middle-t15",
+  "sectionId": "sm-627-present-and-imperfect-active-and-middle",
+  "questions": [
+   {
+    "prompt": "Those who guard the city are worthy of honor.",
+    "answer": "οἱ τὴν πόλιν φυλάττοντες τιμῆς ἄξιοί εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὴν",
+     "πόλιν",
+     "φυλάττοντες",
+     "τιμῆς",
+     "ἄξιοί",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "The hunter was pursuing the deer through the forest.",
+    "answer": "ὁ κυνηγέτης τὴν ἔλαφον διὰ τῆς ὕλης ἐδίωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κυνηγέτης",
+     "τὴν",
+     "ἔλαφον",
+     "διὰ",
+     "τῆς",
+     "ὕλης",
+     "ἐδίωκεν"
+    ]
+   },
+   {
+    "prompt": "Since the enemy were approaching, the citizens were arming themselves.",
+    "answer": "τῶν πολεμίων προσιόντων οἱ πολῖται ὡπλίζοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "προσιόντων",
+     "οἱ",
+     "πολῖται",
+     "ὡπλίζοντο"
+    ]
+   },
+   {
+    "prompt": "The child obeys his father and loves his mother.",
+    "answer": "ὁ παῖς τῷ πατρὶ πείθεται καὶ τὴν μητέρα φιλεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "τῷ",
+     "πατρὶ",
+     "πείθεται",
+     "καὶ",
+     "τὴν",
+     "μητέρα",
+     "φιλεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-627-present-and-imperfect-active-and-middle-t16",
+  "sectionId": "sm-627-present-and-imperfect-active-and-middle",
+  "questions": [
+   {
+    "prompt": "The farmers were rejoicing because the vines were bearing much fruit.",
+    "answer": "οἱ γεωργοὶ ἔχαιρον ὅτι αἱ ἄμπελοι πολὺν καρπὸν ἔφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γεωργοὶ",
+     "ἔχαιρον",
+     "ὅτι",
+     "αἱ",
+     "ἄμπελοι",
+     "πολὺν",
+     "καρπὸν",
+     "ἔφερον"
+    ]
+   },
+   {
+    "prompt": "The tyrant was being hated by all the citizens.",
+    "answer": "ὁ τύραννος ὑπὸ πάντων τῶν πολιτῶν ἐμισεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "ὑπὸ",
+     "πάντων",
+     "τῶν",
+     "πολιτῶν",
+     "ἐμισεῖτο"
+    ]
+   },
+   {
+    "prompt": "The messenger announces that the army is marching against the city.",
+    "answer": "ὁ ἄγγελος ἀγγέλλει ὅτι ὁ στρατὸς ἐπὶ τὴν πόλιν πορεύεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἀγγέλλει",
+     "ὅτι",
+     "στρατὸς",
+     "ἐπὶ",
+     "τὴν",
+     "πόλιν",
+     "πορεύεται"
+    ]
+   },
+   {
+    "prompt": "The women were mourning the dead throughout the whole day.",
+    "answer": "αἱ γυναῖκες τοὺς τεθνεῶτας διὰ ὅλης τῆς ἡμέρας ἐπένθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "τοὺς",
+     "τεθνεῶτας",
+     "διὰ",
+     "ὅλης",
+     "τῆς",
+     "ἡμέρας",
+     "ἐπένθουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-627-present-and-imperfect-active-and-middle-t17",
+  "sectionId": "sm-627-present-and-imperfect-active-and-middle",
+  "questions": [
+   {
+    "prompt": "While the king was ruling, the citizens were enjoying freedom.",
+    "answer": "τοῦ βασιλέως ἄρχοντος οἱ πολῖται τῇ ἐλευθερίᾳ ἐχρῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "βασιλέως",
+     "ἄρχοντος",
+     "οἱ",
+     "πολῖται",
+     "τῇ",
+     "ἐλευθερίᾳ",
+     "ἐχρῶντο"
+    ]
+   },
+   {
+    "prompt": "The soldiers stationed on the wall were hurling stones at the enemy.",
+    "answer": "οἱ ἐπὶ τῷ τείχει τεταγμένοι στρατιῶται λίθους ἐπὶ τοὺς πολεμίους ἔβαλλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐπὶ",
+     "τῷ",
+     "τείχει",
+     "τεταγμένοι",
+     "στρατιῶται",
+     "λίθους",
+     "τοὺς",
+     "πολεμίους",
+     "ἔβαλλον"
+    ]
+   },
+   {
+    "prompt": "The horsemen were driving the cattle across the plain.",
+    "answer": "οἱ ἱππεῖς τοὺς βοῦς διὰ τοῦ πεδίου ἤλαυνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἱππεῖς",
+     "τοὺς",
+     "βοῦς",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἤλαυνον"
+    ]
+   },
+   {
+    "prompt": "The sick man was being cared for by his friends.",
+    "answer": "ὁ κάμνων ὑπὸ τῶν φίλων ἐθεραπεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κάμνων",
+     "ὑπὸ",
+     "τῶν",
+     "φίλων",
+     "ἐθεραπεύετο"
+    ]
+   }
+  ]
  }
 ]

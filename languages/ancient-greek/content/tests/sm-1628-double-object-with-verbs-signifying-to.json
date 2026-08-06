@@ -388,5 +388,406 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t7",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The general asked the citizens for money, so that he might feed the soldiers.",
+    "answer": "ὁ στρατηγὸς τοὺς πολίτας χρήματα ᾔτησεν, ἵνα τοὺς στρατιώτας τρέφοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "πολίτας",
+     "χρήματα",
+     "ᾔτησεν",
+     "ἵνα",
+     "στρατιώτας",
+     "τρέφοι"
+    ]
+   },
+   {
+    "prompt": "I want to ask you this, whether you saw the messengers.",
+    "answer": "ἐθέλω σε τοῦτο ἐρωτῆσαι, εἰ τοὺς ἀγγέλους εἶδες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθέλω",
+     "σε",
+     "τοῦτο",
+     "ἐρωτῆσαι",
+     "εἰ",
+     "τοὺς",
+     "ἀγγέλους",
+     "εἶδες"
+    ]
+   },
+   {
+    "prompt": "The envoys were demanding silver of the islanders, threatening war.",
+    "answer": "οἱ πρέσβεις τοὺς νησιώτας ἀργύριον ᾔτουν, πόλεμον ἀπειλοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "τοὺς",
+     "νησιώτας",
+     "ἀργύριον",
+     "ᾔτουν",
+     "πόλεμον",
+     "ἀπειλοῦντες"
+    ]
+   },
+   {
+    "prompt": "That is not what I am asking you, but whether the walls still stand.",
+    "answer": "οὐ τοῦτο ἐρωτῶ σε, ἀλλὰ εἰ τὰ τείχη ἔτι ἕστηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "τοῦτο",
+     "ἐρωτῶ",
+     "σε",
+     "ἀλλὰ",
+     "εἰ",
+     "τὰ",
+     "τείχη",
+     "ἔτι",
+     "ἕστηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t8",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The tyrant deprived the wealthy of their property.",
+    "answer": "ὁ τύραννος τοὺς πλουσίους τὴν οὐσίαν ἀπεστέρησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τοὺς",
+     "πλουσίους",
+     "τὴν",
+     "οὐσίαν",
+     "ἀπεστέρησεν"
+    ]
+   },
+   {
+    "prompt": "War takes away from mortals many good things.",
+    "answer": "ὁ πόλεμος τοὺς θνητοὺς πολλὰ ἀγαθὰ ἀφαιρεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πόλεμος",
+     "τοὺς",
+     "θνητοὺς",
+     "πολλὰ",
+     "ἀγαθὰ",
+     "ἀφαιρεῖται"
+    ]
+   },
+   {
+    "prompt": "Do not deprive the orphans of the inheritance which their father left.",
+    "answer": "μὴ τοὺς ὀρφανοὺς ἀποστερήσῃς τὸν κλῆρον ὃν ὁ πατὴρ κατέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "τοὺς",
+     "ὀρφανοὺς",
+     "ἀποστερήσῃς",
+     "τὸν",
+     "κλῆρον",
+     "ὃν",
+     "ὁ",
+     "πατὴρ",
+     "κατέλιπεν"
+    ]
+   },
+   {
+    "prompt": "The enemy stripped the fallen of their arms.",
+    "answer": "οἱ πολέμιοι τοὺς πεπτωκότας τὰ ὅπλα ἀφείλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τοὺς",
+     "πεπτωκότας",
+     "τὰ",
+     "ὅπλα",
+     "ἀφείλοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t9",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "I could not persuade the jurors of this, that I was absent.",
+    "answer": "οὐκ ἐδυνάμην τοὺς δικαστὰς τοῦτο πεῖσαι, ὅτι ἀπῆν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐδυνάμην",
+     "τοὺς",
+     "δικαστὰς",
+     "τοῦτο",
+     "πεῖσαι",
+     "ὅτι",
+     "ἀπῆν"
+    ]
+   },
+   {
+    "prompt": "Remind the young men of the courage of their ancestors.",
+    "answer": "ἀνάμνησον τοὺς νεανίας τὴν τῶν προγόνων ἀνδρείαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνάμνησον",
+     "τοὺς",
+     "νεανίας",
+     "τὴν",
+     "τῶν",
+     "προγόνων",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "The orator reminded the people of the ancient laws.",
+    "answer": "ὁ ῥήτωρ τὸν δῆμον ἀνέμνησε τοὺς παλαιοὺς νόμους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "τὸν",
+     "δῆμον",
+     "ἀνέμνησε",
+     "τοὺς",
+     "παλαιοὺς",
+     "νόμους"
+    ]
+   },
+   {
+    "prompt": "Persuade the assembly of this, that peace is better than war.",
+    "answer": "πεῖσον τὴν ἐκκλησίαν τοῦτο, ὅτι ἡ εἰρήνη ἀμείνων ἐστὶ τοῦ πολέμου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πεῖσον",
+     "τὴν",
+     "ἐκκλησίαν",
+     "τοῦτο",
+     "ὅτι",
+     "ἡ",
+     "εἰρήνη",
+     "ἀμείνων",
+     "ἐστὶ",
+     "τοῦ",
+     "πολέμου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t10",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The sophist taught the youths many clever things for pay.",
+    "answer": "ὁ σοφιστὴς τοὺς νεανίσκους πολλὰ σοφὰ ἐπὶ μισθῷ ἐδίδαξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφιστὴς",
+     "τοὺς",
+     "νεανίσκους",
+     "πολλὰ",
+     "σοφὰ",
+     "ἐπὶ",
+     "μισθῷ",
+     "ἐδίδαξεν"
+    ]
+   },
+   {
+    "prompt": "Who taught you this art, which you practice so beautifully?",
+    "answer": "τίς σε ταύτην τὴν τέχνην ἐδίδαξεν, ἣν οὕτω καλῶς ἀσκεῖς;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "σε",
+     "ταύτην",
+     "τὴν",
+     "τέχνην",
+     "ἐδίδαξεν",
+     "ἣν",
+     "οὕτω",
+     "καλῶς",
+     "ἀσκεῖς"
+    ]
+   },
+   {
+    "prompt": "The slave was concealing from his master the flight of the prisoners.",
+    "answer": "ὁ δοῦλος τὸν δεσπότην ἔκρυπτε τὴν τῶν αἰχμαλώτων φυγήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "τὸν",
+     "δεσπότην",
+     "ἔκρυπτε",
+     "τὴν",
+     "τῶν",
+     "αἰχμαλώτων",
+     "φυγήν"
+    ]
+   },
+   {
+    "prompt": "Conceal from the children the misfortune that has befallen the city.",
+    "answer": "κρύπτε τοὺς παῖδας τὴν συμφορὰν τὴν τῇ πόλει συμβᾶσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κρύπτε",
+     "τοὺς",
+     "παῖδας",
+     "τὴν",
+     "συμφορὰν",
+     "τῇ",
+     "πόλει",
+     "συμβᾶσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t11",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The king clothed the suppliant in a purple cloak.",
+    "answer": "ὁ βασιλεὺς τὸν ἱκέτην ἁλουργὸν ἱμάτιον ἠμφίεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τὸν",
+     "ἱκέτην",
+     "ἁλουργὸν",
+     "ἱμάτιον",
+     "ἠμφίεσεν"
+    ]
+   },
+   {
+    "prompt": "Apollo himself strips me of my sacred robe.",
+    "answer": "αὐτὸς ὁ Ἀπόλλων ἐμὲ τὴν ἱερὰν ἐσθῆτα ἐκδύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτὸς",
+     "ὁ",
+     "Ἀπόλλων",
+     "ἐμὲ",
+     "τὴν",
+     "ἱερὰν",
+     "ἐσθῆτα",
+     "ἐκδύει"
+    ]
+   },
+   {
+    "prompt": "The mother put a fine tunic on her son.",
+    "answer": "ἡ μήτηρ τὸν υἱὸν καλὸν χιτῶνα ἐνέδυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "τὸν",
+     "υἱὸν",
+     "καλὸν",
+     "χιτῶνα",
+     "ἐνέδυσεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers stripped the corpses of their breastplates.",
+    "answer": "οἱ στρατιῶται τοὺς νεκροὺς τοὺς θώρακας ἐξέδυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τοὺς",
+     "νεκροὺς",
+     "θώρακας",
+     "ἐξέδυσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-t12",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "The tax collectors exacted a great tribute of the farmers.",
+    "answer": "οἱ τελῶναι τοὺς γεωργοὺς πολὺν φόρον ἐπράξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τελῶναι",
+     "τοὺς",
+     "γεωργοὺς",
+     "πολὺν",
+     "φόρον",
+     "ἐπράξαντο"
+    ]
+   },
+   {
+    "prompt": "I never exacted pay of any of my companions.",
+    "answer": "οὐδένα πώποτε τῶν ἑταίρων μισθὸν ἐπραξάμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδένα",
+     "πώποτε",
+     "τῶν",
+     "ἑταίρων",
+     "μισθὸν",
+     "ἐπραξάμην"
+    ]
+   },
+   {
+    "prompt": "Ask the god this, whether we ought to sail to Sicily.",
+    "answer": "ἐροῦ τὸν θεὸν τοῦτο, εἰ χρὴ εἰς Σικελίαν πλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐροῦ",
+     "τὸν",
+     "θεὸν",
+     "τοῦτο",
+     "εἰ",
+     "χρὴ",
+     "εἰς",
+     "Σικελίαν",
+     "πλεῖν"
+    ]
+   },
+   {
+    "prompt": "The admiral demanded hostages of the conquered, and led the army home.",
+    "answer": "ὁ ναύαρχος τοὺς νενικημένους ὁμήρους ᾔτησε καὶ τὸ στράτευμα οἴκαδε ἀπήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ναύαρχος",
+     "τοὺς",
+     "νενικημένους",
+     "ὁμήρους",
+     "ᾔτησε",
+     "καὶ",
+     "τὸ",
+     "στράτευμα",
+     "οἴκαδε",
+     "ἀπήγαγεν"
+    ]
+   }
+  ]
  }
 ]

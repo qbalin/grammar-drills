@@ -2061,5 +2061,159 @@
    "shortTest": 0
   },
   "unverifiedForms": {}
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 18,
+  "rawQuestions": 24,
+  "keptQuestions": 24,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἐπαύλεις": 1,
+   "κίχρησιν": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 19,
+  "rawQuestions": 36,
+  "keptQuestions": 36,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "κυνηγέτης": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 19,
+  "rawQuestions": 44,
+  "keptQuestions": 44,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "κεκτησόμεθα": 2,
+   "λάφυρα": 1,
+   "ἄγγελμα": 1,
+   "πεπαυσόμεθα": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 24,
+  "rawQuestions": 24,
+  "keptQuestions": 24,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἁλουργὸν": 1,
+   "ἐνέδυσεν": 1,
+   "τελῶναι": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 3,
+  "calls": 27,
+  "rawQuestions": 24,
+  "keptQuestions": 24,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ᾄσμασι": 1,
+   "λαφύρων": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 27,
+  "rawQuestions": 48,
+  "keptQuestions": 46,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 2,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἐμπορεύῃ": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 25,
+  "rawQuestions": 48,
+  "keptQuestions": 48,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 0,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "ἠγγέλκει": 1,
+   "ἐπεπιστεύκη": 1,
+   "προέδωκεν": 1,
+   "δεδίωχεν": 1,
+   "ἀποπεφεύγαμεν": 1,
+   "πεπράχθω": 1,
+   "πεφόβησο": 1
+  }
+ },
+ {
+  "pack": "ancient-greek",
+  "topics": 4,
+  "calls": 25,
+  "rawQuestions": 48,
+  "keptQuestions": 47,
+  "rejected": {
+   "noPrompt": 0,
+   "noVocab": 0,
+   "tooManyMisses": 0,
+   "duplicate": 1,
+   "shortTest": 0
+  },
+  "unverifiedForms": {
+   "στρωννύασιν": 1,
+   "ἐκάθευδεν": 1,
+   "ὀμοσθέντος": 1,
+   "κεραννύτωσαν": 1,
+   "δρομεὺς": 1,
+   "ἐκάθευδον": 1
+  }
  }
 ]

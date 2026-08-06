@@ -400,5 +400,433 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t7",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "You seek glory, but I seek safety for the citizens.",
+    "answer": "σὺ μὲν δόξαν ζητεῖς, ἐγὼ δὲ τοῖς πολίταις ἀσφάλειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "μὲν",
+     "δόξαν",
+     "ζητεῖς",
+     "ἐγὼ",
+     "δὲ",
+     "τοῖς",
+     "πολίταις",
+     "ἀσφάλειαν"
+    ]
+   },
+   {
+    "prompt": "Since you are unwilling to lead, I myself will lead the army.",
+    "answer": "ἐπεὶ σὺ οὐκ ἐθέλεις ἡγεῖσθαι, ἐγὼ αὐτὸς τοῦ στρατεύματος ἡγήσομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "σὺ",
+     "οὐκ",
+     "ἐθέλεις",
+     "ἡγεῖσθαι",
+     "ἐγὼ",
+     "αὐτὸς",
+     "τοῦ",
+     "στρατεύματος",
+     "ἡγήσομαι"
+    ]
+   },
+   {
+    "prompt": "We honor the gods, but you honor only money.",
+    "answer": "ἡμεῖς μὲν τοὺς θεοὺς τιμῶμεν, ὑμεῖς δὲ μόνον τὰ χρήματα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμεῖς",
+     "μὲν",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῶμεν",
+     "ὑμεῖς",
+     "δὲ",
+     "μόνον",
+     "τὰ",
+     "χρήματα"
+    ]
+   },
+   {
+    "prompt": "You fear death, but I fear disgrace.",
+    "answer": "σὺ μὲν τὸν θάνατον φοβῇ, ἐγὼ δὲ τὴν αἰσχύνην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "μὲν",
+     "τὸν",
+     "θάνατον",
+     "φοβῇ",
+     "ἐγὼ",
+     "δὲ",
+     "τὴν",
+     "αἰσχύνην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t8",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "The messenger came from me to the general with the letters.",
+    "answer": "ὁ ἄγγελος παρὰ ἐμοῦ πρὸς τὸν στρατηγὸν ἦλθε μετὰ τῶν ἐπιστολῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "παρὰ",
+     "ἐμοῦ",
+     "πρὸς",
+     "τὸν",
+     "στρατηγὸν",
+     "ἦλθε",
+     "μετὰ",
+     "τῶν",
+     "ἐπιστολῶν"
+    ]
+   },
+   {
+    "prompt": "They said many terrible things against me in the assembly.",
+    "answer": "πολλὰ καὶ δεινὰ κατὰ ἐμοῦ ἐν τῇ ἐκκλησίᾳ εἶπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "καὶ",
+     "δεινὰ",
+     "κατὰ",
+     "ἐμοῦ",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "εἶπον"
+    ]
+   },
+   {
+    "prompt": "Remain beside me and tell what you suffered in the battle.",
+    "answer": "μένε παρὰ ἐμοὶ καὶ λέγε ἃ ἔπαθες ἐν τῇ μάχῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μένε",
+     "παρὰ",
+     "ἐμοὶ",
+     "καὶ",
+     "λέγε",
+     "ἃ",
+     "ἔπαθες",
+     "ἐν",
+     "τῇ",
+     "μάχῃ"
+    ]
+   },
+   {
+    "prompt": "He received the gifts from me, but gave nothing to you.",
+    "answer": "τὰ δῶρα παρὰ ἐμοῦ ἔλαβεν, σοὶ δὲ οὐδὲν ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "δῶρα",
+     "παρὰ",
+     "ἐμοῦ",
+     "ἔλαβεν",
+     "σοὶ",
+     "δὲ",
+     "οὐδὲν",
+     "ἔδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t9",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "If you cannot bear the toil, then you flee to the mountains.",
+    "answer": "εἰ μὴ δύνασαι τὸν πόνον φέρειν, σὺ δὲ φεῦγε πρὸς τὰ ὄρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὴ",
+     "δύνασαι",
+     "τὸν",
+     "πόνον",
+     "φέρειν",
+     "σὺ",
+     "δὲ",
+     "φεῦγε",
+     "πρὸς",
+     "τὰ",
+     "ὄρη"
+    ]
+   },
+   {
+    "prompt": "You then lead the soldiers, since the general has departed.",
+    "answer": "σὺ δὲ ἡγοῦ τῶν στρατιωτῶν, ἐπεὶ ὁ στρατηγὸς ἀπελήλυθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "δὲ",
+     "ἡγοῦ",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐπεὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀπελήλυθεν"
+    ]
+   },
+   {
+    "prompt": "You yourself know from how great dangers the city was saved.",
+    "answer": "σὺ αὐτὸς οἶσθα ἐξ ὅσων κινδύνων ἡ πόλις ἐσώθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "αὐτὸς",
+     "οἶσθα",
+     "ἐξ",
+     "ὅσων",
+     "κινδύνων",
+     "ἡ",
+     "πόλις",
+     "ἐσώθη"
+    ]
+   },
+   {
+    "prompt": "You, come here and hear the things that have happened.",
+    "answer": "σὺ δὲ δεῦρο ἐλθὲ καὶ ἄκουσον τὰ γεγενημένα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "δὲ",
+     "δεῦρο",
+     "ἐλθὲ",
+     "καὶ",
+     "ἄκουσον",
+     "τὰ",
+     "γεγενημένα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t10",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "Those men, who were then absent, now blame the generals.",
+    "answer": "ἐκεῖνοι, οἳ τότε ἀπῆσαν, νῦν τοὺς στρατηγοὺς αἰτιῶνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνοι",
+     "οἳ",
+     "τότε",
+     "ἀπῆσαν",
+     "νῦν",
+     "τοὺς",
+     "στρατηγοὺς",
+     "αἰτιῶνται"
+    ]
+   },
+   {
+    "prompt": "This man here will announce to you everything that happened in Asia.",
+    "answer": "ὅδε ὑμῖν ἀγγελεῖ πάντα τὰ ἐν τῇ Ἀσίᾳ γενόμενα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "ὑμῖν",
+     "ἀγγελεῖ",
+     "πάντα",
+     "τὰ",
+     "ἐν",
+     "τῇ",
+     "Ἀσίᾳ",
+     "γενόμενα"
+    ]
+   },
+   {
+    "prompt": "That man, though far from the city, still rules the Aetolians.",
+    "answer": "ἐκεῖνος, καίπερ τῆς πόλεως πόρρω ὤν, ἔτι τῶν Αἰτωλῶν ἄρχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνος",
+     "καίπερ",
+     "τῆς",
+     "πόλεως",
+     "πόρρω",
+     "ὤν",
+     "ἔτι",
+     "τῶν",
+     "Αἰτωλῶν",
+     "ἄρχει"
+    ]
+   },
+   {
+    "prompt": "These men present will guard the walls, and those absent the harbor.",
+    "answer": "οἵδε μὲν τὰ τείχη φυλάξουσιν, ἐκεῖνοι δὲ τὸν λιμένα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἵδε",
+     "μὲν",
+     "τὰ",
+     "τείχη",
+     "φυλάξουσιν",
+     "ἐκεῖνοι",
+     "δὲ",
+     "τὸν",
+     "λιμένα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t11",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "Some praised the orator, but others laughed.",
+    "answer": "οἱ μὲν τὸν ῥήτορα ἐπῄνουν, οἱ δὲ ἐγέλων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "τὸν",
+     "ῥήτορα",
+     "ἐπῄνουν",
+     "δὲ",
+     "ἐγέλων"
+    ]
+   },
+   {
+    "prompt": "The one sailed to Cyprus, the other remained in Athens.",
+    "answer": "ὁ μὲν εἰς Κύπρον ἔπλευσεν, ὁ δὲ ἐν ταῖς Ἀθήναις ἔμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὲν",
+     "εἰς",
+     "Κύπρον",
+     "ἔπλευσεν",
+     "δὲ",
+     "ἐν",
+     "ταῖς",
+     "Ἀθήναις",
+     "ἔμεινεν"
+    ]
+   },
+   {
+    "prompt": "He sent the soldiers into danger, but he himself stayed in safety.",
+    "answer": "τοὺς στρατιώτας εἰς κίνδυνον ἔπεμψεν, αὐτὸς δὲ ἐν ἀσφαλείᾳ ἔμενεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "στρατιώτας",
+     "εἰς",
+     "κίνδυνον",
+     "ἔπεμψεν",
+     "αὐτὸς",
+     "δὲ",
+     "ἐν",
+     "ἀσφαλείᾳ",
+     "ἔμενεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers fled, but the general himself withstood the enemy.",
+    "answer": "οἱ μὲν στρατιῶται ἔφυγον, ὁ δὲ στρατηγὸς αὐτὸς τοῖς πολεμίοις ὑπέστη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "στρατιῶται",
+     "ἔφυγον",
+     "ὁ",
+     "δὲ",
+     "στρατηγὸς",
+     "αὐτὸς",
+     "τοῖς",
+     "πολεμίοις",
+     "ὑπέστη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1190-syntax-of-pronouns-t12",
+  "sectionId": "sm-1190-syntax-of-pronouns",
+  "questions": [
+   {
+    "prompt": "You trade for the sake of profit, but we sail for the sake of freedom.",
+    "answer": "σὺ μὲν κέρδους ἕνεκα ἐμπορεύῃ, ἡμεῖς δὲ ἐλευθερίας ἕνεκα πλέομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "μὲν",
+     "κέρδους",
+     "ἕνεκα",
+     "ἐμπορεύῃ",
+     "ἡμεῖς",
+     "δὲ",
+     "ἐλευθερίας",
+     "πλέομεν"
+    ]
+   },
+   {
+    "prompt": "Concerning you the citizens think well, but concerning me badly.",
+    "answer": "περὶ σοῦ μὲν οἱ πολῖται εὖ φρονοῦσι, περὶ ἐμοῦ δὲ κακῶς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "σοῦ",
+     "μὲν",
+     "οἱ",
+     "πολῖται",
+     "εὖ",
+     "φρονοῦσι",
+     "ἐμοῦ",
+     "δὲ",
+     "κακῶς"
+    ]
+   },
+   {
+    "prompt": "This messenger will report to us the whole matter.",
+    "answer": "ὅδε ὁ ἄγγελος ἡμῖν τὸ πρᾶγμα ἅπαν ἀναφέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "ὁ",
+     "ἄγγελος",
+     "ἡμῖν",
+     "τὸ",
+     "πρᾶγμα",
+     "ἅπαν",
+     "ἀναφέρει"
+    ]
+   },
+   {
+    "prompt": "They enslaved the others, but honored him alone.",
+    "answer": "τοὺς μὲν ἄλλους ἐδούλωσαν, ἐκεῖνον δὲ μόνον ἐτίμησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "μὲν",
+     "ἄλλους",
+     "ἐδούλωσαν",
+     "ἐκεῖνον",
+     "δὲ",
+     "μόνον",
+     "ἐτίμησαν"
+    ]
+   }
+  ]
  }
 ]
