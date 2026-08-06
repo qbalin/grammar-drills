@@ -465,6 +465,11 @@ span.status__title {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+  /* The double tap belongs to *inspect this word*, so the browser may not read
+     it as zoom-here first. Without this Android waits out the double-tap delay
+     and then hands the gesture to its own text handling, which is where the
+     system dictionary card came from. */
+  touch-action: manipulation;
   cursor: pointer;
 }
 
@@ -546,9 +551,9 @@ span.status__title {
 
 /* Fixed width so the label does not shift when the triangle turns. */
 .crib__caret {
-  width: 1.2rem;
+  width: 1.5rem;
   flex: none;
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   line-height: 1;
   text-align: center;
   color: var(--text-dim);
@@ -593,10 +598,12 @@ span.status__title {
   margin: 0 -0.35rem;
   border-bottom: 1px solid var(--line);
   /* The row answers to a hold, so it must not answer to the selection and the
-     callout menu a long press would otherwise raise on top of it. */
+     callout menu a long press would otherwise raise on top of it — nor to the
+     double-tap zoom that would otherwise shadow *inspect this word*. */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+  touch-action: manipulation;
   cursor: pointer;
 }
 
@@ -1251,9 +1258,9 @@ span.status__title {
 /* Same treatment as the crib's caret: the row is the target, and the triangle
    should look like it belongs to something you can hit. */
 .row__chev {
-  width: 1.2rem;
+  width: 1.5rem;
   flex: none;
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   line-height: 1;
   text-align: center;
   color: var(--text-dim);
