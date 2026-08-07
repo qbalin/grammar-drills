@@ -18,9 +18,6 @@ export default {
   /** A test needs at least this many surviving questions to be kept. */
   minQuestionsPerTest: 3,
 
-  /** How many dictionary misses one sentence may carry before it is dropped. */
-  allowUnverified: 2,
-
   /**
    * The frequency band the vocabulary hints are drawn from. Below 400 is the
    * function words the student already has. The ceiling is lower than Latin's
@@ -51,15 +48,19 @@ export default {
    * whitelisting on that account.
    *
    * What is absent is the elided spellings — δ’ for δέ, ἀλλ’ for ἀλλά, ὑπ’ for
-   * ὑπό — which no analyser lists and which the answer validator cannot strip:
-   * it removes ASCII apostrophes and Greek elision is set with U+2019. The
-   * prompt below asks for unelided forms so these should not arise at all;
-   * this is the net under that, in both spellings, and it whitelists nothing
-   * that is inflected.
+   * ὑπό — which no analyser lists. The prompt below asks for unelided forms so
+   * these should not arise at all; this is the net under that, and it
+   * whitelists nothing that is inflected.
+   *
+   * One spelling of the apostrophe is enough. It used to need both, because the
+   * validator stripped the ASCII one and Greek elision is set with U+2019, so
+   * whichever spelling a form arrived in decided whether the list could see it —
+   * and the tokenizer that reads a shipped answer strips both, which is how ἐφ’
+   * came to be counted as an unattested form twenty-four times. The checker in
+   * `scripts/lib/attestation.mjs` now registers each of these under its bare
+   * stem as well, so the entry matches however the apostrophe survived.
    */
   functionWords: [
-    "δ'", "τ'", "ἀλλ'", "οὐδ'", "μηδ'", "ἐπ'", "ἀπ'", "ὑπ'", "δι'", "καθ'",
-    "μεθ'", "παρ'", "ἀφ'", "ὑφ'", "ἐφ'", "κατ'", "μετ'", "ἀνθ'", "ταῦτ'",
     "δ’", "τ’", "ἀλλ’", "οὐδ’", "μηδ’", "ἐπ’", "ἀπ’", "ὑπ’", "δι’", "καθ’",
     "μεθ’", "παρ’", "ἀφ’", "ὑφ’", "ἐφ’", "κατ’", "μετ’", "ἀνθ’", "ταῦτ’",
   ],

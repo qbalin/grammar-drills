@@ -18,9 +18,6 @@ export default {
   /** A test needs at least this many surviving questions to be kept. */
   minQuestionsPerTest: 3,
 
-  /** How many dictionary misses one sentence may carry before it is dropped. */
-  allowUnverified: 2,
-
   /**
    * The frequency band the vocabulary hints are drawn from. Below 400 is the
    * function words the student already has; above 6000 is where a reference

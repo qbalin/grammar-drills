@@ -10,8 +10,10 @@
 // gen/config.mjs. Nothing about Latin is in this file.
 //
 // dictionary.db is incomplete, so a miss is not treated as proof of a bad
-// form: a sentence may carry up to --allow-unverified (default 2) unmatched
-// words, and every one is listed in a report at the end of the run.
+// form: a sentence may carry up to --allow-unverified distinct unmatched words
+// — defaulting to the pack's own profile.attestation.maxMissesPerQuestion, the
+// same bar the attestation gate holds shipped content to, and 0 for a pack that
+// declares none — and every one is listed in a report at the end of the run.
 //
 //   node --import tsx scripts/gen-tests.mjs [--pack languages/latin]
 //        [--fill] [--only-thin] [--target N] [--per M] [--sleep S] [topicId ...]
@@ -31,7 +33,8 @@ import {
 } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { compileFold, plainText } from "@lang-tutor/core";
+import { plainText, words } from "@lang-tutor/core";
+import { makeClassifier } from "./lib/attestation.mjs";
 import { loadProfile, packDir } from "./lib/pack.mjs";
 import { openReference } from "./lib/reference.mjs";
 import { TARGET_DEFAULTS, targetFor } from "./lib/target.mjs";
@@ -78,54 +81,35 @@ const MAX_CALLS = Number(
   opt("--max", Math.ceil(BIGGEST_TARGET / PER_CALL) + 1),
 );
 const SLEEP_MS = Number(opt("--sleep", 1500)); // pace calls to respect usage limits
-// How many dictionary misses one sentence may carry before it is dropped.
-const ALLOW_UNVERIFIED = Number(opt("--allow-unverified", config.allowUnverified));
+/*
+ * How many dictionary misses one sentence may carry before it is dropped.
+ *
+ * From the profile, not from gen/config, because it is the same number
+ * `attestation-report.mjs`'s E1 gate holds shipped content to. Two copies would
+ * let generation write what validation then refuses, or — the quieter failure —
+ * let generation refuse what validation would have accepted. A pack that
+ * declares nothing gets 0: a language added later has nothing to excuse yet.
+ */
+const ALLOW_UNVERIFIED = Number(
+  opt("--allow-unverified", profile.attestation?.maxMissesPerQuestion ?? 0),
+);
 const onlyTopics = args;
 
-// The pack's own fold, not a copy of it: the reference's form keys were written
-// with this fold, so a second implementation drifting from it would silently
-// turn every lookup below into a miss and reject correct sentences.
-const normalize = compileFold(profile.fold);
-
-/**
- * The pack's indeclinable function words, absent from the reference dictionary
- * (see its gen/config.mjs for why the list has to exist).
- */
-const FUNCTION_WORDS = new Set(config.functionWords.map(normalize));
-/** Every form the dictionary could not confirm, for the end-of-run report. */
-const unverified = new Map();
-
-/**
- * Classify one form: "ok" (confirmed, or a known indeclinable, or a
- * mid-sentence proper noun) or "unverified".
+/*
+ * The rule for "is this form real" comes from `scripts/lib/attestation.mjs`,
+ * not from a copy of it here. `attestation-report.mjs` asks the same question
+ * of what is already on disk, and the two verdicts have to be the same verdict:
+ * a checker stricter than this one condemns sentences this one was right to
+ * keep, and a laxer one waves through what this would have caught. It is the
+ * argument the fold below already makes, applied to the rest of the rule.
  *
  * The reference is authoritative when it answers, but neither backend is
- * complete — the dictionary is built around inflected forms and lacks 47 of
- * the commonest indeclinables outright; the pack's map stops at the frequency
- * ceiling it was built to — so treating a miss as proof of a bad form throws
- * away correct Latin. Misses are counted rather than fatal; `validate` caps
- * how many a single sentence may carry.
+ * complete, so a miss is not proof of a bad form — `validate` caps how many a
+ * single sentence may carry rather than dropping it on sight.
  */
-function classify(raw, firstWord) {
-  const w = raw.replace(/^[-]/, "").replace(/[.,;:!?"'()]/g, "").trim();
-  if (!w) return "ok";
-  const n = normalize(w);
-  if (FUNCTION_WORDS.has(n)) return "ok";
-  if (ref.attests(n)) return "ok";
-  // A mid-sentence capital is a proper noun; the first word is capitalised by
-  // position, so it earns no such pass. Exempting every capital would wave
-  // through the first word of every answer, which is the whole failure this
-  // guards against. A script with no letter case turns the rule off.
-  if (
-    config.properNounExemption === "mid-sentence-capital" &&
-    w !== w.toLowerCase() &&
-    normalize(w) !== normalize(firstWord ?? "")
-  ) {
-    return "ok";
-  }
-  unverified.set(w, (unverified.get(w) ?? 0) + 1);
-  return "unverified";
-}
+const { classify, fold } = makeClassifier({ profile, config, ref });
+/** Every form the dictionary could not confirm, for the end-of-run report. */
+const unverified = new Map();
 
 // Sample richer vocabulary (intermediate/advanced bands) to seed variety.
 // The printed headword, not the folded key: this goes into a prompt, and a
@@ -196,12 +180,38 @@ function validate(topicId, rawTest, index, stats, seenPrompts) {
     if (seenPrompts.has(promptKey(q.prompt))) { stats.rejected.duplicate++; continue; }
     const vocab = (q.vocab ?? []).flatMap((v) => String(v).split(/\s+/)).filter(Boolean);
     if (vocab.length === 0) { stats.rejected.noVocab++; continue; }
-    const firstWord = String(q.answer).trim().split(/\s+/)[0] ?? "";
+    /*
+     * Checked against the answer's own words, not against `vocab`.
+     *
+     * `vocab` is the model's account of what it wrote, and a model that invents
+     * a form has every reason to leave it off the list — so validating the
+     * account rather than the sentence let an unattested form through whenever
+     * the model simply did not mention it. `words()` is the same cut of a
+     * sentence the app makes when it builds the vocabulary crib, so what is
+     * checked here is exactly what a student is later shown.
+     *
+     * `vocab` is still what gets written: `build-web-content.mjs` drops it and
+     * the runtime re-derives from the answer, so it is a generation-time record
+     * and not worth reshaping here.
+     */
+    const answerWords = words(String(q.answer));
+    const firstWord = answerWords[0] ?? "";
     // A couple of dictionary misses in a sentence is normal — the reference is
     // incomplete. Many misses in one sentence is the signature of invented
     // Latin, so the item still goes.
-    const misses = vocab.filter((v) => classify(v, firstWord) === "unverified").length;
-    if (misses > ALLOW_UNVERIFIED) { stats.rejected.tooManyMisses++; continue; }
+    //
+    // Distinct forms, not tokens: a sentence that repeats one unconfirmed word
+    // is one thing unconfirmed, and charging it per occurrence would fail an
+    // asyndeton for being an asyndeton. This is what counting `vocab` always
+    // amounted to, since the model is asked for each *distinct* form.
+    const missed = new Set();
+    for (const w of answerWords) {
+      const { verdict, form } = classify(w, firstWord);
+      if (verdict === "ok") continue;
+      unverified.set(form, (unverified.get(form) ?? 0) + 1);
+      missed.add(fold(form));
+    }
+    if (missed.size > ALLOW_UNVERIFIED) { stats.rejected.tooManyMisses++; continue; }
     questions.push({ prompt: q.prompt, answer: q.answer, kind: config.kind, vocab });
   }
   // keep only well-formed tests
