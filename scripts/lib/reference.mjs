@@ -201,6 +201,7 @@ function packReference(dir, profile) {
 
     entriesFor: () => { throw new Error("entriesFor needs the dictionary backend"); },
     formsFor: () => { throw new Error("formsFor needs the dictionary backend"); },
+    spellingsOf: () => { throw new Error("spellingsOf needs the dictionary backend"); },
     lemmaEntries: () => { throw new Error("lemmaEntries needs the dictionary backend"); },
     inflectionEntries: () => { throw new Error("inflectionEntries needs the dictionary backend"); },
 
@@ -254,6 +255,7 @@ function dictionaryReference(ref, profile) {
     "select id, word, pos, data from entries where word_norm = ? and pos = ?",
   );
   const forms = dict.prepare("select form, tags from forms where entry_id = ?");
+  const spellings = dict.prepare("select distinct form from forms where form_norm = ?");
 
   return {
     source: "dictionary",
@@ -263,6 +265,20 @@ function dictionaryReference(ref, profile) {
 
     attests: (formNorm) => Boolean(attested.get(formNorm)),
     lemmaOf: (formNorm) => lemmaFor.get(formNorm)?.w,
+
+    /**
+     * Every distinct *shown* spelling filed under one folded key.
+     *
+     * The inverse of the fold, as far as one exists: `puella` folds from both
+     * `puella` and `puellā`, so this answers with both and the caller decides.
+     * One answer means the marks are recoverable and nothing had to be guessed;
+     * several means the sentence has to be read to know which.
+     *
+     * Dictionary-only on purpose, and this is the reason the macronizer sits on
+     * the same side of the line as `build-lemmas.mjs`: the pack's own
+     * `forms.txt.gz` is keyed by fold output and has thrown the marks away.
+     */
+    spellingsOf: (formNorm) => spellings.all(formNorm).map((r) => r.form),
 
     ranked: (maxRank) =>
       freq
