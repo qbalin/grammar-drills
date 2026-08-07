@@ -89,6 +89,10 @@ consistent and externally wrong passes all of them.
 
 ## Known state
 
+- **Latin quotes nothing yet, and the run that would change that was left
+  going.** Every Latin question on screen is generated. Greek's quoted half
+  shipped on 2026-08-07; Latin's was still building when the session ended.
+  Where it stands, and how to pick it up, is the next section.
 - Every one of the 114 topics is at or above its size-scaled target: 6 tests at
   the thinnest, 12 median, 63 at the largest. The coverage gap is closed.
 - The 63 is a merge, not a windfall: §124-132 was six separate topics under the
@@ -124,3 +128,49 @@ consistent and externally wrong passes all of them.
 - **Enclitics are looked through** now: `ēloquentiamque` resolves to
   `ēloquentia` via `profile.enclitics`, and only when the whole form resolves to
   nothing, so `neque` is still `neque`.
+
+## Picking the Latin quotations back up
+
+Left running on 2026-08-07 and unfinished. Nothing below is committed; the
+tree at that commit is clean and Latin is untouched.
+
+**Where it got to.** `scripts/build-quote-pool.mjs` was ~105 minutes into 18
+batched calls, filing 439 quotations under topics, choosing among closed macron
+candidates and writing English prompts. No failures. A detached watcher was left
+behind to finish the deterministic half when the pool lands: compose the tests,
+run every gate, run `verify-attribution.mjs`, rebuild the bundle. It writes
+`.latin-finish.log` (gitignored) and **commits and pushes nothing**.
+
+**First thing to do: read `.latin-finish.log`.** It says which of three
+happened.
+
+1. *It finished and everything passed.* `content/quotes.jsonl.gz` exists,
+   `content/tests/*.json` have `-q<n>` entries, `quote-stats.json` is written.
+   Read a dozen prompts against their answers, sign gate C9 above, update
+   `BASELINE.json`, and commit. The README's "built but not yet shipped"
+   paragraph has to change in the same commit — it is a claim about what is on
+   screen.
+2. *`verify-attribution.mjs` reported a contradiction.* **Do not ship it.** A
+   contradiction is either a real misattribution or one ancient author quoting
+   another — Augustine quotes Cicero at length and both are in
+   `reference/texts/` — and the two are told apart by reading the passage it
+   collided with, not by a threshold.
+3. *The builder exited with no artifact.* Nothing is recoverable: the script
+   writes only at the end. **Fix that before rerunning** — it should append and
+   resume the way `gen-tests.mjs` does, which is the difference between losing
+   twenty minutes and losing two hours.
+
+**What the run costs, so it can be judged before being repeated.** 18 calls,
+roughly 4–6 minutes each and slowing, against the ~1,700 that generated the
+existing Latin pack. Greek's half cost nothing at all.
+
+**What it is filtered to, and why the numbers look small.** Of 944 usable
+quotations, 439 survive: only those carrying *no* unattested form at all, and
+needing at most two macron decisions. That is deliberate. Latin sits at
+`maxUnattestedForms` 105/105 with no headroom, and the whole 944 would cost E2
+553 tokens — a raise bought by a feature rather than by the content needing it,
+which is the distinction `CLAUDE.md` draws between a budget and an excuse.
+
+**Do not** run `prune-tests.mjs --generated` as part of this. Displacing
+generated questions with quoted ones is a separate decision and has not been
+made.
