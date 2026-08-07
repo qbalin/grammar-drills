@@ -39,6 +39,54 @@ sentence that is impeccably attested and means something other than the prompt.
 |---|---|---|---|
 | — | *not yet signed off* | — | The automated gates C1–C7 pass on 6,557 questions. 2,532 of these were generated on 2026-07-29 across three backfill runs and have had no human read-through; the 4,025 that predate them were reviewed before the gates existed. This is now the largest unreviewed block in the pack and the most useful thing a next run could do. |
 
+## C9 — quoted question review
+
+A quoted question fails differently from a generated one. The Latin is not in
+doubt: it is what a classical author wrote, and `scripts/verify-attribution.mjs`
+checks a sample of it against `reference/texts/`, which is text nobody in this
+repo produced. What no gate can check is the two things wrapped around it —
+whether the English prompt is a fair and reachable target for that exact
+sentence, and whether the attribution is the right one.
+
+The second is the one that matters, and it is the reason this row exists.
+A sentence credited to the wrong author is a lie that every automated check in
+the tree passes, because every one of them is measuring self-consistency.
+
+Aim for ≥28 of 30, sampled across authors rather than across topics — the
+failure mode follows the citation parser, not the syllabus.
+
+| Date | Reviewer | Sample | Verdict |
+|---|---|---|---|
+| — | *not yet signed off* | — | The quotation pipeline is new. Nothing has been read by a person. |
+
+### What was already ruled out, so it is not tried again
+
+Bennett's back index — "INDEX OF THE SOURCES OF THE ILLUSTRATIVE EXAMPLES
+CITED IN THE SYNTAX" — was built, measured and abandoned on 2026-08-07. It
+parses cleanly (130 sections, 531 entries, 110 abbreviations once continuations
+are filed under the joint key the index cites them by), and a matcher on
+section-plus-opening-words with a bijection rule, an ordinal-monotonicity rule
+and a 50%-per-section floor attributed 424 of them, 80%, over 48 topics. Every
+filter engaged. It looked like a success and was not one.
+
+Corroboration against `reference/texts/` is what caught it. On Caesar, whose
+*de Bello Gallico* is present in full, 4 of 54 attributions matched verbatim,
+and an order-free check — all the distinctive words inside any 40-word window —
+still failed 38 of 65. Two cases say why:
+
+- `Orgetorīx Helvētiīs persuāsit`, filed under *B.G.* i, 2. Caesar wrote
+  `Orgetorix ... civitati persuasit`; the two words do not co-occur within 40
+  words anywhere in the work.
+- `oppidum prīmum Thessaliae venientibus ab Ēpīrō`, filed under *B.G.* iii, 80.
+  That is *de Bello Civili* 3.80.
+
+The index title is exact if read literally. It names what each illustration was
+*drawn from*; Bennett wrote the sentences, abridging and recasting. Attributing
+them would manufacture quotations. The general lesson is worth more than the
+particular one: a matcher's own filters cannot tell you its premise is wrong,
+because they measure self-consistency, and a source that is internally
+consistent and externally wrong passes all of them.
+
 ## Known state
 
 - Every one of the 114 topics is at or above its size-scaled target: 6 tests at

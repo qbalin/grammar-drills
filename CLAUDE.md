@@ -25,6 +25,8 @@ for the engine: `packages/core` must not learn a language.
 |---|---|
 | `profile.json` | the pack's contract — fold, families, thresholds, UI strings |
 | `content/` | **generated**, and what ships: `grammar.json`, `tests/*.json`, `lemmas.json.gz` + `forms.txt.gz` |
+| `content/quotes.jsonl.gz` | Latin only: quotations filed under topics, an input to `quote-tests.mjs` rather than something that ships |
+| `gen/sources.mjs` | Greek only: the citation abbreviations its grammar uses, expanded |
 | `grammar/parse.py` | builds `grammar.json` from a public source it downloads |
 | `gen/config.mjs` | what the question generator needs to know about this language |
 | `citations.mjs` | rewrites citations in `lemmas.json.gz`; needs the reference dictionary |
@@ -77,6 +79,14 @@ an excuse. Say which questions bought the increase in the commit message.
 
 **A pack that declares no `attestation` block is held to 0/0**, so a language
 added later inherits the strict rule by saying nothing.
+
+Quoted questions (`scripts/quote-tests.mjs`, ids `-q<n>`) are the case where the
+rule bites hardest and is right to. Real classical text is full of forms the
+shipped index does not attest, so the temptation to raise the budget is exactly
+the "unrelated red build" the rule forbids — the feature would be buying the
+raise, not the content. So the pipeline filters instead: a quotation ships only
+if it carries no unattested form at all, and the ones dropped for it are
+reported rather than argued with. Both packs' numbers were unmoved by it.
 
 ## The reference
 

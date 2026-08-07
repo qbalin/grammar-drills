@@ -649,6 +649,70 @@ the first word of every answer.
 The runtime never calls a model and needs no API key — it only reads the frozen
 JSON.
 
+## Sentences somebody wrote
+
+Some questions carry a `source`, and the grading screen credits it under the
+reference answer — `— Cicero, Paradoxa Stoicorum 1.15`. Those answers are not
+generated. They are quotations, and the field is present only where one is:
+a question with no `source` is one nobody can be credited for, which is still
+most of them.
+
+The two packs get theirs from different places, because the two books are not
+alike. **Smyth cites constantly**, and the Alpheios TEI keeps the three parts
+apart — the Greek in a `<quote lang="greek">`, the English in a `<gloss>`, and
+the locus in a `<bibl n="Xen. Anab. 1.2.3">` whose `n` is already Perseus's
+canonical citation. So `grammar/parse.py` lifts them before it flattens
+anything, and they arrive filed under the topic they illustrate, by the book's
+own hand. `languages/ancient-greek/gen/sources.mjs` turns the 86 abbreviations
+that occur into names a student can use.
+
+**Bennett cites nobody** in his body text. He has a back index that names a
+source for every syntax example, and it looked like the answer — it parses to
+130 sections and 531 entries, his own abbreviation table expands them, and a
+matcher on section-plus-opening-words attributes 80% of them. It is not the
+answer, and the check that says so is worth keeping: against
+`reference/texts/`, only 4 of 54 Caesar attributions matched verbatim, and a
+far weaker test — all the distinctive words inside any 40-word window — still
+failed 38 of 65. Bennett's `Orgetorīx Helvētiīs persuāsit` is filed under
+*B.G.* i, 2, where Caesar wrote `Orgetorix ... civitati persuasit`. The index
+title is exact if read literally: it indexes the sources of the *illustrative
+examples*, meaning what each was drawn from. Bennett wrote the sentences.
+Attributing them would manufacture quotations, so that route was measured and
+abandoned.
+
+Latin's real quotations come from the dictionary dump instead, where Wiktionary
+cites actual text with a `ref`. **That half is built but not yet shipped**: the
+pipeline below runs, and 439 quotations clear every filter, but
+`languages/latin/content/quotes.jsonl.gz` is not committed yet, so Latin's
+questions are all still generated. Greek's are the ones on screen today.
+
+```bash
+node --import tsx scripts/build-quote-pool.mjs --pack languages/latin \
+  --dump <kaikki.jsonl> --ref languages/latin/reference   # -> content/quotes.jsonl.gz
+node --import tsx scripts/quote-tests.mjs --pack languages/latin --from quotes
+node --import tsx scripts/quote-tests.mjs --pack languages/ancient-greek --from grammar
+```
+
+Only the first of those needs the 1.2 GB dump and the dictionary; it writes a
+committed artifact and everything downstream reads that. It is also the only
+step that calls a model, and what it asks for is narrow: which topics a
+quotation exemplifies, which of a *closed* set of spellings an ambiguous word
+takes, and an English rendering. The Latin is the quotation as printed —
+nothing here writes any.
+
+Two rules hold the whole thing up. **Nothing may move a gate**: a quotation is
+kept only if it carries no unattested form at all, because both packs sit at
+their `maxUnattestedForms` exactly and a raise bought by a feature rather than
+by the content needing it is what `CLAUDE.md` calls an excuse. And **an
+unmatchable quotation is dropped, never guessed at** — a sentence credited to
+the wrong author is a lie no gate can see, while a sentence credited to nobody
+is just a sentence.
+
+The macron cut that `scripts/lib/quotes.mjs` used to end at is no longer final:
+`scripts/lib/macronize.mjs` inverts the fold wherever the dictionary makes it
+unambiguous — one marked spelling under a folded key is a lookup, several is a
+choice, and a choice is one of the three things the model is asked for.
+
 ## Develop
 
 ```bash

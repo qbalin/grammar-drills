@@ -50,6 +50,32 @@ sentence that is impeccably attested and means something other than the prompt.
 |---|---|---|---|
 | 2026-07-29 | Claude (assisted build) | 8 of the first topic generated | **Not signed off — generation is still running.** The eight items of `sm-211-first-declension-stems-in-a` were read in full and all eight are correct Attic that exercises the stated point (νεανίαι, πολίτας, ἀγορᾷ, θάλατταν, θεᾶς, ταμίας, Πέρσης, κόρη). A sample of 8 out of a set that is not yet written is not gate C8. |
 
+## C9 — quoted question review
+
+1,109 questions in 290 tests (ids `-q<n>`) have an answer Smyth quoted from an
+author, taken out of the Alpheios TEI's `<cit>` before the parser flattens it,
+and credited from the `n` attribute of its `<bibl>` — which is already Perseus's
+canonical citation, so nothing here guessed at an expansion.
+
+The Greek is not what needs reading; `scripts/verify-attribution.mjs` confirmed
+542 of the 672 checkable against `reference/texts/` with **0 contradictions**,
+and 537 of those 542 were found in the *cited work* rather than merely somewhere
+in the author. What needs reading is the English. Smyth's glosses were written
+to sit inside a sentence of his own, and `quote-tests.mjs` only capitalises and
+stops them; a gloss that reads as a fragment on its own is not a fair prompt
+even though it is a correct translation.
+
+Also worth a reader's eye: the pipeline strips Smyth's marks of vowel quantity
+(`ἁμάξᾱς` → `ἁμάξας`), because they are his annotation and not what the author
+wrote, and only 10 of 4,302 sampled generated answers carry one. That decision
+is visible on screen and nowhere else.
+
+Aim for ≥28 of 30, sampled across authors.
+
+| Date | Reviewer | Sample | Verdict |
+|---|---|---|---|
+| — | *not yet signed off* | — | Machine-checked only: 0 contradictions against an independent corpus. No person has read a prompt. |
+
 ## Known state
 
 - **The question set is incomplete.** 78 of 485 topics have tests; generation is
