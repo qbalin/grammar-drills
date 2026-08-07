@@ -163,22 +163,31 @@ if (builtAt >= 0) {
 
 console.log(`\n  fold digest: ${profileHash(profile.fold)}`);
 
-// --- run the two reports ------------------------------------------------------
+// --- run the reports ----------------------------------------------------------
 
 const here = dirname(fileURLToPath(import.meta.url));
 const ALLOW_INCOMPLETE = argv.includes("--allow-incomplete");
 let reportsOk = true;
 if (!argv.includes("--profile-only")) {
-  for (const script of ["grammar-report.mjs", "coverage-report.mjs"]) {
+  for (const script of ["grammar-report.mjs", "coverage-report.mjs", "attestation-report.mjs"]) {
     // The flag is handed to the coverage report rather than used to ignore its
     // exit code: only it knows which of its gates are about how much has been
     // written and which are about whether it is right, and a draft is excused
     // the first kind alone. The grammar report gets no such licence — a
-    // syllabus is either sound or it is not.
+    // syllabus is either sound or it is not, and neither does the attestation
+    // report: a sentence made of words the pack cannot confirm does not get
+    // better by writing more sentences, which is the distinction the coverage
+    // report's own ABOUT_QUANTITY comment draws.
     const args = ["--import", "tsx", join(here, script), "--pack", dir];
     // Forwarded, or the coverage report answers C5 and C7 from the pack while
     // the gates above answered from the dictionary — one command, two
     // references, and no sign in the output that they differed.
+    //
+    // The attestation report takes it too, but only to split its misses into
+    // "the shipped index is thin" and "no reference has this word". Its gates
+    // are answered from the pack's own content either way: `dictionary.db` is
+    // uncommitted, and a gate that passes only where it happens to be present
+    // is not a gate.
     const refAt = argv.indexOf("--ref");
     if (refAt >= 0) args.push("--ref", argv[refAt + 1]);
     if (ALLOW_INCOMPLETE && script === "coverage-report.mjs") args.push("--allow-incomplete");
