@@ -202,6 +202,7 @@ function packReference(dir, profile) {
     entriesFor: () => { throw new Error("entriesFor needs the dictionary backend"); },
     formsFor: () => { throw new Error("formsFor needs the dictionary backend"); },
     lemmaEntries: () => { throw new Error("lemmaEntries needs the dictionary backend"); },
+    inflectionEntries: () => { throw new Error("inflectionEntries needs the dictionary backend"); },
 
     close() {},
   };
@@ -335,6 +336,40 @@ function dictionaryReference(ref, profile) {
         const senses = parseSenses(row.data);
         if (senses.length && senses.every(isInflection)) continue;
         yield row;
+      }
+    },
+
+    /**
+     * The other half: entries that are only a wordform, each with the lemma it
+     * says it is a form *of*.
+     *
+     * `lemmaEntries` drops these on the ground that they are reachable through
+     * the form table of the entry they point at, and for most of them that is
+     * true. For a participle it is not. Wiktionary files a Latin participle as
+     * its own entry with its own full declension, and the parent verb's table
+     * carries only the citation form: `inundō` lists `inundātus` and not one of
+     * the thirty-five other forms of it. So `captūrōs` — a form of `capiō`,
+     * rank 245 — was in no shipped index, and the pack told a student it was
+     * not a word.
+     *
+     * `form_of` is what makes the repair possible and also what bounds it:
+     * a reference whose senses do not carry it yields nothing here, which is
+     * the truthful answer rather than a guess. Greek's is analyser-built and
+     * has none, and it gets none of this.
+     *
+     * The `like` is a prefilter, not the test — it skips the JSON parse for the
+     * overwhelming majority of rows, and every survivor is still checked
+     * properly below.
+     */
+    *inflectionEntries() {
+      const rows = dict
+        .prepare("select id, word, pos, data from entries where data like '%\"form_of\"%'")
+        .iterate();
+      for (const row of rows) {
+        const senses = parseSenses(row.data);
+        if (!senses.length || !senses.every(isInflection)) continue;
+        const of = senses.find((s) => s.form_of)?.form_of;
+        if (of) yield { ...row, formOf: of };
       }
     },
 
