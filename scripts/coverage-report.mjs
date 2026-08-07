@@ -31,6 +31,7 @@ import {
   packDir,
   report,
 } from "./lib/pack.mjs";
+import { tally } from "./lib/quoted.mjs";
 import { openReference } from "./lib/reference.mjs";
 import { targetFor } from "./lib/target.mjs";
 
@@ -63,11 +64,11 @@ const config = existsSync(configPath)
   : {};
 const band = { min: 400, max: 6000, pos: [], ...(config.band ?? {}) };
 
-const perTopic = grammar.map((t) => {
-  const list = tests[t.id] ?? [];
-  const questions = list.reduce((n, x) => n + x.questions.length, 0);
-  return { topic: t, tests: list.length, questions, target: targetFor(t, profile) };
-});
+const perTopic = grammar.map((t) => ({
+  topic: t,
+  ...tally(tests[t.id] ?? []),
+  target: targetFor(t, profile),
+}));
 
 // --- C0: every test set belongs to a topic that exists -----------------------
 
@@ -242,6 +243,48 @@ if (!argv.includes("--json")) {
       `  ${f.label.padEnd(30)} ${String(s.topics).padStart(3)} topics  ` +
         `${String(tests_).padStart(4)} tests  ${String(s.questions).padStart(5)} questions  ` +
         `${(s.questions / Math.max(1, s.topics)).toFixed(1)} q/topic`,
+    );
+  }
+}
+
+// --- how much of this is quoted rather than generated ------------------------
+
+/*
+ * Reported, never gated.
+ *
+ * A share that starts near zero is not a threshold anybody can set honestly, and
+ * the repo's habit is to measure a thing before it enforces it — `probe-quotes`
+ * counted what attested quotations would be worth before a line of the pipeline
+ * that depends on the answer was written. This is the same move for the pipeline
+ * that came out of it.
+ *
+ * The last line is the one to act on. It is the work queue: the topics no book
+ * has managed to illustrate yet, and therefore the only honest answer to whether
+ * another source is worth parsing.
+ */
+if (!argv.includes("--json")) {
+  const quotedQuestions = perTopic.reduce((n, r) => n + r.quotedQuestions, 0);
+  if (!quotedQuestions) {
+    console.log(
+      "\nquoted questions: none yet — every sentence in this pack was generated.",
+    );
+  } else {
+    const sourced = perTopic.reduce((n, r) => n + r.sourced, 0);
+    const standsAlone = perTopic.filter(
+      (r) => r.quotedTests >= limits.minTestsPerTopic &&
+        r.quotedQuestions >= limits.minQuestionsPerTopic,
+    );
+    const untouched = perTopic.filter((r) => r.quotedQuestions === 0);
+    const pctQuoted = (quotedQuestions / allQuestions.length) * 100;
+    const pctSourced = (sourced / quotedQuestions) * 100;
+    console.log(
+      `\nquoted questions   ${quotedQuestions} of ${allQuestions.length} ` +
+        `(${pctQuoted.toFixed(1)}%)   carrying a source: ${sourced} ` +
+        `(${pctSourced.toFixed(0)}%)\n` +
+        `  topics that would clear ${limits.minTestsPerTopic}t/` +
+        `${limits.minQuestionsPerTopic}q on quoted questions alone: ` +
+        `${standsAlone.length} of ${perTopic.length}\n` +
+        `  topics with no quoted question at all: ${untouched.length}`,
     );
   }
 }
