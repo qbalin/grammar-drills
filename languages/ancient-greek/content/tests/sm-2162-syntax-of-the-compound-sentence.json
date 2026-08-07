@@ -429,5 +429,369 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2162-syntax-of-the-compound-sentence-t7",
+  "sectionId": "sm-2162-syntax-of-the-compound-sentence",
+  "questions": [
+   {
+    "prompt": "The soldiers seized the acropolis, and the citizens opened the gates.",
+    "answer": "οἱ στρατιῶται τὴν ἀκρόπολιν κατέλαβον, καὶ οἱ πολῖται τὰς πύλας ἀνέῳξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὴν",
+     "ἀκρόπολιν",
+     "κατέλαβον",
+     "καὶ",
+     "πολῖται",
+     "τὰς",
+     "πύλας",
+     "ἀνέῳξαν"
+    ]
+   },
+   {
+    "prompt": "Neither did the sailors provide grain, nor did the general lead out the army.",
+    "answer": "οὔτε οἱ ναῦται σῖτον παρεῖχον οὔτε ὁ στρατηγὸς τὸ στράτευμα ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "οἱ",
+     "ναῦται",
+     "σῖτον",
+     "παρεῖχον",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "Both the horsemen guarded the camp and the hoplites fortified the wall.",
+    "answer": "οἵ τε ἱππεῖς τὸ στρατόπεδον ἐφύλαττον καὶ οἱ ὁπλῖται τὸ τεῖχος ὠχύρουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἵ",
+     "τε",
+     "ἱππεῖς",
+     "τὸ",
+     "στρατόπεδον",
+     "ἐφύλαττον",
+     "καὶ",
+     "οἱ",
+     "ὁπλῖται",
+     "τεῖχος",
+     "ὠχύρουν"
+    ]
+   },
+   {
+    "prompt": "The old man was neither reading a book nor writing letters, but he was sleeping.",
+    "answer": "ὁ γέρων οὔτε βιβλίον ἀνεγίγνωσκεν οὔτε ἐπιστολὰς ἔγραφεν, ἀλλὰ ἐκάθευδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "οὔτε",
+     "βιβλίον",
+     "ἀνεγίγνωσκεν",
+     "ἐπιστολὰς",
+     "ἔγραφεν",
+     "ἀλλὰ",
+     "ἐκάθευδεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2162-syntax-of-the-compound-sentence-t8",
+  "sectionId": "sm-2162-syntax-of-the-compound-sentence",
+  "questions": [
+   {
+    "prompt": "The Spartans indeed conquered on land, but the Athenians ruled the sea.",
+    "answer": "οἱ μὲν Λακεδαιμόνιοι κατὰ γῆν ἐνίκων, οἱ δὲ Ἀθηναῖοι τῆς θαλάττης ἦρχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "Λακεδαιμόνιοι",
+     "κατὰ",
+     "γῆν",
+     "ἐνίκων",
+     "δὲ",
+     "Ἀθηναῖοι",
+     "τῆς",
+     "θαλάττης",
+     "ἦρχον"
+    ]
+   },
+   {
+    "prompt": "The physician promised many things; however, he healed no one.",
+    "answer": "ὁ ἰατρὸς πολλὰ ὑπέσχετο· οὐδένα μέντοι ἰάσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "πολλὰ",
+     "ὑπέσχετο",
+     "οὐδένα",
+     "μέντοι",
+     "ἰάσατο"
+    ]
+   },
+   {
+    "prompt": "The young man seemed to be wise, and yet he understood nothing.",
+    "answer": "ὁ νεανίας σοφὸς εἶναι ἐδόκει, καίτοι οὐδὲν συνίει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "σοφὸς",
+     "εἶναι",
+     "ἐδόκει",
+     "καίτοι",
+     "οὐδὲν",
+     "συνίει"
+    ]
+   },
+   {
+    "prompt": "The road was long and difficult, but the travelers did not lose heart.",
+    "answer": "ἡ ὁδὸς μακρὰ καὶ χαλεπὴ ἦν, ἀλλὰ οἱ ὁδοιπόροι οὐκ ἠθύμουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ὁδὸς",
+     "μακρὰ",
+     "καὶ",
+     "χαλεπὴ",
+     "ἦν",
+     "ἀλλὰ",
+     "οἱ",
+     "ὁδοιπόροι",
+     "οὐκ",
+     "ἠθύμουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2162-syntax-of-the-compound-sentence-t9",
+  "sectionId": "sm-2162-syntax-of-the-compound-sentence",
+  "questions": [
+   {
+    "prompt": "Either the people will ratify the treaty, or the war will not cease.",
+    "answer": "ἢ ὁ δῆμος τὰς σπονδὰς κυρώσει, ἢ ὁ πόλεμος οὐ παύσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἢ",
+     "ὁ",
+     "δῆμος",
+     "τὰς",
+     "σπονδὰς",
+     "κυρώσει",
+     "πόλεμος",
+     "οὐ",
+     "παύσεται"
+    ]
+   },
+   {
+    "prompt": "Either persuade the jurors by words, or endure the penalty bravely.",
+    "answer": "ἢ τοὺς δικαστὰς λόγοις πεῖθε, ἢ τὴν ζημίαν ἀνδρείως ὑπόμενε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἢ",
+     "τοὺς",
+     "δικαστὰς",
+     "λόγοις",
+     "πεῖθε",
+     "τὴν",
+     "ζημίαν",
+     "ἀνδρείως",
+     "ὑπόμενε"
+    ]
+   },
+   {
+    "prompt": "Whether you conquer the enemy or suffer defeat, remain steadfast.",
+    "answer": "εἴτε τοὺς πολεμίους νικᾷς εἴτε ἧτταν πάσχεις, ἔμπεδος μένε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴτε",
+     "τοὺς",
+     "πολεμίους",
+     "νικᾷς",
+     "ἧτταν",
+     "πάσχεις",
+     "ἔμπεδος",
+     "μένε"
+    ]
+   },
+   {
+    "prompt": "The general will either besiege the city or ravage the fields.",
+    "answer": "ὁ στρατηγὸς ἢ τὴν πόλιν πολιορκήσει ἢ τοὺς ἀγροὺς δῃώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἢ",
+     "τὴν",
+     "πόλιν",
+     "πολιορκήσει",
+     "τοὺς",
+     "ἀγροὺς",
+     "δῃώσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2162-syntax-of-the-compound-sentence-t10",
+  "sectionId": "sm-2162-syntax-of-the-compound-sentence",
+  "questions": [
+   {
+    "prompt": "The enemies had fled; the general therefore pursued them with the cavalry.",
+    "answer": "οἱ πολέμιοι ἐπεφεύγεσαν· ὁ οὖν στρατηγὸς τοῖς ἱππεῦσιν αὐτοὺς ἐδίωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "ἐπεφεύγεσαν",
+     "ὁ",
+     "οὖν",
+     "στρατηγὸς",
+     "τοῖς",
+     "ἱππεῦσιν",
+     "αὐτοὺς",
+     "ἐδίωκεν"
+    ]
+   },
+   {
+    "prompt": "You have heard the arguments of both; decide now, then, justly.",
+    "answer": "τῶν λόγων ἀμφοτέρων ἀκηκόατε· κρίνετε τοίνυν δικαίως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "λόγων",
+     "ἀμφοτέρων",
+     "ἀκηκόατε",
+     "κρίνετε",
+     "τοίνυν",
+     "δικαίως"
+    ]
+   },
+   {
+    "prompt": "All men desire the good; virtue, then, is worthy of pursuit.",
+    "answer": "πάντες οἱ ἄνθρωποι τοῦ ἀγαθοῦ ἐφίενται· ἡ ἄρα ἀρετὴ σπουδῆς ἀξία ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "οἱ",
+     "ἄνθρωποι",
+     "τοῦ",
+     "ἀγαθοῦ",
+     "ἐφίενται",
+     "ἡ",
+     "ἄρα",
+     "ἀρετὴ",
+     "σπουδῆς",
+     "ἀξία",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The witnesses spoke the truth; so then the jurors acquitted the man.",
+    "answer": "οἱ μάρτυρες τὰ ἀληθῆ εἶπον· τοιγαροῦν οἱ δικασταὶ τὸν ἄνδρα ἀπέλυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μάρτυρες",
+     "τὰ",
+     "ἀληθῆ",
+     "εἶπον",
+     "τοιγαροῦν",
+     "δικασταὶ",
+     "τὸν",
+     "ἄνδρα",
+     "ἀπέλυσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2162-syntax-of-the-compound-sentence-t11",
+  "sectionId": "sm-2162-syntax-of-the-compound-sentence",
+  "questions": [
+   {
+    "prompt": "The Greeks rejoiced greatly, for they had escaped the barbarians' pursuit.",
+    "answer": "οἱ Ἕλληνες μεγάλως ἔχαιρον· τὴν γὰρ τῶν βαρβάρων δίωξιν ἐξέφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "μεγάλως",
+     "ἔχαιρον",
+     "τὴν",
+     "γὰρ",
+     "τῶν",
+     "βαρβάρων",
+     "δίωξιν",
+     "ἐξέφυγον"
+    ]
+   },
+   {
+    "prompt": "We do not blame the sailors, for the storm destroyed the ships.",
+    "answer": "τοὺς ναύτας οὐ μεμφόμεθα· ὁ γὰρ χειμὼν τὰς ναῦς διέφθειρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ναύτας",
+     "οὐ",
+     "μεμφόμεθα",
+     "ὁ",
+     "γὰρ",
+     "χειμὼν",
+     "τὰς",
+     "ναῦς",
+     "διέφθειρεν"
+    ]
+   },
+   {
+    "prompt": "The king honored the guest lavishly, for he had once saved his son.",
+    "answer": "ὁ βασιλεὺς τὸν ξένον μεγαλοπρεπῶς ἐτίμησεν· τὸν γὰρ υἱὸν αὐτοῦ ποτε ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "τὸν",
+     "ξένον",
+     "μεγαλοπρεπῶς",
+     "ἐτίμησεν",
+     "γὰρ",
+     "υἱὸν",
+     "αὐτοῦ",
+     "ποτε",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "The citizens were building a wall around the harbor, for they feared the enemy's fleet.",
+    "answer": "οἱ πολῖται τεῖχος περὶ τὸν λιμένα περιέβαλλον· τὸν γὰρ τῶν πολεμίων στόλον ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τεῖχος",
+     "περὶ",
+     "τὸν",
+     "λιμένα",
+     "περιέβαλλον",
+     "γὰρ",
+     "τῶν",
+     "πολεμίων",
+     "στόλον",
+     "ἐφοβοῦντο"
+    ]
+   }
+  ]
  }
 ]

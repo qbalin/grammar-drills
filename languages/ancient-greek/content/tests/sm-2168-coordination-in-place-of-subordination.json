@@ -467,5 +467,906 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t7",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "It was already about the first watch, and (when) the scouts withdrew to the camp.",
+    "answer": "ἤδη τε ἦν περὶ πρώτην φυλακήν, καὶ οἱ σκοποὶ ἀνεχώρησαν εἰς τὸ στρατόπεδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "τε",
+     "ἦν",
+     "περί",
+     "πρώτην",
+     "φυλακήν",
+     "καί",
+     "οἱ",
+     "σκοποί",
+     "ἀνεχώρησαν",
+     "εἰς",
+     "τό",
+     "στρατόπεδον"
+    ]
+   },
+   {
+    "prompt": "It was already toward afternoon, and (when) the ambassadors arrived at the king's court.",
+    "answer": "ἤδη τε ἦν ἀμφὶ δείλην, καὶ οἱ πρέσβεις παρὰ τὸν βασιλέα ἀφίκοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "τε",
+     "ἦν",
+     "ἀμφί",
+     "δείλην",
+     "καί",
+     "οἱ",
+     "πρέσβεις",
+     "παρά",
+     "τόν",
+     "βασιλέα",
+     "ἀφίκοντο"
+    ]
+   },
+   {
+    "prompt": "Winter was already ending, and (when) the allies came together at Corinth.",
+    "answer": "ἤδη τε ὁ χειμὼν ἐτελεύτα, καὶ οἱ σύμμαχοι εἰς Κόρινθον συνῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "τε",
+     "ὁ",
+     "χειμών",
+     "ἐτελεύτα",
+     "καί",
+     "οἱ",
+     "σύμμαχοι",
+     "εἰς",
+     "Κόρινθον",
+     "συνῆλθον"
+    ]
+   },
+   {
+    "prompt": "It was already midsummer, and (when) a plague fell upon the army.",
+    "answer": "ἤδη τε ἦν θέρος μέσον, καὶ νόσος ἐνέπεσεν εἰς τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "τε",
+     "ἦν",
+     "θέρος",
+     "μέσον",
+     "καί",
+     "νόσος",
+     "ἐνέπεσεν",
+     "εἰς",
+     "τό",
+     "στράτευμα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t8",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "Whereas the citizens were feasting, the enemy were seizing the acropolis.",
+    "answer": "οἱ μὲν πολῖται εἱστιῶντο, οἱ δὲ πολέμιοι τὴν ἀκρόπολιν κατελάμβανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "πολῖται",
+     "εἱστιῶντο",
+     "δέ",
+     "πολέμιοι",
+     "τήν",
+     "ἀκρόπολιν",
+     "κατελάμβανον"
+    ]
+   },
+   {
+    "prompt": "Whereas I trusted you, you handed me over to the tyrant.",
+    "answer": "ἐγὼ μὲν σοὶ ἐπίστευον, σὺ δὲ ἐμὲ τῷ τυράννῳ παρέδωκας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγώ",
+     "μέν",
+     "σοί",
+     "ἐπίστευον",
+     "σύ",
+     "δέ",
+     "ἐμέ",
+     "τῷ",
+     "τυράννῳ",
+     "παρέδωκας"
+    ]
+   },
+   {
+    "prompt": "Whereas the poets are honored, the philosophers are neglected in the city.",
+    "answer": "οἱ μὲν ποιηταὶ τιμῶνται, οἱ δὲ φιλόσοφοι ἐν τῇ πόλει ἀμελοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "ποιηταί",
+     "τιμῶνται",
+     "δέ",
+     "φιλόσοφοι",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἀμελοῦνται"
+    ]
+   },
+   {
+    "prompt": "Whereas we spared the prisoners, they killed our heralds.",
+    "answer": "ἡμεῖς μὲν τῶν αἰχμαλώτων ἐφεισάμεθα, οἱ δὲ τοὺς ἡμετέρους κήρυκας ἀπέκτειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμεῖς",
+     "μέν",
+     "τῶν",
+     "αἰχμαλώτων",
+     "ἐφεισάμεθα",
+     "οἱ",
+     "δέ",
+     "τούς",
+     "ἡμετέρους",
+     "κήρυκας",
+     "ἀπέκτειναν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t9",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "As soon as dawn appeared, the general drew up the hoplites.",
+    "answer": "ἅμα τε ἕως ὑπέφαινε καὶ ὁ στρατηγὸς τοὺς ὁπλίτας παρέταξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τε",
+     "ἕως",
+     "ὑπέφαινε",
+     "καί",
+     "ὁ",
+     "στρατηγός",
+     "τούς",
+     "ὁπλίτας",
+     "παρέταξεν"
+    ]
+   },
+   {
+    "prompt": "As soon as he gave the watchword, the gates were opened.",
+    "answer": "ἅμα τε τὸ σύνθημα εἶπε καὶ αἱ πύλαι ἀνεῴχθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τε",
+     "τό",
+     "σύνθημα",
+     "εἶπε",
+     "καί",
+     "αἱ",
+     "πύλαι",
+     "ἀνεῴχθησαν"
+    ]
+   },
+   {
+    "prompt": "As soon as the herald stopped speaking, the assembly broke into uproar.",
+    "answer": "ἅμα τε ὁ κῆρυξ ἐπαύσατο λέγων καὶ ἡ ἐκκλησία ἐθορύβησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τε",
+     "ὁ",
+     "κῆρυξ",
+     "ἐπαύσατο",
+     "λέγων",
+     "καί",
+     "ἡ",
+     "ἐκκλησία",
+     "ἐθορύβησεν"
+    ]
+   },
+   {
+    "prompt": "As soon as the fire was seen, the guards raised a shout.",
+    "answer": "ἅμα τε τὸ πῦρ ὤφθη καὶ οἱ φύλακες ἐβόησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τε",
+     "τό",
+     "πῦρ",
+     "ὤφθη",
+     "καί",
+     "οἱ",
+     "φύλακες",
+     "ἐβόησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t10",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "Do not despise the old man; for (and) he has often given good advice.",
+    "answer": "μὴ καταφρόνει τοῦ γέροντος· πολλάκις δὲ ἀγαθὰ συνεβούλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "καταφρόνει",
+     "τοῦ",
+     "γέροντος",
+     "πολλάκις",
+     "δέ",
+     "ἀγαθά",
+     "συνεβούλευσεν"
+    ]
+   },
+   {
+    "prompt": "The Spartans did not attack; for (and) the omens were not favorable.",
+    "answer": "οἱ Λακεδαιμόνιοι οὐ προσέβαλον· τὰ δὲ ἱερὰ οὐ καλὰ ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "οὐ",
+     "προσέβαλον",
+     "τά",
+     "δέ",
+     "ἱερά",
+     "καλά",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "We were not able to sail out; for (and) a great storm had arisen.",
+    "answer": "οὐκ ἐδυνάμεθα ἐκπλεῦσαι· χειμὼν δὲ μέγας ἐγεγόνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐδυνάμεθα",
+     "ἐκπλεῦσαι",
+     "χειμών",
+     "δέ",
+     "μέγας",
+     "ἐγεγόνει"
+    ]
+   },
+   {
+    "prompt": "Honor your parents; for (and) the gods watch over such things.",
+    "answer": "τίμα τοὺς γονέας· οἱ δὲ θεοὶ τὰ τοιαῦτα ἐφορῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίμα",
+     "τούς",
+     "γονέας",
+     "οἱ",
+     "δέ",
+     "θεοί",
+     "τά",
+     "τοιαῦτα",
+     "ἐφορῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t11",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "They encamped beside a certain river, and it is called Cephisus.",
+    "answer": "ἐστρατοπεδεύσαντο παρὰ ποταμόν τινα, καλεῖται δὲ Κηφῑσός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐστρατοπεδεύσαντο",
+     "παρά",
+     "ποταμόν",
+     "τινα",
+     "καλεῖται",
+     "δέ",
+     "Κηφῑσός"
+    ]
+   },
+   {
+    "prompt": "They founded a colony in Sicily, and it is named Gela.",
+    "answer": "ἀποικίαν ἔκτισαν ἐν Σικελίᾳ, ὀνομάζεται δὲ Γέλα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποικίαν",
+     "ἔκτισαν",
+     "ἐν",
+     "Σικελίᾳ",
+     "ὀνομάζεται",
+     "δέ",
+     "Γέλα"
+    ]
+   },
+   {
+    "prompt": "They worship a certain goddess, and she is called Bendis.",
+    "answer": "θεόν τινα σέβονται, καλεῖται δὲ Βενδῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θεόν",
+     "τινα",
+     "σέβονται",
+     "καλεῖται",
+     "δέ",
+     "Βενδῖς"
+    ]
+   },
+   {
+    "prompt": "They occupy a certain mountain in Thrace, and it is called Pangaeus.",
+    "answer": "ὄρος τι νέμονται ἐν τῇ Θρᾴκῃ, καλεῖται δὲ Παγγαῖον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄρος",
+     "τι",
+     "νέμονται",
+     "ἐν",
+     "τῇ",
+     "Θρᾴκῃ",
+     "καλεῖται",
+     "δέ",
+     "Παγγαῖον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t12",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "And while there is still an army, defend yourselves against the barbarians.",
+    "answer": "καὶ τέως ἔστι στρατός, ἀμύνεσθε τοὺς βαρβάρους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "τέως",
+     "ἔστι",
+     "στρατός",
+     "ἀμύνεσθε",
+     "τούς",
+     "βαρβάρους"
+    ]
+   },
+   {
+    "prompt": "Whereas the fathers won freedom by their toils, the sons squander it in idleness.",
+    "answer": "οἱ μὲν πατέρες τοῖς πόνοις τὴν ἐλευθερίαν ἐκτήσαντο, οἱ δὲ παῖδες ἐν ῥᾳθυμίᾳ αὐτὴν ἀπολλύασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "πατέρες",
+     "τοῖς",
+     "πόνοις",
+     "τήν",
+     "ἐλευθερίαν",
+     "ἐκτήσαντο",
+     "δέ",
+     "παῖδες",
+     "ἐν",
+     "ῥᾳθυμίᾳ",
+     "αὐτήν",
+     "ἀπολλύασιν"
+    ]
+   },
+   {
+    "prompt": "It was already about sunset, and (when) the prytaneis dismissed the assembly.",
+    "answer": "ἤδη τε ἦν περὶ ἡλίου δυσμάς, καὶ οἱ πρυτάνεις τὴν ἐκκλησίαν διέλυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "τε",
+     "ἦν",
+     "περί",
+     "ἡλίου",
+     "δυσμάς",
+     "καί",
+     "οἱ",
+     "πρυτάνεις",
+     "τήν",
+     "ἐκκλησίαν",
+     "διέλυσαν"
+    ]
+   },
+   {
+    "prompt": "He had just begun the sacrifice, and (when) a messenger ran in.",
+    "answer": "ἄρτι τε ἤρχετο τῆς θυσίας, καὶ ἄγγελος εἰσέδραμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄρτι",
+     "τε",
+     "ἤρχετο",
+     "τῆς",
+     "θυσίας",
+     "καί",
+     "ἄγγελος",
+     "εἰσέδραμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t13",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "Whereas the citizens guard the laws, the tyrants destroy them.",
+    "answer": "οἱ μὲν πολῖται τοὺς νόμους φυλάττουσιν, οἱ δὲ τύραννοι αὐτοὺς λύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "πολῖται",
+     "τούς",
+     "νόμους",
+     "φυλάττουσιν",
+     "δέ",
+     "τύραννοι",
+     "αὐτούς",
+     "λύουσιν"
+    ]
+   },
+   {
+    "prompt": "Whereas I have endured many toils on behalf of the city, you are unwilling to hear my words.",
+    "answer": "ἐγὼ μὲν πολλοὺς πόνους ὑπὲρ τῆς πόλεως ὑπέμεινα, ὑμεῖς δὲ τοὺς ἐμοὺς λόγους ἀκούειν οὐκ ἐθέλετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγώ",
+     "μέν",
+     "πολλούς",
+     "πόνους",
+     "ὑπέρ",
+     "τῆς",
+     "πόλεως",
+     "ὑπέμεινα",
+     "ὑμεῖς",
+     "δέ",
+     "τούς",
+     "ἐμούς",
+     "λόγους",
+     "ἀκούειν",
+     "οὐκ",
+     "ἐθέλετε"
+    ]
+   },
+   {
+    "prompt": "Whereas the wealthy man honors the flatterers, he despises his true friends.",
+    "answer": "ὁ μὲν πλούσιος τοὺς κόλακας τιμᾷ, τῶν δὲ ἀληθινῶν φίλων καταφρονεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μέν",
+     "πλούσιος",
+     "τούς",
+     "κόλακας",
+     "τιμᾷ",
+     "τῶν",
+     "δέ",
+     "ἀληθινῶν",
+     "φίλων",
+     "καταφρονεῖ"
+    ]
+   },
+   {
+    "prompt": "Whereas the soldiers were eager to fight, the general ordered them to withdraw.",
+    "answer": "οἱ μὲν στρατιῶται μάχεσθαι προεθυμοῦντο, ὁ δὲ στρατηγὸς αὐτοὺς ἀναχωρεῖν ἐκέλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "στρατιῶται",
+     "μάχεσθαι",
+     "προεθυμοῦντο",
+     "ὁ",
+     "δέ",
+     "στρατηγός",
+     "αὐτούς",
+     "ἀναχωρεῖν",
+     "ἐκέλευσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t14",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "It was already midday, and (when) the ambassadors came into the camp.",
+    "answer": "ἤδη δὲ ἦν μεσημβρία, καὶ οἱ πρέσβεις εἰς τὸ στρατόπεδον ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "δέ",
+     "ἦν",
+     "μεσημβρία",
+     "καί",
+     "οἱ",
+     "πρέσβεις",
+     "εἰς",
+     "τό",
+     "στρατόπεδον",
+     "ἦλθον"
+    ]
+   },
+   {
+    "prompt": "The sun had already set, and (when) the sailors hauled the ships up onto the beach.",
+    "answer": "ἤδη δὲ ὁ ἥλιος ἔδυ, καὶ οἱ ναῦται τὰς ναῦς ἐπὶ τὸν αἰγιαλὸν ἀνείλκυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "δέ",
+     "ὁ",
+     "ἥλιος",
+     "ἔδυ",
+     "καί",
+     "οἱ",
+     "ναῦται",
+     "τάς",
+     "ναῦς",
+     "ἐπί",
+     "τόν",
+     "αἰγιαλόν",
+     "ἀνείλκυσαν"
+    ]
+   },
+   {
+    "prompt": "Winter had already ceased, and (when) the allies sent ships to the Athenians.",
+    "answer": "ἤδη δὲ ὁ χειμὼν ἐπέπαυτο, καὶ οἱ σύμμαχοι ναῦς τοῖς Ἀθηναίοις ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "δέ",
+     "ὁ",
+     "χειμών",
+     "ἐπέπαυτο",
+     "καί",
+     "οἱ",
+     "σύμμαχοι",
+     "ναῦς",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "Night was already coming on, and (when) both armies withdrew from the battle.",
+    "answer": "ἤδη δὲ νὺξ ἐπῄει, καὶ τὰ στρατόπεδα ἀμφότερα ἐκ τῆς μάχης ἀνεχώρησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "δέ",
+     "νύξ",
+     "ἐπῄει",
+     "καί",
+     "τά",
+     "στρατόπεδα",
+     "ἀμφότερα",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "ἀνεχώρησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t15",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "As soon as he said these things, he led the army out of the camp.",
+    "answer": "ἅμα δὲ ταῦτα ἔλεγε καὶ τὸ στράτευμα ἐκ τοῦ στρατοπέδου ἐξῆγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "δέ",
+     "ταῦτα",
+     "ἔλεγε",
+     "καί",
+     "τό",
+     "στράτευμα",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἐξῆγεν"
+    ]
+   },
+   {
+    "prompt": "At the same time the gates were opened and the citizens ran out against the besiegers.",
+    "answer": "ἅμα τε αἱ πύλαι ἀνεῴχθησαν καὶ οἱ πολῖται ἐπὶ τοὺς πολιορκοῦντας ἐξέδραμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "τε",
+     "αἱ",
+     "πύλαι",
+     "ἀνεῴχθησαν",
+     "καί",
+     "οἱ",
+     "πολῖται",
+     "ἐπί",
+     "τούς",
+     "πολιορκοῦντας",
+     "ἐξέδραμον"
+    ]
+   },
+   {
+    "prompt": "As soon as the trumpet sounded, the horsemen charged upon the phalanx.",
+    "answer": "ἅμα δὲ ἡ σάλπιγξ ἐφθέγξατο καὶ οἱ ἱππεῖς ἐπὶ τὴν φάλαγγα ἤλασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "δέ",
+     "ἡ",
+     "σάλπιγξ",
+     "ἐφθέγξατο",
+     "καί",
+     "οἱ",
+     "ἱππεῖς",
+     "ἐπί",
+     "τήν",
+     "φάλαγγα",
+     "ἤλασαν"
+    ]
+   },
+   {
+    "prompt": "As soon as the king heard these things, he immediately sent messengers to the satrap.",
+    "answer": "εὐθὺς δὲ ὁ βασιλεὺς ταῦτα ἤκουσε καὶ ἀγγέλους πρὸς τὸν σατράπην ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐθύς",
+     "δέ",
+     "ὁ",
+     "βασιλεύς",
+     "ταῦτα",
+     "ἤκουσε",
+     "καί",
+     "ἀγγέλους",
+     "πρός",
+     "τόν",
+     "σατράπην",
+     "ἔπεμψεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t16",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "Do not trust the tyrant; for (and) he has often deceived his friends.",
+    "answer": "μὴ πίστευε τῷ τυράννῳ· πολλάκις δὲ τοὺς φίλους ἐξηπάτησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "πίστευε",
+     "τῷ",
+     "τυράννῳ",
+     "πολλάκις",
+     "δέ",
+     "τούς",
+     "φίλους",
+     "ἐξηπάτησεν"
+    ]
+   },
+   {
+    "prompt": "They did not remain in the plain; for (and) the enemy were pressing hard.",
+    "answer": "οὐκ ἔμειναν ἐν τῷ πεδίῳ· οἱ δὲ πολέμιοι σφόδρα ἐνέκειντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔμειναν",
+     "ἐν",
+     "τῷ",
+     "πεδίῳ",
+     "οἱ",
+     "δέ",
+     "πολέμιοι",
+     "σφόδρα",
+     "ἐνέκειντο"
+    ]
+   },
+   {
+    "prompt": "Honor the gods, citizens; for (and) they preserve the city in dangers.",
+    "answer": "τιμᾶτε τοὺς θεούς, ὦ πολῖται· σῴζουσι δὲ τὴν πόλιν ἐν τοῖς κινδύνοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμᾶτε",
+     "τούς",
+     "θεούς",
+     "ὦ",
+     "πολῖται",
+     "σῴζουσι",
+     "δέ",
+     "τήν",
+     "πόλιν",
+     "ἐν",
+     "τοῖς",
+     "κινδύνοις"
+    ]
+   },
+   {
+    "prompt": "Do not despise poverty; for (and) it often produces brave men.",
+    "answer": "μὴ καταφρόνει τῆς πενίας· πολλάκις δὲ ἄνδρας ἀγαθοὺς τίκτει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "καταφρόνει",
+     "τῆς",
+     "πενίας",
+     "πολλάκις",
+     "δέ",
+     "ἄνδρας",
+     "ἀγαθούς",
+     "τίκτει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t17",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "They founded a city by the sea, and it is called Amphipolis.",
+    "answer": "πόλιν τινὰ πρὸς τῇ θαλάττῃ ἔκτισαν, καλεῖται δὲ Ἀμφίπολις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόλιν",
+     "τινά",
+     "πρός",
+     "τῇ",
+     "θαλάττῃ",
+     "ἔκτισαν",
+     "καλεῖται",
+     "δέ",
+     "Ἀμφίπολις"
+    ]
+   },
+   {
+    "prompt": "There is a mountain above the plain, and it is named Cithaeron.",
+    "answer": "ὄρος δέ τι ὑπὲρ τοῦ πεδίου ἐστίν, ὀνομάζεται δὲ Κιθαιρών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄρος",
+     "δέ",
+     "τι",
+     "ὑπέρ",
+     "τοῦ",
+     "πεδίου",
+     "ἐστίν",
+     "ὀνομάζεται",
+     "Κιθαιρών"
+    ]
+   },
+   {
+    "prompt": "There is a large harbor by the city, and it is called Piraeus.",
+    "answer": "λιμὴν δὲ μέγας ἐστὶ πρὸς τῇ πόλει, καλεῖται δὲ Πειραιεύς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λιμήν",
+     "δέ",
+     "μέγας",
+     "ἐστί",
+     "πρός",
+     "τῇ",
+     "πόλει",
+     "καλεῖται",
+     "Πειραιεύς"
+    ]
+   },
+   {
+    "prompt": "The soldiers seized a stronghold on the hill, and it was called Labdalon.",
+    "answer": "χωρίον δέ τι ἐπὶ τοῦ λόφου κατέλαβον, ἐκαλεῖτο δὲ Λάβδαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χωρίον",
+     "δέ",
+     "τι",
+     "ἐπί",
+     "τοῦ",
+     "λόφου",
+     "κατέλαβον",
+     "ἐκαλεῖτο",
+     "Λάβδαλον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-t18",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "Whereas the Spartans trained their bodies, the Athenians educated their souls.",
+    "answer": "οἱ μὲν Λακεδαιμόνιοι τὰ σώματα ἐγύμναζον, οἱ δὲ Ἀθηναῖοι τὰς ψυχὰς ἐπαίδευον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μέν",
+     "Λακεδαιμόνιοι",
+     "τά",
+     "σώματα",
+     "ἐγύμναζον",
+     "δέ",
+     "Ἀθηναῖοι",
+     "τάς",
+     "ψυχάς",
+     "ἐπαίδευον"
+    ]
+   },
+   {
+    "prompt": "It was already growing dark, and (when) the shepherds drove their flocks into the folds.",
+    "answer": "ἤδη δὲ ἐσκόταζε, καὶ οἱ ποιμένες τὰ ποίμνια εἰς τὰς αὐλὰς ἤλαυνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "δέ",
+     "ἐσκόταζε",
+     "καί",
+     "οἱ",
+     "ποιμένες",
+     "τά",
+     "ποίμνια",
+     "εἰς",
+     "τάς",
+     "αὐλάς",
+     "ἤλαυνον"
+    ]
+   },
+   {
+    "prompt": "As soon as the wise man perceived the danger, he warned his companions.",
+    "answer": "ἅμα δὲ ὁ σοφὸς τὸν κίνδυνον ᾔσθετο καὶ τοῖς ἑταίροις προεῖπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "δέ",
+     "ὁ",
+     "σοφός",
+     "τόν",
+     "κίνδυνον",
+     "ᾔσθετο",
+     "καί",
+     "τοῖς",
+     "ἑταίροις",
+     "προεῖπεν"
+    ]
+   },
+   {
+    "prompt": "Do not abandon the temple; for (and) the goddess preserves those who honor her.",
+    "answer": "μὴ λεῖπε τὸ ἱερόν· ἡ δὲ θεὸς σῴζει τοὺς τιμῶντας αὐτήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "λεῖπε",
+     "τό",
+     "ἱερόν",
+     "ἡ",
+     "δέ",
+     "θεός",
+     "σῴζει",
+     "τούς",
+     "τιμῶντας",
+     "αὐτήν"
+    ]
+   }
+  ]
  }
 ]

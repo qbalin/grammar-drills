@@ -389,5 +389,789 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t7",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "I saw the soldiers plundering the village.",
+    "answer": "εἶδον τοὺς στρατιώτας τὴν κώμην ληιζομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶδον",
+     "τοὺς",
+     "στρατιώτας",
+     "τὴν",
+     "κώμην",
+     "ληιζομένους"
+    ]
+   },
+   {
+    "prompt": "The old man perceived his son fleeing out of the battle.",
+    "answer": "ᾔσθετο ὁ γέρων τὸν υἱὸν ἐκ τῆς μάχης φεύγοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔσθετο",
+     "ὁ",
+     "γέρων",
+     "τὸν",
+     "υἱὸν",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "φεύγοντα"
+    ]
+   },
+   {
+    "prompt": "The women, seeing the priest preparing the victim, fell silent.",
+    "answer": "αἱ γυναῖκες ἰδοῦσαι τὸν ἱερέα τὸ ἱερεῖον ἑτοιμάζοντα ἐσίγησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "ἰδοῦσαι",
+     "τὸν",
+     "ἱερέα",
+     "τὸ",
+     "ἱερεῖον",
+     "ἑτοιμάζοντα",
+     "ἐσίγησαν"
+    ]
+   },
+   {
+    "prompt": "Perceiving the enemy throwing the city into confusion, the general armed the citizens.",
+    "answer": "αἰσθόμενος ὁ στρατηγὸς τοὺς πολεμίους τὴν πόλιν ταράσσοντας ὥπλισε τοὺς πολίτας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθόμενος",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "πολεμίους",
+     "τὴν",
+     "πόλιν",
+     "ταράσσοντας",
+     "ὥπλισε",
+     "πολίτας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t8",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "The judges heard the witness bearing false testimony.",
+    "answer": "οἱ δικασταὶ ἤκουσαν τοῦ μάρτυρος ψευδομαρτυροῦντος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ἤκουσαν",
+     "τοῦ",
+     "μάρτυρος",
+     "ψευδομαρτυροῦντος"
+    ]
+   },
+   {
+    "prompt": "The scout heard the enemy shouting in the night.",
+    "answer": "ὁ σκοπὸς ἤκουσε τῶν πολεμίων ἐν τῇ νυκτὶ βοώντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σκοπὸς",
+     "ἤκουσε",
+     "τῶν",
+     "πολεμίων",
+     "ἐν",
+     "τῇ",
+     "νυκτὶ",
+     "βοώντων"
+    ]
+   },
+   {
+    "prompt": "The people heard the orator slandering the generals.",
+    "answer": "ὁ δῆμος ἤκουσε τοῦ ῥήτορος τοὺς στρατηγοὺς διαβάλλοντος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "ἤκουσε",
+     "τοῦ",
+     "ῥήτορος",
+     "τοὺς",
+     "στρατηγοὺς",
+     "διαβάλλοντος"
+    ]
+   },
+   {
+    "prompt": "The ambassadors learned of the allies revolting.",
+    "answer": "οἱ πρέσβεις ἐπύθοντο τῶν συμμάχων ἀφισταμένων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἐπύθοντο",
+     "τῶν",
+     "συμμάχων",
+     "ἀφισταμένων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t9",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "We see that everything the poet says is false.",
+    "answer": "ὁρῶμεν πάντα ψευδῆ ὄντα ἃ ὁ ποιητὴς λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶμεν",
+     "πάντα",
+     "ψευδῆ",
+     "ὄντα",
+     "ἃ",
+     "ὁ",
+     "ποιητὴς",
+     "λέγει"
+    ]
+   },
+   {
+    "prompt": "I perceive that the city is being betrayed by its leaders.",
+    "answer": "αἰσθάνομαι τὴν πόλιν ὑπὸ τῶν ἡγεμόνων προδιδομένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθάνομαι",
+     "τὴν",
+     "πόλιν",
+     "ὑπὸ",
+     "τῶν",
+     "ἡγεμόνων",
+     "προδιδομένην"
+    ]
+   },
+   {
+    "prompt": "He heard that the fleet had been destroyed around the island.",
+    "answer": "ἤκουσε τὸ ναυτικὸν περὶ τὴν νῆσον διεφθαρμένον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤκουσε",
+     "τὸ",
+     "ναυτικὸν",
+     "περὶ",
+     "τὴν",
+     "νῆσον",
+     "διεφθαρμένον"
+    ]
+   },
+   {
+    "prompt": "They learned that the tyrant had fled from the country.",
+    "answer": "ἐπύθοντο τὸν τύραννον ἐκ τῆς χώρας πεφευγότα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπύθοντο",
+     "τὸν",
+     "τύραννον",
+     "ἐκ",
+     "τῆς",
+     "χώρας",
+     "πεφευγότα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t10",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "The herald found the ambassadors already deliberating about peace.",
+    "answer": "ὁ κῆρυξ ηὗρε τοὺς πρέσβεις ἤδη περὶ τῆς εἰρήνης βουλευομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ηὗρε",
+     "τοὺς",
+     "πρέσβεις",
+     "ἤδη",
+     "περὶ",
+     "τῆς",
+     "εἰρήνης",
+     "βουλευομένους"
+    ]
+   },
+   {
+    "prompt": "If he catches any of the slaves stealing, he punishes him.",
+    "answer": "ἐὰν τῶν δούλων τινὰ κλέπτοντα λαμβάνῃ, κολάζει αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τῶν",
+     "δούλων",
+     "τινὰ",
+     "κλέπτοντα",
+     "λαμβάνῃ",
+     "κολάζει",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "The scouts found the bridge recently broken down.",
+    "answer": "οἱ σκοποὶ κατέλαβον τὴν γέφυραν νεωστὶ λελυμένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σκοποὶ",
+     "κατέλαβον",
+     "τὴν",
+     "γέφυραν",
+     "νεωστὶ",
+     "λελυμένην"
+    ]
+   },
+   {
+    "prompt": "If the traitor be caught running away, he will be put to death.",
+    "answer": "ἐὰν ὁ προδότης ἀποδιδράσκων ἁλίσκηται, ἀποθανεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "προδότης",
+     "ἀποδιδράσκων",
+     "ἁλίσκηται",
+     "ἀποθανεῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t11",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "They conclude that the beginning of the enmity arose from this battle.",
+    "answer": "εὑρίσκουσι τὴν ἀρχὴν τῆς ἔχθρας ἐκ ταύτης τῆς μάχης γενομένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὑρίσκουσι",
+     "τὴν",
+     "ἀρχὴν",
+     "τῆς",
+     "ἔχθρας",
+     "ἐκ",
+     "ταύτης",
+     "μάχης",
+     "γενομένην"
+    ]
+   },
+   {
+    "prompt": "The general was found to have plotted against the democracy.",
+    "answer": "ὁ στρατηγὸς ηὑρέθη τῇ δημοκρατίᾳ ἐπιβεβουλευκώς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ηὑρέθη",
+     "τῇ",
+     "δημοκρατίᾳ",
+     "ἐπιβεβουλευκώς"
+    ]
+   },
+   {
+    "prompt": "The poets represent the heroes as suffering many things.",
+    "answer": "οἱ ποιηταὶ ποιοῦσι τοὺς ἥρωας πολλὰ πάσχοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ποιηταὶ",
+     "ποιοῦσι",
+     "τοὺς",
+     "ἥρωας",
+     "πολλὰ",
+     "πάσχοντας"
+    ]
+   },
+   {
+    "prompt": "I see that you are speaking the truth, although I disbelieve many things.",
+    "answer": "ὁρῶ σε τὰ ἀληθῆ λέγοντα, καίπερ ἀπιστῶν πολλά.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶ",
+     "σε",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγοντα",
+     "καίπερ",
+     "ἀπιστῶν",
+     "πολλά"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t12",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "When the sailors saw the storm arising, they lowered the sails.",
+    "answer": "ἐπεὶ οἱ ναῦται εἶδον τὸν χειμῶνα γιγνόμενον, τὰ ἱστία καθεῖλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "ναῦται",
+     "εἶδον",
+     "τὸν",
+     "χειμῶνα",
+     "γιγνόμενον",
+     "τὰ",
+     "ἱστία",
+     "καθεῖλον"
+    ]
+   },
+   {
+    "prompt": "We perceive that the young men are always becoming worse.",
+    "answer": "αἰσθανόμεθα τοὺς νεανίας ἀεὶ χείρους γιγνομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθανόμεθα",
+     "τοὺς",
+     "νεανίας",
+     "ἀεὶ",
+     "χείρους",
+     "γιγνομένους"
+    ]
+   },
+   {
+    "prompt": "The king, having learned that the enemy had crossed the river, drew up his army.",
+    "answer": "ὁ βασιλεὺς πυθόμενος τοὺς πολεμίους τὸν ποταμὸν διαβεβηκότας τὸ στράτευμα παρέταξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "πυθόμενος",
+     "τοὺς",
+     "πολεμίους",
+     "τὸν",
+     "ποταμὸν",
+     "διαβεβηκότας",
+     "τὸ",
+     "στράτευμα",
+     "παρέταξεν"
+    ]
+   },
+   {
+    "prompt": "They found the wretched man lying wounded on the ground.",
+    "answer": "ηὗρον τὸν ἄθλιον ἐπὶ τῆς γῆς κείμενον τετρωμένον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ηὗρον",
+     "τὸν",
+     "ἄθλιον",
+     "ἐπὶ",
+     "τῆς",
+     "γῆς",
+     "κείμενον",
+     "τετρωμένον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t13",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "The old man heard the boys shouting in the marketplace.",
+    "answer": "ὁ γέρων ἤκουσε τῶν παίδων ἐν τῇ ἀγορᾷ βοώντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἤκουσε",
+     "τῶν",
+     "παίδων",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "βοώντων"
+    ]
+   },
+   {
+    "prompt": "We perceived the enemy fortifying the hill by night.",
+    "answer": "ᾐσθόμεθα τοὺς πολεμίους νύκτωρ τὸν λόφον τειχίζοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾐσθόμεθα",
+     "τοὺς",
+     "πολεμίους",
+     "νύκτωρ",
+     "τὸν",
+     "λόφον",
+     "τειχίζοντας"
+    ]
+   },
+   {
+    "prompt": "The general saw the horsemen riding through the plain.",
+    "answer": "ὁ στρατηγὸς εἶδε τοὺς ἱππέας διὰ τοῦ πεδίου ἐλαύνοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "εἶδε",
+     "τοὺς",
+     "ἱππέας",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἐλαύνοντας"
+    ]
+   },
+   {
+    "prompt": "Learning from the messenger that the enemy were approaching, they fled to the mountains.",
+    "answer": "πυθόμενοι τοῦ ἀγγέλου τοὺς πολεμίους προσιόντας ἔφυγον εἰς τὰ ὄρη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πυθόμενοι",
+     "τοῦ",
+     "ἀγγέλου",
+     "τοὺς",
+     "πολεμίους",
+     "προσιόντας",
+     "ἔφυγον",
+     "εἰς",
+     "τὰ",
+     "ὄρη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t14",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "We hear that the king is gathering a great army in Asia.",
+    "answer": "ἀκούομεν τὸν βασιλέα μεγάλην στρατιὰν ἐν τῇ Ἀσίᾳ ἀθροίζοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκούομεν",
+     "τὸν",
+     "βασιλέα",
+     "μεγάλην",
+     "στρατιὰν",
+     "ἐν",
+     "τῇ",
+     "Ἀσίᾳ",
+     "ἀθροίζοντα"
+    ]
+   },
+   {
+    "prompt": "I perceive that you are speaking wisely about these matters.",
+    "answer": "αἰσθάνομαι σε σοφῶς περὶ τούτων λέγοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθάνομαι",
+     "σε",
+     "σοφῶς",
+     "περὶ",
+     "τούτων",
+     "λέγοντα"
+    ]
+   },
+   {
+    "prompt": "They learned that the city had been betrayed by the guards.",
+    "answer": "ἐπύθοντο τὴν πόλιν ὑπὸ τῶν φυλάκων προδεδομένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπύθοντο",
+     "τὴν",
+     "πόλιν",
+     "ὑπὸ",
+     "τῶν",
+     "φυλάκων",
+     "προδεδομένην"
+    ]
+   },
+   {
+    "prompt": "We see that the citizens are bearing the war bravely.",
+    "answer": "ὁρῶμεν τοὺς πολίτας ἀνδρείως τὸν πόλεμον φέροντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶμεν",
+     "τοὺς",
+     "πολίτας",
+     "ἀνδρείως",
+     "τὸν",
+     "πόλεμον",
+     "φέροντας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t15",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "The soldiers found the gates open and rushed in.",
+    "answer": "οἱ στρατιῶται ηὗρον τὰς πύλας ἀνεῳγμένας καὶ εἰσέδραμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ηὗρον",
+     "τὰς",
+     "πύλας",
+     "ἀνεῳγμένας",
+     "καὶ",
+     "εἰσέδραμον"
+    ]
+   },
+   {
+    "prompt": "They caught the slave stealing the master's silver.",
+    "answer": "κατέλαβον τὸν δοῦλον τὸν τοῦ δεσπότου ἄργυρον κλέπτοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατέλαβον",
+     "τὸν",
+     "δοῦλον",
+     "τοῦ",
+     "δεσπότου",
+     "ἄργυρον",
+     "κλέπτοντα"
+    ]
+   },
+   {
+    "prompt": "If the traitor is caught fleeing to the enemy, he will die.",
+    "answer": "ἐὰν ὁ προδότης πρὸς τοὺς πολεμίους φεύγων ἁλίσκηται, ἀποθανεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "προδότης",
+     "πρὸς",
+     "τοὺς",
+     "πολεμίους",
+     "φεύγων",
+     "ἁλίσκηται",
+     "ἀποθανεῖται"
+    ]
+   },
+   {
+    "prompt": "The herald found the ambassadors deliberating about the treaty.",
+    "answer": "ὁ κῆρυξ ηὗρε τοὺς πρέσβεις περὶ τῶν σπονδῶν βουλευομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ηὗρε",
+     "τοὺς",
+     "πρέσβεις",
+     "περὶ",
+     "τῶν",
+     "σπονδῶν",
+     "βουλευομένους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t16",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "When he saw a fox running out of the thicket, the hunter gave chase.",
+    "answer": "ὡς εἶδεν ἀλώπεκα ἐκ τῆς λόχμης ἐκτρέχουσαν, ὁ κυνηγέτης ἐδίωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "εἶδεν",
+     "ἀλώπεκα",
+     "ἐκ",
+     "τῆς",
+     "λόχμης",
+     "ἐκτρέχουσαν",
+     "ὁ",
+     "κυνηγέτης",
+     "ἐδίωκεν"
+    ]
+   },
+   {
+    "prompt": "I have often heard the philosopher discoursing about virtue.",
+    "answer": "πολλάκις ἤκουσα τοῦ φιλοσόφου περὶ ἀρετῆς διαλεγομένου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλάκις",
+     "ἤκουσα",
+     "τοῦ",
+     "φιλοσόφου",
+     "περὶ",
+     "ἀρετῆς",
+     "διαλεγομένου"
+    ]
+   },
+   {
+    "prompt": "The women perceived the fire spreading through the house.",
+    "answer": "αἱ γυναῖκες ᾐσθάνοντο τὸ πῦρ διὰ τῆς οἰκίας νεμόμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "ᾐσθάνοντο",
+     "τὸ",
+     "πῦρ",
+     "διὰ",
+     "τῆς",
+     "οἰκίας",
+     "νεμόμενον"
+    ]
+   },
+   {
+    "prompt": "The sailors, hearing the wind roaring, feared the storm.",
+    "answer": "οἱ ναῦται τοῦ ἀνέμου βρέμοντος ἀκούσαντες τὸν χειμῶνα ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "τοῦ",
+     "ἀνέμου",
+     "βρέμοντος",
+     "ἀκούσαντες",
+     "τὸν",
+     "χειμῶνα",
+     "ἐφοβοῦντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t17",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "We learned that the allies had already sailed away.",
+    "answer": "ἐπυθόμεθα τοὺς συμμάχους ἤδη ἀποπεπλευκότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπυθόμεθα",
+     "τοὺς",
+     "συμμάχους",
+     "ἤδη",
+     "ἀποπεπλευκότας"
+    ]
+   },
+   {
+    "prompt": "He heard that his brother had been honored by the citizens.",
+    "answer": "ἤκουσε τὸν ἀδελφὸν ὑπὸ τῶν πολιτῶν τετιμημένον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤκουσε",
+     "τὸν",
+     "ἀδελφὸν",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "τετιμημένον"
+    ]
+   },
+   {
+    "prompt": "I see that you have become wiser through many toils.",
+    "answer": "ὁρῶ σε διὰ πολλῶν πόνων σοφώτερον γεγενημένον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶ",
+     "σε",
+     "διὰ",
+     "πολλῶν",
+     "πόνων",
+     "σοφώτερον",
+     "γεγενημένον"
+    ]
+   },
+   {
+    "prompt": "They perceived that the walls had been thrown down by the earthquake.",
+    "answer": "ᾔσθοντο τὰ τείχη ὑπὸ τοῦ σεισμοῦ καταβεβλημένα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔσθοντο",
+     "τὰ",
+     "τείχη",
+     "ὑπὸ",
+     "τοῦ",
+     "σεισμοῦ",
+     "καταβεβλημένα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-t18",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "On inquiry they found that the defendant had dealt justly with all.",
+    "answer": "ζητοῦντες εὗρον τὸν φεύγοντα δικαίως πρὸς πάντας πεπραχότα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ζητοῦντες",
+     "εὗρον",
+     "τὸν",
+     "φεύγοντα",
+     "δικαίως",
+     "πρὸς",
+     "πάντας",
+     "πεπραχότα"
+    ]
+   },
+   {
+    "prompt": "Homer represents the goddess as helping the Achaeans.",
+    "answer": "Ὅμηρος ποιεῖ τὴν θεὸν τοῖς Ἀχαιοῖς βοηθοῦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὅμηρος",
+     "ποιεῖ",
+     "τὴν",
+     "θεὸν",
+     "τοῖς",
+     "Ἀχαιοῖς",
+     "βοηθοῦσαν"
+    ]
+   },
+   {
+    "prompt": "If anyone is caught bearing false witness, let him be punished.",
+    "answer": "ἐάν τις ψευδομαρτυρῶν ἁλίσκηται, κολαζέσθω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "ψευδομαρτυρῶν",
+     "ἁλίσκηται",
+     "κολαζέσθω"
+    ]
+   },
+   {
+    "prompt": "The scouts found the bridge already destroyed by the barbarians.",
+    "answer": "οἱ σκοποὶ ηὗρον τὴν γέφυραν ὑπὸ τῶν βαρβάρων ἤδη διεφθαρμένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σκοποὶ",
+     "ηὗρον",
+     "τὴν",
+     "γέφυραν",
+     "ὑπὸ",
+     "τῶν",
+     "βαρβάρων",
+     "ἤδη",
+     "διεφθαρμένην"
+    ]
+   }
+  ]
  }
 ]

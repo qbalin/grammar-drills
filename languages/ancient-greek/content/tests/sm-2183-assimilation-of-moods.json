@@ -396,5 +396,1233 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t7",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "How could a pilot steer a ship into a harbor which he did not know?",
+    "answer": "πῶς ἂν κυβερνήτης ναῦν εἰς λιμένα εἰσάγοι ὃν μὴ εἰδείη;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἂν",
+     "κυβερνήτης",
+     "ναῦν",
+     "εἰς",
+     "λιμένα",
+     "εἰσάγοι",
+     "ὃν",
+     "μὴ",
+     "εἰδείη"
+    ]
+   },
+   {
+    "prompt": "Who could trust a friend who had often deceived him?",
+    "answer": "τίς ἂν φίλῳ πιστεύοι ὃς πολλάκις αὐτὸν ἐξαπατήσειεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "φίλῳ",
+     "πιστεύοι",
+     "ὃς",
+     "πολλάκις",
+     "αὐτὸν",
+     "ἐξαπατήσειεν"
+    ]
+   },
+   {
+    "prompt": "No one could praise a poet whose songs he had never heard.",
+    "answer": "οὐδεὶς ἂν ποιητὴν ἐπαινέσειεν οὗ μηδέποτε τὰ ᾄσματα ἀκούσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἂν",
+     "ποιητὴν",
+     "ἐπαινέσειεν",
+     "οὗ",
+     "μηδέποτε",
+     "τὰ",
+     "ᾄσματα",
+     "ἀκούσειεν"
+    ]
+   },
+   {
+    "prompt": "Would that every juror might judge justly the cases which he tried.",
+    "answer": "εἴθε πᾶς δικαστὴς δικαίως κρίνοι τὰς δίκας ἃς δικάζοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "πᾶς",
+     "δικαστὴς",
+     "δικαίως",
+     "κρίνοι",
+     "τὰς",
+     "δίκας",
+     "ἃς",
+     "δικάζοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t8",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "May I never betray my friends, as long as I am still able to help them.",
+    "answer": "μήποτε τοὺς φίλους προδοίην, ἕως ἔτι αὐτοὺς ὠφελεῖν δυναίμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήποτε",
+     "τοὺς",
+     "φίλους",
+     "προδοίην",
+     "ἕως",
+     "ἔτι",
+     "αὐτοὺς",
+     "ὠφελεῖν",
+     "δυναίμην"
+    ]
+   },
+   {
+    "prompt": "The wise man would speak only then, when the fitting moment arrived.",
+    "answer": "ὁ σοφὸς τότε ἂν λέγοι, ὅτε ὁ καιρὸς ἥκοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "τότε",
+     "ἂν",
+     "λέγοι",
+     "ὅτε",
+     "καιρὸς",
+     "ἥκοι"
+    ]
+   },
+   {
+    "prompt": "He who loves wisdom would rejoice whenever he learned something new.",
+    "answer": "ὁ τὴν σοφίαν φιλῶν χαίροι ἂν ὁπότε τι καινὸν μανθάνοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τὴν",
+     "σοφίαν",
+     "φιλῶν",
+     "χαίροι",
+     "ἂν",
+     "ὁπότε",
+     "τι",
+     "καινὸν",
+     "μανθάνοι"
+    ]
+   },
+   {
+    "prompt": "Would that the exile might not die before he returned home.",
+    "answer": "εἴθε ὁ φυγὰς μὴ ἀποθάνοι, πρὶν οἴκαδε κατέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ὁ",
+     "φυγὰς",
+     "μὴ",
+     "ἀποθάνοι",
+     "πρὶν",
+     "οἴκαδε",
+     "κατέλθοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t9",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "If the banker had been just, he would have paid back all the drachmas that he received.",
+    "answer": "εἰ ὁ τραπεζίτης δίκαιος ἦν, ἀπέδωκεν ἂν πάσας τὰς δραχμὰς ἃς ἔλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "τραπεζίτης",
+     "δίκαιος",
+     "ἦν",
+     "ἀπέδωκεν",
+     "ἂν",
+     "πάσας",
+     "τὰς",
+     "δραχμὰς",
+     "ἃς",
+     "ἔλαβεν"
+    ]
+   },
+   {
+    "prompt": "If we had been present, we would have saved whomever the enemy were pursuing.",
+    "answer": "εἰ παρῆμεν, ἐσώσαμεν ἂν οὕστινας οἱ πολέμιοι ἐδίωκον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "παρῆμεν",
+     "ἐσώσαμεν",
+     "ἂν",
+     "οὕστινας",
+     "οἱ",
+     "πολέμιοι",
+     "ἐδίωκον"
+    ]
+   },
+   {
+    "prompt": "If the general had been braver, he would have attacked wherever the enemy were weakest.",
+    "answer": "εἰ ὁ στρατηγὸς ἀνδρειότερος ἦν, προσέβαλεν ἂν ὅπου οἱ πολέμιοι ἀσθενέστατοι ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀνδρειότερος",
+     "ἦν",
+     "προσέβαλεν",
+     "ἂν",
+     "ὅπου",
+     "οἱ",
+     "πολέμιοι",
+     "ἀσθενέστατοι",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "If the citizens had been wiser, they would have chosen whomever they considered best.",
+    "answer": "εἰ οἱ πολῖται σοφώτεροι ἦσαν, εἵλοντο ἂν ὅντινα ἄριστον ἐνόμιζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολῖται",
+     "σοφώτεροι",
+     "ἦσαν",
+     "εἵλοντο",
+     "ἂν",
+     "ὅντινα",
+     "ἄριστον",
+     "ἐνόμιζον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t10",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "You ought to have guarded the gates, so that the barbarians might not have entered.",
+    "answer": "ἐχρῆν σε τὰς πύλας φυλάξαι, ἵνα μὴ οἱ βάρβαροι εἰσῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐχρῆν",
+     "σε",
+     "τὰς",
+     "πύλας",
+     "φυλάξαι",
+     "ἵνα",
+     "μὴ",
+     "οἱ",
+     "βάρβαροι",
+     "εἰσῆλθον"
+    ]
+   },
+   {
+    "prompt": "I should have liked to free the prisoners, so that they might have seen their homeland again.",
+    "answer": "ἐβουλόμην ἂν τοὺς δεσμώτας λῦσαι, ἵνα τὴν πατρίδα αὖθις εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλόμην",
+     "ἂν",
+     "τοὺς",
+     "δεσμώτας",
+     "λῦσαι",
+     "ἵνα",
+     "τὴν",
+     "πατρίδα",
+     "αὖθις",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "Why did we not abide by the treaty, so that we might have escaped the war?",
+    "answer": "τί οὐκ ἐνεμείναμεν ταῖς σπονδαῖς, ἵνα τὸν πόλεμον ἐφύγομεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "οὐκ",
+     "ἐνεμείναμεν",
+     "ταῖς",
+     "σπονδαῖς",
+     "ἵνα",
+     "τὸν",
+     "πόλεμον",
+     "ἐφύγομεν"
+    ]
+   },
+   {
+    "prompt": "I would not have ceased speaking until I had persuaded the jurors.",
+    "answer": "οὐκ ἂν ἐπαυσάμην λέγων, πρὶν τοὺς δικαστὰς ἔπεισα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἐπαυσάμην",
+     "λέγων",
+     "πρὶν",
+     "τοὺς",
+     "δικαστὰς",
+     "ἔπεισα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t11",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "Let us honor the gods, so that they may grant whatever we ask.",
+    "answer": "τοὺς θεοὺς τιμῶμεν, ἵνα διδῶσιν ὅσα ἂν αἰτῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "θεοὺς",
+     "τιμῶμεν",
+     "ἵνα",
+     "διδῶσιν",
+     "ὅσα",
+     "ἂν",
+     "αἰτῶμεν"
+    ]
+   },
+   {
+    "prompt": "Let us not desert the post to which we may be assigned.",
+    "answer": "μὴ λίπωμεν τὴν τάξιν ἣν ἂν ταχθῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "λίπωμεν",
+     "τὴν",
+     "τάξιν",
+     "ἣν",
+     "ἂν",
+     "ταχθῶμεν"
+    ]
+   },
+   {
+    "prompt": "Let us rest, whenever we have accomplished whatever we set out to do.",
+    "answer": "ἀναπαυώμεθα, ἐπειδὰν διαπράξωμεν ὅσα ἂν προελώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀναπαυώμεθα",
+     "ἐπειδὰν",
+     "διαπράξωμεν",
+     "ὅσα",
+     "ἂν",
+     "προελώμεθα"
+    ]
+   },
+   {
+    "prompt": "Let us guard the city, so that we may keep safe whatever the allies entrust to us.",
+    "answer": "τὴν πόλιν φυλάττωμεν, ἵνα σῴζωμεν ὅσα ἂν οἱ σύμμαχοι ἡμῖν πιστεύωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "πόλιν",
+     "φυλάττωμεν",
+     "ἵνα",
+     "σῴζωμεν",
+     "ὅσα",
+     "ἂν",
+     "οἱ",
+     "σύμμαχοι",
+     "ἡμῖν",
+     "πιστεύωσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t12",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "Whenever he caught the robbers plundering the land, he used to punish them harshly.",
+    "answer": "ὁπότε τοὺς λῃστὰς τὴν χώραν πορθοῦντας λάβοι, χαλεπῶς αὐτοὺς ἐκόλαζεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "τοὺς",
+     "λῃστὰς",
+     "τὴν",
+     "χώραν",
+     "πορθοῦντας",
+     "λάβοι",
+     "χαλεπῶς",
+     "αὐτοὺς",
+     "ἐκόλαζεν"
+    ]
+   },
+   {
+    "prompt": "Whenever he found a stranger in want, he used to share his food with him.",
+    "answer": "ὁπότε ξένον ἀποροῦντα εὕροι, τῆς τροφῆς αὐτῷ μετεδίδου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ξένον",
+     "ἀποροῦντα",
+     "εὕροι",
+     "τῆς",
+     "τροφῆς",
+     "αὐτῷ",
+     "μετεδίδου"
+    ]
+   },
+   {
+    "prompt": "The old man used to praise the young whenever they displayed self-control.",
+    "answer": "ὁ γέρων τοὺς νέους ἐπῄνει, ὁπότε σωφροσύνην ἐπιδείξαιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τοὺς",
+     "νέους",
+     "ἐπῄνει",
+     "ὁπότε",
+     "σωφροσύνην",
+     "ἐπιδείξαιντο"
+    ]
+   },
+   {
+    "prompt": "In the assembly he used to reject whatever proposals appeared false to him.",
+    "answer": "ἐν τῇ ἐκκλησίᾳ ἀπεδοκίμαζεν ὅσα βουλεύματα ψευδῆ αὐτῷ φαίνοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἀπεδοκίμαζεν",
+     "ὅσα",
+     "βουλεύματα",
+     "ψευδῆ",
+     "αὐτῷ",
+     "φαίνοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t13",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "If we had been braver, we would have seized whatever the enemy possessed.",
+    "answer": "εἰ ἀνδρειότεροι ἦμεν, εἵλομεν ἂν ὅσα οἱ πολέμιοι ἐκέκτηντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἀνδρειότεροι",
+     "ἦμεν",
+     "εἵλομεν",
+     "ἂν",
+     "ὅσα",
+     "οἱ",
+     "πολέμιοι",
+     "ἐκέκτηντο"
+    ]
+   },
+   {
+    "prompt": "If the king had wished, he would have destroyed every city that resisted him.",
+    "answer": "εἰ ὁ βασιλεὺς ἐβούλετο, διέφθειρεν ἂν πᾶσαν πόλιν ἥτις αὐτῷ ἀντέστη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "βασιλεὺς",
+     "ἐβούλετο",
+     "διέφθειρεν",
+     "ἂν",
+     "πᾶσαν",
+     "πόλιν",
+     "ἥτις",
+     "αὐτῷ",
+     "ἀντέστη"
+    ]
+   },
+   {
+    "prompt": "If I had been a juror, I would have punished whoever committed injustice.",
+    "answer": "εἰ δικαστὴς ἦν, ἐκόλασα ἂν ὅστις ἠδίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δικαστὴς",
+     "ἦν",
+     "ἐκόλασα",
+     "ἂν",
+     "ὅστις",
+     "ἠδίκησεν"
+    ]
+   },
+   {
+    "prompt": "If the soldiers had had provisions, they would have marched wherever the general led.",
+    "answer": "εἰ οἱ στρατιῶται τὰ ἐπιτήδεια εἶχον, ἐπορεύθησαν ἂν ὅποι ὁ στρατηγὸς ἡγήσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ἐπιτήδεια",
+     "εἶχον",
+     "ἐπορεύθησαν",
+     "ἂν",
+     "ὅποι",
+     "ὁ",
+     "στρατηγὸς",
+     "ἡγήσατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t14",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "I would not have stopped fighting until I had driven out the tyrant.",
+    "answer": "οὐκ ἂν ἐπαυσάμην μαχόμενος, ἕως τὸν τύραννον ἐξήλασα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἐπαυσάμην",
+     "μαχόμενος",
+     "ἕως",
+     "τὸν",
+     "τύραννον",
+     "ἐξήλασα"
+    ]
+   },
+   {
+    "prompt": "You ought to have fortified the acropolis, so that the barbarians could not have captured it.",
+    "answer": "ἐχρῆν σε τὴν ἀκρόπολιν τειχίσαι, ἵνα οἱ βάρβαροι μὴ εἷλον αὐτήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐχρῆν",
+     "σε",
+     "τὴν",
+     "ἀκρόπολιν",
+     "τειχίσαι",
+     "ἵνα",
+     "οἱ",
+     "βάρβαροι",
+     "μὴ",
+     "εἷλον",
+     "αὐτήν"
+    ]
+   },
+   {
+    "prompt": "Would that the citizens had been able to act, so that they might have saved the city.",
+    "answer": "εἴθε οἱ πολῖται οἷοί τε ἐγένοντο πράττειν, ἵνα τὴν πόλιν ἔσωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "πολῖται",
+     "οἷοί",
+     "τε",
+     "ἐγένοντο",
+     "πράττειν",
+     "ἵνα",
+     "τὴν",
+     "πόλιν",
+     "ἔσωσαν"
+    ]
+   },
+   {
+    "prompt": "We ought not to have advised about the other matters before we had ended the war.",
+    "answer": "οὐκ ἐχρῆν ἡμᾶς περὶ τῶν ἄλλων συμβουλεύειν, πρὶν τὸν πόλεμον κατελύσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐχρῆν",
+     "ἡμᾶς",
+     "περὶ",
+     "τῶν",
+     "ἄλλων",
+     "συμβουλεύειν",
+     "πρὶν",
+     "τὸν",
+     "πόλεμον",
+     "κατελύσαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t15",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "How could anyone praise a poet whose poems he did not hear?",
+    "answer": "πῶς ἄν τις ἐπαινέσειε ποιητὴν οὗ τὰ ποιήματα μὴ ἀκούοι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἄν",
+     "τις",
+     "ἐπαινέσειε",
+     "ποιητὴν",
+     "οὗ",
+     "τὰ",
+     "ποιήματα",
+     "μὴ",
+     "ἀκούοι"
+    ]
+   },
+   {
+    "prompt": "Who could trust those whom he knew to be deceiving him?",
+    "answer": "τίς ἂν πιστεύσειε τούτοις οὓς εἰδείη ἑαυτὸν ἐξαπατῶντας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "πιστεύσειε",
+     "τούτοις",
+     "οὓς",
+     "εἰδείη",
+     "ἑαυτὸν",
+     "ἐξαπατῶντας"
+    ]
+   },
+   {
+    "prompt": "No one could be wise in those things which he had not learned.",
+    "answer": "οὐδεὶς ἂν σοφὸς εἴη ἐν τούτοις ἃ μὴ μάθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἂν",
+     "σοφὸς",
+     "εἴη",
+     "ἐν",
+     "τούτοις",
+     "ἃ",
+     "μὴ",
+     "μάθοι"
+    ]
+   },
+   {
+    "prompt": "Who could love a city in which he received no honor?",
+    "answer": "τίς ἂν φιλήσειε πόλιν ἐν ᾗ μηδεμίαν τιμὴν λαμβάνοι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἂν",
+     "φιλήσειε",
+     "πόλιν",
+     "ἐν",
+     "ᾗ",
+     "μηδεμίαν",
+     "τιμὴν",
+     "λαμβάνοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t16",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "May I die whenever I no longer delight in life.",
+    "answer": "τεθναίην, ὁπότε μηκέτι τῇ ζωῇ χαίροιμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τεθναίην",
+     "ὁπότε",
+     "μηκέτι",
+     "τῇ",
+     "ζωῇ",
+     "χαίροιμι"
+    ]
+   },
+   {
+    "prompt": "Would that some messenger might come who would report our troubles.",
+    "answer": "ἔλθοι τις ἄγγελος, ὅστις τὰ ἡμέτερα κακὰ ἐξαγγείλειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλθοι",
+     "τις",
+     "ἄγγελος",
+     "ὅστις",
+     "τὰ",
+     "ἡμέτερα",
+     "κακὰ",
+     "ἐξαγγείλειεν"
+    ]
+   },
+   {
+    "prompt": "May you prosper wherever you go and whatever you do.",
+    "answer": "εὖ πράττοις, ὅποι πορεύοιο καὶ ὅ τι ποιοίης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "πράττοις",
+     "ὅποι",
+     "πορεύοιο",
+     "καὶ",
+     "ὅ",
+     "τι",
+     "ποιοίης"
+    ]
+   },
+   {
+    "prompt": "I would gladly eat and drink whenever I wished.",
+    "answer": "ἡδέως ἂν ἐσθίοιμι καὶ πίνοιμι, ὁπότε βουλοίμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἂν",
+     "ἐσθίοιμι",
+     "καὶ",
+     "πίνοιμι",
+     "ὁπότε",
+     "βουλοίμην"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t17",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "Let us take counsel about the war, so that what we decide may be accomplished.",
+    "answer": "βουλευώμεθα περὶ τοῦ πολέμου, ἵνα, ἃ ἂν δόξῃ ἡμῖν, ταῦτα περαίνηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλευώμεθα",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "ἵνα",
+     "ἃ",
+     "ἂν",
+     "δόξῃ",
+     "ἡμῖν",
+     "ταῦτα",
+     "περαίνηται"
+    ]
+   },
+   {
+    "prompt": "Let us honor him who conquers the barbarians.",
+    "answer": "τιμῶμεν τοῦτον ὃς ἂν τοὺς βαρβάρους νικήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμῶμεν",
+     "τοῦτον",
+     "ὃς",
+     "ἂν",
+     "τοὺς",
+     "βαρβάρους",
+     "νικήσῃ"
+    ]
+   },
+   {
+    "prompt": "Let us wait until the commander gives the signal.",
+    "answer": "περιμένωμεν, ἕως ἂν ὁ ἄρχων τὸ σημεῖον δῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περιμένωμεν",
+     "ἕως",
+     "ἂν",
+     "ὁ",
+     "ἄρχων",
+     "τὸ",
+     "σημεῖον",
+     "δῷ"
+    ]
+   },
+   {
+    "prompt": "Let us not begin the battle before the allies arrive.",
+    "answer": "μὴ ἀρχώμεθα τῆς μάχης, πρὶν ἂν οἱ σύμμαχοι ἀφίκωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἀρχώμεθα",
+     "τῆς",
+     "μάχης",
+     "πρὶν",
+     "ἂν",
+     "οἱ",
+     "σύμμαχοι",
+     "ἀφίκωνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t18",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "He used to praise whoever fought bravely against the enemy.",
+    "answer": "ἐπῄνει ὅστις ἀνδρείως πρὸς τοὺς πολεμίους μάχοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπῄνει",
+     "ὅστις",
+     "ἀνδρείως",
+     "πρὸς",
+     "τοὺς",
+     "πολεμίους",
+     "μάχοιτο"
+    ]
+   },
+   {
+    "prompt": "Whenever he saw the soldiers doing something noble, he used to reward them.",
+    "answer": "ὁπότε τοὺς στρατιώτας ἴδοι καλόν τι ποιοῦντας, ἠμείβετο αὐτούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "τοὺς",
+     "στρατιώτας",
+     "ἴδοι",
+     "καλόν",
+     "τι",
+     "ποιοῦντας",
+     "ἠμείβετο",
+     "αὐτούς"
+    ]
+   },
+   {
+    "prompt": "He used to help eagerly whoever asked anything of him.",
+    "answer": "ἐβοήθει προθύμως τούτῳ ὅστις τι αὐτοῦ δεηθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβοήθει",
+     "προθύμως",
+     "τούτῳ",
+     "ὅστις",
+     "τι",
+     "αὐτοῦ",
+     "δεηθείη"
+    ]
+   },
+   {
+    "prompt": "Whenever the barbarians attacked, he used to lead out the army.",
+    "answer": "ὁπότε οἱ βάρβαροι προσβάλοιεν, ἐξῆγε τὸ στράτευμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "βάρβαροι",
+     "προσβάλοιεν",
+     "ἐξῆγε",
+     "τὸ",
+     "στράτευμα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t19",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "How could a judge condemn a man whose deeds he did not know?",
+    "answer": "πῶς ἂν δικαστὴς καταψηφίσαιτο ἀνδρὸς οὗ τὰ ἔργα μὴ εἰδείη;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἄν",
+     "δικαστής",
+     "καταψηφίσαιτο",
+     "ἀνδρός",
+     "οὗ",
+     "τά",
+     "ἔργα",
+     "μή",
+     "εἰδείη"
+    ]
+   },
+   {
+    "prompt": "Who could obey a leader whom he did not trust?",
+    "answer": "τίς ἂν ἡγεμόνι πείθοιτο ᾧ μὴ πιστεύοι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "ἄν",
+     "ἡγεμόνι",
+     "πείθοιτο",
+     "ᾧ",
+     "μή",
+     "πιστεύοι"
+    ]
+   },
+   {
+    "prompt": "May each man practice whatever craft he knows.",
+    "answer": "πράττοι ἕκαστος ἣν τέχνην εἰδείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πράττοι",
+     "ἕκαστος",
+     "ἥν",
+     "τέχνην",
+     "εἰδείη"
+    ]
+   },
+   {
+    "prompt": "Would that some ally would come who might announce the victory.",
+    "answer": "ἔλθοι τις σύμμαχος ὅστις τὴν νίκην ἀγγείλειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλθοι",
+     "τις",
+     "σύμμαχος",
+     "ὅστις",
+     "τήν",
+     "νίκην",
+     "ἀγγείλειεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t20",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "I would gladly wait until the storm should cease.",
+    "answer": "ἡδέως ἂν μένοιμι ἕως ὁ χειμὼν παύσαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἄν",
+     "μένοιμι",
+     "ἕως",
+     "ὁ",
+     "χειμών",
+     "παύσαιτο"
+    ]
+   },
+   {
+    "prompt": "May I never grow weary until I free the city.",
+    "answer": "μήποτε κάμοιμι πρὶν τὴν πόλιν ἐλευθερώσαιμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήποτε",
+     "κάμοιμι",
+     "πρίν",
+     "τήν",
+     "πόλιν",
+     "ἐλευθερώσαιμι"
+    ]
+   },
+   {
+    "prompt": "May the enemy not depart until we take the walls.",
+    "answer": "μὴ οἱ πολέμιοι ἀπέλθοιεν πρὶν τὰ τείχη λάβοιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "ἀπέλθοιεν",
+     "πρίν",
+     "τά",
+     "τείχη",
+     "λάβοιμεν"
+    ]
+   },
+   {
+    "prompt": "I would not cease speaking until I persuaded the people.",
+    "answer": "οὐκ ἂν παυσαίμην λέγων πρὶν τὸν δῆμον πείσαιμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἄν",
+     "παυσαίμην",
+     "λέγων",
+     "πρίν",
+     "τόν",
+     "δῆμον",
+     "πείσαιμι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t21",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "If I had had wealth, I would have paid back whatever I owed.",
+    "answer": "εἰ χρήματα εἶχον, ἀπέδωκα ἂν ὅσα ὤφειλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "χρήματα",
+     "εἶχον",
+     "ἀπέδωκα",
+     "ἄν",
+     "ὅσα",
+     "ὤφειλον"
+    ]
+   },
+   {
+    "prompt": "If the general had been present, he would have punished whoever fled from the battle.",
+    "answer": "εἰ ὁ στρατηγὸς παρῆν, ἐκόλασεν ἂν ὅστις ἐκ τῆς μάχης ἔφυγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγός",
+     "παρῆν",
+     "ἐκόλασεν",
+     "ἄν",
+     "ὅστις",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "ἔφυγεν"
+    ]
+   },
+   {
+    "prompt": "If you had been present, you would have praised whatever the poet said.",
+    "answer": "εἰ παρῆσθα, ἐπῄνεσας ἂν ὅ τι ὁ ποιητὴς εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "παρῆσθα",
+     "ἐπῄνεσας",
+     "ἄν",
+     "ὅ",
+     "τι",
+     "ὁ",
+     "ποιητής",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "If we had conquered, we would have freed whatever cities the tyrant held.",
+    "answer": "εἰ ἐνικήσαμεν, ἠλευθερώσαμεν ἂν ὅσας πόλεις ὁ τύραννος εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἐνικήσαμεν",
+     "ἠλευθερώσαμεν",
+     "ἄν",
+     "ὅσας",
+     "πόλεις",
+     "ὁ",
+     "τύραννος",
+     "εἶχεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t22",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "I would not have stopped searching until I found the truth.",
+    "answer": "οὐκ ἂν ἐπαυσάμην ζητῶν ἕως τὸ ἀληθὲς ηὗρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἄν",
+     "ἐπαυσάμην",
+     "ζητῶν",
+     "ἕως",
+     "τό",
+     "ἀληθές",
+     "ηὗρον"
+    ]
+   },
+   {
+    "prompt": "He ought not to have given advice before he heard both parties.",
+    "answer": "οὐκ ἐχρῆν αὐτὸν συμβουλεύειν πρὶν ἀμφοτέρων ἤκουσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐχρῆν",
+     "αὐτόν",
+     "συμβουλεύειν",
+     "πρίν",
+     "ἀμφοτέρων",
+     "ἤκουσεν"
+    ]
+   },
+   {
+    "prompt": "He ought to have waited until the herald gave the signal.",
+    "answer": "ἐχρῆν αὐτὸν μένειν ἕως ὁ κῆρυξ τὸ σημεῖον ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐχρῆν",
+     "αὐτόν",
+     "μένειν",
+     "ἕως",
+     "ὁ",
+     "κῆρυξ",
+     "τό",
+     "σημεῖον",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "If he had been present, he would not have departed before he saw the end.",
+    "answer": "εἰ παρῆν, οὐκ ἂν ἀπῆλθε πρὶν τὸ τέλος εἶδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "παρῆν",
+     "οὐκ",
+     "ἄν",
+     "ἀπῆλθε",
+     "πρίν",
+     "τό",
+     "τέλος",
+     "εἶδεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t23",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "Would that the citizens were wiser, so that they might choose better rulers.",
+    "answer": "εἴθε οἱ πολῖται σοφώτεροι ἦσαν, ἵνα βελτίους ἄρχοντας ᾑροῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "πολῖται",
+     "σοφώτεροι",
+     "ἦσαν",
+     "ἵνα",
+     "βελτίους",
+     "ἄρχοντας",
+     "ᾑροῦντο"
+    ]
+   },
+   {
+    "prompt": "I should have liked you to be present, so that you might have judged the matter yourself.",
+    "answer": "ἐβουλόμην ἂν σε παρεῖναι, ἵνα αὐτὸς τὸ πρᾶγμα ἔκρινας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλόμην",
+     "ἄν",
+     "σέ",
+     "παρεῖναι",
+     "ἵνα",
+     "αὐτός",
+     "τό",
+     "πρᾶγμα",
+     "ἔκρινας"
+    ]
+   },
+   {
+    "prompt": "Why did we not guard the walls, so that the barbarians might not have entered?",
+    "answer": "τί οὐκ ἐφυλάξαμεν τὰ τείχη, ἵνα οἱ βάρβαροι μὴ εἰσῆλθον;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "οὐκ",
+     "ἐφυλάξαμεν",
+     "τά",
+     "τείχη",
+     "ἵνα",
+     "οἱ",
+     "βάρβαροι",
+     "μή",
+     "εἰσῆλθον"
+    ]
+   },
+   {
+    "prompt": "I ought to have taken the pledges then, so that he could not have betrayed us.",
+    "answer": "ἔδει τὰ πιστὰ τότε λαβεῖν, ἵνα μὴ ἡμᾶς προέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδει",
+     "τά",
+     "πιστά",
+     "τότε",
+     "λαβεῖν",
+     "ἵνα",
+     "μή",
+     "ἡμᾶς",
+     "προέδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-t24",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "He used to honor whoever brought aid to the city.",
+    "answer": "ἐτίμα ὅστις τῇ πόλει βοηθήσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐτίμα",
+     "ὅστις",
+     "τῇ",
+     "πόλει",
+     "βοηθήσειεν"
+    ]
+   },
+   {
+    "prompt": "Whenever he saw someone at a loss, he used to give money.",
+    "answer": "ὁπότε τινὰ ἀποροῦντα ἴδοι, χρήματα ἐδίδου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "τινά",
+     "ἀποροῦντα",
+     "ἴδοι",
+     "χρήματα",
+     "ἐδίδου"
+    ]
+   },
+   {
+    "prompt": "Whenever the soldiers captured a city, they used to spare the temples.",
+    "answer": "ὁπότε οἱ στρατιῶται πόλιν λάβοιεν, τῶν ἱερῶν ἐφείδοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "στρατιῶται",
+     "πόλιν",
+     "λάβοιεν",
+     "τῶν",
+     "ἱερῶν",
+     "ἐφείδοντο"
+    ]
+   },
+   {
+    "prompt": "He used to praise whoever boldly spoke the truth.",
+    "answer": "ἐπῄνει ὅστις θαρραλέως τὴν ἀλήθειαν λέγοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπῄνει",
+     "ὅστις",
+     "θαρραλέως",
+     "τήν",
+     "ἀλήθειαν",
+     "λέγοι"
+    ]
+   }
+  ]
  }
 ]

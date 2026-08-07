@@ -404,5 +404,442 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2159-compound-and-complex-sentences-t7",
+  "sectionId": "sm-2159-compound-and-complex-sentences",
+  "questions": [
+   {
+    "prompt": "The young men were hunting in the mountains, but the old men remained in the marketplace.",
+    "answer": "οἱ μὲν νεανίαι ἐν τοῖς ὄρεσιν ἐθήρευον, οἱ δὲ γέροντες ἐν τῇ ἀγορᾷ ἔμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "νεανίαι",
+     "ἐν",
+     "τοῖς",
+     "ὄρεσιν",
+     "ἐθήρευον",
+     "δὲ",
+     "γέροντες",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἔμενον"
+    ]
+   },
+   {
+    "prompt": "The enemy did not attack the city, for they feared the citizens' courage.",
+    "answer": "οἱ πολέμιοι τῇ πόλει οὐ προσέβαλον· ἐφοβοῦντο γὰρ τὴν τῶν πολιτῶν ἀνδρείαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τῇ",
+     "πόλει",
+     "οὐ",
+     "προσέβαλον",
+     "ἐφοβοῦντο",
+     "γὰρ",
+     "τὴν",
+     "τῶν",
+     "πολιτῶν",
+     "ἀνδρείαν"
+    ]
+   },
+   {
+    "prompt": "Both the general and the soldiers longed for their fatherland.",
+    "answer": "ὅ τε στρατηγὸς καὶ οἱ στρατιῶται τὴν πατρίδα ἐπόθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τε",
+     "στρατηγὸς",
+     "καὶ",
+     "οἱ",
+     "στρατιῶται",
+     "τὴν",
+     "πατρίδα",
+     "ἐπόθουν"
+    ]
+   },
+   {
+    "prompt": "The wealthy man despised the poor, but the gods hated his arrogance.",
+    "answer": "ὁ μὲν πλούσιος τῶν πενήτων κατεφρόνει, οἱ δὲ θεοὶ τὴν ὕβριν αὐτοῦ ἐμίσουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὲν",
+     "πλούσιος",
+     "τῶν",
+     "πενήτων",
+     "κατεφρόνει",
+     "οἱ",
+     "δὲ",
+     "θεοὶ",
+     "τὴν",
+     "ὕβριν",
+     "αὐτοῦ",
+     "ἐμίσουν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2159-compound-and-complex-sentences-t8",
+  "sectionId": "sm-2159-compound-and-complex-sentences",
+  "questions": [
+   {
+    "prompt": "The wind became so violent that the sailors were unable to hold the ship.",
+    "answer": "οὕτω βίαιος ἐγένετο ὁ ἄνεμος ὥστε οἱ ναῦται τὴν ναῦν κατέχειν οὐκ ἐδύναντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "βίαιος",
+     "ἐγένετο",
+     "ὁ",
+     "ἄνεμος",
+     "ὥστε",
+     "οἱ",
+     "ναῦται",
+     "τὴν",
+     "ναῦν",
+     "κατέχειν",
+     "οὐκ",
+     "ἐδύναντο"
+    ]
+   },
+   {
+    "prompt": "So great was the thunder that the birds fled from the trees.",
+    "answer": "τοσαύτη βροντὴ ἐγένετο ὥστε οἱ ὄρνιθες ἐκ τῶν δένδρων ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσαύτη",
+     "βροντὴ",
+     "ἐγένετο",
+     "ὥστε",
+     "οἱ",
+     "ὄρνιθες",
+     "ἐκ",
+     "τῶν",
+     "δένδρων",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The road was so rough that the horses advanced with difficulty.",
+    "answer": "οὕτω τραχεῖα ἦν ἡ ὁδὸς ὥστε οἱ ἵπποι χαλεπῶς προῄεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "τραχεῖα",
+     "ἦν",
+     "ἡ",
+     "ὁδὸς",
+     "ὥστε",
+     "οἱ",
+     "ἵπποι",
+     "χαλεπῶς",
+     "προῄεσαν"
+    ]
+   },
+   {
+    "prompt": "So great was their hatred that they refused to speak with one another.",
+    "answer": "τοσαύτη ἦν ἡ ἔχθρα αὐτῶν ὥστε ἀλλήλοις διαλέγεσθαι οὐκ ἤθελον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσαύτη",
+     "ἦν",
+     "ἡ",
+     "ἔχθρα",
+     "αὐτῶν",
+     "ὥστε",
+     "ἀλλήλοις",
+     "διαλέγεσθαι",
+     "οὐκ",
+     "ἤθελον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2159-compound-and-complex-sentences-t9",
+  "sectionId": "sm-2159-compound-and-complex-sentences",
+  "questions": [
+   {
+    "prompt": "When spring came, the farmers began to work the land.",
+    "answer": "ἐπεὶ τὸ ἔαρ ἦλθεν, οἱ γεωργοὶ τὴν γῆν ἐργάζεσθαι ἤρξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τὸ",
+     "ἔαρ",
+     "ἦλθεν",
+     "οἱ",
+     "γεωργοὶ",
+     "τὴν",
+     "γῆν",
+     "ἐργάζεσθαι",
+     "ἤρξαντο"
+    ]
+   },
+   {
+    "prompt": "While the general was sleeping, the enemy seized the camp.",
+    "answer": "ὅτε ὁ στρατηγὸς ἐκάθευδεν, οἱ πολέμιοι τὸ στρατόπεδον κατέλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτε",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκάθευδεν",
+     "οἱ",
+     "πολέμιοι",
+     "τὸ",
+     "στρατόπεδον",
+     "κατέλαβον"
+    ]
+   },
+   {
+    "prompt": "They did not cease fighting until the sun set.",
+    "answer": "οὐ πρότερον ἐπαύσαντο μαχόμενοι πρὶν ὁ ἥλιος ἔδυ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πρότερον",
+     "ἐπαύσαντο",
+     "μαχόμενοι",
+     "πρὶν",
+     "ὁ",
+     "ἥλιος",
+     "ἔδυ"
+    ]
+   },
+   {
+    "prompt": "After the ambassadors had spoken, the assembly deliberated for a long time.",
+    "answer": "ἐπεὶ οἱ πρέσβεις εἶπον, ἡ ἐκκλησία πολὺν χρόνον ἐβουλεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "πρέσβεις",
+     "εἶπον",
+     "ἡ",
+     "ἐκκλησία",
+     "πολὺν",
+     "χρόνον",
+     "ἐβουλεύετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2159-compound-and-complex-sentences-t10",
+  "sectionId": "sm-2159-compound-and-complex-sentences",
+  "questions": [
+   {
+    "prompt": "The men whom the city sent as allies fought eagerly.",
+    "answer": "οἱ ἄνδρες οὓς ἡ πόλις ἐπικούρους ἔπεμψεν προθύμως ἐμάχοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄνδρες",
+     "οὓς",
+     "ἡ",
+     "πόλις",
+     "ἐπικούρους",
+     "ἔπεμψεν",
+     "προθύμως",
+     "ἐμάχοντο"
+    ]
+   },
+   {
+    "prompt": "Whoever guards the laws is worthy of honor.",
+    "answer": "ὅστις τοὺς νόμους φυλάττει, τιμῆς ἄξιός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τοὺς",
+     "νόμους",
+     "φυλάττει",
+     "τιμῆς",
+     "ἄξιός",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The gifts which the king gave delighted the whole army.",
+    "answer": "τὰ δῶρα ἃ ὁ βασιλεὺς ἔδωκε πᾶν τὸ στράτευμα ηὔφρανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "δῶρα",
+     "ἃ",
+     "ὁ",
+     "βασιλεὺς",
+     "ἔδωκε",
+     "πᾶν",
+     "τὸ",
+     "στράτευμα",
+     "ηὔφρανεν"
+    ]
+   },
+   {
+    "prompt": "The island toward which we were sailing was full of wild beasts.",
+    "answer": "ἡ νῆσος πρὸς ἣν ἐπλέομεν ἀγρίων θηρίων μεστὴ ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νῆσος",
+     "πρὸς",
+     "ἣν",
+     "ἐπλέομεν",
+     "ἀγρίων",
+     "θηρίων",
+     "μεστὴ",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2159-compound-and-complex-sentences-t11",
+  "sectionId": "sm-2159-compound-and-complex-sentences",
+  "questions": [
+   {
+    "prompt": "The citizens took up arms in order to drive the tyrant from the city.",
+    "answer": "οἱ πολῖται τὰ ὅπλα ἔλαβον ἵνα τὸν τύραννον ἐκ τῆς πόλεως ἐξελάσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὰ",
+     "ὅπλα",
+     "ἔλαβον",
+     "ἵνα",
+     "τὸν",
+     "τύραννον",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐξελάσειαν"
+    ]
+   },
+   {
+    "prompt": "We honor the brave, because they die for their country.",
+    "answer": "τοὺς ἀνδρείους τιμῶμεν, διότι ὑπὲρ τῆς πατρίδος ἀποθνῄσκουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ἀνδρείους",
+     "τιμῶμεν",
+     "διότι",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθνῄσκουσιν"
+    ]
+   },
+   {
+    "prompt": "The scout reported that the enemy were encamping near the river.",
+    "answer": "ὁ σκοπὸς ἤγγειλεν ὅτι οἱ πολέμιοι παρὰ τῷ ποταμῷ στρατοπεδεύοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σκοπὸς",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ",
+     "στρατοπεδεύοιντο"
+    ]
+   },
+   {
+    "prompt": "He hid the money, so that the thieves might not find it.",
+    "answer": "τὸ ἀργύριον ἔκρυψεν ὅπως οἱ κλέπται αὐτὸ μὴ εὕροιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἀργύριον",
+     "ἔκρυψεν",
+     "ὅπως",
+     "οἱ",
+     "κλέπται",
+     "αὐτὸ",
+     "μὴ",
+     "εὕροιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2159-compound-and-complex-sentences-t12",
+  "sectionId": "sm-2159-compound-and-complex-sentences",
+  "questions": [
+   {
+    "prompt": "If you pursue wisdom, you will never be poor.",
+    "answer": "ἐὰν τὴν σοφίαν διώκῃς, οὐδέποτε πένης ἔσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὴν",
+     "σοφίαν",
+     "διώκῃς",
+     "οὐδέποτε",
+     "πένης",
+     "ἔσῃ"
+    ]
+   },
+   {
+    "prompt": "Although the enemy held the heights, our men did not despair.",
+    "answer": "εἰ καὶ οἱ πολέμιοι τὰ ἄκρα κατεῖχον, οἱ ἡμέτεροι οὐκ ἠθύμουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "καὶ",
+     "οἱ",
+     "πολέμιοι",
+     "τὰ",
+     "ἄκρα",
+     "κατεῖχον",
+     "ἡμέτεροι",
+     "οὐκ",
+     "ἠθύμουν"
+    ]
+   },
+   {
+    "prompt": "When the city had been captured, the women were led away as slaves.",
+    "answer": "ἐπεὶ ἡ πόλις ἑάλω, αἱ γυναῖκες ὡς δοῦλαι ἀπήχθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ἡ",
+     "πόλις",
+     "ἑάλω",
+     "αἱ",
+     "γυναῖκες",
+     "ὡς",
+     "δοῦλαι",
+     "ἀπήχθησαν"
+    ]
+   },
+   {
+    "prompt": "If anyone had betrayed the city, he would justly have been punished.",
+    "answer": "εἴ τις τὴν πόλιν προέδωκεν, δικαίως ἂν ἐκολάσθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "τὴν",
+     "πόλιν",
+     "προέδωκεν",
+     "δικαίως",
+     "ἂν",
+     "ἐκολάσθη"
+    ]
+   }
+  ]
  }
 ]

@@ -404,5 +404,431 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2182-anticipation-or-prolepsis-t7",
+  "sectionId": "sm-2182-anticipation-or-prolepsis",
+  "questions": [
+   {
+    "prompt": "The sailors knew the pilot, that he was skilled amid dangers.",
+    "answer": "ᾔδεσαν οἱ ναῦται τὸν κυβερνήτην ὅτι ἐν τοῖς κινδύνοις δεινὸς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔδεσαν",
+     "οἱ",
+     "ναῦται",
+     "τὸν",
+     "κυβερνήτην",
+     "ὅτι",
+     "ἐν",
+     "τοῖς",
+     "κινδύνοις",
+     "δεινὸς",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "We perceived the orator, that he was concealing the truth.",
+    "answer": "ᾐσθανόμεθα τὸν ῥήτορα ὅτι τὴν ἀλήθειαν κρύπτοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾐσθανόμεθα",
+     "τὸν",
+     "ῥήτορα",
+     "ὅτι",
+     "τὴν",
+     "ἀλήθειαν",
+     "κρύπτοι"
+    ]
+   },
+   {
+    "prompt": "The farmers recognized the land, how much fruit it was bearing.",
+    "answer": "ἔγνωσαν οἱ γεωργοὶ τὴν γῆν ὅσον καρπὸν φέροι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγνωσαν",
+     "οἱ",
+     "γεωργοὶ",
+     "τὴν",
+     "γῆν",
+     "ὅσον",
+     "καρπὸν",
+     "φέροι"
+    ]
+   },
+   {
+    "prompt": "I knew my brother, that he would never betray his friends.",
+    "answer": "ᾔδη τὸν ἀδελφὸν ὅτι οὐδέποτε τοὺς φίλους προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔδη",
+     "τὸν",
+     "ἀδελφὸν",
+     "ὅτι",
+     "οὐδέποτε",
+     "τοὺς",
+     "φίλους",
+     "προδοίη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2182-anticipation-or-prolepsis-t8",
+  "sectionId": "sm-2182-anticipation-or-prolepsis",
+  "questions": [
+   {
+    "prompt": "I fear the guards, lest by night they betray the gates to the enemy.",
+    "answer": "δέδοικα τοὺς φύλακας μὴ νύκτωρ τὰς πύλας τοῖς πολεμίοις προδῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "τοὺς",
+     "φύλακας",
+     "μὴ",
+     "νύκτωρ",
+     "τὰς",
+     "πύλας",
+     "τοῖς",
+     "πολεμίοις",
+     "προδῶσιν"
+    ]
+   },
+   {
+    "prompt": "The mother feared her son, lest he suffer something dreadful in the war.",
+    "answer": "ἐφοβεῖτο ἡ μήτηρ τὸν υἱὸν μὴ δεινόν τι πάθοι ἐν τῷ πολέμῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ἡ",
+     "μήτηρ",
+     "τὸν",
+     "υἱὸν",
+     "μὴ",
+     "δεινόν",
+     "τι",
+     "πάθοι",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ"
+    ]
+   },
+   {
+    "prompt": "We fear the river, lest, being deep, it hinder the crossing.",
+    "answer": "δεδοίκαμεν τὸν ποταμὸν μὴ βαθὺς ὤν τὴν διάβασιν κωλύσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεδοίκαμεν",
+     "τὸν",
+     "ποταμὸν",
+     "μὴ",
+     "βαθὺς",
+     "ὤν",
+     "τὴν",
+     "διάβασιν",
+     "κωλύσῃ"
+    ]
+   },
+   {
+    "prompt": "The general feared the allies, lest they be won over by the enemy's gifts.",
+    "answer": "ἐφοβεῖτο ὁ στρατηγὸς τοὺς συμμάχους μὴ τοῖς τῶν πολεμίων δώροις πεισθεῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "συμμάχους",
+     "μὴ",
+     "τοῖς",
+     "τῶν",
+     "πολεμίων",
+     "δώροις",
+     "πεισθεῖεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2182-anticipation-or-prolepsis-t9",
+  "sectionId": "sm-2182-anticipation-or-prolepsis",
+  "questions": [
+   {
+    "prompt": "Cyrus took care of the roads, that they should be safe for the merchants.",
+    "answer": "ἐπεμελεῖτο ὁ Κῦρος τῶν ὁδῶν ὅπως ἀσφαλεῖς τοῖς ἐμπόροις εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεμελεῖτο",
+     "ὁ",
+     "Κῦρος",
+     "τῶν",
+     "ὁδῶν",
+     "ὅπως",
+     "ἀσφαλεῖς",
+     "τοῖς",
+     "ἐμπόροις",
+     "εἶεν"
+    ]
+   },
+   {
+    "prompt": "The council saw to the grain, that it should be sufficient for the citizens.",
+    "answer": "ἐπεμελήθη ἡ βουλὴ τοῦ σίτου ὅπως ἱκανὸς τοῖς πολίταις γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεμελήθη",
+     "ἡ",
+     "βουλὴ",
+     "τοῦ",
+     "σίτου",
+     "ὅπως",
+     "ἱκανὸς",
+     "τοῖς",
+     "πολίταις",
+     "γένοιτο"
+    ]
+   },
+   {
+    "prompt": "The satrap contrived that the ships should not fall into the enemy's hands.",
+    "answer": "ἐμηχανᾶτο ὁ σατράπης τὰς ναῦς ὅπως μὴ εἰς τὰς τῶν πολεμίων χεῖρας ἔλθοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμηχανᾶτο",
+     "ὁ",
+     "σατράπης",
+     "τὰς",
+     "ναῦς",
+     "ὅπως",
+     "μὴ",
+     "εἰς",
+     "τῶν",
+     "πολεμίων",
+     "χεῖρας",
+     "ἔλθοιεν"
+    ]
+   },
+   {
+    "prompt": "Take care of the children, that they be educated in the laws.",
+    "answer": "ἐπιμελοῦ τῶν παίδων ὅπως ἐν τοῖς νόμοις παιδευθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπιμελοῦ",
+     "τῶν",
+     "παίδων",
+     "ὅπως",
+     "ἐν",
+     "τοῖς",
+     "νόμοις",
+     "παιδευθήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2182-anticipation-or-prolepsis-t10",
+  "sectionId": "sm-2182-anticipation-or-prolepsis",
+  "questions": [
+   {
+    "prompt": "The king asked about the army, whether it was already advancing.",
+    "answer": "ἠρώτα ὁ βασιλεὺς τὸ στράτευμα εἰ ἤδη προσελαύνοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠρώτα",
+     "ὁ",
+     "βασιλεὺς",
+     "τὸ",
+     "στράτευμα",
+     "εἰ",
+     "ἤδη",
+     "προσελαύνοι"
+    ]
+   },
+   {
+    "prompt": "I inquired about the letter, whether it had been written by the king himself.",
+    "answer": "ἐπυνθανόμην τὴν ἐπιστολὴν εἰ ὑπὸ αὐτοῦ τοῦ βασιλέως γραφείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπυνθανόμην",
+     "τὴν",
+     "ἐπιστολὴν",
+     "εἰ",
+     "ὑπὸ",
+     "αὐτοῦ",
+     "τοῦ",
+     "βασιλέως",
+     "γραφείη"
+    ]
+   },
+   {
+    "prompt": "The judge asked about the law, whether the young man understood it.",
+    "answer": "ἠρώτα ὁ δικαστὴς τὸν νόμον εἰ ὁ νεανίας ἐπίσταιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠρώτα",
+     "ὁ",
+     "δικαστὴς",
+     "τὸν",
+     "νόμον",
+     "εἰ",
+     "νεανίας",
+     "ἐπίσταιτο"
+    ]
+   },
+   {
+    "prompt": "They inquired about the exiles, whether they wished to return home.",
+    "answer": "ἐπυνθάνοντο τοὺς φυγάδας εἰ οἴκαδε κατελθεῖν βούλοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπυνθάνοντο",
+     "τοὺς",
+     "φυγάδας",
+     "εἰ",
+     "οἴκαδε",
+     "κατελθεῖν",
+     "βούλοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2182-anticipation-or-prolepsis-t11",
+  "sectionId": "sm-2182-anticipation-or-prolepsis",
+  "questions": [
+   {
+    "prompt": "You see the citizens, how eagerly they defend the fatherland.",
+    "answer": "ὁρᾷς τοὺς πολίτας ὡς προθύμως τὴν πατρίδα ἀμύνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρᾷς",
+     "τοὺς",
+     "πολίτας",
+     "ὡς",
+     "προθύμως",
+     "τὴν",
+     "πατρίδα",
+     "ἀμύνουσιν"
+    ]
+   },
+   {
+    "prompt": "Hear the poet, how sweetly he sings of the ancient heroes.",
+    "answer": "ἄκουε τὸν ποιητὴν ὡς ἡδέως τοὺς παλαιοὺς ἥρωας ᾄδει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄκουε",
+     "τὸν",
+     "ποιητὴν",
+     "ὡς",
+     "ἡδέως",
+     "τοὺς",
+     "παλαιοὺς",
+     "ἥρωας",
+     "ᾄδει"
+    ]
+   },
+   {
+    "prompt": "We watched the horsemen, how swiftly they were riding across the plain.",
+    "answer": "ἑωρῶμεν τοὺς ἱππέας ὡς ταχέως διὰ τοῦ πεδίου ἐλαύνοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑωρῶμεν",
+     "τοὺς",
+     "ἱππέας",
+     "ὡς",
+     "ταχέως",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἐλαύνοιεν"
+    ]
+   },
+   {
+    "prompt": "The stranger heard the Athenians, how wisely they were deliberating about the war.",
+    "answer": "ἤκουσεν ὁ ξένος τοὺς Ἀθηναίους ὡς σοφῶς περὶ τοῦ πολέμου βουλεύοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤκουσεν",
+     "ὁ",
+     "ξένος",
+     "τοὺς",
+     "Ἀθηναίους",
+     "ὡς",
+     "σοφῶς",
+     "περὶ",
+     "τοῦ",
+     "πολέμου",
+     "βουλεύοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2182-anticipation-or-prolepsis-t12",
+  "sectionId": "sm-2182-anticipation-or-prolepsis",
+  "questions": [
+   {
+    "prompt": "There came to the general a report of the cities, that they had abandoned the alliance.",
+    "answer": "ἦλθε τῷ στρατηγῷ ἀγγελία τῶν πόλεων ὅτι τὴν συμμαχίαν λίποιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦλθε",
+     "τῷ",
+     "στρατηγῷ",
+     "ἀγγελία",
+     "τῶν",
+     "πόλεων",
+     "ὅτι",
+     "τὴν",
+     "συμμαχίαν",
+     "λίποιεν"
+    ]
+   },
+   {
+    "prompt": "The scout announced the enemy, that they were already crossing the mountains.",
+    "answer": "ἤγγειλεν ὁ σκοπὸς τοὺς πολεμίους ὅτι ἤδη τὰ ὄρη διαβαίνοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤγγειλεν",
+     "ὁ",
+     "σκοπὸς",
+     "τοὺς",
+     "πολεμίους",
+     "ὅτι",
+     "ἤδη",
+     "τὰ",
+     "ὄρη",
+     "διαβαίνοιεν"
+    ]
+   },
+   {
+    "prompt": "The old man made clear about his sons, how piously they honored the gods.",
+    "answer": "ἐδήλωσεν ὁ γέρων τοὺς υἱοὺς ὡς εὐσεβῶς τοὺς θεοὺς τιμῷεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδήλωσεν",
+     "ὁ",
+     "γέρων",
+     "τοὺς",
+     "υἱοὺς",
+     "ὡς",
+     "εὐσεβῶς",
+     "θεοὺς",
+     "τιμῷεν"
+    ]
+   },
+   {
+    "prompt": "Everyone knows the goddess, that she guards the city well.",
+    "answer": "πάντες ἴσασι τὴν θεὸν ὅτι εὖ τὴν πόλιν φυλάττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ἴσασι",
+     "τὴν",
+     "θεὸν",
+     "ὅτι",
+     "εὖ",
+     "πόλιν",
+     "φυλάττει"
+    ]
+   }
+  ]
  }
 ]

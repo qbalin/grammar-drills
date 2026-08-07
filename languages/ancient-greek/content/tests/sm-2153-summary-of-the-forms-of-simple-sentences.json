@@ -359,5 +359,739 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t7",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "A wise man would never envy his own friends.",
+    "answer": "ὁ σοφὸς οὐκ ἄν ποτε τοῖς ἑαυτοῦ φίλοις φθονήσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "τοῖς",
+     "ἑαυτοῦ",
+     "φίλοις",
+     "φθονήσειεν"
+    ]
+   },
+   {
+    "prompt": "No one could have foreseen the disaster that then occurred.",
+    "answer": "οὐδεὶς ἂν τὴν τότε γενομένην συμφορὰν προεῖδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἄν",
+     "τήν",
+     "τότε",
+     "γενομένην",
+     "συμφοράν",
+     "προεῖδεν"
+    ]
+   },
+   {
+    "prompt": "Perhaps someone might say that we have erred.",
+    "answer": "ἴσως ἄν τις εἴποι ὅτι ἡμάρτομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσως",
+     "ἄν",
+     "τις",
+     "εἴποι",
+     "ὅτι",
+     "ἡμάρτομεν"
+    ]
+   },
+   {
+    "prompt": "I should have liked to hear the orator himself.",
+    "answer": "ἐβουλόμην ἂν αὐτοῦ τοῦ ῥήτορος ἀκοῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλόμην",
+     "ἄν",
+     "αὐτοῦ",
+     "τοῦ",
+     "ῥήτορος",
+     "ἀκοῦσαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t8",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Would that the sailors might return home safe!",
+    "answer": "εἴθε οἱ ναῦται ἀσφαλεῖς οἴκαδε ἐπανέλθοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "ναῦται",
+     "ἀσφαλεῖς",
+     "οἴκαδε",
+     "ἐπανέλθοιεν"
+    ]
+   },
+   {
+    "prompt": "Would that we were now free from these evils.",
+    "answer": "εἴθε νῦν τῶνδε τῶν κακῶν ἐλεύθεροι ἦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "νῦν",
+     "τῶνδε",
+     "τῶν",
+     "κακῶν",
+     "ἐλεύθεροι",
+     "ἦμεν"
+    ]
+   },
+   {
+    "prompt": "Would that the general had trusted his allies!",
+    "answer": "εἴθε ὁ στρατηγὸς τοῖς συμμάχοις ἐπίστευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ὁ",
+     "στρατηγός",
+     "τοῖς",
+     "συμμάχοις",
+     "ἐπίστευσεν"
+    ]
+   },
+   {
+    "prompt": "Would that I had never seen that day!",
+    "answer": "ὤφελον μήποτε ἐκείνην τὴν ἡμέραν ἰδεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤφελον",
+     "μήποτε",
+     "ἐκείνην",
+     "τήν",
+     "ἡμέραν",
+     "ἰδεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t9",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Since the ships have arrived, let us march at once against the barbarians.",
+    "answer": "τῶν νεῶν ἡκουσῶν ἐλαύνωμεν εὐθὺς ἐπὶ τοὺς βαρβάρους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "νεῶν",
+     "ἡκουσῶν",
+     "ἐλαύνωμεν",
+     "εὐθύς",
+     "ἐπί",
+     "τούς",
+     "βαρβάρους"
+    ]
+   },
+   {
+    "prompt": "Guard the gates carefully, soldiers.",
+    "answer": "φυλάττετε ἐπιμελῶς τὰς πύλας, ὦ στρατιῶται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάττετε",
+     "ἐπιμελῶς",
+     "τάς",
+     "πύλας",
+     "ὦ",
+     "στρατιῶται"
+    ]
+   },
+   {
+    "prompt": "See to it that in the dangers you show yourselves brave men.",
+    "answer": "ὅπως ἐν τοῖς κινδύνοις ἄνδρες ἀγαθοὶ ἔσεσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "ἐν",
+     "τοῖς",
+     "κινδύνοις",
+     "ἄνδρες",
+     "ἀγαθοί",
+     "ἔσεσθε"
+    ]
+   },
+   {
+    "prompt": "Let each man do his own work.",
+    "answer": "ἕκαστος τὸ ἑαυτοῦ ἔργον πραττέτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕκαστος",
+     "τό",
+     "ἑαυτοῦ",
+     "ἔργον",
+     "πραττέτω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t10",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Do not abandon your post in the battle.",
+    "answer": "μὴ λίπῃς τὴν τάξιν ἐν τῇ μάχῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "λίπῃς",
+     "τήν",
+     "τάξιν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ"
+    ]
+   },
+   {
+    "prompt": "Do not always yield to flatterers.",
+    "answer": "μὴ ἀεὶ τοῖς κόλαξιν ὑπάκουε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ἀεί",
+     "τοῖς",
+     "κόλαξιν",
+     "ὑπάκουε"
+    ]
+   },
+   {
+    "prompt": "You shall certainly not steal the golden bowl.",
+    "answer": "οὐ μὴ κλέψῃς τὴν χρυσῆν φιάλην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μή",
+     "κλέψῃς",
+     "τήν",
+     "χρυσῆν",
+     "φιάλην"
+    ]
+   },
+   {
+    "prompt": "Suppose our opponents are stronger; even so we shall fight.",
+    "answer": "ἔστωσαν οἱ ἐναντίοι κρείττους· ὅμως δὲ μαχούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστωσαν",
+     "οἱ",
+     "ἐναντίοι",
+     "κρείττους",
+     "ὅμως",
+     "δέ",
+     "μαχούμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t11",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "It is necessary for the citizens to resist tyranny.",
+    "answer": "δεῖ τοὺς πολίτας τῇ τυραννίδι ἀνθίστασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "τούς",
+     "πολίτας",
+     "τῇ",
+     "τυραννίδι",
+     "ἀνθίστασθαι"
+    ]
+   },
+   {
+    "prompt": "It is possible for us to make peace now.",
+    "answer": "ἔξεστιν ἡμῖν νῦν εἰρήνην ποιήσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔξεστιν",
+     "ἡμῖν",
+     "νῦν",
+     "εἰρήνην",
+     "ποιήσασθαι"
+    ]
+   },
+   {
+    "prompt": "In former times the general would encourage the young men before the battle.",
+    "answer": "πάλαι ὁ στρατηγὸς πρὸ τῆς μάχης τοὺς νέους ἂν ἐθάρσυνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάλαι",
+     "ὁ",
+     "στρατηγός",
+     "πρό",
+     "τῆς",
+     "μάχης",
+     "τούς",
+     "νέους",
+     "ἄν",
+     "ἐθάρσυνεν"
+    ]
+   },
+   {
+    "prompt": "How nobly the young men died for their country!",
+    "answer": "ὡς καλῶς ὑπὲρ τῆς πατρίδος ἀπέθανον οἱ νεανίαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "καλῶς",
+     "ὑπέρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀπέθανον",
+     "οἱ",
+     "νεανίαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t12",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "What are we to do about the present dangers?",
+    "answer": "τί ποιῶμεν περὶ τῶν παρόντων κινδύνων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ποιῶμεν",
+     "περί",
+     "τῶν",
+     "παρόντων",
+     "κινδύνων"
+    ]
+   },
+   {
+    "prompt": "Do you really think the judges are just?",
+    "answer": "ἆρα ἀληθῶς νομίζεις τοὺς δικαστὰς δικαίους εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "ἀληθῶς",
+     "νομίζεις",
+     "τούς",
+     "δικαστάς",
+     "δικαίους",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "How could I ever forget your kindness?",
+    "answer": "πῶς ἂν ἐγὼ τῆς σῆς εὐεργεσίας ἐπιλαθοίμην;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἄν",
+     "ἐγώ",
+     "τῆς",
+     "σῆς",
+     "εὐεργεσίας",
+     "ἐπιλαθοίμην"
+    ]
+   },
+   {
+    "prompt": "I suspect the enemy may be preparing for war.",
+    "answer": "μὴ οἱ πολέμιοι πόλεμον παρασκευάζωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "πόλεμον",
+     "παρασκευάζωνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t13",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "A brave man would never flee from danger.",
+    "answer": "ἀνὴρ ἀγαθὸς τὸν κίνδυνον οὐκ ἄν ποτε φύγοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνὴρ",
+     "ἀγαθὸς",
+     "τὸν",
+     "κίνδυνον",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "φύγοι"
+    ]
+   },
+   {
+    "prompt": "It was necessary for the ambassadors to speak the truth before the assembly.",
+    "answer": "ἔδει τοὺς πρέσβεις τὰ ἀληθῆ ἐν τῇ ἐκκλησίᾳ λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδει",
+     "τοὺς",
+     "πρέσβεις",
+     "τὰ",
+     "ἀληθῆ",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "Without the alliance we should have perished long ago.",
+    "answer": "ἄνευ τῆς συμμαχίας πάλαι ἂν ἀπωλόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄνευ",
+     "τῆς",
+     "συμμαχίας",
+     "πάλαι",
+     "ἂν",
+     "ἀπωλόμεθα"
+    ]
+   },
+   {
+    "prompt": "The allies will remain faithful throughout the whole war.",
+    "answer": "οἱ σύμμαχοι διὰ ὅλου τοῦ πολέμου πιστοὶ μενοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "διὰ",
+     "ὅλου",
+     "τοῦ",
+     "πολέμου",
+     "πιστοὶ",
+     "μενοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t14",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Let us march against the enemy while they are still unprepared.",
+    "answer": "ἐπὶ τοὺς πολεμίους πορευώμεθα ἔτι ἀπαρασκεύους ὄντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους",
+     "πορευώμεθα",
+     "ἔτι",
+     "ἀπαρασκεύους",
+     "ὄντας"
+    ]
+   },
+   {
+    "prompt": "Honor the gods and obey your parents, young man.",
+    "answer": "τοὺς θεοὺς τίμα καὶ τοῖς γονεῦσι πείθου, ὦ νεανία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "θεοὺς",
+     "τίμα",
+     "καὶ",
+     "τοῖς",
+     "γονεῦσι",
+     "πείθου",
+     "ὦ",
+     "νεανία"
+    ]
+   },
+   {
+    "prompt": "Do not despise the counsel of the old men.",
+    "answer": "μὴ καταφρονήσῃς τῆς τῶν γερόντων βουλῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "καταφρονήσῃς",
+     "τῆς",
+     "τῶν",
+     "γερόντων",
+     "βουλῆς"
+    ]
+   },
+   {
+    "prompt": "Never trust the words of a flatterer.",
+    "answer": "μηδέποτε τοῖς τοῦ κόλακος ῥήμασι πίστευε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδέποτε",
+     "τοῖς",
+     "τοῦ",
+     "κόλακος",
+     "ῥήμασι",
+     "πίστευε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t15",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "Would that the city might become free from its tyrants!",
+    "answer": "εἴθε ἡ πόλις ἐλευθέρα τῶν τυράννων γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "ἡ",
+     "πόλις",
+     "ἐλευθέρα",
+     "τῶν",
+     "τυράννων",
+     "γένοιτο"
+    ]
+   },
+   {
+    "prompt": "Would that our friends were now present!",
+    "answer": "εἴθε οἱ φίλοι νῦν παρῆσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "οἱ",
+     "φίλοι",
+     "νῦν",
+     "παρῆσαν"
+    ]
+   },
+   {
+    "prompt": "Would that we had never begun this civil strife!",
+    "answer": "εἴθε μηδέποτε τῆσδε τῆς στάσεως ἠρξάμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴθε",
+     "μηδέποτε",
+     "τῆσδε",
+     "τῆς",
+     "στάσεως",
+     "ἠρξάμεθα"
+    ]
+   },
+   {
+    "prompt": "Would that the traitor had never been born!",
+    "answer": "ὤφελε ὁ προδότης μήποτε γενέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤφελε",
+     "ὁ",
+     "προδότης",
+     "μήποτε",
+     "γενέσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t16",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "No one could easily endure such insults.",
+    "answer": "οὐδεὶς ἂν ῥᾳδίως τοιαύτας ὕβρεις φέροι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἂν",
+     "ῥᾳδίως",
+     "τοιαύτας",
+     "ὕβρεις",
+     "φέροι"
+    ]
+   },
+   {
+    "prompt": "You could not find a more faithful friend.",
+    "answer": "οὐκ ἂν εὕροις φίλον πιστότερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "εὕροις",
+     "φίλον",
+     "πιστότερον"
+    ]
+   },
+   {
+    "prompt": "Perhaps the orators would persuade the people.",
+    "answer": "ἴσως ἂν οἱ ῥήτορες τὸν δῆμον πείσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσως",
+     "ἂν",
+     "οἱ",
+     "ῥήτορες",
+     "τὸν",
+     "δῆμον",
+     "πείσειαν"
+    ]
+   },
+   {
+    "prompt": "Under a good general we should not have suffered these things.",
+    "answer": "ὑπὸ ἀγαθῷ στρατηγῷ ταῦτα οὐκ ἂν ἐπάθομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "ἀγαθῷ",
+     "στρατηγῷ",
+     "ταῦτα",
+     "οὐκ",
+     "ἂν",
+     "ἐπάθομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t17",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "You shall bury the dead with all honor.",
+    "answer": "θάψεις τοὺς νεκροὺς μετὰ πάσης τιμῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θάψεις",
+     "τοὺς",
+     "νεκροὺς",
+     "μετὰ",
+     "πάσης",
+     "τιμῆς"
+    ]
+   },
+   {
+    "prompt": "See to it that you show yourselves brave men in the battle.",
+    "answer": "ὅπως ἄνδρες ἀγαθοὶ ἔσεσθε ἐν τῇ μάχῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "ἄνδρες",
+     "ἀγαθοὶ",
+     "ἔσεσθε",
+     "ἐν",
+     "τῇ",
+     "μάχῃ"
+    ]
+   },
+   {
+    "prompt": "The barbarians will surely not cross the river.",
+    "answer": "οὐ μὴ οἱ βάρβαροι τὸν ποταμὸν διαβῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴ",
+     "οἱ",
+     "βάρβαροι",
+     "τὸν",
+     "ποταμὸν",
+     "διαβῶσιν"
+    ]
+   },
+   {
+    "prompt": "Take care that you do not fall into the hands of the enemy.",
+    "answer": "ὅπως μὴ εἰς τὰς τῶν πολεμίων χεῖρας ἐμπεσεῖσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "μὴ",
+     "εἰς",
+     "τὰς",
+     "τῶν",
+     "πολεμίων",
+     "χεῖρας",
+     "ἐμπεσεῖσθε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2153-summary-of-the-forms-of-simple-sentences-t18",
+  "sectionId": "sm-2153-summary-of-the-forms-of-simple-sentences",
+  "questions": [
+   {
+    "prompt": "How might we free our fatherland from these evils?",
+    "answer": "πῶς ἂν τὴν πατρίδα τῶνδε τῶν κακῶν ἀπαλλάξαιμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἂν",
+     "τὴν",
+     "πατρίδα",
+     "τῶνδε",
+     "τῶν",
+     "κακῶν",
+     "ἀπαλλάξαιμεν"
+    ]
+   },
+   {
+    "prompt": "I should like to hear the poet's song once again.",
+    "answer": "βουλοίμην ἂν τὴν τοῦ ποιητοῦ ᾠδὴν αὖθις ἀκοῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλοίμην",
+     "ἂν",
+     "τὴν",
+     "τοῦ",
+     "ποιητοῦ",
+     "ᾠδὴν",
+     "αὖθις",
+     "ἀκοῦσαι"
+    ]
+   },
+   {
+    "prompt": "Let us not lose heart, though the danger is great.",
+    "answer": "μὴ ἀθυμῶμεν, καίπερ μεγάλου ὄντος τοῦ κινδύνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἀθυμῶμεν",
+     "καίπερ",
+     "μεγάλου",
+     "ὄντος",
+     "τοῦ",
+     "κινδύνου"
+    ]
+   },
+   {
+    "prompt": "O that the gods would grant us victory over the barbarians!",
+    "answer": "εἰ γὰρ οἱ θεοὶ νίκην ἡμῖν κατὰ τῶν βαρβάρων δοῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "γὰρ",
+     "οἱ",
+     "θεοὶ",
+     "νίκην",
+     "ἡμῖν",
+     "κατὰ",
+     "τῶν",
+     "βαρβάρων",
+     "δοῖεν"
+    ]
+   }
+  ]
  }
 ]

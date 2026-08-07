@@ -401,5 +401,440 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2207-object-clauses-t7",
+  "sectionId": "sm-2207-object-clauses",
+  "questions": [
+   {
+    "prompt": "The generals were contriving how they might safely bring the army across the river.",
+    "answer": "ἐμηχανῶντο οἱ στρατηγοὶ ὅπως τὸ στράτευμα ἀσφαλῶς διὰ τοῦ ποταμοῦ διαβιβάσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμηχανῶντο",
+     "οἱ",
+     "στρατηγοί",
+     "ὅπως",
+     "τό",
+     "στράτευμα",
+     "ἀσφαλῶς",
+     "διά",
+     "τοῦ",
+     "ποταμοῦ",
+     "διαβιβάσουσιν"
+    ]
+   },
+   {
+    "prompt": "Take care, all of you, that the city shall never come under the power of tyrants.",
+    "answer": "ἐπιμελεῖσθε πάντες ὅπως ἡ πόλις μηδέποτε ὑπὸ τυράννοις γενήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπιμελεῖσθε",
+     "πάντες",
+     "ὅπως",
+     "ἡ",
+     "πόλις",
+     "μηδέποτε",
+     "ὑπό",
+     "τυράννοις",
+     "γενήσεται"
+    ]
+   },
+   {
+    "prompt": "The pilot was taking thought that the ship should not be destroyed upon the rocks.",
+    "answer": "ἐφρόντιζεν ὁ κυβερνήτης ὅπως ἡ ναῦς μὴ πρὸς ταῖς πέτραις διαφθαρήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφρόντιζεν",
+     "ὁ",
+     "κυβερνήτης",
+     "ὅπως",
+     "ἡ",
+     "ναῦς",
+     "μή",
+     "πρός",
+     "ταῖς",
+     "πέτραις",
+     "διαφθαρήσεται"
+    ]
+   },
+   {
+    "prompt": "We must see to it that the enemy shall not learn our plans beforehand.",
+    "answer": "δεῖ ἡμᾶς σκοπεῖν ὅπως οἱ πολέμιοι τὰ ἡμέτερα βουλεύματα μὴ προμαθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "ἡμᾶς",
+     "σκοπεῖν",
+     "ὅπως",
+     "οἱ",
+     "πολέμιοι",
+     "τά",
+     "ἡμέτερα",
+     "βουλεύματα",
+     "μή",
+     "προμαθήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2207-object-clauses-t8",
+  "sectionId": "sm-2207-object-clauses",
+  "questions": [
+   {
+    "prompt": "I fear that the citizens may hand the city over to the tyrant without a battle.",
+    "answer": "φοβοῦμαι μὴ οἱ πολῖται τὴν πόλιν ἄνευ μάχης τῷ τυράννῳ παραδῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οἱ",
+     "πολῖται",
+     "τήν",
+     "πόλιν",
+     "ἄνευ",
+     "μάχης",
+     "τῷ",
+     "τυράννῳ",
+     "παραδῶσιν"
+    ]
+   },
+   {
+    "prompt": "We are afraid that the god is angry with us on account of these deeds.",
+    "answer": "δέδιμεν μὴ ὁ θεὸς ἡμῖν διὰ ταῦτα τὰ ἔργα ὀργίζηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδιμεν",
+     "μή",
+     "ὁ",
+     "θεός",
+     "ἡμῖν",
+     "διά",
+     "ταῦτα",
+     "τά",
+     "ἔργα",
+     "ὀργίζηται"
+    ]
+   },
+   {
+    "prompt": "The mother fears that her son has died in the sea-battle.",
+    "answer": "φοβεῖται ἡ μήτηρ μὴ ὁ υἱὸς ἐν τῇ ναυμαχίᾳ τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβεῖται",
+     "ἡ",
+     "μήτηρ",
+     "μή",
+     "ὁ",
+     "υἱός",
+     "ἐν",
+     "τῇ",
+     "ναυμαχίᾳ",
+     "τέθνηκεν"
+    ]
+   },
+   {
+    "prompt": "The general was afraid that the soldiers would no longer obey his commands.",
+    "answer": "ἐφοβεῖτο ὁ στρατηγὸς μὴ οἱ στρατιῶται μηκέτι τοῖς παραγγέλμασι πείθοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ὁ",
+     "στρατηγός",
+     "μή",
+     "οἱ",
+     "στρατιῶται",
+     "μηκέτι",
+     "τοῖς",
+     "παραγγέλμασι",
+     "πείθοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2207-object-clauses-t9",
+  "sectionId": "sm-2207-object-clauses",
+  "questions": [
+   {
+    "prompt": "See to it, general, that the walls shall be guarded throughout the whole night.",
+    "answer": "ὅρα, ὦ στρατηγέ, ὅπως τὰ τείχη διὰ πάσης τῆς νυκτὸς φυλαχθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "ὦ",
+     "στρατηγέ",
+     "ὅπως",
+     "τά",
+     "τείχη",
+     "διά",
+     "πάσης",
+     "τῆς",
+     "νυκτός",
+     "φυλαχθήσεται"
+    ]
+   },
+   {
+    "prompt": "The ambassadors were negotiating how the war should be ended as quickly as possible.",
+    "answer": "ἔπραττον οἱ πρέσβεις ὅπως ὁ πόλεμος ὡς τάχιστα καταλυθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπραττον",
+     "οἱ",
+     "πρέσβεις",
+     "ὅπως",
+     "ὁ",
+     "πόλεμος",
+     "ὡς",
+     "τάχιστα",
+     "καταλυθήσεται"
+    ]
+   },
+   {
+    "prompt": "Each of the two must take care that he shall not disgrace his own household.",
+    "answer": "ἑκάτερον δεῖ ἐπιμελεῖσθαι ὅπως τὸν ἑαυτοῦ οἶκον μὴ καταισχυνεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑκάτερον",
+     "δεῖ",
+     "ἐπιμελεῖσθαι",
+     "ὅπως",
+     "τόν",
+     "ἑαυτοῦ",
+     "οἶκον",
+     "μή",
+     "καταισχυνεῖ"
+    ]
+   },
+   {
+    "prompt": "Let us contrive how we may drive the garrison out of the citadel.",
+    "answer": "μηχανώμεθα ὅπως τὴν φρουρὰν ἐκ τῆς ἀκροπόλεως ἐξελάσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηχανώμεθα",
+     "ὅπως",
+     "τήν",
+     "φρουράν",
+     "ἐκ",
+     "τῆς",
+     "ἀκροπόλεως",
+     "ἐξελάσωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2207-object-clauses-t10",
+  "sectionId": "sm-2207-object-clauses",
+  "questions": [
+   {
+    "prompt": "I am afraid that we shall not be able to persuade the assembly.",
+    "answer": "φοβοῦμαι μὴ οὐ δυνηθῶμεν τὴν ἐκκλησίαν πεῖσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οὐ",
+     "δυνηθῶμεν",
+     "τήν",
+     "ἐκκλησίαν",
+     "πεῖσαι"
+    ]
+   },
+   {
+    "prompt": "The farmer feared that the crops would not be gathered in before winter.",
+    "answer": "ἐδεδίει ὁ γεωργὸς μὴ οὐχ οἱ καρποὶ πρὸ τοῦ χειμῶνος συγκομισθῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδεδίει",
+     "ὁ",
+     "γεωργός",
+     "μή",
+     "οὐχ",
+     "οἱ",
+     "καρποί",
+     "πρό",
+     "τοῦ",
+     "χειμῶνος",
+     "συγκομισθῶσιν"
+    ]
+   },
+   {
+    "prompt": "We were afraid that our allies might not arrive in time to help.",
+    "answer": "ἐφοβούμεθα μὴ οὐχ οἱ σύμμαχοι ἐν καιρῷ ἀφίκοιντο ὥστε βοηθῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβούμεθα",
+     "μή",
+     "οὐχ",
+     "οἱ",
+     "σύμμαχοι",
+     "ἐν",
+     "καιρῷ",
+     "ἀφίκοιντο",
+     "ὥστε",
+     "βοηθῆσαι"
+    ]
+   },
+   {
+    "prompt": "The jurors feared that the defendant might not obtain a just trial.",
+    "answer": "ἐδεδοίκεσαν οἱ δικασταὶ μὴ οὐχ ὁ φεύγων δικαίας κρίσεως τύχοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδεδοίκεσαν",
+     "οἱ",
+     "δικασταί",
+     "μή",
+     "οὐχ",
+     "ὁ",
+     "φεύγων",
+     "δικαίας",
+     "κρίσεως",
+     "τύχοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2207-object-clauses-t11",
+  "sectionId": "sm-2207-object-clauses",
+  "questions": [
+   {
+    "prompt": "Since the enemy are near, we must take care that the camp shall be well fortified.",
+    "answer": "ἐγγὺς ὄντων τῶν πολεμίων, δεῖ ἐπιμελεῖσθαι ὅπως τὸ στρατόπεδον εὖ τειχισθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγγύς",
+     "ὄντων",
+     "τῶν",
+     "πολεμίων",
+     "δεῖ",
+     "ἐπιμελεῖσθαι",
+     "ὅπως",
+     "τό",
+     "στρατόπεδον",
+     "εὖ",
+     "τειχισθήσεται"
+    ]
+   },
+   {
+    "prompt": "The wise man takes thought how he shall live justly all his life.",
+    "answer": "ὁ σοφὸς φροντίζει ὅπως δικαίως πάντα τὸν βίον βιώσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφός",
+     "φροντίζει",
+     "ὅπως",
+     "δικαίως",
+     "πάντα",
+     "τόν",
+     "βίον",
+     "βιώσεται"
+    ]
+   },
+   {
+    "prompt": "Contrive, young men, how you shall benefit the city rather than harm it.",
+    "answer": "μηχανᾶσθε, ὦ νεανίαι, ὅπως τὴν πόλιν ὠφελήσετε μᾶλλον ἢ βλάψετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηχανᾶσθε",
+     "ὦ",
+     "νεανίαι",
+     "ὅπως",
+     "τήν",
+     "πόλιν",
+     "ὠφελήσετε",
+     "μᾶλλον",
+     "ἤ",
+     "βλάψετε"
+    ]
+   },
+   {
+    "prompt": "The council was providing that those who had done wrong should be punished.",
+    "answer": "ἡ βουλὴ παρεσκεύαζεν ὅπως οἱ ἠδικηκότες δίκην δώσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βουλή",
+     "παρεσκεύαζεν",
+     "ὅπως",
+     "οἱ",
+     "ἠδικηκότες",
+     "δίκην",
+     "δώσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2207-object-clauses-t12",
+  "sectionId": "sm-2207-object-clauses",
+  "questions": [
+   {
+    "prompt": "I fear that, while pursuing greater things, we may lose even what we now possess.",
+    "answer": "δέδοικα μὴ μείζονα διώκοντες καὶ τὰ παρόντα ἀπολέσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μή",
+     "μείζονα",
+     "διώκοντες",
+     "καί",
+     "τά",
+     "παρόντα",
+     "ἀπολέσωμεν"
+    ]
+   },
+   {
+    "prompt": "The Spartans were afraid that the Athenians might become too powerful by sea.",
+    "answer": "ἐφοβοῦντο οἱ Λακεδαιμόνιοι μὴ οἱ Ἀθηναῖοι κατὰ θάλατταν μείζους γένοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβοῦντο",
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "μή",
+     "Ἀθηναῖοι",
+     "κατά",
+     "θάλατταν",
+     "μείζους",
+     "γένοιντο"
+    ]
+   },
+   {
+    "prompt": "I hesitate to speak, fearing that I may give offense to the elders present.",
+    "answer": "ὀκνῶ λέγειν, δεδιὼς μὴ τοῖς παροῦσι πρεσβυτέροις προσκρούσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀκνῶ",
+     "λέγειν",
+     "δεδιώς",
+     "μή",
+     "τοῖς",
+     "παροῦσι",
+     "πρεσβυτέροις",
+     "προσκρούσω"
+    ]
+   },
+   {
+    "prompt": "The old man was afraid that his long labors might in the end prove vain.",
+    "answer": "ἐφοβεῖτο ὁ γέρων μὴ οἱ μακροὶ πόνοι τελευτῶντες μάταιοι γένοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ὁ",
+     "γέρων",
+     "μή",
+     "οἱ",
+     "μακροί",
+     "πόνοι",
+     "τελευτῶντες",
+     "μάταιοι",
+     "γένοιντο"
+    ]
+   }
+  ]
  }
 ]

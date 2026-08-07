@@ -382,5 +382,149 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2233-fear-relating-to-the-present-or-past-t7",
+  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+  "questions": [
+   {
+    "prompt": "I fear that the farmer has already sold his field to the stranger.",
+    "answer": "δέδοικα μὴ ὁ γεωργὸς τὸν ἀγρὸν ἤδη τῷ ξένῳ ἀπέδοτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μὴ",
+     "ὁ",
+     "γεωργὸς",
+     "τὸν",
+     "ἀγρὸν",
+     "ἤδη",
+     "τῷ",
+     "ξένῳ",
+     "ἀπέδοτο"
+    ]
+   },
+   {
+    "prompt": "The poor man is afraid that he has spent all his money in vain.",
+    "answer": "ὁ πένης φοβεῖται μὴ πάντα τὰ χρήματα μάτην ἀνήλωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πένης",
+     "φοβεῖται",
+     "μὴ",
+     "πάντα",
+     "τὰ",
+     "χρήματα",
+     "μάτην",
+     "ἀνήλωκεν"
+    ]
+   },
+   {
+    "prompt": "Take care that the guards were not asleep while the enemy were attacking the camp.",
+    "answer": "ὅρα μὴ οἱ φύλακες ἐκάθευδον τῶν πολεμίων τῷ στρατοπέδῳ προσβαλλόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "μὴ",
+     "οἱ",
+     "φύλακες",
+     "ἐκάθευδον",
+     "τῶν",
+     "πολεμίων",
+     "τῷ",
+     "στρατοπέδῳ",
+     "προσβαλλόντων"
+    ]
+   },
+   {
+    "prompt": "We are afraid that the exiles are already plotting against the city.",
+    "answer": "φοβούμεθα μὴ οἱ φυγάδες τῇ πόλει ἤδη ἐπιβουλεύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβούμεθα",
+     "μὴ",
+     "οἱ",
+     "φυγάδες",
+     "τῇ",
+     "πόλει",
+     "ἤδη",
+     "ἐπιβουλεύουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2233-fear-relating-to-the-present-or-past-t8",
+  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+  "questions": [
+   {
+    "prompt": "I fear that the woman has not hidden the truth from the judges.",
+    "answer": "δέδοικα μὴ ἡ γυνὴ τὸ ἀληθὲς τοὺς δικαστὰς οὐκ ἔκρυψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μὴ",
+     "ἡ",
+     "γυνὴ",
+     "τὸ",
+     "ἀληθὲς",
+     "τοὺς",
+     "δικαστὰς",
+     "οὐκ",
+     "ἔκρυψεν"
+    ]
+   },
+   {
+    "prompt": "We are afraid that the ships have already been destroyed by the storm.",
+    "answer": "φοβούμεθα μὴ αἱ νῆες ὑπὸ τοῦ χειμῶνος ἤδη διεφθάρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβούμεθα",
+     "μὴ",
+     "αἱ",
+     "νῆες",
+     "ὑπὸ",
+     "τοῦ",
+     "χειμῶνος",
+     "ἤδη",
+     "διεφθάρησαν"
+    ]
+   },
+   {
+    "prompt": "Have a care that the envoy was not deceived by the tyrant's promises.",
+    "answer": "ὅρα μὴ ὁ πρεσβευτὴς ταῖς τοῦ τυράννου ὑποσχέσεσιν ἐξηπατήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "μὴ",
+     "ὁ",
+     "πρεσβευτὴς",
+     "ταῖς",
+     "τοῦ",
+     "τυράννου",
+     "ὑποσχέσεσιν",
+     "ἐξηπατήθη"
+    ]
+   },
+   {
+    "prompt": "The old man fears that his sons no longer know the ancient laws.",
+    "answer": "ὁ γέρων δέδοικε μὴ οἱ υἱεῖς τοὺς παλαιοὺς νόμους οὐκέτι ἴσασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "δέδοικε",
+     "μὴ",
+     "οἱ",
+     "υἱεῖς",
+     "τοὺς",
+     "παλαιοὺς",
+     "νόμους",
+     "οὐκέτι",
+     "ἴσασιν"
+    ]
+   }
+  ]
  }
 ]

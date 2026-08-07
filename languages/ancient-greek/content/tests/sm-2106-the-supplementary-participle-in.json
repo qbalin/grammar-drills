@@ -332,5 +332,927 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t7",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "We know that the Thessalians are brave in battle.",
+    "answer": "ἴσμεν τοὺς Θετταλοὺς ἐν τῇ μάχῃ ἀνδρείους ὄντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσμεν",
+     "τούς",
+     "Θετταλούς",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀνδρείους",
+     "ὄντας"
+    ]
+   },
+   {
+    "prompt": "The jurors learned that the witness had betrayed the city.",
+    "answer": "οἱ δικασταὶ τὸν μάρτυρα τὴν πόλιν προδόντα κατέμαθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "τόν",
+     "μάρτυρα",
+     "τήν",
+     "πόλιν",
+     "προδόντα",
+     "κατέμαθον"
+    ]
+   },
+   {
+    "prompt": "I know that my brother was present in the assembly.",
+    "answer": "τὸν ἀδελφὸν οἶδα ἐν τῇ ἐκκλησίᾳ παρόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "ἀδελφόν",
+     "οἶδα",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "παρόντα"
+    ]
+   },
+   {
+    "prompt": "Know well that the tyrant is plotting against the citizens.",
+    "answer": "εὖ ἴσθι τὸν τύραννον τοῖς πολίταις ἐπιβουλεύοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "ἴσθι",
+     "τόν",
+     "τύραννον",
+     "τοῖς",
+     "πολίταις",
+     "ἐπιβουλεύοντα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t8",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "I remember that the allies fought bravely on our behalf.",
+    "answer": "μέμνημαι τοὺς συμμάχους ἀνδρείως ὑπὲρ ἡμῶν μαχεσαμένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνημαι",
+     "τούς",
+     "συμμάχους",
+     "ἀνδρείως",
+     "ὑπέρ",
+     "ἡμῶν",
+     "μαχεσαμένους"
+    ]
+   },
+   {
+    "prompt": "We have forgotten that we are mortal.",
+    "answer": "ἐπιλελήσμεθα θνητοὶ ὄντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπιλελήσμεθα",
+     "θνητοί",
+     "ὄντες"
+    ]
+   },
+   {
+    "prompt": "Do you not remember that the general captured the citadel?",
+    "answer": "ἆρα οὐ μέμνησαι τὸν στρατηγὸν τὴν ἀκρόπολιν ἑλόντα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "οὐ",
+     "μέμνησαι",
+     "τόν",
+     "στρατηγόν",
+     "τήν",
+     "ἀκρόπολιν",
+     "ἑλόντα"
+    ]
+   },
+   {
+    "prompt": "The soldiers forgot that winter was already coming on.",
+    "answer": "οἱ στρατιῶται ἐπελάθοντο τὸν χειμῶνα ἤδη προσιόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐπελάθοντο",
+     "τόν",
+     "χειμῶνα",
+     "ἤδη",
+     "προσιόντα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t9",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "The letter showed that the king was preparing war.",
+    "answer": "ἡ ἐπιστολὴ ἐδήλου τὸν βασιλέα πόλεμον παρασκευάζοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιστολή",
+     "ἐδήλου",
+     "τόν",
+     "βασιλέα",
+     "πόλεμον",
+     "παρασκευάζοντα"
+    ]
+   },
+   {
+    "prompt": "The accusers proved that the man had taken the money.",
+    "answer": "οἱ κατήγοροι τὸν ἄνδρα τὰ χρήματα λαβόντα ἀπέφηναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κατήγοροι",
+     "τόν",
+     "ἄνδρα",
+     "τά",
+     "χρήματα",
+     "λαβόντα",
+     "ἀπέφηναν"
+    ]
+   },
+   {
+    "prompt": "I will easily prove that the witnesses are lying about everything.",
+    "answer": "δείξω ῥᾳδίως τοὺς μάρτυρας περὶ πάντων ψευδομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δείξω",
+     "ῥᾳδίως",
+     "τούς",
+     "μάρτυρας",
+     "περί",
+     "πάντων",
+     "ψευδομένους"
+    ]
+   },
+   {
+    "prompt": "The general convicted the guard of having abandoned his post.",
+    "answer": "ὁ στρατηγὸς τὸν φύλακα τὴν τάξιν λιπόντα ἐξήλεγξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τόν",
+     "φύλακα",
+     "τήν",
+     "τάξιν",
+     "λιπόντα",
+     "ἐξήλεγξεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t10",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "The woman appeared to be speaking the truth.",
+    "answer": "ἡ γυνὴ ἀληθῆ λέγουσα ἐφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνή",
+     "ἀληθῆ",
+     "λέγουσα",
+     "ἐφάνη"
+    ]
+   },
+   {
+    "prompt": "The enemy seem to have withdrawn during the night.",
+    "answer": "οἱ πολέμιοι τῆς νυκτὸς ἀναχωρήσαντες φαίνονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "τῆς",
+     "νυκτός",
+     "ἀναχωρήσαντες",
+     "φαίνονται"
+    ]
+   },
+   {
+    "prompt": "He acknowledged that he had received the gifts from the Persians.",
+    "answer": "ὡμολόγησε τὰ δῶρα παρὰ τῶν Περσῶν λαβών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡμολόγησε",
+     "τά",
+     "δῶρα",
+     "παρά",
+     "τῶν",
+     "Περσῶν",
+     "λαβών"
+    ]
+   },
+   {
+    "prompt": "The young man seems not to understand what is happening.",
+    "answer": "ὁ νεανίας τὰ γιγνόμενα οὐ συνιεὶς φαίνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "τά",
+     "γιγνόμενα",
+     "οὐ",
+     "συνιείς",
+     "φαίνεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t11",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "It was clear that the ambassadors were deceiving the people.",
+    "answer": "δῆλοι ἦσαν οἱ πρέσβεις τὸν δῆμον ἐξαπατῶντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆλοι",
+     "ἦσαν",
+     "οἱ",
+     "πρέσβεις",
+     "τόν",
+     "δῆμον",
+     "ἐξαπατῶντες"
+    ]
+   },
+   {
+    "prompt": "It was evident that the priest often sacrificed to the goddess.",
+    "answer": "φανερὸς ἦν ὁ ἱερεὺς πολλάκις τῇ θεῷ θύων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φανερός",
+     "ἦν",
+     "ὁ",
+     "ἱερεύς",
+     "πολλάκις",
+     "τῇ",
+     "θεῷ",
+     "θύων"
+    ]
+   },
+   {
+    "prompt": "The queen plainly rejoiced at the messages.",
+    "answer": "ἡ βασίλεια δήλη ἦν τοῖς ἀγγέλμασιν ἡδομένη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βασίλεια",
+     "δήλη",
+     "ἦν",
+     "τοῖς",
+     "ἀγγέλμασιν",
+     "ἡδομένη"
+    ]
+   },
+   {
+    "prompt": "The boys were plainly afraid of their teacher.",
+    "answer": "οἱ παῖδες δῆλοι ἦσαν τὸν διδάσκαλον φοβούμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "δῆλοι",
+     "ἦσαν",
+     "τόν",
+     "διδάσκαλον",
+     "φοβούμενοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t12",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "I am conscious of having done nothing shameful.",
+    "answer": "σύνοιδα ἐμαυτῷ οὐδὲν αἰσχρὸν πεποιηκώς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύνοιδα",
+     "ἐμαυτῷ",
+     "οὐδέν",
+     "αἰσχρόν",
+     "πεποιηκώς"
+    ]
+   },
+   {
+    "prompt": "The scout announced that the enemy were already crossing the river.",
+    "answer": "ὁ σκοπὸς τοὺς πολεμίους ἤδη τὸν ποταμὸν διαβαίνοντας ἤγγειλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σκοπός",
+     "τούς",
+     "πολεμίους",
+     "ἤδη",
+     "τόν",
+     "ποταμόν",
+     "διαβαίνοντας",
+     "ἤγγειλεν"
+    ]
+   },
+   {
+    "prompt": "You are not unaware that the Thebans have broken the treaty.",
+    "answer": "οὐκ ἀγνοεῖς τοὺς Θηβαίους τὰς σπονδὰς λελυκότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀγνοεῖς",
+     "τούς",
+     "Θηβαίους",
+     "τάς",
+     "σπονδάς",
+     "λελυκότας"
+    ]
+   },
+   {
+    "prompt": "The father was conscious that his son was telling the truth.",
+    "answer": "ὁ πατὴρ συνῄδει τῷ υἱῷ ἀληθεύοντι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πατήρ",
+     "συνῄδει",
+     "τῷ",
+     "υἱῷ",
+     "ἀληθεύοντι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t13",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "The soldiers knew that their leader had fallen on behalf of the fatherland.",
+    "answer": "οἱ στρατιῶται ᾔδεσαν τὸν ἡγεμόνα ὑπὲρ τῆς πατρίδος πεσόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ᾔδεσαν",
+     "τὸν",
+     "ἡγεμόνα",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "πεσόντα"
+    ]
+   },
+   {
+    "prompt": "You know that this man, although he was trusted, betrayed the city to the enemy.",
+    "answer": "ἐπίστασθε τοῦτον, καίπερ πιστευόμενον, τὴν πόλιν τοῖς ἐχθροῖς προδόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπίστασθε",
+     "τοῦτον",
+     "καίπερ",
+     "πιστευόμενον",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "ἐχθροῖς",
+     "προδόντα"
+    ]
+   },
+   {
+    "prompt": "When he arrived, the admiral learned that the island contained twelve cities.",
+    "answer": "ἀφικόμενος ὁ ναύαρχος ἔμαθε τὴν νῆσον δώδεκα πόλεις ἔχουσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφικόμενος",
+     "ὁ",
+     "ναύαρχος",
+     "ἔμαθε",
+     "τὴν",
+     "νῆσον",
+     "δώδεκα",
+     "πόλεις",
+     "ἔχουσαν"
+    ]
+   },
+   {
+    "prompt": "None of the citizens is ignorant that the war will quickly come to Attica.",
+    "answer": "οὐδεὶς τῶν πολιτῶν ἀγνοεῖ τὸν πόλεμον ταχέως εἰς τὴν Ἀττικὴν ἥξοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "τῶν",
+     "πολιτῶν",
+     "ἀγνοεῖ",
+     "τὸν",
+     "πόλεμον",
+     "ταχέως",
+     "εἰς",
+     "τὴν",
+     "Ἀττικὴν",
+     "ἥξοντα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t14",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "We remember that before the battle we sacrificed a bull to the gods.",
+    "answer": "μεμνήμεθα πρὸ τῆς μάχης ταῦρον τοῖς θεοῖς θύσαντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεμνήμεθα",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "ταῦρον",
+     "τοῖς",
+     "θεοῖς",
+     "θύσαντες"
+    ]
+   },
+   {
+    "prompt": "Do you remember that the old woman spoke wisely before the assembly?",
+    "answer": "ἆρα μέμνησαι τὴν γραῦν σοφῶς πρὸ τῆς ἐκκλησίας εἰποῦσαν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρα",
+     "μέμνησαι",
+     "τὴν",
+     "γραῦν",
+     "σοφῶς",
+     "πρὸ",
+     "τῆς",
+     "ἐκκλησίας",
+     "εἰποῦσαν"
+    ]
+   },
+   {
+    "prompt": "As the enemy were approaching, the young men forgot that danger was near.",
+    "answer": "τῶν πολεμίων προσιόντων, οἱ νεανίαι ἐπελάθοντο τὸν κίνδυνον ἐγγὺς ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "προσιόντων",
+     "οἱ",
+     "νεανίαι",
+     "ἐπελάθοντο",
+     "τὸν",
+     "κίνδυνον",
+     "ἐγγὺς",
+     "ὄντα"
+    ]
+   },
+   {
+    "prompt": "The citizens forgot that they had become slaves of the tyrant.",
+    "answer": "οἱ πολῖται ἐπελάθοντο δοῦλοι τοῦ τυράννου γενόμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἐπελάθοντο",
+     "δοῦλοι",
+     "τοῦ",
+     "τυράννου",
+     "γενόμενοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t15",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "The witnesses will show that the defendant stole the sacred money from the acropolis.",
+    "answer": "οἱ μάρτυρες δείξουσι τὸν φεύγοντα τὰ ἱερὰ χρήματα ἐκ τῆς ἀκροπόλεως κλέψαντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μάρτυρες",
+     "δείξουσι",
+     "τὸν",
+     "φεύγοντα",
+     "τὰ",
+     "ἱερὰ",
+     "χρήματα",
+     "ἐκ",
+     "τῆς",
+     "ἀκροπόλεως",
+     "κλέψαντα"
+    ]
+   },
+   {
+    "prompt": "The orator showed that the ancient laws were being violated by the magistrates.",
+    "answer": "ὁ ῥήτωρ ἀπέφηνε τοὺς παλαιοὺς νόμους ὑπὸ τῶν ἀρχόντων παραβαινομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "ἀπέφηνε",
+     "τοὺς",
+     "παλαιοὺς",
+     "νόμους",
+     "ὑπὸ",
+     "τῶν",
+     "ἀρχόντων",
+     "παραβαινομένους"
+    ]
+   },
+   {
+    "prompt": "Although he denied it, the young man was convicted of having deceived the judges.",
+    "answer": "καίπερ ἀρνούμενος, ὁ νεανίσκος ἐξηλέγχθη τοὺς δικαστὰς ἐξαπατήσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "ἀρνούμενος",
+     "ὁ",
+     "νεανίσκος",
+     "ἐξηλέγχθη",
+     "τοὺς",
+     "δικαστὰς",
+     "ἐξαπατήσας"
+    ]
+   },
+   {
+    "prompt": "The general clearly proved that the mercenaries had fought most bravely.",
+    "answer": "ὁ στρατηγὸς σαφῶς ἀπέδειξε τοὺς μισθοφόρους ἀνδρειότατα μαχεσαμένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "σαφῶς",
+     "ἀπέδειξε",
+     "τοὺς",
+     "μισθοφόρους",
+     "ἀνδρειότατα",
+     "μαχεσαμένους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t16",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "The physician is evidently treating the sick skillfully.",
+    "answer": "ὁ ἰατρὸς τοὺς κάμνοντας ἐμπείρως θεραπεύων φαίνεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "τοὺς",
+     "κάμνοντας",
+     "ἐμπείρως",
+     "θεραπεύων",
+     "φαίνεται"
+    ]
+   },
+   {
+    "prompt": "The scout announced that the barbarians were crossing the river by night.",
+    "answer": "ὁ σκοπὸς ἤγγειλε τοὺς βαρβάρους νυκτὸς τὸν ποταμὸν διαβαίνοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σκοπὸς",
+     "ἤγγειλε",
+     "τοὺς",
+     "βαρβάρους",
+     "νυκτὸς",
+     "τὸν",
+     "ποταμὸν",
+     "διαβαίνοντας"
+    ]
+   },
+   {
+    "prompt": "After the war the exiles acknowledged that they had wronged the Athenians.",
+    "answer": "μετὰ τὸν πόλεμον οἱ φυγάδες ὡμολόγησαν τοὺς Ἀθηναίους ἀδικήσαντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετὰ",
+     "τὸν",
+     "πόλεμον",
+     "οἱ",
+     "φυγάδες",
+     "ὡμολόγησαν",
+     "τοὺς",
+     "Ἀθηναίους",
+     "ἀδικήσαντες"
+    ]
+   },
+   {
+    "prompt": "The maiden, led into the tent, appeared to have suffered terribly.",
+    "answer": "ἡ παρθένος εἰς τὴν σκηνὴν ἀχθεῖσα δεινὰ πεπονθυῖα ἐφαίνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "εἰς",
+     "τὴν",
+     "σκηνὴν",
+     "ἀχθεῖσα",
+     "δεινὰ",
+     "πεπονθυῖα",
+     "ἐφαίνετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t17",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "It was clear that the king was plotting against those in the city.",
+    "answer": "ὁ βασιλεὺς δῆλος ἦν τοῖς ἐν τῇ πόλει ἐπιβουλεύων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "δῆλος",
+     "ἦν",
+     "τοῖς",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἐπιβουλεύων"
+    ]
+   },
+   {
+    "prompt": "When the messenger arrived, it was evident that the women were rejoicing at the victory.",
+    "answer": "ἀφικομένου τοῦ ἀγγέλου, αἱ γυναῖκες φανεραὶ ἦσαν τῇ νίκῃ χαίρουσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφικομένου",
+     "τοῦ",
+     "ἀγγέλου",
+     "αἱ",
+     "γυναῖκες",
+     "φανεραὶ",
+     "ἦσαν",
+     "τῇ",
+     "νίκῃ",
+     "χαίρουσαι"
+    ]
+   },
+   {
+    "prompt": "Having been defeated in the contest, the lad was plainly ashamed.",
+    "answer": "ἐν τῷ ἀγῶνι ἡττηθὲν, τὸ μειράκιον δῆλον ἦν αἰσχυνόμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῷ",
+     "ἀγῶνι",
+     "ἡττηθὲν",
+     "τὸ",
+     "μειράκιον",
+     "δῆλον",
+     "ἦν",
+     "αἰσχυνόμενον"
+    ]
+   },
+   {
+    "prompt": "It was evident that the slave was deceiving his own master.",
+    "answer": "ὁ δοῦλος φανερὸς ἦν τὸν ἑαυτοῦ δεσπότην ψευδόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "φανερὸς",
+     "ἦν",
+     "τὸν",
+     "ἑαυτοῦ",
+     "δεσπότην",
+     "ψευδόμενος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t18",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "The old man is conscious that he has lived his whole life justly.",
+    "answer": "ὁ γέρων σύνοιδεν ἑαυτῷ πάντα τὸν βίον δικαίως βεβιωκώς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "σύνοιδεν",
+     "ἑαυτῷ",
+     "πάντα",
+     "τὸν",
+     "βίον",
+     "δικαίως",
+     "βεβιωκώς"
+    ]
+   },
+   {
+    "prompt": "The commander is conscious that he led the army badly.",
+    "answer": "ὁ ἄρχων συγγιγνώσκει ἑαυτῷ κακῶς τὸ στράτευμα ἀγαγών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄρχων",
+     "συγγιγνώσκει",
+     "ἑαυτῷ",
+     "κακῶς",
+     "τὸ",
+     "στράτευμα",
+     "ἀγαγών"
+    ]
+   },
+   {
+    "prompt": "They know well that the envoy is harming the allies.",
+    "answer": "συνίσασι τῷ πρέσβει τοὺς συμμάχους βλάπτοντι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συνίσασι",
+     "τῷ",
+     "πρέσβει",
+     "τοὺς",
+     "συμμάχους",
+     "βλάπτοντι"
+    ]
+   },
+   {
+    "prompt": "I am conscious that I understand nothing wise about the stars.",
+    "answer": "ἐμαυτῷ σύνοιδα οὐδὲν σοφὸν περὶ τῶν ἄστρων ἐπισταμένῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμαυτῷ",
+     "σύνοιδα",
+     "οὐδὲν",
+     "σοφὸν",
+     "περὶ",
+     "τῶν",
+     "ἄστρων",
+     "ἐπισταμένῳ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t19",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "The general knew that the enemy would attack the camp about midday.",
+    "answer": "ὁ στρατηγὸς ᾔδει τοὺς πολεμίους περὶ μεσημβρίαν τῷ στρατοπέδῳ προσβαλοῦντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ᾔδει",
+     "τοὺς",
+     "πολεμίους",
+     "περὶ",
+     "μεσημβρίαν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "προσβαλοῦντας"
+    ]
+   },
+   {
+    "prompt": "Later we learned that the ambassadors had betrayed the city to the barbarians.",
+    "answer": "ὕστερον ἐμάθομεν τοὺς πρέσβεις τὴν πόλιν τοῖς βαρβάροις προδεδωκότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὕστερον",
+     "ἐμάθομεν",
+     "τοὺς",
+     "πρέσβεις",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "βαρβάροις",
+     "προδεδωκότας"
+    ]
+   },
+   {
+    "prompt": "The jurors convicted the orator of having deceived the assembly.",
+    "answer": "οἱ δικασταὶ τὸν ῥήτορα ἐξήλεγξαν τὴν ἐκκλησίαν ἐξαπατήσαντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τὸν",
+     "ῥήτορα",
+     "ἐξήλεγξαν",
+     "τὴν",
+     "ἐκκλησίαν",
+     "ἐξαπατήσαντα"
+    ]
+   },
+   {
+    "prompt": "Xenophon showed that the Orchomenian was worthy of great honor.",
+    "answer": "ὁ Ξενοφῶν ἀπέφηνε τὸν Ὀρχομένιον μεγάλης τιμῆς ἄξιον ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ξενοφῶν",
+     "ἀπέφηνε",
+     "τὸν",
+     "Ὀρχομένιον",
+     "μεγάλης",
+     "τιμῆς",
+     "ἄξιον",
+     "ὄντα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2106-the-supplementary-participle-in-t20",
+  "sectionId": "sm-2106-the-supplementary-participle-in",
+  "questions": [
+   {
+    "prompt": "I was the first to announce to the king that the ships were sailing against the harbor.",
+    "answer": "τῷ βασιλεῖ πρῶτος ἤγγειλα τὰς ναῦς ἐπὶ τὸν λιμένα ἐπιπλεούσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "βασιλεῖ",
+     "πρῶτος",
+     "ἤγγειλα",
+     "τὰς",
+     "ναῦς",
+     "ἐπὶ",
+     "τὸν",
+     "λιμένα",
+     "ἐπιπλεούσας"
+    ]
+   },
+   {
+    "prompt": "When he had heard these things, the young man was clearly ashamed.",
+    "answer": "ταῦτα ἀκούσας ὁ νεανίας δῆλος ἦν αἰσχυνόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἀκούσας",
+     "ὁ",
+     "νεανίας",
+     "δῆλος",
+     "ἦν",
+     "αἰσχυνόμενος"
+    ]
+   },
+   {
+    "prompt": "Although he had sworn, the witness was conscious that he himself was lying about these matters.",
+    "answer": "καίπερ ὀμόσας ὁ μάρτυς ἑαυτῷ συνῄδει περὶ τούτων ψευδόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίπερ",
+     "ὀμόσας",
+     "ὁ",
+     "μάρτυς",
+     "ἑαυτῷ",
+     "συνῄδει",
+     "περὶ",
+     "τούτων",
+     "ψευδόμενος"
+    ]
+   },
+   {
+    "prompt": "You are surely not unaware that the Lacedaemonians are already fitting out triremes.",
+    "answer": "οὐκ ἀγνοεῖτε τοὺς Λακεδαιμονίους ἤδη τριήρεις ἐξαρτύοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀγνοεῖτε",
+     "τοὺς",
+     "Λακεδαιμονίους",
+     "ἤδη",
+     "τριήρεις",
+     "ἐξαρτύοντας"
+    ]
+   }
+  ]
  }
 ]

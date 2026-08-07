@@ -386,5 +386,392 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2221-object-clauses-with-verbs-of-fearing-t7",
+  "sectionId": "sm-2221-object-clauses-with-verbs-of-fearing",
+  "questions": [
+   {
+    "prompt": "I fear that our friends may abandon us in the danger.",
+    "answer": "φοβοῦμαι μὴ οἱ φίλοι ἡμᾶς ἐν τῷ κινδύνῳ καταλίπωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οἱ",
+     "φίλοι",
+     "ἡμᾶς",
+     "ἐν",
+     "τῷ",
+     "κινδύνῳ",
+     "καταλίπωσιν"
+    ]
+   },
+   {
+    "prompt": "The general feared lest the guards might be asleep.",
+    "answer": "ὁ στρατηγὸς ἐφοβεῖτο μὴ οἱ φύλακες καθεύδοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐφοβεῖτο",
+     "μή",
+     "οἱ",
+     "φύλακες",
+     "καθεύδοιεν"
+    ]
+   },
+   {
+    "prompt": "We are afraid lest we may not find the road in the darkness.",
+    "answer": "δεδοίκαμεν μὴ οὐχ εὕρωμεν τὴν ὁδὸν ἐν τῷ σκότει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεδοίκαμεν",
+     "μή",
+     "οὐχ",
+     "εὕρωμεν",
+     "τὴν",
+     "ὁδὸν",
+     "ἐν",
+     "τῷ",
+     "σκότει"
+    ]
+   },
+   {
+    "prompt": "There is fear lest the citizens hand over the city to the tyrant.",
+    "answer": "δέος ἐστὶ μὴ οἱ πολῖται τὴν πόλιν τῷ τυράννῳ παραδῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέος",
+     "ἐστὶ",
+     "μή",
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "πόλιν",
+     "τῷ",
+     "τυράννῳ",
+     "παραδῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2221-object-clauses-with-verbs-of-fearing-t8",
+  "sectionId": "sm-2221-object-clauses-with-verbs-of-fearing",
+  "questions": [
+   {
+    "prompt": "Beware lest you become a slave to the pleasures.",
+    "answer": "εὐλαβοῦ μὴ δοῦλος τῶν ἡδονῶν γένῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐλαβοῦ",
+     "μή",
+     "δοῦλος",
+     "τῶν",
+     "ἡδονῶν",
+     "γένῃ"
+    ]
+   },
+   {
+    "prompt": "I hesitate to reveal the plan, lest the enemy learn it beforehand.",
+    "answer": "ὀκνῶ τὸ βούλευμα δηλῶσαι, μὴ οἱ πολέμιοι προμάθωσιν αὐτό.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀκνῶ",
+     "τὸ",
+     "βούλευμα",
+     "δηλῶσαι",
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "προμάθωσιν",
+     "αὐτό"
+    ]
+   },
+   {
+    "prompt": "I suspect that the general is not willing to fight.",
+    "answer": "ὑποπτεύω μὴ οὐκ ἐθέλῃ ὁ στρατηγὸς μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑποπτεύω",
+     "μή",
+     "οὐκ",
+     "ἐθέλῃ",
+     "ὁ",
+     "στρατηγὸς",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "The prisoners were anxious lest no one should ransom them.",
+    "answer": "οἱ αἰχμάλωτοι ἠθύμουν μὴ οὐδεὶς σφᾶς λύσαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ἠθύμουν",
+     "μή",
+     "οὐδεὶς",
+     "σφᾶς",
+     "λύσαιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2221-object-clauses-with-verbs-of-fearing-t9",
+  "sectionId": "sm-2221-object-clauses-with-verbs-of-fearing",
+  "questions": [
+   {
+    "prompt": "There is danger that the allies may revolt from us.",
+    "answer": "κίνδυνός ἐστι μὴ οἱ σύμμαχοι ἀπὸ ἡμῶν ἀποστῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κίνδυνός",
+     "ἐστι",
+     "μή",
+     "οἱ",
+     "σύμμαχοι",
+     "ἀπὸ",
+     "ἡμῶν",
+     "ἀποστῶσιν"
+    ]
+   },
+   {
+    "prompt": "It is terrible to fear lest we have already been betrayed.",
+    "answer": "δεινόν ἐστι φοβεῖσθαι μὴ ἤδη προδεδόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινόν",
+     "ἐστι",
+     "φοβεῖσθαι",
+     "μή",
+     "ἤδη",
+     "προδεδόμεθα"
+    ]
+   },
+   {
+    "prompt": "The Greeks feared that the barbarians were more numerous.",
+    "answer": "οἱ Ἕλληνες ἐφοβοῦντο μὴ οἱ βάρβαροι πλείους εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "ἐφοβοῦντο",
+     "μή",
+     "βάρβαροι",
+     "πλείους",
+     "εἶεν"
+    ]
+   },
+   {
+    "prompt": "It was to be feared lest the fleet be destroyed by the storm.",
+    "answer": "φοβερὸν ἦν μὴ ὁ στόλος ὑπὸ τοῦ χειμῶνος διαφθαρείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβερὸν",
+     "ἦν",
+     "μή",
+     "ὁ",
+     "στόλος",
+     "ὑπὸ",
+     "τοῦ",
+     "χειμῶνος",
+     "διαφθαρείη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2221-object-clauses-with-verbs-of-fearing-t10",
+  "sectionId": "sm-2221-object-clauses-with-verbs-of-fearing",
+  "questions": [
+   {
+    "prompt": "Fearing that the bridge might be broken, the soldiers crossed in haste.",
+    "answer": "οἱ στρατιῶται, φοβούμενοι μὴ ἡ γέφυρα λυθείη, διέβησαν σπουδῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "φοβούμενοι",
+     "μή",
+     "ἡ",
+     "γέφυρα",
+     "λυθείη",
+     "διέβησαν",
+     "σπουδῇ"
+    ]
+   },
+   {
+    "prompt": "Since the enemy were approaching, we feared lest the walls might not hold out.",
+    "answer": "τῶν πολεμίων προσιόντων, ἐφοβούμεθα μὴ οὐκ ἀντέχοι τὰ τείχη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "προσιόντων",
+     "ἐφοβούμεθα",
+     "μή",
+     "οὐκ",
+     "ἀντέχοι",
+     "τὰ",
+     "τείχη"
+    ]
+   },
+   {
+    "prompt": "The king, suspecting that his brother was plotting, kept a guard.",
+    "answer": "ὁ βασιλεύς, ὑποπτεύων μὴ ὁ ἀδελφὸς ἐπιβουλεύοι, φυλακὴν εἶχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεύς",
+     "ὑποπτεύων",
+     "μή",
+     "ἀδελφὸς",
+     "ἐπιβουλεύοι",
+     "φυλακὴν",
+     "εἶχεν"
+    ]
+   },
+   {
+    "prompt": "Having heard these things, they were afraid lest they had been deceived.",
+    "answer": "ταῦτα ἀκούσαντες, ἐφοβήθησαν μὴ ἐξηπατημένοι εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἀκούσαντες",
+     "ἐφοβήθησαν",
+     "μή",
+     "ἐξηπατημένοι",
+     "εἶεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2221-object-clauses-with-verbs-of-fearing-t11",
+  "sectionId": "sm-2221-object-clauses-with-verbs-of-fearing",
+  "questions": [
+   {
+    "prompt": "See to it that we do not appear cowardly to our allies.",
+    "answer": "ὅρα μὴ δειλοὶ τοῖς συμμάχοις φανῶμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "μή",
+     "δειλοὶ",
+     "τοῖς",
+     "συμμάχοις",
+     "φανῶμεν"
+    ]
+   },
+   {
+    "prompt": "Guard against being caught unprepared by the enemy.",
+    "answer": "φυλάττου μὴ ἀπαράσκευος ὑπὸ τῶν πολεμίων ληφθῇς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάττου",
+     "μή",
+     "ἀπαράσκευος",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "ληφθῇς"
+    ]
+   },
+   {
+    "prompt": "I fear that the famine may compel the city to surrender.",
+    "answer": "δέδοικα μὴ ὁ λιμὸς τὴν πόλιν ἀναγκάσῃ ἐνδοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μή",
+     "ὁ",
+     "λιμὸς",
+     "τὴν",
+     "πόλιν",
+     "ἀναγκάσῃ",
+     "ἐνδοῦναι"
+    ]
+   },
+   {
+    "prompt": "Consider whether the wine has not corrupted the young men.",
+    "answer": "σκόπει μὴ ὁ οἶνος τοὺς νεανίας διέφθαρκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκόπει",
+     "μή",
+     "ὁ",
+     "οἶνος",
+     "τοὺς",
+     "νεανίας",
+     "διέφθαρκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2221-object-clauses-with-verbs-of-fearing-t12",
+  "sectionId": "sm-2221-object-clauses-with-verbs-of-fearing",
+  "questions": [
+   {
+    "prompt": "I am afraid that we shall incur blame from the people.",
+    "answer": "φοβοῦμαι μὴ ὑπὸ τοῦ δήμου αἰτίαν λάβωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "ὑπὸ",
+     "τοῦ",
+     "δήμου",
+     "αἰτίαν",
+     "λάβωμεν"
+    ]
+   },
+   {
+    "prompt": "The ambassadors feared lest they should accomplish nothing.",
+    "answer": "οἱ πρέσβεις ἐδεδοίκεσαν μὴ οὐδὲν περάνειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἐδεδοίκεσαν",
+     "μή",
+     "οὐδὲν",
+     "περάνειαν"
+    ]
+   },
+   {
+    "prompt": "There is danger that our surplus of grain may not suffice.",
+    "answer": "κίνδυνός ἐστι μὴ οὐκ ἀρκέσῃ ἡ τοῦ σίτου περιουσία.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κίνδυνός",
+     "ἐστι",
+     "μή",
+     "οὐκ",
+     "ἀρκέσῃ",
+     "ἡ",
+     "τοῦ",
+     "σίτου",
+     "περιουσία"
+    ]
+   },
+   {
+    "prompt": "I feared lest by yielding I should increase their arrogance.",
+    "answer": "ἐφοβούμην μὴ εἴκων τὴν ὕβριν αὐτῶν αὐξήσαιμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβούμην",
+     "μή",
+     "εἴκων",
+     "τὴν",
+     "ὕβριν",
+     "αὐτῶν",
+     "αὐξήσαιμι"
+    ]
+   }
+  ]
  }
 ]
