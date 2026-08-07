@@ -137,6 +137,23 @@ export interface Profile {
     minBandUtilisationPct: number;
     minKeptRatioPct: number;
   };
+  /**
+   * What the pack is allowed to ship that its reference cannot confirm
+   * (§ attestation-report), and what the generator may write.
+   *
+   * Absent means nothing is allowed. A pack that has generated nothing has
+   * nothing to excuse, so a language added later inherits the strict rule by
+   * saying nothing at all — which is the only default that cannot be forgotten.
+   *
+   * Both numbers are measurements a pack was admitted at, not targets. They go
+   * down as cleanups earn it and are never raised to make a red build green.
+   */
+  attestation?: {
+    /** Distinct unconfirmed forms one question may carry. */
+    maxMissesPerQuestion: number;
+    /** Unconfirmed answer tokens the whole pack may carry. */
+    maxUnattestedForms: number;
+  };
 }
 
 export class PackError extends Error {}
@@ -297,7 +314,7 @@ export function parseProfile(raw: unknown): Profile {
     "questions", "citationsVersion", "ui", "storage", "grammarShape", "coverage",
   ];
   /** Present or absent; a pack that predates them stays valid. */
-  const optional = ["enclitics", "paradigms"];
+  const optional = ["enclitics", "paradigms", "attestation"];
   const allowed = [...required, ...optional];
   for (const key of Object.keys(top)) {
     if (!allowed.includes(key)) throw new PackError(`profile.${key}: unknown key`);
@@ -396,6 +413,12 @@ export function parseProfile(raw: unknown): Profile {
       minKeptRatioPct: "number",
     }),
   };
+  if (top.attestation !== undefined) {
+    profile.attestation = fields<NonNullable<Profile["attestation"]>>(
+      top.attestation, "profile.attestation",
+      { maxMissesPerQuestion: "number", maxUnattestedForms: "number" },
+    );
+  }
   oneOf(profile.l2.direction, "profile.l2.direction", ["ltr", "rtl"] as const);
   const range = array(profile.grammarShape.medianTextCharsRange, "profile.grammarShape.medianTextCharsRange");
   if (range.length !== 2 || typeof range[0] !== "number" || typeof range[1] !== "number") {

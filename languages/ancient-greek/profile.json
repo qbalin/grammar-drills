@@ -286,5 +286,9 @@
     "minDictResolvedPct": 90,
     "minBandUtilisationPct": 25,
     "minKeptRatioPct": 40
+  },
+  "attestation": {
+    "maxMissesPerQuestion": 2,
+    "maxUnattestedForms": 1108
   }
 }

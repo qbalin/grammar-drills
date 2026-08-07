@@ -211,7 +211,7 @@
     "produceKinds": ["translate-en-la"]
   },
 
-  "citationsVersion": 4,
+  "citationsVersion": 5,
 
   "ui": {
     "appName": "Latina",
@@ -254,5 +254,10 @@
     "minDictResolvedPct": 90,
     "minBandUtilisationPct": 25,
     "minKeptRatioPct": 40
+  },
+
+  "attestation": {
+    "maxMissesPerQuestion": 2,
+    "maxUnattestedForms": 105
   }
 }
