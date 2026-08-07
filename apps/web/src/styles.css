@@ -477,6 +477,54 @@ span.status__title {
   margin-top: 0.5rem;
 }
 
+/* The English half of a context: the question the sentence under it answered.
+   Between the label and the sentence, so it reads as the setting rather than as
+   a note about it — which is also the shape the hint takes on the card front,
+   where it appears on its own with no sentence to introduce. */
+.context__prompt {
+  font-size: 0.84rem;
+  color: var(--text-dim);
+  margin-bottom: 0.35rem;
+}
+
+/* The sentences one card has kept, in the edit sheet. */
+.contexts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.context {
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  padding: 0.7rem 0.8rem;
+}
+
+.context__source {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.35rem;
+}
+
+.context__sentence {
+  color: var(--gold);
+}
+
+/* The row's four controls sit under it rather than beside it: at a phone's
+   width a sentence and four buttons on one line leaves the sentence two
+   words wide. */
+.context__tools {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.context__tools .iconbtn:disabled {
+  opacity: 0.3;
+}
+
 /* A word that can be held down to be recorded. The callout suppression is not
    decoration: iOS Safari answers a long press on text with its own selection
    magnifier, which lands on top of exactly this gesture. */
@@ -1429,6 +1477,26 @@ span.status__title {
 .field input:focus {
   outline: none;
   border-color: var(--gold-dim);
+}
+
+/* A checkbox and its label on one line. `.field` stacks an input under its own
+   caption, which is right for a box you type in and wrong for a tick, which
+   belongs beside the words it governs. */
+.field--check {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.field--check .field__label {
+  margin-bottom: 0;
+}
+
+.field--check input {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: none;
+  accent-color: var(--gold);
 }
 
 .field__hint {

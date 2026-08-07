@@ -1,5 +1,7 @@
 import { Content } from "./content.js";
 import { type FamilyId } from "./families.js";
+import type { Fold } from "./fold.js";
+import { foldKey, words } from "./question-vocab.js";
 import {
   deserializeCard,
   isDue,
@@ -16,6 +18,7 @@ import {
   type LegacyProgress,
   type LemmaEntry,
   type Mode,
+  type NewVocabContext,
   type PractiseRun,
   type Progress,
   type RoundDraft,
@@ -23,9 +26,51 @@ import {
   type SerializedCard,
   type Test,
   type VocabCardState,
+  type VocabContext,
 } from "./types.js";
 
 const SEEN_HISTORY = 10; // remember this many recently-served tests per section
+
+/**
+ * How many sentences one word may keep.
+ *
+ * The commonest words are in hundreds of questions, and without a ceiling one
+ * card's back becomes a wall and the progress file grows without a student ever
+ * asking it to. A word met eight times does not need a ninth sentence to be
+ * memorable. The limit is told to the caller rather than enforced in silence,
+ * and deleting one makes room again.
+ */
+export const MAX_CONTEXTS = 8;
+
+/**
+ * What became of a sentence offered to a card. Four ways for it not to land,
+ * said apart, because a surface that reported them all as "saved" would flash a
+ * confirmation for a press that did nothing.
+ */
+export type ContextOutcome =
+  | "added"
+  | "duplicate"
+  | "full"
+  | "off"
+  | "missing";
+
+/**
+ * What makes two contexts the same one.
+ *
+ * The question and the sentence, both through the pack's own fold, so the same
+ * line typed once with the pack's editorial marks and once without is one
+ * context and not two. `source` is deliberately out of the key: an answer typed
+ * correctly folds equal to the reference, so holding a word in both texts of one
+ * question keeps one sentence — which is the same judgement `answerMatches`
+ * makes on the same two strings.
+ *
+ * `index` is out of it too. Same card, same sentence, different index only
+ * happens when one lemma stands twice in a line, and that is one context with
+ * two possible highlights; the first one wins.
+ */
+function contextKey(context: NewVocabContext, fold: Fold): string {
+  return `${foldKey(context.prompt, fold)}\n${foldKey(context.sentence, fold)}`;
+}
 
 /** Mastery runs 1 (not mastered) to 4 (mastered); the bars show the span between. */
 const MASTERY_MIN = 1;
@@ -724,7 +769,7 @@ export class Session {
    * lemma so re-recording the same word is a no-op. Returns the card id.
    */
   recordVocab(entry: LemmaEntry, now: Date = new Date()): string {
-    const id = `v-${this.content.fold(entry.lemma)}`;
+    const id = this.vocabIdFor(entry);
     if (!this.p.vocabCards[id]) {
       this.p.vocabCards[id] = {
         ...entry,
@@ -786,6 +831,157 @@ export class Session {
     // The gloss needs no such mark: nothing ever rewrites it from the
     // dictionary, so an edited meaning is already the student's for good.
     if (patch.gloss !== undefined) card.gloss = patch.gloss.trim();
+    this.touch();
+  }
+
+  /**
+   * The card id a given entry would take, without creating one.
+   *
+   * The `v-` rule in one place, so a surface can ask "did I already have this
+   * word" before recording it — which is the difference between *Saved* and
+   * *another sentence on a word you already had*.
+   */
+  vocabIdFor(entry: LemmaEntry): string {
+    return `v-${this.content.fold(entry.lemma)}`;
+  }
+
+  /** Every context on a card, in the student's own order. */
+  vocabContexts(cardId: string): VocabContext[] {
+    return this.p.vocabCards[cardId]?.contexts ?? [];
+  }
+
+  /** Whether a recorded word keeps the sentence it was met in. */
+  keepsContext(): boolean {
+    return this.p.keepContext !== false;
+  }
+
+  setKeepContext(on: boolean): void {
+    this.p.keepContext = on;
+    this.touch();
+  }
+
+  /**
+   * Offer a card the sentence its word was met in.
+   *
+   * Apart from `recordVocab` rather than an argument to it, because the two are
+   * different questions with different answers: recording a word the student
+   * already has is a no-op, and attaching a second sentence to that same word is
+   * the whole point of this. `recordVocab` therefore keeps both its signature
+   * and its promise never to rewrite a card that already exists — a second
+   * recording that reset a corrected citation would be a silent one.
+   *
+   * The preference is checked here rather than at the call sites, so the phone
+   * and the terminal cannot drift apart on it, and the outcome comes back so a
+   * surface can say what actually happened instead of flashing a save.
+   */
+  addVocabContext(
+    cardId: string,
+    context: NewVocabContext,
+    now: Date = new Date(),
+  ): ContextOutcome {
+    if (!this.keepsContext()) return "off";
+    const card = this.p.vocabCards[cardId];
+    if (!card) return "missing";
+    const held = card.contexts ?? [];
+    const key = contextKey(context, this.content.fold);
+    if (held.some((c) => contextKey(c, this.content.fold) === key)) {
+      return "duplicate";
+    }
+    if (held.length >= MAX_CONTEXTS) return "full";
+    card.contexts = [...held, { ...context, at: this.freeStamp(held, now) }];
+    this.touch();
+    return "added";
+  }
+
+  /**
+   * A timestamp no context on this card already carries.
+   *
+   * `at` is a context's identity — it is what a delete, an edit and a move all
+   * name it by — so two sharing one would be one context that cannot be told
+   * from another: deleting either would delete both. A hold gesture is
+   * human-paced and will not collide, but nothing here is only ever driven by a
+   * thumb: an import, a test, or two sentences attached in one turn all land in
+   * the same millisecond. Nudged forward rather than made from a counter,
+   * because the value still has to read as when the word was met.
+   */
+  private freeStamp(held: VocabContext[], now: Date): string {
+    let at = now.getTime();
+    const taken = new Set(held.map((c) => c.at));
+    while (taken.has(new Date(at).toISOString())) at += 1;
+    return new Date(at).toISOString();
+  }
+
+  /**
+   * Correct one context's two texts.
+   *
+   * `source` is not patchable: rewriting the words of your own sentence does not
+   * make it the reference, and the label is the only thing standing between a
+   * card and quietly teaching back a mistake.
+   */
+  updateVocabContext(
+    cardId: string,
+    at: string,
+    patch: Partial<Pick<VocabContext, "prompt" | "sentence">>,
+  ): void {
+    const context = this.p.vocabCards[cardId]?.contexts?.find((c) => c.at === at);
+    if (!context) return;
+    if (patch.prompt !== undefined) context.prompt = patch.prompt.trim();
+    if (patch.sentence !== undefined) {
+      // The picked-out word has to be found again in the rewritten sentence, or
+      // the highlight would go on pointing at whatever word now sits in that
+      // slot — which is worse than no highlight, because it looks deliberate.
+      // The old sentence and the old index together are the word, right up
+      // until the edit lands, so nothing needs to have been stored to do this.
+      const held =
+        context.index === undefined
+          ? undefined
+          : words(context.sentence)[context.index];
+      context.sentence = patch.sentence.trim();
+      if (held !== undefined) {
+        const found = words(context.sentence).findIndex(
+          (word) => this.content.fold(word) === this.content.fold(held),
+        );
+        if (found >= 0) context.index = found;
+        else delete context.index;
+      }
+    }
+    this.touch();
+  }
+
+  /** Forget one context. The card, and every other context on it, stay. */
+  deleteVocabContext(cardId: string, at: string): void {
+    const card = this.p.vocabCards[cardId];
+    if (!card?.contexts) return;
+    const left = card.contexts.filter((c) => c.at !== at);
+    if (left.length === card.contexts.length) return;
+    // Absent rather than empty, so a card cleared of contexts reads on disk
+    // exactly like one that never had any.
+    if (left.length === 0) delete card.contexts;
+    else card.contexts = left;
+    this.touch();
+  }
+
+  /**
+   * Move one context one place towards the front (-1) or the back (1).
+   *
+   * A swap with its neighbour rather than a whole-order setter, because the
+   * surface is a pair of buttons and a swap is exactly what a button press
+   * knows. A setter would make every handler read the list, splice it and hand
+   * back an array — and under a last-writer-wins sync, one device's whole order
+   * would wipe the other's, where a swap at worst leaves a local disturbance.
+   *
+   * Clamped at the ends rather than wrapping: a button that teleports the top
+   * row to the bottom is a bug report.
+   */
+  moveVocabContext(cardId: string, at: string, by: -1 | 1): void {
+    const card = this.p.vocabCards[cardId];
+    if (!card?.contexts) return;
+    const from = card.contexts.findIndex((c) => c.at === at);
+    const to = from + by;
+    if (from < 0 || to < 0 || to >= card.contexts.length) return;
+    const moved = [...card.contexts];
+    [moved[from], moved[to]] = [moved[to]!, moved[from]!];
+    card.contexts = moved;
     this.touch();
   }
 
@@ -981,7 +1177,13 @@ export class Session {
    * the caller's copy stays clean.
    */
   restore(snapshot: Progress): void {
+    // Standing preferences are not part of what an undo takes back. A snapshot
+    // is taken before a grade and restored after it, and a student who changed
+    // a setting in between would otherwise watch the undo silently change it
+    // back — an undo that reaches past the thing it was offered for.
+    const keepContext = this.p.keepContext;
     this.p = structuredClone(snapshot);
+    this.p.keepContext = keepContext;
     // An undo is itself a change: the stored copy is now out of date, and the
     // sync comparison reads `updatedAt` to decide that.
     this.touch();

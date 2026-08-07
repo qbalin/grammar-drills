@@ -1,11 +1,15 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Content,
+  MAX_CONTEXTS,
   Session,
+  locateWord,
   questionVocabulary,
+  words,
   type AttemptMarks,
   type LemmaEntry,
   type Mode,
+  type NewVocabContext,
   type Progress,
   type Rating,
   type RoundVia,
@@ -93,11 +97,26 @@ type Overlay =
   | { t: "schedule" }
   | { t: "vocab-list"; back?: Overlay }
   | { t: "vocab-edit"; cardId: string; back?: Overlay }
-  /** `prefill` is a word held on the question; `auto` looks it up unattended. */
-  | { t: "vocab-input"; prefill?: string; auto?: boolean }
-  | { t: "vocab-pick"; form: string; candidates: LemmaEntry[] }
+  /**
+   * `prefill` is a word held on the question; `auto` looks it up unattended.
+   *
+   * `context` is the sentence the word was held in, riding along on the three
+   * overlays that stand between a press and a saved card. It travels on the
+   * overlay rather than in a ref beside it because every path out of an overlay
+   * — Esc, the backdrop, another overlay opening over it — replaces this value,
+   * where a ref would have to be cleared on each of them. Miss one and the
+   * *next* word saved quietly gets the previous word's sentence: a wrong card
+   * that looks entirely right.
+   */
+  | { t: "vocab-input"; prefill?: string; auto?: boolean; context?: NewVocabContext }
+  | {
+      t: "vocab-pick";
+      form: string;
+      candidates: LemmaEntry[];
+      context?: NewVocabContext;
+    }
   /** A word the dictionary has not got, being written out by hand. */
-  | { t: "vocab-new"; form: string }
+  | { t: "vocab-new"; form: string; context?: NewVocabContext }
   /**
    * A word double-clicked to be looked at. `entry` is the reading being shown
    * and `others` the rest, tappable — a look is not a decision, so an
@@ -647,9 +666,36 @@ export function App({ content, session, storage }: Props) {
       .finally(() => setParadigmsLoading(false));
   }, [paradigms]);
 
-  const openVocab = (prefill?: string, auto = false) => {
-    setOverlay({ t: "vocab-input", prefill, auto });
+  const openVocab = (
+    prefill?: string,
+    auto = false,
+    context?: NewVocabContext,
+  ) => {
+    setOverlay({ t: "vocab-input", prefill, auto, context });
     ensureDictionary();
+  };
+
+  /**
+   * The sentence a word was just held in, ready to be kept with it.
+   *
+   * Built here rather than in the screen because it is the card's business and
+   * not the question's, and undefined the moment there is nothing honest to
+   * build: no question on screen, the preference turned off, or — on a revealed
+   * answer — no sentence of the student's own to point at.
+   */
+  const contextFor = (
+    where: "answer" | "submitted",
+    index?: number,
+  ): NewVocabContext | undefined => {
+    if (!question || !session.keepsContext()) return undefined;
+    const sentence = where === "answer" ? question.answer : submitted.trim();
+    if (!sentence) return undefined;
+    return {
+      prompt: question.prompt,
+      sentence,
+      source: where,
+      ...(index === undefined || index < 0 ? {} : { index }),
+    };
   };
 
   /**
@@ -675,18 +721,18 @@ export function App({ content, session, storage }: Props) {
       ? "ready"
       : "unavailable";
 
-  const lookupWord = (form: string) => {
+  const lookupWord = (form: string, context?: NewVocabContext) => {
     const candidates = content.lookup(form);
     if (candidates.length === 0) {
       // Not a verdict on the spelling: the dictionary is large but finite, and
       // a miss is most often a name or a form it cannot cut. The student has
       // already said this word is worth keeping, so the card is offered by hand
       // rather than the word being dropped with a toast.
-      setOverlay({ t: "vocab-new", form: form.trim() });
+      setOverlay({ t: "vocab-new", form: form.trim(), context });
       return;
     }
-    if (candidates.length === 1) return saveWord(candidates[0]!);
-    setOverlay({ t: "vocab-pick", form: form.trim(), candidates });
+    if (candidates.length === 1) return saveWord(candidates[0]!, context);
+    setOverlay({ t: "vocab-pick", form: form.trim(), candidates, context });
   };
 
   /**
@@ -694,10 +740,30 @@ export function App({ content, session, storage }: Props) {
    * the way back has to be cheap too: the toast that confirms the save is also
    * the way into the card, where it can be corrected or deleted.
    */
-  const holdWord = (word: string) => {
-    if (dictionaryReady()) return lookupWord(word);
+  const holdWord = (word: string, where: "answer" | "submitted", index?: number) => {
+    const context = contextFor(where, index);
+    if (dictionaryReady()) return lookupWord(word, context);
     // Nothing to look up against yet — the sheet takes the word and fetches.
-    openVocab(word, true);
+    // The sentence goes with it, so the download does not cost the context.
+    openVocab(word, true, context);
+  };
+
+  /**
+   * A word typed into *record a word* rather than pointed at.
+   *
+   * There is no press to say which sentence it came from, so the question is
+   * asked of the two sentences themselves — the same question the terminal has
+   * to ask, answered by the same function, so the two surfaces cannot disagree
+   * about which line a word was met in.
+   */
+  const typedWordContext = (form: string): NewVocabContext | undefined => {
+    if (!question) return undefined;
+    const site = locateWord(
+      form,
+      { answer: question.answer, submitted: submitted.trim() },
+      content.fold,
+    );
+    return contextFor(site?.source ?? "answer", site?.index);
   };
 
   /**
@@ -762,8 +828,20 @@ export function App({ content, session, storage }: Props) {
    * screen. A row with nothing found falls back to the ordinary hold, which
    * either says so or fetches the dictionary the row is missing.
    */
-  const holdCribWord = (word: VocabWord) =>
-    word.entry ? saveWord(word.entry) : holdWord(word.form);
+  const holdCribWord = (word: VocabWord) => {
+    // The row stands for a form, not for a position, so the position is found:
+    // the crib is built out of the reference answer's own words, so the form is
+    // in there, and its first occurrence is the one the crib's dedupe kept.
+    const index = question
+      ? words(question.answer).findIndex(
+          (w) => content.fold(w) === content.fold(word.form),
+        )
+      : -1;
+    const context = contextFor("answer", index);
+    return word.entry
+      ? saveWord(word.entry, context)
+      : holdWord(word.form, "answer", index);
+  };
 
   /**
    * A row double-clicked in the crib. Same reasoning as the hold above: the
@@ -776,13 +854,55 @@ export function App({ content, session, storage }: Props) {
     setOverlay({ t: "inspect", form: word.form, entry: word.entry, others: word.others });
   };
 
-  const saveWord = (entry: LemmaEntry) => {
+  const saveWord = (entry: LemmaEntry, context?: NewVocabContext) => {
+    // Asked before recording, because afterwards every word is one you had.
+    const known = session.vocabCard(session.vocabIdFor(entry)) !== undefined;
     const id = session.recordVocab(entry);
+    const kept = context ? session.addVocabContext(id, context) : "off";
     save();
     setOverlay(null);
-    flash(`Saved ${entry.citation}`, "Edit", () =>
-      setOverlay({ t: "vocab-edit", cardId: id }),
+    // A hold on a word already saved used to do nothing at all, and if it goes
+    // on looking like nothing the student will take the append for a miss. So
+    // the toast says which of the several things actually happened.
+    flash(
+      kept === "full"
+        ? `${entry.citation} already keeps ${MAX_CONTEXTS} sentences`
+        : known
+          ? kept === "added"
+            ? `Another sentence on ${entry.citation}`
+            : `${entry.citation} is already saved`
+          : `Saved ${entry.citation}`,
+      "Edit",
+      () => setOverlay({ t: "vocab-edit", cardId: id }),
     );
+    bump();
+  };
+
+  const moveContext = (cardId: string, at: string, dir: -1 | 1) => {
+    session.moveVocabContext(cardId, at, dir);
+    save();
+    bump();
+  };
+
+  const editContext = (
+    cardId: string,
+    at: string,
+    patch: { prompt: string; sentence: string },
+  ) => {
+    session.updateVocabContext(cardId, at, patch);
+    save();
+    bump();
+  };
+
+  const removeContext = (cardId: string, at: string) => {
+    session.deleteVocabContext(cardId, at);
+    save();
+    bump();
+  };
+
+  const toggleKeepContext = () => {
+    session.setKeepContext(!session.keepsContext());
+    save();
     bump();
   };
 
@@ -1354,6 +1474,9 @@ export function App({ content, session, storage }: Props) {
                 removeVocab(card.id);
                 setOverlay(back);
               }}
+              onMoveContext={(at, dir) => moveContext(card.id, at, dir)}
+              onEditContext={(at, patch) => editContext(card.id, at, patch)}
+              onDeleteContext={(at) => removeContext(card.id, at)}
               onClose={() => setOverlay(back)}
             />
           );
@@ -1379,7 +1502,11 @@ export function App({ content, session, storage }: Props) {
           }
           initialForm={overlay.prefill}
           autoLookup={overlay.auto}
-          onLookup={lookupWord}
+          // A word held on the question arrives with the sentence it was held
+          // in; one typed into the box has to be found in the sentences first.
+          onLookup={(form) =>
+            lookupWord(form, overlay.context ?? typedWordContext(form))
+          }
           onClose={() => setOverlay(null)}
         />
       )}
@@ -1390,12 +1517,15 @@ export function App({ content, session, storage }: Props) {
           // Written by hand, so there is no lemma to speak of: the form as it
           // was met is the word's identity, which is what dedupes the card.
           onSave={({ citation, gloss }) =>
-            saveWord({
-              lemma: overlay.form,
-              citation: citation.trim(),
-              gloss: gloss.trim(),
-              pos: "",
-            })
+            saveWord(
+              {
+                lemma: overlay.form,
+                citation: citation.trim(),
+                gloss: gloss.trim(),
+                pos: "",
+              },
+              overlay.context,
+            )
           }
           onClose={() => setOverlay(null)}
         />
@@ -1405,7 +1535,7 @@ export function App({ content, session, storage }: Props) {
         <VocabPickSheet
           form={overlay.form}
           candidates={overlay.candidates}
-          onPick={saveWord}
+          onPick={(entry) => saveWord(entry, overlay.context)}
           onClose={() => setOverlay(null)}
         />
       )}
@@ -1466,6 +1596,8 @@ export function App({ content, session, storage }: Props) {
           onOpenVocab={() =>
             setOverlay({ t: "vocab-list", back: { t: "settings" } })
           }
+          keepContext={session.keepsContext()}
+          onKeepContext={toggleKeepContext}
           onReset={() => {
             storage.clearLocal();
             // Erasing and then reloading is two steps, and the draft kept on

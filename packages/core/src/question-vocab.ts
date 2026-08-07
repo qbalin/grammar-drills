@@ -145,8 +145,57 @@ export function answerMatches(
   answer: string,
   fold: Fold,
 ): boolean {
-  const key = (s: string) => words(fold(s)).join(" ");
-  return key(submitted) !== "" && key(submitted) === key(answer);
+  const written = foldKey(submitted, fold);
+  return written !== "" && written === foldKey(answer, fold);
+}
+
+/**
+ * One sentence reduced to what it says, for comparing it with another.
+ *
+ * The fold makes the pack's editorial marks editorial, `words` drops the
+ * punctuation and settles the spacing, and what is left is the thing two copies
+ * of a sentence have in common. Lifted out of `answerMatches` when the
+ * vocabulary contexts needed the very same question asked of a pair of stored
+ * sentences: two normalisations that drifted would mean the same line counted as
+ * a duplicate on one screen and a new one on the next.
+ */
+export function foldKey(text: string, fold: Fold): string {
+  return words(fold(text)).join(" ");
+}
+
+/** Which of the graded screen's two L2 sentences a word stands in, and where. */
+export interface WordSite {
+  source: "answer" | "submitted";
+  index: number;
+}
+
+/**
+ * Find a typed word among the sentences on the graded screen.
+ *
+ * The reference is searched first, so a word standing in both comes back as the
+ * reference's: the reference is right by construction and the student's own copy
+ * of it may not be. Null when the word is in neither, which is what a word typed
+ * from memory rather than read off the screen looks like.
+ *
+ * Here rather than in an app because both of them ask it — the terminal has no
+ * hold gesture and has to work out for itself which sentence a typed form came
+ * from, and the phone asks the same question for its *record a word* button.
+ */
+export function locateWord(
+  form: string,
+  sentences: { answer: string; submitted?: string },
+  fold: Fold,
+): WordSite | null {
+  const needle = fold(stripPunctuation(form));
+  if (needle === "") return null;
+  const find = (text: string) =>
+    words(text).findIndex((word) => fold(word) === needle);
+
+  const inAnswer = find(sentences.answer);
+  if (inAnswer >= 0) return { source: "answer", index: inAnswer };
+
+  const inSubmitted = sentences.submitted ? find(sentences.submitted) : -1;
+  return inSubmitted >= 0 ? { source: "submitted", index: inSubmitted } : null;
 }
 
 /**

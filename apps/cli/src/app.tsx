@@ -17,12 +17,16 @@ import {
 import { wordListLines, type WordListLine } from "./wordlist.js";
 import {
   Content,
+  MAX_CONTEXTS,
   Session,
+  locateWord,
   questionVocabulary,
+  sentenceTokens,
   type Profile,
   type FamilyProgress,
   type LemmaEntry,
   type Mode,
+  type NewVocabContext,
   type Progress,
   type Question,
   type Rating,
@@ -31,6 +35,7 @@ import {
   type Test,
   type TopicProgress,
   type VocabCardState,
+  type VocabContext,
 } from "@lang-tutor/core";
 
 interface Props {
@@ -66,11 +71,30 @@ type Phase =
   | { t: "answering" }
   | { t: "graded" }
   | { t: "vocab-input" }
-  | { t: "vocab-pick"; form: string; candidates: LemmaEntry[] }
+  /**
+   * `context` is the sentence the word was met in, riding along because the
+   * pick sheet stands between a keypress and a saved card — the terminal's
+   * version of the same several-taps-later problem the phone has.
+   */
+  | {
+      t: "vocab-pick";
+      form: string;
+      candidates: LemmaEntry[];
+      context?: NewVocabContext;
+    }
   | { t: "vocab-review-front"; cardId: string }
   | { t: "vocab-review-back"; cardId: string }
   | { t: "vocab-list"; from: Origin }
   | { t: "vocab-edit"; cardId: string; from: Origin; field: "citation" | "gloss" }
+  /** The sentences one card has kept, being reordered or corrected. */
+  | { t: "vocab-contexts"; cardId: string; from: Origin }
+  | {
+      t: "context-edit";
+      cardId: string;
+      at: string;
+      from: Origin;
+      field: "prompt" | "sentence";
+    }
   | MapPhase
   | { t: "read"; from: Origin } // a section read in full, from the map
   | { t: "bank"; from: Origin } // every question of the topic under the cursor
@@ -146,6 +170,12 @@ export function App({ session, content, storage }: Props) {
   const [vocabIndex, setVocabIndex] = useState(0); // cursor in the vocabulary list
   const [draft, setDraft] = useState({ citation: "", gloss: "" }); // the card being edited
   const [confirmDelete, setConfirmDelete] = useState(false);
+  const [hinted, setHinted] = useState(0); // context prompts asked for on this card
+  const [contextIndex, setContextIndex] = useState(0); // cursor among a card's sentences
+  const [contextDraft, setContextDraft] = useState({ prompt: "", sentence: "" });
+  // Its own confirm, not the word list's: a half-armed `x` carried across from
+  // one screen to the other would delete on the first press over here.
+  const [confirmContextDelete, setConfirmContextDelete] = useState(false);
   const [scroll, setScroll] = useState(0); // first visible line of the grammar pane
   const [undo, setUndo] = useState<GradeUndo | null>(null); // the last grade, takeable
   // ^Z reaches the answer box as a plain "z", and the box's own key handler
@@ -327,6 +357,9 @@ export function App({ session, content, storage }: Props) {
     if (action.kind === "vocab-review") {
       // A word is on screen, not the topic before it.
       setVia(null);
+      // The next card is a different word: its hints are not this one's, and a
+      // count carried over would open it half-helped.
+      setHinted(0);
       setPhase({ t: "vocab-review-front", cardId: action.cardId });
       return;
     }
@@ -470,6 +503,54 @@ export function App({ session, content, storage }: Props) {
     setPhase({ t: "answering" });
   };
 
+  /**
+   * The sentence a word just recorded was met in.
+   *
+   * There is no hold gesture here — the word is typed — so which of the two
+   * sentences it came from is worked out rather than pointed at, by the same
+   * function the phone uses for its own typed word. The reference wins a tie,
+   * being right by construction; a word in neither was typed from memory, and
+   * the question on screen is still where it was met, so it is kept without a
+   * word picked out in it.
+   */
+  const contextFor = (form: string): NewVocabContext | undefined => {
+    if (!question || !session.keepsContext()) return undefined;
+    const site = locateWord(
+      form,
+      { answer: question.answer, submitted: submitted.trim() },
+      content.fold,
+    );
+    const sentence =
+      site?.source === "submitted" ? submitted.trim() : question.answer;
+    if (!sentence) return undefined;
+    return {
+      prompt: question.prompt,
+      sentence,
+      source: site?.source ?? "answer",
+      ...(site ? { index: site.index } : {}),
+    };
+  };
+
+  /** Save a word and the sentence with it, and say which of the two happened. */
+  const keepWord = (entry: LemmaEntry, context?: NewVocabContext) => {
+    const known = session.vocabCard(session.vocabIdFor(entry)) !== undefined;
+    const id = session.recordVocab(entry);
+    const kept = context ? session.addVocabContext(id, context) : "off";
+    save();
+    // The word count in the status bar, and the vocabulary list itself, are
+    // derived from the engine on every tick — so a new card has to bump it.
+    setTick((n) => n + 1);
+    setFlash(
+      kept === "full"
+        ? `${entry.citation} already keeps ${MAX_CONTEXTS} sentences.`
+        : known
+          ? kept === "added"
+            ? `Another sentence on ${entry.citation}`
+            : `Already saved: ${entry.citation}`
+          : `Saved: ${entry.citation}`,
+    );
+  };
+
   const recordForm = (form: string) => {
     setInput("");
     // Enter on an empty box is the other way out of a recording opened by
@@ -484,17 +565,13 @@ export function App({ session, content, storage }: Props) {
       setPhase({ t: "graded" });
       return;
     }
+    const context = contextFor(form);
     if (candidates.length === 1) {
-      session.recordVocab(candidates[0]!);
-      save();
-      // The word count in the status bar, and the vocabulary list itself, are
-      // derived from the engine on every tick — so a new card has to bump it.
-      setTick((n) => n + 1);
-      setFlash(`Saved: ${candidates[0]!.citation}`);
+      keepWord(candidates[0]!, context);
       setPhase({ t: "graded" });
       return;
     }
-    setPhase({ t: "vocab-pick", form, candidates });
+    setPhase({ t: "vocab-pick", form, candidates, context });
   };
 
   /** Open the grammar index, parked on the current topic (or the first unstudied one). */
@@ -551,6 +628,15 @@ export function App({ session, content, storage }: Props) {
     setTick((n) => n + 1);
     setFlash(`Saved ${draft.citation.trim()}.`);
     setPhase({ t: "vocab-list", from });
+  };
+
+  /** The same, for one of a card's sentences: both boxes are one edit. */
+  const saveContextEdit = (cardId: string, at: string, from: Origin) => {
+    session.updateVocabContext(cardId, at, contextDraft);
+    save();
+    setTick((n) => n + 1);
+    setFlash("Sentence saved.");
+    setPhase({ t: "vocab-contexts", cardId, from });
   };
 
   /**
@@ -708,6 +794,19 @@ export function App({ session, content, storage }: Props) {
       }
       return;
     }
+    // And correcting a sentence is two more, for the same reason: a sentence
+    // with a `q` in it would otherwise quit the app halfway through being typed.
+    if (phase.t === "context-edit") {
+      if (key.escape) {
+        setPhase({ t: "vocab-contexts", cardId: phase.cardId, from: phase.from });
+      } else if (key.tab) {
+        setPhase({
+          ...phase,
+          field: phase.field === "prompt" ? "sentence" : "prompt",
+        });
+      }
+      return;
+    }
 
     if (ch === "q") {
       save();
@@ -831,6 +930,28 @@ export function App({ session, content, storage }: Props) {
             setConfirmDelete(true);
             setFlash(`Press x again to delete ${card.citation}.`);
           }
+        } else if (ch === "c") {
+          const card = vocab[vocabIndex];
+          if (!card) break;
+          setConfirmDelete(false);
+          setContextIndex(0);
+          setConfirmContextDelete(false);
+          setFlash(null);
+          setPhase({ t: "vocab-contexts", cardId: card.id, from: phase.from });
+        } else if (ch === "a") {
+          // The standing preference, kept with the deck rather than with this
+          // machine, so it holds on the phone too. The vocabulary list is where
+          // it lives because the terminal has no settings screen and this is
+          // the vocabulary's own.
+          const on = !session.keepsContext();
+          session.setKeepContext(on);
+          save();
+          setTick((n) => n + 1);
+          setFlash(
+            on
+              ? "Recording a word will keep the sentence it was met in."
+              : "Recording a word will keep the word alone.",
+          );
         } else if (ch === "m") {
           setConfirmDelete(false);
           openMap(phase.from);
@@ -844,15 +965,64 @@ export function App({ session, content, storage }: Props) {
         }
         break;
       }
+      case "vocab-contexts": {
+        const held = session.vocabContexts(phase.cardId);
+        const here = held[contextIndex];
+        if (key.upArrow) {
+          setConfirmContextDelete(false);
+          setContextIndex((i) => Math.max(0, i - 1));
+        } else if (key.downArrow) {
+          setConfirmContextDelete(false);
+          setContextIndex((i) => Math.min(held.length - 1, i + 1));
+        } else if ((ch === "K" || ch === "J") && here) {
+          // Uppercase, as `V` already is: the cursor keys move the cursor and
+          // these move the sentence under it, which are different things and
+          // read as different keys.
+          const by = ch === "K" ? -1 : 1;
+          session.moveVocabContext(phase.cardId, here.at, by);
+          save();
+          setTick((n) => n + 1);
+          setContextIndex((i) => Math.max(0, Math.min(held.length - 1, i + by)));
+        } else if ((key.return || ch === "e") && here) {
+          setContextDraft({ prompt: here.prompt, sentence: here.sentence });
+          setConfirmContextDelete(false);
+          setPhase({
+            t: "context-edit",
+            cardId: phase.cardId,
+            at: here.at,
+            from: phase.from,
+            field: "sentence",
+          });
+        } else if (ch === "x" && here) {
+          // Two presses, as everywhere a press throws something away.
+          if (confirmContextDelete) {
+            session.deleteVocabContext(phase.cardId, here.at);
+            save();
+            setConfirmContextDelete(false);
+            setContextIndex((i) => Math.max(0, Math.min(i, held.length - 2)));
+            setFlash("Sentence deleted.");
+            setTick((n) => n + 1);
+          } else {
+            setConfirmContextDelete(true);
+            setFlash("Press x again to delete this sentence.");
+          }
+        } else if (ch === "m") {
+          setConfirmContextDelete(false);
+          openMap(phase.from);
+        } else if (ch === "w") {
+          setConfirmContextDelete(false);
+          showWordsFor(phase.from);
+        } else if (key.escape || ch === "c") {
+          setConfirmContextDelete(false);
+          setFlash(null);
+          setPhase({ t: "vocab-list", from: phase.from });
+        }
+        break;
+      }
       case "vocab-pick": {
         if (ch >= "1" && ch <= String(Math.min(9, phase.candidates.length))) {
           const chosen = phase.candidates[Number(ch) - 1];
-          if (chosen) {
-            session.recordVocab(chosen);
-            save();
-            setTick((n) => n + 1);
-            setFlash(`Saved: ${chosen.citation}`);
-          }
+          if (chosen) keepWord(chosen, phase.context);
           setPhase({ t: "graded" });
         } else if (key.escape) {
           setPhase({ t: "graded" });
@@ -862,6 +1032,14 @@ export function App({ session, content, storage }: Props) {
       case "vocab-review-front": {
         if (key.return || ch === " ")
           setPhase({ t: "vocab-review-back", cardId: phase.cardId });
+        // One more of the sentence's English halves, and never its Latin: the
+        // reminder of which line this was is usually the whole of what was
+        // missing, and it costs none of the answer.
+        else if (ch === "h") {
+          setHinted((n) =>
+            Math.min(n + 1, session.vocabContexts(phase.cardId).length),
+          );
+        }
         // A grade can advance straight into a vocabulary card; the way back to
         // it has to be here too.
         else if (ch === "u") undoGrade();
@@ -989,7 +1167,12 @@ export function App({ session, content, storage }: Props) {
       )}
 
       {phase.t === "vocab-list" && (
-        <VocabList cards={vocab} cursor={vocabIndex} height={readerHeight} />
+        <VocabList
+          cards={vocab}
+          cursor={vocabIndex}
+          height={readerHeight}
+          keeping={session.keepsContext()}
+        />
       )}
 
       {phase.t === "vocab-edit" && (
@@ -1026,6 +1209,52 @@ export function App({ session, content, storage }: Props) {
           </Box>
           <Text dimColor>
             The citation is what you are asked to produce; the meaning is the prompt.
+          </Text>
+        </Box>
+      )}
+
+      {phase.t === "vocab-contexts" && (
+        <ContextList
+          card={session.vocabCard(phase.cardId)}
+          cursor={contextIndex}
+          height={readerHeight}
+        />
+      )}
+
+      {phase.t === "context-edit" && (
+        <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+          <Text color="gray">Edit sentence — Tab switches field, Enter saves</Text>
+          <Box marginTop={1}>
+            <Text color={phase.field === "prompt" ? "cyan" : undefined}>
+              {phase.field === "prompt" ? "▸ " : "  "}question {"  "}
+            </Text>
+            {phase.field === "prompt" ? (
+              <TextInput
+                value={contextDraft.prompt}
+                onChange={(prompt) => setContextDraft((d) => ({ ...d, prompt }))}
+                onSubmit={() => saveContextEdit(phase.cardId, phase.at, phase.from)}
+              />
+            ) : (
+              <Text>{contextDraft.prompt}</Text>
+            )}
+          </Box>
+          <Box>
+            <Text color={phase.field === "sentence" ? "cyan" : undefined}>
+              {phase.field === "sentence" ? "▸ " : "  "}sentence {"  "}
+            </Text>
+            {phase.field === "sentence" ? (
+              <TextInput
+                value={contextDraft.sentence}
+                onChange={(sentence) => setContextDraft((d) => ({ ...d, sentence }))}
+                onSubmit={() => saveContextEdit(phase.cardId, phase.at, phase.from)}
+              />
+            ) : (
+              <Text>{contextDraft.sentence}</Text>
+            )}
+          </Box>
+          <Text dimColor>
+            Whether the sentence is the reference or your own is not editable —
+            rewriting your words does not make them the book's.
           </Text>
         </Box>
       )}
@@ -1100,7 +1329,12 @@ export function App({ session, content, storage }: Props) {
       )}
 
       {(phase.t === "vocab-review-front" || phase.t === "vocab-review-back") && (
-        <VocabReview ui={content.profile.ui} card={session.vocabCard(phase.cardId)} reveal={phase.t === "vocab-review-back"} />
+        <VocabReview
+          ui={content.profile.ui}
+          card={session.vocabCard(phase.cardId)}
+          reveal={phase.t === "vocab-review-back"}
+          hinted={hinted}
+        />
       )}
 
       {phase.t === "practised" && (
@@ -1145,6 +1379,12 @@ export function App({ session, content, storage }: Props) {
         practiseCosts={phase.t === "map" && phase.from.t === "answering"}
         undo={undo !== null}
         book={coverageHere !== null}
+        contexts={(vocab[vocabIndex]?.contexts?.length ?? 0) > 0}
+        canHint={
+          phase.t === "vocab-review-front" &&
+          hinted < session.vocabContexts(phase.cardId).length
+        }
+        keeping={session.keepsContext()}
         // Greyed out with nothing due, the way the web app greys its switch.
         errand={dueNow > 0 ? mode : null}
       />
@@ -1586,10 +1826,13 @@ function VocabList({
   cards,
   cursor,
   height,
+  keeping,
 }: {
   cards: VocabCardState[];
   cursor: number;
   height: number;
+  /** Whether recording a word currently keeps its sentence too. */
+  keeping: boolean;
 }) {
   if (cards.length === 0) {
     return (
@@ -1609,17 +1852,21 @@ function VocabList({
     <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
       <Text color="gray">
         Vocabulary — {cards.length} {cards.length === 1 ? "word" : "words"}, word{" "}
-        {cursor + 1} of {cards.length}
+        {cursor + 1} of {cards.length} · keeping sentences: {keeping ? "on" : "off"}
       </Text>
       {visible.map((card) => {
         const on = cards[cursor]?.id === card.id;
         const due = new Date(card.fsrs.due).getTime();
+        const kept = card.contexts?.length ?? 0;
         return (
           <Box key={card.id}>
             <Text color={on ? "cyan" : undefined} bold={on}>
               {`${on ? "▸ " : "  "}${card.citation}`}
             </Text>
             <Text dimColor>{`  ${card.gloss}`}</Text>
+            {/* So `c` is discoverable: a key nobody knows about is a key
+                nobody presses. */}
+            <Text dimColor>{kept > 0 ? `  · ${kept} kept` : ""}</Text>
             <Text color={due <= now ? "yellow" : undefined} dimColor={due > now}>
               {due <= now ? "  · due" : ""}
             </Text>
@@ -1692,29 +1939,159 @@ function QuestionView({
   );
 }
 
+/**
+ * One sentence of a card, with the word that was picked out drawn bold.
+ *
+ * `sentenceTokens` rather than a split of its own: the index was written down
+ * on the phone against that cut of the line, and a second way of numbering a
+ * sentence's words would light up the wrong one here.
+ */
+function ContextSentence({ context }: { context: VocabContext }) {
+  return (
+    <Text>
+      {sentenceTokens(context.sentence).map((token, i) =>
+        !token.space && token.index === context.index ? (
+          <Text key={i} bold color="yellow">
+            {token.text}
+          </Text>
+        ) : (
+          <Text key={i}>{token.text}</Text>
+        ),
+      )}
+    </Text>
+  );
+}
+
+/**
+ * A vocabulary card.
+ *
+ * English on the front: the student produces the Latin, as everywhere else. The
+ * back carries the sentences the word was met in under the citation — the line
+ * it was read in is usually the reason it stuck, and the card used to throw it
+ * away. Three at most, because a review card that scrolls is a review card with
+ * its grades off the bottom of the screen.
+ *
+ * `hinted` is how many of those sentences' *English* halves have been asked for
+ * in front of the reveal. The English cannot give the answer away, so it is
+ * free to be a hint; the Latin stays behind the reveal with the citation.
+ */
 function VocabReview({
   ui,
   card,
   reveal,
+  hinted,
 }: {
   ui: Profile["ui"];
-  card: { citation: string; gloss: string } | undefined;
+  card: VocabCardState | undefined;
   reveal: boolean;
+  /** How many context prompts the student has asked to see. */
+  hinted: number;
 }) {
   if (!card) return null;
-  // English on the front: the student produces the Latin, as everywhere else.
+  const contexts = card.contexts ?? [];
+  const shown = contexts.slice(0, 3);
   return (
     <Box flexDirection="column" marginTop={1}>
       <Text dimColor>Vocabulary review · {ui.sayItIn}</Text>
       <Box marginTop={1}>
         <Text bold>{card.gloss}</Text>
       </Box>
-      {reveal && (
-        <Box marginTop={1}>
-          <Text color="magenta" bold>
-            → {card.citation}
+      {!reveal &&
+        contexts.slice(0, hinted).map((c) => (
+          <Text key={c.at} dimColor>
+            {c.prompt}
           </Text>
-        </Box>
+        ))}
+      {reveal && (
+        <>
+          <Box marginTop={1}>
+            <Text color="magenta" bold>
+              → {card.citation}
+            </Text>
+          </Box>
+          {shown.length > 0 && (
+            <Box flexDirection="column" marginTop={1}>
+              <Text dimColor>where you met it</Text>
+              {shown.map((c) => (
+                <Box key={c.at} flexDirection="column" marginTop={1}>
+                  <Text dimColor>
+                    {c.prompt}
+                    {/* Never dropped: a sentence the student wrote may be
+                        wrong, and a card that drew it as the reference would
+                        teach the mistake back to the person who made it. */}
+                    {c.source === "submitted" ? "  (you wrote)" : ""}
+                  </Text>
+                  <ContextSentence context={c} />
+                </Box>
+              ))}
+              {contexts.length > shown.length && (
+                <Text dimColor>
+                  {`… and ${contexts.length - shown.length} more (V, then c)`}
+                </Text>
+              )}
+            </Box>
+          )}
+        </>
+      )}
+    </Box>
+  );
+}
+
+/**
+ * The sentences one card has kept, as a pane over the vocabulary list.
+ *
+ * The order is the student's and is what the card back reads in, so the first
+ * row is also the one the hint offers first — which is the whole reason moving
+ * a row is worth a key.
+ */
+function ContextList({
+  card,
+  cursor,
+  height,
+}: {
+  card: VocabCardState | undefined;
+  cursor: number;
+  height: number;
+}) {
+  const contexts = card?.contexts ?? [];
+  if (!card || contexts.length === 0) {
+    return (
+      <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+        <Text color="gray">{card ? card.citation : "Word"} — no sentences kept</Text>
+        <Text dimColor>
+          Press v while an answer is on screen and the sentence comes with the word.
+        </Text>
+      </Box>
+    );
+  }
+  // Two lines to a sentence, so half as many fit as in a list of words.
+  const rows = Math.max(1, Math.floor((height - 2) / 2));
+  const start = Math.max(0, Math.min(cursor - Math.floor(rows / 2), contexts.length - rows));
+  const visible = contexts.slice(Math.max(0, start), Math.max(0, start) + rows);
+
+  return (
+    <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
+      <Text color="gray">
+        {card.citation} — {contexts.length}{" "}
+        {contexts.length === 1 ? "sentence" : "sentences"}, {cursor + 1} of{" "}
+        {contexts.length}
+      </Text>
+      {visible.map((c) => {
+        const on = contexts[cursor]?.at === c.at;
+        return (
+          <Box key={c.at} flexDirection="column" marginTop={1}>
+            <Text color={on ? "cyan" : undefined} bold={on}>
+              {`${on ? "▸ " : "  "}${c.prompt}`}
+              <Text dimColor>{c.source === "submitted" ? "  (you wrote)" : ""}</Text>
+            </Text>
+            <Box paddingLeft={2}>
+              <ContextSentence context={c} />
+            </Box>
+          </Box>
+        );
+      })}
+      {contexts.length > rows && (
+        <Text dimColor>{positionLabel(Math.max(0, start), rows, contexts.length)}</Text>
       )}
     </Box>
   );
@@ -1729,6 +2106,9 @@ function HintBar({
   practiseCosts,
   undo,
   book,
+  contexts,
+  canHint,
+  keeping,
   errand,
 }: {
   ui: Profile["ui"];
@@ -1745,6 +2125,12 @@ function HintBar({
   undo?: boolean;
   /** A topic is on screen, so `b` has a book to send you back to. */
   book?: boolean;
+  /** The card under the cursor has sentences, so `c` has something to open. */
+  contexts?: boolean;
+  /** The card under review still has a hint left to give. */
+  canHint?: boolean;
+  /** Whether recording a word currently keeps its sentence too. */
+  keeping?: boolean;
   /** The errand `x` would leave, or null when there is nothing to switch to. */
   errand?: Mode | null;
 }) {
@@ -1760,6 +2146,10 @@ function HintBar({
   // Offered only where it would do something: `b` needs a topic on screen to
   // be leaving, and `x` needs something due to switch to.
   const bookHint = book ? " · b back to the book" : "";
+  // Both offered only where they would do something, the same way `h` waits for
+  // a trail: a key that is advertised has to do something.
+  const contextsHint = contexts ? " · c its sentences" : "";
+  const hintHint = canHint ? " · h hint" : "";
   const errandHint =
     errand === "review"
       ? " · x explore"
@@ -1781,13 +2171,17 @@ function HintBar({
         : phase === "schedule"
           ? `↑ ↓ scroll · PgUp/PgDn page · m index${wordsHint} · Esc close · q quit`
         : phase === "vocab-list"
-          ? `↑ ↓ word · Enter edit · x delete · m index${wordsHint} · Esc close · q quit`
-        : phase === "vocab-edit"
+          ? `↑ ↓ word · Enter edit${contextsHint} · a keep sentences: ${
+              keeping ? "on" : "off"
+            } · x delete · m index${wordsHint} · Esc close · q quit`
+        : phase === "vocab-contexts"
+          ? `↑ ↓ sentence · K J move it · e edit · x delete · m index${wordsHint} · Esc back · q quit`
+        : phase === "vocab-edit" || phase === "context-edit"
           ? "type · Tab switch field · Enter save · Esc cancel"
         : phase === "graded"
         ? `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${bookHint}${errandHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m index · s schedule · q quit`
         : phase === "vocab-review-front"
-          ? `Space/Enter reveal${undoHint} · m index · q quit`
+          ? `Space/Enter reveal${hintHint}${undoHint} · m index · q quit`
           : phase === "vocab-review-back"
             ? `1–4 self-grade${undoHint} · m index · q quit`
             : phase === "vocab-input"

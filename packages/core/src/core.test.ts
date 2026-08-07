@@ -3,8 +3,12 @@ import { Content } from "./content.js";
 import { testProfile } from "./profile.fixture.js";
 import { compileFold } from "./fold.js";
 import { newCard, preview, rate } from "./scheduler.js";
-import { Session } from "./session.js";
-import { emptyProgress, type ContentData } from "./types.js";
+import { MAX_CONTEXTS, Session } from "./session.js";
+import {
+  emptyProgress,
+  type ContentData,
+  type NewVocabContext,
+} from "./types.js";
 
 const fixture: ContentData = {
   grammar: [
@@ -408,6 +412,245 @@ describe("Session vocabulary", () => {
     expect(offline.vocabCard(id)?.citation).toBe("manus, ūs (f)");
     // And the generation is not claimed, so the next launch tries again.
     expect(offline.progress().citationsVersion).toBe(1);
+  });
+});
+
+describe("Session vocabulary: the sentence a word was met in", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  const later = (minutes: number) =>
+    new Date(now.getTime() + minutes * 60_000);
+  const entry = () => new Content(fixture, testProfile).lookup("manibus")[0]!;
+  const start = () => {
+    const s = new Session(new Content(fixture, testProfile));
+    return { s, id: s.recordVocab(entry(), now) };
+  };
+  const reference: NewVocabContext = {
+    prompt: "The girls praise the rose.",
+    sentence: "Puellae rosam laudant.",
+    source: "answer",
+    index: 1,
+  };
+
+  it("keeps the reference and what was written as two contexts", () => {
+    const { s, id } = start();
+    expect(s.addVocabContext(id, reference, now)).toBe("added");
+    expect(
+      s.addVocabContext(
+        id,
+        { ...reference, sentence: "Puellae rosa laudant.", source: "submitted" },
+        later(1),
+      ),
+    ).toBe("added");
+
+    const [first, second] = s.vocabContexts(id);
+    expect(first?.sentence).toBe("Puellae rosam laudant.");
+    expect(first?.source).toBe("answer");
+    expect(first?.at).toBe(now.toISOString());
+    expect(second?.source).toBe("submitted");
+  });
+
+  it("counts an answer typed correctly as the one context it is", () => {
+    const { s, id } = start();
+    s.addVocabContext(id, reference, now);
+    // The student wrote the reference, with the pack's marks left off and a
+    // stray space — the fold and `words` between them make that the same line.
+    expect(
+      s.addVocabContext(
+        id,
+        { ...reference, sentence: "puellae  rosam laudant", source: "submitted" },
+        later(1),
+      ),
+    ).toBe("duplicate");
+    expect(s.vocabContexts(id)).toHaveLength(1);
+  });
+
+  it("adds a second question's sentence to a word already saved", () => {
+    const { s, id } = start();
+    s.addVocabContext(id, reference, now);
+    const before = s.vocabCard(id)!.fsrs.due;
+
+    // Met again, months later, in a different question. The same card takes it.
+    const second = s.recordVocab(entry(), later(60));
+    expect(second).toBe(id);
+    expect(
+      s.addVocabContext(
+        id,
+        { prompt: "He held power.", sentence: "Manum tenuit.", source: "answer", index: 0 },
+        later(60),
+      ),
+    ).toBe("added");
+
+    expect(s.vocabList()).toHaveLength(1);
+    expect(s.vocabContexts(id)).toHaveLength(2);
+    // Recording a word already held rewrites nothing about the card itself.
+    expect(s.vocabCard(id)?.fsrs.due).toBe(before);
+  });
+
+  it("never rewrites a card the student has corrected", () => {
+    const { s, id } = start();
+    s.updateVocab(id, { citation: "manus, manūs (f)", gloss: "hand, band" });
+    // A second hold on the same word must not quietly restore the dictionary's
+    // citation over the student's own.
+    s.recordVocab(entry(), later(1));
+    expect(s.vocabCard(id)?.citation).toBe("manus, manūs (f)");
+    expect(s.vocabCard(id)?.citationEdited).toBe(true);
+  });
+
+  it("stops at the cap and says so", () => {
+    const { s, id } = start();
+    // Distinguished by a word rather than a number: `words` keeps letters and
+    // drops everything else, so eight sentences differing only in a digit would
+    // be one sentence eight times over — as they are to `answerMatches`.
+    const each = ["alpha", "beta", "gamma", "delta", "zeta", "eta", "theta", "iota"];
+    for (let i = 0; i < MAX_CONTEXTS; i++) {
+      expect(
+        s.addVocabContext(
+          id,
+          { ...reference, sentence: `Line ${each[i]}.` },
+          later(i),
+        ),
+      ).toBe("added");
+    }
+    const full = s.vocabContexts(id).map((c) => c.at);
+    expect(
+      s.addVocabContext(id, { ...reference, sentence: "One too many." }, later(99)),
+    ).toBe("full");
+    // Refused whole: nothing dropped to make room, nothing appended.
+    expect(s.vocabContexts(id).map((c) => c.at)).toEqual(full);
+  });
+
+  it("attaches nothing once the student has turned it off", () => {
+    const { s, id } = start();
+    expect(s.keepsContext()).toBe(true);
+    s.setKeepContext(false);
+    expect(s.addVocabContext(id, reference, now)).toBe("off");
+    expect(s.vocabCard(id)?.contexts).toBeUndefined();
+    // The word itself is still recorded — the preference is about the sentence.
+    expect(s.vocabList()).toHaveLength(1);
+  });
+
+  it("holds the preference across a grade taken back", () => {
+    const { s, id } = start();
+    const before = s.snapshot();
+    s.setKeepContext(false);
+    s.gradeVocab(id, 3, now);
+    // The undo reaches the grade it was offered for, and stops there.
+    s.restore(before);
+    expect(s.keepsContext()).toBe(false);
+  });
+
+  it("tells apart two sentences attached in the same millisecond", () => {
+    const { s, id } = start();
+    // Nothing forces a hold to be the only way in — an import, or two attached
+    // in one turn, land on the same clock reading. Two contexts sharing an `at`
+    // are one context that cannot be named, and deleting either deletes both.
+    s.addVocabContext(id, { ...reference, sentence: "Line alpha." }, now);
+    s.addVocabContext(id, { ...reference, sentence: "Line beta." }, now);
+    const [first, second] = s.vocabContexts(id);
+    expect(first?.at).not.toBe(second?.at);
+
+    s.deleteVocabContext(id, first!.at);
+    expect(s.vocabContexts(id).map((c) => c.sentence)).toEqual(["Line beta."]);
+  });
+
+  it("moves a context one place, and stops at the ends", () => {
+    const { s, id } = start();
+    const at = (i: number) => later(i).toISOString();
+    const each = ["alpha", "beta", "gamma"];
+    for (let i = 0; i < 3; i++) {
+      s.addVocabContext(id, { ...reference, sentence: `Line ${each[i]}.` }, later(i));
+    }
+    const order = () => s.vocabContexts(id).map((c) => c.sentence);
+
+    s.moveVocabContext(id, at(2), -1);
+    expect(order()).toEqual(["Line alpha.", "Line gamma.", "Line beta."]);
+    s.moveVocabContext(id, at(0), -1); // already first
+    s.moveVocabContext(id, at(1), 1); // already last
+    s.moveVocabContext(id, "never-attached", 1);
+    expect(order()).toEqual(["Line alpha.", "Line gamma.", "Line beta."]);
+  });
+
+  it("finds the picked-out word again in a rewritten sentence", () => {
+    const { s, id } = start();
+    s.addVocabContext(id, reference, now); // index 1 — "rosam"
+
+    // The word moves; the highlight follows it rather than staying put.
+    s.updateVocabContext(id, now.toISOString(), {
+      sentence: "  Rosam puellae laudant.  ",
+    });
+    expect(s.vocabContexts(id)[0]?.sentence).toBe("Rosam puellae laudant.");
+    expect(s.vocabContexts(id)[0]?.index).toBe(0);
+
+    // And when it is gone, the highlight goes rather than landing on a word
+    // the student never picked.
+    s.updateVocabContext(id, now.toISOString(), { sentence: "Puellae laudant." });
+    expect(s.vocabContexts(id)[0]?.index).toBeUndefined();
+  });
+
+  it("will not relabel what the student wrote as the reference", () => {
+    const { s, id } = start();
+    s.addVocabContext(id, { ...reference, source: "submitted" }, now);
+    s.updateVocabContext(id, now.toISOString(), {
+      prompt: "  Tidied up.  ",
+      sentence: "Puellae rosam laudant.",
+    });
+    expect(s.vocabContexts(id)[0]?.prompt).toBe("Tidied up."); // trimmed
+    expect(s.vocabContexts(id)[0]?.source).toBe("submitted");
+  });
+
+  it("leaves no trace of a card whose contexts were all deleted", () => {
+    const { s, id } = start();
+    s.addVocabContext(id, reference, now);
+    s.addVocabContext(id, { ...reference, sentence: "Another line." }, later(1));
+
+    s.deleteVocabContext(id, now.toISOString());
+    expect(s.vocabContexts(id).map((c) => c.sentence)).toEqual(["Another line."]);
+    s.deleteVocabContext(id, later(1).toISOString());
+    // Absent, not empty: a cleared card reads like one that never had any.
+    expect(s.vocabCard(id)?.contexts).toBeUndefined();
+    s.deleteVocabContext(id, now.toISOString()); // deleting twice is not an error
+  });
+
+  it("reads a file written before any of this existed", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const id = s.recordVocab(entry(), now);
+    const old = s.progress();
+    delete old.keepContext; // as a file from before the preference
+
+    const back = new Session(new Content(fixture, testProfile), old);
+    expect(back.keepsContext()).toBe(true);
+    expect(back.vocabContexts(id)).toEqual([]);
+    // Every one of these is safe on a card that has no contexts at all.
+    back.moveVocabContext(id, "nothing", 1);
+    back.deleteVocabContext(id, "nothing");
+    back.updateVocabContext(id, "nothing", { sentence: "x" });
+    expect(back.addVocabContext(id, reference, now)).toBe("added");
+    expect(back.addVocabContext("v-no-such-card", reference, now)).toBe("missing");
+  });
+
+  it("leaves contexts alone when the dictionary is rebuilt", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const id = s.recordVocab(entry(), now);
+    s.addVocabContext(id, reference, now);
+    s.progress().citationsVersion = 1;
+
+    const rebuilt = new Content(
+      {
+        ...fixture,
+        lemmas: {
+          manus: [
+            { lemma: "manus", citation: "manus, manūs (f)", gloss: "hand", pos: "noun" },
+          ],
+        },
+      },
+      testProfile,
+    );
+    const after = new Session(rebuilt, s.progress());
+    expect(after.refreshCitations()).toBe(1);
+    // The citation is the dictionary's to revise. The sentence is not.
+    expect(after.vocabCard(id)?.citation).toBe("manus, manūs (f)");
+    expect(after.vocabContexts(id)).toHaveLength(1);
+    expect(after.vocabContexts(id)[0]?.sentence).toBe("Puellae rosam laudant.");
   });
 });
 

@@ -25,8 +25,11 @@ export {
   words,
   sentenceTokens,
   answerMatches,
+  foldKey,
+  locateWord,
   stripPunctuation,
   type SentenceToken,
+  type WordSite,
   type VocabWord,
   type VocabStatus,
   type VocabSource,
@@ -51,8 +54,10 @@ export {
 } from "./paradigm.js";
 export {
   Session,
+  MAX_CONTEXTS,
   type Action,
   type BankedQuestion,
+  type ContextOutcome,
   type Coverage,
   type ScheduleEntry,
   type TopicProgress,

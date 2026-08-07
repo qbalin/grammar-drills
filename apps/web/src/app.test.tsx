@@ -192,6 +192,19 @@ async function inspectWord(word: string) {
   });
 }
 
+/**
+ * Hold a word down inside one block, since the same word stands in both the
+ * reference and what was written and the whole point is telling them apart.
+ */
+async function holdWordIn(selector: string, word: string) {
+  const span = wordsIn(selector).find(
+    (el) => el.dataset.word?.replace(/[^\p{Letter}]/gu, "") === word,
+  );
+  if (!span) throw new Error(`no word “${word}” in ${selector}`);
+  fireEvent.pointerDown(span, { clientX: 20, clientY: 20 });
+  await passTime(700);
+}
+
 /** Hold down the crib row that carries this text, long enough to record it. */
 async function holdCribRow(text: string, then?: () => void) {
   const row = Array.from(document.querySelectorAll<HTMLElement>(".crib-row")).find(
@@ -1101,6 +1114,260 @@ describe("holding a word", () => {
     mount();
     expect(document.querySelector(".macrons")).toBeNull();
     expect(screen.queryByRole("button", { name: "ā" })).toBeNull();
+  });
+});
+
+/**
+ * Grade on, then record a word by typing it into *record a word*.
+ *
+ * The word is not in the next question's sentences, so there is nothing to hold
+ * — which is the path a typed word takes: the sentence it is kept with is the
+ * question that was on screen, found rather than pointed at.
+ */
+async function recordOnNextQuestion(
+  user: ReturnType<typeof userEvent.setup>,
+  form: string,
+) {
+  await user.click(screen.getByRole("button", { name: /Good/ }));
+  await user.click(screen.getByRole("button", { name: "Reveal" }));
+  await user.click(screen.getByRole("button", { name: /record a word/ }));
+  await user.type(screen.getByLabelText(/Type the word/), form);
+  await user.click(screen.getByRole("button", { name: "Look up" }));
+}
+
+describe("the sentence a held word was met in", () => {
+  /** Submit a wrong answer, so the two blocks carry different sentences. */
+  async function submitWrong(user: ReturnType<typeof userEvent.setup>) {
+    const mounted = mount();
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    return mounted;
+  }
+
+  it("keeps the reference when the word was held in the reference", async () => {
+    const user = userEvent.setup();
+    const { session } = await submitWrong(user);
+
+    await holdWordIn(".compare__block--reference", "rosam");
+
+    const [context] = session.vocabContexts("v-rosa");
+    expect(context?.prompt).toBe("The girl loves the rose.");
+    expect(context?.sentence).toBe("Puella rosam amat.");
+    expect(context?.source).toBe("answer");
+    // The word that was actually under the thumb, not merely the sentence.
+    expect(context?.index).toBe(1);
+  });
+
+  it("keeps what the student wrote when the word was held there", async () => {
+    const user = userEvent.setup();
+    const { session } = await submitWrong(user);
+
+    // The block that is not the reference is the one you wrote.
+    await holdWordIn(".compare__block:not(.compare__block--reference)", "amat");
+
+    const [context] = session.vocabContexts("v-amo");
+    expect(context?.sentence).toBe("Puella rosa amat.");
+    // Labelled, because this sentence is wrong and the card must not draw it
+    // as though the book had written it.
+    expect(context?.source).toBe("submitted");
+  });
+
+  it("keeps the reference sentence when a crib row is held", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await user.click(screen.getByRole("button", { name: /Vocabulary — / }));
+
+    await holdCribRow("rosa, rosae (f)");
+
+    const [context] = session.vocabContexts("v-rosa");
+    expect(context?.sentence).toBe("Puella rosam amat.");
+    expect(context?.source).toBe("answer");
+    // The row stands for a form and not a position; the position is found.
+    expect(context?.index).toBe(1);
+  });
+
+  it("carries the sentence across the sheet that asks which word it was", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await user.type(screen.getByLabelText("Your Latin"), "manibus");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    // Several taps stand between the press and the card. The sentence has to
+    // survive them, and land on the candidate finally chosen.
+    await holdWord("manibus");
+    await user.click(screen.getByRole("button", { name: /mānis/ }));
+
+    const [context] = session.vocabContexts("v-manis");
+    expect(context?.sentence).toBe("manibus");
+    expect(context?.source).toBe("submitted");
+  });
+
+  it("adds a second sentence to a word already saved, and says which it did", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    expect(screen.getByText("Saved rosa, rosae (f)")).toBeDefined();
+
+    // The same word again, on the same question: one sentence, not two.
+    await holdWord("rosam");
+    expect(session.vocabContexts("v-rosa")).toHaveLength(1);
+    expect(screen.getByText("rosa, rosae (f) is already saved")).toBeDefined();
+
+    // Met again on a different question, and the card takes the new sentence
+    // rather than the press doing nothing as it used to.
+    await recordOnNextQuestion(user, "rosam");
+    expect(screen.getByText("Another sentence on rosa, rosae (f)")).toBeDefined();
+    expect(session.vocabContexts("v-rosa")).toHaveLength(2);
+    expect(session.vocabContexts("v-rosa")[1]?.sentence).toBe(
+      "Nautae procellam timēbant.",
+    );
+  });
+
+  it("keeps nothing once the student has turned it off", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await user.click(screen.getByLabelText(/Keep the sentence/));
+    await user.click(screen.getByRole("button", { name: "Close" }));
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+
+    // The word is still recorded — the preference is about the sentence.
+    expect(session.vocabCard("v-rosa")).toBeDefined();
+    expect(session.vocabContexts("v-rosa")).toEqual([]);
+    expect(session.progress().keepContext).toBe(false);
+  });
+});
+
+describe("a vocabulary card that remembers where the word was met", () => {
+  /** Record a word with a sentence, then go and review it. */
+  async function reviewOne(user: ReturnType<typeof userEvent.setup>) {
+    const mounted = mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    await user.click(screen.getByRole("button", { name: "Review" }));
+    return mounted;
+  }
+
+  it("shows the sentence under the citation, and only once revealed", async () => {
+    const user = userEvent.setup();
+    await reviewOne(user);
+
+    // The front is the meaning. The Latin is all behind Show — including the
+    // sentence, which would otherwise hand over the answer.
+    expect(screen.getByText("rose")).toBeDefined();
+    expect(screen.queryByText("The girl loves the rose.")).toBeNull();
+    expect(document.querySelector(".compare")).toBeNull();
+
+    await user.click(screen.getByRole("button", { name: "Show" }));
+    expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
+    expect(screen.getByText("The girl loves the rose.")).toBeDefined();
+    expect(sentences()).toContain("Puella rosam amat.");
+    // The held word is picked out in the sentence it was held in.
+    expect(document.querySelector(".mark--b")?.textContent).toBe("rosam");
+  });
+
+  it("offers the English of the sentence as a hint, and never the Latin", async () => {
+    const user = userEvent.setup();
+    await reviewOne(user);
+
+    await user.click(screen.getByRole("button", { name: /hint/ }));
+    expect(screen.getByText("The girl loves the rose.")).toBeDefined();
+    // The half that cannot give the answer away, and only that half.
+    expect(screen.queryByText("Puella rosam amat.")).toBeNull();
+    expect(document.querySelector(".compare")).toBeNull();
+
+    // One sentence, one hint: a button with nothing left to give is gone.
+    expect(screen.queryByRole("button", { name: /hint/ })).toBeNull();
+  });
+
+  it("offers no hint at all on a card with no sentence on it", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await user.click(screen.getByLabelText(/Keep the sentence/));
+    await user.click(screen.getByRole("button", { name: "Close" }));
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    await user.click(screen.getByRole("button", { name: "Review" }));
+
+    expect(screen.queryByRole("button", { name: /hint/ })).toBeNull();
+  });
+});
+
+describe("correcting the sentences on a card", () => {
+  /** One card carrying two sentences, with its edit sheet open on them. */
+  async function twoSentences(user: ReturnType<typeof userEvent.setup>) {
+    const mounted = mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    await recordOnNextQuestion(user, "rosam");
+    await user.click(screen.getByRole("button", { name: "Edit" }));
+    return mounted;
+  }
+
+  it("reorders, corrects and deletes, each as it is pressed", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    expect(session.vocabContexts("v-rosa")).toHaveLength(1);
+
+    await user.click(screen.getByRole("button", { name: "Edit" }));
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+
+    // Correct the one sentence it has.
+    await user.click(within(sheet).getByRole("button", { name: /^Edit “/ }));
+    const sentence = within(sheet).getByLabelText("The sentence");
+    await user.clear(sentence);
+    await user.type(sentence, "Puella rosam amābat.");
+    await user.click(within(sheet).getByRole("button", { name: "Save sentence" }));
+    expect(session.vocabContexts("v-rosa")[0]?.sentence).toBe("Puella rosam amābat.");
+    // The picked-out word is found again in the rewritten line.
+    expect(session.vocabContexts("v-rosa")[0]?.index).toBe(1);
+
+    // And throwing it away takes two presses, as everything unrecoverable does.
+    await user.click(within(sheet).getByRole("button", { name: /^Delete “/ }));
+    await user.click(within(sheet).getByRole("button", { name: "Confirm deletion" }));
+    expect(session.vocabContexts("v-rosa")).toEqual([]);
+    // The word itself is untouched — this deleted a sentence, not a card.
+    expect(session.vocabCard("v-rosa")).toBeDefined();
+  });
+
+  it("moves a sentence up, which is what the hint then offers first", async () => {
+    const user = userEvent.setup();
+    const { session } = await twoSentences(user);
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+    const order = () => session.vocabContexts("v-rosa").map((c) => c.sentence);
+    expect(order()).toEqual(["Puella rosam amat.", "Nautae procellam timēbant."]);
+
+    // The second row's up arrow: one press, one place, saved as it is pressed.
+    const up = within(sheet).getAllByRole("button", { name: /^Move .* up$/ });
+    await user.click(up[1]!);
+    expect(order()).toEqual(["Nautae procellam timēbant.", "Puella rosam amat."]);
+
+    // And the order is the card's, not the sheet's: it survives closing it.
+    await user.click(within(sheet).getByRole("button", { name: "Close" }));
+    expect(order()).toEqual(["Nautae procellam timēbant.", "Puella rosam amat."]);
+  });
+
+  it("greys the arrow that has nowhere to go", async () => {
+    const user = userEvent.setup();
+    await twoSentences(user);
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+
+    // The ends say so by being off rather than by answering a press with
+    // nothing — and a row that teleported to the far end would be a bug report.
+    const up = within(sheet).getAllByRole("button", { name: /^Move .* up$/ });
+    const down = within(sheet).getAllByRole("button", { name: /^Move .* down$/ });
+    expect(up[0]).toHaveProperty("disabled", true);
+    expect(down[0]).toHaveProperty("disabled", false);
+    expect(up[1]).toHaveProperty("disabled", false);
+    expect(down[1]).toHaveProperty("disabled", true);
   });
 });
 

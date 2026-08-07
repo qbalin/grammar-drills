@@ -107,10 +107,68 @@ export interface SerializedCard {
   learning_steps?: number;
 }
 
+/**
+ * A sentence the word was met in, kept on the card.
+ *
+ * A card is a dictionary entry, and a dictionary entry is the one thing a word
+ * is *not* when you are learning it: the reason `manus` stuck is the line about
+ * the soldiers raising their hands, and the card threw that line away the moment
+ * it was made. This is that line, kept.
+ *
+ * A copy, like `Attempt.answer` is a copy of the reference and like the card
+ * itself is a copy of a dictionary entry. Nothing here points back at the
+ * question it came from, because the questions are generated content and can be
+ * rebuilt underneath a card that has been saved for months.
+ */
+export interface VocabContext {
+  /** The prompt that was on screen — the question this sentence answered. */
+  prompt: string;
+  /** The L2 sentence the word stood in. */
+  sentence: string;
+  /**
+   * Whose sentence it is, named for `AttemptMarks`' own two fields because it
+   * is the same distinction: `answer` is the reference, `submitted` is what the
+   * student wrote — and what they wrote may be wrong. Annotated rather than
+   * inferred, and shown rather than quietly dropped: a card that drew a mistake
+   * as though it were a model would be teaching it back to the person who made
+   * it.
+   */
+  source: "answer" | "submitted";
+  /**
+   * Which word of `sentence` was picked out, as `SentenceToken.index` — the
+   * same cut the marks and the vocabulary crib make, so the highlight survives
+   * being written to disk and read back by a surface that wraps the line
+   * differently. Absent where nothing pointed at a word.
+   */
+  index?: number;
+  /**
+   * When it was attached, ISO. The context's identity, as `at` is an attempt's
+   * — the array position, the one thing an id could otherwise be, is exactly
+   * what reordering makes mutable.
+   *
+   * Unique among one card's contexts because the session makes it so, not
+   * because the clock does: two attached in the same millisecond would be one
+   * context that cannot be told from another, and deleting either would delete
+   * both.
+   */
+  at: string;
+}
+
+/** A context before it is attached; the session stamps the `at`. */
+export type NewVocabContext = Omit<VocabContext, "at">;
+
 export interface VocabCardState extends LemmaEntry {
   id: string;
   created: string;
   fsrs: SerializedCard;
+  /**
+   * Where this word was met, in the order the student put them in.
+   *
+   * An array rather than a record, because the order is the student's and a
+   * record has none. Absent rather than empty once the last one is deleted, so
+   * a card that was cleared reads on disk like one that never had any.
+   */
+  contexts?: VocabContext[];
   /**
    * The student has written this card's citation themselves.
    *
@@ -332,6 +390,20 @@ export interface Progress {
    * the words already saved; `Session.refreshCitations` catches them up once.
    */
   citationsVersion?: number;
+  /**
+   * Whether a recorded word keeps the sentence it was met in. Absent means yes,
+   * so only a student who turned it off carries this field at all.
+   *
+   * Here rather than beside the file, unlike the sync configuration: that is
+   * per-device because it holds a credential, and a credential is a fact about
+   * a machine. How you want your cards built is a fact about your deck, and a
+   * student who turns this off on the phone means it in the terminal too.
+   *
+   * `Mode` is deliberately absent from this file and points the other way, but
+   * for a stated reason — a remembered errand could hide a waiting pile across a
+   * reload. A standing preference hides nothing.
+   */
+  keepContext?: boolean;
   updatedAt: string;
 }
 

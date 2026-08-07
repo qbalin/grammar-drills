@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import type {
   AttemptMarks,
   Question,
@@ -145,8 +145,21 @@ export function Graded({
   /** Back to the box: Submit or Reveal was tapped too early. */
   onResume: () => void;
   onRecordWord: () => void;
-  /** A word held down in either sentence. */
-  onHoldWord: (word: string) => void;
+  /**
+   * A word held down in either sentence: the word, which of the two it was in,
+   * and where it stands among that sentence's words.
+   *
+   * Which sentence is the card's business, not this screen's: a word taken from
+   * the reference is kept beside Latin that is right by construction, and one
+   * taken from what the student wrote is kept beside Latin that may not be. The
+   * two texts are named the way `AttemptMarks` names them, so this screen goes
+   * on talking about its own three texts and the mapping happens once, above.
+   */
+  onHoldWord: (
+    word: string,
+    where: "answer" | "submitted",
+    index: number,
+  ) => void;
   /** Double-click: look the word up rather than record it. */
   onInspectWord: (word: string) => void;
   onReadGrammar: () => void;
@@ -191,7 +204,7 @@ export function Graded({
                   <Sentence
                     text={submitted.trim()}
                     marks={marks.submitted}
-                    onHold={onHoldWord}
+                    onHold={(word, i) => onHoldWord(word, "submitted", i)}
                     onInspect={onInspectWord}
                     onMark={marking ? (i) => onMark("submitted", i) : undefined}
                   />
@@ -207,7 +220,7 @@ export function Graded({
               <Sentence
                 text={question.answer}
                 marks={marks.answer}
-                onHold={onHoldWord}
+                onHold={(word, i) => onHoldWord(word, "answer", i)}
                 onInspect={onInspectWord}
                 onMark={marking ? (i) => onMark("answer", i) : undefined}
               />
@@ -242,6 +255,19 @@ export function Graded({
 /**
  * A vocabulary card. English on the front throughout the app: the student
  * always produces the Latin, never recognises it.
+ *
+ * The back carries the sentences the word was met in, under the citation. A
+ * card is a dictionary entry, and a dictionary entry is the one thing a word is
+ * *not* while it is being learnt — the reason it stuck is the line it was read
+ * in, and until this existed the card threw that line away.
+ *
+ * In front of the reveal there is a **hint**, on a card that has one: the
+ * *English* half of a context and nothing else. Being reminded that this was the
+ * line about the soldiers raising their hands is very often the whole of what
+ * was missing, and it costs none of the answer — the Latin stays behind Show.
+ * Nothing is written down about how much help was taken; that is the student's
+ * to weigh when they grade themselves, which is the bargain Reveal already
+ * strikes on a question.
  */
 export function VocabReview({
   card,
@@ -259,11 +285,26 @@ export function VocabReview({
   /** A wrong citation is never more obvious than when it is being reviewed. */
   onEdit: () => void;
 }) {
+  const contexts = card.contexts ?? [];
+  const [hinted, setHinted] = useState(0);
+  // The next card is a different word: its hints are not this one's, and a
+  // count carried over would open it half-helped.
+  useEffect(() => setHinted(0), [card.id]);
+
   return (
     <>
       <div className="study__scroll">
         <p className="eyebrow">Vocabulary · {profile.ui.sayItIn}</p>
         <p className="prompt">{card.gloss}</p>
+        {/* Only while the answer is still hidden. Once it is revealed every
+            prompt is on screen again inside its own sentence's block, and a
+            hint left standing above them is the same line printed twice. */}
+        {!revealed &&
+          contexts.slice(0, hinted).map((c) => (
+            <p className="context__prompt" key={c.at}>
+              {c.prompt}
+            </p>
+          ))}
         {revealed && (
           <div className="compare">
             <div className="compare__block compare__block--reference">
@@ -279,11 +320,50 @@ export function VocabReview({
                 </div>
               )}
             </div>
+            {contexts.map((c) => (
+              <div
+                className={`compare__block${
+                  c.source === "answer" ? " compare__block--reference" : ""
+                }`}
+                key={c.at}
+              >
+                {/* The graded screen's own two labels, so the card back reads
+                    like the screen the word was taken from — and so a sentence
+                    the student wrote, which may be wrong, never passes for the
+                    reference. */}
+                <div className="compare__label">
+                  {c.source === "answer" ? "Reference" : "You wrote"}
+                </div>
+                <div className="context__prompt">{c.prompt}</div>
+                <div
+                  className={`compare__text${
+                    c.source === "answer" ? " compare__text--reference" : ""
+                  }`}
+                >
+                  {/* No hold and no marking, so this takes `Sentence`'s plain
+                      branch and the held word picks up `.mark--b` — the
+                      emphasis that already means *this word*. An index naming
+                      no token simply highlights nothing, which is why the
+                      index is handed over rather than used to slice the text. */}
+                  <Sentence
+                    text={c.sentence}
+                    marks={c.index === undefined ? undefined : { [c.index]: 1 }}
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         )}
       </div>
       <div className="linkrow">
         <button onClick={onEdit}>✎ edit this word</button>
+        {/* Only while there is another one to give: a hint button that has run
+            out is a button that answers a press with nothing. */}
+        {!revealed && hinted < contexts.length && (
+          <button onClick={() => setHinted((n) => n + 1)}>
+            ◔ {hinted === 0 ? "hint" : "another hint"}
+          </button>
+        )}
       </div>
       {revealed ? (
         <GradeBar onGrade={onGrade} schedule={schedule} />

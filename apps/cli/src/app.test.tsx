@@ -57,6 +57,10 @@ const fixture: ContentData = {
       { lemma: "rosa", citation: "rosa, rosae (f)", gloss: "rose", pos: "noun", rank: 4845 },
     ],
     amat: [{ lemma: "amō", citation: "amō, amāre, amāvī, amātum", gloss: "to love; to like", pos: "verb", rank: 125 }],
+    // The nominative, so there is a word standing in the student's own wrong
+    // answer and nowhere else — which is how a context learns whose sentence
+    // it is when there was no press to say so.
+    rosa: [{ lemma: "rosa", citation: "rosa, rosae (f)", gloss: "rose", pos: "noun", rank: 4845 }],
   },
 };
 
@@ -121,6 +125,26 @@ const press = async (
     }
   }
   throw new Error(`frame never showed ${JSON.stringify(want)}:\n\n${frame()}`);
+};
+
+/**
+ * The same, but sent exactly once.
+ *
+ * `press` re-sends a key it sees no sign of, which is right for the mount race
+ * it was written for and wrong for anything that counts presses: a slow frame
+ * during a two-press confirm turns three sends into two deletions. By the time
+ * a confirm is on screen the handlers are long registered, so waiting is all
+ * that is needed.
+ */
+const pressOnce = async (
+  stdin: { write(s: string): void },
+  frame: () => string | undefined,
+  keys: string,
+  want = keys,
+) => {
+  stdin.write(keys);
+  await until(frame, want);
+  return tick();
 };
 
 /** What the terminal sends for Esc. */
@@ -1160,6 +1184,213 @@ describe("the three ways to move through the book", () => {
     expect(session.progress().topicCards.d1!.reps).toBe(1);
     // Mastery still counts every question answered.
     expect(session.progress().topicMastery.d1).toBe(3);
+    unmount();
+  });
+});
+
+describe("the sentence a recorded word was met in", () => {
+  /**
+   * Answer the first question wrongly and reach the graded screen, so the two
+   * sentences on it differ and it is possible to tell which one a word came
+   * from. The reference is `puella rosam amat`; this writes `rosa` for `rosam`.
+   */
+  async function graded() {
+    const content = new Content(fixture, testProfile);
+    const session = new Session(content, emptyProgress());
+    const app = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+    await until(app.lastFrame, "The girl loves the rose.");
+    await press(app.stdin, app.lastFrame, "puella rosa amat");
+    await press(app.stdin, app.lastFrame, "\r", "your answer puella rosa amat");
+    return { ...app, session };
+  }
+
+  /** Type a word into the recording box and look it up. */
+  async function record(
+    app: Awaited<ReturnType<typeof graded>>,
+    form: string,
+    want: string,
+  ) {
+    await press(app.stdin, app.lastFrame, "v", "Record vocabulary");
+    await press(app.stdin, app.lastFrame, form);
+    await press(app.stdin, app.lastFrame, "\r", want);
+  }
+
+  it("keeps the reference when the word stands in both", async () => {
+    const app = await graded();
+    await record(app, "amat", "Saved: amō");
+
+    const [context] = app.session.vocabContexts("v-amo");
+    // The reference is right by construction; the student's copy may not be.
+    expect(context?.source).toBe("answer");
+    expect(context?.sentence).toBe("puella rosam amat");
+    expect(context?.prompt).toBe("The girl loves the rose.");
+    expect(context?.index).toBe(2);
+    app.unmount();
+  });
+
+  it("keeps what the student wrote when only that has the word", async () => {
+    const app = await graded();
+    await record(app, "rosa", "Saved: rosa, rosae (f)");
+
+    const [context] = app.session.vocabContexts("v-rosa");
+    expect(context?.source).toBe("submitted");
+    expect(context?.sentence).toBe("puella rosa amat");
+    expect(context?.index).toBe(1);
+    app.unmount();
+  });
+
+  it("keeps the question for a word typed from memory", async () => {
+    const app = await graded();
+    // `manibus` is in neither sentence. The question is still where the word
+    // was met, so it is kept — with no word picked out in it.
+    await record(app, "manibus", "Saved: manus, manūs (f)");
+
+    const [context] = app.session.vocabContexts("v-manus");
+    expect(context?.sentence).toBe("puella rosam amat");
+    expect(context?.index).toBeUndefined();
+    app.unmount();
+  });
+
+  it("carries the sentence across the screen that asks which word it was", async () => {
+    const app = await graded();
+    await press(app.stdin, app.lastFrame, "v", "Record vocabulary");
+    await press(app.stdin, app.lastFrame, "rosam");
+    await press(app.stdin, app.lastFrame, "\r", "Which word is");
+    // Two readings; the second is the flower. The sentence has to survive the
+    // detour and land on whichever one is finally chosen.
+    await press(app.stdin, app.lastFrame, "2", "Saved: rosa, rosae (f)");
+
+    const [context] = app.session.vocabContexts("v-rosa");
+    expect(context?.source).toBe("answer");
+    expect(context?.index).toBe(1);
+    app.unmount();
+  });
+
+  it("keeps nothing once the preference is turned off", async () => {
+    const app = await graded();
+    await record(app, "amat", "Saved: amō");
+
+    // The vocabulary list is the vocabulary's own screen, and `a` is the
+    // standing preference — kept with the deck, so the phone obeys it too.
+    await press(app.stdin, app.lastFrame, "V", "Vocabulary — 1 word");
+    expect(app.lastFrame()).toContain("keeping sentences: on");
+    await press(app.stdin, app.lastFrame, "a", "keeping sentences: off");
+    await press(app.stdin, app.lastFrame, ESC, "your answer");
+
+    await record(app, "manibus", "Saved: manus, manūs (f)");
+    expect(app.session.vocabContexts("v-manus")).toEqual([]);
+    expect(app.session.progress().keepContext).toBe(false);
+    app.unmount();
+  });
+});
+
+describe("the sentences on a card, in the terminal", () => {
+  /** A card carrying two sentences, with the list open on it. */
+  async function twoSentences() {
+    const content = new Content(fixture, testProfile);
+    const session = new Session(content, emptyProgress());
+    const id = session.recordVocab(content.lookup("manibus")[0]!);
+    session.addVocabContext(id, {
+      prompt: "The girl loves the rose.",
+      sentence: "puella rosam amat",
+      source: "answer",
+      index: 1,
+    });
+    session.addVocabContext(id, {
+      prompt: "The master frees the slave.",
+      sentence: "dominus servum līberat",
+      source: "submitted",
+    });
+    const app = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+    // A word recorded just now is due now, so the loop opens on it rather than
+    // on the book — which is where the list is reached from anyway.
+    await until(app.lastFrame, "Vocabulary review");
+    await press(app.stdin, app.lastFrame, "V", "Vocabulary — 1 word");
+    return { ...app, session, id };
+  }
+
+  it("counts the sentences in the list, so `c` is worth pressing", async () => {
+    const app = await twoSentences();
+    expect(app.lastFrame()).toContain("2 kept");
+    expect(app.lastFrame()).toContain("c its sentences");
+    app.unmount();
+  });
+
+  it("opens them, moves one, and deletes one in two presses", async () => {
+    const app = await twoSentences();
+    const order = () =>
+      app.session.vocabContexts(app.id).map((c) => c.sentence);
+
+    await press(app.stdin, app.lastFrame, "c", "2 sentences");
+    expect(app.lastFrame()).toContain("puella rosam amat");
+    // A sentence the student wrote is labelled as such, always.
+    expect(app.lastFrame()).toContain("(you wrote)");
+
+    // `J` moves the sentence under the cursor down, where ↓ moves the cursor.
+    await press(app.stdin, app.lastFrame, "J", "2 of 2");
+    expect(order()).toEqual(["dominus servum līberat", "puella rosam amat"]);
+
+    await pressOnce(app.stdin, app.lastFrame, "x", "Press x again");
+    await pressOnce(app.stdin, app.lastFrame, "x", "Sentence deleted.");
+    expect(order()).toEqual(["dominus servum līberat"]);
+    // A sentence was deleted, not a word.
+    expect(app.session.vocabCard(app.id)).toBeDefined();
+    app.unmount();
+  });
+
+  it("corrects one without taking the q of a sentence for the quit key", async () => {
+    const app = await twoSentences();
+    await press(app.stdin, app.lastFrame, "c", "2 sentences");
+    await press(app.stdin, app.lastFrame, "e", "Edit sentence");
+
+    // Every letter belongs to the box, `q` included — without the guard this
+    // would quit the app halfway through a sentence.
+    await press(app.stdin, app.lastFrame, " quoque");
+    await press(app.stdin, app.lastFrame, "\r", "Sentence saved.");
+
+    expect(app.session.vocabContexts(app.id)[0]?.sentence).toBe(
+      "puella rosam amat quoque",
+    );
+    // The picked-out word is found again in the rewritten line.
+    expect(app.session.vocabContexts(app.id)[0]?.index).toBe(1);
+    app.unmount();
+  });
+});
+
+describe("the hint on a vocabulary card", () => {
+  it("gives the English of the sentence and never the Latin", async () => {
+    const content = new Content(fixture, testProfile);
+    const session = new Session(content, emptyProgress());
+    const id = session.recordVocab(content.lookup("manibus")[0]!);
+    session.addVocabContext(id, {
+      prompt: "The girl loves the rose.",
+      sentence: "puella rosam amat",
+      source: "answer",
+      index: 1,
+    });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+
+    // The word recorded just now is due now, so the loop opens on it.
+    await until(lastFrame, "Vocabulary review");
+    expect(lastFrame()).toContain("hand");
+    expect(lastFrame()).toContain("h hint");
+
+    await press(stdin, lastFrame, "h", "The girl loves the rose.");
+    // The half that cannot give the answer away, and only that half.
+    expect(lastFrame()).not.toContain("puella rosam amat");
+    expect(lastFrame()).not.toContain("manus, manūs (f)");
+    // One sentence, one hint: the key is no longer offered.
+    expect(lastFrame()).not.toContain("h hint");
+
+    await press(stdin, lastFrame, " ", "manus, manūs (f)");
+    expect(lastFrame()).toContain("where you met it");
+    expect(lastFrame()).toContain("puella rosam amat");
     unmount();
   });
 });

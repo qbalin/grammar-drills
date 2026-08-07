@@ -1,7 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { Content } from "./content.js";
 import { testProfile } from "./profile.fixture.js";
-import { words, questionVocabulary, sentenceTokens } from "./question-vocab.js";
+import {
+  foldKey,
+  locateWord,
+  words,
+  questionVocabulary,
+  sentenceTokens,
+} from "./question-vocab.js";
 import type { LemmaMap, Question } from "./types.js";
 
 /**
@@ -263,5 +269,43 @@ describe("questionVocabulary", () => {
     const words = questionVocabulary(bare, ask("The girl loves the rose.", "puella rosam amat"));
     expect(words.map((w) => w.form)).toEqual(["puella", "rosam", "amat"]);
     expect(words.every((w) => w.entry === undefined)).toBe(true);
+  });
+});
+
+describe("locateWord", () => {
+  const fold = new Content({ grammar: [], tests: {} }, testProfile).fold;
+  const on = { answer: "Puellae rosam laudant.", submitted: "Puellae rosa laudant." };
+
+  it("prefers the reference when the word stands in both", () => {
+    // The reference is right by construction; the student's copy of it may not
+    // be, and a card would rather carry the sentence that is certainly correct.
+    expect(locateWord("laudant", on, fold)).toEqual({ source: "answer", index: 2 });
+  });
+
+  it("falls to what was written when only that has the word", () => {
+    expect(locateWord("rosa", on, fold)).toEqual({ source: "submitted", index: 1 });
+  });
+
+  it("reads a word the way the sentence dressed it", () => {
+    // Typed with the punctuation it was read with, and without the pack's
+    // editorial marks — both of which the fold and `words` settle.
+    expect(locateWord("rosam,", on, fold)).toEqual({ source: "answer", index: 1 });
+    expect(locateWord("PUELLAE", on, fold)).toEqual({ source: "answer", index: 0 });
+  });
+
+  it("says so when the word is in neither, or is no word at all", () => {
+    expect(locateWord("servus", on, fold)).toBeNull();
+    expect(locateWord("  ", on, fold)).toBeNull();
+    expect(locateWord("rosa", { answer: on.answer }, fold)).toBeNull();
+  });
+});
+
+describe("foldKey", () => {
+  const fold = new Content({ grammar: [], tests: {} }, testProfile).fold;
+
+  it("reduces a sentence to what it says", () => {
+    expect(foldKey("  Puellae,  rosam laudant! ", fold)).toBe(
+      foldKey("puellae rosam laudant", fold),
+    );
   });
 });

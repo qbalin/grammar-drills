@@ -37,6 +37,8 @@ export function SettingsSheet({
   caching,
   vocabCount,
   onOpenVocab,
+  keepContext,
+  onKeepContext,
   onReset,
   onClose,
 }: {
@@ -51,6 +53,9 @@ export function SettingsSheet({
   caching: boolean;
   vocabCount: number;
   onOpenVocab: () => void;
+  /** Whether a recorded word keeps the sentence it was met in. */
+  keepContext: boolean;
+  onKeepContext: () => void;
   onReset: () => void;
   onClose: () => void;
 }) {
@@ -83,6 +88,25 @@ export function SettingsSheet({
           {vocabCount} {vocabCount === 1 ? "word" : "words"}
         </button>
       </div>
+
+      {/* A checkbox rather than a pressed button. `aria-pressed` is this app's
+          way of saying *you are in this mode now* — what the marking button
+          means — and this is a standing preference with an on and an off, which
+          is the control a checkbox is. */}
+      <label className="field field--check">
+        <input
+          type="checkbox"
+          checked={keepContext}
+          onChange={onKeepContext}
+        />
+        <span className="field__label">Keep the sentence a word was met in</span>
+      </label>
+      <p className="field__hint">
+        Holding a word saves the question you were on with it, and the card shows
+        it on the back — the line you met the word in is usually the reason it
+        stuck. Turning this off stops new ones; the sentences already saved stay
+        where they are.
+      </p>
 
       <div className="section-title">Your progress</div>
       <p className="field__hint" style={{ marginTop: 0 }}>

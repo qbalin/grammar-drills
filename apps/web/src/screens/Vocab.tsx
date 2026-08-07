@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import type { LemmaEntry, VocabCardState } from "@lang-tutor/core";
+import type { LemmaEntry, VocabCardState, VocabContext } from "@lang-tutor/core";
 import { fold, profile } from "../pack.js";
-import { Sheet, Spinner, ago, until } from "../ui.js";
+import { Sentence, Sheet, Spinner, ago, until } from "../ui.js";
 
 /**
  * Recording an unknown word.
@@ -336,11 +336,18 @@ export function VocabEditSheet({
   card,
   onSave,
   onDelete,
+  onMoveContext,
+  onEditContext,
+  onDeleteContext,
   onClose,
 }: {
   card: VocabCardState;
   onSave: (patch: { citation: string; gloss: string }) => void;
   onDelete: () => void;
+  /** One place towards the front (-1) or the back (1). */
+  onMoveContext: (at: string, dir: -1 | 1) => void;
+  onEditContext: (at: string, patch: { prompt: string; sentence: string }) => void;
+  onDeleteContext: (at: string) => void;
   onClose: () => void;
 }) {
   const [citation, setCitation] = useState(card.citation);
@@ -405,6 +412,34 @@ export function VocabEditSheet({
         </p>
       )}
 
+      <div className="section-title">Where you met it</div>
+      {(card.contexts ?? []).length === 0 ? (
+        <p className="field__hint" style={{ marginTop: 0 }}>
+          Nothing yet. Hold a word in an answer and the sentence it stood in is
+          kept here, and shown on the back of this card.
+        </p>
+      ) : (
+        <>
+          <p className="field__hint" style={{ marginTop: 0 }}>
+            Shown on the back of the card, in this order — the first is the one
+            the hint offers. These save as you change them.
+          </p>
+          <div className="contexts">
+            {(card.contexts ?? []).map((context, i, all) => (
+              <ContextRow
+                key={context.at}
+                context={context}
+                first={i === 0}
+                last={i === all.length - 1}
+                onMove={(dir) => onMoveContext(context.at, dir)}
+                onEdit={(patch) => onEditContext(context.at, patch)}
+                onDelete={() => onDeleteContext(context.at)}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
       <div className="section-title">Remove</div>
       {confirmDelete ? (
         <>
@@ -437,5 +472,155 @@ export function VocabEditSheet({
         {card.fsrs.reps === 1 ? "time" : "times"}.
       </p>
     </Sheet>
+  );
+}
+
+/**
+ * One sentence on a card: read it, move it, correct it, or throw it away.
+ *
+ * Everything here commits on the press, unlike the citation and meaning above
+ * it — moving a row and then having to find a Save button would be a reorder
+ * you could lose by closing the sheet. The section says so rather than leaving
+ * the two halves of one sheet to be told apart by trying them.
+ *
+ * Reordering is a pair of buttons and not a drag. There is no drag anywhere in
+ * this app, a new one would be a 500 ms press away from the hold gesture that
+ * put these sentences here, and buttons are the only version of this that works
+ * with a thumb on a moving bus or with a screen reader.
+ */
+function ContextRow({
+  context,
+  first,
+  last,
+  onMove,
+  onEdit,
+  onDelete,
+}: {
+  context: VocabContext;
+  /** Whether the row is at an end, so its button can say so by being off. */
+  first: boolean;
+  last: boolean;
+  onMove: (dir: -1 | 1) => void;
+  onEdit: (patch: { prompt: string; sentence: string }) => void;
+  onDelete: () => void;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [prompt, setPrompt] = useState(context.prompt);
+  const [sentence, setSentence] = useState(context.sentence);
+  const [confirmDelete, setConfirmDelete] = useState(false);
+  const complete = prompt.trim() !== "" && sentence.trim() !== "";
+
+  if (editing) {
+    return (
+      <div className="context context--editing">
+        <label className="field">
+          <span className="field__label">The question</span>
+          <input
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+            aria-label="The question"
+          />
+        </label>
+        <label className="field">
+          <span className="field__label">The sentence</span>
+          <input
+            value={sentence}
+            onChange={(e) => setSentence(e.target.value)}
+            autoCapitalize="off"
+            autoCorrect="off"
+            spellCheck={false}
+            aria-label="The sentence"
+          />
+        </label>
+        <div className="actions">
+          <button
+            className="btn"
+            onClick={() => {
+              setPrompt(context.prompt);
+              setSentence(context.sentence);
+              setEditing(false);
+            }}
+          >
+            Cancel
+          </button>
+          {/* Named for what it saves. The card's own Save sits a few lines up
+              this same sheet, and two buttons reading "Save" is a coin toss
+              for anyone who cannot see which one they are on. */}
+          <button
+            className="btn btn--primary"
+            disabled={!complete}
+            onClick={() => {
+              onEdit({ prompt, sentence });
+              setEditing(false);
+            }}
+          >
+            Save sentence
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="context">
+      <div className="context__source">
+        {/* Never dropped for tidiness: a sentence the student wrote may be
+            wrong, and a card that drew it as the reference would be teaching
+            the mistake back to the person who made it. */}
+        {context.source === "answer" ? "Reference" : "You wrote"}
+      </div>
+      <div className="context__prompt">{context.prompt}</div>
+      <div className="context__sentence">
+        <Sentence
+          text={context.sentence}
+          marks={context.index === undefined ? undefined : { [context.index]: 1 }}
+        />
+      </div>
+      {confirmDelete ? (
+        <div className="actions">
+          <button className="btn" onClick={() => setConfirmDelete(false)}>
+            Keep it
+          </button>
+          <button className="btn btn--danger" onClick={onDelete}>
+            Confirm deletion
+          </button>
+        </div>
+      ) : (
+        <div className="context__tools">
+          {/* Named rather than left as glyphs: four unlabelled arrows repeated
+              down a list is a screen reader reading "button button button". */}
+          <button
+            className="iconbtn"
+            disabled={first}
+            onClick={() => onMove(-1)}
+            aria-label={`Move “${context.sentence}” up`}
+          >
+            ▲
+          </button>
+          <button
+            className="iconbtn"
+            disabled={last}
+            onClick={() => onMove(1)}
+            aria-label={`Move “${context.sentence}” down`}
+          >
+            ▼
+          </button>
+          <button
+            className="iconbtn"
+            onClick={() => setEditing(true)}
+            aria-label={`Edit “${context.sentence}”`}
+          >
+            ✎
+          </button>
+          <button
+            className="iconbtn"
+            onClick={() => setConfirmDelete(true)}
+            aria-label={`Delete “${context.sentence}”`}
+          >
+            ✕
+          </button>
+        </div>
+      )}
+    </div>
   );
 }

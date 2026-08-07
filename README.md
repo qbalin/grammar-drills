@@ -133,6 +133,37 @@ most-frequent-first for you to disambiguate. Any card can be edited later —
 citation and gloss both — from the vocabulary list, and deleted if a stray press
 recorded the wrong word.
 
+## The sentence you met the word in
+
+A card keeps the question it came from, and the sentence the word stood in:
+
+```
+manus, manūs (f)                     ← the back of the card
+noun · feminine · declension 4
+
+Reference
+  The soldiers raised their hands.
+  Mīlitēs manūs sustulērunt.
+```
+
+Which sentence depends on where the press landed. A word held in the **reference
+answer**, or a row held in the vocabulary crib, keeps the reference; a word held
+in **what you wrote** keeps your own line, labelled as yours — it may be wrong,
+and a card that drew it as the book's would teach the mistake back to you. The
+word you held is picked out in it.
+
+A word met in several questions gathers several sentences, up to eight, and
+identical ones are not kept twice — an answer typed correctly folds equal to the
+reference, so holding a word in both texts of one question keeps one. They can be
+reordered, corrected and deleted from the card's edit sheet (`V` then `c` in the
+terminal), and the first is the one the **hint** offers: a step before the reveal
+that shows the *English* half of a sentence and nothing else, which is very often
+the whole of what was missing and costs none of the answer.
+
+Turn it off in Settings — `a` in the terminal's vocabulary list — and words are
+recorded alone. The preference travels with your progress, so it holds on both
+surfaces; sentences already saved stay where they are.
+
 ## Layout
 
 ```

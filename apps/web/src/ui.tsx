@@ -312,8 +312,13 @@ export function Sentence({
   text: string;
   /** The emphasis the student left, by word index. */
   marks?: Marks;
-  /** The held word, punctuation already stripped. Absent on the English. */
-  onHold?: (word: string) => void;
+  /**
+   * The held word, punctuation already stripped, and where it stands among the
+   * sentence's words. The index rides along because a vocabulary card keeps the
+   * sentence the word was met in and draws that word picked out in it, and the
+   * word alone cannot say which `rosam` of two was the one under the thumb.
+   */
+  onHold?: (word: string, index: number) => void;
   /** The double-clicked word, punctuation stripped. Rides along with the hold. */
   onInspect?: (word: string) => void;
   /** Marking mode: the tapped word's index. Suspends the hold while present. */
@@ -350,7 +355,7 @@ export function Sentence({
               key={i}
               className={`word${isHeld(key) ? " word--held" : ""}${emphasisClass("word", mark)}`}
               data-word={token.text}
-              {...hold(key, () => onHold(token.word))}
+              {...hold(key, () => onHold(token.word, token.index))}
               onDoubleClick={onInspect ? () => onInspect(token.word) : undefined}
             >
               {token.text}
