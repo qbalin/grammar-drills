@@ -76,13 +76,26 @@ function writeGz(name, text) {
 }
 
 // --- grammar ----------------------------------------------------------------
-// Shipped as-is: every field is read at runtime, and `text` is the whole point.
+// Nearly as-is: every field but one is read at runtime, and `text` is the whole
+// point.
 
+/**
+ * `examples` is dropped for the same reason `Question.vocab` is: it is an input
+ * to generation, not something the app reads.
+ *
+ * Smyth cites an attested sentence for most of what he teaches, and the parser
+ * now keeps those as data so `quote-tests.mjs` can turn them into questions.
+ * Once it has, the ones that became questions are in `tests/` with their
+ * `source`, and the ones that did not are a working file. Shipping all 2,768 to
+ * a phone that renders none of them would put ~400 KB on the grammar bundle to
+ * no end.
+ */
 function buildGrammar() {
   const grammar = JSON.parse(
     readFileSync(join(contentDir, "grammar.json"), "utf8"),
   );
-  writeGz("grammar.json.gz", JSON.stringify(grammar));
+  const shipped = grammar.map(({ examples, ...topic }) => topic);
+  writeGz("grammar.json.gz", JSON.stringify(shipped));
   return grammar;
 }
 
@@ -95,6 +108,11 @@ function buildGrammar() {
  * reads, and `Test.sectionId` is the map key. Together they are ~40% of the
  * bytes. `Question.note` is unused by every shipped question but is part of the
  * type and costs nothing, so it survives.
+ *
+ * `Question.source` survives because it is the opposite case: it is read at
+ * runtime, and it is the only thing on screen that says a sentence was written
+ * by somebody rather than generated. A question that lost it would be a
+ * quotation with no quotation marks.
  */
 function buildTests() {
   const testsDir = join(contentDir, "tests");
@@ -111,6 +129,7 @@ function buildTests() {
         answer: q.answer,
         kind: q.kind,
         ...(q.note ? { note: q.note } : {}),
+        ...(q.source ? { source: q.source } : {}),
       })),
     }));
     count += parsed.length;

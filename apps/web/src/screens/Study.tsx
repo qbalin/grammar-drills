@@ -226,6 +226,12 @@ export function Graded({
               />
             </div>
             {question.note && <div className="note">{question.note}</div>}
+            {question.source && (
+              <div className="attribution">
+                — {question.source.author}, <cite>{question.source.work}</cite>
+                {question.source.locus ? ` ${question.source.locus}` : ""}
+              </div>
+            )}
           </div>
         </div>
         <p className="hint">

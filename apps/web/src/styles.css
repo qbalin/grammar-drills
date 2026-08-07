@@ -477,6 +477,21 @@ span.status__title {
   margin-top: 0.5rem;
 }
 
+/* Who wrote the reference answer, on the answers somebody did. Dimmer and
+   smaller than the sentence and set to the right of it, because it is a credit
+   rather than part of the Latin — the student's eye should land on the answer
+   and find this afterwards. */
+.attribution {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  margin-top: 0.4rem;
+  text-align: right;
+}
+
+.attribution cite {
+  font-style: italic;
+}
+
 /* The English half of a context: the question the sentence under it answered.
    Between the label and the sentence, so it reads as the setting rather than as
    a note about it — which is also the shape the hint takes on the card front,

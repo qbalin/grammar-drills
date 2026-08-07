@@ -1933,6 +1933,12 @@ function QuestionView({
             <Text color="green">{question.answer}</Text>
           </Text>
           {question.note && <Text dimColor>{question.note}</Text>}
+          {question.source && (
+            <Text dimColor>
+              {"            "}— {question.source.author}, {question.source.work}
+              {question.source.locus ? ` ${question.source.locus}` : ""}
+            </Text>
+          )}
         </Box>
       )}
     </Box>

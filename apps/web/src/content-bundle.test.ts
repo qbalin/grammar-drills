@@ -106,6 +106,30 @@ describe.skipIf(!built)("the built content bundle", () => {
     }
   });
 
+  it("keeps a quoted answer's attribution, whole", () => {
+    // The repack rebuilds a question field by field, so a new field is dropped
+    // by default rather than carried by default. `source` is the one thing on
+    // screen saying a sentence was written by somebody, and a half-filled one
+    // is worse than none: "— Cicero" with no work is not a citation anyone can
+    // follow. So this asserts the shape, not merely that something survived.
+    const tests = JSON.parse(read("tests.json.gz")) as Record<string, Test[]>;
+    const quoted = Object.values(tests)
+      .flat()
+      .flatMap((t) => t.questions)
+      .filter((q) => q.source);
+
+    for (const q of quoted) {
+      expect(q.source!.author, q.answer).toBeTruthy();
+      expect(q.source!.work, q.answer).toBeTruthy();
+    }
+
+    // Not an assertion that any exist: a pack may legitimately quote nothing,
+    // and Latin's own attributions arrive a phase later than Greek's.
+    if (quoted.length) {
+      expect(quoted[0].source!.author.length).toBeGreaterThan(1);
+    }
+  });
+
   it("resolves the pack's worked examples through the repacked index", () => {
     const entries = JSON.parse(read("lemmas.json.gz")) as LemmaEntry[];
     const index = new LemmaIndex(entries, read("forms.txt.gz"));

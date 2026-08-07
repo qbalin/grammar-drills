@@ -32,6 +32,25 @@ export interface GrammarSection {
  */
 export type QuestionKind = string;
 
+/**
+ * Where a reference answer comes from, when somebody wrote it.
+ *
+ * Present only on questions whose answer is quoted rather than generated, and
+ * absent everywhere else — which is the honest encoding: a question with no
+ * `source` is one nobody can be credited for, and that is most of them.
+ *
+ * Not to be confused with `LemmaEntry.citation`, which is a dictionary headword.
+ * This is a locus in a text: author, work, and where in it.
+ */
+export interface QuestionSource {
+  /** As a reader would name them — "Cicero", "Thucydides". */
+  author: string;
+  /** The work, in the form the citing edition gives it. */
+  work: string;
+  /** Book, chapter and section, when the citation is that precise. */
+  locus?: string;
+}
+
 /** A single self-graded prompt within a test. */
 export interface Question {
   prompt: string;
@@ -42,6 +61,8 @@ export interface Question {
   vocab: string[];
   /** Optional teaching note shown with the answer. */
   note?: string;
+  /** Where the answer is quoted from, on the questions that quote one. */
+  source?: QuestionSource;
 }
 
 /** A pre-generated test: a small bundle of questions on one section. */
