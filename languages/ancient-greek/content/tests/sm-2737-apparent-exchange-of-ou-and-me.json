@@ -1191,5 +1191,184 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2737-apparent-exchange-of-ou-and-me-q1",
+  "sectionId": "sm-2737-apparent-exchange-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "Consider nothing in human life to be secure.",
+    "answer": "νόμιζε μηδὲν εἶναι τῶν ἀνθρωπίνων βέβαιον εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νόμιζε",
+     "μηδὲν",
+     "εἶναι",
+     "τῶν",
+     "ἀνθρωπίνων",
+     "βέβαιον",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "1.42"
+    }
+   },
+   {
+    "prompt": "Cast your ballots then in the belief not only that you are passing judgment but also that the eyes of the world are upon you.",
+    "answer": "ὡς οὖν μὴ μόνον κρίνοντες, ἀλλὰ καὶ θεωρούμενοι, οὕτω τὴν ψῆφον φέρετε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "οὖν",
+     "μὴ",
+     "μόνον",
+     "κρίνοντες",
+     "ἀλλὰ",
+     "καὶ",
+     "θεωρούμενοι",
+     "οὕτω",
+     "τὴν",
+     "ψῆφον",
+     "φέρετε"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.247"
+    }
+   },
+   {
+    "prompt": "But if any one thinks some point has not been sufficiently mentioned.",
+    "answer": "εἰ δέ τις . . . νομίζει τι μὴ ἱκανῶς εἰρῆσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δέ",
+     "τις",
+     "νομίζει",
+     "τι",
+     "μὴ",
+     "ἱκανῶς",
+     "εἰρῆσθαι"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "1.70"
+    }
+   },
+   {
+    "prompt": "He ordered them to remain by the river without crossing.",
+    "answer": "κελεύει μεῖναι ἐπὶ τοῦ ποταμοῦ μὴ διαβάντας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κελεύει",
+     "μεῖναι",
+     "ἐπὶ",
+     "τοῦ",
+     "ποταμοῦ",
+     "μὴ",
+     "διαβάντας"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.3.28"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2737-apparent-exchange-of-ou-and-me-q2",
+  "sectionId": "sm-2737-apparent-exchange-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "He promised that he would bring peace about without giving hostages or destroying the walls.",
+    "answer": "ὑπέσχετο εἰρήνην ποιήσειν μήτε ὅμηρα δοὺς μήτε τὰ τείχη καθελών",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέσχετο",
+     "εἰρήνην",
+     "ποιήσειν",
+     "μήτε",
+     "ὅμηρα",
+     "δοὺς",
+     "μήτε",
+     "τὰ",
+     "τείχη",
+     "καθελών"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.68"
+    }
+   },
+   {
+    "prompt": "Either acquit me or do not acquit me in the knowledge that I should not act otherwise.",
+    "answer": "ἢ ἀφίετέ με ἢ μὴ ἀφίετε ὡς ἐμοῦ οὐκ ἂν ποιήσαντος ἄλλα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἢ",
+     "ἀφίετέ",
+     "με",
+     "ἢ",
+     "μὴ",
+     "ἀφίετε",
+     "ὡς",
+     "ἐμοῦ",
+     "οὐκ",
+     "ἂν",
+     "ποιήσαντος",
+     "ἄλλα"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "30b"
+    }
+   },
+   {
+    "prompt": "He has sworn, not that he will show favour, but that he will judge according to the laws.",
+    "answer": "ὀμώμοκεν οὐ χαριεῖσθαι . . . ἀλλὰ δικάσειν κατὰ τοὺς νόμους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀμώμοκεν",
+     "οὐ",
+     "χαριεῖσθαι",
+     "ἀλλὰ",
+     "δικάσειν",
+     "κατὰ",
+     "τοὺς",
+     "νόμους"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "35c"
+    }
+   },
+   {
+    "prompt": "Demanding that you should be, not their allies, but their partners in wrong-doing.",
+    "answer": "ὑμᾶς νῦν ἀξιοῦντες οὐ ξυμμαχεῖν, ἀλλὰ ξυναδικεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑμᾶς",
+     "νῦν",
+     "ἀξιοῦντες",
+     "οὐ",
+     "ξυμμαχεῖν",
+     "ἀλλὰ",
+     "ξυναδικεῖν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.39"
+    }
+   }
+  ]
  }
 ]

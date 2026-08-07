@@ -401,5 +401,86 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2462-clauses-of-comparison-q1",
+  "sectionId": "sm-2462-clauses-of-comparison",
+  "questions": [
+   {
+    "prompt": "And they will be the more severe the younger they are.",
+    "answer": "καὶ χαλεπώτεροι ἔσονται ὅσῳ νεώτεροί εἰσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "χαλεπώτεροι",
+     "ἔσονται",
+     "ὅσῳ",
+     "νεώτεροί",
+     "εἰσιν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "39d"
+    }
+   },
+   {
+    "prompt": "For the more we are thought to excel all others in ability to speak, so much the more do all distrust it.",
+    "answer": "δοκοῦμεν χρῆσθαι, τοσούτῳ μᾶλλον ἀπιστοῦσι πάντες αὐτῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκοῦμεν",
+     "χρῆσθαι",
+     "τοσούτῳ",
+     "μᾶλλον",
+     "ἀπιστοῦσι",
+     "πάντες",
+     "αὐτῷ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "2.12"
+    }
+   },
+   {
+    "prompt": "He proved himself a greater coward than the Syrians all the more because they fled.",
+    "answer": "τοσούτῳ Σύρων κακίων ἐγένετο, ὅσῳ Σύροι ἔφυγον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσούτῳ",
+     "Σύρων",
+     "κακίων",
+     "ἐγένετο",
+     "ὅσῳ",
+     "Σύροι",
+     "ἔφυγον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.2.19"
+    }
+   },
+   {
+    "prompt": "For the more indigent they are so much the more submissive do they expect to find them.",
+    "answer": "ἐνδεεστέροις γὰρ οὖσι ταπεινοτέροις αὐτοῖς οἴονται χρῆσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνδεεστέροις",
+     "γὰρ",
+     "οὖσι",
+     "ταπεινοτέροις",
+     "αὐτοῖς",
+     "οἴονται",
+     "χρῆσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hiero",
+     "locus": "5.4"
+    }
+   }
+  ]
  }
 ]

@@ -855,5 +855,86 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1044-with-one-subject-q1",
+  "sectionId": "sm-1044-with-one-subject",
+  "questions": [
+   {
+    "prompt": "The army provided itself with provisions by killing the cattle.",
+    "answer": "τὸ στράτευμα ἐπορίζετο σῖτον κόπτοντες τοὺς βοῦς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "ἐπορίζετο",
+     "σῖτον",
+     "κόπτοντες",
+     "τοὺς",
+     "βοῦς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.6"
+    }
+   },
+   {
+    "prompt": "Both looked at each other and burst out laughing.",
+    "answer": "ἐγελασάτην ἄμφω βλέψαντες εἰς ἀλλήλους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγελασάτην",
+     "ἄμφω",
+     "βλέψαντες",
+     "εἰς",
+     "ἀλλήλους"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthydemus",
+     "locus": "273d"
+    }
+   },
+   {
+    "prompt": "If any one should assert that these two cities have been the cause of very many blessings.",
+    "answer": "εἰ γάρ τις φαίη τὼ πόλει τούτω πλείστων ἀγαθῶν αἰτίας γεγενῆσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "γάρ",
+     "τις",
+     "φαίη",
+     "τὼ",
+     "πόλει",
+     "τούτω",
+     "πλείστων",
+     "ἀγαθῶν",
+     "αἰτίας",
+     "γεγενῆσθαι"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "12.156"
+    }
+   },
+   {
+    "prompt": "; is it pleasant to have many enemies?",
+    "answer": "ἡδὺ πολλοὺς ἐχθροὺς ἔχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδὺ",
+     "πολλοὺς",
+     "ἐχθροὺς",
+     "ἔχειν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.221"
+    }
+   }
+  ]
  }
 ]

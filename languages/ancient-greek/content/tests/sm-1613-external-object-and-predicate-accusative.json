@@ -746,5 +746,81 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1613-external-object-and-predicate-accusative-q1",
+  "sectionId": "sm-1613-external-object-and-predicate-accusative",
+  "questions": [
+   {
+    "prompt": "To choose the king of the Indians himself to be arbitrator.",
+    "answer": "αἱρεῖσθαι αὐτὸν τὸν Ἰνδῶν βασιλέα δικαστήν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱρεῖσθαι",
+     "αὐτὸν",
+     "τὸν",
+     "Ἰνδῶν",
+     "βασιλέα",
+     "δικαστήν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.4.8"
+    }
+   },
+   {
+    "prompt": "If you make me your servant.",
+    "answer": "ἐὰν ἐμὲ σὸν θεράποντα ποιήσῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ἐμὲ",
+     "σὸν",
+     "θεράποντα",
+     "ποιήσῃ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "7.42"
+    }
+   },
+   {
+    "prompt": "Showing yourself a sophist before the Greeks.",
+    "answer": "εἰς τοὺς Ἕλληνας σαυτὸν σοφιστὴν παρέχων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τοὺς",
+     "Ἕλληνας",
+     "σαυτὸν",
+     "σοφιστὴν",
+     "παρέχων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "312a"
+    }
+   },
+   {
+    "prompt": "They call the man a sophist.",
+    "answer": "σοφιστὴν ὀνομάζουσι τὸν ἄνδρα εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφιστὴν",
+     "ὀνομάζουσι",
+     "τὸν",
+     "ἄνδρα",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "311e"
+    }
+   }
+  ]
  }
 ]

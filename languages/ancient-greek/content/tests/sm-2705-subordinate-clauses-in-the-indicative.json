@@ -1421,5 +1421,188 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2705-subordinate-clauses-in-the-indicative-q1",
+  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+  "questions": [
+   {
+    "prompt": "He wished to be on friendly terms with men in power in order that he might not pay the penalty for his wrong-doing.",
+    "answer": "φίλος ἐβούλετο εἶναι τοῖς μέγιστα δυναμένοις, ἵνα ἀδικῶν μὴ διδοίη δίκην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φίλος",
+     "ἐβούλετο",
+     "εἶναι",
+     "τοῖς",
+     "μέγιστα",
+     "δυναμένοις",
+     "ἵνα",
+     "ἀδικῶν",
+     "μὴ",
+     "διδοίη",
+     "δίκην"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.6.21"
+    }
+   },
+   {
+    "prompt": "If you had not come, we should be marching against the king.",
+    "answer": "εἰ μὴ ὑμεῖς ἤλθετε, ἐπορευόμεθα ἂν ἐπὶ βασιλέα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὴ",
+     "ὑμεῖς",
+     "ἤλθετε",
+     "ἐπορευόμεθα",
+     "ἂν",
+     "ἐπὶ",
+     "βασιλέα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.4"
+    }
+   },
+   {
+    "prompt": "He never left him unless there was some necessity for it.",
+    "answer": "οὐκ ἀπελείπετο αὐτοῦ, εἰ μή τι ἀναγκαῖον εἴη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀπελείπετο",
+     "αὐτοῦ",
+     "εἰ",
+     "μή",
+     "τι",
+     "ἀναγκαῖον",
+     "εἴη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.2.40"
+    }
+   },
+   {
+    "prompt": "They signify beforehand what one must do and what not.",
+    "answer": "προσημαίνουσιν ἅ τε χρὴ ποιεῖν καὶ ἃ οὐ χρή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσημαίνουσιν",
+     "ἅ",
+     "τε",
+     "χρὴ",
+     "ποιεῖν",
+     "καὶ",
+     "ἃ",
+     "οὐ",
+     "χρή"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.6.46"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2705-subordinate-clauses-in-the-indicative-q2",
+  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+  "questions": [
+   {
+    "prompt": "Such a writer of speeches as no one had been.",
+    "answer": "συγγραφεὺς τῶν λόγων . . . τοιοῦτος, οἷος οὐδεὶς ἄλλος γέγονε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συγγραφεὺς",
+     "τῶν",
+     "λόγων",
+     "τοιοῦτος",
+     "οἷος",
+     "οὐδεὶς",
+     "ἄλλος",
+     "γέγονε"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "15.35"
+    }
+   },
+   {
+    "prompt": "Wishing to leave behind him such a memorial as would surpass human nature.",
+    "answer": "βουληθεὶς τοιοῦτον μνημεῖον καταλιπεῖν, ὃ μὴ τῆς ἀνθρωπίνης φύσεώς ἐστιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουληθεὶς",
+     "τοιοῦτον",
+     "μνημεῖον",
+     "καταλιπεῖν",
+     "ὃ",
+     "μὴ",
+     "τῆς",
+     "ἀνθρωπίνης",
+     "φύσεώς",
+     "ἐστιν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "4.89"
+    }
+   },
+   {
+    "prompt": "A wretched being art thou then, who hast neither ancestral gods nor shrines.",
+    "answer": "ταλαίπωρος ἄρα τις σύ γε ἄνθρωπος εἶ . . ., ᾧ μήτε θεοὶ πατρῷοί εἰσι μήτε ἱερά",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταλαίπωρος",
+     "ἄρα",
+     "τις",
+     "σύ",
+     "γε",
+     "ἄνθρωπος",
+     "εἶ",
+     "ᾧ",
+     "μήτε",
+     "θεοὶ",
+     "πατρῷοί",
+     "εἰσι",
+     "μήτε",
+     "ἱερά"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthydemus",
+     "locus": "302b"
+    }
+   },
+   {
+    "prompt": "Pass such a vote that you will never repent of it.",
+    "answer": "ψηφίσασθε τοιαῦτα ἐξ ὧν μηδέποτε ὑμῖν μεταμελήσει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ψηφίσασθε",
+     "τοιαῦτα",
+     "ἐξ",
+     "ὧν",
+     "μηδέποτε",
+     "ὑμῖν",
+     "μεταμελήσει"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "3.41"
+    }
+   }
+  ]
  }
 ]

@@ -781,5 +781,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1153-substantive-making-power-of-the-article-q1",
+  "sectionId": "sm-1153-substantive-making-power-of-the-article",
+  "questions": [
+   {
+    "prompt": "Those in power, the government.",
+    "answer": "οἱ ἐπὶ τῶν πραγμάτων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐπὶ",
+     "τῶν",
+     "πραγμάτων"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.247"
+    }
+   },
+   {
+    "prompt": "Those in the prime of life.",
+    "answer": "οἱ ἐν τῇ ἡλικίᾳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐν",
+     "τῇ",
+     "ἡλικίᾳ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.24"
+    }
+   },
+   {
+    "prompt": "Those who were inside were arrested and those outside were cut down.",
+    "answer": "οἵ τ᾽ ἔνδον συνελαμβάνοντο καὶ οἱ ἐκτὸς κατεκόπησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἵ",
+     "τ",
+     "ἔνδον",
+     "συνελαμβάνοντο",
+     "καὶ",
+     "οἱ",
+     "ἐκτὸς",
+     "κατεκόπησαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.32"
+    }
+   },
+   {
+    "prompt": "They call intemperance being ruled by one's pleasures.",
+    "answer": "καλοῦσί γε ἀκολασίαν τὸ ὑπὸ τῶν ἡδονῶν ἄρχεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλοῦσί",
+     "γε",
+     "ἀκολασίαν",
+     "τὸ",
+     "ὑπὸ",
+     "τῶν",
+     "ἡδονῶν",
+     "ἄρχεσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "68e"
+    }
+   }
+  ]
  }
 ]

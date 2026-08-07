@@ -868,5 +868,73 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2760-accumulation-of-negatives-q1",
+  "sectionId": "sm-2760-accumulation-of-negatives",
+  "questions": [
+   {
+    "prompt": "Nor can the man who is base in private prove himself noble in a public capacity.",
+    "answer": "οὐδέ γε ὁ ἰδίᾳ πονηρὸς οὐκ ἂν γένοιτο δημοσίᾳ χρηστός",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέ",
+     "γε",
+     "ὁ",
+     "ἰδίᾳ",
+     "πονηρὸς",
+     "οὐκ",
+     "ἂν",
+     "γένοιτο",
+     "δημοσίᾳ",
+     "χρηστός"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.78"
+    }
+   },
+   {
+    "prompt": "And neither did any one make an attack from any quarter nor did any one come to the bridge.",
+    "answer": "καὶ οὔτε ἐπέθετο οὐδεὶς οὐδαμόθεν οὔτε πρὸς τὴν γέφυραν οὐδεὶς ἦλθε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "οὔτε",
+     "ἐπέθετο",
+     "οὐδεὶς",
+     "οὐδαμόθεν",
+     "οὔτε",
+     "πρὸς",
+     "τὴν",
+     "γέφυραν",
+     "οὐδεὶς",
+     "ἦλθε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.4.23"
+    }
+   },
+   {
+    "prompt": "For he did not deceive me even in this.",
+    "answer": "οὐδὲ γὰρ οὐδὲ τοῦτο ἐψεύσατο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "γὰρ",
+     "οὐδὲ",
+     "τοῦτο",
+     "ἐψεύσατο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.2.20"
+    }
+   }
+  ]
  }
 ]

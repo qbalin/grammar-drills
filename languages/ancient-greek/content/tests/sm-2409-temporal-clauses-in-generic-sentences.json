@@ -432,5 +432,87 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2409-temporal-clauses-in-generic-sentences-q1",
+  "sectionId": "sm-2409-temporal-clauses-in-generic-sentences",
+  "questions": [
+   {
+    "prompt": "As long as the vessel remains in safety, both sailor and pilot should exert themselves; but when the sea has overwhelmed it, their efforts are fruitless.",
+    "answer": "ἕως ἂν σῴζηται τὸ σκάφος . . ., χρὴ καὶ ναύτην καὶ κυβερνήτην . . . προθύμους εἶναι . . ., ἐπειδὰν δ᾽ ἡ θάλαττα ὑπέρσχῃ, μάταιος ἡ σπουδή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "σῴζηται",
+     "τὸ",
+     "σκάφος",
+     "χρὴ",
+     "καὶ",
+     "ναύτην",
+     "καὶ",
+     "κυβερνήτην",
+     "προθύμους",
+     "εἶναι",
+     "ἐπειδὰν",
+     "δ",
+     "ἡ",
+     "θάλαττα",
+     "ὑπέρσχῃ",
+     "μάταιος",
+     "ἡ",
+     "σπουδή"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "9.69"
+    }
+   },
+   {
+    "prompt": "Enemies ere now have forced improvement upon those whom they have enslaved.",
+    "answer": "πολέμιοι . . . ἤδη ὅταν . . . καταδουλώσωνταί τινας, πολλοὺς δὴ βελτίους ἠνάγκασαν εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολέμιοι",
+     "ἤδη",
+     "ὅταν",
+     "καταδουλώσωνταί",
+     "τινας",
+     "πολλοὺς",
+     "δὴ",
+     "βελτίους",
+     "ἠνάγκασαν",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "1.23"
+    }
+   },
+   {
+    "prompt": "They both sang and danced whenever the enemy were likely to look at them.",
+    "answer": "καὶ ᾖδον καὶ ἐχόρευον ὁπότε οἱ πολέμιοι αὐτοὺς ὄψεσθαι ἔμελλον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ᾖδον",
+     "καὶ",
+     "ἐχόρευον",
+     "ὁπότε",
+     "οἱ",
+     "πολέμιοι",
+     "αὐτοὺς",
+     "ὄψεσθαι",
+     "ἔμελλον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.7.16"
+    }
+   }
+  ]
  }
 ]

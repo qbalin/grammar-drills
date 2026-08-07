@@ -790,5 +790,89 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2932-oude-mede-as-a-conjunction-q1",
+  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+  "questions": [
+   {
+    "prompt": "There was no hope of assistance nor did any chance of safety appear.",
+    "answer": "οὐδεμία ἐλπὶς ἦν τιμωρίας οὐδὲ ἄλλη σωτηρία ἐφαίνετο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεμία",
+     "ἐλπὶς",
+     "ἦν",
+     "τιμωρίας",
+     "οὐδὲ",
+     "ἄλλη",
+     "σωτηρία",
+     "ἐφαίνετο"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.20"
+    }
+   },
+   {
+    "prompt": "You probably heard this from yourself and not from me.",
+    "answer": "σοῦ τάδε κινδυνεύεις, ἀλλ᾽ οὐκ ἐμοῦ ἀκηκοέναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοῦ",
+     "τάδε",
+     "κινδυνεύεις",
+     "ἀλλ",
+     "οὐκ",
+     "ἐμοῦ",
+     "ἀκηκοέναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Alcibiades",
+     "locus": "1 113c"
+    }
+   },
+   {
+    "prompt": "The Phoenician ships had not arrived nor had Tissaphernes.",
+    "answer": "αἱ Φοίνισσαι νῆες οὐδὲ ὁ Τισσαφέρνης . . . ἧκον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "Φοίνισσαι",
+     "νῆες",
+     "οὐδὲ",
+     "ὁ",
+     "Τισσαφέρνης",
+     "ἧκον"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.99"
+    }
+   },
+   {
+    "prompt": "He could say nothing straightforward nor just.",
+    "answer": "ἁπλοῦν μὲν οὐδὲ δίκαιον οὐδὲν ἂν εἰπεῖν ἔχοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἁπλοῦν",
+     "μὲν",
+     "οὐδὲ",
+     "δίκαιον",
+     "οὐδὲν",
+     "ἂν",
+     "εἰπεῖν",
+     "ἔχοι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "22.4"
+    }
+   }
+  ]
  }
 ]

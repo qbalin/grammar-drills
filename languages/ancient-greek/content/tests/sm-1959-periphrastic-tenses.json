@@ -1163,5 +1163,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1959-periphrastic-tenses-q1",
+  "sectionId": "sm-1959-periphrastic-tenses",
+  "questions": [
+   {
+    "prompt": "What I am going to say has long been your opinion.",
+    "answer": "ἃ μέλλω λέγειν σοὶ πάλαι δοκεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "μέλλω",
+     "λέγειν",
+     "σοὶ",
+     "πάλαι",
+     "δοκεῖ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.3.13"
+    }
+   },
+   {
+    "prompt": "They intended to close the entrances.",
+    "answer": "τοὺς ἔσπλους κλῄσειν ἔμελλον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ἔσπλους",
+     "κλῄσειν",
+     "ἔμελλον"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.8"
+    }
+   },
+   {
+    "prompt": "The arts will be ruined.",
+    "answer": "αἱ τέχναι διεφθαρμέναι ἔσονται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "τέχναι",
+     "διεφθαρμέναι",
+     "ἔσονται"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.2.13"
+    }
+   },
+   {
+    "prompt": "And communications between Nicias and some persons had actually been held before.",
+    "answer": "ἦσαν δέ τινες καὶ γενόμενοι τῷ Νικίᾳ λόγοι πρότερον πρός τινας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦσαν",
+     "δέ",
+     "τινες",
+     "καὶ",
+     "γενόμενοι",
+     "τῷ",
+     "Νικίᾳ",
+     "λόγοι",
+     "πρότερον",
+     "πρός",
+     "τινας"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.54"
+    }
+   }
+  ]
  }
 ]

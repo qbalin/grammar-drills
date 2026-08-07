@@ -368,5 +368,68 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2234-other-constructions-with-verbs-of-q1",
+  "sectionId": "sm-2234-other-constructions-with-verbs-of",
+  "questions": [
+   {
+    "prompt": "I am afraid what to answer.",
+    "answer": "δέδοικα ὅ τι ἀποκρινοῦμαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "ὅ",
+     "τι",
+     "ἀποκρινοῦμαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Theaetetus",
+     "locus": "195c"
+    }
+   },
+   {
+    "prompt": "Do not fear that you will be at a loss for a husband for your daughter.",
+    "answer": "ἀνδρὸς δὲ τῇ θυγατρὶ μὴ φοβοῦ ὡς ἀπορήσεις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνδρὸς",
+     "δὲ",
+     "τῇ",
+     "θυγατρὶ",
+     "μὴ",
+     "φοβοῦ",
+     "ὡς",
+     "ἀπορήσεις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.2.12"
+    }
+   },
+   {
+    "prompt": "He was afraid because the dream seemed to him to be from Zeus.",
+    "answer": "ἐφοβεῖτο ὅτι ἀπὸ Διὸς . . . τὸ ὄναρ ἐδόκει αὐτῷ εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ὅτι",
+     "ἀπὸ",
+     "Διὸς",
+     "τὸ",
+     "ὄναρ",
+     "ἐδόκει",
+     "αὐτῷ",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.12"
+    }
+   }
+  ]
  }
 ]

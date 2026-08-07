@@ -1274,5 +1274,77 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2088-the-supplementary-participle-q1",
+  "sectionId": "sm-2088-the-supplementary-participle",
+  "questions": [
+   {
+    "prompt": "He will straightway be proved to be ridiculous.",
+    "answer": "εὐθὺς ἐλεγχθήσεται γελοῖος ὤν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐθὺς",
+     "ἐλεγχθήσεται",
+     "γελοῖος",
+     "ὤν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.7.2"
+    }
+   },
+   {
+    "prompt": "He showed that he despised the laws.",
+    "answer": "ἐδήλωσε τῶν νόμων καταφρονῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδήλωσε",
+     "τῶν",
+     "νόμων",
+     "καταφρονῶν"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "4.14"
+    }
+   },
+   {
+    "prompt": "I know that I have presented my case honestly.",
+    "answer": "οἶδα ἐμαυτὸν δικαίως κεχρημένον αὐτοῖς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶδα",
+     "ἐμαυτὸν",
+     "δικαίως",
+     "κεχρημένον",
+     "αὐτοῖς"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "15.321"
+    }
+   },
+   {
+    "prompt": "Show that you did not do this yourself.",
+    "answer": "δεῖξον οὐ πεποιηκότα ταῦτα σαυτόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖξον",
+     "οὐ",
+     "πεποιηκότα",
+     "ταῦτα",
+     "σαυτόν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "22.29"
+    }
+   }
+  ]
  }
 ]

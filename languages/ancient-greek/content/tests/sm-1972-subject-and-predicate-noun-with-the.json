@@ -1575,5 +1575,174 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1972-subject-and-predicate-noun-with-the-q1",
+  "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
+  "questions": [
+   {
+    "prompt": "This he effected by reason of his being severe.",
+    "answer": "τοῦτο δ᾽ ἐποίει ἐκ τοῦ χαλεπὸς εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "δ",
+     "ἐποίει",
+     "ἐκ",
+     "τοῦ",
+     "χαλεπὸς",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.6.9"
+    }
+   },
+   {
+    "prompt": "Being rid of those who profess to be judges.",
+    "answer": "ἀπαλλαγεὶς τούτων τῶν φασκόντων δικαστῶν εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπαλλαγεὶς",
+     "τούτων",
+     "τῶν",
+     "φασκόντων",
+     "δικαστῶν",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "41a"
+    }
+   },
+   {
+    "prompt": "It dispenses the offices to those who always seem to be the most deserving.",
+    "answer": "τὰς ἀρχὰς δίδωσι . . . τοῖς ἀεὶ δόξασιν ἀρίστοις εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "ἀρχὰς",
+     "δίδωσι",
+     "τοῖς",
+     "ἀεὶ",
+     "δόξασιν",
+     "ἀρίστοις",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Menexenus",
+     "locus": "238d"
+    }
+   },
+   {
+    "prompt": "I think I have made more money than any two others together.",
+    "answer": "οἶμαι ἐμὲ πλείω χρήματα εἰργάσθαι ἢ ἄλλους σύνδυο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "ἐμὲ",
+     "πλείω",
+     "χρήματα",
+     "εἰργάσθαι",
+     "ἢ",
+     "ἄλλους",
+     "σύνδυο"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Hippias Major",
+     "locus": "282e"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1972-subject-and-predicate-noun-with-the-q2",
+  "sectionId": "sm-1972-subject-and-predicate-noun-with-the",
+  "questions": [
+   {
+    "prompt": "He thought the Thebans would let him have his own way.",
+    "answer": "τοὺς δὲ Θηβαίους ἡγεῖτο . . . ἐάσειν ὅπως βούλεται πράττειν ἑαυτόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "δὲ",
+     "Θηβαίους",
+     "ἡγεῖτο",
+     "ἐάσειν",
+     "ὅπως",
+     "βούλεται",
+     "πράττειν",
+     "ἑαυτόν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "6.9"
+    }
+   },
+   {
+    "prompt": "For I think you are to me both fatherland and friends.",
+    "answer": "νομίζω γὰρ ὑμᾶς ἐμοὶ εἶναι καὶ πατρίδα καὶ φίλους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "γὰρ",
+     "ὑμᾶς",
+     "ἐμοὶ",
+     "εἶναι",
+     "καὶ",
+     "πατρίδα",
+     "καὶ",
+     "φίλους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.3.6"
+    }
+   },
+   {
+    "prompt": "They manage it so that they seem to us to appear in various forms.",
+    "answer": "ἡμῖν δὲ ποιοῦσι δοκεῖν σφᾶς παντοδαποὺς φαίνεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμῖν",
+     "δὲ",
+     "ποιοῦσι",
+     "δοκεῖν",
+     "σφᾶς",
+     "παντοδαποὺς",
+     "φαίνεσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "381e"
+    }
+   },
+   {
+    "prompt": "Regarding it of great importance not to seem to any one to wish to behave outrageously.",
+    "answer": "περὶ πολλοῦ ποιούμενος μηδενὶ δόξαι ὑβρίζειν βούλεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "πολλοῦ",
+     "ποιούμενος",
+     "μηδενὶ",
+     "δόξαι",
+     "ὑβρίζειν",
+     "βούλεσθαι"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "23.5"
+    }
+   }
+  ]
  }
 ]

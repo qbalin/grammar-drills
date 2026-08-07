@@ -707,5 +707,87 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-958-subject-in-the-plural-verb-in-the-q1",
+  "sectionId": "sm-958-subject-in-the-plural-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The sacrifices were propitious.",
+    "answer": "καλὰ ἦν τὰ σφάγια",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλὰ",
+     "ἦν",
+     "τὰ",
+     "σφάγια"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.3.19"
+    }
+   },
+   {
+    "prompt": "The Lacedaemonian magistrates despatched him.",
+    "answer": "τὰ τέλη τῶν Λακεδαιμονίων αὐτὸν ἐξέπεμψαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τέλη",
+     "τῶν",
+     "Λακεδαιμονίων",
+     "αὐτὸν",
+     "ἐξέπεμψαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.88"
+    }
+   },
+   {
+    "prompt": "Many traces both of horses and of men were plain.",
+    "answer": "φανερὰ ἦσαν καὶ ἵππων καὶ ἀνθρώπων ἴχνη πολλά",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φανερὰ",
+     "ἦσαν",
+     "καὶ",
+     "ἵππων",
+     "καὶ",
+     "ἀνθρώπων",
+     "ἴχνη",
+     "πολλά"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.7.17"
+    }
+   },
+   {
+    "prompt": "There are in the other cities too rulers and populace.",
+    "answer": "ἔστι καὶ ἐν ταῖς ἄλλαις πόλεσιν ἄρχοντές τε καὶ δῆμος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστι",
+     "καὶ",
+     "ἐν",
+     "ταῖς",
+     "ἄλλαις",
+     "πόλεσιν",
+     "ἄρχοντές",
+     "τε",
+     "καὶ",
+     "δῆμος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "462e"
+    }
+   }
+  ]
  }
 ]

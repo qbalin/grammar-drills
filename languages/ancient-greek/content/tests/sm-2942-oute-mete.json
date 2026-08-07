@@ -1204,5 +1204,94 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2942-oute-mete-q1",
+  "sectionId": "sm-2942-oute-mete",
+  "questions": [
+   {
+    "prompt": "Neither is nor ever shall be.",
+    "answer": "οὔτε ἔστιν οὔτε ποτὲ ἔσται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "ἔστιν",
+     "οὔτε",
+     "ποτὲ",
+     "ἔσται"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedrus",
+     "locus": "241c"
+    }
+   },
+   {
+    "prompt": "Neither had Chirisophus come nor were there enough boats nor was it possible any longer to secure provisions.",
+    "answer": "οὔτε Χειρίσοφος ἧκεν οὔτε πλοῖα ἱκανὰ ἦν οὔτε τὰ ἐπιτήδεια ἦν λαμβάνειν ἔτι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "Χειρίσοφος",
+     "ἧκεν",
+     "οὔτε",
+     "πλοῖα",
+     "ἱκανὰ",
+     "ἦν",
+     "οὔτε",
+     "τὰ",
+     "ἐπιτήδεια",
+     "ἦν",
+     "λαμβάνειν",
+     "ἔτι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.3.1"
+    }
+   },
+   {
+    "prompt": "He could not persuade either the generals or the soldiers.",
+    "answer": "οὐκ ἔπειθεν οὔτε τοὺς στρατηγοὺς οὔτε τοὺς στρατιώτας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔπειθεν",
+     "οὔτε",
+     "τοὺς",
+     "στρατηγοὺς",
+     "οὔτε",
+     "τοὺς",
+     "στρατιώτας"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.4"
+    }
+   },
+   {
+    "prompt": "Neither did he stop to consider and the oracle would not make it plain.",
+    "answer": "οὔτε ἐκεῖνος ἔτι κατενόησε τό τε μαντεῖον οὐκ ἐδήλου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "ἐκεῖνος",
+     "ἔτι",
+     "κατενόησε",
+     "τό",
+     "τε",
+     "μαντεῖον",
+     "οὐκ",
+     "ἐδήλου"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.126"
+    }
+   }
+  ]
  }
 ]

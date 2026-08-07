@@ -1624,5 +1624,466 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-q1",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "May this result as we desire.",
+    "answer": "ξυνενέγκοι μὲν ταῦτα ὡς βουλόμεθα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ξυνενέγκοι",
+     "μὲν",
+     "ταῦτα",
+     "ὡς",
+     "βουλόμεθα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.20"
+    }
+   },
+   {
+    "prompt": "But may that prevail which is likely to be for the common weal.",
+    "answer": "νικῴη δ᾽ ὅ τι πᾶσιν μέλλει συνοίσειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νικῴη",
+     "δ",
+     "ὅ",
+     "τι",
+     "πᾶσιν",
+     "μέλλει",
+     "συνοίσειν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "4.51"
+    }
+   },
+   {
+    "prompt": "If I brought in as evidence against him matters which I did not know certainly but had learned by hearsay, he would have said that he was suffering a grave injustice at my hands.",
+    "answer": "εἰ . . . κατεμαρτύρουν ἃ μὴ σαφῶς ᾔδη ἀκοῇ δὲ ἠπιστάμην, δεινὰ ἂν ἔφη πάσχειν ὑπ᾽ ἐμοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "κατεμαρτύρουν",
+     "ἃ",
+     "μὴ",
+     "σαφῶς",
+     "ᾔδη",
+     "ἀκοῇ",
+     "δὲ",
+     "ἠπιστάμην",
+     "δεινὰ",
+     "ἂν",
+     "ἔφη",
+     "πάσχειν",
+     "ὑπ",
+     "ἐμοῦ"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "5.74"
+    }
+   },
+   {
+    "prompt": "I would not have ceased until I had made trial of this wisdom.",
+    "answer": "οὐκ ἂν ἐπαυόμην . . ., ἕως ἀπεπειράθην τῆς σοφίας ταυτησί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἐπαυόμην",
+     "ἕως",
+     "ἀπεπειράθην",
+     "τῆς",
+     "σοφίας",
+     "ταυτησί"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Cratylus",
+     "locus": "396c"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-q2",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "They ought not to have given advice concerning the matters of common agreement before they instructed us on the matters in dispute.",
+    "answer": "ἐχρῆν . . . μὴ πρότερον περὶ τῶν ὁμολογουμένων συμβουλεύειν, πρὶν πρὶν περὶ τῶν ἀμφισβητουμένων ἡμᾶς ἐδίδαξαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐχρῆν",
+     "μὴ",
+     "πρότερον",
+     "περὶ",
+     "τῶν",
+     "ὁμολογουμένων",
+     "συμβουλεύειν",
+     "πρὶν",
+     "πρὶν",
+     "περὶ",
+     "τῶν",
+     "ἀμφισβητουμένων",
+     "ἡμᾶς",
+     "ἐδίδαξαν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "4.19"
+    }
+   },
+   {
+    "prompt": "I ought to have taken security at the time in order that he could not have deceived us even if he wished.",
+    "answer": "ἔδει τὰ ἐνέχυρα τότε λαβεῖν, ὡς μηδ᾽ ει᾽ ἐβούλετο ἐδύνατο ἐξαπατᾶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδει",
+     "τὰ",
+     "ἐνέχυρα",
+     "τότε",
+     "λαβεῖν",
+     "ὡς",
+     "μηδ",
+     "ει",
+     "ἐβούλετο",
+     "ἐδύνατο",
+     "ἐξαπατᾶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.6.23"
+    }
+   },
+   {
+    "prompt": "You ought either not to have proposed this law or to have repealed the other; not to have thrown everything into confusion to accomplish your desire.",
+    "answer": "καίτοι χρῆν σε . . . ἢ τοῦτον μὴ γράφειν ἢ ἐκεῖνον λύειν, οὐχ, ἵν᾽ ὃ βούλει σὺ γένηται, πάντα τὰ πράγματα συνταράξαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καίτοι",
+     "χρῆν",
+     "σε",
+     "ἢ",
+     "τοῦτον",
+     "μὴ",
+     "γράφειν",
+     "ἢ",
+     "ἐκεῖνον",
+     "λύειν",
+     "οὐχ",
+     "ἵν",
+     "ὃ",
+     "βούλει",
+     "σὺ",
+     "γένηται",
+     "πάντα",
+     "τὰ",
+     "πράγματα",
+     "συνταράξαι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "24.44"
+    }
+   },
+   {
+    "prompt": "As each one of you would be ashamed to leave the post to which he may be appointed in war.",
+    "answer": "ὥσπερ ἂν ὑμῶν ἕκαστος αἰσχυνθείη τὴν τάξιν λιπεῖν ἣν ἂν ταχθῇ ἐν τῷ πολέμῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ἂν",
+     "ὑμῶν",
+     "ἕκαστος",
+     "αἰσχυνθείη",
+     "τὴν",
+     "τάξιν",
+     "λιπεῖν",
+     "ἣν",
+     "ἂν",
+     "ταχθῇ",
+     "ἐν",
+     "τῷ",
+     "πολέμῳ"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-q3",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "One should abstain from saying oneself what one does not know for certain.",
+    "answer": "ἀλλὰ τοῦ μὲν αὐτὸν λέγειν ἃ μὴ σαφῶς εἰδείη εἵργεσθαι δεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "τοῦ",
+     "μὲν",
+     "αὐτὸν",
+     "λέγειν",
+     "ἃ",
+     "μὴ",
+     "σαφῶς",
+     "εἰδείη",
+     "εἵργεσθαι",
+     "δεῖ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.6.19"
+    }
+   },
+   {
+    "prompt": "He who starves of his own free will can eat whenever he wishes.",
+    "answer": "ὁ μὲν ἑκὼν πεινῶν φάγοι ἂν ὁπότε βούλοιτο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὲν",
+     "ἑκὼν",
+     "πεινῶν",
+     "φάγοι",
+     "ἂν",
+     "ὁπότε",
+     "βούλοιτο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.1.18"
+    }
+   },
+   {
+    "prompt": "I shall not be leaving until the gathering in the market-place is quite dispersed.",
+    "answer": "οὐκ ἂν ἀπέλθοιμι πρὶν ἂν παντάπασιν ἡ ἀγορὰ λυθῇ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἀπέλθοιμι",
+     "πρὶν",
+     "ἂν",
+     "παντάπασιν",
+     "ἡ",
+     "ἀγορὰ",
+     "λυθῇ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "12.1"
+    }
+   },
+   {
+    "prompt": "I should hesitate to embark on the vessels which Cyrus might give us lest he sink us.",
+    "answer": "ὀκνοίην ἂν εἰς τὰ πλοῖα ἐμβαίνειν ἃ Κῦρος ἡμῖν δοίη μὴ ἡμᾶς . . . καταδύσῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀκνοίην",
+     "ἂν",
+     "εἰς",
+     "τὰ",
+     "πλοῖα",
+     "ἐμβαίνειν",
+     "ἃ",
+     "Κῦρος",
+     "ἡμῖν",
+     "δοίη",
+     "μὴ",
+     "ἡμᾶς",
+     "καταδύσῃ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.3.17"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-q4",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "Let me die, when I have punished him who has done me wrong, that I may not remain here a laughing-stock.",
+    "answer": "τεθναίην, δίκην ἐπιθεὶς τῷ ἀδικοῦντι, ἵνα μὴ ἐνθάδε μένω καταγέλαστος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τεθναίην",
+     "δίκην",
+     "ἐπιθεὶς",
+     "τῷ",
+     "ἀδικοῦντι",
+     "ἵνα",
+     "μὴ",
+     "ἐνθάδε",
+     "μένω",
+     "καταγέλαστος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "28d"
+    }
+   },
+   {
+    "prompt": "If you should escape, you would not know what to do with yourself.",
+    "answer": "οὐκ ἂν ἔχοις ἐξελθὼν ὅ τι χρῷο σαυτῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἔχοις",
+     "ἐξελθὼν",
+     "ὅ",
+     "τι",
+     "χρῷο",
+     "σαυτῷ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Crito",
+     "locus": "45b"
+    }
+   },
+   {
+    "prompt": "If it should be settled who must lead the square.",
+    "answer": "εἰ ἀποδειχθείη τίνας χρὴ ἡγεῖσθαι τοῦ πλαισίου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἀποδειχθείη",
+     "τίνας",
+     "χρὴ",
+     "ἡγεῖσθαι",
+     "τοῦ",
+     "πλαισίου"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.36"
+    }
+   },
+   {
+    "prompt": "And he was wont to honour with an invitation any whom he saw practising anything that he himself wished them to do.",
+    "answer": "ἐκάλει δὲ καὶ ἐτίμα ὁπότε τινὰς ἴδοι τοιοῦτόν τι ποιήσαντας ὃ αὐτὸς ἐβούλετο ποιεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκάλει",
+     "δὲ",
+     "καὶ",
+     "ἐτίμα",
+     "ὁπότε",
+     "τινὰς",
+     "ἴδοι",
+     "τοιοῦτόν",
+     "τι",
+     "ποιήσαντας",
+     "ὃ",
+     "αὐτὸς",
+     "ἐβούλετο",
+     "ποιεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.1.30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2183-assimilation-of-moods-q5",
+  "sectionId": "sm-2183-assimilation-of-moods",
+  "questions": [
+   {
+    "prompt": "Summoning his friends he used to carry on a serious conversation with them in order to show whom he honoured.",
+    "answer": "προσκαλῶν τοὺς φίλους ἐσπουδαιολογεῖτο ὡς δηλοίη οὓς τιμᾷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσκαλῶν",
+     "τοὺς",
+     "φίλους",
+     "ἐσπουδαιολογεῖτο",
+     "ὡς",
+     "δηλοίη",
+     "οὓς",
+     "τιμᾷ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.9.28"
+    }
+   },
+   {
+    "prompt": "Men of counsel must guide events in order that what they resolve shall be accomplished.",
+    "answer": "ἵν᾽ ἃν ἐκείνοις δοκῇ, ταῦτα πράττηται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἵν",
+     "ἃν",
+     "ἐκείνοις",
+     "δοκῇ",
+     "ταῦτα",
+     "πράττηται"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "4.39"
+    }
+   },
+   {
+    "prompt": "Nor when he has become master of what he purchases, does he any longer employ the traitor to advise him concerning his plans for the future.",
+    "answer": "οὐδ᾽, ἐπειδὰν ὧν ἂν πρίηται κύριος γένηται, τῷ προδότῃ συμβούλῳ περὶ τῶν λοιπῶν ἔτι χρῆται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδ",
+     "ἐπειδὰν",
+     "ὧν",
+     "ἂν",
+     "πρίηται",
+     "κύριος",
+     "γένηται",
+     "τῷ",
+     "προδότῃ",
+     "συμβούλῳ",
+     "περὶ",
+     "τῶν",
+     "λοιπῶν",
+     "ἔτι",
+     "χρῆται"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.47"
+    }
+   }
+  ]
  }
 ]

@@ -1174,5 +1174,82 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2001-infinitive-after-adjectives-adverbs-and-q1",
+  "sectionId": "sm-2001-infinitive-after-adjectives-adverbs-and",
+  "questions": [
+   {
+    "prompt": "Skilled in speaking, evil in life.",
+    "answer": "δεινὸς λέγειν, κακὸς βιῶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινὸς",
+     "λέγειν",
+     "κακὸς",
+     "βιῶναι"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.174"
+    }
+   },
+   {
+    "prompt": "For it was not the proper season to irrigate the plain.",
+    "answer": "οὐ γὰρ ἦν ὥρα οἵα τὸ πεδίον ἄρδειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "γὰρ",
+     "ἦν",
+     "ὥρα",
+     "οἵα",
+     "τὸ",
+     "πεδίον",
+     "ἄρδειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.3.13"
+    }
+   },
+   {
+    "prompt": "Your children are almost of an age to be educated.",
+    "answer": "οἱ παῖδες ὑμῖν ὀλίγου ἡλικίαν ἔχουσι παιδεύεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "ὑμῖν",
+     "ὀλίγου",
+     "ἡλικίαν",
+     "ἔχουσι",
+     "παιδεύεσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laches",
+     "locus": "187c"
+    }
+   },
+   {
+    "prompt": "We have leisure to learn.",
+    "answer": "σχολή γε ἡμῖν μανθάνειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σχολή",
+     "γε",
+     "ἡμῖν",
+     "μανθάνειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.3.12"
+    }
+   }
+  ]
  }
 ]

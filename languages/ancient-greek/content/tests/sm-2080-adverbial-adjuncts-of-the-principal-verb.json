@@ -1727,5 +1727,176 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2080-adverbial-adjuncts-of-the-principal-verb-q1",
+  "sectionId": "sm-2080-adverbial-adjuncts-of-the-principal-verb",
+  "questions": [
+   {
+    "prompt": "They incurred danger for a great and noble cause, and so ended their lives.",
+    "answer": "καὶ καλλίστων κινδυνεύσαντες οὕτω τὸν βίον ἐτελεύτησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "καλλίστων",
+     "κινδυνεύσαντες",
+     "οὕτω",
+     "τὸν",
+     "βίον",
+     "ἐτελεύτησαν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "2.79"
+    }
+   },
+   {
+    "prompt": "Saying this, he rose.",
+    "answer": "ἅμα ταῦτ᾽ εἰπὼν ἀνέστη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "ταῦτ",
+     "εἰπὼν",
+     "ἀνέστη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.47"
+    }
+   },
+   {
+    "prompt": "I give you advice though I am your junior.",
+    "answer": "συμβουλεύω σοι καίπερ νεώτερος ὤν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμβουλεύω",
+     "σοι",
+     "καίπερ",
+     "νεώτερος",
+     "ὤν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.5.32"
+    }
+   },
+   {
+    "prompt": "Cleon's promise, insane though it was, was fulfilled.",
+    "answer": "Κλέωνος καίπερ μανιώδης οὖσα ἡ ὑπόσχεσις ἀπέβη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κλέωνος",
+     "καίπερ",
+     "μανιώδης",
+     "οὖσα",
+     "ἡ",
+     "ὑπόσχεσις",
+     "ἀπέβη"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.39"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2080-adverbial-adjuncts-of-the-principal-verb-q2",
+  "sectionId": "sm-2080-adverbial-adjuncts-of-the-principal-verb",
+  "questions": [
+   {
+    "prompt": "You do wrong in that you corrupt the most earnest man we have by tempting him to laugh, and that though he is such an enemy to laughter.",
+    "answer": "ἀδικεῖς ὅτι ἄνδρα ἡμῖν τὸν σπουδαιότατον διαφθείρεις γελᾶν ἀναπείθων, καὶ ταῦτα οὕτω πολέμιον ὄντα τῷ γέλωτι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδικεῖς",
+     "ὅτι",
+     "ἄνδρα",
+     "ἡμῖν",
+     "τὸν",
+     "σπουδαιότατον",
+     "διαφθείρεις",
+     "γελᾶν",
+     "ἀναπείθων",
+     "καὶ",
+     "ταῦτα",
+     "οὕτω",
+     "πολέμιον",
+     "ὄντα",
+     "τῷ",
+     "γέλωτι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.2.16"
+    }
+   },
+   {
+    "prompt": "Inasmuch as the peltasts were going off to supper, they rode against them.",
+    "answer": "οἷα δὴ ἀπιόντων πρὸς δεῖπνον . . . τῶν πελταστῶν, . . . ἐπελαύνουσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἷα",
+     "δὴ",
+     "ἀπιόντων",
+     "πρὸς",
+     "δεῖπνον",
+     "τῶν",
+     "πελταστῶν",
+     "ἐπελαύνουσι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "5.4.39"
+    }
+   },
+   {
+    "prompt": "We must not be discouraged on the ground that the Athenians are not well disciplined.",
+    "answer": "οὐ δεῖ ἀθυμεῖν ὡς οὐκ εὐτάκτων ὄντων Ἀθηναίων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δεῖ",
+     "ἀθυμεῖν",
+     "ὡς",
+     "οὐκ",
+     "εὐτάκτων",
+     "ὄντων",
+     "Ἀθηναίων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.5.20"
+    }
+   },
+   {
+    "prompt": "He bade him be of good cheer in the assurance that this would arrange itself in the right way.",
+    "answer": "ἔλεγε θαρρεῖν ὡς καταστησομένων τούτων ἐς τὸ δέον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγε",
+     "θαρρεῖν",
+     "ὡς",
+     "καταστησομένων",
+     "τούτων",
+     "ἐς",
+     "τὸ",
+     "δέον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.3.8"
+    }
+   }
+  ]
  }
 ]

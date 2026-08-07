@@ -1823,5 +1823,99 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2834-de-q1",
+  "sectionId": "sm-2834-de",
+  "questions": [
+   {
+    "prompt": "I have come, not to harm, but to liberate, the Greeks.",
+    "answer": "οὐκ ἐπὶ κακῷ, ἐπ᾽ ἐλευθερώσει δὲ τῶν Ἑλλήνων παρελήλυθα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐπὶ",
+     "κακῷ",
+     "ἐπ",
+     "ἐλευθερώσει",
+     "δὲ",
+     "τῶν",
+     "Ἑλλήνων",
+     "παρελήλυθα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.86"
+    }
+   },
+   {
+    "prompt": "But since they did not wish to surrender.",
+    "answer": "οὐ βουλομένων δέ . . . προσχωρεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "βουλομένων",
+     "δέ",
+     "προσχωρεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "1.6.13"
+    }
+   },
+   {
+    "prompt": "Accordingly if I have no knowledge either of what is holy or what is just, do you then instruct me.",
+    "answer": "εἰ οὖν ἐγὼ μὴ γιγνώσκω μήτε τὰ ὅσια μήτε τὰ δίκαια, ὑμεῖς δὲ διδάξετέ με",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οὖν",
+     "ἐγὼ",
+     "μὴ",
+     "γιγνώσκω",
+     "μήτε",
+     "τὰ",
+     "ὅσια",
+     "μήτε",
+     "τὰ",
+     "δίκαια",
+     "ὑμεῖς",
+     "δὲ",
+     "διδάξετέ",
+     "με"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.1.33"
+    }
+   },
+   {
+    "prompt": "Since therefore I am not able to persuade you not to expose it, do you then do as follows.",
+    "answer": "ἐπεὶ τοίνυν οὐ δύναμαί σε πείθειν μὴ ἐκθεῖναι, σὺ δὲ ὧδε ποίησον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τοίνυν",
+     "οὐ",
+     "δύναμαί",
+     "σε",
+     "πείθειν",
+     "μὴ",
+     "ἐκθεῖναι",
+     "σὺ",
+     "δὲ",
+     "ὧδε",
+     "ποίησον"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "1.112"
+    }
+   }
+  ]
  }
 ]

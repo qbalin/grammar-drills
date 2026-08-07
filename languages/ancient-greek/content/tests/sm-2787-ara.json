@@ -1822,5 +1822,80 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2787-ara-q1",
+  "sectionId": "sm-2787-ara",
+  "questions": [
+   {
+    "prompt": "On his mother's questioning him Cyrus naturally replied.",
+    "answer": "ἐρωτήσης δὲ αὐτὸν τῆς μητρὸς . . . ἀπεκρίνατο ἄρα ὁ Κῦρος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐρωτήσης",
+     "δὲ",
+     "αὐτὸν",
+     "τῆς",
+     "μητρὸς",
+     "ἀπεκρίνατο",
+     "ἄρα",
+     "ὁ",
+     "Κῦρος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.3.2"
+    }
+   },
+   {
+    "prompt": "If indeed it did take place as they said.",
+    "answer": "εἰ ἄρα γέγονεν ὡς οὗτοι ἔλεγον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἄρα",
+     "γέγονεν",
+     "ὡς",
+     "οὗτοι",
+     "ἔλεγον"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "56.28"
+    }
+   },
+   {
+    "prompt": "How then could such a man corrupt the young? unless perchance the study of virtue is corruption.",
+    "answer": "πῶς ἂν οὖν ὁ τοιοῦτος ἀνὴρ διαφθείροι τοὺς νέους; εἰ μὴ ἄρα ἡ τῆς ἀρετῆς ἐπιμέλεια διαφθορά ἐστιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πῶς",
+     "ἂν",
+     "οὖν",
+     "ὁ",
+     "τοιοῦτος",
+     "ἀνὴρ",
+     "διαφθείροι",
+     "τοὺς",
+     "νέους",
+     "εἰ",
+     "μὴ",
+     "ἄρα",
+     "ἡ",
+     "τῆς",
+     "ἀρετῆς",
+     "ἐπιμέλεια",
+     "διαφθορά",
+     "ἐστιν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.2.8"
+    }
+   }
+  ]
  }
 ]

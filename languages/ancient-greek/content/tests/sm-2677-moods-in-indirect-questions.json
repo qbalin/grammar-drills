@@ -1041,5 +1041,172 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2677-moods-in-indirect-questions-q1",
+  "sectionId": "sm-2677-moods-in-indirect-questions",
+  "questions": [
+   {
+    "prompt": "He often considered in what respect ignorance differed from madness.",
+    "answer": "πολλάκις ἐσκόπει τί διαφέρει μανίας ἀμαθία",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλάκις",
+     "ἐσκόπει",
+     "τί",
+     "διαφέρει",
+     "μανίας",
+     "ἀμαθία"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.2.50"
+    }
+   },
+   {
+    "prompt": "They deliberated whether they should burn them or dispose of them in some other manner.",
+    "answer": "ἐβουλεύοντο εἴτε κατακαύσωσιν . . . εἴτε τι ἄλλο χρήσωνται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλεύοντο",
+     "εἴτε",
+     "κατακαύσωσιν",
+     "εἴτε",
+     "τι",
+     "ἄλλο",
+     "χρήσωνται"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.4"
+    }
+   },
+   {
+    "prompt": "He asked where he could see Proxenus.",
+    "answer": "ἠρώτησε . . . ποῦ ἂν ἴδοι Πρόξενον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠρώτησε",
+     "ποῦ",
+     "ἂν",
+     "ἴδοι",
+     "Πρόξενον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.4.15"
+    }
+   },
+   {
+    "prompt": "He asked whether any one was wiser than I.",
+    "answer": "ἤρετο εἴ τις ἐμοῦ εἴη σοφώτερος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤρετο",
+     "εἴ",
+     "τις",
+     "ἐμοῦ",
+     "εἴη",
+     "σοφώτερος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "21a"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2677-moods-in-indirect-questions-q2",
+  "sectionId": "sm-2677-moods-in-indirect-questions",
+  "questions": [
+   {
+    "prompt": "He did not announce publicly what he was going to do.",
+    "answer": "ὅ τι δὲ ποιήσοι οὐ διεσήμηνε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "δὲ",
+     "ποιήσοι",
+     "οὐ",
+     "διεσήμηνε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.23"
+    }
+   },
+   {
+    "prompt": "They questioned the god whether they should surrender the city to the Corinthians.",
+    "answer": "τὸν θεὸν ἐπηρώτων εἰ παραδοῖεν Κορινθίοις τὴν πόλιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "θεὸν",
+     "ἐπηρώτων",
+     "εἰ",
+     "παραδοῖεν",
+     "Κορινθίοις",
+     "τὴν",
+     "πόλιν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.25"
+    }
+   },
+   {
+    "prompt": "They seemed to be wondering to what direction the Greeks would turn and what they had in mind.",
+    "answer": "ὁμοῖοι ἦσαν θαυμάζειν ὅποι ποτὲ τρέψονται οἱ Ἕλληνες καὶ τί ἐν νῷ ἔχοιεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁμοῖοι",
+     "ἦσαν",
+     "θαυμάζειν",
+     "ὅποι",
+     "ποτὲ",
+     "τρέψονται",
+     "οἱ",
+     "Ἕλληνες",
+     "καὶ",
+     "τί",
+     "ἐν",
+     "νῷ",
+     "ἔχοιεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.5.13"
+    }
+   },
+   {
+    "prompt": "He asked what it was that he was astonished at and how many of them were dead.",
+    "answer": "ἤρετο ὅ τι θαυμάζοι καὶ ὁπόσοι αὐτῶν τεθνᾶσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤρετο",
+     "ὅ",
+     "τι",
+     "θαυμάζοι",
+     "καὶ",
+     "ὁπόσοι",
+     "αὐτῶν",
+     "τεθνᾶσιν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.113"
+    }
+   }
+  ]
  }
 ]

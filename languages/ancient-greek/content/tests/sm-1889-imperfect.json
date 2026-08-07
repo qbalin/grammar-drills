@@ -1756,5 +1756,232 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1889-imperfect-q1",
+  "sectionId": "sm-1889-imperfect",
+  "questions": [
+   {
+    "prompt": "They sent a messenger and surrendered the dead under a truce.",
+    "answer": "ἄγγελον ἔπεμπον καὶ τοὺς νεκροὺς ὑποσπόνδους ἀπέδοσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγγελον",
+     "ἔπεμπον",
+     "καὶ",
+     "τοὺς",
+     "νεκροὺς",
+     "ὑποσπόνδους",
+     "ἀπέδοσαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.6"
+    }
+   },
+   {
+    "prompt": "When they caught sight of him, the very men who before this were wont to prostrate themselves before him, prostrated themselves on this occasion also.",
+    "answer": "ἐπεὶ εἶδον αὐτὸν οἵπερ πρόσθεν προσεκύνουν, καὶ τότε προσεκύνησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "εἶδον",
+     "αὐτὸν",
+     "οἵπερ",
+     "πρόσθεν",
+     "προσεκύνουν",
+     "καὶ",
+     "τότε",
+     "προσεκύνησαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.6.10"
+    }
+   },
+   {
+    "prompt": "They were for pushing on to Corcyra.",
+    "answer": "ἠπείγοντο ἐς τὴν Κέρκυραν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠπείγοντο",
+     "ἐς",
+     "τὴν",
+     "Κέρκυραν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.3"
+    }
+   },
+   {
+    "prompt": "You would not accept the proposal.",
+    "answer": "τὴν πρόκλησιν οὐκ ἐδέχεσθε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "πρόκλησιν",
+     "οὐκ",
+     "ἐδέχεσθε"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.64"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1889-imperfect-q2",
+  "sectionId": "sm-1889-imperfect",
+  "questions": [
+   {
+    "prompt": "The one would not marry, the other did.",
+    "answer": "ὁ μὲν οὐκ ἐγάμει, ὁ δὲ ἔγημεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὲν",
+     "οὐκ",
+     "ἐγάμει",
+     "ὁ",
+     "δὲ",
+     "ἔγημεν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "44.17"
+    }
+   },
+   {
+    "prompt": "They would not even listen to a syllable if ever any one wished to say anything to the contrary.",
+    "answer": "οὐδὲ φωνὴν ἤκουον, εἴ τις ἄλλο τι βούλοιτο λέγειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "φωνὴν",
+     "ἤκουον",
+     "εἴ",
+     "τις",
+     "ἄλλο",
+     "τι",
+     "βούλοιτο",
+     "λέγειν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.43"
+    }
+   },
+   {
+    "prompt": "To be present and not to be abroad.",
+    "answer": "παρεῖναι καὶ μὴ ἀποδημεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρεῖναι",
+     "καὶ",
+     "μὴ",
+     "ἀποδημεῖν"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "2.59"
+    }
+   },
+   {
+    "prompt": "Aristeus was their commander.",
+    "answer": "ἐστρατήγει δὲ αὐτῶν Ἀριστεύς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐστρατήγει",
+     "δὲ",
+     "αὐτῶν",
+     "Ἀριστεύς"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.60"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1889-imperfect-q3",
+  "sectionId": "sm-1889-imperfect",
+  "questions": [
+   {
+    "prompt": "They came to the river which divided the country of the Macrones from that of the Scytheni.",
+    "answer": "ἀφίκοντο ἐπὶ τὸν ποταμὸν ὃς ὥριζε τὴν τῶν Μακρώνων χώραν καὶ τὴν τῶν Σκυθηνῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφίκοντο",
+     "ἐπὶ",
+     "τὸν",
+     "ποταμὸν",
+     "ὃς",
+     "ὥριζε",
+     "τὴν",
+     "τῶν",
+     "Μακρώνων",
+     "χώραν",
+     "καὶ",
+     "τὴν",
+     "τῶν",
+     "Σκυθηνῶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.8.1"
+    }
+   },
+   {
+    "prompt": "This was their total number when they began to be besieged.",
+    "answer": "τοσοῦτοι ἦσαν οἱ ξύμπαντες ὅτε ἐς τὴν πολιορκίαν καθίσταντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτοι",
+     "ἦσαν",
+     "οἱ",
+     "ξύμπαντες",
+     "ὅτε",
+     "ἐς",
+     "τὴν",
+     "πολιορκίαν",
+     "καθίσταντο"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.78"
+    }
+   },
+   {
+    "prompt": "He took the army back as quickly as possible.",
+    "answer": "πάλιν κατὰ τάχος ἐκόμιζε τὴν στρατιάν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάλιν",
+     "κατὰ",
+     "τάχος",
+     "ἐκόμιζε",
+     "τὴν",
+     "στρατιάν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.114"
+    }
+   }
+  ]
  }
 ]

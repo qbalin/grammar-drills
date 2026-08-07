@@ -1000,5 +1000,158 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1040-predicate-adjectives-q1",
+  "sectionId": "sm-1040-predicate-adjectives",
+  "questions": [
+   {
+    "prompt": "The favour has been concealed.",
+    "answer": "ἡ δὲ χάρις ἄδηλος γεγένηται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "δὲ",
+     "χάρις",
+     "ἄδηλος",
+     "γεγένηται"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.233"
+    }
+   },
+   {
+    "prompt": "You have enacted laws with regard to offenders who are unknown.",
+    "answer": "νόμους ἔθεσθε ἐπ᾽ ἀδήλοις τοῖς ἀδικήσουσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νόμους",
+     "ἔθεσθε",
+     "ἐπ",
+     "ἀδήλοις",
+     "τοῖς",
+     "ἀδικήσουσι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.30"
+    }
+   },
+   {
+    "prompt": "It shows that the will is false.",
+    "answer": "δηλοῖ ψευδῆ τὴν διαθήκην οὖσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δηλοῖ",
+     "ψευδῆ",
+     "τὴν",
+     "διαθήκην",
+     "οὖσαν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "45.34"
+    }
+   },
+   {
+    "prompt": "For we have agreed that all honourable actions are good.",
+    "answer": "τὰς γὰρ καλὰς πράξεις ἁπάσας ἀγαθὰς ὡμολογήσαμεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "γὰρ",
+     "καλὰς",
+     "πράξεις",
+     "ἁπάσας",
+     "ἀγαθὰς",
+     "ὡμολογήσαμεν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "359e"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1040-predicate-adjectives-q2",
+  "sectionId": "sm-1040-predicate-adjectives",
+  "questions": [
+   {
+    "prompt": "First he wept for a long time, then he spoke as follows.",
+    "answer": "πρῶτον μὲν ἐδάκρυε πολὺν χρόνον . . . εἶτα δὲ ἔλεξε τοιάδε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρῶτον",
+     "μὲν",
+     "ἐδάκρυε",
+     "πολὺν",
+     "χρόνον",
+     "εἶτα",
+     "δὲ",
+     "ἔλεξε",
+     "τοιάδε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.3.2"
+    }
+   },
+   {
+    "prompt": "The stones are thrown in great numbers.",
+    "answer": "φέρονται οἱ λίθοι πολλοί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φέρονται",
+     "οἱ",
+     "λίθοι",
+     "πολλοί"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.7.7"
+    }
+   },
+   {
+    "prompt": "They restored the dead under a truce.",
+    "answer": "τοὺς νεκροὺς ὑποσπόνδους ἀπέδοσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "νεκροὺς",
+     "ὑποσπόνδους",
+     "ἀπέδοσαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.63"
+    }
+   },
+   {
+    "prompt": "The gods send you forth favourably.",
+    "answer": "οἱ θεοὶ εὐμενεῖς πέμπουσί σε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "εὐμενεῖς",
+     "πέμπουσί",
+     "σε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.6.2"
+    }
+   }
+  ]
  }
 ]

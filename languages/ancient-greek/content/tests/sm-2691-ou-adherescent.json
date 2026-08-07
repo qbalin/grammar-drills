@@ -1225,5 +1225,80 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2691-ou-adherescent-q1",
+  "sectionId": "sm-2691-ou-adherescent",
+  "questions": [
+   {
+    "prompt": "What you forbid us to do.",
+    "answer": "ἃ οὐκ ἐᾶτε ἡμᾶς . . . ποιεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "οὐκ",
+     "ἐᾶτε",
+     "ἡμᾶς",
+     "ποιεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.3.10"
+    }
+   },
+   {
+    "prompt": "He said that it was not right to avenge himself on an exile.",
+    "answer": "οὐκ ἀξιοῖ . . . φεύγοντα τιμωρεῖσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀξιοῖ",
+     "φεύγοντα",
+     "τιμωρεῖσθαι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.136"
+    }
+   },
+   {
+    "prompt": "If they were few.",
+    "answer": "εἰ μὲν οὐ πολλοὶ ἦσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὲν",
+     "οὐ",
+     "πολλοὶ",
+     "ἦσαν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "13.62"
+    }
+   },
+   {
+    "prompt": "Both if you deny it and if you admit it.",
+    "answer": "ἐάν τε οὐ φῆτε ἐάν τε φῆτε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τε",
+     "οὐ",
+     "φῆτε",
+     "ἐάν",
+     "τε",
+     "φῆτε"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "25b"
+    }
+   }
+  ]
  }
 ]

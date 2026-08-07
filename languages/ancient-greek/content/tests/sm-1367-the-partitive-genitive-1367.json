@@ -891,5 +891,77 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1367-the-partitive-genitive-1367-q1",
+  "sectionId": "sm-1367-the-partitive-genitive-1367",
+  "questions": [
+   {
+    "prompt": "He knew that I was acting absurdly.",
+    "answer": "ἔγνω ἄτοπα ἐμοῦ ποιοῦντος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγνω",
+     "ἄτοπα",
+     "ἐμοῦ",
+     "ποιοῦντος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.2.18"
+    }
+   },
+   {
+    "prompt": "Each of us mistaking what the other says.",
+    "answer": "ἀγνοοῦντες ἀλλήλων ὅ τι λέγομεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγνοοῦντες",
+     "ἀλλήλων",
+     "ὅ",
+     "τι",
+     "λέγομεν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "517c"
+    }
+   },
+   {
+    "prompt": "; will you not cover the sea with your triremes?",
+    "answer": "οὐκ ἐμπλήσετε τὴν θάλατταν τριήρων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐμπλήσετε",
+     "τὴν",
+     "θάλατταν",
+     "τριήρων"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "8.74"
+    }
+   },
+   {
+    "prompt": "It is divine to rule over willing subjects.",
+    "answer": "θεῖον τὸ ἐθελόντων ἄρχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θεῖον",
+     "τὸ",
+     "ἐθελόντων",
+     "ἄρχειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "21.12"
+    }
+   }
+  ]
  }
 ]

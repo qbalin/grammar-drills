@@ -710,5 +710,163 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-q1",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "To buy or sell a horse for money.",
+    "answer": "ἀργυρίου πρίασθαι ἢ ἀποδόσθαι ἵππον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀργυρίου",
+     "πρίασθαι",
+     "ἢ",
+     "ἀποδόσθαι",
+     "ἵππον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "333b"
+    }
+   },
+   {
+    "prompt": "Those who have ruined the highest interests of the State to purchase ephemeral popularity.",
+    "answer": "οἱ τῆς παρ᾽ ἡμέραν χάριτος τὰ μέγιστα τῆς πόλεως ἀπολωλεκότες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῆς",
+     "παρ",
+     "ἡμέραν",
+     "χάριτος",
+     "τὰ",
+     "μέγιστα",
+     "τῆς",
+     "πόλεως",
+     "ἀπολωλεκότες"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "8.70"
+    }
+   },
+   {
+    "prompt": "For how much does he teach? for five minae.",
+    "answer": "πόσου διδάσκει; πέντε μνῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόσου",
+     "διδάσκει",
+     "πέντε",
+     "μνῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "20b"
+    }
+   },
+   {
+    "prompt": "The Chaldaeans serve for pay.",
+    "answer": "οἱ Χαλδαῖοι μισθοῦ στρατεύονται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Χαλδαῖοι",
+     "μισθοῦ",
+     "στρατεύονται"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.2.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1372-genitive-of-price-and-value-q2",
+  "sectionId": "sm-1372-genitive-of-price-and-value",
+  "questions": [
+   {
+    "prompt": "He makes least account of what is most important, and sets higher what is less estimable.",
+    "answer": "τὰ πλείστου ἄξια περὶ ἐλαχίστου ποιεῖται, τὰ δὲ φαυλότερα περὶ πλείονος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "πλείστου",
+     "ἄξια",
+     "περὶ",
+     "ἐλαχίστου",
+     "ποιεῖται",
+     "τὰ",
+     "δὲ",
+     "φαυλότερα",
+     "περὶ",
+     "πλείονος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "30a"
+    }
+   },
+   {
+    "prompt": "I esteem it greatly to have heard what I did from Protagoras.",
+    "answer": "πολλοῦ ποιοῦμαι ἀκηκοέναι ἃ ἀκήκοα Πρωταγόρου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοῦ",
+     "ποιοῦμαι",
+     "ἀκηκοέναι",
+     "ἃ",
+     "ἀκήκοα",
+     "Πρωταγόρου"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "328d"
+    }
+   },
+   {
+    "prompt": "You charge nobody anything for your teaching.",
+    "answer": "οὐδένα τῆς συνουσίας ἀργύριον πράττει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδένα",
+     "τῆς",
+     "συνουσίας",
+     "ἀργύριον",
+     "πράττει"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.6.11"
+    }
+   },
+   {
+    "prompt": "The man proposes death as my penalty.",
+    "answer": "τιμᾶταί μοι ὁ ἀνὴρ θανάτου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμᾶταί",
+     "μοι",
+     "ὁ",
+     "ἀνὴρ",
+     "θανάτου"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "36b"
+    }
+   }
+  ]
  }
 ]

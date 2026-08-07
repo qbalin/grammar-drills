@@ -1801,5 +1801,147 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2323-third-form-of-conditions-more-vivid-q1",
+  "sectionId": "sm-2323-third-form-of-conditions-more-vivid",
+  "questions": [
+   {
+    "prompt": "If you seek well, you shall find.",
+    "answer": "ἐὰν ζητῇς καλῶς, εὑρήσεις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ζητῇς",
+     "καλῶς",
+     "εὑρήσεις"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "503d"
+    }
+   },
+   {
+    "prompt": "I shall be grateful, if you listen.",
+    "answer": "χάριν γε εἴσομαι, ἐὰν ἀκούητε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χάριν",
+     "γε",
+     "εἴσομαι",
+     "ἐὰν",
+     "ἀκούητε"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "310a"
+    }
+   },
+   {
+    "prompt": "For if we take this, they will not be able to remain.",
+    "answer": "ἢν γὰρ τοῦτο λάβωμεν, οὐ δυνήσονται μένειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἢν",
+     "γὰρ",
+     "τοῦτο",
+     "λάβωμεν",
+     "οὐ",
+     "δυνήσονται",
+     "μένειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.4.41"
+    }
+   },
+   {
+    "prompt": "If you choose war, do not come here again without your arms.",
+    "answer": "ἢν πόλεμον αἱρῆσθε, μηκέτι ἥκετε δεῦρο ἄνευ ὅπλων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἢν",
+     "πόλεμον",
+     "αἱρῆσθε",
+     "μηκέτι",
+     "ἥκετε",
+     "δεῦρο",
+     "ἄνευ",
+     "ὅπλων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.2.13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2323-third-form-of-conditions-more-vivid-q2",
+  "sectionId": "sm-2323-third-form-of-conditions-more-vivid",
+  "questions": [
+   {
+    "prompt": "But if you can find anything better from any quarter, try to communicate it to me too.",
+    "answer": "σὺ δ᾽, ἄν τι ἔχῃς βέλτιόν ποθεν λαβεῖν, πειρᾶσθαι καὶ ἐμοὶ μεταδιδόναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "δ",
+     "ἄν",
+     "τι",
+     "ἔχῃς",
+     "βέλτιόν",
+     "ποθεν",
+     "λαβεῖν",
+     "πειρᾶσθαι",
+     "καὶ",
+     "ἐμοὶ",
+     "μεταδιδόναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Cratylus",
+     "locus": "426b"
+    }
+   },
+   {
+    "prompt": "If we keep the field thus, we shall not be able to fight.",
+    "answer": "εἰ ὧδε στρατευσόμεθα, οὐ δυνησόμεθα μάχεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὧδε",
+     "στρατευσόμεθα",
+     "οὐ",
+     "δυνησόμεθα",
+     "μάχεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.1.13"
+    }
+   },
+   {
+    "prompt": "I should become most wretched, were I to be driven unjustly into exile.",
+    "answer": "εἰ φυγὰς ἀδίκως καταστήσομαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "φυγὰς",
+     "ἀδίκως",
+     "καταστήσομαι"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "7.41"
+    }
+   }
+  ]
  }
 ]

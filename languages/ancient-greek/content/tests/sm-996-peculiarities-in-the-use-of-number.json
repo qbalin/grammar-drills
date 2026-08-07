@@ -1747,5 +1747,82 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-996-peculiarities-in-the-use-of-number-q1",
+  "sectionId": "sm-996-peculiarities-in-the-use-of-number",
+  "questions": [
+   {
+    "prompt": "I have about a thousand horse.",
+    "answer": "ἵππον ἔχω εἰς χιλίαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἵππον",
+     "ἔχω",
+     "εἰς",
+     "χιλίαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.6.2"
+    }
+   },
+   {
+    "prompt": "Lesbos revolted, having wished to do so even before the war.",
+    "answer": "Λέσβος ἀπέστη βουληθέντες καὶ πρὸ τοῦ πολέμου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Λέσβος",
+     "ἀπέστη",
+     "βουληθέντες",
+     "καὶ",
+     "πρὸ",
+     "τοῦ",
+     "πολέμου"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.2"
+    }
+   },
+   {
+    "prompt": "All who proved themselves just in their lives.",
+    "answer": "ὅσοι δίκαιοι ἐγένοντο ἐν τῷ ἑαυτῶν βίῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅσοι",
+     "δίκαιοι",
+     "ἐγένοντο",
+     "ἐν",
+     "τῷ",
+     "ἑαυτῶν",
+     "βίῳ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "41a"
+    }
+   },
+   {
+    "prompt": "The silence of the younger men in the presence of their elders.",
+    "answer": "σιγαὶ τῶν νεωτέρων παρὰ πρεσβυτέροις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σιγαὶ",
+     "τῶν",
+     "νεωτέρων",
+     "παρὰ",
+     "πρεσβυτέροις"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "425a"
+    }
+   }
+  ]
  }
 ]

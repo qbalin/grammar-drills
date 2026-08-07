@@ -1723,5 +1723,167 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2739-with-the-infinitive-depending-on-verbs-q1",
+  "sectionId": "sm-2739-with-the-infinitive-depending-on-verbs",
+  "questions": [
+   {
+    "prompt": "To hinder the Greeks from coming.",
+    "answer": "ἀποκωλῦσαι τοὺς Ἕλληνας μὴ ἐλθεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποκωλῦσαι",
+     "τοὺς",
+     "Ἕλληνας",
+     "μὴ",
+     "ἐλθεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.4.24"
+    }
+   },
+   {
+    "prompt": "You will beware of speaking in public.",
+    "answer": "εὐλαβήσεσθε μὴ πολλῶν ἐναντίον λέγειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐλαβήσεσθε",
+     "μὴ",
+     "πολλῶν",
+     "ἐναντίον",
+     "λέγειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthydemus",
+     "locus": "304a"
+    }
+   },
+   {
+    "prompt": "They abstained from marching upon each other's territory.",
+    "answer": "ἀπέσχοντο μὴ ἐπὶ τὴν ἑκατέρων γῆν στρατεῦσαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέσχοντο",
+     "μὴ",
+     "ἐπὶ",
+     "τὴν",
+     "ἑκατέρων",
+     "γῆν",
+     "στρατεῦσαι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.25"
+    }
+   },
+   {
+    "prompt": "The oaths sworn in the name of the gods prevent our being enemies to each other.",
+    "answer": "οἱ θεῶν ἡμᾶς ὅρκοι κωλύουσι πολεμίους εἶναι ἀλλήλοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεῶν",
+     "ἡμᾶς",
+     "ὅρκοι",
+     "κωλύουσι",
+     "πολεμίους",
+     "εἶναι",
+     "ἀλλήλοις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2739-with-the-infinitive-depending-on-verbs-q2",
+  "sectionId": "sm-2739-with-the-infinitive-depending-on-verbs",
+  "questions": [
+   {
+    "prompt": "They refrained from immediately attacking the Athenians.",
+    "answer": "ἐπέσχον τὸ εὐθέως τοῖς Ἀθηναίοις ἐπιχειρεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπέσχον",
+     "τὸ",
+     "εὐθέως",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "ἐπιχειρεῖν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.33"
+    }
+   },
+   {
+    "prompt": "Certain people do not deny that they are doing these things.",
+    "answer": "ταῦτά τινες οὐκ ἐξαρνοῦνται πράττειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτά",
+     "τινες",
+     "οὐκ",
+     "ἐξαρνοῦνται",
+     "πράττειν"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.250"
+    }
+   },
+   {
+    "prompt": "He was not able to resist granting the favour.",
+    "answer": "οὐδὲν ἐδύνατο ἀντέχειν μὴ οὐ χαρίζεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "ἐδύνατο",
+     "ἀντέχειν",
+     "μὴ",
+     "οὐ",
+     "χαρίζεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.4.2"
+    }
+   },
+   {
+    "prompt": "No argument disputes that sweet things are sweet.",
+    "answer": "τὸ μὲν οὖν μὴ οὐχὶ ἡδέα εἶναι τὰ ἡδέα λὁγος οὐδεὶς ἀμφισβητεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "μὲν",
+     "οὖν",
+     "μὴ",
+     "οὐχὶ",
+     "ἡδέα",
+     "εἶναι",
+     "τὰ",
+     "ἡδέα",
+     "λὁγος",
+     "οὐδεὶς",
+     "ἀμφισβητεῖ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Philebus",
+     "locus": "13a"
+    }
+   }
+  ]
  }
 ]

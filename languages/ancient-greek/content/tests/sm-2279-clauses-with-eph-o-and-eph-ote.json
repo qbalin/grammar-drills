@@ -450,5 +450,72 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2279-clauses-with-eph-o-and-eph-ote-q1",
+  "sectionId": "sm-2279-clauses-with-eph-o-and-eph-ote",
+  "questions": [
+   {
+    "prompt": "Having been chosen for the purpose of compiling laws.",
+    "answer": "αἱρεθέντες ἐφ᾽ ᾧτε συγγράψαι νόμους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱρεθέντες",
+     "ἐφ",
+     "ᾧτε",
+     "συγγράψαι",
+     "νόμους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "2.3.11"
+    }
+   },
+   {
+    "prompt": "We release you, on this condition however, that you no longer search after wisdom.",
+    "answer": "ἀφίεμέν σε, ἐπὶ τούτῳ μέντοι, ἐφ᾽ ᾧτε μηκέτι . . . φιλοσοφεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφίεμέν",
+     "σε",
+     "ἐπὶ",
+     "τούτῳ",
+     "μέντοι",
+     "ἐφ",
+     "ᾧτε",
+     "μηκέτι",
+     "φιλοσοφεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "29c"
+    }
+   },
+   {
+    "prompt": "They made an agreement on condition that they should depart from the Peloponnesus under a truce and never set foot on it again.",
+    "answer": "ξυνέβησαν ἐφ᾽ ᾧτε ἐξίασιν ἐκ Πελοποννήσου ὑπόσπονδοι καὶ μηδέποτε ἐπιβήσονται αὐτῆς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ξυνέβησαν",
+     "ἐφ",
+     "ᾧτε",
+     "ἐξίασιν",
+     "ἐκ",
+     "Πελοποννήσου",
+     "ὑπόσπονδοι",
+     "καὶ",
+     "μηδέποτε",
+     "ἐπιβήσονται",
+     "αὐτῆς"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.103"
+    }
+   }
+  ]
  }
 ]

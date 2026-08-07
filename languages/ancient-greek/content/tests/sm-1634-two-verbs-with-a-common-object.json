@@ -517,5 +517,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1634-two-verbs-with-a-common-object-q1",
+  "sectionId": "sm-1634-two-verbs-with-a-common-object",
+  "questions": [
+   {
+    "prompt": "We must not accuse the trainer or banish him from the cities.",
+    "answer": "οὐ δεῖ τοῖς παιδοτρίβαις ἐγκαλεῖν οὐδ᾽ ἐκβάλλειν ἐκ τῶν πόλεων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δεῖ",
+     "τοῖς",
+     "παιδοτρίβαις",
+     "ἐγκαλεῖν",
+     "οὐδ",
+     "ἐκβάλλειν",
+     "ἐκ",
+     "τῶν",
+     "πόλεων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "460d"
+    }
+   },
+   {
+    "prompt": "He censures some and rejects them at the scrutiny.",
+    "answer": "ἐπιτιμᾷ καὶ ἀποδοκιμάζει τισί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπιτιμᾷ",
+     "καὶ",
+     "ἀποδοκιμάζει",
+     "τισί"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "6.33"
+    }
+   },
+   {
+    "prompt": "Having given him guides he ordered him to proceed quietly.",
+    "answer": "τούτῳ δοὺς ἡγεμόνας πορεύεσθαι ἐκέλευσεν ἡσύχως",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτῳ",
+     "δοὺς",
+     "ἡγεμόνας",
+     "πορεύεσθαι",
+     "ἐκέλευσεν",
+     "ἡσύχως"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.3.53"
+    }
+   },
+   {
+    "prompt": "Falling upon the foremost they put them to flight.",
+    "answer": "προσπεσόντες τοῖς πρώτοις τρέπουσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσπεσόντες",
+     "τοῖς",
+     "πρώτοις",
+     "τρέπουσι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.53"
+    }
+   }
+  ]
  }
 ]

@@ -372,5 +372,322 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-q1",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "From one man Greece endured such sufferings.",
+    "answer": "ὑφ᾽ ἑνὸς τοιαῦτα πέπονθεν ἡ Ἑλλὰς ἀνθρώπου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑφ",
+     "ἑνὸς",
+     "τοιαῦτα",
+     "πέπονθεν",
+     "ἡ",
+     "Ἑλλὰς",
+     "ἀνθρώπου"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.158"
+    }
+   },
+   {
+    "prompt": "You did not postpone your vote but took vengeance upon Archias and his company.",
+    "answer": "τοὺς περὶ Ἀρχίαν . . . οὐ ψῆφον ἀνεμείνατε ἀλλ᾽ . . . ἐτιμωρήσασθε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "περὶ",
+     "Ἀρχίαν",
+     "οὐ",
+     "ψῆφον",
+     "ἀνεμείνατε",
+     "ἀλλ",
+     "ἐτιμωρήσασθε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "7.3.7"
+    }
+   },
+   {
+    "prompt": "A passion so terrible.",
+    "answer": "οὕτω τις ἔρως δεινός",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "τις",
+     "ἔρως",
+     "δεινός"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Theaetetus",
+     "locus": "169c"
+    }
+   },
+   {
+    "prompt": "For they ran much faster than the horses.",
+    "answer": "πολὺ γὰρ τῶν ἵππων ἔτρεχον θᾶττον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολὺ",
+     "γὰρ",
+     "τῶν",
+     "ἵππων",
+     "ἔτρεχον",
+     "θᾶττον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.5.2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-q2",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "By fighting to be superior to our public enemies, and by voting to be weaker than our private enemies.",
+    "answer": "μαχομένους μὲν κρείττους εἶναι τῶν πολεμίων, ψηφιζομένους δὲ ἥττους τῶν ἐχθρῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μαχομένους",
+     "μὲν",
+     "κρείττους",
+     "εἶναι",
+     "τῶν",
+     "πολεμίων",
+     "ψηφιζομένους",
+     "δὲ",
+     "ἥττους",
+     "τῶν",
+     "ἐχθρῶν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.79"
+    }
+   },
+   {
+    "prompt": "For he changed not his disposition but his position.",
+    "answer": "οὐ γὰρ τὸν τρόπον ἀλλὰ τὸν τόπον μετήλλαξεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "γὰρ",
+     "τὸν",
+     "τρόπον",
+     "ἀλλὰ",
+     "τὸν",
+     "τόπον",
+     "μετήλλαξεν"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.78"
+    }
+   },
+   {
+    "prompt": "To an invisible place, to Hades.",
+    "answer": "εἰς . . . τόπον . . . ἀειδῆ, εἰς Αἵδου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τόπον",
+     "ἀειδῆ",
+     "εἰς",
+     "Αἵδου"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "80d"
+    }
+   },
+   {
+    "prompt": "An island not large in size.",
+    "answer": "νῆσος μεγάθει μὲν οὐ μεγάλη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῆσος",
+     "μεγάθει",
+     "μὲν",
+     "οὐ",
+     "μεγάλη"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "5.31"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-q3",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "The rearing of young children.",
+    "answer": "ἡ τῶν νεογνῶν τέκνων παιδοτροφία",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "νεογνῶν",
+     "τέκνων",
+     "παιδοτροφία"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "7.21"
+    }
+   },
+   {
+    "prompt": "Having diverted your attention away from the fraud.",
+    "answer": "ἀπαγαγὼν δ᾽ ὑμᾶς ἄπωθεν ἀπὸ τοῦ κλέμματος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπαγαγὼν",
+     "δ",
+     "ὑμᾶς",
+     "ἄπωθεν",
+     "ἀπὸ",
+     "τοῦ",
+     "κλέμματος"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.100"
+    }
+   },
+   {
+    "prompt": "I will tell you and I will not conceal my opinion on these matters.",
+    "answer": "ὡς ἔχω περὶ τούτων, λέξω πρὸς ὑμᾶς καὶ οὐκ ἀποκρύψομαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἔχω",
+     "περὶ",
+     "τούτων",
+     "λέξω",
+     "πρὸς",
+     "ὑμᾶς",
+     "καὶ",
+     "οὐκ",
+     "ἀποκρύψομαι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "8.73"
+    }
+   },
+   {
+    "prompt": "Not unbidden but invited.",
+    "answer": "οὐκ ἄκλητοι, παρακληθέντες δέ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἄκλητοι",
+     "παρακληθέντες",
+     "δέ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.87"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-q4",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "Fearing him and his audacity.",
+    "answer": "καταδείσαντες τοῦτον καὶ τὸ τούτου θράσος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καταδείσαντες",
+     "τοῦτον",
+     "καὶ",
+     "τὸ",
+     "τούτου",
+     "θράσος"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.20"
+    }
+   },
+   {
+    "prompt": "Both among the gods and among men.",
+    "answer": "καὶ ἐν θεοῖς καὶ ἐν ἀνθρώποις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ἐν",
+     "θεοῖς",
+     "καὶ",
+     "ἐν",
+     "ἀνθρώποις"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "508a"
+    }
+   },
+   {
+    "prompt": "Nothing either great or small = absolutely nothing.",
+    "answer": "οὐδὲν οὔτε μέγα οὔτε μικρόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "οὔτε",
+     "μέγα",
+     "οὔτε",
+     "μικρόν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "19c"
+    }
+   },
+   {
+    "prompt": "On land and sea.",
+    "answer": "ἐν γῇ καὶ θαλάττῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "γῇ",
+     "καὶ",
+     "θαλάττῃ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.324"
+    }
+   }
+  ]
  }
 ]

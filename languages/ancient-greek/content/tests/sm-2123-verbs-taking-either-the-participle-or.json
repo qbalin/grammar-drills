@@ -1637,5 +1637,239 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2123-verbs-taking-either-the-participle-or-q1",
+  "sectionId": "sm-2123-verbs-taking-either-the-participle-or",
+  "questions": [
+   {
+    "prompt": "I am not ashamed of saying this; but the following I should be ashamed to say.",
+    "answer": "τοῦτο μὲν οὐκ αἰσχύνομαι λέγων· τὸ δὲ . . . αἰσχυνοίμην ἂν λέγειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "μὲν",
+     "οὐκ",
+     "αἰσχύνομαι",
+     "λέγων",
+     "τὸ",
+     "δὲ",
+     "αἰσχυνοίμην",
+     "ἂν",
+     "λέγειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.1.21"
+    }
+   },
+   {
+    "prompt": "They had the courage to receive the invader of their country.",
+    "answer": "ἀνέσχοντο τὸν ἐπιόντα ἐπὶ τὴν χώραν δέξασθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνέσχοντο",
+     "τὸν",
+     "ἐπιόντα",
+     "ἐπὶ",
+     "τὴν",
+     "χώραν",
+     "δέξασθαι"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "7.139"
+    }
+   },
+   {
+    "prompt": "He resolved to pursue those who were hanging on his left.",
+    "answer": "ἔγνω διώκειν τοὺς ἐκ τῶν εὐωνύμων προσκειμένους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγνω",
+     "διώκειν",
+     "τοὺς",
+     "ἐκ",
+     "τῶν",
+     "εὐωνύμων",
+     "προσκειμένους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.6.9"
+    }
+   },
+   {
+    "prompt": "The guides directed them to take provisions.",
+    "answer": "ἀπέδειξαν οἱ ἡγεμόνες λαμβάνειν τὰ ἐπιτήδεια",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέδειξαν",
+     "οἱ",
+     "ἡγεμόνες",
+     "λαμβάνειν",
+     "τὰ",
+     "ἐπιτήδεια"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.3.14"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2123-verbs-taking-either-the-participle-or-q2",
+  "sectionId": "sm-2123-verbs-taking-either-the-participle-or",
+  "questions": [
+   {
+    "prompt": "What sort of persons you proved yourselves to be in regard to the city.",
+    "answer": "ὁποῖοί τινες ὄντες αὐτοὶ περὶ τὴν πόλιν ἐδοκιμάσθητε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁποῖοί",
+     "τινες",
+     "ὄντες",
+     "αὐτοὶ",
+     "περὶ",
+     "τὴν",
+     "πόλιν",
+     "ἐδοκιμάσθητε"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "31.34"
+    }
+   },
+   {
+    "prompt": "You appear to take delight in despotisms rather than in constitutional governments.",
+    "answer": "ἐοίκατε τυραννίσι μᾶλλον ἢ πολιτείαις ἡδόμενοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐοίκατε",
+     "τυραννίσι",
+     "μᾶλλον",
+     "ἢ",
+     "πολιτείαις",
+     "ἡδόμενοι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.3.8"
+    }
+   },
+   {
+    "prompt": "If we once learn to live in idleness.",
+    "answer": "ἂν ἅπαξ μάθωμεν ἀργοὶ ζῆν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἂν",
+     "ἅπαξ",
+     "μάθωμεν",
+     "ἀργοὶ",
+     "ζῆν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.25"
+    }
+   },
+   {
+    "prompt": "For he did not stop coming after them.",
+    "answer": "οὐ γὰρ ἀνίει ἐπιών",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "γὰρ",
+     "ἀνίει",
+     "ἐπιών"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "4.125"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2123-verbs-taking-either-the-participle-or-q3",
+  "sectionId": "sm-2123-verbs-taking-either-the-participle-or",
+  "questions": [
+   {
+    "prompt": "They neglect to perform their duties.",
+    "answer": "μεθιᾶσι τὰ δέοντα πράττειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεθιᾶσι",
+     "τὰ",
+     "δέοντα",
+     "πράττειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.1.33"
+    }
+   },
+   {
+    "prompt": "Let in him be mindful to be a brave man.",
+    "answer": "μεμνήσθω ἀνὴρ ἀγαθὸς εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεμνήσθω",
+     "ἀνὴρ",
+     "ἀγαθὸς",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.39"
+    }
+   },
+   {
+    "prompt": "They stopped their terror at the number of ships.",
+    "answer": "ἔπαυσαν φοβουμένους πλῆθος νεῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπαυσαν",
+     "φοβουμένους",
+     "πλῆθος",
+     "νεῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Menexenus",
+     "locus": "241b"
+    }
+   },
+   {
+    "prompt": "Preventing the merchantman from drawing near.",
+    "answer": "παύσαντες τὸ μὴ προσελθεῖν ἐγγὺς τὴν ὁλκάδα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παύσαντες",
+     "τὸ",
+     "μὴ",
+     "προσελθεῖν",
+     "ἐγγὺς",
+     "τὴν",
+     "ὁλκάδα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.53"
+    }
+   }
+  ]
  }
 ]

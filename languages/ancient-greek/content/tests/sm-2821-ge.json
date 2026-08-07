@@ -1182,5 +1182,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2821-ge-q1",
+  "sectionId": "sm-2821-ge",
+  "questions": [
+   {
+    "prompt": "Either secretly or openly.",
+    "answer": "ἤτοι κρύφα γε ἢ φανερῶς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤτοι",
+     "κρύφα",
+     "γε",
+     "ἢ",
+     "φανερῶς"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.34"
+    }
+   },
+   {
+    "prompt": "Or wise or held in honour aye or old.",
+    "answer": "ἢ σοφοὶ ἢ τίμιοι ἢ γέροντές γε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἢ",
+     "σοφοὶ",
+     "ἢ",
+     "τίμιοι",
+     "ἢ",
+     "γέροντές",
+     "γε"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Hippias Major",
+     "locus": "301a"
+    }
+   },
+   {
+    "prompt": "You are talking absurdly in bidding me who am the younger take precedence.",
+    "answer": "ἄτοπα λέγεις . . . ὅς γε κελεύεις ἐμὲ νεώτερον ὄντα καθηγεῖσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄτοπα",
+     "λέγεις",
+     "ὅς",
+     "γε",
+     "κελεύεις",
+     "ἐμὲ",
+     "νεώτερον",
+     "ὄντα",
+     "καθηγεῖσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.3.15"
+    }
+   },
+   {
+    "prompt": "Yet the brave at least.",
+    "answer": "τούς γε μέντοι ἀγαθούς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "γε",
+     "μέντοι",
+     "ἀγαθούς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.9.14"
+    }
+   }
+  ]
  }
 ]

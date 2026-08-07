@@ -1179,5 +1179,65 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1444-genitive-of-time-and-place-q1",
+  "sectionId": "sm-1444-genitive-of-time-and-place",
+  "questions": [
+   {
+    "prompt": "He received a drachm a day.",
+    "answer": "δραχμὴν ἐλάμβανε τῆς ἡμέρας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δραχμὴν",
+     "ἐλάμβανε",
+     "τῆς",
+     "ἡμέρας"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.17"
+    }
+   },
+   {
+    "prompt": "For many years nobody has put a new question to me.",
+    "answer": "οὐδείς μέ πω ἠρώτηκε καινὸν οὐδὲν πολλῶν ἐτῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "μέ",
+     "πω",
+     "ἠρώτηκε",
+     "καινὸν",
+     "οὐδὲν",
+     "πολλῶν",
+     "ἐτῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "448a"
+    }
+   },
+   {
+    "prompt": "They hastened on their way those who came up more slowly.",
+    "answer": "ἐπετάχυνον τῆς ὁδοῦ τοὺς σχολαίτερον προσιόντας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπετάχυνον",
+     "τῆς",
+     "ὁδοῦ",
+     "τοὺς",
+     "σχολαίτερον",
+     "προσιόντας"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.47"
+    }
+   }
+  ]
  }
 ]

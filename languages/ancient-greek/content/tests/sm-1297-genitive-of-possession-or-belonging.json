@@ -1240,5 +1240,217 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1297-genitive-of-possession-or-belonging-q1",
+  "sectionId": "sm-1297-genitive-of-possession-or-belonging",
+  "questions": [
+   {
+    "prompt": "The chances of war are uncertain.",
+    "answer": "ἄδηλα τὰ τῶν πολέμων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄδηλα",
+     "τὰ",
+     "τῶν",
+     "πολέμων"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.11"
+    }
+   },
+   {
+    "prompt": "We elders.",
+    "answer": "τὸ τῶν πρεσβυτέρων ἡμῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τῶν",
+     "πρεσβυτέρων",
+     "ἡμῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "657d"
+    }
+   },
+   {
+    "prompt": "The city will belong to the Boeotians.",
+    "answer": "Βοιωτῶν ἡ πόλις ἔσται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Βοιωτῶν",
+     "ἡ",
+     "πόλις",
+     "ἔσται"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.58"
+    }
+   },
+   {
+    "prompt": "Zelea is in Asia.",
+    "answer": "ἡ Ζέλειά ἐστι τῆς Ἀσίας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "Ζέλειά",
+     "ἐστι",
+     "τῆς",
+     "Ἀσίας"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "9.43"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1297-genitive-of-possession-or-belonging-q2",
+  "sectionId": "sm-1297-genitive-of-possession-or-belonging",
+  "questions": [
+   {
+    "prompt": "Nor did they belong to the same Thrace.",
+    "answer": "οὐδὲ τῆς αὐτῆς Θρᾴκης ἐγένοντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "τῆς",
+     "αὐτῆς",
+     "Θρᾴκης",
+     "ἐγένοντο"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.29"
+    }
+   },
+   {
+    "prompt": "The clauses in the bill which he attacks, are these.",
+    "answer": "ἃ διώκει τοῦ ψηφίσματος, ταῦτ᾽ ἐστίν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "διώκει",
+     "τοῦ",
+     "ψηφίσματος",
+     "ταῦτ",
+     "ἐστίν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.56"
+    }
+   },
+   {
+    "prompt": "It is the custom of conquerors to keep what is their own and to take the possessions of the defeated.",
+    "answer": "τῶν νικώντων ἐστὶ καὶ τὰ ἑαυτῶν σῴζειν καὶ τὰ τῶν ἡττωμένων λαμβάνειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "νικώντων",
+     "ἐστὶ",
+     "καὶ",
+     "τὰ",
+     "ἑαυτῶν",
+     "σῴζειν",
+     "καὶ",
+     "τὰ",
+     "τῶν",
+     "ἡττωμένων",
+     "λαμβάνειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.39"
+    }
+   },
+   {
+    "prompt": "Assigned to the first class.",
+    "answer": "τῆς πρώτης τάξεως τεταγμένος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "πρώτης",
+     "τάξεως",
+     "τεταγμένος"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "14.11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1297-genitive-of-possession-or-belonging-q3",
+  "sectionId": "sm-1297-genitive-of-possession-or-belonging",
+  "questions": [
+   {
+    "prompt": "I reckon as belonging to the good fortune of the State.",
+    "answer": "τῆς ἀγαθῆς τύχης τῆς πόλεως εἶναι τίθημι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "ἀγαθῆς",
+     "τύχης",
+     "τῆς",
+     "πόλεως",
+     "εἶναι",
+     "τίθημι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.254"
+    }
+   },
+   {
+    "prompt": "But if some are claiming Asia as their own.",
+    "answer": "εἰ δέ τινες τὴν Ἀσίαν ἑαυτῶν ποιοῦνται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δέ",
+     "τινες",
+     "τὴν",
+     "Ἀσίαν",
+     "ἑαυτῶν",
+     "ποιοῦνται"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Agesilaus",
+     "locus": "1.33"
+    }
+   },
+   {
+    "prompt": "He thinks that you are in his power.",
+    "answer": "νομίζει ὑμᾶς ἑαυτοῦ εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζει",
+     "ὑμᾶς",
+     "ἑαυτοῦ",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.11"
+    }
+   }
+  ]
  }
 ]

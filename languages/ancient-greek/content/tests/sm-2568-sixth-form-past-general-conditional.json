@@ -383,5 +383,60 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2568-sixth-form-past-general-conditional-q1",
+  "sectionId": "sm-2568-sixth-form-past-general-conditional",
+  "questions": [
+   {
+    "prompt": "Whatever work he was engaged in, that he always performed.",
+    "answer": "εἴη ἔργῳ, τοῦτο ἔπραττεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴη",
+     "ἔργῳ",
+     "τοῦτο",
+     "ἔπραττεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.8.22"
+    }
+   },
+   {
+    "prompt": "They used to destroy as many as they captured.",
+    "answer": "πάντας . . . ὅσους λάβοιεν διέφθειρον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντας",
+     "ὅσους",
+     "λάβοιεν",
+     "διέφθειρον"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.67"
+    }
+   },
+   {
+    "prompt": "He used to hunt wherever they fell in with large game.",
+    "answer": "ἐθήρα ὅπου περ ἐπιτυγχάνοιεν θηρίοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθήρα",
+     "ὅπου",
+     "περ",
+     "ἐπιτυγχάνοιεν",
+     "θηρίοις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.3.5"
+    }
+   }
+  ]
  }
 ]

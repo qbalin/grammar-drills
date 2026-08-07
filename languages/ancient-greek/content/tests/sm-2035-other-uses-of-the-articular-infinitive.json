@@ -757,5 +757,100 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2035-other-uses-of-the-articular-infinitive-q1",
+  "sectionId": "sm-2035-other-uses-of-the-articular-infinitive",
+  "questions": [
+   {
+    "prompt": "Injustice is this: to seek to have more than other people.",
+    "answer": "τοῦτό ἐστι τὸ ἀδικεῖν, τὸ πλέον τῶν ἄλλων ζητεῖν ἔχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτό",
+     "ἐστι",
+     "τὸ",
+     "ἀδικεῖν",
+     "τὸ",
+     "πλέον",
+     "τῶν",
+     "ἄλλων",
+     "ζητεῖν",
+     "ἔχειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "483c"
+    }
+   },
+   {
+    "prompt": "Man differs herein from other creatures that he aspires after honour.",
+    "answer": "δοκεῖ τούτῳ διαφέρειν ἀνὴρ τῶν ἄλλων ζῴων, τῷ τιμῆς ὀρέγεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκεῖ",
+     "τούτῳ",
+     "διαφέρειν",
+     "ἀνὴρ",
+     "τῶν",
+     "ἄλλων",
+     "ζῴων",
+     "τῷ",
+     "τιμῆς",
+     "ὀρέγεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hiero",
+     "locus": "7.3"
+    }
+   },
+   {
+    "prompt": "My ill-luck! that I should happen now to have been summoned hither!",
+    "answer": "τῆς τύχης· τὸ ἐμὲ νῦν κληθέντα δεῦρο τυχεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "τύχης",
+     "τὸ",
+     "ἐμὲ",
+     "νῦν",
+     "κληθέντα",
+     "δεῦρο",
+     "τυχεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.2.3"
+    }
+   },
+   {
+    "prompt": "And in fact, since it is a serious business to provide for one's own necessities, it seems to me to be the part of an utter fool not to rest content with that, but in addition to take upon himself the burden of providing for the needs of the rest of the community.",
+    "answer": "μὴ ἀρκεῖν τοῦτο, ἀλλὰ προσαναθέσθαι τὸ καὶ τοῖς ἄλλοις πολίταις ὧν δέονται πορίζειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἀρκεῖν",
+     "τοῦτο",
+     "ἀλλὰ",
+     "προσαναθέσθαι",
+     "τὸ",
+     "καὶ",
+     "τοῖς",
+     "ἄλλοις",
+     "πολίταις",
+     "ὧν",
+     "δέονται",
+     "πορίζειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.1.8"
+    }
+   }
+  ]
  }
 ]

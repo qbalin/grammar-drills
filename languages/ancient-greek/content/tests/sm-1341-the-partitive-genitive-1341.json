@@ -1684,5 +1684,459 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1341-the-partitive-genitive-1341-q1",
+  "sectionId": "sm-1341-the-partitive-genitive-1341",
+  "questions": [
+   {
+    "prompt": "She had no share in war.",
+    "answer": "πολέμου οὐ μετῆν αὐτῇ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολέμου",
+     "οὐ",
+     "μετῆν",
+     "αὐτῇ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.2.28"
+    }
+   },
+   {
+    "prompt": "I have no part whatever in this affair.",
+    "answer": "ἐμοὶ οὐδαμόθεν προσήκει τούτου τοῦ πράγματος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμοὶ",
+     "οὐδαμόθεν",
+     "προσήκει",
+     "τούτου",
+     "τοῦ",
+     "πράγματος"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "4.34"
+    }
+   },
+   {
+    "prompt": "All took part in the festival.",
+    "answer": "πάντες μετεῖχον τῆς ἑορτῆς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "μετεῖχον",
+     "τῆς",
+     "ἑορτῆς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.3.9"
+    }
+   },
+   {
+    "prompt": "The human race has received a portion of immortality.",
+    "answer": "τὸ ἀνθρώπινον γένος μετείληφεν ἀθανασίας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἀνθρώπινον",
+     "γένος",
+     "μετείληφεν",
+     "ἀθανασίας"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "721b"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1341-the-partitive-genitive-1341-q2",
+  "sectionId": "sm-1341-the-partitive-genitive-1341",
+  "questions": [
+   {
+    "prompt": "You have no concern in righteous dealing.",
+    "answer": "δικαιοσύνης οὐδὲν ὑμῖν προσήκει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δικαιοσύνης",
+     "οὐδὲν",
+     "ὑμῖν",
+     "προσήκει"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "2.4.40"
+    }
+   },
+   {
+    "prompt": "A form of government in which the poor have no part in the management of affairs.",
+    "answer": "πολιτεία, ἐν ᾗ πένησιν οὐ μέτεστιν ἀρχῆς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολιτεία",
+     "ἐν",
+     "ᾗ",
+     "πένησιν",
+     "οὐ",
+     "μέτεστιν",
+     "ἀρχῆς"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "550c"
+    }
+   },
+   {
+    "prompt": "On the couch next to me.",
+    "answer": "ἐν τῇ ἐχομένῃ ἐμοῦ κλίνῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "ἐχομένῃ",
+     "ἐμοῦ",
+     "κλίνῃ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "217d"
+    }
+   },
+   {
+    "prompt": "They took hold of Orontas by the girdle.",
+    "answer": "ἔλαβον τῆς ζώνης τὸν Ὀρόνταν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλαβον",
+     "τῆς",
+     "ζώνης",
+     "τὸν",
+     "Ὀρόνταν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.6.10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1341-the-partitive-genitive-1341-q3",
+  "sectionId": "sm-1341-the-partitive-genitive-1341",
+  "questions": [
+   {
+    "prompt": "Taking me by the hand.",
+    "answer": "μοῦ λαβόμενος τῆς χειρός",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μοῦ",
+     "λαβόμενος",
+     "τῆς",
+     "χειρός"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Charmides",
+     "locus": "153b"
+    }
+   },
+   {
+    "prompt": "To lead the horse by the bridle.",
+    "answer": "ἄγειν τῆς ἡνίας τὸν ἵππον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγειν",
+     "τῆς",
+     "ἡνίας",
+     "τὸν",
+     "ἵππον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "On Horsemanship",
+     "locus": "6.9"
+    }
+   },
+   {
+    "prompt": "He said that Cyrus began the discussion as follows.",
+    "answer": "ἔφη Κῦρον ἄρχειν τοῦ λόγου ὧδε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "Κῦρον",
+     "ἄρχειν",
+     "τοῦ",
+     "λόγου",
+     "ὧδε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.6.5"
+    }
+   },
+   {
+    "prompt": "I will make a beginning by speaking of medicine.",
+    "answer": "ἄρξομαι ἀπὸ τῆς ἰατρικῆς λέγων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄρξομαι",
+     "ἀπὸ",
+     "τῆς",
+     "ἰατρικῆς",
+     "λέγων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "186b"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1341-the-partitive-genitive-1341-q4",
+  "sectionId": "sm-1341-the-partitive-genitive-1341",
+  "questions": [
+   {
+    "prompt": "All men desire what is good.",
+    "answer": "πάντες τῶν ἀγαθῶν ἐπιθυμοῦσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "τῶν",
+     "ἀγαθῶν",
+     "ἐπιθυμοῦσιν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "438a"
+    }
+   },
+   {
+    "prompt": "The passionate love of what is noble.",
+    "answer": "τὸ ἐρᾶν τῶν καλῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἐρᾶν",
+     "τῶν",
+     "καλῶν"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "1.137"
+    }
+   },
+   {
+    "prompt": "The javelin-throwers did not hurl far enough to reach the slingers.",
+    "answer": "οἱ ἀκοντισταὶ βραχύτερα ἠκόντιζον ἢ ὡς ἐξικνεῖσθαι τῶν σφενδονητῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἀκοντισταὶ",
+     "βραχύτερα",
+     "ἠκόντιζον",
+     "ἢ",
+     "ὡς",
+     "ἐξικνεῖσθαι",
+     "τῶν",
+     "σφενδονητῶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.3.7"
+    }
+   },
+   {
+    "prompt": "In a case where we expect to win praise from all men.",
+    "answer": "οὗ δὲ δὴ πάντων οἰόμεθα τεύξεσθαι ἐπαίνου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗ",
+     "δὲ",
+     "δὴ",
+     "πάντων",
+     "οἰόμεθα",
+     "τεύξεσθαι",
+     "ἐπαίνου"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.7.33"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1341-the-partitive-genitive-1341-q5",
+  "sectionId": "sm-1341-the-partitive-genitive-1341",
+  "questions": [
+   {
+    "prompt": "We enjoy all the good things.",
+    "answer": "ἀπολαύομεν πάντων τῶν ἀγαθῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπολαύομεν",
+     "πάντων",
+     "τῶν",
+     "ἀγαθῶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.3.11"
+    }
+   },
+   {
+    "prompt": "Remember your absent friends.",
+    "answer": "τῶν ἀπόντων φίλων μέμνησο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἀπόντων",
+     "φίλων",
+     "μέμνησο"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "1.26"
+    }
+   },
+   {
+    "prompt": "I desire to remind you of my past actions.",
+    "answer": "βούλομαι δ᾽ ὑμᾶς ἀναμνῆσαι τῶν ἐμοὶ πεπραγμένων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βούλομαι",
+     "δ",
+     "ὑμᾶς",
+     "ἀναμνῆσαι",
+     "τῶν",
+     "ἐμοὶ",
+     "πεπραγμένων"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "4.41"
+    }
+   },
+   {
+    "prompt": "I fear lest we may forget the way home.",
+    "answer": "δέδοικα μὴ ἐπιλαθώμεθα τῆς οἴκαδε ὁδοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μὴ",
+     "ἐπιλαθώμεθα",
+     "τῆς",
+     "οἴκαδε",
+     "ὁδοῦ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.25"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1341-the-partitive-genitive-1341-q6",
+  "sectionId": "sm-1341-the-partitive-genitive-1341",
+  "questions": [
+   {
+    "prompt": "We must pay heed to the world's opinion.",
+    "answer": "τῆς τῶν πολλῶν δόξης δεῖ ἡμᾶς φροντίζειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "τῶν",
+     "πολλῶν",
+     "δόξης",
+     "δεῖ",
+     "ἡμᾶς",
+     "φροντίζειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Crito",
+     "locus": "48a"
+    }
+   },
+   {
+    "prompt": "The serious cannot disregard virtue.",
+    "answer": "τοῖς σπουδαίοις οὐχ οἷόν τε τῆς ἀρετῆς ἀμελεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "σπουδαίοις",
+     "οὐχ",
+     "οἷόν",
+     "τε",
+     "τῆς",
+     "ἀρετῆς",
+     "ἀμελεῖν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "1.48"
+    }
+   },
+   {
+    "prompt": "When one understands what is said.",
+    "answer": "ἐπειδὰν συνιῇ τις τὰ λεγόμενα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "συνιῇ",
+     "τις",
+     "τὰ",
+     "λεγόμενα"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "325c"
+    }
+   },
+   {
+    "prompt": "The young men will listen when I speak.",
+    "answer": "λέγοντος ἐμοῦ ἀκροάσονται οἱ νέοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγοντος",
+     "ἐμοῦ",
+     "ἀκροάσονται",
+     "οἱ",
+     "νέοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "37d"
+    }
+   }
+  ]
  }
 ]

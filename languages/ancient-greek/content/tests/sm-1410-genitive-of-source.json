@@ -594,5 +594,80 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1410-genitive-of-source-q1",
+  "sectionId": "sm-1410-genitive-of-source",
+  "questions": [
+   {
+    "prompt": "Learn this also from me.",
+    "answer": "μάθε μου καὶ τάδε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μάθε",
+     "μου",
+     "καὶ",
+     "τάδε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.6.44"
+    }
+   },
+   {
+    "prompt": "From me you shall hear the whole truth.",
+    "answer": "ἐμοῦ ἀκούσεσθε πᾶσαν τὴν ἀλήθειαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμοῦ",
+     "ἀκούσεσθε",
+     "πᾶσαν",
+     "τὴν",
+     "ἀλήθειαν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "17b"
+    }
+   },
+   {
+    "prompt": "I learn from these men that the mountain is not impassable.",
+    "answer": "τούτων πυνθάνομαι ὅτι οὐκ ἄβατόν ἐστι τὸ ὄρος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτων",
+     "πυνθάνομαι",
+     "ὅτι",
+     "οὐκ",
+     "ἄβατόν",
+     "ἐστι",
+     "τὸ",
+     "ὄρος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.6.17"
+    }
+   },
+   {
+    "prompt": "Of such ancestors are you.",
+    "answer": "τοιούτων μέν ἐστε προγόνων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιούτων",
+     "μέν",
+     "ἐστε",
+     "προγόνων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.13"
+    }
+   }
+  ]
  }
 ]

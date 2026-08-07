@@ -768,5 +768,67 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1580-accusative-of-extent-q1",
+  "sectionId": "sm-1580-accusative-of-extent",
+  "questions": [
+   {
+    "prompt": "My mother who died two years ago.",
+    "answer": "τὴν μητέρα τελευτήσασαν τρίτον ἔτος τουτί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "μητέρα",
+     "τελευτήσασαν",
+     "τρίτον",
+     "ἔτος",
+     "τουτί"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "24.6"
+    }
+   },
+   {
+    "prompt": "He has been in the city since day before yesterday.",
+    "answer": "ἐπιδεδήμηκε τρίτην ἤδη ἡμέραν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπιδεδήμηκε",
+     "τρίτην",
+     "ἤδη",
+     "ἡμέραν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "309d"
+    }
+   },
+   {
+    "prompt": "This is the third or fourth year since it was announced that Philip was besieging fort Heraeum.",
+    "answer": "ἀπηγγέλθη Φίλιππος τρίτον ἢ τέταρτον ἔτος τουτὶ Ἡραῖον τεῖχος πολιορκῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπηγγέλθη",
+     "Φίλιππος",
+     "τρίτον",
+     "ἢ",
+     "τέταρτον",
+     "ἔτος",
+     "τουτὶ",
+     "Ἡραῖον",
+     "τεῖχος",
+     "πολιορκῶν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "3.4"
+    }
+   }
+  ]
  }
 ]

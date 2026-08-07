@@ -1771,5 +1771,96 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-3018-some-grammatical-and-rhetorical-figures-q1",
+  "sectionId": "sm-3018-some-grammatical-and-rhetorical-figures",
+  "questions": [
+   {
+    "prompt": "If a person shall not kill with his own hand, but if some one shall suggest murder to another.",
+    "answer": "βουλεύσῃ δὲ θάνατόν τις ἄλλος ἑτέρῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλεύσῃ",
+     "δὲ",
+     "θάνατόν",
+     "τις",
+     "ἄλλος",
+     "ἑτέρῳ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "872a"
+    }
+   },
+   {
+    "prompt": "And I approve also this custom that no one of the other Persians shall do irremediable hurt to any one of his own servants.",
+    "answer": "ἑωυτοῦ οἰκετέων . . . ἀνήκεστον πάθος ἔρδειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑωυτοῦ",
+     "οἰκετέων",
+     "ἀνήκεστον",
+     "πάθος",
+     "ἔρδειν"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "1.137"
+    }
+   },
+   {
+    "prompt": "To be a slave and be ruled . . . to rule and be a master.",
+    "answer": "δουλεύειν καὶ ἄρχεσθαι . . . ἄρχειν καὶ δεσπόζειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δουλεύειν",
+     "καὶ",
+     "ἄρχεσθαι",
+     "ἄρχειν",
+     "καὶ",
+     "δεσπόζειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "80a"
+    }
+   },
+   {
+    "prompt": "I did not utter these words without proposing a motion; nor did I propose a motion without becoming ambassador; nor did I become ambassador without convincing the Thebans.",
+    "answer": "οὐκ εἶπον μὲν ταῦτα, οὐκ ἔγραψα δέ, οὐδ᾽ ἔγραψα μέν, οὐκ ἐπρέσβευσα δέ, οὐδ᾽ ἐπρέσβευσα μέν, οὐκ ἔπεισα δὲ Θηβαίους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "εἶπον",
+     "μὲν",
+     "ταῦτα",
+     "οὐκ",
+     "ἔγραψα",
+     "δέ",
+     "οὐδ",
+     "ἔγραψα",
+     "μέν",
+     "οὐκ",
+     "ἐπρέσβευσα",
+     "δέ",
+     "οὐδ",
+     "ἐπρέσβευσα",
+     "μέν",
+     "οὐκ",
+     "ἔπεισα",
+     "δὲ",
+     "Θηβαίους"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.179"
+    }
+   }
+  ]
  }
 ]

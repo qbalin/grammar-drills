@@ -1634,5 +1634,233 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1474-dative-of-interest-q1",
+  "sectionId": "sm-1474-dative-of-interest",
+  "questions": [
+   {
+    "prompt": "Gifts are bestowed upon the just man by the gods.",
+    "answer": "τῷ δικαίῳ παρὰ θεῶν δῶρα γίγνεται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "δικαίῳ",
+     "παρὰ",
+     "θεῶν",
+     "δῶρα",
+     "γίγνεται"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "613e"
+    }
+   },
+   {
+    "prompt": "We have no supply of provisions.",
+    "answer": "ὑπάρχει ἡμῖν οὐδὲν τῶν ἐπιτηδείων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπάρχει",
+     "ἡμῖν",
+     "οὐδὲν",
+     "τῶν",
+     "ἐπιτηδείων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.2.11"
+    }
+   },
+   {
+    "prompt": "The enemy are most courageous when they learn that the forces opposed to them are in trouble.",
+    "answer": "θαρροῦσι μάλιστα πολέμιοι, ὅταν τοῖς ἐναντίοις πράγματα πυνθάνωνται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαρροῦσι",
+     "μάλιστα",
+     "πολέμιοι",
+     "ὅταν",
+     "τοῖς",
+     "ἐναντίοις",
+     "πράγματα",
+     "πυνθάνωνται"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "The Cavalry Commander",
+     "locus": "5.8"
+    }
+   },
+   {
+    "prompt": "I thought I heard his name was Agathon.",
+    "answer": "ἔδοξα ἀκοῦσαι ὄνομα αὐτῷ εἶναι Ἀγάθωνα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξα",
+     "ἀκοῦσαι",
+     "ὄνομα",
+     "αὐτῷ",
+     "εἶναι",
+     "Ἀγάθωνα"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "315e"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1474-dative-of-interest-q2",
+  "sectionId": "sm-1474-dative-of-interest",
+  "questions": [
+   {
+    "prompt": "Another army was being raised for him.",
+    "answer": "ἄλλο στράτευμα αὐτῷ συνελέγετο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄλλο",
+     "στράτευμα",
+     "αὐτῷ",
+     "συνελέγετο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.1.9"
+    }
+   },
+   {
+    "prompt": "If any of your slaves runs away.",
+    "answer": "ἄν τίς σοι τῶν οἰκετῶν ἀποδρᾷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄν",
+     "τίς",
+     "σοι",
+     "τῶν",
+     "οἰκετῶν",
+     "ἀποδρᾷ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.10.1"
+    }
+   },
+   {
+    "prompt": "Pray remember not to make a disturbance.",
+    "answer": "μέμνησθέ μοι μὴ θορυβεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνησθέ",
+     "μοι",
+     "μὴ",
+     "θορυβεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "27b"
+    }
+   },
+   {
+    "prompt": "Your young men will grow less cultivated.",
+    "answer": "ἀμουσότεροι γενήσονται ὑμῖν οἱ νέοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀμουσότεροι",
+     "γενήσονται",
+     "ὑμῖν",
+     "οἱ",
+     "νέοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "546d"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1474-dative-of-interest-q3",
+  "sectionId": "sm-1474-dative-of-interest",
+  "questions": [
+   {
+    "prompt": "Such a thing, you know, is despotism.",
+    "answer": "τοιοῦτο ὑμῖν ἐστι ἡ τυραννίς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιοῦτο",
+     "ὑμῖν",
+     "ἐστι",
+     "ἡ",
+     "τυραννίς"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "5.92"
+    }
+   },
+   {
+    "prompt": "Oh mother, how handsome grandpa is.",
+    "answer": "ὦ μῆτερ, ὡς καλός μοι ὁ πάππος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "μῆτερ",
+     "ὡς",
+     "καλός",
+     "μοι",
+     "ὁ",
+     "πάππος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.3.2"
+    }
+   },
+   {
+    "prompt": "Let us go back if it is your pleasure to do so.",
+    "answer": "ἐπανέλθωμεν, εἴ σοι ἡδομένῳ ἐστίν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπανέλθωμεν",
+     "εἴ",
+     "σοι",
+     "ἡδομένῳ",
+     "ἐστίν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "78b"
+    }
+   },
+   {
+    "prompt": "If I have come against your will.",
+    "answer": "εἰ μὴ ἀσμένοις ὑμῖν ἀφῖγμαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὴ",
+     "ἀσμένοις",
+     "ὑμῖν",
+     "ἀφῖγμαι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.85"
+    }
+   }
+  ]
  }
 ]

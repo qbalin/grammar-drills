@@ -1515,5 +1515,87 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1910-future-indicative-q1",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "That I never will do.",
+    "answer": "οὐ δὴ ποιήσω τοῦτο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δὴ",
+     "ποιήσω",
+     "τοῦτο"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.11"
+    }
+   },
+   {
+    "prompt": "The Senate is about to choose some one to speak over the dead.",
+    "answer": "ἡ βουλὴ μέλλει αἱρεῖσθαι ὅστις ἐρεῖ ἐπὶ τοῖς ἀποθανοῦσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βουλὴ",
+     "μέλλει",
+     "αἱρεῖσθαι",
+     "ὅστις",
+     "ἐρεῖ",
+     "ἐπὶ",
+     "τοῖς",
+     "ἀποθανοῦσι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Menexenus",
+     "locus": "234b"
+    }
+   },
+   {
+    "prompt": "We shall find that ambitious men choose a glorious death in preference to life.",
+    "answer": "εὑρήσομεν τοὺς φιλοτίμους τῶν ἀνδρῶν . . . ἀντὶ τοῦ ζῆν ἀποθνῄσκειν εὐκλεῶς αἱρουμένους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὑρήσομεν",
+     "τοὺς",
+     "φιλοτίμους",
+     "τῶν",
+     "ἀνδρῶν",
+     "ἀντὶ",
+     "τοῦ",
+     "ζῆν",
+     "ἀποθνῄσκειν",
+     "εὐκλεῶς",
+     "αἱρουμένους"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "9.3"
+    }
+   },
+   {
+    "prompt": "You will have to hurry on the march.",
+    "answer": "σπουδὴ ἔσται τῆς ὁδοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σπουδὴ",
+     "ἔσται",
+     "τῆς",
+     "ὁδοῦ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.77"
+    }
+   }
+  ]
  }
 ]

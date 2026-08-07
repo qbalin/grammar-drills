@@ -1137,5 +1137,156 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2149-verbal-adjectives-in-teos-q1",
+  "sectionId": "sm-2149-verbal-adjectives-in-teos",
+  "questions": [
+   {
+    "prompt": "Concerning what need be done by us.",
+    "answer": "περὶ τῶν ὑμῖν πρακτέων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "τῶν",
+     "ὑμῖν",
+     "πρακτέων"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "6.28"
+    }
+   },
+   {
+    "prompt": "A river must be crossed by us.",
+    "answer": "ποταμός τις ἡμῖν ἐστι διαβατέος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποταμός",
+     "τις",
+     "ἡμῖν",
+     "ἐστι",
+     "διαβατέος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.4.6"
+    }
+   },
+   {
+    "prompt": "The State must be benefited by you.",
+    "answer": "ὠφελητέα σοι ἡ πόλις ἐστί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὠφελητέα",
+     "σοι",
+     "ἡ",
+     "πόλις",
+     "ἐστί"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.6.3"
+    }
+   },
+   {
+    "prompt": "Those who would be allies must be well treated.",
+    "answer": "οἱ συμμαχεῖν ἐθέλοντες εὖ ποιητέοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "συμμαχεῖν",
+     "ἐθέλοντες",
+     "εὖ",
+     "ποιητέοι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.6.27"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2149-verbal-adjectives-in-teos-q2",
+  "sectionId": "sm-2149-verbal-adjectives-in-teos",
+  "questions": [
+   {
+    "prompt": "The wrong-doer must suffer punishment.",
+    "answer": "τῷ ἀδικοῦντι δοτέον δίκην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "ἀδικοῦντι",
+     "δοτέον",
+     "δίκην"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthyphro",
+     "locus": "8c"
+    }
+   },
+   {
+    "prompt": "We must give and receive pledges and hostages.",
+    "answer": "πιστὰ καὶ ὁμήρους δοτέον καὶ ληπτέον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστὰ",
+     "καὶ",
+     "ὁμήρους",
+     "δοτέον",
+     "καὶ",
+     "ληπτέον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "3.2.18"
+    }
+   },
+   {
+    "prompt": "We must prefer death with honour.",
+    "answer": "τὸν θάνατον ἡμῖν μετ᾽ εὐδοξίας αἱρετέον ἐστίν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "θάνατον",
+     "ἡμῖν",
+     "μετ",
+     "εὐδοξίας",
+     "αἱρετέον",
+     "ἐστίν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "6.91"
+    }
+   },
+   {
+    "prompt": "I say that you must render assistance to the interests at stake.",
+    "answer": "φημὶ δὴ βοηθητέον εἶναι τοῖς πράγμασιν ὑμῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φημὶ",
+     "δὴ",
+     "βοηθητέον",
+     "εἶναι",
+     "τοῖς",
+     "πράγμασιν",
+     "ὑμῖν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "1.17"
+    }
+   }
+  ]
  }
 ]

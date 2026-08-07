@@ -1412,5 +1412,82 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1770-indicative-without-an-q1",
+  "sectionId": "sm-1770-indicative-without-an",
+  "questions": [
+   {
+    "prompt": "But perhaps we did not do well in agreeing to this.",
+    "answer": "ἀλλὰ μὴ τοῦτο οὐ καλῶς ὡμολογήσαμεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴ",
+     "τοῦτο",
+     "οὐ",
+     "καλῶς",
+     "ὡμολογήσαμεν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Meno",
+     "locus": "89c"
+    }
+   },
+   {
+    "prompt": "A little more and they would have taken the city.",
+    "answer": "ὀλίγου εἷλον τὴν πόλιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀλίγου",
+     "εἷλον",
+     "τὴν",
+     "πόλιν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.35"
+    }
+   },
+   {
+    "prompt": "You should not be slack in your alliance, as you are at present.",
+    "answer": "εἰκὸς ἦν ὑμᾶς . . . μὴ μαλακῶς, ὥσπερ νῦν, ξυμμαχεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰκὸς",
+     "ἦν",
+     "ὑμᾶς",
+     "μὴ",
+     "μαλακῶς",
+     "ὥσπερ",
+     "νῦν",
+     "ξυμμαχεῖν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.78"
+    }
+   },
+   {
+    "prompt": "I ought to have taken the pledges then.",
+    "answer": "ἔδει τὰ ἐνέχυρα τότε λαβεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδει",
+     "τὰ",
+     "ἐνέχυρα",
+     "τότε",
+     "λαβεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.6.23"
+    }
+   }
+  ]
  }
 ]

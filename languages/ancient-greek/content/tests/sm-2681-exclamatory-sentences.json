@@ -1384,5 +1384,169 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2681-exclamatory-sentences-q1",
+  "sectionId": "sm-2681-exclamatory-sentences",
+  "questions": [
+   {
+    "prompt": "What are you about, my friend!",
+    "answer": "οἷα ποιεῖς, ὦ ἑταῖρε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἷα",
+     "ποιεῖς",
+     "ὦ",
+     "ἑταῖρε"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthyphro",
+     "locus": "15c"
+    }
+   },
+   {
+    "prompt": "How charming the man is!",
+    "answer": "ὡς ἀστεῖος ὁ ἄνθρωπος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἀστεῖος",
+     "ὁ",
+     "ἄνθρωπος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "116d"
+    }
+   },
+   {
+    "prompt": "What a noble man you say is in danger!",
+    "answer": "οἷον ἄνδρα λέγεις ἐν κινδύνῳ εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἷον",
+     "ἄνδρα",
+     "λέγεις",
+     "ἐν",
+     "κινδύνῳ",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Theaetetus",
+     "locus": "142b"
+    }
+   },
+   {
+    "prompt": "Reflecting on how long a voyage they were on the point of being sent.",
+    "answer": "ἐνθυμούμενοι ὅσον πλοῦν . . . ἀπεστέλλοντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνθυμούμενοι",
+     "ὅσον",
+     "πλοῦν",
+     "ἀπεστέλλοντο"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2681-exclamatory-sentences-q2",
+  "sectionId": "sm-2681-exclamatory-sentences",
+  "questions": [
+   {
+    "prompt": "Reflecting what they were suffering at the hands of the Assyrians and that their ruler was now dead.",
+    "answer": "ἐννοηθέντες οἷά τε πάσχουσιν ὑπὸ τῶν Ἀσσυρίων καὶ ὅτι νῦν τεθναίη ὁ ἄρχων αὐτῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐννοηθέντες",
+     "οἷά",
+     "τε",
+     "πάσχουσιν",
+     "ὑπὸ",
+     "τῶν",
+     "Ἀσσυρίων",
+     "καὶ",
+     "ὅτι",
+     "νῦν",
+     "τεθναίη",
+     "ὁ",
+     "ἄρχων",
+     "αὐτῶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.2.3"
+    }
+   },
+   {
+    "prompt": "Observing how great the extent of their country was and how excellent its quality.",
+    "answer": "διαθεώμενος αὐτῶν ὅσην μὲν χώραν καὶ οἵαν ἔχοιεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαθεώμενος",
+     "αὐτῶν",
+     "ὅσην",
+     "μὲν",
+     "χώραν",
+     "καὶ",
+     "οἵαν",
+     "ἔχοιεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.19"
+    }
+   },
+   {
+    "prompt": "They rehearse how many evils old age occasions them.",
+    "answer": "τὸ γῆρας ὑμνοῦσιν ὅσων κακῶν σφίσιν αἴτιον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "γῆρας",
+     "ὑμνοῦσιν",
+     "ὅσων",
+     "κακῶν",
+     "σφίσιν",
+     "αἴτιον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "329b"
+    }
+   },
+   {
+    "prompt": "The man seemed to me to be happy so fearlessly and nobly did he die.",
+    "answer": "εὐδαίμων μοι ἁνὴρ ἐφαίνετο . . . ὡς ἀδεῶς καὶ γενναίως ἐτελεύτα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐδαίμων",
+     "μοι",
+     "ἁνὴρ",
+     "ἐφαίνετο",
+     "ὡς",
+     "ἀδεῶς",
+     "καὶ",
+     "γενναίως",
+     "ἐτελεύτα"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "58e"
+    }
+   }
+  ]
  }
 ]

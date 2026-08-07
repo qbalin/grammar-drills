@@ -868,5 +868,92 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2675-indirect-alternative-questions-q1",
+  "sectionId": "sm-2675-indirect-alternative-questions",
+  "questions": [
+   {
+    "prompt": "She asked Cyrus whether he wanted to stay or go away.",
+    "answer": "διηρώτα τὸν Κῦρον πότερον βούλοιτο μένειν ἢ ἀπιέναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διηρώτα",
+     "τὸν",
+     "Κῦρον",
+     "πότερον",
+     "βούλοιτο",
+     "μένειν",
+     "ἢ",
+     "ἀπιέναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.3.15"
+    }
+   },
+   {
+    "prompt": "I wonder whether the king asks for our arms as a conqueror or as gifts on the plea of friendship.",
+    "answer": "θαυμάζω πότερα ὡς κρατῶν βασιλεὺς αἰτεῖ τὰ ὅπλα ἢ ὡς διὰ φιλίαν δῶρα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "πότερα",
+     "ὡς",
+     "κρατῶν",
+     "βασιλεὺς",
+     "αἰτεῖ",
+     "τὰ",
+     "ὅπλα",
+     "ἢ",
+     "ὡς",
+     "διὰ",
+     "φιλίαν",
+     "δῶρα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.10"
+    }
+   },
+   {
+    "prompt": "Let us make the inquiry whether it produces benefit or injury.",
+    "answer": "τὴν σκέψιν ποιώμεθα εἴτε ὠφελίαν εἴτε βλάβην παρέχει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "σκέψιν",
+     "ποιώμεθα",
+     "εἴτε",
+     "ὠφελίαν",
+     "εἴτε",
+     "βλάβην",
+     "παρέχει"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedrus",
+     "locus": "237d"
+    }
+   },
+   {
+    "prompt": "A State or certain individuals.",
+    "answer": "πόλις εἴτε ἰδιῶταί τινες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόλις",
+     "εἴτε",
+     "ἰδιῶταί",
+     "τινες"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "864a"
+    }
+   }
+  ]
  }
 ]

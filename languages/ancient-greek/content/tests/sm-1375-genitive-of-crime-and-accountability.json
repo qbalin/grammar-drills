@@ -813,5 +813,159 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1375-genitive-of-crime-and-accountability-q1",
+  "sectionId": "sm-1375-genitive-of-crime-and-accountability",
+  "questions": [
+   {
+    "prompt": "To accuse one another of what had happened.",
+    "answer": "αἰτιᾶσθαι ἀλλήλους τοῦ γεγενημένου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰτιᾶσθαι",
+     "ἀλλήλους",
+     "τοῦ",
+     "γεγενημένου"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Agesilaus",
+     "locus": "1.33"
+    }
+   },
+   {
+    "prompt": "I bring an accusation for defamation and at the same trial am prosecuted for murder.",
+    "answer": "διώκω μὲν κακηγορίας, τῇ δ᾽ αὐτῇ ψήφῳ φόνου φεύγω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διώκω",
+     "μὲν",
+     "κακηγορίας",
+     "τῇ",
+     "δ",
+     "αὐτῇ",
+     "ψήφῳ",
+     "φόνου",
+     "φεύγω"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "11.12"
+    }
+   },
+   {
+    "prompt": "Meletus prosecuted me for impiety.",
+    "answer": "ἐμὲ ὁ Μέλητος ἀσεβείας ἐγράψατο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμὲ",
+     "ὁ",
+     "Μέλητος",
+     "ἀσεβείας",
+     "ἐγράψατο"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthyphro",
+     "locus": "5c"
+    }
+   },
+   {
+    "prompt": "He will be brought to trial on an indictment for outrage and on a civil action for slander.",
+    "answer": "γραφὴν ὕβρεως καὶ δίκην κακηγορίας φεύξεται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γραφὴν",
+     "ὕβρεως",
+     "καὶ",
+     "δίκην",
+     "κακηγορίας",
+     "φεύξεται"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1375-genitive-of-crime-and-accountability-q2",
+  "sectionId": "sm-1375-genitive-of-crime-and-accountability",
+  "questions": [
+   {
+    "prompt": "If any one be condemned for theft . . . and if any one be convicted of desertion.",
+    "answer": "ἐάν τις ἁλῷ κλοπῆς . . . κἂν ἀστρατείας τις ὄφλῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "ἁλῷ",
+     "κλοπῆς",
+     "κἂν",
+     "ἀστρατείας",
+     "τις",
+     "ὄφλῃ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "24.103"
+    }
+   },
+   {
+    "prompt": "Being tried for impiety on the indictment of Meletus.",
+    "answer": "ἀσεβείας φεύγοντα ὑπὸ Μελήτου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀσεβείας",
+     "φεύγοντα",
+     "ὑπὸ",
+     "Μελήτου"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "35d"
+    }
+   },
+   {
+    "prompt": "All who had been convicted of embezzlement or bribery.",
+    "answer": "ὁπόσοι κλοπῆς ἢ δώρων ὄφλοιεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόσοι",
+     "κλοπῆς",
+     "ἢ",
+     "δώρων",
+     "ὄφλοιεν"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "1.74"
+    }
+   },
+   {
+    "prompt": "Condemned by the truth to suffer the penalty of wickedness.",
+    "answer": "ὑπὸ τῆς ἀληθείας ὠφληκότες μοχθηρίαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῆς",
+     "ἀληθείας",
+     "ὠφληκότες",
+     "μοχθηρίαν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "39b"
+    }
+   }
+  ]
  }
 ]

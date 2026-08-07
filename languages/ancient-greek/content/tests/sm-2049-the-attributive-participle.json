@@ -1118,5 +1118,135 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2049-the-attributive-participle-q1",
+  "sectionId": "sm-2049-the-attributive-participle",
+  "questions": [
+   {
+    "prompt": "The mountain called Cotylaeum.",
+    "answer": "τὸ Κοτύλαιον ὀνομαζόμενον ὄρος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "Κοτύλαιον",
+     "ὀνομαζόμενον",
+     "ὄρος"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.86"
+    }
+   },
+   {
+    "prompt": "The so-called islands of Aeolus.",
+    "answer": "αἱ Αἰόλου νῆσοι καλούμεναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "Αἰόλου",
+     "νῆσοι",
+     "καλούμεναι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.88"
+    }
+   },
+   {
+    "prompt": "Whoever wants to go home.",
+    "answer": "ὁ οἴκαδε βουλόμενος ἀπιέναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "οἴκαδε",
+     "βουλόμενος",
+     "ἀπιέναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.7.4"
+    }
+   },
+   {
+    "prompt": "The one who gave this opinion.",
+    "answer": "ὁ τὴν γνώμην ταύτην εἰπών",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τὴν",
+     "γνώμην",
+     "ταύτην",
+     "εἰπών"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.68"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2049-the-attributive-participle-q2",
+  "sectionId": "sm-2049-the-attributive-participle",
+  "questions": [
+   {
+    "prompt": "The petty interests of the State.",
+    "answer": "τὰ μικρὰ συμφέροντα τῆς πόλεως",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "μικρὰ",
+     "συμφέροντα",
+     "τῆς",
+     "πόλεως"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.28"
+    }
+   },
+   {
+    "prompt": "The ravaging of the country grieved him.",
+    "answer": "ἐλύπει αὐτὸν ἡ χώρα πορθουμένη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλύπει",
+     "αὐτὸν",
+     "ἡ",
+     "χώρα",
+     "πορθουμένη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.7.12"
+    }
+   },
+   {
+    "prompt": "His wrath will disappear with the cessation of his fear.",
+    "answer": "ἡ ὀργὴ σὺν τῷ φόβῳ λήγοντι ἄπεισι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ὀργὴ",
+     "σὺν",
+     "τῷ",
+     "φόβῳ",
+     "λήγοντι",
+     "ἄπεισι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.5.21"
+    }
+   }
+  ]
  }
 ]

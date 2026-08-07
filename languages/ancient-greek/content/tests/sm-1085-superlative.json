@@ -1067,5 +1067,86 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1085-superlative-q1",
+  "sectionId": "sm-1085-superlative",
+  "questions": [
+   {
+    "prompt": "For me to become as good as may be.",
+    "answer": "ὡς ὅτι βέλτιστον ἐμέ γενέσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ὅτι",
+     "βέλτιστον",
+     "ἐμέ",
+     "γενέσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "218d"
+    }
+   },
+   {
+    "prompt": "I will relate to you in the briefest terms I can.",
+    "answer": "διηγήσομαι ὑμῖν ὡς ἂν δύνωμαι διὰ βραχυτάτων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διηγήσομαι",
+     "ὑμῖν",
+     "ὡς",
+     "ἂν",
+     "δύνωμαι",
+     "διὰ",
+     "βραχυτάτων"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "21.2"
+    }
+   },
+   {
+    "prompt": "Observing that affairs are not in the very best state in the city.",
+    "answer": "ὁρῶντες τὰ πράγματα οὐχ οἷα βέλτιστα ἐν τῇ πόλει ὄντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶντες",
+     "τὰ",
+     "πράγματα",
+     "οὐχ",
+     "οἷα",
+     "βέλτιστα",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ὄντα"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "13.23"
+    }
+   },
+   {
+    "prompt": "I brought the very largest number of allies I could.",
+    "answer": "ἤγαγον συμμάχους ὁπόσους πλείστους ἐδυνάμην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤγαγον",
+     "συμμάχους",
+     "ὁπόσους",
+     "πλείστους",
+     "ἐδυνάμην"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.5.29"
+    }
+   }
+  ]
  }
 ]

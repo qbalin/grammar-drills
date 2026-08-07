@@ -388,5 +388,73 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2539-other-peculiarities-of-relative-clauses-q1",
+  "sectionId": "sm-2539-other-peculiarities-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "If you understand the class I wish to describe.",
+    "answer": "εἰ μανθάνεις ὃ βούλομαι λέγειν τὸ εἶδος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μανθάνεις",
+     "ὃ",
+     "βούλομαι",
+     "λέγειν",
+     "τὸ",
+     "εἶδος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "477c"
+    }
+   },
+   {
+    "prompt": "I am not subject to the laws in virtue of which I was arrested.",
+    "answer": "καθ᾽ οὓς μὲν ἀπήχθην, οὐκ ἔνοχός εἰμι τοῖς νόμοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καθ",
+     "οὓς",
+     "μὲν",
+     "ἀπήχθην",
+     "οὐκ",
+     "ἔνοχός",
+     "εἰμι",
+     "τοῖς",
+     "νόμοις"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "5.85"
+    }
+   },
+   {
+    "prompt": "Of which I was willing to offer to the plaintiff the assurance that was most solemn.",
+    "answer": "ὧν ἐγὼ ἤθελον τούτῳ ταύτην ἥτις εἴη μεγίστη πίστις δοῦναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὧν",
+     "ἐγὼ",
+     "ἤθελον",
+     "τούτῳ",
+     "ταύτην",
+     "ἥτις",
+     "εἴη",
+     "μεγίστη",
+     "πίστις",
+     "δοῦναι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "52.12"
+    }
+   }
+  ]
  }
 ]

@@ -1007,5 +1007,159 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-q1",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "He put his own tunic on him.",
+    "answer": "χιτῶνα τὸν ἑαυτοῦ ἐκεῖνον ἠμφίεσε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χιτῶνα",
+     "τὸν",
+     "ἑαυτοῦ",
+     "ἐκεῖνον",
+     "ἠμφίεσε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.3.17"
+    }
+   },
+   {
+    "prompt": "He concealed from his daughter her husband's death.",
+    "answer": "τὴν θυγατέρα ἔκρυπτε τὸν θάνατον τοῦ ἀνδρός",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "θυγατέρα",
+     "ἔκρυπτε",
+     "τὸν",
+     "θάνατον",
+     "τοῦ",
+     "ἀνδρός"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "32.7"
+    }
+   },
+   {
+    "prompt": "That I ever exacted or asked pay of any one.",
+    "answer": "ὡς ἐγώ ποτέ τινα ἢ ἐπραξάμην μισθὸν ἢ ᾔτησα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἐγώ",
+     "ποτέ",
+     "τινα",
+     "ἢ",
+     "ἐπραξάμην",
+     "μισθὸν",
+     "ἢ",
+     "ᾔτησα"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "31c"
+    }
+   },
+   {
+    "prompt": "He deprives me of the value of these things.",
+    "answer": "τούτων τὴν τιμὴν ἀποστερεῖ με",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτων",
+     "τὴν",
+     "τιμὴν",
+     "ἀποστερεῖ",
+     "με"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "28.13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1628-double-object-with-verbs-signifying-to-q2",
+  "sectionId": "sm-1628-double-object-with-verbs-signifying-to",
+  "questions": [
+   {
+    "prompt": "I cannot persuade you of this.",
+    "answer": "ὑμᾶς τοῦτο οὐ πείθω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑμᾶς",
+     "τοῦτο",
+     "οὐ",
+     "πείθω"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "37a"
+    }
+   },
+   {
+    "prompt": "I will remind you of the dangers also.",
+    "answer": "ἀναμνήσω ὑμᾶς καὶ τοὺς κινδύνους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀναμνήσω",
+     "ὑμᾶς",
+     "καὶ",
+     "τοὺς",
+     "κινδύνους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.11"
+    }
+   },
+   {
+    "prompt": "Nobody taught me this art.",
+    "answer": "οὐδεὶς ἐδίδαξέ με ταύτην τὴν τέχνην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἐδίδαξέ",
+     "με",
+     "ταύτην",
+     "τὴν",
+     "τέχνην"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "19.16"
+    }
+   },
+   {
+    "prompt": "Having had the tribute demanded of him by the king.",
+    "answer": "ὑπὸ βασιλέως πεπραγμένος τοὺς φόρους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "βασιλέως",
+     "πεπραγμένος",
+     "τοὺς",
+     "φόρους"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.5"
+    }
+   }
+  ]
  }
 ]

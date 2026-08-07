@@ -1670,5 +1670,238 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-q1",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "My eyes will prove to be more beautiful than yours.",
+    "answer": "οἱ ἐμοὶ ὀφθαλμοὶ καλλίονες ἂν τῶν σῶν εἴησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἐμοὶ",
+     "ὀφθαλμοὶ",
+     "καλλίονες",
+     "ἂν",
+     "τῶν",
+     "σῶν",
+     "εἴησαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Symposium",
+     "locus": "5"
+    }
+   },
+   {
+    "prompt": "Brother of my mother.",
+    "answer": "ἀδελφὸς τῆς μητρὸς τῆς ἐμῆς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδελφὸς",
+     "τῆς",
+     "μητρὸς",
+     "τῆς",
+     "ἐμῆς"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "1.117"
+    }
+   },
+   {
+    "prompt": "Making a search for you or for anything of yours.",
+    "answer": "ζήτησιν ποιούμενοι ἢ ὑμῶν ἢ τῶν ὑμετέρων τινός",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ζήτησιν",
+     "ποιούμενοι",
+     "ἢ",
+     "ὑμῶν",
+     "ἢ",
+     "τῶν",
+     "ὑμετέρων",
+     "τινός"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.30"
+    }
+   },
+   {
+    "prompt": "A house either for some one of our friends or our own.",
+    "answer": "οἰκοδόμημα ἢ τῶν φίλων τινὶ ἢ ἡμέτερον αὐτῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἰκοδόμημα",
+     "ἢ",
+     "τῶν",
+     "φίλων",
+     "τινὶ",
+     "ἢ",
+     "ἡμέτερον",
+     "αὐτῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "514b"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-q2",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "Teach your own children.",
+    "answer": "διδάσκετε τοὺς παῖδας τοὺς ὑμετέρους αὐτῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διδάσκετε",
+     "τοὺς",
+     "παῖδας",
+     "τοὺς",
+     "ὑμετέρους",
+     "αὐτῶν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "3.57"
+    }
+   },
+   {
+    "prompt": "It is not right for us to show ourselves inferior to our own fame.",
+    "answer": "αὐτῶν τῆς δόξης ἐνδεεστέρους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτῶν",
+     "τῆς",
+     "δόξης",
+     "ἐνδεεστέρους"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.11"
+    }
+   },
+   {
+    "prompt": "The equipments both of your horses and yourselves.",
+    "answer": "τὰ τῶν ἵππων καὶ τὰ ὑμῶν αὐτῶν ὅπλα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "ἵππων",
+     "καὶ",
+     "τὰ",
+     "ὑμῶν",
+     "αὐτῶν",
+     "ὅπλα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.3.21"
+    }
+   },
+   {
+    "prompt": "Knowing his courage.",
+    "answer": "γιγνώσκων αὐτοῦ τὴν ἀνδρείαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γιγνώσκων",
+     "αὐτοῦ",
+     "τὴν",
+     "ἀνδρείαν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "310d"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1196-the-possessive-pronouns-q3",
+  "sectionId": "sm-1196-the-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "They come up with Ariaeus and his army.",
+    "answer": "ἀφικνοῦνται παρ᾽ Ἀριαῖον καὶ τὴν ἐκείνου στρατιάν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφικνοῦνται",
+     "παρ",
+     "Ἀριαῖον",
+     "καὶ",
+     "τὴν",
+     "ἐκείνου",
+     "στρατιάν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.2.8"
+    }
+   },
+   {
+    "prompt": "He summoned some of his friends.",
+    "answer": "παρεκάλεσέ τινας τῶν τούτου ἐπιτηδείων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρεκάλεσέ",
+     "τινας",
+     "τῶν",
+     "τούτου",
+     "ἐπιτηδείων"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "3.11"
+    }
+   },
+   {
+    "prompt": "He misuses his own wife.",
+    "answer": "ὑβρίζει γυναῖκα τὴν ἑαυτοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑβρίζει",
+     "γυναῖκα",
+     "τὴν",
+     "ἑαυτοῦ"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "4.15"
+    }
+   },
+   {
+    "prompt": "Because of distrust of them.",
+    "answer": "διὰ τὴν ἐκείνων ἀπιστίαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τὴν",
+     "ἐκείνων",
+     "ἀπιστίαν"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "3.2"
+    }
+   }
+  ]
  }
 ]

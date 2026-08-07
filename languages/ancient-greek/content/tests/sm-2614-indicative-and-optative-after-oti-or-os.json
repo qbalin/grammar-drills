@@ -394,5 +394,146 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2614-indicative-and-optative-after-oti-or-os-q1",
+  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+  "questions": [
+   {
+    "prompt": "He says that I am an insolent person.",
+    "answer": "λέγει δ᾽ ὡς ὑβριστής εἰμι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγει",
+     "δ",
+     "ὡς",
+     "ὑβριστής",
+     "εἰμι"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "24.15"
+    }
+   },
+   {
+    "prompt": "He replied that he would say nothing of this.",
+    "answer": "ἀπεκρίνατο ὅτι οὐδὲν ἂν τούτων εἴποι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "οὐδὲν",
+     "ἂν",
+     "τούτων",
+     "εἴποι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.6.37"
+    }
+   },
+   {
+    "prompt": "They recognized that their fear was groundless.",
+    "answer": "ἔγνωσαν ὅτι κενὸς ὁ φόβος εἴη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔγνωσαν",
+     "ὅτι",
+     "κενὸς",
+     "ὁ",
+     "φόβος",
+     "εἴη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.2.21"
+    }
+   },
+   {
+    "prompt": "They said that the king of the Indians had sent them.",
+    "answer": "ἔλεξαν ὅτι πέμψειε σφᾶς ὁ Ἰνδῶν βασιλεύς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεξαν",
+     "ὅτι",
+     "πέμψειε",
+     "σφᾶς",
+     "ὁ",
+     "Ἰνδῶν",
+     "βασιλεύς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.4.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2614-indicative-and-optative-after-oti-or-os-q2",
+  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+  "questions": [
+   {
+    "prompt": "It was reported that the Lacedaemonians had been defeated and that Peisander was dead.",
+    "answer": "ἠγγέλθη ὅτι ἡττημένοι εἶεν οἱ Λακεδαιμόνιοι . . . καὶ Πείσανδρος τεθναίη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠγγέλθη",
+     "ὅτι",
+     "ἡττημένοι",
+     "εἶεν",
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "καὶ",
+     "Πείσανδρος",
+     "τεθναίη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.3.10"
+    }
+   },
+   {
+    "prompt": "A report spread that Cyrus was pursuing them.",
+    "answer": "διῆλθε λόγος ὅτι διώκει αὐτοὺς Κῦρος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διῆλθε",
+     "λόγος",
+     "ὅτι",
+     "διώκει",
+     "αὐτοὺς",
+     "Κῦρος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.7"
+    }
+   },
+   {
+    "prompt": "They withdrew immediately on answering that they would send envoys.",
+    "answer": "ἀποκρινάμενοι ὅτι πέμψουσι πρέσβεις, εὐθὺς ἀπήλλαξαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποκρινάμενοι",
+     "ὅτι",
+     "πέμψουσι",
+     "πρέσβεις",
+     "εὐθὺς",
+     "ἀπήλλαξαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.90"
+    }
+   }
+  ]
  }
 ]

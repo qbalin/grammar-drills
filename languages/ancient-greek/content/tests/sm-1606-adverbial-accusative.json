@@ -890,5 +890,64 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1606-adverbial-accusative-q1",
+  "sectionId": "sm-1606-adverbial-accusative",
+  "questions": [
+   {
+    "prompt": "He sailed professedly for the Hellespont.",
+    "answer": "ἔπλεε πρόφασιν ἐπ᾽ Ἑλλησπόντου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπλεε",
+     "πρόφασιν",
+     "ἐπ",
+     "Ἑλλησπόντου"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "5.33"
+    }
+   },
+   {
+    "prompt": "Did not engage in the expedition out of good will to the Athenians.",
+    "answer": "οὐ τὴν Ἀθηναίων χάριν ἐστρατεύοντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "τὴν",
+     "Ἀθηναίων",
+     "χάριν",
+     "ἐστρατεύοντο"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "5.99"
+    }
+   },
+   {
+    "prompt": "It is utterly impossible to deliberate correctly offhand.",
+    "answer": "ἐν τῷ παραχρῆμα οὐκ ἔστιν ἀρχὴν ὀρθῶς βουλεύεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῷ",
+     "παραχρῆμα",
+     "οὐκ",
+     "ἔστιν",
+     "ἀρχὴν",
+     "ὀρθῶς",
+     "βουλεύεσθαι"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "5.73"
+    }
+   }
+  ]
  }
 ]

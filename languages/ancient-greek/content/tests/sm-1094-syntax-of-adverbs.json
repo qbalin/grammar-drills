@@ -988,5 +988,62 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1094-syntax-of-adverbs-q1",
+  "sectionId": "sm-1094-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "Leaping in more quickly than one would have thought.",
+    "answer": "εἰσπηδήσαντες . . . θᾶττον ἢ ὥς τις ἂν ᾤετο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰσπηδήσαντες",
+     "θᾶττον",
+     "ἢ",
+     "ὥς",
+     "τις",
+     "ἂν",
+     "ᾤετο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.5.8"
+    }
+   },
+   {
+    "prompt": "In the neighbouring park.",
+    "answer": "ἐν τῷ πλησίον παραδείσῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῷ",
+     "πλησίον",
+     "παραδείσῳ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.4.16"
+    }
+   },
+   {
+    "prompt": "Wisdom is different from courage.",
+    "answer": "χωρὶς σοφία ἐστὶν ἀνδρείας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χωρὶς",
+     "σοφία",
+     "ἐστὶν",
+     "ἀνδρείας"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laches",
+     "locus": "195a"
+    }
+   }
+  ]
  }
 ]

@@ -938,5 +938,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1143-other-uses-of-the-article-q1",
+  "sectionId": "sm-1143-other-uses-of-the-article",
+  "questions": [
+   {
+    "prompt": "The calumniation and envy of the multitude.",
+    "answer": "ἡ τῶν πολλῶν διαβολή τε καὶ φθόνος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τῶν",
+     "πολλῶν",
+     "διαβολή",
+     "τε",
+     "καὶ",
+     "φθόνος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "28a"
+    }
+   },
+   {
+    "prompt": "The Thracian and the barbarian.",
+    "answer": "ὁ Θρᾷξ καὶ ὁ βάρβαρος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Θρᾷξ",
+     "καὶ",
+     "ὁ",
+     "βάρβαρος"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "23.132"
+    }
+   },
+   {
+    "prompt": "The generals and the captains.",
+    "answer": "οἱ στρατηγοὶ καὶ οἱ λοχαγοί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατηγοὶ",
+     "καὶ",
+     "οἱ",
+     "λοχαγοί"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.1.13"
+    }
+   },
+   {
+    "prompt": "By your children and wives I beseech you.",
+    "answer": "πρὸς οὖν παίδων καὶ γυναικῶν ἱκετεύω ὑμᾶς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸς",
+     "οὖν",
+     "παίδων",
+     "καὶ",
+     "γυναικῶν",
+     "ἱκετεύω",
+     "ὑμᾶς"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "4.20"
+    }
+   }
+  ]
  }
 ]

@@ -1668,5 +1668,242 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-q1",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "Hoping that he would capture the walls of the Athenians.",
+    "answer": "ἐν ἐλπίδι ὢν τὰ τείχη τῶν Ἀθηναίων αἱρήσειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἐλπίδι",
+     "ὢν",
+     "τὰ",
+     "τείχη",
+     "τῶν",
+     "Ἀθηναίων",
+     "αἱρήσειν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.46"
+    }
+   },
+   {
+    "prompt": "He expects to be able to rule.",
+    "answer": "ἐλπίζει δυνατὸς εἶναι ἄρχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐλπίζει",
+     "δυνατὸς",
+     "εἶναι",
+     "ἄρχειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "573c"
+    }
+   },
+   {
+    "prompt": "They intended to carry on the war with zeal.",
+    "answer": "τὸν πόλεμον διενοοῦντο προθύμως οἴσειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "πόλεμον",
+     "διενοοῦντο",
+     "προθύμως",
+     "οἴσειν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.121"
+    }
+   },
+   {
+    "prompt": "The women took their noonday meal while they continued their work, but took their supper when they had stopped work.",
+    "answer": "ἐργαζόμεναι μὲν ἠρίστων, ἐργασάμεναι δὲ ἐδείπνουν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐργαζόμεναι",
+     "μὲν",
+     "ἠρίστων",
+     "ἐργασάμεναι",
+     "δὲ",
+     "ἐδείπνουν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.7.12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-q2",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "The forces of Cyrus that were formerly marshalled with us have now deserted.",
+    "answer": "οἱ Κύρειοι πρόσθεν σὺν ἡμῖν ταττόμενοι νῦν ἀφεστήκασιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Κύρειοι",
+     "πρόσθεν",
+     "σὺν",
+     "ἡμῖν",
+     "ταττόμενοι",
+     "νῦν",
+     "ἀφεστήκασιν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.17"
+    }
+   },
+   {
+    "prompt": "They will accuse those who were their counsellors at that time.",
+    "answer": "τοὺς τότε παρόντας αἰτιάσονται συμβούλους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "τότε",
+     "παρόντας",
+     "αἰτιάσονται",
+     "συμβούλους"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "519a"
+    }
+   },
+   {
+    "prompt": "They settled in the country now called Boeotia.",
+    "answer": "τὴν νῦν Βοιωτίαν καλουμένην ᾤκησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "νῦν",
+     "Βοιωτίαν",
+     "καλουμένην",
+     "ᾤκησαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.12"
+    }
+   },
+   {
+    "prompt": "We have not come together for the purpose of waging war with the king.",
+    "answer": "οὐ συνήλθομεν ὡς βασιλεῖ πολεμήσοντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "συνήλθομεν",
+     "ὡς",
+     "βασιλεῖ",
+     "πολεμήσοντες"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.3.21"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-q3",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "I shall at once proceed to this matter after having put to him certain questions.",
+    "answer": "ἤδη δ᾽ ἐπὶ ταῦτα πορεύσομαι τοσοῦτον αὐτὸν ἐρωτήσας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "δ",
+     "ἐπὶ",
+     "ταῦτα",
+     "πορεύσομαι",
+     "τοσοῦτον",
+     "αὐτὸν",
+     "ἐρωτήσας"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.124"
+    }
+   },
+   {
+    "prompt": "Take your supper now, and when you have done so, depart.",
+    "answer": "νῦν μὲν δειπνεῖτε· δειπνήσαντες δὲ ἀπελαύνετε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "μὲν",
+     "δειπνεῖτε",
+     "δειπνήσαντες",
+     "δὲ",
+     "ἀπελαύνετε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.1.37"
+    }
+   },
+   {
+    "prompt": "Do not commit the error of condemning me.",
+    "answer": "μή τι ἐξαμάρτητε ἐμοῦ καταψηφισάμενοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "τι",
+     "ἐξαμάρτητε",
+     "ἐμοῦ",
+     "καταψηφισάμενοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "30d"
+    }
+   },
+   {
+    "prompt": "The people later called Hellenes carried out no joint enterprise prior to the Trojan war.",
+    "answer": "οἱ Ἕλληνες ὕστερον κληθέντες οὐδὲν πρὸ τῶν Τρωϊκῶν ἁθρόοι ἔπραξαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "ὕστερον",
+     "κληθέντες",
+     "οὐδὲν",
+     "πρὸ",
+     "τῶν",
+     "Τρωϊκῶν",
+     "ἁθρόοι",
+     "ἔπραξαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.3"
+    }
+   }
+  ]
  }
 ]

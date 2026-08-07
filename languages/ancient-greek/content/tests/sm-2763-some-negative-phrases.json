@@ -1956,5 +1956,196 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-q1",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "Not only was Crito in peace, but his friends also.",
+    "answer": "οὐχ ὅτι μόνος ὁ Κρίτων ἐν ἡσυχίᾳ ἦν, ἀλλὰ καὶ οἱ φίλοι αὐτοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅτι",
+     "μόνος",
+     "ὁ",
+     "Κρίτων",
+     "ἐν",
+     "ἡσυχίᾳ",
+     "ἦν",
+     "ἀλλὰ",
+     "καὶ",
+     "οἱ",
+     "φίλοι",
+     "αὐτοῦ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.9.8"
+    }
+   },
+   {
+    "prompt": "Not only are you not grateful to them, but you let yourself out for hire as a public man to their prejudice.",
+    "answer": "οὐχ ὅπως χάριν αὐτοῖς ἔχεις, ἀλλὰ μισθώσας σαυτὸν κατὰ τουτωνὶ πολιτεύει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "χάριν",
+     "αὐτοῖς",
+     "ἔχεις",
+     "ἀλλὰ",
+     "μισθώσας",
+     "σαυτὸν",
+     "κατὰ",
+     "τουτωνὶ",
+     "πολιτεύει"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.131"
+    }
+   },
+   {
+    "prompt": "Not only do we not share in the general freedom, but we were not thought worthy of obtaining even a moderate servitude.",
+    "answer": "οὐχ ὅπως τῆς κοινῆς ἐλευθερίας μετέχομεν, ἀλλ᾽ οὐδὲ δουλείας μετρίας τυχεῖν ἠξιώθημεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὅπως",
+     "τῆς",
+     "κοινῆς",
+     "ἐλευθερίας",
+     "μετέχομεν",
+     "ἀλλ",
+     "οὐδὲ",
+     "δουλείας",
+     "μετρίας",
+     "τυχεῖν",
+     "ἠξιώθημεν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "14.5"
+    }
+   },
+   {
+    "prompt": "He considers himself not only not a Plataean but not even a free man.",
+    "answer": "νομίζει ἑαυτὸν μὴ ὅτι Πλαταιέα εἶναι, ἀλλ᾽ οὐδ᾽ ἐλεύθερον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζει",
+     "ἑαυτὸν",
+     "μὴ",
+     "ὅτι",
+     "Πλαταιέα",
+     "εἶναι",
+     "ἀλλ",
+     "οὐδ",
+     "ἐλεύθερον"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "23.12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2763-some-negative-phrases-q2",
+  "sectionId": "sm-2763-some-negative-phrases",
+  "questions": [
+   {
+    "prompt": "You would offer your house to no one not only gratis, but not even for a lower price than it is worth.",
+    "answer": "τὴν οἰκίαν . . . οὐδενὶ ἂν μὴ ὅτι προῖκα δοίης, ἀλλ᾽ οὐδ᾽ ἔλαττον τῆς ἀξίας λαβών",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "οἰκίαν",
+     "οὐδενὶ",
+     "ἂν",
+     "μὴ",
+     "ὅτι",
+     "προῖκα",
+     "δοίης",
+     "ἀλλ",
+     "οὐδ",
+     "ἔλαττον",
+     "τῆς",
+     "ἀξίας",
+     "λαβών"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.6.11"
+    }
+   },
+   {
+    "prompt": "For there was no spring, except one on the acropolis itself.",
+    "answer": "οὐ γὰρ ἦν κρήνη, ὅ τι μὴ μία ἐν αὐτῇ τῇ ἀκροπόλει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "γὰρ",
+     "ἦν",
+     "κρήνη",
+     "ὅ",
+     "τι",
+     "μὴ",
+     "μία",
+     "ἐν",
+     "αὐτῇ",
+     "τῇ",
+     "ἀκροπόλει"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.26"
+    }
+   },
+   {
+    "prompt": "He thought that he already was all but in possession of the city.",
+    "answer": "ἐνόμιζε . . . ὅσον οὐκ ἤδη ἔχειν τὴν πόλιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνόμιζε",
+     "ὅσον",
+     "οὐκ",
+     "ἤδη",
+     "ἔχειν",
+     "τὴν",
+     "πόλιν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.2.16"
+    }
+   },
+   {
+    "prompt": "Nor again has he spoken of barbarians.",
+    "answer": "οὐ μὴν οὐδὲ βαρβάρους εἴρηκε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴν",
+     "οὐδὲ",
+     "βαρβάρους",
+     "εἴρηκε"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.3"
+    }
+   }
+  ]
  }
 ]

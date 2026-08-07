@@ -910,5 +910,157 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-q1",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "No one by speaking otherwise can avoid being ridiculous.",
+    "answer": "οὐδεὶς οἷός τ᾽ ἐστὶν ἄλλως λέγων μὴ οὐ καταγέλαστος εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "οἷός",
+     "τ",
+     "ἐστὶν",
+     "ἄλλως",
+     "λέγων",
+     "μὴ",
+     "οὐ",
+     "καταγέλαστος",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "509a"
+    }
+   },
+   {
+    "prompt": "You promised to make the inquiry on the ground that it would not be right for you not to assist justice.",
+    "answer": "ὑπέσχου ζητήσειν ὡς οὐχ ὅσιόν σοι ὂν μὴ οὐ βοηθεῖν δικαιοσύνῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπέσχου",
+     "ζητήσειν",
+     "ὡς",
+     "οὐχ",
+     "ὅσιόν",
+     "σοι",
+     "ὂν",
+     "μὴ",
+     "οὐ",
+     "βοηθεῖν",
+     "δικαιοσύνῃ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "427e"
+    }
+   },
+   {
+    "prompt": "I think it is utterly senseless for me not to grant you this favour also.",
+    "answer": "πάνυ ἀνόητον ἡγοῦμαι εἶναί σοι μὴ οὐ καὶ τοῦτο χαρίζεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάνυ",
+     "ἀνόητον",
+     "ἡγοῦμαι",
+     "εἶναί",
+     "σοι",
+     "μὴ",
+     "οὐ",
+     "καὶ",
+     "τοῦτο",
+     "χαρίζεσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "218c"
+    }
+   },
+   {
+    "prompt": "They said that they could not help submitting to the Thebans.",
+    "answer": "ἔλεγον ὅτι . . . οὐ δυνήσοιντο μὴ πείθεσθαι τοῖς Οηβαίοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "ὅτι",
+     "οὐ",
+     "δυνήσοιντο",
+     "μὴ",
+     "πείθεσθαι",
+     "τοῖς",
+     "Οηβαίοις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.1.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2745-me-ou-with-the-infinitive-depending-on-q2",
+  "sectionId": "sm-2745-me-ou-with-the-infinitive-depending-on",
+  "questions": [
+   {
+    "prompt": "It is disgraceful for me at least not to be willing.",
+    "answer": "αἰσχρὸν . . . γίγνεται ἐμέ γε μὴ ἐθέλειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρὸν",
+     "γίγνεται",
+     "ἐμέ",
+     "γε",
+     "μὴ",
+     "ἐθέλειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "458d"
+    }
+   },
+   {
+    "prompt": "The inability to rest.",
+    "answer": "ἡ ἀπορία τοῦ μὴ ἡσυχάζειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀπορία",
+     "τοῦ",
+     "μὴ",
+     "ἡσυχάζειν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.49"
+    }
+   },
+   {
+    "prompt": "It is irrational not to make a two-fold division.",
+    "answer": "ἄλογον τὸ μὴ οὐ τέμνειν διχῇ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄλογον",
+     "τὸ",
+     "μὴ",
+     "οὐ",
+     "τέμνειν",
+     "διχῇ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Sophist",
+     "locus": "219e"
+    }
+   }
+  ]
  }
 ]

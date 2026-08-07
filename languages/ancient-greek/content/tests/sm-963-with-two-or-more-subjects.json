@@ -1122,5 +1122,156 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-963-with-two-or-more-subjects-q1",
+  "sectionId": "sm-963-with-two-or-more-subjects",
+  "questions": [
+   {
+    "prompt": "On their arrival in Corcyra Eurymedon and Sophocles proceeded to make an attack.",
+    "answer": "Εὐρυμέδων καὶ Σοφοκλῆς ἀφικόμενοι ἐς Κέρκυραν ἐστράτευσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εὐρυμέδων",
+     "καὶ",
+     "Σοφοκλῆς",
+     "ἀφικόμενοι",
+     "ἐς",
+     "Κέρκυραν",
+     "ἐστράτευσαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.46"
+    }
+   },
+   {
+    "prompt": "Thersagoras and Execestus came to Lesbos and settled there.",
+    "answer": "ἧκε μὲν ὁ Θερσαγόρας καὶ ὁ Ἐξήκεστος εἰς Λέσβον καὶ ᾤκουν ἐκεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἧκε",
+     "μὲν",
+     "ὁ",
+     "Θερσαγόρας",
+     "καὶ",
+     "ὁ",
+     "Ἐξήκεστος",
+     "εἰς",
+     "Λέσβον",
+     "καὶ",
+     "ᾤκουν",
+     "ἐκεῖ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "23.143"
+    }
+   },
+   {
+    "prompt": "Polemarchus came and Adimantus and Niceratus and certain others.",
+    "answer": "ὅ τε Πολέμαρχος ἧκε καὶ Ἀδείμαντος καὶ Νικήρατος καὶ ἄλλοι τινές",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τε",
+     "Πολέμαρχος",
+     "ἧκε",
+     "καὶ",
+     "Ἀδείμαντος",
+     "καὶ",
+     "Νικήρατος",
+     "καὶ",
+     "ἄλλοι",
+     "τινές"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "327b"
+    }
+   },
+   {
+    "prompt": "Phalinus and his companions departed.",
+    "answer": "Φαλῖνος ᾤχετο καὶ οἱ σὺν αὐτῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Φαλῖνος",
+     "ᾤχετο",
+     "καὶ",
+     "οἱ",
+     "σὺν",
+     "αὐτῷ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.2.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-963-with-two-or-more-subjects-q2",
+  "sectionId": "sm-963-with-two-or-more-subjects",
+  "questions": [
+   {
+    "prompt": "The senate and the people are disregarded.",
+    "answer": "τὸ βουλευτήριον καὶ ὁ δῆμος παρορᾶται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "βουλευτήριον",
+     "καὶ",
+     "ὁ",
+     "δῆμος",
+     "παρορᾶται"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.250"
+    }
+   },
+   {
+    "prompt": "But you and I say this.",
+    "answer": "ὑμεῖς δὲ καὶ ἐγὼ τάδε λέγομεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑμεῖς",
+     "δὲ",
+     "καὶ",
+     "ἐγὼ",
+     "τάδε",
+     "λέγομεν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "661b"
+    }
+   },
+   {
+    "prompt": "What Demophon or Therippides have of my property.",
+    "answer": "ἃ Δημοφῶν ἢ Θηριππίδης ἔχουσι τῶν ἐμῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἃ",
+     "Δημοφῶν",
+     "ἢ",
+     "Θηριππίδης",
+     "ἔχουσι",
+     "τῶν",
+     "ἐμῶν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "27.12"
+    }
+   }
+  ]
  }
 ]

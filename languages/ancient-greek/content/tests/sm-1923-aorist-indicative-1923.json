@@ -1705,5 +1705,172 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1923-aorist-indicative-1923-q1",
+  "sectionId": "sm-1923-aorist-indicative-1923",
+  "questions": [
+   {
+    "prompt": "The Corcyraeans were victorious and destroyed fifteen ships.",
+    "answer": "ἐνίκησαν οἱ Κερκυραῖοι καὶ ναῦς πέντε καὶ δέκα διέφθειραν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνίκησαν",
+     "οἱ",
+     "Κερκυραῖοι",
+     "καὶ",
+     "ναῦς",
+     "πέντε",
+     "καὶ",
+     "δέκα",
+     "διέφθειραν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.29"
+    }
+   },
+   {
+    "prompt": "When Peisistratus died Hippias succeeded to his power.",
+    "answer": "Πεισιστράτου τελευτήσαντος Ἱππίας ἔσχε τὴν ἀρχήν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πεισιστράτου",
+     "τελευτήσαντος",
+     "Ἱππίας",
+     "ἔσχε",
+     "τὴν",
+     "ἀρχήν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.54"
+    }
+   },
+   {
+    "prompt": "They held the supremacy over Greece for forty-five years.",
+    "answer": "ἐκεῖνοι πέντε καὶ τετταράκοντα ἔτη τῶν Ἑλλήνων ἦρξαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖνοι",
+     "πέντε",
+     "καὶ",
+     "τετταράκοντα",
+     "ἔτη",
+     "τῶν",
+     "Ἑλλήνων",
+     "ἦρξαν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "3.24"
+    }
+   },
+   {
+    "prompt": "It was in this manner that they fortified the city.",
+    "answer": "τούτῳ τῷ τρόπῳ τὴν πόλιν ἐτείχισαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτῳ",
+     "τῷ",
+     "τρόπῳ",
+     "τὴν",
+     "πόλιν",
+     "ἐτείχισαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.93"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1923-aorist-indicative-1923-q2",
+  "sectionId": "sm-1923-aorist-indicative-1923",
+  "questions": [
+   {
+    "prompt": "Cyrus remained thirty days there.",
+    "answer": "ἐνταῦθα ἔμεινε Κῦρος ἡμέρας τριάκοντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνταῦθα",
+     "ἔμεινε",
+     "Κῦρος",
+     "ἡμέρας",
+     "τριάκοντα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.9"
+    }
+   },
+   {
+    "prompt": "Faint heart never yet raised a trophy.",
+    "answer": "ἀθυμοῦντες ἄνδρες οὔπω τροπαῖον ἔστησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀθυμοῦντες",
+     "ἄνδρες",
+     "οὔπω",
+     "τροπαῖον",
+     "ἔστησαν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Critias",
+     "locus": "108c"
+    }
+   },
+   {
+    "prompt": "For beauty is either wasted by time or withered by disease.",
+    "answer": "κάλλος μὲν γὰρ ἢ χρόνος ἀνήλωσεν ἢ νόσος ἐμάρανε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κάλλος",
+     "μὲν",
+     "γὰρ",
+     "ἢ",
+     "χρόνος",
+     "ἀνήλωσεν",
+     "ἢ",
+     "νόσος",
+     "ἐμάρανε"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "1.6"
+    }
+   },
+   {
+    "prompt": "He has deprived the Pheraeans of their city and established a garrison in the acropolis.",
+    "answer": "Φεραίων μὲν ἀφῄρηται τὴν πόλιν καὶ φρουρὰν ἐν τῇ ἀκροπόλει κατέστησεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Φεραίων",
+     "μὲν",
+     "ἀφῄρηται",
+     "τὴν",
+     "πόλιν",
+     "καὶ",
+     "φρουρὰν",
+     "ἐν",
+     "τῇ",
+     "ἀκροπόλει",
+     "κατέστησεν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "7.32"
+    }
+   }
+  ]
  }
 ]

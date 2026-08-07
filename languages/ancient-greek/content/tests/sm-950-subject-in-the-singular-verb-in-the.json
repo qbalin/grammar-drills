@@ -651,5 +651,88 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-950-subject-in-the-singular-verb-in-the-q1",
+  "sectionId": "sm-950-subject-in-the-singular-verb-in-the",
+  "questions": [
+   {
+    "prompt": "The army returned holding Agis at fault.",
+    "answer": "τὸ στρατόπεδον ἐν αἰτίᾳ ἔχοντες τὸν Ἆγιν ἀνεχώρουν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στρατόπεδον",
+     "ἐν",
+     "αἰτίᾳ",
+     "ἔχοντες",
+     "τὸν",
+     "Ἆγιν",
+     "ἀνεχώρουν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.60"
+    }
+   },
+   {
+    "prompt": "The city, after hearing such arguments, chose Agesilaus king.",
+    "answer": "τοιαῦτα ἀκούσασα ἡ πόλις Ἀγησίλαον εἵλοντο βασιλέα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιαῦτα",
+     "ἀκούσασα",
+     "ἡ",
+     "πόλις",
+     "Ἀγησίλαον",
+     "εἵλοντο",
+     "βασιλέα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "3.3.4"
+    }
+   },
+   {
+    "prompt": "Both you and I have carried on a long controversy.",
+    "answer": "ἐγώ τε καὶ σὺ μακρὸν λόγον ἑκάτερος ἀπετείναμεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγώ",
+     "τε",
+     "καὶ",
+     "σὺ",
+     "μακρὸν",
+     "λόγον",
+     "ἑκάτερος",
+     "ἀπετείναμεν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "361a"
+    }
+   },
+   {
+    "prompt": "Alcibiades and Mantitheus escaped because they were well provided with horses.",
+    "answer": "Ἀλκιβιάδης μετὰ Μαντιθέου ἵππων εὐπορήσαντες ἀπέδρασαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀλκιβιάδης",
+     "μετὰ",
+     "Μαντιθέου",
+     "ἵππων",
+     "εὐπορήσαντες",
+     "ἀπέδρασαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "1.1.10"
+    }
+   }
+  ]
  }
 ]

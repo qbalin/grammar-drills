@@ -1486,5 +1486,89 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2165-asyndeton-q1",
+  "sectionId": "sm-2165-asyndeton",
+  "questions": [
+   {
+    "prompt": "Interlocking their shields, they shoved, they fought, they slew, they were slain.",
+    "answer": "συμβαλόντες τὰς ἀσπίδας ἐωθοῦντο, ἐμάχοντο, ἀπέκτεινον, ἀπέθνῃσκον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμβαλόντες",
+     "τὰς",
+     "ἀσπίδας",
+     "ἐωθοῦντο",
+     "ἐμάχοντο",
+     "ἀπέκτεινον",
+     "ἀπέθνῃσκον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.3.19"
+    }
+   },
+   {
+    "prompt": "You have a city, you have triremes, you have money, you have so many men.",
+    "answer": "ἔχεις πόλιν, ἔχεις τριήρεις, ἔχεις χρήματα, ἔχεις ἄνδρας τοσούτους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔχεις",
+     "πόλιν",
+     "ἔχεις",
+     "τριήρεις",
+     "ἔχεις",
+     "χρήματα",
+     "ἔχεις",
+     "ἄνδρας",
+     "τοσούτους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.1.21"
+    }
+   },
+   {
+    "prompt": "You have heard, you have seen, you have suffered, you have the evidence; pronounce your judgment.",
+    "answer": "ἀκηκόατε, ἑωρἁκατε, πεπόνθατε, ἔχετε· δικάζετε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκηκόατε",
+     "ἑωρἁκατε",
+     "πεπόνθατε",
+     "ἔχετε",
+     "δικάζετε"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.100"
+    }
+   },
+   {
+    "prompt": "And let him who approves this, hold up his hand; they all held up their hands.",
+    "answer": "καὶ ὅτῳ δοκεῖ ταῦτα, ἀνατεινάτω τὴν χεῖρα· ἀνέτειναν ἅπαντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ὅτῳ",
+     "δοκεῖ",
+     "ταῦτα",
+     "ἀνατεινάτω",
+     "τὴν",
+     "χεῖρα",
+     "ἀνέτειναν",
+     "ἅπαντες"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.33"
+    }
+   }
+  ]
  }
 ]

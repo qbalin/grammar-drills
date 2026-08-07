@@ -445,5 +445,347 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-q1",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They pleaded that they never would have been so foolish, if they had known.",
+    "answer": "ἀπελογοῦντο ὡς οὐκ ἄν ποτε οὕτω μῶροι ἦσαν . . . εἰ ᾔδεσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπελογοῦντο",
+     "ὡς",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "οὕτω",
+     "μῶροι",
+     "ἦσαν",
+     "εἰ",
+     "ᾔδεσαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "5.4.22"
+    }
+   },
+   {
+    "prompt": "He said that it would have been better for him to die then.",
+    "answer": "ὅτι κρεῖττον ἦν αὐτῷ τότε ἀποθανεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτι",
+     "κρεῖττον",
+     "ἦν",
+     "αὐτῷ",
+     "τότε",
+     "ἀποθανεῖν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "10.25"
+    }
+   },
+   {
+    "prompt": "He heard that the Chaldaeans often went to the Indian king.",
+    "answer": "ἤκουσεν ὅτι πολλάκις πρὸς τὸν Ἰνδὸν οἱ Χαλδαῖοι ἐπορεύοντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤκουσεν",
+     "ὅτι",
+     "πολλάκις",
+     "πρὸς",
+     "τὸν",
+     "Ἰνδὸν",
+     "οἱ",
+     "Χαλδαῖοι",
+     "ἐπορεύοντο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.2.27"
+    }
+   },
+   {
+    "prompt": "I answered him that I did not take.",
+    "answer": "ἀπεκρινάμην αὐτῷ ὅτι . . . οὐ λάβοιμι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρινάμην",
+     "αὐτῷ",
+     "ὅτι",
+     "οὐ",
+     "λάβοιμι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "50.36"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-q2",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he would use his own money that his father had given him.",
+    "answer": "τοῖς ἰδίοις χρήσεσθαι ἔφη, ἃ ὁ πατὴρ αὐτῷ ἔδωκεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ἰδίοις",
+     "χρήσεσθαι",
+     "ἔφη",
+     "ἃ",
+     "ὁ",
+     "πατὴρ",
+     "αὐτῷ",
+     "ἔδωκεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "1.5.3"
+    }
+   },
+   {
+    "prompt": "They said that he was not freeing Greece in the right way if he put men to death.",
+    "answer": "ἔλεγον οὐ καλῶς τὴν Ἑλλάσα ἐλευθεροῦν αὐτόν, εἰ ἄνδρας διέφθειρεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "οὐ",
+     "καλῶς",
+     "τὴν",
+     "Ἑλλάσα",
+     "ἐλευθεροῦν",
+     "αὐτόν",
+     "εἰ",
+     "ἄνδρας",
+     "διέφθειρεν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.32"
+    }
+   },
+   {
+    "prompt": "He showed by his death that this was not true.",
+    "answer": "ἀποθανὼν ἐδήλωσεν ὅτι οὐκ ἀληθῆ ταῦτα ἦν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποθανὼν",
+     "ἐδήλωσεν",
+     "ὅτι",
+     "οὐκ",
+     "ἀληθῆ",
+     "ταῦτα",
+     "ἦν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "19.52"
+    }
+   },
+   {
+    "prompt": "He said that he had in his possession all that had not been expended.",
+    "answer": "ἔφη εἶναι παρ᾽ ἑαυτῷ ὅσον μὴ ἦν ἀνηλωμένον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "εἶναι",
+     "παρ",
+     "ἑαυτῷ",
+     "ὅσον",
+     "μὴ",
+     "ἦν",
+     "ἀνηλωμένον"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "48.16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-q3",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The Greeks were accordingly in great perplexity on reflecting that they were at the king's gates.",
+    "answer": "ἐννοούμενοι μὲν ὅτι ἐπὶ ταῖς βασιλέως θύραις ἦσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐννοούμενοι",
+     "μὲν",
+     "ὅτι",
+     "ἐπὶ",
+     "ταῖς",
+     "βασιλέως",
+     "θύραις",
+     "ἦσαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.2"
+    }
+   },
+   {
+    "prompt": "They showed that they always followed them in their campaigns wherever they led.",
+    "answer": "ἐδίδασκον ὡς . . . συνεστρατεύοντο ὅποι ἡγοῖντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδίδασκον",
+     "ὡς",
+     "συνεστρατεύοντο",
+     "ὅποι",
+     "ἡγοῖντο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "5.2.8"
+    }
+   },
+   {
+    "prompt": "He replied that they would sooner die than surrender their arms.",
+    "answer": "ἀπεκρίνατο . . . ὅτι πρόσθεν ἂν ἀποθάνοιεν ἢ τὰ ὅπλα παραδοίησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "πρόσθεν",
+     "ἂν",
+     "ἀποθάνοιεν",
+     "ἢ",
+     "τὰ",
+     "ὅπλα",
+     "παραδοίησαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.10"
+    }
+   },
+   {
+    "prompt": "They gave orders to them that they should not attack before some one of their number had either fallen or been wounded.",
+    "answer": "παρήγγειλαν αὐτοῖς μὴ πρότερον ἐπιτίθεσθαι πρὶν ἂν τῶν σφετέρων ἢ πέσοι τις ἢ τρωθείη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρήγγειλαν",
+     "αὐτοῖς",
+     "μὴ",
+     "πρότερον",
+     "ἐπιτίθεσθαι",
+     "πρὶν",
+     "ἂν",
+     "τῶν",
+     "σφετέρων",
+     "ἢ",
+     "πέσοι",
+     "τις",
+     "ἢ",
+     "τρωθείη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "2.4.18"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-q4",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The story goes that Neoptolemus asked Nestor.",
+    "answer": "λέγει ὁ λόγος ὅτι Νεοπτόλεμος Νέστορα ἔροιτο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγει",
+     "ὁ",
+     "λόγος",
+     "ὅτι",
+     "Νεοπτόλεμος",
+     "Νέστορα",
+     "ἔροιτο"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Hippias Major",
+     "locus": "286b"
+    }
+   },
+   {
+    "prompt": "It is reported that he said that he wished.",
+    "answer": "λέγεται εἰπεῖν ὅτι βούλοιτο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγεται",
+     "εἰπεῖν",
+     "ὅτι",
+     "βούλοιτο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.4.25"
+    }
+   },
+   {
+    "prompt": "And those who had been sent told Cyrus that they hated the Assyrians.",
+    "answer": "οἱ δὲ πεμφθέντες λέγουσι Κύρῳ ὅτι μισοῖεν τοὺς Ἀσσυρίους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δὲ",
+     "πεμφθέντες",
+     "λέγουσι",
+     "Κύρῳ",
+     "ὅτι",
+     "μισοῖεν",
+     "τοὺς",
+     "Ἀσσυρίους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.2.4"
+    }
+   },
+   {
+    "prompt": "They make a clear distinction in cases where it is permitted to kill.",
+    "answer": "διορίζουσι σαφῶς ἐν οἷς ἐξεῖναι ἀποκτιννύναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διορίζουσι",
+     "σαφῶς",
+     "ἐν",
+     "οἷς",
+     "ἐξεῖναι",
+     "ἀποκτιννύναι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "23.74"
+    }
+   }
+  ]
  }
 ]

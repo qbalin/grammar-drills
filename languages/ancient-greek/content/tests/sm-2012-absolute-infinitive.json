@@ -950,5 +950,61 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2012-absolute-infinitive-q1",
+  "sectionId": "sm-2012-absolute-infinitive",
+  "questions": [
+   {
+    "prompt": "Nor do you intentionally cause strangers to laugh.",
+    "answer": "οὐδὲ ξένοις ἑκὼν εἶναι γέλωτα παρέχεις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "ξένοις",
+     "ἑκὼν",
+     "εἶναι",
+     "γέλωτα",
+     "παρέχεις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.2.15"
+    }
+   },
+   {
+    "prompt": "It is not willingly separated.",
+    "answer": "ἑκοῦσα εἶναι οὐκ ἀπολείπεται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑκοῦσα",
+     "εἶναι",
+     "οὐκ",
+     "ἀπολείπεται"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedrus",
+     "locus": "252a"
+    }
+   },
+   {
+    "prompt": "Almost three talents.",
+    "answer": "μικροῦ δεῖν τρία τάλαντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μικροῦ",
+     "δεῖν",
+     "τρία",
+     "τάλαντα"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "27.29"
+    }
+   }
+  ]
  }
 ]

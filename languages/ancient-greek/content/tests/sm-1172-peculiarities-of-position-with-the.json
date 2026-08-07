@@ -1706,5 +1706,238 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1172-peculiarities-of-position-with-the-q1",
+  "sectionId": "sm-1172-peculiarities-of-position-with-the",
+  "questions": [
+   {
+    "prompt": "To put to death the entire Mitylenean population.",
+    "answer": "ἀποκτεῖναι τοὺς ἅπαντας Μυτιληναίους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποκτεῖναι",
+     "τοὺς",
+     "ἅπαντας",
+     "Μυτιληναίους"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.36"
+    }
+   },
+   {
+    "prompt": "1600 in all.",
+    "answer": "ἑξακόσιοι καὶ χίλιοι οἱ πάντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἑξακόσιοι",
+     "καὶ",
+     "χίλιοι",
+     "οἱ",
+     "πάντες"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.60"
+    }
+   },
+   {
+    "prompt": "They have committed impiety towards all the gods and have sinned against the whole State.",
+    "answer": "περὶ πάντας τοὺς θεοὺς ἠσεβήκασι καὶ εἰς ἅπασαν τὴν πόλιν ἡμαρτήκασιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "πάντας",
+     "τοὺς",
+     "θεοὺς",
+     "ἠσεβήκασι",
+     "καὶ",
+     "εἰς",
+     "ἅπασαν",
+     "τὴν",
+     "πόλιν",
+     "ἡμαρτήκασιν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "14.42"
+    }
+   },
+   {
+    "prompt": "With you every road is easy to travel.",
+    "answer": "σὺν σοὶ πᾶσα ὁδὸς εὔπορος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺν",
+     "σοὶ",
+     "πᾶσα",
+     "ὁδὸς",
+     "εὔπορος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.9"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1172-peculiarities-of-position-with-the-q2",
+  "sectionId": "sm-1172-peculiarities-of-position-with-the",
+  "questions": [
+   {
+    "prompt": "The love of this man.",
+    "answer": "ὁ τούτου ἔρως τοῦ ἀνθρώπου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τούτου",
+     "ἔρως",
+     "τοῦ",
+     "ἀνθρώπου"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "213c"
+    }
+   },
+   {
+    "prompt": "Let this be a sufficient defence.",
+    "answer": "αὕτη ἔστω ἱκανὴ ἀπολογία",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὕτη",
+     "ἔστω",
+     "ἱκανὴ",
+     "ἀπολογία"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "24b"
+    }
+   },
+   {
+    "prompt": "I think this is my native country.",
+    "answer": "οἶμαι ἐμὴν ταύτην πατρίδα εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "ἐμὴν",
+     "ταύτην",
+     "πατρίδα",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.8.4"
+    }
+   },
+   {
+    "prompt": "We have come against this land, in which our fathers conquered the Medes.",
+    "answer": "ἐπὶ γῆν τήνδε ἤλθομεν, ἐν ᾗ οἱ πατέρες ἡμῶν Μήδων ἐκράτησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπὶ",
+     "γῆν",
+     "τήνδε",
+     "ἤλθομεν",
+     "ἐν",
+     "ᾗ",
+     "οἱ",
+     "πατέρες",
+     "ἡμῶν",
+     "Μήδων",
+     "ἐκράτησαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.74"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1172-peculiarities-of-position-with-the-q3",
+  "sectionId": "sm-1172-peculiarities-of-position-with-the",
+  "questions": [
+   {
+    "prompt": "Of so many and such blessings.",
+    "answer": "τῶν τοσούτων καὶ τοιούτων ἀγαθῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "τοσούτων",
+     "καὶ",
+     "τοιούτων",
+     "ἀγαθῶν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.305"
+    }
+   },
+   {
+    "prompt": "So great was the first armament which crossed over for the war.",
+    "answer": "τοσαύτη ἡ πρώτη παρασκευὴ πρὸς τὸν πόλεμον διέπλει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσαύτη",
+     "ἡ",
+     "πρώτη",
+     "παρασκευὴ",
+     "πρὸς",
+     "τὸν",
+     "πόλεμον",
+     "διέπλει"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.44"
+    }
+   },
+   {
+    "prompt": "Our old nature.",
+    "answer": "ἡ πάλαι ἡμῶν φύσις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πάλαι",
+     "ἡμῶν",
+     "φύσις"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "189d"
+    }
+   },
+   {
+    "prompt": "Not speaking words of my own.",
+    "answer": "οὐ λόγους ἐμαυτοῦ λέγων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "λόγους",
+     "ἐμαυτοῦ",
+     "λέγων"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "9.41"
+    }
+   }
+  ]
  }
 ]

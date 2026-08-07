@@ -767,5 +767,76 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2759-negatives-with-oste-and-the-infinitive-q1",
+  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+  "questions": [
+   {
+    "prompt": "Refraining from attacking.",
+    "answer": "ἀπεχόμενοι ὥστε μὴ ἐμβάλλειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεχόμενοι",
+     "ὥστε",
+     "μὴ",
+     "ἐμβάλλειν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.49"
+    }
+   },
+   {
+    "prompt": "The ravine in front of the walls prevented them from reaching the short cut to the Pellenians.",
+    "answer": "ὥστε γὰρ τὴν σύντομον πρὸς τοὺς Πελληνέας ἀφικέσθαι ἡ πρὸ τοῦ τείχους φάραγξ εἶργε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστε",
+     "γὰρ",
+     "τὴν",
+     "σύντομον",
+     "πρὸς",
+     "τοὺς",
+     "Πελληνέας",
+     "ἀφικέσθαι",
+     "ἡ",
+     "πρὸ",
+     "τοῦ",
+     "τείχους",
+     "φάραγξ",
+     "εἶργε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "7.2.13"
+    }
+   },
+   {
+    "prompt": "Neither will Eurybiades be able to prevent the fleet from being scattered.",
+    "answer": "οὔτε σφέας Εὐρυβιάδης κατέχειν δυνήσεται . . . ὥστε μὴ οὐ διασκεδασθῆναι τὴν στρατιήν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "σφέας",
+     "Εὐρυβιάδης",
+     "κατέχειν",
+     "δυνήσεται",
+     "ὥστε",
+     "μὴ",
+     "οὐ",
+     "διασκεδασθῆναι",
+     "τὴν",
+     "στρατιήν"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "8.57"
+    }
+   }
+  ]
  }
 ]

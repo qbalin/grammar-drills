@@ -1680,5 +1680,253 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1875-present-indicative-q1",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "For this man drinks water, whereas I drink wine.",
+    "answer": "οὗτος μὲν γὰρ ὕδωρ, ἐγὼ δ᾽ οἶνον πίνω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "μὲν",
+     "γὰρ",
+     "ὕδωρ",
+     "ἐγὼ",
+     "δ",
+     "οἶνον",
+     "πίνω"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.46"
+    }
+   },
+   {
+    "prompt": "They are trying to persuade you to throw away this renown.",
+    "answer": "τὴν δόξαν ταύτην πείθουσιν ὑμᾶς ἀποβαλεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "δόξαν",
+     "ταύτην",
+     "πείθουσιν",
+     "ὑμᾶς",
+     "ἀποβαλεῖν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "6.12"
+    }
+   },
+   {
+    "prompt": "I offer you this woman herself as a wife.",
+    "answer": "δίδωμί σοι αὐτὴν ταύτην γυναῖκα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δίδωμί",
+     "σοι",
+     "αὐτὴν",
+     "ταύτην",
+     "γυναῖκα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "8.5.19"
+    }
+   },
+   {
+    "prompt": "When Philip is preparing to advance against Byzantium.",
+    "answer": "Φιλίππου ἐπὶ Βυζάντιον παριόντος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Φιλίππου",
+     "ἐπὶ",
+     "Βυζάντιον",
+     "παριόντος"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "8.66"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-q2",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "If this city is taken, the whole of Sicily as well is in their power.",
+    "answer": "εἰ αὕτη ἡ πόλις ληφθήσεται, ἔχεται καὶ ἡ πᾶσα Σικελία",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "αὕτη",
+     "ἡ",
+     "πόλις",
+     "ληφθήσεται",
+     "ἔχεται",
+     "καὶ",
+     "ἡ",
+     "πᾶσα",
+     "Σικελία"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.91"
+    }
+   },
+   {
+    "prompt": "At daybreak he assaulted the town and took it.",
+    "answer": "ἅμα δὲ τῇ ἡμέρᾳ τῇ πόλει προσέκειτο καὶ αἱρεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "δὲ",
+     "τῇ",
+     "ἡμέρᾳ",
+     "τῇ",
+     "πόλει",
+     "προσέκειτο",
+     "καὶ",
+     "αἱρεῖ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.29"
+    }
+   },
+   {
+    "prompt": "Accordingly they all enrolled themselves and took the arms.",
+    "answer": "οὕτω δὴ ἀπογράφονται πάντες ἀνέλαβόν τε τὰ ὅπλα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "δὴ",
+     "ἀπογράφονται",
+     "πάντες",
+     "ἀνέλαβόν",
+     "τε",
+     "τὰ",
+     "ὅπλα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.1.19"
+    }
+   },
+   {
+    "prompt": "And the year came to an end in which the Carthaginians captured two Greek cities.",
+    "answer": "καὶ ὁ ἐνιαυτὸς ἔληγεν, ἐν ᾧ Καρχηδόνιοι αἱροῦσι δύο πόλεις Ἑλληνίδας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ὁ",
+     "ἐνιαυτὸς",
+     "ἔληγεν",
+     "ἐν",
+     "ᾧ",
+     "Καρχηδόνιοι",
+     "αἱροῦσι",
+     "δύο",
+     "πόλεις",
+     "Ἑλληνίδας"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "1.1.37"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1875-present-indicative-q3",
+  "sectionId": "sm-1875-present-indicative",
+  "questions": [
+   {
+    "prompt": "I Themistocles have come to you.",
+    "answer": "Θεμιστοκλῆς ἥκω παρὰ σέ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Θεμιστοκλῆς",
+     "ἥκω",
+     "παρὰ",
+     "σέ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.137"
+    }
+   },
+   {
+    "prompt": "I am come to thy house, but have done no wrong.",
+    "answer": "ἥκω εἰς τὴν σὴν οἰκίαν, ἀδικῶ δ᾽ οὐδέν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥκω",
+     "εἰς",
+     "τὴν",
+     "σὴν",
+     "οἰκίαν",
+     "ἀδικῶ",
+     "δ",
+     "οὐδέν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.14"
+    }
+   },
+   {
+    "prompt": "Report to Ariaeus that we at least have conquered the king.",
+    "answer": "ἀπαγγέλλετε Ἀριαίῳ ὅτι ἡμεῖς γε νικῶμεν βασιλέα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπαγγέλλετε",
+     "Ἀριαίῳ",
+     "ὅτι",
+     "ἡμεῖς",
+     "γε",
+     "νικῶμεν",
+     "βασιλέα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.4"
+    }
+   },
+   {
+    "prompt": "He said that he was ready to lead them.",
+    "answer": "ἔλεγεν ὅτι ἕτοιμος εἴη ἡγεῖσθαι αὐτοῖς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "ἕτοιμος",
+     "εἴη",
+     "ἡγεῖσθαι",
+     "αὐτοῖς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.1.33"
+    }
+   }
+  ]
  }
 ]

@@ -686,5 +686,59 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1126-fluctuation-in-the-use-of-the-article-q1",
+  "sectionId": "sm-1126-fluctuation-in-the-use-of-the-article",
+  "questions": [
+   {
+    "prompt": "In the beginning of the speech.",
+    "answer": "ἐν ἀρχῇ τοῦ λόγου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἀρχῇ",
+     "τοῦ",
+     "λόγου"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "37.23"
+    }
+   },
+   {
+    "prompt": "Eion on the Strymon.",
+    "answer": "Ἠιόνα τὴν ἐπὶ Στρυμόνι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἠιόνα",
+     "τὴν",
+     "ἐπὶ",
+     "Στρυμόνι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.98"
+    }
+   },
+   {
+    "prompt": "The utter destruction of the enemy.",
+    "answer": "τῶν ἐχθρῶν ἄρδην ὄλεθρος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἐχθρῶν",
+     "ἄρδην",
+     "ὄλεθρος"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.141"
+    }
+   }
+  ]
  }
 ]

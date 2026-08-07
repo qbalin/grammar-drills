@@ -1178,5 +1178,154 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1495-dative-of-relation-q1",
+  "sectionId": "sm-1495-dative-of-relation",
+  "questions": [
+   {
+    "prompt": "It is safer for them to flee than for us.",
+    "answer": "φευγειν αὐτοῖς ἀσφαλέστερόν ἐστιν ἢ ἡμῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φευγειν",
+     "αὐτοῖς",
+     "ἀσφαλέστερόν",
+     "ἐστιν",
+     "ἢ",
+     "ἡμῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.19"
+    }
+   },
+   {
+    "prompt": "The soldiers began to run.",
+    "answer": "δρόμος ἐγένετο τοῖς στρατιώταις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δρόμος",
+     "ἐγένετο",
+     "τοῖς",
+     "στρατιώταις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.17"
+    }
+   },
+   {
+    "prompt": "Darius contracted marriages most distinguished in the eyes of the Persians.",
+    "answer": "γάμους τοὺς πρώτους ἐγάμει Πέρσῃσι ὁ Δαρεῖος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γάμους",
+     "τοὺς",
+     "πρώτους",
+     "ἐγάμει",
+     "Πέρσῃσι",
+     "ὁ",
+     "Δαρεῖος"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "3.88"
+    }
+   },
+   {
+    "prompt": "Thrace is on the right as you sail into the Pontus.",
+    "answer": "ἡ Θρᾴκη ἐστὶν ἐπὶ δεξιὰ εἰς τὸν Πόντον εἰσπλέοντι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "Θρᾴκη",
+     "ἐστὶν",
+     "ἐπὶ",
+     "δεξιὰ",
+     "εἰς",
+     "τὸν",
+     "Πόντον",
+     "εἰσπλέοντι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.4.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1495-dative-of-relation-q2",
+  "sectionId": "sm-1495-dative-of-relation",
+  "questions": [
+   {
+    "prompt": "If you touched the surface the body was not very hot.",
+    "answer": "τὸ μὲν ἔξωθεν ἁπτομένῳ σῶμα οὐκ ἄγαν θερμὸν ἦν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "μὲν",
+     "ἔξωθεν",
+     "ἁπτομένῳ",
+     "σῶμα",
+     "οὐκ",
+     "ἄγαν",
+     "θερμὸν",
+     "ἦν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.49"
+    }
+   },
+   {
+    "prompt": "Prometheus comes to him in his perplexity.",
+    "answer": "ἀποροῦντι δ᾽ αὐτῷ ἔρχεται Προμηθεύς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀποροῦντι",
+     "δ",
+     "αὐτῷ",
+     "ἔρχεται",
+     "Προμηθεύς"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "321c"
+    }
+   },
+   {
+    "prompt": "It is already fifty-two years since the expedition sailed to Sicily.",
+    "answer": "τῇ στρατιᾷ, ἀφ᾽ οὗ ἐξέπλευσεν εἰς Σικελίαν, ἤδη ἐστὶ δύο καὶ πεντήκοντα ἔτη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῇ",
+     "στρατιᾷ",
+     "ἀφ",
+     "οὗ",
+     "ἐξέπλευσεν",
+     "εἰς",
+     "Σικελίαν",
+     "ἤδη",
+     "ἐστὶ",
+     "δύο",
+     "καὶ",
+     "πεντήκοντα",
+     "ἔτη"
+    ],
+    "source": {
+     "author": "Isaeus",
+     "work": "Orations",
+     "locus": "6.14"
+    }
+   }
+  ]
  }
 ]

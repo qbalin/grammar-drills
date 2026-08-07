@@ -446,5 +446,87 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2632-remarks-on-the-constructions-of-q1",
+  "sectionId": "sm-2632-remarks-on-the-constructions-of",
+  "questions": [
+   {
+    "prompt": "These said that Cyrus was dead but that Ariaeus had fled.",
+    "answer": "οὗτοι ἔλεγον ὅτι Κῦρος μὲν τέθνηκεν, Ἀριαῖος δὲ πεφευγὼς . . . εἴη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "ἔλεγον",
+     "ὅτι",
+     "Κῦρος",
+     "μὲν",
+     "τέθνηκεν",
+     "Ἀριαῖος",
+     "δὲ",
+     "πεφευγὼς",
+     "εἴη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.3"
+    }
+   },
+   {
+    "prompt": "It seemed to be clear that they would elect him if any one should put it to vote.",
+    "answer": "ἐδόκει δῆλον εἶναι ὅτι αἱρήσονται αὐτὸν εἴ τις ἐπιψηφίζοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδόκει",
+     "δῆλον",
+     "εἶναι",
+     "ὅτι",
+     "αἱρήσονται",
+     "αὐτὸν",
+     "εἴ",
+     "τις",
+     "ἐπιψηφίζοι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.1.25"
+    }
+   },
+   {
+    "prompt": "And some one urged that they choose other generals.",
+    "answer": "στρατηγοὺς μὲν ἑλέσθαι ἄλλους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατηγοὺς",
+     "μὲν",
+     "ἑλέσθαι",
+     "ἄλλους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.3.14"
+    }
+   },
+   {
+    "prompt": "He said that they ought to sail to Syracuse.",
+    "answer": "ἔφη . . . χρῆναι πλεῖν ἐπὶ Συρακούσας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "χρῆναι",
+     "πλεῖν",
+     "ἐπὶ",
+     "Συρακούσας"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.69"
+    }
+   }
+  ]
  }
 ]

@@ -1689,5 +1689,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2054-the-circumstantial-participle-q1",
+  "sectionId": "sm-2054-the-circumstantial-participle",
+  "questions": [
+   {
+    "prompt": "Having sent a herald in advance to proclaim war.",
+    "answer": "προπέμψαντες κήρυκα πόλεμον προεροῦντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προπέμψαντες",
+     "κήρυκα",
+     "πόλεμον",
+     "προεροῦντα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.29"
+    }
+   },
+   {
+    "prompt": "Cyrus ascended the mountains without any one preventing him.",
+    "answer": "Κῦρος ἀνέβη ἐπὶ τὰ ὄρη οὐδενὸς κωλύοντος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "ἀνέβη",
+     "ἐπὶ",
+     "τὰ",
+     "ὄρη",
+     "οὐδενὸς",
+     "κωλύοντος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.22"
+    }
+   },
+   {
+    "prompt": "You claim to be favoured by fortune as happily you are in fact.",
+    "answer": "φατὲ μὲν εὐτυχεῖς εἶναι, ὡς καὶ ἐστὲ καλῶς ποιοῦντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φατὲ",
+     "μὲν",
+     "εὐτυχεῖς",
+     "εἶναι",
+     "ὡς",
+     "καὶ",
+     "ἐστὲ",
+     "καλῶς",
+     "ποιοῦντες"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.232"
+    }
+   },
+   {
+    "prompt": "He sailed out unobserved by the guard.",
+    "answer": "ἔκπλουν ποιεῖται λαθὼν τὴν φυλακήν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔκπλουν",
+     "ποιεῖται",
+     "λαθὼν",
+     "τὴν",
+     "φυλακήν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.65"
+    }
+   }
+  ]
  }
 ]

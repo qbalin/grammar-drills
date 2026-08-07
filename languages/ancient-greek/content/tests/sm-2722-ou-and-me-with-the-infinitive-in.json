@@ -1507,5 +1507,258 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2722-ou-and-me-with-the-infinitive-in-q1",
+  "sectionId": "sm-2722-ou-and-me-with-the-infinitive-in",
+  "questions": [
+   {
+    "prompt": "We declare that no one of the gods either now contends with necessity, or ever will.",
+    "answer": "φαμεν οὐδένα θεῶν οὔτε μάχεσθαι τὰ νῦν οὔτε μαχεῖσθαί ποτε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φαμεν",
+     "οὐδένα",
+     "θεῶν",
+     "οὔτε",
+     "μάχεσθαι",
+     "τὰ",
+     "νῦν",
+     "οὔτε",
+     "μαχεῖσθαί",
+     "ποτε"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "818e"
+    }
+   },
+   {
+    "prompt": "Saying that they were not independent.",
+    "answer": "λέγοντες οὐκ εἶναι αὐτόνομοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγοντες",
+     "οὐκ",
+     "εἶναι",
+     "αὐτόνομοι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.67"
+    }
+   },
+   {
+    "prompt": "For I think it would not be unattended with gratitude to me.",
+    "answer": "οἶμαι γὰρ ἂν οὐκ ἀχαρίστως μοι ἔχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶμαι",
+     "γὰρ",
+     "ἂν",
+     "οὐκ",
+     "ἀχαρίστως",
+     "μοι",
+     "ἔχειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.3.18"
+    }
+   },
+   {
+    "prompt": "They thought that we should not view it with indifference.",
+    "answer": "ἡγήσαντο ἡμᾶς οὐ περιόψεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡγήσαντο",
+     "ἡμᾶς",
+     "οὐ",
+     "περιόψεσθαι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.39"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2722-ou-and-me-with-the-infinitive-in-q2",
+  "sectionId": "sm-2722-ou-and-me-with-the-infinitive-in",
+  "questions": [
+   {
+    "prompt": "But these persons seem to me not to blame the real cause.",
+    "answer": "ἐμοὶ δὲ δοκοῦσιν οὗτοι οὐ τὸ αἴτιον αἰτιᾶσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμοὶ",
+     "δὲ",
+     "δοκοῦσιν",
+     "οὗτοι",
+     "οὐ",
+     "τὸ",
+     "αἴτιον",
+     "αἰτιᾶσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "329b"
+    }
+   },
+   {
+    "prompt": "He thought the besiegers would not be able to hold their position.",
+    "answer": "ἐνόμισεν οὐκ ἂν δύνασθαι μένειν τοὺς πολιορκοῦντας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνόμισεν",
+     "οὐκ",
+     "ἂν",
+     "δύνασθαι",
+     "μένειν",
+     "τοὺς",
+     "πολιορκοῦντας"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.4.22"
+    }
+   },
+   {
+    "prompt": "But for my part I would maintain that no one gets any education from a teacher who is not pleasing.",
+    "answer": "φαίην δ᾽ ἂν ἔγωγε μηδενὶ μηδεμίαν εἶναι παίδευσιν παρὰ τοῦ μὴ ἀρέσκοντος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φαίην",
+     "δ",
+     "ἂν",
+     "ἔγωγε",
+     "μηδενὶ",
+     "μηδεμίαν",
+     "εἶναι",
+     "παίδευσιν",
+     "παρὰ",
+     "τοῦ",
+     "μὴ",
+     "ἀρέσκοντος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.2.39"
+    }
+   },
+   {
+    "prompt": "All will say that nothing is more profitable than bravery.",
+    "answer": "πάντες ἐροῦσι . . . μηδὲν εἶναι κερδαλεώτερον ἀρετῆς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ἐροῦσι",
+     "μηδὲν",
+     "εἶναι",
+     "κερδαλεώτερον",
+     "ἀρετῆς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.1.18"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2722-ou-and-me-with-the-infinitive-in-q3",
+  "sectionId": "sm-2722-ou-and-me-with-the-infinitive-in",
+  "questions": [
+   {
+    "prompt": "They departed in the belief that they would no longer prove able to prevent the building of the wall to the sea.",
+    "answer": "ἀπῇσαν . . . νομίσαντες μὴ ἂν ἔτι . . . ἱκανοὶ γενέσθαι κωλῦσαι τὸν ἐπὶ τὴν θάλασσαν τειχισμόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπῇσαν",
+     "νομίσαντες",
+     "μὴ",
+     "ἂν",
+     "ἔτι",
+     "ἱκανοὶ",
+     "γενέσθαι",
+     "κωλῦσαι",
+     "τὸν",
+     "ἐπὶ",
+     "τὴν",
+     "θάλασσαν",
+     "τειχισμόν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.102"
+    }
+   },
+   {
+    "prompt": "The Pythian prophetess made answer that no one was wiser.",
+    "answer": "ἀνεῖλεν ἡ Πυθία μηδένα σοφώτερον εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνεῖλεν",
+     "ἡ",
+     "Πυθία",
+     "μηδένα",
+     "σοφώτερον",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "21a"
+    }
+   },
+   {
+    "prompt": "They promised that they should suffer no harm.",
+    "answer": "ὑπισχνοῦντο μηδὲν χαλεπὸν αὐτοὺς πείσεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπισχνοῦντο",
+     "μηδὲν",
+     "χαλεπὸν",
+     "αὐτοὺς",
+     "πείσεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.4.5"
+    }
+   },
+   {
+    "prompt": "I wonder how the Athenians were persuaded that Socrates did not hold temperate opinions regarding the gods.",
+    "answer": "θαυμάζω ὅπως ἐπείσθησαν Ἀθηναῖοι Σωκράτην περὶ θεοὺς μὴ σωφρονεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "ὅπως",
+     "ἐπείσθησαν",
+     "Ἀθηναῖοι",
+     "Σωκράτην",
+     "περὶ",
+     "θεοὺς",
+     "μὴ",
+     "σωφρονεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.1.20"
+    }
+   }
+  ]
  }
 ]

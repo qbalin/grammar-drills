@@ -743,5 +743,68 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1113-various-uses-of-o-os-e-e-to-q1",
+  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+  "questions": [
+   {
+    "prompt": "Neither to these nor to those.",
+    "answer": "οὔτε τοῖς οὔτε τοῖς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "τοῖς",
+     "οὔτε",
+     "τοῖς"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "701e"
+    }
+   },
+   {
+    "prompt": "And as witness I will produce both Euthycritus and the man who said he was his master.",
+    "answer": "τόν τε Εὐθύκριτον . . . καὶ τὸν ὃς ἔρη δεσπότης τούτου εἶναι, μάρτυρας παρέξομαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "τε",
+     "Εὐθύκριτον",
+     "καὶ",
+     "τὸν",
+     "ὃς",
+     "ἔρη",
+     "δεσπότης",
+     "τούτου",
+     "εἶναι",
+     "μάρτυρας",
+     "παρέξομαι"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "23.8"
+    }
+   },
+   {
+    "prompt": "He aims at that which is equal.",
+    "answer": "ὀρέγεται τοῦ ὃ ἔστιν ἴσον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀρέγεται",
+     "τοῦ",
+     "ὃ",
+     "ἔστιν",
+     "ἴσον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "75b"
+    }
+   }
+  ]
  }
 ]

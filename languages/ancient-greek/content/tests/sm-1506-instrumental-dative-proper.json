@@ -1587,5 +1587,234 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1506-instrumental-dative-proper-q1",
+  "sectionId": "sm-1506-instrumental-dative-proper",
+  "questions": [
+   {
+    "prompt": "They freed themselves from the danger at the price of a part of their unjust gains.",
+    "answer": "μέρει τῶν ἀδικημάτων τὸν κίνδυνον ἐξεπρίαντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέρει",
+     "τῶν",
+     "ἀδικημάτων",
+     "τὸν",
+     "κίνδυνον",
+     "ἐξεπρίαντο"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "27.6"
+    }
+   },
+   {
+    "prompt": "The entire army being filled with tears.",
+    "answer": "δάκρυσι πᾶν τὸ στράτευμα πλησθέν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δάκρυσι",
+     "πᾶν",
+     "τὸ",
+     "στράτευμα",
+     "πλησθέν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.75"
+    }
+   },
+   {
+    "prompt": "He made chariots with strong wheels.",
+    "answer": "κατεσκευάσατο ἅρματα τροχοῖς ἰσχυροῖς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατεσκευάσατο",
+     "ἅρματα",
+     "τροχοῖς",
+     "ἰσχυροῖς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.1.29"
+    }
+   },
+   {
+    "prompt": "The gods have shown by the victims.",
+    "answer": "οἱ θεοὶ ἐν τοῖς ἱεροῖς ἐσήμηναν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "ἐν",
+     "τοῖς",
+     "ἱεροῖς",
+     "ἐσήμηναν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.1.31"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1506-instrumental-dative-proper-q2",
+  "sectionId": "sm-1506-instrumental-dative-proper",
+  "questions": [
+   {
+    "prompt": "We must judge by what he has done to the rest.",
+    "answer": "οἷς πρὸς τοὺς ἄλλους πεποίηκε δεῖ τεκμαίρεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἷς",
+     "πρὸς",
+     "τοὺς",
+     "ἄλλους",
+     "πεποίηκε",
+     "δεῖ",
+     "τεκμαίρεσθαι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "9.10"
+    }
+   },
+   {
+    "prompt": "He arrived not many days later.",
+    "answer": "οὐ πολλαῖς ἡμέραις ὕστερον ἦλθεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πολλαῖς",
+     "ἡμέραις",
+     "ὕστερον",
+     "ἦλθεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "1.1.1"
+    }
+   },
+   {
+    "prompt": "Coming ten days before the Panathenaic festival.",
+    "answer": "ἰόντες δέκα ἡμέραις πρὸ Παναθηναίων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἰόντες",
+     "δέκα",
+     "ἡμέραις",
+     "πρὸ",
+     "Παναθηναίων"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.47"
+    }
+   },
+   {
+    "prompt": "The more I possess the more pleasant is my life.",
+    "answer": "τοσούτῳ ἥδιον ζῶ ὅσῳ πλείω κέκτημαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσούτῳ",
+     "ἥδιον",
+     "ζῶ",
+     "ὅσῳ",
+     "πλείω",
+     "κέκτημαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "8.3.40"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1506-instrumental-dative-proper-q3",
+  "sectionId": "sm-1506-instrumental-dative-proper",
+  "questions": [
+   {
+    "prompt": "The shouting became much louder as the men increased in number.",
+    "answer": "πολλῷ μείζων ἐγίγνετο ἡ βοὴ ὅσῳ δὴ πλείους ἐγίγνοντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλῷ",
+     "μείζων",
+     "ἐγίγνετο",
+     "ἡ",
+     "βοὴ",
+     "ὅσῳ",
+     "δὴ",
+     "πλείους",
+     "ἐγίγνοντο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.7.23"
+    }
+   },
+   {
+    "prompt": "A man still young in years.",
+    "answer": "ἀνὴρ ἡλικίᾳ ἔτι νέος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνὴρ",
+     "ἡλικίᾳ",
+     "ἔτι",
+     "νέος"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.43"
+    }
+   },
+   {
+    "prompt": "Following out of friendship and good will.",
+    "answer": "φιλίᾳ καὶ εὐνοίᾳ ἑπόμενοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φιλίᾳ",
+     "καὶ",
+     "εὐνοίᾳ",
+     "ἑπόμενοι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.6.13"
+    }
+   },
+   {
+    "prompt": "Doing this out of insolence and not because he was drunk.",
+    "answer": "ὕβρει καὶ οὐκ οἴνῳ τοῦτο ποιῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὕβρει",
+     "καὶ",
+     "οὐκ",
+     "οἴνῳ",
+     "τοῦτο",
+     "ποιῶν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.74"
+    }
+   }
+  ]
  }
 ]

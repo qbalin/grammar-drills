@@ -393,5 +393,174 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2240-causal-clauses-q1",
+  "sectionId": "sm-2240-causal-clauses",
+  "questions": [
+   {
+    "prompt": "For he happened to be riding on a wagon from the fact that he had been wounded.",
+    "answer": "ἐτύγχανε γὰρ ἐφ᾽ ἁμάξης πορευόμενος διότι ἐτέτρωτο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐτύγχανε",
+     "γὰρ",
+     "ἐφ",
+     "ἁμάξης",
+     "πορευόμενος",
+     "διότι",
+     "ἐτέτρωτο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.2.14"
+    }
+   },
+   {
+    "prompt": "The Athenians reviled Pericles on the ground that, though he was general, he did not lead them out.",
+    "answer": "τὸν Περικλέα ἐκάκιζον ὅτι στρατηγὸς ὢν οὐκ ἐπεξάγοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "Περικλέα",
+     "ἐκάκιζον",
+     "ὅτι",
+     "στρατηγὸς",
+     "ὢν",
+     "οὐκ",
+     "ἐπεξάγοι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.21"
+    }
+   },
+   {
+    "prompt": "I am grieved that I am thus unable to say what I mean.",
+    "answer": "ἀγανακτῶ εἰ οὑτωσὶ ἃ νοῶ μὴ οἷός τ᾽ εἰμι εἰπεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγανακτῶ",
+     "εἰ",
+     "οὑτωσὶ",
+     "ἃ",
+     "νοῶ",
+     "μὴ",
+     "οἷός",
+     "τ",
+     "εἰμι",
+     "εἰπεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laches",
+     "locus": "194a"
+    }
+   },
+   {
+    "prompt": "Indignant that they could not discover those who were plotting against their commons.",
+    "answer": "δεινὸν ποιούμενοι εἰ τοὺς ἐπιβουλεύοντας σφῶν τῷ πλήθει μὴ εἴσονται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινὸν",
+     "ποιούμενοι",
+     "εἰ",
+     "τοὺς",
+     "ἐπιβουλεύοντας",
+     "σφῶν",
+     "τῷ",
+     "πλήθει",
+     "μὴ",
+     "εἴσονται"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.60"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2240-causal-clauses-q2",
+  "sectionId": "sm-2240-causal-clauses",
+  "questions": [
+   {
+    "prompt": "It is a marvel you are telling if they could be undetected.",
+    "answer": "τέρας λέγεις, εἰ . . . οὐκ ἂν δύναιντο λαθεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τέρας",
+     "λέγεις",
+     "εἰ",
+     "οὐκ",
+     "ἂν",
+     "δύναιντο",
+     "λαθεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Meno",
+     "locus": "91d"
+    }
+   },
+   {
+    "prompt": "I kept wondering if any one could deal with his theory.",
+    "answer": "ἐθαύμαζον εἴ τι ἕξει τις χρήσασθαι τῷ λόγῳ αὐτοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαύμαζον",
+     "εἴ",
+     "τι",
+     "ἕξει",
+     "τις",
+     "χρήσασθαι",
+     "τῷ",
+     "λόγῳ",
+     "αὐτοῦ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "95a"
+    }
+   },
+   {
+    "prompt": "Do not be surprised that I take it hard.",
+    "answer": "μὴ θαυμάζετε ὅτι χαλεπῶς φέρω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "θαυμάζετε",
+     "ὅτι",
+     "χαλεπῶς",
+     "φέρω"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.3.3"
+    }
+   },
+   {
+    "prompt": "Socrates was admired because he lived contentedly.",
+    "answer": "ἐθαυμάζετο ἐπὶ τῷ . . . εὐκόλως ζῆν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαυμάζετο",
+     "ἐπὶ",
+     "τῷ",
+     "εὐκόλως",
+     "ζῆν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.8.2"
+    }
+   }
+  ]
  }
 ]

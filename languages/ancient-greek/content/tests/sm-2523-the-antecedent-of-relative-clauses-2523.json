@@ -346,5 +346,77 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-q1",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "From what he begs and borrows, from that he lives.",
+    "answer": "προσαιτεῖ καὶ δανείζεται, ἀπὸ τούτων διάγει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσαιτεῖ",
+     "καὶ",
+     "δανείζεται",
+     "ἀπὸ",
+     "τούτων",
+     "διάγει"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "8.26"
+    }
+   },
+   {
+    "prompt": "Those who are best satisfied with what they have, covet least what is their neighbour's.",
+    "answer": "ἥκιστα τῶν ἀλλοτρίων ὀρέγονται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἥκιστα",
+     "τῶν",
+     "ἀλλοτρίων",
+     "ὀρέγονται"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Symposium",
+     "locus": "4"
+    }
+   },
+   {
+    "prompt": "Than which there is nothing more irrational.",
+    "answer": "οὐδενὸς ὅτου οὐχὶ ἀλογώτερον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδενὸς",
+     "ὅτου",
+     "οὐχὶ",
+     "ἀλογώτερον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Charmides",
+     "locus": "175c"
+    }
+   },
+   {
+    "prompt": "Replying to every one.",
+    "answer": "οὐδενὶ ὅτῳ οὐκ ἀποκρινόμενος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδενὶ",
+     "ὅτῳ",
+     "οὐκ",
+     "ἀποκρινόμενος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Meno",
+     "locus": "70c"
+    }
+   }
+  ]
  }
 ]

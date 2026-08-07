@@ -1706,5 +1706,76 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1636-syntax-of-prepositions-1636-q1",
+  "sectionId": "sm-1636-syntax-of-prepositions-1636",
+  "questions": [
+   {
+    "prompt": "Freedom from all rule.",
+    "answer": "ἀπὸ πασῶν ἀρχῶν ἐλευθερία",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπὸ",
+     "πασῶν",
+     "ἀρχῶν",
+     "ἐλευθερία"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "698a"
+    }
+   },
+   {
+    "prompt": "The barbarians in his own service.",
+    "answer": "οἱ παρ᾽ ἑαυτῷ βάρβαροι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παρ",
+     "ἑαυτῷ",
+     "βάρβαροι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.1.5"
+    }
+   },
+   {
+    "prompt": "Over the very greatest part of the throng.",
+    "answer": "ὡς ἐπὶ πλεῖστον τοῦ ὁμίλου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἐπὶ",
+     "πλεῖστον",
+     "τοῦ",
+     "ὁμίλου"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.34"
+    }
+   },
+   {
+    "prompt": "With far better reason.",
+    "answer": "πολὺ ἐν πλείονι αἰτίᾳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολὺ",
+     "ἐν",
+     "πλείονι",
+     "αἰτίᾳ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.35"
+    }
+   }
+  ]
  }
 ]

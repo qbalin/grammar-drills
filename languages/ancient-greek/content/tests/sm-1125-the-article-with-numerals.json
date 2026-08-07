@@ -617,5 +617,82 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1125-the-article-with-numerals-q1",
+  "sectionId": "sm-1125-the-article-with-numerals",
+  "questions": [
+   {
+    "prompt": "They remained about thirty days.",
+    "answer": "ἔμειναν ἡμέρας ἀμφὶ τὰς τριάκοντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔμειναν",
+     "ἡμέρας",
+     "ἀμφὶ",
+     "τὰς",
+     "τριάκοντα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.8.22"
+    }
+   },
+   {
+    "prompt": "About fifty years of age.",
+    "answer": "γεγονότες τὰ πεντήκοντα ἔτη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γεγονότες",
+     "τὰ",
+     "πεντήκοντα",
+     "ἔτη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.2.13"
+    }
+   },
+   {
+    "prompt": "Beware of saying 12 is twice 6.",
+    "answer": "ὅπως μὴ ἐρεῖς ὅτι ἔστιν τὰ δώδεκα δὶς ἕξ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "μὴ",
+     "ἐρεῖς",
+     "ὅτι",
+     "ἔστιν",
+     "τὰ",
+     "δώδεκα",
+     "δὶς",
+     "ἕξ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "337b"
+    }
+   },
+   {
+    "prompt": "In the second month they fortified the city.",
+    "answer": "δευτέρῳ μηνὶ τὴν πόλιν ἐτείχιζον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δευτέρῳ",
+     "μηνὶ",
+     "τὴν",
+     "πόλιν",
+     "ἐτείχιζον"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.64"
+    }
+   }
+  ]
  }
 ]

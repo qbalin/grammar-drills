@@ -789,5 +789,80 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1119-the-particular-article-q1",
+  "sectionId": "sm-1119-the-particular-article",
+  "questions": [
+   {
+    "prompt": "Wishing to fight the battle.",
+    "answer": "βουλόμενος τὴν μάχην ποιῆσαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλόμενος",
+     "τὴν",
+     "μάχην",
+     "ποιῆσαι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.91"
+    }
+   },
+   {
+    "prompt": "The people of the Athenians.",
+    "answer": "ὁ δῆμος ὁ Ἀθηναίων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "ὁ",
+     "Ἀθηναίων"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.116"
+    }
+   },
+   {
+    "prompt": "Read the letter that he sent.",
+    "answer": "λέγε τὴν ἐπιστολήν, ἣν ἔπεμψεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγε",
+     "τὴν",
+     "ἐπιστολήν",
+     "ἣν",
+     "ἔπεμψεν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.39"
+    }
+   },
+   {
+    "prompt": "Cyrus leaped down from his chariot and put on his breastplate.",
+    "answer": "Κῦρος καταπηδήσας ἀπὸ τοῦ ἅρματος τὸν θώρακα ἐνέδυ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "καταπηδήσας",
+     "ἀπὸ",
+     "τοῦ",
+     "ἅρματος",
+     "τὸν",
+     "θώρακα",
+     "ἐνέδυ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.3"
+    }
+   }
+  ]
  }
 ]

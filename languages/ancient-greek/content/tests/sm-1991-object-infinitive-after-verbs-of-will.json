@@ -1684,5 +1684,155 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1991-object-infinitive-after-verbs-of-will-q1",
+  "sectionId": "sm-1991-object-infinitive-after-verbs-of-will",
+  "questions": [
+   {
+    "prompt": "They planned to leave the city.",
+    "answer": "ἐβουλεύοντο ἐκλιπεῖν τὴν πόλιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβουλεύοντο",
+     "ἐκλιπεῖν",
+     "τὴν",
+     "πόλιν"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "6.100"
+    }
+   },
+   {
+    "prompt": "He seeks to do what he likes best.",
+    "answer": "τὰ ἥδιστα . . . ζητεῖ ποιεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ἥδιστα",
+     "ζητεῖ",
+     "ποιεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.5.11"
+    }
+   },
+   {
+    "prompt": "The king asks that you sail away.",
+    "answer": "βασιλεὺς ἀξιοῖ σὲ ἀποπλεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βασιλεὺς",
+     "ἀξιοῖ",
+     "σὲ",
+     "ἀποπλεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "3.4.25"
+    }
+   },
+   {
+    "prompt": "It was decided that Alcibiades should sail.",
+    "answer": "ἔδοξε πλεῖν τὸν Ἀλκιβιάδην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξε",
+     "πλεῖν",
+     "τὸν",
+     "Ἀλκιβιάδην"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.29"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1991-object-infinitive-after-verbs-of-will-q2",
+  "sectionId": "sm-1991-object-infinitive-after-verbs-of-will",
+  "questions": [
+   {
+    "prompt": "He urged him to go by himself.",
+    "answer": "ἔπειθεν αὐτὸν καθ᾽ αὑτὸν πορεύεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπειθεν",
+     "αὐτὸν",
+     "καθ",
+     "αὑτὸν",
+     "πορεύεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.2.13"
+    }
+   },
+   {
+    "prompt": "For most people will not be convinced that of your own free will you did not desire to go away.",
+    "answer": "οὐ γὰρ πείσονται οἱ πολλοί, ὡς σὺ αὐτὸς οὐκ ἠθέλησας ἀπιέναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "γὰρ",
+     "πείσονται",
+     "οἱ",
+     "πολλοί",
+     "ὡς",
+     "σὺ",
+     "αὐτὸς",
+     "οὐκ",
+     "ἠθέλησας",
+     "ἀπιέναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Crito",
+     "locus": "44c"
+    }
+   },
+   {
+    "prompt": "I ask you to render a just verdict.",
+    "answer": "δέομαι ὑμῶν . . . τὰ δίκαια ψηφίσασθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέομαι",
+     "ὑμῶν",
+     "τὰ",
+     "δίκαια",
+     "ψηφίσασθαι"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "19.51"
+    }
+   },
+   {
+    "prompt": "He ordered all the rest to arm themselves.",
+    "answer": "τοῖς ἄλλοις πᾶσι παρήγγελλεν ἐξοπλίζεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ἄλλοις",
+     "πᾶσι",
+     "παρήγγελλεν",
+     "ἐξοπλίζεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.3"
+    }
+   }
+  ]
  }
 ]

@@ -633,5 +633,71 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1320-genitive-of-quality-q1",
+  "sectionId": "sm-1320-genitive-of-quality",
+  "questions": [
+   {
+    "prompt": "But some few of the same opinion fled.",
+    "answer": "οἱ δέ τινες τῆς αὐτῆς γνώμης ὀλίγοι κατέφυγον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δέ",
+     "τινες",
+     "τῆς",
+     "αὐτῆς",
+     "γνώμης",
+     "ὀλίγοι",
+     "κατέφυγον"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.70"
+    }
+   },
+   {
+    "prompt": "This calls for a thorough discussion.",
+    "answer": "ταῦτα παμπόλλων ἐστὶ λόγων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "παμπόλλων",
+     "ἐστὶ",
+     "λόγων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "642a"
+    }
+   },
+   {
+    "prompt": "If these matters seem to involve great expense and much toil and trouble.",
+    "answer": "εἰ δοκεῖ ταῦτα καὶ δαπάνης μεγάλης καὶ πόνων πολλῶν καὶ πραγματείας εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δοκεῖ",
+     "ταῦτα",
+     "καὶ",
+     "δαπάνης",
+     "μεγάλης",
+     "καὶ",
+     "πόνων",
+     "πολλῶν",
+     "καὶ",
+     "πραγματείας",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "8.48"
+    }
+   }
+  ]
  }
 ]

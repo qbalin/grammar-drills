@@ -1489,5 +1489,328 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1154-attributive-position-of-the-article-q1",
+  "sectionId": "sm-1154-attributive-position-of-the-article",
+  "questions": [
+   {
+    "prompt": "Some of the barbarian cavalry.",
+    "answer": "τῶν βαρβάρων τινὲς ἱππέων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "βαρβάρων",
+     "τινὲς",
+     "ἱππέων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.32"
+    }
+   },
+   {
+    "prompt": "In former times.",
+    "answer": "ἐν τῷ πρὸ τοῦ χρόνῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῷ",
+     "πρὸ",
+     "τοῦ",
+     "χρόνῳ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "53.12"
+    }
+   },
+   {
+    "prompt": "Seeing the terror inspired by the Greeks in the barbarians.",
+    "answer": "τὸν ἐκ τῶν Ἑλλήνων εἰς τοὺς βαρβάρους φόβον ἰδών",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἐκ",
+     "τῶν",
+     "Ἑλλήνων",
+     "εἰς",
+     "τοὺς",
+     "βαρβάρους",
+     "φόβον",
+     "ἰδών"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.18"
+    }
+   },
+   {
+    "prompt": "The army of the Athenians.",
+    "answer": "τὸ στράτευμα τὸ τῶν Ἀθηναίων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "τὸ",
+     "τῶν",
+     "Ἀθηναίων"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.50"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1154-attributive-position-of-the-article-q2",
+  "sectionId": "sm-1154-attributive-position-of-the-article",
+  "questions": [
+   {
+    "prompt": "On the journey as far as the sea.",
+    "answer": "ἐν τῇ πορείᾳ τῇ μέχρι ἐπὶ θάλατταν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "πορείᾳ",
+     "τῇ",
+     "μέχρι",
+     "ἐπὶ",
+     "θάλατταν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.1.1"
+    }
+   },
+   {
+    "prompt": "The house of Simon.",
+    "answer": "ἡ οἰκία ἡ Σίμωνος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "οἰκία",
+     "ἡ",
+     "Σίμωνος"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "3.32"
+    }
+   },
+   {
+    "prompt": "The effrontery of the speakers.",
+    "answer": "ἡ τόλμα τῶν λεγόντων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τόλμα",
+     "τῶν",
+     "λεγόντων"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.41"
+    }
+   },
+   {
+    "prompt": "The work of the art of the wool-carder.",
+    "answer": "τὸ τῆς τοῦ ξαίνοντος τέχνης ἔργον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τῆς",
+     "τοῦ",
+     "ξαίνοντος",
+     "τέχνης",
+     "ἔργον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Statesman",
+     "locus": "281a"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1154-attributive-position-of-the-article-q3",
+  "sectionId": "sm-1154-attributive-position-of-the-article",
+  "questions": [
+   {
+    "prompt": "To the other Arcadian cities.",
+    "answer": "εἰς τὰς ἄλλας Ἀρκαδικὰς πόλεις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τὰς",
+     "ἄλλας",
+     "Ἀρκαδικὰς",
+     "πόλεις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "7.4.38"
+    }
+   },
+   {
+    "prompt": "The sanctuary of Lycean Zeus in Arcadia.",
+    "answer": "τὸ ἐν Ἀρκαδίᾳ τὸ τοῦ Διὸς τοῦ Λυκαίου ἱερόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἐν",
+     "Ἀρκαδίᾳ",
+     "τὸ",
+     "τοῦ",
+     "Διὸς",
+     "τοῦ",
+     "Λυκαίου",
+     "ἱερόν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "565d"
+    }
+   },
+   {
+    "prompt": "To the other tower at the mouth of the harbour which was narrow.",
+    "answer": "ἐς τὸν ἐπὶ τῷ στόματι τοῦ λιμένος στενοῦ ὄντος τὸν ἕτερον πύργον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐς",
+     "τὸν",
+     "ἐπὶ",
+     "τῷ",
+     "στόματι",
+     "τοῦ",
+     "λιμένος",
+     "στενοῦ",
+     "ὄντος",
+     "τὸν",
+     "ἕτερον",
+     "πύργον"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.90"
+    }
+   },
+   {
+    "prompt": "In the house of Charmides by the Olympieum.",
+    "answer": "ἐν τῇ οἰκίᾳ τῇ Χαρμίδου τῇ παρὰ τὸ Ὀλυμπιεῖον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇ",
+     "οἰκίᾳ",
+     "τῇ",
+     "Χαρμίδου",
+     "τῇ",
+     "παρὰ",
+     "τὸ",
+     "Ὀλυμπιεῖον"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "1.16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1154-attributive-position-of-the-article-q4",
+  "sectionId": "sm-1154-attributive-position-of-the-article",
+  "questions": [
+   {
+    "prompt": "From the Greek cities in Asia.",
+    "answer": "ἀπὸ τῶν ἐν τῇ Ἀσίᾳ πόλεων Ἑλληνίδων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπὸ",
+     "τῶν",
+     "ἐν",
+     "τῇ",
+     "Ἀσίᾳ",
+     "πόλεων",
+     "Ἑλληνίδων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.3.15"
+    }
+   },
+   {
+    "prompt": "With regard to the great failure of the Athenians in Sicily.",
+    "answer": "πρὸς τὴν ἐκ τῆς Σικελίας τῶν Ἀθηναίων μεγάλην κακοπραγίαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸς",
+     "τὴν",
+     "ἐκ",
+     "τῆς",
+     "Σικελίας",
+     "τῶν",
+     "Ἀθηναίων",
+     "μεγάλην",
+     "κακοπραγίαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.2"
+    }
+   },
+   {
+    "prompt": "The long southern wall.",
+    "answer": "τὸ τεῖχος τὸ μακρὸν τὸ νότιον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τεῖχος",
+     "τὸ",
+     "μακρὸν",
+     "τὸ",
+     "νότιον"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "3.7"
+    }
+   },
+   {
+    "prompt": "Solon detested men like this man here.",
+    "answer": "Σόλων ἐμίσει τοὺς οἷος οὗτος ἀνθρώπους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Σόλων",
+     "ἐμίσει",
+     "τοὺς",
+     "οἷος",
+     "οὗτος",
+     "ἀνθρώπους"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.254"
+    }
+   }
+  ]
  }
 ]

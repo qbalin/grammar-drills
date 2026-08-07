@@ -1261,5 +1261,70 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2754-ou-me-q1",
+  "sectionId": "sm-2754-ou-me",
+  "questions": [
+   {
+    "prompt": "If we are victorious, the Peloponnesians will never invade your territory.",
+    "answer": "ἢν νικήσωμεν, οὐ μή ποτε ὑμῖν Πελοποννήσιοι ἐσβάλωσιν ἐς τὴν χώραν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἢν",
+     "νικήσωμεν",
+     "οὐ",
+     "μή",
+     "ποτε",
+     "ὑμῖν",
+     "Πελοποννήσιοι",
+     "ἐσβάλωσιν",
+     "ἐς",
+     "τὴν",
+     "χώραν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.95"
+    }
+   },
+   {
+    "prompt": "Not one of the enemy will stand his ground any longer.",
+    "answer": "οὐδεὶς μηκέτι μείνῃ τῶν πολεμίων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "μηκέτι",
+     "μείνῃ",
+     "τῶν",
+     "πολεμίων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.8.13"
+    }
+   },
+   {
+    "prompt": "Your enemies will not be able to withstand you.",
+    "answer": "οὐ μή σοι δύνωνται ἀντέχειν οἱ πολέμιοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μή",
+     "σοι",
+     "δύνωνται",
+     "ἀντέχειν",
+     "οἱ",
+     "πολέμιοι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hiero",
+     "locus": "11.15"
+    }
+   }
+  ]
  }
 ]

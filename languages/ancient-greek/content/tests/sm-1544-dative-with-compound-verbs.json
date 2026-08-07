@@ -691,5 +691,59 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1544-dative-with-compound-verbs-q1",
+  "sectionId": "sm-1544-dative-with-compound-verbs",
+  "questions": [
+   {
+    "prompt": "The Greek force fell upon them.",
+    "answer": "αὐτοῖς ἐπέπεσε τὸ Ἑλληνικόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοῖς",
+     "ἐπέπεσε",
+     "τὸ",
+     "Ἑλληνικόν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.1.10"
+    }
+   },
+   {
+    "prompt": "These did not join the king.",
+    "answer": "οὗτοι οὐ παρεγένοντο βασιλεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "οὐ",
+     "παρεγένοντο",
+     "βασιλεῖ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.6.8"
+    }
+   },
+   {
+    "prompt": "Remaining in Attica.",
+    "answer": "ἐμμείναντες ἐν τῇ Ἀττικῇ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμμείναντες",
+     "ἐν",
+     "τῇ",
+     "Ἀττικῇ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.23"
+    }
+   }
+  ]
  }
 ]

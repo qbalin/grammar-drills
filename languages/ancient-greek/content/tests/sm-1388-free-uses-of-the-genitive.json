@@ -799,5 +799,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1388-free-uses-of-the-genitive-q1",
+  "sectionId": "sm-1388-free-uses-of-the-genitive",
+  "questions": [
+   {
+    "prompt": "The Athenians will not be satisfied with them in this.",
+    "answer": "Ἀθηναῖοι σφῶν ταῦτα οὐκ ἀποδέξονται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀθηναῖοι",
+     "σφῶν",
+     "ταῦτα",
+     "οὐκ",
+     "ἀποδέξονται"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.48"
+    }
+   },
+   {
+    "prompt": "Contemplating how large a country they possess.",
+    "answer": "διαθεώμενος αὐτῶν ὅσην χώραν ἔχοιεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαθεώμενος",
+     "αὐτῶν",
+     "ὅσην",
+     "χώραν",
+     "ἔχοιεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.19"
+    }
+   },
+   {
+    "prompt": "He took note also how they asked each other questions.",
+    "answer": "ἐνενόησε δὲ αὐτῶν καὶ ὡς ἐπηρώτων ἀλλήλους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνενόησε",
+     "δὲ",
+     "αὐτῶν",
+     "καὶ",
+     "ὡς",
+     "ἐπηρώτων",
+     "ἀλλήλους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.2.18"
+    }
+   },
+   {
+    "prompt": "I wonder at those who are willing to die in defence of their personal opinions.",
+    "answer": "θαυμάζω τῶν ὑπὲρ τῆς ἰδίας δόξης ἀποθνῄσκειν ἐθελόντων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "τῶν",
+     "ὑπὲρ",
+     "τῆς",
+     "ἰδίας",
+     "δόξης",
+     "ἀποθνῄσκειν",
+     "ἐθελόντων"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "6.93"
+    }
+   }
+  ]
  }
 ]

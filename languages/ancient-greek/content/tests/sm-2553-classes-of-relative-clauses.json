@@ -406,5 +406,185 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-q1",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "This is what I want.",
+    "answer": "ταῦτ᾽ ἐστὶν ἃ ἐγὼ δέομαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτ",
+     "ἐστὶν",
+     "ἃ",
+     "ἐγὼ",
+     "δέομαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.2.34"
+    }
+   },
+   {
+    "prompt": "I say that we must send an embassy, which will inform some of this and incite others.",
+    "answer": "φημὶ δὴ δεῖν ἡμᾶς . . . πρεσβείαν πέμπειν, ἣ τοὺς μὲν διδάξει ταῦτα, τοὺς δὲ παροξυνεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φημὶ",
+     "δὴ",
+     "δεῖν",
+     "ἡμᾶς",
+     "πρεσβείαν",
+     "πέμπειν",
+     "ἣ",
+     "τοὺς",
+     "μὲν",
+     "διδάξει",
+     "ταῦτα",
+     "τοὺς",
+     "δὲ",
+     "παροξυνεῖ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "2.11"
+    }
+   },
+   {
+    "prompt": "The people voted to choose thirty men who should codify the ancestral laws by which they were to conduct the government.",
+    "answer": "ἔδοξε τῷ δήμῳ τριάκοντα ἄνδρας ἑλέσθαι, οἳ τοὺς πατρίους νόμους συγγράψουσι, καθ᾽ οὓς πολιτεύσουσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξε",
+     "τῷ",
+     "δήμῳ",
+     "τριάκοντα",
+     "ἄνδρας",
+     "ἑλέσθαι",
+     "οἳ",
+     "τοὺς",
+     "πατρίους",
+     "νόμους",
+     "συγγράψουσι",
+     "καθ",
+     "οὓς",
+     "πολιτεύσουσι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "2.3.2"
+    }
+   },
+   {
+    "prompt": "For each side did not have weapons so short that they could not reach each other.",
+    "answer": "οὐδὲν γὰρ οὕτω βραχὺ ὅπλον ἑκάτεροι εἶχον ᾧ οὐκ ἐξικνοῦντο ἀλλήλων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "γὰρ",
+     "οὕτω",
+     "βραχὺ",
+     "ὅπλον",
+     "ἑκάτεροι",
+     "εἶχον",
+     "ᾧ",
+     "οὐκ",
+     "ἐξικνοῦντο",
+     "ἀλλήλων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "7.5.17"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-q2",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "For there was nothing that you could have done.",
+    "answer": "οὐ γὰρ ἦν ὅ τι ἂν ἐποιεῖτε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "γὰρ",
+     "ἦν",
+     "ὅ",
+     "τι",
+     "ἂν",
+     "ἐποιεῖτε"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.43"
+    }
+   },
+   {
+    "prompt": "Whom every one would despise.",
+    "answer": "ὧν οὐκ ἔστιν ὅστις οὐκ ἂν καταφρονήσειεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὧν",
+     "οὐκ",
+     "ἔστιν",
+     "ὅστις",
+     "οὐκ",
+     "ἂν",
+     "καταφρονήσειεν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "8.52"
+    }
+   },
+   {
+    "prompt": "It is senseless to attack men of such a kind that we shall not hold them in subjection if we conquer them.",
+    "answer": "ἀνόητον ἐπὶ τοιούτους ἰέναι ὧν κρατήσας μὴ κατασχήσει τις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνόητον",
+     "ἐπὶ",
+     "τοιούτους",
+     "ἰέναι",
+     "ὧν",
+     "κρατήσας",
+     "μὴ",
+     "κατασχήσει",
+     "τις"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.11"
+    }
+   },
+   {
+    "prompt": "He needs some one to improve him.",
+    "answer": "δεῖταί τινος ὅστις αὐτὸν ὀνήσει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖταί",
+     "τινος",
+     "ὅστις",
+     "αὐτὸν",
+     "ὀνήσει"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthydemus",
+     "locus": "306d"
+    }
+   }
+  ]
  }
 ]

@@ -665,5 +665,82 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1060-attraction-of-predicate-nouns-with-the-q1",
+  "sectionId": "sm-1060-attraction-of-predicate-nouns-with-the",
+  "questions": [
+   {
+    "prompt": "They entreated Cyrus to show himself as zealous as possible.",
+    "answer": "Κύρου ἐδέοντο ώς προθυμοτάτου γενέσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κύρου",
+     "ἐδέοντο",
+     "ώς",
+     "προθυμοτάτου",
+     "γενέσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "1.5.2"
+    }
+   },
+   {
+    "prompt": "By those who begged me to become their chief.",
+    "answer": "ὑπὸ τῶν δεομένων μου προστάτην γενέσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῶν",
+     "δεομένων",
+     "μου",
+     "προστάτην",
+     "γενέσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.2.23"
+    }
+   },
+   {
+    "prompt": "Now it is in your power to prove yourself a man.",
+    "answer": "νῦν σοι ἔξεστιν ἀνδρὶ γενέσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "σοι",
+     "ἔξεστιν",
+     "ἀνδρὶ",
+     "γενέσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.1.21"
+    }
+   },
+   {
+    "prompt": "It is for their interest to be friends rather than enemies.",
+    "answer": "συμφέρει αὐτοῖς φίλους εἶναι μᾶλλον ἢ πολεμίους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμφέρει",
+     "αὐτοῖς",
+     "φίλους",
+     "εἶναι",
+     "μᾶλλον",
+     "ἢ",
+     "πολεμίους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "11.23"
+    }
+   }
+  ]
  }
 ]

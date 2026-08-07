@@ -830,5 +830,92 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2182-anticipation-or-prolepsis-q1",
+  "sectionId": "sm-2182-anticipation-or-prolepsis",
+  "questions": [
+   {
+    "prompt": "He knew that he held the centre of the Persian army.",
+    "answer": "ᾔδει αὐτὸν ὅτι μέσον ἔχοι τοῦ Περσικοῦ στρατεύματος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔδει",
+     "αὐτὸν",
+     "ὅτι",
+     "μέσον",
+     "ἔχοι",
+     "τοῦ",
+     "Περσικοῦ",
+     "στρατεύματος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.21"
+    }
+   },
+   {
+    "prompt": "He took care that they should always continue to be slaves.",
+    "answer": "ἐπεμέλετο αὐτῶν ὅπως ἀεὶ ἀνδράποδα διατελοῖεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεμέλετο",
+     "αὐτῶν",
+     "ὅπως",
+     "ἀεὶ",
+     "ἀνδράποδα",
+     "διατελοῖεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "8.1.44"
+    }
+   },
+   {
+    "prompt": "And there came straightway to the Athenians also the report that the cities had revolted.",
+    "answer": "ἦλθε δὲ καὶ τοῖς Ἀθηναίοις εὐθὺς ἡ ἀγγελία τῶ πόλεων ὅτι ἀφεστᾶσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦλθε",
+     "δὲ",
+     "καὶ",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "εὐθὺς",
+     "ἡ",
+     "ἀγγελία",
+     "τῶ",
+     "πόλεων",
+     "ὅτι",
+     "ἀφεστᾶσι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.61"
+    }
+   },
+   {
+    "prompt": "Darius asked if he understood the art.",
+    "answer": "εἰρώτα ὁ Δαρεῖος τὴν τέχνην εἰ ἐπίσταιτο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰρώτα",
+     "ὁ",
+     "Δαρεῖος",
+     "τὴν",
+     "τέχνην",
+     "εἰ",
+     "ἐπίσταιτο"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "3.130"
+    }
+   }
+  ]
  }
 ]

@@ -1709,5 +1709,263 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2025-the-infinitive-with-the-article-q1",
+  "sectionId": "sm-2025-the-infinitive-with-the-article",
+  "questions": [
+   {
+    "prompt": "The fact that the Peloponnesians did not come to their assistance enabled you to punish the Samians.",
+    "answer": "τὸ Πελοποννησίους αὐτοῖς μὴ βοηθῆσαι παρέσχεν ὑμῖν . . . Σαμίων κόλασιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "Πελοποννησίους",
+     "αὐτοῖς",
+     "μὴ",
+     "βοηθῆσαι",
+     "παρέσχεν",
+     "ὑμῖν",
+     "Σαμίων",
+     "κόλασιν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.41"
+    }
+   },
+   {
+    "prompt": "Having gained the greatest amount of courage.",
+    "answer": "τοῦ θαρσεῖν τὸ πλεῖστον εἰληφότες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "θαρσεῖν",
+     "τὸ",
+     "πλεῖστον",
+     "εἰληφότες"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.34"
+    }
+   },
+   {
+    "prompt": "In order not to do what was just.",
+    "answer": "τοῦ μὴ τὰ δίκαια ποιεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "μὴ",
+     "τὰ",
+     "δίκαια",
+     "ποιεῖν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.107"
+    }
+   },
+   {
+    "prompt": "Atalante was fortified to prevent pirates from ravaging Euboea.",
+    "answer": "ἐτειχίσθη Ἀταλάντη . . . τοῦ μὴ λῃστὰς . . . κακουργεῖν τὴν Εὔβοιαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐτειχίσθη",
+     "Ἀταλάντη",
+     "τοῦ",
+     "μὴ",
+     "λῃστὰς",
+     "κακουργεῖν",
+     "τὴν",
+     "Εὔβοιαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2025-the-infinitive-with-the-article-q2",
+  "sectionId": "sm-2025-the-infinitive-with-the-article",
+  "questions": [
+   {
+    "prompt": "He devotes his every effort that he may become master of these.",
+    "answer": "ὑπὲρ τοῦ τούτων γενέσθαι κύριος . . . πάντα πραγματεύεται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὲρ",
+     "τοῦ",
+     "τούτων",
+     "γενέσθαι",
+     "κύριος",
+     "πάντα",
+     "πραγματεύεται"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "8.45"
+    }
+   },
+   {
+    "prompt": "That they may distrust my having been honoured by divine powers.",
+    "answer": "ἵνα . . . ἀπιστῶσι τῷ ἐμὲ τετιμῆσθαι ὑπὸ δαιμόνων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἵνα",
+     "ἀπιστῶσι",
+     "τῷ",
+     "ἐμὲ",
+     "τετιμῆσθαι",
+     "ὑπὸ",
+     "δαιμόνων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Apology",
+     "locus": "14"
+    }
+   },
+   {
+    "prompt": "Philip has conquered us by nothing so much as by being beforehand in his operations.",
+    "answer": "οὐδενὶ τῶν πάντων πλέον κεκράτηκε Φίλιππος ἢ τῷ πρότερος πρὸς τοῖς πράγμασι γίγνεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδενὶ",
+     "τῶν",
+     "πάντων",
+     "πλέον",
+     "κεκράτηκε",
+     "Φίλιππος",
+     "ἢ",
+     "τῷ",
+     "πρότερος",
+     "πρὸς",
+     "τοῖς",
+     "πράγμασι",
+     "γίγνεσθαι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "8.11"
+    }
+   },
+   {
+    "prompt": "The one, in addition to gaining nothing from the embassy, ransomed the prisoners of war.",
+    "answer": "ὁ μὲν πρὸς τῷ μηδὲν ἐκ τῆς πρεσβείας λαβεῖν, τοὺς αἰχμαλώτους . . . ἐλύσατο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὲν",
+     "πρὸς",
+     "τῷ",
+     "μηδὲν",
+     "ἐκ",
+     "τῆς",
+     "πρεσβείας",
+     "λαβεῖν",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ἐλύσατο"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.229"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2025-the-infinitive-with-the-article-q3",
+  "sectionId": "sm-2025-the-infinitive-with-the-article",
+  "questions": [
+   {
+    "prompt": "We call doing wrong a greater evil, being wronged a lesser.",
+    "answer": "μεῖζον μέν φαμεν κακὸν τὸ ἀδικεῖν, ἔλαττον δὲ τὸ ἀδικεῖσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεῖζον",
+     "μέν",
+     "φαμεν",
+     "κακὸν",
+     "τὸ",
+     "ἀδικεῖν",
+     "ἔλαττον",
+     "δὲ",
+     "τὸ",
+     "ἀδικεῖσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "509c"
+    }
+   },
+   {
+    "prompt": "They are indifferent to everything in comparison with victory.",
+    "answer": "τῶν ἁπάντων ἀπερίοπτοί εἰσι παρὰ τὸ νικᾶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἁπάντων",
+     "ἀπερίοπτοί",
+     "εἰσι",
+     "παρὰ",
+     "τὸ",
+     "νικᾶν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.41"
+    }
+   },
+   {
+    "prompt": "Schooled to moderate needs.",
+    "answer": "πρὸς τὸ μετρίων δεῖσθαι πεπαιδευμένος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸς",
+     "τὸ",
+     "μετρίων",
+     "δεῖσθαι",
+     "πεπαιδευμένος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.2.1"
+    }
+   },
+   {
+    "prompt": "We trained her to show zeal in assisting to increase our estate.",
+    "answer": "τὸ προθυμεῖσθαι δὲ συναύξειν τὸν οἶκον ἐπαιδεύομεν αὐτήν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "προθυμεῖσθαι",
+     "δὲ",
+     "συναύξειν",
+     "τὸν",
+     "οἶκον",
+     "ἐπαιδεύομεν",
+     "αὐτήν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "9.12"
+    }
+   }
+  ]
  }
 ]

@@ -651,5 +651,77 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1325-genitive-of-measure-q1",
+  "sectionId": "sm-1325-genitive-of-measure",
+  "questions": [
+   {
+    "prompt": "He reached such a pitch of boldness.",
+    "answer": "εἰς τοῦτο θράσους ἀφίκετο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τοῦτο",
+     "θράσους",
+     "ἀφίκετο"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.194"
+    }
+   },
+   {
+    "prompt": "To this stage of life.",
+    "answer": "εἰς τοῦτο τῆς ἡλικίας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τοῦτο",
+     "τῆς",
+     "ἡλικίας"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "5.3"
+    }
+   },
+   {
+    "prompt": "When a man is thirty years old.",
+    "answer": "ἐπειδὰν ἐτῶν ᾖ τις τριάκοντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ἐτῶν",
+     "ᾖ",
+     "τις",
+     "τριάκοντα"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "721a"
+    }
+   },
+   {
+    "prompt": "The walls were eight stades long.",
+    "answer": "τὰ τείχη ἦν σταδίων ὀκτώ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τείχη",
+     "ἦν",
+     "σταδίων",
+     "ὀκτώ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.66"
+    }
+   }
+  ]
  }
 ]

@@ -394,5 +394,169 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2453-prin-with-the-infinitive-q1",
+  "sectionId": "sm-2453-prin-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "Who know even before I say anything at all.",
+    "answer": "οἱ καὶ πρὶν ἐμὲ εἰπεῖν ὁτιοῦν εἰδότες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "καὶ",
+     "πρὶν",
+     "ἐμὲ",
+     "εἰπεῖν",
+     "ὁτιοῦν",
+     "εἰδότες"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.50"
+    }
+   },
+   {
+    "prompt": "You know as well as I do even before I proceed to set forth in detail the matter of my speech.",
+    "answer": "σύνιστε μὲν καὶ πρὶν ἐμὲ λέγειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύνιστε",
+     "μὲν",
+     "καὶ",
+     "πρὶν",
+     "ἐμὲ",
+     "λέγειν"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "1.116"
+    }
+   },
+   {
+    "prompt": "Before I proceeded to set sail for Aenus no one accused me.",
+    "answer": "πρὶν ἀνάγεσθαί με εἰς τὴν Αἶνον . . . οὐδεὶς ᾐτιάσατό με",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὶν",
+     "ἀνάγεσθαί",
+     "με",
+     "εἰς",
+     "τὴν",
+     "Αἶνον",
+     "οὐδεὶς",
+     "ᾐτιάσατό",
+     "με"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "5.25"
+    }
+   },
+   {
+    "prompt": "And if any one had shown these words to them before I discussed them, it is inevitable that they would have been discontented with you.",
+    "answer": "εἴ τις ἐπέδειξεν αὐτοῖς πρὶν ἐμὲ διαλεχθῆναι περὶ αὐτῶν, οὐκ ἔστιν ὅπως οὐκ ἂν . . . δυσκόλως πρὸς σὲ διετέθησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "ἐπέδειξεν",
+     "αὐτοῖς",
+     "πρὶν",
+     "ἐμὲ",
+     "διαλεχθῆναι",
+     "περὶ",
+     "αὐτῶν",
+     "οὐκ",
+     "ἔστιν",
+     "ὅπως",
+     "οὐκ",
+     "ἂν",
+     "δυσκόλως",
+     "πρὸς",
+     "σὲ",
+     "διετέθησαν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "12.250"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2453-prin-with-the-infinitive-q2",
+  "sectionId": "sm-2453-prin-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "It is not possible to perceive this before some suffer injury at their hands.",
+    "answer": "οὐχ οἷόν τ᾽ ἐστὶν αἰσθέσθαι πρὶν κακῶς τινας παθεῖν ὑπ᾽ αὐτῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "οἷόν",
+     "τ",
+     "ἐστὶν",
+     "αἰσθέσθαι",
+     "πρὶν",
+     "κακῶς",
+     "τινας",
+     "παθεῖν",
+     "ὑπ",
+     "αὐτῶν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "20.14"
+    }
+   },
+   {
+    "prompt": "And let no one raise a disturbance before he hears.",
+    "answer": "καί μοι μὴ θορυβήσῃ μηδεὶς πρὶν ἀκοῦσαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "μοι",
+     "μὴ",
+     "θορυβήσῃ",
+     "μηδεὶς",
+     "πρὶν",
+     "ἀκοῦσαι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "5.15"
+    }
+   },
+   {
+    "prompt": "They entreated them by no means to turn aside until they should invade the territory of the Lacedaemonians.",
+    "answer": "ἱκέτευον μηδαμῶς ἀποτρέπεσθαι πρὶν ἐμβαλεῖν εἰς τὴν τῶν Λακεδαιμονίων χώραν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἱκέτευον",
+     "μηδαμῶς",
+     "ἀποτρέπεσθαι",
+     "πρὶν",
+     "ἐμβαλεῖν",
+     "εἰς",
+     "τὴν",
+     "τῶν",
+     "Λακεδαιμονίων",
+     "χώραν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.5.23"
+    }
+   }
+  ]
  }
 ]

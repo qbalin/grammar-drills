@@ -1066,5 +1066,206 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1460-dative-as-direct-complement-of-verbs-q1",
+  "sectionId": "sm-1460-dative-as-direct-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "Not cherishing envy against the rich.",
+    "answer": "οὐ φθονῶν τοῖς πλουτοῦσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "φθονῶν",
+     "τοῖς",
+     "πλουτοῦσιν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.9.19"
+    }
+   },
+   {
+    "prompt": "But when the generals met them.",
+    "answer": "ἐπεὶ δὲ ἀπήντησαν αὐτοῖς οἱ στρατηγοί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "δὲ",
+     "ἀπήντησαν",
+     "αὐτοῖς",
+     "οἱ",
+     "στρατηγοί"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.3.17"
+    }
+   },
+   {
+    "prompt": "What wild beasts one must not approach.",
+    "answer": "ποίοις οὐ χρὴ θηρίοις πελάζειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποίοις",
+     "οὐ",
+     "χρὴ",
+     "θηρίοις",
+     "πελάζειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.4.7"
+    }
+   },
+   {
+    "prompt": "If you are the slave of no pleasure.",
+    "answer": "ἂν μηδεμιᾷ δουλεύῃς τῶν ἡδονῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἂν",
+     "μηδεμιᾷ",
+     "δουλεύῃς",
+     "τῶν",
+     "ἡδονῶν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "2.29"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1460-dative-as-direct-complement-of-verbs-q2",
+  "sectionId": "sm-1460-dative-as-direct-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "The cities trusted him.",
+    "answer": "ἐπίστευον αὐτῷ αἱ πόλεις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπίστευον",
+     "αὐτῷ",
+     "αἱ",
+     "πόλεις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.9.8"
+    }
+   },
+   {
+    "prompt": "He ordered the Mysian to flee.",
+    "answer": "τῷ Μυσῷ ἐσήμηνε φεύγειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "Μυσῷ",
+     "ἐσήμηνε",
+     "φεύγειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.2.30"
+    }
+   },
+   {
+    "prompt": "He shouted to Clearchus to lead.",
+    "answer": "τῷ Κλεάρχῳ ἐβόα ἄγειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "Κλεάρχῳ",
+     "ἐβόα",
+     "ἄγειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.12"
+    }
+   },
+   {
+    "prompt": "A tyrant needs mercenaries.",
+    "answer": "μισθοφόρων ἀνδρὶ τυράννῳ δεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μισθοφόρων",
+     "ἀνδρὶ",
+     "τυράννῳ",
+     "δεῖ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hiero",
+     "locus": "8.10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1460-dative-as-direct-complement-of-verbs-q3",
+  "sectionId": "sm-1460-dative-as-direct-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "Inasmuch as they had nothing to do with Epidamnus.",
+    "answer": "ὡς οὐ μετὸν αὐτοῖς Ἐπιδάμνου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "οὐ",
+     "μετὸν",
+     "αὐτοῖς",
+     "Ἐπιδάμνου"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.28"
+    }
+   },
+   {
+    "prompt": "He did not repent of his acts of violence.",
+    "answer": "οὐχ ὧν ἐβιάσατο μετέμελεν αὐτῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὧν",
+     "ἐβιάσατο",
+     "μετέμελεν",
+     "αὐτῷ"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "4.17"
+    }
+   },
+   {
+    "prompt": "He has nothing to do with Boeotia.",
+    "answer": "τούτῳ τῆς Βοιωτίας προσήκει οὐδέν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτῳ",
+     "τῆς",
+     "Βοιωτίας",
+     "προσήκει",
+     "οὐδέν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.31"
+    }
+   }
+  ]
  }
 ]

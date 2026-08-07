@@ -1113,5 +1113,70 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2840-de-q1",
+  "sectionId": "sm-2840-de",
+  "questions": [
+   {
+    "prompt": "But now you certainly see.",
+    "answer": "νῦν δ᾽ ὁρᾶτε δή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "δ",
+     "ὁρᾶτε",
+     "δή"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.2.12"
+    }
+   },
+   {
+    "prompt": "Socrates the wise forsooth.",
+    "answer": "Σωκράτης ὁ σοφὸς δή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Σωκράτης",
+     "ὁ",
+     "σοφὸς",
+     "δή"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "27a"
+    }
+   },
+   {
+    "prompt": "They said that they had seen many fires visible in the night; accordingly it seemed to the generals to be unsafe to encamp apart.",
+    "answer": "ἔλεγον ὅτι κατίδοιεν νύκτωρ πολλὰ πυρὰ φαίνοντα. ἐδόκει δὴ τοῖς στρατηγοῖς οὐκ ἀσφαλὲς εἶναι διασκηνοῦν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "ὅτι",
+     "κατίδοιεν",
+     "νύκτωρ",
+     "πολλὰ",
+     "πυρὰ",
+     "φαίνοντα",
+     "ἐδόκει",
+     "δὴ",
+     "τοῖς",
+     "στρατηγοῖς",
+     "οὐκ",
+     "ἀσφαλὲς",
+     "εἶναι",
+     "διασκηνοῦν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.4.10"
+    }
+   }
+  ]
  }
 ]

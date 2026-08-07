@@ -430,5 +430,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2257-difference-between-oste-with-the-q1",
+  "sectionId": "sm-2257-difference-between-oste-with-the",
+  "questions": [
+   {
+    "prompt": "Treating all in such a manner that they should be his friends.",
+    "answer": "πάντας οὕτω διατιθεὶς ὥστε αὐτῷ εἶναι φίλους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντας",
+     "οὕτω",
+     "διατιθεὶς",
+     "ὥστε",
+     "αὐτῷ",
+     "εἶναι",
+     "φίλους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.1.5"
+    }
+   },
+   {
+    "prompt": "I am treated by you in such a manner that I cannot even sup in my own country.",
+    "answer": "οὕτω διάκειμαι ὑφ᾽ ὑμῶν ὡς οὐδὲ δεῖπνον ἔχω ἐν τῇ ἐμαυτοῦ χώρᾳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "διάκειμαι",
+     "ὑφ",
+     "ὑμῶν",
+     "ὡς",
+     "οὐδὲ",
+     "δεῖπνον",
+     "ἔχω",
+     "ἐν",
+     "τῇ",
+     "ἐμαυτοῦ",
+     "χώρᾳ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.1.33"
+    }
+   },
+   {
+    "prompt": "They made a loud noise by calling each other so that even the enemy could hear; consequently those of the enemy who were nearest actually fled.",
+    "answer": "κραυγὴν πολλὴν ἐποίουν καλοῦντες ἀλλήλους ὥστε καὶ τοὺς πολεμίους ἀκούειν· ὥστε οἱ μὲν ἐγγύτατα τῶν πολεμίων καὶ ἔφυγον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κραυγὴν",
+     "πολλὴν",
+     "ἐποίουν",
+     "καλοῦντες",
+     "ἀλλήλους",
+     "ὥστε",
+     "καὶ",
+     "τοὺς",
+     "πολεμίους",
+     "ἀκούειν",
+     "ὥστε",
+     "οἱ",
+     "μὲν",
+     "ἐγγύτατα",
+     "τῶν",
+     "πολεμίων",
+     "καὶ",
+     "ἔφυγον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.2.17"
+    }
+   }
+  ]
  }
 ]

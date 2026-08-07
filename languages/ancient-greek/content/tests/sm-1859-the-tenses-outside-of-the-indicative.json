@@ -1801,5 +1801,152 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1859-the-tenses-outside-of-the-indicative-q1",
+  "sectionId": "sm-1859-the-tenses-outside-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Let us at the same time keep developing our resources.",
+    "answer": "τὰ αὑτῶν ἅμα ἐκποριζώμεθα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "αὑτῶν",
+     "ἅμα",
+     "ἐκποριζώμεθα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.82"
+    }
+   },
+   {
+    "prompt": "Let us procure the money first.",
+    "answer": "πορισώμεθα οὖν πρῶτον τὴν δαπάνην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πορισώμεθα",
+     "οὖν",
+     "πρῶτον",
+     "τὴν",
+     "δαπάνην"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.83"
+    }
+   },
+   {
+    "prompt": "They are angry whenever I bid them drink the poison.",
+    "answer": "χαλεπαίνουσι, ἐπειδὰν αὐτοῖς παραγγέλλω πίνειν τὸ φάρμακον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπαίνουσι",
+     "ἐπειδὰν",
+     "αὐτοῖς",
+     "παραγγέλλω",
+     "πίνειν",
+     "τὸ",
+     "φάρμακον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "116c"
+    }
+   },
+   {
+    "prompt": "Offer the horses to them.",
+    "answer": "τοὺς ἵππους ἐκείνοις δίδοτε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ἵππους",
+     "ἐκείνοις",
+     "δίδοτε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.5.47"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1859-the-tenses-outside-of-the-indicative-q2",
+  "sectionId": "sm-1859-the-tenses-outside-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Give the horses to us.",
+    "answer": "ἡμῖν τοὺς ἵππους δότε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμῖν",
+     "τοὺς",
+     "ἵππους",
+     "δότε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.5.47"
+    }
+   },
+   {
+    "prompt": "It is time no longer to be making up one's mind, but to have it made up.",
+    "answer": "οὐδὲ βουλεύεσθαι ἔτι ὥρα, ἀλλὰ βεβουλεῦσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "βουλεύεσθαι",
+     "ἔτι",
+     "ὥρα",
+     "ἀλλὰ",
+     "βεβουλεῦσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Crito",
+     "locus": "46a"
+    }
+   },
+   {
+    "prompt": "Not being able to prevent.",
+    "answer": "οὐκ ἀποκωλύσειν δυνατοὶ ὄντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀποκωλύσειν",
+     "δυνατοὶ",
+     "ὄντες"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.28"
+    }
+   },
+   {
+    "prompt": "I am far from intending to speak to my own disadvantage.",
+    "answer": "πολλοῦ δέω κατ᾽ ἐμαυτοῦ ἐρεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοῦ",
+     "δέω",
+     "κατ",
+     "ἐμαυτοῦ",
+     "ἐρεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "37b"
+    }
+   }
+  ]
  }
 ]

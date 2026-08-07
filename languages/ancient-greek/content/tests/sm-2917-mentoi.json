@@ -697,5 +697,63 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2917-mentoi-q1",
+  "sectionId": "sm-2917-mentoi",
+  "questions": [
+   {
+    "prompt": "In truth we must speak thus.",
+    "answer": "οὕτω μέντοι χρὴ λέγειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "μέντοι",
+     "χρὴ",
+     "λέγειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Theaetetus",
+     "locus": "187b"
+    }
+   },
+   {
+    "prompt": "We let you go, on this condition however.",
+    "answer": "ἀφίεμέν σε, ἐπὶ τούτῳ μέντοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀφίεμέν",
+     "σε",
+     "ἐπὶ",
+     "τούτῳ",
+     "μέντοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "29c"
+    }
+   },
+   {
+    "prompt": "You resemble a philosopher— know however that you are a fool.",
+    "answer": "φιλοσόφῳ μὲν ἔοικας . . . ἴσθι μέντοι ἀνόητος ὤν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φιλοσόφῳ",
+     "μὲν",
+     "ἔοικας",
+     "ἴσθι",
+     "μέντοι",
+     "ἀνόητος",
+     "ὤν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.13"
+    }
+   }
+  ]
  }
 ]

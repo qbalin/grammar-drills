@@ -418,5 +418,104 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2359-ei-with-the-optative-apodosis-a-primary-q1",
+  "sectionId": "sm-2359-ei-with-the-optative-apodosis-a-primary",
+  "questions": [
+   {
+    "prompt": "For it is the part of prudent men to remain quiet if they should not be wronged.",
+    "answer": "ἀνδρῶν γὰρ σωφρόνων μέν ἐστιν, εἰ μὴ ἀδικοῖντο, ἡσυχάζειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνδρῶν",
+     "γὰρ",
+     "σωφρόνων",
+     "μέν",
+     "ἐστιν",
+     "εἰ",
+     "μὴ",
+     "ἀδικοῖντο",
+     "ἡσυχάζειν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.120"
+    }
+   },
+   {
+    "prompt": "But if you will, let us agree that mantic too is a knowledge of the future.",
+    "answer": "εἰ δὲ βούλοιό γε, καὶ τὴν μαντικὴν εἶναι συγχωρήσωμεν ἐπιστήμην τοῦ μέλλοντος ἔσεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δὲ",
+     "βούλοιό",
+     "γε",
+     "καὶ",
+     "τὴν",
+     "μαντικὴν",
+     "εἶναι",
+     "συγχωρήσωμεν",
+     "ἐπιστήμην",
+     "τοῦ",
+     "μέλλοντος",
+     "ἔσεσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Charmides",
+     "locus": "173c"
+    }
+   },
+   {
+    "prompt": "If any one transgresses these injunctions, let him be accursed.",
+    "answer": "εἴ τις τάδε παραβαίνοι . . ., ἐναγὴς ἔστω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "τάδε",
+     "παραβαίνοι",
+     "ἐναγὴς",
+     "ἔστω"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.110"
+    }
+   },
+   {
+    "prompt": "But as regards money then, if a man does not know how to use it, let him remove it so far from his consideration as not to be regarded even as property.",
+    "answer": "τὸ μὲν δὴ ἀργύριον, εἰ μή τις ἐπίσταιτο αὐτῷ χρῆσθαι, οὕτω πόρρω ἀπωθείσθω ὥστε μηδὲ χρήματα εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "μὲν",
+     "δὴ",
+     "ἀργύριον",
+     "εἰ",
+     "μή",
+     "τις",
+     "ἐπίσταιτο",
+     "αὐτῷ",
+     "χρῆσθαι",
+     "οὕτω",
+     "πόρρω",
+     "ἀπωθείσθω",
+     "ὥστε",
+     "μηδὲ",
+     "χρήματα",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "1.14"
+    }
+   }
+  ]
  }
 ]

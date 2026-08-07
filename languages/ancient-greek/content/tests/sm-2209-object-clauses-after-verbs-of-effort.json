@@ -1794,5 +1794,178 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2209-object-clauses-after-verbs-of-effort-q1",
+  "sectionId": "sm-2209-object-clauses-after-verbs-of-effort",
+  "questions": [
+   {
+    "prompt": "If it is necessary to fight, we must prepare to fight bravely.",
+    "answer": "εἰ ἀνάγκη ἐστὶ μάχεσθαι, τοῦτο δεῖ παρασκευάσασθαι ὅπως ὡς κράτιστα μαχούμεθα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἀνάγκη",
+     "ἐστὶ",
+     "μάχεσθαι",
+     "τοῦτο",
+     "δεῖ",
+     "παρασκευάσασθαι",
+     "ὅπως",
+     "ὡς",
+     "κράτιστα",
+     "μαχούμεθα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.6.10"
+    }
+   },
+   {
+    "prompt": "See to this, that they not only make speeches but also are able to show some proof.",
+    "answer": "σκοπεῖσθε τοῦτο, ὅπως μὴ λόγους ἐροῦσιν μόνον . . . ἀλλὰ καὶ ἔργον τι δεικνύειν ἕξουσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκοπεῖσθε",
+     "τοῦτο",
+     "ὅπως",
+     "μὴ",
+     "λόγους",
+     "ἐροῦσιν",
+     "μόνον",
+     "ἀλλὰ",
+     "καὶ",
+     "ἔργον",
+     "τι",
+     "δεικνύειν",
+     "ἕξουσιν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "2.12"
+    }
+   },
+   {
+    "prompt": "It seems to me that we must consider how we shall depart in the greatest security and how we shall procure our provisions.",
+    "answer": "καὶ ὅπως τὰ ἐπιτήδεια ἕξομεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ὅπως",
+     "τὰ",
+     "ἐπιτήδεια",
+     "ἕξομεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.3.11"
+    }
+   },
+   {
+    "prompt": "He took care that they should never be without food or drink.",
+    "answer": "ἐπεμέλετο ὅπως μήτε ἄσιτοι μήτε ἄποτοί ποτε ἔσοιντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεμέλετο",
+     "ὅπως",
+     "μήτε",
+     "ἄσιτοι",
+     "μήτε",
+     "ἄποτοί",
+     "ποτε",
+     "ἔσοιντο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "8.1.43"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2209-object-clauses-after-verbs-of-effort-q2",
+  "sectionId": "sm-2209-object-clauses-after-verbs-of-effort",
+  "questions": [
+   {
+    "prompt": "Be men worthy of the freedom which you possess.",
+    "answer": "ὅπως οὖν ἔσεσθε ἄνδρες ἄξιοι τῆς ἐλευθερίας ἧς ἧς κέκτησθε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "οὖν",
+     "ἔσεσθε",
+     "ἄνδρες",
+     "ἄξιοι",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἧς",
+     "ἧς",
+     "κέκτησθε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.7.3"
+    }
+   },
+   {
+    "prompt": "See to it that it does not prove that you acquiesce in what you do not really think.",
+    "answer": "ὅρα . . . ὅπως μὴ παρὰ δόξαν ὁμολογῇς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "ὅπως",
+     "μὴ",
+     "παρὰ",
+     "δόξαν",
+     "ὁμολογῇς"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Crito",
+     "locus": "49c"
+    }
+   },
+   {
+    "prompt": "He will entreat you that he may not suffer punishment.",
+    "answer": "δεήσεται δ᾽ ὑμῶν ὅπως . . . δίκην μὴ δῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεήσεται",
+     "δ",
+     "ὑμῶν",
+     "ὅπως",
+     "δίκην",
+     "μὴ",
+     "δῷ"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "1.23"
+    }
+   },
+   {
+    "prompt": "You forbade me to give this answer.",
+    "answer": "ἀπηγόρευες ὅπως μὴ τοῦτο ἀποκρινοίμην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπηγόρευες",
+     "ὅπως",
+     "μὴ",
+     "τοῦτο",
+     "ἀποκρινοίμην"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "339a"
+    }
+   }
+  ]
  }
 ]

@@ -720,5 +720,77 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1471-dative-as-direct-or-indirect-complement-q1",
+  "sectionId": "sm-1471-dative-as-direct-or-indirect-complement",
+  "questions": [
+   {
+    "prompt": "They exhort those who are striving for victory.",
+    "answer": "παρακελεύονται τοῖς περὶ νίκης ἁμιλλωμένοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρακελεύονται",
+     "τοῖς",
+     "περὶ",
+     "νίκης",
+     "ἁμιλλωμένοις"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "9.79"
+    }
+   },
+   {
+    "prompt": "I address this exhortation to the hoplites.",
+    "answer": "ταῦτα τοῖς ὁπλίταις παρακελεύομαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "τοῖς",
+     "ὁπλίταις",
+     "παρακελεύομαι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.63"
+    }
+   },
+   {
+    "prompt": "They upbraid the Thebans with their ignorance.",
+    "answer": "Θηβαίοις τὴν ἀμαθίαν ὀνειδίζουσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Θηβαίοις",
+     "τὴν",
+     "ἀμαθίαν",
+     "ὀνειδίζουσι"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "15.248"
+    }
+   },
+   {
+    "prompt": "The country was given to him as a gift.",
+    "answer": "ἐκείνῳ ἡ χώρα δῶρον ἐδόθη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκείνῳ",
+     "ἡ",
+     "χώρα",
+     "δῶρον",
+     "ἐδόθη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "3.1.6"
+    }
+   }
+  ]
  }
 ]

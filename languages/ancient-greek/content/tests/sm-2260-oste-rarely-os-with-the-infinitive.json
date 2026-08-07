@@ -419,5 +419,97 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2260-oste-rarely-os-with-the-infinitive-q1",
+  "sectionId": "sm-2260-oste-rarely-os-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "They made such an uproar as to bring the taxiarchs.",
+    "answer": "τοσαύτην κραυγὴν . . . ἐποίησαν ὥστε . . . τοὺς ταξιάρχους ἐλθεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσαύτην",
+     "κραυγὴν",
+     "ἐποίησαν",
+     "ὥστε",
+     "τοὺς",
+     "ταξιάρχους",
+     "ἐλθεῖν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "54.5"
+    }
+   },
+   {
+    "prompt": "They perceived that he possessed too little power to benefit his friends.",
+    "answer": "ᾔσθοντο αὐτὸν ἐλάττω ἔχοντα δύναμιν ἢ ὥστε τοὺς φίλους ὠφελεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔσθοντο",
+     "αὐτὸν",
+     "ἐλάττω",
+     "ἔχοντα",
+     "δύναμιν",
+     "ἢ",
+     "ὥστε",
+     "τοὺς",
+     "φίλους",
+     "ὠφελεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "4.8.23"
+    }
+   },
+   {
+    "prompt": "If I had not reached such a degree of madness as to desire to contend with many.",
+    "answer": "εἰ μὴ εἰς τοῦτο μανίας ἀφικόμην ὥστε ἐπιθυμεῖν . . . πολλοῖς μάχεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὴ",
+     "εἰς",
+     "τοῦτο",
+     "μανίας",
+     "ἀφικόμην",
+     "ὥστε",
+     "ἐπιθυμεῖν",
+     "πολλοῖς",
+     "μάχεσθαι"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "3.29"
+    }
+   },
+   {
+    "prompt": "He thinks that you have already reached such a degree of simplicity as to allow yourselves to be persuaded even of this.",
+    "answer": "οἴεται ὑμᾶς εἰς τοσοῦτον εὐηθείας ἤδη προβεβηκέναι ὥστε καὶ ταῦτα ἀναπεισθήσεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἴεται",
+     "ὑμᾶς",
+     "εἰς",
+     "τοσοῦτον",
+     "εὐηθείας",
+     "ἤδη",
+     "προβεβηκέναι",
+     "ὥστε",
+     "καὶ",
+     "ταῦτα",
+     "ἀναπεισθήσεσθαι"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.256"
+    }
+   }
+  ]
  }
 ]

@@ -1660,5 +1660,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1795-subjunctive-without-an-q1",
+  "sectionId": "sm-1795-subjunctive-without-an",
+  "questions": [
+   {
+    "prompt": "Let me now speak about the bill.",
+    "answer": "φέρε δὴ περὶ τοῦ ψηφίσματος εἴπω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φέρε",
+     "δὴ",
+     "περὶ",
+     "τοῦ",
+     "ψηφίσματος",
+     "εἴπω"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.234"
+    }
+   },
+   {
+    "prompt": "But I rather think this may not be so.",
+    "answer": "ἀλλὰ μὴ οὐχ οὕτως ἔχῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μὴ",
+     "οὐχ",
+     "οὕτως",
+     "ἔχῃ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Cratylus",
+     "locus": "436b"
+    }
+   },
+   {
+    "prompt": "Virtue is perhaps not a thing to be taught.",
+    "answer": "μὴ οὐκ ᾖ διδακτὸν ἀρετή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "οὐκ",
+     "ᾖ",
+     "διδακτὸν",
+     "ἀρετή"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Meno",
+     "locus": "94e"
+    }
+   },
+   {
+    "prompt": "I will not cease from searching for wisdom.",
+    "answer": "οὐ μὴ παύσωμαι φιλοσοφῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴ",
+     "παύσωμαι",
+     "φιλοσοφῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "29d"
+    }
+   }
+  ]
  }
 ]

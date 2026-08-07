@@ -1368,5 +1368,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2168-coordination-in-place-of-subordination-q1",
+  "sectionId": "sm-2168-coordination-in-place-of-subordination",
+  "questions": [
+   {
+    "prompt": "And as soon as he said this, he departed.",
+    "answer": "καὶ ἅμα ταῦτ᾽ ἔλεγε καὶ ἀπῄει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ἅμα",
+     "ταῦτ",
+     "ἔλεγε",
+     "καὶ",
+     "ἀπῄει"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "7.1.28"
+    }
+   },
+   {
+    "prompt": "It is a shame that, whereas I have undergone the toil of exertions in your cause, you will not endure even their recital.",
+    "answer": "αἰσχρόν ἐστι, εἰ ἐγὼ μὲν τὰ ἔργα τῶν ὑπὲρ ὑμῶν πόνων ὑπέμεινα, ὑμεῖς δὲ μηδὲ τοὺς λόγους αὐτῶν ἀνέξεσθε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "εἰ",
+     "ἐγὼ",
+     "μὲν",
+     "τὰ",
+     "ἔργα",
+     "τῶν",
+     "ὑπὲρ",
+     "ὑμῶν",
+     "πόνων",
+     "ὑπέμεινα",
+     "ὑμεῖς",
+     "δὲ",
+     "μηδὲ",
+     "τοὺς",
+     "λόγους",
+     "αὐτῶν",
+     "ἀνέξεσθε"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.160"
+    }
+   },
+   {
+    "prompt": "And while there is time, take our policy in hand.",
+    "answer": "καὶ τέως ἐστὶ καιρός, ἀντιλάβεσθε τῶν πραγμάτων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "τέως",
+     "ἐστὶ",
+     "καιρός",
+     "ἀντιλάβεσθε",
+     "τῶν",
+     "πραγμάτων"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "1.20"
+    }
+   }
+  ]
  }
 ]

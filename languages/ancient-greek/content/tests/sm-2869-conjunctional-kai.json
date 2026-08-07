@@ -1378,5 +1378,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2869-conjunctional-kai-q1",
+  "sectionId": "sm-2869-conjunctional-kai",
+  "questions": [
+   {
+    "prompt": "Wisdom worth little or nothing.",
+    "answer": "σοφία ὀλίγου τινὸς ἀξία καὶ οὐδενός",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφία",
+     "ὀλίγου",
+     "τινὸς",
+     "ἀξία",
+     "καὶ",
+     "οὐδενός"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "23a"
+    }
+   },
+   {
+    "prompt": "And now read me the bill.",
+    "answer": "καί μοι ἀνάγνωθι τὸ ψήφισμα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καί",
+     "μοι",
+     "ἀνάγνωθι",
+     "τὸ",
+     "ψήφισμα"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "13.35"
+    }
+   },
+   {
+    "prompt": "Not the same as before.",
+    "answer": "οὐχ ὁμοίως καὶ πρίν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ὁμοίως",
+     "καὶ",
+     "πρίν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.28"
+    }
+   },
+   {
+    "prompt": "As soon as we arrived the doorkeeper came out and told us to wait.",
+    "answer": "καὶ ἥκομεν καὶ ἡμῖν ἐξελθὼν ὁ θυρωρὸς . . . εἶπεν περιμένειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ἥκομεν",
+     "καὶ",
+     "ἡμῖν",
+     "ἐξελθὼν",
+     "ὁ",
+     "θυρωρὸς",
+     "εἶπεν",
+     "περιμένειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "59e"
+    }
+   }
+  ]
  }
 ]

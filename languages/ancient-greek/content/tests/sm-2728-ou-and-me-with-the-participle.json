@@ -1109,5 +1109,139 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2728-ou-and-me-with-the-participle-q1",
+  "sectionId": "sm-2728-ou-and-me-with-the-participle",
+  "questions": [
+   {
+    "prompt": "He went up on the mountains since no one hindered him.",
+    "answer": "ἀνέβη ἐπὶ τὰ ὄρη οὐδενὸς κωλύοντος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνέβη",
+     "ἐπὶ",
+     "τὰ",
+     "ὄρη",
+     "οὐδενὸς",
+     "κωλύοντος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.22"
+    }
+   },
+   {
+    "prompt": "For I know of no one who dislikes his admirers.",
+    "answer": "οὐδένα γὰρ οἶδα μισοῦντα τοὺς ἐπαινοῦντας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδένα",
+     "γὰρ",
+     "οἶδα",
+     "μισοῦντα",
+     "τοὺς",
+     "ἐπαινοῦντας"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.6.33"
+    }
+   },
+   {
+    "prompt": "They see that their elders do not depart.",
+    "answer": "ὁρῶσι τοὺς πρεσβυτέρους οὐ . . . ἀπιόντας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶσι",
+     "τοὺς",
+     "πρεσβυτέρους",
+     "οὐ",
+     "ἀπιόντας"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.2.8"
+    }
+   },
+   {
+    "prompt": "He rejoiced that Cyrus was unable to remain silent.",
+    "answer": "Κύρῳ ἥδετο οὐ δυναμένῳ σιγᾶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κύρῳ",
+     "ἥδετο",
+     "οὐ",
+     "δυναμένῳ",
+     "σιγᾶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.4.15"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2728-ou-and-me-with-the-participle-q2",
+  "sectionId": "sm-2728-ou-and-me-with-the-participle",
+  "questions": [
+   {
+    "prompt": "You made a disturbance by way of declaring that you did not intend to do this.",
+    "answer": "ἐθορυβεῖτε ὡς οὐ ποιήσοντες ταῦτα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθορυβεῖτε",
+     "ὡς",
+     "οὐ",
+     "ποιήσοντες",
+     "ταῦτα"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.73"
+    }
+   },
+   {
+    "prompt": "The party of opposition.",
+    "answer": "οἱ οὐ βουλόμενοι ταῦτα οὕτως ἔχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "οὐ",
+     "βουλόμενοι",
+     "ταῦτα",
+     "οὕτως",
+     "ἔχειν"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "1.9"
+    }
+   },
+   {
+    "prompt": "The man who does not say what he thinks.",
+    "answer": "ὁ μὴ λέγων ἃ φρονεῖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μὴ",
+     "λέγων",
+     "ἃ",
+     "φρονεῖ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.282"
+    }
+   }
+  ]
  }
 ]

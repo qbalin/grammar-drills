@@ -371,5 +371,163 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2503-the-antecedent-of-relative-clauses-2503-q1",
+  "sectionId": "sm-2503-the-antecedent-of-relative-clauses-2503",
+  "questions": [
+   {
+    "prompt": "And some of them you would not be able even to cross at all.",
+    "answer": "εἰσὶ δ᾽ αὐτῶν οὓς οὐδ᾽ ἂν παντάπασι διαβαίητε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰσὶ",
+     "δ",
+     "αὐτῶν",
+     "οὓς",
+     "οὐδ",
+     "ἂν",
+     "παντάπασι",
+     "διαβαίητε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.18"
+    }
+   },
+   {
+    "prompt": "Some hit both the cuirasses and wicker-shields.",
+    "answer": "ἔστιν οἵ καὶ ἐτύγχανον καὶ θωράκων καὶ γέρρων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστιν",
+     "οἵ",
+     "καὶ",
+     "ἐτύγχανον",
+     "καὶ",
+     "θωράκων",
+     "καὶ",
+     "γέρρων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.3.18"
+    }
+   },
+   {
+    "prompt": "Except the Ionians and some other nations.",
+    "answer": "πλὴν Ἰώνων . . . καὶ ἔστιν ὧν ἄλλων ἐθνῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πλὴν",
+     "Ἰώνων",
+     "καὶ",
+     "ἔστιν",
+     "ὧν",
+     "ἄλλων",
+     "ἐθνῶν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.92"
+    }
+   },
+   {
+    "prompt": "Some of them they struck down.",
+    "answer": "ἔστι μὲν οὓς αὐτῶν κατέβαλον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστι",
+     "μὲν",
+     "οὓς",
+     "αὐτῶν",
+     "κατέβαλον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "2.4.6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2503-the-antecedent-of-relative-clauses-2503-q2",
+  "sectionId": "sm-2503-the-antecedent-of-relative-clauses-2503",
+  "questions": [
+   {
+    "prompt": "He captured also some towns.",
+    "answer": "ἔστιν ἃ καὶ πολίσματα εἷλεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστιν",
+     "ἃ",
+     "καὶ",
+     "πολίσματα",
+     "εἷλεν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.65"
+    }
+   },
+   {
+    "prompt": "There were some of the enemy whom they restored under a truce.",
+    "answer": "τῶν δὲ πολεμίων ἦν οὓς ὑποσπόνδους ἀπέδοσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "δὲ",
+     "πολεμίων",
+     "ἦν",
+     "οὓς",
+     "ὑποσπόνδους",
+     "ἀπέδοσαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "7.5.17"
+    }
+   },
+   {
+    "prompt": "Sometimes and for some people it is better to die than to live.",
+    "answer": "βέλτιον τεθνάναι ἢ ζῆν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βέλτιον",
+     "τεθνάναι",
+     "ἢ",
+     "ζῆν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "62a"
+    }
+   },
+   {
+    "prompt": "It is not possible that he will not attack us.",
+    "answer": "οὐκ ἔστιν ὅπως οὐκ ἐπιθήσεται ἡμῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστιν",
+     "ὅπως",
+     "οὐκ",
+     "ἐπιθήσεται",
+     "ἡμῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.4.3"
+    }
+   }
+  ]
  }
 ]

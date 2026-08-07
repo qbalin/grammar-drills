@@ -1326,5 +1326,75 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1021-adjectives-used-substantively-q1",
+  "sectionId": "sm-1021-adjectives-used-substantively",
+  "questions": [
+   {
+    "prompt": "Their angry feelings.",
+    "answer": "τὸ ὀργιζόμενον τῆς ὀργῆς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ὀργιζόμενον",
+     "τῆς",
+     "ὀργῆς"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.59"
+    }
+   },
+   {
+    "prompt": "The right of the wing.",
+    "answer": "τὰ δεξιὰ τοῦ κέρατος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "δεξιὰ",
+     "τοῦ",
+     "κέρατος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.4"
+    }
+   },
+   {
+    "prompt": "The greater part of Salamis.",
+    "answer": "τῆς Σαλαμῖνος τὰ πολλά",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "Σαλαμῖνος",
+     "τὰ",
+     "πολλά"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.94"
+    }
+   },
+   {
+    "prompt": "The greater part of the land.",
+    "answer": "τῆς γῆς ἡ πολλή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "γῆς",
+     "ἡ",
+     "πολλή"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.56"
+    }
+   }
+  ]
  }
 ]

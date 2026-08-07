@@ -418,5 +418,100 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2302-second-form-of-conditions-present-and-q1",
+  "sectionId": "sm-2302-second-form-of-conditions-present-and",
+  "questions": [
+   {
+    "prompt": "But they would not be able to do this, if they were not also following a temperate diet.",
+    "answer": "ταῦτα δὲ οὐκ ἂν ἐδύναντο ποιεῖν, εἰ μὴ καὶ διαίτῃ μετρίᾳ ἐχρῶντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "δὲ",
+     "οὐκ",
+     "ἂν",
+     "ἐδύναντο",
+     "ποιεῖν",
+     "εἰ",
+     "μὴ",
+     "καὶ",
+     "διαίτῃ",
+     "μετρίᾳ",
+     "ἐχρῶντο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.2.16"
+    }
+   },
+   {
+    "prompt": "Accordingly he would not have ruled over islands, if he had not possessed also some naval force.",
+    "answer": "οὐκ ἂν οὖν νήσων . . . ἐκράτει, εἰ μή τι καὶ ναυτικὸν εἶχεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "οὖν",
+     "νήσων",
+     "ἐκράτει",
+     "εἰ",
+     "μή",
+     "τι",
+     "καὶ",
+     "ναυτικὸν",
+     "εἶχεν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.9"
+    }
+   },
+   {
+    "prompt": "Agasias would not have done this, if I had not ordered him.",
+    "answer": "οὐκ ἂν ἐποίησεν Ἀγασίας ταῦτα, εἰ μὴ ἐγὼ αὐτὸν ἐκέλευσα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἐποίησεν",
+     "Ἀγασίας",
+     "ταῦτα",
+     "εἰ",
+     "μὴ",
+     "ἐγὼ",
+     "αὐτὸν",
+     "ἐκέλευσα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.6.15"
+    }
+   },
+   {
+    "prompt": "The State would inflict punishment, if it had been wronged.",
+    "answer": "ἡ πόλις ἐλάμβανεν ἂν δίκην, εἴ τι ἠδίκητο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ἐλάμβανεν",
+     "ἂν",
+     "δίκην",
+     "εἴ",
+     "τι",
+     "ἠδίκητο"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "6.10"
+    }
+   }
+  ]
  }
 ]

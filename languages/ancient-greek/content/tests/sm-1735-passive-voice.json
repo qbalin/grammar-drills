@@ -1631,5 +1631,315 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1735-passive-voice-q1",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "They did not think it right to be governed by us.",
+    "answer": "οὐκ ἠξίουν οὗτοι ἡγεμονεύεσθαι ὑφ᾽ ἡμῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἠξίουν",
+     "οὗτοι",
+     "ἡγεμονεύεσθαι",
+     "ὑφ",
+     "ἡμῶν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.61"
+    }
+   },
+   {
+    "prompt": "It is time for us to take counsel for ourselves that we may not be brought into contempt.",
+    "answer": "ὥρα ἡμῖν βουλεύεσθαι ὑπὲρ ἡμῶν αὐτῶν μὴ καταφρονηθῶμεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥρα",
+     "ἡμῖν",
+     "βουλεύεσθαι",
+     "ὑπὲρ",
+     "ἡμῶν",
+     "αὐτῶν",
+     "μὴ",
+     "καταφρονηθῶμεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.7.12"
+    }
+   },
+   {
+    "prompt": "They are warred against by those who dwell around their country, and are distrusted by all.",
+    "answer": "πολεμοῦνται μὲν ὑπὸ τῶν τὴν χώραν αὐτῶν περιοικούντων, ἀπιστοῦνται δ᾽ ὑφ᾽ ἁπάντων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολεμοῦνται",
+     "μὲν",
+     "ὑπὸ",
+     "τῶν",
+     "τὴν",
+     "χώραν",
+     "αὐτῶν",
+     "περιοικούντων",
+     "ἀπιστοῦνται",
+     "δ",
+     "ὑφ",
+     "ἁπάντων"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "5.49"
+    }
+   },
+   {
+    "prompt": "Envied by Odysseus.",
+    "answer": "φθονηθεὶς ὑπὸ τοὖ Οδυσσέως",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φθονηθεὶς",
+     "ὑπὸ",
+     "τοὖ",
+     "Οδυσσέως"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.2.33"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-q2",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "My aid has been given to the deceased and to the law.",
+    "answer": "ἐμοὶ βεβοήθηται τῷ τε τεθνεῶτι καὶ τῷ νόμῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμοὶ",
+     "βεβοήθηται",
+     "τῷ",
+     "τε",
+     "τεθνεῶτι",
+     "καὶ",
+     "τῷ",
+     "νόμῳ"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "1.31"
+    }
+   },
+   {
+    "prompt": "Those of the Athenians who had been entrusted with the watch.",
+    "answer": "οἱ τῶν Ἀθηναίων ἐπιτετραμμένοι τὴν φυλακήν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῶν",
+     "Ἀθηναίων",
+     "ἐπιτετραμμένοι",
+     "τὴν",
+     "φυλακήν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.126"
+    }
+   },
+   {
+    "prompt": "The Ionians to whom the guard had been entrusted.",
+    "answer": "Ἴωνες, τοῖσι ἐπετέτραπτο ἡ φυλακή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἴωνες",
+     "τοῖσι",
+     "ἐπετέτραπτο",
+     "ἡ",
+     "φυλακή"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "7.10"
+    }
+   },
+   {
+    "prompt": "The baggage-carriers had been commanded to go.",
+    "answer": "ἐπετέτακτο τοῖς σκευοφόροις ἰέναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπετέτακτο",
+     "τοῖς",
+     "σκευοφόροις",
+     "ἰέναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.3.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-q3",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "The enemy has had enough good fortune.",
+    "answer": "ἱκανὰ τοῖς πολεμίοις ηὐτύχηται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἱκανὰ",
+     "τοῖς",
+     "πολεμίοις",
+     "ηὐτύχηται"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.77"
+    }
+   },
+   {
+    "prompt": "The life led by you and by me.",
+    "answer": "τὰ σοὶ κἀμοὶ βεβιωμένα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "σοὶ",
+     "κἀμοὶ",
+     "βεβιωμένα"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.265"
+    }
+   },
+   {
+    "prompt": "It was shown how the money had been lost.",
+    "answer": "ἐδηλώθη τῷ τρόπῳ ἀπωλώλει τὰ χρήματα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδηλώθη",
+     "τῷ",
+     "τρόπῳ",
+     "ἀπωλώλει",
+     "τὰ",
+     "χρήματα"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "5.70"
+    }
+   },
+   {
+    "prompt": "If you are caught doing this.",
+    "answer": "ἐὰν ἁλῷς τοῦτο πράττων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ἁλῷς",
+     "τοῦτο",
+     "πράττων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "29c"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1735-passive-voice-q4",
+  "sectionId": "sm-1735-passive-voice",
+  "questions": [
+   {
+    "prompt": "He had no children by her.",
+    "answer": "παῖδες αὐτῷ οὐκ ἐγίγνοντο ἐκ ταύτης",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παῖδες",
+     "αὐτῷ",
+     "οὐκ",
+     "ἐγίγνοντο",
+     "ἐκ",
+     "ταύτης"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.4.37"
+    }
+   },
+   {
+    "prompt": "They were punished by these very men.",
+    "answer": "ὑπ᾽ αὐτῶν τούτων δίκην ἔδοσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπ",
+     "αὐτῶν",
+     "τούτων",
+     "δίκην",
+     "ἔδοσαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.6.45"
+    }
+   },
+   {
+    "prompt": "Worsted by their allies.",
+    "answer": "ὑπὸ τῶν συμμάχων ἡττώμενοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῶν",
+     "συμμάχων",
+     "ἡττώμενοι"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "4.28"
+    }
+   },
+   {
+    "prompt": "Obey the laws established by kings.",
+    "answer": "πείθου τοῖς νόμοις τοῖς ὑπὸ τῶν βασιλέων κειμένοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πείθου",
+     "τοῖς",
+     "νόμοις",
+     "τοῖς",
+     "ὑπὸ",
+     "τῶν",
+     "βασιλέων",
+     "κειμένοις"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "1.36"
+    }
+   }
+  ]
  }
 ]

@@ -1329,5 +1329,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1136-the-article-with-proper-names-q1",
+  "sectionId": "sm-1136-the-article-with-proper-names",
+  "questions": [
+   {
+    "prompt": "To one there came his mother, to another his wife and children.",
+    "answer": "ἦκον δε` τῷ μὲν μήτηρ, τῷ δὲ γυνὴ καὶ παῖδες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦκον",
+     "δε",
+     "τῷ",
+     "μὲν",
+     "μήτηρ",
+     "τῷ",
+     "δὲ",
+     "γυνὴ",
+     "καὶ",
+     "παῖδες"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "1.48"
+    }
+   },
+   {
+    "prompt": "To Olympian Zeus.",
+    "answer": "τῷ Διὶ τῷ Ὀλυμπίῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "Διὶ",
+     "τῷ",
+     "Ὀλυμπίῳ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.31"
+    }
+   },
+   {
+    "prompt": "To Mt. Istone.",
+    "answer": "ἐς τὸ ὄρος τὴν Ἰστώνην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐς",
+     "τὸ",
+     "ὄρος",
+     "τὴν",
+     "Ἰστώνην"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.85"
+    }
+   },
+   {
+    "prompt": "At the foot of Mt. Aetna.",
+    "answer": "ὑπὸ τῇ Αἴτνῃ τῷ ὄρει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὸ",
+     "τῇ",
+     "Αἴτνῃ",
+     "τῷ",
+     "ὄρει"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.116"
+    }
+   }
+  ]
  }
 ]

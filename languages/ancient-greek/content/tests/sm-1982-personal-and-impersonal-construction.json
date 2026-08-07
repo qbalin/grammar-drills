@@ -901,5 +901,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1982-personal-and-impersonal-construction-q1",
+  "sectionId": "sm-1982-personal-and-impersonal-construction",
+  "questions": [
+   {
+    "prompt": "The Assyrian is reported to be about to make an incursion into his country.",
+    "answer": "ὁ Ἀσσύριος εἰς τὴν χώραν αὐτοῦ ἐμβαλεῖν ἀγγέλλεται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ἀσσύριος",
+     "εἰς",
+     "τὴν",
+     "χώραν",
+     "αὐτοῦ",
+     "ἐμβαλεῖν",
+     "ἀγγέλλεται"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.3.30"
+    }
+   },
+   {
+    "prompt": "Much absurdity would result.",
+    "answer": "πολλή τις ἀλογία ξυμβαίνει γίγνεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλή",
+     "τις",
+     "ἀλογία",
+     "ξυμβαίνει",
+     "γίγνεσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Philebus",
+     "locus": "55a"
+    }
+   },
+   {
+    "prompt": "It is right for him to bear the blame.",
+    "answer": "τὴν αἰτίαν οὗτός ἐστι δίκαιος ἔχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "αἰτίαν",
+     "οὗτός",
+     "ἐστι",
+     "δίκαιος",
+     "ἔχειν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.4"
+    }
+   },
+   {
+    "prompt": "For I seem to be unable.",
+    "answer": "δοκῶ γάρ μοι ἄδυνατος εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκῶ",
+     "γάρ",
+     "μοι",
+     "ἄδυνατος",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "368b"
+    }
+   }
+  ]
  }
 ]

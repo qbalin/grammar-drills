@@ -397,5 +397,99 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2577-dependent-statements-introduced-by-oti-q1",
+  "sectionId": "sm-2577-dependent-statements-introduced-by-oti",
+  "questions": [
+   {
+    "prompt": "Do not even entertain the thought that I am annoyed at maintaining you.",
+    "answer": "ἀλλ᾽ ὅπως μὲν . . . ἐγὼ ἄχθομαι ὑμᾶς τρέφων, μηδ᾽ ὑπονοεῖτε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλ",
+     "ὅπως",
+     "μὲν",
+     "ἐγὼ",
+     "ἄχθομαι",
+     "ὑμᾶς",
+     "τρέφων",
+     "μηδ",
+     "ὑπονοεῖτε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.3.20"
+    }
+   },
+   {
+    "prompt": "The local belief is that Hephaestus is working at his forge.",
+    "answer": "νομίζουσιν οἱ ἐκείνῃ ἄνθρωποι . . . ὡς ὁ Ἥφαιστος χαλκεύει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζουσιν",
+     "οἱ",
+     "ἐκείνῃ",
+     "ἄνθρωποι",
+     "ὡς",
+     "ὁ",
+     "Ἥφαιστος",
+     "χαλκεύει"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.88"
+    }
+   },
+   {
+    "prompt": "I have often wondered with what possible arguments the accusers of Socrates succeeded in convincing the Athenians that he deserved death.",
+    "answer": "πολλάκις ἐθαύμασα τίσι ποτὲ λόγοις Ἀθηναίους ἔπεισαν οἱ γραψάμενοι Σωκράτην ὡς ἄξιος εἴη θανάτου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλάκις",
+     "ἐθαύμασα",
+     "τίσι",
+     "ποτὲ",
+     "λόγοις",
+     "Ἀθηναίους",
+     "ἔπεισαν",
+     "οἱ",
+     "γραψάμενοι",
+     "Σωκράτην",
+     "ὡς",
+     "ἄξιος",
+     "εἴη",
+     "θανάτου"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.1.1"
+    }
+   },
+   {
+    "prompt": "He said that, if they did not descend, he would burn their villages to the ground.",
+    "answer": "ἔλεγεν ὅτι, εἰ μὴ καταβήσονται . . . , ὅτι κατακαύσει . . . τὰς κώμας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "εἰ",
+     "μὴ",
+     "καταβήσονται",
+     "ὅτι",
+     "κατακαύσει",
+     "τὰς",
+     "κώμας"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.4.5"
+    }
+   }
+  ]
  }
 ]

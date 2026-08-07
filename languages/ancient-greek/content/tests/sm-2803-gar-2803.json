@@ -1840,5 +1840,70 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2803-gar-2803-q1",
+  "sectionId": "sm-2803-gar-2803",
+  "questions": [
+   {
+    "prompt": "Do you then confess that you have proved yourself unjust toward me? In truth I must indeed.",
+    "answer": "ὁμολογεῖς οὖν περὶ ἐμὲ ἄδικος γεγενῆσθαι; ἦ γὰρ ἀνάγκη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁμολογεῖς",
+     "οὖν",
+     "περὶ",
+     "ἐμὲ",
+     "ἄδικος",
+     "γεγενῆσθαι",
+     "ἦ",
+     "γὰρ",
+     "ἀνάγκη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.6.8"
+    }
+   },
+   {
+    "prompt": "Nor let mothers frighten their children. No indeed, said he.",
+    "answer": "μηδ᾽ αἱ μητέρες τὰ παιδία ἐκδειματούντων . . . μὴ γάρ, ἔφη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδ",
+     "αἱ",
+     "μητέρες",
+     "τὰ",
+     "παιδία",
+     "ἐκδειματούντων",
+     "μὴ",
+     "γάρ",
+     "ἔφη"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "381e"
+    }
+   },
+   {
+    "prompt": "Would that it depended on that.",
+    "answer": "εἰ γὰρ . . . ἐν τούτῳ εἴη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "γὰρ",
+     "ἐν",
+     "τούτῳ",
+     "εἴη"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "310d"
+    }
+   }
+  ]
  }
 ]

@@ -778,5 +778,59 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1266-the-indefinite-pronouns-q1",
+  "sectionId": "sm-1266-the-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "But everybody detests him.",
+    "answer": "ἀλλὰ μισεῖ τις ἐκεῖνον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "μισεῖ",
+     "τις",
+     "ἐκεῖνον"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "4.8"
+    }
+   },
+   {
+    "prompt": "The seeming to be somebody.",
+    "answer": "τὸ δοκεῖν τινὲς εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "δοκεῖν",
+     "τινὲς",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.213"
+    }
+   },
+   {
+    "prompt": "Little or nothing.",
+    "answer": "ἤ τι ἢ οὐδέν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤ",
+     "τι",
+     "ἢ",
+     "οὐδέν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "17b"
+    }
+   }
+  ]
  }
 ]

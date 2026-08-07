@@ -1826,5 +1826,189 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2895-men-q1",
+  "sectionId": "sm-2895-men",
+  "questions": [
+   {
+    "prompt": "They sailed away since they were jealous as it seemed to the majority at least.",
+    "answer": "ἀπέπλευσαν, ὡς μὲν τοῖς πλείστοις ἐδόκουν, φιλοτιμηθέντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέπλευσαν",
+     "ὡς",
+     "μὲν",
+     "τοῖς",
+     "πλείστοις",
+     "ἐδόκουν",
+     "φιλοτιμηθέντες"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.7"
+    }
+   },
+   {
+    "prompt": "Isn't this the tree to which you were bringing us? To be sure this is it.",
+    "answer": "ἆρ᾽ ου᾽ τόδε ἦν τὸ δένδρον ἐφ᾽ ὅπερ ἦγες ἡμᾶς; τοῦτο μὲν οὖν αὐτό",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἆρ",
+     "ου",
+     "τόδε",
+     "ἦν",
+     "τὸ",
+     "δένδρον",
+     "ἐφ",
+     "ὅπερ",
+     "ἦγες",
+     "ἡμᾶς",
+     "τοῦτο",
+     "μὲν",
+     "οὖν",
+     "αὐτό"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedrus",
+     "locus": "230a"
+    }
+   },
+   {
+    "prompt": "Such then were the words of Clearthus; and on the other hand Tissaphernes answered as follows.",
+    "answer": "Κλέαρχος μὲν οὖν τοσαῦτα εἶπε. Τισσαφέρνης δὲ ὧδε ἀπημείφθη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κλέαρχος",
+     "μὲν",
+     "οὖν",
+     "τοσαῦτα",
+     "εἶπε",
+     "Τισσαφέρνης",
+     "δὲ",
+     "ὧδε",
+     "ἀπημείφθη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.15"
+    }
+   },
+   {
+    "prompt": "The soul lasts for a long time, the body is weaker and lasts for a shorter time.",
+    "answer": "ἡ μὲν ψυχὴ πολυχρόνιόν ἐστι, τὸ δὲ σῶμα ἀσθενέστερον καὶ ὀλιγοχρονιώτερον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μὲν",
+     "ψυχὴ",
+     "πολυχρόνιόν",
+     "ἐστι",
+     "τὸ",
+     "δὲ",
+     "σῶμα",
+     "ἀσθενέστερον",
+     "καὶ",
+     "ὀλιγοχρονιώτερον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "87d"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2895-men-q2",
+  "sectionId": "sm-2895-men",
+  "questions": [
+   {
+    "prompt": "News came from the district of Erythrae itself and arrived also from all quarters.",
+    "answer": "ἦλθε μὲν καὶ ἀπὸ τῆς Ἐρυθραίας ἀγγελία, ἀφικνεῖτο δὲ καὶ πανταχόθεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦλθε",
+     "μὲν",
+     "καὶ",
+     "ἀπὸ",
+     "τῆς",
+     "Ἐρυθραίας",
+     "ἀγγελία",
+     "ἀφικνεῖτο",
+     "δὲ",
+     "καὶ",
+     "πανταχόθεν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.33"
+    }
+   },
+   {
+    "prompt": "We have quickly reached the places to which we had to go, and by following our leader in a compact body we have been invincible.",
+    "answer": "ταχὺ μὲν ὅποι ἔδει περιγιγνόμεθα ἀθρόοι τε τῷ ἄρχοντι ἑπόμενοι ἀνυπόστατοι ἦμεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταχὺ",
+     "μὲν",
+     "ὅποι",
+     "ἔδει",
+     "περιγιγνόμεθα",
+     "ἀθρόοι",
+     "τε",
+     "τῷ",
+     "ἄρχοντι",
+     "ἑπόμενοι",
+     "ἀνυπόστατοι",
+     "ἦμεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "8.1.3"
+    }
+   },
+   {
+    "prompt": "In the darkness.",
+    "answer": "ἀνὰ τὸ σκοτεινὸν μέν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνὰ",
+     "τὸ",
+     "σκοτεινὸν",
+     "μέν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.22"
+    }
+   },
+   {
+    "prompt": "He suffered no loss, but thought that he had done a great deal of damage.",
+    "answer": "ἔπαθε μὲν οὐδέν, πολλὰ δὲ κακὰ ἐνόμιζε ποιῆσαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπαθε",
+     "μὲν",
+     "οὐδέν",
+     "πολλὰ",
+     "δὲ",
+     "κακὰ",
+     "ἐνόμιζε",
+     "ποιῆσαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.4.2"
+    }
+   }
+  ]
  }
 ]

@@ -961,5 +961,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2852-eite-q1",
+  "sectionId": "sm-2852-eite",
+  "questions": [
+   {
+    "prompt": "Whether you wish to wage war upon us or to be our friends.",
+    "answer": "εἴτε βούλεσθε πολεμεῖν ἡμῖν εἴτε φίλοι εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴτε",
+     "βούλεσθε",
+     "πολεμεῖν",
+     "ἡμῖν",
+     "εἴτε",
+     "φίλοι",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.2.13"
+    }
+   },
+   {
+    "prompt": "The good man is happy whether he is large and strong or small and weak.",
+    "answer": "ὁ ἀγαθὸς ἀνὴρ . . . εὐδαίμων ἐστὶ . . . ἐάν τε μέγας καὶ ἰσχυρός, ἐάν τε σμικρὸς καὶ ἀσθενὴς ᾖ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἀγαθὸς",
+     "ἀνὴρ",
+     "εὐδαίμων",
+     "ἐστὶ",
+     "ἐάν",
+     "τε",
+     "μέγας",
+     "καὶ",
+     "ἰσχυρός",
+     "ἐάν",
+     "τε",
+     "σμικρὸς",
+     "καὶ",
+     "ἀσθενὴς",
+     "ᾖ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "660e"
+    }
+   },
+   {
+    "prompt": "You seem to me to utter prophecies, whether you were inspired by Euthyphron or whether some other muse has long been present in you without your knowing it.",
+    "answer": "εἴτε καὶ ἄλλη τις μοῦσα πάλαι σε ἐνοῦσα ἐλελήθει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴτε",
+     "καὶ",
+     "ἄλλη",
+     "τις",
+     "μοῦσα",
+     "πάλαι",
+     "σε",
+     "ἐνοῦσα",
+     "ἐλελήθει"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Cratylus",
+     "locus": "428c"
+    }
+   }
+  ]
  }
 ]

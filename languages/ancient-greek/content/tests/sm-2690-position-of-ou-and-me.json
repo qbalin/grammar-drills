@@ -698,5 +698,67 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2690-position-of-ou-and-me-q1",
+  "sectionId": "sm-2690-position-of-ou-and-me",
+  "questions": [
+   {
+    "prompt": "And the generals did not lead them out, but called them together.",
+    "answer": "οἱ δὲ στρατηγοὶ ἐξῆγον μὲν οὔ, συνεκάλεσαν δέ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δὲ",
+     "στρατηγοὶ",
+     "ἐξῆγον",
+     "μὲν",
+     "οὔ",
+     "συνεκάλεσαν",
+     "δέ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.4.20"
+    }
+   },
+   {
+    "prompt": "But if you pass upon us a sentence that is unjust.",
+    "answer": "εἰ δὲ περὶ ἡμῶν γνώσεσθε μὴ τὰ εἰκότα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δὲ",
+     "περὶ",
+     "ἡμῶν",
+     "γνώσεσθε",
+     "μὴ",
+     "τὰ",
+     "εἰκότα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.57"
+    }
+   },
+   {
+    "prompt": "You do not permit us even to take up our quarters.",
+    "answer": "ἡμᾶς οὐδ᾽ ἐναυλισθῆναι ἐπιτρέπεις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμᾶς",
+     "οὐδ",
+     "ἐναυλισθῆναι",
+     "ἐπιτρέπεις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.7.8"
+    }
+   }
+  ]
  }
 ]

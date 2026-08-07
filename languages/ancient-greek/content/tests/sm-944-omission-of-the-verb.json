@@ -976,5 +976,82 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-944-omission-of-the-verb-q1",
+  "sectionId": "sm-944-omission-of-the-verb",
+  "questions": [
+   {
+    "prompt": "Chance is common to all and the future cannot be scanned.",
+    "answer": "κοινὴ ἡ τύχη καὶ τὸ μέλλον ἀόρατον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κοινὴ",
+     "ἡ",
+     "τύχη",
+     "καὶ",
+     "τὸ",
+     "μέλλον",
+     "ἀόρατον"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "1.29"
+    }
+   },
+   {
+    "prompt": "The soul is ready to be a servant.",
+    "answer": "ἡ ψυχὴ δουλεύειν ἑτοίμη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ψυχὴ",
+     "δουλεύειν",
+     "ἑτοίμη"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedrus",
+     "locus": "252a"
+    }
+   },
+   {
+    "prompt": "If anybody should ask whether it is better.",
+    "answer": "εἴ τις ἐπερωτῴη πότερον κρεῖττον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "ἐπερωτῴη",
+     "πότερον",
+     "κρεῖττον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.1.9"
+    }
+   },
+   {
+    "prompt": "He made them more savage and that too towards himself.",
+    "answer": "ἀγριωτέρους αὐτοὺς ἀπέφηνε . . . καὶ ταῦτ᾽ εἰς αὑτόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγριωτέρους",
+     "αὐτοὺς",
+     "ἀπέφηνε",
+     "καὶ",
+     "ταῦτ",
+     "εἰς",
+     "αὑτόν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "516c"
+    }
+   }
+  ]
  }
 ]

@@ -436,5 +436,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-q1",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "An immense amount of snow fell so that it buried both the arms and the men.",
+    "answer": "ἐπιπίπτει χιὼν ἄπλετος ὥστε ἀπέκρυψε καὶ τὰ ὅπλα καὶ τοὺς ἀνθρώπους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπιπίπτει",
+     "χιὼν",
+     "ἄπλετος",
+     "ὥστε",
+     "ἀπέκρυψε",
+     "καὶ",
+     "τὰ",
+     "ὅπλα",
+     "καὶ",
+     "τοὺς",
+     "ἀνθρώπους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.4.11"
+    }
+   },
+   {
+    "prompt": "I consider that it is the case that the cities will revolt from him.",
+    "answer": "νομίζω οὕτως ἔχειν ὡς ἀποστήσονται αὐτοῦ αἱ πόλεις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "οὕτως",
+     "ἔχειν",
+     "ὡς",
+     "ἀποστήσονται",
+     "αὐτοῦ",
+     "αἱ",
+     "πόλεις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.1.14"
+    }
+   },
+   {
+    "prompt": "Everything was clearly visible from it, so that Cleon could not have escaped his notice in setting out with his force.",
+    "answer": "κατεφαίνετο πάντα αὐτόθεν ὥστε οὐκ ἂν ἔλαθεν αὐτὸν ὁρμώμενος ὁ Κλέων τῷ στρατῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατεφαίνετο",
+     "πάντα",
+     "αὐτόθεν",
+     "ὥστε",
+     "οὐκ",
+     "ἂν",
+     "ἔλαθεν",
+     "αὐτὸν",
+     "ὁρμώμενος",
+     "ὁ",
+     "Κλέων",
+     "τῷ",
+     "στρατῷ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.6"
+    }
+   }
+  ]
  }
 ]

@@ -414,5 +414,152 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2395-indicative-temporal-clauses-referring-q1",
+  "sectionId": "sm-2395-indicative-temporal-clauses-referring",
+  "questions": [
+   {
+    "prompt": "It was about midnight when this was taking place.",
+    "answer": "ὅτε ταῦτα ἦν, σχεδὸν μέσαι ἦσαν νύκτες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτε",
+     "ταῦτα",
+     "ἦν",
+     "σχεδὸν",
+     "μέσαι",
+     "ἦσαν",
+     "νύκτες"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.33"
+    }
+   },
+   {
+    "prompt": "As long as they led on equal terms we followed willingly.",
+    "answer": "μέχρι ἀπὸ τοῦ ἴσου ἡγοῦντο, προθύμως εἱπόμεθα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέχρι",
+     "ἀπὸ",
+     "τοῦ",
+     "ἴσου",
+     "ἡγοῦντο",
+     "προθύμως",
+     "εἱπόμεθα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.10"
+    }
+   },
+   {
+    "prompt": "While they were arming, the scouts came.",
+    "answer": "ἐν ᾧ ὡπλίζοντο, ἧκον . . . οἱ σκοποί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ᾧ",
+     "ὡπλίζοντο",
+     "ἧκον",
+     "οἱ",
+     "σκοποί"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.2.15"
+    }
+   },
+   {
+    "prompt": "But after he came out, he announced to his friends how the trial of Orontas had resulted.",
+    "answer": "ἐπεὶ δ᾽ ἐξῆλθεν, ἐξήγγειλε τοῖς φίλοις τὴν κρίσιν τοῦ Ὀρόντα ὡς ἐγένετο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "δ",
+     "ἐξῆλθεν",
+     "ἐξήγγειλε",
+     "τοῖς",
+     "φίλοις",
+     "τὴν",
+     "κρίσιν",
+     "τοῦ",
+     "Ὀρόντα",
+     "ὡς",
+     "ἐγένετο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.6.5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2395-indicative-temporal-clauses-referring-q2",
+  "sectionId": "sm-2395-indicative-temporal-clauses-referring",
+  "questions": [
+   {
+    "prompt": "They waited until the generals arrived.",
+    "answer": "ἔμειναν ἕως ἀφίκοντο οἱ στρατηγοί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔμειναν",
+     "ἕως",
+     "ἀφίκοντο",
+     "οἱ",
+     "στρατηγοί"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "1.1.29"
+    }
+   },
+   {
+    "prompt": "They kept reviling Soteridas until they forced him to march on.",
+    "answer": "λοιδοροῦσι τὸν Σωτηρίδαν ἔστε ἠνάγκασαν . . . πορεύεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λοιδοροῦσι",
+     "τὸν",
+     "Σωτηρίδαν",
+     "ἔστε",
+     "ἠνάγκασαν",
+     "πορεύεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.4.49"
+    }
+   },
+   {
+    "prompt": "I would not cease until I had made trial of this wisdom.",
+    "answer": "οὐκ ἂν ἐπαυόμην . . . ἕως ἀπεπειράθην τῆς σοφίας ταυτησί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἐπαυόμην",
+     "ἕως",
+     "ἀπεπειράθην",
+     "τῆς",
+     "σοφίας",
+     "ταυτησί"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Cratylus",
+     "locus": "396c"
+    }
+   }
+  ]
  }
 ]

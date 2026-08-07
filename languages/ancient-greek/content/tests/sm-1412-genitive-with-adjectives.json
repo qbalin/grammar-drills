@@ -1719,5 +1719,377 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1412-genitive-with-adjectives-q1",
+  "sectionId": "sm-1412-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "Love common to all men.",
+    "answer": "ὁ ἔρως κοινὸς πάντων ἀνθρώπων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἔρως",
+     "κοινὸς",
+     "πάντων",
+     "ἀνθρώπων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "205a"
+    }
+   },
+   {
+    "prompt": "Sacred to the same god.",
+    "answer": "ἱερὸς τοῦ αὐτοῦ θεοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἱερὸς",
+     "τοῦ",
+     "αὐτοῦ",
+     "θεοῦ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "85b"
+    }
+   },
+   {
+    "prompt": "The dangers belong to the commanders.",
+    "answer": "οἱ κίνδυνοι τῶν ἐφεστηκότων ἴδιοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κίνδυνοι",
+     "τῶν",
+     "ἐφεστηκότων",
+     "ἴδιοι"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "2.28"
+    }
+   },
+   {
+    "prompt": "Gratitude for the objects of our zeal.",
+    "answer": "χάρις ὧν πρόθυμοι γεγενήμεθα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χάρις",
+     "ὧν",
+     "πρόθυμοι",
+     "γεγενήμεθα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.67"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1412-genitive-with-adjectives-q2",
+  "sectionId": "sm-1412-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "The general must be able to provide what is needed in war and to supply provisions for his men.",
+    "answer": "παρασκευαστικὸν τῶν εἰς τὸν πόλεμον τὸν στρατηγὸν εἶναι χρὴ καὶ ποριστικὸν τῶν ἐπιτηδείων τοῖς στρατιώταις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρασκευαστικὸν",
+     "τῶν",
+     "εἰς",
+     "τὸν",
+     "πόλεμον",
+     "τὸν",
+     "στρατηγὸν",
+     "εἶναι",
+     "χρὴ",
+     "καὶ",
+     "ποριστικὸν",
+     "τῶν",
+     "ἐπιτηδείων",
+     "τοῖς",
+     "στρατιώταις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.1.6"
+    }
+   },
+   {
+    "prompt": "Forgiving of human errors.",
+    "answer": "συγγνώμων τῶν ἀνθρωπίνων ἁμαρτημάτων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συγγνώμων",
+     "τῶν",
+     "ἀνθρωπίνων",
+     "ἁμαρτημάτων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.1.37"
+    }
+   },
+   {
+    "prompt": "The city was full of rejoicing.",
+    "answer": "χαρᾶς ἡ πόλις ἦν μεστή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαρᾶς",
+     "ἡ",
+     "πόλις",
+     "ἦν",
+     "μεστή"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.217"
+    }
+   },
+   {
+    "prompt": "A park full of wild beasts.",
+    "answer": "παράδεισος ἀγρίων θηρίων πλήρης",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παράδεισος",
+     "ἀγρίων",
+     "θηρίων",
+     "πλήρης"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1412-genitive-with-adjectives-q3",
+  "sectionId": "sm-1412-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "Master of this country.",
+    "answer": "ταύτης κύριος τῆς χώρας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτης",
+     "κύριος",
+     "τῆς",
+     "χώρας"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "3.16"
+    }
+   },
+   {
+    "prompt": "A rug worth ten minae.",
+    "answer": "τάπις ἀξία δέκα μνῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάπις",
+     "ἀξία",
+     "δέκα",
+     "μνῶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.3.27"
+    }
+   },
+   {
+    "prompt": "Reputation is not to be bought for money.",
+    "answer": "δόξα χρημάτων οὐκ ὠνητή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δόξα",
+     "χρημάτων",
+     "οὐκ",
+     "ὠνητή"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "2.32"
+    }
+   },
+   {
+    "prompt": "Not seeing the most pleasant sight.",
+    "answer": "τοῦ ἡδίστου θεάματος ἀθέατος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "ἡδίστου",
+     "θεάματος",
+     "ἀθέατος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.1.31"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1412-genitive-with-adjectives-q4",
+  "sectionId": "sm-1412-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "Pleasure is different from what is good.",
+    "answer": "ἕτερον τὸ ἡδὺ τοῦ ἀγαθοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕτερον",
+     "τὸ",
+     "ἡδὺ",
+     "τοῦ",
+     "ἀγαθοῦ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "500d"
+    }
+   },
+   {
+    "prompt": "An ignorant man is inferior to a wise man, a coward to a brave man.",
+    "answer": "ἤττων ἀμαθὴς σοφοῦ, δειλὸς ἀνδρείου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤττων",
+     "ἀμαθὴς",
+     "σοφοῦ",
+     "δειλὸς",
+     "ἀνδρείου"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedrus",
+     "locus": "239a"
+    }
+   },
+   {
+    "prompt": "The beauty of the woman is too great for description.",
+    "answer": "κρεῖττόν ἐστι λόγου τὸ κάλλος τῆς γυναικός",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κρεῖττόν",
+     "ἐστι",
+     "λόγου",
+     "τὸ",
+     "κάλλος",
+     "τῆς",
+     "γυναικός"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.11.1"
+    }
+   },
+   {
+    "prompt": "The reputation he acquired fell short of his expectation.",
+    "answer": "καταδεεστέραν τὴν δόξαν τῆς ἐλπίδος ἔλαβεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καταδεεστέραν",
+     "τὴν",
+     "δόξαν",
+     "τῆς",
+     "ἐλπίδος",
+     "ἔλαβεν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "2.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1412-genitive-with-adjectives-q5",
+  "sectionId": "sm-1412-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "It returned double what it received.",
+    "answer": "διπλάσια ἀπέδωκεν ὧν ἔλαβεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διπλάσια",
+     "ἀπέδωκεν",
+     "ὧν",
+     "ἔλαβεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "8.3.38"
+    }
+   },
+   {
+    "prompt": "It is more wretched to dwell with a diseased soul than a diseased body.",
+    "answer": "μὴ ὑγιεῖ ψυχῇ συνοικεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ὑγιεῖ",
+     "ψυχῇ",
+     "συνοικεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "479b"
+    }
+   },
+   {
+    "prompt": "An expedition greater than any preceding it.",
+    "answer": "στρατεία μεγίστη τῶν πρὸ αὐτῆς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "στρατεία",
+     "μεγίστη",
+     "τῶν",
+     "πρὸ",
+     "αὐτῆς"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.10"
+    }
+   },
+   {
+    "prompt": "Dates wonderful for their size.",
+    "answer": "βάλανοι θαυμάσιαι τοῦ μεγέθους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βάλανοι",
+     "θαυμάσιαι",
+     "τοῦ",
+     "μεγέθους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.3.15"
+    }
+   }
+  ]
  }
 ]

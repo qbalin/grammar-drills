@@ -866,5 +866,97 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2937-oude-mede-with-other-negatives-q1",
+  "sectionId": "sm-2937-oude-mede-with-other-negatives",
+  "questions": [
+   {
+    "prompt": "You do not even understand though you see, nor yet do you remember though you hear.",
+    "answer": "σύ γε οὐδὲ ὁρῶν γιγνώσκεις οὐδὲ ἀκούων μέμνησαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "γε",
+     "οὐδὲ",
+     "ὁρῶν",
+     "γιγνώσκεις",
+     "οὐδὲ",
+     "ἀκούων",
+     "μέμνησαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.27"
+    }
+   },
+   {
+    "prompt": "As there is no good in an idle tiller of the soil, so there is no good in an idle general.",
+    "answer": "ὥσπερ οὐδὲ γεωργοῦ ἀργοῦ οὐδὲν ὄφελος, οὕτως οὐδὲ στρατηγοῦ ἀργοῦντος οὐδὲν ὄφελος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "οὐδὲ",
+     "γεωργοῦ",
+     "ἀργοῦ",
+     "οὐδὲν",
+     "ὄφελος",
+     "οὕτως",
+     "οὐδὲ",
+     "στρατηγοῦ",
+     "ἀργοῦντος",
+     "οὐδὲν",
+     "ὄφελος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.3.18"
+    }
+   },
+   {
+    "prompt": "For neither did he deceive me even in this.",
+    "answer": "οὐδὲ γὰρ οὐδὲ τοῦτο ἐψεύσατο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "γὰρ",
+     "οὐδὲ",
+     "τοῦτο",
+     "ἐψεύσατο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.2.20"
+    }
+   },
+   {
+    "prompt": "He said however that he did not think that, even if Dexippus was a downright rascal, he ought to suffer by an act of violence.",
+    "answer": "οὐ μέντοι ἔφη νομίζειν οὐδ᾽ ει᾽ παμπόνηρος ἦν Δέξιππος βίᾳ χρῆναι πάσχειν αὐτόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μέντοι",
+     "ἔφη",
+     "νομίζειν",
+     "οὐδ",
+     "ει",
+     "παμπόνηρος",
+     "ἦν",
+     "Δέξιππος",
+     "βίᾳ",
+     "χρῆναι",
+     "πάσχειν",
+     "αὐτόν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.6.25"
+    }
+   }
+  ]
  }
 ]

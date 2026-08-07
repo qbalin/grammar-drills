@@ -1647,5 +1647,305 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1066-comparative-q1",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "Well or ill.",
+    "answer": "εὖ τε καὶ χεῖρον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "τε",
+     "καὶ",
+     "χεῖρον"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.35"
+    }
+   },
+   {
+    "prompt": "Cyrus seems to me to love all whom he finds excellent quite as much as he loves himself.",
+    "answer": "ἐμοὶ δοκεῖ Κῦρος, οὕστινας ἂν ὁρᾷ ἀγαθούς, φιλεῖν οὐδὲν ἧττον ἑαυτοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμοὶ",
+     "δοκεῖ",
+     "Κῦρος",
+     "οὕστινας",
+     "ἂν",
+     "ὁρᾷ",
+     "ἀγαθούς",
+     "φιλεῖν",
+     "οὐδὲν",
+     "ἧττον",
+     "ἑαυτοῦ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.3.12"
+    }
+   },
+   {
+    "prompt": "It behooves me rather than others to rule.",
+    "answer": "προσήκει μοι μᾶλλον ἑτέρων . . . ἄρχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσήκει",
+     "μοι",
+     "μᾶλλον",
+     "ἑτέρων",
+     "ἄρχειν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.16"
+    }
+   },
+   {
+    "prompt": "To endure a most disgraceful slavery.",
+    "answer": "δουλεύειν δουλείαν οὐδεμιᾶς ἧττον αἰσχράν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δουλεύειν",
+     "δουλείαν",
+     "οὐδεμιᾶς",
+     "ἧττον",
+     "αἰσχράν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.5.6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-q2",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "Saying that he had never met with sweeter wine than this.",
+    "answer": "λέγων ὅτι οὔπω . . . τούτου ἡδίονι οἴνῳ ἐπιτύχοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγων",
+     "ὅτι",
+     "οὔπω",
+     "τούτου",
+     "ἡδίονι",
+     "οἴνῳ",
+     "ἐπιτύχοι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.9.25"
+    }
+   },
+   {
+    "prompt": "More bowmen than 20 myriads.",
+    "answer": "τοξότας πλεῖν ἢ εἴκοσι μυριάδας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοξότας",
+     "πλεῖν",
+     "ἢ",
+     "εἴκοσι",
+     "μυριάδας"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.1.6"
+    }
+   },
+   {
+    "prompt": "More bowmen than 4000.",
+    "answer": "τοξότας πλείους ἢ τετρακισχιλίους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοξότας",
+     "πλείους",
+     "ἢ",
+     "τετρακισχιλίους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.1.5"
+    }
+   },
+   {
+    "prompt": "They learn more easily than before.",
+    "answer": "αὐτοὶ αὑτῶν εὐμαθέστεροι γίγνονται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοὶ",
+     "αὑτῶν",
+     "εὐμαθέστεροι",
+     "γίγνονται"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "15.267"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-q3",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "More arms were taken than there were men slain.",
+    "answer": "ὅπλα ἔτι πλείω ἢ κατὰ τοὺς νεκροὺς ἐλήφθη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπλα",
+     "ἔτι",
+     "πλείω",
+     "ἢ",
+     "κατὰ",
+     "τοὺς",
+     "νεκροὺς",
+     "ἐλήφθη"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.45"
+    }
+   },
+   {
+    "prompt": "I fear lest there should befall the State an evil too great for it to be able to bear.",
+    "answer": "φοβοῦμαι μή τι μεῖζον ἢ ὥστε φέρειν δύνασθαι κακὸν τῇ πόλει συμβῇ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "τι",
+     "μεῖζον",
+     "ἢ",
+     "ὥστε",
+     "φέρειν",
+     "δύνασθαι",
+     "κακὸν",
+     "τῇ",
+     "πόλει",
+     "συμβῇ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.5.17"
+    }
+   },
+   {
+    "prompt": "A peace inevitable rather than honourable.",
+    "answer": "ἡ εἰρήνη ἀναγκαιοτέρα ἢ καλλίων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "εἰρήνη",
+     "ἀναγκαιοτέρα",
+     "ἢ",
+     "καλλίων"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.69"
+    }
+   },
+   {
+    "prompt": "To discourse briefly rather than clearly.",
+    "answer": "συντομώτερον ἢ σαφέστερον διαλεχθῆναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συντομώτερον",
+     "ἢ",
+     "σαφέστερον",
+     "διαλεχθῆναι"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "6.24"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1066-comparative-q4",
+  "sectionId": "sm-1066-comparative",
+  "questions": [
+   {
+    "prompt": "By entering upon undertakings too great they encounter no slight troubles.",
+    "answer": "μείζοσιν ἔργοις ἐπιχειροῦντες οὐ μικροῖς κακοῖς περιπίπτουσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μείζοσιν",
+     "ἔργοις",
+     "ἐπιχειροῦντες",
+     "οὐ",
+     "μικροῖς",
+     "κακοῖς",
+     "περιπίπτουσι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.2.35"
+    }
+   },
+   {
+    "prompt": "For 'tis not a bad thing to hear often.",
+    "answer": "οὐ γὰρ χεῖρον πολλάκις ἀκούειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "γὰρ",
+     "χεῖρον",
+     "πολλάκις",
+     "ἀκούειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "105a"
+    }
+   },
+   {
+    "prompt": "The braver they are to appearances, the more they deserve our anger.",
+    "answer": "ὅσῳ μείζους εἰσὶ τὰς ὄψεις, τοσούτῳ μᾶλλον ὀργῆς ἄξιοί εἰσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅσῳ",
+     "μείζους",
+     "εἰσὶ",
+     "τὰς",
+     "ὄψεις",
+     "τοσούτῳ",
+     "μᾶλλον",
+     "ὀργῆς",
+     "ἄξιοί",
+     "εἰσι"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "10.29"
+    }
+   }
+  ]
  }
 ]

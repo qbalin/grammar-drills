@@ -1344,5 +1344,297 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1306-genitive-of-the-divided-whole-partitive-q1",
+  "sectionId": "sm-1306-genitive-of-the-divided-whole-partitive",
+  "questions": [
+   {
+    "prompt": "The needy among the citizens.",
+    "answer": "οἱ ἄποροι τῶν πολιτῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄποροι",
+     "τῶν",
+     "πολιτῶν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.104"
+    }
+   },
+   {
+    "prompt": "Those of the unrighteous who come here.",
+    "answer": "οἱ τῶν ἀδίκων ἀφικνούμενοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τῶν",
+     "ἀδίκων",
+     "ἀφικνούμενοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "525c"
+    }
+   },
+   {
+    "prompt": "The entire body of the hoplites.",
+    "answer": "τὸ πᾶν πλῆθος τῶν ὁπλιτῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "πᾶν",
+     "πλῆθος",
+     "τῶν",
+     "ὁπλιτῶν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.93"
+    }
+   },
+   {
+    "prompt": "Some part of the barbarians.",
+    "answer": "μέρος τι τῶν βαρβάρων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέρος",
+     "τι",
+     "τῶν",
+     "βαρβάρων"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1306-genitive-of-the-divided-whole-partitive-q2",
+  "sectionId": "sm-1306-genitive-of-the-divided-whole-partitive",
+  "questions": [
+   {
+    "prompt": "To Oenoë in Attica.",
+    "answer": "τῆς Ἀττικῆς ἐς Οἰνόην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῆς",
+     "Ἀττικῆς",
+     "ἐς",
+     "Οἰνόην"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.18"
+    }
+   },
+   {
+    "prompt": "Cenaeum in Euboea.",
+    "answer": "τὸ Κήναιον τῆς Εὐβοίας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "Κήναιον",
+     "τῆς",
+     "Εὐβοίας"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.93"
+    }
+   },
+   {
+    "prompt": "The unjust among men.",
+    "answer": "οἱ ἄδικοι τῶν ἀνθρώπων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄδικοι",
+     "τῶν",
+     "ἀνθρώπων"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "27.68"
+    }
+   },
+   {
+    "prompt": "Whoever of the rest of the Greeks so desires.",
+    "answer": "τῶν ἄλλων Ἑλλήνων ὁ βουλόμενος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "ἄλλων",
+     "Ἑλλήνων",
+     "ὁ",
+     "βουλόμενος"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.92"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1306-genitive-of-the-divided-whole-partitive-q3",
+  "sectionId": "sm-1306-genitive-of-the-divided-whole-partitive",
+  "questions": [
+   {
+    "prompt": "The part of the cavern facing them.",
+    "answer": "τὸ καταντικρὺ αὐτῶν τοῦ σπηλαίου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "καταντικρὺ",
+     "αὐτῶν",
+     "τοῦ",
+     "σπηλαίου"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "515a"
+    }
+   },
+   {
+    "prompt": "They ravaged most of the land.",
+    "answer": "ἔτεμον τῆς γῆς τὴν πολλήν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔτεμον",
+     "τῆς",
+     "γῆς",
+     "τὴν",
+     "πολλήν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.56"
+    }
+   },
+   {
+    "prompt": "The greater part of the picked Argives.",
+    "answer": "τῶν Ἀργείων λογάδων τὸ πολύ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "Ἀργείων",
+     "λογάδων",
+     "τὸ",
+     "πολύ"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.73"
+    }
+   },
+   {
+    "prompt": "The oldest of the generals.",
+    "answer": "οἱ πρεσβύτατοι τῶν στρατηγῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρεσβύτατοι",
+     "τῶν",
+     "στρατηγῶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.3.11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1306-genitive-of-the-divided-whole-partitive-q4",
+  "sectionId": "sm-1306-genitive-of-the-divided-whole-partitive",
+  "questions": [
+   {
+    "prompt": "My ship was the best sailer of the whole squadron.",
+    "answer": "ἡ ναῦς ἄριστά μοι ἔπλει παντὸς τοῦ στρατοπέδου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ναῦς",
+     "ἄριστά",
+     "μοι",
+     "ἔπλει",
+     "παντὸς",
+     "τοῦ",
+     "στρατοπέδου"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "21.6"
+    }
+   },
+   {
+    "prompt": "Some of them and not others.",
+    "answer": "οἱ μὲν αὐτῶν, οἱ δ᾽ οὔ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "αὐτῶν",
+     "οἱ",
+     "δ",
+     "οὔ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "24e"
+    }
+   },
+   {
+    "prompt": "Those of the enemy who were taken later.",
+    "answer": "οἳ ὕστερον ἐλήφθησαν τῶν πολεμίων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἳ",
+     "ὕστερον",
+     "ἐλήφθησαν",
+     "τῶν",
+     "πολεμίων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.7.13"
+    }
+   },
+   {
+    "prompt": "And among them was Phalinus.",
+    "answer": "ἦν δ᾽ αὐτῶν Φαλῖνος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦν",
+     "δ",
+     "αὐτῶν",
+     "Φαλῖνος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.7"
+    }
+   }
+  ]
  }
 ]

@@ -413,5 +413,62 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2220-verbs-of-caution-q1",
+  "sectionId": "sm-2220-verbs-of-caution",
+  "questions": [
+   {
+    "prompt": "Taking care that I do not depart.",
+    "answer": "εὐλαβούμενοι ὅπως μὴ . . . οἰχήσομαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐλαβούμενοι",
+     "ὅπως",
+     "μὴ",
+     "οἰχήσομαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "91c"
+    }
+   },
+   {
+    "prompt": "Beware lest they revolt from thee.",
+    "answer": "ὅρα ὅκως μή σευ ἀποστήσονται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅρα",
+     "ὅκως",
+     "μή",
+     "σευ",
+     "ἀποστήσονται"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "3.36"
+    }
+   },
+   {
+    "prompt": "We suspect that you will not prove impartial.",
+    "answer": "ὑποπτεύομεν . . . ὑμᾶς μὴ οὐ κοινοὶ ἀποβῆτε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑποπτεύομεν",
+     "ὑμᾶς",
+     "μὴ",
+     "οὐ",
+     "κοινοὶ",
+     "ἀποβῆτε"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.53"
+    }
+   }
+  ]
  }
 ]

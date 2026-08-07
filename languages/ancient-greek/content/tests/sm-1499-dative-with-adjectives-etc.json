@@ -887,5 +887,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1499-dative-with-adjectives-etc-q1",
+  "sectionId": "sm-1499-dative-with-adjectives-etc",
+  "questions": [
+   {
+    "prompt": "Plans like the deeds.",
+    "answer": "ἀδελφὰ τὰ βουλεύματα τοῖς ἔργοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀδελφὰ",
+     "τὰ",
+     "βουλεύματα",
+     "τοῖς",
+     "ἔργοις"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "2.64"
+    }
+   },
+   {
+    "prompt": "To be of the same mind as I am.",
+    "answer": "τὴν αὐτὴν γνώμην ἐμοὶ ἔχειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "αὐτὴν",
+     "γνώμην",
+     "ἐμοὶ",
+     "ἔχειν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "3.21"
+    }
+   },
+   {
+    "prompt": "Of the same father as I am.",
+    "answer": "τοῦ αὐτοῦ ἐμοὶ πατρός",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "αὐτοῦ",
+     "ἐμοὶ",
+     "πατρός"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "40.34"
+    }
+   },
+   {
+    "prompt": "To suffer the same as you have often suffered before.",
+    "answer": "παθεῖν ταὐτὸν ὅπερ πολλάκις πρότερον πεπόνθατε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παθεῖν",
+     "ταὐτὸν",
+     "ὅπερ",
+     "πολλάκις",
+     "πρότερον",
+     "πεπόνθατε"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "1.8"
+    }
+   }
+  ]
  }
 ]

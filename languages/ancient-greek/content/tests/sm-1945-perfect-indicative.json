@@ -1197,5 +1197,62 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1945-perfect-indicative-q1",
+  "sectionId": "sm-1945-perfect-indicative",
+  "questions": [
+   {
+    "prompt": "I was struck with fear, and even at the present moment am still in a state of agitation.",
+    "answer": "ἐφοβήθην, καὶ ἔτι καὶ νῦν τεθορύβημαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβήθην",
+     "καὶ",
+     "ἔτι",
+     "καὶ",
+     "νῦν",
+     "τεθορύβημαι"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "2.4"
+    }
+   },
+   {
+    "prompt": "Lack of discipline ere now has been the ruin of many.",
+    "answer": "ἡ ἀταξία πολλοὺς ἤδη ἀπολώλεκεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἀταξία",
+     "πολλοὺς",
+     "ἤδη",
+     "ἀπολώλεκεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.38"
+    }
+   },
+   {
+    "prompt": "For all he could do, we had perished.",
+    "answer": "τὸ ἐπὶ τούτῳ ἀπολώλαμεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἐπὶ",
+     "τούτῳ",
+     "ἀπολώλαμεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.6.23"
+    }
+   }
+  ]
  }
 ]

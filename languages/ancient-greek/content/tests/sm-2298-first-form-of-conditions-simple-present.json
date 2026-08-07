@@ -413,5 +413,89 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2298-first-form-of-conditions-simple-present-q1",
+  "sectionId": "sm-2298-first-form-of-conditions-simple-present",
+  "questions": [
+   {
+    "prompt": "If Asclepius was the son of a god, he was not covetous; if he was covetous, he was not the son of a god.",
+    "answer": "θεοῦ ἦν, οὐκ ἦν αἰσχροκερδής· εἰ δ᾽ αἰσχροκερδής, οὐκ ἦν θεοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θεοῦ",
+     "ἦν",
+     "οὐκ",
+     "ἦν",
+     "αἰσχροκερδής",
+     "εἰ",
+     "δ",
+     "αἰσχροκερδής",
+     "οὐκ",
+     "ἦν",
+     "θεοῦ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "408c"
+    }
+   },
+   {
+    "prompt": "In truth you do possess a noble art, if indeed you do possess it.",
+    "answer": "ἦ καλὸν . . . τέχνημα ἄρα κέκτησαι, εἴπερ κέκτησαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "καλὸν",
+     "τέχνημα",
+     "ἄρα",
+     "κέκτησαι",
+     "εἴπερ",
+     "κέκτησαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "319a"
+    }
+   },
+   {
+    "prompt": "But let us return to the point whence we digressed, if it is agreeable to you.",
+    "answer": "ὅθεν δὲ ἀπελίπομεν ἐπανέλθωμεν, εἴ σοι ἡδομένῳ ἐστίν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅθεν",
+     "δὲ",
+     "ἀπελίπομεν",
+     "ἐπανέλθωμεν",
+     "εἴ",
+     "σοι",
+     "ἡδομένῳ",
+     "ἐστίν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "78b"
+    }
+   },
+   {
+    "prompt": "If any one objects, let him speak.",
+    "answer": "εἴ τις ἀντιλέγει, λεγέτω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "ἀντιλέγει",
+     "λεγέτω"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.3.14"
+    }
+   }
+  ]
  }
 ]

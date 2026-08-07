@@ -376,5 +376,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2574-dependent-substantive-clauses-q1",
+  "sectionId": "sm-2574-dependent-substantive-clauses",
+  "questions": [
+   {
+    "prompt": "He said that they had not come to wage war.",
+    "answer": "εἶπεν ὅτι οὐ πόλεμον ποιησόμενοι ἥκοιεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "οὐ",
+     "πόλεμον",
+     "ποιησόμενοι",
+     "ἥκοιεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.5.24"
+    }
+   },
+   {
+    "prompt": "They were managing how some reinforcements should come.",
+    "answer": "ἔπρασσον ὅπως τις βοήθεια ἥξει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπρασσον",
+     "ὅπως",
+     "τις",
+     "βοήθεια",
+     "ἥξει"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.4"
+    }
+   },
+   {
+    "prompt": "He says that nothing is more unjust than talk about a man's character.",
+    "answer": "λέγει ὡς οὐδέν ἐστιν ἀδικώτερον φήμης",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγει",
+     "ὡς",
+     "οὐδέν",
+     "ἐστιν",
+     "ἀδικώτερον",
+     "φήμης"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "1.125"
+    }
+   },
+   {
+    "prompt": "Observing how great the extent of their territory was and how excellent its quality.",
+    "answer": "διαθεώμενος αὐτῶν ὅσην μὲν χώραν καὶ οἵαν ἔχοιεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαθεώμενος",
+     "αὐτῶν",
+     "ὅσην",
+     "μὲν",
+     "χώραν",
+     "καὶ",
+     "οἵαν",
+     "ἔχοιεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.19"
+    }
+   }
+  ]
  }
 ]

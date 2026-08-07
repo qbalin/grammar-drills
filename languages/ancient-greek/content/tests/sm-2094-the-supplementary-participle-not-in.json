@@ -1649,5 +1649,311 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2094-the-supplementary-participle-not-in-q1",
+  "sectionId": "sm-2094-the-supplementary-participle-not-in",
+  "questions": [
+   {
+    "prompt": "Who happened to have spoken in opposition and to have declared his opinion.",
+    "answer": "ὅστις ἀντειπών γε ἐτύγχανε καὶ γνώμην ἀποδεδειγμένος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἀντειπών",
+     "γε",
+     "ἐτύγχανε",
+     "καὶ",
+     "γνώμην",
+     "ἀποδεδειγμένος"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.27"
+    }
+   },
+   {
+    "prompt": "Scarcely had they heard of the war when they came.",
+    "answer": "οὐκ ἔφθασαν πυθόμενοι τὸν πόλεμον καὶ ἧκον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔφθασαν",
+     "πυθόμενοι",
+     "τὸν",
+     "πόλεμον",
+     "καὶ",
+     "ἧκον"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "4.86"
+    }
+   },
+   {
+    "prompt": "He entered Mitylene secretly.",
+    "answer": "διαλαθὼν ἐσέρχεται ἐς τὴν Μιτυλήνην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαλαθὼν",
+     "ἐσέρχεται",
+     "ἐς",
+     "τὴν",
+     "Μιτυλήνην"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.25"
+    }
+   },
+   {
+    "prompt": "We got the start of them by ravaging their territory.",
+    "answer": "φθάνοντες ἤδη δῃοῦμεν τὴν ἐκείνων γῆν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φθάνοντες",
+     "ἤδη",
+     "δῃοῦμεν",
+     "τὴν",
+     "ἐκείνων",
+     "γῆν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.3.18"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2094-the-supplementary-participle-not-in-q2",
+  "sectionId": "sm-2094-the-supplementary-participle-not-in",
+  "questions": [
+   {
+    "prompt": "The soldiers kept eating meat.",
+    "answer": "κρέα ἐσθίοντες οἱ στρατιῶται διεγίγνοντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κρέα",
+     "ἐσθίοντες",
+     "οἱ",
+     "στρατιῶται",
+     "διεγίγνοντο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.5.6"
+    }
+   },
+   {
+    "prompt": "The sun continues to be most brilliant.",
+    "answer": "ὁ ἥλιος λαμπρότατος ὢν διαμένει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἥλιος",
+     "λαμπρότατος",
+     "ὢν",
+     "διαμένει"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.7.7"
+    }
+   },
+   {
+    "prompt": "I will begin my speech with the healing art.",
+    "answer": "ἄρξομαι ἀπὸ τῆς ἰατρικῆς λέγων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄρξομαι",
+     "ἀπὸ",
+     "τῆς",
+     "ἰατρικῆς",
+     "λέγων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "186b"
+    }
+   },
+   {
+    "prompt": "Do not grow weary of doing good to your friend.",
+    "answer": "μὴ κάμῃς φίλον ἄνδρα εὐεργετῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "κάμῃς",
+     "φίλον",
+     "ἄνδρα",
+     "εὐεργετῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "470c"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2094-the-supplementary-participle-not-in-q3",
+  "sectionId": "sm-2094-the-supplementary-participle-not-in",
+  "questions": [
+   {
+    "prompt": "I like to converse with very old men.",
+    "answer": "χαίρω διαλεγόμενος τοῖς σφόδρα πρεσβύταις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαίρω",
+     "διαλεγόμενος",
+     "τοῖς",
+     "σφόδρα",
+     "πρεσβύταις"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "328d"
+    }
+   },
+   {
+    "prompt": "I am not content to live on these conditions.",
+    "answer": "οὐκ ἀγαπῶ ζῶν ἐπὶ τούτοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀγαπῶ",
+     "ζῶν",
+     "ἐπὶ",
+     "τούτοις"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "12.8"
+    }
+   },
+   {
+    "prompt": "I should not be annoyed at learning.",
+    "answer": "οὐκ ἂν ἀχθοίμην μανθάνων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἂν",
+     "ἀχθοίμην",
+     "μανθάνων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laches",
+     "locus": "189a"
+    }
+   },
+   {
+    "prompt": "They repented not having accepted the truce.",
+    "answer": "μετεμέλοντο τὰς σπονδὰς οὐ δεξάμενοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μετεμέλοντο",
+     "τὰς",
+     "σπονδὰς",
+     "οὐ",
+     "δεξάμενοι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.27"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2094-the-supplementary-participle-not-in-q4",
+  "sectionId": "sm-2094-the-supplementary-participle-not-in",
+  "questions": [
+   {
+    "prompt": "I do not repent having made such a defence.",
+    "answer": "οὔ μοι μεταμέλει οὕτως ἀπολογησαμένῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔ",
+     "μοι",
+     "μεταμέλει",
+     "οὕτως",
+     "ἀπολογησαμένῳ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "38e"
+    }
+   },
+   {
+    "prompt": "He did well in ending his life thus.",
+    "answer": "καλῶς ἐποίησεν οὕτως τελευτήσας τὸν βίον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλῶς",
+     "ἐποίησεν",
+     "οὕτως",
+     "τελευτήσας",
+     "τὸν",
+     "βίον"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "28.8"
+    }
+   },
+   {
+    "prompt": "We shall not be outdone in well-doing.",
+    "answer": "οὐχ ἡττησόμεθα εὖ ποιοῦντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐχ",
+     "ἡττησόμεθα",
+     "εὖ",
+     "ποιοῦντες"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.3.23"
+    }
+   },
+   {
+    "prompt": "They had the courage to look calmly on their city made desolate and their country being ravaged.",
+    "answer": "ἔτλησαν ἐπιδεῖν . . . ἐρήμην μὲν τὴν πόλιν γενομένην, τὴν δὲ χώραν πορθουμένην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔτλησαν",
+     "ἐπιδεῖν",
+     "ἐρήμην",
+     "μὲν",
+     "τὴν",
+     "πόλιν",
+     "γενομένην",
+     "τὴν",
+     "δὲ",
+     "χώραν",
+     "πορθουμένην"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "4.96"
+    }
+   }
+  ]
  }
 ]

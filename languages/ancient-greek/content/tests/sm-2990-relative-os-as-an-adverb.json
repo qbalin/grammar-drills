@@ -752,5 +752,63 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2990-relative-os-as-an-adverb-q1",
+  "sectionId": "sm-2990-relative-os-as-an-adverb",
+  "questions": [
+   {
+    "prompt": "I was faithful, as you know.",
+    "answer": "πιστὸς ἦν, ὡς ὑμεῖς ἐπίστασθε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστὸς",
+     "ἦν",
+     "ὡς",
+     "ὑμεῖς",
+     "ἐπίστασθε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.3.2"
+    }
+   },
+   {
+    "prompt": "They sailed away out of jealousy, as it seemed to most people.",
+    "answer": "ἀπέπλευσαν, ὡς μὲν τοῖς πλείστοις ἐδόκουν, φιλοτιμηθέντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέπλευσαν",
+     "ὡς",
+     "μὲν",
+     "τοῖς",
+     "πλείστοις",
+     "ἐδόκουν",
+     "φιλοτιμηθέντες"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.7"
+    }
+   },
+   {
+    "prompt": "Having about five hundred hoplites.",
+    "answer": "ὁπλίτας ἔχων ὡς πεντακοσίους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπλίτας",
+     "ἔχων",
+     "ὡς",
+     "πεντακοσίους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.3"
+    }
+   }
+  ]
  }
 ]

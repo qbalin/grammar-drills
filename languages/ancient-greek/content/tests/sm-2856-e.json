@@ -1159,5 +1159,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2856-e-q1",
+  "sectionId": "sm-2856-e",
+  "questions": [
+   {
+    "prompt": "In six to seven days.",
+    "answer": "ἐν ἓξ ἢ ἑπτὰ ἡμέραις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ἓξ",
+     "ἢ",
+     "ἑπτὰ",
+     "ἡμέραις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.3.28"
+    }
+   },
+   {
+    "prompt": "It shall be my concern that you commend me; or else my name is no longer Cyrus.",
+    "answer": "ὅπως . . . ὑμεῖς ἐμὲ ἐπαινέσετε, ἐμοὶ μελήσει· ἢ μηκέτι με Κῦρον νομίζετε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "ὑμεῖς",
+     "ἐμὲ",
+     "ἐπαινέσετε",
+     "ἐμοὶ",
+     "μελήσει",
+     "ἢ",
+     "μηκέτι",
+     "με",
+     "Κῦρον",
+     "νομίζετε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.16"
+    }
+   },
+   {
+    "prompt": "Things different from what occurred.",
+    "answer": "ἄλλα ἢ τὰ γενόμενα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄλλα",
+     "ἢ",
+     "τὰ",
+     "γενόμενα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.1.9"
+    }
+   },
+   {
+    "prompt": "Half as much corn as before.",
+    "answer": "τὸν ἥμισυν σῖτον ἢ πρόσθεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἥμισυν",
+     "σῖτον",
+     "ἢ",
+     "πρόσθεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "5.3.21"
+    }
+   }
+  ]
  }
 ]

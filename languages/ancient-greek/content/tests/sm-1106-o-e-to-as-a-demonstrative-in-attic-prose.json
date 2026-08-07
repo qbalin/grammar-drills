@@ -827,5 +827,64 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1106-o-e-to-as-a-demonstrative-in-attic-prose-q1",
+  "sectionId": "sm-1106-o-e-to-as-a-demonstrative-in-attic-prose",
+  "questions": [
+   {
+    "prompt": "The one party proceeded, the other followed.",
+    "answer": "οἱ μὲν ἐπορεύοντο, οἱ δ᾽ εἵποντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "ἐπορεύοντο",
+     "οἱ",
+     "δ",
+     "εἵποντο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.4.16"
+    }
+   },
+   {
+    "prompt": "Some he put to death, and others he expelled.",
+    "answer": "τοὺς μὲν ἀπέκτεινε, τοὺς δ᾽ ἐξέβαλεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "μὲν",
+     "ἀπέκτεινε",
+     "τοὺς",
+     "δ",
+     "ἐξέβαλεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.1.7"
+    }
+   },
+   {
+    "prompt": "Whereas this is not so.",
+    "answer": "τὸ δ᾽ οὐκ ἔστι τοιοῦτον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "δ",
+     "οὐκ",
+     "ἔστι",
+     "τοιοῦτον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "37a"
+    }
+   }
+  ]
  }
 ]

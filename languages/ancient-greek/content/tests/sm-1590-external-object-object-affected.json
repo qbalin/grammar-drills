@@ -1216,5 +1216,61 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1590-external-object-object-affected-q1",
+  "sectionId": "sm-1590-external-object-object-affected",
+  "questions": [
+   {
+    "prompt": "Corn failed the army.",
+    "answer": "τὸ στράτευμα ὁ σῖτος ἐπέλιπε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "ὁ",
+     "σῖτος",
+     "ἐπέλιπε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.5.6"
+    }
+   },
+   {
+    "prompt": "They were acquainted with their duties.",
+    "answer": "ἐπιστήμονες ἦσαν τὰ προσήκοντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπιστήμονες",
+     "ἦσαν",
+     "τὰ",
+     "προσήκοντα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.3.9"
+    }
+   },
+   {
+    "prompt": "They are in mortal fear of the envoys.",
+    "answer": "τεθνᾶσι τῷ δέει τοὺς ἀποστόλους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τεθνᾶσι",
+     "τῷ",
+     "δέει",
+     "τοὺς",
+     "ἀποστόλους"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "4.45"
+    }
+   }
+  ]
  }
 ]

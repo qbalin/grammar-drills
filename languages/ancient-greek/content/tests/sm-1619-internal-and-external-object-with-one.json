@@ -1006,5 +1006,230 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1619-internal-and-external-object-with-one-q1",
+  "sectionId": "sm-1619-internal-and-external-object-with-one",
+  "questions": [
+   {
+    "prompt": "The war taught them a lesson they will hold in everlasting remembrance.",
+    "answer": "ὁ πόλεμος ἀείμνηστον παιδείαν αὐτοὺς ἐπαίδευσε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πόλεμος",
+     "ἀείμνηστον",
+     "παιδείαν",
+     "αὐτοὺς",
+     "ἐπαίδευσε"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.148"
+    }
+   },
+   {
+    "prompt": "Meletus brought this accusation against me.",
+    "answer": "Μέλητός με ἐγράψατο τὴν γραφὴν ταύτην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μέλητός",
+     "με",
+     "ἐγράψατο",
+     "τὴν",
+     "γραφὴν",
+     "ταύτην"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "19b"
+    }
+   },
+   {
+    "prompt": "Miltiades who won the battle at Marathon over the barbarians.",
+    "answer": "Μιλτιάδης ὁ τὴν ἐν Μαραθῶνι μάχην τοὺς βαρβάρους νικήσας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μιλτιάδης",
+     "ὁ",
+     "τὴν",
+     "ἐν",
+     "Μαραθῶνι",
+     "μάχην",
+     "τοὺς",
+     "βαρβάρους",
+     "νικήσας"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.181"
+    }
+   },
+   {
+    "prompt": "They give me this appellation.",
+    "answer": "καλοῦσί με τοῦτο τὸ ὄνομα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καλοῦσί",
+     "με",
+     "τοῦτο",
+     "τὸ",
+     "ὄνομα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "7.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1619-internal-and-external-object-with-one-q2",
+  "sectionId": "sm-1619-internal-and-external-object-with-one",
+  "questions": [
+   {
+    "prompt": "I omit the battles in which the Persians were defeated.",
+    "answer": "τὰς μάχας, ὅσας Πέρσαι ἡττήθησαν ἐῶ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "μάχας",
+     "ὅσας",
+     "Πέρσαι",
+     "ἡττήθησαν",
+     "ἐῶ"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "4.145"
+    }
+   },
+   {
+    "prompt": "Called by the one name of Sicilians.",
+    "answer": "ὄνομα ἓν κεκλημένοι Σικελιῶται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὄνομα",
+     "ἓν",
+     "κεκλημένοι",
+     "Σικελιῶται"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.64"
+    }
+   },
+   {
+    "prompt": "He did you much good.",
+    "answer": "πολλὰ ἀγαθὰ ὑμᾶς ἐποίησεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὰ",
+     "ἀγαθὰ",
+     "ὑμᾶς",
+     "ἐποίησεν"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "5.3"
+    }
+   },
+   {
+    "prompt": "I praise Agesilaus for such merits.",
+    "answer": "τὰ τοιαῦτα ἐπαινῶ Ἀγησίλαον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τοιαῦτα",
+     "ἐπαινῶ",
+     "Ἀγησίλαον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Agesilaus",
+     "locus": "10.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1619-internal-and-external-object-with-one-q3",
+  "sectionId": "sm-1619-internal-and-external-object-with-one",
+  "questions": [
+   {
+    "prompt": "To have done harm to the enemy.",
+    "answer": "τοὺς πολεμίους εἰργάσθαι κακά",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "πολεμίους",
+     "εἰργάσθαι",
+     "κακά"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "21.8"
+    }
+   },
+   {
+    "prompt": "They rendered all honours to the dead.",
+    "answer": "πάντα ἐποίησαν τοῖς ἀποθανοῦσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντα",
+     "ἐποίησαν",
+     "τοῖς",
+     "ἀποθανοῦσιν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.2.23"
+    }
+   },
+   {
+    "prompt": "All the other wrongs that the State has suffered.",
+    "answer": "ὅσα ἄλλα ἡ πόλις ἠδικεῖτο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅσα",
+     "ἄλλα",
+     "ἡ",
+     "πόλις",
+     "ἠδικεῖτο"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.70"
+    }
+   },
+   {
+    "prompt": "Cyrus divided the army into twelve divisions.",
+    "answer": "Κῦρος τὸ στράτευμα κατένειμε δώδεκα μέρη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "τὸ",
+     "στράτευμα",
+     "κατένειμε",
+     "δώδεκα",
+     "μέρη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.5.13"
+    }
+   }
+  ]
  }
 ]

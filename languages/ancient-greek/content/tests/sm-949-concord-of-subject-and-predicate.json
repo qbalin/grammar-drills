@@ -548,5 +548,85 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-949-concord-of-subject-and-predicate-q1",
+  "sectionId": "sm-949-concord-of-subject-and-predicate",
+  "questions": [
+   {
+    "prompt": "This bill was passed.",
+    "answer": "τοῦτο τὸ ψήφισμα ἐγένετο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ψήφισμα",
+     "ἐγένετο"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "13.56"
+    }
+   },
+   {
+    "prompt": "These two strangers are friends of mine.",
+    "answer": "τὼ ξένω τώδε φίλω ἐστὸν ἐμώ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὼ",
+     "ξένω",
+     "τώδε",
+     "φίλω",
+     "ἐστὸν",
+     "ἐμώ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "487a"
+    }
+   },
+   {
+    "prompt": "This place which was formerly called Nine Ways.",
+    "answer": "τὸ χωρίον τοῦτο, ὅπερ πρότερον Ἐννέα ὁδοὶ ἐκαλοῦντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "χωρίον",
+     "τοῦτο",
+     "ὅπερ",
+     "πρότερον",
+     "Ἐννέα",
+     "ὁδοὶ",
+     "ἐκαλοῦντο"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.102"
+    }
+   },
+   {
+    "prompt": "The entire space between the walls was three stades.",
+    "answer": "ἅπαν τὸ μέσον τῶν τειχῶν ἦσαν στάδιοι τρεῖς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅπαν",
+     "τὸ",
+     "μέσον",
+     "τῶν",
+     "τειχῶν",
+     "ἦσαν",
+     "στάδιοι",
+     "τρεῖς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.4"
+    }
+   }
+  ]
  }
 ]

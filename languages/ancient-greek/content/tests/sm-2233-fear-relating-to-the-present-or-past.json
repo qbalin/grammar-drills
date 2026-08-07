@@ -526,5 +526,64 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2233-fear-relating-to-the-present-or-past-q1",
+  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+  "questions": [
+   {
+    "prompt": "But have a care that he was not speaking in jest.",
+    "answer": "ἀλλ᾽ ὅρα μὴ παίζων ἔλεγεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλ",
+     "ὅρα",
+     "μὴ",
+     "παίζων",
+     "ἔλεγεν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Theaetetus",
+     "locus": "145b"
+    }
+   },
+   {
+    "prompt": "We are afraid that we have failed of both objects at once.",
+    "answer": "φοβούμεθα μὴ ἀμφοτέρων ἅμα ἡμαρτήκαμεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβούμεθα",
+     "μὴ",
+     "ἀμφοτέρων",
+     "ἅμα",
+     "ἡμαρτήκαμεν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.53"
+    }
+   },
+   {
+    "prompt": "Have a care lest it does not rest with me to give an account.",
+    "answer": "ὁρᾶτε μὴ οὐκ ἐμοὶ . . . προσήκει λόγον δοῦναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρᾶτε",
+     "μὴ",
+     "οὐκ",
+     "ἐμοὶ",
+     "προσήκει",
+     "λόγον",
+     "δοῦναι"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "1.103"
+    }
+   }
+  ]
  }
 ]

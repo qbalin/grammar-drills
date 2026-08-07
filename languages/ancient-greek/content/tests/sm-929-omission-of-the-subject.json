@@ -1401,5 +1401,81 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-929-omission-of-the-subject-q1",
+  "sectionId": "sm-929-omission-of-the-subject",
+  "questions": [
+   {
+    "prompt": "Your father is afraid lest he suffer death.",
+    "answer": "ὁ σὸς πατὴρ φοβεῖται μὴ τὰ ἔσχατα πάθῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σὸς",
+     "πατὴρ",
+     "φοβεῖται",
+     "μὴ",
+     "τὰ",
+     "ἔσχατα",
+     "πάθῃ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.1.22"
+    }
+   },
+   {
+    "prompt": "It was already about the time when the market-place is full.",
+    "answer": "ἤδη ἦν ἀμφὶ ἀγορὰν πλήθουσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "ἦν",
+     "ἀμφὶ",
+     "ἀγορὰν",
+     "πλήθουσαν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.1"
+    }
+   },
+   {
+    "prompt": "It behooves you to be more zealous.",
+    "answer": "ὑμᾶς προσήκει προθυμοτέρους εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑμᾶς",
+     "προσήκει",
+     "προθυμοτέρους",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.15"
+    }
+   },
+   {
+    "prompt": "You must rescue the interests at stake.",
+    "answer": "βοηθητέον ἐστὶ τοῖς πράγμασιν ὑμῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βοηθητέον",
+     "ἐστὶ",
+     "τοῖς",
+     "πράγμασιν",
+     "ὑμῖν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "1.17"
+    }
+   }
+  ]
  }
 ]

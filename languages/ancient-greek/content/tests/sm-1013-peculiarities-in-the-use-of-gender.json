@@ -613,5 +613,68 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1013-peculiarities-in-the-use-of-gender-q1",
+  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+  "questions": [
+   {
+    "prompt": "The youths conversing with one another.",
+    "answer": "τὰ μειράκια πρὸς ἀλλήλους διαλεγόμενοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "μειράκια",
+     "πρὸς",
+     "ἀλλήλους",
+     "διαλεγόμενοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laches",
+     "locus": "180e"
+    }
+   },
+   {
+    "prompt": "This shameless fellow spoke thus when he came out.",
+    "answer": "ταῦτ᾽ ἔλεγεν ἡ ἀναιδὴς αὕτη κεφαλή, ἐξεληλυθώς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτ",
+     "ἔλεγεν",
+     "ἡ",
+     "ἀναιδὴς",
+     "αὕτη",
+     "κεφαλή",
+     "ἐξεληλυθώς"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.117"
+    }
+   },
+   {
+    "prompt": "We the elders delighting in their sport.",
+    "answer": "τὸ δὲ τῶν πρεσβυτέρων ἡμῶν . . . χαίροντες τῇ ἐκείνων παιδιᾷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "δὲ",
+     "τῶν",
+     "πρεσβυτέρων",
+     "ἡμῶν",
+     "χαίροντες",
+     "τῇ",
+     "ἐκείνων",
+     "παιδιᾷ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "657d"
+    }
+   }
+  ]
  }
 ]

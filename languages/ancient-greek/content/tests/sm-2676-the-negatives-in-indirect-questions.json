@@ -1109,5 +1109,94 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2676-the-negatives-in-indirect-questions-q1",
+  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+  "questions": [
+   {
+    "prompt": "I shall know whether its possessor is happy or not.",
+    "answer": "εἴσομαι . . . πότερον ὁ ἔχων αὐτὸ οὐκ εὐδαίμων ἐστὶν ἢ εὐδαίμων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴσομαι",
+     "πότερον",
+     "ὁ",
+     "ἔχων",
+     "αὐτὸ",
+     "οὐκ",
+     "εὐδαίμων",
+     "ἐστὶν",
+     "ἢ",
+     "εὐδαίμων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "354c"
+    }
+   },
+   {
+    "prompt": "He asked the people whether they were not ashamed.",
+    "answer": "ἤρετο τὸν δῆμον εἰ οὐκ αἰσχύνοιντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤρετο",
+     "τὸν",
+     "δῆμον",
+     "εἰ",
+     "οὐκ",
+     "αἰσχύνοιντο"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "1.84"
+    }
+   },
+   {
+    "prompt": "They distinguish between what they can do and what they cannot.",
+    "answer": "διαγιγνώσκουσιν ἅ τε δύνανται καὶ ἃ μή",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαγιγνώσκουσιν",
+     "ἅ",
+     "τε",
+     "δύνανται",
+     "καὶ",
+     "ἃ",
+     "μή"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.2.26"
+    }
+   },
+   {
+    "prompt": "He showed who must speak in the assembly and who must not speak before the people.",
+    "answer": "ἀπέδειξεν οὓς χρὴ δημηγορεῖν καὶ οὓς οὐ δεῖ λέγειν ἐν τῷ δήμῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέδειξεν",
+     "οὓς",
+     "χρὴ",
+     "δημηγορεῖν",
+     "καὶ",
+     "οὓς",
+     "οὐ",
+     "δεῖ",
+     "λέγειν",
+     "ἐν",
+     "τῷ",
+     "δήμῳ"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "1.27"
+    }
+   }
+  ]
  }
 ]

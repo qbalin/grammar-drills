@@ -992,5 +992,152 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-q1",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "I wondered at the hardihood of the speakers.",
+    "answer": "ἐθαύμασα τῆς τόλμης τῶν λεγόντων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαύμασα",
+     "τῆς",
+     "τόλμης",
+     "τῶν",
+     "λεγόντων"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.41"
+    }
+   },
+   {
+    "prompt": "Admiring him for his mildness.",
+    "answer": "τοῦτον ἀγασθεὶς τῆς πρᾳότητος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτον",
+     "ἀγασθεὶς",
+     "τῆς",
+     "πρᾳότητος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.3.21"
+    }
+   },
+   {
+    "prompt": "To put up with the neglect of my household affairs.",
+    "answer": "ἀνέχεσθαι τῶν οἰκείων ἀμελουμένων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνέχεσθαι",
+     "τῶν",
+     "οἰκείων",
+     "ἀμελουμένων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "31b"
+    }
+   },
+   {
+    "prompt": "He pitied him for his misery.",
+    "answer": "τοῦ πάθους ᾤκτιρεν αὐτόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πάθους",
+     "ᾤκτιρεν",
+     "αὐτόν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.4.32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1405-genitive-of-cause-q2",
+  "sectionId": "sm-1405-genitive-of-cause",
+  "questions": [
+   {
+    "prompt": "Nor is it reasonable to grieve about them.",
+    "answer": "οὐδ᾽ εἰκὸς χαλεπῶς φέρειν αὐτών",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδ",
+     "εἰκὸς",
+     "χαλεπῶς",
+     "φέρειν",
+     "αὐτών"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.62"
+    }
+   },
+   {
+    "prompt": "To take revenge on them for their attack.",
+    "answer": "τιμωρήσασθαι αὐτοὺς τῆς ἐπιθέσεως",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμωρήσασθαι",
+     "αὐτοὺς",
+     "τῆς",
+     "ἐπιθέσεως"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.4.23"
+    }
+   },
+   {
+    "prompt": "It is necessary to forgive them for their desire.",
+    "answer": "συγγιγνώσκειν αὐτοῖς χρὴ τῆς ἐπιθυμίας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συγγιγνώσκειν",
+     "αὐτοῖς",
+     "χρὴ",
+     "τῆς",
+     "ἐπιθυμίας"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthydemus",
+     "locus": "306c"
+    }
+   },
+   {
+    "prompt": "The whole fraud was contrived for the purpose of ruining the Phocians.",
+    "answer": "ἡ πᾶσ᾽ ἀπάτη συνεσκευάσθη τοῦ περὶ Φωκέας ὀλέθρου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πᾶσ",
+     "ἀπάτη",
+     "συνεσκευάσθη",
+     "τοῦ",
+     "περὶ",
+     "Φωκέας",
+     "ὀλέθρου"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.76"
+    }
+   }
+  ]
  }
 ]

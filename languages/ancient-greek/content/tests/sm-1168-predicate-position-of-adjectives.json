@@ -699,5 +699,77 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1168-predicate-position-of-adjectives-q1",
+  "sectionId": "sm-1168-predicate-position-of-adjectives",
+  "questions": [
+   {
+    "prompt": "They retired with their victory incomplete.",
+    "answer": "ἀτελεῖ τῇ νίκῃ ἀνέστησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀτελεῖ",
+     "τῇ",
+     "νίκῃ",
+     "ἀνέστησαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "8.27"
+    }
+   },
+   {
+    "prompt": "With his head bare.",
+    "answer": "ψιλὴν ἔχων τὴν κεφαλήν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ψιλὴν",
+     "ἔχων",
+     "τὴν",
+     "κεφαλήν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.6"
+    }
+   },
+   {
+    "prompt": "They towed off the ships without their crews.",
+    "answer": "τὰς τριήρεις ἀφείλκυσαν κενάς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "τριήρεις",
+     "ἀφείλκυσαν",
+     "κενάς"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.93"
+    }
+   },
+   {
+    "prompt": "They will leave behind a remembrance of themselves that will never die.",
+    "answer": "ἀθάνατον τὴν περὶ αὑτῶν μνήμην καταλείψουσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀθάνατον",
+     "τὴν",
+     "περὶ",
+     "αὑτῶν",
+     "μνήμην",
+     "καταλείψουσιν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "9.3"
+    }
+   }
+  ]
  }
 ]

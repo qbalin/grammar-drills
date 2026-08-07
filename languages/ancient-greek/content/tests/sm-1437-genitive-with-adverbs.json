@@ -1085,5 +1085,217 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1437-genitive-with-adverbs-q1",
+  "sectionId": "sm-1437-genitive-with-adverbs",
+  "questions": [
+   {
+    "prompt": "They are in love with gain.",
+    "answer": "ἐρωτικῶς ἔχουσι τοῦ κερδαίνειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐρωτικῶς",
+     "ἔχουσι",
+     "τοῦ",
+     "κερδαίνειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Oeconomicus",
+     "locus": "12.15"
+    }
+   },
+   {
+    "prompt": "Of all those acquainted with him.",
+    "answer": "ἐκ πάντων τῶν ἐμπείρως αὐτοῦ ἐχόντων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "πάντων",
+     "τῶν",
+     "ἐμπείρως",
+     "αὐτοῦ",
+     "ἐχόντων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.6.1"
+    }
+   },
+   {
+    "prompt": "Above the rest of men.",
+    "answer": "διαφερόντως τῶν ἄλλων ἀνθρώπων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαφερόντως",
+     "τῶν",
+     "ἄλλων",
+     "ἀνθρώπων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hiero",
+     "locus": "7.4"
+    }
+   },
+   {
+    "prompt": "To make an attack at some point of their country.",
+    "answer": "ἐμβαλεῖν που τῆς ἐκείνων χώρας",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμβαλεῖν",
+     "που",
+     "τῆς",
+     "ἐκείνων",
+     "χώρας"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.1.42"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1437-genitive-with-adverbs-q2",
+  "sectionId": "sm-1437-genitive-with-adverbs",
+  "questions": [
+   {
+    "prompt": "Perceiving what a plight he was in.",
+    "answer": "αἰσθόμενος οὗ ἦν κακοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθόμενος",
+     "οὗ",
+     "ἦν",
+     "κακοῦ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "23.156"
+    }
+   },
+   {
+    "prompt": "To know where in the world he is.",
+    "answer": "εἰδέναι ὅπου γῆς ἐστιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰδέναι",
+     "ὅπου",
+     "γῆς",
+     "ἐστιν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "403e"
+    }
+   },
+   {
+    "prompt": "Already far advanced in life, near death.",
+    "answer": "πόρρω ἤδη τοῦ βίου, θανάτου δὲ ἐγγύς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόρρω",
+     "ἤδη",
+     "τοῦ",
+     "βίου",
+     "θανάτου",
+     "δὲ",
+     "ἐγγύς"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "38c"
+    }
+   },
+   {
+    "prompt": "North of Mt. Scombrus.",
+    "answer": "πρὸς βορέαν τοῦ Σκόμβρου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸς",
+     "βορέαν",
+     "τοῦ",
+     "Σκόμβρου"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.96"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1437-genitive-with-adverbs-q3",
+  "sectionId": "sm-1437-genitive-with-adverbs",
+  "questions": [
+   {
+    "prompt": "They thought that the city was well situated for the war and would prove useful for the march along Thrace.",
+    "answer": "τοῦ πολέμου καλῶς ἐδόκει ἡ πόλις καθίστασθαι . . . τῆς τε ἐπὶ Θρᾴκης παρόδου χρησίμως ἕξειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "καλῶς",
+     "ἐδόκει",
+     "ἡ",
+     "πόλις",
+     "καθίστασθαι",
+     "τῆς",
+     "τε",
+     "ἐπὶ",
+     "Θρᾴκης",
+     "παρόδου",
+     "χρησίμως",
+     "ἕξειν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.92"
+    }
+   },
+   {
+    "prompt": "Separate from your force.",
+    "answer": "δίχα τοῦ ὑμετέρου πλήθους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δίχα",
+     "τοῦ",
+     "ὑμετέρου",
+     "πλήθους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.1.8"
+    }
+   },
+   {
+    "prompt": "You will prevent one another from enjoying many blessings.",
+    "answer": "ἐμποδὼν ἀλλήλοις πολλῶν καὶ ἀγαθῶν ἔσεσθε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμποδὼν",
+     "ἀλλήλοις",
+     "πολλῶν",
+     "καὶ",
+     "ἀγαθῶν",
+     "ἔσεσθε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "8.5.24"
+    }
+   }
+  ]
  }
 ]

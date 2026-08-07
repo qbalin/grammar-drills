@@ -427,5 +427,102 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-q1",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "States will not cease from evil until philosophers become rulers in them.",
+    "answer": "οὐ πρότερον κακῶν παύσονται αἱ πόλεις πρὶν ἂν ἐν αὐταῖς οἱ φιλόσοφοι ἄρξωσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πρότερον",
+     "κακῶν",
+     "παύσονται",
+     "αἱ",
+     "πόλεις",
+     "πρὶν",
+     "ἂν",
+     "ἐν",
+     "αὐταῖς",
+     "οἱ",
+     "φιλόσοφοι",
+     "ἄρξωσιν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "487e"
+    }
+   },
+   {
+    "prompt": "Make no one your friend until you have inquired how he has treated his former friends.",
+    "answer": "μηδένα φίλον ποιοῦ πρὶν ἂν ἐξετάσῃς πῶς κέχρηται τοῖς πρότερον φίλοις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδένα",
+     "φίλον",
+     "ποιοῦ",
+     "πρὶν",
+     "ἂν",
+     "ἐξετάσῃς",
+     "πῶς",
+     "κέχρηται",
+     "τοῖς",
+     "πρότερον",
+     "φίλοις"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "1.24"
+    }
+   },
+   {
+    "prompt": "No one has ever attempted the subversion of the people until he became superior to the courts of justice.",
+    "answer": "πρότερον δήμου καταλύσει πρὶν ἂν μεῖζον τῶν δικαστηρίων ἰσχύσῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρότερον",
+     "δήμου",
+     "καταλύσει",
+     "πρὶν",
+     "ἂν",
+     "μεῖζον",
+     "τῶν",
+     "δικαστηρίων",
+     "ἰσχύσῃ"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.235"
+    }
+   },
+   {
+    "prompt": "I ordered that none in the rear should move until the one before him led the way.",
+    "answer": "εἶπον μηδένα τῶν ὄπισθεν κινεῖσθαι πρὶν ἂν ὁ πρόσθεν ἡγῆται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπον",
+     "μηδένα",
+     "τῶν",
+     "ὄπισθεν",
+     "κινεῖσθαι",
+     "πρὶν",
+     "ἂν",
+     "ὁ",
+     "πρόσθεν",
+     "ἡγῆται"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "2.2.8"
+    }
+   }
+  ]
  }
 ]

@@ -1096,5 +1096,160 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2713-ou-and-me-with-the-infinitive-not-in-q1",
+  "sectionId": "sm-2713-ou-and-me-with-the-infinitive-not-in",
+  "questions": [
+   {
+    "prompt": "It is disgraceful not to repay like services.",
+    "answer": "τὰς ὁμοίας χάριτας μὴ ἀντιδιδόναι αἰσχρόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "ὁμοίας",
+     "χάριτας",
+     "μὴ",
+     "ἀντιδιδόναι",
+     "αἰσχρόν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.63"
+    }
+   },
+   {
+    "prompt": "One must not despise the multitude.",
+    "answer": "χρὴ μὴ καταφρονεῖν τοῦ πλήθους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρὴ",
+     "μὴ",
+     "καταφρονεῖν",
+     "τοῦ",
+     "πλήθους"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "5.79"
+    }
+   },
+   {
+    "prompt": "They must not fear.",
+    "answer": "μὴ ὀκνεῖν δεῖ αὐτούς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ὀκνεῖν",
+     "δεῖ",
+     "αὐτούς"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.120"
+    }
+   },
+   {
+    "prompt": "One must not speak in a general way.",
+    "answer": "δεῖ οὐχ ἁπλῶς εἰπεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "οὐχ",
+     "ἁπλῶς",
+     "εἰπεῖν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "15.117"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2713-ou-and-me-with-the-infinitive-not-in-q2",
+  "sectionId": "sm-2713-ou-and-me-with-the-infinitive-not-in",
+  "questions": [
+   {
+    "prompt": "This is one of the things I maintain—that no one can say the same things in fewer words than I can.",
+    "answer": "τοῦτο ἕν ἐστιν ὧν φημι, μηδένα ἂν ἐν βραχυτέροις ἐμοῦ τὰ αὐτὰ εἰπεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "ἕν",
+     "ἐστιν",
+     "ὧν",
+     "φημι",
+     "μηδένα",
+     "ἂν",
+     "ἐν",
+     "βραχυτέροις",
+     "ἐμοῦ",
+     "τὰ",
+     "αὐτὰ",
+     "εἰπεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "449c"
+    }
+   },
+   {
+    "prompt": "They told them not to commit injustice.",
+    "answer": "ἔλεγον αὐτοῖς μὴ ἀδικεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "αὐτοῖς",
+     "μὴ",
+     "ἀδικεῖν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.5"
+    }
+   },
+   {
+    "prompt": "They shouted to each other not to run.",
+    "answer": "ἐβόων ἀλλήλοις μὴ θεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβόων",
+     "ἀλλήλοις",
+     "μὴ",
+     "θεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.19"
+    }
+   },
+   {
+    "prompt": "I advise you not to take away what you may have given.",
+    "answer": "συμβουλεύω σοι . . . μὴ ἀφαιρεῖσθαι ἃ ἂν δῷς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμβουλεύω",
+     "σοι",
+     "μὴ",
+     "ἀφαιρεῖσθαι",
+     "ἃ",
+     "ἂν",
+     "δῷς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.5.32"
+    }
+   }
+  ]
  }
 ]

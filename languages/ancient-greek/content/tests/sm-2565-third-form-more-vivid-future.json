@@ -408,5 +408,88 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2565-third-form-more-vivid-future-q1",
+  "sectionId": "sm-2565-third-form-more-vivid-future",
+  "questions": [
+   {
+    "prompt": "Whatever others acquire by labour, that you shall enjoy.",
+    "answer": "ἂν οἱ ἄλλοι ἐργάζωνται, τούτοις σὺ χρήσῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἂν",
+     "οἱ",
+     "ἄλλοι",
+     "ἐργάζωνται",
+     "τούτοις",
+     "σὺ",
+     "χρήσῃ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.1.25"
+    }
+   },
+   {
+    "prompt": "I will try to do you all the good I can.",
+    "answer": "πειράσομαι ὅ τι ἂν δύνωμαι ὑμᾶς ἀγαθὸν ποιεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πειράσομαι",
+     "ὅ",
+     "τι",
+     "ἂν",
+     "δύνωμαι",
+     "ὑμᾶς",
+     "ἀγαθὸν",
+     "ποιεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.1.33"
+    }
+   },
+   {
+    "prompt": "Wherever I go the young men will listen to my speaking.",
+    "answer": "ὅποι ἂν ἔλθω, λέγοντος ἐμοῦ ἀκροάσονται οἱ νέοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅποι",
+     "ἂν",
+     "ἔλθω",
+     "λέγοντος",
+     "ἐμοῦ",
+     "ἀκροάσονται",
+     "οἱ",
+     "νέοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "37d"
+    }
+   },
+   {
+    "prompt": "Answer whatever I ask you.",
+    "answer": "ἀπόκριναι ὅ τι ἄν δε ἐρωτῶ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπόκριναι",
+     "ὅ",
+     "τι",
+     "ἄν",
+     "δε",
+     "ἐρωτῶ"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.24"
+    }
+   }
+  ]
  }
 ]

@@ -1626,5 +1626,63 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1713-middle-voice-1713-q1",
+  "sectionId": "sm-1713-middle-voice-1713",
+  "questions": [
+   {
+    "prompt": "They surrendered their arms and themselves.",
+    "answer": "τὰ ὅπλα παρέδοσαν καὶ σφᾶς αὐτούς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ὅπλα",
+     "παρέδοσαν",
+     "καὶ",
+     "σφᾶς",
+     "αὐτούς"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.38"
+    }
+   },
+   {
+    "prompt": "He himself has put an end to his own sovereignty.",
+    "answer": "καταλέλυκε τὴν αὐτὸς αὑτοῦ δυναστείαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καταλέλυκε",
+     "τὴν",
+     "αὐτὸς",
+     "αὑτοῦ",
+     "δυναστείαν"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.233"
+    }
+   },
+   {
+    "prompt": "For I had you taught this.",
+    "answer": "ἐγὼ γάρ σε ταῦτα ἐδιδαξάμην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "γάρ",
+     "σε",
+     "ταῦτα",
+     "ἐδιδαξάμην"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.6.2"
+    }
+   }
+  ]
  }
 ]

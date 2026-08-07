@@ -1654,5 +1654,271 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1218-the-reflexive-pronouns-q1",
+  "sectionId": "sm-1218-the-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "But the perioeci he dismissed to their own cities.",
+    "answer": "τοὺς δὲ περιοίκους ἀφῆκεν ἐπὶ τὰς ἑαυτῶν πόλεις",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "δὲ",
+     "περιοίκους",
+     "ἀφῆκεν",
+     "ἐπὶ",
+     "τὰς",
+     "ἑαυτῶν",
+     "πόλεις"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.5.21"
+    }
+   },
+   {
+    "prompt": "Wailing and saying much unworthy of myself.",
+    "answer": "θρηνοῦντός τέ μου καὶ λέγοντος πολλὰ καὶ ἀνάξια ἐμοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θρηνοῦντός",
+     "τέ",
+     "μου",
+     "καὶ",
+     "λέγοντος",
+     "πολλὰ",
+     "καὶ",
+     "ἀνάξια",
+     "ἐμοῦ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "38e"
+    }
+   },
+   {
+    "prompt": "You will hear much unworthy of yourself.",
+    "answer": "ἀκούσει πολλὰ καὶ ἀνάξια σαυτοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀκούσει",
+     "πολλὰ",
+     "καὶ",
+     "ἀνάξια",
+     "σαυτοῦ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Crito",
+     "locus": "53e"
+    }
+   },
+   {
+    "prompt": "I think that both you and I believe that it is worse to do wrong than to be wronged.",
+    "answer": "ἐγὼ οἶμαι καὶ ἐμὲ καὶ σὲ τὸ ἀδικεῖν τοῦ ἀδικεῖσθαι κάκιον ἡγεῖσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "οἶμαι",
+     "καὶ",
+     "ἐμὲ",
+     "καὶ",
+     "σὲ",
+     "τὸ",
+     "ἀδικεῖν",
+     "τοῦ",
+     "ἀδικεῖσθαι",
+     "κάκιον",
+     "ἡγεῖσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "474b"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1218-the-reflexive-pronouns-q2",
+  "sectionId": "sm-1218-the-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "Clearchus wished the entire army to be devoted to himself.",
+    "answer": "ἐβούλετο ὁ Κλέαρχος ἅπαν τὸ στράτευμα πρὸς ἑαυτὸν ἔχειν τὴν γνώμην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβούλετο",
+     "ὁ",
+     "Κλέαρχος",
+     "ἅπαν",
+     "τὸ",
+     "στράτευμα",
+     "πρὸς",
+     "ἑαυτὸν",
+     "ἔχειν",
+     "τὴν",
+     "γνώμην"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.29"
+    }
+   },
+   {
+    "prompt": "He tried to divert the Athenians from their anger against himself.",
+    "answer": "ἐπειρᾶτο τοὺς Ἀθηναίους τῆς ἐς αὐτὸν ὀργῆς παραλύειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειρᾶτο",
+     "τοὺς",
+     "Ἀθηναίους",
+     "τῆς",
+     "ἐς",
+     "αὐτὸν",
+     "ὀργῆς",
+     "παραλύειν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.65"
+    }
+   },
+   {
+    "prompt": "Socrates was wont to set forth his opinion to those who conversed with him.",
+    "answer": "τὴν ἑαυτοῦ γνώμην ἀπεφαίνετο Σωκράτης πρὸς τοὺς ὁμιλοῦντας αὐτῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἑαυτοῦ",
+     "γνώμην",
+     "ἀπεφαίνετο",
+     "Σωκράτης",
+     "πρὸς",
+     "τοὺς",
+     "ὁμιλοῦντας",
+     "αὐτῷ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.7.1"
+    }
+   },
+   {
+    "prompt": "He asked her if she would be willing to do him a service.",
+    "answer": "ἠρώτα αὐτὴν εἰ ἐθελήσοι διακονῆσαί οἱ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠρώτα",
+     "αὐτὴν",
+     "εἰ",
+     "ἐθελήσοι",
+     "διακονῆσαί",
+     "οἱ"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "1.16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1218-the-reflexive-pronouns-q3",
+  "sectionId": "sm-1218-the-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "They ordered their boys to ask Cyrus to get it done for them.",
+    "answer": "τοὺς παῖδας ἐκέλευον τοῦ Κύρου δεῖσθαι διαπράξασθαι σφίσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "παῖδας",
+     "ἐκέλευον",
+     "τοῦ",
+     "Κύρου",
+     "δεῖσθαι",
+     "διαπράξασθαι",
+     "σφίσιν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.4.1"
+    }
+   },
+   {
+    "prompt": "For they urge us to make war in common with them.",
+    "answer": "κελεύουσι γὰρ ἡμᾶς κοινῇ μετὰ σφῶν πολεμεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κελεύουσι",
+     "γὰρ",
+     "ἡμᾶς",
+     "κοινῇ",
+     "μετὰ",
+     "σφῶν",
+     "πολεμεῖν"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "3.27"
+    }
+   },
+   {
+    "prompt": "After bringing in the rest of the generals he urged them to say that they could lead the army just as well as Xenophon.",
+    "answer": "εἰσαγαγὼν τοὺς ἄλλους στρατηγοὺς . . . λέγειν ἐκέλευεν αὐτοὺς ὅτι οὐδὲν ἂν ἧττον σφεῖς ἀγάγοιεν τὴν στρατιὰν ἢ Ξενοφῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰσαγαγὼν",
+     "τοὺς",
+     "ἄλλους",
+     "στρατηγοὺς",
+     "λέγειν",
+     "ἐκέλευεν",
+     "αὐτοὺς",
+     "ὅτι",
+     "οὐδὲν",
+     "ἂν",
+     "ἧττον",
+     "σφεῖς",
+     "ἀγάγοιεν",
+     "τὴν",
+     "στρατιὰν",
+     "ἢ",
+     "Ξενοφῶν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.5.9"
+    }
+   },
+   {
+    "prompt": "We must ask ourselves.",
+    "answer": "δεῖ ἡμᾶς ἀνερέσθαι ἑαυτούς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "ἡμᾶς",
+     "ἀνερέσθαι",
+     "ἑαυτούς"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "78b"
+    }
+   }
+  ]
  }
 ]

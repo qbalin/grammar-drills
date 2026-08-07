@@ -400,5 +400,188 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2617-complex-sentences-in-indirect-discourse-q1",
+  "sectionId": "sm-2617-complex-sentences-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They say that, when a good man dies, he enjoys great esteem and honour.",
+    "answer": "λέγουσιν ὡς, ἐπειδάν τις ἀγαθὸς ὤν τελευτήσῃ, μεγάλην μοῖραν καὶ τιμὴν ἔχει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγουσιν",
+     "ὡς",
+     "ἐπειδάν",
+     "τις",
+     "ἀγαθὸς",
+     "ὤν",
+     "τελευτήσῃ",
+     "μεγάλην",
+     "μοῖραν",
+     "καὶ",
+     "τιμὴν",
+     "ἔχει"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Cratylus",
+     "locus": "398b"
+    }
+   },
+   {
+    "prompt": "Cyrus shouted to Clearchus to lead his troops against the enemy's centre because the king was there.",
+    "answer": "Κῦρος . . . τῷ Κλεάρχῳ ἐβόα ἄγειν τὸ στράτευμα κατὰ μέσον τὸ τῶν πολεμίων, ὅτι ἐκεῖ βασιλεὺς εἴη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "τῷ",
+     "Κλεάρχῳ",
+     "ἐβόα",
+     "ἄγειν",
+     "τὸ",
+     "στράτευμα",
+     "κατὰ",
+     "μέσον",
+     "τὸ",
+     "τῶν",
+     "πολεμίων",
+     "ὅτι",
+     "ἐκεῖ",
+     "βασιλεὺς",
+     "εἴη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.8.12"
+    }
+   },
+   {
+    "prompt": "For they said that they knew well that they would come.",
+    "answer": "εὖ δὲ εἰδέναι ἔφασαν ὅτι παρέσοιντο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "δὲ",
+     "εἰδέναι",
+     "ἔφασαν",
+     "ὅτι",
+     "παρέσοιντο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.5.19"
+    }
+   },
+   {
+    "prompt": "He said I might think myself well off if I saved my life.",
+    "answer": "ἀγαπήσειν με ἔφασκεν, εἰ τὸ σῶμα σώσω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγαπήσειν",
+     "με",
+     "ἔφασκεν",
+     "εἰ",
+     "τὸ",
+     "σῶμα",
+     "σώσω"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2617-complex-sentences-in-indirect-discourse-q2",
+  "sectionId": "sm-2617-complex-sentences-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They refused to go unless a largess were given them.",
+    "answer": "οὐκ ἔφασαν ἰέναι, ἐὰν μή τις αὐτοῖς χρήματα διδῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔφασαν",
+     "ἰέναι",
+     "ἐὰν",
+     "μή",
+     "τις",
+     "αὐτοῖς",
+     "χρήματα",
+     "διδῷ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.12"
+    }
+   },
+   {
+    "prompt": "He said that they intended to attack him when he led his forces away.",
+    "answer": "εἶπεν ὅτι ἐπιτίθεσθαι μέλλοιεν αὐτῷ, ὁπότε ἀπάγοι τὸ στράτευμα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "ἐπιτίθεσθαι",
+     "μέλλοιεν",
+     "αὐτῷ",
+     "ὁπότε",
+     "ἀπάγοι",
+     "τὸ",
+     "στράτευμα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.5.2"
+    }
+   },
+   {
+    "prompt": "They expected that the Sicels whom they had sent for would meet them here.",
+    "answer": "ἤλπιζον τοὺς Σικελοὺς ταύτῃ, οὓς μετέπεμψαν, ἀπαντήσεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤλπιζον",
+     "τοὺς",
+     "Σικελοὺς",
+     "ταύτῃ",
+     "οὓς",
+     "μετέπεμψαν",
+     "ἀπαντήσεσθαι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "7.80"
+    }
+   },
+   {
+    "prompt": "He said that he would enter into negotiations if he should receive hostages.",
+    "answer": "εἶπεν ὅτι ἔλθοι ἂν εἰς λόγους, εἰ ὁμήρους λάβοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "ἔλθοι",
+     "ἂν",
+     "εἰς",
+     "λόγους",
+     "εἰ",
+     "ὁμήρους",
+     "λάβοι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "3.1.20"
+    }
+   }
+  ]
  }
 ]

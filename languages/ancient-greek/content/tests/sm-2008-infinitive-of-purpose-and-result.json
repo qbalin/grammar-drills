@@ -771,5 +771,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2008-infinitive-of-purpose-and-result-q1",
+  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+  "questions": [
+   {
+    "prompt": "He gave this land over to the Greeks to plunder.",
+    "answer": "ταύτην τὴν χώραν ἐπέτρεψε διαρπάσαι τοῖς Ἕλλησιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτην",
+     "τὴν",
+     "χώραν",
+     "ἐπέτρεψε",
+     "διαρπάσαι",
+     "τοῖς",
+     "Ἕλλησιν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.19"
+    }
+   },
+   {
+    "prompt": "You granted a day to Aristarchus to make his defence.",
+    "answer": "Ἀριστάρχῳ . . . ἔδοτε ἡμέραν ἀπολογήσασθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἀριστάρχῳ",
+     "ἔδοτε",
+     "ἡμέραν",
+     "ἀπολογήσασθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "1.7.28"
+    }
+   },
+   {
+    "prompt": "The soldiers did not have money by means of which they could provision themselves.",
+    "answer": "οἱ στρατιῶται ἀργύριον οὐκ εἶχον ἐπισιτίζεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἀργύριον",
+     "οὐκ",
+     "εἶχον",
+     "ἐπισιτίζεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.1.7"
+    }
+   },
+   {
+    "prompt": "There is shade and grass to sit down in.",
+    "answer": "ἐκεῖ σκιά τ᾽ ἐστὶ καὶ πόα καθίζεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκεῖ",
+     "σκιά",
+     "τ",
+     "ἐστὶ",
+     "καὶ",
+     "πόα",
+     "καθίζεσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedrus",
+     "locus": "229b"
+    }
+   }
+  ]
  }
 ]

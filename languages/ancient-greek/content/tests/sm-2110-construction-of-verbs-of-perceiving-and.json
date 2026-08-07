@@ -1173,5 +1173,161 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-q1",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "Perceiving Lamprocles angry with his mother.",
+    "answer": "αἰσθόμενος Λαμπροκλέα πρὸς τὴν μητέρα χαλεπαίνοντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθόμενος",
+     "Λαμπροκλέα",
+     "πρὸς",
+     "τὴν",
+     "μητέρα",
+     "χαλεπαίνοντα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.2.1"
+    }
+   },
+   {
+    "prompt": "When they learned of the capture of Pylos.",
+    "answer": "ὡς ἐπύθοντο τῆς Πύλου κατειλημμένης",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἐπύθοντο",
+     "τῆς",
+     "Πύλου",
+     "κατειλημμένης"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.6"
+    }
+   },
+   {
+    "prompt": "When he saw a hind break cover he gave chase.",
+    "answer": "ὡς εἶδεν ἐλαφον ἐκπηδήσασαν . . . ἐδίωκεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "εἶδεν",
+     "ἐλαφον",
+     "ἐκπηδήσασαν",
+     "ἐδίωκεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.4.8"
+    }
+   },
+   {
+    "prompt": "We see that everything you say is true.",
+    "answer": "ὁρῶμεν πάντα ἀληθῆ ὄντα ἃ λέγετε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶμεν",
+     "πάντα",
+     "ἀληθῆ",
+     "ὄντα",
+     "ἃ",
+     "λέγετε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.5.24"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2110-construction-of-verbs-of-perceiving-and-q2",
+  "sectionId": "sm-2110-construction-of-verbs-of-perceiving-and",
+  "questions": [
+   {
+    "prompt": "I perceive that this is so.",
+    "answer": "αἰσθάνομαι ταῦτα οὕτως ἔχοντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθάνομαι",
+     "ταῦτα",
+     "οὕτως",
+     "ἔχοντα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.5.5"
+    }
+   },
+   {
+    "prompt": "He heard that Cyrus was in Cilicia.",
+    "answer": "ἤκουσε Κῦρον ἐν Κιλικίᾳ ὄντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤκουσε",
+     "Κῦρον",
+     "ἐν",
+     "Κιλικίᾳ",
+     "ὄντα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.5"
+    }
+   },
+   {
+    "prompt": "If then he catch anybody else lying.",
+    "answer": "ἂν ἄρ᾽ ἄλλον τινὰ λαμβάνῃ ψευδόμενον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἂν",
+     "ἄρ",
+     "ἄλλον",
+     "τινὰ",
+     "λαμβάνῃ",
+     "ψευδόμενον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "389d"
+    }
+   },
+   {
+    "prompt": "They conclude that the beginning of their enmity was on account of the capture of Ilium.",
+    "answer": "διὰ τὴν Ἰλίου ἅλωσιν εὑρίσκουσι σφίσι ἐοῦσαν τὴν ἀρχὴν τῆς ἔχθρης",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τὴν",
+     "Ἰλίου",
+     "ἅλωσιν",
+     "εὑρίσκουσι",
+     "σφίσι",
+     "ἐοῦσαν",
+     "τὴν",
+     "ἀρχὴν",
+     "τῆς",
+     "ἔχθρης"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "1.5"
+    }
+   }
+  ]
  }
 ]

@@ -1720,5 +1720,248 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2070-genitive-absolute-accusative-absolute-q1",
+  "sectionId": "sm-2070-genitive-absolute-accusative-absolute",
+  "questions": [
+   {
+    "prompt": "These things were effected while Conon was in command.",
+    "answer": "ταῦτ᾽ ἐπράχθη Κόνωνος στρατηγοῦντος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτ",
+     "ἐπράχθη",
+     "Κόνωνος",
+     "στρατηγοῦντος"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "9.56"
+    }
+   },
+   {
+    "prompt": "They blockaded and captured Eïon which was held by the Medes.",
+    "answer": "Ἠϊόνα . . . Μήδων ἐχόντων πολιορκίᾳ εἷλον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἠϊόνα",
+     "Μήδων",
+     "ἐχόντων",
+     "πολιορκίᾳ",
+     "εἷλον"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.98"
+    }
+   },
+   {
+    "prompt": "It having been announced that Phoenician ships were sailing against them.",
+    "answer": "ἐσαγγελθέντων ὅτι Φοίνισσαι νῆες ἐπ᾽ αὐτοὺς πλέουσιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐσαγγελθέντων",
+     "ὅτι",
+     "Φοίνισσαι",
+     "νῆες",
+     "ἐπ",
+     "αὐτοὺς",
+     "πλέουσιν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.116"
+    }
+   },
+   {
+    "prompt": "If you assist us heartily, you will gain to your cause a State having a large navy.",
+    "answer": "βοηθησάντων ὑμῶν προθύμως πόλιν προσλήψεσθε ναυτικὸν ἔχουσαν μέγα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βοηθησάντων",
+     "ὑμῶν",
+     "προθύμως",
+     "πόλιν",
+     "προσλήψεσθε",
+     "ναυτικὸν",
+     "ἔχουσαν",
+     "μέγα"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2070-genitive-absolute-accusative-absolute-q2",
+  "sectionId": "sm-2070-genitive-absolute-accusative-absolute",
+  "questions": [
+   {
+    "prompt": "When Pericles had already crossed over, news was brought to him that Megara had revolted.",
+    "answer": "διαβεβηκότος Περικλέους . . . ἠγγέλθη αὐτῷ ὅτι Μέγαρα ἀφέστηκε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διαβεβηκότος",
+     "Περικλέους",
+     "ἠγγέλθη",
+     "αὐτῷ",
+     "ὅτι",
+     "Μέγαρα",
+     "ἀφέστηκε"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.114"
+    }
+   },
+   {
+    "prompt": "They came against Epidaurus expecting to capture it undefended.",
+    "answer": "ἧλθον ἐπὶ τὴν Ἐπίδαυρον ὡς ἐρήμου οὔσης . . . αἱρήσοντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἧλθον",
+     "ἐπὶ",
+     "τὴν",
+     "Ἐπίδαυρον",
+     "ὡς",
+     "ἐρήμου",
+     "οὔσης",
+     "αἱρήσοντες"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.56"
+    }
+   },
+   {
+    "prompt": "Cum bellicis in periculis universa respublica imperatori committatur.",
+    "answer": "ὅλης τῆς πόλεως ἐν τοῖς πολεμικοῖς κινδύνοις ἐπιτρεπομένης τῷ στρατηγῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅλης",
+     "τῆς",
+     "πόλεως",
+     "ἐν",
+     "τοῖς",
+     "πολεμικοῖς",
+     "κινδύνοις",
+     "ἐπιτρεπομένης",
+     "τῷ",
+     "στρατηγῷ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.1.3"
+    }
+   },
+   {
+    "prompt": "To which he now claims admission though he has no right.",
+    "answer": "νῦν ἀξιοῖ τυχεῖν οὐ μετὸν αὐτῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νῦν",
+     "ἀξιοῖ",
+     "τυχεῖν",
+     "οὐ",
+     "μετὸν",
+     "αὐτῷ"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "31.32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2070-genitive-absolute-accusative-absolute-q3",
+  "sectionId": "sm-2070-genitive-absolute-accusative-absolute",
+  "questions": [
+   {
+    "prompt": "For of course you know because it concerns you.",
+    "answer": "δῆλον γὰρ ὅτι οἶσθα μέλον γέ σοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆλον",
+     "γὰρ",
+     "ὅτι",
+     "οἶσθα",
+     "μέλον",
+     "γέ",
+     "σοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "24d"
+    }
+   },
+   {
+    "prompt": "We did not rescue you although it was both feasible and possible.",
+    "answer": "σὲ οὐχὶ ἐσώσαμεν . . . οἷόν τε ὂν καὶ δυνατόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὲ",
+     "οὐχὶ",
+     "ἐσώσαμεν",
+     "οἷόν",
+     "τε",
+     "ὂν",
+     "καὶ",
+     "δυνατόν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Crito",
+     "locus": "46a"
+    }
+   },
+   {
+    "prompt": "On the ground that stealing is not necessary you accuse the thief.",
+    "answer": "τὸ κλέπτειν, αἰτιᾷ τὸν κλέπτοντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "κλέπτειν",
+     "αἰτιᾷ",
+     "τὸν",
+     "κλέπτοντα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.1.13"
+    }
+   },
+   {
+    "prompt": "They were supping in silence just as if this had been enjoined upon them.",
+    "answer": "σιωπῇ ἐδείπνουν, ὤσπερ τοῦτο προστεταγμένον αὐτοῖς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σιωπῇ",
+     "ἐδείπνουν",
+     "ὤσπερ",
+     "τοῦτο",
+     "προστεταγμένον",
+     "αὐτοῖς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Symposium",
+     "locus": "1"
+    }
+   }
+  ]
  }
 ]

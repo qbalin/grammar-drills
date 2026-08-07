@@ -684,5 +684,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1469-dative-as-indirect-complement-of-verbs-q1",
+  "sectionId": "sm-1469-dative-as-indirect-complement-of-verbs",
+  "questions": [
+   {
+    "prompt": "Cyrus gives him pay for six months.",
+    "answer": "Κῦρος δίδωσιν αὐτῷ ἓξ μηνῶν μισθόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "δίδωσιν",
+     "αὐτῷ",
+     "ἓξ",
+     "μηνῶν",
+     "μισθόν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.1.10"
+    }
+   },
+   {
+    "prompt": "He presented a horse to the Hyrcanian.",
+    "answer": "τῷ Ὑρκανίῳ ἵππον ἐδωρήσατο",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "Ὑρκανίῳ",
+     "ἵππον",
+     "ἐδωρήσατο"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "8.4.24"
+    }
+   },
+   {
+    "prompt": "To distribute the rest to the generals.",
+    "answer": "τὰ δὲ ἄλλα διανεῖμαι τοῖς στρατηγοῖς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "δὲ",
+     "ἄλλα",
+     "διανεῖμαι",
+     "τοῖς",
+     "στρατηγοῖς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.5.2"
+    }
+   },
+   {
+    "prompt": "He advised the Athenians as follows.",
+    "answer": "παρῄνει τοῖς Ἀθηναίοις τοιάδε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρῄνει",
+     "τοῖς",
+     "Ἀθηναίοις",
+     "τοιάδε"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.8"
+    }
+   }
+  ]
  }
 ]

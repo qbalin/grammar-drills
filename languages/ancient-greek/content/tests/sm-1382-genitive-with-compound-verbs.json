@@ -1093,5 +1093,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1382-genitive-with-compound-verbs-q1",
+  "sectionId": "sm-1382-genitive-with-compound-verbs",
+  "questions": [
+   {
+    "prompt": "Dissuading the allies from their purpose.",
+    "answer": "τοὺς συμμάχους ἀποτρέψαντες τῆς γνώμης",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "συμμάχους",
+     "ἀποτρέψαντες",
+     "τῆς",
+     "γνώμης"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "3.21"
+    }
+   },
+   {
+    "prompt": "To the first one setting foot on the wall.",
+    "answer": "τῷ ἐπιβάντι πρώτῳ τοῦ τείχους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "ἐπιβάντι",
+     "πρώτῳ",
+     "τοῦ",
+     "τείχους"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.116"
+    }
+   },
+   {
+    "prompt": "Having condemned the fugitives to death.",
+    "answer": "τῶν διαφυγόντων θάνατον καταγνόντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "διαφυγόντων",
+     "θάνατον",
+     "καταγνόντες"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.60"
+    }
+   },
+   {
+    "prompt": "Our fathers passed sentence of death against many for favouring the Persians.",
+    "answer": "πολλῶν οἱ πατέρες μηδισμοῦ θάνατον κατέγνωσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλῶν",
+     "οἱ",
+     "πατέρες",
+     "μηδισμοῦ",
+     "θάνατον",
+     "κατέγνωσαν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "4.157"
+    }
+   }
+  ]
  }
 ]

@@ -391,5 +391,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2225-fear-relating-to-the-future-q1",
+  "sectionId": "sm-2225-fear-relating-to-the-future",
+  "questions": [
+   {
+    "prompt": "I am afraid lest we may forget the way home.",
+    "answer": "δέδοικα μὴ . . . ἐπιλαθώμεθα τῆς οἴκαδε ὁδοῦ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μὴ",
+     "ἐπιλαθώμεθα",
+     "τῆς",
+     "οἴκαδε",
+     "ὁδοῦ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.25"
+    }
+   },
+   {
+    "prompt": "He is afraid lest he suffer the severest punishment.",
+    "answer": "φοβεῖται μὴ . . . τὰ ἔσχατα πάθῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβεῖται",
+     "μὴ",
+     "τὰ",
+     "ἔσχατα",
+     "πάθῃ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.1.22"
+    }
+   },
+   {
+    "prompt": "We fear you are not to be depended on.",
+    "answer": "δέδιμεν μὴ οὐ βέβαιοι ἦτε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδιμεν",
+     "μὴ",
+     "οὐ",
+     "βέβαιοι",
+     "ἦτε"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "3.57"
+    }
+   },
+   {
+    "prompt": "I was struck with fear and even now I am in a state of agitation lest some of you may disregard me.",
+    "answer": "ἐφοβήθην . . . καὶ νῦν τεθορύβημαι μή τινες ὑμῶν ἀγνοήσωσί με",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβήθην",
+     "καὶ",
+     "νῦν",
+     "τεθορύβημαι",
+     "μή",
+     "τινες",
+     "ὑμῶν",
+     "ἀγνοήσωσί",
+     "με"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "2.4"
+    }
+   }
+  ]
  }
 ]

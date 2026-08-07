@@ -1680,5 +1680,260 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2881-adverbial-kai-q1",
+  "sectionId": "sm-2881-adverbial-kai",
+  "questions": [
+   {
+    "prompt": "Desirous of himself too doing something illustrious.",
+    "answer": "βουλόμενος δὲ καὶ αὐτὸς λαμπρόν τι ποιῆσαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλόμενος",
+     "δὲ",
+     "καὶ",
+     "αὐτὸς",
+     "λαμπρόν",
+     "τι",
+     "ποιῆσαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.4.15"
+    }
+   },
+   {
+    "prompt": "The very attempt is utter folly.",
+    "answer": "πολλὴ μωρία καὶ τοῦ ἐπιχειρήματος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλὴ",
+     "μωρία",
+     "καὶ",
+     "τοῦ",
+     "ἐπιχειρήματος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "317a"
+    }
+   },
+   {
+    "prompt": "If it is well to tell a fable at all.",
+    "answer": "εἰ δεῖ καὶ μῦθον λέγειν καλόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δεῖ",
+     "καὶ",
+     "μῦθον",
+     "λέγειν",
+     "καλόν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "110b"
+    }
+   },
+   {
+    "prompt": "The danger must now indeed seem to be dreadful.",
+    "answer": "ὁ κίνδυνος νῦν δὴ καὶ δόξειεν ἂν δεινὸς εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κίνδυνος",
+     "νῦν",
+     "δὴ",
+     "καὶ",
+     "δόξειεν",
+     "ἂν",
+     "δεινὸς",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "107c"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2881-adverbial-kai-q2",
+  "sectionId": "sm-2881-adverbial-kai",
+  "questions": [
+   {
+    "prompt": "Since the city has been saved I beg that safety be granted to me as well.",
+    "answer": "ἐπειδὴ καὶ ἡ πόλις ἐσώθη . . . ἀξιῶ κἀμοὶ σωτηρίαν γενέσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "καὶ",
+     "ἡ",
+     "πόλις",
+     "ἐσώθη",
+     "ἀξιῶ",
+     "κἀμοὶ",
+     "σωτηρίαν",
+     "γενέσθαι"
+    ],
+    "source": {
+     "author": "Andocides",
+     "work": "Orations",
+     "locus": "1.143"
+    }
+   },
+   {
+    "prompt": "For vengeance is not successful in accordance with justice, because it is taken upon a wrong.",
+    "answer": "τιμωρία γὰρ οὐκ εὐτυχεῖ δικαίως ὅτι καὶ ἀδικεῖται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τιμωρία",
+     "γὰρ",
+     "οὐκ",
+     "εὐτυχεῖ",
+     "δικαίως",
+     "ὅτι",
+     "καὶ",
+     "ἀδικεῖται"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "4.62"
+    }
+   },
+   {
+    "prompt": "I will begin my speech with medicine in order that we may do honour to our art.",
+    "answer": "ἄρξομαι δὲ ἀπὸ τῆς ἰατρικῆς λέγων ἵνα καὶ πρεσβεύωμεν τὴν τέχνην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄρξομαι",
+     "δὲ",
+     "ἀπὸ",
+     "τῆς",
+     "ἰατρικῆς",
+     "λέγων",
+     "ἵνα",
+     "καὶ",
+     "πρεσβεύωμεν",
+     "τὴν",
+     "τέχνην"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "186b"
+    }
+   },
+   {
+    "prompt": "For I have ere now heard Philolaus . . . and ere now certain others besides him.",
+    "answer": "ἤδη γὰρ ἔγωγε καὶ Φιλολάου ἤκουσα . . . ἤδη δὲ καὶ ἄλλων τινῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤδη",
+     "γὰρ",
+     "ἔγωγε",
+     "καὶ",
+     "Φιλολάου",
+     "ἤκουσα",
+     "ἤδη",
+     "δὲ",
+     "καὶ",
+     "ἄλλων",
+     "τινῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "61e"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2881-adverbial-kai-q3",
+  "sectionId": "sm-2881-adverbial-kai",
+  "questions": [
+   {
+    "prompt": "Either because of the exclamation or also because some other thought occurred to him.",
+    "answer": "εἴτε διὰ τὸ ἐπιβόημα εἴτε καὶ αὐτῷ ἄλλο τι . . . δόξαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴτε",
+     "διὰ",
+     "τὸ",
+     "ἐπιβόημα",
+     "εἴτε",
+     "καὶ",
+     "αὐτῷ",
+     "ἄλλο",
+     "τι",
+     "δόξαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.65"
+    }
+   },
+   {
+    "prompt": "If any other thing is learnable, this is too.",
+    "answer": "εἴπερ τι καὶ ἄλλο καὶ τοῦτο μαθητόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴπερ",
+     "τι",
+     "καὶ",
+     "ἄλλο",
+     "καὶ",
+     "τοῦτο",
+     "μαθητόν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Symposium",
+     "locus": "2"
+    }
+   },
+   {
+    "prompt": "He knows as well as anybody else.",
+    "answer": "ἐπίσταται δ᾽ εἴ τις καὶ ἄλλος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπίσταται",
+     "δ",
+     "εἴ",
+     "τις",
+     "καὶ",
+     "ἄλλος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.15"
+    }
+   },
+   {
+    "prompt": "As also any other.",
+    "answer": "ὥς τις καὶ ἄλλος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥς",
+     "τις",
+     "καὶ",
+     "ἄλλος"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.6.8"
+    }
+   }
+  ]
  }
 ]

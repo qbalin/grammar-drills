@@ -418,5 +418,95 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2369-concessive-clauses-q1",
+  "sectionId": "sm-2369-concessive-clauses",
+  "questions": [
+   {
+    "prompt": "The king would give many guides to the Mysians even supposing they should want to depart with four-horse chariots.",
+    "answer": "Μυσοῖς βασιλεὺς πολλοὺς μὲν ἡγεμόνας ἂν δοίη . . ., καὶ εἰ σὺν τεθρίπποις βούλοιντο ἀπιέναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Μυσοῖς",
+     "βασιλεὺς",
+     "πολλοὺς",
+     "μὲν",
+     "ἡγεμόνας",
+     "ἂν",
+     "δοίη",
+     "καὶ",
+     "εἰ",
+     "σὺν",
+     "τεθρίπποις",
+     "βούλοιντο",
+     "ἀπιέναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.24"
+    }
+   },
+   {
+    "prompt": "Although it seems too unimportant to some.",
+    "answer": "εἰ καί τῳ σμικρότερον δοκεῖ εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "καί",
+     "τῳ",
+     "σμικρότερον",
+     "δοκεῖ",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laches",
+     "locus": "182c"
+    }
+   },
+   {
+    "prompt": "Though the expression be ridiculous.",
+    "answer": "εἰ καὶ γελοιότερον εἰπεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "καὶ",
+     "γελοιότερον",
+     "εἰπεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "30c"
+    }
+   },
+   {
+    "prompt": "He preferred rather that you should know of it, in order that, even if he should wish to be base, it might not be possible.",
+    "answer": "εἵλετο μᾶλλον συνειδέναι ὑμᾶς, ἵν᾽, εἰ καὶ βούλοιτο κακὸς εἶναι, μὴ ἐξείη αὐτῷ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἵλετο",
+     "μᾶλλον",
+     "συνειδέναι",
+     "ὑμᾶς",
+     "ἵν",
+     "εἰ",
+     "καὶ",
+     "βούλοιτο",
+     "κακὸς",
+     "εἶναι",
+     "μὴ",
+     "ἐξείη",
+     "αὐτῷ"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "20.23"
+    }
+   }
+  ]
  }
 ]

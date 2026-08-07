@@ -1394,5 +1394,78 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1521-comitative-dative-q1",
+  "sectionId": "sm-1521-comitative-dative",
+  "questions": [
+   {
+    "prompt": "To have an interview with you.",
+    "answer": "εἰς λόγους σοι ἐλθεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "λόγους",
+     "σοι",
+     "ἐλθεῖν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.4"
+    }
+   },
+   {
+    "prompt": "To enter into friendship with them.",
+    "answer": "αὐτοῖς διὰ φιλίας ἰέναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοῖς",
+     "διὰ",
+     "φιλίας",
+     "ἰέναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.2.8"
+    }
+   },
+   {
+    "prompt": "He said their words did not agree with their deeds.",
+    "answer": "οὐκ ἔφη τοὺς λόγους τοῖς ἔργοις ὁμολογεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔφη",
+     "τοὺς",
+     "λόγους",
+     "τοῖς",
+     "ἔργοις",
+     "ὁμολογεῖν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "5.55"
+    }
+   },
+   {
+    "prompt": "He marches out with all his army.",
+    "answer": "ἐξελαύνει τῷ στρατεύματι παντί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξελαύνει",
+     "τῷ",
+     "στρατεύματι",
+     "παντί"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.7.14"
+    }
+   }
+  ]
  }
 ]

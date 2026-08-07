@@ -1787,5 +1787,265 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2967-te-q1",
+  "sectionId": "sm-2967-te",
+  "questions": [
+   {
+    "prompt": "For the Assyrians are enemies to me, and they are now more hostile to you than to me.",
+    "answer": "ἐμοί τε γὰρ πολέμιοι Ἀσσύριοι, σοί τε νῦν ἐχθίονές εἰσιν ἢ ἐμοί",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμοί",
+     "τε",
+     "γὰρ",
+     "πολέμιοι",
+     "Ἀσσύριοι",
+     "σοί",
+     "τε",
+     "νῦν",
+     "ἐχθίονές",
+     "εἰσιν",
+     "ἢ",
+     "ἐμοί"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "4.5.23"
+    }
+   },
+   {
+    "prompt": "Knowledge of which is most excellent and ignorance most disgraceful.",
+    "answer": "περὶ ὧν εἰδέναι τε κάλλιστον μὴ εἰδέναι τε αἴσχιστον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "ὧν",
+     "εἰδέναι",
+     "τε",
+     "κάλλιστον",
+     "μὴ",
+     "εἰδέναι",
+     "τε",
+     "αἴσχιστον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Gorgias",
+     "locus": "472c"
+    }
+   },
+   {
+    "prompt": "To rule and be ruled.",
+    "answer": "ἄρχειν τε καὶ ἄρχεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄρχειν",
+     "τε",
+     "καὶ",
+     "ἄρχεσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.9.4"
+    }
+   },
+   {
+    "prompt": "To exercise himself and his horses.",
+    "answer": "γυμνάσαι . . . ἑαυτόν τε καὶ τοὺς ἵππους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γυμνάσαι",
+     "ἑαυτόν",
+     "τε",
+     "καὶ",
+     "τοὺς",
+     "ἵππους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2967-te-q2",
+  "sectionId": "sm-2967-te",
+  "questions": [
+   {
+    "prompt": "Both destroying their walls and surrendering their ships and besides assessing tribute on themselves.",
+    "answer": "τείχη τε περιελόντες καὶ ναῦς παραδόντες φόρον τε ταξάμενοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τείχη",
+     "τε",
+     "περιελόντες",
+     "καὶ",
+     "ναῦς",
+     "παραδόντες",
+     "φόρον",
+     "τε",
+     "ταξάμενοι"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.108"
+    }
+   },
+   {
+    "prompt": "I think it hard to cross, especially when the enemy faces us in full force.",
+    "answer": "χαλεπὸν οἶμαι διαβαίνειν ἄλλως τε καὶ πολεμίων πολλῶν ἔμπροσθεν ὄντων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπὸν",
+     "οἶμαι",
+     "διαβαίνειν",
+     "ἄλλως",
+     "τε",
+     "καὶ",
+     "πολεμίων",
+     "πολλῶν",
+     "ἔμπροσθεν",
+     "ὄντων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "5.6.9"
+    }
+   },
+   {
+    "prompt": "It is grievous to be deprived of anything, especially if this happens to any one at the hands of a personal enemy.",
+    "answer": "πάντων . . . ἀποστερεῖσθαι λυπηρόν ἐστι . . . , ἄλλως τε κἂν ὑπ᾽ ἐχθροῦ τῳ τοῦτο συμβαίνῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντων",
+     "ἀποστερεῖσθαι",
+     "λυπηρόν",
+     "ἐστι",
+     "ἄλλως",
+     "τε",
+     "κἂν",
+     "ὑπ",
+     "ἐχθροῦ",
+     "τῳ",
+     "τοῦτο",
+     "συμβαίνῃ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.5"
+    }
+   },
+   {
+    "prompt": "He both honoured me in other ways and gave me ten thousand darics.",
+    "answer": "τά τ᾽ ἄλλα ἐτἱμησε καὶ μυρίους ἔδωκε δαρεικούς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "τ",
+     "ἄλλα",
+     "ἐτἱμησε",
+     "καὶ",
+     "μυρίους",
+     "ἔδωκε",
+     "δαρεικούς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.3.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2967-te-q3",
+  "sectionId": "sm-2967-te",
+  "questions": [
+   {
+    "prompt": "The barbarian and the Greek force.",
+    "answer": "τό τε βαρβαρικὸν καὶ τὸ Ἑλληνικόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "τε",
+     "βαρβαρικὸν",
+     "καὶ",
+     "τὸ",
+     "Ἑλληνικόν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.2.1"
+    }
+   },
+   {
+    "prompt": "The State and we the laws.",
+    "answer": "ἡ πόλις. τε καὶ ἡμεῖς οἱ νόμοι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "τε",
+     "καὶ",
+     "ἡμεῖς",
+     "οἱ",
+     "νόμοι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Crito",
+     "locus": "53a"
+    }
+   },
+   {
+    "prompt": "In the hotter and colder.",
+    "answer": "ἔν τε τῷ θερμοτέρῳ καὶ ψυχροτέρῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔν",
+     "τε",
+     "τῷ",
+     "θερμοτέρῳ",
+     "καὶ",
+     "ψυχροτέρῳ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Philebus",
+     "locus": "24b"
+    }
+   },
+   {
+    "prompt": "The very noblest constitution and the noblest man.",
+    "answer": "ἡ καλλίστη δὴ πολιτεία τε καὶ ὁ κάλλιστος ἀνήρ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "καλλίστη",
+     "δὴ",
+     "πολιτεία",
+     "τε",
+     "καὶ",
+     "ὁ",
+     "κάλλιστος",
+     "ἀνήρ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "562a"
+    }
+   }
+  ]
  }
 ]

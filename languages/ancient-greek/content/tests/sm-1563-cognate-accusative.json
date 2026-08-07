@@ -1525,5 +1525,154 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-q1",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "Victorious in the sea-fight at Salamis.",
+    "answer": "τὴν ἐν Σαλαμῖνι ναυμαχίαν ναυμαχήσαντες",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἐν",
+     "Σαλαμῖνι",
+     "ναυμαχίαν",
+     "ναυμαχήσαντες"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "59.97"
+    }
+   },
+   {
+    "prompt": "The charge they bring.",
+    "answer": "ἡ αἰτία ἣν αἰτιῶνται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "αἰτία",
+     "ἣν",
+     "αἰτιῶνται"
+    ],
+    "source": {
+     "author": "Antiphon",
+     "work": "Orations",
+     "locus": "6.27"
+    }
+   },
+   {
+    "prompt": "Being neither at all wise after the fashion of their wisdom nor ignorant after the fashion of their ignorance.",
+    "answer": "μήτε τι σοφὸς ὢν τὴν ἐκείνων σοφίαν μήτε ἀμαθὴς τὴν ἀμαθίαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήτε",
+     "τι",
+     "σοφὸς",
+     "ὢν",
+     "τὴν",
+     "ἐκείνων",
+     "σοφίαν",
+     "μήτε",
+     "ἀμαθὴς",
+     "τὴν",
+     "ἀμαθίαν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "22e"
+    }
+   },
+   {
+    "prompt": "They waged what is called the Sacred War.",
+    "answer": "τὸν ἱερὸν καλούμενον πόλεμον ἐστράτευσαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἱερὸν",
+     "καλούμενον",
+     "πόλεμον",
+     "ἐστράτευσαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "1.112"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1563-cognate-accusative-q2",
+  "sectionId": "sm-1563-cognate-accusative",
+  "questions": [
+   {
+    "prompt": "He fell ill of this disease.",
+    "answer": "ἠσθένησε ταύτην τὴν νόσον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠσθένησε",
+     "ταύτην",
+     "τὴν",
+     "νόσον"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "19.24"
+    }
+   },
+   {
+    "prompt": "Highly elated at this.",
+    "answer": "μέγα φρονήσας ἐπὶ τούτῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέγα",
+     "φρονήσας",
+     "ἐπὶ",
+     "τούτῳ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.27"
+    }
+   },
+   {
+    "prompt": "To be on the side of the Greeks.",
+    "answer": "τὰ τῶν Ἑλλήνων φρονεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τῶν",
+     "Ἑλλήνων",
+     "φρονεῖν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "14.34"
+    }
+   },
+   {
+    "prompt": "No one would be persuaded of this.",
+    "answer": "ταῦτα οὐδεὶς ἂν πεισθείη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "οὐδεὶς",
+     "ἂν",
+     "πεισθείη"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "836d"
+    }
+   }
+  ]
  }
 ]

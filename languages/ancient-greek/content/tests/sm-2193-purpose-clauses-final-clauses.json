@@ -1880,5 +1880,173 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2193-purpose-clauses-final-clauses-q1",
+  "sectionId": "sm-2193-purpose-clauses-final-clauses",
+  "questions": [
+   {
+    "prompt": "Remain behind that we may consider your case also.",
+    "answer": "κατάμενε ἵνα καὶ περὶ σοῦ βουλευσώμεθα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατάμενε",
+     "ἵνα",
+     "καὶ",
+     "περὶ",
+     "σοῦ",
+     "βουλευσώμεθα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.6.28"
+    }
+   },
+   {
+    "prompt": "A king is chosen, not that he may care for his own interest however nobly, but that those who choose him may prosper through him.",
+    "answer": "βασιλεὺς αἱρεῖται οὐχ ἵνα ἑαυτοῦ καλῶς ἐπιμελῆται, ἀλλ᾽ ἵνα καὶ οι᾽ ἑλόμενοι δι᾽ αὐτὸν εὖ πράττωσι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βασιλεὺς",
+     "αἱρεῖται",
+     "οὐχ",
+     "ἵνα",
+     "ἑαυτοῦ",
+     "καλῶς",
+     "ἐπιμελῆται",
+     "ἀλλ",
+     "ἵνα",
+     "καὶ",
+     "οι",
+     "ἑλόμενοι",
+     "δι",
+     "αὐτὸν",
+     "εὖ",
+     "πράττωσι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.2.3"
+    }
+   },
+   {
+    "prompt": "You call in physicians in order that he may not die.",
+    "answer": "παρακαλεῖς ἰατροὺς ὅπως μὴ ἀποθάνῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρακαλεῖς",
+     "ἰατροὺς",
+     "ὅπως",
+     "μὴ",
+     "ἀποθάνῃ"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "2.10.2"
+    }
+   },
+   {
+    "prompt": "He sent guards along in order that they might guard him from the rough parts of the country.",
+    "answer": "ὅπως ἀπὸ τῶν δυσχωριῶν φυλάττοιεν αὐτόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "ἀπὸ",
+     "τῶν",
+     "δυσχωριῶν",
+     "φυλάττοιεν",
+     "αὐτόν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.4.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-2193-purpose-clauses-final-clauses-q2",
+  "sectionId": "sm-2193-purpose-clauses-final-clauses",
+  "questions": [
+   {
+    "prompt": "And with these words on his lips he stood up in order that what was needful might not be delayed but be done at once.",
+    "answer": "καὶ ἅμα ταῦτ᾽ εἰπὼν ἀνέστη ὡς μὴ μέλλοιτο ἀλλὰ περαίνοιτο τὰ δέοντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "ἅμα",
+     "ταῦτ",
+     "εἰπὼν",
+     "ἀνέστη",
+     "ὡς",
+     "μὴ",
+     "μέλλοιτο",
+     "ἀλλὰ",
+     "περαίνοιτο",
+     "τὰ",
+     "δέοντα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.47"
+    }
+   },
+   {
+    "prompt": "They have gone away that they might not suffer punishment.",
+    "answer": "οἴχονται ἵνα μὴ δοῖεν δίκην",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἴχονται",
+     "ἵνα",
+     "μὴ",
+     "δοῖεν",
+     "δίκην"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "20.21"
+    }
+   },
+   {
+    "prompt": "You will guide us in order that we may know.",
+    "answer": "ἄξεις ἡμᾶς ὅπως ἂν εἰδῶμεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄξεις",
+     "ἡμᾶς",
+     "ὅπως",
+     "ἂν",
+     "εἰδῶμεν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.2.21"
+    }
+   },
+   {
+    "prompt": "But that you may learn, hear me in turn.",
+    "answer": "ὡς δ᾽ ἂν μάθῃς . . ., ἀντάκουσον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "δ",
+     "ἂν",
+     "μάθῃς",
+     "ἀντάκουσον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.16"
+    }
+   }
+  ]
  }
 ]

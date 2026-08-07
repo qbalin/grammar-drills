@@ -366,5 +366,82 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2488-adjective-clauses-relative-clauses-2488-q1",
+  "sectionId": "sm-2488-adjective-clauses-relative-clauses-2488",
+  "questions": [
+   {
+    "prompt": "It shared with all what it received.",
+    "answer": "ὧν ἔλαβεν ἅπασι μετέδωκεν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὧν",
+     "ἔλαβεν",
+     "ἅπασι",
+     "μετέδωκεν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "4.29"
+    }
+   },
+   {
+    "prompt": "How then could he be subject to the indictment? For he manifestly worshipped the gods.",
+    "answer": "φανερὸς ἦν θεραπεύων τοὺς θεούς",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φανερὸς",
+     "ἦν",
+     "θεραπεύων",
+     "τοὺς",
+     "θεούς"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "1.2.64"
+    }
+   },
+   {
+    "prompt": "What is most wonderful, no one whatsoever ever saw Socrates drunk.",
+    "answer": "ὅ πάντων θαυμαστότατον, Σωκράτη μεθύοντα οὐδεὶς πώποτε ἑώρακεν ἀνθρώπων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "πάντων",
+     "θαυμαστότατον",
+     "Σωκράτη",
+     "μεθύοντα",
+     "οὐδεὶς",
+     "πώποτε",
+     "ἑώρακεν",
+     "ἀνθρώπων"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Symposium",
+     "locus": "220a"
+    }
+   },
+   {
+    "prompt": "Leaving himself only enough to taste.",
+    "answer": "ὅσον μόνον γεύσασθαι ἑαυτῷ καταλιπών",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅσον",
+     "μόνον",
+     "γεύσασθαι",
+     "ἑαυτῷ",
+     "καταλιπών"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.3.22"
+    }
+   }
+  ]
  }
 ]

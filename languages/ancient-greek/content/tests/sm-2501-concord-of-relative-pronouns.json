@@ -406,5 +406,77 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2501-concord-of-relative-pronouns-q1",
+  "sectionId": "sm-2501-concord-of-relative-pronouns",
+  "questions": [
+   {
+    "prompt": "To sail for Selinus with all their force, for which purpose especially they had been sent.",
+    "answer": "πλεῖν ἐπὶ Σελινοῦντα πάσῃ τῇ στρατιᾷ, ἐφ᾽ ὅπερ μάλιστα ἐπέμφθησαν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πλεῖν",
+     "ἐπὶ",
+     "Σελινοῦντα",
+     "πάσῃ",
+     "τῇ",
+     "στρατιᾷ",
+     "ἐφ",
+     "ὅπερ",
+     "μάλιστα",
+     "ἐπέμφθησαν"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "6.47"
+    }
+   },
+   {
+    "prompt": "They slew all whom they met.",
+    "answer": "ᾥτινι ἐντυγχάνοιεν . . . πάντας ἔκτεινον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾥτινι",
+     "ἐντυγχάνοιεν",
+     "πάντας",
+     "ἔκτεινον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.5.32"
+    }
+   },
+   {
+    "prompt": "He said that he had continued to do what was just and to refrain from what was unjust, which he thought was the best practice for his defence.",
+    "answer": "εἰπεν ὅτι . . . διαγεγένηται πράττων τὰ δίκαια καὶ τῶν ἀδίκων ἀπεχόμενος, ἥνπερ νομίζοι καλλίστην μελέτην ἀπολογίας εἶναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰπεν",
+     "ὅτι",
+     "διαγεγένηται",
+     "πράττων",
+     "τὰ",
+     "δίκαια",
+     "καὶ",
+     "τῶν",
+     "ἀδίκων",
+     "ἀπεχόμενος",
+     "ἥνπερ",
+     "νομίζοι",
+     "καλλίστην",
+     "μελέτην",
+     "ἀπολογίας",
+     "εἶναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.8.4"
+    }
+   }
+  ]
  }
 ]

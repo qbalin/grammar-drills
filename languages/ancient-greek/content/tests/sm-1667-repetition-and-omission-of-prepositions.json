@@ -1182,5 +1182,179 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-q1",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "In the pursuit of war and in the other occupations of life.",
+    "answer": "κατά τε πόλεμον καὶ κατὰ τὴν ἄλλην δίαιταν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατά",
+     "τε",
+     "πόλεμον",
+     "καὶ",
+     "κατὰ",
+     "τὴν",
+     "ἄλλην",
+     "δίαιταν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Timaeus",
+     "locus": "18c"
+    }
+   },
+   {
+    "prompt": "Both by land and by sea.",
+    "answer": "καὶ κατὰ γῆν καὶ κατὰ θάλατταν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "κατὰ",
+     "γῆν",
+     "καὶ",
+     "κατὰ",
+     "θάλατταν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.1.7"
+    }
+   },
+   {
+    "prompt": "To foe or friend.",
+    "answer": "πρὸς ἐχθρὸν ἢ φίλον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸς",
+     "ἐχθρὸν",
+     "ἢ",
+     "φίλον"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.114"
+    }
+   },
+   {
+    "prompt": "The men of mark come from those who have practised each art.",
+    "answer": "ἐκ τούτων οἱ ὀνομαστοὶ γίγνονται, ἐκ τῶν ἐπιτηδευσάντων ἕκαστα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκ",
+     "τούτων",
+     "οἱ",
+     "ὀνομαστοὶ",
+     "γίγνονται",
+     "ἐκ",
+     "τῶν",
+     "ἐπιτηδευσάντων",
+     "ἕκαστα"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laches",
+     "locus": "183c"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1667-repetition-and-omission-of-prepositions-q2",
+  "sectionId": "sm-1667-repetition-and-omission-of-prepositions",
+  "questions": [
+   {
+    "prompt": "He was at that age at which I now am.",
+    "answer": "κατὰ ταύτην τὴν ἡλικίαν ἦν ἣν ἐγὼ νῦν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κατὰ",
+     "ταύτην",
+     "τὴν",
+     "ἡλικίαν",
+     "ἦν",
+     "ἣν",
+     "ἐγὼ",
+     "νῦν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "21.155"
+    }
+   },
+   {
+    "prompt": "It is necessary to set each individual to some one work to which he is adapted by nature.",
+    "answer": "πρὸς ὅ τις πέφυκε, πρὸς τοῦτο ἕνα πρὸς ἓν ἕκαστον ἔργον δεῖ κομίζειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὸς",
+     "ὅ",
+     "τις",
+     "πέφυκε",
+     "πρὸς",
+     "τοῦτο",
+     "ἕνα",
+     "πρὸς",
+     "ἓν",
+     "ἕκαστον",
+     "ἔργον",
+     "δεῖ",
+     "κομίζειν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "423d"
+    }
+   },
+   {
+    "prompt": "They ought to take thought for their country as their mother and nurse.",
+    "answer": "δεῖ ὡς περὶ μητρὸς καὶ τροφοῦ τῆς χώρας βουλεύεσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "ὡς",
+     "περὶ",
+     "μητρὸς",
+     "καὶ",
+     "τροφοῦ",
+     "τῆς",
+     "χώρας",
+     "βουλεύεσθαι"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "414e"
+    }
+   },
+   {
+    "prompt": "Who owe their ruin to nothing so much as to such a course of action.",
+    "answer": "οἳ παρ᾽ οὐδὲν οὕτως ὡς τὸ τοιαῦτα ποιεῖν ἀπολώλασιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἳ",
+     "παρ",
+     "οὐδὲν",
+     "οὕτως",
+     "ὡς",
+     "τὸ",
+     "τοιαῦτα",
+     "ποιεῖν",
+     "ἀπολώλασιν"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.263"
+    }
+   }
+  ]
  }
 ]

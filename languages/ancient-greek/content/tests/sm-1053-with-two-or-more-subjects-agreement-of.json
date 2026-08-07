@@ -938,5 +938,188 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1053-with-two-or-more-subjects-agreement-of-q1",
+  "sectionId": "sm-1053-with-two-or-more-subjects-agreement-of",
+  "questions": [
+   {
+    "prompt": "Fear and the law are capable of restraining love.",
+    "answer": "φόβος καὶ νόμος ἱκανὸς ἔρωτα κωλύειν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φόβος",
+     "καὶ",
+     "νόμος",
+     "ἱκανὸς",
+     "ἔρωτα",
+     "κωλύειν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "5.1.10"
+    }
+   },
+   {
+    "prompt": "There arising much discussion and confusion.",
+    "answer": "πολλῶν δὲ λόγων καὶ θορύβου γιγνομένου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλῶν",
+     "δὲ",
+     "λόγων",
+     "καὶ",
+     "θορύβου",
+     "γιγνομένου"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "3.4"
+    }
+   },
+   {
+    "prompt": "When he saw that his father and mother and brothers and wife had been made prisoners of war, he burst into tears.",
+    "answer": "ὡς εἶδε πατέρα τε καὶ μητέρα καὶ ἀδελφοὺς καὶ τὴν ἑαυτοῦ γυναῖκα αἰχμαλώτους γεγενημένους, ἐδάκρυσε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "εἶδε",
+     "πατέρα",
+     "τε",
+     "καὶ",
+     "μητέρα",
+     "καὶ",
+     "ἀδελφοὺς",
+     "καὶ",
+     "τὴν",
+     "ἑαυτοῦ",
+     "γυναῖκα",
+     "αἰχμαλώτους",
+     "γεγενημένους",
+     "ἐδάκρυσε"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "3.1.7"
+    }
+   },
+   {
+    "prompt": "I have their children and wives under guard.",
+    "answer": "ἔχω αὐτῶν καὶ τέκνα καὶ γυναῖκας φρουρούμενα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔχω",
+     "αὐτῶν",
+     "καὶ",
+     "τέκνα",
+     "καὶ",
+     "γυναῖκας",
+     "φρουρούμενα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.4.8"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-1053-with-two-or-more-subjects-agreement-of-q2",
+  "sectionId": "sm-1053-with-two-or-more-subjects-agreement-of",
+  "questions": [
+   {
+    "prompt": "Noble birth and power and honour are clearly good things.",
+    "answer": "εὐγένειαί τε και` δυνάμεις καὶ τιμαὶ δῆλά ἐστιν ἀγαθὰ ὄντα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐγένειαί",
+     "τε",
+     "και",
+     "δυνάμεις",
+     "καὶ",
+     "τιμαὶ",
+     "δῆλά",
+     "ἐστιν",
+     "ἀγαθὰ",
+     "ὄντα"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Euthydemus",
+     "locus": "279b"
+    }
+   },
+   {
+    "prompt": "Stones and bricks and pieces of wood and tiles thrown together at random are useless.",
+    "answer": "λίθοι τε καὶ πλίνθοι καὶ ξύλα καὶ κέραμος ἀτάκτως ἐρριμμένα οὐδὲν χρήσιμά ἐστιν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λίθοι",
+     "τε",
+     "καὶ",
+     "πλίνθοι",
+     "καὶ",
+     "ξύλα",
+     "καὶ",
+     "κέραμος",
+     "ἀτάκτως",
+     "ἐρριμμένα",
+     "οὐδὲν",
+     "χρήσιμά",
+     "ἐστιν"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "3.1.7"
+    }
+   },
+   {
+    "prompt": "Old women and old men and a few sheep and oxen that had been left behind.",
+    "answer": "πρόβατα ὀλίγα καὶ βοῦς καταλελειμμένους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρόβατα",
+     "ὀλίγα",
+     "καὶ",
+     "βοῦς",
+     "καταλελειμμένους"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "6.3.22"
+    }
+   },
+   {
+    "prompt": "We should still have to treat of the noblest polity and the noblest man.",
+    "answer": "ἡ καλλίστη πολιτεία τε καὶ ὁ κάλλιστος ἀνὴρ λοιπὰ ἂν ἡμῖν εἴη διελθεῖν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "καλλίστη",
+     "πολιτεία",
+     "τε",
+     "καὶ",
+     "ὁ",
+     "κάλλιστος",
+     "ἀνὴρ",
+     "λοιπὰ",
+     "ἂν",
+     "ἡμῖν",
+     "εἴη",
+     "διελθεῖν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "562a"
+    }
+   }
+  ]
  }
 ]

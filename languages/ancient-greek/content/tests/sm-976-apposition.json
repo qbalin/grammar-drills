@@ -1608,5 +1608,162 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-976-apposition-q1",
+  "sectionId": "sm-976-apposition",
+  "questions": [
+   {
+    "prompt": "To a flatterer, a terrible beast and a very great source of injury.",
+    "answer": "κόλακι, δεινῷ θηρίῳ καὶ μεγίστῃ βλάβῃ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κόλακι",
+     "δεινῷ",
+     "θηρίῳ",
+     "καὶ",
+     "μεγίστῃ",
+     "βλάβῃ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedrus",
+     "locus": "240b"
+    }
+   },
+   {
+    "prompt": "These say, some one thing, some another.",
+    "answer": "οὗτοι μὲν ἄλλος ἄλλα λέγει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "μὲν",
+     "ἄλλος",
+     "ἄλλα",
+     "λέγει"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.1.15"
+    }
+   },
+   {
+    "prompt": "Our city, the common refuge of the Greeks.",
+    "answer": "ἡ ἡμετέρα πόλις, ἡ κοινὴ καταφυγὴ τῶν Ἑλλήνων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἡμετέρα",
+     "πόλις",
+     "ἡ",
+     "κοινὴ",
+     "καταφυγὴ",
+     "τῶν",
+     "Ἑλλήνων"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.134"
+    }
+   },
+   {
+    "prompt": "I propose this as the penalty, maintenance in the Prytaneum.",
+    "answer": "τούτου τιμῶμαι, ἐν πρυτανείῳ σιτήσεως",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούτου",
+     "τιμῶμαι",
+     "ἐν",
+     "πρυτανείῳ",
+     "σιτήσεως"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "37a"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sm-976-apposition-q2",
+  "sectionId": "sm-976-apposition",
+  "questions": [
+   {
+    "prompt": "We need, it seems, some further words to act as a spell.",
+    "answer": "ἐπῳδῶν προσδεῖσθαί μοι δοκεῖ μύθων ἔτι τινῶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπῳδῶν",
+     "προσδεῖσθαί",
+     "μοι",
+     "δοκεῖ",
+     "μύθων",
+     "ἔτι",
+     "τινῶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Laws",
+     "locus": "903b"
+    }
+   },
+   {
+    "prompt": "Those who are both loyal to the State and rich.",
+    "answer": "τους ἀμφότερα ταῦτα, καὶ εὔνους τῇ πόλει καὶ πλουσίους",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τους",
+     "ἀμφότερα",
+     "ταῦτα",
+     "καὶ",
+     "εὔνους",
+     "τῇ",
+     "πόλει",
+     "καὶ",
+     "πλουσίους"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "18.171"
+    }
+   },
+   {
+    "prompt": "In these very words of Homer.",
+    "answer": "τοῦτο αὐτὸ τὸ τοῦ Ὁμήρον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "αὐτὸ",
+     "τὸ",
+     "τοῦ",
+     "Ὁμήρον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "34d"
+    }
+   },
+   {
+    "prompt": "But what is most terrible of all.",
+    "answer": "ὃ δὲ πάντων δεινότατον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃ",
+     "δὲ",
+     "πάντων",
+     "δεινότατον"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "30.29"
+    }
+   }
+  ]
  }
 ]
