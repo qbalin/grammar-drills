@@ -151,6 +151,78 @@ def section_text(section):
     return "\n".join(l for l in lines if l.strip())
 
 
+# --- Smyth's own attested examples -----------------------------------------
+
+# Smyth illustrates almost everything with a real sentence and says where it is
+# from, and the TEI keeps all three parts apart:
+#
+#   <cit>
+#     <quote><quote lang="greek">Πρόξενος παρῆν</quote>
+#            <gloss>Proxenus was present</gloss></quote>
+#     <bibl n="Xen. Anab. 1.2.3"><author>X.</author><title>A.</title> 1.2.3</bibl>
+#   </cit>
+#
+# `render` flattens all of that into prose, which is why the shipped `text` has
+# them only as unstructured strings. Taken here instead, before flattening,
+# because reconstructing "which run of Greek goes with which gloss and which
+# locus" out of a flattened paragraph is guesswork and this is not.
+#
+# The `n` attribute is the gift: it is already the expanded canonical reference,
+# so no hand-written table of Smyth's abbreviations is needed to turn `X. A.`
+# into Xenophon's *Anabasis*.
+
+# Smyth glosses a handful of examples into Latin rather than English, usually to
+# show a construction the two languages share. An English prompt is the whole
+# point here, so they go.
+LATIN_GLOSS = re.compile(
+    r"\b(?:que|quis|quid|sunt|erat|esse|est|non|dabo|militibus|singulis|"
+    r"omnes|omnia|hoc|haec|ille|ipse|atque|autem|enim|nihil)\b", re.I)
+GREEK = re.compile(r"[Ͱ-Ͽἀ-῿]")
+
+
+def bibl_ref(bibl):
+    """The canonical locus for one <bibl>, preferring its own expansion.
+
+    `n` is Perseus's normalized citation ("Xen. Anab. 1.2.3"). The element's
+    text is Smyth's printed abbreviation ("X. A. 1.2.3"), which is what a reader
+    of the book would recognise but not what anyone could look up.
+    """
+    n = (bibl.get("n") or "").strip()
+    printed = " ".join("".join(bibl.itertext()).split())
+    return n or None, printed or None
+
+
+def examples_of(section):
+    """Every complete (Greek, English gloss, locus) triple in one section.
+
+    Incomplete triples are skipped rather than half-filled: an example with no
+    locus is exactly what this feature exists not to ship.
+    """
+    out = []
+    for node in section["nodes"]:
+        for cit in node.iter("cit"):
+            greek = None
+            for q in cit.iter("quote"):
+                if q.get("lang") == "greek":
+                    greek = " ".join("".join(q.itertext()).split())
+                    break
+            gloss_node = cit.find(".//gloss")
+            gloss = (" ".join("".join(gloss_node.itertext()).split())
+                     if gloss_node is not None else None)
+            bibl = cit.find(".//bibl")
+            ref, printed = bibl_ref(bibl) if bibl is not None else (None, None)
+
+            if not greek or not gloss or not ref:
+                continue
+            if not GREEK.search(greek):
+                continue
+            if not re.search(r"[A-Za-z]", gloss) or LATIN_GLOSS.search(gloss):
+                continue
+            out.append({"text": greek, "gloss": gloss, "ref": ref,
+                        "printed": printed})
+    return out
+
+
 # --- the syllabus ----------------------------------------------------------
 
 # Smyth's own parts and chapters, collapsed into display families. The
@@ -335,7 +407,19 @@ def build(sections, min_chars, max_chars):
             topic_id = f"sm-{piece_nums[0]:03d}-{slugify(title)}"
             for n in piece_nums:
                 assigned[n] = topic_id
-            topics.append({
+
+            # Deduplicated within the topic: Smyth reuses a favourite sentence
+            # across the sections of one run, and the same example twice under
+            # one heading is one example.
+            examples, seen = [], set()
+            for s in piece:
+                for ex in examples_of(s):
+                    if ex["text"] in seen:
+                        continue
+                    seen.add(ex["text"])
+                    examples.append(ex)
+
+            topic = {
                 "id": topic_id,
                 "ref": str(piece_nums[0]) if len(piece_nums) == 1
                        else f"{piece_nums[0]}-{piece_nums[-1]}",
@@ -343,7 +427,10 @@ def build(sections, min_chars, max_chars):
                 "family": family_of(piece_nums[0]),
                 "order": order,
                 "text": text,
-            })
+            }
+            if examples:
+                topic["examples"] = examples
+            topics.append(topic)
     return topics, assigned, dropped
 
 
