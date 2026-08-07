@@ -8,20 +8,36 @@
  * reach without a new corpus, so this module recovers them.
  *
  * Four filters decide what survives, and each of them was measured rather than
- * guessed. Against the Latin dump: 10,274 examples carry a `ref`, 9,179 are
- * distinct and at least four words, and then
+ * guessed. Against the Latin dump, at this module's own default policy (4-30
+ * words, classical, prose): 9,522 distinct cited examples, 9,179 of them at
+ * least four words, and then
  *
- *   sentence-shaped   4,042   a fragment is not a translation exercise
- *   prose             3,158   a hexameter's word order is not a model of usage
- *   classical           ...   the dump quotes Kepler, Linnaean taxonomists and
+ *   sentence-shaped   3,169   a fragment is not a translation exercise
+ *   elided/unparsed   2,018   a citation this cannot split is not shown
+ *                             half-attributed
+ *   classical         1,560   the dump quotes Kepler, Linnaean taxonomists and
  *                             a 2023 papal bull as readily as it quotes Cicero
- *   macronized          799   the pack's answers are marked; bare Latin beside
+ *   prose               944   a hexameter's word order is not a model of usage
+ *   macronized          398   the pack's answers are marked; bare Latin beside
  *                             them is a defect no gate can see, because the
  *                             fold strips marks before anything compares them
  *
- * The last one is why this cannot be the only source: 799 sentences do not fill
- * 114 topics. Everything here is therefore written to be one input among
- * several, and to report its own funnel honestly rather than to look sufficient.
+ * CORRECTION, 2026-08-07. This header and the commit that added it (60e8f15)
+ * recorded 4,042 sentence-shaped and 799 macronized. The 4,042 reproduces
+ * exactly, but only with no upper word bound; the 799 does not reproduce at
+ * all, on the same dump and this same code, at any policy tried. The numbers
+ * above are what the module actually measures today, and the divergence is
+ * recorded rather than quietly overwritten because a number nobody can
+ * reproduce is worse than a number that moved.
+ *
+ * The macron cut is no longer the end of the story: `scripts/lib/macronize.mjs`
+ * inverts the fold where the dictionary makes it unambiguous, which is why
+ * `marks: "any"` exists below. Of the 944, 373 are already marked and carry no
+ * unattested form at all, and 159 more are attestation-clean and need a choice
+ * on one or two words.
+ *
+ * Either way this is one input among several and not a replacement for the
+ * generator, and it reports its own funnel rather than looking sufficient.
  */
 import { createReadStream } from "node:fs";
 import { createInterface } from "node:readline";
@@ -212,8 +228,22 @@ export async function* readQuotes(dumpPath) {
  * "3,158 survived" is not an answer anyone can act on, and the shape of the
  * losses is the whole finding.
  */
+/**
+ * `marks` decides whether the last cut applies.
+ *
+ * `"require"` is the original policy: an unmarked sentence beside marked ones is
+ * a defect no gate can see, so drop it. `"any"` keeps it, and is only honest
+ * when the caller has something that puts the marks back — see
+ * `scripts/lib/macronize.mjs`, which is why this switch exists at all.
+ */
 export function rejectionOf(quote, policy) {
-  const { minWords = 4, maxWords = 30, era = "classical", verse = false } = policy;
+  const {
+    minWords = 4,
+    maxWords = 30,
+    era = "classical",
+    verse = false,
+    marks = "require",
+  } = policy;
   if (quote.wordCount < minWords) return "tooShort";
   if (quote.wordCount > maxWords) return "tooLong";
   if (!SENTENCE.test(quote.text) || !TERMINAL.test(quote.text)) return "notASentence";
@@ -222,7 +252,7 @@ export function rejectionOf(quote, policy) {
   const author = classicalAuthor(quote.refParsed.author);
   if (era === "classical" && !author) return "notClassical";
   if (!verse && author && isVerse(author)) return "verse";
-  if (!quote.macronized) return "unmacronized";
+  if (marks === "require" && !quote.macronized) return "unmacronized";
   return null;
 }
 
