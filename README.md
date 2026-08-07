@@ -681,10 +681,10 @@ Attributing them would manufacture quotations, so that route was measured and
 abandoned.
 
 Latin's real quotations come from the dictionary dump instead, where Wiktionary
-cites actual text with a `ref`. **That half is built but not yet shipped**: the
-pipeline below runs, and 439 quotations clear every filter, but
-`languages/latin/content/quotes.jsonl.gz` is not committed yet, so Latin's
-questions are all still generated. Greek's are the ones on screen today.
+cites actual text with a `ref`. 439 of them clear every filter. Whether they are
+on screen yet depends on whether `languages/latin/content/quotes.jsonl.gz` is in
+the tree — `languages/latin/REVIEW.md` records where that stands, under gate C9,
+and Greek's quoted questions ship either way.
 
 ```bash
 node --import tsx scripts/build-quote-pool.mjs --pack languages/latin \
