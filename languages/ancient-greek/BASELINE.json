@@ -12,7 +12,7 @@
     "The question numbers below are a SNAPSHOT OF AN UNFINISHED RUN. Generation",
     "was still going when this was written; see REVIEW.md."
   ],
-  "measuredAt": "2026-08-06",
+  "measuredAt": "2026-08-07",
   "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
 
   "grammar": {
@@ -119,6 +119,46 @@
       "tags nearly every form with the dialects it belongs to. That is also why",
       "profile.paradigms declares a primary and secondary tag list where Latin",
       "declares none: without it a genitive singular offers five spellings."
+    ]
+  },
+
+  "attestation": {
+    "answerTokens": 210466,
+    "exemptFunctionWords": 24,
+    "exemptEnclitic": 0,
+    "exemptProperNoun": 34,
+    "unattestedTokens": 1108,
+    "unattestedForms": 709,
+    "questionsAffected": 1091,
+    "worstQuestion": 2,
+    "indexGapTokensVsDictionary": 320,
+    "_note": [
+      "1,166 -> 1,108: 24 elided function words and 34 mid-sentence proper",
+      "nouns the checker now exempts as the generator always did. ἐφ’ is on the",
+      "allowlist, but the validator stripped only the ASCII apostrophe while the",
+      "tokenizer that reads a shipped answer strips both, so the list could",
+      "never see what it was written for.",
+      "",
+      "Latin's repair does not port. Wiktionary marks a wordform entry with the",
+      "lemma it is a form of; this dictionary is analyser-built and carries no",
+      "such link on any of 60,000 entries sampled, and rebuilding at the full",
+      "frequency list changes attestation by exactly nothing — 0 tokens gained,",
+      "0 lost. The map was already built that way.",
+      "",
+      "What is left is real Greek the analyser does not enumerate: future and",
+      "aorist optatives (ζημιωθήσοιτο, νοστήσοι, στήσειαν), προ- compounds of",
+      "δίδωμι and ἔρχομαι whose parent lemma is ranked (προδίδωμι is 919) but",
+      "whose augmented forms are absent, and duals. The topics they sit in are",
+      "sm-2617 and sm-2710 on indirect discourse and sm-2677 on moods in",
+      "indirect questions — which is to say the forms are there because the",
+      "grammar point is. 1,108 is a budget, not a defect list: it has no",
+      "headroom, so a later run that teaches another mood the analyser does not",
+      "enumerate raises it deliberately and says which questions bought it.",
+      "",
+      "320 further tokens are in reference/dictionary.db and not shipped. Their",
+      "cause is separate and unfixed: Morpheus writes a compound headword as",
+      "κατά-κάθημαι, which does not join the frequency list's κάθημαι, so every",
+      "compound verb's forms ship rankless. ἐκάθηντο ×21 is the largest."
     ]
   },
 

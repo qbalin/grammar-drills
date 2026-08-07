@@ -54,10 +54,29 @@ LANG_PACK=latin pnpm --filter @lang-tutor/web build
 Scripts importing `@lang-tutor/core` need `node --import tsx`; the few that do
 not are plain `node`.
 
-`validate-pack` is the answer to "is this pack ready" — it composes the grammar
-and coverage reports and exits non-zero on any failure. Greek is a draft and
-takes `--allow-incomplete`, which reports the how-much-is-written gates without
-letting them decide the exit code. Nothing about correctness is relaxed by it.
+`validate-pack` is the answer to "is this pack ready" — it composes the grammar,
+coverage and attestation reports and exits non-zero on any failure. Greek is a
+draft and takes `--allow-incomplete`, which reports the how-much-is-written gates
+without letting them decide the exit code. Nothing about correctness is relaxed
+by it, the attestation gates included.
+
+`profile.attestation` is what a pack may ship that its own content cannot
+confirm — `maxMissesPerQuestion` (distinct forms in one answer, and the bar the
+generator writes to) and `maxUnattestedForms` (tokens across the pack). Both are
+measurements a pack was admitted at rather than targets.
+
+They move in one of two ways and no others. **Down**, in the commit that earns
+the reduction. **Up**, only in the commit that generates the content needing it,
+and only by what that content actually measures — because a reference is not a
+language: a pack that could never raise this number could never teach a form its
+dictionary happens not to list, and both of these do. Latin's archaic gerundives
+live in the topic on peculiarities of conjugation; Greek's future optatives live
+in the topics on indirect discourse. What is never allowed is raising it to make
+an unrelated red build green, which is the whole difference between a budget and
+an excuse. Say which questions bought the increase in the commit message.
+
+**A pack that declares no `attestation` block is held to 0/0**, so a language
+added later inherits the strict rule by saying nothing.
 
 ## The reference
 

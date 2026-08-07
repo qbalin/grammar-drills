@@ -8,7 +8,7 @@
     "threshold. Regenerate with:",
     "  node --import tsx scripts/validate-pack.mjs --built apps/web/public/content"
   ],
-  "measuredAt": "2026-08-06",
+  "measuredAt": "2026-08-07",
   "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
 
   "grammar": {
@@ -89,10 +89,24 @@
   },
 
   "dictionary": {
-    "formKeys": 893854,
+    "formKeys": 973267,
     "distinctLemmas": 55312,
     "rankedLemmas": 19291,
     "unrankedLemmas": 36021,
+    "_formKeysNote": [
+      "893,854 -> 973,267 when build-lemmas started attaching a wordform",
+      "entry's forms to the ranked lemma it says it is a form of. Wiktionary",
+      "gives a Latin participle its own entry and its own declension and leaves",
+      "the parent verb listing the citation form alone, so capiō — rank 245 —",
+      "shipped without captūrōs or any other form of its own future participle.",
+      "Note that no lemma was added: 55,312 before and after. The forms were",
+      "always the forms of a word the corpus counted; nothing could find them.",
+      "",
+      "The count only moved once --max-rank 20000 was passed. The script's",
+      "default of 7000 does not reproduce what this pack ships and rebuilding",
+      "at it silently drops ranks 7001-19342 — 712 answer tokens' worth of",
+      "attestation. --verify reproduces 100.00% at 20000 and 98.35% at 7000."
+    ],
     "rankRange": [1, 19342],
     "nounLemmas": 17089,
     "nounLemmasWithGender": 16868,
@@ -105,7 +119,7 @@
     "refLemmaEntries": 52424,
     "refRankedLemmas": 19342,
     "foldMatchesRefNormOnSample": 40000,
-    "packResolvedPct": 99.3,
+    "packResolvedPct": 99.6,
     "packBandLemmasUsed": 2480,
     "_note": [
       "Rebuilt on 2026-08-06, and this is the first record of a pack that ships",
@@ -145,11 +159,44 @@
     ]
   },
 
+  "attestation": {
+    "answerTokens": 45072,
+    "exemptFunctionWords": 6415,
+    "exemptEnclitic": 38,
+    "exemptProperNoun": 23,
+    "unattestedTokens": 105,
+    "unattestedForms": 89,
+    "questionsAffected": 104,
+    "worstQuestion": 2,
+    "indexGapTokensVsDictionary": 71,
+    "_note": [
+      "305 -> 105 unattested tokens: 38 the enclitic on marīque and trēsve, 23",
+      "mid-sentence proper nouns the checker now exempts as the generator",
+      "always did, and 139 from build-lemmas learning to attach a participle's",
+      "declension to its parent verb.",
+      "",
+      "What is left is not invented Latin. It is archaic gerundives (capiundae,",
+      "potiundī), -ier passive infinitives (aperīrier, mūnīrier), -ībam",
+      "imperfects (audībam, nescībam), regular comparatives no dictionary",
+      "enumerates, and sentence-initial proper nouns. Every one of the archaisms",
+      "sits in bn-116 peculiarities-of-conjugation or bn-338 the-gerund — the",
+      "topics that exist to teach exactly that form. Regenerating them would",
+      "make E2 greener and the pack less true, so the budget records them",
+      "instead. It is 105, and it has no headroom on purpose: the next run that",
+      "writes a form the reference cannot confirm has to raise it deliberately",
+      "and say which questions bought the increase.",
+      "",
+      "71 more tokens are in reference/dictionary.db and not in what the pack",
+      "ships. They are a thin index rather than a bad sentence; closing that gap",
+      "is a build-lemmas job and touches no question."
+    ]
+  },
+
   "bundle": {
     "grammarJsonGz": "129 KB",
     "testsJsonGz": "298 KB",
-    "lemmasJsonGz": "1853 KB",
-    "formsTxtGz": "2452 KB",
+    "lemmasJsonGz": "1851 KB",
+    "formsTxtGz": "2620 KB",
     "_note": [
       "The dictionary went from 2.1 MB to 4.2 MB across its two files when the",
       "tail went in. Neither is precached, so what the study loop costs on a",

@@ -572,8 +572,8 @@ that needs the reference dictionary — 474 MB of Wiktionary, built locally by
 
 The per-topic tests are produced by `scripts/gen-tests.mjs`, which drives Claude
 Opus via the authenticated `claude -p` CLI, seeds each prompt with vocabulary
-sampled from frequency ranks 400–6000 so the sentences stay varied, and drops
-any item containing a Latin form the pack cannot attest:
+sampled from frequency ranks 400–6000 so the sentences stay varied, and checks
+every word of every answer against the reference:
 
 ```bash
 node --import tsx scripts/gen-tests.mjs --target 6                        # every topic lacking a file
@@ -581,12 +581,35 @@ node --import tsx scripts/gen-tests.mjs --target 6 bn-020-first-declension   # o
 node --import tsx scripts/gen-tests.mjs --ref languages/latin/reference   # check against the full dictionary
 ```
 
+A miss is not fatal, and saying so matters: neither reference is complete, so
+treating one as proof of a bad form throws away correct Latin. A sentence may
+carry up to `--allow-unverified` misses and still be kept; past that it is the
+signature of invented Latin and the item goes. Every form that survives
+unconfirmed is counted into `content/gen-stats.json`.
+
+What that tolerance lets through is then answered for by a gate rather than by
+trust — `scripts/attestation-report.mjs` re-checks every shipped question with
+the same rule and names the ones that carry an unattested form:
+
+```bash
+node --import tsx scripts/attestation-report.mjs --pack languages/latin
+node --import tsx scripts/attestation-report.mjs --pack languages/latin --ref languages/latin/reference
+```
+
+With `--ref` it splits the misses two ways, which is the split worth having: a
+form the dictionary knows and the pack does not ship is a thin index to grow,
+not a sentence to rewrite. `validate-pack` runs it without `--ref`, because the
+pack's own committed content is the only reference a fresh checkout has.
+
 Attestation comes from the pack's own `lemmas.json.gz` unless `--ref` points at
 a dictionary. That is not a compromise: on Latin the shipped map attests 98.4%
 of generated answer tokens against the dictionary's 94.4%, because a Wiktionary
 dump is built around inflected forms and misses common indeclinables — the same
 holes the `functionWords` list in `languages/latin/gen/config.mjs` exists to
-paper over.
+paper over. The pack's `enclitics` cover the other half of that: `marīque` is
+one token to a whitespace split and no word to any dictionary, so the checker
+looks through the enclitic before calling it a miss — whole form first, since
+`neque` is a word in its own right.
 
 Topics that already have a file are skipped, so a run interrupted by a usage
 limit resumes where it stopped. On a sustained limit it retries with a growing
