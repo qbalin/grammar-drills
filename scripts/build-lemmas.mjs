@@ -21,8 +21,13 @@
  * after this and rewrites them in place.
  *
  *   node --import tsx scripts/build-lemmas.mjs [--pack languages/latin]
- *        [--ref /path/to/ref] [--max-rank 7000] [--verify] [--out path]
+ *        [--ref /path/to/ref] [--max-rank N] [--verify] [--out path]
  *        [--merge] [--drop-artifacts] [--no-tail]
+ *
+ * `--max-rank` defaults to the whole frequency list, which is what both packs
+ * were built from. Passing a lower one demotes everything below it to the
+ * unranked tail, where it is still shipped and still findable but no longer
+ * counts as attested — see the constant below for how that went unnoticed.
  *
  * Two halves come out of it. The **ranked** half is the frequency list joined
  * against the dictionary: the words a corpus actually uses, each with its rank,
@@ -84,7 +89,25 @@ const VERIFY = argv.includes("--verify");
 const MERGE = argv.includes("--merge");
 const DROP_ARTIFACTS = argv.includes("--drop-artifacts");
 const TAIL = !argv.includes("--no-tail");
-const MAX_RANK = Number(opt("--max-rank", 7000));
+/**
+ * How far down the frequency list counts as ranked. The whole of it, unless
+ * asked otherwise.
+ *
+ * This used to default to 7000, which reproduced neither shipped pack. Both
+ * were built from the full list, so rebuilding at the default demoted every
+ * lemma of rank 7001 and below to the unranked tail — still shipped, still
+ * findable, but `packReference.attests` tests for a rank, so 712 of Latin's
+ * answer tokens quietly stopped being attested. The build reported no error and
+ * the file looked bigger, not smaller. Only a diff against the previous map
+ * showed it.
+ *
+ * A default that silently produces a worse artifact than the one it replaces is
+ * not a default. Take the list's own length instead: it is what both packs were
+ * built to, and `--verify` reproduces 100% of Latin's shipped keys at it.
+ */
+const MAX_RANK = argv.includes("--max-rank")
+  ? Number(opt("--max-rank"))
+  : ref.allRanks().reduce((a, b) => (b > a ? b : a), 0);
 const OUT = opt("--out", join(dir, "content", "lemmas.json.gz"));
 const OUT_FORMS = opt("--out-forms", join(dir, "content", "forms.txt.gz"));
 
@@ -109,18 +132,50 @@ const TAIL_GLOSS_CHARS = 140;
 // and a word nobody writes is not worth the bytes on a phone.
 const ranked = ref.ranked(MAX_RANK);
 
+/**
+ * Wordform entries, grouped by the lemma they are a form of.
+ *
+ * A ranked lemma's own form table is not always all of it. Wiktionary gives a
+ * Latin participle an entry and a declension of its own and leaves the parent
+ * verb listing the citation form alone, so `capiō` — rank 245 — shipped without
+ * `captūrōs`, `captūrum` or any other form of its own future participle. Those
+ * forms belong to a ranked word, and attaching them to its record is what makes
+ * them say so: the record carries the parent's `rank`, which is what
+ * `packReference.attests` tests, and the parent's gloss, which is what a
+ * student looking the form up wants to read.
+ *
+ * This adds no lemma and loosens nothing. A form reached this way is a form of
+ * a word the corpus counted, which is exactly what the gate already means by
+ * attested — the dump's filing convention was hiding it.
+ */
+const inflections = new Map();
+let linked = 0;
+for (const entry of ref.inflectionEntries()) {
+  const key = `${fold(entry.formOf)}|${entry.pos}`;
+  const list = inflections.get(key);
+  if (list) list.push(entry.id);
+  else inflections.set(key, [entry.id]);
+}
+
 const map = Object.create(null);
 let lemmas = 0;
 let missing = 0;
 let tail = 0;
 
 for (const row of ranked) {
-  const entries = ref.entriesFor(row.lemma_norm ?? fold(row.lemma), row.pos);
+  const lemmaNorm = row.lemma_norm ?? fold(row.lemma);
+  const entries = ref.entriesFor(lemmaNorm, row.pos);
   if (!entries.length) {
     missing++;
     continue;
   }
   lemmas++;
+  // The forms of every wordform entry that names this lemma, gathered once for
+  // all of the lemma's entries rather than per entry.
+  const inflected = [];
+  for (const id of inflections.get(`${lemmaNorm}|${row.pos}`) ?? []) {
+    for (const f of ref.formsFor(id)) inflected.push(f);
+  }
   for (const entry of entries) {
     // Read once and used twice: the forms are where the map's keys come from,
     // and the headword row among them is where the gender is written.
@@ -140,11 +195,13 @@ for (const row of ranked) {
 
     // The headword itself is a form: a lemma with no inflection table still
     // has to be findable by the word the student typed.
-    const forms = new Set([entry.word, ...rows.map((f) => f.form)]);
+    const own = new Set([entry.word, ...rows.map((f) => f.form)]);
+    const forms = new Set([...own, ...inflected.map((f) => f.form)]);
     for (const form of forms) {
       const key = fold(form);
       if (!key) continue;
       if (DROP_ARTIFACTS && ARTIFACT.test(key)) continue;
+      if (!own.has(form)) linked++;
       (map[key] ??= []).push(record);
     }
   }
@@ -234,6 +291,7 @@ for (const key of Object.keys(map)) {
 const keys = Object.keys(map);
 console.log(
   `${lemmas} lemmas of the top ${MAX_RANK} resolved (${missing} absent from the dictionary) ` +
+    (linked ? `plus ${linked} form keys from their own wordform entries ` : "") +
     (TAIL ? `plus ${tail} unranked from the rest of the dictionary ` : "") +
     `-> ${built} folded form keys` +
     (MERGE && !VERIFY ? `, plus ${kept} kept from the shipped map -> ${keys.length}` : ""),
