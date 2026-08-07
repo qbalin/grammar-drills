@@ -789,5 +789,147 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t13",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "Having conquered the Persians, the Athenians dedicate these arms to Athena.",
+    "answer": "Πέρσας νικήσαντες οἱ Ἀθηναῖοι τάδε τὰ ὅπλα τῇ Ἀθηνᾷ ἀνέθεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πέρσας",
+     "νικήσαντες",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τάδε",
+     "τὰ",
+     "ὅπλα",
+     "τῇ",
+     "Ἀθηνᾷ",
+     "ἀνέθεσαν"
+    ]
+   },
+   {
+    "prompt": "I send you my brother, to whom I have entrusted all my affairs.",
+    "answer": "ἔπεμψά σοι τὸν ἀδελφόν, ᾧ τὰ ἐμὰ πράγματα πάντα ἐπίστευσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπεμψά",
+     "σοι",
+     "τὸν",
+     "ἀδελφόν",
+     "ᾧ",
+     "τὰ",
+     "ἐμὰ",
+     "πράγματα",
+     "πάντα",
+     "ἐπίστευσα"
+    ]
+   },
+   {
+    "prompt": "I send you the shield which I carried in the battle.",
+    "answer": "ἀπέσταλκά σοι τὴν ἀσπίδα ἣν ἐν τῇ μάχῃ ἔφερον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέσταλκά",
+     "σοι",
+     "τὴν",
+     "ἀσπίδα",
+     "ἣν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἔφερον"
+    ]
+   },
+   {
+    "prompt": "With the enemy near, I send my son to you, so that he may be saved.",
+    "answer": "τῶν πολεμίων ἐγγὺς ὄντων, ἀπέπεμψά σοι τὸν υἱόν, ὅπως σωθῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἐγγὺς",
+     "ὄντων",
+     "ἀπέπεμψά",
+     "σοι",
+     "τὸν",
+     "υἱόν",
+     "ὅπως",
+     "σωθῇ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1942-epistolary-tenses-t14",
+  "sectionId": "sm-1942-epistolary-tenses",
+  "questions": [
+   {
+    "prompt": "When the general had drawn up the army, he sacrificed to the gods.",
+    "answer": "ἐπειδὴ ὁ στρατηγὸς τὸ στράτευμα ἔταξεν, τοῖς θεοῖς ἔθυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἔταξεν",
+     "τοῖς",
+     "θεοῖς",
+     "ἔθυσεν"
+    ]
+   },
+   {
+    "prompt": "They did not depart before they had buried the dead.",
+    "answer": "οὐ πρότερον ἀπῆλθον πρὶν τοὺς νεκροὺς ἔθαψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πρότερον",
+     "ἀπῆλθον",
+     "πρὶν",
+     "τοὺς",
+     "νεκροὺς",
+     "ἔθαψαν"
+    ]
+   },
+   {
+    "prompt": "When the ambassadors had spoken, the assembly voted for peace.",
+    "answer": "ἐπεὶ οἱ πρέσβεις εἶπον, ἡ ἐκκλησία τὴν εἰρήνην ἐψηφίσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "πρέσβεις",
+     "εἶπον",
+     "ἡ",
+     "ἐκκλησία",
+     "τὴν",
+     "εἰρήνην",
+     "ἐψηφίσατο"
+    ]
+   },
+   {
+    "prompt": "The soldiers returned to the camp which they had left the day before.",
+    "answer": "οἱ στρατιῶται ἐπανῆλθον εἰς τὸ στρατόπεδον ὃ τῇ προτεραίᾳ ἔλιπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐπανῆλθον",
+     "εἰς",
+     "τὸ",
+     "στρατόπεδον",
+     "ὃ",
+     "τῇ",
+     "προτεραίᾳ",
+     "ἔλιπον"
+    ]
+   }
+  ]
  }
 ]

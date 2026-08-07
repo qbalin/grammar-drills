@@ -756,5 +756,764 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t13",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "The allies will send ships to the islands.",
+    "answer": "οἱ σύμμαχοι ναῦς πρὸς τὰς νήσους πέμψουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σύμμαχοι",
+     "ναῦς",
+     "πρός",
+     "τάς",
+     "νήσους",
+     "πέμψουσιν"
+    ]
+   },
+   {
+    "prompt": "The farmers will guard the ripe fruit through the night.",
+    "answer": "οἱ γεωργοὶ τὸν ὡραῖον καρπὸν διὰ τῆς νυκτὸς φυλάξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γεωργοί",
+     "τόν",
+     "ὡραῖον",
+     "καρπόν",
+     "διά",
+     "τῆς",
+     "νυκτός",
+     "φυλάξουσιν"
+    ]
+   },
+   {
+    "prompt": "Having conquered the enemy, we shall keep our freedom.",
+    "answer": "νικήσαντες τοὺς πολεμίους τὴν ἐλευθερίαν ἕξομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νικήσαντες",
+     "τούς",
+     "πολεμίους",
+     "τήν",
+     "ἐλευθερίαν",
+     "ἕξομεν"
+    ]
+   },
+   {
+    "prompt": "The prudent woman will feel shame before the elders.",
+    "answer": "ἡ σώφρων γυνὴ τοὺς πρεσβυτέρους αἰσχυνεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "σώφρων",
+     "γυνή",
+     "τούς",
+     "πρεσβυτέρους",
+     "αἰσχυνεῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t14",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "What shall we do about those who have fled the city?",
+    "answer": "τί ποιήσομεν περὶ τῶν ἐκ τῆς πόλεως φυγόντων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ποιήσομεν",
+     "περί",
+     "τῶν",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "φυγόντων"
+    ]
+   },
+   {
+    "prompt": "Whom shall we choose as general for so great a war?",
+    "answer": "τίνα στρατηγὸν αἱρησόμεθα ἐπὶ τοσοῦτον πόλεμον;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "στρατηγόν",
+     "αἱρησόμεθα",
+     "ἐπί",
+     "τοσοῦτον",
+     "πόλεμον"
+    ]
+   },
+   {
+    "prompt": "Shall we trust the words of the messengers or not?",
+    "answer": "πότερον τοῖς τῶν ἀγγέλων λόγοις πιστεύσομεν ἢ οὔ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τοῖς",
+     "τῶν",
+     "ἀγγέλων",
+     "λόγοις",
+     "πιστεύσομεν",
+     "ἤ",
+     "οὔ"
+    ]
+   },
+   {
+    "prompt": "Where shall we flee, now that our allies have betrayed us?",
+    "answer": "ποῖ καταφευξόμεθα, τῶν συμμάχων ἡμᾶς προδόντων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποῖ",
+     "καταφευξόμεθα",
+     "τῶν",
+     "συμμάχων",
+     "ἡμᾶς",
+     "προδόντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t15",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "You will lead the soldiers to the river and wait there.",
+    "answer": "ἄξεις τοὺς στρατιώτας πρὸς τὸν ποταμὸν καὶ ἐκεῖ μενεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄξεις",
+     "τούς",
+     "στρατιώτας",
+     "πρός",
+     "τόν",
+     "ποταμόν",
+     "καί",
+     "ἐκεῖ",
+     "μενεῖς"
+    ]
+   },
+   {
+    "prompt": "You yourselves will judge which of the two speaks the truth.",
+    "answer": "αὐτοὶ κρινεῖτε πότερος τὰ ἀληθῆ λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοί",
+     "κρινεῖτε",
+     "πότερος",
+     "τά",
+     "ἀληθῆ",
+     "λέγει"
+    ]
+   },
+   {
+    "prompt": "You will report these things to the council tomorrow.",
+    "answer": "ταῦτα τῇ βουλῇ αὔριον ἀγγελεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "τῇ",
+     "βουλῇ",
+     "αὔριον",
+     "ἀγγελεῖς"
+    ]
+   },
+   {
+    "prompt": "If you are prudent, you will not neglect the sacrifices to the gods.",
+    "answer": "ἐὰν σωφρονῆτε, τῶν τοῖς θεοῖς θυσιῶν οὐκ ἀμελήσετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "σωφρονῆτε",
+     "τῶν",
+     "τοῖς",
+     "θεοῖς",
+     "θυσιῶν",
+     "οὐκ",
+     "ἀμελήσετε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t16",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "Will you not defend the city in so great a danger?",
+    "answer": "οὐκ ἀμυνεῖτε τῇ πόλει ἐν τοσούτῳ κινδύνῳ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀμυνεῖτε",
+     "τῇ",
+     "πόλει",
+     "ἐν",
+     "τοσούτῳ",
+     "κινδύνῳ"
+    ]
+   },
+   {
+    "prompt": "Will we not at once set sail against the land of the enemy?",
+    "answer": "οὐκ εὐθὺς ἐπὶ τὴν τῶν πολεμίων γῆν πλευσόμεθα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "εὐθύς",
+     "ἐπί",
+     "τήν",
+     "τῶν",
+     "πολεμίων",
+     "γῆν",
+     "πλευσόμεθα"
+    ]
+   },
+   {
+    "prompt": "You will never persuade the people by such words.",
+    "answer": "οὐ μὴ πείσεις ποτὲ τὸν δῆμον τοιούτοις ῥήμασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μή",
+     "πείσεις",
+     "ποτέ",
+     "τόν",
+     "δῆμον",
+     "τοιούτοις",
+     "ῥήμασιν"
+    ]
+   },
+   {
+    "prompt": "Shall I not free myself at last from these troubles?",
+    "answer": "οὐκ ἀπαλλάξομαι ἤδη τῶνδε τῶν κακῶν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀπαλλάξομαι",
+     "ἤδη",
+     "τῶνδε",
+     "τῶν",
+     "κακῶν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t17",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "See that you show yourselves brave men in the battle.",
+    "answer": "ὅπως ἄνδρες ἀγαθοὶ ἔσεσθε ἐν τῇ μάχῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "ἄνδρες",
+     "ἀγαθοί",
+     "ἔσεσθε",
+     "ἐν",
+     "τῇ",
+     "μάχῃ"
+    ]
+   },
+   {
+    "prompt": "Take care that you say nothing shameful in the assembly.",
+    "answer": "ὅπως μηδὲν αἰσχρὸν ἐν τῇ ἐκκλησίᾳ ἐρεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "μηδέν",
+     "αἰσχρόν",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἐρεῖς"
+    ]
+   },
+   {
+    "prompt": "See that you do not betray the trust of your comrades.",
+    "answer": "ὅπως μὴ προδώσεις τὴν τῶν ἑταίρων πίστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "μή",
+     "προδώσεις",
+     "τήν",
+     "τῶν",
+     "ἑταίρων",
+     "πίστιν"
+    ]
+   },
+   {
+    "prompt": "Mind that we do not appear cowardly to our allies.",
+    "answer": "ὅπως μὴ δειλοὶ τοῖς συμμάχοις φανούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "μή",
+     "δειλοί",
+     "τοῖς",
+     "συμμάχοις",
+     "φανούμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t18",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "He who deliberates well will rarely fail.",
+    "answer": "ὁ εὖ βουλευόμενος ὀλιγάκις σφαλήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "εὖ",
+     "βουλευόμενος",
+     "ὀλιγάκις",
+     "σφαλήσεται"
+    ]
+   },
+   {
+    "prompt": "We shall find that good men prefer virtue to wealth.",
+    "answer": "εὑρήσομεν τοὺς ἀγαθοὺς τὴν ἀρετὴν πρὸ τοῦ πλούτου αἱρουμένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὑρήσομεν",
+     "τούς",
+     "ἀγαθούς",
+     "τήν",
+     "ἀρετήν",
+     "πρό",
+     "τοῦ",
+     "πλούτου",
+     "αἱρουμένους"
+    ]
+   },
+   {
+    "prompt": "I shall wish to learn from you the cause of the war.",
+    "answer": "βουλήσομαι παρὰ σοῦ τὴν τοῦ πολέμου αἰτίαν μαθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλήσομαι",
+     "παρά",
+     "σοῦ",
+     "τήν",
+     "τοῦ",
+     "πολέμου",
+     "αἰτίαν",
+     "μαθεῖν"
+    ]
+   },
+   {
+    "prompt": "I shall beg the general that the prisoners suffer no harm.",
+    "answer": "παραιτήσομαι τὸν στρατηγὸν μηδὲν κακὸν τοὺς αἰχμαλώτους παθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παραιτήσομαι",
+     "τόν",
+     "στρατηγόν",
+     "μηδέν",
+     "κακόν",
+     "τούς",
+     "αἰχμαλώτους",
+     "παθεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t19",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "Those who honor virtue will receive great honor from the citizens.",
+    "answer": "οἱ τὴν ἀρετὴν τιμῶντες μεγάλην τιμὴν παρὰ τῶν πολιτῶν λήψονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τὴν",
+     "ἀρετὴν",
+     "τιμῶντες",
+     "μεγάλην",
+     "τιμὴν",
+     "παρὰ",
+     "τῶν",
+     "πολιτῶν",
+     "λήψονται"
+    ]
+   },
+   {
+    "prompt": "When the enemy have departed, we shall fortify the city with all speed.",
+    "answer": "τῶν πολεμίων ἀπελθόντων, τὴν πόλιν πάσῃ σπουδῇ τειχιοῦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἀπελθόντων",
+     "τὴν",
+     "πόλιν",
+     "πάσῃ",
+     "σπουδῇ",
+     "τειχιοῦμεν"
+    ]
+   },
+   {
+    "prompt": "The philosopher will teach the studious young men to seek wisdom.",
+    "answer": "ὁ φιλόσοφος τοὺς φιλομαθεῖς νεανίας διδάξει τὴν σοφίαν ζητεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φιλόσοφος",
+     "τοὺς",
+     "φιλομαθεῖς",
+     "νεανίας",
+     "διδάξει",
+     "τὴν",
+     "σοφίαν",
+     "ζητεῖν"
+    ]
+   },
+   {
+    "prompt": "I shall keep the treaty which I made with the allies.",
+    "answer": "τὰς σπονδὰς ἃς πρὸς τοὺς συμμάχους ἐποιησάμην φυλάξω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰς",
+     "σπονδὰς",
+     "ἃς",
+     "πρὸς",
+     "τοὺς",
+     "συμμάχους",
+     "ἐποιησάμην",
+     "φυλάξω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t20",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "What shall we say to the jurors about the man who betrayed the city?",
+    "answer": "τί ἐροῦμεν τοῖς δικασταῖς περὶ τοῦ τὴν πόλιν προδόντος;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "ἐροῦμεν",
+     "τοῖς",
+     "δικασταῖς",
+     "περὶ",
+     "τοῦ",
+     "τὴν",
+     "πόλιν",
+     "προδόντος"
+    ]
+   },
+   {
+    "prompt": "Shall we flee, or shall we remain and fight the barbarians?",
+    "answer": "φευξόμεθα, ἢ μενοῦμεν καὶ τοῖς βαρβάροις μαχούμεθα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φευξόμεθα",
+     "ἢ",
+     "μενοῦμεν",
+     "καὶ",
+     "τοῖς",
+     "βαρβάροις",
+     "μαχούμεθα"
+    ]
+   },
+   {
+    "prompt": "Whom shall we choose as general to lead us?",
+    "answer": "τίνα στρατηγὸν αἱρησόμεθα ὃς ἡμῶν ἡγήσεται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "στρατηγὸν",
+     "αἱρησόμεθα",
+     "ὃς",
+     "ἡμῶν",
+     "ἡγήσεται"
+    ]
+   },
+   {
+    "prompt": "Shall we keep silent, or shall we tell the king the truth?",
+    "answer": "σιγήσομεν, ἢ τῷ βασιλεῖ τὸ ἀληθὲς φράσομεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σιγήσομεν",
+     "ἢ",
+     "τῷ",
+     "βασιλεῖ",
+     "τὸ",
+     "ἀληθὲς",
+     "φράσομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t21",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "You will take these letters and carry them to the camp.",
+    "answer": "ταύτας τὰς ἐπιστολὰς λήψῃ καὶ πρὸς τὸ στρατόπεδον οἴσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταύτας",
+     "τὰς",
+     "ἐπιστολὰς",
+     "λήψῃ",
+     "καὶ",
+     "πρὸς",
+     "τὸ",
+     "στρατόπεδον",
+     "οἴσεις"
+    ]
+   },
+   {
+    "prompt": "Will you not cease from your anger and obey your friends?",
+    "answer": "οὐ παύσῃ τῆς ὀργῆς καὶ τοῖς φίλοις πείσῃ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "παύσῃ",
+     "τῆς",
+     "ὀργῆς",
+     "καὶ",
+     "τοῖς",
+     "φίλοις",
+     "πείσῃ"
+    ]
+   },
+   {
+    "prompt": "Will you not defend your fatherland now that the enemy are approaching?",
+    "answer": "οὐκ ἀμυνεῖς τῇ πατρίδι τῶν πολεμίων προσιόντων;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀμυνεῖς",
+     "τῇ",
+     "πατρίδι",
+     "τῶν",
+     "πολεμίων",
+     "προσιόντων"
+    ]
+   },
+   {
+    "prompt": "You yourself will judge which of us is telling the truth.",
+    "answer": "αὐτὸς γνώσει ὁπότερος ἡμῶν ἀληθῆ λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτὸς",
+     "γνώσει",
+     "ὁπότερος",
+     "ἡμῶν",
+     "ἀληθῆ",
+     "λέγει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t22",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "See to it, then, that you become worthy of your ancestors.",
+    "answer": "ὅπως τοίνυν ἄξιοι τῶν προγόνων γενήσεσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "τοίνυν",
+     "ἄξιοι",
+     "τῶν",
+     "προγόνων",
+     "γενήσεσθε"
+    ]
+   },
+   {
+    "prompt": "Take care that you do not betray the trust of your comrades.",
+    "answer": "ὅπως μὴ τὴν τῶν ἑταίρων πίστιν προδώσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "μὴ",
+     "τὴν",
+     "τῶν",
+     "ἑταίρων",
+     "πίστιν",
+     "προδώσεις"
+    ]
+   },
+   {
+    "prompt": "Mind that we do not seem to fear the dangers.",
+    "answer": "ὅπως μὴ δόξομεν τοὺς κινδύνους φοβεῖσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "μὴ",
+     "δόξομεν",
+     "τοὺς",
+     "κινδύνους",
+     "φοβεῖσθαι"
+    ]
+   },
+   {
+    "prompt": "See, then, that you speak no falsehood in the assembly.",
+    "answer": "ὅπως τοίνυν μηδὲν ψεῦδος ἐν τῇ ἐκκλησίᾳ ἐρεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅπως",
+     "τοίνυν",
+     "μηδὲν",
+     "ψεῦδος",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἐρεῖς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t23",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "It will profit you more to keep silent than to lie.",
+    "answer": "λυσιτελήσει σοι σιγᾶν μᾶλλον ἢ ψεύδεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λυσιτελήσει",
+     "σοι",
+     "σιγᾶν",
+     "μᾶλλον",
+     "ἢ",
+     "ψεύδεσθαι"
+    ]
+   },
+   {
+    "prompt": "A grateful man will never forget those who have benefited him.",
+    "answer": "ὁ χάριν εἰδὼς οὐδέποτε τῶν εὖ ποιησάντων ἐπιλήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χάριν",
+     "εἰδὼς",
+     "οὐδέποτε",
+     "τῶν",
+     "εὖ",
+     "ποιησάντων",
+     "ἐπιλήσεται"
+    ]
+   },
+   {
+    "prompt": "Whoever trusts a flatterer will quickly repent.",
+    "answer": "ὅστις κόλακι πιστεύσει, ταχέως μεταμελήσει αὐτῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "κόλακι",
+     "πιστεύσει",
+     "ταχέως",
+     "μεταμελήσει",
+     "αὐτῷ"
+    ]
+   },
+   {
+    "prompt": "The gods will give victory to those who fight for their country.",
+    "answer": "οἱ θεοὶ νίκην δώσουσι τοῖς ὑπὲρ τῆς πατρίδος μαχομένοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "θεοὶ",
+     "νίκην",
+     "δώσουσι",
+     "τοῖς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "μαχομένοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-1910-future-indicative-t24",
+  "sectionId": "sm-1910-future-indicative",
+  "questions": [
+   {
+    "prompt": "I shall beg you to release the prisoners who have done no wrong.",
+    "answer": "δεήσομαι ὑμῶν τοὺς οὐδὲν ἀδικήσαντας αἰχμαλώτους λῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεήσομαι",
+     "ὑμῶν",
+     "τοὺς",
+     "οὐδὲν",
+     "ἀδικήσαντας",
+     "αἰχμαλώτους",
+     "λῦσαι"
+    ]
+   },
+   {
+    "prompt": "I shall wish to hear the account of what happened in the battle.",
+    "answer": "βουλήσομαι τὴν διήγησιν τῶν ἐν τῇ μάχῃ γενομένων ἀκοῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "βουλήσομαι",
+     "τὴν",
+     "διήγησιν",
+     "τῶν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "γενομένων",
+     "ἀκοῦσαι"
+    ]
+   },
+   {
+    "prompt": "The unjust will never overcome the just.",
+    "answer": "οἱ ἄδικοι οὐ μή ποτε τοὺς δικαίους νικήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἄδικοι",
+     "οὐ",
+     "μή",
+     "ποτε",
+     "τοὺς",
+     "δικαίους",
+     "νικήσουσιν"
+    ]
+   },
+   {
+    "prompt": "You shall not deceive me again with such tricks.",
+    "answer": "οὐ μὴ πάλιν με τοιαύταις τέχναις ἐξαπατήσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μὴ",
+     "πάλιν",
+     "με",
+     "τοιαύταις",
+     "τέχναις",
+     "ἐξαπατήσεις"
+    ]
+   }
+  ]
  }
 ]
