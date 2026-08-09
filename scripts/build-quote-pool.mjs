@@ -37,7 +37,7 @@
  */
 
 import { execFileSync } from "node:child_process";
-import { writeFileSync, existsSync, appendFileSync, readFileSync, rmSync } from "node:fs";
+import { writeFileSync, existsSync, appendFileSync, readFileSync, rmSync, mkdirSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { createHash } from "node:crypto";
 import { join } from "node:path";
@@ -186,7 +186,9 @@ function callClaude(prompt) {
   const s = text.indexOf("{");
   const e = text.lastIndexOf("}");
   if (s < 0 || e < 0) throw new Error("no JSON in result");
-  return JSON.parse(text.slice(s, e + 1)).items ?? [];
+  // The raw text comes back too. A batch can parse cleanly and still file
+  // nothing, and when that happens the answer is in what was actually said.
+  return { items: JSON.parse(text.slice(s, e + 1)).items ?? [], text };
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -207,6 +209,10 @@ const topicIds = new Set(grammar.map((t) => t.id));
  * still reject. Only the start index says what was actually asked.
  */
 const partialPath = join(dir, "content", ".quotes.partial.jsonl");
+// Where to keep the raw answer of a batch that filed nothing, for the times
+// that has to be explained rather than guessed at. Off unless asked for.
+const debugDir = at("--debug-dir");
+if (debugDir) mkdirSync(debugDir, { recursive: true });
 const fingerprint = createHash("sha256")
   .update(pool.map((q) => q.text).join("\n"))
   .digest("hex")
@@ -230,6 +236,9 @@ if (existsSync(partialPath)) {
     own.close();
     process.exit(2);
   }
+  // Keyed by start so a batch asked twice — which re-asking makes possible —
+  // is read as its latest answer rather than both of them.
+  const answered = new Map();
   for (const line of lines.slice(1)) {
     // A process killed mid-append leaves a torn last line. It is the only line
     // that can be torn, so stopping at the first unreadable one costs exactly
@@ -241,12 +250,29 @@ if (existsSync(partialPath)) {
       console.log("  (last record was written torn; that batch is re-asked)");
       break;
     }
-    done.add(record.start);
-    out.push(...record.items);
+    answered.set(record.start, record.items);
+  }
+
+  // A batch that filed nothing is asked again rather than counted as answered.
+  // The filters reject one sentence at a time and so produce counts in between;
+  // only a whole answer arriving in a shape the reader does not understand
+  // zeroes a batch outright. Retiring 25 quotations on the strength of one
+  // malformed reply is the loss this file exists to prevent, so `done` means
+  // "answered usefully". `--keep-empty` restores the more literal reading.
+  const keepEmpty = argv.includes("--keep-empty");
+  let empty = 0;
+  for (const [start, items] of answered) {
+    if (items.length > 0 || keepEmpty) {
+      done.add(start);
+      out.push(...items);
+    } else {
+      empty++;
+    }
   }
   console.log(
     `resuming: ${done.size} of ${Math.ceil(pool.length / BATCH)} batches already answered, ` +
-      `${out.length} quotations filed.`,
+      `${out.length} quotations filed.` +
+      (empty ? `\n  ${empty} batch(es) filed nothing and are being asked again.` : ""),
   );
 } else {
   appendFileSync(
@@ -272,9 +298,10 @@ for (let start = 0; start < pool.length; start += BATCH) {
     .join("\n");
 
   let items = null;
+  let raw = "";
   for (let attempt = 0; attempt <= BACKOFF.length; attempt++) {
     try {
-      items = callClaude(`File these ${batch.length} quotations:\n\n${body}`);
+      ({ items, text: raw } = callClaude(`File these ${batch.length} quotations:\n\n${body}`));
       break;
     } catch (err) {
       if (attempt === BACKOFF.length) throw err;
@@ -284,11 +311,26 @@ for (let start = 0; start < pool.length; start += BATCH) {
   }
 
   const kept = [];
+  // Which check dropped what. A batch that files nothing at all is not the
+  // filters working — they reject one sentence at a time, so they produce
+  // numbers in between. An all-or-nothing batch means the whole answer came
+  // back in a shape this loop does not read, and this says which shape.
+  const dropped = { unknownId: 0, badTopic: 0, noPrompt: 0, unattested: 0 };
   for (const item of items ?? []) {
     const quote = batch[Number(item.id) - 1];
-    if (!quote) continue;
+    if (!quote) {
+      dropped.unknownId++;
+      continue;
+    }
     const topics = (item.topics ?? []).filter((t) => topicIds.has(t)).slice(0, 2);
-    if (!topics.length || !item.prompt) continue;
+    if (!topics.length) {
+      dropped.badTopic++;
+      continue;
+    }
+    if (!item.prompt) {
+      dropped.noPrompt++;
+      continue;
+    }
 
     // The chosen marks are applied through `applyChoices`, which ignores
     // anything not in the candidate list. A model cannot spell a new word here.
@@ -300,7 +342,10 @@ for (let start = 0; start < pool.length; start += BATCH) {
     for (const token of tokens) {
       if (classify(token, tokens[0]).verdict !== "ok") clean = false;
     }
-    if (!clean) continue;
+    if (!clean) {
+      dropped.unattested++;
+      continue;
+    }
 
     filed++;
     kept.push({ text, topics, prompt: String(item.prompt).trim(), source: quote.source });
@@ -309,8 +354,18 @@ for (let start = 0; start < pool.length; start += BATCH) {
   // between a run that dies costing twenty minutes and one costing two hours.
   appendFileSync(partialPath, JSON.stringify({ start, items: kept }) + "\n");
   out.push(...kept);
+  if (debugDir && kept.length === 0) {
+    // Kept only for the batches that need explaining, because that is the only
+    // time anyone reads them.
+    writeFileSync(join(debugDir, `batch-${start}.raw.txt`), raw);
+  }
+  const why = Object.entries(dropped)
+    .filter(([, n]) => n > 0)
+    .map(([k, n]) => `${k} ${n}`)
+    .join(", ");
   console.log(
-    `  ${Math.min(start + BATCH, pool.length)}/${pool.length} — ${filed} filed`,
+    `  ${Math.min(start + BATCH, pool.length)}/${pool.length} — ${filed} filed` +
+      `  (+${kept.length} of ${items?.length ?? 0} answered${why ? `; dropped ${why}` : ""})`,
   );
 }
 
