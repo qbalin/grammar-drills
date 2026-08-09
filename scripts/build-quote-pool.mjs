@@ -197,6 +197,46 @@ const BACKOFF = [30, 60, 120, 300, 600];
 const topicIds = new Set(grammar.map((t) => t.id));
 
 /**
+ * The syllabus id an answer meant, from the shorter forms it sometimes uses.
+ *
+ * Asked for ids out of the list it was given, a reply sometimes answers in a
+ * convention of its own — `bn-218` for `bn-218-instrumental-uses-of-the-ablative`
+ * — and, being one reply, does it for every item at once. That is what made
+ * whole batches file nothing: 25 perfectly good answers dropped over the shape
+ * of one field, with the Latin, the marks and the translations all correct.
+ *
+ * Accepting the short form is the right repair rather than insisting harder in
+ * the prompt, because it cannot go wrong in the direction that matters: every
+ * branch below resolves to an id that is already in `grammar` or to nothing at
+ * all, and an ambiguous short form resolves to nothing rather than to a guess.
+ * A topic cannot be invented here, which is the same rule the marks follow.
+ */
+const topicRanges = grammar
+  .map((t) => {
+    const m = String(t.ref).match(/^(\d+)(?:\s*-\s*(\d+))?/);
+    return m ? { id: t.id, lo: Number(m[1]), hi: Number(m[2] ?? m[1]) } : null;
+  })
+  .filter(Boolean);
+
+function resolveTopic(value) {
+  const v = String(value ?? "").trim();
+  if (!v) return null;
+  if (topicIds.has(v)) return v;
+  // `bn-218` against `bn-218-instrumental-uses-of-the-ablative`, but only when
+  // exactly one topic starts that way.
+  const prefixed = grammar.filter((t) => t.id.startsWith(`${v}-`));
+  if (prefixed.length === 1) return prefixed[0].id;
+  // A bare section number, against the range each topic covers.
+  const m = v.match(/(\d+)/);
+  if (m) {
+    const n = Number(m[1]);
+    const inRange = topicRanges.filter((t) => n >= t.lo && n <= t.hi);
+    if (inRange.length === 1) return inRange[0].id;
+  }
+  return null;
+}
+
+/**
  * The batches already answered, kept so a run that dies is worth what it spent.
  *
  * The gather above is deterministic — same dump, same dictionary, same order —
@@ -322,7 +362,9 @@ for (let start = 0; start < pool.length; start += BATCH) {
       dropped.unknownId++;
       continue;
     }
-    const topics = (item.topics ?? []).filter((t) => topicIds.has(t)).slice(0, 2);
+    const topics = [
+      ...new Set((item.topics ?? []).map(resolveTopic).filter(Boolean)),
+    ].slice(0, 2);
     if (!topics.length) {
       dropped.badTopic++;
       continue;
