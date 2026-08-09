@@ -28,6 +28,11 @@ import {
   importProgress,
   pickProgressFile,
 } from "./storage/transfer.js";
+import {
+  readStorage,
+  requestPersistence,
+  type StorageReport,
+} from "./storage/quota.js";
 import { Sheet, Toast, ago, cycleEmphasis } from "./ui.js";
 import { Answering, Graded, Practised, Rest, VocabReview } from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
@@ -189,6 +194,14 @@ export function App({ content, session, storage }: Props) {
   const [paradigms, setParadigms] = useState<ParadigmIndex>();
   const [paradigmsLoading, setParadigmsLoading] = useState(false);
   const [paradigmsFailed, setParadigmsFailed] = useState(false);
+  // What the browser says about the space this app is holding, for the panel in
+  // Settings. Read when that sheet opens rather than kept live: it is a figure
+  // to look at when you go looking, and asking on every render would be a
+  // storage call per keystroke.
+  const [space, setSpace] = useState<StorageReport>({
+    persisted: false,
+    usage: null,
+  });
   const [showVocab, setShowVocab] = useState(false); // the question's word list
   const [showTrail, setShowTrail] = useState(false); // this topic's earlier answers
   const [syncState, setSyncState] = useState<SyncState>(storage.currentState());
@@ -623,25 +636,42 @@ export function App({ content, session, storage }: Props) {
 
   // --- vocabulary ----------------------------------------------------------
 
-  /** Fetch the dictionary if this device has not got it yet. */
-  const ensureDictionary = useCallback(() => {
-    if (dictionaryReady()) return;
+  /**
+   * Fetch the dictionary if this device has not got it yet, and say whether it
+   * is now in hand.
+   *
+   * The answer is what callers with something to do next need — the prefetch
+   * decides whether to go on to the paradigms by it, and Settings says whether
+   * the download worked — so the failure is reported here rather than thrown:
+   * every caller wants to carry on, and none of them wants a rejection.
+   *
+   * `bump` is left out of the dependencies deliberately. It is rebuilt every
+   * render, and naming it would rebuild this — and so the prefetch effect
+   * below — every render too. All it does is set a counter, and any version of
+   * it does that.
+   */
+  const ensureDictionary = useCallback(async (): Promise<boolean> => {
+    if (dictionaryReady()) return true;
     setDictLoading(true);
-    void loadDictionary()
+    try {
+      await loadDictionary();
+      setDictFailed(false);
+      // The moment a dictionary is in memory is the only moment cards saved
+      // against an older one can be brought up to its citations.
+      if (session.refreshCitations() > 0) {
+        save();
+        bump();
+      }
+      return true;
+    } catch {
       // Remembered rather than only flashed: with no dictionary a lookup would
       // come back empty, and "no match" would blame the student's spelling for
       // a download that never happened.
-      .then(() => {
-        setDictFailed(false);
-        // The moment a dictionary is in memory is the only moment cards saved
-        // against an older one can be brought up to its citations.
-        if (session.refreshCitations() > 0) {
-          save();
-          bump();
-        }
-      })
-      .catch(() => setDictFailed(true))
-      .finally(() => setDictLoading(false));
+      setDictFailed(true);
+      return false;
+    } finally {
+      setDictLoading(false);
+    }
   }, [save, session]);
 
   /**
@@ -666,13 +696,52 @@ export function App({ content, session, storage }: Props) {
       .finally(() => setParadigmsLoading(false));
   }, [paradigms]);
 
+  /**
+   * Fetch everything this device has not got, as soon as it is up.
+   *
+   * The dictionary and the paradigms used to be fetched by the gesture that
+   * first wanted them, which meant a student's first hold on a word bought them
+   * a spinner instead of a headword. The bytes are the same bytes either way —
+   * the only thing "on demand" ever saved was space on a device belonging to
+   * someone who had already chosen to install a language tutor. So they are
+   * fetched here instead, and the crib's spinner is left in place for the
+   * narrow window where a student is faster than the download.
+   *
+   * In order rather than at once: the dictionary is what nearly every gesture
+   * wants and the paradigms are what one of them does, so the common case does
+   * not queue behind the rare one on a phone's connection. And through
+   * `ensureDictionary`, not `loadDictionary`, so that a prefetch and a tap
+   * share one path — the citation refresh and the failed-state flag are that
+   * function's business and would otherwise have to be remembered twice. It
+   * does mean both indexes are built at boot rather than on first use, which
+   * costs a moment of a phone's CPU to save every later gesture its wait.
+   *
+   * A failure stops the chain: it is nearly always the whole network being
+   * absent, and there is nothing to learn from failing to fetch the larger file
+   * as well. `online` brings both back. Running twice is safe — the loader
+   * hands back its in-flight promise and both `ensure` functions return early
+   * once their file is in memory — which is what makes the retry, and React's
+   * double-mounted effects in development, harmless.
+   */
+  const prefetchContent = useCallback(() => {
+    void ensureDictionary().then((got) => {
+      if (got) ensureParadigms();
+    });
+  }, [ensureDictionary, ensureParadigms]);
+
+  useEffect(() => {
+    prefetchContent();
+    window.addEventListener("online", prefetchContent);
+    return () => window.removeEventListener("online", prefetchContent);
+  }, [prefetchContent]);
+
   const openVocab = (
     prefill?: string,
     auto = false,
     context?: NewVocabContext,
   ) => {
     setOverlay({ t: "vocab-input", prefill, auto, context });
-    ensureDictionary();
+    void ensureDictionary();
   };
 
   /**
@@ -701,12 +770,13 @@ export function App({ content, session, storage }: Props) {
   /**
    * Show or hide the words behind the question.
    *
-   * The dictionary is several megabytes and is fetched only when something asks
-   * for it — an explicit open, never a prefetch, because most questions are
-   * answered without ever wanting this.
+   * `ensureDictionary` is still called on the way open, even though the launch
+   * has already asked for it: a student can be quicker than the download, and
+   * on that one occasion this is what puts the crib's spinner up rather than
+   * a word list that reports every word unknown.
    */
   const toggleVocab = () => {
-    if (!showVocab) ensureDictionary();
+    if (!showVocab) void ensureDictionary();
     setShowVocab((open) => !open);
   };
 
@@ -786,8 +856,9 @@ export function App({ content, session, storage }: Props) {
     // would come back empty, so the first double-click on a fresh device
     // would quietly do nothing — which is indistinguishable from the gesture
     // not existing. Wait for the download this one time instead.
-    ensureDictionary();
-    void loadDictionary().then(open).catch(() => {});
+    void ensureDictionary().then((got) => {
+      if (got) open();
+    });
   };
 
   /**
@@ -982,22 +1053,56 @@ export function App({ content, session, storage }: Props) {
     }
   };
 
-  const cacheDictionary = () => {
-    setDictLoading(true);
-    void loadDictionary()
-      .then(() => {
-        setDictFailed(false);
-        if (session.refreshCitations() > 0) {
-          save();
-          bump();
-        }
-        flash("Dictionary saved for offline use.");
-      })
-      .catch(() => {
-        setDictFailed(true);
-        flash("Could not fetch the dictionary — are you offline?");
-      })
-      .finally(() => setDictLoading(false));
+  // --- space on this device -------------------------------------------------
+
+  const refreshSpace = useCallback(() => {
+    void readStorage().then(setSpace);
+  }, []);
+
+  // Read when Settings opens, and again when it is on screen and a download
+  // finishes, so the figure is never one the student has watched go stale.
+  useEffect(() => {
+    if (overlay?.t === "settings") refreshSpace();
+  }, [overlay?.t, refreshSpace]);
+
+  /**
+   * Ask to be exempt from eviction, in answer to a press.
+   *
+   * The same request goes out silently at launch where the browser grants it
+   * without asking. This is the other branch: a browser that wants a permission
+   * dialog gets to raise one here, where a student has just pressed the button
+   * that means *keep this*.
+   */
+  const askPersistence = () => {
+    void requestPersistence().then((granted) => {
+      refreshSpace();
+      flash(
+        granted
+          ? "This device will keep the download."
+          : "Your browser would not promise to keep it.",
+      );
+    });
+  };
+
+  /**
+   * The offline download, asked for by hand.
+   *
+   * It is no longer the ordinary way to the dictionary — the launch already
+   * fetches it. What is left is the launch that happened on a train: this is
+   * the way back for a student who watched that fail and has since found a
+   * signal, which is why the button says so only when it has something to
+   * retry.
+   */
+  const cacheContent = () => {
+    void ensureDictionary().then((got) => {
+      if (got) ensureParadigms();
+      flash(
+        got
+          ? "Saved to this device for offline use."
+          : "Could not fetch it — are you offline?",
+      );
+      refreshSpace();
+    });
   };
 
   // --- render --------------------------------------------------------------
@@ -1590,8 +1695,11 @@ export function App({ content, session, storage }: Props) {
               )
           }
           dictionaryReady={dictionaryReady()}
+          dictionaryFailed={dictFailed}
           caching={dictLoading}
-          onCacheDictionary={cacheDictionary}
+          onCacheDictionary={cacheContent}
+          space={space}
+          onPersist={askPersistence}
           vocabCount={stats.vocab}
           onOpenVocab={() =>
             setOverlay({ t: "vocab-list", back: { t: "settings" } })

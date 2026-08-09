@@ -11,9 +11,10 @@ import { Sentence, Sheet, Spinner, ago, until } from "../ui.js";
  * `manus, manūs (f): hand`. Producing that citation by hand is the tedious part
  * of keeping a vocabulary list, and the reason most people stop.
  *
- * The dictionary is a few megabytes and is not downloaded until this sheet is
- * first opened, so the first use waits on it. `dictionarySize()` is what the
- * student is actually shown; it is measured at build time, per pack.
+ * The dictionary is a few megabytes, fetched as soon as the app is up rather
+ * than when this sheet first opens — so `status` is nearly always `ready` by
+ * the time anyone gets here, and the waiting states below are for the student
+ * who was quicker than the download.
  */
 export function VocabSheet({
   status,

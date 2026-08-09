@@ -5,6 +5,7 @@ import { Content, Session } from "@lang-tutor/core";
 import { loadContent } from "./content-loader.js";
 import { profile } from "./pack.js";
 import { SyncingStorage } from "./storage/sync.js";
+import { persistIfSilent } from "./storage/quota.js";
 import { App } from "./app.js";
 import { Spinner, Toast } from "./ui.js";
 import "./styles.css";
@@ -56,6 +57,14 @@ function Boot() {
     const update = registerSW({
       onNeedRefresh: () => setUpdateReady(() => () => void update(true)),
     });
+  }, []);
+
+  // Ask to be exempt from eviction, before anything is downloaded that would be
+  // worth losing. Nothing waits on the answer and nothing is shown either way:
+  // this is silent where it is granted and a no-op where it is not, and Settings
+  // both reports the outcome and offers the ask a student can make by hand.
+  useEffect(() => {
+    void persistIfSilent();
   }, []);
 
   return (

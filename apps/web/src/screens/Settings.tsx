@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Sheet } from "../ui.js";
-import { dictionarySize } from "../dictionary-size.js";
+import { dictionarySize, offlineSize } from "../dictionary-size.js";
 import { profile } from "../pack.js";
+import { formatBytes, type StorageReport } from "../storage/quota.js";
 import type { SyncConfig, SyncState } from "../storage/sync.js";
 
 function stateLine(state: SyncState): string {
@@ -33,8 +34,11 @@ export function SettingsSheet({
   onImport,
   onPull,
   dictionaryReady,
+  dictionaryFailed,
   onCacheDictionary,
   caching,
+  space,
+  onPersist,
   vocabCount,
   onOpenVocab,
   keepContext,
@@ -49,8 +53,13 @@ export function SettingsSheet({
   onImport: () => void;
   onPull: () => void;
   dictionaryReady: boolean;
+  /** A download this device tried and could not finish. */
+  dictionaryFailed: boolean;
   onCacheDictionary: () => void;
   caching: boolean;
+  /** What the browser will say about the space this app holds, if asked. */
+  space: StorageReport;
+  onPersist: () => void;
   vocabCount: number;
   onOpenVocab: () => void;
   /** Whether a recorded word keeps the sentence it was met in. */
@@ -124,23 +133,60 @@ export function SettingsSheet({
 
       <div className="section-title">Offline</div>
       <p className="field__hint" style={{ marginTop: 0 }}>
-        The grammar and every test are already stored on this device. The
-        dictionary, which turns a word you met into its headword, is another{" "}
-        {dictionarySize()} and is only fetched when you first record a word.
+        {dictionaryReady
+          ? `Everything is on this device — the grammar, every test, and the
+             dictionary that turns a word you met into its headword. About
+             ${offlineSize()} came down the wire, and nothing here needs a
+             connection now.`
+          : caching
+            ? `Fetching the dictionary — ${dictionarySize()}, once. It happens by
+               itself when the app opens, so you need not wait on this screen.`
+            : `The grammar and every test are on this device. The dictionary is
+               another ${dictionarySize()} and is fetched at launch; this device
+               has not managed it yet.`}
       </p>
-      <div className="actions">
-        <button
-          className="btn"
-          onClick={onCacheDictionary}
-          disabled={dictionaryReady || caching}
-        >
-          {dictionaryReady
-            ? "Dictionary saved ✓"
-            : caching
+      {/* Only when there is something to do. The download is no longer
+          something a student has to think of — the button is here for the one
+          that failed, and a green tick beside a thing nobody asked for is just
+          another control to read past. */}
+      {!dictionaryReady && (
+        <div className="actions">
+          <button className="btn" onClick={onCacheDictionary} disabled={caching}>
+            {caching
               ? "Downloading…"
-              : "Save dictionary for offline"}
-        </button>
-      </div>
+              : dictionaryFailed
+                ? "Try the download again"
+                : "Download it now"}
+          </button>
+        </div>
+      )}
+
+      <div className="section-title">Space on this device</div>
+      <p className="field__hint" style={{ marginTop: 0 }}>
+        {space.usage
+          ? `${formatBytes(space.usage.usage)} in use, out of the
+             ${formatBytes(space.usage.quota)} this browser allows the app.`
+          : "This browser will not say how much room the app is using."}
+      </p>
+      {space.persisted ? (
+        <p className="field__hint">
+          It is kept: this browser has promised not to clear it to make room.
+          Clearing the site’s data yourself still does.
+        </p>
+      ) : (
+        <>
+          <p className="field__hint">
+            Nothing is promised. A browser short of room may clear all of it —
+            and that is the lessons too, not only the dictionary, so the app
+            would not open at all until it next had a connection.
+          </p>
+          <div className="actions">
+            <button className="btn" onClick={onPersist}>
+              Ask to keep it
+            </button>
+          </div>
+        </>
+      )}
 
       <div className="section-title">Sync with GitHub (optional)</div>
       <p className="field__hint" style={{ marginTop: 0 }}>

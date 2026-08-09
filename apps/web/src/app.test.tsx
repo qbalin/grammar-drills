@@ -4,6 +4,7 @@ import {
   fireEvent,
   render,
   screen,
+  waitFor,
   within,
 } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
@@ -18,11 +19,12 @@ import {
 import { testProfile } from "@lang-tutor/core/testing";
 import { profile } from "./pack.js";
 import { App } from "./app.js";
+import { loadDictionary, loadParadigms } from "./content-loader.js";
 import { SyncingStorage } from "./storage/sync.js";
 
-// The app fetches the dictionary on demand. These tests supply it up front so
-// the vocabulary flow can be driven without a network — except where the point
-// is what happens when the fetch cannot happen at all.
+// The app fetches the dictionary as soon as it is up. These tests supply it
+// already in hand so the vocabulary flow can be driven without a network —
+// except where the point is what happens when the fetch cannot happen at all.
 const dictionary = { available: true };
 // The paradigms are a second, later fetch — the file `build-paradigms.mjs`
 // writes, small enough to spell out: a header of interned tag signatures, then
@@ -913,6 +915,57 @@ describe("vocabulary", () => {
 
     await user.click(screen.getByRole("button", { name: /Good/ }));
     expect(session.vocabCard("v-rex")?.fsrs.reps).toBe(1);
+  });
+});
+
+/**
+ * Everything is fetched when the app opens, not when a gesture first wants it.
+ * The bytes are identical either way; what "on demand" bought was a spinner in
+ * front of a student's first hold on a word, on a device that had been sitting
+ * idle on wifi since it was installed.
+ */
+describe("fetching the content", () => {
+  beforeEach(() => {
+    vi.mocked(loadDictionary).mockClear();
+    vi.mocked(loadParadigms).mockClear();
+  });
+
+  it("asks for the dictionary at launch, with nothing having wanted it", async () => {
+    // A device that has not got it: nothing is typed, held or opened here, so
+    // the only thing that can have sent this request is the launch.
+    dictionary.available = false;
+    mount();
+
+    await waitFor(() => expect(loadDictionary).toHaveBeenCalled());
+  });
+
+  it("goes on to the tables once the dictionary is in hand", async () => {
+    mount();
+
+    // After the dictionary rather than beside it: the larger file and the rarer
+    // gesture, which the crib must not queue behind.
+    await waitFor(() => expect(loadParadigms).toHaveBeenCalled());
+  });
+
+  it("does not fetch the tables when the dictionary could not be got", async () => {
+    dictionary.available = false;
+    mount();
+
+    await waitFor(() => expect(loadDictionary).toHaveBeenCalled());
+    // Nothing is learned by failing at the bigger file too — the connection is
+    // what is missing, and the retry below asks for both.
+    expect(loadParadigms).not.toHaveBeenCalled();
+  });
+
+  it("asks again when the device comes back online", async () => {
+    dictionary.available = false;
+    mount();
+    await waitFor(() => expect(loadDictionary).toHaveBeenCalledTimes(1));
+
+    dictionary.available = true;
+    fireEvent(window, new Event("online"));
+
+    await waitFor(() => expect(loadParadigms).toHaveBeenCalled());
   });
 });
 

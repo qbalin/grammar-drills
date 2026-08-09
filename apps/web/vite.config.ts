@@ -33,27 +33,40 @@ const contentVersion = (() => {
 })();
 
 /**
- * What the dictionary actually weighs, for the copy that warns about it.
+ * What the content actually weighs, for the copy that tells a student so.
  *
- * Three screens tell the student how big the one-time download is, and all
- * three said "900 KB" long after it stopped being true — the number was written
- * by hand and the dictionary grew to hold every word rather than only the ones
- * a corpus attested. It also differs per pack, and there is one build per pack.
- * So it is measured here instead, off the two files the app will fetch.
+ * The screens naming the download used to name a figure written by hand, which
+ * said "900 KB" long after it stopped being true — the dictionary grew to hold
+ * every word rather than only the ones a corpus attested. It also differs per
+ * pack, and there is one build per pack. So it is measured here instead, off
+ * the files themselves.
  */
-const dictionaryBytes = (() => {
+const contentBytes = (names: string[]) => {
   const dir = new URL("./public/content/", import.meta.url);
-  return ["lemmas.json.gz", "forms.txt.gz"].reduce((total, name) => {
+  return names.reduce((total, name) => {
     const path = fileURLToPath(new URL(name, dir));
     return total + (existsSync(path) ? statSync(path).size : 0);
   }, 0);
-})();
+};
+
+/** The two files `loadDictionary()` fetches. */
+const dictionaryBytes = contentBytes(["lemmas.json.gz", "forms.txt.gz"]);
+
+/** Everything a device ends up holding, which is now everything shipped. */
+const offlineBytes = contentBytes([
+  "grammar.json.gz",
+  "tests.json.gz",
+  "lemmas.json.gz",
+  "forms.txt.gz",
+  "paradigms.txt.gz",
+]);
 
 export default defineConfig({
   base,
   define: {
     __CONTENT_VERSION__: JSON.stringify(contentVersion),
     __DICTIONARY_BYTES__: JSON.stringify(dictionaryBytes),
+    __OFFLINE_BYTES__: JSON.stringify(offlineBytes),
   },
   resolve: {
     alias: {
@@ -81,10 +94,12 @@ export default defineConfig({
       // them twice puts them in the precache manifest twice.
       workbox: {
         // The study loop must work on a plane, so the syllabus and every test
-        // are precached (~300 KB gzipped). The dictionary is deliberately not:
-        // it is several times that size and only the vocabulary feature needs
-        // it, so it is fetched on demand and kept (see runtimeCaching below).
-        // The paradigms are larger again and rarer again, and go the same way.
+        // are precached — a megabyte or two gzipped, depending on the pack.
+        // The dictionary and the paradigms are not, because precaching is what
+        // the *install* has to wait for and those are several megabytes more.
+        // They are runtime-cached instead (see below), and the app asks for
+        // them itself once it is up — so a device still ends up holding all of
+        // it, without a first launch that stalls behind the largest file.
         globPatterns: [
           "**/*.{js,css,html,svg,png,woff2}",
           "content/grammar.json.gz",

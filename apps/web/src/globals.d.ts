@@ -18,3 +18,13 @@ declare const __CONTENT_VERSION__: string;
  * rather than this directly.
  */
 declare const __DICTIONARY_BYTES__: number;
+
+/**
+ * The size in bytes of every content file a device ends up holding — the
+ * grammar, the tests, the dictionary and the paradigms — measured the same way.
+ *
+ * All of it is fetched now, the precache at install and the rest as soon as the
+ * app is up, so this is the honest answer to "how much room does this take".
+ * Use `offlineSize()` rather than this directly.
+ */
+declare const __OFFLINE_BYTES__: number;

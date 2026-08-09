@@ -83,11 +83,13 @@ async function fetchJson<T>(name: string): Promise<T> {
 }
 
 /**
- * The study bundle: the syllabus and every test, ~300 KB gzipped. Precached by
- * the service worker, so a fresh launch offline gets the whole loop.
+ * The study bundle: the syllabus and every test. Precached by the service
+ * worker, so a fresh launch offline gets the whole loop.
  *
- * The dictionary is deliberately not here — it is three times the size and only
- * the vocabulary feature needs it. `loadDictionary` fetches it on demand.
+ * The dictionary is not here, because this is what the app waits on before it
+ * can show anything and the dictionary is several times the size. It is fetched
+ * straight afterwards instead — see `App`'s prefetch — so the only thing being
+ * bought by the split is a first screen that arrives before the largest file.
  */
 export async function loadContent(): Promise<Content> {
   const [grammar, tests] = await Promise.all([
@@ -140,10 +142,11 @@ let paradigmsPending: Promise<ParadigmIndex> | undefined;
 /**
  * Fetch the paradigms, at most once per page.
  *
- * Separate from the dictionary, and later: it is bigger than the dictionary's
- * two files together, and only a student who double-taps a word ever wants it.
- * Loading it beside the crib would make the common gesture pay for the rare
- * one.
+ * Separate from the dictionary, and after it: it is bigger than the
+ * dictionary's two files together, and only a student who double-taps a word
+ * ever wants it. Both are fetched at launch now, so what the split still buys
+ * is the order — the file every gesture wants does not queue behind the file
+ * one gesture wants.
  */
 export function loadParadigms(): Promise<ParadigmIndex> {
   if (paradigms) return Promise.resolve(paradigms);
