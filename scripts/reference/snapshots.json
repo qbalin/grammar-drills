@@ -1,0 +1,319 @@
+{
+  "tag": "reference-2026-08-09",
+  "packs": {
+    "latin": {
+      "asset": "latin-reference.tar.zst",
+      "bytes": 71724902,
+      "sha256": "73e1b24902706814993a32d1f8c7e201c59acecdacba7d1eb54e768a7c6ea25d",
+      "members": [
+        {
+          "name": "dictionary.db",
+          "bytes": 474275840,
+          "sha256": "964d068eebe1a8bf1dc279efa640f3b49e8ec53bd0f8c35f5ea86bcc0bd3e538"
+        },
+        {
+          "name": "frequencies.db",
+          "bytes": 1183744,
+          "sha256": "4fd4ca1ccab896852d16bac5bf8f2fe41b3ca4110a917391ddad2584f2ac03b1"
+        },
+        {
+          "name": "texts/apicius-de-re-coquinaria.txt",
+          "bytes": 275632,
+          "sha256": "57c830b0f829c799d8a657f6cee768c146f87f5cffe906e7e4f674fda6a22798"
+        },
+        {
+          "name": "texts/augustine-confessiones.txt",
+          "bytes": 988285,
+          "sha256": "f1efbafd856b786cb99536f8c6894f5243f31e35ae0411410b1dd2dc4649529b"
+        },
+        {
+          "name": "texts/caesar-de-bello-gallico.txt",
+          "bytes": 169899,
+          "sha256": "84ac8411841a4d8f5f4a49b6a2cd1f466917c6a5af72916d5e0b2b1ecb2f659c"
+        },
+        {
+          "name": "texts/catullus-carmina.txt",
+          "bytes": 136034,
+          "sha256": "7e0aba7d4c82d025786d88c49068245e4de67984a1303de2af3e1d8c157a808d"
+        },
+        {
+          "name": "texts/cicero-orationes.txt",
+          "bytes": 112390,
+          "sha256": "d35576eee076806a236f7f9edf8c1a07462a4102084e025076f6227d8847afdb"
+        },
+        {
+          "name": "texts/ovid-opera.txt",
+          "bytes": 732463,
+          "sha256": "57a6ac1fc622bf480f84704f134d19ac0a3df97da2792b70aa9408c1e24aef64"
+        },
+        {
+          "name": "texts/seneca-opera.txt",
+          "bytes": 1176472,
+          "sha256": "e81a274241b054606cc9eb333ab7506e617158a4e00a5adbb4477b7c4016a4e5"
+        },
+        {
+          "name": "PROVENANCE.txt",
+          "bytes": 1889,
+          "sha256": "a3725cc2dcf6d85c533feb52491d3f1ed25b1074e56da781edfea4a69e5341db"
+        }
+      ]
+    },
+    "ancient-greek": {
+      "asset": "ancient-greek-reference.tar.zst",
+      "bytes": 45174125,
+      "sha256": "498efb938057d15be9a9992e081610410a9b17d3ad64fd5d78627365caa06571",
+      "members": [
+        {
+          "name": "LICENSE.GPLv3",
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "name": "dictionary.db",
+          "bytes": 257630208,
+          "sha256": "262f4695251a855ff8e7a073bc4a0ecbcefb4b4e0a4a7121f66cbc8f4d53bff5"
+        },
+        {
+          "name": "frequencies.db",
+          "bytes": 1724416,
+          "sha256": "48207673740ea98c16970eb66d6dc5d41e754d05118bede4454a0b4b78a1c2a5"
+        },
+        {
+          "name": "texts/herodotus-histories.txt",
+          "bytes": 2288603,
+          "sha256": "bb58e2e8dde23a50275ec5f5191407c5aaa813fbc49eb75e1382084f31e6a31d"
+        },
+        {
+          "name": "texts/homer-iliad.txt",
+          "bytes": 1343170,
+          "sha256": "50b6075199b56b7f2811f25b4f0dda82edec6ee89fcc23c4f303fc8418fd0410"
+        },
+        {
+          "name": "texts/homer-odyssey.txt",
+          "bytes": 1043261,
+          "sha256": "3689b57bd7a03e4e53a3ecc86b2902ec73ba039c479a3d6f5222e3f14c33c97b"
+        },
+        {
+          "name": "texts/lysias-oration-01.txt",
+          "bytes": 29673,
+          "sha256": "95d4ec6e22b02aee94b9c5de4cb5449643e13e9285e4e74c9271d6f396b6ea6e"
+        },
+        {
+          "name": "texts/lysias-oration-02.txt",
+          "bytes": 52884,
+          "sha256": "b477c638af6a1c98b10a331bdbc8d3c246fa6aaf4f45787d038ef7b48f22d195"
+        },
+        {
+          "name": "texts/lysias-oration-03.txt",
+          "bytes": 27708,
+          "sha256": "c16863bfc6bdc8e4699d946de6caa128a9f5b109075883391679b40470c70440"
+        },
+        {
+          "name": "texts/lysias-oration-04.txt",
+          "bytes": 11717,
+          "sha256": "ec55910971b38465772c9ff1a8ae6a435ef04f9000748469ab89b9d2d5a731af"
+        },
+        {
+          "name": "texts/lysias-oration-05.txt",
+          "bytes": 3484,
+          "sha256": "84e7e67317b06c8a3574af7190f6abc7427d756ed41fc9555b544fff55a0e4f4"
+        },
+        {
+          "name": "texts/lysias-oration-06.txt",
+          "bytes": 32739,
+          "sha256": "5870de26d72684cfa6d0818c085287d102171f93512f06e9eef51b4dc9656198"
+        },
+        {
+          "name": "texts/lysias-oration-07.txt",
+          "bytes": 25091,
+          "sha256": "c946537de9d381914bf4a4f588e577493299dbf00b125f6f72490366f828988b"
+        },
+        {
+          "name": "texts/lysias-oration-08.txt",
+          "bytes": 12943,
+          "sha256": "f10c7a07248b73c6c0ea60b2940774b310567841d2e74dc165a9a8667444419c"
+        },
+        {
+          "name": "texts/lysias-oration-09.txt",
+          "bytes": 11510,
+          "sha256": "0341ba407a3d0bb88aaa32f70e95a520e475908c8aefb21c304ac7eefb171478"
+        },
+        {
+          "name": "texts/lysias-oration-10.txt",
+          "bytes": 17965,
+          "sha256": "d8e7f6e6a78f950d077a4337bdc8585e7ebbf856f7cd9130d07d0d03c09e8db1"
+        },
+        {
+          "name": "texts/lysias-oration-11.txt",
+          "bytes": 6526,
+          "sha256": "729db928e5a4134deb88681a7c7a1dcad328d7699e3d7e4025289e50574ba4b2"
+        },
+        {
+          "name": "texts/lysias-oration-12.txt",
+          "bytes": 62114,
+          "sha256": "6c6a446d91a56671d155f0dbfc5ca2e02c12ae4e7c66988778f552517c0c20c9"
+        },
+        {
+          "name": "texts/lysias-oration-13.txt",
+          "bytes": 61550,
+          "sha256": "ca72c1c7b86a1824e84e576f502d8fda427d1c2f8a5707dfdab680e361066a02"
+        },
+        {
+          "name": "texts/lysias-oration-14.txt",
+          "bytes": 31089,
+          "sha256": "d823a41211719b672db0f61372eb66460714c58055e0988cd5799ef796d62224"
+        },
+        {
+          "name": "texts/lysias-oration-15.txt",
+          "bytes": 7671,
+          "sha256": "1aacd18de446b52fa69b40f75a019508f556519c389484ba276b6a48cc4c1bab"
+        },
+        {
+          "name": "texts/lysias-oration-16.txt",
+          "bytes": 14914,
+          "sha256": "83cebdfebc5e2eacff083691a28d1fc52e79442351c3224384738692f184b3f9"
+        },
+        {
+          "name": "texts/lysias-oration-17.txt",
+          "bytes": 7142,
+          "sha256": "3bb091a4324cad1eb63fa45be959703754e37f76bb0e3be4e36389a01310ae75"
+        },
+        {
+          "name": "texts/lysias-oration-18.txt",
+          "bytes": 17350,
+          "sha256": "b898ce15e4db1e641a6237f4e04b2535a5b41b7fa2a1e1e7d1679b834398071d"
+        },
+        {
+          "name": "texts/lysias-oration-19.txt",
+          "bytes": 38656,
+          "sha256": "d0ace1ab1ea9c1d3d4a5cc5157023c18f33c4d5f3a1727450e1c23cf2acfaf53"
+        },
+        {
+          "name": "texts/lysias-oration-20.txt",
+          "bytes": 23086,
+          "sha256": "e2c58ae5ef6f52e7017591fda85d5b08e5aa4f8c8400d5868f458c7a7ada0949"
+        },
+        {
+          "name": "texts/lysias-oration-21.txt",
+          "bytes": 16539,
+          "sha256": "cf424dfa495e0d51e3693c2efd617492969fbfa410fe06353ef6ed396e9bf958"
+        },
+        {
+          "name": "texts/lysias-oration-22.txt",
+          "bytes": 14639,
+          "sha256": "3e7ad4eaf5a14a5423e3fb2dbf16fb759ba9bf245399008f9d3dae6029817ff9"
+        },
+        {
+          "name": "texts/lysias-oration-23.txt",
+          "bytes": 9792,
+          "sha256": "f102d95a9f876201345667947fca1242dd2059ef8127f49c5403add3351620cb"
+        },
+        {
+          "name": "texts/lysias-oration-24.txt",
+          "bytes": 17433,
+          "sha256": "b8f2b8eeb37d3110c31a67477ba3b7972402b6a6bd83c8c7b4e6b50445981f05"
+        },
+        {
+          "name": "texts/lysias-oration-25.txt",
+          "bytes": 26387,
+          "sha256": "76e969002e5ed6bd7f59fbc893ca2f5829f9dc55cf5cb749c33435b09616117b"
+        },
+        {
+          "name": "texts/lysias-oration-26.txt",
+          "bytes": 17491,
+          "sha256": "974243a6b8f7d111872fb7b26899b0ca3539091a2958d1b44ebf325871459b21"
+        },
+        {
+          "name": "texts/lysias-oration-27.txt",
+          "bytes": 9670,
+          "sha256": "2c5a7dede8991e0723c4ad7d9de76a02088c15d6f5f9f48a77d35fa46a271c07"
+        },
+        {
+          "name": "texts/lysias-oration-28.txt",
+          "bytes": 11945,
+          "sha256": "8072847cbd5aafcf0d26cbbf38d57a30925106175c85b3404446bdc27dfdaa0f"
+        },
+        {
+          "name": "texts/lysias-oration-29.txt",
+          "bytes": 8643,
+          "sha256": "887cba5fadae8aeba44e9fea8285be60f8d8355aebde797e1854cafeeb82a626"
+        },
+        {
+          "name": "texts/lysias-oration-30.txt",
+          "bytes": 24081,
+          "sha256": "29361ebcd3d86eba6b79de2efc7f075bc19e867bdfea98e01bd3a3be8f98e147"
+        },
+        {
+          "name": "texts/lysias-oration-31.txt",
+          "bytes": 22263,
+          "sha256": "d7dcb50772663993bec0e3d7f11075cfdc6cba78161f597b5e272a3469c3422a"
+        },
+        {
+          "name": "texts/lysias-oration-32.txt",
+          "bytes": 21895,
+          "sha256": "35c295c38f79e8e02a8e9258c915251580a9cb4aa31835029f42f42e363f25d9"
+        },
+        {
+          "name": "texts/lysias-oration-33.txt",
+          "bytes": 5509,
+          "sha256": "3023e0900fcafd8bf39df6d5d9b245cb45540b98986d24dbc616feeff158ced9"
+        },
+        {
+          "name": "texts/lysias-oration-34.txt",
+          "bytes": 7299,
+          "sha256": "b672899a8c4167b5c899788d899270983da8295de915ab5ab9bad13406e64caa"
+        },
+        {
+          "name": "texts/plato-apology.txt",
+          "bytes": 103031,
+          "sha256": "e2635c03de39cff919526476316bdbdcd1901452113d9bc188bd4f4cfc74c08e"
+        },
+        {
+          "name": "texts/plato-crito.txt",
+          "bytes": 48052,
+          "sha256": "d58e1d83f1700978392c0b34deb806306866f61aed59351b3034ea3bf6818d36"
+        },
+        {
+          "name": "texts/plato-phaedo.txt",
+          "bytes": 255810,
+          "sha256": "18d9dda6e8c47f02e7ad0a13d4fb9012b3aed1e796c2e01a3e91f955c55edf24"
+        },
+        {
+          "name": "texts/plato-republic.txt",
+          "bytes": 1026575,
+          "sha256": "9eb178f1552145690ae4e94a1d599fb11b47d460782bb6c0abdf51b74709168f"
+        },
+        {
+          "name": "texts/plato-symposium.txt",
+          "bytes": 203058,
+          "sha256": "2eee752c2a57b343583763fdacc2085ca97a1598333fb5e76592fe6fcc88e4be"
+        },
+        {
+          "name": "texts/thucydides-histories.txt",
+          "bytes": 1899872,
+          "sha256": "7d2052e02b788676bd81a842d2394adeb6c913197821abd97190aed2b6ffe41f"
+        },
+        {
+          "name": "texts/xenophon-anabasis.txt",
+          "bytes": 705685,
+          "sha256": "9326888b65c2f778d66b3f2daf1f032ff61a602788a6bb0be5bd3143bea4f1ab"
+        },
+        {
+          "name": "texts/xenophon-hellenica.txt",
+          "bytes": 841271,
+          "sha256": "1e5622634b4ace08caa64227f3adf29232175e9eb80a4b4409fb440529b5f6cb"
+        },
+        {
+          "name": "texts/xenophon-memorabilia.txt",
+          "bytes": 430311,
+          "sha256": "aa64fd116dba835a015ac25f75a25330e3f2091db01ef8a1c1a3c2f47f885bf7"
+        },
+        {
+          "name": "PROVENANCE.txt",
+          "bytes": 6542,
+          "sha256": "3b97ecbfaec2d39f599c33c2b5315deca98429644380af33f35ffef369a5a0cb"
+        }
+      ]
+    }
+  }
+}

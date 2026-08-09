@@ -20,6 +20,10 @@ languages/*/content/gen-stats.json.lock
 # them — reference/frequency.tsv.gz — is committed, and is what the gates read.
 languages/*/reference/*.db
 languages/*/reference/texts/
+# Dropped beside them by `snapshot.mjs restore`: what it unpacked, and the
+# licence the archive is conveyed under.
+languages/*/reference/PROVENANCE.txt
+languages/*/reference/LICENSE.*
 # Downloads the ingest scripts cache rather than re-fetch.
 .cache/
 

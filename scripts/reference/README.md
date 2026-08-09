@@ -15,7 +15,76 @@ You need them for exactly two things:
   which cannot be recovered from the shipped map because its keys are folded.
 
 They are large — Latin's dictionary is 474 MB, Greek's 257 MB — so they are
-built locally and never committed. `.gitignore` keeps them out.
+built locally and never committed. `.gitignore` keeps them out. What a second
+machine does instead is fetch them: see "Snapshots" below.
+
+## Snapshots
+
+A built reference is not really reproducible, which is the whole reason this
+section exists. kaikki.org regenerates its dumps, so ingesting again next year
+gives a *different* `dictionary.db` — and the packs' committed `content/` was
+generated out of this one. Two of Latin's seven corpus texts (Ovid, Seneca)
+have no recoverable edition at all. So the databases are archived as they
+stand and fetched rather than rebuilt.
+
+```bash
+node scripts/reference/snapshot.mjs restore --pack languages/latin
+```
+
+That is the whole of it on a new machine. It downloads one asset off the
+GitHub release named in `scripts/reference/snapshots.json`, refuses to unpack
+anything whose SHA-256 does not match what that file records, and leaves
+`languages/latin/reference/` looking as it did on the machine that built it.
+Plain `node` — no `pnpm install` first, and no `zstd` binary, because Node
+decompresses it itself. Add `--force` to overwrite a reference already there,
+`--from <file>` to unpack one you fetched by hand.
+
+Then prove it is the right one before building anything on it, with two checks
+that already exist:
+
+```bash
+node --import tsx scripts/make-reference.mjs --pack languages/latin \
+  --ref languages/latin/reference --check          # reproduces frequency.tsv.gz
+node --import tsx scripts/validate-pack.mjs --pack languages/latin \
+  --ref languages/latin/reference --require-ref --profile-only   # gate D2
+```
+
+Making a snapshot is the other half, and needs `zstd` installed:
+
+```bash
+node scripts/reference/snapshot.mjs pack --pack languages/latin
+node scripts/reference/snapshot.mjs pack --pack languages/ancient-greek
+```
+
+Each writes one `.tar.zst` under `.cache/snapshots/out/` — Latin 72 MB, Greek
+45 MB, from 700 MB on disk — records its checksums in `snapshots.json`, and
+prints the two `gh release` commands that publish it. It does not run them.
+Uploading to a public repo is redistribution, and the databases are derived
+works: CC BY-SA 4.0 for the Wiktionary-derived packs, GPLv3 for Greek's
+Eulexis-derived one. Each archive carries a `PROVENANCE.txt` saying so, along
+with the ingest's own `meta` record of what it read; where a pointer is not
+enough, the licence text travels inside the archive too — Greek's carries
+`LICENSE.GPLv3`, out of `licences/` here, and `pack` refuses to build the
+archive if that file is missing.
+
+The databases inside are `VACUUM INTO` copies and nothing else — the FTS index
+and the three form indexes travel with them, because a snapshot's value is
+that it *is* the file rather than a rebuild that ought to come out the same.
+
+Two rules keep this honest:
+
+- **A later snapshot is a new tag.** Releases an older commit's `snapshots.json`
+  points at are never rewritten, so checking out that commit still gets the
+  reference its content was built from.
+- **Nothing may depend on it.** No gate, no report, no build step learns that
+  the release exists; they answer from each pack's committed content, which is
+  the arrangement `scripts/lib/reference.mjs` exists to keep. A snapshot only
+  ever saves you the rebuild.
+
+`snapshot.mjs verify --pack languages/<id>` hashes what is on disk against the
+manifest. Expect it to fail on the machine that *built* the reference: a
+VACUUMed copy is not byte-identical to a database that has been written to
+since. It is there to check a restore.
 
 ## The scripts
 
@@ -26,6 +95,12 @@ Python 3, standard library only; no `pip install`.
 | `ingest_dictionary.py` | `dictionary.db` from a kaikki.org Wiktionary extract |
 | `ingest_dictionary_greek.py` | `dictionary.db` for Ancient Greek, from Eulexis |
 | `ingest_frequency.py` | `frequencies.db` from a corpus you supply |
+
+And one that is not Python, because it only moves files around:
+
+| script | does |
+|---|---|
+| `snapshot.mjs` | archives a built reference to a release, and restores it |
 
 Everything lands in `languages/<pack>/reference/`, which is the directory shape
 `--ref` expects.

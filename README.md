@@ -568,7 +568,10 @@ All three content files are already built, and everything here runs against
 what the repo already holds. `grammar.json` rebuilds from a source in this repo
 (`languages/latin/grammar/parse.py`, above). `lemmas.json.gz` is the one file
 that needs the reference dictionary — 474 MB of Wiktionary, built locally by
-`scripts/reference/` and never committed — because it is made out of it.
+`scripts/reference/` and never committed — because it is made out of it. A
+machine that needs it fetches the one this content was built from rather than
+ingesting a newer dump: `snapshot.mjs restore --pack languages/latin`, and
+[`scripts/reference/README.md`](scripts/reference/README.md) for why.
 
 The per-topic tests are produced by `scripts/gen-tests.mjs`, which drives Claude
 Opus via the authenticated `claude -p` CLI, seeds each prompt with vocabulary
