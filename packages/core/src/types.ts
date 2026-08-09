@@ -425,6 +425,23 @@ export interface Progress {
    * reload. A standing preference hides nothing.
    */
   keepContext?: boolean;
+  /**
+   * Whether exploring serves only questions whose answer somebody wrote.
+   *
+   * Absent means no, which is what makes everything the default: a pack ships
+   * quoted and generated questions together, and both are served until a
+   * student says otherwise. Only a student who turned this on carries the field.
+   *
+   * It binds *exploring* — the walk through the book and a practice run — and
+   * deliberately not review. A card that came due came due on the question that
+   * built it, and dropping it from the rotation because of a standing
+   * preference would quietly stop the schedule from being a schedule. Turning
+   * this on narrows what is met next, not what has already been met.
+   *
+   * Beside `keepContext` and for its reason: how you want to be taught is a
+   * fact about your deck, not about the machine you happen to be holding.
+   */
+  quotedOnly?: boolean;
   updatedAt: string;
 }
 

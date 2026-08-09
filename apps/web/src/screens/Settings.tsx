@@ -43,6 +43,8 @@ export function SettingsSheet({
   onOpenVocab,
   keepContext,
   onKeepContext,
+  quotedOnly,
+  onQuotedOnly,
   onReset,
   onClose,
 }: {
@@ -65,6 +67,8 @@ export function SettingsSheet({
   /** Whether a recorded word keeps the sentence it was met in. */
   keepContext: boolean;
   onKeepContext: () => void;
+  quotedOnly: boolean;
+  onQuotedOnly: () => void;
   onReset: () => void;
   onClose: () => void;
 }) {
@@ -115,6 +119,20 @@ export function SettingsSheet({
         it on the back — the line you met the word in is usually the reason it
         stuck. Turning this off stops new ones; the sentences already saved stay
         where they are.
+      </p>
+
+      <label className="field field--check">
+        <input type="checkbox" checked={quotedOnly} onChange={onQuotedOnly} />
+        <span className="field__label">Explore only quoted sentences</span>
+      </label>
+      <p className="field__hint">
+        Most questions here were written for this app; some quote a classical
+        author, and those say who beneath the answer. Turning this on keeps
+        exploring — the walk through the book, and practice on a topic — to the
+        quoted ones. Reviews are unaffected: a card that comes due comes back on
+        the question that built it. Topics with nothing quoted are stepped over
+        rather than marked learned, so they are still waiting if you turn this
+        off again.
       </p>
 
       <div className="section-title">Your progress</div>

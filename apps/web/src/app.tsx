@@ -357,15 +357,29 @@ export function App({ content, session, storage }: Props) {
         return;
       }
 
+      // The preference binds the two errands that go looking for something new
+      // — the walk through the book and a practice run — and not the two that
+      // are called for by a card that came due. A review is the schedule
+      // speaking, and it is owed the question it was built from.
+      const quotedOnly =
+        session.quotedOnly() &&
+        (action.kind === "new-topic" || action.kind === "drill");
       // A practice run serves out of its own set; everything else rotates.
       const served =
         action.kind === "drill"
           ? session.servePractice(action.sectionId)
-          : session.serveTest(action.sectionId);
+          : session.serveTest(action.sectionId, quotedOnly);
       if (!served) {
         // A topic with no tests cannot be studied; pass it so the loop moves on
-        // rather than offering it again forever.
-        session.gradeTopic(action.sectionId, 3);
+        // rather than offering it again forever. But a topic with tests the
+        // preference filtered out is a different thing: nothing was shown, so
+        // nothing was learned, and grading it would put a topic the student has
+        // never seen into the review rotation as though they had passed it.
+        // Step over it and leave the card alone, so turning the preference off
+        // finds the topic still waiting.
+        if (!(quotedOnly && session.hasTests(action.sectionId))) {
+          session.gradeTopic(action.sectionId, 3);
+        }
         if (action.kind === "new-topic") session.advanceCursor();
         advance(asked);
         return;
@@ -973,6 +987,12 @@ export function App({ content, session, storage }: Props) {
 
   const toggleKeepContext = () => {
     session.setKeepContext(!session.keepsContext());
+    save();
+    bump();
+  };
+
+  const toggleQuotedOnly = () => {
+    session.setQuotedOnly(!session.quotedOnly());
     save();
     bump();
   };
@@ -1706,6 +1726,8 @@ export function App({ content, session, storage }: Props) {
           }
           keepContext={session.keepsContext()}
           onKeepContext={toggleKeepContext}
+          quotedOnly={session.quotedOnly()}
+          onQuotedOnly={toggleQuotedOnly}
           onReset={() => {
             storage.clearLocal();
             // Erasing and then reloading is two steps, and the draft kept on

@@ -1383,3 +1383,77 @@ describe("Session progress: a round of questions is one review", () => {
     expect(s.progress().topicCards.n1!.reps).toBe(1);
   });
 });
+
+describe("exploring only what somebody wrote", () => {
+  const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+  /**
+   * `q1` holds two quoted tests and two generated ones, `q2` only generated.
+   * Two quoted tests are the minimum that can show the rotation reset staying
+   * inside the filter, which is the bug this preference is one line away from.
+   */
+  const quoted: ContentData = {
+    ...fixture,
+    grammar: [
+      { id: "q1", ref: "1", title: "First", family: "nouns", text: "...", order: 1 },
+      { id: "q2", ref: "2", title: "Second", family: "nouns", text: "...", order: 2 },
+    ],
+    tests: {
+      q1: [
+        { id: "q1-t1", sectionId: "q1", questions: [{ prompt: "a?", answer: "a", kind: "parse", vocab: [] }] },
+        { id: "q1-t2", sectionId: "q1", questions: [{ prompt: "b?", answer: "b", kind: "parse", vocab: [] }] },
+        { id: "q1-q1", sectionId: "q1", questions: [{ prompt: "c?", answer: "c", kind: "parse", vocab: [], source: cite }] },
+        { id: "q1-q2", sectionId: "q1", questions: [{ prompt: "d?", answer: "d", kind: "parse", vocab: [], source: cite }] },
+      ],
+      q2: [
+        { id: "q2-t1", sectionId: "q2", questions: [{ prompt: "e?", answer: "e", kind: "parse", vocab: [] }] },
+      ],
+    },
+  };
+  const session = () => new Session(new Content(quoted, testProfile));
+
+  it("serves everything until a student says otherwise", () => {
+    const s = session();
+    expect(s.quotedOnly()).toBe(false);
+    expect(s.progress().quotedOnly).toBeUndefined();
+    const served = new Set<string>();
+    for (let i = 0; i < 8; i++) served.add(s.serveTest("q1")!.id);
+    expect(served.size).toBe(4);
+  });
+
+  it("serves only quoted tests when asked, however long the rotation runs", () => {
+    const s = session();
+    s.setQuotedOnly(true);
+    // Well past the two quoted tests, so the seen-rotation resets several
+    // times. A filter applied after that reset would leak a generated test
+    // here, and the count below is what would catch it.
+    const served = new Set<string>();
+    for (let i = 0; i < 20; i++) served.add(s.serveTest("q1", true)!.id);
+    expect([...served].sort()).toEqual(["q1-q1", "q1-q2"]);
+  });
+
+  it("leaves review alone: a due card comes back on the question that built it", () => {
+    const s = session();
+    s.setQuotedOnly(true);
+    // Review calls without the flag, and must still see the whole bank.
+    const served = new Set<string>();
+    for (let i = 0; i < 12; i++) served.add(s.serveTest("q1")!.id);
+    expect(served.size).toBe(4);
+  });
+
+  it("says nothing rather than something generated, and owns up to having tests", () => {
+    const s = session();
+    s.setQuotedOnly(true);
+    expect(s.serveTest("q2", true)).toBeUndefined();
+    // The caller tells "nothing quoted here" from "nothing here" by this, and
+    // grades only the second — a topic filtered away was never seen.
+    expect(s.hasTests("q2")).toBe(true);
+  });
+
+  it("keeps the preference through an undo", () => {
+    const s = session();
+    const before = s.snapshot();
+    s.setQuotedOnly(true);
+    s.restore(before);
+    expect(s.quotedOnly()).toBe(true);
+  });
+});

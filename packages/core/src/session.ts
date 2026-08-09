@@ -32,6 +32,21 @@ import {
 const SEEN_HISTORY = 10; // remember this many recently-served tests per section
 
 /**
+ * A test whose every answer is quoted from somebody.
+ *
+ * `every` rather than `some`, and it is not pedantry: the packs generate their
+ * quoted questions into tests of their own, so nothing mixed ships today and
+ * either spelling would pass. What `every` buys is that the promise survives
+ * content that does mix — the preference is about what a student is *asked*,
+ * one question at a time, and a test three-quarters quoted still asks the
+ * quarter that is not.
+ *
+ * An empty test is not quoted; it is empty.
+ */
+const isQuoted = (t: Test): boolean =>
+  t.questions.length > 0 && t.questions.every((q) => q.source);
+
+/**
  * How many sentences one word may keep.
  *
  * The commonest words are in hundreds of questions, and without a ceiling one
@@ -375,7 +390,7 @@ export class Session {
     const seen = this.p.seenTests[sectionId] ?? [];
     const pick = this.content
       .testsFor(sectionId)
-      .filter((t) => left(t) > 0)
+      .filter((t) => (!this.quotedOnly() || isQuoted(t)) && left(t) > 0)
       // `seenTests` is in serve order, so a test's *last* mention is when it
       // was last served — `indexOf` would rank a test served both first and
       // most recently as the oldest. A never-served test (-1) leads.
@@ -413,7 +428,14 @@ export class Session {
     const trail = this.p.attempts[sectionId] ?? [];
     const before = new Set(trail.filter((a) => a.at < since).map((a) => a.prompt));
     const served = new Set(trail.filter((a) => a.at >= since).map((a) => a.prompt));
-    const bank = this.content.questionsFor(sectionId).map((q) => q.question.prompt);
+    // The run's set is what the run can actually serve. Counting the whole bank
+    // while `servePractice` hands out only quoted tests would leave a drill
+    // reporting questions left that never arrive, and `next` would keep calling
+    // it a drill for ever.
+    const bank = this.content
+      .questionsFor(sectionId)
+      .filter((q) => !this.quotedOnly() || q.question.source)
+      .map((q) => q.question.prompt);
     const fresh = bank.filter((prompt) => !before.has(prompt));
     return { set: new Set(fresh.length > 0 ? fresh : bank), served };
   }
@@ -466,8 +488,14 @@ export class Session {
    * Choose a test for a section, preferring ones not served recently so the
    * same topic feels fresh across sessions. Records it as seen.
    */
-  serveTest(sectionId: string): Test | undefined {
-    const tests = this.content.testsFor(sectionId);
+  serveTest(sectionId: string, quotedOnly = false): Test | undefined {
+    // Narrowed before the rotation below, never inside it. That reset falls
+    // back to the whole of `tests`, so a filter applied after it would hand
+    // back a generated test the moment a section's quoted ones had all been
+    // seen — which is the one thing the preference promises cannot happen.
+    const tests = quotedOnly
+      ? this.content.testsFor(sectionId).filter(isQuoted)
+      : this.content.testsFor(sectionId);
     if (tests.length === 0) return undefined;
     let seen = this.p.seenTests[sectionId] ?? [];
     let pool = tests.filter((t) => !seen.includes(t.id));
@@ -861,6 +889,33 @@ export class Session {
   }
 
   /**
+   * Whether exploring is restricted to questions somebody wrote the answer to.
+   *
+   * Off unless turned on, so a deck that has never heard of this serves
+   * everything — which is what it did before the preference existed.
+   */
+  quotedOnly(): boolean {
+    return this.p.quotedOnly === true;
+  }
+
+  setQuotedOnly(on: boolean): void {
+    this.p.quotedOnly = on;
+    this.touch();
+  }
+
+  /**
+   * Whether the section has any test at all, before the preference narrows it.
+   *
+   * The caller that passes a topic over needs to tell "nothing written for this
+   * yet" from "nothing quoted for this yet". The first is a topic that cannot
+   * be studied; the second is one this student has asked not to be shown, and
+   * marking that one learned would be inventing a grade.
+   */
+  hasTests(sectionId: string): boolean {
+    return this.content.testsFor(sectionId).length > 0;
+  }
+
+  /**
    * Offer a card the sentence its word was met in.
    *
    * Apart from `recordVocab` rather than an argument to it, because the two are
@@ -1182,8 +1237,10 @@ export class Session {
     // a setting in between would otherwise watch the undo silently change it
     // back — an undo that reaches past the thing it was offered for.
     const keepContext = this.p.keepContext;
+    const quotedOnly = this.p.quotedOnly;
     this.p = structuredClone(snapshot);
     this.p.keepContext = keepContext;
+    this.p.quotedOnly = quotedOnly;
     // An undo is itself a change: the stored copy is now out of date, and the
     // sync comparison reads `updatedAt` to decide that.
     this.touch();
