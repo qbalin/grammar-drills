@@ -108,8 +108,8 @@ const fixture: ContentData = {
   },
 };
 
-function mount(progress?: Progress) {
-  const content = new Content(fixture, testProfile);
+function mount(progress?: Progress, data: ContentData = fixture) {
+  const content = new Content(data, testProfile);
   const session = new Session(content, progress);
   const storage = new SyncingStorage();
   render(<App content={content} session={session} storage={storage} />);
@@ -1539,6 +1539,166 @@ describe("the schedule", () => {
 
     await user.click(screen.getByRole("button", { name: "What is coming up" }));
     expect(screen.getByText(/Nothing is scheduled yet/)).toBeDefined();
+  });
+
+  describe("taking one of them now", () => {
+    const prompt = () => document.querySelector(".prompt")?.textContent;
+    const badge = () =>
+      document.querySelector(".status__row .badge")?.textContent ?? "";
+    const title = () =>
+      document.querySelector(".status__title")?.textContent ?? "";
+
+    /**
+     * A deck whose reviews are all overdue. Everything is failed a week back,
+     * so every card came due minutes later and has been waiting since.
+     *
+     * `decl1` is seeded first and so comes due first: it is what the app opens
+     * on, which makes `pres` the row a tap has to reach past the scheduler for.
+     */
+    const waiting = (): Progress => {
+      const week = new Date(Date.now() - 7 * 86_400_000);
+      const seed = new Session(new Content(fixture, testProfile));
+      seed.gradeTopic("decl1", 1, week);
+      seed.gradeTopic("pres", 1, new Date(week.getTime() + 1000));
+      seed.recordVocab(
+        {
+          lemma: "rosa",
+          citation: "rosa, rosae (f)",
+          gloss: "rose",
+          pos: "noun",
+          rank: 900,
+        },
+        week,
+      );
+      return seed.progress();
+    };
+
+    /** Open the sheet and hand back the dialog to look inside. */
+    const openSchedule = async (user: ReturnType<typeof userEvent.setup>) => {
+      await user.click(screen.getByRole("button", { name: "What is coming up" }));
+      return screen.getByRole("dialog", { name: "Coming up" });
+    };
+
+    it("serves the topic whose row was tapped, not the one next in line", async () => {
+      const user = userEvent.setup();
+      const { session } = mount(waiting());
+      // The scheduler's own pick, which is what this is stepping out of.
+      expect(title()).toBe("First declension");
+
+      const sheet = await openSchedule(user);
+      await user.click(
+        within(sheet).getByRole("button", { name: "Review Present indicative now" }),
+      );
+
+      expect(screen.queryByRole("dialog", { name: "Coming up" })).toBeNull();
+      expect(title()).toBe("Present indicative");
+      expect(prompt()).toBe("The poet praises the queen.");
+      // Out of turn, but still a review: the round says so and the switch agrees.
+      expect(badge()).toBe("review");
+      expect(session.progress().openRound?.sectionId).toBe("pres");
+      expect(session.progress().openRound?.via).toBe("review");
+      expect(document.querySelector(".app")?.getAttribute("data-mode")).toBe(
+        "review",
+      );
+    });
+
+    it("opens the word itself when a waiting word is tapped", async () => {
+      const user = userEvent.setup();
+      mount(waiting());
+
+      const sheet = await openSchedule(user);
+      await user.click(
+        within(sheet).getByRole("button", { name: "Review rosa, rosae (f) now" }),
+      );
+
+      // The gloss is the card's question, and no grammar title stands over it.
+      expect(prompt()).toBe("rose");
+      expect(badge()).toBe("vocabulary");
+      expect(screen.getByRole("button", { name: "Show" })).toBeDefined();
+    });
+
+    it("leaves alone what is not waiting yet", async () => {
+      const user = userEvent.setup();
+      mount();
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Easy/ }));
+
+      const sheet = await openSchedule(user);
+      // Days out, so there is nothing to start: the row reports and no more.
+      expect(within(sheet).getByText(/First declension/)).toBeDefined();
+      expect(
+        within(sheet).queryByRole("button", { name: /Review First declension/ }),
+      ).toBeNull();
+    });
+
+    it("says why a waiting topic with no questions cannot be started", async () => {
+      const user = userEvent.setup();
+      // A section the pack carries but has written nothing for. It comes due
+      // like any other; it just has nothing to ask.
+      const data: ContentData = {
+        ...fixture,
+        grammar: [
+          ...fixture.grammar,
+          {
+            id: "quirk",
+            ref: "300",
+            title: "Peculiarities",
+            family: "nouns",
+            text: "Some nouns decline oddly.",
+            order: 200,
+          },
+        ],
+      };
+      const week = new Date(Date.now() - 7 * 86_400_000);
+      const seed = new Session(new Content(data, testProfile));
+      // `decl1` first, so it is what the loop serves — reaching the untested
+      // topic would have the loop pass it, and it would not be waiting at all.
+      seed.gradeTopic("decl1", 1, week);
+      seed.gradeTopic("quirk", 1, new Date(week.getTime() + 1000));
+
+      mount(seed.progress(), data);
+      const sheet = await openSchedule(user);
+
+      expect(
+        within(sheet).queryByRole("button", { name: /Review Peculiarities/ }),
+      ).toBeNull();
+      expect(within(sheet).getByText(/no tests written yet/)).toBeDefined();
+    });
+
+    it("carries on with the rest of the pile once that one is graded", async () => {
+      const user = userEvent.setup();
+      mount(waiting());
+
+      const sheet = await openSchedule(user);
+      await user.click(
+        within(sheet).getByRole("button", { name: "Review Present indicative now" }),
+      );
+      // One question in this test, so grading it ends the round.
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+
+      // Back to the pile in its own order — the jump was for one card, not a
+      // new errand of its own.
+      expect(title()).toBe("First declension");
+      expect(badge()).toBe("review");
+    });
+
+    it("picks a review started this way back up after a reload", async () => {
+      const user = userEvent.setup();
+      mount(waiting());
+
+      const sheet = await openSchedule(user);
+      await user.click(
+        within(sheet).getByRole("button", { name: "Review Present indicative now" }),
+      );
+
+      cleanup();
+      mount(new SyncingStorage().read() ?? undefined);
+      // The round survives only because the errand it was served on was set
+      // with it: a launch opening on the reviews keeps a review round.
+      expect(title()).toBe("Present indicative");
+      expect(badge()).toBe("review");
+    });
   });
 });
 

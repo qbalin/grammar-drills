@@ -13,6 +13,7 @@ import {
   type Progress,
   type Rating,
   type RoundVia,
+  type ScheduleEntry,
   type Test,
   type TopicProgress,
   type VocabWord,
@@ -293,6 +294,29 @@ export function App({ content, session, storage }: Props) {
   // --- the loop ------------------------------------------------------------
 
   /**
+   * Put down whatever round is in flight, and clear the sentence with it.
+   *
+   * Shared by the two ways study leaves a round behind — the loop moving on of
+   * its own accord, and a card chosen off the schedule — so what "leaving"
+   * costs the book cannot come to mean two things.
+   */
+  const leaveRound = useCallback(() => {
+    setInput("");
+    setSubmitted("");
+    setMarks({});
+    const ending = session.progress().openRound;
+    session.endRound();
+    // The book reads on when a round *it* served ends — whatever the grade
+    // was, and whether or not the round was finished. Keyed off what the
+    // round was rather than what the loop is doing next, so a review or a
+    // practice run in between costs the book nothing.
+    const wasBook = ending?.via === "new" || ending?.via === "sweep";
+    if (wasBook && ending?.sectionId === session.bookCursor()) {
+      session.advanceCursor();
+    }
+  }, [session]);
+
+  /**
    * Move on to whatever the errand has next.
    *
    * `asked` defaults to the errand in hand, so an ordinary "carry on" is still
@@ -301,21 +325,9 @@ export function App({ content, session, storage }: Props) {
    */
   const advance = useCallback(
     (asked: Mode = mode) => {
-      setInput("");
-      setSubmitted("");
-      setMarks({});
       // Whatever was in flight is behind us by definition — this is the one
       // place study moves on of its own accord.
-      const ending = session.progress().openRound;
-      session.endRound();
-      // The book reads on when a round *it* served ends — whatever the grade
-      // was, and whether or not the round was finished. Keyed off what the
-      // round was rather than what the loop is doing next, so a review or a
-      // practice run in between costs the book nothing.
-      const wasBook = ending?.via === "new" || ending?.via === "sweep";
-      if (wasBook && ending?.sectionId === session.bookCursor()) {
-        session.advanceCursor();
-      }
+      leaveRound();
       const action = session.next(new Date(), asked);
 
       if (action.kind === "done" && asked === "review") {
@@ -408,7 +420,7 @@ export function App({ content, session, storage }: Props) {
       save();
       bump();
     },
-    [session, save, mode],
+    [session, save, mode, leaveRound],
   );
 
   // The net under `removeVocab`, not a substitute for it: a card under review
@@ -646,6 +658,63 @@ export function App({ content, session, storage }: Props) {
     advance("explore");
     const run = session.practice(topic.sectionId);
     flash(`Practising “${topic.title}” — ${run?.total ?? 0} to go.`);
+  };
+
+  /**
+   * Take one card off the schedule now, rather than whichever the pile hands
+   * over next.
+   *
+   * The list of what is waiting was a list and nothing else: the only way in to
+   * any of it was the Review switch, which serves the card that came due
+   * earliest. Two topics and a word waiting, and the one you had come back for
+   * was three grades away.
+   *
+   * This is still a review — the card is due, its round is graded like any
+   * other, and the errand goes with it, because a round shown as a review under
+   * an "Explore" switch would be naming something that is not happening.
+   */
+  const reviewNow = (entry: ScheduleEntry) => {
+    navigator.vibrate?.(8);
+    leaveRound();
+    setOverlay(null);
+    const wasExploring = mode === "explore";
+    setMode("review");
+
+    if (entry.kind === "vocab") {
+      // No topic stands behind a word: letting the last one stay would put a
+      // grammar title and its prose above a vocabulary card.
+      setSectionId(null);
+      setTest(null);
+      setVia(null);
+      setPhase({ t: "vocab-review", cardId: entry.id, revealed: false });
+    } else {
+      // Never narrowed by the quoted-only preference: the schedule asked for
+      // this topic by name, and the whole of it is what there is to ask.
+      const served = session.serveTest(entry.id);
+      // The sheet only offers rows it can serve, so this is the pack having
+      // changed underneath. Nothing happens rather than a blank round — and,
+      // unlike the loop's own pass, no grade is invented for it.
+      if (!served) return;
+      // Derived rather than assumed false. A card cannot come due without
+      // having been graded, so this will not fire — but the loop teaches
+      // before testing on ground it has not covered, and a round that is
+      // served here should not be the one exception.
+      const fresh = !session.everGraded(entry.id);
+      setSectionId(entry.id);
+      setTest(served);
+      setQIndex(0);
+      setVia("review");
+      setPhase({ t: "answering" });
+      setOverlay(fresh ? { t: "grammar", sectionId: entry.id } : null);
+      session.beginRound(entry.id, served, fresh, "review");
+    }
+
+    save();
+    bump();
+    // Only when the errand changed under the student, and in the switch's own
+    // words. What was tapped is on screen with its title in the header, so
+    // naming it again would be the toast telling you what you can see.
+    if (wasExploring) flash(`Back to the reviews — ${dueNow} waiting.`);
   };
 
   // --- vocabulary ----------------------------------------------------------
@@ -1568,6 +1637,11 @@ export function App({ content, session, storage }: Props) {
           onOpenVocab={() =>
             setOverlay({ t: "vocab-list", back: { t: "schedule" } })
           }
+          onStart={reviewNow}
+          // Asked before the quoted-only preference narrows anything: what is
+          // missing from a topic with no tests is content, not a choice the
+          // student made, and the two want different words on the row.
+          hasTests={(id) => session.hasTests(id)}
         />
       )}
 

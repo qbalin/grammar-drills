@@ -1353,8 +1353,9 @@ span.status__title {
   margin-top: 0.15rem;
 }
 
-/* A row that only reports — the schedule's, which is not tappable: there is
-   nothing to do about a date. */
+/* A row that only reports — a schedule row still to come, which is not
+   tappable: there is nothing to do about a date. What has already come due is
+   an ordinary `.row` button, because there is. */
 .row--static {
   cursor: default;
 }
