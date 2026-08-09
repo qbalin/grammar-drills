@@ -30,3 +30,8 @@ tmp_images/
 
 # Scratch log from the Latin quote-pool watcher (see REVIEW.md, gate C9).
 .latin-finish.log
+
+# What build-quote-pool.mjs has been told so far, so a run that dies is worth
+# what it spent. Deleted the moment content/quotes.jsonl.gz — the artifact it
+# stands in for — is written.
+languages/*/content/.quotes.partial.jsonl

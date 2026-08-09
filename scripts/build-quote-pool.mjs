@@ -37,9 +37,9 @@
  */
 
 import { execFileSync } from "node:child_process";
-import { writeFileSync } from "node:fs";
+import { writeFileSync, existsSync, appendFileSync, readFileSync, rmSync } from "node:fs";
 import { gzipSync } from "node:zlib";
-import { existsSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { compileFold, words } from "@lang-tutor/core";
@@ -193,10 +193,72 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const BACKOFF = [30, 60, 120, 300, 600];
 
 const topicIds = new Set(grammar.map((t) => t.id));
+
+/**
+ * The batches already answered, kept so a run that dies is worth what it spent.
+ *
+ * The gather above is deterministic — same dump, same dictionary, same order —
+ * so a batch is identified by where it starts in the pool, and a resumed run
+ * re-derives everything except the model's answers. Those are the only
+ * expensive part and the only part written down.
+ *
+ * Recovering by filed-count would be wrong: a batch files fewer quotations than
+ * it consumes, because topics can come back empty and the post-marks check can
+ * still reject. Only the start index says what was actually asked.
+ */
+const partialPath = join(dir, "content", ".quotes.partial.jsonl");
+const fingerprint = createHash("sha256")
+  .update(pool.map((q) => q.text).join("\n"))
+  .digest("hex")
+  .slice(0, 16);
+
 const out = [];
-let filed = 0;
+const done = new Set();
+
+if (existsSync(partialPath)) {
+  const lines = readFileSync(partialPath, "utf8").split("\n").filter(Boolean);
+  const header = JSON.parse(lines[0]);
+  // A pool that shifted under a resume would mis-file every remaining batch
+  // against the wrong sentences, silently. Refuse rather than guess.
+  if (header.fingerprint !== fingerprint || header.batch !== BATCH) {
+    console.error(
+      `${partialPath}\nwas written against a different pool (${header.pool} quotations, ` +
+        `batch ${header.batch}) than this run gathered (${pool.length}, batch ${BATCH}).\n` +
+        `Resuming would file answers against the wrong sentences. Delete it to start over:\n` +
+        `  rm ${partialPath}`,
+    );
+    own.close();
+    process.exit(2);
+  }
+  for (const line of lines.slice(1)) {
+    // A process killed mid-append leaves a torn last line. It is the only line
+    // that can be torn, so stopping at the first unreadable one costs exactly
+    // the batch that was in flight — which is re-asked below.
+    let record;
+    try {
+      record = JSON.parse(line);
+    } catch {
+      console.log("  (last record was written torn; that batch is re-asked)");
+      break;
+    }
+    done.add(record.start);
+    out.push(...record.items);
+  }
+  console.log(
+    `resuming: ${done.size} of ${Math.ceil(pool.length / BATCH)} batches already answered, ` +
+      `${out.length} quotations filed.`,
+  );
+} else {
+  appendFileSync(
+    partialPath,
+    JSON.stringify({ fingerprint, pool: pool.length, batch: BATCH }) + "\n",
+  );
+}
+
+let filed = out.length;
 
 for (let start = 0; start < pool.length; start += BATCH) {
+  if (done.has(start)) continue;
   const batch = pool.slice(start, start + BATCH);
   const body = batch
     .map((q, i) => {
@@ -221,6 +283,7 @@ for (let start = 0; start < pool.length; start += BATCH) {
     }
   }
 
+  const kept = [];
   for (const item of items ?? []) {
     const quote = batch[Number(item.id) - 1];
     if (!quote) continue;
@@ -240,8 +303,12 @@ for (let start = 0; start < pool.length; start += BATCH) {
     if (!clean) continue;
 
     filed++;
-    out.push({ text, topics, prompt: String(item.prompt).trim(), source: quote.source });
+    kept.push({ text, topics, prompt: String(item.prompt).trim(), source: quote.source });
   }
+  // Before the next call, not after the last one: this line is the difference
+  // between a run that dies costing twenty minutes and one costing two hours.
+  appendFileSync(partialPath, JSON.stringify({ start, items: kept }) + "\n");
+  out.push(...kept);
   console.log(
     `  ${Math.min(start + BATCH, pool.length)}/${pool.length} — ${filed} filed`,
   );
@@ -249,6 +316,8 @@ for (let start = 0; start < pool.length; start += BATCH) {
 
 const path = join(dir, "content", "quotes.jsonl.gz");
 writeFileSync(path, gzipSync(out.map((q) => JSON.stringify(q)).join("\n"), { level: 9 }));
+// Only once the artifact it was standing in for exists.
+rmSync(partialPath, { force: true });
 console.log(`\nwrote ${out.length} quotations to ${path}`);
 console.log(`  ${new Set(out.flatMap((q) => q.topics)).size} of ${grammar.length} topics named`);
 own.close();

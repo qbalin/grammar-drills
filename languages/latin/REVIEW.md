@@ -131,34 +131,41 @@ consistent and externally wrong passes all of them.
 
 ## Picking the Latin quotations back up
 
-Left running on 2026-08-07 and unfinished. Nothing below is committed; the
-tree at that commit is clean and Latin is untouched.
+**What happened on 2026-08-07.** The third of the three outcomes this section
+used to enumerate: the builder died with no artifact, and because it wrote only
+at the end, ~105 minutes of answers went with it. The watcher left to finish the
+deterministic half recorded two `started` lines and nothing else — it never had
+a pool to work from. Latin was untouched, and `git status` was clean, which is
+exactly the state that hides this.
 
-**Where it got to.** `scripts/build-quote-pool.mjs` was ~105 minutes into 18
-batched calls, filing 439 quotations under topics, choosing among closed macron
-candidates and writing English prompts. No failures. A detached watcher was left
-behind to finish the deterministic half when the pool lands: compose the tests,
-run every gate, run `verify-attribution.mjs`, rebuild the bundle. It writes
-`.latin-finish.log` (gitignored) and **commits and pushes nothing**.
+**What was fixed before rerunning, on 2026-08-09.** `build-quote-pool.mjs` now
+appends each answered batch to `content/.quotes.partial.jsonl` (gitignored) and
+resumes from it, so a death costs the batch in flight rather than the run. Three
+things about that file are load-bearing:
 
-**First thing to do: read `.latin-finish.log`.** It says which of three
-happened.
+- It is keyed on each batch's **start index in the pool**, not on how many
+  quotations have been filed. A batch files fewer than it consumes — topics come
+  back empty, the post-marks attestation check still rejects — so a filed-count
+  cannot locate a restart, and using one would file every later answer against
+  the wrong sentences.
+- Its header carries a fingerprint of the gathered pool. A resume whose gather
+  does not reproduce that fingerprint **aborts** rather than guessing, because
+  the gather is what the indices are relative to.
+- A process killed mid-append leaves exactly one torn line, so the reader stops
+  at the first unparseable record and re-asks that batch.
 
-1. *It finished and everything passed.* `content/quotes.jsonl.gz` exists,
-   `content/tests/*.json` have `-q<n>` entries, `quote-stats.json` is written.
-   Read a dozen prompts against their answers, sign gate C9 above, update
-   `BASELINE.json`, and commit. The README's "built but not yet shipped"
-   paragraph has to change in the same commit — it is a claim about what is on
-   screen.
-2. *`verify-attribution.mjs` reported a contradiction.* **Do not ship it.** A
-   contradiction is either a real misattribution or one ancient author quoting
-   another — Augustine quotes Cicero at length and both are in
-   `reference/texts/` — and the two are told apart by reading the passage it
-   collided with, not by a threshold.
-3. *The builder exited with no artifact.* Nothing is recoverable: the script
-   writes only at the end. **Fix that before rerunning** — it should append and
-   resume the way `gen-tests.mjs` does, which is the difference between losing
-   twenty minutes and losing two hours.
+**Where it stands.** The state is on disk, not in a log: `quotes.jsonl.gz` exists
+or it does not, and `.quotes.partial.jsonl` says how far a stopped run got.
+
+- *The pool is there.* Compose with `quote-tests.mjs --from quotes`, run
+  `verify-attribution.mjs` and `validate-pack.mjs`, read a dozen prompts against
+  their answers, sign gate C9 above, update `BASELINE.json`, and commit.
+- *Only the partial is there.* Rerun the same command; it picks up.
+- *`verify-attribution.mjs` reports a contradiction.* **Do not ship it.** A
+  contradiction is either a real misattribution or one ancient author quoting
+  another — Augustine quotes Cicero at length and both are in
+  `reference/texts/` — and the two are told apart by reading the passage it
+  collided with, not by a threshold.
 
 **What the run costs, so it can be judged before being repeated.** 18 calls,
 roughly 4–6 minutes each and slowing, against the ~1,700 that generated the
