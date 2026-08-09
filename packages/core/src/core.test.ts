@@ -1456,4 +1456,38 @@ describe("exploring only what somebody wrote", () => {
     s.restore(before);
     expect(s.quotedOnly()).toBe(true);
   });
+
+  it("counts the topic by what it will actually be asked", () => {
+    const s = session();
+    expect(s.coverage("q1")).toEqual({ answered: 0, total: 4 });
+    s.setQuotedOnly(true);
+    // Two of q1's four questions are quoted, and the count is the reason to
+    // go there — a bank of four beside a topic that will only ever ask two is
+    // how a student picks the wrong topic to practise.
+    expect(s.coverage("q1")).toEqual({ answered: 0, total: 2 });
+  });
+
+  it("counts an answer only against the bank it is still part of", () => {
+    const s = session();
+    const at = new Date("2026-01-01T00:00:00Z");
+    s.recordAttempt("q1", { prompt: "a?", answer: "a", submitted: "a", rating: 3 }, at);
+    s.recordAttempt("q1", { prompt: "c?", answer: "c", submitted: "c", rating: 3 }, at);
+    expect(s.coverage("q1")).toEqual({ answered: 2, total: 4 });
+    s.setQuotedOnly(true);
+    // "a?" was generated: it is no longer one of the questions being counted,
+    // so it cannot go on being one of the ones answered. 1/2, not 2/2.
+    expect(s.coverage("q1")).toEqual({ answered: 1, total: 2 });
+  });
+
+  it("tells a topic with nothing quoted from one with nothing written", () => {
+    const s = session();
+    s.setQuotedOnly(true);
+    const map = s.grammarMap(new Date("2026-01-01T00:00:00Z"));
+    const q2 = map.find((t) => t.sectionId === "q2")!;
+    // Zero questions and yet tests written: the pair says "nothing quoted
+    // here", which is what the index has to word differently from "nothing
+    // written here" — the second is not coming back when the preference does.
+    expect(q2.questions).toBe(0);
+    expect(q2.hasTests).toBe(true);
+  });
 });

@@ -132,7 +132,8 @@ export function SettingsSheet({
         quoted ones. Reviews are unaffected: a card that comes due comes back on
         the question that built it. Topics with nothing quoted are stepped over
         rather than marked learned, so they are still waiting if you turn this
-        off again.
+        off again — and the grammar index counts the quoted questions alone
+        while this is on, which is how the topics that have some are found.
       </p>
 
       <div className="section-title">Your progress</div>

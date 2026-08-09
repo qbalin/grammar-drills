@@ -1471,7 +1471,11 @@ export function App({ content, session, storage }: Props) {
             return (
               <Practised
                 title={content.getSection(at)?.title ?? "this topic"}
-                total={content.questionsFor(at).length}
+                // What the run was for, not what the topic holds: under the
+                // quoted-only preference a drill is over the quoted questions,
+                // and reporting the whole bank would credit the student with
+                // questions the run never showed them.
+                total={session.coverage(at).total}
                 onAgain={() => {
                   session.drillTopic(at);
                   save();
@@ -1551,6 +1555,7 @@ export function App({ content, session, storage }: Props) {
         <MapSheet
           families={families}
           overall={overall}
+          quotedOnly={session.quotedOnly()}
           currentFamily={
             families.find((f) =>
               f.topics.some((t) => t.sectionId === sectionId),
@@ -1572,6 +1577,7 @@ export function App({ content, session, storage }: Props) {
               topic={topic}
               attempts={session.attemptsFor(topic.sectionId)}
               questionCount={content.questionsFor(topic.sectionId).length}
+              quotedOnly={session.quotedOnly()}
               // The map is where a topic is normally chosen, and where closing
               // one goes back to — unless it was opened from the page being
               // read, which is then what lies underneath.

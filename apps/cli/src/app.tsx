@@ -248,11 +248,15 @@ export function App({ session, content, storage }: Props) {
   );
 
   // The topic under the map cursor, as its whole question bank.
-  const bankLines = useMemo(() => {
+  const bank = useMemo(() => {
     const id = mapTopics[mapIndex]?.sectionId;
-    return id ? questionBankLines(session.questionBank(id), paneWidth, content.fold) : [];
+    return id ? session.questionBank(id) : [];
     // `tick` is in here because an answer graded since is part of the bank.
-  }, [mapTopics, mapIndex, paneWidth, session, tick]);
+  }, [mapTopics, mapIndex, session, tick]);
+  const bankLines = useMemo(
+    () => questionBankLines(bank, paneWidth, content.fold),
+    [bank, paneWidth],
+  );
 
   const scheduleAll = useMemo(() => session.upcoming(), [session, tick]);
   const schedLines = useMemo(
@@ -363,13 +367,26 @@ export function App({ session, content, storage }: Props) {
       setPhase({ t: "vocab-review-front", cardId: action.cardId });
       return;
     }
+    // The quoted-only preference travels with the deck, so a deck set up on
+    // the phone arrives here already asking for it. It binds the two errands
+    // that go looking for something new, and not the ones a due card called
+    // for — a review is owed the question it was built from.
+    const quotedOnly =
+      session.quotedOnly() &&
+      (action.kind === "new-topic" || action.kind === "drill");
     // A practice run serves out of its own set; everything else rotates.
     const t =
       action.kind === "drill"
         ? session.servePractice(action.sectionId)
-        : session.serveTest(action.sectionId);
+        : session.serveTest(action.sectionId, quotedOnly);
     if (!t) {
-      session.gradeTopic(action.sectionId, 3);
+      // A topic nothing was written for is passed so the loop moves on. A
+      // topic whose tests the preference filtered out is stepped over instead:
+      // nothing was shown, so grading it would put a topic never seen into the
+      // review rotation, and leave it missing when the preference goes off.
+      if (!(quotedOnly && session.hasTests(action.sectionId))) {
+        session.gradeTopic(action.sectionId, 3);
+      }
       if (action.kind === "new-topic") session.advanceCursor();
       advance(asked, false);
       return;
@@ -677,6 +694,12 @@ export function App({ session, content, storage }: Props) {
     }
     if (!target.hasTests) {
       setFlash(`No tests for “${target.title}” yet.`);
+      return;
+    }
+    // Written for, but not by anybody the preference will serve: a run here
+    // would be a run of nothing. Say which of the two silences this is.
+    if (target.questions === 0) {
+      setFlash(`Nothing quoted for “${target.title}” yet.`);
       return;
     }
     session.drillTopic(target.sectionId);
@@ -1128,6 +1151,7 @@ export function App({ session, content, storage }: Props) {
           cursor={mapIndex}
           overall={overall}
           topic={mapTopics[mapIndex]!}
+          quotedOnly={session.quotedOnly()}
           preview={mapPreview}
         />
       )}
@@ -1149,9 +1173,15 @@ export function App({ session, content, storage }: Props) {
           height={readerHeight}
           // How much of the bank has actually been met, not just how big it
           // is: the gap between the two is the reason to stay on a topic.
+          // Counted off the same list the pane is drawing, rather than out of
+          // `coverage`. This pane is the whole bank — the book, not the errand
+          // — and `coverage` now answers for what exploring will ask, so under
+          // the quoted-only preference the two disagree, and a heading that
+          // took its halves from either side of that would be a fraction of
+          // two different things.
           heading={`All questions on ${mapSection.title} — ${
-            session.coverage(mapSection.id).answered
-          } of ${content.questionsFor(mapSection.id).length} answered`}
+            bank.filter((q) => q.attempts.length > 0).length
+          } of ${bank.length} answered`}
         />
       )}
 
@@ -1582,12 +1612,15 @@ function GrammarMap({
   cursor,
   overall,
   topic,
+  quotedOnly,
   preview,
 }: {
   families: FamilyProgress[];
   cursor: number;
   overall: number;
   topic: TopicProgress;
+  /** Whether the counts below are the quoted questions alone. */
+  quotedOnly: boolean;
   /** The same count of pre-wrapped lines for every topic, and whether more follows. */
   preview: { lines: RichLine[]; truncated: boolean };
 }) {
@@ -1647,7 +1680,12 @@ function GrammarMap({
           ) : null}
           {topic.due ? <Text color="yellow"> · due</Text> : null}
           {topic.frontier ? <Text color="cyan"> · resumes here</Text> : null}
+          {/* Two silences, and which one this is decides whether the topic is
+              coming back: nothing was written here, or nothing quoted was. */}
           {!topic.hasTests ? <Text dimColor> · no tests</Text> : null}
+          {topic.hasTests && quotedOnly && topic.questions === 0 ? (
+            <Text dimColor> · nothing quoted</Text>
+          ) : null}
         </Text>
       </Box>
       {/* Pre-wrapped and padded to a fixed height: every topic shows the same

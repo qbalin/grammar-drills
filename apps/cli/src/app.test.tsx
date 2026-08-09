@@ -1394,3 +1394,93 @@ describe("the hint on a vocabulary card", () => {
     unmount();
   });
 });
+
+/**
+ * The preference lives on the deck, not on the device, so a deck set up in the
+ * app arrives here already asking for quoted sentences and the terminal has to
+ * honour it. It had half of it: the practice run read the preference straight
+ * off the session, while the walk through the book did not — which is exactly
+ * the pair a synced deck would notice.
+ */
+describe("a deck that asked for quoted sentences only", () => {
+  const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+  const quoted: ContentData = {
+    ...fixture,
+    tests: {
+      ...fixture.tests,
+      "ag-decl1": [
+        ...fixture.tests["ag-decl1"]!,
+        {
+          id: "ag-decl1-q1",
+          sectionId: "ag-decl1",
+          questions: [
+            { prompt: "Gaul is divided into three parts.", answer: "gallia est omnis dīvīsa in partēs trēs", kind: "translate-en-la" as const, vocab: [], source: cite },
+          ],
+        },
+      ],
+      "ag-verb-pres": [
+        {
+          id: "ag-verb-pres-q1",
+          sectionId: "ag-verb-pres",
+          questions: [
+            { prompt: "The die is cast.", answer: "ālea iacta est", kind: "translate-en-la" as const, vocab: [], source: cite },
+          ],
+        },
+      ],
+    },
+  };
+
+  it("walks the book by the quoted questions, stepping over what has none", async () => {
+    const content = new Content(quoted, testProfile);
+    const session = new Session(content, { ...emptyProgress(), quotedOnly: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+
+    // First declension holds two written questions and one quotation, and the
+    // quotation is the only thing a walk under the preference may serve.
+    await until(lastFrame, "First declension nouns");
+    expect(lastFrame()).toContain("Gaul is divided into three parts.");
+    expect(lastFrame()).not.toContain("The girl loves the rose.");
+
+    await press(stdin, lastFrame, "gallia est omnis dīvīsa in partēs trēs");
+    await press(stdin, lastFrame, "\r", "correct");
+    stdin.write("3");
+    // Second declension has tests and no quotation, so the book steps over it
+    // and reads on to the next topic that has one.
+    await until(lastFrame, "The die is cast.");
+
+    // Stepped over, and deliberately not graded: grading it would put a topic
+    // the student has never seen into the review rotation, and leave it
+    // missing from the walk when the preference is turned off again.
+    expect(session.progress().topicCards["ag-decl2"]).toBeUndefined();
+    expect(session.progress().topicCards["ag-decl1"]).toBeDefined();
+    unmount();
+  });
+
+  it("counts the index by what it will ask, and says which topics have none", async () => {
+    const content = new Content(quoted, testProfile);
+    const session = new Session(content, { ...emptyProgress(), quotedOnly: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+    await until(lastFrame, "First declension nouns");
+
+    // From the answer box, where letters are letters: `^N` is the index.
+    await press(stdin, lastFrame, CTRL_N, "Grammar index");
+    // One of first declension's three questions is quoted, and one is what the
+    // index has to say: 3 would send a student to a run of one.
+    expect(lastFrame()).toContain("0/1 questions");
+
+    // On to the second declension, which has tests and nothing quoted. The
+    // index says which of the two silences that is, and will not run it.
+    await pressOnce(stdin, lastFrame, RIGHT, "Second declension nouns");
+    expect(lastFrame()).toContain("nothing quoted");
+    expect(lastFrame()).not.toContain("no tests");
+    // Twice: the first Enter is the confirm that leaving a half-written
+    // answer costs it. The second is the one that gets refused.
+    await pressOnce(stdin, lastFrame, "\r", "Press Enter again");
+    await pressOnce(stdin, lastFrame, "\r", "Nothing quoted for");
+    unmount();
+  });
+});

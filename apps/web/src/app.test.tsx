@@ -2734,3 +2734,80 @@ describe("choosing between the reviews and the book", () => {
     }
   });
 });
+
+/**
+ * The index is how a topic to practise gets chosen, so under the quoted-only
+ * preference it has to count what that preference will actually ask. Counting
+ * the whole bank sends a student to a topic of twenty questions that turns out
+ * to hold no quotation, and the topic is stepped over on arrival with nothing
+ * on the row having said so.
+ */
+describe("the index under the quoted-only preference", () => {
+  const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+  /** `decl1` gains a quoted question; `decl2` and `pres` stay generated. */
+  const quoted: ContentData = {
+    ...fixture,
+    tests: {
+      ...fixture.tests,
+      decl1: [
+        ...fixture.tests.decl1!,
+        {
+          id: "decl1-q1",
+          sectionId: "decl1",
+          questions: [
+            { prompt: "Gaul is divided into three parts.", answer: "Gallia est omnis dīvīsa in partēs trēs.", kind: "translate-en-la" as const, vocab: [], source: cite },
+          ],
+        },
+      ],
+    },
+  };
+  const openTopic = async (user: ReturnType<typeof userEvent.setup>, name: RegExp) => {
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    await user.click(within(map).getByRole("button", { name: name }));
+  };
+
+  it("counts a topic's row by the quoted questions alone", async () => {
+    const user = userEvent.setup();
+    mount({ ...emptyProgress(), quotedOnly: true }, quoted);
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    // One of first declension's three questions is quoted, and 1 is what the
+    // row has to say — 3 would be an invitation to a run of one.
+    expect(
+      within(map).getByRole("button", { name: /First declension/ }).textContent,
+    ).toMatch(/0\/1 questions answered/);
+    // And said once at the top, so a preference set days ago explains itself.
+    expect(within(map).getByText(/counting the quoted questions only/)).toBeDefined();
+  });
+
+  it("says which silence a topic with nothing quoted is, and will not drill it", async () => {
+    const user = userEvent.setup();
+    mount({ ...emptyProgress(), quotedOnly: true }, quoted);
+    await openTopic(user, /Second declension/);
+
+    // Tests were written here; none are quoted. The two are different things
+    // to be told, and only this one comes back with the preference off.
+    expect(screen.getByText(/nothing quoted here yet/)).toBeDefined();
+    expect(
+      screen.getByRole("button", { name: "Nothing quoted here" }),
+    ).toHaveProperty("disabled", true);
+    // Studying from here is still offered: the walk starts here and reads on
+    // to the next topic that has something quoted.
+    expect(
+      screen.getByRole("button", { name: "Study from here" }),
+    ).toHaveProperty("disabled", false);
+    // The bank is the book rather than the errand, and stays whole.
+    expect(screen.getByRole("button", { name: /All 1 questions/ })).toBeDefined();
+  });
+
+  it("leaves every count alone when the preference is off", async () => {
+    const user = userEvent.setup();
+    mount(undefined, quoted);
+    await openTopic(user, /First declension/);
+
+    expect(screen.getByRole("button", { name: /Practise these 3/ })).toBeDefined();
+    expect(screen.queryByText(/nothing quoted here yet/)).toBeNull();
+  });
+});

@@ -37,8 +37,17 @@ function masteryLabel(t: TopicProgress): string {
   return `${pct}% mastered`;
 }
 
-/** Everything about a topic's standing, in words rather than in colour. */
-function topicState(t: TopicProgress): string {
+/**
+ * Everything about a topic's standing, in words rather than in colour.
+ *
+ * The counts are already the preference's counts — `coverage` narrows them —
+ * so the row reads "2/5 questions answered" of the quoted ones alone, and a
+ * topic with nothing quoted reads 0 and is the one to walk past. That leaves
+ * two different silences to tell apart, which is what `quotedOnly` is for here:
+ * nothing was written for this topic, or nothing quoted was. Only the second
+ * comes back when the preference is turned off.
+ */
+function topicState(t: TopicProgress, quotedOnly: boolean): string {
   return [
     masteryLabel(t),
     // A topic is not finished when its mastery is: four questions do not sweep
@@ -46,7 +55,11 @@ function topicState(t: TopicProgress): string {
     t.questions > 0 ? `${t.answered}/${t.questions} questions answered` : "",
     t.due ? "due now" : "",
     t.frontier ? "study resumes here" : "",
-    t.hasTests ? "" : "no tests written yet",
+    !t.hasTests
+      ? "no tests written yet"
+      : quotedOnly && t.questions === 0
+        ? "nothing quoted here yet"
+        : "",
   ]
     .filter(Boolean)
     .join(" · ");
@@ -54,9 +67,11 @@ function topicState(t: TopicProgress): string {
 
 function TopicRows({
   topics,
+  quotedOnly,
   onPick,
 }: {
   topics: TopicProgress[];
+  quotedOnly: boolean;
   onPick: (t: TopicProgress) => void;
 }) {
   return (
@@ -74,7 +89,7 @@ function TopicRows({
               <span className="row__ref">§ {t.ref}</span>
               {t.title}
             </span>
-            <span className="row__sub">{topicState(t)}</span>
+            <span className="row__sub">{topicState(t, quotedOnly)}</span>
           </span>
           <span className="row__chev">›</span>
         </button>
@@ -86,6 +101,7 @@ function TopicRows({
 export function MapSheet({
   families,
   overall,
+  quotedOnly,
   onClose,
   onPick,
   /** The topic being studied, so the map opens where the student is. */
@@ -93,6 +109,8 @@ export function MapSheet({
 }: {
   families: FamilyProgress[];
   overall: number;
+  /** Whether the counts on the rows are the quoted questions alone. */
+  quotedOnly: boolean;
   onClose: () => void;
   onPick: (t: TopicProgress) => void;
   currentFamily?: string;
@@ -109,6 +127,14 @@ export function MapSheet({
       <div className="centered" style={{ padding: "0 0 1.2rem" }}>
         <Ring percent={overall} />
         <p>mastered across all {total} topics</p>
+        {/* Said once, at the top, rather than on every row: the rows are
+            counting something narrower than they usually do, and a student who
+            set the preference days ago is owed the reason their banks shrank. */}
+        {quotedOnly && (
+          <p className="row__sub">
+            counting the quoted questions only — Settings
+          </p>
+        )}
       </div>
 
       {families.map((f) => (
@@ -131,7 +157,9 @@ export function MapSheet({
             </span>
             <span className="row__chev">{open === f.id ? "▾" : "▸"}</span>
           </button>
-          {open === f.id && <TopicRows topics={f.topics} onPick={onPick} />}
+          {open === f.id && (
+            <TopicRows topics={f.topics} quotedOnly={quotedOnly} onPick={onPick} />
+          )}
         </div>
       ))}
 
@@ -193,6 +221,7 @@ export function TopicSheet({
   topic,
   attempts,
   questionCount,
+  quotedOnly,
   onClose,
   onRead,
   onBookOrder,
@@ -203,8 +232,16 @@ export function TopicSheet({
 }: {
   topic: TopicProgress;
   attempts: Attempt[];
-  /** How many questions have been written for the topic. */
+  /**
+   * How many questions have been written for the topic — all of them, and
+   * unlike `topic.questions` not narrowed by the preference. It labels the
+   * bank, which is the book rather than the errand: the questions already
+   * answered on this topic are the student's own whatever they have since
+   * asked to be served.
+   */
   questionCount: number;
+  /** Whether the counts above are the quoted questions alone. */
+  quotedOnly: boolean;
   onClose: () => void;
   onRead: () => void;
   onBookOrder: () => void;
@@ -214,10 +251,16 @@ export function TopicSheet({
   onMark?: (at: string, marks: AttemptMarks) => void;
 }) {
   const left = topic.questions - topic.answered;
+  // Nothing the preference will serve. Practising it would open a run of no
+  // questions and close it again on "practised all 0", so the button says so
+  // instead of doing it. Studying from here is left alone: starting the walk
+  // at a topic with nothing quoted is a fine thing to ask for — it steps over
+  // this one and reads on to the next topic that has some.
+  const nothingToServe = topic.hasTests && topic.questions === 0;
   return (
     <Sheet title={topic.title} subtitle={`§ ${topic.ref}`} onClose={onClose}>
       <p className="row__sub" style={{ marginTop: 0 }}>
-        {topicState(topic)}
+        {topicState(topic, quotedOnly)}
       </p>
 
       <div className="actions">
@@ -235,8 +278,16 @@ export function TopicSheet({
       <div className="actions">
         {/* Never disabled once the topic has tests: a bank with nothing
             unanswered left is exactly the one a second run is for. */}
-        <button className="btn" onClick={onDrill} disabled={!topic.hasTests}>
-          {left > 0 ? `Practise these ${left}` : `Practise all ${topic.questions}`}
+        <button
+          className="btn"
+          onClick={onDrill}
+          disabled={!topic.hasTests || nothingToServe}
+        >
+          {nothingToServe
+            ? "Nothing quoted here"
+            : left > 0
+              ? `Practise these ${left}`
+              : `Practise all ${topic.questions}`}
         </button>
         <button className="btn" onClick={onBookOrder}>
           Book order

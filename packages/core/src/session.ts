@@ -432,20 +432,47 @@ export class Session {
     // while `servePractice` hands out only quoted tests would leave a drill
     // reporting questions left that never arrive, and `next` would keep calling
     // it a drill for ever.
-    const bank = this.content
-      .questionsFor(sectionId)
-      .filter((q) => !this.quotedOnly() || q.question.source)
-      .map((q) => q.question.prompt);
+    const bank = this.bank(sectionId).map((q) => q.question.prompt);
     const fresh = bank.filter((prompt) => !before.has(prompt));
     return { set: new Set(fresh.length > 0 ? fresh : bank), served };
   }
 
-  /** How much of a topic's bank has been answered at least once. */
+  /**
+   * A section's questions as the preference leaves them — what exploring can
+   * actually ask.
+   *
+   * By the question rather than by the test, unlike `serveTest`: what a test
+   * is for is deciding whether to *serve* it, and a test three-quarters quoted
+   * is not something the preference will hand over. What is being counted here
+   * is questions, and a mixed test contributes the quoted ones. Nothing mixed
+   * ships today, so the two agree; sharing the predicate with `runSet` is what
+   * keeps a count and the run it describes agreeing if that changes.
+   */
+  private bank(sectionId: string) {
+    return this.content
+      .questionsFor(sectionId)
+      .filter((q) => !this.quotedOnly() || q.question.source);
+  }
+
+  /**
+   * How much of a topic's bank has been answered at least once.
+   *
+   * The bank narrows with the preference, because this is the number that says
+   * where the questions are. A student who asked for quoted sentences only and
+   * reads "0/24 answered" against a topic holding no quotation has been sent
+   * there by the one count on the row, and would find the topic stepped over on
+   * arrival. Under the preference, 0 questions is the honest total, and it is
+   * how the topics worth going to are picked out of the index.
+   *
+   * `answered` narrows with it: it is an intersection with the bank, so a
+   * question the preference no longer asks stops counting towards a total it is
+   * no longer part of.
+   */
   coverage(sectionId: string): Coverage {
     const asked = new Set(
       (this.p.attempts[sectionId] ?? []).map((a) => a.prompt),
     );
-    const questions = this.content.questionsFor(sectionId);
+    const questions = this.bank(sectionId);
     return {
       answered: questions.filter((q) => asked.has(q.question.prompt)).length,
       total: questions.length,
@@ -1167,6 +1194,14 @@ export class Session {
   /**
    * Every grammar section in book order with its mastery — the model behind the
    * progress bars and the topic explorer.
+   *
+   * `answered` and `questions` come from `coverage`, so they say what exploring
+   * will ask of this topic rather than what was ever written for it.
+   * `hasTests` deliberately does not: it is "was anything written here at all",
+   * which is what tells a topic nothing has been written for from one this
+   * student has asked not to be shown. The caller wanting the second reads
+   * `hasTests && questions === 0`, and the two absences are not the same thing
+   * to say to a student.
    */
   grammarMap(now: Date = new Date()): TopicProgress[] {
     const cursor = this.bookCursor();
