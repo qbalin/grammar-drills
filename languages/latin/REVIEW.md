@@ -108,6 +108,38 @@ read rather than argued with.
 
 ### What was already ruled out, so it is not tried again
 
+**Gildersleeve & Lodge, and every scan of it there is.** Measured 2026-08-10.
+It is the obvious third source — denser in citations than A&G, and strongest on
+exactly the stylistic material A&G skims — and it cannot be read. There is no
+clean digitization anywhere: not Gutenberg, not Perseus, not GitHub. Alpheios
+holds two grammar repos in total, `grammar-smyth` and `grammar-allen-greenough`,
+and the pack already uses both.
+
+What is left is OCR of the scans, and the Internet Archive epub states its own
+verdict on all 558 pages: median **24% accurate**, and not one page above 28%.
+Held to the measure this pack judges a source by — what fraction of its Latin
+the shipped index attests:
+
+| source | token attestation | runs fully clean |
+|---|---|---|
+| A&G, the Alpheios HTML | **97.7%** | what ships |
+| G&L `gildersleeveslat00gildrich`, the best scan | 82.2% | 30% |
+| G&L `gildersleeveslat00gilduoft` | 80.6% | 38% |
+| G&L `gildersleevesla03lodggoog` | 59.9% | 6% |
+
+`T5 ab eo libero` for `Tē`, `Ab ilia exoludor` for `illa excludor`. This is the
+failure that took the *Sintassi normativa* scan off the table on the same day
+and for the same reason: the substitutions land on real Latin words, so the
+corruption passes attestation and `verify-attribution` files it under the
+harmless `not-found`. No gate in this tree sees it. The citations are damaged
+too — `Lad.` for `Lael.` — so it cannot even be used as a finding aid with the
+text pulled from a corpus; 76 parseable citation runs came out of a book that
+prints thousands.
+
+Re-OCR with a modern engine is the only route, and it is a project rather than
+an afternoon. Anything below roughly 95% attestation should be assumed to be
+this same trap and measured before a line of pipeline is written for it.
+
 Bennett's back index — "INDEX OF THE SOURCES OF THE ILLUSTRATIVE EXAMPLES
 CITED IN THE SYNTAX" — was built, measured and abandoned on 2026-08-07. It
 parses cleanly (130 sections, 531 entries, 110 abbreviations once continuations
@@ -133,6 +165,80 @@ them would manufacture quotations. The general lesson is worth more than the
 particular one: a matcher's own filters cannot tell you its premise is wrong,
 because they measure self-consistency, and a source that is internally
 consistent and externally wrong passes all of them.
+
+## Where the next attested sentences would come from
+
+Measured 2026-08-10, after the A&G run. The pack is **889 attested of 7,470
+questions, 11.9%**, over 50 of 114 topics. What the distribution says is that
+both pools are syntax-shaped, and for the same reason: a grammar quotes an
+author where construction matters and drills paradigms where form matters.
+
+| family | topics | with attested | attested | generated | % |
+|---|---|---|---|---|---|
+| noun-syntax | 18 | 13 | 301 | 995 | 23% |
+| verb-syntax | 28 | 20 | 461 | 1,715 | 21% |
+| adj-pron-syntax | 13 | 5 | 75 | 524 | 13% |
+| style | 12 | 4 | 24 | 559 | 4% |
+| particles | 3 | 1 | 3 | 123 | 2% |
+| pron | 9 | 2 | 7 | 342 | 2% |
+| verb-forms | 17 | 3 | 12 | 1,410 | 1% |
+| adj | 5 | 1 | 3 | 385 | 1% |
+| nouns | 9 | 1 | 3 | 528 | 1% |
+
+**The inflection families are a permanent zero and that is correct.** Nobody
+quotes Cicero to teach the fourth declension. Some 2,300 questions across
+`verb-forms`, `nouns` and `adj` will stay generated whatever is done here, and
+chasing them is the wrong work.
+
+Three things are worth doing, in this order.
+
+**1. A&G's phrases, for the topics where a phrase is the construction.** The
+largest lever by a distance. Dropping the sentences-only rule takes the A&G pool
+from 592 to **1,248** and adds 25 sections to the map (about one model call):
+
+| relaxation | pool | gain |
+|---|---|---|
+| today | 592 | — |
+| allow phrases, `--min-words 2` | 1,248 | +656 |
+| …and verse as well | 1,497 | +249 more |
+
+Phrases were excluded on purpose and the reason still holds for clause topics —
+`ā māgnō dēmissum nōmen Iūlō` is a fragment, not an exercise. But that is not
+what the bucket mostly holds. `Ariovistī mors` → *the death of Ariovistus*,
+`potentia Pompêī` → *Pompey's power*: for the case topics these are the
+canonical drill, because the case lives in the phrase and A&G teaches it that
+way. The rule that follows is one line, keyed on data already present — allow a
+phrase when the section's mapped topic is in `noun-syntax` or
+`adj-pron-syntax`, require a sentence everywhere else. That aims the gain at the
+two families sitting at 23% and 13%, and leaves `verb-syntax` alone.
+
+Watch C3 if it is taken: `noun-syntax` would go from about 72 questions/topic to
+about 94 against a pack mean near 69 — a ratio of 1.36, inside the 2× ceiling,
+but it is the gate that notices first.
+
+**Leave verse off.** The +249 is real and the reason for refusing it has not
+changed: hexameter word order is not the model answer for a student writing
+prose, which is the call `scripts/lib/quotes.mjs:109` already made for the dump.
+
+**2. `style`, which neither pool reaches.** Four percent, and eight of its twelve
+topics are at zero — word order, sentence structure, the peculiarities sections.
+A&G is thin there and Gildersleeve is unreadable (above). The material is in
+`reference/texts/` instead: 1.7M words of Cicero, Livy, Caesar and Tacitus that
+are already verbatim and already attributable. What a grammar was supplying for
+free is the one missing piece — which topic each sentence illustrates — so this
+is `build-quote-pool.mjs`'s route pointed at real text rather than a dictionary
+dump. It is the only unblocked path to those topics.
+
+**3. Small change, seven topics.** Seven topics have one or two A&G sentences
+and get nothing, because `minQuestionsPerTest` is 3 and a topic below it is
+dropped whole — `bn-166-subject`, `bn-278-concessive-subjunctive`,
+`bn-319-conditional-sentences-in-indirect`, `bn-324-subjunctive-by-attraction`
+among them. Whether a two-question quoted test is worth having is a judgement
+about the study loop, not about the pipeline, and it is cheap either way.
+
+**Not worth doing: redistributing the second topic.** Only 24 of 592 records
+name one, and no topic depends on being another's second choice. Measured and
+empty.
 
 ## Known state
 
