@@ -194,6 +194,23 @@ function callClaude(prompt) {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const BACKOFF = [30, 60, 120, 300, 600];
 
+/**
+ * A limit no ladder can outlast, told apart from a failure worth retrying.
+ *
+ * The whole ladder is about nineteen minutes. A session limit is measured in
+ * hours, so retrying one is not patience, it is nineteen minutes of certain
+ * failure followed by a stack trace — which is how the 2026-08-09 run ended
+ * with fourteen of eighteen batches done and no word of what to do about it.
+ *
+ * `execFileSync` throws before the envelope is ever parsed, so the reason is in
+ * the failed process's stdout rather than in the message. Both are searched.
+ */
+function usageLimit(err) {
+  const text = `${err.stdout ?? ""}\n${err.message ?? ""}`;
+  if (!/session limit|usage limit|"api_error_status":\s*429/.test(text)) return null;
+  return text.match(/"result":"([^"]+)"/)?.[1] ?? "usage limit reached";
+}
+
 const topicIds = new Set(grammar.map((t) => t.id));
 
 /**
@@ -344,6 +361,18 @@ for (let start = 0; start < pool.length; start += BATCH) {
       ({ items, text: raw } = callClaude(`File these ${batch.length} quotations:\n\n${body}`));
       break;
     } catch (err) {
+      const limit = usageLimit(err);
+      if (limit) {
+        // Stop where the work is, and say so. Every batch already answered is
+        // on disk, so this costs the run nothing but the waiting.
+        console.error(
+          `\nStopping: ${limit}\n` +
+            `  ${filed} quotations are saved in ${partialPath}.\n` +
+            "  Rerun the same command once the limit resets; it picks up here.",
+        );
+        own.close();
+        process.exit(3);
+      }
       if (attempt === BACKOFF.length) throw err;
       console.log(`  ${err.message.slice(0, 80)} — waiting ${BACKOFF[attempt]}s`);
       await sleep(BACKOFF[attempt] * 1000);
