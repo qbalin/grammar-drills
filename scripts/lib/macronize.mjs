@@ -72,19 +72,38 @@ function resolve(token, { ref, fold }) {
   const spellings = ref.spellingsOf(fold(core));
   if (!spellings.length) return { state: "kept", token, why: "unknown" };
 
-  // A folded key answers with every spelling filed under it, including the
-  // unmarked one the sentence already has. Distinct *marked* spellings are the
-  // only thing that constitutes a choice: if `puella` is the sole marked
-  // reading, the bare form in the text is the same word and not a rival.
-  const candidates = [...new Set(spellings.filter(marked))];
-  if (!candidates.length) return { state: "kept", token, why: "no-marked-form" };
-  if (candidates.length === 1) {
-    return { state: "restored", token: reshell(token, candidates[0]), why: "unique" };
+  // Every distinct spelling the key files, and not only the marked ones.
+  //
+  // This used to keep `spellings.filter(marked)`, on the reasoning that a bare
+  // form carrying no mark is the same word as the marked reading and so not a
+  // rival. That is false exactly where it matters. The dictionary answers `est`
+  // with `["ēst","est"]`: one is the copula, the other is from `edō`, "he eats".
+  // Discarding the unmarked one left a single survivor, which was then reported
+  // as a fact rather than a choice — and every `est` in a quotation came out as
+  // "he eats". `patria`/`patriā` and `causa`/`causā` go the same way, nominative
+  // silently becoming ablative.
+  //
+  // No gate can see any of it, because the fold strips the marks before
+  // anything compares. Only a reader catches it, which is what happened.
+  //
+  // Deduped case-insensitively: the key also files `A` beside `a` and `ā`, and
+  // a capital is not a third reading.
+  const distinct = [];
+  const seen = new Set();
+  for (const spelling of spellings) {
+    const key = spelling.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    distinct.push(spelling);
+  }
+  if (!distinct.some(marked)) return { state: "kept", token, why: "no-marked-form" };
+  if (distinct.length === 1) {
+    return { state: "restored", token: reshell(token, distinct[0]), why: "unique" };
   }
   return {
     state: "ambiguous",
     token,
-    candidates: candidates.map((c) => reshell(token, c)),
+    candidates: distinct.map((c) => reshell(token, c)),
     why: "several",
   };
 }

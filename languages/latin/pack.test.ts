@@ -8,6 +8,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { checkConfetti } from "../../scripts/lib/confetti.mjs";
+import { macronize } from "../../scripts/lib/macronize.mjs";
 import { genderOf, glossOf, tagValue } from "../../scripts/lib/lemma-fields.mjs";
 import { readFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
@@ -327,5 +328,53 @@ describe("confetti", () => {
     const pack = (await import("./confetti.mjs")).default;
     const thrown = new Set(pack.throws.flat());
     expect([...Object.keys(pack.shapes)].filter((s) => !thrown.has(s))).toEqual([]);
+  });
+});
+
+describe("putting the marks back on an unmarked quotation", () => {
+  /*
+   * A stub dictionary rather than the real one: `spellingsOf` needs the 474 MB
+   * reference, which is gitignored and absent in CI, and the bug this guards
+   * against is in what the answers are read to *mean*, not in fetching them.
+   * Every array below is what the Latin dictionary actually returns for that
+   * key, copied from a run against it.
+   */
+  const spellings: Record<string, string[]> = {
+    est: ["ēst", "est"],
+    patria: ["patria", "patriā"],
+    ita: ["itā"],
+    a: ["a", "ā", "A"],
+  };
+  const ref = { spellingsOf: (key: string) => spellings[key] ?? [] };
+
+  it("counts a bare form the dictionary files as a rival, not as agreement", () => {
+    // `est` is the copula and `ēst` is from `edō`, "he eats". Reading the
+    // unmarked spelling as mere agreement with the marked one left `ēst` the
+    // sole survivor, and it was then applied as a fact: 26 of 383 quoted
+    // answers said "he eats" where the author wrote "is". No gate sees it —
+    // the fold strips the marks before anything compares.
+    const { text, ambiguous } = macronize("est", { ref, fold });
+    expect(text).toBe("est");
+    expect(ambiguous).toHaveLength(1);
+    expect(ambiguous[0].candidates).toEqual(["ēst", "est"]);
+  });
+
+  it("does not quietly decline a nominative into an ablative", () => {
+    const { text, ambiguous } = macronize("patria", { ref, fold });
+    expect(text).toBe("patria");
+    expect(ambiguous[0].candidates).toEqual(["patria", "patriā"]);
+  });
+
+  it("still restores where the dictionary really does say one thing", () => {
+    // The fix must not turn every lookup into a question: one distinct
+    // spelling is a fact, and this is the half that was always right.
+    const { text, ambiguous } = macronize("ita", { ref, fold });
+    expect(text).toBe("itā");
+    expect(ambiguous).toHaveLength(0);
+  });
+
+  it("reads a capital as the same spelling, not a third reading", () => {
+    const { ambiguous } = macronize("a", { ref, fold });
+    expect(ambiguous[0].candidates).toEqual(["a", "ā"]);
   });
 });
