@@ -390,24 +390,24 @@ for (const ex of examples()) {
   }
   const text = ex.text;
   if (!/^[A-ZĀĒĪŌŪȲÂÊÎÔÛ]/.test(text) || !/[.!?]$/.test(text)) {
-    funnel.notASentence++;
+    reject("notASentence", ex);
     continue;
   }
   const n = words(text).length;
   if (n < MIN_WORDS) {
-    funnel.tooShort++;
+    reject("tooShort", ex);
     continue;
   }
   if (n > MAX_WORDS) {
-    funnel.tooLong++;
+    reject("tooLong", ex);
     continue;
   }
   if (ELLIPSIS.test(text)) {
-    funnel.elided++;
+    reject("elided", ex);
     continue;
   }
   if (CIRCUMFLEX.test(text)) {
-    funnel.circumflex++;
+    reject("circumflex", ex);
     continue;
   }
 
@@ -481,11 +481,11 @@ for (const ex of examples()) {
 
   const source = expandRef(ex.ref);
   if (!source) {
-    funnel.refUnnamed++;
+    reject("refUnnamed", ex);
     continue;
   }
   if (source.verse && !argv.includes("--verse")) {
-    funnel.verse++;
+    reject("verse", ex);
     continue;
   }
 
@@ -500,7 +500,7 @@ for (const ex of examples()) {
   // A&G reuses a favourite sentence across sections as readily as Smyth does.
   const key = tokens.map((t) => fold(t)).join(" ");
   if (seen.has(key)) {
-    funnel.duplicate++;
+    reject("duplicate", ex);
     continue;
   }
   seen.add(key);
