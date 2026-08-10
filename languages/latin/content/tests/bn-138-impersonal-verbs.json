@@ -627,5 +627,121 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-138-impersonal-verbs-q1",
+  "sectionId": "bn-138-impersonal-verbs",
+  "questions": [
+   {
+    "prompt": "As often as it comes into your mind how much is permitted to you against a slave, let it come into your mind that just as much is permitted against you to your master.",
+    "answer": "Quotiēns in mentem vēnerit, quantum tibi in servum liceat, veniat in mentem tantundem in tē dominō tuō licēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quotiēns",
+     "in",
+     "mentem",
+     "vēnerit",
+     "quantum",
+     "tibi",
+     "in",
+     "servum",
+     "liceat",
+     "veniat",
+     "in",
+     "mentem",
+     "tantundem",
+     "in",
+     "tē",
+     "dominō",
+     "tuō",
+     "licēre"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.11"
+    }
+   },
+   {
+    "prompt": "You ought long ago to have been led to death, Catiline, by the consul's order, and the destruction which you have long been plotting against us all ought to have been turned upon you.",
+    "answer": "Ad mortem tē, Catilīna, dūcī iussū Cōnsulis iam prīdem oportēbat, in tē cōnferrī pestem, quam tū in nōs omnēs iam diū māchināris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ad",
+     "mortem",
+     "tē",
+     "Catilīna",
+     "dūcī",
+     "iussū",
+     "Cōnsulis",
+     "iam",
+     "prīdem",
+     "oportēbat",
+     "in",
+     "tē",
+     "cōnferrī",
+     "pestem",
+     "quam",
+     "tū",
+     "in",
+     "nōs",
+     "omnēs",
+     "iam",
+     "diū",
+     "māchināris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "Punishment ought to have followed the condemned man, so that he might be burned with fire.",
+    "answer": "Damnātum poenam sequī oportēbat, ut īgnī cremārētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Damnātum",
+     "poenam",
+     "sequī",
+     "oportēbat",
+     "ut",
+     "īgnī",
+     "cremārētur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.4"
+    }
+   },
+   {
+    "prompt": "One ought to linger over and be nourished by certain minds, if you wish to draw out something that may faithfully remain in the mind.",
+    "answer": "Certīs ingeniīs immorārī et innūtrīrī oportet, sī velīs aliquid trahere quod in animō fidēliter sedeat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Certīs",
+     "ingeniīs",
+     "immorārī",
+     "et",
+     "innūtrīrī",
+     "oportet",
+     "sī",
+     "velīs",
+     "aliquid",
+     "trahere",
+     "quod",
+     "in",
+     "animō",
+     "fidēliter",
+     "sedeat"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.2"
+    }
+   }
+  ]
  }
 ]

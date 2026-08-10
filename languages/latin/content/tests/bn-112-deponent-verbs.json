@@ -837,5 +837,102 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-112-deponent-verbs-q1",
+  "sectionId": "bn-112-deponent-verbs",
+  "questions": [
+   {
+    "prompt": "Grasp the subject, and the words will follow.",
+    "answer": "Rem tenē, verba sequentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rem",
+     "tenē",
+     "verba",
+     "sequentur"
+    ],
+    "source": {
+     "author": "Marcus Porcius Cato",
+     "work": "De agri cultura"
+    }
+   },
+   {
+    "prompt": "We have always, in all the Punic and Sicilian wars, followed the friendship and loyalty of the Roman people.",
+    "answer": "Nōs semper omnibus Pūnicīs Siciliēnsibusque bellīs amīcitiam fidemque populī Rōmānī secūtī sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōs",
+     "semper",
+     "omnibus",
+     "Pūnicīs",
+     "Siciliēnsibusque",
+     "bellīs",
+     "amīcitiam",
+     "fidemque",
+     "populī",
+     "Rōmānī",
+     "secūtī",
+     "sumus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.5.47"
+    }
+   },
+   {
+    "prompt": "Depart from the city, Catiline; free the republic from fear; set out into exile, if it is this word you are waiting for.",
+    "answer": "Ēgredere ex urbe, Catilīna, līberā rem pūblicam metū; in exsilium, sī hanc vōcem exspectās: proficīscere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ēgredere",
+     "ex",
+     "urbe",
+     "Catilīna",
+     "līberā",
+     "rem",
+     "pūblicam",
+     "metū",
+     "in",
+     "exsilium",
+     "sī",
+     "hanc",
+     "vōcem",
+     "exspectās",
+     "proficīscere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.20"
+    }
+   },
+   {
+    "prompt": "He set out at last, at some point, for Spain; but he could not, as he says, arrive there safely.",
+    "answer": "Profectus est aliquandō tandem in Hispāniam; sed tūtō, ut ait, pervenīre nōn potuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Profectus",
+     "est",
+     "aliquandō",
+     "tandem",
+     "in",
+     "Hispāniam",
+     "sed",
+     "tūtō",
+     "ut",
+     "ait",
+     "pervenīre",
+     "nōn",
+     "potuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.75"
+    }
+   }
+  ]
  }
 ]

@@ -1511,5 +1511,720 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q1",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "What the law does not forbid, shame forbids to be done.",
+    "answer": "Quod nōn vetat lēx, hoc vetat fierī pudor.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "nōn",
+     "vetat",
+     "lēx",
+     "hoc",
+     "vetat",
+     "fierī",
+     "pudor"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Troades",
+     "locus": "334"
+    }
+   },
+   {
+    "prompt": "By their own customs they compelled Orgetorix to plead his case in chains.",
+    "answer": "Mōribus suīs Orgetorīgem ex vinculīs causam dīcere coēgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mōribus",
+     "suīs",
+     "Orgetorīgem",
+     "ex",
+     "vinculīs",
+     "causam",
+     "dīcere",
+     "coēgērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.4"
+    }
+   },
+   {
+    "prompt": "They are said to learn by heart a great number of verses there.",
+    "answer": "Magnum ibi numerum versuum ēdiscere dīcuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magnum",
+     "ibi",
+     "numerum",
+     "versuum",
+     "ēdiscere",
+     "dīcuntur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentariī dē Bellō Gallicō",
+     "locus": "6.14"
+    }
+   },
+   {
+    "prompt": "For it is not so glorious to know Latin as it is shameful not to know it.",
+    "answer": "Nōn enim tam praeclārum est scīre Latīnē, quam turpe nescīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "enim",
+     "tam",
+     "praeclārum",
+     "est",
+     "scīre",
+     "Latīnē",
+     "quam",
+     "turpe",
+     "nescīre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "140"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q2",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "For as each man's passion blazed forth according to his age, he would supply harlots to some, and buy dogs and horses for others.",
+    "answer": "Nam ut cuiusque studium ex aetāte flāgrābat, aliīs scorta praebēre, aliīs canēs atque equōs mercārī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nam",
+     "ut",
+     "cuiusque",
+     "studium",
+     "ex",
+     "aetāte",
+     "flāgrābat",
+     "aliīs",
+     "scorta",
+     "praebēre",
+     "aliīs",
+     "canēs",
+     "atque",
+     "equōs",
+     "mercārī"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "De Coniuratione Catilinae",
+     "locus": "14.6"
+    }
+   },
+   {
+    "prompt": "They kept fortifying the city, bringing in grain, making ready weapons and arms.",
+    "answer": "Mūnīre urbem, frūmentum convehere, tēla arma parāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mūnīre",
+     "urbem",
+     "frūmentum",
+     "convehere",
+     "tēla",
+     "arma",
+     "parāre"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "29.4"
+    }
+   },
+   {
+    "prompt": "The consul orders the enemy to depart from the city.",
+    "answer": "Exīre ex urbe iubet cōnsul hostem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Exīre",
+     "ex",
+     "urbe",
+     "iubet",
+     "cōnsul",
+     "hostem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.13"
+    }
+   },
+   {
+    "prompt": "That corruption infected the already unsettled minds of the legions and auxiliaries too, after it had become widely known that the loyalty of the German army was wavering.",
+    "answer": "Īnfēcit ea tābēs legiōnum quoque et auxiliōrum mōtās iam mentīs, postquam vulgātum erat labāre Germānicī exercitūs fidem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īnfēcit",
+     "ea",
+     "tābēs",
+     "legiōnum",
+     "quoque",
+     "et",
+     "auxiliōrum",
+     "mōtās",
+     "iam",
+     "mentīs",
+     "postquam",
+     "vulgātum",
+     "erat",
+     "labāre",
+     "Germānicī",
+     "exercitūs",
+     "fidem"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "1.26"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q3",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "I loved Alexis's handwriting so much because it came so close to the likeness of your handwriting; I did not love it because it showed that you were not well.",
+    "answer": "Tam Alexidis manum amābam, quod tam prope accēdēbat ad similitūdinem tuae litterae; nōn amābam, quod indicābat tē nōn valēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tam",
+     "Alexidis",
+     "manum",
+     "amābam",
+     "quod",
+     "tam",
+     "prope",
+     "accēdēbat",
+     "ad",
+     "similitūdinem",
+     "tuae",
+     "litterae",
+     "nōn",
+     "amābam",
+     "quod",
+     "indicābat",
+     "tē",
+     "nōn",
+     "valēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "7.2"
+    }
+   },
+   {
+    "prompt": "He is said to have struck off with his staff the topmost heads of the poppies.",
+    "answer": "Summa papāverum capita dīcitur baculō dēcussisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Summa",
+     "papāverum",
+     "capita",
+     "dīcitur",
+     "baculō",
+     "dēcussisse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "1.54"
+    }
+   },
+   {
+    "prompt": "Do you not perceive that your plans lie exposed? Do you not see that your conspiracy is already held fast by the knowledge of all these men?",
+    "answer": "Patere tua cōnsilia nōn sentīs; cōnstrictam iam hōrum omnium scientia tenērī coniūrātiōnem tuam nōn vidēs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Patere",
+     "tua",
+     "cōnsilia",
+     "nōn",
+     "sentīs",
+     "cōnstrictam",
+     "iam",
+     "hōrum",
+     "omnium",
+     "scientia",
+     "tenērī",
+     "coniūrātiōnem",
+     "tuam",
+     "nōn",
+     "vidēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "Caesar did not reject the condition, and now believed that the man was returning to sanity.",
+    "answer": "Nōn respuit condiciōnem Caesar, iamque eum ad sānitātem revertī arbitrābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "respuit",
+     "condiciōnem",
+     "Caesar",
+     "iamque",
+     "eum",
+     "ad",
+     "sānitātem",
+     "revertī",
+     "arbitrābātur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.42"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q4",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "They themselves, scattered, kept fighting out from the woods and prevented our men from entering within the fortifications.",
+    "answer": "Ipsī ex silvīs rārī prōpugnābant nostrōsque intrā mūnītiōnēs ingredī prohibēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ipsī",
+     "ex",
+     "silvīs",
+     "rārī",
+     "prōpugnābant",
+     "nostrōsque",
+     "intrā",
+     "mūnītiōnēs",
+     "ingredī",
+     "prohibēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico"
+    }
+   },
+   {
+    "prompt": "Caesar noticed that the Sequani alone of all did none of those things which the rest were doing, but, downcast, with head lowered, gazed at the ground.",
+    "answer": "Animadvertit Caesar ūnōs ex omnibus Sēquanōs nihil eārum rērum facere quās cēterī facerent sēd trīstēs capite dēmissō terram intuērī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Animadvertit",
+     "Caesar",
+     "ūnōs",
+     "ex",
+     "omnibus",
+     "Sēquanōs",
+     "nihil",
+     "eārum",
+     "rērum",
+     "facere",
+     "quās",
+     "cēterī",
+     "facerent",
+     "sēd",
+     "trīstēs",
+     "capite",
+     "dēmissō",
+     "terram",
+     "intuērī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.32"
+    }
+   },
+   {
+    "prompt": "A thing must first exist, and then be of a certain quality.",
+    "answer": "Prius aliquid esse dēbet, deinde quāle esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prius",
+     "aliquid",
+     "esse",
+     "dēbet",
+     "deinde",
+     "quāle",
+     "esse"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "117.27.6"
+    }
+   },
+   {
+    "prompt": "Then he displayed his back, foul with the fresh marks of the lash.",
+    "answer": "Inde ostentāre tergum foedum recentibus vestīgiīs verberum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Inde",
+     "ostentāre",
+     "tergum",
+     "foedum",
+     "recentibus",
+     "vestīgiīs",
+     "verberum"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "2.23.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q5",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "What of those who even go on learning something? Just as we see Solon glorying in his verses, who says that he grows old learning something new every day.",
+    "answer": "Quī etiam addiscunt aliquid? Ut et Solōnem versibus glōriantem vidēmus quī sē cotīdiē aliquid addiscentem dīcit senem fierī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "etiam",
+     "addiscunt",
+     "aliquid",
+     "Ut",
+     "et",
+     "Solōnem",
+     "versibus",
+     "glōriantem",
+     "vidēmus",
+     "quī",
+     "sē",
+     "cotīdiē",
+     "aliquid",
+     "addiscentem",
+     "dīcit",
+     "senem",
+     "fierī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior De Senectute",
+     "locus": "26"
+    }
+   },
+   {
+    "prompt": "To do harm is easy, to do good is hard.",
+    "answer": "Nocēre facile est, prōdesse difficile.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nocēre",
+     "facile",
+     "est",
+     "prōdesse",
+     "difficile"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio oratoria"
+    }
+   },
+   {
+    "prompt": "I consider the first proof of a well-ordered mind to be the ability to remain still and to linger in one's own company.",
+    "answer": "Prīmum argūmentum compositae mentis exīstimō posse cōnsistere et sēcum morārī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmum",
+     "argūmentum",
+     "compositae",
+     "mentis",
+     "exīstimō",
+     "posse",
+     "cōnsistere",
+     "et",
+     "sēcum",
+     "morārī"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.1"
+    }
+   },
+   {
+    "prompt": "Because, once that town was recovered, he was confident that he would bring the state of the Bituriges into his power.",
+    "answer": "Quod eō oppidō receptō, cīvitātem Biturigum sē in potestātem redāctūrum cōnfīdēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "eō",
+     "oppidō",
+     "receptō",
+     "cīvitātem",
+     "Biturigum",
+     "sē",
+     "in",
+     "potestātem",
+     "redāctūrum",
+     "cōnfīdēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q6",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "But now it has seemed good to me to write something to you about old age.",
+    "answer": "Nunc autem vīsum est mihi dē senectūte aliquid ad tē cōnscrībere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nunc",
+     "autem",
+     "vīsum",
+     "est",
+     "mihi",
+     "dē",
+     "senectūte",
+     "aliquid",
+     "ad",
+     "tē",
+     "cōnscrībere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior De Senectute",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "How it used to delight him to foretell to us, long in advance, the eclipses of the sun and moon!",
+    "answer": "Quam dēlectābat eum dēfectiōnēs sōlis et lūnae multō ante nōbīs praedīcere!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "dēlectābat",
+     "eum",
+     "dēfectiōnēs",
+     "sōlis",
+     "et",
+     "lūnae",
+     "multō",
+     "ante",
+     "nōbīs",
+     "praedīcere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "14.49"
+    }
+   },
+   {
+    "prompt": "Wherefore, he declared, nothing is so detestable and so deadly as pleasure, since, when it is greater and more prolonged, it extinguishes all the light of the soul.",
+    "answer": "Quōcircā nihil esse tam dētestābile tamque pestiferum quam voluptātem, siquidem ea, cum maior esset atque longinquior, omne animī lūmen exstingueret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōcircā",
+     "nihil",
+     "esse",
+     "tam",
+     "dētestābile",
+     "tamque",
+     "pestiferum",
+     "quam",
+     "voluptātem",
+     "siquidem",
+     "ea",
+     "cum",
+     "maior",
+     "esset",
+     "atque",
+     "longinquior",
+     "omne",
+     "animī",
+     "lūmen",
+     "exstingueret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "12.41"
+    }
+   },
+   {
+    "prompt": "I have gladly learned from those who come from you that you live on familiar terms with your slaves: this befits your wisdom, this your learning.",
+    "answer": "Libenter ex iīs quī ā tē veniunt cognōvī familiāriter tē cum servīs tuīs vīvere: hoc prūdentiam tuam, hoc ērudītiōnem decet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Libenter",
+     "ex",
+     "iīs",
+     "quī",
+     "ā",
+     "tē",
+     "veniunt",
+     "cognōvī",
+     "familiāriter",
+     "tē",
+     "cum",
+     "servīs",
+     "tuīs",
+     "vīvere",
+     "hoc",
+     "prūdentiam",
+     "tuam",
+     "hoc",
+     "ērudītiōnem",
+     "decet"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.47.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q7",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "I judge, therefore, that you act most rightly in that you do not wish to be feared by your slaves, in that you use the chastisement of words; dumb animals are admonished by blows.",
+    "answer": "Rēctissime ergō facere tē iūdicō quod timērī ā servīs tuīs nōn vīs, quod verbōrum castīgātiōne uterīs; verberibus mūta admonentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēctissime",
+     "ergō",
+     "facere",
+     "tē",
+     "iūdicō",
+     "quod",
+     "timērī",
+     "ā",
+     "servīs",
+     "tuīs",
+     "nōn",
+     "vīs",
+     "quod",
+     "verbōrum",
+     "castīgātiōne",
+     "uterīs",
+     "verberibus",
+     "mūta",
+     "admonentur"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.19"
+    }
+   },
+   {
+    "prompt": "I could go through very many delights of country life; but these very things which I have said I feel have been rather long.",
+    "answer": "Possum persequī permulta oblectāmenta rērum rūsticārum; sed haec ipsa, quae dīxī, sentiō fuisse longiōra.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Possum",
+     "persequī",
+     "permulta",
+     "oblectāmenta",
+     "rērum",
+     "rūsticārum",
+     "sed",
+     "haec",
+     "ipsa",
+     "quae",
+     "dīxī",
+     "sentiō",
+     "fuisse",
+     "longiōra"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "16.55"
+    }
+   },
+   {
+    "prompt": "And yet a man who does not miss it does not lack it; therefore I say that not to miss it is the more pleasant thing.",
+    "answer": "Quamquam nōn caret is, quī nōn dēsīderat; ergō hōc nōn dēsīderāre dīcō esse iūcundius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "nōn",
+     "caret",
+     "is",
+     "quī",
+     "nōn",
+     "dēsīderat",
+     "ergō",
+     "hōc",
+     "nōn",
+     "dēsīderāre",
+     "dīcō",
+     "esse",
+     "iūcundius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "14.47"
+    }
+   },
+   {
+    "prompt": "You are mistaken if you think I will reject certain men as being of a rather base occupation — like that muleteer, say, and that oxherd.",
+    "answer": "Errās, sī exīstimās mē quōsdam quasi sordidiōris operae reiectūrum — ut putā illum mūliōnem et illum bubulcum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Errās",
+     "sī",
+     "exīstimās",
+     "mē",
+     "quōsdam",
+     "quasi",
+     "sordidiōris",
+     "operae",
+     "reiectūrum",
+     "ut",
+     "putā",
+     "illum",
+     "mūliōnem",
+     "et",
+     "illum",
+     "bubulcum"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.15"
+    }
+   }
+  ]
  }
 ]

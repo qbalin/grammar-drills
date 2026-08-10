@@ -1453,5 +1453,812 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-186-the-dative-q1",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "He said that two things had been a source of shame to him.",
+    "answer": "Dīxit duās rēs eī rubōrī fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīxit",
+     "duās",
+     "rēs",
+     "eī",
+     "rubōrī",
+     "fuisse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "45"
+    }
+   },
+   {
+    "prompt": "Among the foremost, moreover, I count those too who have leisure for nothing except wine and lust; for none are more basely occupied.",
+    "answer": "In prīmīs autem et illōs numerō quī nūllī reī nisi vīnō ac libīdinī vacant; nūllī enim turpius occupātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "prīmīs",
+     "autem",
+     "et",
+     "illōs",
+     "numerō",
+     "quī",
+     "nūllī",
+     "reī",
+     "nisi",
+     "vīnō",
+     "ac",
+     "libīdinī",
+     "vacant",
+     "nūllī",
+     "enim",
+     "turpius",
+     "occupātī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "De brevitate vitae",
+     "locus": "7"
+    }
+   },
+   {
+    "prompt": "The ancients had a custom, preserved down to my own age.",
+    "answer": "Mōs antīquīs fuit usque ad meam servātus aetātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mōs",
+     "antīquīs",
+     "fuit",
+     "usque",
+     "ad",
+     "meam",
+     "servātus",
+     "aetātem"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae Morales ad Lucilium Epistula",
+     "locus": "XV"
+    }
+   },
+   {
+    "prompt": "Show who is not a slave: one is a slave to lust, another to greed, another to ambition, all to fear.",
+    "answer": "Ostende quis nōn sit: alius libīdinī servit, alius avāritiae, alius ambitiōnī, omnēs timōrī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ostende",
+     "quis",
+     "nōn",
+     "sit",
+     "alius",
+     "libīdinī",
+     "servit",
+     "alius",
+     "avāritiae",
+     "alius",
+     "ambitiōnī",
+     "omnēs",
+     "timōrī"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.17"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q2",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "For I pass over those things too ancient — that Gaius Servilius Ahala slew with his own hand Spurius Maelius, who was aiming at revolution.",
+    "answer": "Nam illa nimis antīqua praetereō, quod C. Servīlius Ahāla Sp. Maelium novīs rēbus studentem manū suā occīdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nam",
+     "illa",
+     "nimis",
+     "antīqua",
+     "praetereō",
+     "quod",
+     "C",
+     "Servīlius",
+     "Ahāla",
+     "Sp",
+     "Maelium",
+     "novīs",
+     "rēbus",
+     "studentem",
+     "manū",
+     "suā",
+     "occīdit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.3"
+    }
+   },
+   {
+    "prompt": "Above all, the service of Gaius Popilius, a knight, was conspicuous; his surname was Sabellus.",
+    "answer": "Ante omnēs īnsignis operā fuit C. Popilī equitis; Sabellō cognōmen erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ante",
+     "omnēs",
+     "īnsignis",
+     "operā",
+     "fuit",
+     "C",
+     "Popilī",
+     "equitis",
+     "Sabellō",
+     "cognōmen",
+     "erat"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "41.4.6"
+    }
+   },
+   {
+    "prompt": "Convince yourself that this is so, as I write: some times are snatched from us, some are stolen away, some flow off.",
+    "answer": "Persuādē tibi hoc sīc esse ut scrībō: quaedam tempora ēripiuntur nōbīs, quaedam subdūcuntur, quaedam effluunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Persuādē",
+     "tibi",
+     "hoc",
+     "sīc",
+     "esse",
+     "ut",
+     "scrībō",
+     "quaedam",
+     "tempora",
+     "ēripiuntur",
+     "nōbīs",
+     "quaedam",
+     "subdūcuntur",
+     "quaedam",
+     "effluunt"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.1"
+    }
+   },
+   {
+    "prompt": "To these most sacred voices of the state, and to the minds of those men who feel this same thing, I will make a brief reply.",
+    "answer": "Hīs ego sānctissimīs reī pūblicae vōcibus et eōrum hominum, quī hoc idem sentiunt, mentibus paucā respondēbō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hīs",
+     "ego",
+     "sānctissimīs",
+     "reī",
+     "pūblicae",
+     "vōcibus",
+     "et",
+     "eōrum",
+     "hominum",
+     "quī",
+     "hoc",
+     "idem",
+     "sentiunt",
+     "mentibus",
+     "paucā",
+     "respondēbō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.29"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q3",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "For pleasure hinders good counsel; it is hostile to reason; it blunts, so to speak, the eyes of the mind; and it has no dealings with virtue.",
+    "answer": "Impedit enim cōnsilium voluptās; ratiōnī inimīca est; mentīs, ut ita dīcam, praestringit oculōs; nec habet ūllum cum virtūte commercium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Impedit",
+     "enim",
+     "cōnsilium",
+     "voluptās",
+     "ratiōnī",
+     "inimīca",
+     "est",
+     "mentīs",
+     "ut",
+     "ita",
+     "dīcam",
+     "praestringit",
+     "oculōs",
+     "nec",
+     "habet",
+     "ūllum",
+     "cum",
+     "virtūte",
+     "commercium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "12.42"
+    }
+   },
+   {
+    "prompt": "Now in action, what soldier is equal to a Roman one?",
+    "answer": "Iam in opere quis pār Rōmānō mīles?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iam",
+     "in",
+     "opere",
+     "quis",
+     "pār",
+     "Rōmānō",
+     "mīles"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita :",
+     "locus": "9.19"
+    }
+   },
+   {
+    "prompt": "Wherefore, depart and take this fear from me; if it is true, so that I may not be crushed, but if it is false, so that at last I may some day cease to fear.",
+    "answer": "Quam ob rem, discēde atque hunc mihi timōrem ēripe; sī est vērus, nē opprimar, sīn falsus, ut tandem aliquandō timēre dēsinam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "ob",
+     "rem",
+     "discēde",
+     "atque",
+     "hunc",
+     "mihi",
+     "timōrem",
+     "ēripe",
+     "sī",
+     "est",
+     "vērus",
+     "nē",
+     "opprimar",
+     "sīn",
+     "falsus",
+     "ut",
+     "tandem",
+     "aliquandō",
+     "timēre",
+     "dēsinam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.18"
+    }
+   },
+   {
+    "prompt": "To Valerius Potitus the province of the Volscians had fallen by lot.",
+    "answer": "Valeriō Potītō Volscī prōvincia ēvēnerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Valeriō",
+     "Potītō",
+     "Volscī",
+     "prōvincia",
+     "ēvēnerat"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "5.12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q4",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "They kept giving way to the Roman legions and retreating into the city; when they had perceived that the legions were withdrawn, they raided the fields, dodging war by peace and peace by war in turn.",
+    "answer": "Legiōnibus Rōmānīs cēdēbant in urbem; ubi abductās sēnserant legiōnēs, agrōs incursābant, bellum quiēte quiētem bellō in vicem ēlūdentēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Legiōnibus",
+     "Rōmānīs",
+     "cēdēbant",
+     "in",
+     "urbem",
+     "ubi",
+     "abductās",
+     "sēnserant",
+     "legiōnēs",
+     "agrōs",
+     "incursābant",
+     "bellum",
+     "quiēte",
+     "quiētem",
+     "bellō",
+     "in",
+     "vicem",
+     "ēlūdentēs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita libri",
+     "locus": "2.48.6"
+    }
+   },
+   {
+    "prompt": "Food does no good and does not reach the body when, as soon as it is swallowed, it is expelled.",
+    "answer": "Nōn prōdest cibus nec corporī accēdit quī statim sūmptus ēmittitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "prōdest",
+     "cibus",
+     "nec",
+     "corporī",
+     "accēdit",
+     "quī",
+     "statim",
+     "sūmptus",
+     "ēmittitur"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.3"
+    }
+   },
+   {
+    "prompt": "Vorenus, his enemy, runs to his aid and comes to the help of the struggling man.",
+    "answer": "Succurrit inimīcus illī Vorēnus et labōrantī subvenit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Succurrit",
+     "inimīcus",
+     "illī",
+     "Vorēnus",
+     "et",
+     "labōrantī",
+     "subvenit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5.44"
+    }
+   },
+   {
+    "prompt": "For beasts of burden no other grass is more welcome, whether green or dried in hay and, when it is served, sprinkled with water.",
+    "answer": "Iūmentīs herba nōn alia grātior, sīve viridis sīve in fēnō siccāta et, cum dētur, adspersa aquā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūmentīs",
+     "herba",
+     "nōn",
+     "alia",
+     "grātior",
+     "sīve",
+     "viridis",
+     "sīve",
+     "in",
+     "fēnō",
+     "siccāta",
+     "et",
+     "cum",
+     "dētur",
+     "adspersa",
+     "aquā"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "24.118.178"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q5",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "They do not study agriculture, and the greater part of their food consists of milk, cheese, and meat.",
+    "answer": "Agrīcultūrae nōn student, maiorque pars eōrum vīctūs in lacte, cāseō, carne cōnsistit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Agrīcultūrae",
+     "nōn",
+     "student",
+     "maiorque",
+     "pars",
+     "eōrum",
+     "vīctūs",
+     "in",
+     "lacte",
+     "cāseō",
+     "carne",
+     "cōnsistit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.22"
+    }
+   },
+   {
+    "prompt": "But we, brave men, seem to do enough for the republic if we avoid that man's fury and weapons.",
+    "answer": "Nōs autem, fortēs virī, satis facere reī pūblicae vidēmur sī istīus furōrem ac tēla vītēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōs",
+     "autem",
+     "fortēs",
+     "virī",
+     "satis",
+     "facere",
+     "reī",
+     "pūblicae",
+     "vidēmur",
+     "sī",
+     "istīus",
+     "furōrem",
+     "ac",
+     "tēla",
+     "vītēmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "How often already has that dagger of yours been wrested from your hands?",
+    "answer": "Quotiēns iam tibi extorta est ista sīca de manibus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quotiēns",
+     "iam",
+     "tibi",
+     "extorta",
+     "est",
+     "ista",
+     "sīca",
+     "de",
+     "manibus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "Of land animals, man alone is two-footed; to him alone belong collar-bones and shoulders, to the rest shoulder-blades, and to him alone forearms.",
+    "answer": "Terrestrium sōlus homō̆ bipēs. ūnī iugulī, umerī, cēterīs armī; ūnī ulnae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Terrestrium",
+     "sōlus",
+     "homō",
+     "bipēs",
+     "ūnī",
+     "iugulī",
+     "umerī",
+     "cēterīs",
+     "armī",
+     "ūnī",
+     "ulnae"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "11.43.98"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q6",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "Do you not see even this—how our ancestors stripped all odium from masters and all insult from slaves?",
+    "answer": "Nē illud quidem vidētis, quam omnem invidiam maiōrēs nostrī dominīs, omnem contumēliam servīs dētrāxerint?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "illud",
+     "quidem",
+     "vidētis",
+     "quam",
+     "omnem",
+     "invidiam",
+     "maiōrēs",
+     "nostrī",
+     "dominīs",
+     "omnem",
+     "contumēliam",
+     "servīs",
+     "dētrāxerint"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.14"
+    }
+   },
+   {
+    "prompt": "For this class of soldiers the senate had fixed the same term of service as it had for the men of Cannae.",
+    "answer": "Huic generī mīlitum senātus eundem, quem Cannensibus, fīnem statuerat mīlitiae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Huic",
+     "generī",
+     "mīlitum",
+     "senātus",
+     "eundem",
+     "quem",
+     "Cannensibus",
+     "fīnem",
+     "statuerat",
+     "mīlitiae"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "26.1"
+    }
+   },
+   {
+    "prompt": "You ought to live for another, if you wish to live for yourself.",
+    "answer": "Alterī vīvās oportet, sī vīs tibī̆ vīvere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alterī",
+     "vīvās",
+     "oportet",
+     "sī",
+     "vīs",
+     "tibī",
+     "vīvere"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "48.2"
+    }
+   },
+   {
+    "prompt": "I will show you an ex-consul enslaved to a little old woman, a rich man enslaved to a servant-girl; I will point out well-born youths who are the chattels of pantomime-players: no slavery is more shameful than the one that is voluntary.",
+    "answer": "Dabō cōnsulārem aniculae servientem, dabō ancillulae dīvitem, ostendam nōbilissimōs iuvenēs mancipia pantomīmōrum: nūlla servitūs turpior est quam voluntāria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dabō",
+     "cōnsulārem",
+     "aniculae",
+     "servientem",
+     "dabō",
+     "ancillulae",
+     "dīvitem",
+     "ostendam",
+     "nōbilissimōs",
+     "iuvenēs",
+     "mancipia",
+     "pantomīmōrum",
+     "nūlla",
+     "servitūs",
+     "turpior",
+     "est",
+     "quam",
+     "voluntāria"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.17"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q7",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "The farthest town of the Allobroges, and the nearest to the territory of the Helvetii, is Geneva.",
+    "answer": "Extrēmum oppidum Allobrogum est proximumque Helvētiōrum fīnibus Genāva.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Extrēmum",
+     "oppidum",
+     "Allobrogum",
+     "est",
+     "proximumque",
+     "Helvētiōrum",
+     "fīnibus",
+     "Genāva"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.6"
+    }
+   },
+   {
+    "prompt": "He is of a great and lofty spirit, and he will never yield to his enemies, not even to fortune.",
+    "answer": "Magnō animō et ērēctō est, nec umquam succumbet inimīcīs, nē fortūnae quidem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magnō",
+     "animō",
+     "et",
+     "ērēctō",
+     "est",
+     "nec",
+     "umquam",
+     "succumbet",
+     "inimīcīs",
+     "nē",
+     "fortūnae",
+     "quidem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro rege Deiotaro",
+     "locus": "36"
+    }
+   },
+   {
+    "prompt": "As long as you plotted against me, the consul-elect, Catiline, I defended myself not with a public guard but with private diligence.",
+    "answer": "Quamdiū mihi cōnsulī dēsignātō, Catilīna, īnsidiātus es, nōn pūblicō mē praesidiō sed prīvātā dīligentiā dēfendī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamdiū",
+     "mihi",
+     "cōnsulī",
+     "dēsignātō",
+     "Catilīna",
+     "īnsidiātus",
+     "es",
+     "nōn",
+     "pūblicō",
+     "mē",
+     "praesidiō",
+     "sed",
+     "prīvātā",
+     "dīligentiā",
+     "dēfendī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.11"
+    }
+   },
+   {
+    "prompt": "If this has happened to no one within human memory, do you wait for the reproach of a spoken word, when you are crushed by the most weighty verdict of silence?",
+    "answer": "Sī hoc post hominum memoriam contigit nēminī, vōcis exspectās contumēliam, cum sīs gravissimō iūdiciō taciturnitātis oppressus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "hoc",
+     "post",
+     "hominum",
+     "memoriam",
+     "contigit",
+     "nēminī",
+     "vōcis",
+     "exspectās",
+     "contumēliam",
+     "cum",
+     "sīs",
+     "gravissimō",
+     "iūdiciō",
+     "taciturnitātis",
+     "oppressus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q8",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "What mark of domestic disgrace has not been branded on your life?",
+    "answer": "Quae nota domesticae turpitūdinis nōn inusta vītae tuae est?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "nota",
+     "domesticae",
+     "turpitūdinis",
+     "nōn",
+     "inusta",
+     "vītae",
+     "tuae",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.13"
+    }
+   },
+   {
+    "prompt": "But it turned out for me as for most people who have been reduced to poverty through no fault of their own: everyone forgives, no one comes to the rescue.",
+    "answer": "Sed ēvēnit mihi quod plērīsque nōn suō vitiō ad inopiam redāctīs: omnēs ignōscunt, nēmō succurrit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sed",
+     "ēvēnit",
+     "mihi",
+     "quod",
+     "plērīsque",
+     "nōn",
+     "suō",
+     "vitiō",
+     "ad",
+     "inopiam",
+     "redāctīs",
+     "omnēs",
+     "ignōscunt",
+     "nēmō",
+     "succurrit"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.4"
+    }
+   },
+   {
+    "prompt": "He put Gaius Volcatius Tullus, a young man, in charge of that post and garrison.",
+    "answer": "Eī locō praesidioque Gāium Volcātium Tullum adulēscentem praefēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eī",
+     "locō",
+     "praesidioque",
+     "Gāium",
+     "Volcātium",
+     "Tullum",
+     "adulēscentem",
+     "praefēcit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.29"
+    }
+   }
+  ]
  }
 ]

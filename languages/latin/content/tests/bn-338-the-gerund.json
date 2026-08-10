@@ -1012,5 +1012,227 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-338-the-gerund-q1",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "What of the fact that you yourself gave yourself into custody, that you said you wished to live at Marcus Lepidus's house for the sake of avoiding suspicion?",
+    "answer": "Quid quod tū tē ipse in cūstōdiam dedistī, quod vītandae suspīciōnis causā ad M. Lepidum tē habitāre velle dīxistī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "quod",
+     "tū",
+     "tē",
+     "ipse",
+     "in",
+     "cūstōdiam",
+     "dedistī",
+     "quod",
+     "vītandae",
+     "suspīciōnis",
+     "causā",
+     "ad",
+     "M",
+     "Lepidum",
+     "tē",
+     "habitāre",
+     "velle",
+     "dīxistī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.19"
+    }
+   },
+   {
+    "prompt": "Nor are they ignorant of this, but they seize the occasion for doing harm by complaining; they have received an injury in order that they might inflict one.",
+    "answer": "Nec hoc ignōrant, sed occāsiōnem nocendī captant querendō; accēpērunt iniūriam ut facerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "hoc",
+     "ignōrant",
+     "sed",
+     "occāsiōnem",
+     "nocendī",
+     "captant",
+     "querendō",
+     "accēpērunt",
+     "iniūriam",
+     "ut",
+     "facerent"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.20"
+    }
+   },
+   {
+    "prompt": "They judged that two years were enough for accomplishing these things; they fix their departure for the third year by law.",
+    "answer": "Ad eās rēs cōnficiendās biennium sibi satis esse dūxērunt; in tertium annum profectiōnem lēge cōnfirmant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ad",
+     "eās",
+     "rēs",
+     "cōnficiendās",
+     "biennium",
+     "sibi",
+     "satis",
+     "esse",
+     "dūxērunt",
+     "in",
+     "tertium",
+     "annum",
+     "profectiōnem",
+     "lēge",
+     "cōnfirmant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.3"
+    }
+   },
+   {
+    "prompt": "He roused them, weary and refusing out of boredom and toil, now by entreating, now by chiding.",
+    "answer": "Ille fessōs abnuentēsque taediō et labōre nunc precandō, nunc castigandō accendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ille",
+     "fessōs",
+     "abnuentēsque",
+     "taediō",
+     "et",
+     "labōre",
+     "nunc",
+     "precandō",
+     "nunc",
+     "castigandō",
+     "accendit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "27.49.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q2",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "Whoever believes that would surely not deny that dragons, by licking his ears, gave to the augur Melampus the understanding of the speech of birds.",
+    "answer": "Quī crēdat ista, et Melampodī profectō augurī aurēs lambendō dedisse intellēctum avium sermōnis dracōnes nōn abnuat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "crēdat",
+     "ista",
+     "et",
+     "Melampodī",
+     "profectō",
+     "augurī",
+     "aurēs",
+     "lambendō",
+     "dedisse",
+     "intellēctum",
+     "avium",
+     "sermōnis",
+     "dracōnes",
+     "nōn",
+     "abnuat"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "10.70.137"
+    }
+   },
+   {
+    "prompt": "Moreover, the man who had enlarged the Roman people by land captured from the enemy possessed the right of extending the pomerium.",
+    "answer": "Habēbat autem iūs prōferendī pōmēriī quī populum Rōmānum agrō dē hostibus captō auxerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Habēbat",
+     "autem",
+     "iūs",
+     "prōferendī",
+     "pōmēriī",
+     "quī",
+     "populum",
+     "Rōmānum",
+     "agrō",
+     "dē",
+     "hostibus",
+     "captō",
+     "auxerat"
+    ],
+    "source": {
+     "author": "Aulus Gellius",
+     "work": "Noctes Atticae",
+     "locus": "13.14.3"
+    }
+   },
+   {
+    "prompt": "For it is now permitted, the subtlety of debate laid aside, to contemplate with the eyes in a certain way the beauty of those things which we say were established by divine providence.",
+    "answer": "Licet enim iam remōtā subtīlitāte disputandī oculīs quōdam modō contemplārī pulchritūdinem rērum eārum, quās dīvīnā prōvidentiā dīcimus cōnstituās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Licet",
+     "enim",
+     "iam",
+     "remōtā",
+     "subtīlitāte",
+     "disputandī",
+     "oculīs",
+     "quōdam",
+     "modō",
+     "contemplārī",
+     "pulchritūdinem",
+     "rērum",
+     "eārum",
+     "quās",
+     "dīvīnā",
+     "prōvidentiā",
+     "dīcimus",
+     "cōnstituās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "II"
+    }
+   },
+   {
+    "prompt": "You are alive, and you are alive not to lay aside your boldness, but to strengthen it.",
+    "answer": "Vīvis, et vīvis nōn ad dēpōnendam, sed ad cōnfirmandam audāciam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīvis",
+     "et",
+     "vīvis",
+     "nōn",
+     "ad",
+     "dēpōnendam",
+     "sed",
+     "ad",
+     "cōnfirmandam",
+     "audāciam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.4"
+    }
+   }
+  ]
  }
 ]

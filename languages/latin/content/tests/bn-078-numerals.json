@@ -1506,5 +1506,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-078-numerals-q1",
+  "sectionId": "bn-078-numerals",
+  "questions": [
+   {
+    "prompt": "The other pulses take up sixty days'-work, that is, two months.",
+    "answer": "Cētera legūmina occupant operās sexāgintā, id est mēnsēs duōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cētera",
+     "legūmina",
+     "occupant",
+     "operās",
+     "sexāgintā",
+     "id",
+     "est",
+     "mēnsēs",
+     "duōs"
+    ],
+    "source": {
+     "author": "Columella",
+     "work": "De Re Rustica",
+     "locus": "2.12.18"
+    }
+   },
+   {
+    "prompt": "And so, to settle this care too, it is right that each month single loads of manure be returned for each smaller animal, and ten apiece for the larger.",
+    "answer": "Quod ut hanc quōque cūram dēterminēmus, iūstum mēnse singulās vehēs fimī redīre in singulās pecudēs minōrēs, in maiōrēs dēnās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "ut",
+     "hanc",
+     "quōque",
+     "cūram",
+     "dēterminēmus",
+     "iūstum",
+     "mēnse",
+     "singulās",
+     "vehēs",
+     "fimī",
+     "redīre",
+     "in",
+     "singulās",
+     "pecudēs",
+     "minōrēs",
+     "in",
+     "maiōrēs",
+     "dēnās"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "18.23.53"
+    }
+   },
+   {
+    "prompt": "Seventeen years earlier he had taken two sets of spoils.",
+    "answer": "Ante decem et septem annōs bīna cēperat spolia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ante",
+     "decem",
+     "et",
+     "septem",
+     "annōs",
+     "bīna",
+     "cēperat",
+     "spolia"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "7.103.2"
+    }
+   }
+  ]
  }
 ]

@@ -424,5 +424,102 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-277-deliberative-subjunctive-q1",
+  "sectionId": "bn-277-deliberative-subjunctive",
+  "questions": [
+   {
+    "prompt": "Why should I mention the births, the sowings, the growths of vines? I cannot be sated with the delight, so that you may come to know the rest and solace of my old age.",
+    "answer": "Quid ego vitium ortūs, satūs, incrēmenta commemorem? Satiārī dēlectātiōne nōn possum, ut meae senectūtis requiem oblectāmentumque nōscātis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "ego",
+     "vitium",
+     "ortūs",
+     "satūs",
+     "incrēmenta",
+     "commemorem",
+     "Satiārī",
+     "dēlectātiōne",
+     "nōn",
+     "possum",
+     "ut",
+     "meae",
+     "senectūtis",
+     "requiem",
+     "oblectāmentumque",
+     "nōscātis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "15.52"
+    }
+   },
+   {
+    "prompt": "Is an inheritance to be claimed, one which is not owed at all, to become the praetor's plunder?",
+    "answer": "Petātur hērēditās ea, quae nūlla dēbētur, in praedam praetōris?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Petātur",
+     "hērēditās",
+     "ea",
+     "quae",
+     "nūlla",
+     "dēbētur",
+     "in",
+     "praedam",
+     "praetōris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.2.43"
+    }
+   },
+   {
+    "prompt": "Am I to grieve, or to rejoice at my husband's return?",
+    "answer": "Utrumne doleam laeter an reducem virum?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utrumne",
+     "doleam",
+     "laeter",
+     "an",
+     "reducem",
+     "virum"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Agamemnon",
+     "locus": "579"
+    }
+   },
+   {
+    "prompt": "What am I to say about Prodicus of Ceos, about Thrasymachus of Chalcedon, about Protagoras of Abdera?",
+    "answer": "Quid dē Prōdīcō Ciō, dē Thrasymacho Calchedonio, dē Protagora Abdērītā loquar?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "dē",
+     "Prōdīcō",
+     "Ciō",
+     "dē",
+     "Thrasymacho",
+     "Calchedonio",
+     "dē",
+     "Protagora",
+     "Abdērītā",
+     "loquar"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De oratore",
+     "locus": "3.32.128"
+    }
+   }
+  ]
  }
 ]

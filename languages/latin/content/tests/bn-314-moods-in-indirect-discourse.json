@@ -982,5 +982,85 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q1",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "That it was tedious for the panic-stricken Romans to wait for the Germans' help.",
+    "answer": "Longum esse perterritīs Rōmānīs Germānōrum auxilium exspectāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Longum",
+     "esse",
+     "perterritīs",
+     "Rōmānīs",
+     "Germānōrum",
+     "auxilium",
+     "exspectāre"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.8"
+    }
+   },
+   {
+    "prompt": "But you have heard, senators, the philosopher's voice: he denied that he had ever been desirous of a triumph.",
+    "answer": "At audīstis, patrēs cōnscrīptī, philosophī vōcem: negāvit sē triumphī cupidum umquam fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "audīstis",
+     "patrēs",
+     "cōnscrīptī",
+     "philosophī",
+     "vōcem",
+     "negāvit",
+     "sē",
+     "triumphī",
+     "cupidum",
+     "umquam",
+     "fuisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Pisonem",
+     "locus": "24"
+    }
+   },
+   {
+    "prompt": "Then he related that Crassus said, 'Nay rather, even more comfortably,' and called for cushions, and that they all sat down on those seats which were beneath the plane tree.",
+    "answer": "Tum Crassum ‘immō vērō commodius etiam’; pulvinosque poposcisse et omnīs in eīs sēdibus, quae erant sub platanō, cōnsēdisse dīcēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tum",
+     "Crassum",
+     "immō",
+     "vērō",
+     "commodius",
+     "etiam",
+     "pulvinosque",
+     "poposcisse",
+     "et",
+     "omnīs",
+     "in",
+     "eīs",
+     "sēdibus",
+     "quae",
+     "erant",
+     "sub",
+     "platanō",
+     "cōnsēdisse",
+     "dīcēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De oratore",
+     "locus": "1.29"
+    }
+   }
+  ]
  }
 ]

@@ -501,5 +501,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-090-interrogative-pronouns-q1",
+  "sectionId": "bn-090-interrogative-pronouns",
+  "questions": [
+   {
+    "prompt": "He sent a messenger — whom, or to whom?",
+    "answer": "Nūntium mīsit. Quem aut ad quem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntium",
+     "mīsit",
+     "Quem",
+     "aut",
+     "ad",
+     "quem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro S. Roscio Amerino",
+     "locus": "76.10"
+    }
+   },
+   {
+    "prompt": "What is that order?",
+    "answer": "Quis est iste ōrdō?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "est",
+     "iste",
+     "ōrdō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "6.14"
+    }
+   },
+   {
+    "prompt": "For what is that love of friendship?",
+    "answer": "Quis est enim iste amor amīcitiae?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "est",
+     "enim",
+     "iste",
+     "amor",
+     "amīcitiae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "4.70.6"
+    }
+   },
+   {
+    "prompt": "Is there any shame, Verres, any scruple, any fear?",
+    "answer": "Ecquī pudor est, ecquae religiō, Verrēs, ecquī metus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ecquī",
+     "pudor",
+     "est",
+     "ecquae",
+     "religiō",
+     "Verrēs",
+     "ecquī",
+     "metus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.4.18"
+    }
+   }
+  ]
  }
 ]

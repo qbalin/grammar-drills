@@ -1968,5 +1968,295 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-172-the-accusative-q1",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
+   {
+    "prompt": "O the times, O the customs! The senate understands these things, the consul sees them; yet this man lives — lives?",
+    "answer": "Ō tempora, ō mōrēs! Senātus haec intellegit, cōnsul videt; hic tamen vīvit. Vīvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ō",
+     "tempora",
+     "ō",
+     "mōrēs",
+     "Senātus",
+     "haec",
+     "intellegit",
+     "cōnsul",
+     "videt",
+     "hic",
+     "tamen",
+     "vīvit",
+     "Vīvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "And so Gavius is at once brought before the Mamertine magistrate, and on that very day Verres comes to Messana by chance.",
+    "answer": "Itaque ad magistrātum Mamertinum statim dēdūcitur Gāvius, eoque ipsō diē cāsū Messānam Verrēs venit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Itaque",
+     "ad",
+     "magistrātum",
+     "Mamertinum",
+     "statim",
+     "dēdūcitur",
+     "Gāvius",
+     "eoque",
+     "ipsō",
+     "diē",
+     "cāsū",
+     "Messānam",
+     "Verrēs",
+     "venit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.5.160"
+    }
+   },
+   {
+    "prompt": "Too long has that famous Manlian camp of yours been longing for you as its commander.",
+    "answer": "Nimium diū tē imperātōrem tua illa Mānliāna castra dēsīderant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nimium",
+     "diū",
+     "tē",
+     "imperātōrem",
+     "tua",
+     "illa",
+     "Mānliāna",
+     "castra",
+     "dēsīderant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.10"
+    }
+   },
+   {
+    "prompt": "For the dumb beasts are the most hardworking, the oxen and the sheep: oxen, by whose service we eat bread; sheep, because by their wool they make us glorious.",
+    "answer": "Nam mūtae bēstiae labōriōsissimae bovēs et ovēs: bovēs, quōrum beneficiō pānem mandūcāmus; ovēs, quod lānā illae nōs glōriōsōs faciunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nam",
+     "mūtae",
+     "bēstiae",
+     "labōriōsissimae",
+     "bovēs",
+     "et",
+     "ovēs",
+     "bovēs",
+     "quōrum",
+     "beneficiō",
+     "pānem",
+     "mandūcāmus",
+     "ovēs",
+     "quod",
+     "lānā",
+     "illae",
+     "nōs",
+     "glōriōsōs",
+     "faciunt"
+    ],
+    "source": {
+     "author": "Petronius",
+     "work": "Satyricon",
+     "locus": "56.4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q2",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
+   {
+    "prompt": "When they came to Syracuse, Scipio made ready deeds, not words, to clear himself.",
+    "answer": "Venientibus iīs Syrācūsās Scīpiō rēs, nōn verba ad pūrgandum sēsē parāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Venientibus",
+     "iīs",
+     "Syrācūsās",
+     "Scīpiō",
+     "rēs",
+     "nōn",
+     "verba",
+     "ad",
+     "pūrgandum",
+     "sēsē",
+     "parāvit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita libri",
+     "locus": "29.22"
+    }
+   },
+   {
+    "prompt": "They called the master 'father of the household'; the slaves — a usage which even now survives in mimes — they called 'members of the family.'.",
+    "answer": "Dominum patrem familiae appellāvērunt; servōs, quod etiam in mīmīs adhūc dūrat, familiārēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dominum",
+     "patrem",
+     "familiae",
+     "appellāvērunt",
+     "servōs",
+     "quod",
+     "etiam",
+     "in",
+     "mīmīs",
+     "adhūc",
+     "dūrat",
+     "familiārēs"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.14"
+    }
+   },
+   {
+    "prompt": "Meanwhile Caesar daily kept demanding of the Aedui the grain which they had officially promised.",
+    "answer": "Interim cotīdiē Caesar Haeduōs frūmentum, quod essent pūblicē pollicitī, flāgitāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Interim",
+     "cotīdiē",
+     "Caesar",
+     "Haeduōs",
+     "frūmentum",
+     "quod",
+     "essent",
+     "pūblicē",
+     "pollicitī",
+     "flāgitāre"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "Therefore neither that grain-dealer seems to have been obliged to conceal the facts from the Rhodians, nor this seller of a house from the buyers.",
+    "answer": "Nōn igitur vidētur nec frūmentārius ille Rhodios nec hic aedium vēnditor cēlāre ēmptōrēs dēbuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "igitur",
+     "vidētur",
+     "nec",
+     "frūmentārius",
+     "ille",
+     "Rhodios",
+     "nec",
+     "hic",
+     "aedium",
+     "vēnditor",
+     "cēlāre",
+     "ēmptōrēs",
+     "dēbuisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De officiis",
+     "locus": "3.57"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q3",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
+   {
+    "prompt": "O splendid gift of age, if indeed it takes away from us what is most vicious in youth!",
+    "answer": "Ō praeclārum mūnus aetātis, siquidem id aufert ā nōbīs quod est in adulēscentiā vitiōsissimum!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ō",
+     "praeclārum",
+     "mūnus",
+     "aetātis",
+     "siquidem",
+     "id",
+     "aufert",
+     "ā",
+     "nōbīs",
+     "quod",
+     "est",
+     "in",
+     "adulēscentiā",
+     "vitiōsissimum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "12.39"
+    }
+   },
+   {
+    "prompt": "But for the twentieth day now we have been allowing the edge of these men's authority to grow dull.",
+    "answer": "At nōs vīcēsimum iam diem patimur hebēscere aciem hōrum auctōritātis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "nōs",
+     "vīcēsimum",
+     "iam",
+     "diem",
+     "patimur",
+     "hebēscere",
+     "aciem",
+     "hōrum",
+     "auctōritātis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.4"
+    }
+   },
+   {
+    "prompt": "For I was with him for many hours at Nesis, since he had received your letter a little before.",
+    "answer": "Fuī enim apud illum multās hōrās in Nēside, cum paulō ante tuās litterās accēpisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fuī",
+     "enim",
+     "apud",
+     "illum",
+     "multās",
+     "hōrās",
+     "in",
+     "Nēside",
+     "cum",
+     "paulō",
+     "ante",
+     "tuās",
+     "litterās",
+     "accēpisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "16.2.3.1"
+    }
+   }
+  ]
  }
 ]

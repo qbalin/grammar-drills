@@ -473,5 +473,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-279-optative-subjunctive-q1",
+  "sectionId": "bn-279-optative-subjunctive",
+  "questions": [
+   {
+    "prompt": "Would that I might see that day when I may give you thanks because you forced me to live!",
+    "answer": "Vtinam illum diem videam cum tibī̆ agam grātiās quod mē vīvere coēgistī!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vtinam",
+     "illum",
+     "diem",
+     "videam",
+     "cum",
+     "tibī",
+     "agam",
+     "grātiās",
+     "quod",
+     "mē",
+     "vīvere",
+     "coēgistī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "3.3.1"
+    }
+   },
+   {
+    "prompt": "Would that the immortal gods might give you that mind!",
+    "answer": "Utinam tibi istam mentem dī immortālēs duint!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "tibi",
+     "istam",
+     "mentem",
+     "dī",
+     "immortālēs",
+     "duint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.22"
+    }
+   },
+   {
+    "prompt": "Afranius excels in comedy; would that, having laid bare his own character, he had not tainted his plots with the shameful loves of boys.",
+    "answer": "Togātīs excellit Afrānius; utinam nōn inquināsset argūmenta puerōrum foedīs Amōribus mōrēs suōs fassus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Togātīs",
+     "excellit",
+     "Afrānius",
+     "utinam",
+     "nōn",
+     "inquināsset",
+     "argūmenta",
+     "puerōrum",
+     "foedīs",
+     "Amōribus",
+     "mōrēs",
+     "suōs",
+     "fassus"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio oratoria",
+     "locus": "10.1.100"
+    }
+   }
+  ]
  }
 ]

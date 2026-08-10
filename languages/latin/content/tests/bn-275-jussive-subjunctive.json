@@ -312,5 +312,92 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-275-jussive-subjunctive-q1",
+  "sectionId": "bn-275-jussive-subjunctive",
+  "questions": [
+   {
+    "prompt": "This, however, is the sum of my precept: live with an inferior as you would wish a superior to live with you.",
+    "answer": "Haec tamen praeceptī meī summa est: sīc cum īnferiōre vīvās quemadmodum tēcum superiōrem velīs vīvere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "tamen",
+     "praeceptī",
+     "meī",
+     "summa",
+     "est",
+     "sīc",
+     "cum",
+     "īnferiōre",
+     "vīvās",
+     "quemadmodum",
+     "tēcum",
+     "superiōrem",
+     "velīs",
+     "vīvere"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.11"
+    }
+   },
+   {
+    "prompt": "Just so he says: \"Let them pay court like clients, like morning-callers!\".",
+    "answer": "Ita inquit prōrsus: “Cōlant tamquam clientēs, tamquam salūtātōrēs!”",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ita",
+     "inquit",
+     "prōrsus",
+     "Cōlant",
+     "tamquam",
+     "clientēs",
+     "tamquam",
+     "salūtātōrēs"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.18"
+    }
+   },
+   {
+    "prompt": "Let some dine with you because they are worthy, and some in order that they may become so; for if there is anything servile in them from base association, the company of more honorable men will shake it out of them.",
+    "answer": "Quīdam cēnent tēcum quia dignī sunt, quīdam ut sint; sī quid enim in illīs ex sordidā conversātiōne servīle est, honestiōrum convictus excutiet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quīdam",
+     "cēnent",
+     "tēcum",
+     "quia",
+     "dignī",
+     "sunt",
+     "quīdam",
+     "ut",
+     "sint",
+     "sī",
+     "quid",
+     "enim",
+     "in",
+     "illīs",
+     "ex",
+     "sordidā",
+     "conversātiōne",
+     "servīle",
+     "est",
+     "honestiōrum",
+     "convictus",
+     "excutiet"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.15"
+    }
+   }
+  ]
  }
 ]

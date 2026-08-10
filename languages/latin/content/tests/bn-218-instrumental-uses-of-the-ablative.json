@@ -1470,5 +1470,1127 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q1",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Tears with their moisture ate away her bloodless cheeks.",
+    "answer": "Lacrimae perēdēre hūmōre exsanguēs genās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lacrimae",
+     "perēdēre",
+     "hūmōre",
+     "exsanguēs",
+     "genās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae disputationes",
+     "locus": "3.12"
+    }
+   },
+   {
+    "prompt": "There was nothing in the Catuli such that you would think they used refined judgment of literature, although they were men of letters — but so were others too.",
+    "answer": "Nihil fuit in Catulīs, ut eōs exquisitō iūdiciō putārēs utī litterārum, quamquam erant litteratī; sed et aliī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "fuit",
+     "in",
+     "Catulīs",
+     "ut",
+     "eōs",
+     "exquisitō",
+     "iūdiciō",
+     "putārēs",
+     "utī",
+     "litterārum",
+     "quamquam",
+     "erant",
+     "litteratī",
+     "sed",
+     "et",
+     "aliī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De officiis",
+     "locus": "1.133"
+    }
+   },
+   {
+    "prompt": "I come now to the pleasures of farmers, in which I take incredible delight; and these are hindered by no old age and seem to me to come very close to the life of a wise man.",
+    "answer": "Veniō nunc ad voluptātēs agricolārum, quibus ego incrēdibiliter dēlector; quae nec ūllā impediuntur senectūte et mihi ad sapientis vītam proximē videntur accēdere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Veniō",
+     "nunc",
+     "ad",
+     "voluptātēs",
+     "agricolārum",
+     "quibus",
+     "ego",
+     "incrēdibiliter",
+     "dēlector",
+     "quae",
+     "nec",
+     "ūllā",
+     "impediuntur",
+     "senectūte",
+     "et",
+     "mihi",
+     "ad",
+     "sapientis",
+     "vītam",
+     "proximē",
+     "videntur",
+     "accēdere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "15.51"
+    }
+   },
+   {
+    "prompt": "How many days I have wasted on how frivolous things!",
+    "answer": "Quot diēs quam frīgidīs rēbus absūmpsī!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quot",
+     "diēs",
+     "quam",
+     "frīgidīs",
+     "rēbus",
+     "absūmpsī"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "1.9"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q2",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "The fields have been laid waste, the city exhausted by constant funerals; many famous houses are in mourning.",
+    "answer": "Vāstātī agrī sunt, urbs adsiduīs exhausta fūneribus; multae et clārae lūgubrēs domūs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vāstātī",
+     "agrī",
+     "sunt",
+     "urbs",
+     "adsiduīs",
+     "exhausta",
+     "fūneribus",
+     "multae",
+     "et",
+     "clārae",
+     "lūgubrēs",
+     "domūs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "3.32"
+    }
+   },
+   {
+    "prompt": "These men I see, a consul, and I ask their opinion on the state, and those whom it was fitting to be slain with the sword — these I do not yet wound even with my voice!",
+    "answer": "Hōs ego videō cōnsul et dē rē pūblicā sententiam rogō, et quōs ferrō trucīdārī oportēbat, eōs nōndum vōce volnerō!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōs",
+     "ego",
+     "videō",
+     "cōnsul",
+     "et",
+     "dē",
+     "rē",
+     "pūblicā",
+     "sententiam",
+     "rogō",
+     "et",
+     "quōs",
+     "ferrō",
+     "trucīdārī",
+     "oportēbat",
+     "eōs",
+     "nōndum",
+     "vōce",
+     "volnerō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.9"
+    }
+   },
+   {
+    "prompt": "For, alarmed by the shape of the ships and the motion of the oars and the unusual kind of artillery, the barbarians halted and drew back their foot only a little.",
+    "answer": "Nam et nāvium figūrā et rēmōrum mōtū et inūsitātō genere tormentōrum permōtī barbarī cōnstitērunt āc paulum modo pedem rettulērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nam",
+     "et",
+     "nāvium",
+     "figūrā",
+     "et",
+     "rēmōrum",
+     "mōtū",
+     "et",
+     "inūsitātō",
+     "genere",
+     "tormentōrum",
+     "permōtī",
+     "barbarī",
+     "cōnstitērunt",
+     "āc",
+     "paulum",
+     "modo",
+     "pedem",
+     "rettulērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.25"
+    }
+   },
+   {
+    "prompt": "When everything had been made ready for departure, they appoint a day on which all should assemble at the bank of the Rhone.",
+    "answer": "Omnibus rēbus ad profectiōnem comparātīs, diem dīcunt, quā diē ad rīpam Rhodanī omnēs conveniant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnibus",
+     "rēbus",
+     "ad",
+     "profectiōnem",
+     "comparātīs",
+     "diem",
+     "dīcunt",
+     "quā",
+     "diē",
+     "ad",
+     "rīpam",
+     "Rhodanī",
+     "omnēs",
+     "conveniant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q3",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "I will assess them not by their services but by their character: each man gives himself his character, chance assigns the services.",
+    "answer": "Nōn ministeriīs illōs aestimābō sed mōribus: sibi quisque dat mōrēs, ministeria cāsus assignat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "ministeriīs",
+     "illōs",
+     "aestimābō",
+     "sed",
+     "mōribus",
+     "sibi",
+     "quisque",
+     "dat",
+     "mōrēs",
+     "ministeria",
+     "cāsus",
+     "assignat"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.15"
+    }
+   },
+   {
+    "prompt": "I tell you, Quintus the father is exulting with joy!",
+    "answer": "Narrō tibī̆, Quīntus pater exsultat laetitiā!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Narrō",
+     "tibī",
+     "Quīntus",
+     "pater",
+     "exsultat",
+     "laetitiā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "XV.21.1"
+    }
+   },
+   {
+    "prompt": "Every murmur is checked with the rod, and not even chance sounds are exempt from the lash: coughs, sneezes, hiccups!",
+    "answer": "Virgā murmur omne compescitur, et nē fortuita quidem verberibus excepta sunt: tussēs, sternūmenta, singultūs!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgā",
+     "murmur",
+     "omne",
+     "compescitur",
+     "et",
+     "nē",
+     "fortuita",
+     "quidem",
+     "verberibus",
+     "excepta",
+     "sunt",
+     "tussēs",
+     "sternūmenta",
+     "singultūs"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.3"
+    }
+   },
+   {
+    "prompt": "For I will now speak with you thus, not so as to seem stirred by hatred—as I have a right to be—but by pity, which is owed to you not at all.",
+    "answer": "Sīc enim iam tēcum loquar, nōn ut odiō permōtus esse videar — quō dēbeō — sed ut misericordiā, quae tibi nūlla dēbētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sīc",
+     "enim",
+     "iam",
+     "tēcum",
+     "loquar",
+     "nōn",
+     "ut",
+     "odiō",
+     "permōtus",
+     "esse",
+     "videar",
+     "quō",
+     "dēbeō",
+     "sed",
+     "ut",
+     "misericordiā",
+     "quae",
+     "tibi",
+     "nūlla",
+     "dēbētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q4",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "This one man once killed, I understand that this plague of the state can be checked for a while, but not suppressed forever.",
+    "answer": "Hōc autem ūnō interfectō, intellegō hanc reī pūblicae pestem paulisper reprimī, nōn in perpetuum comprimī posse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōc",
+     "autem",
+     "ūnō",
+     "interfectō",
+     "intellegō",
+     "hanc",
+     "reī",
+     "pūblicae",
+     "pestem",
+     "paulisper",
+     "reprimī",
+     "nōn",
+     "in",
+     "perpetuum",
+     "comprimī",
+     "posse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.30"
+    }
+   },
+   {
+    "prompt": "But how far he ought to seem to be from prison and from chains, seeing that he has already judged himself worthy of custody.",
+    "answer": "Sed quam longē vidētur ā carcere atque ā vinculīs abesse dēbēre, quī sē ipse iam dignum cūstōdia iūdicārit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sed",
+     "quam",
+     "longē",
+     "vidētur",
+     "ā",
+     "carcere",
+     "atque",
+     "ā",
+     "vinculīs",
+     "abesse",
+     "dēbēre",
+     "quī",
+     "sē",
+     "ipse",
+     "iam",
+     "dignum",
+     "cūstōdia",
+     "iūdicārit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.19"
+    }
+   },
+   {
+    "prompt": "Of those who returned home, a census having been taken as Caesar had ordered, the number was found to be a hundred and ten thousand.",
+    "answer": "Eōrum quī domum rediērunt, cēnsū habitō, ut Caesar imperāverat, repertus est numerus mīlium centum et decem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eōrum",
+     "quī",
+     "domum",
+     "rediērunt",
+     "cēnsū",
+     "habitō",
+     "ut",
+     "Caesar",
+     "imperāverat",
+     "repertus",
+     "est",
+     "numerus",
+     "mīlium",
+     "centum",
+     "et",
+     "decem"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico"
+    }
+   },
+   {
+    "prompt": "But I think that, when the life and manner of living of the nobles has been changed, the customs of states are changed.",
+    "answer": "Ego autem nōbilium vītā vīctūque mūtātō mōrēs mūtārī cīvitātum putō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "autem",
+     "nōbilium",
+     "vītā",
+     "vīctūque",
+     "mūtātō",
+     "mōrēs",
+     "mūtārī",
+     "cīvitātum",
+     "putō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Dē Lēgibus",
+     "locus": "3.14.32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q5",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Then at last Liscus, induced by Caesar's speech, sets forth what he had previously kept silent.",
+    "answer": "Tum dēmum Liscus ōrātiōne Caesaris adductus quod anteā tacuerat prōpōnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tum",
+     "dēmum",
+     "Liscus",
+     "ōrātiōne",
+     "Caesaris",
+     "adductus",
+     "quod",
+     "anteā",
+     "tacuerat",
+     "prōpōnit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.17"
+    }
+   },
+   {
+    "prompt": "After his death the Helvetii nonetheless try to do what they had decided: to leave their territory.",
+    "answer": "Post ēius mortem, nihilō minus Helvētiī id quod cōnstituerant facere cōnantur: ut ē fīnibus suīs exeant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "ēius",
+     "mortem",
+     "nihilō",
+     "minus",
+     "Helvētiī",
+     "id",
+     "quod",
+     "cōnstituerant",
+     "facere",
+     "cōnantur",
+     "ut",
+     "ē",
+     "fīnibus",
+     "suīs",
+     "exeant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.5"
+    }
+   },
+   {
+    "prompt": "What is it, Catiline—do you hesitate, at my command, to do what you were already doing of your own accord?",
+    "answer": "Quid est, Catilīna? Num dubitās — id mē imperante — facere quod iam, tuā sponte, faciēbās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "est",
+     "Catilīna",
+     "Num",
+     "dubitās",
+     "id",
+     "mē",
+     "imperante",
+     "facere",
+     "quod",
+     "iam",
+     "tuā",
+     "sponte",
+     "faciēbās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.13"
+    }
+   },
+   {
+    "prompt": "Meanwhile I pass over other cruel, inhuman things, in that we abuse them not even as human beings, but as beasts of burden.",
+    "answer": "Alia interim crūdēlia, inhūmāna praetereō, quod nē tamquam hominibus quidem, sed tamquam iūmentīs abūtimur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alia",
+     "interim",
+     "crūdēlia",
+     "inhūmāna",
+     "praetereō",
+     "quod",
+     "nē",
+     "tamquam",
+     "hominibus",
+     "quidem",
+     "sed",
+     "tamquam",
+     "iūmentīs",
+     "abūtimur"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q6",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Therefore he prepares to attack the island of Mona, strong in inhabitants and a refuge for deserters, and he builds ships with a flat bottom to meet the shallow and shifting water.",
+    "answer": "Igitur Monam īnsulam, incolīs validam et receptāculum perfugārum, adgredī parat, navēsque fābricātur plānō alveō adversus breve et incertum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Igitur",
+     "Monam",
+     "īnsulam",
+     "incolīs",
+     "validam",
+     "et",
+     "receptāculum",
+     "perfugārum",
+     "adgredī",
+     "parat",
+     "navēsque",
+     "fābricātur",
+     "plānō",
+     "alveō",
+     "adversus",
+     "breve",
+     "et",
+     "incertum"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "14.29"
+    }
+   },
+   {
+    "prompt": "And so, worn out by fruitless haste, just as evening was coming on I had made my way to the baths.",
+    "answer": "Ergō igitur inefficācī celeritāte fatīgātus commodum vesperā oriente ad balneās prōcesseram.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ergō",
+     "igitur",
+     "inefficācī",
+     "celeritāte",
+     "fatīgātus",
+     "commodum",
+     "vesperā",
+     "oriente",
+     "ad",
+     "balneās",
+     "prōcesseram"
+    ],
+    "source": {
+     "author": "Apuleius",
+     "work": "Asinus aureus",
+     "locus": "1.5.5"
+    }
+   },
+   {
+    "prompt": "You came into the Senate a little while ago; who out of this so great throng and out of so many of your friends and connections greeted you?",
+    "answer": "Vēnistī paulō ante in Senātum; quis tē ex hāc tantā frequentiā totque tuīs amīcīs ac necessāriīs salūtāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēnistī",
+     "paulō",
+     "ante",
+     "in",
+     "Senātum",
+     "quis",
+     "tē",
+     "ex",
+     "hāc",
+     "tantā",
+     "frequentiā",
+     "totque",
+     "tuīs",
+     "amīcīs",
+     "ac",
+     "necessāriīs",
+     "salūtāvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "At the same time as the Aedui, the Ambarri, kinsmen and blood-relations of the Aedui, inform Caesar that, their fields having been laid waste, they cannot easily keep the enemy's force away from their towns.",
+    "answer": "Eōdem tempore quō Haeduī Ambarrī, necessāriī et cōnsanguineī Haeduōrum, Caesarem certiōrem faciunt sēsē dēpopulātīs agrīs nōn facile ab oppidīs vim hostium prohibēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eōdem",
+     "tempore",
+     "quō",
+     "Haeduī",
+     "Ambarrī",
+     "necessāriī",
+     "et",
+     "cōnsanguineī",
+     "Haeduōrum",
+     "Caesarem",
+     "certiōrem",
+     "faciunt",
+     "sēsē",
+     "dēpopulātīs",
+     "agrīs",
+     "nōn",
+     "facile",
+     "ab",
+     "oppidīs",
+     "vim",
+     "hostium",
+     "prohibēre"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q7",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "In the consulship of Gaius Pompeius and Quintus Veranius, the marriage arranged between Claudius and Agrippina was already being cemented by rumor and by illicit love.",
+    "answer": "Gāiō Pompeiō Quīntō Vērāniō cōnsulibus pactum inter Claudium et Agrippīnam mātrimōnium iam fāmā, iam amōre inlicitō fīrmābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gāiō",
+     "Pompeiō",
+     "Quīntō",
+     "Vērāniō",
+     "cōnsulibus",
+     "pactum",
+     "inter",
+     "Claudium",
+     "et",
+     "Agrippīnam",
+     "mātrimōnium",
+     "iam",
+     "fāmā",
+     "iam",
+     "amōre",
+     "inlicitō",
+     "fīrmābātur"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "12.5.1"
+    }
+   },
+   {
+    "prompt": "Gaius Gracchus, of most distinguished father, grandfather, and ancestors, was killed on account of certain suspicions of sedition; Marcus Fulvius, an ex-consul, was slain together with his children.",
+    "answer": "Interfectus est propter quāsdam sēditiōnum suspīciōnēs C. Gracchus, clārissimō patre, avō, maiōribus; occīsus est cum līberīs M. Fulvius cōnsulāris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Interfectus",
+     "est",
+     "propter",
+     "quāsdam",
+     "sēditiōnum",
+     "suspīciōnēs",
+     "C",
+     "Gracchus",
+     "clārissimō",
+     "patre",
+     "avō",
+     "maiōribus",
+     "occīsus",
+     "est",
+     "cum",
+     "līberīs",
+     "M",
+     "Fulvius",
+     "cōnsulāris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.4"
+    }
+   },
+   {
+    "prompt": "Only do you charge our Zephyr to perform his service once again, and, in return for the sight of your sacred image that has been denied us, restore at least the sight of your sisters.",
+    "answer": "Tū modō̆ Zephyrō nostrō rūrsum praecipe fungātur obsequiō, et in vicem dēnegātae sacrōsānctae imāginis tuae redde saltem cōnspectum sorōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tū",
+     "modō",
+     "Zephyrō",
+     "nostrō",
+     "rūrsum",
+     "praecipe",
+     "fungātur",
+     "obsequiō",
+     "et",
+     "in",
+     "vicem",
+     "dēnegātae",
+     "sacrōsānctae",
+     "imāginis",
+     "tuae",
+     "redde",
+     "saltem",
+     "cōnspectum",
+     "sorōrum"
+    ],
+    "source": {
+     "author": "Apuleius",
+     "work": "Metamorphoses",
+     "locus": "5.13"
+    }
+   },
+   {
+    "prompt": "Now for the third time, on this deadly day too, with sad swoop, tearing me with hooked talons, the attendant of Jove mangles me with savage feeding.",
+    "answer": "Iam tertiō mē quōque fūnestō diē / Trīstī advolātū, aduncīs lacerāns unguibus / Iovis satelles pāstū dīlaniat ferō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iam",
+     "tertiō",
+     "mē",
+     "quōque",
+     "fūnestō",
+     "diē",
+     "Trīstī",
+     "advolātū",
+     "aduncīs",
+     "lacerāns",
+     "unguibus",
+     "Iovis",
+     "satelles",
+     "pāstū",
+     "dīlaniat",
+     "ferō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2.24"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q8",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "While both armies were listening, Afranius says that one ought not to be angry either with them or with the soldiers, because they had wished to keep faith toward their commander Gnaeus Pompey.",
+    "answer": "Audiente utrōque exercitū loquitur Afrānius: nōn esse aut ipsīs aut mīlitibus succēnsendum, quod fidem ergā imperātōrem suum Cn. Pompeium cōnservāre voluerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Audiente",
+     "utrōque",
+     "exercitū",
+     "loquitur",
+     "Afrānius",
+     "nōn",
+     "esse",
+     "aut",
+     "ipsīs",
+     "aut",
+     "mīlitibus",
+     "succēnsendum",
+     "quod",
+     "fidem",
+     "ergā",
+     "imperātōrem",
+     "suum",
+     "Cn",
+     "Pompeium",
+     "cōnservāre",
+     "voluerint"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello civili",
+     "locus": "1.84"
+    }
+   },
+   {
+    "prompt": "Elated by this battle, because with five hundred horsemen they had driven back so great a multitude of cavalry, the Helvetii began to make a stand more boldly from time to time and to harass our men in battle with their rearguard.",
+    "answer": "Quō proeliō sublātī Helvētiī, quod quīngentīs equitibus tantam multitūdinem equitum prōpulerant, audācius subsistere nōn numquam et novissimō agmine proeliō nostrōs lacessere coepērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quō",
+     "proeliō",
+     "sublātī",
+     "Helvētiī",
+     "quod",
+     "quīngentīs",
+     "equitibus",
+     "tantam",
+     "multitūdinem",
+     "equitum",
+     "prōpulerant",
+     "audācius",
+     "subsistere",
+     "nōn",
+     "numquam",
+     "et",
+     "novissimō",
+     "agmine",
+     "proeliō",
+     "nostrōs",
+     "lacessere",
+     "coepērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.15"
+    }
+   },
+   {
+    "prompt": "He did not make the death of Augustus public until young Agrippa had been killed.",
+    "answer": "Excessum Augustī nōn prius pālam fēcit, quam Agrippā iuvene interēmptō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Excessum",
+     "Augustī",
+     "nōn",
+     "prius",
+     "pālam",
+     "fēcit",
+     "quam",
+     "Agrippā",
+     "iuvene",
+     "interēmptō"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "De Vita Caesarum",
+     "locus": "3"
+    }
+   },
+   {
+    "prompt": "The Helvetii, driven by a lack of everything, sent envoys to him to treat of surrender.",
+    "answer": "Helvētiī omnium rērum inopiā adductī lēgātōs dē dēditiōne ad eum mīsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Helvētiī",
+     "omnium",
+     "rērum",
+     "inopiā",
+     "adductī",
+     "lēgātōs",
+     "dē",
+     "dēditiōne",
+     "ad",
+     "eum",
+     "mīsērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.27"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q9",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Recall at last with me that night before last; now you will understand that I watch much more keenly for the safety of the state than you do for its destruction.",
+    "answer": "Recognōsce tandem mēcum noctem illam superiōrem; iam intellegēs multō mē vigilāre ācrius ad salūtem quam tē ad perniciem reī pūblicae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Recognōsce",
+     "tandem",
+     "mēcum",
+     "noctem",
+     "illam",
+     "superiōrem",
+     "iam",
+     "intellegēs",
+     "multō",
+     "mē",
+     "vigilāre",
+     "ācrius",
+     "ad",
+     "salūtem",
+     "quam",
+     "tē",
+     "ad",
+     "perniciem",
+     "reī",
+     "pūblicae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.8"
+    }
+   },
+   {
+    "prompt": "And so I laugh at those who think it disgraceful to dine with their own slave: why, unless because a most arrogant custom has surrounded the dining master with a crowd of standing slaves?",
+    "answer": "Itaque rīdeō istōs quī turpe exīstimant cum servō suō cēnāre: quārē, nisi quia superbissima cōnsuētūdō cēnantī dominō stantium servōrum turbam circumdedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Itaque",
+     "rīdeō",
+     "istōs",
+     "quī",
+     "turpe",
+     "exīstimant",
+     "cum",
+     "servō",
+     "suō",
+     "cēnāre",
+     "quārē",
+     "nisi",
+     "quia",
+     "superbissima",
+     "cōnsuētūdō",
+     "cēnantī",
+     "dominō",
+     "stantium",
+     "servōrum",
+     "turbam",
+     "circumdedit"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.2"
+    }
+   },
+   {
+    "prompt": "The soldiers, having hurled their javelins from the higher ground, easily broke through the enemy's phalanx.",
+    "answer": "Mīlitēs locō superiōre pīlīs missīs facile hostium phalangem perfrēgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "locō",
+     "superiōre",
+     "pīlīs",
+     "missīs",
+     "facile",
+     "hostium",
+     "phalangem",
+     "perfrēgērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.25"
+    }
+   },
+   {
+    "prompt": "I do not wish to detain you longer; for you have no need of exhortation.",
+    "answer": "Diūtius tē morārī nōlō; nōn est enim tibi exhortātiōne opus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Diūtius",
+     "tē",
+     "morārī",
+     "nōlō",
+     "nōn",
+     "est",
+     "enim",
+     "tibi",
+     "exhortātiōne",
+     "opus"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.21"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q10",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "I did nothing in anger, nothing with an uncontrolled mind, nothing that was not long considered and pondered well beforehand.",
+    "answer": "Nihil fēcī īrātus, nihil impotentī animō, nihil nōn diū cōnsīderātum et multō ante meditātum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "fēcī",
+     "īrātus",
+     "nihil",
+     "impotentī",
+     "animō",
+     "nihil",
+     "nōn",
+     "diū",
+     "cōnsīderātum",
+     "et",
+     "multō",
+     "ante",
+     "meditātum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Haruspicum Responso:"
+    }
+   },
+   {
+    "prompt": "Caesar, when the proofs had been examined, cashiered the centurion and even banished him.",
+    "answer": "Caesar excussīs probātiōnibus centuriōnem exauctōrāvit atque etiam relēgāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "excussīs",
+     "probātiōnibus",
+     "centuriōnem",
+     "exauctōrāvit",
+     "atque",
+     "etiam",
+     "relēgāvit"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "6.31"
+    }
+   },
+   {
+    "prompt": "But very often even private citizens, in this republic, have punished dangerous citizens with death.",
+    "answer": "At persaepe etiam prīvātī, in hāc rē pūblicā, perniciōsōs cīvēs morte multārunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "persaepe",
+     "etiam",
+     "prīvātī",
+     "in",
+     "hāc",
+     "rē",
+     "pūblicā",
+     "perniciōsōs",
+     "cīvēs",
+     "morte",
+     "multārunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.28"
+    }
+   },
+   {
+    "prompt": "They are worshipped, however, only in pretense and for the moment.",
+    "answer": "Coluntur tamen simulātiōne dumtaxat ad tempus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Coluntur",
+     "tamen",
+     "simulātiōne",
+     "dumtaxat",
+     "ad",
+     "tempus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "15.53"
+    }
+   }
+  ]
  }
 ]

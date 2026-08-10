@@ -558,5 +558,137 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-204-genitive-with-adjectives-q1",
+  "sectionId": "bn-204-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "For to those who desire such things it is perhaps hateful and troublesome to be without them; but to those who are sated and filled it is more pleasant to go without than to enjoy.",
+    "answer": "Cupidīs enim rērum tālium, odiōsum fortasse et molestum est carēre; satiātis vērō et explētis iūcundius est carēre quam fruī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cupidīs",
+     "enim",
+     "rērum",
+     "tālium",
+     "odiōsum",
+     "fortasse",
+     "et",
+     "molestum",
+     "est",
+     "carēre",
+     "satiātis",
+     "vērō",
+     "et",
+     "explētis",
+     "iūcundius",
+     "est",
+     "carēre",
+     "quam",
+     "fruī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "14.47"
+    }
+   },
+   {
+    "prompt": "Thence both to the citizens desirous of peace and to the neighboring states there arose a hope that the king would go over to his grandfather's ways and institutions.",
+    "answer": "Inde et cīvibus ōtiī cupidīs et fīnītimīs cīvitātibus facta spēs in avī mōrēs atque īnstitūta rēgem abitūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Inde",
+     "et",
+     "cīvibus",
+     "ōtiī",
+     "cupidīs",
+     "et",
+     "fīnītimīs",
+     "cīvitātibus",
+     "facta",
+     "spēs",
+     "in",
+     "avī",
+     "mōrēs",
+     "atque",
+     "īnstitūta",
+     "rēgem",
+     "abitūrum"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita libri",
+     "locus": "1.32.2"
+    }
+   },
+   {
+    "prompt": "Is he alive? Nay rather he even comes into the Senate, becomes a sharer in the public counsel, and marks and designates with his eyes each one of us for slaughter.",
+    "answer": "Vīvit? Immō vērō etiam in Senātum venit, fit pūblicī cōnsiliī particeps, notat et dēsignat oculīs ad caedem ūnum quemque nostrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīvit",
+     "Immō",
+     "vērō",
+     "etiam",
+     "in",
+     "Senātum",
+     "venit",
+     "fit",
+     "pūblicī",
+     "cōnsiliī",
+     "particeps",
+     "notat",
+     "et",
+     "dēsignat",
+     "oculīs",
+     "ad",
+     "caedem",
+     "ūnum",
+     "quemque",
+     "nostrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "Terrified by these things, and altogether unskilled in this kind of fighting, our men did not fight with the same eagerness and zeal with which they had been accustomed to fight in battles on foot.",
+    "answer": "Quibus rēbus nostrī perterritī, atque hūius omnīnō generis pūgnae imperītī, nōn eādem alacritāte āc studiō quō in pedestribus ūtī proeliīs cōnsuērant utēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quibus",
+     "rēbus",
+     "nostrī",
+     "perterritī",
+     "atque",
+     "hūius",
+     "omnīnō",
+     "generis",
+     "pūgnae",
+     "imperītī",
+     "nōn",
+     "eādem",
+     "alacritāte",
+     "āc",
+     "studiō",
+     "quō",
+     "in",
+     "pedestribus",
+     "ūtī",
+     "proeliīs",
+     "cōnsuērant",
+     "utēbantur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.24"
+    }
+   }
+  ]
  }
 ]

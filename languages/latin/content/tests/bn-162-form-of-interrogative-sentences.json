@@ -812,5 +812,190 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q1",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Do you dare to deny it? Why are you silent? I will convict you, if you deny it. For I see that there are here in the Senate certain men who were together with you.",
+    "answer": "Num negāre audēs? Quid tacēs? Convincam, sī negās. Videō enim esse hīc in Senātū quōsdam, quī tēcum ūna fuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Num",
+     "negāre",
+     "audēs",
+     "Quid",
+     "tacēs",
+     "Convincam",
+     "sī",
+     "negās",
+     "Videō",
+     "enim",
+     "esse",
+     "hīc",
+     "in",
+     "Senātū",
+     "quōsdam",
+     "quī",
+     "tēcum",
+     "ūna",
+     "fuērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.8"
+    }
+   },
+   {
+    "prompt": "Does he — what matters most — know our laws or customs, does he, in short, know men?",
+    "answer": "Num, quod maximum est, lēgēs nostrās moresve nōvit, num dēnique hominēs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Num",
+     "quod",
+     "maximum",
+     "est",
+     "lēgēs",
+     "nostrās",
+     "moresve",
+     "nōvit",
+     "num",
+     "dēnique",
+     "hominēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "5.5.13"
+    }
+   },
+   {
+    "prompt": "What is it, Catiline? Do you notice at all, do you observe at all the silence of these men? They endure, they are silent. Why do you await the authority of those speaking, whose will, though silent, you perceive?",
+    "answer": "Quid est, Catilīna? Ecquid attendis, ecquid animadvertis hōrum silentium? Patiuntur, tacent. Quid exspectās auctōritātem loquentium, quōrum voluntātem tacitōrum perspicis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "est",
+     "Catilīna",
+     "Ecquid",
+     "attendis",
+     "ecquid",
+     "animadvertis",
+     "hōrum",
+     "silentium",
+     "Patiuntur",
+     "tacent",
+     "Quid",
+     "exspectās",
+     "auctōritātem",
+     "loquentium",
+     "quōrum",
+     "voluntātem",
+     "tacitōrum",
+     "perspicis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.20"
+    }
+   },
+   {
+    "prompt": "What, pray, hinders you? The custom of your ancestors?",
+    "answer": "Quid tandem tē impedit? Mōsne maiōrum?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "tandem",
+     "tē",
+     "impedit",
+     "Mōsne",
+     "maiōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.28"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q2",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Do you have two fatherlands, or is that one fatherland a common one?",
+    "answer": "Numquid duās habētis patriās, an est ūna illa patria communis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Numquid",
+     "duās",
+     "habētis",
+     "patriās",
+     "an",
+     "est",
+     "ūna",
+     "illa",
+     "patria",
+     "communis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De legibus",
+     "locus": "2.4.15"
+    }
+   },
+   {
+    "prompt": "Surely, Catiline, so great, so atrocious, so incredible a matter did not escape me — and, what is far more to be wondered at, the very day?",
+    "answer": "Num mē fefellit, Catilīna, nōn modo rēs tanta, tam atrōx, tamque incrēdibilis, vērum — id quod multō magis est admīrandum — diēs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Num",
+     "mē",
+     "fefellit",
+     "Catilīna",
+     "nōn",
+     "modo",
+     "rēs",
+     "tanta",
+     "tam",
+     "atrōx",
+     "tamque",
+     "incrēdibilis",
+     "vērum",
+     "id",
+     "quod",
+     "multō",
+     "magis",
+     "est",
+     "admīrandum",
+     "diēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.7"
+    }
+   },
+   {
+    "prompt": "Or do you fear the ill-will of posterity?",
+    "answer": "An invidiam posteritātis timēs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "An",
+     "invidiam",
+     "posteritātis",
+     "timēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.28"
+    }
+   }
+  ]
  }
 ]

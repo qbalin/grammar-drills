@@ -384,5 +384,112 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-167-predicate-nouns-q1",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "For what is an exile?",
+    "answer": "Quid est enim exsul?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "est",
+     "enim",
+     "exsul"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Domo Sua",
+     "locus": "72.3"
+    }
+   },
+   {
+    "prompt": "For the glory of riches and beauty is fleeting and fragile, but virtue is held to be glorious and everlasting.",
+    "answer": "Nam dīvitiārum et fōrmae glōria flū̆xa atque fragilis est, virtūs clāra aeternaque habētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nam",
+     "dīvitiārum",
+     "et",
+     "fōrmae",
+     "glōria",
+     "flū̆xa",
+     "atque",
+     "fragilis",
+     "est",
+     "virtūs",
+     "clāra",
+     "aeternaque",
+     "habētur"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae"
+    }
+   },
+   {
+    "prompt": "All Gaul is divided into three parts, of which the Belgae inhabit one, the Aquitani another, and the third those who in their own language are called Celts, in ours Gauls.",
+    "answer": "Gallia est omnis dīvīsa in partēs trēs, quārum ūnam incolunt Belgae, aliam Aquītānī, tertiam quī ipsōrum linguā Celtae, nostrā Gallī appellantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallia",
+     "est",
+     "omnis",
+     "dīvīsa",
+     "in",
+     "partēs",
+     "trēs",
+     "quārum",
+     "ūnam",
+     "incolunt",
+     "Belgae",
+     "aliam",
+     "Aquītānī",
+     "tertiam",
+     "quī",
+     "ipsōrum",
+     "linguā",
+     "Celtae",
+     "nostrā",
+     "Gallī",
+     "appellantur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "Marcus Varro defines it thus: 'A line,' he says, 'is a certain length without breadth and height.'.",
+    "answer": "Eam [līneam] M. [Mārcus] Varrō ita dēfīnit: \"Līnea est,\" inquit, \"longitūdō quaedam sine lātitūdine et altitūdine.\"",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eam",
+     "līneam",
+     "M",
+     "Mārcus",
+     "Varrō",
+     "ita",
+     "dēfīnit",
+     "Līnea",
+     "est",
+     "inquit",
+     "longitūdō",
+     "quaedam",
+     "sine",
+     "lātitūdine",
+     "et",
+     "altitūdine"
+    ],
+    "source": {
+     "author": "Aulus Gellius",
+     "work": "Noctes Atticae",
+     "locus": "1.20.8"
+    }
+   }
+  ]
  }
 ]

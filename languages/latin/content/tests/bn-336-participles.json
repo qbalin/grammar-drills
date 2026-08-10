@@ -1243,5 +1243,110 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-336-participles-q1",
+  "sectionId": "bn-336-participles",
+  "questions": [
+   {
+    "prompt": "I seemed to see some entering, others going out, some staggering from wine, some yawning from yesterday's drinking-bout.",
+    "answer": "Vidēbar vidēre aliōs intrantēs, aliōs autem exeuntēs, quōsdam ex vīnō vacillantēs, quōsdam hesternā ex pōtātiōne ōscitantēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vidēbar",
+     "vidēre",
+     "aliōs",
+     "intrantēs",
+     "aliōs",
+     "autem",
+     "exeuntēs",
+     "quōsdam",
+     "ex",
+     "vīnō",
+     "vacillantēs",
+     "quōsdam",
+     "hesternā",
+     "ex",
+     "pōtātiōne",
+     "ōscitantēs"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio oratoria",
+     "locus": "8.3.66"
+    }
+   },
+   {
+    "prompt": "And so a great pleasure came over me as I contemplated the character of Scipio and our own.",
+    "answer": "Magna ergō mē voluptās subiit contemplantem mōrēs Scīpiōnis ac nostrōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Magna",
+     "ergō",
+     "mē",
+     "voluptās",
+     "subiit",
+     "contemplantem",
+     "mōrēs",
+     "Scīpiōnis",
+     "ac",
+     "nostrōs"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae Morales ad Lucilium Epistula",
+     "locus": "LXXXVI"
+    }
+   },
+   {
+    "prompt": "Shall we consuls endure Catiline, desiring to lay waste the world with slaughter and fires?",
+    "answer": "Catilīnam orbem terrae caede atque incendiīs vastāre cupientem nōs cōnsulēs perferēmus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catilīnam",
+     "orbem",
+     "terrae",
+     "caede",
+     "atque",
+     "incendiīs",
+     "vastāre",
+     "cupientem",
+     "nōs",
+     "cōnsulēs",
+     "perferēmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.3"
+    }
+   },
+   {
+    "prompt": "The eyes and ears of many will spy upon you and guard you, even while you do not perceive it, just as they have done up to now.",
+    "answer": "Multōrum tē etiam oculī et aurēs nōn sentientem, sīcut adhūc fēcērunt, speculābuntur atque cūstōdient.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Multōrum",
+     "tē",
+     "etiam",
+     "oculī",
+     "et",
+     "aurēs",
+     "nōn",
+     "sentientem",
+     "sīcut",
+     "adhūc",
+     "fēcērunt",
+     "speculābuntur",
+     "atque",
+     "cūstōdient"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.6"
+    }
+   }
+  ]
  }
 ]

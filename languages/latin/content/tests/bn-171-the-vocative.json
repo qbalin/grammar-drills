@@ -347,5 +347,115 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-171-the-vocative-q1",
+  "sectionId": "bn-171-the-vocative",
+  "questions": [
+   {
+    "prompt": "O immortal gods, where in the world are we, what commonwealth do we have, in what city do we live?",
+    "answer": "Ō dī immortālēs, ubinam gentium sumus? Quam rem pūblicam habēmus? In quā urbe vīvimus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ō",
+     "dī",
+     "immortālēs",
+     "ubinam",
+     "gentium",
+     "sumus",
+     "Quam",
+     "rem",
+     "pūblicam",
+     "habēmus",
+     "In",
+     "quā",
+     "urbe",
+     "vīvimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam"
+    }
+   },
+   {
+    "prompt": "O immortal gods, where in the world are we?",
+    "answer": "Ō dī immortālēs, ubinam gentium sumus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ō",
+     "dī",
+     "immortālēs",
+     "ubinam",
+     "gentium",
+     "sumus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.9"
+    }
+   },
+   {
+    "prompt": "But this man, about whom I myself now say so much — oh, immortal gods, what is it, what does it avail?",
+    "answer": "Hic vērō, dē quō ego ipse tam multa nunc dīcō. Prō, dī immortālēs! Quid est? Quid valet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "vērō",
+     "dē",
+     "quō",
+     "ego",
+     "ipse",
+     "tam",
+     "multa",
+     "nunc",
+     "dīcō",
+     "Prō",
+     "dī",
+     "immortālēs",
+     "Quid",
+     "est",
+     "Quid",
+     "valet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De haruspicum responsis",
+     "locus": "42"
+    }
+   },
+   {
+    "prompt": "Do so, my Lucilius: lay claim to yourself for yourself, and gather and keep the time which until now was being taken from you, or stolen, or slipping away.",
+    "answer": "Ita fac, mī Lūcīlī: vindicā tē tibi, et tempus quod adhūc aut auferēbātur aut subripiēbātur aut excidēbat collige et servā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ita",
+     "fac",
+     "mī",
+     "Lūcīlī",
+     "vindicā",
+     "tē",
+     "tibi",
+     "et",
+     "tempus",
+     "quod",
+     "adhūc",
+     "aut",
+     "auferēbātur",
+     "aut",
+     "subripiēbātur",
+     "aut",
+     "excidēbat",
+     "collige",
+     "et",
+     "servā"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.1"
+    }
+   }
+  ]
  }
 ]

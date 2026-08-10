@@ -1097,5 +1097,86 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q1",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "How long will that madness of yours still mock us?",
+    "answer": "Quam diū etiam furor iste tuus nōs ēlūdet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "diū",
+     "etiam",
+     "furor",
+     "iste",
+     "tuus",
+     "nōs",
+     "ēlūdet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1"
+    }
+   },
+   {
+    "prompt": "The vine's third year sends out a swift and sturdy shoot, and one which age makes into a vine; this leaps up onto the trellis.",
+    "answer": "Tertius vīneae annus palmitem vēlōcem robustumque ēmittit et quem faciat aetās vītem. hic in iugum īnsilit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tertius",
+     "vīneae",
+     "annus",
+     "palmitem",
+     "vēlōcem",
+     "robustumque",
+     "ēmittit",
+     "et",
+     "quem",
+     "faciat",
+     "aetās",
+     "vītem",
+     "hic",
+     "in",
+     "iugum",
+     "īnsilit"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "17.35.175"
+    }
+   },
+   {
+    "prompt": "From the things you write to me and from the things I hear, I conceive good hope concerning you.",
+    "answer": "Ex iīs quae mihi scrībis et ex iīs quae audiō, bonam spem dē tē concipiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ex",
+     "iīs",
+     "quae",
+     "mihi",
+     "scrībis",
+     "et",
+     "ex",
+     "iīs",
+     "quae",
+     "audiō",
+     "bonam",
+     "spem",
+     "dē",
+     "tē",
+     "concipiō"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.1"
+    }
+   }
+  ]
  }
 ]

@@ -1360,5 +1360,600 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q1",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "It is the mark of a squeamish stomach to sample many things; and when these are varied and diverse, they defile rather than nourish.",
+    "answer": "Fastīdientis stomachī est multa dēgustāre; quae ubi varia sunt et dīversa, inquinant nōn alunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fastīdientis",
+     "stomachī",
+     "est",
+     "multa",
+     "dēgustāre",
+     "quae",
+     "ubi",
+     "varia",
+     "sunt",
+     "et",
+     "dīversa",
+     "inquinant",
+     "nōn",
+     "alunt"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.4"
+    }
+   },
+   {
+    "prompt": "Every art is an imitation of nature.",
+    "answer": "Omnis ars nātūrae imitātiō est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnis",
+     "ars",
+     "nātūrae",
+     "imitātiō",
+     "est"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae Mōrālēs ad Lūcīlium",
+     "locus": "65.3"
+    }
+   },
+   {
+    "prompt": "After this speech he placed the keys of the gates and of the royal treasury before their feet.",
+    "answer": "Post hanc ōrātiōnem clāvēs portārum pecuniaeque rēgiae ante pedēs eōrum posuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "hanc",
+     "ōrātiōnem",
+     "clāvēs",
+     "portārum",
+     "pecuniaeque",
+     "rēgiae",
+     "ante",
+     "pedēs",
+     "eōrum",
+     "posuit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "24"
+    }
+   },
+   {
+    "prompt": "The usefulness of crapula is determined in this way: to pugnacious musts more crapula is added, to mild ones less.",
+    "answer": "Crāpulae ūtilitās discernitur hōc modō: pugnācibus mustīs crāpulae plūs inditur, lēnibus parcius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crāpulae",
+     "ūtilitās",
+     "discernitur",
+     "hōc",
+     "modō",
+     "pugnācibus",
+     "mustīs",
+     "crāpulae",
+     "plūs",
+     "inditur",
+     "lēnibus",
+     "parcius"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "14.25.125"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q2",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "Nothing hinders health so much as a frequent change of remedies; a wound does not come to a scar in which medicines keep being tried.",
+    "answer": "Nihil aequē sānitātem impedit quam remediōrum crēbra mūtātiō; nōn venit vulnus ad cicātrīcem in quō medicāmenta temptantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "aequē",
+     "sānitātem",
+     "impedit",
+     "quam",
+     "remediōrum",
+     "crēbra",
+     "mūtātiō",
+     "nōn",
+     "venit",
+     "vulnus",
+     "ad",
+     "cicātrīcem",
+     "in",
+     "quō",
+     "medicāmenta",
+     "temptantur"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.3"
+    }
+   },
+   {
+    "prompt": "But it is worth the price, provided that this remain a private calamity and be kept apart from the dangers of the state.",
+    "answer": "Sed est tantī, dummodo ista sit prīvāta calamitās et ā reī pūblicae perīculīs sēiungātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sed",
+     "est",
+     "tantī",
+     "dummodo",
+     "ista",
+     "sit",
+     "prīvāta",
+     "calamitās",
+     "et",
+     "ā",
+     "reī",
+     "pūblicae",
+     "perīculīs",
+     "sēiungātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.22"
+    }
+   },
+   {
+    "prompt": "Then a proverb of the same arrogance is bandied about, that there are as many enemies as slaves; we do not have them as enemies, but we make them so.",
+    "answer": "Deinde, eiusdem arrogantiae, prōverbium iactātur: totidem hostēs esse quot servōs. Nōn habēmus illōs hostēs, sed facimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Deinde",
+     "eiusdem",
+     "arrogantiae",
+     "prōverbium",
+     "iactātur",
+     "totidem",
+     "hostēs",
+     "esse",
+     "quot",
+     "servōs",
+     "Nōn",
+     "habēmus",
+     "illōs",
+     "hostēs",
+     "sed",
+     "facimus"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.5"
+    }
+   },
+   {
+    "prompt": "For I am upholding the defense not only of myself but also of philosophy, whose greatness spurns even the slightest reproach as though it were the greatest crime.",
+    "answer": "Sustineō enim nōn modo meam, vērum etiam philosophiae dēfēnsiōnem, cuia magnitūdō vel minimam reprehēnsiōnem prō maximō crīmine aspernātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sustineō",
+     "enim",
+     "nōn",
+     "modo",
+     "meam",
+     "vērum",
+     "etiam",
+     "philosophiae",
+     "dēfēnsiōnem",
+     "cuia",
+     "magnitūdō",
+     "vel",
+     "minimam",
+     "reprehēnsiōnem",
+     "prō",
+     "maximō",
+     "crīmine",
+     "aspernātur"
+    ],
+    "source": {
+     "author": "Apuleius",
+     "work": "Apologia sive pro se de magia",
+     "locus": "1.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q3",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "I will confess frankly: as befalls one who is extravagant yet careful, my account of expenditure balances for me.",
+    "answer": "Fatēbor ingenuē: quod apud luxuriōsum sed dīligentem ēvenit, ratiō mihi cōnstat impēnsae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fatēbor",
+     "ingenuē",
+     "quod",
+     "apud",
+     "luxuriōsum",
+     "sed",
+     "dīligentem",
+     "ēvenit",
+     "ratiō",
+     "mihi",
+     "cōnstat",
+     "impēnsae"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.4"
+    }
+   },
+   {
+    "prompt": "O immortal gods! where in the world are we? in what city are we living? what republic do we have?",
+    "answer": "Ō̆ dī immortālēs! ubinam gentium sumus? in quā urbe vīvimus? quam rem pūblicam habēmus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ō",
+     "dī",
+     "immortālēs",
+     "ubinam",
+     "gentium",
+     "sumus",
+     "in",
+     "quā",
+     "urbe",
+     "vīvimus",
+     "quam",
+     "rem",
+     "pūblicam",
+     "habēmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.9"
+    }
+   },
+   {
+    "prompt": "The depth of the river was about three feet.",
+    "answer": "Flūminis erat altitūdō pedum circiter trium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Flūminis",
+     "erat",
+     "altitūdō",
+     "pedum",
+     "circiter",
+     "trium"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2.18"
+    }
+   },
+   {
+    "prompt": "You do not run about, nor are you disquieted by changes of place; that restlessness is the mark of a sick mind.",
+    "answer": "Nōn discurris nec locōrum mūtātiōnibus inquiētārīs. Aegrī animī ista iactātiō est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "discurris",
+     "nec",
+     "locōrum",
+     "mūtātiōnibus",
+     "inquiētārīs",
+     "Aegrī",
+     "animī",
+     "ista",
+     "iactātiō",
+     "est"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q4",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "To one who takes the estimate as a whole, there is more strength on the side of the infantry.",
+    "answer": "In ūniversum aestimantī plūs penes peditem rōboris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "ūniversum",
+     "aestimantī",
+     "plūs",
+     "penes",
+     "peditem",
+     "rōboris"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Germania",
+     "locus": "6.4"
+    }
+   },
+   {
+    "prompt": "You have where to show off that famous endurance of yours — of hunger, cold, and want of all things — by which you will soon feel yourself worn out.",
+    "answer": "Habēs ubi ostentēs tuam illam praeclāram patientiam — famis, frīgoris, inopiae rērum omnium — quibus tē brevī tempore cōnfectum esse sentiēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Habēs",
+     "ubi",
+     "ostentēs",
+     "tuam",
+     "illam",
+     "praeclāram",
+     "patientiam",
+     "famis",
+     "frīgoris",
+     "inopiae",
+     "rērum",
+     "omnium",
+     "quibus",
+     "tē",
+     "brevī",
+     "tempore",
+     "cōnfectum",
+     "esse",
+     "sentiēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.26"
+    }
+   },
+   {
+    "prompt": "What disgrace of private life does not cling to his reputation?",
+    "answer": "Quod prīvātārum rērum dēdecus nōn haeret in fāmā?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "prīvātārum",
+     "rērum",
+     "dēdecus",
+     "nōn",
+     "haeret",
+     "in",
+     "fāmā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.13"
+    }
+   },
+   {
+    "prompt": "Despise now the man of that fortune into which, while you despise it, you yourself may pass.",
+    "answer": "Contemne nunc eius fortūnae hominem in quam trānsīre dum contemnis potes.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Contemne",
+     "nunc",
+     "eius",
+     "fortūnae",
+     "hominem",
+     "in",
+     "quam",
+     "trānsīre",
+     "dum",
+     "contemnis",
+     "potes"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q5",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "Nothing now is so popular as hatred of the crowd-pleasers.",
+    "answer": "Populāre nunc nihil tam est quam odium populārium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Populāre",
+     "nunc",
+     "nihil",
+     "tam",
+     "est",
+     "quam",
+     "odium",
+     "populārium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "2.20"
+    }
+   },
+   {
+    "prompt": "And in truth, what good has that man done for us?",
+    "answer": "Et rēvērā, quid ille nōbīs bonī fēcit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Et",
+     "rēvērā",
+     "quid",
+     "ille",
+     "nōbīs",
+     "bonī",
+     "fēcit"
+    ],
+    "source": {
+     "author": "Petronius",
+     "work": "Satyricon",
+     "locus": "45"
+    }
+   },
+   {
+    "prompt": "Of all these the Belgae are the bravest, because they are farthest removed from the civilization and refinement of the Province.",
+    "answer": "Hōrum omnium fortissimī sunt Belgae, proptereā quod ā cultū atque hūmānitāte prōvinciae longissimē absunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōrum",
+     "omnium",
+     "fortissimī",
+     "sunt",
+     "Belgae",
+     "proptereā",
+     "quod",
+     "ā",
+     "cultū",
+     "atque",
+     "hūmānitāte",
+     "prōvinciae",
+     "longissimē",
+     "absunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.1.1"
+    }
+   },
+   {
+    "prompt": "For in this we are deceived, that we look forward to death: a great part of it has already passed; whatever of life lies behind, death holds.",
+    "answer": "In hōc enim fallimur, quod mortem prōspicimus: magna pars eius iam praeterit; quidquid aetātis retrō est mors tenet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "hōc",
+     "enim",
+     "fallimur",
+     "quod",
+     "mortem",
+     "prōspicimus",
+     "magna",
+     "pars",
+     "eius",
+     "iam",
+     "praeterit",
+     "quidquid",
+     "aetātis",
+     "retrō",
+     "est",
+     "mors",
+     "tenet"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q6",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "But in old men there is not so great a 'titillation,' so to speak, of pleasures.",
+    "answer": "At nōn est voluptātum tanta quasi “tītillātiō” in senibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "nōn",
+     "est",
+     "voluptātum",
+     "tanta",
+     "quasi",
+     "tītillātiō",
+     "in",
+     "senibus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "14.47"
+    }
+   },
+   {
+    "prompt": "Of what kind is the dream of Tarquin the Proud, about which he himself speaks in the Brutus of Accius?",
+    "answer": "Cuiusnam modī est Superbī Tarquinī somnium, dē quō in Brūtō Accī loquitur ipse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cuiusnam",
+     "modī",
+     "est",
+     "Superbī",
+     "Tarquinī",
+     "somnium",
+     "dē",
+     "quō",
+     "in",
+     "Brūtō",
+     "Accī",
+     "loquitur",
+     "ipse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De divinatione I.XXII"
+    }
+   },
+   {
+    "prompt": "After quickly raising an army by these punishments, he sends Lucterius the Cadurcan, a man of the greatest boldness, with part of the forces against the Ruteni; he himself sets out into the territory of the Bituriges.",
+    "answer": "Hīs suppliciīs celeriter coāctō exercitū Lucterium Cadurcum, summae hominem audāciae, cum parte cōpiārum in Rutēnōs mittit; ipse in Biturigēs proficīscitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hīs",
+     "suppliciīs",
+     "celeriter",
+     "coāctō",
+     "exercitū",
+     "Lucterium",
+     "Cadurcum",
+     "summae",
+     "hominem",
+     "audāciae",
+     "cum",
+     "parte",
+     "cōpiārum",
+     "in",
+     "Rutēnōs",
+     "mittit",
+     "ipse",
+     "in",
+     "Biturigēs",
+     "proficīscitur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.5"
+    }
+   }
+  ]
  }
 ]

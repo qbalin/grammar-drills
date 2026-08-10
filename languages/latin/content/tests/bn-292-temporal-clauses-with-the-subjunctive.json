@@ -1635,5 +1635,574 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q1",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "When from the nearest ships the foremost had likewise sighted these men, they followed close and drew near to the enemy.",
+    "answer": "Hōs item ex proximīs prīmī nāvibus cum cōnspēxissent, subsecūtī hostibus appropīnquārunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōs",
+     "item",
+     "ex",
+     "proximīs",
+     "prīmī",
+     "nāvibus",
+     "cum",
+     "cōnspēxissent",
+     "subsecūtī",
+     "hostibus",
+     "appropīnquārunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.25"
+    }
+   },
+   {
+    "prompt": "Moved by these considerations, Caesar decided that he must not wait until the Helvetii, once all the resources of the allies had been used up, should arrive in the country of the Santones.",
+    "answer": "Quibus rēbus adductus Caesar nōn expectandum sibī̆ statuit dum, omnibus fortūnīs sociōrum cōnsūmptīs, in Santonōs Helvētiī pervenīrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quibus",
+     "rēbus",
+     "adductus",
+     "Caesar",
+     "nōn",
+     "expectandum",
+     "sibī",
+     "statuit",
+     "dum",
+     "omnibus",
+     "fortūnīs",
+     "sociōrum",
+     "cōnsūmptīs",
+     "in",
+     "Santonōs",
+     "Helvētiī",
+     "pervenīrent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.11"
+    }
+   },
+   {
+    "prompt": "Recall the journeys which our generals have made through these years, in Italy, through the fields and towns of Roman citizens.",
+    "answer": "Itinera quae per hōsce annōs in Ī̆taliā per agrōs atque oppida cīvium Rōmānōrum nostrī imperātōrēs fēcerint, recordāminī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Itinera",
+     "quae",
+     "per",
+     "hōsce",
+     "annōs",
+     "in",
+     "Ī̆taliā",
+     "per",
+     "agrōs",
+     "atque",
+     "oppida",
+     "cīvium",
+     "Rōmānōrum",
+     "nostrī",
+     "imperātōrēs",
+     "fēcerint",
+     "recordāminī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "13.18"
+    }
+   },
+   {
+    "prompt": "I cannot say that I lose nothing, but I can say what I lose and why and how; I will render the reasons for my poverty.",
+    "answer": "Nōn possum dīcere nihil perdere, sed quid perdam et quārē et quemadmodum dīcam; causās paupertātis meae reddam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "possum",
+     "dīcere",
+     "nihil",
+     "perdere",
+     "sed",
+     "quid",
+     "perdam",
+     "et",
+     "quārē",
+     "et",
+     "quemadmodum",
+     "dīcam",
+     "causās",
+     "paupertātis",
+     "meae",
+     "reddam"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q2",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I will easily induce the same men to escort you all the way to the gates as you leave behind these things which you have long been eager to lay waste.",
+    "answer": "Eōsdem facile addūcam, ut tē haec quae vastāre iam prīdem studēs relinquentem, usque ad portās prōsequantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eōsdem",
+     "facile",
+     "addūcam",
+     "ut",
+     "tē",
+     "haec",
+     "quae",
+     "vastāre",
+     "iam",
+     "prīdem",
+     "studēs",
+     "relinquentem",
+     "usque",
+     "ad",
+     "portās",
+     "prōsequantur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.21"
+    }
+   },
+   {
+    "prompt": "But see to it that this reading of many authors and of every kind of volume does not have something desultory and unstable.",
+    "answer": "Illud autem vidē nē ista lēctiō auctōrum multōrum et omnīs generīs volūminum habeat aliquid vagum et īnstabile.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illud",
+     "autem",
+     "vidē",
+     "nē",
+     "ista",
+     "lēctiō",
+     "auctōrum",
+     "multōrum",
+     "et",
+     "omnīs",
+     "generīs",
+     "volūminum",
+     "habeat",
+     "aliquid",
+     "vagum",
+     "et",
+     "īnstabile"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.2"
+    }
+   },
+   {
+    "prompt": "He advised Priscus too not to climb above the emperor, and not to restrain with precepts Vespasian, an old man honored with a triumph, the father of grown children.",
+    "answer": "Suādēre etiam Prīscō nē suprā prī̆ncipem scanderet, nē Vespasiānum senem triumphālem, iuvenum līberōrum patrem, praeceptīs coërcēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Suādēre",
+     "etiam",
+     "Prīscō",
+     "nē",
+     "suprā",
+     "prī̆ncipem",
+     "scanderet",
+     "nē",
+     "Vespasiānum",
+     "senem",
+     "triumphālem",
+     "iuvenum",
+     "līberōrum",
+     "patrem",
+     "praeceptīs",
+     "coërcēret"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "4.8.18"
+    }
+   },
+   {
+    "prompt": "This happens to those who spend their life in travel: that they have many lodgings but no friendships.",
+    "answer": "Vītam in peregrīnātiōne exigentibus hoc ēvenit: ut multa hospitia habeant, nūllās amīcitiās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vītam",
+     "in",
+     "peregrīnātiōne",
+     "exigentibus",
+     "hoc",
+     "ēvenit",
+     "ut",
+     "multa",
+     "hospitia",
+     "habeant",
+     "nūllās",
+     "amīcitiās"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q3",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Nothing was left to Caesar except to harass and wear down the enemy's column with his cavalry.",
+    "answer": "Relinquēbātur Caesarī nihil, nisi utī equitātū agmen adversāriōrum male habēret et carperet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Relinquēbātur",
+     "Caesarī",
+     "nihil",
+     "nisi",
+     "utī",
+     "equitātū",
+     "agmen",
+     "adversāriōrum",
+     "male",
+     "habēret",
+     "et",
+     "carperet"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello civili",
+     "locus": "1.63"
+    }
+   },
+   {
+    "prompt": "But I, for a definite reason, am not yet brought to do this thing, which ought to have been done long ago.",
+    "answer": "Vērum ego hoc, quod iam prīdem factum esse oportuit, certa dē causā nōndum addūcor ut faciam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vērum",
+     "ego",
+     "hoc",
+     "quod",
+     "iam",
+     "prīdem",
+     "factum",
+     "esse",
+     "oportuit",
+     "certa",
+     "dē",
+     "causā",
+     "nōndum",
+     "addūcor",
+     "ut",
+     "faciam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.5"
+    }
+   },
+   {
+    "prompt": "Similar is the method of the oat, which, sown in autumn, is partly cut for hay or fodder while it is still green, and partly kept for seed.",
+    "answer": "Similis ratiō avēnae est, quae autumnō sata partim caeditur in faenum vel pābulum dum adhūc viret, partim sēminī custōdītur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Similis",
+     "ratiō",
+     "avēnae",
+     "est",
+     "quae",
+     "autumnō",
+     "sata",
+     "partim",
+     "caeditur",
+     "in",
+     "faenum",
+     "vel",
+     "pābulum",
+     "dum",
+     "adhūc",
+     "viret",
+     "partim",
+     "sēminī",
+     "custōdītur"
+    ],
+    "source": {
+     "author": "Columella",
+     "work": "De Re Rustica",
+     "locus": "2.10.32"
+    }
+   },
+   {
+    "prompt": "Do therefore, my Lucilius, what you write that you are doing: embrace all the hours; thus it will come about that you depend less on tomorrow, if you lay your hand on today.",
+    "answer": "Fac ergō, mī Lūcīlī, quod facere tē scrībis, omnēs hōrās complectere; sīc fīet ut minus ex crāstinō pendeās, sī hodiernō manum iniēcerīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fac",
+     "ergō",
+     "mī",
+     "Lūcīlī",
+     "quod",
+     "facere",
+     "tē",
+     "scrībis",
+     "omnēs",
+     "hōrās",
+     "complectere",
+     "sīc",
+     "fīet",
+     "ut",
+     "minus",
+     "ex",
+     "crāstinō",
+     "pendeās",
+     "sī",
+     "hodiernō",
+     "manum",
+     "iniēcerīs"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q4",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "He reached the enemy's camp before the Germans could perceive what was being done.",
+    "answer": "Prius ad hostium castra pervēnit quam quid agerētur Germānī sentīre possent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prius",
+     "ad",
+     "hostium",
+     "castra",
+     "pervēnit",
+     "quam",
+     "quid",
+     "agerētur",
+     "Germānī",
+     "sentīre",
+     "possent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.14"
+    }
+   },
+   {
+    "prompt": "O immortal gods—men do not understand how great a revenue thrift is!",
+    "answer": "Ō dī immortālēs! nōn intellegunt hominēs, quam magnum vectīgal sit parsimōnia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ō",
+     "dī",
+     "immortālēs",
+     "nōn",
+     "intellegunt",
+     "hominēs",
+     "quam",
+     "magnum",
+     "vectīgal",
+     "sit",
+     "parsimōnia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "49"
+    }
+   },
+   {
+    "prompt": "I will not bring up what is inconsistent with my character, and yet I will act in such a way that you understand what these men feel about you.",
+    "answer": "Nōn referam id quod abhorret ā meīs mōribus, et tamen faciam ut intellegās quid hī dē tē sentiant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "referam",
+     "id",
+     "quod",
+     "abhorret",
+     "ā",
+     "meīs",
+     "mōribus",
+     "et",
+     "tamen",
+     "faciam",
+     "ut",
+     "intellegās",
+     "quid",
+     "hī",
+     "dē",
+     "tē",
+     "sentiant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.20"
+    }
+   },
+   {
+    "prompt": "Our Gnaeus, indeed — I plainly do not now know what he is thinking … he who could even have been brought to that point.",
+    "answer": "Gnaeus quidem noster jam plānē quid cōgitet nesciō [..] quī quidem etiam istūc addūcī potuerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gnaeus",
+     "quidem",
+     "noster",
+     "jam",
+     "plānē",
+     "quid",
+     "cōgitet",
+     "nesciō",
+     "quī",
+     "quidem",
+     "etiam",
+     "istūc",
+     "addūcī",
+     "potuerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Letters to Atticus:"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q5",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "He, on the contrary, signals with his hand that the other should wait a little, and again bends over his wax tablets and stylus.",
+    "answer": "Hic contrā ut paulum exspectāret manū significat rursusque cērīs et stilō incumbit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "contrā",
+     "ut",
+     "paulum",
+     "exspectāret",
+     "manū",
+     "significat",
+     "rursusque",
+     "cērīs",
+     "et",
+     "stilō",
+     "incumbit"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "7.27.9"
+    }
+   },
+   {
+    "prompt": "So it comes about that those men talk about their master — men who are not permitted to speak in the master's presence.",
+    "answer": "Sīc fit: ut istī dē dominō loquantur — quibus cōram dominō loquī nōn licet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sīc",
+     "fit",
+     "ut",
+     "istī",
+     "dē",
+     "dominō",
+     "loquantur",
+     "quibus",
+     "cōram",
+     "dominō",
+     "loquī",
+     "nōn",
+     "licet"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.4"
+    }
+   },
+   {
+    "prompt": "Indeed, with what rites this weapon was consecrated and dedicated by you I do not know, since you think it necessary to plunge it into a consul's body.",
+    "answer": "Quae quidem quibus abs tē initiāta sacrīs ac dēvōta sit, nesciō, quod eam necesse putās esse in cōnsulis corpore dēfīgere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "quidem",
+     "quibus",
+     "abs",
+     "tē",
+     "initiāta",
+     "sacrīs",
+     "ac",
+     "dēvōta",
+     "sit",
+     "nesciō",
+     "quod",
+     "eam",
+     "necesse",
+     "putās",
+     "esse",
+     "in",
+     "cōnsulis",
+     "corpore",
+     "dēfīgere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "Perhaps you will ask what I myself am doing, I who give you these precepts.",
+    "answer": "Interrogābis fortasse quid ego faciam quī tibi ista praecipiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Interrogābis",
+     "fortasse",
+     "quid",
+     "ego",
+     "faciam",
+     "quī",
+     "tibi",
+     "ista",
+     "praecipiō"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.4"
+    }
+   }
+  ]
  }
 ]

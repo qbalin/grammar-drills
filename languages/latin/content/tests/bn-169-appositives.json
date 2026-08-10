@@ -525,5 +525,123 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-169-appositives-q1",
+  "sectionId": "bn-169-appositives",
+  "questions": [
+   {
+    "prompt": "And so our ancestors received into citizenship that man, who had done these things, a man of Rudiae.",
+    "answer": "Ergō illum, quī haec fēcerat, Rudinum hominem, maiōrēs nostrī in cīvitātem recēpērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ergō",
+     "illum",
+     "quī",
+     "haec",
+     "fēcerat",
+     "Rudinum",
+     "hominem",
+     "maiōrēs",
+     "nostrī",
+     "in",
+     "cīvitātem",
+     "recēpērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Archia Poeta Oratio line",
+     "locus": "284"
+    }
+   },
+   {
+    "prompt": "Did indeed a most distinguished man, Publius Scipio, the chief pontiff, as a private citizen slay Tiberius Gracchus, who was only moderately impairing the condition of the republic?",
+    "answer": "An vērō vir amplissimus, P. Scīpiō, pontifex maximus, Ti. Gracchum mediocriter labefactantem statum reī pūblicae prīvātus interfēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "An",
+     "vērō",
+     "vir",
+     "amplissimus",
+     "P",
+     "Scīpiō",
+     "pontifex",
+     "maximus",
+     "Ti",
+     "Gracchum",
+     "mediocriter",
+     "labefactantem",
+     "statum",
+     "reī",
+     "pūblicae",
+     "prīvātus",
+     "interfēcit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.3"
+    }
+   },
+   {
+    "prompt": "Now at last you openly attack the whole state: the temples of the immortal gods, the houses of the city, the life of all the citizens; you summon all Italy to destruction and devastation.",
+    "answer": "Nunc iam apertē rem pūblicam ūniversam petis: templa deōrum immortālium, tēcta urbis, vītam omnium cīvium; Ītaliam tōtam ad exitium et vāstitātem vocās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nunc",
+     "iam",
+     "apertē",
+     "rem",
+     "pūblicam",
+     "ūniversam",
+     "petis",
+     "templa",
+     "deōrum",
+     "immortālium",
+     "tēcta",
+     "urbis",
+     "vītam",
+     "omnium",
+     "cīvium",
+     "Ītaliam",
+     "tōtam",
+     "ad",
+     "exitium",
+     "et",
+     "vāstitātem",
+     "vocās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.12"
+    }
+   },
+   {
+    "prompt": "Did you really buy a censer even from Lucius Papinius, a man of the first rank, a wealthy and honorable Roman knight?",
+    "answer": "Num etiam dē L. Pāpiniō, virō prīmāriō, locuplētī honestoque equite Rōmānō, tūribulum ēmistī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Num",
+     "etiam",
+     "dē",
+     "L",
+     "Pāpiniō",
+     "virō",
+     "prīmāriō",
+     "locuplētī",
+     "honestoque",
+     "equite",
+     "Rōmānō",
+     "tūribulum",
+     "ēmistī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.4.46"
+    }
+   }
+  ]
  }
 ]

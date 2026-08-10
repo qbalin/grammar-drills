@@ -897,5 +897,185 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q1",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "In the month of November and December, at sowing time, as much as an ox craves.",
+    "answer": "Novembrī mēnse ac Decembrī per sēmentem quantum appetit bōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Novembrī",
+     "mēnse",
+     "ac",
+     "Decembrī",
+     "per",
+     "sēmentem",
+     "quantum",
+     "appetit",
+     "bōs"
+    ],
+    "source": {
+     "author": "Columella",
+     "work": "De Re Rustica",
+     "locus": "6"
+    }
+   },
+   {
+    "prompt": "At midday the shadows fall toward the north, but at sunrise toward the west.",
+    "answer": "Merīdiē umbrae cadunt ad septentriōnem, ortū vērō ad occāsum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Merīdiē",
+     "umbrae",
+     "cadunt",
+     "ad",
+     "septentriōnem",
+     "ortū",
+     "vērō",
+     "ad",
+     "occāsum"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "2"
+    }
+   },
+   {
+    "prompt": "A ship which is large on a river is tiny on the sea.",
+    "answer": "Nāvis, quae in flūmine magna est, in marī parvula est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nāvis",
+     "quae",
+     "in",
+     "flūmine",
+     "magna",
+     "est",
+     "in",
+     "marī",
+     "parvula",
+     "est"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "5.43.2"
+    }
+   },
+   {
+    "prompt": "At the very first onset of his illness he said, 'Alas, I think I am becoming a god.'.",
+    "answer": "Prīmā quōque morbī accessiōne, Vae, inquit, putō, deus fīō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmā",
+     "quōque",
+     "morbī",
+     "accessiōne",
+     "Vae",
+     "inquit",
+     "putō",
+     "deus",
+     "fīō"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "Life of Vespasian 23",
+     "locus": "4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q2",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "These things I used to discuss with the philosophers themselves at Athens.",
+    "answer": "Haec ego cum ipsīs philosophīs [tum] Athēnīs disserēbam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "ego",
+     "cum",
+     "ipsīs",
+     "philosophīs",
+     "tum",
+     "Athēnīs",
+     "disserēbam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De oratore",
+     "locus": "1.57"
+    }
+   },
+   {
+    "prompt": "After this assembly was held, within two or three hours most welcome messengers and letters arrived.",
+    "answer": "Post hanc habitam cōntiōnem duābus tribusve hōrīs optātissimī nūntiī et litterae vēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Post",
+     "hanc",
+     "habitam",
+     "cōntiōnem",
+     "duābus",
+     "tribusve",
+     "hōrīs",
+     "optātissimī",
+     "nūntiī",
+     "et",
+     "litterae",
+     "vēnērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "14.6.16"
+    }
+   },
+   {
+    "prompt": "You, however, should keep your own possessions for a bad time, and you will make your start at a good time.",
+    "answer": "Tū tamen malō servēs tua, et bonō tempore incipiēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tū",
+     "tamen",
+     "malō",
+     "servēs",
+     "tua",
+     "et",
+     "bonō",
+     "tempore",
+     "incipiēs"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.5"
+    }
+   },
+   {
+    "prompt": "Afterwards set the little cup out in the open by night.",
+    "answer": "Posteā pōnitō pōcillum in serēnō noctū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Posteā",
+     "pōnitō",
+     "pōcillum",
+     "in",
+     "serēnō",
+     "noctū"
+    ],
+    "source": {
+     "author": "Marcus Porcius Cato",
+     "work": "De agri cultura",
+     "locus": "156.3"
+    }
+   }
+  ]
  }
 ]

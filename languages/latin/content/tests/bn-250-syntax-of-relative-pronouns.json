@@ -1135,5 +1135,168 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q1",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
+   {
+    "prompt": "That is not poverty, if it is cheerful; not the one who has little, but the one who wants more, is poor.",
+    "answer": "Illa vērō nōn est paupertās, sī laeta est; nōn quī parum habet, sed quī plūs cupit, pauper est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illa",
+     "vērō",
+     "nōn",
+     "est",
+     "paupertās",
+     "sī",
+     "laeta",
+     "est",
+     "nōn",
+     "quī",
+     "parum",
+     "habet",
+     "sed",
+     "quī",
+     "plūs",
+     "cupit",
+     "pauper",
+     "est"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.6"
+    }
+   },
+   {
+    "prompt": "The promontory of Ida, whose tongue projects into the deep.",
+    "answer": "Īdae prōmunturium, cuius lingua in altum prōicit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īdae",
+     "prōmunturium",
+     "cuius",
+     "lingua",
+     "in",
+     "altum",
+     "prōicit"
+    ],
+    "source": {
+     "author": "Aulus Gellius",
+     "work": "Noctes Atticae",
+     "locus": "4.17"
+    }
+   },
+   {
+    "prompt": "He who is cultivated is also loved: love cannot be mixed with fear.",
+    "answer": "Quī colitur, et amātur: nōn potest amor cum timōre miscērī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "colitur",
+     "et",
+     "amātur",
+     "nōn",
+     "potest",
+     "amor",
+     "cum",
+     "timōre",
+     "miscērī"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.18"
+    }
+   },
+   {
+    "prompt": "Yet the most shameful loss is the one that comes about through carelessness.",
+    "answer": "Turpissima tamen est iactūra quae per neglegentiam fit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Turpissima",
+     "tamen",
+     "est",
+     "iactūra",
+     "quae",
+     "per",
+     "neglegentiam",
+     "fit"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q2",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
+   {
+    "prompt": "Caesar, those who dare to speak before you are unaware of your greatness; those who do not dare, of your kindness.",
+    "answer": "Caesar, quī apud tē audent dīcere, magnitūdinem tuam ignōrant; quī non audent, hūmānitātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "quī",
+     "apud",
+     "tē",
+     "audent",
+     "dīcere",
+     "magnitūdinem",
+     "tuam",
+     "ignōrant",
+     "quī",
+     "non",
+     "audent",
+     "hūmānitātem"
+    ],
+    "source": {
+     "author": "Seneca Maior",
+     "work": "Controversiae",
+     "locus": "6.3"
+    }
+   },
+   {
+    "prompt": "He who is everywhere is nowhere.",
+    "answer": "Nusquam est quī ubīque est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nusquam",
+     "est",
+     "quī",
+     "ubīque",
+     "est"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.2"
+    }
+   },
+   {
+    "prompt": "A plant that is often transplanted does not grow strong.",
+    "answer": "Nōn convalēscit planta quae saepe trānsfertur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "convalēscit",
+     "planta",
+     "quae",
+     "saepe",
+     "trānsfertur"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.3"
+    }
+   }
+  ]
  }
 ]

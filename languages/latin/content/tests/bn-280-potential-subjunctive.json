@@ -1037,5 +1037,74 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-280-potential-subjunctive-q1",
+  "sectionId": "bn-280-potential-subjunctive",
+  "questions": [
+   {
+    "prompt": "But what could you do, or what could any man at all?",
+    "answer": "Quid tū autem possīs, aut quid homō̆ quisquam?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "tū",
+     "autem",
+     "possīs",
+     "aut",
+     "quid",
+     "homō",
+     "quisquam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9.6.5.8"
+    }
+   },
+   {
+    "prompt": "Then make bread, put leaves underneath, and cook it gently on a hot hearth under an earthenware lid.",
+    "answer": "Inde panem facitō, folia subditō, in focō caldō sub testū coquitō lēniter.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Inde",
+     "panem",
+     "facitō",
+     "folia",
+     "subditō",
+     "in",
+     "focō",
+     "caldō",
+     "sub",
+     "testū",
+     "coquitō",
+     "lēniter"
+    ],
+    "source": {
+     "author": "Marcus Porcius Cato",
+     "work": "De agri cultura",
+     "locus": "75"
+    }
+   },
+   {
+    "prompt": "Cut the willow-bed in its own season, strip it, and tie it tightly.",
+    "answer": "Salictum suō tempore caeditō, glūbitō, arteque alligātō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Salictum",
+     "suō",
+     "tempore",
+     "caeditō",
+     "glūbitō",
+     "arteque",
+     "alligātō"
+    ],
+    "source": {
+     "author": "Marcus Porcius Cato",
+     "work": "De agri cultura",
+     "locus": "33"
+    }
+   }
+  ]
  }
 ]

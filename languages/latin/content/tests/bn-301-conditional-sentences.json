@@ -1595,5 +1595,231 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q1",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "As a field, however fertile, cannot be fruitful without cultivation, so neither can the mind without teaching.",
+    "answer": "Ut ager, quamvīs fertilis, sine cultūrā frūctuōsus esse nōn potest, sīc sine doctrīnā animus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ut",
+     "ager",
+     "quamvīs",
+     "fertilis",
+     "sine",
+     "cultūrā",
+     "frūctuōsus",
+     "esse",
+     "nōn",
+     "potest",
+     "sīc",
+     "sine",
+     "doctrīnā",
+     "animus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2.13"
+    }
+   },
+   {
+    "prompt": "But even if that were bearing down on me most heavily, still I have always been of this mind: to count the odium won by valor as glory, not as odium.",
+    "answer": "Quod sī ea mihi māximē impendēret, tamen hōc animō fuī semper: ut invidiam virtūte partam glōriam, nōn invidiam putārem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "sī",
+     "ea",
+     "mihi",
+     "māximē",
+     "impendēret",
+     "tamen",
+     "hōc",
+     "animō",
+     "fuī",
+     "semper",
+     "ut",
+     "invidiam",
+     "virtūte",
+     "partam",
+     "glōriam",
+     "nōn",
+     "invidiam",
+     "putārem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.29"
+    }
+   },
+   {
+    "prompt": "If you wish to be loved, love.",
+    "answer": "Sī vīs amārī, amā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "vīs",
+     "amārī",
+     "amā"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "9.6"
+    }
+   },
+   {
+    "prompt": "Above all he alone had saved the Capitol and the supreme power in it from the Gauls, if he had not saved it for his own kingship.",
+    "answer": "Super omnia Capitōlium summamque rem in eō sōlus ā Gallīs servāverat, sī nōn regnō suō servasset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Super",
+     "omnia",
+     "Capitōlium",
+     "summamque",
+     "rem",
+     "in",
+     "eō",
+     "sōlus",
+     "ā",
+     "Gallīs",
+     "servāverat",
+     "sī",
+     "nōn",
+     "regnō",
+     "suō",
+     "servasset"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "7.29.103"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q2",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
+   {
+    "prompt": "They set out either of their own will or because of the fine of the law; and if they had been willing to bear this fine, they could have remained in the state.",
+    "answer": "Aut suā voluntāte aut lēgis multā profectī sunt; quam multam sī sufferre voluissent, manēre in cīvitāte potuissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aut",
+     "suā",
+     "voluntāte",
+     "aut",
+     "lēgis",
+     "multā",
+     "profectī",
+     "sunt",
+     "quam",
+     "multam",
+     "sī",
+     "sufferre",
+     "voluissent",
+     "manēre",
+     "in",
+     "cīvitāte",
+     "potuissent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caecina",
+     "locus": "30.98"
+    }
+   },
+   {
+    "prompt": "If your parents feared and hated you, and you could not appease them by any means, you would, I suppose, withdraw somewhere out of their sight.",
+    "answer": "Sī tē parentēs timērent atque ōdissent tuī neque eōs ūllā ratiōne plācāre possēs, ut opīnor, ab eōrum oculīs aliquō concēderēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "tē",
+     "parentēs",
+     "timērent",
+     "atque",
+     "ōdissent",
+     "tuī",
+     "neque",
+     "eōs",
+     "ūllā",
+     "ratiōne",
+     "plācāre",
+     "possēs",
+     "ut",
+     "opīnor",
+     "ab",
+     "eōrum",
+     "oculīs",
+     "aliquō",
+     "concēderēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.17"
+    }
+   },
+   {
+    "prompt": "You ask me, whether into exile? I do not order it, but, if you consult me, I advise it.",
+    "answer": "Interrogās mē, num in exilium? Nōn iubeō, sed, sī mē cōnsulis, suādeō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Interrogās",
+     "mē",
+     "num",
+     "in",
+     "exilium",
+     "Nōn",
+     "iubeō",
+     "sed",
+     "sī",
+     "mē",
+     "cōnsulis",
+     "suādeō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.13"
+    }
+   },
+   {
+    "prompt": "If your country should speak thus with you, as I have said, ought it not to prevail, even if it could not employ force?",
+    "answer": "Haec sī tēcum, ita ut dīxī, patria loquātur, nōnne impetrāre dēbeat, etiamsī vim adhibēre nōn possit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "sī",
+     "tēcum",
+     "ita",
+     "ut",
+     "dīxī",
+     "patria",
+     "loquātur",
+     "nōnne",
+     "impetrāre",
+     "dēbeat",
+     "etiamsī",
+     "vim",
+     "adhibēre",
+     "nōn",
+     "possit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.19"
+    }
+   }
+  ]
  }
 ]

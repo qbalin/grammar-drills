@@ -1485,5 +1485,93 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q1",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "First, then, I want you to know this: that Sampsiceramus, our friend, deeply regrets his situation and longs to be restored to that position from which he fell.",
+    "answer": "Prīmum igitur illud tē scīre volō, Sampsiceramum, nostrum amīcum, vehementer suī stātūs paenitēre restituīque in eum locum cupere ex quō dēcidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmum",
+     "igitur",
+     "illud",
+     "tē",
+     "scīre",
+     "volō",
+     "Sampsiceramum",
+     "nostrum",
+     "amīcum",
+     "vehementer",
+     "suī",
+     "stātūs",
+     "paenitēre",
+     "restituīque",
+     "in",
+     "eum",
+     "locum",
+     "cupere",
+     "ex",
+     "quō",
+     "dēcidit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "2.23.2"
+    }
+   },
+   {
+    "prompt": "Change that intention of yours now, believe me — forget the slaughter and the fires.",
+    "answer": "Mūtā iam istam mentem, mihi crēde — oblīvīscere caedis atque incendiōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mūtā",
+     "iam",
+     "istam",
+     "mentem",
+     "mihi",
+     "crēde",
+     "oblīvīscere",
+     "caedis",
+     "atque",
+     "incendiōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.6"
+    }
+   },
+   {
+    "prompt": "But you rate these as pleasures of a lower kind, to which a sort of 'titillation,' as it were, is applied to the senses (for this is Epicurus's word).",
+    "answer": "At hās leviōris dūcis voluptātēs, quibus quasi “tītillātiō” (Epicūrī enim hoc verbum est) adhibētur sēnsibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "hās",
+     "leviōris",
+     "dūcis",
+     "voluptātēs",
+     "quibus",
+     "quasi",
+     "tītillātiō",
+     "Epicūrī",
+     "enim",
+     "hoc",
+     "verbum",
+     "est",
+     "adhibētur",
+     "sēnsibus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De natura deorum",
+     "locus": "1.113"
+    }
+   }
+  ]
  }
 ]

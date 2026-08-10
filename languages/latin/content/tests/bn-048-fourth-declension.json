@@ -725,5 +725,69 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-048-fourth-declension-q1",
+  "sectionId": "bn-048-fourth-declension",
+  "questions": [
+   {
+    "prompt": "Constant practice devoted to a single thing often surpasses both natural talent and skill.",
+    "answer": "Assiduus ūsus ūnī reī dēditus et ingenium et artem saepe vincit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Assiduus",
+     "ūsus",
+     "ūnī",
+     "reī",
+     "dēditus",
+     "et",
+     "ingenium",
+     "et",
+     "artem",
+     "saepe",
+     "vincit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Balbo",
+     "locus": "54"
+    }
+   },
+   {
+    "prompt": "These are the verses of Caecilius.",
+    "answer": "Caeciliī versūs hīce sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caeciliī",
+     "versūs",
+     "hīce",
+     "sunt"
+    ],
+    "source": {
+     "author": "Aulus Gellius",
+     "work": "Noctes Atticae",
+     "locus": "3.16.4"
+    }
+   },
+   {
+    "prompt": "Nay, he even foresaw beforehand the outcomes of all wars.",
+    "answer": "Quīn et bellōrum omnium ēventūs ante praesēnsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quīn",
+     "et",
+     "bellōrum",
+     "omnium",
+     "ēventūs",
+     "ante",
+     "praesēnsit"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "De Vita Caesarum Divi Augusti",
+     "locus": "96"
+    }
+   }
+  ]
  }
 ]

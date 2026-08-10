@@ -692,5 +692,94 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q1",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "They attach themselves to the trees.",
+    "answer": "Sē ad arborēs applicant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sē",
+     "ad",
+     "arborēs",
+     "applicant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.27"
+    }
+   },
+   {
+    "prompt": "He took upon himself an embassy to the states.",
+    "answer": "Is sibi lēgātiōnem ad cīvitātēs suscēpit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Is",
+     "sibi",
+     "lēgātiōnem",
+     "ad",
+     "cīvitātēs",
+     "suscēpit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.3"
+    }
+   },
+   {
+    "prompt": "To what end will unbridled audacity hurl itself?",
+    "answer": "Quem ad fīnem sēsē effrēnāta iactābit audācia?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quem",
+     "ad",
+     "fīnem",
+     "sēsē",
+     "effrēnāta",
+     "iactābit",
+     "audācia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1"
+    }
+   },
+   {
+    "prompt": "And the Boii—who had dwelt across the Rhine, and had crossed into the Norican territory, and had assaulted Noreia—they take to themselves and admit as allies to themselves once received.",
+    "answer": "Boiōsque — quī trāns Rhēnum incoluerant, et in agrum Nōricum trānsierant, Nōrēiamque oppūgnārant — receptōs ad sē sociōs sibi ascīscunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Boiōsque",
+     "quī",
+     "trāns",
+     "Rhēnum",
+     "incoluerant",
+     "et",
+     "in",
+     "agrum",
+     "Nōricum",
+     "trānsierant",
+     "Nōrēiamque",
+     "oppūgnārant",
+     "receptōs",
+     "ad",
+     "sē",
+     "sociōs",
+     "sibi",
+     "ascīscunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.5"
+    }
+   }
+  ]
  }
 ]

@@ -422,5 +422,196 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q1",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "Among the Helvetii, Orgetorix was by far the noblest and the richest.",
+    "answer": "Apud Helvētiōs longē nōbilissimus fuit et dītissimus Orgetorīx.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Apud",
+     "Helvētiōs",
+     "longē",
+     "nōbilissimus",
+     "fuit",
+     "et",
+     "dītissimus",
+     "Orgetorīx"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "The things which are reported about the sea-hare are no less marvelous.",
+    "answer": "Nōn sunt minus mīra quae dē lepore marīnō trāduntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "sunt",
+     "minus",
+     "mīra",
+     "quae",
+     "dē",
+     "lepore",
+     "marīnō",
+     "trāduntur"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Nātūrālis Historia",
+     "locus": "32.3"
+    }
+   },
+   {
+    "prompt": "These things indeed I am accustomed to pursue even among the Sabines, and daily I fill up the banquet of my neighbors, which we prolong with varied conversation as late into the night as we possibly can.",
+    "answer": "Quae quidem etiam in Sabīnīs persequī soleō, convīviumque vīcīnōrum cotīdiē compleō, quod ad multam noctem quam maximē possumus variō sermōne prōdūcimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "quidem",
+     "etiam",
+     "in",
+     "Sabīnīs",
+     "persequī",
+     "soleō",
+     "convīviumque",
+     "vīcīnōrum",
+     "cotīdiē",
+     "compleō",
+     "quod",
+     "ad",
+     "multam",
+     "noctem",
+     "quam",
+     "maximē",
+     "possumus",
+     "variō",
+     "sermōne",
+     "prōdūcimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "14.46"
+    }
+   },
+   {
+    "prompt": "Lead out with you also all your followers; if not, then as many as possible — purge the city!",
+    "answer": "Ēdūc tēcum etiam omnēs tuōs: sī minus, quam plūrimōs — pūrgā urbem!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ēdūc",
+     "tēcum",
+     "etiam",
+     "omnēs",
+     "tuōs",
+     "sī",
+     "minus",
+     "quam",
+     "plūrimōs",
+     "pūrgā",
+     "urbem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q2",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "I do not put it off to too long a time, in which every longing is soothed and in which even the sharpest griefs subside.",
+    "answer": "Nōn differō in longius tempus, quō dēsīderium omne mulcētur, quō etiam ācerrimī lūctūs residunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "differō",
+     "in",
+     "longius",
+     "tempus",
+     "quō",
+     "dēsīderium",
+     "omne",
+     "mulcētur",
+     "quō",
+     "etiam",
+     "ācerrimī",
+     "lūctūs",
+     "residunt"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "7.63.3"
+    }
+   },
+   {
+    "prompt": "Good character has this among its other traits: it is pleased with itself, it endures. Malice is fickle; it often changes, not into something better but into something else.",
+    "answer": "Hoc habent inter cētera bonī mōrēs: placent sibi, permanent. Levis est malitia; saepe mūtātur, nōn in melius sed in aliud.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "habent",
+     "inter",
+     "cētera",
+     "bonī",
+     "mōrēs",
+     "placent",
+     "sibi",
+     "permanent",
+     "Levis",
+     "est",
+     "malitia",
+     "saepe",
+     "mūtātur",
+     "nōn",
+     "in",
+     "melius",
+     "sed",
+     "in",
+     "aliud"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.21"
+    }
+   },
+   {
+    "prompt": "Its little stalks or unripe figs, as small as possible, are drunk in wine against scorpion stings.",
+    "answer": "Cauliculī aut grossī eius quam minūtissimae ad scorpiōnum ictūs ē vīnō bibuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cauliculī",
+     "aut",
+     "grossī",
+     "eius",
+     "quam",
+     "minūtissimae",
+     "ad",
+     "scorpiōnum",
+     "ictūs",
+     "ē",
+     "vīnō",
+     "bibuntur"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "23.64.129"
+    }
+   }
+  ]
  }
 ]

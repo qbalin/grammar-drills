@@ -956,5 +956,209 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q1",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "The king is acclaimed by his own men.",
+    "answer": "Rēx ab suīs appellātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "ab",
+     "suīs",
+     "appellātur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.4"
+    }
+   },
+   {
+    "prompt": "At this point the whole troop of the fastidious will cry out to me: 'Nothing is humbler than this, nothing baser.' These same men I shall catch kissing the hand of other men's slaves.",
+    "answer": "Hōc locō adclāmābit mihi tōta manus dēlicātōrum: “Nihil hāc rē humilius, nihil turpius.” Hōs ego eōsdem dēprehendam aliēnōrum servōrum ōsculantēs manum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōc",
+     "locō",
+     "adclāmābit",
+     "mihi",
+     "tōta",
+     "manus",
+     "dēlicātōrum",
+     "Nihil",
+     "hāc",
+     "rē",
+     "humilius",
+     "nihil",
+     "turpius",
+     "Hōs",
+     "ego",
+     "eōsdem",
+     "dēprehendam",
+     "aliēnōrum",
+     "servōrum",
+     "ōsculantēs",
+     "manum"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.13"
+    }
+   },
+   {
+    "prompt": "What lust was ever absent from your eyes, what crime from your hands, what disgrace from your whole body?",
+    "answer": "Quae libīdō ab oculīs, quod facinus ā manibus umquam tuīs, quod flāgitium ā tōtō corpore āfuit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "libīdō",
+     "ab",
+     "oculīs",
+     "quod",
+     "facinus",
+     "ā",
+     "manibus",
+     "umquam",
+     "tuīs",
+     "quod",
+     "flāgitium",
+     "ā",
+     "tōtō",
+     "corpore",
+     "āfuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.13"
+    }
+   },
+   {
+    "prompt": "This place was distant almost an equal space from the camp of Ariovistus and that of Caesar.",
+    "answer": "Hic locus aequō ferē spatiō ab castrīs Ariovistī et Caesaris aberat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "locus",
+     "aequō",
+     "ferē",
+     "spatiō",
+     "ab",
+     "castrīs",
+     "Ariovistī",
+     "et",
+     "Caesaris",
+     "aberat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico libre I.chapter",
+     "locus": "43"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q2",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "There follows a third reproach of old age, that they say it lacks pleasures.",
+    "answer": "Sequitur tertia vituperātiō senectūtis, quod eam carēre dīcunt voluptātibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sequitur",
+     "tertia",
+     "vituperātiō",
+     "senectūtis",
+     "quod",
+     "eam",
+     "carēre",
+     "dīcunt",
+     "voluptātibus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "12.39"
+    }
+   },
+   {
+    "prompt": "The river Garonne separates the Gauls from the Aquitani, and the Marne and the Seine separate them from the Belgae.",
+    "answer": "Gallōs ab Aquītānīs Garumna flūmen, ā Belgīs Mātrona et Sēquana dīvidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallōs",
+     "ab",
+     "Aquītānīs",
+     "Garumna",
+     "flūmen",
+     "ā",
+     "Belgīs",
+     "Mātrona",
+     "et",
+     "Sēquana",
+     "dīvidit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1"
+    }
+   },
+   {
+    "prompt": "You are held fast on every side; all your plans are clearer to us than light; and now you may review them with me.",
+    "answer": "Tenēris undique; lūce sunt clāriōra nōbīs tua cōnsilia omnia; quae iam mēcum licet recognōscās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tenēris",
+     "undique",
+     "lūce",
+     "sunt",
+     "clāriōra",
+     "nōbīs",
+     "tua",
+     "cōnsilia",
+     "omnia",
+     "quae",
+     "iam",
+     "mēcum",
+     "licet",
+     "recognōscās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.6"
+    }
+   },
+   {
+    "prompt": "Than which what can be more delightful in profit, or more beautiful to look upon?",
+    "answer": "Quā quid potest esse cum frūctū laetius, tum aspectū pulchrius?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quā",
+     "quid",
+     "potest",
+     "esse",
+     "cum",
+     "frūctū",
+     "laetius",
+     "tum",
+     "aspectū",
+     "pulchrius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "15.53"
+    }
+   }
+  ]
  }
 ]

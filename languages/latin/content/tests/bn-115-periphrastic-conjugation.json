@@ -670,5 +670,123 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-115-periphrastic-conjugation-q1",
+  "sectionId": "bn-115-periphrastic-conjugation",
+  "questions": [
+   {
+    "prompt": "This tongue of yours must be cut out by you, and even when it has been torn out, with my very breath my freedom will refute your lust.",
+    "answer": "Haec tibi est incīdenda lingua, quā vel ēvulsā spīritū ipsō libīdinem tuam lībertās mea refūtābit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "tibi",
+     "est",
+     "incīdenda",
+     "lingua",
+     "quā",
+     "vel",
+     "ēvulsā",
+     "spīritū",
+     "ipsō",
+     "libīdinem",
+     "tuam",
+     "lībertās",
+     "mea",
+     "refūtābit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De oratore",
+     "locus": "3.1"
+    }
+   },
+   {
+    "prompt": "One had to come to them, against Apronius — men who had not yet breathed off the drunkenness of the Apronian banquet.",
+    "answer": "Veniendum erat ad eōs contrā Aprōnium qui nōndum Aprōniānī conviviī crāpulam exhālassent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Veniendum",
+     "erat",
+     "ad",
+     "eōs",
+     "contrā",
+     "Aprōnium",
+     "qui",
+     "nōndum",
+     "Aprōniānī",
+     "conviviī",
+     "crāpulam",
+     "exhālassent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3.28"
+    }
+   },
+   {
+    "prompt": "These things, when they ought to be present, must then be so arranged and varied that they charm the hearer with every sound, as we see happens in the strings of a lyre.",
+    "answer": "Quae cum adesse dēbent, tum disponenda atque varianda sunt, ut audītōrem, quod in fidibus fierī vidēmus, omnī sonō mulceant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "cum",
+     "adesse",
+     "dēbent",
+     "tum",
+     "disponenda",
+     "atque",
+     "varianda",
+     "sunt",
+     "ut",
+     "audītōrem",
+     "quod",
+     "in",
+     "fidibus",
+     "fierī",
+     "vidēmus",
+     "omnī",
+     "sonō",
+     "mulceant"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio oratoria",
+     "locus": "9.2.4"
+    }
+   },
+   {
+    "prompt": "But if there is any fear of unpopularity, the unpopularity of sternness and courage is not to be dreaded more strongly than that of idleness and worthlessness.",
+    "answer": "Sed, sī quis est invidiae metus, nōn est vehementius sevēritātis ac fortitūdinis invidiā quam inertiae ac nēquitiae pertimēscenda.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sed",
+     "sī",
+     "quis",
+     "est",
+     "invidiae",
+     "metus",
+     "nōn",
+     "est",
+     "vehementius",
+     "sevēritātis",
+     "ac",
+     "fortitūdinis",
+     "invidiā",
+     "quam",
+     "inertiae",
+     "ac",
+     "nēquitiae",
+     "pertimēscenda"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.29"
+    }
+   }
+  ]
  }
 ]
