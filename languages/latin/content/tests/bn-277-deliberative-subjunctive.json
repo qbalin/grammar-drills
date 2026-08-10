@@ -521,5 +521,63 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-277-deliberative-subjunctive-q2",
+  "sectionId": "bn-277-deliberative-subjunctive",
+  "questions": [
+   {
+    "prompt": "What am I to do, judges? Whither shall I turn?",
+    "answer": "Quid agam, iūdicēs? Quō mē vertam?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "agam",
+     "iūdicēs",
+     "Quō",
+     "mē",
+     "vertam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.2"
+    }
+   },
+   {
+    "prompt": "What, should I not have come?",
+    "answer": "An ego nōn venīrem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "An",
+     "ego",
+     "nōn",
+     "venīrem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.3"
+    }
+   },
+   {
+    "prompt": "Could I think that the defence of good men would ever fail me!",
+    "answer": "Mihi umquam bonōrum praesidium dēfutūrum putārem!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mihi",
+     "umquam",
+     "bonōrum",
+     "praesidium",
+     "dēfutūrum",
+     "putārem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "94"
+    }
+   }
+  ]
  }
 ]

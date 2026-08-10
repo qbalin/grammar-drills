@@ -997,5 +997,326 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q3",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Does he seem to you to fear death or pain?",
+    "answer": "Is tibi mortemne vidētur aut dolōrem timēre?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Is",
+     "tibi",
+     "mortemne",
+     "vidētur",
+     "aut",
+     "dolōrem",
+     "timēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5.88"
+    }
+   },
+   {
+    "prompt": "Do you not see that your schemes are manifest?",
+    "answer": "Patēre tua cōnsilia nōn sentīs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Patēre",
+     "tua",
+     "cōnsilia",
+     "nōn",
+     "sentīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "Don't you remember my saying in the Senate?",
+    "answer": "Meministīne mē in senātū dīcere?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Meministīne",
+     "mē",
+     "in",
+     "senātū",
+     "dīcere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.7"
+    }
+   },
+   {
+    "prompt": "Do I not rightly interpret your meaning?",
+    "answer": "Rēctēne interpretor sententiam tuam?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēctēne",
+     "interpretor",
+     "sententiam",
+     "tuam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "3.37"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q4",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Whither then is all this tending?",
+    "answer": "Quō igitur haec spectant?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quō",
+     "igitur",
+     "haec",
+     "spectant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "6.6.11"
+    }
+   },
+   {
+    "prompt": "What revenue has been safe for you? What ally have you defended? Whom have you guarded with your fleets?",
+    "answer": "Quod vectīgal vōbīs tūtum fuit? Quem socium dēfendistis? Cui praesidiō classibus vestrīs fuistis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "vectīgal",
+     "vōbīs",
+     "tūtum",
+     "fuit",
+     "Quem",
+     "socium",
+     "dēfendistis",
+     "Cui",
+     "praesidiō",
+     "classibus",
+     "vestrīs",
+     "fuistis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "32"
+    }
+   },
+   {
+    "prompt": "In what city, pray, do they maintain this?",
+    "answer": "In quā tandem urbe hōc disputant?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "quā",
+     "tandem",
+     "urbe",
+     "hōc",
+     "disputant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "7"
+    }
+   },
+   {
+    "prompt": "Is it that you don't know, or do you think nothing of it?",
+    "answer": "Utrum nescīs, an prō nihilō id putās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utrum",
+     "nescīs",
+     "an",
+     "prō",
+     "nihilō",
+     "id",
+     "putās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "10.26"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q5",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "Did you desert Lucius Domitius, or did Domitius desert you?",
+    "answer": "Vōsne L. Domitium an vōs Domitius dēseruit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vōsne",
+     "L",
+     "Domitium",
+     "an",
+     "vōs",
+     "Domitius",
+     "dēseruit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2.32"
+    }
+   },
+   {
+    "prompt": "I ask whether slaves or free.",
+    "answer": "Quaerō servōsne an līberōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quaerō",
+     "servōsne",
+     "an",
+     "līberōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "74"
+    }
+   },
+   {
+    "prompt": "Is it the enemy, or yourselves, or the fortune of the two peoples, that you do not know?",
+    "answer": "Utrum hostem an vōs an fortūnam utrīusque populī īgnōrātis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utrum",
+     "hostem",
+     "an",
+     "vōs",
+     "an",
+     "fortūnam",
+     "utrīusque",
+     "populī",
+     "īgnōrātis"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21.10"
+    }
+   },
+   {
+    "prompt": "Are these your words or not?",
+    "answer": "Sunt haec tua verba necne?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sunt",
+     "haec",
+     "tua",
+     "verba",
+     "necne"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "3.41"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q6",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
+   {
+    "prompt": "What! Do you think those men wretched?",
+    "answer": "An tū miserōs putās illōs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "An",
+     "tū",
+     "miserōs",
+     "putās",
+     "illōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.13"
+    }
+   },
+   {
+    "prompt": "Would he ever have had good hopes about himself unless he had conceived an evil opinion of you?",
+    "answer": "An iste umquam dē sē bonam spem habuisset, nisi dē vōbīs malam opīniōnem animō imbibisset?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "An",
+     "iste",
+     "umquam",
+     "dē",
+     "sē",
+     "bonam",
+     "spem",
+     "habuisset",
+     "nisi",
+     "dē",
+     "vōbīs",
+     "malam",
+     "opīniōnem",
+     "animō",
+     "imbibisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1.1.42"
+    }
+   },
+   {
+    "prompt": "Do you despise these things? Not at all.",
+    "answer": "An haec contemnitis? Minimē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "An",
+     "haec",
+     "contemnitis",
+     "Minimē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.295"
+    }
+   },
+   {
+    "prompt": "To the birds and beasts? Why, of course not.",
+    "answer": "Volucribusne et ferīs? Minimē vērō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Volucribusne",
+     "et",
+     "ferīs",
+     "Minimē",
+     "vērō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.104"
+    }
+   }
+  ]
  }
 ]

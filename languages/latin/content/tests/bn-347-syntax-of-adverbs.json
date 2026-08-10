@@ -644,5 +644,163 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-q1",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "I mention these facts, which are well-known.",
+    "answer": "Haec commemorō quae sunt palam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "commemorō",
+     "quae",
+     "sunt",
+     "palam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Pisonem",
+     "locus": "11"
+    }
+   },
+   {
+    "prompt": "Now is ruined, then she was in her glory.",
+    "answer": "Nunc quidem dēlēta est, tunc flōrēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nunc",
+     "quidem",
+     "dēlēta",
+     "est",
+     "tunc",
+     "flōrēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "13"
+    }
+   },
+   {
+    "prompt": "This, surely, one may see.",
+    "answer": "Hōc quidem vidēre licet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōc",
+     "quidem",
+     "vidēre",
+     "licet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "54"
+    }
+   },
+   {
+    "prompt": "But, Jugurtha was not quiet either.",
+    "answer": "Sed nē Iugurtha quidem quiētus erat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sed",
+     "nē",
+     "Iugurtha",
+     "quidem",
+     "quiētus",
+     "erat"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "51"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-q2",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "But I cannot even get angry with those whom I love very much.",
+    "answer": "Ego autem nē īrāscī possum quidem iīs quōs valdē amō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "autem",
+     "nē",
+     "īrāscī",
+     "possum",
+     "quidem",
+     "iīs",
+     "quōs",
+     "valdē",
+     "amō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "2.19.1"
+    }
+   },
+   {
+    "prompt": "They knew not where or of what kind these things were.",
+    "answer": "Eaque nesciēbant nec ubi nec quālia essent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eaque",
+     "nesciēbant",
+     "nec",
+     "ubi",
+     "nec",
+     "quālia",
+     "essent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "3.4"
+    }
+   },
+   {
+    "prompt": "Is the cause then not a good one? On the contrary, the best.",
+    "answer": "Causa igitur nōn bona est? Immo optima.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Causa",
+     "igitur",
+     "nōn",
+     "bona",
+     "est",
+     "Immo",
+     "optima"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9.7.4"
+    }
+   },
+   {
+    "prompt": "Am I the boldest of them all? By no means.",
+    "answer": "Audācissimus ego ex omnibus? Minimē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Audācissimus",
+     "ego",
+     "ex",
+     "omnibus",
+     "Minimē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "2"
+    }
+   }
+  ]
  }
 ]

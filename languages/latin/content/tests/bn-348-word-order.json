@@ -282,5 +282,81 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-348-word-order-q1",
+  "sectionId": "bn-348-word-order",
+  "questions": [
+   {
+    "prompt": "It is the duty of a great man to punish the guilty.",
+    "answer": "Est virī māgnī pūnīre sontis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Est",
+     "virī",
+     "māgnī",
+     "pūnīre",
+     "sontis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1.82"
+    }
+   },
+   {
+    "prompt": "But I am SPEAKING NOW of common friendships.",
+    "answer": "Loquor autem dē commūnibus amīcitiīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Loquor",
+     "autem",
+     "dē",
+     "commūnibus",
+     "amīcitiīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3.45"
+    }
+   },
+   {
+    "prompt": "WHAT fellow-citizens we have LOST, have been stricken down by the violence of war.",
+    "answer": "Quōs āmīsimus cīvīs, eōs Mārtis vīs perculit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōs",
+     "āmīsimus",
+     "cīvīs",
+     "eōs",
+     "Mārtis",
+     "vīs",
+     "perculit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Marcello",
+     "locus": "17"
+    }
+   },
+   {
+    "prompt": "ABUNDANCE of MATTER produces COPIOUSNESS of EXPRESSION.",
+    "answer": "Rērum cōpia verbōrum cōpiam gignit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rērum",
+     "cōpia",
+     "verbōrum",
+     "cōpiam",
+     "gignit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "3.125"
+    }
+   }
+  ]
  }
 ]

@@ -12,7 +12,7 @@
  * So this checks the attributions against text the authors actually wrote:
  *
  *   node --import tsx scripts/verify-attribution.mjs [--pack languages/latin]
- *        [--min-tokens 4] [--examples] [--json]
+ *        [--min-tokens 4] [--examples] [--json] [--texts <dir>]
  *
  * The corpus it reads is `languages/<pack>/reference/texts/`, the same plain
  * text `ingest_frequency.py` builds the frequency list from. It is gitignored
@@ -94,7 +94,21 @@ const slug = (s) =>
 
 // --- the corpus --------------------------------------------------------------
 
-const textsDir = join(dir, "reference", "texts");
+/*
+ * `--texts <dir>` for a corpus that is not the frequency corpus.
+ *
+ * `reference/texts/` is two things at once: what this reads, and what
+ * `ingest_frequency.py` ranks to produce the committed `frequency.tsv.gz` that
+ * the vocabulary band and gate C7 are built on. So widening it to check an
+ * attribution is not free — it silently changes what a later frequency rebuild
+ * would call a common word, and every number downstream of that.
+ *
+ * Which is a real problem, because the two corpora want different things. The
+ * frequency corpus should be the kind of Latin the pack teaches. An attribution
+ * corpus should hold whatever the pack happens to cite, however lopsided — all
+ * of Cicero, because a grammar quotes Cicero. Keeping them apart costs one flag.
+ */
+const textsDir = opt("--texts", join(dir, "reference", "texts"));
 if (!existsSync(textsDir)) {
   console.error(
     `No corpus at ${textsDir}, and nothing in the repo is one.\n` +

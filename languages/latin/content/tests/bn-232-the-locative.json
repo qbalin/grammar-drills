@@ -533,5 +533,177 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-232-the-locative-q1",
+  "sectionId": "bn-232-the-locative",
+  "questions": [
+   {
+    "prompt": "There is no reason, my Lucilius, why you should seek a friend only in the forum and the senate-house: if you attend carefully, you will find one at home too.",
+    "answer": "Nōn est, mī Lūcīlī, quod amīcum tantum in forō et in cūriā quaerās: sī dīligenter attenderis, et domī inveniēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "est",
+     "mī",
+     "Lūcīlī",
+     "quod",
+     "amīcum",
+     "tantum",
+     "in",
+     "forō",
+     "et",
+     "in",
+     "cūriā",
+     "quaerās",
+     "sī",
+     "dīligenter",
+     "attenderis",
+     "et",
+     "domī",
+     "inveniēs"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.16"
+    }
+   },
+   {
+    "prompt": "The leaders of both the victorious and the vanquished parties were present at Lugudunum.",
+    "answer": "Praestō fuēre Luguduni victrīcium victarumque partium ducēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Praestō",
+     "fuēre",
+     "Luguduni",
+     "victrīcium",
+     "victarumque",
+     "partium",
+     "ducēs"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "2.59.14"
+    }
+   },
+   {
+    "prompt": "There was from about Gergovia a view into the camp.",
+    "answer": "Erat ā Gergoviā dēspectus in castra.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Erat",
+     "ā",
+     "Gergoviā",
+     "dēspectus",
+     "in",
+     "castra"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.45"
+    }
+   },
+   {
+    "prompt": "In Ithaca hares, when carried there, die. Ulysses lived at Ithaca would require.",
+    "answer": "In Ithacā leporēs illātī moriuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "Ithacā",
+     "leporēs",
+     "illātī",
+     "moriuntur"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "8.226"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-232-the-locative-q2",
+  "sectionId": "bn-232-the-locative",
+  "questions": [
+   {
+    "prompt": "Within four days after this was done, the matter was reported TO Chrysogonus IN Sulla's camp AT Volaterroe.",
+    "answer": "Quadriduō quō haec gesta sunt rēs ad Chrȳsogonum in castra L. Sullae Volā terrās dēfertur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quadriduō",
+     "quō",
+     "haec",
+     "gesta",
+     "sunt",
+     "rēs",
+     "ad",
+     "Chrȳsogonum",
+     "in",
+     "castra",
+     "L",
+     "Sullae",
+     "Volā",
+     "terrās",
+     "dēfertur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "20"
+    }
+   },
+   {
+    "prompt": "They come together in a private house.",
+    "answer": "In domum prīvātam conveniunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "domum",
+     "prīvātam",
+     "conveniunt"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "4.55"
+    }
+   },
+   {
+    "prompt": "He established granaries in particular places.",
+    "answer": "Locīs certīs horrea cōnstituit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Locīs",
+     "certīs",
+     "horrea",
+     "cōnstituit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3.32"
+    }
+   },
+   {
+    "prompt": "I will be present with you, a companion in dangers.",
+    "answer": "Socius perīculīs vōbīscum aderō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Socius",
+     "perīculīs",
+     "vōbīscum",
+     "aderō"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "85.47"
+    }
+   }
+  ]
  }
 ]

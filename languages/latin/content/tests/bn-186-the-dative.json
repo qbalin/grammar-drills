@@ -2260,5 +2260,726 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-186-the-dative-q9",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "You will surely grant to mercy what you refused to wrath.",
+    "answer": "Dabis profectō misericordiae quod īrācundiae negāvistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dabis",
+     "profectō",
+     "misericordiae",
+     "quod",
+     "īrācundiae",
+     "negāvistī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Rege Deiotaro",
+     "locus": "40"
+    }
+   },
+   {
+    "prompt": "A letter was immediately written to Rome.",
+    "answer": "Litterae extemplō Rōmam scrīptae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Litterae",
+     "extemplō",
+     "Rōmam",
+     "scrīptae"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "41.16"
+    }
+   },
+   {
+    "prompt": "He puts the enemy to flight.",
+    "answer": "Hostīs in fugam dat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostīs",
+     "in",
+     "fugam",
+     "dat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5.51"
+    }
+   },
+   {
+    "prompt": "These same things were announced to Curio.",
+    "answer": "Nūntiābantur haec eadem Cūriōnī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūntiābantur",
+     "haec",
+     "eadem",
+     "Cūriōnī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2.37"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q10",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "In this legion Caesar trusted most.",
+    "answer": "Huic legiōnī Caesar cōnfīdēbat maximē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Huic",
+     "legiōnī",
+     "Caesar",
+     "cōnfīdēbat",
+     "maximē"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.40.15"
+    }
+   },
+   {
+    "prompt": "It is a glorious thing to benefit the state.",
+    "answer": "Pulchrum est benefacere reī pūblicae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pulchrum",
+     "est",
+     "benefacere",
+     "reī",
+     "pūblicae"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "3"
+    }
+   },
+   {
+    "prompt": "Three hundred denarii were exacted of each censor.",
+    "answer": "Singulīs cēnsōribus dēnāriī trecentī imperātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Singulīs",
+     "cēnsōribus",
+     "dēnāriī",
+     "trecentī",
+     "imperātī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.137"
+    }
+   },
+   {
+    "prompt": "For I do not agree with them.",
+    "answer": "Neque enim adsentior eīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Neque",
+     "enim",
+     "adsentior",
+     "eīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q11",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "Virtues are always connected with pleasures.",
+    "answer": "Virtūtēs semper voluptātibus inhaerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virtūtēs",
+     "semper",
+     "voluptātibus",
+     "inhaerent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1.68"
+    }
+   },
+   {
+    "prompt": "It is a point of skill to yield to the weather.",
+    "answer": "Tempestātī obsequī artis est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tempestātī",
+     "obsequī",
+     "artis",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "1.9.21"
+    }
+   },
+   {
+    "prompt": "And he will never yield to his foes.",
+    "answer": "Nec umquam succumbet inimīcīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "umquam",
+     "succumbet",
+     "inimīcīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Rege Deiotaro",
+     "locus": "36"
+    }
+   },
+   {
+    "prompt": "Who would dare encounter a man well attended?",
+    "answer": "Quis audeat bene comitātum aggredī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "audeat",
+     "bene",
+     "comitātum",
+     "aggredī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "12.25"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q12",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "Eumenes himself engages in combat with him.",
+    "answer": "Cum hōc concurrit ipse Eumenēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "hōc",
+     "concurrit",
+     "ipse",
+     "Eumenēs"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Eumenes",
+     "locus": "4.1"
+    }
+   },
+   {
+    "prompt": "Macedonia is set to withstand their attacks.",
+    "answer": "Obicitur contrā istōrum impetūs Macedonia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Obicitur",
+     "contrā",
+     "istōrum",
+     "impetūs",
+     "Macedonia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Fonteio",
+     "locus": "44"
+    }
+   },
+   {
+    "prompt": "That age not only is not envied, but is even favored.",
+    "answer": "Nōn modo nōn invidētur illī aetātī vērum etiam favētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "modo",
+     "nōn",
+     "invidētur",
+     "illī",
+     "aetātī",
+     "vērum",
+     "etiam",
+     "favētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2.45"
+    }
+   },
+   {
+    "prompt": "Man has a likeness to God.",
+    "answer": "Hominī cum deō similitūdō est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hominī",
+     "cum",
+     "deō",
+     "similitūdō",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "1.25"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q13",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "What can be wanting to him?",
+    "answer": "Quid huic abesse poterit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "huic",
+     "abesse",
+     "poterit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1.48"
+    }
+   },
+   {
+    "prompt": "I have deliberated and resolved.",
+    "answer": "Mihi dēlīberātum et cōnstitūtum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mihi",
+     "dēlīberātum",
+     "et",
+     "cōnstitūtum",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Lege Agraria",
+     "locus": "1.25"
+    }
+   },
+   {
+    "prompt": "The matter has been provided for by me.",
+    "answer": "Mihi rēs prōvīsa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mihi",
+     "rēs",
+     "prōvīsa",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4.91"
+    }
+   },
+   {
+    "prompt": "He put himself in sight of the sailors.",
+    "answer": "Sē in cōnspectum nautīs dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sē",
+     "in",
+     "cōnspectum",
+     "nautīs",
+     "dedit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.86"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q14",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "In my opinion Plato alone is worth a hundred thousand.",
+    "answer": "Platō mihi ūnus īnstar est centum mīlium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Platō",
+     "mihi",
+     "ūnus",
+     "īnstar",
+     "est",
+     "centum",
+     "mīlium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "191"
+    }
+   },
+   {
+    "prompt": "What is that slavery according to the view of this distinguished man?",
+    "answer": "Quae est ista servitūs tam clārō hominī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "est",
+     "ista",
+     "servitūs",
+     "tam",
+     "clārō",
+     "hominī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "41"
+    }
+   },
+   {
+    "prompt": "But, look you, of a sudden comes to me Caninius.",
+    "answer": "At tibi repente venit mihi Canīnius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "tibi",
+     "repente",
+     "venit",
+     "mihi",
+     "Canīnius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9.2"
+    }
+   },
+   {
+    "prompt": "He took from him his cloak of gold.",
+    "answer": "Aureum eī dētrāxit amiculum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aureum",
+     "eī",
+     "dētrāxit",
+     "amiculum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "3.83"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q15",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "Take from me this terror.",
+    "answer": "Hunc mihi terrōrem ēripe.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hunc",
+     "mihi",
+     "terrōrem",
+     "ēripe"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.18"
+    }
+   },
+   {
+    "prompt": "Violence deprives young men of life.",
+    "answer": "Vītam adulēscentibus vīs aufert.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vītam",
+     "adulēscentibus",
+     "vīs",
+     "aufert"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "71"
+    }
+   },
+   {
+    "prompt": "For, the senate has taken nothing from you.",
+    "answer": "Nihil enim tibi dētrāxit senātus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "enim",
+     "tibi",
+     "dētrāxit",
+     "senātus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "1.5 B"
+    }
+   },
+   {
+    "prompt": "Nor do I wish this error wrested from me.",
+    "answer": "Nec mihi hunc errōrem extorquērī volō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "mihi",
+     "hunc",
+     "errōrem",
+     "extorquērī",
+     "volō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "85"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q16",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "The booty is wrested from my hands.",
+    "answer": "Mihi praeda dē manibus ēripitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mihi",
+     "praeda",
+     "dē",
+     "manibus",
+     "ēripitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.142"
+    }
+   },
+   {
+    "prompt": "They are ruin to the state.",
+    "answer": "Reī pūblicae clādī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Reī",
+     "pūblicae",
+     "clādī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "85.43"
+    }
+   },
+   {
+    "prompt": "It was of great service to our men.",
+    "answer": "Māgnō ūsuī nostrīs fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māgnō",
+     "ūsuī",
+     "nostrīs",
+     "fuit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.25"
+    }
+   },
+   {
+    "prompt": "That came to pass easily which was desired by the gods.",
+    "answer": "Ēvēnit facile quod dīs cordī esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ēvēnit",
+     "facile",
+     "quod",
+     "dīs",
+     "cordī",
+     "esset"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1.39"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q17",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "You compel me to call my enemy Honest.",
+    "answer": "Cōgis mē dīcere inimīcum Frūgī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōgis",
+     "mē",
+     "dīcere",
+     "inimīcum",
+     "Frūgī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Fonteio",
+     "locus": "39"
+    }
+   },
+   {
+    "prompt": "Nothing is so fitted to nature.",
+    "answer": "Nihil est tam nātūrae aptum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "est",
+     "tam",
+     "nātūrae",
+     "aptum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "17"
+    }
+   },
+   {
+    "prompt": "I think nothing hard to a lover.",
+    "answer": "Nihil difficile amantī putō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "difficile",
+     "amantī",
+     "putō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "33"
+    }
+   },
+   {
+    "prompt": "The tribunes are friendly to us.",
+    "answer": "Tribūnī nōbīs sunt amīcī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tribūnī",
+     "nōbīs",
+     "sunt",
+     "amīcī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1.2.16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q18",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "He can be gracious to nobody.",
+    "answer": "Esse propitius potest nēminī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Esse",
+     "propitius",
+     "potest",
+     "nēminī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1.124"
+    }
+   },
+   {
+    "prompt": "I suspect you are disturbed by the same things by which I am.",
+    "answer": "Tē suspicor eīsdem rēbus quibus mē ipsum commovērī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tē",
+     "suspicor",
+     "eīsdem",
+     "rēbus",
+     "quibus",
+     "mē",
+     "ipsum",
+     "commovērī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "1"
+    }
+   },
+   {
+    "prompt": "These were this man's fellows.",
+    "answer": "Hī erant affīnēs istīus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hī",
+     "erant",
+     "affīnēs",
+     "istīus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.36"
+    }
+   }
+  ]
  }
 ]

@@ -1298,5 +1298,186 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q3",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
+   {
+    "prompt": "He began to march into those PLACES in which PLACES he heard the Germans were.",
+    "answer": "Iter in ea loca facere coepit quibus in locīs esse Germānōs audiēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iter",
+     "in",
+     "ea",
+     "loca",
+     "facere",
+     "coepit",
+     "quibus",
+     "in",
+     "locīs",
+     "esse",
+     "Germānōs",
+     "audiēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.7"
+    }
+   },
+   {
+    "prompt": "Nothing pleased him which was right.",
+    "answer": "Eum nihil dēlectābat quod fās esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eum",
+     "nihil",
+     "dēlectābat",
+     "quod",
+     "fās",
+     "esset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "43"
+    }
+   },
+   {
+    "prompt": "That day which he had appointed came.",
+    "answer": "Ea diēs quam cōnstituerat vēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ea",
+     "diēs",
+     "quam",
+     "cōnstituerat",
+     "vēnit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.8"
+    }
+   },
+   {
+    "prompt": "The nature of the ground which our men had chosen was this.",
+    "answer": "Locī nātūra erat haec quem locum nostrī dēlēgerant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Locī",
+     "nātūra",
+     "erat",
+     "haec",
+     "quem",
+     "locum",
+     "nostrī",
+     "dēlēgerant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2.18"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q4",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
+   {
+    "prompt": "I undertook the first defence of an innocent man that was offered me.",
+    "answer": "Quae prīma innocentis mihi dēfēnsiō est oblāta suscēpī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "prīma",
+     "innocentis",
+     "mihi",
+     "dēfēnsiō",
+     "est",
+     "oblāta",
+     "suscēpī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "92"
+    }
+   },
+   {
+    "prompt": "That part of the state which had brought disaster on the Roman people was the first to pay the penalty.",
+    "answer": "Quae pars cīvitātis calamitātem populō Rōmānō intulerat, ea prīnceps poenās persolvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "pars",
+     "cīvitātis",
+     "calamitātem",
+     "populō",
+     "Rōmānō",
+     "intulerat",
+     "ea",
+     "prīnceps",
+     "poenās",
+     "persolvit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.12"
+    }
+   },
+   {
+    "prompt": "They spend much time in hunting, which increases their strength.",
+    "answer": "Multum sunt in vēnātiōnibus, quae rēs vīrēs alit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Multum",
+     "sunt",
+     "in",
+     "vēnātiōnibus",
+     "quae",
+     "rēs",
+     "vīrēs",
+     "alit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.1"
+    }
+   },
+   {
+    "prompt": "He had set out to meet four legions from Macedonia, which he thought to win over to himself by a gift of money and to lead to the city.",
+    "answer": "Erat profectus obviam legiōnibus Macedonicīs quattuor, quās sibi conciliāre pecūniā cōgitābat eāsque ad urbem addūcere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Erat",
+     "profectus",
+     "obviam",
+     "legiōnibus",
+     "Macedonicīs",
+     "quattuor",
+     "quās",
+     "sibi",
+     "conciliāre",
+     "pecūniā",
+     "cōgitābat",
+     "eāsque",
+     "ad",
+     "urbem",
+     "addūcere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "12.23.2"
+    }
+   }
+  ]
  }
 ]

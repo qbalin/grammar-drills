@@ -348,5 +348,164 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse-q1",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that thanks were owed to the enemy and to the war, because something was being done to free the state.",
+    "answer": "Hostibus bellōque grātiam habendam quod solitum quicquam līberāre cīvitātī fieret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hostibus",
+     "bellōque",
+     "grātiam",
+     "habendam",
+     "quod",
+     "solitum",
+     "quicquam",
+     "līberāre",
+     "cīvitātī",
+     "fieret"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "3.38"
+    }
+   },
+   {
+    "prompt": "An animal feels what it is that is fit.",
+    "answer": "Animal sentit quid sit quod deceat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Animal",
+     "sentit",
+     "quid",
+     "sit",
+     "quod",
+     "deceat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1.14"
+    }
+   },
+   {
+    "prompt": "He orders him to visit what states he can.",
+    "answer": "Huic imperat quās possit adeat cīvitātēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Huic",
+     "imperat",
+     "quās",
+     "possit",
+     "adeat",
+     "cīvitātēs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.21"
+    }
+   },
+   {
+    "prompt": "He begs you to pluck from his heart this doubt that goads and stings him day and night.",
+    "answer": "Hunc sibi ex animō scrūpulum, quī sē diēs noctīsque stimulat ac pungit, ut ēvellātis postulat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hunc",
+     "sibi",
+     "ex",
+     "animō",
+     "scrūpulum",
+     "quī",
+     "sē",
+     "diēs",
+     "noctīsque",
+     "stimulat",
+     "ac",
+     "pungit",
+     "ut",
+     "ēvellātis",
+     "postulat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse-q2",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "If he wished to say anything about these matters, I gave him a chance.",
+    "answer": "Sī quid dē hīs rēbus dīcere vellet, fēcī potestātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quid",
+     "dē",
+     "hīs",
+     "rēbus",
+     "dīcere",
+     "vellet",
+     "fēcī",
+     "potestātem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3.11"
+    }
+   },
+   {
+    "prompt": "He passed a law concerning the murder which took place in the Appian Way.",
+    "answer": "Tulit dē caede quae in Appiā viā facta esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tulit",
+     "dē",
+     "caede",
+     "quae",
+     "in",
+     "Appiā",
+     "viā",
+     "facta",
+     "esset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "15"
+    }
+   },
+   {
+    "prompt": "He promised them his aid if they should be molested by the Suevi.",
+    "answer": "Iīs auxilium suum pollicitus sī ab Suēbīs premerentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iīs",
+     "auxilium",
+     "suum",
+     "pollicitus",
+     "sī",
+     "ab",
+     "Suēbīs",
+     "premerentur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.19"
+    }
+   }
+  ]
  }
 ]

@@ -26,7 +26,8 @@ for the engine: `packages/core` must not learn a language.
 | `profile.json` | the pack's contract — fold, families, thresholds, UI strings |
 | `content/` | **generated**, and what ships: `grammar.json`, `tests/*.json`, `lemmas.json.gz` + `forms.txt.gz` |
 | `content/quotes.jsonl.gz` | Latin only: quotations filed under topics, an input to `quote-tests.mjs` rather than something that ships |
-| `gen/sources.mjs` | Greek only: the citation abbreviations its grammar uses, expanded |
+| `content/ag-quotes.jsonl.gz` | Latin only: the same, out of Allen & Greenough rather than the dictionary dump. `quote-tests.mjs --from quotes` reads both pools |
+| `gen/sources.mjs` | the citation abbreviations a pack's grammar uses, expanded |
 | `grammar/parse.py` | builds `grammar.json` from a public source it downloads |
 | `gen/config.mjs` | what the question generator needs to know about this language |
 | `citations.mjs` | rewrites citations in `lemmas.json.gz`; needs the reference dictionary |

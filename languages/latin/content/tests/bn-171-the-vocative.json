@@ -457,5 +457,94 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-171-the-vocative-q2",
+  "sectionId": "bn-171-the-vocative",
+  "questions": [
+   {
+    "prompt": "They say, finally, that he was so distraught that for months on end, with beard and hair let grow, he would sometimes dash his head against the doors, crying out: 'Quintilius Varus, give me back my legions!'.",
+    "answer": "Adeō dēnique cōnsternātum ferunt ut, per continuōs mēnsēs barbā capillōque summissō, caput interdum foribus illīderet, vōciferāns: “Quīntilī Vāre, legiōnēs redde!”",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adeō",
+     "dēnique",
+     "cōnsternātum",
+     "ferunt",
+     "ut",
+     "per",
+     "continuōs",
+     "mēnsēs",
+     "barbā",
+     "capillōque",
+     "summissō",
+     "caput",
+     "interdum",
+     "foribus",
+     "illīderet",
+     "vōciferāns",
+     "Quīntilī",
+     "Vāre",
+     "legiōnēs",
+     "redde"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "Vita divi Augusti",
+     "locus": "23"
+    }
+   },
+   {
+    "prompt": "O father Tiber, thee, holy one, I pray.",
+    "answer": "Tiberīne pater, tē, sāncte, precor.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tiberīne",
+     "pater",
+     "tē",
+     "sāncte",
+     "precor"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2.10"
+    }
+   },
+   {
+    "prompt": "My whole attention will be devoted to you, Hortensius.",
+    "answer": "Rēs omnis mihi tēcum erit, Hortēnsī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēs",
+     "omnis",
+     "mihi",
+     "tēcum",
+     "erit",
+     "Hortēnsī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1.33"
+    }
+   },
+   {
+    "prompt": "Hear, you people of Alba.",
+    "answer": "Audī tū, populus Albānus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Audī",
+     "tū",
+     "populus",
+     "Albānus"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1.24"
+    }
+   }
+  ]
  }
 ]

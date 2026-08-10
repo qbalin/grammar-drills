@@ -1367,5 +1367,175 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q1",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "But the matter turned out far otherwise than he had supposed.",
+    "answer": "Sed ea rēs longē aliter, ac ratus erat, ēvēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sed",
+     "ea",
+     "rēs",
+     "longē",
+     "aliter",
+     "ac",
+     "ratus",
+     "erat",
+     "ēvēnit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "The War with Jugurtha",
+     "locus": "7.3.1"
+    }
+   },
+   {
+    "prompt": "To this madness nature bore you; your will trained you; fortune preserved you.",
+    "answer": "Ad hanc tē āmentiam nātūra peperit; voluntās exercuit; fortūna servāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ad",
+     "hanc",
+     "tē",
+     "āmentiam",
+     "nātūra",
+     "peperit",
+     "voluntās",
+     "exercuit",
+     "fortūna",
+     "servāvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.25"
+    }
+   },
+   {
+    "prompt": "They have left us our rights, our laws, our fields, our liberty.",
+    "answer": "Iūra, lēgēs, agrōs, lībertātem nōbīs relīquērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūra",
+     "lēgēs",
+     "agrōs",
+     "lībertātem",
+     "nōbīs",
+     "relīquērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.77"
+    }
+   },
+   {
+    "prompt": "But old men are capricious, solicitous, choleric, and fussy.",
+    "answer": "At sunt mōrōsī et anxiī et īrācundī et difficilēs senēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "sunt",
+     "mōrōsī",
+     "et",
+     "anxiī",
+     "et",
+     "īrācundī",
+     "et",
+     "difficilēs",
+     "senēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "65"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q2",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "He thanks him and at the same time congratulates him.",
+    "answer": "Simul grātiās agit, simul grātulātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Simul",
+     "grātiās",
+     "agit",
+     "simul",
+     "grātulātur"
+    ],
+    "source": {
+     "author": "Curtius Rufus",
+     "work": "Historiae Alexandri Magni",
+     "locus": "6.7.15"
+    }
+   },
+   {
+    "prompt": "The faults of friends sometimes break out, now against their friends themselves, now against strangers.",
+    "answer": "Ērumpunt saepe vitia amīcōrum tum in ipsōs amīcōs tum in aliēnōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ērumpunt",
+     "saepe",
+     "vitia",
+     "amīcōrum",
+     "tum",
+     "in",
+     "ipsōs",
+     "amīcōs",
+     "tum",
+     "in",
+     "aliēnōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "76"
+    }
+   },
+   {
+    "prompt": "Let him drink or quit.",
+    "answer": "Aut bibat aut abeat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aut",
+     "bibat",
+     "aut",
+     "abeat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5.118"
+    }
+   },
+   {
+    "prompt": "His life was such either in respect to fortune or fame.",
+    "answer": "Vīta tālis fuit vel fortūnā vel glōriā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīta",
+     "tālis",
+     "fuit",
+     "vel",
+     "fortūnā",
+     "vel",
+     "glōriā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "12"
+    }
+   }
+  ]
  }
 ]

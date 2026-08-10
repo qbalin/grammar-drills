@@ -35,7 +35,8 @@ tmp_images/
 # Scratch log from the Latin quote-pool watcher (see REVIEW.md, gate C9).
 .latin-finish.log
 
-# What build-quote-pool.mjs has been told so far, so a run that dies is worth
-# what it spent. Deleted the moment content/quotes.jsonl.gz — the artifact it
-# stands in for — is written.
+# What build-quote-pool.mjs and ag-quotes.mjs have been told so far, so a run
+# that dies is worth what it spent. Each is deleted the moment the artifact it
+# stands in for — content/quotes.jsonl.gz, content/ag-quotes.jsonl.gz — exists.
 languages/*/content/.quotes.partial.jsonl
+languages/*/content/.ag-quotes.partial.jsonl

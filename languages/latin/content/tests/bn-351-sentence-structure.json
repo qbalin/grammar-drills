@@ -1108,5 +1108,91 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-351-sentence-structure-q1",
+  "sectionId": "bn-351-sentence-structure",
+  "questions": [
+   {
+    "prompt": "When Hannibal had reviewed the auxiliaries, he set out for Cadiz.",
+    "answer": "Hannibal cum recēnsuisset auxilia Gādēs profectus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hannibal",
+     "cum",
+     "recēnsuisset",
+     "auxilia",
+     "Gādēs",
+     "profectus",
+     "est"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21.21"
+    }
+   },
+   {
+    "prompt": "When the barbarians saw that he had escaped, THEY threw darts at HIM at long range and killed HIM.",
+    "answer": "Quem ut barbarī incendium effūgisse vīdērunt, tēlīs ēminus missīs interfēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quem",
+     "ut",
+     "barbarī",
+     "incendium",
+     "effūgisse",
+     "vīdērunt",
+     "tēlīs",
+     "ēminus",
+     "missīs",
+     "interfēcērunt"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Alcibiades",
+     "locus": "10"
+    }
+   },
+   {
+    "prompt": "The matter was soon finished, AND he led the legions.",
+    "answer": "Celeriter cōnfectō negōtiō, in hīberna legiōnēs redūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Celeriter",
+     "cōnfectō",
+     "negōtiō",
+     "in",
+     "hīberna",
+     "legiōnēs",
+     "redūxit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.3"
+    }
+   },
+   {
+    "prompt": "What you know is of no use, what you do not know does great harm.",
+    "answer": "Quod scīs nihil prōdest, quod nescīs multum obest.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "scīs",
+     "nihil",
+     "prōdest",
+     "quod",
+     "nescīs",
+     "multum",
+     "obest"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "166"
+    }
+   }
+  ]
  }
 ]

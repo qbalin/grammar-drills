@@ -468,5 +468,99 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-340-the-supine-q1",
+  "sectionId": "bn-340-the-supine",
+  "questions": [
+   {
+    "prompt": "I, Members of the Senate, if I judged this the best thing to do — that Catiline be punished with death — would not have granted that gladiator the use of a single hour for living.",
+    "answer": "Ego, sī hoc optimum factū iūdicārem, Patrēs Cōnscrīptī, Catilīnam morte multārī, ūnīus ūsūram hōrae gladiātōrī istī ad vīvendum nōn dedissem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "sī",
+     "hoc",
+     "optimum",
+     "factū",
+     "iūdicārem",
+     "Patrēs",
+     "Cōnscrīptī",
+     "Catilīnam",
+     "morte",
+     "multārī",
+     "ūnīus",
+     "ūsūram",
+     "hōrae",
+     "gladiātōrī",
+     "istī",
+     "ad",
+     "vīvendum",
+     "nōn",
+     "dedissem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.29"
+    }
+   },
+   {
+    "prompt": "It is difficult to say how anxious they are, how much they toil.",
+    "answer": "Difficile dictū est quam sint sollicitī, quam labōrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Difficile",
+     "dictū",
+     "est",
+     "quam",
+     "sint",
+     "sollicitī",
+     "quam",
+     "labōrent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "69.198"
+    }
+   },
+   {
+    "prompt": "There were citizens who went about to ruin the republic.",
+    "answer": "Fuēre cīvēs quī rem pūblicam perditum īrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fuēre",
+     "cīvēs",
+     "quī",
+     "rem",
+     "pūblicam",
+     "perditum",
+     "īrent"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "36"
+    }
+   },
+   {
+    "prompt": "They ask what is best to do.",
+    "answer": "Quaerunt quid optimum factū sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quaerunt",
+     "quid",
+     "optimum",
+     "factū",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.68"
+    }
+   }
+  ]
  }
 ]

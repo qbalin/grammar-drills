@@ -2906,5 +2906,357 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-266-tenses-of-the-subjunctive-q1",
+  "sectionId": "bn-266-tenses-of-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Provision has been made that there should be ample guard.",
+    "answer": "Ut satis esset praesidī prōvīsum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ut",
+     "satis",
+     "esset",
+     "praesidī",
+     "prōvīsum",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2.26"
+    }
+   },
+   {
+    "prompt": "I have brought a man in whose person you can make satisfaction to foreign nations.",
+    "answer": "Addūxī hominem in quō satisfacere exterīs nātiōnibus possētis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Addūxī",
+     "hominem",
+     "in",
+     "quō",
+     "satisfacere",
+     "exterīs",
+     "nātiōnibus",
+     "possētis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "Such instruction has been given as can train even the faultiest nature.",
+    "answer": "Ea adhibita doctrīna est quae vel vitiōsissimam nātūram excolere possit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ea",
+     "adhibita",
+     "doctrīna",
+     "est",
+     "quae",
+     "vel",
+     "vitiōsissimam",
+     "nātūram",
+     "excolere",
+     "possit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1.1.7"
+    }
+   },
+   {
+    "prompt": "Was any one so abandoned as to imagine this?",
+    "answer": "Quemquamne fuisse tam scelerātum quī hōc fingeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quemquamne",
+     "fuisse",
+     "tam",
+     "scelerātum",
+     "quī",
+     "hōc",
+     "fingeret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "14.14"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-266-tenses-of-the-subjunctive-q2",
+  "sectionId": "bn-266-tenses-of-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I do not doubt that all your friends have written.",
+    "answer": "Nōn dubitō quīn omnēs tuī scrīpserint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dubitō",
+     "quīn",
+     "omnēs",
+     "tuī",
+     "scrīpserint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "5.8"
+    }
+   },
+   {
+    "prompt": "What the condition of affairs was when I wrote this letter, you can learn from Strabo.",
+    "answer": "Quī status rērum fuerit cum hās litterās dedī, scīre poteris ex C. Titiō Strabōne.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "status",
+     "rērum",
+     "fuerit",
+     "cum",
+     "hās",
+     "litterās",
+     "dedī",
+     "scīre",
+     "poteris",
+     "ex",
+     "C",
+     "Titiō",
+     "Strabōne"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "12.6"
+    }
+   },
+   {
+    "prompt": "How dear he was to the state has been shown by the grief at his funeral.",
+    "answer": "Quam cīvitātī cārus fuerit maerōre fūneris indicātum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "cīvitātī",
+     "cārus",
+     "fuerit",
+     "maerōre",
+     "fūneris",
+     "indicātum",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "11"
+    }
+   },
+   {
+    "prompt": "It may be understood from his letters how constant a hearer he was of Plato.",
+    "answer": "Ex epistulīs intellegī licet quam frequēns fueritPlatōnis audītor.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ex",
+     "epistulīs",
+     "intellegī",
+     "licet",
+     "quam",
+     "frequēns",
+     "fueritPlatōnis",
+     "audītor"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "15"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-266-tenses-of-the-subjunctive-q3",
+  "sectionId": "bn-266-tenses-of-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I seem to have brought it about that Dolabella cannot come into Italy.",
+    "answer": "Videor esse cōnsecūtus ut nōn possit Dolābella in Ītaliam pervenīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Videor",
+     "esse",
+     "cōnsecūtus",
+     "ut",
+     "nōn",
+     "possit",
+     "Dolābella",
+     "in",
+     "Ītaliam",
+     "pervenīre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "12.14.2"
+    }
+   },
+   {
+    "prompt": "Here it appeared what power anger has to goad the mind.",
+    "answer": "Ibi quantam vim ad stimulandōs animōs īra habēret appāruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ibi",
+     "quantam",
+     "vim",
+     "ad",
+     "stimulandōs",
+     "animōs",
+     "īra",
+     "habēret",
+     "appāruit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "33.37"
+    }
+   },
+   {
+    "prompt": "He asks him to attend to the thing he had spoken of.",
+    "answer": "Rogat ut cūret quod dīxisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rogat",
+     "ut",
+     "cūret",
+     "quod",
+     "dīxisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Quinctio",
+     "locus": "18"
+    }
+   },
+   {
+    "prompt": "When he had come there he learns.",
+    "answer": "Quō cum vēnisset cōgnōscit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quō",
+     "cum",
+     "vēnisset",
+     "cōgnōscit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1.34"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-266-tenses-of-the-subjunctive-q4",
+  "sectionId": "bn-266-tenses-of-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Meanwhile Caesar demanded of the Hoedui every day the grain which they had promised.",
+    "answer": "Interim cotīdiē Caesar Haeduōs frūmentum, quod essent pollicitī flāgitāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Interim",
+     "cotīdiē",
+     "Caesar",
+     "Haeduōs",
+     "frūmentum",
+     "quod",
+     "essent",
+     "pollicitī",
+     "flāgitāre"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "If there were other consuls, I should send to you, Paulus, in preference to all, that you might make them as friendly to me as possible.",
+    "answer": "Sī aliī cōnsulēs essent, ad tē potissimum, Paule, mitterem, ut eōs mihi quam amīcissimōs redderēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "aliī",
+     "cōnsulēs",
+     "essent",
+     "ad",
+     "tē",
+     "potissimum",
+     "Paule",
+     "mitterem",
+     "ut",
+     "eōs",
+     "mihi",
+     "quam",
+     "amīcissimōs",
+     "redderēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "15.13.3"
+    }
+   },
+   {
+    "prompt": "If you were to call only those.",
+    "answer": "Sī sōlōs eōs dīcerēs miserōs quibus moriendum esset, nēminem exciperēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "sōlōs",
+     "eōs",
+     "dīcerēs",
+     "miserōs",
+     "quibus",
+     "moriendum",
+     "esset",
+     "nēminem",
+     "exciperēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.9"
+    }
+   },
+   {
+    "prompt": "But yet that you may know, I write thus.",
+    "answer": "Sed tamen ut scīrēs, haec tibi scrībō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sed",
+     "tamen",
+     "ut",
+     "scīrēs",
+     "haec",
+     "tibi",
+     "scrībō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "13.47"
+    }
+   }
+  ]
  }
 ]

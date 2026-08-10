@@ -484,5 +484,59 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-276-prohibitive-subjunctive-q1",
+  "sectionId": "bn-276-prohibitive-subjunctive",
+  "questions": [
+   {
+    "prompt": "Do not tell Apella even.",
+    "answer": "Nē Apellae quidem dīxeris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "Apellae",
+     "quidem",
+     "dīxeris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "7.25.2"
+    }
+   },
+   {
+    "prompt": "See that you attend to nothing else.",
+    "answer": "Fac nēquid aliud cūrēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fac",
+     "nēquid",
+     "aliud",
+     "cūrēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16.11"
+    }
+   },
+   {
+    "prompt": "And do not say this to me.",
+    "answer": "Nec mihi illud dīxeris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "mihi",
+     "illud",
+     "dīxeris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1.25"
+    }
+   }
+  ]
  }
 ]

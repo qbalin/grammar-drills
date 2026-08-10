@@ -57,7 +57,54 @@ failure mode follows the citation parser, not the syllabus.
 
 | Date | Reviewer | Sample | Verdict |
 |---|---|---|---|
-| — | *not yet signed off* | — | The quotation pipeline is new. Nothing has been read by a person. |
+| — | *not yet signed off* | — | 885 quoted questions from two pools, and nothing has been read by a person. Sample across **authors and across pools** — the dump's prompts were written by a model, A&G's are the book's own glosses, and they fail in different ways. |
+
+### What Allen & Greenough was made to prove first
+
+A&G was put through the test below before a line of its pipeline was written,
+because it is the same kind of source that Bennett's index turned out not to be:
+a grammar, citing loci, printing sentences it says are somebody else's.
+
+It passed. Against `de Bello Gallico` I–IV — all the corpus held at the time — 50
+surviving sentences, asking what fraction of A&G's words appear in Caesar in
+order: 34 at 90% or better, 15 between 65% and 90%, and one below, which is A&G's
+own ellipsis correctly marking an omission. Bennett's index scored 4 of 54 on the
+same author. A&G abridges, as Smyth abridges. It does not recast.
+
+`verify-attribution.mjs` then measured the shipped questions against a corpus
+widened to what these citations actually name — all of Cicero's cited works,
+Livy, Sallust, Tacitus, and `de Bello Gallico` entire: **561 confirmed of 750
+checkable (74.8%), 0 contradicted**, and 557 of the 561 found in the *work* cited
+rather than merely somewhere in the author. Greek sits at 80.7% with Smyth.
+
+That corpus is not `reference/texts/`, deliberately. That directory is also what
+`ingest_frequency.py` ranks into the committed `frequency.tsv.gz`, so widening it
+to settle an attribution would quietly move what the pack calls a common word.
+`verify-attribution.mjs --texts <dir>` keeps the two apart.
+
+### Why the filing is per section and not per sentence
+
+The first run asked a model to place each of 593 sentences on its own. Nothing
+about that is checkable by a gate, and it was wrong often enough to matter.
+
+Shown a bare sentence, a model has only its surface, and the surfaces collide:
+`Quid ipse sentiam expōnam` and `Exspectās fortasse dum dīcat` are both a
+subordinate clause with a subjunctive verb. So sentences drifted toward whatever
+topic matched the shape. A&G §485 (sequence of tenses), §592 (implied indirect
+discourse) and §449 (the future imperative) all landed under temporal clauses,
+and the sentences of **64 of 147 A&G sections were scattered across two Bennett
+topics or more, up to seven** — which is impossible if the filing is right,
+because a section illustrates one construction.
+
+The information that fixes it was never passed in. A&G prints each sentence
+*under a section that explains the construction*, so the section is the unit
+that carries the answer. Asking once per section, with A&G's prose attached:
+scatter fell to 6 of 147, §485 went to `bn-266`, §592 to `bn-323`, §449 to
+`bn-271`, and the whole pass cost 6 model calls instead of 24.
+
+The residue is the honest part. Sections A&G writes about one thing and Bennett
+splits across two are the 6 that still scatter, and they are in the map to be
+read rather than argued with.
 
 ### What was already ruled out, so it is not tried again
 
@@ -89,10 +136,22 @@ consistent and externally wrong passes all of them.
 
 ## Known state
 
-- **Latin quotes nothing yet, and the run that would change that was left
-  going.** Every Latin question on screen is generated. Greek's quoted half
-  shipped on 2026-08-07; Latin's was still building when the session ended.
-  Where it stands, and how to pick it up, is the next section.
+- **Latin quotes 889 questions over 50 topics, out of two pools.** 308 came from
+  the dictionary dump through `build-quote-pool.mjs`, which is the run the next
+  section is about. 581 came from Allen & Greenough through `ag-quotes.mjs` on
+  2026-08-10. The two are additive and neither replaces the other: the dump
+  reaches sentences no grammar prints, and A&G reaches the syntax the dump
+  cannot be asked about.
+- **A&G's half is filed by section, and the map is committed** at
+  `grammar/ag-topics.tsv`. Filing sentence by sentence was tried first and
+  abandoned — see below. Reading a row is the review: A&G's own words on the
+  left, Bennett's topic on the right, 147 of them.
+- **A topic's title is narrower than the sections it covers**, and this misled a
+  review of the filing before it misleads another. `bn-292` is titled *Temporal
+  clauses with the subjunctive* and spans Bennett §§292–300, which also hold
+  substantive clauses of purpose, of result, with `quīn`, with `quod`, and
+  indirect questions. An indirect question filed there is correctly filed. Judge
+  a row against the topic's `ref` range and text, never against its title.
 - Every one of the 114 topics is at or above its size-scaled target: 6 tests at
   the thinnest, 12 median, 63 at the largest. The coverage gap is closed.
 - The 63 is a merge, not a windfall: §124-132 was six separate topics under the

@@ -359,5 +359,159 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-q1",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "Nor did he let him go until he gave a pledge.",
+    "answer": "Neque ante dīmīsit eum quam fidem dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Neque",
+     "ante",
+     "dīmīsit",
+     "eum",
+     "quam",
+     "fidem",
+     "dedit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "39.10"
+    }
+   },
+   {
+    "prompt": "Cato himself by this time had rather be a slave than fight.",
+    "answer": "Catō ipse iam servīre quam pūgnāre māvult.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catō",
+     "ipse",
+     "iam",
+     "servīre",
+     "quam",
+     "pūgnāre",
+     "māvult"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "7.15"
+    }
+   },
+   {
+    "prompt": "Nor did they stop running until they reached the river.",
+    "answer": "Neque prius fugere dēstitērunt quam ad flūmen pervēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Neque",
+     "prius",
+     "fugere",
+     "dēstitērunt",
+     "quam",
+     "ad",
+     "flūmen",
+     "pervēnērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.53"
+    }
+   },
+   {
+    "prompt": "Before you could sell him his own property, he took possession of it himself.",
+    "answer": "Priusquam tū suum sibi vēnderēs, ipse possēdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Priusquam",
+     "tū",
+     "suum",
+     "sibi",
+     "vēnderēs",
+     "ipse",
+     "possēdit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.96"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-q2",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "Before a weapon could be thrown or our men approached nearer, the whole line about Varus took flight.",
+    "answer": "Priusquam tēlum abicī posset aut nostrī propius accēderent, omnis Vārī aciēs terga vertit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Priusquam",
+     "tēlum",
+     "abicī",
+     "posset",
+     "aut",
+     "nostrī",
+     "propius",
+     "accēderent",
+     "omnis",
+     "Vārī",
+     "aciēs",
+     "terga",
+     "vertit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2.34"
+    }
+   },
+   {
+    "prompt": "Before I reply to the rest, I will say a little about friendship.",
+    "answer": "Priusquam dē cēterīs rēbus respondeō, dē amīcitiā pauca dīcam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Priusquam",
+     "dē",
+     "cēterīs",
+     "rēbus",
+     "respondeō",
+     "dē",
+     "amīcitiā",
+     "pauca",
+     "dīcam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.3"
+    }
+   },
+   {
+    "prompt": "I shall not weary till I have traced out their doubtful ways.",
+    "answer": "Nōn dēfatīgābor antequam illōrum ancipitēs viās percēperō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "dēfatīgābor",
+     "antequam",
+     "illōrum",
+     "ancipitēs",
+     "viās",
+     "percēperō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "3.145"
+    }
+   }
+  ]
  }
 ]

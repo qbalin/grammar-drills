@@ -1573,5 +1573,316 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q2",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "They remember many things that they have heard from others.",
+    "answer": "Multa ab aliīs audīta meminērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Multa",
+     "ab",
+     "aliīs",
+     "audīta",
+     "meminērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.355"
+    }
+   },
+   {
+    "prompt": "He forgot the whole case.",
+    "answer": "Tōtam causam oblītus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tōtam",
+     "causam",
+     "oblītus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "217"
+    }
+   },
+   {
+    "prompt": "And yet I must not forget Epicurus.",
+    "answer": "Nec tamen Epicūrī licet oblīvīscī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "tamen",
+     "Epicūrī",
+     "licet",
+     "oblīvīscī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "5.3"
+    }
+   },
+   {
+    "prompt": "Let him remember both the former discomfiture of the Roman people and the ancient valor of the Helvetians. let him bear it in mind.",
+    "answer": "Reminīscerētur et veteris incommodī populī Rōmānī et prīstinae virtūtis Helvētiōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Reminīscerētur",
+     "et",
+     "veteris",
+     "incommodī",
+     "populī",
+     "Rōmānī",
+     "et",
+     "prīstinae",
+     "virtūtis",
+     "Helvētiōrum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q3",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "Recall that unanimous agreement of the theatre.",
+    "answer": "Recordāre cōnsēnsum illum theātrī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Recordāre",
+     "cōnsēnsum",
+     "illum",
+     "theātrī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "1.30"
+    }
+   },
+   {
+    "prompt": "Call to mind all the civil wars.",
+    "answer": "Recordāminī omnīs cīvīlīs dissēnsiōnēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Recordāminī",
+     "omnīs",
+     "cīvīlīs",
+     "dissēnsiōnēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3.24"
+    }
+   },
+   {
+    "prompt": "Catiline reminded one of his poverty, another of his cupidity.",
+    "answer": "Catilīna admonēbat alium egestātis, alium cupiditātis suae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catilīna",
+     "admonēbat",
+     "alium",
+     "egestātis",
+     "alium",
+     "cupiditātis",
+     "suae"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "21"
+    }
+   },
+   {
+    "prompt": "I see, not that you were acquitted of outrage, but that they were condemned for homicide.",
+    "answer": "Videō nōn tē absolūtum esse improbitātis, sed illōs damnātōs esse caedis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Videō",
+     "nōn",
+     "tē",
+     "absolūtum",
+     "esse",
+     "improbitātis",
+     "sed",
+     "illōs",
+     "damnātōs",
+     "esse",
+     "caedis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.72"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q4",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "Have pity on the family.",
+    "answer": "Miserēminī familiae, iūdicēs, miserēminī patris, miserēminī fīlī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Miserēminī",
+     "familiae",
+     "iūdicēs",
+     "miserēminī",
+     "patris",
+     "miserēminī",
+     "fīlī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Flacco",
+     "locus": "106"
+    }
+   },
+   {
+    "prompt": "I pity the very walls.",
+    "answer": "Mē miseret parietum ipsōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mē",
+     "miseret",
+     "parietum",
+     "ipsōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.69"
+    }
+   },
+   {
+    "prompt": "I am sick and tired of the ways of the state.",
+    "answer": "Mē cīvitātis mōrum piget taedetque.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mē",
+     "cīvitātis",
+     "mōrum",
+     "piget",
+     "taedetque"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "4"
+    }
+   },
+   {
+    "prompt": "Nor am I sorry to have deadly enmities.",
+    "answer": "Neque mē paenitet mortālīs inimīcitiās habēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Neque",
+     "mē",
+     "paenitet",
+     "mortālīs",
+     "inimīcitiās",
+     "habēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Rabirio Postumo",
+     "locus": "32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q5",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "For I see what is for my good and for the good of us both.",
+    "answer": "Videō enim quid meā intersit, quid utrīusque nostrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Videō",
+     "enim",
+     "quid",
+     "meā",
+     "intersit",
+     "quid",
+     "utrīusque",
+     "nostrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "7.23.4"
+    }
+   },
+   {
+    "prompt": "It would be very much to your advantage, you who are fathers.",
+    "answer": "Vehementer intererat vestrā quī patrēs estis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vehementer",
+     "intererat",
+     "vestrā",
+     "quī",
+     "patrēs",
+     "estis"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "4.13.4"
+    }
+   },
+   {
+    "prompt": "It is of great consequence to our honor.",
+    "answer": "Māgnī ad honōrem nostrum interest.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māgnī",
+     "ad",
+     "honōrem",
+     "nostrum",
+     "interest"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16.1"
+    }
+   },
+   {
+    "prompt": "It makes a difference as to the crop.",
+    "answer": "Rēfert etiam ad frūctūs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēfert",
+     "etiam",
+     "ad",
+     "frūctūs"
+    ],
+    "source": {
+     "author": "Marcus Terentius Varro",
+     "work": "Res Rusticae",
+     "locus": "1.16.6"
+    }
+   }
+  ]
  }
 ]

@@ -1348,5 +1348,386 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-336-participles-q2",
+  "sectionId": "bn-336-participles",
+  "questions": [
+   {
+    "prompt": "And so, having called the centurions together, he informs the soldiers.",
+    "answer": "Itaque convocātīs centuriōnibus mīlitēs certiōrēs facit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Itaque",
+     "convocātīs",
+     "centuriōnibus",
+     "mīlitēs",
+     "certiōrēs",
+     "facit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3.5"
+    }
+   },
+   {
+    "prompt": "Having observed this Caesar led his troops to the nearest hill.",
+    "answer": "Postquam id animum advertit cōpiās suās Caesar in proximum collem subdūcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Postquam",
+     "id",
+     "animum",
+     "advertit",
+     "cōpiās",
+     "suās",
+     "Caesar",
+     "in",
+     "proximum",
+     "collem",
+     "subdūcit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.24"
+    }
+   },
+   {
+    "prompt": "You see how busy old age is, always aiming and trying at something.",
+    "answer": "Vidētis ut senectūs sit operōsa et semper agēns aliquid et mōliēns.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vidētis",
+     "ut",
+     "senectūs",
+     "sit",
+     "operōsa",
+     "et",
+     "semper",
+     "agēns",
+     "aliquid",
+     "et",
+     "mōliēns"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "26"
+    }
+   },
+   {
+    "prompt": "The arms which had been fastened on the walls were found upon the ground.",
+    "answer": "Arma quae fīxa in parietibus fuerant, humī inventa sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Arma",
+     "quae",
+     "fīxa",
+     "in",
+     "parietibus",
+     "fuerant",
+     "humī",
+     "inventa",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "1.74"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q3",
+  "sectionId": "bn-336-participles",
+  "questions": [
+   {
+    "prompt": "While rolling over the corpses of the enemy they found a friend.",
+    "answer": "Volventēs hostīlia cadāvera amīcum reperiēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Volventēs",
+     "hostīlia",
+     "cadāvera",
+     "amīcum",
+     "reperiēbant"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "61"
+    }
+   },
+   {
+    "prompt": "Because he feared to follow further, he came to Cicero.",
+    "answer": "Longius prōsequī veritus, ad Cicerōnem pervēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Longius",
+     "prōsequī",
+     "veritus",
+     "ad",
+     "Cicerōnem",
+     "pervēnit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5.52"
+    }
+   },
+   {
+    "prompt": "If condemned, punishment must overtake him.",
+    "answer": "Damnātum poenam sequī oportēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Damnātum",
+     "poenam",
+     "sequī",
+     "oportēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.4"
+    }
+   },
+   {
+    "prompt": "I conducted the discussion either sitting or walking.",
+    "answer": "Aut sedēns aut ambulāns disputābam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aut",
+     "sedēns",
+     "aut",
+     "ambulāns",
+     "disputābam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q4",
+  "sectionId": "bn-336-participles",
+  "questions": [
+   {
+    "prompt": "He draws up the lines, and leads them to level ground.",
+    "answer": "Īnstrūctōs ōrdinēs in locum aequum dēdūcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īnstrūctōs",
+     "ōrdinēs",
+     "in",
+     "locum",
+     "aequum",
+     "dēdūcit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "59"
+    }
+   },
+   {
+    "prompt": "It is wretched to vex oneself without effecting anything.",
+    "answer": "Miserum est nihil prōficientem angī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Miserum",
+     "est",
+     "nihil",
+     "prōficientem",
+     "angī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "3.14"
+    }
+   },
+   {
+    "prompt": "He had eighty cohorts stationed in line of battle.",
+    "answer": "Cohortīs in aciē LXXX cōnstitūtās habēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cohortīs",
+     "in",
+     "aciē",
+     "LXXX",
+     "cōnstitūtās",
+     "habēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3.89"
+    }
+   },
+   {
+    "prompt": "You have now captured the infamous leaders and hold them in custody.",
+    "answer": "Nefāriōs ducēs captōs iam et comprehēnsōs tenētis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nefāriōs",
+     "ducēs",
+     "captōs",
+     "iam",
+     "et",
+     "comprehēnsōs",
+     "tenētis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3.16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q5",
+  "sectionId": "bn-336-participles",
+  "questions": [
+   {
+    "prompt": "Many discharged their officers.",
+    "answer": "Praefectōs suōs multī missōs fēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Praefectōs",
+     "suōs",
+     "multī",
+     "missōs",
+     "fēcērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3.134"
+    }
+   },
+   {
+    "prompt": "Die, Diagoras, for you are not likely to rise to heaven.",
+    "answer": "Morere, Diagorā, nōn enim in caelum adscēnsūrus es.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Morere",
+     "Diagorā",
+     "nōn",
+     "enim",
+     "in",
+     "caelum",
+     "adscēnsūrus",
+     "es"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.111"
+    }
+   },
+   {
+    "prompt": "The young man hopes to live long.",
+    "answer": "Spērat adulēscēns diū sē vīctūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Spērat",
+     "adulēscēns",
+     "diū",
+     "sē",
+     "vīctūrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "68"
+    }
+   },
+   {
+    "prompt": "He gave me as much as he could, ready to give me more if he had been able.",
+    "answer": "Dedit mihi quantum maximum potuit, datūrus amplius sī potuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dedit",
+     "mihi",
+     "quantum",
+     "maximum",
+     "potuit",
+     "datūrus",
+     "amplius",
+     "sī",
+     "potuisset"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "3.21.6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q6",
+  "sectionId": "bn-336-participles",
+  "questions": [
+   {
+    "prompt": "A grave and intolerable wrong has been done.",
+    "answer": "Gravis iniūria facta est et nōn ferenda.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gravis",
+     "iniūria",
+     "facta",
+     "est",
+     "et",
+     "nōn",
+     "ferenda"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Flacco",
+     "locus": "84"
+    }
+   },
+   {
+    "prompt": "Will not the thing have to be agitated?",
+    "answer": "Nōn agitanda rēs erit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "agitanda",
+     "rēs",
+     "erit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.179"
+    }
+   },
+   {
+    "prompt": "He had the temple of Castor to take care of.",
+    "answer": "Aedem Castoris habuit tuendam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aedem",
+     "Castoris",
+     "habuit",
+     "tuendam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.150"
+    }
+   }
+  ]
  }
 ]

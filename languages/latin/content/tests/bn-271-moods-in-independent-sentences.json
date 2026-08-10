@@ -741,5 +741,79 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-271-moods-in-independent-sentences-q1",
+  "sectionId": "bn-271-moods-in-independent-sentences",
+  "questions": [
+   {
+    "prompt": "The safety of the people shall be their first law.",
+    "answer": "Ollīs salūs populī suprēma lēx estō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ollīs",
+     "salūs",
+     "populī",
+     "suprēma",
+     "lēx",
+     "estō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3.8"
+    }
+   },
+   {
+    "prompt": "When you have attended to your health, then look to your sailing.",
+    "answer": "Cum valētūdinī cōnsulueris, tum cōnsulitō nāvigātiōnī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "valētūdinī",
+     "cōnsulueris",
+     "tum",
+     "cōnsulitō",
+     "nāvigātiōnī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16.4.3"
+    }
+   },
+   {
+    "prompt": "Take care to be at Rome.",
+    "answer": "Cūrā ut Rōmae sīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cūrā",
+     "ut",
+     "Rōmae",
+     "sīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "See that you take care of your health.",
+    "answer": "Fac ut valētūdinem cūrēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fac",
+     "ut",
+     "valētūdinem",
+     "cūrēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "14.17"
+    }
+   }
+  ]
  }
 ]

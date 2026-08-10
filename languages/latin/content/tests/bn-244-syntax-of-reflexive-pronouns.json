@@ -781,5 +781,278 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q2",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "The Helvetii had already led their own forces across through the narrows and the territory of the Sequani and had reached the territory of the Aedui, and were laying waste their fields.",
+    "answer": "Helvētiī iam per angustiās et fīnēs Sēquanōrum suās cōpiās trādūxerant et in Haeduōrum fīnēs pervēnerant eorumque agrōs populābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Helvētiī",
+     "iam",
+     "per",
+     "angustiās",
+     "et",
+     "fīnēs",
+     "Sēquanōrum",
+     "suās",
+     "cōpiās",
+     "trādūxerant",
+     "et",
+     "in",
+     "Haeduōrum",
+     "fīnēs",
+     "pervēnerant",
+     "eorumque",
+     "agrōs",
+     "populābantur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.11"
+    }
+   },
+   {
+    "prompt": "The Boii too, who had settled across the Rhine and had crossed into Norican territory and were attacking Noreia, they welcomed to themselves as allies and attached to themselves.",
+    "answer": "Boiosque, quī trāns Rhēnum incoluerant et in agrum Nōricum trānsierant Noreiamque oppugnābant, receptōs ad sē sociōs sibī̆ adscīscunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Boiosque",
+     "quī",
+     "trāns",
+     "Rhēnum",
+     "incoluerant",
+     "et",
+     "in",
+     "agrum",
+     "Nōricum",
+     "trānsierant",
+     "Noreiamque",
+     "oppugnābant",
+     "receptōs",
+     "ad",
+     "sē",
+     "sociōs",
+     "sibī",
+     "adscīscunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Gallic War",
+     "locus": "1.5"
+    }
+   },
+   {
+    "prompt": "He threw himself from the ship.",
+    "answer": "Sē ex nāvī prōiēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sē",
+     "ex",
+     "nāvī",
+     "prōiēcit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.25"
+    }
+   },
+   {
+    "prompt": "Caesar leads up his troops.",
+    "answer": "Caesar suās cōpiās subdūcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "suās",
+     "cōpiās",
+     "subdūcit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.22"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q3",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "What reason is there why we should exert ourselves in so great toils?",
+    "answer": "Quid est quod tantīs nōs in labōribus exerceāmus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "est",
+     "quod",
+     "tantīs",
+     "nōs",
+     "in",
+     "labōribus",
+     "exerceāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Archia",
+     "locus": "28"
+    }
+   },
+   {
+    "prompt": "For each of you pick out from the squadrons and maniples nine like yourselves.",
+    "answer": "Singulīs vōbīs novēnōs ex turmīs manipulīsque vestrī similēs ēligite.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Singulīs",
+     "vōbīs",
+     "novēnōs",
+     "ex",
+     "turmīs",
+     "manipulīsque",
+     "vestrī",
+     "similēs",
+     "ēligite"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21.54"
+    }
+   },
+   {
+    "prompt": "They are so many that the prison cannot hold them.",
+    "answer": "Sunt ita multī ut eōs carcer capere nōn possit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sunt",
+     "ita",
+     "multī",
+     "ut",
+     "eōs",
+     "carcer",
+     "capere",
+     "nōn",
+     "possit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2.22"
+    }
+   },
+   {
+    "prompt": "He was not content with that which had happened to him beyond his hope.",
+    "answer": "Nōn fuit eō contentus quod eī praeter spem acciderat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "fuit",
+     "eō",
+     "contentus",
+     "quod",
+     "eī",
+     "praeter",
+     "spem",
+     "acciderat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "25"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q4",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "You have just heard the ambassadors from Tyndaris say that the statue of Mercury which was worshiped with annual rites among them was taken away.",
+    "answer": "Audīstis nūper dīcere lēgātōs Tyndaritānōs Mercurium quī sacrīs anniversāriīs apud eōs colerētur esse sublātum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Audīstis",
+     "nūper",
+     "dīcere",
+     "lēgātōs",
+     "Tyndaritānōs",
+     "Mercurium",
+     "quī",
+     "sacrīs",
+     "anniversāriīs",
+     "apud",
+     "eōs",
+     "colerētur",
+     "esse",
+     "sublātum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4.84"
+    }
+   },
+   {
+    "prompt": "How can any one fail to approve his own safety?",
+    "answer": "Quī poterat salūs sua cuiquam nōn probārī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "poterat",
+     "salūs",
+     "sua",
+     "cuiquam",
+     "nōn",
+     "probārī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "81"
+    }
+   },
+   {
+    "prompt": "I am anxious to cure these men for their own benefit.",
+    "answer": "Studeō sānāre sibi ipsōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Studeō",
+     "sānāre",
+     "sibi",
+     "ipsōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2.17"
+    }
+   },
+   {
+    "prompt": "The greatest wealth is to be content with one's own.",
+    "answer": "Contentum suīs rēbus esse maximae sunt dīvitiae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Contentum",
+     "suīs",
+     "rēbus",
+     "esse",
+     "maximae",
+     "sunt",
+     "dīvitiae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "51"
+    }
+   }
+  ]
  }
 ]

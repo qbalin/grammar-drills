@@ -33,6 +33,7 @@ import { compileFold, words } from "@lang-tutor/core";
 import { loadGrammar, loadProfile, packDir } from "./lib/pack.mjs";
 import { openReference } from "./lib/reference.mjs";
 import { makeClassifier } from "./lib/attestation.mjs";
+import { QUOTED_ID } from "./lib/quoted.mjs";
 
 const argv = process.argv.slice(2);
 const at = (name) => {
@@ -74,6 +75,7 @@ const fold = compileFold(profile.fold);
 // --- what makes a quote unusable -------------------------------------------
 
 const funnel = {
+  unknownTopic: 0,
   tooShort: 0,
   tooLong: 0,
   noSource: 0,
@@ -81,6 +83,7 @@ const funnel = {
   garbled: 0,
   unattested: 0,
   duplicate: 0,
+  sameAnswer: 0,
   thinTopic: 0,
 };
 
@@ -172,31 +175,41 @@ function fromGrammar() {
 }
 
 /**
- * Latin: a pool built out of the dictionary dump, already matched to topics and
- * already macronized. Written by `build-quote-pool.mjs`, committed, and read
- * here so that this half of the pipeline needs no dump of its own.
+ * Latin: pools already matched to topics and already macronized, read here so
+ * that this half of the pipeline needs no dump and no grammar of its own.
+ *
+ * Two of them, because Latin has two ways of getting to a quotation and they
+ * are not alternatives. `quotes.jsonl.gz` is the dictionary dump's, written by
+ * `build-quote-pool.mjs`. `ag-quotes.jsonl.gz` is Allen & Greenough's, written
+ * by `ag-quotes.mjs`. Same schema, different books, and a pack may ship either
+ * or both — so this fails only when it can find neither.
  */
+const POOLS = ["quotes.jsonl.gz", "ag-quotes.jsonl.gz"];
+
 function fromQuotes() {
-  const path = join(dir, "content", "quotes.jsonl.gz");
-  if (!existsSync(path)) {
+  const present = POOLS.map((name) => join(dir, "content", name)).filter((p) => existsSync(p));
+  if (!present.length) {
     console.error(
-      `No quote pool at ${path}.\n` +
-        "Build one with scripts/build-quote-pool.mjs (it needs the dictionary dump).",
+      `No quote pool in ${join(dir, "content")} (looked for ${POOLS.join(", ")}).\n` +
+        "Build one with scripts/build-quote-pool.mjs (it needs the dictionary dump),\n" +
+        "or scripts/ag-quotes.mjs (it does not).",
     );
     process.exit(2);
   }
   const out = [];
-  for (const line of gunzipSync(readFileSync(path)).toString("utf8").split("\n")) {
-    if (!line.trim()) continue;
-    const quote = JSON.parse(line);
-    for (const topicId of quote.topics ?? []) {
-      out.push({
-        topicId,
-        answer: quote.text,
-        prompt: asPrompt(quote.prompt ?? quote.english),
-        source: quote.source,
-        ref: null,
-      });
+  for (const path of present) {
+    for (const line of gunzipSync(readFileSync(path)).toString("utf8").split("\n")) {
+      if (!line.trim()) continue;
+      const quote = JSON.parse(line);
+      for (const topicId of quote.topics ?? []) {
+        out.push({
+          topicId,
+          answer: quote.text,
+          prompt: asPrompt(quote.prompt ?? quote.english),
+          source: quote.source,
+          ref: null,
+        });
+      }
     }
   }
   return out;
@@ -205,9 +218,21 @@ function fromQuotes() {
 // --- the funnel -------------------------------------------------------------
 
 const topicIds = new Set(grammar.map((t) => t.id));
-const candidates = (from === "quotes" ? fromQuotes() : fromGrammar()).filter((c) =>
-  topicIds.has(c.topicId),
-);
+// Named rather than a ternary: `--from exampels` used to run the Greek path
+// against Latin and report a clean empty funnel, which reads as "there was
+// nothing to find" and is not the same thing as a typo.
+const SOURCES = { grammar: fromGrammar, quotes: fromQuotes };
+if (!SOURCES[from]) {
+  console.error(`--from ${from} is not one of: ${Object.keys(SOURCES).join(", ")}`);
+  process.exit(2);
+}
+const candidates = SOURCES[from]().filter((c) => {
+  // A pool naming a topic the syllabus does not have is a renamed topic or a
+  // stale pool, and either way it is silence until it is counted.
+  if (topicIds.has(c.topicId)) return true;
+  funnel.unknownTopic++;
+  return false;
+});
 
 /*
  * Every prompt the pack already ships, so a quote cannot reintroduce one.
@@ -217,11 +242,25 @@ const candidates = (from === "quotes" ? fromQuotes() : fromGrammar()).filter((c)
  * sentence across topics as readily as within one.
  */
 const seenPrompts = new Set();
+/*
+ * And every answer, which is not the same question asked twice.
+ *
+ * Two pools can hold one sentence: Cicero wrote it once, and both the
+ * dictionary dump and Allen & Greenough may have kept it. Their prompts differ
+ * — one was written by a model, the other is A&G's own gloss — so the prompt key
+ * lets both through and the student meets the same Latin twice under two
+ * different English sentences. C4 never sees it, because C4 counts prompts.
+ */
+const seenAnswers = new Set();
+const answerKey = (answer) => words(answer).map((w) => fold(w)).join(" ");
 const testsDir = join(dir, "content", "tests");
 for (const file of existsSync(testsDir) ? readdirSync(testsDir) : []) {
   if (!file.endsWith(".json")) continue;
   for (const test of JSON.parse(readFileSync(join(testsDir, file), "utf8"))) {
-    for (const q of test.questions ?? []) seenPrompts.add(promptKey(q.prompt));
+    for (const q of test.questions ?? []) {
+      seenPrompts.add(promptKey(q.prompt));
+      seenAnswers.add(answerKey(q.answer));
+    }
   }
 }
 
@@ -273,7 +312,13 @@ for (const candidate of candidates) {
     funnel.duplicate++;
     continue;
   }
+  const answered = answerKey(answer);
+  if (seenAnswers.has(answered)) {
+    funnel.sameAnswer++;
+    continue;
+  }
   seenPrompts.add(key);
+  seenAnswers.add(answered);
 
   const { verse, ...shipped } = source;
   if (!byTopic.has(candidate.topicId)) byTopic.set(candidate.topicId, []);
@@ -307,12 +352,27 @@ for (const [topicId, questions] of [...byTopic].sort()) {
     ? JSON.parse(readFileSync(path, "utf8"))
     : [];
 
+  /*
+   * Where this topic's quoted ids have got to already.
+   *
+   * The file is appended to, so counting from one would write a second `-q1`
+   * beside the first the moment this runs twice — which Latin's two pools make
+   * ordinary rather than hypothetical. Nothing would catch it: C0 checks that a
+   * test *file* names a real topic and G5 checks for duplicate *topic* ids, so
+   * a duplicate test id ships green and corrupts whatever keys progress on it.
+   */
+  let n = 0;
+  for (const test of existing) {
+    const seen = QUOTED_ID.exec(String(test.id ?? ""));
+    if (seen) n = Math.max(n, Number(seen[0].slice(2)));
+  }
+
   const tests = [];
   for (let i = 0; i < questions.length; i += QUESTIONS) {
     const slice = questions.slice(i, i + QUESTIONS);
     if (slice.length < MIN_QUESTIONS) break;
     tests.push({
-      id: `${topicId}-q${tests.length + 1}`,
+      id: `${topicId}-q${n + tests.length + 1}`,
       sectionId: topicId,
       questions: slice,
     });
@@ -373,11 +433,17 @@ if (!planning) {
    * measures how much of a fixed corpus happens to fit a syllabus. Averaging
    * the two would make C6 mean nothing.
    */
-  writeFileSync(
-    join(dir, "content", "quote-stats.json"),
-    `${JSON.stringify(stats, null, 1)}\n`,
-  );
-  console.log(`  wrote content/quote-stats.json`);
+  /*
+   * An array of runs, the way `gen-stats.json` is, because Latin has two pools
+   * and so two runs. A single object would let the second erase the first's
+   * funnel — and the funnel is the whole record of what was dropped and what a
+   * budget raise would have bought back.
+   */
+  const statsPath = join(dir, "content", "quote-stats.json");
+  const before = existsSync(statsPath) ? JSON.parse(readFileSync(statsPath, "utf8")) : [];
+  const runs = Array.isArray(before) ? before : [before];
+  writeFileSync(statsPath, `${JSON.stringify([...runs, stats], null, 1)}\n`);
+  console.log(`  wrote content/quote-stats.json (${runs.length + 1} run(s))`);
 }
 
 ref.close();

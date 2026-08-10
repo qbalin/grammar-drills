@@ -1011,5 +1011,78 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-141-prepositions-q1",
+  "sectionId": "bn-141-prepositions",
+  "questions": [
+   {
+    "prompt": "The Belgae rise from the farthest borders of Gaul, extend to the lower part of the river Rhine, and look toward the north and the rising sun.",
+    "answer": "Belgae ab extrēmīs Galliae fīnibus oriuntur, pertinent ad īnferiōrem partem flūminis Rhēnī, spectant in septentriōnem et orientem sōlem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Belgae",
+     "ab",
+     "extrēmīs",
+     "Galliae",
+     "fīnibus",
+     "oriuntur",
+     "pertinent",
+     "ad",
+     "īnferiōrem",
+     "partem",
+     "flūminis",
+     "Rhēnī",
+     "spectant",
+     "in",
+     "septentriōnem",
+     "et",
+     "orientem",
+     "sōlem"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "He paid the debt to his creditor in the presence of the people.",
+    "answer": "Rem crēditōrī palam populō solvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rem",
+     "crēditōrī",
+     "palam",
+     "populō",
+     "solvit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "6.14"
+    }
+   },
+   {
+    "prompt": "At a distance of about two miles they awaited the approach of the Romans.",
+    "answer": "Ā mīlibus passuum circiter duōbus Rōmānōrum adventum exspectābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ā",
+     "mīlibus",
+     "passuum",
+     "circiter",
+     "duōbus",
+     "Rōmānōrum",
+     "adventum",
+     "exspectābant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5.32"
+    }
+   }
+  ]
  }
 ]

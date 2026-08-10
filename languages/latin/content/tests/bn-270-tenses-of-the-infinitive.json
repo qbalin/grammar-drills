@@ -666,5 +666,103 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-q1",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "About that fellow you may hope well; I promise you that, if he prevails, he will leave not a single roof-tile in Italy.",
+    "answer": "Dē istō licet bene spērēs. Prōmittō tibī̆, sī valēbit, tēgulam illum in Ī̆taliā nūllam relictūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dē",
+     "istō",
+     "licet",
+     "bene",
+     "spērēs",
+     "Prōmittō",
+     "tibī",
+     "sī",
+     "valēbit",
+     "tēgulam",
+     "illum",
+     "in",
+     "Ī̆taliā",
+     "nūllam",
+     "relictūrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9.7.5"
+    }
+   },
+   {
+    "prompt": "If Coriolanus had friends, ought they to have borne arms with him against their fatherland?",
+    "answer": "Numne, sī Coriolānus habuit amīcōs, ferre contrā patriam arma illī cum Coriolānō dēbuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Numne",
+     "sī",
+     "Coriolānus",
+     "habuit",
+     "amīcōs",
+     "ferre",
+     "contrā",
+     "patriam",
+     "arma",
+     "illī",
+     "cum",
+     "Coriolānō",
+     "dēbuērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "36"
+    }
+   },
+   {
+    "prompt": "How could I have become consul had I not from boyhood followed that course of life?",
+    "answer": "Cōnsul esse quī potuī, nisi eum vītae cursum tenuissem ā pueritiā?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnsul",
+     "esse",
+     "quī",
+     "potuī",
+     "nisi",
+     "eum",
+     "vītae",
+     "cursum",
+     "tenuissem",
+     "ā",
+     "pueritiā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1.10"
+    }
+   },
+   {
+    "prompt": "I wish you to be well advised of this.",
+    "answer": "Illud tē esse admonitum volō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illud",
+     "tē",
+     "esse",
+     "admonitum",
+     "volō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caelio",
+     "locus": "8"
+    }
+   }
+  ]
  }
 ]

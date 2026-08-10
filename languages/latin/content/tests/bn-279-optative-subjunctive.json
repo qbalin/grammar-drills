@@ -547,5 +547,65 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-279-optative-subjunctive-q2",
+  "sectionId": "bn-279-optative-subjunctive",
+  "questions": [
+   {
+    "prompt": "And may the gods avert this omen.",
+    "answer": "Quod dī ōmen āverterint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "dī",
+     "ōmen",
+     "āverterint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "12.14, in a religious formula"
+    }
+   },
+   {
+    "prompt": "Would you had seen me dead.",
+    "answer": "Utinam mē mortuum vīdissēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "mē",
+     "mortuum",
+     "vīdissēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1.3.1"
+    }
+   },
+   {
+    "prompt": "About Menedemus I wish it had been true; about the queen I wish it may be.",
+    "answer": "Dē Menedēmō vellem vērum fuisset, dē rēgīnā velim vērum sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dē",
+     "Menedēmō",
+     "vellem",
+     "vērum",
+     "fuisset",
+     "dē",
+     "rēgīnā",
+     "velim",
+     "vērum",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "15.4.4"
+    }
+   }
+  ]
  }
 ]

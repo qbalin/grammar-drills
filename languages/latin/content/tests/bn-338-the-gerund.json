@@ -1234,5 +1234,179 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-338-the-gerund-q3",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "Caesar, when the necessary orders had been given, ran down to encourage the soldiers, to whatever quarter chance offered, and came to the tenth legion.",
+    "answer": "Caesar, necessāriīs rēbus imperātīs, ad cohortandōs mīlitēs, quam [in] partem fors obtulit, dēcucurrit et ad legiōnem decimam dēvēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "necessāriīs",
+     "rēbus",
+     "imperātīs",
+     "ad",
+     "cohortandōs",
+     "mīlitēs",
+     "quam",
+     "in",
+     "partem",
+     "fors",
+     "obtulit",
+     "dēcucurrit",
+     "et",
+     "ad",
+     "legiōnem",
+     "decimam",
+     "dēvēnit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2.21"
+    }
+   },
+   {
+    "prompt": "In how many men does the eloquence and the daily itch to show off their talent draw out their life-blood!",
+    "answer": "Quam multōrum ēloquentia et cotīdiāna ostentandī ingeniī sollicitātiō sanguinem ēdūcit!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quam",
+     "multōrum",
+     "ēloquentia",
+     "et",
+     "cotīdiāna",
+     "ostentandī",
+     "ingeniī",
+     "sollicitātiō",
+     "sanguinem",
+     "ēdūcit"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "De brevitate vitae",
+     "locus": "2"
+    }
+   },
+   {
+    "prompt": "It is the best end of living.",
+    "answer": "Vīvendī fīnis est optimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīvendī",
+     "fīnis",
+     "est",
+     "optimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "72"
+    }
+   },
+   {
+    "prompt": "No one can have a just cause for taking up arms against his country.",
+    "answer": "Nūlla causa iūsta cuiquam esse potest contrā patriam arma capiendī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nūlla",
+     "causa",
+     "iūsta",
+     "cuiquam",
+     "esse",
+     "potest",
+     "contrā",
+     "patriam",
+     "arma",
+     "capiendī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.53"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q4",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "He appointed a day for doing the work.",
+    "answer": "Diem praestitit operī faciendō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Diem",
+     "praestitit",
+     "operī",
+     "faciendō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.148"
+    }
+   },
+   {
+    "prompt": "The other seasons are fitted to reap and gather in the harvest.",
+    "answer": "Reliqua tempora dēmetendīs frūctibus et percipiendīs accommodāta sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Reliqua",
+     "tempora",
+     "dēmetendīs",
+     "frūctibus",
+     "et",
+     "percipiendīs",
+     "accommodāta",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "70"
+    }
+   },
+   {
+    "prompt": "You summon me to write.",
+    "answer": "Mē vocās ad scrībendum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mē",
+     "vocās",
+     "ad",
+     "scrībendum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "34"
+    }
+   },
+   {
+    "prompt": "You live not to put off but to confirm your daring.",
+    "answer": "Vīvis nōn ad dēpōnendam sed ad cōnfīrmandam audāciam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīvis",
+     "nōn",
+     "ad",
+     "dēpōnendam",
+     "sed",
+     "ad",
+     "cōnfīrmandam",
+     "audāciam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.4"
+    }
+   }
+  ]
  }
 ]

@@ -2226,5 +2226,339 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q8",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "Someone will now say that I am summoning slaves to the cap of liberty and casting masters down from their high estate, because I said, 'Let them respect their master rather than fear him.'.",
+    "answer": "Dīcet aliquis nunc mē vocāre ad pilleum servōs et dominōs dē fastīgiō suō dēicere, quod dīxī, “Cōlant potius dominum quam timeant”.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīcet",
+     "aliquis",
+     "nunc",
+     "mē",
+     "vocāre",
+     "ad",
+     "pilleum",
+     "servōs",
+     "et",
+     "dominōs",
+     "dē",
+     "fastīgiō",
+     "suō",
+     "dēicere",
+     "quod",
+     "dīxī",
+     "Cōlant",
+     "potius",
+     "dominum",
+     "quam",
+     "timeant"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.18"
+    }
+   },
+   {
+    "prompt": "How will it please you to swear by Jupiter the Stone, when you know that Jupiter can be angry at no one?",
+    "answer": "Quōmodo autem tibi placēbit Iovem lapidem iūrāre, cum sciās Iovem īrātum esse nēminī posse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōmodo",
+     "autem",
+     "tibi",
+     "placēbit",
+     "Iovem",
+     "lapidem",
+     "iūrāre",
+     "cum",
+     "sciās",
+     "Iovem",
+     "īrātum",
+     "esse",
+     "nēminī",
+     "posse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad familiares",
+     "locus": "7.12"
+    }
+   },
+   {
+    "prompt": "It's a fine thing to know one's own faults.",
+    "answer": "Bellum est sua vitia nōsse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bellum",
+     "est",
+     "sua",
+     "vitia",
+     "nōsse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "2.17"
+    }
+   },
+   {
+    "prompt": "That is to live in conformity with nature.",
+    "answer": "Id est convenienter nātūrae vīvere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Id",
+     "est",
+     "convenienter",
+     "nātūrae",
+     "vīvere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "4.41"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q9",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "All of whom the fact of desiring, hating, and fearing the same things has united into one.",
+    "answer": "Quōs omnīs eadem cupere, eadem ōdisse, eadem metuere, in ūnum coēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōs",
+     "omnīs",
+     "eadem",
+     "cupere",
+     "eadem",
+     "ōdisse",
+     "eadem",
+     "metuere",
+     "in",
+     "ūnum",
+     "coēgit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "31"
+    }
+   },
+   {
+    "prompt": "A happy life different base on different things, you on pleasure.",
+    "answer": "Beātē vīvere aliī in aliō, vōs in voluptāte pōnitis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Beātē",
+     "vīvere",
+     "aliī",
+     "in",
+     "aliō",
+     "vōs",
+     "in",
+     "voluptāte",
+     "pōnitis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2.86"
+    }
+   },
+   {
+    "prompt": "It is particularly unbecoming for an orator to lose his temper.",
+    "answer": "Ōrātōrem īrāscī minimē decet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātōrem",
+     "īrāscī",
+     "minimē",
+     "decet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "4.54"
+    }
+   },
+   {
+    "prompt": "Themistocles might have been inactive.",
+    "answer": "Licuit esse ōtiōsō Themistoclī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Licuit",
+     "esse",
+     "ōtiōsō",
+     "Themistoclī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.33"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q10",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "I must not be negligent.",
+    "answer": "Mihi neglegentī esse nōn licet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mihi",
+     "neglegentī",
+     "esse",
+     "nōn",
+     "licet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "1.17.6"
+    }
+   },
+   {
+    "prompt": "Why is it not allowed these men to be free?",
+    "answer": "Cūr hīs esse līberōs nōn licet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cūr",
+     "hīs",
+     "esse",
+     "līberōs",
+     "nōn",
+     "licet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Flacco",
+     "locus": "71"
+    }
+   },
+   {
+    "prompt": "It is not necessary for all to speak standing.",
+    "answer": "Nōn est omnibus stantibus necesse dīcere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "est",
+     "omnibus",
+     "stantibus",
+     "necesse",
+     "dīcere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Marcello",
+     "locus": "33"
+    }
+   },
+   {
+    "prompt": "I beg you will make haste to come.",
+    "answer": "Ōrō ut mātūrēs venīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrō",
+     "ut",
+     "mātūrēs",
+     "venīre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "4.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-326-the-infinitive-q11",
+  "sectionId": "bn-326-the-infinitive",
+  "questions": [
+   {
+    "prompt": "I cannot forget that which I wish.",
+    "answer": "Oblīvīscī nōn possum quae volō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Oblīvīscī",
+     "nōn",
+     "possum",
+     "quae",
+     "volō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2.104"
+    }
+   },
+   {
+    "prompt": "Cease to teach me that.",
+    "answer": "Dēsine id mē docēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dēsine",
+     "id",
+     "mē",
+     "docēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2.29"
+    }
+   },
+   {
+    "prompt": "Alas, that you should have fallen into such grief for me!",
+    "answer": "Tē in tantās aerumnās propter mē incidisse!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tē",
+     "in",
+     "tantās",
+     "aerumnās",
+     "propter",
+     "mē",
+     "incidisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "14.1"
+    }
+   },
+   {
+    "prompt": "Yet why do I speak? that anything should bend you!",
+    "answer": "Quamquam quid loquor? Tē ut ūlla rēs frangat!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "quid",
+     "loquor",
+     "Tē",
+     "ut",
+     "ūlla",
+     "rēs",
+     "frangat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.22"
+    }
+   }
+  ]
  }
 ]

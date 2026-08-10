@@ -2646,5 +2646,578 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q1",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "He himself, inflamed with crime and fury, came into the forum; his eyes were blazing, cruelty stood out from his whole face.",
+    "answer": "Ipse īnflammātus scelere et furōre in forum vēnit; ārdēbant oculī, tōtō ex ōre crūdēlitās ēminēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ipse",
+     "īnflammātus",
+     "scelere",
+     "et",
+     "furōre",
+     "in",
+     "forum",
+     "vēnit",
+     "ārdēbant",
+     "oculī",
+     "tōtō",
+     "ex",
+     "ōre",
+     "crūdēlitās",
+     "ēminēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.5.161"
+    }
+   },
+   {
+    "prompt": "That was the road I was trying, cautiously, step by step.",
+    "answer": "Eam egō̆ viam pedetemptim temptābam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eam",
+     "egō",
+     "viam",
+     "pedetemptim",
+     "temptābam"
+    ],
+    "source": {
+     "author": "Marcus Porcius Cato",
+     "work": "Orationum Fragmenta",
+     "locus": "45"
+    }
+   },
+   {
+    "prompt": "The senate knows this, the consul sees it, yet this man lives.",
+    "answer": "Senātus haec intellegit, cōnsul videt, hīc tamen vīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senātus",
+     "haec",
+     "intellegit",
+     "cōnsul",
+     "videt",
+     "hīc",
+     "tamen",
+     "vīvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "I give you my seat.",
+    "answer": "Tibi concēdō meās sēdīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tibi",
+     "concēdō",
+     "meās",
+     "sēdīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "1.104"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q2",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "You arrange a case, he arrays an army.",
+    "answer": "Tū āctiōnem īnstituis, ille aciem īnstruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tū",
+     "āctiōnem",
+     "īnstituis",
+     "ille",
+     "aciem",
+     "īnstruit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "22"
+    }
+   },
+   {
+    "prompt": "Epicurus says such things.",
+    "answer": "Epicūrus vērō ea dīcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Epicūrus",
+     "vērō",
+     "ea",
+     "dīcit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2.17"
+    }
+   },
+   {
+    "prompt": "For a long time I have not known what you were doing.",
+    "answer": "Iam diū īgnōrō quid agās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iam",
+     "diū",
+     "īgnōrō",
+     "quid",
+     "agās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "7.9"
+    }
+   },
+   {
+    "prompt": "I have long been urging you.",
+    "answer": "Tē iam dūdum hortor.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tē",
+     "iam",
+     "dūdum",
+     "hortor"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q3",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "We suffer now these many years. We no longer suffer.",
+    "answer": "Patimur multōs iam annōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Patimur",
+     "multōs",
+     "iam",
+     "annōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.126"
+    }
+   },
+   {
+    "prompt": "For a year you have been a hearer of Cratippus.",
+    "answer": "Annum iam audīs Cratippum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Annum",
+     "iam",
+     "audīs",
+     "Cratippum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "So far Plancius has kept me here.",
+    "answer": "Adhūc Plancius mē retinet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adhūc",
+     "Plancius",
+     "mē",
+     "retinet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "14.1.3"
+    }
+   },
+   {
+    "prompt": "I move for fifty days' thanksgiving.",
+    "answer": "Dēcernō quīnquāgintā diērum supplicātiōnēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dēcernō",
+     "quīnquāgintā",
+     "diērum",
+     "supplicātiōnēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "14.29"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q4",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Rome meanwhile grows as a result of the fall of Alba: the number of citizens is doubled; the Coelian hill is added to the town.",
+    "answer": "Rōma interim crēscit Albae ruīnīs: duplicātur cīvium numerus; Caelius additur urbī mōns.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rōma",
+     "interim",
+     "crēscit",
+     "Albae",
+     "ruīnīs",
+     "duplicātur",
+     "cīvium",
+     "numerus",
+     "Caelius",
+     "additur",
+     "urbī",
+     "mōns"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1.30"
+    }
+   },
+   {
+    "prompt": "Was I trying to send into exile one who I saw had already gone into war?",
+    "answer": "In exsilium ēiciēbam quem iam ingressum esse in bellum vidēbam?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "exsilium",
+     "ēiciēbam",
+     "quem",
+     "iam",
+     "ingressum",
+     "esse",
+     "in",
+     "bellum",
+     "vidēbam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2.14"
+    }
+   },
+   {
+    "prompt": "They were coming if it had been allowed.",
+    "answer": "Sī licitum esset veniēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "licitum",
+     "esset",
+     "veniēbant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.129"
+    }
+   },
+   {
+    "prompt": "For, you know, while I was with you, you could not see my soul.",
+    "answer": "Nec enim dum eram vōbīscum animum meum vidēbātis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "enim",
+     "dum",
+     "eram",
+     "vōbīscum",
+     "animum",
+     "meum",
+     "vidēbātis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "79"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q5",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Lentulus was bold enough as an orator, but could not endure the exertion of thinking hard.",
+    "answer": "Lentulus satis erat fortis ōrātōr, sed cōgitandī nōn ferēbat labōrem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lentulus",
+     "satis",
+     "erat",
+     "fortis",
+     "ōrātōr",
+     "sed",
+     "cōgitandī",
+     "nōn",
+     "ferēbat",
+     "labōrem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "268"
+    }
+   },
+   {
+    "prompt": "This day has put an end to my long-continued silence.",
+    "answer": "Diūturnī silentī fīnem hodiernus diēs attulit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Diūturnī",
+     "silentī",
+     "fīnem",
+     "hodiernus",
+     "diēs",
+     "attulit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Marcello",
+     "locus": "1"
+    }
+   },
+   {
+    "prompt": "So great a war he made ready for at the end of winter, undertook in early spring, and finished by midsummer.",
+    "answer": "Tantum bellum extrēmā hieme apparāvit, ineunte vēre suscēpit, mediā aestāte cōnfēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tantum",
+     "bellum",
+     "extrēmā",
+     "hieme",
+     "apparāvit",
+     "ineunte",
+     "vēre",
+     "suscēpit",
+     "mediā",
+     "aestāte",
+     "cōnfēcit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "35"
+    }
+   },
+   {
+    "prompt": "Those who have always been in the fetters of the body, even when released move more slowly.",
+    "answer": "Quī in compedibus corporis semper fuērunt, etiam cum solūtī sunt tardius ingrediuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "in",
+     "compedibus",
+     "corporis",
+     "semper",
+     "fuērunt",
+     "etiam",
+     "cum",
+     "solūtī",
+     "sunt",
+     "tardius",
+     "ingrediuntur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.75"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q6",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "There was once such virtue in this commonwealth.",
+    "answer": "Fuit ista quondam in hāc rē pūblicā virtūs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fuit",
+     "ista",
+     "quondam",
+     "in",
+     "hāc",
+     "rē",
+     "pūblicā",
+     "virtūs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.3"
+    }
+   },
+   {
+    "prompt": "This was the nature of the ground which our men had chosen for a camp.",
+    "answer": "Locī nātūra erat haec, quem locum nostrī castrīs dēlēgerant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Locī",
+     "nātūra",
+     "erat",
+     "haec",
+     "quem",
+     "locum",
+     "nostrī",
+     "castrīs",
+     "dēlēgerant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2.18"
+    }
+   },
+   {
+    "prompt": "As you sow.",
+    "answer": "Ut sēmentem fēceris, ita metēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ut",
+     "sēmentem",
+     "fēceris",
+     "ita",
+     "metēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.261"
+    }
+   },
+   {
+    "prompt": "When the plots of that man have been shown to be as clear as daylight, then, and not till then, shall I conjure you.",
+    "answer": "Sī illīus īnsidiae clāriōrēs hāc lūce fuerint, tum dēnique obsecrābō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "illīus",
+     "īnsidiae",
+     "clāriōrēs",
+     "hāc",
+     "lūce",
+     "fuerint",
+     "tum",
+     "dēnique",
+     "obsecrābō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q7",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "I at least shall have done my duty.",
+    "answer": "Ego certē meum officium praestiterō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "certē",
+     "meum",
+     "officium",
+     "praestiterō"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.25"
+    }
+   },
+   {
+    "prompt": "What has been found out I shall see presently.",
+    "answer": "Quid inventum sit paulō post vīderō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "inventum",
+     "sit",
+     "paulō",
+     "post",
+     "vīderō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Academica",
+     "locus": "2.76"
+    }
+   },
+   {
+    "prompt": "Whoever crushes (shall have crushed) Antony will finish (will have finished) a most loathsome war.",
+    "answer": "Quī Antōnium oppresserit bellum taeterrimum cōnfēcerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "Antōnium",
+     "oppresserit",
+     "bellum",
+     "taeterrimum",
+     "cōnfēcerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "10.19"
+    }
+   },
+   {
+    "prompt": "I answered all your letters yesterday.",
+    "answer": "Ad tuās omnīs [epistulās] rescrīpseram prīdiē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ad",
+     "tuās",
+     "omnīs",
+     "epistulās",
+     "rescrīpseram",
+     "prīdiē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9.10.1"
+    }
+   }
+  ]
  }
 ]

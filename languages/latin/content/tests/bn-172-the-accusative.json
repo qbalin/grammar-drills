@@ -2258,5 +2258,151 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-172-the-accusative-q4",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
+   {
+    "prompt": "He was now living the third generation of men.",
+    "answer": "Tertiam iam aetātem hominum vīvēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tertiam",
+     "iam",
+     "aetātem",
+     "hominum",
+     "vīvēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "31"
+    }
+   },
+   {
+    "prompt": "In this I agree with Theophrastus.",
+    "answer": "Ego illud adsentior Theophrastō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "illud",
+     "adsentior",
+     "Theophrastō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "3.184"
+    }
+   },
+   {
+    "prompt": "What harm do those things do me?",
+    "answer": "Quid mē ista laedunt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "mē",
+     "ista",
+     "laedunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Lege Agraria",
+     "locus": "2.32"
+    }
+   },
+   {
+    "prompt": "He thought nobody a man in comparison with himself.",
+    "answer": "Hominem prae sē nēminem putāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hominem",
+     "prae",
+     "sē",
+     "nēminem",
+     "putāvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "135"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q5",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
+   {
+    "prompt": "Caesar throws the Germans across the river.",
+    "answer": "Caesar Germānōs flūmen trāicit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "Germānōs",
+     "flūmen",
+     "trāicit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1.83"
+    }
+   },
+   {
+    "prompt": "This was urgently demanded of him.",
+    "answer": "Id ab eō flāgitābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Id",
+     "ab",
+     "eō",
+     "flāgitābātur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1.71"
+    }
+   },
+   {
+    "prompt": "Strength is not even expected of an old man.",
+    "answer": "Nē postulantur quidem vīrēs ā senectüte.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "postulantur",
+     "quidem",
+     "vīrēs",
+     "ā",
+     "senectüte"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "34"
+    }
+   },
+   {
+    "prompt": "I did not conceal from you the talk of Titus Ampius.",
+    "answer": "Nōn tē cēlāvī sermōnem T. Ampī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "tē",
+     "cēlāvī",
+     "sermōnem",
+     "T",
+     "Ampī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "2.16.3"
+    }
+   }
+  ]
  }
 ]

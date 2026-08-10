@@ -2592,5 +2592,566 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q11",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "At three years old he lost his father; heir to a third part of his estate, he did not receive even this share intact, since all the property was seized through his co-heir Gaius.",
+    "answer": "Trīmulus patrem āmīsit; cuius ex parte tertiā hērēs, nē hanc quidem integram cēpit correptīs per cohēredem Gāium ūnīversīs bonīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Trīmulus",
+     "patrem",
+     "āmīsit",
+     "cuius",
+     "ex",
+     "parte",
+     "tertiā",
+     "hērēs",
+     "nē",
+     "hanc",
+     "quidem",
+     "integram",
+     "cēpit",
+     "correptīs",
+     "per",
+     "cohēredem",
+     "Gāium",
+     "ūnīversīs",
+     "bonīs"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "De vita Caesarum 6",
+     "locus": "6"
+    }
+   },
+   {
+    "prompt": "With these things arranged, Caesar came to the port of Itius with his legions.",
+    "answer": "Hīs rēbus cōnstitūtīs Caesar ad portum Itium cum legiōnibus pervēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hīs",
+     "rēbus",
+     "cōnstitūtīs",
+     "Caesar",
+     "ad",
+     "portum",
+     "Itium",
+     "cum",
+     "legiōnibus",
+     "pervēnit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5.5"
+    }
+   },
+   {
+    "prompt": "The pilot's skill is praised for its service, not its skill.",
+    "answer": "Gubernātōris ars ūtilitāte nōn arte laudātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gubernātōris",
+     "ars",
+     "ūtilitāte",
+     "nōn",
+     "arte",
+     "laudātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1.42"
+    }
+   },
+   {
+    "prompt": "The sea gleams in the sun.",
+    "answer": "Mare ā sōle lucet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mare",
+     "ā",
+     "sōle",
+     "lucet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Academica",
+     "locus": "2.105"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q12",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "I am sorry that you suffer with other ills.",
+    "answer": "Doleō tē aliīs malīs labōrāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Doleō",
+     "tē",
+     "aliīs",
+     "malīs",
+     "labōrāre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "4.3"
+    }
+   },
+   {
+    "prompt": "She began to exult in gladness, and triumph in joy.",
+    "answer": "Exsultāre laetitiā, triumphāre gaudiō coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Exsultāre",
+     "laetitiā",
+     "triumphāre",
+     "gaudiō",
+     "coepit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "14"
+    }
+   },
+   {
+    "prompt": "Friendship must be sought of and for itself.",
+    "answer": "Amīcitia ex sē et propter sē expetenda.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Amīcitia",
+     "ex",
+     "sē",
+     "et",
+     "propter",
+     "sē",
+     "expetenda"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2.83"
+    }
+   },
+   {
+    "prompt": "God has filled the world with all good things.",
+    "answer": "Deus bonīs omnibus explēvit mundum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Deus",
+     "bonīs",
+     "omnibus",
+     "explēvit",
+     "mundum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Timaeus",
+     "locus": "3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q13",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "They fill up the ditches with earth and fascines.",
+    "answer": "Aggere et crātibus fossās explent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aggere",
+     "et",
+     "crātibus",
+     "fossās",
+     "explent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.86"
+    }
+   },
+   {
+    "prompt": "Everything was full of grief and mourning.",
+    "answer": "Omnia plēna lūctūs et maerōris fuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnia",
+     "plēna",
+     "lūctūs",
+     "et",
+     "maerōris",
+     "fuērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "128"
+    }
+   },
+   {
+    "prompt": "They hope they can get possession of the whole of Gaul.",
+    "answer": "Tōtīus Galliae sēsē potīrī posse spērant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tōtīus",
+     "Galliae",
+     "sēsē",
+     "potīrī",
+     "posse",
+     "spērant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.3"
+    }
+   },
+   {
+    "prompt": "He had given over everything to Heraclius for his use and possession.",
+    "answer": "Hēracliō omnia ūtenda ac possidenda trādiderat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hēracliō",
+     "omnia",
+     "ūtenda",
+     "ac",
+     "possidenda",
+     "trādiderat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.46"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q14",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "We need a chief and responsible adviser. a chief is necessary for us.",
+    "answer": "Dux nōbīs et auctor opus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "nōbīs",
+     "et",
+     "auctor",
+     "opus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "2.6.4"
+    }
+   },
+   {
+    "prompt": "What difference does it make in what way you compel me?",
+    "answer": "Quid rēfert quā mē ratiōne cōgātis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "rēfert",
+     "quā",
+     "mē",
+     "ratiōne",
+     "cōgātis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "26"
+    }
+   },
+   {
+    "prompt": "They recline with no less weariness.",
+    "answer": "Nōn minōre cum taediō recubant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "minōre",
+     "cum",
+     "taediō",
+     "recubant"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "9.17.3"
+    }
+   },
+   {
+    "prompt": "With this force he set out.",
+    "answer": "Hōc praesidiō profectus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōc",
+     "praesidiō",
+     "profectus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.86"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q15",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Caesar united those cohorts with his own army.",
+    "answer": "Caesar eās cohortīs cum exercitū suō coniūnxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "eās",
+     "cohortīs",
+     "cum",
+     "exercitū",
+     "suō",
+     "coniūnxit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1.18"
+    }
+   },
+   {
+    "prompt": "I should gladly discuss these matters with Quintus Catulus.",
+    "answer": "Libenter haec cum Q. Catulō disputārem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Libenter",
+     "haec",
+     "cum",
+     "Q",
+     "Catulō",
+     "disputārem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "66"
+    }
+   },
+   {
+    "prompt": "The more severe the siege was, the more frequently letters were sent.",
+    "answer": "Quantō erat gravior oppūgnātiō, tantō crēbriōrēs litterae mittēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quantō",
+     "erat",
+     "gravior",
+     "oppūgnātiō",
+     "tantō",
+     "crēbriōrēs",
+     "litterae",
+     "mittēbantur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5.45"
+    }
+   },
+   {
+    "prompt": "The gladiators are of a better mind.",
+    "answer": "Animō meliōre sunt gladiātōrēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Animō",
+     "meliōre",
+     "sunt",
+     "gladiātōrēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2.26"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q16",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Antony sold thrones for money.",
+    "answer": "Antōnius rēgna addīxit pecūniā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antōnius",
+     "rēgna",
+     "addīxit",
+     "pecūniā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "7.15"
+    }
+   },
+   {
+    "prompt": "That hesitation cost him dear.",
+    "answer": "Māgnō illī ea cūnctātiō stetit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Māgnō",
+     "illī",
+     "ea",
+     "cūnctātiō",
+     "stetit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2.36"
+    }
+   },
+   {
+    "prompt": "For they are men not in fact, but in name.",
+    "answer": "Sunt enim hominēs nōn rē sed nōmine.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sunt",
+     "enim",
+     "hominēs",
+     "nōn",
+     "rē",
+     "sed",
+     "nōmine"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1.105"
+    }
+   },
+   {
+    "prompt": "He judged you entirely unworthy of every honor.",
+    "answer": "Tē omnī honōre indīgnissimum iūdicāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tē",
+     "omnī",
+     "honōre",
+     "indīgnissimum",
+     "iūdicāvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Vatinium",
+     "locus": "39"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q17",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Having received the letter, Caesar sends a messenger.",
+    "answer": "Caesar, acceptīs litterīs, nūntium mittit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "acceptīs",
+     "litterīs",
+     "nūntium",
+     "mittit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5.46"
+    }
+   },
+   {
+    "prompt": "Having learned this, Caesar makes a speech to the soldiers.",
+    "answer": "Quibus rēbus cōgnitīs Caesar apud mīlitēs cōntiōnātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quibus",
+     "rēbus",
+     "cōgnitīs",
+     "Caesar",
+     "apud",
+     "mīlitēs",
+     "cōntiōnātur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1.7"
+    }
+   },
+   {
+    "prompt": "It occurred to him that his proetorship would be maimed and feeble, if Milo were consul.",
+    "answer": "Occurrēbat eī, mancam et dēbilem praetūram futūram suam, cōnsule Milōne.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Occurrēbat",
+     "eī",
+     "mancam",
+     "et",
+     "dēbilem",
+     "praetūram",
+     "futūram",
+     "suam",
+     "cōnsule",
+     "Milōne"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "25"
+    }
+   },
+   {
+    "prompt": "Sextus Roscius being put aside I ask these questions of Chrysogonus.",
+    "answer": "Ego haec ā Chrȳsogonō meā sponte, remōtō Sex. Rōsciō, quaerō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "haec",
+     "ā",
+     "Chrȳsogonō",
+     "meā",
+     "sponte",
+     "remōtō",
+     "Sex",
+     "Rōsciō",
+     "quaerō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "130"
+    }
+   }
+  ]
  }
 ]

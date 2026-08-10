@@ -1062,5 +1062,408 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q2",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He says that the hill is held by the enemy.",
+    "answer": "Dīcit montem ab hostibus tenērī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dīcit",
+     "montem",
+     "ab",
+     "hostibus",
+     "tenērī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.22"
+    }
+   },
+   {
+    "prompt": "I know that I am promising an almost incredible thing.",
+    "answer": "Sciō mē paene incrēdibilem rem pollicērī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sciō",
+     "mē",
+     "paene",
+     "incrēdibilem",
+     "rem",
+     "pollicērī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3.86"
+    }
+   },
+   {
+    "prompt": "I do not suppose that you feel thus.",
+    "answer": "Nōn arbitror tē ita sentīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "arbitror",
+     "tē",
+     "ita",
+     "sentīre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "10.26.2"
+    }
+   },
+   {
+    "prompt": "He hopes that he shall be acquitted.",
+    "answer": "Spērat sē absolūtum īrī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Spērat",
+     "sē",
+     "absolūtum",
+     "īrī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "21"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q3",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Pain threatens to wear down fortitude.",
+    "answer": "Dolor fortitūdinem sē dēbilitātūrum minātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dolor",
+     "fortitūdinem",
+     "sē",
+     "dēbilitātūrum",
+     "minātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5.76"
+    }
+   },
+   {
+    "prompt": "I trust I shall easily obtain from you what I wish.",
+    "answer": "Cōnfīdō mē quod velim facile ā tē impetrātūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnfīdō",
+     "mē",
+     "quod",
+     "velim",
+     "facile",
+     "ā",
+     "tē",
+     "impetrātūrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "11.16.1"
+    }
+   },
+   {
+    "prompt": "I hold that the glory of wisdom is the greatest.",
+    "answer": "Laudem sapientiae statuō esse maximam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Laudem",
+     "sapientiae",
+     "statuō",
+     "esse",
+     "maximam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "5.13"
+    }
+   },
+   {
+    "prompt": "The thing itself warned that it was time.",
+    "answer": "Rēs ipsa monēbat tempus esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēs",
+     "ipsa",
+     "monēbat",
+     "tempus",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10.8.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q4",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They wish to convince that souls do not perish.",
+    "answer": "Hōc volunt persuādēre, nōn interīre animās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōc",
+     "volunt",
+     "persuādēre",
+     "nōn",
+     "interīre",
+     "animās"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.14"
+    }
+   },
+   {
+    "prompt": "They resolve that 10,000 men shall be sent.",
+    "answer": "Statuunt ut decem mīlia hominum mittantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Statuunt",
+     "ut",
+     "decem",
+     "mīlia",
+     "hominum",
+     "mittantur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.21"
+    }
+   },
+   {
+    "prompt": "Many are said to be about to do the same thing.",
+    "answer": "Multī idem factūrī esse dīcuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Multī",
+     "idem",
+     "factūrī",
+     "esse",
+     "dīcuntur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16.12.4"
+    }
+   },
+   {
+    "prompt": "They first are related to have joined words with a certain skill.",
+    "answer": "Prīmī trāduntur arte quādam verba vīnxisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmī",
+     "trāduntur",
+     "arte",
+     "quādam",
+     "verba",
+     "vīnxisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "40"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q5",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "It was heard that Bibulus was in Syria.",
+    "answer": "Bibulus audiēbātur esse in Syriā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bibulus",
+     "audiēbātur",
+     "esse",
+     "in",
+     "Syriā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "5.18"
+    }
+   },
+   {
+    "prompt": "The rest of the legions of Illyricum were expected to follow.",
+    "answer": "Cēterae Illyricī legiōnēs secūtūrae spērābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cēterae",
+     "Illyricī",
+     "legiōnēs",
+     "secūtūrae",
+     "spērābantur"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "2.74"
+    }
+   },
+   {
+    "prompt": "It seems that we should have kept quiet, if we had not been molested.",
+    "answer": "Vidēmur enim quiētūrī fuisse, nisi essēmus lacessītī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vidēmur",
+     "enim",
+     "quiētūrī",
+     "fuisse",
+     "nisi",
+     "essēmus",
+     "lacessītī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.230"
+    }
+   },
+   {
+    "prompt": "It is a tradition, too, that Homer was blind.",
+    "answer": "Trāditum est etiam Homērum caecum fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Trāditum",
+     "est",
+     "etiam",
+     "Homērum",
+     "caecum",
+     "fuisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5.114"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q6",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Where there is a tyrant, it must be said, not that the commonwealth is evil, but that it does not exist at all.",
+    "answer": "Ubi tyrannus est, ibi nōn vitiōsam, sed dīcendum est plānē nūllam esse rem pūblicam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ubi",
+     "tyrannus",
+     "est",
+     "ibi",
+     "nōn",
+     "vitiōsam",
+     "sed",
+     "dīcendum",
+     "est",
+     "plānē",
+     "nūllam",
+     "esse",
+     "rem",
+     "pūblicam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "3.43"
+    }
+   },
+   {
+    "prompt": "Who can deny that all these things we see are ruled by the power of the gods?",
+    "answer": "Quis neget haec omnia quae vidēmus deōrum potestāte administrārī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "neget",
+     "haec",
+     "omnia",
+     "quae",
+     "vidēmus",
+     "deōrum",
+     "potestāte",
+     "administrārī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3.21"
+    }
+   },
+   {
+    "prompt": "He adds that he himself will be killed by him, before I shall be injured.",
+    "answer": "Addit sē prius occīsum īrī ab eō quam mē violātum īrī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Addit",
+     "sē",
+     "prius",
+     "occīsum",
+     "īrī",
+     "ab",
+     "eō",
+     "quam",
+     "mē",
+     "violātum",
+     "īrī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "2.20.2"
+    }
+   },
+   {
+    "prompt": "Did I not assert that I would endure anything rather than leave Italy?",
+    "answer": "Nōnne adfīrmāvī quidvīs mē potius perpessūrum quam ex Ītaliā exitūrum?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōnne",
+     "adfīrmāvī",
+     "quidvīs",
+     "mē",
+     "potius",
+     "perpessūrum",
+     "quam",
+     "ex",
+     "Ītaliā",
+     "exitūrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "2.16.3"
+    }
+   }
+  ]
  }
 ]

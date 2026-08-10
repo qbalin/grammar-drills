@@ -1077,5 +1077,139 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q3",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "On the next day, the slaves were summoned to the cap of liberty, and those in chains were released from prison.",
+    "answer": "Posterō diē, servī ad pilleum vocātī, et carcere vīnctī ēmissī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Posterō",
+     "diē",
+     "servī",
+     "ad",
+     "pilleum",
+     "vocātī",
+     "et",
+     "carcere",
+     "vīnctī",
+     "ēmissī"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "24.32"
+    }
+   },
+   {
+    "prompt": "Within twenty-five days they finished building a mound.",
+    "answer": "Diēbus vīgintī quīnque aggerem exstrūxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Diēbus",
+     "vīgintī",
+     "quīnque",
+     "aggerem",
+     "exstrūxērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.24"
+    }
+   },
+   {
+    "prompt": "The troops had sustained the fight five hours.",
+    "answer": "Militēs quīnque hōrīs proelium sustinuerant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Militēs",
+     "quīnque",
+     "hōrīs",
+     "proelium",
+     "sustinuerant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1.47"
+    }
+   },
+   {
+    "prompt": "They sent hostages from Britain.",
+    "answer": "Ex Britanniā obsidēs mīsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ex",
+     "Britanniā",
+     "obsidēs",
+     "mīsērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.38"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q4",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "They came by night to the Nervii.",
+    "answer": "Nocte ad Nerviōs pervēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nocte",
+     "ad",
+     "Nerviōs",
+     "pervēnērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2.17"
+    }
+   },
+   {
+    "prompt": "I was going to that estate.",
+    "answer": "Adībam ad istum fundum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Adībam",
+     "ad",
+     "istum",
+     "fundum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caecina",
+     "locus": "82"
+    }
+   },
+   {
+    "prompt": "A Roman knight is brought into a banquet of Apronius.",
+    "answer": "Statuitur eques Rōmānus in Aprōnī convīviō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Statuitur",
+     "eques",
+     "Rōmānus",
+     "in",
+     "Aprōnī",
+     "convīviō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3.62"
+    }
+   }
+  ]
  }
 ]

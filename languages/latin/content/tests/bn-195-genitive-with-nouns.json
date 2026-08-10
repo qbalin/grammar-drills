@@ -1955,5 +1955,89 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q7",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "The highest praise is due both to you and to Brutus.",
+    "answer": "Summa laus et tua et Brūtī est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Summa",
+     "laus",
+     "et",
+     "tua",
+     "et",
+     "Brūtī",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "12.4.2"
+    }
+   },
+   {
+    "prompt": "He said it was not the custom of the Greeks for women to appear as guests at the banquets of men.",
+    "answer": "Negāvit mōris esse Graecōrum, ut in convīviō virōrum accumberent mulierēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Negāvit",
+     "mōris",
+     "esse",
+     "Graecōrum",
+     "ut",
+     "in",
+     "convīviō",
+     "virōrum",
+     "accumberent",
+     "mulierēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.66"
+    }
+   },
+   {
+    "prompt": "It was folly to hope, effrontery to urge.",
+    "answer": "Stultī erat spērāre, suādēre impudentis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Stultī",
+     "erat",
+     "spērāre",
+     "suādēre",
+     "impudentis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.23"
+    }
+   },
+   {
+    "prompt": "What he was doing, he said he did relying on you.",
+    "answer": "Ea quae faciēbat, tuā sē fīdūciā facere dīcēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ea",
+     "quae",
+     "faciēbat",
+     "tuā",
+     "sē",
+     "fīdūciā",
+     "facere",
+     "dīcēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.176"
+    }
+   }
+  ]
  }
 ]

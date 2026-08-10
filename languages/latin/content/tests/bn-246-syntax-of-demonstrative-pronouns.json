@@ -1178,5 +1178,75 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q2",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "That is in truth a very great thing—to see the soul.",
+    "answer": "Est illud quidem vel maximum, animum vidēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Est",
+     "illud",
+     "quidem",
+     "vel",
+     "maximum",
+     "animum",
+     "vidēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.52"
+    }
+   },
+   {
+    "prompt": "When Simonides promised him the art of memory, “I should prefer,” he said of forgetfulness.”.",
+    "answer": "Cum eī Simōnidēs artem memoriae pollicērētur: oblīviōnis, inquit, māllem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "eī",
+     "Simōnidēs",
+     "artem",
+     "memoriae",
+     "pollicērētur",
+     "oblīviōnis",
+     "inquit",
+     "māllem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2.104"
+    }
+   },
+   {
+    "prompt": "Tiberius Gracchus tried to usurp royal power, or rather he actually reigned a few months.",
+    "answer": "Ti. Gracchus rēgnum occupāre cōnātus est, vel rēgnāvit is quidem paucōs mēnsīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ti",
+     "Gracchus",
+     "rēgnum",
+     "occupāre",
+     "cōnātus",
+     "est",
+     "vel",
+     "rēgnāvit",
+     "is",
+     "quidem",
+     "paucōs",
+     "mēnsīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "41"
+    }
+   }
+  ]
  }
 ]

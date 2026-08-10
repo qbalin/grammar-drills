@@ -752,5 +752,599 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns-q1",
+  "sectionId": "bn-252-syntax-of-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "The cohorts, if any had given ground, he decimated and fed on barley.",
+    "answer": "Cohortēs, sī quae cessissent locō, decimātās hordeō pāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cohortēs",
+     "sī",
+     "quae",
+     "cessissent",
+     "locō",
+     "decimātās",
+     "hordeō",
+     "pāvit"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "De vita Caesarum Vita divi Augusti",
+     "locus": "24"
+    }
+   },
+   {
+    "prompt": "To each his own is beautiful.",
+    "answer": "Suum cuique pulchrum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Suum",
+     "cuique",
+     "pulchrum",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5.63"
+    }
+   },
+   {
+    "prompt": "Justice never does harm to anybody.",
+    "answer": "Iūstitia numquam nocet cuiquam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iūstitia",
+     "numquam",
+     "nocet",
+     "cuiquam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1.50"
+    }
+   },
+   {
+    "prompt": "A sage, he was.",
+    "answer": "Sī quisquam, ille sapiēns fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quisquam",
+     "ille",
+     "sapiēns",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "9"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns-q2",
+  "sectionId": "bn-252-syntax-of-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "If any man is timorous, I am he.",
+    "answer": "Sī quisquam est timidus, is ego sum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quisquam",
+     "est",
+     "timidus",
+     "is",
+     "ego",
+     "sum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "6.14.1"
+    }
+   },
+   {
+    "prompt": "Both armies go away, every man to his home.",
+    "answer": "Ambō exercitūs suās quisque abeunt domōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ambō",
+     "exercitūs",
+     "suās",
+     "quisque",
+     "abeunt",
+     "domōs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2.7.1"
+    }
+   },
+   {
+    "prompt": "Each army was in sight of the other.",
+    "answer": "Uterque utrīque erat exercitus in cōnspectū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Uterque",
+     "utrīque",
+     "erat",
+     "exercitus",
+     "in",
+     "cōnspectū"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.35"
+    }
+   },
+   {
+    "prompt": "Set before your eyes each of the kings.",
+    "answer": "Pōnite ante oculōs ūnum quemque rēgum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pōnite",
+     "ante",
+     "oculōs",
+     "ūnum",
+     "quemque",
+     "rēgum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "1.11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns-q3",
+  "sectionId": "bn-252-syntax-of-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "The wisest men die with the greatest equanimity.",
+    "answer": "Sapientissimus quisque aequissimō animō moritur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sapientissimus",
+     "quisque",
+     "aequissimō",
+     "animō",
+     "moritur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "83"
+    }
+   },
+   {
+    "prompt": "For how many would have done this?",
+    "answer": "Quotus enim istud quisque fēcisset?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quotus",
+     "enim",
+     "istud",
+     "quisque",
+     "fēcisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Ligario",
+     "locus": "26"
+    }
+   },
+   {
+    "prompt": "One party fights, the other fears the victor.",
+    "answer": "Alterī dīmicant, alterī victōrem timent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alterī",
+     "dīmicant",
+     "alterī",
+     "victōrem",
+     "timent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "6.3"
+    }
+   },
+   {
+    "prompt": "He had ordered each to support the other.",
+    "answer": "Alteram alterī praesidiō esse iusserat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alteram",
+     "alterī",
+     "praesidiō",
+     "esse",
+     "iusserat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3.89"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns-q4",
+  "sectionId": "bn-252-syntax-of-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Some make an attack with swords, others with fragments of the railings.",
+    "answer": "Aliī gladiīs adoriuntur, aliī fragmentīs saeptōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aliī",
+     "gladiīs",
+     "adoriuntur",
+     "aliī",
+     "fragmentīs",
+     "saeptōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "79"
+    }
+   },
+   {
+    "prompt": "They ask each other the reason.",
+    "answer": "Alius ex aliō causam quaerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alius",
+     "ex",
+     "aliō",
+     "causam",
+     "quaerit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.37"
+    }
+   },
+   {
+    "prompt": "It is one thing to slander, another to accuse.",
+    "answer": "Aliud est maledīcere, aliud accūsāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aliud",
+     "est",
+     "maledīcere",
+     "aliud",
+     "accūsāre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caelio",
+     "locus": "6"
+    }
+   },
+   {
+    "prompt": "He ordered different persons to dig in different places.",
+    "answer": "Iussit aliōs alibī fodere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iussit",
+     "aliōs",
+     "alibī",
+     "fodere"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "44.33"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns-q5",
+  "sectionId": "bn-252-syntax-of-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Some halted in one place, some in another.",
+    "answer": "Aliī aliō locō resistēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aliī",
+     "aliō",
+     "locō",
+     "resistēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2.39"
+    }
+   },
+   {
+    "prompt": "The laws are silent in time of war.",
+    "answer": "Silent lēgēs inter arma.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Silent",
+     "lēgēs",
+     "inter",
+     "arma"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "11"
+    }
+   },
+   {
+    "prompt": "You, who know, will use all diligence.",
+    "answer": "Tū, quī scīs, omnem dīligentiam adhibēbis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tū",
+     "quī",
+     "scīs",
+     "omnem",
+     "dīligentiam",
+     "adhibēbis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "5.2.3"
+    }
+   },
+   {
+    "prompt": "See how all of us are scorned who are from the free towns.",
+    "answer": "Vidēte quam dēspiciāmur omnēs quī sumus ē mūnicipiīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vidēte",
+     "quam",
+     "dēspiciāmur",
+     "omnēs",
+     "quī",
+     "sumus",
+     "ē",
+     "mūnicipiīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "3.15"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns-q6",
+  "sectionId": "bn-252-syntax-of-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Not every error should be called folly.",
+    "answer": "Nōn omnis error stultitia dīcenda est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "omnis",
+     "error",
+     "stultitia",
+     "dīcenda",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "2.90"
+    }
+   },
+   {
+    "prompt": "The general and several leading men are taken.",
+    "answer": "Dux cum aliquot prīncipibus capiuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "cum",
+     "aliquot",
+     "prīncipibus",
+     "capiuntur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21.60"
+    }
+   },
+   {
+    "prompt": "The Roman senate and people understand.",
+    "answer": "Senātus populusque Rōmānus intellegit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senātus",
+     "populusque",
+     "Rōmānus",
+     "intellegit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "5.8"
+    }
+   },
+   {
+    "prompt": "The reputation and life of an innocent man are defended.",
+    "answer": "Fāma et vīta innocentis dēfenditur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fāma",
+     "et",
+     "vīta",
+     "innocentis",
+     "dēfenditur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "15"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns-q7",
+  "sectionId": "bn-252-syntax-of-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "Mark Antony and Quintus Cassius, tribunes of the people, interpose.",
+    "answer": "Intercēdit M. Antōnius Q. Cassius tribūnī plēbis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Intercēdit",
+     "M",
+     "Antōnius",
+     "Q",
+     "Cassius",
+     "tribūnī",
+     "plēbis"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "This both the Peripatetic philosophers and the Old Academy grant me.",
+    "answer": "Hōc mihi et Peripatēticī et vetus Acadēmia concēdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōc",
+     "mihi",
+     "et",
+     "Peripatēticī",
+     "et",
+     "vetus",
+     "Acadēmia",
+     "concēdit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Academica",
+     "locus": "2.113"
+    }
+   },
+   {
+    "prompt": "The army returns to winter-quarters.",
+    "answer": "Ad hīberna exercitus redit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ad",
+     "hīberna",
+     "exercitus",
+     "redit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21.22"
+    }
+   },
+   {
+    "prompt": "The plebs seceded from the patricians.",
+    "answer": "Plēbēs ā patribus sēcessit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Plēbēs",
+     "ā",
+     "patribus",
+     "sēcessit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "33"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-252-syntax-of-indefinite-pronouns-q8",
+  "sectionId": "bn-252-syntax-of-indefinite-pronouns",
+  "questions": [
+   {
+    "prompt": "He sent ahead all the cavalry he had, to see.",
+    "answer": "Equitātum omnem . . . quem habēbat praemittit, quī videant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Equitātum",
+     "omnem",
+     "quem",
+     "habēbat",
+     "praemittit",
+     "quī",
+     "videant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.15"
+    }
+   },
+   {
+    "prompt": "They fought long and vigorously.",
+    "answer": "Diū atque ācriter pūgnātum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Diū",
+     "atque",
+     "ācriter",
+     "pūgnātum",
+     "est"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.26"
+    }
+   },
+   {
+    "prompt": "There may often occur a comparison of two honorable actions, as to which is the more honorable.",
+    "answer": "Potest incidere saepe contentiō et comparātiō dē duōbus honestīs utrum honestius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Potest",
+     "incidere",
+     "saepe",
+     "contentiō",
+     "et",
+     "comparātiō",
+     "dē",
+     "duōbus",
+     "honestīs",
+     "utrum",
+     "honestius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1.152"
+    }
+   }
+  ]
  }
 ]

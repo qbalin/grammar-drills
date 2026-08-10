@@ -1160,5 +1160,479 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q3",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "The river Garonne divides the Gauls from the Aquitani, and the Marne and Seine divide them from the Belgae.",
+    "answer": "Gallōs ab Aquītānī Garumna flūmen, ā Belgīs Mātrona et Sēquana dīvidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallōs",
+     "ab",
+     "Aquītānī",
+     "Garumna",
+     "flūmen",
+     "ā",
+     "Belgīs",
+     "Mātrona",
+     "et",
+     "Sēquana",
+     "dīvidit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "Together with the others there was Dumnorix the Aeduan, about whom mention has been made by us earlier.",
+    "answer": "Erat ūnā cum cēterīs Dumnorīx Aeduus, dē quō ante ab nōbīs dictum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Erat",
+     "ūnā",
+     "cum",
+     "cēterīs",
+     "Dumnorīx",
+     "Aeduus",
+     "dē",
+     "quō",
+     "ante",
+     "ab",
+     "nōbīs",
+     "dictum",
+     "est"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5.6"
+    }
+   },
+   {
+    "prompt": "He bars the Romans from the whole of Gaul.",
+    "answer": "Omnī Galliā Rōmānīs interdīcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Omnī",
+     "Galliā",
+     "Rōmānīs",
+     "interdīcit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.46"
+    }
+   },
+   {
+    "prompt": "He is debarred the use of fire and water.",
+    "answer": "Eī aquā et īgnī interdīcitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eī",
+     "aquā",
+     "et",
+     "īgnī",
+     "interdīcitur"
+    ],
+    "source": {
+     "author": "Velleius Paterculus",
+     "work": "Historiae Romanae",
+     "locus": "2.45"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q4",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "We are relieved from superstition, we are freed from fear of death.",
+    "answer": "Levāmur superstitiōne, līberāmur mortis metū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Levāmur",
+     "superstitiōne",
+     "līberāmur",
+     "mortis",
+     "metū"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1.63"
+    }
+   },
+   {
+    "prompt": "Messana is empty and bare of these things.",
+    "answer": "Messāna ab hīs rēbus vacua atque nūda est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Messāna",
+     "ab",
+     "hīs",
+     "rēbus",
+     "vacua",
+     "atque",
+     "nūda",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4.3"
+    }
+   },
+   {
+    "prompt": "The Rhine rises in the country of the Lepontii.",
+    "answer": "Rhēnus oritur ex Lepontiīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rhēnus",
+     "oritur",
+     "ex",
+     "Lepontiīs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.10"
+    }
+   },
+   {
+    "prompt": "The conversation is begun by them.",
+    "answer": "Ab hīs sermō oritur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ab",
+     "hīs",
+     "sermō",
+     "oritur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q5",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "He was entirely made up of fraud and falsehood.",
+    "answer": "Erat tōtus ex fraude et mendāciō factus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Erat",
+     "tōtus",
+     "ex",
+     "fraude",
+     "et",
+     "mendāciō",
+     "factus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "72"
+    }
+   },
+   {
+    "prompt": "He lost Caius Fleginas of Placentia, Aulus Granius of Puteoli.",
+    "answer": "Dēsīderāvit C. Flegīnātem Placentiā, A. Grānium Puteolīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dēsīderāvit",
+     "C",
+     "Flegīnātem",
+     "Placentiā",
+     "A",
+     "Grānium",
+     "Puteolīs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3.71"
+    }
+   },
+   {
+    "prompt": "The charm of the house consisted not in the buildings but in the woods.",
+    "answer": "Domūs amoenitās nōn aedificiō sed silvā cōnstābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Domūs",
+     "amoenitās",
+     "nōn",
+     "aedificiō",
+     "sed",
+     "silvā",
+     "cōnstābat"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Atticus",
+     "locus": "13"
+    }
+   },
+   {
+    "prompt": "Life consists of body and spirit.",
+    "answer": "Vīta corpore et spīritū continētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīta",
+     "corpore",
+     "et",
+     "spīritū",
+     "continētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Marcello",
+     "locus": "28"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q6",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "What are you going to do with this man?",
+    "answer": "Quid hōc homine faciātis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "hōc",
+     "homine",
+     "faciātis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.42"
+    }
+   },
+   {
+    "prompt": "What will become of my dear Tullia?",
+    "answer": "Quid Tulliolā meā fīet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "Tulliolā",
+     "meā",
+     "fīet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "14.4.3"
+    }
+   },
+   {
+    "prompt": "What will become of you?",
+    "answer": "Quid tē futūrum est?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "tē",
+     "futūrum",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.155"
+    }
+   },
+   {
+    "prompt": "Whatever is done by your soul is done by yourself.",
+    "answer": "Ab animō tuō quidquid agitur id agitur ā tē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ab",
+     "animō",
+     "tuō",
+     "quidquid",
+     "agitur",
+     "id",
+     "agitur",
+     "ā",
+     "tē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.52"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q7",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "He was brought to trial by his sons.",
+    "answer": "Ā fīliīs in iūdicium vocātus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ā",
+     "fīliīs",
+     "in",
+     "iūdicium",
+     "vocātus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "22"
+    }
+   },
+   {
+    "prompt": "He was informed by scouts.",
+    "answer": "Ab explōrātōribus certior factus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ab",
+     "explōrātōribus",
+     "certior",
+     "factus",
+     "est"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.21"
+    }
+   },
+   {
+    "prompt": "What more burdened with toil than we two?",
+    "answer": "Quid nōbīs duōbus labōriōsius est?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "nōbīs",
+     "duōbus",
+     "labōriōsius",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "5"
+    }
+   },
+   {
+    "prompt": "You are not more cunning than he.",
+    "answer": "Nōn callidior es quam hīc.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "callidior",
+     "es",
+     "quam",
+     "hīc"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "49"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q8",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "An old man is in this respect in a better position than a young man.",
+    "answer": "Senex est eō meliōre condiciōne quam adulēscēns.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Senex",
+     "est",
+     "eō",
+     "meliōre",
+     "condiciōne",
+     "quam",
+     "adulēscēns"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "68"
+    }
+   },
+   {
+    "prompt": "Nothing is more dreadful than disgrace, nothing viler than slavery.",
+    "answer": "Nihil dētestābilius dēdecore, nihil foedius servitūte.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "dētestābilius",
+     "dēdecore",
+     "nihil",
+     "foedius",
+     "servitūte"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "3.36"
+    }
+   },
+   {
+    "prompt": "Does it seem anything different from the plundering of my property?",
+    "answer": "Num aliud vidētur esse ac meōrum bonōrum dīreptiō?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Num",
+     "aliud",
+     "vidētur",
+     "esse",
+     "ac",
+     "meōrum",
+     "bonōrum",
+     "dīreptiō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Domo Sua",
+     "locus": "51"
+    }
+   },
+   {
+    "prompt": "History was nothing else but a compiling of records.",
+    "answer": "Erat historia nihil aliud nisi annālium cōnfectiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Erat",
+     "historia",
+     "nihil",
+     "aliud",
+     "nisi",
+     "annālium",
+     "cōnfectiō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.52"
+    }
+   }
+  ]
  }
 ]

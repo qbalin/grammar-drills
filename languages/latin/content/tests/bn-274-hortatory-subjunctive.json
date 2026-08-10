@@ -339,5 +339,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-274-hortatory-subjunctive-q1",
+  "sectionId": "bn-274-hortatory-subjunctive",
+  "questions": [
+   {
+    "prompt": "Let them shun excess and cherish modesty.",
+    "answer": "Caveant intemperantiam, meminerint verēcundiae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caveant",
+     "intemperantiam",
+     "meminerint",
+     "verēcundiae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1.122"
+    }
+   },
+   {
+    "prompt": "Let us not abandon the laws.",
+    "answer": "Ā lēgibus nōn recēdāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ā",
+     "lēgibus",
+     "nōn",
+     "recēdāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "155"
+    }
+   },
+   {
+    "prompt": "The wrongs of fortune, which you cannot bear, leave behind by flight.",
+    "answer": "Iniūriās fortūnae, quās ferre nequeās, dēfugiendō relinquās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iniūriās",
+     "fortūnae",
+     "quās",
+     "ferre",
+     "nequeās",
+     "dēfugiendō",
+     "relinquās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5.118"
+    }
+   },
+   {
+    "prompt": "Use this blessing while it is present; when it is wanting do not regret it.",
+    "answer": "Istō bonō ūtāre dum adsit, cum absit nē requīrās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Istō",
+     "bonō",
+     "ūtāre",
+     "dum",
+     "adsit",
+     "cum",
+     "absit",
+     "nē",
+     "requīrās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "33"
+    }
+   }
+  ]
  }
 ]
