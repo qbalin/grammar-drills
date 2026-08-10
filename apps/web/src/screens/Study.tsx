@@ -5,7 +5,7 @@ import type {
   Rating,
   VocabCardState,
 } from "@lang-tutor/core";
-import { GradeBar, Ring, Sentence } from "../ui.js";
+import { CopyButton, GradeBar, Ring, Sentence } from "../ui.js";
 import { profile } from "../pack.js";
 
 /**
@@ -82,30 +82,6 @@ export function Answering({
         </button>
       </div>
     </>
-  );
-}
-
-/**
- * The copy button one of the graded screen's three texts carries.
- *
- * It earns its place because two of the three cannot be copied by hand at all:
- * the words of both sentences are `.word` spans, and `.word` gives up text
- * selection so that iOS's magnifier stays off the 500 ms hold. That trade is
- * the right one for the hold and it left the reference answer readable but
- * un-liftable — and the reference answer is exactly what you want in a note, a
- * dictionary or a message.
- *
- * The glyph is the same on all three and the label says copy *what*, because
- * three controls announced as "copy" are three identical controls to anyone who
- * cannot see which block each one stands in. `❐` is a Dingbat, the block `✎ ✱
- * ✕ ✓` already ship from, rather than the more conventional `⧉` from a
- * mathematical block that phone fonts cover less reliably.
- */
-function CopyButton({ what, onCopy }: { what: string; onCopy: () => void }) {
-  return (
-    <button className="copybtn" onClick={onCopy} aria-label={`Copy ${what}`}>
-      ❐ copy
-    </button>
   );
 }
 

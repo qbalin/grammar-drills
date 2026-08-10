@@ -974,6 +974,17 @@ span.status__title {
   min-width: 0;
 }
 
+/* On the graded screen the copy button is the last thing in its row and its
+   negative right margin pulls it flush with the block's edge. In a sheet head
+   the close button is to its right, so that pull would close the gap between
+   two controls; and the title already takes the slack, so the auto left margin
+   has nothing to do. The vertical negatives stay: they are what keep a head no
+   taller for carrying one. */
+.sheet__head .copybtn {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .sheet__body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;

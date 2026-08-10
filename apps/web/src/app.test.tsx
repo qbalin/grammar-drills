@@ -1210,6 +1210,44 @@ describe("looking a word up", () => {
     expect(screen.queryByRole("dialog")).toBeNull();
   });
 
+  /**
+   * The word onto the clipboard, from the sheet the double-click opened.
+   *
+   * The block buttons take a whole sentence, and a student who has just asked
+   * what one word is usually wants that word — in a note, a message, or the
+   * dictionary this app is not. It cannot be lifted by hand: `.word` gives up
+   * text selection to keep iOS's magnifier off the hold.
+   */
+  it("copies the form as it stood in the reference, not the citation", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    await inspectWord("rosam");
+    await user.click(screen.getByRole("button", { name: "Copy rosam" }));
+
+    // The sheet is titled `rosa, rosae (f)` and the accusative is what was on
+    // the screen. Copying the citation instead would hand back the one form the
+    // student could have looked up unaided.
+    expect(await navigator.clipboard.readText()).toBe("rosam");
+    await screen.findByText("rosam copied.");
+  });
+
+  it("copies a form out of what was written, too", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.type(screen.getByLabelText("Your Latin"), "regem");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    // Both sentences are double-clickable, so both are copyable: the word you
+    // want is as often the one you got wrong as the one you should have used.
+    await inspectWord("regem");
+    await user.click(screen.getByRole("button", { name: "Copy regem" }));
+
+    expect(await navigator.clipboard.readText()).toBe("regem");
+    await screen.findByText("regem copied.");
+  });
+
   it("leaves the hold alone — the same word still records", async () => {
     const user = userEvent.setup();
     const { session } = mount();

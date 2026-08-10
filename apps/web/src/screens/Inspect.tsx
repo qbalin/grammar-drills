@@ -1,6 +1,6 @@
 import { buildParadigm, type LemmaEntry, type TaggedForm } from "@lang-tutor/core";
 import { profile } from "../pack.js";
-import { Sheet, Spinner, TableBox } from "../ui.js";
+import { CopyButton, Sheet, Spinner, TableBox } from "../ui.js";
 
 /**
  * What a word is, when you ask it directly.
@@ -23,6 +23,7 @@ export function InspectSheet({
   failed,
   onRetry,
   onPick,
+  onCopy,
   onClose,
 }: {
   /** The word as it stood in the sentence, which is what was double-clicked. */
@@ -37,6 +38,8 @@ export function InspectSheet({
   failed: boolean;
   onRetry: () => void;
   onPick: (entry: LemmaEntry) => void;
+  /** The form onto the clipboard — as it stood, not the citation above it. */
+  onCopy: () => void;
   onClose: () => void;
 }) {
   const blocks = profile.paradigms?.tables[entry.pos];
@@ -49,7 +52,17 @@ export function InspectSheet({
     : undefined;
 
   return (
-    <Sheet title={entry.citation} subtitle={form} onClose={onClose}>
+    // The button copies the subtitle, not the title, and stands in the same row
+    // as it: the word wanted in a note or a message is the one that was on the
+    // screen, and a double-click is often the moment you find you want it. The
+    // citation is one tap of that away in any dictionary; the inflected form is
+    // the thing this app has and the page you paste into does not.
+    <Sheet
+      title={entry.citation}
+      subtitle={form}
+      action={<CopyButton what={form} onCopy={onCopy} />}
+      onClose={onClose}
+    >
       <p className="gr-p">{entry.gloss}</p>
       <p className="field__hint">
         {[entry.pos, entry.gender, entry.declension && `declension ${entry.declension}`]

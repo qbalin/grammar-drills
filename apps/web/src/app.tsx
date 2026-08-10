@@ -968,11 +968,7 @@ export function App({ content, session, storage }: Props) {
     });
 
   /**
-   * One of the graded screen's three texts onto the clipboard.
-   *
-   * Which text is named rather than handed over, exactly as a mark is: the
-   * screen has one word for each of its three texts, and this is the one place
-   * they are turned back into strings.
+   * Anything the screen offers to copy, and what to call it once it is copied.
    *
    * `writeText` is called in the tap itself with nothing awaited in front of
    * it, because Safari allows the write only while the gesture is still fresh.
@@ -981,6 +977,30 @@ export function App({ content, session, storage }: Props) {
    * reached over plain http on a LAN address, to try the gestures on a real
    * phone — is told so rather than answered with a hidden textarea that would
    * then live in the DOM for everyone.
+   *
+   * Both callers come through here rather than each writing their own, so that
+   * the gesture-freshness rule and the two failure messages have one home.
+   */
+  const copyToClipboard = (text: string, what: string) => {
+    // Not `navigator.clipboard?.writeText(…)`: optional chaining would carry
+    // past the failure handler too, and a browser without the API would answer
+    // a press with nothing at all.
+    if (!navigator.clipboard) {
+      flash("This page cannot reach the clipboard.");
+      return;
+    }
+    void navigator.clipboard.writeText(text).then(
+      () => flash(`${what} copied.`),
+      () => flash("Could not copy."),
+    );
+  };
+
+  /**
+   * One of the graded screen's three texts onto the clipboard.
+   *
+   * Which text is named rather than handed over, exactly as a mark is: the
+   * screen has one word for each of its three texts, and this is the one place
+   * they are turned back into strings.
    */
   const copyText = (field: keyof AttemptMarks) => {
     if (!question) return;
@@ -990,18 +1010,19 @@ export function App({ content, session, storage }: Props) {
         : field === "answer"
           ? question.answer
           : submitted.trim();
-    // Not `navigator.clipboard?.writeText(…)`: optional chaining would carry
-    // past the failure handler too, and a browser without the API would answer
-    // a press with nothing at all.
-    if (!navigator.clipboard) {
-      flash("This page cannot reach the clipboard.");
-      return;
-    }
-    void navigator.clipboard.writeText(text).then(
-      () => flash(`${COPIED[field]} copied.`),
-      () => flash("Could not copy."),
-    );
+    copyToClipboard(text, COPIED[field]);
   };
+
+  /**
+   * A single word onto the clipboard, from the sheet it was double-clicked open
+   * in — the inflected form as it stood, which is what the app has and the
+   * dictionary or message being pasted into has not.
+   *
+   * It names itself in the flash, because unlike the three texts it has no
+   * standing name: `rosam copied.` says which of the sentence's words went,
+   * which a fixed "The word copied." could not.
+   */
+  const copyForm = (form: string) => copyToClipboard(form, form);
 
   /**
    * A word tapped in the trail, on an attempt already on the record — the only
@@ -1808,6 +1829,7 @@ export function App({ content, session, storage }: Props) {
               others: [overlay.entry, ...overlay.others.filter((o) => o !== entry)],
             })
           }
+          onCopy={() => copyForm(overlay.form)}
           onClose={() => setOverlay(null)}
         />
       )}
