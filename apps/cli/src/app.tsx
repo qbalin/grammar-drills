@@ -1488,8 +1488,23 @@ function masteryFraction(t: TopicProgress): number {
   return ((t.mastery ?? 1) - 1) / 3;
 }
 
-/** One cell of a bar: how far along the topic is, at a glance. */
+/**
+ * One cell of a bar: how far along the topic is, at a glance.
+ *
+ * The empty test comes first, and the order is the point. `questions` is the
+ * narrowed count, so under the quoted-only preference a topic mastered on
+ * *generated* questions has a mastery to draw and nothing left to serve; asked
+ * in the other order it would draw as a solid green cell on a bar whose whole
+ * job is now to show where the quotations are.
+ *
+ * A glyph of its own rather than the dim flag, because "never started" is
+ * already `░` in dim gray — most of the map, most of the time — and dimming an
+ * empty topic on top of that would make the two cells the same. There is no
+ * legend: a cell is explained by moving the cursor onto it, and the status line
+ * under the bar already says `no tests` or `nothing quoted`.
+ */
 function cellStyle(t: TopicProgress): { glyph: string; color: string; dim: boolean } {
+  if (t.questions === 0) return { glyph: "·", color: "gray", dim: true };
   if (t.mastery === undefined) return { glyph: "░", color: "gray", dim: true };
   const level = Math.floor(t.mastery);
   if (level >= 4) return { glyph: "█", color: "green", dim: false };
@@ -1522,14 +1537,24 @@ function summaryGlyphs(percent: number): string {
  * would need ~161 columns, so the per-topic detail stays with the selected
  * family alone (`FamilyBar`) — and exactly one family is ever expanded, so the
  * block's height never changes as the cursor walks.
+ *
+ * A family with nothing under it for exploring to serve says so in words rather
+ * than in dimness, which is the opposite way round from the bar below it. The
+ * dim flag is already spoken for here: every unselected line is dim and the
+ * selected one is bold cyan, so dimming an empty family would say nothing on
+ * eight lines out of nine and fight the cursor on the ninth. The cells in
+ * `FamilyBar` have no such job, which is why they can carry it in a glyph.
  */
 function FamilyList({
   families,
   selected,
+  quotedOnly,
   cursorInFamily,
 }: {
   families: FamilyProgress[];
   selected: string;
+  /** Whether "nothing here" means nothing quoted or nothing written at all. */
+  quotedOnly: boolean;
   cursorInFamily: number;
 }) {
   const width = Math.max(...families.map((f) => f.label.length));
@@ -1539,6 +1564,13 @@ function FamilyList({
         // The whole line is styled when selected, not the name alone: a
         // highlight on the first column only reads as half-applied.
         const on = f.id === selected;
+        // Only when there is nothing under it at all: one topic with a
+        // quotation in it is a reason to walk into the family, and a heading
+        // that wrote the family off would hide the very topic this is for. A
+        // family holding no topics at all is a different thing, and the
+        // "0 topics" already on the line is what says it.
+        const empty =
+          f.topics.length > 0 && f.topics.every((t) => t.questions === 0);
         return (
           <Box key={f.id} flexDirection="column">
             <Box>
@@ -1555,6 +1587,11 @@ function FamilyList({
               <Text bold={on} color={on ? "cyan" : undefined} dimColor={!on}>
                 {` ${String(Math.round(f.percent * 100)).padStart(3)}%  ${String(f.topics.length).padStart(2)} topic${f.topics.length === 1 ? "" : "s"}`}
               </Text>
+              {empty && (
+                <Text dimColor>
+                  {quotedOnly ? "  · nothing quoted" : "  · no questions"}
+                </Text>
+              )}
             </Box>
             {on && f.topics.length > 0 && (
               <FamilyBar family={f} cursorInFamily={cursorInFamily} />
@@ -1657,6 +1694,7 @@ function GrammarMap({
       <FamilyList
         families={families}
         selected={selected.id}
+        quotedOnly={quotedOnly}
         cursorInFamily={inFamily}
       />
 

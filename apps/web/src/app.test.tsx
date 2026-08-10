@@ -2959,4 +2959,85 @@ describe("the index under the quoted-only preference", () => {
     expect(screen.getByRole("button", { name: /Practise these 3/ })).toBeDefined();
     expect(screen.queryByText(/nothing quoted here yet/)).toBeNull();
   });
+
+  /**
+   * The words on a row are true but they are the last thing on it, and a family
+   * of twenty rows is scanned rather than read. Under the preference most of
+   * the syllabus has nothing to serve, so the few topics that do are what the
+   * index has to hand the eye — which colour can do and a sentence cannot.
+   *
+   * Greyed, and pointedly not disabled: what a topic with no quotation still
+   * offers is reading it and starting the walk from it, both of which the last
+   * commit went out of its way to leave open.
+   */
+  describe("and the rows it should be letting the eye skip", () => {
+    const openMap = async (user: ReturnType<typeof userEvent.setup>) => {
+      await user.click(screen.getByRole("button", { name: "Grammar index" }));
+      return screen.getByRole("dialog", { name: "Grammar index" });
+    };
+
+    it("greys the topics with nothing to serve and leaves the rest alone", async () => {
+      const user = userEvent.setup();
+      mount({ ...emptyProgress(), quotedOnly: true }, quoted);
+      const map = await openMap(user);
+
+      // Second declension has tests and no quotation among them.
+      expect(
+        within(map).getByRole("button", { name: /Second declension/ }).className,
+      ).toMatch(/\brow--empty\b/);
+      // First declension has one, and one is enough to be worth going to.
+      expect(
+        within(map).getByRole("button", { name: /First declension/ }).className,
+      ).not.toMatch(/\brow--empty\b/);
+    });
+
+    it("greys a family only when every topic under it is empty", async () => {
+      const user = userEvent.setup();
+      mount({ ...emptyProgress(), quotedOnly: true }, quoted);
+      const map = await openMap(user);
+
+      // Verb forms holds one topic and nothing quoted in it: nothing to open
+      // the family for, and the heading is where that has to be said, because
+      // the rows saying it are behind a tap.
+      const verbs = within(map).getByRole("button", { name: /Verb forms/ });
+      expect(verbs.className).toMatch(/\bfamily__head--empty\b/);
+      expect(verbs.textContent).toMatch(/nothing quoted/);
+      // Nouns holds two topics, one of them quoted. One is enough.
+      const nouns = within(map).getByRole("button", { name: /Nouns/ });
+      expect(nouns.className).not.toMatch(/\bfamily__head--empty\b/);
+      expect(nouns.textContent).not.toMatch(/nothing quoted/);
+    });
+
+    it("says the other silence when the preference is off", async () => {
+      const user = userEvent.setup();
+      // Every topic in the fixture has tests, so with the preference off
+      // nothing greys — which is the point: this is not a second opinion about
+      // quotations, it is about whether there is anything to ask at all.
+      mount(undefined, quoted);
+      const map = await openMap(user);
+
+      expect(
+        within(map).getByRole("button", { name: /Second declension/ }).className,
+      ).not.toMatch(/\brow--empty\b/);
+      expect(
+        within(map).getByRole("button", { name: /Verb forms/ }).className,
+      ).not.toMatch(/\bfamily__head--empty\b/);
+    });
+
+    it("still opens a greyed row's topic", async () => {
+      const user = userEvent.setup();
+      mount({ ...emptyProgress(), quotedOnly: true }, quoted);
+      const map = await openMap(user);
+      const row = within(map).getByRole("button", { name: /Second declension/ });
+
+      // The one thing the greying must never become. Reading the section and
+      // studying from here are still on offer behind this row, and a `disabled`
+      // here would take both away to save a student a tap they might want.
+      expect(row).toHaveProperty("disabled", false);
+      await user.click(row);
+      expect(
+        screen.getByRole("button", { name: "Study from here" }),
+      ).toHaveProperty("disabled", false);
+    });
+  });
 });

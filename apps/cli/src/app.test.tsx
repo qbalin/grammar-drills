@@ -1483,4 +1483,66 @@ describe("a deck that asked for quoted sentences only", () => {
     await pressOnce(stdin, lastFrame, "\r", "Nothing quoted for");
     unmount();
   });
+
+  /**
+   * The count is on the status line of the topic under the cursor, and the
+   * cursor is on one topic at a time. So the index says where the quotations
+   * are one arrow-press at a time, which for a syllabus of a hundred-odd topics
+   * is the same as not saying. The bar is what is looked at, and the bar is
+   * where a topic with nothing to serve has to be visible as one.
+   *
+   * `·` rather than the dim flag, because `░` in dim gray is already "never
+   * started" — most of the bar, most of the time — and the two must not become
+   * the same cell.
+   */
+  describe("and what the bar shows without being asked", () => {
+    /**
+     * `ag-decl1` keeps its quotation; `ag-verb-pres` loses the one the fixture
+     * above gave it. So nouns holds one live topic and one dry one, and verb
+     * forms is dry all through — the two cases the heading has to tell apart.
+     */
+    const oneFamilyDry: ContentData = {
+      ...quoted,
+      tests: { ...quoted.tests, "ag-verb-pres": fixture.tests["ag-verb-pres"]! },
+    };
+
+    it("marks the topics with nothing to serve, and says so over a whole family", async () => {
+      const content = new Content(oneFamilyDry, testProfile);
+      const session = new Session(content, { ...emptyProgress(), quotedOnly: true });
+      const { lastFrame, stdin, unmount } = render(
+        <App session={session} content={content} storage={new MemoryStorage()} />,
+      );
+      await until(lastFrame, "First declension nouns");
+      await press(stdin, lastFrame, CTRL_N, "Grammar index");
+
+      // Nouns is the open family: two cells, and the second declension's is the
+      // one with nothing behind it. `░` is the other one — never started, but
+      // with a quotation waiting in it.
+      expect(lastFrame()).toMatch(/░·/);
+      // Verb forms has nothing under it at all, and its heading says so rather
+      // than leaving it to be found by walking in.
+      expect(lastFrame()).toMatch(/Verb forms.*nothing quoted/);
+      // Nouns has one topic worth going to, and one is enough to keep it lit.
+      expect(lastFrame()).not.toMatch(/Nouns.*nothing quoted/);
+      unmount();
+    });
+
+    it("leaves the bar alone when the preference is off", async () => {
+      const content = new Content(oneFamilyDry, testProfile);
+      const session = new Session(content, emptyProgress());
+      const { lastFrame, stdin, unmount } = render(
+        <App session={session} content={content} storage={new MemoryStorage()} />,
+      );
+      await until(lastFrame, "First declension nouns");
+      await press(stdin, lastFrame, CTRL_N, "Grammar index");
+
+      // Every topic in the fixture has tests, so with the preference off there
+      // is nothing to mark: this is about having anything to ask at all, not a
+      // second opinion about quotations. Read off the bar rather than the whole
+      // frame — `·` is the separator half this screen's chrome is built from.
+      expect(lastFrame()).toMatch(/░░\s+topic 1 of 2/);
+      expect(lastFrame()).not.toContain("no questions");
+      unmount();
+    });
+  });
 });

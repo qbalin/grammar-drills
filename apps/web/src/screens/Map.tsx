@@ -47,6 +47,42 @@ function masteryLabel(t: TopicProgress): string {
  * nothing was written for this topic, or nothing quoted was. Only the second
  * comes back when the preference is turned off.
  */
+/**
+ * Nothing here for exploring to hand over.
+ *
+ * One predicate for both silences, because `questions` is already the narrowed
+ * count — `bank()` filters by the preference and `coverage` counts off it — so
+ * "nothing was written here" and "nothing quoted was" both land on 0 and a row
+ * does not have to know which of the two it is. `topicState` is where they are
+ * told apart, in words; this is only where the eye is told there is nothing.
+ *
+ * Deliberately not keyed on `quotedOnly`. With the preference off it still
+ * catches the genuinely test-less topics, which are also worth seeing greyed.
+ */
+function isEmpty(t: TopicProgress): boolean {
+  return t.questions === 0;
+}
+
+/**
+ * The same fact about a whole family, for its heading.
+ *
+ * A family is only worth greying when there is nothing under it at all: one
+ * topic with a quotation in it is a reason to open the family, and greying the
+ * head over a single live topic would hide the very row this is for.
+ *
+ * A family holding no topics whatever is not this — it has no questions because
+ * it has nothing, which "0 topics" on the same line already says. Every family
+ * in both shipped packs has topics, so this only keeps the odd case quiet.
+ */
+function familyEmpty(f: FamilyProgress): boolean {
+  return f.topics.length > 0 && f.topics.every(isEmpty);
+}
+
+/** Which silence a family's heading is reporting, in the words the rows use. */
+function familySilence(quotedOnly: boolean): string {
+  return quotedOnly ? "nothing quoted" : "no questions";
+}
+
 function topicState(t: TopicProgress, quotedOnly: boolean): string {
   return [
     masteryLabel(t),
@@ -77,7 +113,15 @@ function TopicRows({
   return (
     <div className="list list--topics">
       {topics.map((t) => (
-        <button className="row" key={t.sectionId} onClick={() => onPick(t)}>
+        // Dimmed, never disabled. A topic with nothing to serve is still one to
+        // read and still one to start the walk from — `TopicSheet` refuses the
+        // drill alone — so the row stays a button and stays tappable, and the
+        // grey is only there to let the eye skip what the words already say.
+        <button
+          className={`row${isEmpty(t) ? " row--empty" : ""}`}
+          key={t.sectionId}
+          onClick={() => onPick(t)}
+        >
           {/* The mastery colour is kept as a swatch, but it is now a second way
               of saying what the row already says. */}
           <span
@@ -137,31 +181,45 @@ export function MapSheet({
         )}
       </div>
 
-      {families.map((f) => (
-        <div className="family" key={f.id}>
-          <button
-            className="family__head"
-            onClick={() => setOpen(open === f.id ? null : f.id)}
-            aria-expanded={open === f.id}
-          >
-            <span className="family__main">
-              <span className="family__name">{f.label}</span>
-              {/* The percentage in words: a bare "50%" beside a bar said
-                  neither what was measured nor over how much. */}
-              <span className="family__sub">
-                {f.topics.length} topics · {Math.round(f.percent * 100)}% mastered
+      {families.map((f) => {
+        // Nine headings are what is read first, and a family with nothing under
+        // it is nine-ninths of a wasted expansion. Greyed but still an
+        // accordion: opening it is how you see *why* it is empty.
+        const empty = familyEmpty(f);
+        return (
+          <div className="family" key={f.id}>
+            <button
+              className={`family__head${empty ? " family__head--empty" : ""}`}
+              onClick={() => setOpen(open === f.id ? null : f.id)}
+              aria-expanded={open === f.id}
+            >
+              <span className="family__main">
+                <span className="family__name">{f.label}</span>
+                {/* The percentage in words: a bare "50%" beside a bar said
+                    neither what was measured nor over how much. And the
+                    emptiness in words too: the rows under it say which silence
+                    they are, and a heading greyed in silence would be the one
+                    thing on this sheet living in colour alone. */}
+                <span className="family__sub">
+                  {f.topics.length} topics · {Math.round(f.percent * 100)}% mastered
+                  {empty ? ` · ${familySilence(quotedOnly)}` : ""}
+                </span>
               </span>
-            </span>
-            <span className="family__meter">
-              <i style={{ width: `${Math.round(f.percent * 100)}%` }} />
-            </span>
-            <span className="row__chev">{open === f.id ? "▾" : "▸"}</span>
-          </button>
-          {open === f.id && (
-            <TopicRows topics={f.topics} quotedOnly={quotedOnly} onPick={onPick} />
-          )}
-        </div>
-      ))}
+              <span className="family__meter">
+                <i style={{ width: `${Math.round(f.percent * 100)}%` }} />
+              </span>
+              <span className="row__chev">{open === f.id ? "▾" : "▸"}</span>
+            </button>
+            {open === f.id && (
+              <TopicRows
+                topics={f.topics}
+                quotedOnly={quotedOnly}
+                onPick={onPick}
+              />
+            )}
+          </div>
+        );
+      })}
 
       <Colophon />
     </Sheet>

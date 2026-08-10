@@ -1304,6 +1304,14 @@ span.status__title {
   margin-top: 0.1rem;
 }
 
+/* A family with nothing under it for exploring to serve. Faded, not disabled:
+   the accordion still opens, because opening it is how you see why it is empty.
+   The name and its line fade; the meter and chevron are left alone, so the head
+   still reads as something you can hit. */
+.family__head--empty .family__main {
+  opacity: 0.5;
+}
+
 .family__meter {
   width: 4.5rem;
   height: 4px;
@@ -1406,6 +1414,26 @@ span.status__title {
    an ordinary `.row` button, because there is. */
 .row--static {
   cursor: default;
+}
+
+/* A topic with nothing exploring will ask — no tests written for it, or none
+   quoted under the preference. The row already says which in words; this is so
+   that a family of twenty rows can be scanned rather than read, and the few
+   with questions in them are what the eye lands on.
+
+   Faded, and emphatically not disabled: reading the section and starting the
+   walk from it are both still worth doing, and the sheet behind the row refuses
+   the drill alone. So the fade is on `.row__main` and the swatch — the two
+   things that carry the topic — while the chevron stays at full strength,
+   saying the row is still a way in. `opacity` rather than a dimmer text colour
+   because `.band` is a block of colour no text token reaches, and a swatch left
+   bright beside faded words would read as a fault.
+
+   Kept lighter than `.btn:disabled` (0.45) on purpose: the two can appear on
+   screen together, and they mean different things. */
+.row--empty .row__main,
+.row--empty .band {
+  opacity: 0.5;
 }
 
 /* Same treatment as the crib's caret: the row is the target, and the triangle
