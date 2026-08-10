@@ -774,6 +774,155 @@ describe("marking up an answer", () => {
   });
 });
 
+/**
+ * Taking one of the three texts off the screen.
+ *
+ * The reason there is a button at all: both Latin sentences are drawn a word at
+ * a time so each word can be held down, and `.word` gives up text selection to
+ * keep iOS's magnifier off that hold — so neither sentence can be copied by
+ * hand, and the reference answer is the one a student most wants elsewhere.
+ */
+describe("copying the three texts", () => {
+  /**
+   * What the clipboard now holds.
+   *
+   * No stub of our own: jsdom has no clipboard, `userEvent.setup()` installs
+   * one, and anything put there first would be shadowed by it — user-event
+   * checks for its own brand on whatever it finds and replaces what is not its.
+   * So these read back through the very stub the app wrote to, which means
+   * `setup()` has to run before the click in every test here.
+   */
+  const clipboard = () => navigator.clipboard.readText();
+
+  it("copies the reference answer, and says which text it took", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    await user.click(
+      screen.getByRole("button", { name: "Copy the reference answer" }),
+    );
+
+    // The whole sentence, not the word spans run together with the label or the
+    // attribution — which is the thing the button exists to get right.
+    expect(await clipboard()).toBe("Puella rosam amat.");
+    await screen.findByText("The reference copied.");
+  });
+
+  it("copies what was written, as it was written", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.type(screen.getByRole("textbox"), "Puella rosa amo.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    await user.click(
+      screen.getByRole("button", { name: "Copy what you wrote" }),
+    );
+
+    // Deliberately the wrong Latin: this button takes the student's own
+    // sentence, and nothing on this screen corrects it.
+    expect(await clipboard()).toBe("Puella rosa amo.");
+    await screen.findByText("What you wrote copied.");
+  });
+
+  it("copies the question while marking, rather than marking a word", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /mark/ }));
+
+    await user.click(screen.getByRole("button", { name: "Copy the question" }));
+
+    expect(await clipboard()).toBe("The girl loves the rose.");
+    await screen.findByText("The question copied.");
+    // The button is not a word, so the tap that copied picked nothing out.
+    expect(document.querySelectorAll(".prompt .word--b")).toHaveLength(0);
+  });
+
+  it("offers nothing to copy where nothing was written", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    expect(screen.getByText("nothing")).toBeDefined();
+    expect(
+      screen.queryByRole("button", { name: "Copy what you wrote" }),
+    ).toBeNull();
+    // The other two are still there — an empty answer is not a bare screen.
+    expect(
+      screen.getByRole("button", { name: "Copy the reference answer" }),
+    ).toBeDefined();
+    expect(screen.getByRole("button", { name: "Copy the question" })).toBeDefined();
+  });
+
+  it("offers nothing to copy on an answer that was revealed", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    // Not hidden so much as absent: the block it would sit in is gone.
+    expect(screen.queryByText("You wrote")).toBeNull();
+    expect(
+      screen.queryByRole("button", { name: "Copy what you wrote" }),
+    ).toBeNull();
+  });
+
+  it("takes the quoted sentence without its attribution", async () => {
+    const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+    const quoted: ContentData = {
+      ...fixture,
+      tests: {
+        ...fixture.tests,
+        decl1: [
+          {
+            id: "decl1-q1",
+            sectionId: "decl1",
+            questions: [
+              {
+                prompt: "Gaul is divided into three parts.",
+                answer: "Gallia est omnis dīvīsa in partēs trēs.",
+                kind: "translate-en-la" as const,
+                vocab: [],
+                source: cite,
+              },
+            ],
+          },
+        ],
+      },
+    };
+    const user = userEvent.setup();
+    mount(undefined, quoted);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    // The credit is on the screen…
+    expect(document.querySelector(".attribution")?.textContent).toContain(
+      "Caesar",
+    );
+    await user.click(
+      screen.getByRole("button", { name: "Copy the reference answer" }),
+    );
+    // …and not on the clipboard. What is wanted elsewhere is the Latin.
+    expect(await clipboard()).toBe("Gallia est omnis dīvīsa in partēs trēs.");
+  });
+
+  it("says so when the clipboard refuses", async () => {
+    const user = userEvent.setup(); // installs the stub this then spies on
+    mount();
+    const denied = vi
+      .spyOn(navigator.clipboard, "writeText")
+      .mockRejectedValue(new Error("denied"));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    await user.click(
+      screen.getByRole("button", { name: "Copy the reference answer" }),
+    );
+
+    await screen.findByText("Could not copy.");
+    // `beforeEach` only unstubs globals, and the stub object outlives this test.
+    denied.mockRestore();
+  });
+});
+
 describe("vocabulary", () => {
   it("offers the candidates for an ambiguous form, most frequent first", async () => {
     const user = userEvent.setup();

@@ -392,6 +392,40 @@ span.status__title {
   margin: 0.5rem 0 0.9rem;
 }
 
+/* The eyebrow and the question's copy button on one line. The eyebrow keeps its
+   own bottom margin, since the two screens that show one without a button here
+   rely on it. */
+.prompt-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+/* Copy one of the graded screen's three texts.
+   It earns its place because two of them cannot be copied by hand at all: their
+   words are `.word`, and `.word` gives up selection so iOS's magnifier stays
+   off the hold.
+   Drawn like `.attempt__mark`, the trail's own small button beside a sentence —
+   quiet, because the sentence is what the screen is for. The negative margins
+   pay back the height the padding takes, the way `.iconbtn` does, so a label
+   row is no taller for carrying one; `margin-left: auto` is what puts it at the
+   right-hand end of whichever of the two rows it is in. */
+.copybtn {
+  margin: -0.35rem -0.4rem -0.35rem auto;
+  padding: 0.35rem 0.4rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* The accent, not a literal: review mode reassigns `--gold` to `--blue`
+   wholesale, so this follows whichever errand is on. */
+.copybtn:active {
+  color: var(--gold);
+  background: color-mix(in srgb, var(--gold) 14%, transparent);
+}
+
 .prompt {
   font-family: var(--serif);
   font-size: 1.6rem;
@@ -452,6 +486,20 @@ span.status__title {
   text-transform: uppercase;
   color: var(--text-faint);
   margin-bottom: 0.3rem;
+}
+
+/* A block's label and its copy button on one line. The bottom margin moves onto
+   the row rather than off the label, because the vocabulary card uses
+   `.compare__label` bare — a label, no button — and would lose its spacing. */
+.compare__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.compare__head .compare__label {
+  margin-bottom: 0;
 }
 
 .compare__text {

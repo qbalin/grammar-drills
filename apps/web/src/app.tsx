@@ -157,6 +157,13 @@ interface Props {
  */
 const FLOPPY_FADE_MS = 700;
 
+/** What each of the graded screen's three texts is called once it is copied. */
+const COPIED: Record<keyof AttemptMarks, string> = {
+  prompt: "The question",
+  submitted: "What you wrote",
+  answer: "The reference",
+};
+
 export function App({ content, session, storage }: Props) {
   const [sectionId, setSectionId] = useState<string | null>(null);
   const [test, setTest] = useState<Test | null>(null);
@@ -961,6 +968,42 @@ export function App({ content, session, storage }: Props) {
     });
 
   /**
+   * One of the graded screen's three texts onto the clipboard.
+   *
+   * Which text is named rather than handed over, exactly as a mark is: the
+   * screen has one word for each of its three texts, and this is the one place
+   * they are turned back into strings.
+   *
+   * `writeText` is called in the tap itself with nothing awaited in front of
+   * it, because Safari allows the write only while the gesture is still fresh.
+   * There is no `execCommand` fallback: the app is served over https and
+   * localhost, where the API is there, and the case left over — a dev build
+   * reached over plain http on a LAN address, to try the gestures on a real
+   * phone — is told so rather than answered with a hidden textarea that would
+   * then live in the DOM for everyone.
+   */
+  const copyText = (field: keyof AttemptMarks) => {
+    if (!question) return;
+    const text =
+      field === "prompt"
+        ? question.prompt
+        : field === "answer"
+          ? question.answer
+          : submitted.trim();
+    // Not `navigator.clipboard?.writeText(…)`: optional chaining would carry
+    // past the failure handler too, and a browser without the API would answer
+    // a press with nothing at all.
+    if (!navigator.clipboard) {
+      flash("This page cannot reach the clipboard.");
+      return;
+    }
+    void navigator.clipboard.writeText(text).then(
+      () => flash(`${COPIED[field]} copied.`),
+      () => flash("Could not copy."),
+    );
+  };
+
+  /**
    * A word tapped in the trail, on an attempt already on the record — the only
    * way an answer written before marking existed ever gets any.
    *
@@ -1428,6 +1471,7 @@ export function App({ content, session, storage }: Props) {
             }
             onToggleMarking={() => setMarking((on) => !on)}
             onMark={markHere}
+            onCopy={copyText}
             vocabulary={
               <QuestionVocabulary
                 words={vocabulary}

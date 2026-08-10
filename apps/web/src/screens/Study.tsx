@@ -86,6 +86,30 @@ export function Answering({
 }
 
 /**
+ * The copy button one of the graded screen's three texts carries.
+ *
+ * It earns its place because two of the three cannot be copied by hand at all:
+ * the words of both sentences are `.word` spans, and `.word` gives up text
+ * selection so that iOS's magnifier stays off the 500 ms hold. That trade is
+ * the right one for the hold and it left the reference answer readable but
+ * un-liftable — and the reference answer is exactly what you want in a note, a
+ * dictionary or a message.
+ *
+ * The glyph is the same on all three and the label says copy *what*, because
+ * three controls announced as "copy" are three identical controls to anyone who
+ * cannot see which block each one stands in. `❐` is a Dingbat, the block `✎ ✱
+ * ✕ ✓` already ship from, rather than the more conventional `⧉` from a
+ * mathematical block that phone fonts cover less reliably.
+ */
+function CopyButton({ what, onCopy }: { what: string; onCopy: () => void }) {
+  return (
+    <button className="copybtn" onClick={onCopy} aria-label={`Copy ${what}`}>
+      ❐ copy
+    </button>
+  );
+}
+
+/**
  * The answer beside the reference, and the grade.
  *
  * The two are stacked rather than diffed: a Latin sentence has several right
@@ -120,6 +144,7 @@ export function Graded({
   onReadGrammar,
   onToggleMarking,
   onMark,
+  onCopy,
   vocabulary,
   history,
 }: {
@@ -166,6 +191,12 @@ export function Graded({
   onToggleMarking: () => void;
   /** A word tapped while marking: which text, and the word's index in it. */
   onMark: (field: keyof AttemptMarks, index: number) => void;
+  /**
+   * One of the three texts onto the clipboard, named the way `onMark` names
+   * them and for the same reason: the strings themselves live above, and this
+   * screen only ever says which of its three it means.
+   */
+  onCopy: (field: keyof AttemptMarks) => void;
   /** The question's words, folded away — the same panel as while writing. */
   vocabulary?: ReactNode;
   /**
@@ -175,13 +206,26 @@ export function Graded({
    */
   history?: ReactNode;
 }) {
+  // Named the way the trail names it, and worked out once: three places asked
+  // the same question of it, and a fourth — whether there is anything here to
+  // copy — made that one too many.
+  const written = submitted.trim();
+
   return (
     <>
       <div className="study__scroll">
-        <p className="eyebrow">
-          {profile.ui.promptDirection}
-          {total > 0 ? ` · ${index + 1}/${total}` : ""}
-        </p>
+        {/* The eyebrow is the only line above the prompt, so it doubles as that
+            text's label and carries its copy button. Beside the eyebrow rather
+            than inside it, and nothing goes inside `.prompt`: that is one serif
+            line of English, and a control in the middle of it would read as
+            part of the sentence. */}
+        <div className="prompt-head">
+          <p className="eyebrow">
+            {profile.ui.promptDirection}
+            {total > 0 ? ` · ${index + 1}/${total}` : ""}
+          </p>
+          <CopyButton what="the question" onCopy={() => onCopy("prompt")} />
+        </div>
         <p className="prompt">
           <Sentence
             text={question.prompt}
@@ -196,13 +240,26 @@ export function Graded({
         <div className={`compare${marking ? " compare--marking" : ""}`}>
           {!revealed && (
             <div className="compare__block">
-              <div className="compare__label">You wrote</div>
+              <div className="compare__head">
+                <div className="compare__label">You wrote</div>
+                {/* Only when there is something here. The block still stands
+                    when nothing was written, saying so in italics, and a button
+                    that put the word "nothing" on the clipboard would be a
+                    small lie — the same reason the hint button below goes away
+                    once it has run out rather than greying itself out. */}
+                {written !== "" && (
+                  <CopyButton
+                    what="what you wrote"
+                    onCopy={() => onCopy("submitted")}
+                  />
+                )}
+              </div>
               <div
-                className={`compare__text${submitted.trim() ? "" : " compare__text--empty"}`}
+                className={`compare__text${written ? "" : " compare__text--empty"}`}
               >
-                {submitted.trim() ? (
+                {written ? (
                   <Sentence
-                    text={submitted.trim()}
+                    text={written}
                     marks={marks.submitted}
                     onHold={(word, i) => onHoldWord(word, "submitted", i)}
                     onInspect={onInspectWord}
@@ -215,7 +272,16 @@ export function Graded({
             </div>
           )}
           <div className="compare__block compare__block--reference">
-            <div className="compare__label">Reference</div>
+            <div className="compare__head">
+              <div className="compare__label">Reference</div>
+              {/* The sentence alone. The note and the attribution stay on the
+                  screen and off the clipboard: what is wanted elsewhere is the
+                  Latin, and a citation pasted into a dictionary is noise. */}
+              <CopyButton
+                what="the reference answer"
+                onCopy={() => onCopy("answer")}
+              />
+            </div>
             <div className="compare__text compare__text--reference">
               <Sentence
                 text={question.answer}
