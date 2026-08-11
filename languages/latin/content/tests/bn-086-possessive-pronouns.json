@@ -432,5 +432,139 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-086-possessive-pronouns-t8",
+  "sectionId": "bn-086-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "The general, trusting his own soldiers, scorned the threats of the enemy.",
+    "answer": "Dux mīlitibus suīs cōnfīsus hostium minās sprēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dux",
+     "mīlitibus",
+     "suīs",
+     "cōnfīsus",
+     "hostium",
+     "minās",
+     "sprēvit"
+    ]
+   },
+   {
+    "prompt": "The king summoned the poet, but did not praise his verses.",
+    "answer": "Rēx poētam arcessīvit, sed versūs ejus nōn laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rēx",
+     "poētam",
+     "arcessīvit",
+     "sed",
+     "versūs",
+     "ejus",
+     "nōn",
+     "laudāvit"
+    ]
+   },
+   {
+    "prompt": "My son, guard our home while I am away.",
+    "answer": "Mī fīlī, domum nostram custōdī dum absum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mī",
+     "fīlī",
+     "domum",
+     "nostram",
+     "custōdī",
+     "dum",
+     "absum"
+    ]
+   },
+   {
+    "prompt": "The citizens praised their own laws but feared their neighbors' power.",
+    "answer": "Cīvēs lēgēs suās laudāvērunt sed vīcīnōrum potentiam timuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cīvēs",
+     "lēgēs",
+     "suās",
+     "laudāvērunt",
+     "sed",
+     "vīcīnōrum",
+     "potentiam",
+     "timuērunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-086-possessive-pronouns-t9",
+  "sectionId": "bn-086-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "Soldiers, remember your ancestors and defend your fatherland bravely.",
+    "answer": "Mīlitēs, majōrēs vestrōs mementōte et patriam fortiter dēfendite.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "majōrēs",
+     "vestrōs",
+     "mementōte",
+     "et",
+     "patriam",
+     "fortiter",
+     "dēfendite"
+    ]
+   },
+   {
+    "prompt": "The woman loved her husband, and his brother often helped her.",
+    "answer": "Mulier virum suum amābat, et frāter ejus eam saepe adjuvābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mulier",
+     "virum",
+     "suum",
+     "amābat",
+     "et",
+     "frāter",
+     "ejus",
+     "eam",
+     "saepe",
+     "adjuvābat"
+    ]
+   },
+   {
+    "prompt": "Our commander led his own troops across the river by night.",
+    "answer": "Imperātor noster cōpiās suās trāns flūmen nocte trādūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperātor",
+     "noster",
+     "cōpiās",
+     "suās",
+     "trāns",
+     "flūmen",
+     "nocte",
+     "trādūxit"
+    ]
+   },
+   {
+    "prompt": "Give me your hand, my friend, and trust my promises.",
+    "answer": "Dā mihi manum tuam, mī amīce, et prōmissīs meīs crēde.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dā",
+     "mihi",
+     "manum",
+     "tuam",
+     "mī",
+     "amīce",
+     "et",
+     "prōmissīs",
+     "meīs",
+     "crēde"
+    ]
+   }
+  ]
  }
 ]

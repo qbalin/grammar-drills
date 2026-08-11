@@ -394,5 +394,125 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-088-the-intensive-pronoun-t8",
+  "sectionId": "bn-088-the-intensive-pronoun",
+  "questions": [
+   {
+    "prompt": "The queen herself, though weary, listened to the complaints of the citizens.",
+    "answer": "Rēgīna ipsa, quamvīs fessa, querēlās cīvium audīvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēgīna",
+     "ipsa",
+     "quamvīs",
+     "fessa",
+     "querēlās",
+     "cīvium",
+     "audīvit"
+    ]
+   },
+   {
+    "prompt": "We entrusted the sacred spear to the priest himself.",
+    "answer": "Sacram hastam ipsī sacerdōtī crēdidimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sacram",
+     "hastam",
+     "ipsī",
+     "sacerdōtī",
+     "crēdidimus"
+    ]
+   },
+   {
+    "prompt": "The adulterer himself fled the city by night.",
+    "answer": "Adulter ipse ex urbe nocte fūgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "adulter",
+     "ipse",
+     "ex",
+     "urbe",
+     "nocte",
+     "fūgit"
+    ]
+   },
+   {
+    "prompt": "The witness relied on the words of the woman herself.",
+    "answer": "Testis verbīs mulieris ipsīus frētus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "testis",
+     "verbīs",
+     "mulieris",
+     "ipsīus",
+     "frētus",
+     "est"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bn-088-the-intensive-pronoun-t9",
+  "sectionId": "bn-088-the-intensive-pronoun",
+  "questions": [
+   {
+    "prompt": "The general himself, having led the army across the mountains, praised the soldiers.",
+    "answer": "Dux ipse, exercitū trāns montēs ductō, mīlitēs laudāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dux",
+     "ipse",
+     "exercitū",
+     "trāns",
+     "montēs",
+     "ductō",
+     "mīlitēs",
+     "laudāvit"
+    ]
+   },
+   {
+    "prompt": "You yourself saw the ships burning in the harbor.",
+    "answer": "Tū ipse nāvēs in portū ārdentēs vīdistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "ipse",
+     "nāvēs",
+     "in",
+     "portū",
+     "ārdentēs",
+     "vīdistī"
+    ]
+   },
+   {
+    "prompt": "The very walls of the temple trembled at the voice of the goddess.",
+    "answer": "Ipsī templī parietēs ad vōcem deae tremuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ipsī",
+     "templī",
+     "parietēs",
+     "ad",
+     "vōcem",
+     "deae",
+     "tremuērunt"
+    ]
+   },
+   {
+    "prompt": "The city was betrayed by the guards themselves.",
+    "answer": "Urbs ab ipsīs custōdibus prōdita est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "urbs",
+     "ab",
+     "ipsīs",
+     "custōdibus",
+     "prōdita",
+     "est"
+    ]
+   }
+  ]
  }
 ]
