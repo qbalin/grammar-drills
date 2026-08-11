@@ -537,5 +537,185 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-324-subjunctive-by-attraction-q1",
+  "sectionId": "bn-324-subjunctive-by-attraction",
+  "questions": [
+   {
+    "prompt": "He orders them, till the affair should be decided, to keep the man; when it is judged, to bring him to him.",
+    "answer": "Imperat, dum rēs iūdicētur, hominem adservent: cum iūdicāta sit, ad sē ut addūcant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Imperat",
+     "dum",
+     "rēs",
+     "iūdicētur",
+     "hominem",
+     "adservent",
+     "cum",
+     "iūdicāta",
+     "sit",
+     "ad",
+     "sē",
+     "ut",
+     "addūcant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3.55"
+    }
+   },
+   {
+    "prompt": "For who is so reckless of spirit that, when he sees these things, he can keep silent and pass them by?",
+    "answer": "Etenim quis tam dissolūtō animō est, quī haec cum videat, tacēre ac neglegere possit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Etenim",
+     "quis",
+     "tam",
+     "dissolūtō",
+     "animō",
+     "est",
+     "quī",
+     "haec",
+     "cum",
+     "videat",
+     "tacēre",
+     "ac",
+     "neglegere",
+     "possit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "32"
+    }
+   },
+   {
+    "prompt": "I am afraid I may make the work harder, while I am aiming to make it less.",
+    "answer": "vereor nē, dum minuere velim labōrem, augeam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vereor",
+     "nē",
+     "dum",
+     "minuere",
+     "velim",
+     "labōrem",
+     "augeam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "1, 12"
+    }
+   },
+   {
+    "prompt": "If you should pronounce only such people unhappy as had to die, you would not except one of those who were living.",
+    "answer": "sī sōlōs eōs dīcerēs miserōs, quibus moriendum esset, nēminem eōrum, quī vīverent exciperēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "sōlōs",
+     "eōs",
+     "dīcerēs",
+     "miserōs",
+     "quibus",
+     "moriendum",
+     "esset",
+     "nēminem",
+     "eōrum",
+     "quī",
+     "vīverent",
+     "exciperēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 9"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-324-subjunctive-by-attraction-q2",
+  "sectionId": "bn-324-subjunctive-by-attraction",
+  "questions": [
+   {
+    "prompt": "It is the custom at Syracuse, that if any question is discussed in the senate, anybody who pleases may express his opinion.",
+    "answer": "mōs est Syrācūsīs, ut sī quā dē rē ad senātum referātur, dīcat sententiam quī velit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mōs",
+     "est",
+     "Syrācūsīs",
+     "ut",
+     "sī",
+     "quā",
+     "dē",
+     "rē",
+     "ad",
+     "senātum",
+     "referātur",
+     "dīcat",
+     "sententiam",
+     "quī",
+     "velit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 142"
+    }
+   },
+   {
+    "prompt": "The sage does not hesitate, if this be the better course, to withdraw from life.",
+    "answer": "sapiēns nōn dubitat, sī ita melius sit, migrāre dē vītā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sapiēns",
+     "nōn",
+     "dubitat",
+     "sī",
+     "ita",
+     "melius",
+     "sit",
+     "migrāre",
+     "dē",
+     "vītā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1, 62"
+    }
+   },
+   {
+    "prompt": "It is the custom in Athens to eulogize in public assembly such as have fallen in action.",
+    "answer": "mōs est Athēnīs laudārī in cōntiōne eōs, quī sint in proeliīs interfectī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mōs",
+     "est",
+     "Athēnīs",
+     "laudārī",
+     "in",
+     "cōntiōne",
+     "eōs",
+     "quī",
+     "sint",
+     "in",
+     "proeliīs",
+     "interfectī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "151"
+    }
+   }
+  ]
  }
 ]

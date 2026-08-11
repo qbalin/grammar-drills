@@ -1884,5 +1884,313 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q6",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "What is there that needs defence?",
+    "answer": "Quid est quod dēfēnsiōnis indigeat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "est",
+     "quod",
+     "dēfēnsiōnis",
+     "indigeat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "34"
+    }
+   },
+   {
+    "prompt": "It is not more for our interest than for your own that you should not make war again.",
+    "answer": "nōn nostrā magis quam vestrā rēfert vōs nōn rebellāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "nostrā",
+     "magis",
+     "quam",
+     "vestrā",
+     "rēfert",
+     "vōs",
+     "nōn",
+     "rebellāre"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "34, 17, 7"
+    }
+   },
+   {
+    "prompt": "Your health is a matter of the highest importance to you and to me.",
+    "answer": "tuā et meā maximē interest tē valēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tuā",
+     "et",
+     "meā",
+     "maximē",
+     "interest",
+     "tē",
+     "valēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16, 4, 4"
+    }
+   },
+   {
+    "prompt": "This is of vital moment to you.",
+    "answer": "vestrā hōc maximē interest.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vestrā",
+     "hōc",
+     "maximē",
+     "interest"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "79"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q7",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "That he must do something which should seem more for the other side’s good than his own.",
+    "answer": "faciundum aliquid, quod illōrum magis quam suā rētulisse vidērētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "faciundum",
+     "aliquid",
+     "quod",
+     "illōrum",
+     "magis",
+     "quam",
+     "suā",
+     "rētulisse",
+     "vidērētur"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "111, 1"
+    }
+   },
+   {
+    "prompt": "Not that the character of the place concerned me.",
+    "answer": "nōn quō meā interesset locī nātūra.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "quō",
+     "meā",
+     "interesset",
+     "locī",
+     "nātūra"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "3, 19, 1"
+    }
+   },
+   {
+    "prompt": "A good many were acquitted of high treason.",
+    "answer": "maiestātis absolūtī sunt permultī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "maiestātis",
+     "absolūtī",
+     "sunt",
+     "permultī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "116"
+    }
+   },
+   {
+    "prompt": "Not having any awe about your recommendation either.",
+    "answer": "nē tuī quidem testimōnī veritus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "tuī",
+     "quidem",
+     "testimōnī",
+     "veritus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "8, 4, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q8",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "Could I have been more forgetful of my present interests, more mindful of my past career?",
+    "answer": "num potuī magis oblīvīscī temporum meōrum, meminisse āctiōnum?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "potuī",
+     "magis",
+     "oblīvīscī",
+     "temporum",
+     "meōrum",
+     "meminisse",
+     "āctiōnum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "1, 9, 8"
+    }
+   },
+   {
+    "prompt": "I can remember Cinna, I have seen Sulla.",
+    "answer": "Cinnam meminī vīdī Sūllam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cinnam",
+     "meminī",
+     "vīdī",
+     "Sūllam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "5, 17"
+    }
+   },
+   {
+    "prompt": "Suddenly he forgot the whole case.",
+    "answer": "subitō tōtam causam oblītus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "subitō",
+     "tōtam",
+     "causam",
+     "oblītus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "217"
+    }
+   },
+   {
+    "prompt": "He reminded one man of his beggary, another of his greed.",
+    "answer": "admonēbat alium egestātis, alium cupiditātis suae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "admonēbat",
+     "alium",
+     "egestātis",
+     "alium",
+     "cupiditātis",
+     "suae"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "21, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q9",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
+   {
+    "prompt": "The place has reminded me of that.",
+    "answer": "eam rem nōs locus admonuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eam",
+     "rem",
+     "nōs",
+     "locus",
+     "admonuit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "79, 1"
+    }
+   },
+   {
+    "prompt": "The war by which Galba became master of the throne.",
+    "answer": "arma, quīs Servius Galba rērum adeptus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "arma",
+     "quīs",
+     "Servius",
+     "Galba",
+     "rērum",
+     "adeptus",
+     "est"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "3, 55"
+    }
+   },
+   {
+    "prompt": "I fill out a dinner-party every day with neighbours.",
+    "answer": "convīvium vīcīnōrum cōtīdiē compleō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "convīvium",
+     "vīcīnōrum",
+     "cōtīdiē",
+     "compleō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "46"
+    }
+   },
+   {
+    "prompt": "This war requires rapid action.",
+    "answer": "hoc bellum indiget celeritātis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "bellum",
+     "indiget",
+     "celeritātis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "6, 7"
+    }
+   }
+  ]
  }
 ]

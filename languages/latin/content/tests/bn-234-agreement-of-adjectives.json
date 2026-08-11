@@ -732,5 +732,233 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-234-agreement-of-adjectives-q1",
+  "sectionId": "bn-234-agreement-of-adjectives",
+  "questions": [
+   {
+    "prompt": "Gaul, including everything under the name, is divided into three parts.",
+    "answer": "Gallia est omnis dīvīsa in partēs trēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallia",
+     "est",
+     "omnis",
+     "dīvīsa",
+     "in",
+     "partēs",
+     "trēs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 1, 1"
+    }
+   },
+   {
+    "prompt": "It was a job that required much work and trouble.",
+    "answer": "rēs erat multae operae et labōris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēs",
+     "erat",
+     "multae",
+     "operae",
+     "et",
+     "labōris"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 11, 5"
+    }
+   },
+   {
+    "prompt": "I have always admired your ability, your scholarly tastes, and your character.",
+    "answer": "semper amāvī ingenium, studia, mōrēs tuōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "semper",
+     "amāvī",
+     "ingenium",
+     "studia",
+     "mōrēs",
+     "tuōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "33"
+    }
+   },
+   {
+    "prompt": "About the gates, the Colline and the Esquiline.",
+    "answer": "circā portās Collīnam Ēsquilīnamque.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "circā",
+     "portās",
+     "Collīnam",
+     "Ēsquilīnamque"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "26, 10, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-234-agreement-of-adjectives-q2",
+  "sectionId": "bn-234-agreement-of-adjectives",
+  "questions": [
+   {
+    "prompt": "Between the Esquiline and the Colline gate.",
+    "answer": "inter Ēsquilīnam Collīnamque portam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "inter",
+     "Ēsquilīnam",
+     "Collīnamque",
+     "portam"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "26, 10, 1"
+    }
+   },
+   {
+    "prompt": "Thirty old men-of-war.",
+    "answer": "nāvīs longās trīgintā veterēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nāvīs",
+     "longās",
+     "trīgintā",
+     "veterēs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "27, 22, 12"
+    }
+   },
+   {
+    "prompt": "A very large private freighting vessel.",
+    "answer": "prīvāta nāvis onerāria māxima.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prīvāta",
+     "nāvis",
+     "onerāria",
+     "māxima"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 136"
+    }
+   },
+   {
+    "prompt": "It was by poison that Hannibal and Philopoemen were taken off.",
+    "answer": "venēnō absūmptī Hannibal et Philopoemēn.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "venēnō",
+     "absūmptī",
+     "Hannibal",
+     "et",
+     "Philopoemēn"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "39, 52, 8"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-234-agreement-of-adjectives-q3",
+  "sectionId": "bn-234-agreement-of-adjectives",
+  "questions": [
+   {
+    "prompt": "The wall and town-gate had been struck by lightning.",
+    "answer": "mūrus et porta dē caelō tācta erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mūrus",
+     "et",
+     "porta",
+     "dē",
+     "caelō",
+     "tācta",
+     "erant"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "32, 29, 1"
+    }
+   },
+   {
+    "prompt": "Hot blood and greed proved stronger than authority.",
+    "answer": "īra et avāritia imperiō potentiōra erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "īra",
+     "et",
+     "avāritia",
+     "imperiō",
+     "potentiōra",
+     "erant"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "37, 32, 13"
+    }
+   },
+   {
+    "prompt": "The king too and the king’s fleet set sail in his company.",
+    "answer": "et rēx rēgiaque classis ūnā profectī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "et",
+     "rēx",
+     "rēgiaque",
+     "classis",
+     "ūnā",
+     "profectī"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 50, 11"
+    }
+   },
+   {
+    "prompt": "That a free state and a monarch were irreconcilable things.",
+    "answer": "inimīca inter sē līberam cīvitātem et rēgem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "inimīca",
+     "inter",
+     "sē",
+     "līberam",
+     "cīvitātem",
+     "et",
+     "rēgem"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "44, 24, 2"
+    }
+   }
+  ]
  }
 ]

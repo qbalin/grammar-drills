@@ -1257,5 +1257,413 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-q1",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "Let Asia think of this, that no disaster would not be hers, if she were not held by this government.",
+    "answer": "Illud Asia cōgitet, nūllam ā sē neque bellī externī neque discordiārum domesticārum calamitātem āfutūram fuisse, sī hōc imperiō nōn tenērētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illud",
+     "Asia",
+     "cōgitet",
+     "nūllam",
+     "ā",
+     "sē",
+     "neque",
+     "bellī",
+     "externī",
+     "neque",
+     "discordiārum",
+     "domesticārum",
+     "calamitātem",
+     "āfutūram",
+     "fuisse",
+     "sī",
+     "hōc",
+     "imperiō",
+     "nōn",
+     "tenērētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1.1.34"
+    }
+   },
+   {
+    "prompt": "But most people think that, if he had chosen to follow up the pursuit more vigorously, he could have ended the war on that day.",
+    "answer": "At plērīque exīstimant, sī ācrius īnsequī voluisset, bellum eō diē potuisse fīnīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "plērīque",
+     "exīstimant",
+     "sī",
+     "ācrius",
+     "īnsequī",
+     "voluisset",
+     "bellum",
+     "eō",
+     "diē",
+     "potuisse",
+     "fīnīre"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3.51"
+    }
+   },
+   {
+    "prompt": "Ariovistus answered: if he did not dictate to the Roman nation, no more ought the Roman nation to interfere with him.",
+    "answer": "Ariovistus respondit: sī ipse populō Rōmānō nōn praescrīberet, nōn oportēre sēsē ā populō Rōmānō impedīrī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ariovistus",
+     "respondit",
+     "sī",
+     "ipse",
+     "populō",
+     "Rōmānō",
+     "nōn",
+     "praescrīberet",
+     "nōn",
+     "oportēre",
+     "sēsē",
+     "ā",
+     "populō",
+     "Rōmānō",
+     "impedīrī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 36, 1"
+    }
+   },
+   {
+    "prompt": "If he did that, Pompey would go to the Spains.",
+    "answer": "quae sī fēcisset, Pompēium in Hispāniās itūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quae",
+     "sī",
+     "fēcisset",
+     "Pompēium",
+     "in",
+     "Hispāniās",
+     "itūrum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 10, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-q2",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "Ariovistus answered that if the Romans wanted to try again, he was ready to fight it out.",
+    "answer": "Ariovistus respondit: sī iterum experīrī velint, sē parātum esse dēcertāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ariovistus",
+     "respondit",
+     "sī",
+     "iterum",
+     "experīrī",
+     "velint",
+     "sē",
+     "parātum",
+     "esse",
+     "dēcertāre"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 1"
+    }
+   },
+   {
+    "prompt": "That unless he withdrew, he should consider him an enemy.",
+    "answer": "quī nisi dēcēdat, sēsē illum prō hoste habitūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quī",
+     "nisi",
+     "dēcēdat",
+     "sēsē",
+     "illum",
+     "prō",
+     "hoste",
+     "habitūrum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 11"
+    }
+   },
+   {
+    "prompt": "Though Varro, following Stilo’s dictum, may say that the Muses would have spoken in the style of Plautus, if they had wanted to speak Latin.",
+    "answer": "licet Varrō Mūsās, Aelī Stilōnis sententiā, Plautīnō dīcat sermōne locutūrās fuisse sī Latīnē loquī vellent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "licet",
+     "Varrō",
+     "Mūsās",
+     "Aelī",
+     "Stilōnis",
+     "sententiā",
+     "Plautīnō",
+     "dīcat",
+     "sermōne",
+     "locutūrās",
+     "fuisse",
+     "sī",
+     "Latīnē",
+     "loquī",
+     "vellent"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "10, 1, 99"
+    }
+   },
+   {
+    "prompt": "The philosophers say that this is Jove’s style of speaking, if Jove speaks Greek.",
+    "answer": "Iovem sīc aiunt philosophī, sī Graecē loquātur, loquī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iovem",
+     "sīc",
+     "aiunt",
+     "philosophī",
+     "sī",
+     "Graecē",
+     "loquātur",
+     "loquī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "121"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-q3",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "In the provinces they saw that if a man clothed in authority should wish to be a buyer, he would carry off every time whatever he wished at what he wished.",
+    "answer": "in prōvinciīs intellegēbant sī is quī esset cum imperiō emere vellet, fore utī quod quisque vellet quantī vellet auferret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "prōvinciīs",
+     "intellegēbant",
+     "sī",
+     "is",
+     "quī",
+     "esset",
+     "cum",
+     "imperiō",
+     "emere",
+     "vellet",
+     "fore",
+     "utī",
+     "quod",
+     "quisque",
+     "vellet",
+     "quantī",
+     "vellet",
+     "auferret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 10"
+    }
+   },
+   {
+    "prompt": "That unless precaution was taken, Rome would be captured.",
+    "answer": "futūrum esse, nisi prōvīsum esset, ut Rōma caperētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "futūrum",
+     "esse",
+     "nisi",
+     "prōvīsum",
+     "esset",
+     "ut",
+     "Rōma",
+     "caperētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "1, 101"
+    }
+   },
+   {
+    "prompt": "Do you suppose that Pompey would have taken any pleasure in the fame which his peerless exploits brought him if he had known that he was going to be butchered in the wilds of Egypt?",
+    "answer": "an Cn. Pompēium cēnsēs maximārum rērum glōriā laetātūrum fuisse, sī scīret sē in sōlitūdine Aegyptiōrum trucīdātum īrī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "an",
+     "Cn",
+     "Pompēium",
+     "cēnsēs",
+     "maximārum",
+     "rērum",
+     "glōriā",
+     "laetātūrum",
+     "fuisse",
+     "sī",
+     "scīret",
+     "sē",
+     "in",
+     "sōlitūdine",
+     "Aegyptiōrum",
+     "trucīdātum",
+     "īrī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "2, 22"
+    }
+   },
+   {
+    "prompt": "That he thought Caesar was gone into Italy; otherwise, the Carnutes would not have formed their design of killing Tasgetius, and the Eburones, if he were at hand, would not be assaulting the camp.",
+    "answer": "Caesarem arbitrārī profectum in Ītaliam; neque aliter Carnūtēs interficiundī Tasgetiī cōnsilium fuisse captūrōs, neque Eburōnēs, sī ille adesset, ad castra ventūrōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesarem",
+     "arbitrārī",
+     "profectum",
+     "in",
+     "Ītaliam",
+     "neque",
+     "aliter",
+     "Carnūtēs",
+     "interficiundī",
+     "Tasgetiī",
+     "cōnsilium",
+     "fuisse",
+     "captūrōs",
+     "neque",
+     "Eburōnēs",
+     "sī",
+     "ille",
+     "adesset",
+     "ad",
+     "castra",
+     "ventūrōs",
+     "esse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 29, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-319-conditional-sentences-in-indirect-q4",
+  "sectionId": "bn-319-conditional-sentences-in-indirect",
+  "questions": [
+   {
+    "prompt": "I remember that he used to say that he had drunk in the study of philosophy with too great eagerness, had not his discreet mother checked his ardent soul.",
+    "answer": "memoriā teneō solitum ipsum nārrāre sē studium philosophiae ācrius hausisse, nī prūdentia mātris incēnsum animum coërcuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "memoriā",
+     "teneō",
+     "solitum",
+     "ipsum",
+     "nārrāre",
+     "sē",
+     "studium",
+     "philosophiae",
+     "ācrius",
+     "hausisse",
+     "nī",
+     "prūdentia",
+     "mātris",
+     "incēnsum",
+     "animum",
+     "coërcuisset"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Agricola",
+     "locus": "4"
+    }
+   },
+   {
+    "prompt": "I think that if Plato had only chosen to cultivate forensic eloquence, he might have been a most impressive speaker.",
+    "answer": "Platōnem exīstimō, sī genus forēnse dīcendī trāctāre voluisset, gravissimē potuisse dīcere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Platōnem",
+     "exīstimō",
+     "sī",
+     "genus",
+     "forēnse",
+     "dīcendī",
+     "trāctāre",
+     "voluisset",
+     "gravissimē",
+     "potuisse",
+     "dīcere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 4"
+    }
+   },
+   {
+    "prompt": "Saying they might have risen to the proudest position, if they had only chosen to apply their energies to a political career.",
+    "answer": "cum dīcerent sē potuisse in amplissimum locum pervenīre, sī sua studia ad honōrēs petendōs cōnferre voluissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "dīcerent",
+     "sē",
+     "potuisse",
+     "in",
+     "amplissimum",
+     "locum",
+     "pervenīre",
+     "sī",
+     "sua",
+     "studia",
+     "ad",
+     "honōrēs",
+     "petendōs",
+     "cōnferre",
+     "voluissent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "153"
+    }
+   }
+  ]
  }
 ]

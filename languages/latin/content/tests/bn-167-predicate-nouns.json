@@ -491,5 +491,93 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-167-predicate-nouns-q2",
+  "sectionId": "bn-167-predicate-nouns",
+  "questions": [
+   {
+    "prompt": "From his country house both Curius and the other old men used to be summoned into the Senate; from which those who summoned them were called viatores.",
+    "answer": "Ā vīllā in Senātum arcessēbātur et Curius et cēterī senēs; ex quō, quī eōs arcessēbant viātōrēs nōminātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ā",
+     "vīllā",
+     "in",
+     "Senātum",
+     "arcessēbātur",
+     "et",
+     "Curius",
+     "et",
+     "cēterī",
+     "senēs",
+     "ex",
+     "quō",
+     "quī",
+     "eōs",
+     "arcessēbant",
+     "viātōrēs",
+     "nōminātī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "16.56"
+    }
+   },
+   {
+    "prompt": "Pen is the best professor of rhetoric.",
+    "answer": "stilus optimus dīcendī magister.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "stilus",
+     "optimus",
+     "dīcendī",
+     "magister"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 150"
+    }
+   },
+   {
+    "prompt": "Country life is a teacher of thrift.",
+    "answer": "vīta rūstica parsimōniae magistra est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vīta",
+     "rūstica",
+     "parsimōniae",
+     "magistra",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "75"
+    }
+   },
+   {
+    "prompt": "To say nothing of the great originator of all intellectual pursuits, Athens.",
+    "answer": "ut omittam illās omnium doctrīnārum inventrīcēs Athēnās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "omittam",
+     "illās",
+     "omnium",
+     "doctrīnārum",
+     "inventrīcēs",
+     "Athēnās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 13"
+    }
+   }
+  ]
  }
 ]

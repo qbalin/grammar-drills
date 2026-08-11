@@ -788,5 +788,93 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-115-periphrastic-conjugation-q2",
+  "sectionId": "bn-115-periphrastic-conjugation",
+  "questions": [
+   {
+    "prompt": "What pleasures, then, of banquets or games or harlots are to be compared with these pleasures?",
+    "answer": "Quae sunt igitur epulārum aut lūdōrum aut scortōrum voluptātēs cum hīs voluptātibus comparandae?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "sunt",
+     "igitur",
+     "epulārum",
+     "aut",
+     "lūdōrum",
+     "aut",
+     "scortōrum",
+     "voluptātēs",
+     "cum",
+     "hīs",
+     "voluptātibus",
+     "comparandae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "14.50"
+    }
+   },
+   {
+    "prompt": "The highest safety of the state must not too often be risked on one man.",
+    "answer": "Nōn est saepius in ūnō homine summā salūs perīclitanda reī pūblicae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "est",
+     "saepius",
+     "in",
+     "ūnō",
+     "homine",
+     "summā",
+     "salūs",
+     "perīclitanda",
+     "reī",
+     "pūblicae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.11"
+    }
+   },
+   {
+    "prompt": "With this kind of cavalry are you going to fight.",
+    "answer": "cum hōc equite pugnātūrī estis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "hōc",
+     "equite",
+     "pugnātūrī",
+     "estis"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 40, 10"
+    }
+   },
+   {
+    "prompt": "Whatever is destined to be, will be.",
+    "answer": "fīet illud, quod futūrum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fīet",
+     "illud",
+     "quod",
+     "futūrum",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "2, 21"
+    }
+   }
+  ]
  }
 ]

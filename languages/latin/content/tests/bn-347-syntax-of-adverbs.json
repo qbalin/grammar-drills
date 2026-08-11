@@ -802,5 +802,210 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-q3",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "Africanus had twice been consul.",
+    "answer": "bis cōnsul fuerat P. Āfricānus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bis",
+     "cōnsul",
+     "fuerat",
+     "P",
+     "Āfricānus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "58"
+    }
+   },
+   {
+    "prompt": "He has slept beautifully, he has relished his food.",
+    "answer": "bene quiēvit, libenter cibum sūmpsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bene",
+     "quiēvit",
+     "libenter",
+     "cibum",
+     "sūmpsit"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "3, 16, 4"
+    }
+   },
+   {
+    "prompt": "In relation to their personal interests.",
+    "answer": "dē suīs prīvātim rēbus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dē",
+     "suīs",
+     "prīvātim",
+     "rēbus"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 3, 5"
+    }
+   },
+   {
+    "prompt": "A country man, but every inch a man.",
+    "answer": "rūsticānus vir, sed plānē vir.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rūsticānus",
+     "vir",
+     "sed",
+     "plānē",
+     "vir"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 53"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-q4",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "Heroism and cowardice.",
+    "answer": "rēctē ac turpiter factum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēctē",
+     "ac",
+     "turpiter",
+     "factum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 80, 5"
+    }
+   },
+   {
+    "prompt": "Since my friends have some of them abandoned me, and others again have actually betrayed me.",
+    "answer": "cum amīcī partim dēseruerint mē, partim etiam prōdiderint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "amīcī",
+     "partim",
+     "dēseruerint",
+     "mē",
+     "partim",
+     "etiam",
+     "prōdiderint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1, 3, 5"
+    }
+   },
+   {
+    "prompt": "Finding every thing round about looked pretty safe.",
+    "answer": "postquam satis tūta circā vidēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postquam",
+     "satis",
+     "tūta",
+     "circā",
+     "vidēbantur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 58, 2"
+    }
+   },
+   {
+    "prompt": "My visit did not trouble anybody.",
+    "answer": "nēminī meus adventus labōrī fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nēminī",
+     "meus",
+     "adventus",
+     "labōrī",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-347-syntax-of-adverbs-q5",
+  "sectionId": "bn-347-syntax-of-adverbs",
+  "questions": [
+   {
+    "prompt": "Vorenus did not keep inside the palisade either.",
+    "answer": "nē Vorēnus quidem sēsē vāllō continet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "Vorēnus",
+     "quidem",
+     "sēsē",
+     "vāllō",
+     "continet"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 44, 6"
+    }
+   },
+   {
+    "prompt": "A thing not particularly hard.",
+    "answer": "rem haud sānē difficilem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rem",
+     "haud",
+     "sānē",
+     "difficilem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "4"
+    }
+   },
+   {
+    "prompt": "I must confess.",
+    "answer": "nōn possum nōn cōnfitērī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "possum",
+     "nōn",
+     "cōnfitērī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9, 14, 1"
+    }
+   }
+  ]
  }
 ]

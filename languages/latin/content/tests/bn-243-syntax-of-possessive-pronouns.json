@@ -512,5 +512,80 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-243-syntax-of-possessive-pronouns-q1",
+  "sectionId": "bn-243-syntax-of-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "The Germans led their troops out of the camp.",
+    "answer": "Germānī suās cōpiās castrīs ēdūxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Germānī",
+     "suās",
+     "cōpiās",
+     "castrīs",
+     "ēdūxērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.51"
+    }
+   },
+   {
+    "prompt": "To him who knows not what port he is bound to, no wind is fair.",
+    "answer": "Īgnōrantī quem portum petat nūllus suus ventus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īgnōrantī",
+     "quem",
+     "portum",
+     "petat",
+     "nūllus",
+     "suus",
+     "ventus",
+     "est"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae Morales ad Lucilium",
+     "locus": "71.3"
+    }
+   },
+   {
+    "prompt": "In a letter of yours.",
+    "answer": "in tuā quādam epistolā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "tuā",
+     "quādam",
+     "epistolā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9, 10, 3"
+    }
+   },
+   {
+    "prompt": "With great personal risk.",
+    "answer": "magnō suī cum perīculō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magnō",
+     "suī",
+     "cum",
+     "perīculō"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 28, 2"
+    }
+   }
+  ]
  }
 ]

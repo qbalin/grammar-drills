@@ -607,5 +607,154 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-279-optative-subjunctive-q3",
+  "sectionId": "bn-279-optative-subjunctive",
+  "questions": [
+   {
+    "prompt": "I hope I may see the day.",
+    "answer": "utinam illum diem videam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "utinam",
+     "illum",
+     "diem",
+     "videam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "3, 3"
+    }
+   },
+   {
+    "prompt": "Now Jupiter forefend.",
+    "answer": "nē istūc Iuppiter sīrit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "istūc",
+     "Iuppiter",
+     "sīrit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "28, 28, 11"
+    }
+   },
+   {
+    "prompt": "May I die, if I am not worried.",
+    "answer": "peream, nisi sollicitus sum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "peream",
+     "nisi",
+     "sollicitus",
+     "sum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "15, 19, 4"
+    }
+   },
+   {
+    "prompt": "Your state of health worries me, as I hope to live.",
+    "answer": "sollicitat, ita vīvam, me tua valētūdō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sollicitat",
+     "ita",
+     "vīvam",
+     "me",
+     "tua",
+     "valētūdō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16, 20"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-279-optative-subjunctive-q4",
+  "sectionId": "bn-279-optative-subjunctive",
+  "questions": [
+   {
+    "prompt": "As I hope to be saved, I am making great outlays.",
+    "answer": "ita vīvam, ut maximōs sūmptūs faciō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ita",
+     "vīvam",
+     "ut",
+     "maximōs",
+     "sūmptūs",
+     "faciō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "5, 15, 2"
+    }
+   },
+   {
+    "prompt": "Would that I could be enrolled with you myself, as the third friend.",
+    "answer": "utinam ego tertius vōbīs amīcus adscrīberer.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "utinam",
+     "ego",
+     "tertius",
+     "vōbīs",
+     "amīcus",
+     "adscrīberer"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 63"
+    }
+   },
+   {
+    "prompt": "I wish you had seen me dead first.",
+    "answer": "utinam mē mortuum prius vīdissēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "utinam",
+     "mē",
+     "mortuum",
+     "prius",
+     "vīdissēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1, 3, 1"
+    }
+   },
+   {
+    "prompt": "I only wish the man had marched out all his train-bands with him.",
+    "answer": "utinam ille omnīs sēcum cōpiās ēdūxisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "utinam",
+     "ille",
+     "omnīs",
+     "sēcum",
+     "cōpiās",
+     "ēdūxisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 4"
+    }
+   }
+  ]
  }
 ]

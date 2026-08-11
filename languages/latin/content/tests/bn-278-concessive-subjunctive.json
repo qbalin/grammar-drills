@@ -397,5 +397,68 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-278-concessive-subjunctive-q1",
+  "sectionId": "bn-278-concessive-subjunctive",
+  "questions": [
+   {
+    "prompt": "Suppose he was [so] to others; when did he begin to be to you?",
+    "answer": "Fuerit aliīs; tibi quandō esse coepit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fuerit",
+     "aliīs",
+     "tibi",
+     "quandō",
+     "esse",
+     "coepit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.37"
+    }
+   },
+   {
+    "prompt": "There never was such a one granted.",
+    "answer": "Nēmō is umquam fuit: nē fuerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nēmō",
+     "is",
+     "umquam",
+     "fuit",
+     "nē",
+     "fuerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "101"
+    }
+   },
+   {
+    "prompt": "Grant for aught I care that pain is not the worst evil, an evil it certainly is.",
+    "answer": "nē sit sānē summum malum dolor, malum certē est,.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "sit",
+     "sānē",
+     "summum",
+     "malum",
+     "dolor",
+     "malum",
+     "certē",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 14"
+    }
+   }
+  ]
  }
 ]

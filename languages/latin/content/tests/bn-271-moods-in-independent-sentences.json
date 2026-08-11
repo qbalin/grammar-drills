@@ -815,5 +815,177 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-271-moods-in-independent-sentences-q2",
+  "sectionId": "bn-271-moods-in-independent-sentences",
+  "questions": [
+   {
+    "prompt": "It would be better to pass your days in the midst of howling beasts than to live and move among such brutish men.",
+    "answer": "inter ferās satius est aetātem dēgere quam in hāc tantā immānitāte versārī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "inter",
+     "ferās",
+     "satius",
+     "est",
+     "aetātem",
+     "dēgere",
+     "quam",
+     "in",
+     "hāc",
+     "tantā",
+     "immānitāte",
+     "versārī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "150"
+    }
+   },
+   {
+    "prompt": "For what else could we have done?",
+    "answer": "quid enim facere poterāmus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "enim",
+     "facere",
+     "poterāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Pisonem",
+     "locus": "13"
+    }
+   },
+   {
+    "prompt": "How much better it would have been, for the father’s word not to have been kept.",
+    "answer": "quantō melius fuerat prōmissum patris nōn esse servātum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quantō",
+     "melius",
+     "fuerat",
+     "prōmissum",
+     "patris",
+     "nōn",
+     "esse",
+     "servātum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 94"
+    }
+   },
+   {
+    "prompt": "Because the Rhone runs between the district of the Helvetians and Allobrogans, and the river in some places can be forded is fordable.",
+    "answer": "proptereā quod inter fīnēs Helvētiōrum et Allobrogum Rhodanus fluit isque nōnnūllīs locīs vadō trānsītur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "proptereā",
+     "quod",
+     "inter",
+     "fīnēs",
+     "Helvētiōrum",
+     "et",
+     "Allobrogum",
+     "Rhodanus",
+     "fluit",
+     "isque",
+     "nōnnūllīs",
+     "locīs",
+     "vadō",
+     "trānsītur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 6, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-271-moods-in-independent-sentences-q3",
+  "sectionId": "bn-271-moods-in-independent-sentences",
+  "questions": [
+   {
+    "prompt": "An open flatterer anybody can see through.",
+    "answer": "apertē adūlantem nēmō nōn videt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "apertē",
+     "adūlantem",
+     "nēmō",
+     "nōn",
+     "videt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "99"
+    }
+   },
+   {
+    "prompt": "Real love and pretended love cannot easily be told apart.",
+    "answer": "nōn facile dīiūdicātur amor vērus et fīctus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "facile",
+     "dīiūdicātur",
+     "amor",
+     "vērus",
+     "et",
+     "fīctus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9, 16, 2"
+    }
+   },
+   {
+    "prompt": "We shall have to sow something in an abandoned field.",
+    "answer": "serēmus aliquid in dērelictō solō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "serēmus",
+     "aliquid",
+     "in",
+     "dērelictō",
+     "solō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "16"
+    }
+   },
+   {
+    "prompt": "There was an utter lack of fodder, so that they were fain to feed their horses on leaves.",
+    "answer": "erat summa inopia pābulī, adeō ut foliīs equōs alerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "erat",
+     "summa",
+     "inopia",
+     "pābulī",
+     "adeō",
+     "ut",
+     "foliīs",
+     "equōs",
+     "alerent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 58, 3"
+    }
+   }
+  ]
  }
 ]

@@ -3153,5 +3153,1169 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q18",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "He was not content with the glory.",
+    "answer": "Nōn fuit contentus glōriā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "fuit",
+     "contentus",
+     "glōriā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Domo Sua",
+     "locus": "101"
+    }
+   },
+   {
+    "prompt": "He was informed that Ariovistus’s troops were four and twenty miles away from ours.",
+    "answer": "certior factus est Ariovistī cōpiās ā nostrīs mīlibus passuum quattuor et XX abesse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "certior",
+     "factus",
+     "est",
+     "Ariovistī",
+     "cōpiās",
+     "ā",
+     "nostrīs",
+     "mīlibus",
+     "passuum",
+     "quattuor",
+     "et",
+     "XX",
+     "abesse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 41, 5"
+    }
+   },
+   {
+    "prompt": "Pitching camp fifteen miles away.",
+    "answer": "positīs castrīs ā mīlibus passuum XV.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "positīs",
+     "castrīs",
+     "ā",
+     "mīlibus",
+     "passuum",
+     "XV"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 7, 3"
+    }
+   },
+   {
+    "prompt": "Tell me, do you rate that sort of thing very high yourself?",
+    "answer": "quid? tū ista permagnō aestimās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "tū",
+     "ista",
+     "permagnō",
+     "aestimās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q19",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "What can you do with such a fellow?",
+    "answer": "quid hōc homine faciās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "hōc",
+     "homine",
+     "faciās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "29"
+    }
+   },
+   {
+    "prompt": "She just pined away in sorrow and tears.",
+    "answer": "maerōre et lacrimīs cōnsenēscēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "maerōre",
+     "et",
+     "lacrimīs",
+     "cōnsenēscēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "13"
+    }
+   },
+   {
+    "prompt": "I did not act thus from superciliousness, not I.",
+    "answer": "quod ego nōn superbiā faciēbam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "ego",
+     "nōn",
+     "superbiā",
+     "faciēbam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 99"
+    }
+   },
+   {
+    "prompt": "Be pained by the sin, take pleasure in the reproof.",
+    "answer": "dēlictō dolēre, corrēctiōne gaudēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dēlictō",
+     "dolēre",
+     "corrēctiōne",
+     "gaudēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "90"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q20",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "The army flushed with booty and glory.",
+    "answer": "ferōx praedā glōriāque exercitus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ferōx",
+     "praedā",
+     "glōriāque",
+     "exercitus"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "1, 51"
+    }
+   },
+   {
+    "prompt": "The annihilation of our army by the sword.",
+    "answer": "exercitūs nostrī interitus ferrō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "exercitūs",
+     "nostrī",
+     "interitus",
+     "ferrō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Pisonem",
+     "locus": "40"
+    }
+   },
+   {
+    "prompt": "A good many retreated to the town from fear.",
+    "answer": "multī in oppidum propter timōrem sēsē recipiunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multī",
+     "in",
+     "oppidum",
+     "propter",
+     "timōrem",
+     "sēsē",
+     "recipiunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2, 35, 6"
+    }
+   },
+   {
+    "prompt": "You won’t see the sun for the cloud of javelins.",
+    "answer": "sōlem prae iaculōrum multitūdine nōn vidēbitis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sōlem",
+     "prae",
+     "iaculōrum",
+     "multitūdine",
+     "nōn",
+     "vidēbitis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 101"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q21",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Some stuck by from shame.",
+    "answer": "nōnnūllī pudōre adductī remanēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōnnūllī",
+     "pudōre",
+     "adductī",
+     "remanēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 39, 3"
+    }
+   },
+   {
+    "prompt": "The natives, trusting in the nature of their position, kept their stand in battle array.",
+    "answer": "barbarī cōnfīsī locī nātūrā in aciē permānsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "barbarī",
+     "cōnfīsī",
+     "locī",
+     "nātūrā",
+     "in",
+     "aciē",
+     "permānsērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "8, 15, 1"
+    }
+   },
+   {
+    "prompt": "They marched upon Caesar’s camp with all their forces.",
+    "answer": "ad castra Caesaris omnibus cōpiīs contendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ad",
+     "castra",
+     "Caesaris",
+     "omnibus",
+     "cōpiīs",
+     "contendērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 7, 3"
+    }
+   },
+   {
+    "prompt": "He marches before Ilerda, horse, foot, and dragoons.",
+    "answer": "omnibus cōpiīs ad Ilerdam proficīscitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnibus",
+     "cōpiīs",
+     "ad",
+     "Ilerdam",
+     "proficīscitur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 41, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q22",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Well, this man induced the community to emigrate in a body, bag and baggage.",
+    "answer": "is cīvitātī persuāsit, ut cum omnibus cōpiīs exīrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "is",
+     "cīvitātī",
+     "persuāsit",
+     "ut",
+     "cum",
+     "omnibus",
+     "cōpiīs",
+     "exīrent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 2, 1"
+    }
+   },
+   {
+    "prompt": "In everything that is taught with philosophic method.",
+    "answer": "in omnibus, quae ratiōne docentur et viā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "omnibus",
+     "quae",
+     "ratiōne",
+     "docentur",
+     "et",
+     "viā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "116"
+    }
+   },
+   {
+    "prompt": "The Allobrogans guard their own territory with great care.",
+    "answer": "Allobroges magnā cum cūrā suōs fīnēs tuentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Allobroges",
+     "magnā",
+     "cum",
+     "cūrā",
+     "suōs",
+     "fīnēs",
+     "tuentur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 65, 3"
+    }
+   },
+   {
+    "prompt": "With no enemy hindering, he conducted the legion in safety to the Nantuates.",
+    "answer": "nūllō hoste prohibente incolumem legiōnem in Nantuātīs perdūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūllō",
+     "hoste",
+     "prohibente",
+     "incolumem",
+     "legiōnem",
+     "in",
+     "Nantuātīs",
+     "perdūxit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 6, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q23",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "This answer given he went away.",
+    "answer": "hōc respōnsō datō discessit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hōc",
+     "respōnsō",
+     "datō",
+     "discessit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 14, 7"
+    }
+   },
+   {
+    "prompt": "I aimed at brevity with you as a teacher.",
+    "answer": "brevitātem secūtus sum tē magistrō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "brevitātem",
+     "secūtus",
+     "sum",
+     "tē",
+     "magistrō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "11, 25, 1"
+    }
+   },
+   {
+    "prompt": "In the consulship of Messala and Piso.",
+    "answer": "M. Messālā et M. Pīsōne cōnsulibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "M",
+     "Messālā",
+     "et",
+     "M",
+     "Pīsōne",
+     "cōnsulibus"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 2, 1"
+    }
+   },
+   {
+    "prompt": "In the defendant’s praetorship he came to Syracuse.",
+    "answer": "istō praetōre vēnit Syrācūsās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "istō",
+     "praetōre",
+     "vēnit",
+     "Syrācūsās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 61"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q24",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "He is condemned after pleading his case in person.",
+    "answer": "causā ipse prō sē dictā, damnātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "causā",
+     "ipse",
+     "prō",
+     "sē",
+     "dictā",
+     "damnātur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 44, 10"
+    }
+   },
+   {
+    "prompt": "At the beginning of the third watch he leads the army out.",
+    "answer": "tertiā initā vigiliā exercitum ēdūcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tertiā",
+     "initā",
+     "vigiliā",
+     "exercitum",
+     "ēdūcit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 54, 2"
+    }
+   },
+   {
+    "prompt": "Though the defenders were few, he could not take it by storm.",
+    "answer": "id paucīs dēfendentibus expugnāre nōn potuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "paucīs",
+     "dēfendentibus",
+     "expugnāre",
+     "nōn",
+     "potuit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 12, 2"
+    }
+   },
+   {
+    "prompt": "What pleasure can there be in life, if you take friendships away?",
+    "answer": "quae potest esse vītae iūcunditās sublātīs amīcitiīs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quae",
+     "potest",
+     "esse",
+     "vītae",
+     "iūcunditās",
+     "sublātīs",
+     "amīcitiīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Plancio",
+     "locus": "80"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q25",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "He came home with his head all muffled up.",
+    "answer": "domum vēnit capite obvolūtō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "domum",
+     "vēnit",
+     "capite",
+     "obvolūtō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 77"
+    }
+   },
+   {
+    "prompt": "After listening to these men, he sends them home again.",
+    "answer": "quibus audītīs, eōs domum remittit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quibus",
+     "audītīs",
+     "eōs",
+     "domum",
+     "remittit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 21, 6"
+    }
+   },
+   {
+    "prompt": "The ranks being demoralized from hearing the shouts.",
+    "answer": "exaudītō clāmōre perturbātīs ōrdinibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "exaudītō",
+     "clāmōre",
+     "perturbātīs",
+     "ōrdinibus"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 11, 5"
+    }
+   },
+   {
+    "prompt": "Drawing their swords after expending all their missiles.",
+    "answer": "cōnsūmptīs omnibus tēlīs gladiīs dēstrictīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnsūmptīs",
+     "omnibus",
+     "tēlīs",
+     "gladiīs",
+     "dēstrictīs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 46, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q26",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Sending sappers and miners ahead to clear a way.",
+    "answer": "praemissīs, quī repūrgārent iter.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "praemissīs",
+     "quī",
+     "repūrgārent",
+     "iter"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "44, 4, 11"
+    }
+   },
+   {
+    "prompt": "Telling circumstantially all they had seen.",
+    "answer": "relātīs ōrdine, quae vīdissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "relātīs",
+     "ōrdine",
+     "quae",
+     "vīdissent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "42, 25, 2"
+    }
+   },
+   {
+    "prompt": "Though with some loss, yet with the safety of the army as a whole.",
+    "answer": "etsī aliquō acceptō dētrīmentō, tamen summā exercitūs salvā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "etsī",
+     "aliquō",
+     "acceptō",
+     "dētrīmentō",
+     "tamen",
+     "summā",
+     "exercitūs",
+     "salvā"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 67, 5"
+    }
+   },
+   {
+    "prompt": "To the river Genusus, which had impracticable banks.",
+    "answer": "ad flūmen Genusum, quod rīpīs erat impedītīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ad",
+     "flūmen",
+     "Genusum",
+     "quod",
+     "rīpīs",
+     "erat",
+     "impedītīs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 75, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q27",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "A river hard to cross and with steep banks.",
+    "answer": "difficilī trānsitū flūmen rīpīsque praeruptīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "difficilī",
+     "trānsitū",
+     "flūmen",
+     "rīpīsque",
+     "praeruptīs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 7, 5"
+    }
+   },
+   {
+    "prompt": "Gracchus was done to death, a man with an illustrious father, grandfather, and ancestors in general.",
+    "answer": "interfectus est C. Gracchus, clārissimō patre, avō, maiōribus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "interfectus",
+     "est",
+     "C",
+     "Gracchus",
+     "clārissimō",
+     "patre",
+     "avō",
+     "maiōribus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 4"
+    }
+   },
+   {
+    "prompt": "He has gone off by the Aurelia Road.",
+    "answer": "Aurēliā viā profectus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aurēliā",
+     "viā",
+     "profectus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 6"
+    }
+   },
+   {
+    "prompt": "He kept sending his chariot men out by all possible highways and byways.",
+    "answer": "omnibus viīs sēmitīsque essedāriōs ex silvīs ēmittēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnibus",
+     "viīs",
+     "sēmitīsque",
+     "essedāriōs",
+     "ex",
+     "silvīs",
+     "ēmittēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 19, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q28",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "A wolf that came in town by the Esquiline gate had got out through the Capene gate, almost unscathed.",
+    "answer": "lupus Ēsquilīna portā ingressus per portam Capēnam prope intāctus ēvāserat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lupus",
+     "Ēsquilīna",
+     "portā",
+     "ingressus",
+     "per",
+     "portam",
+     "Capēnam",
+     "prope",
+     "intāctus",
+     "ēvāserat"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "33, 26, 9"
+    }
+   },
+   {
+    "prompt": "They live on milk and meat, and they are clad in skins.",
+    "answer": "lacte et carne vīvunt, pellibusque sunt vestītī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lacte",
+     "et",
+     "carne",
+     "vīvunt",
+     "pellibusque",
+     "sunt",
+     "vestītī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 14, 2"
+    }
+   },
+   {
+    "prompt": "This too is reported to the enemy through the medium of scouts.",
+    "answer": "haec quoque per explōrātōrēs ad hostēs dēferuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "quoque",
+     "per",
+     "explōrātōrēs",
+     "ad",
+     "hostēs",
+     "dēferuntur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 7, 9"
+    }
+   },
+   {
+    "prompt": "It was through me you got Tarentum back.",
+    "answer": "meā operā Tarentum recēpistī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "meā",
+     "operā",
+     "Tarentum",
+     "recēpistī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q29",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Our people made themselves masters of the camp.",
+    "answer": "castrīs nostrī potītī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "castrīs",
+     "nostrī",
+     "potītī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 26, 4"
+    }
+   },
+   {
+    "prompt": "The Helvetians outdo the rest of the Kelts in bravery.",
+    "answer": "Helvētiī reliquōs Gallōs virtūte praecēdunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Helvētiī",
+     "reliquōs",
+     "Gallōs",
+     "virtūte",
+     "praecēdunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 1, 4"
+    }
+   },
+   {
+    "prompt": "Some people are human beings not in reality but in name.",
+    "answer": "sunt quīdam hominēs nōn rē sed nōmine.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sunt",
+     "quīdam",
+     "hominēs",
+     "nōn",
+     "rē",
+     "sed",
+     "nōmine"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 105"
+    }
+   },
+   {
+    "prompt": "One woman a Suebe by birth, the other Noric.",
+    "answer": "ūna Suēba nātiōne, altera Nōrica.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūna",
+     "Suēba",
+     "nātiōne",
+     "altera",
+     "Nōrica"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 53, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q30",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Who can be named that is better versed in the law?",
+    "answer": "quis iūre perītior commemorārī potest?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "iūre",
+     "perītior",
+     "commemorārī",
+     "potest"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "107"
+    }
+   },
+   {
+    "prompt": "The country place is running over with swine, kid, and lamb.",
+    "answer": "vīlla abundat porcō, haedō, āgnō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vīlla",
+     "abundat",
+     "porcō",
+     "haedō",
+     "āgnō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "56"
+    }
+   },
+   {
+    "prompt": "Well, as for him, he has passed away, full of years and full of honours.",
+    "answer": "et ille quidem plēnus annīs abiīt, plēnus honōribus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "et",
+     "ille",
+     "quidem",
+     "plēnus",
+     "annīs",
+     "abiīt",
+     "plēnus",
+     "honōribus"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "2, 1, 7"
+    }
+   },
+   {
+    "prompt": "Because we gauge great men by their merit.",
+    "answer": "quod magnōs hominēs virtūte mētīmur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "magnōs",
+     "hominēs",
+     "virtūte",
+     "mētīmur"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "18, 1, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q31",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Nobody except a conqueror has ever exchanged war for peace.",
+    "answer": "nēmō nisi vīctor pāce bellum mūtāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nēmō",
+     "nisi",
+     "vīctor",
+     "pāce",
+     "bellum",
+     "mūtāvit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "58, 15"
+    }
+   },
+   {
+    "prompt": "That these statues were sold for sixty-five hundred sesterces.",
+    "answer": "haec sīgna sēstertiūm sex mīllibus quīngentīs esse vēndita.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "sīgna",
+     "sēstertiūm",
+     "sex",
+     "mīllibus",
+     "quīngentīs",
+     "esse",
+     "vēndita"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 12"
+    }
+   },
+   {
+    "prompt": "You have said he pays thirty thousand rent.",
+    "answer": "trīgintā mīllibus dīxistis eum habitāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "trīgintā",
+     "mīllibus",
+     "dīxistis",
+     "eum",
+     "habitāre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caelio",
+     "locus": "17"
+    }
+   },
+   {
+    "prompt": "Not a word was heard out of keeping with the grandeur of Rome.",
+    "answer": "nūlla vōx est audīta populī Rōmānī maiestāte indigna.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūlla",
+     "vōx",
+     "est",
+     "audīta",
+     "populī",
+     "Rōmānī",
+     "maiestāte",
+     "indigna"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 17, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-218-instrumental-uses-of-the-ablative-q32",
+  "sectionId": "bn-218-instrumental-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "They make the month longer by a day, or even by two days.",
+    "answer": "ūnō diē longiōrem mēnsem faciunt aut bīduō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnō",
+     "diē",
+     "longiōrem",
+     "mēnsem",
+     "faciunt",
+     "aut",
+     "bīduō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 129"
+    }
+   },
+   {
+    "prompt": "The king had pitched six miles away from Saburra.",
+    "answer": "rēx VI mīlium passuum intervāllō ā Saburrā cōnsēderat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēx",
+     "VI",
+     "mīlium",
+     "passuum",
+     "intervāllō",
+     "ā",
+     "Saburrā",
+     "cōnsēderat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2, 38, 3"
+    }
+   },
+   {
+    "prompt": "The greater the sin is, the slower is the punishment.",
+    "answer": "quō dēlictum maius est, eō poena est tardior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quō",
+     "dēlictum",
+     "maius",
+     "est",
+     "eō",
+     "poena",
+     "est",
+     "tardior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caecina",
+     "locus": "7"
+    }
+   },
+   {
+    "prompt": "The more numerous we are, the more things we shall need.",
+    "answer": "quō plūrēs sumus, plūribus rēbus egēbimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quō",
+     "plūrēs",
+     "sumus",
+     "plūribus",
+     "rēbus",
+     "egēbimus"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "34, 34, 6"
+    }
+   }
+  ]
  }
 ]

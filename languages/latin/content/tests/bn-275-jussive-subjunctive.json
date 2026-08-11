@@ -399,5 +399,83 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-275-jussive-subjunctive-q2",
+  "sectionId": "bn-275-jussive-subjunctive",
+  "questions": [
+   {
+    "prompt": "Let no man hinder them from going away.",
+    "answer": "morātus sit nēmō quō minus abeant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "morātus",
+     "sit",
+     "nēmō",
+     "quō",
+     "minus",
+     "abeant"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "9, 11, 13"
+    }
+   },
+   {
+    "prompt": "You must be careful, dear Tiro.",
+    "answer": "cautus sīs, mī Tirō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cautus",
+     "sīs",
+     "mī",
+     "Tirō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16, 9, 4"
+    }
+   },
+   {
+    "prompt": "Enjoy this blessing while you have it with you.",
+    "answer": "istō bonō ūtāre, dum adsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "istō",
+     "bonō",
+     "ūtāre",
+     "dum",
+     "adsit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "33"
+    }
+   },
+   {
+    "prompt": "Well, if they did gloat over my mishaps, still they ought to have been touched by the danger to Rome.",
+    "answer": "quod sī meīs incommodīs laetābantur, urbis tamen perīculō commovērentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "sī",
+     "meīs",
+     "incommodīs",
+     "laetābantur",
+     "urbis",
+     "tamen",
+     "perīculō",
+     "commovērentur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "54"
+    }
+   }
+  ]
  }
 ]

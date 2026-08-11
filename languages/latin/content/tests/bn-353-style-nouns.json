@@ -753,5 +753,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-353-style-nouns-q1",
+  "sectionId": "bn-353-style-nouns",
+  "questions": [
+   {
+    "prompt": "The two Metelluses, Celer and Nepos.",
+    "answer": "duo Metellī, Celer et Nepōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "duo",
+     "Metellī",
+     "Celer",
+     "et",
+     "Nepōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "247"
+    }
+   },
+   {
+    "prompt": "There are cases of heroism in civil life fully equal to those in war.",
+    "answer": "sunt domesticae fortitūdinēs nōn īnferiōrēs mīlitāribus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sunt",
+     "domesticae",
+     "fortitūdinēs",
+     "nōn",
+     "īnferiōrēs",
+     "mīlitāribus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 78"
+    }
+   },
+   {
+    "prompt": "You are tormented by pricks of conscience for your sins.",
+    "answer": "tē cōnscientiae stimulant maleficiōrum tuōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tē",
+     "cōnscientiae",
+     "stimulant",
+     "maleficiōrum",
+     "tuōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "18"
+    }
+   },
+   {
+    "prompt": "After the victory in the war with the Persians.",
+    "answer": "post vīctōriam eius bellī, quod cum Persīs fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "post",
+     "vīctōriam",
+     "eius",
+     "bellī",
+     "quod",
+     "cum",
+     "Persīs",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 49"
+    }
+   }
+  ]
  }
 ]

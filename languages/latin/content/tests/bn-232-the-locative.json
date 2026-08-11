@@ -705,5 +705,76 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-232-the-locative-q3",
+  "sectionId": "bn-232-the-locative",
+  "questions": [
+   {
+    "prompt": "I sent forward the cavalry by a shorter road.",
+    "answer": "Viā breviōre equitēs praemīsī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Viā",
+     "breviōre",
+     "equitēs",
+     "praemīsī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "10.9"
+    }
+   },
+   {
+    "prompt": "As for that, I have it myself.",
+    "answer": "id quidem domī est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "quidem",
+     "domī",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10, 14, 2"
+    }
+   },
+   {
+    "prompt": "The grandest monument in the wide wide world.",
+    "answer": "amplissimum orbī terrārum monumentum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "amplissimum",
+     "orbī",
+     "terrārum",
+     "monumentum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 82"
+    }
+   },
+   {
+    "prompt": "In Athens the air is thin, at Thebes it is thick.",
+    "answer": "Athēnīs tenue caelum, crassum Thēbīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Athēnīs",
+     "tenue",
+     "caelum",
+     "crassum",
+     "Thēbīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Fato",
+     "locus": "7"
+    }
+   }
+  ]
  }
 ]

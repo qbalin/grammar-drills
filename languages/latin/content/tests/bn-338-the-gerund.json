@@ -1408,5 +1408,798 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-338-the-gerund-q5",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "Owing to bad business-managing they are staggering under debts.",
+    "answer": "male gerendō negōtiō in aere aliēnō vacillant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "male",
+     "gerendō",
+     "negōtiō",
+     "in",
+     "aere",
+     "aliēnō",
+     "vacillant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 21"
+    }
+   },
+   {
+    "prompt": "’tis no time for shill-I-shall-I-ing.",
+    "answer": "nōn est locus ad tergiversandum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "est",
+     "locus",
+     "ad",
+     "tergiversandum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "7, 1, 4"
+    }
+   },
+   {
+    "prompt": "For the sake of doing or learning something.",
+    "answer": "agendī aliquid discendīque causā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "agendī",
+     "aliquid",
+     "discendīque",
+     "causā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "5, 54"
+    }
+   },
+   {
+    "prompt": "The true ground for doing or not doing a thing.",
+    "answer": "faciendī aliquid vel nōn faciendī vēra ratiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "faciendī",
+     "aliquid",
+     "vel",
+     "nōn",
+     "faciendī",
+     "vēra",
+     "ratiō"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "6, 27, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q6",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "That he passed along the art of distinguishing between the true and the false.",
+    "answer": "artem sē trādere vēra ac falsa dīiūdicandī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "artem",
+     "sē",
+     "trādere",
+     "vēra",
+     "ac",
+     "falsa",
+     "dīiūdicandī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 157"
+    }
+   },
+   {
+    "prompt": "He is come to Hannibal to sue for peace.",
+    "answer": "ad pācem petendam ad Hannibalem vēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ad",
+     "pācem",
+     "petendam",
+     "ad",
+     "Hannibalem",
+     "vēnit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 13, 1"
+    }
+   },
+   {
+    "prompt": "Orgetorix is chosen to do this.",
+    "answer": "ad eās rēs cōnficiendās Orgetorīx dēligitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ad",
+     "eās",
+     "rēs",
+     "cōnficiendās",
+     "Orgetorīx",
+     "dēligitur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 3, 3"
+    }
+   },
+   {
+    "prompt": "They devote themselves to playing.",
+    "answer": "dant sē ad lūdendum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dant",
+     "sē",
+     "ad",
+     "lūdendum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "5, 42"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q7",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "A morass hindered the Romans from pursuit.",
+    "answer": "palūs Rōmānōs ad īnsequendum tardābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "palūs",
+     "Rōmānōs",
+     "ad",
+     "īnsequendum",
+     "tardābat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 26, 2"
+    }
+   },
+   {
+    "prompt": "So that the infantry were hampered in crossing.",
+    "answer": "ut peditēs ad trānseundum impedīrentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "peditēs",
+     "ad",
+     "trānseundum",
+     "impedīrentur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 62, 2"
+    }
+   },
+   {
+    "prompt": "Let us take time for thought.",
+    "answer": "spatium sūmāmus ad cōgitandum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "spatium",
+     "sūmāmus",
+     "ad",
+     "cōgitandum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "4, 1"
+    }
+   },
+   {
+    "prompt": "A man not very well fitted to be a joker.",
+    "answer": "homo nōn aptissimus ad iocandum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "homo",
+     "nōn",
+     "aptissimus",
+     "ad",
+     "iocandum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 46"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q8",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "He made use of the sort of food which was easiest to digest.",
+    "answer": "ūtēbātur eō cibō quī esset facillimus ad concoquendum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūtēbātur",
+     "eō",
+     "cibō",
+     "quī",
+     "esset",
+     "facillimus",
+     "ad",
+     "concoquendum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 64"
+    }
+   },
+   {
+    "prompt": "Character discovers itself during play.",
+    "answer": "mōrēs sē inter lūdendum dētegunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mōrēs",
+     "sē",
+     "inter",
+     "lūdendum",
+     "dētegunt"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "1, 3, 12"
+    }
+   },
+   {
+    "prompt": "To take money for passing judgement on a case.",
+    "answer": "ob rem iūdicandam pecūniam accipere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ob",
+     "rem",
+     "iūdicandam",
+     "pecūniam",
+     "accipere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 78"
+    }
+   },
+   {
+    "prompt": "That this was the day set for attacking the winter quarters.",
+    "answer": "hībernīs oppugnandīs hunc esse dictum diem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hībernīs",
+     "oppugnandīs",
+     "hunc",
+     "esse",
+     "dictum",
+     "diem"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 27, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q9",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "The consul devotes himself to propitiating the gods and raising troops.",
+    "answer": "cōnsul plācandīs dīs habendōque dīlēctū dat operam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnsul",
+     "plācandīs",
+     "dīs",
+     "habendōque",
+     "dīlēctū",
+     "dat",
+     "operam"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22, 2, 1"
+    }
+   },
+   {
+    "prompt": "He withdraws a legion from the field to build a camp.",
+    "answer": "subdūcit ex aciē legiōnem faciendīs castrīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "subdūcit",
+     "ex",
+     "aciē",
+     "legiōnem",
+     "faciendīs",
+     "castrīs"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "2, 21"
+    }
+   },
+   {
+    "prompt": "You were neither solvent.",
+    "answer": "tū nec solvendō erās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "nec",
+     "solvendō",
+     "erās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 4"
+    }
+   },
+   {
+    "prompt": "He gave the signal for beginning the battle.",
+    "answer": "proeliī committendī sīgnum dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "proeliī",
+     "committendī",
+     "sīgnum",
+     "dedit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 21, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q10",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "Their downfall was a warning to the Marsians to send envoys to sue for peace.",
+    "answer": "exemplō eōrum clādēs fuit ut Mārsī mitterent ōrātōrēs pācis petendae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "exemplō",
+     "eōrum",
+     "clādēs",
+     "fuit",
+     "ut",
+     "Mārsī",
+     "mitterent",
+     "ōrātōrēs",
+     "pācis",
+     "petendae"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "9, 45, 18"
+    }
+   },
+   {
+    "prompt": "Or if vessels for breaking down the works had been sent.",
+    "answer": "sīve nāvēs dēiciendī operis essent missae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sīve",
+     "nāvēs",
+     "dēiciendī",
+     "operis",
+     "essent",
+     "missae"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 17, 10"
+    }
+   },
+   {
+    "prompt": "He stood out against the worst sooner than betray his confederates in the overthrow of the tyranny.",
+    "answer": "perpessus est omnia potius quam cōnsciōs dēlendae tyrannidis indicāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "perpessus",
+     "est",
+     "omnia",
+     "potius",
+     "quam",
+     "cōnsciōs",
+     "dēlendae",
+     "tyrannidis",
+     "indicāret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 52"
+    }
+   },
+   {
+    "prompt": "He gave the signal to pack their things.",
+    "answer": "sīgnum colligendī vāsa dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sīgnum",
+     "colligendī",
+     "vāsa",
+     "dedit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "24, 16, 14"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q11",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "They fled, not so much to protect themselves as to crush your plans.",
+    "answer": "nōn tam suī cōnservandī quam tuōrum cōnsiliōrum reprimendōrum causā profūgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "tam",
+     "suī",
+     "cōnservandī",
+     "quam",
+     "tuōrum",
+     "cōnsiliōrum",
+     "reprimendōrum",
+     "causā",
+     "profūgērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 7"
+    }
+   },
+   {
+    "prompt": "That the time was come for them to revenge themselves.",
+    "answer": "vēnisse tempus ulcīscendī suī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vēnisse",
+     "tempus",
+     "ulcīscendī",
+     "suī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "28"
+    }
+   },
+   {
+    "prompt": "The authority of the king, which had originally served to uphold freedom.",
+    "answer": "rēgium imperium, quod initiō cōnservandae libertātis fuerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēgium",
+     "imperium",
+     "quod",
+     "initiō",
+     "cōnservandae",
+     "libertātis",
+     "fuerat"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "6, 7"
+    }
+   },
+   {
+    "prompt": "The rest of the contents of the Twelve Tables are conducive to the abating of extravagance and keening at funerals.",
+    "answer": "cētera in XII minuendī sūmptūs sunt lāmentātiōnisque fūnebris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cētera",
+     "in",
+     "XII",
+     "minuendī",
+     "sūmptūs",
+     "sunt",
+     "lāmentātiōnisque",
+     "fūnebris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "2, 59"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q12",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "He ordered one into irons, more to vindicate his authority than because an individual was to blame.",
+    "answer": "ūnum vincīrī iubet, magis ūsurpandī iūris quam quia ūnīus culpa foret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnum",
+     "vincīrī",
+     "iubet",
+     "magis",
+     "ūsurpandī",
+     "iūris",
+     "quam",
+     "quia",
+     "ūnīus",
+     "culpa",
+     "foret"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "4, 25"
+    }
+   },
+   {
+    "prompt": "It cannot be crushed by patience and procrastination.",
+    "answer": "opprimī sustentandō ac prōlātandō nūllō pactō potest.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "opprimī",
+     "sustentandō",
+     "ac",
+     "prōlātandō",
+     "nūllō",
+     "pactō",
+     "potest"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 6"
+    }
+   },
+   {
+    "prompt": "That they were no longer satisfied with the occupation of the public lands.",
+    "answer": "nec iam possidendīs pūblicīs agrīs contentōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nec",
+     "iam",
+     "possidendīs",
+     "pūblicīs",
+     "agrīs",
+     "contentōs",
+     "esse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 14, 11"
+    }
+   },
+   {
+    "prompt": "When they had applauded on the reading of my name.",
+    "answer": "cum plausum meō nōmine recitandō dedissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "plausum",
+     "meō",
+     "nōmine",
+     "recitandō",
+     "dedissent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "4, 1, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q13",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "At the distribution, the district fell to him.",
+    "answer": "partibus dīvidendīs ipsī regiō ēvēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "partibus",
+     "dīvidendīs",
+     "ipsī",
+     "regiō",
+     "ēvēnit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "25, 30, 6"
+    }
+   },
+   {
+    "prompt": "In his use of Latin he was a match for anybody.",
+    "answer": "Latīnē loquendō cuivīs erat pār.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Latīnē",
+     "loquendō",
+     "cuivīs",
+     "erat",
+     "pār"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "128"
+    }
+   },
+   {
+    "prompt": "He never had any time free from writing or from thinking.",
+    "answer": "nūllum tempus illī umquam vacābat aut ā scrībendō aut ā cōgitandō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūllum",
+     "tempus",
+     "illī",
+     "umquam",
+     "vacābat",
+     "aut",
+     "ā",
+     "scrībendō",
+     "aut",
+     "ā",
+     "cōgitandō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "272"
+    }
+   },
+   {
+    "prompt": "A word which is derived from ‘looking too closely at’ another’s prosperity.",
+    "answer": "quod verbum ductum est ā nimis intuendō fortūnam alterīus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "verbum",
+     "ductum",
+     "est",
+     "ā",
+     "nimis",
+     "intuendō",
+     "fortūnam",
+     "alterīus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "3, 20"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q14",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
+   {
+    "prompt": "They give no instruction about studying up a case.",
+    "answer": "nihil dē causā discendā praecipiunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "dē",
+     "causā",
+     "discendā",
+     "praecipiunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 100"
+    }
+   },
+   {
+    "prompt": "Africanus’s swiftness in execution.",
+    "answer": "Āfricānī in rē gerundā celeritātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Āfricānī",
+     "in",
+     "rē",
+     "gerundā",
+     "celeritātem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 25"
+    }
+   },
+   {
+    "prompt": "A virtue which from ‘foreseeing’ is called foresight.",
+    "answer": "quae virtūs ex prōvidendō est appellāta prūdentia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quae",
+     "virtūs",
+     "ex",
+     "prōvidendō",
+     "est",
+     "appellāta",
+     "prūdentia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "1, 60"
+    }
+   },
+   {
+    "prompt": "No obligation is more binding than the returning of a favour.",
+    "answer": "nūllum officium referendā grātiā magis necessārium est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūllum",
+     "officium",
+     "referendā",
+     "grātiā",
+     "magis",
+     "necessārium",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 47"
+    }
+   }
+  ]
  }
 ]

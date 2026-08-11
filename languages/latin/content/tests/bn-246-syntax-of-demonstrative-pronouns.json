@@ -1248,5 +1248,1524 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q3",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Such is the far-famed fight at Trasumene.",
+    "answer": "haec est nōbilis ad Trāsumennum pūgna.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "est",
+     "nōbilis",
+     "ad",
+     "Trāsumennum",
+     "pūgna"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22, 7, 1"
+    }
+   },
+   {
+    "prompt": "Now that I call an outrage.",
+    "answer": "ista quidem vīs est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ista",
+     "quidem",
+     "vīs",
+     "est"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "De Vita Caesarum",
+     "locus": "82"
+    }
+   },
+   {
+    "prompt": "By fear of this he stopped the prowling round.",
+    "answer": "hōc metū vagārī prohibēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hōc",
+     "metū",
+     "vagārī",
+     "prohibēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 19, 2"
+    }
+   },
+   {
+    "prompt": "The panic occasioned by this demoralized the Romans.",
+    "answer": "is pavor perculit Rōmānōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "is",
+     "pavor",
+     "perculit",
+     "Rōmānōs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 46, 7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q4",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Gaul is divided into three parts, one of which is occupied by Belgians, another by Aquitanians, and the third by Kelts. In language, customs, and laws these are all different from each other.",
+    "answer": "Gallia est dīvīsa in partēs trēs, quārum ūnam incolunt Belgae, aliam Aquītānī, tertiam Celtae. hī omnēs linguā, īnstitūtīs, lēgibus inter sē differunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallia",
+     "est",
+     "dīvīsa",
+     "in",
+     "partēs",
+     "trēs",
+     "quārum",
+     "ūnam",
+     "incolunt",
+     "Belgae",
+     "aliam",
+     "Aquītānī",
+     "tertiam",
+     "Celtae",
+     "hī",
+     "omnēs",
+     "linguā",
+     "īnstitūtīs",
+     "lēgibus",
+     "inter",
+     "sē",
+     "differunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 1, 1"
+    }
+   },
+   {
+    "prompt": "Among the Helvetians the man of highest rank was Orgetorix. In the consulship of Messala and Piso he got up a conspiracy among the nobles.",
+    "answer": "apud Helvētiōs nōbilissimus fuit Orgetorīx. is M. Messālā et M. Pīsōne cōnsulibus coniūrātiōnem nōbilitātis fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "apud",
+     "Helvētiōs",
+     "nōbilissimus",
+     "fuit",
+     "Orgetorīx",
+     "is",
+     "M",
+     "Messālā",
+     "et",
+     "M",
+     "Pīsōne",
+     "cōnsulibus",
+     "coniūrātiōnem",
+     "nōbilitātis",
+     "fēcit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 2, 1"
+    }
+   },
+   {
+    "prompt": "After his expulsion from Syracuse, the tyrant Dionysius kept school at Corinth; so incapable was he of getting along without governing.",
+    "answer": "Dionȳsius tyrannus Syrācūsīs expulsus Corinthī puerōs docēbat; usque eō imperiō carēre nōn poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dionȳsius",
+     "tyrannus",
+     "Syrācūsīs",
+     "expulsus",
+     "Corinthī",
+     "puerōs",
+     "docēbat",
+     "usque",
+     "eō",
+     "imperiō",
+     "carēre",
+     "nōn",
+     "poterat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "3, 27"
+    }
+   },
+   {
+    "prompt": "I did not think that in this discourse I should get down to the present generation.",
+    "answer": "nōn mē exīstimāvī in hōc sermōne usque ad hanc aetātem esse ventūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "mē",
+     "exīstimāvī",
+     "in",
+     "hōc",
+     "sermōne",
+     "usque",
+     "ad",
+     "hanc",
+     "aetātem",
+     "esse",
+     "ventūrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "232"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q5",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "All the rest of this year.",
+    "answer": "reliquum omne tempus huius annī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "reliquum",
+     "omne",
+     "tempus",
+     "huius",
+     "annī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 30"
+    }
+   },
+   {
+    "prompt": "Receive these arms and this soldier in thy gracious stream.",
+    "answer": "haec arma et hunc mīlitem propitiō flūmine accipiās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "arma",
+     "et",
+     "hunc",
+     "mīlitem",
+     "propitiō",
+     "flūmine",
+     "accipiās"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 10, 11"
+    }
+   },
+   {
+    "prompt": "The realm which you have long sought to lay in ruins.",
+    "answer": "haec, quae iam prīdem vastāre studēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "quae",
+     "iam",
+     "prīdem",
+     "vastāre",
+     "studēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 21"
+    }
+   },
+   {
+    "prompt": "Who have tried to destroy the state.",
+    "answer": "quī haec dēlēre cōnātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quī",
+     "haec",
+     "dēlēre",
+     "cōnātī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q6",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "There lives no slave that wills not our country should abide.",
+    "answer": "servus est nēmō quī nōn haec stāre cupiat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "servus",
+     "est",
+     "nēmō",
+     "quī",
+     "nōn",
+     "haec",
+     "stāre",
+     "cupiat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 16"
+    }
+   },
+   {
+    "prompt": "He sent him some presents—pretty liberal ones, commonish things for household use.",
+    "answer": "mittit hominī mūnera satis largē, haec ad ūsum domesticum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mittit",
+     "hominī",
+     "mūnera",
+     "satis",
+     "largē",
+     "haec",
+     "ad",
+     "ūsum",
+     "domesticum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 62"
+    }
+   },
+   {
+    "prompt": "I’ll skip your everyday common occupations—such as cooks, bakers, &c., &c.",
+    "answer": "mittō hāsce artīs volgārīs, coquōs, pistōrēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mittō",
+     "hāsce",
+     "artīs",
+     "volgārīs",
+     "coquōs",
+     "pistōrēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "134"
+    }
+   },
+   {
+    "prompt": "This was what I had to say on Old Age.",
+    "answer": "haec habuī dē senectūte quae dīcerem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "habuī",
+     "dē",
+     "senectūte",
+     "quae",
+     "dīcerem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "85"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q7",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "So much for this; let us now go on to portents.",
+    "answer": "sed haec hāctenus; nunc ad ostenta veniāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sed",
+     "haec",
+     "hāctenus",
+     "nunc",
+     "ad",
+     "ostenta",
+     "veniāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "2, 53"
+    }
+   },
+   {
+    "prompt": "He made peace on the following terms.",
+    "answer": "fēcit pācem hīs condiciōnibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fēcit",
+     "pācem",
+     "hīs",
+     "condiciōnibus"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "8, 3, 1"
+    }
+   },
+   {
+    "prompt": "It is said that he spoke to somewhat the following effect.",
+    "answer": "dīcitur locūtus in hanc ferē sententiam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīcitur",
+     "locūtus",
+     "in",
+     "hanc",
+     "ferē",
+     "sententiam",
+     "esse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "6, 40, 2"
+    }
+   },
+   {
+    "prompt": "Scipio had asked me what I thought about this, that it was generally agreed that two suns had been seen.",
+    "answer": "quaesierat ex mē Scīpiō quidnam sentīrem dē hōc quod duo sōlēs vīsōs esse cōnstāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quaesierat",
+     "ex",
+     "mē",
+     "Scīpiō",
+     "quidnam",
+     "sentīrem",
+     "dē",
+     "hōc",
+     "quod",
+     "duo",
+     "sōlēs",
+     "vīsōs",
+     "esse",
+     "cōnstāret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 19"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q8",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "That is white, this is sweet, that sonorous, this fragrant, this rough.",
+    "answer": "illud est album, hoc dulce, canōrum illud, hoc bene olēns, hoc asperum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illud",
+     "est",
+     "album",
+     "hoc",
+     "dulce",
+     "canōrum",
+     "illud",
+     "hoc",
+     "bene",
+     "olēns",
+     "hoc",
+     "asperum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Academica",
+     "locus": "2, 21"
+    }
+   },
+   {
+    "prompt": "An orator, not of the common sort, but the superior one of whom we are speaking.",
+    "answer": "ōrātor, nōn ille volgāris sed hīc excellēns.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ōrātor",
+     "nōn",
+     "ille",
+     "volgāris",
+     "sed",
+     "hīc",
+     "excellēns"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "45"
+    }
+   },
+   {
+    "prompt": "But this is all ancient history; here, however, is something new, that Caesar was killed at my suggestion.",
+    "answer": "sed haec vetera; illud vērō recēns, Caesarem meō cōnsiliō interfectum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sed",
+     "haec",
+     "vetera",
+     "illud",
+     "vērō",
+     "recēns",
+     "Caesarem",
+     "meō",
+     "cōnsiliō",
+     "interfectum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 25"
+    }
+   },
+   {
+    "prompt": "Suffer not Cato to find a rival even in your man himself, whom, as you say, Apollo declared wisest of mankind; for our Cato is renowned for deeds, the other for doctrines.",
+    "answer": "cavē Catōnī antepōnās nē istum quidem ipsum quem Apollō, ut ais, sapientissimum iūdicāvit: huius enim facta, illīus dicta laudantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cavē",
+     "Catōnī",
+     "antepōnās",
+     "nē",
+     "istum",
+     "quidem",
+     "ipsum",
+     "quem",
+     "Apollō",
+     "ut",
+     "ais",
+     "sapientissimum",
+     "iūdicāvit",
+     "huius",
+     "enim",
+     "facta",
+     "illīus",
+     "dicta",
+     "laudantur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q9",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Many of the trees you see there were planted by my own hand.",
+    "answer": "multae istārum arborum meā manū sunt satae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multae",
+     "istārum",
+     "arborum",
+     "meā",
+     "manū",
+     "sunt",
+     "satae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "59"
+    }
+   },
+   {
+    "prompt": "The sage of whom I speak will look with the same eyes as the sage you boast of.",
+    "answer": "īsdem hīc sapiēns dē quō loquor oculīs quibus iste vester intuēbitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "īsdem",
+     "hīc",
+     "sapiēns",
+     "dē",
+     "quō",
+     "loquor",
+     "oculīs",
+     "quibus",
+     "iste",
+     "vester",
+     "intuēbitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Academica",
+     "locus": "2, 105"
+    }
+   },
+   {
+    "prompt": "You with that gullet of yours, those swollen flanks, that prizefighter’s bulky make-up.",
+    "answer": "tū istīs faucibus, istīs lateribus, istā gladiātōriā tōtīus corporis firmitāte.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "istīs",
+     "faucibus",
+     "istīs",
+     "lateribus",
+     "istā",
+     "gladiātōriā",
+     "tōtīus",
+     "corporis",
+     "firmitāte"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 63"
+    }
+   },
+   {
+    "prompt": "The Roman people miss nothing so much as the ancient vigour and firmness attaching to public trials.",
+    "answer": "populus Rōmānus nihil aequē atque illam veterem iūdiciōrum vim gravitātemque requīrit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "populus",
+     "Rōmānus",
+     "nihil",
+     "aequē",
+     "atque",
+     "illam",
+     "veterem",
+     "iūdiciōrum",
+     "vim",
+     "gravitātemque",
+     "requīrit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Divinatio in Caecilium",
+     "locus": "8"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q10",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "But on these topics yonder sun has warned me to be pretty brief.",
+    "answer": "hīs autem dē rēbus sōl mē ille admonuit ut brevior essem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hīs",
+     "autem",
+     "dē",
+     "rēbus",
+     "sōl",
+     "mē",
+     "ille",
+     "admonuit",
+     "ut",
+     "brevior",
+     "essem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "3, 209"
+    }
+   },
+   {
+    "prompt": "This is the famous Demosthenes.",
+    "answer": "hīc est ille Dēmosthenēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hīc",
+     "est",
+     "ille",
+     "Dēmosthenēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 103"
+    }
+   },
+   {
+    "prompt": "He gave orders to admit the young man. But this other, the moment he entered, drew his sword.",
+    "answer": "ad sē adulēscentem iussit venīre. at ille, ut ingressus est, cōnfestim gladium dēstrīnxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ad",
+     "sē",
+     "adulēscentem",
+     "iussit",
+     "venīre",
+     "at",
+     "ille",
+     "ut",
+     "ingressus",
+     "est",
+     "cōnfestim",
+     "gladium",
+     "dēstrīnxit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 112"
+    }
+   },
+   {
+    "prompt": "Books rashly written by men respectable enough but of insufficient education.",
+    "answer": "librī scrīptī incōnsīderātē ab optimīs illīs quidem virīs, sed nōn satis ērudītīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "librī",
+     "scrīptī",
+     "incōnsīderātē",
+     "ab",
+     "optimīs",
+     "illīs",
+     "quidem",
+     "virīs",
+     "sed",
+     "nōn",
+     "satis",
+     "ērudītīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q11",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "It is a powerful remedy, though slow in its working.",
+    "answer": "est tarda illa medicīna, sed tamen magna.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "est",
+     "tarda",
+     "illa",
+     "medicīna",
+     "sed",
+     "tamen",
+     "magna"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "3, 35"
+    }
+   },
+   {
+    "prompt": "He solicits the king and begs him at considerable length to send it to him.",
+    "answer": "petit ā rēge et eum plūribus verbīs rogat ut id ad sē mittat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "petit",
+     "ā",
+     "rēge",
+     "et",
+     "eum",
+     "plūribus",
+     "verbīs",
+     "rogat",
+     "ut",
+     "id",
+     "ad",
+     "sē",
+     "mittat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 64"
+    }
+   },
+   {
+    "prompt": "I knew the fellow was worthless and frivolous.",
+    "answer": "nēquam esse hominem et levem sciēbam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nēquam",
+     "esse",
+     "hominem",
+     "et",
+     "levem",
+     "sciēbam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "22"
+    }
+   },
+   {
+    "prompt": "His whole speech turned on the contention that the written word should be paramount.",
+    "answer": "eius omnis ōrātiō versāta est in eō, ut scrīptum plūrimum valēre oportēre dēfenderet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eius",
+     "omnis",
+     "ōrātiō",
+     "versāta",
+     "est",
+     "in",
+     "eō",
+     "ut",
+     "scrīptum",
+     "plūrimum",
+     "valēre",
+     "oportēre",
+     "dēfenderet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 244"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q12",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Imprisonment and that too perpetual.",
+    "answer": "vincula et ea sempiterna.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vincula",
+     "et",
+     "ea",
+     "sempiterna"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 7"
+    }
+   },
+   {
+    "prompt": "After a year’s study under Cratippus, and that too in Athens.",
+    "answer": "annum iam audientem Cratippum idque Athēnīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "annum",
+     "iam",
+     "audientem",
+     "Cratippum",
+     "idque",
+     "Athēnīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 1"
+    }
+   },
+   {
+    "prompt": "He was a man of very deep reading and that of no common sort either.",
+    "answer": "erant in eō plūrimae litterae nec eae volgārēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "erant",
+     "in",
+     "eō",
+     "plūrimae",
+     "litterae",
+     "nec",
+     "eae",
+     "volgārēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "265"
+    }
+   },
+   {
+    "prompt": "One of the number that were ready to do murder.",
+    "answer": "ūnus ex eō numerō quī ad caedem parātī erant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnus",
+     "ex",
+     "eō",
+     "numerō",
+     "quī",
+     "ad",
+     "caedem",
+     "parātī",
+     "erant"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "35, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q13",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Seeing that even Alienus is to suppress some part of that eloquence, if any he may have.",
+    "answer": "cum ipse Aliēnus ex eā facultāte, sī quam habet, aliquantum dētrāctūrus sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "ipse",
+     "Aliēnus",
+     "ex",
+     "eā",
+     "facultāte",
+     "sī",
+     "quam",
+     "habet",
+     "aliquantum",
+     "dētrāctūrus",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Divinatio in Caecilium",
+     "locus": "49"
+    }
+   },
+   {
+    "prompt": "He confined his troops to camp and forbade the kindling of fires, in order to keep his coming a greater secret.",
+    "answer": "suōs omnēs castrīs continuit ignēsque fierī prohibuit, quō occultior esset eius adventus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "suōs",
+     "omnēs",
+     "castrīs",
+     "continuit",
+     "ignēsque",
+     "fierī",
+     "prohibuit",
+     "quō",
+     "occultior",
+     "esset",
+     "eius",
+     "adventus"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 30, 5"
+    }
+   },
+   {
+    "prompt": "He made use of such food as was both very dainty and likewise very easy to digest.",
+    "answer": "ūtēbātur eō cibō quī et suāvissimus esset et īdem facillimus ad concoquendum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūtēbātur",
+     "eō",
+     "cibō",
+     "quī",
+     "et",
+     "suāvissimus",
+     "esset",
+     "et",
+     "īdem",
+     "facillimus",
+     "ad",
+     "concoquendum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 64"
+    }
+   },
+   {
+    "prompt": "So it will be found that not all who speak Attic are also good speakers.",
+    "answer": "ita fīet ut nōn omnēs quī Atticē, eīdem bene dīcant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ita",
+     "fīet",
+     "ut",
+     "nōn",
+     "omnēs",
+     "quī",
+     "Atticē",
+     "eīdem",
+     "bene",
+     "dīcant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "291"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q14",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Many who have met heroically and endured wounds, to preserve their rights and their freedom, are nevertheless, when no contest is involved, unable to bear the pain of a disease.",
+    "answer": "multī quī ut iūs suum et lībertātem tenērent volnera excēpērunt fortiter et tulērunt, īdem omissā contentiōne dolōrem morbī ferre nōn possunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multī",
+     "quī",
+     "ut",
+     "iūs",
+     "suum",
+     "et",
+     "lībertātem",
+     "tenērent",
+     "volnera",
+     "excēpērunt",
+     "fortiter",
+     "et",
+     "tulērunt",
+     "īdem",
+     "omissā",
+     "contentiōne",
+     "dolōrem",
+     "morbī",
+     "ferre",
+     "nōn",
+     "possunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 65"
+    }
+   },
+   {
+    "prompt": "They confided these same sentiments to their centurions.",
+    "answer": "haec eadem centuriōnibus mandābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "eadem",
+     "centuriōnibus",
+     "mandābant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 17, 8"
+    }
+   },
+   {
+    "prompt": "In pretty much the same words as were used in the actual argument.",
+    "answer": "eīsdem ferē verbīs ut disputātum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eīsdem",
+     "ferē",
+     "verbīs",
+     "ut",
+     "disputātum",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 9"
+    }
+   },
+   {
+    "prompt": "So that the position is the same as if the money had not been bequeathed.",
+    "answer": "ut eōdem locō rēs sit quasi ea pecūnia lēgāta nōn esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "eōdem",
+     "locō",
+     "rēs",
+     "sit",
+     "quasi",
+     "ea",
+     "pecūnia",
+     "lēgāta",
+     "nōn",
+     "esset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "2, 53"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q15",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Catiline, their head, has fled in abject terror; his minions here, what wait they for?",
+    "answer": "Catilīna ipse pertimuit, profūgit; hī quid exspectant?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catilīna",
+     "ipse",
+     "pertimuit",
+     "profūgit",
+     "hī",
+     "quid",
+     "exspectant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 6"
+    }
+   },
+   {
+    "prompt": "‘the old man said so;’ now “the old man” was Pythagoras.",
+    "answer": "‘ipse dīxit;’ “ipse” autem erat Pȳthagorās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ipse",
+     "dīxit",
+     "ipse",
+     "autem",
+     "erat",
+     "Pȳthagorās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 10"
+    }
+   },
+   {
+    "prompt": "The vessel only was lost, and the sailors escaped in safety.",
+    "answer": "nāvis tantum iactūrā factā, incolumēs ipsī ēvāsērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nāvis",
+     "tantum",
+     "iactūrā",
+     "factā",
+     "incolumēs",
+     "ipsī",
+     "ēvāsērunt"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "30, 25, 8"
+    }
+   },
+   {
+    "prompt": "For no commander can keep his army under control who does not keep his own self under control.",
+    "answer": "neque enim potest exercitum is continēre imperātor, quī sē ipsum nōn continet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "enim",
+     "potest",
+     "exercitum",
+     "is",
+     "continēre",
+     "imperātor",
+     "quī",
+     "sē",
+     "ipsum",
+     "nōn",
+     "continet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "38"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q16",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "A soldier slew his own brother, then himself.",
+    "answer": "mīles frātrem suum, dein sē ipsum interfēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīles",
+     "frātrem",
+     "suum",
+     "dein",
+     "sē",
+     "ipsum",
+     "interfēcit"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "3, 51"
+    }
+   },
+   {
+    "prompt": "Every man loves himself.",
+    "answer": "ipse sē quisque dīligit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ipse",
+     "sē",
+     "quisque",
+     "dīligit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "80"
+    }
+   },
+   {
+    "prompt": "He made war on his own responsibility, without orders from the people and senate.",
+    "answer": "bellum per sē ipse, iniussū populī ac senātūs, fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bellum",
+     "per",
+     "sē",
+     "ipse",
+     "iniussū",
+     "populī",
+     "ac",
+     "senātūs",
+     "fēcit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 49, 7"
+    }
+   },
+   {
+    "prompt": "I need no medicine, I am my own comforter.",
+    "answer": "nōn egeō medicīnā, mē ipse cōnsōlor.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "egeō",
+     "medicīnā",
+     "mē",
+     "ipse",
+     "cōnsōlor"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q17",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "That we should govern ourselves.",
+    "answer": "ut nōbīsmet ipsīs imperēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "nōbīsmet",
+     "ipsīs",
+     "imperēmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 47"
+    }
+   },
+   {
+    "prompt": "They were much afraid that he would abandon them and come into favour with his compatriots again.",
+    "answer": "pertimuērunt nē ab ipsīs dēscīsceret et cum suīs in grātiam redīret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pertimuērunt",
+     "nē",
+     "ab",
+     "ipsīs",
+     "dēscīsceret",
+     "et",
+     "cum",
+     "suīs",
+     "in",
+     "grātiam",
+     "redīret"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "7, 5, 1"
+    }
+   },
+   {
+    "prompt": "People should be most vexed at things which are brought about through fault of their own.",
+    "answer": "ea molestissimē ferre hominēs dēbent, quae ipsōrum culpā contrācta sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ea",
+     "molestissimē",
+     "ferre",
+     "hominēs",
+     "dēbent",
+     "quae",
+     "ipsōrum",
+     "culpā",
+     "contrācta",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1, 1, 2"
+    }
+   },
+   {
+    "prompt": "Even this might have been put more logically and better.",
+    "answer": "hōc ipsum ēlegantius pōnī meliusque potuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hōc",
+     "ipsum",
+     "ēlegantius",
+     "pōnī",
+     "meliusque",
+     "potuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 100"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q18",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Though greatly detested in consequence of the death of Gracchus, he was acquitted by the Roman people proper.",
+    "answer": "flagrantem invidiā propter interitum C. Gracchī ipse populus Rōmānus perīculō līberāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "flagrantem",
+     "invidiā",
+     "propter",
+     "interitum",
+     "C",
+     "Gracchī",
+     "ipse",
+     "populus",
+     "Rōmānus",
+     "perīculō",
+     "līberāvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "140"
+    }
+   },
+   {
+    "prompt": "A project for recovering the city of Locri, which, on the revolt of Italy, had likewise gone over to the Carthaginians.",
+    "answer": "cōgitātiō Locrōs urbem recipiendī, quae sub dēfectiōnem Ītaliae dēscīverat et ipsa ad Poenōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōgitātiō",
+     "Locrōs",
+     "urbem",
+     "recipiendī",
+     "quae",
+     "sub",
+     "dēfectiōnem",
+     "Ītaliae",
+     "dēscīverat",
+     "et",
+     "ipsa",
+     "ad",
+     "Poenōs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "29, 6, 1"
+    }
+   },
+   {
+    "prompt": "Not only the coming of misfortune, but even the mere dread of it brings disaster.",
+    "answer": "nōn sōlum adventus malī, sed etiam metus ipse adfert calamitātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "sōlum",
+     "adventus",
+     "malī",
+     "sed",
+     "etiam",
+     "metus",
+     "ipse",
+     "adfert",
+     "calamitātem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "15"
+    }
+   },
+   {
+    "prompt": "Exactly 86 years before my consulship.",
+    "answer": "annīs LXXXVI ipsīs ante mē cōnsulem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "annīs",
+     "LXXXVI",
+     "ipsīs",
+     "ante",
+     "mē",
+     "cōnsulem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "61"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q19",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "Right at the ford Indutiomarus is caught and killed.",
+    "answer": "in ipsō vadō dēprehēnsus Indutiomarus interficitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "ipsō",
+     "vadō",
+     "dēprehēnsus",
+     "Indutiomarus",
+     "interficitur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 58, 6"
+    }
+   },
+   {
+    "prompt": "I live right over a bath.",
+    "answer": "suprā ipsum balneum habitō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "suprā",
+     "ipsum",
+     "balneum",
+     "habitō"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae Morales ad Lucilium",
+     "locus": "56, 1"
+    }
+   },
+   {
+    "prompt": "The temple-door suddenly opened of itself.",
+    "answer": "valvae subitō sē ipsae aperuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "valvae",
+     "subitō",
+     "sē",
+     "ipsae",
+     "aperuērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "1, 74"
+    }
+   },
+   {
+    "prompt": "We have driven Catiline out, or let him out, or, when he was going out of his own motion, wished him godspeed.",
+    "answer": "Catilīnam vel ēiēcimus vel ēmīsimus vel ipsum ēgredientem verbīs prōsecūtī sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catilīnam",
+     "vel",
+     "ēiēcimus",
+     "vel",
+     "ēmīsimus",
+     "vel",
+     "ipsum",
+     "ēgredientem",
+     "verbīs",
+     "prōsecūtī",
+     "sumus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 1"
+    }
+   }
+  ]
  }
 ]

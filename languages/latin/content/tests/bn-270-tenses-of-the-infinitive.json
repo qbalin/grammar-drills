@@ -764,5 +764,314 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-q2",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "I would not exalt myself by crushing another.",
+    "answer": "Haud equidem premendō alium mē extulisse velim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haud",
+     "equidem",
+     "premendō",
+     "alium",
+     "mē",
+     "extulisse",
+     "velim"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22.59.10"
+    }
+   },
+   {
+    "prompt": "It is a crime to put a Roman in irons.",
+    "answer": "facinus est vincīre cīvem Rōmānum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "facinus",
+     "est",
+     "vincīre",
+     "cīvem",
+     "Rōmānum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 170"
+    }
+   },
+   {
+    "prompt": "I remember your writing to me.",
+    "answer": "meminī ad mē tē scrībere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "meminī",
+     "ad",
+     "mē",
+     "tē",
+     "scrībere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Rege Deiotaro",
+     "locus": "38"
+    }
+   },
+   {
+    "prompt": "You remember a decree of the senate being passed.",
+    "answer": "meministis fierī senātūs cōnsultum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "meministis",
+     "fierī",
+     "senātūs",
+     "cōnsultum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "51"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-q3",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "We have heard of this goddess’s scouring fields and groves.",
+    "answer": "hanc accēpimus agrōs et nemora peragrāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hanc",
+     "accēpimus",
+     "agrōs",
+     "et",
+     "nemora",
+     "peragrāre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Haruspicum Responsis",
+     "locus": "24"
+    }
+   },
+   {
+    "prompt": "You remember that I arranged the case thus.",
+    "answer": "meministis mē ita distribuisse causam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "meministis",
+     "mē",
+     "ita",
+     "distribuisse",
+     "causam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "122"
+    }
+   },
+   {
+    "prompt": "They agreed to do what was commanded.",
+    "answer": "quae imperārentur facere dīxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quae",
+     "imperārentur",
+     "facere",
+     "dīxērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 32, 3"
+    }
+   },
+   {
+    "prompt": "Though I am entitled to come off victorious at once, yet I will waive my right.",
+    "answer": "tametsī statim vīcisse dēbeō, tamen dē meō iūre dēcēdam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tametsī",
+     "statim",
+     "vīcisse",
+     "dēbeō",
+     "tamen",
+     "dē",
+     "meō",
+     "iūre",
+     "dēcēdam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "73"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-q4",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "From what source could he have all that information acquired?",
+    "answer": "unde illa potuit didicisse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "unde",
+     "illa",
+     "potuit",
+     "didicisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "2, 51"
+    }
+   },
+   {
+    "prompt": "The war which we can have ended up before winter.",
+    "answer": "bellum quod possumus ante hiemem perfēcisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bellum",
+     "quod",
+     "possumus",
+     "ante",
+     "hiemem",
+     "perfēcisse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "37, 19, 5"
+    }
+   },
+   {
+    "prompt": "That nobody may presume to have banded with others for the observance of the mysteries.",
+    "answer": "nē quis convēnisse sacrōrum causā velit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "quis",
+     "convēnisse",
+     "sacrōrum",
+     "causā",
+     "velit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "39, 14, 8"
+    }
+   },
+   {
+    "prompt": "I only wish you had this good quality added to the rest.",
+    "answer": "hanc tē ad cēterās virtūtēs adiēcisse velim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hanc",
+     "tē",
+     "ad",
+     "cēterās",
+     "virtūtēs",
+     "adiēcisse",
+     "velim"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "30, 14, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-270-tenses-of-the-infinitive-q5",
+  "sectionId": "bn-270-tenses-of-the-infinitive",
+  "questions": [
+   {
+    "prompt": "I want those people cautioned over and over.",
+    "answer": "illōs monitōs etiam atque etiam volō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illōs",
+     "monitōs",
+     "etiam",
+     "atque",
+     "etiam",
+     "volō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 27"
+    }
+   },
+   {
+    "prompt": "I am delighted myself to have reached the end of the Punic war.",
+    "answer": "mē quoque iuvat ad fīnem bellī Pūnicī pervēnisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mē",
+     "quoque",
+     "iuvat",
+     "ad",
+     "fīnem",
+     "bellī",
+     "Pūnicī",
+     "pervēnisse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "31, 1, 1"
+    }
+   },
+   {
+    "prompt": "They cried out that the gods would avenge themselves.",
+    "answer": "clāmābant fore ut ipsī sē dī ulcīscerentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "clāmābant",
+     "fore",
+     "ut",
+     "ipsī",
+     "sē",
+     "dī",
+     "ulcīscerentur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 87"
+    }
+   },
+   {
+    "prompt": "They thought the war would soon be over.",
+    "answer": "dēbellātum mox fore rēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dēbellātum",
+     "mox",
+     "fore",
+     "rēbantur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "23, 13, 6"
+    }
+   }
+  ]
  }
 ]

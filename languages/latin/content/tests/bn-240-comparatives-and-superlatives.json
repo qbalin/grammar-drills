@@ -613,5 +613,479 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q3",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "In view of their large numbers they thought they had a cramped place to live in.",
+    "answer": "prō multitūdine hominum angustōs sē fīnīs habēre arbitrābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prō",
+     "multitūdine",
+     "hominum",
+     "angustōs",
+     "sē",
+     "fīnīs",
+     "habēre",
+     "arbitrābantur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 2, 5"
+    }
+   },
+   {
+    "prompt": "Celer is more eloquent than wise.",
+    "answer": "Celer disertus magis est quam sapiēns.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Celer",
+     "disertus",
+     "magis",
+     "est",
+     "quam",
+     "sapiēns"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10, 1, 4"
+    }
+   },
+   {
+    "prompt": "With more assurance than preparation.",
+    "answer": "magis audācter quam parātē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magis",
+     "audācter",
+     "quam",
+     "parātē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "241"
+    }
+   },
+   {
+    "prompt": "Of a house famous rather than ancient.",
+    "answer": "clārīs maiōribus quam vetustīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "clārīs",
+     "maiōribus",
+     "quam",
+     "vetustīs"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "4, 61"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q4",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "They say the Persian kings generally have several wives.",
+    "answer": "solēre aiunt rēgēs Persārum plūrēs uxōrēs habēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "solēre",
+     "aiunt",
+     "rēgēs",
+     "Persārum",
+     "plūrēs",
+     "uxōrēs",
+     "habēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3, 76"
+    }
+   },
+   {
+    "prompt": "Age is naturally rather garrulous.",
+    "answer": "senectūs est nātūrā loquācior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "senectūs",
+     "est",
+     "nātūrā",
+     "loquācior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "55"
+    }
+   },
+   {
+    "prompt": "The old gentleman always got provoked if I said anything a bit rough.",
+    "answer": "stomachābātur senex, sī quid asperius dīxeram.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "stomachābātur",
+     "senex",
+     "sī",
+     "quid",
+     "asperius",
+     "dīxeram"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 93"
+    }
+   },
+   {
+    "prompt": "I am over greedy of glory.",
+    "answer": "sum avidior, quam satis est, glōriae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sum",
+     "avidior",
+     "quam",
+     "satis",
+     "est",
+     "glōriae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9, 14, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q5",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "Let us follow Polybius, the most scrupulous of men.",
+    "answer": "sequāmur Polybium, quō nēmō fuit dīligentior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sequāmur",
+     "Polybium",
+     "quō",
+     "nēmō",
+     "fuit",
+     "dīligentior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "2, 27"
+    }
+   },
+   {
+    "prompt": "Phaedrus was the most refined and sympathetic of men.",
+    "answer": "Phaedrō nihil ēlegantius, nihil hūmānius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Phaedrō",
+     "nihil",
+     "ēlegantius",
+     "nihil",
+     "hūmānius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 93"
+    }
+   },
+   {
+    "prompt": "I am not afraid to avouch it is the one hardest thing in the world.",
+    "answer": "cōnfirmāverim rem ūnam esse omnium difficillimam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnfirmāverim",
+     "rem",
+     "ūnam",
+     "esse",
+     "omnium",
+     "difficillimam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "25"
+    }
+   },
+   {
+    "prompt": "He pushes into Gaul by the quickest marches he can.",
+    "answer": "quam maximīs potest itineribus in Galliam contendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quam",
+     "maximīs",
+     "potest",
+     "itineribus",
+     "in",
+     "Galliam",
+     "contendit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 7, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q6",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "The heroic Piso of Aquitain.",
+    "answer": "vir fortissimus, Pīsō Aquītānus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vir",
+     "fortissimus",
+     "Pīsō",
+     "Aquītānus"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 12, 4"
+    }
+   },
+   {
+    "prompt": "I am myself more unhappy than you, who are a most unhappy woman.",
+    "answer": "ego miserior sum quam tū, quae es miserrima.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "miserior",
+     "sum",
+     "quam",
+     "tū",
+     "quae",
+     "es",
+     "miserrima"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "14, 3, 1"
+    }
+   },
+   {
+    "prompt": "I am as tender-hearted as you; as mild as the gentlest man living.",
+    "answer": "tam sum misericors quam vōs; tam mītis quam quī lēnissimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tam",
+     "sum",
+     "misericors",
+     "quam",
+     "vōs",
+     "tam",
+     "mītis",
+     "quam",
+     "quī",
+     "lēnissimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "87"
+    }
+   },
+   {
+    "prompt": "They determined to buy up the greatest possible number of beasts of burden.",
+    "answer": "cōnstituērunt iūmentōrum quam maximum numerum coëmere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnstituērunt",
+     "iūmentōrum",
+     "quam",
+     "maximum",
+     "numerum",
+     "coëmere"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 3, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q7",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "There is the greatest possible difference of character between them.",
+    "answer": "tanta est inter eōs, quanta maxima potest esse, mōrum distantia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tanta",
+     "est",
+     "inter",
+     "eōs",
+     "quanta",
+     "maxima",
+     "potest",
+     "esse",
+     "mōrum",
+     "distantia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "74"
+    }
+   },
+   {
+    "prompt": "I defended you as carefully as I could.",
+    "answer": "ut potuī accūrātissimē tē tūtātus sum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "potuī",
+     "accūrātissimē",
+     "tē",
+     "tūtātus",
+     "sum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "5, 17, 2"
+    }
+   },
+   {
+    "prompt": "I have said more than I intended.",
+    "answer": "plūra dīxī quam voluī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "plūra",
+     "dīxī",
+     "quam",
+     "voluī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 79"
+    }
+   },
+   {
+    "prompt": "I hope Antony may be worse off than he is.",
+    "answer": "Antōniō quam est, volō peius esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antōniō",
+     "quam",
+     "est",
+     "volō",
+     "peius",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "15, 3, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q8",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
+   {
+    "prompt": "Principles somewhat sterner than nature doth support.",
+    "answer": "doctrīna paulō dūrior quam nātūra patitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "doctrīna",
+     "paulō",
+     "dūrior",
+     "quam",
+     "nātūra",
+     "patitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "60"
+    }
+   },
+   {
+    "prompt": "Better late than never.",
+    "answer": "potius sērō quam numquam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "potius",
+     "sērō",
+     "quam",
+     "numquam"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 2, 11"
+    }
+   },
+   {
+    "prompt": "A constitution capable of enduring cold beyond what anybody could believe.",
+    "answer": "corpus patiēns algōris suprā quam cuiquam crēdibile est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "corpus",
+     "patiēns",
+     "algōris",
+     "suprā",
+     "quam",
+     "cuiquam",
+     "crēdibile",
+     "est"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "5, 3"
+    }
+   },
+   {
+    "prompt": "For two days they merely stood in battle array.",
+    "answer": "per bīduum nihil aliud quam stetērunt parātī ad pugnandum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "per",
+     "bīduum",
+     "nihil",
+     "aliud",
+     "quam",
+     "stetērunt",
+     "parātī",
+     "ad",
+     "pugnandum"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "34, 46, 7"
+    }
+   }
+  ]
  }
 ]

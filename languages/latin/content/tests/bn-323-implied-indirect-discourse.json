@@ -507,5 +507,94 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-323-implied-indirect-discourse-q3",
+  "sectionId": "bn-323-implied-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Themistocles used to walk the streets nights, ‘because he could not sleep,’.",
+    "answer": "noctū ambulābat in pūblicō Themistoclēs, quod somnum capere nōn posset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "noctū",
+     "ambulābat",
+     "in",
+     "pūblicō",
+     "Themistoclēs",
+     "quod",
+     "somnum",
+     "capere",
+     "nōn",
+     "posset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "4, 44"
+    }
+   },
+   {
+    "prompt": "He waited at anchor till the rest of the vessels should gather there.",
+    "answer": "dum reliquae nāvēs eō convenīrent, in ancorīs expectāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "reliquae",
+     "nāvēs",
+     "eō",
+     "convenīrent",
+     "in",
+     "ancorīs",
+     "expectāvit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 23, 4"
+    }
+   },
+   {
+    "prompt": "Did anybody ever thank the gods ‘because he was a good man’?",
+    "answer": "numquis, quod bonus vir esset, grātiās dīs ēgit umquam?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "numquis",
+     "quod",
+     "bonus",
+     "vir",
+     "esset",
+     "grātiās",
+     "dīs",
+     "ēgit",
+     "umquam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "3, 87"
+    }
+   },
+   {
+    "prompt": "He vowed a temple to infernal Jove, ‘if he should rout the enemy on that day.’.",
+    "answer": "aedem Dīiovī vōvit, sī eō diē hostēs fūdisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "aedem",
+     "Dīiovī",
+     "vōvit",
+     "sī",
+     "eō",
+     "diē",
+     "hostēs",
+     "fūdisset"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "31, 21, 12"
+    }
+   }
+  ]
  }
 ]

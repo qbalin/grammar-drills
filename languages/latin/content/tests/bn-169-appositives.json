@@ -643,5 +643,253 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-169-appositives-q2",
+  "sectionId": "bn-169-appositives",
+  "questions": [
+   {
+    "prompt": "What shall I say of that universal storehouse, the memory?",
+    "answer": "quid dīcam dē thēsaurō rērum omnium, memoriā?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "dīcam",
+     "dē",
+     "thēsaurō",
+     "rērum",
+     "omnium",
+     "memoriā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 18"
+    }
+   },
+   {
+    "prompt": "The two thunderbolts of our realm, the Scipios, Gnaeus and Publius.",
+    "answer": "duo fulmina nostrī imperī, Cn. et P. Scīpiōnēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "duo",
+     "fulmina",
+     "nostrī",
+     "imperī",
+     "Cn",
+     "et",
+     "P",
+     "Scīpiōnēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Balbo",
+     "locus": "34"
+    }
+   },
+   {
+    "prompt": "The treaty between the cities of Rome and Lavinium was renewed.",
+    "answer": "foedus inter Rōmam Lāvīniumque urbēs renovātum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "foedus",
+     "inter",
+     "Rōmam",
+     "Lāvīniumque",
+     "urbēs",
+     "renovātum",
+     "est"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 14, 3"
+    }
+   },
+   {
+    "prompt": "So that both armies went back to their respective homes.",
+    "answer": "ut ambō exercitūs suās quisque abīrent domōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "ambō",
+     "exercitūs",
+     "suās",
+     "quisque",
+     "abīrent",
+     "domōs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 7, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-169-appositives-q3",
+  "sectionId": "bn-169-appositives",
+  "questions": [
+   {
+    "prompt": "They bring their army out of camp, each of them.",
+    "answer": "uterque eōrum ex castrīs exercitum ēdūcunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "uterque",
+     "eōrum",
+     "ex",
+     "castrīs",
+     "exercitum",
+     "ēdūcunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 30, 3"
+    }
+   },
+   {
+    "prompt": "When it came to pass that we each saw the other.",
+    "answer": "cum accidisset ut alter alterum vidērēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "accidisset",
+     "ut",
+     "alter",
+     "alterum",
+     "vidērēmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "3, 8"
+    }
+   },
+   {
+    "prompt": "Since the two consuls had died, one a natural death, the other by the sword.",
+    "answer": "quandō duo cōnsulēs, alter morbō, alter ferrō periisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quandō",
+     "duo",
+     "cōnsulēs",
+     "alter",
+     "morbō",
+     "alter",
+     "ferrō",
+     "periisset"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "41, 18, 16"
+    }
+   },
+   {
+    "prompt": "Shaking their fists, a provocation to quarrel.",
+    "answer": "manūs intentantēs, causam discordiae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "manūs",
+     "intentantēs",
+     "causam",
+     "discordiae"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "1, 27"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-169-appositives-q4",
+  "sectionId": "bn-169-appositives",
+  "questions": [
+   {
+    "prompt": "Nor will I lend an ear to Homer, who asserts that Ganymede was carried off by the gods for his beauty; no just reason for doing Laomedon such injustice.",
+    "answer": "nec Homērum audiō, quī Ganymēdēn ab dīs raptum ait propter fōrmam; nōn iūsta causa cūr Lāomedontī tanta fieret iniūria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nec",
+     "Homērum",
+     "audiō",
+     "quī",
+     "Ganymēdēn",
+     "ab",
+     "dīs",
+     "raptum",
+     "ait",
+     "propter",
+     "fōrmam",
+     "nōn",
+     "iūsta",
+     "causa",
+     "cūr",
+     "Lāomedontī",
+     "tanta",
+     "fieret",
+     "iniūria"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 65"
+    }
+   },
+   {
+    "prompt": "At Antioch, once a bustling town.",
+    "answer": "Antiochīae, celebrī quondam urbe.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antiochīae",
+     "celebrī",
+     "quondam",
+     "urbe"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Archia",
+     "locus": "4"
+    }
+   },
+   {
+    "prompt": "At Neapolis, a town swarming with people.",
+    "answer": "Neāpolī, in celeberrimō oppidō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Neāpolī",
+     "in",
+     "celeberrimō",
+     "oppidō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Rabirio Postumo",
+     "locus": "26"
+    }
+   },
+   {
+    "prompt": "In two islands—at Melita and Samos.",
+    "answer": "duābus in īnsulīs, Melitae et Samī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "duābus",
+     "in",
+     "īnsulīs",
+     "Melitae",
+     "et",
+     "Samī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 184"
+    }
+   }
+  ]
  }
 ]

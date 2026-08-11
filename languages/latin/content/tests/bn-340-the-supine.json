@@ -562,5 +562,240 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-340-the-supine-q2",
+  "sectionId": "bn-340-the-supine",
+  "questions": [
+   {
+    "prompt": "You see it is a sin to say that such an old age was wretched.",
+    "answer": "Vidētis nefās esse dictū miseram fuisse tālem senectūtem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vidētis",
+     "nefās",
+     "esse",
+     "dictū",
+     "miseram",
+     "fuisse",
+     "tālem",
+     "senectūtem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "13"
+    }
+   },
+   {
+    "prompt": "One legion being sent a foraging.",
+    "answer": "legiōne ūnā frūmentātum missā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "legiōne",
+     "ūnā",
+     "frūmentātum",
+     "missā"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 32, 1"
+    }
+   },
+   {
+    "prompt": "They send envoys to Caesar to beg aid.",
+    "answer": "lēgātōs ad Caesarem mittunt rogātum auxilium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgātōs",
+     "ad",
+     "Caesarem",
+     "mittunt",
+     "rogātum",
+     "auxilium"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 11, 2"
+    }
+   },
+   {
+    "prompt": "They come to assail our country.",
+    "answer": "oppugnātum patriam nostram veniunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "oppugnātum",
+     "patriam",
+     "nostram",
+     "veniunt"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 41, 13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-340-the-supine-q3",
+  "sectionId": "bn-340-the-supine",
+  "questions": [
+   {
+    "prompt": "Envoys came: the Aeduans to complain ‘because the Harudians were laying their country waste’.",
+    "answer": "lēgātī veniēbant: Aeduī questum quod Harūdēs fīnēs eōrum populārentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgātī",
+     "veniēbant",
+     "Aeduī",
+     "questum",
+     "quod",
+     "Harūdēs",
+     "fīnēs",
+     "eōrum",
+     "populārentur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 37, 1"
+    }
+   },
+   {
+    "prompt": "They sent envoys to Caesar to beg that he would not regard them in the light of enemies.",
+    "answer": "lēgātōs ad Caesarem mīsērunt ōrātum nē sē in hostium numerō dūceret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgātōs",
+     "ad",
+     "Caesarem",
+     "mīsērunt",
+     "ōrātum",
+     "nē",
+     "sē",
+     "in",
+     "hostium",
+     "numerō",
+     "dūceret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 32, 1"
+    }
+   },
+   {
+    "prompt": "I think that there is a going to capture him.",
+    "answer": "eum exceptum īrī putō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eum",
+     "exceptum",
+     "īrī",
+     "putō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "7, 22, 1"
+    }
+   },
+   {
+    "prompt": "If heaven allows us to say so.",
+    "answer": "sī hoc fās est dictū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "hoc",
+     "fās",
+     "est",
+     "dictū"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 38"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-340-the-supine-q4",
+  "sectionId": "bn-340-the-supine",
+  "questions": [
+   {
+    "prompt": "It is hard to say in the case of individuals.",
+    "answer": "difficile dictū est dē singulīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "difficile",
+     "dictū",
+     "est",
+     "dē",
+     "singulīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "1, 7, 2"
+    }
+   },
+   {
+    "prompt": "They ask what the best thing is to do.",
+    "answer": "quaerunt quod optimum factū sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quaerunt",
+     "quod",
+     "optimum",
+     "factū",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 68"
+    }
+   },
+   {
+    "prompt": "It is an incredible tale how readily they grew into one.",
+    "answer": "incrēdibile memorātū est quam facile coaluerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "incrēdibile",
+     "memorātū",
+     "est",
+     "quam",
+     "facile",
+     "coaluerint"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "6, 2"
+    }
+   },
+   {
+    "prompt": "Nothing worth mentioning was done this year.",
+    "answer": "nihil dignum dictū āctum hīs cōnsulibus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "dignum",
+     "dictū",
+     "āctum",
+     "hīs",
+     "cōnsulibus"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 30, 4"
+    }
+   }
+  ]
  }
 ]

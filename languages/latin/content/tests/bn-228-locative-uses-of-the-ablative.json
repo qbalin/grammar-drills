@@ -1211,5 +1211,319 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q5",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "About his departure from Alexandrea.",
+    "answer": "dē illīus Alexandrēā discessū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dē",
+     "illīus",
+     "Alexandrēā",
+     "discessū"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "11, 18, 1"
+    }
+   },
+   {
+    "prompt": "From Salonae to Oricum.",
+    "answer": "ā Salōnīs ad Ōricum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ā",
+     "Salōnīs",
+     "ad",
+     "Ōricum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 8, 4"
+    }
+   },
+   {
+    "prompt": "They were forced to fetch fodder from Corcyra and even Acarnania.",
+    "answer": "cōgēbantur Corcȳrā atque Acarnāniā pābulum supportāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōgēbantur",
+     "Corcȳrā",
+     "atque",
+     "Acarnāniā",
+     "pābulum",
+     "supportāre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3, 58, 4"
+    }
+   },
+   {
+    "prompt": "In Illyricum, and at Alexandrea itself.",
+    "answer": "in Illyricō, in ipsā Alexandrēā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "Illyricō",
+     "in",
+     "ipsā",
+     "Alexandrēā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "11, 16, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q6",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "That Antiochus was in Syria, Ptolemy at Alexandria.",
+    "answer": "Antiochum in Syriā, Ptolemaeum in Alexandrīā esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antiochum",
+     "in",
+     "Syriā",
+     "Ptolemaeum",
+     "in",
+     "Alexandrīā",
+     "esse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "42, 26, 7"
+    }
+   },
+   {
+    "prompt": "On the Alban mount and at Lavinium.",
+    "answer": "in mōnte Albānō Lāvīniōque.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "mōnte",
+     "Albānō",
+     "Lāvīniōque"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "5, 52, 8"
+    }
+   },
+   {
+    "prompt": "We have a vessel all chartered, one in Cajeta and one at Brundusium.",
+    "answer": "nāvis et in Caiētā est parāta nōbīs et Brundusiī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nāvis",
+     "et",
+     "in",
+     "Caiētā",
+     "est",
+     "parāta",
+     "nōbīs",
+     "et",
+     "Brundusiī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "8, 3, 6"
+    }
+   },
+   {
+    "prompt": "In a sequestered, healthy, and picturesque nook.",
+    "answer": "remōtō, salūbrī, amoenō locō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "remōtō",
+     "salūbrī",
+     "amoenō",
+     "locō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "7, 20, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q7",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "Ariovistus kept his infantry in camp.",
+    "answer": "Ariovistus exercitum castrīs continuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ariovistus",
+     "exercitum",
+     "castrīs",
+     "continuit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 48, 4"
+    }
+   },
+   {
+    "prompt": "Is there a monarch in the wide world that would not welcome a senator to house and home?",
+    "answer": "rēx ecquis est, qui senātōrem tēctō ac domō nōn invītet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēx",
+     "ecquis",
+     "est",
+     "qui",
+     "senātōrem",
+     "tēctō",
+     "ac",
+     "domō",
+     "nōn",
+     "invītet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 25"
+    }
+   },
+   {
+    "prompt": "Not only in the Punic wars of yore, but also in the present swarm of pirates.",
+    "answer": "nōn modo illīs Pūnicīs bellīs, sed etiam hāc praedōnum multitūdine.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "modo",
+     "illīs",
+     "Pūnicīs",
+     "bellīs",
+     "sed",
+     "etiam",
+     "hāc",
+     "praedōnum",
+     "multitūdine"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 103"
+    }
+   },
+   {
+    "prompt": "At Caesar’s arrival in Gaul.",
+    "answer": "adventū in Galliam Caesaris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "adventū",
+     "in",
+     "Galliam",
+     "Caesaris"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 54, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q8",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
+   {
+    "prompt": "The job is finished up in a few days.",
+    "answer": "paucīs diēbus opus efficitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "paucīs",
+     "diēbus",
+     "opus",
+     "efficitur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 9, 4"
+    }
+   },
+   {
+    "prompt": "In three hours you can get to Aduatuca.",
+    "answer": "tribus hōris Aduātucam venīre potestis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tribus",
+     "hōris",
+     "Aduātucam",
+     "venīre",
+     "potestis"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 35, 8"
+    }
+   },
+   {
+    "prompt": "Arriving at Vellaunodunum, a town of the Senons, in two days time he invested it.",
+    "answer": "cum ad oppidum Senonum Vellaunodūnum vēnisset, id bīduō circumvāllāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "ad",
+     "oppidum",
+     "Senonum",
+     "Vellaunodūnum",
+     "vēnisset",
+     "id",
+     "bīduō",
+     "circumvāllāvit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 11, 1"
+    }
+   },
+   {
+    "prompt": "Within the four days space in which this occurred, the incident is reported to Chrysogonus.",
+    "answer": "quadrīduō, quō haec gesta sunt, rēs ad Chrȳsogonum dēfertur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quadrīduō",
+     "quō",
+     "haec",
+     "gesta",
+     "sunt",
+     "rēs",
+     "ad",
+     "Chrȳsogonum",
+     "dēfertur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "20"
+    }
+   }
+  ]
  }
 ]

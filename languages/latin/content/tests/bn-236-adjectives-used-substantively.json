@@ -688,5 +688,77 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-236-adjectives-used-substantively-q1",
+  "sectionId": "bn-236-adjectives-used-substantively",
+  "questions": [
+   {
+    "prompt": "You have got a band of scoundrels, welded together out of men who are desperate and abandoned not only by all fortune but even by hope.",
+    "answer": "Nactus es, ex perditis atque ab omnī nōn modo fortūna, vērum etiam spē dērelictīs cōnflātam, improbōrum mānum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nactus",
+     "es",
+     "ex",
+     "perditis",
+     "atque",
+     "ab",
+     "omnī",
+     "nōn",
+     "modo",
+     "fortūna",
+     "vērum",
+     "etiam",
+     "spē",
+     "dērelictīs",
+     "cōnflātam",
+     "improbōrum",
+     "mānum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.25"
+    }
+   },
+   {
+    "prompt": "Death seems to me to be an evil.",
+    "answer": "Malum mihi vidētur esse mors.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Malum",
+     "mihi",
+     "vidētur",
+     "esse",
+     "mors"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.9"
+    }
+   },
+   {
+    "prompt": "What I was myself at Trasumene, that you are today.",
+    "answer": "quod ego fuī ad Trāsumennum, id tū hodiē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "ego",
+     "fuī",
+     "ad",
+     "Trāsumennum",
+     "id",
+     "tū",
+     "hodiē"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "30, 30, 12"
+    }
+   }
+  ]
  }
 ]

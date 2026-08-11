@@ -546,5 +546,80 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-171-the-vocative-q3",
+  "sectionId": "bn-171-the-vocative",
+  "questions": [
+   {
+    "prompt": "I should bid you go on and prosper in your valor.",
+    "answer": "Iubērem tē macte virtūte esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iubērem",
+     "tē",
+     "macte",
+     "virtūte",
+     "esse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2.12"
+    }
+   },
+   {
+    "prompt": "In heaven’s name, how long, Catiline, wilt trifle with our patience?",
+    "answer": "quō usque tandem abūtēre, Catilīna, patientiā nostrā?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quō",
+     "usque",
+     "tandem",
+     "abūtēre",
+     "Catilīna",
+     "patientiā",
+     "nostrā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 1"
+    }
+   },
+   {
+    "prompt": "Good bye, my absent loves, good bye.",
+    "answer": "valēte, dēsīderia mea, valēte.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "valēte",
+     "dēsīderia",
+     "mea",
+     "valēte"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "14, 2, 4"
+    }
+   },
+   {
+    "prompt": "Stick to town, dear Rufus, yes, to town.",
+    "answer": "urbem, urbem, mī Rūfe, cole.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "urbem",
+     "urbem",
+     "mī",
+     "Rūfe",
+     "cole"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "2, 12, 2"
+    }
+   }
+  ]
  }
 ]

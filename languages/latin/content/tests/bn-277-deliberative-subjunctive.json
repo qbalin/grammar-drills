@@ -579,5 +579,147 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-277-deliberative-subjunctive-q3",
+  "sectionId": "bn-277-deliberative-subjunctive",
+  "questions": [
+   {
+    "prompt": "What in the world ought I to have done? keep inactive and stand it?",
+    "answer": "quid tandem mē facere decuit? quiēscerem et paterer?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "tandem",
+     "mē",
+     "facere",
+     "decuit",
+     "quiēscerem",
+     "et",
+     "paterer"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "42, 41, 12"
+    }
+   },
+   {
+    "prompt": "Are we to declare war against Corinth, or not?",
+    "answer": "Corinthiīs bellum indīcāmus, an nōn?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Corinthiīs",
+     "bellum",
+     "indīcāmus",
+     "an",
+     "nōn"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Inventione",
+     "locus": "1, 17"
+    }
+   },
+   {
+    "prompt": "You, sir, sympathize with the enemy? he correspond with you?",
+    "answer": "faveās tū hostī? ille litterās ad tē mittat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "faveās",
+     "tū",
+     "hostī",
+     "ille",
+     "litterās",
+     "ad",
+     "tē",
+     "mittat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "7, 5"
+    }
+   },
+   {
+    "prompt": "Any thing break you down? you ever reform?",
+    "answer": "tē ut ūlla rēs frangat? tū ut umquam tē corrigās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tē",
+     "ut",
+     "ūlla",
+     "rēs",
+     "frangat",
+     "tū",
+     "ut",
+     "umquam",
+     "tē",
+     "corrigās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 22"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-277-deliberative-subjunctive-q4",
+  "sectionId": "bn-277-deliberative-subjunctive",
+  "questions": [
+   {
+    "prompt": "A father morally bound to work against his son?",
+    "answer": "pater ut obesse fīlīo dēbeat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pater",
+     "ut",
+     "obesse",
+     "fīlīo",
+     "dēbeat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Plancio",
+     "locus": "31"
+    }
+   },
+   {
+    "prompt": "What I? interrupt you?",
+    "answer": "egone ut tē interpellem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "egone",
+     "ut",
+     "tē",
+     "interpellem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 42"
+    }
+   },
+   {
+    "prompt": "What, they be allowed to stir up border warfare with impunity?",
+    "answer": "illīne ut impūne concitent fīnitima bella?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illīne",
+     "ut",
+     "impūne",
+     "concitent",
+     "fīnitima",
+     "bella"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 2, 12"
+    }
+   }
+  ]
  }
 ]

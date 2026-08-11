@@ -4105,5 +4105,2688 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q22",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Who is there who does not understand?",
+    "answer": "Quis est quīn intellegat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "est",
+     "quīn",
+     "intellegat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "5.64"
+    }
+   },
+   {
+    "prompt": "It took place two days after he said it.",
+    "answer": "post diem tertium gesta rēs est quam dīxerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "post",
+     "diem",
+     "tertium",
+     "gesta",
+     "rēs",
+     "est",
+     "quam",
+     "dīxerat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "44"
+    }
+   },
+   {
+    "prompt": "The others, that stay at home, support themselves.",
+    "answer": "reliquī, qui domī mānsērunt, sē alunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "reliquī",
+     "qui",
+     "domī",
+     "mānsērunt",
+     "sē",
+     "alunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 1, 5"
+    }
+   },
+   {
+    "prompt": "To such as he saw in stress, he kept sending reinforcements.",
+    "answer": "quōs labōrantēs cōnspexerat, hīs subsidia submittēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quōs",
+     "labōrantēs",
+     "cōnspexerat",
+     "hīs",
+     "subsidia",
+     "submittēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 26, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q23",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Do what you like.",
+    "answer": "tū quod volēs faciēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "quod",
+     "volēs",
+     "faciēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "3, 4, 5"
+    }
+   },
+   {
+    "prompt": "Whatever he wants, he wants mightily.",
+    "answer": "quidquid volt, valdē volt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quidquid",
+     "volt",
+     "valdē",
+     "volt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "14, 1, 2"
+    }
+   },
+   {
+    "prompt": "He left Trebonius to manage this.",
+    "answer": "ea quī cōnficeret, C. Trebōnium relinquit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ea",
+     "quī",
+     "cōnficeret",
+     "C",
+     "Trebōnium",
+     "relinquit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 11, 3"
+    }
+   },
+   {
+    "prompt": "This was what I had to say of friendship.",
+    "answer": "haec habuī dē amīcitiā quae dīcerem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "habuī",
+     "dē",
+     "amīcitiā",
+     "quae",
+     "dīcerem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "104"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q24",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "But I am not the man to be scared by danger of death, no not I.",
+    "answer": "neque is sum, quī mortis perīculō terrear.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "is",
+     "sum",
+     "quī",
+     "mortis",
+     "perīculō",
+     "terrear"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 30, 2"
+    }
+   },
+   {
+    "prompt": "There followed a succession of storms to keep our people in camp.",
+    "answer": "secūtae sunt tempestātēs quae nostrōs in castrīs continērent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "secūtae",
+     "sunt",
+     "tempestātēs",
+     "quae",
+     "nostrōs",
+     "in",
+     "castrīs",
+     "continērent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 34, 4"
+    }
+   },
+   {
+    "prompt": "You struggle away to a pitiable degree.",
+    "answer": "quod miserandum sit labōrātis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "miserandum",
+     "sit",
+     "labōrātis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "3, 62"
+    }
+   },
+   {
+    "prompt": "He will not be a fit person to be sent to the war.",
+    "answer": "nōn erit idōneus quī ad bellum mittātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "erit",
+     "idōneus",
+     "quī",
+     "ad",
+     "bellum",
+     "mittātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "66"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q25",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "There is nobody that doesn’t know.",
+    "answer": "nēmō est quī nesciat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nēmō",
+     "est",
+     "quī",
+     "nesciat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "1, 4, 2"
+    }
+   },
+   {
+    "prompt": "Then again there are what they call elks.",
+    "answer": "sunt item, quae appellantur alcēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sunt",
+     "item",
+     "quae",
+     "appellantur",
+     "alcēs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 27, 1"
+    }
+   },
+   {
+    "prompt": "The friend, suspecting nothing, undertook to hold on to the man.",
+    "answer": "hospes, quī nihil suspicārētur, hominem retinēre coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hospes",
+     "quī",
+     "nihil",
+     "suspicārētur",
+     "hominem",
+     "retinēre",
+     "coepit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 64"
+    }
+   },
+   {
+    "prompt": "Oh youth thrice-blest, with Homer trumpeter of thy prowess.",
+    "answer": "ō fortūnāte adulēscēns, quī tuae virtūtis Homērum praecōnem invēnerīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ō",
+     "fortūnāte",
+     "adulēscēns",
+     "quī",
+     "tuae",
+     "virtūtis",
+     "Homērum",
+     "praecōnem",
+     "invēnerīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Archia",
+     "locus": "24"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q26",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "I had a call from Heraclius, a man of high standing, as is proved by his having been a priest of Jupiter.",
+    "answer": "ad mē vēnit Hēraclīus, homo nōbilis, quī sacerdōs Iovis fuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ad",
+     "mē",
+     "vēnit",
+     "Hēraclīus",
+     "homo",
+     "nōbilis",
+     "quī",
+     "sacerdōs",
+     "Iovis",
+     "fuisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 137"
+    }
+   },
+   {
+    "prompt": "Though Cicero had kept his men in camp, he sends five cohorts foraging.",
+    "answer": "Cicerō, quī mīlitēs in castrīs continuisset, quīnque cohortēs frūmentātum mittit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cicerō",
+     "quī",
+     "mīlitēs",
+     "in",
+     "castrīs",
+     "continuisset",
+     "quīnque",
+     "cohortēs",
+     "frūmentātum",
+     "mittit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 36, 1"
+    }
+   },
+   {
+    "prompt": "The other, though he had observed a quiet policy, did not hold the place.",
+    "answer": "alter, quī tamen sē continuerat, nōn tenuit eum locum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "alter",
+     "quī",
+     "tamen",
+     "sē",
+     "continuerat",
+     "nōn",
+     "tenuit",
+     "eum",
+     "locum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "114"
+    }
+   },
+   {
+    "prompt": "But the dictator, naturally, since he went into the struggle trusting to mind rather than muscle, now began to be all on the alert.",
+    "answer": "dictātor tamen, ut quī magis animīs quam vīribus frētus ad certāmen dēscenderet, omnia circumspicere coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dictātor",
+     "tamen",
+     "ut",
+     "quī",
+     "magis",
+     "animīs",
+     "quam",
+     "vīribus",
+     "frētus",
+     "ad",
+     "certāmen",
+     "dēscenderet",
+     "omnia",
+     "circumspicere",
+     "coepit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "7, 14, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q27",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "As far as may be without trouble to yourself.",
+    "answer": "quod sine molestiā tuā fīat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "sine",
+     "molestiā",
+     "tuā",
+     "fīat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "13, 23, 2"
+    }
+   },
+   {
+    "prompt": "Of all orators, at least of all that I have made the acquaintance of myself, I count Sertorius the sharpest.",
+    "answer": "omnium ōrātōrum, quōs quidem ego cōgnōverim, acūtissimum iūdicō Q. Sertōrium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnium",
+     "ōrātōrum",
+     "quōs",
+     "quidem",
+     "ego",
+     "cōgnōverim",
+     "acūtissimum",
+     "iūdicō",
+     "Q",
+     "Sertōrium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "180"
+    }
+   },
+   {
+    "prompt": "As far as you can without troubling yourself.",
+    "answer": "quod sine molestiā tuā facere poteris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "sine",
+     "molestiā",
+     "tuā",
+     "facere",
+     "poteris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "1, 5, 7"
+    }
+   },
+   {
+    "prompt": "What reason is there for saying more?",
+    "answer": "quid est quod plūra dīcāmus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "est",
+     "quod",
+     "plūra",
+     "dīcāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "59"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q28",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "What earthly reason was there, why you should not have followed Caesar to Africa?",
+    "answer": "quid fuit causae, cūr in Āfricam Caesarem nōn sequerēre?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "fuit",
+     "causae",
+     "cūr",
+     "in",
+     "Āfricam",
+     "Caesarem",
+     "nōn",
+     "sequerēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 71"
+    }
+   },
+   {
+    "prompt": "In these parts the winter sets in early, owing to the fact that Gaul in general lies to the north.",
+    "answer": "in hīs locīs, quod omnis Gallia ad septentriōnēs vergit, mātūrae sunt hiemēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "hīs",
+     "locīs",
+     "quod",
+     "omnis",
+     "Gallia",
+     "ad",
+     "septentriōnēs",
+     "vergit",
+     "mātūrae",
+     "sunt",
+     "hiemēs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 20, 1"
+    }
+   },
+   {
+    "prompt": "The Helvetians outshine the rest of the Gauls in bravery, because they do battle with the Germans almost every day.",
+    "answer": "Helvētiī reliquōs Gallōs virtūte praecēdunt, quod ferē cōtīdiānīs proeliīs cum Germānīs contendunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Helvētiī",
+     "reliquōs",
+     "Gallōs",
+     "virtūte",
+     "praecēdunt",
+     "quod",
+     "ferē",
+     "cōtīdiānīs",
+     "proeliīs",
+     "cum",
+     "Germānīs",
+     "contendunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 1, 4"
+    }
+   },
+   {
+    "prompt": "Of these the stoutest fighting-men are the Belgians, for the reason that they live furthest away from the comforts of the province.",
+    "answer": "hōrum fortissimī sunt Belgae, proptereā quod a cultū prōvinciae longissimē absunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hōrum",
+     "fortissimī",
+     "sunt",
+     "Belgae",
+     "proptereā",
+     "quod",
+     "a",
+     "cultū",
+     "prōvinciae",
+     "longissimē",
+     "absunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 1, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q29",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "He induced the monarch to let him go, ‘because he didn’t care to be Fortune’s pet any longer’.",
+    "answer": "exōrāvit tyrannum ut abīre licēret, quod iam beātus nōllet esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "exōrāvit",
+     "tyrannum",
+     "ut",
+     "abīre",
+     "licēret",
+     "quod",
+     "iam",
+     "beātus",
+     "nōllet",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 62"
+    }
+   },
+   {
+    "prompt": "The Bellovacans would not put in their proper quota, saying they meant to make war on their own responsibility.",
+    "answer": "Bellovacī suum numerum nōn contulērunt, quod sē suō arbitriō bellum esse gestūrōs dīcerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bellovacī",
+     "suum",
+     "numerum",
+     "nōn",
+     "contulērunt",
+     "quod",
+     "sē",
+     "suō",
+     "arbitriō",
+     "bellum",
+     "esse",
+     "gestūrōs",
+     "dīcerent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 75, 5"
+    }
+   },
+   {
+    "prompt": "Boxers grunt and groan, not because they feel pain, but because by explosion of voice the whole system gets braced up.",
+    "answer": "pugilēs ingemīscunt, nōn quod doleant, sed quia prōfundendā vōce omne corpus intenditur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pugilēs",
+     "ingemīscunt",
+     "nōn",
+     "quod",
+     "doleant",
+     "sed",
+     "quia",
+     "prōfundendā",
+     "vōce",
+     "omne",
+     "corpus",
+     "intenditur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 56"
+    }
+   },
+   {
+    "prompt": "I always fancy myself in Rome, when I am reading a letter from you.",
+    "answer": "Rōmae videor esse, cum tuās litterās legō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rōmae",
+     "videor",
+     "esse",
+     "cum",
+     "tuās",
+     "litterās",
+     "legō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "2, 15, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q30",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Every time the lines were caught by these and hauled taut, they would part.",
+    "answer": "hīs cum fūnēs comprehēnsī adductīque erant, praerumpēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hīs",
+     "cum",
+     "fūnēs",
+     "comprehēnsī",
+     "adductīque",
+     "erant",
+     "praerumpēbantur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 14, 6"
+    }
+   },
+   {
+    "prompt": "When he went to a dinner party, if he ever caught sight of a bit of chased work, he never could keep his hands off.",
+    "answer": "cum in convīvium vēnisset, sī quicquam caelātī adspexerat, manūs abstinēre nōn poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "in",
+     "convīvium",
+     "vēnisset",
+     "sī",
+     "quicquam",
+     "caelātī",
+     "adspexerat",
+     "manūs",
+     "abstinēre",
+     "nōn",
+     "poterat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 48"
+    }
+   },
+   {
+    "prompt": "But we will talk of this when we have time.",
+    "answer": "sed dē hīs etiam rēbus, ōtiōsī cum erimus, loquēmur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sed",
+     "dē",
+     "hīs",
+     "etiam",
+     "rēbus",
+     "ōtiōsī",
+     "cum",
+     "erimus",
+     "loquēmur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9, 4"
+    }
+   },
+   {
+    "prompt": "But when he uttered the words ‘by your statues’ we burst into a louder laugh.",
+    "answer": "‘per tuās statuās’ vērō cum dīxit, vehementius rīsimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "per",
+     "tuās",
+     "statuās",
+     "vērō",
+     "cum",
+     "dīxit",
+     "vehementius",
+     "rīsimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 242"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q31",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "When Roscius was murdered, they were on the spot.",
+    "answer": "cum occīditur Sex. Rōscius, ibīdem fuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "occīditur",
+     "Sex",
+     "Rōscius",
+     "ibīdem",
+     "fuērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "120"
+    }
+   },
+   {
+    "prompt": "When the day of the trial came, he spoke in his own defence and was condemned.",
+    "answer": "cum diēs vēnit, causā ipse prō sē dictā, damnātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "diēs",
+     "vēnit",
+     "causā",
+     "ipse",
+     "prō",
+     "sē",
+     "dictā",
+     "damnātur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 44, 10"
+    }
+   },
+   {
+    "prompt": "When Caesar came to Gaul, the leaders of one party were the Aeduans, of the other the Sequanians.",
+    "answer": "cum Caesar in Galliam vēnit, alterīus factiōnis prīncipēs erant Aeduī, alterīus Sēquanī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "Caesar",
+     "in",
+     "Galliam",
+     "vēnit",
+     "alterīus",
+     "factiōnis",
+     "prīncipēs",
+     "erant",
+     "Aeduī",
+     "alterīus",
+     "Sēquanī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 12, 1"
+    }
+   },
+   {
+    "prompt": "When I got there, the praetor was taking a nap.",
+    "answer": "eō cum veniō, praetor quiēscēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eō",
+     "cum",
+     "veniō",
+     "praetor",
+     "quiēscēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q32",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "There was flogged with rods in open market place at Messana a citizen of Rome, while all the time not a groan was to be heard.",
+    "answer": "caedēbātur virgīs in mediō forō Messānae cīvis Rōmānus, cum intereā nūllus gemitus audiēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "caedēbātur",
+     "virgīs",
+     "in",
+     "mediō",
+     "forō",
+     "Messānae",
+     "cīvis",
+     "Rōmānus",
+     "cum",
+     "intereā",
+     "nūllus",
+     "gemitus",
+     "audiēbātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 162"
+    }
+   },
+   {
+    "prompt": "Scarcely had he said this, when a slave announced that Laelius was coming.",
+    "answer": "dīxerat hoc ille, cum puer nūntiāvit venīre Laelium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīxerat",
+     "hoc",
+     "ille",
+     "cum",
+     "puer",
+     "nūntiāvit",
+     "venīre",
+     "Laelium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 18"
+    }
+   },
+   {
+    "prompt": "They were already preparing to do it, when suddenly the married women rushed forward.",
+    "answer": "iamque hoc facere apparābant, cum mātres familiae repente prōcurrērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iamque",
+     "hoc",
+     "facere",
+     "apparābant",
+     "cum",
+     "mātres",
+     "familiae",
+     "repente",
+     "prōcurrērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 26, 3"
+    }
+   },
+   {
+    "prompt": "There was an age of the world when men roved round in the fields.",
+    "answer": "fuit quoddam tempus cum in agrīs hominēs vagābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fuit",
+     "quoddam",
+     "tempus",
+     "cum",
+     "in",
+     "agrīs",
+     "hominēs",
+     "vagābantur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Inventione",
+     "locus": "1, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q33",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "There was a time when the Gauls outdid the Germans in valour.",
+    "answer": "fuit anteā tempus, cum Germānōs Gallī virtūte superārent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fuit",
+     "anteā",
+     "tempus",
+     "cum",
+     "Germānōs",
+     "Gallī",
+     "virtūte",
+     "superārent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 24, 1"
+    }
+   },
+   {
+    "prompt": "I have often heard my father-in-law saying.",
+    "answer": "saepe ex socerō meō audīvī, cum is dīceret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "saepe",
+     "ex",
+     "socerō",
+     "meō",
+     "audīvī",
+     "cum",
+     "is",
+     "dīceret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 22"
+    }
+   },
+   {
+    "prompt": "It is nearly four hundred years that this has been liked.",
+    "answer": "annī prope quadringentī sunt, cum hoc probātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "annī",
+     "prope",
+     "quadringentī",
+     "sunt",
+     "cum",
+     "hoc",
+     "probātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "171"
+    }
+   },
+   {
+    "prompt": "It is not a hundred and ten years yet since the law was passed.",
+    "answer": "nōndum centum et decem annī sunt, cum lāta lēx est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōndum",
+     "centum",
+     "et",
+     "decem",
+     "annī",
+     "sunt",
+     "cum",
+     "lāta",
+     "lēx",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2, 75"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q34",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "King Pyrrhus having made war on the Roman nation, and there being a struggle for sovereignty with a powerful king, a deserter from him came into Fabricius’s camp.",
+    "answer": "cum rēx Pyrrhus populō Rōmānō bellum intulisset cumque dē imperiō certāmen esset cum rēge potentī, perfuga ab eō vēnit in castra Fabriciī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "rēx",
+     "Pyrrhus",
+     "populō",
+     "Rōmānō",
+     "bellum",
+     "intulisset",
+     "cumque",
+     "dē",
+     "imperiō",
+     "certāmen",
+     "esset",
+     "cum",
+     "rēge",
+     "potentī",
+     "perfuga",
+     "ab",
+     "eō",
+     "vēnit",
+     "in",
+     "castra",
+     "Fabriciī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 86"
+    }
+   },
+   {
+    "prompt": "For as I was pacing up and down my portico, Brutus had come to see me.",
+    "answer": "nam cum inambulārem in xystō, M. ad mē Brūtus vēnerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nam",
+     "cum",
+     "inambulārem",
+     "in",
+     "xystō",
+     "M",
+     "ad",
+     "mē",
+     "Brūtus",
+     "vēnerat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "10"
+    }
+   },
+   {
+    "prompt": "A deep silence ensued after Crassus had finished speaking.",
+    "answer": "haec cum Crassus dīxisset, silentium est cōnsecūtum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "cum",
+     "Crassus",
+     "dīxisset",
+     "silentium",
+     "est",
+     "cōnsecūtum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 160"
+    }
+   },
+   {
+    "prompt": "I told Gallus, when I was last in Rome, what I had heard.",
+    "answer": "Gallō nārrāvī, cum proximē Rōmae fuī, quid audīssem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallō",
+     "nārrāvī",
+     "cum",
+     "proximē",
+     "Rōmae",
+     "fuī",
+     "quid",
+     "audīssem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "13, 49, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q35",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "While Marius was having his varicose veins lanced, he was in pain.",
+    "answer": "cum vāricēs secābantur C. Mariō, dolēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "vāricēs",
+     "secābantur",
+     "C",
+     "Mariō",
+     "dolēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 35"
+    }
+   },
+   {
+    "prompt": "Did Decius, offering himself up, and while he was dashing straight into the host, have any thought of pleasures of his own?",
+    "answer": "num P. Decius, cum sē dēvovēret et in mediam aciem inruēbat, aliquid dē voluptātibus suīs cōgitābat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "P",
+     "Decius",
+     "cum",
+     "sē",
+     "dēvovēret",
+     "et",
+     "in",
+     "mediam",
+     "aciem",
+     "inruēbat",
+     "aliquid",
+     "dē",
+     "voluptātibus",
+     "suīs",
+     "cōgitābat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 61"
+    }
+   },
+   {
+    "prompt": "Since he did not dare to stand up on an ordinary platform, he always did his speaking from a lofty tower.",
+    "answer": "cum in commūnibus suggestīs cōnsistere nōn audēret, contiōnārī ex turrī altā solēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "in",
+     "commūnibus",
+     "suggestīs",
+     "cōnsistere",
+     "nōn",
+     "audēret",
+     "contiōnārī",
+     "ex",
+     "turrī",
+     "altā",
+     "solēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 59"
+    }
+   },
+   {
+    "prompt": "He was always poor, whereas he might have been very rich.",
+    "answer": "fuit perpetuō pauper, cum dīvitissimus esse posset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fuit",
+     "perpetuō",
+     "pauper",
+     "cum",
+     "dīvitissimus",
+     "esse",
+     "posset"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "19, 1, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q36",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Whereas you are Pylades, will you declare yourself Orestes?",
+    "answer": "Pyladēs cum sīs, dīcēs tē esse Orestēn?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pyladēs",
+     "cum",
+     "sīs",
+     "dīcēs",
+     "tē",
+     "esse",
+     "Orestēn"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 79"
+    }
+   },
+   {
+    "prompt": "The great Cato, though born at Tusculum, was received into the citizenship of the Roman nation.",
+    "answer": "ille Catō, cum esset Tusculī nātus, in populī Rōmānī cīvitātem susceptus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ille",
+     "Catō",
+     "cum",
+     "esset",
+     "Tusculī",
+     "nātus",
+     "in",
+     "populī",
+     "Rōmānī",
+     "cīvitātem",
+     "susceptus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "2, 5"
+    }
+   },
+   {
+    "prompt": "Then the senators were still more seriously concerned, and naturally enough, since they beheld their cause betrayed by their own people.",
+    "answer": "tum vērō gravior cūra patribus incessit, quippe cum prōdī causam ab suīs cernerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tum",
+     "vērō",
+     "gravior",
+     "cūra",
+     "patribus",
+     "incessit",
+     "quippe",
+     "cum",
+     "prōdī",
+     "causam",
+     "ab",
+     "suīs",
+     "cernerent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 57, 10"
+    }
+   },
+   {
+    "prompt": "An illness from which I had already recovered, naturally, since it was unaccompanied by fever.",
+    "answer": "valētūdō, ē quā iam ēmerseram, ut pote cum sine febrī labōrāssem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "valētūdō",
+     "ē",
+     "quā",
+     "iam",
+     "ēmerseram",
+     "ut",
+     "pote",
+     "cum",
+     "sine",
+     "febrī",
+     "labōrāssem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "5, 8, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q37",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Though the front ranks of the enemy had fallen, yet the rest made a most spirited resistance.",
+    "answer": "cum prīmī ōrdinēs hostium concidissent, tamen ācerrimē reliquī resistēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "prīmī",
+     "ōrdinēs",
+     "hostium",
+     "concidissent",
+     "tamen",
+     "ācerrimē",
+     "reliquī",
+     "resistēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 62, 4"
+    }
+   },
+   {
+    "prompt": "I was distracted by most important engagements before, but now I am very much more distracted.",
+    "answer": "cum anteā distinēbar maximīs occupātiōnibus, tum hōc tempore multō distineor vehementius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "anteā",
+     "distinēbar",
+     "maximīs",
+     "occupātiōnibus",
+     "tum",
+     "hōc",
+     "tempore",
+     "multō",
+     "distineor",
+     "vehementius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "12, 30, 2"
+    }
+   },
+   {
+    "prompt": "Whereas I have always loved you from your boyhood, for this I love you with a far intenser love.",
+    "answer": "cum tē ā pueritiā tuā dīlēxerim, tum hōc multō ācrius dīligō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "tē",
+     "ā",
+     "pueritiā",
+     "tuā",
+     "dīlēxerim",
+     "tum",
+     "hōc",
+     "multō",
+     "ācrius",
+     "dīligō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "15, 9, 1"
+    }
+   },
+   {
+    "prompt": "Both the cause and its supporter touched the conscript fathers.",
+    "answer": "mōvit patrēs cōnscrīptōs cum causa tum auctor.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mōvit",
+     "patrēs",
+     "cōnscrīptōs",
+     "cum",
+     "causa",
+     "tum",
+     "auctor"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "9, 10, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q38",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Do you, citizens, since it is now grown dark, depart and go to your own several homes.",
+    "answer": "vōs, Quirītēs, quoniam iam nox est, in vestra tecta discēdite.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vōs",
+     "Quirītēs",
+     "quoniam",
+     "iam",
+     "nox",
+     "est",
+     "in",
+     "vestra",
+     "tecta",
+     "discēdite"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3, 29"
+    }
+   },
+   {
+    "prompt": "Since I have finished speaking about the character of the war, I will now speak briefly about its extent.",
+    "answer": "quoniam dē genere bellī dīxī, nunc dē magnitūdine pauca dīcam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quoniam",
+     "dē",
+     "genere",
+     "bellī",
+     "dīxī",
+     "nunc",
+     "dē",
+     "magnitūdine",
+     "pauca",
+     "dīcam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "20"
+    }
+   },
+   {
+    "prompt": "They were rebuked in numerous letters of Pompey, ‘because they had not kept Caesar off as soon as he came.’.",
+    "answer": "crēbrīs Pompēī litterīs castīgābantur, quoniam prīmō venientem Caesarem nōn prohibuissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "crēbrīs",
+     "Pompēī",
+     "litterīs",
+     "castīgābantur",
+     "quoniam",
+     "prīmō",
+     "venientem",
+     "Caesarem",
+     "nōn",
+     "prohibuissent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 25, 3"
+    }
+   },
+   {
+    "prompt": "As the cohorts successively charged, a great number of the enemy fell every time.",
+    "answer": "quotiēns quaeque cohors prōcurrerat, magnus numerus hostium cadēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quotiēns",
+     "quaeque",
+     "cohors",
+     "prōcurrerat",
+     "magnus",
+     "numerus",
+     "hostium",
+     "cadēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 34, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q39",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Neither shall he fall a-groaning whenever he sees me.",
+    "answer": "nec quotiēnscumque mē vīderit, ingemīscet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nec",
+     "quotiēnscumque",
+     "mē",
+     "vīderit",
+     "ingemīscet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "146"
+    }
+   },
+   {
+    "prompt": "Every time we make a speech, the world sits in judgement on us.",
+    "answer": "quotiēns dīcimus, totiēns dē nōbīs iūdicātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quotiēns",
+     "dīcimus",
+     "totiēns",
+     "dē",
+     "nōbīs",
+     "iūdicātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 125"
+    }
+   },
+   {
+    "prompt": "If he had been in the army as many years as he was consul.",
+    "answer": "sī tot cōnsulibus meruisset, quotiēns ipse cōnsul fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "tot",
+     "cōnsulibus",
+     "meruisset",
+     "quotiēns",
+     "ipse",
+     "cōnsul",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Balbo",
+     "locus": "47"
+    }
+   },
+   {
+    "prompt": "He would impose every possible burden on the Segestans, far too much for them to bear.",
+    "answer": "quicquid erat oneris Segestānīs impōnēbat, aliquantō amplius quam ferre possent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quicquid",
+     "erat",
+     "oneris",
+     "Segestānīs",
+     "impōnēbat",
+     "aliquantō",
+     "amplius",
+     "quam",
+     "ferre",
+     "possent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 76"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q40",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Who does not feel that the statues of Canachus are too stiff to be true to nature?",
+    "answer": "quis nōn intellegit Canachī sīgna rigidiōra esse, quam ut imitentur vēritātem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "nōn",
+     "intellegit",
+     "Canachī",
+     "sīgna",
+     "rigidiōra",
+     "esse",
+     "quam",
+     "ut",
+     "imitentur",
+     "vēritātem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "70"
+    }
+   },
+   {
+    "prompt": "The thing was too notorious to be hushed up.",
+    "answer": "clārior rēs erat quam ut dissimulārī posset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "clārior",
+     "rēs",
+     "erat",
+     "quam",
+     "ut",
+     "dissimulārī",
+     "posset"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "26, 51, 11"
+    }
+   },
+   {
+    "prompt": "Hated on the ground that his designs were too lofty for a private citizen.",
+    "answer": "invīsus tamquam plūs quam cīvīlia agitāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "invīsus",
+     "tamquam",
+     "plūs",
+     "quam",
+     "cīvīlia",
+     "agitāret"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "1, 12"
+    }
+   },
+   {
+    "prompt": "He reproved the embassy ‘for not having completed the prosecution of all the defendants’.",
+    "answer": "lēgātōs increpuit, tamquam nōn omnēs reōs perēgissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgātōs",
+     "increpuit",
+     "tamquam",
+     "nōn",
+     "omnēs",
+     "reōs",
+     "perēgissent"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "3, 9, 36"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q41",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "After I read your letter, your Postumia called on me.",
+    "answer": "postquam tuās litterās lēgī, Postumia tua mē convēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postquam",
+     "tuās",
+     "litterās",
+     "lēgī",
+     "Postumia",
+     "tua",
+     "mē",
+     "convēnit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "4, 2, 1"
+    }
+   },
+   {
+    "prompt": "When he had finished speaking, up jumped Clodius.",
+    "answer": "quī ut perōrāvit, surrēxit Clōdius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quī",
+     "ut",
+     "perōrāvit",
+     "surrēxit",
+     "Clōdius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "2, 3, 2"
+    }
+   },
+   {
+    "prompt": "The charge is of such a sort that, when first it was reported to me, I thought I should not use it.",
+    "answer": "crīmen eius modī est, ut, cum prīmum ad mē dēlātum est, ūsūrum mē illō nōn putārem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "crīmen",
+     "eius",
+     "modī",
+     "est",
+     "ut",
+     "cum",
+     "prīmum",
+     "ad",
+     "mē",
+     "dēlātum",
+     "est",
+     "ūsūrum",
+     "mē",
+     "illō",
+     "nōn",
+     "putārem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 158"
+    }
+   },
+   {
+    "prompt": "As soon as he touched the shore of Crete, he sent messengers.",
+    "answer": "cum prīmum Crētae lītus attigit, nūntiōs mīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "prīmum",
+     "Crētae",
+     "lītus",
+     "attigit",
+     "nūntiōs",
+     "mīsit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "37, 60, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q42",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "As soon as I began to be able to speak, I said.",
+    "answer": "ut prīmum loquī posse coepī, inquam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "prīmum",
+     "loquī",
+     "posse",
+     "coepī",
+     "inquam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "6, 15"
+    }
+   },
+   {
+    "prompt": "As soon as the garrison espied him, they began to man the wall.",
+    "answer": "quem simul atque oppidānī cōnspexērunt, mūrum complēre coepērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quem",
+     "simul",
+     "atque",
+     "oppidānī",
+     "cōnspexērunt",
+     "mūrum",
+     "complēre",
+     "coepērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 12, 5"
+    }
+   },
+   {
+    "prompt": "Seeing that the man does not appear, he began to rage and fume.",
+    "answer": "quem posteā quam videt nōn adesse, ardēre atque furere coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quem",
+     "posteā",
+     "quam",
+     "videt",
+     "nōn",
+     "adesse",
+     "ardēre",
+     "atque",
+     "furere",
+     "coepit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 92"
+    }
+   },
+   {
+    "prompt": "It is the eighth year since you acquired empire.",
+    "answer": "annus est octāvus ut imperium obtinēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "annus",
+     "est",
+     "octāvus",
+     "ut",
+     "imperium",
+     "obtinēs"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "14, 53"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q43",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "At the time when Africanus, after he had twice been consul, was bringing Cotta to judgement.",
+    "answer": "tum cum P. Āfricānus, posteā quam bis cōnsul fuerat, L. Cottam in iūdicium vocābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tum",
+     "cum",
+     "P",
+     "Āfricānus",
+     "posteā",
+     "quam",
+     "bis",
+     "cōnsul",
+     "fuerat",
+     "L",
+     "Cottam",
+     "in",
+     "iūdicium",
+     "vocābat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Divinatio in Caecilium",
+     "locus": "69"
+    }
+   },
+   {
+    "prompt": "When every eye was fairly riveted on the engagement, that instant they fell upon the Romans in the rear.",
+    "answer": "postquam omnium oculōs occupāverat certāmen, tum āversam adoriuntur Rōmānam aciem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postquam",
+     "omnium",
+     "oculōs",
+     "occupāverat",
+     "certāmen",
+     "tum",
+     "āversam",
+     "adoriuntur",
+     "Rōmānam",
+     "aciem"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22, 48, 4"
+    }
+   },
+   {
+    "prompt": "The temple of Moneta is dedicated a year after it was vowed.",
+    "answer": "annō post quam vōta erat aedēs Monētae dēdicātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "annō",
+     "post",
+     "quam",
+     "vōta",
+     "erat",
+     "aedēs",
+     "Monētae",
+     "dēdicātur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "7, 28, 6"
+    }
+   },
+   {
+    "prompt": "Appius, finding that nobody presented himself, went back home.",
+    "answer": "Appius, postquam nēmō adībat, domum sē recēpit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Appius",
+     "postquam",
+     "nēmō",
+     "adībat",
+     "domum",
+     "sē",
+     "recēpit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 46, 9"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q44",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Now that it has become plain that you have no hope from the Romans, and that your walls are no protection to you, I bring peace unto you.",
+    "answer": "postquam nec ab Rōmānīs vōbīs ūlla est spēs, nec vōs moenia dēfendunt, pācem adferō ad vōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postquam",
+     "nec",
+     "ab",
+     "Rōmānīs",
+     "vōbīs",
+     "ūlla",
+     "est",
+     "spēs",
+     "nec",
+     "vōs",
+     "moenia",
+     "dēfendunt",
+     "pācem",
+     "adferō",
+     "ad",
+     "vōs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 13, 4"
+    }
+   },
+   {
+    "prompt": "He knows that all this is fruitless, now that he is being refuted by witnesses.",
+    "answer": "quae omnia intellegit nihil prōdesse, posteā quam testibus convincitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quae",
+     "omnia",
+     "intellegit",
+     "nihil",
+     "prōdesse",
+     "posteā",
+     "quam",
+     "testibus",
+     "convincitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 103"
+    }
+   },
+   {
+    "prompt": "We have had nothing from you since you published the work On the State.",
+    "answer": "ut illōs dē rē pūblicā librōs ēdidistī, nihil ā tē posteā accēpimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "illōs",
+     "dē",
+     "rē",
+     "pūblicā",
+     "librōs",
+     "ēdidistī",
+     "nihil",
+     "ā",
+     "tē",
+     "posteā",
+     "accēpimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "19"
+    }
+   },
+   {
+    "prompt": "For the moment our king turns to a severer kind of mastery, he becomes a tyrant on the spot.",
+    "answer": "simul atque sē īnflēxit hīc rēx in dominātum iniūstiōrem, fit continuō tyrannus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "simul",
+     "atque",
+     "sē",
+     "īnflēxit",
+     "hīc",
+     "rēx",
+     "in",
+     "dominātum",
+     "iniūstiōrem",
+     "fit",
+     "continuō",
+     "tyrannus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "2, 48"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q45",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Any Roman, who visited Messana, invariably went to see these statues.",
+    "answer": "Messānam ut quisque nostrūm vēnerat, haec vīsere solēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Messānam",
+     "ut",
+     "quisque",
+     "nostrūm",
+     "vēnerat",
+     "haec",
+     "vīsere",
+     "solēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 5"
+    }
+   },
+   {
+    "prompt": "As soon as there is anything positive, I will write to you.",
+    "answer": "simul et quid erit certī, scrībam ad tē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "simul",
+     "et",
+     "quid",
+     "erit",
+     "certī",
+     "scrībam",
+     "ad",
+     "tē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "2, 20, 2"
+    }
+   },
+   {
+    "prompt": "I shall have something to write you, as soon as ever I see Curio.",
+    "answer": "ego ad tē statim habēbō quod scrībam, simul ut vīderō Cūriōnem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "ad",
+     "tē",
+     "statim",
+     "habēbō",
+     "quod",
+     "scrībam",
+     "simul",
+     "ut",
+     "vīderō",
+     "Cūriōnem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10, 4, 12"
+    }
+   },
+   {
+    "prompt": "You have to get up early in the morning to give advice to your clients.",
+    "answer": "vigilās dē nocte, ut tuīs cōnsultōribus respondeās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vigilās",
+     "dē",
+     "nocte",
+     "ut",
+     "tuīs",
+     "cōnsultōribus",
+     "respondeās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "22"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q46",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Our fathers brought Cincinnatus from his plough, to be dictator.",
+    "answer": "maiōrēs nostrī ab arātrō addūxērunt Cincinnātum, ut dictātor esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "maiōrēs",
+     "nostrī",
+     "ab",
+     "arātrō",
+     "addūxērunt",
+     "Cincinnātum",
+     "ut",
+     "dictātor",
+     "esset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 12"
+    }
+   },
+   {
+    "prompt": "To avoid facing war on a more formidable scale, Caesar goes to the army.",
+    "answer": "Caesar, nē graviōrī bellō occurreret, ad exercitum proficīscitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "nē",
+     "graviōrī",
+     "bellō",
+     "occurreret",
+     "ad",
+     "exercitum",
+     "proficīscitur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 6, 1"
+    }
+   },
+   {
+    "prompt": "Was that the reason why no former officials laid a finger on it, that this man might swoop it away? was that why Claudius returned it, that a Verres might carry it off?",
+    "answer": "idcircō nēmō superiōrum attigit, ut hīc tolleret? ideō C. Claudius rettulit, ut C. Verrēs posset auferre?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "idcircō",
+     "nēmō",
+     "superiōrum",
+     "attigit",
+     "ut",
+     "hīc",
+     "tolleret",
+     "ideō",
+     "C",
+     "Claudius",
+     "rettulit",
+     "ut",
+     "C",
+     "Verrēs",
+     "posset",
+     "auferre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 7"
+    }
+   },
+   {
+    "prompt": "To cut a long story short, the woman makes her will and dies.",
+    "answer": "ut in pauca cōnferam, testāmentō factō mulier moritur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "in",
+     "pauca",
+     "cōnferam",
+     "testāmentō",
+     "factō",
+     "mulier",
+     "moritur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caecina",
+     "locus": "17"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q47",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "But that our friend here may know what is up: we were just on the nature of the gods.",
+    "answer": "sed ut hīc nē īgnōret, quae rēs agātur: dē nātūrā agēbāmus deōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sed",
+     "ut",
+     "hīc",
+     "nē",
+     "īgnōret",
+     "quae",
+     "rēs",
+     "agātur",
+     "dē",
+     "nātūrā",
+     "agēbāmus",
+     "deōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 17"
+    }
+   },
+   {
+    "prompt": "They hardly stood their war cry, much less their charge.",
+    "answer": "vix clāmōrem eōrum, nēdum impetum tulēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vix",
+     "clāmōrem",
+     "eōrum",
+     "nēdum",
+     "impetum",
+     "tulēre"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "34, 20, 7"
+    }
+   },
+   {
+    "prompt": "An exceeding high mountain hung over, so that a very few could block the way.",
+    "answer": "mōns altissimus impendēbat, ut facile perpaucī prohibēre possent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mōns",
+     "altissimus",
+     "impendēbat",
+     "ut",
+     "facile",
+     "perpaucī",
+     "prohibēre",
+     "possent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 6, 1"
+    }
+   },
+   {
+    "prompt": "They stoutly declared that they were driven out of house and home, and lacked the necessaries of life, thus veiling dishonour under the name of respectability.",
+    "answer": "dictitābant sē domō expulsōs, omnibus necessāriīs egēre rēbus, ut honestā praescrīptiōne rem turpissimam tegerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dictitābant",
+     "sē",
+     "domō",
+     "expulsōs",
+     "omnibus",
+     "necessāriīs",
+     "egēre",
+     "rēbus",
+     "ut",
+     "honestā",
+     "praescrīptiōne",
+     "rem",
+     "turpissimam",
+     "tegerent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 32, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q48",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "He went into action in such cramped sea-room, that his armada could not deploy.",
+    "answer": "adeō angustō marī cōnflīxit, ut eius multitūdō nāvium explicārī nōn potuerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "adeō",
+     "angustō",
+     "marī",
+     "cōnflīxit",
+     "ut",
+     "eius",
+     "multitūdō",
+     "nāvium",
+     "explicārī",
+     "nōn",
+     "potuerit"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "2, 4, 5"
+    }
+   },
+   {
+    "prompt": "I have brought such witnesses that nobody can entertain a doubt of the defendant’s guilt.",
+    "answer": "eōs dēdūxī testēs ut dē istīus factō dubium esse nēminī possit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eōs",
+     "dēdūxī",
+     "testēs",
+     "ut",
+     "dē",
+     "istīus",
+     "factō",
+     "dubium",
+     "esse",
+     "nēminī",
+     "possit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 91"
+    }
+   },
+   {
+    "prompt": "He retreated, it is true, but retreated with his mind running on nothing but how to ruin the country.",
+    "answer": "ita sē recipiēbat ut nihil nisi dē perniciē populī Rōmānī cōgitāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ita",
+     "sē",
+     "recipiēbat",
+     "ut",
+     "nihil",
+     "nisi",
+     "dē",
+     "perniciē",
+     "populī",
+     "Rōmānī",
+     "cōgitāret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "4, 4"
+    }
+   },
+   {
+    "prompt": "The troopers fought on every kind of ground, hoping to outshine the regular infantry thereby.",
+    "answer": "equitēs omnibus in locīs pugnant, quō sē legiōnāriīs mīlitibus praeferrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "equitēs",
+     "omnibus",
+     "in",
+     "locīs",
+     "pugnant",
+     "quō",
+     "sē",
+     "legiōnāriīs",
+     "mīlitibus",
+     "praeferrent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 27, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q49",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "I think it would be well to fee your medical man, to make him more attentive.",
+    "answer": "medicō putō aliquid dandum esse, quō sit studiōsior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "medicō",
+     "putō",
+     "aliquid",
+     "dandum",
+     "esse",
+     "quō",
+     "sit",
+     "studiōsior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16, 4, 2"
+    }
+   },
+   {
+    "prompt": "The large attendance of both sexes was done away with, to make the weeping and wailing less harrowing.",
+    "answer": "sublāta erat celebritās virōrum ac mulierum, quō lāmentātiō minuerētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sublāta",
+     "erat",
+     "celebritās",
+     "virōrum",
+     "ac",
+     "mulierum",
+     "quō",
+     "lāmentātiō",
+     "minuerētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "2, 65"
+    }
+   },
+   {
+    "prompt": "There was absolutely not a single soldier but was wounded.",
+    "answer": "nēmō fuit omnīnō mīlitum quīn vulnerārētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nēmō",
+     "fuit",
+     "omnīnō",
+     "mīlitum",
+     "quīn",
+     "vulnerārētur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 53, 3"
+    }
+   },
+   {
+    "prompt": "Who came to the circus without being reminded of your avarice at each and every step?",
+    "answer": "quis in circum vēnit, quīn is ūnōquōque gradū dē avāritiā tuā commonērētur?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "in",
+     "circum",
+     "vēnit",
+     "quīn",
+     "is",
+     "ūnōquōque",
+     "gradū",
+     "dē",
+     "avāritiā",
+     "tuā",
+     "commonērētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 154"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q50",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "There was not a community but sent a part of its local senate to Corduba, not a Roman citizen, but went to the meeting.",
+    "answer": "nūlla fuit cīvitās quīn partem senātūs Cordubam mitteret, nōn cīvis Rōmānus quīn convenīret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūlla",
+     "fuit",
+     "cīvitās",
+     "quīn",
+     "partem",
+     "senātūs",
+     "Cordubam",
+     "mitteret",
+     "nōn",
+     "cīvis",
+     "Rōmānus",
+     "quīn",
+     "convenīret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2, 19, 2"
+    }
+   },
+   {
+    "prompt": "Not that others may not have been his peers in virtue.",
+    "answer": "nōn quīn parī virtūte aliī fuerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "quīn",
+     "parī",
+     "virtūte",
+     "aliī",
+     "fuerint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "7, 6"
+    }
+   },
+   {
+    "prompt": "When all were created, then to them spake the god.",
+    "answer": "quandō omnēs creātī sunt, tum ad eōs deus fātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quandō",
+     "omnēs",
+     "creātī",
+     "sunt",
+     "tum",
+     "ad",
+     "eōs",
+     "deus",
+     "fātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Timaeus",
+     "locus": "40"
+    }
+   },
+   {
+    "prompt": "When the majority voted for the same motion, war was always agreed upon.",
+    "answer": "quandō pars maior in eandem sententiam ībat, bellum erat cōnsēnsum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quandō",
+     "pars",
+     "maior",
+     "in",
+     "eandem",
+     "sententiam",
+     "ībat",
+     "bellum",
+     "erat",
+     "cōnsēnsum"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 32, 12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-282-moods-in-dependent-clauses-q51",
+  "sectionId": "bn-282-moods-in-dependent-clauses",
+  "questions": [
+   {
+    "prompt": "Let this be the charge of the censors, seeing that we want such officers always in our state.",
+    "answer": "haec dētur cūra cēnsōribus, quandōquidem eōs in rē pūblicā semper volumus esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "dētur",
+     "cūra",
+     "cēnsōribus",
+     "quandōquidem",
+     "eōs",
+     "in",
+     "rē",
+     "pūblicā",
+     "semper",
+     "volumus",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3, 47"
+    }
+   },
+   {
+    "prompt": "That they must fight for home and country, now that they had failed to preserve Italy.",
+    "answer": "prō urbe ac penātibus dīmicandum esse, quandō Ītaliam tuērī nequīssent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prō",
+     "urbe",
+     "ac",
+     "penātibus",
+     "dīmicandum",
+     "esse",
+     "quandō",
+     "Ītaliam",
+     "tuērī",
+     "nequīssent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22, 8, 7"
+    }
+   },
+   {
+    "prompt": "Inasmuch as these persons have promised that a covenant should be made, without the order of the Roman nation of Quirites.",
+    "answer": "quandōque hīsce hominēs iniussū populī Rōmānī Quirītium foedus ictum īrī spopondērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quandōque",
+     "hīsce",
+     "hominēs",
+     "iniussū",
+     "populī",
+     "Rōmānī",
+     "Quirītium",
+     "foedus",
+     "ictum",
+     "īrī",
+     "spopondērunt"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "9, 10, 9"
+    }
+   }
+  ]
  }
 ]

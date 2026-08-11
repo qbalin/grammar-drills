@@ -690,5 +690,81 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-204-genitive-with-adjectives-q2",
+  "sectionId": "bn-204-genitive-with-adjectives",
+  "questions": [
+   {
+    "prompt": "Devotees of wisdom, for that is what ‘philosophers’ means.",
+    "answer": "sapientiae studiōsōs, id est enim philosophōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sapientiae",
+     "studiōsōs",
+     "id",
+     "est",
+     "enim",
+     "philosophōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 9"
+    }
+   },
+   {
+    "prompt": "Forgetful of kindnesses, never forgetting his country.",
+    "answer": "immemor beneficiōrum, memor patriae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "immemor",
+     "beneficiōrum",
+     "memor",
+     "patriae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 27"
+    }
+   },
+   {
+    "prompt": "A participant with my army in so many outrages.",
+    "answer": "tot flāgitiōrum exercituī meō cōnscius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tot",
+     "flāgitiōrum",
+     "exercituī",
+     "meō",
+     "cōnscius"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "1, 43"
+    }
+   },
+   {
+    "prompt": "You have always been more hungry for glory than any other nation.",
+    "answer": "semper appetentēs glōriae praeter cēterās gentīs fuistis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "semper",
+     "appetentēs",
+     "glōriae",
+     "praeter",
+     "cēterās",
+     "gentīs",
+     "fuistis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "7"
+    }
+   }
+  ]
  }
 ]

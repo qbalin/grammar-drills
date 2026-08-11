@@ -934,5 +934,81 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-112-deponent-verbs-q2",
+  "sectionId": "bn-112-deponent-verbs",
+  "questions": [
+   {
+    "prompt": "Often good material goes to waste without a craftsman: make the attempt and try.",
+    "answer": "Saepe bona māteria cessat sine artifice: temptā et experīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Saepe",
+     "bona",
+     "māteria",
+     "cessat",
+     "sine",
+     "artifice",
+     "temptā",
+     "et",
+     "experīre"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.16"
+    }
+   },
+   {
+    "prompt": "Light griefs speak out, but huge ones are struck dumb.",
+    "answer": "Cūrae levēs locuntur, ingentēs stupent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cūrae",
+     "levēs",
+     "locuntur",
+     "ingentēs",
+     "stupent"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Phaedra"
+    }
+   },
+   {
+    "prompt": "Anything best in its kind is looked on with respect.",
+    "answer": "habet venerātiōnem quidquid excellit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "habet",
+     "venerātiōnem",
+     "quidquid",
+     "excellit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 45"
+    }
+   },
+   {
+    "prompt": "The household was suspected.",
+    "answer": "familia in suspīciōnem est vocāta.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "familia",
+     "in",
+     "suspīciōnem",
+     "est",
+     "vocāta"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 10"
+    }
+   }
+  ]
  }
 ]

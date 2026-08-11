@@ -418,5 +418,87 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-164-simple-and-compound-sentences-q1",
+  "sectionId": "bn-164-simple-and-compound-sentences",
+  "questions": [
+   {
+    "prompt": "I ask it of you, protect me.",
+    "answer": "ā tē petō, mē dēfendās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ā",
+     "tē",
+     "petō",
+     "mē",
+     "dēfendās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "15, 8"
+    }
+   },
+   {
+    "prompt": "Prayers and tears had weight.",
+    "answer": "valēbant precēs et lacrimae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "valēbant",
+     "precēs",
+     "et",
+     "lacrimae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "34"
+    }
+   },
+   {
+    "prompt": "It came to pass the same night that there was a full moon.",
+    "answer": "eādem nocte accidit ut esset lūna plēna.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eādem",
+     "nocte",
+     "accidit",
+     "ut",
+     "esset",
+     "lūna",
+     "plēna"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 29, 1"
+    }
+   },
+   {
+    "prompt": "The estate which is in the territory which is called Sabine, that I maintain is mine.",
+    "answer": "fundus quī est in agrō, quī Sabīnus vocātur, eum meum esse aiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fundus",
+     "quī",
+     "est",
+     "in",
+     "agrō",
+     "quī",
+     "Sabīnus",
+     "vocātur",
+     "eum",
+     "meum",
+     "esse",
+     "aiō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "26"
+    }
+   }
+  ]
  }
 ]

@@ -351,5 +351,91 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-245-reciprocal-pronouns-q1",
+  "sectionId": "bn-245-reciprocal-pronouns",
+  "questions": [
+   {
+    "prompt": "They looked at one another and gazed at the arms soon to be surrendered, their right hands about to be defenseless, and their bodies exposed to the enemy.",
+    "answer": "Aliī aliōs intuērī, contemplārī arma mox trādenda et inermēs futūrās dextrās obnoxiaque corpora hostī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aliī",
+     "aliōs",
+     "intuērī",
+     "contemplārī",
+     "arma",
+     "mox",
+     "trādenda",
+     "et",
+     "inermēs",
+     "futūrās",
+     "dextrās",
+     "obnoxiaque",
+     "corpora",
+     "hostī"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "9.5.8"
+    }
+   },
+   {
+    "prompt": "These all differ among themselves in language, customs, and laws.",
+    "answer": "Hī omnēs linguā, īnstitūtīs, lēgibus inter sē differunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hī",
+     "omnēs",
+     "linguā",
+     "īnstitūtīs",
+     "lēgibus",
+     "inter",
+     "sē",
+     "differunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "We are united with each other by nature.",
+    "answer": "inter nōs nātūrā cōniūnctī sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "inter",
+     "nōs",
+     "nātūrā",
+     "cōniūnctī",
+     "sumus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "3, 66"
+    }
+   },
+   {
+    "prompt": "When they were helping each other.",
+    "answer": "cum alius aliī subsidium ferret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "alius",
+     "aliī",
+     "subsidium",
+     "ferret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 26, 2"
+    }
+   }
+  ]
  }
 ]

@@ -2981,5 +2981,688 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-186-the-dative-q19",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "If his case has been more helpful to Asicius than the hostility has been damaging.",
+    "answer": "sī Asiciō causa plūs prōfuit quam invidia nocuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "Asiciō",
+     "causa",
+     "plūs",
+     "prōfuit",
+     "quam",
+     "invidia",
+     "nocuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caelio",
+     "locus": "23"
+    }
+   },
+   {
+    "prompt": "Will you not stand out against this law?",
+    "answer": "nōnne huic lēgī resistētis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōnne",
+     "huic",
+     "lēgī",
+     "resistētis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Lege Agraria",
+     "locus": "2, 85"
+    }
+   },
+   {
+    "prompt": "Or was it I that brought conviction to Trebonius? a man to whom I should not have presumed even to offer advice.",
+    "answer": "an C. Trebōniō ego persuāsī? cui nē suādēre quidem ausus essem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "an",
+     "C",
+     "Trebōniō",
+     "ego",
+     "persuāsī",
+     "cui",
+     "nē",
+     "suādēre",
+     "quidem",
+     "ausus",
+     "essem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 27"
+    }
+   },
+   {
+    "prompt": "He runs across Clodius.",
+    "answer": "fit ob viam Clōdiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fit",
+     "ob",
+     "viam",
+     "Clōdiō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "29"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q20",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "For what patriot had he ever a good word?",
+    "answer": "cui bene dīxit umquam bonō?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cui",
+     "bene",
+     "dīxit",
+     "umquam",
+     "bonō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "110"
+    }
+   },
+   {
+    "prompt": "The last touch was not put upon his works.",
+    "answer": "manus extrēma nōn accessit operibus eius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "manus",
+     "extrēma",
+     "nōn",
+     "accessit",
+     "operibus",
+     "eius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "126"
+    }
+   },
+   {
+    "prompt": "Dolabella was on hand in all these battles.",
+    "answer": "omnibus adfuit hīs pugnīs Dolābella.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnibus",
+     "adfuit",
+     "hīs",
+     "pugnīs",
+     "Dolābella"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 75"
+    }
+   },
+   {
+    "prompt": "To him Pulio brings aid.",
+    "answer": "huic fert subsidium Puliō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "huic",
+     "fert",
+     "subsidium",
+     "Puliō"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 44, 13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q21",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "To many Antony threatens the same.",
+    "answer": "multīs idem minātur Antōnius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multīs",
+     "idem",
+     "minātur",
+     "Antōnius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "11, 2"
+    }
+   },
+   {
+    "prompt": "The rest betook themselves to flight.",
+    "answer": "reliquī sēsē fugae mandārunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "reliquī",
+     "sēsē",
+     "fugae",
+     "mandārunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 12, 3"
+    }
+   },
+   {
+    "prompt": "Unto your keeping do I commit the little son of mine.",
+    "answer": "commendō vōbīs meum parvum fīlium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "commendō",
+     "vōbīs",
+     "meum",
+     "parvum",
+     "fīlium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 23"
+    }
+   },
+   {
+    "prompt": "Many people put themselves in the hands of utter strangers.",
+    "answer": "multī sē aliēnissimīs crēdidērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multī",
+     "sē",
+     "aliēnissimīs",
+     "crēdidērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 31, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q22",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "I shall not lay any novelty before you.",
+    "answer": "nihil novī vōbīs adferam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "novī",
+     "vōbīs",
+     "adferam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 21"
+    }
+   },
+   {
+    "prompt": "The law always puts the general safety before the safety of the individual.",
+    "answer": "lēgēs omnium salūtem singulōrum salūtī antepōnunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgēs",
+     "omnium",
+     "salūtem",
+     "singulōrum",
+     "salūtī",
+     "antepōnunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "3, 64"
+    }
+   },
+   {
+    "prompt": "They would not cast his person before ravenous beasts.",
+    "answer": "nōluērunt ferīs corpus obicere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōluērunt",
+     "ferīs",
+     "corpus",
+     "obicere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "71"
+    }
+   },
+   {
+    "prompt": "We often put ducks’ eggs under hens.",
+    "answer": "anitum ōva gallīnīs saepe suppōnimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "anitum",
+     "ōva",
+     "gallīnīs",
+     "saepe",
+     "suppōnimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 124"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q23",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "No news has got to us this long time.",
+    "answer": "iam diū nihil novī ad nōs adferēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iam",
+     "diū",
+     "nihil",
+     "novī",
+     "ad",
+     "nōs",
+     "adferēbātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "2, 14"
+    }
+   },
+   {
+    "prompt": "Just compare this peace with that war.",
+    "answer": "cōnferte hanc pācem cum illō bellō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnferte",
+     "hanc",
+     "pācem",
+     "cum",
+     "illō",
+     "bellō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 115"
+    }
+   },
+   {
+    "prompt": "You presented your clerk with a ring.",
+    "answer": "scrībam tuum ānulō dōnāstī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "scrībam",
+     "tuum",
+     "ānulō",
+     "dōnāstī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3, 185"
+    }
+   },
+   {
+    "prompt": "For a senator it is indispensable to be conversant with government.",
+    "answer": "est senātōrī necessārium nōsse rem pūblicam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "est",
+     "senātōrī",
+     "necessārium",
+     "nōsse",
+     "rem",
+     "pūblicam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3, 41"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q24",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "A style better suited to the parade than to the field.",
+    "answer": "ōrātiōnis genus pompae quam pugnae aptius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ōrātiōnis",
+     "genus",
+     "pompae",
+     "quam",
+     "pugnae",
+     "aptius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "42"
+    }
+   },
+   {
+    "prompt": "Save the son for the father, the father for the son.",
+    "answer": "cōnservāte parentī fīlium, parentem fīliō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnservāte",
+     "parentī",
+     "fīlium",
+     "parentem",
+     "fīliō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caelio",
+     "locus": "80"
+    }
+   },
+   {
+    "prompt": "I here proclaim myself captain for this war.",
+    "answer": "huic ego mē bellō ducem profiteor.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "huic",
+     "ego",
+     "mē",
+     "bellō",
+     "ducem",
+     "profiteor"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 11"
+    }
+   },
+   {
+    "prompt": "They cast themselves at Caesar’s feet.",
+    "answer": "sēsē Caesarī ad pedēs prōiēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sēsē",
+     "Caesarī",
+     "ad",
+     "pedēs",
+     "prōiēcērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 31, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q25",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "It dashed the hopes of our soldiers.",
+    "answer": "nostrīs mīlitibus spem minuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nostrīs",
+     "mīlitibus",
+     "spem",
+     "minuit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 33, 5"
+    }
+   },
+   {
+    "prompt": "Man has a resemblance to god.",
+    "answer": "est hominī cum deō similitūdō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "est",
+     "hominī",
+     "cum",
+     "deō",
+     "similitūdō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "1, 25"
+    }
+   },
+   {
+    "prompt": "This was all Caesar lacked.",
+    "answer": "hoc ūnum Caesarī dēfuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "ūnum",
+     "Caesarī",
+     "dēfuit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 26, 5"
+    }
+   },
+   {
+    "prompt": "Who had given his sons the names Philip and Alexander.",
+    "answer": "quī fīliīs Philippum atque Alexandrum nōmina inposuerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quī",
+     "fīliīs",
+     "Philippum",
+     "atque",
+     "Alexandrum",
+     "nōmina",
+     "inposuerat"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "35, 47, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q26",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "Can good prove bad for any human being?",
+    "answer": "potestne bonum cuiquam malō esse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "potestne",
+     "bonum",
+     "cuiquam",
+     "malō",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "7"
+    }
+   },
+   {
+    "prompt": "Cassius used to ask for ever and ever, who the person benefited was who the gainer was.",
+    "answer": "L. Cassius identidem quaerere solēbat, cui bonō fuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "L",
+     "Cassius",
+     "identidem",
+     "quaerere",
+     "solēbat",
+     "cui",
+     "bonō",
+     "fuisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "84"
+    }
+   },
+   {
+    "prompt": "My visit did not prove a bother or an expense to a soul.",
+    "answer": "nēminī meus adventus labōrī aut sūmptuī fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nēminī",
+     "meus",
+     "adventus",
+     "labōrī",
+     "aut",
+     "sūmptuī",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 16"
+    }
+   },
+   {
+    "prompt": "That the unrestricted occupancy of Dardania would prove comforting.",
+    "answer": "possessiōnem līberam Dardaniae sōlāciō fore.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "possessiōnem",
+     "līberam",
+     "Dardaniae",
+     "sōlāciō",
+     "fore"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "40, 57, 9"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-186-the-dative-q27",
+  "sectionId": "bn-186-the-dative",
+  "questions": [
+   {
+    "prompt": "The peace that prevailed at home was a solid comfort.",
+    "answer": "domestica quiēs sōlācium fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "domestica",
+     "quiēs",
+     "sōlācium",
+     "fuit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "6, 30, 9"
+    }
+   },
+   {
+    "prompt": "After lack of wealth began to count as a stigma.",
+    "answer": "postquam paupertās probrō habērī coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postquam",
+     "paupertās",
+     "probrō",
+     "habērī",
+     "coepit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "12, 1"
+    }
+   },
+   {
+    "prompt": "He gave the soldiers a hundred oxen as a present.",
+    "answer": "centum bovēs mīlitibus dōnō dedit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "centum",
+     "bovēs",
+     "mīlitibus",
+     "dōnō",
+     "dedit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "7, 37, 3"
+    }
+   },
+   {
+    "prompt": "The men that had been left as a protection against the camp, went as a reinforcement to their own side.",
+    "answer": "iī, quī praesidiō contrā castra erant relictī, subsidiō suīs iērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iī",
+     "quī",
+     "praesidiō",
+     "contrā",
+     "castra",
+     "erant",
+     "relictī",
+     "subsidiō",
+     "suīs",
+     "iērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 62, 8"
+    }
+   }
+  ]
  }
 ]

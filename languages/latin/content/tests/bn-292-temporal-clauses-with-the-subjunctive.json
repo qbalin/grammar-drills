@@ -3821,5 +3821,2685 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q26",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "It is often seen, in a trifling matter of money, how unprincipled some people are.",
+    "answer": "Quīdam saepe in parvā pecūniā perspiciuntur quam sint levēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quīdam",
+     "saepe",
+     "in",
+     "parvā",
+     "pecūniā",
+     "perspiciuntur",
+     "quam",
+     "sint",
+     "levēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "63"
+    }
+   },
+   {
+    "prompt": "The enemy pour round if they can find entrance.",
+    "answer": "Circumfunduntur hostēs sī quem aditum reperīre possent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Circumfunduntur",
+     "hostēs",
+     "sī",
+     "quem",
+     "aditum",
+     "reperīre",
+     "possent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.37"
+    }
+   },
+   {
+    "prompt": "I would rather a wise enemy should fear you, than stupid fellow-citizens admire you.",
+    "answer": "mālō tē sapiēns hostis metuat, quam stultī cīvēs laudent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mālō",
+     "tē",
+     "sapiēns",
+     "hostis",
+     "metuat",
+     "quam",
+     "stultī",
+     "cīvēs",
+     "laudent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22, 39, 20"
+    }
+   },
+   {
+    "prompt": "He requests him to make an end of entreaty.",
+    "answer": "rogat fīnem ōrandī faciat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rogat",
+     "fīnem",
+     "ōrandī",
+     "faciat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 20, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q27",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I not only exhort you, but more than that I beg and entreat you, pull yourself together and quit you like a man.",
+    "answer": "nōn hortor sōlum sed etiam rogō atque ōrō, tē colligās virumque praebeās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "hortor",
+     "sōlum",
+     "sed",
+     "etiam",
+     "rogō",
+     "atque",
+     "ōrō",
+     "tē",
+     "colligās",
+     "virumque",
+     "praebeās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "5, 18, 1"
+    }
+   },
+   {
+    "prompt": "I charge you think again and again what you are coming to.",
+    "answer": "postulō etiam atque etiam cōnsīderēs quō prōgrediāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postulō",
+     "etiam",
+     "atque",
+     "etiam",
+     "cōnsīderēs",
+     "quō",
+     "prōgrediāre"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 45, 10"
+    }
+   },
+   {
+    "prompt": "I advise you to consider what you are doing. I earnestly recommend you to stop.",
+    "answer": "tē moneō videās, quid agās. magnō opere cēnseō, dēsistās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tē",
+     "moneō",
+     "videās",
+     "quid",
+     "agās",
+     "magnō",
+     "opere",
+     "cēnseō",
+     "dēsistās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 174"
+    }
+   },
+   {
+    "prompt": "He warns him he must pursue his march with care.",
+    "answer": "hunc admonet iter cautē faciat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hunc",
+     "admonet",
+     "iter",
+     "cautē",
+     "faciat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 49, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q28",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "He says they must all concentrate their attack on Indutiomarus.",
+    "answer": "praecipit ūnum omnēs peterent Indutiomarum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "praecipit",
+     "ūnum",
+     "omnēs",
+     "peterent",
+     "Indutiomarum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 58, 5"
+    }
+   },
+   {
+    "prompt": "The senate decreed the consuls must see to it that the commonwealth received no harm.",
+    "answer": "senātus dēcrēvit darent operam cōnsulēs nē quid rēs pūblica dētrīmentī caperet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "senātus",
+     "dēcrēvit",
+     "darent",
+     "operam",
+     "cōnsulēs",
+     "nē",
+     "quid",
+     "rēs",
+     "pūblica",
+     "dētrīmentī",
+     "caperet"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "29, 2"
+    }
+   },
+   {
+    "prompt": "He tells the soldiers they must stop fighting a little while.",
+    "answer": "mīlitēs certiōrēs facit, paulisper intermitterent proelium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīlitēs",
+     "certiōrēs",
+     "facit",
+     "paulisper",
+     "intermitterent",
+     "proelium"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 5, 3"
+    }
+   },
+   {
+    "prompt": "Go tell the fathers they must fortify Rome town.",
+    "answer": "abī, nūntiā patribus urbem Rōmānam mūniant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "abī",
+     "nūntiā",
+     "patribus",
+     "urbem",
+     "Rōmānam",
+     "mūniant"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22, 49, 10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q29",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "He writes to Labienus he must come with a legion.",
+    "answer": "scrībit Labiēnō cum legiōne veniat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "scrībit",
+     "Labiēnō",
+     "cum",
+     "legiōne",
+     "veniat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 46, 3"
+    }
+   },
+   {
+    "prompt": "It is myself you should love, not my possessions.",
+    "answer": "mē ipsum amēs oportet, nōn mea.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mē",
+     "ipsum",
+     "amēs",
+     "oportet",
+     "nōn",
+     "mea"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 85"
+    }
+   },
+   {
+    "prompt": "Though everybody may growl, I will say what I think.",
+    "answer": "fremant omnēs licet, dīcam quod sentiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fremant",
+     "omnēs",
+     "licet",
+     "dīcam",
+     "quod",
+     "sentiō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 195"
+    }
+   },
+   {
+    "prompt": "Albinus induces him to ask of the senate the throne of Numidia.",
+    "answer": "huic Sp. Albīnus persuādet rēgnum Numidiae ā senātū petat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "huic",
+     "Sp",
+     "Albīnus",
+     "persuādet",
+     "rēgnum",
+     "Numidiae",
+     "ā",
+     "senātū",
+     "petat"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "35, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q30",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Do you ask whether he is a good speaker?",
+    "answer": "quaeris num disertus sit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quaeris",
+     "num",
+     "disertus",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Plancio",
+     "locus": "62"
+    }
+   },
+   {
+    "prompt": "Consider whether you ought to have any hesitation.",
+    "answer": "vidēte num dubitandum vōbīs sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vidēte",
+     "num",
+     "dubitandum",
+     "vōbīs",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "19"
+    }
+   },
+   {
+    "prompt": "I was waiting to see whether you would write anything.",
+    "answer": "exspectābam, sī quid scrīberēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "exspectābam",
+     "sī",
+     "quid",
+     "scrīberēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "16, 2. 4"
+    }
+   },
+   {
+    "prompt": "Let us ask this question, whether it is true or false.",
+    "answer": "hoc quaerāmus, vērum sit an falsum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "quaerāmus",
+     "vērum",
+     "sit",
+     "an",
+     "falsum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "124"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q31",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I asked Catiline whether he had been at the meeting or not.",
+    "answer": "quaesīvī ā Catilīnā in conventū fuisset, necne.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quaesīvī",
+     "ā",
+     "Catilīnā",
+     "in",
+     "conventū",
+     "fuisset",
+     "necne"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 13"
+    }
+   },
+   {
+    "prompt": "It makes a vast difference whether wrong be done in heat of passion, or with deliberate intent.",
+    "answer": "permultum interest utrum perturbātiōne animī, an cōnsultō fīat iniūria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "permultum",
+     "interest",
+     "utrum",
+     "perturbātiōne",
+     "animī",
+     "an",
+     "cōnsultō",
+     "fīat",
+     "iniūria"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 27"
+    }
+   },
+   {
+    "prompt": "I ask whether you would rather have him like Brutus or like Antony.",
+    "answer": "quaerō, eum Brūtīne similem mālīs an Antōniī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quaerō",
+     "eum",
+     "Brūtīne",
+     "similem",
+     "mālīs",
+     "an",
+     "Antōniī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "10, 5"
+    }
+   },
+   {
+    "prompt": "Let me know whether I am a captive or a mother.",
+    "answer": "sine sciam captīva māterne sim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sine",
+     "sciam",
+     "captīva",
+     "māterne",
+     "sim"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 40, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q32",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I don’t know but it is possible.",
+    "answer": "haud sciō an fierī possit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haud",
+     "sciō",
+     "an",
+     "fierī",
+     "possit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3, 162"
+    }
+   },
+   {
+    "prompt": "In oratory I fancy he would have had no peer.",
+    "answer": "ēloquentiā nesciō an habuisset parem nēminem,.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ēloquentiā",
+     "nesciō",
+     "an",
+     "habuisset",
+     "parem",
+     "nēminem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "126"
+    }
+   },
+   {
+    "prompt": "Will he nill he, it is hard to know.",
+    "answer": "velit nōlit scīre difficile est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "velit",
+     "nōlit",
+     "scīre",
+     "difficile",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "3, 8, 4"
+    }
+   },
+   {
+    "prompt": "You can see how he looks down on everybody.",
+    "answer": "vidētis ut omnēs dēspiciat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vidētis",
+     "ut",
+     "omnēs",
+     "dēspiciat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "135"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q33",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I am eager to know how you do and how you are amusing yourself.",
+    "answer": "quid agās et ut tē oblectēs scīre cupiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "agās",
+     "et",
+     "ut",
+     "tē",
+     "oblectēs",
+     "scīre",
+     "cupiō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "2, 3, 7"
+    }
+   },
+   {
+    "prompt": "And observe, how everything is changed.",
+    "answer": "et vidē, quam conversa rēs est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "et",
+     "vidē",
+     "quam",
+     "conversa",
+     "rēs",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "8, 13, 2"
+    }
+   },
+   {
+    "prompt": "As to his moving a great many Germans over to Gaul, that he did for self-protection.",
+    "answer": "quod multitūdinem Germānōrum in Galliam trādūcat, id sē suī mūniendī causā facere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "multitūdinem",
+     "Germānōrum",
+     "in",
+     "Galliam",
+     "trādūcat",
+     "id",
+     "sē",
+     "suī",
+     "mūniendī",
+     "causā",
+     "facere"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 6"
+    }
+   },
+   {
+    "prompt": "There was added this fact, that they lamented that their own children were torn from them then too they lamented.",
+    "answer": "accēdēbat, quod suōs ab sē līberōs abstrāctōs dolēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "accēdēbat",
+     "quod",
+     "suōs",
+     "ab",
+     "sē",
+     "līberōs",
+     "abstrāctōs",
+     "dolēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 2, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q34",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Caesar told off the kindnesses of the senate to the man, the fact that ‘he had been styled king by the senate’.",
+    "answer": "Caesar senātūs in eum beneficia commemorāvit, quod rēx appellātus esset ā senātū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "senātūs",
+     "in",
+     "eum",
+     "beneficia",
+     "commemorāvit",
+     "quod",
+     "rēx",
+     "appellātus",
+     "esset",
+     "ā",
+     "senātū"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 43, 4"
+    }
+   },
+   {
+    "prompt": "In this one circumstance do we perhaps most of all surpass brutes, that we can talk with each other.",
+    "answer": "hōc ūnō praestāmus vel maximē ferīs, quod conloquimur inter nōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hōc",
+     "ūnō",
+     "praestāmus",
+     "vel",
+     "maximē",
+     "ferīs",
+     "quod",
+     "conloquimur",
+     "inter",
+     "nōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 32"
+    }
+   },
+   {
+    "prompt": "Thanks to his untiring industry, and to his bringing his winning manners to bear, he figured among the leaders of the bar.",
+    "answer": "labōre et industriā et quod adhibēbat grātiam, in prīncipibus patrōnīs fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "labōre",
+     "et",
+     "industriā",
+     "et",
+     "quod",
+     "adhibēbat",
+     "grātiam",
+     "in",
+     "prīncipibus",
+     "patrōnīs",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "233"
+    }
+   },
+   {
+    "prompt": "Nay more, the very existence of our allies is endangered.",
+    "answer": "quid quod salūs sociōrum in perīculum vocātur?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "quod",
+     "salūs",
+     "sociōrum",
+     "in",
+     "perīculum",
+     "vocātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q35",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "You are very kind in helping me.",
+    "answer": "bene facis quod mē adiuvās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bene",
+     "facis",
+     "quod",
+     "mē",
+     "adiuvās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "3, 16"
+    }
+   },
+   {
+    "prompt": "I’m glad that I interrupted you.",
+    "answer": "gaudeō quod tē interpellāvī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "gaudeō",
+     "quod",
+     "tē",
+     "interpellāvī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3, 1"
+    }
+   },
+   {
+    "prompt": "That you have ever had good intentions, I commend.",
+    "answer": "quod bene cōgitāstī aliquandō, laudō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "bene",
+     "cōgitāstī",
+     "aliquandō",
+     "laudō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 34"
+    }
+   },
+   {
+    "prompt": "Panaetius eulogizes Africanus, ‘for being so abstinent’.",
+    "answer": "laudat Africānum Panaetius, quod fuerit abstinēns.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "laudat",
+     "Africānum",
+     "Panaetius",
+     "quod",
+     "fuerit",
+     "abstinēns"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2, 76"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q36",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "As when Socrates was charged with ‘demoralizing the rising generation’.",
+    "answer": "ut cum Sōcratēs accūsātus est quod corrumperet iuventūtem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "cum",
+     "Sōcratēs",
+     "accūsātus",
+     "est",
+     "quod",
+     "corrumperet",
+     "iuventūtem"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "4, 4, 5"
+    }
+   },
+   {
+    "prompt": "Fight it out rather than be a slave.",
+    "answer": "dēpugnā potius quam serviās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dēpugnā",
+     "potius",
+     "quam",
+     "serviās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "7, 7, 7"
+    }
+   },
+   {
+    "prompt": "I will submit to the charge of inconsistency rather than be cruel towards you.",
+    "answer": "potius vituperātiōnem incōnstantiae suscipiam, quam in tē sim crūdēlis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "potius",
+     "vituperātiōnem",
+     "incōnstantiae",
+     "suscipiam",
+     "quam",
+     "in",
+     "tē",
+     "sim",
+     "crūdēlis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 105"
+    }
+   },
+   {
+    "prompt": "A-sleeping always before they felt sleepy.",
+    "answer": "dormīre priusquam somni cupīdō esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dormīre",
+     "priusquam",
+     "somni",
+     "cupīdō",
+     "esset"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "13, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q37",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Most of them were slain before they could see the hidden enemy.",
+    "answer": "plērīque interfectī sunt, priusquam occultum hostem vidērent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "plērīque",
+     "interfectī",
+     "sunt",
+     "priusquam",
+     "occultum",
+     "hostem",
+     "vidērent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "35, 29, 3"
+    }
+   },
+   {
+    "prompt": "Before I could utter a word he arose from his seat.",
+    "answer": "antequam verbum facerem, dē sellā surrēxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "antequam",
+     "verbum",
+     "facerem",
+     "dē",
+     "sellā",
+     "surrēxit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 147"
+    }
+   },
+   {
+    "prompt": "He arrived before Pompey should be able to learn of his coming.",
+    "answer": "pervēnit priusquam Pompēius sentīre posset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pervēnit",
+     "priusquam",
+     "Pompēius",
+     "sentīre",
+     "posset"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 67, 4"
+    }
+   },
+   {
+    "prompt": "Before they should be able to hear of my arrival, I proceeded to Macedonia.",
+    "answer": "antequam dē meō adventū audīre potuissent, in Macedoniam perrēxī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "antequam",
+     "dē",
+     "meō",
+     "adventū",
+     "audīre",
+     "potuissent",
+     "in",
+     "Macedoniam",
+     "perrēxī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Plancio",
+     "locus": "98"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q38",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "He asked to be lifted into his father’s chariot.",
+    "answer": "optāvit ut in currum patris tollerētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "optāvit",
+     "ut",
+     "in",
+     "currum",
+     "patris",
+     "tollerētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 94"
+    }
+   },
+   {
+    "prompt": "I hope and pray that that nation may not stir.",
+    "answer": "optō nē sē illa gēns moveat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "optō",
+     "nē",
+     "sē",
+     "illa",
+     "gēns",
+     "moveat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "12, 19, 2"
+    }
+   },
+   {
+    "prompt": "He urged him to remain steadfast in duty.",
+    "answer": "hortātus est utī in officiō manēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hortātus",
+     "est",
+     "utī",
+     "in",
+     "officiō",
+     "manēret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 4, 2"
+    }
+   },
+   {
+    "prompt": "He orders his men to do the same.",
+    "answer": "suīs, ut idem faciant, imperat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "suīs",
+     "ut",
+     "idem",
+     "faciant",
+     "imperat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 37, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q39",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "He ordered his men not to throw any weapon at all back.",
+    "answer": "suīs imperāvit nē quod omnīnō tēlum rēicerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "suīs",
+     "imperāvit",
+     "nē",
+     "quod",
+     "omnīnō",
+     "tēlum",
+     "rēicerent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 46, 2"
+    }
+   },
+   {
+    "prompt": "He allowed this man to quarter his legion in these parts.",
+    "answer": "huic permīsit, utī in hīs locīs legiōnem conlocāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "huic",
+     "permīsit",
+     "utī",
+     "in",
+     "hīs",
+     "locīs",
+     "legiōnem",
+     "conlocāret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 1, 3"
+    }
+   },
+   {
+    "prompt": "That his practice and that of the Roman nation would not allow him to desert his allies.",
+    "answer": "neque suam neque populī Rōmānī cōnsuētūdinem patī, utī sociōs dēsereret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "suam",
+     "neque",
+     "populī",
+     "Rōmānī",
+     "cōnsuētūdinem",
+     "patī",
+     "utī",
+     "sociōs",
+     "dēsereret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 45, 1"
+    }
+   },
+   {
+    "prompt": "And that his object was not to hold the army himself, but to prevent the other side from having an army which they could use against him.",
+    "answer": "neque id agere ut exercitum teneat ipse, sed nē illī habeant quō contrā sē ūtī possint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "id",
+     "agere",
+     "ut",
+     "exercitum",
+     "teneat",
+     "ipse",
+     "sed",
+     "nē",
+     "illī",
+     "habeant",
+     "quō",
+     "contrā",
+     "sē",
+     "ūtī",
+     "possint"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 85, 11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q40",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The story of this war prevented the Sappinatians from hazarding an engagement.",
+    "answer": "eius bellī fāma effēcit nē sē pugnae committerent Sappīnātēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eius",
+     "bellī",
+     "fāma",
+     "effēcit",
+     "nē",
+     "sē",
+     "pugnae",
+     "committerent",
+     "Sappīnātēs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "5, 32, 4"
+    }
+   },
+   {
+    "prompt": "If we do not succeed in making Chrysogonus satisfied with our money without his aiming at our life.",
+    "answer": "sī ā Chrȳsogonō nōn impetrāmus ut pecūniā nostrā contentus sit, vītam nē petat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "ā",
+     "Chrȳsogonō",
+     "nōn",
+     "impetrāmus",
+     "ut",
+     "pecūniā",
+     "nostrā",
+     "contentus",
+     "sit",
+     "vītam",
+     "nē",
+     "petat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "150"
+    }
+   },
+   {
+    "prompt": "That rules of war entitled conquerors to lord it over conquered.",
+    "answer": "iūs esse bellī ut quī vīcissent hīs quōs vīcissent imperārent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iūs",
+     "esse",
+     "bellī",
+     "ut",
+     "quī",
+     "vīcissent",
+     "hīs",
+     "quōs",
+     "vīcissent",
+     "imperārent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 36, 1"
+    }
+   },
+   {
+    "prompt": "Who does not know that the first rule of history is that it shall not venture to say anything false?",
+    "answer": "quis nescit prīmam esse historiae lēgem, nē quid falsī dīcere audeat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "nescit",
+     "prīmam",
+     "esse",
+     "historiae",
+     "lēgem",
+     "nē",
+     "quid",
+     "falsī",
+     "dīcere",
+     "audeat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 62"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q41",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The first duty of justice is that a man harm nobody.",
+    "answer": "iūstitiae prīmum mūnus est ut nē cui quis noceat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iūstitiae",
+     "prīmum",
+     "mūnus",
+     "est",
+     "ut",
+     "nē",
+     "cui",
+     "quis",
+     "noceat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 20"
+    }
+   },
+   {
+    "prompt": "I have no fear but I may make my services acceptable in the eyes of Servilius.",
+    "answer": "nōn vereor nē hoc officium meum P. Servīliō nōn probem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "vereor",
+     "nē",
+     "hoc",
+     "officium",
+     "meum",
+     "P",
+     "Servīliō",
+     "nōn",
+     "probem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 82"
+    }
+   },
+   {
+    "prompt": "I rather think he was king over savages.",
+    "answer": "vereor nē barbarōrum rēx fuerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vereor",
+     "nē",
+     "barbarōrum",
+     "rēx",
+     "fuerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 58"
+    }
+   },
+   {
+    "prompt": "I rather think my conjecture is in better keeping with the facts.",
+    "answer": "vidē nē mea coniectūra multō sit vērior,.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vidē",
+     "nē",
+     "mea",
+     "coniectūra",
+     "multō",
+     "sit",
+     "vērior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "97"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q42",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Was I to fear being charged with aspiring to a throne?",
+    "answer": "ego mē cupiditātis rēgnī crīmen subitūrum timērem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "mē",
+     "cupiditātis",
+     "rēgnī",
+     "crīmen",
+     "subitūrum",
+     "timērem"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 7, 9"
+    }
+   },
+   {
+    "prompt": "All precaution is taken by Caesar that no harm be done them, and that nobody be compelled to take the oath against his will.",
+    "answer": "nē quid eīs noceātur neu quis invītus sacrāmentum dīcere cōgātur ā Caesare cavētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "quid",
+     "eīs",
+     "noceātur",
+     "neu",
+     "quis",
+     "invītus",
+     "sacrāmentum",
+     "dīcere",
+     "cōgātur",
+     "ā",
+     "Caesare",
+     "cavētur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 86, 4"
+    }
+   },
+   {
+    "prompt": "Thanks to this display of retainers he succeeded in avoiding trial.",
+    "answer": "per eōs, nē causam dīceret, sē ēripuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "per",
+     "eōs",
+     "nē",
+     "causam",
+     "dīceret",
+     "sē",
+     "ēripuit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 4, 2"
+    }
+   },
+   {
+    "prompt": "Grief prevents me from writing more.",
+    "answer": "plūra nē scrībam, dolōre impedior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "plūra",
+     "nē",
+     "scrībam",
+     "dolōre",
+     "impedior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "11, 13, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q43",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "They made their march look exactly like a stampede.",
+    "answer": "fēcērunt ut cōnsimilis fugae profectiō vidērētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fēcērunt",
+     "ut",
+     "cōnsimilis",
+     "fugae",
+     "profectiō",
+     "vidērētur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 11, 1"
+    }
+   },
+   {
+    "prompt": "Your conspicuous position makes it impossible for you to do wrong without great peril.",
+    "answer": "splendor vester facit ut peccāre sine summō perīculō nōn possītis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "splendor",
+     "vester",
+     "facit",
+     "ut",
+     "peccāre",
+     "sine",
+     "summō",
+     "perīculō",
+     "nōn",
+     "possītis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 22"
+    }
+   },
+   {
+    "prompt": "It is sometimes the case that we are roused to a loftier style in oratory by sheer circumstance.",
+    "answer": "fit ut nātūrā ipsā ad ōrnātius dīcendī genus excitēmur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fit",
+     "ut",
+     "nātūrā",
+     "ipsā",
+     "ad",
+     "ōrnātius",
+     "dīcendī",
+     "genus",
+     "excitēmur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 338"
+    }
+   },
+   {
+    "prompt": "It is possible that I am mistaken.",
+    "answer": "potest fierī ut fallar.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "potest",
+     "fierī",
+     "ut",
+     "fallar"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "13, 73, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q44",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "It must be the case that you have made his acquaintance yourself.",
+    "answer": "fierī nōn potest ut eum tū nōn cōgnōverīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fierī",
+     "nōn",
+     "potest",
+     "ut",
+     "eum",
+     "tū",
+     "nōn",
+     "cōgnōverīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 190"
+    }
+   },
+   {
+    "prompt": "This is a common trouble in free communities, that envy is the attendant of a great name.",
+    "answer": "est hōc commūne vitium in līberīs cīvitātibus, ut invidia glōriae comes sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "est",
+     "hōc",
+     "commūne",
+     "vitium",
+     "in",
+     "līberīs",
+     "cīvitātibus",
+     "ut",
+     "invidia",
+     "glōriae",
+     "comes",
+     "sit"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "12, 3, 3"
+    }
+   },
+   {
+    "prompt": "My next task is to prove.",
+    "answer": "proximum est, ut doceam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "proximum",
+     "est",
+     "ut",
+     "doceam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 73"
+    }
+   },
+   {
+    "prompt": "The consequence was that Caesar could not allow any very distant excursion from the main line of march.",
+    "answer": "relinquēbātur ut neque longius ab āgmine legiōnum discēdī Caesar paterētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "relinquēbātur",
+     "ut",
+     "neque",
+     "longius",
+     "ab",
+     "āgmine",
+     "legiōnum",
+     "discēdī",
+     "Caesar",
+     "paterētur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 19, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q45",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Lastly, I must prove that everything is made for man.",
+    "answer": "restat ut doceam omnia hominum causā facta esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "restat",
+     "ut",
+     "doceam",
+     "omnia",
+     "hominum",
+     "causā",
+     "facta",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 154"
+    }
+   },
+   {
+    "prompt": "Then, too, they could stand the gale.",
+    "answer": "accēdēbat ut tempestātem ferrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "accēdēbat",
+     "ut",
+     "tempestātem",
+     "ferrent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 13, 9"
+    }
+   },
+   {
+    "prompt": "Thus it follows that every bodily substance is mortal.",
+    "answer": "ita efficitur ut omne corpus mortāle sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ita",
+     "efficitur",
+     "ut",
+     "omne",
+     "corpus",
+     "mortāle",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "3, 30"
+    }
+   },
+   {
+    "prompt": "It was with great reluctance that I expelled Flamininus from the senate.",
+    "answer": "invītus fēcī ut L. Flāminīnum ē senātū ēicerem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "invītus",
+     "fēcī",
+     "ut",
+     "L",
+     "Flāminīnum",
+     "ē",
+     "senātū",
+     "ēicerem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "42"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q46",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "That all the Gauls must do just as the Helvetians had done and move away from home.",
+    "answer": "omnibus Gallīs idem esse faciendum, quod Helvētiī fēcerint, ut domō ēmigrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnibus",
+     "Gallīs",
+     "idem",
+     "esse",
+     "faciendum",
+     "quod",
+     "Helvētiī",
+     "fēcerint",
+     "ut",
+     "domō",
+     "ēmigrent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 31, 14"
+    }
+   },
+   {
+    "prompt": "When the Helvetians learned that the Roman commander had done in a single day what they had found it hard themselves to do in twenty, namely cross the river, they sent deputies.",
+    "answer": "Helvētiī, cum id, quod ipsī diēbus XX aegerrimē cōnfēcerant, ut flūmen trānsīrent, illum ūnō diē fēcisse intellegerent, lēgātōs mittunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Helvētiī",
+     "cum",
+     "id",
+     "quod",
+     "ipsī",
+     "diēbus",
+     "XX",
+     "aegerrimē",
+     "cōnfēcerant",
+     "ut",
+     "flūmen",
+     "trānsīrent",
+     "illum",
+     "ūnō",
+     "diē",
+     "fēcisse",
+     "intellegerent",
+     "lēgātōs",
+     "mittunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 13, 2"
+    }
+   },
+   {
+    "prompt": "It was due to a variety of reasons that the Gauls suddenly conceived the idea of making war again.",
+    "answer": "id aliquot dē causīs acciderat, ut subitō Gallī bellī renovandi cōnsilium caperent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "aliquot",
+     "dē",
+     "causīs",
+     "acciderat",
+     "ut",
+     "subitō",
+     "Gallī",
+     "bellī",
+     "renovandi",
+     "cōnsilium",
+     "caperent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 2, 2"
+    }
+   },
+   {
+    "prompt": "So far from these things being made for brutes, we see that brutes themselves were created for man.",
+    "answer": "tantum abest ut haec bēstiārum causā parāta sint, ut ipsās bēstiās hominum grātiā generātās esse videāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tantum",
+     "abest",
+     "ut",
+     "haec",
+     "bēstiārum",
+     "causā",
+     "parāta",
+     "sint",
+     "ut",
+     "ipsās",
+     "bēstiās",
+     "hominum",
+     "grātiā",
+     "generātās",
+     "esse",
+     "videāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 158"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q47",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "So far from being afraid of death, he fell in battle for his country.",
+    "answer": "erat ita nōn timidus ad mortem, ut in aciē sit ob rem pūblicam interfectus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "erat",
+     "ita",
+     "nōn",
+     "timidus",
+     "ad",
+     "mortem",
+     "ut",
+     "in",
+     "aciē",
+     "sit",
+     "ob",
+     "rem",
+     "pūblicam",
+     "interfectus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 63"
+    }
+   },
+   {
+    "prompt": "What is to hinder his being happy?",
+    "answer": "quid obstat, quōminus sit beātus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "obstat",
+     "quōminus",
+     "sit",
+     "beātus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 95"
+    }
+   },
+   {
+    "prompt": "And he did not decline to submit to the penalty of the law.",
+    "answer": "neque recūsāvit quōminus lēgis poenam subīret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "recūsāvit",
+     "quōminus",
+     "lēgis",
+     "poenam",
+     "subīret"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "15, 8, 2"
+    }
+   },
+   {
+    "prompt": "If it was bodily suffering that kept you from coming to the performances, I think more highly of your luck than of your sense.",
+    "answer": "sī tē dolor corporis tenuit, quōminus ad lūdōs venīrēs, fortūnae magis tribuō quam sapientiae tuae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "tē",
+     "dolor",
+     "corporis",
+     "tenuit",
+     "quōminus",
+     "ad",
+     "lūdōs",
+     "venīrēs",
+     "fortūnae",
+     "magis",
+     "tribuō",
+     "quam",
+     "sapientiae",
+     "tuae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "7, 1, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q48",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "There was no hesitation in granting peace.",
+    "answer": "nec dubitātum quōminus pācem concēderent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nec",
+     "dubitātum",
+     "quōminus",
+     "pācem",
+     "concēderent"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "2, 45"
+    }
+   },
+   {
+    "prompt": "There is no reason why I should not retire.",
+    "answer": "quīn dēcēdam, nūlla causa est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quīn",
+     "dēcēdam",
+     "nūlla",
+     "causa",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "2, 17, 1"
+    }
+   },
+   {
+    "prompt": "I left no stone unturned to prevent Pompey from joining Caesar.",
+    "answer": "nihil praetermīsī, quīn Pompēium ā Caesaris coniūnctiōne āvocārem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "praetermīsī",
+     "quīn",
+     "Pompēium",
+     "ā",
+     "Caesaris",
+     "coniūnctiōne",
+     "āvocārem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 23"
+    }
+   },
+   {
+    "prompt": "Who can doubt that there is money in virtue?",
+    "answer": "quis dubitet, quīn in virtūte dīvitiae sint?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "dubitet",
+     "quīn",
+     "in",
+     "virtūte",
+     "dīvitiae",
+     "sint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "48"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q49",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I have no doubt about what you think is our duty to do.",
+    "answer": "nōn dubitō, quid nōbīs agendum putēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "dubitō",
+     "quid",
+     "nōbīs",
+     "agendum",
+     "putēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10, 1, 2"
+    }
+   },
+   {
+    "prompt": "For they firmly believed the enemy would come.",
+    "answer": "neque enim dubitābant hostem ventūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "enim",
+     "dubitābant",
+     "hostem",
+     "ventūrum"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22. 55, 2"
+    }
+   },
+   {
+    "prompt": "Do not hesitate to trust all to him.",
+    "answer": "nōlīte dubitāre quīn huic crēdātis omnia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōlīte",
+     "dubitāre",
+     "quīn",
+     "huic",
+     "crēdātis",
+     "omnia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "68"
+    }
+   },
+   {
+    "prompt": "He should be imbued with such arts as will, if absorbed while he is young, render him the better equipped to deal with weightier business.",
+    "answer": "īnficī dēbet iīs artibus quās sī, dum est tener, combiberit, ad maiōra veniet parātior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "īnficī",
+     "dēbet",
+     "iīs",
+     "artibus",
+     "quās",
+     "sī",
+     "dum",
+     "est",
+     "tener",
+     "combiberit",
+     "ad",
+     "maiōra",
+     "veniet",
+     "parātior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "3, 9"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q50",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Now give your attention to the case itself, while I set forth to you briefly how it occurred.",
+    "answer": "nunc rem ipsam, ut gesta sit, dum breviter vōbīs dēmōnstrō, attendite.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nunc",
+     "rem",
+     "ipsam",
+     "ut",
+     "gesta",
+     "sit",
+     "dum",
+     "breviter",
+     "vōbīs",
+     "dēmōnstrō",
+     "attendite"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Tullio",
+     "locus": "13"
+    }
+   },
+   {
+    "prompt": "While Caesar tarried in these regions, some envoys came to him.",
+    "answer": "dum in hīs locīs Caesar morātur, ad eum lēgātī vēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "in",
+     "hīs",
+     "locīs",
+     "Caesar",
+     "morātur",
+     "ad",
+     "eum",
+     "lēgātī",
+     "vēnērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 22, 1"
+    }
+   },
+   {
+    "prompt": "While this was going on, Cleomenes meantime had already arrived at the shore of Helorum.",
+    "answer": "haec dum aguntur, intereā Cleomenēs iam ad Helōrī lītus pervēnerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "dum",
+     "aguntur",
+     "intereā",
+     "Cleomenēs",
+     "iam",
+     "ad",
+     "Helōrī",
+     "lītus",
+     "pervēnerat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 91"
+    }
+   },
+   {
+    "prompt": "While this was going on among the Veneti, Sabinus arrived in the territory of the Venelli.",
+    "answer": "dum haec in Venetīs geruntur, Q. Titūrius Sabīnus in fīnēs Venellōrum pervēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "haec",
+     "in",
+     "Venetīs",
+     "geruntur",
+     "Q",
+     "Titūrius",
+     "Sabīnus",
+     "in",
+     "fīnēs",
+     "Venellōrum",
+     "pervēnit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 17, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q51",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "Tell it at Sparta, friend, that thou hast seen us lying here, obedient to our country’s holy laws.",
+    "answer": "dīc, hospes, Spartae nōs tē hīc vīdisse iacentīs, dum sānctīs patriae lēgibus obsequimur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīc",
+     "hospes",
+     "Spartae",
+     "nōs",
+     "tē",
+     "hīc",
+     "vīdisse",
+     "iacentīs",
+     "dum",
+     "sānctīs",
+     "patriae",
+     "lēgibus",
+     "obsequimur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 101"
+    }
+   },
+   {
+    "prompt": "While I speak briefly, give me your attention a few moments.",
+    "answer": "dum pauca dīcam, breviter attendite.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "pauca",
+     "dīcam",
+     "breviter",
+     "attendite"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3, 163"
+    }
+   },
+   {
+    "prompt": "While this was going on at Vei, the capital meanwhile was in terrible peril.",
+    "answer": "dum haec Vēīs agēbantur, interim capitōlium in ingentī perīculō fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "haec",
+     "Vēīs",
+     "agēbantur",
+     "interim",
+     "capitōlium",
+     "in",
+     "ingentī",
+     "perīculō",
+     "fuit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "5, 47, 1"
+    }
+   },
+   {
+    "prompt": "While the eyes of the enemy were turned away in one direction toward the fight, the wall is carried in several places.",
+    "answer": "dum in ūnam partem oculōs hostium certāmen āverterat, plūribus locīs capitur mūrus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "in",
+     "ūnam",
+     "partem",
+     "oculōs",
+     "hostium",
+     "certāmen",
+     "āverterat",
+     "plūribus",
+     "locīs",
+     "capitur",
+     "mūrus"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "32, 24, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q52",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "While the king was looking another way, the second man raised his axe and brought it down on his head.",
+    "answer": "dum sē rēx āverteret, alter ēlātam secūrim in caput dēiēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "sē",
+     "rēx",
+     "āverteret",
+     "alter",
+     "ēlātam",
+     "secūrim",
+     "in",
+     "caput",
+     "dēiēcit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 40, 7"
+    }
+   },
+   {
+    "prompt": "Preposterous as it may seem, in hunting up evidence against the defendant, I have actually learned artists’ names.",
+    "answer": "nīmīrum didicī etiam, dum in istum inquīrō, artificum nōmina.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nīmīrum",
+     "didicī",
+     "etiam",
+     "dum",
+     "in",
+     "istum",
+     "inquīrō",
+     "artificum",
+     "nōmina"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 4"
+    }
+   },
+   {
+    "prompt": "So in her attempt to keep a few human chattels, she sacrificed all her possessions and her own liberty.",
+    "answer": "ita dum pauca mancipia retinēre volt, fortūnās omnīs lībertātemque suam perdidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ita",
+     "dum",
+     "pauca",
+     "mancipia",
+     "retinēre",
+     "volt",
+     "fortūnās",
+     "omnīs",
+     "lībertātemque",
+     "suam",
+     "perdidit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Divinatio in Caecilium",
+     "locus": "56"
+    }
+   },
+   {
+    "prompt": "From his desire to be like Alexander, he came out just the opposite of Crassus.",
+    "answer": "dum Alexandrī similis esse voluit, L. Crassī inventus est dissimillimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "Alexandrī",
+     "similis",
+     "esse",
+     "voluit",
+     "L",
+     "Crassī",
+     "inventus",
+     "est",
+     "dissimillimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "282"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q53",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "As long as a sick man has breath he is said to have hope.",
+    "answer": "aegrōtō dum anima est, spēs esse dīcitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "aegrōtō",
+     "dum",
+     "anima",
+     "est",
+     "spēs",
+     "esse",
+     "dīcitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9, 10, 3"
+    }
+   },
+   {
+    "prompt": "As long as there shall be a soul who will venture to defend you, you shall live on.",
+    "answer": "quamdiū quisquam erit quī tē dēfendere audeat, vīvēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quamdiū",
+     "quisquam",
+     "erit",
+     "quī",
+     "tē",
+     "dēfendere",
+     "audeat",
+     "vīvēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 6"
+    }
+   },
+   {
+    "prompt": "You shall study as long as you want to, and it will be proper for you to want to, as long as you are satisfied with your progress.",
+    "answer": "discēs quamdiū volēs, tamdiū autem velle dēbēbis quoad tē quantum prōficiās nōn paenitēbit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "discēs",
+     "quamdiū",
+     "volēs",
+     "tamdiū",
+     "autem",
+     "velle",
+     "dēbēbis",
+     "quoad",
+     "tē",
+     "quantum",
+     "prōficiās",
+     "nōn",
+     "paenitēbit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 2"
+    }
+   },
+   {
+    "prompt": "As long as the imitation of these men lasted, so long was that style in vogue.",
+    "answer": "quōrum quamdiū mānsit imitātiō, tamdiū genus illud dīcendī vīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quōrum",
+     "quamdiū",
+     "mānsit",
+     "imitātiō",
+     "tamdiū",
+     "genus",
+     "illud",
+     "dīcendī",
+     "vīxit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 94"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q54",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "He held the position as long as he could stand the work.",
+    "answer": "tenuit locum tamdiū quam ferre potuit labōrem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tenuit",
+     "locum",
+     "tamdiū",
+     "quam",
+     "ferre",
+     "potuit",
+     "labōrem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "236"
+    }
+   },
+   {
+    "prompt": "Our grandfather as long as he lived, opposed Gratidius.",
+    "answer": "avus noster quoad vīxit, restitit M. Grātidiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "avus",
+     "noster",
+     "quoad",
+     "vīxit",
+     "restitit",
+     "M",
+     "Grātidiō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3, 36"
+    }
+   },
+   {
+    "prompt": "As long as it had to be, and circumstances demanded, one man controlled the world.",
+    "answer": "dum necesse erat, rēsque ipsa cōgēbat, ūnus omnia poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "necesse",
+     "erat",
+     "rēsque",
+     "ipsa",
+     "cōgēbat",
+     "ūnus",
+     "omnia",
+     "poterat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "139"
+    }
+   },
+   {
+    "prompt": "As long as they were moving off under arms and in close array, the task of pursuit fell to the infantry.",
+    "answer": "dōnec armātī cōnfertīque abībant, peditum labor in persequendō fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dōnec",
+     "armātī",
+     "cōnfertīque",
+     "abībant",
+     "peditum",
+     "labor",
+     "in",
+     "persequendō",
+     "fuit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "6, 13, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q55",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The rank and file were butchered as long as wrath and daylight held out.",
+    "answer": "vulgus trucīdātum est dōnec īra et diēs permānsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vulgus",
+     "trucīdātum",
+     "est",
+     "dōnec",
+     "īra",
+     "et",
+     "diēs",
+     "permānsit"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "1, 68"
+    }
+   },
+   {
+    "prompt": "He stuck to his bargain till the jurors were challenged.",
+    "answer": "mānsit in condiciōne usque ad eum fīnem dum iūdicēs rēiectī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mānsit",
+     "in",
+     "condiciōne",
+     "usque",
+     "ad",
+     "eum",
+     "fīnem",
+     "dum",
+     "iūdicēs",
+     "rēiectī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "16"
+    }
+   },
+   {
+    "prompt": "I am thinking of staying here till I feel better.",
+    "answer": "ego hīc cōgitō commorārī, quoad mē reficiam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "hīc",
+     "cōgitō",
+     "commorārī",
+     "quoad",
+     "mē",
+     "reficiam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "7, 26, 2"
+    }
+   },
+   {
+    "prompt": "You will keep this back till I see you myself.",
+    "answer": "ea continēbis, quoad ipse tē videam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ea",
+     "continēbis",
+     "quoad",
+     "ipse",
+     "tē",
+     "videam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "13, 21, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-292-temporal-clauses-with-the-subjunctive-q56",
+  "sectionId": "bn-292-temporal-clauses-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "They always live among the same flocks and herds, till maturity puts the free-born by themselves.",
+    "answer": "inter eadem pecora dēgunt, dōnec aetās sēparet ingenuōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "inter",
+     "eadem",
+     "pecora",
+     "dēgunt",
+     "dōnec",
+     "aetās",
+     "sēparet",
+     "ingenuōs"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Germania",
+     "locus": "20"
+    }
+   },
+   {
+    "prompt": "Our people routed them and did not give up the pursuit till the cavalry drove the enemy headlong.",
+    "answer": "nostrī reppulērunt neque fīnem sequendī fēcērunt, quoad equitēs praecipitēs hostēs ēgērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nostrī",
+     "reppulērunt",
+     "neque",
+     "fīnem",
+     "sequendī",
+     "fēcērunt",
+     "quoad",
+     "equitēs",
+     "praecipitēs",
+     "hostēs",
+     "ēgērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 17, 3"
+    }
+   },
+   {
+    "prompt": "I was afraid all the time till we came to challenging jurors.",
+    "answer": "usque eō timuī, dōnec ad rēiciundōs iūdicēs vēnimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "usque",
+     "eō",
+     "timuī",
+     "dōnec",
+     "ad",
+     "rēiciundōs",
+     "iūdicēs",
+     "vēnimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 17"
+    }
+   },
+   {
+    "prompt": "He used to practise running and wrestling, till he could give a grip standing.",
+    "answer": "exercēbātur currendō et lūctandō ad eum fīnem, quoad stāns complectī posset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "exercēbātur",
+     "currendō",
+     "et",
+     "lūctandō",
+     "ad",
+     "eum",
+     "fīnem",
+     "quoad",
+     "stāns",
+     "complectī",
+     "posset"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "15, 2, 5"
+    }
+   }
+  ]
  }
 ]

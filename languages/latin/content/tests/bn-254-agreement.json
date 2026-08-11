@@ -708,5 +708,590 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-254-agreement-q1",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "Loyalty on this side, want on that, kept tearing the besieged between honor and disgrace.",
+    "answer": "Obsessōs hinc fidēs, inde egestās inter decus ac flāgitium distrahēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Obsessōs",
+     "hinc",
+     "fidēs",
+     "inde",
+     "egestās",
+     "inter",
+     "decus",
+     "ac",
+     "flāgitium",
+     "distrahēbant"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Histories: Book",
+     "locus": "4:"
+    }
+   },
+   {
+    "prompt": "You, sir, hold my estates, it is by the compassion of other people that I am supported.",
+    "answer": "praedia mea tū possidēs, ego aliēnā misericordiā vīvō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "praedia",
+     "mea",
+     "tū",
+     "possidēs",
+     "ego",
+     "aliēnā",
+     "misericordiā",
+     "vīvō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "145"
+    }
+   },
+   {
+    "prompt": "In about the same times lived Cotta, Sulpicius, Varius, and Pomponius.",
+    "answer": "iīsdem ferē temporibus fuērunt C. Cotta, P. Sulpicius, Q. Varius, Cn. Pompōnius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iīsdem",
+     "ferē",
+     "temporibus",
+     "fuērunt",
+     "C",
+     "Cotta",
+     "P",
+     "Sulpicius",
+     "Q",
+     "Varius",
+     "Cn",
+     "Pompōnius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "182"
+    }
+   },
+   {
+    "prompt": "The chivalrous principle of Rome and the square dealing of her captain are trumpeted in market place and council hall.",
+    "answer": "fidēs Rōmāna, iūstitia imperātōris in forō et cūriā celebrantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fidēs",
+     "Rōmāna",
+     "iūstitia",
+     "imperātōris",
+     "in",
+     "forō",
+     "et",
+     "cūriā",
+     "celebrantur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "5, 27, 11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-q2",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "Of these Cotta and Sulpicius indisputably bore the palm.",
+    "answer": "ex hīs Cotta et Sulpicius facile prīmās tulērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ex",
+     "hīs",
+     "Cotta",
+     "et",
+     "Sulpicius",
+     "facile",
+     "prīmās",
+     "tulērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "182"
+    }
+   },
+   {
+    "prompt": "When the senate and the people of Rome sanction peace.",
+    "answer": "cum senātus populusque Rōmānus pācem comprobāverint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "senātus",
+     "populusque",
+     "Rōmānus",
+     "pācem",
+     "comprobāverint"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "37, 45, 14"
+    }
+   },
+   {
+    "prompt": "Both Maximus and Paullus lived in such times.",
+    "answer": "et Q. Maximus et L. Paullus iīs temporibus fuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "et",
+     "Q",
+     "Maximus",
+     "et",
+     "L",
+     "Paullus",
+     "iīs",
+     "temporibus",
+     "fuērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "4, 6, 1"
+    }
+   },
+   {
+    "prompt": "Both of these eagerness for glory in the first place and secondly fear of disgrace spurred on.",
+    "answer": "utrōsque et laudis cupiditās et timor īgnōminiae excitābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "utrōsque",
+     "et",
+     "laudis",
+     "cupiditās",
+     "et",
+     "timor",
+     "īgnōminiae",
+     "excitābant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 80, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-q3",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "Right and wrong are naturally distinguished from each other.",
+    "answer": "iūs et iniūria nātūrā dīiūdicantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iūs",
+     "et",
+     "iniūria",
+     "nātūrā",
+     "dīiūdicantur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "1, 44"
+    }
+   },
+   {
+    "prompt": "At that time Gorgias, Thrasymachus, Prodicus, and Hippias were in high renown.",
+    "answer": "tum Gorgiās, Thrasymachus, Prodicus, Hippiās in magnō honōre fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tum",
+     "Gorgiās",
+     "Thrasymachus",
+     "Prodicus",
+     "Hippiās",
+     "in",
+     "magnō",
+     "honōre",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "30"
+    }
+   },
+   {
+    "prompt": "Why is a Lysias and a Hyperides idolized?",
+    "answer": "cūr Lȳsiās et Hyperīdēs amātur?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cūr",
+     "Lȳsiās",
+     "et",
+     "Hyperīdēs",
+     "amātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "68"
+    }
+   },
+   {
+    "prompt": "The Matrona and Sequana cut off the Gauls from the Belgians.",
+    "answer": "Gallōs ā Belgīs Matrona et Sēquana dīvidit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gallōs",
+     "ā",
+     "Belgīs",
+     "Matrona",
+     "et",
+     "Sēquana",
+     "dīvidit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 2, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-q4",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "Senate and people of Rome ordained.",
+    "answer": "senātus populusque Rōmānus voluit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "senātus",
+     "populusque",
+     "Rōmānus",
+     "voluit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 40, 3"
+    }
+   },
+   {
+    "prompt": "That rule both Pompey and Flaccus followed.",
+    "answer": "illam ratiōnem et Pompēius et Flaccus secūtus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illam",
+     "ratiōnem",
+     "et",
+     "Pompēius",
+     "et",
+     "Flaccus",
+     "secūtus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Flacco",
+     "locus": "32"
+    }
+   },
+   {
+    "prompt": "Both the position and number of the senators was such.",
+    "answer": "tālis senātōrum et dignitās et multitūdō fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tālis",
+     "senātōrum",
+     "et",
+     "dignitās",
+     "et",
+     "multitūdō",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "13, 13"
+    }
+   },
+   {
+    "prompt": "When the emergency requires, we must fight it out by hand.",
+    "answer": "cum tempus necessitāsque postulat, dēcertandum manū est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "tempus",
+     "necessitāsque",
+     "postulat",
+     "dēcertandum",
+     "manū",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 81"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-q5",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "So great was the demonstration of joy.",
+    "answer": "tanta laetitia ac grātulātiō fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tanta",
+     "laetitia",
+     "ac",
+     "grātulātiō",
+     "fuit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "10, 26, 4"
+    }
+   },
+   {
+    "prompt": "Life and death, riches and poverty, tell much on everybody.",
+    "answer": "vīta mors, dīvitiae paupertās omnīs hominēs permovent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vīta",
+     "mors",
+     "dīvitiae",
+     "paupertās",
+     "omnīs",
+     "hominēs",
+     "permovent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2, 37"
+    }
+   },
+   {
+    "prompt": "In what imminent peril camp and legions and commander were involved.",
+    "answer": "quantō in perīculō et castra et legiōnēs et imperātor versārētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quantō",
+     "in",
+     "perīculō",
+     "et",
+     "castra",
+     "et",
+     "legiōnēs",
+     "et",
+     "imperātor",
+     "versārētur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 26, 5"
+    }
+   },
+   {
+    "prompt": "Bocchus with the infantry falls on the rereward line of the Romans.",
+    "answer": "Bocchus cum peditibus postrēmam Rōmānōrum aciem invādunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Bocchus",
+     "cum",
+     "peditibus",
+     "postrēmam",
+     "Rōmānōrum",
+     "aciem",
+     "invādunt"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "101, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-q6",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "Neither the numbers of the enemy nor the shower of missiles could arrest the onslaught of that intrepid soul.",
+    "answer": "neque multitūdō hostium neque tēlōrum vīs arcēre impetum eius virī potuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "multitūdō",
+     "hostium",
+     "neque",
+     "tēlōrum",
+     "vīs",
+     "arcēre",
+     "impetum",
+     "eius",
+     "virī",
+     "potuērunt"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "26, 5, 17"
+    }
+   },
+   {
+    "prompt": "If a Socrates or an Aristippus had done anything.",
+    "answer": "sī quid Sōcratēs aut Aristippus fēcerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "quid",
+     "Sōcratēs",
+     "aut",
+     "Aristippus",
+     "fēcerint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 148"
+    }
+   },
+   {
+    "prompt": "If a Socrates or an Antisthenes should say it.",
+    "answer": "sī Sōcratēs aut Antisthenēs dīceret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "Sōcratēs",
+     "aut",
+     "Antisthenēs",
+     "dīceret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 26"
+    }
+   },
+   {
+    "prompt": "When such a throng were throwing stones.",
+    "answer": "cum tanta multitūdō lapidēs conicerent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "tanta",
+     "multitūdō",
+     "lapidēs",
+     "conicerent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 6, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-254-agreement-q7",
+  "sectionId": "bn-254-agreement",
+  "questions": [
+   {
+    "prompt": "This person succeeded in inducing the community to leave their territory.",
+    "answer": "is cīvitātī persuāsit, ut dē fīnibus suīs exīrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "is",
+     "cīvitātī",
+     "persuāsit",
+     "ut",
+     "dē",
+     "fīnibus",
+     "suīs",
+     "exīrent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 2, 1"
+    }
+   },
+   {
+    "prompt": "Wide-spread flames, sign of a surer disaster, prevented a further advance.",
+    "answer": "flammae lātē fūsae, certiōris clādis indicium, prōgredī longius prohibuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "flammae",
+     "lātē",
+     "fūsae",
+     "certiōris",
+     "clādis",
+     "indicium",
+     "prōgredī",
+     "longius",
+     "prohibuit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "10, 43, 11"
+    }
+   },
+   {
+    "prompt": "The grand total was about three hundred and sixty-eight thousand.",
+    "answer": "summa omnium fuērunt ad mīlia CCCLXVIII.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "summa",
+     "omnium",
+     "fuērunt",
+     "ad",
+     "mīlia",
+     "CCCLXVIII"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 29, 3"
+    }
+   },
+   {
+    "prompt": "Who but brigands think that man a consul?",
+    "answer": "quis illum cōnsulem nisi latrōnēs putant?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "illum",
+     "cōnsulem",
+     "nisi",
+     "latrōnēs",
+     "putant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "4, 9"
+    }
+   }
+  ]
  }
 ]

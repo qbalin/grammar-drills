@@ -1465,5 +1465,490 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q7",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He orders the bridge which was near Geneva torn up.",
+    "answer": "pontem, quī erat ad Genāvam, iubet rescindī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pontem",
+     "quī",
+     "erat",
+     "ad",
+     "Genāvam",
+     "iubet",
+     "rescindī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 7, 2"
+    }
+   },
+   {
+    "prompt": "I give up, because I have to.",
+    "answer": "concēdō, quia necesse est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "concēdō",
+     "quia",
+     "necesse",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "145"
+    }
+   },
+   {
+    "prompt": "Epicurus avers there is no living happily, without living virtuously.",
+    "answer": "negat Epicūrus iūcundē posse vīvī, nisi cum virtūte vīvātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "negat",
+     "Epicūrus",
+     "iūcundē",
+     "posse",
+     "vīvī",
+     "nisi",
+     "cum",
+     "virtūte",
+     "vīvātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "3, 49"
+    }
+   },
+   {
+    "prompt": "Socrates used to maintain that all men were eloquent enough in a matter they knew.",
+    "answer": "Sōcratēs dīcere solēbat, omnēs in eō quod scīrent, satis esse ēloquentēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sōcratēs",
+     "dīcere",
+     "solēbat",
+     "omnēs",
+     "in",
+     "eō",
+     "quod",
+     "scīrent",
+     "satis",
+     "esse",
+     "ēloquentēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 63"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q8",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "It was reported that Ariovistus was pressing on to seize Vesontio, which is the most considerable town of the Sequans.",
+    "answer": "nūntiātum est Ariovistum ad occupandum Vesontiōnem, quod est oppidum maximum Sēquanōrum, contendere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūntiātum",
+     "est",
+     "Ariovistum",
+     "ad",
+     "occupandum",
+     "Vesontiōnem",
+     "quod",
+     "est",
+     "oppidum",
+     "maximum",
+     "Sēquanōrum",
+     "contendere"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 38, 1"
+    }
+   },
+   {
+    "prompt": "Athens is said to have been passing wise, as long as she held the hegemony.",
+    "answer": "prūdentissima cīvitās Athēniēnsium, dum ea rērum potīta est, fuisse trāditur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prūdentissima",
+     "cīvitās",
+     "Athēniēnsium",
+     "dum",
+     "ea",
+     "rērum",
+     "potīta",
+     "est",
+     "fuisse",
+     "trāditur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "70"
+    }
+   },
+   {
+    "prompt": "It may be that he cannot express his thought in polished style.",
+    "answer": "fierī potest, ut id quod sentit polītē ēloquī nōn possit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fierī",
+     "potest",
+     "ut",
+     "id",
+     "quod",
+     "sentit",
+     "polītē",
+     "ēloquī",
+     "nōn",
+     "possit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 6"
+    }
+   },
+   {
+    "prompt": "My accusation is that Romans have been slain.",
+    "answer": "cīvīs Rōmānōs necātōs esse arguō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cīvīs",
+     "Rōmānōs",
+     "necātōs",
+     "esse",
+     "arguō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 149"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q9",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Roscius is charged with the murder of his father.",
+    "answer": "occīdisse patrem Sex. Rōscius arguitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "occīdisse",
+     "patrem",
+     "Sex",
+     "Rōscius",
+     "arguitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "37"
+    }
+   },
+   {
+    "prompt": "They began to accuse Epicrates of having falsified records of state.",
+    "answer": "īnsimulāre coepērunt Epicratem litterās pūblicās corrūpisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "īnsimulāre",
+     "coepērunt",
+     "Epicratem",
+     "litterās",
+     "pūblicās",
+     "corrūpisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 60"
+    }
+   },
+   {
+    "prompt": "They hoped to carry it out.",
+    "answer": "id sēsē effectūrōs spērābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "sēsē",
+     "effectūrōs",
+     "spērābant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 26, 2"
+    }
+   },
+   {
+    "prompt": "What did he mean? why this movement into his property?",
+    "answer": "quid vellet? cūr in suās possessiōnēs venīret?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "vellet",
+     "cūr",
+     "in",
+     "suās",
+     "possessiōnēs",
+     "venīret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q10",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The dictator sent this letter to the senate: through the bounty of the gods Vei would soon belong to the Roman nation; what did they think should be done about the booty?",
+    "answer": "dictātor litterās ad senātum mīsit: deum benignitāte Vēiōs iam fore in potestāte populī Rōmānī; quid dē praedā faciendum cēnsērent?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dictātor",
+     "litterās",
+     "ad",
+     "senātum",
+     "mīsit",
+     "deum",
+     "benignitāte",
+     "Vēiōs",
+     "iam",
+     "fore",
+     "in",
+     "potestāte",
+     "populī",
+     "Rōmānī",
+     "quid",
+     "dē",
+     "praedā",
+     "faciendum",
+     "cēnsērent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "5, 20, 1"
+    }
+   },
+   {
+    "prompt": "Cicero replied: if they wished to lay down their arms, let them take his advice and send envoys to Caesar.",
+    "answer": "Cicerō respondit: sī ab armīs discēdere velint, sē adiūtōre ūtantur lēgātōsque ad Caesarem mittant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cicerō",
+     "respondit",
+     "sī",
+     "ab",
+     "armīs",
+     "discēdere",
+     "velint",
+     "sē",
+     "adiūtōre",
+     "ūtantur",
+     "lēgātōsque",
+     "ad",
+     "Caesarem",
+     "mittant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 41, 7"
+    }
+   },
+   {
+    "prompt": "If he were inclined to disregard the old affront, could he also forget their fresh insults?",
+    "answer": "sī veteris contumēliae oblīvīscī vellet, num etiam recentium iniūriārum memoriam dēpōnere posse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "veteris",
+     "contumēliae",
+     "oblīvīscī",
+     "vellet",
+     "num",
+     "etiam",
+     "recentium",
+     "iniūriārum",
+     "memoriam",
+     "dēpōnere",
+     "posse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 14, 3"
+    }
+   },
+   {
+    "prompt": "Who could allow them to be stripped of what they had possessed when they became the friends of the Roman nation?",
+    "answer": "quod vērō ad amīcitiam populī Rōmānī attulissent, id iīs ēripī quis patī posset?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "vērō",
+     "ad",
+     "amīcitiam",
+     "populī",
+     "Rōmānī",
+     "attulissent",
+     "id",
+     "iīs",
+     "ēripī",
+     "quis",
+     "patī",
+     "posset"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 43, 8"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-314-moods-in-indirect-discourse-q11",
+  "sectionId": "bn-314-moods-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They say he is the wisest man who thinks out of himself what is expedient; and that the man who avails himself of the wise devices of another comes next.",
+    "answer": "sapientissimum esse dīcunt eum, cui quod opus sit ipsī veniat in mentem; proximē accēdere illum quī alterīus bene inventīs obtemperet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sapientissimum",
+     "esse",
+     "dīcunt",
+     "eum",
+     "cui",
+     "quod",
+     "opus",
+     "sit",
+     "ipsī",
+     "veniat",
+     "in",
+     "mentem",
+     "proximē",
+     "accēdere",
+     "illum",
+     "quī",
+     "alterīus",
+     "bene",
+     "inventīs",
+     "obtemperet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "84"
+    }
+   },
+   {
+    "prompt": "To this Ariovistus answered: that it was the right of war for the conquerors to dictate to the conquered such terms as they pleased.",
+    "answer": "ad haec Ariovistus respondit: iūs esse bellī, ut quī vīcissent iīs quōs vīcissent, quemadmodum vellent imperārent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ad",
+     "haec",
+     "Ariovistus",
+     "respondit",
+     "iūs",
+     "esse",
+     "bellī",
+     "ut",
+     "quī",
+     "vīcissent",
+     "iīs",
+     "quōs",
+     "vīcissent",
+     "quemadmodum",
+     "vellent",
+     "imperārent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 36, 1"
+    }
+   },
+   {
+    "prompt": "That a single day intervened and that this whole day Galba employed in studying up and arranging the case.",
+    "answer": "ūnum medium diem fuisse, quem tōtum Galbam in cōnsīderandā causā compōnendāque posuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnum",
+     "medium",
+     "diem",
+     "fuisse",
+     "quem",
+     "tōtum",
+     "Galbam",
+     "in",
+     "cōnsīderandā",
+     "causā",
+     "compōnendāque",
+     "posuisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "87"
+    }
+   },
+   {
+    "prompt": "The oft-repeated saying: as the sea is ruffled and tossed by the mighty winds, so the people of Rome are stirred up by the talk of agitators.",
+    "answer": "id quod saepe dictum est: ut mare ventōrum vī agitārī atque turbārī, sīc populum Rōmānum hominum sēditiōsōrum vōcibus concitārī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "quod",
+     "saepe",
+     "dictum",
+     "est",
+     "ut",
+     "mare",
+     "ventōrum",
+     "vī",
+     "agitārī",
+     "atque",
+     "turbārī",
+     "sīc",
+     "populum",
+     "Rōmānum",
+     "hominum",
+     "sēditiōsōrum",
+     "vōcibus",
+     "concitārī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "138"
+    }
+   }
+  ]
  }
 ]

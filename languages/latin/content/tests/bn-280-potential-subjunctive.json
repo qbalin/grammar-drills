@@ -1106,5 +1106,574 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-280-potential-subjunctive-q2",
+  "sectionId": "bn-280-potential-subjunctive",
+  "questions": [
+   {
+    "prompt": "I could wish Antony were here.",
+    "answer": "Vellem adesset M. Antōnius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vellem",
+     "adesset",
+     "M",
+     "Antōnius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "As for me, I might perhaps be counted in the common herd.",
+    "answer": "ego forsitan in grege adnumerer.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "forsitan",
+     "in",
+     "grege",
+     "adnumerer"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "89"
+    }
+   },
+   {
+    "prompt": "I rather think we may say with propriety.",
+    "answer": "haud sciō an rēctē dīcāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haud",
+     "sciō",
+     "an",
+     "rēctē",
+     "dīcāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "58"
+    }
+   },
+   {
+    "prompt": "You may ask me what god is; I should follow the lead of Simonides.",
+    "answer": "rogēs mē quid sit deus, auctōre ūtar Simōnidē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rogēs",
+     "mē",
+     "quid",
+     "sit",
+     "deus",
+     "auctōre",
+     "ūtar",
+     "Simōnidē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 60"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-280-potential-subjunctive-q3",
+  "sectionId": "bn-280-potential-subjunctive",
+  "questions": [
+   {
+    "prompt": "This may seem incredible to you.",
+    "answer": "hoc vōbīs incrēdibile videātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "vōbīs",
+     "incrēdibile",
+     "videātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3, 109"
+    }
+   },
+   {
+    "prompt": "I grant it; perhaps somebody, at some time or other, may have done something of the sort.",
+    "answer": "concēdō; forsitan aliquis aliquandō eius modī quippiam fēcerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "concēdō",
+     "forsitan",
+     "aliquis",
+     "aliquandō",
+     "eius",
+     "modī",
+     "quippiam",
+     "fēcerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 78"
+    }
+   },
+   {
+    "prompt": "Even this may perhaps have been superfluous.",
+    "answer": "haec ipsa forsitan fuerint nōn necessāria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "ipsa",
+     "forsitan",
+     "fuerint",
+     "nōn",
+     "necessāria"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "52"
+    }
+   },
+   {
+    "prompt": "This I can assert without any hesitation.",
+    "answer": "hoc sine ūllā dubitātiōne cōnfirmāverim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "sine",
+     "ūllā",
+     "dubitātiōne",
+     "cōnfirmāverim"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "25"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-280-potential-subjunctive-q4",
+  "sectionId": "bn-280-potential-subjunctive",
+  "questions": [
+   {
+    "prompt": "Such a god we should be right in pronouncing happy.",
+    "answer": "hunc deum rīte beātum dīxerīmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hunc",
+     "deum",
+     "rīte",
+     "beātum",
+     "dīxerīmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 52"
+    }
+   },
+   {
+    "prompt": "You would readily pronounce Demosthenes absolutely perfect.",
+    "answer": "plānē perfectum Dēmosthenem facile dīxerīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "plānē",
+     "perfectum",
+     "Dēmosthenem",
+     "facile",
+     "dīxerīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "35"
+    }
+   },
+   {
+    "prompt": "Oh no, rest assured you never can praise him too emphatically nor too often.",
+    "answer": "tū vērō eum nec nimis valdē umquam nec nimis saepe laudāverīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "vērō",
+     "eum",
+     "nec",
+     "nimis",
+     "valdē",
+     "umquam",
+     "nec",
+     "nimis",
+     "saepe",
+     "laudāverīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3, 1"
+    }
+   },
+   {
+    "prompt": "Anybody who saw it, would have said it was a captured city.",
+    "answer": "quī vidēret, urbem captam dīceret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quī",
+     "vidēret",
+     "urbem",
+     "captam",
+     "dīceret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 52"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-280-potential-subjunctive-q5",
+  "sectionId": "bn-280-potential-subjunctive",
+  "questions": [
+   {
+    "prompt": "This cannot be said in your case; it might have been said in Tarquin’s, when he was driven from the throne.",
+    "answer": "dīcī hoc in tē nōn potest, posset in Tarquiniō, cum rēgnō esset expulsus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīcī",
+     "hoc",
+     "in",
+     "tē",
+     "nōn",
+     "potest",
+     "posset",
+     "in",
+     "Tarquiniō",
+     "cum",
+     "rēgnō",
+     "esset",
+     "expulsus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 88"
+    }
+   },
+   {
+    "prompt": "I only wish Panaetius could be with us: I should ask him.",
+    "answer": "vellem adesse posset Panaetius; quaererem ex eō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vellem",
+     "adesse",
+     "posset",
+     "Panaetius",
+     "quaererem",
+     "ex",
+     "eō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 81"
+    }
+   },
+   {
+    "prompt": "I should like to see the expression of your face.",
+    "answer": "cuperem voltum vidēre tuum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cuperem",
+     "voltum",
+     "vidēre",
+     "tuum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "4, 16, 7"
+    }
+   },
+   {
+    "prompt": "You might have given this spirit a body to match; he would have done what he craved to do.",
+    "answer": "dedissēs huic animō pār corpus, fēcisset quod optābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dedissēs",
+     "huic",
+     "animō",
+     "pār",
+     "corpus",
+     "fēcisset",
+     "quod",
+     "optābat"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "1, 12, 8"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-280-potential-subjunctive-q6",
+  "sectionId": "bn-280-potential-subjunctive",
+  "questions": [
+   {
+    "prompt": "Such colossal prodigality might have been capable of swallowing down cities and kingdoms speedily.",
+    "answer": "urbēs et rēgna celeriter tanta nēquitia dēvorāre potuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "urbēs",
+     "et",
+     "rēgna",
+     "celeriter",
+     "tanta",
+     "nēquitia",
+     "dēvorāre",
+     "potuisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 67"
+    }
+   },
+   {
+    "prompt": "The good might have overpowered the bad; what next?",
+    "answer": "vīcissent inprobōs bonī; quid deinde?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vīcissent",
+     "inprobōs",
+     "bonī",
+     "quid",
+     "deinde"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "43"
+    }
+   },
+   {
+    "prompt": "Who can suppose that Brutus lacked ready wit?",
+    "answer": "quis putet celeritātem ingenī L. Brūtō dēfuisse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "putet",
+     "celeritātem",
+     "ingenī",
+     "L",
+     "Brūtō",
+     "dēfuisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "53"
+    }
+   },
+   {
+    "prompt": "For if it was allowed Zeno, why should not it be allowed Cato?",
+    "answer": "sī enim Zēnōnī licuit, cūr nōn liceat Catōnī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "enim",
+     "Zēnōnī",
+     "licuit",
+     "cūr",
+     "nōn",
+     "liceat",
+     "Catōnī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "3, 15"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-280-potential-subjunctive-q7",
+  "sectionId": "bn-280-potential-subjunctive",
+  "questions": [
+   {
+    "prompt": "Who would ever have dreamed that this stupendous war could be brought to a close by a single commander?",
+    "answer": "hoc tantum bellum quis umquam arbitrārētur ab ūnō imperātōre cōnficī posse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "tantum",
+     "bellum",
+     "quis",
+     "umquam",
+     "arbitrārētur",
+     "ab",
+     "ūnō",
+     "imperātōre",
+     "cōnficī",
+     "posse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "31"
+    }
+   },
+   {
+    "prompt": "For what Roman would not feel for the king?",
+    "answer": "quis enim cīvis rēgī nōn favēret?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "enim",
+     "cīvis",
+     "rēgī",
+     "nōn",
+     "favēret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Rege Deiotaro",
+     "locus": "6"
+    }
+   },
+   {
+    "prompt": "I have objected to seeing you?",
+    "answer": "ego tē vidēre nōluerim?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "tē",
+     "vidēre",
+     "nōluerim"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1, 3, 1"
+    }
+   },
+   {
+    "prompt": "The gates are open, march forth; take out all your myrmidons with you too.",
+    "answer": "patent portae, proficīscere, ēdūc tēcum etiam omnīs tuōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "patent",
+     "portae",
+     "proficīscere",
+     "ēdūc",
+     "tēcum",
+     "etiam",
+     "omnīs",
+     "tuōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-280-potential-subjunctive-q8",
+  "sectionId": "bn-280-potential-subjunctive",
+  "questions": [
+   {
+    "prompt": "Come now, compare Sulla’s life with that man’s.",
+    "answer": "agedum cōnferte cum illīus vītā P. Sūllae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "agedum",
+     "cōnferte",
+     "cum",
+     "illīus",
+     "vītā",
+     "P",
+     "Sūllae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "72"
+    }
+   },
+   {
+    "prompt": "There shall be amity between king Antiochus and Rome on the following terms.",
+    "answer": "amīcitia rēgī Antiochō cum populō Rōmānō hīs lēgibus estō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "amīcitia",
+     "rēgī",
+     "Antiochō",
+     "cum",
+     "populō",
+     "Rōmānō",
+     "hīs",
+     "lēgibus",
+     "estō"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "38, 38, 1"
+    }
+   },
+   {
+    "prompt": "When I put Granius on the witness stand, refute him if you can.",
+    "answer": "cum ego P. Grānium testem prōdūxerō, refellitō, sī poteris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "ego",
+     "P",
+     "Grānium",
+     "testem",
+     "prōdūxerō",
+     "refellitō",
+     "sī",
+     "poteris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 154"
+    }
+   },
+   {
+    "prompt": "Attend to this one thing, an thou lovest me.",
+    "answer": "ūnum illud vidētō, sī mē amās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnum",
+     "illud",
+     "vidētō",
+     "sī",
+     "mē",
+     "amās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16, 1, 2"
+    }
+   }
+  ]
  }
 ]

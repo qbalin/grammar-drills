@@ -3219,5 +3219,1199 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q8",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Though I have nothing to write to you, still I write this letter.",
+    "answer": "Cum quod scrīberem ad tē nihil habērem, tamen hās dedī litterās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "quod",
+     "scrīberem",
+     "ad",
+     "tē",
+     "nihil",
+     "habērem",
+     "tamen",
+     "hās",
+     "dedī",
+     "litterās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9.16"
+    }
+   },
+   {
+    "prompt": "He is marking us out for death, each and all.",
+    "answer": "notat ad caedem ūnum quemque nostrūm.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "notat",
+     "ad",
+     "caedem",
+     "ūnum",
+     "quemque",
+     "nostrūm"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 2"
+    }
+   },
+   {
+    "prompt": "They do not apply themselves to farming.",
+    "answer": "agrī cultūrae nōn student.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "agrī",
+     "cultūrae",
+     "nōn",
+     "student"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 22, 1"
+    }
+   },
+   {
+    "prompt": "The married men have power of life and death over their wives.",
+    "answer": "virī in uxōrēs vītae necisque habent potestātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "virī",
+     "in",
+     "uxōrēs",
+     "vītae",
+     "necisque",
+     "habent",
+     "potestātem"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 19, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q9",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "The world is full of fools.",
+    "answer": "stultōrum plēna sunt omnia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "stultōrum",
+     "plēna",
+     "sunt",
+     "omnia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9, 22, 4"
+    }
+   },
+   {
+    "prompt": "He has lived at Lilybaeum this many a year.",
+    "answer": "Lilybaeī multōs iam annōs habitat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lilybaeī",
+     "multōs",
+     "iam",
+     "annōs",
+     "habitat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 38"
+    }
+   },
+   {
+    "prompt": "The camp has felt your absence altogether too long.",
+    "answer": "nimium diū tē castra dēsīderant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nimium",
+     "diū",
+     "tē",
+     "castra",
+     "dēsīderant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 10"
+    }
+   },
+   {
+    "prompt": "After this Proca is king; this man begets Numitor; to Numitor he bequeaths the ancient throne of the Silvian race.",
+    "answer": "Proca deinde rēgnat. is Numitōrem prōcreat. Numitōrī rēgnum vetustum Silviae gentis lēgat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Proca",
+     "deinde",
+     "rēgnat",
+     "is",
+     "Numitōrem",
+     "prōcreat",
+     "Numitōrī",
+     "rēgnum",
+     "vetustum",
+     "Silviae",
+     "gentis",
+     "lēgat"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 3, 9"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q10",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Number of citizens doubled; Mt. Caelius added to city.",
+    "answer": "duplicātur cīvium numerus. Caelius additur urbī mōns.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "duplicātur",
+     "cīvium",
+     "numerus",
+     "Caelius",
+     "additur",
+     "urbī",
+     "mōns"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 30, 1"
+    }
+   },
+   {
+    "prompt": "Then Verginius and Vetusius enter on the consulship.",
+    "answer": "A. Vergīnius inde et T. Vetusius cōnsulātum ineunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "A",
+     "Vergīnius",
+     "inde",
+     "et",
+     "T",
+     "Vetusius",
+     "cōnsulātum",
+     "ineunt"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 28, 1"
+    }
+   },
+   {
+    "prompt": "In the consulship of Silanus and Norbanus, Germanicus leaves for Egypt.",
+    "answer": "M. Sīlānō L. Nōrbānō cōnsulibus Germānicus Aegyptum proficīscitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "M",
+     "Sīlānō",
+     "L",
+     "Nōrbānō",
+     "cōnsulibus",
+     "Germānicus",
+     "Aegyptum",
+     "proficīscitur"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "2, 59"
+    }
+   },
+   {
+    "prompt": "I hear that Martial is dead.",
+    "answer": "audiō Valerium Mārtiālem dēcessisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "audiō",
+     "Valerium",
+     "Mārtiālem",
+     "dēcessisse"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "3, 21, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q11",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Plato calls pleasure the ‘bait of sin.’.",
+    "answer": "Platō ‘ēscam malōrum’ appellat voluptātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Platō",
+     "ēscam",
+     "malōrum",
+     "appellat",
+     "voluptātem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "44"
+    }
+   },
+   {
+    "prompt": "Were you perhaps consul at the time my house was burning down?",
+    "answer": "an tum erās cōnsul, cum mea domus ardēbat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "an",
+     "tum",
+     "erās",
+     "cōnsul",
+     "cum",
+     "mea",
+     "domus",
+     "ardēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Pisonem",
+     "locus": "26"
+    }
+   },
+   {
+    "prompt": "And all the time he knew perfectly well that he was starting off to suffer studied torments.",
+    "answer": "neque vērō tum īgnōrābat sē ad exquīsīta supplicia proficīscī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "vērō",
+     "tum",
+     "īgnōrābat",
+     "sē",
+     "ad",
+     "exquīsīta",
+     "supplicia",
+     "proficīscī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 100"
+    }
+   },
+   {
+    "prompt": "Themistocles used to promenade the streets nights.",
+    "answer": "noctū ambulābat in pūblicō Themistoclēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "noctū",
+     "ambulābat",
+     "in",
+     "pūblicō",
+     "Themistoclēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "4, 44"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q12",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "His aged father had long been bedridden.",
+    "answer": "pater grandis nātū iam diū lectō tenēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pater",
+     "grandis",
+     "nātū",
+     "iam",
+     "diū",
+     "lectō",
+     "tenēbātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 16"
+    }
+   },
+   {
+    "prompt": "Something over an hour a good many men had been prizing away.",
+    "answer": "hōram amplius iam permultī hominēs mōliēbantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hōram",
+     "amplius",
+     "iam",
+     "permultī",
+     "hominēs",
+     "mōliēbantur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 95"
+    }
+   },
+   {
+    "prompt": "Four whole days he had gone without eating.",
+    "answer": "diem iam quīntum cibō caruerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "diem",
+     "iam",
+     "quīntum",
+     "cibō",
+     "caruerat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 38, 1"
+    }
+   },
+   {
+    "prompt": "Alesia proper was situated on the top of a hill.",
+    "answer": "ipsum erat oppidum Alesia in colle summō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ipsum",
+     "erat",
+     "oppidum",
+     "Alesia",
+     "in",
+     "colle",
+     "summō"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 69, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q13",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "I have nothing to write.",
+    "answer": "nihil habēbam quod scrīberem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "habēbam",
+     "quod",
+     "scrīberem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9, 10, 1"
+    }
+   },
+   {
+    "prompt": "Among the Helvetians, the man of highest birth by all odds was Orgetorix.",
+    "answer": "apud Helvētiōs longē nōbilissimus fuit Orgetorīx.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "apud",
+     "Helvētiōs",
+     "longē",
+     "nōbilissimus",
+     "fuit",
+     "Orgetorīx"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 2, 1"
+    }
+   },
+   {
+    "prompt": "For nearly three years Diodorus had to keep away from home.",
+    "answer": "Diodōrus prope triennium domō caruit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Diodōrus",
+     "prope",
+     "triennium",
+     "domō",
+     "caruit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 41"
+    }
+   },
+   {
+    "prompt": "In Greece musicians stood high, and everybody studied the art.",
+    "answer": "in Graeciā mūsicī flōruērunt, discēbantque id omnēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "Graeciā",
+     "mūsicī",
+     "flōruērunt",
+     "discēbantque",
+     "id",
+     "omnēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q14",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Caesar kept his line drawn up had drawn up.",
+    "answer": "Caesar aciem īnstrūctam habuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "aciem",
+     "īnstrūctam",
+     "habuit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 48, 3"
+    }
+   },
+   {
+    "prompt": "The arms which had once been fastened on the walls were found on the floor.",
+    "answer": "arma quae fīxa in parietibus fuerant, ea sunt humī inventa.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "arma",
+     "quae",
+     "fīxa",
+     "in",
+     "parietibus",
+     "fuerant",
+     "ea",
+     "sunt",
+     "humī",
+     "inventa"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "1, 74"
+    }
+   },
+   {
+    "prompt": "Many a man has done good, when he meant to do harm, and when he meant to do good, has done harm.",
+    "answer": "multī, cum obesse vellent, prōfuērunt et, cum prōdesse, obfuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multī",
+     "cum",
+     "obesse",
+     "vellent",
+     "prōfuērunt",
+     "et",
+     "cum",
+     "prōdesse",
+     "obfuērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "3, 70"
+    }
+   },
+   {
+    "prompt": "If he shall be allowed to stay in town, the day is ours.",
+    "answer": "cui sī esse in urbe licēbit, vīcimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cui",
+     "sī",
+     "esse",
+     "in",
+     "urbe",
+     "licēbit",
+     "vīcimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "14, 20, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q15",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "The others, that stay at home, always support themselves and the above-mentioned also.",
+    "answer": "reliquī, quī domī mānsērunt, sē atque illōs alunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "reliquī",
+     "quī",
+     "domī",
+     "mānsērunt",
+     "sē",
+     "atque",
+     "illōs",
+     "alunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 1, 5"
+    }
+   },
+   {
+    "prompt": "If any man or any community does not abide by their decree, they always debar them from sacrifices.",
+    "answer": "sī quī aut prīvātus aut populus eōrum dēcrētō nōn stetit, sacrificiīs interdīcunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "quī",
+     "aut",
+     "prīvātus",
+     "aut",
+     "populus",
+     "eōrum",
+     "dēcrētō",
+     "nōn",
+     "stetit",
+     "sacrificiīs",
+     "interdīcunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 13, 6"
+    }
+   },
+   {
+    "prompt": "Agis the king had died; he had left a son Leotychides.",
+    "answer": "mortuus erat Āgis rēx. fīlium relīquerat Leōtychidem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mortuus",
+     "erat",
+     "Āgis",
+     "rēx",
+     "fīlium",
+     "relīquerat",
+     "Leōtychidem"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "17, 1, 4"
+    }
+   },
+   {
+    "prompt": "The camp was pitched on favourable ground.",
+    "answer": "castra oportūnīs locīs erant posita.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "castra",
+     "oportūnīs",
+     "locīs",
+     "erant",
+     "posita"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 69, 7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q16",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Thus at one and the same time the tide had filled the men-of-war, and the gale of wind kept knocking the transports about.",
+    "answer": "ita ūnō tempore et longās nāvēs aestus complēverat, et onerāriās tempestās adflīctābat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ita",
+     "ūnō",
+     "tempore",
+     "et",
+     "longās",
+     "nāvēs",
+     "aestus",
+     "complēverat",
+     "et",
+     "onerāriās",
+     "tempestās",
+     "adflīctābat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 29, 2"
+    }
+   },
+   {
+    "prompt": "I have only had one letter from you thus far.",
+    "answer": "ūnam adhūc ā tē epistolam accēperam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnam",
+     "adhūc",
+     "ā",
+     "tē",
+     "epistolam",
+     "accēperam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "7, 12, 1"
+    }
+   },
+   {
+    "prompt": "This terrified the conspirators at first; and yet Catiline’s frenzy was not getting abated.",
+    "answer": "quod factum prīmō populārīs coniūrātiōnis concusserat. neque tamen Catilīnae furor minuēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "factum",
+     "prīmō",
+     "populārīs",
+     "coniūrātiōnis",
+     "concusserat",
+     "neque",
+     "tamen",
+     "Catilīnae",
+     "furor",
+     "minuēbātur"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "24, 1"
+    }
+   },
+   {
+    "prompt": "I will not leave you alive; you shall die under the rod.",
+    "answer": "vīvum tē nōn relinquam; moriēre virgīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vīvum",
+     "tē",
+     "nōn",
+     "relinquam",
+     "moriēre",
+     "virgīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 85"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q17",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "Polemo will concede this point to Zeno.",
+    "answer": "dabit hoc Zēnōnī Polemō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dabit",
+     "hoc",
+     "Zēnōnī",
+     "Polemō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "4, 51"
+    }
+   },
+   {
+    "prompt": "Happiness then will walk with goodness even to the scaffold.",
+    "answer": "sequētur igitur vel ad supplicium beāta vīta virtūtem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sequētur",
+     "igitur",
+     "vel",
+     "ad",
+     "supplicium",
+     "beāta",
+     "vīta",
+     "virtūtem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 87"
+    }
+   },
+   {
+    "prompt": "You will listen to me with kind indulgence.",
+    "answer": "bonā veniā mē audiēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bonā",
+     "veniā",
+     "mē",
+     "audiēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 59"
+    }
+   },
+   {
+    "prompt": "Meantime you will not be inactive.",
+    "answer": "tū intereā nōn cessābis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "intereā",
+     "nōn",
+     "cessābis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "5, 12, 10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q18",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "I am sure I shall suffer no harm, if you are with me.",
+    "answer": "profectō nihil accipiam iniūriae, sī tū aderis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "profectō",
+     "nihil",
+     "accipiam",
+     "iniūriae",
+     "sī",
+     "tū",
+     "aderis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "5, 18, 3"
+    }
+   },
+   {
+    "prompt": "So that the hearer may imagine more than he sees.",
+    "answer": "ut is quī audiet, cōgitet plūra, quam videat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "is",
+     "quī",
+     "audiet",
+     "cōgitet",
+     "plūra",
+     "quam",
+     "videat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 242"
+    }
+   },
+   {
+    "prompt": "The man that puts down Antony will put an end to this cruel war.",
+    "answer": "quī Antōnium oppresserit, is hoc bellum taeterrimum cōnfēcerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quī",
+     "Antōnium",
+     "oppresserit",
+     "is",
+     "hoc",
+     "bellum",
+     "taeterrimum",
+     "cōnfēcerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "10, 19, 2"
+    }
+   },
+   {
+    "prompt": "The first rush will see the camp carried.",
+    "answer": "prīmus impetus castra cēperit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prīmus",
+     "impetus",
+     "castra",
+     "cēperit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "25, 38, 17"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q19",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "That is a question for him to settle.",
+    "answer": "fuerit ista eius dēlīberātiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fuerit",
+     "ista",
+     "eius",
+     "dēlīberātiō"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 23, 8"
+    }
+   },
+   {
+    "prompt": "What the reason was, I won’t consider now.",
+    "answer": "quae fuerit causa, mox vīderō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quae",
+     "fuerit",
+     "causa",
+     "mox",
+     "vīderō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1, 35"
+    }
+   },
+   {
+    "prompt": "Whether right or not, we will consider some other time.",
+    "answer": "rēctē secusne aliās vīderimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēctē",
+     "secusne",
+     "aliās",
+     "vīderimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Academica",
+     "locus": "2, 135"
+    }
+   },
+   {
+    "prompt": "Do you, sir, invite the ladies, and I will meantime have fetched the children.",
+    "answer": "tū invītā mulierēs, ego accīverō puerōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tū",
+     "invītā",
+     "mulierēs",
+     "ego",
+     "accīverō",
+     "puerōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "5, 1, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q20",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "So long as it had to be, one man controlled the world.",
+    "answer": "dum necesse erat, ūnus omnia poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "necesse",
+     "erat",
+     "ūnus",
+     "omnia",
+     "poterat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "139"
+    }
+   },
+   {
+    "prompt": "As long as Latin literature has the gift of speech, this spot will not lack its oak.",
+    "answer": "dum Latīnae loquentur litterae, quercus huic locō nōn deerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "Latīnae",
+     "loquentur",
+     "litterae",
+     "quercus",
+     "huic",
+     "locō",
+     "nōn",
+     "deerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "1, 2"
+    }
+   },
+   {
+    "prompt": "As long as he could, he made a manful stand.",
+    "answer": "quoad potuit, fortissimē restitit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quoad",
+     "potuit",
+     "fortissimē",
+     "restitit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 12, 5"
+    }
+   },
+   {
+    "prompt": "What you have, that you should avail yourself of.",
+    "answer": "quod est, eō decet ūtī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "est",
+     "eō",
+     "decet",
+     "ūtī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "27"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q21",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "When they want to unbend, let them beware of excess.",
+    "answer": "cum relaxāre animōs volent, caveant intemperantiam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "relaxāre",
+     "animōs",
+     "volent",
+     "caveant",
+     "intemperantiam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 122"
+    }
+   },
+   {
+    "prompt": "They were out of everything that was serviceable for repairing their vessels.",
+    "answer": "omnia deerant, quae ad reficiendās nāvēs erant ūsuī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnia",
+     "deerant",
+     "quae",
+     "ad",
+     "reficiendās",
+     "nāvēs",
+     "erant",
+     "ūsuī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 29, 4"
+    }
+   },
+   {
+    "prompt": "When I drop the book, all assent melts away.",
+    "answer": "cum posuī librum, adsēnsiō omnis ēlābitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "posuī",
+     "librum",
+     "adsēnsiō",
+     "omnis",
+     "ēlābitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 24"
+    }
+   },
+   {
+    "prompt": "We shall make people attentive if we show that what we are going to say is important.",
+    "answer": "attentōs faciēmus, sī dēmōnstrābimus ea, quae dictūrī erimus, magna esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "attentōs",
+     "faciēmus",
+     "sī",
+     "dēmōnstrābimus",
+     "ea",
+     "quae",
+     "dictūrī",
+     "erimus",
+     "magna",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Inventione",
+     "locus": "1, 23"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q22",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
+   {
+    "prompt": "As the king was not to have a hand in the action at sea, he moved off to Magnesia.",
+    "answer": "rēx, quia nōn interfutūrus nāvālī certāminī erat, Magnēsiam concessit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēx",
+     "quia",
+     "nōn",
+     "interfutūrus",
+     "nāvālī",
+     "certāminī",
+     "erat",
+     "Magnēsiam",
+     "concessit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "36, 43, 9"
+    }
+   },
+   {
+    "prompt": "Without a moment’s hesitation they vote to condemn.",
+    "answer": "sine ūllā dubitātiōne condemnant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sine",
+     "ūllā",
+     "dubitātiōne",
+     "condemnant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "75"
+    }
+   },
+   {
+    "prompt": "Do you possibly hesitate to do at my command what you wanted to do, as it was, yourself?",
+    "answer": "num dubitās id mē imperante facere, quod iam tuā sponte faciēbās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "dubitās",
+     "id",
+     "mē",
+     "imperante",
+     "facere",
+     "quod",
+     "iam",
+     "tuā",
+     "sponte",
+     "faciēbās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 13"
+    }
+   }
+  ]
  }
 ]

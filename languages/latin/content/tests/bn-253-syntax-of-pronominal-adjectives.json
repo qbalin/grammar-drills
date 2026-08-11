@@ -536,5 +536,80 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-253-syntax-of-pronominal-adjectives-q1",
+  "sectionId": "bn-253-syntax-of-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "Thus each of the two things is weak without the other.",
+    "answer": "Ita est utraque rēs sine alterā dēbilis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ita",
+     "est",
+     "utraque",
+     "rēs",
+     "sine",
+     "alterā",
+     "dēbilis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2.13"
+    }
+   },
+   {
+    "prompt": "Even as the heavenly nature is free from the earthy and the humid, so the soul of man has no part in either of these qualities.",
+    "answer": "ut illa nātūra caelestis et terrā vacat et ūmōre, sīc utriusque hārum rērum hūmānus animus est expers.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "illa",
+     "nātūra",
+     "caelestis",
+     "et",
+     "terrā",
+     "vacat",
+     "et",
+     "ūmōre",
+     "sīc",
+     "utriusque",
+     "hārum",
+     "rērum",
+     "hūmānus",
+     "animus",
+     "est",
+     "expers"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 65"
+    }
+   },
+   {
+    "prompt": "We have six sons and two daughters, both already married.",
+    "answer": "sex fīliī nōbīs, duae fīliae sunt, utraeque iam nūptae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sex",
+     "fīliī",
+     "nōbīs",
+     "duae",
+     "fīliae",
+     "sunt",
+     "utraeque",
+     "iam",
+     "nūptae"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "42, 34, 4"
+    }
+   }
+  ]
  }
 ]

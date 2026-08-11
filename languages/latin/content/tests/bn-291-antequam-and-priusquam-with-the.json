@@ -513,5 +513,244 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-q3",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "We always use our limbs before we learn for what purposes of utility we have them.",
+    "answer": "membrīs ūtimur priusquam didicimus cuius ea causā ūtilitātis habeāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "membrīs",
+     "ūtimur",
+     "priusquam",
+     "didicimus",
+     "cuius",
+     "ea",
+     "causā",
+     "ūtilitātis",
+     "habeāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "3, 66"
+    }
+   },
+   {
+    "prompt": "This calamity always overwhelms you before you can anticipate it.",
+    "answer": "hoc malum opprimit antequam prōspicere potuerīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "malum",
+     "opprimit",
+     "antequam",
+     "prōspicere",
+     "potuerīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 39"
+    }
+   },
+   {
+    "prompt": "Foresight is the faculty through which a future event is seen before it has taken place.",
+    "answer": "prōvidentia, per quam futūrum aliquid vidētur antequam factum sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prōvidentia",
+     "per",
+     "quam",
+     "futūrum",
+     "aliquid",
+     "vidētur",
+     "antequam",
+     "factum",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Inventione",
+     "locus": "2, 160"
+    }
+   },
+   {
+    "prompt": "Before I come back to the motion, I will say a little about myself.",
+    "answer": "antequam ad sententiam redeō, dē mē pauca dīcam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "antequam",
+     "ad",
+     "sententiam",
+     "redeō",
+     "dē",
+     "mē",
+     "pauca",
+     "dīcam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 20"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-q4",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "Before he reaches Pontus, he will send a letter to Pompey.",
+    "answer": "antequam veniat in Pontum, litterās ad Cn. Pompēium mittet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "antequam",
+     "veniat",
+     "in",
+     "Pontum",
+     "litterās",
+     "ad",
+     "Cn",
+     "Pompēium",
+     "mittet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Lege Agraria",
+     "locus": "2, 53"
+    }
+   },
+   {
+    "prompt": "I will not argue to the contrary before he has spoken.",
+    "answer": "nihil contrā disputābō priusquam dīxerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "contrā",
+     "disputābō",
+     "priusquam",
+     "dīxerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Flacco",
+     "locus": "51"
+    }
+   },
+   {
+    "prompt": "All these incidents occurred before the defendant set foot in Italy.",
+    "answer": "omnia ista ante facta sunt quam iste Ītaliam attigit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnia",
+     "ista",
+     "ante",
+     "facta",
+     "sunt",
+     "quam",
+     "iste",
+     "Ītaliam",
+     "attigit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 161"
+    }
+   },
+   {
+    "prompt": "And they did not stay their flight before they fairly arrived at the Rhine.",
+    "answer": "neque prius fugere dēstitērunt quam ad Rhēnum pervēnērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "prius",
+     "fugere",
+     "dēstitērunt",
+     "quam",
+     "ad",
+     "Rhēnum",
+     "pervēnērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 53, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-q5",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
+   {
+    "prompt": "They were not seen before they drew near to the camp.",
+    "answer": "nec prius sunt vīsī quam castrīs adpropinquārent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nec",
+     "prius",
+     "sunt",
+     "vīsī",
+     "quam",
+     "castrīs",
+     "adpropinquārent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 37, 2"
+    }
+   },
+   {
+    "prompt": "He exhibited a play just a year before Ennius was born.",
+    "answer": "fābulam docuit, annō ipsō ante quam nātus est Ennius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fābulam",
+     "docuit",
+     "annō",
+     "ipsō",
+     "ante",
+     "quam",
+     "nātus",
+     "est",
+     "Ennius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "72"
+    }
+   },
+   {
+    "prompt": "Two hundred years before they took Rome, the Gauls crossed over to Italy.",
+    "answer": "ducentīs annīs ante quam Rōmam caperent, in Ītaliam Gallī trānscendērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ducentīs",
+     "annīs",
+     "ante",
+     "quam",
+     "Rōmam",
+     "caperent",
+     "in",
+     "Ītaliam",
+     "Gallī",
+     "trānscendērunt"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "5, 33, 5"
+    }
+   }
+  ]
  }
 ]

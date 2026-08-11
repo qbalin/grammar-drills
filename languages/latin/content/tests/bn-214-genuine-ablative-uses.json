@@ -1634,5 +1634,403 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q9",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "Time would fail you sooner than words.",
+    "answer": "Tempus tē citius quam ōrātiō dēficeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tempus",
+     "tē",
+     "citius",
+     "quam",
+     "ōrātiō",
+     "dēficeret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "89"
+    }
+   },
+   {
+    "prompt": "After that Pompey had to keep away from the market place, from the senate, from highways and byways.",
+    "answer": "caruit forō posteā Pompēius, caruit senātū, caruit pūblicō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "caruit",
+     "forō",
+     "posteā",
+     "Pompēius",
+     "caruit",
+     "senātū",
+     "caruit",
+     "pūblicō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "18"
+    }
+   },
+   {
+    "prompt": "Thus far Ligarius proves devoid of any guilt.",
+    "answer": "adhūc Q. Ligārius omnī culpā vacat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "adhūc",
+     "Q",
+     "Ligārius",
+     "omnī",
+     "culpā",
+     "vacat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Ligario",
+     "locus": "4"
+    }
+   },
+   {
+    "prompt": "He is kept out of Italy; you want to deprive him not of his country, from which he is debarred, but of life.",
+    "answer": "Ītaliā prohibētur: nōn tū eum patriā prīvāre, quā caret, sed vītā vīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ītaliā",
+     "prohibētur",
+     "nōn",
+     "tū",
+     "eum",
+     "patriā",
+     "prīvāre",
+     "quā",
+     "caret",
+     "sed",
+     "vītā",
+     "vīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Ligario",
+     "locus": "11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q10",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "They maintain that this is not at variance with the greatness of the gods.",
+    "answer": "negant id esse aliēnum maiestāte deōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "negant",
+     "id",
+     "esse",
+     "aliēnum",
+     "maiestāte",
+     "deōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "2, 105"
+    }
+   },
+   {
+    "prompt": "This statue of Cupid was made of marble.",
+    "answer": "sīgnum erat hoc Cupīdinis ē marmore.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sīgnum",
+     "erat",
+     "hoc",
+     "Cupīdinis",
+     "ē",
+     "marmore"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 5"
+    }
+   },
+   {
+    "prompt": "With long shields made out of bark.",
+    "answer": "scūtīs ex cortice factīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "scūtīs",
+     "ex",
+     "cortice",
+     "factīs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 33, 2"
+    }
+   },
+   {
+    "prompt": "A soul meetly fashioned by dame nature.",
+    "answer": "animus bene īnfōrmātus ā nātūrā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "animus",
+     "bene",
+     "īnfōrmātus",
+     "ā",
+     "nātūrā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q11",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "Your schemes are plainer to us than day.",
+    "answer": "lūce sunt clāriōra nōbīs tua cōnsilia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lūce",
+     "sunt",
+     "clāriōra",
+     "nōbīs",
+     "tua",
+     "cōnsilia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 6"
+    }
+   },
+   {
+    "prompt": "Of all the sons of Carthage, who was rated higher than Hannibal?",
+    "answer": "quis Karthāginiēnsium plūris fuit Hannibale?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "Karthāginiēnsium",
+     "plūris",
+     "fuit",
+     "Hannibale"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "142"
+    }
+   },
+   {
+    "prompt": "The words of Varro, a better scholar than Claudius ever was.",
+    "answer": "verba M. Varrōnis, hominis quam fuit Claudius doctiōris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "verba",
+     "M",
+     "Varrōnis",
+     "hominis",
+     "quam",
+     "fuit",
+     "Claudius",
+     "doctiōris"
+    ],
+    "source": {
+     "author": "Aulus Gellius",
+     "work": "Noctes Atticae",
+     "locus": "10, 1, 4"
+    }
+   },
+   {
+    "prompt": "What fact is there better known than this, to wit, that all the women in Segesta, married and single, came streaming together?",
+    "answer": "quid hōc est clārius, quam omnīs Segestae mātrōnās et virginēs convēnisse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "hōc",
+     "est",
+     "clārius",
+     "quam",
+     "omnīs",
+     "Segestae",
+     "mātrōnās",
+     "et",
+     "virginēs",
+     "convēnisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 77"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q12",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "He lived with you over a year.",
+    "answer": "tēcum plūs annum vīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tēcum",
+     "plūs",
+     "annum",
+     "vīxit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Quinctio",
+     "locus": "41"
+    }
+   },
+   {
+    "prompt": "With over five hundred horses.",
+    "answer": "cum equīs plūs quīngentīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "equīs",
+     "plūs",
+     "quīngentīs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "40, 32, 6"
+    }
+   },
+   {
+    "prompt": "Over forty years old.",
+    "answer": "annōs nātus maior quadrāgintā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "annōs",
+     "nātus",
+     "maior",
+     "quadrāgintā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "39"
+    }
+   },
+   {
+    "prompt": "A marsh not wider than fifty feet.",
+    "answer": "palūs nōn lātior pedibus quīnquāgintā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "palūs",
+     "nōn",
+     "lātior",
+     "pedibus",
+     "quīnquāgintā"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 19, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-214-genuine-ablative-uses-q13",
+  "sectionId": "bn-214-genuine-ablative-uses",
+  "questions": [
+   {
+    "prompt": "This infection is more sweeping than anybody dreams.",
+    "answer": "lātius opīniōne dissēminātum est hoc malum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lātius",
+     "opīniōne",
+     "dissēminātum",
+     "est",
+     "hoc",
+     "malum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 6"
+    }
+   },
+   {
+    "prompt": "Once in a while the robber gets killed by the wayfarer.",
+    "answer": "nōn numquam latrō ā viātōre occīditur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "numquam",
+     "latrō",
+     "ā",
+     "viātōre",
+     "occīditur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "55"
+    }
+   },
+   {
+    "prompt": "He said in reply that he would rather be plundered by a Roman than sold by an enemy.",
+    "answer": "respondit, ā cīve sē spoliārī mālle quam ab hoste vēnīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "respondit",
+     "ā",
+     "cīve",
+     "sē",
+     "spoliārī",
+     "mālle",
+     "quam",
+     "ab",
+     "hoste",
+     "vēnīre"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "12, 1, 43"
+    }
+   },
+   {
+    "prompt": "Greece was saved from slavery by the sagacity of a single man.",
+    "answer": "ūnīus virī prūdentiā Graecia līberāta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnīus",
+     "virī",
+     "prūdentiā",
+     "Graecia",
+     "līberāta",
+     "est"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "2, 5, 3"
+    }
+   }
+  ]
  }
 ]

@@ -531,5 +531,378 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-q1",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "I said that as long as you were afraid, you would promise everything; the moment you ceased to fear, you would be just like yourself.",
+    "answer": "dīcēbam quoad metuerēs, omnia tē prōmissūrum: simul ac timēre desīssēs, similem tē futūrum tuī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīcēbam",
+     "quoad",
+     "metuerēs",
+     "omnia",
+     "tē",
+     "prōmissūrum",
+     "simul",
+     "ac",
+     "timēre",
+     "desīssēs",
+     "similem",
+     "tē",
+     "futūrum",
+     "tuī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 89"
+    }
+   },
+   {
+    "prompt": "They resolved to get such things ready as were necessary for the march.",
+    "answer": "cōnstituērunt ea, quae ad proficīscendum pertinērent, comparāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnstituērunt",
+     "ea",
+     "quae",
+     "ad",
+     "proficīscendum",
+     "pertinērent",
+     "comparāre"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 3, 1"
+    }
+   },
+   {
+    "prompt": "It stood written that, if he did not come back home, they would condemn him to death.",
+    "answer": "erat scrīptum: nisi domum reverterētur, sē capitis eum damnātūrōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "erat",
+     "scrīptum",
+     "nisi",
+     "domum",
+     "reverterētur",
+     "sē",
+     "capitis",
+     "eum",
+     "damnātūrōs"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "4, 3, 4"
+    }
+   },
+   {
+    "prompt": "Some envoys came, to engage to do what he ordered.",
+    "answer": "lēgātī vēnērunt, quī sē ea, quae imperāsset, factūrōs pollicērentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgātī",
+     "vēnērunt",
+     "quī",
+     "sē",
+     "ea",
+     "quae",
+     "imperāsset",
+     "factūrōs",
+     "pollicērentur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 22, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-q2",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "Though there is an impression that the man who lived years and years before these people, Pisistratus, was a very telling orator.",
+    "answer": "quamquam opīniō est, eum quī multīs annīs ante hōs fuerit, Pīsistratum, multum valuisse dīcendō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quamquam",
+     "opīniō",
+     "est",
+     "eum",
+     "quī",
+     "multīs",
+     "annīs",
+     "ante",
+     "hōs",
+     "fuerit",
+     "Pīsistratum",
+     "multum",
+     "valuisse",
+     "dīcendō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "27"
+    }
+   },
+   {
+    "prompt": "He is said to have died a few days after he came.",
+    "answer": "dīcitur, posteā quam vēnerit, paucīs diēbus esse mortuus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīcitur",
+     "posteā",
+     "quam",
+     "vēnerit",
+     "paucīs",
+     "diēbus",
+     "esse",
+     "mortuus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "175"
+    }
+   },
+   {
+    "prompt": "He ascertained that after the Suebans had learned of the building of the bridge, they had sent out messengers in every direction.",
+    "answer": "cōgnōvit Suēbōs, posteā quam pontem fierī comperissent, nūntiōs in omnēs partēs dīmīsisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōgnōvit",
+     "Suēbōs",
+     "posteā",
+     "quam",
+     "pontem",
+     "fierī",
+     "comperissent",
+     "nūntiōs",
+     "in",
+     "omnēs",
+     "partēs",
+     "dīmīsisse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 19, 2"
+    }
+   },
+   {
+    "prompt": "Theophrastus says in his book that Cimon was the soul of hospitality: he had directed his stewards to furnish everything required.",
+    "answer": "Theophrastus scrībit Cīmōnem hospitālem fuisse: ita enim vīlicīs imperāvisse, ut omnia praebērentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Theophrastus",
+     "scrībit",
+     "Cīmōnem",
+     "hospitālem",
+     "fuisse",
+     "ita",
+     "enim",
+     "vīlicīs",
+     "imperāvisse",
+     "ut",
+     "omnia",
+     "praebērentur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2, 64"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-q3",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "I must tell you that Mithridates’s troops were completely armed and equipped, and that the town was under siege.",
+    "answer": "dīcō Mithridātī cōpiās omnibus rēbus ōrnātās atque īnstrūctās fuisse, urbemque obsessam esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīcō",
+     "Mithridātī",
+     "cōpiās",
+     "omnibus",
+     "rēbus",
+     "ōrnātās",
+     "atque",
+     "īnstrūctās",
+     "fuisse",
+     "urbemque",
+     "obsessam",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "20"
+    }
+   },
+   {
+    "prompt": "It was reported that Ariovistus was pressing on to seize Vesontio, and that he had done a three days’ journey from his own borders.",
+    "answer": "nūntiātum est Ariovistum ad occupandum Vesontiōnem contendere trīduīque viam ā suīs fīnibus prōfēcisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūntiātum",
+     "est",
+     "Ariovistum",
+     "ad",
+     "occupandum",
+     "Vesontiōnem",
+     "contendere",
+     "trīduīque",
+     "viam",
+     "ā",
+     "suīs",
+     "fīnibus",
+     "prōfēcisse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 38, 1"
+    }
+   },
+   {
+    "prompt": "Rumour has it that there is an altar in the vestibule of the temple.",
+    "answer": "fāma est āram esse in vestibulō templī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fāma",
+     "est",
+     "āram",
+     "esse",
+     "in",
+     "vestibulō",
+     "templī"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "24, 3, 7"
+    }
+   },
+   {
+    "prompt": "The envoys said they would report this to their countrymen.",
+    "answer": "lēgāti haec sē ad suōs relātūrōs dīxērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "lēgāti",
+     "haec",
+     "sē",
+     "ad",
+     "suōs",
+     "relātūrōs",
+     "dīxērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 9, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-317-tenses-in-indirect-discourse-q4",
+  "sectionId": "bn-317-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "I said that as long as you were afraid, you would promise everything.",
+    "answer": "dīcēbam quoad metuerēs, omnia tē prōmissūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīcēbam",
+     "quoad",
+     "metuerēs",
+     "omnia",
+     "tē",
+     "prōmissūrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 89"
+    }
+   },
+   {
+    "prompt": "Philip accuses Alexander of courting the favour of the Macedonians by the use of money.",
+    "answer": "Alexandrum Philippus accūsat quod largitiōne benevolentiam Macedonum cōnsectētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alexandrum",
+     "Philippus",
+     "accūsat",
+     "quod",
+     "largitiōne",
+     "benevolentiam",
+     "Macedonum",
+     "cōnsectētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2, 53"
+    }
+   },
+   {
+    "prompt": "You have heard the origin of the enmity which was between the defendant and his mother.",
+    "answer": "initium quod huic cum mātre fuerit simultātis audīstis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "initium",
+     "quod",
+     "huic",
+     "cum",
+     "mātre",
+     "fuerit",
+     "simultātis",
+     "audīstis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "17"
+    }
+   },
+   {
+    "prompt": "Ariovistus answered that it was by the laws of war that he took the tribute which victors were wont to lay upon the vanquished.",
+    "answer": "Ariovistus respondit: stīpendium capere iūre bellī quod victōrēs victīs imponere cōnsuerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ariovistus",
+     "respondit",
+     "stīpendium",
+     "capere",
+     "iūre",
+     "bellī",
+     "quod",
+     "victōrēs",
+     "victīs",
+     "imponere",
+     "cōnsuerint"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 1"
+    }
+   }
+  ]
  }
 ]

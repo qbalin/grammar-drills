@@ -1537,5 +1537,1941 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q3",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "I do not agree with any of these three opinions. For of course that first one isn't true.",
+    "answer": "Hārum trium sententiārum nūllī prōrsus adsentior. nec enim illa prīma vēra est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hārum",
+     "trium",
+     "sententiārum",
+     "nūllī",
+     "prōrsus",
+     "adsentior",
+     "nec",
+     "enim",
+     "illa",
+     "prīma",
+     "vēra",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "57"
+    }
+   },
+   {
+    "prompt": "Because nature cannot be changed, for this reason true friendships are eternal.",
+    "answer": "Quia nātūra mūtārī nōn potest, idcircō vērae amīcitiae sempiternae sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quia",
+     "nātūra",
+     "mūtārī",
+     "nōn",
+     "potest",
+     "idcircō",
+     "vērae",
+     "amīcitiae",
+     "sempiternae",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "32"
+    }
+   },
+   {
+    "prompt": "Our men rush speedily to arms, clamber up the palisade.",
+    "answer": "nostrī celeriter ad arma concurrunt, vāllum cōnscendunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nostrī",
+     "celeriter",
+     "ad",
+     "arma",
+     "concurrunt",
+     "vāllum",
+     "cōnscendunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 39, 3"
+    }
+   },
+   {
+    "prompt": "There were these people worrying and harrying the commons.",
+    "answer": "hī ferre agere plēbem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hī",
+     "ferre",
+     "agere",
+     "plēbem"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 37, 7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q4",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The fictions of speculation are swept away by time, but the judgements of nature are confirmed.",
+    "answer": "opīniōnis commenta dēlet diēs, nātūrae iūdicia cōnfirmat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "opīniōnis",
+     "commenta",
+     "dēlet",
+     "diēs",
+     "nātūrae",
+     "iūdicia",
+     "cōnfirmat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 5"
+    }
+   },
+   {
+    "prompt": "You know how to conquer, Hannibal, but not how to use victory.",
+    "answer": "vincere scīs, Hannibal, victōriā ūtī nescīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vincere",
+     "scīs",
+     "Hannibal",
+     "victōriā",
+     "ūtī",
+     "nescīs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "22, 51, 4"
+    }
+   },
+   {
+    "prompt": "Go forth from Rome, Catiline, relieve the commonwealth from its fear, depart into exile.",
+    "answer": "ēgredere ex urbe, Catilīna, līberā rem pūblicam metū, in exsilium proficīscere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ēgredere",
+     "ex",
+     "urbe",
+     "Catilīna",
+     "līberā",
+     "rem",
+     "pūblicam",
+     "metū",
+     "in",
+     "exsilium",
+     "proficīscere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 20"
+    }
+   },
+   {
+    "prompt": "Dumnorix was very influential among the Sequani and a friend to the Helvetians.",
+    "answer": "Dumnorīx apud Sēquanōs plūrimum poterat et Helvētiīs erat amīcus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dumnorīx",
+     "apud",
+     "Sēquanōs",
+     "plūrimum",
+     "poterat",
+     "et",
+     "Helvētiīs",
+     "erat",
+     "amīcus"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 9, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q5",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "They induce the Rauricans, Tulingans, and Latovicans to join them in their march.",
+    "answer": "persuādent Rauricīs et Tulingīs et Latovicīs utī ūnā cum hīs proficīscantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "persuādent",
+     "Rauricīs",
+     "et",
+     "Tulingīs",
+     "et",
+     "Latovicīs",
+     "utī",
+     "ūnā",
+     "cum",
+     "hīs",
+     "proficīscantur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 5, 4"
+    }
+   },
+   {
+    "prompt": "The Aeduans set forth that they were cast down from the chief place; they complain of the change of fortune, and say they miss Caesar’s former kindness to them.",
+    "answer": "Aeduī ferunt sē dēiectōs prīncipātū; queruntur fortūnae commūtātiōnem et Caesaris indulgentiam in sē requīrunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aeduī",
+     "ferunt",
+     "sē",
+     "dēiectōs",
+     "prīncipātū",
+     "queruntur",
+     "fortūnae",
+     "commūtātiōnem",
+     "et",
+     "Caesaris",
+     "indulgentiam",
+     "in",
+     "sē",
+     "requīrunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 63, 8"
+    }
+   },
+   {
+    "prompt": "It was reported that Ariovistus’s cavalry were moving nearer the hillock and galloping up to the Romans; that they were throwing stones at our men.",
+    "answer": "nūntiātum est equitēs Ariovistī propius tumulum accēdere et ad nostrōs adequitāre; lapidēs in nostrōs conicere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūntiātum",
+     "est",
+     "equitēs",
+     "Ariovistī",
+     "propius",
+     "tumulum",
+     "accēdere",
+     "et",
+     "ad",
+     "nostrōs",
+     "adequitāre",
+     "lapidēs",
+     "in",
+     "nostrōs",
+     "conicere"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 46, 1"
+    }
+   },
+   {
+    "prompt": "Everybody runs after what seems good and avoids the opposite.",
+    "answer": "omnēs ea, quae bona videntur, sequuntur fugiuntque contrāria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnēs",
+     "ea",
+     "quae",
+     "bona",
+     "videntur",
+     "sequuntur",
+     "fugiuntque",
+     "contrāria"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "4, 12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q6",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "He sprang overboard and furthermore proceeded to bear the eagle upon the enemy.",
+    "answer": "sē ex nāvī prōiēcit atque in hostēs aquilam ferre coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sē",
+     "ex",
+     "nāvī",
+     "prōiēcit",
+     "atque",
+     "in",
+     "hostēs",
+     "aquilam",
+     "ferre",
+     "coepit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 25, 4"
+    }
+   },
+   {
+    "prompt": "We owe a great debt of gratitude to the gods immortal in general, and to yon Jove the Stayer in particular.",
+    "answer": "magna dīs immortālibus habenda est atque huic Iovī Statōrī grātia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magna",
+     "dīs",
+     "immortālibus",
+     "habenda",
+     "est",
+     "atque",
+     "huic",
+     "Iovī",
+     "Statōrī",
+     "grātia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 11"
+    }
+   },
+   {
+    "prompt": "The journey across is just as long as it is from Gaul to Britain.",
+    "answer": "parī spatiō trānsmissus, atque ex Galliā est in Britanniam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "parī",
+     "spatiō",
+     "trānsmissus",
+     "atque",
+     "ex",
+     "Galliā",
+     "est",
+     "in",
+     "Britanniam"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 13, 2"
+    }
+   },
+   {
+    "prompt": "And they furthermore gave orders to make a statue of Jupiter, a bigger one, and to turn it round to the east, the opposite of the way it originally faced.",
+    "answer": "īdemque iussērunt simulācrum Iovis facere maius et contrā, atque anteā fuerat, ad orientem convertere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "īdemque",
+     "iussērunt",
+     "simulācrum",
+     "Iovis",
+     "facere",
+     "maius",
+     "et",
+     "contrā",
+     "atque",
+     "anteā",
+     "fuerat",
+     "ad",
+     "orientem",
+     "convertere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3, 20"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q7",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Socrates did not try to find an advocate nor bow the knee to his judges, but he was plain-spoken and defiant.",
+    "answer": "Sōcratēs nec patrōnum quaesīvit nec iūdicibus supplex fuit adhibuitque līberam contumāciam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sōcratēs",
+     "nec",
+     "patrōnum",
+     "quaesīvit",
+     "nec",
+     "iūdicibus",
+     "supplex",
+     "fuit",
+     "adhibuitque",
+     "līberam",
+     "contumāciam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 71"
+    }
+   },
+   {
+    "prompt": "The enemy could not stand the dash of our people, but turned their backs.",
+    "answer": "nostrōrum mīlitum impetum hostēs ferre nōn potuērunt ac terga vertērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nostrōrum",
+     "mīlitum",
+     "impetum",
+     "hostēs",
+     "ferre",
+     "nōn",
+     "potuērunt",
+     "ac",
+     "terga",
+     "vertērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 35, 2"
+    }
+   },
+   {
+    "prompt": "A creature who is not even a Greek, but more of a Mysian.",
+    "answer": "hominis nē Graecī quidem ac Mȳsī potius.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hominis",
+     "nē",
+     "Graecī",
+     "quidem",
+     "ac",
+     "Mȳsī",
+     "potius"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "1, 1, 19"
+    }
+   },
+   {
+    "prompt": "We are swept into error by the delusions of the world and cannot make out the truth.",
+    "answer": "opīniōnibus volgī rapimur in errōrem nec vēra cernimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "opīniōnibus",
+     "volgī",
+     "rapimur",
+     "in",
+     "errōrem",
+     "nec",
+     "vēra",
+     "cernimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "2, 43"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q8",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "They went to aid their people and carried the hill, but they could not stand the fiery onset of our soldiers.",
+    "answer": "subsidiō suīs iērunt collemque cēpērunt, neque nostrōrum mīlitum impetum sustinēre potuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "subsidiō",
+     "suīs",
+     "iērunt",
+     "collemque",
+     "cēpērunt",
+     "neque",
+     "nostrōrum",
+     "mīlitum",
+     "impetum",
+     "sustinēre",
+     "potuērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 62, 8"
+    }
+   },
+   {
+    "prompt": "We can neither be better nor wiser.",
+    "answer": "nec meliōrēs nec beātiōrēs esse possumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nec",
+     "meliōrēs",
+     "nec",
+     "beātiōrēs",
+     "esse",
+     "possumus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 32"
+    }
+   },
+   {
+    "prompt": "What would you have done, if I had sent you to Tarentum, and not to Samarobriva?",
+    "answer": "quid tū fēcissēs, sī tē Tarentum et nōn Samarobrīvam mīsissem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "tū",
+     "fēcissēs",
+     "sī",
+     "tē",
+     "Tarentum",
+     "et",
+     "nōn",
+     "Samarobrīvam",
+     "mīsissem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "7, 12, 1"
+    }
+   },
+   {
+    "prompt": "And the man did not fail to see this.",
+    "answer": "nec hoc ille nōn vīdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nec",
+     "hoc",
+     "ille",
+     "nōn",
+     "vīdit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "4, 60"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q9",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "That the defendant has left nothing untouched in public places, no, not even in the temples, nothing either in the way of private or of public property, in all Sicily.",
+    "answer": "nihil in locīs commūnibus, nē in fānīs quidem, nihil istum neque prīvātī neque pūblicī tōtā in Siciliā relīquisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "in",
+     "locīs",
+     "commūnibus",
+     "nē",
+     "in",
+     "fānīs",
+     "quidem",
+     "nihil",
+     "istum",
+     "neque",
+     "prīvātī",
+     "neque",
+     "pūblicī",
+     "tōtā",
+     "in",
+     "Siciliā",
+     "relīquisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 2"
+    }
+   },
+   {
+    "prompt": "There lay a road open at once plain and not long.",
+    "answer": "patēbat via et certa neque longa.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "patēbat",
+     "via",
+     "et",
+     "certa",
+     "neque",
+     "longa"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "11, 4"
+    }
+   },
+   {
+    "prompt": "Here you must conquer, my men, or die.",
+    "answer": "hīc vincendum aut moriendum, mīlitēs, est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hīc",
+     "vincendum",
+     "aut",
+     "moriendum",
+     "mīlitēs",
+     "est"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 43, 5"
+    }
+   },
+   {
+    "prompt": "The horses kept getting frantic from being hit or wounded.",
+    "answer": "equī ictī aut vulnerātī cōnsternābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "equī",
+     "ictī",
+     "aut",
+     "vulnerātī",
+     "cōnsternābantur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 33, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q10",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "You must make some bold dash collectively, or else you must suffer every thing individually.",
+    "answer": "audendum est aliquid ūniversīs, aut omnia singulīs patienda.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "audendum",
+     "est",
+     "aliquid",
+     "ūniversīs",
+     "aut",
+     "omnia",
+     "singulīs",
+     "patienda"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "6, 18, 7"
+    }
+   },
+   {
+    "prompt": "Such a collection of dwelling-houses they called, well, a town or a city, whichever you please.",
+    "answer": "eius modī coniūnctiōnem tēctōrum oppidum vel urbem appellāvērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eius",
+     "modī",
+     "coniūnctiōnem",
+     "tēctōrum",
+     "oppidum",
+     "vel",
+     "urbem",
+     "appellāvērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 41"
+    }
+   },
+   {
+    "prompt": "Use me as your generalissimo or as a private, whichever you will.",
+    "answer": "vel imperātōre vel mīlite mē ūtiminī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vel",
+     "imperātōre",
+     "vel",
+     "mīlite",
+     "mē",
+     "ūtiminī"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "20, 16"
+    }
+   },
+   {
+    "prompt": "We have—what shall I say?—driven Catiline out of town, or allowed him to go out, or, when he was going out of his own accord, wished him a pleasant journey.",
+    "answer": "Catilīnam ex urbe vel ēiēcimus vel ēmīsimus vel ipsum ēgredientem verbīs prōsecūtī sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catilīnam",
+     "ex",
+     "urbe",
+     "vel",
+     "ēiēcimus",
+     "vel",
+     "ēmīsimus",
+     "vel",
+     "ipsum",
+     "ēgredientem",
+     "verbīs",
+     "prōsecūtī",
+     "sumus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q11",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "They must do or die.",
+    "answer": "vincendum vel cadendum esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vincendum",
+     "vel",
+     "cadendum",
+     "esse"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "14, 35"
+    }
+   },
+   {
+    "prompt": "This gentleman’s house is perhaps the finest in all Messana, at any rate the best known.",
+    "answer": "huius domus est vel optima Messānae, nōtissima quidem certē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "huius",
+     "domus",
+     "est",
+     "vel",
+     "optima",
+     "Messānae",
+     "nōtissima",
+     "quidem",
+     "certē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 3"
+    }
+   },
+   {
+    "prompt": "Said Ascanius left the city to his mother, or his stepmother, if you prefer.",
+    "answer": "is Ascanius urbem mātrī seu novercae relīquit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "is",
+     "Ascanius",
+     "urbem",
+     "mātrī",
+     "seu",
+     "novercae",
+     "relīquit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 3, 3"
+    }
+   },
+   {
+    "prompt": "Pompey made a speech, or rather attempted to make one.",
+    "answer": "dīxit Pompēius, sīve voluit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīxit",
+     "Pompēius",
+     "sīve",
+     "voluit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "2, 3, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q12",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Thus, no matter whether from chance or through special providence, the part which had done damage to Rome was the first to pay penalty in full.",
+    "answer": "ita sīve cāsū sīve cōnsiliō deōrum, quae pars calamitātem populō Rōmānō intulerat, ea prīnceps poenās persolvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ita",
+     "sīve",
+     "cāsū",
+     "sīve",
+     "cōnsiliō",
+     "deōrum",
+     "quae",
+     "pars",
+     "calamitātem",
+     "populō",
+     "Rōmānō",
+     "intulerat",
+     "ea",
+     "prīnceps",
+     "poenās",
+     "persolvit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 12, 6"
+    }
+   },
+   {
+    "prompt": "Appius had written me two or three times.",
+    "answer": "Appius ad mē bis terve litterās mīserat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Appius",
+     "ad",
+     "mē",
+     "bis",
+     "terve",
+     "litterās",
+     "mīserat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "6, 1, 2"
+    }
+   },
+   {
+    "prompt": "Who has not had a hand only in these matters, but complete charge.",
+    "answer": "quī nōn sōlum interfuit hīs rēbus, sed etiam praefuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quī",
+     "nōn",
+     "sōlum",
+     "interfuit",
+     "hīs",
+     "rēbus",
+     "sed",
+     "etiam",
+     "praefuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "1, 8, 1"
+    }
+   },
+   {
+    "prompt": "I won’t say to certain death, but to great risk of life.",
+    "answer": "nōn modo ad certam mortem, sed in magnum vītae discrīmen.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "modo",
+     "ad",
+     "certam",
+     "mortem",
+     "sed",
+     "in",
+     "magnum",
+     "vītae",
+     "discrīmen"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "45"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q13",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "However, all this is less important, but the following is weighty and great.",
+    "answer": "sed sunt haec leviōra, illa vērō gravia atque magna.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sed",
+     "sunt",
+     "haec",
+     "leviōra",
+     "illa",
+     "vērō",
+     "gravia",
+     "atque",
+     "magna"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Plancio",
+     "locus": "86"
+    }
+   },
+   {
+    "prompt": "We know that, according to our Roman code of ethics, music is not in keeping with the character of an eminent man, and as to dancing, why that is classed among vices.",
+    "answer": "scīmus mūsicēn nostrīs mōribus abesse ā prīncipis persōnā, saltāre vērō etiam in vitiīs pōnī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "scīmus",
+     "mūsicēn",
+     "nostrīs",
+     "mōribus",
+     "abesse",
+     "ā",
+     "prīncipis",
+     "persōnā",
+     "saltāre",
+     "vērō",
+     "etiam",
+     "in",
+     "vitiīs",
+     "pōnī"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "15, 1, 2"
+    }
+   },
+   {
+    "prompt": "A short life hath been given by nature unto man; but the memory of a life laid down in a good cause endureth for ever.",
+    "answer": "brevis ā nātūrā nōbīs vīta data est; at memoria bene redditae vītae sempiterna.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "brevis",
+     "ā",
+     "nātūrā",
+     "nōbīs",
+     "vīta",
+     "data",
+     "est",
+     "at",
+     "memoria",
+     "bene",
+     "redditae",
+     "vītae",
+     "sempiterna"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "14, 32"
+    }
+   },
+   {
+    "prompt": "There was less occasion for sorrow because the thing was not done, but certainly none the less for punishment.",
+    "answer": "minus dolendum fuit rē nōn perfectā, sed poeniendum certē nihilō minus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "minus",
+     "dolendum",
+     "fuit",
+     "rē",
+     "nōn",
+     "perfectā",
+     "sed",
+     "poeniendum",
+     "certē",
+     "nihilō",
+     "minus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "19"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q14",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Part of the throng runs out into the streets, others stand in the fore-courts, others gaze from the house-tops.",
+    "answer": "multitūdō pars prōcurrit in viās, pars in vestibulīs stat, pars ex tēctīs prōspectant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multitūdō",
+     "pars",
+     "prōcurrit",
+     "in",
+     "viās",
+     "pars",
+     "in",
+     "vestibulīs",
+     "stat",
+     "pars",
+     "ex",
+     "tēctīs",
+     "prōspectant"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "24, 21, 8"
+    }
+   },
+   {
+    "prompt": "They produced some of them purple, others frankincense, others precious stones.",
+    "answer": "prōferēbant aliī purpuram, tūs aliī, gemmās aliī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prōferēbant",
+     "aliī",
+     "purpuram",
+     "tūs",
+     "aliī",
+     "gemmās",
+     "aliī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 146"
+    }
+   },
+   {
+    "prompt": "At first a love of money waxed strong, then of power.",
+    "answer": "prīmō pecūniae, deinde imperī cupīdō crēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prīmō",
+     "pecūniae",
+     "deinde",
+     "imperī",
+     "cupīdō",
+     "crēvit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "10, 3"
+    }
+   },
+   {
+    "prompt": "The disposition in a good man is praiseworthy, and the life therefore of a good man is praiseworthy, and virtuous accordingly, seeing it is praiseworthy.",
+    "answer": "adfectus animī in bonō virō laudābilis, et vīta igitur laudābilis bonī virī, et honesta ergō, quoniam laudābilis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "adfectus",
+     "animī",
+     "in",
+     "bonō",
+     "virō",
+     "laudābilis",
+     "et",
+     "vīta",
+     "igitur",
+     "laudābilis",
+     "bonī",
+     "virī",
+     "et",
+     "honesta",
+     "ergō",
+     "quoniam",
+     "laudābilis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 47"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q15",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Accordingly then a day was set for the trial of the consuls.",
+    "answer": "itaque ergō cōnsulibus diēs dicta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "itaque",
+     "ergō",
+     "cōnsulibus",
+     "diēs",
+     "dicta",
+     "est"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 31, 5"
+    }
+   },
+   {
+    "prompt": "They got there in the night; in that way they eluded the enemy’s pickets.",
+    "answer": "nocte perveniēbant; eō custōdiās hostium fallēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nocte",
+     "perveniēbant",
+     "eō",
+     "custōdiās",
+     "hostium",
+     "fallēbant"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "23, 19, 10"
+    }
+   },
+   {
+    "prompt": "Soldiers went with him to the forum, soldiers to the senate chamber.",
+    "answer": "mīles in forum, mīles in cūriam comitābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīles",
+     "in",
+     "forum",
+     "mīles",
+     "in",
+     "cūriam",
+     "comitābātur"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "1, 7"
+    }
+   },
+   {
+    "prompt": "You are rescued from death, rescued without bloodshed, without an army, without a struggle.",
+    "answer": "ēreptī estis ex interitū, ēreptī sine sanguine, sine exercitū, sine dīmicātiōne.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ēreptī",
+     "estis",
+     "ex",
+     "interitū",
+     "ēreptī",
+     "sine",
+     "sanguine",
+     "sine",
+     "exercitū",
+     "sine",
+     "dīmicātiōne"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3, 23"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q16",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "We make out things both true and false.",
+    "answer": "tam vēra quam falsa cernimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tam",
+     "vēra",
+     "quam",
+     "falsa",
+     "cernimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Academica",
+     "locus": "2, 111"
+    }
+   },
+   {
+    "prompt": "Despairing of their lives, they either bewailed their own death, or strove to interest people in their parents. In short, it was one scene of terror and lamentation.",
+    "answer": "hī dē suā salūte dēspērantēs, aut suam mortem miserābantur, aut parentēs suōs commendābant. plēna erant omnia timōris et lūctūs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hī",
+     "dē",
+     "suā",
+     "salūte",
+     "dēspērantēs",
+     "aut",
+     "suam",
+     "mortem",
+     "miserābantur",
+     "aut",
+     "parentēs",
+     "suōs",
+     "commendābant",
+     "plēna",
+     "erant",
+     "omnia",
+     "timōris",
+     "et",
+     "lūctūs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2, 41, 8"
+    }
+   },
+   {
+    "prompt": "The head men of the state make the same request. Now the others did not influence him much. But when Lucretius began to take steps the consul resigned his consulship.",
+    "answer": "prīmōrēs cīvitātis eadem ōrant. et cēterī quidem movēbant minus; postquam Sp. Lucrētius agere coepit, cōnsul abdicāvit sē cōnsulātū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "prīmōrēs",
+     "cīvitātis",
+     "eadem",
+     "ōrant",
+     "et",
+     "cēterī",
+     "quidem",
+     "movēbant",
+     "minus",
+     "postquam",
+     "Sp",
+     "Lucrētius",
+     "agere",
+     "coepit",
+     "cōnsul",
+     "abdicāvit",
+     "sē",
+     "cōnsulātū"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 2, 8"
+    }
+   },
+   {
+    "prompt": "There were already three triumphal statues in Rome, and, strange to say, Tacfarinas was still harrying Africa.",
+    "answer": "iamque trēs laureātae in urbe statuae, et adhūc raptābat Āfricam Tacfarinās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iamque",
+     "trēs",
+     "laureātae",
+     "in",
+     "urbe",
+     "statuae",
+     "et",
+     "adhūc",
+     "raptābat",
+     "Āfricam",
+     "Tacfarinās"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "4, 23"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q17",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "One sees much that one would not. Aye, and much perhaps that one would!",
+    "answer": "multa quae nōn volt videt. et multa fortasse quae volt!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multa",
+     "quae",
+     "nōn",
+     "volt",
+     "videt",
+     "et",
+     "multa",
+     "fortasse",
+     "quae",
+     "volt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "25"
+    }
+   },
+   {
+    "prompt": "The consuls were detained by scruple, because several prodigies were reported, and they could not readily obtain good omens; namely from Campania it was reported that at Capua several tombs were struck by lightning.",
+    "answer": "cōnsulēs religiō tenēbat, quod prōdigiīs aliquot nūntiātīs, nōn facile litābant. et ex Campāniā nūntiāta erant Capuae sepulchra aliquot dē caelō tācta.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnsulēs",
+     "religiō",
+     "tenēbat",
+     "quod",
+     "prōdigiīs",
+     "aliquot",
+     "nūntiātīs",
+     "nōn",
+     "facile",
+     "litābant",
+     "et",
+     "ex",
+     "Campāniā",
+     "nūntiāta",
+     "erant",
+     "Capuae",
+     "sepulchra",
+     "aliquot",
+     "dē",
+     "caelō",
+     "tācta"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "27, 23, 1"
+    }
+   },
+   {
+    "prompt": "As an emblem of the Punic victory also, elephants to the number of eight marched in parade. And furthermore not the least attractive part of the pageant were Sosis and Moericus, moving at the head of the line.",
+    "answer": "Pūnicae quoque victōriae sīgnum octō ductī elephantī. et nōn minimum fuēre spectāculum praecēdentēs Sōsis et Moericus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pūnicae",
+     "quoque",
+     "victōriae",
+     "sīgnum",
+     "octō",
+     "ductī",
+     "elephantī",
+     "et",
+     "nōn",
+     "minimum",
+     "fuēre",
+     "spectāculum",
+     "praecēdentēs",
+     "Sōsis",
+     "et",
+     "Moericus"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "26, 21, 9"
+    }
+   },
+   {
+    "prompt": "The musical element in the voice actually improves in old age, and this I have not yet lost. And yet you see my years.",
+    "answer": "canōrum illud in vōce splendēscit etiam in senectūte, quod equidem adhūc nōn āmīsī; et vidētis annōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "canōrum",
+     "illud",
+     "in",
+     "vōce",
+     "splendēscit",
+     "etiam",
+     "in",
+     "senectūte",
+     "quod",
+     "equidem",
+     "adhūc",
+     "nōn",
+     "āmīsī",
+     "et",
+     "vidētis",
+     "annōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "28"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q18",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "It was with great personal risk to such of the fathers as happened to be in the market place, that they got into the crowd. And in fact acts of violence would have occurred, unless the consuls had made haste to interfere.",
+    "answer": "magnō cum perīculō suō, quī forte patrum in forō erant, in eam turbam incidērunt. nec temperātum manibus foret, nī properē cōnsulēs intervēnissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magnō",
+     "cum",
+     "perīculō",
+     "suō",
+     "quī",
+     "forte",
+     "patrum",
+     "in",
+     "forō",
+     "erant",
+     "in",
+     "eam",
+     "turbam",
+     "incidērunt",
+     "nec",
+     "temperātum",
+     "manibus",
+     "foret",
+     "nī",
+     "properē",
+     "cōnsulēs",
+     "intervēnissent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 23, 9"
+    }
+   },
+   {
+    "prompt": "A hundred and twenty lictors with rods displayed axes bound in them. And to be sure they explained the matter thus, that there would have been no propriety in having the axe taken out, since the officers were appointed without any appeal.",
+    "answer": "centum vīgintī līctōrēs cum fascibus secūrēs inligātās praeferēbant. nec attinuisse dēmī secūrem, cum sine prōvocātiōne creātī essent, interpretābantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "centum",
+     "vīgintī",
+     "līctōrēs",
+     "cum",
+     "fascibus",
+     "secūrēs",
+     "inligātās",
+     "praeferēbant",
+     "nec",
+     "attinuisse",
+     "dēmī",
+     "secūrem",
+     "cum",
+     "sine",
+     "prōvocātiōne",
+     "creātī",
+     "essent",
+     "interpretābantur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 36, 4"
+    }
+   },
+   {
+    "prompt": "That year the violence of the plague grew less. Nor was there any danger from lack of grain either.",
+    "answer": "eō annō vīs morbī levāta. neque ā pēnūriā frūmentī perīculum fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eō",
+     "annō",
+     "vīs",
+     "morbī",
+     "levāta",
+     "neque",
+     "ā",
+     "pēnūriā",
+     "frūmentī",
+     "perīculum",
+     "fuit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 25, 6"
+    }
+   },
+   {
+    "prompt": "To this god he assigned two special priests. And he likewise chose maids for Vesta.",
+    "answer": "huic duōs flāminēs adiēcit. virginēsque Vestae lēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "huic",
+     "duōs",
+     "flāminēs",
+     "adiēcit",
+     "virginēsque",
+     "Vestae",
+     "lēgit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 20, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q19",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Then also there was an unsuccessful engagement. And in fact Rome would have been besieged, unless Horatius had been recalled.",
+    "answer": "tum quoque male pugnātum est. obsessaque urbs foret, nī Horātius esset revocātus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tum",
+     "quoque",
+     "male",
+     "pugnātum",
+     "est",
+     "obsessaque",
+     "urbs",
+     "foret",
+     "nī",
+     "Horātius",
+     "esset",
+     "revocātus"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 51, 2"
+    }
+   },
+   {
+    "prompt": "I am prevented by scruples from setting forth how much Sestius was aware of. And so I will only say one thing.",
+    "answer": "impedior religiōne quōminus expōnam quam multa P. Sēstius sēnserit. atque nihil dīcō praeter ūnum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "impedior",
+     "religiōne",
+     "quōminus",
+     "expōnam",
+     "quam",
+     "multa",
+     "P",
+     "Sēstius",
+     "sēnserit",
+     "atque",
+     "nihil",
+     "dīcō",
+     "praeter",
+     "ūnum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "8"
+    }
+   },
+   {
+    "prompt": "Perhaps we have not attained to it; still we have very often made the attempt.",
+    "answer": "id fortasse nōn perfēcimus; cōnātī quidem saepissimē sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "fortasse",
+     "nōn",
+     "perfēcimus",
+     "cōnātī",
+     "quidem",
+     "saepissimē",
+     "sumus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "210"
+    }
+   },
+   {
+    "prompt": "I’m not afraid of being overheard by any of my fellow-students :: and yet you must be on your guard.",
+    "answer": "nōn vereor condiscipulōrum nē quis exaudiat :: atquī cavendum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "vereor",
+     "condiscipulōrum",
+     "nē",
+     "quis",
+     "exaudiat",
+     "atquī",
+     "cavendum",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "1, 21"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q20",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "What? is there, think you, to be no end to your statues? Yet there must be.",
+    "answer": "quid vērō? modum statuārum habērī nūllum placet? atquī habeātur necesse est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "vērō",
+     "modum",
+     "statuārum",
+     "habērī",
+     "nūllum",
+     "placet",
+     "atquī",
+     "habeātur",
+     "necesse",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 144"
+    }
+   },
+   {
+    "prompt": "Foregoing requires a sentient being, and there is no sensation in a dead man; therefore there is no foregoing either in a dead man. And yet what is the use of philosophizing over this?",
+    "answer": "carēre sentientis est, nec sēnsus in mortuō, nē carēre quidem igitur in mortuō est. quamquam quid opus est in hōc philosophārī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "carēre",
+     "sentientis",
+     "est",
+     "nec",
+     "sēnsus",
+     "in",
+     "mortuō",
+     "nē",
+     "carēre",
+     "quidem",
+     "igitur",
+     "in",
+     "mortuō",
+     "est",
+     "quamquam",
+     "quid",
+     "opus",
+     "est",
+     "in",
+     "hōc",
+     "philosophārī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 88"
+    }
+   },
+   {
+    "prompt": "And from this by the way their numbers could be gauged; for they made a breastwork in less than three hours.",
+    "answer": "quā quidem ex rē hominum multitūdō cōgnōscī potuit: nam minus hōrīs tribus mūnītiōnem perfēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quā",
+     "quidem",
+     "ex",
+     "rē",
+     "hominum",
+     "multitūdō",
+     "cōgnōscī",
+     "potuit",
+     "nam",
+     "minus",
+     "hōrīs",
+     "tribus",
+     "mūnītiōnem",
+     "perfēcērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 42, 4"
+    }
+   },
+   {
+    "prompt": "You can remember him: for the present consuls were created only nineteen years after his death.",
+    "answer": "quem meminisse potestis: annō enim ūndēvīcēsimō post eius mortem hī cōnsulēs factī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quem",
+     "meminisse",
+     "potestis",
+     "annō",
+     "enim",
+     "ūndēvīcēsimō",
+     "post",
+     "eius",
+     "mortem",
+     "hī",
+     "cōnsulēs",
+     "factī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "14"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q21",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "The case stands thus: the Odyssey in Latin is, you may say, a regular work of Daedalus.",
+    "answer": "sīc enim sēsē rēs habet: nam Odyssīa Latīna est sīc tamquam opus Daedalī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sīc",
+     "enim",
+     "sēsē",
+     "rēs",
+     "habet",
+     "nam",
+     "Odyssīa",
+     "Latīna",
+     "est",
+     "sīc",
+     "tamquam",
+     "opus",
+     "Daedalī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "71"
+    }
+   },
+   {
+    "prompt": "Many orators flourished in Cato’s lifetime: for example, Albinus.",
+    "answer": "vīvō Catōne multī ōrātōrēs flōruērunt: nam A. Albīnus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vīvō",
+     "Catōne",
+     "multī",
+     "ōrātōrēs",
+     "flōruērunt",
+     "nam",
+     "A",
+     "Albīnus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "81"
+    }
+   },
+   {
+    "prompt": "For why speak of the aedile?",
+    "answer": "nam quid dē aedīle loquar?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nam",
+     "quid",
+     "dē",
+     "aedīle",
+     "loquar"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "95"
+    }
+   },
+   {
+    "prompt": "In vain ye try to save my life. So away, while ye have the power.",
+    "answer": "frūstrā meae vītae subvenīre cōnāminī. proinde abīte, dum est facultās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "frūstrā",
+     "meae",
+     "vītae",
+     "subvenīre",
+     "cōnāminī",
+     "proinde",
+     "abīte",
+     "dum",
+     "est",
+     "facultās"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 50, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q22",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
+   {
+    "prompt": "Then again the surrounding woods and the loneliness are powerful stimulants to meditation. So when you go hunting, you can take a note book with you.",
+    "answer": "iam undique silvae et sōlitūdō magna cōgitātiōnis incitāmenta sunt. proinde cum vēnābere, licēbit pugillārēs ferās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iam",
+     "undique",
+     "silvae",
+     "et",
+     "sōlitūdō",
+     "magna",
+     "cōgitātiōnis",
+     "incitāmenta",
+     "sunt",
+     "proinde",
+     "cum",
+     "vēnābere",
+     "licēbit",
+     "pugillārēs",
+     "ferās"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "1, 6, 2"
+    }
+   },
+   {
+    "prompt": "Nothing is more excellent than god. Therefore the universe must be governed by him. Therefore god is in no respect subject to nature. Consequently he rules all nature himself.",
+    "answer": "nihil est praestantius deō; ab eō igitur mundum necesse est regī. nūllī igitur est nātūrae subiectus deus. omnem ergō regit ipse nātūram.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "est",
+     "praestantius",
+     "deō",
+     "ab",
+     "eō",
+     "igitur",
+     "mundum",
+     "necesse",
+     "est",
+     "regī",
+     "nūllī",
+     "igitur",
+     "est",
+     "nātūrae",
+     "subiectus",
+     "deus",
+     "omnem",
+     "ergō",
+     "regit",
+     "ipse",
+     "nātūram"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 77"
+    }
+   },
+   {
+    "prompt": "Would you like to have us look into your record from boyhood? Yes, I think it would be well; let us begin at the beginning.",
+    "answer": "vīsne igitur tē īnspiciāmus ā puerō? sīc opīnor; ā prīncipiō ōrdiāmur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vīsne",
+     "igitur",
+     "tē",
+     "īnspiciāmus",
+     "ā",
+     "puerō",
+     "sīc",
+     "opīnor",
+     "ā",
+     "prīncipiō",
+     "ōrdiāmur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 44"
+    }
+   },
+   {
+    "prompt": "Everybody who loved him, smiled on the other man. Yes, that is always the way of the world: it seldom judges by truth, often by hearsay.",
+    "answer": "quī dīligēbant hunc, illī favēbant. sīc est volgus: ex vēritāte pauca, ex opīniōne multa aestimat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quī",
+     "dīligēbant",
+     "hunc",
+     "illī",
+     "favēbant",
+     "sīc",
+     "est",
+     "volgus",
+     "ex",
+     "vēritāte",
+     "pauca",
+     "ex",
+     "opīniōne",
+     "multa",
+     "aestimat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Roscio Comoedo",
+     "locus": "29"
+    }
+   }
+  ]
  }
 ]

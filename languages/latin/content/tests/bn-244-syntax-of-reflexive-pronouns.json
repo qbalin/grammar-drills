@@ -1054,5 +1054,240 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q5",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "That he came into Gaul before the Roman nation.",
+    "answer": "sē prius in Galliam vēnisse quam populum Rōmānum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sē",
+     "prius",
+     "in",
+     "Galliam",
+     "vēnisse",
+     "quam",
+     "populum",
+     "Rōmānum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 7"
+    }
+   },
+   {
+    "prompt": "That they had learned from their fathers and ancestors.",
+    "answer": "sē ā patribus maiōribusque suīs didicisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sē",
+     "ā",
+     "patribus",
+     "maiōribusque",
+     "suīs",
+     "didicisse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 13, 6"
+    }
+   },
+   {
+    "prompt": "That he had crossed the Rhine not of his own accord.",
+    "answer": "trānsīsse Rhēnum sēsē nōn suā sponte.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "trānsīsse",
+     "Rhēnum",
+     "sēsē",
+     "nōn",
+     "suā",
+     "sponte"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 1"
+    }
+   },
+   {
+    "prompt": "Virtue is fond of itself.",
+    "answer": "est amāns suī virtūs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "est",
+     "amāns",
+     "suī",
+     "virtūs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "98"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q6",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "Caesar divided his forces.",
+    "answer": "Caesar cōpiās suās dīvīsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "cōpiās",
+     "suās",
+     "dīvīsit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 97, 3"
+    }
+   },
+   {
+    "prompt": "Alexander was murdered by his own wife.",
+    "answer": "Alexandrum uxor sua occīdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alexandrum",
+     "uxor",
+     "sua",
+     "occīdit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Inventione",
+     "locus": "2, 144"
+    }
+   },
+   {
+    "prompt": "He restored their property to the Syracuse people.",
+    "answer": "suās rēs Syrācūsānīs restituit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "suās",
+     "rēs",
+     "Syrācūsānīs",
+     "restituit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "29, 1, 17"
+    }
+   },
+   {
+    "prompt": "Varus said that he had authority.",
+    "answer": "Vārus imperium sē habēre dīxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vārus",
+     "imperium",
+     "sē",
+     "habēre",
+     "dīxit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Ligario",
+     "locus": "22"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q7",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "Ariovistus answered that all the states of Gaul had come to attack him.",
+    "answer": "Ariovistus respondit omnēs Galliae cīvitātēs ad sē oppugnandum vēnisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ariovistus",
+     "respondit",
+     "omnēs",
+     "Galliae",
+     "cīvitātēs",
+     "ad",
+     "sē",
+     "oppugnandum",
+     "vēnisse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 1"
+    }
+   },
+   {
+    "prompt": "That no man had contended with him without his own undoing.",
+    "answer": "nēminem sēcum sine suā perniciē contendisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nēminem",
+     "sēcum",
+     "sine",
+     "suā",
+     "perniciē",
+     "contendisse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 36, 6"
+    }
+   },
+   {
+    "prompt": "He instructs him to come back to himself as soon as possible.",
+    "answer": "huic mandat, ut ad sē quam prīmum revertātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "huic",
+     "mandat",
+     "ut",
+     "ad",
+     "sē",
+     "quam",
+     "prīmum",
+     "revertātur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 21, 2"
+    }
+   },
+   {
+    "prompt": "He was for ever calling Priam ‘Fortune’s darling, because he outlived all his kith and kin.’.",
+    "answer": "identidem fēlīcem Priamum vocābat, quod superstes omnium suōrum exstitisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "identidem",
+     "fēlīcem",
+     "Priamum",
+     "vocābat",
+     "quod",
+     "superstes",
+     "omnium",
+     "suōrum",
+     "exstitisset"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "De Vita Caesarum",
+     "locus": "62"
+    }
+   }
+  ]
  }
 ]

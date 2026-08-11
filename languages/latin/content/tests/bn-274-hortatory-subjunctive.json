@@ -417,5 +417,66 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-274-hortatory-subjunctive-q2",
+  "sectionId": "bn-274-hortatory-subjunctive",
+  "questions": [
+   {
+    "prompt": "Let us sit down here in the shade.",
+    "answer": "cōnsīdāmus hīc in umbrā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cōnsīdāmus",
+     "hīc",
+     "in",
+     "umbrā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "2, 7"
+    }
+   },
+   {
+    "prompt": "First and foremost boys are to know how to inflect nouns and verbs.",
+    "answer": "nōmina dēclīnāre et verba in prīmīs puerī sciant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōmina",
+     "dēclīnāre",
+     "et",
+     "verba",
+     "in",
+     "prīmīs",
+     "puerī",
+     "sciant"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "1, 4, 22"
+    }
+   },
+   {
+    "prompt": "Let no man look down on the rudiments of grammar fancying them insignificant.",
+    "answer": "nē quis tamquam parva fastīdiat grammaticēs elementa.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "quis",
+     "tamquam",
+     "parva",
+     "fastīdiat",
+     "grammaticēs",
+     "elementa"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "1, 4, 6"
+    }
+   }
+  ]
  }
 ]

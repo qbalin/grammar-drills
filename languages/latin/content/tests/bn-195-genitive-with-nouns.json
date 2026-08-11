@@ -2039,5 +2039,764 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q8",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "Was Verres of so much account to you?",
+    "answer": "Verrēsne tibi tantī fuit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Verrēsne",
+     "tibi",
+     "tantī",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.77"
+    }
+   },
+   {
+    "prompt": "He exchanged his native land for exile.",
+    "answer": "Exsilium patriā sēde mūtāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Exsilium",
+     "patriā",
+     "sēde",
+     "mūtāvit"
+    ],
+    "source": {
+     "author": "Curtius Rufus",
+     "work": "Historiae Alexandri Magni",
+     "locus": "3.7.11"
+    }
+   },
+   {
+    "prompt": "Sabinus’s dilatoriness in days preceding.",
+    "answer": "superiōrum diērum Sabīnī cunctātiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "superiōrum",
+     "diērum",
+     "Sabīnī",
+     "cunctātiō"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 18, 6"
+    }
+   },
+   {
+    "prompt": "Studying up the order of march followed by our army in those days.",
+    "answer": "eōrum diērum cōnsuētūdine itineris nostrī exercitūs perspectā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eōrum",
+     "diērum",
+     "cōnsuētūdine",
+     "itineris",
+     "nostrī",
+     "exercitūs",
+     "perspectā"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 17, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q9",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "Who is there that can compare the life of Trebonius with Dolabella’s?",
+    "answer": "quis est, quī possit cōnferre vītam Trebōnī cum Dolābellae?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "est",
+     "quī",
+     "possit",
+     "cōnferre",
+     "vītam",
+     "Trebōnī",
+     "cum",
+     "Dolābellae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "11, 9"
+    }
+   },
+   {
+    "prompt": "Cassius’s test question, ‘who the gainer was.’.",
+    "answer": "illud Cassiānum, cui bonō fuerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illud",
+     "Cassiānum",
+     "cui",
+     "bonō",
+     "fuerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 35"
+    }
+   },
+   {
+    "prompt": "Such questions belong to the infant school.",
+    "answer": "litterāriī ista sunt lūdī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "litterāriī",
+     "ista",
+     "sunt",
+     "lūdī"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "1, 4, 27"
+    }
+   },
+   {
+    "prompt": "This line is not Plautus’s, this one is.",
+    "answer": "hīc versus Plautī nōn est, hīc est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hīc",
+     "versus",
+     "Plautī",
+     "nōn",
+     "est",
+     "hīc",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9, 16, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q10",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "Everything which was the woman’s becomes the man’s.",
+    "answer": "omnia, quae mulieris fuērunt, virī fīunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnia",
+     "quae",
+     "mulieris",
+     "fuērunt",
+     "virī",
+     "fīunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Topica",
+     "locus": "23"
+    }
+   },
+   {
+    "prompt": "And that he did not think Gaul was any more Ariovistus’s than it was the Romans’.",
+    "answer": "neque sē iūdicāre Galliam potius esse Ariovistī quam populī Rōmānī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "sē",
+     "iūdicāre",
+     "Galliam",
+     "potius",
+     "esse",
+     "Ariovistī",
+     "quam",
+     "populī",
+     "Rōmānī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 45, 1"
+    }
+   },
+   {
+    "prompt": "It was a madman’s act, dreaming of peace when you saw the troops in battalia.",
+    "answer": "erat āmentis, cum aciem vidērēs, pācem cōgitāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "erat",
+     "āmentis",
+     "cum",
+     "aciem",
+     "vidērēs",
+     "pācem",
+     "cōgitāre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Ligario",
+     "locus": "28"
+    }
+   },
+   {
+    "prompt": "Shaping your course to circumstance has always passed as the sign of a wise man.",
+    "answer": "temporī cēdere semper sapientis est habitum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "temporī",
+     "cēdere",
+     "semper",
+     "sapientis",
+     "est",
+     "habitum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "4, 9, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q11",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "It is not in keeping with my delicacy to set up as the champion of Scipio.",
+    "answer": "nōn est pudōris meī, mē prōpugnātōrem P. Scīpiōnis profitērī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "est",
+     "pudōris",
+     "meī",
+     "mē",
+     "prōpugnātōrem",
+     "P",
+     "Scīpiōnis",
+     "profitērī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 80"
+    }
+   },
+   {
+    "prompt": "To be the defender of these interests takes heroism.",
+    "answer": "hārum rērum esse dēfēnsōrem magnī animī est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hārum",
+     "rērum",
+     "esse",
+     "dēfēnsōrem",
+     "magnī",
+     "animī",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "99"
+    }
+   },
+   {
+    "prompt": "To think thus shows wisdom, to act thus, courage.",
+    "answer": "hoc sentīre prūdentiae est, facere fortitūdinis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "sentīre",
+     "prūdentiae",
+     "est",
+     "facere",
+     "fortitūdinis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "86"
+    }
+   },
+   {
+    "prompt": "This they consider a special characteristic of bravery.",
+    "answer": "hoc proprium virtūtis exīstimant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hoc",
+     "proprium",
+     "virtūtis",
+     "exīstimant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 23, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q12",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "Everything which was our peculiar property.",
+    "answer": "omnia quae nostra erant propria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "omnia",
+     "quae",
+     "nostra",
+     "erant",
+     "propria"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "150"
+    }
+   },
+   {
+    "prompt": "That island is considered the hallowed property of those gods.",
+    "answer": "illa īnsula eōrum deōrum sacra putātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "illa",
+     "īnsula",
+     "eōrum",
+     "deōrum",
+     "sacra",
+     "putātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 48"
+    }
+   },
+   {
+    "prompt": "You are aware that I am become Pompey’s, out and out.",
+    "answer": "iam mē Pompēī tōtum esse scīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iam",
+     "mē",
+     "Pompēī",
+     "tōtum",
+     "esse",
+     "scīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "2, 13, 2"
+    }
+   },
+   {
+    "prompt": "A man of gigantic frame and with an awe-inspiring presence.",
+    "answer": "hominem maximī corporis terribilīque faciē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hominem",
+     "maximī",
+     "corporis",
+     "terribilīque",
+     "faciē"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "15, 4, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q13",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "Of all these the stoutest fighters are the Belgians.",
+    "answer": "hōrum omnium fortissimī sunt Belgae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hōrum",
+     "omnium",
+     "fortissimī",
+     "sunt",
+     "Belgae"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 1, 3"
+    }
+   },
+   {
+    "prompt": "Of the gods, they revere Mercury most.",
+    "answer": "deōrum maximē Mercurium colunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "deōrum",
+     "maximē",
+     "Mercurium",
+     "colunt"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Germania",
+     "locus": "9"
+    }
+   },
+   {
+    "prompt": "No solidity, no projection.",
+    "answer": "nihil solidī, nihil ēminentis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nihil",
+     "solidī",
+     "nihil",
+     "ēminentis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 75"
+    }
+   },
+   {
+    "prompt": "This will be something of an indication that I act with reluctance.",
+    "answer": "id erit sīgnī mē invītum facere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "erit",
+     "sīgnī",
+     "mē",
+     "invītum",
+     "facere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "83"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q14",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "He explains what his plan is.",
+    "answer": "quid suī cōnsilī sit ostendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "suī",
+     "cōnsilī",
+     "sit",
+     "ostendit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 21, 2"
+    }
+   },
+   {
+    "prompt": "For what is there left for my client?",
+    "answer": "quid est enim huic reliquī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "est",
+     "enim",
+     "huic",
+     "reliquī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "89"
+    }
+   },
+   {
+    "prompt": "These soldiers left nothing over to the conquered.",
+    "answer": "hī mīlitēs nihil reliquī victīs fēcēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hī",
+     "mīlitēs",
+     "nihil",
+     "reliquī",
+     "victīs",
+     "fēcēre"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "11, 7"
+    }
+   },
+   {
+    "prompt": "A perfect swarm of desperadoes.",
+    "answer": "magna multitūdō perditōrum hominum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magna",
+     "multitūdō",
+     "perditōrum",
+     "hominum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 17, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q15",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "An armada a thousand sail strong.",
+    "answer": "mīlle numerō nāvium clāssem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīlle",
+     "numerō",
+     "nāvium",
+     "clāssem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 48"
+    }
+   },
+   {
+    "prompt": "Pledges in the shape of wives and children.",
+    "answer": "pignora coniugum ac līberōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pignora",
+     "coniugum",
+     "ac",
+     "līberōrum"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 1, 5"
+    }
+   },
+   {
+    "prompt": "Insignificant causes, as for instance ungrounded suspicion or a panic.",
+    "answer": "parvulae causae vel falsae suspīciōnis vel terrōris repentīnī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "parvulae",
+     "causae",
+     "vel",
+     "falsae",
+     "suspīciōnis",
+     "vel",
+     "terrōris",
+     "repentīnī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 72, 4"
+    }
+   },
+   {
+    "prompt": "For this reason, namely the crime of the defendant.",
+    "answer": "propter eam causam sceleris istīus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "propter",
+     "eam",
+     "causam",
+     "sceleris",
+     "istīus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 113"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q16",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "I wished this more for your sake than for my own.",
+    "answer": "vestrā magis hoc causā volēbam, quam meā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vestrā",
+     "magis",
+     "hoc",
+     "causā",
+     "volēbam",
+     "quam",
+     "meā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 164"
+    }
+   },
+   {
+    "prompt": "What there is in the-way of money, he hands over.",
+    "answer": "quod est pecūniae, trādit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "est",
+     "pecūniae",
+     "trādit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2, 20, 8"
+    }
+   },
+   {
+    "prompt": "Disappointed in his hope of three legions.",
+    "answer": "opīniōne trium legiōnum dēiectus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "opīniōne",
+     "trium",
+     "legiōnum",
+     "dēiectus"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 48, 1"
+    }
+   },
+   {
+    "prompt": "A scramble for office is a pitiful thing.",
+    "answer": "miserrima est contentiō honōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "miserrima",
+     "est",
+     "contentiō",
+     "honōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 87"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q17",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
+   {
+    "prompt": "Fear of the might and wrath of the gods.",
+    "answer": "metus ā vī atque īrā deōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "metus",
+     "ā",
+     "vī",
+     "atque",
+     "īrā",
+     "deōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 45"
+    }
+   },
+   {
+    "prompt": "Hatred to all mankind.",
+    "answer": "odium in hominum ūniversum genus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "odium",
+     "in",
+     "hominum",
+     "ūniversum",
+     "genus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "4, 25"
+    }
+   },
+   {
+    "prompt": "Your good-will towards me.",
+    "answer": "vestra ergā mē voluntās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vestra",
+     "ergā",
+     "mē",
+     "voluntās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 1"
+    }
+   },
+   {
+    "prompt": "Dead-set against any largess to the military.",
+    "answer": "firmus adversus mīlitārem largītiōnem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "firmus",
+     "adversus",
+     "mīlitārem",
+     "largītiōnem"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "2, 82"
+    }
+   }
+  ]
  }
 ]
