@@ -1,0 +1,356 @@
+[
+ {
+  "id": "sm-2751-me-and-me-ou-with-the-subjunctive-and-t1",
+  "sectionId": "sm-2751-me-and-me-ou-with-the-subjunctive-and",
+  "questions": [
+   {
+    "prompt": "I am afraid that the enemy may capture the city.",
+    "answer": "φοβοῦμαι μὴ οἱ πολέμιοι τὴν πόλιν λάβωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "τήν",
+     "πόλιν",
+     "λάβωσιν"
+    ]
+   },
+   {
+    "prompt": "The general was afraid that the soldiers would not obey.",
+    "answer": "ὁ στρατηγὸς ἐφοβεῖτο μὴ οἱ στρατιῶται οὐ πείθωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἐφοβεῖτο",
+     "μή",
+     "οἱ",
+     "στρατιῶται",
+     "οὐ",
+     "πείθωνται"
+    ]
+   },
+   {
+    "prompt": "Take care lest you fall into the river.",
+    "answer": "εὐλαβοῦ μὴ εἰς τὸν ποταμὸν πέσῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐλαβοῦ",
+     "μή",
+     "εἰς",
+     "τόν",
+     "ποταμόν",
+     "πέσῃς"
+    ]
+   },
+   {
+    "prompt": "I fear that we shall not find water.",
+    "answer": "δέδοικα μὴ οὐχ εὕρωμεν ὕδωρ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μή",
+     "οὐχ",
+     "εὕρωμεν",
+     "ὕδωρ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2751-me-and-me-ou-with-the-subjunctive-and-t2",
+  "sectionId": "sm-2751-me-and-me-ou-with-the-subjunctive-and",
+  "questions": [
+   {
+    "prompt": "Perhaps what is said is not true.",
+    "answer": "μὴ οὐκ ἀληθὲς ᾖ τὸ λεγόμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οὐκ",
+     "ἀληθές",
+     "ᾖ",
+     "τό",
+     "λεγόμενον"
+    ]
+   },
+   {
+    "prompt": "Perhaps virtue is not teachable.",
+    "answer": "μὴ οὐ διδακτὸν ᾖ ἡ ἀρετή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οὐ",
+     "διδακτόν",
+     "ᾖ",
+     "ἡ",
+     "ἀρετή"
+    ]
+   },
+   {
+    "prompt": "I suspect that we are behaving rather foolishly.",
+    "answer": "μὴ ἀνοητότερον πράττωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ἀνοητότερον",
+     "πράττωμεν"
+    ]
+   },
+   {
+    "prompt": "Perhaps it is rather rude to tell the truth.",
+    "answer": "μὴ ἀγροικότερον ᾖ τὸ ἀληθὲς εἰπεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "ἀγροικότερον",
+     "ᾖ",
+     "τό",
+     "ἀληθές",
+     "εἰπεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2751-me-and-me-ou-with-the-subjunctive-and-t3",
+  "sectionId": "sm-2751-me-and-me-ou-with-the-subjunctive-and",
+  "questions": [
+   {
+    "prompt": "The mother fears that her child may die.",
+    "answer": "ἡ μήτηρ φοβεῖται μὴ τὸ τέκνον ἀποθάνῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "μήτηρ",
+     "φοβεῖται",
+     "μή",
+     "τό",
+     "τέκνον",
+     "ἀποθάνῃ"
+    ]
+   },
+   {
+    "prompt": "We were afraid that the ships would not arrive in time.",
+    "answer": "ἐφοβούμεθα μὴ αἱ νῆες οὐκ ἐν καιρῷ ἀφίκωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβούμεθα",
+     "μή",
+     "αἱ",
+     "νῆες",
+     "οὐκ",
+     "ἐν",
+     "καιρῷ",
+     "ἀφίκωνται"
+    ]
+   },
+   {
+    "prompt": "Beware lest the tyrant deceive the people.",
+    "answer": "φυλάττου μὴ ὁ τύραννος τὸν δῆμον ἐξαπατήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάττου",
+     "μή",
+     "ὁ",
+     "τύραννος",
+     "τόν",
+     "δῆμον",
+     "ἐξαπατήσῃ"
+    ]
+   },
+   {
+    "prompt": "I fear that they will not help us.",
+    "answer": "φοβοῦμαι μὴ οὐ βοηθήσωσιν ἡμῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οὐ",
+     "βοηθήσωσιν",
+     "ἡμῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2751-me-and-me-ou-with-the-subjunctive-and-t4",
+  "sectionId": "sm-2751-me-and-me-ou-with-the-subjunctive-and",
+  "questions": [
+   {
+    "prompt": "I fear that this has already happened.",
+    "answer": "φοβοῦμαι μὴ τοῦτο ἤδη γέγονεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "τοῦτο",
+     "ἤδη",
+     "γέγονεν"
+    ]
+   },
+   {
+    "prompt": "I am afraid that the messenger is already dead.",
+    "answer": "δέδοικα μὴ ὁ ἄγγελος ἤδη τέθνηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μή",
+     "ὁ",
+     "ἄγγελος",
+     "ἤδη",
+     "τέθνηκεν"
+    ]
+   },
+   {
+    "prompt": "Perhaps we are not speaking correctly.",
+    "answer": "μὴ οὐκ ὀρθῶς λέγομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οὐκ",
+     "ὀρθῶς",
+     "λέγομεν"
+    ]
+   },
+   {
+    "prompt": "I fear the enemy have already taken the acropolis.",
+    "answer": "δέδοικα μὴ οἱ πολέμιοι τὴν ἀκρόπολιν εἰλήφασιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "μή",
+     "οἱ",
+     "πολέμιοι",
+     "τήν",
+     "ἀκρόπολιν",
+     "εἰλήφασιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2751-me-and-me-ou-with-the-subjunctive-and-t5",
+  "sectionId": "sm-2751-me-and-me-ou-with-the-subjunctive-and",
+  "questions": [
+   {
+    "prompt": "Fighting on land, we fear that we may not win.",
+    "answer": "δεδοίκαμεν μὴ πεζῇ μαχόμενοι οὐ νικήσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεδοίκαμεν",
+     "μή",
+     "πεζῇ",
+     "μαχόμενοι",
+     "οὐ",
+     "νικήσωμεν"
+    ]
+   },
+   {
+    "prompt": "Now that the enemy have fled, I fear the soldiers may plunder the camp.",
+    "answer": "τῶν πολεμίων φυγόντων φοβοῦμαι μὴ οἱ στρατιῶται τὸ στρατόπεδον διαρπάσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "φυγόντων",
+     "φοβοῦμαι",
+     "μή",
+     "οἱ",
+     "στρατιῶται",
+     "τό",
+     "στρατόπεδον",
+     "διαρπάσωσιν"
+    ]
+   },
+   {
+    "prompt": "I fear that those who rule badly may destroy the city.",
+    "answer": "φοβοῦμαι μὴ οἱ κακῶς ἄρχοντες τὴν πόλιν διαφθείρωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μή",
+     "οἱ",
+     "κακῶς",
+     "ἄρχοντες",
+     "τήν",
+     "πόλιν",
+     "διαφθείρωσιν"
+    ]
+   },
+   {
+    "prompt": "There is danger that we shall not persuade the judges.",
+    "answer": "κίνδυνός ἐστι μὴ οὐ πείσωμεν τοὺς δικαστάς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κίνδυνος",
+     "ἐστι",
+     "μή",
+     "οὐ",
+     "πείσωμεν",
+     "τούς",
+     "δικαστάς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2751-me-and-me-ou-with-the-subjunctive-and-t6",
+  "sectionId": "sm-2751-me-and-me-ou-with-the-subjunctive-and",
+  "questions": [
+   {
+    "prompt": "Surely the allies are not betraying us?",
+    "answer": "μὴ οἱ σύμμαχοι ἡμᾶς προδιδόασιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οἱ",
+     "σύμμαχοι",
+     "ἡμᾶς",
+     "προδιδόασιν"
+    ]
+   },
+   {
+    "prompt": "Is it not the case that the law is just?",
+    "answer": "μὴ οὐ δίκαιος ὁ νόμος ἐστιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οὐ",
+     "δίκαιος",
+     "ὁ",
+     "νόμος",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "Is it not true that these men are our friends?",
+    "answer": "μὴ οὐ φίλοι ἡμῖν εἰσιν οἵδε;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "οὐ",
+     "φίλοι",
+     "ἡμῖν",
+     "εἰσιν",
+     "οἵδε"
+    ]
+   },
+   {
+    "prompt": "Surely you are not now wronging your own friends?",
+    "answer": "μὴ νῦν τοὺς σεαυτοῦ φίλους ἀδικεῖς;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μή",
+     "νῦν",
+     "τούς",
+     "σεαυτοῦ",
+     "φίλους",
+     "ἀδικεῖς"
+    ]
+   }
+  ]
+ }
+]

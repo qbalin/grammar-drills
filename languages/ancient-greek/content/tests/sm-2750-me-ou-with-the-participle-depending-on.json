@@ -1,0 +1,411 @@
+[
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t1",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "I should be impious if I did not honor the gods.",
+    "answer": "ἀσεβὴς ἂν εἴην τοὺς θεοὺς μὴ οὐ τιμῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀσεβής",
+     "ἄν",
+     "εἴην",
+     "τούς",
+     "θεούς",
+     "μή",
+     "οὐ",
+     "τιμῶν"
+    ]
+   },
+   {
+    "prompt": "I should be unjust if I did not help my friends.",
+    "answer": "ἄδικος ἂν εἴην τοῖς φίλοις μὴ οὐ βοηθῶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄδικος",
+     "ἄν",
+     "εἴην",
+     "τοῖς",
+     "φίλοις",
+     "μή",
+     "οὐ",
+     "βοηθῶν"
+    ]
+   },
+   {
+    "prompt": "I should be shameless if I did not feel ashamed at these deeds.",
+    "answer": "ἀναίσχυντος ἂν εἴην ἐπὶ τούτοις τοῖς ἔργοις μὴ οὐκ αἰσχυνόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀναίσχυντος",
+     "ἄν",
+     "εἴην",
+     "ἐπί",
+     "τούτοις",
+     "τοῖς",
+     "ἔργοις",
+     "μή",
+     "οὐκ",
+     "αἰσχυνόμενος"
+    ]
+   },
+   {
+    "prompt": "I should be a coward if I did not defend my country.",
+    "answer": "δειλὸς ἂν εἴην τῇ πατρίδι μὴ οὐκ ἀμύνων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δειλός",
+     "ἄν",
+     "εἴην",
+     "τῇ",
+     "πατρίδι",
+     "μή",
+     "οὐκ",
+     "ἀμύνων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t2",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "Nothing is truly good unless it benefits the soul.",
+    "answer": "οὐδὲν ὡς ἀληθῶς ἀγαθόν ἐστι μὴ οὐκ ὠφελοῦν τὴν ψυχήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέν",
+     "ὡς",
+     "ἀληθῶς",
+     "ἀγαθόν",
+     "ἐστι",
+     "μή",
+     "οὐκ",
+     "ὠφελοῦν",
+     "τήν",
+     "ψυχήν"
+    ]
+   },
+   {
+    "prompt": "No city is happy unless it is well governed.",
+    "answer": "οὐδεμία πόλις εὐδαίμων ἐστί μὴ οὐκ εὖ πολιτευομένη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεμία",
+     "πόλις",
+     "εὐδαίμων",
+     "ἐστί",
+     "μή",
+     "οὐκ",
+     "εὖ",
+     "πολιτευομένη"
+    ]
+   },
+   {
+    "prompt": "No friendship is firm unless it is founded on trust.",
+    "answer": "οὐδεμία φιλία βέβαιος μὴ οὐκ ἐπὶ πίστει ἱδρυμένη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεμία",
+     "φιλία",
+     "βέβαιος",
+     "μή",
+     "οὐκ",
+     "ἐπί",
+     "πίστει",
+     "ἱδρυμένη"
+    ]
+   },
+   {
+    "prompt": "Nothing is dear to the wise unless it is noble.",
+    "answer": "οὐδὲν τοῖς σοφοῖς φίλον ἐστί μὴ οὐ καλὸν ὄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδέν",
+     "τοῖς",
+     "σοφοῖς",
+     "φίλον",
+     "ἐστί",
+     "μή",
+     "οὐ",
+     "καλόν",
+     "ὄν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t3",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "I should be ungrateful if I did not thank my benefactors.",
+    "answer": "ἀχάριστος ἂν εἴην τοῖς εὐεργέταις μὴ οὐ χάριν ἀποδιδούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀχάριστος",
+     "ἄν",
+     "εἴην",
+     "τοῖς",
+     "εὐεργέταις",
+     "μή",
+     "οὐ",
+     "χάριν",
+     "ἀποδιδούς"
+    ]
+   },
+   {
+    "prompt": "I should be a traitor if I did not report these things to the generals.",
+    "answer": "προδότης ἂν εἴην τοῖς στρατηγοῖς ταῦτα μὴ οὐκ ἀγγέλλων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προδότης",
+     "ἄν",
+     "εἴην",
+     "τοῖς",
+     "στρατηγοῖς",
+     "ταῦτα",
+     "μή",
+     "οὐκ",
+     "ἀγγέλλων"
+    ]
+   },
+   {
+    "prompt": "I should be cruel if I did not pity the suppliants.",
+    "answer": "ὠμὸς ἂν εἴην τοὺς ἱκέτας μὴ οὐκ οἰκτίρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὠμός",
+     "ἄν",
+     "εἴην",
+     "τούς",
+     "ἱκέτας",
+     "μή",
+     "οὐκ",
+     "οἰκτίρων"
+    ]
+   },
+   {
+    "prompt": "I should be foolish if I did not obey the laws.",
+    "answer": "ἀνόητος ἂν εἴην τοῖς νόμοις μὴ οὐ πειθόμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνόητος",
+     "ἄν",
+     "εἴην",
+     "τοῖς",
+     "νόμοις",
+     "μή",
+     "οὐ",
+     "πειθόμενος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t4",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "No one is happy unless he is also good.",
+    "answer": "οὐδεὶς εὐδαίμων ἐστί μὴ οὐ καὶ ἀγαθὸς ὤν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "εὐδαίμων",
+     "ἐστί",
+     "μή",
+     "οὐ",
+     "καί",
+     "ἀγαθός",
+     "ὤν"
+    ]
+   },
+   {
+    "prompt": "No one becomes wise unless he has suffered much.",
+    "answer": "οὐδεὶς σοφὸς γίγνεται μὴ οὐ πολλὰ παθών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "σοφός",
+     "γίγνεται",
+     "μή",
+     "οὐ",
+     "πολλά",
+     "παθών"
+    ]
+   },
+   {
+    "prompt": "No general is worthy of praise unless he cares for his soldiers.",
+    "answer": "οὐδεὶς στρατηγὸς ἐπαίνου ἄξιος μὴ οὐ τῶν στρατιωτῶν ἐπιμελούμενος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "στρατηγός",
+     "ἐπαίνου",
+     "ἄξιος",
+     "μή",
+     "οὐ",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐπιμελούμενος"
+    ]
+   },
+   {
+    "prompt": "No witness is believed unless he speaks the truth.",
+    "answer": "οὐδεὶς μάρτυς πιστεύεται μὴ οὐ τὰ ἀληθῆ λέγων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "μάρτυς",
+     "πιστεύεται",
+     "μή",
+     "οὐ",
+     "τά",
+     "ἀληθῆ",
+     "λέγων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t5",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "You would be unjust, judges, if you did not acquit this man.",
+    "answer": "ἄδικοι ἂν εἴητε, ὦ δικασταί, τόνδε μὴ οὐκ ἀπολύοντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄδικοι",
+     "ἄν",
+     "εἴητε",
+     "ὦ",
+     "δικασταί",
+     "τόνδε",
+     "μή",
+     "οὐκ",
+     "ἀπολύοντες"
+    ]
+   },
+   {
+    "prompt": "He would be impious if he did not bury his father.",
+    "answer": "ἀσεβὴς ἂν εἴη τὸν πατέρα μὴ οὐ θάπτων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀσεβής",
+     "ἄν",
+     "εἴη",
+     "τόν",
+     "πατέρα",
+     "μή",
+     "οὐ",
+     "θάπτων"
+    ]
+   },
+   {
+    "prompt": "We should be senseless if we did not guard against such enemies.",
+    "answer": "ἀνόητοι ἂν εἴημεν τοὺς τοιούτους πολεμίους μὴ οὐ φυλαττόμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνόητοι",
+     "ἄν",
+     "εἴημεν",
+     "τούς",
+     "τοιούτους",
+     "πολεμίους",
+     "μή",
+     "οὐ",
+     "φυλαττόμενοι"
+    ]
+   },
+   {
+    "prompt": "They would be hard-hearted if they did not mourn the dead.",
+    "answer": "σκληροὶ ἂν εἶεν τοὺς τεθνεῶτας μὴ οὐ πενθοῦντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκληροί",
+     "ἄν",
+     "εἶεν",
+     "τούς",
+     "τεθνεῶτας",
+     "μή",
+     "οὐ",
+     "πενθοῦντες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2750-me-ou-with-the-participle-depending-on-t6",
+  "sectionId": "sm-2750-me-ou-with-the-participle-depending-on",
+  "questions": [
+   {
+    "prompt": "It is not possible to be happy unless one acts justly.",
+    "answer": "οὐκ ἔστιν εὐδαίμονα εἶναι μὴ οὐ δικαίως πράττοντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστιν",
+     "εὐδαίμονα",
+     "εἶναι",
+     "μή",
+     "οὐ",
+     "δικαίως",
+     "πράττοντα"
+    ]
+   },
+   {
+    "prompt": "No one can rule others unless he first rules himself.",
+    "answer": "οὐδεὶς ἄλλων ἄρχειν δύναται μὴ οὐ πρότερον ἑαυτοῦ ἄρχων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἄλλων",
+     "ἄρχειν",
+     "δύναται",
+     "μή",
+     "οὐ",
+     "πρότερον",
+     "ἑαυτοῦ",
+     "ἄρχων"
+    ]
+   },
+   {
+    "prompt": "No city can be saved unless the citizens are willing to fight.",
+    "answer": "οὐδεμία πόλις σῴζεσθαι δύναται μὴ οὐ τῶν πολιτῶν μάχεσθαι ἐθελόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεμία",
+     "πόλις",
+     "σῴζεσθαι",
+     "δύναται",
+     "μή",
+     "οὐ",
+     "τῶν",
+     "πολιτῶν",
+     "μάχεσθαι",
+     "ἐθελόντων"
+    ]
+   },
+   {
+    "prompt": "It is not possible to learn anything unless one pays attention.",
+    "answer": "οὐκ ἔστι μανθάνειν οὐδὲν μὴ οὐ προσέχοντα τὸν νοῦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστι",
+     "μανθάνειν",
+     "οὐδέν",
+     "μή",
+     "οὐ",
+     "προσέχοντα",
+     "τόν",
+     "νοῦν"
+    ]
+   }
+  ]
+ }
+]
