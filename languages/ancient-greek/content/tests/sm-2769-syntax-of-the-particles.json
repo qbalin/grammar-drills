@@ -1,0 +1,366 @@
+[
+ {
+  "id": "sm-2769-syntax-of-the-particles-t1",
+  "sectionId": "sm-2769-syntax-of-the-particles",
+  "questions": [
+   {
+    "prompt": "The old men praised the general, but the young men blamed him.",
+    "answer": "οἱ μὲν γέροντες τὸν στρατηγὸν ἐπῄνουν, οἱ δὲ νεανίαι ἔψεγον αὐτόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μὲν",
+     "γέροντες",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐπῄνουν",
+     "δὲ",
+     "νεανίαι",
+     "ἔψεγον",
+     "αὐτόν"
+    ]
+   },
+   {
+    "prompt": "For the enemy had already fled out of the city.",
+    "answer": "οἱ γὰρ πολέμιοι ἤδη ἐκ τῆς πόλεως ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γὰρ",
+     "πολέμιοι",
+     "ἤδη",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Therefore we must obey the laws.",
+    "answer": "δεῖ οὖν ἡμᾶς τοῖς νόμοις πείθεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "οὖν",
+     "ἡμᾶς",
+     "τοῖς",
+     "νόμοις",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "The Thasian did not flee but stood fast beside his comrades.",
+    "answer": "ὁ Θάσιος οὐκ ἔφυγεν ἀλλὰ τοῖς ἑταίροις παρέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Θάσιος",
+     "οὐκ",
+     "ἔφυγεν",
+     "ἀλλὰ",
+     "τοῖς",
+     "ἑταίροις",
+     "παρέμεινεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2769-syntax-of-the-particles-t2",
+  "sectionId": "sm-2769-syntax-of-the-particles",
+  "questions": [
+   {
+    "prompt": "You at least know the truth about these matters.",
+    "answer": "σύ γε τὴν ἀλήθειαν περὶ τούτων οἶσθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "γε",
+     "τὴν",
+     "ἀλήθειαν",
+     "περὶ",
+     "τούτων",
+     "οἶσθα"
+    ]
+   },
+   {
+    "prompt": "Know well that the good man is happy.",
+    "answer": "εὖ ἴσθι ὅτι ὁ ἀγαθὸς εὐδαίμων ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "ἴσθι",
+     "ὅτι",
+     "ὁ",
+     "ἀγαθὸς",
+     "εὐδαίμων",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Come now, tell me what happened.",
+    "answer": "ἄγε δή, εἰπέ μοι τί ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγε",
+     "δή",
+     "εἰπέ",
+     "μοι",
+     "τί",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "Truly this man accomplished great things.",
+    "answer": "ἦ μὴν οὗτος μεγάλα ἔπραξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦ",
+     "μὴν",
+     "οὗτος",
+     "μεγάλα",
+     "ἔπραξεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2769-syntax-of-the-particles-t3",
+  "sectionId": "sm-2769-syntax-of-the-particles",
+  "questions": [
+   {
+    "prompt": "We are fleeing so that we may not suffer these things.",
+    "answer": "φεύγομεν ἵνα μὴ ταῦτα πάθωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεύγομεν",
+     "ἵνα",
+     "μὴ",
+     "ταῦτα",
+     "πάθωμεν"
+    ]
+   },
+   {
+    "prompt": "He sent a messenger to announce the victory.",
+    "answer": "ἔπεμψεν ἄγγελον ὅπως τὴν νίκην ἀγγείλῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπεμψεν",
+     "ἄγγελον",
+     "ὅπως",
+     "τὴν",
+     "νίκην",
+     "ἀγγείλῃ"
+    ]
+   },
+   {
+    "prompt": "They took up their weapons in order to guard the temple.",
+    "answer": "τὰ ὅπλα ἔλαβον ἵνα τὸν ναὸν φυλάττωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "ὅπλα",
+     "ἔλαβον",
+     "ἵνα",
+     "τὸν",
+     "ναὸν",
+     "φυλάττωσιν"
+    ]
+   },
+   {
+    "prompt": "I am afraid that the enemy may take the city.",
+    "answer": "φοβοῦμαι μὴ οἱ πολέμιοι τὴν πόλιν λάβωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "μὴ",
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "πόλιν",
+     "λάβωσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2769-syntax-of-the-particles-t4",
+  "sectionId": "sm-2769-syntax-of-the-particles",
+  "questions": [
+   {
+    "prompt": "He was so wise that everyone admired him.",
+    "answer": "οὕτω σοφὸς ἦν ὥστε πάντες αὐτὸν ἐθαύμαζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "σοφὸς",
+     "ἦν",
+     "ὥστε",
+     "πάντες",
+     "αὐτὸν",
+     "ἐθαύμαζον"
+    ]
+   },
+   {
+    "prompt": "Since the general was present, the soldiers took courage.",
+    "answer": "ἐπεὶ ὁ στρατηγὸς παρῆν, οἱ στρατιῶται ἐθάρρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "παρῆν",
+     "οἱ",
+     "στρατιῶται",
+     "ἐθάρρησαν"
+    ]
+   },
+   {
+    "prompt": "He kept fighting just as his father used to fight.",
+    "answer": "ἐμάχετο ὥσπερ ὁ πατὴρ αὐτοῦ ἐμάχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμάχετο",
+     "ὥσπερ",
+     "ὁ",
+     "πατὴρ",
+     "αὐτοῦ"
+    ]
+   },
+   {
+    "prompt": "The winter was so harsh that many died.",
+    "answer": "ὁ χειμὼν οὕτω χαλεπὸς ἦν ὥστε πολλοὺς ἀποθανεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χειμὼν",
+     "οὕτω",
+     "χαλεπὸς",
+     "ἦν",
+     "ὥστε",
+     "πολλοὺς",
+     "ἀποθανεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2769-syntax-of-the-particles-t5",
+  "sectionId": "sm-2769-syntax-of-the-particles",
+  "questions": [
+   {
+    "prompt": "Both the men and the women were watching the contest.",
+    "answer": "οἵ τε ἄνδρες καὶ αἱ γυναῖκες τὸν ἀγῶνα ἐθεῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἵ",
+     "τε",
+     "ἄνδρες",
+     "καὶ",
+     "αἱ",
+     "γυναῖκες",
+     "τὸν",
+     "ἀγῶνα",
+     "ἐθεῶντο"
+    ]
+   },
+   {
+    "prompt": "He did not even greet his friends.",
+    "answer": "οὐδὲ τοὺς φίλους ἠσπάσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲ",
+     "τοὺς",
+     "φίλους",
+     "ἠσπάσατο"
+    ]
+   },
+   {
+    "prompt": "I, however, was not persuaded by these words.",
+    "answer": "ἐγὼ μέντοι τούτοις τοῖς λόγοις οὐκ ἐπείσθην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐγὼ",
+     "μέντοι",
+     "τούτοις",
+     "τοῖς",
+     "λόγοις",
+     "οὐκ",
+     "ἐπείσθην"
+    ]
+   },
+   {
+    "prompt": "The general was not only brave but also wise.",
+    "answer": "ὁ στρατηγὸς οὐ μόνον ἀνδρεῖος ἀλλὰ καὶ σοφὸς ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "οὐ",
+     "μόνον",
+     "ἀνδρεῖος",
+     "ἀλλὰ",
+     "καὶ",
+     "σοφὸς",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2769-syntax-of-the-particles-t6",
+  "sectionId": "sm-2769-syntax-of-the-particles",
+  "questions": [
+   {
+    "prompt": "So you were deceiving us the whole time.",
+    "answer": "ἐξηπάτας ἄρα ἡμᾶς τὸν πάντα χρόνον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξηπάτας",
+     "ἄρα",
+     "ἡμᾶς",
+     "τὸν",
+     "πάντα",
+     "χρόνον"
+    ]
+   },
+   {
+    "prompt": "This man, I think, speaks the truth.",
+    "answer": "οὗτος, οἶμαι, τὰ ἀληθῆ λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "οἶμαι",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγει"
+    ]
+   },
+   {
+    "prompt": "It is clear that the citizens will not obey.",
+    "answer": "δῆλον ὅτι οἱ πολῖται οὐ πείσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῆλον",
+     "ὅτι",
+     "οἱ",
+     "πολῖται",
+     "οὐ",
+     "πείσονται"
+    ]
+   },
+   {
+    "prompt": "For no one is wicked willingly.",
+    "answer": "οὐδεὶς γὰρ ἑκὼν κακός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "γὰρ",
+     "ἑκὼν",
+     "κακός",
+     "ἐστιν"
+    ]
+   }
+  ]
+ }
+]
