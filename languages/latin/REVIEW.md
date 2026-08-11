@@ -403,6 +403,97 @@ particular one: a matcher's own filters cannot tell you its premise is wrong,
 because they measure self-consistency, and a source that is internally
 consistent and externally wrong passes all of them.
 
+## Lane as a second syllabus, and not only a second pool
+
+Measured 2026-08-11 by `scripts/probe-lane-grammar.py`, which reads the same
+pinned Gutenberg #44653 the quotation pipeline reads and answers a different
+question about it: not *does Lane quote its authors* but **would Lane's own book
+segment into a syllabus a student could work through**, beside Bennett's rather
+than instead of it.
+
+**It would.** Over the teachable range — §§396–2427, which is Lane's inflection,
+particles, syntax and appendix, dropping sound, word formation and prosody the
+way `parse.py` drops Bennett's Parts I, IV and VI — Lane segments into **461
+topics, 986 KB of prose**, and clears every shape gate but one:
+
+| gate | Lane | Bennett's threshold |
+|---|---|---|
+| topic count | **461** | 60–300 — **the one failure** |
+| min chars | 140 | ≥ 120 |
+| max chars | 14,487 | ≤ 24,000 |
+| median chars | 1,638 | 400–4,000 |
+| p90 chars | 4,723 | ≤ 8,000 |
+| largest family | 17.1% of 17 | ≤ 45% |
+
+**Segmentation needs no guessing here, which is the difference from Bennett.**
+`parse.py` has to find Bennett's run-headings by their capitalisation. The
+Distributed Proofreaders transcription marks Lane's hierarchy with real
+`<h2>`–`<h6>`, and inside the inflection chapters — where Lane sets a run-heading
+as a styled paragraph rather than a heading — with `class="header"`. Proofread
+rather than OCR pays a second time.
+
+Three findings that decide how it has to be built.
+
+**1. The topic count is a real disagreement, not a tuning failure.** Lane is a
+2,745-section book against Bennett's 376, and its 461 topics are *finer per
+section*, not merely more numerous — which is the whole point of a second
+grammar. Coarsening to fit 300 costs the distribution rather than saving it:
+cutting only at `<h6>` and above gives 279 topics but pushes p90 to 8,161, over
+the gate, with topics of 23,000 characters. So `grammarShape` has to become
+per-grammar, and Lane's is set to what Lane measures. **`maxTopics` is a shape
+threshold, not a correctness one** — nothing about attestation is relaxed by
+this, and the rule `CLAUDE.md` states for `profile.attestation` still binds.
+
+**2. The nine families do not survive, and Lane supplies better ones.** Filing
+461 Lane topics into the pack's nine puts 202 of them — 43.8% — into
+`verb-syntax`, one accordion holding nearly half the book. Lane's own `<h3>`/`<h4>`
+chapter headings give **17 families, largest 17.1%, median 12 topics apiece**,
+which is almost exactly Bennett's own 114-over-9 shape, and reads as the book's
+table of contents rather than as a scheme imposed on it:
+
+```
+  79  (B.) INFLECTION OF THE VERB.        13  CONNECTION OF SEPARATE SENTENCES
+  76  (A.) USE OF THE NOUN.               11  THE RELATIVE SENTENCE.
+  71  THE CONJUNCTIVE PARTICLE SENTENCE.   9  THE COMPOUND SENTENCE
+  68  (A.) INFLECTION OF THE NOUN.         8  (B.) INDIRECT DISCOURSE.
+  37  NOUNS OF THE VERB.                   7  (D.) NUMERALS.
+  28  (B.) USE OF THE VERB.                6  (A.) PECULIARITIES OF VERBS.
+  17  (C.) PRONOUNS.                       5  THE INDIRECT QUESTION.
+  14  THE COMPLEX SENTENCE                 2  C. INFLECTION.  + 10 unplaced
+```
+
+So `families` moves from the pack to the grammar. That is where it always
+belonged: `families.ts` already calls the order "load-bearing: the order the
+grammar index is drawn in", and it is *a* grammar's index, not the language's.
+The 10 unplaced topics are what `fallbackFamily` is for.
+
+**3. The cross-reference map covers half of Lane, and the missing half is the
+half that would cost a model run.** `lane-topics.tsv` was built for the
+quotation pipeline, so it maps §1056–2421 — Part Second — and nothing else:
+
+| range | Lane topics | reaching a Bennett topic |
+|---|---|---|
+| inflection §396–1022 | 150 | **0** |
+| syntax §1023–2427 | 311 | 267 (85%) |
+
+62 of Bennett's 114 topics are reached. The 52 that are not are mostly the
+inflection ones the extended map would pick up — `verb-forms` 14, `nouns` 9,
+`pron` 8, `adj` 4 — plus `style` 7, which is Lane's known permanent gap: it has
+no word-order chapter, so `bn-353`–`bn-356` stay unreached by any grammar.
+
+**Filing questions into Lane's syllabus therefore needs the map extended over
+§§396–1022 before anything can be served there**, at roughly the cost of the run
+that built the existing rows. Until that exists, Lane's inflection half is
+readable prose with no questions under it — which is not a defect to hide but a
+number to print, and the reason Lane's own `coverage.topicsWithTestsPct` cannot
+be Bennett's 100.
+
+**What this does not settle.** That Lane *segments* is not that Lane *reads*
+well, and the same lesson arrives here as everywhere else in this file: every
+gate above is measuring self-consistency. G9 exists because a segmentation can
+pass all of them and still cut a topic in the wrong place, and Lane has had no
+G9 read-through. That is owed before the parser's output ships.
+
 ## Where the next attested sentences would come from
 
 > **Superseded 2026-08-11 by the Lane run, and kept because the reasoning held.**
