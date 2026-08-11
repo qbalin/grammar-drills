@@ -46,7 +46,8 @@ export function grammarsOf(profile) {
       label: profile.grammar.source.title.split(",")[0],
       primary: true,
       content: "grammar.json",
-      coverage: "grammar-coverage.json",
+      manifest: "grammar-coverage.json",
+      coverage: profile.coverage,
       style: profile.grammar,
       families: profile.families,
       fallbackFamily: profile.fallbackFamily,
@@ -57,6 +58,7 @@ export function grammarsOf(profile) {
       label: g.label,
       primary: false,
       content: g.content,
+      manifest: g.manifest,
       coverage: g.coverage,
       // Typography is the language's, not the book's; only the prefixes differ.
       style: { ...profile.grammar, idPrefix: g.idPrefix, refPrefix: g.refPrefix, source: g.source },
@@ -88,7 +90,7 @@ export function loadGrammar(dir, grammar) {
 
 /** The section-accounting manifest, or null if the parser never wrote one. */
 export function loadGrammarCoverage(dir, grammar) {
-  const path = join(dir, "content", grammar?.coverage ?? "grammar-coverage.json");
+  const path = join(dir, "content", grammar?.manifest ?? "grammar-coverage.json");
   return existsSync(path) ? JSON.parse(readFileSync(path, "utf8")) : null;
 }
 

@@ -17,7 +17,7 @@ const second = {
   id: "second",
   label: "Second",
   content: "grammars/second.json",
-  coverage: "grammars/second-coverage.json",
+  manifest: "grammars/second-coverage.json",
   source: { title: "Someone, A Grammar", url: "https://example.invalid", licence: "public domain" },
   idPrefix: "sg",
   refPrefix: "§ ",
@@ -34,6 +34,11 @@ const second = {
     medianTextCharsRange: [400, 4000],
     p90TextCharsMax: 8000,
     maxFamilySharePct: 45,
+  },
+  coverage: {
+    topicsWithTestsPct: 51,
+    minTestsPerTopic: 6,
+    minQuestionsPerTopic: 16,
   },
 };
 

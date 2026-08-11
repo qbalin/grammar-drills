@@ -251,7 +251,7 @@
       "id": "lane",
       "label": "Lane",
       "content": "grammars/lane.json",
-      "coverage": "grammars/lane-coverage.json",
+      "manifest": "grammars/lane-coverage.json",
       "source": {
         "title": "Lane, A Latin Grammar for Schools and Colleges (1898)",
         "url": "https://www.gutenberg.org/files/44653/44653-h/44653-h.htm",
@@ -288,6 +288,11 @@
         "medianTextCharsRange": [400, 4000],
         "p90TextCharsMax": 8000,
         "maxFamilySharePct": 45
+      },
+      "coverage": {
+        "topicsWithTestsPct": 51,
+        "minTestsPerTopic": 6,
+        "minQuestionsPerTopic": 16
       }
     }
   ],

@@ -22,7 +22,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
-import { compileFold, words } from "@lang-tutor/core";
+import { compileFold, questionId, words } from "@lang-tutor/core";
 import {
   gate,
   loadGrammar,
@@ -172,6 +172,36 @@ const dupPct = (duplicates / Math.max(1, allQuestions.length)) * 100;
 gates.push(
   gate("C4", dupPct <= limits.maxDuplicatePromptPct,
     `${duplicates} duplicate prompts of ${allQuestions.length} (${dupPct.toFixed(2)}%, allowed ${limits.maxDuplicatePromptPct}%)`),
+);
+
+// --- C8: the question key is a key -------------------------------------------
+//
+// `questionId` hashes prompt and answer, and is what progress will be filed
+// under once a pack teaches out of more than one book: two grammars cut the
+// language into different topics, so the questions are the only thing they can
+// agree on. Two *identical* questions hashing alike is the intended reading and
+// is not counted here — the pack keeps those under 1% at C4 for its own
+// reasons, and a student who has answered a sentence has answered it. What this
+// looks for is the other thing: two questions that ask different things and
+// collide anyway, which would silently merge two students' answers into one
+// card. At this bank size the 64-bit id makes it vanishingly unlikely, which is
+// exactly why it must be measured rather than assumed.
+
+const byId = new Map();
+const collisions = [];
+for (const q of allQuestions) {
+  const id = questionId(q.prompt, q.answer);
+  const first = byId.get(id);
+  if (first === undefined) byId.set(id, q);
+  else if (first.prompt !== q.prompt || first.answer !== q.answer) {
+    collisions.push(`${id}: "${first.prompt}" vs "${q.prompt}"`);
+  }
+}
+gates.push(
+  gate("C8", collisions.length === 0,
+    collisions.length
+      ? `${collisions.length} question ids collide: ${collisions.slice(0, 2).join(" · ")}`
+      : `${byId.size} distinct ids over ${allQuestions.length} questions, no collision`),
 );
 
 // --- C5 / C7: what the reference can say --------------------------------------

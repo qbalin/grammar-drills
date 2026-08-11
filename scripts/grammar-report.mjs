@@ -197,7 +197,7 @@ if (coverage) {
 } else {
   gates.push(
     gate("G8", false,
-      `no content/${book.coverage} — the parser must account for every source section`),
+      `no content/${book.manifest} — the parser must account for every source section`),
   );
 }
 

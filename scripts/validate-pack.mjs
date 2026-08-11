@@ -179,6 +179,10 @@ if (!argv.includes("--profile-only")) {
     ...grammarsOf(profile).map((g) => ["grammar-report.mjs", ...(g.primary ? [] : ["--grammar", g.id])]),
     ["coverage-report.mjs"],
     ["attestation-report.mjs"],
+    // Trivial and silent for a pack with one grammar; the one gate a pack with
+    // two needs and the coverage report cannot give, because a further book's
+    // questions are the primary's seen through the crosswalk.
+    ["crosswalk-report.mjs"],
   ];
   for (const [script, ...extra] of runs) {
     // The flag is handed to the coverage report rather than used to ignore its

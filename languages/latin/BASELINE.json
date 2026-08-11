@@ -84,6 +84,23 @@
       "rowShapedLines": 1364,
       "tableRowsRecovered": 1462,
       "romanPoints": 0,
+      "crosswalk": {
+        "topicsReachable": 235,
+        "topicsTotal": 459,
+        "questionsReachable": 6025,
+        "questionsTotal": 8984,
+        "medianQuestionsPerReachedTopic": 189,
+        "_note": [
+          "What the crosswalk carries, not what Lane was written for: Lane's",
+          "topics are served out of the questions written against Bennett, so",
+          "a Lane topic no table row reaches has nothing to teach from.",
+          "",
+          "The 224 unreached are 148 inflection topics and 76 others, because",
+          "lane-topics.tsv was built for the quotation pipeline and covers",
+          "§1056-2421 — Part Second — and nothing else. Extending it over",
+          "§§397-1022 is a model run nobody has paid for yet."
+        ]
+      },
       "_note": [
         "First measured 2026-08-11, the commit that wrote lane-parse.py.",
         "",

@@ -83,6 +83,28 @@ Nothing at runtime reads a secondary grammar yet — the app still opens the
 primary. The declaration exists so that a second book is gated from the day it
 is parsed rather than from the day it is displayed.
 
+**A further grammar has no questions of its own.** It is served out of the ones
+written against the primary, reached through `content/grammars/crosswalk.json`,
+which `build-crosswalk.mjs` joins from the `grammar/<id>-topics.tsv` tables a
+model filled in section by section. So the chain is
+
+```
+primary topic  <-  <id>-topics.tsv  <-  foreign section  ->  assigned  ->  foreign topic
+```
+
+and every link is a model answer somebody can read back or a fact the parser
+recorded. Nothing may guess at the join: an invented topic pair looks exactly
+like a checked one. `crosswalk-report.mjs` gates the result (X1–X3) and prints
+how much of each book is reachable. Its gates are numbered apart from the
+coverage report's on purpose — a low figure there is a gap in the *table*, not a
+hole in the pack.
+
+`questionId` (core) is the key progress will move to in due course: two grammars
+cut the language into different topics, so the questions are the only thing they
+agree on. It is derived from prompt and answer rather than written into the
+content, so it cannot drift out of step and needs no migration when the bank is
+regenerated. C8 measures that it stays a key.
+
 `profile.attestation` is what a pack may ship that its own content cannot
 confirm — `maxMissesPerQuestion` (distinct forms in one answer, and the bar the
 generator writes to) and `maxUnattestedForms` (tokens across the pack). Both are

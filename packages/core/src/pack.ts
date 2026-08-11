@@ -66,7 +66,7 @@ export interface SecondaryGrammar {
   /** Where its sections live, relative to `content/`. */
   content: string;
   /** Where its section-accounting manifest lives, relative to `content/`. */
-  coverage: string;
+  manifest: string;
   source: GrammarStyle["source"];
   /** Section ids must start with this, e.g. "ln" for Lane. */
   idPrefix: string;
@@ -76,6 +76,25 @@ export interface SecondaryGrammar {
   families: Family[];
   fallbackFamily: string;
   grammarShape: Profile["grammarShape"];
+  /**
+   * How much of this book the pack's questions actually reach.
+   *
+   * Only the two gates that can differ. A further grammar's questions are the
+   * primary's, reached through the crosswalk, so everything the pack measures
+   * about the questions themselves — how many are attested, how much of the
+   * vocabulary band they use, how many prompts repeat — is already answered once
+   * for the pack and is not answered again per book.
+   *
+   * What is genuinely this book's is how much of it can be taught at all:
+   * `topicsWithTestsPct` is 100 for the syllabus the questions were written
+   * against and is not for any other, because no crosswalk reaches every topic
+   * of a book nobody has generated questions for.
+   */
+  coverage: {
+    topicsWithTestsPct: number;
+    minTestsPerTopic: number;
+    minQuestionsPerTopic: number;
+  };
 }
 
 export interface Profile {
@@ -385,9 +404,13 @@ function parseSecondaryGrammars(raw: unknown, primaryPrefix: string): SecondaryG
   return array(raw, "profile.grammars").map((g, i) => {
     const path = `profile.grammars[${i}]`;
     const entry = fields<SecondaryGrammar>(g, path, {
-      id: "string", label: "string", content: "string", coverage: "string",
+      id: "string", label: "string", content: "string", manifest: "string",
       source: "any", idPrefix: "string", refPrefix: "string", families: "any",
-      fallbackFamily: "string", grammarShape: "any",
+      fallbackFamily: "string", grammarShape: "any", coverage: "any",
+    });
+    fields(entry.coverage, `${path}.coverage`, {
+      topicsWithTestsPct: "number", minTestsPerTopic: "number",
+      minQuestionsPerTopic: "number",
     });
     fields(entry.source, `${path}.source`, { title: "string", url: "string", licence: "string" });
     // A shared id prefix would make two books' section ids collide, and a
