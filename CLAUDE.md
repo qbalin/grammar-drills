@@ -29,6 +29,8 @@ for the engine: `packages/core` must not learn a language.
 | `content/ag-quotes.jsonl.gz` | Latin only: the same, out of Allen & Greenough rather than the dictionary dump. `quote-tests.mjs --from quotes` reads both pools |
 | `gen/sources.mjs` | the citation abbreviations a pack's grammar uses, expanded |
 | `grammar/parse.py` | builds `grammar.json` from a public source it downloads |
+| `content/grammars/<id>.json` | a *further* grammar of the same language, declared in `profile.grammars` |
+| `grammar/lane-parse.py` | Latin only: builds one, as a sibling of `parse.py` rather than a copy |
 | `gen/config.mjs` | what the question generator needs to know about this language |
 | `citations.mjs` | rewrites citations in `lemmas.json.gz`; needs the reference dictionary |
 | | *the dictionary is split: a lemma table plus a sorted form index over it* |
@@ -62,6 +64,24 @@ coverage and attestation reports and exits non-zero on any failure. Greek is a
 draft and takes `--allow-incomplete`, which reports the how-much-is-written gates
 without letting them decide the exit code. Nothing about correctness is relaxed
 by it, the attestation gates included.
+
+## More than one grammar
+
+A pack may teach the same language out of more than one book. `profile.grammars`
+declares the further ones — Latin ships Bennett as its primary and Lane beside
+it — and `grammar-report.mjs --grammar <id>` holds each to its own gates, which
+`validate-pack` runs once per book.
+
+Only what differs is declared. Typography belongs to the language rather than to
+the book, so `paradigmLabels` and the heading rules are inherited from
+`profile.grammar`. **`families` and `grammarShape` are not**, because they are
+precisely where two books disagree: a family list is one book's table of
+contents, and a shape gate is calibrated against one book's idea of how long a
+topic is. Averaging two of them measures neither.
+
+Nothing at runtime reads a secondary grammar yet — the app still opens the
+primary. The declaration exists so that a second book is gated from the day it
+is parsed rather than from the day it is displayed.
 
 `profile.attestation` is what a pack may ship that its own content cannot
 confirm — `maxMissesPerQuestion` (distinct forms in one answer, and the bar the

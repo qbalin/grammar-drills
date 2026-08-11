@@ -494,6 +494,50 @@ gate above is measuring self-consistency. G9 exists because a segmentation can
 pass all of them and still cut a topic in the wrong place, and Lane has had no
 G9 read-through. That is owed before the parser's output ships.
 
+### What the parser then measured, and the two things the probe got wrong
+
+`languages/latin/grammar/lane-parse.py` was written against the numbers above
+and lands at **459 topics** rather than 461, passing all eight gates:
+
+```
+✓ G1  459 topics (want 300–600)      ✓ G5  ids unique, order strict, titles distinct
+✓ G2  min 141 chars                  ✓ G6  all 1364 row-shaped lines recovered
+✓ G3  median 1607 · p90 4642 · max 14307     (1462 table rows)
+✓ G4  18 families, largest 17.2%     ✓ G7  every topic renders as something
+                                     ✓ G8  2031 assigned + 714 dropped = 2745
+```
+
+G6 is the one worth reading twice. Lane's paradigms come through Bennett's own
+`⟦b:…⟧` markup and table reader untouched — which is why the parser imports
+`parse.py` rather than restating it — so every declension and conjugation
+renders without `grammar-blocks.ts` learning a second format.
+
+**Two corrections to the probe, both found by reading the output rather than the
+gates**, which is the same lesson as the twenty-one prompts:
+
+- **The range opens at §397, not §396.** Lane sets its `C. INFLECTION.` heading
+  *after* §396, so §396 is the last section of word formation. Started at 396 it
+  produced a topic titled "Section 396" whose family was `formation`, a chapter
+  the syllabus does not contain.
+- **`titleise` cannot be reused, and failed quietly.** Bennett's helper strips a
+  trailing hyphen along with the full stop, and judges a heading to be shouting
+  by `not any(c.islower())`. A third of Lane's inflection headings name a *form*
+  rather than a word — `STEMS IN -ā-`, `VERBS IN -iō, -ere` — and the lowercase
+  part is the ending. 22 titles came through as `STEMS IN -ā`, having lost the
+  mark that says `-ā-` is a stem, and one qualified pair as `pERFECT STEM IN -v`.
+  Every gate passed on all of them: they are unique, well-formed ids with
+  distinct titles. Lane cases its own titles now, leaving a word already in lower
+  case exactly as the book set it.
+
+**Titles are qualified rather than overridden.** Bennett needs a hand-written
+table of 20 headings that name their enclosing section instead of their topic.
+Lane's hierarchy is deeper and has far more — five topics called "Singular
+Cases", four called "Greek Nouns" — and a table of 461 entries is not a fix, so
+a colliding title takes the heading above it: `Stems in -ā-: Singular Cases`. The
+same rule catches a heading that is a *continuation* rather than a name —
+`(A.) OF THE VERB.` under `AGREEMENT.` — which no collision check would have
+found, because "Of the Verb" is perfectly unique and means nothing on a map.
+
 ## Where the next attested sentences would come from
 
 > **Superseded 2026-08-11 by the Lane run, and kept because the reasoning held.**

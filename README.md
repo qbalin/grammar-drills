@@ -384,6 +384,44 @@ drops, the student can never read.
 
 [pg]: https://www.gutenberg.org/ebooks/15665
 
+### A second grammar of the same language
+
+Bennett is the syllabus the app teaches, but he is not the only way to cut
+Latin into topics. The pack also parses **Lane's *A Latin Grammar for Schools
+and Colleges*** (New York, 1898) — [Project Gutenberg #44653][pg44653], the
+book its third quotation pool already comes from — into a syllabus of its own:
+
+```bash
+python3 languages/latin/grammar/lane-parse.py   # -> content/grammars/lane.json
+node --import tsx scripts/grammar-report.mjs --pack languages/latin --grammar lane
+```
+
+459 topics over §§397–2427, against Bennett's 114 over 376 sections: Lane's are
+*finer per section*, which is the point of having two. Where Bennett gives one
+topic on the dative, Lane gives the complementary dative and the predicative
+dative separately, and each has its own page of prose to read.
+
+`lane-parse.py` imports `parse.py` rather than copying it. The markup, the
+per-character style buffer and the table reader are the same problem in both
+books, and Lane's paradigms come through them untouched — so nothing downstream
+learns a second format. What is Lane's own is where a topic begins, what family
+it belongs to, and what to call it when the book uses the same words twice.
+
+Two things are Lane's rather than the pack's, declared in `profile.grammars`:
+
+- **Its families are its own chapters.** Filing 459 Lane topics into the pack's
+  nine puts 43.8% of them in one accordion. Lane's own headings give 18 families
+  of median 12 topics — almost exactly Bennett's 114-over-9 shape.
+- **Its shape gates are its own.** Only `maxTopics` actually differs; every
+  other threshold Bennett was calibrated at, Lane clears unchanged.
+
+**Nothing at runtime reads it yet.** The app still opens Bennett. The bundle
+ships as its own `grammar-lane.json.gz` (416 KB gzipped, against Bennett's 129)
+and is deliberately left out of the service worker's precache, so a book nobody
+has switched to costs nothing.
+
+[pg44653]: https://www.gutenberg.org/ebooks/44653
+
 ## Three ways forward
 
 A syllabus of 114 topics is walked by more than one kind of student, and for a

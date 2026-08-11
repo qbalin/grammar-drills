@@ -30,13 +30,65 @@ export function loadProfile(dir) {
   return parseProfile(JSON.parse(readFileSync(join(dir, "profile.json"), "utf8")));
 }
 
-export function loadGrammar(dir) {
-  return JSON.parse(readFileSync(join(dir, "content", "grammar.json"), "utf8"));
+/**
+ * Every grammar the pack ships, primary first.
+ *
+ * One entry per book, each carrying what a report needs to hold it to its own
+ * standard: where its sections are, what it calls its families, and the shape
+ * it was calibrated at. The primary grammar's fields live at the top of the
+ * profile and a secondary's in `profile.grammars`, so this is the one place
+ * that difference has to be known.
+ */
+export function grammarsOf(profile) {
+  return [
+    {
+      id: profile.grammar.idPrefix,
+      label: profile.grammar.source.title.split(",")[0],
+      primary: true,
+      content: "grammar.json",
+      coverage: "grammar-coverage.json",
+      style: profile.grammar,
+      families: profile.families,
+      fallbackFamily: profile.fallbackFamily,
+      shape: profile.grammarShape,
+    },
+    ...(profile.grammars ?? []).map((g) => ({
+      id: g.id,
+      label: g.label,
+      primary: false,
+      content: g.content,
+      coverage: g.coverage,
+      // Typography is the language's, not the book's; only the prefixes differ.
+      style: { ...profile.grammar, idPrefix: g.idPrefix, refPrefix: g.refPrefix, source: g.source },
+      families: g.families,
+      fallbackFamily: g.fallbackFamily,
+      shape: g.grammarShape,
+    })),
+  ];
+}
+
+/** Resolve `--grammar <id>` against the pack, defaulting to the primary. */
+export function grammarNamed(profile, id) {
+  const all = grammarsOf(profile);
+  if (!id) return all[0];
+  const found = all.find((g) => g.id === id);
+  if (!found) {
+    throw new Error(
+      `no grammar "${id}" in this pack; it ships ${all.map((g) => g.id).join(", ")}`,
+    );
+  }
+  return found;
+}
+
+export function loadGrammar(dir, grammar) {
+  return JSON.parse(
+    readFileSync(join(dir, "content", grammar?.content ?? "grammar.json"), "utf8"),
+  );
 }
 
 /** The section-accounting manifest, or null if the parser never wrote one. */
-export function loadGrammarCoverage(dir) {
-  const path = join(dir, "content", "grammar-coverage.json");
+export function loadGrammarCoverage(dir, grammar) {
+  const path = join(dir, "content", grammar?.coverage ?? "grammar-coverage.json");
   return existsSync(path) ? JSON.parse(readFileSync(path, "utf8")) : null;
 }
 

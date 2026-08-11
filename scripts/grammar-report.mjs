@@ -21,6 +21,7 @@
 import { parseBlocks, plainText } from "@lang-tutor/core";
 import {
   gate,
+  grammarNamed,
   loadGrammar,
   loadGrammarCoverage,
   loadProfile,
@@ -32,9 +33,20 @@ import {
 const argv = process.argv.slice(2);
 const dir = packDir(argv);
 const profile = loadProfile(dir);
-const grammar = loadGrammar(dir);
-const coverage = loadGrammarCoverage(dir);
-const shape = profile.grammarShape;
+const at = (name) => {
+  const i = argv.indexOf(name);
+  return i >= 0 ? argv[i + 1] : undefined;
+};
+/*
+ * Which book. A pack with one grammar takes no flag and behaves as it always
+ * has; a pack with two is reported once per book, because a shape gate measures
+ * one book's idea of how long a topic is and averaging two of them measures
+ * neither.
+ */
+const book = grammarNamed(profile, at("--grammar"));
+const grammar = loadGrammar(dir, book);
+const coverage = loadGrammarCoverage(dir, book);
+const shape = book.shape;
 
 // Measured on the words, not on the inline emphasis markup around them.
 const size = new Map(grammar.map((t) => [t.id, plainText(t.text).trim().length]));
@@ -42,7 +54,7 @@ const lengths = grammar.map((t) => size.get(t.id)).sort((a, b) => a - b);
 const median = percentile(lengths, 0.5);
 const p90 = percentile(lengths, 0.9);
 
-const counts = new Map(profile.families.map((f) => [f.id, 0]));
+const counts = new Map(book.families.map((f) => [f.id, 0]));
 for (const t of grammar) {
   if (counts.has(t.family)) counts.set(t.family, counts.get(t.family) + 1);
 }
@@ -88,7 +100,7 @@ if (outsized.length) {
 
 // --- G4: every family valid, none empty, none dominant ----------------------
 
-const known = new Set(profile.families.map((f) => f.id));
+const known = new Set(book.families.map((f) => f.id));
 const strays = grammar.filter((t) => !known.has(t.family));
 const empty = [...counts].filter(([, n]) => n === 0).map(([id]) => id);
 const dominant = [...counts].filter(([, n]) => share(n) > shape.maxFamilySharePct);
@@ -104,7 +116,7 @@ gates.push(
 
 // Three digits is the floor, not the width: Bennett stops at § 371 and Smyth
 // runs to § 3048, and a book with more than 999 sections cannot pad down to it.
-const idPattern = new RegExp(`^${profile.grammar.idPrefix}-\\d{3,}-[a-z0-9-]+$`);
+const idPattern = new RegExp(`^${book.style.idPrefix}-\\d{3,}-[a-z0-9-]+$`);
 const badIds = grammar.filter((t) => !idPattern.test(t.id));
 const dupIds = grammar.length !== new Set(grammar.map((t) => t.id)).size;
 const ordered = [...grammar].sort((a, b) => a.order - b.order);
@@ -140,7 +152,7 @@ for (const t of grammar) {
   const lines = t.text.split("\n").filter((l) => /\S {2}\S/.test(l));
   const roman = lines.filter((l) => /^[IVXL]+\.\s{2,}/.test(l.trim())).length;
   let rows = 0;
-  for (const block of parseBlocks(t.text, profile.grammar)) {
+  for (const block of parseBlocks(t.text, book.style)) {
     if (block.kind === "table") rows += block.rows.length;
   }
   rowLines += lines.length;
@@ -158,7 +170,7 @@ gates.push(
 // --- G7: every topic renders as something ------------------------------------
 
 const blank = grammar.filter((t) => {
-  const blocks = parseBlocks(t.text, profile.grammar);
+  const blocks = parseBlocks(t.text, book.style);
   return blocks.length === 0 || blocks.every((b) => b.kind === "heading");
 });
 gates.push(
@@ -185,7 +197,7 @@ if (coverage) {
 } else {
   gates.push(
     gate("G8", false,
-      "no content/grammar-coverage.json — the parser must account for every source section"),
+      `no content/${book.coverage} — the parser must account for every source section`),
   );
 }
 
@@ -203,10 +215,10 @@ if (sampleAt >= 0) {
 
   console.log(`\n${"=".repeat(72)}\nRead these ${picked.length} topics and record the verdict in the pack's REVIEW.md.\n${"=".repeat(72)}`);
   for (const t of picked) {
-    console.log(`\n--- ${t.id}  ${profile.grammar.refPrefix}${t.ref}  [${t.family}]  ${size.get(t.id)} chars`);
+    console.log(`\n--- ${t.id}  ${book.style.refPrefix}${t.ref}  [${t.family}]  ${size.get(t.id)} chars`);
     console.log(`    ${t.title}\n`);
     if (argv.includes("--render")) {
-      for (const block of parseBlocks(t.text, profile.grammar)) {
+      for (const block of parseBlocks(t.text, book.style)) {
         if (block.kind === "table") {
           for (const row of block.rows) console.log("    " + row.cells.join("  "));
         } else {
@@ -218,7 +230,7 @@ if (sampleAt >= 0) {
   }
 }
 
-const ok = report(`Grammar shape — ${profile.id} (${grammar.length} topics)`, gates, {
+const ok = report(`Grammar shape — ${profile.id} / ${book.label} (${grammar.length} topics)`, gates, {
   json: argv.includes("--json"),
 });
 process.exit(ok ? 0 : 1);

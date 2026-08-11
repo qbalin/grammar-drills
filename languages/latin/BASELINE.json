@@ -56,6 +56,50 @@
     ]
   },
 
+  "grammars": {
+    "_comment": [
+      "The pack's further grammars, one entry apiece. Bennett is above, because",
+      "he is the syllabus the app teaches; these are gated to the same standard",
+      "and read by nothing at runtime yet."
+    ],
+    "lane": {
+      "book": "Lane, A Latin Grammar for Schools and Colleges (1898)",
+      "range": "397-2427",
+      "topics": 459,
+      "families": 18,
+      "familyCounts": {
+        "inflection": 1, "inflection-of-the-noun": 69, "inflection-of-the-verb": 79,
+        "sentences": 7, "agreement": 3, "use-of-the-noun": 76, "use-of-the-verb": 28,
+        "the-compound-sentence-or-coordination": 8, "the-complex-sentence-or-subordination": 11,
+        "the-indirect-question": 6, "the-relative-sentence": 12,
+        "the-conjunctive-particle-sentence": 70,
+        "connection-of-separate-sentences-or-periods": 14, "nouns-of-the-verb": 37,
+        "some-occasional-peculiarities-of-verbs": 6, "indirect-discourse": 8,
+        "pronouns": 17, "numerals": 7
+      },
+      "textChars": { "min": 141, "median": 1607, "p90": 4642, "max": 14307 },
+      "sourceSections": 2745,
+      "assigned": 2031,
+      "dropped": { "part-not-teachable": 714 },
+      "rowShapedLines": 1364,
+      "tableRowsRecovered": 1462,
+      "romanPoints": 0,
+      "_note": [
+        "First measured 2026-08-11, the commit that wrote lane-parse.py.",
+        "",
+        "Only maxTopics needed a threshold of its own (300-600, against Bennett's",
+        "60-300). Every other gate Bennett was calibrated at, Lane clears",
+        "unchanged — which is the finding, not a coincidence: the two books",
+        "disagree about how many topics a grammar has, and agree about how long",
+        "one should be.",
+        "",
+        "The 714 dropped are §§1-396 (sound and word formation) and §§2428-2745",
+        "(prosody and versification), the ranges answering to the Parts Bennett's",
+        "own parser drops. G9 has not been read through."
+      ]
+    }
+  },
+
   "questions": {
     "tests": 2339,
     "questions": 8984,

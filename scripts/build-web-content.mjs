@@ -55,10 +55,16 @@ const packDir =
   values.pack ?? join(repoRoot, "languages", process.env.LANG_PACK ?? "latin");
 const contentDir = values.content ?? join(packDir, "content");
 const outDir = values.out ?? join(repoRoot, "apps", "web", "public", "content");
+const profile = JSON.parse(readFileSync(join(packDir, "profile.json"), "utf8"));
 
-/** The five, in the order the version stamp hashes them. */
+/**
+ * What the version stamp hashes, in order — the five, plus one per further
+ * grammar the pack ships. A book left out of this keeps its first bytes in
+ * everyone's cache for good, which is the whole reason the stamp exists.
+ */
 const ASSETS = [
   "grammar.json.gz",
+  ...(profile.grammars ?? []).map((g) => `grammar-${g.id}.json.gz`),
   "tests.json.gz",
   "lemmas.json.gz",
   "forms.txt.gz",
@@ -90,13 +96,26 @@ function writeGz(name, text) {
  * a phone that renders none of them would put ~400 KB on the grammar bundle to
  * no end.
  */
-function buildGrammar() {
-  const grammar = JSON.parse(
-    readFileSync(join(contentDir, "grammar.json"), "utf8"),
-  );
+function buildGrammar(from = "grammar.json", to = "grammar.json.gz") {
+  const grammar = JSON.parse(readFileSync(join(contentDir, from), "utf8"));
   const shipped = grammar.map(({ examples, ...topic }) => topic);
-  writeGz("grammar.json.gz", JSON.stringify(shipped));
+  writeGz(to, JSON.stringify(shipped));
   return grammar;
+}
+
+/**
+ * A pack's further grammars, one bundle apiece.
+ *
+ * Separate files rather than one, because the app opens one book at a time and
+ * the other costs nothing until it is asked for: Lane's is 986 KB of prose, and
+ * precaching a book nobody has switched to would be the whole download again for
+ * a page that never draws it. The service worker precaches the primary and
+ * fetches these on demand.
+ */
+function buildSecondaryGrammars() {
+  for (const g of profile.grammars ?? []) {
+    buildGrammar(g.content, `grammar-${g.id}.json.gz`);
+  }
 }
 
 // --- tests ------------------------------------------------------------------
@@ -221,6 +240,7 @@ function buildParadigms() {
 mkdirSync(outDir, { recursive: true });
 console.log(`Repacking ${contentDir} -> ${outDir}`);
 const grammar = buildGrammar();
+buildSecondaryGrammars();
 const tests = buildTests();
 const lemmas = buildLemmas();
 const paradigms = buildParadigms();
