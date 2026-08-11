@@ -178,29 +178,72 @@ function fromGrammar() {
  * Latin: pools already matched to topics and already macronized, read here so
  * that this half of the pipeline needs no dump and no grammar of its own.
  *
- * Two of them, because Latin has two ways of getting to a quotation and they
- * are not alternatives. `quotes.jsonl.gz` is the dictionary dump's, written by
- * `build-quote-pool.mjs`. `ag-quotes.jsonl.gz` is Allen & Greenough's, written
- * by `ag-quotes.mjs`. Same schema, different books, and a pack may ship either
- * or both — so this fails only when it can find neither.
+ * Three of them, because Latin has three ways of getting to a quotation and
+ * they are not alternatives — the dump reaches sentences no grammar prints, and
+ * the grammars reach the syntax the dump cannot be asked about. Same schema,
+ * different books, and a pack may ship any of them, so this fails only when it
+ * can find none.
+ *
+ * --- why these carry their provenance, and nothing else does ------------------
+ *
+ * A quotation's licence had nowhere to live until this list. A pool record is
+ * `{text, topics, prompt, source}` and a shipped question adds only
+ * `Question.source` — author, work, locus — so the *book the sentence was
+ * recovered from* was recorded in one place, a comment at the top of the script
+ * that built it, and reached no artifact at all. `profile.grammar.source` is the
+ * pack's only licence string that ships, and it names Bennett, who supplies the
+ * syllabus and not one of these sentences.
+ *
+ * That is thin for material taken out of three separately-licensed
+ * digitizations, so each run now records what it read into
+ * `content/quote-stats.json` beside its funnel. The Latin itself is nobody's:
+ * these authors have been dead two thousand years. What is licensed is the
+ * transcription, and A&G's is the one with terms attached.
  */
-const POOLS = ["quotes.jsonl.gz", "ag-quotes.jsonl.gz"];
+const POOLS = [
+  {
+    file: "quotes.jsonl.gz",
+    built: "scripts/build-quote-pool.mjs",
+    from: "the kaikki.org Wiktionary extract behind the reference dictionary",
+    licence: "CC BY-SA 4.0 (Wiktionary); the prompts are written here, not taken",
+  },
+  {
+    file: "ag-quotes.jsonl.gz",
+    built: "scripts/ag-quotes.mjs",
+    from: "Allen & Greenough, New Latin Grammar (Boston, 1903), via Perseus/DCC as mirrored by alpheios-project/grammar-allen-greenough",
+    licence: "text public domain; this digitization CC BY-NC-SA 3.0",
+  },
+  {
+    file: "lane-quotes.jsonl.gz",
+    built: "scripts/lane-quotes.mjs",
+    from: "Lane, A Latin Grammar for Schools and Colleges (New York, 1898), Project Gutenberg #44653",
+    licence: "public domain, text and transcription both",
+  },
+];
+
+/** The pools actually on disk, in the order above. Set by `fromQuotes`. */
+const poolsRead = [];
 
 function fromQuotes() {
-  const present = POOLS.map((name) => join(dir, "content", name)).filter((p) => existsSync(p));
+  const present = POOLS.map((pool) => ({
+    ...pool,
+    path: join(dir, "content", pool.file),
+  })).filter((pool) => existsSync(pool.path));
   if (!present.length) {
     console.error(
-      `No quote pool in ${join(dir, "content")} (looked for ${POOLS.join(", ")}).\n` +
-        "Build one with scripts/build-quote-pool.mjs (it needs the dictionary dump),\n" +
-        "or scripts/ag-quotes.mjs (it does not).",
+      `No quote pool in ${join(dir, "content")} ` +
+        `(looked for ${POOLS.map((p) => p.file).join(", ")}).\n` +
+        `Build one with ${POOLS.map((p) => p.built).join(", ")}.`,
     );
     process.exit(2);
   }
   const out = [];
-  for (const path of present) {
-    for (const line of gunzipSync(readFileSync(path)).toString("utf8").split("\n")) {
+  for (const pool of present) {
+    let records = 0;
+    for (const line of gunzipSync(readFileSync(pool.path)).toString("utf8").split("\n")) {
       if (!line.trim()) continue;
       const quote = JSON.parse(line);
+      records++;
       for (const topicId of quote.topics ?? []) {
         out.push({
           topicId,
@@ -211,6 +254,7 @@ function fromQuotes() {
         });
       }
     }
+    poolsRead.push({ file: pool.file, from: pool.from, licence: pool.licence, records });
   }
   return out;
 }
@@ -392,6 +436,10 @@ for (const [topicId, questions] of [...byTopic].sort()) {
 // --- report -----------------------------------------------------------------
 
 console.log(`\n${profile.id} — quoted questions, from ${from}\n`);
+for (const pool of poolsRead) {
+  console.log(`  ${String(pool.records).padStart(6)}  ${pool.file} — ${pool.licence}`);
+}
+if (poolsRead.length) console.log("");
 console.log(`  ${String(candidates.length).padStart(6)}  candidates`);
 for (const [key, n] of Object.entries(funnel)) {
   if (n) console.log(`  ${String(-n).padStart(6)}  ${key}`);
@@ -417,6 +465,7 @@ if (funnel.unattested) {
 const stats = {
   measuredAt: at("--stamp") ?? null,
   from,
+  ...(poolsRead.length ? { pools: poolsRead } : {}),
   candidates: candidates.length,
   rejected: funnel,
   questions: questionsWritten,
