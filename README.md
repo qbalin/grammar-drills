@@ -683,25 +683,48 @@ examples*, meaning what each was drawn from. Bennett wrote the sentences.
 Attributing them would manufacture quotations, so that route was measured and
 abandoned.
 
-Latin's real quotations come from the dictionary dump instead, where Wiktionary
-cites actual text with a `ref`. 439 of them clear every filter. Whether they are
-on screen yet depends on whether `languages/latin/content/quotes.jsonl.gz` is in
-the tree — `languages/latin/REVIEW.md` records where that stands, under gate C9,
-and Greek's quoted questions ship either way.
+Latin's quotations come from three pools instead, and they are additive rather
+than alternative — each reaches sentences the others cannot.
+
+| pool | from | records | licence |
+|---|---|---|---|
+| `quotes.jsonl.gz` | the Wiktionary dump, where a sense cites real text with a `ref` | 372 | CC BY-SA 4.0 |
+| `ag-quotes.jsonl.gz` | Allen & Greenough, via Perseus/DCC as Alpheios mirrors it | 592 | text PD, digitization CC BY-NC-SA 3.0 |
+| `lane-quotes.jsonl.gz` | Lane's *Latin Grammar* (1898), Project Gutenberg #44653 | 1,543 | public domain, text and transcription both |
+
+The dump reaches sentences no grammar prints; the grammars reach the syntax the
+dump cannot be asked about. **Lane is the largest and the cheapest**, because
+Project Gutenberg #44653 is a Distributed Proofreaders transcription rather than
+a scan: it is macronized, it glosses every example itself, and it cites a locus,
+so a model is asked for one thing rather than three. It was measured before a
+line of its pipeline was written — 98.2% of its Latin tokens are attested by the
+pack's own index, against A&G's 97.7% and a bar of roughly 95% — and then held
+to the test that killed Bennett's index: of its whole pool, 1,235 sentences were
+confirmed verbatim against a corpus of the authors it cites and **none was
+contradicted**.
+
+Together the three take Latin from **889 attested questions of 7,470 (11.9%) to
+2,387 of 8,984 (27%)**, over 62 topics rather than 50. Verb syntax is 44%
+attested and noun syntax 37%, where they were 21% and 23%. The inflection
+families stay near zero and that is correct: nobody quotes Cicero to teach the
+fourth declension.
 
 ```bash
 node --import tsx scripts/build-quote-pool.mjs --pack languages/latin \
   --dump <kaikki.jsonl> --ref languages/latin/reference   # -> content/quotes.jsonl.gz
+node --import tsx scripts/ag-quotes.mjs   --pack languages/latin   # -> content/ag-quotes.jsonl.gz
+node --import tsx scripts/lane-quotes.mjs --pack languages/latin   # -> content/lane-quotes.jsonl.gz
 node --import tsx scripts/quote-tests.mjs --pack languages/latin --from quotes
 node --import tsx scripts/quote-tests.mjs --pack languages/ancient-greek --from grammar
 ```
 
-Only the first of those needs the 1.2 GB dump and the dictionary; it writes a
-committed artifact and everything downstream reads that. It is also the only
-step that calls a model, and what it asks for is narrow: which topics a
-quotation exemplifies, which of a *closed* set of spellings an ambiguous word
-takes, and an English rendering. The Latin is the quotation as printed —
-nothing here writes any.
+Only the first needs the 1.2 GB dump and the dictionary, and it needs them for
+the macrons alone; the two grammars print theirs. Each writes a committed
+artifact and everything downstream reads that. All three call a model, and what
+they ask for is narrow — the dump's builder wants topics, a spelling from a
+*closed* set, and an English rendering; the grammars' builders want only which
+topic a section teaches, decided once per section rather than once per sentence.
+The Latin is the quotation as printed. Nothing here writes any.
 
 Two rules hold the whole thing up. **Nothing may move a gate**: a quotation is
 kept only if it carries no unattested form at all, because both packs sit at

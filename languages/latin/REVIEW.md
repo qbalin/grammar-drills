@@ -58,6 +58,7 @@ failure mode follows the citation parser, not the syllabus.
 | Date | Reviewer | Sample | Verdict |
 |---|---|---|---|
 | — | *not yet signed off* | — | 885 quoted questions from two pools, and nothing has been read by a person. Sample across **authors and across pools** — the dump's prompts were written by a model, A&G's are the book's own glosses, and they fail in different ways. |
+| 2026-08-11 | *not signed off — machine review only* | 36 Lane prompts, stratified across Cicero, Caesar, Livy, Tacitus, Sallust, Nepos and Pliny; plus a ten-check sweep of all 1,584 | **3 of the first 21 were defective and the defect was structural.** Lane sets its sub-item labels as `(<i>b.</i>)` immediately after an example, and the gloss joiner inherited from `ag-quotes.mjs` swallowed them, so `bewitched with Dion b.` and `why should I teach you your A B C's? b.` were on their way to a student as things to translate. Fixed by taking the sentence-ending mark as the gloss boundary, looked for on *both* sides of the tag; a fresh 15 read clean. The sweep found two more, in the Latin: a cross-reference to Lane's own §313 inside a quotation, and Lane explaining a word mid-sentence in parentheses. Both now go to an `annotated` bucket. **Still wanted from a human**: whether each English prompt is a fair and reachable target for that exact Latin. The attribution half is separately evidenced — 1,861 of 2,291 checkable confirmed against `.cache/attrib-corpus`, 0 contradicted. |
 
 ### What Allen & Greenough was made to prove first
 
@@ -82,6 +83,178 @@ That corpus is not `reference/texts/`, deliberately. That directory is also what
 to settle an attribution would quietly move what the pack calls a common word.
 `verify-attribution.mjs --texts <dir>` keeps the two apart.
 
+#### How to rebuild the attribution corpus, because the last one was lost
+
+The corpus behind the 561-of-750 figure above is **not in this tree and not in
+the snapshot manifest** — `reference/texts/` holds the seven frequency works and
+nothing else, so a fresh checkout cannot reproduce that measurement. It was
+rebuilt from scratch on 2026-08-11 for the Lane run, and the recipe is written
+down here so the next person does not pay for it a third time.
+
+It lives at `.cache/attrib-corpus/` — gitignored, so it survives between runs on
+one machine and is never committed, never shipped, and never ranked.
+
+    node --import tsx scripts/verify-attribution.mjs --pack languages/latin \
+      --texts .cache/attrib-corpus
+
+66 files, ~15 MB, one per **work**, named `<author-stem>-<work-slug>.txt`:
+`cicero-in-verrem.txt`, `livius-ab-urbe-condita.txt`,
+`caesar-de-bello-gallico.txt`. Per work rather than per author, and that is
+load-bearing: `verify-attribution` counts a sentence as `not-found` only when the
+cited *work* is on disk, so a corpus of `cicero-opera.txt` blobs empties the
+denominator and reports 100% of nothing. The author stem has to share a token
+with the cited author as `gen/sources.mjs` spells it — `livius` for
+"Titus Livius", `sallustius` for "Gaius Sallustius Crispus".
+
+Contents: all 54 of the Cicero works Lane and A&G cite, Caesar entire (*B.G.*
+I–VIII and *B.C.* I–III), Livy I–X and XXI–XLV, Tacitus (*Annales*, *Historiae*,
+*Germania*, *Agricola*, *Dialogus*), Sallust's two monographs, Quintilian, and
+Seneca's letters. Absent and therefore `unchecked`: Nepos, the two Plinies,
+Gellius, Suetonius, Columella, Cato — about 4% of what is cited.
+
+Measured against the 889 questions shipped *before* Lane, it gives **685
+confirmed, 0 contradicted, 144 not-found, 60 unchecked — 82.6% of 829
+checkable**, with 683 of the 685 found in the work cited rather than merely
+somewhere in the author. That is the same pools the 74.8%-of-750 line above
+measures; the rate rose because the corpus is wider, not because anything about
+the content changed.
+
+The text came from The Latin Library, which is the pragmatic choice and not a
+clean one: it is public-domain text with no licence statement and no stated
+edition. That is tolerable *here* and nowhere else, because this corpus is a
+measuring instrument that is never committed, never shipped, and never ranked
+into `frequency.tsv.gz`. `PerseusDL/canonical-latinLit` (CC BY-SA 4.0, TEI) is
+the right source the day this needs to be reproducible rather than merely
+repeatable.
+
+### What Lane was made to prove, and the one thing it got wrong
+
+Lane went through the same gauntlet, in the same order, before its pipeline was
+written. It is the third source and the first that is public domain outright.
+
+**Token attestation, the G&L threshold.** 98.2% of the Latin in its
+sentence-shaped examples is attested by the pack's own shipped index, against
+A&G's 97.7% and the ~95% bar. Proofread rather than OCR is the whole of the
+difference: Project Gutenberg #44653 is a Distributed Proofreaders transcription,
+so there is no `T5 ab eo libero` in it.
+
+**Quoting versus recasting, the Bennett test.** Run twice, and the second run is
+the one that matters.
+
+*First, against Caesar alone*, the only author `reference/texts/` holds in bulk.
+175 of Lane's sentences are cited to *de Bello Gallico* I–IV; asking what
+fraction of Lane's words appear in Caesar in order:
+
+| | ≥90% | 65–90% | <65% |
+|---|---|---|---|
+| Lane | **150 (86%)** | 25 | **0** |
+| A&G | 34 (68%) | 15 | 1 |
+
+*Then against the whole rebuilt attribution corpus*, all 1,586 pool sentences by
+`verify-attribution`'s own rule — any run of four tokens confirms, ten
+contradicts:
+
+```
+   1235  confirmed        80.2% of the 1539 that could be checked  (want ≥70%)
+      0  contradicted
+    304  not-found
+     47  unchecked
+```
+
+By author: Cicero 767 of 958, Caesar 244 of 310, Livy 163 of 193, Tacitus 30 of
+39, Sallust 23 of 29. Nepos, Pliny, Suetonius and Gellius are `unchecked`
+because the corpus does not hold them.
+
+Lane abridges, as A&G abridges, and rather less. Bennett's index scored 4 of 54
+on Caesar alone.
+
+**The one real misattribution, and it is Lane's fault rather than the parser's.**
+§2742 declares that a citation of figures alone is Caesar's Gallic War, and at
+§1666 Lane breaks its own rule: the section is about Tacitus, and it prints
+`rēgem Rhamsēn ... potītum`, `2, 60` with no author — meaning *Annals* 2.60, not
+*B.G.* 2.60, and leaning on the sentence it had just written rather than on the
+convention. Filed as printed it credited Tacitus's words to Caesar, and **every
+automated check in this tree passes that**: the Latin is real, the Latin is
+attested, the citation parses, and `verify-attribution` files the miss under the
+harmless `not-found`. Corroboration against the corpus is what found it, which
+is the lesson of Bennett's index arriving a second time.
+
+The guard is in `gen/lane-sources.mjs` and is deterministic rather than clever:
+book 2 of the Gallic War has 35 chapters, so `2, 60` is not a place in it and
+cannot be filed under it. `BG_CHAPTERS` is the eight books' extents; a bare-figure
+citation outside them is dropped, not guessed at. It costs three quotations and
+took the sub-65% bucket to zero.
+
+**What only reading twenty-one prompts caught.** Every gate was green and three
+of the first twenty-one sampled were wrong, all the same way: Lane sets its
+sub-item labels as `(<i>b.</i>)` immediately after the example they follow, and
+the gloss joiner — which is right for A&G, and was copied from it — swallowed
+them. `bewitched with Dion b.`, `council hall b.`, `your A B C's? b.` went into
+the pool as prompts a student would be asked to translate. Nothing downstream
+could see it: the Latin is untouched, the attestation is untouched, and a prompt
+is only ever compared against itself.
+
+A sweep of the whole pool for the shapes a sample can only spot-check turned up
+two more, in the Latin rather than the English, and both were invisible for the
+same structural reason — `clean()` reduces a token to letters before looking it
+up, so a digit becomes the empty string and is waved through as `empty`, and a
+parenthesis is punctuation. `quō factō ... animōs centuriōnum 313` carried
+Lane's cross-reference to its own §313 inside the quotation, and `lēgātus capite
+vēlātō fīlō (lānae vēlāmen est)` carried Lane explaining a word to its reader
+mid-sentence. Both now go to an `annotated` bucket. The pool was otherwise clean
+on ten such checks: no Latin in a prompt, no markup, no truncated clause, no
+double space.
+
+The boundary is the sentence-ending mark, and it has to be looked for on both
+sides of the tag — Lane leaves the stop outside the run in `council hall</i>.
+(<i>b.</i>)` and inside it in `A B C's?</i> (<i>b.</i>)`. Checking only the gap
+fixed twelve of twenty-four. This is the third filter in this pipeline that was
+wrong on the first pass, which is the count `ag-quotes.mjs` records for itself,
+and the argument for `--why` and for gate C9 in one.
+
+**What Lane cannot do, corrected after the run.** Two guesses were written here
+before the filing finished and both were wrong, in opposite directions, which is
+the argument for not writing predictions as findings.
+
+*Guessed:* Lane has no word-order chapter, so `bn-353`–`bn-356` stay unreached.
+*Measured:* `bn-353` Style: nouns **is** reached, with 4 questions. `bn-354`,
+`bn-355`, `bn-356` are not.
+
+*Guessed:* Lane opens Part Second on sentence classification, so it reaches three
+of the four overview topics. *Measured:* it reaches **one**.
+`bn-164-simple-and-compound-sentences` has 4 questions; `bn-161` Classification
+of Sentences, `bn-163` Subject and Predicate and `bn-213` The Ablative are still
+at zero, because those are Bennett's own scaffolding headings and nobody quotes
+an author to illustrate a table of contents.
+
+*Also wrong by omission:* `bn-357`–`bn-359`, the peculiarities of the accusative,
+dative and genitive, were expected to fall out of Lane's case chapters and did
+not. What actually lifted `style` from 4% to 18% is elsewhere in the family —
+`bn-341` coordinate conjunctions went to 88 questions and `bn-347` syntax of
+adverbs to 19.
+
+So the corpus route remains the only path to `bn-354`–`bn-359` and
+`bn-350`, and that is now measured rather than assumed.
+
+**What was dropped, and the case for buying it back.** 193 sentences carry
+Lane's macron-over-breve, its mark for a quantity that varies between authors:
+`mihī̆`, `tibī̆`, `sibī̆`, `rē̆ī`. They are dropped the way A&G's circumflex is,
+because writing either mark asserts something the book declined to assert and the
+fold strips it before attestation could catch a wrong guess.
+
+The case for reversing that is stronger than it looked when the decision was
+made, and the evidence arrived from the other direction. Measuring what the
+shipped pools already do with these words: **the dump pool ships them bare in
+27.7% of its sentences and A&G's in 18.6%** — `mihi`, `tibi`, `sibi`, `ubi`,
+`ego` — and the dictionary holds *only* the doubtful-marked spelling for each. So
+the pack has already settled on bare as the spelling for exactly this class of
+word, in two pools, and dropping Lane's 193 makes it the one source held to a
+different rule. Mapping macron-over-breve to the bare vowel would buy back 193
+sentences and make the three pools agree.
+
+Not done in this commit, because it is a change to how a word is spelled across
+the whole pack and belongs in its own, where the diff shows it.
+
 ### Why the filing is per section and not per sentence
 
 The first run asked a model to place each of 593 sentences on its own. Nothing
@@ -105,6 +278,70 @@ scatter fell to 6 of 147, §485 went to `bn-266`, §592 to `bn-323`, §449 to
 The residue is the honest part. Sections A&G writes about one thing and Bennett
 splits across two are the 6 that still scatter, and they are in the map to be
 read rather than argued with.
+
+### The source survey, so it is not paid for twice
+
+Done 2026-08-11, looking for openly-licensed, machine-parsable Latin dense in
+quotations from classical authors. **Lane is the find and the rest of this is the
+record of what else there is.** The licence ceiling is settled: A&G already
+arrives CC BY-NC-SA 3.0, so NC share-alike is what the pack has already taken on,
+and nothing below is excluded on licensing grounds.
+
+**Taken: Lane, *A Latin Grammar for Schools and Colleges* (1898).** Project
+Gutenberg #44653, public domain in both the text and the transcription, which is
+Distributed Proofreaders rather than OCR. What it was made to prove, and the
+misattribution it was caught in, are two sections above.
+
+**Worth having later, in this order.**
+
+| source | what it is | licence |
+|---|---|---|
+| `PerseusDL/canonical-latinLit` | 428 Latin + 259 English TEI files. Not a quotation source: the clean way to rebuild the widened attribution corpus `verify-attribution --texts` wants, and to pull context around any locus Lane or A&G cites. Alignment is citation-level, not sentence-level. | CC BY-SA 4.0 |
+| `PerseusDL/canonical-pdlrefwk` | A&G as real TEI rather than Alpheios HTML, plus Smith's dictionaries. A text-quality option, not a licensing one. | CC BY-SA 4.0 |
+| UD_Latin-CIRCSE | 1,972 sentences, Seneca's tragedies and Tacitus *Germania*, CoNLL-U. Constructions are queryable: `VerbForm=Gdv`, an `advcl`-heading `Case=Abl` participle for the ablative absolute, `ccomp` with `VerbForm=Inf` for acc.+inf. Purpose and result are *not* separable from UD annotation alone. | CC BY-SA 4.0 |
+| UD_Latin-Perseus | 2,273 sentences, classical. The UD page says CC BY-NC-SA 2.5 and PerseusDL's own site says CC BY-SA 3.0; pin from the release downloaded, not from either page. | disputed, see left |
+| LASLA / Opera Latina | ~1.7M tokens, the largest annotated classical corpus, CoNLL-U via `CIRCSE/LASLA`. Syntactic annotation only partial. | CC BY-NC-SA 4.0 |
+| Meissner–Auden, *Latin Phrase-Book* | PG #50280, proofread, every entry glossed — but **mixed**: only entries carrying a parenthetical locus are attested and the unattributed majority is composed idiom. Filter on the citation or it becomes Bennett's index again. | public domain |
+
+Everything in that table except the first two shares one problem and it is the
+same one: **none of them is macronized.** That is the tax, not attestation.
+Measured here: Livy I and Tacitus *Annals* I, neither ever ingested, attest at
+98.1% and 97.7% against the shipped index, and roughly three-quarters of their
+4–22-word sentences carry no unattested form at all — so the corpus route is
+wide open on the gates. But strip the marks off the 964 sentences already in the
+two pools and ask `scripts/lib/macronize.mjs` to put them back, and it recovers
+83.5% and 85.6% of tokens and the whole sentence 32% and 21% of the time. On raw
+Livy and Tacitus only 7% and 5% of short sentences come out attestation-clean
+*and* fully marked inside the two-decision budget. **The decisive property of a
+source is that it prints macrons**; a source that does not pays the dump pool's
+price of marks and prompts both, 18 calls and ~105 minutes.
+
+One thing that measurement turned up and did not settle:
+`build-quote-pool.mjs:118` rejects on `ambiguous.length > 2` and never checks
+`unknown`, so a sentence holding a word the dictionary offered no spelling for
+can pass through partially unmarked. **Whether anything shipped that way is not
+established, and the obvious way of asking does not answer it.** Counting
+shipped words that carry no mark but whose every dictionary spelling carries one
+gives 27.7% of the dump pool and 18.6% of A&G's — and then the list turns out to
+be `mihi`, `tibi`, `sibi`, `ubi`, `ego`, `parum`, where what the dictionary holds
+is `mihī̆`, `tibī̆`, `ubī̆`, `egō̆`: the common-quantity mark, for a vowel that is
+long in some authors and short in others. Bare is the conventional spelling
+there, it is what both grammars print, and it is what the pack should ship. The
+measure is swamped by them. A real one would have to exclude the doubtful marks
+first, and was not written. The `unknown` check is still missing rather than
+unnecessary.
+
+**Ruled out, with the reason, so nobody re-tries them.**
+
+| source | why |
+|---|---|
+| Roby, Harkness, Hale & Buck, Madvig, Draeger, Kühner-Stegmann | Raw OCR only; no proofread digitization exists for any of them. Same class as G&L below — measure before believing otherwise. Project Gutenberg's entire "Latin language — Grammar" subject holds exactly two books, Lane and Bennett, and both are now in this pack. |
+| Bassols de Climent, *Sintaxis latina* | Published 1956, author died 1973: **in copyright** in the EU until 2043. The Archive.org copies are unauthorized re-uploads. |
+| `grosenthal/latin_english_parallel` | Sentence-aligned and convenient, and its translations come from the in-copyright Loeb, paraphrased by GPT-3.5 to "transform them into the public domain". That is not how copyright clears, and the sibling repo's MIT label does not cure the provenance. |
+| Riley's *Dictionary of Latin Quotations* (`gfranzini/riley-latin-quotations`) | 2,490 entries in a clean TSV, 2,477 of them translated — and `source_1` holds an author name only, with `source_2` populated in **4 entries of 2,490**. No loci at all, so every citation would have to be re-found. Also weighted toward proverbs and legal maxims rather than syntax. No LICENSE file on the corrections. |
+| Arnold, North & Hillard, and Meissner's unattributed entries | Composed sentences. Attributing them manufactures quotations, which is the Bennett-index failure exactly. |
+| Steadman's readers | Licence is fine (CC BY-NC-SA 3.0); PDF-only with facing-page layout. |
+| DCC commentaries | CC BY-SA 4.0 and cross-linked to A&G section numbers, which would make a natural bridge — but Drupal-served HTML with no bulk export. Scraping only. |
 
 ### What was already ruled out, so it is not tried again
 
@@ -167,6 +404,29 @@ because they measure self-consistency, and a source that is internally
 consistent and externally wrong passes all of them.
 
 ## Where the next attested sentences would come from
+
+> **Superseded 2026-08-11 by the Lane run, and kept because the reasoning held.**
+> The pack is now **2,387 attested of 8,984 questions, 27%**, over 62 of 114
+> topics — up from 889 of 7,470 over 50. What follows was written when the first
+> two figures were the current ones, and its central claim survives: the
+> inflection families stayed where it said they would.
+>
+> | family | topics | attested | total | % (was) |
+> |---|---|---|---|---|
+> | verb-syntax | 28 | 1,351 | 3,066 | **44%** (21%) |
+> | noun-syntax | 18 | 584 | 1,579 | **37%** (23%) |
+> | adj-pron-syntax | 13 | 281 | 805 | **35%** (13%) |
+> | style | 12 | 119 | 678 | **18%** (4%) |
+> | particles | 3 | 19 | 142 | **13%** (2%) |
+> | pron | 9 | 7 | 365 | 2% (2%) |
+> | verb-forms | 17 | 20 | 1,430 | 1% (1%) |
+> | adj | 5 | 3 | 388 | 1% (1%) |
+> | nouns | 9 | 3 | 531 | 1% (1%) |
+>
+> The four inflection families did not move and were never going to. 52 topics
+> still ship no quoted question, against 64 before; 33 of the 37 that no pool
+> reached are still unreached, and 20 of those 33 are inflection topics or
+> Bennett's own scaffolding headings.
 
 Measured 2026-08-10, after the A&G run. The pack is **889 attested of 7,470
 questions, 11.9%**, over 50 of 114 topics. What the distribution says is that
@@ -239,6 +499,58 @@ about the study loop, not about the pipeline, and it is cheap either way.
 **Not worth doing: redistributing the second topic.** Only 24 of 592 records
 name one, and no topic depends on being another's second choice. Measured and
 empty.
+
+> **Corrected 2026-08-11. That paragraph is measured on the A&G pool alone, and
+> it is wrong about the other half of the corpus.** A&G files per section, so of
+> course few of its records name a second topic — one decision covers every
+> sentence beneath it. The dump pool files per sentence, and **187 of its 372
+> records name a second topic**. Every one of those second copies is thrown into
+> `duplicate` by `quote-tests.mjs`, because the first-listed topic wins and the
+> prompt then collides. The lever is half the corpus in size, not 4%.
+>
+> It joins a second one found the same day. **27 topics are named by a pool and
+> ship nothing**, lost to `thinTopic` — a topic with fewer than
+> `minQuestionsPerTest` accepted quotes is dropped whole — and to that same
+> second-topic rule. Six already hold three or more pool records, which is at or
+> above the floor: `bn-236-adjectives-used-substantively` (6, both pools),
+> `bn-071-comparison-of-adjectives` (4),
+> `bn-239-adjectives-with-the-force-of-adverbs` (4),
+> `bn-116-peculiarities-of-conjugation` (3),
+> `bn-253-syntax-of-pronominal-adjectives` (3),
+> `bn-076-formation-and-comparison-of-adverbs` (3).
+>
+> Neither was acted on *deliberately* in the Lane commit, because Lane is the
+> larger lever and mixing them would make it impossible to say which moved what.
+> But the compose run cashes part of the `thinTopic` one whether or not anyone
+> asks it to: `quote-tests.mjs` pools candidates from all three files before
+> applying the floor, so a stranded A&G or dump sentence — one that never
+> shipped, and therefore never collided with a prompt — becomes live again
+> wherever Lane pushes its topic past three. Old-pool sentences did ship in this
+> run, and nothing on a shipped question says which pool it came from. The
+> second-topic lever is untouched and still there.
+
+**And 37 of the 114 topics were named by no pool record at all** — the true
+"nothing has reached this" set, as against the 64 that merely ship none.
+Measured 2026-08-11, before Lane:
+
+| family | n | ids |
+|---|---|---|
+| verb-forms | 11 | `bn-097`, `bn-098`, `bn-100`, `bn-101`, `bn-103`, `bn-105`, `bn-107`, `bn-109`, `bn-114`, `bn-117`, `bn-120` |
+| style | 7 | `bn-353`…`bn-359` |
+| nouns | 4 | `bn-017`, `bn-018`, `bn-020`, `bn-023` |
+| noun-syntax | 4 | `bn-161`, `bn-163`, `bn-164`, `bn-213` |
+| pron | 3 | `bn-085`, `bn-086`, `bn-089` |
+| verb-syntax | 3 | `bn-256`, `bn-273`, `bn-317` |
+| particles | 2 | `bn-140`, `bn-145` |
+| adj-pron-syntax | 2 | `bn-234`, `bn-241` |
+| adj | 1 | `bn-063` |
+
+Sixteen are inflection topics and stay a correct zero for the reason above. Four
+more — `bn-161` Classification of Sentences, `bn-163` Subject and Predicate,
+`bn-164` Simple and Compound Sentences, `bn-213` The Ablative — are overview
+headings that no grammar illustrates with a quotation, or so it looked; Lane
+opens its Part Second with exactly those and reaches three of the four. **The
+genuinely winnable unreached set was about 17 topics**, and Lane is aimed at it.
 
 ## Known state
 
