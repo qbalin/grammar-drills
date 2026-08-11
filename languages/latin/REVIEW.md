@@ -529,6 +529,63 @@ gates**, which is the same lesson as the twenty-one prompts:
   distinct titles. Lane cases its own titles now, leaving a word already in lower
   case exactly as the book set it.
 
+### Filling the other half of the crosswalk, and how it was checked
+
+A further grammar has no questions of its own — Lane's topics are served out of
+the ones written against Bennett, reached through `grammar/lane-topics.tsv`. That
+table was built by the *quotation* pipeline, which walks the sentences a grammar
+prints, and Lane prints those in Part Second. So it covered §§1056–2421 and
+nothing else, and half of Lane's syllabus had prose to read with nothing under
+it: **235 of 459 topics reachable, carrying 6,025 of 8,984 questions**.
+
+`extend-crosswalk.mjs` asked about the 220 topics nothing had been asked about
+— 11 calls, one judgement per topic rather than per section, because the
+question is about a grammar point and asking about each of a topic's four
+sections separately is four chances to answer differently about one thing.
+**196 were placed, 24 had no counterpart**, and Lane went to **431/459 topics
+and 8,430/8,984 questions (94%)**.
+
+**The part with a knowable answer is right.** Every gate here measures
+self-consistency, so the check that matters is the one where the answer is known
+in advance — and Lane names a declension by its stem where Bennett numbers it,
+which makes the whole inflection half checkable by anyone who knows the language:
+
+| Lane | Bennett |
+|---|---|
+| Stems in -ā- / -o- / -u- / -ē- | First / Second / Fourth / Fifth Declension |
+| Consonant stems, stems in -i- and mixed | Third Declension |
+| Verbs in -āre / -ēre / -ere / -īre | First / Second / Third / Fourth Conjugation |
+| Verbs in -iō, -ere | Verbs in -iō of the Third Conjugation |
+
+All twelve correct, which is the evidence the other 184 placements are worth
+trusting — and it is evidence rather than proof, so a read-through is still owed.
+
+**13 Bennett topics stay unreachable, and only seven of them structurally.**
+Word order, sentence structure, style of pronouns and of verbs: Lane has no
+chapter on any of it. The other six are topics Bennett isolates and Lane folds
+into a neighbour — Lane's conjunctions went to Bennett's *Coördinate
+Conjunctions* rather than to his list of the forms, its *Wish* to the *Optative
+Subjunctive* rather than the *Volitive*. Those are the books disagreeing, which
+is the whole reason to have a second one, and not a table to correct.
+
+**A wart the gates cannot see, and why it is safe to leave.** Eight titles
+qualified themselves with a *sibling* rather than a parent, because Lane
+occasionally nests one run-heading under another of the same kind:
+
+```
+  §794         Verbs in -āre: Verbs in -ēre
+  §1587-1593   The Tenses of the Indicative: The Present Tense
+  §2219-2222   The Infinitive: The Present Tense
+```
+
+The first reads as a contradiction and the others merely as a mouthful. G5 sees
+nothing: they are unique, well-formed and distinct. Fixing it means re-running
+the parser, which changes those topics' ids — and **that is safe, because the
+table is keyed on Lane's section numbers rather than on its topic ids**, so
+`build-crosswalk.mjs` re-derives the join and the model run is not spent again.
+That property is worth more than the wart costs, and it was the reason for
+choosing the section as the table's grain.
+
 **Titles are qualified rather than overridden.** Bennett needs a hand-written
 table of 20 headings that name their enclosing section instead of their topic.
 Lane's hierarchy is deeper and has far more — five topics called "Singular

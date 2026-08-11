@@ -62,7 +62,7 @@ import { statSync, writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { join } from "node:path";
 import { compileFold } from "@lang-tutor/core";
-import { genderOf, glossOf, tagValue } from "./lib/lemma-fields.mjs";
+import { classOf, genderOf, glossOf } from "./lib/lemma-fields.mjs";
 import { splitLemmaMap } from "./lib/lemma-map.mjs";
 import { loadLemmaIndex, loadProfile, packDir } from "./lib/pack.mjs";
 import { openReference, requireDictionary } from "./lib/reference.mjs";
@@ -190,8 +190,7 @@ for (const row of ranked) {
     };
     const gender = genderOf(entry.data, rows);
     if (gender) record.gender = gender;
-    const declension = tagValue(entry.data, "declension-");
-    if (declension) record.declension = declension;
+    Object.assign(record, classOf(entry.data, entry.pos));
 
     // The headword itself is a form: a lemma with no inflection table still
     // has to be findable by the word the student typed.
@@ -245,8 +244,7 @@ if (TAIL) {
     };
     const gender = genderOf(entry.data, rows);
     if (gender) record.gender = gender;
-    const declension = tagValue(entry.data, "declension-");
-    if (declension) record.declension = declension;
+    Object.assign(record, classOf(entry.data, entry.pos));
 
     const forms = new Set([entry.word, ...rows.map((f) => f.form)]);
     for (const form of forms) {

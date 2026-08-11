@@ -52,6 +52,29 @@ export function tagValue(data, prefix) {
   return undefined;
 }
 
+/**
+ * The inflection class the dictionary names for an entry, where it names one.
+ *
+ * Two tags, and they are not interchangeable. `declension-N` is written on
+ * anything that declines; `conjugation-N` on verbs. wiktextract also writes a
+ * declension on a *participle* filed as a verb — `futūrus` declines like
+ * `bonus` — so a verb's declension is its adjectival one and says nothing at
+ * all about how it conjugates. Reading each tag only where it means what it
+ * says is what stops `{pos: "verb", declension: "1"}` from being taken for the
+ * first conjugation, which is a mistake that looks right in aggregate: Latin
+ * has 2,304 such records and 3,224 genuine first-conjugation verbs.
+ */
+export function classOf(data, pos) {
+  const out = {};
+  const declension = tagValue(data, "declension-");
+  if (declension) out.declension = declension;
+  if (pos === "verb") {
+    const conjugation = tagValue(data, "conjugation-");
+    if (conjugation) out.conjugation = conjugation;
+  }
+  return out;
+}
+
 /** The gender tags wiktextract writes, in any language that marks gender. */
 const GENDERS = ["masculine", "feminine", "neuter", "common"];
 
