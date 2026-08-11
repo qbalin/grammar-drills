@@ -424,11 +424,22 @@ the index rather than being marked known — they are.
 ships 19–93 questions (median 24) in tests of four, so doing well on one test
 and being moved on is not the same as having the topic. This stays put and works
 out the questions you have never answered; once there are none of those, asking
-again takes the whole bank a second time, leading with whatever you have not
-seen for longest. When the run is worked out the loop **stops and says so**
+again takes the whole bank a second time, leading with the quotations and then
+with whatever you have not seen for longest. When the run is worked out the loop
+**stops and says so**
 rather than sliding onto the next topic: staying here was an instruction, and
 that is not how one ends. The status bar carries the run's count while it lasts,
 and it leaves the book cursor alone, so the detour costs you nothing.
+
+**The quotations come first.** Most of what a pack asks was written for this
+app; some of it quotes an author, and that half is much the smaller — 2,387 of
+Latin's 8,984 questions, 1,109 of Greek's 27,002, and none at all under the
+declensions. So a topic hands its tests over in an order rather than picking one
+each time: every quotation it holds, then everything else, and when the topic
+has been through, both halves shuffled and round again. It orders every route
+above and reviews besides, because an order withholds nothing — turning it off
+in Settings shuffles the topic together instead, and *explore only quoted
+sentences*, which does withhold, is the separate setting above it.
 
 **One round of questions is one review.** A served test is four sentences on one
 topic, and grading each of them used to drive four FSRS reps into the same card
@@ -550,8 +561,14 @@ none of them is dropped: a question you meet once a year is exactly the one
 whose earlier answers are worth having, and the cost is a file that grows with
 study. The whole file is rewritten — and, on GitHub storage, committed — on
 every save. A file written before the trail existed simply has none; it starts
-filling on the next answer. (Only `seenTests`, the rotation's memory, is capped,
-at ten per topic.)
+filling on the next answer. (Only `seenTests` is capped, at ten per topic. It
+used to be the rotation's whole memory — "serve what is not in here" — and could
+not be, because a topic runs to ninety tests and ten of them is not an answer to
+"have they all been seen". `testCycles` carries the rotation now: two numbers per
+topic, a seed naming the order and how far into it you are, so the order is
+derived rather than stored. What is left for `seenTests` is which of two tests
+was served longer ago, which is what a practice run breaks a tie with, and a cap
+is fine for that.)
 
 Where you are is in there too: `bookAt` (the cursor's section), `practise` (the
 run in flight, if any — together these are which of the

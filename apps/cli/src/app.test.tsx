@@ -1484,6 +1484,30 @@ describe("a deck that asked for quoted sentences only", () => {
     unmount();
   });
 
+  it("draws the bank by what it will ask, and refuses to open an empty one", async () => {
+    const content = new Content(quoted, testProfile);
+    const session = new Session(content, { ...emptyProgress(), quotedOnly: true });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+    await until(lastFrame, "First declension nouns");
+    await press(stdin, lastFrame, CTRL_N, "Grammar index");
+
+    // The pane is the questions this deck will be asked, so its heading and the
+    // index's count are halves of the same list rather than of two.
+    await pressOnce(stdin, lastFrame, "a", "All questions on");
+    expect(lastFrame()).toContain("0 of 1 answered");
+    expect(lastFrame()).toContain("Gaul is divided into three parts.");
+    expect(lastFrame()).not.toContain("The girl loves the rose.");
+
+    // Back to the index, on to the topic with nothing quoted: `a` would open a
+    // pane explaining nothing, so it says which silence this is instead.
+    await pressOnce(stdin, lastFrame, ESC, "Grammar index");
+    await pressOnce(stdin, lastFrame, RIGHT, "Second declension nouns");
+    await pressOnce(stdin, lastFrame, "a", "Nothing quoted for");
+    unmount();
+  });
+
   /**
    * The count is on the status line of the topic under the cursor, and the
    * cursor is on one topic at a time. So the index says where the quotations

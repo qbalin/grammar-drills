@@ -278,7 +278,6 @@ function Colophon() {
 export function TopicSheet({
   topic,
   attempts,
-  questionCount,
   quotedOnly,
   onClose,
   onRead,
@@ -290,15 +289,7 @@ export function TopicSheet({
 }: {
   topic: TopicProgress;
   attempts: Attempt[];
-  /**
-   * How many questions have been written for the topic — all of them, and
-   * unlike `topic.questions` not narrowed by the preference. It labels the
-   * bank, which is the book rather than the errand: the questions already
-   * answered on this topic are the student's own whatever they have since
-   * asked to be served.
-   */
-  questionCount: number;
-  /** Whether the counts above are the quoted questions alone. */
+  /** Whether the counts below are the quoted questions alone. */
   quotedOnly: boolean;
   onClose: () => void;
   onRead: () => void;
@@ -352,12 +343,21 @@ export function TopicSheet({
         </button>
       </div>
       <div className="actions">
+        {/* The bank narrows with the preference too. It used to be argued that
+            it should not — that the bank is the book rather than the errand —
+            but the preference is not an errand: an errand is what this sitting
+            is for and is deliberately never written down, while this is written
+            beside `keepContext` because it is how the deck wants to be taught.
+            A deck that will ask twelve sentences and offers ninety to read
+            through is offering seventy-eight it will not ask. Worded apart from
+            the practice button above it because the two silences refuse
+            different things — a run there, a list here. */}
         <button
           className="btn btn--quiet"
           onClick={onQuestions}
-          disabled={questionCount === 0}
+          disabled={topic.questions === 0}
         >
-          All {questionCount} questions
+          {nothingToServe ? "Nothing quoted to read" : `All ${topic.questions} questions`}
         </button>
       </div>
 

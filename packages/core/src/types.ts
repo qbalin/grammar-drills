@@ -289,6 +289,26 @@ export interface PractiseRun {
 }
 
 /**
+ * Where a topic stands in one cycle through its tests.
+ *
+ * A topic's tests are handed over in an order rather than drawn one at a time,
+ * so that every one of them arrives before any of them arrives twice — and so
+ * that the quoted ones can all arrive before the written ones, which a draw
+ * cannot promise. The order is not written down: `seed` names it and it is
+ * derived again on every serve, which is what keeps this two numbers rather
+ * than a list as long as the topic. `at` is how far into it the student is.
+ *
+ * When `at` reaches the end, the cycle is worked out: the next seed follows
+ * from this one and the whole thing goes round again in a new order.
+ */
+export interface TestCycle {
+  /** Which shuffle this cycle is; the next cycle's follows from it. */
+  seed: number;
+  /** How many of this cycle's tests have been handed over. */
+  at: number;
+}
+
+/**
  * Why a round is on the table, which is the one thing the screen cannot work
  * out for itself once the round is under way.
  *
@@ -395,8 +415,24 @@ export interface Progress {
   topicMastery: Record<string, number>;
   /** vocab card id -> state. */
   vocabCards: Record<string, VocabCardState>;
-  /** sectionId -> ids of tests recently served (to rotate variety). */
+  /**
+   * sectionId -> ids of tests recently served, oldest first.
+   *
+   * Recency, and nothing more. It used to be the rotation's whole memory —
+   * "serve what is not in here" — and could not be, because it is capped and a
+   * topic can hold ninety tests. `testCycles` carries the rotation now, and
+   * what is left for this is the one question a cap is fine for: which of two
+   * tests was served longer ago, which is how a practice run breaks a tie.
+   */
   seenTests: Record<string, string[]>;
+  /**
+   * sectionId -> the cycle through its tests that is in flight.
+   *
+   * Written the first time a topic serves anything, and only for topics that
+   * can serve something: the walk steps over hundreds with nothing to offer,
+   * and none of them should leave a cycle behind.
+   */
+  testCycles: Record<string, TestCycle>;
   /**
    * sectionId -> every answer given on it, oldest first. Uncapped: a question
    * you meet once a year is exactly the one whose earlier answers are worth
@@ -438,10 +474,35 @@ export interface Progress {
    * preference would quietly stop the schedule from being a schedule. Turning
    * this on narrows what is met next, not what has already been met.
    *
+   * Not to be confused with `quotedFirst`, which is an order rather than a
+   * filter and therefore reaches every path, review included: nothing is
+   * withheld by putting the quotations at the front of a queue.
+   *
+   * What it also narrows is what the deck *shows*: a topic's bank of questions
+   * is listed and counted by the same rule, because a deck that will ask twelve
+   * sentences and offers ninety to read through is offering seventy-eight it
+   * will not ask. Nothing is destroyed by that — the answers already written on
+   * those questions stay on the trail, and come back with them.
+   *
    * Beside `keepContext` and for its reason: how you want to be taught is a
    * fact about your deck, not about the machine you happen to be holding.
    */
   quotedOnly?: boolean;
+  /**
+   * Whether a topic's quoted questions are all served before any written one.
+   *
+   * Absent means yes — `keepContext`'s shape rather than `quotedOnly`'s, and
+   * for the same reason it is the shape of a default that is worth having:
+   * quotations are the scarce half of both packs and the half a student can
+   * otherwise study for weeks without meeting. Only a student who turned this
+   * off carries the field, and what they get instead is one shuffle over the
+   * whole topic.
+   *
+   * An order, not a filter. Everything is still served, and a cycle that has
+   * handed over the last quotation goes on to the written questions rather than
+   * stopping — which is why, unlike `quotedOnly`, this reaches reviews too.
+   */
+  quotedFirst?: boolean;
   updatedAt: string;
 }
 
@@ -464,6 +525,7 @@ export function emptyProgress(citationsVersion = 0): Progress {
     topicMastery: {},
     vocabCards: {},
     seenTests: {},
+    testCycles: {},
     attempts: {},
     newTopicsIntroduced: 0,
     // A fresh deck has no cards, so it is already current by definition.
