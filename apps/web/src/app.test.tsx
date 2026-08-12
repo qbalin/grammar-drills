@@ -3125,12 +3125,13 @@ describe("the index under the quoted-only preference", () => {
       // Absent means on, so a deck that has never heard of this leads with the
       // quotations — which is the half a student can otherwise miss for weeks.
       expect(session.progress().quotedFirst).toBeUndefined();
-      expect(screen.getByLabelText(/Quoted sentences first/)).toHaveProperty(
-        "checked",
-        true,
-      );
+      expect(
+        screen.getByLabelText(/Serve attested classical quotes first/),
+      ).toHaveProperty("checked", true);
 
-      await user.click(screen.getByLabelText(/Quoted sentences first/));
+      await user.click(
+        screen.getByLabelText(/Serve attested classical quotes first/),
+      );
       expect(session.progress().quotedFirst).toBe(false);
     });
 
@@ -3141,10 +3142,9 @@ describe("the index under the quoted-only preference", () => {
 
       // Disabled rather than hidden: the setting has not gone away, it just has
       // no second half to put second.
-      expect(screen.getByLabelText(/Quoted sentences first/)).toHaveProperty(
-        "disabled",
-        true,
-      );
+      expect(
+        screen.getByLabelText(/Serve attested classical quotes first/),
+      ).toHaveProperty("disabled", true);
       expect(screen.getByText(/no order to choose/)).toBeDefined();
     });
   });

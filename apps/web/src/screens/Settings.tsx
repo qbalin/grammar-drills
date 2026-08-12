@@ -124,26 +124,22 @@ export function SettingsSheet({
         <span className="field__label">Keep the sentence a word was met in</span>
       </label>
       <p className="field__hint">
-        Holding a word saves the question you were on with it, and the card shows
-        it on the back — the line you met the word in is usually the reason it
-        stuck. Turning this off stops new ones; the sentences already saved stay
-        where they are.
+        When saving a Latin word for study by doing a long press on it, also
+        attach the sentence in which the word was met when reviewing the newly
+        created vocabulary card.
       </p>
 
       <label className="field field--check">
         <input type="checkbox" checked={quotedOnly} onChange={onQuotedOnly} />
-        <span className="field__label">Explore only quoted sentences</span>
+        <span className="field__label">
+          Only show attested classical quotes in <em>Explore</em> mode
+        </span>
       </label>
       <p className="field__hint">
-        Most questions here were written for this app; some quote a classical
-        author, and those say who beneath the answer. Turning this on keeps
-        exploring — the walk through the book, and practice on a topic — to the
-        quoted ones. Reviews are unaffected: a card that comes due comes back on
-        the question that built it. Topics with nothing quoted are stepped over
-        rather than marked learned, so they are still waiting if you turn this
-        off again — and the grammar index and the question lists count the
-        quoted questions alone while this is on, which is how the topics that
-        have some are found.
+        Tests questions and answers are AI generated as well as sourced from
+        ancient authors. Tick this box if you only want to see attested classical
+        quotes. Benefit: the latin is pure and attested. Drawback: some topics
+        may be very thin or lack questions altogether.
       </p>
 
       {/* Disabled under the preference above rather than hidden: with only
@@ -157,12 +153,12 @@ export function SettingsSheet({
           onChange={onQuotedFirst}
           disabled={quotedOnly}
         />
-        <span className="field__label">Quoted sentences first</span>
+        <span className="field__label">Serve attested classical quotes first</span>
       </label>
       <p className="field__hint">
         {quotedOnly
-          ? "Nothing but quoted sentences is being served, so there is no order to choose. Turn the setting above off to use this one."
-          : "Every quotation on a topic before any of the questions written for this app, then both shuffled and round again — the quoted ones are the scarce half, and a topic can otherwise be studied for a week without meeting one. Turning this off shuffles the whole topic together. Nothing is withheld either way."}
+          ? "Nothing but attested classical quotes is being served, so there is no order to choose. Turn the setting above off to use this one."
+          : "When ticked, first serve attested classical quotes, and then the AI generated ones, and repeat in a loop when all questions have been seen. When unticked, serve AI generated questions and attested classical quotes in random order."}
       </p>
 
       <div className="section-title">Your progress</div>
