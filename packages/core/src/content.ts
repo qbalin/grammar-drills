@@ -4,6 +4,7 @@ import { familyLabel, familyOf, type FamilyId } from "./families.js";
 import type { Family, Profile } from "./pack.js";
 import type {
   ContentData,
+  Crosswalk,
   GrammarSection,
   LemmaEntry,
   Question,
@@ -55,6 +56,30 @@ export class Content {
   /** The books this pack ships, primary first. */
   grammarIds(): string[] {
     return [...this.books.keys()];
+  }
+
+  /**
+   * Take on a further grammar that arrived after the bundle did.
+   *
+   * The same bargain the late-bound dictionary makes, and for the same reason:
+   * `Content` is built once and handed to `Session`, so a book a student may
+   * never open cannot be a condition of starting. The primary's grammar is 129
+   * KB and Lane's is 416 KB, and precaching a syllabus nobody has switched to
+   * would be most of the download spent on a page that never draws.
+   *
+   * Adding rather than replacing, so nothing already handed out goes stale.
+   * Silently ignores a book that is already here — the caller is a UI switch,
+   * and switching back is not an error.
+   */
+  addGrammar(id: string, sections: GrammarSection[], crosswalk: Crosswalk): void {
+    if (this.books.has(id)) return;
+    this.books.set(id, sections);
+    for (const s of sections) {
+      this.byId.set(s.id, s);
+      this.bookOf.set(s.id, id);
+    }
+    this.data.grammars = { ...(this.data.grammars ?? {}), [id]: sections };
+    this.data.crosswalk = { ...(this.data.crosswalk ?? {}), [id]: crosswalk };
   }
 
   /** The id of the book the questions were written against. */
