@@ -289,7 +289,19 @@ async function generateTopic(topic, want, alreadyWritten = [], startIndex = 0) {
 }
 
 // ---- main -----------------------------------------------------------------
-const grammar = JSON.parse(readFileSync(`${PACK}/content/grammar.json`, "utf8"));
+/*
+ * The syllabus, not the whole book.
+ *
+ * A pack ships every section of its source — sounds, word formation, prosody —
+ * because what a student cannot reach they can never read. Those pages are
+ * marked `readingOnly` and are exactly the ones no English->Latin translation
+ * can be written for, which is why they were marked. Without this filter a
+ * `--fill` run would queue a hundred and eighty of them and write exercises on
+ * the dactylic hexameter.
+ */
+const grammar = JSON.parse(
+  readFileSync(`${PACK}/content/grammar.json`, "utf8"),
+).filter((t) => !t.readingOnly);
 mkdirSync(OUT, { recursive: true });
 
 /** The tests already on disk for a topic, or [] if it has none. */

@@ -86,24 +86,48 @@ function familyEmpty(f: FamilyProgress): boolean {
   return f.topics.length > 0 && f.topics.every(isEmpty);
 }
 
+/**
+ * A family the book sets no exercise anywhere in — Bennett's prosody, Lane's
+ * sound and word formation. Its bar can never fill, so it does not draw one.
+ */
+function familyReadingOnly(f: FamilyProgress): boolean {
+  return f.topics.length > 0 && f.topics.every((t) => t.readingOnly);
+}
+
 /** Which silence a family's heading is reporting, in the words the rows use. */
-function familySilence(quotedOnly: boolean): string {
+function familySilence(f: FamilyProgress, quotedOnly: boolean): string {
+  if (familyReadingOnly(f)) return "reading only";
   return quotedOnly ? "nothing quoted" : "no questions";
 }
 
 function topicState(t: TopicProgress, quotedOnly: boolean): string {
   return [
-    masteryLabel(t),
+    // A page with no exercise on it has no mastery to be at the start of, and
+    // "not started" over a page of prosody reads as a reproach for not having
+    // done something there is nothing to do.
+    t.readingOnly ? "" : masteryLabel(t),
     // A topic is not finished when its mastery is: four questions do not sweep
     // a bank of twenty-odd, and this is where that shows.
     t.questions > 0 ? `${t.answered}/${t.questions} questions answered` : "",
     t.due ? "due now" : "",
     t.frontier ? "study resumes here" : "",
-    !t.hasTests
-      ? "no tests written yet"
-      : quotedOnly && t.questions === 0
-        ? "nothing quoted here yet"
-        : "",
+    /*
+     * Three ways a topic can have nothing to serve, and they are three
+     * different things to say.
+     *
+     * `readingOnly` is not an absence at all — the book has no exercise on this
+     * page and never will, so there is nothing here anybody should go and
+     * write. The other two are: one is a gap in the pack, the other is the
+     * student's own preference, and turning the preference off brings the
+     * second back while nothing brings the first.
+     */
+    t.readingOnly
+      ? "reading only"
+      : !t.hasTests
+        ? "no tests written yet"
+        : quotedOnly && t.questions === 0
+          ? "nothing quoted here yet"
+          : "",
   ]
     .filter(Boolean)
     .join(" · ");
@@ -182,7 +206,19 @@ export function MapSheet({
     currentFamily ?? firstStarted ?? families[0]?.id ?? null,
   );
   // Counted, not quoted: a hardcoded 135 would go stale the day a topic moves.
-  const total = families.reduce((n, f) => n + f.topics.length, 0);
+  //
+  // The topics the ring is a proportion *of*, which is not every topic in the
+  // book: a page the book sets no exercise on is not something to be part-way
+  // through, and `overallPercent` leaves it out. Counting it here would put a
+  // denominator on screen that the number above it was never divided by.
+  const total = families.reduce(
+    (n, f) => n + f.topics.filter((t) => !t.readingOnly).length,
+    0,
+  );
+  const reading = families.reduce(
+    (n, f) => n + f.topics.filter((t) => t.readingOnly).length,
+    0,
+  );
 
   return (
     <Sheet title="Grammar index" onClose={onClose}>
@@ -210,7 +246,13 @@ export function MapSheet({
       )}
       <div className="centered" style={{ padding: "0 0 1.2rem" }}>
         <Ring percent={overall} />
-        <p>mastered across all {total} topics</p>
+        <p>
+          mastered across all {total} topics
+          {/* Said rather than left to be discovered by scrolling: the index is
+              longer than the syllabus, and a reader who counts the rows should
+              not have to wonder why the two numbers differ. */}
+          {reading > 0 && `, and ${reading} more to read`}
+        </p>
         {/* Said once, at the top, rather than on every row: the rows are
             counting something narrower than they usually do, and a student who
             set the preference days ago is owed the reason their banks shrank. */}
@@ -226,6 +268,15 @@ export function MapSheet({
         // it is nine-ninths of a wasted expansion. Greyed but still an
         // accordion: opening it is how you see *why* it is empty.
         const empty = familyEmpty(f);
+        // Nothing here is studied, so there is no proportion of it to be at.
+        // "0% mastered" over the prosody of a book that sets no exercise in it
+        // is a bar reporting a failure that never happened.
+        const reading = familyReadingOnly(f);
+        // Split the same way the ring above is, and for the same reason: the
+        // percentage is over what can be studied, so a count beside it that
+        // includes the reading pages is a denominator the number never used.
+        const taught = f.topics.filter((t) => !t.readingOnly).length;
+        const toRead = f.topics.length - taught;
         return (
           <div className="family" key={f.id}>
             <button
@@ -241,13 +292,17 @@ export function MapSheet({
                     they are, and a heading greyed in silence would be the one
                     thing on this sheet living in colour alone. */}
                 <span className="family__sub">
-                  {f.topics.length} topics · {Math.round(f.percent * 100)}% mastered
-                  {empty ? ` · ${familySilence(quotedOnly)}` : ""}
+                  {reading ? f.topics.length : taught} topics
+                  {reading ? "" : ` · ${Math.round(f.percent * 100)}% mastered`}
+                  {!reading && toRead > 0 ? ` · ${toRead} to read` : ""}
+                  {empty ? ` · ${familySilence(f, quotedOnly)}` : ""}
                 </span>
               </span>
-              <span className="family__meter">
-                <i style={{ width: `${Math.round(f.percent * 100)}%` }} />
-              </span>
+              {!reading && (
+                <span className="family__meter">
+                  <i style={{ width: `${Math.round(f.percent * 100)}%` }} />
+                </span>
+              )}
               <span className="row__chev">{open === f.id ? "▾" : "▸"}</span>
             </button>
             {open === f.id && (
@@ -362,11 +417,17 @@ export function TopicSheet({
       </p>
 
       <div className="actions">
-        <button className="btn" onClick={onRead}>
+        {/* Reading is the one thing every page of every book can do, which is
+            why this button is never the one that goes grey. On a page the book
+            sets no exercise on it is also the only thing, so it leads. */}
+        <button
+          className={`btn${topic.readingOnly ? " btn--primary" : ""}`}
+          onClick={onRead}
+        >
           Read § {topic.ref}
         </button>
         <button
-          className="btn btn--primary"
+          className={`btn${topic.readingOnly ? "" : " btn--primary"}`}
           onClick={onStudyFrom}
           disabled={!topic.hasTests}
         >
@@ -381,11 +442,13 @@ export function TopicSheet({
           onClick={onDrill}
           disabled={!topic.hasTests || nothingToServe}
         >
-          {nothingToServe
-            ? "Nothing quoted here"
-            : left > 0
-              ? `Practise these ${left}`
-              : `Practise all ${topic.questions}`}
+          {topic.readingOnly
+            ? "No exercise here"
+            : nothingToServe
+              ? "Nothing quoted here"
+              : left > 0
+                ? `Practise these ${left}`
+                : `Practise all ${topic.questions}`}
         </button>
         <button className="btn" onClick={onBookOrder}>
           Book order

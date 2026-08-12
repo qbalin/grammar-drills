@@ -2752,6 +2752,402 @@
   "2745"
  ],
  "assigned": {
+  "1": "ln-0001-latin-grammar",
+  "2": "ln-0002-parts-of-speech",
+  "3": "ln-0002-parts-of-speech",
+  "4": "ln-0002-parts-of-speech",
+  "5": "ln-0002-parts-of-speech",
+  "6": "ln-0002-parts-of-speech",
+  "7": "ln-0002-parts-of-speech",
+  "8": "ln-0002-parts-of-speech",
+  "9": "ln-0002-parts-of-speech",
+  "10": "ln-0002-parts-of-speech",
+  "11": "ln-0002-parts-of-speech",
+  "12": "ln-0002-parts-of-speech",
+  "13": "ln-0002-parts-of-speech",
+  "14": "ln-0002-parts-of-speech",
+  "15": "ln-0002-parts-of-speech",
+  "16": "ln-0016-alphabet",
+  "17": "ln-0016-alphabet",
+  "18": "ln-0016-alphabet",
+  "19": "ln-0016-alphabet",
+  "20": "ln-0016-alphabet",
+  "21": "ln-0016-alphabet",
+  "22": "ln-0016-alphabet",
+  "23": "ln-0016-alphabet",
+  "24": "ln-0016-alphabet",
+  "25": "ln-0016-alphabet",
+  "26": "ln-0016-alphabet",
+  "27": "ln-0016-alphabet",
+  "28": "ln-0016-alphabet",
+  "29": "ln-0016-alphabet",
+  "30": "ln-0016-alphabet",
+  "31": "ln-0031-pronunciation",
+  "32": "ln-0032-vowels",
+  "33": "ln-0032-vowels",
+  "34": "ln-0032-vowels",
+  "35": "ln-0035-short-vowels",
+  "36": "ln-0036-long-vowels",
+  "37": "ln-0037-pronunciation-of-vowels",
+  "38": "ln-0037-pronunciation-of-vowels",
+  "39": "ln-0037-pronunciation-of-vowels",
+  "40": "ln-0037-pronunciation-of-vowels",
+  "41": "ln-0037-pronunciation-of-vowels",
+  "42": "ln-0037-pronunciation-of-vowels",
+  "43": "ln-0043-classification-of-vowels",
+  "44": "ln-0043-classification-of-vowels",
+  "45": "ln-0043-classification-of-vowels",
+  "46": "ln-0043-classification-of-vowels",
+  "47": "ln-0047-diphthongs",
+  "48": "ln-0047-diphthongs",
+  "49": "ln-0047-diphthongs",
+  "50": "ln-0047-diphthongs",
+  "51": "ln-0051-consonants",
+  "52": "ln-0051-consonants",
+  "53": "ln-0053-pronunciation-of-consonants",
+  "54": "ln-0053-pronunciation-of-consonants",
+  "55": "ln-0053-pronunciation-of-consonants",
+  "56": "ln-0053-pronunciation-of-consonants",
+  "57": "ln-0053-pronunciation-of-consonants",
+  "58": "ln-0053-pronunciation-of-consonants",
+  "59": "ln-0053-pronunciation-of-consonants",
+  "60": "ln-0053-pronunciation-of-consonants",
+  "61": "ln-0053-pronunciation-of-consonants",
+  "62": "ln-0053-pronunciation-of-consonants",
+  "63": "ln-0053-pronunciation-of-consonants",
+  "64": "ln-0053-pronunciation-of-consonants",
+  "65": "ln-0053-pronunciation-of-consonants",
+  "66": "ln-0053-pronunciation-of-consonants",
+  "67": "ln-0053-pronunciation-of-consonants",
+  "68": "ln-0053-pronunciation-of-consonants",
+  "69": "ln-0053-pronunciation-of-consonants",
+  "70": "ln-0053-pronunciation-of-consonants",
+  "71": "ln-0053-pronunciation-of-consonants",
+  "72": "ln-0053-pronunciation-of-consonants",
+  "73": "ln-0073-classification-of-consonants",
+  "74": "ln-0073-classification-of-consonants",
+  "75": "ln-0073-classification-of-consonants",
+  "76": "ln-0073-classification-of-consonants",
+  "77": "ln-0073-classification-of-consonants",
+  "78": "ln-0073-classification-of-consonants",
+  "79": "ln-0073-classification-of-consonants",
+  "80": "ln-0073-classification-of-consonants",
+  "81": "ln-0073-classification-of-consonants",
+  "82": "ln-0082-syllabic-and-unsyllabic-function",
+  "83": "ln-0082-syllabic-and-unsyllabic-function",
+  "84": "ln-0084-accent",
+  "85": "ln-0084-accent",
+  "86": "ln-0086-the-classical-accent",
+  "87": "ln-0086-the-classical-accent",
+  "88": "ln-0086-the-classical-accent",
+  "89": "ln-0089-earlier-recessive-accent",
+  "90": "ln-0089-earlier-recessive-accent",
+  "91": "ln-0089-earlier-recessive-accent",
+  "92": "ln-0092-proclitics-and-enclitics",
+  "93": "ln-0092-proclitics-and-enclitics",
+  "94": "ln-0092-proclitics-and-enclitics",
+  "95": "ln-0095-change-of-diphthongs-in-accented",
+  "96": "ln-0095-change-of-diphthongs-in-accented",
+  "97": "ln-0095-change-of-diphthongs-in-accented",
+  "98": "ln-0095-change-of-diphthongs-in-accented",
+  "99": "ln-0095-change-of-diphthongs-in-accented",
+  "100": "ln-0095-change-of-diphthongs-in-accented",
+  "101": "ln-0095-change-of-diphthongs-in-accented",
+  "102": "ln-0102-weakening-in-unaccented-syllables",
+  "103": "ln-0103-weakening-of-simple-vowels-in-medial",
+  "104": "ln-0103-weakening-of-simple-vowels-in-medial",
+  "105": "ln-0103-weakening-of-simple-vowels-in-medial",
+  "106": "ln-0103-weakening-of-simple-vowels-in-medial",
+  "107": "ln-0107-weakening-of-simple-vowels-in-final",
+  "108": "ln-0108-weakening-of-diphthongs-in-unaccented",
+  "109": "ln-0108-weakening-of-diphthongs-in-unaccented",
+  "110": "ln-0110-loss-in-unaccented-syllables",
+  "111": "ln-0110-loss-in-unaccented-syllables",
+  "112": "ln-0110-loss-in-unaccented-syllables",
+  "113": "ln-0110-loss-in-unaccented-syllables",
+  "114": "ln-0114-combination-of-adjacent-vowels",
+  "115": "ln-0114-combination-of-adjacent-vowels",
+  "116": "ln-0114-combination-of-adjacent-vowels",
+  "117": "ln-0114-combination-of-adjacent-vowels",
+  "118": "ln-0114-combination-of-adjacent-vowels",
+  "119": "ln-0114-combination-of-adjacent-vowels",
+  "120": "ln-0114-combination-of-adjacent-vowels",
+  "121": "ln-0121-lengthening",
+  "122": "ln-0121-lengthening",
+  "123": "ln-0121-lengthening",
+  "124": "ln-0124-shortening",
+  "125": "ln-0124-shortening",
+  "126": "ln-0124-shortening",
+  "127": "ln-0124-shortening",
+  "128": "ln-0124-shortening",
+  "129": "ln-0124-shortening",
+  "130": "ln-0124-shortening",
+  "131": "ln-0124-shortening",
+  "132": "ln-0124-shortening",
+  "133": "ln-0133-transfer-of-quantity",
+  "134": "ln-0134-variations-of-quantity",
+  "135": "ln-0135-quantitative-vowel-gradation",
+  "136": "ln-0136-qualitative-vowel-changes",
+  "137": "ln-0136-qualitative-vowel-changes",
+  "138": "ln-0136-qualitative-vowel-changes",
+  "139": "ln-0136-qualitative-vowel-changes",
+  "140": "ln-0136-qualitative-vowel-changes",
+  "141": "ln-0136-qualitative-vowel-changes",
+  "142": "ln-0136-qualitative-vowel-changes",
+  "143": "ln-0136-qualitative-vowel-changes",
+  "144": "ln-0144-vowel-change-assimilation",
+  "145": "ln-0145-qualitative-vowel-gradation",
+  "146": "ln-0146-consonant-change",
+  "147": "ln-0146-consonant-change",
+  "148": "ln-0146-consonant-change",
+  "149": "ln-0146-consonant-change",
+  "150": "ln-0146-consonant-change",
+  "151": "ln-0146-consonant-change",
+  "152": "ln-0146-consonant-change",
+  "153": "ln-0146-consonant-change",
+  "154": "ln-0146-consonant-change",
+  "155": "ln-0146-consonant-change",
+  "156": "ln-0146-consonant-change",
+  "157": "ln-0146-consonant-change",
+  "158": "ln-0146-consonant-change",
+  "159": "ln-0146-consonant-change",
+  "160": "ln-0146-consonant-change",
+  "161": "ln-0146-consonant-change",
+  "162": "ln-0162-changes-of-consonant-groups",
+  "163": "ln-0163-consonant-change-assimilation",
+  "164": "ln-0163-consonant-change-assimilation",
+  "165": "ln-0163-consonant-change-assimilation",
+  "166": "ln-0163-consonant-change-assimilation",
+  "167": "ln-0167-consonantal-glides",
+  "168": "ln-0168-disappearance",
+  "169": "ln-0168-disappearance",
+  "170": "ln-0168-disappearance",
+  "171": "ln-0168-disappearance",
+  "172": "ln-0172-development-of-an-anaptyctical-vowel",
+  "173": "ln-0173-dissimilation",
+  "174": "ln-0174-changes-within-compounds",
+  "175": "ln-0175-syllables",
+  "176": "ln-0175-syllables",
+  "177": "ln-0177-length-of-syllables",
+  "178": "ln-0177-length-of-syllables",
+  "179": "ln-0179-loss-of-syllables",
+  "180": "ln-0180-formation",
+  "181": "ln-0180-formation",
+  "182": "ln-0180-formation",
+  "183": "ln-0183-roots",
+  "184": "ln-0183-roots",
+  "185": "ln-0183-roots",
+  "186": "ln-0183-roots",
+  "187": "ln-0183-roots",
+  "188": "ln-0183-roots",
+  "189": "ln-0183-roots",
+  "190": "ln-0190-present-stems-as-roots",
+  "191": "ln-0190-present-stems-as-roots",
+  "192": "ln-0190-present-stems-as-roots",
+  "193": "ln-0190-present-stems-as-roots",
+  "194": "ln-0190-present-stems-as-roots",
+  "195": "ln-0195-stems",
+  "196": "ln-0195-stems",
+  "197": "ln-0195-stems",
+  "198": "ln-0198-primitives-and-denominatives",
+  "199": "ln-0199-formation-of-the-noun-without-a",
+  "200": "ln-0200-formation-of-the-noun-with-a-formative",
+  "201": "ln-0200-formation-of-the-noun-with-a-formative",
+  "202": "ln-0200-formation-of-the-noun-with-a-formative",
+  "203": "ln-0200-formation-of-the-noun-with-a-formative",
+  "204": "ln-0204-the-agent",
+  "205": "ln-0205-tor-n-tor",
+  "206": "ln-0205-tor-n-tor",
+  "207": "ln-0205-tor-n-tor",
+  "208": "ln-0205-tor-n-tor",
+  "209": "ln-0209-o-n-u-s-a-n-a-lo-n-lu-s-on-n-o",
+  "210": "ln-0209-o-n-u-s-a-n-a-lo-n-lu-s-on-n-o",
+  "211": "ln-0209-o-n-u-s-a-n-a-lo-n-lu-s-on-n-o",
+  "212": "ln-0212-the-action",
+  "213": "ln-0212-the-action",
+  "214": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "215": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "216": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "217": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "218": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "219": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "220": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "221": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "222": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "223": "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s",
+  "224": "ln-0224-min-103-n-men-din-gin-105-g-n-do-go",
+  "225": "ln-0224-min-103-n-men-din-gin-105-g-n-do-go",
+  "226": "ln-0224-min-103-n-men-din-gin-105-g-n-do-go",
+  "227": "ln-0227-i-on-n-i-o-ti-on-or-si-on-n-ti-o-or-si-o",
+  "228": "ln-0227-i-on-n-i-o-ti-on-or-si-on-n-ti-o-or-si-o",
+  "229": "ln-0229-e-la-n-e-la-te-la-n-te-la",
+  "230": "ln-0229-e-la-n-e-la-te-la-n-te-la",
+  "231": "ln-0231-ma-n-ma-na-n-na-tri-na-n-tri-na",
+  "232": "ln-0231-ma-n-ma-na-n-na-tri-na-n-tri-na",
+  "233": "ln-0231-ma-n-ma-na-n-na-tri-na-n-tri-na",
+  "234": "ln-0234-ta-or-sa-n-ta-or-sa-tu-or-su-n-tu-s-or",
+  "235": "ln-0234-ta-or-sa-n-ta-or-sa-tu-or-su-n-tu-s-or",
+  "236": "ln-0236-er-for-es-n-us-or-n-or",
+  "237": "ln-0236-er-for-es-n-us-or-n-or",
+  "238": "ln-0238-the-instrument-or-means",
+  "239": "ln-0238-the-instrument-or-means",
+  "240": "ln-0238-the-instrument-or-means",
+  "241": "ln-0238-the-instrument-or-means",
+  "242": "ln-0238-the-instrument-or-means",
+  "243": "ln-0238-the-instrument-or-means",
+  "244": "ln-0238-the-instrument-or-means",
+  "245": "ln-0238-the-instrument-or-means",
+  "246": "ln-0246-the-quality",
+  "247": "ln-0246-the-quality",
+  "248": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "249": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "250": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "251": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "252": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "253": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "254": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "255": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "256": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "257": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "258": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "259": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "260": "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies",
+  "261": "ln-0261-ta-n-ta-tat-n-ta-s-tut-n-tu-s-tu-din-n",
+  "262": "ln-0261-ta-n-ta-tat-n-ta-s-tut-n-tu-s-tu-din-n",
+  "263": "ln-0261-ta-n-ta-tat-n-ta-s-tut-n-tu-s-tu-din-n",
+  "264": "ln-0261-ta-n-ta-tat-n-ta-s-tut-n-tu-s-tu-din-n",
+  "265": "ln-0265-the-person-concerned",
+  "266": "ln-0266-the-place",
+  "267": "ln-0267-the-substantive-diminutives",
+  "268": "ln-0267-the-substantive-diminutives",
+  "269": "ln-0267-the-substantive-diminutives",
+  "270": "ln-0267-the-substantive-diminutives",
+  "271": "ln-0271-lo-n-m-lu-s-ne-lu-m-la-n-la",
+  "272": "ln-0271-lo-n-m-lu-s-ne-lu-m-la-n-la",
+  "273": "ln-0271-lo-n-m-lu-s-ne-lu-m-la-n-la",
+  "274": "ln-0271-lo-n-m-lu-s-ne-lu-m-la-n-la",
+  "275": "ln-0275-cu-lo-n-m-cu-lu-s-ne-cu-lu-m-cu-la-n-cu",
+  "276": "ln-0275-cu-lo-n-m-cu-lu-s-ne-cu-lu-m-cu-la-n-cu",
+  "277": "ln-0275-cu-lo-n-m-cu-lu-s-ne-cu-lu-m-cu-la-n-cu",
+  "278": "ln-0275-cu-lo-n-m-cu-lu-s-ne-cu-lu-m-cu-la-n-cu",
+  "279": "ln-0279-patronymics",
+  "280": "ln-0280-primitives",
+  "281": "ln-0281-the-adjective-with-an-active-meaning",
+  "282": "ln-0282-o-n-u-s-uo-n-uu-s",
+  "283": "ln-0282-o-n-u-s-uo-n-uu-s",
+  "284": "ln-0284-ci-n-x-lo-n-lu-s-do-n-du-s",
+  "285": "ln-0284-ci-n-x-lo-n-lu-s-do-n-du-s",
+  "286": "ln-0284-ci-n-x-lo-n-lu-s-do-n-du-s",
+  "287": "ln-0284-ci-n-x-lo-n-lu-s-do-n-du-s",
+  "288": "ln-0284-ci-n-x-lo-n-lu-s-do-n-du-s",
+  "289": "ln-0284-ci-n-x-lo-n-lu-s-do-n-du-s",
+  "290": "ln-0284-ci-n-x-lo-n-lu-s-do-n-du-s",
+  "291": "ln-0291-the-adjective-with-a-passive-meaning",
+  "292": "ln-0292-li-n-li-s-ti-li-bili-n-ti-li-s-bili-s",
+  "293": "ln-0292-li-n-li-s-ti-li-bili-n-ti-li-s-bili-s",
+  "294": "ln-0292-li-n-li-s-ti-li-bili-n-ti-li-s-bili-s",
+  "295": "ln-0292-li-n-li-s-ti-li-bili-n-ti-li-s-bili-s",
+  "296": "ln-0296-no-n-nu-s-mino-n-minu-s",
+  "297": "ln-0296-no-n-nu-s-mino-n-minu-s",
+  "298": "ln-0298-the-adjective-denominatives",
+  "299": "ln-0299-material-or-resemblance",
+  "300": "ln-0299-material-or-resemblance",
+  "301": "ln-0299-material-or-resemblance",
+  "302": "ln-0302-appurtenance",
+  "303": "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s",
+  "304": "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s",
+  "305": "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s",
+  "306": "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s",
+  "307": "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s",
+  "308": "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s",
+  "309": "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s",
+  "310": "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s",
+  "311": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "312": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "313": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "314": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "315": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "316": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "317": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "318": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "319": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "320": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "321": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "322": "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s",
+  "323": "ln-0323-bri-cri-tri-n-ber-or-bri-s-c",
+  "324": "ln-0323-bri-cri-tri-n-ber-or-bri-s-c",
+  "325": "ln-0323-bri-cri-tri-n-ber-or-bri-s-c",
+  "326": "ln-0326-co-n-cu-s-ti-si-n-s-si-s",
+  "327": "ln-0326-co-n-cu-s-ti-si-n-s-si-s",
+  "328": "ln-0326-co-n-cu-s-ti-si-n-s-si-s",
+  "329": "ln-0326-co-n-cu-s-ti-si-n-s-si-s",
+  "330": "ln-0326-co-n-cu-s-ti-si-n-s-si-s",
+  "331": "ln-0331-supply",
+  "332": "ln-0332-to-n-tu-s-len-to-n-len-tu-s",
+  "333": "ln-0332-to-n-tu-s-len-to-n-len-tu-s",
+  "334": "ln-0332-to-n-tu-s-len-to-n-len-tu-s",
+  "335": "ln-0332-to-n-tu-s-len-to-n-len-tu-s",
+  "336": "ln-0336-oso-n-osu-s",
+  "337": "ln-0336-oso-n-osu-s",
+  "338": "ln-0336-oso-n-osu-s",
+  "339": "ln-0339-the-adjective-diminutives",
+  "340": "ln-0339-the-adjective-diminutives",
+  "341": "ln-0339-the-adjective-diminutives",
+  "342": "ln-0342-comparatives-and-superlatives",
+  "343": "ln-0343-comparative-ior-superlative-issimus",
+  "344": "ln-0343-comparative-ior-superlative-issimus",
+  "345": "ln-0345-superlative-limus",
+  "346": "ln-0346-the-comparative-suffix",
+  "347": "ln-0346-the-comparative-suffix",
+  "348": "ln-0346-the-comparative-suffix",
+  "349": "ln-0349-the-superlative-suffix",
+  "350": "ln-0349-the-superlative-suffix",
+  "351": "ln-0349-the-superlative-suffix",
+  "352": "ln-0349-the-superlative-suffix",
+  "353": "ln-0353-peculiarities-of-comparison",
+  "354": "ln-0353-peculiarities-of-comparison",
+  "355": "ln-0353-peculiarities-of-comparison",
+  "356": "ln-0353-peculiarities-of-comparison",
+  "357": "ln-0353-peculiarities-of-comparison",
+  "358": "ln-0353-peculiarities-of-comparison",
+  "359": "ln-0353-peculiarities-of-comparison",
+  "360": "ln-0353-peculiarities-of-comparison",
+  "361": "ln-0361-comparative-and-superlative-adverbs",
+  "362": "ln-0361-comparative-and-superlative-adverbs",
+  "363": "ln-0361-comparative-and-superlative-adverbs",
+  "364": "ln-0361-comparative-and-superlative-adverbs",
+  "365": "ln-0365-formation-of-denominative-verbs",
+  "366": "ln-0365-formation-of-denominative-verbs",
+  "367": "ln-0365-formation-of-denominative-verbs",
+  "368": "ln-0365-formation-of-denominative-verbs",
+  "369": "ln-0365-formation-of-denominative-verbs",
+  "370": "ln-0365-formation-of-denominative-verbs",
+  "371": "ln-0365-formation-of-denominative-verbs",
+  "372": "ln-0365-formation-of-denominative-verbs",
+  "373": "ln-0365-formation-of-denominative-verbs",
+  "374": "ln-0365-formation-of-denominative-verbs",
+  "375": "ln-0365-formation-of-denominative-verbs",
+  "376": "ln-0376-composition",
+  "377": "ln-0376-composition",
+  "378": "ln-0376-composition",
+  "379": "ln-0379-form-of-compounds",
+  "380": "ln-0379-form-of-compounds",
+  "381": "ln-0379-form-of-compounds",
+  "382": "ln-0382-meaning-of-compounds",
+  "383": "ln-0382-meaning-of-compounds",
+  "384": "ln-0382-meaning-of-compounds",
+  "385": "ln-0382-meaning-of-compounds",
+  "386": "ln-0386-composition-of-nouns-apparent-compounds",
+  "387": "ln-0386-composition-of-nouns-apparent-compounds",
+  "388": "ln-0386-composition-of-nouns-apparent-compounds",
+  "389": "ln-0386-composition-of-nouns-apparent-compounds",
+  "390": "ln-0386-composition-of-nouns-apparent-compounds",
+  "391": "ln-0391-real-compounds",
+  "392": "ln-0391-real-compounds",
+  "393": "ln-0393-composition-of-verbs-apparent-compounds",
+  "394": "ln-0393-composition-of-verbs-apparent-compounds",
+  "395": "ln-0393-composition-of-verbs-apparent-compounds",
+  "396": "ln-0393-composition-of-verbs-apparent-compounds",
   "397": "ln-0397-inflection",
   "398": "ln-0398-inflection-of-the-noun",
   "399": "ln-0399-inflection-of-the-noun-the-stem",
@@ -4782,2868 +5178,575 @@
   "2424": "ln-2424-expression-of-fractions",
   "2425": "ln-2424-expression-of-fractions",
   "2426": "ln-2424-expression-of-fractions",
-  "2427": "ln-2424-expression-of-fractions"
+  "2427": "ln-2424-expression-of-fractions",
+  "2428": "ln-2424-expression-of-fractions",
+  "2429": "ln-2429-rules-of-quantity-in-classical-latin",
+  "2430": "ln-2430-monosyllables",
+  "2431": "ln-2431-rules-of-quantity-exceptions",
+  "2432": "ln-2431-rules-of-quantity-exceptions",
+  "2433": "ln-2431-rules-of-quantity-exceptions",
+  "2434": "ln-2434-penults",
+  "2435": "ln-2435-prosody-exceptions",
+  "2436": "ln-2435-prosody-exceptions",
+  "2437": "ln-2437-ending-in-a-vowel",
+  "2438": "ln-2438-exceptions-in-a",
+  "2439": "ln-2438-exceptions-in-a",
+  "2440": "ln-2440-exceptions-in-e",
+  "2441": "ln-2440-exceptions-in-e",
+  "2442": "ln-2442-exceptions-in-o",
+  "2443": "ln-2442-exceptions-in-o",
+  "2444": "ln-2442-exceptions-in-o",
+  "2445": "ln-2445-exceptions-in-i",
+  "2446": "ln-2445-exceptions-in-i",
+  "2447": "ln-2447-ending-in-a-single-consonant-not-s",
+  "2448": "ln-2448-appendix-exceptions",
+  "2449": "ln-2448-appendix-exceptions",
+  "2450": "ln-2448-appendix-exceptions",
+  "2451": "ln-2451-ending-in-s",
+  "2452": "ln-2452-exceptions-in-is",
+  "2453": "ln-2452-exceptions-in-is",
+  "2454": "ln-2454-exceptions-in-us",
+  "2455": "ln-2454-exceptions-in-us",
+  "2456": "ln-2456-exceptions-in-es",
+  "2457": "ln-2457-exceptions-in-os",
+  "2458": "ln-2458-position",
+  "2459": "ln-2459-hidden-quantity",
+  "2460": "ln-2459-hidden-quantity",
+  "2461": "ln-2459-hidden-quantity",
+  "2462": "ln-2459-hidden-quantity",
+  "2463": "ln-2459-hidden-quantity",
+  "2464": "ln-2464-some-peculiarities-of-quantity-in-old",
+  "2465": "ln-2464-some-peculiarities-of-quantity-in-old",
+  "2466": "ln-2464-some-peculiarities-of-quantity-in-old",
+  "2467": "ln-2464-some-peculiarities-of-quantity-in-old",
+  "2468": "ln-2464-some-peculiarities-of-quantity-in-old",
+  "2469": "ln-2464-some-peculiarities-of-quantity-in-old",
+  "2470": "ln-2470-law-of-iambic-shortening",
+  "2471": "ln-2470-law-of-iambic-shortening",
+  "2472": "ln-2470-law-of-iambic-shortening",
+  "2473": "ln-2473-hiatus",
+  "2474": "ln-2473-hiatus",
+  "2475": "ln-2473-hiatus",
+  "2476": "ln-2473-hiatus",
+  "2477": "ln-2473-hiatus",
+  "2478": "ln-2473-hiatus",
+  "2479": "ln-2473-hiatus",
+  "2480": "ln-2473-hiatus",
+  "2481": "ln-2481-elision",
+  "2482": "ln-2481-elision",
+  "2483": "ln-2481-elision",
+  "2484": "ln-2481-elision",
+  "2485": "ln-2481-elision",
+  "2486": "ln-2481-elision",
+  "2487": "ln-2481-elision",
+  "2488": "ln-2481-elision",
+  "2489": "ln-2481-elision",
+  "2490": "ln-2481-elision",
+  "2491": "ln-2481-elision",
+  "2492": "ln-2481-elision",
+  "2493": "ln-2481-elision",
+  "2494": "ln-2481-elision",
+  "2495": "ln-2481-elision",
+  "2496": "ln-2481-elision",
+  "2497": "ln-2481-elision",
+  "2498": "ln-2481-elision",
+  "2499": "ln-2481-elision",
+  "2500": "ln-2481-elision",
+  "2501": "ln-2481-elision",
+  "2502": "ln-2481-elision",
+  "2503": "ln-2481-elision",
+  "2504": "ln-2481-elision",
+  "2505": "ln-2481-elision",
+  "2506": "ln-2481-elision",
+  "2507": "ln-2481-elision",
+  "2508": "ln-2481-elision",
+  "2509": "ln-2481-elision",
+  "2510": "ln-2481-elision",
+  "2511": "ln-2511-versification-by-herman-w-hayley-ph-d",
+  "2512": "ln-2511-versification-by-herman-w-hayley-ph-d",
+  "2513": "ln-2511-versification-by-herman-w-hayley-ph-d",
+  "2514": "ln-2514-quantity",
+  "2515": "ln-2514-quantity",
+  "2516": "ln-2514-quantity",
+  "2517": "ln-2514-quantity",
+  "2518": "ln-2514-quantity",
+  "2519": "ln-2519-feet",
+  "2520": "ln-2519-feet",
+  "2521": "ln-2521-kinds-of-feet",
+  "2522": "ln-2521-kinds-of-feet",
+  "2523": "ln-2523-cyclic-feet",
+  "2524": "ln-2524-irrational-syllables-and-feet",
+  "2525": "ln-2525-rhythms",
+  "2526": "ln-2525-rhythms",
+  "2527": "ln-2525-rhythms",
+  "2528": "ln-2525-rhythms",
+  "2529": "ln-2529-anacrusis",
+  "2530": "ln-2529-anacrusis",
+  "2531": "ln-2531-groups-of-feet",
+  "2532": "ln-2531-groups-of-feet",
+  "2533": "ln-2531-groups-of-feet",
+  "2534": "ln-2534-syllaba-anceps",
+  "2535": "ln-2534-syllaba-anceps",
+  "2536": "ln-2534-syllaba-anceps",
+  "2537": "ln-2537-catalexis-pause-syncope",
+  "2538": "ln-2537-catalexis-pause-syncope",
+  "2539": "ln-2537-catalexis-pause-syncope",
+  "2540": "ln-2537-catalexis-pause-syncope",
+  "2541": "ln-2537-catalexis-pause-syncope",
+  "2542": "ln-2542-caesura",
+  "2543": "ln-2542-caesura",
+  "2544": "ln-2542-caesura",
+  "2545": "ln-2545-strophe-system",
+  "2546": "ln-2545-strophe-system",
+  "2547": "ln-2545-strophe-system",
+  "2548": "ln-2545-strophe-system",
+  "2549": "ln-2549-numeri-italici",
+  "2550": "ln-2550-the-saturnian",
+  "2551": "ln-2550-the-saturnian",
+  "2552": "ln-2550-the-saturnian",
+  "2553": "ln-2550-the-saturnian",
+  "2554": "ln-2550-the-saturnian",
+  "2555": "ln-2555-dactylic-rhythms",
+  "2556": "ln-2556-the-dactylic-hexameter",
+  "2557": "ln-2556-the-dactylic-hexameter",
+  "2558": "ln-2556-the-dactylic-hexameter",
+  "2559": "ln-2556-the-dactylic-hexameter",
+  "2560": "ln-2556-the-dactylic-hexameter",
+  "2561": "ln-2556-the-dactylic-hexameter",
+  "2562": "ln-2556-the-dactylic-hexameter",
+  "2563": "ln-2563-notes-on-the-hexameter",
+  "2564": "ln-2563-notes-on-the-hexameter",
+  "2565": "ln-2563-notes-on-the-hexameter",
+  "2566": "ln-2563-notes-on-the-hexameter",
+  "2567": "ln-2563-notes-on-the-hexameter",
+  "2568": "ln-2563-notes-on-the-hexameter",
+  "2569": "ln-2563-notes-on-the-hexameter",
+  "2570": "ln-2570-the-dactylic-pentameter",
+  "2571": "ln-2570-the-dactylic-pentameter",
+  "2572": "ln-2570-the-dactylic-pentameter",
+  "2573": "ln-2570-the-dactylic-pentameter",
+  "2574": "ln-2570-the-dactylic-pentameter",
+  "2575": "ln-2570-the-dactylic-pentameter",
+  "2576": "ln-2570-the-dactylic-pentameter",
+  "2577": "ln-2577-the-dactylic-tetrameter-acatalectic-or",
+  "2578": "ln-2578-the-dactylic-tetrameter-catalectic-or",
+  "2579": "ln-2579-the-dactylic-trimeter-catalectic-or",
+  "2580": "ln-2579-the-dactylic-trimeter-catalectic-or",
+  "2581": "ln-2581-iambic-rhythms",
+  "2582": "ln-2581-iambic-rhythms",
+  "2583": "ln-2583-the-iambic-trimeter-or-senarius",
+  "2584": "ln-2583-the-iambic-trimeter-or-senarius",
+  "2585": "ln-2585-iambic-rhythms-early-period",
+  "2586": "ln-2585-iambic-rhythms-early-period",
+  "2587": "ln-2585-iambic-rhythms-early-period",
+  "2588": "ln-2585-iambic-rhythms-early-period",
+  "2589": "ln-2585-iambic-rhythms-early-period",
+  "2590": "ln-2585-iambic-rhythms-early-period",
+  "2591": "ln-2585-iambic-rhythms-early-period",
+  "2592": "ln-2592-later-period",
+  "2593": "ln-2592-later-period",
+  "2594": "ln-2592-later-period",
+  "2595": "ln-2592-later-period",
+  "2596": "ln-2592-later-period",
+  "2597": "ln-2597-the-choliambus-or-scazon",
+  "2598": "ln-2597-the-choliambus-or-scazon",
+  "2599": "ln-2597-the-choliambus-or-scazon",
+  "2600": "ln-2597-the-choliambus-or-scazon",
+  "2601": "ln-2601-the-iambic-trimeter-catalectic",
+  "2602": "ln-2601-the-iambic-trimeter-catalectic",
+  "2603": "ln-2601-the-iambic-trimeter-catalectic",
+  "2604": "ln-2604-the-iambic-tetrameter-acatalectic-or",
+  "2605": "ln-2604-the-iambic-tetrameter-acatalectic-or",
+  "2606": "ln-2604-the-iambic-tetrameter-acatalectic-or",
+  "2607": "ln-2604-the-iambic-tetrameter-acatalectic-or",
+  "2608": "ln-2604-the-iambic-tetrameter-acatalectic-or",
+  "2609": "ln-2604-the-iambic-tetrameter-acatalectic-or",
+  "2610": "ln-2610-early-usage",
+  "2611": "ln-2610-early-usage",
+  "2612": "ln-2610-early-usage",
+  "2613": "ln-2610-early-usage",
+  "2614": "ln-2610-early-usage",
+  "2615": "ln-2615-iambic-rhythms-later-usage",
+  "2616": "ln-2615-iambic-rhythms-later-usage",
+  "2617": "ln-2617-iambic-dimeter-acatalectic-or",
+  "2618": "ln-2617-iambic-dimeter-acatalectic-or",
+  "2619": "ln-2617-iambic-dimeter-acatalectic-or",
+  "2620": "ln-2617-iambic-dimeter-acatalectic-or",
+  "2621": "ln-2621-the-iambic-dimeter-catalectic-or",
+  "2622": "ln-2621-the-iambic-dimeter-catalectic-or",
+  "2623": "ln-2621-the-iambic-dimeter-catalectic-or",
+  "2624": "ln-2624-other-iambic-verses",
+  "2625": "ln-2625-the-versus-reizianus",
+  "2626": "ln-2625-the-versus-reizianus",
+  "2627": "ln-2625-the-versus-reizianus",
+  "2628": "ln-2628-trochaic-rhythms",
+  "2629": "ln-2629-the-trochaic-tetrameter-catalectic-or",
+  "2630": "ln-2630-trochaic-rhythms-early-period",
+  "2631": "ln-2630-trochaic-rhythms-early-period",
+  "2632": "ln-2630-trochaic-rhythms-early-period",
+  "2633": "ln-2630-trochaic-rhythms-early-period",
+  "2634": "ln-2634-trochaic-rhythms-later-usage",
+  "2635": "ln-2634-trochaic-rhythms-later-usage",
+  "2636": "ln-2636-the-trochaic-tetrameter-acatalectic-or",
+  "2637": "ln-2636-the-trochaic-tetrameter-acatalectic-or",
+  "2638": "ln-2636-the-trochaic-tetrameter-acatalectic-or",
+  "2639": "ln-2639-the-trochaic-tetrameter-claudus-or",
+  "2640": "ln-2639-the-trochaic-tetrameter-claudus-or",
+  "2641": "ln-2639-the-trochaic-tetrameter-claudus-or",
+  "2642": "ln-2642-the-nine-syllabled-alcaic",
+  "2643": "ln-2643-the-trochaic-dimeter-acatalectic-or",
+  "2644": "ln-2644-the-trochaic-dimeter-catalectic-or",
+  "2645": "ln-2644-the-trochaic-dimeter-catalectic-or",
+  "2646": "ln-2644-the-trochaic-dimeter-catalectic-or",
+  "2647": "ln-2647-the-trochaic-tripody-acatalectic",
+  "2648": "ln-2648-the-trochaic-tripody-catalectic",
+  "2649": "ln-2649-other-trochaic-verses",
+  "2650": "ln-2650-logaoedic-rhythms",
+  "2651": "ln-2650-logaoedic-rhythms",
+  "2652": "ln-2650-logaoedic-rhythms",
+  "2653": "ln-2650-logaoedic-rhythms",
+  "2654": "ln-2650-logaoedic-rhythms",
+  "2655": "ln-2655-the-adonic",
+  "2656": "ln-2655-the-adonic",
+  "2657": "ln-2655-the-adonic",
+  "2658": "ln-2658-the-aristophanic",
+  "2659": "ln-2659-the-pherecratean-or-pherecratic",
+  "2660": "ln-2660-the-glyconic",
+  "2661": "ln-2660-the-glyconic",
+  "2662": "ln-2660-the-glyconic",
+  "2663": "ln-2663-the-lesser-or-decasyllabic-alcaic",
+  "2664": "ln-2664-the-phalaecean-or-hendecasyllable",
+  "2665": "ln-2664-the-phalaecean-or-hendecasyllable",
+  "2666": "ln-2666-the-lesser-sapphic",
+  "2667": "ln-2667-the-greater-or-hendecasyllabic-alcaic",
+  "2668": "ln-2667-the-greater-or-hendecasyllabic-alcaic",
+  "2669": "ln-2669-the-lesser-asclepiadean",
+  "2670": "ln-2670-the-greater-asclepiadean",
+  "2671": "ln-2671-the-greater-sapphic",
+  "2672": "ln-2671-the-greater-sapphic",
+  "2673": "ln-2671-the-greater-sapphic",
+  "2674": "ln-2674-the-priapean",
+  "2675": "ln-2675-dactylo-trochaic-rhythms",
+  "2676": "ln-2675-dactylo-trochaic-rhythms",
+  "2677": "ln-2677-the-greater-archilochian",
+  "2678": "ln-2678-the-iambelegus",
+  "2679": "ln-2678-the-iambelegus",
+  "2680": "ln-2680-the-elegiambus",
+  "2681": "ln-2680-the-elegiambus",
+  "2682": "ln-2682-anapaestic-rhythms",
+  "2683": "ln-2682-anapaestic-rhythms",
+  "2684": "ln-2684-the-anapaestic-tetrameter-acatalectic",
+  "2685": "ln-2684-the-anapaestic-tetrameter-acatalectic",
+  "2686": "ln-2686-the-anapaestic-tetrameter-catalectic-or",
+  "2687": "ln-2687-the-anapaestic-dimeter-acatalectic-or",
+  "2688": "ln-2688-the-anapaestic-dimeter-catalectic-or",
+  "2689": "ln-2688-the-anapaestic-dimeter-catalectic-or",
+  "2690": "ln-2688-the-anapaestic-dimeter-catalectic-or",
+  "2691": "ln-2691-cretic-rhythms",
+  "2692": "ln-2691-cretic-rhythms",
+  "2693": "ln-2691-cretic-rhythms",
+  "2694": "ln-2694-the-cretic-tetrameter-acatalectic",
+  "2695": "ln-2694-the-cretic-tetrameter-acatalectic",
+  "2696": "ln-2696-the-cretic-tetrameter-catalectic",
+  "2697": "ln-2697-other-cretic-verses",
+  "2698": "ln-2698-bacchiac-rhythms",
+  "2699": "ln-2698-bacchiac-rhythms",
+  "2700": "ln-2698-bacchiac-rhythms",
+  "2701": "ln-2701-the-bacchiac-tetrameter-acatalectic",
+  "2702": "ln-2701-the-bacchiac-tetrameter-acatalectic",
+  "2703": "ln-2701-the-bacchiac-tetrameter-acatalectic",
+  "2704": "ln-2704-other-bacchiac-verses",
+  "2705": "ln-2704-other-bacchiac-verses",
+  "2706": "ln-2704-other-bacchiac-verses",
+  "2707": "ln-2707-choriambic-rhythms",
+  "2708": "ln-2708-ionic-rhythms",
+  "2709": "ln-2708-ionic-rhythms",
+  "2710": "ln-2708-ionic-rhythms",
+  "2711": "ln-2708-ionic-rhythms",
+  "2712": "ln-2712-the-ionic-a-maiore-tetrameter",
+  "2713": "ln-2712-the-ionic-a-maiore-tetrameter",
+  "2714": "ln-2714-the-ionic-a-minore-tetrameter",
+  "2715": "ln-2714-the-ionic-a-minore-tetrameter",
+  "2716": "ln-2714-the-ionic-a-minore-tetrameter",
+  "2717": "ln-2714-the-ionic-a-minore-tetrameter",
+  "2718": "ln-2718-lyric-metres-of-horace",
+  "2719": "ln-2718-lyric-metres-of-horace",
+  "2720": "ln-2718-lyric-metres-of-horace",
+  "2721": "ln-2718-lyric-metres-of-horace",
+  "2722": "ln-2718-lyric-metres-of-horace",
+  "2723": "ln-2718-lyric-metres-of-horace",
+  "2724": "ln-2718-lyric-metres-of-horace",
+  "2725": "ln-2718-lyric-metres-of-horace",
+  "2726": "ln-2718-lyric-metres-of-horace",
+  "2727": "ln-2718-lyric-metres-of-horace",
+  "2728": "ln-2718-lyric-metres-of-horace",
+  "2729": "ln-2718-lyric-metres-of-horace",
+  "2730": "ln-2718-lyric-metres-of-horace",
+  "2731": "ln-2718-lyric-metres-of-horace",
+  "2732": "ln-2718-lyric-metres-of-horace",
+  "2733": "ln-2718-lyric-metres-of-horace",
+  "2734": "ln-2718-lyric-metres-of-horace",
+  "2735": "ln-2718-lyric-metres-of-horace",
+  "2736": "ln-2718-lyric-metres-of-horace",
+  "2737": "ln-2718-lyric-metres-of-horace",
+  "2738": "ln-2738-lyric-strophes-of-catullus",
+  "2739": "ln-2738-lyric-strophes-of-catullus"
+ },
+ "reading": {
+  "ln-0001-latin-grammar": "part-not-teachable",
+  "ln-0002-parts-of-speech": "part-not-teachable",
+  "ln-0016-alphabet": "part-not-teachable",
+  "ln-0031-pronunciation": "part-not-teachable",
+  "ln-0032-vowels": "part-not-teachable",
+  "ln-0035-short-vowels": "part-not-teachable",
+  "ln-0036-long-vowels": "part-not-teachable",
+  "ln-0037-pronunciation-of-vowels": "part-not-teachable",
+  "ln-0043-classification-of-vowels": "part-not-teachable",
+  "ln-0047-diphthongs": "part-not-teachable",
+  "ln-0051-consonants": "part-not-teachable",
+  "ln-0053-pronunciation-of-consonants": "part-not-teachable",
+  "ln-0073-classification-of-consonants": "part-not-teachable",
+  "ln-0082-syllabic-and-unsyllabic-function": "part-not-teachable",
+  "ln-0084-accent": "part-not-teachable",
+  "ln-0086-the-classical-accent": "part-not-teachable",
+  "ln-0089-earlier-recessive-accent": "part-not-teachable",
+  "ln-0092-proclitics-and-enclitics": "part-not-teachable",
+  "ln-0095-change-of-diphthongs-in-accented": "part-not-teachable",
+  "ln-0102-weakening-in-unaccented-syllables": "part-not-teachable",
+  "ln-0103-weakening-of-simple-vowels-in-medial": "part-not-teachable",
+  "ln-0107-weakening-of-simple-vowels-in-final": "part-not-teachable",
+  "ln-0108-weakening-of-diphthongs-in-unaccented": "part-not-teachable",
+  "ln-0110-loss-in-unaccented-syllables": "part-not-teachable",
+  "ln-0114-combination-of-adjacent-vowels": "part-not-teachable",
+  "ln-0121-lengthening": "part-not-teachable",
+  "ln-0124-shortening": "part-not-teachable",
+  "ln-0133-transfer-of-quantity": "part-not-teachable",
+  "ln-0134-variations-of-quantity": "part-not-teachable",
+  "ln-0135-quantitative-vowel-gradation": "part-not-teachable",
+  "ln-0136-qualitative-vowel-changes": "part-not-teachable",
+  "ln-0144-vowel-change-assimilation": "part-not-teachable",
+  "ln-0145-qualitative-vowel-gradation": "part-not-teachable",
+  "ln-0146-consonant-change": "part-not-teachable",
+  "ln-0162-changes-of-consonant-groups": "part-not-teachable",
+  "ln-0163-consonant-change-assimilation": "part-not-teachable",
+  "ln-0167-consonantal-glides": "part-not-teachable",
+  "ln-0168-disappearance": "part-not-teachable",
+  "ln-0172-development-of-an-anaptyctical-vowel": "part-not-teachable",
+  "ln-0173-dissimilation": "part-not-teachable",
+  "ln-0174-changes-within-compounds": "part-not-teachable",
+  "ln-0175-syllables": "part-not-teachable",
+  "ln-0177-length-of-syllables": "part-not-teachable",
+  "ln-0179-loss-of-syllables": "part-not-teachable",
+  "ln-0180-formation": "part-not-teachable",
+  "ln-0183-roots": "part-not-teachable",
+  "ln-0190-present-stems-as-roots": "part-not-teachable",
+  "ln-0195-stems": "part-not-teachable",
+  "ln-0198-primitives-and-denominatives": "part-not-teachable",
+  "ln-0199-formation-of-the-noun-without-a": "part-not-teachable",
+  "ln-0200-formation-of-the-noun-with-a-formative": "part-not-teachable",
+  "ln-0204-the-agent": "part-not-teachable",
+  "ln-0205-tor-n-tor": "part-not-teachable",
+  "ln-0209-o-n-u-s-a-n-a-lo-n-lu-s-on-n-o": "part-not-teachable",
+  "ln-0212-the-action": "part-not-teachable",
+  "ln-0214-a-n-a-io-n-iu-m-ia-n-ia-ie-n-ie-s": "part-not-teachable",
+  "ln-0224-min-103-n-men-din-gin-105-g-n-do-go": "part-not-teachable",
+  "ln-0227-i-on-n-i-o-ti-on-or-si-on-n-ti-o-or-si-o": "part-not-teachable",
+  "ln-0229-e-la-n-e-la-te-la-n-te-la": "part-not-teachable",
+  "ln-0231-ma-n-ma-na-n-na-tri-na-n-tri-na": "part-not-teachable",
+  "ln-0234-ta-or-sa-n-ta-or-sa-tu-or-su-n-tu-s-or": "part-not-teachable",
+  "ln-0236-er-for-es-n-us-or-n-or": "part-not-teachable",
+  "ln-0238-the-instrument-or-means": "part-not-teachable",
+  "ln-0246-the-quality": "part-not-teachable",
+  "ln-0248-io-n-iu-m-ia-n-ia-ie-n-ies": "part-not-teachable",
+  "ln-0261-ta-n-ta-tat-n-ta-s-tut-n-tu-s-tu-din-n": "part-not-teachable",
+  "ln-0265-the-person-concerned": "part-not-teachable",
+  "ln-0266-the-place": "part-not-teachable",
+  "ln-0267-the-substantive-diminutives": "part-not-teachable",
+  "ln-0271-lo-n-m-lu-s-ne-lu-m-la-n-la": "part-not-teachable",
+  "ln-0275-cu-lo-n-m-cu-lu-s-ne-cu-lu-m-cu-la-n-cu": "part-not-teachable",
+  "ln-0279-patronymics": "part-not-teachable",
+  "ln-0280-primitives": "part-not-teachable",
+  "ln-0281-the-adjective-with-an-active-meaning": "part-not-teachable",
+  "ln-0282-o-n-u-s-uo-n-uu-s": "part-not-teachable",
+  "ln-0284-ci-n-x-lo-n-lu-s-do-n-du-s": "part-not-teachable",
+  "ln-0291-the-adjective-with-a-passive-meaning": "part-not-teachable",
+  "ln-0292-li-n-li-s-ti-li-bili-n-ti-li-s-bili-s": "part-not-teachable",
+  "ln-0296-no-n-nu-s-mino-n-minu-s": "part-not-teachable",
+  "ln-0298-the-adjective-denominatives": "part-not-teachable",
+  "ln-0299-material-or-resemblance": "part-not-teachable",
+  "ln-0302-appurtenance": "part-not-teachable",
+  "ln-0303-o-n-u-s-io-n-iu-s-vo-n-vu-s": "part-not-teachable",
+  "ln-0311-timo-n-timu-s-li-n-li-s-no-n-nu-s": "part-not-teachable",
+  "ln-0323-bri-cri-tri-n-ber-or-bri-s-c": "part-not-teachable",
+  "ln-0326-co-n-cu-s-ti-si-n-s-si-s": "part-not-teachable",
+  "ln-0331-supply": "part-not-teachable",
+  "ln-0332-to-n-tu-s-len-to-n-len-tu-s": "part-not-teachable",
+  "ln-0336-oso-n-osu-s": "part-not-teachable",
+  "ln-0339-the-adjective-diminutives": "part-not-teachable",
+  "ln-0342-comparatives-and-superlatives": "part-not-teachable",
+  "ln-0343-comparative-ior-superlative-issimus": "part-not-teachable",
+  "ln-0345-superlative-limus": "part-not-teachable",
+  "ln-0346-the-comparative-suffix": "part-not-teachable",
+  "ln-0349-the-superlative-suffix": "part-not-teachable",
+  "ln-0353-peculiarities-of-comparison": "part-not-teachable",
+  "ln-0361-comparative-and-superlative-adverbs": "part-not-teachable",
+  "ln-0365-formation-of-denominative-verbs": "part-not-teachable",
+  "ln-0376-composition": "part-not-teachable",
+  "ln-0379-form-of-compounds": "part-not-teachable",
+  "ln-0382-meaning-of-compounds": "part-not-teachable",
+  "ln-0386-composition-of-nouns-apparent-compounds": "part-not-teachable",
+  "ln-0391-real-compounds": "part-not-teachable",
+  "ln-0393-composition-of-verbs-apparent-compounds": "part-not-teachable",
+  "ln-2429-rules-of-quantity-in-classical-latin": "part-not-teachable",
+  "ln-2430-monosyllables": "part-not-teachable",
+  "ln-2431-rules-of-quantity-exceptions": "part-not-teachable",
+  "ln-2434-penults": "part-not-teachable",
+  "ln-2435-prosody-exceptions": "part-not-teachable",
+  "ln-2437-ending-in-a-vowel": "part-not-teachable",
+  "ln-2438-exceptions-in-a": "part-not-teachable",
+  "ln-2440-exceptions-in-e": "part-not-teachable",
+  "ln-2442-exceptions-in-o": "part-not-teachable",
+  "ln-2445-exceptions-in-i": "part-not-teachable",
+  "ln-2447-ending-in-a-single-consonant-not-s": "part-not-teachable",
+  "ln-2448-appendix-exceptions": "part-not-teachable",
+  "ln-2451-ending-in-s": "part-not-teachable",
+  "ln-2452-exceptions-in-is": "part-not-teachable",
+  "ln-2454-exceptions-in-us": "part-not-teachable",
+  "ln-2456-exceptions-in-es": "part-not-teachable",
+  "ln-2457-exceptions-in-os": "part-not-teachable",
+  "ln-2458-position": "part-not-teachable",
+  "ln-2459-hidden-quantity": "part-not-teachable",
+  "ln-2464-some-peculiarities-of-quantity-in-old": "part-not-teachable",
+  "ln-2470-law-of-iambic-shortening": "part-not-teachable",
+  "ln-2473-hiatus": "part-not-teachable",
+  "ln-2481-elision": "part-not-teachable",
+  "ln-2511-versification-by-herman-w-hayley-ph-d": "part-not-teachable",
+  "ln-2514-quantity": "part-not-teachable",
+  "ln-2519-feet": "part-not-teachable",
+  "ln-2521-kinds-of-feet": "part-not-teachable",
+  "ln-2523-cyclic-feet": "part-not-teachable",
+  "ln-2524-irrational-syllables-and-feet": "part-not-teachable",
+  "ln-2525-rhythms": "part-not-teachable",
+  "ln-2529-anacrusis": "part-not-teachable",
+  "ln-2531-groups-of-feet": "part-not-teachable",
+  "ln-2534-syllaba-anceps": "part-not-teachable",
+  "ln-2537-catalexis-pause-syncope": "part-not-teachable",
+  "ln-2542-caesura": "part-not-teachable",
+  "ln-2545-strophe-system": "part-not-teachable",
+  "ln-2549-numeri-italici": "part-not-teachable",
+  "ln-2550-the-saturnian": "part-not-teachable",
+  "ln-2555-dactylic-rhythms": "part-not-teachable",
+  "ln-2556-the-dactylic-hexameter": "part-not-teachable",
+  "ln-2563-notes-on-the-hexameter": "part-not-teachable",
+  "ln-2570-the-dactylic-pentameter": "part-not-teachable",
+  "ln-2577-the-dactylic-tetrameter-acatalectic-or": "part-not-teachable",
+  "ln-2578-the-dactylic-tetrameter-catalectic-or": "part-not-teachable",
+  "ln-2579-the-dactylic-trimeter-catalectic-or": "part-not-teachable",
+  "ln-2581-iambic-rhythms": "part-not-teachable",
+  "ln-2583-the-iambic-trimeter-or-senarius": "part-not-teachable",
+  "ln-2585-iambic-rhythms-early-period": "part-not-teachable",
+  "ln-2592-later-period": "part-not-teachable",
+  "ln-2597-the-choliambus-or-scazon": "part-not-teachable",
+  "ln-2601-the-iambic-trimeter-catalectic": "part-not-teachable",
+  "ln-2604-the-iambic-tetrameter-acatalectic-or": "part-not-teachable",
+  "ln-2610-early-usage": "part-not-teachable",
+  "ln-2615-iambic-rhythms-later-usage": "part-not-teachable",
+  "ln-2617-iambic-dimeter-acatalectic-or": "part-not-teachable",
+  "ln-2621-the-iambic-dimeter-catalectic-or": "part-not-teachable",
+  "ln-2624-other-iambic-verses": "part-not-teachable",
+  "ln-2625-the-versus-reizianus": "part-not-teachable",
+  "ln-2628-trochaic-rhythms": "part-not-teachable",
+  "ln-2629-the-trochaic-tetrameter-catalectic-or": "part-not-teachable",
+  "ln-2630-trochaic-rhythms-early-period": "part-not-teachable",
+  "ln-2634-trochaic-rhythms-later-usage": "part-not-teachable",
+  "ln-2636-the-trochaic-tetrameter-acatalectic-or": "part-not-teachable",
+  "ln-2639-the-trochaic-tetrameter-claudus-or": "part-not-teachable",
+  "ln-2642-the-nine-syllabled-alcaic": "part-not-teachable",
+  "ln-2643-the-trochaic-dimeter-acatalectic-or": "part-not-teachable",
+  "ln-2644-the-trochaic-dimeter-catalectic-or": "part-not-teachable",
+  "ln-2647-the-trochaic-tripody-acatalectic": "part-not-teachable",
+  "ln-2648-the-trochaic-tripody-catalectic": "part-not-teachable",
+  "ln-2649-other-trochaic-verses": "part-not-teachable",
+  "ln-2650-logaoedic-rhythms": "part-not-teachable",
+  "ln-2655-the-adonic": "part-not-teachable",
+  "ln-2658-the-aristophanic": "part-not-teachable",
+  "ln-2659-the-pherecratean-or-pherecratic": "part-not-teachable",
+  "ln-2660-the-glyconic": "part-not-teachable",
+  "ln-2663-the-lesser-or-decasyllabic-alcaic": "part-not-teachable",
+  "ln-2664-the-phalaecean-or-hendecasyllable": "part-not-teachable",
+  "ln-2666-the-lesser-sapphic": "part-not-teachable",
+  "ln-2667-the-greater-or-hendecasyllabic-alcaic": "part-not-teachable",
+  "ln-2669-the-lesser-asclepiadean": "part-not-teachable",
+  "ln-2670-the-greater-asclepiadean": "part-not-teachable",
+  "ln-2671-the-greater-sapphic": "part-not-teachable",
+  "ln-2674-the-priapean": "part-not-teachable",
+  "ln-2675-dactylo-trochaic-rhythms": "part-not-teachable",
+  "ln-2677-the-greater-archilochian": "part-not-teachable",
+  "ln-2678-the-iambelegus": "part-not-teachable",
+  "ln-2680-the-elegiambus": "part-not-teachable",
+  "ln-2682-anapaestic-rhythms": "part-not-teachable",
+  "ln-2684-the-anapaestic-tetrameter-acatalectic": "part-not-teachable",
+  "ln-2686-the-anapaestic-tetrameter-catalectic-or": "part-not-teachable",
+  "ln-2687-the-anapaestic-dimeter-acatalectic-or": "part-not-teachable",
+  "ln-2688-the-anapaestic-dimeter-catalectic-or": "part-not-teachable",
+  "ln-2691-cretic-rhythms": "part-not-teachable",
+  "ln-2694-the-cretic-tetrameter-acatalectic": "part-not-teachable",
+  "ln-2696-the-cretic-tetrameter-catalectic": "part-not-teachable",
+  "ln-2697-other-cretic-verses": "part-not-teachable",
+  "ln-2698-bacchiac-rhythms": "part-not-teachable",
+  "ln-2701-the-bacchiac-tetrameter-acatalectic": "part-not-teachable",
+  "ln-2704-other-bacchiac-verses": "part-not-teachable",
+  "ln-2707-choriambic-rhythms": "part-not-teachable",
+  "ln-2708-ionic-rhythms": "part-not-teachable",
+  "ln-2712-the-ionic-a-maiore-tetrameter": "part-not-teachable",
+  "ln-2714-the-ionic-a-minore-tetrameter": "part-not-teachable",
+  "ln-2718-lyric-metres-of-horace": "part-not-teachable",
+  "ln-2738-lyric-strophes-of-catullus": "part-not-teachable"
  },
  "dropped": [
   {
-   "n": 1,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 3,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 4,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 5,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 6,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 7,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 8,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 9,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 10,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 11,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 12,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 13,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 14,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 15,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 16,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 17,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 18,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 19,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 20,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 21,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 22,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 23,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 24,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 25,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 26,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 27,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 28,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 29,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 30,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 31,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 32,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 33,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 34,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 35,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 36,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 37,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 38,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 39,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 40,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 41,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 42,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 43,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 44,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 45,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 46,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 47,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 48,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 49,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 50,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 51,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 52,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 53,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 54,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 55,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 56,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 57,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 58,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 59,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 60,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 61,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 62,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 63,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 64,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 65,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 66,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 67,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 68,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 69,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 70,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 71,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 72,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 73,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 74,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 75,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 76,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 77,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 78,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 79,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 80,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 81,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 82,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 83,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 84,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 85,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 86,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 87,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 88,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 89,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 90,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 91,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 92,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 93,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 94,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 95,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 96,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 97,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 98,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 99,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 100,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 101,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 102,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 103,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 104,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 105,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 106,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 107,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 108,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 109,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 110,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 111,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 112,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 113,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 114,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 115,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 116,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 117,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 118,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 119,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 120,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 121,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 122,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 123,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 124,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 125,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 126,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 127,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 128,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 129,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 130,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 131,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 132,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 133,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 134,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 135,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 136,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 137,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 138,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 139,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 140,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 141,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 142,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 143,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 144,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 145,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 146,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 147,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 148,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 149,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 150,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 151,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 152,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 153,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 154,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 155,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 156,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 157,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 158,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 159,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 160,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 161,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 162,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 163,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 164,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 165,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 166,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 167,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 168,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 169,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 170,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 171,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 172,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 173,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 174,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 175,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 176,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 177,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 178,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 179,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 180,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 181,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 182,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 183,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 184,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 185,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 186,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 187,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 188,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 189,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 190,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 191,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 192,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 193,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 194,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 195,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 196,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 197,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 198,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 199,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 200,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 201,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 202,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 203,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 204,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 205,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 206,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 207,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 208,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 209,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 210,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 211,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 212,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 213,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 214,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 215,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 216,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 217,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 218,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 219,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 220,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 221,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 222,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 223,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 224,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 225,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 226,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 227,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 228,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 229,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 230,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 231,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 232,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 233,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 234,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 235,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 236,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 237,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 238,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 239,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 240,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 241,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 242,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 243,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 244,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 245,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 246,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 247,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 248,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 249,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 250,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 251,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 252,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 253,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 254,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 255,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 256,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 257,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 258,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 259,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 260,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 261,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 262,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 263,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 264,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 265,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 266,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 267,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 268,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 269,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 270,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 271,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 272,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 273,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 274,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 275,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 276,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 277,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 278,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 279,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 280,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 281,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 282,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 283,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 284,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 285,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 286,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 287,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 288,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 289,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 290,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 291,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 292,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 293,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 294,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 295,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 296,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 297,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 298,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 299,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 300,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 301,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 302,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 303,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 304,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 305,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 306,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 307,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 308,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 309,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 310,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 311,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 312,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 313,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 314,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 315,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 316,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 317,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 318,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 319,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 320,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 321,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 322,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 323,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 324,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 325,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 326,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 327,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 328,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 329,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 330,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 331,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 332,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 333,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 334,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 335,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 336,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 337,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 338,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 339,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 340,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 341,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 342,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 343,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 344,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 345,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 346,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 347,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 348,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 349,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 350,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 351,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 352,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 353,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 354,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 355,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 356,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 357,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 358,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 359,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 360,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 361,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 362,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 363,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 364,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 365,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 366,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 367,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 368,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 369,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 370,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 371,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 372,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 373,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 374,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 375,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 376,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 377,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 378,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 379,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 380,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 381,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 382,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 383,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 384,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 385,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 386,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 387,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 388,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 389,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 390,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 391,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 392,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 393,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 394,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 395,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 396,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2428,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2429,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2430,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2431,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2432,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2433,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2434,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2435,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2436,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2437,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2438,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2439,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2440,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2441,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2442,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2443,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2444,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2445,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2446,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2447,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2448,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2449,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2450,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2451,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2452,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2453,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2454,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2455,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2456,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2457,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2458,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2459,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2460,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2461,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2462,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2463,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2464,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2465,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2466,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2467,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2468,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2469,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2470,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2471,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2472,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2473,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2474,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2475,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2476,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2477,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2478,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2479,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2480,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2481,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2482,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2483,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2484,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2485,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2486,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2487,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2488,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2489,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2490,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2491,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2492,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2493,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2494,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2495,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2496,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2497,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2498,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2499,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2500,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2501,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2502,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2503,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2504,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2505,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2506,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2507,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2508,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2509,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2510,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2511,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2512,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2513,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2514,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2515,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2516,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2517,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2518,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2519,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2520,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2521,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2522,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2523,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2524,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2525,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2526,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2527,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2528,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2529,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2530,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2531,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2532,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2533,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2534,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2535,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2536,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2537,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2538,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2539,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2540,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2541,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2542,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2543,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2544,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2545,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2546,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2547,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2548,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2549,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2550,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2551,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2552,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2553,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2554,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2555,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2556,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2557,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2558,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2559,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2560,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2561,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2562,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2563,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2564,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2565,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2566,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2567,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2568,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2569,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2570,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2571,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2572,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2573,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2574,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2575,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2576,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2577,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2578,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2579,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2580,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2581,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2582,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2583,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2584,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2585,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2586,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2587,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2588,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2589,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2590,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2591,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2592,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2593,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2594,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2595,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2596,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2597,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2598,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2599,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2600,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2601,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2602,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2603,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2604,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2605,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2606,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2607,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2608,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2609,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2610,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2611,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2612,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2613,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2614,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2615,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2616,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2617,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2618,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2619,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2620,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2621,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2622,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2623,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2624,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2625,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2626,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2627,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2628,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2629,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2630,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2631,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2632,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2633,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2634,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2635,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2636,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2637,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2638,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2639,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2640,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2641,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2642,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2643,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2644,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2645,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2646,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2647,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2648,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2649,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2650,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2651,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2652,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2653,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2654,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2655,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2656,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2657,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2658,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2659,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2660,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2661,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2662,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2663,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2664,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2665,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2666,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2667,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2668,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2669,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2670,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2671,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2672,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2673,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2674,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2675,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2676,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2677,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2678,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2679,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2680,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2681,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2682,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2683,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2684,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2685,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2686,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2687,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2688,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2689,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2690,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2691,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2692,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2693,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2694,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2695,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2696,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2697,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2698,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2699,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2700,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2701,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2702,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2703,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2704,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2705,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2706,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2707,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2708,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2709,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2710,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2711,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2712,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2713,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2714,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2715,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2716,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2717,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2718,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2719,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2720,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2721,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2722,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2723,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2724,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2725,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2726,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2727,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2728,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2729,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2730,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2731,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2732,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2733,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2734,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2735,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2736,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2737,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2738,
-   "reason": "part-not-teachable"
-  },
-  {
-   "n": 2739,
-   "reason": "part-not-teachable"
-  },
-  {
    "n": 2740,
-   "reason": "part-not-teachable"
+   "reason": "apparatus"
   },
   {
    "n": 2741,
-   "reason": "part-not-teachable"
+   "reason": "apparatus"
   },
   {
    "n": 2742,
-   "reason": "part-not-teachable"
+   "reason": "apparatus"
   },
   {
    "n": 2743,
-   "reason": "part-not-teachable"
+   "reason": "apparatus"
   },
   {
    "n": 2744,
-   "reason": "part-not-teachable"
+   "reason": "apparatus"
   },
   {
    "n": 2745,
-   "reason": "part-not-teachable"
+   "reason": "apparatus"
   }
  ],
- "topics": 459,
+ "topics": 668,
+ "readingTopics": 209,
  "families": [
+  {
+   "id": "parts-of-speech",
+   "label": "Parts of Speech",
+   "topics": 2
+  },
+  {
+   "id": "sound",
+   "label": "Sound",
+   "topics": 42
+  },
+  {
+   "id": "formation",
+   "label": "Formation",
+   "topics": 60
+  },
   {
    "id": "inflection",
    "label": "Inflection",
@@ -7733,6 +5836,11 @@
    "id": "numerals",
    "label": "Numerals",
    "topics": 7
+  },
+  {
+   "id": "prosody",
+   "label": "Prosody",
+   "topics": 105
   }
  ],
  "unplacedTopics": 0,

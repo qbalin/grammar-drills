@@ -24,6 +24,7 @@ Read all twelve. The questions to hold in mind:
 | Date | Reviewer | Sampled ids | Verdict |
 |---|---|---|---|
 | 2026-07-29 | Claude (assisted build) | 12 rendered, plus a scripted scan of all 485 | **Provisional pass.** Tables survive: the εἰμί and εἶμι paradigms in `sm-768-irregular-mi-verbs` set the moods in columns with the persons stubbed down the side, and the first-declension ending table in `sm-211` reads across correctly. Prose is clean polytonic throughout. Not a substitute for a Hellenist's read-through, which this pack still wants. |
+| — | *not yet signed off* | the 71 reading topics | 2026-08-12 shipped Part I (letters, sounds, accent, §§ 1-188) and Part III (word formation, §§ 822-899) as 57 topics marked `readingOnly`, plus the 14 runs under 120 characters. None has been read through — the 2026-07-29 scan covered a syllabus these were not in. Part I is the pack's densest typography (breathings, accents, the alphabet table) and is exactly where a rendering fault would hide; the taught 485 are unchanged byte for byte and are not what this row is about. |
 
 Found during that read, and left alone deliberately:
 

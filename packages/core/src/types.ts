@@ -22,6 +22,18 @@ export interface GrammarSection {
   text: string;
   /** Position in book order; used for topic sequencing. */
   order: number;
+  /**
+   * A page of the book that carries no exercise — sounds, word formation,
+   * prosody, a run of bare definitions. It is read and paged through like any
+   * other, and it is never studied.
+   *
+   * Declared by the pack's parser, never derived from "this topic has no
+   * tests". Derived, an orphaned test set would turn a teachable topic into a
+   * reading page in silence, which is the defect C0 and C1 exist to catch. So
+   * **absent means teachable, and a teachable topic must have questions** — a
+   * pack that says nothing inherits the strict rule.
+   */
+  readingOnly?: true;
 }
 
 /**

@@ -14,6 +14,7 @@ import {
   Session,
   emptyProgress,
   type ContentData,
+  type Profile,
   type Progress,
 } from "@lang-tutor/core";
 import { testProfile } from "@lang-tutor/core/testing";
@@ -108,8 +109,14 @@ const fixture: ContentData = {
   },
 };
 
-function mount(progress?: Progress, data: ContentData = fixture) {
-  const content = new Content(data, testProfile);
+function mount(
+  progress?: Progress,
+  data: ContentData = fixture,
+  // Only the tests that add a family to the fixture pass one — a pack's family
+  // list is its book's table of contents, so content and profile move together.
+  profile: Profile = testProfile,
+) {
+  const content = new Content(data, profile);
   const session = new Session(content, progress);
   const storage = new SyncingStorage();
   render(<App content={content} session={session} storage={storage} />);
@@ -3414,5 +3421,127 @@ describe("a device that is behind another one", () => {
       screen.getByRole("dialog", { name: "That repo already has progress" }),
     ).toBeDefined();
     expect(calls).not.toContain("PUT");
+  });
+});
+
+/**
+ * The pages the book sets no exercise on.
+ *
+ * A pack ships all of Bennett and all of Lane, prosody and word formation with
+ * the rest, because what a student cannot reach they can never read. Those pages
+ * are in the index and in the reader like any other; what changes is that the
+ * index says so, and that nothing offers to drill them.
+ */
+describe("a section the book sets no exercise on", () => {
+  /** The fixture plus a page of prosody, in a family of its own. */
+  const withReading: ContentData = {
+    ...fixture,
+    grammar: [
+      ...fixture.grammar,
+      {
+        id: "metre",
+        ref: "360-361",
+        title: "The dactylic hexameter",
+        family: "prosody",
+        text: "Six feet, of which the fifth is a dactyl.",
+        order: 900,
+        readingOnly: true,
+      },
+    ],
+  };
+  const readingProfile = {
+    ...testProfile,
+    families: [...testProfile.families, { id: "prosody", label: "Prosody" }],
+  };
+
+  const openMap = async (user: ReturnType<typeof userEvent.setup>) => {
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    return screen.getByRole("dialog", { name: "Grammar index" });
+  };
+
+  it("says it is a page to read, not a topic nobody has written for", async () => {
+    const user = userEvent.setup();
+    mount(undefined, withReading, readingProfile);
+    const map = await openMap(user);
+
+    await user.click(within(map).getByRole("button", { name: /Prosody/ }));
+    const row = within(map).getByRole("button", {
+      name: /The dactylic hexameter/,
+    });
+    expect(row.textContent).toMatch(/reading only/);
+    // The other two silences are defects or preferences and would send a reader
+    // looking for something to do about them. This one is the book.
+    expect(row.textContent).not.toMatch(/no tests written yet/);
+    expect(row.textContent).not.toMatch(/not started/);
+  });
+
+  it("draws no mastery bar over a family that can never fill one", async () => {
+    const user = userEvent.setup();
+    mount(undefined, withReading, readingProfile);
+    const map = await openMap(user);
+
+    const heading = within(map).getByRole("button", { name: /Prosody/ });
+    expect(heading.textContent).toMatch(/reading only/);
+    expect(heading.textContent).not.toMatch(/0% mastered/);
+  });
+
+  it("still opens it, and offers reading as the thing to do", async () => {
+    const user = userEvent.setup();
+    mount(undefined, withReading, readingProfile);
+    const map = await openMap(user);
+
+    await user.click(within(map).getByRole("button", { name: /Prosody/ }));
+    const row = within(map).getByRole("button", {
+      name: /The dactylic hexameter/,
+    });
+    // Never disabled — the whole point of shipping the page is that it opens.
+    expect(row).toHaveProperty("disabled", false);
+    await user.click(row);
+
+    expect(
+      screen.getByRole("button", { name: "Read § 360-361" }),
+    ).toHaveProperty("disabled", false);
+    expect(screen.getByRole("button", { name: "Study from here" })).toHaveProperty(
+      "disabled",
+      true,
+    );
+    expect(
+      screen.getByRole("button", { name: "No exercise here" }),
+    ).toHaveProperty("disabled", true);
+  });
+
+  it("reads, and pages back to the section before it", async () => {
+    const user = userEvent.setup();
+    mount(undefined, withReading, readingProfile);
+    const map = await openMap(user);
+
+    await user.click(within(map).getByRole("button", { name: /Prosody/ }));
+    await user.click(
+      within(map).getByRole("button", { name: /The dactylic hexameter/ }),
+    );
+    await user.click(screen.getByRole("button", { name: "Read § 360-361" }));
+
+    const sheet = screen.getByRole("dialog", { name: /dactylic hexameter/ });
+    expect(within(sheet).getByText(/Six feet/)).toBeDefined();
+    // In book order with everything else, which is what makes it reachable by
+    // paging as well as by the index.
+    expect(
+      within(sheet).getByRole("button", { name: /Previous section/ }),
+    ).toBeDefined();
+  });
+
+  it("leaves a student's overall progress exactly where it was", async () => {
+    const graded = new Session(new Content(fixture, testProfile));
+    graded.gradeTopic("decl1", 4, new Date());
+
+    const before = new Session(new Content(fixture, testProfile));
+    before.restore(graded.snapshot());
+    const after = new Session(new Content(withReading, readingProfile));
+    after.restore(graded.snapshot());
+
+    // The regression this exists for: shipping the rest of the book must not
+    // move a number that is about the student.
+    expect(after.overallPercent()).toBe(before.overallPercent());
+    expect(after.overallPercent()).toBeGreaterThan(0);
   });
 });

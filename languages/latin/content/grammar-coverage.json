@@ -383,9 +383,22 @@
   "375"
  ],
  "assigned": {
+  "1": "bn-001-the-alphabet",
+  "2": "bn-002-classification-of-sounds",
+  "3": "bn-003-sounds-of-the-letters",
+  "4": "bn-004-syllables",
+  "5": "bn-005-quantity",
+  "6": "bn-006-accent",
+  "7": "bn-007-vowel-changes",
+  "8": "bn-008-consonant-changes",
+  "9": "bn-009-peculiarities-of-orthography",
+  "10": "bn-010-inflections",
+  "11": "bn-010-inflections",
+  "12": "bn-012-parts-of-speech-the-noun",
   "13": "bn-013-gender-of-nouns",
   "14": "bn-013-gender-of-nouns",
   "15": "bn-013-gender-of-nouns",
+  "16": "bn-016-number",
   "17": "bn-017-cases",
   "18": "bn-018-the-five-declensions",
   "19": "bn-018-the-five-declensions",
@@ -431,6 +444,7 @@
   "59": "bn-054-defective-nouns",
   "60": "bn-054-defective-nouns",
   "61": "bn-054-defective-nouns",
+  "62": "bn-062-adjectives-the-two-classes",
   "63": "bn-063-adjectives-of-the-first-and-second",
   "64": "bn-063-adjectives-of-the-first-and-second",
   "65": "bn-063-adjectives-of-the-first-and-second",
@@ -450,6 +464,8 @@
   "79": "bn-078-numerals",
   "80": "bn-078-numerals",
   "81": "bn-078-numerals",
+  "82": "bn-082-pronouns",
+  "83": "bn-082-pronouns",
   "84": "bn-084-personal-pronouns",
   "85": "bn-085-reflexive-pronouns",
   "86": "bn-086-possessive-pronouns",
@@ -505,12 +521,28 @@
   "136": "bn-133-defective-verbs",
   "137": "bn-133-defective-verbs",
   "138": "bn-138-impersonal-verbs",
+  "139": "bn-139-particles",
   "140": "bn-140-adverbs",
   "141": "bn-141-prepositions",
   "142": "bn-141-prepositions",
   "143": "bn-141-prepositions",
   "144": "bn-141-prepositions",
   "145": "bn-145-conjunctions-and-interjections",
+  "146": "bn-146-word-formation-derivatives",
+  "147": "bn-147-word-formation-nouns",
+  "148": "bn-147-word-formation-nouns",
+  "149": "bn-147-word-formation-nouns",
+  "150": "bn-150-word-formation-adjectives",
+  "151": "bn-150-word-formation-adjectives",
+  "152": "bn-150-word-formation-adjectives",
+  "153": "bn-150-word-formation-adjectives",
+  "154": "bn-150-word-formation-adjectives",
+  "155": "bn-155-word-formation-verbs",
+  "156": "bn-155-word-formation-verbs",
+  "157": "bn-157-word-formation-adverbs",
+  "158": "bn-158-word-formation-compounds",
+  "159": "bn-158-word-formation-compounds",
+  "160": "bn-160-syntax",
   "161": "bn-161-classification-of-sentences",
   "162": "bn-162-form-of-interrogative-sentences",
   "163": "bn-163-subject-and-predicate",
@@ -520,6 +552,7 @@
   "167": "bn-167-predicate-nouns",
   "168": "bn-167-predicate-nouns",
   "169": "bn-169-appositives",
+  "170": "bn-170-the-nominative",
   "171": "bn-171-the-vocative",
   "172": "bn-172-the-accusative",
   "173": "bn-172-the-accusative",
@@ -543,6 +576,7 @@
   "191": "bn-186-the-dative",
   "192": "bn-186-the-dative",
   "193": "bn-186-the-dative",
+  "194": "bn-194-the-genitive",
   "195": "bn-195-genitive-with-nouns",
   "196": "bn-195-genitive-with-nouns",
   "197": "bn-195-genitive-with-nouns",
@@ -674,6 +708,7 @@
   "322": "bn-319-conditional-sentences-in-indirect",
   "323": "bn-323-implied-indirect-discourse",
   "324": "bn-324-subjunctive-by-attraction",
+  "325": "bn-325-noun-and-adjective-forms-of-the-verb",
   "326": "bn-326-the-infinitive",
   "327": "bn-326-the-infinitive",
   "328": "bn-326-the-infinitive",
@@ -707,276 +742,77 @@
   "356": "bn-356-style-verbs",
   "357": "bn-357-peculiarities-in-the-use-of-the",
   "358": "bn-358-peculiarities-in-connection-with-the",
-  "359": "bn-359-peculiarities-in-the-use-of-the-genitive"
+  "359": "bn-359-peculiarities-in-the-use-of-the-genitive",
+  "360": "bn-360-prosody",
+  "361": "bn-360-prosody",
+  "362": "bn-362-quantity-general-principles",
+  "363": "bn-362-quantity-general-principles",
+  "364": "bn-362-quantity-general-principles",
+  "365": "bn-362-quantity-general-principles",
+  "366": "bn-366-versification-general-principles",
+  "367": "bn-367-special-peculiarities",
+  "368": "bn-368-the-dactylic-hexameter",
+  "369": "bn-369-dactylic-pentameter",
+  "370": "bn-370-iambic-measures",
+  "371": "bn-371-julian-calendar",
+  "372": "bn-371-julian-calendar",
+  "373": "bn-373-proper-names",
+  "374": "bn-374-figures-of-syntax-and-rhetoric",
+  "375": "bn-374-figures-of-syntax-and-rhetoric"
  },
- "dropped": [
-  {
-   "n": "1",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "2",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "3",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "4",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "5",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "6",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "7",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "8",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "9",
-   "reason": "part-not-teachable",
-   "part": "I"
-  },
-  {
-   "n": "10",
-   "reason": "structural-heading",
-   "heading": "INFLECTIONS"
-  },
-  {
-   "n": "11",
-   "reason": "structural-heading",
-   "heading": "INFLECTIONS"
-  },
-  {
-   "n": "12",
-   "reason": "structural-heading",
-   "heading": "A. NOUNS"
-  },
-  {
-   "n": "16",
-   "reason": "structural-heading",
-   "heading": "NUMBER"
-  },
-  {
-   "n": "62",
-   "reason": "structural-heading",
-   "heading": "B. ADJECTIVES"
-  },
-  {
-   "n": "82",
-   "reason": "structural-heading",
-   "heading": "C. PRONOUNS"
-  },
-  {
-   "n": "83",
-   "reason": "structural-heading",
-   "heading": "C. PRONOUNS"
-  },
-  {
-   "n": "139",
-   "reason": "structural-heading",
-   "heading": "PARTICLES"
-  },
-  {
-   "n": "146",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "147",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "148",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "149",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "150",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "151",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "152",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "153",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "154",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "155",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "156",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "157",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "158",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "159",
-   "reason": "part-not-teachable",
-   "part": "IV"
-  },
-  {
-   "n": "160",
-   "reason": "structural-heading",
-   "heading": "SYNTAX"
-  },
-  {
-   "n": "170",
-   "reason": "structural-heading",
-   "heading": "THE NOMINATIVE"
-  },
-  {
-   "n": "194",
-   "reason": "structural-heading",
-   "heading": "THE GENITIVE"
-  },
-  {
-   "n": "325",
-   "reason": "structural-heading",
-   "heading": "NOUN AND ADJECTIVE FORMS OF THE VERB"
-  },
-  {
-   "n": "360",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "361",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "362",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "363",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "364",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "365",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "366",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "367",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "368",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "369",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "370",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "371",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "372",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "373",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "374",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  },
-  {
-   "n": "375",
-   "reason": "part-not-teachable",
-   "part": "VI"
-  }
- ],
- "topics": 114,
+ "reading": {
+  "bn-001-the-alphabet": "part-not-teachable",
+  "bn-002-classification-of-sounds": "part-not-teachable",
+  "bn-003-sounds-of-the-letters": "part-not-teachable",
+  "bn-004-syllables": "part-not-teachable",
+  "bn-005-quantity": "part-not-teachable",
+  "bn-006-accent": "part-not-teachable",
+  "bn-007-vowel-changes": "part-not-teachable",
+  "bn-008-consonant-changes": "part-not-teachable",
+  "bn-009-peculiarities-of-orthography": "part-not-teachable",
+  "bn-010-inflections": "structural-heading",
+  "bn-012-parts-of-speech-the-noun": "structural-heading",
+  "bn-016-number": "structural-heading",
+  "bn-062-adjectives-the-two-classes": "structural-heading",
+  "bn-082-pronouns": "structural-heading",
+  "bn-139-particles": "structural-heading",
+  "bn-146-word-formation-derivatives": "part-not-teachable",
+  "bn-147-word-formation-nouns": "part-not-teachable",
+  "bn-150-word-formation-adjectives": "part-not-teachable",
+  "bn-155-word-formation-verbs": "part-not-teachable",
+  "bn-157-word-formation-adverbs": "part-not-teachable",
+  "bn-158-word-formation-compounds": "part-not-teachable",
+  "bn-160-syntax": "structural-heading",
+  "bn-170-the-nominative": "structural-heading",
+  "bn-194-the-genitive": "structural-heading",
+  "bn-325-noun-and-adjective-forms-of-the-verb": "structural-heading",
+  "bn-360-prosody": "part-not-teachable",
+  "bn-362-quantity-general-principles": "part-not-teachable",
+  "bn-366-versification-general-principles": "part-not-teachable",
+  "bn-367-special-peculiarities": "part-not-teachable",
+  "bn-368-the-dactylic-hexameter": "part-not-teachable",
+  "bn-369-dactylic-pentameter": "part-not-teachable",
+  "bn-370-iambic-measures": "part-not-teachable",
+  "bn-371-julian-calendar": "part-not-teachable",
+  "bn-373-proper-names": "part-not-teachable",
+  "bn-374-figures-of-syntax-and-rhetoric": "part-not-teachable"
+ },
+ "dropped": [],
+ "topics": 149,
+ "readingTopics": 35,
  "families": {
-  "nouns": 9,
-  "adj": 5,
-  "pron": 9,
+  "sounds": 9,
+  "nouns": 12,
+  "adj": 6,
+  "pron": 10,
   "verb-forms": 17,
-  "particles": 3,
-  "noun-syntax": 18,
+  "particles": 4,
+  "word-formation": 6,
+  "noun-syntax": 21,
   "adj-pron-syntax": 13,
-  "verb-syntax": 28,
-  "style": 12
+  "verb-syntax": 29,
+  "style": 12,
+  "prosody": 10
  },
  "sizeChars": {
   "min": 147,

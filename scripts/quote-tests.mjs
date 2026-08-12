@@ -30,7 +30,7 @@ import { gunzipSync } from "node:zlib";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { compileFold, words } from "@lang-tutor/core";
-import { loadGrammar, loadProfile, packDir } from "./lib/pack.mjs";
+import { loadGrammar, loadProfile, packDir, teachable } from "./lib/pack.mjs";
 import { openReference } from "./lib/reference.mjs";
 import { makeClassifier } from "./lib/attestation.mjs";
 import { QUOTED_ID } from "./lib/quoted.mjs";
@@ -44,7 +44,10 @@ const at = (name) => {
 
 const dir = packDir(argv);
 const profile = loadProfile(dir);
-const grammar = loadGrammar(dir);
+// The syllabus, not the whole book. A pack ships every section of its source,
+// and the pages the book sets no exercise on are read rather than taught — so
+// nothing here may file a question or a quotation under one of them.
+const grammar = teachable(loadGrammar(dir));
 const planning = argv.includes("--plan");
 const from = at("--from") ?? "grammar";
 const keepVerse = argv.includes("--verse");

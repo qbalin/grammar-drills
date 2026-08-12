@@ -59,10 +59,12 @@ GUTENBERG_URL = f"https://www.gutenberg.org/files/{EBOOK}/{EBOOK}-h/{EBOOK}-h.ht
 SHA256 = "485e60eb2cb1a17bcb38814621a464903d9140bc36824541d8371b17909882d2"
 CACHE = os.path.join(REPO, ".cache", f"lane-{EBOOK}", f"{EBOOK}-h.htm")
 
-#: The teachable range, mirroring `parse.py`'s TEACHABLE_PARTS.
+#: The teachable range, mirroring `parse.py`'s TEACHABLE_PARTS. Everything
+#: outside it still ships and is still read; it is marked `readingOnly` and no
+#: questions are written against it.
 #:
-#: Lane runs §§1-2745 in four movements and two of them are wrong for this, the
-#: same two Bennett's parser drops:
+#: Lane runs §§1-2745 in four movements and two of them carry no exercise, the
+#: same two Bennett's parser marks:
 #:
 #:   §§1-14      parts of speech — a page of definitions, no exercise in it
 #:   §§15-395    sound and word formation — Bennett's Parts I and IV. Prints
@@ -74,10 +76,23 @@ CACHE = os.path.join(REPO, ".cache", f"lane-{EBOOK}", f"{EBOOK}-h.htm")
 #:               which is the last section of word formation.
 #:   §§1023-2298 syntax — Bennett's Part V.
 #:   §§2299-2427 the appendix: peculiarities of verbs, indirect discourse,
-#:               pronouns, numerals. Syntax under another name, so it is kept.
-#:   §§2428-2745 prosody and versification — Bennett's Part VI, and refused
-#:               twice over for the reason `lane-quotes.mjs:78` gives.
-FROM, TO = 397, 2427
+#:               pronouns, numerals. Syntax under another name, so it is taught.
+#:   §§2428-2745 prosody and versification — Bennett's Part VI, and read rather
+#:               than drilled for the reason `lane-quotes.mjs:78` gives.
+TEACHABLE_FROM, TEACHABLE_TO = 397, 2427
+
+#: The one thing that is dropped rather than read, and the only thing.
+#:
+#: Lane closes with a key to the authors he cites — "Ter. = Terentius" over and
+#: over — and sets the whole of it inside §2745, which is 317,000 characters, a
+#: quarter of the book's text and not a word of grammar in it. Shipped it would
+#: be one topic twenty times the size of any other and about 100 KB on the wire.
+#:
+#: `parse.py:38` already treats Bennett's index of cited sources the same way,
+#: and this is that index under another name. Keyed on the heading rather than
+#: on §2740, because Project Gutenberg re-releases an ebook in place and a
+#: renumbering must not quietly re-admit 300 KB of abbreviations.
+APPARATUS_HEADING = "Abbreviations used in Citing the Authors"
 
 #: Lane's own section marker, `<a id = "sec1174" ...>1174.</a>`. The trailing
 #: quote matters: `sec1174a` is a sub-item label — the `(a.)` that opens a
@@ -307,46 +322,51 @@ def family_of(heads):
 def build(secs, min_chars):
     """Topics, plus an account of what happened to every source section.
 
-    Nothing may merely disappear: a section either lands in a topic or is dropped
-    for a stated reason. Where this differs from `parse.py` is what happens to a
-    run too thin to stand on its own. Bennett's parser drops those, and is right
-    to — they are structural stubs, headings with nothing under them. Lane's are
-    a one-rule heading set immediately above the rule, so dropping them would
-    take the rule with it. They are merged BACKWARD into the topic before them,
-    which keeps README's promise that what the parser drops the student can never
-    read.
+    Nothing may merely disappear, and nothing merely goes unread either. Every
+    section of Lane lands in a topic; a topic outside the teachable range is
+    marked `readingOnly`, which says the book sets no exercise there rather than
+    that nobody has written one yet. The single exception is the author-citation
+    key — see `APPARATUS_HEADING`.
+
+    Where this differs from `parse.py` is what happens to a run too thin to
+    stand on its own. Bennett's parser makes those reading stubs; Lane's are a
+    one-rule heading set immediately above the rule, so a stub would strand the
+    rule under a heading of its own. They are merged BACKWARD into the topic
+    before them — but only into one of their own class, or the first page of
+    prosody would vanish into the last page of syntax.
     """
     dropped, keep = [], []
     for s in secs:
-        if FROM <= s["n"] <= TO:
-            keep.append(s)
+        if s["heads"].get(4) == APPARATUS_HEADING:
+            dropped.append({"n": s["n"], "reason": "apparatus"})
         else:
-            dropped.append({"n": s["n"], "reason": "part-not-teachable"})
+            keep.append(s)
 
     groups = []
     for s in keep:
+        reading = not (TEACHABLE_FROM <= s["n"] <= TEACHABLE_TO)
         if s["opens"] is not None or not groups:
-            groups.append({"heads": s["heads"], "secs": []})
+            groups.append({"heads": s["heads"], "reading": reading, "secs": []})
         groups[-1]["secs"].append(s)
 
-    # Merge the thin ones backward, before anything is named or numbered.
+    # Merge the thin ones backward, before anything is named or numbered, and
+    # never across the teachable boundary.
     merged = []
     for g in groups:
         text = "\n".join(s["raw"] for s in g["secs"] if s["raw"])
-        if merged and plain_len(text) < min_chars:
+        if (merged and plain_len(text) < min_chars
+                and merged[-1]["reading"] == g["reading"]):
             merged[-1]["secs"].extend(g["secs"])
             continue
         merged.append(g)
-    # A leading group still under the bar has nothing to merge into.
-    groups = []
-    for g in merged:
+    # A leading group still under the bar has nothing to merge into. It is a
+    # page of the book all the same, so it is read rather than dropped.
+    groups = merged
+    for g in groups:
         text = "\n".join(s["raw"] for s in g["secs"] if s["raw"])
         if plain_len(text) < min_chars:
-            for s in g["secs"]:
-                dropped.append({"n": s["n"], "reason": "below-min-length",
-                                "chars": plain_len(text)})
-            continue
-        groups.append(g)
+            g["reading"] = True
+            g["thin"] = True
 
     # --- titles, and what to do when the book uses the same words twice --------
     #
@@ -354,32 +374,43 @@ def build(secs, min_chars):
     # then with the section number. A bare number is a last resort rather than
     # the rule, because "Stems in -ā-: singular cases" tells a student which
     # topic they are looking at and "Singular cases (§435)" does not.
-    bases = [clean_title(g["heads"].get(g["secs"][0]["opens"], "")) or
-             f"Section {g['secs'][0]['n']}" for g in groups]
-    counts = Counter(bases)
-    used, titles = set(), []
-    for g, base in zip(groups, bases):
-        heads, level = g["heads"], g["secs"][0]["opens"]
-        title = base
-        if counts[base] > 1 or base in used or CONTINUATION.match(base):
-            for above in sorted((l for l in heads if l < level), reverse=True):
-                qualifier = clean_title(heads[above])
-                # A qualifier that is itself a continuation explains nothing:
-                # "Of the Noun: The Adjective" names no topic either. Keep going
-                # up until the book says something that stands on its own.
-                if (not qualifier or CONTINUATION.match(qualifier)
-                        or qualifier.lower() in base.lower()):
-                    continue
-                title = f"{qualifier}: {base}"
-                if title not in used:
-                    break
-        if title in used:
-            title = f"{title} (§{g['secs'][0]['n']})"
-        used.add(title)
-        titles.append(title)
+    #
+    # **The syllabus names itself first**, and the reading pages take what is
+    # left. A topic id is built from its title and a test file is named after
+    # the id, so a page of word formation that happens to be headed
+    # "Denominatives" must not rename §839, which has a bank of questions
+    # written against it. Two passes rather than one, sharing `used`: the same
+    # rule applied in an order that cannot reach back into the taught book.
+    titles = {}
+    used = set()
+    for wanted in (False, True):
+        pending = [g for g in groups if g["reading"] is wanted]
+        bases = [clean_title(g["heads"].get(g["secs"][0]["opens"], "")) or
+                 f"Section {g['secs'][0]['n']}" for g in pending]
+        counts = Counter(bases)
+        for g, base in zip(pending, bases):
+            heads, level = g["heads"], g["secs"][0]["opens"]
+            title = base
+            if counts[base] > 1 or base in used or CONTINUATION.match(base):
+                for above in sorted((l for l in heads if l < level), reverse=True):
+                    qualifier = clean_title(heads[above])
+                    # A qualifier that is itself a continuation explains nothing:
+                    # "Of the Noun: The Adjective" names no topic either. Keep
+                    # going up until the book says something that stands alone.
+                    if (not qualifier or CONTINUATION.match(qualifier)
+                            or qualifier.lower() in base.lower()):
+                        continue
+                    title = f"{qualifier}: {base}"
+                    if title not in used:
+                        break
+            if title in used:
+                title = f"{title} (§{g['secs'][0]['n']})"
+            used.add(title)
+            titles[id(g)] = title
 
-    topics, order, assigned, labels = [], 0, {}, {}
-    for g, title in zip(groups, titles):
+    topics, order, assigned, reading, labels = [], 0, {}, {}, {}
+    for g in groups:
+        title = titles[id(g)]
         nums = [s["n"] for s in g["secs"]]
         n0 = nums[0]
         ref = f"{n0}" if len(nums) == 1 else f"{n0}-{nums[-1]}"
@@ -393,15 +424,29 @@ def build(secs, min_chars):
             label = clean_title(head)
             family = slugify(label, 60)
             labels.setdefault(family, label)
-        topics.append({
+        topic = {
             "id": topic_id,
             "ref": ref,
             "title": title,
             "family": family,
             "order": order,
             "text": "\n".join(s["raw"] for s in g["secs"] if s["raw"]),
-        })
-    return topics, assigned, dropped, labels
+        }
+        if g["reading"]:
+            topic["readingOnly"] = True
+            reading[topic_id] = ("below-min-length" if g.get("thin")
+                                 else "part-not-teachable")
+        topics.append(topic)
+
+    # §1 is the book's opening definition and stands above Lane's first heading,
+    # so `family_of` finds nothing over it. It belongs to the movement that
+    # heading opens rather than to `fallbackFamily`, which for this book is
+    # "Sentences" — a page saying what Latin grammar is, filed under syntax.
+    for i, t in enumerate(topics):
+        if t["family"] is None:
+            t["family"] = next((u["family"] for u in topics[i + 1:] if u["family"]),
+                               None)
+    return topics, assigned, dropped, reading, labels
 
 
 def source_file(src):
@@ -442,17 +487,22 @@ if __name__ == "__main__":
     nums = sorted(s["n"] for s in sections)
     print(f"parsed §{nums[0]}-{nums[-1]} ({len(sections)} sections)", file=sys.stderr)
 
-    topics, assigned, dropped, labels = build(sections, min_chars)
+    topics, assigned, dropped, reading, labels = build(sections, min_chars)
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     json.dump(topics, io.open(a.out, "w", encoding="utf8"), ensure_ascii=False, indent=1)
-    print(f"{len(topics)} topics -> {a.out}", file=sys.stderr)
+    taught = [t for t in topics if not t.get("readingOnly")]
+    print(f"{len(topics)} topics ({len(taught)} taught, {len(reading)} reading) "
+          f"-> {a.out}", file=sys.stderr)
 
     families = Counter(t["family"] for t in topics)
     print(f"families: {len(families)}, largest "
           f"{families.most_common(1)[0][1]} ({100*families.most_common(1)[0][1]//len(topics)}%)",
           file=sys.stderr)
+    print("reading by reason: " + ", ".join(f"{k} {v}" for k, v in
+          Counter(reading.values()).items()), file=sys.stderr)
 
-    lengths = sorted(plain_len(t["text"]) for t in topics)
+    # Of the taught topics: this is the shape a question set is written to.
+    lengths = sorted(plain_len(t["text"]) for t in taught)
 
     def pct(p):
         return lengths[min(len(lengths) - 1, int(len(lengths) * p))] if lengths else 0
@@ -463,8 +513,13 @@ if __name__ == "__main__":
                    "licence": f"public domain (Project Gutenberg #{EBOOK})"},
         "sourceSections": [str(n) for n in nums],
         "assigned": {str(k): v for k, v in sorted(assigned.items())},
+        # Which topics the book sets no exercise on, and why. Per topic, because
+        # that is the grain the fact is true at; the sections are in `assigned`
+        # like any other, since a student can open every one of them.
+        "reading": reading,
         "dropped": sorted(dropped, key=lambda d: d["n"]),
         "topics": len(topics),
+        "readingTopics": len(reading),
         # Labels as well as counts: this is the family list a profile needs, in
         # the order the book sets them, and deriving it by hand from 461 topics
         # is how one gets missed.

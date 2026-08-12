@@ -35,11 +35,13 @@ describe("the Greek profile", () => {
     expect(profile.l2.code).toBe("grc");
   });
 
-  it("keeps the eleven families in book order", () => {
+  it("keeps the thirteen families in book order", () => {
     // This list is the order the grammar index is drawn in, and so the order a
     // student learns to look things up in. Reordering it moves the furniture.
+    // `sounds` and `word-formation` are Smyth's Parts I and III: no translation
+    // exercise can be written for them, and both are read all the same.
     expect(profile.families.map((f) => f.id)).toEqual([
-      "nouns", "adj", "pron", "verb-forms",
+      "sounds", "nouns", "adj", "pron", "verb-forms", "word-formation",
       "sentence-syntax", "adj-pron-syntax", "case-syntax", "verb-syntax",
       "clause-syntax", "particles", "style",
     ]);

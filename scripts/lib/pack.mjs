@@ -88,6 +88,23 @@ export function loadGrammar(dir, grammar) {
   );
 }
 
+/**
+ * The syllabus: the topics of a book that carry questions rather than only
+ * prose.
+ *
+ * A pack ships every section of its source, prosody and word formation
+ * included, because what a student cannot reach they can never read. Those
+ * pages are declared `readingOnly` by the parser and are not part of what the
+ * questions are measured against — asking a coverage gate to find six tests for
+ * a page on the dactylic hexameter measures the gate, not the pack.
+ *
+ * Written once and imported everywhere rather than inlined, so that "is this a
+ * topic a question can be written for" cannot come to mean two things.
+ */
+export function teachable(topics) {
+  return topics.filter((t) => !t.readingOnly);
+}
+
 /** The section-accounting manifest, or null if the parser never wrote one. */
 export function loadGrammarCoverage(dir, grammar) {
   const path = join(dir, "content", grammar?.manifest ?? "grammar-coverage.json");

@@ -5,10 +5,13 @@ Source: Charles E. Bennett, "New Latin Grammar" (Boston, 1908), Project
 Gutenberg ebook #15665 — public domain, "almost no restrictions whatsoever".
 
 The book's own run-headings define the topics: a topic is a run of consecutive
-numbered sections sharing one heading. Parts I (sounds/accent/quantity), IV
-(word formation) and VI (prosody) are dropped — none of them can carry an
-English->Latin translation exercise — leaving Parts II (inflections),
-III (particles) and V (syntax).
+numbered sections sharing one heading. Every section of the book becomes one.
+
+Parts I (sounds/accent/quantity), IV (word formation) and VI (prosody) carry no
+English->Latin translation exercise, so their topics are marked `readingOnly`
+and no questions are written against them; Parts II (inflections), III
+(particles) and V (syntax) are the syllabus. Both ship, because "cannot be
+drilled" was never a reason a student should be unable to read the page.
 
 This reads the **HTML** edition, not the plain text one. In the plain text the
 paradigms are fixed-width column layouts whose cells wrap across physical
@@ -470,6 +473,21 @@ TITLE_OVERRIDE = {
     250: "Syntax of relative pronouns",
     252: "Syntax of indefinite pronouns",
     253: "Syntax of pronominal adjectives",
+    # The reading parts repeat the bare part-of-speech headings a third time:
+    # Bennett names a chapter of word formation "NOUNS" exactly as he names the
+    # chapter that declines them. Qualified by what the chapter is about, which
+    # is also what makes the map read as his own sequence.
+    12: "Parts of speech: the noun",
+    62: "Adjectives: the two classes",
+    146: "Word formation: derivatives",
+    147: "Word formation: nouns",
+    150: "Word formation: adjectives",
+    155: "Word formation: verbs",
+    157: "Word formation: adverbs",
+    158: "Word formation: compounds",
+    # And Part VI opens two consecutive chapters "GENERAL PRINCIPLES".
+    362: "Quantity: general principles",
+    366: "Versification: general principles",
     # 'Hints on Latin Style' repeats the bare part-of-speech headings.
     347: "Syntax of adverbs",
     350: "Word-order: special principles",
@@ -482,6 +500,15 @@ TITLE_OVERRIDE = {
 
 # Bennett's own part/chapter structure, collapsed into display families.
 def family_of(part, chapter, n):
+    # The reading parts first, and by part rather than by number: their sections
+    # are numbered either side of the teachable ones, so the `n <= …` ladder
+    # below would file nine sections of phonology under noun syntax.
+    if part == "I":
+        return "sounds"
+    if part == "IV":
+        return "word-formation"
+    if part == "VI":
+        return "prosody"
     if part == "II":
         if chapter == "Conjugation.":
             return "verb-forms"
@@ -563,66 +590,71 @@ def numeric(n):
 def build(secs):
     """Topics, plus an account of what happened to every source section.
 
-    Nothing may merely disappear. A section either lands in a topic or is
-    dropped for a stated reason: what the parser silently discards, the student
-    can never read, and without the account there is no way to tell the two
-    apart from the outside.
-    """
-    dropped, keep = [], []
-    for s in secs:
-        if s["part"] in TEACHABLE_PARTS:
-            keep.append(s)
-        else:
-            # Sounds, word-formation and prosody: none of them can carry a
-            # translation exercise.
-            dropped.append({"n": s["n"], "reason": "part-not-teachable",
-                            "part": s["part"]})
+    Nothing may merely disappear, and now nothing merely goes unread either. A
+    section either lands in a topic that is taught or in one that is only read,
+    and which of the two it is is *declared here* rather than inferred later
+    from whether anyone wrote questions for it.
 
+    The three rules that used to drop a section now decide that instead. Each
+    of them is a statement about exercises — a part that cannot carry a
+    translation, a heading that divides the book, a run too thin to test — and
+    none of them is a statement about prose. Bennett's Part VI cannot be
+    drilled; it can be read, and until now it was in the app nowhere at all.
+    """
     groups = []
-    for s in keep:
+    for s in secs:
         if s["opens_group"] or not groups:
             groups.append({"heading": s["heading"], "chapter": s["chapter"],
                            "part": s["part"], "secs": []})
         groups[-1]["secs"].append(s)
 
-    topics, order = [], 0
-    assigned = {}
+    topics = []
+    assigned, reading = {}, {}
     for g in groups:
         heading = (g["heading"] or "").strip().rstrip(".")
-        if heading.upper() in SKIP_HEADINGS:
-            for s in g["secs"]:
-                dropped.append({"n": s["n"], "reason": "structural-heading",
-                                "heading": heading})
-            continue
         n0 = numeric(g["secs"][0]["n"])
         title = TITLE_OVERRIDE.get(n0) or titleise(heading)
-
         text = "\n".join(s["raw"] for s in g["secs"] if s["raw"])
-        if plain_len(text) < 120:
-            # Too thin to teach — but say so, rather than letting it vanish.
-            for s in g["secs"]:
-                dropped.append({"n": s["n"], "reason": "below-min-length",
-                                "chars": plain_len(text)})
-            continue
+
+        # Why this page has no exercise, or None if it has one. Checked in the
+        # order the book makes them true: a thin run inside prosody is prosody.
+        if g["part"] not in TEACHABLE_PARTS:
+            why = "part-not-teachable"
+        elif heading.upper() in SKIP_HEADINGS:
+            why = "structural-heading"
+        elif plain_len(text) < 120:
+            why = "below-min-length"
+        else:
+            why = None
 
         nums = [s["n"] for s in g["secs"]]
         ref = f"{nums[0]}" if len(nums) == 1 else f"{nums[0]}-{nums[-1]}"
         slug = re.sub(r"[^a-z0-9]+", "-", fold_ascii(title.lower())).strip("-")
         if len(slug) > 40:  # trim to a word boundary, never mid-word
             slug = slug[:40].rsplit("-", 1)[0]
-        order += 10
         topic_id = f"bn-{n0:03d}-{slug}"
         for n in nums:
             assigned[n] = topic_id
-        topics.append({
+        topic = {
             "id": topic_id,
             "ref": ref,
             "title": title,
             "family": family_of(g["part"], g["chapter"], n0),
-            "order": order,
+            "order": 0,     # numbered over the finished list, below
             "text": text,
-        })
-    return topics, assigned, dropped
+        }
+        if why:
+            topic["readingOnly"] = True
+            reading[topic_id] = why
+        topics.append(topic)
+
+    # Book order, and only then the ordinal: reading topics interleave with
+    # teachable ones — Part IV sits between §145 and §161 — so `order` cannot be
+    # counted out as the groups are built.
+    topics.sort(key=lambda t: numeric(t["ref"].split("-")[0]))
+    for i, t in enumerate(topics):
+        t["order"] = (i + 1) * 10
+    return topics, assigned, reading
 
 
 def parse(src):
@@ -656,15 +688,23 @@ if __name__ == "__main__":
     print(f"parsed §{ints[0]}-{ints[-1]} ({len(sections)} sections, {len(gaps)} gaps)",
           file=sys.stderr)
 
-    topics, assigned, dropped = build(sections)
+    topics, assigned, reading = build(sections)
     json.dump(topics, io.open(a.out, "w", encoding="utf8"), ensure_ascii=False, indent=1)
-    print(f"{len(topics)} topics -> {a.out}", file=sys.stderr)
+    taught = [t for t in topics if not t.get("readingOnly")]
+    print(f"{len(topics)} topics ({len(taught)} taught, {len(reading)} reading) "
+          f"-> {a.out}", file=sys.stderr)
     print("families: " + ", ".join(f"{k} {v}" for k, v in
           Counter(t["family"] for t in topics).items()), file=sys.stderr)
+    print("reading by reason: " + ", ".join(f"{k} {v}" for k, v in
+          Counter(reading.values()).items()), file=sys.stderr)
 
     # The account of every source section. `grammar-report.mjs` checks that it
-    # balances; a section that is neither assigned nor dropped is a parser bug.
-    lengths = sorted(plain_len(t["text"]) for t in topics)
+    # balances; a section that is not assigned is a parser bug. Reading topics
+    # are assigned like any other — they hold sections a student can open — and
+    # `reading` says which topics those are, and why the book has no exercise
+    # there. Per topic rather than per section, because that is the grain the
+    # fact is true at.
+    lengths = sorted(plain_len(t["text"]) for t in taught)
     def pct(p):
         return lengths[min(len(lengths) - 1, int(len(lengths) * p))] if lengths else 0
     manifest = {
@@ -673,15 +713,19 @@ if __name__ == "__main__":
                    "licence": "public domain (Project Gutenberg #15665)"},
         "sourceSections": nums,
         "assigned": dict(sorted(assigned.items(), key=lambda kv: numeric(kv[0]))),
-        "dropped": sorted(dropped, key=lambda d: numeric(d["n"])),
+        "reading": reading,
+        "dropped": [],
         "topics": len(topics),
+        "readingTopics": len(reading),
         "families": dict(Counter(t["family"] for t in topics)),
+        # Of the taught topics: this is the shape a question set is written to,
+        # and averaging in a page of prosody would measure neither.
         "sizeChars": {"min": lengths[0] if lengths else 0, "median": pct(0.5),
                       "p90": pct(0.9), "max": lengths[-1] if lengths else 0},
     }
     out_manifest = os.path.join(os.path.dirname(a.out), "grammar-coverage.json")
     json.dump(manifest, io.open(out_manifest, "w", encoding="utf8"),
               ensure_ascii=False, indent=1)
-    unaccounted = set(nums) - set(assigned) - {d["n"] for d in dropped}
-    print(f"accounted: {len(assigned)} assigned, {len(dropped)} dropped, "
+    unaccounted = set(nums) - set(assigned)
+    print(f"accounted: {len(assigned)} assigned, "
           f"{len(unaccounted)} unaccounted -> {out_manifest}", file=sys.stderr)

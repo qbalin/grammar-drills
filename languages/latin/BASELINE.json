@@ -11,35 +11,68 @@
  "measuredAt": "2026-08-12",
  "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
  "grammar": {
-  "topics": 114,
-  "families": 9,
+  "topics": 149,
+  "taughtTopics": 114,
+  "readingTopics": 35,
+  "families": 12,
   "familyCounts": {
-   "nouns": 9,
-   "adj": 5,
-   "pron": 9,
+   "sounds": 9,
+   "nouns": 12,
+   "adj": 6,
+   "pron": 10,
    "verb-forms": 17,
-   "particles": 3,
-   "noun-syntax": 18,
+   "particles": 4,
+   "word-formation": 6,
+   "noun-syntax": 21,
    "adj-pron-syntax": 13,
-   "verb-syntax": 28,
-   "style": 12
+   "verb-syntax": 29,
+   "style": 12,
+   "prosody": 10
   },
   "textChars": {
+   "_of": "the taught topics — the shape a question set is written to",
    "min": 147,
    "median": 1803,
    "p90": 6010,
    "max": 17790
   },
-  "sourceSections": 376,
-  "assigned": 325,
-  "dropped": {
-   "part-not-teachable": 39,
-   "structural-heading": 12
+  "readingTextChars": {
+   "min": 46,
+   "median": 944,
+   "p90": 2748,
+   "max": 4484
   },
-  "rowShapedLines": 1921,
-  "tableRowsRecovered": 2098,
-  "romanPoints": 9,
+  "sourceSections": 376,
+  "assigned": 376,
+  "dropped": {},
+  "reading": {
+   "part-not-teachable": 25,
+   "structural-heading": 10
+  },
+  "rowShapedLines": 2034,
+  "tableRowsRecovered": 2212,
+  "romanPoints": 14,
   "_note": [
+   "2026-08-12: the whole book ships. Parts I (sounds), IV (word formation)",
+   "and VI (prosody) used to be dropped, along with 12 sections behind a",
+   "heading the parser read as structural — §12 'A Noun is the name of a",
+   "person, place, thing, or quality' among them. All of it was dropped for",
+   "one reason, that none of it can carry an English->Latin translation, and",
+   "that is a fact about questions rather than about reading. So it is now",
+   "shipped as 35 topics marked `readingOnly`: read and paged through like any",
+   "other page, never studied, and not counted in anybody's progress.",
+   "",
+   "Nothing already here moved. The 114 taught topics have the same ids, the",
+   "same titles, the same refs, the same families and byte-identical text; no",
+   "test file was orphaned and no progress migrated. `assigned` 325 -> 376 and",
+   "`dropped` 51 -> 0, because those 51 sections became topics rather than",
+   "because anything new was found. rowShapedLines 1921 -> 2034 and",
+   "tableRowsRecovered 2098 -> 2212 are the tables in the new parts: Part I's",
+   "vowel tables and Part VI's metrical schemes had never been through G6.",
+   "textChars are unchanged, being of the taught topics alone — the shape a",
+   "question set is written to, which averaging in a page of prosody would",
+   "measure neither of.",
+   "",
    "Six of these numbers were already stale when the 2026-08-05 rebuild",
    "remeasured them — median 1773 -> 1803, p90 6008 -> 6010, max 17786 ->",
    "17790, rowShapedLines 1911 -> 1921, tableRowsRecovered 2103 -> 2098,",
@@ -77,10 +110,16 @@
   ],
   "lane": {
    "book": "Lane, A Latin Grammar for Schools and Colleges (1898)",
-   "range": "397-2427",
-   "topics": 459,
-   "families": 18,
+   "range": "1-2739",
+   "taughtRange": "397-2428",
+   "topics": 668,
+   "taughtTopics": 459,
+   "readingTopics": 209,
+   "families": 22,
    "familyCounts": {
+    "parts-of-speech": 2,
+    "sound": 42,
+    "formation": 60,
     "inflection": 1,
     "inflection-of-the-noun": 69,
     "inflection-of-the-verb": 79,
@@ -98,21 +137,32 @@
     "some-occasional-peculiarities-of-verbs": 6,
     "indirect-discourse": 8,
     "pronouns": 17,
-    "numerals": 7
+    "numerals": 7,
+    "prosody": 105
    },
    "textChars": {
+    "_of": "the taught topics",
     "min": 141,
     "median": 1607,
     "p90": 4642,
     "max": 14307
    },
-   "sourceSections": 2745,
-   "assigned": 2031,
-   "dropped": {
-    "part-not-teachable": 714
+   "readingTextChars": {
+    "min": 172,
+    "median": 804,
+    "p90": 2833,
+    "max": 8271
    },
-   "rowShapedLines": 1364,
-   "tableRowsRecovered": 1462,
+   "sourceSections": 2745,
+   "assigned": 2739,
+   "dropped": {
+    "apparatus": 6
+   },
+   "reading": {
+    "part-not-teachable": 209
+   },
+   "rowShapedLines": 1728,
+   "tableRowsRecovered": 1826,
    "romanPoints": 0,
    "crosswalk": {
     "topicsReachable": 431,
@@ -154,9 +204,32 @@
     "disagree about how many topics a grammar has, and agree about how long",
     "one should be.",
     "",
-    "The 714 dropped are §§1-396 (sound and word formation) and §§2428-2745",
-    "(prosody and versification), the ranges answering to the Parts Bennett's",
-    "own parser drops. G9 has not been read through."
+    "2026-08-12: the whole book ships. The 714 sections that used to be",
+    "dropped — §§1-396 (parts of speech, sound, word formation) and",
+    "§§2428-2739 (prosody and versification) — are now 209 topics marked",
+    "`readingOnly`, read like any other page and studied like none. That is",
+    "37% of Lane's text, which was the largest hole in either pack. maxTopics",
+    "went 600 -> 800 to hold them; nothing else about the shape moved, and",
+    "textChars is unchanged because it is of the taught topics alone.",
+    "",
+    "Six sections stay dropped and are the only ones in either pack: §§2740-",
+    "2745, Lane's key to the authors he cites, of which §2745 alone is 317,000",
+    "characters of 'Ter. = Terentius'. It is apparatus rather than grammar —",
+    "the same thing Bennett's parser has always refused at INDEX OF THE",
+    "SOURCES — and it is keyed on the heading rather than the number, so a",
+    "Gutenberg re-release cannot renumber it back in. G10 exists to say that",
+    "nothing else is ever dropped.",
+    "",
+    "No taught topic moved: the same 459 ids, titles, refs and families, and",
+    "byte-identical text but for ln-2424-expression-of-fractions, whose group",
+    "always ran to §2428 and was cut at §2427 by the old range filter. Its ref",
+    "is now 2424-2428. To keep those ids fixed the titler runs the syllabus",
+    "first and the reading pages second: Lane heads a chapter of word",
+    "formation 'Denominatives' exactly as it heads §839, and naming them in",
+    "one pass would have renamed §839 and orphaned its questions.",
+    "",
+    "rowShapedLines 1364 -> 1728 and tableRowsRecovered 1462 -> 1826 are the",
+    "tables in the new parts. G9 has not been read through."
    ]
   }
  },

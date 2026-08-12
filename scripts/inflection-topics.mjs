@@ -40,7 +40,7 @@ import { gzipSync } from "node:zlib";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { compileFold, words } from "@lang-tutor/core";
-import { loadGrammar, loadLemmaIndex, loadProfile, packDir } from "./lib/pack.mjs";
+import { loadGrammar, loadLemmaIndex, loadProfile, packDir, teachable } from "./lib/pack.mjs";
 import { loadParadigms } from "./lib/paradigms.mjs";
 import { noPoolMessage, poolsPresent, readPool } from "./lib/pools.mjs";
 
@@ -52,7 +52,10 @@ const at = (name) => {
 
 const dir = packDir(argv);
 const profile = loadProfile(dir);
-const grammar = loadGrammar(dir);
+// The syllabus, not the whole book. A pack ships every section of its source,
+// and the pages the book sets no exercise on are read rather than taught — so
+// nothing here may file a question or a quotation under one of them.
+const grammar = teachable(loadGrammar(dir));
 const planning = argv.includes("--plan");
 const fold = compileFold(profile.fold);
 

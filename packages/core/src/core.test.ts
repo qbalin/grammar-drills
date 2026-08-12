@@ -889,6 +889,85 @@ describe("Session mastery", () => {
     expect(map.find((t) => t.sectionId === "ag1")?.due).toBe(true);
     expect(map.find((t) => t.sectionId === "ag3")?.hasTests).toBe(false);
     expect(map.find((t) => t.sectionId === "ag1")?.hasTests).toBe(true);
+    // A gap, not a page the book sets no exercise on: nobody has written
+    // anything for `ag3` yet, and somebody should.
+    expect(map.find((t) => t.sectionId === "ag3")?.readingOnly).toBe(false);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Pages the book sets no exercise on.
+//
+// A pack ships every section of its source, prosody and word formation with the
+// rest, because what a student cannot reach they can never read. Those pages are
+// declared `readingOnly` by the parser — never inferred from having no tests,
+// which is what keeps an orphaned test file a defect rather than a silent
+// reclassification.
+
+describe("reading-only sections", () => {
+  /** The fixture plus one page of prosody, which no question is written for. */
+  const withReading: ContentData = {
+    ...fixture,
+    grammar: [
+      ...fixture.grammar,
+      {
+        id: "ag9",
+        ref: "9",
+        title: "Prosody",
+        family: "nouns",
+        text: "Of feet and metres.",
+        order: 9,
+        readingOnly: true,
+      },
+    ],
+  };
+
+  it("is read and paged through like any other section", () => {
+    const c = new Content(withReading, testProfile);
+    // In `sections`, which is what the reader pages and what the map draws, so
+    // the page is one swipe from the section before it.
+    expect(c.sections().map((s) => s.id)).toEqual(["ag1", "ag2", "ag9"]);
+    expect(c.getSection("ag9")?.text).toBe("Of feet and metres.");
+  });
+
+  it("is never a topic the study walk can land on, tests or no tests", () => {
+    // Tests filed under it as well, which the gates forbid and this proves the
+    // engine survives: the declaration decides, not the absence of a bank.
+    const c = new Content(
+      { ...withReading, tests: { ...fixture.tests, ag9: fixture.tests.ag1! } },
+      testProfile,
+    );
+    expect(c.testsFor("ag9").length).toBeGreaterThan(0);
+    expect(c.topicIds()).toEqual(["ag1", "ag2"]);
+  });
+
+  it("does not dilute the progress a student has actually made", () => {
+    // The regression this guards: shipping the rest of the book would otherwise
+    // drop everyone's figure overnight, because the denominator grew and their
+    // work did not shrink. A number that falls when the *book* gets longer is
+    // not a number about the student.
+    const at = new Date("2026-01-01T00:00:00Z");
+    const before = new Session(new Content(fixture, testProfile));
+    const after = new Session(new Content(withReading, testProfile));
+    before.gradeTopic("ag1", 4, at);
+    after.gradeTopic("ag1", 4, at);
+    expect(after.overallPercent()).toBe(before.overallPercent());
+    expect(after.overallPercent()).toBeGreaterThan(0);
+
+    const family = (s: Session) =>
+      s.familyProgress().find((f) => f.id === "nouns")!;
+    expect(family(after).percent).toBe(family(before).percent);
+    // Still listed under its family, though: it is a page of the book and the
+    // index is how a reader finds it.
+    expect(family(after).topics.map((t) => t.sectionId)).toContain("ag9");
+  });
+
+  it("says so on the map rather than reading as an unwritten topic", () => {
+    const s = new Session(new Content(withReading, testProfile));
+    const row = s.grammarMap().find((t) => t.sectionId === "ag9")!;
+    expect(row.readingOnly).toBe(true);
+    expect(row.hasTests).toBe(false);
+    expect(row.mastery).toBeUndefined();
   });
 });
 

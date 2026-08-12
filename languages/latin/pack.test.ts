@@ -37,10 +37,15 @@ describe("the Latin profile", () => {
     expect(profile.l2.name).toBe("Latin");
   });
 
-  it("keeps the nine families in book order", () => {
+  it("keeps the twelve families in book order", () => {
+    // Bennett's own order, and all of it. `sounds`, `word-formation` and
+    // `prosody` are the parts no translation exercise can be written for; they
+    // ship and are read, so they are on the map where the book puts them rather
+    // than missing from it.
     expect(profile.families.map((f) => f.id)).toEqual([
-      "nouns", "adj", "pron", "verb-forms", "particles",
-      "noun-syntax", "adj-pron-syntax", "verb-syntax", "style",
+      "sounds", "nouns", "adj", "pron", "verb-forms", "particles",
+      "word-formation", "noun-syntax", "adj-pron-syntax", "verb-syntax",
+      "style", "prosody",
     ]);
     // Never abbreviated: a map is for finding your way, and "Ptcl" tells a
     // student nothing about where they are.

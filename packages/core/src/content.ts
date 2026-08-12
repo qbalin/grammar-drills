@@ -200,10 +200,18 @@ export class Content {
     );
   }
 
-  /** Section ids that actually have tests, in book order — the teachable topics. */
+  /**
+   * Section ids that actually have tests, in book order — the teachable topics.
+   *
+   * Two tests, and they are not the same one. Having tests is what the study
+   * sweep needs to know; `readingOnly` is what the *book* says, and it is
+   * checked as well rather than trusted to imply the other. A crosswalk row
+   * that reached a page of prosody would give it a bank it was never written
+   * for, and the study cursor would land on scansion.
+   */
   topicIds(grammarId?: string): string[] {
     return this.sections(grammarId)
-      .filter((s) => this.testsFor(s.id).length > 0)
+      .filter((s) => !s.readingOnly && this.testsFor(s.id).length > 0)
       .map((s) => s.id);
   }
 

@@ -678,13 +678,15 @@ export function App({ session, content, storage }: Props) {
   /**
    * Which silence a topic is in, if it is in one.
    *
-   * Nothing was written for it, or nothing was written for it that this deck
-   * has asked to be served — different things to be told, and only the second
-   * comes back when the preference goes off. Written once because the two keys
-   * that refuse to open on a silent topic, Enter for a run and `a` for the
-   * list, must not drift into wording it differently.
+   * Three of them now, and they are three different things to be told. The book
+   * sets no exercise on this page at all; or nothing has been written for it
+   * yet; or nothing was written that this deck has asked to be served — and
+   * only the last comes back when the preference goes off. Written once because
+   * the two keys that refuse to open on a silent topic, Enter for a run and `a`
+   * for the list, must not drift into wording it differently.
    */
   const silence = (target: TopicProgress): string | null => {
+    if (target.readingOnly) return `“${target.title}” is a page to read; it has no exercise.`;
     if (!target.hasTests) return `No tests for “${target.title}” yet.`;
     if (target.questions === 0) return `Nothing quoted for “${target.title}” yet.`;
     return null;
@@ -1588,6 +1590,11 @@ function FamilyList({
         // "0 topics" already on the line is what says it.
         const empty =
           f.topics.length > 0 && f.topics.every((t) => t.questions === 0);
+        // A family the book sets no exercise anywhere in. Its glyphs can never
+        // fill, so it shows none: an empty bar beside Prosody reports a failure
+        // that never happened.
+        const reading =
+          f.topics.length > 0 && f.topics.every((t) => t.readingOnly);
         return (
           <Box key={f.id} flexDirection="column">
             <Box>
@@ -1599,14 +1606,20 @@ function FamilyList({
                 color={f.percent > 0 ? "green" : "gray"}
                 dimColor={!on && f.percent === 0}
               >
-                {summaryGlyphs(f.percent)}
+                {reading ? " ".repeat(SUMMARY_CELLS) : summaryGlyphs(f.percent)}
               </Text>
               <Text bold={on} color={on ? "cyan" : undefined} dimColor={!on}>
-                {` ${String(Math.round(f.percent * 100)).padStart(3)}%  ${String(f.topics.length).padStart(2)} topic${f.topics.length === 1 ? "" : "s"}`}
+                {reading
+                  ? `       ${String(f.topics.length).padStart(2)} topic${f.topics.length === 1 ? "" : "s"}`
+                  : ` ${String(Math.round(f.percent * 100)).padStart(3)}%  ${String(f.topics.length).padStart(2)} topic${f.topics.length === 1 ? "" : "s"}`}
               </Text>
               {empty && (
                 <Text dimColor>
-                  {quotedOnly ? "  · nothing quoted" : "  · no questions"}
+                  {reading
+                    ? "  · reading only"
+                    : quotedOnly
+                      ? "  · nothing quoted"
+                      : "  · no questions"}
                 </Text>
               )}
             </Box>
@@ -1735,9 +1748,13 @@ function GrammarMap({
           ) : null}
           {topic.due ? <Text color="yellow"> · due</Text> : null}
           {topic.frontier ? <Text color="cyan"> · resumes here</Text> : null}
-          {/* Two silences, and which one this is decides whether the topic is
-              coming back: nothing was written here, or nothing quoted was. */}
-          {!topic.hasTests ? <Text dimColor> · no tests</Text> : null}
+          {/* Three silences, and which one this is decides whether the topic is
+              coming back: the book sets no exercise here at all, or nothing was
+              written here yet, or nothing quoted was. */}
+          {topic.readingOnly ? <Text dimColor> · reading only</Text> : null}
+          {!topic.readingOnly && !topic.hasTests ? (
+            <Text dimColor> · no tests</Text>
+          ) : null}
           {topic.hasTests && quotedOnly && topic.questions === 0 ? (
             <Text dimColor> · nothing quoted</Text>
           ) : null}

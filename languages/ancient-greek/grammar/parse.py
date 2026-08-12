@@ -229,6 +229,13 @@ def examples_of(section):
 # boundaries are his: 286 is where SUBSTANTIVES turns to ADJECTIVES, 355 where
 # NUMERALS turns to VERBS, and so on down Part IV's chapter list.
 def family_of(n):
+    # The two reading parts first. Their sections are numbered inside the
+    # teachable ones' range, so the `n <= …` ladder below would file 188
+    # sections of letters and accent under "nouns".
+    if n <= 188:
+        return "sounds"                   # letters, sounds, syllables, accent
+    if 822 <= n <= 899:
+        return "word-formation"
     if n <= 285:
         return "nouns"                    # declension and the substantives
     if n <= 324:
@@ -254,8 +261,9 @@ def family_of(n):
     return "style"                        # grammatical and rhetorical figures
 
 
-# Parts that cannot carry a translation exercise, with the reason recorded.
-def dropped_part(n):
+# Parts that carry no translation exercise, with the reason recorded. They ship
+# and are read like any other page; nothing is written against them.
+def reading_part(n):
     if n <= 188:
         return "part-not-teachable"       # letters, sounds, syllables, accent
     if 822 <= n <= 899:
@@ -343,55 +351,48 @@ def slugify(title):
 def build(sections, min_chars, max_chars):
     """Topics, plus an account of what happened to every source section.
 
-    Nothing may merely disappear: a section is either assigned to a topic or
-    dropped for a stated reason, and grammar-report checks the two add up.
-    What the parser silently discards, the student can never read.
+    Nothing may merely disappear, and nothing merely goes unread. Every section
+    is assigned to a topic; a topic the book sets no exercise on is marked
+    `readingOnly` and recorded with the reason it carries none. Smyth's letters
+    and accent cannot be drilled by an English->Greek translation, but they can
+    be read, and grammar-report checks the account adds up.
     """
-    dropped, keep = [], []
-    for s in sections:
-        reason = dropped_part(s["n"])
-        if reason:
-            dropped.append({"n": s["n"], "reason": reason})
-        else:
-            keep.append(s)
-
+    dropped = []
     groups = []
-    for s in keep:
+    for s in sections:
         # A run is broken by a new heading, and also by a family boundary: the
         # chapters that span one are the ones whose halves belong on different
-        # parts of the map.
+        # parts of the map. Teachability is a third boundary, and for the same
+        # reason — a page with an exercise and one without are not one topic.
         same = (groups and groups[-1]["owner"] is s["owner"]
-                and family_of(groups[-1]["secs"][0]["n"]) == family_of(s["n"]))
+                and family_of(groups[-1]["secs"][0]["n"]) == family_of(s["n"])
+                and reading_part(groups[-1]["secs"][0]["n"]) == reading_part(s["n"]))
         if not same:
             groups.append({"owner": s["owner"], "heading": s["heading"],
                            "secs": []})
         groups[-1]["secs"].append(s)
 
-    topics, order, assigned = [], 0, {}
+    topics, order, assigned, reading = [], 0, {}, {}
     used = {}
     for g in groups:
         heading = (g["heading"] or "").strip()
         nums = [s["n"] for s in g["secs"]]
-        if heading.upper().rstrip(".") in SKIP_HEADINGS and nums[0] not in TITLE_OVERRIDE:
-            for n in nums:
-                dropped.append({"n": n, "reason": "structural-heading",
-                                "heading": heading})
-            continue
+        why = reading_part(nums[0])
+        if not why and heading.upper().rstrip(".") in SKIP_HEADINGS \
+                and nums[0] not in TITLE_OVERRIDE:
+            why = "structural-heading"
 
         base = TITLE_OVERRIDE.get(nums[0]) or titleise(heading)
         if not base:
-            for n in nums:
-                dropped.append({"n": n, "reason": "untitled-run"})
-            continue
+            # No heading anywhere above it — a run with no name cannot be a row
+            # on the map, so its own first section is the address it gets.
+            base = f"§ {nums[0]}"
+            why = why or "untitled-run"
 
         for piece in split_run(g["secs"], max_chars):
             piece_nums = [s["n"] for s in piece]
             text = "\n".join(section_text(s) for s in piece).strip()
-            if len(text) < min_chars:
-                for n in piece_nums:
-                    dropped.append({"n": n, "reason": "below-min-length",
-                                    "chars": len(text)})
-                continue
+            piece_why = why or ("below-min-length" if len(text) < min_chars else None)
 
             title = base
             if len(piece) != len(g["secs"]):
@@ -430,8 +431,11 @@ def build(sections, min_chars, max_chars):
             }
             if examples:
                 topic["examples"] = examples
+            if piece_why:
+                topic["readingOnly"] = True
+                reading[topic_id] = piece_why
             topics.append(topic)
-    return topics, assigned, dropped
+    return topics, assigned, dropped, reading
 
 
 def split_run(secs, max_chars):
@@ -496,15 +500,20 @@ if __name__ == "__main__":
     print(f"parsed §{min(nums)}-{max(nums)} ({len(sections)} sections, "
           f"{len(gaps)} gaps)", file=sys.stderr)
 
-    topics, assigned, dropped = build(sections, a.min_chars, a.max_chars)
+    topics, assigned, dropped, reading = build(sections, a.min_chars, a.max_chars)
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     json.dump(topics, io.open(a.out, "w", encoding="utf8"),
               ensure_ascii=False, indent=1)
-    print(f"{len(topics)} topics -> {a.out}", file=sys.stderr)
+    taught = [t for t in topics if not t.get("readingOnly")]
+    print(f"{len(topics)} topics ({len(taught)} taught, {len(reading)} reading) "
+          f"-> {a.out}", file=sys.stderr)
     print("families: " + ", ".join(f"{k} {v}" for k, v in
           sorted(Counter(t["family"] for t in topics).items())), file=sys.stderr)
+    print("reading by reason: " + ", ".join(f"{k} {v}" for k, v in
+          sorted(Counter(reading.values()).items())), file=sys.stderr)
 
-    lengths = sorted(len(t["text"]) for t in topics)
+    # Of the taught topics: this is the shape a question set is written to.
+    lengths = sorted(len(t["text"]) for t in taught)
 
     def pct(p):
         return lengths[min(len(lengths) - 1, int(len(lengths) * p))] if lengths else 0
@@ -516,8 +525,12 @@ if __name__ == "__main__":
                               "digitization CC BY-SA 3.0"},
         "sourceSections": nums,
         "assigned": {str(k): v for k, v in sorted(assigned.items())},
+        # Which topics the book sets no exercise on, and why. Per topic; the
+        # sections are in `assigned` like any other, since all of them are read.
+        "reading": reading,
         "dropped": sorted(dropped, key=lambda d: d["n"]),
         "topics": len(topics),
+        "readingTopics": len(reading),
         "families": dict(Counter(t["family"] for t in topics)),
         "sizeChars": {"min": lengths[0] if lengths else 0, "median": pct(0.5),
                       "p90": pct(0.9), "max": lengths[-1] if lengths else 0},

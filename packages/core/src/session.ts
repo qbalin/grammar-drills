@@ -151,6 +151,13 @@ export interface TopicProgress {
   /** Cumulative score in [1, 4], or undefined if never graded. */
   mastery?: number;
   hasTests: boolean;
+  /**
+   * The book has no exercise on this page — see `GrammarSection.readingOnly`.
+   * A third absence, distinct from the two `hasTests` tells apart: a topic
+   * nothing has been written for *yet* is a gap somebody should close, and this
+   * one is the book being what it is.
+   */
+  readingOnly: boolean;
   due: boolean;
   /** Questions of this topic's bank that have been answered at least once. */
   answered: number;
@@ -203,6 +210,21 @@ export interface BankedQuestion {
 /** Mastery as a 0–1 fraction; an ungraded topic is 0. */
 function fraction(mastery: number | undefined): number {
   return ((mastery ?? MASTERY_MIN) - MASTERY_MIN) / (MASTERY_MAX - MASTERY_MIN);
+}
+
+/**
+ * Mean mastery over the topics of a list that can be studied at all.
+ *
+ * Written once because the whole-syllabus figure and the per-family one have to
+ * count the same population: a reading page belongs to a family and appears in
+ * its list, but it is not a thing anyone can be part-way through, so it is in
+ * neither denominator. Nothing teachable left means nothing to report, and 0 is
+ * what an empty average has always returned here.
+ */
+function meanMastery(topics: readonly TopicProgress[]): number {
+  const scored = topics.filter((t) => !t.readingOnly);
+  if (scored.length === 0) return 0;
+  return scored.reduce((sum, t) => sum + fraction(t.mastery), 0) / scored.length;
 }
 
 const ROUND_VIA: readonly RoundVia[] = ["review", "new", "drill", "sweep"];
@@ -1429,6 +1451,11 @@ export class Session {
    * student has asked not to be shown. The caller wanting the second reads
    * `hasTests && questions === 0`, and the two absences are not the same thing
    * to say to a student.
+   *
+   * `readingOnly` is a third, and the only one of the three that is not an
+   * absence at all: the book has no exercise on that page and never will. Every
+   * section is here whichever it is, because reading is what this list is drawn
+   * for — what a student cannot reach, they can never learn.
    */
   grammarMap(now: Date = new Date()): TopicProgress[] {
     const cursor = this.bookCursor();
@@ -1472,6 +1499,7 @@ export class Session {
         family: this.content.familyOf(s.family, this.grammarId),
         mastery,
         hasTests: this.content.testsFor(s.id).length > 0,
+        readingOnly: s.readingOnly === true,
         due: cards.some((c) => isDue(deserializeCard(c), now)),
         answered,
         questions,
@@ -1480,27 +1508,34 @@ export class Session {
     });
   }
 
-  /** `grammarMap()` bucketed into families, in display order. */
+  /**
+   * `grammarMap()` bucketed into families, in display order.
+   *
+   * `topics` is every topic, because the family is a shelf of the book and a
+   * page with no exercise is still on it. `percent` is over the teachable ones
+   * alone — see `overallPercent`. A family that is nothing but reading has an
+   * empty denominator and reports 0, which the caller tells from a family at
+   * the start of being learnt by looking at the topics rather than the number.
+   */
   familyProgress(now: Date = new Date()): FamilyProgress[] {
     const map = this.grammarMap(now);
     return this.families.map(({ id, label }) => {
       const topics = map.filter((t) => t.family === id);
-      const percent =
-        topics.length === 0
-          ? 0
-          : topics.reduce((sum, t) => sum + fraction(t.mastery), 0) /
-            topics.length;
-      return { id, label, topics, percent };
+      return { id, label, topics, percent: meanMastery(topics) };
     });
   }
 
-  /** Mean mastery across the whole syllabus, 0–1. */
+  /**
+   * Mean mastery across the whole syllabus, 0–1.
+   *
+   * Over what can be studied, not over what can be read. A pack ships the whole
+   * of its book, prosody and word formation included, and counting those as
+   * topics at nought would drop every student's figure the day the reading
+   * pages arrived — a number falling because the *book* grew says nothing true
+   * about the student.
+   */
   overallPercent(now: Date = new Date()): number {
-    const map = this.grammarMap(now);
-    if (map.length === 0) return 0;
-    return (
-      map.reduce((sum, t) => sum + fraction(t.mastery), 0) / map.length
-    );
+    return meanMastery(this.grammarMap(now));
   }
 
   progress(): Progress {

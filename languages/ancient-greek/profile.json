@@ -205,10 +205,12 @@
   },
 
   "families": [
+    { "id": "sounds", "label": "Letters, sounds & accent" },
     { "id": "nouns", "label": "Nouns" },
     { "id": "adj", "label": "Adjectives, adverbs & numerals" },
     { "id": "pron", "label": "Pronouns" },
     { "id": "verb-forms", "label": "Verb forms" },
+    { "id": "word-formation", "label": "Word formation" },
     { "id": "sentence-syntax", "label": "The simple sentence" },
     { "id": "adj-pron-syntax", "label": "Article, adjective & pronoun syntax" },
     { "id": "case-syntax", "label": "Cases & prepositions" },
@@ -271,7 +273,7 @@
 
   "grammarShape": {
     "minTopics": 100,
-    "maxTopics": 500,
+    "maxTopics": 700,
     "minTextChars": 120,
     "maxTextChars": 24000,
     "medianTextCharsRange": [400, 4000],

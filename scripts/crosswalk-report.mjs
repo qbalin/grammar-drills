@@ -32,6 +32,7 @@ import {
   loadTests,
   packDir,
   report,
+  teachable,
 } from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);
@@ -77,13 +78,32 @@ for (const book of secondaries) {
    */
   const strayOwn = Object.keys(walk.toPrimary).filter((id) => !ids.has(id));
   const strayPrimary = Object.keys(walk.fromPrimary).filter((id) => !primaryIds.has(id));
+  /*
+   * And a join onto a page with no exercise on it, which is the same argument
+   * again: a row that reaches Lane's prosody out of Bennett's dative would give
+   * scansion a bank of dative questions and put the study cursor on it. The
+   * crosswalk teaches one book out of another's syllabus, so both ends of every
+   * row have to be part of a syllabus.
+   */
+  const readingHere = new Set(topics.filter((t) => t.readingOnly).map((t) => t.id));
+  const readingThere = new Set(
+    primaryTopics.filter((t) => t.readingOnly).map((t) => t.id),
+  );
+  const untaughtEnd = [
+    ...Object.keys(walk.toPrimary).filter((id) => readingHere.has(id)),
+    ...Object.keys(walk.fromPrimary).filter((id) => readingThere.has(id)),
+  ];
   gates.push(
-    gate(`X1 ${book.id}`, strayOwn.length === 0 && strayPrimary.length === 0,
+    gate(`X1 ${book.id}`,
+      strayOwn.length === 0 && strayPrimary.length === 0 && untaughtEnd.length === 0,
       strayOwn.length
         ? `${strayOwn.length} ids not in ${book.label}: ${strayOwn.slice(0, 3).join(", ")}`
         : strayPrimary.length
           ? `${strayPrimary.length} ids not in ${primary.label}: ${strayPrimary.slice(0, 3).join(", ")}`
-          : `every crosswalk id names a live topic in both books`),
+          : untaughtEnd.length
+            ? `${untaughtEnd.length} rows join a reading-only topic, which no question ` +
+              `was written for: ${untaughtEnd.slice(0, 3).join(", ")}`
+            : `every crosswalk id names a live, teachable topic in both books`),
   );
 
   // What each of this book's topics would be served, gathered through the
@@ -99,12 +119,19 @@ for (const book of secondaries) {
     }
   }
 
-  const reached = topics.filter((t) => served.has(t.id));
-  const pct = (reached.length / topics.length) * 100;
+  /*
+   * Of the topics the crosswalk is *for*. This book's reading pages — Lane's
+   * prosody, its sound and word formation — were never meant to reach a
+   * question, so counting them here would measure how much of the book is
+   * grammar rather than how much of the grammar the table has covered.
+   */
+  const taught = teachable(topics);
+  const reached = taught.filter((t) => served.has(t.id));
+  const pct = (reached.length / taught.length) * 100;
   gates.push(
     gate(`X2 ${book.id}`, pct >= limits.topicsWithTestsPct,
-      `${reached.length} of ${topics.length} topics reachable (${pct.toFixed(1)}%, ` +
-        `want ≥${limits.topicsWithTestsPct}%)`),
+      `${reached.length} of ${taught.length} teachable topics reachable ` +
+        `(${pct.toFixed(1)}%, want ≥${limits.topicsWithTestsPct}%)`),
   );
 
   const thin = reached.filter((t) => {
@@ -136,8 +163,11 @@ for (const book of secondaries) {
       `(${((visible / total) * 100).toFixed(1)}%)`,
   );
 
+  // The work queue for the next pass at the table, so it lists what a row could
+  // still be written for. A reading page is not that: prosody would sit at the
+  // top of this list for ever and no row will ever reach it.
   const gap = new Map();
-  for (const t of topics) {
+  for (const t of taught) {
     if (served.has(t.id)) continue;
     gap.set(t.family, (gap.get(t.family) ?? 0) + 1);
   }
@@ -148,7 +178,7 @@ for (const book of secondaries) {
     );
   }
   if (argv.includes("--gaps")) {
-    for (const t of topics) {
+    for (const t of taught) {
       if (!served.has(t.id)) console.log(`    ${t.id}  ${book.style.refPrefix}${t.ref}  ${t.title}`);
     }
   }

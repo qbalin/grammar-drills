@@ -50,6 +50,34 @@ Ship the corpus's vocabulary alone and the app tells a student that a perfectly
 ordinary word is not a word, silently, with every gate green. See "How much to
 ship" in `scripts/reference/README.md`.
 
+## The whole book, and the part of it that is taught
+
+A pack ships **every numbered section of its source grammar**. Sounds, word
+formation and prosody carry no English→L2 translation exercise, and that is a
+fact about *questions*, not about reading: the parser marks their topics
+`readingOnly` rather than dropping them. They are in the index and the reader
+like any other page, and no question is ever written against one. `G10` is the
+gate that says so; the one thing a parser may still drop is a book's own
+apparatus — an index of cited sources, a key to author abbreviations — and it
+must name the reason `apparatus`.
+
+**`readingOnly` is declared, never derived from "this topic has no tests."**
+Derived, an orphaned test file would silently reclassify a real topic, which is
+the defect `C0` and `C1` exist to catch. Absent means teachable, and a teachable
+topic must have questions — a pack that says nothing inherits the strict rule,
+as with `attestation`. The parser records the reason per topic in its coverage
+manifest and `G11` holds the two in step.
+
+So there are two populations, and every gate has to know which it measures.
+`scripts/lib/pack.mjs` exports `teachable()` for the syllabus: the shape band
+(`G2`, `G3`), everything in `coverage-report`, `X2`/`X3`, the crosswalk, and all
+six offline generators read it. What reads the whole book instead is anything
+about a page a student can open — families, ids, order, `G6`, `G7` — and
+`Content.sections()`, which is what the reader pages through.
+
+In the engine, `overallPercent` and `familyProgress` count teachable topics
+only. A student's figure must not fall because the *book* grew.
+
 ## Commands
 
 ```bash

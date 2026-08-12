@@ -43,6 +43,7 @@ import {
   loadGrammarCoverage,
   loadProfile,
   packDir,
+  teachable,
 } from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);
@@ -91,22 +92,43 @@ for (const book of secondaries) {
 
   // section number -> this book's topic id, straight off the parser's account.
   const assigned = manifest.assigned;
+  /*
+   * The pages of each book the crosswalk has no business joining.
+   *
+   * The table is a model's answer about which grammar point a section teaches,
+   * and it was filled in over the whole book — including the parts that carry
+   * no exercise. A row landing on one of those would give a page of prosody the
+   * dative's bank of questions and put the study cursor on scansion. So it is
+   * refused here rather than gated later: `X1` is the backstop, this is the
+   * place it cannot happen.
+   */
+  const readingHere = new Set(topics.filter((t) => t.readingOnly).map((t) => t.id));
+  const readingThere = new Set(
+    primaryTopics.filter((t) => t.readingOnly).map((t) => t.id),
+  );
 
   const toPrimary = new Map();   // this book's topic -> primary topics
   const fromPrimary = new Map(); // primary topic -> this book's topics
   const strayTopics = new Set(); // named by the table, absent from the syllabus
   let rowsOutsideRange = 0;
+  let rowsIntoReading = 0;
 
   for (const [section, primaryTopicIds] of mapped) {
     const own = assigned[String(section)];
     if (!own) {
-      // The table covers a section the syllabus dropped — prosody, word
-      // formation — or one this parser never reached. Counted, not guessed at.
+      // A section this parser never reached, or one dropped as apparatus.
+      // Counted, not guessed at.
       rowsOutsideRange++;
       continue;
     }
+    if (readingHere.has(own)) {
+      // The table covers a section of prosody or word formation. It ships and
+      // it is read; it is not taught, so no row reaches it.
+      rowsIntoReading++;
+      continue;
+    }
     for (const id of primaryTopicIds) {
-      if (!primaryIds.has(id)) {
+      if (!primaryIds.has(id) || readingThere.has(id)) {
         strayTopics.add(id);
         continue;
       }
@@ -124,15 +146,23 @@ for (const book of secondaries) {
     fromPrimary: sorted(fromPrimary),
   };
 
-  const reached = topics.filter((t) => toPrimary.has(t.id));
+  // Both figures over the topics a row could ever join — the reading pages of
+  // either book are not a gap in the table, and counting them here would report
+  // the table as a third short of what `crosswalk-report` measures it at.
+  const taughtHere = teachable(topics);
+  const taughtThere = teachable(primaryTopics);
+  const reached = taughtHere.filter((t) => toPrimary.has(t.id));
   const pct = (n, of) => `${((n / of) * 100).toFixed(0)}%`;
   console.log(
-    `${book.label}: ${reached.length}/${topics.length} topics reach a ` +
-      `${primary.label} topic (${pct(reached.length, topics.length)}); ` +
-      `${fromPrimary.size}/${primaryTopics.length} the other way`,
+    `${book.label}: ${reached.length}/${taughtHere.length} teachable topics reach a ` +
+      `${primary.label} topic (${pct(reached.length, taughtHere.length)}); ` +
+      `${fromPrimary.size}/${taughtThere.length} the other way`,
   );
   if (rowsOutsideRange) {
     console.log(`  ${rowsOutsideRange} table rows name a section this syllabus does not carry`);
+  }
+  if (rowsIntoReading) {
+    console.log(`  ${rowsIntoReading} table rows name a page the book sets no exercise on`);
   }
   if (strayTopics.size) {
     console.log(
@@ -144,7 +174,7 @@ for (const book of secondaries) {
   // Where the gap is, by the foreign book's own families — which is the list a
   // model run would be pointed at, so it is printed rather than described.
   const gap = new Map();
-  for (const t of topics) {
+  for (const t of taughtHere) {
     if (toPrimary.has(t.id)) continue;
     gap.set(t.family, (gap.get(t.family) ?? 0) + 1);
   }

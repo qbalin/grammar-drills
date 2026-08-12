@@ -30,6 +30,7 @@ import {
   loadTests,
   packDir,
   report,
+  teachable,
 } from "./lib/pack.mjs";
 import { tally } from "./lib/quoted.mjs";
 import { openReference } from "./lib/reference.mjs";
@@ -64,7 +65,15 @@ const config = existsSync(configPath)
   : {};
 const band = { min: 400, max: 6000, pos: [], ...(config.band ?? {}) };
 
-const perTopic = grammar.map((t) => ({
+/*
+ * The syllabus. Every gate below is about the questions, so every gate below
+ * counts the topics questions are written for — not the reading pages the pack
+ * also ships. Asking C2 to find six tests for the dactylic hexameter would say
+ * nothing about the pack and would make C1's 100% unreachable by construction.
+ */
+const taught = teachable(grammar);
+
+const perTopic = taught.map((t) => ({
   topic: t,
   ...tally(tests[t.id] ?? []),
   target: targetFor(t, profile),
@@ -88,11 +97,25 @@ const perTopic = grammar.map((t) => ({
  */
 const known = new Set(grammar.map((t) => t.id));
 const orphans = Object.keys(tests).filter((id) => !known.has(id));
+/*
+ * And the third case, which is neither of the other two: a test set naming a
+ * topic that exists and is marked `readingOnly`. Not a stale filename — a
+ * generator that ignored the flag and wrote translation exercises for prosody.
+ * Reported apart from the orphans because the remedy is different: an orphan is
+ * regenerated under the current id, and this one should not exist at all.
+ */
+const readingIds = new Set(
+  grammar.filter((t) => t.readingOnly).map((t) => t.id),
+);
+const unteachable = Object.keys(tests).filter((id) => readingIds.has(id));
 gates.push(
-  gate("C0", orphans.length === 0,
+  gate("C0", orphans.length === 0 && unteachable.length === 0,
     orphans.length
       ? `${orphans.length} test set(s) name no topic in the syllabus — delete or regenerate: ${orphans.join(", ")}`
-      : `all ${Object.keys(tests).length} test sets name a topic that exists`),
+      : unteachable.length
+        ? `${unteachable.length} test set(s) name a reading-only topic, which the book ` +
+          `sets no exercise on — delete them: ${unteachable.slice(0, 5).join(", ")}`
+        : `all ${Object.keys(tests).length} test sets name a topic that exists`),
 );
 
 // --- C1: every teachable topic has questions at all --------------------------
@@ -267,14 +290,29 @@ if (existsSync(statsPath)) {
 
 if (!argv.includes("--json")) {
   console.log("\nper family:");
+  const readingPerFamily = new Map();
+  for (const t of grammar) {
+    if (!t.readingOnly) continue;
+    readingPerFamily.set(t.family, (readingPerFamily.get(t.family) ?? 0) + 1);
+  }
   for (const f of profile.families) {
     const s = byFamily.get(f.id) ?? { topics: 0, questions: 0 };
     const t = perTopic.filter((r) => r.topic.family === f.id);
     const tests_ = t.reduce((n, r) => n + r.tests, 0);
+    const onlyRead = readingPerFamily.get(f.id) ?? 0;
+    // A family the book sets no exercise anywhere in — Bennett's prosody — has
+    // no row of figures to give. Printing zeroes reads as a starved family
+    // rather than one with nothing to starve, which is the same mistake C3
+    // would make if it counted these.
+    if (s.topics === 0 && onlyRead > 0) {
+      console.log(`  ${f.label.padEnd(30)} ${String(onlyRead).padStart(3)} topics, reading only`);
+      continue;
+    }
     console.log(
       `  ${f.label.padEnd(30)} ${String(s.topics).padStart(3)} topics  ` +
         `${String(tests_).padStart(4)} tests  ${String(s.questions).padStart(5)} questions  ` +
-        `${(s.questions / Math.max(1, s.topics)).toFixed(1)} q/topic`,
+        `${(s.questions / Math.max(1, s.topics)).toFixed(1)} q/topic` +
+        (onlyRead ? `  (+${onlyRead} reading)` : ""),
     );
   }
 }

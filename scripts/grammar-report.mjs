@@ -28,6 +28,7 @@ import {
   packDir,
   percentile,
   report,
+  teachable,
 } from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);
@@ -48,9 +49,21 @@ const grammar = loadGrammar(dir, book);
 const coverage = loadGrammarCoverage(dir, book);
 const shape = book.shape;
 
+/*
+ * The syllabus, and the whole book.
+ *
+ * Two populations, and which gate measures which is the point of the split. The
+ * shape gates below — how long a topic is, how long the longest is — calibrate
+ * what one set of questions can cover, so they read `taught`. The rest —
+ * families, ids, order, whether a page renders at all — read `grammar`, because
+ * they are about anything a student can open.
+ */
+const taught = teachable(grammar);
+const readingTopics = grammar.length - taught.length;
+
 // Measured on the words, not on the inline emphasis markup around them.
 const size = new Map(grammar.map((t) => [t.id, plainText(t.text).trim().length]));
-const lengths = grammar.map((t) => size.get(t.id)).sort((a, b) => a - b);
+const lengths = taught.map((t) => size.get(t.id)).sort((a, b) => a - b);
 const median = percentile(lengths, 0.5);
 const p90 = percentile(lengths, 0.9);
 
@@ -68,25 +81,42 @@ gates.push(
   gate(
     "G1",
     grammar.length >= shape.minTopics && grammar.length <= shape.maxTopics,
-    `${grammar.length} topics (want ${shape.minTopics}–${shape.maxTopics})`,
+    `${grammar.length} topics, ${readingTopics} of them reading only ` +
+      `(want ${shape.minTopics}–${shape.maxTopics})`,
   ),
 );
 
-const tooThin = grammar.filter((t) => size.get(t.id) < shape.minTextChars);
+// Of the taught topics. A reading page is as long as the book made it, and a
+// run of six words under a structural heading is honestly six words; failing
+// the pack for it would be failing the pack for shipping the book.
+const tooThin = taught.filter((t) => size.get(t.id) < shape.minTextChars);
 gates.push(
   gate("G2", tooThin.length === 0,
     tooThin.length
-      ? `${tooThin.length} topics under ${shape.minTextChars} chars: ${tooThin.slice(0, 3).map((t) => t.id).join(", ")}`
-      : `every topic has at least ${shape.minTextChars} chars (min ${lengths[0]})`),
+      ? `${tooThin.length} taught topics under ${shape.minTextChars} chars: ${tooThin.slice(0, 3).map((t) => t.id).join(", ")}`
+      : `every taught topic has at least ${shape.minTextChars} chars (min ${lengths[0]})`),
 );
 
-const tooBig = grammar.filter((t) => size.get(t.id) > shape.maxTextChars);
+// The same, and for the same reason: this band is the calibration of how much
+// grammar one set of questions can cover.
+const tooBig = taught.filter((t) => size.get(t.id) > shape.maxTextChars);
 const inRange = median >= shape.medianTextCharsRange[0] && median <= shape.medianTextCharsRange[1];
 gates.push(
   gate("G3", inRange && p90 <= shape.p90TextCharsMax && tooBig.length === 0,
-    `min ${lengths[0]} · median ${median} · p90 ${p90} · max ${lengths[lengths.length - 1]}` +
+    `taught: min ${lengths[0]} · median ${median} · p90 ${p90} · max ${lengths[lengths.length - 1]}` +
       (tooBig.length ? ` — ${tooBig.length} over ${shape.maxTextChars}: ${tooBig.map((t) => t.id).join(", ")}` : "")),
 );
+
+// The reading pages are not gated on size, but a page nobody sized is a page
+// nobody looked at, so the distribution is printed beside the syllabus's.
+if (readingTopics) {
+  const rl = grammar.filter((t) => t.readingOnly).map((t) => size.get(t.id))
+    .sort((a, b) => a - b);
+  console.log(
+    `reading: ${readingTopics} topics · min ${rl[0]} · median ${percentile(rl, 0.5)} ` +
+      `· p90 ${percentile(rl, 0.9)} · max ${rl[rl.length - 1]}`,
+  );
+}
 
 // A topic several times the median is the one a single set of tests can never
 // cover; flag it for splitting rather than failing the pack over it.
@@ -199,6 +229,63 @@ if (coverage) {
     gate("G8", false,
       `no content/${book.manifest} — the parser must account for every source section`),
   );
+}
+
+// --- G10: the whole book is readable -----------------------------------------
+//
+// The gate G8 never was. G8 checks that the account adds up, which it does just
+// as well when half the book is dropped; this checks that nothing is. A section
+// with no exercise on it is a topic marked `readingOnly`, not a section left
+// out — "cannot be drilled" was never a reason a student should be unable to
+// read the page.
+//
+// One exception, and it must be declared as one: a book's own apparatus — an
+// index of cited sources, a key to author abbreviations — is not grammar and is
+// not shipped. Lane's is §§2740-2745 and is 317,000 characters of "Ter. =
+// Terentius". `dropped` may hold that and nothing else.
+const APPARATUS = new Set(["apparatus"]);
+
+if (coverage) {
+  const stowaways = coverage.dropped.filter((d) => !APPARATUS.has(d.reason));
+  gates.push(
+    gate("G10", stowaways.length === 0,
+      stowaways.length
+        ? `${stowaways.length} source sections are dropped for a reason other than ` +
+          `apparatus and so can be read nowhere: ` +
+          `${stowaways.slice(0, 5).map((d) => `§${d.n} (${d.reason})`).join(", ")}`
+        : coverage.dropped.length
+          ? `every section is readable except ${coverage.dropped.length} of declared apparatus`
+          : "every source section is readable"),
+  );
+
+  // --- G11: the content and the manifest say the same thing ------------------
+  //
+  // `readingOnly` is a declaration, and a declaration nobody checks is a way to
+  // dodge C1 — mark a topic unteachable and its missing questions stop being a
+  // gap. So the flag in the shipped content and the reason in the reviewable
+  // manifest have to agree exactly, both ways round. A hand-edit of `content/`
+  // cannot invent a reading page, and a parser cannot forget to record one.
+  const declared = new Set(Object.keys(coverage.reading ?? {}));
+  const flagged = new Set(grammar.filter((t) => t.readingOnly).map((t) => t.id));
+  const unrecorded = [...flagged].filter((id) => !declared.has(id));
+  const unflagged = [...declared].filter((id) => !flagged.has(id));
+  gates.push(
+    gate("G11", unrecorded.length === 0 && unflagged.length === 0,
+      unrecorded.length
+        ? `${unrecorded.length} topics are marked readingOnly with no reason recorded: ` +
+          `${unrecorded.slice(0, 3).join(", ")}`
+        : unflagged.length
+          ? `${unflagged.length} topics have a reason recorded but ship as teachable: ` +
+            `${unflagged.slice(0, 3).join(", ")}`
+          : `${flagged.size} reading topics, each with a recorded reason`),
+  );
+  if (flagged.size) {
+    const why = Object.values(coverage.reading ?? {}).reduce((acc, r) => {
+      acc[r] = (acc[r] ?? 0) + 1;
+      return acc;
+    }, {});
+    console.log(`reading by reason: ${Object.entries(why).map(([r, n]) => `${r} ${n}`).join(" · ")}`);
+  }
 }
 
 // --- G9: the part a human has to do ------------------------------------------

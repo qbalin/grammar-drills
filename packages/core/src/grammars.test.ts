@@ -186,6 +186,15 @@ describe("a pack with more than one grammar", () => {
     expect(orphan.questions).toBe(0);
     expect(orphan.mastery).toBeUndefined();
     expect(s.serveTest("sg-300-orphan")).toBeUndefined();
+    /*
+     * And it is *not* a reading page, which looks identical from here and is
+     * not the same thing at all. This topic is grammar the table has not got to
+     * yet — a gap somebody should close, and one X2 measures — where a reading
+     * page is the book having no exercise there to begin with. Pinned so the
+     * two cannot quietly become one state: collapsing them would turn every
+     * unfinished row of the crosswalk into a page nobody need ever look at.
+     */
+    expect(orphan.readingOnly).toBe(false);
   });
 
   it("keeps a cursor per book, and never follows one into the wrong syllabus", () => {

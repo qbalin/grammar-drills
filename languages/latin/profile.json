@@ -176,15 +176,18 @@
   },
 
   "families": [
+    { "id": "sounds", "label": "Sounds & spelling" },
     { "id": "nouns", "label": "Nouns" },
     { "id": "adj", "label": "Adjectives & adverbs" },
     { "id": "pron", "label": "Pronouns" },
     { "id": "verb-forms", "label": "Verb forms" },
     { "id": "particles", "label": "Particles" },
+    { "id": "word-formation", "label": "Word formation" },
     { "id": "noun-syntax", "label": "Noun syntax" },
     { "id": "adj-pron-syntax", "label": "Adjective & pronoun syntax" },
     { "id": "verb-syntax", "label": "Verb syntax" },
-    { "id": "style", "label": "Word-order & style" }
+    { "id": "style", "label": "Word-order & style" },
+    { "id": "prosody", "label": "Prosody" }
   ],
   "fallbackFamily": "style",
 
@@ -261,6 +264,9 @@
       "idPrefix": "ln",
       "refPrefix": "§ ",
       "families": [
+        { "id": "parts-of-speech", "label": "Parts of speech" },
+        { "id": "sound", "label": "Sound" },
+        { "id": "formation", "label": "Word formation" },
         { "id": "inflection", "label": "Inflection" },
         { "id": "inflection-of-the-noun", "label": "Inflection of the noun" },
         { "id": "inflection-of-the-verb", "label": "Inflection of the verb" },
@@ -278,12 +284,13 @@
         { "id": "some-occasional-peculiarities-of-verbs", "label": "Peculiarities of verbs" },
         { "id": "indirect-discourse", "label": "Indirect discourse" },
         { "id": "pronouns", "label": "Pronouns" },
-        { "id": "numerals", "label": "Numerals" }
+        { "id": "numerals", "label": "Numerals" },
+        { "id": "prosody", "label": "Prosody" }
       ],
       "fallbackFamily": "sentences",
       "grammarShape": {
         "minTopics": 300,
-        "maxTopics": 600,
+        "maxTopics": 800,
         "minTextChars": 120,
         "maxTextChars": 24000,
         "medianTextCharsRange": [400, 4000],
