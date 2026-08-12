@@ -2,6 +2,9 @@ node_modules/
 dist/
 *.tsbuildinfo
 .DS_Store
+# This checkout's own Claude Code configuration: local working habits rather
+# than anything about the packs, and not something a second clone should inherit.
+.claude/
 # Left behind by the packs' Python grammar parsers.
 __pycache__/
 # Progress files are user data, never committed to the app repo

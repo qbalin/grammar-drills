@@ -2,7 +2,7 @@ import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { registerSW } from "virtual:pwa-register";
 import { Content, Session } from "@lang-tutor/core";
-import { loadContent } from "./content-loader.js";
+import { loadContent, loadGrammarBook } from "./content-loader.js";
 import { profile } from "./pack.js";
 import { SyncingStorage } from "./storage/sync.js";
 import { persistIfSilent } from "./storage/quota.js";
@@ -32,6 +32,25 @@ function Boot() {
         const storage = new SyncingStorage();
         const progress = await storage.load();
         if (cancelled) return;
+        /*
+         * The book they were reading, if it is not the one that ships with the
+         * bundle. A further grammar is fetched on demand, so on a cold start it
+         * is not here yet — and `Session.grammarId` refuses to name a book it
+         * cannot draw, which would quietly put a Lane reader back in Bennett
+         * every time they closed the tab.
+         *
+         * Failure is not fatal: falling back to the primary is exactly what the
+         * refusal does anyway, and a student offline with an empty cache should
+         * get the app rather than an error page.
+         */
+        if (progress?.grammarId && progress.grammarId !== content.primaryGrammar) {
+          try {
+            await loadGrammarBook(content, progress.grammarId);
+          } catch {
+            /* the primary is always loaded, and is where they will land */
+          }
+          if (cancelled) return;
+        }
         setState({
           t: "ready",
           content,

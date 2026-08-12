@@ -194,6 +194,7 @@
       "url": "https://www.gutenberg.org/files/15665/15665-h/15665-h.htm",
       "licence": "public domain (Project Gutenberg ebook #15665)"
     },
+    "label": "Bennett",
     "idPrefix": "bn",
     "refPrefix": "§ ",
     "paradigmLabels": [
@@ -245,6 +246,57 @@
     "p90TextCharsMax": 8000,
     "maxFamilySharePct": 45
   },
+
+  "grammars": [
+    {
+      "id": "lane",
+      "label": "Lane",
+      "content": "grammars/lane.json",
+      "manifest": "grammars/lane-coverage.json",
+      "source": {
+        "title": "Lane, A Latin Grammar for Schools and Colleges (1898)",
+        "url": "https://www.gutenberg.org/files/44653/44653-h/44653-h.htm",
+        "licence": "public domain (Project Gutenberg #44653)"
+      },
+      "idPrefix": "ln",
+      "refPrefix": "§ ",
+      "families": [
+        { "id": "inflection", "label": "Inflection" },
+        { "id": "inflection-of-the-noun", "label": "Inflection of the noun" },
+        { "id": "inflection-of-the-verb", "label": "Inflection of the verb" },
+        { "id": "sentences", "label": "Sentences" },
+        { "id": "agreement", "label": "Agreement" },
+        { "id": "use-of-the-noun", "label": "Use of the noun" },
+        { "id": "use-of-the-verb", "label": "Use of the verb" },
+        { "id": "the-compound-sentence-or-coordination", "label": "Coordination" },
+        { "id": "the-complex-sentence-or-subordination", "label": "Subordination" },
+        { "id": "the-indirect-question", "label": "The indirect question" },
+        { "id": "the-relative-sentence", "label": "The relative sentence" },
+        { "id": "the-conjunctive-particle-sentence", "label": "The conjunctive particle sentence" },
+        { "id": "connection-of-separate-sentences-or-periods", "label": "Connecting sentences" },
+        { "id": "nouns-of-the-verb", "label": "Nouns of the verb" },
+        { "id": "some-occasional-peculiarities-of-verbs", "label": "Peculiarities of verbs" },
+        { "id": "indirect-discourse", "label": "Indirect discourse" },
+        { "id": "pronouns", "label": "Pronouns" },
+        { "id": "numerals", "label": "Numerals" }
+      ],
+      "fallbackFamily": "sentences",
+      "grammarShape": {
+        "minTopics": 300,
+        "maxTopics": 600,
+        "minTextChars": 120,
+        "maxTextChars": 24000,
+        "medianTextCharsRange": [400, 4000],
+        "p90TextCharsMax": 8000,
+        "maxFamilySharePct": 45
+      },
+      "coverage": {
+        "topicsWithTestsPct": 93,
+        "minTestsPerTopic": 6,
+        "minQuestionsPerTopic": 16
+      }
+    }
+  ],
 
   "coverage": {
     "minTestsPerTopic": 6,

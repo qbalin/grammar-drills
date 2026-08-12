@@ -13,6 +13,16 @@
 import type { Family, Profile } from "./pack.js";
 
 /**
+ * What these need of a profile, which is only the list and its fallback.
+ *
+ * Named rather than taking the whole `Profile`, because a pack with more than
+ * one grammar has more than one family list: each book's index is drawn in its
+ * own order, and a further grammar carries its own `families` for the reason
+ * `SecondaryGrammar` sets out. Both shapes satisfy this.
+ */
+export type FamilySpec = Pick<Profile, "families" | "fallbackFamily">;
+
+/**
  * A family id. Plain string: the set is per-language, so there is no union to
  * check against here. `familyOf` is what makes an unknown value safe.
  */
@@ -21,7 +31,7 @@ export type FamilyId = string;
 export type { Family };
 
 /** The family a section belongs to, defaulting sanely on unknown content. */
-export function familyOf(profile: Profile, family: string | undefined): FamilyId {
+export function familyOf(profile: FamilySpec, family: string | undefined): FamilyId {
   return family && profile.families.some((f) => f.id === family)
     ? family
     : profile.fallbackFamily;
@@ -32,6 +42,6 @@ export function familyOf(profile: Profile, family: string | undefined): FamilyId
  * abbreviated form: a map is for finding your way, and "Ptcl" tells a student
  * nothing about where they are.
  */
-export function familyLabel(profile: Profile, id: FamilyId): string {
+export function familyLabel(profile: FamilySpec, id: FamilyId): string {
   return profile.families.find((f) => f.id === id)?.label ?? id;
 }

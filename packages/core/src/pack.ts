@@ -25,6 +25,11 @@ export interface GrammarStyle {
    * whole syllabus is someone else's work and says so.
    */
   source: { title: string; url: string; licence: string };
+  /**
+   * What to call the book where there is no room for the citation — the switch
+   * between a pack's grammars, which needs a word rather than a title page.
+   */
+  label: string;
   /** Section ids must start with this, e.g. "bn" for Bennett. */
   idPrefix: string;
   /** Rendered before a section reference, e.g. "§ ". */
@@ -37,6 +42,64 @@ export interface GrammarStyle {
   headingFlags: string;
   /** Longer than this and a caps line is prose, not a heading. */
   headingMaxLength: number;
+}
+
+/**
+ * A further grammar of the same language, shipped beside the pack's primary one.
+ *
+ * The same syllabus taught out of a different book: its own sections, its own
+ * order, its own prose. Not a translation of the primary grammar and not a
+ * subset of it — two grammars of one language agree on the language and on
+ * nothing else, cutting it into topics that only sometimes line up.
+ *
+ * Only what actually differs is carried. Typography is a property of the
+ * language rather than of the book — the case stubs that mark a paradigm and
+ * the shape of a heading are the same in any Latin grammar — so `paradigmLabels`
+ * and the heading rules are inherited from `Profile.grammar` and not restated.
+ * `families` and `grammarShape` are *not* inherited, because they are exactly
+ * where two books disagree: a family list is one book's table of contents, and a
+ * shape gate is calibrated against one book's idea of how long a topic is.
+ *
+ * Nothing at runtime reads this yet. It is here so the offline gates can hold a
+ * second grammar to the same standard as the first while it is being built.
+ */
+export interface SecondaryGrammar {
+  /** Short id, used in filenames and as the grammar's key, e.g. "lane". */
+  id: string;
+  /** Human name for reports, e.g. "Lane". */
+  label: string;
+  /** Where its sections live, relative to `content/`. */
+  content: string;
+  /** Where its section-accounting manifest lives, relative to `content/`. */
+  manifest: string;
+  source: GrammarStyle["source"];
+  /** Section ids must start with this, e.g. "ln" for Lane. */
+  idPrefix: string;
+  /** Rendered before a section reference, e.g. "§ ". */
+  refPrefix: string;
+  /** This book's own table of contents, in the order it draws. */
+  families: Family[];
+  fallbackFamily: string;
+  grammarShape: Profile["grammarShape"];
+  /**
+   * How much of this book the pack's questions actually reach.
+   *
+   * Only the two gates that can differ. A further grammar's questions are the
+   * primary's, reached through the crosswalk, so everything the pack measures
+   * about the questions themselves — how many are attested, how much of the
+   * vocabulary band they use, how many prompts repeat — is already answered once
+   * for the pack and is not answered again per book.
+   *
+   * What is genuinely this book's is how much of it can be taught at all:
+   * `topicsWithTestsPct` is 100 for the syllabus the questions were written
+   * against and is not for any other, because no crosswalk reaches every topic
+   * of a book nobody has generated questions for.
+   */
+  coverage: {
+    topicsWithTestsPct: number;
+    minTestsPerTopic: number;
+    minQuestionsPerTopic: number;
+  };
 }
 
 export interface Profile {
@@ -85,6 +148,11 @@ export interface Profile {
   families: Family[];
   fallbackFamily: string;
   grammar: GrammarStyle;
+  /**
+   * Further grammars of the same language. Absent where a pack has one book,
+   * which is every pack today — so saying nothing keeps the old shape valid.
+   */
+  grammars?: SecondaryGrammar[];
   questions: {
     defaultKind: string;
     /** Kinds whose prompt is L1 and whose answer is L2: alignable, and drilled. */
@@ -306,6 +374,61 @@ function parseFold(raw: unknown): FoldSpec {
   return spec;
 }
 
+/** A family list and the fallback that must name one of them. */
+function parseFamilies(raw: unknown, fallback: unknown, path: string) {
+  const families = array(raw, `${path}.families`).map((f, i) =>
+    fields<Family>(f, `${path}.families[${i}]`, { id: "string", label: "string" }),
+  );
+  if (!families.length) throw new PackError(`${path}.families: at least one family is required`);
+  const seen = new Set<string>();
+  for (const f of families) {
+    if (seen.has(f.id)) throw new PackError(`${path}.families: duplicate id "${f.id}"`);
+    seen.add(f.id);
+  }
+  if (typeof fallback !== "string" || !seen.has(fallback)) {
+    throw new PackError(`${path}.fallbackFamily: must name one of ${path}.families`);
+  }
+  return { families, fallbackFamily: fallback };
+}
+
+function parseShape(raw: unknown, path: string): Profile["grammarShape"] {
+  const shape = fields<Profile["grammarShape"]>(raw, path, {
+    minTopics: "number", maxTopics: "number", minTextChars: "number",
+    maxTextChars: "number", medianTextCharsRange: "any", p90TextCharsMax: "number",
+    maxFamilySharePct: "number",
+  });
+  const range = array(shape.medianTextCharsRange, `${path}.medianTextCharsRange`);
+  if (range.length !== 2 || typeof range[0] !== "number" || typeof range[1] !== "number") {
+    throw new PackError(`${path}.medianTextCharsRange: expected [min, max] numbers`);
+  }
+  return shape;
+}
+
+function parseSecondaryGrammars(raw: unknown, primaryPrefix: string): SecondaryGrammar[] {
+  const seen = new Set<string>([primaryPrefix]);
+  return array(raw, "profile.grammars").map((g, i) => {
+    const path = `profile.grammars[${i}]`;
+    const entry = fields<SecondaryGrammar>(g, path, {
+      id: "string", label: "string", content: "string", manifest: "string",
+      source: "any", idPrefix: "string", refPrefix: "string", families: "any",
+      fallbackFamily: "string", grammarShape: "any", coverage: "any",
+    });
+    fields(entry.coverage, `${path}.coverage`, {
+      topicsWithTestsPct: "number", minTestsPerTopic: "number",
+      minQuestionsPerTopic: "number",
+    });
+    fields(entry.source, `${path}.source`, { title: "string", url: "string", licence: "string" });
+    // A shared id prefix would make two books' section ids collide, and a
+    // collision here is silent: the ids look well-formed and name the wrong book.
+    if (seen.has(entry.idPrefix)) {
+      throw new PackError(`${path}.idPrefix: "${entry.idPrefix}" is already used by another grammar`);
+    }
+    seen.add(entry.idPrefix);
+    const { families, fallbackFamily } = parseFamilies(entry.families, entry.fallbackFamily, path);
+    return { ...entry, families, fallbackFamily, grammarShape: parseShape(entry.grammarShape, `${path}.grammarShape`) };
+  });
+}
+
 /** Parse and validate a raw profile. Throws `PackError` naming the offending path. */
 export function parseProfile(raw: unknown): Profile {
   const top = object(raw, "profile");
@@ -314,7 +437,7 @@ export function parseProfile(raw: unknown): Profile {
     "questions", "citationsVersion", "ui", "storage", "grammarShape", "coverage",
   ];
   /** Present or absent; a pack that predates them stays valid. */
-  const optional = ["enclitics", "paradigms", "attestation"];
+  const optional = ["enclitics", "paradigms", "attestation", "grammars"];
   const allowed = [...required, ...optional];
   for (const key of Object.keys(top)) {
     if (!allowed.includes(key)) throw new PackError(`profile.${key}: unknown key`);
@@ -327,22 +450,11 @@ export function parseProfile(raw: unknown): Profile {
   }
   if (typeof top.id !== "string" || !top.id) throw new PackError("profile.id: expected a non-empty string");
 
-  const families = array(top.families, "profile.families").map((f, i) =>
-    fields<Family>(f, `profile.families[${i}]`, { id: "string", label: "string" }),
-  );
-  if (!families.length) throw new PackError("profile.families: at least one family is required");
-  const seen = new Set<string>();
-  for (const f of families) {
-    if (seen.has(f.id)) throw new PackError(`profile.families: duplicate id "${f.id}"`);
-    seen.add(f.id);
-  }
-  const fallbackFamily = top.fallbackFamily;
-  if (typeof fallbackFamily !== "string" || !seen.has(fallbackFamily)) {
-    throw new PackError("profile.fallbackFamily: must name one of profile.families");
-  }
+  const { families, fallbackFamily } = parseFamilies(top.families, top.fallbackFamily, "profile");
 
   const grammar = fields<GrammarStyle>(top.grammar, "profile.grammar", {
-    source: "any", idPrefix: "string", refPrefix: "string", paradigmLabels: "any",
+    source: "any", label: "string", idPrefix: "string", refPrefix: "string",
+    paradigmLabels: "any",
     headingPattern: "string", headingFlags: "string", headingMaxLength: "number",
   });
   fields(grammar.source, "profile.grammar.source", {
@@ -401,11 +513,7 @@ export function parseProfile(raw: unknown): Profile {
       webProgressKey: "string", webSyncKey: "string", cliDir: "string",
       githubPath: "string", exportPrefix: "string", dictionaryCacheName: "string",
     }),
-    grammarShape: fields<Profile["grammarShape"]>(top.grammarShape, "profile.grammarShape", {
-      minTopics: "number", maxTopics: "number", minTextChars: "number",
-      maxTextChars: "number", medianTextCharsRange: "any", p90TextCharsMax: "number",
-      maxFamilySharePct: "number",
-    }),
+    grammarShape: parseShape(top.grammarShape, "profile.grammarShape"),
     coverage: fields<Profile["coverage"]>(top.coverage, "profile.coverage", {
       minTestsPerTopic: "number", minQuestionsPerTopic: "number",
       topicsWithTestsPct: "number", maxDuplicatePromptPct: "number",
@@ -419,11 +527,10 @@ export function parseProfile(raw: unknown): Profile {
       { maxMissesPerQuestion: "number", maxUnattestedForms: "number" },
     );
   }
-  oneOf(profile.l2.direction, "profile.l2.direction", ["ltr", "rtl"] as const);
-  const range = array(profile.grammarShape.medianTextCharsRange, "profile.grammarShape.medianTextCharsRange");
-  if (range.length !== 2 || typeof range[0] !== "number" || typeof range[1] !== "number") {
-    throw new PackError("profile.grammarShape.medianTextCharsRange: expected [min, max] numbers");
+  if (top.grammars !== undefined) {
+    profile.grammars = parseSecondaryGrammars(top.grammars, grammar.idPrefix);
   }
+  oneOf(profile.l2.direction, "profile.l2.direction", ["ltr", "rtl"] as const);
   return profile;
 }
 

@@ -323,7 +323,12 @@ for (const topic of grammar) {
   }
   if (FILL) {
     const deficit = target - have.length;
-    if (deficit > 0 && (!ONLY_THIN || have.length < profile.coverage.minTestsPerTopic || deficit > 0)) {
+    // `--only-thin` means below the *floor*, not merely below the target: it is
+    // what the coverage report points at when C2 is red, and the whole point is
+    // that it selects less work than `--fill`. The trailing `|| deficit > 0`
+    // this used to carry was already implied by the outer test, so the two
+    // flags picked the same topics and the restriction never bit.
+    if (deficit > 0 && (!ONLY_THIN || have.length < profile.coverage.minTestsPerTopic)) {
       work.push({ topic, have, want: deficit });
     }
   } else if (have.length === 0) {

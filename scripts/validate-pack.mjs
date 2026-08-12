@@ -33,7 +33,7 @@ import { gunzipSync } from "node:zlib";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { compileFold, profileHash } from "@lang-tutor/core";
-import { REPO, gate, loadProfile, packDir, report } from "./lib/pack.mjs";
+import { REPO, gate, grammarsOf, loadProfile, packDir, report } from "./lib/pack.mjs";
 import { openReference, requireDictionary } from "./lib/reference.mjs";
 
 const argv = process.argv.slice(2);
@@ -169,7 +169,22 @@ const here = dirname(fileURLToPath(import.meta.url));
 const ALLOW_INCOMPLETE = argv.includes("--allow-incomplete");
 let reportsOk = true;
 if (!argv.includes("--profile-only")) {
-  for (const script of ["grammar-report.mjs", "coverage-report.mjs", "attestation-report.mjs"]) {
+  /*
+   * The grammar report runs once per book the pack ships. A shape gate is
+   * calibrated against one book's idea of how long a topic is, so two books
+   * averaged together are measured neither — and a second grammar that nothing
+   * checks is a second grammar that rots.
+   */
+  const runs = [
+    ...grammarsOf(profile).map((g) => ["grammar-report.mjs", ...(g.primary ? [] : ["--grammar", g.id])]),
+    ["coverage-report.mjs"],
+    ["attestation-report.mjs"],
+    // Trivial and silent for a pack with one grammar; the one gate a pack with
+    // two needs and the coverage report cannot give, because a further book's
+    // questions are the primary's seen through the crosswalk.
+    ["crosswalk-report.mjs"],
+  ];
+  for (const [script, ...extra] of runs) {
     // The flag is handed to the coverage report rather than used to ignore its
     // exit code: only it knows which of its gates are about how much has been
     // written and which are about whether it is right, and a draft is excused
@@ -178,7 +193,7 @@ if (!argv.includes("--profile-only")) {
     // report: a sentence made of words the pack cannot confirm does not get
     // better by writing more sentences, which is the distinction the coverage
     // report's own ABOUT_QUANTITY comment draws.
-    const args = ["--import", "tsx", join(here, script), "--pack", dir];
+    const args = ["--import", "tsx", join(here, script), "--pack", dir, ...extra];
     // Forwarded, or the coverage report answers C5 and C7 from the pack while
     // the gates above answered from the dictionary — one command, two
     // references, and no sign in the output that they differed.
