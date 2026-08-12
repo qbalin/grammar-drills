@@ -27,6 +27,18 @@ function stateLine(state: SyncState): string {
 }
 
 /**
+ * The pack's further books, named, for the lines that say what is on the device.
+ *
+ * Named rather than counted: a student who reads Lane wants to be told Lane is
+ * here, and "and one other book" is a sentence they can do nothing with. Empty
+ * for a pack that teaches out of one book, which is most of them — so every
+ * sentence below has to read as well without this as with it.
+ */
+function bookList(): string {
+  return (profile.grammars ?? []).map((g) => g.label).join(" and ");
+}
+
+/**
  * Everything that is not studying: where progress goes, and whether the
  * dictionary is available on a plane.
  */
@@ -37,7 +49,7 @@ export function SettingsSheet({
   onExport,
   onImport,
   onPull,
-  dictionaryReady,
+  offlineReady,
   dictionaryFailed,
   onCacheDictionary,
   caching,
@@ -60,7 +72,8 @@ export function SettingsSheet({
   onExport: () => void;
   onImport: () => void;
   onPull: () => void;
-  dictionaryReady: boolean;
+  /** Every file the launch fetches, in hand — not the dictionary alone. */
+  offlineReady: boolean;
   /** A download this device tried and could not finish. */
   dictionaryFailed: boolean;
   onCacheDictionary: () => void;
@@ -81,6 +94,7 @@ export function SettingsSheet({
   onReset: () => void;
   onClose: () => void;
 }) {
+  const books = bookList();
   const [draft, setDraft] = useState<SyncConfig>(
     config ?? {
       token: "",
@@ -177,23 +191,27 @@ export function SettingsSheet({
 
       <div className="section-title">Offline</div>
       <p className="field__hint" style={{ marginTop: 0 }}>
-        {dictionaryReady
-          ? `Everything is on this device — the grammar, every test, and the
-             dictionary that turns a word you met into its headword. About
-             ${offlineSize()} came down the wire, and nothing here needs a
-             connection now.`
+        {offlineReady
+          ? `Everything is on this device — the grammar${
+              books ? `, ${books} beside it` : ""
+            }, every test, the tables, and the dictionary that turns a word you
+             met into its headword. About ${offlineSize()} came down the wire,
+             and nothing here needs a connection now.`
           : caching
-            ? `Fetching the dictionary — ${dictionarySize()}, once. It happens by
+            ? `Fetching the dictionary — ${dictionarySize()}, once — and the
+               tables${books ? ` and ${books}` : ""} behind it. It happens by
                itself when the app opens, so you need not wait on this screen.`
             : `The grammar and every test are on this device. The dictionary is
-               another ${dictionarySize()} and is fetched at launch; this device
+               another ${dictionarySize()}, and the tables${
+                 books ? ` and ${books}` : ""
+               } come after it; all of it is fetched at launch, and this device
                has not managed it yet.`}
       </p>
       {/* Only when there is something to do. The download is no longer
           something a student has to think of — the button is here for the one
           that failed, and a green tick beside a thing nobody asked for is just
           another control to read past. */}
-      {!dictionaryReady && (
+      {!offlineReady && (
         <div className="actions">
           <button className="btn" onClick={onCacheDictionary} disabled={caching}>
             {caching
@@ -207,9 +225,17 @@ export function SettingsSheet({
 
       <div className="section-title">Space on this device</div>
       <p className="field__hint" style={{ marginTop: 0 }}>
+        {/* Not "out of the X this browser allows the app", which it used to
+            say and which a student would read as a shelf set aside for this
+            app. It is nothing of the kind: browsers work the ceiling out from
+            the free space on the whole device and every site draws on it, so
+            the figure moves with what else is stored and is usually large
+            enough to be meaningless. Reported because a small one is worth
+            seeing, phrased so a big one is not mistaken for an allowance. */}
         {space.usage
-          ? `${formatBytes(space.usage.usage)} in use, out of the
-             ${formatBytes(space.usage.quota)} this browser allows the app.`
+          ? `${formatBytes(space.usage.usage)} in use. The browser puts its
+             ceiling at ${formatBytes(space.usage.quota)} — a figure for the
+             device as a whole, shared with every other site.`
           : "This browser will not say how much room the app is using."}
       </p>
       {space.persisted ? (

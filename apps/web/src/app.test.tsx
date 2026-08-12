@@ -20,7 +20,11 @@ import {
 import { testProfile } from "@lang-tutor/core/testing";
 import { profile } from "./pack.js";
 import { App } from "./app.js";
-import { loadDictionary, loadParadigms } from "./content-loader.js";
+import {
+  loadDictionary,
+  loadParadigms,
+  prefetchGrammarBooks,
+} from "./content-loader.js";
 import { SyncingStorage } from "./storage/sync.js";
 
 // The app fetches the dictionary as soon as it is up. These tests supply it
@@ -39,6 +43,8 @@ const PARADIGMS = [
 // last to be asked for. Flagged separately from the dictionary because the two
 // failures look nothing alike to a student.
 const paradigmFile = { available: true };
+/** The pack's further books, which are fetched at launch and nothing else. */
+const books = { available: true };
 /**
  * The burst, as a spy. Its own module is tested where it can be — the canvas
  * cannot be, since jsdom has no `Path2D` — and what these scenarios are about
@@ -61,6 +67,12 @@ vi.mock("./content-loader.js", async () => {
     loadParadigms: vi.fn(async () => {
       if (!paradigmFile.available) throw new Error("offline");
       return new ParadigmIndex(PARADIGMS);
+    }),
+    loadGrammarBook: vi.fn(async () => {}),
+    // Fetched at launch and never parsed, so a spy is the whole of it: there is
+    // no index to hand back and nothing on screen to check it by.
+    prefetchGrammarBooks: vi.fn(async () => {
+      if (!books.available) throw new Error("offline");
     }),
   };
 });
@@ -1344,6 +1356,8 @@ describe("fetching the content", () => {
   beforeEach(() => {
     vi.mocked(loadDictionary).mockClear();
     vi.mocked(loadParadigms).mockClear();
+    vi.mocked(prefetchGrammarBooks).mockClear();
+    books.available = true;
   });
 
   it("asks for the dictionary at launch, with nothing having wanted it", async () => {
@@ -1382,6 +1396,72 @@ describe("fetching the content", () => {
     fireEvent(window, new Event("online"));
 
     await waitFor(() => expect(loadParadigms).toHaveBeenCalled());
+  });
+
+  /*
+   * The pack's further books used to be fetched by the switch that opened them
+   * and cached by nothing at all — so a student who had read the whole app onto
+   * their device, and could see Lane offered in the switcher, met "could not
+   * open Lane" the one time it mattered. They come down at launch now, with
+   * everything else.
+   */
+  it("takes the further books at launch too, after the tables", async () => {
+    mount();
+
+    await waitFor(() => expect(prefetchGrammarBooks).toHaveBeenCalled());
+    // Last of the three: the file a student may never open must not delay the
+    // one every gesture wants.
+    expect(vi.mocked(loadParadigms).mock.invocationCallOrder[0]).toBeLessThan(
+      vi.mocked(prefetchGrammarBooks).mock.invocationCallOrder[0],
+    );
+  });
+
+  it("does not fetch the books when the dictionary could not be got", async () => {
+    dictionary.available = false;
+    mount();
+
+    await waitFor(() => expect(loadDictionary).toHaveBeenCalled());
+    expect(prefetchGrammarBooks).not.toHaveBeenCalled();
+  });
+
+  /*
+   * A book that would not come down is the one link in the chain with nothing
+   * to say: the switch raises its own toast if it is ever reached with no
+   * connection, and a launch that announced a book nobody has asked for would
+   * be a warning about a screen the student is not on.
+   */
+  it("carries on quietly when a book cannot be fetched", async () => {
+    books.available = false;
+    mount();
+
+    await waitFor(() => expect(prefetchGrammarBooks).toHaveBeenCalled());
+    expect(screen.queryByText(/Could not open/)).toBeNull();
+  });
+
+  /*
+   * "Everything is on this device" is the sentence a student checks before
+   * getting on a plane, so it has to wait for everything. It used to be said on
+   * the strength of the dictionary alone, with the tables and the books still
+   * in the air behind it.
+   */
+  it("says everything is here once everything is, and names the books", async () => {
+    const user = userEvent.setup();
+    mount();
+    await waitFor(() => expect(prefetchGrammarBooks).toHaveBeenCalled());
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    expect(screen.getByText(/Everything is on this device/)).toBeDefined();
+    expect(screen.getByText(/Lane beside it/)).toBeDefined();
+  });
+
+  it("does not say it while a book is still missing", async () => {
+    books.available = false;
+    const user = userEvent.setup();
+    mount();
+    await waitFor(() => expect(prefetchGrammarBooks).toHaveBeenCalled());
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    expect(screen.queryByText(/Everything is on this device/)).toBeNull();
   });
 });
 

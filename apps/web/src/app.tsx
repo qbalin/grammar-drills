@@ -23,6 +23,7 @@ import {
   loadDictionary,
   loadGrammarBook,
   loadParadigms,
+  prefetchGrammarBooks,
 } from "./content-loader.js";
 import type { ParadigmIndex } from "./paradigm-index.js";
 import { useConfetti } from "./confetti/Confetti.js";
@@ -244,6 +245,12 @@ export function App({ content, session, storage }: Props) {
   const [paradigms, setParadigms] = useState<ParadigmIndex>();
   const [paradigmsLoading, setParadigmsLoading] = useState(false);
   const [paradigmsFailed, setParadigmsFailed] = useState(false);
+  // The pack's further books, which have no index to be the proof they arrived
+  // — nothing is parsed until one is opened — so their fetch is remembered
+  // instead. Settings is the only thing that asks: it is what stands behind
+  // "everything is on this device", and a pack with no further books has this
+  // the moment the prefetch runs.
+  const [booksReady, setBooksReady] = useState(false);
   // What the browser says about the space this app is holding, for the panel in
   // Settings. Read when that sheet opens rather than kept live: it is a figure
   // to look at when you go looking, and asking on every render would be a
@@ -993,11 +1000,15 @@ export function App({ content, session, storage }: Props) {
    * `frater` does not change, which is a plain falsehood about a noun with a
    * full paradigm. The sheet is told instead, and can offer the fetch again.
    */
-  const ensureParadigms = useCallback(() => {
-    if (paradigms) return;
+  const ensureParadigms = useCallback((): Promise<void> => {
+    if (paradigms) return Promise.resolve();
     setParadigmsFailed(false);
     setParadigmsLoading(true);
-    void loadParadigms()
+    // The promise is handed back as well as acted on, for the one caller that
+    // has something to say when the fetch is over: Settings reads the space in
+    // use, and reading it while the largest file was still coming down reported
+    // a figure short by the paradigms.
+    return loadParadigms()
       .then(setParadigms)
       .catch(() => setParadigmsFailed(true))
       .finally(() => setParadigmsLoading(false));
@@ -1015,24 +1026,36 @@ export function App({ content, session, storage }: Props) {
    * narrow window where a student is faster than the download.
    *
    * In order rather than at once: the dictionary is what nearly every gesture
-   * wants and the paradigms are what one of them does, so the common case does
-   * not queue behind the rare one on a phone's connection. And through
+   * wants, the paradigms are what one of them does, and the pack's further
+   * books are what a student may never open — so the common case does not queue
+   * behind the rare one on a phone's connection. And through
    * `ensureDictionary`, not `loadDictionary`, so that a prefetch and a tap
    * share one path — the citation refresh and the failed-state flag are that
    * function's business and would otherwise have to be remembered twice. It
    * does mean both indexes are built at boot rather than on first use, which
    * costs a moment of a phone's CPU to save every later gesture its wait.
    *
+   * The books are fetched and not parsed, which is why they are the one link
+   * with nothing to report. A failure here costs a student nothing until they
+   * switch books with no connection, and the switch already says so in its own
+   * words — where a toast raised now would be about a book nobody has named.
+   *
    * A failure stops the chain: it is nearly always the whole network being
    * absent, and there is nothing to learn from failing to fetch the larger file
-   * as well. `online` brings both back. Running twice is safe — the loader
+   * as well. `online` brings them all back. Running twice is safe — the loader
    * hands back its in-flight promise and both `ensure` functions return early
    * once their file is in memory — which is what makes the retry, and React's
-   * double-mounted effects in development, harmless.
+   * double-mounted effects in development, harmless. The books' own fetch is
+   * the exception and does not need to be: a repeat is served by the cache the
+   * first one filled.
    */
   const prefetchContent = useCallback(() => {
-    void ensureDictionary().then((got) => {
-      if (got) ensureParadigms();
+    void ensureDictionary().then(async (got) => {
+      if (!got) return;
+      await ensureParadigms();
+      await prefetchGrammarBooks()
+        .then(() => setBooksReady(true))
+        .catch(() => {});
     });
   }, [ensureDictionary, ensureParadigms]);
 
@@ -1496,10 +1519,21 @@ export function App({ content, session, storage }: Props) {
    * the way back for a student who watched that fail and has since found a
    * signal, which is why the button says so only when it has something to
    * retry.
+   *
+   * It fetches what the launch would have, in the same order, and waits for all
+   * of it before saying so. It used to announce the download and read the space
+   * in use while the paradigms and the books were still arriving — a figure
+   * short by the largest file of the three, printed under the words "saved to
+   * this device", on the one screen a student opens to check exactly that.
    */
   const cacheContent = () => {
-    void ensureDictionary().then((got) => {
-      if (got) ensureParadigms();
+    void ensureDictionary().then(async (got) => {
+      if (got) {
+        await ensureParadigms();
+        await prefetchGrammarBooks()
+        .then(() => setBooksReady(true))
+        .catch(() => {});
+      }
       flash(
         got
           ? "Saved to this device for offline use."
@@ -2166,9 +2200,13 @@ export function App({ content, session, storage }: Props) {
                 ),
               )
           }
-          dictionaryReady={dictionaryReady()}
+          // Not the dictionary alone, which is what this used to be and what
+          // made "everything is on this device" a claim the app could make
+          // while two files of it were still in the air. All three, and the
+          // student is told so while any of them is still coming.
+          offlineReady={dictionaryReady() && paradigms !== undefined && booksReady}
           dictionaryFailed={dictFailed}
-          caching={dictLoading}
+          caching={dictLoading || paradigmsLoading}
           onCacheDictionary={cacheContent}
           space={space}
           onPersist={askPersistence}

@@ -113,10 +113,15 @@ export async function loadContent(): Promise<Content> {
  * Take on one of the pack's further grammars, the first time it is opened.
  *
  * Not part of `loadContent` on purpose. Lane's syllabus is 416 KB gzipped
- * against the primary's 129, and a student who never switches books should
- * never pay for it — the same reason the dictionary is fetched separately. The
- * crosswalk that makes a second book teachable is small enough to come with the
- * first one that needs it and is then kept.
+ * against the primary's 129, and the first screen should not wait on a book
+ * nobody has asked for — the same reason the dictionary is fetched separately.
+ * The crosswalk that makes a second book teachable is small enough to come with
+ * the first one that needs it and is then kept.
+ *
+ * What is deferred is now the parse alone: `prefetchGrammarBooks` has the bytes
+ * on the device by then, so this is a read out of the cache rather than the
+ * download it used to be — and it works with no connection at all, which is the
+ * whole reason the prefetch exists.
  *
  * Safe to call again: `Content.addGrammar` ignores a book it already holds, so
  * switching back and forth costs one fetch.
@@ -140,6 +145,34 @@ let crosswalk: Promise<Record<string, Crosswalk>> | undefined;
 function loadCrosswalk(): Promise<Record<string, Crosswalk>> {
   crosswalk ??= fetchJson<Record<string, Crosswalk>>("crosswalk.json.gz");
   return crosswalk;
+}
+
+/**
+ * Pull every further grammar onto the device, and stop there.
+ *
+ * The fetch is the whole point and the parse is deliberately not done: what a
+ * student on a plane needs is the bytes in the cache, and building Lane's
+ * syllabus into memory at boot would charge every student the CPU for a book
+ * most of them never open. `loadGrammarBook` still does that on the switch, and
+ * by then it is reading out of the cache this warmed.
+ *
+ * The body has to be drained rather than dropped. The service worker's copy is
+ * a tee of this one, and a branch nobody reads stalls the branch that is being
+ * written to the cache — so an undrained response is a file that looks fetched
+ * and is not stored, which is the failure this function exists to fix.
+ */
+export async function prefetchGrammarBooks(): Promise<void> {
+  const ids = (profile.grammars ?? []).map((g) => g.id);
+  if (ids.length === 0) return;
+  await Promise.all(
+    [...ids.map((id) => `grammar-${id}.json.gz`), "crosswalk.json.gz"].map(
+      async (name) => {
+        const res = await fetch(url(name));
+        if (!res.ok) throw new Error(`could not load ${name} (${res.status})`);
+        await res.arrayBuffer();
+      },
+    ),
+  );
 }
 
 let loaded: LemmaIndex | undefined;

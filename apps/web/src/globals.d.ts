@@ -21,10 +21,13 @@ declare const __DICTIONARY_BYTES__: number;
 
 /**
  * The size in bytes of every content file a device ends up holding — the
- * grammar, the tests, the dictionary and the paradigms — measured the same way.
+ * grammar, the tests, the dictionary, the paradigms, and whatever further books
+ * the pack declares — measured the same way.
  *
  * All of it is fetched now, the precache at install and the rest as soon as the
  * app is up, so this is the honest answer to "how much room does this take".
- * Use `offlineSize()` rather than this directly.
+ * The books belong in it for exactly that reason: they were left out while they
+ * were also left uncached, and the sum was right about the device by being
+ * wrong about the pack. Use `offlineSize()` rather than this directly.
  */
 declare const __OFFLINE_BYTES__: number;

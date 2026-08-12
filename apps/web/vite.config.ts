@@ -52,13 +52,32 @@ const contentBytes = (names: string[]) => {
 /** The two files `loadDictionary()` fetches. */
 const dictionaryBytes = contentBytes(["lemmas.json.gz", "forms.txt.gz"]);
 
-/** Everything a device ends up holding, which is now everything shipped. */
+/**
+ * A pack's further grammars, and the crosswalk that makes them teachable.
+ *
+ * Derived from `profile.grammars` rather than listed, because the number of
+ * books is the pack's business: Latin ships Lane beside Bennett, Greek ships
+ * one book and gets an empty list here. No crosswalk without a second book —
+ * there would be nothing for it to join.
+ */
+const bookFiles = (profile.grammars ?? []).length
+  ? [
+      ...profile.grammars.map((g: { id: string }) => `grammar-${g.id}.json.gz`),
+      "crosswalk.json.gz",
+    ]
+  : [];
+
+/**
+ * Everything a device ends up holding, which is now everything shipped — the
+ * further books included, since they are fetched at launch like the rest.
+ */
 const offlineBytes = contentBytes([
   "grammar.json.gz",
   "tests.json.gz",
   "lemmas.json.gz",
   "forms.txt.gz",
   "paradigms.txt.gz",
+  ...bookFiles,
 ]);
 
 export default defineConfig({
@@ -105,23 +124,49 @@ export default defineConfig({
           "content/grammar.json.gz",
           "content/tests.json.gz",
         ],
+        // The `?v=` stamp `contentUrl` hangs on every content request is not
+        // part of a precache key, and workbox strips only what is named here
+        // before it looks one up — so without `/^v$/` the two precached files
+        // were fetched as `grammar.json.gz?v=…`, missed the entry sitting right
+        // there under `grammar.json.gz`, and went to the network. Precached and
+        // never served: exactly the launch on a plane the precache is for. The
+        // defaults are kept rather than replaced, since dropping them would let
+        // a link with `?utm_source=` miss the shell for the same reason.
+        //
+        // Stripping it is safe *here* and nowhere else. A precached file is
+        // versioned by the manifest revision instead — a rebuild reinstalls it
+        // — whereas the runtime-cached files below have no revision but their
+        // URL, which is why `?v=` stays load-bearing for them.
+        ignoreURLParametersMatching: [/^utm_/, /^fbclid$/, /^v$/],
         runtimeCaching: [
           {
             // The `?v=` stamp is part of the URL, so the pattern may not anchor
             // at the extension — with `$` here the versioned request matched
             // nothing, went uncached, and the dictionary was re-fetched every
-            // launch. Keeping the three files immutable-by-URL is what makes
+            // launch. Keeping these files immutable-by-URL is what makes
             // `CacheFirst` the right handler rather than a trap: a rebuilt
             // bundle asks for a name nothing has cached, and the entry it
             // replaces falls off the end of `maxEntries` on its own.
-            urlPattern: /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt)\.gz(\?|$)/,
+            //
+            // The further books are here too, and were nowhere: fetched by the
+            // switch, matched by neither the precache glob nor this pattern,
+            // and so never on the device at all. `grammar-` cannot catch the
+            // primary `grammar.json.gz`, which the precache holds — there is no
+            // hyphen in it.
+            urlPattern:
+              /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt|grammar-[^/?]+\.json|crosswalk\.json)\.gz(\?|$)/,
             handler: "CacheFirst",
             options: {
               cacheName: profile.storage.dictionaryCacheName,
-              // Three files, and room for a couple of rebuilds' worth before
-              // the oldest is evicted. `maxAgeSeconds` is a backstop for a
+              // Room for a couple of rebuilds' worth of whatever this pack has
+              // before the oldest is evicted — three files plus its books, so a
+              // pack that grows a second book grows this rather than quietly
+              // holding fewer versions. `maxAgeSeconds` is a backstop for a
               // device that somehow holds a version nothing asks for again.
-              expiration: { maxEntries: 12, maxAgeSeconds: 60 * 60 * 24 * 60 },
+              expiration: {
+                maxEntries: (3 + bookFiles.length) * 4,
+                maxAgeSeconds: 60 * 60 * 24 * 60,
+              },
               cacheableResponse: { statuses: [0, 200] },
             },
           },

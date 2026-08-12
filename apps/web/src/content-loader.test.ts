@@ -1,5 +1,6 @@
-import { describe, expect, it } from "vitest";
-import { contentUrl } from "./content-loader.js";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { contentUrl, prefetchGrammarBooks } from "./content-loader.js";
+import { profile } from "./pack.js";
 
 /**
  * Where the app looks for its content.
@@ -81,5 +82,69 @@ describe("contentUrl", () => {
     expect(contentUrl("tests.json.gz", "/", "https://latina.example/", "")).toBe(
       "https://latina.example/content/tests.json.gz",
     );
+  });
+});
+
+/**
+ * The launch fetch for the pack's further books.
+ *
+ * Worth its own test because both halves of it are invisible from the app: the
+ * names are what the service worker's pattern has to match, and the drained
+ * body is what makes the service worker's copy finish. Get either wrong and
+ * every screen still works — right up to the switch, offline, weeks later.
+ */
+describe("prefetchGrammarBooks", () => {
+  const asked: string[] = [];
+  let drained = 0;
+
+  beforeEach(() => {
+    asked.length = 0;
+    drained = 0;
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: string) => {
+        asked.push(new URL(input).pathname);
+        return {
+          ok: true,
+          arrayBuffer: async () => {
+            drained += 1;
+            return new ArrayBuffer(0);
+          },
+        } as unknown as Response;
+      }),
+    );
+  });
+
+  afterEach(() => vi.unstubAllGlobals());
+
+  it("asks for every declared book and the crosswalk that joins them", async () => {
+    await prefetchGrammarBooks();
+
+    // The pack under test is whichever one this build is for, so the books are
+    // read off its profile rather than named here — Greek declares none and
+    // this asks for nothing at all, which is the other case that must hold.
+    const expected = (profile.grammars ?? []).length
+      ? [
+          ...(profile.grammars ?? []).map((g) => `/content/grammar-${g.id}.json.gz`),
+          "/content/crosswalk.json.gz",
+        ]
+      : [];
+    expect(asked.sort()).toEqual(expected.sort());
+  });
+
+  it("drains every body, so the service worker's copy is written", async () => {
+    await prefetchGrammarBooks();
+
+    // A tee whose other branch is never read stalls the branch being cached —
+    // the file would look fetched and be stored nowhere.
+    expect(drained).toBe(asked.length);
+  });
+
+  it("reports a book that would not come down", async () => {
+    vi.stubGlobal("fetch", vi.fn(async () => ({ ok: false, status: 404 }) as Response));
+
+    if ((profile.grammars ?? []).length) {
+      await expect(prefetchGrammarBooks()).rejects.toThrow(/could not load/);
+    }
   });
 });
