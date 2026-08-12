@@ -1769,8 +1769,9 @@ describe("the schedule", () => {
     it("serves the topic whose row was tapped, not the one next in line", async () => {
       const user = userEvent.setup();
       const { session } = mount(waiting());
-      // The scheduler's own pick, which is what this is stepping out of.
-      expect(title()).toBe("First declension");
+      // The scheduler's own pick, which is what this is stepping out of: the
+      // waiting word, because words come before grammar in a review.
+      expect(title()).toBe("Vocabulary");
 
       const sheet = await openSchedule(user);
       await user.click(
@@ -1865,9 +1866,12 @@ describe("the schedule", () => {
       await user.click(screen.getByRole("button", { name: /Good/ }));
 
       // Back to the pile in its own order — the jump was for one card, not a
-      // new errand of its own.
-      expect(title()).toBe("First declension");
-      expect(badge()).toBe("review");
+      // new errand of its own — and that order puts the waiting word first.
+      expect(title()).toBe("Vocabulary");
+      expect(prompt()).toBe("rose");
+      // A card names itself rather than the errand it arrived on, as it does
+      // wherever else one is served.
+      expect(badge()).toBe("vocabulary");
     });
 
     it("picks a review started this way back up after a reload", async () => {
@@ -2291,6 +2295,7 @@ describe("saving to the cloud", () => {
   });
 });
 
+
 describe("progress", () => {
   it("survives a reload through local storage", async () => {
     const user = userEvent.setup();
@@ -2383,6 +2388,11 @@ describe("erasing and replacing what is on the device", () => {
     await user.click(screen.getByRole("button", { name: "Settings" }));
     await act(async () => {
       await user.click(screen.getByRole("button", { name: /Pull the copy/ }));
+    });
+    // A question was answered above and never pushed, so the pull says what it
+    // would cost before making it. Taking the remote anyway is the errand here.
+    await act(async () => {
+      await user.click(screen.getByRole("button", { name: "Pull anyway" }));
     });
 
     leave();
@@ -3137,5 +3147,241 @@ describe("the index under the quoted-only preference", () => {
       );
       expect(screen.getByText(/no order to choose/)).toBeDefined();
     });
+  });
+});
+
+/**
+ * What happens when this device is not the only one that has been studied.
+ *
+ * The rule these all check is one rule: a copy that is behind never overwrites
+ * one that is ahead unless a person said to. Everything else — the silence, the
+ * questions, the held push — follows from where that leaves each case.
+ */
+describe("a device that is behind another one", () => {
+  const CONFIG = {
+    token: "t",
+    owner: "someone",
+    repo: "progress",
+    path: "latin.json",
+    branch: "main",
+  };
+
+  /** Sync already set up when the tab opens, as it is on a returning device. */
+  const configured = () =>
+    localStorage.setItem(profile.storage.webSyncKey, JSON.stringify(CONFIG));
+
+  /** This device agreeing with GitHub as of `at`. */
+  const synced = (at: string) =>
+    localStorage.setItem(`${profile.storage.webSyncKey}:synced`, at);
+
+  /**
+   * The copy already on the device when the tab opens. Written to storage as
+   * well as handed to the session, because what the startup check reads is the
+   * device's copy rather than the session's — see `bootAt`.
+   */
+  const onDevice = (p: Progress): Progress => {
+    localStorage.setItem(profile.storage.webProgressKey, JSON.stringify(p));
+    return p;
+  };
+
+  /** A GitHub holding `remote`, recording the order of what it is asked. */
+  function stubGitHub(remote: Progress | null) {
+    const calls: string[] = [];
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (_url: string, init?: { method?: string }) => {
+        const method = init?.method ?? "GET";
+        calls.push(method);
+        if (method === "PUT") {
+          return { ok: true, status: 200, json: async () => ({ content: { sha: "s2" } }) };
+        }
+        if (!remote) return { ok: false, status: 404 };
+        return {
+          ok: true,
+          status: 200,
+          json: async () => ({ sha: "abc", content: btoa(JSON.stringify(remote)) }),
+        };
+      }),
+    );
+    return calls;
+  }
+
+  const stubReload = () => {
+    const reload = vi.fn();
+    vi.stubGlobal("location", { ...window.location, reload });
+    return reload;
+  };
+
+  /** A copy of the pack's progress, saved at `at`, with `mastery` in it. */
+  const copy = (at: string, mastery: Record<string, number>): Progress => ({
+    ...new Session(new Content(fixture, testProfile)).progress(),
+    updatedAt: at,
+    topicMastery: mastery,
+  });
+
+  it("takes the newer copy without a word when it has nothing of its own", async () => {
+    const reload = stubReload();
+    const remote = copy("2026-09-09T00:00:00.000Z", { decl2: 5 });
+    stubGitHub(remote);
+
+    const mine = onDevice(copy("2026-01-01T00:00:00.000Z", { decl1: 2 }));
+    configured();
+    synced(mine.updatedAt); // pushed, and untouched since
+    await act(async () => {
+      mount(mine);
+    });
+
+    // No sheet. This is the phone-then-laptop case and it is not a question.
+    expect(screen.queryByRole("dialog", { name: /another device/i })).toBeNull();
+    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl2: 5 });
+    expect(reload).toHaveBeenCalled();
+  });
+
+  it("asks when this device has been studied since it last synced", async () => {
+    stubReload();
+    stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+
+    const mine = onDevice(copy("2026-02-02T00:00:00.000Z", { decl1: 2 }));
+    configured();
+    synced("2026-01-01T00:00:00.000Z"); // and studied after that
+    await act(async () => {
+      mount(mine);
+    });
+
+    expect(
+      screen.getByRole("dialog", { name: "Progress from another device" }),
+    ).toBeDefined();
+    // Nothing was decided on the student's behalf.
+    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl1: 2 });
+  });
+
+  it("pushes nothing before it has looked at what GitHub holds", async () => {
+    // The reported bug. A grade in the first seconds used to beat the startup
+    // check through the four-second debounce, and the copy it committed was the
+    // stale one the check was on its way to replace.
+    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    stubReload();
+    configured();
+    synced("2026-01-01T00:00:00.000Z"); // studied since, so nothing is adopted
+
+    const user = userEvent.setup();
+    mount(onDevice(copy("2026-02-02T00:00:00.000Z", { decl1: 2 })));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await passTime(4500); // past the four-second debounce
+
+    // The read came first, and the stale copy never went up behind it.
+    expect(calls[0]).toBe("GET");
+    expect(calls).not.toContain("PUT");
+  }, 10_000);
+
+  it("holds the push when another device gets in first, and keeps the work", async () => {
+    const remote = copy("2026-09-09T00:00:00.000Z", { decl2: 5 });
+    stubGitHub(remote);
+    const user = userEvent.setup();
+    // Connected mid-session, so the gate is open and the check is not running.
+    const { storage, session } = mount(copy("2026-01-01T00:00:00.000Z", { decl1: 2 }));
+    await act(async () => {
+      storage.configure(CONFIG);
+    });
+
+    await act(async () => {
+      await storage.saveNow(session.progress());
+    });
+
+    expect(storage.currentState().kind).toBe("behind");
+    // Study is untouched by it, and the question on screen is still the one
+    // that was there.
+    expect(screen.getByRole("button", { name: "Reveal" })).toBeDefined();
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    expect(screen.getByText(/Another device is ahead/)).toBeDefined();
+  });
+
+  it("keeps this device's copy when that is what was chosen", async () => {
+    stubReload();
+    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    const user = userEvent.setup();
+    configured();
+    synced("2026-01-01T00:00:00.000Z");
+    await act(async () => {
+      mount(onDevice(copy("2026-02-02T00:00:00.000Z", { decl1: 2 })));
+    });
+
+    await act(async () => {
+      await user.click(screen.getByRole("button", { name: "Keep this device" }));
+    });
+
+    // Forced past the refusal, because a person is what the refusal defers to.
+    expect(calls).toContain("PUT");
+    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl1: 2 });
+  });
+
+  it("warns before a pull throws away what this device has not sent", async () => {
+    stubReload();
+    stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    const user = userEvent.setup();
+    const { storage } = mount(copy("2026-02-02T00:00:00.000Z", { decl1: 2 }));
+    await act(async () => {
+      storage.configure(CONFIG);
+    });
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await act(async () => {
+      await user.click(screen.getByRole("button", { name: /Pull the copy/ }));
+    });
+
+    expect(
+      screen.getByRole("dialog", { name: "This device has unsaved progress" }),
+    ).toBeDefined();
+    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl1: 2 });
+  });
+
+  it("pulls without a word when there is nothing of this device's to lose", async () => {
+    const reload = stubReload();
+    // Nothing up there yet, so this device's push lands and the two agree.
+    stubGitHub(null);
+    const user = userEvent.setup();
+    const { storage, session } = mount(
+      onDevice(copy("2026-02-02T00:00:00.000Z", { decl1: 2 })),
+    );
+    await act(async () => {
+      storage.configure(CONFIG);
+      await storage.saveNow(session.progress());
+    });
+
+    // Then the other device studies and pushes. This one has nothing of its
+    // own left, so pulling is a plain catch-up and asking about it is noise.
+    stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await act(async () => {
+      await user.click(screen.getByRole("button", { name: /Pull the copy/ }));
+    });
+
+    expect(screen.queryByRole("dialog", { name: /unsaved progress/ })).toBeNull();
+    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl2: 5 });
+    expect(reload).toHaveBeenCalled();
+  });
+
+  it("asks before connecting to a repo that already holds something newer", async () => {
+    stubReload();
+    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    const user = userEvent.setup();
+    mount(copy("2026-02-02T00:00:00.000Z", { decl1: 2 }));
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await user.type(screen.getByLabelText("Repository owner"), "someone");
+    await user.type(screen.getByLabelText("Repository name"), "progress");
+    // Not exact: this label carries its explanatory hint inside it too.
+    await user.type(screen.getByLabelText(/Access token/), "t");
+    await act(async () => {
+      await user.click(screen.getByRole("button", { name: "Connect" }));
+    });
+
+    // Connecting a second device is how this happens, and pushing first would
+    // erase the very progress it was being connected in order to reach.
+    expect(
+      screen.getByRole("dialog", { name: "That repo already has progress" }),
+    ).toBeDefined();
+    expect(calls).not.toContain("PUT");
   });
 });

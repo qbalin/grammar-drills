@@ -135,7 +135,12 @@ type Overlay =
    */
   | { t: "inspect"; form: string; entry: LemmaEntry; others: LemmaEntry[] }
   | { t: "settings" }
-  | { t: "conflict"; remote: Progress };
+  /** Both copies moved since they last agreed; only a person can choose. */
+  | { t: "conflict"; remote: Progress }
+  /** A deliberate push that would land on top of a newer copy. */
+  | { t: "overwrite"; remote: Progress }
+  /** A deliberate pull that would discard what this device has not sent. */
+  | { t: "discard"; remote: Progress };
 
 /** Whether anything at all has been picked out, across the three texts. */
 function hasMarks(marks: AttemptMarks): boolean {
@@ -574,20 +579,24 @@ export function App({ content, session, storage }: Props) {
     advance();
   }, [advance, session, mode]);
 
-  // Notice progress from another device, and ask rather than pick a winner.
+  /*
+   * Notice progress from another device before this one can push over it.
+   *
+   * Two devices being out of step is not an incident, it is how the app is
+   * used: study on the phone, open the laptop the next morning. So the check
+   * resolves that case itself, silently, and keeps the question for the one
+   * case where a person is genuinely needed — both copies moved since they last
+   * agreed, and taking either one throws work away.
+   *
+   * Until this has answered, nothing is pushed: the gate inside the storage is
+   * what makes "fetch before push" true rather than merely likely.
+   */
   useEffect(() => {
     if (!storage.currentConfig()) return;
-    void storage
-      .fetchRemote()
-      .then((remote) => {
-        const local = session.progress();
-        if (remote && remote.updatedAt > local.updatedAt) {
-          setOverlay({ t: "conflict", remote });
-        }
-      })
-      .catch(() => {
-        /* reported through the sync state in Settings */
-      });
+    void storage.checkRemote().then((found) => {
+      if (found.kind === "adopt") adoptRemote(found.remote);
+      else if (found.kind === "diverged") setOverlay({ t: "conflict", remote: found.remote });
+    });
   }, [session, storage]);
 
   /**
@@ -1286,20 +1295,48 @@ export function App({ content, session, storage }: Props) {
     return () => clearTimeout(id);
   }, [syncState]);
 
+  /**
+   * Point sync at a repo, and push this device's copy to it.
+   *
+   * This is the deliberate overwrite, so it is allowed to win — but not
+   * silently. Connecting to a repo that already holds a newer copy is how a
+   * second device gets set up, and pushing first would erase the very progress
+   * the person was connecting in order to reach.
+   */
   const configureSync = (cfg: SyncConfig | null) => {
     storage.configure(cfg);
-    if (cfg) void storage.saveNow(session.progress()).then(() => flash("Connected to GitHub."));
-    else flash("Sync turned off.");
+    if (!cfg) {
+      flash("Sync turned off.");
+      return;
+    }
+    void storage
+      .fetchRemote()
+      .catch(() => null)
+      .then((remote) => {
+        const local = session.progress();
+        if (remote && remote.updatedAt > local.updatedAt) {
+          setOverlay({ t: "overwrite", remote });
+          return;
+        }
+        return storage.saveNow(local).then(() => flash("Connected to GitHub."));
+      });
   };
 
-  const adopt = (progress: Progress) => {
-    storage.adopt(progress);
+  const adopt = (progress: Progress, opts: { synced?: boolean } = {}) => {
+    storage.adopt(progress, opts);
     // The engine holds progress by reference, so a swap means a fresh page —
     // and nothing of this one's may be written on the way out, or the draft
     // kept on `pagehide` puts the replaced progress straight back.
     storage.seal();
     location.reload();
   };
+
+  /**
+   * Take the copy GitHub holds. Marked as synced, because after this the two
+   * agree — without which the next session would count the adopted copy as
+   * work of this device's and refuse to catch up again.
+   */
+  const adoptRemote = (progress: Progress) => adopt(progress, { synced: true });
 
   const doImport = async () => {
     const raw = await pickProgressFile();
@@ -1962,8 +1999,23 @@ export function App({ content, session, storage }: Props) {
             void storage
               .fetchRemote()
               .then((remote) => {
-                if (remote) adopt(remote);
-                else flash("Nothing saved on GitHub yet.");
+                if (!remote) {
+                  flash("Nothing saved on GitHub yet.");
+                  return;
+                }
+                // A pull replaces this device's copy wholesale, so what it can
+                // destroy is whatever this device has not sent — whichever copy
+                // happens to be the newer one. When there is none of that, the
+                // pull is a plain catch-up and asking about it is noise.
+                if (storage.hasUnpushed(session.progress())) {
+                  setOverlay({ t: "discard", remote });
+                  return;
+                }
+                if (remote.updatedAt === session.progress().updatedAt) {
+                  flash("Already up to date.");
+                  return;
+                }
+                adoptRemote(remote);
               })
               // A pull that cannot reach the repo used to reject into nothing:
               // the sheet's status line changed and the button appeared to do
@@ -2011,14 +2063,17 @@ export function App({ content, session, storage }: Props) {
           onClose={() => setOverlay(null)}
         >
           <p className="field__hint" style={{ marginTop: 0 }}>
-            The copy on GitHub was saved {ago(overlay.remote.updatedAt)}, which
-            is newer than this device's. Only one can be kept.
+            The copy on GitHub was saved {ago(overlay.remote.updatedAt)}, and
+            this device has been studied since it last synced. Only one can be
+            kept.
           </p>
           <div className="actions">
             <button
               className="btn"
               onClick={() => {
-                void storage.saveNow(session.progress());
+                // Forced: the refusal in `GitHubStorage` exists to stop this
+                // happening by accident, and this is the accident's opposite.
+                void storage.saveNow(session.progress(), { force: true });
                 setOverlay(null);
                 flash("Kept this device's progress.");
               }}
@@ -2027,12 +2082,65 @@ export function App({ content, session, storage }: Props) {
             </button>
             <button
               className="btn btn--primary"
-              onClick={() => adopt(overlay.remote)}
+              onClick={() => adoptRemote(overlay.remote)}
             >
               Use the newer one
             </button>
           </div>
-          {attempts.length === 0 && null}
+        </Sheet>
+      )}
+
+      {overlay?.t === "overwrite" && (
+        <Sheet title="That repo already has progress" onClose={() => setOverlay(null)}>
+          <p className="field__hint" style={{ marginTop: 0 }}>
+            The copy on GitHub was saved {ago(overlay.remote.updatedAt)}, which
+            is newer than this device's. Saving now replaces it.
+          </p>
+          <div className="actions">
+            <button className="btn" onClick={() => adoptRemote(overlay.remote)}>
+              Use the copy on GitHub
+            </button>
+            <button
+              className="btn btn--primary"
+              onClick={() => {
+                void storage
+                  .saveNow(session.progress(), { force: true })
+                  .then(() => flash("Connected to GitHub."));
+                setOverlay(null);
+              }}
+            >
+              Replace it with this device's
+            </button>
+          </div>
+        </Sheet>
+      )}
+
+      {overlay?.t === "discard" && (
+        <Sheet title="This device has unsaved progress" onClose={() => setOverlay(null)}>
+          <p className="field__hint" style={{ marginTop: 0 }}>
+            This device has been studied since it last synced, and pulling
+            replaces its copy with the one on GitHub, saved{" "}
+            {ago(overlay.remote.updatedAt)}. That work would be lost.
+          </p>
+          <div className="actions">
+            <button
+              className="btn"
+              onClick={() => {
+                void storage
+                  .saveNow(session.progress(), { force: true })
+                  .then(() => flash("Pushed this device's progress instead."));
+                setOverlay(null);
+              }}
+            >
+              Push this device's instead
+            </button>
+            <button
+              className="btn btn--primary"
+              onClick={() => adoptRemote(overlay.remote)}
+            >
+              Pull anyway
+            </button>
+          </div>
         </Sheet>
       )}
       {/* Last, so it lies over every sheet, and inert: it never takes a tap. */}

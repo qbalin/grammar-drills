@@ -18,8 +18,9 @@ const config = {
 
 const dir = () => mkdtemp(join(tmpdir(), "tutor-sync-"));
 
-function at(iso: string): Progress {
-  return { ...emptyProgress(), updatedAt: iso };
+/** `topics` is there to make one copy differ from another in substance. */
+function at(iso: string, topics = 0): Progress {
+  return { ...emptyProgress(), newTopicsIntroduced: topics, updatedAt: iso };
 }
 
 function b64(s: string): string {
@@ -108,10 +109,19 @@ describe("the CLI's sync settings file", () => {
 });
 
 describe("SyncingFileStorage", () => {
-  async function make() {
+  async function make(marker?: { at: string | null }) {
     const home = await dir();
     const local = new LocalFileStorage(join(home, "progress.json"));
-    return { local, sync: new SyncingFileStorage(local, config, "Update progress") };
+    return {
+      home,
+      local,
+      sync: new SyncingFileStorage(
+        local,
+        config,
+        "Update progress",
+        marker && { path: join(home, "synced"), at: marker.at },
+      ),
+    };
   }
 
   it("writes the local copy immediately and holds the push back", async () => {
@@ -164,5 +174,88 @@ describe("SyncingFileStorage", () => {
     const { sync } = await make();
     await sync.flush();
     expect(puts).toHaveLength(0);
+  });
+
+  it("commits nothing when the copy on GitHub already says the same thing", async () => {
+    // Opening the tutor and closing it moves `updatedAt` and nothing else.
+    const puts = stubApi(at("2026-01-01T00:00:00Z", 4));
+    const { sync } = await make();
+    await sync.saveNow(at("2026-01-02T00:00:00Z", 4));
+    expect(puts).toHaveLength(0);
+  });
+
+  describe("the startup check", () => {
+    it("takes a newer copy without asking when this machine has none of its own", async () => {
+      stubApi(at("2026-02-02T00:00:00Z", 9));
+      const local = at("2026-01-01T00:00:00Z", 3);
+      // The marker says this machine's copy is exactly what it last pushed.
+      const { sync } = await make({ at: local.updatedAt });
+
+      expect(await sync.checkRemote(local)).toEqual({
+        kind: "adopt",
+        remote: expect.objectContaining({ updatedAt: "2026-02-02T00:00:00Z" }),
+      });
+    });
+
+    it("asks when both copies have moved since they last agreed", async () => {
+      stubApi(at("2026-02-02T00:00:00Z", 9));
+      // Studied offline: the local copy has moved past the marker.
+      const { sync } = await make({ at: "2026-01-01T00:00:00Z" });
+
+      const found = await sync.checkRemote(at("2026-01-05T00:00:00Z", 5));
+      expect(found.kind).toBe("diverged");
+    });
+
+    it("takes what is there when this machine has no progress at all", async () => {
+      stubApi(at("2026-02-02T00:00:00Z", 9));
+      const { sync } = await make();
+      expect((await sync.checkRemote(null)).kind).toBe("adopt");
+    });
+
+    it("has nothing to say when the remote is not ahead", async () => {
+      stubApi(at("2026-01-01T00:00:00Z", 3));
+      const { sync } = await make();
+      expect((await sync.checkRemote(at("2026-02-02T00:00:00Z", 5))).kind).toBe(
+        "current",
+      );
+    });
+
+    it("remembers what it adopted, so the next start is a quiet one", async () => {
+      stubApi(at("2026-02-02T00:00:00Z", 9));
+      const { sync, home } = await make({ at: null });
+      const remote = at("2026-02-02T00:00:00Z", 9);
+      await sync.adopt(remote);
+
+      expect(sync.hasUnpushed(remote)).toBe(false);
+      expect((await readFile(join(home, "synced"), "utf8")).trim()).toBe(
+        "2026-02-02T00:00:00Z",
+      );
+    });
+  });
+
+  describe("when another machine pushed first", () => {
+    it("holds the push rather than overwriting it, and keeps the work", async () => {
+      const puts = stubApi(at("2026-02-02T00:00:00Z", 9));
+      const { local, sync } = await make({ at: "2026-01-01T00:00:00Z" });
+
+      await sync.saveNow(at("2026-01-05T00:00:00Z", 5));
+
+      expect(puts).toHaveLength(0);
+      expect(sync.currentState().kind).toBe("behind");
+      // Nothing was lost: this session is on disk and still queued to go up.
+      expect((await local.load())?.newTopicsIntroduced).toBe(5);
+      expect(sync.hasPending()).toBe(true);
+    });
+
+    it("pushes over it when the overwrite is the answer given", async () => {
+      const puts = stubApi(at("2026-02-02T00:00:00Z", 9));
+      const { sync } = await make({ at: "2026-01-01T00:00:00Z" });
+
+      await sync.saveNow(at("2026-01-05T00:00:00Z", 5), { force: true });
+
+      expect(puts).toHaveLength(1);
+      expect(puts[0]?.newTopicsIntroduced).toBe(5);
+      expect(sync.currentState().kind).toBe("idle");
+    });
   });
 });
