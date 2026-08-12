@@ -49,9 +49,6 @@ const contentBytes = (names: string[]) => {
   }, 0);
 };
 
-/** The two files `loadDictionary()` fetches. */
-const dictionaryBytes = contentBytes(["lemmas.json.gz", "forms.txt.gz"]);
-
 /**
  * A pack's further grammars, and the crosswalk that makes them teachable.
  *
@@ -80,11 +77,27 @@ const offlineBytes = contentBytes([
   ...bookFiles,
 ]);
 
+/**
+ * The part of that the app fetches for itself once it is up — everything but
+ * the two files the install already precached.
+ *
+ * This replaced a figure for the dictionary alone, which was the right number
+ * only while the dictionary was the only thing Settings could be waiting on.
+ * It is what the screen is describing in both of the states that are not "all
+ * here": what is coming, and what has not arrived.
+ */
+const fetchedBytes = contentBytes([
+  "lemmas.json.gz",
+  "forms.txt.gz",
+  "paradigms.txt.gz",
+  ...bookFiles,
+]);
+
 export default defineConfig({
   base,
   define: {
     __CONTENT_VERSION__: JSON.stringify(contentVersion),
-    __DICTIONARY_BYTES__: JSON.stringify(dictionaryBytes),
+    __FETCHED_BYTES__: JSON.stringify(fetchedBytes),
     __OFFLINE_BYTES__: JSON.stringify(offlineBytes),
   },
   resolve: {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Sheet } from "../ui.js";
-import { dictionarySize, offlineSize } from "../dictionary-size.js";
+import { fetchedSize, offlineSize } from "../dictionary-size.js";
 import { profile } from "../pack.js";
 import { formatBytes, type StorageReport } from "../storage/quota.js";
 import type { SyncConfig, SyncState } from "../storage/sync.js";
@@ -198,14 +198,19 @@ export function SettingsSheet({
              met into its headword. About ${offlineSize()} came down the wire,
              and nothing here needs a connection now.`
           : caching
-            ? `Fetching the dictionary — ${dictionarySize()}, once — and the
-               tables${books ? ` and ${books}` : ""} behind it. It happens by
-               itself when the app opens, so you need not wait on this screen.`
-            : `The grammar and every test are on this device. The dictionary is
-               another ${dictionarySize()}, and the tables${
+            ? `Fetching the dictionary, the tables${
+                books ? ` and ${books}` : ""
+              } — ${fetchedSize()} in all, once. It happens by itself when the
+               app opens, so you need not wait on this screen.`
+            : /* What is missing is deliberately not named. Any one of the three
+                 can be the one that failed, and a sentence naming the wrong one
+                 tells a student their dictionary is absent while they are
+                 looking words up with it. The button fetches whichever it is. */
+              `The grammar and every test are on this device. The rest — the
+               dictionary, the tables${
                  books ? ` and ${books}` : ""
-               } come after it; all of it is fetched at launch, and this device
-               has not managed it yet.`}
+               }, ${fetchedSize()} in all — is fetched at launch, and this
+               device has not got all of it yet.`}
       </p>
       {/* Only when there is something to do. The download is no longer
           something a student has to think of — the button is here for the one

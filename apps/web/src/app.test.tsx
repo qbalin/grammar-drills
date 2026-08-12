@@ -1454,7 +1454,14 @@ describe("fetching the content", () => {
     expect(screen.getByText(/Lane beside it/)).toBeDefined();
   });
 
-  it("does not say it while a book is still missing", async () => {
+  /*
+   * The state the three-way copy could not reach until the books existed: the
+   * dictionary in hand, and not everything here. Whatever the screen says then
+   * must not be about the dictionary, which the student is looking words up
+   * with — so what is missing goes unnamed and the button fetches whichever of
+   * the three it was.
+   */
+  it("does not say it while a book is still missing, and blames nothing", async () => {
     books.available = false;
     const user = userEvent.setup();
     mount();
@@ -1462,6 +1469,10 @@ describe("fetching the content", () => {
 
     await user.click(screen.getByRole("button", { name: "Settings" }));
     expect(screen.queryByText(/Everything is on this device/)).toBeNull();
+    expect(screen.getByText(/has not got all of it yet/)).toBeDefined();
+    // The old copy read "The dictionary is another 4.4 MB … this device has not
+    // managed it yet", with the dictionary sitting in memory as it said so.
+    expect(screen.queryByText(/The dictionary is another/)).toBeNull();
   });
 });
 

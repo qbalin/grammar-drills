@@ -9,15 +9,17 @@
 declare const __CONTENT_VERSION__: string;
 
 /**
- * The size in bytes of the two files `loadDictionary()` fetches, measured by
+ * The size in bytes of everything the app fetches for itself once it is up —
+ * the dictionary, the paradigms and the pack's further books — measured by
  * `vite.config.ts` at build time.
  *
  * The screens that warn about the one-time download used to name a figure
  * written by hand, which went stale the moment the dictionary grew and was
- * wrong for whichever pack it had not been written for. Use `dictionarySize()`
- * rather than this directly.
+ * wrong for whichever pack it had not been written for. Then it named the
+ * dictionary, correctly, while the launch was quietly fetching two other things
+ * beside it. Use `fetchedSize()` rather than this directly.
  */
-declare const __DICTIONARY_BYTES__: number;
+declare const __FETCHED_BYTES__: number;
 
 /**
  * The size in bytes of every content file a device ends up holding — the

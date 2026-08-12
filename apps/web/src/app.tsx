@@ -249,8 +249,12 @@ export function App({ content, session, storage }: Props) {
   // — nothing is parsed until one is opened — so their fetch is remembered
   // instead. Settings is the only thing that asks: it is what stands behind
   // "everything is on this device", and a pack with no further books has this
-  // the moment the prefetch runs.
+  // the moment the prefetch runs. `booksLoading` is the same story a step
+  // earlier: without it the download's last few seconds are a window in which
+  // nothing is loading and not everything is here, and the screen has to
+  // describe that state as a failure.
   const [booksReady, setBooksReady] = useState(false);
+  const [booksLoading, setBooksLoading] = useState(false);
   // What the browser says about the space this app is holding, for the panel in
   // Settings. Read when that sheet opens rather than kept live: it is a figure
   // to look at when you go looking, and asking on every render would be a
@@ -1015,6 +1019,28 @@ export function App({ content, session, storage }: Props) {
   }, [paradigms]);
 
   /**
+   * Fetch the pack's further books if this device has not got them, and
+   * remember that it now has.
+   *
+   * Quiet on failure by design — see the prefetch below — but not invisible:
+   * `booksLoading` is what keeps Settings from describing the seconds while
+   * they are arriving as a download that did not happen.
+   */
+  const ensureBooks = useCallback(async (): Promise<void> => {
+    if (booksReady) return;
+    setBooksLoading(true);
+    try {
+      await prefetchGrammarBooks();
+      setBooksReady(true);
+    } catch {
+      // Nothing to say here; the switch speaks for itself if it is ever
+      // reached with no connection and no book.
+    } finally {
+      setBooksLoading(false);
+    }
+  }, [booksReady]);
+
+  /**
    * Fetch everything this device has not got, as soon as it is up.
    *
    * The dictionary and the paradigms used to be fetched by the gesture that
@@ -1053,11 +1079,9 @@ export function App({ content, session, storage }: Props) {
     void ensureDictionary().then(async (got) => {
       if (!got) return;
       await ensureParadigms();
-      await prefetchGrammarBooks()
-        .then(() => setBooksReady(true))
-        .catch(() => {});
+      await ensureBooks();
     });
-  }, [ensureDictionary, ensureParadigms]);
+  }, [ensureDictionary, ensureParadigms, ensureBooks]);
 
   useEffect(() => {
     prefetchContent();
@@ -1530,9 +1554,7 @@ export function App({ content, session, storage }: Props) {
     void ensureDictionary().then(async (got) => {
       if (got) {
         await ensureParadigms();
-        await prefetchGrammarBooks()
-        .then(() => setBooksReady(true))
-        .catch(() => {});
+        await ensureBooks();
       }
       flash(
         got
@@ -2206,7 +2228,7 @@ export function App({ content, session, storage }: Props) {
           // student is told so while any of them is still coming.
           offlineReady={dictionaryReady() && paradigms !== undefined && booksReady}
           dictionaryFailed={dictFailed}
-          caching={dictLoading || paradigmsLoading}
+          caching={dictLoading || paradigmsLoading || booksLoading}
           onCacheDictionary={cacheContent}
           space={space}
           onPersist={askPersistence}

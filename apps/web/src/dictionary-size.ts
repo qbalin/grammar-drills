@@ -1,14 +1,19 @@
 /**
- * How big the dictionary download is, in words a student can act on.
+ * How big the launch download is, in words a student can act on.
  *
  * Settings names it, and used to say "900 KB" because someone typed that once.
  * It is measured at build time now, so it follows the pack and cannot go
- * stale — see `__DICTIONARY_BYTES__`.
+ * stale — see `__FETCHED_BYTES__`.
  *
- * Rounded to something readable rather than exact: this is a warning about
- * whether to do it on mobile data, not an invoice.
+ * The dictionary alone, which this used to report, was a fair description of
+ * the wait only while the dictionary was the only thing being waited on. The
+ * app fetches the tables and the pack's further books at launch as well, so a
+ * screen that named one file's weight was quoting a third of the answer to
+ * "should I do this on mobile data" — which is the whole question this figure
+ * exists for. Rounded to something readable rather than exact: a warning, not
+ * an invoice.
  */
-export function dictionarySize(bytes: number = __DICTIONARY_BYTES__): string {
+export function fetchedSize(bytes: number = __FETCHED_BYTES__): string {
   return size(bytes);
 }
 
