@@ -1401,5 +1401,360 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-028-third-declension-q1",
+  "sectionId": "bn-028-third-declension",
+  "questions": [
+   {
+    "prompt": "From there come cough and wasting, and at last consumption sets in.",
+    "answer": "Inde tussis et maciēs, et ad ultimum phthisis invādit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Inde",
+     "tussis",
+     "et",
+     "maciēs",
+     "et",
+     "ad",
+     "ultimum",
+     "phthisis",
+     "invādit"
+    ],
+    "source": {
+     "author": "Columella",
+     "work": "De Re Rustica",
+     "locus": "6.14"
+    }
+   },
+   {
+    "prompt": "Indeed, with what rites this weapon was consecrated and dedicated by you I do not know, since you think it necessary to plunge it into a consul's body.",
+    "answer": "Quae quidem quibus abs tē initiāta sacrīs ac dēvōta sit, nesciō, quod eam necesse putās esse in cōnsulis corpore dēfīgere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "quidem",
+     "quibus",
+     "abs",
+     "tē",
+     "initiāta",
+     "sacrīs",
+     "ac",
+     "dēvōta",
+     "sit",
+     "nesciō",
+     "quod",
+     "eam",
+     "necesse",
+     "putās",
+     "esse",
+     "in",
+     "cōnsulis",
+     "corpore",
+     "dēfīgere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "He warns him to avoid all suspicion.",
+    "answer": "Monet ut omnēs suspīciōnēs vītet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Monet",
+     "ut",
+     "omnēs",
+     "suspīciōnēs",
+     "vītet"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.20"
+    }
+   },
+   {
+    "prompt": "I fear the orator grows feeble from old age.",
+    "answer": "Ōrātor metuō nē languēscat senectūte.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātor",
+     "metuō",
+     "nē",
+     "languēscat",
+     "senectūte"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "28"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-028-third-declension-q2",
+  "sectionId": "bn-028-third-declension",
+  "questions": [
+   {
+    "prompt": "There is no danger that he will not think death desirable.",
+    "answer": "Haud sānē perīculum est nē nōn mortem optandam putet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haud",
+     "sānē",
+     "perīculum",
+     "est",
+     "nē",
+     "nōn",
+     "mortem",
+     "optandam",
+     "putet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5.118"
+    }
+   },
+   {
+    "prompt": "This is the chief difference between an inanimate object and an animal, that an animal aims at something.",
+    "answer": "Inter inanimum et animal hōc maximē interest, quod animal agit aliquid.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Inter",
+     "inanimum",
+     "et",
+     "animal",
+     "hōc",
+     "maximē",
+     "interest",
+     "quod",
+     "animal",
+     "agit",
+     "aliquid"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Academica",
+     "locus": "2.37"
+    }
+   },
+   {
+    "prompt": "I disregard the fact that they were seized by violence.",
+    "answer": "Mittō quod possessa per vim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mittō",
+     "quod",
+     "possessa",
+     "per",
+     "vim"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Flacco",
+     "locus": "79"
+    }
+   },
+   {
+    "prompt": "The enemy pour round if they can find entrance.",
+    "answer": "Circumfunduntur hostēs sī quem aditum reperīre possent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Circumfunduntur",
+     "hostēs",
+     "sī",
+     "quem",
+     "aditum",
+     "reperīre",
+     "possent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.37"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-028-third-declension-q3",
+  "sectionId": "bn-028-third-declension",
+  "questions": [
+   {
+    "prompt": "I advise you to consider what you are doing. I earnestly recommend you to stop.",
+    "answer": "tē moneō videās, quid agās. magnō opere cēnseō, dēsistās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tē",
+     "moneō",
+     "videās",
+     "quid",
+     "agās",
+     "magnō",
+     "opere",
+     "cēnseō",
+     "dēsistās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 174"
+    }
+   },
+   {
+    "prompt": "It makes a vast difference whether wrong be done in heat of passion, or with deliberate intent.",
+    "answer": "permultum interest utrum perturbātiōne animī, an cōnsultō fīat iniūria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "permultum",
+     "interest",
+     "utrum",
+     "perturbātiōne",
+     "animī",
+     "an",
+     "cōnsultō",
+     "fīat",
+     "iniūria"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 27"
+    }
+   },
+   {
+    "prompt": "Thanks to his untiring industry, and to his bringing his winning manners to bear, he figured among the leaders of the bar.",
+    "answer": "labōre et industriā et quod adhibēbat grātiam, in prīncipibus patrōnīs fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "labōre",
+     "et",
+     "industriā",
+     "et",
+     "quod",
+     "adhibēbat",
+     "grātiam",
+     "in",
+     "prīncipibus",
+     "patrōnīs",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "233"
+    }
+   },
+   {
+    "prompt": "As when Socrates was charged with ‘demoralizing the rising generation’.",
+    "answer": "ut cum Sōcratēs accūsātus est quod corrumperet iuventūtem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "cum",
+     "Sōcratēs",
+     "accūsātus",
+     "est",
+     "quod",
+     "corrumperet",
+     "iuventūtem"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "4, 4, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-028-third-declension-q4",
+  "sectionId": "bn-028-third-declension",
+  "questions": [
+   {
+    "prompt": "That his practice and that of the Roman nation would not allow him to desert his allies.",
+    "answer": "neque suam neque populī Rōmānī cōnsuētūdinem patī, utī sociōs dēsereret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "suam",
+     "neque",
+     "populī",
+     "Rōmānī",
+     "cōnsuētūdinem",
+     "patī",
+     "utī",
+     "sociōs",
+     "dēsereret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 45, 1"
+    }
+   },
+   {
+    "prompt": "The first duty of justice is that a man harm nobody.",
+    "answer": "iūstitiae prīmum mūnus est ut nē cui quis noceat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iūstitiae",
+     "prīmum",
+     "mūnus",
+     "est",
+     "ut",
+     "nē",
+     "cui",
+     "quis",
+     "noceat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 20"
+    }
+   },
+   {
+    "prompt": "Was I to fear being charged with aspiring to a throne?",
+    "answer": "ego mē cupiditātis rēgnī crīmen subitūrum timērem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "mē",
+     "cupiditātis",
+     "rēgnī",
+     "crīmen",
+     "subitūrum",
+     "timērem"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 7, 9"
+    }
+   },
+   {
+    "prompt": "Grief prevents me from writing more.",
+    "answer": "plūra nē scrībam, dolōre impedior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "plūra",
+     "nē",
+     "scrībam",
+     "dolōre",
+     "impedior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "11, 13, 5"
+    }
+   }
+  ]
  }
 ]

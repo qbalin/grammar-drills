@@ -566,5 +566,407 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-086-possessive-pronouns-q1",
+  "sectionId": "bn-086-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "They set out either of their own will or because of the fine of the law; and if they had been willing to bear this fine, they could have remained in the state.",
+    "answer": "Aut suā voluntāte aut lēgis multā profectī sunt; quam multam sī sufferre voluissent, manēre in cīvitāte potuissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aut",
+     "suā",
+     "voluntāte",
+     "aut",
+     "lēgis",
+     "multā",
+     "profectī",
+     "sunt",
+     "quam",
+     "multam",
+     "sī",
+     "sufferre",
+     "voluissent",
+     "manēre",
+     "in",
+     "cīvitāte",
+     "potuissent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caecina",
+     "locus": "30.98"
+    }
+   },
+   {
+    "prompt": "I cannot say that I lose nothing, but I can say what I lose and why and how; I will render the reasons for my poverty.",
+    "answer": "Nōn possum dīcere nihil perdere, sed quid perdam et quārē et quemadmodum dīcam; causās paupertātis meae reddam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "possum",
+     "dīcere",
+     "nihil",
+     "perdere",
+     "sed",
+     "quid",
+     "perdam",
+     "et",
+     "quārē",
+     "et",
+     "quemadmodum",
+     "dīcam",
+     "causās",
+     "paupertātis",
+     "meae",
+     "reddam"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.4"
+    }
+   },
+   {
+    "prompt": "Our Gnaeus, indeed — I plainly do not now know what he is thinking … he who could even have been brought to that point.",
+    "answer": "Gnaeus quidem noster jam plānē quid cōgitet nesciō [..] quī quidem etiam istūc addūcī potuerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gnaeus",
+     "quidem",
+     "noster",
+     "jam",
+     "plānē",
+     "quid",
+     "cōgitet",
+     "nesciō",
+     "quī",
+     "quidem",
+     "etiam",
+     "istūc",
+     "addūcī",
+     "potuerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Letters to Atticus:"
+    }
+   },
+   {
+    "prompt": "If he were of sane mind, would he have dared to lead out the army?",
+    "answer": "Hīc sī mentis esset suae, ausus esset ēdūcere exercitum?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hīc",
+     "sī",
+     "mentis",
+     "esset",
+     "suae",
+     "ausus",
+     "esset",
+     "ēdūcere",
+     "exercitum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Pisonem",
+     "locus": "50"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-086-possessive-pronouns-q2",
+  "sectionId": "bn-086-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "But it would be more equitable if Triarius passed judgment on our dispute.",
+    "answer": "Sed erat aequius Triārium aliquid dē dissēnsiōne nostrā iūdicāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sed",
+     "erat",
+     "aequius",
+     "Triārium",
+     "aliquid",
+     "dē",
+     "dissēnsiōne",
+     "nostrā",
+     "iūdicāre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2.119"
+    }
+   },
+   {
+    "prompt": "We wish you to reap the fruits of your virtue.",
+    "answer": "Tē tuā fruī virtūte cupimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tē",
+     "tuā",
+     "fruī",
+     "virtūte",
+     "cupimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "331"
+    }
+   },
+   {
+    "prompt": "As to your congratulating me on our condition, we are not at all surprised that you are pleased with your own noble works.",
+    "answer": "Quod mihi dē nostrō statū grātulāris, minimē mīrāmur tē tuīs praeclārīs operibus laetārī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "mihi",
+     "dē",
+     "nostrō",
+     "statū",
+     "grātulāris",
+     "minimē",
+     "mīrāmur",
+     "tē",
+     "tuīs",
+     "praeclārīs",
+     "operibus",
+     "laetārī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "1.7.7"
+    }
+   },
+   {
+    "prompt": "And if he does not do this, he never has any ascendancy at all over his people.",
+    "answer": "neque aliter sī faciat, ūllam inter suōs habet auctōritātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "aliter",
+     "sī",
+     "faciat",
+     "ūllam",
+     "inter",
+     "suōs",
+     "habet",
+     "auctōritātem"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 11, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-086-possessive-pronouns-q3",
+  "sectionId": "bn-086-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "There was added this fact, that they lamented that their own children were torn from them then too they lamented.",
+    "answer": "accēdēbat, quod suōs ab sē līberōs abstrāctōs dolēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "accēdēbat",
+     "quod",
+     "suōs",
+     "ab",
+     "sē",
+     "līberōs",
+     "abstrāctōs",
+     "dolēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 2, 5"
+    }
+   },
+   {
+    "prompt": "If we do not succeed in making Chrysogonus satisfied with our money without his aiming at our life.",
+    "answer": "sī ā Chrȳsogonō nōn impetrāmus ut pecūniā nostrā contentus sit, vītam nē petat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "ā",
+     "Chrȳsogonō",
+     "nōn",
+     "impetrāmus",
+     "ut",
+     "pecūniā",
+     "nostrā",
+     "contentus",
+     "sit",
+     "vītam",
+     "nē",
+     "petat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "150"
+    }
+   },
+   {
+    "prompt": "Your conspicuous position makes it impossible for you to do wrong without great peril.",
+    "answer": "splendor vester facit ut peccāre sine summō perīculō nōn possītis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "splendor",
+     "vester",
+     "facit",
+     "ut",
+     "peccāre",
+     "sine",
+     "summō",
+     "perīculō",
+     "nōn",
+     "possītis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 22"
+    }
+   },
+   {
+    "prompt": "I use our own poets carefully, it is true: but whenever they have failed me, I have always translated a great deal from Greek.",
+    "answer": "studiōsē equidem ūtor nostrīs poētīs, sed sīcubi illī dēfēcērunt, vertī multa dē Graecīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "studiōsē",
+     "equidem",
+     "ūtor",
+     "nostrīs",
+     "poētīs",
+     "sed",
+     "sīcubi",
+     "illī",
+     "dēfēcērunt",
+     "vertī",
+     "multa",
+     "dē",
+     "Graecīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 26"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-086-possessive-pronouns-q4",
+  "sectionId": "bn-086-possessive-pronouns",
+  "questions": [
+   {
+    "prompt": "But if Greeks are read by Greeks, why should not Romans be read by Romans?",
+    "answer": "quod sī Graecī leguntur ā Graecīs, quid est cūr nostrī ā nostrīs nōn legantur?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "sī",
+     "Graecī",
+     "leguntur",
+     "ā",
+     "Graecīs",
+     "quid",
+     "est",
+     "cūr",
+     "nostrī",
+     "ā",
+     "nostrīs",
+     "nōn",
+     "legantur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1, 6"
+    }
+   },
+   {
+    "prompt": "Nobody suffers his vassals to be put down, and if he ever act otherwise, he has no influence among his people.",
+    "answer": "suōs quisque opprimī nōn patitur, neque, aliter sī faciat, ūllam inter suōs habet auctōritātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "suōs",
+     "quisque",
+     "opprimī",
+     "nōn",
+     "patitur",
+     "neque",
+     "aliter",
+     "sī",
+     "faciat",
+     "ūllam",
+     "inter",
+     "suōs",
+     "habet",
+     "auctōritātem"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 11, 4"
+    }
+   },
+   {
+    "prompt": "Without orders from you I never should fight out of ranks, no, not if I saw victory was certain.",
+    "answer": "iniussū tuō extrā ōrdinem numquam pugnāverim, nōn sī certam victōriam videam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iniussū",
+     "tuō",
+     "extrā",
+     "ōrdinem",
+     "numquam",
+     "pugnāverim",
+     "nōn",
+     "sī",
+     "certam",
+     "victōriam",
+     "videam"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "7, 10, 2"
+    }
+   },
+   {
+    "prompt": "Suppose therefore he had lived to be a hundred, would he have regretted his years?",
+    "answer": "num igitur, sī ad centēsimum annum vīxisset, senectūtis eum suae paenitēret?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "igitur",
+     "sī",
+     "ad",
+     "centēsimum",
+     "annum",
+     "vīxisset",
+     "senectūtis",
+     "eum",
+     "suae",
+     "paenitēret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "19"
+    }
+   }
+  ]
  }
 ]

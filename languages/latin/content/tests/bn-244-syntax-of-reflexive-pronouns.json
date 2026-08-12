@@ -732,25 +732,6 @@
     }
    },
    {
-    "prompt": "To what end will unbridled audacity hurl itself?",
-    "answer": "Quem ad fīnem sēsē effrēnāta iactābit audācia?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quem",
-     "ad",
-     "fīnem",
-     "sēsē",
-     "effrēnāta",
-     "iactābit",
-     "audācia"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam orationes",
-     "locus": "1"
-    }
-   },
-   {
     "prompt": "And the Boii—who had dwelt across the Rhine, and had crossed into the Norican territory, and had assaulted Noreia—they take to themselves and admit as allies to themselves once received.",
     "answer": "Boiōsque — quī trāns Rhēnum incoluerant, et in agrum Nōricum trānsierant, Nōrēiamque oppūgnārant — receptōs ad sē sociōs sibi ascīscunt.",
     "kind": "translate-en-la",
@@ -779,13 +760,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1.5"
     }
-   }
-  ]
- },
- {
-  "id": "bn-244-syntax-of-reflexive-pronouns-q2",
-  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
-  "questions": [
+   },
    {
     "prompt": "The Helvetii had already led their own forces across through the narrows and the territory of the Sequani and had reached the territory of the Aedui, and were laying waste their fields.",
     "answer": "Helvētiī iam per angustiās et fīnēs Sēquanōrum suās cōpiās trādūxerant et in Haeduōrum fīnēs pervēnerant eorumque agrōs populābantur.",
@@ -815,7 +790,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1.11"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q2",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
    {
     "prompt": "The Boii too, who had settled across the Rhine and had crossed into Norican territory and were attacking Noreia, they welcomed to themselves as allies and attached to themselves.",
     "answer": "Boiosque, quī trāns Rhēnum incoluerant et in agrum Nōricum trānsierant Noreiamque oppugnābant, receptōs ad sē sociōs sibī̆ adscīscunt.",
@@ -877,13 +858,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1.22"
     }
-   }
-  ]
- },
- {
-  "id": "bn-244-syntax-of-reflexive-pronouns-q3",
-  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
-  "questions": [
+   },
    {
     "prompt": "What reason is there why we should exert ourselves in so great toils?",
     "answer": "Quid est quod tantīs nōs in labōribus exerceāmus?",
@@ -903,7 +878,13 @@
      "work": "Pro Archia",
      "locus": "28"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q3",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
    {
     "prompt": "For each of you pick out from the squadrons and maniples nine like yourselves.",
     "answer": "Singulīs vōbīs novēnōs ex turmīs manipulīsque vestrī similēs ēligite.",
@@ -966,13 +947,7 @@
      "work": "Pro Lege Manilia",
      "locus": "25"
     }
-   }
-  ]
- },
- {
-  "id": "bn-244-syntax-of-reflexive-pronouns-q4",
-  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
-  "questions": [
+   },
    {
     "prompt": "You have just heard the ambassadors from Tyndaris say that the statue of Mercury which was worshiped with annual rites among them was taken away.",
     "answer": "Audīstis nūper dīcere lēgātōs Tyndaritānōs Mercurium quī sacrīs anniversāriīs apud eōs colerētur esse sublātum.",
@@ -998,7 +973,13 @@
      "work": "In Verrem",
      "locus": "4.84"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q4",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
    {
     "prompt": "How can any one fail to approve his own safety?",
     "answer": "Quī poterat salūs sua cuiquam nōn probārī?",
@@ -1052,13 +1033,7 @@
      "work": "Paradoxa Stoicorum",
      "locus": "51"
     }
-   }
-  ]
- },
- {
-  "id": "bn-244-syntax-of-reflexive-pronouns-q5",
-  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
-  "questions": [
+   },
    {
     "prompt": "That he came into Gaul before the Roman nation.",
     "answer": "sē prius in Galliam vēnisse quam populum Rōmānum.",
@@ -1078,7 +1053,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 44, 7"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q5",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
    {
     "prompt": "That they had learned from their fathers and ancestors.",
     "answer": "sē ā patribus maiōribusque suīs didicisse.",
@@ -1098,24 +1079,6 @@
     }
    },
    {
-    "prompt": "That he had crossed the Rhine not of his own accord.",
-    "answer": "trānsīsse Rhēnum sēsē nōn suā sponte.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "trānsīsse",
-     "Rhēnum",
-     "sēsē",
-     "nōn",
-     "suā",
-     "sponte"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "1, 44, 1"
-    }
-   },
-   {
     "prompt": "Virtue is fond of itself.",
     "answer": "est amāns suī virtūs.",
     "kind": "translate-en-la",
@@ -1130,13 +1093,7 @@
      "work": "Laelius de Amicitia",
      "locus": "98"
     }
-   }
-  ]
- },
- {
-  "id": "bn-244-syntax-of-reflexive-pronouns-q6",
-  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Caesar divided his forces.",
     "answer": "Caesar cōpiās suās dīvīsit.",
@@ -1168,7 +1125,13 @@
      "work": "De Inventione",
      "locus": "2, 144"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q6",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
    {
     "prompt": "He restored their property to the Syracuse people.",
     "answer": "suās rēs Syrācūsānīs restituit.",
@@ -1201,13 +1164,7 @@
      "work": "Pro Ligario",
      "locus": "22"
     }
-   }
-  ]
- },
- {
-  "id": "bn-244-syntax-of-reflexive-pronouns-q7",
-  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Ariovistus answered that all the states of Gaul had come to attack him.",
     "answer": "Ariovistus respondit omnēs Galliae cīvitātēs ad sē oppugnandum vēnisse.",
@@ -1246,7 +1203,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 36, 6"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-244-syntax-of-reflexive-pronouns-q7",
+  "sectionId": "bn-244-syntax-of-reflexive-pronouns",
+  "questions": [
    {
     "prompt": "He instructs him to come back to himself as soon as possible.",
     "answer": "huic mandat, ut ad sē quam prīmum revertātur.",
@@ -1286,6 +1249,26 @@
      "author": "Suetonius",
      "work": "De Vita Caesarum",
      "locus": "62"
+    }
+   },
+   {
+    "prompt": "He gave a hundred oxen to the soldiers who had been with him.",
+    "answer": "centum bovēs mīlitibus dōnō dedit, quī sēcum fuerant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "centum",
+     "bovēs",
+     "mīlitibus",
+     "dōnō",
+     "dedit",
+     "quī",
+     "sēcum",
+     "fuerant"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "7, 37, 3"
     }
    }
   ]

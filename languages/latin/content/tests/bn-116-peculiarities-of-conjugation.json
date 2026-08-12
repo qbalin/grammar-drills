@@ -632,5 +632,80 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-116-peculiarities-of-conjugation-q1",
+  "sectionId": "bn-116-peculiarities-of-conjugation",
+  "questions": [
+   {
+    "prompt": "Tears with their moisture ate away her bloodless cheeks.",
+    "answer": "Lacrimae perēdēre hūmōre exsanguēs genās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lacrimae",
+     "perēdēre",
+     "hūmōre",
+     "exsanguēs",
+     "genās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae disputationes",
+     "locus": "3.12"
+    }
+   },
+   {
+    "prompt": "At the servant's instruction they set before her only one vessel of vinegar, whose sharpness and power dissolves pearls into a liquid.",
+    "answer": "Ex praeceptō ministrī ūnum tantum vās ante eam posuēre acētī, cuius asperitās vīsque in tābem margarītās resolvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ex",
+     "praeceptō",
+     "ministrī",
+     "ūnum",
+     "tantum",
+     "vās",
+     "ante",
+     "eam",
+     "posuēre",
+     "acētī",
+     "cuius",
+     "asperitās",
+     "vīsque",
+     "in",
+     "tābem",
+     "margarītās",
+     "resolvit"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "9.58"
+    }
+   },
+   {
+    "prompt": "Lead out with you also all your followers; if not, then as many as possible — purge the city!",
+    "answer": "Ēdūc tēcum etiam omnēs tuōs: sī minus, quam plūrimōs — pūrgā urbem!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ēdūc",
+     "tēcum",
+     "etiam",
+     "omnēs",
+     "tuōs",
+     "sī",
+     "minus",
+     "quam",
+     "plūrimōs",
+     "pūrgā",
+     "urbem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.10"
+    }
+   }
+  ]
  }
 ]

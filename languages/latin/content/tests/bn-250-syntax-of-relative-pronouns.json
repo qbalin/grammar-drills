@@ -1238,31 +1238,6 @@
   "sectionId": "bn-250-syntax-of-relative-pronouns",
   "questions": [
    {
-    "prompt": "Caesar, those who dare to speak before you are unaware of your greatness; those who do not dare, of your kindness.",
-    "answer": "Caesar, quī apud tē audent dīcere, magnitūdinem tuam ignōrant; quī non audent, hūmānitātem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Caesar",
-     "quī",
-     "apud",
-     "tē",
-     "audent",
-     "dīcere",
-     "magnitūdinem",
-     "tuam",
-     "ignōrant",
-     "quī",
-     "non",
-     "audent",
-     "hūmānitātem"
-    ],
-    "source": {
-     "author": "Seneca Maior",
-     "work": "Controversiae",
-     "locus": "6.3"
-    }
-   },
-   {
     "prompt": "He who is everywhere is nowhere.",
     "answer": "Nusquam est quī ubīque est.",
     "kind": "translate-en-la",
@@ -1296,13 +1271,7 @@
      "work": "Epistulae morales ad Lucilium",
      "locus": "1.2.3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q3",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "He began to march into those PLACES in which PLACES he heard the Germans were.",
     "answer": "Iter in ea loca facere coepit quibus in locīs esse Germānōs audiēbat.",
@@ -1344,7 +1313,13 @@
      "work": "Pro Milone",
      "locus": "43"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q3",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "That day which he had appointed came.",
     "answer": "Ea diēs quam cōnstituerat vēnit.",
@@ -1381,13 +1356,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "2.18"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q4",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "I undertook the first defence of an innocent man that was offered me.",
     "answer": "Quae prīma innocentis mihi dēfēnsiō est oblāta suscēpī.",
@@ -1430,7 +1399,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1.12"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q4",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "They spend much time in hunting, which increases their strength.",
     "answer": "Multum sunt in vēnātiōnibus, quae rēs vīrēs alit.",
@@ -1477,13 +1452,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "12.23.2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q5",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "The portion of the Helvetian state which had brought a serious disaster on the Roman people was the first to pay the penalty.",
     "answer": "Quae pars cīvitātis Helvētiae īnsīgnem calamitātem populō Rōmānō intulerat, ea prīnceps poenās persolvit.",
@@ -1535,7 +1504,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 48, 5"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q5",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "Hippias bragged he had made with his own hand the ring which he wore, the cloak in which he was wrapped; and the slippers which he had on.",
     "answer": "Hippiās glōriātus est ānulum quem habēret, pallium quō amictus, soccōs quibus indūtus esset, sē suā manū cōnfēcisse.",
@@ -1581,13 +1556,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 15, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q6",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "What he changes, that he spoils.",
     "answer": "quae mūtat, ea corrumpit.",
@@ -1627,7 +1596,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 49, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q6",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "Sabinus ordered what tribunes of the soldiers he had about him, to follow him.",
     "answer": "Sabīnus quōs tribūnōs mīlitum circum sē habēbat, sē sequī iubet.",
@@ -1665,13 +1640,7 @@
      "work": "In Catilinam",
      "locus": "1, 9"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q7",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "With what sense you have, nothing will elude you.",
     "answer": "quā prūdentiā es, nihil tē fugiet.",
@@ -1715,7 +1684,13 @@
      "work": "Epistulae ad Atticum",
      "locus": "6, 9, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q7",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "Ajax, on the contrary, with his traditional vehemence, would have chosen rather to die a thousand deaths than to submit to such indignities.",
     "answer": "at Āiāx, quō animō trāditur, mīlliēs oppetere mortem quam illa perpetī māluisset.",
@@ -1759,13 +1734,7 @@
      "work": "In Verrem",
      "locus": "5, 129"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q8",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Peace and prosperity, which the sons of men count chiefest of blessings.",
     "answer": "ōtium atque dīvitiae, quae prīma mortālēs putant.",
@@ -1809,7 +1778,13 @@
      "work": "De Natura Deorum",
      "locus": "3, 61"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q8",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "The crops, and the fruits of the trees that earth produces.",
     "answer": "eās frūges atque frūctūs, quōs terra gignit.",
@@ -1844,13 +1819,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 15, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q9",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "A pair of monstrosities, whom their depravity had delivered over in irons to the tribune.",
     "answer": "duo prōdigia, quōs improbitās tribūnō cōnstrictōs addīxerat.",
@@ -1888,7 +1857,13 @@
      "work": "Ab Urbe Condita",
      "locus": "22, 57, 3"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q9",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "A Vejan war broke out, with whom the Sabines had allied themselves.",
     "answer": "quōs scrībās. Vēiēns bellum exortum, quibus Sabīnī arma coniūnxerant.",
@@ -1929,13 +1904,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 2, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q10",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "To the river Scheldt, that empties itself into the Maas.",
     "answer": "ad flūmen Scaldem quod īnfluit in Mosam.",
@@ -1972,7 +1941,13 @@
      "work": "Ab Urbe Condita",
      "locus": "42, 44, 3"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q10",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "The river which is called the Thames.",
     "answer": "flūmen quod appellātur Tamesis.",
@@ -2008,13 +1983,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "12, 14, 7"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q11",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "I pushed on to Amanus, a mountain that was packed with the enemy.",
     "answer": "ad Amānum contendī, quī mōns erat hostium plēnus.",
@@ -2052,7 +2021,13 @@
      "work": "Ab Urbe Condita",
      "locus": "23, 7, 4"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q11",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "A morass, that lay unbroken between, hindered the Romans from pursuit.",
     "answer": "palūs quae perpetua intercēdēbat Rōmānōs ad īnsequendum tardābat.",
@@ -2096,13 +2071,7 @@
      "work": "Pro Sexto Roscio Amerino",
      "locus": "25"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q12",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "He ordered the vessels to be withdrawn, a course which proved very advantageous for our people.",
     "answer": "nāvēs removērī iussit, quae rēs māgnō ūsuī nostrīs fuit.",
@@ -2145,7 +2114,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 3, 5"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q12",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "Why am I talking about an enemy who admits himself he is an enemy, and whom I do not fear?",
     "answer": "cūr loquimur dē eō hoste, quī iam fatētur sē esse hostem, et quem nōn timeō?",
@@ -2195,13 +2170,7 @@
      "work": "Bellum Iugurthinum",
      "locus": "101, 5"
     }
-   }
-  ]
- },
- {
-  "id": "bn-250-syntax-of-relative-pronouns-q13",
-  "sectionId": "bn-250-syntax-of-relative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Calling a council of war, he proceeded to ask their opinion, and in this council some opinions of the following import were set forth.",
     "answer": "cōnsiliō convocātō sententiās exquīrere coepit, quō in cōnsiliō nōnnūllae huius modī sententiae dīcēbantur.",
@@ -2247,7 +2216,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "5, 43, 6"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-250-syntax-of-relative-pronouns-q13",
+  "sectionId": "bn-250-syntax-of-relative-pronouns",
+  "questions": [
    {
     "prompt": "Anicetus must carry out his agreement. Without any ado he asks to have the entire management of the crime.",
     "answer": "perpetrāret Anicētus prōmissa. quī nihil cunctātus poscit summam sceleris.",
@@ -2291,6 +2266,28 @@
      "author": "Julius Caesar",
      "work": "Commentarii de bello Gallico",
      "locus": "7, 32, 5"
+    }
+   },
+   {
+    "prompt": "So if the soldiers had not been utterly spent, all the forces of the enemy might have been exterminated.",
+    "answer": "quod nisi mīlitēs essent dēfessī, omnēs hostium cōpiae dēlērī potuissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "nisi",
+     "mīlitēs",
+     "essent",
+     "dēfessī",
+     "omnēs",
+     "hostium",
+     "cōpiae",
+     "dēlērī",
+     "potuissent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 88, 6"
     }
    }
   ]

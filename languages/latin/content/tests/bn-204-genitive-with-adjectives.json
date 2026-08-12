@@ -595,6 +595,30 @@
     }
    },
    {
+    "prompt": "But you have heard, senators, the philosopher's voice: he denied that he had ever been desirous of a triumph.",
+    "answer": "At audīstis, patrēs cōnscrīptī, philosophī vōcem: negāvit sē triumphī cupidum umquam fuisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "At",
+     "audīstis",
+     "patrēs",
+     "cōnscrīptī",
+     "philosophī",
+     "vōcem",
+     "negāvit",
+     "sē",
+     "triumphī",
+     "cupidum",
+     "umquam",
+     "fuisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Pisonem",
+     "locus": "24"
+    }
+   },
+   {
     "prompt": "Thence both to the citizens desirous of peace and to the neighboring states there arose a hope that the king would go over to his grandfather's ways and institutions.",
     "answer": "Inde et cīvibus ōtiī cupidīs et fīnītimīs cīvitātibus facta spēs in avī mōrēs atque īnstitūta rēgem abitūrum.",
     "kind": "translate-en-la",
@@ -654,7 +678,13 @@
      "work": "In Catilinam orationes",
      "locus": "1.2"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-204-genitive-with-adjectives-q2",
+  "sectionId": "bn-204-genitive-with-adjectives",
+  "questions": [
    {
     "prompt": "Terrified by these things, and altogether unskilled in this kind of fighting, our men did not fight with the same eagerness and zeal with which they had been accustomed to fight in battles on foot.",
     "answer": "Quibus rēbus nostrī perterritī, atque hūius omnīnō generis pūgnae imperītī, nōn eādem alacritāte āc studiō quō in pedestribus ūtī proeliīs cōnsuērant utēbantur.",
@@ -688,13 +718,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "4.24"
     }
-   }
-  ]
- },
- {
-  "id": "bn-204-genitive-with-adjectives-q2",
-  "sectionId": "bn-204-genitive-with-adjectives",
-  "questions": [
+   },
    {
     "prompt": "Devotees of wisdom, for that is what ‘philosophers’ means.",
     "answer": "sapientiae studiōsōs, id est enim philosophōs.",
@@ -744,25 +768,6 @@
      "author": "Tacitus",
      "work": "Annales",
      "locus": "1, 43"
-    }
-   },
-   {
-    "prompt": "You have always been more hungry for glory than any other nation.",
-    "answer": "semper appetentēs glōriae praeter cēterās gentīs fuistis.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "semper",
-     "appetentēs",
-     "glōriae",
-     "praeter",
-     "cēterās",
-     "gentīs",
-     "fuistis"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Lege Manilia",
-     "locus": "7"
     }
    }
   ]

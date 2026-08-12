@@ -27,6 +27,8 @@ for the engine: `packages/core` must not learn a language.
 | `content/` | **generated**, and what ships: `grammar.json`, `tests/*.json`, `lemmas.json.gz` + `forms.txt.gz` |
 | `content/quotes.jsonl.gz` | Latin only: quotations filed under topics, an input to `quote-tests.mjs` rather than something that ships |
 | `content/ag-quotes.jsonl.gz` | Latin only: the same, out of Allen & Greenough rather than the dictionary dump. `quote-tests.mjs --from quotes` reads both pools |
+| `grammar/inflection-topics.tsv` | the classes a topic is about, one row per rule — read `inflection-topics.mjs` |
+| `content/inflection-topics.jsonl.gz` | the topics that table confirmed for each pool sentence, merged into its own by `quote-tests.mjs` |
 | `gen/sources.mjs` | the citation abbreviations a pack's grammar uses, expanded |
 | `grammar/parse.py` | builds `grammar.json` from a public source it downloads |
 | `content/grammars/<id>.json` | a *further* grammar of the same language, declared in `profile.grammars` |
@@ -148,6 +150,32 @@ the "unrelated red build" the rule forbids — the feature would be buying the
 raise, not the content. So the pipeline filters instead: a quotation ships only
 if it carries no unattested form at all, and the ones dropped for it are
 reported rather than argued with. Both packs' numbers were unmoved by it.
+
+## Two ways a quotation reaches a topic
+
+A pool record's `topics` are a model's answer, recorded per sentence or per
+source section in a reviewable table, because for syntax there is no other kind
+of answer: nothing can look up whether a sentence teaches the ablative of means.
+
+For inflection there is. `scripts/inflection-topics.mjs` files a sentence under
+the topics a **lookup** confirms, out of `grammar/inflection-topics.tsv` — a
+declared table whose every row carries the sentence of the book that licenses
+it. A form licenses a class only when every candidate lemma of it agrees, a
+declension wants an oblique cell, and a rule that licenses nothing is
+**withdrawn rather than loosened**: the relative and interrogative pronouns
+share their forms, so no sentence proves which is meant, and their rows are
+gone. `impersonal` was withdrawn for the same reason — the dictionary writes it
+on a *sense*, so it marks `cadō`, and a sense the surface cannot distinguish is
+not a fact about the word in front of the student.
+
+**A sentence still ships once.** `quote-tests.mjs --allocate` deals the whole
+pool in one pass, sparsest topic first, out of the surplus of the topics that
+have most and never below `--donor-floor`. So filling a topic means moving a
+sentence, not copying one: `answerKey` keeps meaning what it says and C4 does
+not move. The corollary is that a pool cannot be re-dealt incrementally — the
+composer seeds its keys from everything on disk — so a different deal starts
+with `prune-tests.mjs --quoted`, which hands the quoted tests back to the pools
+and leaves the generated ones holding the floor.
 
 ## The reference
 

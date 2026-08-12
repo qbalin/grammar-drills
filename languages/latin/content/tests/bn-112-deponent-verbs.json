@@ -977,6 +977,31 @@
     }
    },
    {
+    "prompt": "They established a festival day, not that on it alone masters might dine with their slaves, but that they might in any case.",
+    "answer": "Īnstituērunt diem fēstum: nōn quō solō cum servīs dominī vescerentur, sed quō utique.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īnstituērunt",
+     "diem",
+     "fēstum",
+     "nōn",
+     "quō",
+     "solō",
+     "cum",
+     "servīs",
+     "dominī",
+     "vescerentur",
+     "sed",
+     "quō",
+     "utique"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.14"
+    }
+   },
+   {
     "prompt": "Anything best in its kind is looked on with respect.",
     "answer": "habet venerātiōnem quidquid excellit.",
     "kind": "translate-en-la",
@@ -991,7 +1016,13 @@
      "work": "De Natura Deorum",
      "locus": "1, 45"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-112-deponent-verbs-q3",
+  "sectionId": "bn-112-deponent-verbs",
+  "questions": [
    {
     "prompt": "The household was suspected.",
     "answer": "familia in suspīciōnem est vocāta.",
@@ -1007,6 +1038,153 @@
      "author": "Cicero",
      "work": "In Verrem",
      "locus": "5, 10"
+    }
+   },
+   {
+    "prompt": "The friend, suspecting nothing, undertook to hold on to the man.",
+    "answer": "hospes, quī nihil suspicārētur, hominem retinēre coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hospes",
+     "quī",
+     "nihil",
+     "suspicārētur",
+     "hominem",
+     "retinēre",
+     "coepit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 64"
+    }
+   },
+   {
+    "prompt": "What earthly reason was there, why you should not have followed Caesar to Africa?",
+    "answer": "quid fuit causae, cūr in Āfricam Caesarem nōn sequerēre?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "fuit",
+     "causae",
+     "cūr",
+     "in",
+     "Āfricam",
+     "Caesarem",
+     "nōn",
+     "sequerēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2, 71"
+    }
+   },
+   {
+    "prompt": "But we will talk of this when we have time.",
+    "answer": "sed dē hīs etiam rēbus, ōtiōsī cum erimus, loquēmur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sed",
+     "dē",
+     "hīs",
+     "etiam",
+     "rēbus",
+     "ōtiōsī",
+     "cum",
+     "erimus",
+     "loquēmur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-112-deponent-verbs-q4",
+  "sectionId": "bn-112-deponent-verbs",
+  "questions": [
+   {
+    "prompt": "To avoid facing war on a more formidable scale, Caesar goes to the army.",
+    "answer": "Caesar, nē graviōrī bellō occurreret, ad exercitum proficīscitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "nē",
+     "graviōrī",
+     "bellō",
+     "occurreret",
+     "ad",
+     "exercitum",
+     "proficīscitur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 6, 1"
+    }
+   },
+   {
+    "prompt": "To cut a long story short, the woman makes her will and dies.",
+    "answer": "ut in pauca cōnferam, testāmentō factō mulier moritur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "in",
+     "pauca",
+     "cōnferam",
+     "testāmentō",
+     "factō",
+     "mulier",
+     "moritur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Caecina",
+     "locus": "17"
+    }
+   },
+   {
+    "prompt": "When all were created, then to them spake the god.",
+    "answer": "quandō omnēs creātī sunt, tum ad eōs deus fātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quandō",
+     "omnēs",
+     "creātī",
+     "sunt",
+     "tum",
+     "ad",
+     "eōs",
+     "deus",
+     "fātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Timaeus",
+     "locus": "40"
+    }
+   },
+   {
+    "prompt": "I shall compass all my ends, if I hurry; if I delay, I shall lose everything.",
+    "answer": "assequor omnia, sī properō; sī cunctor, āmittō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "assequor",
+     "omnia",
+     "sī",
+     "properō",
+     "sī",
+     "cunctor",
+     "āmittō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10, 8, 5"
     }
    }
   ]

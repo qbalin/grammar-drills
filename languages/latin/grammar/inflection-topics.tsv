@@ -1,0 +1,37 @@
+bn_topic	rule	argument	bn_says
+bn-018-the-five-declensions	spread	declension:3	There are five Declensions in Latin, distinguished from each other by the final letter of the Stem
+bn-020-first-declension	noun-declension	1	Pure Latin nouns of the First Declension regularly end, in the Nominative Singular, in -ă
+bn-023-second-declension	noun-declension	2	Pure Latin nouns of the Second Declension end in -us, -er, -ir, Masculine; -um, Neuter
+bn-028-third-declension	noun-declension	3	Nouns of the Third Declension end in -a, -e, -ī, -ō, -y, -c, -l, -n, -r, -s, -t, -x.
+bn-048-fourth-declension	noun-declension	4	Nouns of the Fourth Declension end in -us Masculine, and -ū Neuter
+bn-051-fifth-declension	noun-declension	5	Nouns of the Fifth Declension end in -ēs
+bn-063-adjectives-of-the-first-and-second	adj-declension	1	In these the Masculine is declined like hortus, puer, or ager, the Feminine like porta, and the Neuter like bellum
+bn-067-adjectives-of-the-third-declension	adj-declension	3	Adjectives of three terminations in the Nominative Singular,—one for each gender
+bn-071-comparison-of-adjectives	tag	adj:comparative	The Comparative is regularly formed by adding -ior (Neut. -ius) to the Stem of the Positive
+bn-071-comparison-of-adjectives	tag	adj:superlative	the Superlative by adding -issimus (-a, -um) to the Stem of the Positive
+bn-076-formation-and-comparison-of-adverbs	tag	adv:comparative	Adverbs are for the most part derived from adjectives, and depend upon them for their comparison
+bn-076-formation-and-comparison-of-adverbs	tag	adv:superlative	Adverbs are for the most part derived from adjectives, and depend upon them for their comparison
+bn-078-numerals	pos	num	Numeral Adjectives, comprising Cardinals, Ordinals, Distributives
+bn-084-personal-pronouns	lemma-set	ego tu nos vos	These correspond to the English I, you, he, she, it
+bn-085-reflexive-pronouns	lemma-set	sui	These refer to the subject of the sentence or clause in which they stand
+bn-086-possessive-pronouns	lemma-set	meus tuus suus noster vester	These are strictly adjectives of the First and Second Declensions, and are inflected as such
+bn-087-demonstrative-pronouns	lemma-set	hic iste ille is idem	hīc, this (where I am); iste, that (where you are); ille, that; is, that
+bn-088-the-intensive-pronoun	lemma-set	ipse	The Intensive Pronoun in Latin is ipse
+bn-091-indefinite-pronouns	lemma-set	aliquis quisquam quisque quidam quispiam quivis quilibet	These have the general force of some one, any one
+bn-092-pronominal-adjectives	lemma-set	alius alter uter neuter unus solus totus ullus nullus	The following adjectives, also, frequently have pronominal force
+bn-098-the-four-conjugations	tag	active,infinitive,present	There are in Latin four regular Conjugations, distinguished from each other by the vowel of the termination of the Present Infinitive Active
+bn-100-conjugation-of-sum	lemma-set	sum	The irregular verb sum is so important for the conjugation of all other verbs that its inflection is given at the outset
+bn-101-first-or-a-conjugation	verb-conjugation	1	Active Voice.—Amō, I love. amō amāre amāvī amātus
+bn-103-second-or-e-conjugation	verb-conjugation	2	Active Voice.—Moneō, I advise. moneō monēre monuī monitus
+bn-105-third-or-consonant-conjugation	verb-conjugation	3	Active Voice.—Regō, I rule. regō regere rēxī rēctus
+bn-107-fourth-or-i-conjugation	verb-conjugation	4	Active Voice.—Audiō, I hear. audiō audīre audīvī audītus
+bn-109-verbs-in-io-of-the-third-conjugation	lemma-set	capio cupio facio fodio fugio jacio pario quatio rapio sapio	Here belong— capiō, to take; cupiō, to desire; faciō, to make; fodiō, to dig; fugiō, to flee
+bn-112-deponent-verbs	entry-tag	deponent	Deponent Verbs have in the main Passive forms with Active or Neuter meaning
+bn-114-semi-deponents	lemma-set	audeo gaudeo soleo fido confido diffido	Semi-Deponents are verbs which have the Present System in the Active Voice, but the Perfect System in the Passive
+bn-124-irregular-verbs	lemma-set	do edo fero volo nolo malo eo fio	The most important are sum, dō, edō, ferō, volō, nōlō, mālō, eō, fīō
+bn-133-defective-verbs	lemma-set	coepi memini odi inquam aio	Coepī, I have begun. Meminī, I remember. Ōdī, I hate.
+bn-138-impersonal-verbs	lemma-set	fulgeo tono pluo pluit ningo ningit grandinat paeniteo pigeo piget pudeo taedeo taedet misereo miseret libet licet oporteo oportet decet dedecet refert	I. Verbs denoting operations of the weather. II. Special Verbs: paenitet, piget, pudet, taedet, miseret, libet, licet, oportet, decet, dedecet, rēfert. (Group III, impersonal only in special senses, is left out: the surface cannot say which sense is meant.)
+bn-140-adverbs	pos	adv	Adverbs denote manner, place, time, or degree
+bn-141-prepositions	pos	prep	Prepositions show relations of words
+bn-145-conjunctions-and-interjections	pos	conj	Conjunctions are used to connect ideas
+bn-145-conjunctions-and-interjections	pos	intj	Interjections express emotion

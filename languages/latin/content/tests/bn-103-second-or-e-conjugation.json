@@ -1245,5 +1245,399 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-103-second-or-e-conjugation-q1",
+  "sectionId": "bn-103-second-or-e-conjugation",
+  "questions": [
+   {
+    "prompt": "But pains, if any do rush upon us, never have such great force that a wise man does not have more to rejoice at than to be pained by.",
+    "answer": "Dolōrēs autem, sī quī incurrunt, nunquam vim tantam habent, ut nōn plūs habeat sapiēns quod gaudeat quam quod angātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dolōrēs",
+     "autem",
+     "sī",
+     "quī",
+     "incurrunt",
+     "nunquam",
+     "vim",
+     "tantam",
+     "habent",
+     "ut",
+     "nōn",
+     "plūs",
+     "habeat",
+     "sapiēns",
+     "quod",
+     "gaudeat",
+     "quam",
+     "quod",
+     "angātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De finibus bonorum et malorum",
+     "locus": "1.62"
+    }
+   },
+   {
+    "prompt": "Since this is so, Catiline, go on where you have begun: leave the city at last; the gates are open; set forth!",
+    "answer": "Quae cum ita sint, Catilīna, perge quō coepistī: ēgredere aliquandō ex urbe; patent portae; proficīscere!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quae",
+     "cum",
+     "ita",
+     "sint",
+     "Catilīna",
+     "perge",
+     "quō",
+     "coepistī",
+     "ēgredere",
+     "aliquandō",
+     "ex",
+     "urbe",
+     "patent",
+     "portae",
+     "proficīscere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.10"
+    }
+   },
+   {
+    "prompt": "Nay more, so as not to entrust his neck to a barber, he taught his daughters to shave.",
+    "answer": "Quīn etiam nē tōnsōrī collum committeret, tondēre fīliās suās docuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quīn",
+     "etiam",
+     "nē",
+     "tōnsōrī",
+     "collum",
+     "committeret",
+     "tondēre",
+     "fīliās",
+     "suās",
+     "docuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5.58"
+    }
+   },
+   {
+    "prompt": "And, that nothing might delay his departure, he said that the day for the Latin Festival had been fixed for the day before the Ides of April.",
+    "answer": "Et nē quid profectiōnem suam tenēret, prīdiē īdūs Aprīlēs Latīnīs esse cōnstitūtam diem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Et",
+     "nē",
+     "quid",
+     "profectiōnem",
+     "suam",
+     "tenēret",
+     "prīdiē",
+     "īdūs",
+     "Aprīlēs",
+     "Latīnīs",
+     "esse",
+     "cōnstitūtam",
+     "diem"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "44.19.4.2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-103-second-or-e-conjugation-q2",
+  "sectionId": "bn-103-second-or-e-conjugation",
+  "questions": [
+   {
+    "prompt": "So that Ambiorix might not have a refuge with them.",
+    "answer": "Nē ad eōs Ambiorīx receptum habēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nē",
+     "ad",
+     "eōs",
+     "Ambiorīx",
+     "receptum",
+     "habēret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6.9"
+    }
+   },
+   {
+    "prompt": "This I pass over and readily allow to be kept silent, lest in this state the enormity of so great a crime should seem either to have existed or to have gone unpunished.",
+    "answer": "Quod ego praetermittō et facile patior silērī, nē in hāc cīvitāte tantī facinoris immanitās aut exstitisse aut nōn vindicāta esse videātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "ego",
+     "praetermittō",
+     "et",
+     "facile",
+     "patior",
+     "silērī",
+     "nē",
+     "in",
+     "hāc",
+     "cīvitāte",
+     "tantī",
+     "facinoris",
+     "immanitās",
+     "aut",
+     "exstitisse",
+     "aut",
+     "nōn",
+     "vindicāta",
+     "esse",
+     "videātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.14"
+    }
+   },
+   {
+    "prompt": "Lucius Sulla had treated the army luxuriously, in order to make it devoted to him.",
+    "answer": "L. Sulla exercitum, quō sibi fīdum faceret, lūxuriōsē habuerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "L",
+     "Sulla",
+     "exercitum",
+     "quō",
+     "sibi",
+     "fīdum",
+     "faceret",
+     "lūxuriōsē",
+     "habuerat"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "11"
+    }
+   },
+   {
+    "prompt": "I see nothing to fear.",
+    "answer": "Nihil videō quod timeam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "videō",
+     "quod",
+     "timeam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9.16.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-103-second-or-e-conjugation-q3",
+  "sectionId": "bn-103-second-or-e-conjugation",
+  "questions": [
+   {
+    "prompt": "I seem to myself to have done wrong because I have left you.",
+    "answer": "Peccāsse mihi videor quī ā tē discesserim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Peccāsse",
+     "mihi",
+     "videor",
+     "quī",
+     "ā",
+     "tē",
+     "discesserim"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16.1"
+    }
+   },
+   {
+    "prompt": "So it happens that they attend because they follow duty, but are silent because they seek to avoid danger.",
+    "answer": "Ita fit ut adsint proptereā quod officium sequuntur, taceant autem quia periculum vītant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ita",
+     "fit",
+     "ut",
+     "adsint",
+     "proptereā",
+     "quod",
+     "officium",
+     "sequuntur",
+     "taceant",
+     "autem",
+     "quia",
+     "periculum",
+     "vītant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "1"
+    }
+   },
+   {
+    "prompt": "Boxers groan, not because they are in pain, but because by giving vent to the voice the whole body is put in a state of tension.",
+    "answer": "Pugilēs ingemēscunt, nōn quod doleant, sed quia profundendā vōce omne corpus intenditur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Pugilēs",
+     "ingemēscunt",
+     "nōn",
+     "quod",
+     "doleant",
+     "sed",
+     "quia",
+     "profundendā",
+     "vōce",
+     "omne",
+     "corpus",
+     "intenditur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2.56"
+    }
+   },
+   {
+    "prompt": "When Catiline sees that they have come together, he retires.",
+    "answer": "Catilīna, ubi eōs convēnisse videt, sēcēdit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catilīna",
+     "ubi",
+     "eōs",
+     "convēnisse",
+     "videt",
+     "sēcēdit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "20"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-103-second-or-e-conjugation-q4",
+  "sectionId": "bn-103-second-or-e-conjugation",
+  "questions": [
+   {
+    "prompt": "When I was trying to force him from the city, I looked forward to this.",
+    "answer": "Quem quidem cum ex urbe pellēbam, hōc prōvidēbam animō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quem",
+     "quidem",
+     "cum",
+     "ex",
+     "urbe",
+     "pellēbam",
+     "hōc",
+     "prōvidēbam",
+     "animō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3.16"
+    }
+   },
+   {
+    "prompt": "Times occur when those things which seem especially worthy of the upright man, become the opposite.",
+    "answer": "Incidunt tempora, cum ea, quae maximē videntur dīgna esse iūstō homine, fīunt contrāria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Incidunt",
+     "tempora",
+     "cum",
+     "ea",
+     "quae",
+     "maximē",
+     "videntur",
+     "dīgna",
+     "esse",
+     "iūstō",
+     "homine",
+     "fīunt",
+     "contrāria"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1.31"
+    }
+   },
+   {
+    "prompt": "This is not difficult since we are so strong in cavalry.",
+    "answer": "Id difficile nōn est, cum tantum equitātū valeāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Id",
+     "difficile",
+     "nōn",
+     "est",
+     "cum",
+     "tantum",
+     "equitātū",
+     "valeāmus"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3.86"
+    }
+   },
+   {
+    "prompt": "In a short time he had filled out the legions with their complement of men, though at the start he had not had more than two thousand.",
+    "answer": "Brevī spatiō legiōnēs numerō hominum explēverat, cum initiō nōn amplius duōbus mīlibus habuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Brevī",
+     "spatiō",
+     "legiōnēs",
+     "numerō",
+     "hominum",
+     "explēverat",
+     "cum",
+     "initiō",
+     "nōn",
+     "amplius",
+     "duōbus",
+     "mīlibus",
+     "habuisset"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "56"
+    }
+   }
+  ]
  }
 ]

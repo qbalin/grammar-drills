@@ -463,6 +463,32 @@
   "sectionId": "bn-171-the-vocative",
   "questions": [
    {
+    "prompt": "O immortal gods! where in the world are we? in what city are we living? what republic do we have?",
+    "answer": "Ō̆ dī immortālēs! ubinam gentium sumus? in quā urbe vīvimus? quam rem pūblicam habēmus?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ō",
+     "dī",
+     "immortālēs",
+     "ubinam",
+     "gentium",
+     "sumus",
+     "in",
+     "quā",
+     "urbe",
+     "vīvimus",
+     "quam",
+     "rem",
+     "pūblicam",
+     "habēmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.9"
+    }
+   },
+   {
     "prompt": "They say, finally, that he was so distraught that for months on end, with beard and hair let grow, he would sometimes dash his head against the doors, crying out: 'Quintilius Varus, give me back my legions!'.",
     "answer": "Adeō dēnique cōnsternātum ferunt ut, per continuōs mēnsēs barbā capillōque summissō, caput interdum foribus illīderet, vōciferāns: “Quīntilī Vāre, legiōnēs redde!”",
     "kind": "translate-en-la",
@@ -528,7 +554,13 @@
      "work": "In Verrem",
      "locus": "1.33"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-171-the-vocative-q3",
+  "sectionId": "bn-171-the-vocative",
+  "questions": [
    {
     "prompt": "Hear, you people of Alba.",
     "answer": "Audī tū, populus Albānus.",
@@ -544,13 +576,7 @@
      "work": "Ab Urbe Condita",
      "locus": "1.24"
     }
-   }
-  ]
- },
- {
-  "id": "bn-171-the-vocative-q3",
-  "sectionId": "bn-171-the-vocative",
-  "questions": [
+   },
    {
     "prompt": "I should bid you go on and prosper in your valor.",
     "answer": "Iubērem tē macte virtūte esse.",
@@ -601,23 +627,6 @@
      "author": "Cicero",
      "work": "Epistulae ad Familiares",
      "locus": "14, 2, 4"
-    }
-   },
-   {
-    "prompt": "Stick to town, dear Rufus, yes, to town.",
-    "answer": "urbem, urbem, mī Rūfe, cole.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "urbem",
-     "urbem",
-     "mī",
-     "Rūfe",
-     "cole"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "2, 12, 2"
     }
    }
   ]

@@ -995,13 +995,7 @@
      "work": "In Catilinam orationes",
      "locus": "1.28"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q3",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "Does he seem to you to fear death or pain?",
     "answer": "Is tibi mortemne vidētur aut dolōrem timēre?",
@@ -1020,7 +1014,13 @@
      "work": "Tusculanae Disputationes",
      "locus": "5.88"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q3",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "Do you not see that your schemes are manifest?",
     "answer": "Patēre tua cōnsilia nōn sentīs?",
@@ -1070,13 +1070,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "3.37"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q4",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "Whither then is all this tending?",
     "answer": "Quō igitur haec spectant?",
@@ -1092,7 +1086,13 @@
      "work": "Epistulae ad Familiares",
      "locus": "6.6.11"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q4",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "What revenue has been safe for you? What ally have you defended? Whom have you guarded with your fleets?",
     "answer": "Quod vectīgal vōbīs tūtum fuit? Quem socium dēfendistis? Cui praesidiō classibus vestrīs fuistis?",
@@ -1154,13 +1154,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "10.26"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q5",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "Did you desert Lucius Domitius, or did Domitius desert you?",
     "answer": "Vōsne L. Domitium an vōs Domitius dēseruit?",
@@ -1179,7 +1173,13 @@
      "work": "Commentarii de bello Civili",
      "locus": "2.32"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q5",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "I ask whether slaves or free.",
     "answer": "Quaerō servōsne an līberōs.",
@@ -1233,13 +1233,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "3.41"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q6",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "What! Do you think those men wretched?",
     "answer": "An tū miserōs putās illōs?",
@@ -1256,7 +1250,13 @@
      "work": "Tusculanae Disputationes",
      "locus": "1.13"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q6",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "Would he ever have had good hopes about himself unless he had conceived an evil opinion of you?",
     "answer": "An iste umquam dē sē bonam spem habuisset, nisi dē vōbīs malam opīniōnem animō imbibisset?",
@@ -1316,13 +1316,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "1.104"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q7",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "How I always feel the absence of your affectionate sympathy.",
     "answer": "ut ego tuum amōrem et dolōrem dēsīderō.",
@@ -1341,7 +1335,13 @@
      "work": "Epistulae ad Atticum",
      "locus": "3, 11, 12"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q7",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "Why, is not the dog like the wolf?",
     "answer": "quid? canis nōnne similis lupō?",
@@ -1400,28 +1400,6 @@
      "work": "De Natura Deorum",
      "locus": "1, 96"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q8",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
-   {
-    "prompt": "Don’t you remember? :: oh yes.",
-    "answer": "nōnne meministī? :: meminī vērō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "nōnne",
-     "meministī",
-     "meminī",
-     "vērō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "2, 10"
-    }
    },
    {
     "prompt": "Did not Lentulus and Sanga and Torquatus come to see you?",
@@ -1446,7 +1424,13 @@
      "work": "In Pisonem",
      "locus": "77"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q8",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "Tell me, did you ever see god in person?",
     "answer": "quid, deum ipsum numne vīdistī?",
@@ -1483,13 +1467,7 @@
      "work": "In Verrem",
      "locus": "1, 5"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q9",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "But it may be urged that my way of speaking estranged Pompey from me. why, was there anybody the man loved more?",
     "answer": "at vērō Cn. Pompēī voluntātem ā mē aliēnābat ōrātiō mea. an ille quemquam plūs dīlēxit?",
@@ -1532,7 +1510,13 @@
      "work": "In Catilinam",
      "locus": "1, 20"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q9",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "Do you grant that the soul lives on after death? :: oh yes.",
     "answer": "dāsne manēre animōs post mortem? :: dō vērō.",
@@ -1567,13 +1551,7 @@
      "work": "Epistulae",
      "locus": "9, 23, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q10",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "Then furthermore did they offer it voluntarily or did they consent to give it under stress?",
     "answer": "iam id porrō utrum libentēs an invītī dabant?",
@@ -1617,7 +1595,13 @@
      "work": "Pro Roscio Comoedo",
      "locus": "9"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q10",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "Which would you rather do, have us make sail at once, or row just a little bit?",
     "answer": "utrum māvīs? statimne nōs vēla facere an paululum rēmigāre?",
@@ -1657,13 +1641,7 @@
      "work": "Cato Maior de Senectute",
      "locus": "23"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q11",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "How could a god have been taken in?",
     "answer": "deus fallī quī potuit?",
@@ -1678,24 +1656,6 @@
      "author": "Cicero",
      "work": "De Natura Deorum",
      "locus": "3, 76"
-    }
-   },
-   {
-    "prompt": "How is every thing in Samnium?",
-    "answer": "ut sēsē in Samniō rēs habent?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "ut",
-     "sēsē",
-     "in",
-     "Samniō",
-     "rēs",
-     "habent"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "10, 18, 11"
     }
    },
    {
@@ -1715,7 +1675,13 @@
      "work": "Pro Milone",
      "locus": "38"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-162-form-of-interrogative-sentences-q11",
+  "sectionId": "bn-162-form-of-interrogative-sentences",
+  "questions": [
    {
     "prompt": "What say you, Crassus, shall we go and take a seat?",
     "answer": "quid est, Crasse, īmusne sessum?",
@@ -1732,13 +1698,7 @@
      "work": "De Oratore",
      "locus": "3, 17"
     }
-   }
-  ]
- },
- {
-  "id": "bn-162-form-of-interrogative-sentences-q12",
-  "sectionId": "bn-162-form-of-interrogative-sentences",
-  "questions": [
+   },
    {
     "prompt": "With what practical end in view do we seek to know how yon bodies in the sky keep in motion?",
     "answer": "quem frūctum petentēs scīre cupimus illa quō modō moveantur?",
@@ -1777,24 +1737,6 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "7, 30, 21"
-    }
-   },
-   {
-    "prompt": "‘you bought up men’ says he; with what purpose?",
-    "answer": "‘hominēs’ inquit ‘ēmistī.’ quid utī faceret?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "hominēs",
-     "inquit",
-     "ēmistī",
-     "quid",
-     "utī",
-     "faceret"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sestio",
-     "locus": "84"
     }
    }
   ]

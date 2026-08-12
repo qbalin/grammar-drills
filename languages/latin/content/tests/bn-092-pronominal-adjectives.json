@@ -678,5 +678,411 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-092-pronominal-adjectives-q1",
+  "sectionId": "bn-092-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "Show who is not a slave: one is a slave to lust, another to greed, another to ambition, all to fear.",
+    "answer": "Ostende quis nōn sit: alius libīdinī servit, alius avāritiae, alius ambitiōnī, omnēs timōrī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ostende",
+     "quis",
+     "nōn",
+     "sit",
+     "alius",
+     "libīdinī",
+     "servit",
+     "alius",
+     "avāritiae",
+     "alius",
+     "ambitiōnī",
+     "omnēs",
+     "timōrī"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.17"
+    }
+   },
+   {
+    "prompt": "For pleasure hinders good counsel; it is hostile to reason; it blunts, so to speak, the eyes of the mind; and it has no dealings with virtue.",
+    "answer": "Impedit enim cōnsilium voluptās; ratiōnī inimīca est; mentīs, ut ita dīcam, praestringit oculōs; nec habet ūllum cum virtūte commercium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Impedit",
+     "enim",
+     "cōnsilium",
+     "voluptās",
+     "ratiōnī",
+     "inimīca",
+     "est",
+     "mentīs",
+     "ut",
+     "ita",
+     "dīcam",
+     "praestringit",
+     "oculōs",
+     "nec",
+     "habet",
+     "ūllum",
+     "cum",
+     "virtūte",
+     "commercium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "12.42"
+    }
+   },
+   {
+    "prompt": "The same thing must happen to those who attach themselves familiarly to no one's genius, but pass over everything hastily and in a hurry.",
+    "answer": "Īdem accidat necesse est iīs quī nūllius sē ingeniō familiāriter applicant, sed omnia cursim et properantēs trānsmittunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Īdem",
+     "accidat",
+     "necesse",
+     "est",
+     "iīs",
+     "quī",
+     "nūllius",
+     "sē",
+     "ingeniō",
+     "familiāriter",
+     "applicant",
+     "sed",
+     "omnia",
+     "cursim",
+     "et",
+     "properantēs",
+     "trānsmittunt"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.2"
+    }
+   },
+   {
+    "prompt": "This one man once killed, I understand that this plague of the state can be checked for a while, but not suppressed forever.",
+    "answer": "Hōc autem ūnō interfectō, intellegō hanc reī pūblicae pestem paulisper reprimī, nōn in perpetuum comprimī posse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hōc",
+     "autem",
+     "ūnō",
+     "interfectō",
+     "intellegō",
+     "hanc",
+     "reī",
+     "pūblicae",
+     "pestem",
+     "paulisper",
+     "reprimī",
+     "nōn",
+     "in",
+     "perpetuum",
+     "comprimī",
+     "posse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-092-pronominal-adjectives-q2",
+  "sectionId": "bn-092-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "Of land animals, man alone is two-footed; to him alone belong collar-bones and shoulders, to the rest shoulder-blades, and to him alone forearms.",
+    "answer": "Terrestrium sōlus homō̆ bipēs. ūnī iugulī, umerī, cēterīs armī; ūnī ulnae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Terrestrium",
+     "sōlus",
+     "homō",
+     "bipēs",
+     "ūnī",
+     "iugulī",
+     "umerī",
+     "cēterīs",
+     "armī",
+     "ūnī",
+     "ulnae"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "11.43.98"
+    }
+   },
+   {
+    "prompt": "Another limit must be set, if I first state what Scipio was wont most to find fault with.",
+    "answer": "Alius fīnis cōnstituendus est, sī prius quid maximē reprehendere Scīpiō solitus sit dīxerō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alius",
+     "fīnis",
+     "cōnstituendus",
+     "est",
+     "sī",
+     "prius",
+     "quid",
+     "maximē",
+     "reprehendere",
+     "Scīpiō",
+     "solitus",
+     "sit",
+     "dīxerō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "59"
+    }
+   },
+   {
+    "prompt": "While he attempted to climb one step [in rank] he fell into danger.",
+    "answer": "Dum ūnum adscendere gradum cōnātus est, vēnit in perīculum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "ūnum",
+     "adscendere",
+     "gradum",
+     "cōnātus",
+     "est",
+     "vēnit",
+     "in",
+     "perīculum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "55"
+    }
+   },
+   {
+    "prompt": "They make the month longer by a day, or even by two days.",
+    "answer": "ūnō diē longiōrem mēnsem faciunt aut bīduō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnō",
+     "diē",
+     "longiōrem",
+     "mēnsem",
+     "faciunt",
+     "aut",
+     "bīduō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 129"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-092-pronominal-adjectives-q3",
+  "sectionId": "bn-092-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "He says they must all concentrate their attack on Indutiomarus.",
+    "answer": "praecipit ūnum omnēs peterent Indutiomarum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "praecipit",
+     "ūnum",
+     "omnēs",
+     "peterent",
+     "Indutiomarum"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 58, 5"
+    }
+   },
+   {
+    "prompt": "When Caesar came to Gaul, the leaders of one party were the Aeduans, of the other the Sequanians.",
+    "answer": "cum Caesar in Galliam vēnit, alterīus factiōnis prīncipēs erant Aeduī, alterīus Sēquanī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "Caesar",
+     "in",
+     "Galliam",
+     "vēnit",
+     "alterīus",
+     "factiōnis",
+     "prīncipēs",
+     "erant",
+     "Aeduī",
+     "alterīus",
+     "Sēquanī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 12, 1"
+    }
+   },
+   {
+    "prompt": "There was flogged with rods in open market place at Messana a citizen of Rome, while all the time not a groan was to be heard.",
+    "answer": "caedēbātur virgīs in mediō forō Messānae cīvis Rōmānus, cum intereā nūllus gemitus audiēbātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "caedēbātur",
+     "virgīs",
+     "in",
+     "mediō",
+     "forō",
+     "Messānae",
+     "cīvis",
+     "Rōmānus",
+     "cum",
+     "intereā",
+     "nūllus",
+     "gemitus",
+     "audiēbātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 162"
+    }
+   },
+   {
+    "prompt": "While the eyes of the enemy were turned away in one direction toward the fight, the wall is carried in several places.",
+    "answer": "dum in ūnam partem oculōs hostium certāmen āverterat, plūribus locīs capitur mūrus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "in",
+     "ūnam",
+     "partem",
+     "oculōs",
+     "hostium",
+     "certāmen",
+     "āverterat",
+     "plūribus",
+     "locīs",
+     "capitur",
+     "mūrus"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "32, 24, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-092-pronominal-adjectives-q4",
+  "sectionId": "bn-092-pronominal-adjectives",
+  "questions": [
+   {
+    "prompt": "As long as it had to be, and circumstances demanded, one man controlled the world.",
+    "answer": "dum necesse erat, rēsque ipsa cōgēbat, ūnus omnia poterat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dum",
+     "necesse",
+     "erat",
+     "rēsque",
+     "ipsa",
+     "cōgēbat",
+     "ūnus",
+     "omnia",
+     "poterat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "139"
+    }
+   },
+   {
+    "prompt": "The pile-bridge all but gave a path to the enemy, had it not been for one heroic soul, Horatius Cocles.",
+    "answer": "pōns sublicius iter paene hostibus dedit, nī ūnus vir fuisset Horātius Cocles.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pōns",
+     "sublicius",
+     "iter",
+     "paene",
+     "hostibus",
+     "dedit",
+     "nī",
+     "ūnus",
+     "vir",
+     "fuisset",
+     "Horātius",
+     "Cocles"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 10, 2"
+    }
+   },
+   {
+    "prompt": "Even this boon fortune had wrenched from him, unless he had been assisted by a single friend.",
+    "answer": "quod ipsum fortūna ēripuerat, nisi ūnīus amīcī opēs subvēnissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "ipsum",
+     "fortūna",
+     "ēripuerat",
+     "nisi",
+     "ūnīus",
+     "amīcī",
+     "opēs",
+     "subvēnissent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Rabirio Postumo",
+     "locus": "48"
+    }
+   },
+   {
+    "prompt": "Even though you had robbed Sulla of nothing but the consulship, still you ought to be satisfied with that.",
+    "answer": "etsī nihil aliud Sūllae nisi cōnsulātum abstulissētis, tamen eō contentōs vōs esse oportēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "etsī",
+     "nihil",
+     "aliud",
+     "Sūllae",
+     "nisi",
+     "cōnsulātum",
+     "abstulissētis",
+     "tamen",
+     "eō",
+     "contentōs",
+     "vōs",
+     "esse",
+     "oportēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "90"
+    }
+   }
+  ]
  }
 ]

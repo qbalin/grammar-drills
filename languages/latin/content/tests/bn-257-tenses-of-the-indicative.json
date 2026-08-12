@@ -3248,24 +3248,6 @@
     }
    },
    {
-    "prompt": "He is marking us out for death, each and all.",
-    "answer": "notat ad caedem ūnum quemque nostrūm.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "notat",
-     "ad",
-     "caedem",
-     "ūnum",
-     "quemque",
-     "nostrūm"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam",
-     "locus": "1, 2"
-    }
-   },
-   {
     "prompt": "They do not apply themselves to farming.",
     "answer": "agrī cultūrae nōn student.",
     "kind": "translate-en-la",
@@ -3299,13 +3281,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "6, 19, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q9",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "The world is full of fools.",
     "answer": "stultōrum plēna sunt omnia.",
@@ -3321,7 +3297,13 @@
      "work": "Epistulae ad Familiares",
      "locus": "9, 22, 4"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q9",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "He has lived at Lilybaeum this many a year.",
     "answer": "Lilybaeī multōs iam annōs habitat.",
@@ -3379,13 +3361,7 @@
      "work": "Ab Urbe Condita",
      "locus": "1, 3, 9"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q10",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "Number of citizens doubled; Mt. Caelius added to city.",
     "answer": "duplicātur cīvium numerus. Caelius additur urbī mōns.",
@@ -3404,7 +3380,13 @@
      "work": "Ab Urbe Condita",
      "locus": "1, 30, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q10",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "Then Verginius and Vetusius enter on the consulship.",
     "answer": "A. Vergīnius inde et T. Vetusius cōnsulātum ineunt.",
@@ -3460,13 +3442,7 @@
      "work": "Epistulae",
      "locus": "3, 21, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q11",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "Plato calls pleasure the ‘bait of sin.’.",
     "answer": "Platō ‘ēscam malōrum’ appellat voluptātem.",
@@ -3483,7 +3459,13 @@
      "work": "Cato Maior de Senectute",
      "locus": "44"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q11",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "Were you perhaps consul at the time my house was burning down?",
     "answer": "an tum erās cōnsul, cum mea domus ardēbat?",
@@ -3541,13 +3523,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "4, 44"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q12",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "His aged father had long been bedridden.",
     "answer": "pater grandis nātū iam diū lectō tenēbātur.",
@@ -3566,7 +3542,13 @@
      "work": "In Verrem",
      "locus": "5, 16"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q12",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "Something over an hour a good many men had been prizing away.",
     "answer": "hōram amplius iam permultī hominēs mōliēbantur.",
@@ -3620,13 +3602,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "7, 69, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q13",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "I have nothing to write.",
     "answer": "nihil habēbam quod scrīberem.",
@@ -3642,7 +3618,13 @@
      "work": "Epistulae ad Atticum",
      "locus": "9, 10, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q13",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "Among the Helvetians, the man of highest birth by all odds was Orgetorix.",
     "answer": "apud Helvētiōs longē nōbilissimus fuit Orgetorīx.",
@@ -3696,13 +3678,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "1, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q14",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "Caesar kept his line drawn up had drawn up.",
     "answer": "Caesar aciem īnstrūctam habuit.",
@@ -3718,7 +3694,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 48, 3"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q14",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "The arms which had once been fastened on the walls were found on the floor.",
     "answer": "arma quae fīxa in parietibus fuerant, ea sunt humī inventa.",
@@ -3780,13 +3762,7 @@
      "work": "Epistulae ad Atticum",
      "locus": "14, 20, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q15",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "The others, that stay at home, always support themselves and the above-mentioned also.",
     "answer": "reliquī, quī domī mānsērunt, sē atque illōs alunt.",
@@ -3806,7 +3782,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "4, 1, 5"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q15",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "If any man or any community does not abide by their decree, they always debar them from sacrifices.",
     "answer": "sī quī aut prīvātus aut populus eōrum dēcrētō nōn stetit, sacrificiīs interdīcunt.",
@@ -3866,13 +3848,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "7, 69, 7"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q16",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "Thus at one and the same time the tide had filled the men-of-war, and the gale of wind kept knocking the transports about.",
     "answer": "ita ūnō tempore et longās nāvēs aestus complēverat, et onerāriās tempestās adflīctābat.",
@@ -3896,7 +3872,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "4, 29, 2"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q16",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "I have only had one letter from you thus far.",
     "answer": "ūnam adhūc ā tē epistolam accēperam.",
@@ -3955,13 +3937,7 @@
      "work": "In Verrem",
      "locus": "4, 85"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q17",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "Polemo will concede this point to Zeno.",
     "answer": "dabit hoc Zēnōnī Polemō.",
@@ -3977,7 +3953,13 @@
      "work": "De Finibus Bonorum et Malorum",
      "locus": "4, 51"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q17",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "Happiness then will walk with goodness even to the scaffold.",
     "answer": "sequētur igitur vel ad supplicium beāta vīta virtūtem.",
@@ -4029,13 +4011,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "5, 12, 10"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q18",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "I am sure I shall suffer no harm, if you are with me.",
     "answer": "profectō nihil accipiam iniūriae, sī tū aderis.",
@@ -4054,7 +4030,13 @@
      "work": "Epistulae ad Atticum",
      "locus": "5, 18, 3"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q18",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "So that the hearer may imagine more than he sees.",
     "answer": "ut is quī audiet, cōgitet plūra, quam videat.",
@@ -4110,13 +4092,7 @@
      "work": "Ab Urbe Condita",
      "locus": "25, 38, 17"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q19",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "That is a question for him to settle.",
     "answer": "fuerit ista eius dēlīberātiō.",
@@ -4132,7 +4108,13 @@
      "work": "Ab Urbe Condita",
      "locus": "1, 23, 8"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q19",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "What the reason was, I won’t consider now.",
     "answer": "quae fuerit causa, mox vīderō.",
@@ -4183,13 +4165,7 @@
      "work": "Epistulae ad Atticum",
      "locus": "5, 1, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q20",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "So long as it had to be, one man controlled the world.",
     "answer": "dum necesse erat, ūnus omnia poterat.",
@@ -4207,7 +4183,13 @@
      "work": "Pro Sexto Roscio Amerino",
      "locus": "139"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q20",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "As long as Latin literature has the gift of speech, this spot will not lack its oak.",
     "answer": "dum Latīnae loquentur litterae, quercus huic locō nōn deerit.",
@@ -4246,29 +4228,6 @@
     }
    },
    {
-    "prompt": "What you have, that you should avail yourself of.",
-    "answer": "quod est, eō decet ūtī.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quod",
-     "est",
-     "eō",
-     "decet",
-     "ūtī"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "27"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q21",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
-   {
     "prompt": "When they want to unbend, let them beware of excess.",
     "answer": "cum relaxāre animōs volent, caveant intemperantiam.",
     "kind": "translate-en-la",
@@ -4305,7 +4264,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "4, 29, 4"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-257-tenses-of-the-indicative-q21",
+  "sectionId": "bn-257-tenses-of-the-indicative",
+  "questions": [
    {
     "prompt": "When I drop the book, all assent melts away.",
     "answer": "cum posuī librum, adsēnsiō omnis ēlābitur.",
@@ -4345,13 +4310,7 @@
      "work": "De Inventione",
      "locus": "1, 23"
     }
-   }
-  ]
- },
- {
-  "id": "bn-257-tenses-of-the-indicative-q22",
-  "sectionId": "bn-257-tenses-of-the-indicative",
-  "questions": [
+   },
    {
     "prompt": "As the king was not to have a hand in the action at sea, he moved off to Magnesia.",
     "answer": "rēx, quia nōn interfutūrus nāvālī certāminī erat, Magnēsiam concessit.",
@@ -4387,29 +4346,6 @@
      "author": "Cicero",
      "work": "Pro Cluentio",
      "locus": "75"
-    }
-   },
-   {
-    "prompt": "Do you possibly hesitate to do at my command what you wanted to do, as it was, yourself?",
-    "answer": "num dubitās id mē imperante facere, quod iam tuā sponte faciēbās?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "num",
-     "dubitās",
-     "id",
-     "mē",
-     "imperante",
-     "facere",
-     "quod",
-     "iam",
-     "tuā",
-     "sponte",
-     "faciēbās"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam",
-     "locus": "1, 13"
     }
    }
   ]

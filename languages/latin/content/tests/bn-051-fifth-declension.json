@@ -576,5 +576,399 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-051-fifth-declension-q1",
+  "sectionId": "bn-051-fifth-declension",
+  "questions": [
+   {
+    "prompt": "Above all he alone had saved the Capitol and the supreme power in it from the Gauls, if he had not saved it for his own kingship.",
+    "answer": "Super omnia Capitōlium summamque rem in eō sōlus ā Gallīs servāverat, sī nōn regnō suō servasset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Super",
+     "omnia",
+     "Capitōlium",
+     "summamque",
+     "rem",
+     "in",
+     "eō",
+     "sōlus",
+     "ā",
+     "Gallīs",
+     "servāverat",
+     "sī",
+     "nōn",
+     "regnō",
+     "suō",
+     "servasset"
+    ],
+    "source": {
+     "author": "Plinius Maior",
+     "work": "Naturalis Historia",
+     "locus": "7.29.103"
+    }
+   },
+   {
+    "prompt": "Moved by these considerations, Caesar decided that he must not wait until the Helvetii, once all the resources of the allies had been used up, should arrive in the country of the Santones.",
+    "answer": "Quibus rēbus adductus Caesar nōn expectandum sibī̆ statuit dum, omnibus fortūnīs sociōrum cōnsūmptīs, in Santonōs Helvētiī pervenīrent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quibus",
+     "rēbus",
+     "adductus",
+     "Caesar",
+     "nōn",
+     "expectandum",
+     "sibī",
+     "statuit",
+     "dum",
+     "omnibus",
+     "fortūnīs",
+     "sociōrum",
+     "cōnsūmptīs",
+     "in",
+     "Santonōs",
+     "Helvētiī",
+     "pervenīrent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.11"
+    }
+   },
+   {
+    "prompt": "As long as there is life, there is said to be hope.",
+    "answer": "Dum anima est, spēs esse dīcitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "anima",
+     "est",
+     "spēs",
+     "esse",
+     "dīcitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9.10.3"
+    }
+   },
+   {
+    "prompt": "When the Helvetians learned that the Roman commander had done in a single day what they had found it hard themselves to do in twenty, namely cross the river, they sent deputies.",
+    "answer": "Helvētiī, cum id, quod ipsī diēbus XX aegerrimē cōnfēcerant, ut flūmen trānsīrent, illum ūnō diē fēcisse intellegerent, lēgātōs mittunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Helvētiī",
+     "cum",
+     "id",
+     "quod",
+     "ipsī",
+     "diēbus",
+     "XX",
+     "aegerrimē",
+     "cōnfēcerant",
+     "ut",
+     "flūmen",
+     "trānsīrent",
+     "illum",
+     "ūnō",
+     "diē",
+     "fēcisse",
+     "intellegerent",
+     "lēgātōs",
+     "mittunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 13, 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-051-fifth-declension-q2",
+  "sectionId": "bn-051-fifth-declension",
+  "questions": [
+   {
+    "prompt": "So far from being afraid of death, he fell in battle for his country.",
+    "answer": "erat ita nōn timidus ad mortem, ut in aciē sit ob rem pūblicam interfectus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "erat",
+     "ita",
+     "nōn",
+     "timidus",
+     "ad",
+     "mortem",
+     "ut",
+     "in",
+     "aciē",
+     "sit",
+     "ob",
+     "rem",
+     "pūblicam",
+     "interfectus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 63"
+    }
+   },
+   {
+    "prompt": "Now give your attention to the case itself, while I set forth to you briefly how it occurred.",
+    "answer": "nunc rem ipsam, ut gesta sit, dum breviter vōbīs dēmōnstrō, attendite.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nunc",
+     "rem",
+     "ipsam",
+     "ut",
+     "gesta",
+     "sit",
+     "dum",
+     "breviter",
+     "vōbīs",
+     "dēmōnstrō",
+     "attendite"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Tullio",
+     "locus": "13"
+    }
+   },
+   {
+    "prompt": "As long as a sick man has breath he is said to have hope.",
+    "answer": "aegrōtō dum anima est, spēs esse dīcitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "aegrōtō",
+     "dum",
+     "anima",
+     "est",
+     "spēs",
+     "esse",
+     "dīcitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9, 10, 3"
+    }
+   },
+   {
+    "prompt": "If it is day, it is light.",
+    "answer": "sī diēs est, lūcet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "diēs",
+     "est",
+     "lūcet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Inventione",
+     "locus": "1, 86"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-051-fifth-declension-q3",
+  "sectionId": "bn-051-fifth-declension",
+  "questions": [
+   {
+    "prompt": "If there is a hope of my coming back, strengthen that hope.",
+    "answer": "sī est spēs nostrī reditūs, eam cōnfirmēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "est",
+     "spēs",
+     "nostrī",
+     "reditūs",
+     "eam",
+     "cōnfirmēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "14, 4, 3"
+    }
+   },
+   {
+    "prompt": "But if the might of the wicked disappoints my hope, unto your keeping do I commend the little son of mine.",
+    "answer": "quod sī meam spem vīs improbōrum fefellerit, commendō vōbīs meum parvum fīlium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "sī",
+     "meam",
+     "spem",
+     "vīs",
+     "improbōrum",
+     "fefellerit",
+     "commendō",
+     "vōbīs",
+     "meum",
+     "parvum",
+     "fīlium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "4, 23"
+    }
+   },
+   {
+    "prompt": "And this is a hard thing, unless you have the exterior of a good man.",
+    "answer": "quod est difficile, nisi speciem prae tē bonī virī ferās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "est",
+     "difficile",
+     "nisi",
+     "speciem",
+     "prae",
+     "tē",
+     "bonī",
+     "virī",
+     "ferās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2, 39"
+    }
+   },
+   {
+    "prompt": "It is always a discreditable apology, if a man confess that he has been unpatriotic from motives of friendship.",
+    "answer": "turpis excūsātiō est, sī quis contrā rem pūblicam sē amīcī causā fēcisse fateātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "turpis",
+     "excūsātiō",
+     "est",
+     "sī",
+     "quis",
+     "contrā",
+     "rem",
+     "pūblicam",
+     "sē",
+     "amīcī",
+     "causā",
+     "fēcisse",
+     "fateātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "40"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-051-fifth-declension-q4",
+  "sectionId": "bn-051-fifth-declension",
+  "questions": [
+   {
+    "prompt": "I should make a long story about one subject, if I should undertake to go through all the different versions of the authorities.",
+    "answer": "multōs circā ūnam rem ambitūs fēcerim, sī quae variant auctōrēs omnia exequī velim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multōs",
+     "circā",
+     "ūnam",
+     "rem",
+     "ambitūs",
+     "fēcerim",
+     "sī",
+     "quae",
+     "variant",
+     "auctōrēs",
+     "omnia",
+     "exequī",
+     "velim"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "27, 27, 12"
+    }
+   },
+   {
+    "prompt": "If they had worn dark clothing, they might have presented the mien of mourners for the fall of Perseus.",
+    "answer": "sī sordidam vestem habuissent, lūgentium Perseī cāsum praebēre speciem poterant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "sordidam",
+     "vestem",
+     "habuissent",
+     "lūgentium",
+     "Perseī",
+     "cāsum",
+     "praebēre",
+     "speciem",
+     "poterant"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "45, 20, 5"
+    }
+   },
+   {
+    "prompt": "If you had staid one day, you must all have died.",
+    "answer": "sī ūnum diem morātī essētis, moriendum omnibus fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "ūnum",
+     "diem",
+     "morātī",
+     "essētis",
+     "moriendum",
+     "omnibus",
+     "fuit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 38, 5"
+    }
+   },
+   {
+    "prompt": "If I intended to capture your house, should I not have abstained from wine for a day.",
+    "answer": "sī domum tuam expugnātūrus eram, nōn temperāssem vīnō in ūnum diem?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "domum",
+     "tuam",
+     "expugnātūrus",
+     "eram",
+     "nōn",
+     "temperāssem",
+     "vīnō",
+     "in",
+     "ūnum",
+     "diem"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "40, 14, 4"
+    }
+   }
+  ]
  }
 ]

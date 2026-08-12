@@ -539,5 +539,363 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-114-semi-deponents-q1",
+  "sectionId": "bn-114-semi-deponents",
+  "questions": [
+   {
+    "prompt": "Because, once that town was recovered, he was confident that he would bring the state of the Bituriges into his power.",
+    "answer": "Quod eō oppidō receptō, cīvitātem Biturigum sē in potestātem redāctūrum cōnfīdēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "eō",
+     "oppidō",
+     "receptō",
+     "cīvitātem",
+     "Biturigum",
+     "sē",
+     "in",
+     "potestātem",
+     "redāctūrum",
+     "cōnfīdēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.13"
+    }
+   },
+   {
+    "prompt": "Caesar, those who dare to speak before you are unaware of your greatness; those who do not dare, of your kindness.",
+    "answer": "Caesar, quī apud tē audent dīcere, magnitūdinem tuam ignōrant; quī non audent, hūmānitātem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "quī",
+     "apud",
+     "tē",
+     "audent",
+     "dīcere",
+     "magnitūdinem",
+     "tuam",
+     "ignōrant",
+     "quī",
+     "non",
+     "audent",
+     "hūmānitātem"
+    ],
+    "source": {
+     "author": "Seneca Maior",
+     "work": "Controversiae",
+     "locus": "6.3"
+    }
+   },
+   {
+    "prompt": "In this legion Caesar trusted most.",
+    "answer": "Huic legiōnī Caesar cōnfīdēbat maximē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Huic",
+     "legiōnī",
+     "Caesar",
+     "cōnfīdēbat",
+     "maximē"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.40.15"
+    }
+   },
+   {
+    "prompt": "Who would dare encounter a man well attended?",
+    "answer": "Quis audeat bene comitātum aggredī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "audeat",
+     "bene",
+     "comitātum",
+     "aggredī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "12.25"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-114-semi-deponents-q2",
+  "sectionId": "bn-114-semi-deponents",
+  "questions": [
+   {
+    "prompt": "For I enjoy myself most in that place, whether I am thinking by myself, or am either writing or reading.",
+    "answer": "Nam illō locō libentissimē soleō ūtī, sīve quid mēcum ipse cōgitō, sīve quid scrībō aut legō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nam",
+     "illō",
+     "locō",
+     "libentissimē",
+     "soleō",
+     "ūtī",
+     "sīve",
+     "quid",
+     "mēcum",
+     "ipse",
+     "cōgitō",
+     "sīve",
+     "quid",
+     "scrībō",
+     "aut",
+     "legō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "2.1"
+    }
+   },
+   {
+    "prompt": "I trust I shall easily obtain from you what I wish.",
+    "answer": "Cōnfīdō mē quod velim facile ā tē impetrātūrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cōnfīdō",
+     "mē",
+     "quod",
+     "velim",
+     "facile",
+     "ā",
+     "tē",
+     "impetrātūrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "11.16.1"
+    }
+   },
+   {
+    "prompt": "Cassius used to ask for ever and ever, who the person benefited was who the gainer was.",
+    "answer": "L. Cassius identidem quaerere solēbat, cui bonō fuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "L",
+     "Cassius",
+     "identidem",
+     "quaerere",
+     "solēbat",
+     "cui",
+     "bonō",
+     "fuisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "84"
+    }
+   },
+   {
+    "prompt": "Socrates used to maintain that all men were eloquent enough in a matter they knew.",
+    "answer": "Sōcratēs dīcere solēbat, omnēs in eō quod scīrent, satis esse ēloquentēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sōcratēs",
+     "dīcere",
+     "solēbat",
+     "omnēs",
+     "in",
+     "eō",
+     "quod",
+     "scīrent",
+     "satis",
+     "esse",
+     "ēloquentēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 63"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-114-semi-deponents-q3",
+  "sectionId": "bn-114-semi-deponents",
+  "questions": [
+   {
+    "prompt": "I’m glad that I interrupted you.",
+    "answer": "gaudeō quod tē interpellāvī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "gaudeō",
+     "quod",
+     "tē",
+     "interpellāvī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3, 1"
+    }
+   },
+   {
+    "prompt": "Since he did not dare to stand up on an ordinary platform, he always did his speaking from a lofty tower.",
+    "answer": "cum in commūnibus suggestīs cōnsistere nōn audēret, contiōnārī ex turrī altā solēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "in",
+     "commūnibus",
+     "suggestīs",
+     "cōnsistere",
+     "nōn",
+     "audēret",
+     "contiōnārī",
+     "ex",
+     "turrī",
+     "altā",
+     "solēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 59"
+    }
+   },
+   {
+    "prompt": "Any Roman, who visited Messana, invariably went to see these statues.",
+    "answer": "Messānam ut quisque nostrūm vēnerat, haec vīsere solēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Messānam",
+     "ut",
+     "quisque",
+     "nostrūm",
+     "vēnerat",
+     "haec",
+     "vīsere",
+     "solēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 5"
+    }
+   },
+   {
+    "prompt": "Who does not know that the first rule of history is that it shall not venture to say anything false?",
+    "answer": "quis nescit prīmam esse historiae lēgem, nē quid falsī dīcere audeat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "nescit",
+     "prīmam",
+     "esse",
+     "historiae",
+     "lēgem",
+     "nē",
+     "quid",
+     "falsī",
+     "dīcere",
+     "audeat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 62"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-114-semi-deponents-q4",
+  "sectionId": "bn-114-semi-deponents",
+  "questions": [
+   {
+    "prompt": "As long as there shall be a soul who will venture to defend you, you shall live on.",
+    "answer": "quamdiū quisquam erit quī tē dēfendere audeat, vīvēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quamdiū",
+     "quisquam",
+     "erit",
+     "quī",
+     "tē",
+     "dēfendere",
+     "audeat",
+     "vīvēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1, 6"
+    }
+   },
+   {
+    "prompt": "If you venture to say that, you will promote the cause of your enemy.",
+    "answer": "sī id audēbis dīcere, causam inimīcī tuī sublevābis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "id",
+     "audēbis",
+     "dīcere",
+     "causam",
+     "inimīcī",
+     "tuī",
+     "sublevābis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Divinatio in Caecilium",
+     "locus": "12"
+    }
+   },
+   {
+    "prompt": "You will not dare to say this, sir, nor if you wish, will you be allowed.",
+    "answer": "neque tū hoc dīcere audēbis, nec sī cupiās, licēbit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "tū",
+     "hoc",
+     "dīcere",
+     "audēbis",
+     "nec",
+     "sī",
+     "cupiās",
+     "licēbit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 167"
+    }
+   },
+   {
+    "prompt": "I am not apt to get provoked with friends without just cause.",
+    "answer": "īrāscī amīcīs nōn temere soleō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "īrāscī",
+     "amīcīs",
+     "nōn",
+     "temere",
+     "soleō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "8, 16"
+    }
+   }
+  ]
  }
 ]

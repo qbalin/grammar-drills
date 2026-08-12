@@ -1250,5 +1250,358 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-107-fourth-or-i-conjugation-q1",
+  "sectionId": "bn-107-fourth-or-i-conjugation",
+  "questions": [
+   {
+    "prompt": "If you have any trustworthy information, I should like to know it.",
+    "answer": "Sī quid habēs certius, velim scīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quid",
+     "habēs",
+     "certius",
+     "velim",
+     "scīre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "4.10"
+    }
+   },
+   {
+    "prompt": "If you will read or hear, you will find.",
+    "answer": "Quod sī legere aut audīre volētis, . . . reperiētis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "sī",
+     "legere",
+     "aut",
+     "audīre",
+     "volētis",
+     "reperiētis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "20"
+    }
+   },
+   {
+    "prompt": "Whoever is in the habit of lying, is accustomed to swear falsely.",
+    "answer": "Quī mentīrī solet, pēierāre cōnsuēvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "mentīrī",
+     "solet",
+     "pēierāre",
+     "cōnsuēvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Roscio Comoedo",
+     "locus": "46"
+    }
+   },
+   {
+    "prompt": "Besides these you may tell off as many as you please, you will still find some dangerous tribunes.",
+    "answer": "praeter eōs quam vīs ēnumerēs multōs licet, nōnnūllōs reperiēs perniciōsōs tribūnōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "praeter",
+     "eōs",
+     "quam",
+     "vīs",
+     "ēnumerēs",
+     "multōs",
+     "licet",
+     "nōnnūllōs",
+     "reperiēs",
+     "perniciōsōs",
+     "tribūnōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3, 24"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-107-fourth-or-i-conjugation-q2",
+  "sectionId": "bn-107-fourth-or-i-conjugation",
+  "questions": [
+   {
+    "prompt": "Refute me, if I am not speaking the truth.",
+    "answer": "redargue mē, sī mentior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "redargue",
+     "mē",
+     "sī",
+     "mentior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "62"
+    }
+   },
+   {
+    "prompt": "Jump overboard, men, unless you choose to abandon your eagle to the enemy.",
+    "answer": "dēsilīte, mīlitēs, nisi vultis aquilam hostibus prōdere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dēsilīte",
+     "mīlitēs",
+     "nisi",
+     "vultis",
+     "aquilam",
+     "hostibus",
+     "prōdere"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 25, 3"
+    }
+   },
+   {
+    "prompt": "If the inheritance was coming to so and so, it is likely that the murder was committed by that man.",
+    "answer": "sī ad illum hērēditās veniēbat, vērī simile est ab illō necātum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "ad",
+     "illum",
+     "hērēditās",
+     "veniēbat",
+     "vērī",
+     "simile",
+     "est",
+     "ab",
+     "illō",
+     "necātum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Inventione",
+     "locus": "1, 89"
+    }
+   },
+   {
+    "prompt": "He thought he had done enough for duty, if he had been under any obligation, enough for delusion, if he had been acting under mistaken ignorance.",
+    "answer": "vel officiō, sī quid dēbuerat, vel errōrī, sī quid nescierat, satis factum esse dūxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vel",
+     "officiō",
+     "sī",
+     "quid",
+     "dēbuerat",
+     "vel",
+     "errōrī",
+     "sī",
+     "quid",
+     "nescierat",
+     "satis",
+     "factum",
+     "esse",
+     "dūxit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Rege Deiotaro",
+     "locus": "13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-107-fourth-or-i-conjugation-q3",
+  "sectionId": "bn-107-fourth-or-i-conjugation",
+  "questions": [
+   {
+    "prompt": "If you will hearken to me, my young friends, never fear a double sun.",
+    "answer": "sī mē audiētis, adulēscentēs, sōlem alterum nē metuerītis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "mē",
+     "audiētis",
+     "adulēscentēs",
+     "sōlem",
+     "alterum",
+     "nē",
+     "metuerītis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 32"
+    }
+   },
+   {
+    "prompt": "You would agree all the more if I come at once to weightier points.",
+    "answer": "tum magis adsentiāre, sī ad maiōra pervēnerō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tum",
+     "magis",
+     "adsentiāre",
+     "sī",
+     "ad",
+     "maiōra",
+     "pervēnerō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 62"
+    }
+   },
+   {
+    "prompt": "If I say that this path is not rough, I should not tell the truth.",
+    "answer": "hanc viam sī asperam esse negem, mentiar.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hanc",
+     "viam",
+     "sī",
+     "asperam",
+     "esse",
+     "negem",
+     "mentiar"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "100"
+    }
+   },
+   {
+    "prompt": "You will not acquire as much glory, if you succeed in battle, as you will lose, if any reverse occur.",
+    "answer": "nōn tantum, sī proeliō vincās, glōriae adiēceris, quantum adēmeris, sī quid adversī ēveniat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "tantum",
+     "sī",
+     "proeliō",
+     "vincās",
+     "glōriae",
+     "adiēceris",
+     "quantum",
+     "adēmeris",
+     "sī",
+     "quid",
+     "adversī",
+     "ēveniat"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "30, 30, 21"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-107-fourth-or-i-conjugation-q4",
+  "sectionId": "bn-107-fourth-or-i-conjugation",
+  "questions": [
+   {
+    "prompt": "Suppose the enemy march on the town, what do you intend to do?",
+    "answer": "quid, sī hostēs ad urbem veniant, factūrī estis?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "sī",
+     "hostēs",
+     "ad",
+     "urbem",
+     "veniant",
+     "factūrī",
+     "estis"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 52, 7"
+    }
+   },
+   {
+    "prompt": "That person has long been dead; if he were alive, you would hear his evidence.",
+    "answer": "is iam prīdem est mortuus. sī vīveret, verba eius audīrētis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "is",
+     "iam",
+     "prīdem",
+     "est",
+     "mortuus",
+     "sī",
+     "vīveret",
+     "verba",
+     "eius",
+     "audīrētis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Roscio Comoedo",
+     "locus": "42"
+    }
+   },
+   {
+    "prompt": "If captivity had carried him to the city, he could have heard Caesar himself.",
+    "answer": "sī eum captīvitās in urbem pertrāxisset, Caesarem ipsum audīre potuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "eum",
+     "captīvitās",
+     "in",
+     "urbem",
+     "pertrāxisset",
+     "Caesarem",
+     "ipsum",
+     "audīre",
+     "potuit"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Dialogus de Oratoribus",
+     "locus": "17"
+    }
+   },
+   {
+    "prompt": "If Metellus had not prevented, the mothers of those people were just coming.",
+    "answer": "sī per L. Metellum licitum esset, mātrēs illōrum veniēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "per",
+     "L",
+     "Metellum",
+     "licitum",
+     "esset",
+     "mātrēs",
+     "illōrum",
+     "veniēbant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 129"
+    }
+   }
+  ]
  }
 ]

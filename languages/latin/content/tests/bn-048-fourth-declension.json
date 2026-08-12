@@ -754,6 +754,30 @@
     }
    },
    {
+    "prompt": "The fields have been laid waste, the city exhausted by constant funerals; many famous houses are in mourning.",
+    "answer": "Vāstātī agrī sunt, urbs adsiduīs exhausta fūneribus; multae et clārae lūgubrēs domūs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vāstātī",
+     "agrī",
+     "sunt",
+     "urbs",
+     "adsiduīs",
+     "exhausta",
+     "fūneribus",
+     "multae",
+     "et",
+     "clārae",
+     "lūgubrēs",
+     "domūs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "3.32"
+    }
+   },
+   {
     "prompt": "These are the verses of Caecilius.",
     "answer": "Caeciliī versūs hīce sunt.",
     "kind": "translate-en-la",
@@ -786,6 +810,285 @@
      "author": "Suetonius",
      "work": "De Vita Caesarum Divi Augusti",
      "locus": "96"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-048-fourth-declension-q2",
+  "sectionId": "bn-048-fourth-declension",
+  "questions": [
+   {
+    "prompt": "You came into the Senate a little while ago; who out of this so great throng and out of so many of your friends and connections greeted you?",
+    "answer": "Vēnistī paulō ante in Senātum; quis tē ex hāc tantā frequentiā totque tuīs amīcīs ac necessāriīs salūtāvit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vēnistī",
+     "paulō",
+     "ante",
+     "in",
+     "Senātum",
+     "quis",
+     "tē",
+     "ex",
+     "hāc",
+     "tantā",
+     "frequentiā",
+     "totque",
+     "tuīs",
+     "amīcīs",
+     "ac",
+     "necessāriīs",
+     "salūtāvit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "It was with reluctance that I expelled Flaminius from the senate.",
+    "answer": "Fēcī ut Flāminium ē senātū ēicerem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fēcī",
+     "ut",
+     "Flāminium",
+     "ē",
+     "senātū",
+     "ēicerem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "42"
+    }
+   },
+   {
+    "prompt": "I was displeased that you did not return thanks to the senate.",
+    "answer": "Molestē tulī tē senātuī grātiās nōn ēgisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Molestē",
+     "tulī",
+     "tē",
+     "senātuī",
+     "grātiās",
+     "nōn",
+     "ēgisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "10.27.1"
+    }
+   },
+   {
+    "prompt": "He was informed that Ariovistus’s troops were four and twenty miles away from ours.",
+    "answer": "certior factus est Ariovistī cōpiās ā nostrīs mīlibus passuum quattuor et XX abesse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "certior",
+     "factus",
+     "est",
+     "Ariovistī",
+     "cōpiās",
+     "ā",
+     "nostrīs",
+     "mīlibus",
+     "passuum",
+     "quattuor",
+     "et",
+     "XX",
+     "abesse"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 41, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-048-fourth-declension-q3",
+  "sectionId": "bn-048-fourth-declension",
+  "questions": [
+   {
+    "prompt": "Pitching camp fifteen miles away.",
+    "answer": "positīs castrīs ā mīlibus passuum XV.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "positīs",
+     "castrīs",
+     "ā",
+     "mīlibus",
+     "passuum",
+     "XV"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 7, 3"
+    }
+   },
+   {
+    "prompt": "The king had pitched six miles away from Saburra.",
+    "answer": "rēx VI mīlium passuum intervāllō ā Saburrā cōnsēderat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rēx",
+     "VI",
+     "mīlium",
+     "passuum",
+     "intervāllō",
+     "ā",
+     "Saburrā",
+     "cōnsēderat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2, 38, 3"
+    }
+   },
+   {
+    "prompt": "Albinus induces him to ask of the senate the throne of Numidia.",
+    "answer": "huic Sp. Albīnus persuādet rēgnum Numidiae ā senātū petat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "huic",
+     "Sp",
+     "Albīnus",
+     "persuādet",
+     "rēgnum",
+     "Numidiae",
+     "ā",
+     "senātū",
+     "petat"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "35, 2"
+    }
+   },
+   {
+    "prompt": "Caesar told off the kindnesses of the senate to the man, the fact that ‘he had been styled king by the senate’.",
+    "answer": "Caesar senātūs in eum beneficia commemorāvit, quod rēx appellātus esset ā senātū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Caesar",
+     "senātūs",
+     "in",
+     "eum",
+     "beneficia",
+     "commemorāvit",
+     "quod",
+     "rēx",
+     "appellātus",
+     "esset",
+     "ā",
+     "senātū"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 43, 4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-048-fourth-declension-q4",
+  "sectionId": "bn-048-fourth-declension",
+  "questions": [
+   {
+    "prompt": "He asked to be lifted into his father’s chariot.",
+    "answer": "optāvit ut in currum patris tollerētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "optāvit",
+     "ut",
+     "in",
+     "currum",
+     "patris",
+     "tollerētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 94"
+    }
+   },
+   {
+    "prompt": "It was with great reluctance that I expelled Flamininus from the senate.",
+    "answer": "invītus fēcī ut L. Flāminīnum ē senātū ēicerem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "invītus",
+     "fēcī",
+     "ut",
+     "L",
+     "Flāminīnum",
+     "ē",
+     "senātū",
+     "ēicerem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "42"
+    }
+   },
+   {
+    "prompt": "Who came to the circus without being reminded of your avarice at each and every step?",
+    "answer": "quis in circum vēnit, quīn is ūnōquōque gradū dē avāritiā tuā commonērētur?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "in",
+     "circum",
+     "vēnit",
+     "quīn",
+     "is",
+     "ūnōquōque",
+     "gradū",
+     "dē",
+     "avāritiā",
+     "tuā",
+     "commonērētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 154"
+    }
+   },
+   {
+    "prompt": "There was not a community but sent a part of its local senate to Corduba, not a Roman citizen, but went to the meeting.",
+    "answer": "nūlla fuit cīvitās quīn partem senātūs Cordubam mitteret, nōn cīvis Rōmānus quīn convenīret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nūlla",
+     "fuit",
+     "cīvitās",
+     "quīn",
+     "partem",
+     "senātūs",
+     "Cordubam",
+     "mitteret",
+     "nōn",
+     "cīvis",
+     "Rōmānus",
+     "quīn",
+     "convenīret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2, 19, 2"
     }
    }
   ]

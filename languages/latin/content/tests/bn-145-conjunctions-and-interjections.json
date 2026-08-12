@@ -406,5 +406,377 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-145-conjunctions-and-interjections-q1",
+  "sectionId": "bn-145-conjunctions-and-interjections",
+  "questions": [
+   {
+    "prompt": "Look, I am laying down two gold pieces, from which you may buy both gods and geese.",
+    "answer": "Ecce duōs aureōs pōnō, unde possītis et deōs et ānserēs emere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ecce",
+     "duōs",
+     "aureōs",
+     "pōnō",
+     "unde",
+     "possītis",
+     "et",
+     "deōs",
+     "et",
+     "ānserēs",
+     "emere"
+    ],
+    "source": {
+     "author": "Petronius",
+     "work": "Satyricon",
+     "locus": "137.6"
+    }
+   },
+   {
+    "prompt": "Therefore, so that my brother might not receive a greater injury in secret, I rose up to perform the nuptial office.",
+    "answer": "Igitur nē maiōrem iniūriam in sēcrētō frāter acciperet, cōnsurrēxī ad officium nū̆ptiāle.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Igitur",
+     "nē",
+     "maiōrem",
+     "iniūriam",
+     "in",
+     "sēcrētō",
+     "frāter",
+     "acciperet",
+     "cōnsurrēxī",
+     "ad",
+     "officium",
+     "nū̆ptiāle"
+    ],
+    "source": {
+     "author": "Petronius",
+     "work": "Satyricon",
+     "locus": "25"
+    }
+   },
+   {
+    "prompt": "Cato, moreover, departed from life in such a way that he rejoiced that he had found a cause for dying.",
+    "answer": "Catō autem sīc abiit ē vītā, ut causam moriendī nactum sē esse gaudēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Catō",
+     "autem",
+     "sīc",
+     "abiit",
+     "ē",
+     "vītā",
+     "ut",
+     "causam",
+     "moriendī",
+     "nactum",
+     "sē",
+     "esse",
+     "gaudēret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.30.74"
+    }
+   },
+   {
+    "prompt": "But nothing is troublesome which you do not miss.",
+    "answer": "Nihil autem est molestum quod nōn dēsīderēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "autem",
+     "est",
+     "molestum",
+     "quod",
+     "nōn",
+     "dēsīderēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "47"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-145-conjunctions-and-interjections-q2",
+  "sectionId": "bn-145-conjunctions-and-interjections",
+  "questions": [
+   {
+    "prompt": "Why then do I not wish for peace? Because it is disgraceful.",
+    "answer": "Cūr igitur pācem nōlō? Quia turpis est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cūr",
+     "igitur",
+     "pācem",
+     "nōlō",
+     "Quia",
+     "turpis",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "7.9"
+    }
+   },
+   {
+    "prompt": "I must review the point, since Murena has so wished.",
+    "answer": "Locus est ā mē, quoniam ita Murēna voluit, retrāctandus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Locus",
+     "est",
+     "ā",
+     "mē",
+     "quoniam",
+     "ita",
+     "Murēna",
+     "voluit",
+     "retrāctandus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "54"
+    }
+   },
+   {
+    "prompt": "When they stood in array on both sides, the generals advance into the midst.",
+    "answer": "Postquam strūctī utrimque stābant, ducēs in medium prōcēdunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Postquam",
+     "strūctī",
+     "utrimque",
+     "stābant",
+     "ducēs",
+     "in",
+     "medium",
+     "prōcēdunt"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1.23"
+    }
+   },
+   {
+    "prompt": "For as I was pacing up and down my portico, Brutus had come to see me.",
+    "answer": "nam cum inambulārem in xystō, M. ad mē Brūtus vēnerat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nam",
+     "cum",
+     "inambulārem",
+     "in",
+     "xystō",
+     "M",
+     "ad",
+     "mē",
+     "Brūtus",
+     "vēnerat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-145-conjunctions-and-interjections-q3",
+  "sectionId": "bn-145-conjunctions-and-interjections",
+  "questions": [
+   {
+    "prompt": "Do you, citizens, since it is now grown dark, depart and go to your own several homes.",
+    "answer": "vōs, Quirītēs, quoniam iam nox est, in vestra tecta discēdite.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vōs",
+     "Quirītēs",
+     "quoniam",
+     "iam",
+     "nox",
+     "est",
+     "in",
+     "vestra",
+     "tecta",
+     "discēdite"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "3, 29"
+    }
+   },
+   {
+    "prompt": "Since I have finished speaking about the character of the war, I will now speak briefly about its extent.",
+    "answer": "quoniam dē genere bellī dīxī, nunc dē magnitūdine pauca dīcam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quoniam",
+     "dē",
+     "genere",
+     "bellī",
+     "dīxī",
+     "nunc",
+     "dē",
+     "magnitūdine",
+     "pauca",
+     "dīcam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "20"
+    }
+   },
+   {
+    "prompt": "They were rebuked in numerous letters of Pompey, ‘because they had not kept Caesar off as soon as he came.’.",
+    "answer": "crēbrīs Pompēī litterīs castīgābantur, quoniam prīmō venientem Caesarem nōn prohibuissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "crēbrīs",
+     "Pompēī",
+     "litterīs",
+     "castīgābantur",
+     "quoniam",
+     "prīmō",
+     "venientem",
+     "Caesarem",
+     "nōn",
+     "prohibuissent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 25, 3"
+    }
+   },
+   {
+    "prompt": "After I read your letter, your Postumia called on me.",
+    "answer": "postquam tuās litterās lēgī, Postumia tua mē convēnit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postquam",
+     "tuās",
+     "litterās",
+     "lēgī",
+     "Postumia",
+     "tua",
+     "mē",
+     "convēnit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "4, 2, 1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-145-conjunctions-and-interjections-q4",
+  "sectionId": "bn-145-conjunctions-and-interjections",
+  "questions": [
+   {
+    "prompt": "As soon as the garrison espied him, they began to man the wall.",
+    "answer": "quem simul atque oppidānī cōnspexērunt, mūrum complēre coepērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quem",
+     "simul",
+     "atque",
+     "oppidānī",
+     "cōnspexērunt",
+     "mūrum",
+     "complēre",
+     "coepērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 12, 5"
+    }
+   },
+   {
+    "prompt": "Seeing that the man does not appear, he began to rage and fume.",
+    "answer": "quem posteā quam videt nōn adesse, ardēre atque furere coepit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quem",
+     "posteā",
+     "quam",
+     "videt",
+     "nōn",
+     "adesse",
+     "ardēre",
+     "atque",
+     "furere",
+     "coepit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 92"
+    }
+   },
+   {
+    "prompt": "Appius, finding that nobody presented himself, went back home.",
+    "answer": "Appius, postquam nēmō adībat, domum sē recēpit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Appius",
+     "postquam",
+     "nēmō",
+     "adībat",
+     "domum",
+     "sē",
+     "recēpit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 46, 9"
+    }
+   },
+   {
+    "prompt": "Now that it has become plain that you have no hope from the Romans, and that your walls are no protection to you, I bring peace unto you.",
+    "answer": "postquam nec ab Rōmānīs vōbīs ūlla est spēs, nec vōs moenia dēfendunt, pācem adferō ad vōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postquam",
+     "nec",
+     "ab",
+     "Rōmānīs",
+     "vōbīs",
+     "ūlla",
+     "est",
+     "spēs",
+     "nec",
+     "vōs",
+     "moenia",
+     "dēfendunt",
+     "pācem",
+     "adferō",
+     "ad",
+     "vōs"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "21, 13, 4"
+    }
+   }
+  ]
  }
 ]

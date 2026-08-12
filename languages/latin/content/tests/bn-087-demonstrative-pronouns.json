@@ -780,5 +780,392 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-q1",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "If your country should speak thus with you, as I have said, ought it not to prevail, even if it could not employ force?",
+    "answer": "Haec sī tēcum, ita ut dīxī, patria loquātur, nōnne impetrāre dēbeat, etiamsī vim adhibēre nōn possit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "sī",
+     "tēcum",
+     "ita",
+     "ut",
+     "dīxī",
+     "patria",
+     "loquātur",
+     "nōnne",
+     "impetrāre",
+     "dēbeat",
+     "etiamsī",
+     "vim",
+     "adhibēre",
+     "nōn",
+     "possit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.19"
+    }
+   },
+   {
+    "prompt": "If your country should thus speak with you, ought she not to prevail?",
+    "answer": "Haec sī tēcum patria loquātur, nōnne impetrāre dēbeat?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "sī",
+     "tēcum",
+     "patria",
+     "loquātur",
+     "nōnne",
+     "impetrāre",
+     "dēbeat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "1.19"
+    }
+   },
+   {
+    "prompt": "I cannot accuse him, if I should desire.",
+    "answer": "Nōn possum istum accūsāre, sī cupiam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "possum",
+     "istum",
+     "accūsāre",
+     "sī",
+     "cupiam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4.87"
+    }
+   },
+   {
+    "prompt": "Remove this notion, and you will have done away with grief.",
+    "answer": "Tolle hanc opīniōnem, lūctum sustuleris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tolle",
+     "hanc",
+     "opīniōnem",
+     "lūctum",
+     "sustuleris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-q2",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "It would be more fitting to yield each one his rights.",
+    "answer": "Illud erat aptius, aequum cuique concēdere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illud",
+     "erat",
+     "aptius",
+     "aequum",
+     "cuique",
+     "concēdere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "4.2"
+    }
+   },
+   {
+    "prompt": "Let him do this often, provided he does not get tired.",
+    "answer": "Id faciat saepe, dum nē lassus fīat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Id",
+     "faciat",
+     "saepe",
+     "dum",
+     "nē",
+     "lassus",
+     "fīat"
+    ],
+    "source": {
+     "author": "Marcus Porcius Cato",
+     "work": "De Agri Cultura",
+     "locus": "5.4"
+    }
+   },
+   {
+    "prompt": "When he had said this, he would cast the spear into their territories.",
+    "answer": "Id ubi dīxisset, hastam in fīnīs eōrum ēmittēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Id",
+     "ubi",
+     "dīxisset",
+     "hastam",
+     "in",
+     "fīnīs",
+     "eōrum",
+     "ēmittēbat"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1.32.13"
+    }
+   },
+   {
+    "prompt": "But had you given this chance to Crassus, he would have capered in the market place.",
+    "answer": "at darēs hanc vim M. Crassō, in forō saltāret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "at",
+     "darēs",
+     "hanc",
+     "vim",
+     "M",
+     "Crassō",
+     "in",
+     "forō",
+     "saltāret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 75"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-q3",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "If a thing is base, let it be hidden as much as you will, yet it cannot be made respectable.",
+    "answer": "quod turpe est, id quam vīs occultētur, tamen honestum fierī nūllō modō potest.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "turpe",
+     "est",
+     "id",
+     "quam",
+     "vīs",
+     "occultētur",
+     "tamen",
+     "honestum",
+     "fierī",
+     "nūllō",
+     "modō",
+     "potest"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 78"
+    }
+   },
+   {
+    "prompt": "Though there may be men who hate Carbo, still these men ought to consider what they have to fear.",
+    "answer": "quamvīs sint hominēs quī Cn. Carbōnem ōderint, tamen hī dēbent quid metuendum sit cōgitāre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quamvīs",
+     "sint",
+     "hominēs",
+     "quī",
+     "Cn",
+     "Carbōnem",
+     "ōderint",
+     "tamen",
+     "hī",
+     "dēbent",
+     "quid",
+     "metuendum",
+     "sit",
+     "cōgitāre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "1, 39"
+    }
+   },
+   {
+    "prompt": "Even though Epicurus really does speak in many places pretty heroically about pain, still we must not have an eye to what he says.",
+    "answer": "quamvīs enim multīs locīs dīcat Epicūrus, sīcutī dīcit, satis fortiter dē dolōre, tamen nōn id spectandum est quid dīcat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quamvīs",
+     "enim",
+     "multīs",
+     "locīs",
+     "dīcat",
+     "Epicūrus",
+     "sīcutī",
+     "dīcit",
+     "satis",
+     "fortiter",
+     "dē",
+     "dolōre",
+     "tamen",
+     "nōn",
+     "id",
+     "spectandum",
+     "est",
+     "quid",
+     "dīcat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "3, 117"
+    }
+   },
+   {
+    "prompt": "But even supposing this be admitted, how can the rest be admitted?",
+    "answer": "sed ut haec concēdantur, reliqua quī concēdī possunt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sed",
+     "ut",
+     "haec",
+     "concēdantur",
+     "reliqua",
+     "quī",
+     "concēdī",
+     "possunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "3, 41"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-087-demonstrative-pronouns-q4",
+  "sectionId": "bn-087-demonstrative-pronouns",
+  "questions": [
+   {
+    "prompt": "In the human body if there is anything likely to damage the rest of the body, we always allow it to be cauterized and cut.",
+    "answer": "in corpore sī quid eius modī est quod reliquō corporī noceat, id ūrī secārīque patimur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "corpore",
+     "sī",
+     "quid",
+     "eius",
+     "modī",
+     "est",
+     "quod",
+     "reliquō",
+     "corporī",
+     "noceat",
+     "id",
+     "ūrī",
+     "secārīque",
+     "patimur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "8, 15"
+    }
+   },
+   {
+    "prompt": "If men apply reason, the gift of the gods, to purposes of mischief, it would have been better it should not be given to the human race than given.",
+    "answer": "sī hominēs ratiōnem ā dīs datam in fraudem convertunt, nōn darī illam quam darī hūmānō generī melius fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "hominēs",
+     "ratiōnem",
+     "ā",
+     "dīs",
+     "datam",
+     "in",
+     "fraudem",
+     "convertunt",
+     "nōn",
+     "darī",
+     "illam",
+     "quam",
+     "darī",
+     "hūmānō",
+     "generī",
+     "melius",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "3, 78"
+    }
+   },
+   {
+    "prompt": "If you do not do it at once, I will hand you over to a magistrate.",
+    "answer": "nisi id cōnfestim facis, ego tē trādam magistrātuī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nisi",
+     "id",
+     "cōnfestim",
+     "facis",
+     "ego",
+     "tē",
+     "trādam",
+     "magistrātuī"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "15, 4, 3"
+    }
+   },
+   {
+    "prompt": "Therefore, if this is so, you are to honour me as a god.",
+    "answer": "quā rē, sī haec ita sunt, sīc mē colitōte ut deum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quā",
+     "rē",
+     "sī",
+     "haec",
+     "ita",
+     "sunt",
+     "sīc",
+     "mē",
+     "colitōte",
+     "ut",
+     "deum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "81"
+    }
+   }
+  ]
  }
 ]

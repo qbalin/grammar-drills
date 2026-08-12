@@ -1255,5 +1255,187 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-q1",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "Among the Helvetii, Orgetorix was by far the noblest and the richest.",
+    "answer": "Apud Helvētiōs longē nōbilissimus fuit et dītissimus Orgetorix.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Apud",
+     "Helvētiōs",
+     "longē",
+     "nōbilissimus",
+     "fuit",
+     "et",
+     "dītissimus",
+     "Orgetorix"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "The Belgae rise from the farthest borders of Gaul, extend to the lower part of the river Rhine, and look toward the north and the rising sun.",
+    "answer": "Belgae ab extrēmīs Galliae fīnibus oriuntur, pertinent ad īnferiōrem partem flūminis Rhēnī, spectant in septentriōnem et orientem sōlem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Belgae",
+     "ab",
+     "extrēmīs",
+     "Galliae",
+     "fīnibus",
+     "oriuntur",
+     "pertinent",
+     "ad",
+     "īnferiōrem",
+     "partem",
+     "flūminis",
+     "Rhēnī",
+     "spectant",
+     "in",
+     "septentriōnem",
+     "et",
+     "orientem",
+     "sōlem"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.1"
+    }
+   },
+   {
+    "prompt": "I do not wish to launch myself into a huge subject and to discourse on the treatment of slaves, toward whom we are most arrogant, most cruel, and most insulting.",
+    "answer": "Nōlō in ingentem mē locum immittere et dē ūsū servōrum disputāre, in quōs superbissimī, crūdēlissimī, contumēliōsissimī sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōlō",
+     "in",
+     "ingentem",
+     "mē",
+     "locum",
+     "immittere",
+     "et",
+     "dē",
+     "ūsū",
+     "servōrum",
+     "disputāre",
+     "in",
+     "quōs",
+     "superbissimī",
+     "crūdēlissimī",
+     "contumēliōsissimī",
+     "sumus"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.11"
+    }
+   },
+   {
+    "prompt": "By night he secretly carried off the most beautiful and most ancient statues.",
+    "answer": "Noctū clam sustulit signa pulcherrima atque antīquissima.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Noctū",
+     "clam",
+     "sustulit",
+     "signa",
+     "pulcherrima",
+     "atque",
+     "antīquissima"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem i.17.45"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-071-comparison-of-adjectives-q2",
+  "sectionId": "bn-071-comparison-of-adjectives",
+  "questions": [
+   {
+    "prompt": "You are not more cunning than he.",
+    "answer": "Nōn callidior es quam hīc.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "callidior",
+     "es",
+     "quam",
+     "hīc"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "49"
+    }
+   },
+   {
+    "prompt": "Age is naturally rather garrulous.",
+    "answer": "senectūs est nātūrā loquācior.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "senectūs",
+     "est",
+     "nātūrā",
+     "loquācior"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "55"
+    }
+   },
+   {
+    "prompt": "I am over greedy of glory.",
+    "answer": "sum avidior, quam satis est, glōriae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sum",
+     "avidior",
+     "quam",
+     "satis",
+     "est",
+     "glōriae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "9, 14, 2"
+    }
+   },
+   {
+    "prompt": "I am as tender-hearted as you; as mild as the gentlest man living.",
+    "answer": "tam sum misericors quam vōs; tam mītis quam quī lēnissimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tam",
+     "sum",
+     "misericors",
+     "quam",
+     "vōs",
+     "tam",
+     "mītis",
+     "quam",
+     "quī",
+     "lēnissimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "87"
+    }
+   }
+  ]
  }
 ]

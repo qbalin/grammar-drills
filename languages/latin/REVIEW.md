@@ -826,9 +826,14 @@ things about that file are load-bearing:
 **Where it stands.** The state is on disk, not in a log: `quotes.jsonl.gz` exists
 or it does not, and `.quotes.partial.jsonl` says how far a stopped run got.
 
-- *The pool is there.* Compose with `quote-tests.mjs --from quotes`, run
+- *The pool is there.* Refresh `inflection-topics.mjs`, hand the shipped
+  quotations back with `prune-tests.mjs --quoted --apply`, compose with
+  `quote-tests.mjs --from quotes --allocate --per-topic 16`, run
   `verify-attribution.mjs` and `validate-pack.mjs`, read a dozen prompts against
-  their answers, sign gate C9 above, update `BASELINE.json`, and commit.
+  their answers, sign gate C9 above, update `BASELINE.json`, and commit. The
+  prune is not optional and not a deletion: the composer refuses to ship a
+  sentence it can already see on disk, so a pool that has been dealt once cannot
+  be dealt differently without being taken back first.
 - *Only the partial is there.* Rerun the same command; it picks up.
 - *`verify-attribution.mjs` reports a contradiction.* **Do not ship it.** A
   contradiction is either a real misattribution or one ancient author quoting

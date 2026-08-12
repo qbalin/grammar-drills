@@ -1564,6 +1564,33 @@
     }
    },
    {
+    "prompt": "Of those who returned home, a census having been taken as Caesar had ordered, the number was found to be a hundred and ten thousand.",
+    "answer": "Eōrum quī domum rediērunt, cēnsū habitō, ut Caesar imperāverat, repertus est numerus mīlium centum et decem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eōrum",
+     "quī",
+     "domum",
+     "rediērunt",
+     "cēnsū",
+     "habitō",
+     "ut",
+     "Caesar",
+     "imperāverat",
+     "repertus",
+     "est",
+     "numerus",
+     "mīlium",
+     "centum",
+     "et",
+     "decem"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico"
+    }
+   },
+   {
     "prompt": "Seventeen years earlier he had taken two sets of spoils.",
     "answer": "Ante decem et septem annōs bīna cēperat spolia.",
     "kind": "translate-en-la",
@@ -1581,6 +1608,263 @@
      "author": "Plinius Maior",
      "work": "Naturalis Historia",
      "locus": "7.103.2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-078-numerals-q2",
+  "sectionId": "bn-078-numerals",
+  "questions": [
+   {
+    "prompt": "Three hundred denarii were exacted of each censor.",
+    "answer": "Singulīs cēnsōribus dēnāriī trecentī imperātī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Singulīs",
+     "cēnsōribus",
+     "dēnāriī",
+     "trecentī",
+     "imperātī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.137"
+    }
+   },
+   {
+    "prompt": "In my opinion Plato alone is worth a hundred thousand.",
+    "answer": "Platō mihi ūnus īnstar est centum mīlium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Platō",
+     "mihi",
+     "ūnus",
+     "īnstar",
+     "est",
+     "centum",
+     "mīlium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "191"
+    }
+   },
+   {
+    "prompt": "Sextus Roscius being put aside I ask these questions of Chrysogonus.",
+    "answer": "Ego haec ā Chrȳsogonō meā sponte, remōtō Sex. Rōsciō, quaerō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "haec",
+     "ā",
+     "Chrȳsogonō",
+     "meā",
+     "sponte",
+     "remōtō",
+     "Sex",
+     "Rōsciō",
+     "quaerō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "130"
+    }
+   },
+   {
+    "prompt": "Ten days had not yet passed, when the other infant son was killed.",
+    "answer": "Diēs nōndum decem intercesserant, cum ille alter fīlius īnfāns necātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Diēs",
+     "nōndum",
+     "decem",
+     "intercesserant",
+     "cum",
+     "ille",
+     "alter",
+     "fīlius",
+     "īnfāns",
+     "necātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "28"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-078-numerals-q3",
+  "sectionId": "bn-078-numerals",
+  "questions": [
+   {
+    "prompt": "Doubt, if you can, by whom Sextus Roscius was murdered.",
+    "answer": "Dubitāte, sī potestis, ā quō sit Sex. Rōscius occīsus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dubitāte",
+     "sī",
+     "potestis",
+     "ā",
+     "quō",
+     "sit",
+     "Sex",
+     "Rōscius",
+     "occīsus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "78"
+    }
+   },
+   {
+    "prompt": "That these statues were sold for sixty-five hundred sesterces.",
+    "answer": "haec sīgna sēstertiūm sex mīllibus quīngentīs esse vēndita.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "sīgna",
+     "sēstertiūm",
+     "sex",
+     "mīllibus",
+     "quīngentīs",
+     "esse",
+     "vēndita"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 12"
+    }
+   },
+   {
+    "prompt": "Though Cicero had kept his men in camp, he sends five cohorts foraging.",
+    "answer": "Cicerō, quī mīlitēs in castrīs continuisset, quīnque cohortēs frūmentātum mittit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cicerō",
+     "quī",
+     "mīlitēs",
+     "in",
+     "castrīs",
+     "continuisset",
+     "quīnque",
+     "cohortēs",
+     "frūmentātum",
+     "mittit"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "6, 36, 1"
+    }
+   },
+   {
+    "prompt": "When Roscius was murdered, they were on the spot.",
+    "answer": "cum occīditur Sex. Rōscius, ibīdem fuērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "occīditur",
+     "Sex",
+     "Rōscius",
+     "ibīdem",
+     "fuērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "120"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-078-numerals-q4",
+  "sectionId": "bn-078-numerals",
+  "questions": [
+   {
+    "prompt": "It is not a hundred and ten years yet since the law was passed.",
+    "answer": "nōndum centum et decem annī sunt, cum lāta lēx est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōndum",
+     "centum",
+     "et",
+     "decem",
+     "annī",
+     "sunt",
+     "cum",
+     "lāta",
+     "lēx",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2, 75"
+    }
+   },
+   {
+    "prompt": "It is the eighth year since you acquired empire.",
+    "answer": "annus est octāvus ut imperium obtinēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "annus",
+     "est",
+     "octāvus",
+     "ut",
+     "imperium",
+     "obtinēs"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "14, 53"
+    }
+   },
+   {
+    "prompt": "Two senators were put over every cohort.",
+    "answer": "bīnī senātōrēs singulīs cohortibus praepositī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "bīnī",
+     "senātōrēs",
+     "singulīs",
+     "cohortibus",
+     "praepositī"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 69, 8"
+    }
+   },
+   {
+    "prompt": "So that one camp seemed now to have been formed out of two.",
+    "answer": "ut ūna castra iam facta ex bīnīs vidērentur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "ūna",
+     "castra",
+     "iam",
+     "facta",
+     "ex",
+     "bīnīs",
+     "vidērentur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 74, 4"
     }
    }
   ]

@@ -1571,29 +1571,6 @@
      "work": "De natura deorum",
      "locus": "1.113"
     }
-   }
-  ]
- },
- {
-  "id": "bn-205-genitive-with-verbs-q2",
-  "sectionId": "bn-205-genitive-with-verbs",
-  "questions": [
-   {
-    "prompt": "They remember many things that they have heard from others.",
-    "answer": "Multa ab aliīs audīta meminērunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Multa",
-     "ab",
-     "aliīs",
-     "audīta",
-     "meminērunt"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Oratore",
-     "locus": "2.355"
-    }
    },
    {
     "prompt": "He forgot the whole case.",
@@ -1610,7 +1587,13 @@
      "work": "Brutus",
      "locus": "217"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q2",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
    {
     "prompt": "And yet I must not forget Epicurus.",
     "answer": "Nec tamen Epicūrī licet oblīvīscī.",
@@ -1649,13 +1632,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1.13"
     }
-   }
-  ]
- },
- {
-  "id": "bn-205-genitive-with-verbs-q3",
-  "sectionId": "bn-205-genitive-with-verbs",
-  "questions": [
+   },
    {
     "prompt": "Recall that unanimous agreement of the theatre.",
     "answer": "Recordāre cōnsēnsum illum theātrī.",
@@ -1687,7 +1664,13 @@
      "work": "In Catilinam",
      "locus": "3.24"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q3",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
    {
     "prompt": "Catiline reminded one of his poverty, another of his cupidity.",
     "answer": "Catilīna admonēbat alium egestātis, alium cupiditātis suae.",
@@ -1729,13 +1712,7 @@
      "work": "In Verrem",
      "locus": "2.1.72"
     }
-   }
-  ]
- },
- {
-  "id": "bn-205-genitive-with-verbs-q4",
-  "sectionId": "bn-205-genitive-with-verbs",
-  "questions": [
+   },
    {
     "prompt": "Have pity on the family.",
     "answer": "Miserēminī familiae, iūdicēs, miserēminī patris, miserēminī fīlī.",
@@ -1770,7 +1747,13 @@
      "work": "Philippicae",
      "locus": "2.69"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q4",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
    {
     "prompt": "I am sick and tired of the ways of the state.",
     "answer": "Mē cīvitātis mōrum piget taedetque.",
@@ -1805,13 +1788,7 @@
      "work": "Pro Rabirio Postumo",
      "locus": "32"
     }
-   }
-  ]
- },
- {
-  "id": "bn-205-genitive-with-verbs-q5",
-  "sectionId": "bn-205-genitive-with-verbs",
-  "questions": [
+   },
    {
     "prompt": "For I see what is for my good and for the good of us both.",
     "answer": "Videō enim quid meā intersit, quid utrīusque nostrum.",
@@ -1849,7 +1826,13 @@
      "work": "Epistulae",
      "locus": "4.13.4"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q5",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
    {
     "prompt": "It is of great consequence to our honor.",
     "answer": "Māgnī ad honōrem nostrum interest.",
@@ -1882,13 +1865,7 @@
      "work": "Res Rusticae",
      "locus": "1.16.6"
     }
-   }
-  ]
- },
- {
-  "id": "bn-205-genitive-with-verbs-q6",
-  "sectionId": "bn-205-genitive-with-verbs",
-  "questions": [
+   },
    {
     "prompt": "What is there that needs defence?",
     "answer": "Quid est quod dēfēnsiōnis indigeat?",
@@ -1926,7 +1903,13 @@
      "work": "Ab Urbe Condita",
      "locus": "34, 17, 7"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q6",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
    {
     "prompt": "Your health is a matter of the highest importance to you and to me.",
     "answer": "tuā et meā maximē interest tē valēre.",
@@ -1961,13 +1944,7 @@
      "work": "Pro Sulla",
      "locus": "79"
     }
-   }
-  ]
- },
- {
-  "id": "bn-205-genitive-with-verbs-q7",
-  "sectionId": "bn-205-genitive-with-verbs",
-  "questions": [
+   },
    {
     "prompt": "That he must do something which should seem more for the other side’s good than his own.",
     "answer": "faciundum aliquid, quod illōrum magis quam suā rētulisse vidērētur.",
@@ -2006,7 +1983,13 @@
      "work": "Epistulae ad Atticum",
      "locus": "3, 19, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-205-genitive-with-verbs-q7",
+  "sectionId": "bn-205-genitive-with-verbs",
+  "questions": [
    {
     "prompt": "A good many were acquitted of high treason.",
     "answer": "maiestātis absolūtī sunt permultī.",
@@ -2038,48 +2021,6 @@
      "author": "Cicero",
      "work": "Epistulae ad Atticum",
      "locus": "8, 4, 1"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-205-genitive-with-verbs-q8",
-  "sectionId": "bn-205-genitive-with-verbs",
-  "questions": [
-   {
-    "prompt": "Could I have been more forgetful of my present interests, more mindful of my past career?",
-    "answer": "num potuī magis oblīvīscī temporum meōrum, meminisse āctiōnum?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "num",
-     "potuī",
-     "magis",
-     "oblīvīscī",
-     "temporum",
-     "meōrum",
-     "meminisse",
-     "āctiōnum"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "1, 9, 8"
-    }
-   },
-   {
-    "prompt": "I can remember Cinna, I have seen Sulla.",
-    "answer": "Cinnam meminī vīdī Sūllam.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Cinnam",
-     "meminī",
-     "vīdī",
-     "Sūllam"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Philippicae",
-     "locus": "5, 17"
     }
    },
    {
@@ -2120,7 +2061,7 @@
   ]
  },
  {
-  "id": "bn-205-genitive-with-verbs-q9",
+  "id": "bn-205-genitive-with-verbs-q8",
   "sectionId": "bn-205-genitive-with-verbs",
   "questions": [
    {

@@ -321,81 +321,6 @@
   ]
  },
  {
-  "id": "bn-088-the-intensive-pronoun-q1",
-  "sectionId": "bn-088-the-intensive-pronoun",
-  "questions": [
-   {
-    "prompt": "This I too do myself: out of the many things I have read, I seize on something.",
-    "answer": "Hoc ipse quoque faciō: ex plūribus quae lēgī, aliquid apprehendō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Hoc",
-     "ipse",
-     "quoque",
-     "faciō",
-     "ex",
-     "plūribus",
-     "quae",
-     "lēgī",
-     "aliquid",
-     "apprehendō"
-    ],
-    "source": {
-     "author": "Seneca Minor",
-     "work": "Epistulae morales ad Lucilium",
-     "locus": "1.2.5"
-    }
-   },
-   {
-    "prompt": "Although indeed not only the fruit but also the very force and nature of the earth itself delights me.",
-    "answer": "Quamquam mē quidem nōn frūctus modō, sed etiam ipsīus terrae vīs ac nātūra dēlectat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quamquam",
-     "mē",
-     "quidem",
-     "nōn",
-     "frūctus",
-     "modō",
-     "sed",
-     "etiam",
-     "ipsīus",
-     "terrae",
-     "vīs",
-     "ac",
-     "nātūra",
-     "dēlectat"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "15.51"
-    }
-   },
-   {
-    "prompt": "This is what happens to people hurrying in a labyrinth: their very speed entangles them.",
-    "answer": "Quod ēvenit in labyrinthō properantibus: ipsa illōs vēlōcitās implicat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quod",
-     "ēvenit",
-     "in",
-     "labyrinthō",
-     "properantibus",
-     "ipsa",
-     "illōs",
-     "vēlōcitās",
-     "implicat"
-    ],
-    "source": {
-     "author": "Seneca Minor",
-     "work": "Epistulae morales ad Lucilium",
-     "locus": "5.44.7"
-    }
-   }
-  ]
- },
- {
   "id": "bn-088-the-intensive-pronoun-t8",
   "sectionId": "bn-088-the-intensive-pronoun",
   "questions": [
@@ -512,6 +437,392 @@
      "prōdita",
      "est"
     ]
+   }
+  ]
+ },
+ {
+  "id": "bn-088-the-intensive-pronoun-q1",
+  "sectionId": "bn-088-the-intensive-pronoun",
+  "questions": [
+   {
+    "prompt": "This I too do myself: out of the many things I have read, I seize on something.",
+    "answer": "Hoc ipse quoque faciō: ex plūribus quae lēgī, aliquid apprehendō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hoc",
+     "ipse",
+     "quoque",
+     "faciō",
+     "ex",
+     "plūribus",
+     "quae",
+     "lēgī",
+     "aliquid",
+     "apprehendō"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.5"
+    }
+   },
+   {
+    "prompt": "Although indeed not only the fruit but also the very force and nature of the earth itself delights me.",
+    "answer": "Quamquam mē quidem nōn frūctus modō, sed etiam ipsīus terrae vīs ac nātūra dēlectat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quamquam",
+     "mē",
+     "quidem",
+     "nōn",
+     "frūctus",
+     "modō",
+     "sed",
+     "etiam",
+     "ipsīus",
+     "terrae",
+     "vīs",
+     "ac",
+     "nātūra",
+     "dēlectat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "15.51"
+    }
+   },
+   {
+    "prompt": "While both armies were listening, Afranius says that one ought not to be angry either with them or with the soldiers, because they had wished to keep faith toward their commander Gnaeus Pompey.",
+    "answer": "Audiente utrōque exercitū loquitur Afrānius: nōn esse aut ipsīs aut mīlitibus succēnsendum, quod fidem ergā imperātōrem suum Cn. Pompeium cōnservāre voluerint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Audiente",
+     "utrōque",
+     "exercitū",
+     "loquitur",
+     "Afrānius",
+     "nōn",
+     "esse",
+     "aut",
+     "ipsīs",
+     "aut",
+     "mīlitibus",
+     "succēnsendum",
+     "quod",
+     "fidem",
+     "ergā",
+     "imperātōrem",
+     "suum",
+     "Cn",
+     "Pompeium",
+     "cōnservāre",
+     "voluerint"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello civili",
+     "locus": "1.84"
+    }
+   },
+   {
+    "prompt": "This is what happens to people hurrying in a labyrinth: their very speed entangles them.",
+    "answer": "Quod ēvenit in labyrinthō properantibus: ipsa illōs vēlōcitās implicat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "ēvenit",
+     "in",
+     "labyrinthō",
+     "properantibus",
+     "ipsa",
+     "illōs",
+     "vēlōcitās",
+     "implicat"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "5.44.7"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-088-the-intensive-pronoun-q2",
+  "sectionId": "bn-088-the-intensive-pronoun",
+  "questions": [
+   {
+    "prompt": "On this condition is old age honorable, if it defends itself.",
+    "answer": "Ita enim senectūs honesta est, sī sē ipsa dēfendit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ita",
+     "enim",
+     "senectūs",
+     "honesta",
+     "est",
+     "sī",
+     "sē",
+     "ipsa",
+     "dēfendit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "38"
+    }
+   },
+   {
+    "prompt": "Whatever power she had, she had by herself.",
+    "answer": "Quicquid potuit, potuit ipsa per sē.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quicquid",
+     "potuit",
+     "potuit",
+     "ipsa",
+     "per",
+     "sē"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Lege Agraria",
+     "locus": "1.20"
+    }
+   },
+   {
+    "prompt": "Even if Plato gave no reasons, he would overpower me by his mere authority.",
+    "answer": "Ut enim ratiōnem Platō nūllam adferret, ipsā auctōritāte mē frangeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ut",
+     "enim",
+     "ratiōnem",
+     "Platō",
+     "nūllam",
+     "adferret",
+     "ipsā",
+     "auctōritāte",
+     "mē",
+     "frangeret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.49"
+    }
+   },
+   {
+    "prompt": "I will explain what I think.",
+    "answer": "Quid ipse sentiam expōnam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "ipse",
+     "sentiam",
+     "expōnam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "1.10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-088-the-intensive-pronoun-q3",
+  "sectionId": "bn-088-the-intensive-pronoun",
+  "questions": [
+   {
+    "prompt": "He is condemned after pleading his case in person.",
+    "answer": "causā ipse prō sē dictā, damnātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "causā",
+     "ipse",
+     "prō",
+     "sē",
+     "dictā",
+     "damnātur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 44, 10"
+    }
+   },
+   {
+    "prompt": "It is myself you should love, not my possessions.",
+    "answer": "mē ipsum amēs oportet, nōn mea.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mē",
+     "ipsum",
+     "amēs",
+     "oportet",
+     "nōn",
+     "mea"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 85"
+    }
+   },
+   {
+    "prompt": "When the day of the trial came, he spoke in his own defence and was condemned.",
+    "answer": "cum diēs vēnit, causā ipse prō sē dictā, damnātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cum",
+     "diēs",
+     "vēnit",
+     "causā",
+     "ipse",
+     "prō",
+     "sē",
+     "dictā",
+     "damnātur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "4, 44, 10"
+    }
+   },
+   {
+    "prompt": "If he had been in the army as many years as he was consul.",
+    "answer": "sī tot cōnsulibus meruisset, quotiēns ipse cōnsul fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "tot",
+     "cōnsulibus",
+     "meruisset",
+     "quotiēns",
+     "ipse",
+     "cōnsul",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Balbo",
+     "locus": "47"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-088-the-intensive-pronoun-q4",
+  "sectionId": "bn-088-the-intensive-pronoun",
+  "questions": [
+   {
+    "prompt": "And that his object was not to hold the army himself, but to prevent the other side from having an army which they could use against him.",
+    "answer": "neque id agere ut exercitum teneat ipse, sed nē illī habeant quō contrā sē ūtī possint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "neque",
+     "id",
+     "agere",
+     "ut",
+     "exercitum",
+     "teneat",
+     "ipse",
+     "sed",
+     "nē",
+     "illī",
+     "habeant",
+     "quō",
+     "contrā",
+     "sē",
+     "ūtī",
+     "possint"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 85, 11"
+    }
+   },
+   {
+    "prompt": "It is sometimes the case that we are roused to a loftier style in oratory by sheer circumstance.",
+    "answer": "fit ut nātūrā ipsā ad ōrnātius dīcendī genus excitēmur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fit",
+     "ut",
+     "nātūrā",
+     "ipsā",
+     "ad",
+     "ōrnātius",
+     "dīcendī",
+     "genus",
+     "excitēmur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2, 338"
+    }
+   },
+   {
+    "prompt": "If the collective province could have spoken, she would have used these words; but since she could not, she chose a manager for the case herself.",
+    "answer": "sī ūniversa prōvincia loquī posset, hāc vōce ūterētur; quoniam id nōn poterat, hārum rērum āctōrem ipsa dēlēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "ūniversa",
+     "prōvincia",
+     "loquī",
+     "posset",
+     "hāc",
+     "vōce",
+     "ūterētur",
+     "quoniam",
+     "id",
+     "nōn",
+     "poterat",
+     "hārum",
+     "rērum",
+     "āctōrem",
+     "ipsa",
+     "dēlēgit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Divinatio in Caecilium",
+     "locus": "19"
+    }
+   },
+   {
+    "prompt": "I feel glad myself at having finally reached the end of the Punic war, as if I had had a direct hand in the work and the danger.",
+    "answer": "mē quoque iuvat, velut ipse in parte labōris ac perīculī fuerim, ad fīnem bellī Pūnicī pervēnisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mē",
+     "quoque",
+     "iuvat",
+     "velut",
+     "ipse",
+     "in",
+     "parte",
+     "labōris",
+     "ac",
+     "perīculī",
+     "fuerim",
+     "ad",
+     "fīnem",
+     "bellī",
+     "Pūnicī",
+     "pervēnisse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "31, 1, 1"
+    }
    }
   ]
  }

@@ -1218,5 +1218,394 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-105-third-or-consonant-conjugation-q1",
+  "sectionId": "bn-105-third-or-consonant-conjugation",
+  "questions": [
+   {
+    "prompt": "Recall the journeys which our generals have made through these years, in Italy, through the fields and towns of Roman citizens.",
+    "answer": "Itinera quae per hōsce annōs in Ī̆taliā per agrōs atque oppida cīvium Rōmānōrum nostrī imperātōrēs fēcerint, recordāminī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Itinera",
+     "quae",
+     "per",
+     "hōsce",
+     "annōs",
+     "in",
+     "Ī̆taliā",
+     "per",
+     "agrōs",
+     "atque",
+     "oppida",
+     "cīvium",
+     "Rōmānōrum",
+     "nostrī",
+     "imperātōrēs",
+     "fēcerint",
+     "recordāminī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "13.18"
+    }
+   },
+   {
+    "prompt": "Nothing was left to Caesar except to harass and wear down the enemy's column with his cavalry.",
+    "answer": "Relinquēbātur Caesarī nihil, nisi utī equitātū agmen adversāriōrum male habēret et carperet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Relinquēbātur",
+     "Caesarī",
+     "nihil",
+     "nisi",
+     "utī",
+     "equitātū",
+     "agmen",
+     "adversāriōrum",
+     "male",
+     "habēret",
+     "et",
+     "carperet"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello civili",
+     "locus": "1.63"
+    }
+   },
+   {
+    "prompt": "But I, for a definite reason, am not yet brought to do this thing, which ought to have been done long ago.",
+    "answer": "Vērum ego hoc, quod iam prīdem factum esse oportuit, certa dē causā nōndum addūcor ut faciam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vērum",
+     "ego",
+     "hoc",
+     "quod",
+     "iam",
+     "prīdem",
+     "factum",
+     "esse",
+     "oportuit",
+     "certa",
+     "dē",
+     "causā",
+     "nōndum",
+     "addūcor",
+     "ut",
+     "faciam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.5"
+    }
+   },
+   {
+    "prompt": "Similar is the method of the oat, which, sown in autumn, is partly cut for hay or fodder while it is still green, and partly kept for seed.",
+    "answer": "Similis ratiō avēnae est, quae autumnō sata partim caeditur in faenum vel pābulum dum adhūc viret, partim sēminī custōdītur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Similis",
+     "ratiō",
+     "avēnae",
+     "est",
+     "quae",
+     "autumnō",
+     "sata",
+     "partim",
+     "caeditur",
+     "in",
+     "faenum",
+     "vel",
+     "pābulum",
+     "dum",
+     "adhūc",
+     "viret",
+     "partim",
+     "sēminī",
+     "custōdītur"
+    ],
+    "source": {
+     "author": "Columella",
+     "work": "De Re Rustica",
+     "locus": "2.10.32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-105-third-or-consonant-conjugation-q2",
+  "sectionId": "bn-105-third-or-consonant-conjugation",
+  "questions": [
+   {
+    "prompt": "O immortal gods—men do not understand how great a revenue thrift is!",
+    "answer": "Ō dī immortālēs! nōn intellegunt hominēs, quam magnum vectīgal sit parsimōnia.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ō",
+     "dī",
+     "immortālēs",
+     "nōn",
+     "intellegunt",
+     "hominēs",
+     "quam",
+     "magnum",
+     "vectīgal",
+     "sit",
+     "parsimōnia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "49"
+    }
+   },
+   {
+    "prompt": "I will not bring up what is inconsistent with my character, and yet I will act in such a way that you understand what these men feel about you.",
+    "answer": "Nōn referam id quod abhorret ā meīs mōribus, et tamen faciam ut intellegās quid hī dē tē sentiant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "referam",
+     "id",
+     "quod",
+     "abhorret",
+     "ā",
+     "meīs",
+     "mōribus",
+     "et",
+     "tamen",
+     "faciam",
+     "ut",
+     "intellegās",
+     "quid",
+     "hī",
+     "dē",
+     "tē",
+     "sentiant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.20"
+    }
+   },
+   {
+    "prompt": "He, on the contrary, signals with his hand that the other should wait a little, and again bends over his wax tablets and stylus.",
+    "answer": "Hic contrā ut paulum exspectāret manū significat rursusque cērīs et stilō incumbit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Hic",
+     "contrā",
+     "ut",
+     "paulum",
+     "exspectāret",
+     "manū",
+     "significat",
+     "rursusque",
+     "cērīs",
+     "et",
+     "stilō",
+     "incumbit"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "7.27.9"
+    }
+   },
+   {
+    "prompt": "Perhaps you will ask what I myself am doing, I who give you these precepts.",
+    "answer": "Interrogābis fortasse quid ego faciam quī tibi ista praecipiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Interrogābis",
+     "fortasse",
+     "quid",
+     "ego",
+     "faciam",
+     "quī",
+     "tibi",
+     "ista",
+     "praecipiō"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-105-third-or-consonant-conjugation-q3",
+  "sectionId": "bn-105-third-or-consonant-conjugation",
+  "questions": [
+   {
+    "prompt": "You are waiting perhaps for him to say until he says.",
+    "answer": "Exspectās fortasse dum dīcat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Exspectās",
+     "fortasse",
+     "dum",
+     "dīcat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2.17"
+    }
+   },
+   {
+    "prompt": "Shall we wait for this until not a trace is left of the states and cities of Asia?",
+    "answer": "An id exspectāmus, quoad nē vestīgium quidem Asiae cīvitātum atque urbium relinquātur?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "An",
+     "id",
+     "exspectāmus",
+     "quoad",
+     "nē",
+     "vestīgium",
+     "quidem",
+     "Asiae",
+     "cīvitātum",
+     "atque",
+     "urbium",
+     "relinquātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "11.25"
+    }
+   },
+   {
+    "prompt": "I am waiting in the villa at Arcae until I find this out.",
+    "answer": "Ego in Arcānō opperior dum ista cōgnōscō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "in",
+     "Arcānō",
+     "opperior",
+     "dum",
+     "ista",
+     "cōgnōscō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10.3"
+    }
+   },
+   {
+    "prompt": "So long as the Gauls were at a distance from the fortifications, they had the advantage because of their missiles.",
+    "answer": "Dum longius ā mūnītiōne aberant Gallī, plūs multitūdine tēlōrum prōficiēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "longius",
+     "ā",
+     "mūnītiōne",
+     "aberant",
+     "Gallī",
+     "plūs",
+     "multitūdine",
+     "tēlōrum",
+     "prōficiēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7.82"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-105-third-or-consonant-conjugation-q4",
+  "sectionId": "bn-105-third-or-consonant-conjugation",
+  "questions": [
+   {
+    "prompt": "While this was going on, a message was brought to Caesar.",
+    "answer": "Dum haec geruntur, Caesarī nūntiātum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "haec",
+     "geruntur",
+     "Caesarī",
+     "nūntiātum",
+     "est"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.46"
+    }
+   },
+   {
+    "prompt": "He just missed killing Varus.",
+    "answer": "Paulum āfuit quīn Vārum interficeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Paulum",
+     "āfuit",
+     "quīn",
+     "Vārum",
+     "interficeret"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2.35"
+    }
+   },
+   {
+    "prompt": "I cannot help sending to you every day.",
+    "answer": "Facere nōn possum quīn cotīdiē ad tē mittam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Facere",
+     "nōn",
+     "possum",
+     "quīn",
+     "cotīdiē",
+     "ad",
+     "tē",
+     "mittam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "12.27.2"
+    }
+   },
+   {
+    "prompt": "It was out of the question that Cleomenes should not be spared.",
+    "answer": "Fierī nūllō modō poterat quīn Cleomenī parcerētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Fierī",
+     "nūllō",
+     "modō",
+     "poterat",
+     "quīn",
+     "Cleomenī",
+     "parcerētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.104"
+    }
+   }
+  ]
  }
 ]

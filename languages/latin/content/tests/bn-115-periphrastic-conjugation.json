@@ -842,6 +842,63 @@
     }
    },
    {
+    "prompt": "A grave and intolerable wrong has been done.",
+    "answer": "Gravis iniūria facta est et nōn ferenda.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Gravis",
+     "iniūria",
+     "facta",
+     "est",
+     "et",
+     "nōn",
+     "ferenda"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Flacco",
+     "locus": "84"
+    }
+   },
+   {
+    "prompt": "Will not the thing have to be agitated?",
+    "answer": "Nōn agitanda rēs erit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "agitanda",
+     "rēs",
+     "erit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.179"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-115-periphrastic-conjugation-q3",
+  "sectionId": "bn-115-periphrastic-conjugation",
+  "questions": [
+   {
+    "prompt": "He had the temple of Castor to take care of.",
+    "answer": "Aedem Castoris habuit tuendam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aedem",
+     "Castoris",
+     "habuit",
+     "tuendam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.1.150"
+    }
+   },
+   {
     "prompt": "With this kind of cavalry are you going to fight.",
     "answer": "cum hōc equite pugnātūrī estis.",
     "kind": "translate-en-la",

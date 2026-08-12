@@ -1278,5 +1278,379 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-023-second-declension-q1",
+  "sectionId": "bn-023-second-declension",
+  "questions": [
+   {
+    "prompt": "If your parents feared and hated you, and you could not appease them by any means, you would, I suppose, withdraw somewhere out of their sight.",
+    "answer": "Sī tē parentēs timērent atque ōdissent tuī neque eōs ūllā ratiōne plācāre possēs, ut opīnor, ab eōrum oculīs aliquō concēderēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "tē",
+     "parentēs",
+     "timērent",
+     "atque",
+     "ōdissent",
+     "tuī",
+     "neque",
+     "eōs",
+     "ūllā",
+     "ratiōne",
+     "plācāre",
+     "possēs",
+     "ut",
+     "opīnor",
+     "ab",
+     "eōrum",
+     "oculīs",
+     "aliquō",
+     "concēderēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.17"
+    }
+   },
+   {
+    "prompt": "This, then, if you are at Rome; but if you are away—or even if you are there—these matters are as follows.",
+    "answer": "Haec igitur, sī Rōmae es; sīn abes, aut etiam sī ades, haec negōtia sīc sē habent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Haec",
+     "igitur",
+     "sī",
+     "Rōmae",
+     "es",
+     "sīn",
+     "abes",
+     "aut",
+     "etiam",
+     "sī",
+     "ades",
+     "haec",
+     "negōtia",
+     "sīc",
+     "sē",
+     "habent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "5.18"
+    }
+   },
+   {
+    "prompt": "If my judgment had prevailed you would this day be a beggar, and the republic would not have lost so many leaders.",
+    "answer": "Sī meum cōnsilium valuisset, tū hodiē egērēs, rēs pūblica nōn tot ducēs āmīsisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "meum",
+     "cōnsilium",
+     "valuisset",
+     "tū",
+     "hodiē",
+     "egērēs",
+     "rēs",
+     "pūblica",
+     "nōn",
+     "tot",
+     "ducēs",
+     "āmīsisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.37"
+    }
+   },
+   {
+    "prompt": "Would not have fallen, unless that station had been open to our fleets.",
+    "answer": "Nōn concidissent, nisi illud receptāculum classibus nostrīs patēret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "concidissent",
+     "nisi",
+     "illud",
+     "receptāculum",
+     "classibus",
+     "nostrīs",
+     "patēret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-023-second-declension-q2",
+  "sectionId": "bn-023-second-declension",
+  "questions": [
+   {
+    "prompt": "If they mark any infirm in any part of their limbs, they order them to be put to death.",
+    "answer": "Sī quōs aliquā parte membrōrum inūtilīs nōtāvērunt, necārī iubent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quōs",
+     "aliquā",
+     "parte",
+     "membrōrum",
+     "inūtilīs",
+     "nōtāvērunt",
+     "necārī",
+     "iubent"
+    ],
+    "source": {
+     "author": "Curtius Rufus",
+     "work": "Historiae Alexandri Magni",
+     "locus": "9.1.25"
+    }
+   },
+   {
+    "prompt": "He who sets a limit to faults, takes up the side of the faults.",
+    "answer": "Quī enim vitiīs modum adpōnit, is partem suscipit vitiōrum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quī",
+     "enim",
+     "vitiīs",
+     "modum",
+     "adpōnit",
+     "is",
+     "partem",
+     "suscipit",
+     "vitiōrum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "4.42"
+    }
+   },
+   {
+    "prompt": "Old men keep their mental powers, only let them keep their zeal and diligence.",
+    "answer": "Manent ingenia senibus, modo permaneat studium et industria.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Manent",
+     "ingenia",
+     "senibus",
+     "modo",
+     "permaneat",
+     "studium",
+     "et",
+     "industria"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "22"
+    }
+   },
+   {
+    "prompt": "For it were fitting for us to mourn the house where a man has been born.",
+    "answer": "Nam nōs decēbat domum lūgēre ubi esset aliquis in lūcem ēditus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nam",
+     "nōs",
+     "decēbat",
+     "domum",
+     "lūgēre",
+     "ubi",
+     "esset",
+     "aliquis",
+     "in",
+     "lūcem",
+     "ēditus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.115"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-023-second-declension-q3",
+  "sectionId": "bn-023-second-declension",
+  "questions": [
+   {
+    "prompt": "I entreat you as much as if it were my own business.",
+    "answer": "Aequē ā tē petō ac sī mea negōtia essent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Aequē",
+     "ā",
+     "tē",
+     "petō",
+     "ac",
+     "sī",
+     "mea",
+     "negōtia",
+     "essent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "13.43"
+    }
+   },
+   {
+    "prompt": "The terms were approved, but only on condition that he should withdraw the garrisons.",
+    "answer": "Probāta condiciō est, sed ita ut ille praesidia dēdūceret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Probāta",
+     "condiciō",
+     "est",
+     "sed",
+     "ita",
+     "ut",
+     "ille",
+     "praesidia",
+     "dēdūceret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "7.14.1"
+    }
+   },
+   {
+    "prompt": "Cut off an athlete from his food just a day, he will pray to Jupiter aloft in Olympus.",
+    "answer": "subdūc cibum ūnum diem āthlētae, Iovem Olympium inplōrābit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "subdūc",
+     "cibum",
+     "ūnum",
+     "diem",
+     "āthlētae",
+     "Iovem",
+     "Olympium",
+     "inplōrābit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 40"
+    }
+   },
+   {
+    "prompt": "You may ask Zeno, he would answer in just as many words.",
+    "answer": "Zēnōnem rogēs, respondeat totidem verbīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Zēnōnem",
+     "rogēs",
+     "respondeat",
+     "totidem",
+     "verbīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "4, 69"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-023-second-declension-q4",
+  "sectionId": "bn-023-second-declension",
+  "questions": [
+   {
+    "prompt": "Had we been together, we certainly should not have lacked a programme.",
+    "answer": "ūnā fuissēmus, cōnsilium certē nōn dēfuisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ūnā",
+     "fuissēmus",
+     "cōnsilium",
+     "certē",
+     "nōn",
+     "dēfuisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9, 6, 6"
+    }
+   },
+   {
+    "prompt": "Whatsoever is blessed, has no trouble and makes none to anybody.",
+    "answer": "quod beātum est, nec habet nec exhibet cuiquam negōtium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "beātum",
+     "est",
+     "nec",
+     "habet",
+     "nec",
+     "exhibet",
+     "cuiquam",
+     "negōtium"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "1, 85"
+    }
+   },
+   {
+    "prompt": "Whoso should see this would be forced, wouldn’t he? to admit the existence of gods.",
+    "answer": "haec quī videat, nōnne cōgātur cōnfitērī deōs esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "quī",
+     "videat",
+     "nōnne",
+     "cōgātur",
+     "cōnfitērī",
+     "deōs",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 12"
+    }
+   },
+   {
+    "prompt": "Aquitania, though bound by the oath of allegiance to Otho, did not hold out long either.",
+    "answer": "nē Aquītānia quidem, quamquam in verba Othōnis obstricta, diū mānsit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "Aquītānia",
+     "quidem",
+     "quamquam",
+     "in",
+     "verba",
+     "Othōnis",
+     "obstricta",
+     "diū",
+     "mānsit"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Historiae",
+     "locus": "1, 76"
+    }
+   }
+  ]
  }
 ]

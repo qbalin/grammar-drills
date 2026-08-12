@@ -2083,29 +2083,6 @@
   "sectionId": "bn-172-the-accusative",
   "questions": [
    {
-    "prompt": "When they came to Syracuse, Scipio made ready deeds, not words, to clear himself.",
-    "answer": "Venientibus iīs Syrācūsās Scīpiō rēs, nōn verba ad pūrgandum sēsē parāvit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Venientibus",
-     "iīs",
-     "Syrācūsās",
-     "Scīpiō",
-     "rēs",
-     "nōn",
-     "verba",
-     "ad",
-     "pūrgandum",
-     "sēsē",
-     "parāvit"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab urbe condita libri",
-     "locus": "29.22"
-    }
-   },
-   {
     "prompt": "They called the master 'father of the household'; the slaves — a usage which even now survives in mimes — they called 'members of the family.'.",
     "answer": "Dominum patrem familiae appellāvērunt; servōs, quod etiam in mīmīs adhūc dūrat, familiārēs.",
     "kind": "translate-en-la",
@@ -2176,13 +2153,7 @@
      "work": "De officiis",
      "locus": "3.57"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q3",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "O splendid gift of age, if indeed it takes away from us what is most vicious in youth!",
     "answer": "Ō praeclārum mūnus aetātis, siquidem id aufert ā nōbīs quod est in adulēscentiā vitiōsissimum!",
@@ -2208,7 +2179,13 @@
      "work": "Cato Maior de Senectute",
      "locus": "12.39"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q3",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "But for the twentieth day now we have been allowing the edge of these men's authority to grow dull.",
     "answer": "At nōs vīcēsimum iam diem patimur hebēscere aciem hōrum auctōritātis.",
@@ -2256,13 +2233,7 @@
      "work": "Epistulae ad Atticum",
      "locus": "16.2.3.1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q4",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "He was now living the third generation of men.",
     "answer": "Tertiam iam aetātem hominum vīvēbat.",
@@ -2295,7 +2266,13 @@
      "work": "De Oratore",
      "locus": "3.184"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q4",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "What harm do those things do me?",
     "answer": "Quid mē ista laedunt?",
@@ -2328,13 +2305,7 @@
      "work": "Pro Sexto Roscio Amerino",
      "locus": "135"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q5",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "Caesar throws the Germans across the river.",
     "answer": "Caesar Germānōs flūmen trāicit.",
@@ -2366,7 +2337,13 @@
      "work": "Commentarii de bello Civili",
      "locus": "1.71"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q5",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "Strength is not even expected of an old man.",
     "answer": "Nē postulantur quidem vīrēs ā senectüte.",
@@ -2402,13 +2379,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "2.16.3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q6",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "He was unwilling that these matters should be discussed.",
     "answer": "Eās rēs iactārī nōlēbat.",
@@ -2440,7 +2411,13 @@
      "work": "Ab Urbe Condita",
      "locus": "30.29"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q6",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "They set all their towns afire.",
     "answer": "oppida sua omnia incendunt.",
@@ -2472,13 +2449,7 @@
      "work": "Bellum Catilinae",
      "locus": "20, 12"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q7",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "Caesar runs over the whole Picene territory.",
     "answer": "Caesar omnem agrum Pīcēnum percurrit.",
@@ -2511,7 +2482,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "2, 10, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q7",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "The senate is in mourning, the equestrian order betrays its sadness.",
     "answer": "lūget senātus, maeret equester ōrdō.",
@@ -2545,13 +2522,7 @@
      "work": "Topica",
      "locus": "29"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q8",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "Mind you don’t do a deed.",
     "answer": "vidē nē facinus faciās.",
@@ -2586,7 +2557,13 @@
      "work": "Orator",
      "locus": "189"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q8",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "They live on milk the most part.",
     "answer": "maximam partem lacte vīvunt.",
@@ -2619,13 +2596,7 @@
      "work": "Epistulae ad Atticum",
      "locus": "13, 12, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q9",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "With a son of that age.",
     "answer": "cum id aetātis fīliō.",
@@ -2657,7 +2628,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "5, 47, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q9",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "They built up a mound three hundred and thirty feet wide, and eighty feet high.",
     "answer": "aggerem lātum pedēs CCCXXX, altum pedēs LXXX exstrūxērunt.",
@@ -2695,13 +2672,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "4, 34, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q10",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "A thanksgiving was held one day.",
     "answer": "ūnum diem supplicātiō habita est.",
@@ -2736,7 +2707,13 @@
      "work": "In Catilinam",
      "locus": "3, 20"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q10",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "He pitches camp three miles away from their camp.",
     "answer": "mīlia passuum tria ab eōrum castrīs castra pōnit.",
@@ -2773,13 +2750,7 @@
      "work": "Ab Urbe Condita",
      "locus": "34, 20, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q11",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "The circumstance that he has now been on the throne two and twenty years.",
     "answer": "quod annum iam tertium et vīcēsimum rēgnat.",
@@ -2816,7 +2787,13 @@
      "work": "Bellum Iugurthinum",
      "locus": "75, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q11",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "There are three roads to Mutina.",
     "answer": "trēs viae sunt ad Mutinam.",
@@ -2849,13 +2826,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "2, 10, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q12",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "They invite each other to their homes.",
     "answer": "alius alium domōs suās invītant.",
@@ -2888,7 +2859,13 @@
      "work": "Bellum Iugurthinum",
      "locus": "76, 6"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q12",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "When you went to stay at the king’s palace.",
     "answer": "cum domum rēgis dēvertissēs.",
@@ -2921,13 +2898,7 @@
      "work": "Ab Urbe Condita",
      "locus": "1, 32, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q13",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "The island next to Capreae he called ‘the Castle of Indolence.’.",
     "answer": "vīcīnam Capreīs insulam ‘Aprāgopolim’ appellābat.",
@@ -2961,7 +2932,13 @@
      "work": "Cato Maior de Senectute",
      "locus": "61"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q13",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "Caesar was informed.",
     "answer": "Caesar certior factus est.",
@@ -2993,13 +2970,7 @@
      "work": "In Pisonem",
      "locus": "73"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q14",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "I have not kept you in the dark about the talk with Ampius.",
     "answer": "nōn tē cēlāvī sermōnem T. Ampiī.",
@@ -3035,7 +3006,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 16, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q14",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "Why do you ask me that?",
     "answer": "quid me istud rogās?",
@@ -3068,13 +3045,7 @@
      "work": "Ab Urbe Condita",
      "locus": "25, 37, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-172-the-accusative-q15",
-  "sectionId": "bn-172-the-accusative",
-  "questions": [
+   },
    {
     "prompt": "On this point I want you to be reminded.",
     "answer": "illud tē esse admonitum velim.",
@@ -3109,7 +3080,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 8, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-172-the-accusative-q15",
+  "sectionId": "bn-172-the-accusative",
+  "questions": [
    {
     "prompt": "The married women wore mourning for him a year.",
     "answer": "mātrōnae annum eum lūxērunt.",
@@ -3141,6 +3118,40 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "1, 33, 1"
+    }
+   },
+   {
+    "prompt": "This fact being paid heed to.",
+    "answer": "quā rē animum adversā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quā",
+     "rē",
+     "animum",
+     "adversā"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 80, 4"
+    }
+   },
+   {
+    "prompt": "Are we surprised that this man so far outshines everybody else?",
+    "answer": "mīrāmur hunc hominem tantum excellere cēterīs?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīrāmur",
+     "hunc",
+     "hominem",
+     "tantum",
+     "excellere",
+     "cēterīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "39"
     }
    }
   ]

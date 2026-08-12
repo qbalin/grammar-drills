@@ -511,13 +511,7 @@
      "work": "De Oratore",
      "locus": "3.145"
     }
-   }
-  ]
- },
- {
-  "id": "bn-291-antequam-and-priusquam-with-the-q3",
-  "sectionId": "bn-291-antequam-and-priusquam-with-the",
-  "questions": [
+   },
    {
     "prompt": "We always use our limbs before we learn for what purposes of utility we have them.",
     "answer": "membrīs ūtimur priusquam didicimus cuius ea causā ūtilitātis habeāmus.",
@@ -538,7 +532,13 @@
      "work": "De Finibus Bonorum et Malorum",
      "locus": "3, 66"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-q3",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
    {
     "prompt": "This calamity always overwhelms you before you can anticipate it.",
     "answer": "hoc malum opprimit antequam prōspicere potuerīs.",
@@ -597,13 +597,7 @@
      "work": "In Catilinam",
      "locus": "4, 20"
     }
-   }
-  ]
- },
- {
-  "id": "bn-291-antequam-and-priusquam-with-the-q4",
-  "sectionId": "bn-291-antequam-and-priusquam-with-the",
-  "questions": [
+   },
    {
     "prompt": "Before he reaches Pontus, he will send a letter to Pompey.",
     "answer": "antequam veniat in Pontum, litterās ad Cn. Pompēium mittet.",
@@ -624,7 +618,13 @@
      "work": "De Lege Agraria",
      "locus": "2, 53"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-291-antequam-and-priusquam-with-the-q4",
+  "sectionId": "bn-291-antequam-and-priusquam-with-the",
+  "questions": [
    {
     "prompt": "I will not argue to the contrary before he has spoken.",
     "answer": "nihil contrā disputābō priusquam dīxerit.",
@@ -682,13 +682,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 53, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-291-antequam-and-priusquam-with-the-q5",
-  "sectionId": "bn-291-antequam-and-priusquam-with-the",
-  "questions": [
+   },
    {
     "prompt": "They were not seen before they drew near to the camp.",
     "answer": "nec prius sunt vīsī quam castrīs adpropinquārent.",
@@ -706,49 +700,6 @@
      "author": "Julius Caesar",
      "work": "Commentarii de bello Gallico",
      "locus": "6, 37, 2"
-    }
-   },
-   {
-    "prompt": "He exhibited a play just a year before Ennius was born.",
-    "answer": "fābulam docuit, annō ipsō ante quam nātus est Ennius.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "fābulam",
-     "docuit",
-     "annō",
-     "ipsō",
-     "ante",
-     "quam",
-     "nātus",
-     "est",
-     "Ennius"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Brutus",
-     "locus": "72"
-    }
-   },
-   {
-    "prompt": "Two hundred years before they took Rome, the Gauls crossed over to Italy.",
-    "answer": "ducentīs annīs ante quam Rōmam caperent, in Ītaliam Gallī trānscendērunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "ducentīs",
-     "annīs",
-     "ante",
-     "quam",
-     "Rōmam",
-     "caperent",
-     "in",
-     "Ītaliam",
-     "Gallī",
-     "trānscendērunt"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "5, 33, 5"
     }
    }
   ]

@@ -1396,5 +1396,388 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-101-first-or-a-conjugation-q1",
+  "sectionId": "bn-101-first-or-a-conjugation",
+  "questions": [
+   {
+    "prompt": "You do nothing, you contrive nothing, you plan nothing which I do not merely hear but even see and clearly perceive.",
+    "answer": "Nihil agis, nihil mōlīris, nihil cōgitās, quod nōn ego nōn modo audiam, sed etiam videam plānēque sentiam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "agis",
+     "nihil",
+     "mōlīris",
+     "nihil",
+     "cōgitās",
+     "quod",
+     "nōn",
+     "ego",
+     "nōn",
+     "modo",
+     "audiam",
+     "sed",
+     "etiam",
+     "videam",
+     "plānēque",
+     "sentiam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.8"
+    }
+   },
+   {
+    "prompt": "Panaetius praises Africanus on the ground that he was self-controlled — why should he not praise him?",
+    "answer": "Laudat Āfricānum Panaetius, quod fuerit abstinēns. Quidnī laudet?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Laudat",
+     "Āfricānum",
+     "Panaetius",
+     "quod",
+     "fuerit",
+     "abstinēns",
+     "Quidnī",
+     "laudet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De officiis",
+     "locus": "2.76"
+    }
+   },
+   {
+    "prompt": "Never, therefore, will philosophy be able to be praised worthily enough — anyone who obeys it could pass his whole span of life without trouble.",
+    "answer": "Numquam igitur satis dignē laudārī philosophia poterit, cui quī pāreat, omne tempus aetātis sine molestiā possit dēgere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Numquam",
+     "igitur",
+     "satis",
+     "dignē",
+     "laudārī",
+     "philosophia",
+     "poterit",
+     "cui",
+     "quī",
+     "pāreat",
+     "omne",
+     "tempus",
+     "aetātis",
+     "sine",
+     "molestiā",
+     "possit",
+     "dēgere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior De Senectute",
+     "locus": "1.2"
+    }
+   },
+   {
+    "prompt": "You ask me, whether into exile? I do not order it, but, if you consult me, I advise it.",
+    "answer": "Interrogās mē, num in exilium? Nōn iubeō, sed, sī mē cōnsulis, suādeō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Interrogās",
+     "mē",
+     "num",
+     "in",
+     "exilium",
+     "Nōn",
+     "iubeō",
+     "sed",
+     "sī",
+     "mē",
+     "cōnsulis",
+     "suādeō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-101-first-or-a-conjugation-q2",
+  "sectionId": "bn-101-first-or-a-conjugation",
+  "questions": [
+   {
+    "prompt": "Whom will you give me who would set some value on time, who would appraise the day, who would understand that he is dying daily?",
+    "answer": "Quem mihi dabis quī aliquod pretium temporī pōnat, quī diem aestimet, quī intellegat sē cotīdiē morī?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quem",
+     "mihi",
+     "dabis",
+     "quī",
+     "aliquod",
+     "pretium",
+     "temporī",
+     "pōnat",
+     "quī",
+     "diem",
+     "aestimet",
+     "quī",
+     "intellegat",
+     "sē",
+     "cotīdiē",
+     "morī"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.2"
+    }
+   },
+   {
+    "prompt": "How many thrusts of yours—aimed so that they seemed impossible to avoid—did I escape by a slight swerve and, as they say, with just my body!",
+    "answer": "Quot ego tuās petītiōnēs — ita coniectās ut vītārī posse nōn vidērentur — parvā quādam dēclīnātiōne et, ut aiunt, corpore effūgī!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quot",
+     "ego",
+     "tuās",
+     "petītiōnēs",
+     "ita",
+     "coniectās",
+     "ut",
+     "vītārī",
+     "posse",
+     "nōn",
+     "vidērentur",
+     "parvā",
+     "quādam",
+     "dēclīnātiōne",
+     "et",
+     "ut",
+     "aiunt",
+     "corpore",
+     "effūgī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.15"
+    }
+   },
+   {
+    "prompt": "And so, when the parents of one crucified man saw that the guard had been relaxed, they took him down as he hung by night and committed him to his last rites.",
+    "answer": "Itaque ūnī̆us cruciāriī parentēs ut vīdērunt laxātam custōdiam, dētrāxēre nocte pendentem supremoque mandāvērunt officiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Itaque",
+     "ūnī̆us",
+     "cruciāriī",
+     "parentēs",
+     "ut",
+     "vīdērunt",
+     "laxātam",
+     "custōdiam",
+     "dētrāxēre",
+     "nocte",
+     "pendentem",
+     "supremoque",
+     "mandāvērunt",
+     "officiō"
+    ],
+    "source": {
+     "author": "Petronius",
+     "work": "Satyricon",
+     "locus": "112"
+    }
+   },
+   {
+    "prompt": "If no one has succeeded in obtaining it, my request is presumptuous.",
+    "answer": "Sī nēmō impetrāvit, adroganter rogō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "nēmō",
+     "impetrāvit",
+     "adroganter",
+     "rogō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Ligario",
+     "locus": "30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-101-first-or-a-conjugation-q3",
+  "sectionId": "bn-101-first-or-a-conjugation",
+  "questions": [
+   {
+    "prompt": "If fate cuts me off too soon, do you remember that I ordered this.",
+    "answer": "Sī mē praecēperit fātum, vōs mandāsse mementō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "mē",
+     "praecēperit",
+     "fātum",
+     "vōs",
+     "mandāsse",
+     "mementō"
+    ],
+    "source": {
+     "author": "Curtius Rufus",
+     "work": "Historiae Alexandri Magni",
+     "locus": "9.6.26"
+    }
+   },
+   {
+    "prompt": "If any one appealed to a colleague, he came off in such case that he repented not having submitted to the decree of the former decemvir.",
+    "answer": "Sī quis collēgam appellāsset, ab eō ita discēdēbat ut paenitēret nōn priōris dēcrētō stetisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quis",
+     "collēgam",
+     "appellāsset",
+     "ab",
+     "eō",
+     "ita",
+     "discēdēbat",
+     "ut",
+     "paenitēret",
+     "nōn",
+     "priōris",
+     "dēcrētō",
+     "stetisse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3.36.8"
+    }
+   },
+   {
+    "prompt": "I should be glad whatever cause had brought you here.",
+    "answer": "Quaecumque vōs causa hūc attulisset, laetārer.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quaecumque",
+     "vōs",
+     "causa",
+     "hūc",
+     "attulisset",
+     "laetārer"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.15"
+    }
+   },
+   {
+    "prompt": "Whenever I come here, this very doing nothing delights me.",
+    "answer": "Cum hūc vēnī, hōc ipsum nihil agere mē dēlectat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "hūc",
+     "vēnī",
+     "hōc",
+     "ipsum",
+     "nihil",
+     "agere",
+     "mē",
+     "dēlectat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.24"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-101-first-or-a-conjugation-q4",
+  "sectionId": "bn-101-first-or-a-conjugation",
+  "questions": [
+   {
+    "prompt": "Whenever he saw a rose, then he thought spring was beginning.",
+    "answer": "Cum rosam vīderat, tum incipere vēr arbitrābātur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "rosam",
+     "vīderat",
+     "tum",
+     "incipere",
+     "vēr",
+     "arbitrābātur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5.27"
+    }
+   },
+   {
+    "prompt": "For ask Aristo, he would deny.",
+    "answer": "Rogēs enim Aristōnem, neget.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Rogēs",
+     "enim",
+     "Aristōnem",
+     "neget"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "4.69"
+    }
+   },
+   {
+    "prompt": "Sextilius might have denied with impunity; for who would prove him wrong.",
+    "answer": "Poterat Sextilius impūne negāre: quis enim redargueret?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Poterat",
+     "Sextilius",
+     "impūne",
+     "negāre",
+     "quis",
+     "enim",
+     "redargueret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2.55"
+    }
+   },
+   {
+    "prompt": "Would it have been a great matter to wait for the man himself?",
+    "answer": "Ipsum enim exspectāre māgnum fuit?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ipsum",
+     "enim",
+     "exspectāre",
+     "māgnum",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "2.103"
+    }
+   }
+  ]
  }
 ]

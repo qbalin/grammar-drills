@@ -559,6 +559,31 @@
     }
    },
    {
+    "prompt": "Now in action, what soldier is equal to a Roman one?",
+    "answer": "Iam in opere quis pār Rōmānō mīles?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Iam",
+     "in",
+     "opere",
+     "quis",
+     "pār",
+     "Rōmānō",
+     "mīles"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita :",
+     "locus": "9.19"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-090-interrogative-pronouns-q2",
+  "sectionId": "bn-090-interrogative-pronouns",
+  "questions": [
+   {
     "prompt": "Is there any shame, Verres, any scruple, any fear?",
     "answer": "Ecquī pudor est, ecquae religiō, Verrēs, ecquī metus?",
     "kind": "translate-en-la",
@@ -576,6 +601,50 @@
      "author": "Cicero",
      "work": "In Verrem",
      "locus": "2.4.18"
+    }
+   },
+   {
+    "prompt": "Of what kind is the dream of Tarquin the Proud, about which he himself speaks in the Brutus of Accius?",
+    "answer": "Cuiusnam modī est Superbī Tarquinī somnium, dē quō in Brūtō Accī loquitur ipse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cuiusnam",
+     "modī",
+     "est",
+     "Superbī",
+     "Tarquinī",
+     "somnium",
+     "dē",
+     "quō",
+     "in",
+     "Brūtō",
+     "Accī",
+     "loquitur",
+     "ipse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De divinatione I.XXII"
+    }
+   },
+   {
+    "prompt": "Who refined Syracusan Dio with learning of every sort? was it not Plato?",
+    "answer": "quis Diōnem Syrācosium doctrīnīs omnibus expolīvit? nōn Platō?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "Diōnem",
+     "Syrācosium",
+     "doctrīnīs",
+     "omnibus",
+     "expolīvit",
+     "nōn",
+     "Platō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "3, 139"
     }
    }
   ]

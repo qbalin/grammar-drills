@@ -594,6 +594,47 @@
     }
    },
    {
+    "prompt": "He orders the bridge which was near Geneva torn up.",
+    "answer": "pontem, quī erat ad Genāvam, iubet rescindī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "pontem",
+     "quī",
+     "erat",
+     "ad",
+     "Genāvam",
+     "iubet",
+     "rescindī"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 7, 2"
+    }
+   },
+   {
+    "prompt": "I give up, because I have to.",
+    "answer": "concēdō, quia necesse est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "concēdō",
+     "quia",
+     "necesse",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "145"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-324-subjunctive-by-attraction-q2",
+  "sectionId": "bn-324-subjunctive-by-attraction",
+  "questions": [
+   {
     "prompt": "I am afraid I may make the work harder, while I am aiming to make it less.",
     "answer": "vereor nē, dum minuere velim labōrem, augeam.",
     "kind": "translate-en-la",
@@ -636,13 +677,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "1, 9"
     }
-   }
-  ]
- },
- {
-  "id": "bn-324-subjunctive-by-attraction-q2",
-  "sectionId": "bn-324-subjunctive-by-attraction",
-  "questions": [
+   },
    {
     "prompt": "It is the custom at Syracuse, that if any question is discussed in the senate, anybody who pleases may express his opinion.",
     "answer": "mōs est Syrācūsīs, ut sī quā dē rē ad senātum referātur, dīcat sententiam quī velit.",
@@ -690,30 +725,6 @@
      "author": "Cicero",
      "work": "De Finibus Bonorum et Malorum",
      "locus": "1, 62"
-    }
-   },
-   {
-    "prompt": "It is the custom in Athens to eulogize in public assembly such as have fallen in action.",
-    "answer": "mōs est Athēnīs laudārī in cōntiōne eōs, quī sint in proeliīs interfectī.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "mōs",
-     "est",
-     "Athēnīs",
-     "laudārī",
-     "in",
-     "cōntiōne",
-     "eōs",
-     "quī",
-     "sint",
-     "in",
-     "proeliīs",
-     "interfectī"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Orator",
-     "locus": "151"
     }
    }
   ]

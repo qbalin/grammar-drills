@@ -457,6 +457,23 @@
     }
    },
    {
+    "prompt": "There was long and sharp fighting.",
+    "answer": "diū atque ācriter pugnātum est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "diū",
+     "atque",
+     "ācriter",
+     "pugnātum",
+     "est"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 26, 1"
+    }
+   },
+   {
     "prompt": "It came to pass the same night that there was a full moon.",
     "answer": "eādem nocte accidit ut esset lūna plēna.",
     "kind": "translate-en-la",
@@ -473,30 +490,6 @@
      "author": "Julius Caesar",
      "work": "Commentarii de bello Gallico",
      "locus": "4, 29, 1"
-    }
-   },
-   {
-    "prompt": "The estate which is in the territory which is called Sabine, that I maintain is mine.",
-    "answer": "fundus quī est in agrō, quī Sabīnus vocātur, eum meum esse aiō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "fundus",
-     "quī",
-     "est",
-     "in",
-     "agrō",
-     "quī",
-     "Sabīnus",
-     "vocātur",
-     "eum",
-     "meum",
-     "esse",
-     "aiō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Murena",
-     "locus": "26"
     }
    }
   ]

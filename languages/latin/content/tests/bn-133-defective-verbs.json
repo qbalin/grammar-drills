@@ -1800,5 +1800,354 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-133-defective-verbs-q1",
+  "sectionId": "bn-133-defective-verbs",
+  "questions": [
+   {
+    "prompt": "At the very first onset of his illness he said, 'Alas, I think I am becoming a god.'.",
+    "answer": "Prīmā quōque morbī accessiōne, Vae, inquit, putō, deus fīō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Prīmā",
+     "quōque",
+     "morbī",
+     "accessiōne",
+     "Vae",
+     "inquit",
+     "putō",
+     "deus",
+     "fīō"
+    ],
+    "source": {
+     "author": "Suetonius",
+     "work": "Life of Vespasian 23",
+     "locus": "4"
+    }
+   },
+   {
+    "prompt": "When Simonides promised him the art of memory, “I should prefer,” he said of forgetfulness.”.",
+    "answer": "Cum eī Simōnidēs artem memoriae pollicērētur: oblīviōnis, inquit, māllem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cum",
+     "eī",
+     "Simōnidēs",
+     "artem",
+     "memoriae",
+     "pollicērētur",
+     "oblīviōnis",
+     "inquit",
+     "māllem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2.104"
+    }
+   },
+   {
+    "prompt": "They remember many things that they have heard from others.",
+    "answer": "Multa ab aliīs audīta meminērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Multa",
+     "ab",
+     "aliīs",
+     "audīta",
+     "meminērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.355"
+    }
+   },
+   {
+    "prompt": "All of whom the fact of desiring, hating, and fearing the same things has united into one.",
+    "answer": "Quōs omnīs eadem cupere, eadem ōdisse, eadem metuere, in ūnum coēgit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōs",
+     "omnīs",
+     "eadem",
+     "cupere",
+     "eadem",
+     "ōdisse",
+     "eadem",
+     "metuere",
+     "in",
+     "ūnum",
+     "coēgit"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Iugurthinum",
+     "locus": "31"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-133-defective-verbs-q2",
+  "sectionId": "bn-133-defective-verbs",
+  "questions": [
+   {
+    "prompt": "Could I have been more forgetful of my present interests, more mindful of my past career?",
+    "answer": "num potuī magis oblīvīscī temporum meōrum, meminisse āctiōnum?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "num",
+     "potuī",
+     "magis",
+     "oblīvīscī",
+     "temporum",
+     "meōrum",
+     "meminisse",
+     "āctiōnum"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "1, 9, 8"
+    }
+   },
+   {
+    "prompt": "I can remember Cinna, I have seen Sulla.",
+    "answer": "Cinnam meminī vīdī Sūllam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Cinnam",
+     "meminī",
+     "vīdī",
+     "Sūllam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "5, 17"
+    }
+   },
+   {
+    "prompt": "They say the Persian kings generally have several wives.",
+    "answer": "solēre aiunt rēgēs Persārum plūrēs uxōrēs habēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "solēre",
+     "aiunt",
+     "rēgēs",
+     "Persārum",
+     "plūrēs",
+     "uxōrēs",
+     "habēre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3, 76"
+    }
+   },
+   {
+    "prompt": "Oratory began to be put in black and white.",
+    "answer": "litterīs ōrātiō est coepta mandārī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "litterīs",
+     "ōrātiō",
+     "est",
+     "coepta",
+     "mandārī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "26"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-133-defective-verbs-q3",
+  "sectionId": "bn-133-defective-verbs",
+  "questions": [
+   {
+    "prompt": "The old speeches ceased to be read.",
+    "answer": "veterēs ōrātiōnēs legī sunt dēsitae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "veterēs",
+     "ōrātiōnēs",
+     "legī",
+     "sunt",
+     "dēsitae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "123"
+    }
+   },
+   {
+    "prompt": "Don’t you remember? :: oh yes.",
+    "answer": "nōnne meministī? :: meminī vērō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōnne",
+     "meministī",
+     "meminī",
+     "vērō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2, 10"
+    }
+   },
+   {
+    "prompt": "‘you bought up men’ says he; with what purpose?",
+    "answer": "‘hominēs’ inquit ‘ēmistī.’ quid utī faceret?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hominēs",
+     "inquit",
+     "ēmistī",
+     "quid",
+     "utī",
+     "faceret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "84"
+    }
+   },
+   {
+    "prompt": "Your gentlemen say that this man, after sacrificing a bull, tumbled down dead.",
+    "answer": "hunc istī aiunt, cum taurum immolāvisset, mortuum concidisse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hunc",
+     "istī",
+     "aiunt",
+     "cum",
+     "taurum",
+     "immolāvisset",
+     "mortuum",
+     "concidisse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "43"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-133-defective-verbs-q4",
+  "sectionId": "bn-133-defective-verbs",
+  "questions": [
+   {
+    "prompt": "I can remember Metellus’s being so good and strong in the very last part of his life that he did not feel the want of youth.",
+    "answer": "L. Metellum meminī ita bonīs esse vīribus extrēmō tempore aetātis, ut adulēscentiam nōn requīreret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "L",
+     "Metellum",
+     "meminī",
+     "ita",
+     "bonīs",
+     "esse",
+     "vīribus",
+     "extrēmō",
+     "tempore",
+     "aetātis",
+     "ut",
+     "adulēscentiam",
+     "nōn",
+     "requīreret"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "30"
+    }
+   },
+   {
+    "prompt": "As soon as I began to be able to speak, I said.",
+    "answer": "ut prīmum loquī posse coepī, inquam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "prīmum",
+     "loquī",
+     "posse",
+     "coepī",
+     "inquam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "6, 15"
+    }
+   },
+   {
+    "prompt": "You can remember him: for the present consuls were created only nineteen years after his death.",
+    "answer": "quem meminisse potestis: annō enim ūndēvīcēsimō post eius mortem hī cōnsulēs factī sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quem",
+     "meminisse",
+     "potestis",
+     "annō",
+     "enim",
+     "ūndēvīcēsimō",
+     "post",
+     "eius",
+     "mortem",
+     "hī",
+     "cōnsulēs",
+     "factī",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "14"
+    }
+   },
+   {
+    "prompt": "Suffer not Cato to find a rival even in your man himself, whom, as you say, Apollo declared wisest of mankind; for our Cato is renowned for deeds, the other for doctrines.",
+    "answer": "cavē Catōnī antepōnās nē istum quidem ipsum quem Apollō, ut ais, sapientissimum iūdicāvit: huius enim facta, illīus dicta laudantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cavē",
+     "Catōnī",
+     "antepōnās",
+     "nē",
+     "istum",
+     "quidem",
+     "ipsum",
+     "quem",
+     "Apollō",
+     "ut",
+     "ais",
+     "sapientissimum",
+     "iūdicāvit",
+     "huius",
+     "enim",
+     "facta",
+     "illīus",
+     "dicta",
+     "laudantur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "10"
+    }
+   }
+  ]
  }
 ]

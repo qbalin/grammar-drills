@@ -967,33 +967,6 @@
     }
    },
    {
-    "prompt": "At the very first onset of his illness he said, 'Alas, I think I am becoming a god.'.",
-    "answer": "Prīmā quōque morbī accessiōne, Vae, inquit, putō, deus fīō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Prīmā",
-     "quōque",
-     "morbī",
-     "accessiōne",
-     "Vae",
-     "inquit",
-     "putō",
-     "deus",
-     "fīō"
-    ],
-    "source": {
-     "author": "Suetonius",
-     "work": "Life of Vespasian 23",
-     "locus": "4"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-228-locative-uses-of-the-ablative-q2",
-  "sectionId": "bn-228-locative-uses-of-the-ablative",
-  "questions": [
-   {
     "prompt": "These things I used to discuss with the philosophers themselves at Athens.",
     "answer": "Haec ego cum ipsīs philosophīs [tum] Athēnīs disserēbam.",
     "kind": "translate-en-la",
@@ -1012,7 +985,13 @@
      "work": "De oratore",
      "locus": "1.57"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q2",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
    {
     "prompt": "After this assembly was held, within two or three hours most welcome messengers and letters arrived.",
     "answer": "Post hanc habitam cōntiōnem duābus tribusve hōrīs optātissimī nūntiī et litterae vēnērunt.",
@@ -1059,30 +1038,6 @@
     }
    },
    {
-    "prompt": "Afterwards set the little cup out in the open by night.",
-    "answer": "Posteā pōnitō pōcillum in serēnō noctū.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Posteā",
-     "pōnitō",
-     "pōcillum",
-     "in",
-     "serēnō",
-     "noctū"
-    ],
-    "source": {
-     "author": "Marcus Porcius Cato",
-     "work": "De agri cultura",
-     "locus": "156.3"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-228-locative-uses-of-the-ablative-q3",
-  "sectionId": "bn-228-locative-uses-of-the-ablative",
-  "questions": [
-   {
     "prompt": "On the next day, the slaves were summoned to the cap of liberty, and those in chains were released from prison.",
     "answer": "Posterō diē, servī ad pilleum vocātī, et carcere vīnctī ēmissī.",
     "kind": "translate-en-la",
@@ -1120,7 +1075,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "7.24"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q3",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
    {
     "prompt": "The troops had sustained the fight five hours.",
     "answer": "Militēs quīnque hōrīs proelium sustinuerant.",
@@ -1153,13 +1114,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "4.38"
     }
-   }
-  ]
- },
- {
-  "id": "bn-228-locative-uses-of-the-ablative-q4",
-  "sectionId": "bn-228-locative-uses-of-the-ablative",
-  "questions": [
+   },
    {
     "prompt": "They came by night to the Nervii.",
     "answer": "Nocte ad Nerviōs pervēnērunt.",
@@ -1191,7 +1146,13 @@
      "work": "Pro Caecina",
      "locus": "82"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q4",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
    {
     "prompt": "A Roman knight is brought into a banquet of Apronius.",
     "answer": "Statuitur eques Rōmānus in Aprōnī convīviō.",
@@ -1209,13 +1170,7 @@
      "work": "In Verrem",
      "locus": "3.62"
     }
-   }
-  ]
- },
- {
-  "id": "bn-228-locative-uses-of-the-ablative-q5",
-  "sectionId": "bn-228-locative-uses-of-the-ablative",
-  "questions": [
+   },
    {
     "prompt": "About his departure from Alexandrea.",
     "answer": "dē illīus Alexandrēā discessū.",
@@ -1265,65 +1220,13 @@
      "work": "In Catilinam",
      "locus": "3, 58, 4"
     }
-   },
-   {
-    "prompt": "In Illyricum, and at Alexandrea itself.",
-    "answer": "in Illyricō, in ipsā Alexandrēā.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "in",
-     "Illyricō",
-     "in",
-     "ipsā",
-     "Alexandrēā"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "11, 16, 1"
-    }
    }
   ]
  },
  {
-  "id": "bn-228-locative-uses-of-the-ablative-q6",
+  "id": "bn-228-locative-uses-of-the-ablative-q5",
   "sectionId": "bn-228-locative-uses-of-the-ablative",
   "questions": [
-   {
-    "prompt": "That Antiochus was in Syria, Ptolemy at Alexandria.",
-    "answer": "Antiochum in Syriā, Ptolemaeum in Alexandrīā esse.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Antiochum",
-     "in",
-     "Syriā",
-     "Ptolemaeum",
-     "in",
-     "Alexandrīā",
-     "esse"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "42, 26, 7"
-    }
-   },
-   {
-    "prompt": "On the Alban mount and at Lavinium.",
-    "answer": "in mōnte Albānō Lāvīniōque.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "in",
-     "mōnte",
-     "Albānō",
-     "Lāvīniōque"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "5, 52, 8"
-    }
-   },
    {
     "prompt": "We have a vessel all chartered, one in Cajeta and one at Brundusium.",
     "answer": "nāvis et in Caiētā est parāta nōbīs et Brundusiī.",
@@ -1360,13 +1263,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "7, 20, 2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-228-locative-uses-of-the-ablative-q7",
-  "sectionId": "bn-228-locative-uses-of-the-ablative",
-  "questions": [
+   },
    {
     "prompt": "Ariovistus kept his infantry in camp.",
     "answer": "Ariovistus exercitum castrīs continuit.",
@@ -1404,7 +1301,13 @@
      "work": "In Verrem",
      "locus": "4, 25"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q6",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
    {
     "prompt": "Not only in the Punic wars of yore, but also in the present swarm of pirates.",
     "answer": "nōn modo illīs Pūnicīs bellīs, sed etiam hāc praedōnum multitūdine.",
@@ -1442,13 +1345,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "5, 54, 2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-228-locative-uses-of-the-ablative-q8",
-  "sectionId": "bn-228-locative-uses-of-the-ablative",
-  "questions": [
+   },
    {
     "prompt": "The job is finished up in a few days.",
     "answer": "paucīs diēbus opus efficitur.",
@@ -1481,7 +1378,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "6, 35, 8"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-228-locative-uses-of-the-ablative-q7",
+  "sectionId": "bn-228-locative-uses-of-the-ablative",
+  "questions": [
    {
     "prompt": "Arriving at Vellaunodunum, a town of the Senons, in two days time he invested it.",
     "answer": "cum ad oppidum Senonum Vellaunodūnum vēnisset, id bīduō circumvāllāvit.",
@@ -1522,6 +1425,22 @@
      "author": "Cicero",
      "work": "Pro Sexto Roscio Amerino",
      "locus": "20"
+    }
+   },
+   {
+    "prompt": "They went on and on all night without interruption.",
+    "answer": "tōtā nocte continenter iērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tōtā",
+     "nocte",
+     "continenter",
+     "iērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 26, 5"
     }
    }
   ]

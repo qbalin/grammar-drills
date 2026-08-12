@@ -1601,63 +1601,6 @@
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
    {
-    "prompt": "As a field, however fertile, cannot be fruitful without cultivation, so neither can the mind without teaching.",
-    "answer": "Ut ager, quamvīs fertilis, sine cultūrā frūctuōsus esse nōn potest, sīc sine doctrīnā animus.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ut",
-     "ager",
-     "quamvīs",
-     "fertilis",
-     "sine",
-     "cultūrā",
-     "frūctuōsus",
-     "esse",
-     "nōn",
-     "potest",
-     "sīc",
-     "sine",
-     "doctrīnā",
-     "animus"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "2.13"
-    }
-   },
-   {
-    "prompt": "But even if that were bearing down on me most heavily, still I have always been of this mind: to count the odium won by valor as glory, not as odium.",
-    "answer": "Quod sī ea mihi māximē impendēret, tamen hōc animō fuī semper: ut invidiam virtūte partam glōriam, nōn invidiam putārem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quod",
-     "sī",
-     "ea",
-     "mihi",
-     "māximē",
-     "impendēret",
-     "tamen",
-     "hōc",
-     "animō",
-     "fuī",
-     "semper",
-     "ut",
-     "invidiam",
-     "virtūte",
-     "partam",
-     "glōriam",
-     "nōn",
-     "invidiam",
-     "putārem"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam orationes",
-     "locus": "1.29"
-    }
-   },
-   {
     "prompt": "If you wish to be loved, love.",
     "answer": "Sī vīs amārī, amā.",
     "kind": "translate-en-la",
@@ -1671,386 +1614,6 @@
      "author": "Seneca Minor",
      "work": "Epistulae morales ad Lucilium",
      "locus": "9.6"
-    }
-   },
-   {
-    "prompt": "Above all he alone had saved the Capitol and the supreme power in it from the Gauls, if he had not saved it for his own kingship.",
-    "answer": "Super omnia Capitōlium summamque rem in eō sōlus ā Gallīs servāverat, sī nōn regnō suō servasset.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Super",
-     "omnia",
-     "Capitōlium",
-     "summamque",
-     "rem",
-     "in",
-     "eō",
-     "sōlus",
-     "ā",
-     "Gallīs",
-     "servāverat",
-     "sī",
-     "nōn",
-     "regnō",
-     "suō",
-     "servasset"
-    ],
-    "source": {
-     "author": "Plinius Maior",
-     "work": "Naturalis Historia",
-     "locus": "7.29.103"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q2",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "They set out either of their own will or because of the fine of the law; and if they had been willing to bear this fine, they could have remained in the state.",
-    "answer": "Aut suā voluntāte aut lēgis multā profectī sunt; quam multam sī sufferre voluissent, manēre in cīvitāte potuissent.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Aut",
-     "suā",
-     "voluntāte",
-     "aut",
-     "lēgis",
-     "multā",
-     "profectī",
-     "sunt",
-     "quam",
-     "multam",
-     "sī",
-     "sufferre",
-     "voluissent",
-     "manēre",
-     "in",
-     "cīvitāte",
-     "potuissent"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Caecina",
-     "locus": "30.98"
-    }
-   },
-   {
-    "prompt": "If your parents feared and hated you, and you could not appease them by any means, you would, I suppose, withdraw somewhere out of their sight.",
-    "answer": "Sī tē parentēs timērent atque ōdissent tuī neque eōs ūllā ratiōne plācāre possēs, ut opīnor, ab eōrum oculīs aliquō concēderēs.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "tē",
-     "parentēs",
-     "timērent",
-     "atque",
-     "ōdissent",
-     "tuī",
-     "neque",
-     "eōs",
-     "ūllā",
-     "ratiōne",
-     "plācāre",
-     "possēs",
-     "ut",
-     "opīnor",
-     "ab",
-     "eōrum",
-     "oculīs",
-     "aliquō",
-     "concēderēs"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam orationes",
-     "locus": "1.17"
-    }
-   },
-   {
-    "prompt": "You ask me, whether into exile? I do not order it, but, if you consult me, I advise it.",
-    "answer": "Interrogās mē, num in exilium? Nōn iubeō, sed, sī mē cōnsulis, suādeō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Interrogās",
-     "mē",
-     "num",
-     "in",
-     "exilium",
-     "Nōn",
-     "iubeō",
-     "sed",
-     "sī",
-     "mē",
-     "cōnsulis",
-     "suādeō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam orationes",
-     "locus": "1.13"
-    }
-   },
-   {
-    "prompt": "If your country should speak thus with you, as I have said, ought it not to prevail, even if it could not employ force?",
-    "answer": "Haec sī tēcum, ita ut dīxī, patria loquātur, nōnne impetrāre dēbeat, etiamsī vim adhibēre nōn possit?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Haec",
-     "sī",
-     "tēcum",
-     "ita",
-     "ut",
-     "dīxī",
-     "patria",
-     "loquātur",
-     "nōnne",
-     "impetrāre",
-     "dēbeat",
-     "etiamsī",
-     "vim",
-     "adhibēre",
-     "nōn",
-     "possit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam orationes",
-     "locus": "1.19"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q3",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "On this condition is old age honorable, if it defends itself.",
-    "answer": "Ita enim senectūs honesta est, sī sē ipsa dēfendit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ita",
-     "enim",
-     "senectūs",
-     "honesta",
-     "est",
-     "sī",
-     "sē",
-     "ipsa",
-     "dēfendit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "38"
-    }
-   },
-   {
-    "prompt": "If you and the army are well, it is well.",
-    "answer": "Sī tū exercitusque valētis, bene est.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "tū",
-     "exercitusque",
-     "valētis",
-     "bene",
-     "est"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "5.2"
-    }
-   },
-   {
-    "prompt": "This, then, if you are at Rome; but if you are away—or even if you are there—these matters are as follows.",
-    "answer": "Haec igitur, sī Rōmae es; sīn abes, aut etiam sī ades, haec negōtia sīc sē habent.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Haec",
-     "igitur",
-     "sī",
-     "Rōmae",
-     "es",
-     "sīn",
-     "abes",
-     "aut",
-     "etiam",
-     "sī",
-     "ades",
-     "haec",
-     "negōtia",
-     "sīc",
-     "sē",
-     "habent"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "5.18"
-    }
-   },
-   {
-    "prompt": "If any have shown themselves of great genius in that department, they have failed to compete with the glory of the Greeks.",
-    "answer": "Sī quī māgnīs in eō genere exstitērunt, nōn satis Graecōrum glōriae respondērunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "quī",
-     "māgnīs",
-     "in",
-     "eō",
-     "genere",
-     "exstitērunt",
-     "nōn",
-     "satis",
-     "Graecōrum",
-     "glōriae",
-     "respondērunt"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "1.3"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q4",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "I have received from Rome a bundle of letters without any from you, which, provided you have been well and at Rome, I take to be the fault of Philotimus, not yours.",
-    "answer": "Accēpī Rōmā sine epistulā tuā fasciculum litterārum in quō, sī modo valuistī et Rōmae fuistī, Philotīmī dūcō esse culpam nōn tuam.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Accēpī",
-     "Rōmā",
-     "sine",
-     "epistulā",
-     "tuā",
-     "fasciculum",
-     "litterārum",
-     "in",
-     "quō",
-     "sī",
-     "modo",
-     "valuistī",
-     "et",
-     "Rōmae",
-     "fuistī",
-     "Philotīmī",
-     "dūcō",
-     "esse",
-     "culpam",
-     "nōn",
-     "tuam"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "5.17"
-    }
-   },
-   {
-    "prompt": "If no one has succeeded in obtaining it, my request is presumptuous.",
-    "answer": "Sī nēmō impetrāvit, adroganter rogō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "nēmō",
-     "impetrāvit",
-     "adroganter",
-     "rogō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Ligario",
-     "locus": "30"
-    }
-   },
-   {
-    "prompt": "If you do not yet see clearly, recollect.",
-    "answer": "Sī nōndum satis cernitis, recordāminī.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "nōndum",
-     "satis",
-     "cernitis",
-     "recordāminī"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Milone",
-     "locus": "61"
-    }
-   },
-   {
-    "prompt": "If you have any trustworthy information, I should like to know it.",
-    "answer": "Sī quid habēs certius, velim scīre.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "quid",
-     "habēs",
-     "certius",
-     "velim",
-     "scīre"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "4.10"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q5",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "If you will read or hear, you will find.",
-    "answer": "Quod sī legere aut audīre volētis, . . . reperiētis.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quod",
-     "sī",
-     "legere",
-     "aut",
-     "audīre",
-     "volētis",
-     "reperiētis"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "20"
-    }
-   },
-   {
-    "prompt": "If your country should thus speak with you, ought she not to prevail?",
-    "answer": "Haec sī tēcum patria loquātur, nōnne impetrāre dēbeat?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Haec",
-     "sī",
-     "tēcum",
-     "patria",
-     "loquātur",
-     "nōnne",
-     "impetrāre",
-     "dēbeat"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam",
-     "locus": "1.19"
     }
    },
    {
@@ -2069,32 +1632,6 @@
      "locus": "2.44"
     }
    },
-   {
-    "prompt": "But if I do not come when I can, he will be unfriendly.",
-    "answer": "Sīn cum potuerō nōn vēnerō, tum erit inimīcus.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sīn",
-     "cum",
-     "potuerō",
-     "nōn",
-     "vēnerō",
-     "tum",
-     "erit",
-     "inimīcus"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "9.2 A.2"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q6",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
    {
     "prompt": "If I should be deserted by the circle of listeners, I should not be able to speak.",
     "answer": "Sī ā corōnā relictus sim, nōn queam dīcere.",
@@ -2116,96 +1653,6 @@
     }
    },
    {
-    "prompt": "Me a great favor, if you receive this young man with your usual courtesy.",
-    "answer": "Vehementer mihi grātum fēceris, sī hunc adulēscentem hūmānitāte tuā comprehenderis.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Vehementer",
-     "mihi",
-     "grātum",
-     "fēceris",
-     "sī",
-     "hunc",
-     "adulēscentem",
-     "hūmānitāte",
-     "tuā",
-     "comprehenderis"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "13.15"
-    }
-   },
-   {
-    "prompt": "Another limit must be set, if I first state what Scipio was wont most to find fault with.",
-    "answer": "Alius fīnis cōnstituendus est, sī prius quid maximē reprehendere Scīpiō solitus sit dīxerō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Alius",
-     "fīnis",
-     "cōnstituendus",
-     "est",
-     "sī",
-     "prius",
-     "quid",
-     "maximē",
-     "reprehendere",
-     "Scīpiō",
-     "solitus",
-     "sit",
-     "dīxerō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Laelius de Amicitia",
-     "locus": "59"
-    }
-   },
-   {
-    "prompt": "If fate cuts me off too soon, do you remember that I ordered this.",
-    "answer": "Sī mē praecēperit fātum, vōs mandāsse mementō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "mē",
-     "praecēperit",
-     "fātum",
-     "vōs",
-     "mandāsse",
-     "mementō"
-    ],
-    "source": {
-     "author": "Curtius Rufus",
-     "work": "Historiae Alexandri Magni",
-     "locus": "9.6.26"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q7",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "I cannot accuse him, if I should desire.",
-    "answer": "Nōn possum istum accūsāre, sī cupiam.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Nōn",
-     "possum",
-     "istum",
-     "accūsāre",
-     "sī",
-     "cupiam"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "4.87"
-    }
-   },
-   {
     "prompt": "If this is well fixed in your minds, you have conquered. you will have conquered.",
     "answer": "Sī hōc bene fīxum in animō est, vīcistis.",
     "kind": "translate-en-la",
@@ -2224,7 +1671,13 @@
      "work": "Ab Urbe Condita",
      "locus": "21.44"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q2",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "He was not able, unless he wished to fight.",
     "answer": "Nōn poterat, nisi dēcertāre vellet.",
@@ -2243,123 +1696,6 @@
     }
    },
    {
-    "prompt": "Unless had lost it, I should not have recovered it.",
-    "answer": "Nisi tū āmīsissēs, numquam recēpissem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Nisi",
-     "tū",
-     "āmīsissēs",
-     "numquam",
-     "recēpissem"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "11"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q8",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "If my judgment had prevailed you would this day be a beggar, and the republic would not have lost so many leaders.",
-    "answer": "Sī meum cōnsilium valuisset, tū hodiē egērēs, rēs pūblica nōn tot ducēs āmīsisse.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "meum",
-     "cōnsilium",
-     "valuisset",
-     "tū",
-     "hodiē",
-     "egērēs",
-     "rēs",
-     "pūblica",
-     "nōn",
-     "tot",
-     "ducēs",
-     "āmīsisse"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Philippicae",
-     "locus": "2.37"
-    }
-   },
-   {
-    "prompt": "If they had not been helped at all by literature, they never would have given their attention to the study of it.",
-    "answer": "Sī nihil litterīs adiuvārentur, numquam sē ad eārum studium contulissent.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "nihil",
-     "litterīs",
-     "adiuvārentur",
-     "numquam",
-     "sē",
-     "ad",
-     "eārum",
-     "studium",
-     "contulissent"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Archia",
-     "locus": "16"
-    }
-   },
-   {
-    "prompt": "If he were of sane mind, would he have dared to lead out the army?",
-    "answer": "Hīc sī mentis esset suae, ausus esset ēdūcere exercitum?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Hīc",
-     "sī",
-     "mentis",
-     "esset",
-     "suae",
-     "ausus",
-     "esset",
-     "ēdūcere",
-     "exercitum"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Pisonem",
-     "locus": "50"
-    }
-   },
-   {
-    "prompt": "Would not have fallen, unless that station had been open to our fleets.",
-    "answer": "Nōn concidissent, nisi illud receptāculum classibus nostrīs patēret.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Nōn",
-     "concidissent",
-     "nisi",
-     "illud",
-     "receptāculum",
-     "classibus",
-     "nostrīs",
-     "patēret"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "2.3"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q9",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
     "prompt": "He could not have become a sage, if he had not been born.",
     "answer": "Nōn potuit fierī sapiēns, nisi nātus esset.",
     "kind": "translate-en-la",
@@ -2376,99 +1712,6 @@
      "author": "Cicero",
      "work": "De Finibus Bonorum et Malorum",
      "locus": "2.103"
-    }
-   },
-   {
-    "prompt": "If he were at this time a private citizen, yet he ought to be appointed.",
-    "answer": "Sī prīvātus esset hōc tempore, tamen is erat dēligendus.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "prīvātus",
-     "esset",
-     "hōc",
-     "tempore",
-     "tamen",
-     "is",
-     "erat",
-     "dēligendus"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Lege Manilia",
-     "locus": "50"
-    }
-   },
-   {
-    "prompt": "They would have abandoned their fields, if Metellus had not sent them a letter.",
-    "answer": "Relictūrī agrōs erant, nisi ad eōs Metellus litterās mīsisset.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Relictūrī",
-     "agrōs",
-     "erant",
-     "nisi",
-     "ad",
-     "eōs",
-     "Metellus",
-     "litterās",
-     "mīsisset"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "3.121"
-    }
-   },
-   {
-    "prompt": "So far advanced was the conspiracy that they would have seized upon Otho, had they not feared the hazards of the night.",
-    "answer": "Adeō parāta sēditiō fuit ut Othōnem raptūrī fuerint, nī incerta noctis timuissent.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Adeō",
-     "parāta",
-     "sēditiō",
-     "fuit",
-     "ut",
-     "Othōnem",
-     "raptūrī",
-     "fuerint",
-     "nī",
-     "incerta",
-     "noctis",
-     "timuissent"
-    ],
-    "source": {
-     "author": "Tacitus",
-     "work": "Historiae",
-     "locus": "1.26"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q10",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "Glory necessarily follows virtue, even if that is not one's aim.",
-    "answer": "Virtūtem necessāriō glōria, etiamsī tū id nōn agās, cōnsequitur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Virtūtem",
-     "necessāriō",
-     "glōria",
-     "etiamsī",
-     "tū",
-     "id",
-     "nōn",
-     "agās",
-     "cōnsequitur"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "1.91"
     }
    },
    {
@@ -2494,27 +1737,6 @@
     }
    },
    {
-    "prompt": "If they mark any infirm in any part of their limbs, they order them to be put to death.",
-    "answer": "Sī quōs aliquā parte membrōrum inūtilīs nōtāvērunt, necārī iubent.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "quōs",
-     "aliquā",
-     "parte",
-     "membrōrum",
-     "inūtilīs",
-     "nōtāvērunt",
-     "necārī",
-     "iubent"
-    ],
-    "source": {
-     "author": "Curtius Rufus",
-     "work": "Historiae Alexandri Magni",
-     "locus": "9.1.25"
-    }
-   },
-   {
     "prompt": "If any was arrested by his master, he was rescued by a mob of soldiers.",
     "answer": "Sī quis ā dominō prehenderētur, concursū mīlitum ēripiēbātur.",
     "kind": "translate-en-la",
@@ -2537,7 +1759,7 @@
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q11",
+  "id": "bn-301-conditional-sentences-q3",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
    {
@@ -2556,112 +1778,6 @@
      "author": "Tacitus",
      "work": "Annales",
      "locus": "6.30"
-    }
-   },
-   {
-    "prompt": "If any one appealed to a colleague, he came off in such case that he repented not having submitted to the decree of the former decemvir.",
-    "answer": "Sī quis collēgam appellāsset, ab eō ita discēdēbat ut paenitēret nōn priōris dēcrētō stetisse.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sī",
-     "quis",
-     "collēgam",
-     "appellāsset",
-     "ab",
-     "eō",
-     "ita",
-     "discēdēbat",
-     "ut",
-     "paenitēret",
-     "nōn",
-     "priōris",
-     "dēcrētō",
-     "stetisse"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "3.36.8"
-    }
-   },
-   {
-    "prompt": "He who sets a limit to faults, takes up the side of the faults.",
-    "answer": "Quī enim vitiīs modum adpōnit, is partem suscipit vitiōrum.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quī",
-     "enim",
-     "vitiīs",
-     "modum",
-     "adpōnit",
-     "is",
-     "partem",
-     "suscipit",
-     "vitiōrum"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "4.42"
-    }
-   },
-   {
-    "prompt": "Whoever is in the habit of lying, is accustomed to swear falsely.",
-    "answer": "Quī mentīrī solet, pēierāre cōnsuēvit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quī",
-     "mentīrī",
-     "solet",
-     "pēierāre",
-     "cōnsuēvit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Roscio Comoedo",
-     "locus": "46"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q12",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "Whatever power she had, she had by herself.",
-    "answer": "Quicquid potuit, potuit ipsa per sē.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quicquid",
-     "potuit",
-     "potuit",
-     "ipsa",
-     "per",
-     "sē"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Lege Agraria",
-     "locus": "1.20"
-    }
-   },
-   {
-    "prompt": "I should be glad whatever cause had brought you here.",
-    "answer": "Quaecumque vōs causa hūc attulisset, laetārer.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quaecumque",
-     "vōs",
-     "causa",
-     "hūc",
-     "attulisset",
-     "laetārer"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Oratore",
-     "locus": "2.15"
     }
    },
    {
@@ -2687,134 +1803,6 @@
     }
    },
    {
-    "prompt": "Whenever I come here, this very doing nothing delights me.",
-    "answer": "Cum hūc vēnī, hōc ipsum nihil agere mē dēlectat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Cum",
-     "hūc",
-     "vēnī",
-     "hōc",
-     "ipsum",
-     "nihil",
-     "agere",
-     "mē",
-     "dēlectat"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Oratore",
-     "locus": "2.24"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q13",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "Whenever he saw a rose, then he thought spring was beginning.",
-    "answer": "Cum rosam vīderat, tum incipere vēr arbitrābātur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Cum",
-     "rosam",
-     "vīderat",
-     "tum",
-     "incipere",
-     "vēr",
-     "arbitrābātur"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "5.27"
-    }
-   },
-   {
-    "prompt": "Wherever the weakness of the timber seemed to require, piles were put between.",
-    "answer": "Ubi imbēcillitās māteriae postulāre vidērētur, pīlae interpōnuntur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ubi",
-     "imbēcillitās",
-     "māteriae",
-     "postulāre",
-     "vidērētur",
-     "pīlae",
-     "interpōnuntur"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Civili",
-     "locus": "2.16"
-    }
-   },
-   {
-    "prompt": "Wherever he advanced, he carried victory with him.",
-    "answer": "Quōcumque sē intulisset, victōriam sēcum trahēbat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quōcumque",
-     "sē",
-     "intulisset",
-     "victōriam",
-     "sēcum",
-     "trahēbat"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "6.8"
-    }
-   },
-   {
-    "prompt": "It would not have come into my mind unless reminded.",
-    "answer": "Nōn mihi, nisi admonitō, vēnisset in mentem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Nōn",
-     "mihi",
-     "nisi",
-     "admonitō",
-     "vēnisset",
-     "in",
-     "mentem"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Oratore",
-     "locus": "2.180"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q14",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "What harm will the mangling by wild beasts do me if I don't feel anything?",
-    "answer": "Quid igitur mihi ferārum laniātus oberit nihil sentientī.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Quid",
-     "igitur",
-     "mihi",
-     "ferārum",
-     "laniātus",
-     "oberit",
-     "nihil",
-     "sentientī"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "1.104"
-    }
-   },
-   {
     "prompt": "How much better would it have been if the promise had not been kept!",
     "answer": "Quantō melius fuerat prōmissum nōn esse servātum!",
     "kind": "translate-en-la",
@@ -2834,216 +1822,6 @@
     }
    },
    {
-    "prompt": "But it would be more equitable if Triarius passed judgment on our dispute.",
-    "answer": "Sed erat aequius Triārium aliquid dē dissēnsiōne nostrā iūdicāre.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Sed",
-     "erat",
-     "aequius",
-     "Triārium",
-     "aliquid",
-     "dē",
-     "dissēnsiōne",
-     "nostrā",
-     "iūdicāre"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Finibus Bonorum et Malorum",
-     "locus": "2.119"
-    }
-   },
-   {
-    "prompt": "I wish I had been he would not now be troubling us.",
-    "answer": "Utinam quidem fuissem! Molestus nōbīs nōn esset.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Utinam",
-     "quidem",
-     "fuissem",
-     "Molestus",
-     "nōbīs",
-     "nōn",
-     "esset"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "12.3"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q15",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "For ask Aristo, he would deny.",
-    "answer": "Rogēs enim Aristōnem, neget.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Rogēs",
-     "enim",
-     "Aristōnem",
-     "neget"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Finibus Bonorum et Malorum",
-     "locus": "4.69"
-    }
-   },
-   {
-    "prompt": "Old men keep their mental powers, only let them keep their zeal and diligence.",
-    "answer": "Manent ingenia senibus, modo permaneat studium et industria.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Manent",
-     "ingenia",
-     "senibus",
-     "modo",
-     "permaneat",
-     "studium",
-     "et",
-     "industria"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "22"
-    }
-   },
-   {
-    "prompt": "Remove this notion, and you will have done away with grief.",
-    "answer": "Tolle hanc opīniōnem, lūctum sustuleris.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Tolle",
-     "hanc",
-     "opīniōnem",
-     "lūctum",
-     "sustuleris"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "1.30"
-    }
-   },
-   {
-    "prompt": "Even if Plato gave no reasons, he would overpower me by his mere authority.",
-    "answer": "Ut enim ratiōnem Platō nūllam adferret, ipsā auctōritāte mē frangeret.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ut",
-     "enim",
-     "ratiōnem",
-     "Platō",
-     "nūllam",
-     "adferret",
-     "ipsā",
-     "auctōritāte",
-     "mē",
-     "frangeret"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "1.49"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q16",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "Sextilius might have denied with impunity; for who would prove him wrong.",
-    "answer": "Poterat Sextilius impūne negāre: quis enim redargueret?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Poterat",
-     "Sextilius",
-     "impūne",
-     "negāre",
-     "quis",
-     "enim",
-     "redargueret"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Finibus Bonorum et Malorum",
-     "locus": "2.55"
-    }
-   },
-   {
-    "prompt": "For it were fitting for us to mourn the house where a man has been born.",
-    "answer": "Nam nōs decēbat domum lūgēre ubi esset aliquis in lūcem ēditus.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Nam",
-     "nōs",
-     "decēbat",
-     "domum",
-     "lūgēre",
-     "ubi",
-     "esset",
-     "aliquis",
-     "in",
-     "lūcem",
-     "ēditus"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "1.115"
-    }
-   },
-   {
-    "prompt": "It would be more fitting to yield each one his rights.",
-    "answer": "Illud erat aptius, aequum cuique concēdere.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Illud",
-     "erat",
-     "aptius",
-     "aequum",
-     "cuique",
-     "concēdere"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Finibus Bonorum et Malorum",
-     "locus": "4.2"
-    }
-   },
-   {
-    "prompt": "Would it have been a great matter to wait for the man himself?",
-    "answer": "Ipsum enim exspectāre māgnum fuit?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ipsum",
-     "enim",
-     "exspectāre",
-     "māgnum",
-     "fuit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Philippicae",
-     "locus": "2.103"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q17",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
     "prompt": "You do exactly as if you asked me.",
     "answer": "Similiter facis ac sī mē rogēs.",
     "kind": "translate-en-la",
@@ -3060,25 +1838,13 @@
      "work": "De Natura Deorum",
      "locus": "3.8"
     }
-   },
-   {
-    "prompt": "They dreaded his cruelty as if he were present in person.",
-    "answer": "Crūdēlitātem horrērent velut sī cōram adesset.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Crūdēlitātem",
-     "horrērent",
-     "velut",
-     "sī",
-     "cōram",
-     "adesset"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "1.32"
-    }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q4",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "You seemed to be absent from me more than if you were at home.",
     "answer": "Magis ā mē abesse vidēbāre quam sī domī essēs.",
@@ -3101,371 +1867,6 @@
     }
    },
    {
-    "prompt": "I entreat you as much as if it were my own business.",
-    "answer": "Aequē ā tē petō ac sī mea negōtia essent.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Aequē",
-     "ā",
-     "tē",
-     "petō",
-     "ac",
-     "sī",
-     "mea",
-     "negōtia",
-     "essent"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "13.43"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q18",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "For I enjoy myself most in that place, whether I am thinking by myself, or am either writing or reading.",
-    "answer": "Nam illō locō libentissimē soleō ūtī, sīve quid mēcum ipse cōgitō, sīve quid scrībō aut legō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Nam",
-     "illō",
-     "locō",
-     "libentissimē",
-     "soleō",
-     "ūtī",
-     "sīve",
-     "quid",
-     "mēcum",
-     "ipse",
-     "cōgitō",
-     "sīve",
-     "quid",
-     "scrībō",
-     "aut",
-     "legō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Legibus",
-     "locus": "2.1"
-    }
-   },
-   {
-    "prompt": "For even if you do not accomplish what you wish, still you will prove that death is not an evil.",
-    "answer": "Ut enim nōn efficiās quod vīs, tamen mors ut malum nōn sit efficiēs.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ut",
-     "enim",
-     "nōn",
-     "efficiās",
-     "quod",
-     "vīs",
-     "tamen",
-     "mors",
-     "ut",
-     "malum",
-     "nōn",
-     "sit",
-     "efficiēs"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "1.16"
-    }
-   },
-   {
-    "prompt": "Even if you had taken away nothing else, you ought to have been satisfied.",
-    "answer": "Etsī nihil aliud abstulissētis, tamen contentōs vōs esse oportēbat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Etsī",
-     "nihil",
-     "aliud",
-     "abstulissētis",
-     "tamen",
-     "contentōs",
-     "vōs",
-     "esse",
-     "oportēbat"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sulla",
-     "locus": "90"
-    }
-   },
-   {
-    "prompt": "Even if you have nothing to write, still write.",
-    "answer": "Etiam sī quod scrībās nōn habēbis, scrībitō tamen.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Etiam",
-     "sī",
-     "quod",
-     "scrībās",
-     "nōn",
-     "habēbis",
-     "scrībitō",
-     "tamen"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "16.26"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q19",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "As for me, even if I had private quarrels with Caesar, it would still be my duty to serve the best interests of the state at this crisis.",
-    "answer": "Ego, sī essent inimīcitiae mihi cum C. Caesare, tamen hōc tempore reī pūblicae cōnsulere . . . dēbērem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ego",
-     "sī",
-     "essent",
-     "inimīcitiae",
-     "mihi",
-     "cum",
-     "C",
-     "Caesare",
-     "tamen",
-     "hōc",
-     "tempore",
-     "reī",
-     "pūblicae",
-     "cōnsulere",
-     "dēbērem"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Provinciis Consularibus",
-     "locus": "47"
-    }
-   },
-   {
-    "prompt": "Suppose you could have been mistaken, who does not see that you cannot have been deceived in this way?",
-    "answer": "Vērum ut errāre potuistī, sīc dēcipī tē nōn potuisse quis nōn videt?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Vērum",
-     "ut",
-     "errāre",
-     "potuistī",
-     "sīc",
-     "dēcipī",
-     "tē",
-     "nōn",
-     "potuisse",
-     "quis",
-     "nōn",
-     "videt"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "10.20.2"
-    }
-   },
-   {
-    "prompt": "Let him do this often, provided he does not get tired.",
-    "answer": "Id faciat saepe, dum nē lassus fīat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Id",
-     "faciat",
-     "saepe",
-     "dum",
-     "nē",
-     "lassus",
-     "fīat"
-    ],
-    "source": {
-     "author": "Marcus Porcius Cato",
-     "work": "De Agri Cultura",
-     "locus": "5.4"
-    }
-   },
-   {
-    "prompt": "The terms were approved, but only on condition that he should withdraw the garrisons.",
-    "answer": "Probāta condiciō est, sed ita ut ille praesidia dēdūceret.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Probāta",
-     "condiciō",
-     "est",
-     "sed",
-     "ita",
-     "ut",
-     "ille",
-     "praesidia",
-     "dēdūceret"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "7.14.1"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q20",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "When he had said this, he would cast the spear into their territories.",
-    "answer": "Id ubi dīxisset, hastam in fīnīs eōrum ēmittēbat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Id",
-     "ubi",
-     "dīxisset",
-     "hastam",
-     "in",
-     "fīnīs",
-     "eōrum",
-     "ēmittēbat"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "1.32.13"
-    }
-   },
-   {
-    "prompt": "A man has a daughter, he needs money.",
-    "answer": "fīliam quis habet, pecūniā opus est.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "fīliam",
-     "quis",
-     "habet",
-     "pecūniā",
-     "opus",
-     "est"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Paradoxa Stoicorum",
-     "locus": "44"
-    }
-   },
-   {
-    "prompt": "Cut off an athlete from his food just a day, he will pray to Jupiter aloft in Olympus.",
-    "answer": "subdūc cibum ūnum diem āthlētae, Iovem Olympium inplōrābit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "subdūc",
-     "cibum",
-     "ūnum",
-     "diem",
-     "āthlētae",
-     "Iovem",
-     "Olympium",
-     "inplōrābit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "2, 40"
-    }
-   },
-   {
-    "prompt": "You may ask Zeno, he would answer in just as many words.",
-    "answer": "Zēnōnem rogēs, respondeat totidem verbīs.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Zēnōnem",
-     "rogēs",
-     "respondeat",
-     "totidem",
-     "verbīs"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Finibus Bonorum et Malorum",
-     "locus": "4, 69"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q21",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "But had you given this chance to Crassus, he would have capered in the market place.",
-    "answer": "at darēs hanc vim M. Crassō, in forō saltāret.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "at",
-     "darēs",
-     "hanc",
-     "vim",
-     "M",
-     "Crassō",
-     "in",
-     "forō",
-     "saltāret"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Officiis",
-     "locus": "3, 75"
-    }
-   },
-   {
-    "prompt": "Had we been together, we certainly should not have lacked a programme.",
-    "answer": "ūnā fuissēmus, cōnsilium certē nōn dēfuisset.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "ūnā",
-     "fuissēmus",
-     "cōnsilium",
-     "certē",
-     "nōn",
-     "dēfuisset"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "9, 6, 6"
-    }
-   },
-   {
-    "prompt": "And if he does not do this, he never has any ascendancy at all over his people.",
-    "answer": "neque aliter sī faciat, ūllam inter suōs habet auctōritātem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "neque",
-     "aliter",
-     "sī",
-     "faciat",
-     "ūllam",
-     "inter",
-     "suōs",
-     "habet",
-     "auctōritātem"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "6, 11, 4"
-    }
-   },
-   {
     "prompt": "Every man the lictor arrested, a tribune would order released.",
     "answer": "quemcumque līctor prēndisset, tribūnus mittī iubēbat.",
     "kind": "translate-en-la",
@@ -3481,123 +1882,6 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "3, 11, 2"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q22",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "Whatsoever is blessed, has no trouble and makes none to anybody.",
-    "answer": "quod beātum est, nec habet nec exhibet cuiquam negōtium.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quod",
-     "beātum",
-     "est",
-     "nec",
-     "habet",
-     "nec",
-     "exhibet",
-     "cuiquam",
-     "negōtium"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Natura Deorum",
-     "locus": "1, 85"
-    }
-   },
-   {
-    "prompt": "Whoso should see this would be forced, wouldn’t he? to admit the existence of gods.",
-    "answer": "haec quī videat, nōnne cōgātur cōnfitērī deōs esse.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "haec",
-     "quī",
-     "videat",
-     "nōnne",
-     "cōgātur",
-     "cōnfitērī",
-     "deōs",
-     "esse"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Natura Deorum",
-     "locus": "2, 12"
-    }
-   },
-   {
-    "prompt": "Though they are staggering under debt, they yet look forward to being lords and masters.",
-    "answer": "quamquam premuntur aere aliēnō, dominātiōnem tamen exspectant.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quamquam",
-     "premuntur",
-     "aere",
-     "aliēnō",
-     "dominātiōnem",
-     "tamen",
-     "exspectant"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam",
-     "locus": "2, 19"
-    }
-   },
-   {
-    "prompt": "Though the bold attempt did not attain its purpose, yet it was not altogether fruitless.",
-    "answer": "quamquam nōn vēnit ad fīnem tam audāx inceptum, tamen haud omnīnō vānum fuit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quamquam",
-     "nōn",
-     "vēnit",
-     "ad",
-     "fīnem",
-     "tam",
-     "audāx",
-     "inceptum",
-     "tamen",
-     "haud",
-     "omnīnō",
-     "vānum",
-     "fuit"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "10, 32, 5"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q23",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "Germanicus did not delay, though he was aware this was all made up.",
-    "answer": "haud cunctātus est Germānicus, quamquam fingī ea intellegeret.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "haud",
-     "cunctātus",
-     "est",
-     "Germānicus",
-     "quamquam",
-     "fingī",
-     "ea",
-     "intellegeret"
-    ],
-    "source": {
-     "author": "Tacitus",
-     "work": "Annales",
-     "locus": "2, 26"
     }
    },
    {
@@ -3615,133 +1899,6 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "31, 41, 7"
-    }
-   },
-   {
-    "prompt": "Aquitania, though bound by the oath of allegiance to Otho, did not hold out long either.",
-    "answer": "nē Aquītānia quidem, quamquam in verba Othōnis obstricta, diū mānsit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "nē",
-     "Aquītānia",
-     "quidem",
-     "quamquam",
-     "in",
-     "verba",
-     "Othōnis",
-     "obstricta",
-     "diū",
-     "mānsit"
-    ],
-    "source": {
-     "author": "Tacitus",
-     "work": "Historiae",
-     "locus": "1, 76"
-    }
-   },
-   {
-    "prompt": "If a thing is base, let it be hidden as much as you will, yet it cannot be made respectable.",
-    "answer": "quod turpe est, id quam vīs occultētur, tamen honestum fierī nūllō modō potest.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quod",
-     "turpe",
-     "est",
-     "id",
-     "quam",
-     "vīs",
-     "occultētur",
-     "tamen",
-     "honestum",
-     "fierī",
-     "nūllō",
-     "modō",
-     "potest"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Officiis",
-     "locus": "3, 78"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q24",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "Besides these you may tell off as many as you please, you will still find some dangerous tribunes.",
-    "answer": "praeter eōs quam vīs ēnumerēs multōs licet, nōnnūllōs reperiēs perniciōsōs tribūnōs.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "praeter",
-     "eōs",
-     "quam",
-     "vīs",
-     "ēnumerēs",
-     "multōs",
-     "licet",
-     "nōnnūllōs",
-     "reperiēs",
-     "perniciōsōs",
-     "tribūnōs"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Legibus",
-     "locus": "3, 24"
-    }
-   },
-   {
-    "prompt": "Epicurus may joke and say he can’t understand it as much as he likes, he will never shake me.",
-    "answer": "quam volet Epicūrus iocētur et dīcat sē nōn posse intellegere, numquam mē movēbit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quam",
-     "volet",
-     "Epicūrus",
-     "iocētur",
-     "et",
-     "dīcat",
-     "sē",
-     "nōn",
-     "posse",
-     "intellegere",
-     "numquam",
-     "mē",
-     "movēbit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Natura Deorum",
-     "locus": "2, 46"
-    }
-   },
-   {
-    "prompt": "Though there may be men who hate Carbo, still these men ought to consider what they have to fear.",
-    "answer": "quamvīs sint hominēs quī Cn. Carbōnem ōderint, tamen hī dēbent quid metuendum sit cōgitāre.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quamvīs",
-     "sint",
-     "hominēs",
-     "quī",
-     "Cn",
-     "Carbōnem",
-     "ōderint",
-     "tamen",
-     "hī",
-     "dēbent",
-     "quid",
-     "metuendum",
-     "sit",
-     "cōgitāre"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "1, 39"
     }
    },
    {
@@ -3764,57 +1921,9 @@
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q25",
+  "id": "bn-301-conditional-sentences-q5",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
-   {
-    "prompt": "Even though Epicurus really does speak in many places pretty heroically about pain, still we must not have an eye to what he says.",
-    "answer": "quamvīs enim multīs locīs dīcat Epicūrus, sīcutī dīcit, satis fortiter dē dolōre, tamen nōn id spectandum est quid dīcat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quamvīs",
-     "enim",
-     "multīs",
-     "locīs",
-     "dīcat",
-     "Epicūrus",
-     "sīcutī",
-     "dīcit",
-     "satis",
-     "fortiter",
-     "dē",
-     "dolōre",
-     "tamen",
-     "nōn",
-     "id",
-     "spectandum",
-     "est",
-     "quid",
-     "dīcat"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Officiis",
-     "locus": "3, 117"
-    }
-   },
-   {
-    "prompt": "He grew pale perceptibly, though he is always a pale man.",
-    "answer": "expalluit notābiliter, quamvīs palleat semper.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "expalluit",
-     "notābiliter",
-     "quamvīs",
-     "palleat",
-     "semper"
-    ],
-    "source": {
-     "author": "Plinius Minor",
-     "work": "Epistulae",
-     "locus": "1, 5, 13"
-    }
-   },
    {
     "prompt": "Sad he was, though he pretended to be gay.",
     "answer": "maestus erat, quamvīs laetitiam simulāret.",
@@ -3849,32 +1958,6 @@
      "work": "Vitae",
      "locus": "1, 2, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q26",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "But even supposing this be admitted, how can the rest be admitted?",
-    "answer": "sed ut haec concēdantur, reliqua quī concēdī possunt?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sed",
-     "ut",
-     "haec",
-     "concēdantur",
-     "reliqua",
-     "quī",
-     "concēdī",
-     "possunt"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Natura Deorum",
-     "locus": "3, 41"
-    }
    },
    {
     "prompt": "Grant that suffering is not the chiefest evil, an evil it assuredly is.",
@@ -3897,63 +1980,6 @@
     }
    },
    {
-    "prompt": "And even supposing everything turned out contrary to expectation, still they saw clearly that they had the advantage by sea.",
-    "answer": "ac iam ut omnia contrā opīniōnem acciderent, tamen sē plūrimum nāvibus posse perspiciēbant.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "ac",
-     "iam",
-     "ut",
-     "omnia",
-     "contrā",
-     "opīniōnem",
-     "acciderent",
-     "tamen",
-     "sē",
-     "plūrimum",
-     "nāvibus",
-     "posse",
-     "perspiciēbant"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "3, 9, 6"
-    }
-   },
-   {
-    "prompt": "For even supposing he had asked nobody but Patina, he might have known that a priest must be appointed.",
-    "answer": "ut enim nēminem alium nisi T. Patinam rogāsset, scīre potuit prōdī flāminem necesse esse.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "ut",
-     "enim",
-     "nēminem",
-     "alium",
-     "nisi",
-     "T",
-     "Patinam",
-     "rogāsset",
-     "scīre",
-     "potuit",
-     "prōdī",
-     "flāminem",
-     "necesse",
-     "esse"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Milone",
-     "locus": "46"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q27",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
     "prompt": "Mercy is to be commended, provided that strictness is employed.",
     "answer": "ita probanda est clēmentia, ut adhibeātur sevēritās.",
     "kind": "translate-en-la",
@@ -3971,85 +1997,11 @@
      "work": "De Officiis",
      "locus": "1, 88"
     }
-   },
-   {
-    "prompt": "They will pay respect enough to my memory, provided they consider me worthy of my ancestors.",
-    "answer": "satis memoriae meae tribuent, ut maiōribus meīs dignum crēdant.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "satis",
-     "memoriae",
-     "meae",
-     "tribuent",
-     "ut",
-     "maiōribus",
-     "meīs",
-     "dignum",
-     "crēdant"
-    ],
-    "source": {
-     "author": "Tacitus",
-     "work": "Annales",
-     "locus": "4, 38"
-    }
-   },
-   {
-    "prompt": "They made the request in behalf of a pitiable wretch, who would be only too glad to be put to the rack himself, so his father’s death might be investigated.",
-    "answer": "postulābant prō homine miserrimō, quī vel ipse sēsē in cruciātum darī cuperet, dum dē patris morte quaererētur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "postulābant",
-     "prō",
-     "homine",
-     "miserrimō",
-     "quī",
-     "vel",
-     "ipse",
-     "sēsē",
-     "in",
-     "cruciātum",
-     "darī",
-     "cuperet",
-     "dum",
-     "dē",
-     "patris",
-     "morte",
-     "quaererētur"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sexto Roscio Amerino",
-     "locus": "119"
-    }
-   },
-   {
-    "prompt": "Therefore, so a chance was given to fight hand to hand, they did not mind pitting one of their vessels against two of the enemy’s.",
-    "answer": "itaque dum locus comminus pugnandī darētur, aequō animō singulās bīnīs nāvibus obiciēbant.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "itaque",
-     "dum",
-     "locus",
-     "comminus",
-     "pugnandī",
-     "darētur",
-     "aequō",
-     "animō",
-     "singulās",
-     "bīnīs",
-     "nāvibus",
-     "obiciēbant"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Civili",
-     "locus": "1, 58, 4"
-    }
    }
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q28",
+  "id": "bn-301-conditional-sentences-q6",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
    {
@@ -4077,70 +2029,6 @@
     }
    },
    {
-    "prompt": "So you shall have time, so you will write something.",
-    "answer": "sīc scrībēs aliquid, sī vacābis.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sīc",
-     "scrībēs",
-     "aliquid",
-     "sī",
-     "vacābis"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "12, 38, 2"
-    }
-   },
-   {
-    "prompt": "If it is day, it is light.",
-    "answer": "sī diēs est, lūcet.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "diēs",
-     "est",
-     "lūcet"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Inventione",
-     "locus": "1, 86"
-    }
-   },
-   {
-    "prompt": "If night is always favourable for a sortie, and it always is, this particular hour of the night is surely the very best time.",
-    "answer": "sī nox opportūna est ēruptiōnī, sīcut est, haec profectō noctis aptissima hōra est.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "nox",
-     "opportūna",
-     "est",
-     "ēruptiōnī",
-     "sīcut",
-     "est",
-     "haec",
-     "profectō",
-     "noctis",
-     "aptissima",
-     "hōra",
-     "est"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "7, 35, 10"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q29",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
     "prompt": "If there are gods, they are kind to men.",
     "answer": "sī sunt dī, beneficī in hominēs sunt.",
     "kind": "translate-en-la",
@@ -4160,277 +2048,6 @@
     }
    },
    {
-    "prompt": "When this man dies, if there is any one of the rest superior in position, he always takes his place; or if there are several with equal claims, they have a contest about the supremacy.",
-    "answer": "hōc mortuō, aut sī quī ex reliquīs excellit dignitāte, succēdit, aut, sī sunt plūrēs parēs, dē prīncipātū contendunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "hōc",
-     "mortuō",
-     "aut",
-     "sī",
-     "quī",
-     "ex",
-     "reliquīs",
-     "excellit",
-     "dignitāte",
-     "succēdit",
-     "aut",
-     "sī",
-     "sunt",
-     "plūrēs",
-     "parēs",
-     "dē",
-     "prīncipātū",
-     "contendunt"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "6, 13, 9"
-    }
-   },
-   {
-    "prompt": "In the human body if there is anything likely to damage the rest of the body, we always allow it to be cauterized and cut.",
-    "answer": "in corpore sī quid eius modī est quod reliquō corporī noceat, id ūrī secārīque patimur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "in",
-     "corpore",
-     "sī",
-     "quid",
-     "eius",
-     "modī",
-     "est",
-     "quod",
-     "reliquō",
-     "corporī",
-     "noceat",
-     "id",
-     "ūrī",
-     "secārīque",
-     "patimur"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Philippicae",
-     "locus": "8, 15"
-    }
-   },
-   {
-    "prompt": "If a man’s pulse beats thus and so, he always has fever.",
-    "answer": "sī cui vēnae sīc moventur, is habet febrim.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "cui",
-     "vēnae",
-     "sīc",
-     "moventur",
-     "is",
-     "habet",
-     "febrim"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Fato",
-     "locus": "15"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q30",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "I shall compass all my ends, if I hurry; if I delay, I shall lose everything.",
-    "answer": "assequor omnia, sī properō; sī cunctor, āmittō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "assequor",
-     "omnia",
-     "sī",
-     "properō",
-     "sī",
-     "cunctor",
-     "āmittō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "10, 8, 5"
-    }
-   },
-   {
-    "prompt": "If men apply reason, the gift of the gods, to purposes of mischief, it would have been better it should not be given to the human race than given.",
-    "answer": "sī hominēs ratiōnem ā dīs datam in fraudem convertunt, nōn darī illam quam darī hūmānō generī melius fuit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "hominēs",
-     "ratiōnem",
-     "ā",
-     "dīs",
-     "datam",
-     "in",
-     "fraudem",
-     "convertunt",
-     "nōn",
-     "darī",
-     "illam",
-     "quam",
-     "darī",
-     "hūmānō",
-     "generī",
-     "melius",
-     "fuit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Natura Deorum",
-     "locus": "3, 78"
-    }
-   },
-   {
-    "prompt": "I had yielded, if you will have it that the commons were opposed to me, though they were not, to hatred.",
-    "answer": "cesseram, sī aliēnam ā mē plēbem fuisse voltis, quae nōn fuit, invidiae.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "cesseram",
-     "sī",
-     "aliēnam",
-     "ā",
-     "mē",
-     "plēbem",
-     "fuisse",
-     "voltis",
-     "quae",
-     "nōn",
-     "fuit",
-     "invidiae"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sestio",
-     "locus": "64"
-    }
-   },
-   {
-    "prompt": "If you do not do it at once, I will hand you over to a magistrate.",
-    "answer": "nisi id cōnfestim facis, ego tē trādam magistrātuī.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "nisi",
-     "id",
-     "cōnfestim",
-     "facis",
-     "ego",
-     "tē",
-     "trādam",
-     "magistrātuī"
-    ],
-    "source": {
-     "author": "Nepos",
-     "work": "Vitae",
-     "locus": "15, 4, 3"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q31",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "If we wish to enjoy peace, we shall have to make war; if we give up war, we never shall enjoy peace.",
-    "answer": "sī pāce fruī volumus, bellum gerendum est; sī bellum omittimus, pāce numquam fruēmur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "pāce",
-     "fruī",
-     "volumus",
-     "bellum",
-     "gerendum",
-     "est",
-     "sī",
-     "bellum",
-     "omittimus",
-     "pāce",
-     "numquam",
-     "fruēmur"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Philippicae",
-     "locus": "7, 19"
-    }
-   },
-   {
-    "prompt": "Refute me, if I am not speaking the truth.",
-    "answer": "redargue mē, sī mentior.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "redargue",
-     "mē",
-     "sī",
-     "mentior"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Cluentio",
-     "locus": "62"
-    }
-   },
-   {
-    "prompt": "Jump overboard, men, unless you choose to abandon your eagle to the enemy.",
-    "answer": "dēsilīte, mīlitēs, nisi vultis aquilam hostibus prōdere.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "dēsilīte",
-     "mīlitēs",
-     "nisi",
-     "vultis",
-     "aquilam",
-     "hostibus",
-     "prōdere"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "4, 25, 3"
-    }
-   },
-   {
-    "prompt": "Therefore, if this is so, you are to honour me as a god.",
-    "answer": "quā rē, sī haec ita sunt, sīc mē colitōte ut deum.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quā",
-     "rē",
-     "sī",
-     "haec",
-     "ita",
-     "sunt",
-     "sīc",
-     "mē",
-     "colitōte",
-     "ut",
-     "deum"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "81"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q32",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
     "prompt": "If we cannot do it, let us die.",
     "answer": "quod sī nōn possumus facere, moriāmur.",
     "kind": "translate-en-la",
@@ -4446,52 +2063,6 @@
      "author": "Cicero",
      "work": "Philippicae",
      "locus": "7, 14"
-    }
-   },
-   {
-    "prompt": "If there is a hope of my coming back, strengthen that hope.",
-    "answer": "sī est spēs nostrī reditūs, eam cōnfirmēs.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "est",
-     "spēs",
-     "nostrī",
-     "reditūs",
-     "eam",
-     "cōnfirmēs"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "14, 4, 3"
-    }
-   },
-   {
-    "prompt": "If Hejus had anything for sale, if he sold it at his own valuation, I stop enquiring why you bought.",
-    "answer": "sī quid vēnāle habuit Heius, sī id quantī aestimābat, tantī vēndidit, dēsinō quaerere cūr ēmeris.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "quid",
-     "vēnāle",
-     "habuit",
-     "Heius",
-     "sī",
-     "id",
-     "quantī",
-     "aestimābat",
-     "tantī",
-     "vēndidit",
-     "dēsinō",
-     "quaerere",
-     "cūr",
-     "ēmeris"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "4, 10"
     }
    },
    {
@@ -4522,29 +2093,9 @@
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q33",
+  "id": "bn-301-conditional-sentences-q7",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
-   {
-    "prompt": "If they contributed a statue as a compliment, they are not enemies.",
-    "answer": "sī honōris causā statuam dedērunt, inimīcī nōn sunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "honōris",
-     "causā",
-     "statuam",
-     "dedērunt",
-     "inimīcī",
-     "nōn",
-     "sunt"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "2, 150"
-    }
-   },
    {
     "prompt": "If sick people drink cold water, at first they always seem refreshed.",
     "answer": "hominēs aegrī sī aquam gelidam bibērunt, prīmō relevārī videntur.",
@@ -4604,13 +2155,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "1, 93"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q34",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "If the mind has ever seen the truth, it has used in every case luck and chance.",
     "answer": "animī sī quandō vēra vīdērunt, ūsī sunt fortūnā atque cāsū.",
@@ -4632,32 +2177,13 @@
      "work": "De Divinatione",
      "locus": "2, 108"
     }
-   },
-   {
-    "prompt": "I use our own poets carefully, it is true: but whenever they have failed me, I have always translated a great deal from Greek.",
-    "answer": "studiōsē equidem ūtor nostrīs poētīs, sed sīcubi illī dēfēcērunt, vertī multa dē Graecīs.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "studiōsē",
-     "equidem",
-     "ūtor",
-     "nostrīs",
-     "poētīs",
-     "sed",
-     "sīcubi",
-     "illī",
-     "dēfēcērunt",
-     "vertī",
-     "multa",
-     "dē",
-     "Graecīs"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Tusculanae Disputationes",
-     "locus": "2, 26"
-    }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q8",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "If they ventured to say that that measure was brought forward in due form, had not they forgotten?",
     "answer": "sī illud iūre rogātum dīcere ausī sunt, oblītīne erant?",
@@ -4703,13 +2229,7 @@
      "work": "In Verrem",
      "locus": "5, 19"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q35",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "Unless something or other has been done already through Flaccus, it will be done by me.",
     "answer": "nisi iam factum aliquid est per Flaccum, fīet ā mē.",
@@ -4751,7 +2271,13 @@
      "work": "In Verrem",
      "locus": "4, 78"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q9",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "If any were old and homely, he considers them in the light of enemies.",
     "answer": "sī quī senēs āc dēfōrmēs erant, eōs in hostium numerō dūcit.",
@@ -4775,35 +2301,6 @@
      "locus": "5, 64"
     }
    },
-   {
-    "prompt": "If the inheritance was coming to so and so, it is likely that the murder was committed by that man.",
-    "answer": "sī ad illum hērēditās veniēbat, vērī simile est ab illō necātum.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "ad",
-     "illum",
-     "hērēditās",
-     "veniēbat",
-     "vērī",
-     "simile",
-     "est",
-     "ab",
-     "illō",
-     "necātum"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Inventione",
-     "locus": "1, 89"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q36",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
    {
     "prompt": "If any good-sized vase was ever found, they would always bring it to him in high glee.",
     "answer": "sī quod erat grande vās, laetī adferēbant.",
@@ -4859,37 +2356,11 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 48, 6"
     }
-   },
-   {
-    "prompt": "He thought he had done enough for duty, if he had been under any obligation, enough for delusion, if he had been acting under mistaken ignorance.",
-    "answer": "vel officiō, sī quid dēbuerat, vel errōrī, sī quid nescierat, satis factum esse dūxit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "vel",
-     "officiō",
-     "sī",
-     "quid",
-     "dēbuerat",
-     "vel",
-     "errōrī",
-     "sī",
-     "quid",
-     "nescierat",
-     "satis",
-     "factum",
-     "esse",
-     "dūxit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Rege Deiotaro",
-     "locus": "13"
-    }
    }
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q37",
+  "id": "bn-301-conditional-sentences-q10",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
    {
@@ -4918,27 +2389,6 @@
     }
    },
    {
-    "prompt": "If he ever caught sight of a bit of chased work, why, gentlemen, he never could keep his hands off.",
-    "answer": "sī quicquam caelātī adspexerat, manūs abstinēre, iūdicēs, nōn poterat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "quicquam",
-     "caelātī",
-     "adspexerat",
-     "manūs",
-     "abstinēre",
-     "iūdicēs",
-     "nōn",
-     "poterat"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "4, 48"
-    }
-   },
-   {
     "prompt": "If I cannot succeed in bearing it, I would rather be crushed.",
     "answer": "quod sī perferre nōn poterō, opprimī mē mālō.",
     "kind": "translate-en-la",
@@ -4958,32 +2408,6 @@
      "locus": "10"
     }
    },
-   {
-    "prompt": "If you venture to say that, you will promote the cause of your enemy.",
-    "answer": "sī id audēbis dīcere, causam inimīcī tuī sublevābis.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "id",
-     "audēbis",
-     "dīcere",
-     "causam",
-     "inimīcī",
-     "tuī",
-     "sublevābis"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Divinatio in Caecilium",
-     "locus": "12"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q38",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
    {
     "prompt": "The interests of the nobility will not be damaged, if you resist those creatures; oh no, on the contrary, they will be promoted.",
     "answer": "nōn modo nōn laedētur causa nōbilitātis, sī istīs hominibus resistētis, vērum etiam ōrnābitur.",
@@ -5032,7 +2456,13 @@
      "work": "De Inventione",
      "locus": "2, 35"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q11",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "We shall attain this end if we take care not to be subject to fits of passion.",
     "answer": "quod adsequēmur, sī cavēbimus nē in perturbātiōnēs incidāmus.",
@@ -5071,72 +2501,6 @@
      "work": "De Officiis",
      "locus": "3, 90"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q39",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "If I seem to harp too much on myself, you must excuse me.",
-    "answer": "sī dē mē ipsō plūra dīcere vidēbor, īgnōscitōte.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "dē",
-     "mē",
-     "ipsō",
-     "plūra",
-     "dīcere",
-     "vidēbor",
-     "īgnōscitōte"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sestio",
-     "locus": "31"
-    }
-   },
-   {
-    "prompt": "If there shall be anything which you think worth writing, I wish you would write.",
-    "answer": "sī quid erit, quod scrībendum putēs, velim faciās.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "quid",
-     "erit",
-     "quod",
-     "scrībendum",
-     "putēs",
-     "velim",
-     "faciās"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Atticum",
-     "locus": "11, 13, 5"
-    }
-   },
-   {
-    "prompt": "If you will hearken to me, my young friends, never fear a double sun.",
-    "answer": "sī mē audiētis, adulēscentēs, sōlem alterum nē metuerītis.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "mē",
-     "audiētis",
-     "adulēscentēs",
-     "sōlem",
-     "alterum",
-     "nē",
-     "metuerītis"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Re Publica",
-     "locus": "1, 32"
-    }
    },
    {
     "prompt": "Do you think you can prove your charge, if you do not even bring forward a motive for the crime?",
@@ -5160,36 +2524,6 @@
      "work": "Pro Sexto Roscio Amerino",
      "locus": "72"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q40",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "But if the might of the wicked disappoints my hope, unto your keeping do I commend the little son of mine.",
-    "answer": "quod sī meam spem vīs improbōrum fefellerit, commendō vōbīs meum parvum fīlium.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quod",
-     "sī",
-     "meam",
-     "spem",
-     "vīs",
-     "improbōrum",
-     "fefellerit",
-     "commendō",
-     "vōbīs",
-     "meum",
-     "parvum",
-     "fīlium"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam",
-     "locus": "4, 23"
-    }
    },
    {
     "prompt": "If he is saved, our success is assured.",
@@ -5206,35 +2540,13 @@
      "work": "Epistulae ad Familiares",
      "locus": "12, 6, 2"
     }
-   },
-   {
-    "prompt": "In that case it was indeed a bad day for the country when I was made consul, if you make the proposition.",
-    "answer": "tum, hercule, illō diē quō ego cōnsul sum creātus, male gesta rēs pūblica est, sī tuleritis.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "tum",
-     "hercule",
-     "illō",
-     "diē",
-     "quō",
-     "ego",
-     "cōnsul",
-     "sum",
-     "creātus",
-     "male",
-     "gesta",
-     "rēs",
-     "pūblica",
-     "est",
-     "sī",
-     "tuleritis"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "3, 19, 11"
-    }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q12",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "If I order you to be dispatched, the rest of the gang of conspirators will be left in the state.",
     "answer": "sī tē interficī iusserō, residēbit in rē pūblicā reliqua coniūrātōrum manus.",
@@ -5257,13 +2569,7 @@
      "work": "In Catilinam",
      "locus": "1, 12"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q41",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "I shall be myself again, if I see you.",
     "answer": "respīrārō, sī tē vīderō.",
@@ -5302,25 +2608,6 @@
     }
    },
    {
-    "prompt": "You would agree all the more if I come at once to weightier points.",
-    "answer": "tum magis adsentiāre, sī ad maiōra pervēnerō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "tum",
-     "magis",
-     "adsentiāre",
-     "sī",
-     "ad",
-     "maiōra",
-     "pervēnerō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Re Publica",
-     "locus": "1, 62"
-    }
-   },
-   {
     "prompt": "If it is susceptible of pleasure, it is also susceptible of pain.",
     "answer": "sī voluptātis sēnsum capit, dolōrēs etiam capit.",
     "kind": "translate-en-la",
@@ -5342,7 +2629,7 @@
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q42",
+  "id": "bn-301-conditional-sentences-q13",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
    {
@@ -5396,32 +2683,6 @@
     }
    },
    {
-    "prompt": "But if Greeks are read by Greeks, why should not Romans be read by Romans?",
-    "answer": "quod sī Graecī leguntur ā Graecīs, quid est cūr nostrī ā nostrīs nōn legantur?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quod",
-     "sī",
-     "Graecī",
-     "leguntur",
-     "ā",
-     "Graecīs",
-     "quid",
-     "est",
-     "cūr",
-     "nostrī",
-     "ā",
-     "nostrīs",
-     "nōn",
-     "legantur"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Finibus Bonorum et Malorum",
-     "locus": "1, 6"
-    }
-   },
-   {
     "prompt": "Suppose you did defend Opimius, that is no reason why your friends will think you a patriot.",
     "answer": "nōn sī Opīmium dēfendistī, idcircō tē istī bonum cīvem putābunt.",
     "kind": "translate-en-la",
@@ -5441,45 +2702,6 @@
      "author": "Cicero",
      "work": "De Oratore",
      "locus": "2, 170"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q43",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "And even if every declaration is either true or false, it does not follow without any further ado that there are unchangeable causes to prevent a thing falling out different from the way it promises to fall out.",
-    "answer": "nec sī omne ēnūntiātum aut vērum aut falsum est, sequitur īlicō, esse causās immūtābilīs, quae prohibeant secus cadere atque cāsūrum sit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "nec",
-     "sī",
-     "omne",
-     "ēnūntiātum",
-     "aut",
-     "vērum",
-     "aut",
-     "falsum",
-     "est",
-     "sequitur",
-     "īlicō",
-     "esse",
-     "causās",
-     "immūtābilīs",
-     "quae",
-     "prohibeant",
-     "secus",
-     "cadere",
-     "atque",
-     "cāsūrum",
-     "sit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Fato",
-     "locus": "28"
     }
    },
    {
@@ -5503,7 +2725,13 @@
      "work": "Pro Sexto Roscio Amerino",
      "locus": "94"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q14",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "Can I think it strange if your influence is of no account ?",
     "answer": "mīrer, sī vāna vestra auctōritās est?",
@@ -5538,34 +2766,6 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "3, 28, 5"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q44",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "And this is a hard thing, unless you have the exterior of a good man.",
-    "answer": "quod est difficile, nisi speciem prae tē bonī virī ferās.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quod",
-     "est",
-     "difficile",
-     "nisi",
-     "speciem",
-     "prae",
-     "tē",
-     "bonī",
-     "virī",
-     "ferās"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Officiis",
-     "locus": "2, 39"
     }
    },
    {
@@ -5606,64 +2806,13 @@
      "work": "Laelius de Amicitia",
      "locus": "37"
     }
-   },
-   {
-    "prompt": "Nobody suffers his vassals to be put down, and if he ever act otherwise, he has no influence among his people.",
-    "answer": "suōs quisque opprimī nōn patitur, neque, aliter sī faciat, ūllam inter suōs habet auctōritātem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "suōs",
-     "quisque",
-     "opprimī",
-     "nōn",
-     "patitur",
-     "neque",
-     "aliter",
-     "sī",
-     "faciat",
-     "ūllam",
-     "inter",
-     "suōs",
-     "habet",
-     "auctōritātem"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "6, 11, 4"
-    }
    }
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q45",
+  "id": "bn-301-conditional-sentences-q15",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
-   {
-    "prompt": "It is always a discreditable apology, if a man confess that he has been unpatriotic from motives of friendship.",
-    "answer": "turpis excūsātiō est, sī quis contrā rem pūblicam sē amīcī causā fēcisse fateātur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "turpis",
-     "excūsātiō",
-     "est",
-     "sī",
-     "quis",
-     "contrā",
-     "rem",
-     "pūblicam",
-     "sē",
-     "amīcī",
-     "causā",
-     "fēcisse",
-     "fateātur"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Laelius de Amicitia",
-     "locus": "40"
-    }
-   },
    {
     "prompt": "The Britons are always perfectly ready to perform the duties enjoined on them by the Roman government, if they be not maltreated.",
     "answer": "Britannī iniūncta imperiī mūnera impigrē obeunt, sī iniūriae absint.",
@@ -5712,31 +2861,6 @@
     }
    },
    {
-    "prompt": "If I say that this path is not rough, I should not tell the truth.",
-    "answer": "hanc viam sī asperam esse negem, mentiar.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "hanc",
-     "viam",
-     "sī",
-     "asperam",
-     "esse",
-     "negem",
-     "mentiar"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sestio",
-     "locus": "100"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q46",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
     "prompt": "If a god ask you, what would you answer?",
     "answer": "sī deus tē interroget, quid respondeās?",
     "kind": "translate-en-la",
@@ -5776,30 +2900,13 @@
      "work": "Ab Urbe Condita",
      "locus": "39, 37, 3"
     }
-   },
-   {
-    "prompt": "Without orders from you I never should fight out of ranks, no, not if I saw victory was certain.",
-    "answer": "iniussū tuō extrā ōrdinem numquam pugnāverim, nōn sī certam victōriam videam.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "iniussū",
-     "tuō",
-     "extrā",
-     "ōrdinem",
-     "numquam",
-     "pugnāverim",
-     "nōn",
-     "sī",
-     "certam",
-     "victōriam",
-     "videam"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "7, 10, 2"
-    }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q16",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "Upon my word, in that case I should prove to have saved the capital in vain, if I saw a townsman and brother-in-arms of mine haled to jail.",
     "answer": "tum vērō nēquīquam hāc dextrā capitōlium servāverim, si cīvem commīlitōnemque meum in vincula dūcī videam.",
@@ -5826,77 +2933,6 @@
      "work": "Ab Urbe Condita",
      "locus": "6, 14, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q47",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "I should make a long story about one subject, if I should undertake to go through all the different versions of the authorities.",
-    "answer": "multōs circā ūnam rem ambitūs fēcerim, sī quae variant auctōrēs omnia exequī velim.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "multōs",
-     "circā",
-     "ūnam",
-     "rem",
-     "ambitūs",
-     "fēcerim",
-     "sī",
-     "quae",
-     "variant",
-     "auctōrēs",
-     "omnia",
-     "exequī",
-     "velim"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "27, 27, 12"
-    }
-   },
-   {
-    "prompt": "I propose to enter the camp of the enemy, if I be able.",
-    "answer": "intrāre, sī possim, castra hostium volō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "intrāre",
-     "sī",
-     "possim",
-     "castra",
-     "hostium",
-     "volō"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "2, 12, 5"
-    }
-   },
-   {
-    "prompt": "They ought not to help you, if they could, and cannot, if they would.",
-    "answer": "tē neque dēbent adiuvāre, sī possint, neque possunt, sī velint.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "tē",
-     "neque",
-     "dēbent",
-     "adiuvāre",
-     "sī",
-     "possint",
-     "neque",
-     "possunt",
-     "sī",
-     "velint"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "4, 20"
-    }
    },
    {
     "prompt": "If it be asked whether obstinacy and perseverance are the same, it must be settled by definitions.",
@@ -5918,135 +2954,6 @@
      "author": "Cicero",
      "work": "Topica",
      "locus": "87"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q48",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "You will not dare to say this, sir, nor if you wish, will you be allowed.",
-    "answer": "neque tū hoc dīcere audēbis, nec sī cupiās, licēbit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "neque",
-     "tū",
-     "hoc",
-     "dīcere",
-     "audēbis",
-     "nec",
-     "sī",
-     "cupiās",
-     "licēbit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "2, 167"
-    }
-   },
-   {
-    "prompt": "You will not acquire as much glory, if you succeed in battle, as you will lose, if any reverse occur.",
-    "answer": "nōn tantum, sī proeliō vincās, glōriae adiēceris, quantum adēmeris, sī quid adversī ēveniat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "nōn",
-     "tantum",
-     "sī",
-     "proeliō",
-     "vincās",
-     "glōriae",
-     "adiēceris",
-     "quantum",
-     "adēmeris",
-     "sī",
-     "quid",
-     "adversī",
-     "ēveniat"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "30, 30, 21"
-    }
-   },
-   {
-    "prompt": "Suppose the enemy march on the town, what do you intend to do?",
-    "answer": "quid, sī hostēs ad urbem veniant, factūrī estis?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quid",
-     "sī",
-     "hostēs",
-     "ad",
-     "urbem",
-     "veniant",
-     "factūrī",
-     "estis"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "3, 52, 7"
-    }
-   },
-   {
-    "prompt": "Again, suppose I undertake to go sailing, I should not lay my course as I may have dreamed; for the penalty would be swift.",
-    "answer": "nē sī nāvigāre quidem velim, ita gubernārem, ut somniāverim; praesēns enim poena sit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "nē",
-     "sī",
-     "nāvigāre",
-     "quidem",
-     "velim",
-     "ita",
-     "gubernārem",
-     "ut",
-     "somniāverim",
-     "praesēns",
-     "enim",
-     "poena",
-     "sit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Divinatione",
-     "locus": "2, 122"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q49",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "Suppose there be wars to-day like the Etruscan and the Gallic wars: could you bear to see Sextius consul.",
-    "answer": "sī hodiē bella sint, quāle Etrūscum fuit, quāle Gallicum; possētisne ferre Sextium cōnsulem esse?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "hodiē",
-     "bella",
-     "sint",
-     "quāle",
-     "Etrūscum",
-     "fuit",
-     "quāle",
-     "Gallicum",
-     "possētisne",
-     "ferre",
-     "Sextium",
-     "cōnsulem",
-     "esse"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "6, 40, 17"
     }
    },
    {
@@ -6089,7 +2996,13 @@
      "work": "Paradoxa Stoicorum",
      "locus": "33"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q17",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "Assume for the sake of argument that a householder have not inflicted punishment, would he seem merciful, or a monster of cruelty?",
     "answer": "sī quis pater familiās supplicium nōn sūmpserit, utrum is clēmēns an crūdēlissimus esse videātur?",
@@ -6114,34 +3027,6 @@
      "author": "Cicero",
      "work": "In Catilinam",
      "locus": "4, 12"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q50",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "That person has long been dead; if he were alive, you would hear his evidence.",
-    "answer": "is iam prīdem est mortuus. sī vīveret, verba eius audīrētis.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "is",
-     "iam",
-     "prīdem",
-     "est",
-     "mortuus",
-     "sī",
-     "vīveret",
-     "verba",
-     "eius",
-     "audīrētis"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Roscio Comoedo",
-     "locus": "42"
     }
    },
    {
@@ -6218,7 +3103,7 @@
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q51",
+  "id": "bn-301-conditional-sentences-q18",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
    {
@@ -6240,35 +3125,6 @@
      "author": "Cicero",
      "work": "Philippicae",
      "locus": "8, 14"
-    }
-   },
-   {
-    "prompt": "If the collective province could have spoken, she would have used these words; but since she could not, she chose a manager for the case herself.",
-    "answer": "sī ūniversa prōvincia loquī posset, hāc vōce ūterētur; quoniam id nōn poterat, hārum rērum āctōrem ipsa dēlēgit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "ūniversa",
-     "prōvincia",
-     "loquī",
-     "posset",
-     "hāc",
-     "vōce",
-     "ūterētur",
-     "quoniam",
-     "id",
-     "nōn",
-     "poterat",
-     "hārum",
-     "rērum",
-     "āctōrem",
-     "ipsa",
-     "dēlēgit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Divinatio in Caecilium",
-     "locus": "19"
     }
    },
    {
@@ -6314,13 +3170,7 @@
      "work": "Epistulae ad Atticum",
      "locus": "12, 32, 2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q52",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "The very men whom I was to call to bear witness to my deeds, if the tribunes should refuse me a triumph.",
     "answer": "quōs ego, sī tribūnī mē triumphāre prohibērent, testēs citātūrus fuī rērum ā mē gestārum.",
@@ -6346,7 +3196,13 @@
      "work": "Ab Urbe Condita",
      "locus": "38, 47, 4"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q19",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "If by the way at that time my counsel had been regarded, you, sir, would be a beggar to-day and we should be free.",
     "answer": "quō quidem tempore sī meum cōnsilium valuisset, tū hodiē egērēs, nōs līberī essēmus.",
@@ -6373,29 +3229,6 @@
     }
    },
    {
-    "prompt": "Suppose therefore he had lived to be a hundred, would he have regretted his years?",
-    "answer": "num igitur, sī ad centēsimum annum vīxisset, senectūtis eum suae paenitēret?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "num",
-     "igitur",
-     "sī",
-     "ad",
-     "centēsimum",
-     "annum",
-     "vīxisset",
-     "senectūtis",
-     "eum",
-     "suae",
-     "paenitēret"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "19"
-    }
-   },
-   {
     "prompt": "If he had added the Indians and other nations, he would have found them a hindrance rather than a help in his train.",
     "answer": "Indōs aliāsque sī adiūnxisset gentēs, impedimentum maius quam auxilium traheret.",
     "kind": "translate-en-la",
@@ -6416,13 +3249,7 @@
      "work": "Ab Urbe Condita",
      "locus": "9, 19, 5"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q53",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "If he had ever been a child of fortune, he would have continued the life of bliss to the funeral pyre.",
     "answer": "sī beātus umquam fuisset, beātam vītam usque ad rogum pertulisset.",
@@ -6443,27 +3270,6 @@
      "author": "Cicero",
      "work": "De Finibus Bonorum et Malorum",
      "locus": "3, 76"
-    }
-   },
-   {
-    "prompt": "Unless the soldiers had been utterly exhausted, the entire force of the enemy might have been exterminated.",
-    "answer": "nisi mīlitēs essent dēfessī, omnēs hostium cōpiae dēlērī potuissent.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "nisi",
-     "mīlitēs",
-     "essent",
-     "dēfessī",
-     "omnēs",
-     "hostium",
-     "cōpiae",
-     "dēlērī",
-     "potuissent"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "7, 88, 6"
     }
    },
    {
@@ -6488,7 +3294,13 @@
      "work": "In Catilinam",
      "locus": "3, 17"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q20",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "If Sestius had been slain, were you disposed to rush to arms?",
     "answer": "sī P. Sēstius occīsus esset, fuistisne ad arma itūrī?",
@@ -6509,13 +3321,7 @@
      "work": "Pro Sestio",
      "locus": "81"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q54",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "And if he overcame him, he would be likely to have exemption from punishment forever and ever.",
     "answer": "quem sī vīcisset, habitūrus esset impūnitātem sempiternam.",
@@ -6587,7 +3393,13 @@
      "work": "Pro Lege Manilia",
      "locus": "50"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q21",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "Whom you ought to honour as a father, if you had any such thing as affection in you.",
     "answer": "quem patris locō, sī ūlla in tē pietās esset, colere dēbēbās.",
@@ -6610,13 +3422,7 @@
      "work": "Philippicae",
      "locus": "2, 99"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q55",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "For what answer could Hejus have given, if he were an unprincipled man?",
     "answer": "quid enim poterat Heius respondēre, sī esset improbus?",
@@ -6638,100 +3444,6 @@
     }
    },
    {
-    "prompt": "If they had worn dark clothing, they might have presented the mien of mourners for the fall of Perseus.",
-    "answer": "sī sordidam vestem habuissent, lūgentium Perseī cāsum praebēre speciem poterant.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "sordidam",
-     "vestem",
-     "habuissent",
-     "lūgentium",
-     "Perseī",
-     "cāsum",
-     "praebēre",
-     "speciem",
-     "poterant"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "45, 20, 5"
-    }
-   },
-   {
-    "prompt": "If captivity had carried him to the city, he could have heard Caesar himself.",
-    "answer": "sī eum captīvitās in urbem pertrāxisset, Caesarem ipsum audīre potuit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "eum",
-     "captīvitās",
-     "in",
-     "urbem",
-     "pertrāxisset",
-     "Caesarem",
-     "ipsum",
-     "audīre",
-     "potuit"
-    ],
-    "source": {
-     "author": "Tacitus",
-     "work": "Dialogus de Oratoribus",
-     "locus": "17"
-    }
-   },
-   {
-    "prompt": "If you had staid one day, you must all have died.",
-    "answer": "sī ūnum diem morātī essētis, moriendum omnibus fuit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "ūnum",
-     "diem",
-     "morātī",
-     "essētis",
-     "moriendum",
-     "omnibus",
-     "fuit"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "2, 38, 5"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q56",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "The pile-bridge all but gave a path to the enemy, had it not been for one heroic soul, Horatius Cocles.",
-    "answer": "pōns sublicius iter paene hostibus dedit, nī ūnus vir fuisset Horātius Cocles.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "pōns",
-     "sublicius",
-     "iter",
-     "paene",
-     "hostibus",
-     "dedit",
-     "nī",
-     "ūnus",
-     "vir",
-     "fuisset",
-     "Horātius",
-     "Cocles"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "2, 10, 2"
-    }
-   },
-   {
     "prompt": "Why, I was going to drift on still further, if I had not checked myself.",
     "answer": "quīn lābēbar longius, nisi mē retinuissem.",
     "kind": "translate-en-la",
@@ -6747,27 +3459,6 @@
      "author": "Cicero",
      "work": "De Legibus",
      "locus": "1, 52"
-    }
-   },
-   {
-    "prompt": "If Metellus had not prevented, the mothers of those people were just coming.",
-    "answer": "sī per L. Metellum licitum esset, mātrēs illōrum veniēbant.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "per",
-     "L",
-     "Metellum",
-     "licitum",
-     "esset",
-     "mātrēs",
-     "illōrum",
-     "veniēbant"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "5, 129"
     }
    },
    {
@@ -6790,7 +3481,7 @@
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q57",
+  "id": "bn-301-conditional-sentences-q22",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
    {
@@ -6812,27 +3503,6 @@
     }
    },
    {
-    "prompt": "Even this boon fortune had wrenched from him, unless he had been assisted by a single friend.",
-    "answer": "quod ipsum fortūna ēripuerat, nisi ūnīus amīcī opēs subvēnissent.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quod",
-     "ipsum",
-     "fortūna",
-     "ēripuerat",
-     "nisi",
-     "ūnīus",
-     "amīcī",
-     "opēs",
-     "subvēnissent"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Rabirio Postumo",
-     "locus": "48"
-    }
-   },
-   {
     "prompt": "If I had not drawn my sword, I had still earned my triumph.",
     "answer": "sī gladium nōn strīnxissem, tamen triumphum merueram.",
     "kind": "translate-en-la",
@@ -6849,57 +3519,6 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "38, 49, 12"
-    }
-   },
-   {
-    "prompt": "I should exhort you at greater length, my men, if there was to be a tug with armed men.",
-    "answer": "plūribus vōs, mīlitēs, hortārer, sī cum armātīs dīmicātiō futūra esset.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "plūribus",
-     "vōs",
-     "mīlitēs",
-     "hortārer",
-     "sī",
-     "cum",
-     "armātīs",
-     "dīmicātiō",
-     "futūra",
-     "esset"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "24, 38, 9"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q58",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "If I intended to capture your house, should I not have abstained from wine for a day.",
-    "answer": "sī domum tuam expugnātūrus eram, nōn temperāssem vīnō in ūnum diem?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sī",
-     "domum",
-     "tuam",
-     "expugnātūrus",
-     "eram",
-     "nōn",
-     "temperāssem",
-     "vīnō",
-     "in",
-     "ūnum",
-     "diem"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "40, 14, 4"
     }
    },
    {
@@ -6944,7 +3563,13 @@
      "work": "Epistulae",
      "locus": "7, 9, 2"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q23",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "As for me, could I live, if Britannicus were on the throne.",
     "answer": "vīvere ego Britannicō potiente rērum poteram?",
@@ -6962,13 +3587,7 @@
      "work": "Annales",
      "locus": "13, 21"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q59",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "Without you safe, safe we cannot be.",
     "answer": "nisi tē salvō salvī esse nōn possumus.",
@@ -6988,84 +3607,6 @@
      "locus": "32"
     }
    },
-   {
-    "prompt": "He makes a speech—yes, and he a consul—such as a Catiline would never have made, if flushed with success.",
-    "answer": "habet ōrātiōnem tālem cōnsul, quālem numquam Catilīna vīctor habuisset.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "habet",
-     "ōrātiōnem",
-     "tālem",
-     "cōnsul",
-     "quālem",
-     "numquam",
-     "Catilīna",
-     "vīctor",
-     "habuisset"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sestio",
-     "locus": "28"
-    }
-   },
-   {
-    "prompt": "The immortal gods inspired that mad miscreant to waylay my client; otherwise, that monster could not have been destroyed.",
-    "answer": "dī immortālēs mentem illī perditō ac furiōsō dedērunt ut huic faceret insidiās; aliter perīre pestis illa nōn potuit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "dī",
-     "immortālēs",
-     "mentem",
-     "illī",
-     "perditō",
-     "ac",
-     "furiōsō",
-     "dedērunt",
-     "ut",
-     "huic",
-     "faceret",
-     "insidiās",
-     "aliter",
-     "perīre",
-     "pestis",
-     "illa",
-     "nōn",
-     "potuit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Milone",
-     "locus": "88"
-    }
-   },
-   {
-    "prompt": "For either nobody or, if anybody, that was a wise man.",
-    "answer": "aut enim nēmō, aut sī quisquam, ille sapiēns fuit.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "aut",
-     "enim",
-     "nēmō",
-     "aut",
-     "sī",
-     "quisquam",
-     "ille",
-     "sapiēns",
-     "fuit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Laelius de Amicitia",
-     "locus": "9"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q60",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
    {
     "prompt": "That I wished, if this is a commonwealth, to be a citizen of it; if it is not, to be an exile.",
     "answer": "mē voluisse, sī haec cīvitās est, cīvem esse mē; sī nōn, exsulem esse.",
@@ -7114,7 +3655,13 @@
      "work": "Philippicae",
      "locus": "2, 54"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q24",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "If this thanksgiving be compared with all others, there would be found the following difference.",
     "answer": "quae supplicātiō sī cum cēterīs cōnferātur, hoc interest.",
@@ -7155,38 +3702,6 @@
      "work": "Ab Urbe Condita",
      "locus": "33, 10, 8"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q61",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
-   {
-    "prompt": "If I should undertake to set forth his high and mighty schemes, possibly it might be thought that I wished to damage the cause of the conservatives.",
-    "answer": "quae cōnētur sī velim commemorāre, vereor nē quis exīstimet mē causam nōbilitātis voluisse laedere.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quae",
-     "cōnētur",
-     "sī",
-     "velim",
-     "commemorāre",
-     "vereor",
-     "nē",
-     "quis",
-     "exīstimet",
-     "mē",
-     "causam",
-     "nōbilitātis",
-     "voluisse",
-     "laedere"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sexto Roscio Amerino",
-     "locus": "135"
-    }
    },
    {
     "prompt": "If Sestius had given up the ghost then, a statue would doubtless at some day have been set up in his honour.",
@@ -7211,25 +3726,6 @@
      "author": "Cicero",
      "work": "Pro Sestio",
      "locus": "83"
-    }
-   },
-   {
-    "prompt": "Though I shall have many rivals, yet I will outdo them all.",
-    "answer": "etiamsī multī mēcum contendent, tamen omnīs superābō.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "etiamsī",
-     "multī",
-     "mēcum",
-     "contendent",
-     "tamen",
-     "omnīs",
-     "superābō"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "5, 8, 4"
     }
    },
    {
@@ -7260,7 +3756,7 @@
   ]
  },
  {
-  "id": "bn-301-conditional-sentences-q62",
+  "id": "bn-301-conditional-sentences-q25",
   "sectionId": "bn-301-conditional-sentences",
   "questions": [
    {
@@ -7286,31 +3782,6 @@
      "author": "Julius Caesar",
      "work": "Commentarii de bello Gallico",
      "locus": "5, 4, 1"
-    }
-   },
-   {
-    "prompt": "Even though you had robbed Sulla of nothing but the consulship, still you ought to be satisfied with that.",
-    "answer": "etsī nihil aliud Sūllae nisi cōnsulātum abstulissētis, tamen eō contentōs vōs esse oportēbat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "etsī",
-     "nihil",
-     "aliud",
-     "Sūllae",
-     "nisi",
-     "cōnsulātum",
-     "abstulissētis",
-     "tamen",
-     "eō",
-     "contentōs",
-     "vōs",
-     "esse",
-     "oportēbat"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sulla",
-     "locus": "90"
     }
    },
    {
@@ -7357,13 +3828,7 @@
      "work": "Divinatio in Caecilium",
      "locus": "14"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q63",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "He rushed away as if he had been kicked out.",
     "answer": "tamquam extrūderētur, ita cucurrit.",
@@ -7379,7 +3844,13 @@
      "work": "Philippicae",
      "locus": "10, 10"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-301-conditional-sentences-q26",
+  "sectionId": "bn-301-conditional-sentences",
+  "questions": [
    {
     "prompt": "Because they trembled at Ariovistus’s barbarity, absent as he was, just as if he stood before their eyes.",
     "answer": "quod absentis Ariovistī crūdēlitātem, velut sī cōram adesset, horrērent.",
@@ -7399,34 +3870,6 @@
      "author": "Julius Caesar",
      "work": "Commentarii de bello Gallico",
      "locus": "1, 32, 4"
-    }
-   },
-   {
-    "prompt": "I feel glad myself at having finally reached the end of the Punic war, as if I had had a direct hand in the work and the danger.",
-    "answer": "mē quoque iuvat, velut ipse in parte labōris ac perīculī fuerim, ad fīnem bellī Pūnicī pervēnisse.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "mē",
-     "quoque",
-     "iuvat",
-     "velut",
-     "ipse",
-     "in",
-     "parte",
-     "labōris",
-     "ac",
-     "perīculī",
-     "fuerim",
-     "ad",
-     "fīnem",
-     "bellī",
-     "Pūnicī",
-     "pervēnisse"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "31, 1, 1"
     }
    },
    {
@@ -7450,13 +3893,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "2, 14"
     }
-   }
-  ]
- },
- {
-  "id": "bn-301-conditional-sentences-q64",
-  "sectionId": "bn-301-conditional-sentences",
-  "questions": [
+   },
    {
     "prompt": "On the ground that he had been speaking without good authority about a state matter, he was clapped in jail.",
     "answer": "quasi temere dē rē pūblicā locūtus in carcerem coniectus est.",
@@ -7495,25 +3932,6 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "1, 12, 7"
-    }
-   },
-   {
-    "prompt": "In high spirits, as if victory were assured, they proceeded to the camp.",
-    "answer": "laetī, ut explōrātā victōriā, ad castra pergunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "laetī",
-     "ut",
-     "explōrātā",
-     "victōriā",
-     "ad",
-     "castra",
-     "pergunt"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "3, 18, 8"
     }
    }
   ]

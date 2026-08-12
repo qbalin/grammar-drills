@@ -34,6 +34,7 @@ import { loadGrammar, loadProfile, packDir } from "./lib/pack.mjs";
 import { openReference } from "./lib/reference.mjs";
 import { makeClassifier } from "./lib/attestation.mjs";
 import { QUOTED_ID } from "./lib/quoted.mjs";
+import { noPoolMessage, poolsPresent, readPool } from "./lib/pools.mjs";
 
 const argv = process.argv.slice(2);
 const at = (name) => {
@@ -82,6 +83,7 @@ const funnel = {
   verse: 0,
   garbled: 0,
   unattested: 0,
+  otherTopic: 0,
   duplicate: 0,
   sameAnswer: 0,
   thinTopic: 0,
@@ -174,77 +176,49 @@ function fromGrammar() {
   return out;
 }
 
+/** The pools actually on disk, in `lib/pools.mjs` order. Set by `fromQuotes`. */
+const poolsRead = [];
+
+/**
+ * The inflection topics a lookup confirmed, filed by `inflection-topics.mjs`.
+ *
+ * A pool record's own `topics` are a model's answer, which is the only kind of
+ * answer syntax admits. Inflection does not need one — whether a sentence shows
+ * a fourth-declension noun is a fact the shipped paradigms settle — and a book
+ * of syntax examples never illustrates the fourth declension, so those topics
+ * had nothing at all. These are merged *after* the record's own, so a
+ * sentence's model topic stays its first choice and the lookup only adds.
+ */
+function confirmedTopics() {
+  const path = join(dir, "content", "inflection-topics.jsonl.gz");
+  const out = new Map();
+  if (!existsSync(path)) return out;
+  for (const line of gunzipSync(readFileSync(path)).toString("utf8").split("\n")) {
+    if (!line.trim()) continue;
+    const record = JSON.parse(line);
+    out.set(record.text, record.topics ?? []);
+  }
+  return out;
+}
+
 /**
  * Latin: pools already matched to topics and already macronized, read here so
  * that this half of the pipeline needs no dump and no grammar of its own.
- *
- * Three of them, because Latin has three ways of getting to a quotation and
- * they are not alternatives — the dump reaches sentences no grammar prints, and
- * the grammars reach the syntax the dump cannot be asked about. Same schema,
- * different books, and a pack may ship any of them, so this fails only when it
- * can find none.
- *
- * --- why these carry their provenance, and nothing else does ------------------
- *
- * A quotation's licence had nowhere to live until this list. A pool record is
- * `{text, topics, prompt, source}` and a shipped question adds only
- * `Question.source` — author, work, locus — so the *book the sentence was
- * recovered from* was recorded in one place, a comment at the top of the script
- * that built it, and reached no artifact at all. `profile.grammar.source` is the
- * pack's only licence string that ships, and it names Bennett, who supplies the
- * syllabus and not one of these sentences.
- *
- * That is thin for material taken out of three separately-licensed
- * digitizations, so each run now records what it read into
- * `content/quote-stats.json` beside its funnel. The Latin itself is nobody's:
- * these authors have been dead two thousand years. What is licensed is the
- * transcription, and A&G's is the one with terms attached.
  */
-const POOLS = [
-  {
-    file: "quotes.jsonl.gz",
-    built: "scripts/build-quote-pool.mjs",
-    from: "the kaikki.org Wiktionary extract behind the reference dictionary",
-    licence: "CC BY-SA 4.0 (Wiktionary); the prompts are written here, not taken",
-  },
-  {
-    file: "ag-quotes.jsonl.gz",
-    built: "scripts/ag-quotes.mjs",
-    from: "Allen & Greenough, New Latin Grammar (Boston, 1903), via Perseus/DCC as mirrored by alpheios-project/grammar-allen-greenough",
-    licence: "text public domain; this digitization CC BY-NC-SA 3.0",
-  },
-  {
-    file: "lane-quotes.jsonl.gz",
-    built: "scripts/lane-quotes.mjs",
-    from: "Lane, A Latin Grammar for Schools and Colleges (New York, 1898), Project Gutenberg #44653",
-    licence: "public domain, text and transcription both",
-  },
-];
-
-/** The pools actually on disk, in the order above. Set by `fromQuotes`. */
-const poolsRead = [];
-
 function fromQuotes() {
-  const present = POOLS.map((pool) => ({
-    ...pool,
-    path: join(dir, "content", pool.file),
-  })).filter((pool) => existsSync(pool.path));
+  const present = poolsPresent(dir);
   if (!present.length) {
-    console.error(
-      `No quote pool in ${join(dir, "content")} ` +
-        `(looked for ${POOLS.map((p) => p.file).join(", ")}).\n` +
-        `Build one with ${POOLS.map((p) => p.built).join(", ")}.`,
-    );
+    console.error(noPoolMessage(dir));
     process.exit(2);
   }
+  const confirmed = confirmedTopics();
   const out = [];
   for (const pool of present) {
     let records = 0;
-    for (const line of gunzipSync(readFileSync(pool.path)).toString("utf8").split("\n")) {
-      if (!line.trim()) continue;
-      const quote = JSON.parse(line);
+    for (const quote of readPool(pool)) {
       records++;
-      for (const topicId of quote.topics ?? []) {
+      const topics = [...new Set([...(quote.topics ?? []), ...(confirmed.get(quote.text) ?? [])])];
+      for (const topicId of topics) {
         out.push({
           topicId,
           answer: quote.text,
@@ -308,17 +282,167 @@ for (const file of existsSync(testsDir) ? readdirSync(testsDir) : []) {
   }
 }
 
+/**
+ * Everything wrong with a candidate that has nothing to do with the others.
+ *
+ * Split out of the loop because the allocator below has to ask the same
+ * question before it moves a sentence anywhere: promising a topic four
+ * quotations and then losing one to attestation leaves the topic under
+ * `minQuestionsPerTest`, and the three that were moved to reach it are thrown
+ * away with it. The stateful cuts — the same prompt twice, the same Latin twice
+ * — stay in the loop, because they depend on what has been taken already, which
+ * is the thing the loop is deciding.
+ */
+function unusable(candidate) {
+  const { answer, prompt } = candidate;
+  if (!prompt || !answer) return "noSource";
+  const source = sourceOf(candidate);
+  if (!source || !source.author || !source.work) return "noSource";
+  if (source.verse && !keepVerse) return "verse";
+  const n = words(answer).length;
+  if (n < MIN_WORDS) return "tooShort";
+  if (n > MAX_WORDS) return "tooLong";
+  if (garbled(answer)) return "garbled";
+  if (missesIn(answer).size) return "unattested";
+  return null;
+}
+
+const sourceOf = (candidate) =>
+  candidate.source ?? (expandRef ? expandRef(candidate.ref) : null);
+
+/**
+ * Which topic each sentence goes to, decided for all of them at once.
+ *
+ * Without this the loop below takes candidates in pool order and first-wins on
+ * the prompt, so a sentence naming two topics always lands in whichever the
+ * pool listed first — and every topic a *lookup* added is listed after the one
+ * a model chose. Left alone, the inflection topics would collect nothing but
+ * the sentences no model had a use for.
+ *
+ * The rule is that a sentence goes where it is scarce. A topic already carrying
+ * sixty quoted questions does not need a sixty-first more than the fourth
+ * declension needs its first, and one test — `--per-topic`, four questions — is
+ * the smallest thing a topic can be given, because a topic short of
+ * `minQuestionsPerTest` is dropped whole further down.
+ *
+ * Three things keep it from robbing Peter. A donor topic must still hold
+ * `--donor-floor` questions after giving, so the topics that are themselves
+ * thin — the hortatory and jussive subjunctives sit at four apiece — can be
+ * drawn on by nobody. A topic that cannot be brought up to a whole test gives
+ * back everything it took, rather than holding three sentences that will be
+ * discarded. And nothing is ever assigned twice: a sentence ships once, under
+ * one topic, so `answerKey` still means what it says and C4 does not move.
+ */
+function allocate(list) {
+  const TARGET = Number(at("--per-topic") ?? QUESTIONS);
+  const FLOOR = Number(at("--donor-floor") ?? 16);
+
+  // One entry per distinct sentence: where it could go, and where it is going.
+  const byAnswer = new Map();
+  for (const candidate of list) {
+    if (unusable(candidate)) continue;
+    const key = answerKey(candidate.answer);
+    // Already shipped, under this topic or another. The loop will drop it and
+    // there is nothing to allocate.
+    if (seenAnswers.has(key) || seenPrompts.has(promptKey(candidate.prompt))) continue;
+    if (!byAnswer.has(key)) byAnswer.set(key, { topics: [], at: candidate.topicId });
+    byAnswer.get(key).topics.push(candidate.topicId);
+  }
+
+  // What each topic holds once the pool has been taken in pool order — which is
+  // what would happen with no allocation at all, and so the thing to improve on.
+  const count = new Map();
+  for (const t of grammar) count.set(t.id, 0);
+  for (const record of byAnswer.values()) {
+    count.set(record.at, (count.get(record.at) ?? 0) + 1);
+  }
+  const before = new Map(count);
+
+  const wanting = [...count.keys()]
+    .filter((id) => count.get(id) < TARGET)
+    .sort((a, b) => count.get(a) - count.get(b));
+
+  const moved = [];
+  for (const topic of wanting) {
+    const took = [];
+    // Richest donor first: the point is to spend somebody's surplus.
+    const offers = [...byAnswer.values()]
+      .filter((r) => r.at !== topic && r.topics.includes(topic))
+      .sort((a, b) => count.get(b.at) - count.get(a.at));
+    for (const record of offers) {
+      if (count.get(topic) >= TARGET) break;
+      if (count.get(record.at) - 1 < FLOOR) continue;
+      count.set(record.at, count.get(record.at) - 1);
+      count.set(topic, count.get(topic) + 1);
+      took.push([record, record.at]);
+      record.at = topic;
+    }
+    if (count.get(topic) >= MIN_QUESTIONS) {
+      if (took.length) moved.push([topic, took.length]);
+      continue;
+    }
+    // Not enough to make a test. Hand every one of them back rather than hold
+    // sentences that `thinTopic` will discard.
+    for (const [record, from] of took.reverse()) {
+      count.set(topic, count.get(topic) - 1);
+      count.set(from, count.get(from) + 1);
+      record.at = from;
+    }
+  }
+
+  console.log(`\n  allocation — ${TARGET} question(s) a topic, donors kept above ${FLOOR}\n`);
+  for (const [topic, n] of moved.sort((a, b) => b[1] - a[1])) {
+    console.log(`  ${String(n).padStart(6)}  -> ${topic} (had ${before.get(topic)})`);
+  }
+  if (!moved.length) console.log("  nothing to move: no topic was both wanting and reachable.");
+
+  /*
+   * And what it cost, which is the half worth arguing with. Nothing here is
+   * created: every question a thin topic gained, a fat one gave up.
+   */
+  const gave = [...count.keys()]
+    .map((id) => [id, before.get(id) - count.get(id)])
+    .filter(([, n]) => n > 0)
+    .sort((a, b) => b[1] - a[1]);
+  if (gave.length) {
+    console.log(`\n  out of the surplus of ${gave.length} topic(s), deepest first:\n`);
+    for (const [topic, n] of gave.slice(0, 12)) {
+      console.log(`  ${String(-n).padStart(6)}  <- ${topic} (${before.get(topic)} -> ${count.get(topic)})`);
+    }
+  }
+
+  /*
+   * Put each sentence's chosen pairing first, and hand back the set so the loop
+   * can name the rest for what they are. Left alone they fall into `duplicate`,
+   * which is true — the prompt is the same prompt — and useless to read: a
+   * sentence offered to five topics is five candidates, and four of them were
+   * never going to be taken. `otherTopic` counts those apart from the sentences
+   * the pack genuinely already ships.
+   */
+  const chosen = new Set([...byAnswer].map(([key, r]) => `${key} | ${r.at}`));
+  const ranked = [...list].sort((a, b) => {
+    const rank = (c) => (chosen.has(`${answerKey(c.answer)} | ${c.topicId}`) ? 0 : 1);
+    return rank(a) - rank(b);
+  });
+  return { ordered: ranked, chosen };
+}
+
+const allocation = argv.includes("--allocate") ? allocate(candidates) : null;
+const ordered = allocation?.ordered ?? candidates;
+const taken = (candidate) =>
+  !allocation || allocation.chosen.has(`${answerKey(candidate.answer)} | ${candidate.topicId}`);
+
 const byTopic = new Map();
 const unattestedForms = new Map();
 
-for (const candidate of candidates) {
+for (const candidate of ordered) {
   const { answer, prompt } = candidate;
   if (!prompt || !answer) {
     funnel.noSource++;
     continue;
   }
 
-  const source = candidate.source ?? (expandRef ? expandRef(candidate.ref) : null);
+  const source = sourceOf(candidate);
   if (!source || !source.author || !source.work) {
     funnel.noSource++;
     continue;
@@ -348,6 +472,11 @@ for (const candidate of candidates) {
     for (const form of missed) {
       unattestedForms.set(form, (unattestedForms.get(form) ?? 0) + 1);
     }
+    continue;
+  }
+
+  if (!taken(candidate)) {
+    funnel.otherTopic++;
     continue;
   }
 

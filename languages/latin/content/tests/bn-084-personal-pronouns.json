@@ -713,5 +713,342 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-084-personal-pronouns-q1",
+  "sectionId": "bn-084-personal-pronouns",
+  "questions": [
+   {
+    "prompt": "You can no longer stay among us; I will not bear it, I will not endure it, I will not allow it.",
+    "answer": "Nōbīscum versārī iam diūtius nōn potes; nōn feram, nōn patiar, nōn sinam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōbīscum",
+     "versārī",
+     "iam",
+     "diūtius",
+     "nōn",
+     "potes",
+     "nōn",
+     "feram",
+     "nōn",
+     "patiar",
+     "nōn",
+     "sinam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.10"
+    }
+   },
+   {
+    "prompt": "If you and the army are well, it is well.",
+    "answer": "Sī tū exercitusque valētis, bene est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "tū",
+     "exercitusque",
+     "valētis",
+     "bene",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "5.2"
+    }
+   },
+   {
+    "prompt": "Unless had lost it, I should not have recovered it.",
+    "answer": "Nisi tū āmīsissēs, numquam recēpissem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nisi",
+     "tū",
+     "āmīsissēs",
+     "numquam",
+     "recēpissem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "11"
+    }
+   },
+   {
+    "prompt": "It would not have come into my mind unless reminded.",
+    "answer": "Nōn mihi, nisi admonitō, vēnisset in mentem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "mihi",
+     "nisi",
+     "admonitō",
+     "vēnisset",
+     "in",
+     "mentem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "2.180"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-084-personal-pronouns-q2",
+  "sectionId": "bn-084-personal-pronouns",
+  "questions": [
+   {
+    "prompt": "What harm will the mangling by wild beasts do me if I don't feel anything?",
+    "answer": "Quid igitur mihi ferārum laniātus oberit nihil sentientī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quid",
+     "igitur",
+     "mihi",
+     "ferārum",
+     "laniātus",
+     "oberit",
+     "nihil",
+     "sentientī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.104"
+    }
+   },
+   {
+    "prompt": "Do not doubt that I will do all.",
+    "answer": "Illud cavē dubitēs quīn ego omnia faciam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Illud",
+     "cavē",
+     "dubitēs",
+     "quīn",
+     "ego",
+     "omnia",
+     "faciam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "5.20.6"
+    }
+   },
+   {
+    "prompt": "I doubt whether you will receive this very letter.",
+    "answer": "Dubitābam tū hās ipsās litterās essēsne acceptūrus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dubitābam",
+     "tū",
+     "hās",
+     "ipsās",
+     "litterās",
+     "essēsne",
+     "acceptūrus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "15.9"
+    }
+   },
+   {
+    "prompt": "I think we must be allowed to use a Greek word.",
+    "answer": "Putō concēdī nōbīs oportēre ut Graecō verbō ūtāmur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Putō",
+     "concēdī",
+     "nōbīs",
+     "oportēre",
+     "ut",
+     "Graecō",
+     "verbō",
+     "ūtāmur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "3.15"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-084-personal-pronouns-q3",
+  "sectionId": "bn-084-personal-pronouns",
+  "questions": [
+   {
+    "prompt": "For it had not happened to be necessary to me.",
+    "answer": "Nec enim acciderat mihi opus esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "enim",
+     "acciderat",
+     "mihi",
+     "opus",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "6.11.1"
+    }
+   },
+   {
+    "prompt": "I hope that will be our happy lot.",
+    "answer": "Spērō fore ut contingat id nōbīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Spērō",
+     "fore",
+     "ut",
+     "contingat",
+     "id",
+     "nōbīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.82"
+    }
+   },
+   {
+    "prompt": "Consider whether you ought to have any hesitation.",
+    "answer": "vidēte num dubitandum vōbīs sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vidēte",
+     "num",
+     "dubitandum",
+     "vōbīs",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "19"
+    }
+   },
+   {
+    "prompt": "In this one circumstance do we perhaps most of all surpass brutes, that we can talk with each other.",
+    "answer": "hōc ūnō praestāmus vel maximē ferīs, quod conloquimur inter nōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hōc",
+     "ūnō",
+     "praestāmus",
+     "vel",
+     "maximē",
+     "ferīs",
+     "quod",
+     "conloquimur",
+     "inter",
+     "nōs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 32"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-084-personal-pronouns-q4",
+  "sectionId": "bn-084-personal-pronouns",
+  "questions": [
+   {
+    "prompt": "It must be the case that you have made his acquaintance yourself.",
+    "answer": "fierī nōn potest ut eum tū nōn cōgnōverīs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fierī",
+     "nōn",
+     "potest",
+     "ut",
+     "eum",
+     "tū",
+     "nōn",
+     "cōgnōverīs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 190"
+    }
+   },
+   {
+    "prompt": "I have no doubt about what you think is our duty to do.",
+    "answer": "nōn dubitō, quid nōbīs agendum putēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nōn",
+     "dubitō",
+     "quid",
+     "nōbīs",
+     "agendum",
+     "putēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10, 1, 2"
+    }
+   },
+   {
+    "prompt": "Tell it at Sparta, friend, that thou hast seen us lying here, obedient to our country’s holy laws.",
+    "answer": "dīc, hospes, Spartae nōs tē hīc vīdisse iacentīs, dum sānctīs patriae lēgibus obsequimur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "dīc",
+     "hospes",
+     "Spartae",
+     "nōs",
+     "tē",
+     "hīc",
+     "vīdisse",
+     "iacentīs",
+     "dum",
+     "sānctīs",
+     "patriae",
+     "lēgibus",
+     "obsequimur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1, 101"
+    }
+   },
+   {
+    "prompt": "I am thinking of staying here till I feel better.",
+    "answer": "ego hīc cōgitō commorārī, quoad mē reficiam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ego",
+     "hīc",
+     "cōgitō",
+     "commorārī",
+     "quoad",
+     "mē",
+     "reficiam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "7, 26, 2"
+    }
+   }
+  ]
  }
 ]

@@ -46,6 +46,25 @@
  * Nothing about attestation is consulted here, and `--max-misses` does not
  * apply: this mode is about who wrote a sentence, not about whether its words
  * can be confirmed.
+ *
+ * --- the third mode --------------------------------------------------------
+ *
+ *   node --import tsx scripts/prune-tests.mjs --pack languages/latin --quoted
+ *
+ * Takes the quoted tests back out of every topic, so `quote-tests.mjs` can deal
+ * the pool again from the start.
+ *
+ * This is not a deletion in the way the other two are: the sentences are in the
+ * pools, and putting them back is one command. It exists because the composer
+ * refuses to ship a sentence twice — it seeds its prompt and answer keys from
+ * everything already on disk — so once a pool has been composed, the only way
+ * to compose it *differently* is to compose it again from nothing. A pool that
+ * has been dealt to the syntax topics cannot be re-dealt to the inflection
+ * topics one sentence at a time.
+ *
+ * It leaves the generated tests alone, so no topic loses its floor by running
+ * this: every topic was at 6 tests and 16 questions on generated work before
+ * the first quotation arrived.
  */
 import { existsSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -62,6 +81,7 @@ const profile = loadProfile(dir);
 const tests = loadTests(dir);
 const APPLY = argv.includes("--apply");
 const GENERATED = argv.includes("--generated");
+const QUOTED = argv.includes("--quoted");
 const opt = (name, def) => {
   const i = argv.indexOf(name);
   return i >= 0 ? argv[i + 1] : def;
@@ -69,13 +89,18 @@ const opt = (name, def) => {
 const MAX = Number(opt("--max-misses", profile.attestation?.maxMissesPerQuestion ?? 0));
 const ONLY = opt("--topic", null);
 
-if (GENERATED && argv.includes("--max-misses")) {
+if ((GENERATED || QUOTED) && argv.includes("--max-misses")) {
   console.error(
-    "--generated and --max-misses are two different questions and do not combine:\n" +
+    "--generated/--quoted and --max-misses are different questions and do not combine:\n" +
       "  --max-misses  takes out questions whose words the reference cannot confirm\n" +
       "  --generated   takes out questions a model wrote, where a book has replaced them\n" +
+      "  --quoted      takes out the quoted tests, so the pool can be dealt again\n" +
       "Run them one at a time.",
   );
+  process.exit(2);
+}
+if (GENERATED && QUOTED) {
+  console.error("--generated and --quoted are opposite modes; run one at a time.");
   process.exit(2);
 }
 
@@ -100,8 +125,37 @@ const write = (topic, kept) => {
 
 if (GENERATED) {
   pruneGenerated();
+} else if (QUOTED) {
+  pruneQuoted();
 } else {
   pruneUnattested();
+}
+
+// --- taking the quotations back, so they can be dealt again ------------------
+
+function pruneQuoted() {
+  for (const [topic, list] of Object.entries(tests)) {
+    if (ONLY && topic !== ONLY) continue;
+    const { quoted, generated } = partition(list);
+    if (!quoted.length) continue;
+
+    dropped += quoted.reduce((n, t) => n + t.questions.length, 0);
+    touched.push({ topic, before: list.length, after: generated.length });
+    console.log(
+      `  ${topic.padEnd(48)} ${list.length} -> ${generated.length} tests  ` +
+        `(${quoted.reduce((n, t) => n + t.questions.length, 0)} quoted questions go back to the pool)`,
+    );
+    if (APPLY) write(topic, generated);
+  }
+
+  console.log(
+    `\n${dropped} quoted question${dropped === 1 ? "" : "s"} in ` +
+      `${touched.length} topic${touched.length === 1 ? "" : "s"}, returned to the pools they came from.`,
+  );
+  summarize(
+    "Now deal them again",
+    `node --import tsx scripts/quote-tests.mjs --pack ${dir} --from quotes --allocate`,
+  );
 }
 
 // --- taking out what the reference cannot confirm ----------------------------

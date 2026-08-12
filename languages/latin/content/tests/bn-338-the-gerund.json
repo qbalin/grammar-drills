@@ -1182,36 +1182,6 @@
     }
    },
    {
-    "prompt": "For it is now permitted, the subtlety of debate laid aside, to contemplate with the eyes in a certain way the beauty of those things which we say were established by divine providence.",
-    "answer": "Licet enim iam remōtā subtīlitāte disputandī oculīs quōdam modō contemplārī pulchritūdinem rērum eārum, quās dīvīnā prōvidentiā dīcimus cōnstituās.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Licet",
-     "enim",
-     "iam",
-     "remōtā",
-     "subtīlitāte",
-     "disputandī",
-     "oculīs",
-     "quōdam",
-     "modō",
-     "contemplārī",
-     "pulchritūdinem",
-     "rērum",
-     "eārum",
-     "quās",
-     "dīvīnā",
-     "prōvidentiā",
-     "dīcimus",
-     "cōnstituās"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Natura Deorum",
-     "locus": "II"
-    }
-   },
-   {
     "prompt": "You are alive, and you are alive not to lay aside your boldness, but to strengthen it.",
     "answer": "Vīvis, et vīvis nōn ad dēpōnendam, sed ad cōnfirmandam audāciam.",
     "kind": "translate-en-la",
@@ -1232,13 +1202,7 @@
      "work": "In Catilinam orationes",
      "locus": "1.4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q3",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "Caesar, when the necessary orders had been given, ran down to encourage the soldiers, to whatever quarter chance offered, and came to the tenth legion.",
     "answer": "Caesar, necessāriīs rēbus imperātīs, ad cohortandōs mīlitēs, quam [in] partem fors obtulit, dēcucurrit et ad legiōnem decimam dēvēnit.",
@@ -1268,7 +1232,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "2.21"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q3",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "In how many men does the eloquence and the daily itch to show off their talent draw out their life-blood!",
     "answer": "Quam multōrum ēloquentia et cotīdiāna ostentandī ingeniī sollicitātiō sanguinem ēdūcit!",
@@ -1328,13 +1298,7 @@
      "work": "Philippicae",
      "locus": "2.53"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q4",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "He appointed a day for doing the work.",
     "answer": "Diem praestitit operī faciendō.",
@@ -1350,7 +1314,13 @@
      "work": "In Verrem",
      "locus": "2.1.148"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q4",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "The other seasons are fitted to reap and gather in the harvest.",
     "answer": "Reliqua tempora dēmetendīs frūctibus et percipiendīs accommodāta sunt.",
@@ -1406,13 +1376,7 @@
      "work": "In Catilinam",
      "locus": "1.4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q5",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "Owing to bad business-managing they are staggering under debts.",
     "answer": "male gerendō negōtiō in aere aliēnō vacillant.",
@@ -1431,7 +1395,13 @@
      "work": "In Catilinam",
      "locus": "2, 21"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q5",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "’tis no time for shill-I-shall-I-ing.",
     "answer": "nōn est locus ad tergiversandum.",
@@ -1483,13 +1453,7 @@
      "work": "Epistulae",
      "locus": "6, 27, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q6",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "That he passed along the art of distinguishing between the true and the false.",
     "answer": "artem sē trādere vēra ac falsa dīiūdicandī.",
@@ -1508,7 +1472,13 @@
      "work": "De Oratore",
      "locus": "2, 157"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q6",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "He is come to Hannibal to sue for peace.",
     "answer": "ad pācem petendam ad Hannibalem vēnit.",
@@ -1560,13 +1530,7 @@
      "work": "De Finibus Bonorum et Malorum",
      "locus": "5, 42"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q7",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "A morass hindered the Romans from pursuit.",
     "answer": "palūs Rōmānōs ad īnsequendum tardābat.",
@@ -1583,7 +1547,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "7, 26, 2"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q7",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "So that the infantry were hampered in crossing.",
     "answer": "ut peditēs ad trānseundum impedīrentur.",
@@ -1633,13 +1603,7 @@
      "work": "De Natura Deorum",
      "locus": "2, 46"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q8",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "He made use of the sort of food which was easiest to digest.",
     "answer": "ūtēbātur eō cibō quī esset facillimus ad concoquendum.",
@@ -1659,7 +1623,13 @@
      "work": "De Finibus Bonorum et Malorum",
      "locus": "2, 64"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q8",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "Character discovers itself during play.",
     "answer": "mōrēs sē inter lūdendum dētegunt.",
@@ -1711,13 +1681,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "5, 27, 5"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q9",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "The consul devotes himself to propitiating the gods and raising troops.",
     "answer": "cōnsul plācandīs dīs habendōque dīlēctū dat operam.",
@@ -1736,7 +1700,13 @@
      "work": "Ab Urbe Condita",
      "locus": "22, 2, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q9",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "He withdraws a legion from the field to build a camp.",
     "answer": "subdūcit ex aciē legiōnem faciendīs castrīs.",
@@ -1786,13 +1756,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "2, 21, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q10",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "Their downfall was a warning to the Marsians to send envoys to sue for peace.",
     "answer": "exemplō eōrum clādēs fuit ut Mārsī mitterent ōrātōrēs pācis petendae.",
@@ -1814,7 +1778,13 @@
      "work": "Ab Urbe Condita",
      "locus": "9, 45, 18"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q10",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "Or if vessels for breaking down the works had been sent.",
     "answer": "sīve nāvēs dēiciendī operis essent missae.",
@@ -1869,13 +1839,7 @@
      "work": "Ab Urbe Condita",
      "locus": "24, 16, 14"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q11",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "They fled, not so much to protect themselves as to crush your plans.",
     "answer": "nōn tam suī cōnservandī quam tuōrum cōnsiliōrum reprimendōrum causā profūgērunt.",
@@ -1897,7 +1861,13 @@
      "work": "In Catilinam",
      "locus": "1, 7"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q11",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "That the time was come for them to revenge themselves.",
     "answer": "vēnisse tempus ulcīscendī suī.",
@@ -1952,13 +1922,7 @@
      "work": "De Legibus",
      "locus": "2, 59"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q12",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "He ordered one into irons, more to vindicate his authority than because an individual was to blame.",
     "answer": "ūnum vincīrī iubet, magis ūsurpandī iūris quam quia ūnīus culpa foret.",
@@ -1981,7 +1945,13 @@
      "work": "Historiae",
      "locus": "4, 25"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q12",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "It cannot be crushed by patience and procrastination.",
     "answer": "opprimī sustentandō ac prōlātandō nūllō pactō potest.",
@@ -2037,13 +2007,7 @@
      "work": "Epistulae ad Atticum",
      "locus": "4, 1, 6"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q13",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "At the distribution, the district fell to him.",
     "answer": "partibus dīvidendīs ipsī regiō ēvēnit.",
@@ -2060,7 +2024,13 @@
      "work": "Ab Urbe Condita",
      "locus": "25, 30, 6"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q13",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "In his use of Latin he was a match for anybody.",
     "answer": "Latīnē loquendō cuivīs erat pār.",
@@ -2121,13 +2091,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "3, 20"
     }
-   }
-  ]
- },
- {
-  "id": "bn-338-the-gerund-q14",
-  "sectionId": "bn-338-the-gerund",
-  "questions": [
+   },
    {
     "prompt": "They give no instruction about studying up a case.",
     "answer": "nihil dē causā discendā praecipiunt.",
@@ -2144,7 +2108,13 @@
      "work": "De Oratore",
      "locus": "2, 100"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-338-the-gerund-q14",
+  "sectionId": "bn-338-the-gerund",
+  "questions": [
    {
     "prompt": "Africanus’s swiftness in execution.",
     "answer": "Āfricānī in rē gerundā celeritātem.",

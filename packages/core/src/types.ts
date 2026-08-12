@@ -81,6 +81,12 @@ export interface LemmaEntry {
   pos: string;
   gender?: string;
   declension?: string;
+  /** Which conjugation the dictionary files a verb under. Verbs only: a
+   *  `declension` on a verb is its participle's, and says nothing about this. */
+  conjugation?: string;
+  /** The handful of entry-level tags the pack keeps — see `classOf` in
+   *  `scripts/lib/lemma-fields.mjs` for which, and why it is a short list. */
+  tags?: string[];
   /** Corpus rank, lower = more frequent; used to order ambiguous candidates. */
   rank?: number;
 }

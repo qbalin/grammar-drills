@@ -1161,5 +1161,338 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-109-verbs-in-io-of-the-third-conjugation-q1",
+  "sectionId": "bn-109-verbs-in-io-of-the-third-conjugation",
+  "questions": [
+   {
+    "prompt": "Nor did the consul delay the fight, since he had sought that very thing. as who had sought.",
+    "answer": "Nec cōnsul, ut quī id ipsum quaesīsset, moram certāminī fēcit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "cōnsul",
+     "ut",
+     "quī",
+     "id",
+     "ipsum",
+     "quaesīsset",
+     "moram",
+     "certāminī",
+     "fēcit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "42.7"
+    }
+   },
+   {
+    "prompt": "When the soldiers had won the victory, they left nothing to the vanquished.",
+    "answer": "Mīlitēs postquam victōriam adeptī sunt, nihil reliquī victīs fēcēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mīlitēs",
+     "postquam",
+     "victōriam",
+     "adeptī",
+     "sunt",
+     "nihil",
+     "reliquī",
+     "victīs",
+     "fēcēre"
+    ],
+    "source": {
+     "author": "Gaius Sallustius Crispus",
+     "work": "Bellum Catilinae",
+     "locus": "11"
+    }
+   },
+   {
+    "prompt": "Our men, as soon as they had taken a position on dry ground, made an attack on the enemy.",
+    "answer": "Nostrī simul in āridō cōnstitērunt, in hostīs impetum fēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nostrī",
+     "simul",
+     "in",
+     "āridō",
+     "cōnstitērunt",
+     "in",
+     "hostīs",
+     "impetum",
+     "fēcērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4.26"
+    }
+   },
+   {
+    "prompt": "I find no fault; since I myself did not escape that blame.",
+    "answer": "Nec reprehendō: quippe cum ipse istam reprehēnsiōnem nōn fūgerim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nec",
+     "reprehendō",
+     "quippe",
+     "cum",
+     "ipse",
+     "istam",
+     "reprehēnsiōnem",
+     "nōn",
+     "fūgerim"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10.3 A"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-109-verbs-in-io-of-the-third-conjugation-q2",
+  "sectionId": "bn-109-verbs-in-io-of-the-third-conjugation",
+  "questions": [
+   {
+    "prompt": "Nothing hinders us from being able to do that.",
+    "answer": "Nihil impedit quōminus id facere possīmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nihil",
+     "impedit",
+     "quōminus",
+     "id",
+     "facere",
+     "possīmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "1.33"
+    }
+   },
+   {
+    "prompt": "I am glad that I cannot pass it by.",
+    "answer": "Faciō libenter quod eam nōn possum praeterīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Faciō",
+     "libenter",
+     "quod",
+     "eam",
+     "nōn",
+     "possum",
+     "praeterīre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "1.63"
+    }
+   },
+   {
+    "prompt": "He requests him to make an end of entreaty.",
+    "answer": "rogat fīnem ōrandī faciat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "rogat",
+     "fīnem",
+     "ōrandī",
+     "faciat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 20, 5"
+    }
+   },
+   {
+    "prompt": "He warns him he must pursue his march with care.",
+    "answer": "hunc admonet iter cautē faciat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "hunc",
+     "admonet",
+     "iter",
+     "cautē",
+     "faciat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 49, 3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-109-verbs-in-io-of-the-third-conjugation-q3",
+  "sectionId": "bn-109-verbs-in-io-of-the-third-conjugation",
+  "questions": [
+   {
+    "prompt": "He tells the soldiers they must stop fighting a little while.",
+    "answer": "mīlitēs certiōrēs facit, paulisper intermitterent proelium.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mīlitēs",
+     "certiōrēs",
+     "facit",
+     "paulisper",
+     "intermitterent",
+     "proelium"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 5, 3"
+    }
+   },
+   {
+    "prompt": "I am eager to know how you do and how you are amusing yourself.",
+    "answer": "quid agās et ut tē oblectēs scīre cupiō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quid",
+     "agās",
+     "et",
+     "ut",
+     "tē",
+     "oblectēs",
+     "scīre",
+     "cupiō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Quintum Fratrem",
+     "locus": "2, 3, 7"
+    }
+   },
+   {
+    "prompt": "As far as you can without troubling yourself.",
+    "answer": "quod sine molestiā tuā facere poteris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "sine",
+     "molestiā",
+     "tuā",
+     "facere",
+     "poteris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "1, 5, 7"
+    }
+   },
+   {
+    "prompt": "As to his moving a great many Germans over to Gaul, that he did for self-protection.",
+    "answer": "quod multitūdinem Germānōrum in Galliam trādūcat, id sē suī mūniendī causā facere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "multitūdinem",
+     "Germānōrum",
+     "in",
+     "Galliam",
+     "trādūcat",
+     "id",
+     "sē",
+     "suī",
+     "mūniendī",
+     "causā",
+     "facere"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 44, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-109-verbs-in-io-of-the-third-conjugation-q4",
+  "sectionId": "bn-109-verbs-in-io-of-the-third-conjugation",
+  "questions": [
+   {
+    "prompt": "They were already preparing to do it, when suddenly the married women rushed forward.",
+    "answer": "iamque hoc facere apparābant, cum mātres familiae repente prōcurrērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "iamque",
+     "hoc",
+     "facere",
+     "apparābant",
+     "cum",
+     "mātres",
+     "familiae",
+     "repente",
+     "prōcurrērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 26, 3"
+    }
+   },
+   {
+    "prompt": "Before I could utter a word he arose from his seat.",
+    "answer": "antequam verbum facerem, dē sellā surrēxit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "antequam",
+     "verbum",
+     "facerem",
+     "dē",
+     "sellā",
+     "surrēxit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 147"
+    }
+   },
+   {
+    "prompt": "He orders his men to do the same.",
+    "answer": "suīs, ut idem faciant, imperat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "suīs",
+     "ut",
+     "idem",
+     "faciant",
+     "imperat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 37, 1"
+    }
+   },
+   {
+    "prompt": "They made their march look exactly like a stampede.",
+    "answer": "fēcērunt ut cōnsimilis fugae profectiō vidērētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fēcērunt",
+     "ut",
+     "cōnsimilis",
+     "fugae",
+     "profectiō",
+     "vidērētur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "2, 11, 1"
+    }
+   }
+  ]
  }
 ]

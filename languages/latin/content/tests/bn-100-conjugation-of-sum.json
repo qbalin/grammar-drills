@@ -704,5 +704,352 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-100-conjugation-of-sum-q1",
+  "sectionId": "bn-100-conjugation-of-sum",
+  "questions": [
+   {
+    "prompt": "'I am here,' he says. And I wait to hear what you will answer to the question I was asking.",
+    "answer": "Istīc sum, inquit. expectoque quid ad id, quod quaerēbam, respondeās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Istīc",
+     "sum",
+     "inquit",
+     "expectoque",
+     "quid",
+     "ad",
+     "id",
+     "quod",
+     "quaerēbam",
+     "respondeās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De finibus bonorum et malorum",
+     "locus": "5.78"
+    }
+   },
+   {
+    "prompt": "I shall always feel anxious as to what you are doing, until I actually know what you have done.",
+    "answer": "Mihi ūsque cūrae erit quid agās, dum quid ēgeris scierō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Mihi",
+     "ūsque",
+     "cūrae",
+     "erit",
+     "quid",
+     "agās",
+     "dum",
+     "quid",
+     "ēgeris",
+     "scierō"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "12.19.3"
+    }
+   },
+   {
+    "prompt": "So long as there were any garrisons, he was in the garrisons of Sulla.",
+    "answer": "Dum praesidia ūlla fuērunt, in Sullae praesidiīs fuit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dum",
+     "praesidia",
+     "ūlla",
+     "fuērunt",
+     "in",
+     "Sullae",
+     "praesidiīs",
+     "fuit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "126"
+    }
+   },
+   {
+    "prompt": "Who is ignorant that there are three races of Greeks?",
+    "answer": "Quis īgnōrat quīn tria Graecōrum genera sint?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quis",
+     "īgnōrat",
+     "quīn",
+     "tria",
+     "Graecōrum",
+     "genera",
+     "sint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Flacco",
+     "locus": "64"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-100-conjugation-of-sum-q2",
+  "sectionId": "bn-100-conjugation-of-sum",
+  "questions": [
+   {
+    "prompt": "We were warned to be careful.",
+    "answer": "Admonitī sumus ut cavērēmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Admonitī",
+     "sumus",
+     "ut",
+     "cavērēmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "8.11 D. 3"
+    }
+   },
+   {
+    "prompt": "I asked Catiline whether he had been at the meeting at Marcus Loeca's or not.",
+    "answer": "Quaesīvī ā Catilīnā in conventū apud M. Laecam fuisset necne.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quaesīvī",
+     "ā",
+     "Catilīnā",
+     "in",
+     "conventū",
+     "apud",
+     "M",
+     "Laecam",
+     "fuisset",
+     "necne"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2.13"
+    }
+   },
+   {
+    "prompt": "Hereafter I shall not write to you what I am going to do, but what I have done.",
+    "answer": "Posthāc nōn scrībam ad tē quid factūrus sim, sed quid fēcerim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Posthāc",
+     "nōn",
+     "scrībam",
+     "ad",
+     "tē",
+     "quid",
+     "factūrus",
+     "sim",
+     "sed",
+     "quid",
+     "fēcerim"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "10.18"
+    }
+   },
+   {
+    "prompt": "It is often seen, in a trifling matter of money, how unprincipled some people are.",
+    "answer": "Quīdam saepe in parvā pecūniā perspiciuntur quam sint levēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quīdam",
+     "saepe",
+     "in",
+     "parvā",
+     "pecūniā",
+     "perspiciuntur",
+     "quam",
+     "sint",
+     "levēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Laelius de Amicitia",
+     "locus": "63"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-100-conjugation-of-sum-q3",
+  "sectionId": "bn-100-conjugation-of-sum",
+  "questions": [
+   {
+    "prompt": "I asked Catiline whether he had been at the meeting or not.",
+    "answer": "quaesīvī ā Catilīnā in conventū fuisset, necne.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quaesīvī",
+     "ā",
+     "Catilīnā",
+     "in",
+     "conventū",
+     "fuisset",
+     "necne"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 13"
+    }
+   },
+   {
+    "prompt": "Let me know whether I am a captive or a mother.",
+    "answer": "sine sciam captīva māterne sim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sine",
+     "sciam",
+     "captīva",
+     "māterne",
+     "sim"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 40, 5"
+    }
+   },
+   {
+    "prompt": "Panaetius eulogizes Africanus, ‘for being so abstinent’.",
+    "answer": "laudat Africānum Panaetius, quod fuerit abstinēns.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "laudat",
+     "Africānum",
+     "Panaetius",
+     "quod",
+     "fuerit",
+     "abstinēns"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "2, 76"
+    }
+   },
+   {
+    "prompt": "I will submit to the charge of inconsistency rather than be cruel towards you.",
+    "answer": "potius vituperātiōnem incōnstantiae suscipiam, quam in tē sim crūdēlis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "potius",
+     "vituperātiōnem",
+     "incōnstantiae",
+     "suscipiam",
+     "quam",
+     "in",
+     "tē",
+     "sim",
+     "crūdēlis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "5, 105"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-100-conjugation-of-sum-q4",
+  "sectionId": "bn-100-conjugation-of-sum",
+  "questions": [
+   {
+    "prompt": "Most of them were slain before they could see the hidden enemy.",
+    "answer": "plērīque interfectī sunt, priusquam occultum hostem vidērent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "plērīque",
+     "interfectī",
+     "sunt",
+     "priusquam",
+     "occultum",
+     "hostem",
+     "vidērent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "35, 29, 3"
+    }
+   },
+   {
+    "prompt": "I rather think he was king over savages.",
+    "answer": "vereor nē barbarōrum rēx fuerit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vereor",
+     "nē",
+     "barbarōrum",
+     "rēx",
+     "fuerit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Re Publica",
+     "locus": "1, 58"
+    }
+   },
+   {
+    "prompt": "So far from these things being made for brutes, we see that brutes themselves were created for man.",
+    "answer": "tantum abest ut haec bēstiārum causā parāta sint, ut ipsās bēstiās hominum grātiā generātās esse videāmus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tantum",
+     "abest",
+     "ut",
+     "haec",
+     "bēstiārum",
+     "causā",
+     "parāta",
+     "sint",
+     "ut",
+     "ipsās",
+     "bēstiās",
+     "hominum",
+     "grātiā",
+     "generātās",
+     "esse",
+     "videāmus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "2, 158"
+    }
+   },
+   {
+    "prompt": "Who can doubt that there is money in virtue?",
+    "answer": "quis dubitet, quīn in virtūte dīvitiae sint?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quis",
+     "dubitet",
+     "quīn",
+     "in",
+     "virtūte",
+     "dīvitiae",
+     "sint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "48"
+    }
+   }
+  ]
  }
 ]

@@ -865,5 +865,405 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-020-first-declension-q1",
+  "sectionId": "bn-020-first-declension",
+  "questions": [
+   {
+    "prompt": "As a field, however fertile, cannot be fruitful without cultivation, so neither can the mind without teaching.",
+    "answer": "Ut ager, quamvīs fertilis, sine cultūrā frūctuōsus esse nōn potest, sīc sine doctrīnā animus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ut",
+     "ager",
+     "quamvīs",
+     "fertilis",
+     "sine",
+     "cultūrā",
+     "frūctuōsus",
+     "esse",
+     "nōn",
+     "potest",
+     "sīc",
+     "sine",
+     "doctrīnā",
+     "animus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "2.13"
+    }
+   },
+   {
+    "prompt": "But even if that were bearing down on me most heavily, still I have always been of this mind: to count the odium won by valor as glory, not as odium.",
+    "answer": "Quod sī ea mihi māximē impendēret, tamen hōc animō fuī semper: ut invidiam virtūte partam glōriam, nōn invidiam putārem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quod",
+     "sī",
+     "ea",
+     "mihi",
+     "māximē",
+     "impendēret",
+     "tamen",
+     "hōc",
+     "animō",
+     "fuī",
+     "semper",
+     "ut",
+     "invidiam",
+     "virtūte",
+     "partam",
+     "glōriam",
+     "nōn",
+     "invidiam",
+     "putārem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1.29"
+    }
+   },
+   {
+    "prompt": "If any have shown themselves of great genius in that department, they have failed to compete with the glory of the Greeks.",
+    "answer": "Sī quī māgnīs in eō genere exstitērunt, nōn satis Graecōrum glōriae respondērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "quī",
+     "māgnīs",
+     "in",
+     "eō",
+     "genere",
+     "exstitērunt",
+     "nōn",
+     "satis",
+     "Graecōrum",
+     "glōriae",
+     "respondērunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.3"
+    }
+   },
+   {
+    "prompt": "I have received from Rome a bundle of letters without any from you, which, provided you have been well and at Rome, I take to be the fault of Philotimus, not yours.",
+    "answer": "Accēpī Rōmā sine epistulā tuā fasciculum litterārum in quō, sī modo valuistī et Rōmae fuistī, Philotīmī dūcō esse culpam nōn tuam.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Accēpī",
+     "Rōmā",
+     "sine",
+     "epistulā",
+     "tuā",
+     "fasciculum",
+     "litterārum",
+     "in",
+     "quō",
+     "sī",
+     "modo",
+     "valuistī",
+     "et",
+     "Rōmae",
+     "fuistī",
+     "Philotīmī",
+     "dūcō",
+     "esse",
+     "culpam",
+     "nōn",
+     "tuam"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "5.17"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-020-first-declension-q2",
+  "sectionId": "bn-020-first-declension",
+  "questions": [
+   {
+    "prompt": "If they had not been helped at all by literature, they never would have given their attention to the study of it.",
+    "answer": "Sī nihil litterīs adiuvārentur, numquam sē ad eārum studium contulissent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "nihil",
+     "litterīs",
+     "adiuvārentur",
+     "numquam",
+     "sē",
+     "ad",
+     "eārum",
+     "studium",
+     "contulissent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Archia",
+     "locus": "16"
+    }
+   },
+   {
+    "prompt": "They would have abandoned their fields, if Metellus had not sent them a letter.",
+    "answer": "Relictūrī agrōs erant, nisi ad eōs Metellus litterās mīsisset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Relictūrī",
+     "agrōs",
+     "erant",
+     "nisi",
+     "ad",
+     "eōs",
+     "Metellus",
+     "litterās",
+     "mīsisset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "3.121"
+    }
+   },
+   {
+    "prompt": "Glory necessarily follows virtue, even if that is not one's aim.",
+    "answer": "Virtūtem necessāriō glōria, etiamsī tū id nōn agās, cōnsequitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virtūtem",
+     "necessāriō",
+     "glōria",
+     "etiamsī",
+     "tū",
+     "id",
+     "nōn",
+     "agās",
+     "cōnsequitur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.91"
+    }
+   },
+   {
+    "prompt": "Wherever the weakness of the timber seemed to require, piles were put between.",
+    "answer": "Ubi imbēcillitās māteriae postulāre vidērētur, pīlae interpōnuntur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ubi",
+     "imbēcillitās",
+     "māteriae",
+     "postulāre",
+     "vidērētur",
+     "pīlae",
+     "interpōnuntur"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2.16"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-020-first-declension-q3",
+  "sectionId": "bn-020-first-declension",
+  "questions": [
+   {
+    "prompt": "Wherever he advanced, he carried victory with him.",
+    "answer": "Quōcumque sē intulisset, victōriam sēcum trahēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quōcumque",
+     "sē",
+     "intulisset",
+     "victōriam",
+     "sēcum",
+     "trahēbat"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "6.8"
+    }
+   },
+   {
+    "prompt": "As for me, even if I had private quarrels with Caesar, it would still be my duty to serve the best interests of the state at this crisis.",
+    "answer": "Ego, sī essent inimīcitiae mihi cum C. Caesare, tamen hōc tempore reī pūblicae cōnsulere . . . dēbērem.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ego",
+     "sī",
+     "essent",
+     "inimīcitiae",
+     "mihi",
+     "cum",
+     "C",
+     "Caesare",
+     "tamen",
+     "hōc",
+     "tempore",
+     "reī",
+     "pūblicae",
+     "cōnsulere",
+     "dēbērem"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Provinciis Consularibus",
+     "locus": "47"
+    }
+   },
+   {
+    "prompt": "A man has a daughter, he needs money.",
+    "answer": "fīliam quis habet, pecūniā opus est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "fīliam",
+     "quis",
+     "habet",
+     "pecūniā",
+     "opus",
+     "est"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Paradoxa Stoicorum",
+     "locus": "44"
+    }
+   },
+   {
+    "prompt": "For even supposing he had asked nobody but Patina, he might have known that a priest must be appointed.",
+    "answer": "ut enim nēminem alium nisi T. Patinam rogāsset, scīre potuit prōdī flāminem necesse esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "enim",
+     "nēminem",
+     "alium",
+     "nisi",
+     "T",
+     "Patinam",
+     "rogāsset",
+     "scīre",
+     "potuit",
+     "prōdī",
+     "flāminem",
+     "necesse",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "46"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-020-first-declension-q4",
+  "sectionId": "bn-020-first-declension",
+  "questions": [
+   {
+    "prompt": "They will pay respect enough to my memory, provided they consider me worthy of my ancestors.",
+    "answer": "satis memoriae meae tribuent, ut maiōribus meīs dignum crēdant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "satis",
+     "memoriae",
+     "meae",
+     "tribuent",
+     "ut",
+     "maiōribus",
+     "meīs",
+     "dignum",
+     "crēdant"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "4, 38"
+    }
+   },
+   {
+    "prompt": "If night is always favourable for a sortie, and it always is, this particular hour of the night is surely the very best time.",
+    "answer": "sī nox opportūna est ēruptiōnī, sīcut est, haec profectō noctis aptissima hōra est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "nox",
+     "opportūna",
+     "est",
+     "ēruptiōnī",
+     "sīcut",
+     "est",
+     "haec",
+     "profectō",
+     "noctis",
+     "aptissima",
+     "hōra",
+     "est"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "7, 35, 10"
+    }
+   },
+   {
+    "prompt": "If a man’s pulse beats thus and so, he always has fever.",
+    "answer": "sī cui vēnae sīc moventur, is habet febrim.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "cui",
+     "vēnae",
+     "sīc",
+     "moventur",
+     "is",
+     "habet",
+     "febrim"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Fato",
+     "locus": "15"
+    }
+   },
+   {
+    "prompt": "I had yielded, if you will have it that the commons were opposed to me, though they were not, to hatred.",
+    "answer": "cesseram, sī aliēnam ā mē plēbem fuisse voltis, quae nōn fuit, invidiae.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "cesseram",
+     "sī",
+     "aliēnam",
+     "ā",
+     "mē",
+     "plēbem",
+     "fuisse",
+     "voltis",
+     "quae",
+     "nōn",
+     "fuit",
+     "invidiae"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sestio",
+     "locus": "64"
+    }
+   }
+  ]
  }
 ]

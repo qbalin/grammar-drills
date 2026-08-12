@@ -727,6 +727,64 @@
     }
    },
    {
+    "prompt": "In Illyricum, and at Alexandrea itself.",
+    "answer": "in Illyricō, in ipsā Alexandrēā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "Illyricō",
+     "in",
+     "ipsā",
+     "Alexandrēā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "11, 16, 1"
+    }
+   },
+   {
+    "prompt": "That Antiochus was in Syria, Ptolemy at Alexandria.",
+    "answer": "Antiochum in Syriā, Ptolemaeum in Alexandrīā esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Antiochum",
+     "in",
+     "Syriā",
+     "Ptolemaeum",
+     "in",
+     "Alexandrīā",
+     "esse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "42, 26, 7"
+    }
+   },
+   {
+    "prompt": "On the Alban mount and at Lavinium.",
+    "answer": "in mōnte Albānō Lāvīniōque.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "in",
+     "mōnte",
+     "Albānō",
+     "Lāvīniōque"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "5, 52, 8"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-232-the-locative-q4",
+  "sectionId": "bn-232-the-locative",
+  "questions": [
+   {
     "prompt": "As for that, I have it myself.",
     "answer": "id quidem domī est.",
     "kind": "translate-en-la",
@@ -773,6 +831,22 @@
      "author": "Cicero",
      "work": "De Fato",
      "locus": "7"
+    }
+   },
+   {
+    "prompt": "We have seen the companies of young men in Lacedaemon.",
+    "answer": "adulēscentium gregēs Lacedaemone vīdimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "adulēscentium",
+     "gregēs",
+     "Lacedaemone",
+     "vīdimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 77"
     }
    }
   ]

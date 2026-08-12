@@ -331,5 +331,84 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-239-adjectives-with-the-force-of-adverbs-q1",
+  "sectionId": "bn-239-adjectives-with-the-force-of-adverbs",
+  "questions": [
+   {
+    "prompt": "For, as it seemed to our ancestors, thrift at the bottom of the cask comes too late; for not only the least but the worst is what remains at the very bottom.",
+    "answer": "Nam ut vīsum est maiōribus nostrīs, ‘sērā parsimōniā in fundō est’; nōn enim tantum minimum in īmō sed pessimum remanet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nam",
+     "ut",
+     "vīsum",
+     "est",
+     "maiōribus",
+     "nostrīs",
+     "sērā",
+     "parsimōniā",
+     "in",
+     "fundō",
+     "est",
+     "nōn",
+     "enim",
+     "tantum",
+     "minimum",
+     "in",
+     "īmō",
+     "sed",
+     "pessimum",
+     "remanet"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.1.5"
+    }
+   },
+   {
+    "prompt": "They themselves, scattered, kept fighting out from the woods and prevented our men from entering within the fortifications.",
+    "answer": "Ipsī ex silvīs rārī prōpugnābant nostrōsque intrā mūnītiōnēs ingredī prohibēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ipsī",
+     "ex",
+     "silvīs",
+     "rārī",
+     "prōpugnābant",
+     "nostrōsque",
+     "intrā",
+     "mūnītiōnēs",
+     "ingredī",
+     "prohibēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico"
+    }
+   },
+   {
+    "prompt": "For hardly anyone dances sober, unless perhaps he is out of his mind.",
+    "answer": "Nēmō enim ferē saltat sōbrius, nisi forte īnsānit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nēmō",
+     "enim",
+     "ferē",
+     "saltat",
+     "sōbrius",
+     "nisi",
+     "forte",
+     "īnsānit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Murena",
+     "locus": "13"
+    }
+   }
+  ]
  }
 ]

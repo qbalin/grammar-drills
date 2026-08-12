@@ -743,5 +743,288 @@
     }
    }
   ]
+ },
+ {
+  "id": "bn-138-impersonal-verbs-q2",
+  "sectionId": "bn-138-impersonal-verbs",
+  "questions": [
+   {
+    "prompt": "About the alliance the barbarians do not refuse; the question is about the payment.",
+    "answer": "Dē societāte haud abnuunt barbarī: dē mercēde agitur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Dē",
+     "societāte",
+     "haud",
+     "abnuunt",
+     "barbarī",
+     "dē",
+     "mercēde",
+     "agitur"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita",
+     "locus": "10.10.8"
+    }
+   },
+   {
+    "prompt": "You ought to live for another, if you wish to live for yourself.",
+    "answer": "Alterī vīvās oportet, sī vīs tibī̆ vīvere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Alterī",
+     "vīvās",
+     "oportet",
+     "sī",
+     "vīs",
+     "tibī",
+     "vīvere"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "48.2"
+    }
+   },
+   {
+    "prompt": "For it is now permitted, the subtlety of debate laid aside, to contemplate with the eyes in a certain way the beauty of those things which we say were established by divine providence.",
+    "answer": "Licet enim iam remōtā subtīlitāte disputandī oculīs quōdam modō contemplārī pulchritūdinem rērum eārum, quās dīvīnā prōvidentiā dīcimus cōnstituās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Licet",
+     "enim",
+     "iam",
+     "remōtā",
+     "subtīlitāte",
+     "disputandī",
+     "oculīs",
+     "quōdam",
+     "modō",
+     "contemplārī",
+     "pulchritūdinem",
+     "rērum",
+     "eārum",
+     "quās",
+     "dīvīnā",
+     "prōvidentiā",
+     "dīcimus",
+     "cōnstituās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Natura Deorum",
+     "locus": "II"
+    }
+   },
+   {
+    "prompt": "But now it has seemed good to me to write something to you about old age.",
+    "answer": "Nunc autem vīsum est mihi dē senectūte aliquid ad tē cōnscrībere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nunc",
+     "autem",
+     "vīsum",
+     "est",
+     "mihi",
+     "dē",
+     "senectūte",
+     "aliquid",
+     "ad",
+     "tē",
+     "cōnscrībere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior De Senectute",
+     "locus": "1.1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-138-impersonal-verbs-q3",
+  "sectionId": "bn-138-impersonal-verbs",
+  "questions": [
+   {
+    "prompt": "I have gladly learned from those who come from you that you live on familiar terms with your slaves: this befits your wisdom, this your learning.",
+    "answer": "Libenter ex iīs quī ā tē veniunt cognōvī familiāriter tē cum servīs tuīs vīvere: hoc prūdentiam tuam, hoc ērudītiōnem decet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Libenter",
+     "ex",
+     "iīs",
+     "quī",
+     "ā",
+     "tē",
+     "veniunt",
+     "cognōvī",
+     "familiāriter",
+     "tē",
+     "cum",
+     "servīs",
+     "tuīs",
+     "vīvere",
+     "hoc",
+     "prūdentiam",
+     "tuam",
+     "hoc",
+     "ērudītiōnem",
+     "decet"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.47.1"
+    }
+   },
+   {
+    "prompt": "Therefore always read approved authors, and if ever you feel like turning aside to others, return to the earlier ones.",
+    "answer": "Probātōs itaque semper lēge, et sī quandō ad aliōs dēvertī libuerit, ad priōrēs redī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Probātōs",
+     "itaque",
+     "semper",
+     "lēge",
+     "et",
+     "sī",
+     "quandō",
+     "ad",
+     "aliōs",
+     "dēvertī",
+     "libuerit",
+     "ad",
+     "priōrēs",
+     "redī"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "1.2.4"
+    }
+   },
+   {
+    "prompt": "It is particularly unbecoming for an orator to lose his temper.",
+    "answer": "Ōrātōrem īrāscī minimē decet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ōrātōrem",
+     "īrāscī",
+     "minimē",
+     "decet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "4.54"
+    }
+   },
+   {
+    "prompt": "If condemned, punishment must overtake him.",
+    "answer": "Damnātum poenam sequī oportēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Damnātum",
+     "poenam",
+     "sequī",
+     "oportēbat"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-138-impersonal-verbs-q4",
+  "sectionId": "bn-138-impersonal-verbs",
+  "questions": [
+   {
+    "prompt": "What you have, that you should avail yourself of.",
+    "answer": "quod est, eō decet ūtī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quod",
+     "est",
+     "eō",
+     "decet",
+     "ūtī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Cato Maior de Senectute",
+     "locus": "27"
+    }
+   },
+   {
+    "prompt": "You shall study as long as you want to, and it will be proper for you to want to, as long as you are satisfied with your progress.",
+    "answer": "discēs quamdiū volēs, tamdiū autem velle dēbēbis quoad tē quantum prōficiās nōn paenitēbit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "discēs",
+     "quamdiū",
+     "volēs",
+     "tamdiū",
+     "autem",
+     "velle",
+     "dēbēbis",
+     "quoad",
+     "tē",
+     "quantum",
+     "prōficiās",
+     "nōn",
+     "paenitēbit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Officiis",
+     "locus": "1, 2"
+    }
+   },
+   {
+    "prompt": "That a liar should have a good memory.",
+    "answer": "mendācem memorem esse oportēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "mendācem",
+     "memorem",
+     "esse",
+     "oportēre"
+    ],
+    "source": {
+     "author": "Quintilianus",
+     "work": "Institutio Oratoria",
+     "locus": "4, 2, 91"
+    }
+   },
+   {
+    "prompt": "His whole speech turned on the contention that the written word should be paramount.",
+    "answer": "eius omnis ōrātiō versāta est in eō, ut scrīptum plūrimum valēre oportēre dēfenderet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "eius",
+     "omnis",
+     "ōrātiō",
+     "versāta",
+     "est",
+     "in",
+     "eō",
+     "ut",
+     "scrīptum",
+     "plūrimum",
+     "valēre",
+     "oportēre",
+     "dēfenderet"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Oratore",
+     "locus": "1, 244"
+    }
+   }
+  ]
  }
 ]

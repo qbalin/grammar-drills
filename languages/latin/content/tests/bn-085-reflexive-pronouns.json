@@ -435,5 +435,275 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-085-reflexive-pronouns-q1",
+  "sectionId": "bn-085-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "To what end will unbridled audacity hurl itself?",
+    "answer": "Quem ad fīnem sēsē effrēnāta iactābit audācia?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Quem",
+     "ad",
+     "fīnem",
+     "sēsē",
+     "effrēnāta",
+     "iactābit",
+     "audācia"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam orationes",
+     "locus": "1"
+    }
+   },
+   {
+    "prompt": "When they came to Syracuse, Scipio made ready deeds, not words, to clear himself.",
+    "answer": "Venientibus iīs Syrācūsās Scīpiō rēs, nōn verba ad pūrgandum sēsē parāvit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Venientibus",
+     "iīs",
+     "Syrācūsās",
+     "Scīpiō",
+     "rēs",
+     "nōn",
+     "verba",
+     "ad",
+     "pūrgandum",
+     "sēsē",
+     "parāvit"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab urbe condita libri",
+     "locus": "29.22"
+    }
+   },
+   {
+    "prompt": "At the same time as the Aedui, the Ambarri, kinsmen and blood-relations of the Aedui, inform Caesar that, their fields having been laid waste, they cannot easily keep the enemy's force away from their towns.",
+    "answer": "Eōdem tempore quō Haeduī Ambarrī, necessāriī et cōnsanguineī Haeduōrum, Caesarem certiōrem faciunt sēsē dēpopulātīs agrīs nōn facile ab oppidīs vim hostium prohibēre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Eōdem",
+     "tempore",
+     "quō",
+     "Haeduī",
+     "Ambarrī",
+     "necessāriī",
+     "et",
+     "cōnsanguineī",
+     "Haeduōrum",
+     "Caesarem",
+     "certiōrem",
+     "faciunt",
+     "sēsē",
+     "dēpopulātīs",
+     "agrīs",
+     "nōn",
+     "facile",
+     "ab",
+     "oppidīs",
+     "vim",
+     "hostium",
+     "prohibēre"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.11"
+    }
+   },
+   {
+    "prompt": "They hope they can get possession of the whole of Gaul.",
+    "answer": "Tōtīus Galliae sēsē potīrī posse spērant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Tōtīus",
+     "Galliae",
+     "sēsē",
+     "potīrī",
+     "posse",
+     "spērant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-085-reflexive-pronouns-q2",
+  "sectionId": "bn-085-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "The rest betook themselves to flight.",
+    "answer": "reliquī sēsē fugae mandārunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "reliquī",
+     "sēsē",
+     "fugae",
+     "mandārunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 12, 3"
+    }
+   },
+   {
+    "prompt": "They cast themselves at Caesar’s feet.",
+    "answer": "sēsē Caesarī ad pedēs prōiēcērunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sēsē",
+     "Caesarī",
+     "ad",
+     "pedēs",
+     "prōiēcērunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1, 31, 2"
+    }
+   },
+   {
+    "prompt": "A good many retreated to the town from fear.",
+    "answer": "multī in oppidum propter timōrem sēsē recipiunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "multī",
+     "in",
+     "oppidum",
+     "propter",
+     "timōrem",
+     "sēsē",
+     "recipiunt"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "2, 35, 6"
+    }
+   },
+   {
+    "prompt": "Vorenus did not keep inside the palisade either.",
+    "answer": "nē Vorēnus quidem sēsē vāllō continet.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "Vorēnus",
+     "quidem",
+     "sēsē",
+     "vāllō",
+     "continet"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "5, 44, 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-085-reflexive-pronouns-q3",
+  "sectionId": "bn-085-reflexive-pronouns",
+  "questions": [
+   {
+    "prompt": "How is every thing in Samnium?",
+    "answer": "ut sēsē in Samniō rēs habent?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "sēsē",
+     "in",
+     "Samniō",
+     "rēs",
+     "habent"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "10, 18, 11"
+    }
+   },
+   {
+    "prompt": "They made the request in behalf of a pitiable wretch, who would be only too glad to be put to the rack himself, so his father’s death might be investigated.",
+    "answer": "postulābant prō homine miserrimō, quī vel ipse sēsē in cruciātum darī cuperet, dum dē patris morte quaererētur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "postulābant",
+     "prō",
+     "homine",
+     "miserrimō",
+     "quī",
+     "vel",
+     "ipse",
+     "sēsē",
+     "in",
+     "cruciātum",
+     "darī",
+     "cuperet",
+     "dum",
+     "dē",
+     "patris",
+     "morte",
+     "quaererētur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "119"
+    }
+   },
+   {
+    "prompt": "The case stands thus: the Odyssey in Latin is, you may say, a regular work of Daedalus.",
+    "answer": "sīc enim sēsē rēs habet: nam Odyssīa Latīna est sīc tamquam opus Daedalī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sīc",
+     "enim",
+     "sēsē",
+     "rēs",
+     "habet",
+     "nam",
+     "Odyssīa",
+     "Latīna",
+     "est",
+     "sīc",
+     "tamquam",
+     "opus",
+     "Daedalī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "71"
+    }
+   },
+   {
+    "prompt": "They hoped to carry it out.",
+    "answer": "id sēsē effectūrōs spērābant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "sēsē",
+     "effectūrōs",
+     "spērābant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "7, 26, 2"
+    }
+   }
+  ]
  }
 ]

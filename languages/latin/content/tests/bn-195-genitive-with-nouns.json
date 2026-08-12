@@ -1605,32 +1605,6 @@
     }
    },
    {
-    "prompt": "O immortal gods! where in the world are we? in what city are we living? what republic do we have?",
-    "answer": "Ō̆ dī immortālēs! ubinam gentium sumus? in quā urbe vīvimus? quam rem pūblicam habēmus?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ō",
-     "dī",
-     "immortālēs",
-     "ubinam",
-     "gentium",
-     "sumus",
-     "in",
-     "quā",
-     "urbe",
-     "vīvimus",
-     "quam",
-     "rem",
-     "pūblicam",
-     "habēmus"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam orationes",
-     "locus": "1.9"
-    }
-   },
-   {
     "prompt": "The depth of the river was about three feet.",
     "answer": "Flūminis erat altitūdō pedum circiter trium.",
     "kind": "translate-en-la",
@@ -1670,13 +1644,7 @@
      "work": "Epistulae morales ad Lucilium",
      "locus": "1.2.1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q4",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "To one who takes the estimate as a whole, there is more strength on the side of the infantry.",
     "answer": "In ūniversum aestimantī plūs penes peditem rōboris.",
@@ -1695,7 +1663,13 @@
      "work": "Germania",
      "locus": "6.4"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q4",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "You have where to show off that famous endurance of yours — of hunger, cold, and want of all things — by which you will soon feel yourself worn out.",
     "answer": "Habēs ubi ostentēs tuam illam praeclāram patientiam — famis, frīgoris, inopiae rērum omnium — quibus tē brevī tempore cōnfectum esse sentiēs.",
@@ -1769,13 +1743,7 @@
      "work": "Epistulae morales ad Lucilium",
      "locus": "47.10"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q5",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "Nothing now is so popular as hatred of the crowd-pleasers.",
     "answer": "Populāre nunc nihil tam est quam odium populārium.",
@@ -1795,7 +1763,13 @@
      "work": "Epistulae ad Atticum",
      "locus": "2.20"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q5",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "And in truth, what good has that man done for us?",
     "answer": "Et rēvērā, quid ille nōbīs bonī fēcit?",
@@ -1870,13 +1844,7 @@
      "work": "Epistulae morales ad Lucilium",
      "locus": "1.1.2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q6",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "But in old men there is not so great a 'titillation,' so to speak, of pleasures.",
     "answer": "At nōn est voluptātum tanta quasi “tītillātiō” in senibus.",
@@ -1897,31 +1865,13 @@
      "work": "Cato Maior de Senectute",
      "locus": "14.47"
     }
-   },
-   {
-    "prompt": "Of what kind is the dream of Tarquin the Proud, about which he himself speaks in the Brutus of Accius?",
-    "answer": "Cuiusnam modī est Superbī Tarquinī somnium, dē quō in Brūtō Accī loquitur ipse?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Cuiusnam",
-     "modī",
-     "est",
-     "Superbī",
-     "Tarquinī",
-     "somnium",
-     "dē",
-     "quō",
-     "in",
-     "Brūtō",
-     "Accī",
-     "loquitur",
-     "ipse"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De divinatione I.XXII"
-    }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q6",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "After quickly raising an army by these punishments, he sends Lucterius the Cadurcan, a man of the greatest boldness, with part of the forces against the Ruteni; he himself sets out into the territory of the Bituriges.",
     "answer": "Hīs suppliciīs celeriter coāctō exercitū Lucterium Cadurcum, summae hominem audāciae, cum parte cōpiārum in Rutēnōs mittit; ipse in Biturigēs proficīscitur.",
@@ -1953,13 +1903,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "7.5"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q7",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "The highest praise is due both to you and to Brutus.",
     "answer": "Summa laus et tua et Brūtī est.",
@@ -2017,7 +1961,13 @@
      "work": "Philippicae",
      "locus": "2.23"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q7",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "What he was doing, he said he did relying on you.",
     "answer": "Ea quae faciēbat, tuā sē fīdūciā facere dīcēbat.",
@@ -2037,13 +1987,7 @@
      "work": "In Verrem",
      "locus": "5.176"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q8",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "Was Verres of so much account to you?",
     "answer": "Verrēsne tibi tantī fuit?",
@@ -2091,7 +2035,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "3, 18, 6"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q8",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "Studying up the order of march followed by our army in those days.",
     "answer": "eōrum diērum cōnsuētūdine itineris nostrī exercitūs perspectā.",
@@ -2110,13 +2060,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "2, 17, 2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q9",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "Who is there that can compare the life of Trebonius with Dolabella’s?",
     "answer": "quis est, quī possit cōnferre vītam Trebōnī cum Dolābellae?",
@@ -2170,7 +2114,13 @@
      "work": "Institutio Oratoria",
      "locus": "1, 4, 27"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q9",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "This line is not Plautus’s, this one is.",
     "answer": "hīc versus Plautī nōn est, hīc est.",
@@ -2189,13 +2139,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "9, 16, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q10",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "Everything which was the woman’s becomes the man’s.",
     "answer": "omnia, quae mulieris fuērunt, virī fīunt.",
@@ -2254,7 +2198,13 @@
      "work": "Pro Ligario",
      "locus": "28"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q10",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "Shaping your course to circumstance has always passed as the sign of a wise man.",
     "answer": "temporī cēdere semper sapientis est habitum.",
@@ -2272,13 +2222,7 @@
      "work": "Epistulae ad Familiares",
      "locus": "4, 9, 2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q11",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "It is not in keeping with my delicacy to set up as the champion of Scipio.",
     "answer": "nōn est pudōris meī, mē prōpugnātōrem P. Scīpiōnis profitērī.",
@@ -2336,7 +2280,13 @@
      "work": "Pro Sestio",
      "locus": "86"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q11",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "This they consider a special characteristic of bravery.",
     "answer": "hoc proprium virtūtis exīstimant.",
@@ -2352,13 +2302,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "6, 23, 2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q12",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "Everything which was our peculiar property.",
     "answer": "omnia quae nostra erant propria.",
@@ -2411,7 +2355,13 @@
      "work": "Epistulae ad Familiares",
      "locus": "2, 13, 2"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q12",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "A man of gigantic frame and with an awe-inspiring presence.",
     "answer": "hominem maximī corporis terribilīque faciē.",
@@ -2428,13 +2378,7 @@
      "work": "Vitae",
      "locus": "15, 4, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q13",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "Of all these the stoutest fighters are the Belgians.",
     "answer": "hōrum omnium fortissimī sunt Belgae.",
@@ -2483,7 +2427,13 @@
      "work": "De Natura Deorum",
      "locus": "1, 75"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q13",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "This will be something of an indication that I act with reluctance.",
     "answer": "id erit sīgnī mē invītum facere.",
@@ -2501,13 +2451,7 @@
      "work": "Pro Sexto Roscio Amerino",
      "locus": "83"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q14",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "He explains what his plan is.",
     "answer": "quid suī cōnsilī sit ostendit.",
@@ -2559,7 +2503,13 @@
      "work": "Bellum Catilinae",
      "locus": "11, 7"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q14",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "A perfect swarm of desperadoes.",
     "answer": "magna multitūdō perditōrum hominum.",
@@ -2575,13 +2525,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "3, 17, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q15",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "An armada a thousand sail strong.",
     "answer": "mīlle numerō nāvium clāssem.",
@@ -2633,7 +2577,13 @@
      "work": "Commentarii de bello Civili",
      "locus": "3, 72, 4"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q15",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "For this reason, namely the crime of the defendant.",
     "answer": "propter eam causam sceleris istīus.",
@@ -2650,13 +2600,7 @@
      "work": "In Verrem",
      "locus": "4, 113"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q16",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "I wished this more for your sake than for my own.",
     "answer": "vestrā magis hoc causā volēbam, quam meā.",
@@ -2707,7 +2651,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "5, 48, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q16",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "A scramble for office is a pitiful thing.",
     "answer": "miserrima est contentiō honōrum.",
@@ -2723,13 +2673,7 @@
      "work": "De Officiis",
      "locus": "1, 87"
     }
-   }
-  ]
- },
- {
-  "id": "bn-195-genitive-with-nouns-q17",
-  "sectionId": "bn-195-genitive-with-nouns",
-  "questions": [
+   },
    {
     "prompt": "Fear of the might and wrath of the gods.",
     "answer": "metus ā vī atque īrā deōrum.",
@@ -2780,7 +2724,13 @@
      "work": "In Catilinam",
      "locus": "4, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-195-genitive-with-nouns-q17",
+  "sectionId": "bn-195-genitive-with-nouns",
+  "questions": [
    {
     "prompt": "Dead-set against any largess to the military.",
     "answer": "firmus adversus mīlitārem largītiōnem.",
@@ -2795,6 +2745,42 @@
      "author": "Tacitus",
      "work": "Historiae",
      "locus": "2, 82"
+    }
+   },
+   {
+    "prompt": "His services were rated high.",
+    "answer": "magnī opera eius aestimāta est.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "magnī",
+     "opera",
+     "eius",
+     "aestimāta",
+     "est"
+    ],
+    "source": {
+     "author": "Nepos",
+     "work": "Vitae",
+     "locus": "24, 1, 2"
+    }
+   },
+   {
+    "prompt": "Did not you know how the man was prized by his own townsmen?",
+    "answer": "quantī is ā cīvibus suīs fieret īgnōrābās?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quantī",
+     "is",
+     "ā",
+     "cīvibus",
+     "suīs",
+     "fieret",
+     "īgnōrābās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 19"
     }
    }
   ]

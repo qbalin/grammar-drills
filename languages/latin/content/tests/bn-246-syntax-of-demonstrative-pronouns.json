@@ -1176,13 +1176,7 @@
      "work": "Epistulae morales ad Lucilium",
      "locus": "1.2.1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q2",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "That is in truth a very great thing—to see the soul.",
     "answer": "Est illud quidem vel maximum, animum vidēre.",
@@ -1201,28 +1195,13 @@
      "work": "Tusculanae Disputationes",
      "locus": "1.52"
     }
-   },
-   {
-    "prompt": "When Simonides promised him the art of memory, “I should prefer,” he said of forgetfulness.”.",
-    "answer": "Cum eī Simōnidēs artem memoriae pollicērētur: oblīviōnis, inquit, māllem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Cum",
-     "eī",
-     "Simōnidēs",
-     "artem",
-     "memoriae",
-     "pollicērētur",
-     "oblīviōnis",
-     "inquit",
-     "māllem"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Finibus Bonorum et Malorum",
-     "locus": "2.104"
-    }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q2",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "Tiberius Gracchus tried to usurp royal power, or rather he actually reigned a few months.",
     "answer": "Ti. Gracchus rēgnum occupāre cōnātus est, vel rēgnāvit is quidem paucōs mēnsīs.",
@@ -1246,13 +1225,7 @@
      "work": "Laelius de Amicitia",
      "locus": "41"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q3",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Such is the far-famed fight at Trasumene.",
     "answer": "haec est nōbilis ad Trāsumennum pūgna.",
@@ -1302,7 +1275,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "5, 19, 2"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q3",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "The panic occasioned by this demoralized the Romans.",
     "answer": "is pavor perculit Rōmānōs.",
@@ -1318,13 +1297,7 @@
      "work": "Ab Urbe Condita",
      "locus": "21, 46, 7"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q4",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Gaul is divided into three parts, one of which is occupied by Belgians, another by Aquitanians, and the third by Kelts. In language, customs, and laws these are all different from each other.",
     "answer": "Gallia est dīvīsa in partēs trēs, quārum ūnam incolunt Belgae, aliam Aquītānī, tertiam Celtae. hī omnēs linguā, īnstitūtīs, lēgibus inter sē differunt.",
@@ -1410,7 +1383,13 @@
      "work": "Tusculanae Disputationes",
      "locus": "3, 27"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q4",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "I did not think that in this discourse I should get down to the present generation.",
     "answer": "nōn mē exīstimāvī in hōc sermōne usque ad hanc aetātem esse ventūrum.",
@@ -1434,13 +1413,7 @@
      "work": "Brutus",
      "locus": "232"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q5",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "All the rest of this year.",
     "answer": "reliquum omne tempus huius annī.",
@@ -1495,7 +1468,13 @@
      "work": "In Catilinam",
      "locus": "1, 21"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q5",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "Who have tried to destroy the state.",
     "answer": "quī haec dēlēre cōnātī sunt.",
@@ -1512,13 +1491,7 @@
      "work": "In Catilinam",
      "locus": "4, 7"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q6",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "There lives no slave that wills not our country should abide.",
     "answer": "servus est nēmō quī nōn haec stāre cupiat.",
@@ -1577,7 +1550,13 @@
      "work": "Pro Sexto Roscio Amerino",
      "locus": "134"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q6",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "This was what I had to say on Old Age.",
     "answer": "haec habuī dē senectūte quae dīcerem.",
@@ -1595,13 +1574,7 @@
      "work": "Cato Maior de Senectute",
      "locus": "85"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q7",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "So much for this; let us now go on to portents.",
     "answer": "sed haec hāctenus; nunc ad ostenta veniāmus.",
@@ -1655,7 +1628,13 @@
      "work": "Ab Urbe Condita",
      "locus": "6, 40, 2"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q7",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "Scipio had asked me what I thought about this, that it was generally agreed that two suns had been seen.",
     "answer": "quaesierat ex mē Scīpiō quidnam sentīrem dē hōc quod duo sōlēs vīsōs esse cōnstāret.",
@@ -1681,13 +1660,7 @@
      "work": "De Re Publica",
      "locus": "1, 19"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q8",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "That is white, this is sweet, that sonorous, this fragrant, this rough.",
     "answer": "illud est album, hoc dulce, canōrum illud, hoc bene olēns, hoc asperum.",
@@ -1752,42 +1725,11 @@
      "work": "Philippicae",
      "locus": "2, 25"
     }
-   },
-   {
-    "prompt": "Suffer not Cato to find a rival even in your man himself, whom, as you say, Apollo declared wisest of mankind; for our Cato is renowned for deeds, the other for doctrines.",
-    "answer": "cavē Catōnī antepōnās nē istum quidem ipsum quem Apollō, ut ais, sapientissimum iūdicāvit: huius enim facta, illīus dicta laudantur.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "cavē",
-     "Catōnī",
-     "antepōnās",
-     "nē",
-     "istum",
-     "quidem",
-     "ipsum",
-     "quem",
-     "Apollō",
-     "ut",
-     "ais",
-     "sapientissimum",
-     "iūdicāvit",
-     "huius",
-     "enim",
-     "facta",
-     "illīus",
-     "dicta",
-     "laudantur"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Laelius de Amicitia",
-     "locus": "10"
-    }
    }
   ]
  },
  {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q9",
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q8",
   "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
   "questions": [
    {
@@ -1880,7 +1822,7 @@
   ]
  },
  {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q10",
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q9",
   "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
   "questions": [
    {
@@ -1974,7 +1916,7 @@
   ]
  },
  {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q11",
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q10",
   "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
   "questions": [
    {
@@ -2040,37 +1982,6 @@
     }
    },
    {
-    "prompt": "His whole speech turned on the contention that the written word should be paramount.",
-    "answer": "eius omnis ōrātiō versāta est in eō, ut scrīptum plūrimum valēre oportēre dēfenderet.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "eius",
-     "omnis",
-     "ōrātiō",
-     "versāta",
-     "est",
-     "in",
-     "eō",
-     "ut",
-     "scrīptum",
-     "plūrimum",
-     "valēre",
-     "oportēre",
-     "dēfenderet"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Oratore",
-     "locus": "1, 244"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q12",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
-   {
     "prompt": "Imprisonment and that too perpetual.",
     "answer": "vincula et ea sempiterna.",
     "kind": "translate-en-la",
@@ -2085,7 +1996,13 @@
      "work": "In Catilinam",
      "locus": "4, 7"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q11",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "After a year’s study under Cratippus, and that too in Athens.",
     "answer": "annum iam audientem Cratippum idque Athēnīs.",
@@ -2144,13 +2061,7 @@
      "work": "Bellum Iugurthinum",
      "locus": "35, 6"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q13",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Seeing that even Alienus is to suppress some part of that eloquence, if any he may have.",
     "answer": "cum ipse Aliēnus ex eā facultāte, sī quam habet, aliquantum dētrāctūrus sit.",
@@ -2174,7 +2085,13 @@
      "work": "Divinatio in Caecilium",
      "locus": "49"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q12",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "He confined his troops to camp and forbade the kindling of fires, in order to keep his coming a greater secret.",
     "answer": "suōs omnēs castrīs continuit ignēsque fierī prohibuit, quō occultior esset eius adventus.",
@@ -2244,13 +2161,7 @@
      "work": "Brutus",
      "locus": "291"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q14",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Many who have met heroically and endured wounds, to preserve their rights and their freedom, are nevertheless, when no contest is involved, unable to bear the pain of a disease.",
     "answer": "multī quī ut iūs suum et lībertātem tenērent volnera excēpērunt fortiter et tulērunt, īdem omissā contentiōne dolōrem morbī ferre nōn possunt.",
@@ -2283,7 +2194,13 @@
      "work": "Tusculanae Disputationes",
      "locus": "2, 65"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q13",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "They confided these same sentiments to their centurions.",
     "answer": "haec eadem centuriōnibus mandābant.",
@@ -2340,13 +2257,7 @@
      "work": "De Legibus",
      "locus": "2, 53"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q15",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Catiline, their head, has fled in abject terror; his minions here, what wait they for?",
     "answer": "Catilīna ipse pertimuit, profūgit; hī quid exspectant?",
@@ -2365,7 +2276,13 @@
      "work": "In Catilinam",
      "locus": "2, 6"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q14",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "‘the old man said so;’ now “the old man” was Pythagoras.",
     "answer": "‘ipse dīxit;’ “ipse” autem erat Pȳthagorās.",
@@ -2426,13 +2343,7 @@
      "work": "Pro Lege Manilia",
      "locus": "38"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q16",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "A soldier slew his own brother, then himself.",
     "answer": "mīles frātrem suum, dein sē ipsum interfēcit.",
@@ -2451,7 +2362,13 @@
      "work": "Historiae",
      "locus": "3, 51"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q15",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "Every man loves himself.",
     "answer": "ipse sē quisque dīligit.",
@@ -2506,13 +2423,7 @@
      "work": "Laelius de Amicitia",
      "locus": "10"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q17",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "That we should govern ourselves.",
     "answer": "ut nōbīsmet ipsīs imperēmus.",
@@ -2528,7 +2439,13 @@
      "work": "Tusculanae Disputationes",
      "locus": "2, 47"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q16",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "They were much afraid that he would abandon them and come into favour with his compatriots again.",
     "answer": "pertimuērunt nē ab ipsīs dēscīsceret et cum suīs in grātiam redīret.",
@@ -2591,13 +2508,7 @@
      "work": "De Finibus Bonorum et Malorum",
      "locus": "2, 100"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q18",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Though greatly detested in consequence of the death of Gracchus, he was acquitted by the Roman people proper.",
     "answer": "flagrantem invidiā propter interitum C. Gracchī ipse populus Rōmānus perīculō līberāvit.",
@@ -2620,7 +2531,13 @@
      "work": "Pro Sestio",
      "locus": "140"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q17",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "A project for recovering the city of Locri, which, on the revolt of Italy, had likewise gone over to the Carthaginians.",
     "answer": "cōgitātiō Locrōs urbem recipiendī, quae sub dēfectiōnem Ītaliae dēscīverat et ipsa ad Poenōs.",
@@ -2685,13 +2602,7 @@
      "work": "Brutus",
      "locus": "61"
     }
-   }
-  ]
- },
- {
-  "id": "bn-246-syntax-of-demonstrative-pronouns-q19",
-  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
-  "questions": [
+   },
    {
     "prompt": "Right at the ford Indutiomarus is caught and killed.",
     "answer": "in ipsō vadō dēprehēnsus Indutiomarus interficitur.",
@@ -2709,7 +2620,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "5, 58, 6"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-246-syntax-of-demonstrative-pronouns-q18",
+  "sectionId": "bn-246-syntax-of-demonstrative-pronouns",
+  "questions": [
    {
     "prompt": "I live right over a bath.",
     "answer": "suprā ipsum balneum habitō.",

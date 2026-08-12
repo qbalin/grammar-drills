@@ -589,5 +589,363 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-140-adverbs-q1",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "If you do not yet see clearly, recollect.",
+    "answer": "Sī nōndum satis cernitis, recordāminī.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "nōndum",
+     "satis",
+     "cernitis",
+     "recordāminī"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Milone",
+     "locus": "61"
+    }
+   },
+   {
+    "prompt": "But if I do not come when I can, he will be unfriendly.",
+    "answer": "Sīn cum potuerō nōn vēnerō, tum erit inimīcus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sīn",
+     "cum",
+     "potuerō",
+     "nōn",
+     "vēnerō",
+     "tum",
+     "erit",
+     "inimīcus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "9.2 A.2"
+    }
+   },
+   {
+    "prompt": "If he were at this time a private citizen, yet he ought to be appointed.",
+    "answer": "Sī prīvātus esset hōc tempore, tamen is erat dēligendus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Sī",
+     "prīvātus",
+     "esset",
+     "hōc",
+     "tempore",
+     "tamen",
+     "is",
+     "erat",
+     "dēligendus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Lege Manilia",
+     "locus": "50"
+    }
+   },
+   {
+    "prompt": "I wish I had been he would not now be troubling us.",
+    "answer": "Utinam quidem fuissem! Molestus nōbīs nōn esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Utinam",
+     "quidem",
+     "fuissem",
+     "Molestus",
+     "nōbīs",
+     "nōn",
+     "esset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "12.3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-140-adverbs-q2",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "They dreaded his cruelty as if he were present in person.",
+    "answer": "Crūdēlitātem horrērent velut sī cōram adesset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Crūdēlitātem",
+     "horrērent",
+     "velut",
+     "sī",
+     "cōram",
+     "adesset"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "1.32"
+    }
+   },
+   {
+    "prompt": "For even if you do not accomplish what you wish, still you will prove that death is not an evil.",
+    "answer": "Ut enim nōn efficiās quod vīs, tamen mors ut malum nōn sit efficiēs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Ut",
+     "enim",
+     "nōn",
+     "efficiās",
+     "quod",
+     "vīs",
+     "tamen",
+     "mors",
+     "ut",
+     "malum",
+     "nōn",
+     "sit",
+     "efficiēs"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "1.16"
+    }
+   },
+   {
+    "prompt": "Even if you had taken away nothing else, you ought to have been satisfied.",
+    "answer": "Etsī nihil aliud abstulissētis, tamen contentōs vōs esse oportēbat.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Etsī",
+     "nihil",
+     "aliud",
+     "abstulissētis",
+     "tamen",
+     "contentōs",
+     "vōs",
+     "esse",
+     "oportēbat"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sulla",
+     "locus": "90"
+    }
+   },
+   {
+    "prompt": "Even if you have nothing to write, still write.",
+    "answer": "Etiam sī quod scrībās nōn habēbis, scrībitō tamen.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Etiam",
+     "sī",
+     "quod",
+     "scrībās",
+     "nōn",
+     "habēbis",
+     "scrībitō",
+     "tamen"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "16.26"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-140-adverbs-q3",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "Suppose you could have been mistaken, who does not see that you cannot have been deceived in this way?",
+    "answer": "Vērum ut errāre potuistī, sīc dēcipī tē nōn potuisse quis nōn videt?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vērum",
+     "ut",
+     "errāre",
+     "potuistī",
+     "sīc",
+     "dēcipī",
+     "tē",
+     "nōn",
+     "potuisse",
+     "quis",
+     "nōn",
+     "videt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Familiares",
+     "locus": "10.20.2"
+    }
+   },
+   {
+    "prompt": "Though they are staggering under debt, they yet look forward to being lords and masters.",
+    "answer": "quamquam premuntur aere aliēnō, dominātiōnem tamen exspectant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quamquam",
+     "premuntur",
+     "aere",
+     "aliēnō",
+     "dominātiōnem",
+     "tamen",
+     "exspectant"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Catilinam",
+     "locus": "2, 19"
+    }
+   },
+   {
+    "prompt": "Germanicus did not delay, though he was aware this was all made up.",
+    "answer": "haud cunctātus est Germānicus, quamquam fingī ea intellegeret.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haud",
+     "cunctātus",
+     "est",
+     "Germānicus",
+     "quamquam",
+     "fingī",
+     "ea",
+     "intellegeret"
+    ],
+    "source": {
+     "author": "Tacitus",
+     "work": "Annales",
+     "locus": "2, 26"
+    }
+   },
+   {
+    "prompt": "He grew pale perceptibly, though he is always a pale man.",
+    "answer": "expalluit notābiliter, quamvīs palleat semper.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "expalluit",
+     "notābiliter",
+     "quamvīs",
+     "palleat",
+     "semper"
+    ],
+    "source": {
+     "author": "Plinius Minor",
+     "work": "Epistulae",
+     "locus": "1, 5, 13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-140-adverbs-q4",
+  "sectionId": "bn-140-adverbs",
+  "questions": [
+   {
+    "prompt": "And even supposing everything turned out contrary to expectation, still they saw clearly that they had the advantage by sea.",
+    "answer": "ac iam ut omnia contrā opīniōnem acciderent, tamen sē plūrimum nāvibus posse perspiciēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ac",
+     "iam",
+     "ut",
+     "omnia",
+     "contrā",
+     "opīniōnem",
+     "acciderent",
+     "tamen",
+     "sē",
+     "plūrimum",
+     "nāvibus",
+     "posse",
+     "perspiciēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "3, 9, 6"
+    }
+   },
+   {
+    "prompt": "Therefore, so a chance was given to fight hand to hand, they did not mind pitting one of their vessels against two of the enemy’s.",
+    "answer": "itaque dum locus comminus pugnandī darētur, aequō animō singulās bīnīs nāvibus obiciēbant.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "itaque",
+     "dum",
+     "locus",
+     "comminus",
+     "pugnandī",
+     "darētur",
+     "aequō",
+     "animō",
+     "singulās",
+     "bīnīs",
+     "nāvibus",
+     "obiciēbant"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "1, 58, 4"
+    }
+   },
+   {
+    "prompt": "So you shall have time, so you will write something.",
+    "answer": "sīc scrībēs aliquid, sī vacābis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sīc",
+     "scrībēs",
+     "aliquid",
+     "sī",
+     "vacābis"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "12, 38, 2"
+    }
+   },
+   {
+    "prompt": "If Hejus had anything for sale, if he sold it at his own valuation, I stop enquiring why you bought.",
+    "answer": "sī quid vēnāle habuit Heius, sī id quantī aestimābat, tantī vēndidit, dēsinō quaerere cūr ēmeris.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "quid",
+     "vēnāle",
+     "habuit",
+     "Heius",
+     "sī",
+     "id",
+     "quantī",
+     "aestimābat",
+     "tantī",
+     "vēndidit",
+     "dēsinō",
+     "quaerere",
+     "cūr",
+     "ēmeris"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 10"
+    }
+   }
+  ]
  }
 ]

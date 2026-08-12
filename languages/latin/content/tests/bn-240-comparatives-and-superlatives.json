@@ -428,26 +428,6 @@
   "sectionId": "bn-240-comparatives-and-superlatives",
   "questions": [
    {
-    "prompt": "Among the Helvetii, Orgetorix was by far the noblest and the richest.",
-    "answer": "Apud Helvētiōs longē nōbilissimus fuit et dītissimus Orgetorīx.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Apud",
-     "Helvētiōs",
-     "longē",
-     "nōbilissimus",
-     "fuit",
-     "et",
-     "dītissimus",
-     "Orgetorīx"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "1.1"
-    }
-   },
-   {
     "prompt": "The things which are reported about the sea-hare are no less marvelous.",
     "answer": "Nōn sunt minus mīra quae dē lepore marīnō trāduntur.",
     "kind": "translate-en-la",
@@ -501,35 +481,6 @@
      "locus": "14.46"
     }
    },
-   {
-    "prompt": "Lead out with you also all your followers; if not, then as many as possible — purge the city!",
-    "answer": "Ēdūc tēcum etiam omnēs tuōs: sī minus, quam plūrimōs — pūrgā urbem!",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Ēdūc",
-     "tēcum",
-     "etiam",
-     "omnēs",
-     "tuōs",
-     "sī",
-     "minus",
-     "quam",
-     "plūrimōs",
-     "pūrgā",
-     "urbem"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Catilinam orationes",
-     "locus": "1.10"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-240-comparatives-and-superlatives-q2",
-  "sectionId": "bn-240-comparatives-and-superlatives",
-  "questions": [
    {
     "prompt": "I do not put it off to too long a time, in which every longing is soothed and in which even the sharpest griefs subside.",
     "answer": "Nōn differō in longius tempus, quō dēsīderium omne mulcētur, quō etiam ācerrimī lūctūs residunt.",
@@ -587,7 +538,13 @@
      "work": "Epistulae morales ad Lucilium",
      "locus": "47.21"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q2",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
    {
     "prompt": "Its little stalks or unripe figs, as small as possible, are drunk in wine against scorpion stings.",
     "answer": "Cauliculī aut grossī eius quam minūtissimae ad scorpiōnum ictūs ē vīnō bibuntur.",
@@ -611,13 +568,7 @@
      "work": "Naturalis Historia",
      "locus": "23.64.129"
     }
-   }
-  ]
- },
- {
-  "id": "bn-240-comparatives-and-superlatives-q3",
-  "sectionId": "bn-240-comparatives-and-superlatives",
-  "questions": [
+   },
    {
     "prompt": "In view of their large numbers they thought they had a cramped place to live in.",
     "answer": "prō multitūdine hominum angustōs sē fīnīs habēre arbitrābantur.",
@@ -671,7 +622,13 @@
      "work": "Brutus",
      "locus": "241"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q3",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
    {
     "prompt": "Of a house famous rather than ancient.",
     "answer": "clārīs maiōribus quam vetustīs.",
@@ -686,47 +643,6 @@
      "author": "Tacitus",
      "work": "Annales",
      "locus": "4, 61"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-240-comparatives-and-superlatives-q4",
-  "sectionId": "bn-240-comparatives-and-superlatives",
-  "questions": [
-   {
-    "prompt": "They say the Persian kings generally have several wives.",
-    "answer": "solēre aiunt rēgēs Persārum plūrēs uxōrēs habēre.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "solēre",
-     "aiunt",
-     "rēgēs",
-     "Persārum",
-     "plūrēs",
-     "uxōrēs",
-     "habēre"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "3, 76"
-    }
-   },
-   {
-    "prompt": "Age is naturally rather garrulous.",
-    "answer": "senectūs est nātūrā loquācior.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "senectūs",
-     "est",
-     "nātūrā",
-     "loquācior"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "55"
     }
    },
    {
@@ -747,30 +663,6 @@
      "locus": "1, 93"
     }
    },
-   {
-    "prompt": "I am over greedy of glory.",
-    "answer": "sum avidior, quam satis est, glōriae.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sum",
-     "avidior",
-     "quam",
-     "satis",
-     "est",
-     "glōriae"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Epistulae ad Familiares",
-     "locus": "9, 14, 2"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-240-comparatives-and-superlatives-q5",
-  "sectionId": "bn-240-comparatives-and-superlatives",
-  "questions": [
    {
     "prompt": "Let us follow Polybius, the most scrupulous of men.",
     "answer": "sequāmur Polybium, quō nēmō fuit dīligentior.",
@@ -805,7 +697,13 @@
      "work": "De Natura Deorum",
      "locus": "1, 93"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q4",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
    {
     "prompt": "I am not afraid to avouch it is the one hardest thing in the world.",
     "answer": "cōnfirmāverim rem ūnam esse omnium difficillimam.",
@@ -842,13 +740,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 7, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-240-comparatives-and-superlatives-q6",
-  "sectionId": "bn-240-comparatives-and-superlatives",
-  "questions": [
+   },
    {
     "prompt": "The heroic Piso of Aquitain.",
     "answer": "vir fortissimus, Pīsō Aquītānus.",
@@ -884,29 +776,13 @@
      "work": "Epistulae ad Familiares",
      "locus": "14, 3, 1"
     }
-   },
-   {
-    "prompt": "I am as tender-hearted as you; as mild as the gentlest man living.",
-    "answer": "tam sum misericors quam vōs; tam mītis quam quī lēnissimus.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "tam",
-     "sum",
-     "misericors",
-     "quam",
-     "vōs",
-     "tam",
-     "mītis",
-     "quam",
-     "quī",
-     "lēnissimus"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Sulla",
-     "locus": "87"
-    }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q5",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
    {
     "prompt": "They determined to buy up the greatest possible number of beasts of burden.",
     "answer": "cōnstituērunt iūmentōrum quam maximum numerum coëmere.",
@@ -924,13 +800,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "1, 3, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-240-comparatives-and-superlatives-q7",
-  "sectionId": "bn-240-comparatives-and-superlatives",
-  "questions": [
+   },
    {
     "prompt": "There is the greatest possible difference of character between them.",
     "answer": "tanta est inter eōs, quanta maxima potest esse, mōrum distantia.",
@@ -986,7 +856,13 @@
      "work": "In Verrem",
      "locus": "5, 79"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q6",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
    {
     "prompt": "I hope Antony may be worse off than he is.",
     "answer": "Antōniō quam est, volō peius esse.",
@@ -1004,13 +880,7 @@
      "work": "Epistulae ad Atticum",
      "locus": "15, 3, 2"
     }
-   }
-  ]
- },
- {
-  "id": "bn-240-comparatives-and-superlatives-q8",
-  "sectionId": "bn-240-comparatives-and-superlatives",
-  "questions": [
+   },
    {
     "prompt": "Principles somewhat sterner than nature doth support.",
     "answer": "doctrīna paulō dūrior quam nātūra patitur.",
@@ -1064,7 +934,13 @@
      "work": "Bellum Catilinae",
      "locus": "5, 3"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-240-comparatives-and-superlatives-q7",
+  "sectionId": "bn-240-comparatives-and-superlatives",
+  "questions": [
    {
     "prompt": "For two days they merely stood in battle array.",
     "answer": "per bīduum nihil aliud quam stetērunt parātī ad pugnandum.",
@@ -1084,6 +960,47 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "34, 46, 7"
+    }
+   },
+   {
+    "prompt": "Shouts were heard that they would live on the bark of trees sooner than let Pompey slip through their fingers.",
+    "answer": "vōcēs audiēbantur prius sē cortice ex arboribus vīctūrōs, quam Pompēium ē manibus dīmissūrōs.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "vōcēs",
+     "audiēbantur",
+     "prius",
+     "sē",
+     "cortice",
+     "ex",
+     "arboribus",
+     "vīctūrōs",
+     "quam",
+     "Pompēium",
+     "ē",
+     "manibus",
+     "dīmissūrōs"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Civili",
+     "locus": "3, 49, 1"
+    }
+   },
+   {
+    "prompt": "The merest handful dares attack.",
+    "answer": "quamvīs paucī adīre audent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quamvīs",
+     "paucī",
+     "adīre",
+     "audent"
+    ],
+    "source": {
+     "author": "Julius Caesar",
+     "work": "Commentarii de bello Gallico",
+     "locus": "4, 2, 5"
     }
    }
   ]

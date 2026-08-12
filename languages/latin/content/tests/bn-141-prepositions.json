@@ -1017,36 +1017,6 @@
   "sectionId": "bn-141-prepositions",
   "questions": [
    {
-    "prompt": "The Belgae rise from the farthest borders of Gaul, extend to the lower part of the river Rhine, and look toward the north and the rising sun.",
-    "answer": "Belgae ab extrēmīs Galliae fīnibus oriuntur, pertinent ad īnferiōrem partem flūminis Rhēnī, spectant in septentriōnem et orientem sōlem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Belgae",
-     "ab",
-     "extrēmīs",
-     "Galliae",
-     "fīnibus",
-     "oriuntur",
-     "pertinent",
-     "ad",
-     "īnferiōrem",
-     "partem",
-     "flūminis",
-     "Rhēnī",
-     "spectant",
-     "in",
-     "septentriōnem",
-     "et",
-     "orientem",
-     "sōlem"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "1.1"
-    }
-   },
-   {
     "prompt": "He paid the debt to his creditor in the presence of the people.",
     "answer": "Rem crēditōrī palam populō solvit.",
     "kind": "translate-en-la",
@@ -1082,13 +1052,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "5.32"
     }
-   }
-  ]
- },
- {
-  "id": "bn-141-prepositions-q2",
-  "sectionId": "bn-141-prepositions",
-  "questions": [
+   },
    {
     "prompt": "A little before the third watch.",
     "answer": "paulō ante tertiam vigiliam.",
@@ -1121,7 +1085,13 @@
      "work": "Laelius de Amicitia",
      "locus": "3"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-141-prepositions-q2",
+  "sectionId": "bn-141-prepositions",
+  "questions": [
    {
     "prompt": "About four thousand men being killed.",
     "answer": "occīsīs ad hominum mīlibus quattuor.",
@@ -1154,13 +1124,7 @@
      "work": "In Verrem",
      "locus": "5, 17"
     }
-   }
-  ]
- },
- {
-  "id": "bn-141-prepositions-q3",
-  "sectionId": "bn-141-prepositions",
-  "questions": [
+   },
    {
     "prompt": "This canton had sent his army under the yoke.",
     "answer": "hīc pāgus eius exercitum sub iugum mīserat.",
@@ -1197,7 +1161,13 @@
      "work": "In Verrem",
      "locus": "5, 98"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-141-prepositions-q3",
+  "sectionId": "bn-141-prepositions",
+  "questions": [
    {
     "prompt": "Caesar put the army away in winter quarters.",
     "answer": "Caesar exercitum in hībernīs conlocāvit.",
@@ -1233,13 +1203,7 @@
      "work": "Epistulae ad Atticum",
      "locus": "16, 6, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-141-prepositions-q4",
-  "sectionId": "bn-141-prepositions",
-  "questions": [
+   },
    {
     "prompt": "The sea-fight off Tenedus.",
     "answer": "illam pugnam nāvālem ad Tenedum.",
@@ -1273,7 +1237,13 @@
      "work": "Ab Urbe Condita",
      "locus": "2, 52, 7"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-141-prepositions-q4",
+  "sectionId": "bn-141-prepositions",
+  "questions": [
    {
     "prompt": "They are all without spot or blemish.",
     "answer": "sunt omnēs sine maculā.",
@@ -1307,13 +1277,7 @@
      "work": "In Catilinam",
      "locus": "2, 21"
     }
-   }
-  ]
- },
- {
-  "id": "bn-141-prepositions-q5",
-  "sectionId": "bn-141-prepositions",
-  "questions": [
+   },
    {
     "prompt": "In toil and trouble.",
     "answer": "in labōre ac dolōre.",
@@ -1348,7 +1312,13 @@
      "work": "Vitae",
      "locus": "5, 3, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-141-prepositions-q5",
+  "sectionId": "bn-141-prepositions",
+  "questions": [
    {
     "prompt": "With two commanders, Pyrrhus and Hannibal.",
     "answer": "cum duōbus ducibus, Pyrrhō et Hannibale.",
@@ -1381,6 +1351,41 @@
      "author": "Titus Livius",
      "work": "Ab Urbe Condita",
      "locus": "34, 8, 1"
+    }
+   },
+   {
+    "prompt": "Partly against Avitus, partly for him.",
+    "answer": "partim contrā Avītum, partim prō hōc.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "partim",
+     "contrā",
+     "Avītum",
+     "partim",
+     "prō",
+     "hōc"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Cluentio",
+     "locus": "88"
+    }
+   },
+   {
+    "prompt": "Both in the body and outside.",
+    "answer": "et in corpore et extrā.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "et",
+     "in",
+     "corpore",
+     "et",
+     "extrā"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Finibus Bonorum et Malorum",
+     "locus": "2, 68"
     }
    }
   ]

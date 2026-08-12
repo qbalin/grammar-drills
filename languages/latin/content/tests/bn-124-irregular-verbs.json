@@ -3383,5 +3383,394 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-124-irregular-verbs-q1",
+  "sectionId": "bn-124-irregular-verbs",
+  "questions": [
+   {
+    "prompt": "At dinner happens what ought to happen in the stomach: I now wait for the chewed food to be set out.",
+    "answer": "In cēnā fit quod fierī dēbēbat in ventre: expectō iam ut mandūcāta pōnantur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "In",
+     "cēnā",
+     "fit",
+     "quod",
+     "fierī",
+     "dēbēbat",
+     "in",
+     "ventre",
+     "expectō",
+     "iam",
+     "ut",
+     "mandūcāta",
+     "pōnantur"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "95.27"
+    }
+   },
+   {
+    "prompt": "Whatever he wants, he wants mightily.",
+    "answer": "quidquid volt, valdē volt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quidquid",
+     "volt",
+     "valdē",
+     "volt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "14, 1, 2"
+    }
+   },
+   {
+    "prompt": "He induced the monarch to let him go, ‘because he didn’t care to be Fortune’s pet any longer’.",
+    "answer": "exōrāvit tyrannum ut abīre licēret, quod iam beātus nōllet esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "exōrāvit",
+     "tyrannum",
+     "ut",
+     "abīre",
+     "licēret",
+     "quod",
+     "iam",
+     "beātus",
+     "nōllet",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Tusculanae Disputationes",
+     "locus": "5, 62"
+    }
+   },
+   {
+    "prompt": "He would impose every possible burden on the Segestans, far too much for them to bear.",
+    "answer": "quicquid erat oneris Segestānīs impōnēbat, aliquantō amplius quam ferre possent.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quicquid",
+     "erat",
+     "oneris",
+     "Segestānīs",
+     "impōnēbat",
+     "aliquantō",
+     "amplius",
+     "quam",
+     "ferre",
+     "possent"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 76"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-124-irregular-verbs-q2",
+  "sectionId": "bn-124-irregular-verbs",
+  "questions": [
+   {
+    "prompt": "We have had nothing from you since you published the work On the State.",
+    "answer": "ut illōs dē rē pūblicā librōs ēdidistī, nihil ā tē posteā accēpimus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "ut",
+     "illōs",
+     "dē",
+     "rē",
+     "pūblicā",
+     "librōs",
+     "ēdidistī",
+     "nihil",
+     "ā",
+     "tē",
+     "posteā",
+     "accēpimus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "19"
+    }
+   },
+   {
+    "prompt": "When the majority voted for the same motion, war was always agreed upon.",
+    "answer": "quandō pars maior in eandem sententiam ībat, bellum erat cōnsēnsum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quandō",
+     "pars",
+     "maior",
+     "in",
+     "eandem",
+     "sententiam",
+     "ībat",
+     "bellum",
+     "erat",
+     "cōnsēnsum"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "1, 32, 12"
+    }
+   },
+   {
+    "prompt": "Let this be the charge of the censors, seeing that we want such officers always in our state.",
+    "answer": "haec dētur cūra cēnsōribus, quandōquidem eōs in rē pūblicā semper volumus esse.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "haec",
+     "dētur",
+     "cūra",
+     "cēnsōribus",
+     "quandōquidem",
+     "eōs",
+     "in",
+     "rē",
+     "pūblicā",
+     "semper",
+     "volumus",
+     "esse"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Legibus",
+     "locus": "3, 47"
+    }
+   },
+   {
+    "prompt": "If we wish to enjoy peace, we shall have to make war; if we give up war, we never shall enjoy peace.",
+    "answer": "sī pāce fruī volumus, bellum gerendum est; sī bellum omittimus, pāce numquam fruēmur.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "pāce",
+     "fruī",
+     "volumus",
+     "bellum",
+     "gerendum",
+     "est",
+     "sī",
+     "bellum",
+     "omittimus",
+     "pāce",
+     "numquam",
+     "fruēmur"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Philippicae",
+     "locus": "7, 19"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-124-irregular-verbs-q3",
+  "sectionId": "bn-124-irregular-verbs",
+  "questions": [
+   {
+    "prompt": "If they contributed a statue as a compliment, they are not enemies.",
+    "answer": "sī honōris causā statuam dedērunt, inimīcī nōn sunt.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "honōris",
+     "causā",
+     "statuam",
+     "dedērunt",
+     "inimīcī",
+     "nōn",
+     "sunt"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "2, 150"
+    }
+   },
+   {
+    "prompt": "If there shall be anything which you think worth writing, I wish you would write.",
+    "answer": "sī quid erit, quod scrībendum putēs, velim faciās.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "quid",
+     "erit",
+     "quod",
+     "scrībendum",
+     "putēs",
+     "velim",
+     "faciās"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Epistulae ad Atticum",
+     "locus": "11, 13, 5"
+    }
+   },
+   {
+    "prompt": "In that case it was indeed a bad day for the country when I was made consul, if you make the proposition.",
+    "answer": "tum, hercule, illō diē quō ego cōnsul sum creātus, male gesta rēs pūblica est, sī tuleritis.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tum",
+     "hercule",
+     "illō",
+     "diē",
+     "quō",
+     "ego",
+     "cōnsul",
+     "sum",
+     "creātus",
+     "male",
+     "gesta",
+     "rēs",
+     "pūblica",
+     "est",
+     "sī",
+     "tuleritis"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "3, 19, 11"
+    }
+   },
+   {
+    "prompt": "I propose to enter the camp of the enemy, if I be able.",
+    "answer": "intrāre, sī possim, castra hostium volō.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "intrāre",
+     "sī",
+     "possim",
+     "castra",
+     "hostium",
+     "volō"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "2, 12, 5"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bn-124-irregular-verbs-q4",
+  "sectionId": "bn-124-irregular-verbs",
+  "questions": [
+   {
+    "prompt": "They ought not to help you, if they could, and cannot, if they would.",
+    "answer": "tē neque dēbent adiuvāre, sī possint, neque possunt, sī velint.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "tē",
+     "neque",
+     "dēbent",
+     "adiuvāre",
+     "sī",
+     "possint",
+     "neque",
+     "possunt",
+     "sī",
+     "velint"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "In Verrem",
+     "locus": "4, 20"
+    }
+   },
+   {
+    "prompt": "Again, suppose I undertake to go sailing, I should not lay my course as I may have dreamed; for the penalty would be swift.",
+    "answer": "nē sī nāvigāre quidem velim, ita gubernārem, ut somniāverim; praesēns enim poena sit.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "nē",
+     "sī",
+     "nāvigāre",
+     "quidem",
+     "velim",
+     "ita",
+     "gubernārem",
+     "ut",
+     "somniāverim",
+     "praesēns",
+     "enim",
+     "poena",
+     "sit"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "De Divinatione",
+     "locus": "2, 122"
+    }
+   },
+   {
+    "prompt": "Suppose there be wars to-day like the Etruscan and the Gallic wars: could you bear to see Sextius consul.",
+    "answer": "sī hodiē bella sint, quāle Etrūscum fuit, quāle Gallicum; possētisne ferre Sextium cōnsulem esse?",
+    "kind": "translate-en-la",
+    "vocab": [
+     "sī",
+     "hodiē",
+     "bella",
+     "sint",
+     "quāle",
+     "Etrūscum",
+     "fuit",
+     "quāle",
+     "Gallicum",
+     "possētisne",
+     "ferre",
+     "Sextium",
+     "cōnsulem",
+     "esse"
+    ],
+    "source": {
+     "author": "Titus Livius",
+     "work": "Ab Urbe Condita",
+     "locus": "6, 40, 17"
+    }
+   },
+   {
+    "prompt": "If I should undertake to set forth his high and mighty schemes, possibly it might be thought that I wished to damage the cause of the conservatives.",
+    "answer": "quae cōnētur sī velim commemorāre, vereor nē quis exīstimet mē causam nōbilitātis voluisse laedere.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "quae",
+     "cōnētur",
+     "sī",
+     "velim",
+     "commemorāre",
+     "vereor",
+     "nē",
+     "quis",
+     "exīstimet",
+     "mē",
+     "causam",
+     "nōbilitātis",
+     "voluisse",
+     "laedere"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Sexto Roscio Amerino",
+     "locus": "135"
+    }
+   }
+  ]
  }
 ]

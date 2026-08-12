@@ -72,7 +72,39 @@ export function classOf(data, pos) {
     const conjugation = tagValue(data, "conjugation-");
     if (conjugation) out.conjugation = conjugation;
   }
+  const tags = KEPT.filter((tag) => hasTag(data, tag));
+  if (tags.length) out.tags = tags;
   return out;
+}
+
+/**
+ * The entry-level tags worth a field of their own, and no others.
+ *
+ * wiktextract writes a hundred of them and most say something about register or
+ * transitivity that no gate and no screen asks about. `deponent` is different:
+ * it is what a book gives a whole section to — Bennett's §112 — and it cannot
+ * be recovered from the forms. A deponent's passive-looking forms are tagged
+ * *active* in the paradigm, correctly and unhelpfully, so a reader working from
+ * the tables alone would find no deponents at all.
+ *
+ * `impersonal` was tried here beside it and withdrawn, which is worth recording
+ * because the failure is the general one. The tag sits on a *sense*, so it
+ * marks every verb with an impersonal use rather than every impersonal verb:
+ * `cadō` carries it, and 276 quotations were filed under §138 on the strength
+ * of `cadunt`. A sense the surface cannot distinguish is not a fact about the
+ * word in front of the student. Bennett's own list is used instead.
+ *
+ * Kept short on purpose. Every tag here is bytes on a phone, and a list that
+ * grows by whatever seemed handy stops being a claim about the language.
+ */
+const KEPT = ["deponent"];
+
+/** Whether any sense of the entry carries this exact tag. */
+export function hasTag(data, name) {
+  for (const sense of parse(data).senses ?? []) {
+    if ((sense.tags ?? []).includes(name)) return true;
+  }
+  return false;
 }
 
 /** The gender tags wiktextract writes, in any language that marks gender. */

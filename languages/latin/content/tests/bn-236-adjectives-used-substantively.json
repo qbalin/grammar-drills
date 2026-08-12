@@ -694,6 +694,32 @@
   "sectionId": "bn-236-adjectives-used-substantively",
   "questions": [
    {
+    "prompt": "Every murmur is checked with the rod, and not even chance sounds are exempt from the lash: coughs, sneezes, hiccups!",
+    "answer": "Virgā murmur omne compescitur, et nē fortuita quidem verberibus excepta sunt: tussēs, sternūmenta, singultūs!",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Virgā",
+     "murmur",
+     "omne",
+     "compescitur",
+     "et",
+     "nē",
+     "fortuita",
+     "quidem",
+     "verberibus",
+     "excepta",
+     "sunt",
+     "tussēs",
+     "sternūmenta",
+     "singultūs"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.3"
+    }
+   },
+   {
     "prompt": "You have got a band of scoundrels, welded together out of men who are desperate and abandoned not only by all fortune but even by hope.",
     "answer": "Nactus es, ex perditis atque ab omnī nōn modo fortūna, vērum etiam spē dērelictīs cōnflātam, improbōrum mānum.",
     "kind": "translate-en-la",
@@ -723,6 +749,24 @@
     }
    },
    {
+    "prompt": "Afterwards set the little cup out in the open by night.",
+    "answer": "Posteā pōnitō pōcillum in serēnō noctū.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Posteā",
+     "pōnitō",
+     "pōcillum",
+     "in",
+     "serēnō",
+     "noctū"
+    ],
+    "source": {
+     "author": "Marcus Porcius Cato",
+     "work": "De agri cultura",
+     "locus": "156.3"
+    }
+   },
+   {
     "prompt": "Death seems to me to be an evil.",
     "answer": "Malum mihi vidētur esse mors.",
     "kind": "translate-en-la",
@@ -737,26 +781,6 @@
      "author": "Cicero",
      "work": "Tusculanae Disputationes",
      "locus": "1.9"
-    }
-   },
-   {
-    "prompt": "What I was myself at Trasumene, that you are today.",
-    "answer": "quod ego fuī ad Trāsumennum, id tū hodiē.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quod",
-     "ego",
-     "fuī",
-     "ad",
-     "Trāsumennum",
-     "id",
-     "tū",
-     "hodiē"
-    ],
-    "source": {
-     "author": "Titus Livius",
-     "work": "Ab Urbe Condita",
-     "locus": "30, 30, 12"
     }
    }
   ]

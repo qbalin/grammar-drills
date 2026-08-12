@@ -784,5 +784,101 @@
     ]
    }
   ]
+ },
+ {
+  "id": "bn-076-formation-and-comparison-of-adverbs-q1",
+  "sectionId": "bn-076-formation-and-comparison-of-adverbs",
+  "questions": [
+   {
+    "prompt": "For it is not so glorious to know Latin as it is shameful not to know it.",
+    "answer": "Nōn enim tam praeclārum est scīre Latīnē, quam turpe nescīre.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Nōn",
+     "enim",
+     "tam",
+     "praeclārum",
+     "est",
+     "scīre",
+     "Latīnē",
+     "quam",
+     "turpe",
+     "nescīre"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Brutus",
+     "locus": "140"
+    }
+   },
+   {
+    "prompt": "Live with your slave kindly, and courteously too, and admit him into your conversation and into your counsel and into your fellowship.",
+    "answer": "Vīve cum servō clēmenter, cōmiter quoque, et in sermōnem illum admitte et in cōnsilium et in convictum.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Vīve",
+     "cum",
+     "servō",
+     "clēmenter",
+     "cōmiter",
+     "quoque",
+     "et",
+     "in",
+     "sermōnem",
+     "illum",
+     "admitte",
+     "et",
+     "in",
+     "cōnsilium",
+     "et",
+     "in",
+     "convictum"
+    ],
+    "source": {
+     "author": "Seneca Minor",
+     "work": "Epistulae morales ad Lucilium",
+     "locus": "47.13"
+    }
+   },
+   {
+    "prompt": "He took advantage of liberty, that he might bluster with more impunity.",
+    "answer": "Lībertāte ūsus est, quō impūnius dicāx esset.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "Lībertāte",
+     "ūsus",
+     "est",
+     "quō",
+     "impūnius",
+     "dicāx",
+     "esset"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Pro Quinctio",
+     "locus": "11"
+    }
+   },
+   {
+    "prompt": "Perhaps we have not attained to it; still we have very often made the attempt.",
+    "answer": "id fortasse nōn perfēcimus; cōnātī quidem saepissimē sumus.",
+    "kind": "translate-en-la",
+    "vocab": [
+     "id",
+     "fortasse",
+     "nōn",
+     "perfēcimus",
+     "cōnātī",
+     "quidem",
+     "saepissimē",
+     "sumus"
+    ],
+    "source": {
+     "author": "Cicero",
+     "work": "Orator",
+     "locus": "210"
+    }
+   }
+  ]
  }
 ]

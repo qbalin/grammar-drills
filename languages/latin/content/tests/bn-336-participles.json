@@ -1249,34 +1249,6 @@
   "sectionId": "bn-336-participles",
   "questions": [
    {
-    "prompt": "I seemed to see some entering, others going out, some staggering from wine, some yawning from yesterday's drinking-bout.",
-    "answer": "Vidēbar vidēre aliōs intrantēs, aliōs autem exeuntēs, quōsdam ex vīnō vacillantēs, quōsdam hesternā ex pōtātiōne ōscitantēs.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Vidēbar",
-     "vidēre",
-     "aliōs",
-     "intrantēs",
-     "aliōs",
-     "autem",
-     "exeuntēs",
-     "quōsdam",
-     "ex",
-     "vīnō",
-     "vacillantēs",
-     "quōsdam",
-     "hesternā",
-     "ex",
-     "pōtātiōne",
-     "ōscitantēs"
-    ],
-    "source": {
-     "author": "Quintilianus",
-     "work": "Institutio oratoria",
-     "locus": "8.3.66"
-    }
-   },
-   {
     "prompt": "And so a great pleasure came over me as I contemplated the character of Scipio and our own.",
     "answer": "Magna ergō mē voluptās subiit contemplantem mōrēs Scīpiōnis ac nostrōs.",
     "kind": "translate-en-la",
@@ -1346,13 +1318,7 @@
      "work": "In Catilinam orationes",
      "locus": "1.6"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q2",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "And so, having called the centurions together, he informs the soldiers.",
     "answer": "Itaque convocātīs centuriōnibus mīlitēs certiōrēs facit.",
@@ -1370,7 +1336,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "3.5"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q2",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "Having observed this Caesar led his troops to the nearest hill.",
     "answer": "Postquam id animum advertit cōpiās suās Caesar in proximum collem subdūcit.",
@@ -1437,13 +1409,7 @@
      "work": "De Divinatione",
      "locus": "1.74"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q3",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "While rolling over the corpses of the enemy they found a friend.",
     "answer": "Volventēs hostīlia cadāvera amīcum reperiēbant.",
@@ -1460,7 +1426,13 @@
      "work": "Bellum Catilinae",
      "locus": "61"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q3",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "Because he feared to follow further, he came to Cicero.",
     "answer": "Longius prōsequī veritus, ad Cicerōnem pervēnit.",
@@ -1480,22 +1452,6 @@
     }
    },
    {
-    "prompt": "If condemned, punishment must overtake him.",
-    "answer": "Damnātum poenam sequī oportēbat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Damnātum",
-     "poenam",
-     "sequī",
-     "oportēbat"
-    ],
-    "source": {
-     "author": "Julius Caesar",
-     "work": "Commentarii de bello Gallico",
-     "locus": "1.4"
-    }
-   },
-   {
     "prompt": "I conducted the discussion either sitting or walking.",
     "answer": "Aut sedēns aut ambulāns disputābam.",
     "kind": "translate-en-la",
@@ -1511,13 +1467,7 @@
      "work": "Tusculanae Disputationes",
      "locus": "1.7"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q4",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "He draws up the lines, and leads them to level ground.",
     "answer": "Īnstrūctōs ōrdinēs in locum aequum dēdūcit.",
@@ -1552,7 +1502,13 @@
      "work": "De Natura Deorum",
      "locus": "3.14"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q4",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "He had eighty cohorts stationed in line of battle.",
     "answer": "Cohortīs in aciē LXXX cōnstitūtās habēbat.",
@@ -1589,13 +1545,7 @@
      "work": "In Catilinam",
      "locus": "3.16"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q5",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "Many discharged their officers.",
     "answer": "Praefectōs suōs multī missōs fēcērunt.",
@@ -1632,7 +1582,13 @@
      "work": "Tusculanae Disputationes",
      "locus": "1.111"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q5",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "The young man hopes to live long.",
     "answer": "Spērat adulēscēns diū sē vīctūrum.",
@@ -1670,70 +1626,7 @@
      "work": "Epistulae",
      "locus": "3.21.6"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q6",
-  "sectionId": "bn-336-participles",
-  "questions": [
-   {
-    "prompt": "A grave and intolerable wrong has been done.",
-    "answer": "Gravis iniūria facta est et nōn ferenda.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Gravis",
-     "iniūria",
-     "facta",
-     "est",
-     "et",
-     "nōn",
-     "ferenda"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Flacco",
-     "locus": "84"
-    }
    },
-   {
-    "prompt": "Will not the thing have to be agitated?",
-    "answer": "Nōn agitanda rēs erit?",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Nōn",
-     "agitanda",
-     "rēs",
-     "erit"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "5.179"
-    }
-   },
-   {
-    "prompt": "He had the temple of Castor to take care of.",
-    "answer": "Aedem Castoris habuit tuendam.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "Aedem",
-     "Castoris",
-     "habuit",
-     "tuendam"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "In Verrem",
-     "locus": "2.1.150"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q7",
-  "sectionId": "bn-336-participles",
-  "questions": [
    {
     "prompt": "For Caesar there was everything to be done at the same moment: the standard to be raised, bugle call given, soldiers summoned in from their work, line of battle to be formed, soldiers harangued, signal given for engagement.",
     "answer": "Caesarī omnia ūnō tempore erant agenda: vēxillum prōpōnendum, sīgnum tubā dandum, ab opere revocandī mīlitēs, aciēs īnstruenda, mīlitēs cohortandī, sīgnum dandum.",
@@ -1784,7 +1677,13 @@
      "work": "Ab Urbe Condita",
      "locus": "21, 3, 6"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q6",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "What more do you think that I need say?",
     "answer": "quid ā mē amplius dīcendum putātis?",
@@ -1823,13 +1722,7 @@
      "work": "De Finibus Bonorum et Malorum",
      "locus": "1, 3"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q8",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "It makes a great difference whether you have to speak about a theft or about the murder of Romans.",
     "answer": "multum interest utrumne dē fūrtō dīcendum habeās an dē cīvibus trucīdātīs.",
@@ -1869,7 +1762,13 @@
      "work": "Annales",
      "locus": "14, 44"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q7",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "It must be admitted that every living thing is destined to die.",
     "answer": "omne animal cōnfitendum est esse mortāle.",
@@ -1905,13 +1804,7 @@
      "work": "In Verrem",
      "locus": "1, 38"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q9",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "Brutus, the first of this most highly cherished house and name.",
     "answer": "L. Brūtō, prīncipe huius maximē cōnservandī generis et nōminis.",
@@ -1949,7 +1842,13 @@
      "work": "Ab Urbe Condita",
      "locus": "21, 41, 4"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q8",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "Athens, which contains many sights worth a visit.",
     "answer": "Athēnās, multa vīsenda habentīs.",
@@ -1983,13 +1882,7 @@
      "work": "De Divinatione",
      "locus": "2, 47"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q10",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "I wish you had undertaken training the young man.",
     "answer": "vellem suscēpissēs iuvenem regendum.",
@@ -2023,7 +1916,13 @@
      "work": "Philippicae",
      "locus": "8, 15"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q9",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "He gave lands to the common people to till.",
     "answer": "agrōs plēbī colendōs dedit.",
@@ -2056,13 +1955,7 @@
      "work": "Ab Urbe Condita",
      "locus": "2, 47, 12"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q11",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "He specified Romans for slaughter.",
     "answer": "cīvīs Rōmānōs trucīdandōs dēnotāvit.",
@@ -2097,7 +1990,13 @@
      "work": "De Natura Deorum",
      "locus": "2, 101"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q10",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "With hands outstretched they begged their lives.",
     "answer": "manūs tendentēs vītam ōrābant.",
@@ -2133,13 +2032,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "7, 47, 1"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q12",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "After his expulsion from Syracuse, Dionysius kept school at Corinth.",
     "answer": "Dionȳsius Syrācūsīs expulsus Corinthī puerōs docēbat.",
@@ -2177,7 +2070,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "4, 9, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q11",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "Supposing that it was Metellus, they closed their gates.",
     "answer": "Metellum esse ratī portās clausēre.",
@@ -2210,13 +2109,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "4, 13, 6"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q13",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "They coaxed the Rauraci to adopt the same plan and go.",
     "answer": "persuādent Rauracīs utī eōdem ūsī cōnsiliō proficīscantur.",
@@ -2254,7 +2147,13 @@
      "work": "Ab Urbe Condita",
      "locus": "2, 36, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q12",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "A slave with the fork on his neck was driven through the circus, flogged with rods the while.",
     "answer": "servus per circum, cum virgīs caederētur, furcam ferēns ductus est.",
@@ -2298,13 +2197,7 @@
      "work": "Brutus",
      "locus": "317"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q14",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "A strong and durable wall.",
     "answer": "firmus pariēs et dūrātūrus.",
@@ -2338,7 +2231,13 @@
      "work": "De Natura Deorum",
      "locus": "2, 12"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q13",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "The outrages of Roman knights detained.",
     "answer": "iniūriae retentōrum equitum Rōmānōrum.",
@@ -2370,13 +2269,7 @@
      "work": "Annales",
      "locus": "6, 29"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q15",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "From the foundation of the city to the liberation thereof.",
     "answer": "ab conditā urbe ad līberātam.",
@@ -2409,7 +2302,13 @@
      "work": "Brutus",
      "locus": "224"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q14",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "What tortured the high-souled hero was the loss of Sicily and Sardinia.",
     "answer": "angēbant ingentis spīritūs virum Sicilia Sardiniaque āmissae.",
@@ -2447,13 +2346,7 @@
      "work": "In Verrem",
      "locus": "5, 12"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q16",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "The sudden proclamation that nobody was to be harmed, deprived the people of their weapons.",
     "answer": "prōnūntiātum repente nē quis violārētur, multitūdinem exuit armīs.",
@@ -2489,7 +2382,13 @@
      "work": "Brutus",
      "locus": "45"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q15",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "I do not expect from you the past or the present, but the future.",
     "answer": "nec praeterita nec praesentia abs tē, sed futūra exspectō.",
@@ -2526,13 +2425,7 @@
      "work": "Ab Urbe Condita",
      "locus": "22, 5, 4"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q17",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "From you I expect the future.",
     "answer": "abs tē futūra exspectō.",
@@ -2566,7 +2459,13 @@
      "work": "De Natura Deorum",
      "locus": "1, 85"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q16",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "Conon superintended the rebuilding of the walls which had been destroyed by Lysander.",
     "answer": "Conōn mūrōs dīrutōs ā Lȳsandrō reficiendōs cūrat.",
@@ -2602,13 +2501,7 @@
      "work": "Pro Sexto Roscio Amerino",
      "locus": "97"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q18",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "The freebooters, after tarrying but one night, began to draw near Syracuse.",
     "answer": "ūnam noctem sōlam praedōnēs commorātī, accedēre incipiunt Syrācūsās.",
@@ -2645,7 +2538,13 @@
      "work": "Commentarii de bello Gallico",
      "locus": "6, 1, 1"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q17",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "By giving his right hand he gave a pledge of future friendship.",
     "answer": "dextrā datā fidem futūrae amīcitiae sanxisse.",
@@ -2682,13 +2581,7 @@
      "work": "De Natura Deorum",
      "locus": "2, 153"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q19",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "They had neither sound judgement nor sincerity, since on the same day they were to make conflicting demands with equal vehemence.",
     "answer": "neque illīs iūdicium aut vēritās, quippe eōdem diē dīversa parī certāmine postulātūrīs.",
@@ -2731,7 +2624,13 @@
      "work": "Ab Urbe Condita",
      "locus": "10, 26, 7"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q18",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "He went aboard in person to go to the rescue.",
     "answer": "ascendit ipse, lātūrus auxilium.",
@@ -2768,13 +2667,7 @@
      "work": "Ab Urbe Condita",
      "locus": "3, 60, 8"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q20",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "Thou who, though born to die, layest claim to the state of the deathless.",
     "answer": "quī mortālis nātus condiciōnem postulēs immortālium.",
@@ -2813,7 +2706,13 @@
      "work": "De Finibus Bonorum et Malorum",
      "locus": "2, 111"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q19",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "It grew obvious that, if not given audience, they would go to Carthage forthwith.",
     "answer": "appārēbat nōn admissōs prōtinus Carthāginem itūrōs.",
@@ -2851,13 +2750,7 @@
      "work": "Ab Urbe Condita",
      "locus": "2, 20, 13"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q21",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "He lent passion to his words with tears and beating of his breast.",
     "answer": "incendēbat haec flētū et pectus verberāns.",
@@ -2892,7 +2785,13 @@
      "work": "In Verrem",
      "locus": "5, 108"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q20",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "That without being asked, they offer assistance of their own accord.",
     "answer": "nōn rogātōs ultrō offerre auxilium.",
@@ -2928,13 +2827,7 @@
      "work": "Pro Lege Manilia",
      "locus": "18"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q22",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "Clodius’s mind I have looked into thoroughly, probed, formed a judgement on.",
     "answer": "Clōdiī animum perspectum habeō, cōgnitum, iūdicātum.",
@@ -2974,7 +2867,13 @@
      "work": "Ab Urbe Condita",
      "locus": "22, 4, 5"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-336-participles-q21",
+  "sectionId": "bn-336-participles",
+  "questions": [
    {
     "prompt": "But I let this pass.",
     "answer": "vērum haec missa faciō.",
@@ -3006,13 +2905,7 @@
      "work": "Ab Urbe Condita",
      "locus": "8, 6, 6"
     }
-   }
-  ]
- },
- {
-  "id": "bn-336-participles-q23",
-  "sectionId": "bn-336-participles",
-  "questions": [
+   },
    {
     "prompt": "I have brought on the men themselves as speaking.",
     "answer": "quasi ipsōs indūxī loquentēs.",
@@ -3049,22 +2942,6 @@
      "author": "Cicero",
      "work": "Pro Sexto Roscio Amerino",
      "locus": "98"
-    }
-   },
-   {
-    "prompt": "He did not hear the serpent speaking.",
-    "answer": "nōn audīvit dracōnem loquentem.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "nōn",
-     "audīvit",
-     "dracōnem",
-     "loquentem"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "De Divinatione",
-     "locus": "2, 141"
     }
    }
   ]

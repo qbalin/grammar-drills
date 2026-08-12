@@ -759,26 +759,70 @@ confirmed verbatim against a corpus of the authors it cites and **none was
 contradicted**.
 
 Together the three take Latin from **889 attested questions of 7,470 (11.9%) to
-2,387 of 8,984 (27%)**, over 62 topics rather than 50. Verb syntax is 44%
-attested and noun syntax 37%, where they were 21% and 23%. The inflection
-families stay near zero and that is correct: nobody quotes Cicero to teach the
-fourth declension.
+2,409 of 9,006 (27%)**. Verb syntax is 36% attested and noun syntax 35%, where
+they were 21% and 23%.
+
+### Asking the sentence instead of a model
+
+For a long time the inflection families stayed near zero, and there was a
+sentence here saying that was correct — nobody quotes Cicero to teach the fourth
+declension. That was true about the *books*, and wrong about the sentences. Of
+Bennett's nine noun topics, eight had no quotation at all, because no
+grammarian's syntax section illustrates the fourth declension and a section is
+the only thing the pools were ever filed by.
+
+But "does this sentence show a fourth-declension noun" is not the kind of
+question a model is needed for. It is a lookup, and the pack already ships what
+answers it: `lemmas.json.gz` names a lemma's declension and conjugation, and
+`paradigms.txt.gz` says which cell of its own table a surface form fills. So
+`inflection-topics.mjs` files the pools' sentences under the inflection topics a
+lookup can confirm, out of a table the pack owns —
+`grammar/inflection-topics.tsv`, one row per rule, each carrying the sentence of
+Bennett's that licenses it. `manus` is a fourth-declension noun; `ortū` fills its
+ablative singular; the sentence containing it teaches §48, and no one had to be
+asked.
+
+Three things keep the rule honest. A form licenses a class only when **every**
+candidate lemma of it agrees — one reading the table cannot classify and the
+token is refused, which is what stops `dī` being filed under the fifth
+declension. A declension wants an **oblique** cell, because a nominative
+singular shows a word and not a paradigm. And the rules that license nothing
+were **withdrawn rather than loosened**: the relative and interrogative pronouns
+share almost every form they have, so no sentence proves which is meant, and
+they are left empty. `impersonal` went the same way — wiktextract writes it on a
+*sense*, so it marks `cadō`, and Bennett's own list is used instead.
+
+Since a sentence ships once, this is a redistribution rather than an addition:
+`quote-tests --allocate` deals the whole pool at once, sparsest topic first, out
+of the surplus of the topics that have most, and never below a floor that keeps
+a donor at 16. Conditional sentences goes from 255 quoted questions to 105 —
+still the deepest in the pack — and thirty topics that had nothing get sixteen.
+**Topics with no quoted question at all: 52 before, 23 after.**
+
+What remains is what no lookup can reach and no book had a section for: word
+order and the style family, the umbrella topics whose children carry the
+quotations, and §13 on gender, which belongs to the lemma rather than to the
+sentence. Those wait for another book.
 
 ```bash
 node --import tsx scripts/build-quote-pool.mjs --pack languages/latin \
   --dump <kaikki.jsonl> --ref languages/latin/reference   # -> content/quotes.jsonl.gz
 node --import tsx scripts/ag-quotes.mjs   --pack languages/latin   # -> content/ag-quotes.jsonl.gz
 node --import tsx scripts/lane-quotes.mjs --pack languages/latin   # -> content/lane-quotes.jsonl.gz
-node --import tsx scripts/quote-tests.mjs --pack languages/latin --from quotes
+node --import tsx scripts/inflection-topics.mjs --pack languages/latin  # -> content/inflection-topics.jsonl.gz
+node --import tsx scripts/prune-tests.mjs --pack languages/latin --quoted --apply
+node --import tsx scripts/quote-tests.mjs --pack languages/latin --from quotes --allocate --per-topic 16
 node --import tsx scripts/quote-tests.mjs --pack languages/ancient-greek --from grammar
 ```
 
 Only the first needs the 1.2 GB dump and the dictionary, and it needs them for
 the macrons alone; the two grammars print theirs. Each writes a committed
-artifact and everything downstream reads that. All three call a model, and what
-they ask for is narrow — the dump's builder wants topics, a spelling from a
-*closed* set, and an English rendering; the grammars' builders want only which
-topic a section teaches, decided once per section rather than once per sentence.
+artifact and everything downstream reads that. The three pool builders call a
+model, and what they ask for is narrow — the dump's builder wants topics, a
+spelling from a *closed* set, and an English rendering; the grammars' builders
+want only which topic a section teaches, decided once per section rather than
+once per sentence. `inflection-topics.mjs` calls none: every answer it gives is
+a row of a table somebody wrote out or a cell of a paradigm the pack ships.
 The Latin is the quotation as printed. Nothing here writes any.
 
 Two rules hold the whole thing up. **Nothing may move a gate**: a quotation is

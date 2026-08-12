@@ -3112,26 +3112,6 @@
     }
    },
    {
-    "prompt": "Perhaps we have not attained to it; still we have very often made the attempt.",
-    "answer": "id fortasse nōn perfēcimus; cōnātī quidem saepissimē sumus.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "id",
-     "fortasse",
-     "nōn",
-     "perfēcimus",
-     "cōnātī",
-     "quidem",
-     "saepissimē",
-     "sumus"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Orator",
-     "locus": "210"
-    }
-   },
-   {
     "prompt": "I’m not afraid of being overheard by any of my fellow-students :: and yet you must be on your guard.",
     "answer": "nōn vereor condiscipulōrum nē quis exaudiat :: atquī cavendum est.",
     "kind": "translate-en-la",
@@ -3151,13 +3131,7 @@
      "work": "De Legibus",
      "locus": "1, 21"
     }
-   }
-  ]
- },
- {
-  "id": "bn-341-coordinate-conjunctions-q20",
-  "sectionId": "bn-341-coordinate-conjunctions",
-  "questions": [
+   },
    {
     "prompt": "What? is there, think you, to be no end to your statues? Yet there must be.",
     "answer": "quid vērō? modum statuārum habērī nūllum placet? atquī habeātur necesse est.",
@@ -3180,7 +3154,13 @@
      "work": "In Verrem",
      "locus": "2, 144"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q20",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
    {
     "prompt": "Foregoing requires a sentient being, and there is no sensation in a dead man; therefore there is no foregoing either in a dead man. And yet what is the use of philosophizing over this?",
     "answer": "carēre sentientis est, nec sēnsus in mortuō, nē carēre quidem igitur in mortuō est. quamquam quid opus est in hōc philosophārī?",
@@ -3241,62 +3221,6 @@
     }
    },
    {
-    "prompt": "You can remember him: for the present consuls were created only nineteen years after his death.",
-    "answer": "quem meminisse potestis: annō enim ūndēvīcēsimō post eius mortem hī cōnsulēs factī sunt.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quem",
-     "meminisse",
-     "potestis",
-     "annō",
-     "enim",
-     "ūndēvīcēsimō",
-     "post",
-     "eius",
-     "mortem",
-     "hī",
-     "cōnsulēs",
-     "factī",
-     "sunt"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Cato Maior de Senectute",
-     "locus": "14"
-    }
-   }
-  ]
- },
- {
-  "id": "bn-341-coordinate-conjunctions-q21",
-  "sectionId": "bn-341-coordinate-conjunctions",
-  "questions": [
-   {
-    "prompt": "The case stands thus: the Odyssey in Latin is, you may say, a regular work of Daedalus.",
-    "answer": "sīc enim sēsē rēs habet: nam Odyssīa Latīna est sīc tamquam opus Daedalī.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "sīc",
-     "enim",
-     "sēsē",
-     "rēs",
-     "habet",
-     "nam",
-     "Odyssīa",
-     "Latīna",
-     "est",
-     "sīc",
-     "tamquam",
-     "opus",
-     "Daedalī"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Brutus",
-     "locus": "71"
-    }
-   },
-   {
     "prompt": "Many orators flourished in Cato’s lifetime: for example, Albinus.",
     "answer": "vīvō Catōne multī ōrātōrēs flōruērunt: nam A. Albīnus.",
     "kind": "translate-en-la",
@@ -3332,7 +3256,13 @@
      "work": "Pro Sestio",
      "locus": "95"
     }
-   },
+   }
+  ]
+ },
+ {
+  "id": "bn-341-coordinate-conjunctions-q21",
+  "sectionId": "bn-341-coordinate-conjunctions",
+  "questions": [
    {
     "prompt": "In vain ye try to save my life. So away, while ye have the power.",
     "answer": "frūstrā meae vītae subvenīre cōnāminī. proinde abīte, dum est facultās.",
@@ -3354,13 +3284,7 @@
      "work": "Commentarii de bello Gallico",
      "locus": "7, 50, 6"
     }
-   }
-  ]
- },
- {
-  "id": "bn-341-coordinate-conjunctions-q22",
-  "sectionId": "bn-341-coordinate-conjunctions",
-  "questions": [
+   },
    {
     "prompt": "Then again the surrounding woods and the loneliness are powerful stimulants to meditation. So when you go hunting, you can take a note book with you.",
     "answer": "iam undique silvae et sōlitūdō magna cōgitātiōnis incitāmenta sunt. proinde cum vēnābere, licēbit pugillārēs ferās.",
@@ -3443,33 +3367,6 @@
      "author": "Cicero",
      "work": "Philippicae",
      "locus": "2, 44"
-    }
-   },
-   {
-    "prompt": "Everybody who loved him, smiled on the other man. Yes, that is always the way of the world: it seldom judges by truth, often by hearsay.",
-    "answer": "quī dīligēbant hunc, illī favēbant. sīc est volgus: ex vēritāte pauca, ex opīniōne multa aestimat.",
-    "kind": "translate-en-la",
-    "vocab": [
-     "quī",
-     "dīligēbant",
-     "hunc",
-     "illī",
-     "favēbant",
-     "sīc",
-     "est",
-     "volgus",
-     "ex",
-     "vēritāte",
-     "pauca",
-     "ex",
-     "opīniōne",
-     "multa",
-     "aestimat"
-    ],
-    "source": {
-     "author": "Cicero",
-     "work": "Pro Roscio Comoedo",
-     "locus": "29"
     }
    }
   ]
