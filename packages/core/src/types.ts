@@ -100,8 +100,34 @@ export interface LemmaLookup {
   lookup(form: string): LemmaEntry[];
 }
 
+/**
+ * How a further grammar's topics reach the primary's, in both directions.
+ *
+ * Generated offline by `build-crosswalk.mjs` out of a table a model filled in
+ * and a person can read back. Many-to-many on purpose and in both directions:
+ * where one book has a single topic on the dative another has the complementary
+ * and the predicative dative apart, so one id maps to two and two map back to
+ * one. Collapsing either side would be tidier and would be a lie about the books.
+ */
+export interface Crosswalk {
+  /** A topic of this book -> the primary topics whose grammar point it teaches. */
+  toPrimary: Record<string, string[]>;
+  /** A primary topic -> the topics of this book that teach it. */
+  fromPrimary: Record<string, string[]>;
+}
+
 export interface ContentData {
   grammar: GrammarSection[];
+  /**
+   * Further grammars of the same language, by grammar id — the same language
+   * cut into topics a second way, with its own order and its own prose.
+   *
+   * Absent for a pack with one book, which is the shape every pack had before
+   * there was a second. The primary is *not* repeated here; it is `grammar`.
+   */
+  grammars?: Record<string, GrammarSection[]>;
+  /** grammarId -> how that book's topics reach the primary's. */
+  crosswalk?: Record<string, Crosswalk>;
   /** sectionId -> its ~50 pre-generated tests. */
   tests: Record<string, Test[]>;
   /** The whole form map, for callers that can afford to hold it. */
@@ -333,7 +359,18 @@ export interface RoundDraft {
  * sentence back on the screen.
  */
 export interface OpenRound {
+  /**
+   * The topic being graded: always one of the primary grammar's, because that
+   * is the syllabus the questions were written against and what carries a card.
+   */
   sectionId: string;
+  /**
+   * The section the student reached it through, when that is a further
+   * grammar's topic. Absent when the two are the same, which is every round
+   * read out of the primary book and every round written before there was
+   * another one.
+   */
+  viewedAs?: string;
   /** The served test's id — how the same test is found again, not re-rolled. */
   roundId: string;
   /** The topic's card before the round, or null if the topic had none. */
@@ -374,6 +411,24 @@ export interface Progress {
    * simply reads on, one section to the next.
    */
   bookAt?: string | null;
+  /**
+   * Which of the pack's grammars the student is reading. Absent is the primary,
+   * which is every file written before a pack had a second one.
+   *
+   * A view, not a state: everything below stays filed under the primary's topic
+   * ids whichever book is open, because the questions were written against that
+   * syllabus and a further grammar reaches them through the crosswalk. Switching
+   * books changes what is drawn and what it is called, and no history at all.
+   */
+  grammarId?: string;
+  /**
+   * The same cursor as `bookAt`, for the books that are not the primary.
+   *
+   * Kept apart rather than folded in so that `bookAt` still means exactly what
+   * it meant: a file written before this stays readable, and a student who never
+   * opens a second grammar never grows the field.
+   */
+  bookAtByGrammar?: Record<string, string | null>;
   /**
    * The run of practice in flight, if any. Exploring serves this when it is
    * set and the book cursor when it is not, which is the whole of what the

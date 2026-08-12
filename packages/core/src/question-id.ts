@@ -1,10 +1,18 @@
 /**
  * A stable identity for a question, derived from what it asks.
  *
- * Progress is keyed by topic today, which works only while a pack has one
- * syllabus: two grammars cut the same language into different topics, so the
- * one thing they can agree on is the questions themselves. This is the key
- * that survives the disagreement.
+ * Not what progress is keyed by, and worth saying so plainly because it was
+ * written to be. Two grammars cut the same language into different topics, and
+ * the questions are the one thing they can agree on — so this looked like the
+ * key that had to survive the disagreement. It turned out not to be needed: a
+ * further grammar's topics reach the primary's *as topics*, so they share a
+ * question bank exactly, and progress can stay where it is while a second book
+ * reads it through the crosswalk. See `Content.testsFor`.
+ *
+ * Kept because it is cheap, tested, and load-bearing the moment a pack
+ * generates questions against a second grammar's own topics — at which point
+ * two books really would disagree about what a question belongs to, and the
+ * question itself is the only thing left to file progress under.
  *
  * --- why it is derived rather than written down ------------------------------
  *

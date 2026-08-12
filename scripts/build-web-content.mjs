@@ -65,6 +65,7 @@ const profile = JSON.parse(readFileSync(join(packDir, "profile.json"), "utf8"));
 const ASSETS = [
   "grammar.json.gz",
   ...(profile.grammars ?? []).map((g) => `grammar-${g.id}.json.gz`),
+  ...(profile.grammars?.length ? ["crosswalk.json.gz"] : []),
   "tests.json.gz",
   "lemmas.json.gz",
   "forms.txt.gz",
@@ -115,6 +116,24 @@ function buildGrammar(from = "grammar.json", to = "grammar.json.gz") {
 function buildSecondaryGrammars() {
   for (const g of profile.grammars ?? []) {
     buildGrammar(g.content, `grammar-${g.id}.json.gz`);
+  }
+  /*
+   * And the table that makes them teachable. A further grammar has no questions
+   * of its own — its topics reach the primary's through this, and without it a
+   * second book is 459 topics of prose with nothing behind any of them. Small
+   * enough to ship beside the primary rather than on demand: it is the index,
+   * not the book.
+   */
+  if (profile.grammars?.length) {
+    const path = join(contentDir, "grammars", "crosswalk.json");
+    if (!existsSync(path)) {
+      console.error(
+        `\n${path} is missing — run scripts/build-crosswalk.mjs.\n` +
+          "Without it the further grammars ship unteachable.",
+      );
+      process.exit(1);
+    }
+    writeGz("crosswalk.json.gz", readFileSync(path, "utf8"));
   }
 }
 

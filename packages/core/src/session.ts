@@ -195,7 +195,7 @@ export class Session {
    * about which families a language has.
    */
   private get families(): readonly { id: string; label: string }[] {
-    return this.content.families;
+    return this.content.families(this.grammarId);
   }
 
   /** The generation of the shipped citations this pack is on. */
@@ -278,9 +278,53 @@ export class Session {
    * which is what a fresh deck wants and what choosing book order asks for.
    * Null only when the whole book is mastered.
    */
+  /** The book being read. Absent on the progress file means the primary. */
+  get grammarId(): string {
+    const id = this.p.grammarId;
+    return id && this.content.grammarIds().includes(id)
+      ? id
+      : this.content.primaryGrammar;
+  }
+
+  /**
+   * Open a different grammar of the same language.
+   *
+   * Nothing is migrated and nothing is recomputed, because nothing moved: the
+   * cards, the mastery and the answers stay filed under the primary's topics,
+   * and this changes only which book's topics are drawn over them.
+   */
+  setGrammar(id: string): void {
+    if (!this.content.grammarIds().includes(id)) return;
+    this.p.grammarId = id;
+    this.touch();
+  }
+
+  /** This book's cursor. The primary's is `bookAt`; the rest are beside it. */
+  private cursorAt(): string | null | undefined {
+    return this.grammarId === this.content.primaryGrammar
+      ? this.p.bookAt
+      : this.p.bookAtByGrammar?.[this.grammarId];
+  }
+
+  private setCursor(at: string | null): void {
+    if (this.grammarId === this.content.primaryGrammar) {
+      this.p.bookAt = at;
+      return;
+    }
+    this.p.bookAtByGrammar = { ...(this.p.bookAtByGrammar ?? {}), [this.grammarId]: at };
+  }
+
   bookCursor(): string | null {
-    const at = this.p.bookAt;
-    if (at !== null && at !== undefined && this.content.getSection(at)) return at;
+    const at = this.cursorAt();
+    // A cursor left in another book is not this book's cursor, so it is placed
+    // afresh rather than followed into a syllabus that does not hold it.
+    if (
+      at !== null && at !== undefined &&
+      this.content.getSection(at) &&
+      this.content.grammarOf(at) === this.grammarId
+    ) {
+      return at;
+    }
     return this.earliestUnmastered();
   }
 
@@ -296,25 +340,59 @@ export class Session {
    * book still has short of mastery, so nothing is stranded behind it.
    */
   advanceCursor(): void {
-    const ids = this.content.topicIds();
+    const ids = this.content.topicIds(this.grammarId);
     const at = this.bookCursor();
     const next = at === null ? -1 : ids.indexOf(at) + 1;
-    this.p.bookAt =
-      next > 0 && next < ids.length ? ids[next]! : this.earliestUnmastered();
+    this.setCursor(
+      next > 0 && next < ids.length ? ids[next]! : this.earliestUnmastered(),
+    );
     this.touch();
   }
 
   /** The first topic in book order that has not reached the top band. */
   private earliestUnmastered(): string | null {
-    return this.content.topicIds().find((id) => !this.mastered(id)) ?? null;
+    return this.content.topicIds(this.grammarId).find((id) => !this.mastered(id)) ?? null;
   }
 
   /**
    * The top mastery band — the bar full. Scores land on exact halves, so this
    * is an equality test wearing a comparison's clothes.
    */
+  /**
+   * The answers filed under a section, whichever book named it.
+   *
+   * A section of a further grammar has no trail of its own: progress is filed
+   * under the primary topics that carry the questions, and this gathers them.
+   * One topic almost always, so the common case does not copy the array.
+   */
+  private attemptTrail(sectionId: string): Attempt[] {
+    const ids = this.content.primaryTopicsFor(sectionId);
+    if (ids.length === 1) return this.p.attempts[ids[0]!] ?? [];
+    return ids
+      .flatMap((id) => this.p.attempts[id] ?? [])
+      .sort((a, b) => a.at.localeCompare(b.at));
+  }
+
+  /** The same, for the rotation that keeps a topic feeling fresh. */
+  private seenTrail(sectionId: string): string[] {
+    const ids = this.content.primaryTopicsFor(sectionId);
+    if (ids.length === 1) return this.p.seenTests[ids[0]!] ?? [];
+    return ids.flatMap((id) => this.p.seenTests[id] ?? []);
+  }
+
   private mastered(sectionId: string): boolean {
-    return (this.p.topicMastery[sectionId] ?? 0) >= MASTERY_MAX;
+    /*
+     * Every topic it teaches, not the average of them. A section of a further
+     * grammar may draw on two of the primary's, and a student who has finished
+     * one of those two has not finished this. `every` on an empty list would
+     * say yes, so a section the crosswalk does not reach is never mastered —
+     * which is right: it has nothing to master.
+     */
+    const primary = this.content.primaryTopicsFor(sectionId);
+    return (
+      primary.length > 0 &&
+      primary.every((id) => (this.p.topicMastery[id] ?? 0) >= MASTERY_MAX)
+    );
   }
 
   /**
@@ -387,7 +465,7 @@ export class Session {
     const { set, served } = this.runSet(sectionId, run.since);
     const left = (t: Test) =>
       t.questions.filter((q) => set.has(q.prompt) && !served.has(q.prompt)).length;
-    const seen = this.p.seenTests[sectionId] ?? [];
+    const seen = this.seenTrail(sectionId);
     const pick = this.content
       .testsFor(sectionId)
       .filter((t) => (!this.quotedOnly() || isQuoted(t)) && left(t) > 0)
@@ -397,7 +475,7 @@ export class Session {
       .sort(
         (a, b) => left(b) - left(a) || seen.lastIndexOf(a.id) - seen.lastIndexOf(b.id),
       )[0];
-    return pick ? this.take(sectionId, [pick]) : undefined;
+    return pick ? this.take([pick]) : undefined;
   }
 
   /** How many of the run's questions are still to come. */
@@ -425,7 +503,7 @@ export class Session {
     sectionId: string,
     since: string,
   ): { set: Set<string>; served: Set<string> } {
-    const trail = this.p.attempts[sectionId] ?? [];
+    const trail = this.attemptTrail(sectionId);
     const before = new Set(trail.filter((a) => a.at < since).map((a) => a.prompt));
     const served = new Set(trail.filter((a) => a.at >= since).map((a) => a.prompt));
     // The run's set is what the run can actually serve. Counting the whole bank
@@ -470,7 +548,7 @@ export class Session {
    */
   coverage(sectionId: string): Coverage {
     const asked = new Set(
-      (this.p.attempts[sectionId] ?? []).map((a) => a.prompt),
+      this.attemptTrail(sectionId).map((a) => a.prompt),
     );
     const questions = this.bank(sectionId);
     return {
@@ -524,14 +602,15 @@ export class Session {
       ? this.content.testsFor(sectionId).filter(isQuoted)
       : this.content.testsFor(sectionId);
     if (tests.length === 0) return undefined;
-    let seen = this.p.seenTests[sectionId] ?? [];
+    const seen = this.seenTrail(sectionId);
     let pool = tests.filter((t) => !seen.includes(t.id));
     if (pool.length === 0) {
-      seen = [];
       pool = tests;
-      this.p.seenTests[sectionId] = [];
+      for (const id of this.content.primaryTopicsFor(sectionId)) {
+        this.p.seenTests[id] = [];
+      }
     }
-    return this.take(sectionId, pool);
+    return this.take(pool);
   }
 
   // --- the round in flight ---------------------------------------------------
@@ -552,10 +631,23 @@ export class Session {
     isNew = false,
     via: RoundVia = isNew ? "new" : "review",
   ): void {
+    /*
+     * The round is opened on the topic the test was written for, which is the
+     * primary grammar's, and not on whatever section the student reached it
+     * through. `sectionId` may name a further grammar's topic — one that draws
+     * on two of the primary's — and grading that would file a card under an id
+     * no question belongs to, invisibly, while the topic it was really about
+     * stayed unscheduled.
+     *
+     * `viewedAs` keeps the section they were reading, so picking the round back
+     * up puts them where they left off rather than in the other book.
+     */
+    const graded = test.sectionId || sectionId;
     this.p.openRound = {
-      sectionId,
+      sectionId: graded,
+      ...(graded === sectionId ? {} : { viewedAs: sectionId }),
       roundId: test.id,
-      cardBefore: this.p.topicCards[sectionId] ?? null,
+      cardBefore: this.p.topicCards[graded] ?? null,
       worst: null,
       answered: 0,
       isNew,
@@ -714,7 +806,10 @@ export class Session {
    * attempt marked and then unmarked reads on disk like one nobody touched.
    */
   markAttempt(sectionId: string, at: string, marks: AttemptMarks): void {
-    const attempt = this.p.attempts[sectionId]?.find((a) => a.at === at);
+    const attempt = this.content
+      .primaryTopicsFor(sectionId)
+      .flatMap((id) => this.p.attempts[id] ?? [])
+      .find((a) => a.at === at);
     if (!attempt) return;
     const kept = Object.entries(marks).filter(
       ([, m]) => m && Object.keys(m).length > 0,
@@ -726,7 +821,7 @@ export class Session {
 
   /** What was written on a topic before now, most recent first. */
   attemptsFor(sectionId: string): Attempt[] {
-    return [...(this.p.attempts[sectionId] ?? [])].reverse();
+    return [...this.attemptTrail(sectionId)].reverse();
   }
 
   /**
@@ -1205,20 +1300,49 @@ export class Session {
    */
   grammarMap(now: Date = new Date()): TopicProgress[] {
     const cursor = this.bookCursor();
-    return this.content.sections().map((s) => {
-      const card = this.p.topicCards[s.id];
-      const { answered, total } = this.coverage(s.id);
+    return this.content.sections(this.grammarId).map((s) => {
+      /*
+       * A section of a further grammar reads the progress of the primary topics
+       * it teaches, because those are what carry the questions. Usually one; two
+       * where the books divide differently, and then the mastery shown is the
+       * mean weighted by how much bank each side contributes, so a topic is not
+       * reported finished on the strength of its smaller half.
+       */
+      const primary = this.content.primaryTopicsFor(s.id);
+      const cards = primary
+        .map((id) => this.p.topicCards[id])
+        .filter((c): c is SerializedCard => Boolean(c));
+      /*
+       * Averaged over every topic it teaches, not only the ones that have been
+       * graded — an ungraded one counts as the bottom of the scale, which is
+       * what it is. Averaging the graded alone reported a section finished on
+       * the strength of its answered half, while `mastered` went on saying it
+       * was not, and the map and the cursor disagreed on screen.
+       *
+       * Undefined only when none of them has been graded, which is what tells a
+       * topic never started from one going badly.
+       */
+      const scored = primary.some((id) => this.p.topicMastery[id] !== undefined);
+      const weight = (id: string) => this.content.testsFor(id).length || 1;
+      const total = primary.reduce((n, id) => n + weight(id), 0);
+      const mastery = scored
+        ? primary.reduce(
+            (n, id) => n + (this.p.topicMastery[id] ?? MASTERY_MIN) * weight(id),
+            0,
+          ) / total
+        : undefined;
+      const { answered, total: questions } = this.coverage(s.id);
       return {
         sectionId: s.id,
         title: s.title,
         ref: s.ref,
         order: s.order,
-        family: this.content.familyOf(s.family),
-        mastery: this.p.topicMastery[s.id],
+        family: this.content.familyOf(s.family, this.grammarId),
+        mastery,
         hasTests: this.content.testsFor(s.id).length > 0,
-        due: card ? isDue(deserializeCard(card), now) : false,
+        due: cards.some((c) => isDue(deserializeCard(c), now)),
         answered,
-        questions: total,
+        questions,
         frontier: cursor === s.id,
       };
     });
@@ -1338,10 +1462,11 @@ export class Session {
   }
 
   /** Serve one of `pool` at random and remember it. */
-  private take(sectionId: string, pool: Test[]): Test {
+  private take(pool: Test[]): Test {
     const test = pool[Math.floor(Math.random() * pool.length)]!;
-    const seen = this.p.seenTests[sectionId] ?? [];
-    this.p.seenTests[sectionId] = [...seen, test.id].slice(-SEEN_HISTORY);
+    const key = test.sectionId;
+    const seen = this.p.seenTests[key] ?? [];
+    this.p.seenTests[key] = [...seen, test.id].slice(-SEEN_HISTORY);
     this.touch();
     return test;
   }

@@ -176,10 +176,12 @@ gates.push(
 
 // --- C8: the question key is a key -------------------------------------------
 //
-// `questionId` hashes prompt and answer, and is what progress will be filed
-// under once a pack teaches out of more than one book: two grammars cut the
-// language into different topics, so the questions are the only thing they can
-// agree on. Two *identical* questions hashing alike is the intended reading and
+// `questionId` hashes prompt and answer. It is not what progress is filed under
+// — a further grammar's topics reach the primary's as topics, so the two books
+// share a bank and progress stays where it is — but it becomes the only
+// available key the moment a pack generates questions against a second
+// grammar's own topics, and a key is worth measuring before it is depended on.
+// Two *identical* questions hashing alike is the intended reading and
 // is not counted here — the pack keeps those under 1% at C4 for its own
 // reasons, and a student who has answered a sentence has answered it. What this
 // looks for is the other thing: two questions that ask different things and

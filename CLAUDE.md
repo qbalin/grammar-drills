@@ -99,11 +99,29 @@ how much of each book is reachable. Its gates are numbered apart from the
 coverage report's on purpose — a low figure there is a gap in the *table*, not a
 hole in the pack.
 
-`questionId` (core) is the key progress will move to in due course: two grammars
-cut the language into different topics, so the questions are the only thing they
-agree on. It is derived from prompt and answer rather than written into the
-content, so it cannot drift out of step and needs no migration when the bank is
-regenerated. C8 measures that it stays a key.
+**Progress does not move.** `topicCards`, `topicMastery`, `seenTests` and
+`attempts` stay filed under the *primary* grammar's topic ids whichever book is
+open, because that is the syllabus the questions were written against. A further
+grammar's section reads the progress of the topics it teaches
+(`Content.primaryTopicsFor`), and a round opened on one is graded against the
+topic its test belongs to — never against the section it was reached through,
+which would file a card under an id no question belongs to.
+
+So switching books is a view change: no migration, no schema version, no second
+store to keep in step. `Progress.grammarId` records which book is open and
+`bookAtByGrammar` its cursor; a file that has neither is the primary, which is
+every file written before there was a second book.
+
+The consequence to state rather than discover: **two sections of one book that
+teach the same topic of the other move in lockstep.** There is one bank of
+dative questions, so there is one answer to give about them; a finer one would
+be invented. `packages/core/src/grammars.test.ts` asserts it so it cannot drift
+into a surprise.
+
+`questionId` (core) is *not* what progress is keyed by — see above — but it is
+the only key left the day a pack generates questions against a second grammar's
+own topics. Derived from prompt and answer rather than written into the content,
+so it cannot drift out of step. C8 measures that it stays a key.
 
 `profile.attestation` is what a pack may ship that its own content cannot
 confirm — `maxMissesPerQuestion` (distinct forms in one answer, and the bar the
