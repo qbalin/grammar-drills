@@ -3016,6 +3016,37 @@ describe("the index under the quoted-only preference", () => {
     expect(within(sheet).queryByText("The girl loves the rose.")).toBeNull();
   });
 
+  /**
+   * The bank read as a list is where the two kinds of sentence sit next to each
+   * other, and the credit is the only thing telling them apart — without it a
+   * student reading a topic through cannot see which lines are Caesar's.
+   */
+  it("credits the quoted questions where the bank is read", async () => {
+    const user = userEvent.setup();
+    mount(undefined, quoted);
+    await openTopic(user, /First declension/);
+
+    await user.click(screen.getByRole("button", { name: /All 3 questions/ }));
+    const sheet = screen.getByRole("dialog", { name: "All questions" });
+    const credit = within(sheet).getByText(/Caesar/);
+    expect(credit.textContent).toMatch(/de Bello Gallico/);
+    expect(credit.textContent).toMatch(/i, 1/);
+    // The generated questions have nobody to credit, and say nothing rather
+    // than saying so.
+    expect(within(sheet).getAllByText(/—\s*Caesar/)).toHaveLength(1);
+
+    // And again on the question itself, opened from that list.
+    await user.click(
+      within(sheet).getByRole("button", {
+        name: /Gaul is divided into three parts/,
+      }),
+    );
+    const one = screen.getByRole("dialog", { name: "Question" });
+    expect(within(one).getByText(/Caesar/).textContent).toMatch(
+      /de Bello Gallico/,
+    );
+  });
+
   it("leaves every count alone when the preference is off", async () => {
     const user = userEvent.setup();
     mount(undefined, quoted);

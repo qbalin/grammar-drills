@@ -530,6 +530,9 @@ span.status__title {
    rather than part of the Latin — the student's eye should land on the answer
    and find this afterwards. */
 .attribution {
+  /* A span where a list row carries it — a button may not contain a div — and
+     a div on the study screen. Told to stack either way. */
+  display: block;
   font-size: 0.82rem;
   color: var(--text-faint);
   margin-top: 0.4rem;
@@ -1460,6 +1463,15 @@ span.status__title {
   font-family: var(--serif);
   font-size: 0.98rem;
   color: var(--gold);
+  margin-top: 0.15rem;
+}
+
+/* The same credit as under a studied answer, in a list row: left rather than
+   right, because a line ranged right between two ranged left is read as a fault
+   rather than as a credit — on the study screen it has a block of its own to
+   sit under, and here it has the answer above and the trail below. */
+.row__main .attribution {
+  text-align: left;
   margin-top: 0.15rem;
 }
 

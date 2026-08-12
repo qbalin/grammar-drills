@@ -122,6 +122,17 @@ export function questionBankLines(
     wrap(`${i + 1}. ${q.prompt}`, "prompt");
     wrap(`${CORRECT}${q.answer}`, "correct");
     if (q.note) wrap(`        ${q.note}`, "meta");
+    // The credit the graded screen prints, on the questions that quote somebody:
+    // read as a list, this is the only thing telling the classical sentences
+    // apart from the ones written for the app.
+    if (q.source) {
+      wrap(
+        `        — ${q.source.author}, ${q.source.work}${
+          q.source.locus ? ` ${q.source.locus}` : ""
+        }`,
+        "meta",
+      );
+    }
     for (const a of q.attempts) {
       const grade = RATING_LABELS[a.rating] ?? String(a.rating);
       const written = a.submitted.trim();

@@ -21,6 +21,7 @@ import {
   type NewVocabContext,
   type PractiseRun,
   type Progress,
+  type QuestionSource,
   type RoundDraft,
   type RoundVia,
   type SerializedCard,
@@ -193,6 +194,8 @@ export interface BankedQuestion {
   prompt: string;
   answer: string;
   note?: string;
+  /** Who the answer is quoted from, on the questions that quote somebody. */
+  source?: QuestionSource;
   /** Earlier answers to this very question, newest first. */
   attempts: Attempt[];
 }
@@ -961,6 +964,7 @@ export class Session {
       prompt: question.prompt,
       answer: question.answer,
       note: question.note,
+      source: question.source,
       attempts: byPrompt.get(question.prompt) ?? [],
     }));
   }
