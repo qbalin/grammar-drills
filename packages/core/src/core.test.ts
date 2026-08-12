@@ -137,6 +137,33 @@ describe("Session", () => {
     expect(s.next(now)).toEqual({ kind: "done" });
   });
 
+  it("serves every due word before any due grammar", () => {
+    const start = new Date("2026-01-01T00:00:00Z");
+    const s = new Session(new Content(fixture, testProfile));
+
+    // A topic graded hard enough to come back, and then left until it does.
+    s.gradeTopic("ag1", 1, start);
+    const later = new Date("2026-02-01T00:00:00Z");
+    expect(s.next(later)).toEqual({ kind: "topic-review", sectionId: "ag1" });
+
+    // Two words, both due the moment they are recorded — and both ahead of the
+    // topic, though the topic came due a month before either existed.
+    const content = new Content(fixture, testProfile);
+    const hits = content.lookup("manibus");
+    const first = s.recordVocab(hits[0]!, later);
+    const second = s.recordVocab(hits[1]!, new Date("2026-02-01T00:01:00Z"));
+    expect(second).not.toBe(first);
+
+    const after = new Date("2026-02-01T00:02:00Z");
+    expect(s.next(after)).toEqual({ kind: "vocab-review", cardId: first });
+    s.gradeVocab(first, 3, after);
+    expect(s.next(after)).toEqual({ kind: "vocab-review", cardId: second });
+    s.gradeVocab(second, 3, after);
+
+    // Only once the words are done does the grammar come back.
+    expect(s.next(after)).toEqual({ kind: "topic-review", sectionId: "ag1" });
+  });
+
   it("puts back a snapshot, undoing everything done since", () => {
     const now = new Date("2026-01-01T00:00:00Z");
     const s = new Session(new Content(fixture, testProfile));

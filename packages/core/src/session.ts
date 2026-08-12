@@ -649,10 +649,20 @@ export class Session {
    */
   next(now: Date = new Date(), mode: Mode = "review"): Action {
     if (mode === "review") {
-      const dueTopic = this.earliestDueTopic(now);
-      if (dueTopic) return { kind: "topic-review", sectionId: dueTopic };
+      /*
+       * Words first, then grammar, and the order is not arbitrary. A card is
+       * answered in seconds where a round of sentences is not, so a session cut
+       * short — which is most of them, on a phone — has got through far more of
+       * what was actually due. And a card served after the grammar is a card
+       * behind a wall: stop on the third sentence of a hard topic and every
+       * word waiting behind it misses its review, which is the one thing a
+       * scheduler exists to prevent. Grammar keeps its place in the queue; it
+       * simply does not stand in front of the quick work.
+       */
       const dueVocab = this.earliestDueVocab(now);
       if (dueVocab) return { kind: "vocab-review", cardId: dueVocab };
+      const dueTopic = this.earliestDueTopic(now);
+      if (dueTopic) return { kind: "topic-review", sectionId: dueTopic };
       return { kind: "done" };
     }
 
