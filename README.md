@@ -55,7 +55,11 @@ pile is cleared. Where the book reads from is yours to say — see
 
 Spaced repetition runs on two independent [FSRS](https://github.com/open-spaced-repetition/ts-fsrs)
 tracks: **grammar topics** (driven by your self-grades) and **vocabulary** you
-record as you go.
+record as you go. A review serves the **words first** and the grammar after
+them: a card is answered in seconds where a round of sentences is not, so a
+session cut short has got through far more of what was due — and a word queued
+behind a hard topic is a word that misses its review outright when you stop on
+the third sentence.
 
 ## The words behind a question
 
@@ -590,9 +594,35 @@ the environment already carries it.
 The terminal flushes on exit rather than on `visibilitychange`, which is the
 browser's equivalent; without that the last grades of a session would sit in the
 debounce. Both check for a newer remote copy **at startup only**, and resolve it
-whole-file, last-writer-wins after asking. Two devices studying at once will
-still lose one of them: merging two spaced-repetition schedules is a much larger
-problem than this is trying to solve.
+whole-file. Two devices studying at once will still lose one of them: merging
+two spaced-repetition schedules is a much larger problem than this is trying to
+solve.
+
+What the check is not allowed to do is decide by being late. **Nothing is pushed
+until it has answered** — the web app's first grade could beat it through the
+four-second debounce, and the copy that went up was the stale one the check was
+on its way to replace. Underneath that, `GitHubStorage` refuses on its own: a
+save whose remote is newer than the copy being written throws instead of
+committing, whether GitHub reports a sha mismatch or (the case that actually
+lost the data) accepts a freshly-read sha carrying a week-old file. Only an
+explicit `force` gets past it, and only three things pass one: **Update**,
+**Keep this device**, and answering the terminal's prompt with `n`.
+
+Which of the two copies wins is then a question of what would be lost rather
+than which clock is later. Each device records the `updatedAt` it last pushed or
+adopted — in `localStorage` on the web, in `~/.latin-tutor/synced` in the
+terminal, and in neither case inside `progress.json`, because a marker that
+synced would describe whichever device wrote it last. A device holding nothing
+of its own **takes the newer copy silently**: a phone on the sofa and a laptop
+the next morning is ordinary use, and a question there is a question people
+learn to dismiss. Only when both copies have moved since they last agreed is
+anybody asked, and that is also when **Pull** warns — a pull discards whatever
+this device has not sent, so what it asks about is the loss, not the direction.
+
+Nor is an unchanged copy committed. Opening the app moves `updatedAt` without
+anything being studied, and that used to be a commit on somebody's real
+repository every time; a save whose content matches what the remote holds, its
+clock aside, sends nothing at all.
 
 The answers you write are part of that file (`attempts`, keyed by topic), and
 none of them is dropped: a question you meet once a year is exactly the one

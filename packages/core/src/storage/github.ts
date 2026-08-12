@@ -44,6 +44,49 @@ function b64decode(b64: string): string {
 const NO_STORE = { cache: "no-store" } as const;
 
 /**
+ * Thrown instead of overwriting a remote that has moved on.
+ *
+ * It carries what the remote holds, because the check that found it had to read
+ * it: the caller deciding what to do next — adopt it, ask about it — would
+ * otherwise fetch the same file a second time to see what it is deciding about.
+ */
+export class RemoteMovedError extends Error {
+  constructor(
+    readonly remote: Progress | null,
+    readonly sha?: string,
+  ) {
+    super("The copy on GitHub is newer than this device's.");
+    this.name = "RemoteMovedError";
+  }
+}
+
+/**
+ * Two progress files compared as a person would: the same, or not the same.
+ *
+ * Keys are sorted because the two sides are serialized from different places —
+ * one parsed out of the remote file, one built in memory — and an object's key
+ * order follows how it was made. Unsorted, a file that changed in no way would
+ * read as changed the first time it came back from GitHub.
+ *
+ * `updatedAt` is left out: it moves on every save whether or not anything was
+ * studied, so a comparison including it can only ever say "different".
+ */
+function sameProgress(a: Progress, b: Progress): boolean {
+  return stable({ ...a, updatedAt: "" }) === stable({ ...b, updatedAt: "" });
+}
+
+function stable(value: unknown): string {
+  if (value === null || typeof value !== "object") return JSON.stringify(value) ?? "null";
+  if (Array.isArray(value)) return `[${value.map(stable).join(",")}]`;
+  const obj = value as Record<string, unknown>;
+  const body = Object.keys(obj)
+    .sort()
+    .map((k) => `${JSON.stringify(k)}:${stable(obj[k])}`)
+    .join(",");
+  return `{${body}}`;
+}
+
+/**
  * Commits the progress JSON to a private GitHub repo the user owns, using the
  * GitHub REST API directly — no backend required, works from CLI or browser.
  */
@@ -51,6 +94,12 @@ export class GitHubStorage implements StorageAdapter {
   private readonly path: string;
   private readonly branch: string;
   private sha: string | undefined;
+  /**
+   * The last copy this instance knows the remote to have held — read from it,
+   * or written to it. `null` once the file is known not to exist; `undefined`
+   * while the remote has never been seen, which is not the same thing.
+   */
+  private known: Progress | null | undefined;
 
   constructor(private readonly cfg: GitHubConfig) {
     this.path = cfg.path ?? "progress.json";
@@ -89,6 +138,7 @@ export class GitHubStorage implements StorageAdapter {
     });
     if (res.status === 404) {
       this.sha = undefined;
+      this.known = null;
       return { progress: null };
     }
     if (!res.ok) {
@@ -96,22 +146,50 @@ export class GitHubStorage implements StorageAdapter {
     }
     const body = (await res.json()) as { content: string; sha: string };
     this.sha = body.sha;
-    return {
-      progress: JSON.parse(b64decode(body.content)) as Progress,
-      sha: body.sha,
-    };
+    this.known = JSON.parse(b64decode(body.content)) as Progress;
+    return { progress: this.known, sha: body.sha };
   }
 
-  async save(progress: Progress): Promise<void> {
+  /**
+   * Commit the progress, unless the remote is ahead of it.
+   *
+   * A write can find the remote ahead in two quite different ways, and only one
+   * of them is an error GitHub reports.
+   *
+   * The loud one is the sha mismatch: another device committed between our read
+   * and our write. This used to be answered by re-reading the sha and putting
+   * again, which is to say the conflict was detected and then deliberately
+   * overwritten.
+   *
+   * The quiet one loses more and says nothing. A tab that has just opened holds
+   * no sha, so it reads the current one and writes against it. There is no
+   * mismatch — the sha really is current — and GitHub accepts a week-old copy
+   * over a fresh one without a murmur. That is what "it pushes before it
+   * fetches" costs, and no amount of handling 409 better would have caught it.
+   *
+   * So both are refused the same way, by throwing rather than putting, and
+   * `force` is the deliberate overwrite: a person told the app to make GitHub
+   * match this device. Nothing else may decide that.
+   */
+  async save(progress: Progress, opts: { force?: boolean } = {}): Promise<void> {
     // Updating an existing file needs its current sha. In the CLI a `load()`
     // always precedes the first `save()`, so one was in hand; a browser tab
     // reloads with an empty instance and would send none, which GitHub rejects.
-    // Fetch it when it is missing, and re-fetch once if another device commits
-    // between our read and our write.
-    if (this.sha === undefined) await this.readSha();
+    if (this.sha === undefined) await this.readRemote();
+
+    // Nothing to say. `updatedAt` moves whether or not anything was answered —
+    // opening the app is enough — and a commit per open is a commit per open on
+    // someone's real repository.
+    if (this.known && sameProgress(this.known, progress)) return;
+
+    if (!opts.force && this.remoteIsAhead(progress)) {
+      throw new RemoteMovedError(this.known ?? null, this.sha);
+    }
+
     let res = await this.put(progress);
     if (res.status === 409 || res.status === 422) {
-      await this.readSha();
+      await this.readRemote();
+      if (!opts.force) throw new RemoteMovedError(this.known ?? null, this.sha);
       res = await this.put(progress);
     }
     if (!res.ok) {
@@ -119,6 +197,14 @@ export class GitHubStorage implements StorageAdapter {
     }
     const body = (await res.json()) as { content: { sha: string } };
     this.sha = body.content.sha;
+    // What we just wrote is what the remote holds, so the next save compares
+    // against it without reading the file again.
+    this.known = progress;
+  }
+
+  /** Whether what the remote last showed us was written after this copy. */
+  private remoteIsAhead(progress: Progress): boolean {
+    return !!this.known && this.known.updatedAt > progress.updatedAt;
   }
 
   private put(progress: Progress): Promise<Response> {
@@ -134,19 +220,29 @@ export class GitHubStorage implements StorageAdapter {
     });
   }
 
-  /** Learn the current blob sha, leaving it unset when the file doesn't exist. */
-  private async readSha(): Promise<void> {
+  /**
+   * Learn the current blob sha *and what it holds*, leaving both unset when the
+   * file doesn't exist.
+   *
+   * Reading only the sha was enough to write, which is why it did — but a write
+   * that has to decide whether it would be overwriting someone's afternoon
+   * needs the file, and the file is in the same response.
+   */
+  private async readRemote(): Promise<void> {
     const res = await fetch(`${this.url()}?ref=${this.branch}`, {
       headers: this.headers(),
       ...NO_STORE,
     });
     if (res.status === 404) {
       this.sha = undefined;
+      this.known = null;
       return;
     }
     if (!res.ok) {
       throw new Error(`GitHub load failed: ${res.status} ${await res.text()}`);
     }
-    this.sha = ((await res.json()) as { sha: string }).sha;
+    const body = (await res.json()) as { content: string; sha: string };
+    this.sha = body.sha;
+    this.known = JSON.parse(b64decode(body.content)) as Progress;
   }
 }

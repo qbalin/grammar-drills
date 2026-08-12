@@ -13,6 +13,10 @@ function stateLine(state: SyncState): string {
       return "Saving to GitHub…";
     case "offline":
       return "Offline — changes will go up when you reconnect.";
+    // Held rather than failed: this device's work is safe where it is, and
+    // pulling would be the thing that lost it. Both buttons are on this sheet.
+    case "behind":
+      return "Another device is ahead. Pull its copy, or push this one.";
     case "error":
       return state.message;
     case "idle":

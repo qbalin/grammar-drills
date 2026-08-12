@@ -13,6 +13,8 @@
  * the same question in both.
  */
 
+import { RemoteMovedError } from "./github.js";
+
 /** How long to sit on a change before committing it. */
 export const PUSH_DELAY_MS = 4000;
 
@@ -25,6 +27,12 @@ export type SyncState =
   | { kind: "idle"; at?: string }
   | { kind: "pushing" }
   | { kind: "offline" }
+  /**
+   * Another device is ahead, and this one has work of its own that a plain
+   * catch-up would throw away. The push is held rather than failed — nothing is
+   * lost, and nothing is decided until a person decides it.
+   */
+  | { kind: "behind" }
   | { kind: "error"; message: string };
 
 /**
@@ -39,6 +47,9 @@ export type SyncState =
  * differently and core is not the place that knows how.
  */
 export function describeSyncError(err: unknown, online = true): SyncState {
+  // Not a failure at all: the push was refused on purpose, because landing it
+  // would have overwritten another device. Both apps show it as its own thing.
+  if (err instanceof RemoteMovedError) return { kind: "behind" };
   if (!online) return { kind: "offline" };
   const message = err instanceof Error ? err.message : String(err);
   if (/\b401\b/.test(message)) {
@@ -64,6 +75,8 @@ export function syncStateLine(state: SyncState): string {
       return "syncing…";
     case "offline":
       return "offline — will sync when the network is back";
+    case "behind":
+      return "another device is ahead — choose which copy to keep";
     case "error":
       return `sync failed: ${state.message}`;
   }

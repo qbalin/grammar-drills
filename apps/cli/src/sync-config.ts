@@ -31,6 +31,40 @@ export function syncConfigPath(profile: Profile, home: string): string {
 }
 
 /**
+ * Where this machine records when it last agreed with GitHub.
+ *
+ * Its own file rather than a field in either of the other two. Not in
+ * `progress.json`, because that is the thing that syncs and a marker travelling
+ * inside it would describe whichever machine wrote it last — the exact fact we
+ * are trying to tell apart. Not in `sync.json`, because that is rewritten
+ * wholesale whenever the settings change, and a marker is not a setting.
+ */
+export function syncedMarkerPath(profile: Profile, home: string): string {
+  return join(home, profile.storage.cliDir, "synced");
+}
+
+/** When this machine last pushed or took a copy, or null if it never has. */
+export async function readSyncedAt(path: string): Promise<string | null> {
+  try {
+    const at = (await readFile(path, "utf8")).trim();
+    return at || null;
+  } catch {
+    // Absent is the ordinary state on a machine that has not synced yet, and
+    // unreadable is no worse: both mean "assume this machine has its own work".
+    return null;
+  }
+}
+
+export async function writeSyncedAt(path: string, at: string): Promise<void> {
+  try {
+    await mkdir(dirname(path), { recursive: true });
+    await writeFile(path, `${at}\n`);
+  } catch {
+    /* the marker is an optimisation; losing it only costs an extra question */
+  }
+}
+
+/**
  * The configuration to sync with, or null when there is not enough of one.
  *
  * Null rather than throwing: no sync configured is the ordinary case, not an

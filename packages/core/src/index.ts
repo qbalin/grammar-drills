@@ -65,7 +65,11 @@ export {
   type FamilyProgress,
 } from "./session.js";
 export type { StorageAdapter } from "./storage/index.js";
-export { GitHubStorage, type GitHubConfig } from "./storage/github.js";
+export {
+  GitHubStorage,
+  RemoteMovedError,
+  type GitHubConfig,
+} from "./storage/github.js";
 export {
   PUSH_DELAY_MS,
   describeSyncError,
