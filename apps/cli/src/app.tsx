@@ -676,6 +676,21 @@ export function App({ session, content, storage }: Props) {
   };
 
   /**
+   * Which silence a topic is in, if it is in one.
+   *
+   * Nothing was written for it, or nothing was written for it that this deck
+   * has asked to be served — different things to be told, and only the second
+   * comes back when the preference goes off. Written once because the two keys
+   * that refuse to open on a silent topic, Enter for a run and `a` for the
+   * list, must not drift into wording it differently.
+   */
+  const silence = (target: TopicProgress): string | null => {
+    if (!target.hasTests) return `No tests for “${target.title}” yet.`;
+    if (target.questions === 0) return `Nothing quoted for “${target.title}” yet.`;
+    return null;
+  };
+
+  /**
    * Stay on the topic under the cursor and work a run of its questions out.
    *
    * From the graded screen or from `done` nothing is lost. From a half-written
@@ -692,14 +707,9 @@ export function App({ session, content, storage }: Props) {
       );
       return;
     }
-    if (!target.hasTests) {
-      setFlash(`No tests for “${target.title}” yet.`);
-      return;
-    }
-    // Written for, but not by anybody the preference will serve: a run here
-    // would be a run of nothing. Say which of the two silences this is.
-    if (target.questions === 0) {
-      setFlash(`Nothing quoted for “${target.title}” yet.`);
+    const quiet = silence(target);
+    if (quiet) {
+      setFlash(quiet);
       return;
     }
     session.drillTopic(target.sectionId);
@@ -886,7 +896,15 @@ export function App({ session, content, storage }: Props) {
         } else if (key.return) practiseSelected(phase.from);
         else if (ch === "f") studySelected(phase.from);
         else if (ch === "g") setPhase({ t: "read", from: phase.from });
-        else if (ch === "a") setPhase({ t: "bank", from: phase.from });
+        else if (ch === "a") {
+          // The pane draws the bank the deck will actually ask, so a topic with
+          // nothing in it opens on an empty list that explains nothing. Refused
+          // in the words Enter refuses a run of nothing in.
+          const target = mapTopics[mapIndex];
+          const quiet = target ? silence(target) : null;
+          if (quiet) setFlash(quiet);
+          else setPhase({ t: "bank", from: phase.from });
+        }
         else if (ch === "s") openSchedule(phase);
         else if (ch === "w") showWordsFor(phase.from);
         else if (key.escape || ch === "m") {
@@ -1173,12 +1191,11 @@ export function App({ session, content, storage }: Props) {
           height={readerHeight}
           // How much of the bank has actually been met, not just how big it
           // is: the gap between the two is the reason to stay on a topic.
-          // Counted off the same list the pane is drawing, rather than out of
-          // `coverage`. This pane is the whole bank — the book, not the errand
-          // — and `coverage` now answers for what exploring will ask, so under
-          // the quoted-only preference the two disagree, and a heading that
-          // took its halves from either side of that would be a fraction of
-          // two different things.
+          // Counted off the same list the pane is drawing rather than out of
+          // `coverage`, which is now belt and braces rather than load-bearing:
+          // the bank narrows with the preference exactly as `coverage` does, so
+          // the pane and the index agree by construction. Counting the list
+          // actually on the screen is what keeps them agreeing.
           heading={`All questions on ${mapSection.title} — ${
             bank.filter((q) => q.attempts.length > 0).length
           } of ${bank.length} answered`}

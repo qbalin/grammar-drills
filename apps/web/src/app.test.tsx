@@ -2985,8 +2985,25 @@ describe("the index under the quoted-only preference", () => {
     expect(
       screen.getByRole("button", { name: "Study from here" }),
     ).toHaveProperty("disabled", false);
-    // The bank is the book rather than the errand, and stays whole.
-    expect(screen.getByRole("button", { name: /All 1 questions/ })).toBeDefined();
+    // And the bank narrows with it: a list of the questions this deck will not
+    // be asked is a list of things to revise for nothing. Worded apart from the
+    // practice button above, because the two refuse different things.
+    expect(
+      screen.getByRole("button", { name: "Nothing quoted to read" }),
+    ).toHaveProperty("disabled", true);
+  });
+
+  it("lists and counts the bank by the quoted questions alone", async () => {
+    const user = userEvent.setup();
+    mount({ ...emptyProgress(), quotedOnly: true }, quoted);
+    await openTopic(user, /First declension/);
+
+    // Three questions written here, one of them quoted.
+    const bank = screen.getByRole("button", { name: /All 1 questions/ });
+    await user.click(bank);
+    const sheet = screen.getByRole("dialog", { name: "All questions" });
+    expect(within(sheet).getByText("Gaul is divided into three parts.")).toBeDefined();
+    expect(within(sheet).queryByText("The girl loves the rose.")).toBeNull();
   });
 
   it("leaves every count alone when the preference is off", async () => {
@@ -2996,6 +3013,7 @@ describe("the index under the quoted-only preference", () => {
 
     expect(screen.getByRole("button", { name: /Practise these 3/ })).toBeDefined();
     expect(screen.queryByText(/nothing quoted here yet/)).toBeNull();
+    expect(screen.getByRole("button", { name: /All 3 questions/ })).toBeDefined();
   });
 
   /**
@@ -3076,6 +3094,48 @@ describe("the index under the quoted-only preference", () => {
       expect(
         screen.getByRole("button", { name: "Study from here" }),
       ).toHaveProperty("disabled", false);
+    });
+  });
+
+  /**
+   * The order, which is a different preference from the filter and has to be
+   * turnable off on its own: a student who wants the whole book still gets to
+   * decide whether it arrives quoted-end-first or shuffled through.
+   */
+  describe("and the order the two kinds arrive in", () => {
+    const openSettings = async (user: ReturnType<typeof userEvent.setup>) => {
+      await user.click(screen.getByRole("button", { name: "Settings" }));
+    };
+
+    it("leads with the quotations unless a student says otherwise", async () => {
+      const user = userEvent.setup();
+      const { session } = mount(undefined, quoted);
+      await openSettings(user);
+
+      // Absent means on, so a deck that has never heard of this leads with the
+      // quotations — which is the half a student can otherwise miss for weeks.
+      expect(session.progress().quotedFirst).toBeUndefined();
+      expect(screen.getByLabelText(/Quoted sentences first/)).toHaveProperty(
+        "checked",
+        true,
+      );
+
+      await user.click(screen.getByLabelText(/Quoted sentences first/));
+      expect(session.progress().quotedFirst).toBe(false);
+    });
+
+    it("has nothing to decide while only quoted sentences are served", async () => {
+      const user = userEvent.setup();
+      mount({ ...emptyProgress(), quotedOnly: true }, quoted);
+      await openSettings(user);
+
+      // Disabled rather than hidden: the setting has not gone away, it just has
+      // no second half to put second.
+      expect(screen.getByLabelText(/Quoted sentences first/)).toHaveProperty(
+        "disabled",
+        true,
+      );
+      expect(screen.getByText(/no order to choose/)).toBeDefined();
     });
   });
 });

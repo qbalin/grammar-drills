@@ -1229,6 +1229,12 @@ export function App({ content, session, storage }: Props) {
     bump();
   };
 
+  const toggleQuotedFirst = () => {
+    session.setQuotedFirst(!session.quotedFirst());
+    save();
+    bump();
+  };
+
   const editVocab = (cardId: string, patch: { citation: string; gloss: string }) => {
     session.updateVocab(cardId, patch);
     save();
@@ -1745,7 +1751,6 @@ export function App({ content, session, storage }: Props) {
             <TopicSheet
               topic={topic}
               attempts={session.attemptsFor(topic.sectionId)}
-              questionCount={content.questionsFor(topic.sectionId).length}
               quotedOnly={session.quotedOnly()}
               // The map is where a topic is normally chosen, and where closing
               // one goes back to — unless it was opened from the page being
@@ -1780,6 +1785,7 @@ export function App({ content, session, storage }: Props) {
             <QuestionsSheet
               section={sec}
               questions={session.questionBank(overlay.sectionId)}
+              quotedOnly={session.quotedOnly()}
               onClose={() => setOverlay({ t: "topic", sectionId: overlay.sectionId })}
               onPick={(q) =>
                 setOverlay({
@@ -1985,6 +1991,8 @@ export function App({ content, session, storage }: Props) {
           onKeepContext={toggleKeepContext}
           quotedOnly={session.quotedOnly()}
           onQuotedOnly={toggleQuotedOnly}
+          quotedFirst={session.quotedFirst()}
+          onQuotedFirst={toggleQuotedFirst}
           onReset={() => {
             storage.clearLocal();
             // Erasing and then reloading is two steps, and the draft kept on

@@ -45,6 +45,8 @@ export function SettingsSheet({
   onKeepContext,
   quotedOnly,
   onQuotedOnly,
+  quotedFirst,
+  onQuotedFirst,
   onReset,
   onClose,
 }: {
@@ -69,6 +71,9 @@ export function SettingsSheet({
   onKeepContext: () => void;
   quotedOnly: boolean;
   onQuotedOnly: () => void;
+  /** Whether a topic's quoted questions all come before its written ones. */
+  quotedFirst: boolean;
+  onQuotedFirst: () => void;
   onReset: () => void;
   onClose: () => void;
 }) {
@@ -132,8 +137,28 @@ export function SettingsSheet({
         quoted ones. Reviews are unaffected: a card that comes due comes back on
         the question that built it. Topics with nothing quoted are stepped over
         rather than marked learned, so they are still waiting if you turn this
-        off again — and the grammar index counts the quoted questions alone
-        while this is on, which is how the topics that have some are found.
+        off again — and the grammar index and the question lists count the
+        quoted questions alone while this is on, which is how the topics that
+        have some are found.
+      </p>
+
+      {/* Disabled under the preference above rather than hidden: with only
+          quoted sentences being served there is no second half to put second,
+          so the choice is real but has nothing to decide. Hiding it would make
+          the setting look like it had gone away. */}
+      <label className="field field--check">
+        <input
+          type="checkbox"
+          checked={quotedFirst}
+          onChange={onQuotedFirst}
+          disabled={quotedOnly}
+        />
+        <span className="field__label">Quoted sentences first</span>
+      </label>
+      <p className="field__hint">
+        {quotedOnly
+          ? "Nothing but quoted sentences is being served, so there is no order to choose. Turn the setting above off to use this one."
+          : "Every quotation on a topic before any of the questions written for this app, then both shuffled and round again — the quoted ones are the scarce half, and a topic can otherwise be studied for a week without meeting one. Turning this off shuffles the whole topic together. Nothing is withheld either way."}
       </p>
 
       <div className="section-title">Your progress</div>

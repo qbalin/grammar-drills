@@ -14,6 +14,11 @@ import { AttemptTrail } from "./Map.js";
  * is never seen at all — a section carries up to a hundred questions. This is
  * the bank itself: every English prompt with the Latin it wants, readable as a
  * list, which is also the only way to revise a topic without being tested on it.
+ *
+ * "Every question" means every question the deck will ask: a student exploring
+ * only quoted sentences reads the quoted ones here, for the reason
+ * `Session.questionBank` sets out. So the empty list has two meanings, and says
+ * which — the same pair the index words on every row.
  */
 
 const RATING_WORD = ["", "again", "hard", "good", "easy"];
@@ -29,11 +34,14 @@ function trailLabel(q: BankedQuestion): string {
 export function QuestionsSheet({
   section,
   questions,
+  quotedOnly,
   onPick,
   onClose,
 }: {
   section: GrammarSection;
   questions: BankedQuestion[];
+  /** Whether the list is the quoted questions alone. */
+  quotedOnly: boolean;
   onPick: (q: BankedQuestion) => void;
   onClose: () => void;
 }) {
@@ -45,7 +53,9 @@ export function QuestionsSheet({
     >
       {questions.length === 0 ? (
         <p className="field__hint" style={{ marginTop: 0 }}>
-          No tests have been written for “{section.title}” yet.
+          {quotedOnly
+            ? `Nothing quoted has been written for “${section.title}” yet.`
+            : `No tests have been written for “${section.title}” yet.`}
         </p>
       ) : (
         <div className="list">

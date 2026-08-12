@@ -1491,3 +1491,154 @@ describe("exploring only what somebody wrote", () => {
     expect(q2.hasTests).toBe(true);
   });
 });
+
+/**
+ * The order a topic hands its tests over in.
+ *
+ * Eighteen tests in one section, because the interesting number is bigger than
+ * the ten ids `seenTests` remembers: the rotation this replaced could not tell
+ * whether a topic of ninety tests had been worked through, and a topic of
+ * ninety tests holding sixty-four quotations is the shipped case this is for.
+ */
+describe("quoted first, then the rest, then shuffled again", () => {
+  const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+  const test = (id: string, quoted: boolean) => ({
+    id,
+    sectionId: "big",
+    questions: [
+      {
+        prompt: `${id}?`,
+        answer: id,
+        kind: "parse",
+        vocab: [],
+        ...(quoted ? { source: cite } : {}),
+      },
+    ],
+  });
+  const QUOTED = Array.from({ length: 12 }, (_, i) => `big-q${i + 1}`);
+  const WRITTEN = Array.from({ length: 6 }, (_, i) => `big-t${i + 1}`);
+  const wide: ContentData = {
+    ...fixture,
+    grammar: [
+      { id: "big", ref: "1", title: "Big", family: "nouns", text: "...", order: 1 },
+    ],
+    // Interleaved in the bundle, so an order that came out quoted-first cannot
+    // have come from the order they were written in.
+    tests: {
+      big: [
+        ...WRITTEN.map((id) => test(id, false)),
+        ...QUOTED.map((id) => test(id, true)),
+      ].sort((a, b) => a.id.localeCompare(b.id)),
+    },
+  };
+  const session = (p = emptyProgress()) => new Session(new Content(wide, testProfile), p);
+  const serve = (s: Session, n: number, quotedOnly = false) =>
+    Array.from({ length: n }, () => s.serveTest("big", quotedOnly)!.id);
+
+  it("hands over every quotation before any written question, and each once", () => {
+    const s = session();
+    const cycle = serve(s, 18);
+    expect([...cycle.slice(0, 12)].sort()).toEqual([...QUOTED].sort());
+    expect([...cycle.slice(12)].sort()).toEqual([...WRITTEN].sort());
+    expect(new Set(cycle).size).toBe(18);
+  });
+
+  it("comes back round to the quotations rather than stopping", () => {
+    const s = session();
+    serve(s, 18);
+    // Nineteen and twenty are the second cycle's first two, and a cycle leads
+    // with the quotations however many have gone before it.
+    expect(QUOTED).toContain(s.serveTest("big")!.id);
+    expect(QUOTED).toContain(s.serveTest("big")!.id);
+  });
+
+  it("shuffles again rather than dealing the same order twice", () => {
+    // The seed is pinned, so this asserts the reshuffle rather than hoping for
+    // it: two identical cycles would otherwise be a one-in-a-billion pass.
+    const s = session({ ...emptyProgress(), testCycles: { big: { seed: 1, at: 0 } } });
+    const first = serve(s, 18);
+    const second = serve(s, 18);
+    expect([...second].sort()).toEqual([...first].sort());
+    expect(second).not.toEqual(first);
+    expect(s.progress().testCycles.big!.seed).not.toBe(1);
+  });
+
+  it("shuffles the whole topic together for a student who asked for that", () => {
+    const s = session({ ...emptyProgress(), quotedFirst: false, testCycles: { big: { seed: 1, at: 0 } } });
+    const cycle = serve(s, 18);
+    // Still a clean sweep — the cycle is what fairness is made of, and turning
+    // the order off does not turn that off.
+    expect(new Set(cycle).size).toBe(18);
+    // And no longer sorted by kind: some written question arrives before the
+    // last quotation does.
+    const lastQuoted = cycle.findLastIndex((id) => QUOTED.includes(id));
+    const firstWritten = cycle.findIndex((id) => WRITTEN.includes(id));
+    expect(firstWritten).toBeLessThan(lastQuoted);
+  });
+
+  it("keeps a student's place when the preference goes on mid-cycle", () => {
+    const s = session();
+    const before = serve(s, 3);
+    s.setQuotedOnly(true);
+    // The quoted half is drawn from the stream first, so narrowing the list
+    // cannot renumber the part of the order already walked: the fourth test is
+    // the fourth test either way, not one of the three just answered.
+    const next = s.serveTest("big", true)!.id;
+    expect(QUOTED).toContain(next);
+    expect(before).not.toContain(next);
+  });
+
+  it("starts a fresh cycle when the preference goes on past the quotations", () => {
+    const s = session();
+    serve(s, 14); // two written tests in
+    s.setQuotedOnly(true);
+    expect(QUOTED).toContain(s.serveTest("big", true)!.id);
+    expect(s.progress().testCycles.big!.at).toBe(1);
+  });
+
+  it("writes no cycle for a topic it cannot serve", () => {
+    const s = session();
+    s.setQuotedOnly(true);
+    expect(s.serveTest("ag2", true)).toBeUndefined();
+    expect(s.progress().testCycles.ag2).toBeUndefined();
+  });
+
+  it("hands the same test back after an undo", () => {
+    const s = session();
+    serve(s, 5);
+    const before = s.snapshot();
+    const served = s.serveTest("big")!.id;
+    s.restore(before);
+    // A guarantee the old draw could not make: undoing a round undoes the place
+    // it took, so the test comes back rather than being skipped.
+    expect(s.serveTest("big")!.id).toBe(served);
+  });
+
+  it("carries on when the pack grows underneath a cycle", () => {
+    const s = session();
+    serve(s, 4);
+    const grown = new Content(
+      { ...wide, tests: { big: [...wide.tests.big!, test("big-q13", true)] } },
+      testProfile,
+    );
+    const after = new Session(grown, s.progress());
+    expect(after.serveTest("big")).toBeDefined();
+  });
+
+  it("sweeps a practice run's quotations first, and still sweeps it all", () => {
+    const s = session();
+    const at = new Date("2026-01-01T00:00:00Z");
+    s.drillTopic("big", at);
+    const run: string[] = [];
+    for (let i = 0; i < 18; i++) {
+      const next = s.servePractice("big");
+      if (!next) break;
+      run.push(next.id);
+      for (const q of next.questions) {
+        s.recordAttempt("big", { prompt: q.prompt, answer: q.answer, submitted: q.answer, rating: 3 }, at);
+      }
+    }
+    expect([...run.slice(0, 12)].sort()).toEqual([...QUOTED].sort());
+    expect(new Set(run).size).toBe(18);
+  });
+});

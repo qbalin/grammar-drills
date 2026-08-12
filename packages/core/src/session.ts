@@ -28,6 +28,7 @@ import {
   type VocabCardState,
   type VocabContext,
 } from "./types.js";
+import { mulberry32, nextSeed, randomSeed, shuffled } from "./shuffle.js";
 
 const SEEN_HISTORY = 10; // remember this many recently-served tests per section
 
@@ -45,6 +46,38 @@ const SEEN_HISTORY = 10; // remember this many recently-served tests per section
  */
 const isQuoted = (t: Test): boolean =>
   t.questions.length > 0 && t.questions.every((q) => q.source);
+
+/**
+ * The order one cycle hands a section's tests over in.
+ *
+ * Quoted first when the student has not asked otherwise, each half shuffled, so
+ * that a topic's quotations are all met before any written sentence is and the
+ * second time round is not the first time round again. Nothing is withheld:
+ * this is where the written questions go, not whether they go anywhere.
+ *
+ * Both halves draw from ONE stream, and the quoted half draws first. That is
+ * load-bearing rather than tidy. `serveTest` is called with the whole of a
+ * section's tests on one path and with its quoted ones alone on another, and
+ * both readings share a place in the cycle; because the quoted half is drawn
+ * before the generated half exists to the generator, the two orders agree
+ * exactly for as long as the cycle is inside the quotations. A student who
+ * turns the preference on halfway through a topic therefore carries on where
+ * they were rather than being sent back to a sentence they just answered.
+ */
+function serveOrder(tests: Test[], seed: number, quotedFirst: boolean): Test[] {
+  const rng = mulberry32(seed);
+  if (!quotedFirst) return shuffled(tests, rng);
+  return [
+    ...shuffled(
+      tests.filter((t) => isQuoted(t)),
+      rng,
+    ),
+    ...shuffled(
+      tests.filter((t) => !isQuoted(t)),
+      rng,
+    ),
+  ];
+}
 
 /**
  * How many sentences one word may keep.
@@ -213,6 +246,12 @@ export class Session {
     // citation generation — a file written before either simply has none.
     this.p.topicMastery ??= {};
     this.p.attempts ??= {};
+    // A file written before topics were served in cycles has none. Absent means
+    // "nothing has been served here yet", which is the honest reading of a file
+    // that predates the field: the first serve on each topic draws a seed and
+    // opens on the quotations, which is where a returning student would want to
+    // be put anyway.
+    this.p.testCycles ??= {};
     this.p.citationsVersion ??= 1;
     this.p.openRound ??= null;
     this.p.bookAt ??= null;
@@ -373,11 +412,29 @@ export class Session {
       .sort((a, b) => a.at.localeCompare(b.at));
   }
 
-  /** The same, for the rotation that keeps a topic feeling fresh. */
+  /** The same, for the recency a practice run breaks its ties with. */
   private seenTrail(sectionId: string): string[] {
     const ids = this.content.primaryTopicsFor(sectionId);
     if (ids.length === 1) return this.p.seenTests[ids[0]!] ?? [];
     return ids.flatMap((id) => this.p.seenTests[id] ?? []);
+  }
+
+  /**
+   * Which cycle a section is served out of.
+   *
+   * By the primary topics rather than by the section, so the two books share
+   * one order over what is one list of tests: a further grammar's section that
+   * teaches a single primary topic is served that topic's tests exactly, and a
+   * second cycle over the same list would let a book switch hand back a test
+   * the other book had just given. The rare section drawing on several topics
+   * gets a key of its own, because its list is genuinely a different list.
+   *
+   * A primary topic keys as itself, so a deck that has never seen a second
+   * grammar carries what it always did.
+   */
+  private cycleKey(sectionId: string): string {
+    const ids = this.content.primaryTopicsFor(sectionId);
+    return ids.length === 1 ? ids[0]! : ids.join("\n");
   }
 
   private mastered(sectionId: string): boolean {
@@ -455,9 +512,20 @@ export class Session {
    * The next test of the practice run, or undefined once the run is worked out
    * (which `next` will already have said).
    *
-   * Tests are picked by how much of the run they still hold, tie-broken by
+   * Quoted tests lead, then whichever holds most of the run, tie-broken by
    * whichever was served longest ago — so a run over a bank that has already
    * been swept leads with what the student has not seen for longest.
+   *
+   * A run does not take a place in the topic's cycle, and this is where the two
+   * rules part company: the cycle orders *what comes next on this topic*, while
+   * a run is sweeping *what is left of this run*, read off the answer trail. An
+   * index into a queue cannot know which tests still hold something unanswered,
+   * so it would either hand over spent ones or skip its own slots. Quoted-first
+   * is put back by hand instead, and put FIRST rather than as a tie-break: the
+   * `left(t) > 0` filter already guarantees the sweep is complete, so all this
+   * decides is the order a complete sweep happens in. Behind `left`, it would
+   * stop deciding anything the moment the bank was partly swept, which is
+   * exactly when a student has been here long enough to care.
    */
   servePractice(sectionId: string): Test | undefined {
     const run = this.practiseRun();
@@ -465,6 +533,9 @@ export class Session {
     const { set, served } = this.runSet(sectionId, run.since);
     const left = (t: Test) =>
       t.questions.filter((q) => set.has(q.prompt) && !served.has(q.prompt)).length;
+    const lead = this.quotedFirst()
+      ? (a: Test, b: Test) => Number(isQuoted(b)) - Number(isQuoted(a))
+      : () => 0;
     const seen = this.seenTrail(sectionId);
     const pick = this.content
       .testsFor(sectionId)
@@ -473,9 +544,12 @@ export class Session {
       // was last served — `indexOf` would rank a test served both first and
       // most recently as the oldest. A never-served test (-1) leads.
       .sort(
-        (a, b) => left(b) - left(a) || seen.lastIndexOf(a.id) - seen.lastIndexOf(b.id),
+        (a, b) =>
+          lead(a, b) ||
+          left(b) - left(a) ||
+          seen.lastIndexOf(a.id) - seen.lastIndexOf(b.id),
       )[0];
-    return pick ? this.take([pick]) : undefined;
+    return pick ? this.record(pick) : undefined;
   }
 
   /** How many of the run's questions are still to come. */
@@ -525,6 +599,10 @@ export class Session {
    * is questions, and a mixed test contributes the quoted ones. Nothing mixed
    * ships today, so the two agree; sharing the predicate with `runSet` is what
    * keeps a count and the run it describes agreeing if that changes.
+   *
+   * The one place the preference meets a question, now that `questionBank`
+   * reads it too — which is what stops the index, a practice run and the list
+   * of a topic's questions from ever quoting three different totals.
    */
   private bank(sectionId: string) {
     return this.content
@@ -590,27 +668,44 @@ export class Session {
   }
 
   /**
-   * Choose a test for a section, preferring ones not served recently so the
-   * same topic feels fresh across sessions. Records it as seen.
+   * Hand over the next test of a section's cycle, and step the cycle on.
+   *
+   * Every test of a topic arrives before any of them arrives twice, which a
+   * draw from a pool could not promise and the ten-id memory this used to keep
+   * could not even check: Latin's largest topic holds ninety tests, so "have
+   * they all been seen" was a question the file had no way of answering. The
+   * cycle answers it in two numbers, and what it buys beyond fairness is the
+   * order — all of a topic's quotations, then everything else.
+   *
+   * Narrowed before the order is built, never inside it: `quotedOnly` decides
+   * which tests are in the cycle at all, and a filter applied to the queue
+   * afterwards would hand back a written test the moment the quoted ones ran
+   * out — the one thing that preference promises cannot happen.
    */
   serveTest(sectionId: string, quotedOnly = false): Test | undefined {
-    // Narrowed before the rotation below, never inside it. That reset falls
-    // back to the whole of `tests`, so a filter applied after it would hand
-    // back a generated test the moment a section's quoted ones had all been
-    // seen — which is the one thing the preference promises cannot happen.
     const tests = quotedOnly
       ? this.content.testsFor(sectionId).filter(isQuoted)
       : this.content.testsFor(sectionId);
+    // Before the cycle is written, so a topic this cannot serve — and the walk
+    // steps over hundreds of them — leaves nothing behind in the file.
     if (tests.length === 0) return undefined;
-    const seen = this.seenTrail(sectionId);
-    let pool = tests.filter((t) => !seen.includes(t.id));
-    if (pool.length === 0) {
-      pool = tests;
-      for (const id of this.content.primaryTopicsFor(sectionId)) {
-        this.p.seenTests[id] = [];
-      }
+    const key = this.cycleKey(sectionId);
+    const cycle = (this.p.testCycles[key] ??= { seed: randomSeed(), at: 0 });
+    let queue = serveOrder(tests, cycle.seed, this.quotedFirst());
+    // Checked before the serve rather than after it, so what a finished cycle
+    // leaves on disk is the legible `at === queue.length` rather than a zero
+    // that could equally mean "never served". The same branch catches a queue
+    // that has grown shorter underneath it — the preference turned on, a book
+    // switched to one whose section draws on more topics, or a regenerated
+    // pack — where continuing would index past the end.
+    if (cycle.at >= queue.length) {
+      cycle.seed = nextSeed(cycle.seed);
+      cycle.at = 0;
+      queue = serveOrder(tests, cycle.seed, this.quotedFirst());
     }
-    return this.take(pool);
+    const test = queue[cycle.at]!;
+    cycle.at += 1;
+    return this.record(test);
   }
 
   // --- the round in flight ---------------------------------------------------
@@ -666,9 +761,9 @@ export class Session {
   /**
    * The round to put back on the screen, or null to ask `next` instead.
    *
-   * The test is found by id rather than served again: `serveTest` picks at
-   * random and records what it picked, so re-calling it here would hand back a
-   * different test *and* spend a rotation slot on every reload.
+   * The test is found by id rather than served again: `serveTest` steps the
+   * topic's cycle on, so re-calling it here would hand back the *next* test and
+   * spend a place in the cycle on every reload.
    *
    * Null for a round whose questions are all graded, and for one naming a test
    * this bundle no longer carries — a pack can be regenerated under a student
@@ -833,9 +928,16 @@ export class Session {
   }
 
   /**
-   * Every question written for a section, with its reference answer and its own
-   * answer trail — the section's whole bank, not just what the scheduler has
-   * happened to serve.
+   * Every question a section will ask, with its reference answer and its own
+   * answer trail — the bank, not just what the scheduler has happened to serve.
+   *
+   * Narrowed by the preference, through the same `bank` that `coverage` and a
+   * practice run read, so a topic cannot say one number here and another on the
+   * index. This list is what a student reads *instead of* being tested, and a
+   * deck that will ask twelve sentences and offers ninety to read through is
+   * offering seventy-eight it has been asked not to ask. Nothing is lost by it:
+   * the answers already written on the questions left out stay on the trail,
+   * and come back with them when the preference goes off.
    */
   questionBank(sectionId: string): BankedQuestion[] {
     const byPrompt = new Map<string, Attempt[]>();
@@ -844,7 +946,7 @@ export class Session {
       if (kept) kept.push(a);
       else byPrompt.set(a.prompt, [a]);
     }
-    return this.content.questionsFor(sectionId).map(({ testId, question }) => ({
+    return this.bank(sectionId).map(({ testId, question }) => ({
       testId,
       prompt: question.prompt,
       answer: question.answer,
@@ -1022,6 +1124,22 @@ export class Session {
 
   setQuotedOnly(on: boolean): void {
     this.p.quotedOnly = on;
+    this.touch();
+  }
+
+  /**
+   * Whether a topic's quoted questions all come before its written ones.
+   *
+   * On unless turned off, which is the other way round from `quotedOnly` and
+   * deliberately so: this withholds nothing, and the half it puts first is the
+   * half a student could otherwise study a topic for a week without meeting.
+   */
+  quotedFirst(): boolean {
+    return this.p.quotedFirst !== false;
+  }
+
+  setQuotedFirst(on: boolean): void {
+    this.p.quotedFirst = on;
     this.touch();
   }
 
@@ -1395,11 +1513,17 @@ export class Session {
     // is taken before a grade and restored after it, and a student who changed
     // a setting in between would otherwise watch the undo silently change it
     // back — an undo that reaches past the thing it was offered for.
+    //
+    // `testCycles` is not one of those and goes back with the rest: the place a
+    // topic had reached in its order is part of what the undone round did, so
+    // an undone serve should genuinely un-serve, handing the same test back.
     const keepContext = this.p.keepContext;
     const quotedOnly = this.p.quotedOnly;
+    const quotedFirst = this.p.quotedFirst;
     this.p = structuredClone(snapshot);
     this.p.keepContext = keepContext;
     this.p.quotedOnly = quotedOnly;
+    this.p.quotedFirst = quotedFirst;
     // An undo is itself a change: the stored copy is now out of date, and the
     // sync comparison reads `updatedAt` to decide that.
     this.touch();
@@ -1461,9 +1585,19 @@ export class Session {
     return best;
   }
 
-  /** Serve one of `pool` at random and remember it. */
-  private take(pool: Test[]): Test {
-    const test = pool[Math.floor(Math.random() * pool.length)]!;
+  /**
+   * Note that a test has been handed over, and hand it over.
+   *
+   * Filed under the test's own section, which is the primary topic whichever
+   * book named the section it was served for — the same key `seenTrail` reads
+   * back, so a test met through one grammar is not fresh through the other.
+   *
+   * Both paths call this, so a test a review has just served is still not the
+   * one a practice run reaches for next — which is what the shared memory
+   * bought when it was also the rotation, and is worth keeping now that it is
+   * only a tie-break.
+   */
+  private record(test: Test): Test {
     const key = test.sectionId;
     const seen = this.p.seenTests[key] ?? [];
     this.p.seenTests[key] = [...seen, test.id].slice(-SEEN_HISTORY);
