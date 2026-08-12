@@ -413,6 +413,32 @@ export interface OpenRound {
   roundId: string;
   /** The topic's card before the round, or null if the topic had none. */
   cardBefore: SerializedCard | null;
+  /**
+   * The topic's mastery before the round. Absent only on a round begun before
+   * this was written down — a topic never graded stood at the floor, which is
+   * what every bar already reads an absent mastery as, and the first round on a
+   * topic is exactly the one whose movement is worth drawing.
+   *
+   * Beside `cardBefore` and for its reason. Mastery moves per question where
+   * the card moves per round, so "what this round did to the topic" is a
+   * question only the value from before the round's first grade can answer, and
+   * by the time the round lands its own grades have moved everything the screen
+   * could otherwise read. Held here rather than in the screen because a round
+   * is resumable: reload on the last question of four, grade it, and a value
+   * kept in the page's state was never taken.
+   */
+  masteryBefore?: number;
+  /**
+   * Authors this round introduced — ones no answer on the record was ever given
+   * to before.
+   *
+   * A list, because a round of four quotations can introduce two, and it dies
+   * with the round: what has been met is the attempt trail's business and is
+   * derived from it. This is only so that a first meeting on question two is
+   * still nameable when the round lands on question four, and so a reload
+   * between the two does not lose it.
+   */
+  met?: string[];
   /** The lowest grade given in the round so far, or null before the first. */
   worst: 1 | 2 | 3 | 4 | null;
   /** How many of the round's questions have been graded — where to resume. */

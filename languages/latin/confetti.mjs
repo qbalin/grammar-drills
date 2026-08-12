@@ -426,4 +426,16 @@ export default {
     ["aquila3", "scutum3"],
     ["tabulaDuplex", "stilus"],
   ],
+
+  /**
+   * Kept back for the burst that means something — the first line a student
+   * ever answers by an author they have not read before.
+   *
+   * The eagle, the wreath, the temple and the chariot: the four heaviest things
+   * in the set, and a triumph rather than a kit. Deliberately not any of the
+   * groups above, and `checkConfetti` refuses it if it becomes one — the rarest
+   * burst in the app drawing exactly what every round draws is a failure
+   * nothing on screen would report.
+   */
+  milestone: ["aquila3", "corona", "templum", "currus"],
 };

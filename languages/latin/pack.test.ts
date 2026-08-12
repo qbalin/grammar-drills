@@ -331,8 +331,17 @@ describe("confetti", () => {
 
   it("throws every shape it defines", async () => {
     const pack = (await import("./confetti.mjs")).default;
-    const thrown = new Set(pack.throws.flat());
+    const thrown = new Set([...pack.throws.flat(), ...(pack.milestone ?? [])]);
     expect([...Object.keys(pack.shapes)].filter((s) => !thrown.has(s))).toEqual([]);
+  });
+
+  it("keeps a group back that nothing ordinary throws", async () => {
+    const pack = (await import("./confetti.mjs")).default;
+    // The rarest burst in the app drawing exactly what every round draws is a
+    // failure nothing on screen would report, so it is one here instead.
+    const key = (group: string[]) => [...new Set(group)].sort().join(" ");
+    expect(pack.milestone?.length).toBeGreaterThan(0);
+    expect(pack.throws.map(key)).not.toContain(key(pack.milestone));
   });
 });
 

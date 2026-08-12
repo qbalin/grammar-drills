@@ -40,7 +40,14 @@ import {
   type StorageReport,
 } from "./storage/quota.js";
 import { Sheet, Toast, ago, cycleEmphasis } from "./ui.js";
-import { Answering, Graded, Practised, Rest, VocabReview } from "./screens/Study.js";
+import {
+  Answering,
+  Graded,
+  Landed,
+  Practised,
+  Rest,
+  VocabReview,
+} from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
 import { InspectSheet } from "./screens/Inspect.js";
 import {
@@ -77,6 +84,31 @@ type Phase =
   | { t: "vocab-review"; cardId: string; revealed: boolean }
   /** A practice run worked out; the loop has stopped here on purpose. */
   | { t: "practised"; sectionId: string }
+  /**
+   * A moment to stand still in, between the last grade of a round and the next
+   * question.
+   *
+   * The loop used to fire the burst and advance in the same breath, so the
+   * confetti played over the *next* prompt and the round that earned it was
+   * already gone. It lands here instead and waits for one tap.
+   *
+   * One arm rather than two, because a round that both finishes and empties the
+   * pile is one moment: two cards to dismiss in a row is what a student meets on
+   * the commonest way to end a session.
+   */
+  | {
+      t: "landed";
+      round?: {
+        sectionId: string;
+        masteryBefore?: number;
+        mastery: number;
+        due: Date;
+      };
+      /** The last thing waiting went with this grade. */
+      cleared: boolean;
+      /** An author met for the first time, named on the card. */
+      met?: string;
+    }
   | { t: "done" };
 
 /**
@@ -445,6 +477,13 @@ export function App({ content, session, storage }: Props) {
         // The pile is cleared, so Review is no longer somewhere to be. The
         // switch throws itself rather than leaving the student on a rest
         // screen beside a book they could be reading.
+        //
+        // Still here, and still right, for every way into `advance` that is not
+        // a grade — a sync that adopted another device's cleared pile, a card
+        // deleted out from under a review, a launch onto an empty one. The
+        // grade that empties the pile no longer reaches this: it lands on a
+        // card of its own, and a switch thrown silently underneath a moment
+        // would be the app talking over it.
         setMode("explore");
         flash("Nothing left due — back to the book.");
         advance("explore");
@@ -662,6 +701,9 @@ export function App({ content, session, storage }: Props) {
     // Taken before anything is written, so the undo covers the recorded answer
     // as well as the schedule — re-grading then leaves one attempt, not two.
     setUndo(takeUndo(phase));
+    // Asked before the attempt is written, or the answer being given is itself
+    // what proves the author already met.
+    const met = question ? session.meetAuthor(question) : undefined;
     // Kept before the grade is applied: what you wrote on a topic is worth
     // having whichever errand it was written on. The CLI has always done this;
     // the web app used to return first and lose it.
@@ -690,11 +732,66 @@ export function App({ content, session, storage }: Props) {
       setPhase({ t: "answering" });
       bump();
     } else {
-      // The round is done. Fired on the last question whatever it was graded:
-      // the student who pressed "again" four times is the one working hardest,
-      // and this is for finishing, not for being right.
-      fireConfetti();
-      advance();
+      /*
+       * The round is done, and this is where the loop stops.
+       *
+       * The burst fires over *this* card rather than over the next prompt,
+       * which is where it used to land: `advance()` was called in the same
+       * breath and had already served the next question. Fired on the last
+       * question whatever it was graded — the student who pressed "again" four
+       * times is the one working hardest, and this is for finishing.
+       *
+       * The round is deliberately not ended here. `leaveRound()` — which
+       * `advance` calls first thing, and which also steps the book cursor — is
+       * what "Keep going" means. A student who closes the app on this card
+       * loses nothing: a round with every question graded is not resumable, so
+       * the next launch falls through to `advance` and puts it down exactly as
+       * the tap would have.
+       */
+      const landed = session.landedRound();
+      const { dueTopics, dueVocab } = session.stats();
+      // Asked after the grade, so the topic just rescheduled is not counted:
+      // even `again` goes to a learning step of minutes, which is not due now.
+      const cleared = mode === "review" && dueTopics + dueVocab === 0;
+      // Whoever the round met, wherever in it they were met — a first meeting
+      // on question two is still the news when the round lands on question four.
+      const author = landed?.met[0] ?? met;
+      setPhase({
+        t: "landed",
+        ...(landed
+          ? {
+              round: {
+                sectionId: landed.sectionId,
+                ...(landed.masteryBefore === undefined
+                  ? {}
+                  : { masteryBefore: landed.masteryBefore }),
+                mastery: landed.mastery,
+                due: landed.due,
+              },
+            }
+          : {}),
+        cleared,
+        ...(author ? { met: author } : {}),
+      });
+      // Nothing on this screen is a question, so the header stops naming one —
+      // the same thing `advance`'s `done` branch does, and for the same reason.
+      setSectionId(null);
+      setTest(null);
+      setInput("");
+      setSubmitted("");
+      setMarks({});
+      setOverlay(null);
+      /*
+       * The pile emptying is not what earns a burst, and this is the one place
+       * that had to be decided rather than inherited. It is the single event in
+       * this app a student can watch approach — the status bar counts down to
+       * it, one grade at a time — and an Easter egg that arrives on schedule is
+       * a progress bar. A round that both finishes and clears still bursts, for
+       * the round, exactly as it would have anyway.
+       */
+      fireConfetti(author ? "milestone" : "round");
+      save();
+      bump();
     }
   };
 
@@ -703,6 +800,18 @@ export function App({ content, session, storage }: Props) {
     setUndo(takeUndo(phase));
     session.gradeVocab(cardId, rating);
     save();
+    // A word has no round behind it, so there is nothing to land on — unless
+    // this was the last thing waiting, which is a moment whichever kind of card
+    // ended it. No burst: see `grade`.
+    const { dueTopics, dueVocab } = session.stats();
+    if (mode === "review" && dueTopics + dueVocab === 0) {
+      setPhase({ t: "landed", cleared: true });
+      setSectionId(null);
+      setTest(null);
+      save();
+      bump();
+      return;
+    }
     advance();
   };
 
@@ -1413,7 +1522,7 @@ export function App({ content, session, storage }: Props) {
   const badge =
     phase.t === "vocab-review"
       ? "vocab"
-      : phase.t === "done" || phase.t === "practised"
+      : phase.t === "done" || phase.t === "practised" || phase.t === "landed"
         ? null // nothing is being worked on; the app's own name stands here
         : via;
   const badgeLabel: Record<string, string> = {
@@ -1693,6 +1802,34 @@ export function App({ content, session, storage }: Props) {
               />
             );
           })()}
+
+        {phase.t === "landed" && (
+          <Landed
+            title={
+              phase.round
+                ? (content.getSection(phase.round.sectionId)?.title ??
+                  "this topic")
+                : undefined
+            }
+            round={phase.round}
+            cleared={phase.cleared}
+            met={phase.met}
+            overall={overall}
+            nextDue={nextDue}
+            onKeepGoing={() => {
+              if (phase.cleared) {
+                // The pile is empty, so Review is no longer somewhere to be —
+                // the same conclusion `advance` draws for every other route,
+                // drawn on a tap here instead of behind one.
+                setMode("explore");
+                advance("explore");
+              } else {
+                advance();
+              }
+            }}
+            onStop={() => setOverlay({ t: "schedule" })}
+          />
+        )}
 
         {phase.t === "done" && (
           <Rest

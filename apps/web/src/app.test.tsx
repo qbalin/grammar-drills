@@ -39,6 +39,17 @@ const PARADIGMS = [
 // last to be asked for. Flagged separately from the dictionary because the two
 // failures look nothing alike to a student.
 const paradigmFile = { available: true };
+/**
+ * The burst, as a spy. Its own module is tested where it can be — the canvas
+ * cannot be, since jsdom has no `Path2D` — and what these scenarios are about
+ * is *which* register fires and *when*, which is the app's decision and not the
+ * canvas's.
+ */
+const fireConfetti = vi.fn();
+vi.mock("./confetti/Confetti.js", () => ({
+  useConfetti: () => ({ canvas: null, fire: fireConfetti }),
+}));
+
 vi.mock("./content-loader.js", async () => {
   const { ParadigmIndex } = await import("./paradigm-index.js");
   return {
@@ -121,6 +132,21 @@ function mount(
   const storage = new SyncingStorage();
   render(<App content={content} session={session} storage={storage} />);
   return { session, content, storage };
+}
+
+/**
+ * Past the card the loop now stands still on when a round is worked out.
+ *
+ * A round no longer runs straight into the next question, so every scenario
+ * that crosses a round boundary meets this in between. A no-op where there is
+ * no card, so it can follow any grade without the caller having to know whether
+ * that grade happened to be the round's last.
+ */
+async function carryOn(user: ReturnType<typeof userEvent.setup>) {
+  const button = screen.queryByRole("button", {
+    name: /Keep going|Read on in the book/,
+  });
+  if (button) await user.click(button);
 }
 
 /** The small line above the prompt, which carries the within-test counter. */
@@ -228,6 +254,7 @@ async function holdCribRow(text: string, then?: () => void) {
 beforeEach(() => {
   localStorage.clear();
   dictionary.available = true;
+  fireConfetti.mockClear();
   vi.unstubAllGlobals();
 });
 
@@ -322,6 +349,116 @@ describe("the study loop", () => {
     }
   });
 
+  it("stops on the round it finished rather than sliding onto the next question", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+
+    // The topic just worked on is what is named, and the next topic's first
+    // question is not on screen behind it. The burst used to fire here and
+    // `advance` in the same breath, so what erupted was the next prompt.
+    expect(screen.getByRole("heading", { name: "First declension" })).toBeDefined();
+    expect(screen.queryByText("The master frees the slave.")).toBeNull();
+    expect(screen.getByText(/^Back /)).toBeDefined();
+  });
+
+  it("says where the topic has got to, and never how it was graded", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    // One right and one wrong, so a card that reported the round would have
+    // something to report. Nothing on it may.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Again/ }));
+
+    // Good then Again is 1 -> 2 -> 1, so the round moved the topic nowhere and
+    // no cell is marked. Where it stands is still said.
+    const meter = document.querySelector(".landed__mastery");
+    expect(meter?.getAttribute("aria-label")).toBe("Mastery 1 of 4");
+    expect(document.querySelectorAll(".landed__cell").length).toBe(4);
+    expect(document.querySelectorAll(".landed__cell--moved").length).toBe(0);
+    // No score, no accuracy, no count of what was right.
+    expect(screen.queryByText(/\d\s*(of|\/)\s*\d/)).toBeNull();
+    expect(screen.queryByText(/right|correct|wrong/i)).toBeNull();
+  });
+
+  it("marks the one cell the round moved", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+
+    // Two goods from the floor: 1 -> 3, so two cells are newly lit.
+    expect(document.querySelector(".landed__mastery")?.getAttribute("aria-label")).toBe(
+      "Mastery 1 of 4, now 3 of 4",
+    );
+    expect(document.querySelectorAll(".landed__cell--on").length).toBe(3);
+    expect(document.querySelectorAll(".landed__cell--moved").length).toBe(2);
+  });
+
+  it("carries on from the card, and stops on it without going anywhere", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+
+    // Stopping opens the schedule over the card rather than navigating: there
+    // is no session to end, and what somebody stopping wants is the dates.
+    await user.click(screen.getByRole("button", { name: "Stop here" }));
+    expect(screen.getByRole("dialog", { name: /Coming up/ })).toBeDefined();
+    await user.click(screen.getByRole("button", { name: /^Close/ }));
+    expect(screen.getByRole("heading", { name: "First declension" })).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: "Keep going" }));
+    expect(screen.getByText("The master frees the slave.")).toBeDefined();
+  });
+
+  it("lands the same way on a round picked back up at its last question", async () => {
+    const user = userEvent.setup();
+    // The round is resumable, so the mastery it opened at cannot be held in the
+    // screen's own state: nothing here ever saw the first grade.
+    const s = new Session(new Content(fixture, testProfile));
+    s.beginRound("decl1", fixture.tests.decl1![0]!, true, "new");
+    s.gradeTopic("decl1", 3, new Date(), "decl1-t1");
+    mount(s.progress());
+
+    expect(eyebrow()).toContain("\u00b7 2/2");
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    expect(document.querySelector(".landed__mastery")?.getAttribute("aria-label")).toBe(
+      "Mastery 1 of 4, now 3 of 4",
+    );
+  });
+
+  it("never lands on a vocabulary card, which is not a round", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    // A word, with a topic still due behind it, so there is somewhere to go.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await user.click(screen.getByRole("button", { name: "Review" }));
+    expect(screen.getByText("rose")).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: "Show" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(screen.queryByRole("button", { name: "Keep going" })).toBeNull();
+  });
+
   it("rests once the book is worked out, rather than showing an empty screen", () => {
     // Every topic already at the top band, so the book has nowhere to go.
     mount({
@@ -334,6 +471,104 @@ describe("the study loop", () => {
     for (const name of ["Explore", "Review"]) {
       expect(screen.getByRole("button", { name })).toHaveProperty("disabled", true);
     }
+  });
+});
+
+/**
+ * The burst had one register and fired on every round — about every four
+ * questions, which is a cadence rather than a surprise. It has a top end now,
+ * and what it is kept for is the rarest thing a pack can offer: the first line
+ * a student ever answers by an author they have not read before.
+ */
+describe("the rarer burst", () => {
+  /** The same fixture, with decl1's first question quoting somebody. */
+  const quoting: ContentData = {
+    ...fixture,
+    tests: {
+      ...fixture.tests,
+      decl1: [
+        {
+          ...fixture.tests.decl1![0]!,
+          questions: fixture.tests.decl1![0]!.questions.map((q, i) =>
+            i === 0
+              ? { ...q, source: { author: "Cicero", work: "de Officiis" } }
+              : q,
+          ),
+        },
+      ],
+    },
+  };
+
+  const finish = async (user: ReturnType<typeof userEvent.setup>) => {
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+  };
+
+  it("throws the ordinary burst for an ordinary round, over the card", async () => {
+    const user = userEvent.setup();
+    mount();
+    await finish(user);
+
+    expect(fireConfetti).toHaveBeenCalledTimes(1);
+    expect(fireConfetti).toHaveBeenCalledWith("round");
+    // Over the card, not over the next prompt: the round it is for is still
+    // the thing on screen, which is the whole of the change.
+    expect(screen.getByRole("heading", { name: "First declension" })).toBeDefined();
+  });
+
+  it("throws the rarer one, and names it, the first time an author is met", async () => {
+    const user = userEvent.setup();
+    mount(undefined, quoting);
+    await finish(user);
+
+    expect(fireConfetti).toHaveBeenCalledWith("milestone");
+    // In words as well as in confetti. A burst says something happened without
+    // saying what, and for a reader who asked for reduced motion there is no
+    // burst at all — the line is what they get.
+    expect(screen.getByText("Your first line of Cicero.")).toBeDefined();
+  });
+
+  it("says nothing the second time the same author comes round", async () => {
+    const user = userEvent.setup();
+    // The trail already holds an answer to the quoted question, which is how a
+    // student who has been reading Cicero for a year is not congratulated.
+    const progress = emptyProgress();
+    progress.attempts = {
+      decl1: [
+        {
+          prompt: "The girl loves the rose.",
+          answer: "Puella rosam amat.",
+          submitted: "Puella rosam amat.",
+          rating: 3,
+          at: new Date().toISOString(),
+        },
+      ],
+    };
+    mount(progress, quoting);
+    await finish(user);
+
+    expect(fireConfetti).toHaveBeenCalledWith("round");
+    expect(screen.queryByText(/first line of/)).toBeNull();
+  });
+
+  it("throws nothing at all for the pile clearing", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    // A word, alone in the pile, graded. Nothing was finished — a card is one
+    // question — and the pile emptying is the one event a student can watch
+    // approach, with the count in the bar telling them how far off it is.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    await user.click(screen.getByRole("button", { name: "Review" }));
+    await user.click(screen.getByRole("button", { name: "Show" }));
+    fireConfetti.mockClear();
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    expect(screen.getByText("The pile is clear.")).toBeDefined();
+    expect(fireConfetti).not.toHaveBeenCalled();
   });
 });
 
@@ -461,6 +696,7 @@ describe("the answer trail", () => {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
+    await carryOn(user);
 
     // Second declension is new ground: its own trail is empty.
     expect(document.querySelector(".status__title")?.textContent).toBe(
@@ -555,6 +791,7 @@ describe("picking a test back up", () => {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
+    await carryOn(user);
     // The finished round was let go of and the next topic took the table —
     // on disk, not merely in memory. A round is only ever written by the
     // branch that serves a test, so letting go has to be written too.
@@ -565,6 +802,29 @@ describe("picking a test back up", () => {
     });
 
     reopen();
+    expect(topic()).toBe("Second declension");
+    expect(eyebrow()).toContain("· 1/1");
+  });
+
+  it("puts a round left on the card between rounds down, rather than resuming it", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+    // Closing the app on the card rather than tapping through it. The round is
+    // still on disk with every question graded — it is let go of by the tap —
+    // so the launch has to be the thing that notices there is nothing to resume.
+    expect(new SyncingStorage().read()?.openRound).toMatchObject({
+      sectionId: "decl1",
+      answered: 2,
+    });
+
+    reopen();
+    // Not back on the card, and not back on a question already graded: the card
+    // is a moment, not state worth persisting, and the grade behind it is safe.
     expect(topic()).toBe("Second declension");
     expect(eyebrow()).toContain("· 1/1");
   });
@@ -1871,6 +2131,7 @@ describe("the schedule", () => {
       // One question in this test, so grading it ends the round.
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Good/ }));
+      await carryOn(user);
 
       // Back to the pile in its own order — the jump was for one card, not a
       // new errand of its own — and that order puts the waiting word first.
@@ -1950,6 +2211,30 @@ describe("taking things back", () => {
     expect(Object.keys(session.progress().vocabCards)).toHaveLength(0);
     // Back on the question, with the grades still waiting.
     expect(screen.getByRole("button", { name: /Good/ })).toBeDefined();
+  });
+
+  it("takes you back off the card the round landed on", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+
+    for (const _ of [0, 1]) {
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+    }
+    expect(screen.getByRole("button", { name: "Keep going" })).toBeDefined();
+
+    // The ↺ is already offered here — it is drawn on whatever screen the grade
+    // landed on, so the card needed no wiring of its own.
+    await user.click(screen.getByRole("button", { name: "Undo last grade" }));
+
+    // The question comes back with its grade untaken, and so does the round.
+    expect(screen.getByText("The sailors feared the storm.")).toBeDefined();
+    expect(screen.getByRole("button", { name: /Good/ })).toBeDefined();
+    expect(session.progress().openRound).toMatchObject({
+      sectionId: "decl1",
+      answered: 1,
+    });
+    expect(session.landedRound()).toBeNull();
   });
 
   it("goes back to the box when Submit came too early, the answer intact", async () => {
@@ -2619,6 +2904,7 @@ describe("the three ways to move through the book", () => {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Again/ }));
     }
+    await carryOn(user);
     // Under a "first topic not yet mastered" rule this would be decl1 again,
     // for ever. The cursor steps regardless.
     expect(onScreen()).toBe("Second declension");
@@ -2649,6 +2935,7 @@ describe("the three ways to move through the book", () => {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
+    await carryOn(user);
     expect(session.coverage("decl1")).toEqual({ answered: 2, total: 2 });
     // And having served what it was for, it stops.
     expect(screen.getByText("All practised.")).toBeDefined();
@@ -2666,6 +2953,7 @@ describe("the three ways to move through the book", () => {
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
 
+    await carryOn(user);
     // Staying here was an instruction; sliding off it is not how one ends.
     expect(screen.getByText("All practised.")).toBeDefined();
     expect(screen.queryByText("The master frees the slave.")).toBeNull();
@@ -2683,6 +2971,7 @@ describe("the three ways to move through the book", () => {
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
 
+    await carryOn(user);
     await user.click(screen.getByRole("button", { name: "Practise all 2 again" }));
     expect(session.practice("decl1")).toEqual({ done: 0, total: 2 });
     expect(document.querySelector(".status__row .badge")?.textContent).toBe("drill 0/2");
@@ -2700,6 +2989,7 @@ describe("the three ways to move through the book", () => {
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
 
+    await carryOn(user);
     await user.click(screen.getByRole("button", { name: "Back to the book in order" }));
     expect(session.practiseRun()).toBeNull();
     expect(onScreen()).toBe("First declension"); // still the earliest unmastered
@@ -2884,6 +3174,7 @@ describe("choosing between the reviews and the book", () => {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
+    await carryOn(user);
     expect(title()).toBe("Second declension");
   });
 
@@ -2913,7 +3204,7 @@ describe("choosing between the reviews and the book", () => {
     expect(counts()).toBe("2 due");
   });
 
-  it("throws itself back to the book once the last review is graded", async () => {
+  it("throws itself back to the book once the card between rounds is dismissed", async () => {
     const user = userEvent.setup();
     // One topic waiting, whose test is a single question.
     const s = new Session(new Content(fixture, testProfile));
@@ -2924,6 +3215,40 @@ describe("choosing between the reviews and the book", () => {
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
+    // The switch is not thrown underneath the moment. It used to be, with a
+    // toast over the next question saying so, which is the pile emptying
+    // reported for 2.6 seconds on a screen that had already moved on.
+    //
+    // One card, not two: the round that finished and the pile that emptied are
+    // the same moment, so the head is still the topic and the clearing is a
+    // line under it.
+    expect(screen.getByText("And that was the last thing waiting.")).toBeDefined();
+    expect(document.querySelector(".toast")).toBeNull();
+
+    await user.click(screen.getByRole("button", { name: "Read on in the book" }));
+    expect(pressed("Explore")).toBe("true");
+  });
+
+  it("throws the switch for a route into the loop that is not a grade", async () => {
+    const user = userEvent.setup();
+    mount();
+
+    // Record a word — a card recorded now is due now — and go and review it.
+    // It is the only thing waiting.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    await user.click(screen.getByRole("button", { name: "Review" }));
+    expect(screen.getByText("rose")).toBeDefined();
+
+    // Then delete it out from under the review rather than grading it. The
+    // pile empties without a grade, which is the case the switch's own branch
+    // is still there for: it lands on no card, because nothing was finished.
+    await user.click(screen.getByRole("button", { name: /edit this word/ }));
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+    await user.click(within(sheet).getByRole("button", { name: /Delete this word/ }));
+    await user.click(screen.getByRole("button", { name: "Confirm deletion" }));
+
+    expect(screen.queryByText("The pile is clear.")).toBeNull();
     expect(pressed("Explore")).toBe("true");
     expect(document.querySelector(".toast")?.textContent).toMatch(
       /Nothing left due/,

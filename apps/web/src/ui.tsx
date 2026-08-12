@@ -28,6 +28,31 @@ export function until(from: Date, to: Date): string {
   return `${years < 2 ? years.toFixed(1) : Math.round(years)}y`;
 }
 
+/**
+ * When a topic comes back, in full words — for a screen with room for them.
+ *
+ * Beside `until` rather than a flag on it, and the two are not one function.
+ * `until` is read four times at once under four grade buttons on a phone-width
+ * row, where `9d` is the whole point and "in 9 days" would not fit; this is read
+ * once on a card with nothing else on it, where `9d` reads like a receipt. Two
+ * jobs, two shapes, and the compact one is load-bearing where it stands.
+ */
+export function comesBack(to: Date, from = new Date()): string {
+  const minutes = Math.round((to.getTime() - from.getTime()) / 60000);
+  if (minutes < 2) return "Back in a moment";
+  if (minutes < 60) return `Back in ${minutes} minutes`;
+  const hours = Math.round(minutes / 60);
+  if (hours < 24) return hours === 1 ? "Back in an hour" : `Back in ${hours} hours`;
+  const days = Math.round(hours / 24);
+  if (days === 1) return "Back tomorrow";
+  if (days < 14) return `Back in ${days} days`;
+  const weeks = Math.round(days / 7);
+  if (days < 60) return `Back in ${weeks} weeks`;
+  const months = Math.round(days / 30);
+  if (months < 24) return `Back in ${months} months`;
+  return `Back in ${Math.round(days / 365)} years`;
+}
+
 /** How long ago, for the trail of past attempts. */
 export function ago(at: string, now = new Date()): string {
   const ms = now.getTime() - new Date(at).getTime();

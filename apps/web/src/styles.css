@@ -1783,6 +1783,64 @@ span.status__title {
   font-variant-numeric: tabular-nums;
 }
 
+/* --- the card the loop stands still on ------------------------------------ */
+
+/*
+ * A topic's mastery in four cells and no number beside it.
+ *
+ * Nothing here declares a colour of its own. `--gold` is remapped to `--blue`
+ * by `.app[data-mode="review"]` above, so the cells are blue on a review and
+ * gold on the book without this block knowing which errand it is on — the same
+ * way every button and meter already follows it.
+ */
+.landed__mastery {
+  display: flex;
+  gap: 0.3rem;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.landed__cell {
+  width: 1.7rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--line);
+}
+
+.landed__cell--on {
+  background: var(--gold);
+}
+
+/* Hard is +0.5, so a cell can be genuinely half-earned. */
+.landed__cell--half {
+  background: linear-gradient(90deg, var(--gold) 50%, var(--line) 50%);
+}
+
+/*
+ * The one cell this round moved — lit or emptied, and marked the same either
+ * way. It fades in rather than growing: the row must not change size, or the
+ * two lines under it move while the student is reading them.
+ *
+ * `fade` is the keyframe the sheets' backdrop already uses. The reduced-motion
+ * clamp below flattens it with no rule of its own here.
+ */
+.landed__cell--moved {
+  animation: fade 0.45s ease;
+  outline: 1px solid var(--gold-dim);
+  outline-offset: 2px;
+}
+
+/* The rarest line on any screen in the app, so it is set like the language. */
+.landed__met {
+  font-family: var(--serif);
+  color: var(--gold);
+  font-size: 1.05rem;
+}
+
+.landed__cleared {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
 /* Everything decorative stops when the reader asks it to. */
 @media (prefers-reduced-motion: reduce) {
   *,

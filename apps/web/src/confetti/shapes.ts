@@ -23,6 +23,18 @@
 export type ConfettiPack = {
   shapes: Record<string, Shape>;
   throws: string[][];
+  /**
+   * The one group kept back for a burst that means something.
+   *
+   * Optional, and that is the point: a pack that says nothing gets an ordinary
+   * group thrown at the heavier physics, which is still visibly a different
+   * burst — so a second language does not have to ship a drawing before the
+   * first can ship the moment. `checkConfetti` refuses one that names a shape
+   * the pack has not got, and refuses one whose shapes are some ordinary
+   * group's, which would ship the rarest burst in the app drawing exactly what
+   * every round draws.
+   */
+  milestone?: string[];
   /** Named colours a layer may ask for. */
   palette?: Record<string, string>;
 };
@@ -55,6 +67,29 @@ export function layersOf(shape: Shape | undefined, pack: ConfettiPack): Layer[] 
     layers.push({ d, fill: palette[paint] ?? UNPAINTED });
   }
   return layers;
+}
+
+/**
+ * Which group a burst draws.
+ *
+ * One group and only ever one — that is what makes a burst read as a motif
+ * rather than as a jumble, and it is why the heavier burst is not two groups
+ * thrown together. An ordinary burst takes one at random; a milestone takes the
+ * group the pack keeps back for it, and falls in with the rest when the pack
+ * keeps none, so a language can arrive before its own drawing does.
+ *
+ * Here rather than beside the canvas because it is a choice and not a drawing,
+ * and jsdom has no `Path2D` to test the drawing with.
+ */
+export function throwGroup(
+  pack: ConfettiPack,
+  grand = false,
+): string[] | undefined {
+  const kept = grand ? pack.milestone : undefined;
+  if (kept?.length) return kept;
+  const groups = pack.throws ?? [];
+  if (!groups.length) return undefined;
+  return groups[Math.floor(Math.random() * groups.length)];
 }
 
 /** Every shape a throw group names, in order, skipping any that is missing. */

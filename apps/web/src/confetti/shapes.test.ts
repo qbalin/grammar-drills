@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { layersOf, shade, shapesOf, type ConfettiPack } from "./shapes.js";
+import { layersOf, shade, shapesOf, throwGroup, type ConfettiPack } from "./shapes.js";
 
 const pack: ConfettiPack = {
   palette: { blood: "#a3121b", gold: "#e8c98a" },
@@ -79,5 +79,32 @@ describe("shade", () => {
 
   it("hands back anything it cannot read", () => {
     for (const bad of ["", "red", "#12", "#12345"]) expect(shade(bad, 1.2)).toBe(bad);
+  });
+});
+
+describe("throwGroup", () => {
+  it("draws one of the ordinary groups for an ordinary burst", () => {
+    for (let i = 0; i < 20; i++) {
+      expect(pack.throws).toContainEqual(throwGroup(pack));
+    }
+  });
+
+  it("takes the group a pack keeps back for a milestone", () => {
+    const kept: ConfettiPack = { ...pack, milestone: ["typo"] };
+    for (let i = 0; i < 20; i++) {
+      expect(throwGroup(kept, true)).toEqual(["typo"]);
+    }
+  });
+
+  it("falls in with the rest where a pack keeps none back", () => {
+    // A second language should not have to draw before the first can ship the
+    // moment: it gets the heavier physics on an ordinary group.
+    for (let i = 0; i < 20; i++) {
+      expect(pack.throws).toContainEqual(throwGroup(pack, true));
+    }
+  });
+
+  it("has nothing to draw for a pack with no groups at all", () => {
+    expect(throwGroup({ shapes: {}, throws: [] })).toBeUndefined();
   });
 });

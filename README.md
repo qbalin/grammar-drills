@@ -53,6 +53,51 @@ on the book when none are, and it throws itself back to the book as soon as the
 pile is cleared. Where the book reads from is yours to say — see
 [Three ways forward](#three-ways-forward).
 
+## The end of a round
+
+A round used to run straight into the next question. The burst that marks
+finishing one fired and the loop advanced in the same breath, so the confetti
+played over the *next* topic's first prompt and the round that earned it was
+already off the screen; and the pile emptying — the one unambiguously good thing
+the schedule ever produces — was a 2.6-second toast over a question you had just
+been handed.
+
+So the loop stands still. The last grade of a round lands on a card naming the
+topic, the four cells its mastery is drawn in with the one this round moved
+marked, and when it comes back. **Keep going** serves the next question and
+**Stop here** opens the schedule — there is no session to end, and what somebody
+stopping wants is the dates. The burst fires over this rather than over what
+came after it.
+
+It says three things and refuses a fourth. Not how the round was graded: every
+grade in it has already been given and already moved the schedule, and a screen
+that added them up would turn four self-assessments into a score, in a loop whose
+whole design is that nothing marks you. A cell that goes *out* is drawn as
+plainly as one that lights, for the same reason — it is where the topic stands,
+not a verdict on the round, and a card that hid the fall could only say good
+news.
+
+A grade that also empties the pile gets **one** card, not two to dismiss in a
+row: the same card, a line saying so, and *Read on in the book* where *Keep
+going* stood. A word that empties it gets the card with no topic on it, since a
+vocabulary card is one question and has no round behind it.
+
+**And the burst has a top end.** It has fired on every round since it stopped
+counting answers — about every four questions, which is a cadence rather than a
+surprise. The rarer one is kept for the rarest thing a pack has to offer: the
+first line you ever answer by an author you have not read before. Latin quotes
+twenty of them and Greek eleven, so it is some twenty bursts in a course. It is
+heavier, it draws a group of shapes the pack keeps back for it — Latin throws the
+eagle, the wreath, the temple and the chariot — and the card *names* the author,
+which is the half that survives a reader who has asked their system not to
+animate things.
+
+Who you have met is read back out of the answer trail rather than counted
+forward from the day this shipped, so nobody is congratulated in an update for a
+Cicero they met last year. Nothing new is written down for it, and there is
+nothing to grind at: no screen anywhere says which authors you have met, or which
+one the next question quotes.
+
 Spaced repetition runs on two independent [FSRS](https://github.com/open-spaced-repetition/ts-fsrs)
 tracks: **grammar topics** (driven by your self-grades) and **vocabulary** you
 record as you go. A review serves the **words first** and the grammar after

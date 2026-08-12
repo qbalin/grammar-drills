@@ -76,10 +76,36 @@ export function checkConfetti(pack, { name = "pack" } = {}) {
     }
   });
 
+  // The group kept back for a milestone, if the pack keeps one. Optional: a
+  // pack that names none still gets a heavier burst, drawn from the throws
+  // above, so a language can arrive without artwork it has not drawn yet.
+  const milestone = pack.milestone;
+  if (milestone !== undefined) {
+    if (!Array.isArray(milestone) || !milestone.length) {
+      say("milestone is present but is not a non-empty list of shape names");
+    } else {
+      for (const shape of milestone) {
+        if (!(shape in shapes)) say(`milestone names "${shape}", which is not a shape`);
+      }
+      // A milestone group that *is* one of the ordinary groups fires the rarest
+      // burst in the app and draws exactly what every round draws. Nothing
+      // crashes and nothing looks wrong, which is the kind of failure this file
+      // exists to catch before it ships.
+      const key = (group) => [...new Set(group)].sort().join(" ");
+      if (throws.some((group) => Array.isArray(group) && key(group) === key(milestone))) {
+        say("milestone draws the same shapes as an ordinary throw group");
+      }
+    }
+  }
+
   // A shape nothing throws is a shape nobody sees. Usually it means a rename
-  // that only got applied in one of the two places.
+  // that only got applied in one of the two places. The milestone counts as
+  // somewhere it is thrown: a shape drawn for that alone is drawn on purpose.
   for (const shape of Object.keys(shapes)) {
-    if (!throws.some((group) => Array.isArray(group) && group.includes(shape))) {
+    const thrown =
+      throws.some((group) => Array.isArray(group) && group.includes(shape)) ||
+      (Array.isArray(milestone) && milestone.includes(shape));
+    if (!thrown) {
       say(`shape ${shape} is in no throw group, so it is never thrown`);
     }
   }

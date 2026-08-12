@@ -21,6 +21,7 @@ import {
   type NewVocabContext,
   type PractiseRun,
   type Progress,
+  type Question,
   type QuestionSource,
   type RoundDraft,
   type RoundVia,
@@ -778,6 +779,12 @@ export class Session {
       ...(graded === sectionId ? {} : { viewedAs: sectionId }),
       roundId: test.id,
       cardBefore: this.p.topicCards[graded] ?? null,
+      // Beside `cardBefore` and taken at the same moment. A topic never graded
+      // stood at the floor, which is not an invention: it is what `fraction`
+      // and every bar in both apps already read an absent mastery as, and the
+      // first round on a topic is exactly the one whose movement is worth
+      // drawing. What "never started" means stays `topicMastery`'s to say.
+      masteryBefore: this.p.topicMastery[graded] ?? MASTERY_MIN,
       worst: null,
       answered: 0,
       isNew,
@@ -791,6 +798,65 @@ export class Session {
     if (!this.p.openRound) return;
     this.p.openRound = null;
     this.touch();
+  }
+
+  /**
+   * The round that has just been worked out, as the screen landing on it reads
+   * it. Null when no round is in flight, and null while one still has questions
+   * to give.
+   *
+   * Symmetric with `resumableRound` — the same lookup, on the other side of the
+   * same line. What that one is for is putting an unfinished round back; this
+   * is for the moment a finished one is stood still in.
+   *
+   * Three facts that have to agree with each other and with `gradeTopic`'s own
+   * arithmetic: where the topic stood, where it stands, and when the card the
+   * round just wrote brings it back. A screen assembling those out of
+   * `progress()` would drift the first time the mastery deltas moved, and would
+   * drift in two apps rather than in one.
+   *
+   * Deliberately silent about how the round was graded. What belongs on that
+   * screen is where a topic has got to and when it returns; the grades are the
+   * schedule's business and are already spent on the card. Adding them up is
+   * how four self-assessments turn into a score.
+   *
+   * Null outside a round is the whole of the rule that keeps this off a
+   * vocabulary card and off the pass-over grade a topic with no tests takes:
+   * neither opens one, so neither has anything to land on. Written as a
+   * condition rather than as a list of what to exclude, so the next kind of
+   * single-question grade needs no line here.
+   */
+  landedRound(): {
+    sectionId: string;
+    /** The section it was being read in, when that is another book's. */
+    viewedAs?: string;
+    /** Where the topic stood before the round; absent if it had never been graded. */
+    masteryBefore?: number;
+    /** Where it stands now, 1–4. */
+    mastery: number;
+    /** When the card this round wrote brings the topic back. */
+    due: Date;
+    /** Authors this round introduced, in the order they were met. */
+    met: string[];
+  } | null {
+    const open = this.p.openRound;
+    if (!open) return null;
+    const test = this.content
+      .testsFor(open.sectionId)
+      .find((t) => t.id === open.roundId);
+    if (!test || open.answered < test.questions.length) return null;
+    const card = this.p.topicCards[open.sectionId];
+    if (!card) return null;
+    return {
+      sectionId: open.sectionId,
+      ...(open.viewedAs ? { viewedAs: open.viewedAs } : {}),
+      ...(open.masteryBefore === undefined
+        ? {}
+        : { masteryBefore: open.masteryBefore }),
+      mastery: this.p.topicMastery[open.sectionId] ?? MASTERY_MIN,
+      due: new Date(card.due),
+      met: open.met ?? [],
+    };
   }
 
   /**
@@ -881,13 +947,29 @@ export class Session {
       now,
     );
     this.p.topicCards[sectionId] = serializeCard(card);
+    const stood = this.p.topicMastery[sectionId];
     this.p.openRound =
       roundId === undefined
         ? null
         : {
             sectionId,
+            // Carried rather than dropped. This literal is written from
+            // scratch on every grade, so anything the round knows and does not
+            // appear here is lost on its first one — which is how a round
+            // opened in a further grammar used to forget by question two which
+            // book it was being read in, and resume in the other one.
+            ...(continuing && open.viewedAs ? { viewedAs: open.viewedAs } : {}),
             roundId,
             cardBefore: before,
+            // Carried for the same reason and re-read for none: by now this
+            // round's own grades have moved the map it would be re-read from,
+            // which is exactly the value it must not be.
+            ...(continuing
+              ? open.masteryBefore === undefined
+                ? {}
+                : { masteryBefore: open.masteryBefore }
+              : { masteryBefore: stood ?? MASTERY_MIN }),
+            ...(continuing && open.met?.length ? { met: open.met } : {}),
             worst,
             // One more of the round's questions is behind us, and the draft
             // was the answer to the one just graded.
@@ -900,13 +982,77 @@ export class Session {
     // and one bad day can't wipe it: good/easy +1, hard +0.5, again -1. It is
     // per question, not per round: it is the count of what you got right.
     const delta = rating >= 3 ? 1 : rating === 2 ? 0.5 : -1;
-    const base = this.p.topicMastery[sectionId] ?? MASTERY_MIN;
+    const base = stood ?? MASTERY_MIN;
     this.p.topicMastery[sectionId] = Math.min(
       MASTERY_MAX,
       Math.max(MASTERY_MIN, base + delta),
     );
     if (!existing) this.p.newTopicsIntroduced += 1;
     this.touch();
+  }
+
+  /**
+   * Every author the student has ever answered a question by.
+   *
+   * Derived from the attempt trail rather than written down, and that is the
+   * whole point rather than an economy. A stored set could only have started
+   * empty, so the release that added it would have announced a first meeting
+   * with every author a student had been reading for a year. The trail already
+   * holds the answer — it is uncapped on purpose — so the honest set is the one
+   * read back out of it.
+   *
+   * Memoized on the instance and never persisted. Built at most once per
+   * launch, and only ever asked for by a question that quotes somebody at all:
+   * the questions written for this app are the great majority and cost nothing.
+   * Sections whose bank quotes nobody are skipped whole, which is most of them.
+   */
+  private met?: Set<string>;
+
+  private authorsMet(): Set<string> {
+    if (this.met) return this.met;
+    const met = new Set<string>();
+    for (const [sectionId, attempts] of Object.entries(this.p.attempts)) {
+      if (!attempts?.length) continue;
+      // The prompt is a question's identity here as it is everywhere else in
+      // the trail: it is what the student saw, and it is what was recorded.
+      const byPrompt = new Map<string, string>();
+      for (const test of this.content.testsFor(sectionId)) {
+        for (const q of test.questions) {
+          if (q.source) byPrompt.set(q.prompt, q.source.author);
+        }
+      }
+      if (byPrompt.size === 0) continue;
+      for (const a of attempts) {
+        const author = byPrompt.get(a.prompt);
+        if (author) met.add(author);
+      }
+    }
+    this.met = met;
+    return met;
+  }
+
+  /**
+   * The author this question introduces, if the record holds no answer to any
+   * question by them — and note it on the round, so it can be named when the
+   * round lands.
+   *
+   * Asked *before* the attempt is recorded, or the attempt being made is itself
+   * what proves the author already met. One call rather than a query and a
+   * write, so those two cannot come to be made in the wrong order.
+   *
+   * Undefined for the questions nobody is credited for, which is most of them,
+   * and undefined the second time — meeting somebody happens once.
+   */
+  meetAuthor(question: Question): string | undefined {
+    const author = question.source?.author;
+    if (!author) return undefined;
+    const met = this.authorsMet();
+    if (met.has(author)) return undefined;
+    met.add(author);
+    const open = this.p.openRound;
+    if (open) open.met = [...(open.met ?? []), author];
+    this.touch();
+    return author;
   }
 
   /**
@@ -1573,6 +1719,11 @@ export class Session {
     this.p.keepContext = keepContext;
     this.p.quotedOnly = quotedOnly;
     this.p.quotedFirst = quotedFirst;
+    // The set of authors met is read out of the trail, and the grade being
+    // taken back may be the one whose attempt first met somebody. Thrown away
+    // rather than mended: it is rebuilt on the next quoted question and nothing
+    // else asks for it.
+    this.met = undefined;
     // An undo is itself a change: the stored copy is now out of date, and the
     // sync comparison reads `updatedAt` to decide that.
     this.touch();

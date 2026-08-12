@@ -5,7 +5,7 @@ import type {
   Rating,
   VocabCardState,
 } from "@lang-tutor/core";
-import { CopyButton, GradeBar, Ring, Sentence } from "../ui.js";
+import { comesBack, CopyButton, GradeBar, Ring, Sentence } from "../ui.js";
 import { profile } from "../pack.js";
 
 /**
@@ -515,6 +515,158 @@ export function Practised({
         </button>
         <button className="btn btn--quiet" onClick={onOpenMap}>
           Grammar index
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * The four cells a topic's mastery is drawn in.
+ *
+ * The 1–4 score, and no number beside it. The index's percentage is a mean over
+ * a *population* — the whole syllabus, or one family — and a single topic has no
+ * population to average; drawn per topic, the steps mastery actually moves in
+ * (±1 for good, ±0.5 for hard) become jumps of 33% and 17%, which reads as a
+ * fault rather than as a step. The raw 1–4 is no better: it is not a figure
+ * anybody has been taught to read. So the movement is the cell that changed
+ * rather than a subtraction the student is left to do.
+ *
+ * A cell that goes *out* is drawn as plainly as one that lights. This is not a
+ * verdict on the round — it is where the topic stands, the same standing fact
+ * the index draws — and a card that hid the fall could only ever say good news.
+ *
+ * `from` is absent on a topic never graded before, and on a round begun before
+ * the engine wrote this down. Then nothing is marked: there is no movement to
+ * report, which is different from reporting that there was none.
+ */
+function Mastery({ from, to }: { from?: number; to: number }) {
+  const lit = (cell: number, at: number) => at >= cell;
+  const half = (cell: number, at: number) => at + 0.5 === cell;
+  return (
+    <div
+      className="landed__mastery"
+      role="img"
+      aria-label={
+        from === undefined || from === to
+          ? `Mastery ${to} of 4`
+          : `Mastery ${from} of 4, now ${to} of 4`
+      }
+    >
+      {[1, 2, 3, 4].map((cell) => (
+        <span
+          key={cell}
+          className={[
+            "landed__cell",
+            lit(cell, to) ? "landed__cell--on" : "",
+            half(cell, to) ? "landed__cell--half" : "",
+            // The one cell this round moved, lit or emptied. Nothing is marked
+            // when the round left the topic where it found it.
+            from !== undefined && lit(cell, to) !== lit(cell, from)
+              ? "landed__cell--moved"
+              : "",
+          ]
+            .filter(Boolean)
+            .join(" ")}
+        />
+      ))}
+    </div>
+  );
+}
+
+/**
+ * Where the loop stands still.
+ *
+ * A round finished, or the pile emptied, or both — which is one moment, and is
+ * drawn as one card rather than as two to dismiss in a row. Before this the
+ * burst fired and `advance` was called in the same breath, so the confetti for
+ * the round just finished played over the *next* topic's first prompt and the
+ * thing being celebrated was already off the screen.
+ *
+ * It says three things and refuses a fourth: what was worked on, where that
+ * topic has got to, and when it comes back. Not how it was graded. Every grade
+ * in the round has already been given and has already moved the schedule, and a
+ * screen that added them up would turn four self-assessments into a score — for
+ * a loop whose whole design is that nothing marks you.
+ *
+ * `round` is absent when a vocabulary card emptied the pile, since a word has no
+ * round behind it. `cleared` is false on the great majority of rounds, which
+ * finish with plenty still waiting.
+ */
+export function Landed({
+  title,
+  round,
+  cleared,
+  met,
+  overall,
+  nextDue,
+  onKeepGoing,
+  onStop,
+}: {
+  /** The topic just finished; absent with `round`. */
+  title?: string;
+  round?: { masteryBefore?: number; mastery: number; due: Date };
+  /** The last thing waiting went with this grade. */
+  cleared: boolean;
+  /**
+   * An author met for the first time, named.
+   *
+   * In words rather than only in confetti, and that is the point of it: a
+   * burst says something happened without saying what, and for a reader who
+   * has asked for reduced motion there is no burst at all. The line is what
+   * they get, and it is the half that carries the meaning.
+   */
+  met?: string;
+  overall: number;
+  nextDue?: Date;
+  onKeepGoing: () => void;
+  onStop: () => void;
+}) {
+  return (
+    <div className="centered">
+      {/* With no round there is no topic to talk about, so the syllabus stands
+          there instead — the same ring, in the same place, as `Rest`. */}
+      {!round && <Ring percent={overall} />}
+      <h1>{round ? title : "The pile is clear."}</h1>
+      {met && <p className="landed__met">Your first line of {met}.</p>}
+      {round && (
+        <>
+          <Mastery from={round.masteryBefore} to={round.mastery} />
+          <p>{comesBack(round.due)}</p>
+        </>
+      )}
+      {cleared && round && (
+        <p className="landed__cleared">And that was the last thing waiting.</p>
+      )}
+      {cleared && !round && (
+        <p>
+          {nextDue
+            ? `The next comes back ${nextDue.toLocaleDateString(undefined, {
+                weekday: "long",
+                month: "short",
+                day: "numeric",
+              })}.`
+            : "Nothing is waiting."}
+        </p>
+      )}
+      <div
+        className="actions"
+        style={{ width: "100%", maxWidth: "18rem", flexDirection: "column" }}
+      >
+        <button className="btn btn--primary" onClick={onKeepGoing}>
+          {cleared ? "Read on in the book" : "Keep going"}
+        </button>
+        {/*
+         * Not a fourth screen to land on. There is no session in this app, and
+         * inventing one to give this button somewhere to go would mean passing
+         * a verdict on how much was done today — which is a countable reward
+         * wearing another hat. What somebody who is stopping actually wants is
+         * to know when this comes back, and the schedule already says so. The
+         * card is underneath it either way: a screen with no question on it,
+         * which is the resting place.
+         */}
+        <button className="btn btn--quiet" onClick={onStop}>
+          Stop here
         </button>
       </div>
     </div>

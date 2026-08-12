@@ -11,7 +11,7 @@
  */
 import { useCallback, useEffect, useRef } from "react";
 import pack from "@pack/confetti";
-import { shade, shapesOf, type ConfettiPack } from "./shapes.js";
+import { shade, shapesOf, throwGroup, type ConfettiPack } from "./shapes.js";
 
 /**
  * How a burst behaves.
@@ -57,6 +57,24 @@ const PHYSICS = {
  */
 const SHADE = 0.08;
 
+/**
+ * The top end.
+ *
+ * Only the four numbers that make a burst read as *heavier* rather than as more
+ * of the same: half again the pieces, thrown harder, held on the screen longer,
+ * and a wider size spread so the near ones are genuinely near. Everything else
+ * is `PHYSICS` — this is the same burst with its weight behind it, not a second
+ * animation to keep in step with the first.
+ *
+ * Physics alone would not be enough. A pack may keep a group of shapes back for
+ * this too (`ConfettiPack.milestone`), and one that does gets a burst that is
+ * both larger and made of different things.
+ */
+const GRAND = { pieces: 300, speed: 14, fadeAt: 2.1, sizeSpread: 0.85 };
+
+/** Which register a burst is in. Ordinary rounds are `round`. */
+export type Burst = "round" | "milestone";
+
 type Piece = {
   x: number; y: number; vx: number; vy: number;
   rot: number; vr: number; size: number;
@@ -82,13 +100,13 @@ type Built = { d: Path2D; fill: string }[];
  * imported by the test environment, where Path2D does not exist, and a throw at
  * import time would take the whole app down with it.
  *
- * One group is drawn at random from the pack's throws.
+ * Which group is drawn is `throwGroup`'s, beside the shapes: that is a choice
+ * rather than a drawing, and this file is the one that cannot be tested.
  */
-function buildThrow(source: ConfettiPack): Built[] {
+function buildThrow(source: ConfettiPack, grand = false): Built[] {
   if (typeof Path2D === "undefined") return [];
-  const groups = source.throws ?? [];
-  if (!groups.length) return [];
-  const group = groups[Math.floor(Math.random() * groups.length)];
+  const group = throwGroup(source, grand);
+  if (!group) return [];
   return shapesOf(group, source).map((layers) =>
     layers.map((layer) => ({ d: new Path2D(layer.d), fill: layer.fill })),
   );
@@ -96,11 +114,16 @@ function buildThrow(source: ConfettiPack): Built[] {
 
 export function useConfetti(): {
   canvas: React.ReactNode;
-  fire: () => void;
+  fire: (kind?: Burst) => void;
 } {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const raf = useRef(0);
   const pieces = useRef<Piece[]>([]);
+  // How far the burst in flight falls before it fades. On a ref rather than
+  // read from the constant, because it is the one physics number the *frame*
+  // needs and it differs between the two registers — a milestone is held on
+  // screen longer, and `draw` runs long after `burst` has returned.
+  const fade = useRef(PHYSICS.fadeAt);
 
   useEffect(() => () => cancelAnimationFrame(raf.current), []);
 
@@ -110,7 +133,8 @@ export function useConfetti(): {
     if (!canvas || !ctx) return;
     const w = canvas.clientWidth;
     const h = canvas.clientHeight;
-    const { gravity, fadeAt } = PHYSICS;
+    const { gravity } = PHYSICS;
+    const fadeAt = fade.current;
     ctx.clearRect(0, 0, w, h);
     let live = 0;
     for (const p of pieces.current) {
@@ -146,19 +170,35 @@ export function useConfetti(): {
     }
   }, []);
 
-  const burst = useCallback(() => {
+  const burst = useCallback(
+    (kind: Burst = "round") => {
+    // Still the first line, and still with no way to override it: the OS
+    // preference is the setting. What a reader who asked for stillness gets
+    // instead is the card naming what happened, in words — which is the half
+    // that carries the meaning.
     if (prefersReducedMotion()) return;
     // Before the canvas is touched, not after. `buildThrow` is what knows this
     // environment has no Path2D, and asking jsdom for a 2d context is a loud
     // "not implemented" in the middle of an otherwise passing test run.
     const source = pack as ConfettiPack;
-    const shapes = buildThrow(source);
+    const grand = kind === "milestone";
+    const shapes = buildThrow(source, grand);
     if (!shapes.length) return;
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) return;
 
-    const { pieces: count, size, sizeSpread, originY, spreadX, speed, spin } = PHYSICS;
+    const {
+      pieces: count,
+      size,
+      sizeSpread,
+      originY,
+      spreadX,
+      speed,
+      spin,
+      fadeAt,
+    } = { ...PHYSICS, ...(grand ? GRAND : {}) };
+    fade.current = fadeAt;
 
     const dpr = window.devicePixelRatio || 1;
     const w = canvas.clientWidth;
@@ -190,7 +230,9 @@ export function useConfetti(): {
     });
     cancelAnimationFrame(raf.current);
     raf.current = requestAnimationFrame(draw);
-  }, [draw]);
+    },
+    [draw],
+  );
 
   const canvas = <canvas ref={canvasRef} className="confetti" aria-hidden="true" />;
   return { canvas, fire: burst };

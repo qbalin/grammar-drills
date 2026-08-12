@@ -1490,6 +1490,168 @@ describe("Session progress: a round of questions is one review", () => {
   });
 });
 
+/**
+ * What the screen that stands still between rounds reads.
+ *
+ * Three facts that have to agree with each other and with `gradeTopic`'s own
+ * arithmetic — where the topic stood, where it stands, and when it comes back —
+ * and one rule that keeps the whole thing off a screen it does not belong on.
+ */
+describe("the round a screen lands on", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+
+  /** A round of `wide`'s two-question tests, open on `n1`. */
+  const opened = () => {
+    const s = new Session(new Content(wide, testProfile));
+    const test = s.serveTest("n1")!;
+    s.beginRound("n1", test, true, "new");
+    return { s, roundId: test.id };
+  };
+
+  it("carries the mastery from before the round, not from before the last grade", () => {
+    const { s, roundId } = opened();
+    s.gradeTopic("n1", 3, now, roundId);
+    // Mastery has already moved to 2. The round still opened at 1, and that is
+    // what the card has to report — the alternative reads as "this round did
+    // half of what it did".
+    expect(s.progress().openRound?.masteryBefore).toBe(1);
+    s.gradeTopic("n1", 3, now, roundId);
+    expect(s.landedRound()).toMatchObject({ masteryBefore: 1, mastery: 3 });
+  });
+
+  it("says nothing has landed until the round's last question is graded", () => {
+    const { s, roundId } = opened();
+    expect(s.landedRound()).toBeNull();
+    s.gradeTopic("n1", 3, now, roundId);
+    expect(s.landedRound()).toBeNull();
+    s.gradeTopic("n1", 3, now, roundId);
+    expect(s.landedRound()).not.toBeNull();
+  });
+
+  it("reports when the card the round wrote brings the topic back", () => {
+    const { s, roundId } = opened();
+    s.gradeTopic("n1", 3, now, roundId);
+    s.gradeTopic("n1", 3, now, roundId);
+    expect(s.landedRound()?.due.toISOString()).toBe(s.progress().topicCards.n1!.due);
+  });
+
+  it("has nothing to report for a grade given outside a round", () => {
+    // The rule that keeps this off a vocabulary card and off the pass-over
+    // grade a topic with no tests takes: neither opens a round, so neither has
+    // anything to land on. Written as a condition rather than as a list, so the
+    // next kind of single-question grade needs no line for it.
+    const s = new Session(new Content(wide, testProfile));
+    s.gradeTopic("n1", 3, now);
+    expect(s.landedRound()).toBeNull();
+  });
+
+  it("reports the cells alone for a round begun before mastery was written down", () => {
+    const { s, roundId } = opened();
+    delete s.progress().openRound!.masteryBefore;
+    s.gradeTopic("n1", 3, now, roundId);
+    s.gradeTopic("n1", 3, now, roundId);
+    // Not defaulted to where the topic stands: an arrow drawn from that would
+    // claim the round did nothing, which is a different lie from saying none.
+    expect(s.landedRound()?.masteryBefore).toBeUndefined();
+    expect(s.landedRound()?.mastery).toBe(3);
+  });
+
+  it("takes the landing back with the grade that reached it", () => {
+    const { s, roundId } = opened();
+    s.gradeTopic("n1", 3, now, roundId);
+    const before = s.snapshot();
+    s.gradeTopic("n1", 3, now, roundId);
+    expect(s.landedRound()).not.toBeNull();
+    s.restore(before);
+    expect(s.landedRound()).toBeNull();
+  });
+
+  it("keeps the book a round was read in across its grades", () => {
+    // The openRound literal is rewritten from scratch on every grade, so
+    // anything the round knows and is not carried is lost on its first one.
+    // This one was: a round opened in a further grammar resumed in the primary.
+    const { s, roundId } = opened();
+    s.progress().openRound!.viewedAs = "elsewhere";
+    s.gradeTopic("n1", 3, now, roundId);
+    expect(s.progress().openRound?.viewedAs).toBe("elsewhere");
+    s.gradeTopic("n1", 3, now, roundId);
+    expect(s.landedRound()?.viewedAs).toBe("elsewhere");
+  });
+});
+
+/**
+ * The rarest thing the app has to say, and the reason it can be said honestly
+ * to a student who has been reading for a year: it is read back out of the
+ * attempt trail rather than counted forward from the day the feature shipped.
+ */
+describe("meeting an author for the first time", () => {
+  const cicero = { author: "Cicero", work: "de Officiis", locus: "i, 2" };
+  const quoting: ContentData = {
+    grammar: [
+      { id: "q1", ref: "1", title: "Quoted", family: "nouns", text: "…", order: 1 },
+    ],
+    tests: {
+      q1: [
+        {
+          id: "q1-t1",
+          sectionId: "q1",
+          questions: [
+            { prompt: "one", answer: "a", kind: "parse", vocab: [], source: cicero },
+            { prompt: "two", answer: "b", kind: "parse", vocab: [], source: cicero },
+            { prompt: "three", answer: "c", kind: "parse", vocab: [] },
+          ],
+        },
+      ],
+    },
+  };
+  const at = (i: number) => quoting.tests.q1![0]!.questions[i]!;
+  const fresh = () => new Session(new Content(quoting, testProfile));
+
+  it("names the author on the first question of theirs ever answered", () => {
+    expect(fresh().meetAuthor(at(0))).toBe("Cicero");
+  });
+
+  it("says nothing the second time, or on a second question by the same author", () => {
+    const s = fresh();
+    expect(s.meetAuthor(at(0))).toBe("Cicero");
+    expect(s.meetAuthor(at(0))).toBeUndefined();
+    expect(s.meetAuthor(at(1))).toBeUndefined();
+  });
+
+  it("says nothing about a question nobody is credited for", () => {
+    expect(fresh().meetAuthor(at(2))).toBeUndefined();
+  });
+
+  it("says nothing to a student whose trail already holds one", () => {
+    // The whole back-compatibility of this: a returning student is not
+    // congratulated in an update for a Cicero they met last year. A stored set
+    // could only have started empty and would have said this for every author.
+    const s = fresh();
+    s.recordAttempt("q1", { prompt: "one", answer: "a", submitted: "a", rating: 3 });
+    expect(s.meetAuthor(at(1))).toBeUndefined();
+  });
+
+  it("keeps the meeting on the round, so it is still the news four questions on", () => {
+    const s = fresh();
+    s.beginRound("q1", quoting.tests.q1![0]!, true, "new");
+    s.meetAuthor(at(0));
+    s.gradeTopic("q1", 3, new Date(), "q1-t1");
+    s.gradeTopic("q1", 3, new Date(), "q1-t1");
+    s.gradeTopic("q1", 3, new Date(), "q1-t1");
+    expect(s.landedRound()?.met).toEqual(["Cicero"]);
+  });
+
+  it("forgets what it derived when a grade is taken back", () => {
+    // An undo can take back the very attempt that first met somebody.
+    const s = fresh();
+    const before = s.snapshot();
+    s.recordAttempt("q1", { prompt: "one", answer: "a", submitted: "a", rating: 3 });
+    expect(s.meetAuthor(at(1))).toBeUndefined();
+    s.restore(before);
+    expect(s.meetAuthor(at(1))).toBe("Cicero");
+  });
+});
+
 describe("exploring only what somebody wrote", () => {
   const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
   /**
