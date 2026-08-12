@@ -18,7 +18,12 @@ import {
   type TopicProgress,
   type VocabWord,
 } from "@lang-tutor/core";
-import { dictionaryReady, loadDictionary, loadParadigms } from "./content-loader.js";
+import {
+  dictionaryReady,
+  loadDictionary,
+  loadGrammarBook,
+  loadParadigms,
+} from "./content-loader.js";
 import type { ParadigmIndex } from "./paradigm-index.js";
 import { useConfetti } from "./confetti/Confetti.js";
 import { profile } from "./pack.js";
@@ -268,9 +273,103 @@ export function App({ content, session, storage }: Props) {
     return () => clearTimeout(id);
   }, [toast]);
 
-  // The book in order, which is what the grammar reader pages through. It is
-  // the content rather than the progress, so no tick touches it.
-  const sections = useMemo(() => content.sections(), [content]);
+  /*
+   * The book a page belongs to, in order — what the grammar reader pages
+   * through.
+   *
+   * Keyed on the section rather than on which book is open, because the two
+   * come apart: following "also explained at" from a topic of one grammar opens
+   * a page of another, and a student comparing two explanations has not asked
+   * to change syllabus. Read out of the open book's list, that page is not in
+   * it, and the reader rendered nothing at all.
+   */
+  const sectionsFor = useCallback(
+    (sectionId: string) => content.sections(content.grammarOf(sectionId)),
+    [content, tick],
+  );
+
+  /*
+   * Opening a different grammar of the same language.
+   *
+   * The fetch is the only slow part and it happens once per book: nothing is
+   * migrated and nothing recomputed, because nothing moved — the cards and the
+   * answers stay filed under the topics the questions were written for, and
+   * this changes which book is drawn over them. A failure leaves the student on
+   * the book they were already reading, which is the one state that is always
+   * safe to be in.
+   */
+  const [switching, setSwitching] = useState<string | null>(null);
+  /*
+   * Read off the profile rather than off `Content`, which only knows the books
+   * it has actually been handed. The switch has to offer one before it is
+   * fetched, or it could never be fetched.
+   */
+  const books = useMemo(
+    () => [
+      { id: content.primaryGrammar, label: content.grammarLabel(content.primaryGrammar) },
+      ...(content.profile.grammars ?? []).map((g) => ({ id: g.id, label: g.label })),
+    ],
+    [content],
+  );
+  const switchGrammar = useCallback(
+    (id: string) => {
+      if (id === session.grammarId || switching) return;
+      void (async () => {
+        setSwitching(id);
+        try {
+          await loadGrammarBook(content, id);
+          session.setGrammar(id);
+          save();
+          bump();
+        } catch (err) {
+          setToast({
+            message: `Could not open ${content.grammarLabel(id)} — ${
+              err instanceof Error ? err.message : String(err)
+            }`,
+          });
+        } finally {
+          setSwitching(null);
+        }
+      })();
+    },
+    [content, session, switching],
+  );
+
+  /*
+   * The same grammar point as the pack's other books put it.
+   *
+   * Off the crosswalk, which is already loaded for whichever books have been
+   * opened — so this fills in as they are, and a book never opened contributes
+   * nothing rather than blocking on a fetch. `topicsTeaching` wants a topic of
+   * the primary grammar, so a section of a further book is resolved back
+   * through its own before it is asked.
+   */
+  const elsewhereFor = useCallback(
+    (sectionId: string) =>
+      content
+        .grammarIds()
+        .filter((id) => id !== content.grammarOf(sectionId))
+        .map((id) => ({
+          grammarId: id,
+          label: content.grammarLabel(id),
+          sections: [
+            ...new Set(
+              content
+                .primaryTopicsFor(sectionId)
+                .flatMap((primary) => content.topicsTeaching(primary, id)),
+            ),
+          ]
+            .map((otherId) => content.getSection(otherId))
+            .filter((s) => s !== undefined)
+            .map((s) => ({
+              sectionId: s.id,
+              ref: content.formatRef(s.ref, id),
+              title: s.title,
+            })),
+        }))
+        .filter((book) => book.sections.length > 0),
+    [content, tick],
+  );
 
   // The engine is mutated in place, so views derive from it on every tick.
   const families = useMemo(() => session.familyProgress(), [session, tick]);
@@ -1575,6 +1674,7 @@ export function App({ content, session, storage }: Props) {
 
       {overlay?.t === "grammar" &&
         (() => {
+          const sections = sectionsFor(overlay.sectionId);
           const at = sections.findIndex((s) => s.id === overlay.sectionId);
           const sec = sections[at];
           if (!sec) return null;
@@ -1628,6 +1728,10 @@ export function App({ content, session, storage }: Props) {
           }
           onClose={() => setOverlay(null)}
           onPick={(t) => setOverlay({ t: "topic", sectionId: t.sectionId })}
+          books={books}
+          grammarId={session.grammarId}
+          onGrammar={switchGrammar}
+          switching={switching}
         />
       )}
 
@@ -1657,6 +1761,13 @@ export function App({ content, session, storage }: Props) {
                 setOverlay({ t: "questions", sectionId: topic.sectionId })
               }
               onMark={markPast(topic.sectionId)}
+              elsewhere={elsewhereFor(topic.sectionId)}
+              onElsewhere={(_book, sectionId) => {
+                // Reading, not switching: the other book's page opens over the
+                // topic sheet and closing it comes straight back. A student
+                // comparing two explanations has not asked to change syllabus.
+                setOverlay({ t: "grammar", sectionId, back: overlay });
+              }}
             />
           );
         })()}

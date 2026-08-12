@@ -41,6 +41,7 @@ export const testProfile: Profile = {
   fallbackFamily: "style",
   grammar: {
     source: { title: "A test grammar", url: "https://example.invalid/", licence: "n/a" },
+    label: "Test",
     idPrefix: "tg",
     refPrefix: "§ ",
     paradigmLabels: [

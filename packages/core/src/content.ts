@@ -94,9 +94,7 @@ export class Content {
 
   /** The label a book is named by, e.g. "Lane". */
   grammarLabel(id: string): string {
-    if (id === this.primaryGrammar) {
-      return this.profile.grammar.source.title.split(",")[0];
-    }
+    if (id === this.primaryGrammar) return this.profile.grammar.label;
     return this.profile.grammars?.find((g) => g.id === id)?.label ?? id;
   }
 

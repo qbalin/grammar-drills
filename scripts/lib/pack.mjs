@@ -43,7 +43,7 @@ export function grammarsOf(profile) {
   return [
     {
       id: profile.grammar.idPrefix,
-      label: profile.grammar.source.title.split(",")[0],
+      label: profile.grammar.label,
       primary: true,
       content: "grammar.json",
       manifest: "grammar-coverage.json",

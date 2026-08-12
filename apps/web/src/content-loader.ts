@@ -1,5 +1,6 @@
 import {
   Content,
+  type Crosswalk,
   type GrammarSection,
   type LemmaEntry,
   type Test,
@@ -106,6 +107,39 @@ export async function loadContent(): Promise<Content> {
   // than a rebuilt bundle. Before the download it reports a miss, which is
   // exactly how `Content.lookup` already describes an unknown word.
   return new Content({ grammar, tests, lemmaLookup: lateBoundDictionary }, profile);
+}
+
+/**
+ * Take on one of the pack's further grammars, the first time it is opened.
+ *
+ * Not part of `loadContent` on purpose. Lane's syllabus is 416 KB gzipped
+ * against the primary's 129, and a student who never switches books should
+ * never pay for it — the same reason the dictionary is fetched separately. The
+ * crosswalk that makes a second book teachable is small enough to come with the
+ * first one that needs it and is then kept.
+ *
+ * Safe to call again: `Content.addGrammar` ignores a book it already holds, so
+ * switching back and forth costs one fetch.
+ */
+export async function loadGrammarBook(content: Content, id: string): Promise<void> {
+  if (content.grammarIds().includes(id)) return;
+  const [sections, crosswalk] = await Promise.all([
+    fetchJson<GrammarSection[]>(`grammar-${id}.json.gz`),
+    loadCrosswalk(),
+  ]);
+  const walk = crosswalk[id];
+  if (!walk) {
+    throw new Error(
+      `the bundle has no crosswalk for "${id}", so its topics would have nothing to teach`,
+    );
+  }
+  content.addGrammar(id, sections, walk);
+}
+
+let crosswalk: Promise<Record<string, Crosswalk>> | undefined;
+function loadCrosswalk(): Promise<Record<string, Crosswalk>> {
+  crosswalk ??= fetchJson<Record<string, Crosswalk>>("crosswalk.json.gz");
+  return crosswalk;
 }
 
 let loaded: LemmaIndex | undefined;

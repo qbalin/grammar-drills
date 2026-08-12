@@ -9,6 +9,14 @@ import type {
 import { Ring, Sentence, Sheet, ago, cycleEmphasis } from "../ui.js";
 import { fold, profile } from "../pack.js";
 
+/** One section of another book, as the topic sheet shows it. */
+export interface Elsewhere {
+  sectionId: string;
+  /** Already written the way that book writes it, e.g. "§ 1077-1082". */
+  ref: string;
+  title: string;
+}
+
 /**
  * The syllabus as a map: nine families, each opening to a row per topic.
  *
@@ -150,6 +158,10 @@ export function MapSheet({
   onPick,
   /** The topic being studied, so the map opens where the student is. */
   currentFamily,
+  books,
+  grammarId,
+  onGrammar,
+  switching,
 }: {
   families: FamilyProgress[];
   overall: number;
@@ -158,6 +170,12 @@ export function MapSheet({
   onClose: () => void;
   onPick: (t: TopicProgress) => void;
   currentFamily?: string;
+  /** The grammars this pack ships, in profile order. One means no switch. */
+  books: { id: string; label: string }[];
+  grammarId: string;
+  onGrammar: (id: string) => void;
+  /** The book being fetched, if one is; its button says so rather than hanging. */
+  switching: string | null;
 }) {
   const firstStarted = families.find((f) => f.percent > 0)?.id;
   const [open, setOpen] = useState<string | null>(
@@ -168,6 +186,28 @@ export function MapSheet({
 
   return (
     <Sheet title="Grammar index" onClose={onClose}>
+      {/* Which book the index is drawn from. Only when there is more than one:
+          a pack with a single grammar should not grow a control that offers a
+          choice of one. The percentage below moves when this does, because the
+          two books hold different numbers of topics over the same answers —
+          which is the honest thing for it to do and worth seeing happen. */}
+      {books.length > 1 && (
+        <div className="books">
+          <div className="books__list" role="group" aria-label="Grammar">
+          {books.map((b) => (
+            <button
+              key={b.id}
+              className={`books__pick${b.id === grammarId ? " books__pick--on" : ""}`}
+              aria-pressed={b.id === grammarId}
+              disabled={switching !== null}
+              onClick={() => onGrammar(b.id)}
+            >
+              {switching === b.id ? "opening…" : b.label}
+            </button>
+          ))}
+          </div>
+        </div>
+      )}
       <div className="centered" style={{ padding: "0 0 1.2rem" }}>
         <Ring percent={overall} />
         <p>mastered across all {total} topics</p>
@@ -287,6 +327,8 @@ export function TopicSheet({
   onDrill,
   onQuestions,
   onMark,
+  elsewhere,
+  onElsewhere,
 }: {
   topic: TopicProgress;
   attempts: Attempt[];
@@ -307,6 +349,13 @@ export function TopicSheet({
   onDrill: () => void;
   onQuestions: () => void;
   onMark?: (at: string, marks: AttemptMarks) => void;
+  /**
+   * The same grammar point as the other books of the pack put it — one entry
+   * per book, already formatted, so this file learns nothing about how a
+   * reference is written.
+   */
+  elsewhere?: { grammarId: string; label: string; sections: Elsewhere[] }[];
+  onElsewhere?: (grammarId: string, sectionId: string) => void;
 }) {
   const left = topic.questions - topic.answered;
   // Nothing the preference will serve. Practising it would open a run of no
@@ -360,6 +409,36 @@ export function TopicSheet({
           All {questionCount} questions
         </button>
       </div>
+
+      {/* The same grammar point in somebody else's words. Worth having on its
+          own account — a rule that will not go in often goes in when a second
+          author puts it differently — and it costs nothing to know: the table
+          that makes the other book teachable is the table that answers this. */}
+      {elsewhere?.map((book) =>
+        book.sections.length === 0 ? null : (
+          <div className="elsewhere" key={book.grammarId}>
+            <p className="row__sub">Also explained at</p>
+            <div className="list">
+              {book.sections.map((s) => (
+                <button
+                  className="row"
+                  key={s.sectionId}
+                  onClick={() => onElsewhere?.(book.grammarId, s.sectionId)}
+                >
+                  <span className="row__main">
+                    <span className="row__title">
+                      <span className="row__ref">{s.ref}</span>
+                      {s.title}
+                    </span>
+                    <span className="row__sub">{book.label}</span>
+                  </span>
+                  <span className="row__chev">›</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ),
+      )}
 
       {attempts.length > 0 && (
         <AttemptTrail attempts={attempts} onMark={onMark} />

@@ -25,6 +25,11 @@ export interface GrammarStyle {
    * whole syllabus is someone else's work and says so.
    */
   source: { title: string; url: string; licence: string };
+  /**
+   * What to call the book where there is no room for the citation — the switch
+   * between a pack's grammars, which needs a word rather than a title page.
+   */
+  label: string;
   /** Section ids must start with this, e.g. "bn" for Bennett. */
   idPrefix: string;
   /** Rendered before a section reference, e.g. "§ ". */
@@ -448,7 +453,8 @@ export function parseProfile(raw: unknown): Profile {
   const { families, fallbackFamily } = parseFamilies(top.families, top.fallbackFamily, "profile");
 
   const grammar = fields<GrammarStyle>(top.grammar, "profile.grammar", {
-    source: "any", idPrefix: "string", refPrefix: "string", paradigmLabels: "any",
+    source: "any", label: "string", idPrefix: "string", refPrefix: "string",
+    paradigmLabels: "any",
     headingPattern: "string", headingFlags: "string", headingMaxLength: "number",
   });
   fields(grammar.source, "profile.grammar.source", {

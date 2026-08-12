@@ -1287,6 +1287,49 @@ span.status__title {
   border-bottom: 1px solid var(--line);
 }
 
+/* Which grammar the index is drawn from. Two or three books at most, so they
+   sit side by side and the whole choice is visible: a dropdown would hide the
+   fact that there is more than one way to read the language. */
+.books {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.1rem 1.1rem;
+}
+
+/* The same band the mode switch is, because it is the same kind of thing: a
+   small closed set, all of it visible, one of them on. Full `--tap` here where
+   `.modes` goes under it — this one has a sheet to itself and no icons to share
+   the line with. */
+.books__list {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--ink-sunken);
+}
+
+.books__pick {
+  min-height: var(--tap);
+  padding: 0.35rem 1.1rem;
+  color: var(--text-faint);
+  font: inherit;
+  font-size: 0.85rem;
+}
+
+.books__pick[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--gold) 16%, transparent);
+  color: var(--gold);
+}
+
+.books__pick:disabled {
+  opacity: 0.45;
+}
+
+/* The other books' sections, under the actions on a topic sheet. */
+.elsewhere {
+  padding: 0.4rem 1.1rem 0;
+}
+
 .family__head {
   width: 100%;
   display: flex;
