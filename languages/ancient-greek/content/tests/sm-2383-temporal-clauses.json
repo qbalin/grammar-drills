@@ -366,5 +366,1363 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t7",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "When the ephors heard these things, they summoned the general.",
+    "answer": "ἐπεὶ δὲ οἱ ἔφοροι ταῦτα ἤκουσαν, τὸν στρατηγὸν μετεπέμψαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "δὲ",
+     "οἱ",
+     "ἔφοροι",
+     "ταῦτα",
+     "ἤκουσαν",
+     "τὸν",
+     "στρατηγὸν",
+     "μετεπέμψαντο"
+    ]
+   },
+   {
+    "prompt": "At the moment when the sun rose, the sailors put out to sea.",
+    "answer": "ἡνίκα ὁ ἥλιος ἀνέτειλεν, οἱ ναῦται ἀνήχθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡνίκα",
+     "ὁ",
+     "ἥλιος",
+     "ἀνέτειλεν",
+     "οἱ",
+     "ναῦται",
+     "ἀνήχθησαν"
+    ]
+   },
+   {
+    "prompt": "While the assembly was deliberating, a great uproar arose.",
+    "answer": "ἐν ᾧ ἡ ἐκκλησία ἐβουλεύετο, θόρυβος μέγας ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ᾧ",
+     "ἡ",
+     "ἐκκλησία",
+     "ἐβουλεύετο",
+     "θόρυβος",
+     "μέγας",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "As soon as the herald announced the victory, the citizens rejoiced.",
+    "answer": "ἐπεὶ τάχιστα ὁ κῆρυξ τὴν νίκην ἤγγειλεν, οἱ πολῖται ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τάχιστα",
+     "ὁ",
+     "κῆρυξ",
+     "τὴν",
+     "νίκην",
+     "ἤγγειλεν",
+     "οἱ",
+     "πολῖται",
+     "ἔχαιρον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t8",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "Whenever the tyrant reminds the people of the war, they grow angry.",
+    "answer": "ὁπόταν ὁ τύραννος τὸν δῆμον τοῦ πολέμου ἀναμιμνήσκῃ, ὀργίζονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "ὁ",
+     "τύραννος",
+     "τὸν",
+     "δῆμον",
+     "τοῦ",
+     "πολέμου",
+     "ἀναμιμνήσκῃ",
+     "ὀργίζονται"
+    ]
+   },
+   {
+    "prompt": "As often as the enemy approach the walls, the guards shout.",
+    "answer": "ὁσάκις ἂν οἱ πολέμιοι τοῖς τείχεσι προσίωσιν, οἱ φύλακες βοῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁσάκις",
+     "ἂν",
+     "οἱ",
+     "πολέμιοι",
+     "τοῖς",
+     "τείχεσι",
+     "προσίωσιν",
+     "φύλακες",
+     "βοῶσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever he had conquered a city, he used to spare the inhabitants.",
+    "answer": "ὁπότε πόλεώς τινος κρατήσειεν, τῶν ἐνοικούντων ἐφείδετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "πόλεώς",
+     "τινος",
+     "κρατήσειεν",
+     "τῶν",
+     "ἐνοικούντων",
+     "ἐφείδετο"
+    ]
+   },
+   {
+    "prompt": "Whenever the young men were training, the old men used to watch.",
+    "answer": "ὁπότε οἱ νεανίαι γυμνάζοιντο, οἱ γέροντες ἐθεῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "νεανίαι",
+     "γυμνάζοιντο",
+     "γέροντες",
+     "ἐθεῶντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t9",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "Do not begin the battle before the allies arrive.",
+    "answer": "μὴ ἄρχου τῆς μάχης πρὶν ἂν οἱ σύμμαχοι παραγένωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἄρχου",
+     "τῆς",
+     "μάχης",
+     "πρὶν",
+     "ἂν",
+     "οἱ",
+     "σύμμαχοι",
+     "παραγένωνται"
+    ]
+   },
+   {
+    "prompt": "The general withdrew the army before the enemy noticed.",
+    "answer": "ὁ στρατηγὸς τὸ στράτευμα ἀπήγαγε πρὶν τοὺς πολεμίους αἰσθέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "ἀπήγαγε",
+     "πρὶν",
+     "τοὺς",
+     "πολεμίους",
+     "αἰσθέσθαι"
+    ]
+   },
+   {
+    "prompt": "They were not willing to surrender before they saw the whole force.",
+    "answer": "οὐκ ἤθελον ἐνδοῦναι πρὶν ἅπασαν τὴν δύναμιν εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἤθελον",
+     "ἐνδοῦναι",
+     "πρὶν",
+     "ἅπασαν",
+     "τὴν",
+     "δύναμιν",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "The wise man does not speak before he has considered the matter.",
+    "answer": "ὁ σοφὸς οὐ λέγει πρὶν ἂν τὸ πρᾶγμα σκέψηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "οὐ",
+     "λέγει",
+     "πρὶν",
+     "ἂν",
+     "τὸ",
+     "πρᾶγμα",
+     "σκέψηται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t10",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "We shall guard the pass until the allies' relief force arrives.",
+    "answer": "φυλάξομεν τὴν πάροδον ἕως ἂν ἡ τῶν συμμάχων βοήθεια ἔλθῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάξομεν",
+     "τὴν",
+     "πάροδον",
+     "ἕως",
+     "ἂν",
+     "ἡ",
+     "τῶν",
+     "συμμάχων",
+     "βοήθεια",
+     "ἔλθῃ"
+    ]
+   },
+   {
+    "prompt": "Wait here until I return from the market.",
+    "answer": "μένε ἐνταῦθα ἔστε ἂν ἐκ τῆς ἀγορᾶς ἐπανέλθω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μένε",
+     "ἐνταῦθα",
+     "ἔστε",
+     "ἂν",
+     "ἐκ",
+     "τῆς",
+     "ἀγορᾶς",
+     "ἐπανέλθω"
+    ]
+   },
+   {
+    "prompt": "The slaves labored until the master released them.",
+    "answer": "οἱ δοῦλοι ἐπόνουν μέχρι ὁ δεσπότης αὐτοὺς ἀφῆκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δοῦλοι",
+     "ἐπόνουν",
+     "μέχρι",
+     "ὁ",
+     "δεσπότης",
+     "αὐτοὺς",
+     "ἀφῆκεν"
+    ]
+   },
+   {
+    "prompt": "Hold the position so long as you are able.",
+    "answer": "κάτεχε τὸ χωρίον ἕως ἂν δύνῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κάτεχε",
+     "τὸ",
+     "χωρίον",
+     "ἕως",
+     "ἂν",
+     "δύνῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t11",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "After the orator had spoken, the soldiers took courage.",
+    "answer": "ἐπειδὴ ὁ ῥήτωρ εἶπεν, οἱ στρατιῶται ἐθάρρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "ὁ",
+     "ῥήτωρ",
+     "εἶπεν",
+     "οἱ",
+     "στρατιῶται",
+     "ἐθάρρησαν"
+    ]
+   },
+   {
+    "prompt": "Ever since the oligarchy was dissolved, the citizens have been fortunate.",
+    "answer": "ἐξ οὗ ἡ ὀλιγαρχία κατελύθη, οἱ πολῖται εὐτυχεῖς εἰσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξ",
+     "οὗ",
+     "ἡ",
+     "ὀλιγαρχία",
+     "κατελύθη",
+     "οἱ",
+     "πολῖται",
+     "εὐτυχεῖς",
+     "εἰσιν"
+    ]
+   },
+   {
+    "prompt": "As soon as the gates were opened, the crowd rushed in.",
+    "answer": "ὡς τάχιστα αἱ πύλαι ἀνεῴχθησαν, ὁ ὄχλος εἰσέδραμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "τάχιστα",
+     "αἱ",
+     "πύλαι",
+     "ἀνεῴχθησαν",
+     "ὁ",
+     "ὄχλος",
+     "εἰσέδραμεν"
+    ]
+   },
+   {
+    "prompt": "Since night had come, they pitched camp near the river.",
+    "answer": "ἐπειδὴ νὺξ ἐγένετο, πρὸς τῷ ποταμῷ ἐστρατοπεδεύσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "νὺξ",
+     "ἐγένετο",
+     "πρὸς",
+     "τῷ",
+     "ποταμῷ",
+     "ἐστρατοπεδεύσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t12",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "When the philosopher was teaching, then the youths listened eagerly.",
+    "answer": "ὅτε ὁ φιλόσοφος ἐδίδασκε, τότε οἱ νεανίσκοι προθύμως ἤκουον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτε",
+     "ὁ",
+     "φιλόσοφος",
+     "ἐδίδασκε",
+     "τότε",
+     "οἱ",
+     "νεανίσκοι",
+     "προθύμως",
+     "ἤκουον"
+    ]
+   },
+   {
+    "prompt": "While the fleet was being prepared, the Lacedaemonians were ravaging the land.",
+    "answer": "ἐν ᾧ ὁ στόλος παρεσκευάζετο, οἱ Λακεδαιμόνιοι τὴν χώραν ἐπόρθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ᾧ",
+     "ὁ",
+     "στόλος",
+     "παρεσκευάζετο",
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "τὴν",
+     "χώραν",
+     "ἐπόρθουν"
+    ]
+   },
+   {
+    "prompt": "Just when the king appeared, at that moment the battle ceased.",
+    "answer": "ἡνίκα ὁ βασιλεὺς ἐφάνη, ἐνταῦθα ἡ μάχη ἐπαύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡνίκα",
+     "ὁ",
+     "βασιλεὺς",
+     "ἐφάνη",
+     "ἐνταῦθα",
+     "ἡ",
+     "μάχη",
+     "ἐπαύσατο"
+    ]
+   },
+   {
+    "prompt": "Whenever the poet recited, all the listeners would fall silent.",
+    "answer": "ὁπηνίκα ὁ ποιητὴς ᾄδοι, πάντες οἱ ἀκροαταὶ ἐσιώπων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπηνίκα",
+     "ὁ",
+     "ποιητὴς",
+     "ᾄδοι",
+     "πάντες",
+     "οἱ",
+     "ἀκροαταὶ",
+     "ἐσιώπων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t13",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "At the moment when the storm arose, the sailors lowered the sail.",
+    "answer": "ἡνίκα ὁ χειμὼν ἐγένετο, οἱ ναῦται τὸ ἱστίον καθεῖλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡνίκα",
+     "ὁ",
+     "χειμὼν",
+     "ἐγένετο",
+     "οἱ",
+     "ναῦται",
+     "τὸ",
+     "ἱστίον",
+     "καθεῖλον"
+    ]
+   },
+   {
+    "prompt": "The steersman will guide the ship until the wind ceases.",
+    "answer": "ὁ κυβερνήτης τὴν ναῦν εὐθυνεῖ ἕως ἂν ὁ ἄνεμος παύσηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κυβερνήτης",
+     "τὴν",
+     "ναῦν",
+     "εὐθυνεῖ",
+     "ἕως",
+     "ἂν",
+     "ἄνεμος",
+     "παύσηται"
+    ]
+   },
+   {
+    "prompt": "As soon as we reach the harbor, we will sacrifice to Poseidon.",
+    "answer": "ἐπειδὰν εἰς τὸν λιμένα ἀφικώμεθα, τῷ Ποσειδῶνι θύσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "ἀφικώμεθα",
+     "τῷ",
+     "Ποσειδῶνι",
+     "θύσομεν"
+    ]
+   },
+   {
+    "prompt": "While the rowers were resting, the captain watched the stars.",
+    "answer": "ἐν ᾧ οἱ ἐρέται ἀνεπαύοντο, ὁ ναύαρχος τὰ ἄστρα ἐθεώρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ᾧ",
+     "οἱ",
+     "ἐρέται",
+     "ἀνεπαύοντο",
+     "ὁ",
+     "ναύαρχος",
+     "τὰ",
+     "ἄστρα",
+     "ἐθεώρει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t14",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "After the accuser had spoken, the jurors fell silent.",
+    "answer": "ἐπειδὴ ὁ κατήγορος εἶπεν, οἱ δικασταὶ ἐσίγησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "ὁ",
+     "κατήγορος",
+     "εἶπεν",
+     "οἱ",
+     "δικασταὶ",
+     "ἐσίγησαν"
+    ]
+   },
+   {
+    "prompt": "The defendant fled before the jurors cast their votes.",
+    "answer": "ὁ φεύγων ἀπέδρα πρὶν τοὺς δικαστὰς ψηφίσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "φεύγων",
+     "ἀπέδρα",
+     "πρὶν",
+     "τοὺς",
+     "δικαστὰς",
+     "ψηφίσασθαι"
+    ]
+   },
+   {
+    "prompt": "As often as the orator lied, the people grew angry.",
+    "answer": "ὁσάκις ὁ ῥήτωρ ψεύδοιτο, ὁ δῆμος ὠργίζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁσάκις",
+     "ὁ",
+     "ῥήτωρ",
+     "ψεύδοιτο",
+     "δῆμος",
+     "ὠργίζετο"
+    ]
+   },
+   {
+    "prompt": "Do not condemn the man before you hear the witnesses.",
+    "answer": "μὴ καταψηφίσησθε τοῦ ἀνδρὸς πρὶν ἂν τῶν μαρτύρων ἀκούσητε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "καταψηφίσησθε",
+     "τοῦ",
+     "ἀνδρὸς",
+     "πρὶν",
+     "ἂν",
+     "τῶν",
+     "μαρτύρων",
+     "ἀκούσητε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t15",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "When the Medes invaded Attica, then the citizens fled to the sea.",
+    "answer": "ὅτε οἱ Μῆδοι εἰς τὴν Ἀττικὴν ἐνέβαλον, τότε οἱ πολῖται εἰς τὴν θάλατταν ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτε",
+     "οἱ",
+     "Μῆδοι",
+     "εἰς",
+     "τὴν",
+     "Ἀττικὴν",
+     "ἐνέβαλον",
+     "τότε",
+     "πολῖται",
+     "θάλατταν",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "Ever since the Medes were defeated, the city has been free.",
+    "answer": "ἐξ οὗ οἱ Μῆδοι ἐνικήθησαν, ἡ πόλις ἐλευθέρα ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξ",
+     "οὗ",
+     "οἱ",
+     "Μῆδοι",
+     "ἐνικήθησαν",
+     "ἡ",
+     "πόλις",
+     "ἐλευθέρα",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "The Greeks will guard the strait until the barbarians sail away.",
+    "answer": "οἱ Ἕλληνες τὸν πορθμὸν φυλάξουσι μέχρι ἂν οἱ βάρβαροι ἀποπλεύσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "τὸν",
+     "πορθμὸν",
+     "φυλάξουσι",
+     "μέχρι",
+     "ἂν",
+     "βάρβαροι",
+     "ἀποπλεύσωσιν"
+    ]
+   },
+   {
+    "prompt": "So long as Themistocles led them, the Athenians feared nothing.",
+    "answer": "ἕως ὁ Θεμιστοκλῆς αὐτῶν ἡγεῖτο, οἱ Ἀθηναῖοι οὐδὲν ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ὁ",
+     "Θεμιστοκλῆς",
+     "αὐτῶν",
+     "ἡγεῖτο",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "οὐδὲν",
+     "ἐφοβοῦντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t16",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "As soon as the general saw the smoke, he led out the army.",
+    "answer": "ὡς τάχιστα ὁ στρατηγὸς τὸν καπνὸν εἶδεν, τὸ στράτευμα ἐξήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "τάχιστα",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸν",
+     "καπνὸν",
+     "εἶδεν",
+     "τὸ",
+     "στράτευμα",
+     "ἐξήγαγεν"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy attacked the wall, the guards hurled fire.",
+    "answer": "ὁπότε οἱ πολέμιοι τῷ τείχει προσβάλλοιεν, οἱ φύλακες πῦρ ἔβαλλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "οἱ",
+     "πολέμιοι",
+     "τῷ",
+     "τείχει",
+     "προσβάλλοιεν",
+     "φύλακες",
+     "πῦρ",
+     "ἔβαλλον"
+    ]
+   },
+   {
+    "prompt": "The besieged held out until the food gave out.",
+    "answer": "οἱ πολιορκούμενοι ἀντέσχον ἕως ὁ σῖτος ἐπέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολιορκούμενοι",
+     "ἀντέσχον",
+     "ἕως",
+     "ὁ",
+     "σῖτος",
+     "ἐπέλιπεν"
+    ]
+   },
+   {
+    "prompt": "After the walls fell, the soldiers plundered the city.",
+    "answer": "ἐπεὶ τὰ τείχη ἔπεσεν, οἱ στρατιῶται τὴν πόλιν διήρπασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τὰ",
+     "τείχη",
+     "ἔπεσεν",
+     "οἱ",
+     "στρατιῶται",
+     "τὴν",
+     "πόλιν",
+     "διήρπασαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t17",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "Whenever Socrates asked something, the young men were perplexed.",
+    "answer": "ὁπότε ὁ Σωκράτης ἐρωτῴη τι, οἱ νεανίαι ἠπόρουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ὁ",
+     "Σωκράτης",
+     "ἐρωτῴη",
+     "τι",
+     "οἱ",
+     "νεανίαι",
+     "ἠπόρουν"
+    ]
+   },
+   {
+    "prompt": "Whenever the wine is mixed, the guests sing.",
+    "answer": "ἐπειδὰν ὁ οἶνος κερασθῇ, οἱ δαιτυμόνες ᾄδουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ὁ",
+     "οἶνος",
+     "κερασθῇ",
+     "οἱ",
+     "δαιτυμόνες",
+     "ᾄδουσιν"
+    ]
+   },
+   {
+    "prompt": "At the moment when the lyre-player ceased, everyone applauded.",
+    "answer": "ἡνίκα ὁ κιθαριστὴς ἔληξεν, πάντες ἐκρότησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡνίκα",
+     "ὁ",
+     "κιθαριστὴς",
+     "ἔληξεν",
+     "πάντες",
+     "ἐκρότησαν"
+    ]
+   },
+   {
+    "prompt": "The old man departed before the symposium ended.",
+    "answer": "ὁ γέρων ἀπῆλθε πρὶν τὸ συμπόσιον τελευτῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἀπῆλθε",
+     "πρὶν",
+     "τὸ",
+     "συμπόσιον",
+     "τελευτῆσαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t18",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "Whenever spring comes, the farmers sow the fields.",
+    "answer": "ὅταν τὸ ἔαρ ἔλθῃ, οἱ γεωργοὶ τοὺς ἀγροὺς σπείρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "τὸ",
+     "ἔαρ",
+     "ἔλθῃ",
+     "οἱ",
+     "γεωργοὶ",
+     "τοὺς",
+     "ἀγροὺς",
+     "σπείρουσιν"
+    ]
+   },
+   {
+    "prompt": "So long as the sun shone, the shepherds remained on the mountain.",
+    "answer": "ἕως ὁ ἥλιος ἔλαμπεν, οἱ ποιμένες ἐν τῷ ὄρει ἔμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ὁ",
+     "ἥλιος",
+     "ἔλαμπεν",
+     "οἱ",
+     "ποιμένες",
+     "ἐν",
+     "τῷ",
+     "ὄρει",
+     "ἔμενον"
+    ]
+   },
+   {
+    "prompt": "The hunters will wait until the beast comes out of the cave.",
+    "answer": "οἱ κυνηγέται μενοῦσιν ἕως ἂν τὸ θηρίον ἐκ τοῦ σπηλαίου ἐξέλθῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κυνηγέται",
+     "μενοῦσιν",
+     "ἕως",
+     "ἂν",
+     "τὸ",
+     "θηρίον",
+     "ἐκ",
+     "τοῦ",
+     "σπηλαίου",
+     "ἐξέλθῃ"
+    ]
+   },
+   {
+    "prompt": "As soon as the rain stopped, the workers returned to the vines.",
+    "answer": "ἐπεὶ τάχιστα ὁ ὑετὸς ἐπαύσατο, οἱ ἐργάται εἰς τὰς ἀμπέλους ἐπανῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τάχιστα",
+     "ὁ",
+     "ὑετὸς",
+     "ἐπαύσατο",
+     "οἱ",
+     "ἐργάται",
+     "εἰς",
+     "τὰς",
+     "ἀμπέλους",
+     "ἐπανῆλθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t19",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "After the Athenians had conquered the barbarians, they set up a trophy.",
+    "answer": "ἐπειδὴ οἱ Ἀθηναῖοι τοὺς βαρβάρους ἐνίκησαν, τρόπαιον ἔστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "τοὺς",
+     "βαρβάρους",
+     "ἐνίκησαν",
+     "τρόπαιον",
+     "ἔστησαν"
+    ]
+   },
+   {
+    "prompt": "When Cyrus had died, the soldiers were greatly perplexed.",
+    "answer": "ἐπεὶ δὲ Κῦρος ἐτελεύτησεν, οἱ στρατιῶται σφόδρα ἠπόρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "δὲ",
+     "Κῦρος",
+     "ἐτελεύτησεν",
+     "οἱ",
+     "στρατιῶται",
+     "σφόδρα",
+     "ἠπόρησαν"
+    ]
+   },
+   {
+    "prompt": "As soon as the general arrived, he drew up the army for battle.",
+    "answer": "ἐπεὶ τάχιστα ὁ στρατηγὸς ἀφίκετο, τὸ στράτευμα εἰς μάχην παρέταξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τάχιστα",
+     "ὁ",
+     "στρατηγὸς",
+     "ἀφίκετο",
+     "τὸ",
+     "στράτευμα",
+     "εἰς",
+     "μάχην",
+     "παρέταξεν"
+    ]
+   },
+   {
+    "prompt": "After the ambassadors had spoken, the assembly deliberated for a long time.",
+    "answer": "ἐπειδὴ οἱ πρέσβεις εἶπον, ἡ ἐκκλησία πολὺν χρόνον ἐβουλεύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "οἱ",
+     "πρέσβεις",
+     "εἶπον",
+     "ἡ",
+     "ἐκκλησία",
+     "πολὺν",
+     "χρόνον",
+     "ἐβουλεύσατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t20",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "We shall remain in the city until the general sends a messenger.",
+    "answer": "μενοῦμεν ἐν τῇ πόλει ἕως ἂν ὁ στρατηγὸς ἄγγελον πέμψῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μενοῦμεν",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἕως",
+     "ἂν",
+     "ὁ",
+     "στρατηγὸς",
+     "ἄγγελον",
+     "πέμψῃ"
+    ]
+   },
+   {
+    "prompt": "The guards kept watch so long as the fire was burning.",
+    "answer": "οἱ φύλακες ἐφύλαττον ἕως τὸ πῦρ ἐκαίετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φύλακες",
+     "ἐφύλαττον",
+     "ἕως",
+     "τὸ",
+     "πῦρ",
+     "ἐκαίετο"
+    ]
+   },
+   {
+    "prompt": "Let us pursue the enemy until we reach the river.",
+    "answer": "διώκωμεν τοὺς πολεμίους μέχρι ἂν ἐπὶ τὸν ποταμὸν ἀφικώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διώκωμεν",
+     "τοὺς",
+     "πολεμίους",
+     "μέχρι",
+     "ἂν",
+     "ἐπὶ",
+     "τὸν",
+     "ποταμὸν",
+     "ἀφικώμεθα"
+    ]
+   },
+   {
+    "prompt": "He waited until his companions had crossed the bridge.",
+    "answer": "ἔμεινεν ἔστε οἱ ἑταῖροι τὴν γέφυραν διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔμεινεν",
+     "ἔστε",
+     "οἱ",
+     "ἑταῖροι",
+     "τὴν",
+     "γέφυραν",
+     "διέβησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t21",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "The soldiers fled before the enemy could surround them.",
+    "answer": "οἱ στρατιῶται ἔφυγον πρὶν τοὺς πολεμίους αὐτοὺς κυκλώσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἔφυγον",
+     "πρὶν",
+     "τοὺς",
+     "πολεμίους",
+     "αὐτοὺς",
+     "κυκλώσασθαι"
+    ]
+   },
+   {
+    "prompt": "Do not judge the case before you have heard both speakers.",
+    "answer": "μὴ κρῖνε τὴν δίκην πρὶν ἂν ἀμφοτέρων τῶν λεγόντων ἀκούσῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "κρῖνε",
+     "τὴν",
+     "δίκην",
+     "πρὶν",
+     "ἂν",
+     "ἀμφοτέρων",
+     "τῶν",
+     "λεγόντων",
+     "ἀκούσῃς"
+    ]
+   },
+   {
+    "prompt": "He would not depart before he had received the money.",
+    "answer": "οὐκ ἀπῄει πρὶν τὰ χρήματα ἐκομίσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀπῄει",
+     "πρὶν",
+     "τὰ",
+     "χρήματα",
+     "ἐκομίσατο"
+    ]
+   },
+   {
+    "prompt": "The wise man dies before he commits any shameful deed.",
+    "answer": "ὁ σοφὸς ἀποθνῄσκει πρὶν αἰσχρόν τι πρᾶξαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "ἀποθνῄσκει",
+     "πρὶν",
+     "αἰσχρόν",
+     "τι",
+     "πρᾶξαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t22",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "When night fell, the army encamped near the village.",
+    "answer": "ὅτε νὺξ ἐγένετο, τὸ στράτευμα πρὸς τῇ κώμῃ ἐστρατοπεδεύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτε",
+     "νὺξ",
+     "ἐγένετο",
+     "τὸ",
+     "στράτευμα",
+     "πρὸς",
+     "τῇ",
+     "κώμῃ",
+     "ἐστρατοπεδεύσατο"
+    ]
+   },
+   {
+    "prompt": "Whenever the king marched out, the whole army used to follow.",
+    "answer": "ὁπότε ὁ βασιλεὺς ἐξελαύνοι, πᾶν τὸ στράτευμα εἵπετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ὁ",
+     "βασιλεὺς",
+     "ἐξελαύνοι",
+     "πᾶν",
+     "τὸ",
+     "στράτευμα",
+     "εἵπετο"
+    ]
+   },
+   {
+    "prompt": "At the moment when the trumpet sounded, all fell silent.",
+    "answer": "ἡνίκα ἡ σάλπιγξ ἐσήμηνε, πάντες ἐσιώπησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡνίκα",
+     "ἡ",
+     "σάλπιγξ",
+     "ἐσήμηνε",
+     "πάντες",
+     "ἐσιώπησαν"
+    ]
+   },
+   {
+    "prompt": "Whenever Cyrus honored the brave, the others used to become more eager.",
+    "answer": "ὁπότε Κῦρος τοὺς ἀγαθοὺς τιμῷη, οἱ ἄλλοι προθυμότεροι ἐγίγνοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "Κῦρος",
+     "τοὺς",
+     "ἀγαθοὺς",
+     "τιμῷη",
+     "οἱ",
+     "ἄλλοι",
+     "προθυμότεροι",
+     "ἐγίγνοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t23",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "Whenever the enemy withdraws, we will seize the heights.",
+    "answer": "ὅταν οἱ πολέμιοι ἀναχωρῶσι, τὰ ἄκρα καταληψόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "οἱ",
+     "πολέμιοι",
+     "ἀναχωρῶσι",
+     "τὰ",
+     "ἄκρα",
+     "καταληψόμεθα"
+    ]
+   },
+   {
+    "prompt": "After you have heard the whole matter, you will pity the man.",
+    "answer": "ἐπειδὰν πᾶν τὸ πρᾶγμα ἀκούσητε, τὸν ἄνδρα ἐλεήσετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "πᾶν",
+     "τὸ",
+     "πρᾶγμα",
+     "ἀκούσητε",
+     "τὸν",
+     "ἄνδρα",
+     "ἐλεήσετε"
+    ]
+   },
+   {
+    "prompt": "Whenever you find a just man, consider him a friend.",
+    "answer": "ὅταν δίκαιον ἄνδρα εὕρῃς, φίλον αὐτὸν νόμιζε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "δίκαιον",
+     "ἄνδρα",
+     "εὕρῃς",
+     "φίλον",
+     "αὐτὸν",
+     "νόμιζε"
+    ]
+   },
+   {
+    "prompt": "As soon as the ships appear, the citizens will flee to the mountains.",
+    "answer": "ἐπειδὰν αἱ νῆες φανῶσιν, οἱ πολῖται εἰς τὰ ὄρη φεύξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "αἱ",
+     "νῆες",
+     "φανῶσιν",
+     "οἱ",
+     "πολῖται",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "φεύξονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t24",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "Ever since the treaty was made, the two cities have kept the peace.",
+    "answer": "ἐξ οὗ αἱ σπονδαὶ ἐγένοντο, αἱ δύο πόλεις εἰρήνην ἄγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξ",
+     "οὗ",
+     "αἱ",
+     "σπονδαὶ",
+     "ἐγένοντο",
+     "δύο",
+     "πόλεις",
+     "εἰρήνην",
+     "ἄγουσιν"
+    ]
+   },
+   {
+    "prompt": "While the herald was speaking, the soldiers laid down their arms.",
+    "answer": "ἐν ᾧ ὁ κῆρυξ ἔλεγεν, οἱ στρατιῶται τὰ ὅπλα κατέθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ᾧ",
+     "ὁ",
+     "κῆρυξ",
+     "ἔλεγεν",
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ὅπλα",
+     "κατέθεντο"
+    ]
+   },
+   {
+    "prompt": "As often as the poet used to sing, the whole city would listen.",
+    "answer": "ὁσάκις ὁ ποιητὴς ᾄδοι, πᾶσα ἡ πόλις ἤκουεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁσάκις",
+     "ὁ",
+     "ποιητὴς",
+     "ᾄδοι",
+     "πᾶσα",
+     "ἡ",
+     "πόλις",
+     "ἤκουεν"
+    ]
+   },
+   {
+    "prompt": "Ever since the general took command, the army has fought bravely.",
+    "answer": "ἐξ ὅτου ὁ στρατηγὸς τὴν ἀρχὴν παρέλαβεν, τὸ στράτευμα ἀνδρείως μάχεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐξ",
+     "ὅτου",
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "ἀρχὴν",
+     "παρέλαβεν",
+     "τὸ",
+     "στράτευμα",
+     "ἀνδρείως",
+     "μάχεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t25",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "After the ambassadors had returned, the council deliberated about the peace.",
+    "answer": "ἐπειδὴ οἱ πρέσβεις ἐπανῆλθον, ἡ βουλὴ περὶ τῆς εἰρήνης ἐβουλεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "οἱ",
+     "πρέσβεις",
+     "ἐπανῆλθον",
+     "ἡ",
+     "βουλὴ",
+     "περὶ",
+     "τῆς",
+     "εἰρήνης",
+     "ἐβουλεύετο"
+    ]
+   },
+   {
+    "prompt": "So long as the walls held, the citizens did not fear the siege.",
+    "answer": "ἕως τὰ τείχη ἔμενεν, οἱ πολῖται τὴν πολιορκίαν οὐκ ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "τὰ",
+     "τείχη",
+     "ἔμενεν",
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "πολιορκίαν",
+     "οὐκ",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "At the very moment when the trumpet sounded, the hoplites advanced.",
+    "answer": "ἡνίκα ἡ σάλπιγξ ἐσήμηνεν, οἱ ὁπλῖται προῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡνίκα",
+     "ἡ",
+     "σάλπιγξ",
+     "ἐσήμηνεν",
+     "οἱ",
+     "ὁπλῖται",
+     "προῆλθον"
+    ]
+   },
+   {
+    "prompt": "When the general had drawn up the army, then he exhorted the soldiers.",
+    "answer": "ἐπεὶ ὁ στρατηγὸς τὸ στράτευμα παρέταξεν, τότε τοῖς στρατιώταις παρεκελεύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "παρέταξεν",
+     "τότε",
+     "τοῖς",
+     "στρατιώταις",
+     "παρεκελεύσατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2383-temporal-clauses-t26",
+  "sectionId": "sm-2383-temporal-clauses",
+  "questions": [
+   {
+    "prompt": "Whenever the farmers finish the harvest, they hold a festival.",
+    "answer": "ἐπειδὰν οἱ γεωργοὶ τὸν ἄμητον τελέσωσιν, ἑορτὴν ἄγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "οἱ",
+     "γεωργοὶ",
+     "τὸν",
+     "ἄμητον",
+     "τελέσωσιν",
+     "ἑορτὴν",
+     "ἄγουσιν"
+    ]
+   },
+   {
+    "prompt": "We will not withdraw until the enemy abandon the heights.",
+    "answer": "οὐκ ἀναχωρήσομεν πρὶν ἂν οἱ πολέμιοι τὰ ἄκρα ἀπολίπωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀναχωρήσομεν",
+     "πρὶν",
+     "ἂν",
+     "οἱ",
+     "πολέμιοι",
+     "τὰ",
+     "ἄκρα",
+     "ἀπολίπωσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever anyone questioned him, the old man used to answer wisely.",
+    "answer": "ὁπότε τις αὐτὸν ἐρωτῴη, ὁ γέρων σοφῶς ἀπεκρίνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "τις",
+     "αὐτὸν",
+     "ἐρωτῴη",
+     "ὁ",
+     "γέρων",
+     "σοφῶς",
+     "ἀπεκρίνετο"
+    ]
+   },
+   {
+    "prompt": "The sailors waited on the shore until the storm should cease.",
+    "answer": "οἱ ναῦται ἐπὶ τῇ ἀκτῇ ἔμενον ἕως ὁ χειμὼν παύσαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "ἐπὶ",
+     "τῇ",
+     "ἀκτῇ",
+     "ἔμενον",
+     "ἕως",
+     "ὁ",
+     "χειμὼν",
+     "παύσαιτο"
+    ]
+   }
+  ]
  }
 ]
