@@ -144,14 +144,17 @@ gates.push(
 );
 
 // Short of target is a warning, not a failure: the target scales with topic
-// size and is an aspiration, where C2 is the floor. `gen-tests --only-thin`
-// takes this list as its work queue.
+// size and is an aspiration, where C2 is the floor. `gen-tests --fill` takes
+// this list as its work queue — not `--only-thin`, which is the narrower flag
+// for topics under the floor, and which selects nothing at all once C2 is
+// green. Pointing at it here sent a session to a run that reported "nothing to
+// do" over the eighty topics this very note had just listed.
 const short = perTopic.filter((r) => r.tests < r.target);
 if (short.length) {
   const worst = [...short].sort((a, b) => (b.target - b.tests) - (a.target - a.tests)).slice(0, 8);
   console.log(
     `note: ${short.length} of ${perTopic.length} topics are below their size-scaled target ` +
-      `(top up with: node --import tsx scripts/gen-tests.mjs --only-thin)\n` +
+      `(top up with: node --import tsx scripts/gen-tests.mjs --fill)\n` +
       worst.map((r) => `      ${r.topic.id.padEnd(46)} ${r.tests}/${r.target} tests`).join("\n"),
   );
 }
