@@ -530,10 +530,12 @@ export function App({ content, session, storage }: Props) {
         return;
       }
 
-      // The preference binds the two errands that go looking for something new
-      // — the walk through the book and a practice run — and not the two that
-      // are called for by a card that came due. A review is the schedule
-      // speaking, and it is owed the question it was built from.
+      // The preference binds every errand that serves a sentence, and binds
+      // them differently. The two that go looking for something new — the walk
+      // through the book and a practice run — take it whole, and a topic it
+      // empties is stepped over below. A review takes it with a floor under
+      // it: `serveReview` asks for a quotation and falls back to the topic's
+      // whole cycle rather than leave a due card with nothing to come back on.
       const quotedOnly =
         session.quotedOnly() &&
         (action.kind === "new-topic" || action.kind === "drill");
@@ -541,7 +543,9 @@ export function App({ content, session, storage }: Props) {
       const served =
         action.kind === "drill"
           ? session.servePractice(action.sectionId)
-          : session.serveTest(action.sectionId, quotedOnly);
+          : action.kind === "topic-review"
+            ? session.serveReview(action.sectionId)
+            : session.serveTest(action.sectionId, quotedOnly);
       if (!served) {
         // A topic with no tests cannot be studied; pass it so the loop moves on
         // rather than offering it again forever. But a topic with tests the
@@ -923,9 +927,10 @@ export function App({ content, session, storage }: Props) {
       setVia(null);
       setPhase({ t: "vocab-review", cardId: entry.id, revealed: false });
     } else {
-      // Never narrowed by the quoted-only preference: the schedule asked for
-      // this topic by name, and the whole of it is what there is to ask.
-      const served = session.serveTest(entry.id);
+      // Narrowed by the quoted-only preference exactly as the loop's own
+      // reviews are, floor and all: the same card reached from the pile and
+      // from the queue must come back on the same kind of question.
+      const served = session.serveReview(entry.id);
       // The sheet only offers rows it can serve, so this is the pack having
       // changed underneath. Nothing happens rather than a blank round — and,
       // unlike the loop's own pass, no grade is invented for it.

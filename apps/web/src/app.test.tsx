@@ -3562,6 +3562,51 @@ describe("the index under the quoted-only preference", () => {
   });
 
   /**
+   * The reviews, which the preference used to be exempt from.
+   *
+   * A card comes due on a topic rather than on a sentence — the round it was
+   * built from is spent, and the topic hands over whatever is next in its
+   * cycle — so there is nothing about a review that has to be generated. What
+   * there is instead is a floor: a due card that is never served stays due,
+   * and a pile that cannot go down is not a schedule.
+   */
+  describe("and the reviews it narrows too", () => {
+    const hourAgo = () => new Date(Date.now() - 60 * 60 * 1000);
+
+    it("brings a due topic back on its quotation", async () => {
+      const s = new Session(new Content(quoted, testProfile));
+      s.gradeTopic("decl1", 1, hourAgo());
+      // The cycle is left standing past the quotation, which is the only
+      // position that tells the filter from the order: unnarrowed, the next
+      // test here is the written one. Narrowed, the cycle is one test long,
+      // rolls, and comes back to Caesar.
+      mount(
+        {
+          ...s.progress(),
+          quotedOnly: true,
+          testCycles: { decl1: { seed: 1, at: 1 } },
+        },
+        quoted,
+      );
+
+      expect(screen.getByText("Gaul is divided into three parts.")).toBeDefined();
+      expect(screen.queryByText("The girl loves the rose.")).toBeNull();
+    });
+
+    it("brings one with nothing quoted back all the same", async () => {
+      const s = new Session(new Content(quoted, testProfile));
+      s.gradeTopic("decl2", 1, hourAgo());
+      mount({ ...s.progress(), quotedOnly: true }, quoted);
+
+      // Second declension has tests and no quotation among them. The walk
+      // steps over such a topic and loses nothing by it — it is still there
+      // when the preference goes off. A review that stepped over it would
+      // leave this card due for ever, and the loop naming it for ever.
+      expect(screen.getByText("The master frees the slave.")).toBeDefined();
+    });
+  });
+
+  /**
    * The order, which is a different preference from the filter and has to be
    * turnable off on its own: a student who wants the whole book still gets to
    * decide whether it arrives quoted-end-first or shuffled through.

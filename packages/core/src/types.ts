@@ -561,17 +561,21 @@ export interface Progress {
    */
   keepContext?: boolean;
   /**
-   * Whether exploring serves only questions whose answer somebody wrote.
+   * Whether a session serves only questions whose answer somebody wrote.
    *
    * Absent means no, which is what makes everything the default: a pack ships
    * quoted and generated questions together, and both are served until a
    * student says otherwise. Only a student who turned this on carries the field.
    *
-   * It binds *exploring* — the walk through the book and a practice run — and
-   * deliberately not review. A card that came due came due on the question that
-   * built it, and dropping it from the rotation because of a standing
-   * preference would quietly stop the schedule from being a schedule. Turning
-   * this on narrows what is met next, not what has already been met.
+   * It binds every errand that serves a sentence, but not identically, because
+   * what stepping over a topic costs is not the same on each. Exploring — the
+   * walk through the book and a practice run — takes the narrowing whole: a
+   * topic with nothing quoted is stepped over, and nothing is lost by it,
+   * since the topic is still there when the preference goes off. A review
+   * takes it with a floor under it (`Session.serveReview`): a topic with
+   * nothing quoted comes back on a written question rather than not coming
+   * back, because a due card that is never served stays due for ever, and a
+   * schedule that cannot empty its own pile has stopped being a schedule.
    *
    * Not to be confused with `quotedFirst`, which is an order rather than a
    * filter and therefore reaches every path, review included: nothing is
@@ -598,8 +602,10 @@ export interface Progress {
    * whole topic.
    *
    * An order, not a filter. Everything is still served, and a cycle that has
-   * handed over the last quotation goes on to the written questions rather than
-   * stopping — which is why, unlike `quotedOnly`, this reaches reviews too.
+   * handed over the last quotation goes on to the written questions rather
+   * than stopping. Reviews draw from the same cycle as the walk does, so they
+   * are led by the quotations for nothing — there is no second order to keep
+   * in step with this one.
    */
   quotedFirst?: boolean;
   updatedAt: string;
