@@ -177,6 +177,20 @@ function validate(topicId, rawTest, index, stats, seenPrompts) {
   const questions = [];
   for (const q of rawTest.questions ?? []) {
     if (!q.prompt || !q.answer) { stats.rejected.noPrompt++; continue; }
+    /*
+     * U+FFFD is not a form the reference happens not to hold. It is a character
+     * that did not survive the trip out of `claude -p`, and the word it lands
+     * in the middle of is not a word of the language at all.
+     *
+     * Four reached the shipped Greek pack before this check existed — `μ<FFFD>ὴ`
+     * three times and `<FFFD>υπὸ` once — and none of them was caught, because a
+     * single mangled token is exactly one dictionary miss and the allowance is
+     * two. So the sentence sailed through validation and a student was shown a
+     * replacement character as though it were the lesson. Attestation is the
+     * wrong instrument here: this is not a form to be believed or doubted on a
+     * budget, it is damage. Nothing legitimate carries one, so the item goes.
+     */
+    if (/�/.test(q.prompt) || /�/.test(q.answer)) { stats.rejected.mojibake++; continue; }
     if (seenPrompts.has(promptKey(q.prompt))) { stats.rejected.duplicate++; continue; }
     const vocab = (q.vocab ?? []).flatMap((v) => String(v).split(/\s+/)).filter(Boolean);
     if (vocab.length === 0) { stats.rejected.noVocab++; continue; }
@@ -242,7 +256,7 @@ async function generateTopic(topic, want, alreadyWritten = [], startIndex = 0) {
   const avoid = [...alreadyWritten];
   const stats = {
     calls: 0, rawQ: 0, keptQ: 0, retries: 0,
-    rejected: { noPrompt: 0, noVocab: 0, tooManyMisses: 0, duplicate: 0, shortTest: 0 },
+    rejected: { noPrompt: 0, mojibake: 0, noVocab: 0, tooManyMisses: 0, duplicate: 0, shortTest: 0 },
   };
   // A prompt already on disk for this topic must not come back a second time.
   const seenPrompts = new Set(alreadyWritten.map(promptKey));
@@ -371,7 +385,7 @@ if (PLAN_ONLY) {
 const run = {
   pack: profile.id,
   topics: 0, calls: 0, rawQuestions: 0, keptQuestions: 0,
-  rejected: { noPrompt: 0, noVocab: 0, tooManyMisses: 0, duplicate: 0, shortTest: 0 },
+  rejected: { noPrompt: 0, mojibake: 0, noVocab: 0, tooManyMisses: 0, duplicate: 0, shortTest: 0 },
   unverifiedForms: {},
 };
 
