@@ -368,9 +368,11 @@ export function App({ session, content, storage }: Props) {
       return;
     }
     // The quoted-only preference travels with the deck, so a deck set up on
-    // the phone arrives here already asking for it. It binds the two errands
-    // that go looking for something new, and not the ones a due card called
-    // for — a review is owed the question it was built from.
+    // the phone arrives here already asking for it. The two errands that go
+    // looking for something new take it whole, and a topic it empties is
+    // stepped over below; a review takes it with a floor under it, falling
+    // back to the whole cycle on a topic with nothing quoted rather than
+    // leaving a due card with nothing to come back on.
     const quotedOnly =
       session.quotedOnly() &&
       (action.kind === "new-topic" || action.kind === "drill");
@@ -378,7 +380,9 @@ export function App({ session, content, storage }: Props) {
     const t =
       action.kind === "drill"
         ? session.servePractice(action.sectionId)
-        : session.serveTest(action.sectionId, quotedOnly);
+        : action.kind === "topic-review"
+          ? session.serveReview(action.sectionId)
+          : session.serveTest(action.sectionId, quotedOnly);
     if (!t) {
       // A topic nothing was written for is passed so the loop moves on. A
       // topic whose tests the preference filtered out is stepped over instead:

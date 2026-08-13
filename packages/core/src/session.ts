@@ -744,6 +744,32 @@ export class Session {
     return this.record(test);
   }
 
+  /**
+   * Hand over the next test for a topic whose card has come due.
+   *
+   * The quoted-only preference reaches this as it reaches exploring, with one
+   * floor under it: a topic holding no quotation is served out of its whole
+   * cycle rather than served nothing. The two errands can afford opposite
+   * answers because stepping over costs them different things. A topic the
+   * walk steps over is still waiting — it comes back when the preference goes
+   * off, and nothing about it is lost meanwhile. A review that stepped over
+   * one would leave the card due, and due is not a state that clears itself:
+   * `next` would name that topic again on the next turn and every turn after,
+   * with the pile never going down.
+   *
+   * So the narrowed call is asked first and is allowed to decline. It declines
+   * before it writes anything — an empty filtered list returns above the cycle
+   * — so the fallback takes the cycle up exactly where it stood, and a topic
+   * with nothing quoted rotates as though the preference had never been on.
+   */
+  serveReview(sectionId: string): Test | undefined {
+    if (this.quotedOnly()) {
+      const quoted = this.serveTest(sectionId, true);
+      if (quoted) return quoted;
+    }
+    return this.serveTest(sectionId);
+  }
+
   // --- the round in flight ---------------------------------------------------
 
   /**

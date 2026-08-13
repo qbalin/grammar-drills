@@ -145,15 +145,14 @@ export function SettingsSheet({
 
       <label className="field field--check">
         <input type="checkbox" checked={quotedOnly} onChange={onQuotedOnly} />
-        <span className="field__label">
-          Only show attested classical quotes in <em>Explore</em> mode
-        </span>
+        <span className="field__label">Only show attested classical quotes</span>
       </label>
       <p className="field__hint">
         Tests questions and answers are AI generated as well as sourced from
-        ancient authors. Tick this box if you only want to see attested classical
-        quotes. Benefit: the latin is pure and attested. Drawback: some topics
-        may be very thin or lack questions altogether.
+        ancient authors. Tick this box if you want to only see attested classical
+        quotes (some topics that do not have any classical quotes will still show
+        AI generated tests). Benefit: the latin is pure and attested. Drawback:
+        some topics may be very thin or lack questions altogether.
       </p>
 
       {/* Disabled under the preference above rather than hidden: with only

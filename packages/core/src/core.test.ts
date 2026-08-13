@@ -1699,13 +1699,42 @@ describe("exploring only what somebody wrote", () => {
     expect([...served].sort()).toEqual(["q1-q1", "q1-q2"]);
   });
 
-  it("leaves review alone: a due card comes back on the question that built it", () => {
+  it("serves review the whole bank until a student says otherwise", () => {
+    const s = session();
+    const served = new Set<string>();
+    for (let i = 0; i < 12; i++) served.add(s.serveReview("q1")!.id);
+    expect(served.size).toBe(4);
+  });
+
+  it("brings a due topic back on a quotation when it has any", () => {
     const s = session();
     s.setQuotedOnly(true);
-    // Review calls without the flag, and must still see the whole bank.
+    // Well past the two quoted tests, so the cycle rolls several times: a
+    // review that fell through to the fallback on the roll would leak a
+    // generated test here.
     const served = new Set<string>();
-    for (let i = 0; i < 12; i++) served.add(s.serveTest("q1")!.id);
-    expect(served.size).toBe(4);
+    for (let i = 0; i < 20; i++) served.add(s.serveReview("q1")!.id);
+    expect([...served].sort()).toEqual(["q1-q1", "q1-q2"]);
+  });
+
+  it("brings one back on a written question rather than not at all", () => {
+    const s = session();
+    s.setQuotedOnly(true);
+    // Nothing quoted for q2, and its card is due. Exploring steps over such a
+    // topic and loses nothing by it; a review that stepped over it would leave
+    // the card due for ever and the queue naming it for ever.
+    expect(s.serveTest("q2", true)).toBeUndefined();
+    expect(s.serveReview("q2")!.id).toBe("q2-t1");
+  });
+
+  it("leaves the cycle where it stood when the narrow call declines", () => {
+    const s = session();
+    s.setQuotedOnly(true);
+    // The declined call must return above the cycle rather than write a
+    // rotation of its own: one serve is one step, not two, so nothing is
+    // skipped on a topic served entirely by the fallback.
+    s.serveReview("q2");
+    expect(s.progress().testCycles.q2).toEqual({ seed: expect.any(Number), at: 1 });
   });
 
   it("says nothing rather than something generated, and owns up to having tests", () => {
@@ -1809,6 +1838,27 @@ describe("quoted first, then the rest, then shuffled again", () => {
     expect([...cycle.slice(0, 12)].sort()).toEqual([...QUOTED].sort());
     expect([...cycle.slice(12)].sort()).toEqual([...WRITTEN].sort());
     expect(new Set(cycle).size).toBe(18);
+  });
+
+  it("leads a review with the quotations too, out of the one cycle", () => {
+    // The preference here is the order, not the filter: the review path takes
+    // its place in the same cycle the walk does, so a due card meets the
+    // topic's quotations before any written sentence of it. Asserted rather
+    // than inherited — it is what a student ticking the second box asks for,
+    // and reviews used to be exempt from the first.
+    const s = session();
+    const cycle = Array.from({ length: 18 }, () => s.serveReview("big")!.id);
+    expect([...cycle.slice(0, 12)].sort()).toEqual([...QUOTED].sort());
+    expect(new Set(cycle).size).toBe(18);
+  });
+
+  it("shuffles a review in with the rest for a student who asked for that", () => {
+    const s = session({ ...emptyProgress(), quotedFirst: false, testCycles: { big: { seed: 1, at: 0 } } });
+    const cycle = Array.from({ length: 18 }, () => s.serveReview("big")!.id);
+    expect(new Set(cycle).size).toBe(18);
+    const lastQuoted = cycle.findLastIndex((id) => QUOTED.includes(id));
+    const firstWritten = cycle.findIndex((id) => WRITTEN.includes(id));
+    expect(firstWritten).toBeLessThan(lastQuoted);
   });
 
   it("comes back round to the quotations rather than stopping", () => {
