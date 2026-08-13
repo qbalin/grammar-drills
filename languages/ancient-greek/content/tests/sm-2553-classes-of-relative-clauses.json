@@ -586,5 +586,1227 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t9",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "The soldiers praised the general who led them safely home.",
+    "answer": "οἱ στρατιῶται τὸν στρατηγὸν ἐπῄνεσαν ὃς αὐτοὺς ἀσφαλῶς οἴκαδε ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐπῄνεσαν",
+     "ὃς",
+     "αὐτοὺς",
+     "ἀσφαλῶς",
+     "οἴκαδε",
+     "ἤγαγεν"
+    ]
+   },
+   {
+    "prompt": "Here is a friend, to whom let us give a share of the counsel.",
+    "answer": "πάρεστιν ὅδε φίλος, ᾧ μεταδῶμεν τῆς βουλῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάρεστιν",
+     "ὅδε",
+     "φίλος",
+     "ᾧ",
+     "μεταδῶμεν",
+     "τῆς",
+     "βουλῆς"
+    ]
+   },
+   {
+    "prompt": "They had spears such as a man could scarcely carry.",
+    "answer": "δόρατα εἶχον οἷα ἀνὴρ μόλις ἂν φέροι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δόρατα",
+     "εἶχον",
+     "οἷα",
+     "ἀνὴρ",
+     "μόλις",
+     "ἂν",
+     "φέροι"
+    ]
+   },
+   {
+    "prompt": "I will describe the journey to you, which do you inscribe in your memory.",
+    "answer": "φράσω σοι τὴν ὁδόν, ἣν σὺ ἐν τῇ μνήμῃ ἔγγραψον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φράσω",
+     "σοι",
+     "τὴν",
+     "ὁδόν",
+     "ἣν",
+     "σὺ",
+     "ἐν",
+     "τῇ",
+     "μνήμῃ",
+     "ἔγγραψον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t10",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "They sent heralds who will announce the victory to the citizens.",
+    "answer": "ἔπεμψαν κήρυκας οἳ τὴν νίκην τοῖς πολίταις ἀγγελοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔπεμψαν",
+     "κήρυκας",
+     "οἳ",
+     "τὴν",
+     "νίκην",
+     "τοῖς",
+     "πολίταις",
+     "ἀγγελοῦσιν"
+    ]
+   },
+   {
+    "prompt": "We need an ambassador who will persuade the allies to help.",
+    "answer": "δεόμεθα πρεσβευτοῦ ὅστις τοὺς συμμάχους πείσει βοηθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεόμεθα",
+     "πρεσβευτοῦ",
+     "ὅστις",
+     "τοὺς",
+     "συμμάχους",
+     "πείσει",
+     "βοηθεῖν"
+    ]
+   },
+   {
+    "prompt": "Choose men who will guard the walls by night.",
+    "answer": "ἕλεσθε ἄνδρας οἳ τὰ τείχη νυκτὸς φυλάξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕλεσθε",
+     "ἄνδρας",
+     "οἳ",
+     "τὰ",
+     "τείχη",
+     "νυκτὸς",
+     "φυλάξουσιν"
+    ]
+   },
+   {
+    "prompt": "I will hide the gold where no one will find it.",
+    "answer": "κρύψω τὸν χρυσὸν ἔνθα μή τις αὐτὸν εὑρήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κρύψω",
+     "τὸν",
+     "χρυσὸν",
+     "ἔνθα",
+     "μή",
+     "τις",
+     "αὐτὸν",
+     "εὑρήσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t11",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "You are doing a terrible thing, in that you abandon your friends in danger.",
+    "answer": "δεινὸν ποιεῖς, ὃς τοὺς φίλους ἐν κινδύνῳ ἐγκαταλείπεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινὸν",
+     "ποιεῖς",
+     "ὃς",
+     "τοὺς",
+     "φίλους",
+     "ἐν",
+     "κινδύνῳ",
+     "ἐγκαταλείπεις"
+    ]
+   },
+   {
+    "prompt": "I admire the general, who conquered so many enemies with few men.",
+    "answer": "θαυμάζω τὸν στρατηγόν, ὃς τοσούτους πολεμίους ὀλίγοις ἐνίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "τὸν",
+     "στρατηγόν",
+     "ὃς",
+     "τοσούτους",
+     "πολεμίους",
+     "ὀλίγοις",
+     "ἐνίκησεν"
+    ]
+   },
+   {
+    "prompt": "We are grateful to the god, who saved the city from slavery.",
+    "answer": "χάριν ἴσμεν τῷ θεῷ, ὃς τὴν πόλιν ἐκ δουλείας ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χάριν",
+     "ἴσμεν",
+     "τῷ",
+     "θεῷ",
+     "ὃς",
+     "τὴν",
+     "πόλιν",
+     "ἐκ",
+     "δουλείας",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "You are foolish, in that you trust those who have often deceived you.",
+    "answer": "ἀνόητος εἶ, ὅστις τοῖς πολλάκις σε ἐξαπατήσασιν πιστεύεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀνόητος",
+     "εἶ",
+     "ὅστις",
+     "τοῖς",
+     "πολλάκις",
+     "σε",
+     "ἐξαπατήσασιν",
+     "πιστεύεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t12",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Who is so unjust that he would not pity those who suffer?",
+    "answer": "τίς οὕτως ἄδικός ἐστιν ὃς οὐκ ἂν τοὺς πάσχοντας ἐλεήσειεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὕτως",
+     "ἄδικός",
+     "ἐστιν",
+     "ὃς",
+     "οὐκ",
+     "ἂν",
+     "τοὺς",
+     "πάσχοντας",
+     "ἐλεήσειεν"
+    ]
+   },
+   {
+    "prompt": "There is no one who would not admire such courage.",
+    "answer": "οὐκ ἔστιν ὅστις οὐκ ἂν τοιαύτην ἀνδρείαν θαυμάσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστιν",
+     "ὅστις",
+     "ἂν",
+     "τοιαύτην",
+     "ἀνδρείαν",
+     "θαυμάσειεν"
+    ]
+   },
+   {
+    "prompt": "He was such a leader that no one could blame him.",
+    "answer": "τοιοῦτος ἦν ἡγεμὼν ὃν οὐδεὶς ἂν μέμψαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιοῦτος",
+     "ἦν",
+     "ἡγεμὼν",
+     "ὃν",
+     "οὐδεὶς",
+     "ἂν",
+     "μέμψαιτο"
+    ]
+   },
+   {
+    "prompt": "There is no one who does not fear the gods.",
+    "answer": "οὐκ ἔστιν ὅστις τοὺς θεοὺς οὐ φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστιν",
+     "ὅστις",
+     "τοὺς",
+     "θεοὺς",
+     "οὐ",
+     "φοβεῖται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t13",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Whoever loves wisdom is happy.",
+    "answer": "ὅστις ἂν σοφίαν φιλῇ εὐδαίμων ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἂν",
+     "σοφίαν",
+     "φιλῇ",
+     "εὐδαίμων",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Whoever betrays the city will be punished.",
+    "answer": "ὃς ἂν τὴν πόλιν προδῷ δίκην δώσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃς",
+     "ἂν",
+     "τὴν",
+     "πόλιν",
+     "προδῷ",
+     "δίκην",
+     "δώσει"
+    ]
+   },
+   {
+    "prompt": "Whatever the general commands, that the soldiers do eagerly.",
+    "answer": "ὅ τι ἂν ὁ στρατηγὸς κελεύῃ, τοῦτο οἱ στρατιῶται προθύμως ποιοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "ἂν",
+     "ὁ",
+     "στρατηγὸς",
+     "κελεύῃ",
+     "τοῦτο",
+     "οἱ",
+     "στρατιῶται",
+     "προθύμως",
+     "ποιοῦσιν"
+    ]
+   },
+   {
+    "prompt": "Whomever you send, him the enemy will kill.",
+    "answer": "ὃν ἂν πέμψῃς, τοῦτον οἱ πολέμιοι ἀποκτενοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃν",
+     "ἂν",
+     "πέμψῃς",
+     "τοῦτον",
+     "οἱ",
+     "πολέμιοι",
+     "ἀποκτενοῦσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t14",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Whoever should honor the gods would be dear to them.",
+    "answer": "ὅστις τοὺς θεοὺς τιμῴη, φίλος ἂν αὐτοῖς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῴη",
+     "φίλος",
+     "ἂν",
+     "αὐτοῖς",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "Whomever the king trusted, to him he used to give gifts.",
+    "answer": "ὅτῳ ὁ βασιλεὺς πιστεύοι, τούτῳ δῶρα ἐδίδου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅτῳ",
+     "ὁ",
+     "βασιλεὺς",
+     "πιστεύοι",
+     "τούτῳ",
+     "δῶρα",
+     "ἐδίδου"
+    ]
+   },
+   {
+    "prompt": "Whoever did not fear the laws would not now be a good citizen.",
+    "answer": "ὅστις τοὺς νόμους μὴ ἐφοβεῖτο, οὐκ ἂν νῦν ἀγαθὸς πολίτης ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τοὺς",
+     "νόμους",
+     "μὴ",
+     "ἐφοβεῖτο",
+     "οὐκ",
+     "ἂν",
+     "νῦν",
+     "ἀγαθὸς",
+     "πολίτης",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "Whoever should flee the battle would justly be called a coward.",
+    "answer": "ὅστις τὴν μάχην φεύγοι, δικαίως ἂν δειλὸς καλοῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τὴν",
+     "μάχην",
+     "φεύγοι",
+     "δικαίως",
+     "ἂν",
+     "δειλὸς",
+     "καλοῖτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t15",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "The enemy approaching, the general sent scouts who would spy out the camp.",
+    "answer": "τῶν πολεμίων προσιόντων, ὁ στρατηγὸς κατασκόπους ἔπεμψεν οἳ τὸ στρατόπεδον κατοπτεύσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "προσιόντων",
+     "ὁ",
+     "στρατηγός",
+     "κατασκόπους",
+     "ἔπεμψεν",
+     "οἵ",
+     "τό",
+     "στρατόπεδον",
+     "κατοπτεύσουσιν"
+    ]
+   },
+   {
+    "prompt": "Being hungry, they were seeking a place from which they would provision themselves.",
+    "answer": "πεινῶντες χωρίον ἐζήτουν ὅθεν ἐπισιτιοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πεινῶντες",
+     "χωρίον",
+     "ἐζήτουν",
+     "ὅθεν",
+     "ἐπισιτιοῦνται"
+    ]
+   },
+   {
+    "prompt": "We must find a guide who will lead us through the mountains by night.",
+    "answer": "δεῖ ἡμᾶς ἡγεμόνα εὑρεῖν ὃς ἡμᾶς νυκτὸς διὰ τῶν ὀρῶν ἄξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "ἡμᾶς",
+     "ἡγεμόνα",
+     "εὑρεῖν",
+     "ὅς",
+     "νυκτός",
+     "διά",
+     "τῶν",
+     "ὀρῶν",
+     "ἄξει"
+    ]
+   },
+   {
+    "prompt": "The war having begun, the city needs men who will guard the long walls.",
+    "answer": "τοῦ πολέμου ἀρξαμένου, ἡ πόλις ἀνδρῶν δεῖται οἳ τὰ μακρὰ τείχη φυλάξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "ἀρξαμένου",
+     "ἡ",
+     "πόλις",
+     "ἀνδρῶν",
+     "δεῖται",
+     "οἵ",
+     "τά",
+     "μακρά",
+     "τείχη",
+     "φυλάξουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t16",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "I blame the general, who abandoned the wounded soldiers in the danger.",
+    "answer": "μέμφομαι τῷ στρατηγῷ, ὃς τοὺς τετρωμένους στρατιώτας ἐν τῷ κινδύνῳ ἐγκατέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμφομαι",
+     "τῷ",
+     "στρατηγῷ",
+     "ὅς",
+     "τούς",
+     "τετρωμένους",
+     "στρατιώτας",
+     "ἐν",
+     "κινδύνῳ",
+     "ἐγκατέλιπεν"
+    ]
+   },
+   {
+    "prompt": "You do a strange thing, in that you fear those weaker than yourself.",
+    "answer": "θαυμαστὸν ποιεῖς, ὃς τοὺς σεαυτοῦ ἀσθενεστέρους φοβῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμαστόν",
+     "ποιεῖς",
+     "ὅς",
+     "τούς",
+     "σεαυτοῦ",
+     "ἀσθενεστέρους",
+     "φοβῇ"
+    ]
+   },
+   {
+    "prompt": "They praised the old man, who alone had told the truth.",
+    "answer": "τὸν γέροντα ἐπῄνεσαν, ὃς μόνος τὰ ἀληθῆ εἰρήκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τόν",
+     "γέροντα",
+     "ἐπῄνεσαν",
+     "ὅς",
+     "μόνος",
+     "τά",
+     "ἀληθῆ",
+     "εἰρήκειν"
+    ]
+   },
+   {
+    "prompt": "I marvel at the judge, who put the man to death untried.",
+    "answer": "θαυμάζω τὸν δικαστήν, ὃς τὸν ἄνδρα ἄκριτον ἀπέκτεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμάζω",
+     "τόν",
+     "δικαστήν",
+     "ὅς",
+     "ἄνδρα",
+     "ἄκριτον",
+     "ἀπέκτεινεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t17",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Who is so foolish that he does not honor his parents?",
+    "answer": "τίς οὕτως ἀνόητός ἐστιν ὅστις οὐ τοὺς γονέας τιμᾷ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὕτως",
+     "ἀνόητος",
+     "ἐστιν",
+     "ὅστις",
+     "οὐ",
+     "τούς",
+     "γονέας",
+     "τιμᾷ"
+    ]
+   },
+   {
+    "prompt": "There is no one who does not fear death.",
+    "answer": "οὐκ ἔστιν οὐδεὶς ὅστις οὐ τὸν θάνατον φοβεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστιν",
+     "οὐδείς",
+     "ὅστις",
+     "οὐ",
+     "τόν",
+     "θάνατον",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "Who is so bold that he does not fear the wounded lion?",
+    "answer": "τίς οὕτω θρασύς ἐστιν ὃς τὸν τετρωμένον λέοντα οὐ φοβεῖται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὕτω",
+     "θρασύς",
+     "ἐστιν",
+     "ὅς",
+     "τόν",
+     "τετρωμένον",
+     "λέοντα",
+     "οὐ",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "There is no one who would not despise the coward.",
+    "answer": "οὐκ ἔστιν ὅστις οὐκ ἂν τοῦ δειλοῦ καταφρονήσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστιν",
+     "ὅστις",
+     "ἄν",
+     "τοῦ",
+     "δειλοῦ",
+     "καταφρονήσειεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t18",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Whoever flees from toils will never become good.",
+    "answer": "ὅστις ἂν τοὺς πόνους φεύγῃ, οὐδέποτε ἀγαθὸς γενήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἄν",
+     "τούς",
+     "πόνους",
+     "φεύγῃ",
+     "οὐδέποτε",
+     "ἀγαθός",
+     "γενήσεται"
+    ]
+   },
+   {
+    "prompt": "Whatever the ruler commands, that the citizens do gladly.",
+    "answer": "ὅ τι ἂν ὁ ἄρχων κελεύῃ, τοῦτο οἱ πολῖται ἡδέως ποιοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "ἄν",
+     "ὁ",
+     "ἄρχων",
+     "κελεύῃ",
+     "τοῦτο",
+     "οἱ",
+     "πολῖται",
+     "ἡδέως",
+     "ποιοῦσιν"
+    ]
+   },
+   {
+    "prompt": "Whoever does violence to a suppliant will be hated by the gods.",
+    "answer": "ὅστις ἂν τὸν ἱκέτην βιάζηται, ὑπὸ τῶν θεῶν μισηθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἄν",
+     "τόν",
+     "ἱκέτην",
+     "βιάζηται",
+     "ὑπό",
+     "τῶν",
+     "θεῶν",
+     "μισηθήσεται"
+    ]
+   },
+   {
+    "prompt": "Whatever the laws enjoin, that we must obey.",
+    "answer": "ὅ τι ἂν οἱ νόμοι προστάττωσι, τούτῳ ἡμᾶς πείθεσθαι δεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "ἄν",
+     "οἱ",
+     "νόμοι",
+     "προστάττωσι",
+     "τούτῳ",
+     "ἡμᾶς",
+     "πείθεσθαι",
+     "δεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t19",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Whoever spoke the truth, him the people used to trust.",
+    "answer": "ὅστις τὰ ἀληθῆ λέγοι, τούτῳ ὁ δῆμος ἐπίστευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τά",
+     "ἀληθῆ",
+     "λέγοι",
+     "τούτῳ",
+     "ὁ",
+     "δῆμος",
+     "ἐπίστευεν"
+    ]
+   },
+   {
+    "prompt": "Whatever the teacher taught, the children would remember.",
+    "answer": "ὅ τι ὁ διδάσκαλος διδάσκοι, τούτου οἱ παῖδες ἐμέμνηντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "ὁ",
+     "διδάσκαλος",
+     "διδάσκοι",
+     "τούτου",
+     "οἱ",
+     "παῖδες",
+     "ἐμέμνηντο"
+    ]
+   },
+   {
+    "prompt": "Whoever should betray the city would justly die.",
+    "answer": "ὅστις τὴν πόλιν προδοίη, δικαίως ἂν ἀποθάνοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τήν",
+     "πόλιν",
+     "προδοίη",
+     "δικαίως",
+     "ἄν",
+     "ἀποθάνοι"
+    ]
+   },
+   {
+    "prompt": "Whoever should denounce the malefactor would receive a reward.",
+    "answer": "ὅστις τὸν κακοῦργον ἀπογράψειεν, μισθὸν ἂν λάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τόν",
+     "κακοῦργον",
+     "ἀπογράψειεν",
+     "μισθόν",
+     "ἄν",
+     "λάβοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t20",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "These are the things which the wise always pursue.",
+    "answer": "ταῦτά ἐστιν ἃ οἱ σοφοὶ ἀεὶ διώκουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "ἐστιν",
+     "ἅ",
+     "οἱ",
+     "σοφοί",
+     "ἀεί",
+     "διώκουσιν"
+    ]
+   },
+   {
+    "prompt": "There is no way in which you will escape the notice of the gods.",
+    "answer": "οὐκ ἔστιν ὅπως τοὺς θεοὺς λήσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστιν",
+     "ὅπως",
+     "τούς",
+     "θεούς",
+     "λήσεις"
+    ]
+   },
+   {
+    "prompt": "He is seeking allies who will share his dangers with him.",
+    "answer": "συμμάχους ζητεῖ οἳ τῶν κινδύνων αὐτῷ κοινωνήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμμάχους",
+     "ζητεῖ",
+     "οἵ",
+     "τῶν",
+     "κινδύνων",
+     "αὐτῷ",
+     "κοινωνήσουσιν"
+    ]
+   },
+   {
+    "prompt": "Honor the altars at which our ancestors used to sacrifice.",
+    "answer": "τίμα τοὺς βωμοὺς πρὸς οἷς οἱ πρόγονοι ἔθυον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίμα",
+     "τούς",
+     "βωμούς",
+     "πρός",
+     "οἷς",
+     "οἱ",
+     "πρόγονοι",
+     "ἔθυον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t21",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "The judges praised the poem which the young man composed.",
+    "answer": "οἱ κριταὶ τὸ ποίημα ὃ ὁ νεανίας ἐποίησεν ἐπῄνεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "κριταὶ",
+     "τὸ",
+     "ποίημα",
+     "ὃ",
+     "ὁ",
+     "νεανίας",
+     "ἐποίησεν",
+     "ἐπῄνεσαν"
+    ]
+   },
+   {
+    "prompt": "These are the words which the orator spoke in the assembly.",
+    "answer": "οὗτοί εἰσιν οἱ λόγοι οὓς ὁ ῥήτωρ ἐν τῇ ἐκκλησίᾳ εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοί",
+     "εἰσιν",
+     "οἱ",
+     "λόγοι",
+     "οὓς",
+     "ὁ",
+     "ῥήτωρ",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "I fear the punishment which awaits the unjust.",
+    "answer": "φοβοῦμαι τὴν ζημίαν ἣ τοὺς ἀδίκους μένει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "τὴν",
+     "ζημίαν",
+     "ἣ",
+     "τοὺς",
+     "ἀδίκους",
+     "μένει"
+    ]
+   },
+   {
+    "prompt": "Here is the stranger, to whom let us give a share of the food.",
+    "answer": "ὅδε πάρεστιν ὁ ξένος, ᾧ μεταδῶμεν τοῦ σίτου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅδε",
+     "πάρεστιν",
+     "ὁ",
+     "ξένος",
+     "ᾧ",
+     "μεταδῶμεν",
+     "τοῦ",
+     "σίτου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t22",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "The enemy attacking, we must send messengers who will ask the allies for aid.",
+    "answer": "τῶν πολεμίων προσβαλλόντων, δεῖ πέμπειν ἀγγέλους οἳ βοήθειαν παρὰ τῶν συμμάχων αἰτήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "προσβαλλόντων",
+     "δεῖ",
+     "πέμπειν",
+     "ἀγγέλους",
+     "οἳ",
+     "βοήθειαν",
+     "παρὰ",
+     "συμμάχων",
+     "αἰτήσουσιν"
+    ]
+   },
+   {
+    "prompt": "The war beginning, the general chose soldiers who would guard the wall.",
+    "answer": "τοῦ πολέμου ἀρχομένου, ὁ στρατηγὸς εἵλετο στρατιώτας οἳ τὸ τεῖχος φυλάξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "ἀρχομένου",
+     "ὁ",
+     "στρατηγὸς",
+     "εἵλετο",
+     "στρατιώτας",
+     "οἳ",
+     "τὸ",
+     "τεῖχος",
+     "φυλάξουσιν"
+    ]
+   },
+   {
+    "prompt": "They needed food with which they would feed the army.",
+    "answer": "ἐδέοντο σίτου ᾧ τὸ στράτευμα θρέψουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδέοντο",
+     "σίτου",
+     "ᾧ",
+     "τὸ",
+     "στράτευμα",
+     "θρέψουσιν"
+    ]
+   },
+   {
+    "prompt": "Send someone who will lead the way for the strangers.",
+    "answer": "πέμψον τινὰ ὃς τοῖς ξένοις τὴν ὁδὸν ἡγήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμψον",
+     "τινὰ",
+     "ὃς",
+     "τοῖς",
+     "ξένοις",
+     "τὴν",
+     "ὁδὸν",
+     "ἡγήσεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t23",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "You do a strange thing, in that you help the wicked.",
+    "answer": "θαυμαστὸν ποιεῖς, ὃς τοῖς πονηροῖς βοηθεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "θαυμαστὸν",
+     "ποιεῖς",
+     "ὃς",
+     "τοῖς",
+     "πονηροῖς",
+     "βοηθεῖς"
+    ]
+   },
+   {
+    "prompt": "I find fault with the young man, who indeed scorned his teachers.",
+    "answer": "μέμφομαι τὸν νεανίαν, ὅστις γε τῶν διδασκάλων κατεφρόνησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμφομαι",
+     "τὸν",
+     "νεανίαν",
+     "ὅστις",
+     "γε",
+     "τῶν",
+     "διδασκάλων",
+     "κατεφρόνησεν"
+    ]
+   },
+   {
+    "prompt": "Happy is the city, which has just citizens.",
+    "answer": "εὐδαίμων ἡ πόλις, ἥτις δικαίους πολίτας ἔχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐδαίμων",
+     "ἡ",
+     "πόλις",
+     "ἥτις",
+     "δικαίους",
+     "πολίτας",
+     "ἔχει"
+    ]
+   },
+   {
+    "prompt": "I admire the soldiers, who, though wounded, did not flee from the danger.",
+    "answer": "ἄγαμαι τοὺς στρατιώτας, οἳ καίπερ τετρωμένοι τὸν κίνδυνον οὐκ ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄγαμαι",
+     "τοὺς",
+     "στρατιώτας",
+     "οἳ",
+     "καίπερ",
+     "τετρωμένοι",
+     "τὸν",
+     "κίνδυνον",
+     "οὐκ",
+     "ἔφυγον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t24",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Who is so impious that he does not fear the laws?",
+    "answer": "τίς οὕτως ἀνόσιός ἐστιν ὅστις τοὺς νόμους οὐ φοβεῖται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὕτως",
+     "ἀνόσιός",
+     "ἐστιν",
+     "ὅστις",
+     "τοὺς",
+     "νόμους",
+     "οὐ",
+     "φοβεῖται"
+    ]
+   },
+   {
+    "prompt": "There is no one who does not desire happiness.",
+    "answer": "οὐδείς ἐστιν ὅστις οὐκ ἐπιθυμεῖ εὐδαιμονίας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδείς",
+     "ἐστιν",
+     "ὅστις",
+     "οὐκ",
+     "ἐπιθυμεῖ",
+     "εὐδαιμονίας"
+    ]
+   },
+   {
+    "prompt": "There is no way you will regain your former strength.",
+    "answer": "οὐκ ἔστιν ὅπως τὴν προτέραν ἰσχὺν αὖθις κτήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔστιν",
+     "ὅπως",
+     "τὴν",
+     "προτέραν",
+     "ἰσχὺν",
+     "αὖθις",
+     "κτήσῃ"
+    ]
+   },
+   {
+    "prompt": "Who is so strong that he is able to carry these spears?",
+    "answer": "τίς οὕτως ἰσχυρός ἐστιν ὅστις ταῦτα τὰ δόρατα φέρειν δύναται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίς",
+     "οὕτως",
+     "ἰσχυρός",
+     "ἐστιν",
+     "ὅστις",
+     "ταῦτα",
+     "τὰ",
+     "δόρατα",
+     "φέρειν",
+     "δύναται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t25",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Whoever obeys the laws of the city lives without fear.",
+    "answer": "ὃς ἂν τοῖς τῆς πόλεως νόμοις πείθηται, ἀδεῶς ζῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃς",
+     "ἂν",
+     "τοῖς",
+     "τῆς",
+     "πόλεως",
+     "νόμοις",
+     "πείθηται",
+     "ἀδεῶς",
+     "ζῇ"
+    ]
+   },
+   {
+    "prompt": "Whatever the deity sends, the wise man bears easily.",
+    "answer": "ὅ τι ἂν τὸ δαιμόνιον πέμπῃ, ὁ σοφὸς ῥᾳδίως φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "ἂν",
+     "τὸ",
+     "δαιμόνιον",
+     "πέμπῃ",
+     "ὁ",
+     "σοφὸς",
+     "ῥᾳδίως",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "Whoever wishes to be honored by the citizens will toil much.",
+    "answer": "ὃς ἂν ὑπὸ τῶν πολιτῶν βούληται τιμᾶσθαι, πολλὰ πονήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃς",
+     "ἂν",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "βούληται",
+     "τιμᾶσθαι",
+     "πολλὰ",
+     "πονήσει"
+    ]
+   },
+   {
+    "prompt": "Whoever should betray the city, having taken bribes, would be hated by all.",
+    "answer": "ὅστις τὴν πόλιν προδοίη δῶρα λαβών, ὑπὸ πάντων ἂν μισοῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τὴν",
+     "πόλιν",
+     "προδοίη",
+     "δῶρα",
+     "λαβών",
+     "ὑπὸ",
+     "πάντων",
+     "ἂν",
+     "μισοῖτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2553-classes-of-relative-clauses-t26",
+  "sectionId": "sm-2553-classes-of-relative-clauses",
+  "questions": [
+   {
+    "prompt": "Whatever the king ordered, the servants, fearing blows, used to do.",
+    "answer": "ὅ τι ὁ βασιλεὺς κελεύοι, οἱ θεράποντες τὰς πληγὰς φοβούμενοι ἐποίουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "ὁ",
+     "βασιλεὺς",
+     "κελεύοι",
+     "οἱ",
+     "θεράποντες",
+     "τὰς",
+     "πληγὰς",
+     "φοβούμενοι",
+     "ἐποίουν"
+    ]
+   },
+   {
+    "prompt": "Whatever he had, he would gladly give to his friends — but in fact he has nothing.",
+    "answer": "ὅ τι εἶχεν, ἡδέως ἂν τοῖς φίλοις ἐδίδου· νῦν δὲ οὐδὲν ἔχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅ",
+     "τι",
+     "εἶχεν",
+     "ἡδέως",
+     "ἂν",
+     "τοῖς",
+     "φίλοις",
+     "ἐδίδου",
+     "νῦν",
+     "δὲ",
+     "οὐδὲν",
+     "ἔχει"
+    ]
+   },
+   {
+    "prompt": "We need a law of such a kind by which the tyrants will be put down.",
+    "answer": "δεῖ νόμου τοιούτου ᾧ οἱ τύραννοι καταλυθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "νόμου",
+     "τοιούτου",
+     "ᾧ",
+     "οἱ",
+     "τύραννοι",
+     "καταλυθήσονται"
+    ]
+   },
+   {
+    "prompt": "Since the enemy control the sea, we have no ships which will carry the hoplites across.",
+    "answer": "τῶν πολεμίων τῆς θαλάττης κρατούντων, οὐκ ἔχομεν πλοῖα ἃ τοὺς ὁπλίτας διαβιβάσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "τῆς",
+     "θαλάττης",
+     "κρατούντων",
+     "οὐκ",
+     "ἔχομεν",
+     "πλοῖα",
+     "ἃ",
+     "τοὺς",
+     "ὁπλίτας",
+     "διαβιβάσει"
+    ]
+   }
+  ]
  }
 ]

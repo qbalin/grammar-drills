@@ -459,5 +459,950 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t7",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "I am sending scouts ahead, in the hope that they may learn where the enemy is encamped.",
+    "answer": "Πέμπω σκοπούς, ἐάν πως πύθωνται ὅπου στρατοπεδεύονται οἱ πολέμιοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Πέμπω",
+     "σκοπούς",
+     "ἐάν",
+     "πως",
+     "πύθωνται",
+     "ὅπου",
+     "στρατοπεδεύονται",
+     "οἱ",
+     "πολέμιοι"
+    ]
+   },
+   {
+    "prompt": "The general is holding the fleet near the island, on the chance that the ships from the harbor may sail in.",
+    "answer": "Ὁ στρατηγὸς τὸ ναυτικὸν πρὸς τῇ νήσῳ ἔχει, ἐάν πως αἱ ἐκ τοῦ λιμένος νῆες εἰσπλεύσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "ναυτικὸν",
+     "πρὸς",
+     "τῇ",
+     "νήσῳ",
+     "ἔχει",
+     "ἐάν",
+     "πως",
+     "αἱ",
+     "ἐκ",
+     "τοῦ",
+     "λιμένος",
+     "νῆες",
+     "εἰσπλεύσωσιν"
+    ]
+   },
+   {
+    "prompt": "They kept guarding the pass, in the hope that they might stop the barbarians there.",
+    "answer": "Ἐφύλαττον τὴν πάροδον, εἴ πως τοὺς βαρβάρους ἐκεῖ κωλύσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐφύλαττον",
+     "τὴν",
+     "πάροδον",
+     "εἴ",
+     "πως",
+     "τοὺς",
+     "βαρβάρους",
+     "ἐκεῖ",
+     "κωλύσειαν"
+    ]
+   },
+   {
+    "prompt": "The ambassadors remained in the city, in the hope that the assembly might change its mind.",
+    "answer": "Οἱ πρέσβεις ἐν τῇ πόλει ἔμενον, εἴ πως ὁ δῆμος μεταγνοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "πρέσβεις",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἔμενον",
+     "εἴ",
+     "πως",
+     "ὁ",
+     "δῆμος",
+     "μεταγνοίη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t8",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "We are digging a trench around the camp, in the hope that we may keep off the cavalry.",
+    "answer": "Τάφρον περὶ τὸ στρατόπεδον ὀρύττομεν, ἐάν πως τοὺς ἱππέας ἀπείρξωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τάφρον",
+     "περὶ",
+     "τὸ",
+     "στρατόπεδον",
+     "ὀρύττομεν",
+     "ἐάν",
+     "πως",
+     "τοὺς",
+     "ἱππέας",
+     "ἀπείρξωμεν"
+    ]
+   },
+   {
+    "prompt": "The physician is applying every remedy, on the chance that he may save the sick man.",
+    "answer": "Ὁ ἰατρὸς πᾶν φάρμακον προσφέρει, ἐάν πως τὸν κάμνοντα σώσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ἰατρὸς",
+     "πᾶν",
+     "φάρμακον",
+     "προσφέρει",
+     "ἐάν",
+     "πως",
+     "τὸν",
+     "κάμνοντα",
+     "σώσῃ"
+    ]
+   },
+   {
+    "prompt": "The exiles were sailing to the islanders, in the hope that they might persuade them to help.",
+    "answer": "Οἱ φυγάδες πρὸς τοὺς νησιώτας ἔπλεον, εἴ πως αὐτοὺς πείσειαν βοηθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "φυγάδες",
+     "πρὸς",
+     "τοὺς",
+     "νησιώτας",
+     "ἔπλεον",
+     "εἴ",
+     "πως",
+     "αὐτοὺς",
+     "πείσειαν",
+     "βοηθεῖν"
+    ]
+   },
+   {
+    "prompt": "He was watching the road all day long, in the hope that his son might return from exile.",
+    "answer": "διὰ ὅλης τῆς ἡμέρας τὴν ὁδὸν ἐτήρει, εἴ πως ὁ υἱὸς ἐκ τῆς φυγῆς ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "ὅλης",
+     "τῆς",
+     "ἡμέρας",
+     "τὴν",
+     "ὁδὸν",
+     "ἐτήρει",
+     "εἴ",
+     "πως",
+     "ὁ",
+     "υἱὸς",
+     "ἐκ",
+     "φυγῆς",
+     "ἐπανέλθοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t9",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "If you would not obey a just command, you are not fit to rule others.",
+    "answer": "εἰ δικαίῳ προστάγματι μὴ πείθοιο ἄν, οὐκ ἄξιος εἶ ἄλλων ἄρχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δικαίῳ",
+     "προστάγματι",
+     "μὴ",
+     "πείθοιο",
+     "ἄν",
+     "οὐκ",
+     "ἄξιος",
+     "εἶ",
+     "ἄλλων",
+     "ἄρχειν"
+    ]
+   },
+   {
+    "prompt": "If we would not praise a coward, it is right to honor the brave man.",
+    "answer": "εἰ τὸν δειλὸν μὴ ἐπαινοῖμεν ἄν, δίκαιον τὸν ἀνδρεῖον τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸν",
+     "δειλὸν",
+     "μὴ",
+     "ἐπαινοῖμεν",
+     "ἄν",
+     "δίκαιον",
+     "ἀνδρεῖον",
+     "τιμᾶν"
+    ]
+   },
+   {
+    "prompt": "If no one would willingly betray his friends, we ought to trust this man.",
+    "answer": "εἰ μηδεὶς ἂν ἑκὼν τοὺς φίλους προδοίη, χρὴ τούτῳ πιστεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μηδεὶς",
+     "ἂν",
+     "ἑκὼν",
+     "τοὺς",
+     "φίλους",
+     "προδοίη",
+     "χρὴ",
+     "τούτῳ",
+     "πιστεύειν"
+    ]
+   },
+   {
+    "prompt": "If you would flee no danger on behalf of your country, clearly you love the city.",
+    "answer": "εἰ μηδένα κίνδυνον ὑπὲρ τῆς πατρίδος φεύγοις ἄν, δῆλον ὅτι τὴν πόλιν φιλεῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μηδένα",
+     "κίνδυνον",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "φεύγοις",
+     "ἄν",
+     "δῆλον",
+     "ὅτι",
+     "τὴν",
+     "πόλιν",
+     "φιλεῖς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t10",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "If this argument would have persuaded the jurors, let it persuade you too now.",
+    "answer": "εἰ οὗτος ὁ λόγος τοὺς δικαστὰς ἔπεισεν ἄν, πειθέτω καὶ σὲ νῦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οὗτος",
+     "ὁ",
+     "λόγος",
+     "τοὺς",
+     "δικαστὰς",
+     "ἔπεισεν",
+     "ἄν",
+     "πειθέτω",
+     "καὶ",
+     "σὲ",
+     "νῦν"
+    ]
+   },
+   {
+    "prompt": "If these deeds would have made him worthy of honor, let them make me worthy of honor too.",
+    "answer": "εἰ ταῦτα τὰ ἔργα τιμῆς αὐτὸν ἠξίωσεν ἄν, ἀξιούτω καὶ ἐμὲ τιμῆς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ταῦτα",
+     "τὰ",
+     "ἔργα",
+     "τιμῆς",
+     "αὐτὸν",
+     "ἠξίωσεν",
+     "ἄν",
+     "ἀξιούτω",
+     "καὶ",
+     "ἐμὲ"
+    ]
+   },
+   {
+    "prompt": "If such evidence would have acquitted the general, let it acquit us also.",
+    "answer": "εἰ τοιοῦτο τεκμήριον τὸν στρατηγὸν ἀπέλυσεν ἄν, ἀπολυέτω καὶ ἡμᾶς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοιοῦτο",
+     "τεκμήριον",
+     "τὸν",
+     "στρατηγὸν",
+     "ἀπέλυσεν",
+     "ἄν",
+     "ἀπολυέτω",
+     "καὶ",
+     "ἡμᾶς"
+    ]
+   },
+   {
+    "prompt": "If his silence would have harmed the city, let his words now help it.",
+    "answer": "εἰ ἡ σιωπὴ αὐτοῦ τὴν πόλιν ἔβλαψεν ἄν, οἱ λόγοι αὐτοῦ νῦν αὐτὴν ὠφελούντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "σιωπὴ",
+     "αὐτοῦ",
+     "τὴν",
+     "πόλιν",
+     "ἔβλαψεν",
+     "ἄν",
+     "οἱ",
+     "λόγοι",
+     "νῦν",
+     "αὐτὴν",
+     "ὠφελούντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t11",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "The sailors were pressing on hard, in the hope that they might escape the wind before night.",
+    "answer": "Οἱ ναῦται σφόδρα ἠπείγοντο, εἴ πως τὸ πνεῦμα πρὸ νυκτὸς διαφύγοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "ναῦται",
+     "σφόδρα",
+     "ἠπείγοντο",
+     "εἴ",
+     "πως",
+     "τὸ",
+     "πνεῦμα",
+     "πρὸ",
+     "νυκτὸς",
+     "διαφύγοιεν"
+    ]
+   },
+   {
+    "prompt": "We are keeping the gates open, in the hope that the allies may enter before dawn.",
+    "answer": "Τὰς πύλας ἀνεῳγμένας ἔχομεν, ἐάν πως οἱ σύμμαχοι πρὸ ἡμέρας εἰσέλθωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὰς",
+     "πύλας",
+     "ἀνεῳγμένας",
+     "ἔχομεν",
+     "ἐάν",
+     "πως",
+     "οἱ",
+     "σύμμαχοι",
+     "πρὸ",
+     "ἡμέρας",
+     "εἰσέλθωσιν"
+    ]
+   },
+   {
+    "prompt": "The hunter was lying in ambush by the spring, on the chance that the deer might come down to the water.",
+    "answer": "Ὁ θηρευτὴς παρὰ τῇ πηγῇ ἐνήδρευεν, εἴ πως ἡ ἔλαφος ἐπὶ τὸ ὕδωρ καταβαίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "θηρευτὴς",
+     "παρὰ",
+     "τῇ",
+     "πηγῇ",
+     "ἐνήδρευεν",
+     "εἴ",
+     "πως",
+     "ἡ",
+     "ἔλαφος",
+     "ἐπὶ",
+     "τὸ",
+     "ὕδωρ",
+     "καταβαίη"
+    ]
+   },
+   {
+    "prompt": "They sent gifts to the tyrant, on the chance that they might soften his anger.",
+    "answer": "Δῶρα τῷ τυράννῳ ἔπεμψαν, εἴ πως τὴν ὀργὴν αὐτοῦ πραΰνειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Δῶρα",
+     "τῷ",
+     "τυράννῳ",
+     "ἔπεμψαν",
+     "εἴ",
+     "πως",
+     "τὴν",
+     "ὀργὴν",
+     "αὐτοῦ",
+     "πραΰνειαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t12",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "If you would trust no oath of the enemy, why do you now make a treaty with them?",
+    "answer": "εἰ μηδενὶ ὅρκῳ τῶν πολεμίων πιστεύοις ἄν, τί νῦν σπονδὰς πρὸς αὐτοὺς ποιῇ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μηδενὶ",
+     "ὅρκῳ",
+     "τῶν",
+     "πολεμίων",
+     "πιστεύοις",
+     "ἄν",
+     "τί",
+     "νῦν",
+     "σπονδὰς",
+     "πρὸς",
+     "αὐτοὺς",
+     "ποιῇ"
+    ]
+   },
+   {
+    "prompt": "If a wise man would not grieve at death, we too must bear misfortunes calmly.",
+    "answer": "εἰ ὁ σοφὸς ἐπὶ θανάτῳ μὴ λυποῖτο ἄν, καὶ ἡμᾶς δεῖ τὰς συμφορὰς ῥᾳδίως φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "σοφὸς",
+     "ἐπὶ",
+     "θανάτῳ",
+     "μὴ",
+     "λυποῖτο",
+     "ἄν",
+     "καὶ",
+     "ἡμᾶς",
+     "δεῖ",
+     "τὰς",
+     "συμφορὰς",
+     "ῥᾳδίως",
+     "φέρειν"
+    ]
+   },
+   {
+    "prompt": "If this danger would have terrified the ancients, let it not now frighten us.",
+    "answer": "εἰ οὗτος ὁ κίνδυνος τοὺς παλαιοὺς ἐξέπληξεν ἄν, μὴ νῦν ἡμᾶς φοβείτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οὗτος",
+     "ὁ",
+     "κίνδυνος",
+     "τοὺς",
+     "παλαιοὺς",
+     "ἐξέπληξεν",
+     "ἄν",
+     "μὴ",
+     "νῦν",
+     "ἡμᾶς",
+     "φοβείτω"
+    ]
+   },
+   {
+    "prompt": "If poverty would not have shamed even our ancestors, let it not shame us either.",
+    "answer": "εἰ ἡ πενία μηδὲ τοὺς προγόνους ᾔσχυνεν ἄν, μηδὲ ἡμᾶς νῦν αἰσχυνέτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "πενία",
+     "μηδὲ",
+     "τοὺς",
+     "προγόνους",
+     "ᾔσχυνεν",
+     "ἄν",
+     "ἡμᾶς",
+     "νῦν",
+     "αἰσχυνέτω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t13",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "If we would not praise a cowardly general, how is it not shameful to obey him?",
+    "answer": "εἰ στρατηγὸν δειλὸν οὐκ ἂν ἐπαινέσαιμεν, πῶς οὐκ αἰσχρὸν τούτῳ πείθεσθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "στρατηγόν",
+     "δειλόν",
+     "οὐκ",
+     "ἄν",
+     "ἐπαινέσαιμεν",
+     "πῶς",
+     "αἰσχρόν",
+     "τούτῳ",
+     "πείθεσθαι"
+    ]
+   },
+   {
+    "prompt": "If you would not trust a flatterer, you do not entrust the city to him either.",
+    "answer": "εἰ κόλακι οὐκ ἂν πιστεύσαις, οὐδὲ τὴν πόλιν αὐτῷ ἐπιτρέπεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "κόλακι",
+     "οὐκ",
+     "ἄν",
+     "πιστεύσαις",
+     "οὐδέ",
+     "τήν",
+     "πόλιν",
+     "αὐτῷ",
+     "ἐπιτρέπεις"
+    ]
+   },
+   {
+    "prompt": "If no one would choose to die for cowards, it is fitting to fight on behalf of the brave.",
+    "answer": "εἰ μηδεὶς ἂν ὑπὲρ τῶν δειλῶν ἀποθανεῖν ἕλοιτο, προσήκει ὑπὲρ τῶν ἀγαθῶν μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μηδείς",
+     "ἄν",
+     "ὑπέρ",
+     "τῶν",
+     "δειλῶν",
+     "ἀποθανεῖν",
+     "ἕλοιτο",
+     "προσήκει",
+     "ἀγαθῶν",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "If you would not endure hunger for a single day, why do you blame the poor?",
+    "answer": "εἰ μηδὲ μίαν ἡμέραν λιμὸν ἂν ὑπομείναις, τί τοὺς πένητας μέμφῃ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μηδέ",
+     "μίαν",
+     "ἡμέραν",
+     "λιμόν",
+     "ἄν",
+     "ὑπομείναις",
+     "τί",
+     "τούς",
+     "πένητας",
+     "μέμφῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t14",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "If then this letter would have harmed my enemy, let it now harm me too.",
+    "answer": "εἰ τοίνυν ἡ ἐπιστολὴ αὕτη τὸν ἐχθρὸν ἔβλαψεν ἄν, βλαπτέτω καὶ ἐμέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοίνυν",
+     "ἡ",
+     "ἐπιστολή",
+     "αὕτη",
+     "τόν",
+     "ἐχθρόν",
+     "ἔβλαψεν",
+     "ἄν",
+     "βλαπτέτω",
+     "καί",
+     "ἐμέ"
+    ]
+   },
+   {
+    "prompt": "If silence would have saved that man, let it save me as well.",
+    "answer": "εἰ τὸν ἄνδρα ἐκεῖνον ἡ σιγὴ ἔσωσεν ἄν, σῳζέτω καὶ ἐμέ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τόν",
+     "ἄνδρα",
+     "ἐκεῖνον",
+     "ἡ",
+     "σιγή",
+     "ἔσωσεν",
+     "ἄν",
+     "σῳζέτω",
+     "καί",
+     "ἐμέ"
+    ]
+   },
+   {
+    "prompt": "If flattery would have deceived the assembly, let no one now trust the orators.",
+    "answer": "εἰ ἡ κολακεία τὴν ἐκκλησίαν ἐξηπάτησεν ἄν, μηδεὶς νῦν τοῖς ῥήτορσι πιστευέτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "κολακεία",
+     "τήν",
+     "ἐκκλησίαν",
+     "ἐξηπάτησεν",
+     "ἄν",
+     "μηδείς",
+     "νῦν",
+     "τοῖς",
+     "ῥήτορσι",
+     "πιστευέτω"
+    ]
+   },
+   {
+    "prompt": "If wealth would have made him happy, let poverty not make us wretched.",
+    "answer": "εἰ ὁ πλοῦτος ἐκεῖνον εὐδαίμονα ἐποίησεν ἄν, ἡ πενία ἡμᾶς μὴ ποιείτω ἀθλίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "πλοῦτος",
+     "ἐκεῖνον",
+     "εὐδαίμονα",
+     "ἐποίησεν",
+     "ἄν",
+     "ἡ",
+     "πενία",
+     "ἡμᾶς",
+     "μή",
+     "ποιείτω",
+     "ἀθλίους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t15",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "I am sending gifts to the general, in the hope that he may spare the captives.",
+    "answer": "δῶρα τῷ στρατηγῷ πέμπω, ἐάν πως τῶν αἰχμαλώτων φείσηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δῶρα",
+     "τῷ",
+     "στρατηγῷ",
+     "πέμπω",
+     "ἐάν",
+     "πως",
+     "τῶν",
+     "αἰχμαλώτων",
+     "φείσηται"
+    ]
+   },
+   {
+    "prompt": "We are guarding the gates by night, in the hope that we may catch the traitors.",
+    "answer": "τὰς πύλας νύκτωρ φυλάττομεν, ἐὰν τοὺς προδότας λάβωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τάς",
+     "πύλας",
+     "νύκτωρ",
+     "φυλάττομεν",
+     "ἐάν",
+     "τούς",
+     "προδότας",
+     "λάβωμεν"
+    ]
+   },
+   {
+    "prompt": "The priest is praying to the gods, in case they may send rain upon the fields.",
+    "answer": "ὁ ἱερεὺς τοῖς θεοῖς εὔχεται, ἐὰν ὄμβρον ἐπὶ τὰς ἀρούρας πέμψωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεύς",
+     "τοῖς",
+     "θεοῖς",
+     "εὔχεται",
+     "ἐάν",
+     "ὄμβρον",
+     "ἐπί",
+     "τάς",
+     "ἀρούρας",
+     "πέμψωσιν"
+    ]
+   },
+   {
+    "prompt": "I keep questioning the witnesses, in the hope that I may learn the truth.",
+    "answer": "τοὺς μάρτυρας διερωτῶ, ἐάν πως τὴν ἀλήθειαν μάθω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "μάρτυρας",
+     "διερωτῶ",
+     "ἐάν",
+     "πως",
+     "τήν",
+     "ἀλήθειαν",
+     "μάθω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t16",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "He was leading the army through the mountains, in the hope that he might escape the enemy's notice.",
+    "answer": "τὸ στράτευμα διὰ τῶν ὀρῶν ἦγεν, εἰ λάθοι τοὺς πολεμίους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "στράτευμα",
+     "διά",
+     "τῶν",
+     "ὀρῶν",
+     "ἦγεν",
+     "εἰ",
+     "λάθοι",
+     "τούς",
+     "πολεμίους"
+    ]
+   },
+   {
+    "prompt": "The women were weeping before the shrine, in the hope that the goddess might turn away the plague.",
+    "answer": "αἱ γυναῖκες πρὸ τοῦ ἱεροῦ ἐδάκρυον, εἰ τὴν νόσον ἡ θεὸς ἀποτρέψειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "πρό",
+     "τοῦ",
+     "ἱεροῦ",
+     "ἐδάκρυον",
+     "εἰ",
+     "τήν",
+     "νόσον",
+     "ἡ",
+     "θεός",
+     "ἀποτρέψειεν"
+    ]
+   },
+   {
+    "prompt": "They sent messengers to Sparta, in the hope that they might persuade the ephors.",
+    "answer": "ἀγγέλους εἰς τὴν Σπάρτην ἔπεμψαν, εἰ τοὺς ἐφόρους πείσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγγέλους",
+     "εἰς",
+     "τήν",
+     "Σπάρτην",
+     "ἔπεμψαν",
+     "εἰ",
+     "τούς",
+     "ἐφόρους",
+     "πείσειαν"
+    ]
+   },
+   {
+    "prompt": "The general was drawing up the soldiers, in the hope that they might frighten the barbarians.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας συνέταττεν, εἰ τοὺς βαρβάρους φοβήσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τούς",
+     "στρατιώτας",
+     "συνέταττεν",
+     "εἰ",
+     "βαρβάρους",
+     "φοβήσειαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t17",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "If no one, being deprived of his eyes, would wish to live, we must pity the blind.",
+    "answer": "εἰ μηδεὶς ἂν τῶν ὀμμάτων στερηθεὶς ζῆν βούλοιτο, τοὺς τυφλοὺς ἐλεεῖν δεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μηδείς",
+     "ἄν",
+     "τῶν",
+     "ὀμμάτων",
+     "στερηθείς",
+     "ζῆν",
+     "βούλοιτο",
+     "τούς",
+     "τυφλούς",
+     "ἐλεεῖν",
+     "δεῖ"
+    ]
+   },
+   {
+    "prompt": "If we would not receive a lawless ally, clearly we shall thrust this one away.",
+    "answer": "εἰ σύμμαχον ἄνομον οὐκ ἂν δεξαίμεθα, δῆλον ὅτι τοῦτον ἀπωσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σύμμαχον",
+     "ἄνομον",
+     "οὐκ",
+     "ἄν",
+     "δεξαίμεθα",
+     "δῆλον",
+     "ὅτι",
+     "τοῦτον",
+     "ἀπωσόμεθα"
+    ]
+   },
+   {
+    "prompt": "If the wise man, though being wronged, would not seek revenge, how shall the unjust escape blame?",
+    "answer": "εἰ ὁ σοφὸς ἀδικούμενος οὐκ ἂν τιμωρίαν ζητοίη, πῶς οἱ ἄδικοι τὴν αἰτίαν φεύξονται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "σοφός",
+     "ἀδικούμενος",
+     "οὐκ",
+     "ἄν",
+     "τιμωρίαν",
+     "ζητοίη",
+     "πῶς",
+     "οἱ",
+     "ἄδικοι",
+     "τήν",
+     "αἰτίαν",
+     "φεύξονται"
+    ]
+   },
+   {
+    "prompt": "If, the enemy being present, no one would remain unarmed, let us all take up our weapons.",
+    "answer": "εἰ τῶν πολεμίων παρόντων μηδεὶς ἂν ἄνοπλος μένοι, τὰ ὅπλα πάντες λάβωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῶν",
+     "πολεμίων",
+     "παρόντων",
+     "μηδείς",
+     "ἄν",
+     "ἄνοπλος",
+     "μένοι",
+     "τά",
+     "ὅπλα",
+     "πάντες",
+     "λάβωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2353-protasis-and-apodosis-combined-t18",
+  "sectionId": "sm-2353-protasis-and-apodosis-combined",
+  "questions": [
+   {
+    "prompt": "Fleeing through the night, they were hurrying toward the river, in the hope that they might cross before day.",
+    "answer": "διὰ τῆς νυκτὸς φεύγοντες πρὸς τὸν ποταμὸν ἔσπευδον, εἰ πρὸ τῆς ἡμέρας διαβαῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διά",
+     "τῆς",
+     "νυκτός",
+     "φεύγοντες",
+     "πρός",
+     "τόν",
+     "ποταμόν",
+     "ἔσπευδον",
+     "εἰ",
+     "πρό",
+     "ἡμέρας",
+     "διαβαῖεν"
+    ]
+   },
+   {
+    "prompt": "The citizens are taking up arms, in the hope that they may drive the tyrant out of the city.",
+    "answer": "οἱ πολῖται τὰ ὅπλα αἴρονται, ἐάν πως τὸν τύραννον ἐκ τῆς πόλεως ἐκβάλωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τά",
+     "ὅπλα",
+     "αἴρονται",
+     "ἐάν",
+     "πως",
+     "τόν",
+     "τύραννον",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ἐκβάλωσιν"
+    ]
+   },
+   {
+    "prompt": "Having summoned the allies, the general was waiting, in the hope that they might come before the battle.",
+    "answer": "τοὺς συμμάχους μεταπεμψάμενος ὁ στρατηγὸς ἔμενεν, εἰ πρὸ τῆς μάχης ἔλθοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τούς",
+     "συμμάχους",
+     "μεταπεμψάμενος",
+     "ὁ",
+     "στρατηγός",
+     "ἔμενεν",
+     "εἰ",
+     "πρό",
+     "τῆς",
+     "μάχης",
+     "ἔλθοιεν"
+    ]
+   },
+   {
+    "prompt": "The physician is making trial of every remedy, in case he may free the sick man from his disease.",
+    "answer": "ὁ ἰατρὸς παντὸς φαρμάκου πειρᾶται, ἐάν πως τὸν κάμνοντα τῆς νόσου ἀπαλλάξῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρός",
+     "παντός",
+     "φαρμάκου",
+     "πειρᾶται",
+     "ἐάν",
+     "πως",
+     "τόν",
+     "κάμνοντα",
+     "τῆς",
+     "νόσου",
+     "ἀπαλλάξῃ"
+    ]
+   }
+  ]
  }
 ]

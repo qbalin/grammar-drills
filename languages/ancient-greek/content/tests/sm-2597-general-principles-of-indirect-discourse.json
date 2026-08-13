@@ -389,5 +389,813 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t7",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The general reports that the soldiers are guarding the camp bravely.",
+    "answer": "ὁ στρατηγὸς ἀγγέλλει ὅτι οἱ στρατιῶται τὸ στρατόπεδον ἀνδρείως φυλάττουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἀγγέλλει",
+     "ὅτι",
+     "οἱ",
+     "στρατιῶται",
+     "τὸ",
+     "στρατόπεδον",
+     "ἀνδρείως",
+     "φυλάττουσιν"
+    ]
+   },
+   {
+    "prompt": "The messenger says that the ships will arrive at the harbor tomorrow.",
+    "answer": "ὁ ἄγγελος λέγει ὅτι αἱ νῆες αὔριον εἰς τὸν λιμένα ἥξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "λέγει",
+     "ὅτι",
+     "αἱ",
+     "νῆες",
+     "αὔριον",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "ἥξουσιν"
+    ]
+   },
+   {
+    "prompt": "We know that the citizens honor those who died for their country.",
+    "answer": "ἴσμεν ὅτι οἱ πολῖται τιμῶσι τοὺς ὑπὲρ τῆς πατρίδος ἀποθανόντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσμεν",
+     "ὅτι",
+     "οἱ",
+     "πολῖται",
+     "τιμῶσι",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθανόντας"
+    ]
+   },
+   {
+    "prompt": "I perceive that you are speaking the truth about these matters.",
+    "answer": "αἰσθάνομαι ὅτι τὰ ἀληθῆ περὶ τούτων λέγεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσθάνομαι",
+     "ὅτι",
+     "τὰ",
+     "ἀληθῆ",
+     "περὶ",
+     "τούτων",
+     "λέγεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t8",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The scout reported that the enemy were pitching camp beside the river.",
+    "answer": "ὁ σκοπὸς ἤγγειλεν ὅτι οἱ πολέμιοι παρὰ τὸν ποταμὸν στρατοπεδεύοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σκοπὸς",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "παρὰ",
+     "τὸν",
+     "ποταμὸν",
+     "στρατοπεδεύοιντο"
+    ]
+   },
+   {
+    "prompt": "Socrates said that virtue was not teachable for money.",
+    "answer": "ὁ Σωκράτης εἶπεν ὡς ἡ ἀρετὴ ἐπὶ χρήμασιν οὐ διδακτὴ εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "εἶπεν",
+     "ὡς",
+     "ἡ",
+     "ἀρετὴ",
+     "ἐπὶ",
+     "χρήμασιν",
+     "οὐ",
+     "διδακτὴ",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "The old man said that he had seen many marvelous things in his life.",
+    "answer": "ὁ γέρων ἔλεγεν ὅτι πολλὰ καὶ θαυμάσια ἐν τῷ βίῳ ἴδοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἔλεγεν",
+     "ὅτι",
+     "πολλὰ",
+     "καὶ",
+     "θαυμάσια",
+     "ἐν",
+     "τῷ",
+     "βίῳ",
+     "ἴδοι"
+    ]
+   },
+   {
+    "prompt": "They answered that they would help us if we asked.",
+    "answer": "ἀπεκρίναντο ὅτι βοηθήσοιεν ἡμῖν, εἰ δεοίμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίναντο",
+     "ὅτι",
+     "βοηθήσοιεν",
+     "ἡμῖν",
+     "εἰ",
+     "δεοίμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t9",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The ambassadors thought that the king would make peace.",
+    "answer": "οἱ πρέσβεις ἐνόμιζον τὸν βασιλέα εἰρήνην ποιήσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἐνόμιζον",
+     "τὸν",
+     "βασιλέα",
+     "εἰρήνην",
+     "ποιήσεσθαι"
+    ]
+   },
+   {
+    "prompt": "Cyrus believed that his friends would never betray him.",
+    "answer": "ὁ Κῦρος ἡγεῖτο τοὺς φίλους οὐδέποτε αὑτὸν προδώσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "ἡγεῖτο",
+     "τοὺς",
+     "φίλους",
+     "οὐδέποτε",
+     "αὑτὸν",
+     "προδώσειν"
+    ]
+   },
+   {
+    "prompt": "I think that the wise bear misfortunes more easily.",
+    "answer": "νομίζω τοὺς σοφοὺς τὰς συμφορὰς ῥᾷον φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "τοὺς",
+     "σοφοὺς",
+     "τὰς",
+     "συμφορὰς",
+     "ῥᾷον",
+     "φέρειν"
+    ]
+   },
+   {
+    "prompt": "He said that he would have freed the city if he had had ships.",
+    "answer": "ἔφη τὴν πόλιν ἂν ἐλευθερῶσαι, εἰ ναῦς ἔσχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "τὴν",
+     "πόλιν",
+     "ἂν",
+     "ἐλευθερῶσαι",
+     "εἰ",
+     "ναῦς",
+     "ἔσχεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t10",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "We know that the city has been betrayed by the traitors.",
+    "answer": "ἴσμεν τὴν πόλιν ὑπὸ τῶν προδοτῶν προδεδομένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἴσμεν",
+     "τὴν",
+     "πόλιν",
+     "ὑπὸ",
+     "τῶν",
+     "προδοτῶν",
+     "προδεδομένην"
+    ]
+   },
+   {
+    "prompt": "He perceived that his soldiers were worn out by their toils.",
+    "answer": "ᾔσθετο τοὺς στρατιώτας τοῖς πόνοις ἀπειρηκότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔσθετο",
+     "τοὺς",
+     "στρατιώτας",
+     "τοῖς",
+     "πόνοις",
+     "ἀπειρηκότας"
+    ]
+   },
+   {
+    "prompt": "The judges learned that the accused man was innocent.",
+    "answer": "οἱ δικασταὶ ἔγνωσαν τὸν κατηγορούμενον ἀναίτιον ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ἔγνωσαν",
+     "τὸν",
+     "κατηγορούμενον",
+     "ἀναίτιον",
+     "ὄντα"
+    ]
+   },
+   {
+    "prompt": "I see that you have become wiser than before.",
+    "answer": "ὁρῶ σε σοφώτερον ἢ πρότερον γεγενημένον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁρῶ",
+     "σε",
+     "σοφώτερον",
+     "ἢ",
+     "πρότερον",
+     "γεγενημένον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t11",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The prisoner swore that he had done the city no wrong.",
+    "answer": "ὁ δεσμώτης ὤμνυεν ὅτι τὴν πόλιν οὐδὲν ἀδικήσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δεσμώτης",
+     "ὤμνυεν",
+     "ὅτι",
+     "τὴν",
+     "πόλιν",
+     "οὐδὲν",
+     "ἀδικήσειεν"
+    ]
+   },
+   {
+    "prompt": "The farmer said that he would sow the field when spring came.",
+    "answer": "ὁ γεωργὸς ἔφη τὸν ἀγρὸν σπερεῖν, ἐπειδὴ τὸ ἔαρ ἔλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "ἔφη",
+     "τὸν",
+     "ἀγρὸν",
+     "σπερεῖν",
+     "ἐπειδὴ",
+     "τὸ",
+     "ἔαρ",
+     "ἔλθοι"
+    ]
+   },
+   {
+    "prompt": "The herald announced that whoever wished might speak freely.",
+    "answer": "ὁ κῆρυξ ἐκήρυξεν ὅτι ἐξείη τῷ βουλομένῳ παρρησίᾳ λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ἐκήρυξεν",
+     "ὅτι",
+     "ἐξείη",
+     "τῷ",
+     "βουλομένῳ",
+     "παρρησίᾳ",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "They replied that they would obey the laws which the city had established.",
+    "answer": "ἀπεκρίναντο ὅτι τοῖς νόμοις πείσοιντο οὓς ἡ πόλις ἔθετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίναντο",
+     "ὅτι",
+     "τοῖς",
+     "νόμοις",
+     "πείσοιντο",
+     "οὓς",
+     "ἡ",
+     "πόλις",
+     "ἔθετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t12",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The poet says that the gods care for those who honor them.",
+    "answer": "ὁ ποιητὴς λέγει τοὺς θεοὺς ἐπιμελεῖσθαι τῶν ἑαυτοὺς τιμώντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποιητὴς",
+     "λέγει",
+     "τοὺς",
+     "θεοὺς",
+     "ἐπιμελεῖσθαι",
+     "τῶν",
+     "ἑαυτοὺς",
+     "τιμώντων"
+    ]
+   },
+   {
+    "prompt": "The physician declared that the sick man would be healthy.",
+    "answer": "ὁ ἰατρὸς ἀπεφήνατο τὸν κάμνοντα ὑγιᾶ ἔσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "ἀπεφήνατο",
+     "τὸν",
+     "κάμνοντα",
+     "ὑγιᾶ",
+     "ἔσεσθαι"
+    ]
+   },
+   {
+    "prompt": "The general saw that his own men were being surrounded by the cavalry.",
+    "answer": "ὁ στρατηγὸς ἑώρα τοὺς ἑαυτοῦ ὑπὸ τῶν ἱππέων κυκλουμένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἑώρα",
+     "τοὺς",
+     "ἑαυτοῦ",
+     "ὑπὸ",
+     "τῶν",
+     "ἱππέων",
+     "κυκλουμένους"
+    ]
+   },
+   {
+    "prompt": "He thought that he himself would rule the whole land.",
+    "answer": "ᾤετο αὐτὸς πάσης τῆς χώρας ἄρξειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾤετο",
+     "αὐτὸς",
+     "πάσης",
+     "τῆς",
+     "χώρας",
+     "ἄρξειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t13",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The messenger said that the allies were already withdrawing from the plain.",
+    "answer": "ὁ ἄγγελος ἔλεξεν ὅτι οἱ σύμμαχοι ἤδη ἐκ τοῦ πεδίου ἀναχωροῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἔλεξεν",
+     "ὅτι",
+     "οἱ",
+     "σύμμαχοι",
+     "ἤδη",
+     "ἐκ",
+     "τοῦ",
+     "πεδίου",
+     "ἀναχωροῖεν"
+    ]
+   },
+   {
+    "prompt": "The jurors perceived that the defendant was speaking the truth.",
+    "answer": "οἱ δικασταὶ ᾔσθοντο ὅτι ὁ φεύγων τὰ ἀληθῆ λέγοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "ᾔσθοντο",
+     "ὅτι",
+     "ὁ",
+     "φεύγων",
+     "τά",
+     "ἀληθῆ",
+     "λέγοι"
+    ]
+   },
+   {
+    "prompt": "Cyrus replied that he would give gifts to whoever fought bravely.",
+    "answer": "ὁ Κῦρος ἀπεκρίνατο ὅτι δῶρα δώσοι ὅστις ἀνδρείως μάχοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κῦρος",
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "δῶρα",
+     "δώσοι",
+     "ὅστις",
+     "ἀνδρείως",
+     "μάχοιτο"
+    ]
+   },
+   {
+    "prompt": "We learned that the city had been besieged for many days.",
+    "answer": "ἐπυθόμεθα ὅτι ἡ πόλις πολλὰς ἡμέρας ἐπολιορκεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπυθόμεθα",
+     "ὅτι",
+     "ἡ",
+     "πόλις",
+     "πολλάς",
+     "ἡμέρας",
+     "ἐπολιορκεῖτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t14",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The general thought that the enemy would not dare to cross the river.",
+    "answer": "ὁ στρατηγὸς ἐνόμιζε τοὺς πολεμίους οὐ τολμήσειν τὸν ποταμὸν διαβαίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἐνόμιζε",
+     "τούς",
+     "πολεμίους",
+     "οὐ",
+     "τολμήσειν",
+     "τόν",
+     "ποταμόν",
+     "διαβαίνειν"
+    ]
+   },
+   {
+    "prompt": "The old man said that he had suffered many terrible things in his life.",
+    "answer": "ὁ γέρων ἔφη πολλὰ καὶ δεινὰ ἐν τῷ βίῳ παθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἔφη",
+     "πολλά",
+     "καί",
+     "δεινά",
+     "ἐν",
+     "τῷ",
+     "βίῳ",
+     "παθεῖν"
+    ]
+   },
+   {
+    "prompt": "They believed that the gods would punish the impious.",
+    "answer": "ἐνόμιζον τοὺς θεοὺς τοὺς ἀσεβεῖς κολάσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνόμιζον",
+     "τούς",
+     "θεούς",
+     "ἀσεβεῖς",
+     "κολάσειν"
+    ]
+   },
+   {
+    "prompt": "Cleon claimed that he himself would capture the island within twenty days.",
+    "answer": "ὁ Κλέων ἔφη αὐτὸς τὴν νῆσον ἐν εἴκοσιν ἡμέραις αἱρήσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Κλέων",
+     "ἔφη",
+     "αὐτός",
+     "τήν",
+     "νῆσον",
+     "ἐν",
+     "εἴκοσιν",
+     "ἡμέραις",
+     "αἱρήσειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t15",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The sailors knew that they had been deceived by the general.",
+    "answer": "οἱ ναῦται ᾔδεσαν ὑπὸ τοῦ στρατηγοῦ ἐξηπατημένοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "ᾔδεσαν",
+     "ὑπό",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἐξηπατημένοι"
+    ]
+   },
+   {
+    "prompt": "She perceived that her son was in great danger.",
+    "answer": "ᾔσθετο τὸν υἱὸν ἐν μεγάλῳ κινδύνῳ ὄντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔσθετο",
+     "τόν",
+     "υἱόν",
+     "ἐν",
+     "μεγάλῳ",
+     "κινδύνῳ",
+     "ὄντα"
+    ]
+   },
+   {
+    "prompt": "We heard that the king had died in a foreign land.",
+    "answer": "ἠκούσαμεν τὸν βασιλέα ἐν ξένῃ γῇ τεθνηκότα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἠκούσαμεν",
+     "τόν",
+     "βασιλέα",
+     "ἐν",
+     "ξένῃ",
+     "γῇ",
+     "τεθνηκότα"
+    ]
+   },
+   {
+    "prompt": "The general saw that his soldiers were fighting bravely.",
+    "answer": "ὁ στρατηγὸς ἑώρα τοὺς στρατιώτας ἀνδρείως μαχομένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "ἑώρα",
+     "τούς",
+     "στρατιώτας",
+     "ἀνδρείως",
+     "μαχομένους"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t16",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he would honor the man who had saved the city.",
+    "answer": "ἔφη τιμήσειν τὸν ἄνδρα ὃς τὴν πόλιν σώσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "τιμήσειν",
+     "τόν",
+     "ἄνδρα",
+     "ὅς",
+     "τήν",
+     "πόλιν",
+     "σώσειεν"
+    ]
+   },
+   {
+    "prompt": "The messenger reported that the soldiers would flee if the general fell.",
+    "answer": "ὁ ἄγγελος ἤγγειλεν ὅτι οἱ στρατιῶται φεύξοιντο, εἰ ὁ στρατηγὸς πέσοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "στρατιῶται",
+     "φεύξοιντο",
+     "εἰ",
+     "στρατηγός",
+     "πέσοι"
+    ]
+   },
+   {
+    "prompt": "They answered that they would obey whatever the laws commanded.",
+    "answer": "ἀπεκρίναντο ὅτι πείσοιντο ὅ τι οἱ νόμοι κελεύοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίναντο",
+     "ὅτι",
+     "πείσοιντο",
+     "ὅ",
+     "τι",
+     "οἱ",
+     "νόμοι",
+     "κελεύοιεν"
+    ]
+   },
+   {
+    "prompt": "Xenophon said that he would lead the army wherever there was food.",
+    "answer": "ὁ Ξενοφῶν ἔφη τὸ στράτευμα ἄξειν ὅπου εἴη σῖτος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Ξενοφῶν",
+     "ἔφη",
+     "τό",
+     "στράτευμα",
+     "ἄξειν",
+     "ὅπου",
+     "εἴη",
+     "σῖτος"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t17",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that no one would ever have trusted such a man.",
+    "answer": "ἔφη οὐδένα ἄν ποτε τοιούτῳ ἀνδρὶ πιστεῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "οὐδένα",
+     "ἄν",
+     "ποτε",
+     "τοιούτῳ",
+     "ἀνδρί",
+     "πιστεῦσαι"
+    ]
+   },
+   {
+    "prompt": "The orator said that the city would have been destroyed without these men.",
+    "answer": "ὁ ῥήτωρ ἔφη τὴν πόλιν ἄνευ τούτων τῶν ἀνδρῶν ἂν διαφθαρῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "ἔφη",
+     "τήν",
+     "πόλιν",
+     "ἄνευ",
+     "τούτων",
+     "τῶν",
+     "ἀνδρῶν",
+     "ἄν",
+     "διαφθαρῆναι"
+    ]
+   },
+   {
+    "prompt": "We knew that they would gladly have accepted peace.",
+    "answer": "ᾔδεμεν αὐτοὺς ἡδέως ἂν τὴν εἰρήνην δεξαμένους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔδεμεν",
+     "αὐτούς",
+     "ἡδέως",
+     "ἄν",
+     "τήν",
+     "εἰρήνην",
+     "δεξαμένους"
+    ]
+   },
+   {
+    "prompt": "She replied that she would rather die than betray her friends.",
+    "answer": "ἀπεκρίνατο βούλεσθαι μᾶλλον ἀποθανεῖν ἢ τοὺς φίλους προδοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "βούλεσθαι",
+     "μᾶλλον",
+     "ἀποθανεῖν",
+     "ἤ",
+     "τούς",
+     "φίλους",
+     "προδοῦναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2597-general-principles-of-indirect-discourse-t18",
+  "sectionId": "sm-2597-general-principles-of-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He says that whoever honors the gods will be happy.",
+    "answer": "λέγει ὅτι ὅστις ἂν τοὺς θεοὺς τιμᾷ εὐδαίμων ἔσται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγει",
+     "ὅτι",
+     "ὅστις",
+     "ἄν",
+     "τούς",
+     "θεούς",
+     "τιμᾷ",
+     "εὐδαίμων",
+     "ἔσται"
+    ]
+   },
+   {
+    "prompt": "The prophet declares that the army will conquer if the omens are favorable.",
+    "answer": "ὁ μάντις λέγει ὅτι τὸ στράτευμα νικήσει, ἐὰν τὰ ἱερὰ καλὰ ᾖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "μάντις",
+     "λέγει",
+     "ὅτι",
+     "τό",
+     "στράτευμα",
+     "νικήσει",
+     "ἐάν",
+     "τά",
+     "ἱερά",
+     "καλά",
+     "ᾖ"
+    ]
+   },
+   {
+    "prompt": "The soldiers promised that they would follow their commander everywhere.",
+    "answer": "οἱ στρατιῶται ὑπέσχοντο τῷ ἄρχοντι πανταχοῦ ἕψεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ὑπέσχοντο",
+     "τῷ",
+     "ἄρχοντι",
+     "πανταχοῦ",
+     "ἕψεσθαι"
+    ]
+   },
+   {
+    "prompt": "He swore that he had neither seen nor heard the thief.",
+    "answer": "ὤμοσε τὸν κλέπτην οὔτε ἰδεῖν οὔτε ἀκοῦσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὤμοσε",
+     "τόν",
+     "κλέπτην",
+     "οὔτε",
+     "ἰδεῖν",
+     "ἀκοῦσαι"
+    ]
+   }
+  ]
  }
 ]

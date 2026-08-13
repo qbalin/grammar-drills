@@ -787,5 +787,1152 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t11",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The messenger announced that the general had captured the citadel.",
+    "answer": "ὁ ἄγγελος ἤγγειλεν ὅτι ὁ στρατηγὸς τὴν ἀκρόπολιν ἕλοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἤγγειλεν",
+     "ὅτι",
+     "στρατηγὸς",
+     "τὴν",
+     "ἀκρόπολιν",
+     "ἕλοι"
+    ]
+   },
+   {
+    "prompt": "He said that the soldiers had fled through the mountains by night.",
+    "answer": "ἔλεξεν ὅτι οἱ στρατιῶται διὰ τῶν ὀρῶν νυκτὸς φύγοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεξεν",
+     "ὅτι",
+     "οἱ",
+     "στρατιῶται",
+     "διὰ",
+     "τῶν",
+     "ὀρῶν",
+     "νυκτὸς",
+     "φύγοιεν"
+    ]
+   },
+   {
+    "prompt": "He said that he would restore the land which the enemy had ravaged.",
+    "answer": "ἔφη ἀποδώσειν τὴν χώραν ἣν οἱ πολέμιοι ἐδῄωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "ἀποδώσειν",
+     "τὴν",
+     "χώραν",
+     "ἣν",
+     "οἱ",
+     "πολέμιοι",
+     "ἐδῄωσαν"
+    ]
+   },
+   {
+    "prompt": "He confessed that he had betrayed the city because he feared the tyrant.",
+    "answer": "ὡμολόγησεν ὅτι τὴν πόλιν προδοίη, ὅτι τὸν τύραννον φοβοῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡμολόγησεν",
+     "ὅτι",
+     "τὴν",
+     "πόλιν",
+     "προδοίη",
+     "τὸν",
+     "τύραννον",
+     "φοβοῖτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t12",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They said that no one would ever have believed such things.",
+    "answer": "ἔλεγον ὅτι οὐδεὶς ἄν ποτε τοιαῦτα ἐπίστευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "ὅτι",
+     "οὐδεὶς",
+     "ἄν",
+     "ποτε",
+     "τοιαῦτα",
+     "ἐπίστευσεν"
+    ]
+   },
+   {
+    "prompt": "He said that the city would have been saved, if the allies had come.",
+    "answer": "ἔλεξεν ὅτι ἡ πόλις ἐσώθη ἄν, εἰ οἱ σύμμαχοι ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεξεν",
+     "ὅτι",
+     "ἡ",
+     "πόλις",
+     "ἐσώθη",
+     "ἄν",
+     "εἰ",
+     "οἱ",
+     "σύμμαχοι",
+     "ἦλθον"
+    ]
+   },
+   {
+    "prompt": "He heard that the enemy were encamping beside the river.",
+    "answer": "ἤκουσεν ὅτι οἱ πολέμιοι παρὰ τῷ ποταμῷ στρατοπεδεύοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤκουσεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ",
+     "στρατοπεδεύοιντο"
+    ]
+   },
+   {
+    "prompt": "He said that the messengers had already departed.",
+    "answer": "εἶπεν ὅτι οἱ ἄγγελοι ἤδη ἀπεληλυθότες εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "οἱ",
+     "ἄγγελοι",
+     "ἤδη",
+     "ἀπεληλυθότες",
+     "εἶεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t13",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "She answered that she wished to obey the laws, but that it was shameful to betray her friends.",
+    "answer": "ἀπεκρίνατο ὅτι βούλοιτο μὲν τοῖς νόμοις πείθεσθαι, αἰσχρὸν μέντοι εἶναι τοὺς φίλους προδιδόναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "βούλοιτο",
+     "μὲν",
+     "τοῖς",
+     "νόμοις",
+     "πείθεσθαι",
+     "αἰσχρὸν",
+     "μέντοι",
+     "εἶναι",
+     "τοὺς",
+     "φίλους",
+     "προδιδόναι"
+    ]
+   },
+   {
+    "prompt": "He said that he would gladly obey the general.",
+    "answer": "εἶπεν ὅτι ἡδέως ἂν τῷ στρατηγῷ πείθοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "ἡδέως",
+     "ἂν",
+     "τῷ",
+     "στρατηγῷ",
+     "πείθοιτο"
+    ]
+   },
+   {
+    "prompt": "They said that they would never endure being ruled by a foreigner.",
+    "answer": "ἔλεγον ὅτι οὐκ ἄν ποτε ἀνάσχοιντο ὑπὸ βαρβάρου ἀρχόμενοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "ὅτι",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "ἀνάσχοιντο",
+     "ὑπὸ",
+     "βαρβάρου",
+     "ἀρχόμενοι"
+    ]
+   },
+   {
+    "prompt": "The woman said that she loved her children and that she would never abandon them.",
+    "answer": "ἡ γυνὴ ἔλεξεν ὅτι φιλοίη μὲν τὰ τέκνα, οὐδέποτε δὲ αὐτὰ προλείψειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "ἔλεξεν",
+     "ὅτι",
+     "φιλοίη",
+     "μὲν",
+     "τὰ",
+     "τέκνα",
+     "οὐδέποτε",
+     "δὲ",
+     "αὐτὰ",
+     "προλείψειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t14",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that, when he had arrived at the camp, he found everyone asleep.",
+    "answer": "ἔφη, ἐπειδὴ ἀφικέσθαι εἰς τὸ στρατόπεδον, καταλαμβάνειν πάντας καθεύδοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "ἐπειδὴ",
+     "ἀφικέσθαι",
+     "εἰς",
+     "τὸ",
+     "στρατόπεδον",
+     "καταλαμβάνειν",
+     "πάντας",
+     "καθεύδοντας"
+    ]
+   },
+   {
+    "prompt": "He said that the enemy had many soldiers, whom no one could easily conquer.",
+    "answer": "ἔφη τοὺς πολεμίους πολλοὺς ἔχειν στρατιώτας, οὓς οὐδένα ἂν ῥᾳδίως νικῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "τοὺς",
+     "πολεμίους",
+     "πολλοὺς",
+     "ἔχειν",
+     "στρατιώτας",
+     "οὓς",
+     "οὐδένα",
+     "ἂν",
+     "ῥᾳδίως",
+     "νικῆσαι"
+    ]
+   },
+   {
+    "prompt": "He would not allow them to enter the city; for it was not safe.",
+    "answer": "οὐκ εἴα αὐτοὺς εἰς τὴν πόλιν εἰσιέναι· οὐ γὰρ εἶναι ἀσφαλές.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "εἴα",
+     "αὐτοὺς",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "εἰσιέναι",
+     "οὐ",
+     "γὰρ",
+     "εἶναι",
+     "ἀσφαλές"
+    ]
+   },
+   {
+    "prompt": "The general related that, after crossing the river, he pitched camp.",
+    "answer": "ὁ στρατηγὸς διηγεῖτο, ἐπεὶ τὸν ποταμὸν διαβῆναι, στρατοπεδεύσασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "διηγεῖτο",
+     "ἐπεὶ",
+     "τὸν",
+     "ποταμὸν",
+     "διαβῆναι",
+     "στρατοπεδεύσασθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t15",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "She knew that it was not possible for her to escape.",
+    "answer": "ᾔδει ὅτι οὐχ οἷόν τε ἦν αὐτῇ ἀποφυγεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔδει",
+     "ὅτι",
+     "οὐχ",
+     "οἷόν",
+     "τε",
+     "ἦν",
+     "αὐτῇ",
+     "ἀποφυγεῖν"
+    ]
+   },
+   {
+    "prompt": "The Greeks perceived that they were in great danger.",
+    "answer": "ᾔσθοντο οἱ Ἕλληνες ὅτι ἐν μεγάλῳ κινδύνῳ ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔσθοντο",
+     "οἱ",
+     "Ἕλληνες",
+     "ὅτι",
+     "ἐν",
+     "μεγάλῳ",
+     "κινδύνῳ",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "He showed by his deeds that these things were not true.",
+    "answer": "τοῖς ἔργοις ἐδήλωσεν ὅτι οὐκ ἀληθῆ ταῦτα ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ἔργοις",
+     "ἐδήλωσεν",
+     "ὅτι",
+     "οὐκ",
+     "ἀληθῆ",
+     "ταῦτα",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "They said that he was not justly ruling the Greeks, if he enslaved the cities.",
+    "answer": "ἔλεγον οὐ δικαίως αὐτὸν τῶν Ἑλλήνων ἄρχειν, εἰ τὰς πόλεις ἐδούλου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "οὐ",
+     "δικαίως",
+     "αὐτὸν",
+     "τῶν",
+     "Ἑλλήνων",
+     "ἄρχειν",
+     "εἰ",
+     "τὰς",
+     "πόλεις",
+     "ἐδούλου"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t16",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The story goes that Cyrus asked the old man about the road.",
+    "answer": "λέγει ὁ λόγος ὅτι ὁ Κῦρος τὸν πρεσβύτην τὴν ὁδὸν ἔροιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγει",
+     "ὁ",
+     "λόγος",
+     "ὅτι",
+     "Κῦρος",
+     "τὸν",
+     "πρεσβύτην",
+     "τὴν",
+     "ὁδὸν",
+     "ἔροιτο"
+    ]
+   },
+   {
+    "prompt": "Those who had been sent tell the king that the enemy were advancing.",
+    "answer": "οἱ πεμφθέντες λέγουσι τῷ βασιλεῖ ὅτι οἱ πολέμιοι προσελαύνοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πεμφθέντες",
+     "λέγουσι",
+     "τῷ",
+     "βασιλεῖ",
+     "ὅτι",
+     "πολέμιοι",
+     "προσελαύνοιεν"
+    ]
+   },
+   {
+    "prompt": "He said that the Athenians had gone to war against them because they had refused to give back the land.",
+    "answer": "ἔλεγεν ὅτι οἱ Ἀθηναῖοι πολεμήσειαν αὐτοῖς, ὅτι οὐκ ἐθελήσειαν τὴν χώραν ἀποδοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "πολεμήσειαν",
+     "αὐτοῖς",
+     "οὐκ",
+     "ἐθελήσειαν",
+     "τὴν",
+     "χώραν",
+     "ἀποδοῦναι"
+    ]
+   },
+   {
+    "prompt": "Many said that the plan was good; for there would be no danger.",
+    "answer": "πολλοὶ ἔλεγον ὅτι καλὸν εἴη τὸ βούλευμα· κίνδυνος γὰρ οὐδεὶς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολλοὶ",
+     "ἔλεγον",
+     "ὅτι",
+     "καλὸν",
+     "εἴη",
+     "τὸ",
+     "βούλευμα",
+     "κίνδυνος",
+     "γὰρ",
+     "οὐδεὶς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t17",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He answered that he had sent the messengers to the general.",
+    "answer": "ἀπεκρίνατο ὅτι τοὺς ἀγγέλους πρὸς τὸν στρατηγὸν πέμψειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "τοὺς",
+     "ἀγγέλους",
+     "πρὸς",
+     "τὸν",
+     "στρατηγὸν",
+     "πέμψειεν"
+    ]
+   },
+   {
+    "prompt": "The old man said that he had learned these things from the priests.",
+    "answer": "ὁ γέρων ἔφη ὅτι ταῦτα παρὰ τῶν ἱερέων μάθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἔφη",
+     "ὅτι",
+     "ταῦτα",
+     "παρὰ",
+     "τῶν",
+     "ἱερέων",
+     "μάθοι"
+    ]
+   },
+   {
+    "prompt": "The jurors perceived that the witness had spoken the truth.",
+    "answer": "οἱ δικασταὶ ᾔσθοντο ὅτι ὁ μάρτυς τὰ ἀληθῆ εἴποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ᾔσθοντο",
+     "ὅτι",
+     "ὁ",
+     "μάρτυς",
+     "τὰ",
+     "ἀληθῆ",
+     "εἴποι"
+    ]
+   },
+   {
+    "prompt": "I heard that the soldiers had abandoned their weapons in the river.",
+    "answer": "ἤκουσα ὅτι οἱ στρατιῶται τὰ ὅπλα ἐν τῷ ποταμῷ καταλίποιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤκουσα",
+     "ὅτι",
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ὅπλα",
+     "ἐν",
+     "τῷ",
+     "ποταμῷ",
+     "καταλίποιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t18",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He related that the enemy were fortifying the harbor.",
+    "answer": "διηγήσατο ὅτι οἱ πολέμιοι τὸν λιμένα τειχίζοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διηγήσατο",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "τὸν",
+     "λιμένα",
+     "τειχίζοιεν"
+    ]
+   },
+   {
+    "prompt": "The scout reported that the barbarians were guarding the bridge.",
+    "answer": "ὁ σκοπὸς ἤγγειλεν ὅτι οἱ βάρβαροι τὴν γέφυραν φυλάττοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σκοπὸς",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "βάρβαροι",
+     "τὴν",
+     "γέφυραν",
+     "φυλάττοιεν"
+    ]
+   },
+   {
+    "prompt": "The general believed that the allies were being besieged.",
+    "answer": "ὁ στρατηγὸς ἐνόμιζεν ὅτι οἱ σύμμαχοι ἐπολιορκοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐνόμιζεν",
+     "ὅτι",
+     "οἱ",
+     "σύμμαχοι",
+     "ἐπολιορκοῦντο"
+    ]
+   },
+   {
+    "prompt": "The prisoners confessed that they were plotting against the king.",
+    "answer": "οἱ αἰχμάλωτοι ὡμολόγησαν ὅτι τῷ βασιλεῖ ἐπιβουλεύοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ὡμολόγησαν",
+     "ὅτι",
+     "τῷ",
+     "βασιλεῖ",
+     "ἐπιβουλεύοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t19",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They pleaded that they would not have fled, if the general had ordered them to stay.",
+    "answer": "ἀπελογοῦντο ὅτι οὐκ ἂν ἔφυγον, εἰ ὁ στρατηγὸς αὐτοὺς μένειν ἐκέλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπελογοῦντο",
+     "ὅτι",
+     "οὐκ",
+     "ἂν",
+     "ἔφυγον",
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "αὐτοὺς",
+     "μένειν",
+     "ἐκέλευσεν"
+    ]
+   },
+   {
+    "prompt": "He said that it would have been disgraceful to betray his comrades.",
+    "answer": "ἔφη ὅτι αἰσχρὸν ἂν ἦν τοὺς ἑταίρους προδοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "ὅτι",
+     "αἰσχρὸν",
+     "ἂν",
+     "ἦν",
+     "τοὺς",
+     "ἑταίρους",
+     "προδοῦναι"
+    ]
+   },
+   {
+    "prompt": "They answered that they ought to have honored the gods.",
+    "answer": "ἀπεκρίναντο ὅτι ἐχρῆν τοὺς θεοὺς τιμᾶν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίναντο",
+     "ὅτι",
+     "ἐχρῆν",
+     "τοὺς",
+     "θεοὺς",
+     "τιμᾶν"
+    ]
+   },
+   {
+    "prompt": "He declared that the city would never have been captured, if the citizens had been willing to fight.",
+    "answer": "ἀπεφήνατο ὅτι ἡ πόλις οὐκ ἄν ποτε ἑάλω, εἰ οἱ πολῖται μάχεσθαι ἠθέλησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεφήνατο",
+     "ὅτι",
+     "ἡ",
+     "πόλις",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "ἑάλω",
+     "εἰ",
+     "οἱ",
+     "πολῖται",
+     "μάχεσθαι",
+     "ἠθέλησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t20",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He answered that they would flee from their fatherland rather than submit to the enemy.",
+    "answer": "ἀπεκρίνατο ὅτι φεύγοιεν ἂν ἐκ τῆς πατρίδος μᾶλλον ἢ τοῖς πολεμίοις ὑπακούσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "φεύγοιεν",
+     "ἂν",
+     "ἐκ",
+     "τῆς",
+     "πατρίδος",
+     "μᾶλλον",
+     "ἢ",
+     "τοῖς",
+     "πολεμίοις",
+     "ὑπακούσειαν"
+    ]
+   },
+   {
+    "prompt": "The envoys said that they honored those gods whom the city honored.",
+    "answer": "οἱ πρέσβεις ἔλεγον ὅτι τούτους τοὺς θεοὺς τιμῷεν οὓς ἡ πόλις τιμῴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἔλεγον",
+     "ὅτι",
+     "τούτους",
+     "τοὺς",
+     "θεοὺς",
+     "τιμῷεν",
+     "οὓς",
+     "ἡ",
+     "πόλις",
+     "τιμῴη"
+    ]
+   },
+   {
+    "prompt": "They reported that the army was marching wherever the general led.",
+    "answer": "ἤγγειλαν ὅτι τὸ στράτευμα πορεύοιτο ὅποι ὁ στρατηγὸς ἡγοῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἤγγειλαν",
+     "ὅτι",
+     "τὸ",
+     "στράτευμα",
+     "πορεύοιτο",
+     "ὅποι",
+     "ὁ",
+     "στρατηγὸς",
+     "ἡγοῖτο"
+    ]
+   },
+   {
+    "prompt": "He said that no one would ever willingly choose slavery instead of freedom.",
+    "answer": "εἶπεν ὅτι οὐδεὶς ἂν ἑκὼν τὴν δουλείαν ἀντὶ τῆς ἐλευθερίας ἕλοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἶπεν",
+     "ὅτι",
+     "οὐδεὶς",
+     "ἂν",
+     "ἑκὼν",
+     "τὴν",
+     "δουλείαν",
+     "ἀντὶ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἕλοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t21",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He perceived that the road was difficult and full of dangers.",
+    "answer": "ᾔσθετο ὅτι ἡ ὁδὸς χαλεπὴ ἦν καὶ κινδύνων μεστή.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔσθετο",
+     "ὅτι",
+     "ἡ",
+     "ὁδὸς",
+     "χαλεπὴ",
+     "ἦν",
+     "καὶ",
+     "κινδύνων",
+     "μεστή"
+    ]
+   },
+   {
+    "prompt": "He showed by his deed that he was a friend to the citizens.",
+    "answer": "ἔργῳ ἐδήλωσεν ὅτι φίλος τοῖς πολίταις ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔργῳ",
+     "ἐδήλωσεν",
+     "ὅτι",
+     "φίλος",
+     "τοῖς",
+     "πολίταις",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The Greeks perceived that they were in great danger beside the river.",
+    "answer": "οἱ Ἕλληνες ᾔσθοντο ὅτι ἐν μεγάλῳ κινδύνῳ παρὰ τῷ ποταμῷ ἦσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἕλληνες",
+     "ᾔσθοντο",
+     "ὅτι",
+     "ἐν",
+     "μεγάλῳ",
+     "κινδύνῳ",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ",
+     "ἦσαν"
+    ]
+   },
+   {
+    "prompt": "He knew well that the enemy held the strongest position.",
+    "answer": "εὖ ᾔδει ὅτι οἱ πολέμιοι τὸ ἰσχυρότατον χωρίον εἶχον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "ᾔδει",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "τὸ",
+     "ἰσχυρότατον",
+     "χωρίον",
+     "εἶχον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t22",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "They were angry with the general because he had betrayed them.",
+    "answer": "ὠργίζοντο τῷ στρατηγῷ ὅτι σφᾶς προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὠργίζοντο",
+     "τῷ",
+     "στρατηγῷ",
+     "ὅτι",
+     "σφᾶς",
+     "προδοίη"
+    ]
+   },
+   {
+    "prompt": "He answered that he was willing to obey, but that it was impossible to march by night.",
+    "answer": "ἀπεκρίνατο ὅτι πείθεσθαι μὲν βούλοιτο, ἀδύνατον μέντοι εἶναι νυκτὸς πορεύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "πείθεσθαι",
+     "μὲν",
+     "βούλοιτο",
+     "ἀδύνατον",
+     "μέντοι",
+     "εἶναι",
+     "νυκτὸς",
+     "πορεύεσθαι"
+    ]
+   },
+   {
+    "prompt": "He said that he would honor those men who had saved the city.",
+    "answer": "ἔφη ὅτι τούτους τιμήσοι οἳ τὴν πόλιν ἔσωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "ὅτι",
+     "τούτους",
+     "τιμήσοι",
+     "οἳ",
+     "τὴν",
+     "πόλιν",
+     "ἔσωσαν"
+    ]
+   },
+   {
+    "prompt": "They said that he was not saving the city rightly, if he was banishing the best men.",
+    "answer": "ἔλεγον ὅτι οὐ καλῶς τὴν πόλιν ἔσῳζεν, εἰ τοὺς ἀρίστους ἐξέβαλλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγον",
+     "ὅτι",
+     "οὐ",
+     "καλῶς",
+     "τὴν",
+     "πόλιν",
+     "ἔσῳζεν",
+     "εἰ",
+     "τοὺς",
+     "ἀρίστους",
+     "ἐξέβαλλεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t23",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "The ambassadors reported that the citizens, fearing the war, had sent gifts to the king.",
+    "answer": "οἱ πρέσβεις ἤγγειλαν ὅτι οἱ πολῖται, τὸν πόλεμον φοβούμενοι, δῶρα τῷ βασιλεῖ πέμψειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἤγγειλαν",
+     "ὅτι",
+     "πολῖται",
+     "τὸν",
+     "πόλεμον",
+     "φοβούμενοι",
+     "δῶρα",
+     "τῷ",
+     "βασιλεῖ",
+     "πέμψειαν"
+    ]
+   },
+   {
+    "prompt": "The old man answered that he had suffered many terrible things at the hands of the enemy.",
+    "answer": "ὁ γέρων ἀπεκρίνατο ὅτι πολλὰ καὶ δεινὰ πάθοι ὑπὸ τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "πολλὰ",
+     "καὶ",
+     "δεινὰ",
+     "πάθοι",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "The general, having drawn up the army, perceived that the enemy had fled to the mountains during the night.",
+    "answer": "ὁ στρατηγός, τὸ στράτευμα τάξας, ᾔσθετο ὅτι οἱ πολέμιοι νυκτὸς εἰς τὰ ὄρη φύγοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "τὸ",
+     "στράτευμα",
+     "τάξας",
+     "ᾔσθετο",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "νυκτὸς",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "φύγοιεν"
+    ]
+   },
+   {
+    "prompt": "He said that the sailors were guarding the harbor and awaiting the fleet.",
+    "answer": "ἔλεγεν ὅτι οἱ ναῦται τὸν λιμένα φυλάττοιεν καὶ τὸ ναυτικὸν ἀναμένοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "οἱ",
+     "ναῦται",
+     "τὸν",
+     "λιμένα",
+     "φυλάττοιεν",
+     "καὶ",
+     "τὸ",
+     "ναυτικὸν",
+     "ἀναμένοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t24",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that it would have been better to die then than to live shamefully.",
+    "answer": "ἔλεγεν ὅτι κρεῖττον ἦν τότε ἀποθανεῖν ἢ αἰσχρῶς ζῆν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "κρεῖττον",
+     "ἦν",
+     "τότε",
+     "ἀποθανεῖν",
+     "ἢ",
+     "αἰσχρῶς",
+     "ζῆν"
+    ]
+   },
+   {
+    "prompt": "The captives pleaded that they would not have taken up arms, if the king had not compelled them.",
+    "answer": "οἱ αἰχμάλωτοι ἀπελογοῦντο ὅτι οὐκ ἂν τὰ ὅπλα ἔλαβον, εἰ μὴ ὁ βασιλεὺς αὐτοὺς ἠνάγκασεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ἀπελογοῦντο",
+     "ὅτι",
+     "οὐκ",
+     "ἂν",
+     "τὰ",
+     "ὅπλα",
+     "ἔλαβον",
+     "εἰ",
+     "μὴ",
+     "ὁ",
+     "βασιλεὺς",
+     "αὐτοὺς",
+     "ἠνάγκασεν"
+    ]
+   },
+   {
+    "prompt": "She answered that she would gladly have obeyed the laws, if anyone had shown her what was just.",
+    "answer": "ἀπεκρίνατο ὅτι ἡδέως ἂν τοῖς νόμοις ἐπείθετο, εἴ τις αὐτῇ τὸ δίκαιον ἔδειξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "ἡδέως",
+     "ἂν",
+     "τοῖς",
+     "νόμοις",
+     "ἐπείθετο",
+     "εἴ",
+     "τις",
+     "αὐτῇ",
+     "τὸ",
+     "δίκαιον",
+     "ἔδειξεν"
+    ]
+   },
+   {
+    "prompt": "The citizens replied that they would never have surrendered the city, if the allies had come to their aid.",
+    "answer": "οἱ πολῖται ἀπεκρίναντο ὅτι οὐκ ἄν ποτε τὴν πόλιν παρέδοσαν, εἰ οἱ σύμμαχοι ἐβοήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἀπεκρίναντο",
+     "ὅτι",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "τὴν",
+     "πόλιν",
+     "παρέδοσαν",
+     "εἰ",
+     "σύμμαχοι",
+     "ἐβοήθησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t25",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He knew that the city was in danger and that the citizens were afraid.",
+    "answer": "ᾔδει ὅτι ἡ πόλις ἐν κινδύνῳ ἦν καὶ οἱ πολῖται ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ᾔδει",
+     "ὅτι",
+     "ἡ",
+     "πόλις",
+     "ἐν",
+     "κινδύνῳ",
+     "ἦν",
+     "καὶ",
+     "οἱ",
+     "πολῖται",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "By taking flight he made clear that the accusation was true.",
+    "answer": "φεύγων ἐδήλωσεν ὅτι ἀληθὴς ἡ κατηγορία ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεύγων",
+     "ἐδήλωσεν",
+     "ὅτι",
+     "ἀληθὴς",
+     "ἡ",
+     "κατηγορία",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "He replied that he would sooner perish than betray his friends.",
+    "answer": "ἀπεκρίνατο ὅτι πρόσθεν ἂν ἀπόλοιτο ἢ τοὺς φίλους προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "πρόσθεν",
+     "ἂν",
+     "ἀπόλοιτο",
+     "ἢ",
+     "τοὺς",
+     "φίλους",
+     "προδοίη"
+    ]
+   },
+   {
+    "prompt": "He explained that they always encamped wherever there was water.",
+    "answer": "διηγεῖτο ὅτι ἀεὶ στρατοπεδεύοιντο ὅπου ὕδωρ εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διηγεῖτο",
+     "ὅτι",
+     "ἀεὶ",
+     "στρατοπεδεύοιντο",
+     "ὅπου",
+     "ὕδωρ",
+     "εἴη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2623-past-tenses-in-indirect-discourse-t26",
+  "sectionId": "sm-2623-past-tenses-in-indirect-discourse",
+  "questions": [
+   {
+    "prompt": "He said that he would send the money to the general.",
+    "answer": "ἔλεγεν ὅτι τὸ ἀργύριον τῷ στρατηγῷ πέμψοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "τὸ",
+     "ἀργύριον",
+     "τῷ",
+     "στρατηγῷ",
+     "πέμψοι"
+    ]
+   },
+   {
+    "prompt": "The soldiers were vexed at the leader because he had abandoned the wounded.",
+    "answer": "οἱ στρατιῶται τῷ ἡγεμόνι ἤχθοντο ὅτι τοὺς τετρωμένους καταλίποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "τῷ",
+     "ἡγεμόνι",
+     "ἤχθοντο",
+     "ὅτι",
+     "τοὺς",
+     "τετρωμένους",
+     "καταλίποι"
+    ]
+   },
+   {
+    "prompt": "He answered that the messengers had already arrived.",
+    "answer": "ἀπεκρίνατο ὅτι οἱ ἄγγελοι ἤδη ἀφιγμένοι εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπεκρίνατο",
+     "ὅτι",
+     "οἱ",
+     "ἄγγελοι",
+     "ἤδη",
+     "ἀφιγμένοι",
+     "εἶεν"
+    ]
+   },
+   {
+    "prompt": "He said that he did not accept the crown which the citizens had offered.",
+    "answer": "ἔλεγεν ὅτι οὐ δέξαιτο τὸν στέφανον ὃν οἱ πολῖται προσήνεγκαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλεγεν",
+     "ὅτι",
+     "οὐ",
+     "δέξαιτο",
+     "τὸν",
+     "στέφανον",
+     "ὃν",
+     "οἱ",
+     "πολῖται",
+     "προσήνεγκαν"
+    ]
+   }
+  ]
  }
 ]

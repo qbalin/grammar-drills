@@ -418,5 +418,1111 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t8",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "Of those whom I meet, I most admire the brave general.",
+    "answer": "ὧν ἐντυγχάνω, μάλιστα ἄγαμαι τὸν ἀνδρεῖον στρατηγόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὧν",
+     "ἐντυγχάνω",
+     "μάλιστα",
+     "ἄγαμαι",
+     "τὸν",
+     "ἀνδρεῖον",
+     "στρατηγόν"
+    ]
+   },
+   {
+    "prompt": "The wise man reveals his virtue by the deeds which he performs.",
+    "answer": "ὁ σοφὸς δηλοῖ τὴν ἀρετὴν ἐξ ὧν πράττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "δηλοῖ",
+     "τὴν",
+     "ἀρετὴν",
+     "ἐξ",
+     "ὧν",
+     "πράττει"
+    ]
+   },
+   {
+    "prompt": "I am grateful to the gods for the good things I have received.",
+    "answer": "χάριν ἔχω τοῖς θεοῖς ὧν εὖ πέπονθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χάριν",
+     "ἔχω",
+     "τοῖς",
+     "θεοῖς",
+     "ὧν",
+     "εὖ",
+     "πέπονθα"
+    ]
+   },
+   {
+    "prompt": "The old man remembers the toils which he endured.",
+    "answer": "ὁ γέρων μέμνηται ὧν ὑπέμεινε πόνων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "μέμνηται",
+     "ὧν",
+     "ὑπέμεινε",
+     "πόνων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t9",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "The soldiers abided by the oaths which they had sworn.",
+    "answer": "οἱ στρατιῶται ἐνέμειναν οἷς ὤμοσαν ὅρκοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐνέμειναν",
+     "οἷς",
+     "ὤμοσαν",
+     "ὅρκοις"
+    ]
+   },
+   {
+    "prompt": "This custom resembles the one which our fathers established.",
+    "answer": "τοῦτο τὸ ἔθος ὅμοιόν ἐστιν ᾧ οἱ πατέρες κατέστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ἔθος",
+     "ὅμοιόν",
+     "ἐστιν",
+     "ᾧ",
+     "οἱ",
+     "πατέρες",
+     "κατέστησαν"
+    ]
+   },
+   {
+    "prompt": "I always take pleasure in the things which the poet sings.",
+    "answer": "ἀεὶ ἥδομαι οἷς ὁ ποιητὴς ᾄδει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀεὶ",
+     "ἥδομαι",
+     "οἷς",
+     "ὁ",
+     "ποιητὴς",
+     "ᾄδει"
+    ]
+   },
+   {
+    "prompt": "He obeys the laws by which the city is governed.",
+    "answer": "πείθεται οἷς ἡ πόλις διοικεῖται νόμοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πείθεται",
+     "οἷς",
+     "ἡ",
+     "πόλις",
+     "διοικεῖται",
+     "νόμοις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t10",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "It is hard to hold out against such men as the Spartans.",
+    "answer": "χαλεπόν ἐστιν ἀντέχειν οἵοις καὶ Λακεδαιμονίοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστιν",
+     "ἀντέχειν",
+     "οἵοις",
+     "καὶ",
+     "Λακεδαιμονίοις"
+    ]
+   },
+   {
+    "prompt": "When the storm was as terrible as could be, the sailors despaired.",
+    "answer": "χειμῶνος ὄντος οἵου δεινοτάτου, οἱ ναῦται ἀπέγνωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χειμῶνος",
+     "ὄντος",
+     "οἵου",
+     "δεινοτάτου",
+     "οἱ",
+     "ναῦται",
+     "ἀπέγνωσαν"
+    ]
+   },
+   {
+    "prompt": "I would gladly obey such a general as you are.",
+    "answer": "ἡδέως ἂν πειθοίμην οἵῳ σοι στρατηγῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἂν",
+     "πειθοίμην",
+     "οἵῳ",
+     "σοι",
+     "στρατηγῷ"
+    ]
+   },
+   {
+    "prompt": "The king summoned as many soldiers as he found in the city.",
+    "answer": "ὁ βασιλεὺς συνεκάλεσεν ὅσους ἐν τῇ πόλει στρατιώτας ηὗρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "συνεκάλεσεν",
+     "ὅσους",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "στρατιώτας",
+     "ηὗρεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t11",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "He praised the courage which the young men displayed.",
+    "answer": "ἐπῄνεσεν ἣν οἱ νεανίαι ἀνδρείαν ἐπεδείξαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπῄνεσεν",
+     "ἣν",
+     "οἱ",
+     "νεανίαι",
+     "ἀνδρείαν",
+     "ἐπεδείξαντο"
+    ]
+   },
+   {
+    "prompt": "The country into which they invaded was large.",
+    "answer": "εἰς ἣν ἐνέβαλον χώραν μεγάλη ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "ἣν",
+     "ἐνέβαλον",
+     "χώραν",
+     "μεγάλη",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "Guard the freedom which your ancestors won.",
+    "answer": "φυλάττετε ἣν οἱ πρόγονοι ἐκτήσαντο ἐλευθερίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλάττετε",
+     "ἣν",
+     "οἱ",
+     "πρόγονοι",
+     "ἐκτήσαντο",
+     "ἐλευθερίαν"
+    ]
+   },
+   {
+    "prompt": "The wall which the enemy built was strong.",
+    "answer": "ὃ οἱ πολέμιοι ᾠκοδόμησαν τεῖχος ἰσχυρὸν ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃ",
+     "οἱ",
+     "πολέμιοι",
+     "ᾠκοδόμησαν",
+     "τεῖχος",
+     "ἰσχυρὸν",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t12",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "The peace which they made did not last long.",
+    "answer": "ἣν ἐποιήσαντο εἰρήνην, οὐ πολὺν χρόνον διέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἣν",
+     "ἐποιήσαντο",
+     "εἰρήνην",
+     "οὐ",
+     "πολὺν",
+     "χρόνον",
+     "διέμεινεν"
+    ]
+   },
+   {
+    "prompt": "The traitor whom everyone hates, this man now rules the city.",
+    "answer": "ὃν πάντες μισοῦσι προδότην, οὗτος νῦν ἄρχει τῆς πόλεως.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃν",
+     "πάντες",
+     "μισοῦσι",
+     "προδότην",
+     "οὗτος",
+     "νῦν",
+     "ἄρχει",
+     "τῆς",
+     "πόλεως"
+    ]
+   },
+   {
+    "prompt": "There is no one whom the tyrant did not harm.",
+    "answer": "οὐδένα ὅντινα οὐκ ἔβλαψεν ὁ τύραννος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδένα",
+     "ὅντινα",
+     "οὐκ",
+     "ἔβλαψεν",
+     "ὁ",
+     "τύραννος"
+    ]
+   },
+   {
+    "prompt": "To betray one's friends is more shameful than anything whatsoever.",
+    "answer": "τὸ τοὺς φίλους προδιδόναι οὐδενὸς ὅτου οὐκ αἴσχιόν ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τοὺς",
+     "φίλους",
+     "προδιδόναι",
+     "οὐδενὸς",
+     "ὅτου",
+     "οὐκ",
+     "αἴσχιόν",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t13",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "The exiles returned from the place where they had been banished.",
+    "answer": "οἱ φυγάδες ἐπανῆλθον ὅθεν ἐξέπεσον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "φυγάδες",
+     "ἐπανῆλθον",
+     "ὅθεν",
+     "ἐξέπεσον"
+    ]
+   },
+   {
+    "prompt": "For his country he endured a wonderful amount of toil.",
+    "answer": "ὑπὲρ τῆς πατρίδος θαυμαστοὺς ὅσους πόνους ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "θαυμαστοὺς",
+     "ὅσους",
+     "πόνους",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "Whom the gods love dies young.",
+    "answer": "ὃν οἱ θεοὶ φιλοῦσιν ἀποθνῄσκει νέος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃν",
+     "οἱ",
+     "θεοὶ",
+     "φιλοῦσιν",
+     "ἀποθνῄσκει",
+     "νέος"
+    ]
+   },
+   {
+    "prompt": "It is necessary to know the customs of those among whom we live.",
+    "answer": "δεῖ εἰδέναι τὰ ἔθη παρὰ οἷς οἰκοῦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "εἰδέναι",
+     "τὰ",
+     "ἔθη",
+     "παρὰ",
+     "οἷς",
+     "οἰκοῦμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t14",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "I remember the kindnesses which I received from you.",
+    "answer": "μέμνημαι τῶν εὐεργεσιῶν ὧν παρὰ σοῦ ἔλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνημαι",
+     "τῶν",
+     "εὐεργεσιῶν",
+     "ὧν",
+     "παρὰ",
+     "σοῦ",
+     "ἔλαβον"
+    ]
+   },
+   {
+    "prompt": "The citizens trust the laws which they themselves enacted.",
+    "answer": "οἱ πολῖται πιστεύουσι τοῖς νόμοις οἷς αὐτοὶ ἔθεντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "πιστεύουσι",
+     "τοῖς",
+     "νόμοις",
+     "οἷς",
+     "αὐτοὶ",
+     "ἔθεντο"
+    ]
+   },
+   {
+    "prompt": "He attacked the enemy with what ships he had.",
+    "answer": "προσέβαλε τοῖς πολεμίοις σὺν αἷς εἶχε ναυσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσέβαλε",
+     "τοῖς",
+     "πολεμίοις",
+     "σὺν",
+     "αἷς",
+     "εἶχε",
+     "ναυσίν"
+    ]
+   },
+   {
+    "prompt": "The letter which you sent, this one never arrived.",
+    "answer": "τὴν ἐπιστολὴν ἣν ἔπεμψας, αὕτη οὐδέποτε ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἐπιστολὴν",
+     "ἣν",
+     "ἔπεμψας",
+     "αὕτη",
+     "οὐδέποτε",
+     "ἀφίκετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t15",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "I judge each person from what he does, not from what he says.",
+    "answer": "κρίνω ἕκαστον ἐξ ὧν πράττει, οὐκ ἐξ ὧν λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "κρίνω",
+     "ἕκαστον",
+     "ἐξ",
+     "ὧν",
+     "πράττει",
+     "οὐκ",
+     "λέγει"
+    ]
+   },
+   {
+    "prompt": "The farmer endured an astonishing amount of toil in his field.",
+    "answer": "ὁ γεωργὸς ἐν τῷ ἀγρῷ πόνον θαυμαστὸν ὅσον ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "ἐν",
+     "τῷ",
+     "ἀγρῷ",
+     "πόνον",
+     "θαυμαστὸν",
+     "ὅσον",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "It is fitting for such men as we are to speak the truth.",
+    "answer": "τοῖς οἵοις ἡμῖν πρέπει τὰ ἀληθῆ λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "οἵοις",
+     "ἡμῖν",
+     "πρέπει",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t16",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "The wise man is content with what fortune has given him.",
+    "answer": "ὁ σοφὸς ἀρκεῖται οἷς ἡ τύχη αὐτῷ δέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "ἀρκεῖται",
+     "οἷς",
+     "ἡ",
+     "τύχη",
+     "αὐτῷ",
+     "δέδωκεν"
+    ]
+   },
+   {
+    "prompt": "The rich man enjoys the goods which he has acquired.",
+    "answer": "ὁ πλούσιος ἀπολαύει τῶν ἀγαθῶν ὧν κέκτηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πλούσιος",
+     "ἀπολαύει",
+     "τῶν",
+     "ἀγαθῶν",
+     "ὧν",
+     "κέκτηται"
+    ]
+   },
+   {
+    "prompt": "He revealed to the king the plan which he had.",
+    "answer": "ἐμήνυσε τῷ βασιλεῖ ἣν εἶχε βουλήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμήνυσε",
+     "τῷ",
+     "βασιλεῖ",
+     "ἣν",
+     "εἶχε",
+     "βουλήν"
+    ]
+   },
+   {
+    "prompt": "This man in the city helped every single person.",
+    "answer": "οὗτος ἐν τῇ πόλει οὐδένα ὅντινα οὐκ ὠφέλησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτος",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "οὐδένα",
+     "ὅντινα",
+     "οὐκ",
+     "ὠφέλησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t17",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "We are nourished by what the earth bears.",
+    "answer": "τρεφόμεθα ἀπὸ ὧν ἡ γῆ φέρει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τρεφόμεθα",
+     "ἀπὸ",
+     "ὧν",
+     "ἡ",
+     "γῆ",
+     "φέρει"
+    ]
+   },
+   {
+    "prompt": "The general sent for his allies from where he had dispatched them.",
+    "answer": "ὁ στρατηγὸς μετεπέμψατο τοὺς συμμάχους ὅθεν ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "μετεπέμψατο",
+     "τοὺς",
+     "συμμάχους",
+     "ὅθεν",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "All the victors shared in the spoils which they had taken.",
+    "answer": "πάντες οἱ νικήσαντες μετέσχον ὧν εἷλον λαφύρων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "οἱ",
+     "νικήσαντες",
+     "μετέσχον",
+     "ὧν",
+     "εἷλον",
+     "λαφύρων"
+    ]
+   },
+   {
+    "prompt": "The storm being as violent as could be, the ships were destroyed.",
+    "answer": "χειμῶνος ὄντος οἵου βιαιοτάτου αἱ νῆες διεφθάρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χειμῶνος",
+     "ὄντος",
+     "οἵου",
+     "βιαιοτάτου",
+     "αἱ",
+     "νῆες",
+     "διεφθάρησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t18",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "He uses the weapons which he took from the enemy.",
+    "answer": "χρῆται τοῖς ὅπλοις οἷς παρὰ τῶν πολεμίων ἔλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρῆται",
+     "τοῖς",
+     "ὅπλοις",
+     "οἷς",
+     "παρὰ",
+     "τῶν",
+     "πολεμίων",
+     "ἔλαβεν"
+    ]
+   },
+   {
+    "prompt": "Whom the people honor, this man rules the city.",
+    "answer": "ὃν ὁ δῆμος τιμᾷ, οὗτος τῆς πόλεως ἄρχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὃν",
+     "ὁ",
+     "δῆμος",
+     "τιμᾷ",
+     "οὗτος",
+     "τῆς",
+     "πόλεως",
+     "ἄρχει"
+    ]
+   },
+   {
+    "prompt": "Do not throw away the freedom which you received from your fathers.",
+    "answer": "μὴ ἀποβάλητε ἣν παρὰ τῶν πατέρων ἐλάβετε ἐλευθερίαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἀποβάλητε",
+     "ἣν",
+     "παρὰ",
+     "τῶν",
+     "πατέρων",
+     "ἐλάβετε",
+     "ἐλευθερίαν"
+    ]
+   },
+   {
+    "prompt": "It is hard to contend against such a man as you.",
+    "answer": "χαλεπόν ἐστι πρὸς οἷον σὲ ἄνδρα ἀγωνίζεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπόν",
+     "ἐστι",
+     "πρὸς",
+     "οἷον",
+     "σὲ",
+     "ἄνδρα",
+     "ἀγωνίζεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t19",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "Remember what you suffered at the hands of the tyrant.",
+    "answer": "μέμνησο ὧν ὑπὸ τοῦ τυράννου ἔπαθες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέμνησο",
+     "ὧν",
+     "ὑπὸ",
+     "τοῦ",
+     "τυράννου",
+     "ἔπαθες"
+    ]
+   },
+   {
+    "prompt": "The jurors believe what the witnesses say.",
+    "answer": "οἱ δικασταὶ πιστεύουσιν οἷς οἱ μάρτυρες λέγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "πιστεύουσιν",
+     "οἷς",
+     "μάρτυρες",
+     "λέγουσιν"
+    ]
+   },
+   {
+    "prompt": "The general whom the soldiers chose, this one led them well.",
+    "answer": "τὸν στρατηγὸν ὃν οἱ στρατιῶται εἵλοντο, οὗτος καλῶς αὐτοὺς ἦγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "στρατηγὸν",
+     "ὃν",
+     "οἱ",
+     "στρατιῶται",
+     "εἵλοντο",
+     "οὗτος",
+     "καλῶς",
+     "αὐτοὺς",
+     "ἦγεν"
+    ]
+   },
+   {
+    "prompt": "He accomplished this task with an astonishing amount of zeal.",
+    "answer": "τοῦτο τὸ ἔργον μετὰ σπουδῆς θαυμαστῆς ὅσης διεπράξατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ἔργον",
+     "μετὰ",
+     "σπουδῆς",
+     "θαυμαστῆς",
+     "ὅσης",
+     "διεπράξατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t20",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "The general was worthy of the honors which the city gave him.",
+    "answer": "ἄξιος ἦν ὁ στρατηγὸς τῶν τιμῶν ὧν ἡ πόλις αὐτῷ ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄξιος",
+     "ἦν",
+     "ὁ",
+     "στρατηγὸς",
+     "τῶν",
+     "τιμῶν",
+     "ὧν",
+     "ἡ",
+     "πόλις",
+     "αὐτῷ",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "We are benefited by the friends whom we have.",
+    "answer": "ὠφελούμεθα ὑπὸ τῶν φίλων ὧν ἔχομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὠφελούμεθα",
+     "ὑπὸ",
+     "τῶν",
+     "φίλων",
+     "ὧν",
+     "ἔχομεν"
+    ]
+   },
+   {
+    "prompt": "He remembered the many toils which he had endured.",
+    "answer": "ἐμέμνητο τῶν πολλῶν πόνων ὧν ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐμέμνητο",
+     "τῶν",
+     "πολλῶν",
+     "πόνων",
+     "ὧν",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "The citizens marveled at the gifts which they received.",
+    "answer": "ἐθαύμαζον οἱ πολῖται τῶν δώρων ὧν ἔλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐθαύμαζον",
+     "οἱ",
+     "πολῖται",
+     "τῶν",
+     "δώρων",
+     "ὧν",
+     "ἔλαβον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t21",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "He obeyed the laws which the city had established.",
+    "answer": "ἐπείθετο τοῖς νόμοις οἷς ἡ πόλις ἔθηκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπείθετο",
+     "τοῖς",
+     "νόμοις",
+     "οἷς",
+     "ἡ",
+     "πόλις",
+     "ἔθηκεν"
+    ]
+   },
+   {
+    "prompt": "We abided by the agreements which we had made.",
+    "answer": "ἐνεμείναμεν ταῖς ὁμολογίαις αἷς ἐποιησάμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνεμείναμεν",
+     "ταῖς",
+     "ὁμολογίαις",
+     "αἷς",
+     "ἐποιησάμεθα"
+    ]
+   },
+   {
+    "prompt": "He gave the prize to the men whom he had seen.",
+    "answer": "ἔδωκε τὸ ἆθλον τοῖς ἀνδράσιν οἷς εἶδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδωκε",
+     "τὸ",
+     "ἆθλον",
+     "τοῖς",
+     "ἀνδράσιν",
+     "οἷς",
+     "εἶδεν"
+    ]
+   },
+   {
+    "prompt": "The king trusted the counsel which the wise men gave.",
+    "answer": "ἐπίστευε τῇ βουλῇ ᾗ οἱ σοφοὶ ἔδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπίστευε",
+     "τῇ",
+     "βουλῇ",
+     "ᾗ",
+     "οἱ",
+     "σοφοὶ",
+     "ἔδοσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t22",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "The city to which the exiles fled was friendly.",
+    "answer": "εἰς ἣν ἔφυγον οἱ φυγάδες πόλιν φιλία ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "ἣν",
+     "ἔφυγον",
+     "οἱ",
+     "φυγάδες",
+     "πόλιν",
+     "φιλία",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The soldiers did not abandon the post which they held.",
+    "answer": "οὐκ ἔλιπον οἱ στρατιῶται ἣν εἶχον τάξιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔλιπον",
+     "οἱ",
+     "στρατιῶται",
+     "ἣν",
+     "εἶχον",
+     "τάξιν"
+    ]
+   },
+   {
+    "prompt": "The admiral sailed out with what ships he had.",
+    "answer": "σὺν αἷς εἶχε ναυσὶν ὁ ναύαρχος ἐξέπλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺν",
+     "αἷς",
+     "εἶχε",
+     "ναυσὶν",
+     "ὁ",
+     "ναύαρχος",
+     "ἐξέπλευσεν"
+    ]
+   },
+   {
+    "prompt": "The orator was discussing the law which he himself had passed.",
+    "answer": "ὁ ῥήτωρ περὶ οὗ αὐτὸς ἔθηκε νόμου διελέγετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ῥήτωρ",
+     "περὶ",
+     "οὗ",
+     "αὐτὸς",
+     "ἔθηκε",
+     "νόμου",
+     "διελέγετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t23",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "I gladly grant a favor to such a man as you.",
+    "answer": "ἡδέως ἐγὼ χαρίζομαι οἵῳ σοι ἀνδρί.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἐγὼ",
+     "χαρίζομαι",
+     "οἵῳ",
+     "σοι",
+     "ἀνδρί"
+    ]
+   },
+   {
+    "prompt": "The storm being as harsh as could be, many perished.",
+    "answer": "γενομένου χειμῶνος οἵου χαλεπωτάτου πολλοὶ ἀπώλοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "γενομένου",
+     "χειμῶνος",
+     "οἵου",
+     "χαλεπωτάτου",
+     "πολλοὶ",
+     "ἀπώλοντο"
+    ]
+   },
+   {
+    "prompt": "The city spent an astonishing amount of silver on the war.",
+    "answer": "ἡ πόλις εἰς τὸν πόλεμον θαυμαστὸν ὅσον ἀργύριον ἀνήλωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "εἰς",
+     "τὸν",
+     "πόλεμον",
+     "θαυμαστὸν",
+     "ὅσον",
+     "ἀργύριον",
+     "ἀνήλωσεν"
+    ]
+   },
+   {
+    "prompt": "The danger being such as you say, they turned back.",
+    "answer": "τοῦ κινδύνου ὄντος οἵου λέγεις ἀνεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "κινδύνου",
+     "ὄντος",
+     "οἵου",
+     "λέγεις",
+     "ἀνεχώρησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t24",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "The messenger whom you await has already arrived.",
+    "answer": "τὸν ἄγγελον ὃν προσδοκᾷς ἥκει ἤδη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "ἄγγελον",
+     "ὃν",
+     "προσδοκᾷς",
+     "ἥκει",
+     "ἤδη"
+    ]
+   },
+   {
+    "prompt": "The treasure which you seek, that lies hidden in the earth.",
+    "answer": "τὸν θησαυρὸν ὃν ζητεῖς, οὗτος ἐν τῇ γῇ κρύπτεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "θησαυρὸν",
+     "ὃν",
+     "ζητεῖς",
+     "οὗτος",
+     "ἐν",
+     "τῇ",
+     "γῇ",
+     "κρύπτεται"
+    ]
+   },
+   {
+    "prompt": "Wherever you go, all will gladly receive you.",
+    "answer": "ὅποι ἂν ἀφίκῃ, πάντες σε ἀσμένως δέξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅποι",
+     "ἂν",
+     "ἀφίκῃ",
+     "πάντες",
+     "σε",
+     "ἀσμένως",
+     "δέξονται"
+    ]
+   },
+   {
+    "prompt": "The army withdrew back to the place from where it had set out.",
+    "answer": "τὸ στράτευμα ἐκεῖσε ἀνεχώρησεν ὅθεν ὡρμήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "στράτευμα",
+     "ἐκεῖσε",
+     "ἀνεχώρησεν",
+     "ὅθεν",
+     "ὡρμήθη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2523-the-antecedent-of-relative-clauses-2523-t25",
+  "sectionId": "sm-2523-the-antecedent-of-relative-clauses-2523",
+  "questions": [
+   {
+    "prompt": "Of those whom I have met, I most admire your father.",
+    "answer": "ὧν ἐντετύχηκα, μάλιστα ἄγαμαι τὸν σὸν πατέρα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὧν",
+     "ἐντετύχηκα",
+     "μάλιστα",
+     "ἄγαμαι",
+     "τὸν",
+     "σὸν",
+     "πατέρα"
+    ]
+   },
+   {
+    "prompt": "We must abide by what we once agreed.",
+    "answer": "δεῖ ἡμᾶς ἐμμένειν οἷς ποτε ὡμολογήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεῖ",
+     "ἡμᾶς",
+     "ἐμμένειν",
+     "οἷς",
+     "ποτε",
+     "ὡμολογήσαμεν"
+    ]
+   },
+   {
+    "prompt": "They wished to know the strength of those against whom they were about to march.",
+    "answer": "ἐβούλοντο εἰδέναι τὴν δύναμιν ἐπὶ οὓς ἔμελλον ἰέναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐβούλοντο",
+     "εἰδέναι",
+     "τὴν",
+     "δύναμιν",
+     "ἐπὶ",
+     "οὓς",
+     "ἔμελλον",
+     "ἰέναι"
+    ]
+   },
+   {
+    "prompt": "This resembles what was said just now.",
+    "answer": "τοῦτο ἔοικεν ᾧ νῦν δὴ ἐλέχθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "ἔοικεν",
+     "ᾧ",
+     "νῦν",
+     "δὴ",
+     "ἐλέχθη"
+    ]
+   }
+  ]
  }
 ]

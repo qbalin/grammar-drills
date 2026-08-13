@@ -689,5 +689,1013 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t11",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "Terrible was the storm that struck the ships.",
+    "answer": "δεινὸς ἦν ὁ τὰς ναῦς καταλαβὼν χειμών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινὸς",
+     "ἦν",
+     "ὁ",
+     "τὰς",
+     "ναῦς",
+     "καταλαβὼν",
+     "χειμών"
+    ]
+   },
+   {
+    "prompt": "Great sufferings the city endured because of that man.",
+    "answer": "μεγάλας ἡ πόλις διὰ ἐκεῖνον τὸν ἄνδρα συμφορὰς ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεγάλας",
+     "ἡ",
+     "πόλις",
+     "διὰ",
+     "ἐκεῖνον",
+     "τὸν",
+     "ἄνδρα",
+     "συμφορὰς",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "In heaven's name, Socrates, what do you yourself say justice is?",
+    "answer": "σὺ δὲ αὐτός, ὦ πρὸς θεῶν, ὦ Σώκρατες, τί φῂς δικαιοσύνην εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σὺ",
+     "δὲ",
+     "αὐτός",
+     "ὦ",
+     "πρὸς",
+     "θεῶν",
+     "Σώκρατες",
+     "τί",
+     "φῂς",
+     "δικαιοσύνην",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Such a terrible fear seized the soldiers as they fled.",
+    "answer": "οὕτω δεινὸς τοὺς στρατιώτας φεύγοντας φόβος κατέλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "δεινὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "φεύγοντας",
+     "φόβος",
+     "κατέλαβεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t12",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "These deeds are visible and clear to all.",
+    "answer": "ταῦτα τὰ ἔργα πᾶσιν ἐναργῆ καὶ σαφῆ ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "τὰ",
+     "ἔργα",
+     "πᾶσιν",
+     "ἐναργῆ",
+     "καὶ",
+     "σαφῆ",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "The general marched over both mountains and rivers and plains.",
+    "answer": "ὁ στρατηγὸς καὶ διὰ ὀρῶν καὶ διὰ ποταμῶν καὶ διὰ πεδίων ἐπορεύετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "καὶ",
+     "διὰ",
+     "ὀρῶν",
+     "ποταμῶν",
+     "πεδίων",
+     "ἐπορεύετο"
+    ]
+   },
+   {
+    "prompt": "The plague spared neither slave nor free.",
+    "answer": "οὔτε δούλου οὔτε ἐλευθέρου ἡ νόσος ἐφείσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "δούλου",
+     "ἐλευθέρου",
+     "ἡ",
+     "νόσος",
+     "ἐφείσατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t13",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "It is not unpleasant to hear these things.",
+    "answer": "οὐκ ἀηδὲς ταῦτα ἀκούειν ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀηδὲς",
+     "ταῦτα",
+     "ἀκούειν",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "This decree is a lawless law.",
+    "answer": "τοῦτο τὸ ψήφισμα ἄνομος νόμος ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦτο",
+     "τὸ",
+     "ψήφισμα",
+     "ἄνομος",
+     "νόμος",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "They themselves flee from those who flee.",
+    "answer": "αὐτοὶ τοὺς φεύγοντας φεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αὐτοὶ",
+     "τοὺς",
+     "φεύγοντας",
+     "φεύγουσιν"
+    ]
+   },
+   {
+    "prompt": "Not without toil did they win the victory.",
+    "answer": "οὐκ ἄνευ πόνου τὴν νίκην ἐκτήσαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἄνευ",
+     "πόνου",
+     "τὴν",
+     "νίκην",
+     "ἐκτήσαντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t14",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "The strength of Heracles overcame the lion.",
+    "answer": "ἡ τοῦ Ἡρακλέους ἰσχὺς τὸν λέοντα ἐνίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "Ἡρακλέους",
+     "ἰσχὺς",
+     "τὸν",
+     "λέοντα",
+     "ἐνίκησεν"
+    ]
+   },
+   {
+    "prompt": "The cavalry charged the enemy.",
+    "answer": "ἡ ἵππος τοῖς πολεμίοις προσέβαλεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἵππος",
+     "τοῖς",
+     "πολεμίοις",
+     "προσέβαλεν"
+    ]
+   },
+   {
+    "prompt": "You scum, why do you betray your friends?",
+    "answer": "ὦ κάθαρμα, τί τοὺς φίλους προδίδως;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὦ",
+     "κάθαρμα",
+     "τί",
+     "τοὺς",
+     "φίλους",
+     "προδίδως"
+    ]
+   },
+   {
+    "prompt": "The whole theatre praised the poet.",
+    "answer": "τὸ θέατρον ὅλον τὸν ποιητὴν ἐπῄνεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "θέατρον",
+     "ὅλον",
+     "τὸν",
+     "ποιητὴν",
+     "ἐπῄνεσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t15",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "From your own resources the tyrant wages war on you.",
+    "answer": "ἀπὸ τῶν ὑμετέρων ὑμῖν ὁ τύραννος πολεμεῖ χρημάτων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπὸ",
+     "τῶν",
+     "ὑμετέρων",
+     "ὑμῖν",
+     "ὁ",
+     "τύραννος",
+     "πολεμεῖ",
+     "χρημάτων"
+    ]
+   },
+   {
+    "prompt": "He overpowered the generals whom you kept sending out.",
+    "answer": "ἐκράτει τῶν στρατηγῶν οὓς ὑμεῖς ἐξεπέμπετε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκράτει",
+     "τῶν",
+     "στρατηγῶν",
+     "οὓς",
+     "ὑμεῖς",
+     "ἐξεπέμπετε"
+    ]
+   },
+   {
+    "prompt": "Great fear, when the general had been slain, seized the army.",
+    "answer": "μέγας τοῦ στρατηγοῦ ἀποθανόντος τὸν στρατὸν φόβος κατέσχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέγας",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀποθανόντος",
+     "τὸν",
+     "στρατὸν",
+     "φόβος",
+     "κατέσχεν"
+    ]
+   },
+   {
+    "prompt": "Wise in truth was the man whom the city honored.",
+    "answer": "σοφὸς τῷ ὄντι ἦν ὁ ἀνὴρ ὃν ἡ πόλις ἐτίμα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σοφὸς",
+     "τῷ",
+     "ὄντι",
+     "ἦν",
+     "ὁ",
+     "ἀνὴρ",
+     "ὃν",
+     "ἡ",
+     "πόλις",
+     "ἐτίμα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t16",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "Reared and born in this land, they dwell here.",
+    "answer": "ἐν τῇδε τῇ γῇ τραφέντες καὶ γενόμενοι οἰκοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "τῇδε",
+     "τῇ",
+     "γῇ",
+     "τραφέντες",
+     "καὶ",
+     "γενόμενοι",
+     "οἰκοῦσιν"
+    ]
+   },
+   {
+    "prompt": "Why then, someone might say, do we wage this war? In order that we may be free.",
+    "answer": "τί οὖν, ἄν τις εἴποι, τοῦτον πολεμοῦμεν τὸν πόλεμον; ἵνα ἐλεύθεροι ὦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τί",
+     "οὖν",
+     "ἄν",
+     "τις",
+     "εἴποι",
+     "τοῦτον",
+     "πολεμοῦμεν",
+     "τὸν",
+     "πόλεμον",
+     "ἵνα",
+     "ἐλεύθεροι",
+     "ὦμεν"
+    ]
+   },
+   {
+    "prompt": "I pass over his cruelty toward the prisoners and his greed.",
+    "answer": "τὴν πρὸς τοὺς αἰχμαλώτους ὠμότητα καὶ τὴν πλεονεξίαν παραλείπω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "πρὸς",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ὠμότητα",
+     "καὶ",
+     "πλεονεξίαν",
+     "παραλείπω"
+    ]
+   },
+   {
+    "prompt": "He made the citizens brave, but the enemies cowardly.",
+    "answer": "τοὺς μὲν πολίτας ἀνδρείους, τοὺς δὲ πολεμίους δειλοὺς κατέστησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "μὲν",
+     "πολίτας",
+     "ἀνδρείους",
+     "δὲ",
+     "πολεμίους",
+     "δειλοὺς",
+     "κατέστησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t17",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "Terrible is the passion that grips the young men.",
+    "answer": "δεινὸς ὁ τοὺς νέους κατέχων ἔρως ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δεινός",
+     "ὁ",
+     "τούς",
+     "νέους",
+     "κατέχων",
+     "ἔρως",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "Long was the war which the allies waged against the tyrant.",
+    "answer": "μακρὸς ἦν ὁ πρὸς τὸν τύραννον τοῖς συμμάχοις πόλεμος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μακρός",
+     "ἦν",
+     "ὁ",
+     "πρός",
+     "τόν",
+     "τύραννον",
+     "τοῖς",
+     "συμμάχοις",
+     "πόλεμος"
+    ]
+   },
+   {
+    "prompt": "Few are the friends who remain faithful in misfortunes.",
+    "answer": "ὀλίγοι οἱ ἐν ταῖς συμφοραῖς πιστοὶ μένοντες φίλοι εἰσίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὀλίγοι",
+     "οἱ",
+     "ἐν",
+     "ταῖς",
+     "συμφοραῖς",
+     "πιστοί",
+     "μένοντες",
+     "φίλοι",
+     "εἰσίν"
+    ]
+   },
+   {
+    "prompt": "Great is the reward that awaits those who labor well.",
+    "answer": "μέγας τοῖς εὖ πονοῦσι μένει μισθός.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέγας",
+     "τοῖς",
+     "εὖ",
+     "πονοῦσι",
+     "μένει",
+     "μισθός"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t18",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "From your own friends the enemy collects money against you.",
+    "answer": "ἀπὸ τῶν σῶν σοὶ συλλέγει χρήματα ὁ ἐχθρὸς φίλων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπό",
+     "τῶν",
+     "σῶν",
+     "σοί",
+     "συλλέγει",
+     "χρήματα",
+     "ὁ",
+     "ἐχθρός",
+     "φίλων"
+    ]
+   },
+   {
+    "prompt": "You did not wait, but at once punished the traitors.",
+    "answer": "οὐ γὰρ ἀνεμείνατε, ἀλλὰ εὐθὺς τοὺς προδότας ἐτιμωρήσασθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "γάρ",
+     "ἀνεμείνατε",
+     "ἀλλά",
+     "εὐθύς",
+     "τούς",
+     "προδότας",
+     "ἐτιμωρήσασθε"
+    ]
+   },
+   {
+    "prompt": "One man says one thing, another another, and no one knows the truth.",
+    "answer": "ἄλλος ἄλλα λέγει, καὶ οὐδεὶς τὸ ἀληθὲς οἶδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄλλος",
+     "ἄλλα",
+     "λέγει",
+     "καί",
+     "οὐδείς",
+     "τό",
+     "ἀληθές",
+     "οἶδεν"
+    ]
+   },
+   {
+    "prompt": "The wise man alone is master of himself.",
+    "answer": "μόνος ὁ σοφὸς αὐτὸς αὑτοῦ κρατεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μόνος",
+     "ὁ",
+     "σοφός",
+     "αὐτός",
+     "αὑτοῦ",
+     "κρατεῖ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t19",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "For much better is freedom than servitude.",
+    "answer": "πολὺ γὰρ ἀμείνων ἐλευθερία δουλείας ἐστίν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολύ",
+     "γάρ",
+     "ἀμείνων",
+     "ἐλευθερία",
+     "δουλείας",
+     "ἐστίν"
+    ]
+   },
+   {
+    "prompt": "So terrible a fear fell upon the soldiers.",
+    "answer": "οὕτω τις δεινὸς φόβος τοῖς στρατιώταις ἐνέπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "τις",
+     "δεινός",
+     "φόβος",
+     "τοῖς",
+     "στρατιώταις",
+     "ἐνέπεσεν"
+    ]
+   },
+   {
+    "prompt": "By far the general was wiser than the others.",
+    "answer": "πολὺ ὁ στρατηγὸς τῶν ἄλλων σοφώτερος ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολύ",
+     "ὁ",
+     "στρατηγός",
+     "τῶν",
+     "ἄλλων",
+     "σοφώτερος",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "But what do you yourself, in heaven's name, say justice is?",
+    "answer": "σὺ δὲ αὐτός, ὦ πρὸς θεῶν, τί φῂς δικαιοσύνην εἶναι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σύ",
+     "δέ",
+     "αὐτός",
+     "ὦ",
+     "πρός",
+     "θεῶν",
+     "τί",
+     "φῄς",
+     "δικαιοσύνην",
+     "εἶναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t20",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "For those in fear themselves flee from those who are fleeing.",
+    "answer": "οἱ γὰρ φοβούμενοι αὐτοὶ τοὺς φεύγοντας φεύγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "γάρ",
+     "φοβούμενοι",
+     "αὐτοί",
+     "τούς",
+     "φεύγοντας",
+     "φεύγουσιν"
+    ]
+   },
+   {
+    "prompt": "The decree of the tyrants was a law that was no law.",
+    "answer": "τῶν τυράννων τὸ ψήφισμα νόμος ἄνομος ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "τυράννων",
+     "τό",
+     "ψήφισμα",
+     "νόμος",
+     "ἄνομος",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "For at the same time we were being deprived of empire, and a beginning of evils was coming upon the Greeks.",
+    "answer": "ἅμα γὰρ ἡμεῖς τε τῆς ἀρχῆς ἀπεστερούμεθα καὶ τοῖς Ἕλλησιν ἀρχὴ τῶν κακῶν ἐγίγνετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἅμα",
+     "γάρ",
+     "ἡμεῖς",
+     "τε",
+     "τῆς",
+     "ἀρχῆς",
+     "ἀπεστερούμεθα",
+     "καί",
+     "τοῖς",
+     "Ἕλλησιν",
+     "ἀρχή",
+     "τῶν",
+     "κακῶν",
+     "ἐγίγνετο"
+    ]
+   },
+   {
+    "prompt": "It is not without danger to trust the enemy.",
+    "answer": "οὐκ ἀκίνδυνόν ἐστιν τοῖς πολεμίοις πιστεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀκίνδυνον",
+     "ἐστιν",
+     "τοῖς",
+     "πολεμίοις",
+     "πιστεύειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t21",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "These things are known both to gods and to men.",
+    "answer": "ταῦτα καὶ θεοῖς καὶ ἀνθρώποις γνωστά ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ταῦτα",
+     "καί",
+     "θεοῖς",
+     "ἀνθρώποις",
+     "γνωστά",
+     "ἐστιν"
+    ]
+   },
+   {
+    "prompt": "I beg and beseech you to hear me.",
+    "answer": "ἀξιῶ καὶ δέομαι ὑμῶν ἀκοῦσαί μου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀξιῶ",
+     "καί",
+     "δέομαι",
+     "ὑμῶν",
+     "ἀκοῦσαι",
+     "μου"
+    ]
+   },
+   {
+    "prompt": "He became the cause of evils both small and great, both old and new.",
+    "answer": "αἴτιος ἐγένετο κακῶν καὶ μικρῶν καὶ μεγάλων καὶ παλαιῶν καὶ νέων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἴτιος",
+     "ἐγένετο",
+     "κακῶν",
+     "καί",
+     "μικρῶν",
+     "μεγάλων",
+     "παλαιῶν",
+     "νέων"
+    ]
+   },
+   {
+    "prompt": "I will speak the truth and will conceal nothing.",
+    "answer": "τὰ ἀληθῆ λέξω καὶ οὐδὲν ἀποκρύψομαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τά",
+     "ἀληθῆ",
+     "λέξω",
+     "καί",
+     "οὐδέν",
+     "ἀποκρύψομαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t22",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "Reared and born, they nobly warded off the enemy.",
+    "answer": "τραφέντες καὶ γενόμενοι γενναίως τοὺς πολεμίους ἤμυναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τραφέντες",
+     "καί",
+     "γενόμενοι",
+     "γενναίως",
+     "τούς",
+     "πολεμίους",
+     "ἤμυναν"
+    ]
+   },
+   {
+    "prompt": "The whole theater praised the poet.",
+    "answer": "πᾶν τὸ θέατρον τὸν ποιητὴν ἐπῄνεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πᾶν",
+     "τό",
+     "θέατρον",
+     "τόν",
+     "ποιητήν",
+     "ἐπῄνεσεν"
+    ]
+   },
+   {
+    "prompt": "The head of Oedipus wandered through the land.",
+    "answer": "ἡ τοῦ Οἰδίποδος κεφαλὴ διὰ τῆς χώρας ἐπλανᾶτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τοῦ",
+     "Οἰδίποδος",
+     "κεφαλή",
+     "διά",
+     "τῆς",
+     "χώρας",
+     "ἐπλανᾶτο"
+    ]
+   },
+   {
+    "prompt": "I pass over his expeditions against the islands and the others.",
+    "answer": "παραλείπω τὰς ἐπὶ τὰς νήσους αὐτοῦ στρατείας καὶ τὰς ἄλλας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παραλείπω",
+     "τάς",
+     "ἐπί",
+     "νήσους",
+     "αὐτοῦ",
+     "στρατείας",
+     "καί",
+     "ἄλλας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t23",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "A grievous plague fell upon the city.",
+    "answer": "χαλεπὴ εἰς τὴν πόλιν κατέσκηψε νόσος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χαλεπὴ",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "κατέσκηψε",
+     "νόσος"
+    ]
+   },
+   {
+    "prompt": "Great glory the brave men won in that battle.",
+    "answer": "μεγάλην οἱ ἀνδρεῖοι ἐν ἐκείνῃ τῇ μάχῃ ἐκτήσαντο δόξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μεγάλην",
+     "οἱ",
+     "ἀνδρεῖοι",
+     "ἐν",
+     "ἐκείνῃ",
+     "τῇ",
+     "μάχῃ",
+     "ἐκτήσαντο",
+     "δόξαν"
+    ]
+   },
+   {
+    "prompt": "Bitter was the shame that then befell the citizens.",
+    "answer": "πικρὰ τότε τοῖς πολίταις συνέβη αἰσχύνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πικρὰ",
+     "τότε",
+     "τοῖς",
+     "πολίταις",
+     "συνέβη",
+     "αἰσχύνη"
+    ]
+   },
+   {
+    "prompt": "So great a treasure the king kept hidden in the earth.",
+    "answer": "τοσοῦτον ὁ βασιλεὺς ἐν τῇ γῇ κεκρυμμένον εἶχε θησαυρόν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτον",
+     "ὁ",
+     "βασιλεὺς",
+     "ἐν",
+     "τῇ",
+     "γῇ",
+     "κεκρυμμένον",
+     "εἶχε",
+     "θησαυρόν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t24",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "By far the strongest of the wrestlers was this man.",
+    "answer": "πολὺ τῶν παλαιστῶν ἰσχυρότατος ἦν οὗτος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολὺ",
+     "τῶν",
+     "παλαιστῶν",
+     "ἰσχυρότατος",
+     "ἦν",
+     "οὗτος"
+    ]
+   },
+   {
+    "prompt": "Much more sweetly than before the poet now sings.",
+    "answer": "πολὺ νῦν ἥδιον ἢ πρότερον ᾄδει ὁ ποιητής.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πολὺ",
+     "νῦν",
+     "ἥδιον",
+     "ἢ",
+     "πρότερον",
+     "ᾄδει",
+     "ὁ",
+     "ποιητής"
+    ]
+   },
+   {
+    "prompt": "The enemy's ships, many and swift, sailed into the harbor.",
+    "answer": "τῶν πολεμίων πολλαὶ καὶ ταχεῖαι εἰς τὸν λιμένα κατέπλευσαν νῆες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "πολλαὶ",
+     "καὶ",
+     "ταχεῖαι",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "κατέπλευσαν",
+     "νῆες"
+    ]
+   },
+   {
+    "prompt": "The most disgraceful of all deeds the tyrant then dared.",
+    "answer": "αἴσχιστον ἁπάντων ὁ τύραννος τότε ἐτόλμησεν ἔργον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἴσχιστον",
+     "ἁπάντων",
+     "ὁ",
+     "τύραννος",
+     "τότε",
+     "ἐτόλμησεν",
+     "ἔργον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t25",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "These men themselves, by the gods, betrayed the city.",
+    "answer": "οὗτοι δὲ αὐτοί, πρὸς θεῶν, τὴν πόλιν προέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὗτοι",
+     "δὲ",
+     "αὐτοί",
+     "πρὸς",
+     "θεῶν",
+     "τὴν",
+     "πόλιν",
+     "προέδοσαν"
+    ]
+   },
+   {
+    "prompt": "Not a few of the soldiers fell in the battle.",
+    "answer": "οὐκ ὀλίγοι τῶν στρατιωτῶν ἐν τῇ μάχῃ ἔπεσον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ὀλίγοι",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἔπεσον"
+    ]
+   },
+   {
+    "prompt": "It is no small task to govern the city well.",
+    "answer": "οὐ σμικρὸν ἔργον τὸ τῆς πόλεως καλῶς ἄρχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "σμικρὸν",
+     "ἔργον",
+     "τὸ",
+     "τῆς",
+     "πόλεως",
+     "καλῶς",
+     "ἄρχειν"
+    ]
+   },
+   {
+    "prompt": "The soldiers endured both hunger and thirst and cold and toil.",
+    "answer": "οἱ στρατιῶται καὶ λιμὸν καὶ δίψαν καὶ ψῦχος καὶ πόνον ὑπέμειναν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "καὶ",
+     "λιμὸν",
+     "δίψαν",
+     "ψῦχος",
+     "πόνον",
+     "ὑπέμειναν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-t26",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "They died and fought nobly for their country.",
+    "answer": "ἀπέθανον καὶ ἐμαχέσαντο γενναίως ὑπὲρ τῆς πατρίδος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀπέθανον",
+     "καὶ",
+     "ἐμαχέσαντο",
+     "γενναίως",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος"
+    ]
+   },
+   {
+    "prompt": "The cavalry pursued the fleeing enemy across the plain.",
+    "answer": "ἡ ἵππος τοὺς φεύγοντας πολεμίους διὰ τοῦ πεδίου ἐδίωξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἵππος",
+     "τοὺς",
+     "φεύγοντας",
+     "πολεμίους",
+     "διὰ",
+     "τοῦ",
+     "πεδίου",
+     "ἐδίωξεν"
+    ]
+   },
+   {
+    "prompt": "Neither by day nor by night did they cease from toil.",
+    "answer": "οὔτε ἡμέρας οὔτε νυκτὸς ἐπαύσαντο τοῦ πόνου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "ἡμέρας",
+     "νυκτὸς",
+     "ἐπαύσαντο",
+     "τοῦ",
+     "πόνου"
+    ]
+   },
+   {
+    "prompt": "Immortal fame the fallen soldiers left behind.",
+    "answer": "ἀθάνατον οἱ πεσόντες στρατιῶται κατέλιπον δόξαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀθάνατον",
+     "οἱ",
+     "πεσόντες",
+     "στρατιῶται",
+     "κατέλιπον",
+     "δόξαν"
+    ]
+   }
+  ]
  }
 ]
