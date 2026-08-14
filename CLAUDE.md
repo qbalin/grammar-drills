@@ -90,10 +90,18 @@ Scripts importing `@lang-tutor/core` need `node --import tsx`; the few that do
 not are plain `node`.
 
 `validate-pack` is the answer to "is this pack ready" — it composes the grammar,
-coverage and attestation reports and exits non-zero on any failure. Greek is a
-draft and takes `--allow-incomplete`, which reports the how-much-is-written gates
-without letting them decide the exit code. Nothing about correctness is relaxed
-by it, the attestation gates included.
+coverage and attestation reports and exits non-zero on any failure. **Both packs
+pass every gate**, Greek included, and neither is a draft: `--allow-incomplete`
+still exists for a pack midway through generating its questions, and reports the
+how-much-is-written gates without letting them decide the exit code, but nothing
+in this repo passes it now. Nothing about correctness was ever relaxed by it, the
+attestation gates included.
+
+What `validate-pack` does **not** answer is the part no script can. Each pack's
+`REVIEW.md` records the gates a person has to read — segmentation (G9), the
+generated questions (C8), the quoted ones (C9) — and those are not all signed
+off. Greek's C9 is a recorded **failure**, 17 of 35. A green `validate-pack` and
+an unread `REVIEW.md` are two different claims and the second is the weaker one.
 
 ## More than one grammar
 

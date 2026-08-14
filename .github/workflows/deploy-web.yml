@@ -133,12 +133,21 @@ jobs:
       # question-coverage gates are reported and not enforced, because a pack
       # midway through generating its questions fails them by definition and
       # that is a thing to know rather than a broken build. Nothing about
-      # correctness is relaxed for a draft. Empty the variable when the set is
-      # finished, and the gates start deciding again.
+      # correctness is relaxed for a draft.
+      #
+      # **The set is empty now.** Greek's generation finished and it clears
+      # C1/C2/C3/C7 on its own, so the flag was doing nothing except holding the
+      # door open for a silent regression — a pack going thin again would have
+      # published without a word. Emptied, those four gates decide again, which
+      # is the whole reason the variable was written to be emptied.
+      #
+      # Note this default is only reached when the repo variable is unset.
+      # Clearing it for good is `gh variable delete LANG_PACKS_DRAFT`, which is
+      # a repo setting and cannot be done from a file.
       - name: Build each language into its own path
         env:
           LANG_PACKS: ${{ vars.LANG_PACKS || 'latin ancient-greek' }}
-          LANG_PACKS_DRAFT: ${{ vars.LANG_PACKS_DRAFT || 'ancient-greek' }}
+          LANG_PACKS_DRAFT: ${{ vars.LANG_PACKS_DRAFT }}
           REPO: ${{ github.event.repository.name }}
         run: |
           set -euo pipefail

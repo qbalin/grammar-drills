@@ -28,12 +28,21 @@ Two packs ship:
 
 | Pack | Grammar | Syllabus | Questions |
 | --- | --- | --- | --- |
-| `latin` | Bennett, *New Latin Grammar* | 114 topics | 6,581 over all 114 |
-| `ancient-greek` | Smyth, *A Greek Grammar for Colleges* | 485 topics | 3,533 over 78 so far |
+| `latin` | Bennett, *New Latin Grammar* | 114 topics | 9,006 over all 114 |
+| `ancient-greek` | Smyth, *A Greek Grammar for Colleges* | 485 topics | 30,214 over all 485 |
 
-Ancient Greek is still being written — its syllabus is complete and its questions
-are being generated topic by topic, so it publishes with its coverage gates
-reported rather than enforced (see `LANG_PACKS_DRAFT` in the deploy workflow).
+Greek's generation has finished. Both packs now clear every gate
+`validate-pack` runs, with nothing relaxed and no `--allow-incomplete`, so
+neither publishes as a draft any more.
+
+That is the whole of what a script can say, and it is worth being exact about
+the rest. Each pack's `REVIEW.md` holds the gates a person has to read, and they
+are not all signed off — Greek's **C9, the quoted-question review, is a recorded
+failure at 17 of 35**, and Part I's 71 reading topics have never been read by
+anybody. See [`languages/ancient-greek/REVIEW.md`](languages/ancient-greek/REVIEW.md)
+and [`languages/latin/REVIEW.md`](languages/latin/REVIEW.md) before treating
+either pack as finished.
+
 **To add a third, follow [ADDING_A_LANGUAGE.md](ADDING_A_LANGUAGE.md)** — a
 checklist where each step ends in a command whose exit code is the answer.
 
