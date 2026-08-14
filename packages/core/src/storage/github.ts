@@ -132,22 +132,10 @@ export class GitHubStorage implements StorageAdapter {
    * wins, and would otherwise have to fetch the file a second time to commit.
    */
   async loadMeta(): Promise<{ progress: Progress | null; sha?: string }> {
-    const res = await fetch(`${this.url()}?ref=${this.branch}`, {
-      headers: this.headers(),
-      ...NO_STORE,
-    });
-    if (res.status === 404) {
-      this.sha = undefined;
-      this.known = null;
-      return { progress: null };
-    }
-    if (!res.ok) {
-      throw new Error(`GitHub load failed: ${res.status} ${await res.text()}`);
-    }
-    const body = (await res.json()) as { content: string; sha: string };
-    this.sha = body.sha;
-    this.known = JSON.parse(b64decode(body.content)) as Progress;
-    return { progress: this.known, sha: body.sha };
+    // The read's own return, rather than `this.known` afterwards: the field
+    // carries a third state (`undefined`, never seen) that cannot survive a
+    // read, and re-deriving the answer from it would mean asserting that here.
+    return { progress: await this.readRemote(), sha: this.sha };
   }
 
   /**
@@ -228,7 +216,7 @@ export class GitHubStorage implements StorageAdapter {
    * that has to decide whether it would be overwriting someone's afternoon
    * needs the file, and the file is in the same response.
    */
-  private async readRemote(): Promise<void> {
+  private async readRemote(): Promise<Progress | null> {
     const res = await fetch(`${this.url()}?ref=${this.branch}`, {
       headers: this.headers(),
       ...NO_STORE,
@@ -236,13 +224,34 @@ export class GitHubStorage implements StorageAdapter {
     if (res.status === 404) {
       this.sha = undefined;
       this.known = null;
-      return;
+      return null;
     }
     if (!res.ok) {
       throw new Error(`GitHub load failed: ${res.status} ${await res.text()}`);
     }
     const body = (await res.json()) as { content: string; sha: string };
     this.sha = body.sha;
-    this.known = JSON.parse(b64decode(body.content)) as Progress;
+    // Guarded, because the alternative is a bare `SyntaxError: Unexpected
+    // token` arriving from inside a debounced background push, four seconds
+    // after a grade and with the next question already on screen. Whatever is
+    // up there is not progress, and the one thing that must not follow is a
+    // save that treats the mismatch as ours to resolve.
+    try {
+      this.known = JSON.parse(b64decode(body.content)) as Progress;
+    } catch {
+      // Forget the sha as well as the file. Keeping it would leave `save()`
+      // holding exactly what it needs to overwrite a file nobody can read —
+      // it skips the read when a sha is in hand, so the next grade would put
+      // straight over it and the message below would be a lie. Cleared, the
+      // next save reads again and refuses again, which is the whole rule this
+      // class is built on: a remote we do not understand is never ours to
+      // resolve.
+      this.sha = undefined;
+      throw new Error(
+        `${this.cfg.owner}/${this.cfg.repo}/${this.path} is not readable as progress. ` +
+          `Nothing has been written over it.`,
+      );
+    }
+    return this.known;
   }
 }

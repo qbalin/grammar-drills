@@ -6,6 +6,18 @@ import { profile } from "../pack.js";
 const KEY = profile.storage.webProgressKey;
 
 /**
+ * Where a file we could not read is kept.
+ *
+ * Starting empty is the right answer to an unreadable file — see `read` — but
+ * it used to be the *only* answer, and the first grade after it wrote straight
+ * over the thing that could not be parsed. Whatever a person might have
+ * recovered by hand from a truncated write was gone by the time they noticed
+ * anything was wrong. So the raw text moves here first, and Settings offers it
+ * back as a download.
+ */
+const SALVAGE_KEY = `${KEY}:corrupt`;
+
+/**
  * Progress in `localStorage` — the web twin of the CLI's `LocalFileStorage`.
  *
  * `localStorage` rather than IndexedDB because the writes must not be lost: the
@@ -23,15 +35,68 @@ export class LocalStorageAdapter implements StorageAdapter {
     return this.read();
   }
 
-  /** The synchronous read, for callers that cannot await (startup, export). */
+  /**
+   * The synchronous read, for callers that cannot await (startup, export).
+   *
+   * The two ways this fails are not the same failure and no longer share a
+   * `catch`. **Storage blocked** — Safari private browsing — means there is
+   * nothing to read and nothing to rescue, and the session runs in memory.
+   * **A file that will not parse** means there is something on this device that
+   * matters, and the old shared catch let the next grade destroy it.
+   *
+   * Either way the app starts empty rather than refusing to start, which is
+   * still the right call: a student who cannot open the app has no route to
+   * their own data at all.
+   */
   read(): Progress | null {
+    let raw: string | null;
     try {
-      const raw = localStorage.getItem(KEY);
-      return raw ? (JSON.parse(raw) as Progress) : null;
+      raw = localStorage.getItem(KEY);
     } catch {
-      // Corrupt JSON, or storage blocked entirely (Safari private browsing).
-      // Losing progress is bad; refusing to start is worse.
       return null;
+    }
+    if (!raw) return null;
+    try {
+      return JSON.parse(raw) as Progress;
+    } catch {
+      this.setAside(raw);
+      return null;
+    }
+  }
+
+  /**
+   * Keep an unreadable file, once.
+   *
+   * Only if nothing is held already: the first failure is the one still
+   * carrying a whole file, and a second pass would replace it with whatever the
+   * first one left behind — which, after a grade or two, is the empty file that
+   * started the trouble.
+   */
+  private setAside(raw: string): void {
+    try {
+      if (localStorage.getItem(SALVAGE_KEY) === null) {
+        localStorage.setItem(SALVAGE_KEY, raw);
+      }
+    } catch {
+      /* blocked, or no room for a second copy: nothing further to try */
+    }
+  }
+
+  /** The file a read had to give up on, if this device ever held one. */
+  salvaged(): string | null {
+    try {
+      return localStorage.getItem(SALVAGE_KEY);
+    } catch {
+      return null;
+    }
+  }
+
+  /** Let it go — the student has taken a copy, or does not want one. */
+  dropSalvaged(): void {
+    try {
+      localStorage.removeItem(SALVAGE_KEY);
+    } catch {
+      /* nothing to undo */
     }
   }
 
@@ -39,12 +104,21 @@ export class LocalStorageAdapter implements StorageAdapter {
     this.write(progress);
   }
 
-  write(progress: Progress): void {
+  /**
+   * Returns whether the write landed.
+   *
+   * It used to return nothing, and a full device was therefore silent: the
+   * session carried on in memory, every grade looked saved, and the lot went on
+   * the next reload. The comment here said Settings would show it, but the sync
+   * status only exists for the few who have set up a GitHub mirror. The caller
+   * says so out loud instead.
+   */
+  write(progress: Progress): boolean {
     try {
       localStorage.setItem(KEY, JSON.stringify(progress));
+      return true;
     } catch {
-      // Quota or a blocked store. The session continues in memory; Settings
-      // shows the sync status, and export still works.
+      return false;
     }
   }
 

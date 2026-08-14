@@ -48,6 +48,9 @@ export function SettingsSheet({
   onConfigure,
   onExport,
   onImport,
+  salvaged,
+  onExportSalvaged,
+  onDropSalvaged,
   onPull,
   offlineReady,
   dictionaryFailed,
@@ -71,6 +74,10 @@ export function SettingsSheet({
   onConfigure: (cfg: SyncConfig | null) => void;
   onExport: () => void;
   onImport: () => void;
+  /** True when a read gave up on this device's file and kept it. See `local.ts`. */
+  salvaged: boolean;
+  onExportSalvaged: () => void;
+  onDropSalvaged: () => void;
   onPull: () => void;
   /** Every file the launch fetches, in hand — not the dictionary alone. */
   offlineReady: boolean;
@@ -187,6 +194,29 @@ export function SettingsSheet({
           Import
         </button>
       </div>
+
+      {/* Only ever on screen for a device where a read failed. Named plainly
+          rather than reassuringly: something was lost, the app cannot say how
+          much, and the one useful thing it can do is not have thrown away the
+          evidence. Discarding is offered beside it because the notice would
+          otherwise be permanent. */}
+      {salvaged && (
+        <>
+          <p className="field__hint">
+            A saved file on this device could not be read, so {profile.ui.appName}{" "}
+            started fresh. The unreadable copy was kept rather than written over —
+            download it if you want to try to recover anything from it by hand.
+          </p>
+          <div className="actions">
+            <button className="btn" onClick={onExportSalvaged}>
+              Download the damaged file
+            </button>
+            <button className="btn btn--quiet" onClick={onDropSalvaged}>
+              Discard it
+            </button>
+          </div>
+        </>
+      )}
 
       <div className="section-title">Offline</div>
       <p className="field__hint" style={{ marginTop: 0 }}>

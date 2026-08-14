@@ -34,6 +34,7 @@ import type { SyncState, SyncConfig } from "./storage/sync.js";
 import { SyncingStorage } from "./storage/sync.js";
 import {
   exportProgress,
+  exportSalvaged,
   importProgress,
   pickProgressFile,
 } from "./storage/transfer.js";
@@ -313,6 +314,15 @@ export function App({ content, session, storage }: Props) {
   const [syncState, setSyncState] = useState<SyncState>(storage.currentState());
   const [tick, setTick] = useState(0);
   const [undo, setUndo] = useState<GradeUndo | null>(null); // the last grade, takeable
+
+  /*
+   * A file this device could not read, kept rather than written over.
+   *
+   * Read once at mount rather than on every render: it is set at startup by
+   * `LocalStorageAdapter.read`, before any of this exists, and the only thing
+   * that changes it afterwards is the student discarding it.
+   */
+  const [salvaged, setSalvaged] = useState<string | null>(() => storage.salvaged());
 
   const question = test?.questions[qIndex];
   const section = sectionId ? content.getSection(sectionId) : undefined;
@@ -1596,6 +1606,31 @@ export function App({ content, session, storage }: Props) {
   useEffect(() => storage.onStateChange(setSyncState), [storage]);
 
   /**
+   * The device stopped being able to keep the progress, and says so.
+   *
+   * The one thing in this app that is worth interrupting a question for. A
+   * full device does not announce itself: every grade still lands, the loop
+   * still moves, and the whole session goes on the next reload. Sync is where
+   * a failure is normally reported quietly, but that is a mirror most students
+   * never set up — so this is said out loud, once, wherever they are.
+   *
+   * Export is the action because it is the one that works: it builds the file
+   * in memory and hands it to the browser, needing none of the room that has
+   * just run out.
+   */
+  useEffect(
+    () =>
+      storage.onLocalFailure(() =>
+        flash(
+          "This device is out of room — your progress is no longer being saved.",
+          "Export",
+          () => exportProgress(session.progress()),
+        ),
+      ),
+    [storage, session],
+  );
+
+  /**
    * The floppy disk: a push to the cloud, shown while it happens and for a
    * moment after.
    *
@@ -2375,6 +2410,13 @@ export function App({ content, session, storage }: Props) {
           onConfigure={configureSync}
           onExport={() => exportProgress(session.progress())}
           onImport={() => void doImport()}
+          salvaged={salvaged !== null}
+          onExportSalvaged={() => salvaged && exportSalvaged(salvaged)}
+          onDropSalvaged={() => {
+            storage.dropSalvaged();
+            setSalvaged(null);
+            flash("Damaged file discarded.");
+          }}
           onPull={() =>
             void storage
               .fetchRemote()

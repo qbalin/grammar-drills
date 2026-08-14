@@ -60,6 +60,33 @@ describe("GitHubStorage", () => {
     expect(calls).toEqual([{ method: "GET" }, { method: "PUT", sha: undefined }]);
   });
 
+  it("refuses a remote file that is not progress, and writes nothing over it", async () => {
+    // Whatever is up there, it is not what this app wrote. The parse used to be
+    // bare, so a `SyntaxError` arrived out of a debounced background push four
+    // seconds after a grade — and the one thing that must not follow a file we
+    // cannot read is a save that treats the mismatch as ours to resolve.
+    const calls: { method: string }[] = [];
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (_url: string, init?: RequestInit) => {
+        calls.push({ method: init?.method ?? "GET" });
+        return Response.json({ sha: "abc", content: b64("<!doctype html>") });
+      }),
+    );
+    const store = new GitHubStorage(cfg);
+    await expect(store.load()).rejects.toThrow(/not readable as progress/);
+    await expect(store.save(progress(NEW))).rejects.toThrow(/not readable as progress/);
+    expect(calls.every((c) => c.method === "GET")).toBe(true);
+  });
+
+  it("names the file it could not read, so the repo can be looked at", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => Response.json({ sha: "abc", content: b64("{oops") })),
+    );
+    await expect(new GitHubStorage(cfg).load()).rejects.toThrow("me/latin/p.json");
+  });
+
   it("skips the extra read when a load already supplied the sha", async () => {
     const store = new GitHubStorage(cfg);
     stubApi({ sha: "abc" });

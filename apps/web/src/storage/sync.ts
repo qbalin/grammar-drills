@@ -114,6 +114,10 @@ export class SyncingStorage implements StorageAdapter {
   private state: SyncState = { kind: "off" };
   private readonly listeners = new Set<(s: SyncState) => void>();
 
+  /** Told once, when the device's own copy stops being written. See `writeLocal`. */
+  private readonly failureListeners = new Set<() => void>();
+  private announcedFailure = false;
+
   /** What this device last pushed or took. See `SYNCED_KEY`. */
   private syncedAt: string | null = readSyncedAt();
 
@@ -259,7 +263,7 @@ export class SyncingStorage implements StorageAdapter {
 
   async save(progress: Progress): Promise<void> {
     if (this.sealed) return;
-    this.local.write(progress);
+    this.writeLocal(progress);
     if (!this.remote) return;
     this.queued = progress;
     clearTimeout(this.timer);
@@ -275,7 +279,7 @@ export class SyncingStorage implements StorageAdapter {
    */
   saveLocal(progress: Progress): void {
     if (this.sealed) return;
-    this.local.write(progress);
+    this.writeLocal(progress);
   }
 
   /**
@@ -289,7 +293,7 @@ export class SyncingStorage implements StorageAdapter {
    */
   async saveNow(progress: Progress, opts: { force?: boolean } = {}): Promise<void> {
     if (this.sealed) return;
-    this.local.write(progress);
+    this.writeLocal(progress);
     this.queued = progress;
     clearTimeout(this.timer);
     await this.flush(opts);
@@ -305,7 +309,7 @@ export class SyncingStorage implements StorageAdapter {
    * whatever the file was older than.
    */
   adopt(progress: Progress, opts: { synced?: boolean } = {}): void {
-    this.local.write(progress);
+    this.writeLocal(progress);
     if (opts.synced) this.markSynced(progress);
   }
 
@@ -388,5 +392,46 @@ export class SyncingStorage implements StorageAdapter {
     return () => {
       this.listeners.delete(listener);
     };
+  }
+
+  /**
+   * Watch for the device's copy failing to write. Returns an unsubscribe.
+   *
+   * Kept apart from `onStateChange`, which is about the *mirror*: a device with
+   * no room is not a sync problem, it is the problem sync was supposed to be a
+   * backup against, and most students have no mirror configured at all.
+   *
+   * Fires **once**. The condition does not clear on its own and every save
+   * afterwards would raise it again, which on a full device is a toast per
+   * grade — the app shouting where it needs to be heard once.
+   */
+  onLocalFailure(listener: () => void): () => void {
+    this.failureListeners.add(listener);
+    return () => {
+      this.failureListeners.delete(listener);
+    };
+  }
+
+  /** The file a read had to give up on, if there is one. See `local.ts`. */
+  salvaged(): string | null {
+    return this.local.salvaged();
+  }
+
+  dropSalvaged(): void {
+    this.local.dropSalvaged();
+  }
+
+  /**
+   * Write the device's copy, and say so the first time one does not land.
+   *
+   * Every local write in this class goes through here rather than calling the
+   * adapter directly, so there is one place that can notice — and so a route
+   * added later cannot quietly become the silent one again.
+   */
+  private writeLocal(progress: Progress): void {
+    if (this.local.write(progress)) return;
+    if (this.announcedFailure) return;
+    this.announcedFailure = true;
+    for (const listener of this.failureListeners) listener();
   }
 }

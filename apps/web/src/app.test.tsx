@@ -268,6 +268,11 @@ beforeEach(() => {
   dictionary.available = true;
   fireConfetti.mockClear();
   vi.unstubAllGlobals();
+  // The storage-failure tests below spy on `Storage.prototype`, and a spy that
+  // outlived its test would break every test after it in a way that reads as a
+  // failure of whatever ran next. Only `spyOn` spies are touched: the module
+  // factories above are `vi.mock` and are not restorable.
+  vi.restoreAllMocks();
 });
 
 describe("the study loop", () => {
@@ -4228,5 +4233,94 @@ describe("a section the book sets no exercise on", () => {
     // move a number that is about the student.
     expect(after.overallPercent()).toBe(before.overallPercent());
     expect(after.overallPercent()).toBeGreaterThan(0);
+  });
+});
+
+/**
+ * The two ways this device's own copy fails, on screen.
+ *
+ * Both were silent, and both cost a student everything. The adapter's own tests
+ * (`storage/local.test.ts`) cover what it does; these cover what is *said*,
+ * which is the half that was missing — a full device that keeps grading is
+ * indistinguishable from a working one until the reload.
+ */
+describe("when the device cannot keep the progress", () => {
+  it("says so, once, however many grades follow", async () => {
+    const user = userEvent.setup();
+    mount();
+    // Only now: mounting has to be able to write, or there is nothing to lose.
+    vi.spyOn(Storage.prototype, "setItem").mockImplementation(() => {
+      throw new Error("QuotaExceededError");
+    });
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(screen.getByText(/out of room/)).toBeDefined();
+
+    // A second grade must not raise it again. The condition does not clear on
+    // its own, so once-per-save would be a toast per question — the app
+    // shouting exactly where it needs to be heard the first time.
+    await carryOn(user);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(screen.getAllByText(/out of room/)).toHaveLength(1);
+  });
+
+  it("offers the export, which is the one thing that still works", async () => {
+    const user = userEvent.setup();
+    mount();
+    vi.spyOn(Storage.prototype, "setItem").mockImplementation(() => {
+      throw new Error("QuotaExceededError");
+    });
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    // It builds the file in memory and hands it to the browser, needing none of
+    // the room that has just run out.
+    expect(screen.getByRole("button", { name: "Export" })).toBeDefined();
+  });
+
+  it("says nothing at all while the writes are landing", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(screen.queryByText(/out of room/)).toBeNull();
+  });
+});
+
+describe("a file this device could not read", () => {
+  it("is offered back rather than written over", async () => {
+    // What the adapter left behind when it gave up at startup.
+    localStorage.setItem(`${profile.storage.webProgressKey}:corrupt`, "{half a fi");
+    const user = userEvent.setup();
+    mount();
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    expect(screen.getByText(/could not be read/)).toBeDefined();
+    expect(
+      screen.getByRole("button", { name: "Download the damaged file" }),
+    ).toBeDefined();
+  });
+
+  it("goes away when discarded, and takes the notice with it", async () => {
+    localStorage.setItem(`${profile.storage.webProgressKey}:corrupt`, "{half a fi");
+    const user = userEvent.setup();
+    mount();
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await user.click(screen.getByRole("button", { name: "Discard it" }));
+
+    expect(screen.queryByText(/could not be read/)).toBeNull();
+    expect(
+      localStorage.getItem(`${profile.storage.webProgressKey}:corrupt`),
+    ).toBeNull();
+  });
+
+  it("is not mentioned on a device where nothing went wrong", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    expect(screen.queryByText(/could not be read/)).toBeNull();
   });
 });

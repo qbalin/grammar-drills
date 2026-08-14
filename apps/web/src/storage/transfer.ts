@@ -10,16 +10,33 @@ import { profile } from "../pack.js";
  */
 
 export function exportProgress(progress: Progress): void {
+  download(JSON.stringify(progress, null, 2), stamped());
+}
+
+/**
+ * Hand over a file this app could not read itself.
+ *
+ * Deliberately the raw text rather than anything parsed — there is nothing to
+ * parse, which is why it was set aside. Whatever can be got out of a truncated
+ * write is got out of it by a person with an editor, and the app's only job is
+ * not to have destroyed it first. `-damaged` in the name so it is never mailed
+ * to another device in the belief that it will import.
+ */
+export function exportSalvaged(raw: string): void {
+  download(raw, stamped("-damaged"));
+}
+
+/** Today, and the pack: a folder of exports should say which language each is. */
+function stamped(suffix = ""): string {
   const stamp = new Date().toISOString().slice(0, 10);
-  const blob = new Blob([JSON.stringify(progress, null, 2)], {
-    type: "application/json",
-  });
-  const url = URL.createObjectURL(blob);
+  return `${profile.storage.exportPrefix}-${stamp}${suffix}.json`;
+}
+
+function download(text: string, name: string): void {
+  const url = URL.createObjectURL(new Blob([text], { type: "application/json" }));
   const a = document.createElement("a");
   a.href = url;
-  // The pack names the file: a folder of exports should say which language
-  // each one came from.
-  a.download = `${profile.storage.exportPrefix}-${stamp}.json`;
+  a.download = name;
   a.click();
   URL.revokeObjectURL(url);
 }
