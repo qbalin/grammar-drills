@@ -16,7 +16,8 @@
 // declares none — and every one is listed in a report at the end of the run.
 //
 //   node --import tsx scripts/gen-tests.mjs [--pack languages/latin]
-//        [--fill] [--only-thin] [--target N] [--per M] [--sleep S] [topicId ...]
+//        [--fill] [--only-thin] [--target N] [--per M] [--sleep S]
+//        [--call-timeout MINUTES] [topicId ...]
 //
 // Resuming is by COUNT, not by whether a file exists. A topic that yielded
 // three tests against a target of twelve used to be skipped by every later run
@@ -82,6 +83,15 @@ const MAX_CALLS = Number(
 );
 const SLEEP_MS = Number(opt("--sleep", 1500)); // pace calls to respect usage limits
 /*
+ * Minutes one `claude -p` call may take before it is killed and retried.
+ *
+ * Generous, because a legitimate call is slow. The slowest that ever returned
+ * content in these runs took a little over ten minutes, and one that failed had
+ * spent 633 seconds inside the API before it did. Thirty is clear of both, and
+ * still an order of magnitude under the fifteen-hour hang it exists to stop.
+ */
+const CALL_TIMEOUT_MS = Number(opt("--call-timeout", 30)) * 60_000;
+/*
  * How many dictionary misses one sentence may carry before it is dropped.
  *
  * From the profile, not from gen/config, because it is the same number
@@ -137,7 +147,12 @@ function callClaude(prompt) {
       // sm-574 and sm-599 in the run before this flag existed. Writing
       // sentences needs no tools, so the fix is to have none to reach for.
       ["-p", prompt, "--model", MODEL, "--output-format", "json", "--tools", ""],
-      { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], maxBuffer: 64 * 1024 * 1024 },
+      {
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "pipe"],
+        maxBuffer: 64 * 1024 * 1024,
+        timeout: CALL_TIMEOUT_MS,
+      },
     );
   } catch (e) {
     // `claude -p` exits non-zero AND prints its JSON envelope, so a usage-limit
@@ -145,8 +160,45 @@ function callClaude(prompt) {
     // never reaches the API: duration_api_ms is 0 and no tokens are billed —
     // the reliable signal, since the message text itself may be absent.
     const raw = (e.stderr || e.stdout || e.message || "").toString();
-    const err = new Error(raw.replace(/\s+/g, " ").slice(0, 200) || "claude -p failed");
+    /*
+     * Say what the envelope said, not what its first two hundred characters
+     * were.
+     *
+     * `result` is the last field of the JSON `claude -p` prints, so truncating
+     * the raw text keeps the bookkeeping — is_error, duration_api_ms,
+     * session_id — and cuts off the only part that says what went wrong. Four
+     * long-running failures were logged that way before this and none of them
+     * can be diagnosed now: they are known by their duration and nothing else.
+     */
+    let said = "";
+    try {
+      const s = raw.indexOf("{"), t = raw.lastIndexOf("}");
+      if (s >= 0 && t > s) said = String(JSON.parse(raw.slice(s, t + 1)).result ?? "").trim();
+    } catch { /* not JSON, or not the envelope — fall back to the raw text */ }
+    const err = new Error(
+      (said || raw).replace(/\s+/g, " ").slice(0, 300) || "claude -p failed",
+    );
+    /*
+     * A call killed for running past `CALL_TIMEOUT_MS` is transient by
+     * construction: nothing is known about it except that it stopped
+     * answering, and the next call is the only way to find out whether that
+     * was the request or the window.
+     *
+     * There was no timeout at all until a run spent 53,172 seconds — fourteen
+     * and three quarter hours — on one topic of nine tests, while every other
+     * topic in the same run finished inside twenty minutes. `execFileSync`
+     * waits forever by default, so a single call that stops answering holds
+     * the whole syllabus behind it, and the usage window it was meant to
+     * exploit closes while the run sits there. Better to lose one call.
+     */
+    // Both, and not just `killed`: on darwin/node 24 a timed-out `execFileSync`
+    // throws with `killed` undefined, `code` "ETIMEDOUT" and `signal` SIGTERM.
+    // The documented flag is the one that does not arrive, so the tempting
+    // simplification to `e.killed` would never match and this would be dead.
+    const timedOut = Boolean(e.killed) || e.code === "ETIMEDOUT";
+    if (timedOut) err.message = `no answer in ${CALL_TIMEOUT_MS / 60000}m — killed`;
     err.transient =
+      timedOut ||
       /limit|quota|overload|rate|capacity|try again|busy|503|429/i.test(raw) ||
       (/"duration_api_ms"\s*:\s*0\b/.test(raw) && /"is_error"\s*:\s*true/.test(raw));
     throw err;
