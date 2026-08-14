@@ -52,7 +52,7 @@ function download(text: string, name: string): void {
 export function importProgress(raw: string, content: Content): Progress {
   const parsed = JSON.parse(raw) as Partial<Progress>;
   if (!parsed || typeof parsed !== "object" || !parsed.version) {
-    throw new Error("That does not look like a Latina progress file.");
+    throw new Error(`That does not look like a ${profile.ui.appName} progress file.`);
   }
 
   const known = (id: string) => content.getSection(id) !== undefined;

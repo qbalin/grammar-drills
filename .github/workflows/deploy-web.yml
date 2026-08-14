@@ -83,6 +83,14 @@ jobs:
         env:
           LANG_PACK: ${{ matrix.pack }}
         run: pnpm --filter @lang-tutor/web build
+      # The apps' half of the purity rule, and the reason it reads the build
+      # rather than the source: what matters is whether another language's name
+      # survives into what ships, not how it was written. Four such strings were
+      # live in the Greek app — one of them thrown at a student importing a file.
+      - name: Names only its own language
+        run: >
+          node --import tsx scripts/check-app-purity.mjs
+          --pack languages/${{ matrix.pack }}
       - name: Fold and families
         run: >
           node --import tsx scripts/validate-pack.mjs

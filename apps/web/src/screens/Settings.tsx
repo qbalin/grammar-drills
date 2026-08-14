@@ -145,9 +145,9 @@ export function SettingsSheet({
         <span className="field__label">Keep the sentence a word was met in</span>
       </label>
       <p className="field__hint">
-        When saving a Latin word for study by doing a long press on it, also
-        attach the sentence in which the word was met when reviewing the newly
-        created vocabulary card.
+        When saving a {profile.l2.name} word for study by doing a long press on
+        it, also attach the sentence in which the word was met when reviewing
+        the newly created vocabulary card.
       </p>
 
       <label className="field field--check">
@@ -158,8 +158,9 @@ export function SettingsSheet({
         Tests questions and answers are AI generated as well as sourced from
         ancient authors. Tick this box if you want to only see attested classical
         quotes (some topics that do not have any classical quotes will still show
-        AI generated tests). Benefit: the latin is pure and attested. Drawback:
-        some topics may be very thin or lack questions altogether.
+        AI generated tests). Benefit: the {profile.l2.name} is pure and
+        attested. Drawback: some topics may be very thin or lack questions
+        altogether.
       </p>
 
       {/* Disabled under the preference above rather than hidden: with only

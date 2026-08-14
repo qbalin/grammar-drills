@@ -391,7 +391,7 @@ export function VocabEditSheet({
             aria-label="Meaning"
           />
           <span className="field__hint">
-            The prompt side: this is what you see before the Latin.
+            The prompt side: this is what you see before the {profile.l2.name}.
           </span>
         </label>
         <div className="actions">

@@ -90,7 +90,7 @@ export function QuestionVocabulary({
                       blank column would read as a rendering fault. */}
                   {word.english ?? "·"}
                 </span>
-                <span className="crib-row__latin">
+                <span className="crib-row__target">
                   {word.entry ? (
                     <>
                       <span className="crib-row__citation">{word.entry.citation}</span>
