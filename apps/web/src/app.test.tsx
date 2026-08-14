@@ -1054,6 +1054,147 @@ describe("marking up an answer", () => {
 });
 
 /**
+ * A trail is where a student reads the correction of an answer they got wrong,
+ * which is the moment a word in it is worth keeping — and until now it was the
+ * one place a sentence could be compared but not used.
+ *
+ * The thing all of this has to get right is *which* sentence: an attempt carries
+ * its own copy of what was on the screen at the time, and the question in hand
+ * while the trail is open is somebody else's.
+ */
+describe("holding a word in the trail", () => {
+  /** One answer on the record, with the trail open under the next question. */
+  async function trailOpen(user: ReturnType<typeof userEvent.setup>) {
+    const mounted = mount();
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Earlier answers —/ }));
+    return mounted;
+  }
+
+  /** The same answer on the record, read from the topic sheet instead. */
+  async function trailInSheet(user: ReturnType<typeof userEvent.setup>) {
+    const mounted = await trailOpen(user);
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    await user.click(within(map).getByRole("button", { name: /First declension/ }));
+    return mounted;
+  }
+
+  it("keeps the sentence the attempt was written against, not the one in hand", async () => {
+    const user = userEvent.setup();
+    const { session } = await trailOpen(user);
+    // The screen underneath is on the storm; the trail is on the rose.
+    expect(screen.getByText("The sailors feared the storm.")).toBeDefined();
+
+    await holdWordIn("#earlier-answers .attempt__answer", "rosam");
+
+    expect(session.vocabContexts("v-rosa")).toEqual([
+      expect.objectContaining({
+        prompt: "The girl loves the rose.",
+        sentence: "Puella rosam amat.",
+        source: "answer",
+        index: 1,
+      }),
+    ]);
+  });
+
+  it("files a word held in what was written as the student's own", async () => {
+    const user = userEvent.setup();
+    const { session } = await trailOpen(user);
+
+    await holdWordIn("#earlier-answers .attempt__written", "amat");
+
+    // Labelled `submitted`, because that sentence may be wrong and a card that
+    // drew a mistake as a model would teach it back.
+    expect(session.vocabContexts("v-amo")).toEqual([
+      expect.objectContaining({
+        sentence: "Puella rosa amat.",
+        source: "submitted",
+        index: 2,
+      }),
+    ]);
+  });
+
+  it("offers no hold on the English", async () => {
+    const user = userEvent.setup();
+    await trailOpen(user);
+    // The prompt is the language the student already reads, so it takes the
+    // plain branch and carries no `.word` spans at all.
+    expect(wordsIn("#earlier-answers .attempt__prompt")).toHaveLength(0);
+  });
+
+  it("suspends the hold on the row being marked, and on that row alone", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    // Two answers on one topic, so there are two rows to tell apart.
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+    await user.type(screen.getByLabelText("Your Latin"), "Nautae procellam timēbant.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+    await carryOn(user);
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    await user.click(within(map).getByRole("button", { name: /First declension/ }));
+
+    // The rose row, whichever way round the trail is drawn.
+    const rose = Array.from(document.querySelectorAll<HTMLElement>(".attempt")).find(
+      (el) => el.textContent?.includes("Puella rosa amat."),
+    )!;
+    await user.click(within(rose).getByRole("button", { name: "Mark up this answer" }));
+    await holdWordIn(".attempt--marking .attempt__answer", "rosam");
+    expect(session.vocabList()).toHaveLength(0);
+
+    // The other row never entered the mode, so its press still means save —
+    // here by offering the card by hand, since the fixture has no `procellam`.
+    // Its written line, not its correction: that answer matched, and a right
+    // answer is marked and left alone rather than printed twice.
+    await holdWordIn(".attempt:not(.attempt--marking) .attempt__written", "procellam");
+    const written = screen.getByRole("dialog", { name: "Write the card yourself" });
+    await user.click(within(written).getByRole("button", { name: "Close" }));
+
+    // And the marked row's press comes straight back when the mode ends.
+    await user.click(within(rose).getByRole("button", { name: "Done marking this answer" }));
+    await holdWordIn(".attempt__answer", "rosam");
+    expect(session.vocabList().map((c) => c.citation)).toEqual(["rosa, rosae (f)"]);
+  });
+
+  it("leaves the sheet the word was held in open", async () => {
+    const user = userEvent.setup();
+    const { session } = await trailInSheet(user);
+
+    await holdWordIn(".attempt__answer", "rosam");
+
+    // The card is saved and the page it was read on is still the page on
+    // screen: taking a word must not cost the topic being read.
+    expect(session.vocabCard("v-rosa")).toBeDefined();
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+  });
+
+  it("comes back to that sheet from the sheet a gesture raised over it", async () => {
+    const user = userEvent.setup();
+    await trailInSheet(user);
+
+    // A form the dictionary has not got: the card is offered by hand, over the
+    // topic sheet rather than instead of it.
+    await holdWordIn(".attempt__answer", "Puella");
+    const written = screen.getByRole("dialog", { name: "Write the card yourself" });
+    await user.click(within(written).getByRole("button", { name: "Close" }));
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+
+    // And the same for a look, which commits nothing at all.
+    await inspectWord("rosam");
+    const sheet = screen.getByRole("dialog", { name: "rosa, rosae (f)" });
+    await user.click(within(sheet).getByRole("button", { name: "Close" }));
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+  });
+});
+
+/**
  * Taking one of the three texts off the screen.
  *
  * The reason there is a button at all: both Latin sentences are drawn a word at
@@ -1864,8 +2005,10 @@ describe("a vocabulary card that remembers where the word was met", () => {
     expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
     expect(screen.getByText("The girl loves the rose.")).toBeDefined();
     expect(sentences()).toContain("Puella rosam amat.");
-    // The held word is picked out in the sentence it was held in.
-    expect(document.querySelector(".mark--b")?.textContent).toBe("rosam");
+    // The held word is picked out in the sentence it was held in — `.word--b`
+    // now that the sentence is holdable in its own right, which is the same
+    // rule in the stylesheet as the `.mark--b` it wore while it was plain.
+    expect(document.querySelector(".word--b")?.textContent).toBe("rosam");
   });
 
   it("offers the English of the sentence as a hint, and never the Latin", async () => {
@@ -1894,6 +2037,83 @@ describe("a vocabulary card that remembers where the word was met", () => {
     await user.click(screen.getByRole("button", { name: "Review" }));
 
     expect(screen.queryByRole("button", { name: /hint/ })).toBeNull();
+  });
+
+  /**
+   * A line kept because of one word is still a line, full of others. These are
+   * about the *other* words in it: the card the gesture writes is theirs, and
+   * the sentence it keeps is the one the card being reviewed was holding — not
+   * whatever question happens to be underneath the review.
+   */
+  it("records a neighbour of the word, keeping the sentence the card held", async () => {
+    const user = userEvent.setup();
+    const { session } = await reviewOne(user);
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    await holdWordIn(".compare__block--reference", "amat");
+
+    // The card is the held word's, and its sentence is the reviewed card's —
+    // prompt, source and position all as they stood when `rosam` was taken.
+    expect(session.vocabCard("v-amo")?.citation).toBe("amō, amāre, amāvī, amātum");
+    expect(session.vocabContexts("v-amo")).toEqual([
+      expect.objectContaining({
+        prompt: "The girl loves the rose.",
+        sentence: "Puella rosam amat.",
+        source: "answer",
+        index: 2,
+      }),
+    ]);
+  });
+
+  it("does not double the sentence when the card's own word is held", async () => {
+    const user = userEvent.setup();
+    const { session } = await reviewOne(user);
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    await holdWordIn(".compare__block--reference", "rosam");
+
+    // The same line folds to the same context, so there is nothing to add and
+    // the toast says so rather than looking like a press that missed.
+    expect(session.vocabContexts("v-rosa")).toHaveLength(1);
+    expect(screen.getByText(/rosa, rosae \(f\) is already saved/)).toBeDefined();
+  });
+
+  it("looks a word up from the back of a card, without grading it", async () => {
+    const user = userEvent.setup();
+    const { session } = await reviewOne(user);
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    await inspectWord("amat");
+    const sheet = screen.getByRole("dialog", { name: "amō, amāre, amāvī, amātum" });
+    expect(within(sheet).getByText("to love")).toBeDefined();
+
+    // Nothing was saved and nothing was graded: closing comes back to the card.
+    await user.click(within(sheet).getByRole("button", { name: "Close" }));
+    expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
+    expect(session.vocabCard("v-amo")).toBeUndefined();
+    expect(session.vocabCard("v-rosa")?.fsrs.reps).toBe(0);
+  });
+
+  it("copies the sentence a card kept, and not the English with it", async () => {
+    const user = userEvent.setup();
+    await reviewOne(user);
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    // Named by its text rather than by its block: a card keeps up to eight
+    // sentences, and several can be labelled the same way.
+    await user.click(
+      screen.getByRole("button", { name: "Copy the sentence “Puella rosam amat.”" }),
+    );
+    expect(await navigator.clipboard.readText()).toBe("Puella rosam amat.");
+  });
+
+  it("says how the gestures work, only where there is a sentence to use them on", async () => {
+    const user = userEvent.setup();
+    await reviewOne(user);
+    // Behind Show with the sentences, since that is what it is about.
+    expect(screen.queryByText(/Hold a word to save it/)).toBeNull();
+    await user.click(screen.getByRole("button", { name: "Show" }));
+    expect(screen.getByText(/Hold a word to save it/)).toBeDefined();
   });
 });
 
@@ -2278,7 +2498,11 @@ describe("a section's questions", () => {
     await user.click(within(list).getByRole("button", { name: /The girl loves the rose/ }));
     const one = screen.getByRole("dialog", { name: "Question" });
     expect(within(one).getByText("Your answers")).toBeDefined();
-    expect(within(one).getByText("Puella rosa amat.")).toBeDefined();
+    // A word at a time, since the trail's Latin is holdable — so the line is
+    // read off the block rather than looked up as one piece of text.
+    expect(
+      one.querySelector(".attempt__written")?.textContent,
+    ).toBe("Puella rosa amat.");
     expect(within(one).getByText(/hard/)).toBeDefined();
     // The prompt is the sheet's own heading, so it is not repeated per answer.
     expect(within(one).queryByText("The girl loves the rose.")).toBeDefined();

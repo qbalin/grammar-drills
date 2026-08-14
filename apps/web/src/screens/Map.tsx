@@ -381,6 +381,8 @@ export function TopicSheet({
   onDrill,
   onQuestions,
   onMark,
+  onHoldWord,
+  onInspectWord,
   elsewhere,
   onElsewhere,
 }: {
@@ -395,6 +397,9 @@ export function TopicSheet({
   onDrill: () => void;
   onQuestions: () => void;
   onMark?: (at: string, marks: AttemptMarks) => void;
+  /** The trail's own two gestures, passed through. */
+  onHoldWord?: HoldPastWord;
+  onInspectWord?: (word: string) => void;
   /**
    * The same grammar point as the other books of the pack put it — one entry
    * per book, already formatted, so this file learns nothing about how a
@@ -504,13 +509,32 @@ export function TopicSheet({
       )}
 
       {attempts.length > 0 && (
-        <AttemptTrail attempts={attempts} onMark={onMark} />
+        <AttemptTrail
+          attempts={attempts}
+          onMark={onMark}
+          onHoldWord={onHoldWord}
+          onInspectWord={onInspectWord}
+        />
       )}
     </Sheet>
   );
 }
 
 const RATING_WORD = ["", "again", "hard", "good", "easy"];
+
+/**
+ * A word held in one of an attempt's two Latin lines — see `AttemptTrail`.
+ *
+ * Named once because four components pass it along untouched: a trail is drawn
+ * on the graded screen and inside three sheets, and a signature written out four
+ * times is four chances for one of them to name the lines differently.
+ */
+export type HoldPastWord = (
+  word: string,
+  attempt: Attempt,
+  where: "answer" | "submitted",
+  index: number,
+) => void;
 
 /**
  * What was written here before, and what it should have been.
@@ -532,6 +556,14 @@ const RATING_WORD = ["", "again", "hard", "good", "easy"];
  * Whatever the student picked out is shown wherever the trail is, and with
  * `onMark` it can be picked out here too — which is the only way a trail
  * written before marking existed ever gets any.
+ *
+ * The two Latin lines also answer to the hold and the double-tap, on the terms
+ * the graded screen sets. A trail is where a student reads the correction of an
+ * answer they got wrong, which is the moment a word in it is worth keeping, and
+ * until now it was the one place a sentence could be compared but not used.
+ * There is no hint line for it: the trail's own idiom is a hint inside a mode
+ * (`.attempt__hint`), and a line repeated under every row of a list of five
+ * costs more than it teaches for a gesture that is an enhancement.
  */
 export function AttemptTrail({
   attempts,
@@ -541,6 +573,8 @@ export function AttemptTrail({
   /** Off where the reference already stands above the trail, unrepeated. */
   showAnswer = true,
   onMark,
+  onHoldWord,
+  onInspectWord,
 }: {
   /** Empty when the trail is already under a heading of its own. */
   title?: string;
@@ -553,6 +587,22 @@ export function AttemptTrail({
    * Save button would be the one place that does not.
    */
   onMark?: (at: string, marks: AttemptMarks) => void;
+  /**
+   * A word held down in one of an attempt's two Latin lines.
+   *
+   * The attempt goes up whole, because the sentence a card keeps has to be the
+   * one that was on the screen at the time: `a.answer` is already that copy, and
+   * a pack's questions can be regenerated under a trail that is months old.
+   * Which of the two lines it was is named the way `AttemptMarks` names them,
+   * since a card taken from what the student wrote is kept beside Latin that may
+   * be wrong.
+   *
+   * Optional like `onMark`, because a trail is drawn in four places and each one
+   * says for itself what it offers.
+   */
+  onHoldWord?: HoldPastWord;
+  /** Double-click: look the word up rather than record it. Rides with the hold. */
+  onInspectWord?: (word: string) => void;
 }) {
   /** The one attempt being marked, by `at`. One at a time, like the hold. */
   const [editing, setEditing] = useState<string | null>(null);
@@ -601,6 +651,9 @@ export function AttemptTrail({
             </div>
             {prompt && (
               <div className="attempt__prompt">
+                {/* No hold and no lookup: the prompt is the language the student
+                    already reads, which is what the graded screen says of its
+                    own. */}
                 <Sentence
                   text={a.prompt}
                   marks={marks.prompt}
@@ -612,10 +665,19 @@ export function AttemptTrail({
               className={`attempt__written${written ? "" : " attempt__written--empty"}`}
             >
               {written ? (
+                // No `marking` guard on the hold: `Sentence` gives `onMark`
+                // precedence and does not wire the hold up at all while it is
+                // there, which is the exclusivity the mode already relies on.
+                // The trimmed string, because that is the line drawn — a card
+                // must keep the sentence that was on the screen.
                 <Sentence
                   text={written}
                   marks={marks.submitted}
                   onMark={marking ? (n) => mark("submitted", n) : undefined}
+                  onHold={
+                    onHoldWord && ((word, n) => onHoldWord(word, a, "submitted", n))
+                  }
+                  onInspect={onInspectWord}
                 />
               ) : (
                 "— nothing written"
@@ -628,6 +690,8 @@ export function AttemptTrail({
                   text={a.answer}
                   marks={marks.answer}
                   onMark={marking ? (n) => mark("answer", n) : undefined}
+                  onHold={onHoldWord && ((word, n) => onHoldWord(word, a, "answer", n))}
+                  onInspect={onInspectWord}
                 />
               </div>
             )}
@@ -658,11 +722,17 @@ export function EarlierAnswers({
   open,
   onToggle,
   onMark,
+  onHoldWord,
+  onInspectWord,
 }: {
   attempts: Attempt[];
   open: boolean;
   onToggle: () => void;
   onMark?: (at: string, marks: AttemptMarks) => void;
+  /** Pass-through: this is the graded screen's own trail, folded away, so the
+   *  gestures it carries are that screen's. */
+  onHoldWord?: HoldPastWord;
+  onInspectWord?: (word: string) => void;
 }) {
   if (attempts.length === 0) return null;
   return (
@@ -680,7 +750,13 @@ export function EarlierAnswers({
       </button>
       {open && (
         <div className="crib__list crib__list--trail" id="earlier-answers">
-          <AttemptTrail attempts={attempts} title="" onMark={onMark} />
+          <AttemptTrail
+            attempts={attempts}
+            title=""
+            onMark={onMark}
+            onHoldWord={onHoldWord}
+            onInspectWord={onInspectWord}
+          />
         </div>
       )}
     </div>

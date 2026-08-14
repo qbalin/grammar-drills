@@ -5,7 +5,7 @@ import type {
   QuestionSource,
 } from "@lang-tutor/core";
 import { Sheet, ago } from "../ui.js";
-import { AttemptTrail } from "./Map.js";
+import { AttemptTrail, type HoldPastWord } from "./Map.js";
 
 /**
  * A section's whole question bank.
@@ -109,11 +109,18 @@ export function QuestionSheet({
   section,
   onClose,
   onMark,
+  onHoldWord,
+  onInspectWord,
 }: {
   question: BankedQuestion;
   section: GrammarSection;
   onClose: () => void;
   onMark?: (at: string, marks: AttemptMarks) => void;
+  /** The trail's own two gestures, passed through. The reference block above is
+   *  not among them: it is the bank's Latin, plain text, and this sheet is a
+   *  list to read rather than an answer to work over. */
+  onHoldWord?: HoldPastWord;
+  onInspectWord?: (word: string) => void;
 }) {
   return (
     <Sheet title="Question" subtitle={`§ ${section.ref}`} onClose={onClose}>
@@ -141,6 +148,8 @@ export function QuestionSheet({
              marker shows it anyway — there has to be something there to mark. */
           showAnswer={false}
           onMark={onMark}
+          onHoldWord={onHoldWord}
+          onInspectWord={onInspectWord}
         />
       ) : (
         <p className="field__hint">

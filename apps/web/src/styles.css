@@ -489,8 +489,9 @@ span.status__title {
 }
 
 /* A block's label and its copy button on one line. The bottom margin moves onto
-   the row rather than off the label, because the vocabulary card uses
-   `.compare__label` bare — a label, no button — and would lose its spacing. */
+   the row rather than off the label, because `.compare__label` is still used
+   bare where a block has nothing to copy — the citation on a card's back — and
+   that one would otherwise lose its spacing. */
 .compare__head {
   display: flex;
   align-items: baseline;

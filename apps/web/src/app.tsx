@@ -6,6 +6,7 @@ import {
   locateWord,
   questionVocabulary,
   words,
+  type Attempt,
   type AttemptMarks,
   type LemmaEntry,
   type Mode,
@@ -16,6 +17,7 @@ import {
   type ScheduleEntry,
   type Test,
   type TopicProgress,
+  type VocabContext,
   type VocabWord,
 } from "@lang-tutor/core";
 import {
@@ -151,22 +153,43 @@ type Overlay =
    * where a ref would have to be cleared on each of them. Miss one and the
    * *next* word saved quietly gets the previous word's sentence: a wrong card
    * that looks entirely right.
+   *
+   * `back` is what the gesture was made over, on these four for the same reason
+   * `grammar` and `topic` carry it: they are opened by a press rather than
+   * navigated to, and a press now lands in the attempt trail, which is drawn
+   * inside three sheets. Without it, holding a word while reading a topic would
+   * answer by closing the topic. Absent on the study screen and a card's back,
+   * where there was nothing underneath — which is every press written before
+   * the trail had the gesture.
    */
-  | { t: "vocab-input"; prefill?: string; auto?: boolean; context?: NewVocabContext }
+  | {
+      t: "vocab-input";
+      prefill?: string;
+      auto?: boolean;
+      context?: NewVocabContext;
+      back?: Overlay;
+    }
   | {
       t: "vocab-pick";
       form: string;
       candidates: LemmaEntry[];
       context?: NewVocabContext;
+      back?: Overlay;
     }
   /** A word the dictionary has not got, being written out by hand. */
-  | { t: "vocab-new"; form: string; context?: NewVocabContext }
+  | { t: "vocab-new"; form: string; context?: NewVocabContext; back?: Overlay }
   /**
    * A word double-clicked to be looked at. `entry` is the reading being shown
    * and `others` the rest, tappable — a look is not a decision, so an
    * ambiguous form opens on its commonest reading rather than on a picker.
    */
-  | { t: "inspect"; form: string; entry: LemmaEntry; others: LemmaEntry[] }
+  | {
+      t: "inspect";
+      form: string;
+      entry: LemmaEntry;
+      others: LemmaEntry[];
+      back?: Overlay;
+    }
   | { t: "settings" }
   /** Both copies moved since they last agreed; only a person can choose. */
   | { t: "conflict"; remote: Progress }
@@ -178,6 +201,28 @@ type Overlay =
 /** Whether anything at all has been picked out, across the three texts. */
 function hasMarks(marks: AttemptMarks): boolean {
   return Object.values(marks).some((m) => m && Object.keys(m).length > 0);
+}
+
+/**
+ * What a word gesture was made over, and what finishing it comes back to.
+ *
+ * Flattened rather than stacked: a pick sheet raised from the input sheet comes
+ * back to the sheet the word was *held* in, not to the input sheet. `back`
+ * records where the student was standing, and everything between the press and
+ * the saved card is one gesture — a way back into the middle of it would be an
+ * offer to do half the thing again.
+ */
+function under(open: Overlay): Overlay {
+  if (!open) return open;
+  switch (open.t) {
+    case "vocab-input":
+    case "vocab-pick":
+    case "vocab-new":
+    case "inspect":
+      return open.back ?? null;
+    default:
+      return open;
+  }
 }
 
 /** A toast, with the one action that undoes what it is announcing. */
@@ -1099,8 +1144,43 @@ export function App({ content, session, storage }: Props) {
     auto = false,
     context?: NewVocabContext,
   ) => {
-    setOverlay({ t: "vocab-input", prefill, auto, context });
+    setOverlay((open) => ({
+      t: "vocab-input",
+      prefill,
+      auto,
+      context,
+      back: under(open),
+    }));
     void ensureDictionary();
+  };
+
+  /**
+   * The one place a context is made, whichever sentence it came out of — the
+   * question being answered, a line a card has already kept, or an answer on the
+   * record.
+   *
+   * The preference is read here as an early-out and not as the decision:
+   * `Session.addVocabContext` checks it too, deliberately, so that the phone and
+   * the terminal cannot drift apart on it. What the check buys *here* is that a
+   * sentence never rides onto an overlay to be shown back to a student who asked
+   * not to keep any.
+   *
+   * An index that is absent or below zero means nothing was pointed at, and the
+   * field is left off rather than written as −1.
+   */
+  const contextOf = (
+    prompt: string,
+    sentence: string,
+    source: "answer" | "submitted",
+    index?: number,
+  ): NewVocabContext | undefined => {
+    if (!session.keepsContext() || !sentence) return undefined;
+    return {
+      prompt,
+      sentence,
+      source,
+      ...(index === undefined || index < 0 ? {} : { index }),
+    };
   };
 
   /**
@@ -1114,17 +1194,15 @@ export function App({ content, session, storage }: Props) {
   const contextFor = (
     where: "answer" | "submitted",
     index?: number,
-  ): NewVocabContext | undefined => {
-    if (!question || !session.keepsContext()) return undefined;
-    const sentence = where === "answer" ? question.answer : submitted.trim();
-    if (!sentence) return undefined;
-    return {
-      prompt: question.prompt,
-      sentence,
-      source: where,
-      ...(index === undefined || index < 0 ? {} : { index }),
-    };
-  };
+  ): NewVocabContext | undefined =>
+    question
+      ? contextOf(
+          question.prompt,
+          where === "answer" ? question.answer : submitted.trim(),
+          where,
+          index,
+        )
+      : undefined;
 
   /**
    * Show or hide the words behind the question.
@@ -1157,11 +1235,33 @@ export function App({ content, session, storage }: Props) {
       // a miss is most often a name or a form it cannot cut. The student has
       // already said this word is worth keeping, so the card is offered by hand
       // rather than the word being dropped with a toast.
-      setOverlay({ t: "vocab-new", form: form.trim(), context });
+      setOverlay((open) => ({
+        t: "vocab-new",
+        form: form.trim(),
+        context,
+        back: under(open),
+      }));
       return;
     }
     if (candidates.length === 1) return saveWord(candidates[0]!, context);
-    setOverlay({ t: "vocab-pick", form: form.trim(), candidates, context });
+    setOverlay((open) => ({
+      t: "vocab-pick",
+      form: form.trim(),
+      candidates,
+      context,
+      back: under(open),
+    }));
+  };
+
+  /**
+   * The tail every hold shares. The three gestures below differ only in which
+   * sentence they can honestly name, and that is settled before this runs.
+   */
+  const takeWord = (word: string, context?: NewVocabContext) => {
+    if (dictionaryReady()) return lookupWord(word, context);
+    // Nothing to look up against yet — the sheet takes the word and fetches.
+    // The sentence goes with it, so the download does not cost the context.
+    openVocab(word, true, context);
   };
 
   /**
@@ -1169,13 +1269,49 @@ export function App({ content, session, storage }: Props) {
    * the way back has to be cheap too: the toast that confirms the save is also
    * the way into the card, where it can be corrected or deleted.
    */
-  const holdWord = (word: string, where: "answer" | "submitted", index?: number) => {
-    const context = contextFor(where, index);
-    if (dictionaryReady()) return lookupWord(word, context);
-    // Nothing to look up against yet — the sheet takes the word and fetches.
-    // The sentence goes with it, so the download does not cost the context.
-    openVocab(word, true, context);
-  };
+  const holdWord = (word: string, where: "answer" | "submitted", index?: number) =>
+    takeWord(word, contextFor(where, index));
+
+  /**
+   * A word held down in a sentence some *other* card has already kept.
+   *
+   * The card that gets written is the held word's and never the one being
+   * reviewed, and the sentence goes across unchanged — so a word first met in
+   * the line about the soldiers is filed under that same line, which is the
+   * whole reason a card keeps one. Holding the reviewed card's own word finds
+   * the context already there and says so rather than doubling it.
+   *
+   * The context arrives built rather than being derived from `question`: there
+   * is no question on screen here at all, and the line is a record the app made
+   * earlier rather than anything the student is answering now.
+   */
+  const holdSavedWord = (word: string, kept: VocabContext, index: number) =>
+    takeWord(word, contextOf(kept.prompt, kept.sentence, kept.source, index));
+
+  /**
+   * A word held down in an answer already on the record.
+   *
+   * The attempt's own reference, not the question's answer today: a pack's
+   * questions are regenerated under a trail that can be months old, which is why
+   * an attempt carries its own copy of what it was shown. `.trim()` because the
+   * trail draws the trimmed line, and the card has to keep the sentence that was
+   * actually on the screen.
+   */
+  const holdPastWord = (
+    word: string,
+    attempt: Attempt,
+    where: "answer" | "submitted",
+    index: number,
+  ) =>
+    takeWord(
+      word,
+      contextOf(
+        attempt.prompt,
+        where === "answer" ? attempt.answer : attempt.submitted.trim(),
+        where,
+        index,
+      ),
+    );
 
   /**
    * A word typed into *record a word* rather than pointed at.
@@ -1208,7 +1344,16 @@ export function App({ content, session, storage }: Props) {
     const open = () => {
       const [entry, ...others] = content.lookup(word);
       if (!entry) return;
-      setOverlay({ t: "inspect", form: word.trim(), entry, others });
+      // The functional form is load-bearing here and not a style: on a cold
+      // device this runs after the download below, and an `overlay` read when
+      // the word was double-clicked would by then name a sheet that has closed.
+      setOverlay((was) => ({
+        t: "inspect",
+        form: word.trim(),
+        entry,
+        others,
+        back: under(was),
+      }));
     };
     if (dictionaryReady()) return open();
     // Nothing to look up against yet. `content.lookup` is synchronous and
@@ -1294,6 +1439,18 @@ export function App({ content, session, storage }: Props) {
   const copyForm = (form: string) => copyToClipboard(form, form);
 
   /**
+   * One sentence a card has kept, off the back of that card.
+   *
+   * The L2 alone: the English above it and the citation beside it stay on the
+   * screen and off the clipboard, the same rule the reference answer's button
+   * follows. `COPIED` is reused rather than reworded, because a card's block *is*
+   * the graded screen's block kept — the sentence was labelled "Reference" or
+   * "You wrote" when it was taken, and it says the same thing here.
+   */
+  const copyKept = (kept: VocabContext) =>
+    copyToClipboard(kept.sentence, COPIED[kept.source]);
+
+  /**
    * A word tapped in the trail, on an attempt already on the record — the only
    * way an answer written before marking existed ever gets any.
    *
@@ -1338,16 +1495,27 @@ export function App({ content, session, storage }: Props) {
   const inspectCribWord = (word: VocabWord) => {
     if (!word.entry) return;
     ensureParadigms();
-    setOverlay({ t: "inspect", form: word.form, entry: word.entry, others: word.others });
+    setOverlay((was) => ({
+      t: "inspect",
+      form: word.form,
+      entry: word.entry!,
+      others: word.others,
+      back: under(was),
+    }));
   };
 
   const saveWord = (entry: LemmaEntry, context?: NewVocabContext) => {
     // Asked before recording, because afterwards every word is one you had.
     const known = session.vocabCard(session.vocabIdFor(entry)) !== undefined;
+    // And read before closing, for the same reason: what the gesture was made
+    // over is the one thing finishing it is about to overwrite. A hold in the
+    // trail happens while a sheet is open, and taking a word must not cost the
+    // page it was read on.
+    const back = under(overlay);
     const id = session.recordVocab(entry);
     const kept = context ? session.addVocabContext(id, context) : "off";
     save();
-    setOverlay(null);
+    setOverlay(back);
     // A hold on a word already saved used to do nothing at all, and if it goes
     // on looking like nothing the student will take the append for a miss. So
     // the toast says which of the several things actually happened.
@@ -1360,7 +1528,7 @@ export function App({ content, session, storage }: Props) {
             : `${entry.citation} is already saved`
           : `Saved ${entry.citation}`,
       "Edit",
-      () => setOverlay({ t: "vocab-edit", cardId: id }),
+      () => setOverlay({ t: "vocab-edit", cardId: id, back }),
     );
     bump();
   };
@@ -1821,6 +1989,8 @@ export function App({ content, session, storage }: Props) {
                 open={showTrail}
                 onToggle={() => setShowTrail((open) => !open)}
                 onMark={sectionId ? markPast(sectionId) : undefined}
+                onHoldWord={holdPastWord}
+                onInspectWord={inspectWord}
               />
             }
           />
@@ -1838,6 +2008,9 @@ export function App({ content, session, storage }: Props) {
                 onReveal={() => setPhase({ ...phase, revealed: true })}
                 onGrade={(r) => gradeVocab(phase.cardId, r)}
                 onEdit={() => setOverlay({ t: "vocab-edit", cardId: phase.cardId })}
+                onHoldWord={holdSavedWord}
+                onInspectWord={inspectWord}
+                onCopy={copyKept}
               />
             );
           })()}
@@ -2001,6 +2174,8 @@ export function App({ content, session, storage }: Props) {
                 setOverlay({ t: "questions", sectionId: topic.sectionId })
               }
               onMark={markPast(topic.sectionId)}
+              onHoldWord={holdPastWord}
+              onInspectWord={inspectWord}
               elsewhere={elsewhereFor(topic.sectionId)}
               onElsewhere={(_book, sectionId) => {
                 // Reading, not switching: the other book's page opens over the
@@ -2048,6 +2223,8 @@ export function App({ content, session, storage }: Props) {
                 setOverlay({ t: "questions", sectionId: overlay.sectionId })
               }
               onMark={markPast(overlay.sectionId)}
+              onHoldWord={holdPastWord}
+              onInspectWord={inspectWord}
             />
           );
         })()}
@@ -2113,6 +2290,8 @@ export function App({ content, session, storage }: Props) {
           <AttemptTrail
             attempts={session.attemptsFor(overlay.sectionId)}
             onMark={markPast(overlay.sectionId)}
+            onHoldWord={holdPastWord}
+            onInspectWord={inspectWord}
           />
         </Sheet>
       )}
@@ -2129,7 +2308,7 @@ export function App({ content, session, storage }: Props) {
           onLookup={(form) =>
             lookupWord(form, overlay.context ?? typedWordContext(form))
           }
-          onClose={() => setOverlay(null)}
+          onClose={() => setOverlay(overlay.back ?? null)}
         />
       )}
 
@@ -2149,7 +2328,7 @@ export function App({ content, session, storage }: Props) {
               overlay.context,
             )
           }
-          onClose={() => setOverlay(null)}
+          onClose={() => setOverlay(overlay.back ?? null)}
         />
       )}
 
@@ -2158,7 +2337,7 @@ export function App({ content, session, storage }: Props) {
           form={overlay.form}
           candidates={overlay.candidates}
           onPick={(entry) => saveWord(entry, overlay.context)}
-          onClose={() => setOverlay(null)}
+          onClose={() => setOverlay(overlay.back ?? null)}
         />
       )}
 
@@ -2179,10 +2358,13 @@ export function App({ content, session, storage }: Props) {
               form: overlay.form,
               entry,
               others: [overlay.entry, ...overlay.others.filter((o) => o !== entry)],
+              // Carried across: switching reading is a look at the same word,
+              // and it must not cost the page the word was looked up from.
+              back: overlay.back,
             })
           }
           onCopy={() => copyForm(overlay.form)}
-          onClose={() => setOverlay(null)}
+          onClose={() => setOverlay(overlay.back ?? null)}
         />
       )}
 

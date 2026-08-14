@@ -4,9 +4,20 @@ import type {
   Question,
   Rating,
   VocabCardState,
+  VocabContext,
 } from "@lang-tutor/core";
 import { comesBack, CopyButton, GradeBar, Ring, Sentence } from "../ui.js";
 import { profile } from "../pack.js";
+
+/**
+ * How the two word gestures work, said once.
+ *
+ * One constant because it is one gesture: the graded screen and a card's back
+ * offer exactly the same press, and two wordings for it are how a student
+ * concludes there are two of them.
+ */
+const GESTURE_HINT =
+  "Hold a word to save it to your vocabulary; double-tap it to look it up.";
 
 /**
  * The question, being answered.
@@ -277,9 +288,7 @@ export function Graded({
           </div>
         </div>
         <p className="hint">
-          {marking
-            ? "Tap a word: bold, italic, struck, off."
-            : "Hold a word to save it to your vocabulary; double-tap it to look it up."}
+          {marking ? "Tap a word: bold, italic, struck, off." : GESTURE_HINT}
         </p>
         {history}
       </div>
@@ -316,6 +325,12 @@ export function Graded({
  * Nothing is written down about how much help was taken; that is the student's
  * to weigh when they grade themselves, which is the bargain Reveal already
  * strikes on a question.
+ *
+ * Those sentences answer to the same two gestures the graded screen's do, and
+ * for the same reason they exist at all: a line kept because of one word is
+ * still a line, full of others. Reading `mīlitum` on the back of `manus` and
+ * being able to do nothing with it was the card keeping the context and then
+ * withholding it.
  */
 export function VocabReview({
   card,
@@ -324,6 +339,9 @@ export function VocabReview({
   onReveal,
   onGrade,
   onEdit,
+  onHoldWord,
+  onInspectWord,
+  onCopy,
 }: {
   card: VocabCardState;
   revealed: boolean;
@@ -332,6 +350,26 @@ export function VocabReview({
   onGrade: (r: Rating) => void;
   /** A wrong citation is never more obvious than when it is being reviewed. */
   onEdit: () => void;
+  /**
+   * A word held down in one of the card's sentences: the word, the context it
+   * stood in, and where it stands among that sentence's words.
+   *
+   * The context goes up whole rather than being named the way the graded screen
+   * names its two texts, because unlike those it lives nowhere above this
+   * screen — it is the record being drawn, and the card that gets written keeps
+   * a copy of it. The index rides along for the reason it does on a question:
+   * the word alone cannot say which `rosam` of two was under the thumb.
+   */
+  onHoldWord: (word: string, kept: VocabContext, index: number) => void;
+  /** Double-click: look the word up rather than record it, as on a question. */
+  onInspectWord: (word: string) => void;
+  /**
+   * One block's Latin onto the clipboard. It earns its place for the reason the
+   * graded screen's buttons do: the words are `.word` spans now, and `.word`
+   * gives up text selection to keep iOS's magnifier off the 500 ms hold — which
+   * leaves the sentence readable and un-liftable.
+   */
+  onCopy: (kept: VocabContext) => void;
 }) {
   const contexts = card.contexts ?? [];
   const [hinted, setHinted] = useState(0);
@@ -375,12 +413,23 @@ export function VocabReview({
                 }`}
                 key={c.at}
               >
-                {/* The graded screen's own two labels, so the card back reads
-                    like the screen the word was taken from — and so a sentence
-                    the student wrote, which may be wrong, never passes for the
-                    reference. */}
-                <div className="compare__label">
-                  {c.source === "answer" ? "Reference" : "You wrote"}
+                <div className="compare__head">
+                  {/* The graded screen's own two labels, so the card back reads
+                      like the screen the word was taken from — and so a sentence
+                      the student wrote, which may be wrong, never passes for the
+                      reference. */}
+                  <div className="compare__label">
+                    {c.source === "answer" ? "Reference" : "You wrote"}
+                  </div>
+                  {/* The button names the sentence and not the block, because a
+                      card keeps up to eight of them and several can share a
+                      source: "the reference" announced three times is three
+                      identical controls to anyone who cannot see which block
+                      each one stands in. Naming it by its text is the edit
+                      sheet's own convention — `Move “…” up`, `Edit “…”` — and
+                      two blocks holding the same sentence copy the same thing,
+                      so two identical labels there are the truth. */}
+                  <CopyButton what={`the sentence “${c.sentence}”`} onCopy={() => onCopy(c)} />
                 </div>
                 <div className="context__prompt">{c.prompt}</div>
                 <div
@@ -388,20 +437,28 @@ export function VocabReview({
                     c.source === "answer" ? " compare__text--reference" : ""
                   }`}
                 >
-                  {/* No hold and no marking, so this takes `Sentence`'s plain
-                      branch and the held word picks up `.mark--b` — the
-                      emphasis that already means *this word*. An index naming
-                      no token simply highlights nothing, which is why the
-                      index is handed over rather than used to slice the text. */}
+                  {/* The holdable branch, so the word the card was made from
+                      wears `.word--b` where it wore `.mark--b`; the two are one
+                      rule in the stylesheet, so nothing moves on screen. Still
+                      no marking: a card is not an attempt, and a context has
+                      nowhere for a student's emphasis to live. An index naming
+                      no token simply highlights nothing, which is why the index
+                      is handed over rather than used to slice the text. */}
                   <Sentence
                     text={c.sentence}
                     marks={c.index === undefined ? undefined : { [c.index]: 1 }}
+                    onHold={(word, i) => onHoldWord(word, c, i)}
+                    onInspect={onInspectWord}
                   />
                 </div>
               </div>
             ))}
           </div>
         )}
+        {/* Only where there is a sentence to use it on. The citation above is
+            plain text, and a card that has kept none would be promising a
+            gesture with nothing to act on. */}
+        {revealed && contexts.length > 0 && <p className="hint">{GESTURE_HINT}</p>}
       </div>
       <div className="linkrow">
         <button onClick={onEdit}>✎ edit this word</button>
