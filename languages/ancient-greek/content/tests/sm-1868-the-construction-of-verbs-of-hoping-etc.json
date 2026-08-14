@@ -1905,5 +1905,60 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-1868-the-construction-of-verbs-of-hoping-etc-q4",
+  "sectionId": "sm-1868-the-construction-of-verbs-of-hoping-etc",
+  "questions": [
+   {
+    "prompt": "You did well in reminding me.",
+    "answer": "εὖ γ᾽ ἐποίησας ἀναμνήσας με",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὖ",
+     "γ",
+     "ἐποίησας",
+     "ἀναμνήσας",
+     "με"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "60c"
+    }
+   },
+   {
+    "prompt": "I was unconsciously talking nonsense.",
+    "answer": "ἔλαθον ἐμαυτὸν οὐδὲν εἰπών",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔλαθον",
+     "ἐμαυτὸν",
+     "οὐδὲν",
+     "εἰπών"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Phaedo",
+     "locus": "76d"
+    }
+   },
+   {
+    "prompt": "Who chanced to have spoken in opposition.",
+    "answer": "ὅστις ἀντειπών γε ἐτύγχανε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "ἀντειπών",
+     "γε",
+     "ἐτύγχανε"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.27"
+    }
+   }
+  ]
  }
 ]

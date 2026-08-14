@@ -1611,5 +1611,64 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1840-negative-prohibitions-q1",
+  "sectionId": "sm-1840-negative-prohibitions",
+  "questions": [
+   {
+    "prompt": "Let us not act like madmen nor perish disgracefully.",
+    "answer": "μὴ μαινώμεθα μηδ᾽ αἰσχρῶς ἀπολώμεθα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "μαινώμεθα",
+     "μηδ",
+     "αἰσχρῶς",
+     "ἀπολώμεθα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "7.1.29"
+    }
+   },
+   {
+    "prompt": "Do this and refrain from doing that.",
+    "answer": "τὰ μὲν ποίει, τὰ δὲ μὴ ποίει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "μὲν",
+     "ποίει",
+     "τὰ",
+     "δὲ",
+     "μὴ",
+     "ποίει"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "325d"
+    }
+   },
+   {
+    "prompt": "Let him neither acquit nor condemn in any way.",
+    "answer": "μήτ᾽ ἀπογνώτω μηδὲν μήτε καταγνώτω",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήτ",
+     "ἀπογνώτω",
+     "μηδὲν",
+     "μήτε",
+     "καταγνώτω"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "3.60"
+    }
+   }
+  ]
  }
 ]

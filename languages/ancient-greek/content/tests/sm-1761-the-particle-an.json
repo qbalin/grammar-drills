@@ -1322,5 +1322,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-1761-the-particle-an-q1",
+  "sectionId": "sm-1761-the-particle-an",
+  "questions": [
+   {
+    "prompt": "If we should make a feint attack here it seems to me we should find the mountain to have fewer defenders.",
+    "answer": "δοκοῦμεν δ᾽ ἄν μοι ταύτῃ προσποιούμενοι προσβαλεῖν ἐρημοτέρῳ ἂν τῷ ὄρει χρῆσθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δοκοῦμεν",
+     "δ",
+     "ἄν",
+     "μοι",
+     "ταύτῃ",
+     "προσποιούμενοι",
+     "προσβαλεῖν",
+     "ἐρημοτέρῳ",
+     "ἂν",
+     "τῷ",
+     "ὄρει",
+     "χρῆσθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "4.6.13"
+    }
+   },
+   {
+    "prompt": "The very tyrant is then in truth a very slave even if he does not seem so to any one.",
+    "answer": "ἔστιν ἄρα τῇ ἀληθείᾳ, κἂν εἰ μή τῳ δοκεῖ, ὁ τῷ ὄντι τύραννος τῷ ὄντι δοῦλος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔστιν",
+     "ἄρα",
+     "τῇ",
+     "ἀληθείᾳ",
+     "κἂν",
+     "εἰ",
+     "μή",
+     "τῳ",
+     "δοκεῖ",
+     "ὁ",
+     "τῷ",
+     "ὄντι",
+     "τύραννος",
+     "τῷ",
+     "ὄντι",
+     "δοῦλος"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "579d"
+    }
+   },
+   {
+    "prompt": "Neither can he assert nor can you be made to believe.",
+    "answer": "οὔτ᾽ ἂν οὗτος ἔχοι λέγειν οὔθ᾽ ὑμεῖς πεισθείητε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτ",
+     "ἂν",
+     "οὗτος",
+     "ἔχοι",
+     "λέγειν",
+     "οὔθ",
+     "ὑμεῖς",
+     "πεισθείητε"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "22.17"
+    }
+   }
+  ]
  }
 ]

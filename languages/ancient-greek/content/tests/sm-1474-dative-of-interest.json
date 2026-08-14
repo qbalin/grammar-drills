@@ -1862,5 +1862,71 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-1474-dative-of-interest-q4",
+  "sectionId": "sm-1474-dative-of-interest",
+  "questions": [
+   {
+    "prompt": "We at least must struggle to defend our freedom.",
+    "answer": "ἡμῖν γ᾽ ὑπὲρ τῆς ἐλευθερίας ἀγωνιστέον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμῖν",
+     "γ",
+     "ὑπὲρ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἀγωνιστέον"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "9.70"
+    }
+   },
+   {
+    "prompt": "The walls having been destroyed by the barbarians.",
+    "answer": "τῶν τειχῶν ὑπὸ τῶν βαρβάρων πεπτωκότων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "τειχῶν",
+     "ὑπὸ",
+     "τῶν",
+     "βαρβάρων",
+     "πεπτωκότων"
+    ],
+    "source": {
+     "author": "Aeschines",
+     "work": "Orations",
+     "locus": "2.172"
+    }
+   },
+   {
+    "prompt": "That she was an hetaera has been testified by the rest of his relatives and by his neighbours.",
+    "answer": "ὡς ἑταίρα ἦν . . . ὑπὸ τῶν ἄλλων οἰκείων καὶ ὑπὸ τῶν γειτόνων μεμαρτύρηται",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὡς",
+     "ἑταίρα",
+     "ἦν",
+     "ὑπὸ",
+     "τῶν",
+     "ἄλλων",
+     "οἰκείων",
+     "καὶ",
+     "ὑπὸ",
+     "τῶν",
+     "γειτόνων",
+     "μεμαρτύρηται"
+    ],
+    "source": {
+     "author": "Isaeus",
+     "work": "Orations",
+     "locus": "3.13"
+    }
+   }
+  ]
  }
 ]

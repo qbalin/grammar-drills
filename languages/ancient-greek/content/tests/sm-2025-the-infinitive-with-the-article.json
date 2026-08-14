@@ -1967,5 +1967,63 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2025-the-infinitive-with-the-article-q4",
+  "sectionId": "sm-2025-the-infinitive-with-the-article",
+  "questions": [
+   {
+    "prompt": "Imitate at least their wisdom.",
+    "answer": "τό γ᾽ εὖ φρονεῖν αὐτῶν μιμεῖσθε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "γ",
+     "εὖ",
+     "φρονεῖν",
+     "αὐτῶν",
+     "μιμεῖσθε"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.269"
+    }
+   },
+   {
+    "prompt": "You refuse to love.",
+    "answer": "τὸ ἐρᾶν ἔξαρνος εἶ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ἐρᾶν",
+     "ἔξαρνος",
+     "εἶ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Lysis",
+     "locus": "205a"
+    }
+   },
+   {
+    "prompt": "Taking heed only to strike any one he caught.",
+    "answer": "μόνον ὁρῶν τὸ παίειν τὸν ἁλισκόμενον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μόνον",
+     "ὁρῶν",
+     "τὸ",
+     "παίειν",
+     "τὸν",
+     "ἁλισκόμενον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "1.4.21"
+    }
+   }
+  ]
  }
 ]

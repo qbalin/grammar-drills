@@ -1201,5 +1201,71 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-q2",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "They reached such a pitch of insolence that they persuaded you to expel him.",
+    "answer": "εἰς τοσοῦτον ὕβρεως ἦλθον ὥστ᾽ ἔπεισαν ὑμᾶς ἐλαύνειν αὐτόν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰς",
+     "τοσοῦτον",
+     "ὕβρεως",
+     "ἦλθον",
+     "ὥστ",
+     "ἔπεισαν",
+     "ὑμᾶς",
+     "ἐλαύνειν",
+     "αὐτόν"
+    ],
+    "source": {
+     "author": "Isocrates",
+     "work": "Orations",
+     "locus": "16.9"
+    }
+   },
+   {
+    "prompt": "And on the next day he did not come; consequently the Greeks were anxious.",
+    "answer": "καὶ εἰς μὲν τὴν ὑστεραίαν οὐχ ἧκεν· ὥσθ᾽ οἱ Ἕλληνες ἐφρόντιζον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "εἰς",
+     "μὲν",
+     "τὴν",
+     "ὑστεραίαν",
+     "οὐχ",
+     "ἧκεν",
+     "ὥσθ",
+     "οἱ",
+     "Ἕλληνες",
+     "ἐφρόντιζον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "2.3.25"
+    }
+   },
+   {
+    "prompt": "And so I kept asking myself.",
+    "answer": "ὥστ᾽ ἐμὲ ἐμαυτὸν ἀνερωτᾶν",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστ",
+     "ἐμὲ",
+     "ἐμαυτὸν",
+     "ἀνερωτᾶν"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Apology",
+     "locus": "22e"
+    }
+   }
+  ]
  }
 ]

@@ -63,6 +63,16 @@ export default {
   functionWords: [
     "δ’", "τ’", "ἀλλ’", "οὐδ’", "μηδ’", "ἐπ’", "ἀπ’", "ὑπ’", "δι’", "καθ’",
     "μεθ’", "παρ’", "ἀφ’", "ὑφ’", "ἐφ’", "κατ’", "μετ’", "ἀνθ’", "ταῦτ’",
+    // The rest of the indeclinables Smyth's own quoted sentences elide. Each
+    // was read off the forms `quote-tests.mjs --plan` reports as unattested,
+    // and each is a particle, conjunction, preposition or adverb — so the rule
+    // above still holds: nothing here inflects.
+    "γ’", "οὔτ’", "οὔθ’", "μήτ’", "ὥστ’", "ὥσθ’", "ἀντ’", "ἀμφ’", "ἕνεκ’",
+    "ποτ’", "ποθ’", "οὔποτ’", "μήποθ’", "πώποτ’", "ὁπότ’", "ἡνίκ’", "ὁπηνίκ’",
+    "ἐνταῦθ’", "εἴθ’",
+    // The aspirated spelling of the ταῦτ’ already listed, not a new concession:
+    // ταῦθ’ is that word before a rough breathing.
+    "ταῦθ’",
   ],
 
   /** The prompt. `{{VOCAB}}` is replaced with a sample of the band. */

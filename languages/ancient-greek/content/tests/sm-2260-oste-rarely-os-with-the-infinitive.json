@@ -1818,5 +1818,106 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2260-oste-rarely-os-with-the-infinitive-q2",
+  "sectionId": "sm-2260-oste-rarely-os-with-the-infinitive",
+  "questions": [
+   {
+    "prompt": "They said that the soldiers reached such a degree of daintiness as to be unwilling to drink wine unless it had a strong bouquet.",
+    "answer": "ἔφασαν τοὺς στρατιώτας εἰς τοῦτο τρυφῆς ἐλθεῖν ὥστ᾽ οὐκ ἐθέλειν πἱνειν, εἰ μὴ ἀνθοσμίας εἴη",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφασαν",
+     "τοὺς",
+     "στρατιώτας",
+     "εἰς",
+     "τοῦτο",
+     "τρυφῆς",
+     "ἐλθεῖν",
+     "ὥστ",
+     "οὐκ",
+     "ἐθέλειν",
+     "πἱνειν",
+     "εἰ",
+     "μὴ",
+     "ἀνθοσμίας",
+     "εἴη"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Hellenica",
+     "locus": "6.2.6"
+    }
+   },
+   {
+    "prompt": "Let him consider that he was then so far advanced in years that he would have died soon afterwards.",
+    "answer": "ἐννοησάτω ὅτι οὕτως ἤδη τότε πόρρω τῆς ἡλικίας ἦν ὥστ᾽ . . . οὐκ ἂν πολλῷ ὕστερον τελευτῆσαι τὸν βίον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐννοησάτω",
+     "ὅτι",
+     "οὕτως",
+     "ἤδη",
+     "τότε",
+     "πόρρω",
+     "τῆς",
+     "ἡλικίας",
+     "ἦν",
+     "ὥστ",
+     "οὐκ",
+     "ἂν",
+     "πολλῷ",
+     "ὕστερον",
+     "τελευτῆσαι",
+     "τὸν",
+     "βίον"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Memorabilia",
+     "locus": "4.8.1"
+    }
+   },
+   {
+    "prompt": "I brought it about so that it seemed best to him to desist from warring against me.",
+    "answer": "ἐποίησα ὥστε δόξαι τούτῳ τοῦ πρὸς ἐμὲ πολέμου παύσασθαι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐποίησα",
+     "ὥστε",
+     "δόξαι",
+     "τούτῳ",
+     "τοῦ",
+     "πρὸς",
+     "ἐμὲ",
+     "πολέμου",
+     "παύσασθαι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.6.6"
+    }
+   },
+   {
+    "prompt": "For it concerned me exceedingly to know.",
+    "answer": "πάνυ γάρ μοι ἐμέλησεν ὥστε εἰδέναι",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάνυ",
+     "γάρ",
+     "μοι",
+     "ἐμέλησεν",
+     "ὥστε",
+     "εἰδέναι"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "6.3.19"
+    }
+   }
+  ]
  }
 ]

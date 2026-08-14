@@ -1697,5 +1697,72 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-3028-hyperbaton-q5",
+  "sectionId": "sm-3028-hyperbaton",
+  "questions": [
+   {
+    "prompt": "Nor bond nor free.",
+    "answer": "οὔτε δοῦλος οὔτ᾽ ἐλεύθερος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "δοῦλος",
+     "οὔτ",
+     "ἐλεύθερος"
+    ],
+    "source": {
+     "author": "Thucydides",
+     "work": "History of the Peloponnesian War",
+     "locus": "2.78"
+    }
+   },
+   {
+    "prompt": "Who has shown himself the guilty cause of so many other base and disgraceful acts, both long ago and lately, both small and great.",
+    "answer": "καὶ τοσούτων καὶ ἑτέρων κακῶν καὶ αἰσχρῶν καὶ πάλαι καὶ νεωστὶ καὶ μικρῶν καὶ μεγάλων αἰτίου γεγενημένου",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καὶ",
+     "τοσούτων",
+     "καὶ",
+     "ἑτέρων",
+     "κακῶν",
+     "καὶ",
+     "αἰσχρῶν",
+     "καὶ",
+     "πάλαι",
+     "καὶ",
+     "νεωστὶ",
+     "καὶ",
+     "μικρῶν",
+     "καὶ",
+     "μεγάλων",
+     "αἰτίου",
+     "γεγενημένου"
+    ],
+    "source": {
+     "author": "Lysias",
+     "work": "Orations",
+     "locus": "12.78"
+    }
+   },
+   {
+    "prompt": "He ordered them to get under arms.",
+    "answer": "παραγγέλλει ἐπὶ τὰ ὅπλα",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παραγγέλλει",
+     "ἐπὶ",
+     "τὰ",
+     "ὅπλα"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "1.5.13"
+    }
+   }
+  ]
  }
 ]

@@ -1293,5 +1293,67 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2942-oute-mete-q2",
+  "sectionId": "sm-2942-oute-mete",
+  "questions": [
+   {
+    "prompt": "Neither rain nor snow.",
+    "answer": "οὔτε νιφετός, οὐκ ὄμβρος",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "νιφετός",
+     "οὐκ",
+     "ὄμβρος"
+    ],
+    "source": {
+     "author": "Herodotus",
+     "work": "Histories",
+     "locus": "8.98"
+    }
+   },
+   {
+    "prompt": "Neither a State nor a constitution nor yet an individual.",
+    "answer": "οὔτε πόλις οὔτε πολιτεία οὐδέ γ᾽ ἀνήρ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔτε",
+     "πόλις",
+     "οὔτε",
+     "πολιτεία",
+     "οὐδέ",
+     "γ",
+     "ἀνήρ"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "499b"
+    }
+   },
+   {
+    "prompt": "Neither education nor courts of justice nor laws, no nor yet restraint.",
+    "answer": "μήτε παιδεία . . . μήτε δικαστήρια μήτε νόμοι μηδὲ ἀνάγκη μηδεμία",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήτε",
+     "παιδεία",
+     "μήτε",
+     "δικαστήρια",
+     "μήτε",
+     "νόμοι",
+     "μηδὲ",
+     "ἀνάγκη",
+     "μηδεμία"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Protagoras",
+     "locus": "327d"
+    }
+   }
+  ]
  }
 ]

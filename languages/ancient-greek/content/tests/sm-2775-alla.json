@@ -1739,5 +1739,74 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2775-alla-q1",
+  "sectionId": "sm-2775-alla",
+  "questions": [
+   {
+    "prompt": "Wishing to praise nothing except wealth.",
+    "answer": "οὐδὲν ἐθέλοντες ἐπαινεῖν ἀλλ᾽ ἢ τὸν πλοῦτον",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδὲν",
+     "ἐθέλοντες",
+     "ἐπαινεῖν",
+     "ἀλλ",
+     "ἢ",
+     "τὸν",
+     "πλοῦτον"
+    ],
+    "source": {
+     "author": "Plato",
+     "work": "Republic",
+     "locus": "330c"
+    }
+   },
+   {
+    "prompt": "The part where we are seems to me to be well disposed, but the wings cause me uneasiness.",
+    "answer": "τὰ μὲν καθ᾽ ἡμᾶς ἔμοιγε δοκεῖ καλῶς ἔχειν· ἀλλὰ τὰ πλάγια λυπεὶ με",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "μὲν",
+     "καθ",
+     "ἡμᾶς",
+     "ἔμοιγε",
+     "δοκεῖ",
+     "καλῶς",
+     "ἔχειν",
+     "ἀλλὰ",
+     "τὰ",
+     "πλάγια",
+     "λυπεὶ",
+     "με"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Cyropaedia",
+     "locus": "7.1.16"
+    }
+   },
+   {
+    "prompt": "If therefore you still desire even now.",
+    "answer": "ἐὰν οὖν ἀλλὰ νῦν γ᾽ ἔτι . . . ἐθελήσητε",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οὖν",
+     "ἀλλὰ",
+     "νῦν",
+     "γ",
+     "ἔτι",
+     "ἐθελήσητε"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "3.33"
+    }
+   }
+  ]
  }
 ]

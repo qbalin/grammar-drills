@@ -1346,5 +1346,59 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2088-the-supplementary-participle-q2",
+  "sectionId": "sm-2088-the-supplementary-participle",
+  "questions": [
+   {
+    "prompt": "I never ceased pitying ourselves.",
+    "answer": "οὔποτ᾽ ἐπαυόμην ἡμᾶς οἰκτίρων",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὔποτ",
+     "ἐπαυόμην",
+     "ἡμᾶς",
+     "οἰκτίρων"
+    ],
+    "source": {
+     "author": "Xenophon",
+     "work": "Anabasis",
+     "locus": "3.1.19"
+    }
+   },
+   {
+    "prompt": "There were some who distrusted Philip.",
+    "answer": "ἦσαν ἀπιστοῦντές τινες φιλίππῳ",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἦσαν",
+     "ἀπιστοῦντές",
+     "τινες",
+     "φιλίππῳ"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.53"
+    }
+   },
+   {
+    "prompt": "It was advantageous to the State.",
+    "answer": "συμφέρον ἦν τῇ πόλει",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συμφέρον",
+     "ἦν",
+     "τῇ",
+     "πόλει"
+    ],
+    "source": {
+     "author": "Demosthenes",
+     "work": "Orations",
+     "locus": "19.75"
+    }
+   }
+  ]
  }
 ]
