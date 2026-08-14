@@ -1710,7 +1710,24 @@ export class Session {
     return meanMastery(this.grammarMap(now));
   }
 
-  progress(): Progress {
+  /**
+   * The live progress, for saving and exporting — **not** a copy.
+   *
+   * `Readonly` rather than a clone, and the difference is the keystroke path:
+   * this is called by the draft-keeper every 400ms while somebody is typing, on
+   * a file whose attempt trail is deliberately uncapped and grows with years of
+   * study. Cloning it there would be work done on every fourth keypress for a
+   * caller that only wanted to write it out.
+   *
+   * What that buys is a compile error on `session.progress().bookAt = …`, which
+   * is the mutation worth stopping: it would change what the engine is running
+   * on *without moving `updatedAt`*, so the corruption would also never sync and
+   * never be noticed. What it does not reach is a write inside one of the
+   * records — `topicCards[id] = …` — because a deep readonly type would have to
+   * be threaded through `StorageAdapter` and every adapter besides. `snapshot()`
+   * is the detached copy for anyone who wants one.
+   */
+  progress(): Readonly<Progress> {
     return this.p;
   }
 
