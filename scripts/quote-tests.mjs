@@ -35,6 +35,7 @@ import { openReference } from "./lib/reference.mjs";
 import { makeClassifier } from "./lib/attestation.mjs";
 import { QUOTED_ID } from "./lib/quoted.mjs";
 import { noPoolMessage, poolsPresent, readPool } from "./lib/pools.mjs";
+import { closeElision } from "./lib/quotes.mjs";
 
 const argv = process.argv.slice(2);
 const at = (name) => {
@@ -170,8 +171,13 @@ function fromGrammar() {
     for (const example of topic.examples ?? []) {
       out.push({
         topicId: topic.id,
-        answer: unmarkQuantity(example.text),
-        prompt: asPrompt(example.gloss),
+        // The elision is closed on both sides, and on the gloss first: a
+        // prompt that keeps the mark while the answer loses it asks for a
+        // sentence it does not describe. Only 6 of the 129 carried it on both,
+        // but the pair has to be normalised together or the next book that
+        // marks its glosses more often reintroduces the mismatch.
+        answer: closeElision(unmarkQuantity(example.text)),
+        prompt: asPrompt(closeElision(example.gloss)),
         ref: example.ref,
       });
     }

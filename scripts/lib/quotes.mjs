@@ -142,6 +142,63 @@ export function isVerse(author) {
 
 const MACRON = /[āēīōūȳĀĒĪŌŪȲ]/;
 const ELLIPSIS = /\[…\]|\.\.\.|…/;
+
+/**
+ * An author's ellipsis as a *grammar book* prints it: `. . .`, spaced.
+ *
+ * `ELLIPSIS` above does not match it. `\.\.\.` wants three consecutive stops
+ * and Smyth writes three separated ones, so every guard built on that regex
+ * looked straight past the mark — which is how 129 quoted Greek answers came to
+ * ship with a hole in them, across 99 tests, while the Latin pool's identical
+ * guard was doing its job. Kept apart from `ELLIPSIS` rather than folded into
+ * it, because the two are used for opposite purposes: that one *rejects* a
+ * quotation, this one repairs it.
+ */
+const SPACED_ELLIPSIS = /\s*\.\s\.\s\.\s*/g;
+
+/**
+ * Whether a text carries the mark this module knows how to close.
+ *
+ * Its own unflagged pattern rather than `SPACED_ELLIPSIS.test(…)`. A `g`-flagged
+ * regex carries `lastIndex` between calls, so `test` on a shared one answers
+ * true, then false, then true down a list — which had this counting 2 of the 6
+ * marked prompts and silently leaving four questions asking for a sentence they
+ * do not describe.
+ */
+const HAS_SPACED_ELLIPSIS = /\.\s\.\s\./;
+export function hasElision(text) {
+  return HAS_SPACED_ELLIPSIS.test(String(text ?? "").normalize("NFC"));
+}
+
+/**
+ * Close an elision, joining what the book printed either side of it.
+ *
+ * Every one of the marks in the Greek pack sits *inside* the quotation — none
+ * is a leading or trailing truncation — so this always joins two separated
+ * pieces rather than trimming an end. That is a real cost and worth naming: the
+ * result is text the author did not write contiguously, under a citation that
+ * names them. It is the lesser cost. The alternative on offer was a student
+ * being asked to write `προσήκει μοι μᾶλλον ἑτέρων . . . ἄρχειν`, a sentence
+ * with a gap they have no way to know the width of, and no answer they could
+ * give would ever match.
+ *
+ * **What makes the join checkable is the gloss.** In 123 of the 129, the
+ * English carries no mark — Smyth's translation already describes the closed
+ * sentence, because what he cut was a word his gloss also passes over. So the
+ * prompt is the independent statement of what the answer ought to say, and the
+ * two agree afterwards where they disagreed before. The remaining 6 carry the
+ * mark on both sides and are closed on both, which keeps them in step.
+ *
+ * Nothing here guesses at Greek. It deletes a mark and the space around it.
+ */
+export function closeElision(text) {
+  return String(text ?? "")
+    .normalize("NFC")
+    .replace(SPACED_ELLIPSIS, " ")
+    .replace(/\s+([,.;·:])/g, "$1")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
 /** A capital to start and a stop to end: the cheapest test for "whole sentence". */
 const SENTENCE = /^[A-ZĀĒĪŌŪ]/;
 const TERMINAL = /[.!?]["'”’]?$/;

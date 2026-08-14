@@ -1,1608 +1,1608 @@
 [
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t1",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "We hid the weapons in order that the enemy might not find them.",
-    "answer": "ἐκρύψαμεν τὰ ὅπλα, ἵνα οἱ πολέμιοι μὴ εὕροιεν αὐτά.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐκρύψαμεν",
-     "τά",
-     "ὅπλα",
-     "ἵνα",
-     "οἱ",
-     "πολέμιοι",
-     "μή",
-     "εὕροιεν",
-     "αὐτά"
-    ]
-   },
-   {
-    "prompt": "The general leads the soldiers by night so that they may not be seen.",
-    "answer": "ὁ στρατηγὸς νύκτωρ ἄγει τοὺς στρατιώτας, ἵνα μὴ ὁραθῶσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγός",
-     "νύκτωρ",
-     "ἄγει",
-     "τούς",
-     "στρατιώτας",
-     "ἵνα",
-     "μή",
-     "ὁραθῶσιν"
-    ]
-   },
-   {
-    "prompt": "She fled from the city in order that she might never suffer such things.",
-    "answer": "ἔφυγεν ἐκ τῆς πόλεως, ὅπως μηδέποτε τοιαῦτα πάθοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔφυγεν",
-     "ἐκ",
-     "τῆς",
-     "πόλεως",
-     "ὅπως",
-     "μηδέποτε",
-     "τοιαῦτα",
-     "πάθοι"
-    ]
-   },
-   {
-    "prompt": "Guard the gates well, in order that no one may escape.",
-    "answer": "φυλάττετε εὖ τὰς πύλας, ἵνα μηδεὶς ἐκφύγῃ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φυλάττετε",
-     "εὖ",
-     "τάς",
-     "πύλας",
-     "ἵνα",
-     "μηδείς",
-     "ἐκφύγῃ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t2",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "See to it that you do nothing unworthy of your ancestors.",
-    "answer": "φρόντιζε ὅπως μηδὲν ἀνάξιον τῶν προγόνων πράξεις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φρόντιζε",
-     "ὅπως",
-     "μηδέν",
-     "ἀνάξιον",
-     "τῶν",
-     "προγόνων",
-     "πράξεις"
-    ]
-   },
-   {
-    "prompt": "He took care that the soldiers should never be without food.",
-    "answer": "ἐπεμελεῖτο ὅπως οἱ στρατιῶται μήποτε ἄσιτοι ἔσοιντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐπεμελεῖτο",
-     "ὅπως",
-     "οἱ",
-     "στρατιῶται",
-     "μήποτε",
-     "ἄσιτοι",
-     "ἔσοιντο"
-    ]
-   },
-   {
-    "prompt": "Take care that the children are harmed by no one.",
-    "answer": "ἐπιμελοῦ ὅπως τὰ παιδία ὑπὸ μηδενὸς βλαβήσεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐπιμελοῦ",
-     "ὅπως",
-     "τά",
-     "παιδία",
-     "ὑπό",
-     "μηδενός",
-     "βλαβήσεται"
-    ]
-   },
-   {
-    "prompt": "We contrived that the enemy might not perceive our plans.",
-    "answer": "ἐμηχανησάμεθα ὅπως οἱ πολέμιοι μὴ αἴσθοιντο τὰ ἡμέτερα βουλεύματα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐμηχανησάμεθα",
-     "ὅπως",
-     "οἱ",
-     "πολέμιοι",
-     "μή",
-     "αἴσθοιντο",
-     "τά",
-     "ἡμέτερα",
-     "βουλεύματα"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t3",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "If the gods were not willing, we would not be winning.",
-    "answer": "εἰ μὴ οἱ θεοὶ βούλοιντο, οὐκ ἂν νικῷμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "μή",
-     "οἱ",
-     "θεοί",
-     "βούλοιντο",
-     "οὐκ",
-     "ἄν",
-     "νικῷμεν"
-    ]
-   },
-   {
-    "prompt": "Unless someone helps us, the city will be captured.",
-    "answer": "εἰ μή τις ἡμῖν βοηθήσει, ἡ πόλις ἁλώσεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "μή",
-     "τις",
-     "ἡμῖν",
-     "βοηθήσει",
-     "ἡ",
-     "πόλις",
-     "ἁλώσεται"
-    ]
-   },
-   {
-    "prompt": "He never left the old man, unless there was some necessity.",
-    "answer": "οὐκ ἀπελείπετο τοῦ γέροντος, εἰ μή τι ἀναγκαῖον εἴη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "ἀπελείπετο",
-     "τοῦ",
-     "γέροντος",
-     "εἰ",
-     "μή",
-     "τι",
-     "ἀναγκαῖον",
-     "εἴη"
-    ]
-   },
-   {
-    "prompt": "If the wine were not sweet, no one would be drinking it.",
-    "answer": "εἰ μὴ ὁ οἶνος ἡδὺς ἦν, οὐδεὶς ἂν αὐτὸν ἔπινεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "μή",
-     "ὁ",
-     "οἶνος",
-     "ἡδύς",
-     "ἦν",
-     "οὐδείς",
-     "ἄν",
-     "αὐτόν",
-     "ἔπινεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t4",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "What I do not know, I do not even think I know.",
-    "answer": "ἃ μὴ οἶδα οὐδὲ οἴομαι εἰδέναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἅ",
-     "μή",
-     "οἶδα",
-     "οὐδέ",
-     "οἴομαι",
-     "εἰδέναι"
-    ]
-   },
-   {
-    "prompt": "Whoever does not obey the laws will pay the penalty.",
-    "answer": "ὅστις ἂν μὴ τοῖς νόμοις πείθηται, δίκην δώσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅστις",
-     "ἄν",
-     "μή",
-     "τοῖς",
-     "νόμοις",
-     "πείθηται",
-     "δίκην",
-     "δώσει"
-    ]
-   },
-   {
-    "prompt": "Wretched are those who have no ancestral gods.",
-    "answer": "ταλαίπωροί εἰσιν οἷς μὴ θεοὶ πατρῷοί εἰσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ταλαίπωροι",
-     "εἰσίν",
-     "οἷς",
-     "μή",
-     "θεοί",
-     "πατρῷοι"
-    ]
-   },
-   {
-    "prompt": "A man who does not fear death is brave.",
-    "answer": "ἀνδρεῖός ἐστιν ὅστις μὴ φοβεῖται τὸν θάνατον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀνδρεῖος",
-     "ἐστίν",
-     "ὅστις",
-     "μή",
-     "φοβεῖται",
-     "τόν",
-     "θάνατον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t5",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "They cast the child into the sea, where they would never see him again.",
-    "answer": "τὸ παιδίον εἰς τὴν θάλατταν ἐξέρριψαν, ἔνθα μήποτε αὐτὸν ἔτι ὄψονται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τό",
-     "παιδίον",
-     "εἰς",
-     "τήν",
-     "θάλατταν",
-     "ἐξέρριψαν",
-     "ἔνθα",
-     "μήποτε",
-     "αὐτόν",
-     "ἔτι",
-     "ὄψονται"
-    ]
-   },
-   {
-    "prompt": "She hid herself where no one might see her.",
-    "answer": "ἑαυτὴν ἔκρυψεν, ἔνθα μή τις αὐτὴν ἴδοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἑαυτήν",
-     "ἔκρυψεν",
-     "ἔνθα",
-     "μή",
-     "τις",
-     "αὐτήν",
-     "ἴδοι"
-    ]
-   },
-   {
-    "prompt": "They signify beforehand what one must do and what one must not.",
-    "answer": "προσημαίνουσιν ἅ τε χρὴ ποιεῖν καὶ ἃ οὐ χρή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "προσημαίνουσιν",
-     "ἅ",
-     "τε",
-     "χρή",
-     "ποιεῖν",
-     "καί",
-     "οὐ"
-    ]
-   },
-   {
-    "prompt": "Send messengers who will not betray the plan.",
-    "answer": "πέμψον ἀγγέλους οἳ τὸ βούλευμα μὴ προδώσουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πέμψον",
-     "ἀγγέλους",
-     "οἵ",
-     "τό",
-     "βούλευμα",
-     "μή",
-     "προδώσουσιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t6",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "The Lacedaemonians came to such greed that their empire did not satisfy them.",
-    "answer": "οἱ Λακεδαιμόνιοι εἰς τοσοῦτον ἀπληστίας ἦλθον ὥστε οὐκ ἐξήρκεσεν αὐτοῖς ἡ ἀρχή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "Λακεδαιμόνιοι",
-     "εἰς",
-     "τοσοῦτον",
-     "ἀπληστίας",
-     "ἦλθον",
-     "ὥστε",
-     "οὐκ",
-     "ἐξήρκεσεν",
-     "αὐτοῖς",
-     "ἡ",
-     "ἀρχή"
-    ]
-   },
-   {
-    "prompt": "He was so changed that I would not recognize him if I saw him.",
-    "answer": "οὕτω μετεβλήθη ὥστε οὐκ ἂν αὐτὸν γνωρίσαιμι ἰδών.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτω",
-     "μετεβλήθη",
-     "ὥστε",
-     "οὐκ",
-     "ἄν",
-     "αὐτόν",
-     "γνωρίσαιμι",
-     "ἰδών"
-    ]
-   },
-   {
-    "prompt": "A wretched being are you, who have neither shrines nor sacrifices.",
-    "answer": "ταλαίπωρος εἶ, ᾧ μήτε ἱερὰ μήτε θυσίαι εἰσίν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ταλαίπωρος",
-     "εἶ",
-     "ᾧ",
-     "μήτε",
-     "ἱερά",
-     "θυσίαι",
-     "εἰσίν"
-    ]
-   },
-   {
-    "prompt": "Vote for such measures as you will never repent of.",
-    "answer": "ψηφίσασθε τοιαῦτα ἐξ ὧν μηδέποτε ὑμῖν μεταμελήσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ψηφίσασθε",
-     "τοιαῦτα",
-     "ἐξ",
-     "ὧν",
-     "μηδέποτε",
-     "ὑμῖν",
-     "μεταμελήσει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t7",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "The general led the army by night, in order that the enemy might not perceive them.",
-    "answer": "ὁ στρατηγὸς νυκτὸς τὸ στράτευμα ἦγεν, ἵνα οἱ πολέμιοι αὐτῶν μὴ αἰσθάνοιντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγός",
-     "νυκτός",
-     "τό",
-     "στράτευμα",
-     "ἦγεν",
-     "ἵνα",
-     "οἱ",
-     "πολέμιοι",
-     "αὐτῶν",
-     "μή",
-     "αἰσθάνοιντο"
-    ]
-   },
-   {
-    "prompt": "We keep silent, in order that we may not reveal the plan to the citizens.",
-    "answer": "σιγῶμεν, ἵνα τὸ βούλευμα τοῖς πολίταις μὴ μηνύωμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σιγῶμεν",
-     "ἵνα",
-     "τό",
-     "βούλευμα",
-     "τοῖς",
-     "πολίταις",
-     "μή",
-     "μηνύωμεν"
-    ]
-   },
-   {
-    "prompt": "He gave the soldiers money, so that they might not leave their post in the danger.",
-    "answer": "τοῖς στρατιώταις χρήματα ἔδωκεν, ὡς ἐν τῷ κινδύνῳ μὴ λίποιεν τὴν τάξιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῖς",
-     "στρατιώταις",
-     "χρήματα",
-     "ἔδωκεν",
-     "ὡς",
-     "ἐν",
-     "τῷ",
-     "κινδύνῳ",
-     "μή",
-     "λίποιεν",
-     "τήν",
-     "τάξιν"
-    ]
-   },
-   {
-    "prompt": "The mother hid the sword, in order that the child might not touch it.",
-    "answer": "ἡ μήτηρ τὸ ξίφος ἔκρυψεν, ἵνα ὁ παῖς αὐτοῦ μὴ ἅπτοιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "μήτηρ",
-     "τό",
-     "ξίφος",
-     "ἔκρυψεν",
-     "ἵνα",
-     "ὁ",
-     "παῖς",
-     "αὐτοῦ",
-     "μή",
-     "ἅπτοιτο"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t8",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "Take care that the sailors are neither without food nor without drink.",
-    "answer": "ἐπιμελοῦ ὅπως οἱ ναῦται μήτε ἄσιτοι μήτε ἄποτοι ἔσονται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐπιμελοῦ",
-     "ὅπως",
-     "οἱ",
-     "ναῦται",
-     "μήτε",
-     "ἄσιτοι",
-     "ἄποτοι",
-     "ἔσονται"
-    ]
-   },
-   {
-    "prompt": "The generals contrived that the wall should not be captured by the barbarians.",
-    "answer": "οἱ στρατηγοὶ ἐμηχανῶντο ὅπως τὸ τεῖχος ὑπὸ τῶν βαρβάρων μὴ ἁλώσοιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατηγοί",
-     "ἐμηχανῶντο",
-     "ὅπως",
-     "τό",
-     "τεῖχος",
-     "ὑπό",
-     "τῶν",
-     "βαρβάρων",
-     "μή",
-     "ἁλώσοιτο"
-    ]
-   },
-   {
-    "prompt": "See to it that you never betray those who trust you.",
-    "answer": "φρόντιζε ὅπως τοὺς σοὶ πιστεύοντας μηδέποτε προδώσεις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φρόντιζε",
-     "ὅπως",
-     "τούς",
-     "σοί",
-     "πιστεύοντας",
-     "μηδέποτε",
-     "προδώσεις"
-    ]
-   },
-   {
-    "prompt": "We must see to it that the city does not fall into slavery.",
-    "answer": "δεῖ ἡμᾶς φροντίζειν ὅπως ἡ πόλις μὴ δουλωθήσεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δεῖ",
-     "ἡμᾶς",
-     "φροντίζειν",
-     "ὅπως",
-     "ἡ",
-     "πόλις",
-     "μή",
-     "δουλωθήσεται"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t9",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "Unless the ally comes, we shall not be able to withstand the enemy.",
-    "answer": "ἐὰν μὴ ὁ σύμμαχος ἔλθῃ, οὐ δυνησόμεθα τοῖς πολεμίοις ἀντέχειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐάν",
-     "μή",
-     "ὁ",
-     "σύμμαχος",
-     "ἔλθῃ",
-     "οὐ",
-     "δυνησόμεθα",
-     "τοῖς",
-     "πολεμίοις",
-     "ἀντέχειν"
-    ]
-   },
-   {
-    "prompt": "If the farmers had not fled, they would all have died.",
-    "answer": "εἰ μὴ οἱ γεωργοὶ ἔφυγον, πάντες ἂν ἀπέθανον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "μή",
-     "οἱ",
-     "γεωργοί",
-     "ἔφυγον",
-     "πάντες",
-     "ἄν",
-     "ἀπέθανον"
-    ]
-   },
-   {
-    "prompt": "The old man never went out unless there was some necessity.",
-    "answer": "ὁ γέρων οὐδέποτε ἐξῄει, εἰ μή τι ἀναγκαῖον εἴη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "οὐδέποτε",
-     "ἐξῄει",
-     "εἰ",
-     "μή",
-     "τι",
-     "ἀναγκαῖον",
-     "εἴη"
-    ]
-   },
-   {
-    "prompt": "If you do not honor the gods, you will suffer terrible things.",
-    "answer": "εἰ μὴ τοὺς θεοὺς τιμήσεις, δεινὰ πείσῃ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "μή",
-     "τούς",
-     "θεούς",
-     "τιμήσεις",
-     "δεινά",
-     "πείσῃ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t10",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "Whatever a man does not understand, he ought not to attempt.",
-    "answer": "ἃ ἄν τις μὴ ἐπίστηται, οὐ χρὴ ἐπιχειρεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἅ",
-     "ἄν",
-     "τις",
-     "μή",
-     "ἐπίστηται",
-     "οὐ",
-     "χρή",
-     "ἐπιχειρεῖν"
-    ]
-   },
-   {
-    "prompt": "Whoever has no friends lives wretchedly.",
-    "answer": "ὅστις φίλους μὴ ἔχει, ἀθλίως ζῇ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅστις",
-     "φίλους",
-     "μή",
-     "ἔχει",
-     "ἀθλίως",
-     "ζῇ"
-    ]
-   },
-   {
-    "prompt": "Those who do not obey the laws are justly punished.",
-    "answer": "οἳ ἂν τοῖς νόμοις μὴ πείθωνται, δικαίως κολάζονται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἵ",
-     "ἄν",
-     "τοῖς",
-     "νόμοις",
-     "μή",
-     "πείθωνται",
-     "δικαίως",
-     "κολάζονται"
-    ]
-   },
-   {
-    "prompt": "A city that has no good laws could not be happy.",
-    "answer": "πόλις ἥτις νόμους ἀγαθοὺς μὴ ἔχει οὐκ ἂν εὐδαίμων εἴη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πόλις",
-     "ἥτις",
-     "νόμους",
-     "ἀγαθούς",
-     "μή",
-     "ἔχει",
-     "οὐκ",
-     "ἄν",
-     "εὐδαίμων",
-     "εἴη"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t11",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "The storm became so great that the ships did not sail out.",
-    "answer": "ὁ χειμὼν τοσοῦτος ἐγένετο ὥστε αἱ νῆες οὐκ ἐξέπλευσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "χειμών",
-     "τοσοῦτος",
-     "ἐγένετο",
-     "ὥστε",
-     "αἱ",
-     "νῆες",
-     "οὐκ",
-     "ἐξέπλευσαν"
-    ]
-   },
-   {
-    "prompt": "He was so brave that no one could have frightened him.",
-    "answer": "οὕτως ἀνδρεῖος ἦν ὥστε οὐδεὶς ἂν αὐτὸν φοβήσειεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτως",
-     "ἀνδρεῖος",
-     "ἦν",
-     "ὥστε",
-     "οὐδείς",
-     "ἄν",
-     "αὐτόν",
-     "φοβήσειεν"
-    ]
-   },
-   {
-    "prompt": "The river was so deep that the soldiers did not cross it.",
-    "answer": "ὁ ποταμὸς οὕτω βαθὺς ἦν ὥστε οἱ στρατιῶται οὐ διέβησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ποταμός",
-     "οὕτω",
-     "βαθύς",
-     "ἦν",
-     "ὥστε",
-     "οἱ",
-     "στρατιῶται",
-     "οὐ",
-     "διέβησαν"
-    ]
-   },
-   {
-    "prompt": "So great a fear fell upon them that they did not dare to fight.",
-    "answer": "τοσοῦτος φόβος αὐτοῖς ἐνέπεσεν ὥστε οὐκ ἐτόλμησαν μάχεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοσοῦτος",
-     "φόβος",
-     "αὐτοῖς",
-     "ἐνέπεσεν",
-     "ὥστε",
-     "οὐκ",
-     "ἐτόλμησαν",
-     "μάχεσθαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t12",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "There is no one who does not fear death.",
-    "answer": "οὐδείς ἐστιν ὅστις τὸν θάνατον οὐ φοβεῖται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδείς",
-     "ἐστιν",
-     "ὅστις",
-     "τόν",
-     "θάνατον",
-     "οὐ",
-     "φοβεῖται"
-    ]
-   },
-   {
-    "prompt": "He was seeking a place where the enemy would never find him.",
-    "answer": "τόπον ἐζήτει ὅπου οἱ πολέμιοι αὐτὸν μήποτε εὑρήσοιεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τόπον",
-     "ἐζήτει",
-     "ὅπου",
-     "οἱ",
-     "πολέμιοι",
-     "αὐτόν",
-     "μήποτε",
-     "εὑρήσοιεν"
-    ]
-   },
-   {
-    "prompt": "Wretched is he who has neither ancestral gods nor shrines.",
-    "answer": "ἄθλιός ἐστιν ὅστις μήτε θεοὺς πατρῴους μήτε ἱερὰ ἔχει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄθλιος",
-     "ἐστιν",
-     "ὅστις",
-     "μήτε",
-     "θεούς",
-     "πατρῴους",
-     "ἱερά",
-     "ἔχει"
-    ]
-   },
-   {
-    "prompt": "Choose such friends as will never betray you.",
-    "answer": "τοιούτους φίλους αἱροῦ οἳ σε μήποτε προδώσουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοιούτους",
-     "φίλους",
-     "αἱροῦ",
-     "οἵ",
-     "σε",
-     "μήποτε",
-     "προδώσουσιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t13",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "The citizens fortified the city, in order that the barbarians might not plunder it.",
-    "answer": "οἱ πολῖται τὴν πόλιν ἐτείχισαν, ἵνα οἱ βάρβαροι αὐτὴν μὴ διαρπάσειαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πολῖται",
-     "τὴν",
-     "πόλιν",
-     "ἐτείχισαν",
-     "ἵνα",
-     "βάρβαροι",
-     "αὐτὴν",
-     "μὴ",
-     "διαρπάσειαν"
-    ]
-   },
-   {
-    "prompt": "He was anxious that the guards should not fall asleep.",
-    "answer": "ἐφρόντιζεν ὅπως οἱ φύλακες μὴ καθεύδοιεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐφρόντιζεν",
-     "ὅπως",
-     "οἱ",
-     "φύλακες",
-     "μὴ",
-     "καθεύδοιεν"
-    ]
-   },
-   {
-    "prompt": "See to it that the soldiers do not abandon their ranks.",
-    "answer": "σκόπει ὅπως οἱ στρατιῶται τὰς τάξεις μὴ λείψουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκόπει",
-     "ὅπως",
-     "οἱ",
-     "στρατιῶται",
-     "τὰς",
-     "τάξεις",
-     "μὴ",
-     "λείψουσιν"
-    ]
-   },
-   {
-    "prompt": "She sent the letter secretly, so that her father might not learn of the marriage.",
-    "answer": "λάθρᾳ τὴν ἐπιστολὴν ἔπεμψεν, ὅπως ὁ πατὴρ τὸν γάμον μὴ πύθοιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "λάθρᾳ",
-     "τὴν",
-     "ἐπιστολὴν",
-     "ἔπεμψεν",
-     "ὅπως",
-     "ὁ",
-     "πατὴρ",
-     "τὸν",
-     "γάμον",
-     "μὴ",
-     "πύθοιτο"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t14",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "If the messenger had not lied, we would not have been deceived.",
-    "answer": "εἰ ὁ ἄγγελος μὴ ἐψεύσατο, οὐκ ἂν ἐξηπατήθημεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "ὁ",
-     "ἄγγελος",
-     "μὴ",
-     "ἐψεύσατο",
-     "οὐκ",
-     "ἂν",
-     "ἐξηπατήθημεν"
-    ]
-   },
-   {
-    "prompt": "The old man never went out unless some necessity constrained him.",
-    "answer": "ὁ γέρων οὐδέποτε ἐξῄει, εἰ μή τις ἀνάγκη αὐτὸν βιάζοιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "οὐδέποτε",
-     "ἐξῄει",
-     "εἰ",
-     "μή",
-     "τις",
-     "ἀνάγκη",
-     "αὐτὸν",
-     "βιάζοιτο"
-    ]
-   },
-   {
-    "prompt": "Even if the enemy will not attack, we must keep guard.",
-    "answer": "εἰ καὶ οἱ πολέμιοι μὴ προσβαλοῦσιν, φυλάττεσθαι δεῖ ἡμᾶς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "καὶ",
-     "οἱ",
-     "πολέμιοι",
-     "μὴ",
-     "προσβαλοῦσιν",
-     "φυλάττεσθαι",
-     "δεῖ",
-     "ἡμᾶς"
-    ]
-   },
-   {
-    "prompt": "If you had not helped the exiles, they would have perished.",
-    "answer": "εἰ τοῖς φυγάσι μὴ ἐβοήθησας, ἀπώλοντο ἄν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "τοῖς",
-     "φυγάσι",
-     "μὴ",
-     "ἐβοήθησας",
-     "ἀπώλοντο",
-     "ἄν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t15",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "Whoever does not honor the gods will pay the penalty.",
-    "answer": "ὅστις τοὺς θεοὺς μὴ τιμᾷ, δίκην δώσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅστις",
-     "τοὺς",
-     "θεοὺς",
-     "μὴ",
-     "τιμᾷ",
-     "δίκην",
-     "δώσει"
-    ]
-   },
-   {
-    "prompt": "The witnesses, who were not present, were able to say nothing.",
-    "answer": "οἱ μάρτυρες, οἳ οὐ παρῆσαν, οὐδὲν εἰπεῖν εἶχον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "μάρτυρες",
-     "οἳ",
-     "οὐ",
-     "παρῆσαν",
-     "οὐδὲν",
-     "εἰπεῖν",
-     "εἶχον"
-    ]
-   },
-   {
-    "prompt": "Whatever things are not just, I am unwilling to do.",
-    "answer": "ἃ μὴ δίκαιά ἐστιν, οὐκ ἐθέλω ποιεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἃ",
-     "μὴ",
-     "δίκαιά",
-     "ἐστιν",
-     "οὐκ",
-     "ἐθέλω",
-     "ποιεῖν"
-    ]
-   },
-   {
-    "prompt": "There is no one who does not admire virtue.",
-    "answer": "οὐδείς ἐστιν ὅστις τὴν ἀρετὴν οὐ θαυμάζει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδείς",
-     "ἐστιν",
-     "ὅστις",
-     "τὴν",
-     "ἀρετὴν",
-     "οὐ",
-     "θαυμάζει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t16",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "The queen was seeking a place where the soldiers might never find her.",
-    "answer": "ἡ βασίλεια χωρίον ἐζήτει, ἔνθα οἱ στρατιῶται μηδέποτε αὐτὴν εὕροιεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "βασίλεια",
-     "χωρίον",
-     "ἐζήτει",
-     "ἔνθα",
-     "οἱ",
-     "στρατιῶται",
-     "μηδέποτε",
-     "αὐτὴν",
-     "εὕροιεν"
-    ]
-   },
-   {
-    "prompt": "The river was so deep that the horses were not able to cross it.",
-    "answer": "ὁ ποταμὸς οὕτω βαθὺς ἦν ὥστε οἱ ἵπποι οὐκ ἐδύναντο αὐτὸν διαβαίνειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ποταμὸς",
-     "οὕτω",
-     "βαθὺς",
-     "ἦν",
-     "ὥστε",
-     "οἱ",
-     "ἵπποι",
-     "οὐκ",
-     "ἐδύναντο",
-     "αὐτὸν",
-     "διαβαίνειν"
-    ]
-   },
-   {
-    "prompt": "He spoke so obscurely that I could not easily have understood him.",
-    "answer": "οὕτως ἀσαφῶς ἔλεγεν ὥστε οὐκ ἂν αὐτὸν ῥᾳδίως μάθοιμι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτως",
-     "ἀσαφῶς",
-     "ἔλεγεν",
-     "ὥστε",
-     "οὐκ",
-     "ἂν",
-     "αὐτὸν",
-     "ῥᾳδίως",
-     "μάθοιμι"
-    ]
-   },
-   {
-    "prompt": "Give me a sword, with which I may never be taken alive.",
-    "answer": "δός μοι ξίφος, ᾧ μήποτε ζῶν ἁλώσομαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δός",
-     "μοι",
-     "ξίφος",
-     "ᾧ",
-     "μήποτε",
-     "ζῶν",
-     "ἁλώσομαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t17",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "Wretched indeed is that man, who has neither friends nor a fatherland.",
-    "answer": "ἄθλιος δὴ ἐκεῖνός ἐστιν, ᾧ μήτε φίλοι μήτε πατρίς ἐστιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄθλιος",
-     "δὴ",
-     "ἐκεῖνός",
-     "ἐστιν",
-     "ᾧ",
-     "μήτε",
-     "φίλοι",
-     "πατρίς"
-    ]
-   },
-   {
-    "prompt": "Say such things as no one could blame.",
-    "answer": "τοιαῦτα λέγε, οἷς μηδεὶς ἂν μέμψαιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοιαῦτα",
-     "λέγε",
-     "οἷς",
-     "μηδεὶς",
-     "ἂν",
-     "μέμψαιτο"
-    ]
-   },
-   {
-    "prompt": "He became such a poet as no other man ever became.",
-    "answer": "τοιοῦτος ποιητὴς ἐγένετο, οἷος οὐδεὶς ἄλλος πώποτε ἐγένετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοιοῦτος",
-     "ποιητὴς",
-     "ἐγένετο",
-     "οἷος",
-     "οὐδεὶς",
-     "ἄλλος",
-     "πώποτε"
-    ]
-   },
-   {
-    "prompt": "Vote for such things as you will never regret.",
-    "answer": "τοιαῦτα ψηφίσασθε, ἐξ ὧν μηδέποτε ὑμῖν μεταμελήσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοιαῦτα",
-     "ψηφίσασθε",
-     "ἐξ",
-     "ὧν",
-     "μηδέποτε",
-     "ὑμῖν",
-     "μεταμελήσει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t18",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "By Zeus, far be it from me ever to betray my comrades.",
-    "answer": "μὰ τὸν Δία, μὴ ἐγὼ τοὺς ἑταίρους προδώσω ποτέ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὰ",
-     "τὸν",
-     "Δία",
-     "μὴ",
-     "ἐγὼ",
-     "τοὺς",
-     "ἑταίρους",
-     "προδώσω",
-     "ποτέ"
-    ]
-   },
-   {
-    "prompt": "Let Zeus now know that no other man shall lead this army.",
-    "answer": "ἴστω νῦν Ζεύς, μὴ ἄλλος ἀνὴρ τῆσδε τῆς στρατιᾶς ἡγήσεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἴστω",
-     "νῦν",
-     "Ζεύς",
-     "μὴ",
-     "ἄλλος",
-     "ἀνὴρ",
-     "τῆσδε",
-     "τῆς",
-     "στρατιᾶς",
-     "ἡγήσεται"
-    ]
-   },
-   {
-    "prompt": "He hid the gold, in order that the thieves might not steal it.",
-    "answer": "τὸν χρυσὸν ἔκρυψεν, ἵνα οἱ κλῶπες αὐτὸν μὴ κλέψειαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸν",
-     "χρυσὸν",
-     "ἔκρυψεν",
-     "ἵνα",
-     "οἱ",
-     "κλῶπες",
-     "αὐτὸν",
-     "μὴ",
-     "κλέψειαν"
-    ]
-   },
-   {
-    "prompt": "If the physician had not been present, the child would have died.",
-    "answer": "εἰ ὁ ἰατρὸς μὴ παρῆν, τὸ παιδίον ἀπέθανεν ἄν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "ὁ",
-     "ἰατρὸς",
-     "μὴ",
-     "παρῆν",
-     "τὸ",
-     "παιδίον",
-     "ἀπέθανεν",
-     "ἄν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t19",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "The old men fled to the citadel, in order that they might not be captured by the enemy.",
-    "answer": "οἱ γέροντες εἰς τὴν ἀκρόπολιν ἔφυγον, ἵνα μὴ ὑπὸ τῶν πολεμίων ληφθεῖεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "γέροντες",
-     "εἰς",
-     "τὴν",
-     "ἀκρόπολιν",
-     "ἔφυγον",
-     "ἵνα",
-     "μὴ",
-     "ὑπὸ",
-     "τῶν",
-     "πολεμίων",
-     "ληφθεῖεν"
-    ]
-   },
-   {
-    "prompt": "He was contriving that none of the citizens should ever be wronged.",
-    "answer": "ἐμηχανᾶτο ὅπως μηδεὶς τῶν πολιτῶν μηδέποτε ἀδικοῖτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐμηχανᾶτο",
-     "ὅπως",
-     "μηδεὶς",
-     "τῶν",
-     "πολιτῶν",
-     "μηδέποτε",
-     "ἀδικοῖτο"
-    ]
-   },
-   {
-    "prompt": "If the guards had not been asleep, the thieves would not have entered the house.",
-    "answer": "εἰ μὴ οἱ φύλακες ἐκάθευδον, οἱ κλῶπες οὐκ ἂν εἰς τὴν οἰκίαν εἰσῆλθον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "μὴ",
-     "οἱ",
-     "φύλακες",
-     "ἐκάθευδον",
-     "κλῶπες",
-     "οὐκ",
-     "ἂν",
-     "εἰς",
-     "τὴν",
-     "οἰκίαν",
-     "εἰσῆλθον"
-    ]
-   },
-   {
-    "prompt": "The river became so deep that the horsemen did not cross it.",
-    "answer": "ὁ ποταμὸς οὕτω βαθὺς ἐγένετο ὥστε οἱ ἱππεῖς οὐ διέβησαν αὐτόν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ποταμὸς",
-     "οὕτω",
-     "βαθὺς",
-     "ἐγένετο",
-     "ὥστε",
-     "οἱ",
-     "ἱππεῖς",
-     "οὐ",
-     "διέβησαν",
-     "αὐτόν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t20",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "Whoever does not guard against danger falls into it.",
-    "answer": "ὅστις ἂν μὴ τὸν κίνδυνον φυλάττηται, εἰς αὐτὸν ἐμπίπτει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅστις",
-     "ἂν",
-     "μὴ",
-     "τὸν",
-     "κίνδυνον",
-     "φυλάττηται",
-     "εἰς",
-     "αὐτὸν",
-     "ἐμπίπτει"
-    ]
-   },
-   {
-    "prompt": "The maiden was seeking a cave where none of her pursuers might see her.",
-    "answer": "ἡ παρθένος ἄντρον ἐζήτει, ἔνθα μηδεὶς τῶν διωκόντων αὐτὴν ἴδοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "παρθένος",
-     "ἄντρον",
-     "ἐζήτει",
-     "ἔνθα",
-     "μηδεὶς",
-     "τῶν",
-     "διωκόντων",
-     "αὐτὴν",
-     "ἴδοι"
-    ]
-   },
-   {
-    "prompt": "Wretched is the man who has neither wealth nor a good reputation.",
-    "answer": "ἄθλιός ἐστιν ὃς μήτε πλοῦτον μήτε δόξαν ἀγαθὴν ἔχει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄθλιός",
-     "ἐστιν",
-     "ὃς",
-     "μήτε",
-     "πλοῦτον",
-     "δόξαν",
-     "ἀγαθὴν",
-     "ἔχει"
-    ]
-   },
-   {
-    "prompt": "There is no one who does not wish to live well.",
-    "answer": "οὐδείς ἐστιν ὅστις οὐ βούλεται εὖ ζῆν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδείς",
-     "ἐστιν",
-     "ὅστις",
-     "οὐ",
-     "βούλεται",
-     "εὖ",
-     "ζῆν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-t21",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "They burned the bridges, in order that the barbarians might not pursue them.",
-    "answer": "τὰς γεφύρας ἔκαυσαν, ἵνα μὴ οἱ βάρβαροι διώκοιεν αὐτούς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰς",
-     "γεφύρας",
-     "ἔκαυσαν",
-     "ἵνα",
-     "μὴ",
-     "οἱ",
-     "βάρβαροι",
-     "διώκοιεν",
-     "αὐτούς"
-    ]
-   },
-   {
-    "prompt": "See to it that you do not destroy the deposit entrusted to you.",
-    "answer": "φρόντιζε ὅπως τὴν παρακαταθήκην μὴ διαφθερεῖς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φρόντιζε",
-     "ὅπως",
-     "τὴν",
-     "παρακαταθήκην",
-     "μὴ",
-     "διαφθερεῖς"
-    ]
-   },
-   {
-    "prompt": "If the citizens do not resist, the tyrant will enslave them.",
-    "answer": "εἰ μὴ οἱ πολῖται ἀντιστήσονται, ὁ τύραννος αὐτοὺς δουλώσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "μὴ",
-     "οἱ",
-     "πολῖται",
-     "ἀντιστήσονται",
-     "ὁ",
-     "τύραννος",
-     "αὐτοὺς",
-     "δουλώσει"
-    ]
-   },
-   {
-    "prompt": "By the gods, far be it from me ever to leave my post.",
-    "answer": "μὰ τοὺς θεούς, μὴ ἐγὼ τὴν τάξιν ποτὲ λείψω.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὰ",
-     "τοὺς",
-     "θεούς",
-     "μὴ",
-     "ἐγὼ",
-     "τὴν",
-     "τάξιν",
-     "ποτὲ",
-     "λείψω"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-q1",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "He wished to be on friendly terms with men in power in order that he might not pay the penalty for his wrong-doing.",
-    "answer": "φίλος ἐβούλετο εἶναι τοῖς μέγιστα δυναμένοις, ἵνα ἀδικῶν μὴ διδοίη δίκην",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φίλος",
-     "ἐβούλετο",
-     "εἶναι",
-     "τοῖς",
-     "μέγιστα",
-     "δυναμένοις",
-     "ἵνα",
-     "ἀδικῶν",
-     "μὴ",
-     "διδοίη",
-     "δίκην"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "2.6.21"
-    }
-   },
-   {
-    "prompt": "If you had not come, we should be marching against the king.",
-    "answer": "εἰ μὴ ὑμεῖς ἤλθετε, ἐπορευόμεθα ἂν ἐπὶ βασιλέα",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "μὴ",
-     "ὑμεῖς",
-     "ἤλθετε",
-     "ἐπορευόμεθα",
-     "ἂν",
-     "ἐπὶ",
-     "βασιλέα"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "2.1.4"
-    }
-   },
-   {
-    "prompt": "He never left him unless there was some necessity for it.",
-    "answer": "οὐκ ἀπελείπετο αὐτοῦ, εἰ μή τι ἀναγκαῖον εἴη",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "ἀπελείπετο",
-     "αὐτοῦ",
-     "εἰ",
-     "μή",
-     "τι",
-     "ἀναγκαῖον",
-     "εἴη"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Memorabilia",
-     "locus": "4.2.40"
-    }
-   },
-   {
-    "prompt": "They signify beforehand what one must do and what not.",
-    "answer": "προσημαίνουσιν ἅ τε χρὴ ποιεῖν καὶ ἃ οὐ χρή",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "προσημαίνουσιν",
-     "ἅ",
-     "τε",
-     "χρὴ",
-     "ποιεῖν",
-     "καὶ",
-     "ἃ",
-     "οὐ",
-     "χρή"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Cyropaedia",
-     "locus": "1.6.46"
-    }
-   }
-  ]
- },
- {
-  "id": "sm-2705-subordinate-clauses-in-the-indicative-q2",
-  "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
-  "questions": [
-   {
-    "prompt": "Such a writer of speeches as no one had been.",
-    "answer": "συγγραφεὺς τῶν λόγων . . . τοιοῦτος, οἷος οὐδεὶς ἄλλος γέγονε",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "συγγραφεὺς",
-     "τῶν",
-     "λόγων",
-     "τοιοῦτος",
-     "οἷος",
-     "οὐδεὶς",
-     "ἄλλος",
-     "γέγονε"
-    ],
-    "source": {
-     "author": "Isocrates",
-     "work": "Orations",
-     "locus": "15.35"
-    }
-   },
-   {
-    "prompt": "Wishing to leave behind him such a memorial as would surpass human nature.",
-    "answer": "βουληθεὶς τοιοῦτον μνημεῖον καταλιπεῖν, ὃ μὴ τῆς ἀνθρωπίνης φύσεώς ἐστιν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "βουληθεὶς",
-     "τοιοῦτον",
-     "μνημεῖον",
-     "καταλιπεῖν",
-     "ὃ",
-     "μὴ",
-     "τῆς",
-     "ἀνθρωπίνης",
-     "φύσεώς",
-     "ἐστιν"
-    ],
-    "source": {
-     "author": "Isocrates",
-     "work": "Orations",
-     "locus": "4.89"
-    }
-   },
-   {
-    "prompt": "A wretched being art thou then, who hast neither ancestral gods nor shrines.",
-    "answer": "ταλαίπωρος ἄρα τις σύ γε ἄνθρωπος εἶ . . ., ᾧ μήτε θεοὶ πατρῷοί εἰσι μήτε ἱερά",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ταλαίπωρος",
-     "ἄρα",
-     "τις",
-     "σύ",
-     "γε",
-     "ἄνθρωπος",
-     "εἶ",
-     "ᾧ",
-     "μήτε",
-     "θεοὶ",
-     "πατρῷοί",
-     "εἰσι",
-     "μήτε",
-     "ἱερά"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Euthydemus",
-     "locus": "302b"
-    }
-   },
-   {
-    "prompt": "Pass such a vote that you will never repent of it.",
-    "answer": "ψηφίσασθε τοιαῦτα ἐξ ὧν μηδέποτε ὑμῖν μεταμελήσει",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ψηφίσασθε",
-     "τοιαῦτα",
-     "ἐξ",
-     "ὧν",
-     "μηδέποτε",
-     "ὑμῖν",
-     "μεταμελήσει"
-    ],
-    "source": {
-     "author": "Andocides",
-     "work": "Orations",
-     "locus": "3.41"
-    }
-   }
-  ]
- }
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t1",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "We hid the weapons in order that the enemy might not find them.",
+        "answer": "ἐκρύψαμεν τὰ ὅπλα, ἵνα οἱ πολέμιοι μὴ εὕροιεν αὐτά.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐκρύψαμεν",
+          "τά",
+          "ὅπλα",
+          "ἵνα",
+          "οἱ",
+          "πολέμιοι",
+          "μή",
+          "εὕροιεν",
+          "αὐτά"
+        ]
+      },
+      {
+        "prompt": "The general leads the soldiers by night so that they may not be seen.",
+        "answer": "ὁ στρατηγὸς νύκτωρ ἄγει τοὺς στρατιώτας, ἵνα μὴ ὁραθῶσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγός",
+          "νύκτωρ",
+          "ἄγει",
+          "τούς",
+          "στρατιώτας",
+          "ἵνα",
+          "μή",
+          "ὁραθῶσιν"
+        ]
+      },
+      {
+        "prompt": "She fled from the city in order that she might never suffer such things.",
+        "answer": "ἔφυγεν ἐκ τῆς πόλεως, ὅπως μηδέποτε τοιαῦτα πάθοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔφυγεν",
+          "ἐκ",
+          "τῆς",
+          "πόλεως",
+          "ὅπως",
+          "μηδέποτε",
+          "τοιαῦτα",
+          "πάθοι"
+        ]
+      },
+      {
+        "prompt": "Guard the gates well, in order that no one may escape.",
+        "answer": "φυλάττετε εὖ τὰς πύλας, ἵνα μηδεὶς ἐκφύγῃ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φυλάττετε",
+          "εὖ",
+          "τάς",
+          "πύλας",
+          "ἵνα",
+          "μηδείς",
+          "ἐκφύγῃ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t2",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "See to it that you do nothing unworthy of your ancestors.",
+        "answer": "φρόντιζε ὅπως μηδὲν ἀνάξιον τῶν προγόνων πράξεις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φρόντιζε",
+          "ὅπως",
+          "μηδέν",
+          "ἀνάξιον",
+          "τῶν",
+          "προγόνων",
+          "πράξεις"
+        ]
+      },
+      {
+        "prompt": "He took care that the soldiers should never be without food.",
+        "answer": "ἐπεμελεῖτο ὅπως οἱ στρατιῶται μήποτε ἄσιτοι ἔσοιντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐπεμελεῖτο",
+          "ὅπως",
+          "οἱ",
+          "στρατιῶται",
+          "μήποτε",
+          "ἄσιτοι",
+          "ἔσοιντο"
+        ]
+      },
+      {
+        "prompt": "Take care that the children are harmed by no one.",
+        "answer": "ἐπιμελοῦ ὅπως τὰ παιδία ὑπὸ μηδενὸς βλαβήσεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐπιμελοῦ",
+          "ὅπως",
+          "τά",
+          "παιδία",
+          "ὑπό",
+          "μηδενός",
+          "βλαβήσεται"
+        ]
+      },
+      {
+        "prompt": "We contrived that the enemy might not perceive our plans.",
+        "answer": "ἐμηχανησάμεθα ὅπως οἱ πολέμιοι μὴ αἴσθοιντο τὰ ἡμέτερα βουλεύματα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐμηχανησάμεθα",
+          "ὅπως",
+          "οἱ",
+          "πολέμιοι",
+          "μή",
+          "αἴσθοιντο",
+          "τά",
+          "ἡμέτερα",
+          "βουλεύματα"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t3",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "If the gods were not willing, we would not be winning.",
+        "answer": "εἰ μὴ οἱ θεοὶ βούλοιντο, οὐκ ἂν νικῷμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "μή",
+          "οἱ",
+          "θεοί",
+          "βούλοιντο",
+          "οὐκ",
+          "ἄν",
+          "νικῷμεν"
+        ]
+      },
+      {
+        "prompt": "Unless someone helps us, the city will be captured.",
+        "answer": "εἰ μή τις ἡμῖν βοηθήσει, ἡ πόλις ἁλώσεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "μή",
+          "τις",
+          "ἡμῖν",
+          "βοηθήσει",
+          "ἡ",
+          "πόλις",
+          "ἁλώσεται"
+        ]
+      },
+      {
+        "prompt": "He never left the old man, unless there was some necessity.",
+        "answer": "οὐκ ἀπελείπετο τοῦ γέροντος, εἰ μή τι ἀναγκαῖον εἴη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "ἀπελείπετο",
+          "τοῦ",
+          "γέροντος",
+          "εἰ",
+          "μή",
+          "τι",
+          "ἀναγκαῖον",
+          "εἴη"
+        ]
+      },
+      {
+        "prompt": "If the wine were not sweet, no one would be drinking it.",
+        "answer": "εἰ μὴ ὁ οἶνος ἡδὺς ἦν, οὐδεὶς ἂν αὐτὸν ἔπινεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "μή",
+          "ὁ",
+          "οἶνος",
+          "ἡδύς",
+          "ἦν",
+          "οὐδείς",
+          "ἄν",
+          "αὐτόν",
+          "ἔπινεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t4",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "What I do not know, I do not even think I know.",
+        "answer": "ἃ μὴ οἶδα οὐδὲ οἴομαι εἰδέναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἅ",
+          "μή",
+          "οἶδα",
+          "οὐδέ",
+          "οἴομαι",
+          "εἰδέναι"
+        ]
+      },
+      {
+        "prompt": "Whoever does not obey the laws will pay the penalty.",
+        "answer": "ὅστις ἂν μὴ τοῖς νόμοις πείθηται, δίκην δώσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅστις",
+          "ἄν",
+          "μή",
+          "τοῖς",
+          "νόμοις",
+          "πείθηται",
+          "δίκην",
+          "δώσει"
+        ]
+      },
+      {
+        "prompt": "Wretched are those who have no ancestral gods.",
+        "answer": "ταλαίπωροί εἰσιν οἷς μὴ θεοὶ πατρῷοί εἰσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ταλαίπωροι",
+          "εἰσίν",
+          "οἷς",
+          "μή",
+          "θεοί",
+          "πατρῷοι"
+        ]
+      },
+      {
+        "prompt": "A man who does not fear death is brave.",
+        "answer": "ἀνδρεῖός ἐστιν ὅστις μὴ φοβεῖται τὸν θάνατον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀνδρεῖος",
+          "ἐστίν",
+          "ὅστις",
+          "μή",
+          "φοβεῖται",
+          "τόν",
+          "θάνατον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t5",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "They cast the child into the sea, where they would never see him again.",
+        "answer": "τὸ παιδίον εἰς τὴν θάλατταν ἐξέρριψαν, ἔνθα μήποτε αὐτὸν ἔτι ὄψονται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τό",
+          "παιδίον",
+          "εἰς",
+          "τήν",
+          "θάλατταν",
+          "ἐξέρριψαν",
+          "ἔνθα",
+          "μήποτε",
+          "αὐτόν",
+          "ἔτι",
+          "ὄψονται"
+        ]
+      },
+      {
+        "prompt": "She hid herself where no one might see her.",
+        "answer": "ἑαυτὴν ἔκρυψεν, ἔνθα μή τις αὐτὴν ἴδοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἑαυτήν",
+          "ἔκρυψεν",
+          "ἔνθα",
+          "μή",
+          "τις",
+          "αὐτήν",
+          "ἴδοι"
+        ]
+      },
+      {
+        "prompt": "They signify beforehand what one must do and what one must not.",
+        "answer": "προσημαίνουσιν ἅ τε χρὴ ποιεῖν καὶ ἃ οὐ χρή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "προσημαίνουσιν",
+          "ἅ",
+          "τε",
+          "χρή",
+          "ποιεῖν",
+          "καί",
+          "οὐ"
+        ]
+      },
+      {
+        "prompt": "Send messengers who will not betray the plan.",
+        "answer": "πέμψον ἀγγέλους οἳ τὸ βούλευμα μὴ προδώσουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πέμψον",
+          "ἀγγέλους",
+          "οἵ",
+          "τό",
+          "βούλευμα",
+          "μή",
+          "προδώσουσιν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t6",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "The Lacedaemonians came to such greed that their empire did not satisfy them.",
+        "answer": "οἱ Λακεδαιμόνιοι εἰς τοσοῦτον ἀπληστίας ἦλθον ὥστε οὐκ ἐξήρκεσεν αὐτοῖς ἡ ἀρχή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "Λακεδαιμόνιοι",
+          "εἰς",
+          "τοσοῦτον",
+          "ἀπληστίας",
+          "ἦλθον",
+          "ὥστε",
+          "οὐκ",
+          "ἐξήρκεσεν",
+          "αὐτοῖς",
+          "ἡ",
+          "ἀρχή"
+        ]
+      },
+      {
+        "prompt": "He was so changed that I would not recognize him if I saw him.",
+        "answer": "οὕτω μετεβλήθη ὥστε οὐκ ἂν αὐτὸν γνωρίσαιμι ἰδών.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτω",
+          "μετεβλήθη",
+          "ὥστε",
+          "οὐκ",
+          "ἄν",
+          "αὐτόν",
+          "γνωρίσαιμι",
+          "ἰδών"
+        ]
+      },
+      {
+        "prompt": "A wretched being are you, who have neither shrines nor sacrifices.",
+        "answer": "ταλαίπωρος εἶ, ᾧ μήτε ἱερὰ μήτε θυσίαι εἰσίν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ταλαίπωρος",
+          "εἶ",
+          "ᾧ",
+          "μήτε",
+          "ἱερά",
+          "θυσίαι",
+          "εἰσίν"
+        ]
+      },
+      {
+        "prompt": "Vote for such measures as you will never repent of.",
+        "answer": "ψηφίσασθε τοιαῦτα ἐξ ὧν μηδέποτε ὑμῖν μεταμελήσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ψηφίσασθε",
+          "τοιαῦτα",
+          "ἐξ",
+          "ὧν",
+          "μηδέποτε",
+          "ὑμῖν",
+          "μεταμελήσει"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t7",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "The general led the army by night, in order that the enemy might not perceive them.",
+        "answer": "ὁ στρατηγὸς νυκτὸς τὸ στράτευμα ἦγεν, ἵνα οἱ πολέμιοι αὐτῶν μὴ αἰσθάνοιντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγός",
+          "νυκτός",
+          "τό",
+          "στράτευμα",
+          "ἦγεν",
+          "ἵνα",
+          "οἱ",
+          "πολέμιοι",
+          "αὐτῶν",
+          "μή",
+          "αἰσθάνοιντο"
+        ]
+      },
+      {
+        "prompt": "We keep silent, in order that we may not reveal the plan to the citizens.",
+        "answer": "σιγῶμεν, ἵνα τὸ βούλευμα τοῖς πολίταις μὴ μηνύωμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σιγῶμεν",
+          "ἵνα",
+          "τό",
+          "βούλευμα",
+          "τοῖς",
+          "πολίταις",
+          "μή",
+          "μηνύωμεν"
+        ]
+      },
+      {
+        "prompt": "He gave the soldiers money, so that they might not leave their post in the danger.",
+        "answer": "τοῖς στρατιώταις χρήματα ἔδωκεν, ὡς ἐν τῷ κινδύνῳ μὴ λίποιεν τὴν τάξιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῖς",
+          "στρατιώταις",
+          "χρήματα",
+          "ἔδωκεν",
+          "ὡς",
+          "ἐν",
+          "τῷ",
+          "κινδύνῳ",
+          "μή",
+          "λίποιεν",
+          "τήν",
+          "τάξιν"
+        ]
+      },
+      {
+        "prompt": "The mother hid the sword, in order that the child might not touch it.",
+        "answer": "ἡ μήτηρ τὸ ξίφος ἔκρυψεν, ἵνα ὁ παῖς αὐτοῦ μὴ ἅπτοιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "μήτηρ",
+          "τό",
+          "ξίφος",
+          "ἔκρυψεν",
+          "ἵνα",
+          "ὁ",
+          "παῖς",
+          "αὐτοῦ",
+          "μή",
+          "ἅπτοιτο"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t8",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "Take care that the sailors are neither without food nor without drink.",
+        "answer": "ἐπιμελοῦ ὅπως οἱ ναῦται μήτε ἄσιτοι μήτε ἄποτοι ἔσονται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐπιμελοῦ",
+          "ὅπως",
+          "οἱ",
+          "ναῦται",
+          "μήτε",
+          "ἄσιτοι",
+          "ἄποτοι",
+          "ἔσονται"
+        ]
+      },
+      {
+        "prompt": "The generals contrived that the wall should not be captured by the barbarians.",
+        "answer": "οἱ στρατηγοὶ ἐμηχανῶντο ὅπως τὸ τεῖχος ὑπὸ τῶν βαρβάρων μὴ ἁλώσοιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατηγοί",
+          "ἐμηχανῶντο",
+          "ὅπως",
+          "τό",
+          "τεῖχος",
+          "ὑπό",
+          "τῶν",
+          "βαρβάρων",
+          "μή",
+          "ἁλώσοιτο"
+        ]
+      },
+      {
+        "prompt": "See to it that you never betray those who trust you.",
+        "answer": "φρόντιζε ὅπως τοὺς σοὶ πιστεύοντας μηδέποτε προδώσεις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φρόντιζε",
+          "ὅπως",
+          "τούς",
+          "σοί",
+          "πιστεύοντας",
+          "μηδέποτε",
+          "προδώσεις"
+        ]
+      },
+      {
+        "prompt": "We must see to it that the city does not fall into slavery.",
+        "answer": "δεῖ ἡμᾶς φροντίζειν ὅπως ἡ πόλις μὴ δουλωθήσεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δεῖ",
+          "ἡμᾶς",
+          "φροντίζειν",
+          "ὅπως",
+          "ἡ",
+          "πόλις",
+          "μή",
+          "δουλωθήσεται"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t9",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "Unless the ally comes, we shall not be able to withstand the enemy.",
+        "answer": "ἐὰν μὴ ὁ σύμμαχος ἔλθῃ, οὐ δυνησόμεθα τοῖς πολεμίοις ἀντέχειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐάν",
+          "μή",
+          "ὁ",
+          "σύμμαχος",
+          "ἔλθῃ",
+          "οὐ",
+          "δυνησόμεθα",
+          "τοῖς",
+          "πολεμίοις",
+          "ἀντέχειν"
+        ]
+      },
+      {
+        "prompt": "If the farmers had not fled, they would all have died.",
+        "answer": "εἰ μὴ οἱ γεωργοὶ ἔφυγον, πάντες ἂν ἀπέθανον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "μή",
+          "οἱ",
+          "γεωργοί",
+          "ἔφυγον",
+          "πάντες",
+          "ἄν",
+          "ἀπέθανον"
+        ]
+      },
+      {
+        "prompt": "The old man never went out unless there was some necessity.",
+        "answer": "ὁ γέρων οὐδέποτε ἐξῄει, εἰ μή τι ἀναγκαῖον εἴη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "οὐδέποτε",
+          "ἐξῄει",
+          "εἰ",
+          "μή",
+          "τι",
+          "ἀναγκαῖον",
+          "εἴη"
+        ]
+      },
+      {
+        "prompt": "If you do not honor the gods, you will suffer terrible things.",
+        "answer": "εἰ μὴ τοὺς θεοὺς τιμήσεις, δεινὰ πείσῃ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "μή",
+          "τούς",
+          "θεούς",
+          "τιμήσεις",
+          "δεινά",
+          "πείσῃ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t10",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "Whatever a man does not understand, he ought not to attempt.",
+        "answer": "ἃ ἄν τις μὴ ἐπίστηται, οὐ χρὴ ἐπιχειρεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἅ",
+          "ἄν",
+          "τις",
+          "μή",
+          "ἐπίστηται",
+          "οὐ",
+          "χρή",
+          "ἐπιχειρεῖν"
+        ]
+      },
+      {
+        "prompt": "Whoever has no friends lives wretchedly.",
+        "answer": "ὅστις φίλους μὴ ἔχει, ἀθλίως ζῇ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅστις",
+          "φίλους",
+          "μή",
+          "ἔχει",
+          "ἀθλίως",
+          "ζῇ"
+        ]
+      },
+      {
+        "prompt": "Those who do not obey the laws are justly punished.",
+        "answer": "οἳ ἂν τοῖς νόμοις μὴ πείθωνται, δικαίως κολάζονται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἵ",
+          "ἄν",
+          "τοῖς",
+          "νόμοις",
+          "μή",
+          "πείθωνται",
+          "δικαίως",
+          "κολάζονται"
+        ]
+      },
+      {
+        "prompt": "A city that has no good laws could not be happy.",
+        "answer": "πόλις ἥτις νόμους ἀγαθοὺς μὴ ἔχει οὐκ ἂν εὐδαίμων εἴη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πόλις",
+          "ἥτις",
+          "νόμους",
+          "ἀγαθούς",
+          "μή",
+          "ἔχει",
+          "οὐκ",
+          "ἄν",
+          "εὐδαίμων",
+          "εἴη"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t11",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "The storm became so great that the ships did not sail out.",
+        "answer": "ὁ χειμὼν τοσοῦτος ἐγένετο ὥστε αἱ νῆες οὐκ ἐξέπλευσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "χειμών",
+          "τοσοῦτος",
+          "ἐγένετο",
+          "ὥστε",
+          "αἱ",
+          "νῆες",
+          "οὐκ",
+          "ἐξέπλευσαν"
+        ]
+      },
+      {
+        "prompt": "He was so brave that no one could have frightened him.",
+        "answer": "οὕτως ἀνδρεῖος ἦν ὥστε οὐδεὶς ἂν αὐτὸν φοβήσειεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτως",
+          "ἀνδρεῖος",
+          "ἦν",
+          "ὥστε",
+          "οὐδείς",
+          "ἄν",
+          "αὐτόν",
+          "φοβήσειεν"
+        ]
+      },
+      {
+        "prompt": "The river was so deep that the soldiers did not cross it.",
+        "answer": "ὁ ποταμὸς οὕτω βαθὺς ἦν ὥστε οἱ στρατιῶται οὐ διέβησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ποταμός",
+          "οὕτω",
+          "βαθύς",
+          "ἦν",
+          "ὥστε",
+          "οἱ",
+          "στρατιῶται",
+          "οὐ",
+          "διέβησαν"
+        ]
+      },
+      {
+        "prompt": "So great a fear fell upon them that they did not dare to fight.",
+        "answer": "τοσοῦτος φόβος αὐτοῖς ἐνέπεσεν ὥστε οὐκ ἐτόλμησαν μάχεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοσοῦτος",
+          "φόβος",
+          "αὐτοῖς",
+          "ἐνέπεσεν",
+          "ὥστε",
+          "οὐκ",
+          "ἐτόλμησαν",
+          "μάχεσθαι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t12",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "There is no one who does not fear death.",
+        "answer": "οὐδείς ἐστιν ὅστις τὸν θάνατον οὐ φοβεῖται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδείς",
+          "ἐστιν",
+          "ὅστις",
+          "τόν",
+          "θάνατον",
+          "οὐ",
+          "φοβεῖται"
+        ]
+      },
+      {
+        "prompt": "He was seeking a place where the enemy would never find him.",
+        "answer": "τόπον ἐζήτει ὅπου οἱ πολέμιοι αὐτὸν μήποτε εὑρήσοιεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τόπον",
+          "ἐζήτει",
+          "ὅπου",
+          "οἱ",
+          "πολέμιοι",
+          "αὐτόν",
+          "μήποτε",
+          "εὑρήσοιεν"
+        ]
+      },
+      {
+        "prompt": "Wretched is he who has neither ancestral gods nor shrines.",
+        "answer": "ἄθλιός ἐστιν ὅστις μήτε θεοὺς πατρῴους μήτε ἱερὰ ἔχει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄθλιος",
+          "ἐστιν",
+          "ὅστις",
+          "μήτε",
+          "θεούς",
+          "πατρῴους",
+          "ἱερά",
+          "ἔχει"
+        ]
+      },
+      {
+        "prompt": "Choose such friends as will never betray you.",
+        "answer": "τοιούτους φίλους αἱροῦ οἳ σε μήποτε προδώσουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοιούτους",
+          "φίλους",
+          "αἱροῦ",
+          "οἵ",
+          "σε",
+          "μήποτε",
+          "προδώσουσιν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t13",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "The citizens fortified the city, in order that the barbarians might not plunder it.",
+        "answer": "οἱ πολῖται τὴν πόλιν ἐτείχισαν, ἵνα οἱ βάρβαροι αὐτὴν μὴ διαρπάσειαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πολῖται",
+          "τὴν",
+          "πόλιν",
+          "ἐτείχισαν",
+          "ἵνα",
+          "βάρβαροι",
+          "αὐτὴν",
+          "μὴ",
+          "διαρπάσειαν"
+        ]
+      },
+      {
+        "prompt": "He was anxious that the guards should not fall asleep.",
+        "answer": "ἐφρόντιζεν ὅπως οἱ φύλακες μὴ καθεύδοιεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐφρόντιζεν",
+          "ὅπως",
+          "οἱ",
+          "φύλακες",
+          "μὴ",
+          "καθεύδοιεν"
+        ]
+      },
+      {
+        "prompt": "See to it that the soldiers do not abandon their ranks.",
+        "answer": "σκόπει ὅπως οἱ στρατιῶται τὰς τάξεις μὴ λείψουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκόπει",
+          "ὅπως",
+          "οἱ",
+          "στρατιῶται",
+          "τὰς",
+          "τάξεις",
+          "μὴ",
+          "λείψουσιν"
+        ]
+      },
+      {
+        "prompt": "She sent the letter secretly, so that her father might not learn of the marriage.",
+        "answer": "λάθρᾳ τὴν ἐπιστολὴν ἔπεμψεν, ὅπως ὁ πατὴρ τὸν γάμον μὴ πύθοιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "λάθρᾳ",
+          "τὴν",
+          "ἐπιστολὴν",
+          "ἔπεμψεν",
+          "ὅπως",
+          "ὁ",
+          "πατὴρ",
+          "τὸν",
+          "γάμον",
+          "μὴ",
+          "πύθοιτο"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t14",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "If the messenger had not lied, we would not have been deceived.",
+        "answer": "εἰ ὁ ἄγγελος μὴ ἐψεύσατο, οὐκ ἂν ἐξηπατήθημεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "ὁ",
+          "ἄγγελος",
+          "μὴ",
+          "ἐψεύσατο",
+          "οὐκ",
+          "ἂν",
+          "ἐξηπατήθημεν"
+        ]
+      },
+      {
+        "prompt": "The old man never went out unless some necessity constrained him.",
+        "answer": "ὁ γέρων οὐδέποτε ἐξῄει, εἰ μή τις ἀνάγκη αὐτὸν βιάζοιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "οὐδέποτε",
+          "ἐξῄει",
+          "εἰ",
+          "μή",
+          "τις",
+          "ἀνάγκη",
+          "αὐτὸν",
+          "βιάζοιτο"
+        ]
+      },
+      {
+        "prompt": "Even if the enemy will not attack, we must keep guard.",
+        "answer": "εἰ καὶ οἱ πολέμιοι μὴ προσβαλοῦσιν, φυλάττεσθαι δεῖ ἡμᾶς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "καὶ",
+          "οἱ",
+          "πολέμιοι",
+          "μὴ",
+          "προσβαλοῦσιν",
+          "φυλάττεσθαι",
+          "δεῖ",
+          "ἡμᾶς"
+        ]
+      },
+      {
+        "prompt": "If you had not helped the exiles, they would have perished.",
+        "answer": "εἰ τοῖς φυγάσι μὴ ἐβοήθησας, ἀπώλοντο ἄν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "τοῖς",
+          "φυγάσι",
+          "μὴ",
+          "ἐβοήθησας",
+          "ἀπώλοντο",
+          "ἄν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t15",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "Whoever does not honor the gods will pay the penalty.",
+        "answer": "ὅστις τοὺς θεοὺς μὴ τιμᾷ, δίκην δώσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅστις",
+          "τοὺς",
+          "θεοὺς",
+          "μὴ",
+          "τιμᾷ",
+          "δίκην",
+          "δώσει"
+        ]
+      },
+      {
+        "prompt": "The witnesses, who were not present, were able to say nothing.",
+        "answer": "οἱ μάρτυρες, οἳ οὐ παρῆσαν, οὐδὲν εἰπεῖν εἶχον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "μάρτυρες",
+          "οἳ",
+          "οὐ",
+          "παρῆσαν",
+          "οὐδὲν",
+          "εἰπεῖν",
+          "εἶχον"
+        ]
+      },
+      {
+        "prompt": "Whatever things are not just, I am unwilling to do.",
+        "answer": "ἃ μὴ δίκαιά ἐστιν, οὐκ ἐθέλω ποιεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἃ",
+          "μὴ",
+          "δίκαιά",
+          "ἐστιν",
+          "οὐκ",
+          "ἐθέλω",
+          "ποιεῖν"
+        ]
+      },
+      {
+        "prompt": "There is no one who does not admire virtue.",
+        "answer": "οὐδείς ἐστιν ὅστις τὴν ἀρετὴν οὐ θαυμάζει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδείς",
+          "ἐστιν",
+          "ὅστις",
+          "τὴν",
+          "ἀρετὴν",
+          "οὐ",
+          "θαυμάζει"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t16",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "The queen was seeking a place where the soldiers might never find her.",
+        "answer": "ἡ βασίλεια χωρίον ἐζήτει, ἔνθα οἱ στρατιῶται μηδέποτε αὐτὴν εὕροιεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "βασίλεια",
+          "χωρίον",
+          "ἐζήτει",
+          "ἔνθα",
+          "οἱ",
+          "στρατιῶται",
+          "μηδέποτε",
+          "αὐτὴν",
+          "εὕροιεν"
+        ]
+      },
+      {
+        "prompt": "The river was so deep that the horses were not able to cross it.",
+        "answer": "ὁ ποταμὸς οὕτω βαθὺς ἦν ὥστε οἱ ἵπποι οὐκ ἐδύναντο αὐτὸν διαβαίνειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ποταμὸς",
+          "οὕτω",
+          "βαθὺς",
+          "ἦν",
+          "ὥστε",
+          "οἱ",
+          "ἵπποι",
+          "οὐκ",
+          "ἐδύναντο",
+          "αὐτὸν",
+          "διαβαίνειν"
+        ]
+      },
+      {
+        "prompt": "He spoke so obscurely that I could not easily have understood him.",
+        "answer": "οὕτως ἀσαφῶς ἔλεγεν ὥστε οὐκ ἂν αὐτὸν ῥᾳδίως μάθοιμι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτως",
+          "ἀσαφῶς",
+          "ἔλεγεν",
+          "ὥστε",
+          "οὐκ",
+          "ἂν",
+          "αὐτὸν",
+          "ῥᾳδίως",
+          "μάθοιμι"
+        ]
+      },
+      {
+        "prompt": "Give me a sword, with which I may never be taken alive.",
+        "answer": "δός μοι ξίφος, ᾧ μήποτε ζῶν ἁλώσομαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δός",
+          "μοι",
+          "ξίφος",
+          "ᾧ",
+          "μήποτε",
+          "ζῶν",
+          "ἁλώσομαι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t17",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "Wretched indeed is that man, who has neither friends nor a fatherland.",
+        "answer": "ἄθλιος δὴ ἐκεῖνός ἐστιν, ᾧ μήτε φίλοι μήτε πατρίς ἐστιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄθλιος",
+          "δὴ",
+          "ἐκεῖνός",
+          "ἐστιν",
+          "ᾧ",
+          "μήτε",
+          "φίλοι",
+          "πατρίς"
+        ]
+      },
+      {
+        "prompt": "Say such things as no one could blame.",
+        "answer": "τοιαῦτα λέγε, οἷς μηδεὶς ἂν μέμψαιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοιαῦτα",
+          "λέγε",
+          "οἷς",
+          "μηδεὶς",
+          "ἂν",
+          "μέμψαιτο"
+        ]
+      },
+      {
+        "prompt": "He became such a poet as no other man ever became.",
+        "answer": "τοιοῦτος ποιητὴς ἐγένετο, οἷος οὐδεὶς ἄλλος πώποτε ἐγένετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοιοῦτος",
+          "ποιητὴς",
+          "ἐγένετο",
+          "οἷος",
+          "οὐδεὶς",
+          "ἄλλος",
+          "πώποτε"
+        ]
+      },
+      {
+        "prompt": "Vote for such things as you will never regret.",
+        "answer": "τοιαῦτα ψηφίσασθε, ἐξ ὧν μηδέποτε ὑμῖν μεταμελήσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοιαῦτα",
+          "ψηφίσασθε",
+          "ἐξ",
+          "ὧν",
+          "μηδέποτε",
+          "ὑμῖν",
+          "μεταμελήσει"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t18",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "By Zeus, far be it from me ever to betray my comrades.",
+        "answer": "μὰ τὸν Δία, μὴ ἐγὼ τοὺς ἑταίρους προδώσω ποτέ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὰ",
+          "τὸν",
+          "Δία",
+          "μὴ",
+          "ἐγὼ",
+          "τοὺς",
+          "ἑταίρους",
+          "προδώσω",
+          "ποτέ"
+        ]
+      },
+      {
+        "prompt": "Let Zeus now know that no other man shall lead this army.",
+        "answer": "ἴστω νῦν Ζεύς, μὴ ἄλλος ἀνὴρ τῆσδε τῆς στρατιᾶς ἡγήσεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἴστω",
+          "νῦν",
+          "Ζεύς",
+          "μὴ",
+          "ἄλλος",
+          "ἀνὴρ",
+          "τῆσδε",
+          "τῆς",
+          "στρατιᾶς",
+          "ἡγήσεται"
+        ]
+      },
+      {
+        "prompt": "He hid the gold, in order that the thieves might not steal it.",
+        "answer": "τὸν χρυσὸν ἔκρυψεν, ἵνα οἱ κλῶπες αὐτὸν μὴ κλέψειαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸν",
+          "χρυσὸν",
+          "ἔκρυψεν",
+          "ἵνα",
+          "οἱ",
+          "κλῶπες",
+          "αὐτὸν",
+          "μὴ",
+          "κλέψειαν"
+        ]
+      },
+      {
+        "prompt": "If the physician had not been present, the child would have died.",
+        "answer": "εἰ ὁ ἰατρὸς μὴ παρῆν, τὸ παιδίον ἀπέθανεν ἄν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "ὁ",
+          "ἰατρὸς",
+          "μὴ",
+          "παρῆν",
+          "τὸ",
+          "παιδίον",
+          "ἀπέθανεν",
+          "ἄν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t19",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "The old men fled to the citadel, in order that they might not be captured by the enemy.",
+        "answer": "οἱ γέροντες εἰς τὴν ἀκρόπολιν ἔφυγον, ἵνα μὴ ὑπὸ τῶν πολεμίων ληφθεῖεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "γέροντες",
+          "εἰς",
+          "τὴν",
+          "ἀκρόπολιν",
+          "ἔφυγον",
+          "ἵνα",
+          "μὴ",
+          "ὑπὸ",
+          "τῶν",
+          "πολεμίων",
+          "ληφθεῖεν"
+        ]
+      },
+      {
+        "prompt": "He was contriving that none of the citizens should ever be wronged.",
+        "answer": "ἐμηχανᾶτο ὅπως μηδεὶς τῶν πολιτῶν μηδέποτε ἀδικοῖτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐμηχανᾶτο",
+          "ὅπως",
+          "μηδεὶς",
+          "τῶν",
+          "πολιτῶν",
+          "μηδέποτε",
+          "ἀδικοῖτο"
+        ]
+      },
+      {
+        "prompt": "If the guards had not been asleep, the thieves would not have entered the house.",
+        "answer": "εἰ μὴ οἱ φύλακες ἐκάθευδον, οἱ κλῶπες οὐκ ἂν εἰς τὴν οἰκίαν εἰσῆλθον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "μὴ",
+          "οἱ",
+          "φύλακες",
+          "ἐκάθευδον",
+          "κλῶπες",
+          "οὐκ",
+          "ἂν",
+          "εἰς",
+          "τὴν",
+          "οἰκίαν",
+          "εἰσῆλθον"
+        ]
+      },
+      {
+        "prompt": "The river became so deep that the horsemen did not cross it.",
+        "answer": "ὁ ποταμὸς οὕτω βαθὺς ἐγένετο ὥστε οἱ ἱππεῖς οὐ διέβησαν αὐτόν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ποταμὸς",
+          "οὕτω",
+          "βαθὺς",
+          "ἐγένετο",
+          "ὥστε",
+          "οἱ",
+          "ἱππεῖς",
+          "οὐ",
+          "διέβησαν",
+          "αὐτόν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t20",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "Whoever does not guard against danger falls into it.",
+        "answer": "ὅστις ἂν μὴ τὸν κίνδυνον φυλάττηται, εἰς αὐτὸν ἐμπίπτει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅστις",
+          "ἂν",
+          "μὴ",
+          "τὸν",
+          "κίνδυνον",
+          "φυλάττηται",
+          "εἰς",
+          "αὐτὸν",
+          "ἐμπίπτει"
+        ]
+      },
+      {
+        "prompt": "The maiden was seeking a cave where none of her pursuers might see her.",
+        "answer": "ἡ παρθένος ἄντρον ἐζήτει, ἔνθα μηδεὶς τῶν διωκόντων αὐτὴν ἴδοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "παρθένος",
+          "ἄντρον",
+          "ἐζήτει",
+          "ἔνθα",
+          "μηδεὶς",
+          "τῶν",
+          "διωκόντων",
+          "αὐτὴν",
+          "ἴδοι"
+        ]
+      },
+      {
+        "prompt": "Wretched is the man who has neither wealth nor a good reputation.",
+        "answer": "ἄθλιός ἐστιν ὃς μήτε πλοῦτον μήτε δόξαν ἀγαθὴν ἔχει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄθλιός",
+          "ἐστιν",
+          "ὃς",
+          "μήτε",
+          "πλοῦτον",
+          "δόξαν",
+          "ἀγαθὴν",
+          "ἔχει"
+        ]
+      },
+      {
+        "prompt": "There is no one who does not wish to live well.",
+        "answer": "οὐδείς ἐστιν ὅστις οὐ βούλεται εὖ ζῆν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδείς",
+          "ἐστιν",
+          "ὅστις",
+          "οὐ",
+          "βούλεται",
+          "εὖ",
+          "ζῆν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-t21",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "They burned the bridges, in order that the barbarians might not pursue them.",
+        "answer": "τὰς γεφύρας ἔκαυσαν, ἵνα μὴ οἱ βάρβαροι διώκοιεν αὐτούς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰς",
+          "γεφύρας",
+          "ἔκαυσαν",
+          "ἵνα",
+          "μὴ",
+          "οἱ",
+          "βάρβαροι",
+          "διώκοιεν",
+          "αὐτούς"
+        ]
+      },
+      {
+        "prompt": "See to it that you do not destroy the deposit entrusted to you.",
+        "answer": "φρόντιζε ὅπως τὴν παρακαταθήκην μὴ διαφθερεῖς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φρόντιζε",
+          "ὅπως",
+          "τὴν",
+          "παρακαταθήκην",
+          "μὴ",
+          "διαφθερεῖς"
+        ]
+      },
+      {
+        "prompt": "If the citizens do not resist, the tyrant will enslave them.",
+        "answer": "εἰ μὴ οἱ πολῖται ἀντιστήσονται, ὁ τύραννος αὐτοὺς δουλώσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "μὴ",
+          "οἱ",
+          "πολῖται",
+          "ἀντιστήσονται",
+          "ὁ",
+          "τύραννος",
+          "αὐτοὺς",
+          "δουλώσει"
+        ]
+      },
+      {
+        "prompt": "By the gods, far be it from me ever to leave my post.",
+        "answer": "μὰ τοὺς θεούς, μὴ ἐγὼ τὴν τάξιν ποτὲ λείψω.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὰ",
+          "τοὺς",
+          "θεούς",
+          "μὴ",
+          "ἐγὼ",
+          "τὴν",
+          "τάξιν",
+          "ποτὲ",
+          "λείψω"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-q1",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "He wished to be on friendly terms with men in power in order that he might not pay the penalty for his wrong-doing.",
+        "answer": "φίλος ἐβούλετο εἶναι τοῖς μέγιστα δυναμένοις, ἵνα ἀδικῶν μὴ διδοίη δίκην",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φίλος",
+          "ἐβούλετο",
+          "εἶναι",
+          "τοῖς",
+          "μέγιστα",
+          "δυναμένοις",
+          "ἵνα",
+          "ἀδικῶν",
+          "μὴ",
+          "διδοίη",
+          "δίκην"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "2.6.21"
+        }
+      },
+      {
+        "prompt": "If you had not come, we should be marching against the king.",
+        "answer": "εἰ μὴ ὑμεῖς ἤλθετε, ἐπορευόμεθα ἂν ἐπὶ βασιλέα",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "μὴ",
+          "ὑμεῖς",
+          "ἤλθετε",
+          "ἐπορευόμεθα",
+          "ἂν",
+          "ἐπὶ",
+          "βασιλέα"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "2.1.4"
+        }
+      },
+      {
+        "prompt": "He never left him unless there was some necessity for it.",
+        "answer": "οὐκ ἀπελείπετο αὐτοῦ, εἰ μή τι ἀναγκαῖον εἴη",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "ἀπελείπετο",
+          "αὐτοῦ",
+          "εἰ",
+          "μή",
+          "τι",
+          "ἀναγκαῖον",
+          "εἴη"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Memorabilia",
+          "locus": "4.2.40"
+        }
+      },
+      {
+        "prompt": "They signify beforehand what one must do and what not.",
+        "answer": "προσημαίνουσιν ἅ τε χρὴ ποιεῖν καὶ ἃ οὐ χρή",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "προσημαίνουσιν",
+          "ἅ",
+          "τε",
+          "χρὴ",
+          "ποιεῖν",
+          "καὶ",
+          "ἃ",
+          "οὐ",
+          "χρή"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Cyropaedia",
+          "locus": "1.6.46"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sm-2705-subordinate-clauses-in-the-indicative-q2",
+    "sectionId": "sm-2705-subordinate-clauses-in-the-indicative",
+    "questions": [
+      {
+        "prompt": "Such a writer of speeches as no one had been.",
+        "answer": "συγγραφεὺς τῶν λόγων τοιοῦτος, οἷος οὐδεὶς ἄλλος γέγονε",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "συγγραφεὺς",
+          "τῶν",
+          "λόγων",
+          "τοιοῦτος",
+          "οἷος",
+          "οὐδεὶς",
+          "ἄλλος",
+          "γέγονε"
+        ],
+        "source": {
+          "author": "Isocrates",
+          "work": "Orations",
+          "locus": "15.35"
+        }
+      },
+      {
+        "prompt": "Wishing to leave behind him such a memorial as would surpass human nature.",
+        "answer": "βουληθεὶς τοιοῦτον μνημεῖον καταλιπεῖν, ὃ μὴ τῆς ἀνθρωπίνης φύσεώς ἐστιν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "βουληθεὶς",
+          "τοιοῦτον",
+          "μνημεῖον",
+          "καταλιπεῖν",
+          "ὃ",
+          "μὴ",
+          "τῆς",
+          "ἀνθρωπίνης",
+          "φύσεώς",
+          "ἐστιν"
+        ],
+        "source": {
+          "author": "Isocrates",
+          "work": "Orations",
+          "locus": "4.89"
+        }
+      },
+      {
+        "prompt": "A wretched being art thou then, who hast neither ancestral gods nor shrines.",
+        "answer": "ταλαίπωρος ἄρα τις σύ γε ἄνθρωπος εἶ, ᾧ μήτε θεοὶ πατρῷοί εἰσι μήτε ἱερά",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ταλαίπωρος",
+          "ἄρα",
+          "τις",
+          "σύ",
+          "γε",
+          "ἄνθρωπος",
+          "εἶ",
+          "ᾧ",
+          "μήτε",
+          "θεοὶ",
+          "πατρῷοί",
+          "εἰσι",
+          "μήτε",
+          "ἱερά"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Euthydemus",
+          "locus": "302b"
+        }
+      },
+      {
+        "prompt": "Pass such a vote that you will never repent of it.",
+        "answer": "ψηφίσασθε τοιαῦτα ἐξ ὧν μηδέποτε ὑμῖν μεταμελήσει",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ψηφίσασθε",
+          "τοιαῦτα",
+          "ἐξ",
+          "ὧν",
+          "μηδέποτε",
+          "ὑμῖν",
+          "μεταμελήσει"
+        ],
+        "source": {
+          "author": "Andocides",
+          "work": "Orations",
+          "locus": "3.41"
+        }
+      }
+    ]
+  }
 ]

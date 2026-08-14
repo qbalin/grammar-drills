@@ -1,1057 +1,1057 @@
 [
- {
-  "id": "sm-944-omission-of-the-verb-t1",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "Death is common to all, but the deeds of the brave are noble.",
-    "answer": "κοινὸς μὲν πᾶσιν ὁ θάνατος, καλὰ δὲ τὰ τῶν ἀνδρείων ἔργα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "κοινὸς",
-     "μὲν",
-     "πᾶσιν",
-     "ὁ",
-     "θάνατος",
-     "καλὰ",
-     "δὲ",
-     "τὰ",
-     "τῶν",
-     "ἀνδρείων",
-     "ἔργα"
+  {
+    "id": "sm-944-omission-of-the-verb-t1",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "Death is common to all, but the deeds of the brave are noble.",
+        "answer": "κοινὸς μὲν πᾶσιν ὁ θάνατος, καλὰ δὲ τὰ τῶν ἀνδρείων ἔργα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "κοινὸς",
+          "μὲν",
+          "πᾶσιν",
+          "ὁ",
+          "θάνατος",
+          "καλὰ",
+          "δὲ",
+          "τὰ",
+          "τῶν",
+          "ἀνδρείων",
+          "ἔργα"
+        ]
+      },
+      {
+        "prompt": "Freedom is sweet to those who long ago served as slaves.",
+        "answer": "ἡδεῖα ἡ ἐλευθερία τοῖς πάλαι δουλεύσασιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡδεῖα",
+          "ἡ",
+          "ἐλευθερία",
+          "τοῖς",
+          "πάλαι",
+          "δουλεύσασιν"
+        ]
+      },
+      {
+        "prompt": "The future is unclear, and chance is common to all men.",
+        "answer": "ἄδηλον τὸ μέλλον, καὶ κοινὴ ἡ τύχη πᾶσιν ἀνθρώποις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄδηλον",
+          "τὸ",
+          "μέλλον",
+          "καὶ",
+          "κοινὴ",
+          "ἡ",
+          "τύχη",
+          "πᾶσιν",
+          "ἀνθρώποις"
+        ]
+      },
+      {
+        "prompt": "Bitter to the exile is another man's bread.",
+        "answer": "πικρὸς τῷ φυγάδι ὁ ἀλλότριος ἄρτος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πικρὸς",
+          "τῷ",
+          "φυγάδι",
+          "ὁ",
+          "ἀλλότριος",
+          "ἄρτος"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Freedom is sweet to those who long ago served as slaves.",
-    "answer": "ἡδεῖα ἡ ἐλευθερία τοῖς πάλαι δουλεύσασιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡδεῖα",
-     "ἡ",
-     "ἐλευθερία",
-     "τοῖς",
-     "πάλαι",
-     "δουλεύσασιν"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t2",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "We must serve the gods before we sail against the enemy.",
+        "answer": "θεραπευτέον τοὺς θεοὺς πρὶν ἐπὶ τοὺς πολεμίους πλεῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "θεραπευτέον",
+          "τοὺς",
+          "θεοὺς",
+          "πρὶν",
+          "ἐπὶ",
+          "πολεμίους",
+          "πλεῦσαι"
+        ]
+      },
+      {
+        "prompt": "It is necessary to guard against those who flatter us.",
+        "answer": "ἀνάγκη φυλάττεσθαι τοὺς κολακεύοντας ἡμᾶς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀνάγκη",
+          "φυλάττεσθαι",
+          "τοὺς",
+          "κολακεύοντας",
+          "ἡμᾶς"
+        ]
+      },
+      {
+        "prompt": "One must obey the laws, even if they seem to be harsh.",
+        "answer": "πειστέον τοῖς νόμοις, καὶ εἰ χαλεποὶ δοκοῦσιν εἶναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πειστέον",
+          "τοῖς",
+          "νόμοις",
+          "καὶ",
+          "εἰ",
+          "χαλεποὶ",
+          "δοκοῦσιν",
+          "εἶναι"
+        ]
+      },
+      {
+        "prompt": "It is time to lead away the ships, since night has come.",
+        "answer": "ὥρα τὰς ναῦς ἀπάγειν, ἐπεὶ νὺξ γέγονεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὥρα",
+          "τὰς",
+          "ναῦς",
+          "ἀπάγειν",
+          "ἐπεὶ",
+          "νὺξ",
+          "γέγονεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The future is unclear, and chance is common to all men.",
-    "answer": "ἄδηλον τὸ μέλλον, καὶ κοινὴ ἡ τύχη πᾶσιν ἀνθρώποις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄδηλον",
-     "τὸ",
-     "μέλλον",
-     "καὶ",
-     "κοινὴ",
-     "ἡ",
-     "τύχη",
-     "πᾶσιν",
-     "ἀνθρώποις"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t3",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "The soul of the wise man is ready to endure all things.",
+        "answer": "ἡ τοῦ σοφοῦ ψυχὴ ἑτοίμη πάντα ὑπομένειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "τοῦ",
+          "σοφοῦ",
+          "ψυχὴ",
+          "ἑτοίμη",
+          "πάντα",
+          "ὑπομένειν"
+        ]
+      },
+      {
+        "prompt": "This man is worthy to rule over the free.",
+        "answer": "ἄξιος οὗτος ἄρχειν τῶν ἐλευθέρων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄξιος",
+          "οὗτος",
+          "ἄρχειν",
+          "τῶν",
+          "ἐλευθέρων"
+        ]
+      },
+      {
+        "prompt": "It is just that those who did wrong should pay the penalty.",
+        "answer": "δίκαιον τοὺς ἀδικήσαντας δίκην διδόναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δίκαιον",
+          "τοὺς",
+          "ἀδικήσαντας",
+          "δίκην",
+          "διδόναι"
+        ]
+      },
+      {
+        "prompt": "Are you able to cross the river before the enemy are at hand?",
+        "answer": "δυνατὸς σὺ τὸν ποταμὸν διαβῆναι πρὶν τοὺς πολεμίους παρεῖναι;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δυνατὸς",
+          "σὺ",
+          "τὸν",
+          "ποταμὸν",
+          "διαβῆναι",
+          "πρὶν",
+          "τοὺς",
+          "πολεμίους",
+          "παρεῖναι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Bitter to the exile is another man's bread.",
-    "answer": "πικρὸς τῷ φυγάδι ὁ ἀλλότριος ἄρτος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πικρὸς",
-     "τῷ",
-     "φυγάδι",
-     "ὁ",
-     "ἀλλότριος",
-     "ἄρτος"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t4",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "What else did they do except plot against the allies?",
+        "answer": "τί ἄλλο ἢ τοῖς συμμάχοις ἐπεβούλευσαν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τί",
+          "ἄλλο",
+          "ἢ",
+          "τοῖς",
+          "συμμάχοις",
+          "ἐπεβούλευσαν"
+        ]
+      },
+      {
+        "prompt": "Whither, my friend, and whence?",
+        "answer": "ποῖ δὴ σύ, ὦ φίλε, καὶ πόθεν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ποῖ",
+          "δὴ",
+          "σύ",
+          "ὦ",
+          "φίλε",
+          "καὶ",
+          "πόθεν"
+        ]
+      },
+      {
+        "prompt": "None of your legends for me, but the truth!",
+        "answer": "μή μοι μύθους, ἀλλὰ τὴν ἀλήθειαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μή",
+          "μοι",
+          "μύθους",
+          "ἀλλὰ",
+          "τὴν",
+          "ἀλήθειαν"
+        ]
+      },
+      {
+        "prompt": "About these matters later; now, another point.",
+        "answer": "περὶ μὲν τούτων ὕστερον, νῦν δὲ ἕτερον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "περὶ",
+          "μὲν",
+          "τούτων",
+          "ὕστερον",
+          "νῦν",
+          "δὲ",
+          "ἕτερον"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t2",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "We must serve the gods before we sail against the enemy.",
-    "answer": "θεραπευτέον τοὺς θεοὺς πρὶν ἐπὶ τοὺς πολεμίους πλεῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "θεραπευτέον",
-     "τοὺς",
-     "θεοὺς",
-     "πρὶν",
-     "ἐπὶ",
-     "πολεμίους",
-     "πλεῦσαι"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t5",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "He betrayed his friends, and that too in time of danger.",
+        "answer": "τοὺς φίλους προέδωκε, καὶ ταῦτα ἐν τῷ κινδύνῳ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "φίλους",
+          "προέδωκε",
+          "καὶ",
+          "ταῦτα",
+          "ἐν",
+          "τῷ",
+          "κινδύνῳ"
+        ]
+      },
+      {
+        "prompt": "They insulted the old man, and that too though he had done no wrong.",
+        "answer": "τὸν γέροντα ὕβρισαν, καὶ ταῦτα οὐδὲν ἀδικήσαντα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸν",
+          "γέροντα",
+          "ὕβρισαν",
+          "καὶ",
+          "ταῦτα",
+          "οὐδὲν",
+          "ἀδικήσαντα"
+        ]
+      },
+      {
+        "prompt": "She saved the children, and that too risking her own life.",
+        "answer": "τὰ τέκνα ἔσωσε, καὶ ταῦτα κινδυνεύουσα περὶ τῆς ἑαυτῆς ψυχῆς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "τέκνα",
+          "ἔσωσε",
+          "καὶ",
+          "ταῦτα",
+          "κινδυνεύουσα",
+          "περὶ",
+          "τῆς",
+          "ἑαυτῆς",
+          "ψυχῆς"
+        ]
+      },
+      {
+        "prompt": "He abandoned the ships, and that too though he was the admiral.",
+        "answer": "τὰς ναῦς ἀπέλιπε, καὶ ταῦτα ναύαρχος ὤν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰς",
+          "ναῦς",
+          "ἀπέλιπε",
+          "καὶ",
+          "ταῦτα",
+          "ναύαρχος",
+          "ὤν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "It is necessary to guard against those who flatter us.",
-    "answer": "ἀνάγκη φυλάττεσθαι τοὺς κολακεύοντας ἡμᾶς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀνάγκη",
-     "φυλάττεσθαι",
-     "τοὺς",
-     "κολακεύοντας",
-     "ἡμᾶς"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t6",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "To the gods be the greatest thanks for the victory.",
+        "answer": "τοῖς θεοῖς μεγίστη χάρις τῆς νίκης.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῖς",
+          "θεοῖς",
+          "μεγίστη",
+          "χάρις",
+          "τῆς",
+          "νίκης"
+        ]
+      },
+      {
+        "prompt": "It is likely that the brave prevail over the cowardly.",
+        "answer": "εἰκὸς τοὺς ἀνδρείους τῶν δειλῶν κρατεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰκὸς",
+          "τοὺς",
+          "ἀνδρείους",
+          "τῶν",
+          "δειλῶν",
+          "κρατεῖν"
+        ]
+      },
+      {
+        "prompt": "The night was half gone, and the guards were asleep.",
+        "answer": "νὺξ ἐν μέσῳ, καὶ οἱ φύλακες ἐκάθευδον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "νὺξ",
+          "ἐν",
+          "μέσῳ",
+          "καὶ",
+          "οἱ",
+          "φύλακες",
+          "ἐκάθευδον"
+        ]
+      },
+      {
+        "prompt": "You are talking absurdly and not at all like yourself.",
+        "answer": "ἄτοπα λέγεις καὶ οὐδαμῶς πρὸς σοῦ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄτοπα",
+          "λέγεις",
+          "καὶ",
+          "οὐδαμῶς",
+          "πρὸς",
+          "σοῦ"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "One must obey the laws, even if they seem to be harsh.",
-    "answer": "πειστέον τοῖς νόμοις, καὶ εἰ χαλεποὶ δοκοῦσιν εἶναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πειστέον",
-     "τοῖς",
-     "νόμοις",
-     "καὶ",
-     "εἰ",
-     "χαλεποὶ",
-     "δοκοῦσιν",
-     "εἶναι"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t7",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "It is necessary for the young to keep silent whenever their elders speak.",
+        "answer": "ἀνάγκη τοὺς νέους σιγᾶν, ὅταν οἱ πρεσβύτεροι λέγωσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀνάγκη",
+          "τοὺς",
+          "νέους",
+          "σιγᾶν",
+          "ὅταν",
+          "οἱ",
+          "πρεσβύτεροι",
+          "λέγωσιν"
+        ]
+      },
+      {
+        "prompt": "Chance is common to all, but wisdom belongs to few.",
+        "answer": "κοινὴ ἡ τύχη πᾶσιν, ἡ δὲ σοφία ὀλίγοις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "κοινὴ",
+          "ἡ",
+          "τύχη",
+          "πᾶσιν",
+          "δὲ",
+          "σοφία",
+          "ὀλίγοις"
+        ]
+      },
+      {
+        "prompt": "It is time to take up arms against the barbarians.",
+        "answer": "ὥρα τὰ ὅπλα λαμβάνειν ἐπὶ τοὺς βαρβάρους.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὥρα",
+          "τὰ",
+          "ὅπλα",
+          "λαμβάνειν",
+          "ἐπὶ",
+          "τοὺς",
+          "βαρβάρους"
+        ]
+      },
+      {
+        "prompt": "The man worthy of honor is ready to die for his country.",
+        "answer": "ὁ τῆς τιμῆς ἄξιος ἀνὴρ ἕτοιμος ὑπὲρ τῆς πατρίδος ἀποθνῄσκειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "τῆς",
+          "τιμῆς",
+          "ἄξιος",
+          "ἀνὴρ",
+          "ἕτοιμος",
+          "ὑπὲρ",
+          "πατρίδος",
+          "ἀποθνῄσκειν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "It is time to lead away the ships, since night has come.",
-    "answer": "ὥρα τὰς ναῦς ἀπάγειν, ἐπεὶ νὺξ γέγονεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὥρα",
-     "τὰς",
-     "ναῦς",
-     "ἀπάγειν",
-     "ἐπεὶ",
-     "νὺξ",
-     "γέγονεν"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t8",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "We must guard the walls, for the enemy are near.",
+        "answer": "φυλακτέον τὰ τείχη· οἱ γὰρ πολέμιοι ἐγγύς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φυλακτέον",
+          "τὰ",
+          "τείχη",
+          "οἱ",
+          "γὰρ",
+          "πολέμιοι",
+          "ἐγγύς"
+        ]
+      },
+      {
+        "prompt": "We must honor those who died on behalf of freedom.",
+        "answer": "τιμητέον τοὺς ὑπὲρ τῆς ἐλευθερίας ἀποθανόντας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τιμητέον",
+          "τοὺς",
+          "ὑπὲρ",
+          "τῆς",
+          "ἐλευθερίας",
+          "ἀποθανόντας"
+        ]
+      },
+      {
+        "prompt": "It is just to obey the laws, even if they are harsh.",
+        "answer": "δίκαιον τοῖς νόμοις πείθεσθαι, καὶ εἰ χαλεποί.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δίκαιον",
+          "τοῖς",
+          "νόμοις",
+          "πείθεσθαι",
+          "καὶ",
+          "εἰ",
+          "χαλεποί"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t3",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "The soul of the wise man is ready to endure all things.",
-    "answer": "ἡ τοῦ σοφοῦ ψυχὴ ἑτοίμη πάντα ὑπομένειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "τοῦ",
-     "σοφοῦ",
-     "ψυχὴ",
-     "ἑτοίμη",
-     "πάντα",
-     "ὑπομένειν"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t9",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "He betrayed his comrades, and that too though he was their general.",
+        "answer": "τοὺς ἑταίρους προέδωκε, καὶ ταῦτα στρατηγὸς αὐτῶν ὤν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "ἑταίρους",
+          "προέδωκε",
+          "καὶ",
+          "ταῦτα",
+          "στρατηγὸς",
+          "αὐτῶν",
+          "ὤν"
+        ]
+      },
+      {
+        "prompt": "She freed the slaves, and that too against the will of her husband.",
+        "answer": "τοὺς δούλους ἠλευθέρωσε, καὶ ταῦτα ἄκοντος τοῦ ἀνδρός.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "δούλους",
+          "ἠλευθέρωσε",
+          "καὶ",
+          "ταῦτα",
+          "ἄκοντος",
+          "τοῦ",
+          "ἀνδρός"
+        ]
+      },
+      {
+        "prompt": "They burned the temples, and that too being themselves Greeks.",
+        "answer": "τοὺς ναοὺς κατέκαυσαν, καὶ ταῦτα Ἕλληνες αὐτοὶ ὄντες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "ναοὺς",
+          "κατέκαυσαν",
+          "καὶ",
+          "ταῦτα",
+          "Ἕλληνες",
+          "αὐτοὶ",
+          "ὄντες"
+        ]
+      },
+      {
+        "prompt": "He praised the tyrant, and that too having suffered many evils at his hands.",
+        "answer": "τὸν τύραννον ἐπῄνεσε, καὶ ταῦτα πολλὰ κακὰ ὑπὸ αὐτοῦ παθών.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸν",
+          "τύραννον",
+          "ἐπῄνεσε",
+          "καὶ",
+          "ταῦτα",
+          "πολλὰ",
+          "κακὰ",
+          "ὑπὸ",
+          "αὐτοῦ",
+          "παθών"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "This man is worthy to rule over the free.",
-    "answer": "ἄξιος οὗτος ἄρχειν τῶν ἐλευθέρων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄξιος",
-     "οὗτος",
-     "ἄρχειν",
-     "τῶν",
-     "ἐλευθέρων"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t10",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "What else did the generals do except flee from the battle?",
+        "answer": "τί ἄλλο οἱ στρατηγοὶ ἢ ἐκ τῆς μάχης ἔφυγον;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τί",
+          "ἄλλο",
+          "οἱ",
+          "στρατηγοὶ",
+          "ἢ",
+          "ἐκ",
+          "τῆς",
+          "μάχης",
+          "ἔφυγον"
+        ]
+      },
+      {
+        "prompt": "To what purpose did you summon the citizens to the assembly?",
+        "answer": "ἵνα τί τοὺς πολίτας εἰς τὴν ἐκκλησίαν συνεκάλεσας;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἵνα",
+          "τί",
+          "τοὺς",
+          "πολίτας",
+          "εἰς",
+          "τὴν",
+          "ἐκκλησίαν",
+          "συνεκάλεσας"
+        ]
+      },
+      {
+        "prompt": "About these matters later; but consider another point.",
+        "answer": "περὶ μὲν τούτων ὕστερον· ἀλλὰ ἕτερον σκέψασθε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "περὶ",
+          "μὲν",
+          "τούτων",
+          "ὕστερον",
+          "ἀλλὰ",
+          "ἕτερον",
+          "σκέψασθε"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "It is just that those who did wrong should pay the penalty.",
-    "answer": "δίκαιον τοὺς ἀδικήσαντας δίκην διδόναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δίκαιον",
-     "τοὺς",
-     "ἀδικήσαντας",
-     "δίκην",
-     "διδόναι"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t11",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "Now is the time to sail, for the wind is favorable.",
+        "answer": "νῦν καιρὸς πλεῖν· ὁ γὰρ ἄνεμος ἐπιτήδειος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "νῦν",
+          "καιρὸς",
+          "πλεῖν",
+          "ὁ",
+          "γὰρ",
+          "ἄνεμος",
+          "ἐπιτήδειος"
+        ]
+      },
+      {
+        "prompt": "It is necessary to flee, since the city has been captured.",
+        "answer": "ἀνάγκη φεύγειν, τῆς πόλεως ἑαλωκυίας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀνάγκη",
+          "φεύγειν",
+          "τῆς",
+          "πόλεως",
+          "ἑαλωκυίας"
+        ]
+      },
+      {
+        "prompt": "The good general is ready to endure every toil for his soldiers.",
+        "answer": "ὁ ἀγαθὸς στρατηγὸς ἕτοιμος πάντα πόνον ὑπὲρ τῶν στρατιωτῶν ὑπομένειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἀγαθὸς",
+          "στρατηγὸς",
+          "ἕτοιμος",
+          "πάντα",
+          "πόνον",
+          "ὑπὲρ",
+          "τῶν",
+          "στρατιωτῶν",
+          "ὑπομένειν"
+        ]
+      },
+      {
+        "prompt": "It is not possible for the unjust to be truly happy.",
+        "answer": "οὐ δυνατὸν τοὺς ἀδίκους ἀληθῶς εὐδαίμονας εἶναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐ",
+          "δυνατὸν",
+          "τοὺς",
+          "ἀδίκους",
+          "ἀληθῶς",
+          "εὐδαίμονας",
+          "εἶναι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Are you able to cross the river before the enemy are at hand?",
-    "answer": "δυνατὸς σὺ τὸν ποταμὸν διαβῆναι πρὶν τοὺς πολεμίους παρεῖναι;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δυνατὸς",
-     "σὺ",
-     "τὸν",
-     "ποταμὸν",
-     "διαβῆναι",
-     "πρὶν",
-     "τοὺς",
-     "πολεμίους",
-     "παρεῖναι"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t12",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "Ignorance is the greatest of evils for the young.",
+        "answer": "μεγίστη τῶν κακῶν ἡ ἀμαθία τοῖς νέοις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μεγίστη",
+          "τῶν",
+          "κακῶν",
+          "ἡ",
+          "ἀμαθία",
+          "τοῖς",
+          "νέοις"
+        ]
+      },
+      {
+        "prompt": "The dog faithful to its master is worthy of much praise.",
+        "answer": "ὁ κύων ὁ τῷ δεσπότῃ πιστὸς πολλοῦ ἐπαίνου ἄξιος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "κύων",
+          "τῷ",
+          "δεσπότῃ",
+          "πιστὸς",
+          "πολλοῦ",
+          "ἐπαίνου",
+          "ἄξιος"
+        ]
+      },
+      {
+        "prompt": "The art of the seer is difficult, but useful to the city.",
+        "answer": "χαλεπὴ ἡ τοῦ μάντεως τέχνη, χρησίμη δὲ τῇ πόλει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "χαλεπὴ",
+          "ἡ",
+          "τοῦ",
+          "μάντεως",
+          "τέχνη",
+          "χρησίμη",
+          "δὲ",
+          "τῇ",
+          "πόλει"
+        ]
+      },
+      {
+        "prompt": "Whoever betrays his friends is a slave to money.",
+        "answer": "ὅστις τοὺς φίλους προδίδωσι, δοῦλος τῶν χρημάτων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅστις",
+          "τοὺς",
+          "φίλους",
+          "προδίδωσι",
+          "δοῦλος",
+          "τῶν",
+          "χρημάτων"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t4",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "What else did they do except plot against the allies?",
-    "answer": "τί ἄλλο ἢ τοῖς συμμάχοις ἐπεβούλευσαν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τί",
-     "ἄλλο",
-     "ἢ",
-     "τοῖς",
-     "συμμάχοις",
-     "ἐπεβούλευσαν"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t13",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "Common to all men is the fear of death.",
+        "answer": "κοινὸς πᾶσιν ἀνθρώποις ὁ τοῦ θανάτου φόβος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "κοινὸς",
+          "πᾶσιν",
+          "ἀνθρώποις",
+          "ὁ",
+          "τοῦ",
+          "θανάτου",
+          "φόβος"
+        ]
+      },
+      {
+        "prompt": "The general is worthy of great honor, although he was defeated.",
+        "answer": "ἄξιος μεγάλης τιμῆς ὁ στρατηγός, καίπερ νικηθείς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄξιος",
+          "μεγάλης",
+          "τιμῆς",
+          "ὁ",
+          "στρατηγός",
+          "καίπερ",
+          "νικηθείς"
+        ]
+      },
+      {
+        "prompt": "It is necessary to guard against the ambush of the enemy.",
+        "answer": "ἀνάγκη φυλάττεσθαι τὴν τῶν πολεμίων ἐνέδραν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀνάγκη",
+          "φυλάττεσθαι",
+          "τὴν",
+          "τῶν",
+          "πολεμίων",
+          "ἐνέδραν"
+        ]
+      },
+      {
+        "prompt": "We must serve the gods who dwell in the city.",
+        "answer": "θεραπευτέον τοὺς θεοὺς τοὺς τὴν πόλιν ναίοντας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "θεραπευτέον",
+          "τοὺς",
+          "θεοὺς",
+          "τὴν",
+          "πόλιν",
+          "ναίοντας"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Whither, my friend, and whence?",
-    "answer": "ποῖ δὴ σύ, ὦ φίλε, καὶ πόθεν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ποῖ",
-     "δὴ",
-     "σύ",
-     "ὦ",
-     "φίλε",
-     "καὶ",
-     "πόθεν"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t14",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "None of your legends for me, but tell me the truth!",
+        "answer": "μή μοι μύθους, ἀλλὰ τὴν ἀλήθειαν λέγε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μή",
+          "μοι",
+          "μύθους",
+          "ἀλλὰ",
+          "τὴν",
+          "ἀλήθειαν",
+          "λέγε"
+        ]
+      },
+      {
+        "prompt": "He abandoned the city, and that too though he was a citizen.",
+        "answer": "ἀπέλιπε τὴν πόλιν, καὶ ταῦτα πολίτης ὤν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπέλιπε",
+          "τὴν",
+          "πόλιν",
+          "καὶ",
+          "ταῦτα",
+          "πολίτης",
+          "ὤν"
+        ]
+      },
+      {
+        "prompt": "What else did the tyrant do except enslave the citizens?",
+        "answer": "τί ἄλλο ὁ τύραννος ἢ τοὺς πολίτας κατεδουλώσατο;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τί",
+          "ἄλλο",
+          "ὁ",
+          "τύραννος",
+          "ἢ",
+          "τοὺς",
+          "πολίτας",
+          "κατεδουλώσατο"
+        ]
+      },
+      {
+        "prompt": "To what purpose are all these labors of yours?",
+        "answer": "ἵνα τί σοι πάντες οὗτοι οἱ πόνοι;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἵνα",
+          "τί",
+          "σοι",
+          "πάντες",
+          "οὗτοι",
+          "οἱ",
+          "πόνοι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "None of your legends for me, but the truth!",
-    "answer": "μή μοι μύθους, ἀλλὰ τὴν ἀλήθειαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μή",
-     "μοι",
-     "μύθους",
-     "ἀλλὰ",
-     "τὴν",
-     "ἀλήθειαν"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t15",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "Now is the time to lead the army against the city.",
+        "answer": "ὥρα ἤδη τὸ στράτευμα ἐπὶ τὴν πόλιν ἄγειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὥρα",
+          "ἤδη",
+          "τὸ",
+          "στράτευμα",
+          "ἐπὶ",
+          "τὴν",
+          "πόλιν",
+          "ἄγειν"
+        ]
+      },
+      {
+        "prompt": "It is likely that the brave will overcome the cowardly.",
+        "answer": "εἰκὸς τοὺς ἀνδρείους τῶν δειλῶν κρατήσειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰκὸς",
+          "τοὺς",
+          "ἀνδρείους",
+          "τῶν",
+          "δειλῶν",
+          "κρατήσειν"
+        ]
+      },
+      {
+        "prompt": "We must free the prisoners before night comes on.",
+        "answer": "λυτέον τοὺς αἰχμαλώτους πρὶν νύκτα γενέσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "λυτέον",
+          "τοὺς",
+          "αἰχμαλώτους",
+          "πρὶν",
+          "νύκτα",
+          "γενέσθαι"
+        ]
+      },
+      {
+        "prompt": "It is right for the citizens to obey the laws.",
+        "answer": "δίκαιον τοὺς πολίτας τοῖς νόμοις πείθεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δίκαιον",
+          "τοὺς",
+          "πολίτας",
+          "τοῖς",
+          "νόμοις",
+          "πείθεσθαι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "About these matters later; now, another point.",
-    "answer": "περὶ μὲν τούτων ὕστερον, νῦν δὲ ἕτερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "περὶ",
-     "μὲν",
-     "τούτων",
-     "ὕστερον",
-     "νῦν",
-     "δὲ",
-     "ἕτερον"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-t16",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "The soldiers are ready to die on behalf of their fatherland.",
+        "answer": "ἕτοιμοι οἱ στρατιῶται ὑπὲρ τῆς πατρίδος ἀποθνῄσκειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἕτοιμοι",
+          "οἱ",
+          "στρατιῶται",
+          "ὑπὲρ",
+          "τῆς",
+          "πατρίδος",
+          "ἀποθνῄσκειν"
+        ]
+      },
+      {
+        "prompt": "The ships are gone, and gone too are our hopes.",
+        "answer": "φροῦδαι αἱ νῆες, φροῦδαι δὲ καὶ αἱ ἡμέτεραι ἐλπίδες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φροῦδαι",
+          "αἱ",
+          "νῆες",
+          "δὲ",
+          "καὶ",
+          "ἡμέτεραι",
+          "ἐλπίδες"
+        ]
+      },
+      {
+        "prompt": "Great is the power of the gods, and greater their anger.",
+        "answer": "μεγάλη ἡ τῶν θεῶν δύναμις, μείζων δὲ ἡ ὀργή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μεγάλη",
+          "ἡ",
+          "τῶν",
+          "θεῶν",
+          "δύναμις",
+          "μείζων",
+          "δὲ",
+          "ὀργή"
+        ]
+      },
+      {
+        "prompt": "Are you not a general, and yet you fear the enemy?",
+        "answer": "οὐ σὺ στρατηγός; καὶ ὅμως τοὺς πολεμίους φοβῇ;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐ",
+          "σὺ",
+          "στρατηγός",
+          "καὶ",
+          "ὅμως",
+          "τοὺς",
+          "πολεμίους",
+          "φοβῇ"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t5",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "He betrayed his friends, and that too in time of danger.",
-    "answer": "τοὺς φίλους προέδωκε, καὶ ταῦτα ἐν τῷ κινδύνῳ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "φίλους",
-     "προέδωκε",
-     "καὶ",
-     "ταῦτα",
-     "ἐν",
-     "τῷ",
-     "κινδύνῳ"
+  },
+  {
+    "id": "sm-944-omission-of-the-verb-q1",
+    "sectionId": "sm-944-omission-of-the-verb",
+    "questions": [
+      {
+        "prompt": "Chance is common to all and the future cannot be scanned.",
+        "answer": "κοινὴ ἡ τύχη καὶ τὸ μέλλον ἀόρατον",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "κοινὴ",
+          "ἡ",
+          "τύχη",
+          "καὶ",
+          "τὸ",
+          "μέλλον",
+          "ἀόρατον"
+        ],
+        "source": {
+          "author": "Isocrates",
+          "work": "Orations",
+          "locus": "1.29"
+        }
+      },
+      {
+        "prompt": "The soul is ready to be a servant.",
+        "answer": "ἡ ψυχὴ δουλεύειν ἑτοίμη",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "ψυχὴ",
+          "δουλεύειν",
+          "ἑτοίμη"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Phaedrus",
+          "locus": "252a"
+        }
+      },
+      {
+        "prompt": "If anybody should ask whether it is better.",
+        "answer": "εἴ τις ἐπερωτῴη πότερον κρεῖττον",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴ",
+          "τις",
+          "ἐπερωτῴη",
+          "πότερον",
+          "κρεῖττον"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Memorabilia",
+          "locus": "1.1.9"
+        }
+      },
+      {
+        "prompt": "He made them more savage and that too towards himself.",
+        "answer": "ἀγριωτέρους αὐτοὺς ἀπέφηνε καὶ ταῦτ᾽ εἰς αὑτόν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀγριωτέρους",
+          "αὐτοὺς",
+          "ἀπέφηνε",
+          "καὶ",
+          "ταῦτ",
+          "εἰς",
+          "αὑτόν"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Gorgias",
+          "locus": "516c"
+        }
+      }
     ]
-   },
-   {
-    "prompt": "They insulted the old man, and that too though he had done no wrong.",
-    "answer": "τὸν γέροντα ὕβρισαν, καὶ ταῦτα οὐδὲν ἀδικήσαντα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸν",
-     "γέροντα",
-     "ὕβρισαν",
-     "καὶ",
-     "ταῦτα",
-     "οὐδὲν",
-     "ἀδικήσαντα"
-    ]
-   },
-   {
-    "prompt": "She saved the children, and that too risking her own life.",
-    "answer": "τὰ τέκνα ἔσωσε, καὶ ταῦτα κινδυνεύουσα περὶ τῆς ἑαυτῆς ψυχῆς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "τέκνα",
-     "ἔσωσε",
-     "καὶ",
-     "ταῦτα",
-     "κινδυνεύουσα",
-     "περὶ",
-     "τῆς",
-     "ἑαυτῆς",
-     "ψυχῆς"
-    ]
-   },
-   {
-    "prompt": "He abandoned the ships, and that too though he was the admiral.",
-    "answer": "τὰς ναῦς ἀπέλιπε, καὶ ταῦτα ναύαρχος ὤν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰς",
-     "ναῦς",
-     "ἀπέλιπε",
-     "καὶ",
-     "ταῦτα",
-     "ναύαρχος",
-     "ὤν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t6",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "To the gods be the greatest thanks for the victory.",
-    "answer": "τοῖς θεοῖς μεγίστη χάρις τῆς νίκης.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῖς",
-     "θεοῖς",
-     "μεγίστη",
-     "χάρις",
-     "τῆς",
-     "νίκης"
-    ]
-   },
-   {
-    "prompt": "It is likely that the brave prevail over the cowardly.",
-    "answer": "εἰκὸς τοὺς ἀνδρείους τῶν δειλῶν κρατεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰκὸς",
-     "τοὺς",
-     "ἀνδρείους",
-     "τῶν",
-     "δειλῶν",
-     "κρατεῖν"
-    ]
-   },
-   {
-    "prompt": "The night was half gone, and the guards were asleep.",
-    "answer": "νὺξ ἐν μέσῳ, καὶ οἱ φύλακες ἐκάθευδον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "νὺξ",
-     "ἐν",
-     "μέσῳ",
-     "καὶ",
-     "οἱ",
-     "φύλακες",
-     "ἐκάθευδον"
-    ]
-   },
-   {
-    "prompt": "You are talking absurdly and not at all like yourself.",
-    "answer": "ἄτοπα λέγεις καὶ οὐδαμῶς πρὸς σοῦ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄτοπα",
-     "λέγεις",
-     "καὶ",
-     "οὐδαμῶς",
-     "πρὸς",
-     "σοῦ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t7",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "It is necessary for the young to keep silent whenever their elders speak.",
-    "answer": "ἀνάγκη τοὺς νέους σιγᾶν, ὅταν οἱ πρεσβύτεροι λέγωσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀνάγκη",
-     "τοὺς",
-     "νέους",
-     "σιγᾶν",
-     "ὅταν",
-     "οἱ",
-     "πρεσβύτεροι",
-     "λέγωσιν"
-    ]
-   },
-   {
-    "prompt": "Chance is common to all, but wisdom belongs to few.",
-    "answer": "κοινὴ ἡ τύχη πᾶσιν, ἡ δὲ σοφία ὀλίγοις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "κοινὴ",
-     "ἡ",
-     "τύχη",
-     "πᾶσιν",
-     "δὲ",
-     "σοφία",
-     "ὀλίγοις"
-    ]
-   },
-   {
-    "prompt": "It is time to take up arms against the barbarians.",
-    "answer": "ὥρα τὰ ὅπλα λαμβάνειν ἐπὶ τοὺς βαρβάρους.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὥρα",
-     "τὰ",
-     "ὅπλα",
-     "λαμβάνειν",
-     "ἐπὶ",
-     "τοὺς",
-     "βαρβάρους"
-    ]
-   },
-   {
-    "prompt": "The man worthy of honor is ready to die for his country.",
-    "answer": "ὁ τῆς τιμῆς ἄξιος ἀνὴρ ἕτοιμος ὑπὲρ τῆς πατρίδος ἀποθνῄσκειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "τῆς",
-     "τιμῆς",
-     "ἄξιος",
-     "ἀνὴρ",
-     "ἕτοιμος",
-     "ὑπὲρ",
-     "πατρίδος",
-     "ἀποθνῄσκειν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t8",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "We must guard the walls, for the enemy are near.",
-    "answer": "φυλακτέον τὰ τείχη· οἱ γὰρ πολέμιοι ἐγγύς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φυλακτέον",
-     "τὰ",
-     "τείχη",
-     "οἱ",
-     "γὰρ",
-     "πολέμιοι",
-     "ἐγγύς"
-    ]
-   },
-   {
-    "prompt": "We must honor those who died on behalf of freedom.",
-    "answer": "τιμητέον τοὺς ὑπὲρ τῆς ἐλευθερίας ἀποθανόντας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τιμητέον",
-     "τοὺς",
-     "ὑπὲρ",
-     "τῆς",
-     "ἐλευθερίας",
-     "ἀποθανόντας"
-    ]
-   },
-   {
-    "prompt": "It is just to obey the laws, even if they are harsh.",
-    "answer": "δίκαιον τοῖς νόμοις πείθεσθαι, καὶ εἰ χαλεποί.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δίκαιον",
-     "τοῖς",
-     "νόμοις",
-     "πείθεσθαι",
-     "καὶ",
-     "εἰ",
-     "χαλεποί"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t9",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "He betrayed his comrades, and that too though he was their general.",
-    "answer": "τοὺς ἑταίρους προέδωκε, καὶ ταῦτα στρατηγὸς αὐτῶν ὤν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "ἑταίρους",
-     "προέδωκε",
-     "καὶ",
-     "ταῦτα",
-     "στρατηγὸς",
-     "αὐτῶν",
-     "ὤν"
-    ]
-   },
-   {
-    "prompt": "She freed the slaves, and that too against the will of her husband.",
-    "answer": "τοὺς δούλους ἠλευθέρωσε, καὶ ταῦτα ἄκοντος τοῦ ἀνδρός.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "δούλους",
-     "ἠλευθέρωσε",
-     "καὶ",
-     "ταῦτα",
-     "ἄκοντος",
-     "τοῦ",
-     "ἀνδρός"
-    ]
-   },
-   {
-    "prompt": "They burned the temples, and that too being themselves Greeks.",
-    "answer": "τοὺς ναοὺς κατέκαυσαν, καὶ ταῦτα Ἕλληνες αὐτοὶ ὄντες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "ναοὺς",
-     "κατέκαυσαν",
-     "καὶ",
-     "ταῦτα",
-     "Ἕλληνες",
-     "αὐτοὶ",
-     "ὄντες"
-    ]
-   },
-   {
-    "prompt": "He praised the tyrant, and that too having suffered many evils at his hands.",
-    "answer": "τὸν τύραννον ἐπῄνεσε, καὶ ταῦτα πολλὰ κακὰ ὑπὸ αὐτοῦ παθών.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸν",
-     "τύραννον",
-     "ἐπῄνεσε",
-     "καὶ",
-     "ταῦτα",
-     "πολλὰ",
-     "κακὰ",
-     "ὑπὸ",
-     "αὐτοῦ",
-     "παθών"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t10",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "What else did the generals do except flee from the battle?",
-    "answer": "τί ἄλλο οἱ στρατηγοὶ ἢ ἐκ τῆς μάχης ἔφυγον;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τί",
-     "ἄλλο",
-     "οἱ",
-     "στρατηγοὶ",
-     "ἢ",
-     "ἐκ",
-     "τῆς",
-     "μάχης",
-     "ἔφυγον"
-    ]
-   },
-   {
-    "prompt": "To what purpose did you summon the citizens to the assembly?",
-    "answer": "ἵνα τί τοὺς πολίτας εἰς τὴν ἐκκλησίαν συνεκάλεσας;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἵνα",
-     "τί",
-     "τοὺς",
-     "πολίτας",
-     "εἰς",
-     "τὴν",
-     "ἐκκλησίαν",
-     "συνεκάλεσας"
-    ]
-   },
-   {
-    "prompt": "About these matters later; but consider another point.",
-    "answer": "περὶ μὲν τούτων ὕστερον· ἀλλὰ ἕτερον σκέψασθε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "περὶ",
-     "μὲν",
-     "τούτων",
-     "ὕστερον",
-     "ἀλλὰ",
-     "ἕτερον",
-     "σκέψασθε"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t11",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "Now is the time to sail, for the wind is favorable.",
-    "answer": "νῦν καιρὸς πλεῖν· ὁ γὰρ ἄνεμος ἐπιτήδειος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "νῦν",
-     "καιρὸς",
-     "πλεῖν",
-     "ὁ",
-     "γὰρ",
-     "ἄνεμος",
-     "ἐπιτήδειος"
-    ]
-   },
-   {
-    "prompt": "It is necessary to flee, since the city has been captured.",
-    "answer": "ἀνάγκη φεύγειν, τῆς πόλεως ἑαλωκυίας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀνάγκη",
-     "φεύγειν",
-     "τῆς",
-     "πόλεως",
-     "ἑαλωκυίας"
-    ]
-   },
-   {
-    "prompt": "The good general is ready to endure every toil for his soldiers.",
-    "answer": "ὁ ἀγαθὸς στρατηγὸς ἕτοιμος πάντα πόνον ὑπὲρ τῶν στρατιωτῶν ὑπομένειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἀγαθὸς",
-     "στρατηγὸς",
-     "ἕτοιμος",
-     "πάντα",
-     "πόνον",
-     "ὑπὲρ",
-     "τῶν",
-     "στρατιωτῶν",
-     "ὑπομένειν"
-    ]
-   },
-   {
-    "prompt": "It is not possible for the unjust to be truly happy.",
-    "answer": "οὐ δυνατὸν τοὺς ἀδίκους ἀληθῶς εὐδαίμονας εἶναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐ",
-     "δυνατὸν",
-     "τοὺς",
-     "ἀδίκους",
-     "ἀληθῶς",
-     "εὐδαίμονας",
-     "εἶναι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t12",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "Ignorance is the greatest of evils for the young.",
-    "answer": "μεγίστη τῶν κακῶν ἡ ἀμαθία τοῖς νέοις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μεγίστη",
-     "τῶν",
-     "κακῶν",
-     "ἡ",
-     "ἀμαθία",
-     "τοῖς",
-     "νέοις"
-    ]
-   },
-   {
-    "prompt": "The dog faithful to its master is worthy of much praise.",
-    "answer": "ὁ κύων ὁ τῷ δεσπότῃ πιστὸς πολλοῦ ἐπαίνου ἄξιος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "κύων",
-     "τῷ",
-     "δεσπότῃ",
-     "πιστὸς",
-     "πολλοῦ",
-     "ἐπαίνου",
-     "ἄξιος"
-    ]
-   },
-   {
-    "prompt": "The art of the seer is difficult, but useful to the city.",
-    "answer": "χαλεπὴ ἡ τοῦ μάντεως τέχνη, χρησίμη δὲ τῇ πόλει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "χαλεπὴ",
-     "ἡ",
-     "τοῦ",
-     "μάντεως",
-     "τέχνη",
-     "χρησίμη",
-     "δὲ",
-     "τῇ",
-     "πόλει"
-    ]
-   },
-   {
-    "prompt": "Whoever betrays his friends is a slave to money.",
-    "answer": "ὅστις τοὺς φίλους προδίδωσι, δοῦλος τῶν χρημάτων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅστις",
-     "τοὺς",
-     "φίλους",
-     "προδίδωσι",
-     "δοῦλος",
-     "τῶν",
-     "χρημάτων"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t13",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "Common to all men is the fear of death.",
-    "answer": "κοινὸς πᾶσιν ἀνθρώποις ὁ τοῦ θανάτου φόβος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "κοινὸς",
-     "πᾶσιν",
-     "ἀνθρώποις",
-     "ὁ",
-     "τοῦ",
-     "θανάτου",
-     "φόβος"
-    ]
-   },
-   {
-    "prompt": "The general is worthy of great honor, although he was defeated.",
-    "answer": "ἄξιος μεγάλης τιμῆς ὁ στρατηγός, καίπερ νικηθείς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄξιος",
-     "μεγάλης",
-     "τιμῆς",
-     "ὁ",
-     "στρατηγός",
-     "καίπερ",
-     "νικηθείς"
-    ]
-   },
-   {
-    "prompt": "It is necessary to guard against the ambush of the enemy.",
-    "answer": "ἀνάγκη φυλάττεσθαι τὴν τῶν πολεμίων ἐνέδραν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀνάγκη",
-     "φυλάττεσθαι",
-     "τὴν",
-     "τῶν",
-     "πολεμίων",
-     "ἐνέδραν"
-    ]
-   },
-   {
-    "prompt": "We must serve the gods who dwell in the city.",
-    "answer": "θεραπευτέον τοὺς θεοὺς τοὺς τὴν πόλιν ναίοντας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "θεραπευτέον",
-     "τοὺς",
-     "θεοὺς",
-     "τὴν",
-     "πόλιν",
-     "ναίοντας"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t14",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "None of your legends for me, but tell me the truth!",
-    "answer": "μή μοι μύθους, ἀλλὰ τὴν ἀλήθειαν λέγε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μή",
-     "μοι",
-     "μύθους",
-     "ἀλλὰ",
-     "τὴν",
-     "ἀλήθειαν",
-     "λέγε"
-    ]
-   },
-   {
-    "prompt": "He abandoned the city, and that too though he was a citizen.",
-    "answer": "ἀπέλιπε τὴν πόλιν, καὶ ταῦτα πολίτης ὤν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπέλιπε",
-     "τὴν",
-     "πόλιν",
-     "καὶ",
-     "ταῦτα",
-     "πολίτης",
-     "ὤν"
-    ]
-   },
-   {
-    "prompt": "What else did the tyrant do except enslave the citizens?",
-    "answer": "τί ἄλλο ὁ τύραννος ἢ τοὺς πολίτας κατεδουλώσατο;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τί",
-     "ἄλλο",
-     "ὁ",
-     "τύραννος",
-     "ἢ",
-     "τοὺς",
-     "πολίτας",
-     "κατεδουλώσατο"
-    ]
-   },
-   {
-    "prompt": "To what purpose are all these labors of yours?",
-    "answer": "ἵνα τί σοι πάντες οὗτοι οἱ πόνοι;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἵνα",
-     "τί",
-     "σοι",
-     "πάντες",
-     "οὗτοι",
-     "οἱ",
-     "πόνοι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t15",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "Now is the time to lead the army against the city.",
-    "answer": "ὥρα ἤδη τὸ στράτευμα ἐπὶ τὴν πόλιν ἄγειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὥρα",
-     "ἤδη",
-     "τὸ",
-     "στράτευμα",
-     "ἐπὶ",
-     "τὴν",
-     "πόλιν",
-     "ἄγειν"
-    ]
-   },
-   {
-    "prompt": "It is likely that the brave will overcome the cowardly.",
-    "answer": "εἰκὸς τοὺς ἀνδρείους τῶν δειλῶν κρατήσειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰκὸς",
-     "τοὺς",
-     "ἀνδρείους",
-     "τῶν",
-     "δειλῶν",
-     "κρατήσειν"
-    ]
-   },
-   {
-    "prompt": "We must free the prisoners before night comes on.",
-    "answer": "λυτέον τοὺς αἰχμαλώτους πρὶν νύκτα γενέσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "λυτέον",
-     "τοὺς",
-     "αἰχμαλώτους",
-     "πρὶν",
-     "νύκτα",
-     "γενέσθαι"
-    ]
-   },
-   {
-    "prompt": "It is right for the citizens to obey the laws.",
-    "answer": "δίκαιον τοὺς πολίτας τοῖς νόμοις πείθεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δίκαιον",
-     "τοὺς",
-     "πολίτας",
-     "τοῖς",
-     "νόμοις",
-     "πείθεσθαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-t16",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "The soldiers are ready to die on behalf of their fatherland.",
-    "answer": "ἕτοιμοι οἱ στρατιῶται ὑπὲρ τῆς πατρίδος ἀποθνῄσκειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἕτοιμοι",
-     "οἱ",
-     "στρατιῶται",
-     "ὑπὲρ",
-     "τῆς",
-     "πατρίδος",
-     "ἀποθνῄσκειν"
-    ]
-   },
-   {
-    "prompt": "The ships are gone, and gone too are our hopes.",
-    "answer": "φροῦδαι αἱ νῆες, φροῦδαι δὲ καὶ αἱ ἡμέτεραι ἐλπίδες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φροῦδαι",
-     "αἱ",
-     "νῆες",
-     "δὲ",
-     "καὶ",
-     "ἡμέτεραι",
-     "ἐλπίδες"
-    ]
-   },
-   {
-    "prompt": "Great is the power of the gods, and greater their anger.",
-    "answer": "μεγάλη ἡ τῶν θεῶν δύναμις, μείζων δὲ ἡ ὀργή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μεγάλη",
-     "ἡ",
-     "τῶν",
-     "θεῶν",
-     "δύναμις",
-     "μείζων",
-     "δὲ",
-     "ὀργή"
-    ]
-   },
-   {
-    "prompt": "Are you not a general, and yet you fear the enemy?",
-    "answer": "οὐ σὺ στρατηγός; καὶ ὅμως τοὺς πολεμίους φοβῇ;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐ",
-     "σὺ",
-     "στρατηγός",
-     "καὶ",
-     "ὅμως",
-     "τοὺς",
-     "πολεμίους",
-     "φοβῇ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-944-omission-of-the-verb-q1",
-  "sectionId": "sm-944-omission-of-the-verb",
-  "questions": [
-   {
-    "prompt": "Chance is common to all and the future cannot be scanned.",
-    "answer": "κοινὴ ἡ τύχη καὶ τὸ μέλλον ἀόρατον",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "κοινὴ",
-     "ἡ",
-     "τύχη",
-     "καὶ",
-     "τὸ",
-     "μέλλον",
-     "ἀόρατον"
-    ],
-    "source": {
-     "author": "Isocrates",
-     "work": "Orations",
-     "locus": "1.29"
-    }
-   },
-   {
-    "prompt": "The soul is ready to be a servant.",
-    "answer": "ἡ ψυχὴ δουλεύειν ἑτοίμη",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "ψυχὴ",
-     "δουλεύειν",
-     "ἑτοίμη"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Phaedrus",
-     "locus": "252a"
-    }
-   },
-   {
-    "prompt": "If anybody should ask whether it is better.",
-    "answer": "εἴ τις ἐπερωτῴη πότερον κρεῖττον",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴ",
-     "τις",
-     "ἐπερωτῴη",
-     "πότερον",
-     "κρεῖττον"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Memorabilia",
-     "locus": "1.1.9"
-    }
-   },
-   {
-    "prompt": "He made them more savage and that too towards himself.",
-    "answer": "ἀγριωτέρους αὐτοὺς ἀπέφηνε . . . καὶ ταῦτ᾽ εἰς αὑτόν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀγριωτέρους",
-     "αὐτοὺς",
-     "ἀπέφηνε",
-     "καὶ",
-     "ταῦτ",
-     "εἰς",
-     "αὑτόν"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Gorgias",
-     "locus": "516c"
-    }
-   }
-  ]
- }
+  }
 ]

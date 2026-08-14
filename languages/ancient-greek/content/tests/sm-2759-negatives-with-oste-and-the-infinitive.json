@@ -1,842 +1,842 @@
 [
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t1",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "They make every effort so as not to pay the penalty.",
-    "answer": "πάντα ποιοῦσιν ὥστε δίκην μὴ διδόναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πάντα",
-     "ποιοῦσιν",
-     "ὥστε",
-     "δίκην",
-     "μὴ",
-     "διδόναι"
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t1",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "They make every effort so as not to pay the penalty.",
+        "answer": "πάντα ποιοῦσιν ὥστε δίκην μὴ διδόναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πάντα",
+          "ποιοῦσιν",
+          "ὥστε",
+          "δίκην",
+          "μὴ",
+          "διδόναι"
+        ]
+      },
+      {
+        "prompt": "The wall was so high that the enemy could not climb over it.",
+        "answer": "τὸ τεῖχος οὕτως ὑψηλὸν ἦν ὥστε τοὺς πολεμίους μὴ ὑπερβαίνειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "τεῖχος",
+          "οὕτως",
+          "ὑψηλὸν",
+          "ἦν",
+          "ὥστε",
+          "τοὺς",
+          "πολεμίους",
+          "μὴ",
+          "ὑπερβαίνειν"
+        ]
+      },
+      {
+        "prompt": "The old man lives frugally so as not to depend on his kinsmen.",
+        "answer": "ὁ γέρων εὐτελῶς ζῇ ὥστε τῶν συγγενῶν μὴ δεῖσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "εὐτελῶς",
+          "ζῇ",
+          "ὥστε",
+          "τῶν",
+          "συγγενῶν",
+          "μὴ",
+          "δεῖσθαι"
+        ]
+      },
+      {
+        "prompt": "They guard the gates so that the citizens may not flee.",
+        "answer": "τὰς πύλας φυλάττουσιν ὥστε τοὺς πολίτας μὴ φεύγειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰς",
+          "πύλας",
+          "φυλάττουσιν",
+          "ὥστε",
+          "τοὺς",
+          "πολίτας",
+          "μὴ",
+          "φεύγειν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The wall was so high that the enemy could not climb over it.",
-    "answer": "τὸ τεῖχος οὕτως ὑψηλὸν ἦν ὥστε τοὺς πολεμίους μὴ ὑπερβαίνειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "τεῖχος",
-     "οὕτως",
-     "ὑψηλὸν",
-     "ἦν",
-     "ὥστε",
-     "τοὺς",
-     "πολεμίους",
-     "μὴ",
-     "ὑπερβαίνειν"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t2",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "The soldiers held back so as not to invade the country.",
+        "answer": "οἱ στρατιῶται ἀπείχοντο ὥστε μὴ εἰς τὴν χώραν ἐμβάλλειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "ἀπείχοντο",
+          "ὥστε",
+          "μὴ",
+          "εἰς",
+          "τὴν",
+          "χώραν",
+          "ἐμβάλλειν"
+        ]
+      },
+      {
+        "prompt": "The ravine prevented them from reaching the road.",
+        "answer": "ἡ φάραγξ αὐτοὺς εἶργεν ὥστε μὴ πρὸς τὴν ὁδὸν ἀφικέσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "φάραγξ",
+          "αὐτοὺς",
+          "εἶργεν",
+          "ὥστε",
+          "μὴ",
+          "πρὸς",
+          "τὴν",
+          "ὁδὸν",
+          "ἀφικέσθαι"
+        ]
+      },
+      {
+        "prompt": "The law hinders the young from doing wrong.",
+        "answer": "ὁ νόμος τοὺς νέους κωλύει ὥστε μὴ ἀδικεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "νόμος",
+          "τοὺς",
+          "νέους",
+          "κωλύει",
+          "ὥστε",
+          "μὴ",
+          "ἀδικεῖν"
+        ]
+      },
+      {
+        "prompt": "The storm kept the sailors from sailing out of the Piraeus.",
+        "answer": "ὁ χειμὼν τοὺς ναύτας ἐκώλυεν ὥστε μὴ ἐκ τοῦ Πειραιῶς ἐκπλεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "χειμὼν",
+          "τοὺς",
+          "ναύτας",
+          "ἐκώλυεν",
+          "ὥστε",
+          "μὴ",
+          "ἐκ",
+          "τοῦ",
+          "Πειραιῶς",
+          "ἐκπλεῖν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The old man lives frugally so as not to depend on his kinsmen.",
-    "answer": "ὁ γέρων εὐτελῶς ζῇ ὥστε τῶν συγγενῶν μὴ δεῖσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "εὐτελῶς",
-     "ζῇ",
-     "ὥστε",
-     "τῶν",
-     "συγγενῶν",
-     "μὴ",
-     "δεῖσθαι"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t3",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "He says he is so wise as not to fear death.",
+        "answer": "φησὶν οὕτω σοφὸς εἶναι ὥστε τὸν θάνατον οὐ φοβεῖσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φησὶν",
+          "οὕτω",
+          "σοφὸς",
+          "εἶναι",
+          "ὥστε",
+          "τὸν",
+          "θάνατον",
+          "οὐ",
+          "φοβεῖσθαι"
+        ]
+      },
+      {
+        "prompt": "I consider the man so just as never to lie.",
+        "answer": "τὸν ἄνδρα νομίζω οὕτω δίκαιον εἶναι ὥστε οὐδέποτε ψεύδεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸν",
+          "ἄνδρα",
+          "νομίζω",
+          "οὕτω",
+          "δίκαιον",
+          "εἶναι",
+          "ὥστε",
+          "οὐδέποτε",
+          "ψεύδεσθαι"
+        ]
+      },
+      {
+        "prompt": "He said the army was so strong as not to be defeated.",
+        "answer": "ἔφη τὸ στράτευμα οὕτως ἰσχυρὸν εἶναι ὥστε οὐ νικᾶσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔφη",
+          "τὸ",
+          "στράτευμα",
+          "οὕτως",
+          "ἰσχυρὸν",
+          "εἶναι",
+          "ὥστε",
+          "οὐ",
+          "νικᾶσθαι"
+        ]
+      },
+      {
+        "prompt": "He thinks himself so fortunate as to fear nothing.",
+        "answer": "ἑαυτὸν οὕτως εὐτυχῆ εἶναι νομίζει ὥστε οὐδὲν φοβεῖσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἑαυτὸν",
+          "οὕτως",
+          "εὐτυχῆ",
+          "εἶναι",
+          "νομίζει",
+          "ὥστε",
+          "οὐδὲν",
+          "φοβεῖσθαι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "They guard the gates so that the citizens may not flee.",
-    "answer": "τὰς πύλας φυλάττουσιν ὥστε τοὺς πολίτας μὴ φεύγειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰς",
-     "πύλας",
-     "φυλάττουσιν",
-     "ὥστε",
-     "τοὺς",
-     "πολίτας",
-     "μὴ",
-     "φεύγειν"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t4",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "Eurybiades will not be able to hold the fleet together so as to prevent it from being scattered.",
+        "answer": "ὁ Εὐρυβιάδης οὐ δυνήσεται τὸ ναυτικὸν κατέχειν ὥστε μὴ οὐ διασκεδασθῆναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "Εὐρυβιάδης",
+          "οὐ",
+          "δυνήσεται",
+          "τὸ",
+          "ναυτικὸν",
+          "κατέχειν",
+          "ὥστε",
+          "μὴ",
+          "διασκεδασθῆναι"
+        ]
+      },
+      {
+        "prompt": "No one will prevent us from telling the truth.",
+        "answer": "οὐδεὶς ἡμᾶς κωλύσει ὥστε μὴ οὐ τὰ ἀληθῆ λέγειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδεὶς",
+          "ἡμᾶς",
+          "κωλύσει",
+          "ὥστε",
+          "μὴ",
+          "οὐ",
+          "τὰ",
+          "ἀληθῆ",
+          "λέγειν"
+        ]
+      },
+      {
+        "prompt": "I shall suffer nothing so great as not to die nobly.",
+        "answer": "οὐδὲν πείσομαι τοσοῦτον ὥστε μὴ οὐ καλῶς ἀποθανεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδὲν",
+          "πείσομαι",
+          "τοσοῦτον",
+          "ὥστε",
+          "μὴ",
+          "οὐ",
+          "καλῶς",
+          "ἀποθανεῖν"
+        ]
+      },
+      {
+        "prompt": "Nothing is so terrible as to keep brave men from fighting.",
+        "answer": "οὐδὲν οὕτω δεινόν ἐστιν ὥστε τοὺς ἀνδρείους μὴ οὐ μάχεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδὲν",
+          "οὕτω",
+          "δεινόν",
+          "ἐστιν",
+          "ὥστε",
+          "τοὺς",
+          "ἀνδρείους",
+          "μὴ",
+          "οὐ",
+          "μάχεσθαι"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t2",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "The soldiers held back so as not to invade the country.",
-    "answer": "οἱ στρατιῶται ἀπείχοντο ὥστε μὴ εἰς τὴν χώραν ἐμβάλλειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "ἀπείχοντο",
-     "ὥστε",
-     "μὴ",
-     "εἰς",
-     "τὴν",
-     "χώραν",
-     "ἐμβάλλειν"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t5",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "I have conceived such a desire to hear that I will not fall behind you.",
+        "answer": "τοσαύτην ἐπιθυμίαν ἔχω ἀκοῦσαι ὥστε οὐ μή σου ἀπολειφθῶ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοσαύτην",
+          "ἐπιθυμίαν",
+          "ἔχω",
+          "ἀκοῦσαι",
+          "ὥστε",
+          "οὐ",
+          "μή",
+          "σου",
+          "ἀπολειφθῶ"
+        ]
+      },
+      {
+        "prompt": "He is so trustworthy that he will surely never betray his friends.",
+        "answer": "οὕτω πιστός ἐστιν ὥστε τοὺς φίλους οὐ μὴ προδῷ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτω",
+          "πιστός",
+          "ἐστιν",
+          "ὥστε",
+          "τοὺς",
+          "φίλους",
+          "οὐ",
+          "μὴ",
+          "προδῷ"
+        ]
+      },
+      {
+        "prompt": "The city is so well fortified that the enemy will certainly never take it.",
+        "answer": "ἡ πόλις οὕτως εὖ τετείχισται ὥστε οἱ πολέμιοι αὐτὴν οὐ μὴ ἕλωσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "πόλις",
+          "οὕτως",
+          "εὖ",
+          "τετείχισται",
+          "ὥστε",
+          "οἱ",
+          "πολέμιοι",
+          "αὐτὴν",
+          "οὐ",
+          "μὴ",
+          "ἕλωσιν"
+        ]
+      },
+      {
+        "prompt": "I so trust the gods that I will surely never fear what is to come.",
+        "answer": "οὕτω τοῖς θεοῖς πιστεύω ὥστε τὰ μέλλοντα οὐ μὴ φοβηθῶ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτω",
+          "τοῖς",
+          "θεοῖς",
+          "πιστεύω",
+          "ὥστε",
+          "τὰ",
+          "μέλλοντα",
+          "οὐ",
+          "μὴ",
+          "φοβηθῶ"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The ravine prevented them from reaching the road.",
-    "answer": "ἡ φάραγξ αὐτοὺς εἶργεν ὥστε μὴ πρὸς τὴν ὁδὸν ἀφικέσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "φάραγξ",
-     "αὐτοὺς",
-     "εἶργεν",
-     "ὥστε",
-     "μὴ",
-     "πρὸς",
-     "τὴν",
-     "ὁδὸν",
-     "ἀφικέσθαι"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t6",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "The enemy having fled, we settled our affairs so as not to fight.",
+        "answer": "τῶν πολεμίων φυγόντων οὕτω τὰ πράγματα διεθέμεθα ὥστε μὴ μάχεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῶν",
+          "πολεμίων",
+          "φυγόντων",
+          "οὕτω",
+          "τὰ",
+          "πράγματα",
+          "διεθέμεθα",
+          "ὥστε",
+          "μὴ",
+          "μάχεσθαι"
+        ]
+      },
+      {
+        "prompt": "The doctor treats the sick so as not to harm them.",
+        "answer": "ὁ ἰατρὸς τοὺς κάμνοντας οὕτω θεραπεύει ὥστε μὴ βλάπτειν αὐτούς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἰατρὸς",
+          "τοὺς",
+          "κάμνοντας",
+          "οὕτω",
+          "θεραπεύει",
+          "ὥστε",
+          "μὴ",
+          "βλάπτειν",
+          "αὐτούς"
+        ]
+      },
+      {
+        "prompt": "Shame keeps the good from doing wrong.",
+        "answer": "ἡ αἰδὼς τοὺς ἀγαθοὺς εἴργει ὥστε μὴ ἁμαρτάνειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "αἰδὼς",
+          "τοὺς",
+          "ἀγαθοὺς",
+          "εἴργει",
+          "ὥστε",
+          "μὴ",
+          "ἁμαρτάνειν"
+        ]
+      },
+      {
+        "prompt": "He claims to be so brave as never to flee.",
+        "answer": "φησὶν οὕτως ἀνδρεῖος εἶναι ὥστε οὐδέποτε φεύγειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φησὶν",
+          "οὕτως",
+          "ἀνδρεῖος",
+          "εἶναι",
+          "ὥστε",
+          "οὐδέποτε",
+          "φεύγειν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The law hinders the young from doing wrong.",
-    "answer": "ὁ νόμος τοὺς νέους κωλύει ὥστε μὴ ἀδικεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "νόμος",
-     "τοὺς",
-     "νέους",
-     "κωλύει",
-     "ὥστε",
-     "μὴ",
-     "ἀδικεῖν"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t7",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "The general did everything so as not to lose the city.",
+        "answer": "πάντα ἐποίει ὁ στρατηγὸς ὥστε τὴν πόλιν μὴ ἀπολέσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πάντα",
+          "ἐποίει",
+          "ὁ",
+          "στρατηγὸς",
+          "ὥστε",
+          "τὴν",
+          "πόλιν",
+          "μὴ",
+          "ἀπολέσαι"
+        ]
+      },
+      {
+        "prompt": "The citizens held back so as not to break the treaty.",
+        "answer": "οἱ πολῖται ἀπείχοντο ὥστε μὴ λύειν τὰς σπονδάς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πολῖται",
+          "ἀπείχοντο",
+          "ὥστε",
+          "μὴ",
+          "λύειν",
+          "τὰς",
+          "σπονδάς"
+        ]
+      },
+      {
+        "prompt": "He said he was so brave as not to flee from the enemy.",
+        "answer": "ἔφη οὕτως ἀνδρεῖος εἶναι ὥστε οὐ φεύγειν τοὺς πολεμίους.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔφη",
+          "οὕτως",
+          "ἀνδρεῖος",
+          "εἶναι",
+          "ὥστε",
+          "οὐ",
+          "φεύγειν",
+          "τοὺς",
+          "πολεμίους"
+        ]
+      },
+      {
+        "prompt": "Nothing will prevent the wall from being torn down.",
+        "answer": "οὐδὲν κωλύσει τὸ τεῖχος ὥστε μὴ οὐ καθαιρεθῆναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδὲν",
+          "κωλύσει",
+          "τὸ",
+          "τεῖχος",
+          "ὥστε",
+          "μὴ",
+          "οὐ",
+          "καθαιρεθῆναι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The storm kept the sailors from sailing out of the Piraeus.",
-    "answer": "ὁ χειμὼν τοὺς ναύτας ἐκώλυεν ὥστε μὴ ἐκ τοῦ Πειραιῶς ἐκπλεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "χειμὼν",
-     "τοὺς",
-     "ναύτας",
-     "ἐκώλυεν",
-     "ὥστε",
-     "μὴ",
-     "ἐκ",
-     "τοῦ",
-     "Πειραιῶς",
-     "ἐκπλεῖν"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t8",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "They plan everything so as not to be caught by the guards.",
+        "answer": "πάντα βουλεύονται ὥστε ὑπὸ τῶν φυλάκων μὴ ἁλῶναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πάντα",
+          "βουλεύονται",
+          "ὥστε",
+          "ὑπὸ",
+          "τῶν",
+          "φυλάκων",
+          "μὴ",
+          "ἁλῶναι"
+        ]
+      },
+      {
+        "prompt": "The river prevented the army from crossing.",
+        "answer": "ὁ ποταμὸς τὸ στράτευμα εἶργεν ὥστε μὴ διαβαίνειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ποταμὸς",
+          "τὸ",
+          "στράτευμα",
+          "εἶργεν",
+          "ὥστε",
+          "μὴ",
+          "διαβαίνειν"
+        ]
+      },
+      {
+        "prompt": "So great is my longing that I shall not betray my friends.",
+        "answer": "τοσοῦτός ἐστιν ὁ πόθος ὥστε οὐ μὴ τοὺς φίλους προδῶ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοσοῦτός",
+          "ἐστιν",
+          "ὁ",
+          "πόθος",
+          "ὥστε",
+          "οὐ",
+          "μὴ",
+          "τοὺς",
+          "φίλους",
+          "προδῶ"
+        ]
+      },
+      {
+        "prompt": "He is not so foolish as not to see the danger.",
+        "answer": "οὐχ οὕτως ἀνόητός ἐστιν ὥστε μὴ οὐ τὸν κίνδυνον ὁρᾶν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐχ",
+          "οὕτως",
+          "ἀνόητός",
+          "ἐστιν",
+          "ὥστε",
+          "μὴ",
+          "οὐ",
+          "τὸν",
+          "κίνδυνον",
+          "ὁρᾶν"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t3",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "He says he is so wise as not to fear death.",
-    "answer": "φησὶν οὕτω σοφὸς εἶναι ὥστε τὸν θάνατον οὐ φοβεῖσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φησὶν",
-     "οὕτω",
-     "σοφὸς",
-     "εἶναι",
-     "ὥστε",
-     "τὸν",
-     "θάνατον",
-     "οὐ",
-     "φοβεῖσθαι"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t9",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "The Athenians endured everything so as not to become slaves.",
+        "answer": "οἱ Ἀθηναῖοι πάντα ὑπέμενον ὥστε μὴ δοῦλοι γενέσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "Ἀθηναῖοι",
+          "πάντα",
+          "ὑπέμενον",
+          "ὥστε",
+          "μὴ",
+          "δοῦλοι",
+          "γενέσθαι"
+        ]
+      },
+      {
+        "prompt": "Fear held back the soldiers from advancing.",
+        "answer": "ὁ φόβος τοὺς στρατιώτας κατεῖχεν ὥστε μὴ προϊέναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "φόβος",
+          "τοὺς",
+          "στρατιώτας",
+          "κατεῖχεν",
+          "ὥστε",
+          "μὴ",
+          "προϊέναι"
+        ]
+      },
+      {
+        "prompt": "He thinks he is so clever as not to be deceived.",
+        "answer": "οἴεται οὕτω σοφὸς εἶναι ὥστε οὐκ ἐξαπατᾶσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἴεται",
+          "οὕτω",
+          "σοφὸς",
+          "εἶναι",
+          "ὥστε",
+          "οὐκ",
+          "ἐξαπατᾶσθαι"
+        ]
+      },
+      {
+        "prompt": "No one could prevent the ships from sailing away.",
+        "answer": "οὐδεὶς ἐδύνατο τὰς ναῦς κωλῦσαι ὥστε μὴ οὐκ ἀποπλεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδεὶς",
+          "ἐδύνατο",
+          "τὰς",
+          "ναῦς",
+          "κωλῦσαι",
+          "ὥστε",
+          "μὴ",
+          "οὐκ",
+          "ἀποπλεῖν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "I consider the man so just as never to lie.",
-    "answer": "τὸν ἄνδρα νομίζω οὕτω δίκαιον εἶναι ὥστε οὐδέποτε ψεύδεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸν",
-     "ἄνδρα",
-     "νομίζω",
-     "οὕτω",
-     "δίκαιον",
-     "εἶναι",
-     "ὥστε",
-     "οὐδέποτε",
-     "ψεύδεσθαι"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t10",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "The women hid everything so as not to be discovered.",
+        "answer": "αἱ γυναῖκες πάντα ἔκρυπτον ὥστε μὴ φανῆναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "γυναῖκες",
+          "πάντα",
+          "ἔκρυπτον",
+          "ὥστε",
+          "μὴ",
+          "φανῆναι"
+        ]
+      },
+      {
+        "prompt": "The storm prevented the sailors from putting to sea.",
+        "answer": "ὁ χειμὼν τοὺς ναύτας ἐκώλυεν ὥστε μὴ ἀνάγεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "χειμὼν",
+          "τοὺς",
+          "ναύτας",
+          "ἐκώλυεν",
+          "ὥστε",
+          "μὴ",
+          "ἀνάγεσθαι"
+        ]
+      },
+      {
+        "prompt": "The messenger reported that the king was so cautious as not to trust the allies.",
+        "answer": "ὁ ἄγγελος ἀπήγγειλεν τὸν βασιλέα οὕτως εὐλαβῆ εἶναι ὥστε οὐ πιστεύειν τοῖς συμμάχοις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἄγγελος",
+          "ἀπήγγειλεν",
+          "τὸν",
+          "βασιλέα",
+          "οὕτως",
+          "εὐλαβῆ",
+          "εἶναι",
+          "ὥστε",
+          "οὐ",
+          "πιστεύειν",
+          "τοῖς",
+          "συμμάχοις"
+        ]
+      },
+      {
+        "prompt": "So confident am I of the victory that I shall not yield to the enemy.",
+        "answer": "οὕτω θαρρῶ περὶ τῆς νίκης ὥστε οὐ μὴ τοῖς πολεμίοις εἴξω.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτω",
+          "θαρρῶ",
+          "περὶ",
+          "τῆς",
+          "νίκης",
+          "ὥστε",
+          "οὐ",
+          "μὴ",
+          "τοῖς",
+          "πολεμίοις",
+          "εἴξω"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "He said the army was so strong as not to be defeated.",
-    "answer": "ἔφη τὸ στράτευμα οὕτως ἰσχυρὸν εἶναι ὥστε οὐ νικᾶσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔφη",
-     "τὸ",
-     "στράτευμα",
-     "οὕτως",
-     "ἰσχυρὸν",
-     "εἶναι",
-     "ὥστε",
-     "οὐ",
-     "νικᾶσθαι"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-t11",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "They took every precaution so as not to betray the city.",
+        "answer": "πᾶσαν πρόνοιαν ἐποιοῦντο ὥστε τὴν πόλιν μὴ προδοῦναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πᾶσαν",
+          "πρόνοιαν",
+          "ἐποιοῦντο",
+          "ὥστε",
+          "τὴν",
+          "πόλιν",
+          "μὴ",
+          "προδοῦναι"
+        ]
+      },
+      {
+        "prompt": "The law restrains the citizens from doing wrong.",
+        "answer": "ὁ νόμος τοὺς πολίτας εἴργει ὥστε μὴ ἀδικεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "νόμος",
+          "τοὺς",
+          "πολίτας",
+          "εἴργει",
+          "ὥστε",
+          "μὴ",
+          "ἀδικεῖν"
+        ]
+      },
+      {
+        "prompt": "He believed he was so strong as not to be conquered in battle.",
+        "answer": "ἐνόμιζεν οὕτως ἰσχυρὸς εἶναι ὥστε ἐν μάχῃ οὐ νικᾶσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐνόμιζεν",
+          "οὕτως",
+          "ἰσχυρὸς",
+          "εἶναι",
+          "ὥστε",
+          "ἐν",
+          "μάχῃ",
+          "οὐ",
+          "νικᾶσθαι"
+        ]
+      },
+      {
+        "prompt": "Not even the gods could prevent the man from dying.",
+        "answer": "οὐδὲ οἱ θεοὶ τὸν ἄνδρα κατασχεῖν ἐδύναντο ὥστε μὴ οὐκ ἀποθανεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδὲ",
+          "οἱ",
+          "θεοὶ",
+          "τὸν",
+          "ἄνδρα",
+          "κατασχεῖν",
+          "ἐδύναντο",
+          "ὥστε",
+          "μὴ",
+          "οὐκ",
+          "ἀποθανεῖν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "He thinks himself so fortunate as to fear nothing.",
-    "answer": "ἑαυτὸν οὕτως εὐτυχῆ εἶναι νομίζει ὥστε οὐδὲν φοβεῖσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἑαυτὸν",
-     "οὕτως",
-     "εὐτυχῆ",
-     "εἶναι",
-     "νομίζει",
-     "ὥστε",
-     "οὐδὲν",
-     "φοβεῖσθαι"
+  },
+  {
+    "id": "sm-2759-negatives-with-oste-and-the-infinitive-q1",
+    "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
+    "questions": [
+      {
+        "prompt": "Refraining from attacking.",
+        "answer": "ἀπεχόμενοι ὥστε μὴ ἐμβάλλειν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπεχόμενοι",
+          "ὥστε",
+          "μὴ",
+          "ἐμβάλλειν"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "1.49"
+        }
+      },
+      {
+        "prompt": "The ravine in front of the walls prevented them from reaching the short cut to the Pellenians.",
+        "answer": "ὥστε γὰρ τὴν σύντομον πρὸς τοὺς Πελληνέας ἀφικέσθαι ἡ πρὸ τοῦ τείχους φάραγξ εἶργε",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὥστε",
+          "γὰρ",
+          "τὴν",
+          "σύντομον",
+          "πρὸς",
+          "τοὺς",
+          "Πελληνέας",
+          "ἀφικέσθαι",
+          "ἡ",
+          "πρὸ",
+          "τοῦ",
+          "τείχους",
+          "φάραγξ",
+          "εἶργε"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Hellenica",
+          "locus": "7.2.13"
+        }
+      },
+      {
+        "prompt": "Neither will Eurybiades be able to prevent the fleet from being scattered.",
+        "answer": "οὔτε σφέας Εὐρυβιάδης κατέχειν δυνήσεται ὥστε μὴ οὐ διασκεδασθῆναι τὴν στρατιήν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὔτε",
+          "σφέας",
+          "Εὐρυβιάδης",
+          "κατέχειν",
+          "δυνήσεται",
+          "ὥστε",
+          "μὴ",
+          "οὐ",
+          "διασκεδασθῆναι",
+          "τὴν",
+          "στρατιήν"
+        ],
+        "source": {
+          "author": "Herodotus",
+          "work": "Histories",
+          "locus": "8.57"
+        }
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t4",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "Eurybiades will not be able to hold the fleet together so as to prevent it from being scattered.",
-    "answer": "ὁ Εὐρυβιάδης οὐ δυνήσεται τὸ ναυτικὸν κατέχειν ὥστε μὴ οὐ διασκεδασθῆναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "Εὐρυβιάδης",
-     "οὐ",
-     "δυνήσεται",
-     "τὸ",
-     "ναυτικὸν",
-     "κατέχειν",
-     "ὥστε",
-     "μὴ",
-     "διασκεδασθῆναι"
-    ]
-   },
-   {
-    "prompt": "No one will prevent us from telling the truth.",
-    "answer": "οὐδεὶς ἡμᾶς κωλύσει ὥστε μὴ οὐ τὰ ἀληθῆ λέγειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδεὶς",
-     "ἡμᾶς",
-     "κωλύσει",
-     "ὥστε",
-     "μὴ",
-     "οὐ",
-     "τὰ",
-     "ἀληθῆ",
-     "λέγειν"
-    ]
-   },
-   {
-    "prompt": "I shall suffer nothing so great as not to die nobly.",
-    "answer": "οὐδὲν πείσομαι τοσοῦτον ὥστε μὴ οὐ καλῶς ἀποθανεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδὲν",
-     "πείσομαι",
-     "τοσοῦτον",
-     "ὥστε",
-     "μὴ",
-     "οὐ",
-     "καλῶς",
-     "ἀποθανεῖν"
-    ]
-   },
-   {
-    "prompt": "Nothing is so terrible as to keep brave men from fighting.",
-    "answer": "οὐδὲν οὕτω δεινόν ἐστιν ὥστε τοὺς ἀνδρείους μὴ οὐ μάχεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδὲν",
-     "οὕτω",
-     "δεινόν",
-     "ἐστιν",
-     "ὥστε",
-     "τοὺς",
-     "ἀνδρείους",
-     "μὴ",
-     "οὐ",
-     "μάχεσθαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t5",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "I have conceived such a desire to hear that I will not fall behind you.",
-    "answer": "τοσαύτην ἐπιθυμίαν ἔχω ἀκοῦσαι ὥστε οὐ μή σου ἀπολειφθῶ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοσαύτην",
-     "ἐπιθυμίαν",
-     "ἔχω",
-     "ἀκοῦσαι",
-     "ὥστε",
-     "οὐ",
-     "μή",
-     "σου",
-     "ἀπολειφθῶ"
-    ]
-   },
-   {
-    "prompt": "He is so trustworthy that he will surely never betray his friends.",
-    "answer": "οὕτω πιστός ἐστιν ὥστε τοὺς φίλους οὐ μὴ προδῷ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτω",
-     "πιστός",
-     "ἐστιν",
-     "ὥστε",
-     "τοὺς",
-     "φίλους",
-     "οὐ",
-     "μὴ",
-     "προδῷ"
-    ]
-   },
-   {
-    "prompt": "The city is so well fortified that the enemy will certainly never take it.",
-    "answer": "ἡ πόλις οὕτως εὖ τετείχισται ὥστε οἱ πολέμιοι αὐτὴν οὐ μὴ ἕλωσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "πόλις",
-     "οὕτως",
-     "εὖ",
-     "τετείχισται",
-     "ὥστε",
-     "οἱ",
-     "πολέμιοι",
-     "αὐτὴν",
-     "οὐ",
-     "μὴ",
-     "ἕλωσιν"
-    ]
-   },
-   {
-    "prompt": "I so trust the gods that I will surely never fear what is to come.",
-    "answer": "οὕτω τοῖς θεοῖς πιστεύω ὥστε τὰ μέλλοντα οὐ μὴ φοβηθῶ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτω",
-     "τοῖς",
-     "θεοῖς",
-     "πιστεύω",
-     "ὥστε",
-     "τὰ",
-     "μέλλοντα",
-     "οὐ",
-     "μὴ",
-     "φοβηθῶ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t6",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "The enemy having fled, we settled our affairs so as not to fight.",
-    "answer": "τῶν πολεμίων φυγόντων οὕτω τὰ πράγματα διεθέμεθα ὥστε μὴ μάχεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῶν",
-     "πολεμίων",
-     "φυγόντων",
-     "οὕτω",
-     "τὰ",
-     "πράγματα",
-     "διεθέμεθα",
-     "ὥστε",
-     "μὴ",
-     "μάχεσθαι"
-    ]
-   },
-   {
-    "prompt": "The doctor treats the sick so as not to harm them.",
-    "answer": "ὁ ἰατρὸς τοὺς κάμνοντας οὕτω θεραπεύει ὥστε μὴ βλάπτειν αὐτούς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἰατρὸς",
-     "τοὺς",
-     "κάμνοντας",
-     "οὕτω",
-     "θεραπεύει",
-     "ὥστε",
-     "μὴ",
-     "βλάπτειν",
-     "αὐτούς"
-    ]
-   },
-   {
-    "prompt": "Shame keeps the good from doing wrong.",
-    "answer": "ἡ αἰδὼς τοὺς ἀγαθοὺς εἴργει ὥστε μὴ ἁμαρτάνειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "αἰδὼς",
-     "τοὺς",
-     "ἀγαθοὺς",
-     "εἴργει",
-     "ὥστε",
-     "μὴ",
-     "ἁμαρτάνειν"
-    ]
-   },
-   {
-    "prompt": "He claims to be so brave as never to flee.",
-    "answer": "φησὶν οὕτως ἀνδρεῖος εἶναι ὥστε οὐδέποτε φεύγειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φησὶν",
-     "οὕτως",
-     "ἀνδρεῖος",
-     "εἶναι",
-     "ὥστε",
-     "οὐδέποτε",
-     "φεύγειν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t7",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "The general did everything so as not to lose the city.",
-    "answer": "πάντα ἐποίει ὁ στρατηγὸς ὥστε τὴν πόλιν μὴ ἀπολέσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πάντα",
-     "ἐποίει",
-     "ὁ",
-     "στρατηγὸς",
-     "ὥστε",
-     "τὴν",
-     "πόλιν",
-     "μὴ",
-     "ἀπολέσαι"
-    ]
-   },
-   {
-    "prompt": "The citizens held back so as not to break the treaty.",
-    "answer": "οἱ πολῖται ἀπείχοντο ὥστε μὴ λύειν τὰς σπονδάς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πολῖται",
-     "ἀπείχοντο",
-     "ὥστε",
-     "μὴ",
-     "λύειν",
-     "τὰς",
-     "σπονδάς"
-    ]
-   },
-   {
-    "prompt": "He said he was so brave as not to flee from the enemy.",
-    "answer": "ἔφη οὕτως ἀνδρεῖος εἶναι ὥστε οὐ φεύγειν τοὺς πολεμίους.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔφη",
-     "οὕτως",
-     "ἀνδρεῖος",
-     "εἶναι",
-     "ὥστε",
-     "οὐ",
-     "φεύγειν",
-     "τοὺς",
-     "πολεμίους"
-    ]
-   },
-   {
-    "prompt": "Nothing will prevent the wall from being torn down.",
-    "answer": "οὐδὲν κωλύσει τὸ τεῖχος ὥστε μὴ οὐ καθαιρεθῆναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδὲν",
-     "κωλύσει",
-     "τὸ",
-     "τεῖχος",
-     "ὥστε",
-     "μὴ",
-     "οὐ",
-     "καθαιρεθῆναι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t8",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "They plan everything so as not to be caught by the guards.",
-    "answer": "πάντα βουλεύονται ὥστε ὑπὸ τῶν φυλάκων μὴ ἁλῶναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πάντα",
-     "βουλεύονται",
-     "ὥστε",
-     "ὑπὸ",
-     "τῶν",
-     "φυλάκων",
-     "μὴ",
-     "ἁλῶναι"
-    ]
-   },
-   {
-    "prompt": "The river prevented the army from crossing.",
-    "answer": "ὁ ποταμὸς τὸ στράτευμα εἶργεν ὥστε μὴ διαβαίνειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ποταμὸς",
-     "τὸ",
-     "στράτευμα",
-     "εἶργεν",
-     "ὥστε",
-     "μὴ",
-     "διαβαίνειν"
-    ]
-   },
-   {
-    "prompt": "So great is my longing that I shall not betray my friends.",
-    "answer": "τοσοῦτός ἐστιν ὁ πόθος ὥστε οὐ μὴ τοὺς φίλους προδῶ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοσοῦτός",
-     "ἐστιν",
-     "ὁ",
-     "πόθος",
-     "ὥστε",
-     "οὐ",
-     "μὴ",
-     "τοὺς",
-     "φίλους",
-     "προδῶ"
-    ]
-   },
-   {
-    "prompt": "He is not so foolish as not to see the danger.",
-    "answer": "οὐχ οὕτως ἀνόητός ἐστιν ὥστε μὴ οὐ τὸν κίνδυνον ὁρᾶν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐχ",
-     "οὕτως",
-     "ἀνόητός",
-     "ἐστιν",
-     "ὥστε",
-     "μὴ",
-     "οὐ",
-     "τὸν",
-     "κίνδυνον",
-     "ὁρᾶν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t9",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "The Athenians endured everything so as not to become slaves.",
-    "answer": "οἱ Ἀθηναῖοι πάντα ὑπέμενον ὥστε μὴ δοῦλοι γενέσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "Ἀθηναῖοι",
-     "πάντα",
-     "ὑπέμενον",
-     "ὥστε",
-     "μὴ",
-     "δοῦλοι",
-     "γενέσθαι"
-    ]
-   },
-   {
-    "prompt": "Fear held back the soldiers from advancing.",
-    "answer": "ὁ φόβος τοὺς στρατιώτας κατεῖχεν ὥστε μὴ προϊέναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "φόβος",
-     "τοὺς",
-     "στρατιώτας",
-     "κατεῖχεν",
-     "ὥστε",
-     "μὴ",
-     "προϊέναι"
-    ]
-   },
-   {
-    "prompt": "He thinks he is so clever as not to be deceived.",
-    "answer": "οἴεται οὕτω σοφὸς εἶναι ὥστε οὐκ ἐξαπατᾶσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἴεται",
-     "οὕτω",
-     "σοφὸς",
-     "εἶναι",
-     "ὥστε",
-     "οὐκ",
-     "ἐξαπατᾶσθαι"
-    ]
-   },
-   {
-    "prompt": "No one could prevent the ships from sailing away.",
-    "answer": "οὐδεὶς ἐδύνατο τὰς ναῦς κωλῦσαι ὥστε μὴ οὐκ ἀποπλεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδεὶς",
-     "ἐδύνατο",
-     "τὰς",
-     "ναῦς",
-     "κωλῦσαι",
-     "ὥστε",
-     "μὴ",
-     "οὐκ",
-     "ἀποπλεῖν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t10",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "The women hid everything so as not to be discovered.",
-    "answer": "αἱ γυναῖκες πάντα ἔκρυπτον ὥστε μὴ φανῆναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "γυναῖκες",
-     "πάντα",
-     "ἔκρυπτον",
-     "ὥστε",
-     "μὴ",
-     "φανῆναι"
-    ]
-   },
-   {
-    "prompt": "The storm prevented the sailors from putting to sea.",
-    "answer": "ὁ χειμὼν τοὺς ναύτας ἐκώλυεν ὥστε μὴ ἀνάγεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "χειμὼν",
-     "τοὺς",
-     "ναύτας",
-     "ἐκώλυεν",
-     "ὥστε",
-     "μὴ",
-     "ἀνάγεσθαι"
-    ]
-   },
-   {
-    "prompt": "The messenger reported that the king was so cautious as not to trust the allies.",
-    "answer": "ὁ ἄγγελος ἀπήγγειλεν τὸν βασιλέα οὕτως εὐλαβῆ εἶναι ὥστε οὐ πιστεύειν τοῖς συμμάχοις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἄγγελος",
-     "ἀπήγγειλεν",
-     "τὸν",
-     "βασιλέα",
-     "οὕτως",
-     "εὐλαβῆ",
-     "εἶναι",
-     "ὥστε",
-     "οὐ",
-     "πιστεύειν",
-     "τοῖς",
-     "συμμάχοις"
-    ]
-   },
-   {
-    "prompt": "So confident am I of the victory that I shall not yield to the enemy.",
-    "answer": "οὕτω θαρρῶ περὶ τῆς νίκης ὥστε οὐ μὴ τοῖς πολεμίοις εἴξω.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτω",
-     "θαρρῶ",
-     "περὶ",
-     "τῆς",
-     "νίκης",
-     "ὥστε",
-     "οὐ",
-     "μὴ",
-     "τοῖς",
-     "πολεμίοις",
-     "εἴξω"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-t11",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "They took every precaution so as not to betray the city.",
-    "answer": "πᾶσαν πρόνοιαν ἐποιοῦντο ὥστε τὴν πόλιν μὴ προδοῦναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πᾶσαν",
-     "πρόνοιαν",
-     "ἐποιοῦντο",
-     "ὥστε",
-     "τὴν",
-     "πόλιν",
-     "μὴ",
-     "προδοῦναι"
-    ]
-   },
-   {
-    "prompt": "The law restrains the citizens from doing wrong.",
-    "answer": "ὁ νόμος τοὺς πολίτας εἴργει ὥστε μὴ ἀδικεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "νόμος",
-     "τοὺς",
-     "πολίτας",
-     "εἴργει",
-     "ὥστε",
-     "μὴ",
-     "ἀδικεῖν"
-    ]
-   },
-   {
-    "prompt": "He believed he was so strong as not to be conquered in battle.",
-    "answer": "ἐνόμιζεν οὕτως ἰσχυρὸς εἶναι ὥστε ἐν μάχῃ οὐ νικᾶσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐνόμιζεν",
-     "οὕτως",
-     "ἰσχυρὸς",
-     "εἶναι",
-     "ὥστε",
-     "ἐν",
-     "μάχῃ",
-     "οὐ",
-     "νικᾶσθαι"
-    ]
-   },
-   {
-    "prompt": "Not even the gods could prevent the man from dying.",
-    "answer": "οὐδὲ οἱ θεοὶ τὸν ἄνδρα κατασχεῖν ἐδύναντο ὥστε μὴ οὐκ ἀποθανεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδὲ",
-     "οἱ",
-     "θεοὶ",
-     "τὸν",
-     "ἄνδρα",
-     "κατασχεῖν",
-     "ἐδύναντο",
-     "ὥστε",
-     "μὴ",
-     "οὐκ",
-     "ἀποθανεῖν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2759-negatives-with-oste-and-the-infinitive-q1",
-  "sectionId": "sm-2759-negatives-with-oste-and-the-infinitive",
-  "questions": [
-   {
-    "prompt": "Refraining from attacking.",
-    "answer": "ἀπεχόμενοι ὥστε μὴ ἐμβάλλειν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπεχόμενοι",
-     "ὥστε",
-     "μὴ",
-     "ἐμβάλλειν"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "1.49"
-    }
-   },
-   {
-    "prompt": "The ravine in front of the walls prevented them from reaching the short cut to the Pellenians.",
-    "answer": "ὥστε γὰρ τὴν σύντομον πρὸς τοὺς Πελληνέας ἀφικέσθαι ἡ πρὸ τοῦ τείχους φάραγξ εἶργε",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὥστε",
-     "γὰρ",
-     "τὴν",
-     "σύντομον",
-     "πρὸς",
-     "τοὺς",
-     "Πελληνέας",
-     "ἀφικέσθαι",
-     "ἡ",
-     "πρὸ",
-     "τοῦ",
-     "τείχους",
-     "φάραγξ",
-     "εἶργε"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Hellenica",
-     "locus": "7.2.13"
-    }
-   },
-   {
-    "prompt": "Neither will Eurybiades be able to prevent the fleet from being scattered.",
-    "answer": "οὔτε σφέας Εὐρυβιάδης κατέχειν δυνήσεται . . . ὥστε μὴ οὐ διασκεδασθῆναι τὴν στρατιήν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὔτε",
-     "σφέας",
-     "Εὐρυβιάδης",
-     "κατέχειν",
-     "δυνήσεται",
-     "ὥστε",
-     "μὴ",
-     "οὐ",
-     "διασκεδασθῆναι",
-     "τὴν",
-     "στρατιήν"
-    ],
-    "source": {
-     "author": "Herodotus",
-     "work": "Histories",
-     "locus": "8.57"
-    }
-   }
-  ]
- }
+  }
 ]

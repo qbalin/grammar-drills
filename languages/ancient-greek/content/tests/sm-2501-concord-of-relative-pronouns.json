@@ -1,1238 +1,1238 @@
 [
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t1",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "This is the woman whom the soldiers were seeking in the marketplace.",
-    "answer": "αὕτη ἐστὶν ἡ γυνὴ ἣν οἱ στρατιῶται ἐν τῇ ἀγορᾷ ἐζήτουν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αὕτη",
-     "ἐστὶν",
-     "ἡ",
-     "γυνὴ",
-     "ἣν",
-     "οἱ",
-     "στρατιῶται",
-     "ἐν",
-     "τῇ",
-     "ἀγορᾷ",
-     "ἐζήτουν"
-    ]
-   },
-   {
-    "prompt": "The general, taking the cavalry which he had, hastened toward the river.",
-    "answer": "ὁ στρατηγὸς λαβὼν τοὺς ἱππέας οἳ ἦσαν αὐτῷ πρὸς τὸν ποταμὸν ἔσπευδεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "λαβὼν",
-     "τοὺς",
-     "ἱππέας",
-     "οἳ",
-     "ἦσαν",
-     "αὐτῷ",
-     "πρὸς",
-     "τὸν",
-     "ποταμὸν",
-     "ἔσπευδεν"
-    ]
-   },
-   {
-    "prompt": "I fear the gods whom I have always honored.",
-    "answer": "φοβοῦμαι τοὺς θεοὺς οὓς ἀεὶ ἐτίμησα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβοῦμαι",
-     "τοὺς",
-     "θεοὺς",
-     "οὓς",
-     "ἀεὶ",
-     "ἐτίμησα"
-    ]
-   },
-   {
-    "prompt": "There being three gates through which we had to pass, the enemy kept pursuing.",
-    "answer": "τριῶν πυλῶν οὐσῶν ἃς ἔδει ἡμᾶς διελθεῖν, οἱ πολέμιοι ἐδίωκον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τριῶν",
-     "πυλῶν",
-     "οὐσῶν",
-     "ἃς",
-     "ἔδει",
-     "ἡμᾶς",
-     "διελθεῖν",
-     "οἱ",
-     "πολέμιοι",
-     "ἐδίωκον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t2",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "These are the ships with which we conquered the barbarians.",
-    "answer": "αὗταί εἰσιν αἱ νῆες αἷς τοὺς βαρβάρους ἐνικήσαμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αὗταί",
-     "εἰσιν",
-     "αἱ",
-     "νῆες",
-     "αἷς",
-     "τοὺς",
-     "βαρβάρους",
-     "ἐνικήσαμεν"
-    ]
-   },
-   {
-    "prompt": "The general freed the captives, which pleased all the citizens.",
-    "answer": "ὁ στρατηγὸς τοὺς αἰχμαλώτους ἠλευθέρωσεν, ὃ πᾶσι τοῖς πολίταις ἤρεσεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "τοὺς",
-     "αἰχμαλώτους",
-     "ἠλευθέρωσεν",
-     "ὃ",
-     "πᾶσι",
-     "τοῖς",
-     "πολίταις",
-     "ἤρεσεν"
-    ]
-   },
-   {
-    "prompt": "He commanded the hoplites whom he had led out of the city.",
-    "answer": "ἦρχε τῶν ὁπλιτῶν οὓς ἐκ τῆς πόλεως ἐξήγαγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἦρχε",
-     "τῶν",
-     "ὁπλιτῶν",
-     "οὓς",
-     "ἐκ",
-     "τῆς",
-     "πόλεως",
-     "ἐξήγαγεν"
-    ]
-   },
-   {
-    "prompt": "The jurors, whom the multitude had chosen, punished the wrongdoer.",
-    "answer": "οἱ δικασταὶ οὓς τὸ πλῆθος εἵλετο τὸν κακοῦργον ἐκόλασαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "δικασταὶ",
-     "οὓς",
-     "τὸ",
-     "πλῆθος",
-     "εἵλετο",
-     "τὸν",
-     "κακοῦργον",
-     "ἐκόλασαν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t3",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "You who occupy both earth and heaven are blessed.",
-    "answer": "ὑμεῖς οἳ γῆν τε καὶ οὐρανὸν ἔχετε μακάριοί ἐστε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὑμεῖς",
-     "οἳ",
-     "γῆν",
-     "τε",
-     "καὶ",
-     "οὐρανὸν",
-     "ἔχετε",
-     "μακάριοί",
-     "ἐστε"
-    ]
-   },
-   {
-    "prompt": "I who have suffered many things do not despair.",
-    "answer": "ἐγὼ ὃς πολλὰ πέπονθα οὐκ ἀθυμῶ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐγὼ",
-     "ὃς",
-     "πολλὰ",
-     "πέπονθα",
-     "οὐκ",
-     "ἀθυμῶ"
-    ]
-   },
-   {
-    "prompt": "We are the ones who saved the city.",
-    "answer": "ἡμεῖς ἐσμεν οἳ τὴν πόλιν ἐσώσαμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡμεῖς",
-     "ἐσμεν",
-     "οἳ",
-     "τὴν",
-     "πόλιν",
-     "ἐσώσαμεν"
-    ]
-   },
-   {
-    "prompt": "You who fear death are not worthy of freedom.",
-    "answer": "σὺ ὃς τὸν θάνατον φοβῇ οὐκ ἄξιος εἶ τῆς ἐλευθερίας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σὺ",
-     "ὃς",
-     "τὸν",
-     "θάνατον",
-     "φοβῇ",
-     "οὐκ",
-     "ἄξιος",
-     "εἶ",
-     "τῆς",
-     "ἐλευθερίας"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t4",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "This is the decree which the council ratified yesterday.",
-    "answer": "τοῦτό ἐστι τὸ ψήφισμα ὃ ἡ βουλὴ χθὲς ἐκύρωσεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῦτό",
-     "ἐστι",
-     "τὸ",
-     "ψήφισμα",
-     "ὃ",
-     "ἡ",
-     "βουλὴ",
-     "χθὲς",
-     "ἐκύρωσεν"
-    ]
-   },
-   {
-    "prompt": "The city whose citizens are stout-hearted is never enslaved.",
-    "answer": "ἡ πόλις ἧς οἱ πολῖται ἄλκιμοί εἰσιν οὐδέποτε δουλοῦται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "πόλις",
-     "ἧς",
-     "οἱ",
-     "πολῖται",
-     "ἄλκιμοί",
-     "εἰσιν",
-     "οὐδέποτε",
-     "δουλοῦται"
-    ]
-   },
-   {
-    "prompt": "The multitude, who were about to judge, kept silent.",
-    "answer": "τὸ πλῆθος, οἳ δικάσειν ἔμελλον, ἐσίγα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "πλῆθος",
-     "οἳ",
-     "δικάσειν",
-     "ἔμελλον",
-     "ἐσίγα"
-    ]
-   },
-   {
-    "prompt": "There are in us propositions which we call hopes.",
-    "answer": "εἰσὶν ἐν ἡμῖν λόγοι, ἃς ἐλπίδας ὀνομάζομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰσὶν",
-     "ἐν",
-     "ἡμῖν",
-     "λόγοι",
-     "ἃς",
-     "ἐλπίδας",
-     "ὀνομάζομεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t5",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "The strength which nature gave us we ought not to squander.",
-    "answer": "τὴν ῥώμην ἣν ἡ φύσις ἡμῖν ἔδωκεν οὐ δεῖ ἀναλίσκειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὴν",
-     "ῥώμην",
-     "ἣν",
-     "ἡ",
-     "φύσις",
-     "ἡμῖν",
-     "ἔδωκεν",
-     "οὐ",
-     "δεῖ",
-     "ἀναλίσκειν"
-    ]
-   },
-   {
-    "prompt": "The wicked men whom you trust will betray you.",
-    "answer": "οἱ πονηροὶ οἷς πιστεύεις προδώσουσί σε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πονηροὶ",
-     "οἷς",
-     "πιστεύεις",
-     "προδώσουσί",
-     "σε"
-    ]
-   },
-   {
-    "prompt": "The teacher, whose words we used to admire, has died.",
-    "answer": "ὁ διδάσκαλος οὗ τοὺς λόγους ἐθαυμάζομεν τέθνηκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "διδάσκαλος",
-     "οὗ",
-     "τοὺς",
-     "λόγους",
-     "ἐθαυμάζομεν",
-     "τέθνηκεν"
-    ]
-   },
-   {
-    "prompt": "They pursued gain, a thing which every nature is inclined to pursue.",
-    "answer": "τὴν πλεονεξίαν ἐδίωκον, ὃ πᾶσα φύσις διώκειν πέφυκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὴν",
-     "πλεονεξίαν",
-     "ἐδίωκον",
-     "ὃ",
-     "πᾶσα",
-     "φύσις",
-     "διώκειν",
-     "πέφυκεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t6",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "This is the island on which the exiles settled.",
-    "answer": "αὕτη ἐστὶν ἡ νῆσος ἐν ᾗ οἱ φυγάδες ᾤκησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αὕτη",
-     "ἐστὶν",
-     "ἡ",
-     "νῆσος",
-     "ἐν",
-     "ᾗ",
-     "οἱ",
-     "φυγάδες",
-     "ᾤκησαν"
-    ]
-   },
-   {
-    "prompt": "The bronze-clad ships which the allies sent arrived at dawn.",
-    "answer": "αἱ χαλκήρεις νῆες ἃς οἱ σύμμαχοι ἔπεμψαν ἅμα τῇ ἕῳ ἀφίκοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "χαλκήρεις",
-     "νῆες",
-     "ἃς",
-     "οἱ",
-     "σύμμαχοι",
-     "ἔπεμψαν",
-     "ἅμα",
-     "τῇ",
-     "ἕῳ",
-     "ἀφίκοντο"
-    ]
-   },
-   {
-    "prompt": "I honor the men by whom the city was saved.",
-    "answer": "τιμῶ τοὺς ἄνδρας ὑπὸ ὧν ἡ πόλις ἐσώθη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τιμῶ",
-     "τοὺς",
-     "ἄνδρας",
-     "ὑπὸ",
-     "ὧν",
-     "ἡ",
-     "πόλις",
-     "ἐσώθη"
-    ]
-   },
-   {
-    "prompt": "Justice, which has civilized all human things, is something beautiful.",
-    "answer": "ἡ δίκη, ὃ πάντα τὰ ἀνθρώπινα ἡμέρωκεν, καλή ἐστιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "δίκη",
-     "ὃ",
-     "πάντα",
-     "τὰ",
-     "ἀνθρώπινα",
-     "ἡμέρωκεν",
-     "καλή",
-     "ἐστιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-q1",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "To sail for Selinus with all their force, for which purpose especially they had been sent.",
-    "answer": "πλεῖν ἐπὶ Σελινοῦντα πάσῃ τῇ στρατιᾷ, ἐφ᾽ ὅπερ μάλιστα ἐπέμφθησαν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πλεῖν",
-     "ἐπὶ",
-     "Σελινοῦντα",
-     "πάσῃ",
-     "τῇ",
-     "στρατιᾷ",
-     "ἐφ",
-     "ὅπερ",
-     "μάλιστα",
-     "ἐπέμφθησαν"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "6.47"
-    }
-   },
-   {
-    "prompt": "They slew all whom they met.",
-    "answer": "ᾥτινι ἐντυγχάνοιεν . . . πάντας ἔκτεινον",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ᾥτινι",
-     "ἐντυγχάνοιεν",
-     "πάντας",
-     "ἔκτεινον"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "2.5.32"
-    }
-   },
-   {
-    "prompt": "He said that he had continued to do what was just and to refrain from what was unjust, which he thought was the best practice for his defence.",
-    "answer": "εἰπεν ὅτι . . . διαγεγένηται πράττων τὰ δίκαια καὶ τῶν ἀδίκων ἀπεχόμενος, ἥνπερ νομίζοι καλλίστην μελέτην ἀπολογίας εἶναι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰπεν",
-     "ὅτι",
-     "διαγεγένηται",
-     "πράττων",
-     "τὰ",
-     "δίκαια",
-     "καὶ",
-     "τῶν",
-     "ἀδίκων",
-     "ἀπεχόμενος",
-     "ἥνπερ",
-     "νομίζοι",
-     "καλλίστην",
-     "μελέτην",
-     "ἀπολογίας",
-     "εἶναι"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Memorabilia",
-     "locus": "4.8.4"
-    }
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t8",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "This is the woman whom we were seeking throughout the city.",
-    "answer": "αὕτη ἐστὶν ἡ γυνὴ ἣν κατὰ τὴν πόλιν ἐζητοῦμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αὕτη",
-     "ἐστὶν",
-     "ἡ",
-     "γυνὴ",
-     "ἣν",
-     "κατὰ",
-     "τὴν",
-     "πόλιν",
-     "ἐζητοῦμεν"
-    ]
-   },
-   {
-    "prompt": "The old man whom the citizens used to honor gave much money.",
-    "answer": "ὁ γέρων ὃν οἱ πολῖται ἐτίμων πολλὰ χρήματα ἔδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "ὃν",
-     "οἱ",
-     "πολῖται",
-     "ἐτίμων",
-     "πολλὰ",
-     "χρήματα",
-     "ἔδωκεν"
-    ]
-   },
-   {
-    "prompt": "Taking the cavalry which he had, he advanced against the enemy.",
-    "answer": "λαβὼν τοὺς ἱππέας οἳ ἦσαν αὐτῷ πρὸς τοὺς πολεμίους προῆλθεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "λαβὼν",
-     "τοὺς",
-     "ἱππέας",
-     "οἳ",
-     "ἦσαν",
-     "αὐτῷ",
-     "πρὸς",
-     "πολεμίους",
-     "προῆλθεν"
-    ]
-   },
-   {
-    "prompt": "The vine which the farmer planted bears sweet fruit.",
-    "answer": "ἡ ἄμπελος ἣν ὁ γεωργὸς ἐφύτευσεν ἡδὺν καρπὸν φέρει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "ἄμπελος",
-     "ἣν",
-     "ὁ",
-     "γεωργὸς",
-     "ἐφύτευσεν",
-     "ἡδὺν",
-     "καρπὸν",
-     "φέρει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t9",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "We who saved the fatherland are worthy of honor.",
-    "answer": "ἡμεῖς οἳ τὴν πατρίδα ἐσώσαμεν τιμῆς ἄξιοί ἐσμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡμεῖς",
-     "οἳ",
-     "τὴν",
-     "πατρίδα",
-     "ἐσώσαμεν",
-     "τιμῆς",
-     "ἄξιοί",
-     "ἐσμεν"
-    ]
-   },
-   {
-    "prompt": "You who rule over so many nations ought to be just.",
-    "answer": "σὺ ὃς τοσούτων ἐθνῶν ἄρχεις δίκαιος εἶναι ὀφείλεις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σὺ",
-     "ὃς",
-     "τοσούτων",
-     "ἐθνῶν",
-     "ἄρχεις",
-     "δίκαιος",
-     "εἶναι",
-     "ὀφείλεις"
-    ]
-   },
-   {
-    "prompt": "I who have suffered nothing evil do not fear the jurors.",
-    "answer": "ἐγὼ ὃς οὐδὲν κακὸν πέπονθα τοὺς δικαστὰς οὐ φοβοῦμαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐγὼ",
-     "ὃς",
-     "οὐδὲν",
-     "κακὸν",
-     "πέπονθα",
-     "τοὺς",
-     "δικαστὰς",
-     "οὐ",
-     "φοβοῦμαι"
-    ]
-   },
-   {
-    "prompt": "You who occupy the wide heaven are gods.",
-    "answer": "ὑμεῖς οἳ τὸν οὐρανὸν εὐρὺν ἔχετε θεοί ἐστε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὑμεῖς",
-     "οἳ",
-     "τὸν",
-     "οὐρανὸν",
-     "εὐρὺν",
-     "ἔχετε",
-     "θεοί",
-     "ἐστε"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t10",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "The gifts which the king sent pleased the ambassadors.",
-    "answer": "τὰ δῶρα ἃ ὁ βασιλεὺς ἔπεμψε τοῖς πρέσβεσιν ἤρεσεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "δῶρα",
-     "ἃ",
-     "ὁ",
-     "βασιλεὺς",
-     "ἔπεμψε",
-     "τοῖς",
-     "πρέσβεσιν",
-     "ἤρεσεν"
-    ]
-   },
-   {
-    "prompt": "The letters which we received announced the victory.",
-    "answer": "αἱ ἐπιστολαὶ ἃς ἐδεξάμεθα τὴν νίκην ἤγγειλαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "ἐπιστολαὶ",
-     "ἃς",
-     "ἐδεξάμεθα",
-     "τὴν",
-     "νίκην",
-     "ἤγγειλαν"
-    ]
-   },
-   {
-    "prompt": "There being many soldiers whom he had to arm, the general delayed.",
-    "answer": "πολλῶν στρατιωτῶν ὄντων οὓς ἔδει ὁπλίσαι, ὁ στρατηγὸς διέτριβεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πολλῶν",
-     "στρατιωτῶν",
-     "ὄντων",
-     "οὓς",
-     "ἔδει",
-     "ὁπλίσαι",
-     "ὁ",
-     "στρατηγὸς",
-     "διέτριβεν"
-    ]
-   },
-   {
-    "prompt": "The temple in which the priests sacrifice is ancient.",
-    "answer": "ὁ νεὼς ἐν ᾧ οἱ ἱερεῖς θύουσι παλαιός ἐστιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "νεὼς",
-     "ἐν",
-     "ᾧ",
-     "οἱ",
-     "ἱερεῖς",
-     "θύουσι",
-     "παλαιός",
-     "ἐστιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t11",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "There are in us motions which we name desires.",
-    "answer": "εἰσὶν ἐν ἡμῖν κινήσεις ἃς ἐπιθυμίας ὀνομάζομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰσὶν",
-     "ἐν",
-     "ἡμῖν",
-     "κινήσεις",
-     "ἃς",
-     "ἐπιθυμίας",
-     "ὀνομάζομεν"
-    ]
-   },
-   {
-    "prompt": "This is the thing which men call justice.",
-    "answer": "τοῦτό ἐστιν ἣν δικαιοσύνην οἱ ἄνθρωποι καλοῦσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῦτό",
-     "ἐστιν",
-     "ἣν",
-     "δικαιοσύνην",
-     "οἱ",
-     "ἄνθρωποι",
-     "καλοῦσιν"
-    ]
-   },
-   {
-    "prompt": "The philosopher honors that which the many name virtue.",
-    "answer": "ὁ φιλόσοφος ἐκεῖνο τιμᾷ ἣν ἀρετὴν οἱ πολλοὶ ὀνομάζουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "φιλόσοφος",
-     "ἐκεῖνο",
-     "τιμᾷ",
-     "ἣν",
-     "ἀρετὴν",
-     "οἱ",
-     "πολλοὶ",
-     "ὀνομάζουσιν"
-    ]
-   },
-   {
-    "prompt": "The wise pursue that which they name the good.",
-    "answer": "οἱ σοφοὶ ἐκεῖνο διώκουσιν ὃ ἀγαθὸν ὀνομάζουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "σοφοὶ",
-     "ἐκεῖνο",
-     "διώκουσιν",
-     "ὃ",
-     "ἀγαθὸν",
-     "ὀνομάζουσιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t12",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "The general betrayed the city, which greatly angered the citizens.",
-    "answer": "ὁ στρατηγὸς τὴν πόλιν προέδωκεν, ὃ τοὺς πολίτας σφόδρα ὤργισεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "τὴν",
-     "πόλιν",
-     "προέδωκεν",
-     "ὃ",
-     "τοὺς",
-     "πολίτας",
-     "σφόδρα",
-     "ὤργισεν"
-    ]
-   },
-   {
-    "prompt": "He kept silent, which seemed to everyone a sign of guilt.",
-    "answer": "ἐσίγα, ὃ πᾶσιν ἐδόκει σημεῖον εἶναι τῆς αἰτίας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐσίγα",
-     "ὃ",
-     "πᾶσιν",
-     "ἐδόκει",
-     "σημεῖον",
-     "εἶναι",
-     "τῆς",
-     "αἰτίας"
-    ]
-   },
-   {
-    "prompt": "The soldiers fled, which the general did not expect.",
-    "answer": "οἱ στρατιῶται ἔφυγον, ὃ ὁ στρατηγὸς οὐ προσεδόκησεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "ἔφυγον",
-     "ὃ",
-     "ὁ",
-     "στρατηγὸς",
-     "οὐ",
-     "προσεδόκησεν"
-    ]
-   },
-   {
-    "prompt": "The ambassadors departed unsuccessful, which vexed the king.",
-    "answer": "οἱ πρέσβεις ἄπρακτοι ἀπῆλθον, ὃ τὸν βασιλέα ἐλύπησεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πρέσβεις",
-     "ἄπρακτοι",
-     "ἀπῆλθον",
-     "ὃ",
-     "τὸν",
-     "βασιλέα",
-     "ἐλύπησεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t13",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "The hoplites of whom he was in command fought bravely.",
-    "answer": "οἱ ὁπλῖται ὧν ἐστρατήγει ἀνδρείως ἐμάχοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "ὁπλῖται",
-     "ὧν",
-     "ἐστρατήγει",
-     "ἀνδρείως",
-     "ἐμάχοντο"
-    ]
-   },
-   {
-    "prompt": "The river which they crossed was deep.",
-    "answer": "ὁ ποταμὸς ὃν διέβησαν βαθὺς ἦν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ποταμὸς",
-     "ὃν",
-     "διέβησαν",
-     "βαθὺς",
-     "ἦν"
-    ]
-   },
-   {
-    "prompt": "The friends to whom I sent the gifts were grateful.",
-    "answer": "οἱ φίλοι οἷς τὰ δῶρα ἔπεμψα χάριν εἶχον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "φίλοι",
-     "οἷς",
-     "τὰ",
-     "δῶρα",
-     "ἔπεμψα",
-     "χάριν",
-     "εἶχον"
-    ]
-   },
-   {
-    "prompt": "The general, whose soldiers had revolted, withdrew by night.",
-    "answer": "ὁ στρατηγός, οὗ οἱ στρατιῶται ἀπέστησαν, νυκτὸς ἀνεχώρησεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγός",
-     "οὗ",
-     "οἱ",
-     "στρατιῶται",
-     "ἀπέστησαν",
-     "νυκτὸς",
-     "ἀνεχώρησεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t14",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "The messenger whom the general sent to the king has not yet returned.",
-    "answer": "ὁ ἄγγελος ὃν ὁ στρατηγὸς πρὸς τὸν βασιλέα ἀπέστειλεν οὔπω ἐπανῆλθεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἄγγελος",
-     "ὃν",
-     "στρατηγὸς",
-     "πρὸς",
-     "τὸν",
-     "βασιλέα",
-     "ἀπέστειλεν",
-     "οὔπω",
-     "ἐπανῆλθεν"
-    ]
-   },
-   {
-    "prompt": "The old man to whom the citizens entrusted the treasure proved faithful.",
-    "answer": "ὁ γέρων ᾧ οἱ πολῖται τὸν θησαυρὸν ἐπίστευσαν πιστὸς ἐφάνη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "ᾧ",
-     "οἱ",
-     "πολῖται",
-     "τὸν",
-     "θησαυρὸν",
-     "ἐπίστευσαν",
-     "πιστὸς",
-     "ἐφάνη"
-    ]
-   },
-   {
-    "prompt": "The woman whose sons fell in the war still mourns.",
-    "answer": "ἡ γυνὴ ἧς οἱ υἱοὶ ἐν τῷ πολέμῳ ἔπεσον ἔτι πενθεῖ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "γυνὴ",
-     "ἧς",
-     "οἱ",
-     "υἱοὶ",
-     "ἐν",
-     "τῷ",
-     "πολέμῳ",
-     "ἔπεσον",
-     "ἔτι",
-     "πενθεῖ"
-    ]
-   },
-   {
-    "prompt": "The river across which the army passed at dawn was very deep.",
-    "answer": "ὁ ποταμὸς ὃν ἡ στρατιὰ ἅμα τῇ ἕῳ διέβη βαθύτατος ἦν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ποταμὸς",
-     "ὃν",
-     "ἡ",
-     "στρατιὰ",
-     "ἅμα",
-     "τῇ",
-     "ἕῳ",
-     "διέβη",
-     "βαθύτατος",
-     "ἦν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t15",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "The allies abandoned us, which greatly harmed the city.",
-    "answer": "οἱ σύμμαχοι ἡμᾶς ἐγκατέλιπον, ὃ τὴν πόλιν μεγάλα ἔβλαψεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "σύμμαχοι",
-     "ἡμᾶς",
-     "ἐγκατέλιπον",
-     "ὃ",
-     "τὴν",
-     "πόλιν",
-     "μεγάλα",
-     "ἔβλαψεν"
-    ]
-   },
-   {
-    "prompt": "He fled from the battle, a thing which no brave man would do.",
-    "answer": "ἔφυγεν ἐκ τῆς μάχης, ὃ οὐδεὶς ἀνὴρ ἀγαθὸς ἂν ποιήσειεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔφυγεν",
-     "ἐκ",
-     "τῆς",
-     "μάχης",
-     "ὃ",
-     "οὐδεὶς",
-     "ἀνὴρ",
-     "ἀγαθὸς",
-     "ἂν",
-     "ποιήσειεν"
-    ]
-   },
-   {
-    "prompt": "The army, who were eager to fight, awaited the signal for a long time.",
-    "answer": "τὸ στράτευμα, οἳ μάχεσθαι ἐπεθύμουν, τὸ σημεῖον πολὺν χρόνον ἀνέμενον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "στράτευμα",
-     "οἳ",
-     "μάχεσθαι",
-     "ἐπεθύμουν",
-     "σημεῖον",
-     "πολὺν",
-     "χρόνον",
-     "ἀνέμενον"
-    ]
-   },
-   {
-    "prompt": "They yearned for freedom, which every people pursues as a good.",
-    "answer": "ὠρέγοντο τῆς ἐλευθερίας, ὃ πᾶς δῆμος ὡς ἀγαθὸν διώκει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὠρέγοντο",
-     "τῆς",
-     "ἐλευθερίας",
-     "ὃ",
-     "πᾶς",
-     "δῆμος",
-     "ὡς",
-     "ἀγαθὸν",
-     "διώκει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t16",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "I, who have often commanded armies, know the dangers of war.",
-    "answer": "ἐγώ, ὃς πολλάκις στρατευμάτων ἡγησάμην, τοὺς τοῦ πολέμου κινδύνους ἐπίσταμαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐγώ",
-     "ὃς",
-     "πολλάκις",
-     "στρατευμάτων",
-     "ἡγησάμην",
-     "τοὺς",
-     "τοῦ",
-     "πολέμου",
-     "κινδύνους",
-     "ἐπίσταμαι"
-    ]
-   },
-   {
-    "prompt": "You, who despise the laws, will not escape the notice of the gods.",
-    "answer": "σύ, ὃς τῶν νόμων καταφρονεῖς, τοὺς θεοὺς οὐ λήσεις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σύ",
-     "ὃς",
-     "τῶν",
-     "νόμων",
-     "καταφρονεῖς",
-     "τοὺς",
-     "θεοὺς",
-     "οὐ",
-     "λήσεις"
-    ]
-   },
-   {
-    "prompt": "We, who freed the allies from the tyranny, are worthy of gratitude.",
-    "answer": "ἡμεῖς, οἳ τοὺς συμμάχους ἐκ τῆς τυραννίδος ἠλευθερώσαμεν, χάριτος ἄξιοί ἐσμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡμεῖς",
-     "οἳ",
-     "τοὺς",
-     "συμμάχους",
-     "ἐκ",
-     "τῆς",
-     "τυραννίδος",
-     "ἠλευθερώσαμεν",
-     "χάριτος",
-     "ἄξιοί",
-     "ἐσμεν"
-    ]
-   },
-   {
-    "prompt": "You who fled from the walls have disgraced your fathers.",
-    "answer": "ὑμεῖς, οἳ ἀπὸ τῶν τειχῶν ἐφύγετε, τοὺς πατέρας ᾐσχύνατε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὑμεῖς",
-     "οἳ",
-     "ἀπὸ",
-     "τῶν",
-     "τειχῶν",
-     "ἐφύγετε",
-     "τοὺς",
-     "πατέρας",
-     "ᾐσχύνατε"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t17",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "There are in each of us judgments, which we call opinions.",
-    "answer": "εἰσὶν ἐν ἑκάστῳ ἡμῶν κρίσεις, ἃς δόξας ὀνομάζομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰσὶν",
-     "ἐν",
-     "ἑκάστῳ",
-     "ἡμῶν",
-     "κρίσεις",
-     "ἃς",
-     "δόξας",
-     "ὀνομάζομεν"
-    ]
-   },
-   {
-    "prompt": "Beside the river he founded a colony, which they named Amphipolis.",
-    "answer": "πρὸς τῷ ποταμῷ ἀποικίαν ᾤκισεν, ἣν Ἀμφίπολιν ἐπωνόμασαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πρὸς",
-     "τῷ",
-     "ποταμῷ",
-     "ἀποικίαν",
-     "ᾤκισεν",
-     "ἣν",
-     "Ἀμφίπολιν",
-     "ἐπωνόμασαν"
-    ]
-   },
-   {
-    "prompt": "There arise in us certain affections, which we name pleasures.",
-    "answer": "ἐγγίγνονται ἐν ἡμῖν πάθη τινά, ἃς ἡδονὰς ὀνομάζομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐγγίγνονται",
-     "ἐν",
-     "ἡμῖν",
-     "πάθη",
-     "τινά",
-     "ἃς",
-     "ἡδονὰς",
-     "ὀνομάζομεν"
-    ]
-   },
-   {
-    "prompt": "He practiced justice, which he thought was the finest preparation.",
-    "answer": "τὴν δικαιοσύνην ἤσκει, ἥνπερ καλλίστην παρασκευὴν ἐνόμιζεν εἶναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὴν",
-     "δικαιοσύνην",
-     "ἤσκει",
-     "ἥνπερ",
-     "καλλίστην",
-     "παρασκευὴν",
-     "ἐνόμιζεν",
-     "εἶναι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2501-concord-of-relative-pronouns-t18",
-  "sectionId": "sm-2501-concord-of-relative-pronouns",
-  "questions": [
-   {
-    "prompt": "There being many gates, through which we had to pass, we hesitated.",
-    "answer": "πολλῶν πυλῶν οὐσῶν, ἃς ἔδει ἡμᾶς διελθεῖν, ὠκνοῦμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πολλῶν",
-     "πυλῶν",
-     "οὐσῶν",
-     "ἃς",
-     "ἔδει",
-     "ἡμᾶς",
-     "διελθεῖν",
-     "ὠκνοῦμεν"
-    ]
-   },
-   {
-    "prompt": "Leading out the soldiers in whom he most trusted, he attacked the camp.",
-    "answer": "ἐξαγαγὼν τοὺς στρατιώτας οἷς μάλιστα ἐθάρρει, τῷ στρατοπέδῳ προσέβαλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐξαγαγὼν",
-     "τοὺς",
-     "στρατιώτας",
-     "οἷς",
-     "μάλιστα",
-     "ἐθάρρει",
-     "τῷ",
-     "στρατοπέδῳ",
-     "προσέβαλεν"
-    ]
-   },
-   {
-    "prompt": "When the king had died, the son whom he loved seized the power.",
-    "answer": "τοῦ βασιλέως ἀποθανόντος, ὁ υἱὸς ὃν ἐφίλει τὴν ἀρχὴν κατέσχεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῦ",
-     "βασιλέως",
-     "ἀποθανόντος",
-     "ὁ",
-     "υἱὸς",
-     "ὃν",
-     "ἐφίλει",
-     "τὴν",
-     "ἀρχὴν",
-     "κατέσχεν"
-    ]
-   },
-   {
-    "prompt": "The general's tent, in which the prisoners were being guarded, was set on fire.",
-    "answer": "ἡ τοῦ στρατηγοῦ σκηνή, ἐν ᾗ οἱ αἰχμάλωτοι ἐφυλάττοντο, ἐνεπρήσθη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "τοῦ",
-     "στρατηγοῦ",
-     "σκηνή",
-     "ἐν",
-     "ᾗ",
-     "οἱ",
-     "αἰχμάλωτοι",
-     "ἐφυλάττοντο",
-     "ἐνεπρήσθη"
-    ]
-   }
-  ]
- }
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t1",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "This is the woman whom the soldiers were seeking in the marketplace.",
+        "answer": "αὕτη ἐστὶν ἡ γυνὴ ἣν οἱ στρατιῶται ἐν τῇ ἀγορᾷ ἐζήτουν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αὕτη",
+          "ἐστὶν",
+          "ἡ",
+          "γυνὴ",
+          "ἣν",
+          "οἱ",
+          "στρατιῶται",
+          "ἐν",
+          "τῇ",
+          "ἀγορᾷ",
+          "ἐζήτουν"
+        ]
+      },
+      {
+        "prompt": "The general, taking the cavalry which he had, hastened toward the river.",
+        "answer": "ὁ στρατηγὸς λαβὼν τοὺς ἱππέας οἳ ἦσαν αὐτῷ πρὸς τὸν ποταμὸν ἔσπευδεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "λαβὼν",
+          "τοὺς",
+          "ἱππέας",
+          "οἳ",
+          "ἦσαν",
+          "αὐτῷ",
+          "πρὸς",
+          "τὸν",
+          "ποταμὸν",
+          "ἔσπευδεν"
+        ]
+      },
+      {
+        "prompt": "I fear the gods whom I have always honored.",
+        "answer": "φοβοῦμαι τοὺς θεοὺς οὓς ἀεὶ ἐτίμησα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβοῦμαι",
+          "τοὺς",
+          "θεοὺς",
+          "οὓς",
+          "ἀεὶ",
+          "ἐτίμησα"
+        ]
+      },
+      {
+        "prompt": "There being three gates through which we had to pass, the enemy kept pursuing.",
+        "answer": "τριῶν πυλῶν οὐσῶν ἃς ἔδει ἡμᾶς διελθεῖν, οἱ πολέμιοι ἐδίωκον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τριῶν",
+          "πυλῶν",
+          "οὐσῶν",
+          "ἃς",
+          "ἔδει",
+          "ἡμᾶς",
+          "διελθεῖν",
+          "οἱ",
+          "πολέμιοι",
+          "ἐδίωκον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t2",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "These are the ships with which we conquered the barbarians.",
+        "answer": "αὗταί εἰσιν αἱ νῆες αἷς τοὺς βαρβάρους ἐνικήσαμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αὗταί",
+          "εἰσιν",
+          "αἱ",
+          "νῆες",
+          "αἷς",
+          "τοὺς",
+          "βαρβάρους",
+          "ἐνικήσαμεν"
+        ]
+      },
+      {
+        "prompt": "The general freed the captives, which pleased all the citizens.",
+        "answer": "ὁ στρατηγὸς τοὺς αἰχμαλώτους ἠλευθέρωσεν, ὃ πᾶσι τοῖς πολίταις ἤρεσεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "τοὺς",
+          "αἰχμαλώτους",
+          "ἠλευθέρωσεν",
+          "ὃ",
+          "πᾶσι",
+          "τοῖς",
+          "πολίταις",
+          "ἤρεσεν"
+        ]
+      },
+      {
+        "prompt": "He commanded the hoplites whom he had led out of the city.",
+        "answer": "ἦρχε τῶν ὁπλιτῶν οὓς ἐκ τῆς πόλεως ἐξήγαγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἦρχε",
+          "τῶν",
+          "ὁπλιτῶν",
+          "οὓς",
+          "ἐκ",
+          "τῆς",
+          "πόλεως",
+          "ἐξήγαγεν"
+        ]
+      },
+      {
+        "prompt": "The jurors, whom the multitude had chosen, punished the wrongdoer.",
+        "answer": "οἱ δικασταὶ οὓς τὸ πλῆθος εἵλετο τὸν κακοῦργον ἐκόλασαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "δικασταὶ",
+          "οὓς",
+          "τὸ",
+          "πλῆθος",
+          "εἵλετο",
+          "τὸν",
+          "κακοῦργον",
+          "ἐκόλασαν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t3",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "You who occupy both earth and heaven are blessed.",
+        "answer": "ὑμεῖς οἳ γῆν τε καὶ οὐρανὸν ἔχετε μακάριοί ἐστε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὑμεῖς",
+          "οἳ",
+          "γῆν",
+          "τε",
+          "καὶ",
+          "οὐρανὸν",
+          "ἔχετε",
+          "μακάριοί",
+          "ἐστε"
+        ]
+      },
+      {
+        "prompt": "I who have suffered many things do not despair.",
+        "answer": "ἐγὼ ὃς πολλὰ πέπονθα οὐκ ἀθυμῶ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐγὼ",
+          "ὃς",
+          "πολλὰ",
+          "πέπονθα",
+          "οὐκ",
+          "ἀθυμῶ"
+        ]
+      },
+      {
+        "prompt": "We are the ones who saved the city.",
+        "answer": "ἡμεῖς ἐσμεν οἳ τὴν πόλιν ἐσώσαμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡμεῖς",
+          "ἐσμεν",
+          "οἳ",
+          "τὴν",
+          "πόλιν",
+          "ἐσώσαμεν"
+        ]
+      },
+      {
+        "prompt": "You who fear death are not worthy of freedom.",
+        "answer": "σὺ ὃς τὸν θάνατον φοβῇ οὐκ ἄξιος εἶ τῆς ἐλευθερίας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σὺ",
+          "ὃς",
+          "τὸν",
+          "θάνατον",
+          "φοβῇ",
+          "οὐκ",
+          "ἄξιος",
+          "εἶ",
+          "τῆς",
+          "ἐλευθερίας"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t4",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "This is the decree which the council ratified yesterday.",
+        "answer": "τοῦτό ἐστι τὸ ψήφισμα ὃ ἡ βουλὴ χθὲς ἐκύρωσεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῦτό",
+          "ἐστι",
+          "τὸ",
+          "ψήφισμα",
+          "ὃ",
+          "ἡ",
+          "βουλὴ",
+          "χθὲς",
+          "ἐκύρωσεν"
+        ]
+      },
+      {
+        "prompt": "The city whose citizens are stout-hearted is never enslaved.",
+        "answer": "ἡ πόλις ἧς οἱ πολῖται ἄλκιμοί εἰσιν οὐδέποτε δουλοῦται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "πόλις",
+          "ἧς",
+          "οἱ",
+          "πολῖται",
+          "ἄλκιμοί",
+          "εἰσιν",
+          "οὐδέποτε",
+          "δουλοῦται"
+        ]
+      },
+      {
+        "prompt": "The multitude, who were about to judge, kept silent.",
+        "answer": "τὸ πλῆθος, οἳ δικάσειν ἔμελλον, ἐσίγα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "πλῆθος",
+          "οἳ",
+          "δικάσειν",
+          "ἔμελλον",
+          "ἐσίγα"
+        ]
+      },
+      {
+        "prompt": "There are in us propositions which we call hopes.",
+        "answer": "εἰσὶν ἐν ἡμῖν λόγοι, ἃς ἐλπίδας ὀνομάζομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰσὶν",
+          "ἐν",
+          "ἡμῖν",
+          "λόγοι",
+          "ἃς",
+          "ἐλπίδας",
+          "ὀνομάζομεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t5",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "The strength which nature gave us we ought not to squander.",
+        "answer": "τὴν ῥώμην ἣν ἡ φύσις ἡμῖν ἔδωκεν οὐ δεῖ ἀναλίσκειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὴν",
+          "ῥώμην",
+          "ἣν",
+          "ἡ",
+          "φύσις",
+          "ἡμῖν",
+          "ἔδωκεν",
+          "οὐ",
+          "δεῖ",
+          "ἀναλίσκειν"
+        ]
+      },
+      {
+        "prompt": "The wicked men whom you trust will betray you.",
+        "answer": "οἱ πονηροὶ οἷς πιστεύεις προδώσουσί σε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πονηροὶ",
+          "οἷς",
+          "πιστεύεις",
+          "προδώσουσί",
+          "σε"
+        ]
+      },
+      {
+        "prompt": "The teacher, whose words we used to admire, has died.",
+        "answer": "ὁ διδάσκαλος οὗ τοὺς λόγους ἐθαυμάζομεν τέθνηκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "διδάσκαλος",
+          "οὗ",
+          "τοὺς",
+          "λόγους",
+          "ἐθαυμάζομεν",
+          "τέθνηκεν"
+        ]
+      },
+      {
+        "prompt": "They pursued gain, a thing which every nature is inclined to pursue.",
+        "answer": "τὴν πλεονεξίαν ἐδίωκον, ὃ πᾶσα φύσις διώκειν πέφυκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὴν",
+          "πλεονεξίαν",
+          "ἐδίωκον",
+          "ὃ",
+          "πᾶσα",
+          "φύσις",
+          "διώκειν",
+          "πέφυκεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t6",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "This is the island on which the exiles settled.",
+        "answer": "αὕτη ἐστὶν ἡ νῆσος ἐν ᾗ οἱ φυγάδες ᾤκησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αὕτη",
+          "ἐστὶν",
+          "ἡ",
+          "νῆσος",
+          "ἐν",
+          "ᾗ",
+          "οἱ",
+          "φυγάδες",
+          "ᾤκησαν"
+        ]
+      },
+      {
+        "prompt": "The bronze-clad ships which the allies sent arrived at dawn.",
+        "answer": "αἱ χαλκήρεις νῆες ἃς οἱ σύμμαχοι ἔπεμψαν ἅμα τῇ ἕῳ ἀφίκοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "χαλκήρεις",
+          "νῆες",
+          "ἃς",
+          "οἱ",
+          "σύμμαχοι",
+          "ἔπεμψαν",
+          "ἅμα",
+          "τῇ",
+          "ἕῳ",
+          "ἀφίκοντο"
+        ]
+      },
+      {
+        "prompt": "I honor the men by whom the city was saved.",
+        "answer": "τιμῶ τοὺς ἄνδρας ὑπὸ ὧν ἡ πόλις ἐσώθη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τιμῶ",
+          "τοὺς",
+          "ἄνδρας",
+          "ὑπὸ",
+          "ὧν",
+          "ἡ",
+          "πόλις",
+          "ἐσώθη"
+        ]
+      },
+      {
+        "prompt": "Justice, which has civilized all human things, is something beautiful.",
+        "answer": "ἡ δίκη, ὃ πάντα τὰ ἀνθρώπινα ἡμέρωκεν, καλή ἐστιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "δίκη",
+          "ὃ",
+          "πάντα",
+          "τὰ",
+          "ἀνθρώπινα",
+          "ἡμέρωκεν",
+          "καλή",
+          "ἐστιν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-q1",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "To sail for Selinus with all their force, for which purpose especially they had been sent.",
+        "answer": "πλεῖν ἐπὶ Σελινοῦντα πάσῃ τῇ στρατιᾷ, ἐφ᾽ ὅπερ μάλιστα ἐπέμφθησαν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πλεῖν",
+          "ἐπὶ",
+          "Σελινοῦντα",
+          "πάσῃ",
+          "τῇ",
+          "στρατιᾷ",
+          "ἐφ",
+          "ὅπερ",
+          "μάλιστα",
+          "ἐπέμφθησαν"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "6.47"
+        }
+      },
+      {
+        "prompt": "They slew all whom they met.",
+        "answer": "ᾥτινι ἐντυγχάνοιεν πάντας ἔκτεινον",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ᾥτινι",
+          "ἐντυγχάνοιεν",
+          "πάντας",
+          "ἔκτεινον"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "2.5.32"
+        }
+      },
+      {
+        "prompt": "He said that he had continued to do what was just and to refrain from what was unjust, which he thought was the best practice for his defence.",
+        "answer": "εἰπεν ὅτι διαγεγένηται πράττων τὰ δίκαια καὶ τῶν ἀδίκων ἀπεχόμενος, ἥνπερ νομίζοι καλλίστην μελέτην ἀπολογίας εἶναι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰπεν",
+          "ὅτι",
+          "διαγεγένηται",
+          "πράττων",
+          "τὰ",
+          "δίκαια",
+          "καὶ",
+          "τῶν",
+          "ἀδίκων",
+          "ἀπεχόμενος",
+          "ἥνπερ",
+          "νομίζοι",
+          "καλλίστην",
+          "μελέτην",
+          "ἀπολογίας",
+          "εἶναι"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Memorabilia",
+          "locus": "4.8.4"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t8",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "This is the woman whom we were seeking throughout the city.",
+        "answer": "αὕτη ἐστὶν ἡ γυνὴ ἣν κατὰ τὴν πόλιν ἐζητοῦμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αὕτη",
+          "ἐστὶν",
+          "ἡ",
+          "γυνὴ",
+          "ἣν",
+          "κατὰ",
+          "τὴν",
+          "πόλιν",
+          "ἐζητοῦμεν"
+        ]
+      },
+      {
+        "prompt": "The old man whom the citizens used to honor gave much money.",
+        "answer": "ὁ γέρων ὃν οἱ πολῖται ἐτίμων πολλὰ χρήματα ἔδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "ὃν",
+          "οἱ",
+          "πολῖται",
+          "ἐτίμων",
+          "πολλὰ",
+          "χρήματα",
+          "ἔδωκεν"
+        ]
+      },
+      {
+        "prompt": "Taking the cavalry which he had, he advanced against the enemy.",
+        "answer": "λαβὼν τοὺς ἱππέας οἳ ἦσαν αὐτῷ πρὸς τοὺς πολεμίους προῆλθεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "λαβὼν",
+          "τοὺς",
+          "ἱππέας",
+          "οἳ",
+          "ἦσαν",
+          "αὐτῷ",
+          "πρὸς",
+          "πολεμίους",
+          "προῆλθεν"
+        ]
+      },
+      {
+        "prompt": "The vine which the farmer planted bears sweet fruit.",
+        "answer": "ἡ ἄμπελος ἣν ὁ γεωργὸς ἐφύτευσεν ἡδὺν καρπὸν φέρει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "ἄμπελος",
+          "ἣν",
+          "ὁ",
+          "γεωργὸς",
+          "ἐφύτευσεν",
+          "ἡδὺν",
+          "καρπὸν",
+          "φέρει"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t9",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "We who saved the fatherland are worthy of honor.",
+        "answer": "ἡμεῖς οἳ τὴν πατρίδα ἐσώσαμεν τιμῆς ἄξιοί ἐσμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡμεῖς",
+          "οἳ",
+          "τὴν",
+          "πατρίδα",
+          "ἐσώσαμεν",
+          "τιμῆς",
+          "ἄξιοί",
+          "ἐσμεν"
+        ]
+      },
+      {
+        "prompt": "You who rule over so many nations ought to be just.",
+        "answer": "σὺ ὃς τοσούτων ἐθνῶν ἄρχεις δίκαιος εἶναι ὀφείλεις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σὺ",
+          "ὃς",
+          "τοσούτων",
+          "ἐθνῶν",
+          "ἄρχεις",
+          "δίκαιος",
+          "εἶναι",
+          "ὀφείλεις"
+        ]
+      },
+      {
+        "prompt": "I who have suffered nothing evil do not fear the jurors.",
+        "answer": "ἐγὼ ὃς οὐδὲν κακὸν πέπονθα τοὺς δικαστὰς οὐ φοβοῦμαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐγὼ",
+          "ὃς",
+          "οὐδὲν",
+          "κακὸν",
+          "πέπονθα",
+          "τοὺς",
+          "δικαστὰς",
+          "οὐ",
+          "φοβοῦμαι"
+        ]
+      },
+      {
+        "prompt": "You who occupy the wide heaven are gods.",
+        "answer": "ὑμεῖς οἳ τὸν οὐρανὸν εὐρὺν ἔχετε θεοί ἐστε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὑμεῖς",
+          "οἳ",
+          "τὸν",
+          "οὐρανὸν",
+          "εὐρὺν",
+          "ἔχετε",
+          "θεοί",
+          "ἐστε"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t10",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "The gifts which the king sent pleased the ambassadors.",
+        "answer": "τὰ δῶρα ἃ ὁ βασιλεὺς ἔπεμψε τοῖς πρέσβεσιν ἤρεσεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "δῶρα",
+          "ἃ",
+          "ὁ",
+          "βασιλεὺς",
+          "ἔπεμψε",
+          "τοῖς",
+          "πρέσβεσιν",
+          "ἤρεσεν"
+        ]
+      },
+      {
+        "prompt": "The letters which we received announced the victory.",
+        "answer": "αἱ ἐπιστολαὶ ἃς ἐδεξάμεθα τὴν νίκην ἤγγειλαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "ἐπιστολαὶ",
+          "ἃς",
+          "ἐδεξάμεθα",
+          "τὴν",
+          "νίκην",
+          "ἤγγειλαν"
+        ]
+      },
+      {
+        "prompt": "There being many soldiers whom he had to arm, the general delayed.",
+        "answer": "πολλῶν στρατιωτῶν ὄντων οὓς ἔδει ὁπλίσαι, ὁ στρατηγὸς διέτριβεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πολλῶν",
+          "στρατιωτῶν",
+          "ὄντων",
+          "οὓς",
+          "ἔδει",
+          "ὁπλίσαι",
+          "ὁ",
+          "στρατηγὸς",
+          "διέτριβεν"
+        ]
+      },
+      {
+        "prompt": "The temple in which the priests sacrifice is ancient.",
+        "answer": "ὁ νεὼς ἐν ᾧ οἱ ἱερεῖς θύουσι παλαιός ἐστιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "νεὼς",
+          "ἐν",
+          "ᾧ",
+          "οἱ",
+          "ἱερεῖς",
+          "θύουσι",
+          "παλαιός",
+          "ἐστιν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t11",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "There are in us motions which we name desires.",
+        "answer": "εἰσὶν ἐν ἡμῖν κινήσεις ἃς ἐπιθυμίας ὀνομάζομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰσὶν",
+          "ἐν",
+          "ἡμῖν",
+          "κινήσεις",
+          "ἃς",
+          "ἐπιθυμίας",
+          "ὀνομάζομεν"
+        ]
+      },
+      {
+        "prompt": "This is the thing which men call justice.",
+        "answer": "τοῦτό ἐστιν ἣν δικαιοσύνην οἱ ἄνθρωποι καλοῦσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῦτό",
+          "ἐστιν",
+          "ἣν",
+          "δικαιοσύνην",
+          "οἱ",
+          "ἄνθρωποι",
+          "καλοῦσιν"
+        ]
+      },
+      {
+        "prompt": "The philosopher honors that which the many name virtue.",
+        "answer": "ὁ φιλόσοφος ἐκεῖνο τιμᾷ ἣν ἀρετὴν οἱ πολλοὶ ὀνομάζουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "φιλόσοφος",
+          "ἐκεῖνο",
+          "τιμᾷ",
+          "ἣν",
+          "ἀρετὴν",
+          "οἱ",
+          "πολλοὶ",
+          "ὀνομάζουσιν"
+        ]
+      },
+      {
+        "prompt": "The wise pursue that which they name the good.",
+        "answer": "οἱ σοφοὶ ἐκεῖνο διώκουσιν ὃ ἀγαθὸν ὀνομάζουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "σοφοὶ",
+          "ἐκεῖνο",
+          "διώκουσιν",
+          "ὃ",
+          "ἀγαθὸν",
+          "ὀνομάζουσιν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t12",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "The general betrayed the city, which greatly angered the citizens.",
+        "answer": "ὁ στρατηγὸς τὴν πόλιν προέδωκεν, ὃ τοὺς πολίτας σφόδρα ὤργισεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "τὴν",
+          "πόλιν",
+          "προέδωκεν",
+          "ὃ",
+          "τοὺς",
+          "πολίτας",
+          "σφόδρα",
+          "ὤργισεν"
+        ]
+      },
+      {
+        "prompt": "He kept silent, which seemed to everyone a sign of guilt.",
+        "answer": "ἐσίγα, ὃ πᾶσιν ἐδόκει σημεῖον εἶναι τῆς αἰτίας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐσίγα",
+          "ὃ",
+          "πᾶσιν",
+          "ἐδόκει",
+          "σημεῖον",
+          "εἶναι",
+          "τῆς",
+          "αἰτίας"
+        ]
+      },
+      {
+        "prompt": "The soldiers fled, which the general did not expect.",
+        "answer": "οἱ στρατιῶται ἔφυγον, ὃ ὁ στρατηγὸς οὐ προσεδόκησεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "ἔφυγον",
+          "ὃ",
+          "ὁ",
+          "στρατηγὸς",
+          "οὐ",
+          "προσεδόκησεν"
+        ]
+      },
+      {
+        "prompt": "The ambassadors departed unsuccessful, which vexed the king.",
+        "answer": "οἱ πρέσβεις ἄπρακτοι ἀπῆλθον, ὃ τὸν βασιλέα ἐλύπησεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πρέσβεις",
+          "ἄπρακτοι",
+          "ἀπῆλθον",
+          "ὃ",
+          "τὸν",
+          "βασιλέα",
+          "ἐλύπησεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t13",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "The hoplites of whom he was in command fought bravely.",
+        "answer": "οἱ ὁπλῖται ὧν ἐστρατήγει ἀνδρείως ἐμάχοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "ὁπλῖται",
+          "ὧν",
+          "ἐστρατήγει",
+          "ἀνδρείως",
+          "ἐμάχοντο"
+        ]
+      },
+      {
+        "prompt": "The river which they crossed was deep.",
+        "answer": "ὁ ποταμὸς ὃν διέβησαν βαθὺς ἦν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ποταμὸς",
+          "ὃν",
+          "διέβησαν",
+          "βαθὺς",
+          "ἦν"
+        ]
+      },
+      {
+        "prompt": "The friends to whom I sent the gifts were grateful.",
+        "answer": "οἱ φίλοι οἷς τὰ δῶρα ἔπεμψα χάριν εἶχον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "φίλοι",
+          "οἷς",
+          "τὰ",
+          "δῶρα",
+          "ἔπεμψα",
+          "χάριν",
+          "εἶχον"
+        ]
+      },
+      {
+        "prompt": "The general, whose soldiers had revolted, withdrew by night.",
+        "answer": "ὁ στρατηγός, οὗ οἱ στρατιῶται ἀπέστησαν, νυκτὸς ἀνεχώρησεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγός",
+          "οὗ",
+          "οἱ",
+          "στρατιῶται",
+          "ἀπέστησαν",
+          "νυκτὸς",
+          "ἀνεχώρησεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t14",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "The messenger whom the general sent to the king has not yet returned.",
+        "answer": "ὁ ἄγγελος ὃν ὁ στρατηγὸς πρὸς τὸν βασιλέα ἀπέστειλεν οὔπω ἐπανῆλθεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἄγγελος",
+          "ὃν",
+          "στρατηγὸς",
+          "πρὸς",
+          "τὸν",
+          "βασιλέα",
+          "ἀπέστειλεν",
+          "οὔπω",
+          "ἐπανῆλθεν"
+        ]
+      },
+      {
+        "prompt": "The old man to whom the citizens entrusted the treasure proved faithful.",
+        "answer": "ὁ γέρων ᾧ οἱ πολῖται τὸν θησαυρὸν ἐπίστευσαν πιστὸς ἐφάνη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "ᾧ",
+          "οἱ",
+          "πολῖται",
+          "τὸν",
+          "θησαυρὸν",
+          "ἐπίστευσαν",
+          "πιστὸς",
+          "ἐφάνη"
+        ]
+      },
+      {
+        "prompt": "The woman whose sons fell in the war still mourns.",
+        "answer": "ἡ γυνὴ ἧς οἱ υἱοὶ ἐν τῷ πολέμῳ ἔπεσον ἔτι πενθεῖ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "γυνὴ",
+          "ἧς",
+          "οἱ",
+          "υἱοὶ",
+          "ἐν",
+          "τῷ",
+          "πολέμῳ",
+          "ἔπεσον",
+          "ἔτι",
+          "πενθεῖ"
+        ]
+      },
+      {
+        "prompt": "The river across which the army passed at dawn was very deep.",
+        "answer": "ὁ ποταμὸς ὃν ἡ στρατιὰ ἅμα τῇ ἕῳ διέβη βαθύτατος ἦν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ποταμὸς",
+          "ὃν",
+          "ἡ",
+          "στρατιὰ",
+          "ἅμα",
+          "τῇ",
+          "ἕῳ",
+          "διέβη",
+          "βαθύτατος",
+          "ἦν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t15",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "The allies abandoned us, which greatly harmed the city.",
+        "answer": "οἱ σύμμαχοι ἡμᾶς ἐγκατέλιπον, ὃ τὴν πόλιν μεγάλα ἔβλαψεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "σύμμαχοι",
+          "ἡμᾶς",
+          "ἐγκατέλιπον",
+          "ὃ",
+          "τὴν",
+          "πόλιν",
+          "μεγάλα",
+          "ἔβλαψεν"
+        ]
+      },
+      {
+        "prompt": "He fled from the battle, a thing which no brave man would do.",
+        "answer": "ἔφυγεν ἐκ τῆς μάχης, ὃ οὐδεὶς ἀνὴρ ἀγαθὸς ἂν ποιήσειεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔφυγεν",
+          "ἐκ",
+          "τῆς",
+          "μάχης",
+          "ὃ",
+          "οὐδεὶς",
+          "ἀνὴρ",
+          "ἀγαθὸς",
+          "ἂν",
+          "ποιήσειεν"
+        ]
+      },
+      {
+        "prompt": "The army, who were eager to fight, awaited the signal for a long time.",
+        "answer": "τὸ στράτευμα, οἳ μάχεσθαι ἐπεθύμουν, τὸ σημεῖον πολὺν χρόνον ἀνέμενον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "στράτευμα",
+          "οἳ",
+          "μάχεσθαι",
+          "ἐπεθύμουν",
+          "σημεῖον",
+          "πολὺν",
+          "χρόνον",
+          "ἀνέμενον"
+        ]
+      },
+      {
+        "prompt": "They yearned for freedom, which every people pursues as a good.",
+        "answer": "ὠρέγοντο τῆς ἐλευθερίας, ὃ πᾶς δῆμος ὡς ἀγαθὸν διώκει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὠρέγοντο",
+          "τῆς",
+          "ἐλευθερίας",
+          "ὃ",
+          "πᾶς",
+          "δῆμος",
+          "ὡς",
+          "ἀγαθὸν",
+          "διώκει"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t16",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "I, who have often commanded armies, know the dangers of war.",
+        "answer": "ἐγώ, ὃς πολλάκις στρατευμάτων ἡγησάμην, τοὺς τοῦ πολέμου κινδύνους ἐπίσταμαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐγώ",
+          "ὃς",
+          "πολλάκις",
+          "στρατευμάτων",
+          "ἡγησάμην",
+          "τοὺς",
+          "τοῦ",
+          "πολέμου",
+          "κινδύνους",
+          "ἐπίσταμαι"
+        ]
+      },
+      {
+        "prompt": "You, who despise the laws, will not escape the notice of the gods.",
+        "answer": "σύ, ὃς τῶν νόμων καταφρονεῖς, τοὺς θεοὺς οὐ λήσεις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σύ",
+          "ὃς",
+          "τῶν",
+          "νόμων",
+          "καταφρονεῖς",
+          "τοὺς",
+          "θεοὺς",
+          "οὐ",
+          "λήσεις"
+        ]
+      },
+      {
+        "prompt": "We, who freed the allies from the tyranny, are worthy of gratitude.",
+        "answer": "ἡμεῖς, οἳ τοὺς συμμάχους ἐκ τῆς τυραννίδος ἠλευθερώσαμεν, χάριτος ἄξιοί ἐσμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡμεῖς",
+          "οἳ",
+          "τοὺς",
+          "συμμάχους",
+          "ἐκ",
+          "τῆς",
+          "τυραννίδος",
+          "ἠλευθερώσαμεν",
+          "χάριτος",
+          "ἄξιοί",
+          "ἐσμεν"
+        ]
+      },
+      {
+        "prompt": "You who fled from the walls have disgraced your fathers.",
+        "answer": "ὑμεῖς, οἳ ἀπὸ τῶν τειχῶν ἐφύγετε, τοὺς πατέρας ᾐσχύνατε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὑμεῖς",
+          "οἳ",
+          "ἀπὸ",
+          "τῶν",
+          "τειχῶν",
+          "ἐφύγετε",
+          "τοὺς",
+          "πατέρας",
+          "ᾐσχύνατε"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t17",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "There are in each of us judgments, which we call opinions.",
+        "answer": "εἰσὶν ἐν ἑκάστῳ ἡμῶν κρίσεις, ἃς δόξας ὀνομάζομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰσὶν",
+          "ἐν",
+          "ἑκάστῳ",
+          "ἡμῶν",
+          "κρίσεις",
+          "ἃς",
+          "δόξας",
+          "ὀνομάζομεν"
+        ]
+      },
+      {
+        "prompt": "Beside the river he founded a colony, which they named Amphipolis.",
+        "answer": "πρὸς τῷ ποταμῷ ἀποικίαν ᾤκισεν, ἣν Ἀμφίπολιν ἐπωνόμασαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πρὸς",
+          "τῷ",
+          "ποταμῷ",
+          "ἀποικίαν",
+          "ᾤκισεν",
+          "ἣν",
+          "Ἀμφίπολιν",
+          "ἐπωνόμασαν"
+        ]
+      },
+      {
+        "prompt": "There arise in us certain affections, which we name pleasures.",
+        "answer": "ἐγγίγνονται ἐν ἡμῖν πάθη τινά, ἃς ἡδονὰς ὀνομάζομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐγγίγνονται",
+          "ἐν",
+          "ἡμῖν",
+          "πάθη",
+          "τινά",
+          "ἃς",
+          "ἡδονὰς",
+          "ὀνομάζομεν"
+        ]
+      },
+      {
+        "prompt": "He practiced justice, which he thought was the finest preparation.",
+        "answer": "τὴν δικαιοσύνην ἤσκει, ἥνπερ καλλίστην παρασκευὴν ἐνόμιζεν εἶναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὴν",
+          "δικαιοσύνην",
+          "ἤσκει",
+          "ἥνπερ",
+          "καλλίστην",
+          "παρασκευὴν",
+          "ἐνόμιζεν",
+          "εἶναι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2501-concord-of-relative-pronouns-t18",
+    "sectionId": "sm-2501-concord-of-relative-pronouns",
+    "questions": [
+      {
+        "prompt": "There being many gates, through which we had to pass, we hesitated.",
+        "answer": "πολλῶν πυλῶν οὐσῶν, ἃς ἔδει ἡμᾶς διελθεῖν, ὠκνοῦμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πολλῶν",
+          "πυλῶν",
+          "οὐσῶν",
+          "ἃς",
+          "ἔδει",
+          "ἡμᾶς",
+          "διελθεῖν",
+          "ὠκνοῦμεν"
+        ]
+      },
+      {
+        "prompt": "Leading out the soldiers in whom he most trusted, he attacked the camp.",
+        "answer": "ἐξαγαγὼν τοὺς στρατιώτας οἷς μάλιστα ἐθάρρει, τῷ στρατοπέδῳ προσέβαλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐξαγαγὼν",
+          "τοὺς",
+          "στρατιώτας",
+          "οἷς",
+          "μάλιστα",
+          "ἐθάρρει",
+          "τῷ",
+          "στρατοπέδῳ",
+          "προσέβαλεν"
+        ]
+      },
+      {
+        "prompt": "When the king had died, the son whom he loved seized the power.",
+        "answer": "τοῦ βασιλέως ἀποθανόντος, ὁ υἱὸς ὃν ἐφίλει τὴν ἀρχὴν κατέσχεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῦ",
+          "βασιλέως",
+          "ἀποθανόντος",
+          "ὁ",
+          "υἱὸς",
+          "ὃν",
+          "ἐφίλει",
+          "τὴν",
+          "ἀρχὴν",
+          "κατέσχεν"
+        ]
+      },
+      {
+        "prompt": "The general's tent, in which the prisoners were being guarded, was set on fire.",
+        "answer": "ἡ τοῦ στρατηγοῦ σκηνή, ἐν ᾗ οἱ αἰχμάλωτοι ἐφυλάττοντο, ἐνεπρήσθη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "τοῦ",
+          "στρατηγοῦ",
+          "σκηνή",
+          "ἐν",
+          "ᾗ",
+          "οἱ",
+          "αἰχμάλωτοι",
+          "ἐφυλάττοντο",
+          "ἐνεπρήσθη"
+        ]
+      }
+    ]
+  }
 ]

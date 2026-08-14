@@ -1,1202 +1,1202 @@
 [
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t1",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "No one knows why the king did not send the ships to Corinth.",
-    "answer": "οὐδεὶς οἶδεν διὰ τί ὁ βασιλεὺς οὐκ ἔπεμψε τὰς ναῦς εἰς Κόρινθον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδεὶς",
-     "οἶδεν",
-     "διὰ",
-     "τί",
-     "ὁ",
-     "βασιλεὺς",
-     "οὐκ",
-     "ἔπεμψε",
-     "τὰς",
-     "ναῦς",
-     "εἰς",
-     "Κόρινθον"
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t1",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "No one knows why the king did not send the ships to Corinth.",
+        "answer": "οὐδεὶς οἶδεν διὰ τί ὁ βασιλεὺς οὐκ ἔπεμψε τὰς ναῦς εἰς Κόρινθον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδεὶς",
+          "οἶδεν",
+          "διὰ",
+          "τί",
+          "ὁ",
+          "βασιλεὺς",
+          "οὐκ",
+          "ἔπεμψε",
+          "τὰς",
+          "ναῦς",
+          "εἰς",
+          "Κόρινθον"
+        ]
+      },
+      {
+        "prompt": "I wish to learn how you were not deceived by such an orator.",
+        "answer": "βούλομαι μαθεῖν ὅπως ὑπὸ τοιούτου ῥήτορος οὐκ ἐξηπατήθης.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "βούλομαι",
+          "μαθεῖν",
+          "ὅπως",
+          "ὑπὸ",
+          "τοιούτου",
+          "ῥήτορος",
+          "οὐκ",
+          "ἐξηπατήθης"
+        ]
+      },
+      {
+        "prompt": "He asked the jurors whether they were not ashamed of their verdict.",
+        "answer": "ἤρετο τοὺς δικαστὰς εἰ οὐκ αἰσχύνοιντο ἐπὶ τῇ κρίσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἤρετο",
+          "τοὺς",
+          "δικαστὰς",
+          "εἰ",
+          "οὐκ",
+          "αἰσχύνοιντο",
+          "ἐπὶ",
+          "τῇ",
+          "κρίσει"
+        ]
+      },
+      {
+        "prompt": "We do not know who among the soldiers is not willing to obey.",
+        "answer": "ἀγνοοῦμεν ὅστις τῶν στρατιωτῶν οὐκ ἐθέλει πείθεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀγνοοῦμεν",
+          "ὅστις",
+          "τῶν",
+          "στρατιωτῶν",
+          "οὐκ",
+          "ἐθέλει",
+          "πείθεσθαι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "I wish to learn how you were not deceived by such an orator.",
-    "answer": "βούλομαι μαθεῖν ὅπως ὑπὸ τοιούτου ῥήτορος οὐκ ἐξηπατήθης.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "βούλομαι",
-     "μαθεῖν",
-     "ὅπως",
-     "ὑπὸ",
-     "τοιούτου",
-     "ῥήτορος",
-     "οὐκ",
-     "ἐξηπατήθης"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t2",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "Consider how you may best defend yourselves and not be caught off your guard.",
+        "answer": "σκοπεῖτε ὅπως κάλλιστα ἀμυνεῖσθε καὶ μὴ ἄφρακτοι ληφθήσεσθε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκοπεῖτε",
+          "ὅπως",
+          "κάλλιστα",
+          "ἀμυνεῖσθε",
+          "καὶ",
+          "μὴ",
+          "ἄφρακτοι",
+          "ληφθήσεσθε"
+        ]
+      },
+      {
+        "prompt": "Why then do we not consider how we may avoid mistaking them?",
+        "answer": "τί οὖν οὐ σκοποῦμεν ὅπως ἂν αὐτῶν μὴ διαμαρτάνοιμεν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τί",
+          "οὖν",
+          "οὐ",
+          "σκοποῦμεν",
+          "ὅπως",
+          "ἂν",
+          "αὐτῶν",
+          "μὴ",
+          "διαμαρτάνοιμεν"
+        ]
+      },
+      {
+        "prompt": "See to it that the enemy do not seize the citadel by night.",
+        "answer": "ὅρα ὅπως οἱ πολέμιοι νύκτωρ τὴν ἀκρόπολιν μὴ καταλήψονται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "ὅπως",
+          "οἱ",
+          "πολέμιοι",
+          "νύκτωρ",
+          "τὴν",
+          "ἀκρόπολιν",
+          "μὴ",
+          "καταλήψονται"
+        ]
+      },
+      {
+        "prompt": "Let us consider how we may not betray those who trust us.",
+        "answer": "σκοπῶμεν ὅπως τοὺς ἡμῖν πιστεύοντας μὴ προδῶμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκοπῶμεν",
+          "ὅπως",
+          "τοὺς",
+          "ἡμῖν",
+          "πιστεύοντας",
+          "μὴ",
+          "προδῶμεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "He asked the jurors whether they were not ashamed of their verdict.",
-    "answer": "ἤρετο τοὺς δικαστὰς εἰ οὐκ αἰσχύνοιντο ἐπὶ τῇ κρίσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἤρετο",
-     "τοὺς",
-     "δικαστὰς",
-     "εἰ",
-     "οὐκ",
-     "αἰσχύνοιντο",
-     "ἐπὶ",
-     "τῇ",
-     "κρίσει"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t3",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "He asked the boy whether he did not remember the promises.",
+        "answer": "ἤρετο τὸν παῖδα εἰ μὴ μεμνῇτο τῶν ὑπεσχημένων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἤρετο",
+          "τὸν",
+          "παῖδα",
+          "εἰ",
+          "μὴ",
+          "μεμνῇτο",
+          "τῶν",
+          "ὑπεσχημένων"
+        ]
+      },
+      {
+        "prompt": "I am at a loss whether the envoys will not betray the city.",
+        "answer": "ἀπορῶ εἰ οἱ πρέσβεις τὴν πόλιν οὐ προδώσουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπορῶ",
+          "εἰ",
+          "οἱ",
+          "πρέσβεις",
+          "τὴν",
+          "πόλιν",
+          "οὐ",
+          "προδώσουσιν"
+        ]
+      },
+      {
+        "prompt": "Consider whether we are not doing wrong in abandoning our allies.",
+        "answer": "σκόπει εἰ μὴ ἀδικοῦμεν τοὺς συμμάχους καταλείποντες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκόπει",
+          "εἰ",
+          "μὴ",
+          "ἀδικοῦμεν",
+          "τοὺς",
+          "συμμάχους",
+          "καταλείποντες"
+        ]
+      },
+      {
+        "prompt": "He was uncertain whether the messenger had not already departed.",
+        "answer": "ἠπόρει εἰ ὁ ἄγγελος οὐκ ἤδη ἀπεληλύθει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἠπόρει",
+          "εἰ",
+          "ὁ",
+          "ἄγγελος",
+          "οὐκ",
+          "ἤδη",
+          "ἀπεληλύθει"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "We do not know who among the soldiers is not willing to obey.",
-    "answer": "ἀγνοοῦμεν ὅστις τῶν στρατιωτῶν οὐκ ἐθέλει πείθεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀγνοοῦμεν",
-     "ὅστις",
-     "τῶν",
-     "στρατιωτῶν",
-     "οὐκ",
-     "ἐθέλει",
-     "πείθεσθαι"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t4",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "The citizens judge what benefits the city and what does not.",
+        "answer": "οἱ πολῖται κρίνουσιν ἅ τε τὴν πόλιν ὠφελεῖ καὶ ἃ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πολῖται",
+          "κρίνουσιν",
+          "ἅ",
+          "τε",
+          "τὴν",
+          "πόλιν",
+          "ὠφελεῖ",
+          "καὶ",
+          "ἃ",
+          "μή"
+        ]
+      },
+      {
+        "prompt": "He showed who must address the people and who must not speak.",
+        "answer": "ἀπέδειξεν οὓς χρὴ δημηγορεῖν καὶ οὓς οὐ δεῖ λέγειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπέδειξεν",
+          "οὓς",
+          "χρὴ",
+          "δημηγορεῖν",
+          "καὶ",
+          "οὐ",
+          "δεῖ",
+          "λέγειν"
+        ]
+      },
+      {
+        "prompt": "The wise man knows what he can do and what he cannot.",
+        "answer": "ὁ σοφὸς οἶδεν ἅ τε δύναται καὶ ἃ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "σοφὸς",
+          "οἶδεν",
+          "ἅ",
+          "τε",
+          "δύναται",
+          "καὶ",
+          "ἃ",
+          "μή"
+        ]
+      },
+      {
+        "prompt": "The general learned which of the soldiers were brave and which were not.",
+        "answer": "ὁ στρατηγὸς ἔμαθεν οἵτινες τῶν στρατιωτῶν ἀνδρεῖοι εἶεν καὶ οἵτινες μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "ἔμαθεν",
+          "οἵτινες",
+          "τῶν",
+          "στρατιωτῶν",
+          "ἀνδρεῖοι",
+          "εἶεν",
+          "καὶ",
+          "μή"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t2",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "Consider how you may best defend yourselves and not be caught off your guard.",
-    "answer": "σκοπεῖτε ὅπως κάλλιστα ἀμυνεῖσθε καὶ μὴ ἄφρακτοι ληφθήσεσθε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκοπεῖτε",
-     "ὅπως",
-     "κάλλιστα",
-     "ἀμυνεῖσθε",
-     "καὶ",
-     "μὴ",
-     "ἄφρακτοι",
-     "ληφθήσεσθε"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t5",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "Let us consider whether it is fitting for us or not.",
+        "answer": "σκοπῶμεν εἰ ἡμῖν πρέπει ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκοπῶμεν",
+          "εἰ",
+          "ἡμῖν",
+          "πρέπει",
+          "ἢ",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "I will try to learn whether what you say is true or not.",
+        "answer": "πειράσομαι μαθεῖν εἰ ἀληθές ἐστιν ὃ λέγεις ἢ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πειράσομαι",
+          "μαθεῖν",
+          "εἰ",
+          "ἀληθές",
+          "ἐστιν",
+          "ὃ",
+          "λέγεις",
+          "ἢ",
+          "μή"
+        ]
+      },
+      {
+        "prompt": "We must examine whether the laws have been well established or not.",
+        "answer": "σκεπτέον εἰ οἱ νόμοι καλῶς κεῖνται ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκεπτέον",
+          "εἰ",
+          "οἱ",
+          "νόμοι",
+          "καλῶς",
+          "κεῖνται",
+          "ἢ",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "I asked whether the road to the sea was safe or not.",
+        "answer": "ἠρώτησα εἰ ἡ ὁδὸς ἡ πρὸς τὴν θάλατταν ἀσφαλὴς εἴη ἢ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἠρώτησα",
+          "εἰ",
+          "ἡ",
+          "ὁδὸς",
+          "πρὸς",
+          "τὴν",
+          "θάλατταν",
+          "ἀσφαλὴς",
+          "εἴη",
+          "ἢ",
+          "μή"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Why then do we not consider how we may avoid mistaking them?",
-    "answer": "τί οὖν οὐ σκοποῦμεν ὅπως ἂν αὐτῶν μὴ διαμαρτάνοιμεν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τί",
-     "οὖν",
-     "οὐ",
-     "σκοποῦμεν",
-     "ὅπως",
-     "ἂν",
-     "αὐτῶν",
-     "μὴ",
-     "διαμαρτάνοιμεν"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t6",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "You must consider whether the laws are well established or not, and whether they teach rightly or not.",
+        "answer": "δεῖ ὑμᾶς σκοπεῖν εἰ οἱ νόμοι καλῶς κεῖνται ἢ μή, καὶ εἰ ὀρθῶς διδάσκουσιν ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δεῖ",
+          "ὑμᾶς",
+          "σκοπεῖν",
+          "εἰ",
+          "οἱ",
+          "νόμοι",
+          "καλῶς",
+          "κεῖνται",
+          "ἢ",
+          "μή",
+          "καὶ",
+          "ὀρθῶς",
+          "διδάσκουσιν",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "I do not know how I am to say this and not to say it.",
+        "answer": "οὐκ οἶδα ὅπως τοῦτο φῶ καὶ μὴ φῶ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "οἶδα",
+          "ὅπως",
+          "τοῦτο",
+          "φῶ",
+          "καὶ",
+          "μὴ"
+        ]
+      },
+      {
+        "prompt": "I shall know whether its possessor is not happy or is happy.",
+        "answer": "εἴσομαι πότερον ὁ ἔχων αὐτὸ οὐκ εὐδαίμων ἐστὶν ἢ εὐδαίμων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴσομαι",
+          "πότερον",
+          "ὁ",
+          "ἔχων",
+          "αὐτὸ",
+          "οὐκ",
+          "εὐδαίμων",
+          "ἐστὶν",
+          "ἢ"
+        ]
+      },
+      {
+        "prompt": "Let us consider whether the citizens are not being wronged by the tyrant.",
+        "answer": "σκοπῶμεν εἰ μὴ οἱ πολῖται ὑπὸ τοῦ τυράννου ἀδικοῦνται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκοπῶμεν",
+          "εἰ",
+          "μὴ",
+          "οἱ",
+          "πολῖται",
+          "ὑπὸ",
+          "τοῦ",
+          "τυράννου",
+          "ἀδικοῦνται"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "See to it that the enemy do not seize the citadel by night.",
-    "answer": "ὅρα ὅπως οἱ πολέμιοι νύκτωρ τὴν ἀκρόπολιν μὴ καταλήψονται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "ὅπως",
-     "οἱ",
-     "πολέμιοι",
-     "νύκτωρ",
-     "τὴν",
-     "ἀκρόπολιν",
-     "μὴ",
-     "καταλήψονται"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t7",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "I do not know why the general did not lead the army out of the camp.",
+        "answer": "οὐκ οἶδα διὰ τί ὁ στρατηγὸς οὐκ ἐξήγαγε τὸ στράτευμα ἐκ τοῦ στρατοπέδου.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "οἶδα",
+          "διὰ",
+          "τί",
+          "ὁ",
+          "στρατηγὸς",
+          "ἐξήγαγε",
+          "τὸ",
+          "στράτευμα",
+          "ἐκ",
+          "τοῦ",
+          "στρατοπέδου"
+        ]
+      },
+      {
+        "prompt": "The old man asked how the enemy had not taken the citadel.",
+        "answer": "ὁ γέρων ἠρώτησεν ὅπως οἱ πολέμιοι οὐκ εἷλον τὴν ἀκρόπολιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "ἠρώτησεν",
+          "ὅπως",
+          "οἱ",
+          "πολέμιοι",
+          "οὐκ",
+          "εἷλον",
+          "τὴν",
+          "ἀκρόπολιν"
+        ]
+      },
+      {
+        "prompt": "It is unclear when the ambassadors will not obey the decree.",
+        "answer": "ἄδηλόν ἐστι πότε οἱ πρέσβεις οὐ πείσονται τῷ ψηφίσματι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄδηλόν",
+          "ἐστι",
+          "πότε",
+          "οἱ",
+          "πρέσβεις",
+          "οὐ",
+          "πείσονται",
+          "τῷ",
+          "ψηφίσματι"
+        ]
+      },
+      {
+        "prompt": "Tell me where the soldiers did not find water.",
+        "answer": "εἰπέ μοι ὅπου οἱ στρατιῶται οὐχ ηὗρον ὕδωρ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰπέ",
+          "μοι",
+          "ὅπου",
+          "οἱ",
+          "στρατιῶται",
+          "οὐχ",
+          "ηὗρον",
+          "ὕδωρ"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Let us consider how we may not betray those who trust us.",
-    "answer": "σκοπῶμεν ὅπως τοὺς ἡμῖν πιστεύοντας μὴ προδῶμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκοπῶμεν",
-     "ὅπως",
-     "τοὺς",
-     "ἡμῖν",
-     "πιστεύοντας",
-     "μὴ",
-     "προδῶμεν"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t8",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "Consider by what means we may not be deceived by the flatterers.",
+        "answer": "σκόπει ὅτῳ τρόπῳ μὴ ἐξαπατηθῶμεν ὑπὸ τῶν κολάκων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκόπει",
+          "ὅτῳ",
+          "τρόπῳ",
+          "μὴ",
+          "ἐξαπατηθῶμεν",
+          "ὑπὸ",
+          "τῶν",
+          "κολάκων"
+        ]
+      },
+      {
+        "prompt": "See to it that you do not betray your comrades.",
+        "answer": "ὁρᾶτε ὅπως μὴ προδώσετε τοὺς ἑταίρους.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁρᾶτε",
+          "ὅπως",
+          "μὴ",
+          "προδώσετε",
+          "τοὺς",
+          "ἑταίρους"
+        ]
+      },
+      {
+        "prompt": "Let us consider how we may not fall into the same errors.",
+        "answer": "σκοπῶμεν ὅπως μὴ εἰς τὰ αὐτὰ ἁμαρτήματα ἐμπέσωμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκοπῶμεν",
+          "ὅπως",
+          "μὴ",
+          "εἰς",
+          "τὰ",
+          "αὐτὰ",
+          "ἁμαρτήματα",
+          "ἐμπέσωμεν"
+        ]
+      },
+      {
+        "prompt": "Why then do we not consider how we might not be caught by the storm?",
+        "answer": "τί οὖν οὐ σκοποῦμεν ὅπως ἂν μὴ ὑπὸ τοῦ χειμῶνος ληφθείημεν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τί",
+          "οὖν",
+          "οὐ",
+          "σκοποῦμεν",
+          "ὅπως",
+          "ἂν",
+          "μὴ",
+          "ὑπὸ",
+          "τοῦ",
+          "χειμῶνος",
+          "ληφθείημεν"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t3",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "He asked the boy whether he did not remember the promises.",
-    "answer": "ἤρετο τὸν παῖδα εἰ μὴ μεμνῇτο τῶν ὑπεσχημένων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἤρετο",
-     "τὸν",
-     "παῖδα",
-     "εἰ",
-     "μὴ",
-     "μεμνῇτο",
-     "τῶν",
-     "ὑπεσχημένων"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t9",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "He asked the citizens whether they were not ashamed of their deeds.",
+        "answer": "ἤρετο τοὺς πολίτας εἰ οὐκ αἰσχύνοιντο τοῖς ἔργοις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἤρετο",
+          "τοὺς",
+          "πολίτας",
+          "εἰ",
+          "οὐκ",
+          "αἰσχύνοιντο",
+          "τοῖς",
+          "ἔργοις"
+        ]
+      },
+      {
+        "prompt": "I wish to know whether the young man does not honor his teacher.",
+        "answer": "βούλομαι εἰδέναι εἰ ὁ νεανίας οὐ τιμᾷ τὸν διδάσκαλον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "βούλομαι",
+          "εἰδέναι",
+          "εἰ",
+          "ὁ",
+          "νεανίας",
+          "οὐ",
+          "τιμᾷ",
+          "τὸν",
+          "διδάσκαλον"
+        ]
+      },
+      {
+        "prompt": "He asked me whether I did not remember the oaths.",
+        "answer": "ἤρετό με εἰ μὴ μέμνημαι τοὺς ὅρκους.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἤρετό",
+          "με",
+          "εἰ",
+          "μὴ",
+          "μέμνημαι",
+          "τοὺς",
+          "ὅρκους"
+        ]
+      },
+      {
+        "prompt": "The general considered whether the men would not desert in the night.",
+        "answer": "ὁ στρατηγὸς ἐσκόπει εἰ μὴ οἱ ἄνδρες νύκτωρ αὐτομολήσοιεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "ἐσκόπει",
+          "εἰ",
+          "μὴ",
+          "οἱ",
+          "ἄνδρες",
+          "νύκτωρ",
+          "αὐτομολήσοιεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "I am at a loss whether the envoys will not betray the city.",
-    "answer": "ἀπορῶ εἰ οἱ πρέσβεις τὴν πόλιν οὐ προδώσουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπορῶ",
-     "εἰ",
-     "οἱ",
-     "πρέσβεις",
-     "τὴν",
-     "πόλιν",
-     "οὐ",
-     "προδώσουσιν"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t10",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "They distinguish between what they are able to do and what they are not.",
+        "answer": "διαγιγνώσκουσιν ἅ τε δύνανται καὶ ἃ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "διαγιγνώσκουσιν",
+          "ἅ",
+          "τε",
+          "δύνανται",
+          "καὶ",
+          "ἃ",
+          "μή"
+        ]
+      },
+      {
+        "prompt": "You know how many guards are sufficient and how many are not.",
+        "answer": "οἶσθα ὁπόσοι φύλακες ἱκανοί εἰσι καὶ ὁπόσοι μή εἰσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἶσθα",
+          "ὁπόσοι",
+          "φύλακες",
+          "ἱκανοί",
+          "εἰσι",
+          "καὶ",
+          "μή",
+          "εἰσιν"
+        ]
+      },
+      {
+        "prompt": "He showed which men must speak and which must not address the people.",
+        "answer": "ἀπέδειξεν οὓς χρὴ λέγειν καὶ οὓς οὐ δεῖ δημηγορεῖν ἐν τῷ δήμῳ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπέδειξεν",
+          "οὓς",
+          "χρὴ",
+          "λέγειν",
+          "καὶ",
+          "οὐ",
+          "δεῖ",
+          "δημηγορεῖν",
+          "ἐν",
+          "τῷ",
+          "δήμῳ"
+        ]
+      },
+      {
+        "prompt": "The wise man learns which things are worth pursuing and which are not.",
+        "answer": "ὁ σοφὸς μανθάνει ἃ ἄξιόν ἐστι διώκειν καὶ ἃ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "σοφὸς",
+          "μανθάνει",
+          "ἃ",
+          "ἄξιόν",
+          "ἐστι",
+          "διώκειν",
+          "καὶ",
+          "μή"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Consider whether we are not doing wrong in abandoning our allies.",
-    "answer": "σκόπει εἰ μὴ ἀδικοῦμεν τοὺς συμμάχους καταλείποντες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκόπει",
-     "εἰ",
-     "μὴ",
-     "ἀδικοῦμεν",
-     "τοὺς",
-     "συμμάχους",
-     "καταλείποντες"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t11",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "Let us consider whether it is just for us to flee or not.",
+        "answer": "σκοπῶμεν εἰ δίκαιόν ἐστιν ἡμῖν φεύγειν ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκοπῶμεν",
+          "εἰ",
+          "δίκαιόν",
+          "ἐστιν",
+          "ἡμῖν",
+          "φεύγειν",
+          "ἢ",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "I will try to learn whether what he says is true or not.",
+        "answer": "πειράσομαι μαθεῖν εἰ ἀληθές ἐστιν ὃ λέγει ἢ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πειράσομαι",
+          "μαθεῖν",
+          "εἰ",
+          "ἀληθές",
+          "ἐστιν",
+          "ὃ",
+          "λέγει",
+          "ἢ",
+          "μή"
+        ]
+      },
+      {
+        "prompt": "The council debated whether to make a treaty with the Thebans or not.",
+        "answer": "ἡ βουλὴ ἐβουλεύετο εἰ σπονδὰς ποιήσαιντο πρὸς τοὺς Θηβαίους ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "βουλὴ",
+          "ἐβουλεύετο",
+          "εἰ",
+          "σπονδὰς",
+          "ποιήσαιντο",
+          "πρὸς",
+          "τοὺς",
+          "Θηβαίους",
+          "ἢ",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "Ask whether the road is safe or not.",
+        "answer": "ἐροῦ εἰ ἀσφαλής ἐστιν ἡ ὁδὸς ἢ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐροῦ",
+          "εἰ",
+          "ἀσφαλής",
+          "ἐστιν",
+          "ἡ",
+          "ὁδὸς",
+          "ἢ",
+          "μή"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "He was uncertain whether the messenger had not already departed.",
-    "answer": "ἠπόρει εἰ ὁ ἄγγελος οὐκ ἤδη ἀπεληλύθει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἠπόρει",
-     "εἰ",
-     "ὁ",
-     "ἄγγελος",
-     "οὐκ",
-     "ἤδη",
-     "ἀπεληλύθει"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t12",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "You must examine whether the general commanded well or not, and whether the soldiers obeyed rightly or not.",
+        "answer": "δεῖ σε σκοπεῖν εἰ καλῶς ὁ στρατηγὸς προσέταξεν ἢ μή, καὶ εἰ ὀρθῶς οἱ στρατιῶται ἐπείθοντο ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δεῖ",
+          "σε",
+          "σκοπεῖν",
+          "εἰ",
+          "καλῶς",
+          "ὁ",
+          "στρατηγὸς",
+          "προσέταξεν",
+          "ἢ",
+          "μή",
+          "καὶ",
+          "ὀρθῶς",
+          "οἱ",
+          "στρατιῶται",
+          "ἐπείθοντο",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "Let us inquire whether the truce came about justly or not, and whether it benefits the city or not.",
+        "answer": "σκεψώμεθα εἰ δικαίως αἱ σπονδαὶ ἐγένοντο ἢ μή, καὶ εἰ τῇ πόλει συμφέρουσιν ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκεψώμεθα",
+          "εἰ",
+          "δικαίως",
+          "αἱ",
+          "σπονδαὶ",
+          "ἐγένοντο",
+          "ἢ",
+          "μή",
+          "καὶ",
+          "τῇ",
+          "πόλει",
+          "συμφέρουσιν",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "I do not know whether he spoke the truth or not, nor whether he is worthy of trust or not.",
+        "answer": "οὐκ οἶδα εἰ ἀληθῆ εἶπεν ἢ μή, οὐδὲ εἰ ἄξιός ἐστι πίστεως ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "οἶδα",
+          "εἰ",
+          "ἀληθῆ",
+          "εἶπεν",
+          "ἢ",
+          "μή",
+          "οὐδὲ",
+          "ἄξιός",
+          "ἐστι",
+          "πίστεως",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "Consider whether they act nobly or not, and whether they are truly friends or not.",
+        "answer": "σκόπει εἰ καλῶς πράττουσιν ἢ μή, καὶ εἰ ὡς ἀληθῶς φίλοι εἰσὶν ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκόπει",
+          "εἰ",
+          "καλῶς",
+          "πράττουσιν",
+          "ἢ",
+          "μή",
+          "καὶ",
+          "ὡς",
+          "ἀληθῶς",
+          "φίλοι",
+          "εἰσὶν",
+          "οὔ"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t4",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "The citizens judge what benefits the city and what does not.",
-    "answer": "οἱ πολῖται κρίνουσιν ἅ τε τὴν πόλιν ὠφελεῖ καὶ ἃ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πολῖται",
-     "κρίνουσιν",
-     "ἅ",
-     "τε",
-     "τὴν",
-     "πόλιν",
-     "ὠφελεῖ",
-     "καὶ",
-     "ἃ",
-     "μή"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t13",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "No one knows why the ambassadors did not persuade the assembly.",
+        "answer": "οὐκ οἶδα διὰ τί οἱ πρέσβεις οὐκ ἔπεισαν τὴν ἐκκλησίαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "οἶδα",
+          "διὰ",
+          "τί",
+          "οἱ",
+          "πρέσβεις",
+          "ἔπεισαν",
+          "τὴν",
+          "ἐκκλησίαν"
+        ]
+      },
+      {
+        "prompt": "He asked whether the guards were not keeping watch over the walls.",
+        "answer": "ἤρετο εἰ οἱ φύλακες οὐκ ἐφύλαττον τὰ τείχη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἤρετο",
+          "εἰ",
+          "οἱ",
+          "φύλακες",
+          "οὐκ",
+          "ἐφύλαττον",
+          "τὰ",
+          "τείχη"
+        ]
+      },
+      {
+        "prompt": "No one knows who did not flee from the battle.",
+        "answer": "οὐδεὶς οἶδεν ὅστις οὐκ ἔφυγεν ἐκ τῆς μάχης.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδεὶς",
+          "οἶδεν",
+          "ὅστις",
+          "οὐκ",
+          "ἔφυγεν",
+          "ἐκ",
+          "τῆς",
+          "μάχης"
+        ]
+      },
+      {
+        "prompt": "I shall learn whether the one who has wealth is not happy.",
+        "answer": "εἴσομαι εἰ ὁ τὸν πλοῦτον ἔχων οὐκ εὐδαίμων ἐστίν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴσομαι",
+          "εἰ",
+          "ὁ",
+          "τὸν",
+          "πλοῦτον",
+          "ἔχων",
+          "οὐκ",
+          "εὐδαίμων",
+          "ἐστίν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "He showed who must address the people and who must not speak.",
-    "answer": "ἀπέδειξεν οὓς χρὴ δημηγορεῖν καὶ οὓς οὐ δεῖ λέγειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπέδειξεν",
-     "οὓς",
-     "χρὴ",
-     "δημηγορεῖν",
-     "καὶ",
-     "οὐ",
-     "δεῖ",
-     "λέγειν"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t14",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "Consider how you may not fall into the hands of the enemy.",
+        "answer": "σκόπει ὅπως μὴ εἰς τὰς τῶν πολεμίων χεῖρας ἐμπέσῃς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκόπει",
+          "ὅπως",
+          "μὴ",
+          "εἰς",
+          "τὰς",
+          "τῶν",
+          "πολεμίων",
+          "χεῖρας",
+          "ἐμπέσῃς"
+        ]
+      },
+      {
+        "prompt": "See that you are not caught off your guard by the ambush.",
+        "answer": "ὅρα ὅπως μὴ ὑπὸ τῆς ἐνέδρας ἀφύλακτος ληφθῇς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "ὅπως",
+          "μὴ",
+          "ὑπὸ",
+          "τῆς",
+          "ἐνέδρας",
+          "ἀφύλακτος",
+          "ληφθῇς"
+        ]
+      },
+      {
+        "prompt": "Why then do we not consider how we may not be deprived of our allies?",
+        "answer": "τί οὖν οὐ σκοποῦμεν ὅπως ἂν μὴ τῶν συμμάχων στερηθείημεν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τί",
+          "οὖν",
+          "οὐ",
+          "σκοποῦμεν",
+          "ὅπως",
+          "ἂν",
+          "μὴ",
+          "τῶν",
+          "συμμάχων",
+          "στερηθείημεν"
+        ]
+      },
+      {
+        "prompt": "The generals were considering how they might not lose the city.",
+        "answer": "οἱ στρατηγοὶ ἐσκόπουν ὅπως μὴ τὴν πόλιν ἀπολέσειαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατηγοὶ",
+          "ἐσκόπουν",
+          "ὅπως",
+          "μὴ",
+          "τὴν",
+          "πόλιν",
+          "ἀπολέσειαν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The wise man knows what he can do and what he cannot.",
-    "answer": "ὁ σοφὸς οἶδεν ἅ τε δύναται καὶ ἃ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "σοφὸς",
-     "οἶδεν",
-     "ἅ",
-     "τε",
-     "δύναται",
-     "καὶ",
-     "ἃ",
-     "μή"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t15",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "The wise man distinguishes what things are good and what are not.",
+        "answer": "ὁ σοφὸς διακρίνει ἅ τε ἀγαθά ἐστι καὶ ἃ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "σοφὸς",
+          "διακρίνει",
+          "ἅ",
+          "τε",
+          "ἀγαθά",
+          "ἐστι",
+          "καὶ",
+          "ἃ",
+          "μή"
+        ]
+      },
+      {
+        "prompt": "You know how many of the soldiers are trustworthy and how many are not.",
+        "answer": "οἶσθα ὁπόσοι τῶν στρατιωτῶν πιστοί εἰσι καὶ ὁπόσοι μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἶσθα",
+          "ὁπόσοι",
+          "τῶν",
+          "στρατιωτῶν",
+          "πιστοί",
+          "εἰσι",
+          "καὶ",
+          "μή"
+        ]
+      },
+      {
+        "prompt": "He showed who must rule and who must not obey.",
+        "answer": "ἀπέδειξεν οὓς χρὴ ἄρχειν καὶ οὓς οὐ δεῖ πείθεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπέδειξεν",
+          "οὓς",
+          "χρὴ",
+          "ἄρχειν",
+          "καὶ",
+          "οὐ",
+          "δεῖ",
+          "πείθεσθαι"
+        ]
+      },
+      {
+        "prompt": "The law defines what things it is permitted to do and what it is not.",
+        "answer": "ὁ νόμος ὁρίζει ἃ ἔξεστι πράττειν καὶ ἃ οὐκ ἔξεστιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "νόμος",
+          "ὁρίζει",
+          "ἃ",
+          "ἔξεστι",
+          "πράττειν",
+          "καὶ",
+          "οὐκ",
+          "ἔξεστιν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The general learned which of the soldiers were brave and which were not.",
-    "answer": "ὁ στρατηγὸς ἔμαθεν οἵτινες τῶν στρατιωτῶν ἀνδρεῖοι εἶεν καὶ οἵτινες μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "ἔμαθεν",
-     "οἵτινες",
-     "τῶν",
-     "στρατιωτῶν",
-     "ἀνδρεῖοι",
-     "εἶεν",
-     "καὶ",
-     "μή"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-t16",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "Let us examine whether the treaty is just or not.",
+        "answer": "σκοπῶμεν εἰ δικαία ἐστὶν ἡ σπονδὴ ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκοπῶμεν",
+          "εἰ",
+          "δικαία",
+          "ἐστὶν",
+          "ἡ",
+          "σπονδὴ",
+          "ἢ",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "Consider whether it is fitting to trust the messenger or not.",
+        "answer": "σκόπει εἰ πρέπει τῷ ἀγγέλῳ πιστεύειν ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σκόπει",
+          "εἰ",
+          "πρέπει",
+          "τῷ",
+          "ἀγγέλῳ",
+          "πιστεύειν",
+          "ἢ",
+          "οὔ"
+        ]
+      },
+      {
+        "prompt": "You must consider whether the general spoke truly or not, and whether his counsel was useful or not.",
+        "answer": "δεῖ σκοπεῖν εἰ ὁ στρατηγὸς ἀληθῆ εἶπεν ἢ μή, καὶ εἰ ἡ συμβουλὴ ὠφέλιμος ἦν ἢ οὔ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δεῖ",
+          "σκοπεῖν",
+          "εἰ",
+          "ὁ",
+          "στρατηγὸς",
+          "ἀληθῆ",
+          "εἶπεν",
+          "ἢ",
+          "μή",
+          "καὶ",
+          "ἡ",
+          "συμβουλὴ",
+          "ὠφέλιμος",
+          "ἦν",
+          "οὔ"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t5",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "Let us consider whether it is fitting for us or not.",
-    "answer": "σκοπῶμεν εἰ ἡμῖν πρέπει ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκοπῶμεν",
-     "εἰ",
-     "ἡμῖν",
-     "πρέπει",
-     "ἢ",
-     "οὔ"
+  },
+  {
+    "id": "sm-2676-the-negatives-in-indirect-questions-q1",
+    "sectionId": "sm-2676-the-negatives-in-indirect-questions",
+    "questions": [
+      {
+        "prompt": "I shall know whether its possessor is happy or not.",
+        "answer": "εἴσομαι πότερον ὁ ἔχων αὐτὸ οὐκ εὐδαίμων ἐστὶν ἢ εὐδαίμων",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴσομαι",
+          "πότερον",
+          "ὁ",
+          "ἔχων",
+          "αὐτὸ",
+          "οὐκ",
+          "εὐδαίμων",
+          "ἐστὶν",
+          "ἢ",
+          "εὐδαίμων"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Republic",
+          "locus": "354c"
+        }
+      },
+      {
+        "prompt": "He asked the people whether they were not ashamed.",
+        "answer": "ἤρετο τὸν δῆμον εἰ οὐκ αἰσχύνοιντο",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἤρετο",
+          "τὸν",
+          "δῆμον",
+          "εἰ",
+          "οὐκ",
+          "αἰσχύνοιντο"
+        ],
+        "source": {
+          "author": "Aeschines",
+          "work": "Orations",
+          "locus": "1.84"
+        }
+      },
+      {
+        "prompt": "They distinguish between what they can do and what they cannot.",
+        "answer": "διαγιγνώσκουσιν ἅ τε δύνανται καὶ ἃ μή",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "διαγιγνώσκουσιν",
+          "ἅ",
+          "τε",
+          "δύνανται",
+          "καὶ",
+          "ἃ",
+          "μή"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Memorabilia",
+          "locus": "4.2.26"
+        }
+      },
+      {
+        "prompt": "He showed who must speak in the assembly and who must not speak before the people.",
+        "answer": "ἀπέδειξεν οὓς χρὴ δημηγορεῖν καὶ οὓς οὐ δεῖ λέγειν ἐν τῷ δήμῳ",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπέδειξεν",
+          "οὓς",
+          "χρὴ",
+          "δημηγορεῖν",
+          "καὶ",
+          "οὓς",
+          "οὐ",
+          "δεῖ",
+          "λέγειν",
+          "ἐν",
+          "τῷ",
+          "δήμῳ"
+        ],
+        "source": {
+          "author": "Aeschines",
+          "work": "Orations",
+          "locus": "1.27"
+        }
+      }
     ]
-   },
-   {
-    "prompt": "I will try to learn whether what you say is true or not.",
-    "answer": "πειράσομαι μαθεῖν εἰ ἀληθές ἐστιν ὃ λέγεις ἢ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πειράσομαι",
-     "μαθεῖν",
-     "εἰ",
-     "ἀληθές",
-     "ἐστιν",
-     "ὃ",
-     "λέγεις",
-     "ἢ",
-     "μή"
-    ]
-   },
-   {
-    "prompt": "We must examine whether the laws have been well established or not.",
-    "answer": "σκεπτέον εἰ οἱ νόμοι καλῶς κεῖνται ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκεπτέον",
-     "εἰ",
-     "οἱ",
-     "νόμοι",
-     "καλῶς",
-     "κεῖνται",
-     "ἢ",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "I asked whether the road to the sea was safe or not.",
-    "answer": "ἠρώτησα εἰ ἡ ὁδὸς ἡ πρὸς τὴν θάλατταν ἀσφαλὴς εἴη ἢ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἠρώτησα",
-     "εἰ",
-     "ἡ",
-     "ὁδὸς",
-     "πρὸς",
-     "τὴν",
-     "θάλατταν",
-     "ἀσφαλὴς",
-     "εἴη",
-     "ἢ",
-     "μή"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t6",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "You must consider whether the laws are well established or not, and whether they teach rightly or not.",
-    "answer": "δεῖ ὑμᾶς σκοπεῖν εἰ οἱ νόμοι καλῶς κεῖνται ἢ μή, καὶ εἰ ὀρθῶς διδάσκουσιν ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δεῖ",
-     "ὑμᾶς",
-     "σκοπεῖν",
-     "εἰ",
-     "οἱ",
-     "νόμοι",
-     "καλῶς",
-     "κεῖνται",
-     "ἢ",
-     "μή",
-     "καὶ",
-     "ὀρθῶς",
-     "διδάσκουσιν",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "I do not know how I am to say this and not to say it.",
-    "answer": "οὐκ οἶδα ὅπως τοῦτο φῶ καὶ μὴ φῶ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "οἶδα",
-     "ὅπως",
-     "τοῦτο",
-     "φῶ",
-     "καὶ",
-     "μὴ"
-    ]
-   },
-   {
-    "prompt": "I shall know whether its possessor is not happy or is happy.",
-    "answer": "εἴσομαι πότερον ὁ ἔχων αὐτὸ οὐκ εὐδαίμων ἐστὶν ἢ εὐδαίμων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴσομαι",
-     "πότερον",
-     "ὁ",
-     "ἔχων",
-     "αὐτὸ",
-     "οὐκ",
-     "εὐδαίμων",
-     "ἐστὶν",
-     "ἢ"
-    ]
-   },
-   {
-    "prompt": "Let us consider whether the citizens are not being wronged by the tyrant.",
-    "answer": "σκοπῶμεν εἰ μὴ οἱ πολῖται ὑπὸ τοῦ τυράννου ἀδικοῦνται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκοπῶμεν",
-     "εἰ",
-     "μὴ",
-     "οἱ",
-     "πολῖται",
-     "ὑπὸ",
-     "τοῦ",
-     "τυράννου",
-     "ἀδικοῦνται"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t7",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "I do not know why the general did not lead the army out of the camp.",
-    "answer": "οὐκ οἶδα διὰ τί ὁ στρατηγὸς οὐκ ἐξήγαγε τὸ στράτευμα ἐκ τοῦ στρατοπέδου.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "οἶδα",
-     "διὰ",
-     "τί",
-     "ὁ",
-     "στρατηγὸς",
-     "ἐξήγαγε",
-     "τὸ",
-     "στράτευμα",
-     "ἐκ",
-     "τοῦ",
-     "στρατοπέδου"
-    ]
-   },
-   {
-    "prompt": "The old man asked how the enemy had not taken the citadel.",
-    "answer": "ὁ γέρων ἠρώτησεν ὅπως οἱ πολέμιοι οὐκ εἷλον τὴν ἀκρόπολιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "ἠρώτησεν",
-     "ὅπως",
-     "οἱ",
-     "πολέμιοι",
-     "οὐκ",
-     "εἷλον",
-     "τὴν",
-     "ἀκρόπολιν"
-    ]
-   },
-   {
-    "prompt": "It is unclear when the ambassadors will not obey the decree.",
-    "answer": "ἄδηλόν ἐστι πότε οἱ πρέσβεις οὐ πείσονται τῷ ψηφίσματι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄδηλόν",
-     "ἐστι",
-     "πότε",
-     "οἱ",
-     "πρέσβεις",
-     "οὐ",
-     "πείσονται",
-     "τῷ",
-     "ψηφίσματι"
-    ]
-   },
-   {
-    "prompt": "Tell me where the soldiers did not find water.",
-    "answer": "εἰπέ μοι ὅπου οἱ στρατιῶται οὐχ ηὗρον ὕδωρ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰπέ",
-     "μοι",
-     "ὅπου",
-     "οἱ",
-     "στρατιῶται",
-     "οὐχ",
-     "ηὗρον",
-     "ὕδωρ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t8",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "Consider by what means we may not be deceived by the flatterers.",
-    "answer": "σκόπει ὅτῳ τρόπῳ μὴ ἐξαπατηθῶμεν ὑπὸ τῶν κολάκων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκόπει",
-     "ὅτῳ",
-     "τρόπῳ",
-     "μὴ",
-     "ἐξαπατηθῶμεν",
-     "ὑπὸ",
-     "τῶν",
-     "κολάκων"
-    ]
-   },
-   {
-    "prompt": "See to it that you do not betray your comrades.",
-    "answer": "ὁρᾶτε ὅπως μὴ προδώσετε τοὺς ἑταίρους.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁρᾶτε",
-     "ὅπως",
-     "μὴ",
-     "προδώσετε",
-     "τοὺς",
-     "ἑταίρους"
-    ]
-   },
-   {
-    "prompt": "Let us consider how we may not fall into the same errors.",
-    "answer": "σκοπῶμεν ὅπως μὴ εἰς τὰ αὐτὰ ἁμαρτήματα ἐμπέσωμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκοπῶμεν",
-     "ὅπως",
-     "μὴ",
-     "εἰς",
-     "τὰ",
-     "αὐτὰ",
-     "ἁμαρτήματα",
-     "ἐμπέσωμεν"
-    ]
-   },
-   {
-    "prompt": "Why then do we not consider how we might not be caught by the storm?",
-    "answer": "τί οὖν οὐ σκοποῦμεν ὅπως ἂν μὴ ὑπὸ τοῦ χειμῶνος ληφθείημεν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τί",
-     "οὖν",
-     "οὐ",
-     "σκοποῦμεν",
-     "ὅπως",
-     "ἂν",
-     "μὴ",
-     "ὑπὸ",
-     "τοῦ",
-     "χειμῶνος",
-     "ληφθείημεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t9",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "He asked the citizens whether they were not ashamed of their deeds.",
-    "answer": "ἤρετο τοὺς πολίτας εἰ οὐκ αἰσχύνοιντο τοῖς ἔργοις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἤρετο",
-     "τοὺς",
-     "πολίτας",
-     "εἰ",
-     "οὐκ",
-     "αἰσχύνοιντο",
-     "τοῖς",
-     "ἔργοις"
-    ]
-   },
-   {
-    "prompt": "I wish to know whether the young man does not honor his teacher.",
-    "answer": "βούλομαι εἰδέναι εἰ ὁ νεανίας οὐ τιμᾷ τὸν διδάσκαλον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "βούλομαι",
-     "εἰδέναι",
-     "εἰ",
-     "ὁ",
-     "νεανίας",
-     "οὐ",
-     "τιμᾷ",
-     "τὸν",
-     "διδάσκαλον"
-    ]
-   },
-   {
-    "prompt": "He asked me whether I did not remember the oaths.",
-    "answer": "ἤρετό με εἰ μὴ μέμνημαι τοὺς ὅρκους.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἤρετό",
-     "με",
-     "εἰ",
-     "μὴ",
-     "μέμνημαι",
-     "τοὺς",
-     "ὅρκους"
-    ]
-   },
-   {
-    "prompt": "The general considered whether the men would not desert in the night.",
-    "answer": "ὁ στρατηγὸς ἐσκόπει εἰ μὴ οἱ ἄνδρες νύκτωρ αὐτομολήσοιεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "ἐσκόπει",
-     "εἰ",
-     "μὴ",
-     "οἱ",
-     "ἄνδρες",
-     "νύκτωρ",
-     "αὐτομολήσοιεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t10",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "They distinguish between what they are able to do and what they are not.",
-    "answer": "διαγιγνώσκουσιν ἅ τε δύνανται καὶ ἃ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "διαγιγνώσκουσιν",
-     "ἅ",
-     "τε",
-     "δύνανται",
-     "καὶ",
-     "ἃ",
-     "μή"
-    ]
-   },
-   {
-    "prompt": "You know how many guards are sufficient and how many are not.",
-    "answer": "οἶσθα ὁπόσοι φύλακες ἱκανοί εἰσι καὶ ὁπόσοι μή εἰσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἶσθα",
-     "ὁπόσοι",
-     "φύλακες",
-     "ἱκανοί",
-     "εἰσι",
-     "καὶ",
-     "μή",
-     "εἰσιν"
-    ]
-   },
-   {
-    "prompt": "He showed which men must speak and which must not address the people.",
-    "answer": "ἀπέδειξεν οὓς χρὴ λέγειν καὶ οὓς οὐ δεῖ δημηγορεῖν ἐν τῷ δήμῳ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπέδειξεν",
-     "οὓς",
-     "χρὴ",
-     "λέγειν",
-     "καὶ",
-     "οὐ",
-     "δεῖ",
-     "δημηγορεῖν",
-     "ἐν",
-     "τῷ",
-     "δήμῳ"
-    ]
-   },
-   {
-    "prompt": "The wise man learns which things are worth pursuing and which are not.",
-    "answer": "ὁ σοφὸς μανθάνει ἃ ἄξιόν ἐστι διώκειν καὶ ἃ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "σοφὸς",
-     "μανθάνει",
-     "ἃ",
-     "ἄξιόν",
-     "ἐστι",
-     "διώκειν",
-     "καὶ",
-     "μή"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t11",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "Let us consider whether it is just for us to flee or not.",
-    "answer": "σκοπῶμεν εἰ δίκαιόν ἐστιν ἡμῖν φεύγειν ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκοπῶμεν",
-     "εἰ",
-     "δίκαιόν",
-     "ἐστιν",
-     "ἡμῖν",
-     "φεύγειν",
-     "ἢ",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "I will try to learn whether what he says is true or not.",
-    "answer": "πειράσομαι μαθεῖν εἰ ἀληθές ἐστιν ὃ λέγει ἢ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πειράσομαι",
-     "μαθεῖν",
-     "εἰ",
-     "ἀληθές",
-     "ἐστιν",
-     "ὃ",
-     "λέγει",
-     "ἢ",
-     "μή"
-    ]
-   },
-   {
-    "prompt": "The council debated whether to make a treaty with the Thebans or not.",
-    "answer": "ἡ βουλὴ ἐβουλεύετο εἰ σπονδὰς ποιήσαιντο πρὸς τοὺς Θηβαίους ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "βουλὴ",
-     "ἐβουλεύετο",
-     "εἰ",
-     "σπονδὰς",
-     "ποιήσαιντο",
-     "πρὸς",
-     "τοὺς",
-     "Θηβαίους",
-     "ἢ",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "Ask whether the road is safe or not.",
-    "answer": "ἐροῦ εἰ ἀσφαλής ἐστιν ἡ ὁδὸς ἢ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐροῦ",
-     "εἰ",
-     "ἀσφαλής",
-     "ἐστιν",
-     "ἡ",
-     "ὁδὸς",
-     "ἢ",
-     "μή"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t12",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "You must examine whether the general commanded well or not, and whether the soldiers obeyed rightly or not.",
-    "answer": "δεῖ σε σκοπεῖν εἰ καλῶς ὁ στρατηγὸς προσέταξεν ἢ μή, καὶ εἰ ὀρθῶς οἱ στρατιῶται ἐπείθοντο ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δεῖ",
-     "σε",
-     "σκοπεῖν",
-     "εἰ",
-     "καλῶς",
-     "ὁ",
-     "στρατηγὸς",
-     "προσέταξεν",
-     "ἢ",
-     "μή",
-     "καὶ",
-     "ὀρθῶς",
-     "οἱ",
-     "στρατιῶται",
-     "ἐπείθοντο",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "Let us inquire whether the truce came about justly or not, and whether it benefits the city or not.",
-    "answer": "σκεψώμεθα εἰ δικαίως αἱ σπονδαὶ ἐγένοντο ἢ μή, καὶ εἰ τῇ πόλει συμφέρουσιν ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκεψώμεθα",
-     "εἰ",
-     "δικαίως",
-     "αἱ",
-     "σπονδαὶ",
-     "ἐγένοντο",
-     "ἢ",
-     "μή",
-     "καὶ",
-     "τῇ",
-     "πόλει",
-     "συμφέρουσιν",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "I do not know whether he spoke the truth or not, nor whether he is worthy of trust or not.",
-    "answer": "οὐκ οἶδα εἰ ἀληθῆ εἶπεν ἢ μή, οὐδὲ εἰ ἄξιός ἐστι πίστεως ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "οἶδα",
-     "εἰ",
-     "ἀληθῆ",
-     "εἶπεν",
-     "ἢ",
-     "μή",
-     "οὐδὲ",
-     "ἄξιός",
-     "ἐστι",
-     "πίστεως",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "Consider whether they act nobly or not, and whether they are truly friends or not.",
-    "answer": "σκόπει εἰ καλῶς πράττουσιν ἢ μή, καὶ εἰ ὡς ἀληθῶς φίλοι εἰσὶν ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκόπει",
-     "εἰ",
-     "καλῶς",
-     "πράττουσιν",
-     "ἢ",
-     "μή",
-     "καὶ",
-     "ὡς",
-     "ἀληθῶς",
-     "φίλοι",
-     "εἰσὶν",
-     "οὔ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t13",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "No one knows why the ambassadors did not persuade the assembly.",
-    "answer": "οὐκ οἶδα διὰ τί οἱ πρέσβεις οὐκ ἔπεισαν τὴν ἐκκλησίαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "οἶδα",
-     "διὰ",
-     "τί",
-     "οἱ",
-     "πρέσβεις",
-     "ἔπεισαν",
-     "τὴν",
-     "ἐκκλησίαν"
-    ]
-   },
-   {
-    "prompt": "He asked whether the guards were not keeping watch over the walls.",
-    "answer": "ἤρετο εἰ οἱ φύλακες οὐκ ἐφύλαττον τὰ τείχη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἤρετο",
-     "εἰ",
-     "οἱ",
-     "φύλακες",
-     "οὐκ",
-     "ἐφύλαττον",
-     "τὰ",
-     "τείχη"
-    ]
-   },
-   {
-    "prompt": "No one knows who did not flee from the battle.",
-    "answer": "οὐδεὶς οἶδεν ὅστις οὐκ ἔφυγεν ἐκ τῆς μάχης.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδεὶς",
-     "οἶδεν",
-     "ὅστις",
-     "οὐκ",
-     "ἔφυγεν",
-     "ἐκ",
-     "τῆς",
-     "μάχης"
-    ]
-   },
-   {
-    "prompt": "I shall learn whether the one who has wealth is not happy.",
-    "answer": "εἴσομαι εἰ ὁ τὸν πλοῦτον ἔχων οὐκ εὐδαίμων ἐστίν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴσομαι",
-     "εἰ",
-     "ὁ",
-     "τὸν",
-     "πλοῦτον",
-     "ἔχων",
-     "οὐκ",
-     "εὐδαίμων",
-     "ἐστίν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t14",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "Consider how you may not fall into the hands of the enemy.",
-    "answer": "σκόπει ὅπως μὴ εἰς τὰς τῶν πολεμίων χεῖρας ἐμπέσῃς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκόπει",
-     "ὅπως",
-     "μὴ",
-     "εἰς",
-     "τὰς",
-     "τῶν",
-     "πολεμίων",
-     "χεῖρας",
-     "ἐμπέσῃς"
-    ]
-   },
-   {
-    "prompt": "See that you are not caught off your guard by the ambush.",
-    "answer": "ὅρα ὅπως μὴ ὑπὸ τῆς ἐνέδρας ἀφύλακτος ληφθῇς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "ὅπως",
-     "μὴ",
-     "ὑπὸ",
-     "τῆς",
-     "ἐνέδρας",
-     "ἀφύλακτος",
-     "ληφθῇς"
-    ]
-   },
-   {
-    "prompt": "Why then do we not consider how we may not be deprived of our allies?",
-    "answer": "τί οὖν οὐ σκοποῦμεν ὅπως ἂν μὴ τῶν συμμάχων στερηθείημεν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τί",
-     "οὖν",
-     "οὐ",
-     "σκοποῦμεν",
-     "ὅπως",
-     "ἂν",
-     "μὴ",
-     "τῶν",
-     "συμμάχων",
-     "στερηθείημεν"
-    ]
-   },
-   {
-    "prompt": "The generals were considering how they might not lose the city.",
-    "answer": "οἱ στρατηγοὶ ἐσκόπουν ὅπως μὴ τὴν πόλιν ἀπολέσειαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατηγοὶ",
-     "ἐσκόπουν",
-     "ὅπως",
-     "μὴ",
-     "τὴν",
-     "πόλιν",
-     "ἀπολέσειαν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t15",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "The wise man distinguishes what things are good and what are not.",
-    "answer": "ὁ σοφὸς διακρίνει ἅ τε ἀγαθά ἐστι καὶ ἃ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "σοφὸς",
-     "διακρίνει",
-     "ἅ",
-     "τε",
-     "ἀγαθά",
-     "ἐστι",
-     "καὶ",
-     "ἃ",
-     "μή"
-    ]
-   },
-   {
-    "prompt": "You know how many of the soldiers are trustworthy and how many are not.",
-    "answer": "οἶσθα ὁπόσοι τῶν στρατιωτῶν πιστοί εἰσι καὶ ὁπόσοι μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἶσθα",
-     "ὁπόσοι",
-     "τῶν",
-     "στρατιωτῶν",
-     "πιστοί",
-     "εἰσι",
-     "καὶ",
-     "μή"
-    ]
-   },
-   {
-    "prompt": "He showed who must rule and who must not obey.",
-    "answer": "ἀπέδειξεν οὓς χρὴ ἄρχειν καὶ οὓς οὐ δεῖ πείθεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπέδειξεν",
-     "οὓς",
-     "χρὴ",
-     "ἄρχειν",
-     "καὶ",
-     "οὐ",
-     "δεῖ",
-     "πείθεσθαι"
-    ]
-   },
-   {
-    "prompt": "The law defines what things it is permitted to do and what it is not.",
-    "answer": "ὁ νόμος ὁρίζει ἃ ἔξεστι πράττειν καὶ ἃ οὐκ ἔξεστιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "νόμος",
-     "ὁρίζει",
-     "ἃ",
-     "ἔξεστι",
-     "πράττειν",
-     "καὶ",
-     "οὐκ",
-     "ἔξεστιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-t16",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "Let us examine whether the treaty is just or not.",
-    "answer": "σκοπῶμεν εἰ δικαία ἐστὶν ἡ σπονδὴ ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκοπῶμεν",
-     "εἰ",
-     "δικαία",
-     "ἐστὶν",
-     "ἡ",
-     "σπονδὴ",
-     "ἢ",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "Consider whether it is fitting to trust the messenger or not.",
-    "answer": "σκόπει εἰ πρέπει τῷ ἀγγέλῳ πιστεύειν ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σκόπει",
-     "εἰ",
-     "πρέπει",
-     "τῷ",
-     "ἀγγέλῳ",
-     "πιστεύειν",
-     "ἢ",
-     "οὔ"
-    ]
-   },
-   {
-    "prompt": "You must consider whether the general spoke truly or not, and whether his counsel was useful or not.",
-    "answer": "δεῖ σκοπεῖν εἰ ὁ στρατηγὸς ἀληθῆ εἶπεν ἢ μή, καὶ εἰ ἡ συμβουλὴ ὠφέλιμος ἦν ἢ οὔ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δεῖ",
-     "σκοπεῖν",
-     "εἰ",
-     "ὁ",
-     "στρατηγὸς",
-     "ἀληθῆ",
-     "εἶπεν",
-     "ἢ",
-     "μή",
-     "καὶ",
-     "ἡ",
-     "συμβουλὴ",
-     "ὠφέλιμος",
-     "ἦν",
-     "οὔ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2676-the-negatives-in-indirect-questions-q1",
-  "sectionId": "sm-2676-the-negatives-in-indirect-questions",
-  "questions": [
-   {
-    "prompt": "I shall know whether its possessor is happy or not.",
-    "answer": "εἴσομαι . . . πότερον ὁ ἔχων αὐτὸ οὐκ εὐδαίμων ἐστὶν ἢ εὐδαίμων",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴσομαι",
-     "πότερον",
-     "ὁ",
-     "ἔχων",
-     "αὐτὸ",
-     "οὐκ",
-     "εὐδαίμων",
-     "ἐστὶν",
-     "ἢ",
-     "εὐδαίμων"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Republic",
-     "locus": "354c"
-    }
-   },
-   {
-    "prompt": "He asked the people whether they were not ashamed.",
-    "answer": "ἤρετο τὸν δῆμον εἰ οὐκ αἰσχύνοιντο",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἤρετο",
-     "τὸν",
-     "δῆμον",
-     "εἰ",
-     "οὐκ",
-     "αἰσχύνοιντο"
-    ],
-    "source": {
-     "author": "Aeschines",
-     "work": "Orations",
-     "locus": "1.84"
-    }
-   },
-   {
-    "prompt": "They distinguish between what they can do and what they cannot.",
-    "answer": "διαγιγνώσκουσιν ἅ τε δύνανται καὶ ἃ μή",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "διαγιγνώσκουσιν",
-     "ἅ",
-     "τε",
-     "δύνανται",
-     "καὶ",
-     "ἃ",
-     "μή"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Memorabilia",
-     "locus": "4.2.26"
-    }
-   },
-   {
-    "prompt": "He showed who must speak in the assembly and who must not speak before the people.",
-    "answer": "ἀπέδειξεν οὓς χρὴ δημηγορεῖν καὶ οὓς οὐ δεῖ λέγειν ἐν τῷ δήμῳ",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπέδειξεν",
-     "οὓς",
-     "χρὴ",
-     "δημηγορεῖν",
-     "καὶ",
-     "οὓς",
-     "οὐ",
-     "δεῖ",
-     "λέγειν",
-     "ἐν",
-     "τῷ",
-     "δήμῳ"
-    ],
-    "source": {
-     "author": "Aeschines",
-     "work": "Orations",
-     "locus": "1.27"
-    }
-   }
-  ]
- }
+  }
 ]

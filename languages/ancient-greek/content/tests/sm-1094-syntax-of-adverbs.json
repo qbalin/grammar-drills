@@ -1,1049 +1,1049 @@
 [
- {
-  "id": "sm-1094-syntax-of-adverbs-t1",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "The old man shouted straightway, for the enemy were already near.",
-    "answer": "εὐθὺς ἐβόησεν ὁ πρεσβύτης, οἱ γὰρ πολέμιοι ἤδη ἐγγὺς ἦσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εὐθὺς",
-     "ἐβόησεν",
-     "ὁ",
-     "πρεσβύτης",
-     "οἱ",
-     "γὰρ",
-     "πολέμιοι",
-     "ἤδη",
-     "ἐγγὺς",
-     "ἦσαν"
-    ]
-   },
-   {
-    "prompt": "We were marching much more quickly than the general expected.",
-    "answer": "πολὺ θᾶττον ἐπορευόμεθα ἢ ὁ στρατηγὸς ᾤετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πολὺ",
-     "θᾶττον",
-     "ἐπορευόμεθα",
-     "ἢ",
-     "ὁ",
-     "στρατηγὸς",
-     "ᾤετο"
-    ]
-   },
-   {
-    "prompt": "She was listening attentively to the poet as he sang.",
-    "answer": "σπουδῇ ἤκουεν τοῦ ποιητοῦ ᾄδοντος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σπουδῇ",
-     "ἤκουεν",
-     "τοῦ",
-     "ποιητοῦ",
-     "ᾄδοντος"
-    ]
-   },
-   {
-    "prompt": "On the next day they were walking very easily toward the town.",
-    "answer": "τῇ ὑστεραίᾳ εὖ μάλα πρὸς τὸ ἄστυ ἐβάδιζον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῇ",
-     "ὑστεραίᾳ",
-     "εὖ",
-     "μάλα",
-     "πρὸς",
-     "τὸ",
-     "ἄστυ",
-     "ἐβάδιζον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t2",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "He reigned over the Phrygians for twenty years.",
-    "answer": "εἴκοσιν ἔτη τῶν Φρυγῶν ἐβασίλευσεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴκοσιν",
-     "ἔτη",
-     "τῶν",
-     "Φρυγῶν",
-     "ἐβασίλευσεν"
-    ]
-   },
-   {
-    "prompt": "He came in the quickest way and opened the gates.",
-    "answer": "τὴν ταχίστην ἧκεν καὶ τὰς πύλας ἀνέῳξεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὴν",
-     "ταχίστην",
-     "ἧκεν",
-     "καὶ",
-     "τὰς",
-     "πύλας",
-     "ἀνέῳξεν"
-    ]
-   },
-   {
-    "prompt": "By night he arrived quickly at the camp.",
-    "answer": "νυκτὸς διὰ τάχους εἰς τὸ στρατόπεδον ἀφίκετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "νυκτὸς",
-     "διὰ",
-     "τάχους",
-     "εἰς",
-     "τὸ",
-     "στρατόπεδον",
-     "ἀφίκετο"
-    ]
-   },
-   {
-    "prompt": "The judge gave to each man according to his merit.",
-    "answer": "ὁ δικαστὴς ἑκάστῳ πρὸς τὴν ἀξίαν ἔδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "δικαστὴς",
-     "ἑκάστῳ",
-     "πρὸς",
-     "τὴν",
-     "ἀξίαν",
-     "ἔδωκεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t3",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "He said this with a laugh and turned away.",
-    "answer": "γελῶν τοῦτο εἶπεν καὶ ἀπετράπετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "γελῶν",
-     "τοῦτο",
-     "εἶπεν",
-     "καὶ",
-     "ἀπετράπετο"
-    ]
-   },
-   {
-    "prompt": "They took the city by force, though the citizens were defending themselves.",
-    "answer": "πρὸς βίαν τὴν πόλιν εἷλον, τῶν πολιτῶν ἀμυνομένων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πρὸς",
-     "βίαν",
-     "τὴν",
-     "πόλιν",
-     "εἷλον",
-     "τῶν",
-     "πολιτῶν",
-     "ἀμυνομένων"
-    ]
-   },
-   {
-    "prompt": "Setting out from home, he arrived quickly.",
-    "answer": "ἀπὸ οἴκου ὁρμώμενος ταχέως παρεγένετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπὸ",
-     "οἴκου",
-     "ὁρμώμενος",
-     "ταχέως",
-     "παρεγένετο"
-    ]
-   },
-   {
-    "prompt": "The soldiers, getting behind the hill, waited silently.",
-    "answer": "οἱ στρατιῶται ὄπισθεν τοῦ λόφου γενόμενοι σιγῇ ἔμενον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "ὄπισθεν",
-     "τοῦ",
-     "λόφου",
-     "γενόμενοι",
-     "σιγῇ",
-     "ἔμενον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t4",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "Are you really willing to bear witness against your friend?",
-    "answer": "ἆρα ἀληθῶς ἐθέλεις κατὰ τοῦ φίλου μαρτυρεῖν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἆρα",
-     "ἀληθῶς",
-     "ἐθέλεις",
-     "κατὰ",
-     "τοῦ",
-     "φίλου",
-     "μαρτυρεῖν"
-    ]
-   },
-   {
-    "prompt": "Surely the old men will not betray the city?",
-    "answer": "μῶν οἱ γέροντες τὴν πόλιν προδώσουσιν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μῶν",
-     "οἱ",
-     "γέροντες",
-     "τὴν",
-     "πόλιν",
-     "προδώσουσιν"
-    ]
-   },
-   {
-    "prompt": "Perhaps the messenger will announce these things tomorrow.",
-    "answer": "ἴσως ὁ ἄγγελος αὔριον ταῦτα ἀγγελεῖ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἴσως",
-     "ὁ",
-     "ἄγγελος",
-     "αὔριον",
-     "ταῦτα",
-     "ἀγγελεῖ"
-    ]
-   },
-   {
-    "prompt": "You at least, I suppose, would never desert your comrades.",
-    "answer": "σὺ γε δήπου τοὺς ἑταίρους οὔποτε ἂν καταλίποις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σὺ",
-     "γε",
-     "δήπου",
-     "τοὺς",
-     "ἑταίρους",
-     "οὔποτε",
-     "ἂν",
-     "καταλίποις"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t5",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "The confusion of that time destroyed many households.",
-    "answer": "ἡ τότε ταραχὴ πολλοὺς οἴκους διέφθειρεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "τότε",
-     "ταραχὴ",
-     "πολλοὺς",
-     "οἴκους",
-     "διέφθειρεν"
-    ]
-   },
-   {
-    "prompt": "The man from that quarter reported the tyranny.",
-    "answer": "ὁ ἐκεῖθεν ἀνὴρ τὴν τυραννίδα ἤγγειλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἐκεῖθεν",
-     "ἀνὴρ",
-     "τὴν",
-     "τυραννίδα",
-     "ἤγγειλεν"
-    ]
-   },
-   {
-    "prompt": "They were resting in the neighbouring park.",
-    "answer": "ἐν τῷ πλησίον παραδείσῳ ἀνεπαύοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐν",
-     "τῷ",
-     "πλησίον",
-     "παραδείσῳ",
-     "ἀνεπαύοντο"
-    ]
-   },
-   {
-    "prompt": "The men of long ago used to honour the gods exceedingly.",
-    "answer": "οἱ πάλαι ἄνθρωποι τοὺς θεοὺς σφόδρα ἐτίμων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πάλαι",
-     "ἄνθρωποι",
-     "τοὺς",
-     "θεοὺς",
-     "σφόδρα",
-     "ἐτίμων"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t6",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "Wisdom is different from courage, as Socrates said.",
-    "answer": "χωρὶς ἡ σοφία ἐστὶν ἀνδρείας, ὡς ὁ Σωκράτης ἔφη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "χωρὶς",
-     "ἡ",
-     "σοφία",
-     "ἐστὶν",
-     "ἀνδρείας",
-     "ὡς",
-     "ὁ",
-     "Σωκράτης",
-     "ἔφη"
-    ]
-   },
-   {
-    "prompt": "The village was far from the sea.",
-    "answer": "ἡ κώμη ἑκὰς τῆς θαλάττης ἦν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "κώμη",
-     "ἑκὰς",
-     "τῆς",
-     "θαλάττης",
-     "ἦν"
-    ]
-   },
-   {
-    "prompt": "Justice is apart from force.",
-    "answer": "ἡ δικαιοσύνη δίχα τῆς βίας ἐστίν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "δικαιοσύνη",
-     "δίχα",
-     "τῆς",
-     "βίας",
-     "ἐστίν"
-    ]
-   },
-   {
-    "prompt": "Near the river they were deliberating openly.",
-    "answer": "ἐγγὺς τοῦ ποταμοῦ ἐν τῷ ἐμφανεῖ ἐβουλεύοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐγγὺς",
-     "τοῦ",
-     "ποταμοῦ",
-     "ἐν",
-     "τῷ",
-     "ἐμφανεῖ",
-     "ἐβουλεύοντο"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t7",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "The sailors fought very bravely in the sea-battle.",
-    "answer": "οἱ ναῦται ἐν τῇ ναυμαχίᾳ μάλα ἀνδρείως ἐμάχοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "ναῦται",
-     "ἐν",
-     "τῇ",
-     "ναυμαχίᾳ",
-     "μάλα",
-     "ἀνδρείως",
-     "ἐμάχοντο"
-    ]
-   },
-   {
-    "prompt": "The messenger came much more quickly than the general expected.",
-    "answer": "ὁ ἄγγελος πολὺ θᾶττον ἦλθεν ἢ ὁ στρατηγὸς ᾤετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἄγγελος",
-     "πολὺ",
-     "θᾶττον",
-     "ἦλθεν",
-     "ἢ",
-     "στρατηγὸς",
-     "ᾤετο"
-    ]
-   },
-   {
-    "prompt": "It is already clear that the villages have been betrayed.",
-    "answer": "φανερὸν ἤδη ἐστιν ὅτι αἱ κῶμαι προδέδονται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φανερὸν",
-     "ἤδη",
-     "ἐστιν",
-     "ὅτι",
-     "αἱ",
-     "κῶμαι",
-     "προδέδονται"
-    ]
-   },
-   {
-    "prompt": "The judges decided the case very easily and justly.",
-    "answer": "οἱ δικασταὶ εὖ μάλα καὶ δικαίως τὴν δίκην διέγνωσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "δικασταὶ",
-     "εὖ",
-     "μάλα",
-     "καὶ",
-     "δικαίως",
-     "τὴν",
-     "δίκην",
-     "διέγνωσαν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t8",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "Surely you will not break your oath and betray your friends?",
-    "answer": "μῶν ἐπιορκήσεις καὶ τοὺς φίλους προδώσεις;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μῶν",
-     "ἐπιορκήσεις",
-     "καὶ",
-     "τοὺς",
-     "φίλους",
-     "προδώσεις"
-    ]
-   },
-   {
-    "prompt": "Perhaps the gods will indeed save the city.",
-    "answer": "ἴσως οἱ θεοὶ δὴ τὴν πόλιν σώσουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἴσως",
-     "οἱ",
-     "θεοὶ",
-     "δὴ",
-     "τὴν",
-     "πόλιν",
-     "σώσουσιν"
-    ]
-   },
-   {
-    "prompt": "This man at least is holy, whatever sort the others may be.",
-    "answer": "οὗτος γε ὅσιός ἐστιν, ὁποῖοι ἂν οἱ ἄλλοι ὦσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὗτος",
-     "γε",
-     "ὅσιός",
-     "ἐστιν",
-     "ὁποῖοι",
-     "ἂν",
-     "οἱ",
-     "ἄλλοι",
-     "ὦσιν"
-    ]
-   },
-   {
-    "prompt": "Surely we shall never hunt so great a beast.",
-    "answer": "οὔτοι ποτὲ τοσοῦτον θηρίον θηράσομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὔτοι",
-     "ποτὲ",
-     "τοσοῦτον",
-     "θηρίον",
-     "θηράσομεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t9",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "The soldiers plundered the neighbouring village.",
-    "answer": "οἱ στρατιῶται τὴν πλησίον κώμην διήρπασαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "τὴν",
-     "πλησίον",
-     "κώμην",
-     "διήρπασαν"
-    ]
-   },
-   {
-    "prompt": "The messenger from that quarter reported the disaster.",
-    "answer": "ὁ ἐκεῖθεν ἄγγελος τὴν συμφορὰν ἤγγειλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἐκεῖθεν",
-     "ἄγγελος",
-     "τὴν",
-     "συμφορὰν",
-     "ἤγγειλεν"
-    ]
-   },
-   {
-    "prompt": "The men of that time honored the gods more than we do.",
-    "answer": "οἱ τότε τοὺς θεοὺς μᾶλλον ἢ ἡμεῖς ἐτίμων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "τότε",
-     "τοὺς",
-     "θεοὺς",
-     "μᾶλλον",
-     "ἢ",
-     "ἡμεῖς",
-     "ἐτίμων"
-    ]
-   },
-   {
-    "prompt": "The present war is harder than the earlier one.",
-    "answer": "ὁ νῦν πόλεμος χαλεπώτερός ἐστιν τοῦ πρότερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "νῦν",
-     "πόλεμος",
-     "χαλεπώτερός",
-     "ἐστιν",
-     "τοῦ",
-     "πρότερον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t10",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "On the next day they marched toward the mountains.",
-    "answer": "τῇ ὑστεραίᾳ πρὸς τὰ ὄρη ἐπορεύοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῇ",
-     "ὑστεραίᾳ",
-     "πρὸς",
-     "τὰ",
-     "ὄρη",
-     "ἐπορεύοντο"
-    ]
-   },
-   {
-    "prompt": "The old man listened to the poet attentively.",
-    "answer": "ὁ γέρων τοῦ ποιητοῦ σπουδῇ ἠκροάσατο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "τοῦ",
-     "ποιητοῦ",
-     "σπουδῇ",
-     "ἠκροάσατο"
-    ]
-   },
-   {
-    "prompt": "He came in the quickest way to help his friends.",
-    "answer": "τὴν ταχίστην ἧκε τοῖς φίλοις βοηθήσων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὴν",
-     "ταχίστην",
-     "ἧκε",
-     "τοῖς",
-     "φίλοις",
-     "βοηθήσων"
-    ]
-   },
-   {
-    "prompt": "They besieged the city for many years.",
-    "answer": "πολλὰ ἔτη τὴν πόλιν ἐπολιόρκουν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πολλὰ",
-     "ἔτη",
-     "τὴν",
-     "πόλιν",
-     "ἐπολιόρκουν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t11",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "The herald, having come quickly, announced the victory.",
-    "answer": "ὁ κῆρυξ διὰ τάχους ἐλθὼν τὴν νίκην ἤγγειλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "κῆρυξ",
-     "διὰ",
-     "τάχους",
-     "ἐλθὼν",
-     "τὴν",
-     "νίκην",
-     "ἤγγειλεν"
-    ]
-   },
-   {
-    "prompt": "The general gave to each man according to his merit.",
-    "answer": "ὁ στρατηγὸς ἑκάστῳ πρὸς τὴν ἀξίαν ἔδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "ἑκάστῳ",
-     "πρὸς",
-     "τὴν",
-     "ἀξίαν",
-     "ἔδωκεν"
-    ]
-   },
-   {
-    "prompt": "They led the prisoners away by force.",
-    "answer": "τοὺς αἰχμαλώτους πρὸς βίαν ἀπήγαγον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "αἰχμαλώτους",
-     "πρὸς",
-     "βίαν",
-     "ἀπήγαγον"
-    ]
-   },
-   {
-    "prompt": "Smiling, the boy handed the apple to his sister.",
-    "answer": "ὁ παῖς γελῶν τῇ ἀδελφῇ τὸ μῆλον ἔδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "παῖς",
-     "γελῶν",
-     "τῇ",
-     "ἀδελφῇ",
-     "τὸ",
-     "μῆλον",
-     "ἔδωκεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t12",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "Justice is far from those who break their oaths.",
-    "answer": "ἡ δίκη ἑκὰς τῶν ἐπιορκούντων ἐστίν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "δίκη",
-     "ἑκὰς",
-     "τῶν",
-     "ἐπιορκούντων",
-     "ἐστίν"
-    ]
-   },
-   {
-    "prompt": "Wisdom is separate from wealth.",
-    "answer": "ἡ σοφία χωρὶς τοῦ πλούτου ἐστίν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "σοφία",
-     "χωρὶς",
-     "τοῦ",
-     "πλούτου",
-     "ἐστίν"
-    ]
-   },
-   {
-    "prompt": "The enemy's camp was near the river.",
-    "answer": "τὸ τῶν πολεμίων στρατόπεδον ἐγγὺς τοῦ ποταμοῦ ἦν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "τῶν",
-     "πολεμίων",
-     "στρατόπεδον",
-     "ἐγγὺς",
-     "τοῦ",
-     "ποταμοῦ",
-     "ἦν"
-    ]
-   },
-   {
-    "prompt": "The two armies encamped apart from each other.",
-    "answer": "τὰ δύο στρατόπεδα δίχα ἀλλήλων ἐστρατοπεδεύσαντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "δύο",
-     "στρατόπεδα",
-     "δίχα",
-     "ἀλλήλων",
-     "ἐστρατοπεδεύσαντο"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t13",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "Getting behind the enemy, the horsemen straightway attacked.",
-    "answer": "ὄπισθεν τῶν πολεμίων γενόμενοι οἱ ἱππεῖς εὐθὺς προσέβαλον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὄπισθεν",
-     "τῶν",
-     "πολεμίων",
-     "γενόμενοι",
-     "οἱ",
-     "ἱππεῖς",
-     "εὐθὺς",
-     "προσέβαλον"
-    ]
-   },
-   {
-    "prompt": "The messenger ran much more quickly than we expected.",
-    "answer": "ὁ ἄγγελος πολὺ θᾶττον ἔδραμεν ἢ προσεδοκῶμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἄγγελος",
-     "πολὺ",
-     "θᾶττον",
-     "ἔδραμεν",
-     "ἢ",
-     "προσεδοκῶμεν"
-    ]
-   },
-   {
-    "prompt": "The treachery of the general was already clear to the allies.",
-    "answer": "ἡ τοῦ στρατηγοῦ προδοσία ἤδη φανερὰ ἦν τοῖς συμμάχοις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "τοῦ",
-     "στρατηγοῦ",
-     "προδοσία",
-     "ἤδη",
-     "φανερὰ",
-     "ἦν",
-     "τοῖς",
-     "συμμάχοις"
-    ]
-   },
-   {
-    "prompt": "The farmer ploughed his field very easily.",
-    "answer": "ὁ γεωργὸς τὸν ἀγρὸν εὖ μάλα ἤροσεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γεωργὸς",
-     "τὸν",
-     "ἀγρὸν",
-     "εὖ",
-     "μάλα",
-     "ἤροσεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t14",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "Surely you do not think the parents are lying about these things?",
-    "answer": "μῶν οἴει τοὺς τοκέας περὶ τούτων ψεύδεσθαι;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μῶν",
-     "οἴει",
-     "τοὺς",
-     "τοκέας",
-     "περὶ",
-     "τούτων",
-     "ψεύδεσθαι"
-    ]
-   },
-   {
-    "prompt": "This man indeed, though a stranger, saved us.",
-    "answer": "οὗτος δὴ ξένος ὢν ἡμᾶς ἔσωσεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὗτος",
-     "δὴ",
-     "ξένος",
-     "ὢν",
-     "ἡμᾶς",
-     "ἔσωσεν"
-    ]
-   },
-   {
-    "prompt": "Perhaps the prisoner will escape from the prison by night.",
-    "answer": "ἴσως ὁ δεσμώτης νυκτὸς ἐκ τοῦ δεσμωτηρίου φεύξεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἴσως",
-     "ὁ",
-     "δεσμώτης",
-     "νυκτὸς",
-     "ἐκ",
-     "τοῦ",
-     "δεσμωτηρίου",
-     "φεύξεται"
-    ]
-   },
-   {
-    "prompt": "Surely the barbarians' arrows will not save the city.",
-    "answer": "οὔτοι τὰ τῶν βαρβάρων τοξεύματα τὴν πόλιν σώσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὔτοι",
-     "τὰ",
-     "τῶν",
-     "βαρβάρων",
-     "τοξεύματα",
-     "τὴν",
-     "πόλιν",
-     "σώσει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t15",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "The students listened attentively to the philosopher.",
-    "answer": "οἱ μαθηταὶ σπουδῇ τοῦ φιλοσόφου ἠκροῶντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "μαθηταὶ",
-     "σπουδῇ",
-     "τοῦ",
-     "φιλοσόφου",
-     "ἠκροῶντο"
-    ]
-   },
-   {
-    "prompt": "He came in the quickest way to help his father.",
-    "answer": "ἧκε τὴν ταχίστην ὡς τῷ πατρὶ βοηθήσων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἧκε",
-     "τὴν",
-     "ταχίστην",
-     "ὡς",
-     "τῷ",
-     "πατρὶ",
-     "βοηθήσων"
-    ]
-   },
-   {
-    "prompt": "The horseman, coming quickly, announced the disaster.",
-    "answer": "ὁ ἱππεὺς διὰ τάχους ἐλθὼν τὴν συμφορὰν ἤγγειλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἱππεὺς",
-     "διὰ",
-     "τάχους",
-     "ἐλθὼν",
-     "τὴν",
-     "συμφορὰν",
-     "ἤγγειλεν"
-    ]
-   },
-   {
-    "prompt": "The boy answered laughingly, although he was afraid.",
-    "answer": "ὁ παῖς γελῶν ἀπεκρίνατο καίπερ φοβούμενος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "παῖς",
-     "γελῶν",
-     "ἀπεκρίνατο",
-     "καίπερ",
-     "φοβούμενος"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-t16",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "The messenger from that quarter reported many things about the war.",
-    "answer": "ὁ ἐκεῖθεν ἄγγελος πολλὰ περὶ τοῦ πολέμου ἀπήγγειλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἐκεῖθεν",
-     "ἄγγελος",
-     "πολλὰ",
-     "περὶ",
-     "τοῦ",
-     "πολέμου",
-     "ἀπήγγειλεν"
-    ]
-   },
-   {
-    "prompt": "We were hunting the deer in the neighbouring wood.",
-    "answer": "ἐν τῷ πλησίον ἄλσει τὰς ἐλάφους ἐθηρεύομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐν",
-     "τῷ",
-     "πλησίον",
-     "ἄλσει",
-     "τὰς",
-     "ἐλάφους",
-     "ἐθηρεύομεν"
-    ]
-   },
-   {
-    "prompt": "Justice is different from temperance, as the wise say.",
-    "answer": "ἡ δικαιοσύνη χωρὶς τῆς σωφροσύνης ἐστίν, ὡς οἱ σοφοὶ λέγουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "δικαιοσύνη",
-     "χωρὶς",
-     "τῆς",
-     "σωφροσύνης",
-     "ἐστίν",
-     "ὡς",
-     "οἱ",
-     "σοφοὶ",
-     "λέγουσιν"
-    ]
-   },
-   {
-    "prompt": "The enemy's camp was near, but safety was far away.",
-    "answer": "τὸ τῶν πολεμίων στρατόπεδον ἐγγὺς ἦν, ἡ δὲ σωτηρία ἑκάς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "τῶν",
-     "πολεμίων",
-     "στρατόπεδον",
-     "ἐγγὺς",
-     "ἦν",
-     "ἡ",
-     "δὲ",
-     "σωτηρία",
-     "ἑκάς"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1094-syntax-of-adverbs-q1",
-  "sectionId": "sm-1094-syntax-of-adverbs",
-  "questions": [
-   {
-    "prompt": "Leaping in more quickly than one would have thought.",
-    "answer": "εἰσπηδήσαντες . . . θᾶττον ἢ ὥς τις ἂν ᾤετο",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰσπηδήσαντες",
-     "θᾶττον",
-     "ἢ",
-     "ὥς",
-     "τις",
-     "ἂν",
-     "ᾤετο"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "1.5.8"
-    }
-   },
-   {
-    "prompt": "In the neighbouring park.",
-    "answer": "ἐν τῷ πλησίον παραδείσῳ",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐν",
-     "τῷ",
-     "πλησίον",
-     "παραδείσῳ"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "2.4.16"
-    }
-   },
-   {
-    "prompt": "Wisdom is different from courage.",
-    "answer": "χωρὶς σοφία ἐστὶν ἀνδρείας",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "χωρὶς",
-     "σοφία",
-     "ἐστὶν",
-     "ἀνδρείας"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Laches",
-     "locus": "195a"
-    }
-   }
-  ]
- }
+  {
+    "id": "sm-1094-syntax-of-adverbs-t1",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "The old man shouted straightway, for the enemy were already near.",
+        "answer": "εὐθὺς ἐβόησεν ὁ πρεσβύτης, οἱ γὰρ πολέμιοι ἤδη ἐγγὺς ἦσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εὐθὺς",
+          "ἐβόησεν",
+          "ὁ",
+          "πρεσβύτης",
+          "οἱ",
+          "γὰρ",
+          "πολέμιοι",
+          "ἤδη",
+          "ἐγγὺς",
+          "ἦσαν"
+        ]
+      },
+      {
+        "prompt": "We were marching much more quickly than the general expected.",
+        "answer": "πολὺ θᾶττον ἐπορευόμεθα ἢ ὁ στρατηγὸς ᾤετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πολὺ",
+          "θᾶττον",
+          "ἐπορευόμεθα",
+          "ἢ",
+          "ὁ",
+          "στρατηγὸς",
+          "ᾤετο"
+        ]
+      },
+      {
+        "prompt": "She was listening attentively to the poet as he sang.",
+        "answer": "σπουδῇ ἤκουεν τοῦ ποιητοῦ ᾄδοντος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σπουδῇ",
+          "ἤκουεν",
+          "τοῦ",
+          "ποιητοῦ",
+          "ᾄδοντος"
+        ]
+      },
+      {
+        "prompt": "On the next day they were walking very easily toward the town.",
+        "answer": "τῇ ὑστεραίᾳ εὖ μάλα πρὸς τὸ ἄστυ ἐβάδιζον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῇ",
+          "ὑστεραίᾳ",
+          "εὖ",
+          "μάλα",
+          "πρὸς",
+          "τὸ",
+          "ἄστυ",
+          "ἐβάδιζον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t2",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "He reigned over the Phrygians for twenty years.",
+        "answer": "εἴκοσιν ἔτη τῶν Φρυγῶν ἐβασίλευσεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴκοσιν",
+          "ἔτη",
+          "τῶν",
+          "Φρυγῶν",
+          "ἐβασίλευσεν"
+        ]
+      },
+      {
+        "prompt": "He came in the quickest way and opened the gates.",
+        "answer": "τὴν ταχίστην ἧκεν καὶ τὰς πύλας ἀνέῳξεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὴν",
+          "ταχίστην",
+          "ἧκεν",
+          "καὶ",
+          "τὰς",
+          "πύλας",
+          "ἀνέῳξεν"
+        ]
+      },
+      {
+        "prompt": "By night he arrived quickly at the camp.",
+        "answer": "νυκτὸς διὰ τάχους εἰς τὸ στρατόπεδον ἀφίκετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "νυκτὸς",
+          "διὰ",
+          "τάχους",
+          "εἰς",
+          "τὸ",
+          "στρατόπεδον",
+          "ἀφίκετο"
+        ]
+      },
+      {
+        "prompt": "The judge gave to each man according to his merit.",
+        "answer": "ὁ δικαστὴς ἑκάστῳ πρὸς τὴν ἀξίαν ἔδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "δικαστὴς",
+          "ἑκάστῳ",
+          "πρὸς",
+          "τὴν",
+          "ἀξίαν",
+          "ἔδωκεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t3",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "He said this with a laugh and turned away.",
+        "answer": "γελῶν τοῦτο εἶπεν καὶ ἀπετράπετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "γελῶν",
+          "τοῦτο",
+          "εἶπεν",
+          "καὶ",
+          "ἀπετράπετο"
+        ]
+      },
+      {
+        "prompt": "They took the city by force, though the citizens were defending themselves.",
+        "answer": "πρὸς βίαν τὴν πόλιν εἷλον, τῶν πολιτῶν ἀμυνομένων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πρὸς",
+          "βίαν",
+          "τὴν",
+          "πόλιν",
+          "εἷλον",
+          "τῶν",
+          "πολιτῶν",
+          "ἀμυνομένων"
+        ]
+      },
+      {
+        "prompt": "Setting out from home, he arrived quickly.",
+        "answer": "ἀπὸ οἴκου ὁρμώμενος ταχέως παρεγένετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπὸ",
+          "οἴκου",
+          "ὁρμώμενος",
+          "ταχέως",
+          "παρεγένετο"
+        ]
+      },
+      {
+        "prompt": "The soldiers, getting behind the hill, waited silently.",
+        "answer": "οἱ στρατιῶται ὄπισθεν τοῦ λόφου γενόμενοι σιγῇ ἔμενον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "ὄπισθεν",
+          "τοῦ",
+          "λόφου",
+          "γενόμενοι",
+          "σιγῇ",
+          "ἔμενον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t4",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "Are you really willing to bear witness against your friend?",
+        "answer": "ἆρα ἀληθῶς ἐθέλεις κατὰ τοῦ φίλου μαρτυρεῖν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἆρα",
+          "ἀληθῶς",
+          "ἐθέλεις",
+          "κατὰ",
+          "τοῦ",
+          "φίλου",
+          "μαρτυρεῖν"
+        ]
+      },
+      {
+        "prompt": "Surely the old men will not betray the city?",
+        "answer": "μῶν οἱ γέροντες τὴν πόλιν προδώσουσιν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μῶν",
+          "οἱ",
+          "γέροντες",
+          "τὴν",
+          "πόλιν",
+          "προδώσουσιν"
+        ]
+      },
+      {
+        "prompt": "Perhaps the messenger will announce these things tomorrow.",
+        "answer": "ἴσως ὁ ἄγγελος αὔριον ταῦτα ἀγγελεῖ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἴσως",
+          "ὁ",
+          "ἄγγελος",
+          "αὔριον",
+          "ταῦτα",
+          "ἀγγελεῖ"
+        ]
+      },
+      {
+        "prompt": "You at least, I suppose, would never desert your comrades.",
+        "answer": "σὺ γε δήπου τοὺς ἑταίρους οὔποτε ἂν καταλίποις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σὺ",
+          "γε",
+          "δήπου",
+          "τοὺς",
+          "ἑταίρους",
+          "οὔποτε",
+          "ἂν",
+          "καταλίποις"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t5",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "The confusion of that time destroyed many households.",
+        "answer": "ἡ τότε ταραχὴ πολλοὺς οἴκους διέφθειρεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "τότε",
+          "ταραχὴ",
+          "πολλοὺς",
+          "οἴκους",
+          "διέφθειρεν"
+        ]
+      },
+      {
+        "prompt": "The man from that quarter reported the tyranny.",
+        "answer": "ὁ ἐκεῖθεν ἀνὴρ τὴν τυραννίδα ἤγγειλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἐκεῖθεν",
+          "ἀνὴρ",
+          "τὴν",
+          "τυραννίδα",
+          "ἤγγειλεν"
+        ]
+      },
+      {
+        "prompt": "They were resting in the neighbouring park.",
+        "answer": "ἐν τῷ πλησίον παραδείσῳ ἀνεπαύοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐν",
+          "τῷ",
+          "πλησίον",
+          "παραδείσῳ",
+          "ἀνεπαύοντο"
+        ]
+      },
+      {
+        "prompt": "The men of long ago used to honour the gods exceedingly.",
+        "answer": "οἱ πάλαι ἄνθρωποι τοὺς θεοὺς σφόδρα ἐτίμων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πάλαι",
+          "ἄνθρωποι",
+          "τοὺς",
+          "θεοὺς",
+          "σφόδρα",
+          "ἐτίμων"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t6",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "Wisdom is different from courage, as Socrates said.",
+        "answer": "χωρὶς ἡ σοφία ἐστὶν ἀνδρείας, ὡς ὁ Σωκράτης ἔφη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "χωρὶς",
+          "ἡ",
+          "σοφία",
+          "ἐστὶν",
+          "ἀνδρείας",
+          "ὡς",
+          "ὁ",
+          "Σωκράτης",
+          "ἔφη"
+        ]
+      },
+      {
+        "prompt": "The village was far from the sea.",
+        "answer": "ἡ κώμη ἑκὰς τῆς θαλάττης ἦν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "κώμη",
+          "ἑκὰς",
+          "τῆς",
+          "θαλάττης",
+          "ἦν"
+        ]
+      },
+      {
+        "prompt": "Justice is apart from force.",
+        "answer": "ἡ δικαιοσύνη δίχα τῆς βίας ἐστίν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "δικαιοσύνη",
+          "δίχα",
+          "τῆς",
+          "βίας",
+          "ἐστίν"
+        ]
+      },
+      {
+        "prompt": "Near the river they were deliberating openly.",
+        "answer": "ἐγγὺς τοῦ ποταμοῦ ἐν τῷ ἐμφανεῖ ἐβουλεύοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐγγὺς",
+          "τοῦ",
+          "ποταμοῦ",
+          "ἐν",
+          "τῷ",
+          "ἐμφανεῖ",
+          "ἐβουλεύοντο"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t7",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "The sailors fought very bravely in the sea-battle.",
+        "answer": "οἱ ναῦται ἐν τῇ ναυμαχίᾳ μάλα ἀνδρείως ἐμάχοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "ναῦται",
+          "ἐν",
+          "τῇ",
+          "ναυμαχίᾳ",
+          "μάλα",
+          "ἀνδρείως",
+          "ἐμάχοντο"
+        ]
+      },
+      {
+        "prompt": "The messenger came much more quickly than the general expected.",
+        "answer": "ὁ ἄγγελος πολὺ θᾶττον ἦλθεν ἢ ὁ στρατηγὸς ᾤετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἄγγελος",
+          "πολὺ",
+          "θᾶττον",
+          "ἦλθεν",
+          "ἢ",
+          "στρατηγὸς",
+          "ᾤετο"
+        ]
+      },
+      {
+        "prompt": "It is already clear that the villages have been betrayed.",
+        "answer": "φανερὸν ἤδη ἐστιν ὅτι αἱ κῶμαι προδέδονται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φανερὸν",
+          "ἤδη",
+          "ἐστιν",
+          "ὅτι",
+          "αἱ",
+          "κῶμαι",
+          "προδέδονται"
+        ]
+      },
+      {
+        "prompt": "The judges decided the case very easily and justly.",
+        "answer": "οἱ δικασταὶ εὖ μάλα καὶ δικαίως τὴν δίκην διέγνωσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "δικασταὶ",
+          "εὖ",
+          "μάλα",
+          "καὶ",
+          "δικαίως",
+          "τὴν",
+          "δίκην",
+          "διέγνωσαν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t8",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "Surely you will not break your oath and betray your friends?",
+        "answer": "μῶν ἐπιορκήσεις καὶ τοὺς φίλους προδώσεις;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μῶν",
+          "ἐπιορκήσεις",
+          "καὶ",
+          "τοὺς",
+          "φίλους",
+          "προδώσεις"
+        ]
+      },
+      {
+        "prompt": "Perhaps the gods will indeed save the city.",
+        "answer": "ἴσως οἱ θεοὶ δὴ τὴν πόλιν σώσουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἴσως",
+          "οἱ",
+          "θεοὶ",
+          "δὴ",
+          "τὴν",
+          "πόλιν",
+          "σώσουσιν"
+        ]
+      },
+      {
+        "prompt": "This man at least is holy, whatever sort the others may be.",
+        "answer": "οὗτος γε ὅσιός ἐστιν, ὁποῖοι ἂν οἱ ἄλλοι ὦσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὗτος",
+          "γε",
+          "ὅσιός",
+          "ἐστιν",
+          "ὁποῖοι",
+          "ἂν",
+          "οἱ",
+          "ἄλλοι",
+          "ὦσιν"
+        ]
+      },
+      {
+        "prompt": "Surely we shall never hunt so great a beast.",
+        "answer": "οὔτοι ποτὲ τοσοῦτον θηρίον θηράσομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὔτοι",
+          "ποτὲ",
+          "τοσοῦτον",
+          "θηρίον",
+          "θηράσομεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t9",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "The soldiers plundered the neighbouring village.",
+        "answer": "οἱ στρατιῶται τὴν πλησίον κώμην διήρπασαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "τὴν",
+          "πλησίον",
+          "κώμην",
+          "διήρπασαν"
+        ]
+      },
+      {
+        "prompt": "The messenger from that quarter reported the disaster.",
+        "answer": "ὁ ἐκεῖθεν ἄγγελος τὴν συμφορὰν ἤγγειλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἐκεῖθεν",
+          "ἄγγελος",
+          "τὴν",
+          "συμφορὰν",
+          "ἤγγειλεν"
+        ]
+      },
+      {
+        "prompt": "The men of that time honored the gods more than we do.",
+        "answer": "οἱ τότε τοὺς θεοὺς μᾶλλον ἢ ἡμεῖς ἐτίμων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "τότε",
+          "τοὺς",
+          "θεοὺς",
+          "μᾶλλον",
+          "ἢ",
+          "ἡμεῖς",
+          "ἐτίμων"
+        ]
+      },
+      {
+        "prompt": "The present war is harder than the earlier one.",
+        "answer": "ὁ νῦν πόλεμος χαλεπώτερός ἐστιν τοῦ πρότερον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "νῦν",
+          "πόλεμος",
+          "χαλεπώτερός",
+          "ἐστιν",
+          "τοῦ",
+          "πρότερον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t10",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "On the next day they marched toward the mountains.",
+        "answer": "τῇ ὑστεραίᾳ πρὸς τὰ ὄρη ἐπορεύοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῇ",
+          "ὑστεραίᾳ",
+          "πρὸς",
+          "τὰ",
+          "ὄρη",
+          "ἐπορεύοντο"
+        ]
+      },
+      {
+        "prompt": "The old man listened to the poet attentively.",
+        "answer": "ὁ γέρων τοῦ ποιητοῦ σπουδῇ ἠκροάσατο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "τοῦ",
+          "ποιητοῦ",
+          "σπουδῇ",
+          "ἠκροάσατο"
+        ]
+      },
+      {
+        "prompt": "He came in the quickest way to help his friends.",
+        "answer": "τὴν ταχίστην ἧκε τοῖς φίλοις βοηθήσων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὴν",
+          "ταχίστην",
+          "ἧκε",
+          "τοῖς",
+          "φίλοις",
+          "βοηθήσων"
+        ]
+      },
+      {
+        "prompt": "They besieged the city for many years.",
+        "answer": "πολλὰ ἔτη τὴν πόλιν ἐπολιόρκουν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πολλὰ",
+          "ἔτη",
+          "τὴν",
+          "πόλιν",
+          "ἐπολιόρκουν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t11",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "The herald, having come quickly, announced the victory.",
+        "answer": "ὁ κῆρυξ διὰ τάχους ἐλθὼν τὴν νίκην ἤγγειλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "κῆρυξ",
+          "διὰ",
+          "τάχους",
+          "ἐλθὼν",
+          "τὴν",
+          "νίκην",
+          "ἤγγειλεν"
+        ]
+      },
+      {
+        "prompt": "The general gave to each man according to his merit.",
+        "answer": "ὁ στρατηγὸς ἑκάστῳ πρὸς τὴν ἀξίαν ἔδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "ἑκάστῳ",
+          "πρὸς",
+          "τὴν",
+          "ἀξίαν",
+          "ἔδωκεν"
+        ]
+      },
+      {
+        "prompt": "They led the prisoners away by force.",
+        "answer": "τοὺς αἰχμαλώτους πρὸς βίαν ἀπήγαγον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "αἰχμαλώτους",
+          "πρὸς",
+          "βίαν",
+          "ἀπήγαγον"
+        ]
+      },
+      {
+        "prompt": "Smiling, the boy handed the apple to his sister.",
+        "answer": "ὁ παῖς γελῶν τῇ ἀδελφῇ τὸ μῆλον ἔδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "παῖς",
+          "γελῶν",
+          "τῇ",
+          "ἀδελφῇ",
+          "τὸ",
+          "μῆλον",
+          "ἔδωκεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t12",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "Justice is far from those who break their oaths.",
+        "answer": "ἡ δίκη ἑκὰς τῶν ἐπιορκούντων ἐστίν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "δίκη",
+          "ἑκὰς",
+          "τῶν",
+          "ἐπιορκούντων",
+          "ἐστίν"
+        ]
+      },
+      {
+        "prompt": "Wisdom is separate from wealth.",
+        "answer": "ἡ σοφία χωρὶς τοῦ πλούτου ἐστίν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "σοφία",
+          "χωρὶς",
+          "τοῦ",
+          "πλούτου",
+          "ἐστίν"
+        ]
+      },
+      {
+        "prompt": "The enemy's camp was near the river.",
+        "answer": "τὸ τῶν πολεμίων στρατόπεδον ἐγγὺς τοῦ ποταμοῦ ἦν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "τῶν",
+          "πολεμίων",
+          "στρατόπεδον",
+          "ἐγγὺς",
+          "τοῦ",
+          "ποταμοῦ",
+          "ἦν"
+        ]
+      },
+      {
+        "prompt": "The two armies encamped apart from each other.",
+        "answer": "τὰ δύο στρατόπεδα δίχα ἀλλήλων ἐστρατοπεδεύσαντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "δύο",
+          "στρατόπεδα",
+          "δίχα",
+          "ἀλλήλων",
+          "ἐστρατοπεδεύσαντο"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t13",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "Getting behind the enemy, the horsemen straightway attacked.",
+        "answer": "ὄπισθεν τῶν πολεμίων γενόμενοι οἱ ἱππεῖς εὐθὺς προσέβαλον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὄπισθεν",
+          "τῶν",
+          "πολεμίων",
+          "γενόμενοι",
+          "οἱ",
+          "ἱππεῖς",
+          "εὐθὺς",
+          "προσέβαλον"
+        ]
+      },
+      {
+        "prompt": "The messenger ran much more quickly than we expected.",
+        "answer": "ὁ ἄγγελος πολὺ θᾶττον ἔδραμεν ἢ προσεδοκῶμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἄγγελος",
+          "πολὺ",
+          "θᾶττον",
+          "ἔδραμεν",
+          "ἢ",
+          "προσεδοκῶμεν"
+        ]
+      },
+      {
+        "prompt": "The treachery of the general was already clear to the allies.",
+        "answer": "ἡ τοῦ στρατηγοῦ προδοσία ἤδη φανερὰ ἦν τοῖς συμμάχοις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "τοῦ",
+          "στρατηγοῦ",
+          "προδοσία",
+          "ἤδη",
+          "φανερὰ",
+          "ἦν",
+          "τοῖς",
+          "συμμάχοις"
+        ]
+      },
+      {
+        "prompt": "The farmer ploughed his field very easily.",
+        "answer": "ὁ γεωργὸς τὸν ἀγρὸν εὖ μάλα ἤροσεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γεωργὸς",
+          "τὸν",
+          "ἀγρὸν",
+          "εὖ",
+          "μάλα",
+          "ἤροσεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t14",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "Surely you do not think the parents are lying about these things?",
+        "answer": "μῶν οἴει τοὺς τοκέας περὶ τούτων ψεύδεσθαι;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μῶν",
+          "οἴει",
+          "τοὺς",
+          "τοκέας",
+          "περὶ",
+          "τούτων",
+          "ψεύδεσθαι"
+        ]
+      },
+      {
+        "prompt": "This man indeed, though a stranger, saved us.",
+        "answer": "οὗτος δὴ ξένος ὢν ἡμᾶς ἔσωσεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὗτος",
+          "δὴ",
+          "ξένος",
+          "ὢν",
+          "ἡμᾶς",
+          "ἔσωσεν"
+        ]
+      },
+      {
+        "prompt": "Perhaps the prisoner will escape from the prison by night.",
+        "answer": "ἴσως ὁ δεσμώτης νυκτὸς ἐκ τοῦ δεσμωτηρίου φεύξεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἴσως",
+          "ὁ",
+          "δεσμώτης",
+          "νυκτὸς",
+          "ἐκ",
+          "τοῦ",
+          "δεσμωτηρίου",
+          "φεύξεται"
+        ]
+      },
+      {
+        "prompt": "Surely the barbarians' arrows will not save the city.",
+        "answer": "οὔτοι τὰ τῶν βαρβάρων τοξεύματα τὴν πόλιν σώσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὔτοι",
+          "τὰ",
+          "τῶν",
+          "βαρβάρων",
+          "τοξεύματα",
+          "τὴν",
+          "πόλιν",
+          "σώσει"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t15",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "The students listened attentively to the philosopher.",
+        "answer": "οἱ μαθηταὶ σπουδῇ τοῦ φιλοσόφου ἠκροῶντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "μαθηταὶ",
+          "σπουδῇ",
+          "τοῦ",
+          "φιλοσόφου",
+          "ἠκροῶντο"
+        ]
+      },
+      {
+        "prompt": "He came in the quickest way to help his father.",
+        "answer": "ἧκε τὴν ταχίστην ὡς τῷ πατρὶ βοηθήσων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἧκε",
+          "τὴν",
+          "ταχίστην",
+          "ὡς",
+          "τῷ",
+          "πατρὶ",
+          "βοηθήσων"
+        ]
+      },
+      {
+        "prompt": "The horseman, coming quickly, announced the disaster.",
+        "answer": "ὁ ἱππεὺς διὰ τάχους ἐλθὼν τὴν συμφορὰν ἤγγειλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἱππεὺς",
+          "διὰ",
+          "τάχους",
+          "ἐλθὼν",
+          "τὴν",
+          "συμφορὰν",
+          "ἤγγειλεν"
+        ]
+      },
+      {
+        "prompt": "The boy answered laughingly, although he was afraid.",
+        "answer": "ὁ παῖς γελῶν ἀπεκρίνατο καίπερ φοβούμενος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "παῖς",
+          "γελῶν",
+          "ἀπεκρίνατο",
+          "καίπερ",
+          "φοβούμενος"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-t16",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "The messenger from that quarter reported many things about the war.",
+        "answer": "ὁ ἐκεῖθεν ἄγγελος πολλὰ περὶ τοῦ πολέμου ἀπήγγειλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἐκεῖθεν",
+          "ἄγγελος",
+          "πολλὰ",
+          "περὶ",
+          "τοῦ",
+          "πολέμου",
+          "ἀπήγγειλεν"
+        ]
+      },
+      {
+        "prompt": "We were hunting the deer in the neighbouring wood.",
+        "answer": "ἐν τῷ πλησίον ἄλσει τὰς ἐλάφους ἐθηρεύομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐν",
+          "τῷ",
+          "πλησίον",
+          "ἄλσει",
+          "τὰς",
+          "ἐλάφους",
+          "ἐθηρεύομεν"
+        ]
+      },
+      {
+        "prompt": "Justice is different from temperance, as the wise say.",
+        "answer": "ἡ δικαιοσύνη χωρὶς τῆς σωφροσύνης ἐστίν, ὡς οἱ σοφοὶ λέγουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "δικαιοσύνη",
+          "χωρὶς",
+          "τῆς",
+          "σωφροσύνης",
+          "ἐστίν",
+          "ὡς",
+          "οἱ",
+          "σοφοὶ",
+          "λέγουσιν"
+        ]
+      },
+      {
+        "prompt": "The enemy's camp was near, but safety was far away.",
+        "answer": "τὸ τῶν πολεμίων στρατόπεδον ἐγγὺς ἦν, ἡ δὲ σωτηρία ἑκάς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "τῶν",
+          "πολεμίων",
+          "στρατόπεδον",
+          "ἐγγὺς",
+          "ἦν",
+          "ἡ",
+          "δὲ",
+          "σωτηρία",
+          "ἑκάς"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1094-syntax-of-adverbs-q1",
+    "sectionId": "sm-1094-syntax-of-adverbs",
+    "questions": [
+      {
+        "prompt": "Leaping in more quickly than one would have thought.",
+        "answer": "εἰσπηδήσαντες θᾶττον ἢ ὥς τις ἂν ᾤετο",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰσπηδήσαντες",
+          "θᾶττον",
+          "ἢ",
+          "ὥς",
+          "τις",
+          "ἂν",
+          "ᾤετο"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "1.5.8"
+        }
+      },
+      {
+        "prompt": "In the neighbouring park.",
+        "answer": "ἐν τῷ πλησίον παραδείσῳ",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐν",
+          "τῷ",
+          "πλησίον",
+          "παραδείσῳ"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "2.4.16"
+        }
+      },
+      {
+        "prompt": "Wisdom is different from courage.",
+        "answer": "χωρὶς σοφία ἐστὶν ἀνδρείας",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "χωρὶς",
+          "σοφία",
+          "ἐστὶν",
+          "ἀνδρείας"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Laches",
+          "locus": "195a"
+        }
+      }
+    ]
+  }
 ]

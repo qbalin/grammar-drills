@@ -1,853 +1,853 @@
 [
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t1",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "The general handed the city over to the soldiers to plunder.",
-    "answer": "ὁ στρατηγὸς τὴν πόλιν τοῖς στρατιώταις διαρπάσαι παρέδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "τὴν",
-     "πόλιν",
-     "τοῖς",
-     "στρατιώταις",
-     "διαρπάσαι",
-     "παρέδωκεν"
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t1",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "The general handed the city over to the soldiers to plunder.",
+        "answer": "ὁ στρατηγὸς τὴν πόλιν τοῖς στρατιώταις διαρπάσαι παρέδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "τὴν",
+          "πόλιν",
+          "τοῖς",
+          "στρατιώταις",
+          "διαρπάσαι",
+          "παρέδωκεν"
+        ]
+      },
+      {
+        "prompt": "They left half of the army behind to guard the camp.",
+        "answer": "τὸ ἥμισυ τοῦ στρατεύματος κατέλιπον φυλάττειν τὸ στρατόπεδον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "ἥμισυ",
+          "τοῦ",
+          "στρατεύματος",
+          "κατέλιπον",
+          "φυλάττειν",
+          "στρατόπεδον"
+        ]
+      },
+      {
+        "prompt": "They granted a day to the accused man to make his defence.",
+        "answer": "τῷ φεύγοντι ἔδοσαν ἡμέραν ἀπολογήσασθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῷ",
+          "φεύγοντι",
+          "ἔδοσαν",
+          "ἡμέραν",
+          "ἀπολογήσασθαι"
+        ]
+      },
+      {
+        "prompt": "The women were bringing water to the wounded to drink.",
+        "answer": "αἱ γυναῖκες τοῖς τετρωμένοις ὕδωρ πιεῖν ἔφερον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "γυναῖκες",
+          "τοῖς",
+          "τετρωμένοις",
+          "ὕδωρ",
+          "πιεῖν",
+          "ἔφερον"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "They left half of the army behind to guard the camp.",
-    "answer": "τὸ ἥμισυ τοῦ στρατεύματος κατέλιπον φυλάττειν τὸ στρατόπεδον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "ἥμισυ",
-     "τοῦ",
-     "στρατεύματος",
-     "κατέλιπον",
-     "φυλάττειν",
-     "στρατόπεδον"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t2",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "The Athenians chose ten men to guard the walls.",
+        "answer": "οἱ Ἀθηναῖοι δέκα ἄνδρας εἵλοντο φυλάττειν τὰ τείχη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "Ἀθηναῖοι",
+          "δέκα",
+          "ἄνδρας",
+          "εἵλοντο",
+          "φυλάττειν",
+          "τὰ",
+          "τείχη"
+        ]
+      },
+      {
+        "prompt": "They sent ahead ten of the ships to sail into the great harbour.",
+        "answer": "δέκα τῶν νεῶν ἔπεμψαν εἰς τὸν μέγαν λιμένα πλεῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέκα",
+          "τῶν",
+          "νεῶν",
+          "ἔπεμψαν",
+          "εἰς",
+          "τὸν",
+          "μέγαν",
+          "λιμένα",
+          "πλεῦσαι"
+        ]
+      },
+      {
+        "prompt": "He appointed guards to watch the prisoners in the prison.",
+        "answer": "φύλακας κατέστησε τηρεῖν τοὺς δεσμώτας ἐν τῷ δεσμωτηρίῳ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φύλακας",
+          "κατέστησε",
+          "τηρεῖν",
+          "τοὺς",
+          "δεσμώτας",
+          "ἐν",
+          "τῷ",
+          "δεσμωτηρίῳ"
+        ]
+      },
+      {
+        "prompt": "The king entrusted his son to the old man to educate.",
+        "answer": "ὁ βασιλεὺς τὸν υἱὸν τῷ πρεσβύτῃ παιδεύειν ἐπέτρεψεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "βασιλεὺς",
+          "τὸν",
+          "υἱὸν",
+          "τῷ",
+          "πρεσβύτῃ",
+          "παιδεύειν",
+          "ἐπέτρεψεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "They granted a day to the accused man to make his defence.",
-    "answer": "τῷ φεύγοντι ἔδοσαν ἡμέραν ἀπολογήσασθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῷ",
-     "φεύγοντι",
-     "ἔδοσαν",
-     "ἡμέραν",
-     "ἀπολογήσασθαι"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t3",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "The soldiers did not have money to provision themselves.",
+        "answer": "οἱ στρατιῶται ἀργύριον οὐκ εἶχον ἐπισιτίζεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "ἀργύριον",
+          "οὐκ",
+          "εἶχον",
+          "ἐπισιτίζεσθαι"
+        ]
+      },
+      {
+        "prompt": "Here there is shade and grass to sit down on.",
+        "answer": "ἐνταῦθα σκιά ἐστι καὶ πόα καθίζεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐνταῦθα",
+          "σκιά",
+          "ἐστι",
+          "καὶ",
+          "πόα",
+          "καθίζεσθαι"
+        ]
+      },
+      {
+        "prompt": "I offer myself to the young men to be questioned.",
+        "answer": "παρέχω ἐμαυτὸν τοῖς νεανίαις ἐρωτᾶν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "παρέχω",
+          "ἐμαυτὸν",
+          "τοῖς",
+          "νεανίαις",
+          "ἐρωτᾶν"
+        ]
+      },
+      {
+        "prompt": "My door stood open for anyone wishing to enter.",
+        "answer": "ἡ θύρα ἡ ἐμὴ ἀνέῳκτο εἰσιέναι τῷ βουλομένῳ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "θύρα",
+          "ἐμὴ",
+          "ἀνέῳκτο",
+          "εἰσιέναι",
+          "τῷ",
+          "βουλομένῳ"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The women were bringing water to the wounded to drink.",
-    "answer": "αἱ γυναῖκες τοῖς τετρωμένοις ὕδωρ πιεῖν ἔφερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "γυναῖκες",
-     "τοῖς",
-     "τετρωμένοις",
-     "ὕδωρ",
-     "πιεῖν",
-     "ἔφερον"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t4",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "The storm was so great that no one could sail out.",
+        "answer": "τοσοῦτος ἦν ὁ χειμὼν ὥστε μηδένα ἐκπλεῖν δύνασθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοσοῦτος",
+          "ἦν",
+          "ὁ",
+          "χειμὼν",
+          "ὥστε",
+          "μηδένα",
+          "ἐκπλεῖν",
+          "δύνασθαι"
+        ]
+      },
+      {
+        "prompt": "The soldiers fought so bravely as to rout the enemy.",
+        "answer": "οἱ στρατιῶται οὕτως ἀνδρείως ἐμάχοντο ὥστε τοὺς πολεμίους τρέψασθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "οὕτως",
+          "ἀνδρείως",
+          "ἐμάχοντο",
+          "ὥστε",
+          "τοὺς",
+          "πολεμίους",
+          "τρέψασθαι"
+        ]
+      },
+      {
+        "prompt": "He was so wise that everyone admired him.",
+        "answer": "οὕτω σοφὸς ἦν ὥστε πάντας αὐτὸν θαυμάζειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτω",
+          "σοφὸς",
+          "ἦν",
+          "ὥστε",
+          "πάντας",
+          "αὐτὸν",
+          "θαυμάζειν"
+        ]
+      },
+      {
+        "prompt": "The river was so deep that they were not able to cross.",
+        "answer": "ὁ ποταμὸς οὕτω βαθὺς ἦν ὥστε μὴ δύνασθαι διαβαίνειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ποταμὸς",
+          "οὕτω",
+          "βαθὺς",
+          "ἦν",
+          "ὥστε",
+          "μὴ",
+          "δύνασθαι",
+          "διαβαίνειν"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t2",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "The Athenians chose ten men to guard the walls.",
-    "answer": "οἱ Ἀθηναῖοι δέκα ἄνδρας εἵλοντο φυλάττειν τὰ τείχη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "Ἀθηναῖοι",
-     "δέκα",
-     "ἄνδρας",
-     "εἵλοντο",
-     "φυλάττειν",
-     "τὰ",
-     "τείχη"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t5",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "He handed the letters over to the messenger to carry to the general.",
+        "answer": "τὰς ἐπιστολὰς τῷ ἀγγέλῳ παρέδωκε κομίζειν πρὸς τὸν στρατηγόν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰς",
+          "ἐπιστολὰς",
+          "τῷ",
+          "ἀγγέλῳ",
+          "παρέδωκε",
+          "κομίζειν",
+          "πρὸς",
+          "τὸν",
+          "στρατηγόν"
+        ]
+      },
+      {
+        "prompt": "They took the boys home to educate.",
+        "answer": "τοὺς παῖδας οἴκαδε ἔλαβον παιδεύειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "παῖδας",
+          "οἴκαδε",
+          "ἔλαβον",
+          "παιδεύειν"
+        ]
+      },
+      {
+        "prompt": "They chose him general to lead the army against the barbarians.",
+        "answer": "αὐτὸν στρατηγὸν εἵλοντο ἄγειν τὸ στράτευμα ἐπὶ τοὺς βαρβάρους.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αὐτὸν",
+          "στρατηγὸν",
+          "εἵλοντο",
+          "ἄγειν",
+          "τὸ",
+          "στράτευμα",
+          "ἐπὶ",
+          "τοὺς",
+          "βαρβάρους"
+        ]
+      },
+      {
+        "prompt": "He left the sheep to the shepherd to lead to the mountain.",
+        "answer": "τὰ πρόβατα τῷ ποιμένι κατέλιπεν ἄγειν πρὸς τὸ ὄρος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "πρόβατα",
+          "τῷ",
+          "ποιμένι",
+          "κατέλιπεν",
+          "ἄγειν",
+          "πρὸς",
+          "τὸ",
+          "ὄρος"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "They sent ahead ten of the ships to sail into the great harbour.",
-    "answer": "δέκα τῶν νεῶν ἔπεμψαν εἰς τὸν μέγαν λιμένα πλεῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέκα",
-     "τῶν",
-     "νεῶν",
-     "ἔπεμψαν",
-     "εἰς",
-     "τὸν",
-     "μέγαν",
-     "λιμένα",
-     "πλεῦσαι"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t6",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "So great a fear fell upon them that they fled from the city.",
+        "answer": "τοσοῦτος φόβος αὐτοῖς ἐνέπεσεν ὥστε ἐκ τῆς πόλεως φυγεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοσοῦτος",
+          "φόβος",
+          "αὐτοῖς",
+          "ἐνέπεσεν",
+          "ὥστε",
+          "ἐκ",
+          "τῆς",
+          "πόλεως",
+          "φυγεῖν"
+        ]
+      },
+      {
+        "prompt": "Having conquered the enemy, he gave the land to his allies to inhabit.",
+        "answer": "νικήσας τοὺς πολεμίους τὴν χώραν τοῖς συμμάχοις ἔδωκεν οἰκεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "νικήσας",
+          "τοὺς",
+          "πολεμίους",
+          "τὴν",
+          "χώραν",
+          "τοῖς",
+          "συμμάχοις",
+          "ἔδωκεν",
+          "οἰκεῖν"
+        ]
+      },
+      {
+        "prompt": "The ruler was so just that the soldiers were willing to obey him.",
+        "answer": "οὕτω δίκαιος ἦν ὁ ἄρχων ὥστε τοὺς στρατιώτας ἐθέλειν αὐτῷ ὑπακούειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτω",
+          "δίκαιος",
+          "ἦν",
+          "ὁ",
+          "ἄρχων",
+          "ὥστε",
+          "τοὺς",
+          "στρατιώτας",
+          "ἐθέλειν",
+          "αὐτῷ",
+          "ὑπακούειν"
+        ]
+      },
+      {
+        "prompt": "They appointed judges to decide the matter.",
+        "answer": "δικαστὰς κατέστησαν κρῖναι τὸ πρᾶγμα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δικαστὰς",
+          "κατέστησαν",
+          "κρῖναι",
+          "τὸ",
+          "πρᾶγμα"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "He appointed guards to watch the prisoners in the prison.",
-    "answer": "φύλακας κατέστησε τηρεῖν τοὺς δεσμώτας ἐν τῷ δεσμωτηρίῳ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φύλακας",
-     "κατέστησε",
-     "τηρεῖν",
-     "τοὺς",
-     "δεσμώτας",
-     "ἐν",
-     "τῷ",
-     "δεσμωτηρίῳ"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t7",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "The generals entrusted the gates to the allies to guard.",
+        "answer": "οἱ στρατηγοὶ τὰς πύλας τοῖς συμμάχοις φυλάττειν ἐπέτρεψαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατηγοὶ",
+          "τὰς",
+          "πύλας",
+          "τοῖς",
+          "συμμάχοις",
+          "φυλάττειν",
+          "ἐπέτρεψαν"
+        ]
+      },
+      {
+        "prompt": "He gave the prisoners to the soldiers to lead away.",
+        "answer": "τοὺς αἰχμαλώτους τοῖς στρατιώταις ἀπάγειν ἔδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "αἰχμαλώτους",
+          "τοῖς",
+          "στρατιώταις",
+          "ἀπάγειν",
+          "ἔδωκεν"
+        ]
+      },
+      {
+        "prompt": "They left the baggage in the village for the slaves to guard.",
+        "answer": "τὰ σκεύη ἐν τῇ κώμῃ τοῖς δούλοις φυλάττειν κατέλιπον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "σκεύη",
+          "ἐν",
+          "τῇ",
+          "κώμῃ",
+          "τοῖς",
+          "δούλοις",
+          "φυλάττειν",
+          "κατέλιπον"
+        ]
+      },
+      {
+        "prompt": "The father handed the boy over to the wise man to teach.",
+        "answer": "ὁ πατὴρ τὸν παῖδα τῷ σοφῷ διδάσκειν παρέδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "πατὴρ",
+          "τὸν",
+          "παῖδα",
+          "τῷ",
+          "σοφῷ",
+          "διδάσκειν",
+          "παρέδωκεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The king entrusted his son to the old man to educate.",
-    "answer": "ὁ βασιλεὺς τὸν υἱὸν τῷ πρεσβύτῃ παιδεύειν ἐπέτρεψεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "βασιλεὺς",
-     "τὸν",
-     "υἱὸν",
-     "τῷ",
-     "πρεσβύτῃ",
-     "παιδεύειν",
-     "ἐπέτρεψεν"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t8",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "They chose three men to manage the affairs.",
+        "answer": "τρεῖς ἄνδρας εἵλοντο τὰ πράγματα διοικεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τρεῖς",
+          "ἄνδρας",
+          "εἵλοντο",
+          "τὰ",
+          "πράγματα",
+          "διοικεῖν"
+        ]
+      },
+      {
+        "prompt": "The people appointed him envoy to speak to the king.",
+        "answer": "ὁ δῆμος αὐτὸν πρεσβευτὴν ἀπέδειξε πρὸς τὸν βασιλέα λέγειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "δῆμος",
+          "αὐτὸν",
+          "πρεσβευτὴν",
+          "ἀπέδειξε",
+          "πρὸς",
+          "τὸν",
+          "βασιλέα",
+          "λέγειν"
+        ]
+      },
+      {
+        "prompt": "The city appointed guards to watch the harbour by night.",
+        "answer": "ἡ πόλις φύλακας κατέστησε τὸν λιμένα νυκτὸς τηρεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "πόλις",
+          "φύλακας",
+          "κατέστησε",
+          "τὸν",
+          "λιμένα",
+          "νυκτὸς",
+          "τηρεῖν"
+        ]
+      },
+      {
+        "prompt": "They selected the bravest men to lead the army.",
+        "answer": "τοὺς ἀνδρειοτάτους ἐξελέξαντο τοῦ στρατεύματος ἡγεῖσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "ἀνδρειοτάτους",
+          "ἐξελέξαντο",
+          "τοῦ",
+          "στρατεύματος",
+          "ἡγεῖσθαι"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t3",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "The soldiers did not have money to provision themselves.",
-    "answer": "οἱ στρατιῶται ἀργύριον οὐκ εἶχον ἐπισιτίζεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "ἀργύριον",
-     "οὐκ",
-     "εἶχον",
-     "ἐπισιτίζεσθαι"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t9",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "The exiles had no ships in which to flee.",
+        "answer": "οἱ φυγάδες ναῦς οὐκ εἶχον ἀποφεύγειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "φυγάδες",
+          "ναῦς",
+          "οὐκ",
+          "εἶχον",
+          "ἀποφεύγειν"
+        ]
+      },
+      {
+        "prompt": "He offered himself to the judges to be examined.",
+        "answer": "ἑαυτὸν τοῖς δικασταῖς ἐξετάζειν παρεῖχεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἑαυτὸν",
+          "τοῖς",
+          "δικασταῖς",
+          "ἐξετάζειν",
+          "παρεῖχεν"
+        ]
+      },
+      {
+        "prompt": "The women were bringing wine to the guests to drink.",
+        "answer": "αἱ γυναῖκες οἶνον τοῖς ξένοις πιεῖν ἔφερον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "γυναῖκες",
+          "οἶνον",
+          "τοῖς",
+          "ξένοις",
+          "πιεῖν",
+          "ἔφερον"
+        ]
+      },
+      {
+        "prompt": "Nearby there was a spring for the thirsty man to drink from.",
+        "answer": "πλησίον κρήνη ἦν τῷ διψῶντι πιεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πλησίον",
+          "κρήνη",
+          "ἦν",
+          "τῷ",
+          "διψῶντι",
+          "πιεῖν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Here there is shade and grass to sit down on.",
-    "answer": "ἐνταῦθα σκιά ἐστι καὶ πόα καθίζεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐνταῦθα",
-     "σκιά",
-     "ἐστι",
-     "καὶ",
-     "πόα",
-     "καθίζεσθαι"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t10",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "They sent messengers to announce the victory.",
+        "answer": "ἀγγέλους ἔπεμψαν τὴν νίκην ἀγγεῖλαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀγγέλους",
+          "ἔπεμψαν",
+          "τὴν",
+          "νίκην",
+          "ἀγγεῖλαι"
+        ]
+      },
+      {
+        "prompt": "He sent the cavalry ahead to seize the bridge.",
+        "answer": "τοὺς ἱππέας πρότερον ἔπεμψε τὴν γέφυραν καταλαβεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "ἱππέας",
+          "πρότερον",
+          "ἔπεμψε",
+          "τὴν",
+          "γέφυραν",
+          "καταλαβεῖν"
+        ]
+      },
+      {
+        "prompt": "They dispatched heralds to the enemy to ask for a truce.",
+        "answer": "κήρυκας πρὸς τοὺς πολεμίους ἀπέστειλαν σπονδὰς αἰτῆσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "κήρυκας",
+          "πρὸς",
+          "τοὺς",
+          "πολεμίους",
+          "ἀπέστειλαν",
+          "σπονδὰς",
+          "αἰτῆσαι"
+        ]
+      },
+      {
+        "prompt": "The general sent scouts to observe the enemy's camp.",
+        "answer": "ὁ στρατηγὸς σκοποὺς ἔπεμψε τὸ τῶν πολεμίων στρατόπεδον κατασκέψασθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "σκοποὺς",
+          "ἔπεμψε",
+          "τὸ",
+          "τῶν",
+          "πολεμίων",
+          "στρατόπεδον",
+          "κατασκέψασθαι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "I offer myself to the young men to be questioned.",
-    "answer": "παρέχω ἐμαυτὸν τοῖς νεανίαις ἐρωτᾶν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "παρέχω",
-     "ἐμαυτὸν",
-     "τοῖς",
-     "νεανίαις",
-     "ἐρωτᾶν"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t11",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "The wall was so strong that no one could tear it down.",
+        "answer": "τὸ τεῖχος οὕτως ἰσχυρὸν ἦν ὥστε μηδένα δύνασθαι αὐτὸ καθελεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "τεῖχος",
+          "οὕτως",
+          "ἰσχυρὸν",
+          "ἦν",
+          "ὥστε",
+          "μηδένα",
+          "δύνασθαι",
+          "αὐτὸ",
+          "καθελεῖν"
+        ]
+      },
+      {
+        "prompt": "He spoke so persuasively as to win over the jurors.",
+        "answer": "οὕτω πιθανῶς ἔλεξεν ὥστε τοὺς δικαστὰς ἀναπεῖσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὕτω",
+          "πιθανῶς",
+          "ἔλεξεν",
+          "ὥστε",
+          "τοὺς",
+          "δικαστὰς",
+          "ἀναπεῖσαι"
+        ]
+      },
+      {
+        "prompt": "The winter was so harsh that many of the soldiers perished.",
+        "answer": "ὁ χειμὼν οὕτω χαλεπὸς ἦν ὥστε πολλοὺς τῶν στρατιωτῶν ἀπολέσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "χειμὼν",
+          "οὕτω",
+          "χαλεπὸς",
+          "ἦν",
+          "ὥστε",
+          "πολλοὺς",
+          "τῶν",
+          "στρατιωτῶν",
+          "ἀπολέσθαι"
+        ]
+      },
+      {
+        "prompt": "The orator was so clever that he deceived the whole assembly.",
+        "answer": "ὁ ῥήτωρ οὕτω δεινὸς ἦν ὥστε ὅλην τὴν ἐκκλησίαν ἐξαπατῆσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ῥήτωρ",
+          "οὕτω",
+          "δεινὸς",
+          "ἦν",
+          "ὥστε",
+          "ὅλην",
+          "τὴν",
+          "ἐκκλησίαν",
+          "ἐξαπατῆσαι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "My door stood open for anyone wishing to enter.",
-    "answer": "ἡ θύρα ἡ ἐμὴ ἀνέῳκτο εἰσιέναι τῷ βουλομένῳ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "θύρα",
-     "ἐμὴ",
-     "ἀνέῳκτο",
-     "εἰσιέναι",
-     "τῷ",
-     "βουλομένῳ"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-t12",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "Such a plague fell upon the city that the citizens abandoned it.",
+        "answer": "τοιαύτη νόσος τῇ πόλει προσέπεσεν ὥστε τοὺς πολίτας αὐτὴν ἐκλιπεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοιαύτη",
+          "νόσος",
+          "τῇ",
+          "πόλει",
+          "προσέπεσεν",
+          "ὥστε",
+          "τοὺς",
+          "πολίτας",
+          "αὐτὴν",
+          "ἐκλιπεῖν"
+        ]
+      },
+      {
+        "prompt": "He left money to his friends to distribute to the poor.",
+        "answer": "ἀργύριον τοῖς φίλοις τοῖς πένησι διανεῖμαι κατέλιπεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀργύριον",
+          "τοῖς",
+          "φίλοις",
+          "πένησι",
+          "διανεῖμαι",
+          "κατέλιπεν"
+        ]
+      },
+      {
+        "prompt": "They gave the captured city to their allies to inhabit.",
+        "answer": "τὴν ἁλοῦσαν πόλιν τοῖς συμμάχοις οἰκεῖν ἔδοσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὴν",
+          "ἁλοῦσαν",
+          "πόλιν",
+          "τοῖς",
+          "συμμάχοις",
+          "οἰκεῖν",
+          "ἔδοσαν"
+        ]
+      },
+      {
+        "prompt": "The mountain was so steep that scarcely anyone was able to climb it.",
+        "answer": "τὸ ὄρος οὕτως ὄρθιον ἦν ὥστε μόλις τινὰ δύνασθαι ἀναβῆναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "ὄρος",
+          "οὕτως",
+          "ὄρθιον",
+          "ἦν",
+          "ὥστε",
+          "μόλις",
+          "τινὰ",
+          "δύνασθαι",
+          "ἀναβῆναι"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t4",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "The storm was so great that no one could sail out.",
-    "answer": "τοσοῦτος ἦν ὁ χειμὼν ὥστε μηδένα ἐκπλεῖν δύνασθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοσοῦτος",
-     "ἦν",
-     "ὁ",
-     "χειμὼν",
-     "ὥστε",
-     "μηδένα",
-     "ἐκπλεῖν",
-     "δύνασθαι"
+  },
+  {
+    "id": "sm-2008-infinitive-of-purpose-and-result-q1",
+    "sectionId": "sm-2008-infinitive-of-purpose-and-result",
+    "questions": [
+      {
+        "prompt": "He gave this land over to the Greeks to plunder.",
+        "answer": "ταύτην τὴν χώραν ἐπέτρεψε διαρπάσαι τοῖς Ἕλλησιν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ταύτην",
+          "τὴν",
+          "χώραν",
+          "ἐπέτρεψε",
+          "διαρπάσαι",
+          "τοῖς",
+          "Ἕλλησιν"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "1.2.19"
+        }
+      },
+      {
+        "prompt": "You granted a day to Aristarchus to make his defence.",
+        "answer": "Ἀριστάρχῳ ἔδοτε ἡμέραν ἀπολογήσασθαι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "Ἀριστάρχῳ",
+          "ἔδοτε",
+          "ἡμέραν",
+          "ἀπολογήσασθαι"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Hellenica",
+          "locus": "1.7.28"
+        }
+      },
+      {
+        "prompt": "The soldiers did not have money by means of which they could provision themselves.",
+        "answer": "οἱ στρατιῶται ἀργύριον οὐκ εἶχον ἐπισιτίζεσθαι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "ἀργύριον",
+          "οὐκ",
+          "εἶχον",
+          "ἐπισιτίζεσθαι"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "7.1.7"
+        }
+      },
+      {
+        "prompt": "There is shade and grass to sit down in.",
+        "answer": "ἐκεῖ σκιά τ᾽ ἐστὶ καὶ πόα καθίζεσθαι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐκεῖ",
+          "σκιά",
+          "τ",
+          "ἐστὶ",
+          "καὶ",
+          "πόα",
+          "καθίζεσθαι"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Phaedrus",
+          "locus": "229b"
+        }
+      }
     ]
-   },
-   {
-    "prompt": "The soldiers fought so bravely as to rout the enemy.",
-    "answer": "οἱ στρατιῶται οὕτως ἀνδρείως ἐμάχοντο ὥστε τοὺς πολεμίους τρέψασθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "οὕτως",
-     "ἀνδρείως",
-     "ἐμάχοντο",
-     "ὥστε",
-     "τοὺς",
-     "πολεμίους",
-     "τρέψασθαι"
-    ]
-   },
-   {
-    "prompt": "He was so wise that everyone admired him.",
-    "answer": "οὕτω σοφὸς ἦν ὥστε πάντας αὐτὸν θαυμάζειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτω",
-     "σοφὸς",
-     "ἦν",
-     "ὥστε",
-     "πάντας",
-     "αὐτὸν",
-     "θαυμάζειν"
-    ]
-   },
-   {
-    "prompt": "The river was so deep that they were not able to cross.",
-    "answer": "ὁ ποταμὸς οὕτω βαθὺς ἦν ὥστε μὴ δύνασθαι διαβαίνειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ποταμὸς",
-     "οὕτω",
-     "βαθὺς",
-     "ἦν",
-     "ὥστε",
-     "μὴ",
-     "δύνασθαι",
-     "διαβαίνειν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t5",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "He handed the letters over to the messenger to carry to the general.",
-    "answer": "τὰς ἐπιστολὰς τῷ ἀγγέλῳ παρέδωκε κομίζειν πρὸς τὸν στρατηγόν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰς",
-     "ἐπιστολὰς",
-     "τῷ",
-     "ἀγγέλῳ",
-     "παρέδωκε",
-     "κομίζειν",
-     "πρὸς",
-     "τὸν",
-     "στρατηγόν"
-    ]
-   },
-   {
-    "prompt": "They took the boys home to educate.",
-    "answer": "τοὺς παῖδας οἴκαδε ἔλαβον παιδεύειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "παῖδας",
-     "οἴκαδε",
-     "ἔλαβον",
-     "παιδεύειν"
-    ]
-   },
-   {
-    "prompt": "They chose him general to lead the army against the barbarians.",
-    "answer": "αὐτὸν στρατηγὸν εἵλοντο ἄγειν τὸ στράτευμα ἐπὶ τοὺς βαρβάρους.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αὐτὸν",
-     "στρατηγὸν",
-     "εἵλοντο",
-     "ἄγειν",
-     "τὸ",
-     "στράτευμα",
-     "ἐπὶ",
-     "τοὺς",
-     "βαρβάρους"
-    ]
-   },
-   {
-    "prompt": "He left the sheep to the shepherd to lead to the mountain.",
-    "answer": "τὰ πρόβατα τῷ ποιμένι κατέλιπεν ἄγειν πρὸς τὸ ὄρος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "πρόβατα",
-     "τῷ",
-     "ποιμένι",
-     "κατέλιπεν",
-     "ἄγειν",
-     "πρὸς",
-     "τὸ",
-     "ὄρος"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t6",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "So great a fear fell upon them that they fled from the city.",
-    "answer": "τοσοῦτος φόβος αὐτοῖς ἐνέπεσεν ὥστε ἐκ τῆς πόλεως φυγεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοσοῦτος",
-     "φόβος",
-     "αὐτοῖς",
-     "ἐνέπεσεν",
-     "ὥστε",
-     "ἐκ",
-     "τῆς",
-     "πόλεως",
-     "φυγεῖν"
-    ]
-   },
-   {
-    "prompt": "Having conquered the enemy, he gave the land to his allies to inhabit.",
-    "answer": "νικήσας τοὺς πολεμίους τὴν χώραν τοῖς συμμάχοις ἔδωκεν οἰκεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "νικήσας",
-     "τοὺς",
-     "πολεμίους",
-     "τὴν",
-     "χώραν",
-     "τοῖς",
-     "συμμάχοις",
-     "ἔδωκεν",
-     "οἰκεῖν"
-    ]
-   },
-   {
-    "prompt": "The ruler was so just that the soldiers were willing to obey him.",
-    "answer": "οὕτω δίκαιος ἦν ὁ ἄρχων ὥστε τοὺς στρατιώτας ἐθέλειν αὐτῷ ὑπακούειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτω",
-     "δίκαιος",
-     "ἦν",
-     "ὁ",
-     "ἄρχων",
-     "ὥστε",
-     "τοὺς",
-     "στρατιώτας",
-     "ἐθέλειν",
-     "αὐτῷ",
-     "ὑπακούειν"
-    ]
-   },
-   {
-    "prompt": "They appointed judges to decide the matter.",
-    "answer": "δικαστὰς κατέστησαν κρῖναι τὸ πρᾶγμα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δικαστὰς",
-     "κατέστησαν",
-     "κρῖναι",
-     "τὸ",
-     "πρᾶγμα"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t7",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "The generals entrusted the gates to the allies to guard.",
-    "answer": "οἱ στρατηγοὶ τὰς πύλας τοῖς συμμάχοις φυλάττειν ἐπέτρεψαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατηγοὶ",
-     "τὰς",
-     "πύλας",
-     "τοῖς",
-     "συμμάχοις",
-     "φυλάττειν",
-     "ἐπέτρεψαν"
-    ]
-   },
-   {
-    "prompt": "He gave the prisoners to the soldiers to lead away.",
-    "answer": "τοὺς αἰχμαλώτους τοῖς στρατιώταις ἀπάγειν ἔδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "αἰχμαλώτους",
-     "τοῖς",
-     "στρατιώταις",
-     "ἀπάγειν",
-     "ἔδωκεν"
-    ]
-   },
-   {
-    "prompt": "They left the baggage in the village for the slaves to guard.",
-    "answer": "τὰ σκεύη ἐν τῇ κώμῃ τοῖς δούλοις φυλάττειν κατέλιπον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "σκεύη",
-     "ἐν",
-     "τῇ",
-     "κώμῃ",
-     "τοῖς",
-     "δούλοις",
-     "φυλάττειν",
-     "κατέλιπον"
-    ]
-   },
-   {
-    "prompt": "The father handed the boy over to the wise man to teach.",
-    "answer": "ὁ πατὴρ τὸν παῖδα τῷ σοφῷ διδάσκειν παρέδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "πατὴρ",
-     "τὸν",
-     "παῖδα",
-     "τῷ",
-     "σοφῷ",
-     "διδάσκειν",
-     "παρέδωκεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t8",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "They chose three men to manage the affairs.",
-    "answer": "τρεῖς ἄνδρας εἵλοντο τὰ πράγματα διοικεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τρεῖς",
-     "ἄνδρας",
-     "εἵλοντο",
-     "τὰ",
-     "πράγματα",
-     "διοικεῖν"
-    ]
-   },
-   {
-    "prompt": "The people appointed him envoy to speak to the king.",
-    "answer": "ὁ δῆμος αὐτὸν πρεσβευτὴν ἀπέδειξε πρὸς τὸν βασιλέα λέγειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "δῆμος",
-     "αὐτὸν",
-     "πρεσβευτὴν",
-     "ἀπέδειξε",
-     "πρὸς",
-     "τὸν",
-     "βασιλέα",
-     "λέγειν"
-    ]
-   },
-   {
-    "prompt": "The city appointed guards to watch the harbour by night.",
-    "answer": "ἡ πόλις φύλακας κατέστησε τὸν λιμένα νυκτὸς τηρεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "πόλις",
-     "φύλακας",
-     "κατέστησε",
-     "τὸν",
-     "λιμένα",
-     "νυκτὸς",
-     "τηρεῖν"
-    ]
-   },
-   {
-    "prompt": "They selected the bravest men to lead the army.",
-    "answer": "τοὺς ἀνδρειοτάτους ἐξελέξαντο τοῦ στρατεύματος ἡγεῖσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "ἀνδρειοτάτους",
-     "ἐξελέξαντο",
-     "τοῦ",
-     "στρατεύματος",
-     "ἡγεῖσθαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t9",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "The exiles had no ships in which to flee.",
-    "answer": "οἱ φυγάδες ναῦς οὐκ εἶχον ἀποφεύγειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "φυγάδες",
-     "ναῦς",
-     "οὐκ",
-     "εἶχον",
-     "ἀποφεύγειν"
-    ]
-   },
-   {
-    "prompt": "He offered himself to the judges to be examined.",
-    "answer": "ἑαυτὸν τοῖς δικασταῖς ἐξετάζειν παρεῖχεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἑαυτὸν",
-     "τοῖς",
-     "δικασταῖς",
-     "ἐξετάζειν",
-     "παρεῖχεν"
-    ]
-   },
-   {
-    "prompt": "The women were bringing wine to the guests to drink.",
-    "answer": "αἱ γυναῖκες οἶνον τοῖς ξένοις πιεῖν ἔφερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "γυναῖκες",
-     "οἶνον",
-     "τοῖς",
-     "ξένοις",
-     "πιεῖν",
-     "ἔφερον"
-    ]
-   },
-   {
-    "prompt": "Nearby there was a spring for the thirsty man to drink from.",
-    "answer": "πλησίον κρήνη ἦν τῷ διψῶντι πιεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πλησίον",
-     "κρήνη",
-     "ἦν",
-     "τῷ",
-     "διψῶντι",
-     "πιεῖν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t10",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "They sent messengers to announce the victory.",
-    "answer": "ἀγγέλους ἔπεμψαν τὴν νίκην ἀγγεῖλαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀγγέλους",
-     "ἔπεμψαν",
-     "τὴν",
-     "νίκην",
-     "ἀγγεῖλαι"
-    ]
-   },
-   {
-    "prompt": "He sent the cavalry ahead to seize the bridge.",
-    "answer": "τοὺς ἱππέας πρότερον ἔπεμψε τὴν γέφυραν καταλαβεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "ἱππέας",
-     "πρότερον",
-     "ἔπεμψε",
-     "τὴν",
-     "γέφυραν",
-     "καταλαβεῖν"
-    ]
-   },
-   {
-    "prompt": "They dispatched heralds to the enemy to ask for a truce.",
-    "answer": "κήρυκας πρὸς τοὺς πολεμίους ἀπέστειλαν σπονδὰς αἰτῆσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "κήρυκας",
-     "πρὸς",
-     "τοὺς",
-     "πολεμίους",
-     "ἀπέστειλαν",
-     "σπονδὰς",
-     "αἰτῆσαι"
-    ]
-   },
-   {
-    "prompt": "The general sent scouts to observe the enemy's camp.",
-    "answer": "ὁ στρατηγὸς σκοποὺς ἔπεμψε τὸ τῶν πολεμίων στρατόπεδον κατασκέψασθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "σκοποὺς",
-     "ἔπεμψε",
-     "τὸ",
-     "τῶν",
-     "πολεμίων",
-     "στρατόπεδον",
-     "κατασκέψασθαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t11",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "The wall was so strong that no one could tear it down.",
-    "answer": "τὸ τεῖχος οὕτως ἰσχυρὸν ἦν ὥστε μηδένα δύνασθαι αὐτὸ καθελεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "τεῖχος",
-     "οὕτως",
-     "ἰσχυρὸν",
-     "ἦν",
-     "ὥστε",
-     "μηδένα",
-     "δύνασθαι",
-     "αὐτὸ",
-     "καθελεῖν"
-    ]
-   },
-   {
-    "prompt": "He spoke so persuasively as to win over the jurors.",
-    "answer": "οὕτω πιθανῶς ἔλεξεν ὥστε τοὺς δικαστὰς ἀναπεῖσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὕτω",
-     "πιθανῶς",
-     "ἔλεξεν",
-     "ὥστε",
-     "τοὺς",
-     "δικαστὰς",
-     "ἀναπεῖσαι"
-    ]
-   },
-   {
-    "prompt": "The winter was so harsh that many of the soldiers perished.",
-    "answer": "ὁ χειμὼν οὕτω χαλεπὸς ἦν ὥστε πολλοὺς τῶν στρατιωτῶν ἀπολέσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "χειμὼν",
-     "οὕτω",
-     "χαλεπὸς",
-     "ἦν",
-     "ὥστε",
-     "πολλοὺς",
-     "τῶν",
-     "στρατιωτῶν",
-     "ἀπολέσθαι"
-    ]
-   },
-   {
-    "prompt": "The orator was so clever that he deceived the whole assembly.",
-    "answer": "ὁ ῥήτωρ οὕτω δεινὸς ἦν ὥστε ὅλην τὴν ἐκκλησίαν ἐξαπατῆσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ῥήτωρ",
-     "οὕτω",
-     "δεινὸς",
-     "ἦν",
-     "ὥστε",
-     "ὅλην",
-     "τὴν",
-     "ἐκκλησίαν",
-     "ἐξαπατῆσαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-t12",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "Such a plague fell upon the city that the citizens abandoned it.",
-    "answer": "τοιαύτη νόσος τῇ πόλει προσέπεσεν ὥστε τοὺς πολίτας αὐτὴν ἐκλιπεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοιαύτη",
-     "νόσος",
-     "τῇ",
-     "πόλει",
-     "προσέπεσεν",
-     "ὥστε",
-     "τοὺς",
-     "πολίτας",
-     "αὐτὴν",
-     "ἐκλιπεῖν"
-    ]
-   },
-   {
-    "prompt": "He left money to his friends to distribute to the poor.",
-    "answer": "ἀργύριον τοῖς φίλοις τοῖς πένησι διανεῖμαι κατέλιπεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀργύριον",
-     "τοῖς",
-     "φίλοις",
-     "πένησι",
-     "διανεῖμαι",
-     "κατέλιπεν"
-    ]
-   },
-   {
-    "prompt": "They gave the captured city to their allies to inhabit.",
-    "answer": "τὴν ἁλοῦσαν πόλιν τοῖς συμμάχοις οἰκεῖν ἔδοσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὴν",
-     "ἁλοῦσαν",
-     "πόλιν",
-     "τοῖς",
-     "συμμάχοις",
-     "οἰκεῖν",
-     "ἔδοσαν"
-    ]
-   },
-   {
-    "prompt": "The mountain was so steep that scarcely anyone was able to climb it.",
-    "answer": "τὸ ὄρος οὕτως ὄρθιον ἦν ὥστε μόλις τινὰ δύνασθαι ἀναβῆναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "ὄρος",
-     "οὕτως",
-     "ὄρθιον",
-     "ἦν",
-     "ὥστε",
-     "μόλις",
-     "τινὰ",
-     "δύνασθαι",
-     "ἀναβῆναι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2008-infinitive-of-purpose-and-result-q1",
-  "sectionId": "sm-2008-infinitive-of-purpose-and-result",
-  "questions": [
-   {
-    "prompt": "He gave this land over to the Greeks to plunder.",
-    "answer": "ταύτην τὴν χώραν ἐπέτρεψε διαρπάσαι τοῖς Ἕλλησιν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ταύτην",
-     "τὴν",
-     "χώραν",
-     "ἐπέτρεψε",
-     "διαρπάσαι",
-     "τοῖς",
-     "Ἕλλησιν"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "1.2.19"
-    }
-   },
-   {
-    "prompt": "You granted a day to Aristarchus to make his defence.",
-    "answer": "Ἀριστάρχῳ . . . ἔδοτε ἡμέραν ἀπολογήσασθαι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "Ἀριστάρχῳ",
-     "ἔδοτε",
-     "ἡμέραν",
-     "ἀπολογήσασθαι"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Hellenica",
-     "locus": "1.7.28"
-    }
-   },
-   {
-    "prompt": "The soldiers did not have money by means of which they could provision themselves.",
-    "answer": "οἱ στρατιῶται ἀργύριον οὐκ εἶχον ἐπισιτίζεσθαι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "ἀργύριον",
-     "οὐκ",
-     "εἶχον",
-     "ἐπισιτίζεσθαι"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "7.1.7"
-    }
-   },
-   {
-    "prompt": "There is shade and grass to sit down in.",
-    "answer": "ἐκεῖ σκιά τ᾽ ἐστὶ καὶ πόα καθίζεσθαι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐκεῖ",
-     "σκιά",
-     "τ",
-     "ἐστὶ",
-     "καὶ",
-     "πόα",
-     "καθίζεσθαι"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Phaedrus",
-     "locus": "229b"
-    }
-   }
-  ]
- }
+  }
 ]

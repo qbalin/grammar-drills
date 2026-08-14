@@ -1,810 +1,810 @@
 [
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t1",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "The judge asked the witness what he had seen, and he said nothing.",
-    "answer": "ὁ δικαστὴς ἤρετο τὸν μάρτυρα ὅ τι εἶδεν, καὶ ὃς οὐδὲν εἶπεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "δικαστὴς",
-     "ἤρετο",
-     "τὸν",
-     "μάρτυρα",
-     "ὅ",
-     "τι",
-     "εἶδεν",
-     "καὶ",
-     "ὃς",
-     "οὐδὲν",
-     "εἶπεν"
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t1",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "The judge asked the witness what he had seen, and he said nothing.",
+        "answer": "ὁ δικαστὴς ἤρετο τὸν μάρτυρα ὅ τι εἶδεν, καὶ ὃς οὐδὲν εἶπεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "δικαστὴς",
+          "ἤρετο",
+          "τὸν",
+          "μάρτυρα",
+          "ὅ",
+          "τι",
+          "εἶδεν",
+          "καὶ",
+          "ὃς",
+          "οὐδὲν",
+          "εἶπεν"
+        ]
+      },
+      {
+        "prompt": "\"I myself,\" said he, \"have often heard these things.\"",
+        "answer": "αὐτός, ἦ δὲ ὅς, πολλάκις ταῦτα ἀκήκοα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αὐτός",
+          "ἦ",
+          "δὲ",
+          "ὅς",
+          "πολλάκις",
+          "ταῦτα",
+          "ἀκήκοα"
+        ]
+      },
+      {
+        "prompt": "The orator declared that this man and that man had betrayed the city.",
+        "answer": "ὁ ῥήτωρ ἀπέφηνε τὸν καὶ τὸν τὴν πόλιν προδοῦναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ῥήτωρ",
+          "ἀπέφηνε",
+          "τὸν",
+          "καὶ",
+          "τὴν",
+          "πόλιν",
+          "προδοῦναι"
+        ]
+      },
+      {
+        "prompt": "The god gives victory neither to these nor to those without justice.",
+        "answer": "ὁ θεὸς οὔτε τοῖς οὔτε τοῖς δίδωσι νίκην ἄνευ δίκης.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "θεὸς",
+          "οὔτε",
+          "τοῖς",
+          "δίδωσι",
+          "νίκην",
+          "ἄνευ",
+          "δίκης"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "\"I myself,\" said he, \"have often heard these things.\"",
-    "answer": "αὐτός, ἦ δὲ ὅς, πολλάκις ταῦτα ἀκήκοα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αὐτός",
-     "ἦ",
-     "δὲ",
-     "ὅς",
-     "πολλάκις",
-     "ταῦτα",
-     "ἀκήκοα"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t2",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "The general asked the scouts about the enemy, and they reported everything.",
+        "answer": "ὁ στρατηγὸς ἤρετο τοὺς σκοποὺς περὶ τῶν πολεμίων, καὶ οἳ πάντα ἀπήγγειλαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "ἤρετο",
+          "τοὺς",
+          "σκοποὺς",
+          "περὶ",
+          "τῶν",
+          "πολεμίων",
+          "καὶ",
+          "οἳ",
+          "πάντα",
+          "ἀπήγγειλαν"
+        ]
+      },
+      {
+        "prompt": "They say that the herald came, and that he announced the truce.",
+        "answer": "φασὶ τὸν κήρυκα ἐλθεῖν, καὶ τὸν τὰς σπονδὰς ἀγγεῖλαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φασὶ",
+          "τὸν",
+          "κήρυκα",
+          "ἐλθεῖν",
+          "καὶ",
+          "τὰς",
+          "σπονδὰς",
+          "ἀγγεῖλαι"
+        ]
+      },
+      {
+        "prompt": "He kept promising to give this and that, but he was lying.",
+        "answer": "ὑπισχνεῖτο τὸ καὶ τὸ δώσειν, ἐψεύδετο δέ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὑπισχνεῖτο",
+          "τὸ",
+          "καὶ",
+          "δώσειν",
+          "ἐψεύδετο",
+          "δέ"
+        ]
+      },
+      {
+        "prompt": "As a witness I will produce the man who said he was present.",
+        "answer": "μάρτυρα παρέξομαι τὸν ὃς ἔφη παρεῖναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μάρτυρα",
+          "παρέξομαι",
+          "τὸν",
+          "ὃς",
+          "ἔφη",
+          "παρεῖναι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The orator declared that this man and that man had betrayed the city.",
-    "answer": "ὁ ῥήτωρ ἀπέφηνε τὸν καὶ τὸν τὴν πόλιν προδοῦναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ῥήτωρ",
-     "ἀπέφηνε",
-     "τὸν",
-     "καὶ",
-     "τὴν",
-     "πόλιν",
-     "προδοῦναι"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t3",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "\"These things,\" said he, \"are not easy to bear.\"",
+        "answer": "ταῦτα, ἦ δὲ ὅς, οὐ ῥᾴδιά ἐστι φέρειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ταῦτα",
+          "ἦ",
+          "δὲ",
+          "ὅς",
+          "οὐ",
+          "ῥᾴδιά",
+          "ἐστι",
+          "φέρειν"
+        ]
+      },
+      {
+        "prompt": "The queen was asked whether she would flee, and she refused.",
+        "answer": "ἠρωτήθη ἡ βασίλεια εἰ φεύξοιτο, καὶ ἣ οὐκ ἔφη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἠρωτήθη",
+          "ἡ",
+          "βασίλεια",
+          "εἰ",
+          "φεύξοιτο",
+          "καὶ",
+          "ἣ",
+          "οὐκ",
+          "ἔφη"
+        ]
+      },
+      {
+        "prompt": "The sophist used to say such and such things and deceive the young men.",
+        "answer": "ὁ σοφιστὴς τὰ καὶ τὰ ἔλεγε καὶ τοὺς νεανίας ἐξηπάτα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "σοφιστὴς",
+          "τὰ",
+          "καὶ",
+          "ἔλεγε",
+          "τοὺς",
+          "νεανίας",
+          "ἐξηπάτα"
+        ]
+      },
+      {
+        "prompt": "Before this time the islanders had never fought at sea.",
+        "answer": "πρὸ τοῦ οἱ νησιῶται οὐδέποτε ἐναυμάχησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πρὸ",
+          "τοῦ",
+          "οἱ",
+          "νησιῶται",
+          "οὐδέποτε",
+          "ἐναυμάχησαν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The god gives victory neither to these nor to those without justice.",
-    "answer": "ὁ θεὸς οὔτε τοῖς οὔτε τοῖς δίδωσι νίκην ἄνευ δίκης.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "θεὸς",
-     "οὔτε",
-     "τοῖς",
-     "δίδωσι",
-     "νίκην",
-     "ἄνευ",
-     "δίκης"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t4",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "Cyrus asked the satrap for gold, and he immediately gave it.",
+        "answer": "ὁ Κῦρος ᾔτησε τὸν σατράπην χρυσίον, καὶ ὃς εὐθὺς ἔδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "Κῦρος",
+          "ᾔτησε",
+          "τὸν",
+          "σατράπην",
+          "χρυσίον",
+          "καὶ",
+          "ὃς",
+          "εὐθὺς",
+          "ἔδωκεν"
+        ]
+      },
+      {
+        "prompt": "He accused this man and that man of taking the money.",
+        "answer": "ᾐτιάσατο τὸν καὶ τὸν τὰ χρήματα λαβεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ᾐτιάσατο",
+          "τὸν",
+          "καὶ",
+          "τὰ",
+          "χρήματα",
+          "λαβεῖν"
+        ]
+      },
+      {
+        "prompt": "The philosopher aims at that which is truly beautiful.",
+        "answer": "ὁ φιλόσοφος ὀρέγεται τοῦ ὃ ἔστιν ἀληθῶς καλόν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "φιλόσοφος",
+          "ὀρέγεται",
+          "τοῦ",
+          "ὃ",
+          "ἔστιν",
+          "ἀληθῶς",
+          "καλόν"
+        ]
+      },
+      {
+        "prompt": "They say that the boy came, and that he handed over the letter.",
+        "answer": "λέγουσι τὸν παῖδα ἐλθεῖν, καὶ τὸν τὴν ἐπιστολὴν παραδοῦναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "λέγουσι",
+          "τὸν",
+          "παῖδα",
+          "ἐλθεῖν",
+          "καὶ",
+          "τὴν",
+          "ἐπιστολὴν",
+          "παραδοῦναι"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t2",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "The general asked the scouts about the enemy, and they reported everything.",
-    "answer": "ὁ στρατηγὸς ἤρετο τοὺς σκοποὺς περὶ τῶν πολεμίων, καὶ οἳ πάντα ἀπήγγειλαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "ἤρετο",
-     "τοὺς",
-     "σκοποὺς",
-     "περὶ",
-     "τῶν",
-     "πολεμίων",
-     "καὶ",
-     "οἳ",
-     "πάντα",
-     "ἀπήγγειλαν"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t5",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "\"You yourselves,\" said he, \"know these things well.\"",
+        "answer": "αὐτοί, ἦ δὲ ὅς, ταῦτα εὖ ἴστε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αὐτοί",
+          "ἦ",
+          "δὲ",
+          "ὅς",
+          "ταῦτα",
+          "εὖ",
+          "ἴστε"
+        ]
+      },
+      {
+        "prompt": "The lawgiver granted this power neither to these nor to those.",
+        "answer": "ὁ νομοθέτης ταύτην τὴν ἐξουσίαν οὔτε τοῖς οὔτε τοῖς ἔδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "νομοθέτης",
+          "ταύτην",
+          "τὴν",
+          "ἐξουσίαν",
+          "οὔτε",
+          "τοῖς",
+          "ἔδωκεν"
+        ]
+      },
+      {
+        "prompt": "The Athenians asked the allies for ships, and they promised many.",
+        "answer": "οἱ Ἀθηναῖοι τοὺς συμμάχους ναῦς ᾔτησαν, καὶ οἳ πολλὰς ὑπέσχοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "Ἀθηναῖοι",
+          "τοὺς",
+          "συμμάχους",
+          "ναῦς",
+          "ᾔτησαν",
+          "καὶ",
+          "οἳ",
+          "πολλὰς",
+          "ὑπέσχοντο"
+        ]
+      },
+      {
+        "prompt": "The general ordered them to do this and that before the battle.",
+        "answer": "ὁ στρατηγὸς ἐκέλευσεν αὐτοὺς τὸ καὶ τὸ πρᾶξαι πρὸ τῆς μάχης.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "ἐκέλευσεν",
+          "αὐτοὺς",
+          "τὸ",
+          "καὶ",
+          "πρᾶξαι",
+          "πρὸ",
+          "τῆς",
+          "μάχης"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "They say that the herald came, and that he announced the truce.",
-    "answer": "φασὶ τὸν κήρυκα ἐλθεῖν, καὶ τὸν τὰς σπονδὰς ἀγγεῖλαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φασὶ",
-     "τὸν",
-     "κήρυκα",
-     "ἐλθεῖν",
-     "καὶ",
-     "τὰς",
-     "σπονδὰς",
-     "ἀγγεῖλαι"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t6",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "The king asked the messenger about his father, and he told everything truly.",
+        "answer": "ὁ βασιλεὺς ἤρετο τὸν ἄγγελον περὶ τοῦ πατρός, καὶ ὃς πάντα ἀληθῶς εἶπεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "βασιλεὺς",
+          "ἤρετο",
+          "τὸν",
+          "ἄγγελον",
+          "περὶ",
+          "τοῦ",
+          "πατρός",
+          "καὶ",
+          "ὃς",
+          "πάντα",
+          "ἀληθῶς",
+          "εἶπεν"
+        ]
+      },
+      {
+        "prompt": "The witness named this man and that man as having plotted.",
+        "answer": "ὁ μάρτυς ὠνόμασε τὸν καὶ τὸν ἐπιβουλεῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "μάρτυς",
+          "ὠνόμασε",
+          "τὸν",
+          "καὶ",
+          "ἐπιβουλεῦσαι"
+        ]
+      },
+      {
+        "prompt": "As witnesses I will produce both the neighbor and the man who bought the house.",
+        "answer": "μάρτυρας παρέξομαι τόν τε γείτονα καὶ τὸν ὃς τὴν οἰκίαν ἐπρίατο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μάρτυρας",
+          "παρέξομαι",
+          "τόν",
+          "τε",
+          "γείτονα",
+          "καὶ",
+          "τὸν",
+          "ὃς",
+          "τὴν",
+          "οἰκίαν",
+          "ἐπρίατο"
+        ]
+      },
+      {
+        "prompt": "Before this time the citizens had trusted him greatly.",
+        "answer": "πρὸ τοῦ οἱ πολῖται σφόδρα αὐτῷ ἐπίστευον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πρὸ",
+          "τοῦ",
+          "οἱ",
+          "πολῖται",
+          "σφόδρα",
+          "αὐτῷ",
+          "ἐπίστευον"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "He kept promising to give this and that, but he was lying.",
-    "answer": "ὑπισχνεῖτο τὸ καὶ τὸ δώσειν, ἐψεύδετο δέ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὑπισχνεῖτο",
-     "τὸ",
-     "καὶ",
-     "δώσειν",
-     "ἐψεύδετο",
-     "δέ"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t7",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "The general ordered the soldiers to advance, and they at once obeyed.",
+        "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἐκέλευσε προϊέναι, καὶ οἳ εὐθὺς ἐπείθοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "τοὺς",
+          "στρατιώτας",
+          "ἐκέλευσε",
+          "προϊέναι",
+          "καὶ",
+          "οἳ",
+          "εὐθὺς",
+          "ἐπείθοντο"
+        ]
+      },
+      {
+        "prompt": "When Socrates had ceased speaking, the youth questioned him, and he answered gladly.",
+        "answer": "παυσαμένου τοῦ Σωκράτους, ὁ νεανίας αὐτὸν ἤρετο, καὶ ὃς ἡδέως ἀπεκρίνατο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "παυσαμένου",
+          "τοῦ",
+          "Σωκράτους",
+          "ὁ",
+          "νεανίας",
+          "αὐτὸν",
+          "ἤρετο",
+          "καὶ",
+          "ὃς",
+          "ἡδέως",
+          "ἀπεκρίνατο"
+        ]
+      },
+      {
+        "prompt": "The maidservants carried water to the guests, and they drank eagerly.",
+        "answer": "αἱ θεράπαιναι τοῖς ξένοις ὕδωρ ἐκόμισαν, καὶ οἳ προθύμως ἔπιον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "θεράπαιναι",
+          "τοῖς",
+          "ξένοις",
+          "ὕδωρ",
+          "ἐκόμισαν",
+          "καὶ",
+          "οἳ",
+          "προθύμως",
+          "ἔπιον"
+        ]
+      },
+      {
+        "prompt": "The mother asked the daughter where she was going, and she said nothing.",
+        "answer": "ἡ μήτηρ τὴν θυγατέρα ἤρετο ὅποι πορεύοιτο, καὶ ἣ οὐδὲν εἶπεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "μήτηρ",
+          "τὴν",
+          "θυγατέρα",
+          "ἤρετο",
+          "ὅποι",
+          "πορεύοιτο",
+          "καὶ",
+          "ἣ",
+          "οὐδὲν",
+          "εἶπεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "As a witness I will produce the man who said he was present.",
-    "answer": "μάρτυρα παρέξομαι τὸν ὃς ἔφη παρεῖναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μάρτυρα",
-     "παρέξομαι",
-     "τὸν",
-     "ὃς",
-     "ἔφη",
-     "παρεῖναι"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t8",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "\"Virtue,\" said he, \"is more honourable than wealth.\"",
+        "answer": "ἡ ἀρετή, ἦ δὲ ὅς, τιμιωτέρα ἐστὶ τοῦ πλούτου.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "ἀρετή",
+          "ἦ",
+          "δὲ",
+          "ὅς",
+          "τιμιωτέρα",
+          "ἐστὶ",
+          "τοῦ",
+          "πλούτου"
+        ]
+      },
+      {
+        "prompt": "\"I know nothing,\" said he, \"about the things beneath the earth.\"",
+        "answer": "οὐδὲν οἶδα, ἦ δὲ ὅς, περὶ τῶν ὑπὸ γῆς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδὲν",
+          "οἶδα",
+          "ἦ",
+          "δὲ",
+          "ὅς",
+          "περὶ",
+          "τῶν",
+          "ὑπὸ",
+          "γῆς"
+        ]
+      },
+      {
+        "prompt": "\"We must,\" said he, \"honour the gods before all else.\"",
+        "answer": "δεῖ ἡμᾶς, ἦ δὲ ὅς, τοὺς θεοὺς πρὸ πάντων τιμᾶν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δεῖ",
+          "ἡμᾶς",
+          "ἦ",
+          "δὲ",
+          "ὅς",
+          "τοὺς",
+          "θεοὺς",
+          "πρὸ",
+          "πάντων",
+          "τιμᾶν"
+        ]
+      },
+      {
+        "prompt": "\"This I did willingly,\" said she.",
+        "answer": "τοῦτο ἑκοῦσα ἔπραξα, ἦ δὲ ἥ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῦτο",
+          "ἑκοῦσα",
+          "ἔπραξα",
+          "ἦ",
+          "δὲ",
+          "ἥ"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t3",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "\"These things,\" said he, \"are not easy to bear.\"",
-    "answer": "ταῦτα, ἦ δὲ ὅς, οὐ ῥᾴδιά ἐστι φέρειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ταῦτα",
-     "ἦ",
-     "δὲ",
-     "ὅς",
-     "οὐ",
-     "ῥᾴδιά",
-     "ἐστι",
-     "φέρειν"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t9",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "Of the soldiers some fled, but others bravely stood their ground.",
+        "answer": "τῶν στρατιωτῶν οἱ μὲν ἔφυγον, οἱ δὲ ἀνδρείως ὑπέμειναν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῶν",
+          "στρατιωτῶν",
+          "οἱ",
+          "μὲν",
+          "ἔφυγον",
+          "δὲ",
+          "ἀνδρείως",
+          "ὑπέμειναν"
+        ]
+      },
+      {
+        "prompt": "The one praised the poet, but the other blamed him.",
+        "answer": "ὁ μὲν τὸν ποιητὴν ἐπῄνεσεν, ὁ δὲ ἐμέμψατο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "μὲν",
+          "τὸν",
+          "ποιητὴν",
+          "ἐπῄνεσεν",
+          "δὲ",
+          "ἐμέμψατο"
+        ]
+      },
+      {
+        "prompt": "Some of the citizens sailed away, but others remained in the city.",
+        "answer": "τῶν πολιτῶν οἱ μὲν ἀπέπλευσαν, οἱ δὲ ἐν τῇ πόλει ἔμειναν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῶν",
+          "πολιτῶν",
+          "οἱ",
+          "μὲν",
+          "ἀπέπλευσαν",
+          "δὲ",
+          "ἐν",
+          "τῇ",
+          "πόλει",
+          "ἔμειναν"
+        ]
+      },
+      {
+        "prompt": "The one son she loved, but the other she hated.",
+        "answer": "τὸν μὲν υἱὸν ἐφίλει, τὸν δὲ ἐμίσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸν",
+          "μὲν",
+          "υἱὸν",
+          "ἐφίλει",
+          "δὲ",
+          "ἐμίσει"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The queen was asked whether she would flee, and she refused.",
-    "answer": "ἠρωτήθη ἡ βασίλεια εἰ φεύξοιτο, καὶ ἣ οὐκ ἔφη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἠρωτήθη",
-     "ἡ",
-     "βασίλεια",
-     "εἰ",
-     "φεύξοιτο",
-     "καὶ",
-     "ἣ",
-     "οὐκ",
-     "ἔφη"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t10",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "He accused now this man and now that of the crime.",
+        "answer": "ᾐτιάσατο τὸν καὶ τὸν τοῦ ἀδικήματος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ᾐτιάσατο",
+          "τὸν",
+          "καὶ",
+          "τοῦ",
+          "ἀδικήματος"
+        ]
+      },
+      {
+        "prompt": "The orator kept saying now this and now that, but nothing clear.",
+        "answer": "ὁ ῥήτωρ τὸ καὶ τὸ ἔλεγεν, σαφὲς δὲ οὐδέν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ῥήτωρ",
+          "τὸ",
+          "καὶ",
+          "ἔλεγεν",
+          "σαφὲς",
+          "δὲ",
+          "οὐδέν"
+        ]
+      },
+      {
+        "prompt": "Before this time the city had never been besieged.",
+        "answer": "πρὸ τοῦ ἡ πόλις οὐδέποτε ἐπολιορκήθη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πρὸ",
+          "τοῦ",
+          "ἡ",
+          "πόλις",
+          "οὐδέποτε",
+          "ἐπολιορκήθη"
+        ]
+      },
+      {
+        "prompt": "He used to trust neither these men nor those.",
+        "answer": "οὔτε τοῖς οὔτε τοῖς ἐπίστευεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὔτε",
+          "τοῖς",
+          "ἐπίστευεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The sophist used to say such and such things and deceive the young men.",
-    "answer": "ὁ σοφιστὴς τὰ καὶ τὰ ἔλεγε καὶ τοὺς νεανίας ἐξηπάτα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "σοφιστὴς",
-     "τὰ",
-     "καὶ",
-     "ἔλεγε",
-     "τοὺς",
-     "νεανίας",
-     "ἐξηπάτα"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-t11",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "As witnesses I will produce both the merchant and the man who claimed to be his master.",
+        "answer": "μάρτυρας παρέξομαι τόν τε ἔμπορον καὶ τὸν ὃς ἔφη δεσπότης αὐτοῦ εἶναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μάρτυρας",
+          "παρέξομαι",
+          "τόν",
+          "τε",
+          "ἔμπορον",
+          "καὶ",
+          "τὸν",
+          "ὃς",
+          "ἔφη",
+          "δεσπότης",
+          "αὐτοῦ",
+          "εἶναι"
+        ]
+      },
+      {
+        "prompt": "The philosopher reaches out for that which is truly just.",
+        "answer": "ὁ φιλόσοφος ὀρέγεται τοῦ ὃ ἔστιν ὄντως δίκαιον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "φιλόσοφος",
+          "ὀρέγεται",
+          "τοῦ",
+          "ὃ",
+          "ἔστιν",
+          "ὄντως",
+          "δίκαιον"
+        ]
+      },
+      {
+        "prompt": "And he, they say, replied that he would come to the assembly on the next day.",
+        "answer": "καὶ τὸν εἰπεῖν ὅτι εἰς τὴν ἐκκλησίαν τῇ ὑστεραίᾳ ἥξοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "τὸν",
+          "εἰπεῖν",
+          "ὅτι",
+          "εἰς",
+          "τὴν",
+          "ἐκκλησίαν",
+          "τῇ",
+          "ὑστεραίᾳ",
+          "ἥξοι"
+        ]
+      },
+      {
+        "prompt": "And she, so the story goes, ordered the servants to depart quickly from the house.",
+        "answer": "καὶ τὴν κελεῦσαι τοὺς θεράποντας ταχέως ἐκ τῆς οἰκίας ἀπιέναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "τὴν",
+          "κελεῦσαι",
+          "τοὺς",
+          "θεράποντας",
+          "ταχέως",
+          "ἐκ",
+          "τῆς",
+          "οἰκίας",
+          "ἀπιέναι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Before this time the islanders had never fought at sea.",
-    "answer": "πρὸ τοῦ οἱ νησιῶται οὐδέποτε ἐναυμάχησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πρὸ",
-     "τοῦ",
-     "οἱ",
-     "νησιῶται",
-     "οὐδέποτε",
-     "ἐναυμάχησαν"
+  },
+  {
+    "id": "sm-1113-various-uses-of-o-os-e-e-to-q1",
+    "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
+    "questions": [
+      {
+        "prompt": "Neither to these nor to those.",
+        "answer": "οὔτε τοῖς οὔτε τοῖς",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὔτε",
+          "τοῖς",
+          "οὔτε",
+          "τοῖς"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Laws",
+          "locus": "701e"
+        }
+      },
+      {
+        "prompt": "And as witness I will produce both Euthycritus and the man who said he was his master.",
+        "answer": "τόν τε Εὐθύκριτον καὶ τὸν ὃς ἔρη δεσπότης τούτου εἶναι, μάρτυρας παρέξομαι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τόν",
+          "τε",
+          "Εὐθύκριτον",
+          "καὶ",
+          "τὸν",
+          "ὃς",
+          "ἔρη",
+          "δεσπότης",
+          "τούτου",
+          "εἶναι",
+          "μάρτυρας",
+          "παρέξομαι"
+        ],
+        "source": {
+          "author": "Lysias",
+          "work": "Orations",
+          "locus": "23.8"
+        }
+      },
+      {
+        "prompt": "He aims at that which is equal.",
+        "answer": "ὀρέγεται τοῦ ὃ ἔστιν ἴσον",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὀρέγεται",
+          "τοῦ",
+          "ὃ",
+          "ἔστιν",
+          "ἴσον"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Phaedo",
+          "locus": "75b"
+        }
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t4",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "Cyrus asked the satrap for gold, and he immediately gave it.",
-    "answer": "ὁ Κῦρος ᾔτησε τὸν σατράπην χρυσίον, καὶ ὃς εὐθὺς ἔδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "Κῦρος",
-     "ᾔτησε",
-     "τὸν",
-     "σατράπην",
-     "χρυσίον",
-     "καὶ",
-     "ὃς",
-     "εὐθὺς",
-     "ἔδωκεν"
-    ]
-   },
-   {
-    "prompt": "He accused this man and that man of taking the money.",
-    "answer": "ᾐτιάσατο τὸν καὶ τὸν τὰ χρήματα λαβεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ᾐτιάσατο",
-     "τὸν",
-     "καὶ",
-     "τὰ",
-     "χρήματα",
-     "λαβεῖν"
-    ]
-   },
-   {
-    "prompt": "The philosopher aims at that which is truly beautiful.",
-    "answer": "ὁ φιλόσοφος ὀρέγεται τοῦ ὃ ἔστιν ἀληθῶς καλόν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "φιλόσοφος",
-     "ὀρέγεται",
-     "τοῦ",
-     "ὃ",
-     "ἔστιν",
-     "ἀληθῶς",
-     "καλόν"
-    ]
-   },
-   {
-    "prompt": "They say that the boy came, and that he handed over the letter.",
-    "answer": "λέγουσι τὸν παῖδα ἐλθεῖν, καὶ τὸν τὴν ἐπιστολὴν παραδοῦναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "λέγουσι",
-     "τὸν",
-     "παῖδα",
-     "ἐλθεῖν",
-     "καὶ",
-     "τὴν",
-     "ἐπιστολὴν",
-     "παραδοῦναι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t5",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "\"You yourselves,\" said he, \"know these things well.\"",
-    "answer": "αὐτοί, ἦ δὲ ὅς, ταῦτα εὖ ἴστε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αὐτοί",
-     "ἦ",
-     "δὲ",
-     "ὅς",
-     "ταῦτα",
-     "εὖ",
-     "ἴστε"
-    ]
-   },
-   {
-    "prompt": "The lawgiver granted this power neither to these nor to those.",
-    "answer": "ὁ νομοθέτης ταύτην τὴν ἐξουσίαν οὔτε τοῖς οὔτε τοῖς ἔδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "νομοθέτης",
-     "ταύτην",
-     "τὴν",
-     "ἐξουσίαν",
-     "οὔτε",
-     "τοῖς",
-     "ἔδωκεν"
-    ]
-   },
-   {
-    "prompt": "The Athenians asked the allies for ships, and they promised many.",
-    "answer": "οἱ Ἀθηναῖοι τοὺς συμμάχους ναῦς ᾔτησαν, καὶ οἳ πολλὰς ὑπέσχοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "Ἀθηναῖοι",
-     "τοὺς",
-     "συμμάχους",
-     "ναῦς",
-     "ᾔτησαν",
-     "καὶ",
-     "οἳ",
-     "πολλὰς",
-     "ὑπέσχοντο"
-    ]
-   },
-   {
-    "prompt": "The general ordered them to do this and that before the battle.",
-    "answer": "ὁ στρατηγὸς ἐκέλευσεν αὐτοὺς τὸ καὶ τὸ πρᾶξαι πρὸ τῆς μάχης.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "ἐκέλευσεν",
-     "αὐτοὺς",
-     "τὸ",
-     "καὶ",
-     "πρᾶξαι",
-     "πρὸ",
-     "τῆς",
-     "μάχης"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t6",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "The king asked the messenger about his father, and he told everything truly.",
-    "answer": "ὁ βασιλεὺς ἤρετο τὸν ἄγγελον περὶ τοῦ πατρός, καὶ ὃς πάντα ἀληθῶς εἶπεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "βασιλεὺς",
-     "ἤρετο",
-     "τὸν",
-     "ἄγγελον",
-     "περὶ",
-     "τοῦ",
-     "πατρός",
-     "καὶ",
-     "ὃς",
-     "πάντα",
-     "ἀληθῶς",
-     "εἶπεν"
-    ]
-   },
-   {
-    "prompt": "The witness named this man and that man as having plotted.",
-    "answer": "ὁ μάρτυς ὠνόμασε τὸν καὶ τὸν ἐπιβουλεῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "μάρτυς",
-     "ὠνόμασε",
-     "τὸν",
-     "καὶ",
-     "ἐπιβουλεῦσαι"
-    ]
-   },
-   {
-    "prompt": "As witnesses I will produce both the neighbor and the man who bought the house.",
-    "answer": "μάρτυρας παρέξομαι τόν τε γείτονα καὶ τὸν ὃς τὴν οἰκίαν ἐπρίατο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μάρτυρας",
-     "παρέξομαι",
-     "τόν",
-     "τε",
-     "γείτονα",
-     "καὶ",
-     "τὸν",
-     "ὃς",
-     "τὴν",
-     "οἰκίαν",
-     "ἐπρίατο"
-    ]
-   },
-   {
-    "prompt": "Before this time the citizens had trusted him greatly.",
-    "answer": "πρὸ τοῦ οἱ πολῖται σφόδρα αὐτῷ ἐπίστευον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πρὸ",
-     "τοῦ",
-     "οἱ",
-     "πολῖται",
-     "σφόδρα",
-     "αὐτῷ",
-     "ἐπίστευον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t7",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "The general ordered the soldiers to advance, and they at once obeyed.",
-    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἐκέλευσε προϊέναι, καὶ οἳ εὐθὺς ἐπείθοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "τοὺς",
-     "στρατιώτας",
-     "ἐκέλευσε",
-     "προϊέναι",
-     "καὶ",
-     "οἳ",
-     "εὐθὺς",
-     "ἐπείθοντο"
-    ]
-   },
-   {
-    "prompt": "When Socrates had ceased speaking, the youth questioned him, and he answered gladly.",
-    "answer": "παυσαμένου τοῦ Σωκράτους, ὁ νεανίας αὐτὸν ἤρετο, καὶ ὃς ἡδέως ἀπεκρίνατο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "παυσαμένου",
-     "τοῦ",
-     "Σωκράτους",
-     "ὁ",
-     "νεανίας",
-     "αὐτὸν",
-     "ἤρετο",
-     "καὶ",
-     "ὃς",
-     "ἡδέως",
-     "ἀπεκρίνατο"
-    ]
-   },
-   {
-    "prompt": "The maidservants carried water to the guests, and they drank eagerly.",
-    "answer": "αἱ θεράπαιναι τοῖς ξένοις ὕδωρ ἐκόμισαν, καὶ οἳ προθύμως ἔπιον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "θεράπαιναι",
-     "τοῖς",
-     "ξένοις",
-     "ὕδωρ",
-     "ἐκόμισαν",
-     "καὶ",
-     "οἳ",
-     "προθύμως",
-     "ἔπιον"
-    ]
-   },
-   {
-    "prompt": "The mother asked the daughter where she was going, and she said nothing.",
-    "answer": "ἡ μήτηρ τὴν θυγατέρα ἤρετο ὅποι πορεύοιτο, καὶ ἣ οὐδὲν εἶπεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "μήτηρ",
-     "τὴν",
-     "θυγατέρα",
-     "ἤρετο",
-     "ὅποι",
-     "πορεύοιτο",
-     "καὶ",
-     "ἣ",
-     "οὐδὲν",
-     "εἶπεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t8",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "\"Virtue,\" said he, \"is more honourable than wealth.\"",
-    "answer": "ἡ ἀρετή, ἦ δὲ ὅς, τιμιωτέρα ἐστὶ τοῦ πλούτου.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "ἀρετή",
-     "ἦ",
-     "δὲ",
-     "ὅς",
-     "τιμιωτέρα",
-     "ἐστὶ",
-     "τοῦ",
-     "πλούτου"
-    ]
-   },
-   {
-    "prompt": "\"I know nothing,\" said he, \"about the things beneath the earth.\"",
-    "answer": "οὐδὲν οἶδα, ἦ δὲ ὅς, περὶ τῶν ὑπὸ γῆς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδὲν",
-     "οἶδα",
-     "ἦ",
-     "δὲ",
-     "ὅς",
-     "περὶ",
-     "τῶν",
-     "ὑπὸ",
-     "γῆς"
-    ]
-   },
-   {
-    "prompt": "\"We must,\" said he, \"honour the gods before all else.\"",
-    "answer": "δεῖ ἡμᾶς, ἦ δὲ ὅς, τοὺς θεοὺς πρὸ πάντων τιμᾶν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δεῖ",
-     "ἡμᾶς",
-     "ἦ",
-     "δὲ",
-     "ὅς",
-     "τοὺς",
-     "θεοὺς",
-     "πρὸ",
-     "πάντων",
-     "τιμᾶν"
-    ]
-   },
-   {
-    "prompt": "\"This I did willingly,\" said she.",
-    "answer": "τοῦτο ἑκοῦσα ἔπραξα, ἦ δὲ ἥ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῦτο",
-     "ἑκοῦσα",
-     "ἔπραξα",
-     "ἦ",
-     "δὲ",
-     "ἥ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t9",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "Of the soldiers some fled, but others bravely stood their ground.",
-    "answer": "τῶν στρατιωτῶν οἱ μὲν ἔφυγον, οἱ δὲ ἀνδρείως ὑπέμειναν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῶν",
-     "στρατιωτῶν",
-     "οἱ",
-     "μὲν",
-     "ἔφυγον",
-     "δὲ",
-     "ἀνδρείως",
-     "ὑπέμειναν"
-    ]
-   },
-   {
-    "prompt": "The one praised the poet, but the other blamed him.",
-    "answer": "ὁ μὲν τὸν ποιητὴν ἐπῄνεσεν, ὁ δὲ ἐμέμψατο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "μὲν",
-     "τὸν",
-     "ποιητὴν",
-     "ἐπῄνεσεν",
-     "δὲ",
-     "ἐμέμψατο"
-    ]
-   },
-   {
-    "prompt": "Some of the citizens sailed away, but others remained in the city.",
-    "answer": "τῶν πολιτῶν οἱ μὲν ἀπέπλευσαν, οἱ δὲ ἐν τῇ πόλει ἔμειναν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῶν",
-     "πολιτῶν",
-     "οἱ",
-     "μὲν",
-     "ἀπέπλευσαν",
-     "δὲ",
-     "ἐν",
-     "τῇ",
-     "πόλει",
-     "ἔμειναν"
-    ]
-   },
-   {
-    "prompt": "The one son she loved, but the other she hated.",
-    "answer": "τὸν μὲν υἱὸν ἐφίλει, τὸν δὲ ἐμίσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸν",
-     "μὲν",
-     "υἱὸν",
-     "ἐφίλει",
-     "δὲ",
-     "ἐμίσει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t10",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "He accused now this man and now that of the crime.",
-    "answer": "ᾐτιάσατο τὸν καὶ τὸν τοῦ ἀδικήματος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ᾐτιάσατο",
-     "τὸν",
-     "καὶ",
-     "τοῦ",
-     "ἀδικήματος"
-    ]
-   },
-   {
-    "prompt": "The orator kept saying now this and now that, but nothing clear.",
-    "answer": "ὁ ῥήτωρ τὸ καὶ τὸ ἔλεγεν, σαφὲς δὲ οὐδέν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ῥήτωρ",
-     "τὸ",
-     "καὶ",
-     "ἔλεγεν",
-     "σαφὲς",
-     "δὲ",
-     "οὐδέν"
-    ]
-   },
-   {
-    "prompt": "Before this time the city had never been besieged.",
-    "answer": "πρὸ τοῦ ἡ πόλις οὐδέποτε ἐπολιορκήθη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πρὸ",
-     "τοῦ",
-     "ἡ",
-     "πόλις",
-     "οὐδέποτε",
-     "ἐπολιορκήθη"
-    ]
-   },
-   {
-    "prompt": "He used to trust neither these men nor those.",
-    "answer": "οὔτε τοῖς οὔτε τοῖς ἐπίστευεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὔτε",
-     "τοῖς",
-     "ἐπίστευεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-t11",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "As witnesses I will produce both the merchant and the man who claimed to be his master.",
-    "answer": "μάρτυρας παρέξομαι τόν τε ἔμπορον καὶ τὸν ὃς ἔφη δεσπότης αὐτοῦ εἶναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μάρτυρας",
-     "παρέξομαι",
-     "τόν",
-     "τε",
-     "ἔμπορον",
-     "καὶ",
-     "τὸν",
-     "ὃς",
-     "ἔφη",
-     "δεσπότης",
-     "αὐτοῦ",
-     "εἶναι"
-    ]
-   },
-   {
-    "prompt": "The philosopher reaches out for that which is truly just.",
-    "answer": "ὁ φιλόσοφος ὀρέγεται τοῦ ὃ ἔστιν ὄντως δίκαιον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "φιλόσοφος",
-     "ὀρέγεται",
-     "τοῦ",
-     "ὃ",
-     "ἔστιν",
-     "ὄντως",
-     "δίκαιον"
-    ]
-   },
-   {
-    "prompt": "And he, they say, replied that he would come to the assembly on the next day.",
-    "answer": "καὶ τὸν εἰπεῖν ὅτι εἰς τὴν ἐκκλησίαν τῇ ὑστεραίᾳ ἥξοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "τὸν",
-     "εἰπεῖν",
-     "ὅτι",
-     "εἰς",
-     "τὴν",
-     "ἐκκλησίαν",
-     "τῇ",
-     "ὑστεραίᾳ",
-     "ἥξοι"
-    ]
-   },
-   {
-    "prompt": "And she, so the story goes, ordered the servants to depart quickly from the house.",
-    "answer": "καὶ τὴν κελεῦσαι τοὺς θεράποντας ταχέως ἐκ τῆς οἰκίας ἀπιέναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "τὴν",
-     "κελεῦσαι",
-     "τοὺς",
-     "θεράποντας",
-     "ταχέως",
-     "ἐκ",
-     "τῆς",
-     "οἰκίας",
-     "ἀπιέναι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1113-various-uses-of-o-os-e-e-to-q1",
-  "sectionId": "sm-1113-various-uses-of-o-os-e-e-to",
-  "questions": [
-   {
-    "prompt": "Neither to these nor to those.",
-    "answer": "οὔτε τοῖς οὔτε τοῖς",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὔτε",
-     "τοῖς",
-     "οὔτε",
-     "τοῖς"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Laws",
-     "locus": "701e"
-    }
-   },
-   {
-    "prompt": "And as witness I will produce both Euthycritus and the man who said he was his master.",
-    "answer": "τόν τε Εὐθύκριτον . . . καὶ τὸν ὃς ἔρη δεσπότης τούτου εἶναι, μάρτυρας παρέξομαι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τόν",
-     "τε",
-     "Εὐθύκριτον",
-     "καὶ",
-     "τὸν",
-     "ὃς",
-     "ἔρη",
-     "δεσπότης",
-     "τούτου",
-     "εἶναι",
-     "μάρτυρας",
-     "παρέξομαι"
-    ],
-    "source": {
-     "author": "Lysias",
-     "work": "Orations",
-     "locus": "23.8"
-    }
-   },
-   {
-    "prompt": "He aims at that which is equal.",
-    "answer": "ὀρέγεται τοῦ ὃ ἔστιν ἴσον",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὀρέγεται",
-     "τοῦ",
-     "ὃ",
-     "ἔστιν",
-     "ἴσον"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Phaedo",
-     "locus": "75b"
-    }
-   }
-  ]
- }
+  }
 ]

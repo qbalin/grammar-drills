@@ -1,589 +1,589 @@
 [
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-t1",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "I fear that the wealthy man has already deceived the judges.",
-    "answer": "δέδοικα μὴ ὁ πλούσιος ἤδη τοὺς δικαστὰς ἐξηπάτηκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "ὁ",
-     "πλούσιος",
-     "ἤδη",
-     "τοὺς",
-     "δικαστὰς",
-     "ἐξηπάτηκεν"
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-t1",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "I fear that the wealthy man has already deceived the judges.",
+        "answer": "δέδοικα μὴ ὁ πλούσιος ἤδη τοὺς δικαστὰς ἐξηπάτηκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "ὁ",
+          "πλούσιος",
+          "ἤδη",
+          "τοὺς",
+          "δικαστὰς",
+          "ἐξηπάτηκεν"
+        ]
+      },
+      {
+        "prompt": "We are afraid that the allies have betrayed the city.",
+        "answer": "φοβούμεθα μὴ οἱ σύμμαχοι τὴν πόλιν προδεδώκασιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβούμεθα",
+          "μή",
+          "οἱ",
+          "σύμμαχοι",
+          "τὴν",
+          "πόλιν",
+          "προδεδώκασιν"
+        ]
+      },
+      {
+        "prompt": "Take care that he was not speaking the truth.",
+        "answer": "ὅρα μὴ τὰ ἀληθῆ ἔλεγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "μή",
+          "τὰ",
+          "ἀληθῆ",
+          "ἔλεγεν"
+        ]
+      },
+      {
+        "prompt": "I fear that the messenger has not announced everything to the general.",
+        "answer": "δέδοικα μὴ ὁ ἄγγελος οὐ πάντα τῷ στρατηγῷ ἤγγελκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "ὁ",
+          "ἄγγελος",
+          "οὐ",
+          "πάντα",
+          "τῷ",
+          "στρατηγῷ",
+          "ἤγγελκεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "We are afraid that the allies have betrayed the city.",
-    "answer": "φοβούμεθα μὴ οἱ σύμμαχοι τὴν πόλιν προδεδώκασιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβούμεθα",
-     "μή",
-     "οἱ",
-     "σύμμαχοι",
-     "τὴν",
-     "πόλιν",
-     "προδεδώκασιν"
+  },
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-t2",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "I am afraid that these things are true.",
+        "answer": "φοβοῦμαι μὴ ταῦτα ἀληθῆ ἐστιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβοῦμαι",
+          "μή",
+          "ταῦτα",
+          "ἀληθῆ",
+          "ἐστιν"
+        ]
+      },
+      {
+        "prompt": "I fear that the acropolis has already been captured by the enemy.",
+        "answer": "δέδοικα μὴ ἡ ἀκρόπολις ἤδη ὑπὸ τῶν πολεμίων ἑάλωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "ἡ",
+          "ἀκρόπολις",
+          "ἤδη",
+          "ὑπὸ",
+          "τῶν",
+          "πολεμίων",
+          "ἑάλωκεν"
+        ]
+      },
+      {
+        "prompt": "Have a care that the poet was not lying about the gods.",
+        "answer": "ὅρα μὴ ὁ ποιητὴς περὶ τῶν θεῶν ἐψεύδετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "μή",
+          "ὁ",
+          "ποιητὴς",
+          "περὶ",
+          "τῶν",
+          "θεῶν",
+          "ἐψεύδετο"
+        ]
+      },
+      {
+        "prompt": "We are afraid that we have failed of both hopes at once.",
+        "answer": "φοβούμεθα μὴ ἀμφοτέρων ἅμα τῶν ἐλπίδων ἡμαρτήκαμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβούμεθα",
+          "μή",
+          "ἀμφοτέρων",
+          "ἅμα",
+          "τῶν",
+          "ἐλπίδων",
+          "ἡμαρτήκαμεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Take care that he was not speaking the truth.",
-    "answer": "ὅρα μὴ τὰ ἀληθῆ ἔλεγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "μή",
-     "τὰ",
-     "ἀληθῆ",
-     "ἔλεγεν"
+  },
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-t3",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "I fear that the slaves have run away into the mountains.",
+        "answer": "δέδοικα μὴ οἱ δοῦλοι εἰς τὰ ὄρη ἀποδεδράκασιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "οἱ",
+          "δοῦλοι",
+          "εἰς",
+          "τὰ",
+          "ὄρη",
+          "ἀποδεδράκασιν"
+        ]
+      },
+      {
+        "prompt": "We are afraid that the strangers know nothing certain.",
+        "answer": "φοβούμεθα μὴ οἱ ξένοι οὐδὲν σαφὲς ἴσασιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβούμεθα",
+          "μή",
+          "οἱ",
+          "ξένοι",
+          "οὐδὲν",
+          "σαφὲς",
+          "ἴσασιν"
+        ]
+      },
+      {
+        "prompt": "Take care that the general was not leading the army well.",
+        "answer": "ὅρα μὴ ὁ στρατηγὸς οὐ καλῶς τὸ στράτευμα ἦγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "μή",
+          "ὁ",
+          "στρατηγὸς",
+          "οὐ",
+          "καλῶς",
+          "τὸ",
+          "στράτευμα",
+          "ἦγεν"
+        ]
+      },
+      {
+        "prompt": "I fear that the sick man is already dead.",
+        "answer": "δέδοικα μὴ ὁ κάμνων ἤδη τέθνηκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "ὁ",
+          "κάμνων",
+          "ἤδη",
+          "τέθνηκεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "I fear that the messenger has not announced everything to the general.",
-    "answer": "δέδοικα μὴ ὁ ἄγγελος οὐ πάντα τῷ στρατηγῷ ἤγγελκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "ὁ",
-     "ἄγγελος",
-     "οὐ",
-     "πάντα",
-     "τῷ",
-     "στρατηγῷ",
-     "ἤγγελκεν"
+  },
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-t4",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "I am afraid that the woman is telling lies to her husband.",
+        "answer": "φοβοῦμαι μὴ ἡ γυνὴ ψευδῆ τῷ ἀνδρὶ λέγει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβοῦμαι",
+          "μή",
+          "ἡ",
+          "γυνὴ",
+          "ψευδῆ",
+          "τῷ",
+          "ἀνδρὶ",
+          "λέγει"
+        ]
+      },
+      {
+        "prompt": "We fear that the sailors have already sailed away.",
+        "answer": "δεδοίκαμεν μὴ οἱ ναῦται ἤδη ἀποπεπλεύκασιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δεδοίκαμεν",
+          "μή",
+          "οἱ",
+          "ναῦται",
+          "ἤδη",
+          "ἀποπεπλεύκασιν"
+        ]
+      },
+      {
+        "prompt": "Have a care that the boy was not afraid of the dog.",
+        "answer": "ὅρα μὴ ὁ παῖς τὸν κύνα ἐφοβεῖτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "μή",
+          "ὁ",
+          "παῖς",
+          "τὸν",
+          "κύνα",
+          "ἐφοβεῖτο"
+        ]
+      },
+      {
+        "prompt": "I fear that the poet has honored the tyrant in his songs.",
+        "answer": "δέδοικα μὴ ὁ ποιητὴς τὸν τύραννον ἐν τοῖς μέλεσι τετίμηκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "ὁ",
+          "ποιητὴς",
+          "τὸν",
+          "τύραννον",
+          "ἐν",
+          "τοῖς",
+          "μέλεσι",
+          "τετίμηκεν"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-t2",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "I am afraid that these things are true.",
-    "answer": "φοβοῦμαι μὴ ταῦτα ἀληθῆ ἐστιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβοῦμαι",
-     "μή",
-     "ταῦτα",
-     "ἀληθῆ",
-     "ἐστιν"
+  },
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-t5",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "I fear that the citizens no longer trust the laws.",
+        "answer": "δέδοικα μὴ οἱ πολῖται οὐκέτι τοῖς νόμοις πιστεύουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "οἱ",
+          "πολῖται",
+          "οὐκέτι",
+          "τοῖς",
+          "νόμοις",
+          "πιστεύουσιν"
+        ]
+      },
+      {
+        "prompt": "We are afraid that the ambassadors have accomplished nothing.",
+        "answer": "φοβούμεθα μὴ οἱ πρέσβεις οὐδὲν διαπεπράχασιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβούμεθα",
+          "μή",
+          "οἱ",
+          "πρέσβεις",
+          "οὐδὲν",
+          "διαπεπράχασιν"
+        ]
+      },
+      {
+        "prompt": "Take care that you did not err in the matter.",
+        "answer": "ὅρα μὴ ἐν τῷ πράγματι ἡμάρτηκας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "μή",
+          "ἐν",
+          "τῷ",
+          "πράγματι",
+          "ἡμάρτηκας"
+        ]
+      },
+      {
+        "prompt": "I am afraid that the wine has become bad.",
+        "answer": "φοβοῦμαι μὴ ὁ οἶνος πονηρὸς γέγονεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβοῦμαι",
+          "μή",
+          "ὁ",
+          "οἶνος",
+          "πονηρὸς",
+          "γέγονεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "I fear that the acropolis has already been captured by the enemy.",
-    "answer": "δέδοικα μὴ ἡ ἀκρόπολις ἤδη ὑπὸ τῶν πολεμίων ἑάλωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "ἡ",
-     "ἀκρόπολις",
-     "ἤδη",
-     "ὑπὸ",
-     "τῶν",
-     "πολεμίων",
-     "ἑάλωκεν"
+  },
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-t6",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "I fear that the enemies are besieging the city even now.",
+        "answer": "δέδοικα μὴ οἱ πολέμιοι καὶ νῦν τὴν πόλιν πολιορκοῦσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "οἱ",
+          "πολέμιοι",
+          "καὶ",
+          "νῦν",
+          "τὴν",
+          "πόλιν",
+          "πολιορκοῦσιν"
+        ]
+      },
+      {
+        "prompt": "We are afraid that the god has not heard our prayers.",
+        "answer": "φοβούμεθα μὴ ὁ θεὸς οὐ τῶν εὐχῶν ἡμῶν ἐπακήκοεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβούμεθα",
+          "μή",
+          "ὁ",
+          "θεὸς",
+          "οὐ",
+          "τῶν",
+          "εὐχῶν",
+          "ἡμῶν",
+          "ἐπακήκοεν"
+        ]
+      },
+      {
+        "prompt": "Have a care that the philosopher was not deceiving the young men.",
+        "answer": "ὅρα μὴ ὁ φιλόσοφος τοὺς νεανίας ἐξηπάτα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "μή",
+          "ὁ",
+          "φιλόσοφος",
+          "τοὺς",
+          "νεανίας",
+          "ἐξηπάτα"
+        ]
+      },
+      {
+        "prompt": "I fear that the physician knows nothing about this disease.",
+        "answer": "δέδοικα μὴ ὁ ἰατρὸς οὐδὲν περὶ ταύτης τῆς νόσου ἐπίσταται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μή",
+          "ὁ",
+          "ἰατρὸς",
+          "οὐδὲν",
+          "περὶ",
+          "ταύτης",
+          "τῆς",
+          "νόσου",
+          "ἐπίσταται"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Have a care that the poet was not lying about the gods.",
-    "answer": "ὅρα μὴ ὁ ποιητὴς περὶ τῶν θεῶν ἐψεύδετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "μή",
-     "ὁ",
-     "ποιητὴς",
-     "περὶ",
-     "τῶν",
-     "θεῶν",
-     "ἐψεύδετο"
+  },
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-t7",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "I fear that the farmer has already sold his field to the stranger.",
+        "answer": "δέδοικα μὴ ὁ γεωργὸς τὸν ἀγρὸν ἤδη τῷ ξένῳ ἀπέδοτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μὴ",
+          "ὁ",
+          "γεωργὸς",
+          "τὸν",
+          "ἀγρὸν",
+          "ἤδη",
+          "τῷ",
+          "ξένῳ",
+          "ἀπέδοτο"
+        ]
+      },
+      {
+        "prompt": "The poor man is afraid that he has spent all his money in vain.",
+        "answer": "ὁ πένης φοβεῖται μὴ πάντα τὰ χρήματα μάτην ἀνήλωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "πένης",
+          "φοβεῖται",
+          "μὴ",
+          "πάντα",
+          "τὰ",
+          "χρήματα",
+          "μάτην",
+          "ἀνήλωκεν"
+        ]
+      },
+      {
+        "prompt": "Take care that the guards were not asleep while the enemy were attacking the camp.",
+        "answer": "ὅρα μὴ οἱ φύλακες ἐκάθευδον τῶν πολεμίων τῷ στρατοπέδῳ προσβαλλόντων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "μὴ",
+          "οἱ",
+          "φύλακες",
+          "ἐκάθευδον",
+          "τῶν",
+          "πολεμίων",
+          "τῷ",
+          "στρατοπέδῳ",
+          "προσβαλλόντων"
+        ]
+      },
+      {
+        "prompt": "We are afraid that the exiles are already plotting against the city.",
+        "answer": "φοβούμεθα μὴ οἱ φυγάδες τῇ πόλει ἤδη ἐπιβουλεύουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβούμεθα",
+          "μὴ",
+          "οἱ",
+          "φυγάδες",
+          "τῇ",
+          "πόλει",
+          "ἤδη",
+          "ἐπιβουλεύουσιν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "We are afraid that we have failed of both hopes at once.",
-    "answer": "φοβούμεθα μὴ ἀμφοτέρων ἅμα τῶν ἐλπίδων ἡμαρτήκαμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβούμεθα",
-     "μή",
-     "ἀμφοτέρων",
-     "ἅμα",
-     "τῶν",
-     "ἐλπίδων",
-     "ἡμαρτήκαμεν"
+  },
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-t8",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "I fear that the woman has not hidden the truth from the judges.",
+        "answer": "δέδοικα μὴ ἡ γυνὴ τὸ ἀληθὲς τοὺς δικαστὰς οὐκ ἔκρυψεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δέδοικα",
+          "μὴ",
+          "ἡ",
+          "γυνὴ",
+          "τὸ",
+          "ἀληθὲς",
+          "τοὺς",
+          "δικαστὰς",
+          "οὐκ",
+          "ἔκρυψεν"
+        ]
+      },
+      {
+        "prompt": "We are afraid that the ships have already been destroyed by the storm.",
+        "answer": "φοβούμεθα μὴ αἱ νῆες ὑπὸ τοῦ χειμῶνος ἤδη διεφθάρησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβούμεθα",
+          "μὴ",
+          "αἱ",
+          "νῆες",
+          "ὑπὸ",
+          "τοῦ",
+          "χειμῶνος",
+          "ἤδη",
+          "διεφθάρησαν"
+        ]
+      },
+      {
+        "prompt": "Have a care that the envoy was not deceived by the tyrant's promises.",
+        "answer": "ὅρα μὴ ὁ πρεσβευτὴς ταῖς τοῦ τυράννου ὑποσχέσεσιν ἐξηπατήθη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅρα",
+          "μὴ",
+          "ὁ",
+          "πρεσβευτὴς",
+          "ταῖς",
+          "τοῦ",
+          "τυράννου",
+          "ὑποσχέσεσιν",
+          "ἐξηπατήθη"
+        ]
+      },
+      {
+        "prompt": "The old man fears that his sons no longer know the ancient laws.",
+        "answer": "ὁ γέρων δέδοικε μὴ οἱ υἱεῖς τοὺς παλαιοὺς νόμους οὐκέτι ἴσασιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "δέδοικε",
+          "μὴ",
+          "οἱ",
+          "υἱεῖς",
+          "τοὺς",
+          "παλαιοὺς",
+          "νόμους",
+          "οὐκέτι",
+          "ἴσασιν"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-t3",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "I fear that the slaves have run away into the mountains.",
-    "answer": "δέδοικα μὴ οἱ δοῦλοι εἰς τὰ ὄρη ἀποδεδράκασιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "οἱ",
-     "δοῦλοι",
-     "εἰς",
-     "τὰ",
-     "ὄρη",
-     "ἀποδεδράκασιν"
+  },
+  {
+    "id": "sm-2233-fear-relating-to-the-present-or-past-q1",
+    "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
+    "questions": [
+      {
+        "prompt": "But have a care that he was not speaking in jest.",
+        "answer": "ἀλλ᾽ ὅρα μὴ παίζων ἔλεγεν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλ",
+          "ὅρα",
+          "μὴ",
+          "παίζων",
+          "ἔλεγεν"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Theaetetus",
+          "locus": "145b"
+        }
+      },
+      {
+        "prompt": "We are afraid that we have failed of both objects at once.",
+        "answer": "φοβούμεθα μὴ ἀμφοτέρων ἅμα ἡμαρτήκαμεν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "φοβούμεθα",
+          "μὴ",
+          "ἀμφοτέρων",
+          "ἅμα",
+          "ἡμαρτήκαμεν"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "3.53"
+        }
+      },
+      {
+        "prompt": "Have a care lest it does not rest with me to give an account.",
+        "answer": "ὁρᾶτε μὴ οὐκ ἐμοὶ προσήκει λόγον δοῦναι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁρᾶτε",
+          "μὴ",
+          "οὐκ",
+          "ἐμοὶ",
+          "προσήκει",
+          "λόγον",
+          "δοῦναι"
+        ],
+        "source": {
+          "author": "Andocides",
+          "work": "Orations",
+          "locus": "1.103"
+        }
+      }
     ]
-   },
-   {
-    "prompt": "We are afraid that the strangers know nothing certain.",
-    "answer": "φοβούμεθα μὴ οἱ ξένοι οὐδὲν σαφὲς ἴσασιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβούμεθα",
-     "μή",
-     "οἱ",
-     "ξένοι",
-     "οὐδὲν",
-     "σαφὲς",
-     "ἴσασιν"
-    ]
-   },
-   {
-    "prompt": "Take care that the general was not leading the army well.",
-    "answer": "ὅρα μὴ ὁ στρατηγὸς οὐ καλῶς τὸ στράτευμα ἦγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "μή",
-     "ὁ",
-     "στρατηγὸς",
-     "οὐ",
-     "καλῶς",
-     "τὸ",
-     "στράτευμα",
-     "ἦγεν"
-    ]
-   },
-   {
-    "prompt": "I fear that the sick man is already dead.",
-    "answer": "δέδοικα μὴ ὁ κάμνων ἤδη τέθνηκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "ὁ",
-     "κάμνων",
-     "ἤδη",
-     "τέθνηκεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-t4",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "I am afraid that the woman is telling lies to her husband.",
-    "answer": "φοβοῦμαι μὴ ἡ γυνὴ ψευδῆ τῷ ἀνδρὶ λέγει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβοῦμαι",
-     "μή",
-     "ἡ",
-     "γυνὴ",
-     "ψευδῆ",
-     "τῷ",
-     "ἀνδρὶ",
-     "λέγει"
-    ]
-   },
-   {
-    "prompt": "We fear that the sailors have already sailed away.",
-    "answer": "δεδοίκαμεν μὴ οἱ ναῦται ἤδη ἀποπεπλεύκασιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δεδοίκαμεν",
-     "μή",
-     "οἱ",
-     "ναῦται",
-     "ἤδη",
-     "ἀποπεπλεύκασιν"
-    ]
-   },
-   {
-    "prompt": "Have a care that the boy was not afraid of the dog.",
-    "answer": "ὅρα μὴ ὁ παῖς τὸν κύνα ἐφοβεῖτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "μή",
-     "ὁ",
-     "παῖς",
-     "τὸν",
-     "κύνα",
-     "ἐφοβεῖτο"
-    ]
-   },
-   {
-    "prompt": "I fear that the poet has honored the tyrant in his songs.",
-    "answer": "δέδοικα μὴ ὁ ποιητὴς τὸν τύραννον ἐν τοῖς μέλεσι τετίμηκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "ὁ",
-     "ποιητὴς",
-     "τὸν",
-     "τύραννον",
-     "ἐν",
-     "τοῖς",
-     "μέλεσι",
-     "τετίμηκεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-t5",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "I fear that the citizens no longer trust the laws.",
-    "answer": "δέδοικα μὴ οἱ πολῖται οὐκέτι τοῖς νόμοις πιστεύουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "οἱ",
-     "πολῖται",
-     "οὐκέτι",
-     "τοῖς",
-     "νόμοις",
-     "πιστεύουσιν"
-    ]
-   },
-   {
-    "prompt": "We are afraid that the ambassadors have accomplished nothing.",
-    "answer": "φοβούμεθα μὴ οἱ πρέσβεις οὐδὲν διαπεπράχασιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβούμεθα",
-     "μή",
-     "οἱ",
-     "πρέσβεις",
-     "οὐδὲν",
-     "διαπεπράχασιν"
-    ]
-   },
-   {
-    "prompt": "Take care that you did not err in the matter.",
-    "answer": "ὅρα μὴ ἐν τῷ πράγματι ἡμάρτηκας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "μή",
-     "ἐν",
-     "τῷ",
-     "πράγματι",
-     "ἡμάρτηκας"
-    ]
-   },
-   {
-    "prompt": "I am afraid that the wine has become bad.",
-    "answer": "φοβοῦμαι μὴ ὁ οἶνος πονηρὸς γέγονεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβοῦμαι",
-     "μή",
-     "ὁ",
-     "οἶνος",
-     "πονηρὸς",
-     "γέγονεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-t6",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "I fear that the enemies are besieging the city even now.",
-    "answer": "δέδοικα μὴ οἱ πολέμιοι καὶ νῦν τὴν πόλιν πολιορκοῦσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "οἱ",
-     "πολέμιοι",
-     "καὶ",
-     "νῦν",
-     "τὴν",
-     "πόλιν",
-     "πολιορκοῦσιν"
-    ]
-   },
-   {
-    "prompt": "We are afraid that the god has not heard our prayers.",
-    "answer": "φοβούμεθα μὴ ὁ θεὸς οὐ τῶν εὐχῶν ἡμῶν ἐπακήκοεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβούμεθα",
-     "μή",
-     "ὁ",
-     "θεὸς",
-     "οὐ",
-     "τῶν",
-     "εὐχῶν",
-     "ἡμῶν",
-     "ἐπακήκοεν"
-    ]
-   },
-   {
-    "prompt": "Have a care that the philosopher was not deceiving the young men.",
-    "answer": "ὅρα μὴ ὁ φιλόσοφος τοὺς νεανίας ἐξηπάτα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "μή",
-     "ὁ",
-     "φιλόσοφος",
-     "τοὺς",
-     "νεανίας",
-     "ἐξηπάτα"
-    ]
-   },
-   {
-    "prompt": "I fear that the physician knows nothing about this disease.",
-    "answer": "δέδοικα μὴ ὁ ἰατρὸς οὐδὲν περὶ ταύτης τῆς νόσου ἐπίσταται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μή",
-     "ὁ",
-     "ἰατρὸς",
-     "οὐδὲν",
-     "περὶ",
-     "ταύτης",
-     "τῆς",
-     "νόσου",
-     "ἐπίσταται"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-t7",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "I fear that the farmer has already sold his field to the stranger.",
-    "answer": "δέδοικα μὴ ὁ γεωργὸς τὸν ἀγρὸν ἤδη τῷ ξένῳ ἀπέδοτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μὴ",
-     "ὁ",
-     "γεωργὸς",
-     "τὸν",
-     "ἀγρὸν",
-     "ἤδη",
-     "τῷ",
-     "ξένῳ",
-     "ἀπέδοτο"
-    ]
-   },
-   {
-    "prompt": "The poor man is afraid that he has spent all his money in vain.",
-    "answer": "ὁ πένης φοβεῖται μὴ πάντα τὰ χρήματα μάτην ἀνήλωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "πένης",
-     "φοβεῖται",
-     "μὴ",
-     "πάντα",
-     "τὰ",
-     "χρήματα",
-     "μάτην",
-     "ἀνήλωκεν"
-    ]
-   },
-   {
-    "prompt": "Take care that the guards were not asleep while the enemy were attacking the camp.",
-    "answer": "ὅρα μὴ οἱ φύλακες ἐκάθευδον τῶν πολεμίων τῷ στρατοπέδῳ προσβαλλόντων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "μὴ",
-     "οἱ",
-     "φύλακες",
-     "ἐκάθευδον",
-     "τῶν",
-     "πολεμίων",
-     "τῷ",
-     "στρατοπέδῳ",
-     "προσβαλλόντων"
-    ]
-   },
-   {
-    "prompt": "We are afraid that the exiles are already plotting against the city.",
-    "answer": "φοβούμεθα μὴ οἱ φυγάδες τῇ πόλει ἤδη ἐπιβουλεύουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβούμεθα",
-     "μὴ",
-     "οἱ",
-     "φυγάδες",
-     "τῇ",
-     "πόλει",
-     "ἤδη",
-     "ἐπιβουλεύουσιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-t8",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "I fear that the woman has not hidden the truth from the judges.",
-    "answer": "δέδοικα μὴ ἡ γυνὴ τὸ ἀληθὲς τοὺς δικαστὰς οὐκ ἔκρυψεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δέδοικα",
-     "μὴ",
-     "ἡ",
-     "γυνὴ",
-     "τὸ",
-     "ἀληθὲς",
-     "τοὺς",
-     "δικαστὰς",
-     "οὐκ",
-     "ἔκρυψεν"
-    ]
-   },
-   {
-    "prompt": "We are afraid that the ships have already been destroyed by the storm.",
-    "answer": "φοβούμεθα μὴ αἱ νῆες ὑπὸ τοῦ χειμῶνος ἤδη διεφθάρησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβούμεθα",
-     "μὴ",
-     "αἱ",
-     "νῆες",
-     "ὑπὸ",
-     "τοῦ",
-     "χειμῶνος",
-     "ἤδη",
-     "διεφθάρησαν"
-    ]
-   },
-   {
-    "prompt": "Have a care that the envoy was not deceived by the tyrant's promises.",
-    "answer": "ὅρα μὴ ὁ πρεσβευτὴς ταῖς τοῦ τυράννου ὑποσχέσεσιν ἐξηπατήθη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅρα",
-     "μὴ",
-     "ὁ",
-     "πρεσβευτὴς",
-     "ταῖς",
-     "τοῦ",
-     "τυράννου",
-     "ὑποσχέσεσιν",
-     "ἐξηπατήθη"
-    ]
-   },
-   {
-    "prompt": "The old man fears that his sons no longer know the ancient laws.",
-    "answer": "ὁ γέρων δέδοικε μὴ οἱ υἱεῖς τοὺς παλαιοὺς νόμους οὐκέτι ἴσασιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "δέδοικε",
-     "μὴ",
-     "οἱ",
-     "υἱεῖς",
-     "τοὺς",
-     "παλαιοὺς",
-     "νόμους",
-     "οὐκέτι",
-     "ἴσασιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2233-fear-relating-to-the-present-or-past-q1",
-  "sectionId": "sm-2233-fear-relating-to-the-present-or-past",
-  "questions": [
-   {
-    "prompt": "But have a care that he was not speaking in jest.",
-    "answer": "ἀλλ᾽ ὅρα μὴ παίζων ἔλεγεν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλ",
-     "ὅρα",
-     "μὴ",
-     "παίζων",
-     "ἔλεγεν"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Theaetetus",
-     "locus": "145b"
-    }
-   },
-   {
-    "prompt": "We are afraid that we have failed of both objects at once.",
-    "answer": "φοβούμεθα μὴ ἀμφοτέρων ἅμα ἡμαρτήκαμεν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "φοβούμεθα",
-     "μὴ",
-     "ἀμφοτέρων",
-     "ἅμα",
-     "ἡμαρτήκαμεν"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "3.53"
-    }
-   },
-   {
-    "prompt": "Have a care lest it does not rest with me to give an account.",
-    "answer": "ὁρᾶτε μὴ οὐκ ἐμοὶ . . . προσήκει λόγον δοῦναι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁρᾶτε",
-     "μὴ",
-     "οὐκ",
-     "ἐμοὶ",
-     "προσήκει",
-     "λόγον",
-     "δοῦναι"
-    ],
-    "source": {
-     "author": "Andocides",
-     "work": "Orations",
-     "locus": "1.103"
-    }
-   }
-  ]
- }
+  }
 ]

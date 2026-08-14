@@ -1,878 +1,878 @@
 [
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t1",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "There was no hope of safety, nor did any general appear.",
-    "answer": "οὐδεμία σωτηρίας ἐλπὶς ἦν, οὐδὲ στρατηγὸς οὐδεὶς ἐφαίνετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδεμία",
-     "σωτηρίας",
-     "ἐλπὶς",
-     "ἦν",
-     "οὐδὲ",
-     "στρατηγὸς",
-     "οὐδεὶς",
-     "ἐφαίνετο"
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t1",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "There was no hope of safety, nor did any general appear.",
+        "answer": "οὐδεμία σωτηρίας ἐλπὶς ἦν, οὐδὲ στρατηγὸς οὐδεὶς ἐφαίνετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδεμία",
+          "σωτηρίας",
+          "ἐλπὶς",
+          "ἦν",
+          "οὐδὲ",
+          "στρατηγὸς",
+          "οὐδεὶς",
+          "ἐφαίνετο"
+        ]
+      },
+      {
+        "prompt": "The soldiers did not flee, nor did they throw away their weapons.",
+        "answer": "οἱ στρατιῶται οὐκ ἔφυγον, οὐδὲ τὰ ὅπλα ἀπέρριψαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "οὐκ",
+          "ἔφυγον",
+          "οὐδὲ",
+          "τὰ",
+          "ὅπλα",
+          "ἀπέρριψαν"
+        ]
+      },
+      {
+        "prompt": "I never saw the man, nor did I hear his voice.",
+        "answer": "οὐδέποτε τὸν ἄνδρα εἶδον, οὐδὲ τῆς φωνῆς αὐτοῦ ἤκουσα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδέποτε",
+          "τὸν",
+          "ἄνδρα",
+          "εἶδον",
+          "οὐδὲ",
+          "τῆς",
+          "φωνῆς",
+          "αὐτοῦ",
+          "ἤκουσα"
+        ]
+      },
+      {
+        "prompt": "The king did not fear death, nor did he flee the danger.",
+        "answer": "ὁ βασιλεὺς τὸν θάνατον οὐκ ἐφοβεῖτο, οὐδὲ τὸν κίνδυνον ἔφευγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "βασιλεὺς",
+          "τὸν",
+          "θάνατον",
+          "οὐκ",
+          "ἐφοβεῖτο",
+          "οὐδὲ",
+          "κίνδυνον",
+          "ἔφευγεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The soldiers did not flee, nor did they throw away their weapons.",
-    "answer": "οἱ στρατιῶται οὐκ ἔφυγον, οὐδὲ τὰ ὅπλα ἀπέρριψαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "οὐκ",
-     "ἔφυγον",
-     "οὐδὲ",
-     "τὰ",
-     "ὅπλα",
-     "ἀπέρριψαν"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t2",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "Do not trust the tyrant, nor admire his oaths.",
+        "answer": "μὴ τῷ τυράννῳ πίστευε, μηδὲ τοὺς ὅρκους αὐτοῦ θαύμαζε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὴ",
+          "τῷ",
+          "τυράννῳ",
+          "πίστευε",
+          "μηδὲ",
+          "τοὺς",
+          "ὅρκους",
+          "αὐτοῦ",
+          "θαύμαζε"
+        ]
+      },
+      {
+        "prompt": "Never dishonor the gods, nor despise the laws of the city.",
+        "answer": "μηδέποτε τοὺς θεοὺς ἀτίμαζε, μηδὲ τῶν τῆς πόλεως νόμων καταφρόνει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μηδέποτε",
+          "τοὺς",
+          "θεοὺς",
+          "ἀτίμαζε",
+          "μηδὲ",
+          "τῶν",
+          "τῆς",
+          "πόλεως",
+          "νόμων",
+          "καταφρόνει"
+        ]
+      },
+      {
+        "prompt": "Let us not abandon our friends, nor betray the fatherland.",
+        "answer": "μὴ τοὺς φίλους προλίπωμεν, μηδὲ τὴν πατρίδα προδῶμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὴ",
+          "τοὺς",
+          "φίλους",
+          "προλίπωμεν",
+          "μηδὲ",
+          "τὴν",
+          "πατρίδα",
+          "προδῶμεν"
+        ]
+      },
+      {
+        "prompt": "Do not admire wealth, nor honor the unjust.",
+        "answer": "μὴ τὸν πλοῦτον θαύμαζε, μηδὲ τοὺς ἀδίκους τίμα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὴ",
+          "τὸν",
+          "πλοῦτον",
+          "θαύμαζε",
+          "μηδὲ",
+          "τοὺς",
+          "ἀδίκους",
+          "τίμα"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "I never saw the man, nor did I hear his voice.",
-    "answer": "οὐδέποτε τὸν ἄνδρα εἶδον, οὐδὲ τῆς φωνῆς αὐτοῦ ἤκουσα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδέποτε",
-     "τὸν",
-     "ἄνδρα",
-     "εἶδον",
-     "οὐδὲ",
-     "τῆς",
-     "φωνῆς",
-     "αὐτοῦ",
-     "ἤκουσα"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t3",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "Though the general was present, the soldiers did not obey, nor did they take up their arms.",
+        "answer": "παρόντος τοῦ στρατηγοῦ οἱ στρατιῶται οὐκ ἐπείθοντο, οὐδὲ τὰ ὅπλα ἀνέλαβον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "παρόντος",
+          "τοῦ",
+          "στρατηγοῦ",
+          "οἱ",
+          "στρατιῶται",
+          "οὐκ",
+          "ἐπείθοντο",
+          "οὐδὲ",
+          "τὰ",
+          "ὅπλα",
+          "ἀνέλαβον"
+        ]
+      },
+      {
+        "prompt": "The maiden, weeping, would not speak, nor reveal her grief.",
+        "answer": "ἡ κόρη δακρύουσα οὐκ ἤθελε λέγειν, οὐδὲ τὸ πένθος δηλοῦν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "κόρη",
+          "δακρύουσα",
+          "οὐκ",
+          "ἤθελε",
+          "λέγειν",
+          "οὐδὲ",
+          "τὸ",
+          "πένθος",
+          "δηλοῦν"
+        ]
+      },
+      {
+        "prompt": "Having conquered the enemy, they did not plunder the city, nor enslave the citizens.",
+        "answer": "νικήσαντες τοὺς πολεμίους οὐ τὴν πόλιν διήρπασαν, οὐδὲ τοὺς πολίτας ἠνδραπόδισαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "νικήσαντες",
+          "τοὺς",
+          "πολεμίους",
+          "οὐ",
+          "τὴν",
+          "πόλιν",
+          "διήρπασαν",
+          "οὐδὲ",
+          "πολίτας",
+          "ἠνδραπόδισαν"
+        ]
+      },
+      {
+        "prompt": "Since the river was deep, they could not cross, nor find a bridge.",
+        "answer": "βαθέος ὄντος τοῦ ποταμοῦ οὐκ ἐδύναντο διαβῆναι, οὐδὲ γέφυραν εὑρεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "βαθέος",
+          "ὄντος",
+          "τοῦ",
+          "ποταμοῦ",
+          "οὐκ",
+          "ἐδύναντο",
+          "διαβῆναι",
+          "οὐδὲ",
+          "γέφυραν",
+          "εὑρεῖν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The king did not fear death, nor did he flee the danger.",
-    "answer": "ὁ βασιλεὺς τὸν θάνατον οὐκ ἐφοβεῖτο, οὐδὲ τὸν κίνδυνον ἔφευγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "βασιλεὺς",
-     "τὸν",
-     "θάνατον",
-     "οὐκ",
-     "ἐφοβεῖτο",
-     "οὐδὲ",
-     "κίνδυνον",
-     "ἔφευγεν"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t4",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "If you do not honor the gods, you will not prosper, nor will you be happy.",
+        "answer": "ἐὰν τοὺς θεοὺς μὴ τιμᾷς, οὐκ εὐτυχήσεις, οὐδὲ εὐδαίμων ἔσῃ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐὰν",
+          "τοὺς",
+          "θεοὺς",
+          "μὴ",
+          "τιμᾷς",
+          "οὐκ",
+          "εὐτυχήσεις",
+          "οὐδὲ",
+          "εὐδαίμων",
+          "ἔσῃ"
+        ]
+      },
+      {
+        "prompt": "The judges did not pity the defendant, nor did they release him.",
+        "answer": "οἱ δικασταὶ τὸν φεύγοντα οὐκ ᾤκτιραν, οὐδὲ ἀπέλυσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "δικασταὶ",
+          "τὸν",
+          "φεύγοντα",
+          "οὐκ",
+          "ᾤκτιραν",
+          "οὐδὲ",
+          "ἀπέλυσαν"
+        ]
+      },
+      {
+        "prompt": "No one dared to answer, nor was anyone willing to rise.",
+        "answer": "οὐδεὶς ἀποκρίνασθαι ἐτόλμησεν, οὐδὲ ἀναστῆναι ἠθέλησεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδεὶς",
+          "ἀποκρίνασθαι",
+          "ἐτόλμησεν",
+          "οὐδὲ",
+          "ἀναστῆναι",
+          "ἠθέλησεν"
+        ]
+      },
+      {
+        "prompt": "The city was not captured, nor were the walls razed.",
+        "answer": "ἡ πόλις οὐχ ἑάλω, οὐδὲ τὰ τείχη κατεσκάφη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "πόλις",
+          "οὐχ",
+          "ἑάλω",
+          "οὐδὲ",
+          "τὰ",
+          "τείχη",
+          "κατεσκάφη"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t2",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "Do not trust the tyrant, nor admire his oaths.",
-    "answer": "μὴ τῷ τυράννῳ πίστευε, μηδὲ τοὺς ὅρκους αὐτοῦ θαύμαζε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὴ",
-     "τῷ",
-     "τυράννῳ",
-     "πίστευε",
-     "μηδὲ",
-     "τοὺς",
-     "ὅρκους",
-     "αὐτοῦ",
-     "θαύμαζε"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t5",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "The sailors did not sleep the whole night through, nor did they cease from their toil.",
+        "answer": "οἱ ναῦται τὴν νύκτα ὅλην οὐκ ἐκάθευδον, οὐδὲ τοῦ πόνου ἐπαύοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "ναῦται",
+          "τὴν",
+          "νύκτα",
+          "ὅλην",
+          "οὐκ",
+          "ἐκάθευδον",
+          "οὐδὲ",
+          "τοῦ",
+          "πόνου",
+          "ἐπαύοντο"
+        ]
+      },
+      {
+        "prompt": "After the sea-battle the enemy did not withdraw, nor did they send heralds.",
+        "answer": "μετὰ τὴν ναυμαχίαν οἱ πολέμιοι οὐκ ἀνεχώρησαν, οὐδὲ κήρυκας ἔπεμψαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μετὰ",
+          "τὴν",
+          "ναυμαχίαν",
+          "οἱ",
+          "πολέμιοι",
+          "οὐκ",
+          "ἀνεχώρησαν",
+          "οὐδὲ",
+          "κήρυκας",
+          "ἔπεμψαν"
+        ]
+      },
+      {
+        "prompt": "The old man drank no wine, nor did he touch the food.",
+        "answer": "ὁ γέρων οἶνον οὐκ ἔπινεν, οὐδὲ τοῦ σίτου ἥπτετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "οἶνον",
+          "οὐκ",
+          "ἔπινεν",
+          "οὐδὲ",
+          "τοῦ",
+          "σίτου",
+          "ἥπτετο"
+        ]
+      },
+      {
+        "prompt": "The clouds were not scattering, nor was the sky growing bright.",
+        "answer": "τὰ νέφη οὐκ ἐσκεδάννυτο, οὐδὲ ὁ αἰθὴρ ἔλαμπεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "νέφη",
+          "οὐκ",
+          "ἐσκεδάννυτο",
+          "οὐδὲ",
+          "ὁ",
+          "αἰθὴρ",
+          "ἔλαμπεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Never dishonor the gods, nor despise the laws of the city.",
-    "answer": "μηδέποτε τοὺς θεοὺς ἀτίμαζε, μηδὲ τῶν τῆς πόλεως νόμων καταφρόνει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μηδέποτε",
-     "τοὺς",
-     "θεοὺς",
-     "ἀτίμαζε",
-     "μηδὲ",
-     "τῶν",
-     "τῆς",
-     "πόλεως",
-     "νόμων",
-     "καταφρόνει"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t6",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "The wise man is not disturbed by pain, nor overcome by pleasures.",
+        "answer": "ὁ σοφὸς ὑπὸ τῆς λύπης οὐ ταράττεται, οὐδὲ ὑπὸ τῶν ἡδονῶν κρατεῖται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "σοφὸς",
+          "ὑπὸ",
+          "τῆς",
+          "λύπης",
+          "οὐ",
+          "ταράττεται",
+          "οὐδὲ",
+          "τῶν",
+          "ἡδονῶν",
+          "κρατεῖται"
+        ]
+      },
+      {
+        "prompt": "He could say nothing straightforward, nor anything just.",
+        "answer": "οὐδὲν ἁπλοῦν οὐδὲ δίκαιον εἰπεῖν ἔχει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδὲν",
+          "ἁπλοῦν",
+          "οὐδὲ",
+          "δίκαιον",
+          "εἰπεῖν",
+          "ἔχει"
+        ]
+      },
+      {
+        "prompt": "Virtue is not taught by words, nor acquired without toil.",
+        "answer": "ἡ ἀρετὴ λόγοις οὐ διδάσκεται, οὐδὲ ἄνευ πόνου κτᾶται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "ἀρετὴ",
+          "λόγοις",
+          "οὐ",
+          "διδάσκεται",
+          "οὐδὲ",
+          "ἄνευ",
+          "πόνου",
+          "κτᾶται"
+        ]
+      },
+      {
+        "prompt": "The just man does not wrong his friends, nor does he deceive strangers.",
+        "answer": "ὁ δίκαιος τοὺς φίλους οὐκ ἀδικεῖ, οὐδὲ τοὺς ξένους ἐξαπατᾷ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "δίκαιος",
+          "τοὺς",
+          "φίλους",
+          "οὐκ",
+          "ἀδικεῖ",
+          "οὐδὲ",
+          "ξένους",
+          "ἐξαπατᾷ"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Let us not abandon our friends, nor betray the fatherland.",
-    "answer": "μὴ τοὺς φίλους προλίπωμεν, μηδὲ τὴν πατρίδα προδῶμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὴ",
-     "τοὺς",
-     "φίλους",
-     "προλίπωμεν",
-     "μηδὲ",
-     "τὴν",
-     "πατρίδα",
-     "προδῶμεν"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t7",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "The enemy did not capture the city, nor did they lay waste the fields.",
+        "answer": "οἱ πολέμιοι τὴν πόλιν οὐχ εἷλον, οὐδὲ τοὺς ἀγροὺς ἐδῄωσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πολέμιοι",
+          "τὴν",
+          "πόλιν",
+          "οὐχ",
+          "εἷλον",
+          "οὐδὲ",
+          "τοὺς",
+          "ἀγροὺς",
+          "ἐδῄωσαν"
+        ]
+      },
+      {
+        "prompt": "The old man did not fear death, nor did he lament his fate.",
+        "answer": "ὁ γέρων τὸν θάνατον οὐκ ἐφοβεῖτο, οὐδὲ τὴν τύχην ἐπένθει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "τὸν",
+          "θάνατον",
+          "οὐκ",
+          "ἐφοβεῖτο",
+          "οὐδὲ",
+          "τὴν",
+          "τύχην",
+          "ἐπένθει"
+        ]
+      },
+      {
+        "prompt": "Do not admire wealth, nor pursue empty honor.",
+        "answer": "μὴ θαύμαζε τὸν πλοῦτον, μηδὲ δίωκε τὴν κενὴν τιμήν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὴ",
+          "θαύμαζε",
+          "τὸν",
+          "πλοῦτον",
+          "μηδὲ",
+          "δίωκε",
+          "τὴν",
+          "κενὴν",
+          "τιμήν"
+        ]
+      },
+      {
+        "prompt": "The messenger did not arrive, nor did any letter appear.",
+        "answer": "ὁ ἄγγελος οὐκ ἀφίκετο, οὐδὲ ἐπιστολὴ οὐδεμία ἐφάνη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἄγγελος",
+          "οὐκ",
+          "ἀφίκετο",
+          "οὐδὲ",
+          "ἐπιστολὴ",
+          "οὐδεμία",
+          "ἐφάνη"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Do not admire wealth, nor honor the unjust.",
-    "answer": "μὴ τὸν πλοῦτον θαύμαζε, μηδὲ τοὺς ἀδίκους τίμα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὴ",
-     "τὸν",
-     "πλοῦτον",
-     "θαύμαζε",
-     "μηδὲ",
-     "τοὺς",
-     "ἀδίκους",
-     "τίμα"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t8",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "The judges were not persuaded by his threats, nor did they pity the defendant.",
+        "answer": "οἱ δικασταὶ ταῖς ἀπειλαῖς οὐκ ἐπείσθησαν, οὐδὲ τὸν φεύγοντα ᾤκτιραν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "δικασταὶ",
+          "ταῖς",
+          "ἀπειλαῖς",
+          "οὐκ",
+          "ἐπείσθησαν",
+          "οὐδὲ",
+          "τὸν",
+          "φεύγοντα",
+          "ᾤκτιραν"
+        ]
+      },
+      {
+        "prompt": "The tame lion did not harm the children, nor did it flee from the crowd.",
+        "answer": "ὁ ἥμερος λέων τοὺς παῖδας οὐκ ἔβλαψεν, οὐδὲ τὸν ὄχλον ἔφυγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἥμερος",
+          "λέων",
+          "τοὺς",
+          "παῖδας",
+          "οὐκ",
+          "ἔβλαψεν",
+          "οὐδὲ",
+          "τὸν",
+          "ὄχλον",
+          "ἔφυγεν"
+        ]
+      },
+      {
+        "prompt": "Since the road was long, we did not reach the river, nor did we see the mountain.",
+        "answer": "μακρᾶς οὔσης τῆς ὁδοῦ, οὐκ ἀφικόμεθα ἐπὶ τὸν ποταμόν, οὐδὲ τὸ ὄρος εἴδομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μακρᾶς",
+          "οὔσης",
+          "τῆς",
+          "ὁδοῦ",
+          "οὐκ",
+          "ἀφικόμεθα",
+          "ἐπὶ",
+          "τὸν",
+          "ποταμόν",
+          "οὐδὲ",
+          "τὸ",
+          "ὄρος",
+          "εἴδομεν"
+        ]
+      },
+      {
+        "prompt": "Do not reveal the plan to the strangers, nor betray your friends.",
+        "answer": "μὴ φήνῃς τὸ βούλευμα τοῖς ξένοις, μηδὲ προδῷς τοὺς φίλους.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὴ",
+          "φήνῃς",
+          "τὸ",
+          "βούλευμα",
+          "τοῖς",
+          "ξένοις",
+          "μηδὲ",
+          "προδῷς",
+          "τοὺς",
+          "φίλους"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t3",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "Though the general was present, the soldiers did not obey, nor did they take up their arms.",
-    "answer": "παρόντος τοῦ στρατηγοῦ οἱ στρατιῶται οὐκ ἐπείθοντο, οὐδὲ τὰ ὅπλα ἀνέλαβον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "παρόντος",
-     "τοῦ",
-     "στρατηγοῦ",
-     "οἱ",
-     "στρατιῶται",
-     "οὐκ",
-     "ἐπείθοντο",
-     "οὐδὲ",
-     "τὰ",
-     "ὅπλα",
-     "ἀνέλαβον"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t9",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "The general did not trust the allies, nor did he await their arrival.",
+        "answer": "ὁ στρατηγὸς τοῖς συμμάχοις οὐκ ἐπίστευεν, οὐδὲ τὴν ἄφιξιν αὐτῶν ἀνέμενεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "τοῖς",
+          "συμμάχοις",
+          "οὐκ",
+          "ἐπίστευεν",
+          "οὐδὲ",
+          "τὴν",
+          "ἄφιξιν",
+          "αὐτῶν",
+          "ἀνέμενεν"
+        ]
+      },
+      {
+        "prompt": "The physician did not heal the wound, nor did he lighten the pain.",
+        "answer": "ὁ ἰατρὸς τὸ τραῦμα οὐκ ἐθεράπευσεν, οὐδὲ τὴν ὀδύνην ἐκούφισεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἰατρὸς",
+          "τὸ",
+          "τραῦμα",
+          "οὐκ",
+          "ἐθεράπευσεν",
+          "οὐδὲ",
+          "τὴν",
+          "ὀδύνην",
+          "ἐκούφισεν"
+        ]
+      },
+      {
+        "prompt": "The Phoenician ships did not arrive, nor did the satrap send gold.",
+        "answer": "αἱ Φοίνισσαι νῆες οὐκ ἀφίκοντο, οὐδὲ ὁ σατράπης χρυσίον ἔπεμψεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "Φοίνισσαι",
+          "νῆες",
+          "οὐκ",
+          "ἀφίκοντο",
+          "οὐδὲ",
+          "ὁ",
+          "σατράπης",
+          "χρυσίον",
+          "ἔπεμψεν"
+        ]
+      },
+      {
+        "prompt": "Do not neglect the laws, nor dishonor the customs of your ancestors.",
+        "answer": "μὴ ἀμέλει τῶν νόμων, μηδὲ τὰ τῶν προγόνων ἔθη ἀτίμαζε.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὴ",
+          "ἀμέλει",
+          "τῶν",
+          "νόμων",
+          "μηδὲ",
+          "τὰ",
+          "προγόνων",
+          "ἔθη",
+          "ἀτίμαζε"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The maiden, weeping, would not speak, nor reveal her grief.",
-    "answer": "ἡ κόρη δακρύουσα οὐκ ἤθελε λέγειν, οὐδὲ τὸ πένθος δηλοῦν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "κόρη",
-     "δακρύουσα",
-     "οὐκ",
-     "ἤθελε",
-     "λέγειν",
-     "οὐδὲ",
-     "τὸ",
-     "πένθος",
-     "δηλοῦν"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t10",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "The citizens did not choose him as general, nor did they entrust the fleet to him.",
+        "answer": "οἱ πολῖται αὐτὸν στρατηγὸν οὐχ εἵλοντο, οὐδὲ τὸ ναυτικὸν αὐτῷ ἐπέτρεψαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πολῖται",
+          "αὐτὸν",
+          "στρατηγὸν",
+          "οὐχ",
+          "εἵλοντο",
+          "οὐδὲ",
+          "τὸ",
+          "ναυτικὸν",
+          "αὐτῷ",
+          "ἐπέτρεψαν"
+        ]
+      },
+      {
+        "prompt": "While the storm raged, the sailors did not lower the sail, nor did they abandon the ship.",
+        "answer": "χειμῶνος ὄντος, οἱ ναῦται τὸ ἱστίον οὐ καθεῖλον, οὐδὲ τὴν ναῦν ἐξέλιπον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "χειμῶνος",
+          "ὄντος",
+          "οἱ",
+          "ναῦται",
+          "τὸ",
+          "ἱστίον",
+          "οὐ",
+          "καθεῖλον",
+          "οὐδὲ",
+          "τὴν",
+          "ναῦν",
+          "ἐξέλιπον"
+        ]
+      },
+      {
+        "prompt": "You will not persuade the assembly, nor will you escape the anger of the people.",
+        "answer": "οὐ πείσεις τὴν ἐκκλησίαν, οὐδὲ τὴν τοῦ δήμου ὀργὴν φεύξῃ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐ",
+          "πείσεις",
+          "τὴν",
+          "ἐκκλησίαν",
+          "οὐδὲ",
+          "τοῦ",
+          "δήμου",
+          "ὀργὴν",
+          "φεύξῃ"
+        ]
+      },
+      {
+        "prompt": "The boy did not obey his teacher, nor did he listen to his father.",
+        "answer": "ὁ παῖς τῷ διδασκάλῳ οὐκ ἐπείθετο, οὐδὲ τοῦ πατρὸς ἤκουεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "παῖς",
+          "τῷ",
+          "διδασκάλῳ",
+          "οὐκ",
+          "ἐπείθετο",
+          "οὐδὲ",
+          "τοῦ",
+          "πατρὸς",
+          "ἤκουεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Having conquered the enemy, they did not plunder the city, nor enslave the citizens.",
-    "answer": "νικήσαντες τοὺς πολεμίους οὐ τὴν πόλιν διήρπασαν, οὐδὲ τοὺς πολίτας ἠνδραπόδισαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "νικήσαντες",
-     "τοὺς",
-     "πολεμίους",
-     "οὐ",
-     "τὴν",
-     "πόλιν",
-     "διήρπασαν",
-     "οὐδὲ",
-     "πολίτας",
-     "ἠνδραπόδισαν"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-t11",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "The wall was not strong, nor were the gates well guarded.",
+        "answer": "τὸ τεῖχος οὐκ ἦν ἰσχυρόν, οὐδὲ αἱ πύλαι καλῶς ἐφυλάττοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "τεῖχος",
+          "οὐκ",
+          "ἦν",
+          "ἰσχυρόν",
+          "οὐδὲ",
+          "αἱ",
+          "πύλαι",
+          "καλῶς",
+          "ἐφυλάττοντο"
+        ]
+      },
+      {
+        "prompt": "Let us not flee from the danger, nor betray the fatherland.",
+        "answer": "μὴ φεύγωμεν τὸν κίνδυνον, μηδὲ τὴν πατρίδα προδῶμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὴ",
+          "φεύγωμεν",
+          "τὸν",
+          "κίνδυνον",
+          "μηδὲ",
+          "τὴν",
+          "πατρίδα",
+          "προδῶμεν"
+        ]
+      },
+      {
+        "prompt": "The women did not weep, nor did they tear their garments.",
+        "answer": "αἱ γυναῖκες οὐκ ἐδάκρυον, οὐδὲ τὰ ἱμάτια ἐσπάραττον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "γυναῖκες",
+          "οὐκ",
+          "ἐδάκρυον",
+          "οὐδὲ",
+          "τὰ",
+          "ἱμάτια",
+          "ἐσπάραττον"
+        ]
+      },
+      {
+        "prompt": "Since the enemy was near, the farmers did not till the land, nor did they gather the harvest.",
+        "answer": "τῶν πολεμίων ἐγγὺς ὄντων, οἱ γεωργοὶ τὴν γῆν οὐκ εἰργάζοντο, οὐδὲ τὸν καρπὸν συνέλεγον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῶν",
+          "πολεμίων",
+          "ἐγγὺς",
+          "ὄντων",
+          "οἱ",
+          "γεωργοὶ",
+          "τὴν",
+          "γῆν",
+          "οὐκ",
+          "εἰργάζοντο",
+          "οὐδὲ",
+          "τὸν",
+          "καρπὸν",
+          "συνέλεγον"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Since the river was deep, they could not cross, nor find a bridge.",
-    "answer": "βαθέος ὄντος τοῦ ποταμοῦ οὐκ ἐδύναντο διαβῆναι, οὐδὲ γέφυραν εὑρεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "βαθέος",
-     "ὄντος",
-     "τοῦ",
-     "ποταμοῦ",
-     "οὐκ",
-     "ἐδύναντο",
-     "διαβῆναι",
-     "οὐδὲ",
-     "γέφυραν",
-     "εὑρεῖν"
+  },
+  {
+    "id": "sm-2932-oude-mede-as-a-conjunction-q1",
+    "sectionId": "sm-2932-oude-mede-as-a-conjunction",
+    "questions": [
+      {
+        "prompt": "There was no hope of assistance nor did any chance of safety appear.",
+        "answer": "οὐδεμία ἐλπὶς ἦν τιμωρίας οὐδὲ ἄλλη σωτηρία ἐφαίνετο",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐδεμία",
+          "ἐλπὶς",
+          "ἦν",
+          "τιμωρίας",
+          "οὐδὲ",
+          "ἄλλη",
+          "σωτηρία",
+          "ἐφαίνετο"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "3.20"
+        }
+      },
+      {
+        "prompt": "You probably heard this from yourself and not from me.",
+        "answer": "σοῦ τάδε κινδυνεύεις, ἀλλ᾽ οὐκ ἐμοῦ ἀκηκοέναι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σοῦ",
+          "τάδε",
+          "κινδυνεύεις",
+          "ἀλλ",
+          "οὐκ",
+          "ἐμοῦ",
+          "ἀκηκοέναι"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Alcibiades",
+          "locus": "1 113c"
+        }
+      },
+      {
+        "prompt": "The Phoenician ships had not arrived nor had Tissaphernes.",
+        "answer": "αἱ Φοίνισσαι νῆες οὐδὲ ὁ Τισσαφέρνης ἧκον",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "Φοίνισσαι",
+          "νῆες",
+          "οὐδὲ",
+          "ὁ",
+          "Τισσαφέρνης",
+          "ἧκον"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "8.99"
+        }
+      },
+      {
+        "prompt": "He could say nothing straightforward nor just.",
+        "answer": "ἁπλοῦν μὲν οὐδὲ δίκαιον οὐδὲν ἂν εἰπεῖν ἔχοι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἁπλοῦν",
+          "μὲν",
+          "οὐδὲ",
+          "δίκαιον",
+          "οὐδὲν",
+          "ἂν",
+          "εἰπεῖν",
+          "ἔχοι"
+        ],
+        "source": {
+          "author": "Demosthenes",
+          "work": "Orations",
+          "locus": "22.4"
+        }
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t4",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "If you do not honor the gods, you will not prosper, nor will you be happy.",
-    "answer": "ἐὰν τοὺς θεοὺς μὴ τιμᾷς, οὐκ εὐτυχήσεις, οὐδὲ εὐδαίμων ἔσῃ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐὰν",
-     "τοὺς",
-     "θεοὺς",
-     "μὴ",
-     "τιμᾷς",
-     "οὐκ",
-     "εὐτυχήσεις",
-     "οὐδὲ",
-     "εὐδαίμων",
-     "ἔσῃ"
-    ]
-   },
-   {
-    "prompt": "The judges did not pity the defendant, nor did they release him.",
-    "answer": "οἱ δικασταὶ τὸν φεύγοντα οὐκ ᾤκτιραν, οὐδὲ ἀπέλυσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "δικασταὶ",
-     "τὸν",
-     "φεύγοντα",
-     "οὐκ",
-     "ᾤκτιραν",
-     "οὐδὲ",
-     "ἀπέλυσαν"
-    ]
-   },
-   {
-    "prompt": "No one dared to answer, nor was anyone willing to rise.",
-    "answer": "οὐδεὶς ἀποκρίνασθαι ἐτόλμησεν, οὐδὲ ἀναστῆναι ἠθέλησεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδεὶς",
-     "ἀποκρίνασθαι",
-     "ἐτόλμησεν",
-     "οὐδὲ",
-     "ἀναστῆναι",
-     "ἠθέλησεν"
-    ]
-   },
-   {
-    "prompt": "The city was not captured, nor were the walls razed.",
-    "answer": "ἡ πόλις οὐχ ἑάλω, οὐδὲ τὰ τείχη κατεσκάφη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "πόλις",
-     "οὐχ",
-     "ἑάλω",
-     "οὐδὲ",
-     "τὰ",
-     "τείχη",
-     "κατεσκάφη"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t5",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "The sailors did not sleep the whole night through, nor did they cease from their toil.",
-    "answer": "οἱ ναῦται τὴν νύκτα ὅλην οὐκ ἐκάθευδον, οὐδὲ τοῦ πόνου ἐπαύοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "ναῦται",
-     "τὴν",
-     "νύκτα",
-     "ὅλην",
-     "οὐκ",
-     "ἐκάθευδον",
-     "οὐδὲ",
-     "τοῦ",
-     "πόνου",
-     "ἐπαύοντο"
-    ]
-   },
-   {
-    "prompt": "After the sea-battle the enemy did not withdraw, nor did they send heralds.",
-    "answer": "μετὰ τὴν ναυμαχίαν οἱ πολέμιοι οὐκ ἀνεχώρησαν, οὐδὲ κήρυκας ἔπεμψαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μετὰ",
-     "τὴν",
-     "ναυμαχίαν",
-     "οἱ",
-     "πολέμιοι",
-     "οὐκ",
-     "ἀνεχώρησαν",
-     "οὐδὲ",
-     "κήρυκας",
-     "ἔπεμψαν"
-    ]
-   },
-   {
-    "prompt": "The old man drank no wine, nor did he touch the food.",
-    "answer": "ὁ γέρων οἶνον οὐκ ἔπινεν, οὐδὲ τοῦ σίτου ἥπτετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "οἶνον",
-     "οὐκ",
-     "ἔπινεν",
-     "οὐδὲ",
-     "τοῦ",
-     "σίτου",
-     "ἥπτετο"
-    ]
-   },
-   {
-    "prompt": "The clouds were not scattering, nor was the sky growing bright.",
-    "answer": "τὰ νέφη οὐκ ἐσκεδάννυτο, οὐδὲ ὁ αἰθὴρ ἔλαμπεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "νέφη",
-     "οὐκ",
-     "ἐσκεδάννυτο",
-     "οὐδὲ",
-     "ὁ",
-     "αἰθὴρ",
-     "ἔλαμπεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t6",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "The wise man is not disturbed by pain, nor overcome by pleasures.",
-    "answer": "ὁ σοφὸς ὑπὸ τῆς λύπης οὐ ταράττεται, οὐδὲ ὑπὸ τῶν ἡδονῶν κρατεῖται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "σοφὸς",
-     "ὑπὸ",
-     "τῆς",
-     "λύπης",
-     "οὐ",
-     "ταράττεται",
-     "οὐδὲ",
-     "τῶν",
-     "ἡδονῶν",
-     "κρατεῖται"
-    ]
-   },
-   {
-    "prompt": "He could say nothing straightforward, nor anything just.",
-    "answer": "οὐδὲν ἁπλοῦν οὐδὲ δίκαιον εἰπεῖν ἔχει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδὲν",
-     "ἁπλοῦν",
-     "οὐδὲ",
-     "δίκαιον",
-     "εἰπεῖν",
-     "ἔχει"
-    ]
-   },
-   {
-    "prompt": "Virtue is not taught by words, nor acquired without toil.",
-    "answer": "ἡ ἀρετὴ λόγοις οὐ διδάσκεται, οὐδὲ ἄνευ πόνου κτᾶται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "ἀρετὴ",
-     "λόγοις",
-     "οὐ",
-     "διδάσκεται",
-     "οὐδὲ",
-     "ἄνευ",
-     "πόνου",
-     "κτᾶται"
-    ]
-   },
-   {
-    "prompt": "The just man does not wrong his friends, nor does he deceive strangers.",
-    "answer": "ὁ δίκαιος τοὺς φίλους οὐκ ἀδικεῖ, οὐδὲ τοὺς ξένους ἐξαπατᾷ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "δίκαιος",
-     "τοὺς",
-     "φίλους",
-     "οὐκ",
-     "ἀδικεῖ",
-     "οὐδὲ",
-     "ξένους",
-     "ἐξαπατᾷ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t7",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "The enemy did not capture the city, nor did they lay waste the fields.",
-    "answer": "οἱ πολέμιοι τὴν πόλιν οὐχ εἷλον, οὐδὲ τοὺς ἀγροὺς ἐδῄωσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πολέμιοι",
-     "τὴν",
-     "πόλιν",
-     "οὐχ",
-     "εἷλον",
-     "οὐδὲ",
-     "τοὺς",
-     "ἀγροὺς",
-     "ἐδῄωσαν"
-    ]
-   },
-   {
-    "prompt": "The old man did not fear death, nor did he lament his fate.",
-    "answer": "ὁ γέρων τὸν θάνατον οὐκ ἐφοβεῖτο, οὐδὲ τὴν τύχην ἐπένθει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "τὸν",
-     "θάνατον",
-     "οὐκ",
-     "ἐφοβεῖτο",
-     "οὐδὲ",
-     "τὴν",
-     "τύχην",
-     "ἐπένθει"
-    ]
-   },
-   {
-    "prompt": "Do not admire wealth, nor pursue empty honor.",
-    "answer": "μὴ θαύμαζε τὸν πλοῦτον, μηδὲ δίωκε τὴν κενὴν τιμήν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὴ",
-     "θαύμαζε",
-     "τὸν",
-     "πλοῦτον",
-     "μηδὲ",
-     "δίωκε",
-     "τὴν",
-     "κενὴν",
-     "τιμήν"
-    ]
-   },
-   {
-    "prompt": "The messenger did not arrive, nor did any letter appear.",
-    "answer": "ὁ ἄγγελος οὐκ ἀφίκετο, οὐδὲ ἐπιστολὴ οὐδεμία ἐφάνη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἄγγελος",
-     "οὐκ",
-     "ἀφίκετο",
-     "οὐδὲ",
-     "ἐπιστολὴ",
-     "οὐδεμία",
-     "ἐφάνη"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t8",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "The judges were not persuaded by his threats, nor did they pity the defendant.",
-    "answer": "οἱ δικασταὶ ταῖς ἀπειλαῖς οὐκ ἐπείσθησαν, οὐδὲ τὸν φεύγοντα ᾤκτιραν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "δικασταὶ",
-     "ταῖς",
-     "ἀπειλαῖς",
-     "οὐκ",
-     "ἐπείσθησαν",
-     "οὐδὲ",
-     "τὸν",
-     "φεύγοντα",
-     "ᾤκτιραν"
-    ]
-   },
-   {
-    "prompt": "The tame lion did not harm the children, nor did it flee from the crowd.",
-    "answer": "ὁ ἥμερος λέων τοὺς παῖδας οὐκ ἔβλαψεν, οὐδὲ τὸν ὄχλον ἔφυγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἥμερος",
-     "λέων",
-     "τοὺς",
-     "παῖδας",
-     "οὐκ",
-     "ἔβλαψεν",
-     "οὐδὲ",
-     "τὸν",
-     "ὄχλον",
-     "ἔφυγεν"
-    ]
-   },
-   {
-    "prompt": "Since the road was long, we did not reach the river, nor did we see the mountain.",
-    "answer": "μακρᾶς οὔσης τῆς ὁδοῦ, οὐκ ἀφικόμεθα ἐπὶ τὸν ποταμόν, οὐδὲ τὸ ὄρος εἴδομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μακρᾶς",
-     "οὔσης",
-     "τῆς",
-     "ὁδοῦ",
-     "οὐκ",
-     "ἀφικόμεθα",
-     "ἐπὶ",
-     "τὸν",
-     "ποταμόν",
-     "οὐδὲ",
-     "τὸ",
-     "ὄρος",
-     "εἴδομεν"
-    ]
-   },
-   {
-    "prompt": "Do not reveal the plan to the strangers, nor betray your friends.",
-    "answer": "μὴ φήνῃς τὸ βούλευμα τοῖς ξένοις, μηδὲ προδῷς τοὺς φίλους.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὴ",
-     "φήνῃς",
-     "τὸ",
-     "βούλευμα",
-     "τοῖς",
-     "ξένοις",
-     "μηδὲ",
-     "προδῷς",
-     "τοὺς",
-     "φίλους"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t9",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "The general did not trust the allies, nor did he await their arrival.",
-    "answer": "ὁ στρατηγὸς τοῖς συμμάχοις οὐκ ἐπίστευεν, οὐδὲ τὴν ἄφιξιν αὐτῶν ἀνέμενεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "τοῖς",
-     "συμμάχοις",
-     "οὐκ",
-     "ἐπίστευεν",
-     "οὐδὲ",
-     "τὴν",
-     "ἄφιξιν",
-     "αὐτῶν",
-     "ἀνέμενεν"
-    ]
-   },
-   {
-    "prompt": "The physician did not heal the wound, nor did he lighten the pain.",
-    "answer": "ὁ ἰατρὸς τὸ τραῦμα οὐκ ἐθεράπευσεν, οὐδὲ τὴν ὀδύνην ἐκούφισεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἰατρὸς",
-     "τὸ",
-     "τραῦμα",
-     "οὐκ",
-     "ἐθεράπευσεν",
-     "οὐδὲ",
-     "τὴν",
-     "ὀδύνην",
-     "ἐκούφισεν"
-    ]
-   },
-   {
-    "prompt": "The Phoenician ships did not arrive, nor did the satrap send gold.",
-    "answer": "αἱ Φοίνισσαι νῆες οὐκ ἀφίκοντο, οὐδὲ ὁ σατράπης χρυσίον ἔπεμψεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "Φοίνισσαι",
-     "νῆες",
-     "οὐκ",
-     "ἀφίκοντο",
-     "οὐδὲ",
-     "ὁ",
-     "σατράπης",
-     "χρυσίον",
-     "ἔπεμψεν"
-    ]
-   },
-   {
-    "prompt": "Do not neglect the laws, nor dishonor the customs of your ancestors.",
-    "answer": "μὴ ἀμέλει τῶν νόμων, μηδὲ τὰ τῶν προγόνων ἔθη ἀτίμαζε.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὴ",
-     "ἀμέλει",
-     "τῶν",
-     "νόμων",
-     "μηδὲ",
-     "τὰ",
-     "προγόνων",
-     "ἔθη",
-     "ἀτίμαζε"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t10",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "The citizens did not choose him as general, nor did they entrust the fleet to him.",
-    "answer": "οἱ πολῖται αὐτὸν στρατηγὸν οὐχ εἵλοντο, οὐδὲ τὸ ναυτικὸν αὐτῷ ἐπέτρεψαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πολῖται",
-     "αὐτὸν",
-     "στρατηγὸν",
-     "οὐχ",
-     "εἵλοντο",
-     "οὐδὲ",
-     "τὸ",
-     "ναυτικὸν",
-     "αὐτῷ",
-     "ἐπέτρεψαν"
-    ]
-   },
-   {
-    "prompt": "While the storm raged, the sailors did not lower the sail, nor did they abandon the ship.",
-    "answer": "χειμῶνος ὄντος, οἱ ναῦται τὸ ἱστίον οὐ καθεῖλον, οὐδὲ τὴν ναῦν ἐξέλιπον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "χειμῶνος",
-     "ὄντος",
-     "οἱ",
-     "ναῦται",
-     "τὸ",
-     "ἱστίον",
-     "οὐ",
-     "καθεῖλον",
-     "οὐδὲ",
-     "τὴν",
-     "ναῦν",
-     "ἐξέλιπον"
-    ]
-   },
-   {
-    "prompt": "You will not persuade the assembly, nor will you escape the anger of the people.",
-    "answer": "οὐ πείσεις τὴν ἐκκλησίαν, οὐδὲ τὴν τοῦ δήμου ὀργὴν φεύξῃ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐ",
-     "πείσεις",
-     "τὴν",
-     "ἐκκλησίαν",
-     "οὐδὲ",
-     "τοῦ",
-     "δήμου",
-     "ὀργὴν",
-     "φεύξῃ"
-    ]
-   },
-   {
-    "prompt": "The boy did not obey his teacher, nor did he listen to his father.",
-    "answer": "ὁ παῖς τῷ διδασκάλῳ οὐκ ἐπείθετο, οὐδὲ τοῦ πατρὸς ἤκουεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "παῖς",
-     "τῷ",
-     "διδασκάλῳ",
-     "οὐκ",
-     "ἐπείθετο",
-     "οὐδὲ",
-     "τοῦ",
-     "πατρὸς",
-     "ἤκουεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-t11",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "The wall was not strong, nor were the gates well guarded.",
-    "answer": "τὸ τεῖχος οὐκ ἦν ἰσχυρόν, οὐδὲ αἱ πύλαι καλῶς ἐφυλάττοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "τεῖχος",
-     "οὐκ",
-     "ἦν",
-     "ἰσχυρόν",
-     "οὐδὲ",
-     "αἱ",
-     "πύλαι",
-     "καλῶς",
-     "ἐφυλάττοντο"
-    ]
-   },
-   {
-    "prompt": "Let us not flee from the danger, nor betray the fatherland.",
-    "answer": "μὴ φεύγωμεν τὸν κίνδυνον, μηδὲ τὴν πατρίδα προδῶμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὴ",
-     "φεύγωμεν",
-     "τὸν",
-     "κίνδυνον",
-     "μηδὲ",
-     "τὴν",
-     "πατρίδα",
-     "προδῶμεν"
-    ]
-   },
-   {
-    "prompt": "The women did not weep, nor did they tear their garments.",
-    "answer": "αἱ γυναῖκες οὐκ ἐδάκρυον, οὐδὲ τὰ ἱμάτια ἐσπάραττον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "γυναῖκες",
-     "οὐκ",
-     "ἐδάκρυον",
-     "οὐδὲ",
-     "τὰ",
-     "ἱμάτια",
-     "ἐσπάραττον"
-    ]
-   },
-   {
-    "prompt": "Since the enemy was near, the farmers did not till the land, nor did they gather the harvest.",
-    "answer": "τῶν πολεμίων ἐγγὺς ὄντων, οἱ γεωργοὶ τὴν γῆν οὐκ εἰργάζοντο, οὐδὲ τὸν καρπὸν συνέλεγον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῶν",
-     "πολεμίων",
-     "ἐγγὺς",
-     "ὄντων",
-     "οἱ",
-     "γεωργοὶ",
-     "τὴν",
-     "γῆν",
-     "οὐκ",
-     "εἰργάζοντο",
-     "οὐδὲ",
-     "τὸν",
-     "καρπὸν",
-     "συνέλεγον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2932-oude-mede-as-a-conjunction-q1",
-  "sectionId": "sm-2932-oude-mede-as-a-conjunction",
-  "questions": [
-   {
-    "prompt": "There was no hope of assistance nor did any chance of safety appear.",
-    "answer": "οὐδεμία ἐλπὶς ἦν τιμωρίας οὐδὲ ἄλλη σωτηρία ἐφαίνετο",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐδεμία",
-     "ἐλπὶς",
-     "ἦν",
-     "τιμωρίας",
-     "οὐδὲ",
-     "ἄλλη",
-     "σωτηρία",
-     "ἐφαίνετο"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "3.20"
-    }
-   },
-   {
-    "prompt": "You probably heard this from yourself and not from me.",
-    "answer": "σοῦ τάδε κινδυνεύεις, ἀλλ᾽ οὐκ ἐμοῦ ἀκηκοέναι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σοῦ",
-     "τάδε",
-     "κινδυνεύεις",
-     "ἀλλ",
-     "οὐκ",
-     "ἐμοῦ",
-     "ἀκηκοέναι"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Alcibiades",
-     "locus": "1 113c"
-    }
-   },
-   {
-    "prompt": "The Phoenician ships had not arrived nor had Tissaphernes.",
-    "answer": "αἱ Φοίνισσαι νῆες οὐδὲ ὁ Τισσαφέρνης . . . ἧκον",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "Φοίνισσαι",
-     "νῆες",
-     "οὐδὲ",
-     "ὁ",
-     "Τισσαφέρνης",
-     "ἧκον"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "8.99"
-    }
-   },
-   {
-    "prompt": "He could say nothing straightforward nor just.",
-    "answer": "ἁπλοῦν μὲν οὐδὲ δίκαιον οὐδὲν ἂν εἰπεῖν ἔχοι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἁπλοῦν",
-     "μὲν",
-     "οὐδὲ",
-     "δίκαιον",
-     "οὐδὲν",
-     "ἂν",
-     "εἰπεῖν",
-     "ἔχοι"
-    ],
-    "source": {
-     "author": "Demosthenes",
-     "work": "Orations",
-     "locus": "22.4"
-    }
-   }
-  ]
- }
+  }
 ]

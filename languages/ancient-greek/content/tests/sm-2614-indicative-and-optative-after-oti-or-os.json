@@ -1,739 +1,739 @@
 [
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t1",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "He says that the wise man fears nothing.",
-    "answer": "λέγει ὅτι ὁ σοφὸς οὐδὲν φοβεῖται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "λέγει",
-     "ὅτι",
-     "ὁ",
-     "σοφός",
-     "οὐδέν",
-     "φοβεῖται"
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t1",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "He says that the wise man fears nothing.",
+        "answer": "λέγει ὅτι ὁ σοφὸς οὐδὲν φοβεῖται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "λέγει",
+          "ὅτι",
+          "ὁ",
+          "σοφός",
+          "οὐδέν",
+          "φοβεῖται"
+        ]
+      },
+      {
+        "prompt": "The general says that the soldiers are brave.",
+        "answer": "λέγει ὁ στρατηγὸς ὡς ἀνδρεῖοί εἰσιν οἱ στρατιῶται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "λέγει",
+          "ὁ",
+          "στρατηγός",
+          "ὡς",
+          "ἀνδρεῖοί",
+          "εἰσιν",
+          "οἱ",
+          "στρατιῶται"
+        ]
+      },
+      {
+        "prompt": "I know that you would gladly help those in danger.",
+        "answer": "οἶδα ὅτι τοῖς κινδυνεύουσιν ἡδέως ἂν βοηθοίης.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἶδα",
+          "ὅτι",
+          "τοῖς",
+          "κινδυνεύουσιν",
+          "ἡδέως",
+          "ἄν",
+          "βοηθοίης"
+        ]
+      },
+      {
+        "prompt": "Everyone knows that the citizens would never abandon their fatherland.",
+        "answer": "πάντες ἴσασιν ὅτι οἱ πολῖται τὴν πατρίδα οὐκ ἄν ποτε προλίποιεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πάντες",
+          "ἴσασιν",
+          "ὅτι",
+          "οἱ",
+          "πολῖται",
+          "τήν",
+          "πατρίδα",
+          "οὐκ",
+          "ἄν",
+          "ποτε",
+          "προλίποιεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The general says that the soldiers are brave.",
-    "answer": "λέγει ὁ στρατηγὸς ὡς ἀνδρεῖοί εἰσιν οἱ στρατιῶται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "λέγει",
-     "ὁ",
-     "στρατηγός",
-     "ὡς",
-     "ἀνδρεῖοί",
-     "εἰσιν",
-     "οἱ",
-     "στρατιῶται"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t2",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "The scouts recognized that the road was difficult.",
+        "answer": "οἱ σκοποὶ ἔγνωσαν ὅτι χαλεπὴ ἡ ὁδὸς εἴη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "σκοποί",
+          "ἔγνωσαν",
+          "ὅτι",
+          "χαλεπή",
+          "ἡ",
+          "ὁδός",
+          "εἴη"
+        ]
+      },
+      {
+        "prompt": "He replied that he did not know the truth.",
+        "answer": "ἀπεκρίνατο ὅτι τὴν ἀλήθειαν οὐκ εἰδείη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπεκρίνατο",
+          "ὅτι",
+          "τήν",
+          "ἀλήθειαν",
+          "οὐκ",
+          "εἰδείη"
+        ]
+      },
+      {
+        "prompt": "It was reported that the general had died in the battle.",
+        "answer": "ἠγγέλθη ὅτι ὁ στρατηγὸς ἐν τῇ μάχῃ τεθναίη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἠγγέλθη",
+          "ὅτι",
+          "ὁ",
+          "στρατηγός",
+          "ἐν",
+          "τῇ",
+          "μάχῃ",
+          "τεθναίη"
+        ]
+      },
+      {
+        "prompt": "The old man said that his son had sailed to Egypt.",
+        "answer": "ὁ γέρων ἔλεξεν ὅτι ὁ υἱὸς εἰς Αἴγυπτον πλεύσειεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γέρων",
+          "ἔλεξεν",
+          "ὅτι",
+          "υἱός",
+          "εἰς",
+          "Αἴγυπτον",
+          "πλεύσειεν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "I know that you would gladly help those in danger.",
-    "answer": "οἶδα ὅτι τοῖς κινδυνεύουσιν ἡδέως ἂν βοηθοίης.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἶδα",
-     "ὅτι",
-     "τοῖς",
-     "κινδυνεύουσιν",
-     "ἡδέως",
-     "ἄν",
-     "βοηθοίης"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t3",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "A rumor spread through the camp that the enemy were approaching.",
+        "answer": "διῆλθε φήμη διὰ τοῦ στρατοπέδου ὅτι οἱ πολέμιοι προσέρχονται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "διῆλθε",
+          "φήμη",
+          "διά",
+          "τοῦ",
+          "στρατοπέδου",
+          "ὅτι",
+          "οἱ",
+          "πολέμιοι",
+          "προσέρχονται"
+        ]
+      },
+      {
+        "prompt": "The ambassadors answered that they would send gifts.",
+        "answer": "οἱ πρέσβεις ἀπεκρίναντο ὅτι δῶρα πέμψουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "πρέσβεις",
+          "ἀπεκρίναντο",
+          "ὅτι",
+          "δῶρα",
+          "πέμψουσιν"
+        ]
+      },
+      {
+        "prompt": "The slave said that his master had struck him.",
+        "answer": "ὁ δοῦλος εἶπεν ὅτι ὁ δεσπότης αὐτὸν ἔπαισεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "δοῦλος",
+          "εἶπεν",
+          "ὅτι",
+          "δεσπότης",
+          "αὐτόν",
+          "ἔπαισεν"
+        ]
+      },
+      {
+        "prompt": "The farmer kept saying that the harvest was abundant in that year.",
+        "answer": "ὁ γεωργὸς ἔλεγεν ὡς ὁ καρπὸς ἐκείνου τοῦ ἔτους πολύς ἐστιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "γεωργός",
+          "ἔλεγεν",
+          "ὡς",
+          "καρπός",
+          "ἐκείνου",
+          "τοῦ",
+          "ἔτους",
+          "πολύς",
+          "ἐστιν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Everyone knows that the citizens would never abandon their fatherland.",
-    "answer": "πάντες ἴσασιν ὅτι οἱ πολῖται τὴν πατρίδα οὐκ ἄν ποτε προλίποιεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πάντες",
-     "ἴσασιν",
-     "ὅτι",
-     "οἱ",
-     "πολῖται",
-     "τήν",
-     "πατρίδα",
-     "οὐκ",
-     "ἄν",
-     "ποτε",
-     "προλίποιεν"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t4",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "When the herald had spoken, everyone understood that the war would soon cease.",
+        "answer": "τοῦ κήρυκος εἰπόντος, πάντες ἔγνωσαν ὅτι ὁ πόλεμος ταχέως παύσοιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῦ",
+          "κήρυκος",
+          "εἰπόντος",
+          "πάντες",
+          "ἔγνωσαν",
+          "ὅτι",
+          "ὁ",
+          "πόλεμος",
+          "ταχέως",
+          "παύσοιτο"
+        ]
+      },
+      {
+        "prompt": "The physician said that the sick man would become healthy.",
+        "answer": "ὁ ἰατρὸς εἶπεν ὅτι ὁ κάμνων ὑγιὴς γενήσοιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἰατρός",
+          "εἶπεν",
+          "ὅτι",
+          "κάμνων",
+          "ὑγιής",
+          "γενήσοιτο"
+        ]
+      },
+      {
+        "prompt": "I heard that the poet had composed a beautiful song.",
+        "answer": "ἤκουσα ὅτι ὁ ποιητὴς καλὸν ᾆσμα ποιήσειεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἤκουσα",
+          "ὅτι",
+          "ὁ",
+          "ποιητής",
+          "καλόν",
+          "ᾆσμα",
+          "ποιήσειεν"
+        ]
+      },
+      {
+        "prompt": "The judges decided that the man had spoken justly.",
+        "answer": "οἱ δικασταὶ ἔγνωσαν ὅτι ὁ ἀνὴρ δικαίως εἴποι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "δικασταί",
+          "ἔγνωσαν",
+          "ὅτι",
+          "ἀνήρ",
+          "δικαίως",
+          "εἴποι"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t2",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "The scouts recognized that the road was difficult.",
-    "answer": "οἱ σκοποὶ ἔγνωσαν ὅτι χαλεπὴ ἡ ὁδὸς εἴη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "σκοποί",
-     "ἔγνωσαν",
-     "ὅτι",
-     "χαλεπή",
-     "ἡ",
-     "ὁδός",
-     "εἴη"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t5",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "He knows that you would not have blamed him even for this.",
+        "answer": "οἶδεν ὅτι οὐδὲ τούτου ἕνεκα οὐκ ἂν αὐτὸν ἐμέμφου.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἶδεν",
+          "ὅτι",
+          "οὐδέ",
+          "τούτου",
+          "ἕνεκα",
+          "οὐκ",
+          "ἄν",
+          "αὐτόν",
+          "ἐμέμφου"
+        ]
+      },
+      {
+        "prompt": "The teacher says that the pupil learns quickly.",
+        "answer": "ὁ διδάσκαλος λέγει ὅτι ὁ μαθητὴς ταχέως μανθάνει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "διδάσκαλος",
+          "λέγει",
+          "ὅτι",
+          "μαθητής",
+          "ταχέως",
+          "μανθάνει"
+        ]
+      },
+      {
+        "prompt": "It is agreed that no one would willingly be a slave.",
+        "answer": "ὁμολογεῖται ὅτι οὐδεὶς ἂν ἑκὼν δουλεύοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁμολογεῖται",
+          "ὅτι",
+          "οὐδείς",
+          "ἄν",
+          "ἑκών",
+          "δουλεύοι"
+        ]
+      },
+      {
+        "prompt": "The women perceive that the city is in danger.",
+        "answer": "αἱ γυναῖκες αἰσθάνονται ὅτι ἡ πόλις κινδυνεύει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἱ",
+          "γυναῖκες",
+          "αἰσθάνονται",
+          "ὅτι",
+          "ἡ",
+          "πόλις",
+          "κινδυνεύει"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "He replied that he did not know the truth.",
-    "answer": "ἀπεκρίνατο ὅτι τὴν ἀλήθειαν οὐκ εἰδείη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπεκρίνατο",
-     "ὅτι",
-     "τήν",
-     "ἀλήθειαν",
-     "οὐκ",
-     "εἰδείη"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t6",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "The soldiers, seeing the smoke, understood that the village was burning.",
+        "answer": "οἱ στρατιῶται τὸν καπνὸν ἰδόντες ἔγνωσαν ὅτι ἡ κώμη καίοιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "τόν",
+          "καπνόν",
+          "ἰδόντες",
+          "ἔγνωσαν",
+          "ὅτι",
+          "ἡ",
+          "κώμη",
+          "καίοιτο"
+        ]
+      },
+      {
+        "prompt": "The king having died, the messenger announced that his son now ruled.",
+        "answer": "τοῦ βασιλέως ἀποθανόντος, ὁ ἄγγελος ἤγγειλεν ὅτι ὁ υἱὸς νῦν ἄρχοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῦ",
+          "βασιλέως",
+          "ἀποθανόντος",
+          "ὁ",
+          "ἄγγελος",
+          "ἤγγειλεν",
+          "ὅτι",
+          "υἱός",
+          "νῦν",
+          "ἄρχοι"
+        ]
+      },
+      {
+        "prompt": "The prisoners revealed that they had hidden the gold in the cave.",
+        "answer": "οἱ αἰχμάλωτοι ἐδήλωσαν ὅτι τὸν χρυσὸν ἐν τῷ ἄντρῳ κρύψειαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "αἰχμάλωτοι",
+          "ἐδήλωσαν",
+          "ὅτι",
+          "τόν",
+          "χρυσόν",
+          "ἐν",
+          "τῷ",
+          "ἄντρῳ",
+          "κρύψειαν"
+        ]
+      },
+      {
+        "prompt": "The sailor swore that he had seen the goddess herself.",
+        "answer": "ὁ ναύτης ὤμοσεν ὅτι αὐτὴν τὴν θεὸν ἴδοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ναύτης",
+          "ὤμοσεν",
+          "ὅτι",
+          "αὐτήν",
+          "τήν",
+          "θεόν",
+          "ἴδοι"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "It was reported that the general had died in the battle.",
-    "answer": "ἠγγέλθη ὅτι ὁ στρατηγὸς ἐν τῇ μάχῃ τεθναίη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἠγγέλθη",
-     "ὅτι",
-     "ὁ",
-     "στρατηγός",
-     "ἐν",
-     "τῇ",
-     "μάχῃ",
-     "τεθναίη"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-q1",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "He says that I am an insolent person.",
+        "answer": "λέγει δ᾽ ὡς ὑβριστής εἰμι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "λέγει",
+          "δ",
+          "ὡς",
+          "ὑβριστής",
+          "εἰμι"
+        ],
+        "source": {
+          "author": "Lysias",
+          "work": "Orations",
+          "locus": "24.15"
+        }
+      },
+      {
+        "prompt": "He replied that he would say nothing of this.",
+        "answer": "ἀπεκρίνατο ὅτι οὐδὲν ἂν τούτων εἴποι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀπεκρίνατο",
+          "ὅτι",
+          "οὐδὲν",
+          "ἂν",
+          "τούτων",
+          "εἴποι"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "5.6.37"
+        }
+      },
+      {
+        "prompt": "They recognized that their fear was groundless.",
+        "answer": "ἔγνωσαν ὅτι κενὸς ὁ φόβος εἴη",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔγνωσαν",
+          "ὅτι",
+          "κενὸς",
+          "ὁ",
+          "φόβος",
+          "εἴη"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "2.2.21"
+        }
+      },
+      {
+        "prompt": "They said that the king of the Indians had sent them.",
+        "answer": "ἔλεξαν ὅτι πέμψειε σφᾶς ὁ Ἰνδῶν βασιλεύς",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔλεξαν",
+          "ὅτι",
+          "πέμψειε",
+          "σφᾶς",
+          "ὁ",
+          "Ἰνδῶν",
+          "βασιλεύς"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Cyropaedia",
+          "locus": "2.4.7"
+        }
+      }
     ]
-   },
-   {
-    "prompt": "The old man said that his son had sailed to Egypt.",
-    "answer": "ὁ γέρων ἔλεξεν ὅτι ὁ υἱὸς εἰς Αἴγυπτον πλεύσειεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γέρων",
-     "ἔλεξεν",
-     "ὅτι",
-     "υἱός",
-     "εἰς",
-     "Αἴγυπτον",
-     "πλεύσειεν"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-q2",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "It was reported that the Lacedaemonians had been defeated and that Peisander was dead.",
+        "answer": "ἠγγέλθη ὅτι ἡττημένοι εἶεν οἱ Λακεδαιμόνιοι καὶ Πείσανδρος τεθναίη",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἠγγέλθη",
+          "ὅτι",
+          "ἡττημένοι",
+          "εἶεν",
+          "οἱ",
+          "Λακεδαιμόνιοι",
+          "καὶ",
+          "Πείσανδρος",
+          "τεθναίη"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Hellenica",
+          "locus": "4.3.10"
+        }
+      },
+      {
+        "prompt": "A report spread that Cyrus was pursuing them.",
+        "answer": "διῆλθε λόγος ὅτι διώκει αὐτοὺς Κῦρος",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "διῆλθε",
+          "λόγος",
+          "ὅτι",
+          "διώκει",
+          "αὐτοὺς",
+          "Κῦρος"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "1.4.7"
+        }
+      },
+      {
+        "prompt": "They withdrew immediately on answering that they would send envoys.",
+        "answer": "ἀποκρινάμενοι ὅτι πέμψουσι πρέσβεις, εὐθὺς ἀπήλλαξαν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀποκρινάμενοι",
+          "ὅτι",
+          "πέμψουσι",
+          "πρέσβεις",
+          "εὐθὺς",
+          "ἀπήλλαξαν"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "1.90"
+        }
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t3",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "A rumor spread through the camp that the enemy were approaching.",
-    "answer": "διῆλθε φήμη διὰ τοῦ στρατοπέδου ὅτι οἱ πολέμιοι προσέρχονται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "διῆλθε",
-     "φήμη",
-     "διά",
-     "τοῦ",
-     "στρατοπέδου",
-     "ὅτι",
-     "οἱ",
-     "πολέμιοι",
-     "προσέρχονται"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t9",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "The scout reported that the enemy were encamping beside the river.",
+        "answer": "ὁ σκοπὸς ἤγγειλεν ὅτι οἱ πολέμιοι παρὰ τῷ ποταμῷ στρατοπεδεύοιντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "σκοπὸς",
+          "ἤγγειλεν",
+          "ὅτι",
+          "οἱ",
+          "πολέμιοι",
+          "παρὰ",
+          "τῷ",
+          "ποταμῷ",
+          "στρατοπεδεύοιντο"
+        ]
+      },
+      {
+        "prompt": "Cyrus perceived that the Greeks were fighting bravely.",
+        "answer": "Κῦρος ᾔσθετο ὅτι οἱ Ἕλληνες ἀνδρείως μάχοιντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "Κῦρος",
+          "ᾔσθετο",
+          "ὅτι",
+          "οἱ",
+          "Ἕλληνες",
+          "ἀνδρείως",
+          "μάχοιντο"
+        ]
+      },
+      {
+        "prompt": "The messenger announced that the general had fallen in the battle.",
+        "answer": "ὁ ἄγγελος ἀπήγγειλεν ὅτι ὁ στρατηγὸς ἐν τῇ μάχῃ πέσοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἄγγελος",
+          "ἀπήγγειλεν",
+          "ὅτι",
+          "στρατηγὸς",
+          "ἐν",
+          "τῇ",
+          "μάχῃ",
+          "πέσοι"
+        ]
+      },
+      {
+        "prompt": "We learned that the ships had sailed away during the night.",
+        "answer": "ἐπυθόμεθα ὅτι αἱ νῆες τῆς νυκτὸς ἀποπλεύσειαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐπυθόμεθα",
+          "ὅτι",
+          "αἱ",
+          "νῆες",
+          "τῆς",
+          "νυκτὸς",
+          "ἀποπλεύσειαν"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The ambassadors answered that they would send gifts.",
-    "answer": "οἱ πρέσβεις ἀπεκρίναντο ὅτι δῶρα πέμψουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "πρέσβεις",
-     "ἀπεκρίναντο",
-     "ὅτι",
-     "δῶρα",
-     "πέμψουσιν"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t10",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "He says that he would never betray his friends.",
+        "answer": "λέγει ὅτι οὐκ ἄν ποτε τοὺς φίλους προδοίη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "λέγει",
+          "ὅτι",
+          "οὐκ",
+          "ἄν",
+          "ποτε",
+          "τοὺς",
+          "φίλους",
+          "προδοίη"
+        ]
+      },
+      {
+        "prompt": "The witnesses declare that they saw the deed clearly.",
+        "answer": "οἱ μάρτυρες λέγουσιν ὅτι τὸ ἔργον σαφῶς εἶδον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "μάρτυρες",
+          "λέγουσιν",
+          "ὅτι",
+          "τὸ",
+          "ἔργον",
+          "σαφῶς",
+          "εἶδον"
+        ]
+      },
+      {
+        "prompt": "The oracle declares that the city will be saved.",
+        "answer": "ὁ χρησμὸς δηλοῖ ὅτι ἡ πόλις σωθήσεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "χρησμὸς",
+          "δηλοῖ",
+          "ὅτι",
+          "ἡ",
+          "πόλις",
+          "σωθήσεται"
+        ]
+      },
+      {
+        "prompt": "I know that you would not have acted otherwise.",
+        "answer": "οἶδα ὅτι οὐκ ἄν ἄλλως ἔπρᾱξας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἶδα",
+          "ὅτι",
+          "οὐκ",
+          "ἄν",
+          "ἄλλως",
+          "ἔπρᾱξας"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The slave said that his master had struck him.",
-    "answer": "ὁ δοῦλος εἶπεν ὅτι ὁ δεσπότης αὐτὸν ἔπαισεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "δοῦλος",
-     "εἶπεν",
-     "ὅτι",
-     "δεσπότης",
-     "αὐτόν",
-     "ἔπαισεν"
+  },
+  {
+    "id": "sm-2614-indicative-and-optative-after-oti-or-os-t11",
+    "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+    "questions": [
+      {
+        "prompt": "The old woman believed that the gods watched over mortals.",
+        "answer": "ἡ γραῦς ἐνόμιζεν ὡς οἱ θεοὶ τῶν θνητῶν ἐπιμελοῖντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "γραῦς",
+          "ἐνόμιζεν",
+          "ὡς",
+          "οἱ",
+          "θεοὶ",
+          "τῶν",
+          "θνητῶν",
+          "ἐπιμελοῖντο"
+        ]
+      },
+      {
+        "prompt": "The general made clear that he would lead the army toward the sea.",
+        "answer": "ὁ στρατηγὸς ἐδήλωσεν ὅτι τὸ στράτευμα πρὸς τὴν θάλατταν ἄξοι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγὸς",
+          "ἐδήλωσεν",
+          "ὅτι",
+          "τὸ",
+          "στράτευμα",
+          "πρὸς",
+          "τὴν",
+          "θάλατταν",
+          "ἄξοι"
+        ]
+      },
+      {
+        "prompt": "The prisoners confessed that they had plotted against the tyrant.",
+        "answer": "οἱ δεσμῶται ὡμολόγησαν ὅτι τῷ τυράννῳ ἐπιβουλεύσειαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "δεσμῶται",
+          "ὡμολόγησαν",
+          "ὅτι",
+          "τῷ",
+          "τυράννῳ",
+          "ἐπιβουλεύσειαν"
+        ]
+      },
+      {
+        "prompt": "The sailors said that a great storm had arisen on the sea.",
+        "answer": "οἱ ναῦται ἔλεγον ὅτι χειμὼν μέγας ἐν τῇ θαλάττῃ γένοιτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "ναῦται",
+          "ἔλεγον",
+          "ὅτι",
+          "χειμὼν",
+          "μέγας",
+          "ἐν",
+          "τῇ",
+          "θαλάττῃ",
+          "γένοιτο"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The farmer kept saying that the harvest was abundant in that year.",
-    "answer": "ὁ γεωργὸς ἔλεγεν ὡς ὁ καρπὸς ἐκείνου τοῦ ἔτους πολύς ἐστιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "γεωργός",
-     "ἔλεγεν",
-     "ὡς",
-     "καρπός",
-     "ἐκείνου",
-     "τοῦ",
-     "ἔτους",
-     "πολύς",
-     "ἐστιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t4",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "When the herald had spoken, everyone understood that the war would soon cease.",
-    "answer": "τοῦ κήρυκος εἰπόντος, πάντες ἔγνωσαν ὅτι ὁ πόλεμος ταχέως παύσοιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῦ",
-     "κήρυκος",
-     "εἰπόντος",
-     "πάντες",
-     "ἔγνωσαν",
-     "ὅτι",
-     "ὁ",
-     "πόλεμος",
-     "ταχέως",
-     "παύσοιτο"
-    ]
-   },
-   {
-    "prompt": "The physician said that the sick man would become healthy.",
-    "answer": "ὁ ἰατρὸς εἶπεν ὅτι ὁ κάμνων ὑγιὴς γενήσοιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἰατρός",
-     "εἶπεν",
-     "ὅτι",
-     "κάμνων",
-     "ὑγιής",
-     "γενήσοιτο"
-    ]
-   },
-   {
-    "prompt": "I heard that the poet had composed a beautiful song.",
-    "answer": "ἤκουσα ὅτι ὁ ποιητὴς καλὸν ᾆσμα ποιήσειεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἤκουσα",
-     "ὅτι",
-     "ὁ",
-     "ποιητής",
-     "καλόν",
-     "ᾆσμα",
-     "ποιήσειεν"
-    ]
-   },
-   {
-    "prompt": "The judges decided that the man had spoken justly.",
-    "answer": "οἱ δικασταὶ ἔγνωσαν ὅτι ὁ ἀνὴρ δικαίως εἴποι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "δικασταί",
-     "ἔγνωσαν",
-     "ὅτι",
-     "ἀνήρ",
-     "δικαίως",
-     "εἴποι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t5",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "He knows that you would not have blamed him even for this.",
-    "answer": "οἶδεν ὅτι οὐδὲ τούτου ἕνεκα οὐκ ἂν αὐτὸν ἐμέμφου.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἶδεν",
-     "ὅτι",
-     "οὐδέ",
-     "τούτου",
-     "ἕνεκα",
-     "οὐκ",
-     "ἄν",
-     "αὐτόν",
-     "ἐμέμφου"
-    ]
-   },
-   {
-    "prompt": "The teacher says that the pupil learns quickly.",
-    "answer": "ὁ διδάσκαλος λέγει ὅτι ὁ μαθητὴς ταχέως μανθάνει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "διδάσκαλος",
-     "λέγει",
-     "ὅτι",
-     "μαθητής",
-     "ταχέως",
-     "μανθάνει"
-    ]
-   },
-   {
-    "prompt": "It is agreed that no one would willingly be a slave.",
-    "answer": "ὁμολογεῖται ὅτι οὐδεὶς ἂν ἑκὼν δουλεύοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁμολογεῖται",
-     "ὅτι",
-     "οὐδείς",
-     "ἄν",
-     "ἑκών",
-     "δουλεύοι"
-    ]
-   },
-   {
-    "prompt": "The women perceive that the city is in danger.",
-    "answer": "αἱ γυναῖκες αἰσθάνονται ὅτι ἡ πόλις κινδυνεύει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἱ",
-     "γυναῖκες",
-     "αἰσθάνονται",
-     "ὅτι",
-     "ἡ",
-     "πόλις",
-     "κινδυνεύει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t6",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "The soldiers, seeing the smoke, understood that the village was burning.",
-    "answer": "οἱ στρατιῶται τὸν καπνὸν ἰδόντες ἔγνωσαν ὅτι ἡ κώμη καίοιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "τόν",
-     "καπνόν",
-     "ἰδόντες",
-     "ἔγνωσαν",
-     "ὅτι",
-     "ἡ",
-     "κώμη",
-     "καίοιτο"
-    ]
-   },
-   {
-    "prompt": "The king having died, the messenger announced that his son now ruled.",
-    "answer": "τοῦ βασιλέως ἀποθανόντος, ὁ ἄγγελος ἤγγειλεν ὅτι ὁ υἱὸς νῦν ἄρχοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῦ",
-     "βασιλέως",
-     "ἀποθανόντος",
-     "ὁ",
-     "ἄγγελος",
-     "ἤγγειλεν",
-     "ὅτι",
-     "υἱός",
-     "νῦν",
-     "ἄρχοι"
-    ]
-   },
-   {
-    "prompt": "The prisoners revealed that they had hidden the gold in the cave.",
-    "answer": "οἱ αἰχμάλωτοι ἐδήλωσαν ὅτι τὸν χρυσὸν ἐν τῷ ἄντρῳ κρύψειαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "αἰχμάλωτοι",
-     "ἐδήλωσαν",
-     "ὅτι",
-     "τόν",
-     "χρυσόν",
-     "ἐν",
-     "τῷ",
-     "ἄντρῳ",
-     "κρύψειαν"
-    ]
-   },
-   {
-    "prompt": "The sailor swore that he had seen the goddess herself.",
-    "answer": "ὁ ναύτης ὤμοσεν ὅτι αὐτὴν τὴν θεὸν ἴδοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ναύτης",
-     "ὤμοσεν",
-     "ὅτι",
-     "αὐτήν",
-     "τήν",
-     "θεόν",
-     "ἴδοι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-q1",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "He says that I am an insolent person.",
-    "answer": "λέγει δ᾽ ὡς ὑβριστής εἰμι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "λέγει",
-     "δ",
-     "ὡς",
-     "ὑβριστής",
-     "εἰμι"
-    ],
-    "source": {
-     "author": "Lysias",
-     "work": "Orations",
-     "locus": "24.15"
-    }
-   },
-   {
-    "prompt": "He replied that he would say nothing of this.",
-    "answer": "ἀπεκρίνατο ὅτι οὐδὲν ἂν τούτων εἴποι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀπεκρίνατο",
-     "ὅτι",
-     "οὐδὲν",
-     "ἂν",
-     "τούτων",
-     "εἴποι"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "5.6.37"
-    }
-   },
-   {
-    "prompt": "They recognized that their fear was groundless.",
-    "answer": "ἔγνωσαν ὅτι κενὸς ὁ φόβος εἴη",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔγνωσαν",
-     "ὅτι",
-     "κενὸς",
-     "ὁ",
-     "φόβος",
-     "εἴη"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "2.2.21"
-    }
-   },
-   {
-    "prompt": "They said that the king of the Indians had sent them.",
-    "answer": "ἔλεξαν ὅτι πέμψειε σφᾶς ὁ Ἰνδῶν βασιλεύς",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔλεξαν",
-     "ὅτι",
-     "πέμψειε",
-     "σφᾶς",
-     "ὁ",
-     "Ἰνδῶν",
-     "βασιλεύς"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Cyropaedia",
-     "locus": "2.4.7"
-    }
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-q2",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "It was reported that the Lacedaemonians had been defeated and that Peisander was dead.",
-    "answer": "ἠγγέλθη ὅτι ἡττημένοι εἶεν οἱ Λακεδαιμόνιοι . . . καὶ Πείσανδρος τεθναίη",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἠγγέλθη",
-     "ὅτι",
-     "ἡττημένοι",
-     "εἶεν",
-     "οἱ",
-     "Λακεδαιμόνιοι",
-     "καὶ",
-     "Πείσανδρος",
-     "τεθναίη"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Hellenica",
-     "locus": "4.3.10"
-    }
-   },
-   {
-    "prompt": "A report spread that Cyrus was pursuing them.",
-    "answer": "διῆλθε λόγος ὅτι διώκει αὐτοὺς Κῦρος",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "διῆλθε",
-     "λόγος",
-     "ὅτι",
-     "διώκει",
-     "αὐτοὺς",
-     "Κῦρος"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "1.4.7"
-    }
-   },
-   {
-    "prompt": "They withdrew immediately on answering that they would send envoys.",
-    "answer": "ἀποκρινάμενοι ὅτι πέμψουσι πρέσβεις, εὐθὺς ἀπήλλαξαν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀποκρινάμενοι",
-     "ὅτι",
-     "πέμψουσι",
-     "πρέσβεις",
-     "εὐθὺς",
-     "ἀπήλλαξαν"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "1.90"
-    }
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t9",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "The scout reported that the enemy were encamping beside the river.",
-    "answer": "ὁ σκοπὸς ἤγγειλεν ὅτι οἱ πολέμιοι παρὰ τῷ ποταμῷ στρατοπεδεύοιντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "σκοπὸς",
-     "ἤγγειλεν",
-     "ὅτι",
-     "οἱ",
-     "πολέμιοι",
-     "παρὰ",
-     "τῷ",
-     "ποταμῷ",
-     "στρατοπεδεύοιντο"
-    ]
-   },
-   {
-    "prompt": "Cyrus perceived that the Greeks were fighting bravely.",
-    "answer": "Κῦρος ᾔσθετο ὅτι οἱ Ἕλληνες ἀνδρείως μάχοιντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "Κῦρος",
-     "ᾔσθετο",
-     "ὅτι",
-     "οἱ",
-     "Ἕλληνες",
-     "ἀνδρείως",
-     "μάχοιντο"
-    ]
-   },
-   {
-    "prompt": "The messenger announced that the general had fallen in the battle.",
-    "answer": "ὁ ἄγγελος ἀπήγγειλεν ὅτι ὁ στρατηγὸς ἐν τῇ μάχῃ πέσοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἄγγελος",
-     "ἀπήγγειλεν",
-     "ὅτι",
-     "στρατηγὸς",
-     "ἐν",
-     "τῇ",
-     "μάχῃ",
-     "πέσοι"
-    ]
-   },
-   {
-    "prompt": "We learned that the ships had sailed away during the night.",
-    "answer": "ἐπυθόμεθα ὅτι αἱ νῆες τῆς νυκτὸς ἀποπλεύσειαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐπυθόμεθα",
-     "ὅτι",
-     "αἱ",
-     "νῆες",
-     "τῆς",
-     "νυκτὸς",
-     "ἀποπλεύσειαν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t10",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "He says that he would never betray his friends.",
-    "answer": "λέγει ὅτι οὐκ ἄν ποτε τοὺς φίλους προδοίη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "λέγει",
-     "ὅτι",
-     "οὐκ",
-     "ἄν",
-     "ποτε",
-     "τοὺς",
-     "φίλους",
-     "προδοίη"
-    ]
-   },
-   {
-    "prompt": "The witnesses declare that they saw the deed clearly.",
-    "answer": "οἱ μάρτυρες λέγουσιν ὅτι τὸ ἔργον σαφῶς εἶδον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "μάρτυρες",
-     "λέγουσιν",
-     "ὅτι",
-     "τὸ",
-     "ἔργον",
-     "σαφῶς",
-     "εἶδον"
-    ]
-   },
-   {
-    "prompt": "The oracle declares that the city will be saved.",
-    "answer": "ὁ χρησμὸς δηλοῖ ὅτι ἡ πόλις σωθήσεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "χρησμὸς",
-     "δηλοῖ",
-     "ὅτι",
-     "ἡ",
-     "πόλις",
-     "σωθήσεται"
-    ]
-   },
-   {
-    "prompt": "I know that you would not have acted otherwise.",
-    "answer": "οἶδα ὅτι οὐκ ἄν ἄλλως ἔπρᾱξας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἶδα",
-     "ὅτι",
-     "οὐκ",
-     "ἄν",
-     "ἄλλως",
-     "ἔπρᾱξας"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t11",
-  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
-  "questions": [
-   {
-    "prompt": "The old woman believed that the gods watched over mortals.",
-    "answer": "ἡ γραῦς ἐνόμιζεν ὡς οἱ θεοὶ τῶν θνητῶν ἐπιμελοῖντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "γραῦς",
-     "ἐνόμιζεν",
-     "ὡς",
-     "οἱ",
-     "θεοὶ",
-     "τῶν",
-     "θνητῶν",
-     "ἐπιμελοῖντο"
-    ]
-   },
-   {
-    "prompt": "The general made clear that he would lead the army toward the sea.",
-    "answer": "ὁ στρατηγὸς ἐδήλωσεν ὅτι τὸ στράτευμα πρὸς τὴν θάλατταν ἄξοι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγὸς",
-     "ἐδήλωσεν",
-     "ὅτι",
-     "τὸ",
-     "στράτευμα",
-     "πρὸς",
-     "τὴν",
-     "θάλατταν",
-     "ἄξοι"
-    ]
-   },
-   {
-    "prompt": "The prisoners confessed that they had plotted against the tyrant.",
-    "answer": "οἱ δεσμῶται ὡμολόγησαν ὅτι τῷ τυράννῳ ἐπιβουλεύσειαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "δεσμῶται",
-     "ὡμολόγησαν",
-     "ὅτι",
-     "τῷ",
-     "τυράννῳ",
-     "ἐπιβουλεύσειαν"
-    ]
-   },
-   {
-    "prompt": "The sailors said that a great storm had arisen on the sea.",
-    "answer": "οἱ ναῦται ἔλεγον ὅτι χειμὼν μέγας ἐν τῇ θαλάττῃ γένοιτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "ναῦται",
-     "ἔλεγον",
-     "ὅτι",
-     "χειμὼν",
-     "μέγας",
-     "ἐν",
-     "τῇ",
-     "θαλάττῃ",
-     "γένοιτο"
-    ]
-   }
-  ]
- }
+  }
 ]

@@ -1,680 +1,680 @@
 [
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t1",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "The youths, conversing with one another, admired the noble general.",
-    "answer": "τὰ μειράκια πρὸς ἀλλήλους διαλεγόμενοι τὸν γενναῖον στρατηγὸν ἐθαύμαζον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "μειράκια",
-     "πρὸς",
-     "ἀλλήλους",
-     "διαλεγόμενοι",
-     "τὸν",
-     "γενναῖον",
-     "στρατηγὸν",
-     "ἐθαύμαζον"
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t1",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "The youths, conversing with one another, admired the noble general.",
+        "answer": "τὰ μειράκια πρὸς ἀλλήλους διαλεγόμενοι τὸν γενναῖον στρατηγὸν ἐθαύμαζον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "μειράκια",
+          "πρὸς",
+          "ἀλλήλους",
+          "διαλεγόμενοι",
+          "τὸν",
+          "γενναῖον",
+          "στρατηγὸν",
+          "ἐθαύμαζον"
+        ]
+      },
+      {
+        "prompt": "The dearest child, having come out, reported everything to his mother.",
+        "answer": "τὸ φίλτατον τέκνον ἐξεληλυθὼς τῇ μητρὶ πάντα ἀπήγγειλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "φίλτατον",
+          "τέκνον",
+          "ἐξεληλυθὼς",
+          "τῇ",
+          "μητρὶ",
+          "πάντα",
+          "ἀπήγγειλεν"
+        ]
+      },
+      {
+        "prompt": "The slave, although afraid, hid the money under the couch.",
+        "answer": "τὸ ἀνδράποδον καίπερ φοβούμενος τὸ ἀργύριον ὑπὸ τὴν κλίνην ἀπέκρυψεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "ἀνδράποδον",
+          "καίπερ",
+          "φοβούμενος",
+          "ἀργύριον",
+          "ὑπὸ",
+          "τὴν",
+          "κλίνην",
+          "ἀπέκρυψεν"
+        ]
+      },
+      {
+        "prompt": "The child, having become brave, was the first to attack the enemy.",
+        "answer": "τὸ παιδίον ἀνδρεῖος γενόμενος πρῶτος τοῖς πολεμίοις ἐπέθετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "παιδίον",
+          "ἀνδρεῖος",
+          "γενόμενος",
+          "πρῶτος",
+          "τοῖς",
+          "πολεμίοις",
+          "ἐπέθετο"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The dearest child, having come out, reported everything to his mother.",
-    "answer": "τὸ φίλτατον τέκνον ἐξεληλυθὼς τῇ μητρὶ πάντα ἀπήγγειλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "φίλτατον",
-     "τέκνον",
-     "ἐξεληλυθὼς",
-     "τῇ",
-     "μητρὶ",
-     "πάντα",
-     "ἀπήγγειλεν"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t2",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "The little child, being wise, persuaded her own father.",
+        "answer": "τὸ παιδίον σοφὴ οὖσα τὸν ἑαυτῆς πατέρα ἔπεισεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "παιδίον",
+          "σοφὴ",
+          "οὖσα",
+          "τὸν",
+          "ἑαυτῆς",
+          "πατέρα",
+          "ἔπεισεν"
+        ]
+      },
+      {
+        "prompt": "The dear child, though weeping, followed her mother to the temple.",
+        "answer": "τὸ φίλον τέκνον καίπερ δακρύουσα τῇ μητρὶ εἰς τὸ ἱερὸν ἠκολούθει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "φίλον",
+          "τέκνον",
+          "καίπερ",
+          "δακρύουσα",
+          "τῇ",
+          "μητρὶ",
+          "εἰς",
+          "ἱερὸν",
+          "ἠκολούθει"
+        ]
+      },
+      {
+        "prompt": "His little daughter, having heard these things, fled in terror.",
+        "answer": "τὸ θυγάτριον ταῦτα ἀκούσασα φοβηθεῖσα ἔφυγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "θυγάτριον",
+          "ταῦτα",
+          "ἀκούσασα",
+          "φοβηθεῖσα",
+          "ἔφυγεν"
+        ]
+      },
+      {
+        "prompt": "The child, being most beautiful, was admired by all the women.",
+        "answer": "τὸ τέκνον καλλίστη οὖσα ὑπὸ πασῶν τῶν γυναικῶν ἐθαυμάζετο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "τέκνον",
+          "καλλίστη",
+          "οὖσα",
+          "ὑπὸ",
+          "πασῶν",
+          "τῶν",
+          "γυναικῶν",
+          "ἐθαυμάζετο"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The slave, although afraid, hid the money under the couch.",
-    "answer": "τὸ ἀνδράποδον καίπερ φοβούμενος τὸ ἀργύριον ὑπὸ τὴν κλίνην ἀπέκρυψεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "ἀνδράποδον",
-     "καίπερ",
-     "φοβούμενος",
-     "ἀργύριον",
-     "ὑπὸ",
-     "τὴν",
-     "κλίνην",
-     "ἀπέκρυψεν"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t3",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "Parents love their own children more than themselves.",
+        "answer": "οἱ γονεῖς τὰ ἑαυτῶν τέκνα μᾶλλον ἢ ἑαυτοὺς φιλοῦσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "γονεῖς",
+          "τὰ",
+          "ἑαυτῶν",
+          "τέκνα",
+          "μᾶλλον",
+          "ἢ",
+          "ἑαυτοὺς",
+          "φιλοῦσιν"
+        ]
+      },
+      {
+        "prompt": "Whichever is better, whether the man or the woman, let that one rule.",
+        "answer": "ὁπότερος ἂν ᾖ βελτίων, εἴτε ὁ ἀνὴρ εἴτε ἡ γυνή, ἀρχέτω.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁπότερος",
+          "ἂν",
+          "ᾖ",
+          "βελτίων",
+          "εἴτε",
+          "ὁ",
+          "ἀνὴρ",
+          "ἡ",
+          "γυνή",
+          "ἀρχέτω"
+        ]
+      },
+      {
+        "prompt": "Children obey their parents in all things.",
+        "answer": "οἱ παῖδες τοῖς γονεῦσιν ἐν πᾶσι πείθονται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "παῖδες",
+          "τοῖς",
+          "γονεῦσιν",
+          "ἐν",
+          "πᾶσι",
+          "πείθονται"
+        ]
+      },
+      {
+        "prompt": "Whoever does these things, whether man or woman, will pay the penalty.",
+        "answer": "ὅστις ἂν ταῦτα ποιῇ, εἴτε ἀνὴρ εἴτε γυνή, δίκην δώσει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὅστις",
+          "ἂν",
+          "ταῦτα",
+          "ποιῇ",
+          "εἴτε",
+          "ἀνὴρ",
+          "γυνή",
+          "δίκην",
+          "δώσει"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The child, having become brave, was the first to attack the enemy.",
-    "answer": "τὸ παιδίον ἀνδρεῖος γενόμενος πρῶτος τοῖς πολεμίοις ἐπέθετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "παιδίον",
-     "ἀνδρεῖος",
-     "γενόμενος",
-     "πρῶτος",
-     "τοῖς",
-     "πολεμίοις",
-     "ἐπέθετο"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t4",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "This shameless creature said these things when he had come out.",
+        "answer": "ταῦτα ἔλεγεν ἡ ἀναιδὴς αὕτη κεφαλή, ἐξεληλυθώς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ταῦτα",
+          "ἔλεγεν",
+          "ἡ",
+          "ἀναιδὴς",
+          "αὕτη",
+          "κεφαλή",
+          "ἐξεληλυθώς"
+        ]
+      },
+      {
+        "prompt": "The might of Heracles, gazing at the enemy, felt no fear.",
+        "answer": "ἡ Ἡρακλέους βία πρὸς τοὺς πολεμίους ἰδὼν οὐδὲν ἐφοβήθη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "Ἡρακλέους",
+          "βία",
+          "πρὸς",
+          "τοὺς",
+          "πολεμίους",
+          "ἰδὼν",
+          "οὐδὲν",
+          "ἐφοβήθη"
+        ]
+      },
+      {
+        "prompt": "We elders, delighting in the play of the young, kept quiet.",
+        "answer": "τὸ τῶν πρεσβυτέρων ἡμῶν χαίροντες τῇ τῶν νέων παιδιᾷ ἡσυχίαν εἴχομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "τῶν",
+          "πρεσβυτέρων",
+          "ἡμῶν",
+          "χαίροντες",
+          "τῇ",
+          "νέων",
+          "παιδιᾷ",
+          "ἡσυχίαν",
+          "εἴχομεν"
+        ]
+      },
+      {
+        "prompt": "The strength of Ajax, holding his ground, drove back the enemy.",
+        "answer": "ἡ τοῦ Αἴαντος ἰσχὺς κατὰ χώραν μένων τοὺς πολεμίους ἀπεώσατο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "τοῦ",
+          "Αἴαντος",
+          "ἰσχὺς",
+          "κατὰ",
+          "χώραν",
+          "μένων",
+          "τοὺς",
+          "πολεμίους",
+          "ἀπεώσατο"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t2",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "The little child, being wise, persuaded her own father.",
-    "answer": "τὸ παιδίον σοφὴ οὖσα τὸν ἑαυτῆς πατέρα ἔπεισεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "παιδίον",
-     "σοφὴ",
-     "οὖσα",
-     "τὸν",
-     "ἑαυτῆς",
-     "πατέρα",
-     "ἔπεισεν"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t5",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "The child whom you saw, being noble, will become a good citizen.",
+        "answer": "τὸ παιδίον ὃν εἶδες, γενναῖος ὤν, ἀγαθὸς πολίτης γενήσεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "παιδίον",
+          "ὃν",
+          "εἶδες",
+          "γενναῖος",
+          "ὤν",
+          "ἀγαθὸς",
+          "πολίτης",
+          "γενήσεται"
+        ]
+      },
+      {
+        "prompt": "The youth, whom all praise, has now become a general.",
+        "answer": "τὸ μειράκιον, ὃν πάντες ἐπαινοῦσι, νῦν στρατηγὸς γέγονεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "μειράκιον",
+          "ὃν",
+          "πάντες",
+          "ἐπαινοῦσι",
+          "νῦν",
+          "στρατηγὸς",
+          "γέγονεν"
+        ]
+      },
+      {
+        "prompt": "That slave-woman, whom no one trusts, betrayed the city.",
+        "answer": "τοῦτο τὸ ἀνδράποδον, ᾗ οὐδεὶς πιστεύει, τὴν πόλιν προέδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῦτο",
+          "τὸ",
+          "ἀνδράποδον",
+          "ᾗ",
+          "οὐδεὶς",
+          "πιστεύει",
+          "τὴν",
+          "πόλιν",
+          "προέδωκεν"
+        ]
+      },
+      {
+        "prompt": "The children, being present, saw everything that happened.",
+        "answer": "τὰ παιδία παρόντες πάντα τὰ γενόμενα εἶδον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "παιδία",
+          "παρόντες",
+          "πάντα",
+          "γενόμενα",
+          "εἶδον"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The dear child, though weeping, followed her mother to the temple.",
-    "answer": "τὸ φίλον τέκνον καίπερ δακρύουσα τῇ μητρὶ εἰς τὸ ἱερὸν ἠκολούθει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "φίλον",
-     "τέκνον",
-     "καίπερ",
-     "δακρύουσα",
-     "τῇ",
-     "μητρὶ",
-     "εἰς",
-     "ἱερὸν",
-     "ἠκολούθει"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t6",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "The youths, having armed themselves, marched against the tyrant.",
+        "answer": "τὰ μειράκια ὁπλισάμενοι ἐπὶ τὸν τύραννον ἐστράτευσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "μειράκια",
+          "ὁπλισάμενοι",
+          "ἐπὶ",
+          "τὸν",
+          "τύραννον",
+          "ἐστράτευσαν"
+        ]
+      },
+      {
+        "prompt": "The dear child, seated beside his father, listened to the poet.",
+        "answer": "τὸ φίλον τέκνον παρὰ τῷ πατρὶ καθήμενος τοῦ ποιητοῦ ἤκουεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "φίλον",
+          "τέκνον",
+          "παρὰ",
+          "τῷ",
+          "πατρὶ",
+          "καθήμενος",
+          "τοῦ",
+          "ποιητοῦ",
+          "ἤκουεν"
+        ]
+      },
+      {
+        "prompt": "The slave, running quickly, announced the victory to the master.",
+        "answer": "τὸ ἀνδράποδον ταχέως τρέχων τῷ δεσπότῃ τὴν νίκην ἤγγειλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "ἀνδράποδον",
+          "ταχέως",
+          "τρέχων",
+          "τῷ",
+          "δεσπότῃ",
+          "τὴν",
+          "νίκην",
+          "ἤγγειλεν"
+        ]
+      },
+      {
+        "prompt": "The little child, being present, was chosen priestess of the goddess.",
+        "answer": "τὸ παιδίον παροῦσα ἱέρεια τῆς θεοῦ ᾑρέθη.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "παιδίον",
+          "παροῦσα",
+          "ἱέρεια",
+          "τῆς",
+          "θεοῦ",
+          "ᾑρέθη"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "His little daughter, having heard these things, fled in terror.",
-    "answer": "τὸ θυγάτριον ταῦτα ἀκούσασα φοβηθεῖσα ἔφυγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "θυγάτριον",
-     "ταῦτα",
-     "ἀκούσασα",
-     "φοβηθεῖσα",
-     "ἔφυγεν"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t7",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "The youths, sitting in the marketplace, were conversing about virtue.",
+        "answer": "τὰ μειράκια, ἐν τῇ ἀγορᾷ καθήμενοι, περὶ ἀρετῆς διελέγοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "μειράκια",
+          "ἐν",
+          "τῇ",
+          "ἀγορᾷ",
+          "καθήμενοι",
+          "περὶ",
+          "ἀρετῆς",
+          "διελέγοντο"
+        ]
+      },
+      {
+        "prompt": "The little child, though weak, bravely endured the toils.",
+        "answer": "τὸ παιδίον, καίπερ ἀσθενὴς ὤν, τοὺς πόνους ἀνδρείως ἤνεγκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "παιδίον",
+          "καίπερ",
+          "ἀσθενὴς",
+          "ὤν",
+          "τοὺς",
+          "πόνους",
+          "ἀνδρείως",
+          "ἤνεγκεν"
+        ]
+      },
+      {
+        "prompt": "This wicked creature, plotting against his fatherland, betrayed the citizens.",
+        "answer": "ἡ πονηρὰ αὕτη κεφαλή, ἐπιβουλεύσας τῇ πατρίδι, τοὺς πολίτας προέδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "πονηρὰ",
+          "αὕτη",
+          "κεφαλή",
+          "ἐπιβουλεύσας",
+          "τῇ",
+          "πατρίδι",
+          "τοὺς",
+          "πολίτας",
+          "προέδωκεν"
+        ]
+      },
+      {
+        "prompt": "Whichever of the two is wiser, whether the man or the woman, let that one rule the household.",
+        "answer": "ὁπότερος ἂν ᾖ σοφώτερος, εἴτε ὁ ἀνὴρ εἴτε ἡ γυνή, τῆς οἰκίας ἀρχέτω.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁπότερος",
+          "ἂν",
+          "ᾖ",
+          "σοφώτερος",
+          "εἴτε",
+          "ὁ",
+          "ἀνὴρ",
+          "ἡ",
+          "γυνή",
+          "τῆς",
+          "οἰκίας",
+          "ἀρχέτω"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "The child, being most beautiful, was admired by all the women.",
-    "answer": "τὸ τέκνον καλλίστη οὖσα ὑπὸ πασῶν τῶν γυναικῶν ἐθαυμάζετο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "τέκνον",
-     "καλλίστη",
-     "οὖσα",
-     "ὑπὸ",
-     "πασῶν",
-     "τῶν",
-     "γυναικῶν",
-     "ἐθαυμάζετο"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t8",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "The parents, rejoicing at the victory, sacrificed to the gods.",
+        "answer": "οἱ γονεῖς, τῇ νίκῃ χαίροντες, τοῖς θεοῖς ἔθυσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "γονεῖς",
+          "τῇ",
+          "νίκῃ",
+          "χαίροντες",
+          "τοῖς",
+          "θεοῖς",
+          "ἔθυσαν"
+        ]
+      },
+      {
+        "prompt": "The children, having fled into the mountains, escaped the tyrant.",
+        "answer": "τὰ τέκνα, εἰς τὰ ὄρη φυγόντες, τὸν τύραννον ἐξέφυγον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "τέκνα",
+          "εἰς",
+          "ὄρη",
+          "φυγόντες",
+          "τὸν",
+          "τύραννον",
+          "ἐξέφυγον"
+        ]
+      },
+      {
+        "prompt": "The dearest child, greatly honored, rendered thanks to her mother.",
+        "answer": "τὸ φίλτατον τέκνον, μεγάλως τιμηθεῖσα, τῇ μητρὶ χάριν ἀπέδωκεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "φίλτατον",
+          "τέκνον",
+          "μεγάλως",
+          "τιμηθεῖσα",
+          "τῇ",
+          "μητρὶ",
+          "χάριν",
+          "ἀπέδωκεν"
+        ]
+      },
+      {
+        "prompt": "The crowd, being angry, rushed toward the gates.",
+        "answer": "τὸ πλῆθος, ὀργιζόμενοι, πρὸς τὰς πύλας ὥρμησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "πλῆθος",
+          "ὀργιζόμενοι",
+          "πρὸς",
+          "τὰς",
+          "πύλας",
+          "ὥρμησαν"
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t3",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "Parents love their own children more than themselves.",
-    "answer": "οἱ γονεῖς τὰ ἑαυτῶν τέκνα μᾶλλον ἢ ἑαυτοὺς φιλοῦσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "γονεῖς",
-     "τὰ",
-     "ἑαυτῶν",
-     "τέκνα",
-     "μᾶλλον",
-     "ἢ",
-     "ἑαυτοὺς",
-     "φιλοῦσιν"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-t9",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "The slaves, having been freed, were grateful to their master.",
+        "answer": "τὰ ἀνδράποδα, ἐλευθερωθέντες, τῷ δεσπότῃ χάριν εἶχον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "ἀνδράποδα",
+          "ἐλευθερωθέντες",
+          "τῷ",
+          "δεσπότῃ",
+          "χάριν",
+          "εἶχον"
+        ]
+      },
+      {
+        "prompt": "This trustworthy fellow, having become a witness, saved his friend.",
+        "answer": "ἡ πιστὴ αὕτη κεφαλή, μάρτυς γενόμενος, τὸν φίλον ἔσωσεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "πιστὴ",
+          "αὕτη",
+          "κεφαλή",
+          "μάρτυς",
+          "γενόμενος",
+          "τὸν",
+          "φίλον",
+          "ἔσωσεν"
+        ]
+      },
+      {
+        "prompt": "Whoever wishes, whether citizen or foreigner, let that one speak in the assembly.",
+        "answer": "ὁ βουλόμενος, εἴτε πολίτης εἴτε ξένος, ἐν τῇ ἐκκλησίᾳ λεγέτω.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "βουλόμενος",
+          "εἴτε",
+          "πολίτης",
+          "ξένος",
+          "ἐν",
+          "τῇ",
+          "ἐκκλησίᾳ",
+          "λεγέτω"
+        ]
+      },
+      {
+        "prompt": "The children, though small, faithfully guarded the wall.",
+        "answer": "τὰ παιδία, καίπερ σμικροὶ ὄντες, τὸ τεῖχος πιστῶς ἐφύλαττον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "παιδία",
+          "καίπερ",
+          "σμικροὶ",
+          "ὄντες",
+          "τὸ",
+          "τεῖχος",
+          "πιστῶς",
+          "ἐφύλαττον"
+        ]
+      }
     ]
-   },
-   {
-    "prompt": "Whichever is better, whether the man or the woman, let that one rule.",
-    "answer": "ὁπότερος ἂν ᾖ βελτίων, εἴτε ὁ ἀνὴρ εἴτε ἡ γυνή, ἀρχέτω.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁπότερος",
-     "ἂν",
-     "ᾖ",
-     "βελτίων",
-     "εἴτε",
-     "ὁ",
-     "ἀνὴρ",
-     "ἡ",
-     "γυνή",
-     "ἀρχέτω"
+  },
+  {
+    "id": "sm-1013-peculiarities-in-the-use-of-gender-q1",
+    "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
+    "questions": [
+      {
+        "prompt": "The youths conversing with one another.",
+        "answer": "τὰ μειράκια πρὸς ἀλλήλους διαλεγόμενοι",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "μειράκια",
+          "πρὸς",
+          "ἀλλήλους",
+          "διαλεγόμενοι"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Laches",
+          "locus": "180e"
+        }
+      },
+      {
+        "prompt": "This shameless fellow spoke thus when he came out.",
+        "answer": "ταῦτ᾽ ἔλεγεν ἡ ἀναιδὴς αὕτη κεφαλή, ἐξεληλυθώς",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ταῦτ",
+          "ἔλεγεν",
+          "ἡ",
+          "ἀναιδὴς",
+          "αὕτη",
+          "κεφαλή",
+          "ἐξεληλυθώς"
+        ],
+        "source": {
+          "author": "Demosthenes",
+          "work": "Orations",
+          "locus": "21.117"
+        }
+      },
+      {
+        "prompt": "We the elders delighting in their sport.",
+        "answer": "τὸ δὲ τῶν πρεσβυτέρων ἡμῶν χαίροντες τῇ ἐκείνων παιδιᾷ",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὸ",
+          "δὲ",
+          "τῶν",
+          "πρεσβυτέρων",
+          "ἡμῶν",
+          "χαίροντες",
+          "τῇ",
+          "ἐκείνων",
+          "παιδιᾷ"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Laws",
+          "locus": "657d"
+        }
+      }
     ]
-   },
-   {
-    "prompt": "Children obey their parents in all things.",
-    "answer": "οἱ παῖδες τοῖς γονεῦσιν ἐν πᾶσι πείθονται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "παῖδες",
-     "τοῖς",
-     "γονεῦσιν",
-     "ἐν",
-     "πᾶσι",
-     "πείθονται"
-    ]
-   },
-   {
-    "prompt": "Whoever does these things, whether man or woman, will pay the penalty.",
-    "answer": "ὅστις ἂν ταῦτα ποιῇ, εἴτε ἀνὴρ εἴτε γυνή, δίκην δώσει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὅστις",
-     "ἂν",
-     "ταῦτα",
-     "ποιῇ",
-     "εἴτε",
-     "ἀνὴρ",
-     "γυνή",
-     "δίκην",
-     "δώσει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t4",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "This shameless creature said these things when he had come out.",
-    "answer": "ταῦτα ἔλεγεν ἡ ἀναιδὴς αὕτη κεφαλή, ἐξεληλυθώς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ταῦτα",
-     "ἔλεγεν",
-     "ἡ",
-     "ἀναιδὴς",
-     "αὕτη",
-     "κεφαλή",
-     "ἐξεληλυθώς"
-    ]
-   },
-   {
-    "prompt": "The might of Heracles, gazing at the enemy, felt no fear.",
-    "answer": "ἡ Ἡρακλέους βία πρὸς τοὺς πολεμίους ἰδὼν οὐδὲν ἐφοβήθη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "Ἡρακλέους",
-     "βία",
-     "πρὸς",
-     "τοὺς",
-     "πολεμίους",
-     "ἰδὼν",
-     "οὐδὲν",
-     "ἐφοβήθη"
-    ]
-   },
-   {
-    "prompt": "We elders, delighting in the play of the young, kept quiet.",
-    "answer": "τὸ τῶν πρεσβυτέρων ἡμῶν χαίροντες τῇ τῶν νέων παιδιᾷ ἡσυχίαν εἴχομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "τῶν",
-     "πρεσβυτέρων",
-     "ἡμῶν",
-     "χαίροντες",
-     "τῇ",
-     "νέων",
-     "παιδιᾷ",
-     "ἡσυχίαν",
-     "εἴχομεν"
-    ]
-   },
-   {
-    "prompt": "The strength of Ajax, holding his ground, drove back the enemy.",
-    "answer": "ἡ τοῦ Αἴαντος ἰσχὺς κατὰ χώραν μένων τοὺς πολεμίους ἀπεώσατο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "τοῦ",
-     "Αἴαντος",
-     "ἰσχὺς",
-     "κατὰ",
-     "χώραν",
-     "μένων",
-     "τοὺς",
-     "πολεμίους",
-     "ἀπεώσατο"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t5",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "The child whom you saw, being noble, will become a good citizen.",
-    "answer": "τὸ παιδίον ὃν εἶδες, γενναῖος ὤν, ἀγαθὸς πολίτης γενήσεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "παιδίον",
-     "ὃν",
-     "εἶδες",
-     "γενναῖος",
-     "ὤν",
-     "ἀγαθὸς",
-     "πολίτης",
-     "γενήσεται"
-    ]
-   },
-   {
-    "prompt": "The youth, whom all praise, has now become a general.",
-    "answer": "τὸ μειράκιον, ὃν πάντες ἐπαινοῦσι, νῦν στρατηγὸς γέγονεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "μειράκιον",
-     "ὃν",
-     "πάντες",
-     "ἐπαινοῦσι",
-     "νῦν",
-     "στρατηγὸς",
-     "γέγονεν"
-    ]
-   },
-   {
-    "prompt": "That slave-woman, whom no one trusts, betrayed the city.",
-    "answer": "τοῦτο τὸ ἀνδράποδον, ᾗ οὐδεὶς πιστεύει, τὴν πόλιν προέδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῦτο",
-     "τὸ",
-     "ἀνδράποδον",
-     "ᾗ",
-     "οὐδεὶς",
-     "πιστεύει",
-     "τὴν",
-     "πόλιν",
-     "προέδωκεν"
-    ]
-   },
-   {
-    "prompt": "The children, being present, saw everything that happened.",
-    "answer": "τὰ παιδία παρόντες πάντα τὰ γενόμενα εἶδον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "παιδία",
-     "παρόντες",
-     "πάντα",
-     "γενόμενα",
-     "εἶδον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t6",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "The youths, having armed themselves, marched against the tyrant.",
-    "answer": "τὰ μειράκια ὁπλισάμενοι ἐπὶ τὸν τύραννον ἐστράτευσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "μειράκια",
-     "ὁπλισάμενοι",
-     "ἐπὶ",
-     "τὸν",
-     "τύραννον",
-     "ἐστράτευσαν"
-    ]
-   },
-   {
-    "prompt": "The dear child, seated beside his father, listened to the poet.",
-    "answer": "τὸ φίλον τέκνον παρὰ τῷ πατρὶ καθήμενος τοῦ ποιητοῦ ἤκουεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "φίλον",
-     "τέκνον",
-     "παρὰ",
-     "τῷ",
-     "πατρὶ",
-     "καθήμενος",
-     "τοῦ",
-     "ποιητοῦ",
-     "ἤκουεν"
-    ]
-   },
-   {
-    "prompt": "The slave, running quickly, announced the victory to the master.",
-    "answer": "τὸ ἀνδράποδον ταχέως τρέχων τῷ δεσπότῃ τὴν νίκην ἤγγειλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "ἀνδράποδον",
-     "ταχέως",
-     "τρέχων",
-     "τῷ",
-     "δεσπότῃ",
-     "τὴν",
-     "νίκην",
-     "ἤγγειλεν"
-    ]
-   },
-   {
-    "prompt": "The little child, being present, was chosen priestess of the goddess.",
-    "answer": "τὸ παιδίον παροῦσα ἱέρεια τῆς θεοῦ ᾑρέθη.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "παιδίον",
-     "παροῦσα",
-     "ἱέρεια",
-     "τῆς",
-     "θεοῦ",
-     "ᾑρέθη"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t7",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "The youths, sitting in the marketplace, were conversing about virtue.",
-    "answer": "τὰ μειράκια, ἐν τῇ ἀγορᾷ καθήμενοι, περὶ ἀρετῆς διελέγοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "μειράκια",
-     "ἐν",
-     "τῇ",
-     "ἀγορᾷ",
-     "καθήμενοι",
-     "περὶ",
-     "ἀρετῆς",
-     "διελέγοντο"
-    ]
-   },
-   {
-    "prompt": "The little child, though weak, bravely endured the toils.",
-    "answer": "τὸ παιδίον, καίπερ ἀσθενὴς ὤν, τοὺς πόνους ἀνδρείως ἤνεγκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "παιδίον",
-     "καίπερ",
-     "ἀσθενὴς",
-     "ὤν",
-     "τοὺς",
-     "πόνους",
-     "ἀνδρείως",
-     "ἤνεγκεν"
-    ]
-   },
-   {
-    "prompt": "This wicked creature, plotting against his fatherland, betrayed the citizens.",
-    "answer": "ἡ πονηρὰ αὕτη κεφαλή, ἐπιβουλεύσας τῇ πατρίδι, τοὺς πολίτας προέδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "πονηρὰ",
-     "αὕτη",
-     "κεφαλή",
-     "ἐπιβουλεύσας",
-     "τῇ",
-     "πατρίδι",
-     "τοὺς",
-     "πολίτας",
-     "προέδωκεν"
-    ]
-   },
-   {
-    "prompt": "Whichever of the two is wiser, whether the man or the woman, let that one rule the household.",
-    "answer": "ὁπότερος ἂν ᾖ σοφώτερος, εἴτε ὁ ἀνὴρ εἴτε ἡ γυνή, τῆς οἰκίας ἀρχέτω.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁπότερος",
-     "ἂν",
-     "ᾖ",
-     "σοφώτερος",
-     "εἴτε",
-     "ὁ",
-     "ἀνὴρ",
-     "ἡ",
-     "γυνή",
-     "τῆς",
-     "οἰκίας",
-     "ἀρχέτω"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t8",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "The parents, rejoicing at the victory, sacrificed to the gods.",
-    "answer": "οἱ γονεῖς, τῇ νίκῃ χαίροντες, τοῖς θεοῖς ἔθυσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "γονεῖς",
-     "τῇ",
-     "νίκῃ",
-     "χαίροντες",
-     "τοῖς",
-     "θεοῖς",
-     "ἔθυσαν"
-    ]
-   },
-   {
-    "prompt": "The children, having fled into the mountains, escaped the tyrant.",
-    "answer": "τὰ τέκνα, εἰς τὰ ὄρη φυγόντες, τὸν τύραννον ἐξέφυγον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "τέκνα",
-     "εἰς",
-     "ὄρη",
-     "φυγόντες",
-     "τὸν",
-     "τύραννον",
-     "ἐξέφυγον"
-    ]
-   },
-   {
-    "prompt": "The dearest child, greatly honored, rendered thanks to her mother.",
-    "answer": "τὸ φίλτατον τέκνον, μεγάλως τιμηθεῖσα, τῇ μητρὶ χάριν ἀπέδωκεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "φίλτατον",
-     "τέκνον",
-     "μεγάλως",
-     "τιμηθεῖσα",
-     "τῇ",
-     "μητρὶ",
-     "χάριν",
-     "ἀπέδωκεν"
-    ]
-   },
-   {
-    "prompt": "The crowd, being angry, rushed toward the gates.",
-    "answer": "τὸ πλῆθος, ὀργιζόμενοι, πρὸς τὰς πύλας ὥρμησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "πλῆθος",
-     "ὀργιζόμενοι",
-     "πρὸς",
-     "τὰς",
-     "πύλας",
-     "ὥρμησαν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-t9",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "The slaves, having been freed, were grateful to their master.",
-    "answer": "τὰ ἀνδράποδα, ἐλευθερωθέντες, τῷ δεσπότῃ χάριν εἶχον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "ἀνδράποδα",
-     "ἐλευθερωθέντες",
-     "τῷ",
-     "δεσπότῃ",
-     "χάριν",
-     "εἶχον"
-    ]
-   },
-   {
-    "prompt": "This trustworthy fellow, having become a witness, saved his friend.",
-    "answer": "ἡ πιστὴ αὕτη κεφαλή, μάρτυς γενόμενος, τὸν φίλον ἔσωσεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "πιστὴ",
-     "αὕτη",
-     "κεφαλή",
-     "μάρτυς",
-     "γενόμενος",
-     "τὸν",
-     "φίλον",
-     "ἔσωσεν"
-    ]
-   },
-   {
-    "prompt": "Whoever wishes, whether citizen or foreigner, let that one speak in the assembly.",
-    "answer": "ὁ βουλόμενος, εἴτε πολίτης εἴτε ξένος, ἐν τῇ ἐκκλησίᾳ λεγέτω.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "βουλόμενος",
-     "εἴτε",
-     "πολίτης",
-     "ξένος",
-     "ἐν",
-     "τῇ",
-     "ἐκκλησίᾳ",
-     "λεγέτω"
-    ]
-   },
-   {
-    "prompt": "The children, though small, faithfully guarded the wall.",
-    "answer": "τὰ παιδία, καίπερ σμικροὶ ὄντες, τὸ τεῖχος πιστῶς ἐφύλαττον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "παιδία",
-     "καίπερ",
-     "σμικροὶ",
-     "ὄντες",
-     "τὸ",
-     "τεῖχος",
-     "πιστῶς",
-     "ἐφύλαττον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1013-peculiarities-in-the-use-of-gender-q1",
-  "sectionId": "sm-1013-peculiarities-in-the-use-of-gender",
-  "questions": [
-   {
-    "prompt": "The youths conversing with one another.",
-    "answer": "τὰ μειράκια πρὸς ἀλλήλους διαλεγόμενοι",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "μειράκια",
-     "πρὸς",
-     "ἀλλήλους",
-     "διαλεγόμενοι"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Laches",
-     "locus": "180e"
-    }
-   },
-   {
-    "prompt": "This shameless fellow spoke thus when he came out.",
-    "answer": "ταῦτ᾽ ἔλεγεν ἡ ἀναιδὴς αὕτη κεφαλή, ἐξεληλυθώς",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ταῦτ",
-     "ἔλεγεν",
-     "ἡ",
-     "ἀναιδὴς",
-     "αὕτη",
-     "κεφαλή",
-     "ἐξεληλυθώς"
-    ],
-    "source": {
-     "author": "Demosthenes",
-     "work": "Orations",
-     "locus": "21.117"
-    }
-   },
-   {
-    "prompt": "We the elders delighting in their sport.",
-    "answer": "τὸ δὲ τῶν πρεσβυτέρων ἡμῶν . . . χαίροντες τῇ ἐκείνων παιδιᾷ",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὸ",
-     "δὲ",
-     "τῶν",
-     "πρεσβυτέρων",
-     "ἡμῶν",
-     "χαίροντες",
-     "τῇ",
-     "ἐκείνων",
-     "παιδιᾷ"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Laws",
-     "locus": "657d"
-    }
-   }
-  ]
- }
+  }
 ]

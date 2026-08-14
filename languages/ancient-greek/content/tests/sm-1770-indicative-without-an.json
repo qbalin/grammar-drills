@@ -1,1493 +1,1493 @@
 [
- {
-  "id": "sm-1770-indicative-without-an-t1",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "You ought to be helping your friends now, but you are keeping quiet.",
-    "answer": "ἔδει σε νῦν τοῖς φίλοις βοηθεῖν, σὺ δὲ ἡσυχάζεις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔδει",
-     "σε",
-     "νῦν",
-     "τοῖς",
-     "φίλοις",
-     "βοηθεῖν",
-     "σύ",
-     "δέ",
-     "ἡσυχάζεις"
-    ]
-   },
-   {
-    "prompt": "We ought to have taken the pledges at that time.",
-    "answer": "ἔδει ἡμᾶς τότε τὰ ἐνέχυρα λαβεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔδει",
-     "ἡμᾶς",
-     "τότε",
-     "τά",
-     "ἐνέχυρα",
-     "λαβεῖν"
-    ]
-   },
-   {
-    "prompt": "You might have remained in the city, but you went away.",
-    "answer": "ἐξῆν σοι ἐν τῇ πόλει μένειν, σὺ δὲ ἀπῆλθες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐξῆν",
-     "σοι",
-     "ἐν",
-     "τῇ",
-     "πόλει",
-     "μένειν",
-     "σύ",
-     "δέ",
-     "ἀπῆλθες"
-    ]
-   },
-   {
-    "prompt": "It was fitting for the general to have saved the soldiers.",
-    "answer": "προσῆκε τῷ στρατηγῷ τοὺς στρατιώτας σῶσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "προσῆκε",
-     "τῷ",
-     "στρατηγῷ",
-     "τούς",
-     "στρατιώτας",
-     "σῶσαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t2",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "Would that I had then been present at the assembly.",
-    "answer": "εἴθε τότε τῇ ἐκκλησίᾳ παρεγενόμην.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "τότε",
-     "τῇ",
-     "ἐκκλησίᾳ",
-     "παρεγενόμην"
-    ]
-   },
-   {
-    "prompt": "Would that the citizens now had wiser minds.",
-    "answer": "εἴθε οἱ πολῖται νῦν σοφωτέρας φρένας εἶχον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "οἱ",
-     "πολῖται",
-     "νῦν",
-     "σοφωτέρας",
-     "φρένας",
-     "εἶχον"
-    ]
-   },
-   {
-    "prompt": "Would that we had never trusted the tyrant.",
-    "answer": "εἰ γὰρ μήποτε τῷ τυράννῳ ἐπιστεύσαμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "γάρ",
-     "μήποτε",
-     "τῷ",
-     "τυράννῳ",
-     "ἐπιστεύσαμεν"
-    ]
-   },
-   {
-    "prompt": "Would that you were not now suffering so many evils.",
-    "answer": "εἴθε μὴ τοσαῦτα κακὰ νῦν ἔπασχες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "μή",
-     "τοσαῦτα",
-     "κακά",
-     "νῦν",
-     "ἔπασχες"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t3",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "Would that Cyrus were still alive.",
-    "answer": "ὤφελε Κῦρος ἔτι ζῆν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὤφελε",
-     "Κῦρος",
-     "ἔτι",
-     "ζῆν"
-    ]
-   },
-   {
-    "prompt": "Would that I had never left my fatherland.",
-    "answer": "μήποτε ὤφελον τὴν πατρίδα λιπεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μήποτε",
-     "ὤφελον",
-     "τήν",
-     "πατρίδα",
-     "λιπεῖν"
-    ]
-   },
-   {
-    "prompt": "Would that the multitude were able to accomplish good things.",
-    "answer": "εἰ γὰρ ὤφελον οἱ πολλοὶ ἀγαθὰ ἐργάζεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "γάρ",
-     "ὤφελον",
-     "οἱ",
-     "πολλοί",
-     "ἀγαθά",
-     "ἐργάζεσθαι"
-    ]
-   },
-   {
-    "prompt": "Would that you had obeyed your teacher.",
-    "answer": "εἴθε τῷ διδασκάλῳ ὤφελες πιθέσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "τῷ",
-     "διδασκάλῳ",
-     "ὤφελες",
-     "πιθέσθαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t4",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "But perhaps it was Ctesippus who said this.",
-    "answer": "ἀλλὰ μὴ ὁ Κτήσιππος ἦν ὁ ταῦτα εἰπών.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλά",
-     "μή",
-     "ὁ",
-     "Κτήσιππος",
-     "ἦν",
-     "ταῦτα",
-     "εἰπών"
-    ]
-   },
-   {
-    "prompt": "But perhaps we did not agree well about these matters.",
-    "answer": "ἀλλὰ μὴ οὐ καλῶς περὶ τούτων ὡμολογήσαμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλά",
-     "μή",
-     "οὐ",
-     "καλῶς",
-     "περί",
-     "τούτων",
-     "ὡμολογήσαμεν"
-    ]
-   },
-   {
-    "prompt": "A little more and the enemy would have taken the acropolis.",
-    "answer": "ὀλίγου οἱ πολέμιοι τὴν ἀκρόπολιν εἷλον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὀλίγου",
-     "οἱ",
-     "πολέμιοι",
-     "τήν",
-     "ἀκρόπολιν",
-     "εἷλον"
-    ]
-   },
-   {
-    "prompt": "Because of the storm we were in danger of perishing in the mountains.",
-    "answer": "διὰ τὸν χειμῶνα ἐν τοῖς ὄρεσιν ἀπωλλύμεθα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "διά",
-     "τόν",
-     "χειμῶνα",
-     "ἐν",
-     "τοῖς",
-     "ὄρεσιν",
-     "ἀπωλλύμεθα"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t5",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "When will the general lead the army against the enemy?",
-    "answer": "πότε ὁ στρατηγὸς τὸ στράτευμα ἐπὶ τοὺς πολεμίους ἄξει;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πότε",
-     "ὁ",
-     "στρατηγός",
-     "τό",
-     "στράτευμα",
-     "ἐπί",
-     "τούς",
-     "πολεμίους",
-     "ἄξει"
-    ]
-   },
-   {
-    "prompt": "The messenger came at dawn, but he did not announce the victory.",
-    "answer": "ὁ ἄγγελος ἅμα τῇ ἕῳ ἦλθεν, τὴν δὲ νίκην οὐκ ἤγγειλεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἄγγελος",
-     "ἅμα",
-     "τῇ",
-     "ἕῳ",
-     "ἦλθεν",
-     "τήν",
-     "δέ",
-     "νίκην",
-     "οὐκ",
-     "ἤγγειλεν"
-    ]
-   },
-   {
-    "prompt": "Since he trusted the gods, how did he not honor them?",
-    "answer": "πιστεύων τοῖς θεοῖς πῶς οὐκ ἐτίμα αὐτούς;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πιστεύων",
-     "τοῖς",
-     "θεοῖς",
-     "πῶς",
-     "οὐκ",
-     "ἐτίμα",
-     "αὐτούς"
-    ]
-   },
-   {
-    "prompt": "Those who fled left their weapons behind on the plain.",
-    "answer": "οἱ φυγόντες τὰ ὅπλα ἐν τῷ πεδίῳ κατέλιπον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "φυγόντες",
-     "τά",
-     "ὅπλα",
-     "ἐν",
-     "τῷ",
-     "πεδίῳ",
-     "κατέλιπον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t6",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "You should not be silent, though you know the truth.",
-    "answer": "οὐκ ἐχρῆν σε σιγᾶν, καίπερ τὴν ἀλήθειαν εἰδότα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "ἐχρῆν",
-     "σε",
-     "σιγᾶν",
-     "καίπερ",
-     "τήν",
-     "ἀλήθειαν",
-     "εἰδότα"
-    ]
-   },
-   {
-    "prompt": "It would have been worth hearing the philosopher's speech.",
-    "answer": "ἄξιον ἦν τὸν τοῦ φιλοσόφου λόγον ἀκοῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄξιον",
-     "ἦν",
-     "τόν",
-     "τοῦ",
-     "φιλοσόφου",
-     "λόγον",
-     "ἀκοῦσαι"
-    ]
-   },
-   {
-    "prompt": "It was shameful to have betrayed the allies.",
-    "answer": "αἰσχρὸν ἦν τοὺς συμμάχους προδοῦναι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἰσχρόν",
-     "ἦν",
-     "τούς",
-     "συμμάχους",
-     "προδοῦναι"
-    ]
-   },
-   {
-    "prompt": "I would that I were not contending in this court.",
-    "answer": "ἐβουλόμην μὲν οὐκ ἐν τῷδε τῷ δικαστηρίῳ ἀγωνίζεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐβουλόμην",
-     "μέν",
-     "οὐκ",
-     "ἐν",
-     "τῷδε",
-     "τῷ",
-     "δικαστηρίῳ",
-     "ἀγωνίζεσθαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t7",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "You ought to be honoring the gods, but you neglect them.",
-    "answer": "ἔδει σε τοὺς θεοὺς τιμᾶν, σὺ δὲ αὐτῶν ἀμελεῖς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔδει",
-     "σε",
-     "τοὺς",
-     "θεοὺς",
-     "τιμᾶν",
-     "σὺ",
-     "δὲ",
-     "αὐτῶν",
-     "ἀμελεῖς"
-    ]
-   },
-   {
-    "prompt": "Since they betrayed the city, these men ought not to be alive.",
-    "answer": "προδόντας τὴν πόλιν τούσδε οὐκ ἔδει ζῆν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "προδόντας",
-     "τὴν",
-     "πόλιν",
-     "τούσδε",
-     "οὐκ",
-     "ἔδει",
-     "ζῆν"
-    ]
-   },
-   {
-    "prompt": "Why are you weeping? You should not be lamenting now.",
-    "answer": "τί δακρύεις; οὐκ ἐχρῆν σε νῦν ὀδύρεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τί",
-     "δακρύεις",
-     "οὐκ",
-     "ἐχρῆν",
-     "σε",
-     "νῦν",
-     "ὀδύρεσθαι"
-    ]
-   },
-   {
-    "prompt": "It would befit you to help the allies, but you sit idle.",
-    "answer": "προσῆκε σε τοῖς συμμάχοις βοηθεῖν, σὺ δὲ ἀργὸς κάθησαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "προσῆκε",
-     "σε",
-     "τοῖς",
-     "συμμάχοις",
-     "βοηθεῖν",
-     "σὺ",
-     "δὲ",
-     "ἀργὸς",
-     "κάθησαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t8",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "You ought to have taken the pledges then.",
-    "answer": "τὰ ἐνέχυρα τότε λαβεῖν σε ἔδει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "ἐνέχυρα",
-     "τότε",
-     "λαβεῖν",
-     "σε",
-     "ἔδει"
-    ]
-   },
-   {
-    "prompt": "You might have stayed in the city, but you fled.",
-    "answer": "ἐξῆν σοι ἐν τῇ πόλει μεῖναι, σὺ δὲ ἔφυγες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐξῆν",
-     "σοι",
-     "ἐν",
-     "τῇ",
-     "πόλει",
-     "μεῖναι",
-     "σὺ",
-     "δὲ",
-     "ἔφυγες"
-    ]
-   },
-   {
-    "prompt": "It would have been worth hearing his speech about virtue.",
-    "answer": "ἄξιον ἦν τὸν λόγον αὐτοῦ τὸν περὶ ἀρετῆς ἀκοῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄξιον",
-     "ἦν",
-     "τὸν",
-     "λόγον",
-     "αὐτοῦ",
-     "περὶ",
-     "ἀρετῆς",
-     "ἀκοῦσαι"
-    ]
-   },
-   {
-    "prompt": "He could have saved his comrades, but he abandoned them.",
-    "answer": "ἐνῆν αὐτῷ τοὺς ἑταίρους σῶσαι, ὁ δὲ αὐτοὺς κατέλιπεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐνῆν",
-     "αὐτῷ",
-     "τοὺς",
-     "ἑταίρους",
-     "σῶσαι",
-     "ὁ",
-     "δὲ",
-     "αὐτοὺς",
-     "κατέλιπεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t9",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "Would that you now had a better heart.",
-    "answer": "εἴθε βελτίους φρένας εἶχες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "βελτίους",
-     "φρένας",
-     "εἶχες"
-    ]
-   },
-   {
-    "prompt": "Would that we had never left our fatherland.",
-    "answer": "εἴθε μήποτε τὴν πατρίδα ἐλίπομεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "μήποτε",
-     "τὴν",
-     "πατρίδα",
-     "ἐλίπομεν"
-    ]
-   },
-   {
-    "prompt": "Would that the general had not led us into danger.",
-    "answer": "εἰ γὰρ μὴ ὁ στρατηγὸς ἡμᾶς εἰς κίνδυνον ἤγαγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "γὰρ",
-     "μὴ",
-     "ὁ",
-     "στρατηγὸς",
-     "ἡμᾶς",
-     "εἰς",
-     "κίνδυνον",
-     "ἤγαγεν"
-    ]
-   },
-   {
-    "prompt": "Would that the citizens were now wiser.",
-    "answer": "εἴθε οἱ πολῖται νῦν σοφώτεροι ἦσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "οἱ",
-     "πολῖται",
-     "νῦν",
-     "σοφώτεροι",
-     "ἦσαν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t10",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "Would that the tyrant were no longer ruling the city.",
-    "answer": "μὴ ὤφελεν ὁ τύραννος ἔτι τῆς πόλεως ἄρχειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μὴ",
-     "ὤφελεν",
-     "ὁ",
-     "τύραννος",
-     "ἔτι",
-     "τῆς",
-     "πόλεως",
-     "ἄρχειν"
-    ]
-   },
-   {
-    "prompt": "Would that I had never trusted the traitor.",
-    "answer": "μήποτε ὤφελον τῷ προδότῃ πιστεῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μήποτε",
-     "ὤφελον",
-     "τῷ",
-     "προδότῃ",
-     "πιστεῦσαι"
-    ]
-   },
-   {
-    "prompt": "Would that the multitude were able to do great things.",
-    "answer": "εἰ γὰρ ὤφελον οἱ πολλοὶ μεγάλα ἐργάζεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "γὰρ",
-     "ὤφελον",
-     "οἱ",
-     "πολλοὶ",
-     "μεγάλα",
-     "ἐργάζεσθαι"
-    ]
-   },
-   {
-    "prompt": "I would that I were not contending here in the assembly.",
-    "answer": "ἐβουλόμην μὲν ἐν τῇ ἐκκλησίᾳ μὴ ἐρίζειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐβουλόμην",
-     "μὲν",
-     "ἐν",
-     "τῇ",
-     "ἐκκλησίᾳ",
-     "μὴ",
-     "ἐρίζειν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t11",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "But perhaps we did not agree well about this.",
-    "answer": "ἀλλὰ μὴ τοῦτο οὐ καλῶς ὡμολογήσαμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλὰ",
-     "μὴ",
-     "τοῦτο",
-     "οὐ",
-     "καλῶς",
-     "ὡμολογήσαμεν"
-    ]
-   },
-   {
-    "prompt": "A little more and the enemy would have taken the city.",
-    "answer": "ὀλίγου οἱ πολέμιοι τὴν πόλιν εἷλον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὀλίγου",
-     "οἱ",
-     "πολέμιοι",
-     "τὴν",
-     "πόλιν",
-     "εἷλον"
-    ]
-   },
-   {
-    "prompt": "Since he honored the gods, how could he not believe they exist?",
-    "answer": "τιμῶν τοὺς θεοὺς πῶς οὐκ ἐνόμιζεν αὐτοὺς εἶναι;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τιμῶν",
-     "τοὺς",
-     "θεοὺς",
-     "πῶς",
-     "οὐκ",
-     "ἐνόμιζεν",
-     "αὐτοὺς",
-     "εἶναι"
-    ]
-   },
-   {
-    "prompt": "In the snow on the mountains we were on the point of perishing.",
-    "answer": "ἐν τῇ χιόνι ἐπὶ τῶν ὀρῶν ἀπωλλύμεθα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐν",
-     "τῇ",
-     "χιόνι",
-     "ἐπὶ",
-     "τῶν",
-     "ὀρῶν",
-     "ἀπωλλύμεθα"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t12",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "Suppose the enemies are already dead; what then will you do?",
-    "answer": "καὶ δὴ τεθνᾶσιν οἱ πολέμιοι· τί οὖν ποιήσεις;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "δὴ",
-     "τεθνᾶσιν",
-     "οἱ",
-     "πολέμιοι",
-     "τί",
-     "οὖν",
-     "ποιήσεις"
-    ]
-   },
-   {
-    "prompt": "The judges ought to have punished the wrongdoers, but they acquitted them.",
-    "answer": "τοὺς ἀδικοῦντας ἔδει τοὺς δικαστὰς κολάσαι, οἱ δὲ ἀπέλυσαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "ἀδικοῦντας",
-     "ἔδει",
-     "δικαστὰς",
-     "κολάσαι",
-     "οἱ",
-     "δὲ",
-     "ἀπέλυσαν"
-    ]
-   },
-   {
-    "prompt": "It was disgraceful to abandon the allies in the battle.",
-    "answer": "αἰσχρὸν ἦν τοὺς συμμάχους ἐν τῇ μάχῃ προλιπεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἰσχρὸν",
-     "ἦν",
-     "τοὺς",
-     "συμμάχους",
-     "ἐν",
-     "τῇ",
-     "μάχῃ",
-     "προλιπεῖν"
-    ]
-   },
-   {
-    "prompt": "It was possible for you to speak the truth, but you lied.",
-    "answer": "ἐξῆν σοι τὰ ἀληθῆ λέγειν, σὺ δὲ ἐψεύσω.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐξῆν",
-     "σοι",
-     "τὰ",
-     "ἀληθῆ",
-     "λέγειν",
-     "σὺ",
-     "δὲ",
-     "ἐψεύσω"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t13",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "You ought to be defending the city, but you flee.",
-    "answer": "ἔδει σε τῇ πόλει ἀμύνειν, σὺ δὲ φεύγεις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔδει",
-     "σε",
-     "τῇ",
-     "πόλει",
-     "ἀμύνειν",
-     "σὺ",
-     "δὲ",
-     "φεύγεις"
-    ]
-   },
-   {
-    "prompt": "The soldiers ought not to be plundering the temples now.",
-    "answer": "τοὺς στρατιώτας νῦν οὐκ ἐχρῆν τὰ ἱερὰ συλᾶν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "στρατιώτας",
-     "νῦν",
-     "οὐκ",
-     "ἐχρῆν",
-     "τὰ",
-     "ἱερὰ",
-     "συλᾶν"
-    ]
-   },
-   {
-    "prompt": "It is fitting that you honor your parents, yet you despise them.",
-    "answer": "προσῆκε σε τοὺς γονέας τιμᾶν, σὺ δὲ αὐτῶν καταφρονεῖς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "προσῆκε",
-     "σε",
-     "τοὺς",
-     "γονέας",
-     "τιμᾶν",
-     "σὺ",
-     "δὲ",
-     "αὐτῶν",
-     "καταφρονεῖς"
-    ]
-   },
-   {
-    "prompt": "It would have been worth hearing what the wise man says.",
-    "answer": "ἄξιον ἦν ἀκοῦσαι ἃ ὁ σοφὸς λέγει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄξιον",
-     "ἦν",
-     "ἀκοῦσαι",
-     "ἃ",
-     "ὁ",
-     "σοφὸς",
-     "λέγει"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t14",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "You might have remained in the camp, but you departed.",
-    "answer": "ἐξῆν σοι ἐν τῷ στρατοπέδῳ μένειν, σὺ δὲ ἀπῆλθες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐξῆν",
-     "σοι",
-     "ἐν",
-     "τῷ",
-     "στρατοπέδῳ",
-     "μένειν",
-     "σὺ",
-     "δὲ",
-     "ἀπῆλθες"
-    ]
-   },
-   {
-    "prompt": "It was right for the judges to acquit the guiltless man.",
-    "answer": "δίκαιον ἦν τοὺς δικαστὰς τὸν ἀναίτιον ἀπολῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "δίκαιον",
-     "ἦν",
-     "τοὺς",
-     "δικαστὰς",
-     "τὸν",
-     "ἀναίτιον",
-     "ἀπολῦσαι"
-    ]
-   },
-   {
-    "prompt": "It would have been shameful to abandon the allies in such dangers.",
-    "answer": "αἰσχρὸν ἦν τοὺς συμμάχους ἐν τοιούτοις κινδύνοις καταλιπεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αἰσχρὸν",
-     "ἦν",
-     "τοὺς",
-     "συμμάχους",
-     "ἐν",
-     "τοιούτοις",
-     "κινδύνοις",
-     "καταλιπεῖν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t15",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "Would that we had never crossed that river.",
-    "answer": "εἴθε μήποτε τὸν ποταμὸν ἐκεῖνον διέβημεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "μήποτε",
-     "τὸν",
-     "ποταμὸν",
-     "ἐκεῖνον",
-     "διέβημεν"
-    ]
-   },
-   {
-    "prompt": "Would that the citizens now trusted their generals.",
-    "answer": "εἰ γὰρ οἱ πολῖται νῦν τοῖς στρατηγοῖς ἐπίστευον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "γὰρ",
-     "οἱ",
-     "πολῖται",
-     "νῦν",
-     "τοῖς",
-     "στρατηγοῖς",
-     "ἐπίστευον"
-    ]
-   },
-   {
-    "prompt": "Would that I had learned wisdom in my youth.",
-    "answer": "εἴθε ἐν τῇ νεότητι τὴν σοφίαν ἔμαθον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "ἐν",
-     "τῇ",
-     "νεότητι",
-     "τὴν",
-     "σοφίαν",
-     "ἔμαθον"
-    ]
-   },
-   {
-    "prompt": "Would that the ships had not been destroyed in the storm.",
-    "answer": "εἴθε μὴ αἱ νῆες ἐν τῷ χειμῶνι διεφθάρησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "μὴ",
-     "αἱ",
-     "νῆες",
-     "ἐν",
-     "τῷ",
-     "χειμῶνι",
-     "διεφθάρησαν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t16",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "Would that the king had never begun this war.",
-    "answer": "μήποτε ὁ βασιλεὺς ὤφελε τόνδε τὸν πόλεμον ἄρξασθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μήποτε",
-     "ὁ",
-     "βασιλεὺς",
-     "ὤφελε",
-     "τόνδε",
-     "τὸν",
-     "πόλεμον",
-     "ἄρξασθαι"
-    ]
-   },
-   {
-    "prompt": "Would that our fathers were still alive.",
-    "answer": "ὤφελον οἱ πατέρες ἡμῶν ἔτι ζῆν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὤφελον",
-     "οἱ",
-     "πατέρες",
-     "ἡμῶν",
-     "ἔτι",
-     "ζῆν"
-    ]
-   },
-   {
-    "prompt": "I wish I were not now dwelling among enemies.",
-    "answer": "ἐβουλόμην μὴ νῦν ἐν πολεμίοις οἰκεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐβουλόμην",
-     "μὴ",
-     "νῦν",
-     "ἐν",
-     "πολεμίοις",
-     "οἰκεῖν"
-    ]
-   },
-   {
-    "prompt": "Would that I had never trusted so faithless a man.",
-    "answer": "μήποτε ὤφελον ἀνδρὶ οὕτως ἀπίστῳ πιστεῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "μήποτε",
-     "ὤφελον",
-     "ἀνδρὶ",
-     "οὕτως",
-     "ἀπίστῳ",
-     "πιστεῦσαι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t17",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "But perhaps the messenger was not telling the truth.",
-    "answer": "ἀλλὰ μὴ ὁ ἄγγελος οὐκ ἀληθῆ ἔλεγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλὰ",
-     "μὴ",
-     "ὁ",
-     "ἄγγελος",
-     "οὐκ",
-     "ἀληθῆ",
-     "ἔλεγεν"
-    ]
-   },
-   {
-    "prompt": "But I suspect it was the priest who betrayed the city.",
-    "answer": "ἀλλὰ μὴ ὁ ἱερεὺς ἦν ὁ τὴν πόλιν προδούς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλὰ",
-     "μὴ",
-     "ὁ",
-     "ἱερεὺς",
-     "ἦν",
-     "τὴν",
-     "πόλιν",
-     "προδούς"
-    ]
-   },
-   {
-    "prompt": "When will the ambassadors return from Sparta?",
-    "answer": "πότε οἱ πρέσβεις ἐκ τῆς Σπάρτης ὑποστρέψουσιν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πότε",
-     "οἱ",
-     "πρέσβεις",
-     "ἐκ",
-     "τῆς",
-     "Σπάρτης",
-     "ὑποστρέψουσιν"
-    ]
-   },
-   {
-    "prompt": "Why do you despise those wiser than yourself?",
-    "answer": "διὰ τί τῶν σεαυτοῦ σοφωτέρων καταφρονεῖς;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "διὰ",
-     "τί",
-     "τῶν",
-     "σεαυτοῦ",
-     "σοφωτέρων",
-     "καταφρονεῖς"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t18",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "A little more and the enemies would have taken the citadel.",
-    "answer": "ὀλίγου οἱ πολέμιοι τὴν ἀκρόπολιν εἷλον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὀλίγου",
-     "οἱ",
-     "πολέμιοι",
-     "τὴν",
-     "ἀκρόπολιν",
-     "εἷλον"
-    ]
-   },
-   {
-    "prompt": "Wandering in the desert, we were in danger of perishing.",
-    "answer": "ἐν τῇ ἐρήμῳ πλανώμενοι ἀπωλλύμεθα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐν",
-     "τῇ",
-     "ἐρήμῳ",
-     "πλανώμενοι",
-     "ἀπωλλύμεθα"
-    ]
-   },
-   {
-    "prompt": "And suppose the general is already dead; who will lead us?",
-    "answer": "καὶ δὴ τέθνηκεν ὁ στρατηγός· τίς ἡμᾶς ἄξει;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "δὴ",
-     "τέθνηκεν",
-     "ὁ",
-     "στρατηγός",
-     "τίς",
-     "ἡμᾶς",
-     "ἄξει"
-    ]
-   },
-   {
-    "prompt": "Since he trusted the oracle, how could he not obey the god?",
-    "answer": "τῷ χρησμῷ πιστεύων πῶς οὐκ ἐπείθετο τῷ θεῷ;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῷ",
-     "χρησμῷ",
-     "πιστεύων",
-     "πῶς",
-     "οὐκ",
-     "ἐπείθετο",
-     "θεῷ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t19",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "You ought to be guarding the walls, but you are sleeping.",
-    "answer": "ἔδει σε τὰ τείχη φυλάττειν, νῦν δὲ καθεύδεις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔδει",
-     "σε",
-     "τὰ",
-     "τείχη",
-     "φυλάττειν",
-     "νῦν",
-     "δὲ",
-     "καθεύδεις"
-    ]
-   },
-   {
-    "prompt": "It would be fitting for the young men to obey the elders.",
-    "answer": "προσῆκε τοὺς νεανίσκους τοῖς πρεσβυτέροις πείθεσθαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "προσῆκε",
-     "τοὺς",
-     "νεανίσκους",
-     "τοῖς",
-     "πρεσβυτέροις",
-     "πείθεσθαι"
-    ]
-   },
-   {
-    "prompt": "It was reasonable for you not to fear the danger, as you now do.",
-    "answer": "εἰκὸς ἦν σε μὴ φοβεῖσθαι τὸν κίνδυνον, ὥσπερ νῦν φοβῇ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰκὸς",
-     "ἦν",
-     "σε",
-     "μὴ",
-     "φοβεῖσθαι",
-     "τὸν",
-     "κίνδυνον",
-     "ὥσπερ",
-     "νῦν",
-     "φοβῇ"
-    ]
-   },
-   {
-    "prompt": "The citizens ought to be honoring those who died for their country.",
-    "answer": "χρῆν τοὺς πολίτας τιμᾶν τοὺς ὑπὲρ τῆς πατρίδος ἀποθανόντας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "χρῆν",
-     "τοὺς",
-     "πολίτας",
-     "τιμᾶν",
-     "ὑπὲρ",
-     "τῆς",
-     "πατρίδος",
-     "ἀποθανόντας"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t20",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "You might have saved the prisoners, but you abandoned them.",
-    "answer": "ἐξῆν σοι τοὺς αἰχμαλώτους σῶσαι, σὺ δὲ αὐτοὺς κατέλιπες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐξῆν",
-     "σοι",
-     "τοὺς",
-     "αἰχμαλώτους",
-     "σῶσαι",
-     "σὺ",
-     "δὲ",
-     "αὐτοὺς",
-     "κατέλιπες"
-    ]
-   },
-   {
-    "prompt": "The general ought to have led the soldiers out of the ravine.",
-    "answer": "ἔδει τὸν στρατηγὸν τοὺς στρατιώτας ἐκ τῆς χαράδρας ἐξαγαγεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔδει",
-     "τὸν",
-     "στρατηγὸν",
-     "τοὺς",
-     "στρατιώτας",
-     "ἐκ",
-     "τῆς",
-     "χαράδρας",
-     "ἐξαγαγεῖν"
-    ]
-   },
-   {
-    "prompt": "It would have been worth hearing the sophist.",
-    "answer": "ἄξιον ἦν τοῦ σοφιστοῦ ἀκοῦσαι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄξιον",
-     "ἦν",
-     "τοῦ",
-     "σοφιστοῦ",
-     "ἀκοῦσαι"
-    ]
-   },
-   {
-    "prompt": "It was possible for us to flee, but we chose to fight.",
-    "answer": "ἐξῆν ἡμῖν φυγεῖν, ἡμεῖς δὲ μάχεσθαι εἱλόμεθα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐξῆν",
-     "ἡμῖν",
-     "φυγεῖν",
-     "ἡμεῖς",
-     "δὲ",
-     "μάχεσθαι",
-     "εἱλόμεθα"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t21",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "Would that the allies were fighting more bravely!",
-    "answer": "εἴθε οἱ σύμμαχοι ἀνδρειότερον ἐμάχοντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "οἱ",
-     "σύμμαχοι",
-     "ἀνδρειότερον",
-     "ἐμάχοντο"
-    ]
-   },
-   {
-    "prompt": "Would that we had heard the shout of the guards in time!",
-    "answer": "εἰ γὰρ ἐν καιρῷ τῆς τῶν φυλάκων κραυγῆς ἠκούσαμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰ",
-     "γὰρ",
-     "ἐν",
-     "καιρῷ",
-     "τῆς",
-     "τῶν",
-     "φυλάκων",
-     "κραυγῆς",
-     "ἠκούσαμεν"
-    ]
-   },
-   {
-    "prompt": "Would that the mother had not sent her son into so great a danger!",
-    "answer": "εἴθε ἡ μήτηρ τὸν υἱὸν μὴ εἰς τοσοῦτον κίνδυνον ἔπεμψεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "ἡ",
-     "μήτηρ",
-     "τὸν",
-     "υἱὸν",
-     "μὴ",
-     "εἰς",
-     "τοσοῦτον",
-     "κίνδυνον",
-     "ἔπεμψεν"
-    ]
-   },
-   {
-    "prompt": "Would that I now had the wisdom of the ancients!",
-    "answer": "εἴθε τὴν τῶν παλαιῶν σοφίαν νῦν εἶχον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἴθε",
-     "τὴν",
-     "τῶν",
-     "παλαιῶν",
-     "σοφίαν",
-     "νῦν",
-     "εἶχον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t22",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "But perhaps the strangers have not spoken the truth.",
-    "answer": "ἀλλὰ μὴ οἱ ξένοι οὐκ ἀληθῆ εἰρήκασιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλὰ",
-     "μὴ",
-     "οἱ",
-     "ξένοι",
-     "οὐκ",
-     "ἀληθῆ",
-     "εἰρήκασιν"
-    ]
-   },
-   {
-    "prompt": "But I suspect after all it was the general who betrayed the city.",
-    "answer": "ἀλλὰ ἄρα μὴ ὁ στρατηγὸς ἦν ὁ τὴν πόλιν προδούς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλὰ",
-     "ἄρα",
-     "μὴ",
-     "ὁ",
-     "στρατηγὸς",
-     "ἦν",
-     "τὴν",
-     "πόλιν",
-     "προδούς"
-    ]
-   },
-   {
-    "prompt": "But perhaps we did not judge these matters rightly.",
-    "answer": "ἀλλὰ μὴ ταῦτα οὐκ ὀρθῶς ἐκρίναμεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλὰ",
-     "μὴ",
-     "ταῦτα",
-     "οὐκ",
-     "ὀρθῶς",
-     "ἐκρίναμεν"
-    ]
-   },
-   {
-    "prompt": "But I suspect it was the girl who heard the noise first.",
-    "answer": "ἀλλὰ ἄρα μὴ ἡ παῖς πρώτη τὸν ψόφον ἤκουσεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλὰ",
-     "ἄρα",
-     "μὴ",
-     "ἡ",
-     "παῖς",
-     "πρώτη",
-     "τὸν",
-     "ψόφον",
-     "ἤκουσεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-t23",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "A little more and the ship would have sunk into the sea.",
-    "answer": "ὀλίγου ἡ ναῦς εἰς τὴν θάλατταν κατέδυ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὀλίγου",
-     "ἡ",
-     "ναῦς",
-     "εἰς",
-     "τὴν",
-     "θάλατταν",
-     "κατέδυ"
-    ]
-   },
-   {
-    "prompt": "We were in danger of perishing on the mountain.",
-    "answer": "ἐν τῷ ὄρει ἀπωλλύμεθα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐν",
-     "τῷ",
-     "ὄρει",
-     "ἀπωλλύμεθα"
-    ]
-   },
-   {
-    "prompt": "I would that I were not now waging war against my kinsmen.",
-    "answer": "ἐβουλόμην μὲν τοῖς συγγενέσι μὴ νῦν πολεμεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐβουλόμην",
-     "μὲν",
-     "τοῖς",
-     "συγγενέσι",
-     "μὴ",
-     "νῦν",
-     "πολεμεῖν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-1770-indicative-without-an-q1",
-  "sectionId": "sm-1770-indicative-without-an",
-  "questions": [
-   {
-    "prompt": "But perhaps we did not do well in agreeing to this.",
-    "answer": "ἀλλὰ μὴ τοῦτο οὐ καλῶς ὡμολογήσαμεν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀλλὰ",
-     "μὴ",
-     "τοῦτο",
-     "οὐ",
-     "καλῶς",
-     "ὡμολογήσαμεν"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Meno",
-     "locus": "89c"
-    }
-   },
-   {
-    "prompt": "A little more and they would have taken the city.",
-    "answer": "ὀλίγου εἷλον τὴν πόλιν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὀλίγου",
-     "εἷλον",
-     "τὴν",
-     "πόλιν"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "8.35"
-    }
-   },
-   {
-    "prompt": "You should not be slack in your alliance, as you are at present.",
-    "answer": "εἰκὸς ἦν ὑμᾶς . . . μὴ μαλακῶς, ὥσπερ νῦν, ξυμμαχεῖν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "εἰκὸς",
-     "ἦν",
-     "ὑμᾶς",
-     "μὴ",
-     "μαλακῶς",
-     "ὥσπερ",
-     "νῦν",
-     "ξυμμαχεῖν"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "6.78"
-    }
-   },
-   {
-    "prompt": "I ought to have taken the pledges then.",
-    "answer": "ἔδει τὰ ἐνέχυρα τότε λαβεῖν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἔδει",
-     "τὰ",
-     "ἐνέχυρα",
-     "τότε",
-     "λαβεῖν"
-    ],
-    "source": {
-     "author": "Xenophon",
-     "work": "Anabasis",
-     "locus": "7.6.23"
-    }
-   }
-  ]
- }
+  {
+    "id": "sm-1770-indicative-without-an-t1",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "You ought to be helping your friends now, but you are keeping quiet.",
+        "answer": "ἔδει σε νῦν τοῖς φίλοις βοηθεῖν, σὺ δὲ ἡσυχάζεις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔδει",
+          "σε",
+          "νῦν",
+          "τοῖς",
+          "φίλοις",
+          "βοηθεῖν",
+          "σύ",
+          "δέ",
+          "ἡσυχάζεις"
+        ]
+      },
+      {
+        "prompt": "We ought to have taken the pledges at that time.",
+        "answer": "ἔδει ἡμᾶς τότε τὰ ἐνέχυρα λαβεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔδει",
+          "ἡμᾶς",
+          "τότε",
+          "τά",
+          "ἐνέχυρα",
+          "λαβεῖν"
+        ]
+      },
+      {
+        "prompt": "You might have remained in the city, but you went away.",
+        "answer": "ἐξῆν σοι ἐν τῇ πόλει μένειν, σὺ δὲ ἀπῆλθες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐξῆν",
+          "σοι",
+          "ἐν",
+          "τῇ",
+          "πόλει",
+          "μένειν",
+          "σύ",
+          "δέ",
+          "ἀπῆλθες"
+        ]
+      },
+      {
+        "prompt": "It was fitting for the general to have saved the soldiers.",
+        "answer": "προσῆκε τῷ στρατηγῷ τοὺς στρατιώτας σῶσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "προσῆκε",
+          "τῷ",
+          "στρατηγῷ",
+          "τούς",
+          "στρατιώτας",
+          "σῶσαι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t2",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "Would that I had then been present at the assembly.",
+        "answer": "εἴθε τότε τῇ ἐκκλησίᾳ παρεγενόμην.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "τότε",
+          "τῇ",
+          "ἐκκλησίᾳ",
+          "παρεγενόμην"
+        ]
+      },
+      {
+        "prompt": "Would that the citizens now had wiser minds.",
+        "answer": "εἴθε οἱ πολῖται νῦν σοφωτέρας φρένας εἶχον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "οἱ",
+          "πολῖται",
+          "νῦν",
+          "σοφωτέρας",
+          "φρένας",
+          "εἶχον"
+        ]
+      },
+      {
+        "prompt": "Would that we had never trusted the tyrant.",
+        "answer": "εἰ γὰρ μήποτε τῷ τυράννῳ ἐπιστεύσαμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "γάρ",
+          "μήποτε",
+          "τῷ",
+          "τυράννῳ",
+          "ἐπιστεύσαμεν"
+        ]
+      },
+      {
+        "prompt": "Would that you were not now suffering so many evils.",
+        "answer": "εἴθε μὴ τοσαῦτα κακὰ νῦν ἔπασχες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "μή",
+          "τοσαῦτα",
+          "κακά",
+          "νῦν",
+          "ἔπασχες"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t3",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "Would that Cyrus were still alive.",
+        "answer": "ὤφελε Κῦρος ἔτι ζῆν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὤφελε",
+          "Κῦρος",
+          "ἔτι",
+          "ζῆν"
+        ]
+      },
+      {
+        "prompt": "Would that I had never left my fatherland.",
+        "answer": "μήποτε ὤφελον τὴν πατρίδα λιπεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μήποτε",
+          "ὤφελον",
+          "τήν",
+          "πατρίδα",
+          "λιπεῖν"
+        ]
+      },
+      {
+        "prompt": "Would that the multitude were able to accomplish good things.",
+        "answer": "εἰ γὰρ ὤφελον οἱ πολλοὶ ἀγαθὰ ἐργάζεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "γάρ",
+          "ὤφελον",
+          "οἱ",
+          "πολλοί",
+          "ἀγαθά",
+          "ἐργάζεσθαι"
+        ]
+      },
+      {
+        "prompt": "Would that you had obeyed your teacher.",
+        "answer": "εἴθε τῷ διδασκάλῳ ὤφελες πιθέσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "τῷ",
+          "διδασκάλῳ",
+          "ὤφελες",
+          "πιθέσθαι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t4",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "But perhaps it was Ctesippus who said this.",
+        "answer": "ἀλλὰ μὴ ὁ Κτήσιππος ἦν ὁ ταῦτα εἰπών.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλά",
+          "μή",
+          "ὁ",
+          "Κτήσιππος",
+          "ἦν",
+          "ταῦτα",
+          "εἰπών"
+        ]
+      },
+      {
+        "prompt": "But perhaps we did not agree well about these matters.",
+        "answer": "ἀλλὰ μὴ οὐ καλῶς περὶ τούτων ὡμολογήσαμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλά",
+          "μή",
+          "οὐ",
+          "καλῶς",
+          "περί",
+          "τούτων",
+          "ὡμολογήσαμεν"
+        ]
+      },
+      {
+        "prompt": "A little more and the enemy would have taken the acropolis.",
+        "answer": "ὀλίγου οἱ πολέμιοι τὴν ἀκρόπολιν εἷλον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὀλίγου",
+          "οἱ",
+          "πολέμιοι",
+          "τήν",
+          "ἀκρόπολιν",
+          "εἷλον"
+        ]
+      },
+      {
+        "prompt": "Because of the storm we were in danger of perishing in the mountains.",
+        "answer": "διὰ τὸν χειμῶνα ἐν τοῖς ὄρεσιν ἀπωλλύμεθα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "διά",
+          "τόν",
+          "χειμῶνα",
+          "ἐν",
+          "τοῖς",
+          "ὄρεσιν",
+          "ἀπωλλύμεθα"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t5",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "When will the general lead the army against the enemy?",
+        "answer": "πότε ὁ στρατηγὸς τὸ στράτευμα ἐπὶ τοὺς πολεμίους ἄξει;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πότε",
+          "ὁ",
+          "στρατηγός",
+          "τό",
+          "στράτευμα",
+          "ἐπί",
+          "τούς",
+          "πολεμίους",
+          "ἄξει"
+        ]
+      },
+      {
+        "prompt": "The messenger came at dawn, but he did not announce the victory.",
+        "answer": "ὁ ἄγγελος ἅμα τῇ ἕῳ ἦλθεν, τὴν δὲ νίκην οὐκ ἤγγειλεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἄγγελος",
+          "ἅμα",
+          "τῇ",
+          "ἕῳ",
+          "ἦλθεν",
+          "τήν",
+          "δέ",
+          "νίκην",
+          "οὐκ",
+          "ἤγγειλεν"
+        ]
+      },
+      {
+        "prompt": "Since he trusted the gods, how did he not honor them?",
+        "answer": "πιστεύων τοῖς θεοῖς πῶς οὐκ ἐτίμα αὐτούς;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πιστεύων",
+          "τοῖς",
+          "θεοῖς",
+          "πῶς",
+          "οὐκ",
+          "ἐτίμα",
+          "αὐτούς"
+        ]
+      },
+      {
+        "prompt": "Those who fled left their weapons behind on the plain.",
+        "answer": "οἱ φυγόντες τὰ ὅπλα ἐν τῷ πεδίῳ κατέλιπον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "φυγόντες",
+          "τά",
+          "ὅπλα",
+          "ἐν",
+          "τῷ",
+          "πεδίῳ",
+          "κατέλιπον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t6",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "You should not be silent, though you know the truth.",
+        "answer": "οὐκ ἐχρῆν σε σιγᾶν, καίπερ τὴν ἀλήθειαν εἰδότα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "ἐχρῆν",
+          "σε",
+          "σιγᾶν",
+          "καίπερ",
+          "τήν",
+          "ἀλήθειαν",
+          "εἰδότα"
+        ]
+      },
+      {
+        "prompt": "It would have been worth hearing the philosopher's speech.",
+        "answer": "ἄξιον ἦν τὸν τοῦ φιλοσόφου λόγον ἀκοῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄξιον",
+          "ἦν",
+          "τόν",
+          "τοῦ",
+          "φιλοσόφου",
+          "λόγον",
+          "ἀκοῦσαι"
+        ]
+      },
+      {
+        "prompt": "It was shameful to have betrayed the allies.",
+        "answer": "αἰσχρὸν ἦν τοὺς συμμάχους προδοῦναι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἰσχρόν",
+          "ἦν",
+          "τούς",
+          "συμμάχους",
+          "προδοῦναι"
+        ]
+      },
+      {
+        "prompt": "I would that I were not contending in this court.",
+        "answer": "ἐβουλόμην μὲν οὐκ ἐν τῷδε τῷ δικαστηρίῳ ἀγωνίζεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐβουλόμην",
+          "μέν",
+          "οὐκ",
+          "ἐν",
+          "τῷδε",
+          "τῷ",
+          "δικαστηρίῳ",
+          "ἀγωνίζεσθαι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t7",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "You ought to be honoring the gods, but you neglect them.",
+        "answer": "ἔδει σε τοὺς θεοὺς τιμᾶν, σὺ δὲ αὐτῶν ἀμελεῖς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔδει",
+          "σε",
+          "τοὺς",
+          "θεοὺς",
+          "τιμᾶν",
+          "σὺ",
+          "δὲ",
+          "αὐτῶν",
+          "ἀμελεῖς"
+        ]
+      },
+      {
+        "prompt": "Since they betrayed the city, these men ought not to be alive.",
+        "answer": "προδόντας τὴν πόλιν τούσδε οὐκ ἔδει ζῆν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "προδόντας",
+          "τὴν",
+          "πόλιν",
+          "τούσδε",
+          "οὐκ",
+          "ἔδει",
+          "ζῆν"
+        ]
+      },
+      {
+        "prompt": "Why are you weeping? You should not be lamenting now.",
+        "answer": "τί δακρύεις; οὐκ ἐχρῆν σε νῦν ὀδύρεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τί",
+          "δακρύεις",
+          "οὐκ",
+          "ἐχρῆν",
+          "σε",
+          "νῦν",
+          "ὀδύρεσθαι"
+        ]
+      },
+      {
+        "prompt": "It would befit you to help the allies, but you sit idle.",
+        "answer": "προσῆκε σε τοῖς συμμάχοις βοηθεῖν, σὺ δὲ ἀργὸς κάθησαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "προσῆκε",
+          "σε",
+          "τοῖς",
+          "συμμάχοις",
+          "βοηθεῖν",
+          "σὺ",
+          "δὲ",
+          "ἀργὸς",
+          "κάθησαι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t8",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "You ought to have taken the pledges then.",
+        "answer": "τὰ ἐνέχυρα τότε λαβεῖν σε ἔδει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "ἐνέχυρα",
+          "τότε",
+          "λαβεῖν",
+          "σε",
+          "ἔδει"
+        ]
+      },
+      {
+        "prompt": "You might have stayed in the city, but you fled.",
+        "answer": "ἐξῆν σοι ἐν τῇ πόλει μεῖναι, σὺ δὲ ἔφυγες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐξῆν",
+          "σοι",
+          "ἐν",
+          "τῇ",
+          "πόλει",
+          "μεῖναι",
+          "σὺ",
+          "δὲ",
+          "ἔφυγες"
+        ]
+      },
+      {
+        "prompt": "It would have been worth hearing his speech about virtue.",
+        "answer": "ἄξιον ἦν τὸν λόγον αὐτοῦ τὸν περὶ ἀρετῆς ἀκοῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄξιον",
+          "ἦν",
+          "τὸν",
+          "λόγον",
+          "αὐτοῦ",
+          "περὶ",
+          "ἀρετῆς",
+          "ἀκοῦσαι"
+        ]
+      },
+      {
+        "prompt": "He could have saved his comrades, but he abandoned them.",
+        "answer": "ἐνῆν αὐτῷ τοὺς ἑταίρους σῶσαι, ὁ δὲ αὐτοὺς κατέλιπεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐνῆν",
+          "αὐτῷ",
+          "τοὺς",
+          "ἑταίρους",
+          "σῶσαι",
+          "ὁ",
+          "δὲ",
+          "αὐτοὺς",
+          "κατέλιπεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t9",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "Would that you now had a better heart.",
+        "answer": "εἴθε βελτίους φρένας εἶχες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "βελτίους",
+          "φρένας",
+          "εἶχες"
+        ]
+      },
+      {
+        "prompt": "Would that we had never left our fatherland.",
+        "answer": "εἴθε μήποτε τὴν πατρίδα ἐλίπομεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "μήποτε",
+          "τὴν",
+          "πατρίδα",
+          "ἐλίπομεν"
+        ]
+      },
+      {
+        "prompt": "Would that the general had not led us into danger.",
+        "answer": "εἰ γὰρ μὴ ὁ στρατηγὸς ἡμᾶς εἰς κίνδυνον ἤγαγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "γὰρ",
+          "μὴ",
+          "ὁ",
+          "στρατηγὸς",
+          "ἡμᾶς",
+          "εἰς",
+          "κίνδυνον",
+          "ἤγαγεν"
+        ]
+      },
+      {
+        "prompt": "Would that the citizens were now wiser.",
+        "answer": "εἴθε οἱ πολῖται νῦν σοφώτεροι ἦσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "οἱ",
+          "πολῖται",
+          "νῦν",
+          "σοφώτεροι",
+          "ἦσαν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t10",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "Would that the tyrant were no longer ruling the city.",
+        "answer": "μὴ ὤφελεν ὁ τύραννος ἔτι τῆς πόλεως ἄρχειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μὴ",
+          "ὤφελεν",
+          "ὁ",
+          "τύραννος",
+          "ἔτι",
+          "τῆς",
+          "πόλεως",
+          "ἄρχειν"
+        ]
+      },
+      {
+        "prompt": "Would that I had never trusted the traitor.",
+        "answer": "μήποτε ὤφελον τῷ προδότῃ πιστεῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μήποτε",
+          "ὤφελον",
+          "τῷ",
+          "προδότῃ",
+          "πιστεῦσαι"
+        ]
+      },
+      {
+        "prompt": "Would that the multitude were able to do great things.",
+        "answer": "εἰ γὰρ ὤφελον οἱ πολλοὶ μεγάλα ἐργάζεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "γὰρ",
+          "ὤφελον",
+          "οἱ",
+          "πολλοὶ",
+          "μεγάλα",
+          "ἐργάζεσθαι"
+        ]
+      },
+      {
+        "prompt": "I would that I were not contending here in the assembly.",
+        "answer": "ἐβουλόμην μὲν ἐν τῇ ἐκκλησίᾳ μὴ ἐρίζειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐβουλόμην",
+          "μὲν",
+          "ἐν",
+          "τῇ",
+          "ἐκκλησίᾳ",
+          "μὴ",
+          "ἐρίζειν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t11",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "But perhaps we did not agree well about this.",
+        "answer": "ἀλλὰ μὴ τοῦτο οὐ καλῶς ὡμολογήσαμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλὰ",
+          "μὴ",
+          "τοῦτο",
+          "οὐ",
+          "καλῶς",
+          "ὡμολογήσαμεν"
+        ]
+      },
+      {
+        "prompt": "A little more and the enemy would have taken the city.",
+        "answer": "ὀλίγου οἱ πολέμιοι τὴν πόλιν εἷλον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὀλίγου",
+          "οἱ",
+          "πολέμιοι",
+          "τὴν",
+          "πόλιν",
+          "εἷλον"
+        ]
+      },
+      {
+        "prompt": "Since he honored the gods, how could he not believe they exist?",
+        "answer": "τιμῶν τοὺς θεοὺς πῶς οὐκ ἐνόμιζεν αὐτοὺς εἶναι;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τιμῶν",
+          "τοὺς",
+          "θεοὺς",
+          "πῶς",
+          "οὐκ",
+          "ἐνόμιζεν",
+          "αὐτοὺς",
+          "εἶναι"
+        ]
+      },
+      {
+        "prompt": "In the snow on the mountains we were on the point of perishing.",
+        "answer": "ἐν τῇ χιόνι ἐπὶ τῶν ὀρῶν ἀπωλλύμεθα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐν",
+          "τῇ",
+          "χιόνι",
+          "ἐπὶ",
+          "τῶν",
+          "ὀρῶν",
+          "ἀπωλλύμεθα"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t12",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "Suppose the enemies are already dead; what then will you do?",
+        "answer": "καὶ δὴ τεθνᾶσιν οἱ πολέμιοι· τί οὖν ποιήσεις;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "δὴ",
+          "τεθνᾶσιν",
+          "οἱ",
+          "πολέμιοι",
+          "τί",
+          "οὖν",
+          "ποιήσεις"
+        ]
+      },
+      {
+        "prompt": "The judges ought to have punished the wrongdoers, but they acquitted them.",
+        "answer": "τοὺς ἀδικοῦντας ἔδει τοὺς δικαστὰς κολάσαι, οἱ δὲ ἀπέλυσαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "ἀδικοῦντας",
+          "ἔδει",
+          "δικαστὰς",
+          "κολάσαι",
+          "οἱ",
+          "δὲ",
+          "ἀπέλυσαν"
+        ]
+      },
+      {
+        "prompt": "It was disgraceful to abandon the allies in the battle.",
+        "answer": "αἰσχρὸν ἦν τοὺς συμμάχους ἐν τῇ μάχῃ προλιπεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἰσχρὸν",
+          "ἦν",
+          "τοὺς",
+          "συμμάχους",
+          "ἐν",
+          "τῇ",
+          "μάχῃ",
+          "προλιπεῖν"
+        ]
+      },
+      {
+        "prompt": "It was possible for you to speak the truth, but you lied.",
+        "answer": "ἐξῆν σοι τὰ ἀληθῆ λέγειν, σὺ δὲ ἐψεύσω.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐξῆν",
+          "σοι",
+          "τὰ",
+          "ἀληθῆ",
+          "λέγειν",
+          "σὺ",
+          "δὲ",
+          "ἐψεύσω"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t13",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "You ought to be defending the city, but you flee.",
+        "answer": "ἔδει σε τῇ πόλει ἀμύνειν, σὺ δὲ φεύγεις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔδει",
+          "σε",
+          "τῇ",
+          "πόλει",
+          "ἀμύνειν",
+          "σὺ",
+          "δὲ",
+          "φεύγεις"
+        ]
+      },
+      {
+        "prompt": "The soldiers ought not to be plundering the temples now.",
+        "answer": "τοὺς στρατιώτας νῦν οὐκ ἐχρῆν τὰ ἱερὰ συλᾶν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "στρατιώτας",
+          "νῦν",
+          "οὐκ",
+          "ἐχρῆν",
+          "τὰ",
+          "ἱερὰ",
+          "συλᾶν"
+        ]
+      },
+      {
+        "prompt": "It is fitting that you honor your parents, yet you despise them.",
+        "answer": "προσῆκε σε τοὺς γονέας τιμᾶν, σὺ δὲ αὐτῶν καταφρονεῖς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "προσῆκε",
+          "σε",
+          "τοὺς",
+          "γονέας",
+          "τιμᾶν",
+          "σὺ",
+          "δὲ",
+          "αὐτῶν",
+          "καταφρονεῖς"
+        ]
+      },
+      {
+        "prompt": "It would have been worth hearing what the wise man says.",
+        "answer": "ἄξιον ἦν ἀκοῦσαι ἃ ὁ σοφὸς λέγει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄξιον",
+          "ἦν",
+          "ἀκοῦσαι",
+          "ἃ",
+          "ὁ",
+          "σοφὸς",
+          "λέγει"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t14",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "You might have remained in the camp, but you departed.",
+        "answer": "ἐξῆν σοι ἐν τῷ στρατοπέδῳ μένειν, σὺ δὲ ἀπῆλθες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐξῆν",
+          "σοι",
+          "ἐν",
+          "τῷ",
+          "στρατοπέδῳ",
+          "μένειν",
+          "σὺ",
+          "δὲ",
+          "ἀπῆλθες"
+        ]
+      },
+      {
+        "prompt": "It was right for the judges to acquit the guiltless man.",
+        "answer": "δίκαιον ἦν τοὺς δικαστὰς τὸν ἀναίτιον ἀπολῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "δίκαιον",
+          "ἦν",
+          "τοὺς",
+          "δικαστὰς",
+          "τὸν",
+          "ἀναίτιον",
+          "ἀπολῦσαι"
+        ]
+      },
+      {
+        "prompt": "It would have been shameful to abandon the allies in such dangers.",
+        "answer": "αἰσχρὸν ἦν τοὺς συμμάχους ἐν τοιούτοις κινδύνοις καταλιπεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αἰσχρὸν",
+          "ἦν",
+          "τοὺς",
+          "συμμάχους",
+          "ἐν",
+          "τοιούτοις",
+          "κινδύνοις",
+          "καταλιπεῖν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t15",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "Would that we had never crossed that river.",
+        "answer": "εἴθε μήποτε τὸν ποταμὸν ἐκεῖνον διέβημεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "μήποτε",
+          "τὸν",
+          "ποταμὸν",
+          "ἐκεῖνον",
+          "διέβημεν"
+        ]
+      },
+      {
+        "prompt": "Would that the citizens now trusted their generals.",
+        "answer": "εἰ γὰρ οἱ πολῖται νῦν τοῖς στρατηγοῖς ἐπίστευον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "γὰρ",
+          "οἱ",
+          "πολῖται",
+          "νῦν",
+          "τοῖς",
+          "στρατηγοῖς",
+          "ἐπίστευον"
+        ]
+      },
+      {
+        "prompt": "Would that I had learned wisdom in my youth.",
+        "answer": "εἴθε ἐν τῇ νεότητι τὴν σοφίαν ἔμαθον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "ἐν",
+          "τῇ",
+          "νεότητι",
+          "τὴν",
+          "σοφίαν",
+          "ἔμαθον"
+        ]
+      },
+      {
+        "prompt": "Would that the ships had not been destroyed in the storm.",
+        "answer": "εἴθε μὴ αἱ νῆες ἐν τῷ χειμῶνι διεφθάρησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "μὴ",
+          "αἱ",
+          "νῆες",
+          "ἐν",
+          "τῷ",
+          "χειμῶνι",
+          "διεφθάρησαν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t16",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "Would that the king had never begun this war.",
+        "answer": "μήποτε ὁ βασιλεὺς ὤφελε τόνδε τὸν πόλεμον ἄρξασθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μήποτε",
+          "ὁ",
+          "βασιλεὺς",
+          "ὤφελε",
+          "τόνδε",
+          "τὸν",
+          "πόλεμον",
+          "ἄρξασθαι"
+        ]
+      },
+      {
+        "prompt": "Would that our fathers were still alive.",
+        "answer": "ὤφελον οἱ πατέρες ἡμῶν ἔτι ζῆν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὤφελον",
+          "οἱ",
+          "πατέρες",
+          "ἡμῶν",
+          "ἔτι",
+          "ζῆν"
+        ]
+      },
+      {
+        "prompt": "I wish I were not now dwelling among enemies.",
+        "answer": "ἐβουλόμην μὴ νῦν ἐν πολεμίοις οἰκεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐβουλόμην",
+          "μὴ",
+          "νῦν",
+          "ἐν",
+          "πολεμίοις",
+          "οἰκεῖν"
+        ]
+      },
+      {
+        "prompt": "Would that I had never trusted so faithless a man.",
+        "answer": "μήποτε ὤφελον ἀνδρὶ οὕτως ἀπίστῳ πιστεῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "μήποτε",
+          "ὤφελον",
+          "ἀνδρὶ",
+          "οὕτως",
+          "ἀπίστῳ",
+          "πιστεῦσαι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t17",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "But perhaps the messenger was not telling the truth.",
+        "answer": "ἀλλὰ μὴ ὁ ἄγγελος οὐκ ἀληθῆ ἔλεγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλὰ",
+          "μὴ",
+          "ὁ",
+          "ἄγγελος",
+          "οὐκ",
+          "ἀληθῆ",
+          "ἔλεγεν"
+        ]
+      },
+      {
+        "prompt": "But I suspect it was the priest who betrayed the city.",
+        "answer": "ἀλλὰ μὴ ὁ ἱερεὺς ἦν ὁ τὴν πόλιν προδούς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλὰ",
+          "μὴ",
+          "ὁ",
+          "ἱερεὺς",
+          "ἦν",
+          "τὴν",
+          "πόλιν",
+          "προδούς"
+        ]
+      },
+      {
+        "prompt": "When will the ambassadors return from Sparta?",
+        "answer": "πότε οἱ πρέσβεις ἐκ τῆς Σπάρτης ὑποστρέψουσιν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πότε",
+          "οἱ",
+          "πρέσβεις",
+          "ἐκ",
+          "τῆς",
+          "Σπάρτης",
+          "ὑποστρέψουσιν"
+        ]
+      },
+      {
+        "prompt": "Why do you despise those wiser than yourself?",
+        "answer": "διὰ τί τῶν σεαυτοῦ σοφωτέρων καταφρονεῖς;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "διὰ",
+          "τί",
+          "τῶν",
+          "σεαυτοῦ",
+          "σοφωτέρων",
+          "καταφρονεῖς"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t18",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "A little more and the enemies would have taken the citadel.",
+        "answer": "ὀλίγου οἱ πολέμιοι τὴν ἀκρόπολιν εἷλον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὀλίγου",
+          "οἱ",
+          "πολέμιοι",
+          "τὴν",
+          "ἀκρόπολιν",
+          "εἷλον"
+        ]
+      },
+      {
+        "prompt": "Wandering in the desert, we were in danger of perishing.",
+        "answer": "ἐν τῇ ἐρήμῳ πλανώμενοι ἀπωλλύμεθα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐν",
+          "τῇ",
+          "ἐρήμῳ",
+          "πλανώμενοι",
+          "ἀπωλλύμεθα"
+        ]
+      },
+      {
+        "prompt": "And suppose the general is already dead; who will lead us?",
+        "answer": "καὶ δὴ τέθνηκεν ὁ στρατηγός· τίς ἡμᾶς ἄξει;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "δὴ",
+          "τέθνηκεν",
+          "ὁ",
+          "στρατηγός",
+          "τίς",
+          "ἡμᾶς",
+          "ἄξει"
+        ]
+      },
+      {
+        "prompt": "Since he trusted the oracle, how could he not obey the god?",
+        "answer": "τῷ χρησμῷ πιστεύων πῶς οὐκ ἐπείθετο τῷ θεῷ;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῷ",
+          "χρησμῷ",
+          "πιστεύων",
+          "πῶς",
+          "οὐκ",
+          "ἐπείθετο",
+          "θεῷ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t19",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "You ought to be guarding the walls, but you are sleeping.",
+        "answer": "ἔδει σε τὰ τείχη φυλάττειν, νῦν δὲ καθεύδεις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔδει",
+          "σε",
+          "τὰ",
+          "τείχη",
+          "φυλάττειν",
+          "νῦν",
+          "δὲ",
+          "καθεύδεις"
+        ]
+      },
+      {
+        "prompt": "It would be fitting for the young men to obey the elders.",
+        "answer": "προσῆκε τοὺς νεανίσκους τοῖς πρεσβυτέροις πείθεσθαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "προσῆκε",
+          "τοὺς",
+          "νεανίσκους",
+          "τοῖς",
+          "πρεσβυτέροις",
+          "πείθεσθαι"
+        ]
+      },
+      {
+        "prompt": "It was reasonable for you not to fear the danger, as you now do.",
+        "answer": "εἰκὸς ἦν σε μὴ φοβεῖσθαι τὸν κίνδυνον, ὥσπερ νῦν φοβῇ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰκὸς",
+          "ἦν",
+          "σε",
+          "μὴ",
+          "φοβεῖσθαι",
+          "τὸν",
+          "κίνδυνον",
+          "ὥσπερ",
+          "νῦν",
+          "φοβῇ"
+        ]
+      },
+      {
+        "prompt": "The citizens ought to be honoring those who died for their country.",
+        "answer": "χρῆν τοὺς πολίτας τιμᾶν τοὺς ὑπὲρ τῆς πατρίδος ἀποθανόντας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "χρῆν",
+          "τοὺς",
+          "πολίτας",
+          "τιμᾶν",
+          "ὑπὲρ",
+          "τῆς",
+          "πατρίδος",
+          "ἀποθανόντας"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t20",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "You might have saved the prisoners, but you abandoned them.",
+        "answer": "ἐξῆν σοι τοὺς αἰχμαλώτους σῶσαι, σὺ δὲ αὐτοὺς κατέλιπες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐξῆν",
+          "σοι",
+          "τοὺς",
+          "αἰχμαλώτους",
+          "σῶσαι",
+          "σὺ",
+          "δὲ",
+          "αὐτοὺς",
+          "κατέλιπες"
+        ]
+      },
+      {
+        "prompt": "The general ought to have led the soldiers out of the ravine.",
+        "answer": "ἔδει τὸν στρατηγὸν τοὺς στρατιώτας ἐκ τῆς χαράδρας ἐξαγαγεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔδει",
+          "τὸν",
+          "στρατηγὸν",
+          "τοὺς",
+          "στρατιώτας",
+          "ἐκ",
+          "τῆς",
+          "χαράδρας",
+          "ἐξαγαγεῖν"
+        ]
+      },
+      {
+        "prompt": "It would have been worth hearing the sophist.",
+        "answer": "ἄξιον ἦν τοῦ σοφιστοῦ ἀκοῦσαι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄξιον",
+          "ἦν",
+          "τοῦ",
+          "σοφιστοῦ",
+          "ἀκοῦσαι"
+        ]
+      },
+      {
+        "prompt": "It was possible for us to flee, but we chose to fight.",
+        "answer": "ἐξῆν ἡμῖν φυγεῖν, ἡμεῖς δὲ μάχεσθαι εἱλόμεθα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐξῆν",
+          "ἡμῖν",
+          "φυγεῖν",
+          "ἡμεῖς",
+          "δὲ",
+          "μάχεσθαι",
+          "εἱλόμεθα"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t21",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "Would that the allies were fighting more bravely!",
+        "answer": "εἴθε οἱ σύμμαχοι ἀνδρειότερον ἐμάχοντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "οἱ",
+          "σύμμαχοι",
+          "ἀνδρειότερον",
+          "ἐμάχοντο"
+        ]
+      },
+      {
+        "prompt": "Would that we had heard the shout of the guards in time!",
+        "answer": "εἰ γὰρ ἐν καιρῷ τῆς τῶν φυλάκων κραυγῆς ἠκούσαμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰ",
+          "γὰρ",
+          "ἐν",
+          "καιρῷ",
+          "τῆς",
+          "τῶν",
+          "φυλάκων",
+          "κραυγῆς",
+          "ἠκούσαμεν"
+        ]
+      },
+      {
+        "prompt": "Would that the mother had not sent her son into so great a danger!",
+        "answer": "εἴθε ἡ μήτηρ τὸν υἱὸν μὴ εἰς τοσοῦτον κίνδυνον ἔπεμψεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "ἡ",
+          "μήτηρ",
+          "τὸν",
+          "υἱὸν",
+          "μὴ",
+          "εἰς",
+          "τοσοῦτον",
+          "κίνδυνον",
+          "ἔπεμψεν"
+        ]
+      },
+      {
+        "prompt": "Would that I now had the wisdom of the ancients!",
+        "answer": "εἴθε τὴν τῶν παλαιῶν σοφίαν νῦν εἶχον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἴθε",
+          "τὴν",
+          "τῶν",
+          "παλαιῶν",
+          "σοφίαν",
+          "νῦν",
+          "εἶχον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t22",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "But perhaps the strangers have not spoken the truth.",
+        "answer": "ἀλλὰ μὴ οἱ ξένοι οὐκ ἀληθῆ εἰρήκασιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλὰ",
+          "μὴ",
+          "οἱ",
+          "ξένοι",
+          "οὐκ",
+          "ἀληθῆ",
+          "εἰρήκασιν"
+        ]
+      },
+      {
+        "prompt": "But I suspect after all it was the general who betrayed the city.",
+        "answer": "ἀλλὰ ἄρα μὴ ὁ στρατηγὸς ἦν ὁ τὴν πόλιν προδούς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλὰ",
+          "ἄρα",
+          "μὴ",
+          "ὁ",
+          "στρατηγὸς",
+          "ἦν",
+          "τὴν",
+          "πόλιν",
+          "προδούς"
+        ]
+      },
+      {
+        "prompt": "But perhaps we did not judge these matters rightly.",
+        "answer": "ἀλλὰ μὴ ταῦτα οὐκ ὀρθῶς ἐκρίναμεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλὰ",
+          "μὴ",
+          "ταῦτα",
+          "οὐκ",
+          "ὀρθῶς",
+          "ἐκρίναμεν"
+        ]
+      },
+      {
+        "prompt": "But I suspect it was the girl who heard the noise first.",
+        "answer": "ἀλλὰ ἄρα μὴ ἡ παῖς πρώτη τὸν ψόφον ἤκουσεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλὰ",
+          "ἄρα",
+          "μὴ",
+          "ἡ",
+          "παῖς",
+          "πρώτη",
+          "τὸν",
+          "ψόφον",
+          "ἤκουσεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-t23",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "A little more and the ship would have sunk into the sea.",
+        "answer": "ὀλίγου ἡ ναῦς εἰς τὴν θάλατταν κατέδυ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὀλίγου",
+          "ἡ",
+          "ναῦς",
+          "εἰς",
+          "τὴν",
+          "θάλατταν",
+          "κατέδυ"
+        ]
+      },
+      {
+        "prompt": "We were in danger of perishing on the mountain.",
+        "answer": "ἐν τῷ ὄρει ἀπωλλύμεθα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐν",
+          "τῷ",
+          "ὄρει",
+          "ἀπωλλύμεθα"
+        ]
+      },
+      {
+        "prompt": "I would that I were not now waging war against my kinsmen.",
+        "answer": "ἐβουλόμην μὲν τοῖς συγγενέσι μὴ νῦν πολεμεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐβουλόμην",
+          "μὲν",
+          "τοῖς",
+          "συγγενέσι",
+          "μὴ",
+          "νῦν",
+          "πολεμεῖν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-1770-indicative-without-an-q1",
+    "sectionId": "sm-1770-indicative-without-an",
+    "questions": [
+      {
+        "prompt": "But perhaps we did not do well in agreeing to this.",
+        "answer": "ἀλλὰ μὴ τοῦτο οὐ καλῶς ὡμολογήσαμεν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀλλὰ",
+          "μὴ",
+          "τοῦτο",
+          "οὐ",
+          "καλῶς",
+          "ὡμολογήσαμεν"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Meno",
+          "locus": "89c"
+        }
+      },
+      {
+        "prompt": "A little more and they would have taken the city.",
+        "answer": "ὀλίγου εἷλον τὴν πόλιν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὀλίγου",
+          "εἷλον",
+          "τὴν",
+          "πόλιν"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "8.35"
+        }
+      },
+      {
+        "prompt": "You should not be slack in your alliance, as you are at present.",
+        "answer": "εἰκὸς ἦν ὑμᾶς μὴ μαλακῶς, ὥσπερ νῦν, ξυμμαχεῖν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "εἰκὸς",
+          "ἦν",
+          "ὑμᾶς",
+          "μὴ",
+          "μαλακῶς",
+          "ὥσπερ",
+          "νῦν",
+          "ξυμμαχεῖν"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "6.78"
+        }
+      },
+      {
+        "prompt": "I ought to have taken the pledges then.",
+        "answer": "ἔδει τὰ ἐνέχυρα τότε λαβεῖν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἔδει",
+          "τὰ",
+          "ἐνέχυρα",
+          "τότε",
+          "λαβεῖν"
+        ],
+        "source": {
+          "author": "Xenophon",
+          "work": "Anabasis",
+          "locus": "7.6.23"
+        }
+      }
+    ]
+  }
 ]

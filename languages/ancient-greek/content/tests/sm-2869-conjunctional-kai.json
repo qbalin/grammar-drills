@@ -1,1460 +1,1460 @@
 [
- {
-  "id": "sm-2869-conjunctional-kai-t1",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "Both the young and the old admired the general's courage.",
-    "answer": "καὶ οἱ νέοι καὶ οἱ πρεσβύτεροι τὴν τοῦ στρατηγοῦ ἀνδρείαν ἐθαύμαζον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "οἱ",
-     "νέοι",
-     "πρεσβύτεροι",
-     "τὴν",
-     "τοῦ",
-     "στρατηγοῦ",
-     "ἀνδρείαν",
-     "ἐθαύμαζον"
-    ]
-   },
-   {
-    "prompt": "They seized him and his wife and his children and all his possessions.",
-    "answer": "συνέλαβον αὐτὸν καὶ τὴν γυναῖκα καὶ τοὺς παῖδας καὶ πάντα τὰ ὄντα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "συνέλαβον",
-     "αὐτὸν",
-     "καὶ",
-     "τὴν",
-     "γυναῖκα",
-     "τοὺς",
-     "παῖδας",
-     "πάντα",
-     "τὰ",
-     "ὄντα"
-    ]
-   },
-   {
-    "prompt": "The exiles suffered many terrible things in a foreign land.",
-    "answer": "οἱ φυγάδες πολλὰ καὶ δεινὰ ἐν ξένῃ γῇ ἔπαθον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "φυγάδες",
-     "πολλὰ",
-     "καὶ",
-     "δεινὰ",
-     "ἐν",
-     "ξένῃ",
-     "γῇ",
-     "ἔπαθον"
-    ]
-   },
-   {
-    "prompt": "Honours must be paid to him both while he lives and after he has died.",
-    "answer": "τιμὰς αὐτῷ δοτέον καὶ ζῶντι καὶ τελευτήσαντι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τιμὰς",
-     "αὐτῷ",
-     "δοτέον",
-     "καὶ",
-     "ζῶντι",
-     "τελευτήσαντι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t2",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "They elected me and not you, though I was the younger.",
-    "answer": "ἐμὲ ἐχειροτόνησαν καὶ οὐχ ὑμᾶς, καίπερ νεώτερον ὄντα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐμὲ",
-     "ἐχειροτόνησαν",
-     "καὶ",
-     "οὐχ",
-     "ὑμᾶς",
-     "καίπερ",
-     "νεώτερον",
-     "ὄντα"
-    ]
-   },
-   {
-    "prompt": "Depart in gladness; and yet I let you go unwillingly.",
-    "answer": "χαίρων ἄπιθι· καὶ σὲ ἄκων ἐγὼ λείπω.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "χαίρων",
-     "ἄπιθι",
-     "καὶ",
-     "σὲ",
-     "ἄκων",
-     "ἐγὼ",
-     "λείπω"
-    ]
-   },
-   {
-    "prompt": "He ordered the attack and did not himself share the danger.",
-    "answer": "ἐκέλευσε προσβάλλειν καὶ αὐτὸς οὐ μετέσχε τοῦ κινδύνου.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐκέλευσε",
-     "προσβάλλειν",
-     "καὶ",
-     "αὐτὸς",
-     "οὐ",
-     "μετέσχε",
-     "τοῦ",
-     "κινδύνου"
-    ]
-   },
-   {
-    "prompt": "You see the truth and do not wish to speak it.",
-    "answer": "ὁρᾷς τὸ ἀληθὲς καὶ οὐκ ἐθέλεις αὐτὸ εἰπεῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁρᾷς",
-     "τὸ",
-     "ἀληθὲς",
-     "καὶ",
-     "οὐκ",
-     "ἐθέλεις",
-     "αὐτὸ",
-     "εἰπεῖν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t3",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "And, pray, who of the dead has come back from Hades?",
-    "answer": "καὶ τίς τῶν τεθνηκότων ἐξ Ἅιδου πάλιν ἦλθεν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "τίς",
-     "τῶν",
-     "τεθνηκότων",
-     "ἐξ",
-     "Ἅιδου",
-     "πάλιν",
-     "ἦλθεν"
-    ]
-   },
-   {
-    "prompt": "And how, pray, did you escape the guards' notice?",
-    "answer": "καὶ πῶς τοὺς φύλακας ἔλαθες;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "πῶς",
-     "τοὺς",
-     "φύλακας",
-     "ἔλαθες"
-    ]
-   },
-   {
-    "prompt": "Just answer me this one question.",
-    "answer": "καί μοι ἀπόκριναι τοῦτο τὸ ἓν ἐρώτημα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "μοι",
-     "ἀπόκριναι",
-     "τοῦτο",
-     "τὸ",
-     "ἓν",
-     "ἐρώτημα"
-    ]
-   },
-   {
-    "prompt": "And now read me the decree of the assembly.",
-    "answer": "καί μοι ἀνάγνωθι τὸ τῆς ἐκκλησίας ψήφισμα.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "μοι",
-     "ἀνάγνωθι",
-     "τὸ",
-     "τῆς",
-     "ἐκκλησίας",
-     "ψήφισμα"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t4",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "Your expedition is the same as ours.",
-    "answer": "ὁ αὐτὸς στόλος ἐστὶν ὑμῖν καὶ ἡμῖν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "αὐτὸς",
-     "στόλος",
-     "ἐστὶν",
-     "ὑμῖν",
-     "καὶ",
-     "ἡμῖν"
-    ]
-   },
-   {
-    "prompt": "The general did not draw up his soldiers the same as before.",
-    "answer": "οὐχ ὁμοίως τοὺς στρατιώτας ὁ στρατηγὸς παρέταξε καὶ πρότερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐχ",
-     "ὁμοίως",
-     "τοὺς",
-     "στρατιώτας",
-     "ὁ",
-     "στρατηγὸς",
-     "παρέταξε",
-     "καὶ",
-     "πρότερον"
-    ]
-   },
-   {
-    "prompt": "As soon as day came, the enemy attacked the camp.",
-    "answer": "ἅμα ἡμέρᾳ καὶ οἱ πολέμιοι τῷ στρατοπέδῳ προσέβαλον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἅμα",
-     "ἡμέρᾳ",
-     "καὶ",
-     "οἱ",
-     "πολέμιοι",
-     "τῷ",
-     "στρατοπέδῳ",
-     "προσέβαλον"
-    ]
-   },
-   {
-    "prompt": "We had not yet arrived when the doorkeeper ordered us to wait.",
-    "answer": "οὔπω ἥκομεν, καὶ ὁ θυρωρὸς ἐκέλευσεν ἡμᾶς περιμένειν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὔπω",
-     "ἥκομεν",
-     "καὶ",
-     "ὁ",
-     "θυρωρὸς",
-     "ἐκέλευσεν",
-     "ἡμᾶς",
-     "περιμένειν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t5",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "Among the Athenians and the Greeks above all he was held in honour.",
-    "answer": "ἐν τοῖς Ἀθηναίοις καὶ τοῖς Ἕλλησιν ἐτιμᾶτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐν",
-     "τοῖς",
-     "Ἀθηναίοις",
-     "καὶ",
-     "Ἕλλησιν",
-     "ἐτιμᾶτο"
-    ]
-   },
-   {
-    "prompt": "O Zeus and above all you gods, save the city!",
-    "answer": "ὦ Ζεῦ καὶ θεοί, σώσατε τὴν πόλιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὦ",
-     "Ζεῦ",
-     "καὶ",
-     "θεοί",
-     "σώσατε",
-     "τὴν",
-     "πόλιν"
-    ]
-   },
-   {
-    "prompt": "This wisdom is worth little or nothing.",
-    "answer": "αὕτη ἡ σοφία ὀλίγου τινὸς ἀξία ἐστὶ καὶ οὐδενός.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "αὕτη",
-     "ἡ",
-     "σοφία",
-     "ὀλίγου",
-     "τινὸς",
-     "ἀξία",
-     "ἐστὶ",
-     "καὶ",
-     "οὐδενός"
-    ]
-   },
-   {
-    "prompt": "Each of the shields was worth five or six minae.",
-    "answer": "ἑκάστη τῶν ἀσπίδων πέντε μνῶν ἀξία ἦν καὶ ἕξ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἑκάστη",
-     "τῶν",
-     "ἀσπίδων",
-     "πέντε",
-     "μνῶν",
-     "ἀξία",
-     "ἦν",
-     "καὶ",
-     "ἕξ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t6",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "He betrayed his friends, and that too in the greatest dangers.",
-    "answer": "τοὺς φίλους προέδωκε, καὶ ταῦτα ἐν τοῖς μεγίστοις κινδύνοις.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "φίλους",
-     "προέδωκε",
-     "καὶ",
-     "ταῦτα",
-     "ἐν",
-     "τοῖς",
-     "μεγίστοις",
-     "κινδύνοις"
-    ]
-   },
-   {
-    "prompt": "And further, the citizens honoured the lawgiver while he lived.",
-    "answer": "καὶ τὸν νομοθέτην τοίνυν οἱ πολῖται ζῶντα ἐτίμων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "τὸν",
-     "νομοθέτην",
-     "τοίνυν",
-     "οἱ",
-     "πολῖται",
-     "ζῶντα",
-     "ἐτίμων"
-    ]
-   },
-   {
-    "prompt": "Many others also fled from the tyrant's savagery.",
-    "answer": "πολλοὶ καὶ ἄλλοι τὴν τοῦ τυράννου ὠμότητα ἔφυγον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πολλοὶ",
-     "καὶ",
-     "ἄλλοι",
-     "τὴν",
-     "τοῦ",
-     "τυράννου",
-     "ὠμότητα",
-     "ἔφυγον"
-    ]
-   },
-   {
-    "prompt": "Even the wisest of the generals sometimes err.",
-    "answer": "καὶ οἱ σοφώτατοι τῶν στρατηγῶν ἐνίοτε ἁμαρτάνουσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "οἱ",
-     "σοφώτατοι",
-     "τῶν",
-     "στρατηγῶν",
-     "ἐνίοτε",
-     "ἁμαρτάνουσιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t7",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "The gods, and above all Zeus, watch over the oaths of mortals.",
-    "answer": "οἱ θεοὶ καὶ Ζεὺς τοὺς τῶν θνητῶν ὅρκους ἐφορῶσιν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "θεοὶ",
-     "καὶ",
-     "Ζεὺς",
-     "τοὺς",
-     "τῶν",
-     "θνητῶν",
-     "ὅρκους",
-     "ἐφορῶσιν"
-    ]
-   },
-   {
-    "prompt": "This gift is worth little or nothing.",
-    "answer": "τοῦτο τὸ δῶρον ὀλίγου τινὸς ἄξιόν ἐστι καὶ οὐδενός.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῦτο",
-     "τὸ",
-     "δῶρον",
-     "ὀλίγου",
-     "τινὸς",
-     "ἄξιόν",
-     "ἐστι",
-     "καὶ",
-     "οὐδενός"
-    ]
-   },
-   {
-    "prompt": "Honours must be paid to him both while living and after his death.",
-    "answer": "τιμὰς αὐτῷ δοτέον καὶ ζῶντι καὶ τελευτήσαντι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τιμὰς",
-     "αὐτῷ",
-     "δοτέον",
-     "καὶ",
-     "ζῶντι",
-     "τελευτήσαντι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t8",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "And, pray, how did the enemy escape our guards?",
-    "answer": "καὶ πῶς οἱ πολέμιοι τοὺς φύλακας ἡμῶν ἔλαθον;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "πῶς",
-     "οἱ",
-     "πολέμιοι",
-     "τοὺς",
-     "φύλακας",
-     "ἡμῶν",
-     "ἔλαθον"
-    ]
-   },
-   {
-    "prompt": "Just answer me: where were you on that night?",
-    "answer": "καὶ μοι ἀπόκριναι· ποῦ ἦσθα ἐκείνης τῆς νυκτός;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "μοι",
-     "ἀπόκριναι",
-     "ποῦ",
-     "ἦσθα",
-     "ἐκείνης",
-     "τῆς",
-     "νυκτός"
-    ]
-   },
-   {
-    "prompt": "As soon as the herald appeared, the soldiers fell silent.",
-    "answer": "καὶ ὁ κῆρυξ ἐφάνη καὶ οἱ στρατιῶται ἐσιώπησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "ὁ",
-     "κῆρυξ",
-     "ἐφάνη",
-     "οἱ",
-     "στρατιῶται",
-     "ἐσιώπησαν"
-    ]
-   },
-   {
-    "prompt": "The road is not the same as before.",
-    "answer": "ἡ ὁδὸς οὐχ ἡ αὐτή ἐστι καὶ πρότερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "ὁδὸς",
-     "οὐχ",
-     "αὐτή",
-     "ἐστι",
-     "καὶ",
-     "πρότερον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t9",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "They plundered the temples, the houses, the fields, and everything.",
-    "answer": "τὰ ἱερὰ καὶ τὰς οἰκίας καὶ τοὺς ἀγροὺς καὶ πάντα διήρπασαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "ἱερὰ",
-     "καὶ",
-     "τὰς",
-     "οἰκίας",
-     "τοὺς",
-     "ἀγροὺς",
-     "πάντα",
-     "διήρπασαν"
-    ]
-   },
-   {
-    "prompt": "The exiles suffered many terrible things at the hands of the tyrant.",
-    "answer": "οἱ φυγάδες πολλὰ καὶ δεινὰ ὑπὸ τοῦ τυράννου ἔπαθον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "φυγάδες",
-     "πολλὰ",
-     "καὶ",
-     "δεινὰ",
-     "ὑπὸ",
-     "τοῦ",
-     "τυράννου",
-     "ἔπαθον"
-    ]
-   },
-   {
-    "prompt": "They waited there five days, and then the messenger arrived.",
-    "answer": "ἐνταῦθα ἔμειναν ἡμέρας πέντε καὶ ἧκεν ὁ ἄγγελος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἐνταῦθα",
-     "ἔμειναν",
-     "ἡμέρας",
-     "πέντε",
-     "καὶ",
-     "ἧκεν",
-     "ὁ",
-     "ἄγγελος"
-    ]
-   },
-   {
-    "prompt": "Each of these things is worth five or six drachmas.",
-    "answer": "τούτων ἕκαστον πέντε δραχμῶν ἄξιόν ἐστι καὶ ἕξ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τούτων",
-     "ἕκαστον",
-     "πέντε",
-     "δραχμῶν",
-     "ἄξιόν",
-     "ἐστι",
-     "καὶ",
-     "ἕξ"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t10",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "I must dare it, whether I succeed or whether I fail.",
-    "answer": "τολμητέον μοι, καὶ ἐὰν τύχω καὶ ἐὰν μὴ τύχω.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τολμητέον",
-     "μοι",
-     "καὶ",
-     "ἐὰν",
-     "τύχω",
-     "μὴ"
-    ]
-   },
-   {
-    "prompt": "The jurors honoured the flatterers and not the just.",
-    "answer": "οἱ δικασταὶ τοὺς κόλακας ἐτίμησαν καὶ οὐ τοὺς δικαίους.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "δικασταὶ",
-     "τοὺς",
-     "κόλακας",
-     "ἐτίμησαν",
-     "καὶ",
-     "οὐ",
-     "δικαίους"
-    ]
-   },
-   {
-    "prompt": "But by whom was the wall betrayed?",
-    "answer": "ὑπὸ τίνος δὲ καὶ προεδόθη τὸ τεῖχος;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὑπὸ",
-     "τίνος",
-     "δὲ",
-     "καὶ",
-     "προεδόθη",
-     "τὸ",
-     "τεῖχος"
-    ]
-   },
-   {
-    "prompt": "They pursue the same things as their fathers.",
-    "answer": "τὰ αὐτὰ διώκουσι καὶ οἱ πατέρες.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τὰ",
-     "αὐτὰ",
-     "διώκουσι",
-     "καὶ",
-     "οἱ",
-     "πατέρες"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t11",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "And, pray, who will believe such a story?",
-    "answer": "καὶ τίς τῷ τοιούτῳ λόγῳ πιστεύσει;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "τίς",
-     "τῷ",
-     "τοιούτῳ",
-     "λόγῳ",
-     "πιστεύσει"
-    ]
-   },
-   {
-    "prompt": "And now read out the law to the jurors for me.",
-    "answer": "καὶ μοι τὸν νόμον τοῖς δικασταῖς ἀνάγνωθι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "μοι",
-     "τὸν",
-     "νόμον",
-     "τοῖς",
-     "δικασταῖς",
-     "ἀνάγνωθι"
-    ]
-   },
-   {
-    "prompt": "He is wise, and moreover just as well.",
-    "answer": "σοφός ἐστι, καὶ μέντοι καὶ δίκαιος.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σοφός",
-     "ἐστι",
-     "καὶ",
-     "μέντοι",
-     "δίκαιος"
-    ]
-   },
-   {
-    "prompt": "And further, the general himself confessed the truth.",
-    "answer": "καὶ τοίνυν αὐτὸς ὁ στρατηγὸς τὴν ἀλήθειαν ὡμολόγησεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "τοίνυν",
-     "αὐτὸς",
-     "ὁ",
-     "στρατηγὸς",
-     "τὴν",
-     "ἀλήθειαν",
-     "ὡμολόγησεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t12",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "This man both sees and yet does not perceive the danger.",
-    "answer": "οὗτος καὶ ὁρᾷ καὶ οὐ τὸν κίνδυνον αἰσθάνεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὗτος",
-     "καὶ",
-     "ὁρᾷ",
-     "οὐ",
-     "τὸν",
-     "κίνδυνον",
-     "αἰσθάνεται"
-    ]
-   },
-   {
-    "prompt": "Many others also fled from the city.",
-    "answer": "πολλοὶ καὶ ἄλλοι ἐκ τῆς πόλεως ἔφυγον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πολλοὶ",
-     "καὶ",
-     "ἄλλοι",
-     "ἐκ",
-     "τῆς",
-     "πόλεως",
-     "ἔφυγον"
-    ]
-   },
-   {
-    "prompt": "The general had scarcely spoken when the soldiers shouted.",
-    "answer": "οὐκ ἔφθη ὁ στρατηγὸς εἰπὼν καὶ οἱ στρατιῶται ἐβόησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "ἔφθη",
-     "ὁ",
-     "στρατηγὸς",
-     "εἰπὼν",
-     "καὶ",
-     "οἱ",
-     "στρατιῶται",
-     "ἐβόησαν"
-    ]
-   },
-   {
-    "prompt": "He wronged his benefactors, and that too having no pretext.",
-    "answer": "τοὺς εὐεργέτας ἠδίκησε, καὶ ταῦτα οὐδεμίαν πρόφασιν ἔχων.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοὺς",
-     "εὐεργέτας",
-     "ἠδίκησε",
-     "καὶ",
-     "ταῦτα",
-     "οὐδεμίαν",
-     "πρόφασιν",
-     "ἔχων"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t13",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "The soldiers were brave both in the assembly and on the battlefield.",
-    "answer": "οἱ στρατιῶται ἀνδρεῖοι ἦσαν καὶ ἐν τῇ ἐκκλησίᾳ καὶ ἐν τῇ μάχῃ.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "στρατιῶται",
-     "ἀνδρεῖοι",
-     "ἦσαν",
-     "καί",
-     "ἐν",
-     "τῇ",
-     "ἐκκλησίᾳ",
-     "μάχῃ"
-    ]
-   },
-   {
-    "prompt": "Not only then but also now the citizens trusted their laws.",
-    "answer": "καὶ τότε καὶ νῦν οἱ πολῖται τοῖς νόμοις ἐπίστευον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "τότε",
-     "νῦν",
-     "οἱ",
-     "πολῖται",
-     "τοῖς",
-     "νόμοις",
-     "ἐπίστευον"
-    ]
-   },
-   {
-    "prompt": "Both the rich and the poor feared the tyrant's anger.",
-    "answer": "καὶ οἱ πλούσιοι καὶ οἱ πένητες τὴν τοῦ τυράννου ὀργὴν ἐφοβοῦντο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "οἱ",
-     "πλούσιοι",
-     "πένητες",
-     "τήν",
-     "τοῦ",
-     "τυράννου",
-     "ὀργήν",
-     "ἐφοβοῦντο"
-    ]
-   },
-   {
-    "prompt": "Whether he conquers or is conquered, he will win honour.",
-    "answer": "καὶ νικῶν καὶ νικώμενος τιμὴν οἴσεται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "νικῶν",
-     "νικώμενος",
-     "τιμήν",
-     "οἴσεται"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t14",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "For the city such counsel is worth little or nothing.",
-    "answer": "ἡ τοιαύτη βουλὴ τῇ πόλει ὀλίγου τινὸς ἀξία ἐστὶ καὶ οὐδενός.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "τοιαύτη",
-     "βουλή",
-     "τῇ",
-     "πόλει",
-     "ὀλίγου",
-     "τινός",
-     "ἀξία",
-     "ἐστί",
-     "καί",
-     "οὐδενός"
-    ]
-   },
-   {
-    "prompt": "The merchant sold the shields at five or six drachmas each.",
-    "answer": "ὁ ἔμπορος τὰς ἀσπίδας ἀνὰ πέντε δραχμὰς καὶ ἓξ ἀπέδοτο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "ἔμπορος",
-     "τάς",
-     "ἀσπίδας",
-     "ἀνά",
-     "πέντε",
-     "δραχμάς",
-     "καί",
-     "ἕξ",
-     "ἀπέδοτο"
-    ]
-   },
-   {
-    "prompt": "But war will await us whether we advance or retreat.",
-    "answer": "πόλεμος δὲ ἡμῖν προϊοῦσι καὶ ἀπιοῦσιν ἔσται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πόλεμος",
-     "δέ",
-     "ἡμῖν",
-     "προϊοῦσι",
-     "καί",
-     "ἀπιοῦσιν",
-     "ἔσται"
-    ]
-   },
-   {
-    "prompt": "He said these things, right or wrong, before the whole assembly.",
-    "answer": "ταῦτα εἶπε, δίκαια καὶ ἄδικα, ἐναντίον πάσης τῆς ἐκκλησίας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ταῦτα",
-     "εἶπε",
-     "δίκαια",
-     "καί",
-     "ἄδικα",
-     "ἐναντίον",
-     "πάσης",
-     "τῆς",
-     "ἐκκλησίας"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t15",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "The general praised his soldiers, and yet punished the cowards.",
-    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἐπῄνεσε, καὶ τοὺς δειλοὺς ἐκόλασεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "στρατηγός",
-     "τούς",
-     "στρατιώτας",
-     "ἐπῄνεσε",
-     "καί",
-     "δειλούς",
-     "ἐκόλασεν"
-    ]
-   },
-   {
-    "prompt": "You promised to help us, and yet you did nothing.",
-    "answer": "ὑπέσχου ἡμῖν βοηθήσειν, καὶ οὐδὲν ἐποίησας.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὑπέσχου",
-     "ἡμῖν",
-     "βοηθήσειν",
-     "καί",
-     "οὐδέν",
-     "ἐποίησας"
-    ]
-   },
-   {
-    "prompt": "The people chose that man as leader, and not the wiser one.",
-    "answer": "ὁ δῆμος ἐκεῖνον ἡγεμόνα εἵλετο καὶ οὐ τὸν σοφώτερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "δῆμος",
-     "ἐκεῖνον",
-     "ἡγεμόνα",
-     "εἵλετο",
-     "καί",
-     "οὐ",
-     "τόν",
-     "σοφώτερον"
-    ]
-   },
-   {
-    "prompt": "They fought bravely, and yet were defeated by the barbarians.",
-    "answer": "ἀνδρείως ἐμάχοντο, καὶ ὑπὸ τῶν βαρβάρων ἐνικήθησαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἀνδρείως",
-     "ἐμάχοντο",
-     "καί",
-     "ὑπό",
-     "τῶν",
-     "βαρβάρων",
-     "ἐνικήθησαν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t16",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "And, pray, who will save the city now?",
-    "answer": "καὶ τίς σώσει τὴν πόλιν νῦν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "τίς",
-     "σώσει",
-     "τήν",
-     "πόλιν",
-     "νῦν"
-    ]
-   },
-   {
-    "prompt": "But when was this decree actually passed?",
-    "answer": "ποίου δὲ χρόνου καὶ ἐψηφίσθη τοῦτο τὸ ψήφισμα;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ποίου",
-     "δέ",
-     "χρόνου",
-     "καί",
-     "ἐψηφίσθη",
-     "τοῦτο",
-     "τό",
-     "ψήφισμα"
-    ]
-   },
-   {
-    "prompt": "And, pray, how did so small an army conquer the Persians?",
-    "answer": "καὶ πῶς ἡ οὕτως ὀλίγη στρατιὰ τοὺς Πέρσας ἐνίκησεν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "πῶς",
-     "ἡ",
-     "οὕτως",
-     "ὀλίγη",
-     "στρατιά",
-     "τούς",
-     "Πέρσας",
-     "ἐνίκησεν"
-    ]
-   },
-   {
-    "prompt": "And, pray, what does the oracle mean by these words?",
-    "answer": "καὶ τί βούλεται ὁ χρησμὸς τούτοις τοῖς ἔπεσιν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "τί",
-     "βούλεται",
-     "ὁ",
-     "χρησμός",
-     "τούτοις",
-     "τοῖς",
-     "ἔπεσιν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t17",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "And now read me the ambassadors' letter.",
-    "answer": "καί μοι ἀνάγνωθι τὴν τῶν πρέσβεων ἐπιστολήν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "μοι",
-     "ἀνάγνωθι",
-     "τήν",
-     "τῶν",
-     "πρέσβεων",
-     "ἐπιστολήν"
-    ]
-   },
-   {
-    "prompt": "Just answer me: who persuaded you to flee?",
-    "answer": "καί μοι ἀπόκριναι· τίς σε ἔπεισε φυγεῖν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "μοι",
-     "ἀπόκριναι",
-     "τίς",
-     "σε",
-     "ἔπεισε",
-     "φυγεῖν"
-    ]
-   },
-   {
-    "prompt": "And now tell the jurors the whole truth.",
-    "answer": "καὶ εἰπὲ τοῖς δικασταῖς πᾶσαν τὴν ἀλήθειαν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "εἰπέ",
-     "τοῖς",
-     "δικασταῖς",
-     "πᾶσαν",
-     "τήν",
-     "ἀλήθειαν"
-    ]
-   },
-   {
-    "prompt": "And now summon the witnesses into the court.",
-    "answer": "καὶ κάλεσον τοὺς μάρτυρας εἰς τὸ δικαστήριον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "κάλεσον",
-     "τούς",
-     "μάρτυρας",
-     "εἰς",
-     "τό",
-     "δικαστήριον"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t18",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "He has the same cloak as before.",
-    "answer": "τὸ αὐτὸ ἱμάτιον ἔχει καὶ πρότερον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τό",
-     "αὐτό",
-     "ἱμάτιον",
-     "ἔχει",
-     "καί",
-     "πρότερον"
-    ]
-   },
-   {
-    "prompt": "The strangers received the same rights as the citizens.",
-    "answer": "οἱ ξένοι τὰ αὐτὰ δίκαια ἔλαβον καὶ οἱ πολῖται.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οἱ",
-     "ξένοι",
-     "τά",
-     "αὐτά",
-     "δίκαια",
-     "ἔλαβον",
-     "καί",
-     "πολῖται"
-    ]
-   },
-   {
-    "prompt": "He had scarcely spoken when the enemy attacked.",
-    "answer": "οὐκ ἔφθη εἰπὼν καὶ οἱ πολέμιοι προσέβαλον.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐκ",
-     "ἔφθη",
-     "εἰπών",
-     "καί",
-     "οἱ",
-     "πολέμιοι",
-     "προσέβαλον"
-    ]
-   },
-   {
-    "prompt": "At the same moment the trumpet sounded and the army advanced.",
-    "answer": "ἅμα ἡ σάλπιγξ ἐσήμηνε καὶ τὸ στράτευμα προῆλθεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἅμα",
-     "ἡ",
-     "σάλπιγξ",
-     "ἐσήμηνε",
-     "καί",
-     "τό",
-     "στράτευμα",
-     "προῆλθεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t19",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "Each of the mercenaries received four or five drachmas.",
-    "answer": "τῶν μισθοφόρων ἕκαστος τέτταρας δραχμὰς καὶ πέντε ἔλαβεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τῶν",
-     "μισθοφόρων",
-     "ἕκαστος",
-     "τέτταρας",
-     "δραχμάς",
-     "καί",
-     "πέντε",
-     "ἔλαβεν"
-    ]
-   },
-   {
-    "prompt": "For those advancing or retreating there was war all the same.",
-    "answer": "τοῖς προϊοῦσι καὶ ἀπιοῦσι πόλεμος ὁμοίως ἦν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῖς",
-     "προϊοῦσι",
-     "καί",
-     "ἀπιοῦσι",
-     "πόλεμος",
-     "ὁμοίως",
-     "ἦν"
-    ]
-   },
-   {
-    "prompt": "Fortune helped the bold and not the cautious.",
-    "answer": "ἡ τύχη τοῖς θρασέσι καὶ οὐ τοῖς εὐλαβέσιν ἐβοήθει.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἡ",
-     "τύχη",
-     "τοῖς",
-     "θρασέσι",
-     "καί",
-     "οὐ",
-     "εὐλαβέσιν",
-     "ἐβοήθει"
-    ]
-   },
-   {
-    "prompt": "Depart now in peace; and yet I release you unwillingly.",
-    "answer": "ἄπιθι νῦν ἐν εἰρήνῃ· καὶ ἄκων σε ἀφίημι.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἄπιθι",
-     "νῦν",
-     "ἐν",
-     "εἰρήνῃ",
-     "καί",
-     "ἄκων",
-     "σέ",
-     "ἀφίημι"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t20",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "And, pray, how shall we cross the river without ships?",
-    "answer": "καὶ πῶς τὸν ποταμὸν ἄνευ νεῶν διαβησόμεθα;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "πῶς",
-     "τόν",
-     "ποταμόν",
-     "ἄνευ",
-     "νεῶν",
-     "διαβησόμεθα"
-    ]
-   },
-   {
-    "prompt": "And, pray, what god sent you to us?",
-    "answer": "καὶ τίς θεὸς πρὸς ἡμᾶς ὑμᾶς ἔπεμψεν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "τίς",
-     "θεός",
-     "πρός",
-     "ἡμᾶς",
-     "ὑμᾶς",
-     "ἔπεμψεν"
-    ]
-   },
-   {
-    "prompt": "But when, pray, did the tyrant seize power?",
-    "answer": "πότε δὲ καὶ ὁ τύραννος τὴν ἀρχὴν κατέσχεν;",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "πότε",
-     "δέ",
-     "καί",
-     "ὁ",
-     "τύραννος",
-     "τήν",
-     "ἀρχήν",
-     "κατέσχεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t21",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "These men use the same laws as we do.",
-    "answer": "τοῖς αὐτοῖς νόμοις οὗτοι χρῶνται καὶ ἡμεῖς.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τοῖς",
-     "αὐτοῖς",
-     "νόμοις",
-     "οὗτοι",
-     "χρῶνται",
-     "καί",
-     "ἡμεῖς"
-    ]
-   },
-   {
-    "prompt": "The enemy did not fare the same as before.",
-    "answer": "οὐχ ὁμοίως οἱ πολέμιοι ἔπραξαν καὶ πρίν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐχ",
-     "ὁμοίως",
-     "οἱ",
-     "πολέμιοι",
-     "ἔπραξαν",
-     "καί",
-     "πρίν"
-    ]
-   },
-   {
-    "prompt": "At daybreak the general led out the army.",
-    "answer": "ἅμα δὲ τῇ ἡμέρᾳ καὶ ὁ στρατηγὸς τὸ στράτευμα ἐξήγαγεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ἅμα",
-     "δέ",
-     "τῇ",
-     "ἡμέρᾳ",
-     "καί",
-     "ὁ",
-     "στρατηγός",
-     "τό",
-     "στράτευμα",
-     "ἐξήγαγεν"
-    ]
-   },
-   {
-    "prompt": "As soon as we arrived, our host came out and welcomed us.",
-    "answer": "καὶ ἥκομεν καὶ ὁ ξένος ἐξελθὼν ἡμᾶς ἠσπάσατο.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "ἥκομεν",
-     "ὁ",
-     "ξένος",
-     "ἐξελθών",
-     "ἡμᾶς",
-     "ἠσπάσατο"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-t22",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "The wise man is happy both in prosperity and in misfortune.",
-    "answer": "ὁ σοφὸς καὶ ἐν εὐτυχίᾳ καὶ ἐν συμφορᾷ εὐδαίμων ἐστίν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "σοφός",
-     "καί",
-     "ἐν",
-     "εὐτυχίᾳ",
-     "συμφορᾷ",
-     "εὐδαίμων",
-     "ἐστίν"
-    ]
-   },
-   {
-    "prompt": "I shall dare it, whether the gods are willing or not.",
-    "answer": "τολμήσω, καὶ τῶν θεῶν βουλομένων καὶ μή.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "τολμήσω",
-     "καί",
-     "τῶν",
-     "θεῶν",
-     "βουλομένων",
-     "μή"
-    ]
-   },
-   {
-    "prompt": "The storm destroyed the ships, the sailors, and the cargo.",
-    "answer": "ὁ χειμὼν καὶ τὰς ναῦς καὶ τοὺς ναύτας καὶ τὰ χρήματα διέφθειρεν.",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "ὁ",
-     "χειμών",
-     "καί",
-     "τάς",
-     "ναῦς",
-     "τούς",
-     "ναύτας",
-     "τά",
-     "χρήματα",
-     "διέφθειρεν"
-    ]
-   }
-  ]
- },
- {
-  "id": "sm-2869-conjunctional-kai-q1",
-  "sectionId": "sm-2869-conjunctional-kai",
-  "questions": [
-   {
-    "prompt": "Wisdom worth little or nothing.",
-    "answer": "σοφία ὀλίγου τινὸς ἀξία καὶ οὐδενός",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "σοφία",
-     "ὀλίγου",
-     "τινὸς",
-     "ἀξία",
-     "καὶ",
-     "οὐδενός"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Apology",
-     "locus": "23a"
-    }
-   },
-   {
-    "prompt": "And now read me the bill.",
-    "answer": "καί μοι ἀνάγνωθι τὸ ψήφισμα",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καί",
-     "μοι",
-     "ἀνάγνωθι",
-     "τὸ",
-     "ψήφισμα"
-    ],
-    "source": {
-     "author": "Lysias",
-     "work": "Orations",
-     "locus": "13.35"
-    }
-   },
-   {
-    "prompt": "Not the same as before.",
-    "answer": "οὐχ ὁμοίως καὶ πρίν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "οὐχ",
-     "ὁμοίως",
-     "καὶ",
-     "πρίν"
-    ],
-    "source": {
-     "author": "Thucydides",
-     "work": "History of the Peloponnesian War",
-     "locus": "7.28"
-    }
-   },
-   {
-    "prompt": "As soon as we arrived the doorkeeper came out and told us to wait.",
-    "answer": "καὶ ἥκομεν καὶ ἡμῖν ἐξελθὼν ὁ θυρωρὸς . . . εἶπεν περιμένειν",
-    "kind": "translate-en-grc",
-    "vocab": [
-     "καὶ",
-     "ἥκομεν",
-     "καὶ",
-     "ἡμῖν",
-     "ἐξελθὼν",
-     "ὁ",
-     "θυρωρὸς",
-     "εἶπεν",
-     "περιμένειν"
-    ],
-    "source": {
-     "author": "Plato",
-     "work": "Phaedo",
-     "locus": "59e"
-    }
-   }
-  ]
- }
+  {
+    "id": "sm-2869-conjunctional-kai-t1",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "Both the young and the old admired the general's courage.",
+        "answer": "καὶ οἱ νέοι καὶ οἱ πρεσβύτεροι τὴν τοῦ στρατηγοῦ ἀνδρείαν ἐθαύμαζον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "οἱ",
+          "νέοι",
+          "πρεσβύτεροι",
+          "τὴν",
+          "τοῦ",
+          "στρατηγοῦ",
+          "ἀνδρείαν",
+          "ἐθαύμαζον"
+        ]
+      },
+      {
+        "prompt": "They seized him and his wife and his children and all his possessions.",
+        "answer": "συνέλαβον αὐτὸν καὶ τὴν γυναῖκα καὶ τοὺς παῖδας καὶ πάντα τὰ ὄντα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "συνέλαβον",
+          "αὐτὸν",
+          "καὶ",
+          "τὴν",
+          "γυναῖκα",
+          "τοὺς",
+          "παῖδας",
+          "πάντα",
+          "τὰ",
+          "ὄντα"
+        ]
+      },
+      {
+        "prompt": "The exiles suffered many terrible things in a foreign land.",
+        "answer": "οἱ φυγάδες πολλὰ καὶ δεινὰ ἐν ξένῃ γῇ ἔπαθον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "φυγάδες",
+          "πολλὰ",
+          "καὶ",
+          "δεινὰ",
+          "ἐν",
+          "ξένῃ",
+          "γῇ",
+          "ἔπαθον"
+        ]
+      },
+      {
+        "prompt": "Honours must be paid to him both while he lives and after he has died.",
+        "answer": "τιμὰς αὐτῷ δοτέον καὶ ζῶντι καὶ τελευτήσαντι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τιμὰς",
+          "αὐτῷ",
+          "δοτέον",
+          "καὶ",
+          "ζῶντι",
+          "τελευτήσαντι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t2",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "They elected me and not you, though I was the younger.",
+        "answer": "ἐμὲ ἐχειροτόνησαν καὶ οὐχ ὑμᾶς, καίπερ νεώτερον ὄντα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐμὲ",
+          "ἐχειροτόνησαν",
+          "καὶ",
+          "οὐχ",
+          "ὑμᾶς",
+          "καίπερ",
+          "νεώτερον",
+          "ὄντα"
+        ]
+      },
+      {
+        "prompt": "Depart in gladness; and yet I let you go unwillingly.",
+        "answer": "χαίρων ἄπιθι· καὶ σὲ ἄκων ἐγὼ λείπω.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "χαίρων",
+          "ἄπιθι",
+          "καὶ",
+          "σὲ",
+          "ἄκων",
+          "ἐγὼ",
+          "λείπω"
+        ]
+      },
+      {
+        "prompt": "He ordered the attack and did not himself share the danger.",
+        "answer": "ἐκέλευσε προσβάλλειν καὶ αὐτὸς οὐ μετέσχε τοῦ κινδύνου.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐκέλευσε",
+          "προσβάλλειν",
+          "καὶ",
+          "αὐτὸς",
+          "οὐ",
+          "μετέσχε",
+          "τοῦ",
+          "κινδύνου"
+        ]
+      },
+      {
+        "prompt": "You see the truth and do not wish to speak it.",
+        "answer": "ὁρᾷς τὸ ἀληθὲς καὶ οὐκ ἐθέλεις αὐτὸ εἰπεῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁρᾷς",
+          "τὸ",
+          "ἀληθὲς",
+          "καὶ",
+          "οὐκ",
+          "ἐθέλεις",
+          "αὐτὸ",
+          "εἰπεῖν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t3",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "And, pray, who of the dead has come back from Hades?",
+        "answer": "καὶ τίς τῶν τεθνηκότων ἐξ Ἅιδου πάλιν ἦλθεν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "τίς",
+          "τῶν",
+          "τεθνηκότων",
+          "ἐξ",
+          "Ἅιδου",
+          "πάλιν",
+          "ἦλθεν"
+        ]
+      },
+      {
+        "prompt": "And how, pray, did you escape the guards' notice?",
+        "answer": "καὶ πῶς τοὺς φύλακας ἔλαθες;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "πῶς",
+          "τοὺς",
+          "φύλακας",
+          "ἔλαθες"
+        ]
+      },
+      {
+        "prompt": "Just answer me this one question.",
+        "answer": "καί μοι ἀπόκριναι τοῦτο τὸ ἓν ἐρώτημα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "μοι",
+          "ἀπόκριναι",
+          "τοῦτο",
+          "τὸ",
+          "ἓν",
+          "ἐρώτημα"
+        ]
+      },
+      {
+        "prompt": "And now read me the decree of the assembly.",
+        "answer": "καί μοι ἀνάγνωθι τὸ τῆς ἐκκλησίας ψήφισμα.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "μοι",
+          "ἀνάγνωθι",
+          "τὸ",
+          "τῆς",
+          "ἐκκλησίας",
+          "ψήφισμα"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t4",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "Your expedition is the same as ours.",
+        "answer": "ὁ αὐτὸς στόλος ἐστὶν ὑμῖν καὶ ἡμῖν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "αὐτὸς",
+          "στόλος",
+          "ἐστὶν",
+          "ὑμῖν",
+          "καὶ",
+          "ἡμῖν"
+        ]
+      },
+      {
+        "prompt": "The general did not draw up his soldiers the same as before.",
+        "answer": "οὐχ ὁμοίως τοὺς στρατιώτας ὁ στρατηγὸς παρέταξε καὶ πρότερον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐχ",
+          "ὁμοίως",
+          "τοὺς",
+          "στρατιώτας",
+          "ὁ",
+          "στρατηγὸς",
+          "παρέταξε",
+          "καὶ",
+          "πρότερον"
+        ]
+      },
+      {
+        "prompt": "As soon as day came, the enemy attacked the camp.",
+        "answer": "ἅμα ἡμέρᾳ καὶ οἱ πολέμιοι τῷ στρατοπέδῳ προσέβαλον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἅμα",
+          "ἡμέρᾳ",
+          "καὶ",
+          "οἱ",
+          "πολέμιοι",
+          "τῷ",
+          "στρατοπέδῳ",
+          "προσέβαλον"
+        ]
+      },
+      {
+        "prompt": "We had not yet arrived when the doorkeeper ordered us to wait.",
+        "answer": "οὔπω ἥκομεν, καὶ ὁ θυρωρὸς ἐκέλευσεν ἡμᾶς περιμένειν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὔπω",
+          "ἥκομεν",
+          "καὶ",
+          "ὁ",
+          "θυρωρὸς",
+          "ἐκέλευσεν",
+          "ἡμᾶς",
+          "περιμένειν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t5",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "Among the Athenians and the Greeks above all he was held in honour.",
+        "answer": "ἐν τοῖς Ἀθηναίοις καὶ τοῖς Ἕλλησιν ἐτιμᾶτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐν",
+          "τοῖς",
+          "Ἀθηναίοις",
+          "καὶ",
+          "Ἕλλησιν",
+          "ἐτιμᾶτο"
+        ]
+      },
+      {
+        "prompt": "O Zeus and above all you gods, save the city!",
+        "answer": "ὦ Ζεῦ καὶ θεοί, σώσατε τὴν πόλιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὦ",
+          "Ζεῦ",
+          "καὶ",
+          "θεοί",
+          "σώσατε",
+          "τὴν",
+          "πόλιν"
+        ]
+      },
+      {
+        "prompt": "This wisdom is worth little or nothing.",
+        "answer": "αὕτη ἡ σοφία ὀλίγου τινὸς ἀξία ἐστὶ καὶ οὐδενός.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "αὕτη",
+          "ἡ",
+          "σοφία",
+          "ὀλίγου",
+          "τινὸς",
+          "ἀξία",
+          "ἐστὶ",
+          "καὶ",
+          "οὐδενός"
+        ]
+      },
+      {
+        "prompt": "Each of the shields was worth five or six minae.",
+        "answer": "ἑκάστη τῶν ἀσπίδων πέντε μνῶν ἀξία ἦν καὶ ἕξ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἑκάστη",
+          "τῶν",
+          "ἀσπίδων",
+          "πέντε",
+          "μνῶν",
+          "ἀξία",
+          "ἦν",
+          "καὶ",
+          "ἕξ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t6",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "He betrayed his friends, and that too in the greatest dangers.",
+        "answer": "τοὺς φίλους προέδωκε, καὶ ταῦτα ἐν τοῖς μεγίστοις κινδύνοις.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "φίλους",
+          "προέδωκε",
+          "καὶ",
+          "ταῦτα",
+          "ἐν",
+          "τοῖς",
+          "μεγίστοις",
+          "κινδύνοις"
+        ]
+      },
+      {
+        "prompt": "And further, the citizens honoured the lawgiver while he lived.",
+        "answer": "καὶ τὸν νομοθέτην τοίνυν οἱ πολῖται ζῶντα ἐτίμων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "τὸν",
+          "νομοθέτην",
+          "τοίνυν",
+          "οἱ",
+          "πολῖται",
+          "ζῶντα",
+          "ἐτίμων"
+        ]
+      },
+      {
+        "prompt": "Many others also fled from the tyrant's savagery.",
+        "answer": "πολλοὶ καὶ ἄλλοι τὴν τοῦ τυράννου ὠμότητα ἔφυγον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πολλοὶ",
+          "καὶ",
+          "ἄλλοι",
+          "τὴν",
+          "τοῦ",
+          "τυράννου",
+          "ὠμότητα",
+          "ἔφυγον"
+        ]
+      },
+      {
+        "prompt": "Even the wisest of the generals sometimes err.",
+        "answer": "καὶ οἱ σοφώτατοι τῶν στρατηγῶν ἐνίοτε ἁμαρτάνουσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "οἱ",
+          "σοφώτατοι",
+          "τῶν",
+          "στρατηγῶν",
+          "ἐνίοτε",
+          "ἁμαρτάνουσιν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t7",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "The gods, and above all Zeus, watch over the oaths of mortals.",
+        "answer": "οἱ θεοὶ καὶ Ζεὺς τοὺς τῶν θνητῶν ὅρκους ἐφορῶσιν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "θεοὶ",
+          "καὶ",
+          "Ζεὺς",
+          "τοὺς",
+          "τῶν",
+          "θνητῶν",
+          "ὅρκους",
+          "ἐφορῶσιν"
+        ]
+      },
+      {
+        "prompt": "This gift is worth little or nothing.",
+        "answer": "τοῦτο τὸ δῶρον ὀλίγου τινὸς ἄξιόν ἐστι καὶ οὐδενός.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῦτο",
+          "τὸ",
+          "δῶρον",
+          "ὀλίγου",
+          "τινὸς",
+          "ἄξιόν",
+          "ἐστι",
+          "καὶ",
+          "οὐδενός"
+        ]
+      },
+      {
+        "prompt": "Honours must be paid to him both while living and after his death.",
+        "answer": "τιμὰς αὐτῷ δοτέον καὶ ζῶντι καὶ τελευτήσαντι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τιμὰς",
+          "αὐτῷ",
+          "δοτέον",
+          "καὶ",
+          "ζῶντι",
+          "τελευτήσαντι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t8",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "And, pray, how did the enemy escape our guards?",
+        "answer": "καὶ πῶς οἱ πολέμιοι τοὺς φύλακας ἡμῶν ἔλαθον;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "πῶς",
+          "οἱ",
+          "πολέμιοι",
+          "τοὺς",
+          "φύλακας",
+          "ἡμῶν",
+          "ἔλαθον"
+        ]
+      },
+      {
+        "prompt": "Just answer me: where were you on that night?",
+        "answer": "καὶ μοι ἀπόκριναι· ποῦ ἦσθα ἐκείνης τῆς νυκτός;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "μοι",
+          "ἀπόκριναι",
+          "ποῦ",
+          "ἦσθα",
+          "ἐκείνης",
+          "τῆς",
+          "νυκτός"
+        ]
+      },
+      {
+        "prompt": "As soon as the herald appeared, the soldiers fell silent.",
+        "answer": "καὶ ὁ κῆρυξ ἐφάνη καὶ οἱ στρατιῶται ἐσιώπησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "ὁ",
+          "κῆρυξ",
+          "ἐφάνη",
+          "οἱ",
+          "στρατιῶται",
+          "ἐσιώπησαν"
+        ]
+      },
+      {
+        "prompt": "The road is not the same as before.",
+        "answer": "ἡ ὁδὸς οὐχ ἡ αὐτή ἐστι καὶ πρότερον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "ὁδὸς",
+          "οὐχ",
+          "αὐτή",
+          "ἐστι",
+          "καὶ",
+          "πρότερον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t9",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "They plundered the temples, the houses, the fields, and everything.",
+        "answer": "τὰ ἱερὰ καὶ τὰς οἰκίας καὶ τοὺς ἀγροὺς καὶ πάντα διήρπασαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "ἱερὰ",
+          "καὶ",
+          "τὰς",
+          "οἰκίας",
+          "τοὺς",
+          "ἀγροὺς",
+          "πάντα",
+          "διήρπασαν"
+        ]
+      },
+      {
+        "prompt": "The exiles suffered many terrible things at the hands of the tyrant.",
+        "answer": "οἱ φυγάδες πολλὰ καὶ δεινὰ ὑπὸ τοῦ τυράννου ἔπαθον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "φυγάδες",
+          "πολλὰ",
+          "καὶ",
+          "δεινὰ",
+          "ὑπὸ",
+          "τοῦ",
+          "τυράννου",
+          "ἔπαθον"
+        ]
+      },
+      {
+        "prompt": "They waited there five days, and then the messenger arrived.",
+        "answer": "ἐνταῦθα ἔμειναν ἡμέρας πέντε καὶ ἧκεν ὁ ἄγγελος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἐνταῦθα",
+          "ἔμειναν",
+          "ἡμέρας",
+          "πέντε",
+          "καὶ",
+          "ἧκεν",
+          "ὁ",
+          "ἄγγελος"
+        ]
+      },
+      {
+        "prompt": "Each of these things is worth five or six drachmas.",
+        "answer": "τούτων ἕκαστον πέντε δραχμῶν ἄξιόν ἐστι καὶ ἕξ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τούτων",
+          "ἕκαστον",
+          "πέντε",
+          "δραχμῶν",
+          "ἄξιόν",
+          "ἐστι",
+          "καὶ",
+          "ἕξ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t10",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "I must dare it, whether I succeed or whether I fail.",
+        "answer": "τολμητέον μοι, καὶ ἐὰν τύχω καὶ ἐὰν μὴ τύχω.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τολμητέον",
+          "μοι",
+          "καὶ",
+          "ἐὰν",
+          "τύχω",
+          "μὴ"
+        ]
+      },
+      {
+        "prompt": "The jurors honoured the flatterers and not the just.",
+        "answer": "οἱ δικασταὶ τοὺς κόλακας ἐτίμησαν καὶ οὐ τοὺς δικαίους.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "δικασταὶ",
+          "τοὺς",
+          "κόλακας",
+          "ἐτίμησαν",
+          "καὶ",
+          "οὐ",
+          "δικαίους"
+        ]
+      },
+      {
+        "prompt": "But by whom was the wall betrayed?",
+        "answer": "ὑπὸ τίνος δὲ καὶ προεδόθη τὸ τεῖχος;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὑπὸ",
+          "τίνος",
+          "δὲ",
+          "καὶ",
+          "προεδόθη",
+          "τὸ",
+          "τεῖχος"
+        ]
+      },
+      {
+        "prompt": "They pursue the same things as their fathers.",
+        "answer": "τὰ αὐτὰ διώκουσι καὶ οἱ πατέρες.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τὰ",
+          "αὐτὰ",
+          "διώκουσι",
+          "καὶ",
+          "οἱ",
+          "πατέρες"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t11",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "And, pray, who will believe such a story?",
+        "answer": "καὶ τίς τῷ τοιούτῳ λόγῳ πιστεύσει;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "τίς",
+          "τῷ",
+          "τοιούτῳ",
+          "λόγῳ",
+          "πιστεύσει"
+        ]
+      },
+      {
+        "prompt": "And now read out the law to the jurors for me.",
+        "answer": "καὶ μοι τὸν νόμον τοῖς δικασταῖς ἀνάγνωθι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "μοι",
+          "τὸν",
+          "νόμον",
+          "τοῖς",
+          "δικασταῖς",
+          "ἀνάγνωθι"
+        ]
+      },
+      {
+        "prompt": "He is wise, and moreover just as well.",
+        "answer": "σοφός ἐστι, καὶ μέντοι καὶ δίκαιος.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σοφός",
+          "ἐστι",
+          "καὶ",
+          "μέντοι",
+          "δίκαιος"
+        ]
+      },
+      {
+        "prompt": "And further, the general himself confessed the truth.",
+        "answer": "καὶ τοίνυν αὐτὸς ὁ στρατηγὸς τὴν ἀλήθειαν ὡμολόγησεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "τοίνυν",
+          "αὐτὸς",
+          "ὁ",
+          "στρατηγὸς",
+          "τὴν",
+          "ἀλήθειαν",
+          "ὡμολόγησεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t12",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "This man both sees and yet does not perceive the danger.",
+        "answer": "οὗτος καὶ ὁρᾷ καὶ οὐ τὸν κίνδυνον αἰσθάνεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὗτος",
+          "καὶ",
+          "ὁρᾷ",
+          "οὐ",
+          "τὸν",
+          "κίνδυνον",
+          "αἰσθάνεται"
+        ]
+      },
+      {
+        "prompt": "Many others also fled from the city.",
+        "answer": "πολλοὶ καὶ ἄλλοι ἐκ τῆς πόλεως ἔφυγον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πολλοὶ",
+          "καὶ",
+          "ἄλλοι",
+          "ἐκ",
+          "τῆς",
+          "πόλεως",
+          "ἔφυγον"
+        ]
+      },
+      {
+        "prompt": "The general had scarcely spoken when the soldiers shouted.",
+        "answer": "οὐκ ἔφθη ὁ στρατηγὸς εἰπὼν καὶ οἱ στρατιῶται ἐβόησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "ἔφθη",
+          "ὁ",
+          "στρατηγὸς",
+          "εἰπὼν",
+          "καὶ",
+          "οἱ",
+          "στρατιῶται",
+          "ἐβόησαν"
+        ]
+      },
+      {
+        "prompt": "He wronged his benefactors, and that too having no pretext.",
+        "answer": "τοὺς εὐεργέτας ἠδίκησε, καὶ ταῦτα οὐδεμίαν πρόφασιν ἔχων.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοὺς",
+          "εὐεργέτας",
+          "ἠδίκησε",
+          "καὶ",
+          "ταῦτα",
+          "οὐδεμίαν",
+          "πρόφασιν",
+          "ἔχων"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t13",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "The soldiers were brave both in the assembly and on the battlefield.",
+        "answer": "οἱ στρατιῶται ἀνδρεῖοι ἦσαν καὶ ἐν τῇ ἐκκλησίᾳ καὶ ἐν τῇ μάχῃ.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "στρατιῶται",
+          "ἀνδρεῖοι",
+          "ἦσαν",
+          "καί",
+          "ἐν",
+          "τῇ",
+          "ἐκκλησίᾳ",
+          "μάχῃ"
+        ]
+      },
+      {
+        "prompt": "Not only then but also now the citizens trusted their laws.",
+        "answer": "καὶ τότε καὶ νῦν οἱ πολῖται τοῖς νόμοις ἐπίστευον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "τότε",
+          "νῦν",
+          "οἱ",
+          "πολῖται",
+          "τοῖς",
+          "νόμοις",
+          "ἐπίστευον"
+        ]
+      },
+      {
+        "prompt": "Both the rich and the poor feared the tyrant's anger.",
+        "answer": "καὶ οἱ πλούσιοι καὶ οἱ πένητες τὴν τοῦ τυράννου ὀργὴν ἐφοβοῦντο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "οἱ",
+          "πλούσιοι",
+          "πένητες",
+          "τήν",
+          "τοῦ",
+          "τυράννου",
+          "ὀργήν",
+          "ἐφοβοῦντο"
+        ]
+      },
+      {
+        "prompt": "Whether he conquers or is conquered, he will win honour.",
+        "answer": "καὶ νικῶν καὶ νικώμενος τιμὴν οἴσεται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "νικῶν",
+          "νικώμενος",
+          "τιμήν",
+          "οἴσεται"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t14",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "For the city such counsel is worth little or nothing.",
+        "answer": "ἡ τοιαύτη βουλὴ τῇ πόλει ὀλίγου τινὸς ἀξία ἐστὶ καὶ οὐδενός.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "τοιαύτη",
+          "βουλή",
+          "τῇ",
+          "πόλει",
+          "ὀλίγου",
+          "τινός",
+          "ἀξία",
+          "ἐστί",
+          "καί",
+          "οὐδενός"
+        ]
+      },
+      {
+        "prompt": "The merchant sold the shields at five or six drachmas each.",
+        "answer": "ὁ ἔμπορος τὰς ἀσπίδας ἀνὰ πέντε δραχμὰς καὶ ἓξ ἀπέδοτο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "ἔμπορος",
+          "τάς",
+          "ἀσπίδας",
+          "ἀνά",
+          "πέντε",
+          "δραχμάς",
+          "καί",
+          "ἕξ",
+          "ἀπέδοτο"
+        ]
+      },
+      {
+        "prompt": "But war will await us whether we advance or retreat.",
+        "answer": "πόλεμος δὲ ἡμῖν προϊοῦσι καὶ ἀπιοῦσιν ἔσται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πόλεμος",
+          "δέ",
+          "ἡμῖν",
+          "προϊοῦσι",
+          "καί",
+          "ἀπιοῦσιν",
+          "ἔσται"
+        ]
+      },
+      {
+        "prompt": "He said these things, right or wrong, before the whole assembly.",
+        "answer": "ταῦτα εἶπε, δίκαια καὶ ἄδικα, ἐναντίον πάσης τῆς ἐκκλησίας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ταῦτα",
+          "εἶπε",
+          "δίκαια",
+          "καί",
+          "ἄδικα",
+          "ἐναντίον",
+          "πάσης",
+          "τῆς",
+          "ἐκκλησίας"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t15",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "The general praised his soldiers, and yet punished the cowards.",
+        "answer": "ὁ στρατηγὸς τοὺς στρατιώτας ἐπῄνεσε, καὶ τοὺς δειλοὺς ἐκόλασεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "στρατηγός",
+          "τούς",
+          "στρατιώτας",
+          "ἐπῄνεσε",
+          "καί",
+          "δειλούς",
+          "ἐκόλασεν"
+        ]
+      },
+      {
+        "prompt": "You promised to help us, and yet you did nothing.",
+        "answer": "ὑπέσχου ἡμῖν βοηθήσειν, καὶ οὐδὲν ἐποίησας.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὑπέσχου",
+          "ἡμῖν",
+          "βοηθήσειν",
+          "καί",
+          "οὐδέν",
+          "ἐποίησας"
+        ]
+      },
+      {
+        "prompt": "The people chose that man as leader, and not the wiser one.",
+        "answer": "ὁ δῆμος ἐκεῖνον ἡγεμόνα εἵλετο καὶ οὐ τὸν σοφώτερον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "δῆμος",
+          "ἐκεῖνον",
+          "ἡγεμόνα",
+          "εἵλετο",
+          "καί",
+          "οὐ",
+          "τόν",
+          "σοφώτερον"
+        ]
+      },
+      {
+        "prompt": "They fought bravely, and yet were defeated by the barbarians.",
+        "answer": "ἀνδρείως ἐμάχοντο, καὶ ὑπὸ τῶν βαρβάρων ἐνικήθησαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἀνδρείως",
+          "ἐμάχοντο",
+          "καί",
+          "ὑπό",
+          "τῶν",
+          "βαρβάρων",
+          "ἐνικήθησαν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t16",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "And, pray, who will save the city now?",
+        "answer": "καὶ τίς σώσει τὴν πόλιν νῦν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "τίς",
+          "σώσει",
+          "τήν",
+          "πόλιν",
+          "νῦν"
+        ]
+      },
+      {
+        "prompt": "But when was this decree actually passed?",
+        "answer": "ποίου δὲ χρόνου καὶ ἐψηφίσθη τοῦτο τὸ ψήφισμα;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ποίου",
+          "δέ",
+          "χρόνου",
+          "καί",
+          "ἐψηφίσθη",
+          "τοῦτο",
+          "τό",
+          "ψήφισμα"
+        ]
+      },
+      {
+        "prompt": "And, pray, how did so small an army conquer the Persians?",
+        "answer": "καὶ πῶς ἡ οὕτως ὀλίγη στρατιὰ τοὺς Πέρσας ἐνίκησεν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "πῶς",
+          "ἡ",
+          "οὕτως",
+          "ὀλίγη",
+          "στρατιά",
+          "τούς",
+          "Πέρσας",
+          "ἐνίκησεν"
+        ]
+      },
+      {
+        "prompt": "And, pray, what does the oracle mean by these words?",
+        "answer": "καὶ τί βούλεται ὁ χρησμὸς τούτοις τοῖς ἔπεσιν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "τί",
+          "βούλεται",
+          "ὁ",
+          "χρησμός",
+          "τούτοις",
+          "τοῖς",
+          "ἔπεσιν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t17",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "And now read me the ambassadors' letter.",
+        "answer": "καί μοι ἀνάγνωθι τὴν τῶν πρέσβεων ἐπιστολήν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "μοι",
+          "ἀνάγνωθι",
+          "τήν",
+          "τῶν",
+          "πρέσβεων",
+          "ἐπιστολήν"
+        ]
+      },
+      {
+        "prompt": "Just answer me: who persuaded you to flee?",
+        "answer": "καί μοι ἀπόκριναι· τίς σε ἔπεισε φυγεῖν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "μοι",
+          "ἀπόκριναι",
+          "τίς",
+          "σε",
+          "ἔπεισε",
+          "φυγεῖν"
+        ]
+      },
+      {
+        "prompt": "And now tell the jurors the whole truth.",
+        "answer": "καὶ εἰπὲ τοῖς δικασταῖς πᾶσαν τὴν ἀλήθειαν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "εἰπέ",
+          "τοῖς",
+          "δικασταῖς",
+          "πᾶσαν",
+          "τήν",
+          "ἀλήθειαν"
+        ]
+      },
+      {
+        "prompt": "And now summon the witnesses into the court.",
+        "answer": "καὶ κάλεσον τοὺς μάρτυρας εἰς τὸ δικαστήριον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "κάλεσον",
+          "τούς",
+          "μάρτυρας",
+          "εἰς",
+          "τό",
+          "δικαστήριον"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t18",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "He has the same cloak as before.",
+        "answer": "τὸ αὐτὸ ἱμάτιον ἔχει καὶ πρότερον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τό",
+          "αὐτό",
+          "ἱμάτιον",
+          "ἔχει",
+          "καί",
+          "πρότερον"
+        ]
+      },
+      {
+        "prompt": "The strangers received the same rights as the citizens.",
+        "answer": "οἱ ξένοι τὰ αὐτὰ δίκαια ἔλαβον καὶ οἱ πολῖται.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οἱ",
+          "ξένοι",
+          "τά",
+          "αὐτά",
+          "δίκαια",
+          "ἔλαβον",
+          "καί",
+          "πολῖται"
+        ]
+      },
+      {
+        "prompt": "He had scarcely spoken when the enemy attacked.",
+        "answer": "οὐκ ἔφθη εἰπὼν καὶ οἱ πολέμιοι προσέβαλον.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐκ",
+          "ἔφθη",
+          "εἰπών",
+          "καί",
+          "οἱ",
+          "πολέμιοι",
+          "προσέβαλον"
+        ]
+      },
+      {
+        "prompt": "At the same moment the trumpet sounded and the army advanced.",
+        "answer": "ἅμα ἡ σάλπιγξ ἐσήμηνε καὶ τὸ στράτευμα προῆλθεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἅμα",
+          "ἡ",
+          "σάλπιγξ",
+          "ἐσήμηνε",
+          "καί",
+          "τό",
+          "στράτευμα",
+          "προῆλθεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t19",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "Each of the mercenaries received four or five drachmas.",
+        "answer": "τῶν μισθοφόρων ἕκαστος τέτταρας δραχμὰς καὶ πέντε ἔλαβεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τῶν",
+          "μισθοφόρων",
+          "ἕκαστος",
+          "τέτταρας",
+          "δραχμάς",
+          "καί",
+          "πέντε",
+          "ἔλαβεν"
+        ]
+      },
+      {
+        "prompt": "For those advancing or retreating there was war all the same.",
+        "answer": "τοῖς προϊοῦσι καὶ ἀπιοῦσι πόλεμος ὁμοίως ἦν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῖς",
+          "προϊοῦσι",
+          "καί",
+          "ἀπιοῦσι",
+          "πόλεμος",
+          "ὁμοίως",
+          "ἦν"
+        ]
+      },
+      {
+        "prompt": "Fortune helped the bold and not the cautious.",
+        "answer": "ἡ τύχη τοῖς θρασέσι καὶ οὐ τοῖς εὐλαβέσιν ἐβοήθει.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἡ",
+          "τύχη",
+          "τοῖς",
+          "θρασέσι",
+          "καί",
+          "οὐ",
+          "εὐλαβέσιν",
+          "ἐβοήθει"
+        ]
+      },
+      {
+        "prompt": "Depart now in peace; and yet I release you unwillingly.",
+        "answer": "ἄπιθι νῦν ἐν εἰρήνῃ· καὶ ἄκων σε ἀφίημι.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἄπιθι",
+          "νῦν",
+          "ἐν",
+          "εἰρήνῃ",
+          "καί",
+          "ἄκων",
+          "σέ",
+          "ἀφίημι"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t20",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "And, pray, how shall we cross the river without ships?",
+        "answer": "καὶ πῶς τὸν ποταμὸν ἄνευ νεῶν διαβησόμεθα;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "πῶς",
+          "τόν",
+          "ποταμόν",
+          "ἄνευ",
+          "νεῶν",
+          "διαβησόμεθα"
+        ]
+      },
+      {
+        "prompt": "And, pray, what god sent you to us?",
+        "answer": "καὶ τίς θεὸς πρὸς ἡμᾶς ὑμᾶς ἔπεμψεν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "τίς",
+          "θεός",
+          "πρός",
+          "ἡμᾶς",
+          "ὑμᾶς",
+          "ἔπεμψεν"
+        ]
+      },
+      {
+        "prompt": "But when, pray, did the tyrant seize power?",
+        "answer": "πότε δὲ καὶ ὁ τύραννος τὴν ἀρχὴν κατέσχεν;",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "πότε",
+          "δέ",
+          "καί",
+          "ὁ",
+          "τύραννος",
+          "τήν",
+          "ἀρχήν",
+          "κατέσχεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t21",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "These men use the same laws as we do.",
+        "answer": "τοῖς αὐτοῖς νόμοις οὗτοι χρῶνται καὶ ἡμεῖς.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τοῖς",
+          "αὐτοῖς",
+          "νόμοις",
+          "οὗτοι",
+          "χρῶνται",
+          "καί",
+          "ἡμεῖς"
+        ]
+      },
+      {
+        "prompt": "The enemy did not fare the same as before.",
+        "answer": "οὐχ ὁμοίως οἱ πολέμιοι ἔπραξαν καὶ πρίν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐχ",
+          "ὁμοίως",
+          "οἱ",
+          "πολέμιοι",
+          "ἔπραξαν",
+          "καί",
+          "πρίν"
+        ]
+      },
+      {
+        "prompt": "At daybreak the general led out the army.",
+        "answer": "ἅμα δὲ τῇ ἡμέρᾳ καὶ ὁ στρατηγὸς τὸ στράτευμα ἐξήγαγεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ἅμα",
+          "δέ",
+          "τῇ",
+          "ἡμέρᾳ",
+          "καί",
+          "ὁ",
+          "στρατηγός",
+          "τό",
+          "στράτευμα",
+          "ἐξήγαγεν"
+        ]
+      },
+      {
+        "prompt": "As soon as we arrived, our host came out and welcomed us.",
+        "answer": "καὶ ἥκομεν καὶ ὁ ξένος ἐξελθὼν ἡμᾶς ἠσπάσατο.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "ἥκομεν",
+          "ὁ",
+          "ξένος",
+          "ἐξελθών",
+          "ἡμᾶς",
+          "ἠσπάσατο"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-t22",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "The wise man is happy both in prosperity and in misfortune.",
+        "answer": "ὁ σοφὸς καὶ ἐν εὐτυχίᾳ καὶ ἐν συμφορᾷ εὐδαίμων ἐστίν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "σοφός",
+          "καί",
+          "ἐν",
+          "εὐτυχίᾳ",
+          "συμφορᾷ",
+          "εὐδαίμων",
+          "ἐστίν"
+        ]
+      },
+      {
+        "prompt": "I shall dare it, whether the gods are willing or not.",
+        "answer": "τολμήσω, καὶ τῶν θεῶν βουλομένων καὶ μή.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "τολμήσω",
+          "καί",
+          "τῶν",
+          "θεῶν",
+          "βουλομένων",
+          "μή"
+        ]
+      },
+      {
+        "prompt": "The storm destroyed the ships, the sailors, and the cargo.",
+        "answer": "ὁ χειμὼν καὶ τὰς ναῦς καὶ τοὺς ναύτας καὶ τὰ χρήματα διέφθειρεν.",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "ὁ",
+          "χειμών",
+          "καί",
+          "τάς",
+          "ναῦς",
+          "τούς",
+          "ναύτας",
+          "τά",
+          "χρήματα",
+          "διέφθειρεν"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm-2869-conjunctional-kai-q1",
+    "sectionId": "sm-2869-conjunctional-kai",
+    "questions": [
+      {
+        "prompt": "Wisdom worth little or nothing.",
+        "answer": "σοφία ὀλίγου τινὸς ἀξία καὶ οὐδενός",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "σοφία",
+          "ὀλίγου",
+          "τινὸς",
+          "ἀξία",
+          "καὶ",
+          "οὐδενός"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Apology",
+          "locus": "23a"
+        }
+      },
+      {
+        "prompt": "And now read me the bill.",
+        "answer": "καί μοι ἀνάγνωθι τὸ ψήφισμα",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καί",
+          "μοι",
+          "ἀνάγνωθι",
+          "τὸ",
+          "ψήφισμα"
+        ],
+        "source": {
+          "author": "Lysias",
+          "work": "Orations",
+          "locus": "13.35"
+        }
+      },
+      {
+        "prompt": "Not the same as before.",
+        "answer": "οὐχ ὁμοίως καὶ πρίν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "οὐχ",
+          "ὁμοίως",
+          "καὶ",
+          "πρίν"
+        ],
+        "source": {
+          "author": "Thucydides",
+          "work": "History of the Peloponnesian War",
+          "locus": "7.28"
+        }
+      },
+      {
+        "prompt": "As soon as we arrived the doorkeeper came out and told us to wait.",
+        "answer": "καὶ ἥκομεν καὶ ἡμῖν ἐξελθὼν ὁ θυρωρὸς εἶπεν περιμένειν",
+        "kind": "translate-en-grc",
+        "vocab": [
+          "καὶ",
+          "ἥκομεν",
+          "καὶ",
+          "ἡμῖν",
+          "ἐξελθὼν",
+          "ὁ",
+          "θυρωρὸς",
+          "εἶπεν",
+          "περιμένειν"
+        ],
+        "source": {
+          "author": "Plato",
+          "work": "Phaedo",
+          "locus": "59e"
+        }
+      }
+    ]
+  }
 ]
