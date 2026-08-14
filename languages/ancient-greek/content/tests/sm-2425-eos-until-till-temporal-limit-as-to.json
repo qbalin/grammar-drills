@@ -409,5 +409,463 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2425-eos-until-till-temporal-limit-as-to-t7",
+  "sectionId": "sm-2425-eos-until-till-temporal-limit-as-to",
+  "questions": [
+   {
+    "prompt": "The herald waited in the marketplace until the archon dismissed the assembly.",
+    "answer": "ὁ κῆρυξ ἐν τῇ ἀγορᾷ ἔμεινεν ἕως ὁ ἄρχων τὴν ἐκκλησίαν διέλυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κῆρυξ",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἔμεινεν",
+     "ἕως",
+     "ἄρχων",
+     "τὴν",
+     "ἐκκλησίαν",
+     "διέλυσεν"
+    ]
+   },
+   {
+    "prompt": "The cowherds guarded the flocks until day came.",
+    "answer": "οἱ βουκόλοι τὰ ποίμνια ἐφύλαττον ἕως ἡμέρα ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "βουκόλοι",
+     "τὰ",
+     "ποίμνια",
+     "ἐφύλαττον",
+     "ἕως",
+     "ἡμέρα",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "The old man was honored by the citizens until he handed over the city to the enemy.",
+    "answer": "ὁ γέρων ὑπὸ τῶν πολιτῶν ἐτιμᾶτο ἕως τὴν πόλιν τοῖς πολεμίοις παρέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "ἐτιμᾶτο",
+     "ἕως",
+     "τὴν",
+     "πόλιν",
+     "τοῖς",
+     "πολεμίοις",
+     "παρέδωκεν"
+    ]
+   },
+   {
+    "prompt": "Up to that time the tyrant ruled the islanders, until the Athenians freed them.",
+    "answer": "μέχρι τούτου ὁ τύραννος τῶν νησιωτῶν ἦρχεν, ἕως οἱ Ἀθηναῖοι αὐτοὺς ἠλευθέρωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέχρι",
+     "τούτου",
+     "ὁ",
+     "τύραννος",
+     "τῶν",
+     "νησιωτῶν",
+     "ἦρχεν",
+     "ἕως",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "αὐτοὺς",
+     "ἠλευθέρωσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2425-eos-until-till-temporal-limit-as-to-t8",
+  "sectionId": "sm-2425-eos-until-till-temporal-limit-as-to",
+  "questions": [
+   {
+    "prompt": "The soldiers did not lay down their arms until the general gave the command.",
+    "answer": "οἱ στρατιῶται οὐ πρότερον τὰ ὅπλα κατέθεντο ἕως ὁ στρατηγὸς ἐκέλευσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "οὐ",
+     "πρότερον",
+     "τὰ",
+     "ὅπλα",
+     "κατέθεντο",
+     "ἕως",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκέλευσεν"
+    ]
+   },
+   {
+    "prompt": "The women did not cease from lamentation until the priest offered the sacrifice.",
+    "answer": "αἱ γυναῖκες οὐκ ἐπαύσαντο τοῦ θρήνου ἕως ὁ ἱερεὺς τὴν θυσίαν ἔθυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "γυναῖκες",
+     "οὐκ",
+     "ἐπαύσαντο",
+     "τοῦ",
+     "θρήνου",
+     "ἕως",
+     "ὁ",
+     "ἱερεὺς",
+     "τὴν",
+     "θυσίαν",
+     "ἔθυσεν"
+    ]
+   },
+   {
+    "prompt": "The plague did not stop until the god sent a seer into the city.",
+    "answer": "ἡ νόσος οὐ πρότερον ἔληξεν ἕως ὁ θεὸς μάντιν εἰς τὴν πόλιν ἔπεμψεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νόσος",
+     "οὐ",
+     "πρότερον",
+     "ἔληξεν",
+     "ἕως",
+     "ὁ",
+     "θεὸς",
+     "μάντιν",
+     "εἰς",
+     "τὴν",
+     "πόλιν",
+     "ἔπεμψεν"
+    ]
+   },
+   {
+    "prompt": "The jurors did not release the defendant until the witnesses spoke the truth.",
+    "answer": "οἱ δικασταὶ οὐκ ἀπέλυσαν τὸν φεύγοντα ἕως οἱ μάρτυρες τὴν ἀλήθειαν εἶπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "οὐκ",
+     "ἀπέλυσαν",
+     "τὸν",
+     "φεύγοντα",
+     "ἕως",
+     "μάρτυρες",
+     "τὴν",
+     "ἀλήθειαν",
+     "εἶπον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2425-eos-until-till-temporal-limit-as-to-t9",
+  "sectionId": "sm-2425-eos-until-till-temporal-limit-as-to",
+  "questions": [
+   {
+    "prompt": "Stay in the city until I send you a letter.",
+    "answer": "μένε ἐν τῇ πόλει ἕως ἂν ἐπιστολήν σοι πέμψω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μένε",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἕως",
+     "ἂν",
+     "ἐπιστολήν",
+     "σοι",
+     "πέμψω"
+    ]
+   },
+   {
+    "prompt": "We will besiege the wall until the citizens hand over the traitors.",
+    "answer": "τὸ τεῖχος πολιορκήσομεν ἕως ἂν οἱ πολῖται τοὺς προδότας παραδῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "τεῖχος",
+     "πολιορκήσομεν",
+     "ἕως",
+     "ἂν",
+     "οἱ",
+     "πολῖται",
+     "τοὺς",
+     "προδότας",
+     "παραδῶσιν"
+    ]
+   },
+   {
+    "prompt": "The farmer will guard the vines until the grapes become ripe.",
+    "answer": "ὁ γεωργὸς τὰς ἀμπέλους φυλάξει ἕως ἂν αἱ σταφυλαὶ πέπειροι γένωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γεωργὸς",
+     "τὰς",
+     "ἀμπέλους",
+     "φυλάξει",
+     "ἕως",
+     "ἂν",
+     "αἱ",
+     "σταφυλαὶ",
+     "πέπειροι",
+     "γένωνται"
+    ]
+   },
+   {
+    "prompt": "Do not begin the battle until the allies appear on the hill.",
+    "answer": "μὴ ἄρχου τῆς μάχης ἕως ἂν οἱ σύμμαχοι ἐπὶ τῷ λόφῳ φανῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἄρχου",
+     "τῆς",
+     "μάχης",
+     "ἕως",
+     "ἂν",
+     "οἱ",
+     "σύμμαχοι",
+     "ἐπὶ",
+     "τῷ",
+     "λόφῳ",
+     "φανῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2425-eos-until-till-temporal-limit-as-to-t10",
+  "sectionId": "sm-2425-eos-until-till-temporal-limit-as-to",
+  "questions": [
+   {
+    "prompt": "A wise man deliberates until he finds what is best.",
+    "answer": "ὁ σοφὸς βουλεύεται ἕως ἂν εὕρῃ τὸ ἄριστον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "βουλεύεται",
+     "ἕως",
+     "ἂν",
+     "εὕρῃ",
+     "τὸ",
+     "ἄριστον"
+    ]
+   },
+   {
+    "prompt": "The bees toil until they fill the hive with honey.",
+    "answer": "αἱ μέλιτται πονοῦσιν ἕως ἂν τὸ σμῆνος μέλιτος πληρώσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἱ",
+     "μέλιτται",
+     "πονοῦσιν",
+     "ἕως",
+     "ἂν",
+     "τὸ",
+     "σμῆνος",
+     "μέλιτος",
+     "πληρώσωσιν"
+    ]
+   },
+   {
+    "prompt": "A prudent sailor does not put to sea until the wind becomes favorable.",
+    "answer": "ὁ σώφρων ναύτης οὐκ ἀνάγεται ἕως ἂν ὁ ἄνεμος ἐπιτήδειος γένηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σώφρων",
+     "ναύτης",
+     "οὐκ",
+     "ἀνάγεται",
+     "ἕως",
+     "ἂν",
+     "ἄνεμος",
+     "ἐπιτήδειος",
+     "γένηται"
+    ]
+   },
+   {
+    "prompt": "The child keeps crying until his mother gives him bread.",
+    "answer": "τὸ παιδίον κλαίει ἕως ἂν ἡ μήτηρ ἄρτον αὐτῷ δῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "παιδίον",
+     "κλαίει",
+     "ἕως",
+     "ἂν",
+     "ἡ",
+     "μήτηρ",
+     "ἄρτον",
+     "αὐτῷ",
+     "δῷ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2425-eos-until-till-temporal-limit-as-to-t11",
+  "sectionId": "sm-2425-eos-until-till-temporal-limit-as-to",
+  "questions": [
+   {
+    "prompt": "The guards always kept watch until the sun would set.",
+    "answer": "ἀεὶ οἱ φύλακες ἐφύλαττον ἕως ὁ ἥλιος δύοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀεὶ",
+     "οἱ",
+     "φύλακες",
+     "ἐφύλαττον",
+     "ἕως",
+     "ὁ",
+     "ἥλιος",
+     "δύοι"
+    ]
+   },
+   {
+    "prompt": "Whenever war arose, the citizens would flee to the mountains until the danger passed.",
+    "answer": "ὁπότε πόλεμος γένοιτο, οἱ πολῖται εἰς τὰ ὄρη ἔφευγον ἕως ὁ κίνδυνος παρέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "πόλεμος",
+     "γένοιτο",
+     "οἱ",
+     "πολῖται",
+     "εἰς",
+     "τὰ",
+     "ὄρη",
+     "ἔφευγον",
+     "ἕως",
+     "ὁ",
+     "κίνδυνος",
+     "παρέλθοι"
+    ]
+   },
+   {
+    "prompt": "He ordered the sailors to remain by the ships until he himself should return from the camp.",
+    "answer": "ἐκέλευσε τοὺς ναύτας παρὰ ταῖς ναυσὶ μένειν ἕως αὐτὸς ἐκ τοῦ στρατοπέδου ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκέλευσε",
+     "τοὺς",
+     "ναύτας",
+     "παρὰ",
+     "ταῖς",
+     "ναυσὶ",
+     "μένειν",
+     "ἕως",
+     "αὐτὸς",
+     "ἐκ",
+     "τοῦ",
+     "στρατοπέδου",
+     "ἐπανέλθοι"
+    ]
+   },
+   {
+    "prompt": "The king promised to spare the captives until the envoys should arrive from Sparta.",
+    "answer": "ὁ βασιλεὺς ὑπέσχετο φείσεσθαι τῶν αἰχμαλώτων ἕως οἱ πρέσβεις ἐκ τῆς Σπάρτης ἥκοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "ὑπέσχετο",
+     "φείσεσθαι",
+     "τῶν",
+     "αἰχμαλώτων",
+     "ἕως",
+     "οἱ",
+     "πρέσβεις",
+     "ἐκ",
+     "τῆς",
+     "Σπάρτης",
+     "ἥκοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2425-eos-until-till-temporal-limit-as-to-t12",
+  "sectionId": "sm-2425-eos-until-till-temporal-limit-as-to",
+  "questions": [
+   {
+    "prompt": "I would gladly wait here until you returned from the assembly.",
+    "answer": "ἡδέως ἂν ἐνθάδε περιμείναιμι ἕως ἐκ τῆς ἐκκλησίας ἐπανέλθοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡδέως",
+     "ἂν",
+     "ἐνθάδε",
+     "περιμείναιμι",
+     "ἕως",
+     "ἐκ",
+     "τῆς",
+     "ἐκκλησίας",
+     "ἐπανέλθοις"
+    ]
+   },
+   {
+    "prompt": "No one would trust him until he provided sureties.",
+    "answer": "οὐδεὶς ἂν αὐτῷ πιστεύσειεν ἕως ἐγγυητὰς παράσχοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἂν",
+     "αὐτῷ",
+     "πιστεύσειεν",
+     "ἕως",
+     "ἐγγυητὰς",
+     "παράσχοι"
+    ]
+   },
+   {
+    "prompt": "When the storm has ceased, the sailors will row until they reach the harbor.",
+    "answer": "τοῦ χειμῶνος παυσαμένου, οἱ ναῦται ἐλῶσιν ἕως ἂν εἰς τὸν λιμένα ἀφίκωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "χειμῶνος",
+     "παυσαμένου",
+     "οἱ",
+     "ναῦται",
+     "ἐλῶσιν",
+     "ἕως",
+     "ἂν",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "ἀφίκωνται"
+    ]
+   },
+   {
+    "prompt": "Having seized the citadel, the exiles held it until the Spartans came to their aid.",
+    "answer": "τὴν ἀκρόπολιν καταλαβόντες, οἱ φυγάδες αὐτὴν κατεῖχον ἕως οἱ Λακεδαιμόνιοι ἐβοήθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἀκρόπολιν",
+     "καταλαβόντες",
+     "οἱ",
+     "φυγάδες",
+     "αὐτὴν",
+     "κατεῖχον",
+     "ἕως",
+     "Λακεδαιμόνιοι",
+     "ἐβοήθησαν"
+    ]
+   }
+  ]
  }
 ]

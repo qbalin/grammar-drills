@@ -398,5 +398,661 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t7",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "When he had conquered the barbarians, he would return home.",
+    "answer": "ἐπεὶ τοὺς βαρβάρους νικήσειεν, οἴκαδε ἂν ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τοὺς",
+     "βαρβάρους",
+     "νικήσειεν",
+     "οἴκαδε",
+     "ἂν",
+     "ἐπανέλθοι"
+    ]
+   },
+   {
+    "prompt": "May I fall silent, when I no longer have anything to say.",
+    "answer": "σιγῴην, ὅτε μηκέτι λέγειν τι ἔχοιμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σιγῴην",
+     "ὅτε",
+     "μηκέτι",
+     "λέγειν",
+     "τι",
+     "ἔχοιμι"
+    ]
+   },
+   {
+    "prompt": "You would trust the ally whenever he kept his oaths.",
+    "answer": "τῷ συμμάχῳ πιστεύοις ἄν, ὁπότε τοὺς ὅρκους φυλάττοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "συμμάχῳ",
+     "πιστεύοις",
+     "ἄν",
+     "ὁπότε",
+     "τοὺς",
+     "ὅρκους",
+     "φυλάττοι"
+    ]
+   },
+   {
+    "prompt": "They ordered the citizens to lay down their arms as soon as the herald should appear.",
+    "answer": "παρήγγειλαν τοῖς πολίταις τὰ ὅπλα καταθέσθαι, ἐπειδὴ ὁ κῆρυξ φανείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρήγγειλαν",
+     "τοῖς",
+     "πολίταις",
+     "τὰ",
+     "ὅπλα",
+     "καταθέσθαι",
+     "ἐπειδὴ",
+     "ὁ",
+     "κῆρυξ",
+     "φανείη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t8",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "When winter set in, the enemy would attack the city.",
+    "answer": "ἐπεὶ ὁ χειμὼν γίγνοιτο, οἱ πολέμιοι τῇ πόλει ἂν προσβάλλοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὁ",
+     "χειμὼν",
+     "γίγνοιτο",
+     "οἱ",
+     "πολέμιοι",
+     "τῇ",
+     "πόλει",
+     "ἂν",
+     "προσβάλλοιεν"
+    ]
+   },
+   {
+    "prompt": "May I not be a coward, when the trumpet calls me to battle.",
+    "answer": "μὴ δειλὸς εἴην, ὁπότε ἡ σάλπιγξ εἰς μάχην καλοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "δειλὸς",
+     "εἴην",
+     "ὁπότε",
+     "ἡ",
+     "σάλπιγξ",
+     "εἰς",
+     "μάχην",
+     "καλοίη"
+    ]
+   },
+   {
+    "prompt": "The wise man would speak whenever the occasion demanded.",
+    "answer": "ὁ σοφὸς λέγοι ἄν, ὁπότε ὁ καιρὸς ἀπαιτοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "λέγοι",
+     "ἄν",
+     "ὁπότε",
+     "καιρὸς",
+     "ἀπαιτοίη"
+    ]
+   },
+   {
+    "prompt": "He commanded the soldiers to guard the bridge until he returned.",
+    "answer": "ἐκέλευσε τοὺς στρατιώτας τὴν γέφυραν φυλάττειν, ἕως ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐκέλευσε",
+     "τοὺς",
+     "στρατιώτας",
+     "τὴν",
+     "γέφυραν",
+     "φυλάττειν",
+     "ἕως",
+     "ἐπανέλθοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t9",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "Whenever the general gave the signal, the army would advance.",
+    "answer": "ὁπότε ὁ στρατηγὸς σημήνειεν, τὸ στράτευμα προχωροίη ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ὁ",
+     "στρατηγὸς",
+     "σημήνειεν",
+     "τὸ",
+     "στράτευμα",
+     "προχωροίη",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "May I find friends, when I come to a foreign land.",
+    "answer": "φίλους εὕροιμι, ὅτε εἰς ξένην γῆν ἀφικοίμην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φίλους",
+     "εὕροιμι",
+     "ὅτε",
+     "εἰς",
+     "ξένην",
+     "γῆν",
+     "ἀφικοίμην"
+    ]
+   },
+   {
+    "prompt": "You would pity the exile whenever he lamented his misfortunes.",
+    "answer": "τὸν φυγάδα οἰκτίροις ἄν, ὁπότε τὰς συμφορὰς ὀδύροιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "φυγάδα",
+     "οἰκτίροις",
+     "ἄν",
+     "ὁπότε",
+     "τὰς",
+     "συμφορὰς",
+     "ὀδύροιτο"
+    ]
+   },
+   {
+    "prompt": "They resolved to remain in the camp until the scouts brought news.",
+    "answer": "ἔδοξεν αὐτοῖς ἐν τῷ στρατοπέδῳ μένειν, ἕως οἱ σκοποὶ ἀγγείλειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "μένειν",
+     "ἕως",
+     "οἱ",
+     "σκοποὶ",
+     "ἀγγείλειαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t10",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "When he had persuaded the assembly, he would obtain the command.",
+    "answer": "ἐπεὶ τὴν ἐκκλησίαν πείσειεν, τὴν ἀρχὴν ἂν λάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "τὴν",
+     "ἐκκλησίαν",
+     "πείσειεν",
+     "ἀρχὴν",
+     "ἂν",
+     "λάβοι"
+    ]
+   },
+   {
+    "prompt": "May I see my children, while I still live.",
+    "answer": "τὰ τέκνα ἴδοιμι, ἕως ἔτι ζῴην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "τέκνα",
+     "ἴδοιμι",
+     "ἕως",
+     "ἔτι",
+     "ζῴην"
+    ]
+   },
+   {
+    "prompt": "The judge would acquit the defendant whenever the proofs were weak.",
+    "answer": "ὁ δικαστὴς τὸν φεύγοντα ἀπολύοι ἄν, ὁπότε αἱ ἀποδείξεις ἀσθενεῖς εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστὴς",
+     "τὸν",
+     "φεύγοντα",
+     "ἀπολύοι",
+     "ἄν",
+     "ὁπότε",
+     "αἱ",
+     "ἀποδείξεις",
+     "ἀσθενεῖς",
+     "εἶεν"
+    ]
+   },
+   {
+    "prompt": "He told the sailors to cast off the ship as soon as the wind arose.",
+    "answer": "τοῖς ναύταις εἶπε τὴν ναῦν λῦσαι, ἐπειδὴ ὁ ἄνεμος ἐπιπνεύσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "ναύταις",
+     "εἶπε",
+     "τὴν",
+     "ναῦν",
+     "λῦσαι",
+     "ἐπειδὴ",
+     "ὁ",
+     "ἄνεμος",
+     "ἐπιπνεύσειεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t11",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "Whenever the philosopher asked a question, the young men would fall silent.",
+    "answer": "ὁπότε ὁ φιλόσοφος ἐρωτῴη, οἱ νεανίαι σιωπῷεν ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπότε",
+     "ὁ",
+     "φιλόσοφος",
+     "ἐρωτῴη",
+     "οἱ",
+     "νεανίαι",
+     "σιωπῷεν",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "May I be free from grief, when old age comes upon me.",
+    "answer": "ἄλυπος εἴην, ὅτε τὸ γῆρας ἐπέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἄλυπος",
+     "εἴην",
+     "ὅτε",
+     "τὸ",
+     "γῆρας",
+     "ἐπέλθοι"
+    ]
+   },
+   {
+    "prompt": "You would admire the craftsman whenever he made something beautiful.",
+    "answer": "τὸν δημιουργὸν θαυμάζοις ἄν, ὁπότε τι καλὸν ποιοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "δημιουργὸν",
+     "θαυμάζοις",
+     "ἄν",
+     "ὁπότε",
+     "τι",
+     "καλὸν",
+     "ποιοίη"
+    ]
+   },
+   {
+    "prompt": "They ordered the guards to open the gates when the king approached.",
+    "answer": "προσέταξαν τοῖς φύλαξι τὰς πύλας ἀνοίγειν, ἡνίκα ὁ βασιλεὺς προσελαύνοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "προσέταξαν",
+     "τοῖς",
+     "φύλαξι",
+     "τὰς",
+     "πύλας",
+     "ἀνοίγειν",
+     "ἡνίκα",
+     "ὁ",
+     "βασιλεὺς",
+     "προσελαύνοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t12",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "When he had gathered enough money, he would build a temple.",
+    "answer": "ἐπεὶ ἱκανὰ χρήματα συλλέξειεν, ἱερὸν ἂν οἰκοδομήσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ἱκανὰ",
+     "χρήματα",
+     "συλλέξειεν",
+     "ἱερὸν",
+     "ἂν",
+     "οἰκοδομήσειεν"
+    ]
+   },
+   {
+    "prompt": "May I please the gods, whenever I offer the first-fruits.",
+    "answer": "τοῖς θεοῖς ἀρέσκοιμι, ὁπότε τὰς ἀπαρχὰς προσφέροιμι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῖς",
+     "θεοῖς",
+     "ἀρέσκοιμι",
+     "ὁπότε",
+     "τὰς",
+     "ἀπαρχὰς",
+     "προσφέροιμι"
+    ]
+   },
+   {
+    "prompt": "You would forgive the servant whenever he confessed his fault.",
+    "answer": "τῷ οἰκέτῃ συγγιγνώσκοις ἄν, ὁπότε τὴν ἁμαρτίαν ὁμολογοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῷ",
+     "οἰκέτῃ",
+     "συγγιγνώσκοις",
+     "ἄν",
+     "ὁπότε",
+     "τὴν",
+     "ἁμαρτίαν",
+     "ὁμολογοίη"
+    ]
+   },
+   {
+    "prompt": "He advised them to withdraw until they had recovered their strength.",
+    "answer": "συνεβούλευσεν αὐτοῖς ἀναχωρεῖν, ἕως τὴν ῥώμην ἀναλάβοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "συνεβούλευσεν",
+     "αὐτοῖς",
+     "ἀναχωρεῖν",
+     "ἕως",
+     "τὴν",
+     "ῥώμην",
+     "ἀναλάβοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t13",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "He would praise the citizens whenever they obeyed the laws.",
+    "answer": "ἐπαινοίη ἂν τοὺς πολίτας, ὁπότε τοῖς νόμοις πείθοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπαινοίη",
+     "ἂν",
+     "τοὺς",
+     "πολίτας",
+     "ὁπότε",
+     "τοῖς",
+     "νόμοις",
+     "πείθοιντο"
+    ]
+   },
+   {
+    "prompt": "You would flee out of the city whenever the enemy advanced.",
+    "answer": "φεύγοις ἂν ἐκ τῆς πόλεως, ὁπότε οἱ πολέμιοι προσελαύνοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεύγοις",
+     "ἂν",
+     "ἐκ",
+     "τῆς",
+     "πόλεως",
+     "ὁπότε",
+     "οἱ",
+     "πολέμιοι",
+     "προσελαύνοιεν"
+    ]
+   },
+   {
+    "prompt": "May I never become a slave, when tyranny falls upon the land.",
+    "answer": "μήποτε δοῦλος γενοίμην, ὅτε τυραννὶς τῇ χώρᾳ ἐπιπίπτοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μήποτε",
+     "δοῦλος",
+     "γενοίμην",
+     "ὅτε",
+     "τυραννὶς",
+     "τῇ",
+     "χώρᾳ",
+     "ἐπιπίπτοι"
+    ]
+   },
+   {
+    "prompt": "The wise man would keep silent until the assembly summoned him.",
+    "answer": "ὁ σοφὸς σιωπῴη ἄν, ἕως ἡ ἐκκλησία αὐτὸν καλέσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "σιωπῴη",
+     "ἄν",
+     "ἕως",
+     "ἡ",
+     "ἐκκλησία",
+     "αὐτὸν",
+     "καλέσειεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t14",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "The general ordered the soldiers to rest until they had crossed the river.",
+    "answer": "ὁ στρατηγὸς ἐκέλευσε τοὺς στρατιώτας ἀναπαύεσθαι, ἕως τὸν ποταμὸν διαβαῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐκέλευσε",
+     "τοὺς",
+     "στρατιώτας",
+     "ἀναπαύεσθαι",
+     "ἕως",
+     "τὸν",
+     "ποταμὸν",
+     "διαβαῖεν"
+    ]
+   },
+   {
+    "prompt": "It seemed good to them to keep advancing until they reached the mountains.",
+    "answer": "ἔδοξεν αὐτοῖς προϊέναι, ἕως πρὸς τὰ ὄρη ἀφίκοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτοῖς",
+     "προϊέναι",
+     "ἕως",
+     "πρὸς",
+     "τὰ",
+     "ὄρη",
+     "ἀφίκοιντο"
+    ]
+   },
+   {
+    "prompt": "He kept begging the king to remain until the messengers should depart.",
+    "answer": "ἐδεῖτο τοῦ βασιλέως μένειν, ἕως οἱ ἄγγελοι ἀπέλθοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐδεῖτο",
+     "τοῦ",
+     "βασιλέως",
+     "μένειν",
+     "ἕως",
+     "οἱ",
+     "ἄγγελοι",
+     "ἀπέλθοιεν"
+    ]
+   },
+   {
+    "prompt": "They issued orders that, when they had armed themselves, all should attack.",
+    "answer": "παρήγγειλαν, ἐπειδὴ ὁπλίσαιντο, πάντας προσβάλλειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "παρήγγειλαν",
+     "ἐπειδὴ",
+     "ὁπλίσαιντο",
+     "πάντας",
+     "προσβάλλειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t15",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "When thirsty he would drink whenever he found a spring in the mountains.",
+    "answer": "διψῶν πίοι ἄν, ὁπότε πηγὴν ἐν τοῖς ὄρεσιν εὕροι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διψῶν",
+     "πίοι",
+     "ἄν",
+     "ὁπότε",
+     "πηγὴν",
+     "ἐν",
+     "τοῖς",
+     "ὄρεσιν",
+     "εὕροι"
+    ]
+   },
+   {
+    "prompt": "The sailors would rejoice whenever they caught sight of the shore from afar.",
+    "answer": "οἱ ναῦται χαίροιεν ἄν, ὁπότε τὴν ἀκτὴν πόρρωθεν ἴδοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "χαίροιεν",
+     "ἄν",
+     "ὁπότε",
+     "τὴν",
+     "ἀκτὴν",
+     "πόρρωθεν",
+     "ἴδοιεν"
+    ]
+   },
+   {
+    "prompt": "May I not live, when freedom perishes out of the land.",
+    "answer": "μὴ ζῴην, ὅτε ἡ ἐλευθερία ἐκ τῆς χώρας ἀπόλοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ζῴην",
+     "ὅτε",
+     "ἡ",
+     "ἐλευθερία",
+     "ἐκ",
+     "τῆς",
+     "χώρας",
+     "ἀπόλοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2404-future-temporal-clauses-with-the-t16",
+  "sectionId": "sm-2404-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "You would send a letter to your father whenever you were abroad in a foreign land.",
+    "answer": "πέμποις ἂν ἐπιστολὴν τῷ πατρί, ὁπότε ἐν ξένῃ γῇ ἀποδημοίης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πέμποις",
+     "ἂν",
+     "ἐπιστολὴν",
+     "τῷ",
+     "πατρί",
+     "ὁπότε",
+     "ἐν",
+     "ξένῃ",
+     "γῇ",
+     "ἀποδημοίης"
+    ]
+   },
+   {
+    "prompt": "The judge would release the prisoner whenever the witnesses fell silent.",
+    "answer": "ὁ δικαστὴς λύοι ἂν τὸν δεσμώτην, ὁπότε οἱ μάρτυρες σιγήσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δικαστὴς",
+     "λύοι",
+     "ἂν",
+     "τὸν",
+     "δεσμώτην",
+     "ὁπότε",
+     "οἱ",
+     "μάρτυρες",
+     "σιγήσειαν"
+    ]
+   },
+   {
+    "prompt": "It seemed best to him to besiege the city until the enemy yielded.",
+    "answer": "ἔδοξεν αὐτῷ πολιορκεῖν τὴν πόλιν, ἕως οἱ πολέμιοι εἴξειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔδοξεν",
+     "αὐτῷ",
+     "πολιορκεῖν",
+     "τὴν",
+     "πόλιν",
+     "ἕως",
+     "οἱ",
+     "πολέμιοι",
+     "εἴξειαν"
+    ]
+   },
+   {
+    "prompt": "May we conquer the barbarians, when the god sends a favorable sign.",
+    "answer": "νικήσαιμεν τοὺς βαρβάρους, ὅτε ὁ θεὸς αἴσιον σημεῖον πέμποι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νικήσαιμεν",
+     "τοὺς",
+     "βαρβάρους",
+     "ὅτε",
+     "ὁ",
+     "θεὸς",
+     "αἴσιον",
+     "σημεῖον",
+     "πέμποι"
+    ]
+   }
+  ]
  }
 ]

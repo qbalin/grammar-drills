@@ -454,5 +454,331 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2448-prin-with-the-optative-t7",
+  "sectionId": "sm-2448-prin-with-the-optative",
+  "questions": [
+   {
+    "prompt": "The satrap forbade the horsemen to cross the river before the foot-soldiers should arrive.",
+    "answer": "ὁ σατράπης τοῖς ἱππεῦσιν ἀπηγόρευε μὴ διαβαίνειν τὸν ποταμὸν πρὶν οἱ πεζοὶ ἀφίκοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σατράπης",
+     "τοῖς",
+     "ἱππεῦσιν",
+     "ἀπηγόρευε",
+     "μὴ",
+     "διαβαίνειν",
+     "τὸν",
+     "ποταμὸν",
+     "πρὶν",
+     "οἱ",
+     "πεζοὶ",
+     "ἀφίκοιντο"
+    ]
+   },
+   {
+    "prompt": "The captain would not let the peltasts pursue before the trumpet should sound.",
+    "answer": "οὐκ εἴα ὁ ταξίαρχος τοὺς πελταστὰς διώκειν πρὶν ἡ σάλπιγξ σημήνειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "εἴα",
+     "ὁ",
+     "ταξίαρχος",
+     "τοὺς",
+     "πελταστὰς",
+     "διώκειν",
+     "πρὶν",
+     "ἡ",
+     "σάλπιγξ",
+     "σημήνειεν"
+    ]
+   },
+   {
+    "prompt": "The elders persuaded the young men not to attack the wall before the ladders should be brought up.",
+    "answer": "οἱ πρεσβύτεροι τοὺς νεανίας ἔπειθον μὴ προσβάλλειν τῷ τείχει πρὶν αἱ κλίμακες κομισθεῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρεσβύτεροι",
+     "τοὺς",
+     "νεανίας",
+     "ἔπειθον",
+     "μὴ",
+     "προσβάλλειν",
+     "τῷ",
+     "τείχει",
+     "πρὶν",
+     "αἱ",
+     "κλίμακες",
+     "κομισθεῖεν"
+    ]
+   },
+   {
+    "prompt": "The priest would not permit the suppliants to depart before they should touch the altar.",
+    "answer": "ὁ ἱερεὺς τοῖς ἱκέταις οὐκ ἐπέτρεπεν ἀπιέναι πρὶν τοῦ βωμοῦ ἅψαιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἱερεὺς",
+     "τοῖς",
+     "ἱκέταις",
+     "οὐκ",
+     "ἐπέτρεπεν",
+     "ἀπιέναι",
+     "πρὶν",
+     "τοῦ",
+     "βωμοῦ",
+     "ἅψαιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2448-prin-with-the-optative-t8",
+  "sectionId": "sm-2448-prin-with-the-optative",
+  "questions": [
+   {
+    "prompt": "The steersman was unwilling to bring the ship to shore before the wind should die down.",
+    "answer": "ὁ κυβερνήτης οὐκ ἤθελε τὴν ναῦν προσάγειν πρὶν ὁ ἄνεμος λήξειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "κυβερνήτης",
+     "οὐκ",
+     "ἤθελε",
+     "τὴν",
+     "ναῦν",
+     "προσάγειν",
+     "πρὶν",
+     "ἄνεμος",
+     "λήξειεν"
+    ]
+   },
+   {
+    "prompt": "The old man would not consent to hand over the money before he should receive a pledge.",
+    "answer": "ὁ γέρων οὐ συνεχώρει τὸ ἀργύριον παραδοῦναι πρὶν πίστιν λάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "οὐ",
+     "συνεχώρει",
+     "τὸ",
+     "ἀργύριον",
+     "παραδοῦναι",
+     "πρὶν",
+     "πίστιν",
+     "λάβοι"
+    ]
+   },
+   {
+    "prompt": "The Athenians would not stop ravaging the land before the enemy should sue for peace.",
+    "answer": "οἱ Ἀθηναῖοι οὐκ ἐπαύοντο τὴν χώραν τέμνοντες πρὶν οἱ πολέμιοι εἰρήνης δεηθεῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "οὐκ",
+     "ἐπαύοντο",
+     "τὴν",
+     "χώραν",
+     "τέμνοντες",
+     "πρὶν",
+     "πολέμιοι",
+     "εἰρήνης",
+     "δεηθεῖεν"
+    ]
+   },
+   {
+    "prompt": "The faithful slave refused to leave his master before he should lead him out of the danger.",
+    "answer": "ὁ πιστὸς δοῦλος οὐκ ἠξίου τὸν δεσπότην ἀπολιπεῖν πρὶν αὐτὸν ἐκ τοῦ κινδύνου ἐξαγάγοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πιστὸς",
+     "δοῦλος",
+     "οὐκ",
+     "ἠξίου",
+     "τὸν",
+     "δεσπότην",
+     "ἀπολιπεῖν",
+     "πρὶν",
+     "αὐτὸν",
+     "ἐκ",
+     "τοῦ",
+     "κινδύνου",
+     "ἐξαγάγοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2448-prin-with-the-optative-t9",
+  "sectionId": "sm-2448-prin-with-the-optative",
+  "questions": [
+   {
+    "prompt": "The nurse would not stop singing before the child should fall asleep.",
+    "answer": "ἡ τροφὸς οὐκ ἐπαύετο ᾄδουσα πρὶν τὸ παιδίον κοιμηθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "τροφὸς",
+     "οὐκ",
+     "ἐπαύετο",
+     "ᾄδουσα",
+     "πρὶν",
+     "τὸ",
+     "παιδίον",
+     "κοιμηθείη"
+    ]
+   },
+   {
+    "prompt": "The council forbade the envoys to answer before they should learn the king's opinion.",
+    "answer": "ἡ βουλὴ τοὺς πρέσβεις ἀπηγόρευε μὴ ἀποκρίνεσθαι πρὶν τὴν τοῦ βασιλέως γνώμην μάθοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "βουλὴ",
+     "τοὺς",
+     "πρέσβεις",
+     "ἀπηγόρευε",
+     "μὴ",
+     "ἀποκρίνεσθαι",
+     "πρὶν",
+     "τὴν",
+     "τοῦ",
+     "βασιλέως",
+     "γνώμην",
+     "μάθοιεν"
+    ]
+   },
+   {
+    "prompt": "Being cautious, the guards would not open the treasury before the archon should command it.",
+    "answer": "εὐλαβεῖς ὄντες οἱ φύλακες οὐκ ἀνέῳγον τὸν θησαυρὸν πρὶν ὁ ἄρχων κελεύσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐλαβεῖς",
+     "ὄντες",
+     "οἱ",
+     "φύλακες",
+     "οὐκ",
+     "ἀνέῳγον",
+     "τὸν",
+     "θησαυρὸν",
+     "πρὶν",
+     "ὁ",
+     "ἄρχων",
+     "κελεύσειεν"
+    ]
+   },
+   {
+    "prompt": "Though the enemy had drawn near, the citizens would not surrender the acropolis before help should appear.",
+    "answer": "τῶν πολεμίων πλησιασάντων οἱ πολῖται οὐ παρεδίδοσαν τὴν ἀκρόπολιν πρὶν βοήθεια φανείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "πλησιασάντων",
+     "οἱ",
+     "πολῖται",
+     "οὐ",
+     "παρεδίδοσαν",
+     "τὴν",
+     "ἀκρόπολιν",
+     "πρὶν",
+     "βοήθεια",
+     "φανείη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2448-prin-with-the-optative-t10",
+  "sectionId": "sm-2448-prin-with-the-optative",
+  "questions": [
+   {
+    "prompt": "If a wise man should set his hand to the task, he would not abandon it before he had brought it to an end.",
+    "answer": "εἰ σοφός τις τῷ ἔργῳ ἐπιχειρήσειεν, οὐκ ἂν αὐτὸ ἀπολίποι πρὶν εἰς τέλος ἀγάγοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοφός",
+     "τις",
+     "τῷ",
+     "ἔργῳ",
+     "ἐπιχειρήσειεν",
+     "οὐκ",
+     "ἂν",
+     "αὐτὸ",
+     "ἀπολίποι",
+     "πρὶν",
+     "εἰς",
+     "τέλος",
+     "ἀγάγοι"
+    ]
+   },
+   {
+    "prompt": "If the judge were just, he would not condemn the defendant before he had heard the witnesses.",
+    "answer": "εἰ δίκαιος εἴη ὁ δικαστής, οὐκ ἂν καταγιγνώσκοι τοῦ φεύγοντος πρὶν τῶν μαρτύρων ἀκούσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δίκαιος",
+     "εἴη",
+     "ὁ",
+     "δικαστής",
+     "οὐκ",
+     "ἂν",
+     "καταγιγνώσκοι",
+     "τοῦ",
+     "φεύγοντος",
+     "πρὶν",
+     "τῶν",
+     "μαρτύρων",
+     "ἀκούσειεν"
+    ]
+   },
+   {
+    "prompt": "If a general wished to conquer, he would not join battle before he had drawn up the phalanx.",
+    "answer": "εἰ νικᾶν βούλοιτο ὁ στρατηγός, οὐκ ἂν συμβάλοι πρὶν τὴν φάλαγγα τάξειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "νικᾶν",
+     "βούλοιτο",
+     "ὁ",
+     "στρατηγός",
+     "οὐκ",
+     "ἂν",
+     "συμβάλοι",
+     "πρὶν",
+     "τὴν",
+     "φάλαγγα",
+     "τάξειεν"
+    ]
+   },
+   {
+    "prompt": "If he were truly grateful, he would not rest before he had requited his benefactor.",
+    "answer": "εἰ ἀληθῶς χάριν εἰδείη, οὐκ ἂν ἡσυχάζοι πρὶν τὸν εὐεργέτην ἀμείψαιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἀληθῶς",
+     "χάριν",
+     "εἰδείη",
+     "οὐκ",
+     "ἂν",
+     "ἡσυχάζοι",
+     "πρὶν",
+     "τὸν",
+     "εὐεργέτην",
+     "ἀμείψαιτο"
+    ]
+   }
+  ]
  }
 ]

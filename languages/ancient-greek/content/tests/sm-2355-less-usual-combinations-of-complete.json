@@ -427,5 +427,780 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t7",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If the general is present in the camp, no soldier would dare to flee.",
+    "answer": "εἰ ὁ στρατηγὸς ἐν τῷ στρατοπέδῳ πάρεστιν, οὐδεὶς στρατιώτης φεύγειν ἂν τολμήσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "πάρεστιν",
+     "οὐδεὶς",
+     "στρατιώτης",
+     "φεύγειν",
+     "ἂν",
+     "τολμήσειεν"
+    ]
+   },
+   {
+    "prompt": "If wisdom is truly the greatest of goods, who would not pursue it eagerly?",
+    "answer": "εἰ ἡ σοφία τῷ ὄντι μέγιστόν ἐστι τῶν ἀγαθῶν, τίς οὐκ ἂν αὐτὴν προθύμως διώκοι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "σοφία",
+     "τῷ",
+     "ὄντι",
+     "μέγιστόν",
+     "ἐστι",
+     "τῶν",
+     "ἀγαθῶν",
+     "τίς",
+     "οὐκ",
+     "ἂν",
+     "αὐτὴν",
+     "προθύμως",
+     "διώκοι"
+    ]
+   },
+   {
+    "prompt": "If she has suffered such things at the hands of her friends, she would justly hate them.",
+    "answer": "εἰ τοιαῦτα ὑπὸ τῶν φίλων πέπονθε, δικαίως ἂν αὐτοὺς μισοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοιαῦτα",
+     "ὑπὸ",
+     "τῶν",
+     "φίλων",
+     "πέπονθε",
+     "δικαίως",
+     "ἂν",
+     "αὐτοὺς",
+     "μισοίη"
+    ]
+   },
+   {
+    "prompt": "If the citizens honor virtue, they would never willingly obey a tyrant.",
+    "answer": "εἰ οἱ πολῖται τὴν ἀρετὴν τιμῶσιν, οὐκ ἄν ποτε ἑκόντες τυράννῳ πείθοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολῖται",
+     "τὴν",
+     "ἀρετὴν",
+     "τιμῶσιν",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "ἑκόντες",
+     "τυράννῳ",
+     "πείθοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t8",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If you learn this art well, you would never lack a livelihood.",
+    "answer": "ἐὰν ταύτην τὴν τέχνην καλῶς μάθῃς, οὐκ ἄν ποτε βίου σπανίζοις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ταύτην",
+     "τὴν",
+     "τέχνην",
+     "καλῶς",
+     "μάθῃς",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "βίου",
+     "σπανίζοις"
+    ]
+   },
+   {
+    "prompt": "If the enemy attack by night, we would not easily guard the walls.",
+    "answer": "ἐὰν οἱ πολέμιοι νυκτὸς προσβάλωσιν, οὐκ ἂν ῥᾳδίως τὰ τείχη φυλάττοιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "πολέμιοι",
+     "νυκτὸς",
+     "προσβάλωσιν",
+     "οὐκ",
+     "ἂν",
+     "ῥᾳδίως",
+     "τὰ",
+     "τείχη",
+     "φυλάττοιμεν"
+    ]
+   },
+   {
+    "prompt": "If the general leads us wisely, we would gladly follow him everywhere.",
+    "answer": "ἐὰν ὁ στρατηγὸς σοφῶς ἡμᾶς ἄγῃ, ἡδέως ἂν αὐτῷ πανταχοῦ ἑποίμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "στρατηγὸς",
+     "σοφῶς",
+     "ἡμᾶς",
+     "ἄγῃ",
+     "ἡδέως",
+     "ἂν",
+     "αὐτῷ",
+     "πανταχοῦ",
+     "ἑποίμεθα"
+    ]
+   },
+   {
+    "prompt": "If we take the city by storm, no one would blame the soldiers.",
+    "answer": "ἐὰν τὴν πόλιν κατὰ κράτος ἕλωμεν, οὐδεὶς ἂν τοῖς στρατιώταις μέμφοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὴν",
+     "πόλιν",
+     "κατὰ",
+     "κράτος",
+     "ἕλωμεν",
+     "οὐδεὶς",
+     "ἂν",
+     "τοῖς",
+     "στρατιώταις",
+     "μέμφοιτο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t9",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If you are going to accuse your comrade, at least speak the truth.",
+    "answer": "εἰ τοῦ ἑταίρου κατηγορήσεις, τά γε ἀληθῆ λέγε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοῦ",
+     "ἑταίρου",
+     "κατηγορήσεις",
+     "τά",
+     "γε",
+     "ἀληθῆ",
+     "λέγε"
+    ]
+   },
+   {
+    "prompt": "If the army is going to march at dawn, let the soldiers prepare their weapons now.",
+    "answer": "εἰ ἡ στρατιὰ ἅμα τῇ ἕῳ πορεύσεται, νῦν τὰ ὅπλα οἱ στρατιῶται παρασκευαζέσθων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "στρατιὰ",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "πορεύσεται",
+     "νῦν",
+     "τὰ",
+     "ὅπλα",
+     "οἱ",
+     "στρατιῶται",
+     "παρασκευαζέσθων"
+    ]
+   },
+   {
+    "prompt": "If you are going to hand over the fortress, may you perish miserably.",
+    "answer": "εἰ τὸ φρούριον παραδώσεις, κακῶς ἀπόλοιο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸ",
+     "φρούριον",
+     "παραδώσεις",
+     "κακῶς",
+     "ἀπόλοιο"
+    ]
+   },
+   {
+    "prompt": "If we are going to sail against the islands, let us first sacrifice to Poseidon.",
+    "answer": "εἰ ἐπὶ τὰς νήσους πλευσόμεθα, πρῶτον τῷ Ποσειδῶνι θύσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἐπὶ",
+     "τὰς",
+     "νήσους",
+     "πλευσόμεθα",
+     "πρῶτον",
+     "τῷ",
+     "Ποσειδῶνι",
+     "θύσωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t10",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If the herald comes from the enemy, receive him with all honor.",
+    "answer": "ἐὰν ὁ κῆρυξ παρὰ τῶν πολεμίων ἔλθῃ, μετὰ πάσης τιμῆς αὐτὸν δέχου.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "κῆρυξ",
+     "παρὰ",
+     "τῶν",
+     "πολεμίων",
+     "ἔλθῃ",
+     "μετὰ",
+     "πάσης",
+     "τιμῆς",
+     "αὐτὸν",
+     "δέχου"
+    ]
+   },
+   {
+    "prompt": "If anyone speaks against the laws, let him be brought before the judges.",
+    "answer": "ἐάν τις κατὰ τῶν νόμων λέγῃ, πρὸς τοὺς δικαστὰς ἀγέσθω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "κατὰ",
+     "τῶν",
+     "νόμων",
+     "λέγῃ",
+     "πρὸς",
+     "τοὺς",
+     "δικαστὰς",
+     "ἀγέσθω"
+    ]
+   },
+   {
+    "prompt": "If the gods save the city from danger, let us build a temple to Athena.",
+    "answer": "ἐὰν οἱ θεοὶ τὴν πόλιν ἐκ τοῦ κινδύνου σώσωσιν, ἱερὸν τῇ Ἀθηνᾷ ἱδρυσώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "θεοὶ",
+     "τὴν",
+     "πόλιν",
+     "ἐκ",
+     "τοῦ",
+     "κινδύνου",
+     "σώσωσιν",
+     "ἱερὸν",
+     "τῇ",
+     "Ἀθηνᾷ",
+     "ἱδρυσώμεθα"
+    ]
+   },
+   {
+    "prompt": "If the young man proves brave in battle, may he be honored by the whole city.",
+    "answer": "ἐὰν ὁ νεανίας ἐν τῇ μάχῃ ἀνδρεῖος γένηται, ὑπὸ πάσης τῆς πόλεως τιμηθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "νεανίας",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀνδρεῖος",
+     "γένηται",
+     "ὑπὸ",
+     "πάσης",
+     "τῆς",
+     "πόλεως",
+     "τιμηθείη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t11",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If he really wrote these things, he would not now be denying them.",
+    "answer": "εἰ ταῦτα ὄντως ἔγραψεν, οὐκ ἂν νῦν αὐτὰ ἠρνεῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ταῦτα",
+     "ὄντως",
+     "ἔγραψεν",
+     "οὐκ",
+     "ἂν",
+     "νῦν",
+     "αὐτὰ",
+     "ἠρνεῖτο"
+    ]
+   },
+   {
+    "prompt": "If the ambassadors are really here, the king would already have learned everything.",
+    "answer": "εἰ οἱ πρέσβεις τῷ ὄντι ἥκουσι, πάντα ἂν ὁ βασιλεὺς ἤδη ἐπέπυστο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πρέσβεις",
+     "τῷ",
+     "ὄντι",
+     "ἥκουσι",
+     "πάντα",
+     "ἂν",
+     "ὁ",
+     "βασιλεὺς",
+     "ἤδη",
+     "ἐπέπυστο"
+    ]
+   },
+   {
+    "prompt": "If you are so wise, you would not have made such great mistakes.",
+    "answer": "εἰ οὕτω σοφὸς εἶ, οὐκ ἂν τηλικαῦτα ἥμαρτες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οὕτω",
+     "σοφὸς",
+     "εἶ",
+     "οὐκ",
+     "ἂν",
+     "τηλικαῦτα",
+     "ἥμαρτες"
+    ]
+   },
+   {
+    "prompt": "If the god is truly leading the army, we would long ago have conquered the barbarians.",
+    "answer": "εἰ ὁ θεὸς ἀληθῶς τὴν στρατιὰν ἄγει, πάλαι ἂν τοὺς βαρβάρους ἐνικήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "θεὸς",
+     "ἀληθῶς",
+     "τὴν",
+     "στρατιὰν",
+     "ἄγει",
+     "πάλαι",
+     "ἂν",
+     "τοὺς",
+     "βαρβάρους",
+     "ἐνικήσαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t12",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If the farmers irrigate the fields well, the land would bear much fruit.",
+    "answer": "εἰ οἱ γεωργοὶ τοὺς ἀγροὺς εὖ ἄρδουσι, πολὺν ἂν καρπὸν ἡ γῆ φέροι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "γεωργοὶ",
+     "τοὺς",
+     "ἀγροὺς",
+     "εὖ",
+     "ἄρδουσι",
+     "πολὺν",
+     "ἂν",
+     "καρπὸν",
+     "ἡ",
+     "γῆ",
+     "φέροι"
+    ]
+   },
+   {
+    "prompt": "If a great storm arises at sea, may the sailors reach the harbor safely.",
+    "answer": "ἐὰν μέγας χειμὼν ἐν τῇ θαλάττῃ γένηται, σῷοι οἱ ναῦται εἰς τὸν λιμένα ἀφίκοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "μέγας",
+     "χειμὼν",
+     "ἐν",
+     "τῇ",
+     "θαλάττῃ",
+     "γένηται",
+     "σῷοι",
+     "οἱ",
+     "ναῦται",
+     "εἰς",
+     "τὸν",
+     "λιμένα",
+     "ἀφίκοιντο"
+    ]
+   },
+   {
+    "prompt": "If you are going to dwell among the mountains, learn to endure cold and hunger.",
+    "answer": "εἰ ἐν τοῖς ὄρεσιν οἰκήσεις, μάθε ψῦχος καὶ λιμὸν φέρειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἐν",
+     "τοῖς",
+     "ὄρεσιν",
+     "οἰκήσεις",
+     "μάθε",
+     "ψῦχος",
+     "καὶ",
+     "λιμὸν",
+     "φέρειν"
+    ]
+   },
+   {
+    "prompt": "If the poet sings such things about the gods, who would still believe him?",
+    "answer": "εἰ ὁ ποιητὴς τοιαῦτα περὶ τῶν θεῶν ᾄδει, τίς ἂν αὐτῷ ἔτι πιστεύοι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ποιητὴς",
+     "τοιαῦτα",
+     "περὶ",
+     "τῶν",
+     "θεῶν",
+     "ᾄδει",
+     "τίς",
+     "ἂν",
+     "αὐτῷ",
+     "ἔτι",
+     "πιστεύοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t13",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If the general is now marching against us with his whole army, we could not easily escape.",
+    "answer": "εἰ ὁ στρατηγὸς νῦν παντὶ τῷ στρατεύματι ἐπὶ ἡμᾶς ἐλαύνει, οὐκ ἂν ῥᾳδίως φύγοιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "νῦν",
+     "παντὶ",
+     "τῷ",
+     "στρατεύματι",
+     "ἐπὶ",
+     "ἡμᾶς",
+     "ἐλαύνει",
+     "οὐκ",
+     "ἂν",
+     "ῥᾳδίως",
+     "φύγοιμεν"
+    ]
+   },
+   {
+    "prompt": "If Cyrus has indeed died, no one would still be willing to fight.",
+    "answer": "εἰ ὁ Κῦρος τῷ ὄντι τέθνηκεν, οὐδεὶς ἂν ἔτι μάχεσθαι ἐθέλοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Κῦρος",
+     "τῷ",
+     "ὄντι",
+     "τέθνηκεν",
+     "οὐδεὶς",
+     "ἂν",
+     "ἔτι",
+     "μάχεσθαι",
+     "ἐθέλοι"
+    ]
+   },
+   {
+    "prompt": "If these things are true, you would justly be honored by all.",
+    "answer": "εἰ ταῦτα ἀληθῆ ἐστιν, δικαίως ἂν ὑπὸ πάντων τιμῷο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ταῦτα",
+     "ἀληθῆ",
+     "ἐστιν",
+     "δικαίως",
+     "ἂν",
+     "ὑπὸ",
+     "πάντων",
+     "τιμῷο"
+    ]
+   },
+   {
+    "prompt": "If the priest sacrificed yesterday, the god would now be gracious to us.",
+    "answer": "εἰ ὁ ἱερεὺς χθὲς ἔθυσεν, νῦν ἂν ὁ θεὸς ἵλεως ἡμῖν εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἱερεὺς",
+     "χθὲς",
+     "ἔθυσεν",
+     "νῦν",
+     "ἂν",
+     "θεὸς",
+     "ἵλεως",
+     "ἡμῖν",
+     "εἴη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t14",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If the enemy are already near, the general being absent, let us ourselves guard the gates.",
+    "answer": "εἰ οἱ πολέμιοι ἤδη ἐγγύς εἰσιν, τοῦ στρατηγοῦ ἀπόντος, αὐτοὶ φυλάττωμεν τὰς πύλας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "ἤδη",
+     "ἐγγύς",
+     "εἰσιν",
+     "τοῦ",
+     "στρατηγοῦ",
+     "ἀπόντος",
+     "αὐτοὶ",
+     "φυλάττωμεν",
+     "τὰς",
+     "πύλας"
+    ]
+   },
+   {
+    "prompt": "If you have wronged the master who trusted you, confess it now.",
+    "answer": "εἰ τὸν δεσπότην σοι πιστεύσαντα ἠδίκηκας, ὁμολόγησον νῦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸν",
+     "δεσπότην",
+     "σοι",
+     "πιστεύσαντα",
+     "ἠδίκηκας",
+     "ὁμολόγησον",
+     "νῦν"
+    ]
+   },
+   {
+    "prompt": "If the gods love the just, may they implant understanding in our young men.",
+    "answer": "εἰ οἱ θεοὶ τοὺς δικαίους φιλοῦσιν, σύνεσιν τοῖς νεανίαις ἐμποιοῖεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "θεοὶ",
+     "τοὺς",
+     "δικαίους",
+     "φιλοῦσιν",
+     "σύνεσιν",
+     "τοῖς",
+     "νεανίαις",
+     "ἐμποιοῖεν"
+    ]
+   },
+   {
+    "prompt": "If the ship is ready, let us not delay any longer.",
+    "answer": "εἰ ἡ ναῦς ἑτοίμη ἐστίν, μηκέτι μέλλωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "ναῦς",
+     "ἑτοίμη",
+     "ἐστίν",
+     "μηκέτι",
+     "μέλλωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t15",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If you are not going to help your friends, do not call yourself a good man.",
+    "answer": "εἰ μὴ τοῖς φίλοις βοηθήσεις, μὴ σεαυτὸν ἀγαθὸν κάλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "μὴ",
+     "τοῖς",
+     "φίλοις",
+     "βοηθήσεις",
+     "σεαυτὸν",
+     "ἀγαθὸν",
+     "κάλει"
+    ]
+   },
+   {
+    "prompt": "If the general is going to lead us into danger, let us choose another.",
+    "answer": "εἰ ὁ στρατηγὸς εἰς κίνδυνον ἡμᾶς ἄξει, ἄλλον αἱρώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "εἰς",
+     "κίνδυνον",
+     "ἡμᾶς",
+     "ἄξει",
+     "ἄλλον",
+     "αἱρώμεθα"
+    ]
+   },
+   {
+    "prompt": "If the citizens are going to neglect the ancestral laws, the city would soon perish.",
+    "answer": "εἰ οἱ πολῖται τῶν πατρίων νόμων ἀμελήσουσιν, ταχέως ἂν ἡ πόλις ἀπόλοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολῖται",
+     "τῶν",
+     "πατρίων",
+     "νόμων",
+     "ἀμελήσουσιν",
+     "ταχέως",
+     "ἂν",
+     "ἡ",
+     "πόλις",
+     "ἀπόλοιτο"
+    ]
+   },
+   {
+    "prompt": "If the young men are going to obey their commander, may they display great manly valor.",
+    "answer": "εἰ οἱ νεανίαι τῷ ἄρχοντι πείσονται, μεγάλην ἀνδραγαθίαν ἐπιδείξαιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "νεανίαι",
+     "τῷ",
+     "ἄρχοντι",
+     "πείσονται",
+     "μεγάλην",
+     "ἀνδραγαθίαν",
+     "ἐπιδείξαιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2355-less-usual-combinations-of-complete-t16",
+  "sectionId": "sm-2355-less-usual-combinations-of-complete",
+  "questions": [
+   {
+    "prompt": "If you understand this trick, you would no longer fear the judges.",
+    "answer": "ἐὰν τοῦτο τὸ σόφισμα μάθῃς, οὐκ ἂν ἔτι τοὺς δικαστὰς φοβοῖο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τοῦτο",
+     "τὸ",
+     "σόφισμα",
+     "μάθῃς",
+     "οὐκ",
+     "ἂν",
+     "ἔτι",
+     "τοὺς",
+     "δικαστὰς",
+     "φοβοῖο"
+    ]
+   },
+   {
+    "prompt": "If the soldiers, after crossing the river, capture the fort, let them spare the prisoners.",
+    "answer": "ἐὰν οἱ στρατιῶται τὸν ποταμὸν διαβάντες τὸ φρούριον λάβωσιν, τῶν αἰχμαλώτων φειδέσθων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "στρατιῶται",
+     "τὸν",
+     "ποταμὸν",
+     "διαβάντες",
+     "τὸ",
+     "φρούριον",
+     "λάβωσιν",
+     "τῶν",
+     "αἰχμαλώτων",
+     "φειδέσθων"
+    ]
+   },
+   {
+    "prompt": "If you are going to slander a man of such great virtue, you ought long ago to have been punished.",
+    "answer": "εἰ ἄνδρα τοσαύτης ἀρετῆς συκοφαντήσεις, πάλαι ἐχρῆν σε δίκην δοῦναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἄνδρα",
+     "τοσαύτης",
+     "ἀρετῆς",
+     "συκοφαντήσεις",
+     "πάλαι",
+     "ἐχρῆν",
+     "σε",
+     "δίκην",
+     "δοῦναι"
+    ]
+   },
+   {
+    "prompt": "If the gods truly care for the just, they would not have allowed the city to be destroyed.",
+    "answer": "εἰ οἱ θεοὶ τῶν δικαίων ὄντως ἐπιμέλονται, οὐκ ἂν εἴασαν τὴν πόλιν διαφθαρῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "θεοὶ",
+     "τῶν",
+     "δικαίων",
+     "ὄντως",
+     "ἐπιμέλονται",
+     "οὐκ",
+     "ἂν",
+     "εἴασαν",
+     "τὴν",
+     "πόλιν",
+     "διαφθαρῆναι"
+    ]
+   }
+  ]
  }
 ]

@@ -389,5 +389,342 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2398-temporal-clauses-referring-to-the-future-t7",
+  "sectionId": "sm-2398-temporal-clauses-referring-to-the-future",
+  "questions": [
+   {
+    "prompt": "Whenever the herald proclaims peace, the citizens will rejoice.",
+    "answer": "ὅταν ὁ κῆρυξ εἰρήνην κηρύττῃ, οἱ πολῖται χαιρήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "κῆρυξ",
+     "εἰρήνην",
+     "κηρύττῃ",
+     "οἱ",
+     "πολῖται",
+     "χαιρήσουσιν"
+    ]
+   },
+   {
+    "prompt": "When the king has learned the truth, he will punish the traitors.",
+    "answer": "ἐπειδὰν ὁ βασιλεὺς τὴν ἀλήθειαν μάθῃ, τοὺς προδότας κολάσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ὁ",
+     "βασιλεὺς",
+     "τὴν",
+     "ἀλήθειαν",
+     "μάθῃ",
+     "τοὺς",
+     "προδότας",
+     "κολάσει"
+    ]
+   },
+   {
+    "prompt": "As long as the allies remain faithful, we will not fear the enemy.",
+    "answer": "ἕως ἂν οἱ σύμμαχοι πιστοὶ μένωσιν, τοὺς πολεμίους οὐ φοβησόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "οἱ",
+     "σύμμαχοι",
+     "πιστοὶ",
+     "μένωσιν",
+     "τοὺς",
+     "πολεμίους",
+     "οὐ",
+     "φοβησόμεθα"
+    ]
+   },
+   {
+    "prompt": "At that time, when you will hold the office, you will remember these words.",
+    "answer": "τότε, ὅτε τὴν ἀρχὴν ἕξεις, τούτων τῶν λόγων μνησθήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τότε",
+     "ὅτε",
+     "τὴν",
+     "ἀρχὴν",
+     "ἕξεις",
+     "τούτων",
+     "τῶν",
+     "λόγων",
+     "μνησθήσῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2398-temporal-clauses-referring-to-the-future-t8",
+  "sectionId": "sm-2398-temporal-clauses-referring-to-the-future",
+  "questions": [
+   {
+    "prompt": "Whenever the general summons the soldiers, they will follow willingly.",
+    "answer": "ὁπόταν ὁ στρατηγὸς τοὺς στρατιώτας καλῇ, ἑκόντες ἀκολουθήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "καλῇ",
+     "ἑκόντες",
+     "ἀκολουθήσουσιν"
+    ]
+   },
+   {
+    "prompt": "I will wait here until you send the letter.",
+    "answer": "ἐνθάδε μενῶ ἕως ἂν τὴν ἐπιστολὴν πέμψῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐνθάδε",
+     "μενῶ",
+     "ἕως",
+     "ἂν",
+     "τὴν",
+     "ἐπιστολὴν",
+     "πέμψῃς"
+    ]
+   },
+   {
+    "prompt": "When the storm has ceased, the sailors will loose the ship.",
+    "answer": "ἐπειδὰν ὁ χειμὼν παύσηται, οἱ ναῦται τὴν ναῦν λύσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ὁ",
+     "χειμὼν",
+     "παύσηται",
+     "οἱ",
+     "ναῦται",
+     "τὴν",
+     "ναῦν",
+     "λύσουσιν"
+    ]
+   },
+   {
+    "prompt": "He said that he would wait until his friends arrived.",
+    "answer": "ἔφη μενεῖν ἕως οἱ φίλοι ἀφίκοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔφη",
+     "μενεῖν",
+     "ἕως",
+     "οἱ",
+     "φίλοι",
+     "ἀφίκοιντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2398-temporal-clauses-referring-to-the-future-t9",
+  "sectionId": "sm-2398-temporal-clauses-referring-to-the-future",
+  "questions": [
+   {
+    "prompt": "Whenever you approach the altar, you will pray to the gods.",
+    "answer": "ὁπόταν τῷ βωμῷ προσέλθῃς, τοῖς θεοῖς εὔξῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "τῷ",
+     "βωμῷ",
+     "προσέλθῃς",
+     "τοῖς",
+     "θεοῖς",
+     "εὔξῃ"
+    ]
+   },
+   {
+    "prompt": "As long as the fire gives light, we will read the books.",
+    "answer": "ἕως ἂν τὸ πῦρ φῶς παρέχῃ, τὰ βιβλία ἀναγνωσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "τὸ",
+     "πῦρ",
+     "φῶς",
+     "παρέχῃ",
+     "τὰ",
+     "βιβλία",
+     "ἀναγνωσόμεθα"
+    ]
+   },
+   {
+    "prompt": "When the ambassadors have spoken, the council will deliberate.",
+    "answer": "ἐπειδὰν οἱ πρέσβεις εἴπωσιν, ἡ βουλὴ βουλεύσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "οἱ",
+     "πρέσβεις",
+     "εἴπωσιν",
+     "ἡ",
+     "βουλὴ",
+     "βουλεύσεται"
+    ]
+   },
+   {
+    "prompt": "There will be a day when the city will honor these men.",
+    "answer": "ἔσται ἡμέρα ὅτε ἡ πόλις τούτους τοὺς ἄνδρας τιμήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἔσται",
+     "ἡμέρα",
+     "ὅτε",
+     "ἡ",
+     "πόλις",
+     "τούτους",
+     "τοὺς",
+     "ἄνδρας",
+     "τιμήσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2398-temporal-clauses-referring-to-the-future-t10",
+  "sectionId": "sm-2398-temporal-clauses-referring-to-the-future",
+  "questions": [
+   {
+    "prompt": "Whenever the enemy attacks the walls, the citizens will defend themselves bravely.",
+    "answer": "ὁπόταν οἱ πολέμιοι τοῖς τείχεσι προσβάλωσιν, οἱ πολῖται ἀνδρείως ἀμυνοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "οἱ",
+     "πολέμιοι",
+     "τοῖς",
+     "τείχεσι",
+     "προσβάλωσιν",
+     "πολῖται",
+     "ἀνδρείως",
+     "ἀμυνοῦνται"
+    ]
+   },
+   {
+    "prompt": "We will pursue the fugitives until we catch them.",
+    "answer": "τοὺς φεύγοντας διώξομεν ἕως ἂν αὐτοὺς λάβωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "φεύγοντας",
+     "διώξομεν",
+     "ἕως",
+     "ἂν",
+     "αὐτοὺς",
+     "λάβωμεν"
+    ]
+   },
+   {
+    "prompt": "When spring comes, the farmer will sow the seed in the fields.",
+    "answer": "ἐπειδὰν τὸ ἔαρ ἔλθῃ, ὁ γεωργὸς τὸ σπέρμα ἐν τοῖς ἀγροῖς σπερεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "τὸ",
+     "ἔαρ",
+     "ἔλθῃ",
+     "ὁ",
+     "γεωργὸς",
+     "σπέρμα",
+     "ἐν",
+     "τοῖς",
+     "ἀγροῖς",
+     "σπερεῖ"
+    ]
+   },
+   {
+    "prompt": "The soldiers were ordered to hold the position until the general returned.",
+    "answer": "οἱ στρατιῶται ἐκελεύσθησαν τὸν τόπον φυλάττειν ἕως ὁ στρατηγὸς ἐπανέλθοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἐκελεύσθησαν",
+     "τὸν",
+     "τόπον",
+     "φυλάττειν",
+     "ἕως",
+     "ὁ",
+     "στρατηγὸς",
+     "ἐπανέλθοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2398-temporal-clauses-referring-to-the-future-t11",
+  "sectionId": "sm-2398-temporal-clauses-referring-to-the-future",
+  "questions": [
+   {
+    "prompt": "Whenever a citizen speaks unjustly, the judges will not listen to him.",
+    "answer": "ὁπόταν τις πολίτης ἀδίκως λέγῃ, οἱ δικασταὶ αὐτοῦ οὐκ ἀκούσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁπόταν",
+     "τις",
+     "πολίτης",
+     "ἀδίκως",
+     "λέγῃ",
+     "οἱ",
+     "δικασταὶ",
+     "αὐτοῦ",
+     "οὐκ",
+     "ἀκούσονται"
+    ]
+   },
+   {
+    "prompt": "As long as you honor the gods, they will preserve your house.",
+    "answer": "ἕως ἂν τοὺς θεοὺς τιμᾷς, τὸν οἶκόν σου σώσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "τοὺς",
+     "θεοὺς",
+     "τιμᾷς",
+     "τὸν",
+     "οἶκόν",
+     "σου",
+     "σώσουσιν"
+    ]
+   },
+   {
+    "prompt": "When the traitor has been caught, the people will rejoice exceedingly.",
+    "answer": "ἐπειδὰν ὁ προδότης ληφθῇ, ὁ δῆμος σφόδρα χαιρήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ὁ",
+     "προδότης",
+     "ληφθῇ",
+     "δῆμος",
+     "σφόδρα",
+     "χαιρήσει"
+    ]
+   },
+   {
+    "prompt": "At that time, when you will need friends, you will find none.",
+    "answer": "τότε, ὅτε φίλων δεήσῃ, οὐδένα εὑρήσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τότε",
+     "ὅτε",
+     "φίλων",
+     "δεήσῃ",
+     "οὐδένα",
+     "εὑρήσεις"
+    ]
+   }
+  ]
  }
 ]

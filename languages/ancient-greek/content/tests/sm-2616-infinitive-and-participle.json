@@ -375,5 +375,146 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2616-infinitive-and-participle-t7",
+  "sectionId": "sm-2616-infinitive-and-participle",
+  "questions": [
+   {
+    "prompt": "The old woman said that her daughter was more beautiful than all the others.",
+    "answer": "ἡ γραῦς ἔφη τὴν θυγατέρα καλλίω πασῶν τῶν ἄλλων εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "ἔφη",
+     "τὴν",
+     "θυγατέρα",
+     "καλλίω",
+     "πασῶν",
+     "τῶν",
+     "ἄλλων",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "Socrates, though about to die, believed that the soul was immortal.",
+    "answer": "ὁ Σωκράτης μέλλων ἀποθανεῖσθαι ἐνόμιζε τὴν ψυχὴν ἀθάνατον εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "Σωκράτης",
+     "μέλλων",
+     "ἀποθανεῖσθαι",
+     "ἐνόμιζε",
+     "τὴν",
+     "ψυχὴν",
+     "ἀθάνατον",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "The prisoners promised that they would betray the citadel to the general.",
+    "answer": "οἱ αἰχμάλωτοι ὑπέσχοντο τὴν ἀκρόπολιν τῷ στρατηγῷ προδώσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "αἰχμάλωτοι",
+     "ὑπέσχοντο",
+     "τὴν",
+     "ἀκρόπολιν",
+     "τῷ",
+     "στρατηγῷ",
+     "προδώσειν"
+    ]
+   },
+   {
+    "prompt": "The doctor thought that the wounded man would not live because of his wounds.",
+    "answer": "ὁ ἰατρὸς ᾤετο τὸν τετρωμένον διὰ τὰ τραύματα οὐ βιώσεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "ᾤετο",
+     "τὸν",
+     "τετρωμένον",
+     "διὰ",
+     "τὰ",
+     "τραύματα",
+     "οὐ",
+     "βιώσεσθαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2616-infinitive-and-participle-t8",
+  "sectionId": "sm-2616-infinitive-and-participle",
+  "questions": [
+   {
+    "prompt": "The scouts perceived that the bridge had been destroyed by the enemy.",
+    "answer": "οἱ σκοποὶ ᾔσθοντο τὴν γέφυραν ὑπὸ τῶν πολεμίων διεφθαρμένην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "σκοποὶ",
+     "ᾔσθοντο",
+     "τὴν",
+     "γέφυραν",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων",
+     "διεφθαρμένην"
+    ]
+   },
+   {
+    "prompt": "I know that you (pl.) have often helped the sick in the city.",
+    "answer": "οἶδα ὑμᾶς πολλάκις τοὺς ἐν τῇ πόλει κάμνοντας ὠφεληκότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶδα",
+     "ὑμᾶς",
+     "πολλάκις",
+     "τοὺς",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "κάμνοντας",
+     "ὠφεληκότας"
+    ]
+   },
+   {
+    "prompt": "The citizens heard that the general had died in the battle.",
+    "answer": "οἱ πολῖται ἤκουσαν τὸν στρατηγὸν ἐν τῇ μάχῃ ἀποθανόντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "ἤκουσαν",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "ἀποθανόντα"
+    ]
+   },
+   {
+    "prompt": "The king learned that the allies had already crossed the river.",
+    "answer": "ὁ βασιλεὺς ἐπύθετο τοὺς συμμάχους ἤδη τὸν ποταμὸν διαβεβηκότας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "ἐπύθετο",
+     "τοὺς",
+     "συμμάχους",
+     "ἤδη",
+     "τὸν",
+     "ποταμὸν",
+     "διαβεβηκότας"
+    ]
+   }
+  ]
  }
 ]

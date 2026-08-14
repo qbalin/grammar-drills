@@ -524,5 +524,702 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t8",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The soldiers will not lay down their arms until the general gives the signal.",
+    "answer": "οὐ πρότερον καταθήσονται οἱ στρατιῶται τὰ ὅπλα πρὶν ἂν ὁ στρατηγὸς σημήνῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πρότερον",
+     "καταθήσονται",
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ὅπλα",
+     "πρὶν",
+     "ἂν",
+     "ὁ",
+     "στρατηγὸς",
+     "σημήνῃ"
+    ]
+   },
+   {
+    "prompt": "Do not release the prisoners until you have questioned them about the plot.",
+    "answer": "μὴ ἀφῆτε τοὺς αἰχμαλώτους πρὶν ἂν αὐτοὺς περὶ τῆς ἐπιβουλῆς ἐρωτήσητε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἀφῆτε",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "πρὶν",
+     "ἂν",
+     "αὐτοὺς",
+     "περὶ",
+     "τῆς",
+     "ἐπιβουλῆς",
+     "ἐρωτήσητε"
+    ]
+   },
+   {
+    "prompt": "It is shameful to make peace before we have avenged the fallen.",
+    "answer": "αἰσχρόν ἐστι σπονδὰς ποιήσασθαι πρὶν ἂν τοῖς τεθνεῶσι τιμωρήσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "σπονδὰς",
+     "ποιήσασθαι",
+     "πρὶν",
+     "ἂν",
+     "τοῖς",
+     "τεθνεῶσι",
+     "τιμωρήσωμεν"
+    ]
+   },
+   {
+    "prompt": "The citizens will not trust the envoy until he has shown the letters.",
+    "answer": "οὐ πιστεύσουσιν οἱ πολῖται τῷ πρεσβευτῇ πρὶν ἂν τὰς ἐπιστολὰς ἐπιδείξῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πιστεύσουσιν",
+     "οἱ",
+     "πολῖται",
+     "τῷ",
+     "πρεσβευτῇ",
+     "πρὶν",
+     "ἂν",
+     "τὰς",
+     "ἐπιστολὰς",
+     "ἐπιδείξῃ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t9",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The physician will not give the drug until he has examined the sick man.",
+    "answer": "οὐ δώσει ὁ ἰατρὸς τὸ φάρμακον πρὶν ἂν τὸν κάμνοντα ἐπισκέψηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δώσει",
+     "ὁ",
+     "ἰατρὸς",
+     "τὸ",
+     "φάρμακον",
+     "πρὶν",
+     "ἂν",
+     "τὸν",
+     "κάμνοντα",
+     "ἐπισκέψηται"
+    ]
+   },
+   {
+    "prompt": "Do not cross the river until the scouts have reported what they saw.",
+    "answer": "μὴ διαβῆτε τὸν ποταμὸν πρὶν ἂν οἱ σκοποὶ ἀγγείλωσιν ἃ εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "διαβῆτε",
+     "τὸν",
+     "ποταμὸν",
+     "πρὶν",
+     "ἂν",
+     "οἱ",
+     "σκοποὶ",
+     "ἀγγείλωσιν",
+     "ἃ",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "We shall not believe these things until we ourselves have seen the deed.",
+    "answer": "οὐ πιστεύσομεν τούτοις πρὶν ἂν αὐτοὶ τὸ ἔργον ἴδωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πιστεύσομεν",
+     "τούτοις",
+     "πρὶν",
+     "ἂν",
+     "αὐτοὶ",
+     "τὸ",
+     "ἔργον",
+     "ἴδωμεν"
+    ]
+   },
+   {
+    "prompt": "It is not fitting for a general to retreat before he has tested the enemy's strength.",
+    "answer": "οὐ πρέπει στρατηγῷ ἀναχωρεῖν πρὶν ἂν τῆς τῶν πολεμίων ῥώμης πειραθῇ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πρέπει",
+     "στρατηγῷ",
+     "ἀναχωρεῖν",
+     "πρὶν",
+     "ἂν",
+     "τῆς",
+     "τῶν",
+     "πολεμίων",
+     "ῥώμης",
+     "πειραθῇ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t10",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The assembly will not disperse until it has chosen new magistrates.",
+    "answer": "οὐ διαλυθήσεται ἡ ἐκκλησία πρὶν ἂν νέους ἄρχοντας ἕληται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "διαλυθήσεται",
+     "ἡ",
+     "ἐκκλησία",
+     "πρὶν",
+     "ἂν",
+     "νέους",
+     "ἄρχοντας",
+     "ἕληται"
+    ]
+   },
+   {
+    "prompt": "Never trust fortune until you have seen how she treats the fortunate.",
+    "answer": "μηδέποτε τῇ τύχῃ πίστευε πρὶν ἂν ἴδῃς ὅπως τοῖς εὐτυχοῦσι χρῆται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδέποτε",
+     "τῇ",
+     "τύχῃ",
+     "πίστευε",
+     "πρὶν",
+     "ἂν",
+     "ἴδῃς",
+     "ὅπως",
+     "τοῖς",
+     "εὐτυχοῦσι",
+     "χρῆται"
+    ]
+   },
+   {
+    "prompt": "The Spartans do not join battle until they have sacrificed to the gods.",
+    "answer": "οὐ πρότερον μάχην συνάπτουσιν οἱ Λακεδαιμόνιοι πρὶν ἂν τοῖς θεοῖς θύσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "πρότερον",
+     "μάχην",
+     "συνάπτουσιν",
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "πρὶν",
+     "ἂν",
+     "τοῖς",
+     "θεοῖς",
+     "θύσωσιν"
+    ]
+   },
+   {
+    "prompt": "Do not judge the case until you have heard the witnesses on both sides.",
+    "answer": "μὴ κρίνητε τὴν δίκην πρὶν ἂν τῶν ἀμφοτέρωθεν μαρτύρων ἀκούσητε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "κρίνητε",
+     "τὴν",
+     "δίκην",
+     "πρὶν",
+     "ἂν",
+     "τῶν",
+     "ἀμφοτέρωθεν",
+     "μαρτύρων",
+     "ἀκούσητε"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t11",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The exiles will not return home until the tyrant has died.",
+    "answer": "οὐ κατίασιν οἱ φυγάδες οἴκαδε πρὶν ἂν ὁ τύραννος ἀποθάνῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "κατίασιν",
+     "οἱ",
+     "φυγάδες",
+     "οἴκαδε",
+     "πρὶν",
+     "ἂν",
+     "ὁ",
+     "τύραννος",
+     "ἀποθάνῃ"
+    ]
+   },
+   {
+    "prompt": "Do not open the gates until the herald has announced the truce.",
+    "answer": "μὴ ἀνοίξητε τὰς πύλας πρὶν ἂν ὁ κῆρυξ τὰς σπονδὰς ἀναγγείλῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἀνοίξητε",
+     "τὰς",
+     "πύλας",
+     "πρὶν",
+     "ἂν",
+     "ὁ",
+     "κῆρυξ",
+     "σπονδὰς",
+     "ἀναγγείλῃ"
+    ]
+   },
+   {
+    "prompt": "It is not right to punish the young man before we have learned the truth.",
+    "answer": "οὐ δίκαιόν ἐστι τὸν νεανίαν κολάζειν πρὶν ἂν τὸ ἀληθὲς μάθωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιόν",
+     "ἐστι",
+     "τὸν",
+     "νεανίαν",
+     "κολάζειν",
+     "πρὶν",
+     "ἂν",
+     "τὸ",
+     "ἀληθὲς",
+     "μάθωμεν"
+    ]
+   },
+   {
+    "prompt": "The husbandman will not sow the seed until the rains have come.",
+    "answer": "οὐ σπερεῖ ὁ γεωργὸς τὸ σπέρμα πρὶν ἂν οἱ ὄμβροι ἔλθωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "σπερεῖ",
+     "ὁ",
+     "γεωργὸς",
+     "τὸ",
+     "σπέρμα",
+     "πρὶν",
+     "ἂν",
+     "οἱ",
+     "ὄμβροι",
+     "ἔλθωσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t12",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "I will not release you from the oath until you have sworn to help the city.",
+    "answer": "οὐκ ἀφήσω σε τοῦ ὅρκου πρὶν ἂν ὀμόσῃς τῇ πόλει βοηθήσειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἀφήσω",
+     "σε",
+     "τοῦ",
+     "ὅρκου",
+     "πρὶν",
+     "ἂν",
+     "ὀμόσῃς",
+     "τῇ",
+     "πόλει",
+     "βοηθήσειν"
+    ]
+   },
+   {
+    "prompt": "The council will not deliberate until the priest has interpreted the omens.",
+    "answer": "οὐ βουλεύσεται ἡ βουλὴ πρὶν ἂν ὁ ἱερεὺς τὰ ἱερὰ ἐξηγήσηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "βουλεύσεται",
+     "ἡ",
+     "βουλὴ",
+     "πρὶν",
+     "ἂν",
+     "ὁ",
+     "ἱερεὺς",
+     "τὰ",
+     "ἱερὰ",
+     "ἐξηγήσηται"
+    ]
+   },
+   {
+    "prompt": "Do not flee from the storm until you have found where the harbor is.",
+    "answer": "μὴ φύγητε τὸν χειμῶνα πρὶν ἂν εὕρητε ὅπου ἐστὶν ὁ λιμήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "φύγητε",
+     "τὸν",
+     "χειμῶνα",
+     "πρὶν",
+     "ἂν",
+     "εὕρητε",
+     "ὅπου",
+     "ἐστὶν",
+     "ὁ",
+     "λιμήν"
+    ]
+   },
+   {
+    "prompt": "It is shameful for the orator to be silent before he has defended his friend.",
+    "answer": "αἰσχρόν ἐστι τῷ ῥήτορι σιγᾶν πρὶν ἂν ὑπὲρ τοῦ φίλου ἀπολογήσηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστι",
+     "τῷ",
+     "ῥήτορι",
+     "σιγᾶν",
+     "πρὶν",
+     "ἂν",
+     "ὑπὲρ",
+     "τοῦ",
+     "φίλου",
+     "ἀπολογήσηται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t13",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The children will not cease weeping until their mother returns.",
+    "answer": "οὐ παύσονται οἱ παῖδες δακρύοντες πρὶν ἂν ἡ μήτηρ ἐπανέλθῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "παύσονται",
+     "οἱ",
+     "παῖδες",
+     "δακρύοντες",
+     "πρὶν",
+     "ἂν",
+     "ἡ",
+     "μήτηρ",
+     "ἐπανέλθῃ"
+    ]
+   },
+   {
+    "prompt": "Do not lead the army out until you have provided food for many days.",
+    "answer": "μὴ ἐξαγάγῃς τὸ στράτευμα πρὶν ἂν σῖτον εἰς πολλὰς ἡμέρας παρασκευάσῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ἐξαγάγῃς",
+     "τὸ",
+     "στράτευμα",
+     "πρὶν",
+     "ἂν",
+     "σῖτον",
+     "εἰς",
+     "πολλὰς",
+     "ἡμέρας",
+     "παρασκευάσῃς"
+    ]
+   },
+   {
+    "prompt": "The wise do not blame fortune until they have examined their own errors.",
+    "answer": "οὐ μέμφονται οἱ σοφοὶ τὴν τύχην πρὶν ἂν τὰ ἑαυτῶν ἁμαρτήματα ἐξετάσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "μέμφονται",
+     "οἱ",
+     "σοφοὶ",
+     "τὴν",
+     "τύχην",
+     "πρὶν",
+     "ἂν",
+     "τὰ",
+     "ἑαυτῶν",
+     "ἁμαρτήματα",
+     "ἐξετάσωσιν"
+    ]
+   },
+   {
+    "prompt": "I consider it base to yield before we have driven the barbarians from the land.",
+    "answer": "αἰσχρὸν ἡγοῦμαι εἴκειν πρὶν ἂν τοὺς βαρβάρους ἐκ τῆς χώρας ἐλάσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρὸν",
+     "ἡγοῦμαι",
+     "εἴκειν",
+     "πρὶν",
+     "ἂν",
+     "τοὺς",
+     "βαρβάρους",
+     "ἐκ",
+     "τῆς",
+     "χώρας",
+     "ἐλάσωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t14",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The soldiers will not cross the river until the scouts sent ahead have found a ford.",
+    "answer": "οἱ στρατιῶται οὐ διαβήσονται τὸν ποταμὸν πρὶν ἂν οἱ προπεμφθέντες σκοποὶ πόρον εὕρωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "οὐ",
+     "διαβήσονται",
+     "τὸν",
+     "ποταμὸν",
+     "πρὶν",
+     "ἂν",
+     "προπεμφθέντες",
+     "σκοποὶ",
+     "πόρον",
+     "εὕρωσιν"
+    ]
+   },
+   {
+    "prompt": "Do not throw the javelin until you have seen the enemy clearly.",
+    "answer": "μὴ ῥίψῃς τὸ ἀκόντιον πρὶν ἂν τοὺς πολεμίους σαφῶς ἴδῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "ῥίψῃς",
+     "τὸ",
+     "ἀκόντιον",
+     "πρὶν",
+     "ἂν",
+     "τοὺς",
+     "πολεμίους",
+     "σαφῶς",
+     "ἴδῃς"
+    ]
+   },
+   {
+    "prompt": "The rear guard will not withdraw until the general has sounded the trumpet.",
+    "answer": "οἱ ὀπισθοφύλακες οὐκ ἀναχωρήσουσι πρὶν ἂν ὁ στρατηγὸς τῇ σάλπιγγι σημήνῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ὀπισθοφύλακες",
+     "οὐκ",
+     "ἀναχωρήσουσι",
+     "πρὶν",
+     "ἂν",
+     "ὁ",
+     "στρατηγὸς",
+     "τῇ",
+     "σάλπιγγι",
+     "σημήνῃ"
+    ]
+   },
+   {
+    "prompt": "It is shameful to praise the young man before you have tested his courage.",
+    "answer": "αἰσχρόν ἐστιν ἐπαινεῖν τὸν νεανίαν πρὶν ἂν τὴν ἀνδρείαν αὐτοῦ ἐξετάσῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρόν",
+     "ἐστιν",
+     "ἐπαινεῖν",
+     "τὸν",
+     "νεανίαν",
+     "πρὶν",
+     "ἂν",
+     "τὴν",
+     "ἀνδρείαν",
+     "αὐτοῦ",
+     "ἐξετάσῃς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t15",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The beggar will not depart from the gates until he has received something.",
+    "answer": "ὁ πτωχὸς οὐκ ἄπεισιν ἀπὸ τῶν πυλῶν πρὶν ἂν λάβῃ τι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "πτωχὸς",
+     "οὐκ",
+     "ἄπεισιν",
+     "ἀπὸ",
+     "τῶν",
+     "πυλῶν",
+     "πρὶν",
+     "ἂν",
+     "λάβῃ",
+     "τι"
+    ]
+   },
+   {
+    "prompt": "Do not enter the tent until you have questioned the guards.",
+    "answer": "μὴ εἰσέλθῃς εἰς τὴν σκηνὴν πρὶν ἂν τοὺς φρουροὺς ἐρωτήσῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "εἰσέλθῃς",
+     "εἰς",
+     "τὴν",
+     "σκηνὴν",
+     "πρὶν",
+     "ἂν",
+     "τοὺς",
+     "φρουροὺς",
+     "ἐρωτήσῃς"
+    ]
+   },
+   {
+    "prompt": "Although the allies urge them on, the Macedonians will not besiege the city until they have surrounded the wall.",
+    "answer": "οἱ Μακεδόνες, τῶν συμμάχων διακελευομένων, οὐ πολιορκήσουσι τὴν πόλιν πρὶν ἂν τὸ τεῖχος κύκλῳ περιλάβωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Μακεδόνες",
+     "τῶν",
+     "συμμάχων",
+     "διακελευομένων",
+     "οὐ",
+     "πολιορκήσουσι",
+     "τὴν",
+     "πόλιν",
+     "πρὶν",
+     "ἂν",
+     "τὸ",
+     "τεῖχος",
+     "κύκλῳ",
+     "περιλάβωσιν"
+    ]
+   },
+   {
+    "prompt": "I consider it base to abandon the ships before we have driven off the pirates.",
+    "answer": "αἰσχρὸν ἡγοῦμαι τὰς ναῦς καταλιπεῖν πρὶν ἂν τοὺς λῃστὰς ἀπελάσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "αἰσχρὸν",
+     "ἡγοῦμαι",
+     "τὰς",
+     "ναῦς",
+     "καταλιπεῖν",
+     "πρὶν",
+     "ἂν",
+     "τοὺς",
+     "λῃστὰς",
+     "ἀπελάσωμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2443-prin-with-the-subjunctive-t16",
+  "sectionId": "sm-2443-prin-with-the-subjunctive",
+  "questions": [
+   {
+    "prompt": "The citizens do not disperse from the market until they have heard the herald.",
+    "answer": "οἱ πολῖται οὐ διαλύονται ἐκ τῆς ἀγορᾶς πρὶν ἂν τοῦ κήρυκος ἀκούσωσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "οὐ",
+     "διαλύονται",
+     "ἐκ",
+     "τῆς",
+     "ἀγορᾶς",
+     "πρὶν",
+     "ἂν",
+     "τοῦ",
+     "κήρυκος",
+     "ἀκούσωσιν"
+    ]
+   },
+   {
+    "prompt": "Never trust a stranger until you have learned his character.",
+    "answer": "μηδέποτε πίστευε ξένῳ πρὶν ἂν τὸν τρόπον αὐτοῦ μάθῃς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μηδέποτε",
+     "πίστευε",
+     "ξένῳ",
+     "πρὶν",
+     "ἂν",
+     "τὸν",
+     "τρόπον",
+     "αὐτοῦ",
+     "μάθῃς"
+    ]
+   },
+   {
+    "prompt": "The old man will not disclose the god's response until the priest in the temple has sacrificed.",
+    "answer": "ὁ γέρων οὐ δηλώσει τὸν χρησμὸν πρὶν ἂν ὁ ἐν τῷ ἱερῷ ἱερεὺς θύσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "οὐ",
+     "δηλώσει",
+     "τὸν",
+     "χρησμὸν",
+     "πρὶν",
+     "ἂν",
+     "ἐν",
+     "τῷ",
+     "ἱερῷ",
+     "ἱερεὺς",
+     "θύσῃ"
+    ]
+   },
+   {
+    "prompt": "It is not right to punish the slaves before we have discovered the truth.",
+    "answer": "οὐ δίκαιόν ἐστι κολάζειν τοὺς δούλους πρὶν ἂν τὴν ἀλήθειαν πυθώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "δίκαιόν",
+     "ἐστι",
+     "κολάζειν",
+     "τοὺς",
+     "δούλους",
+     "πρὶν",
+     "ἂν",
+     "τὴν",
+     "ἀλήθειαν",
+     "πυθώμεθα"
+    ]
+   }
+  ]
  }
 ]

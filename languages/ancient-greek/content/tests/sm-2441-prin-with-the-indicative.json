@@ -431,5 +431,679 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t7",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "The generals did not withdraw the army before the enemy fled.",
+    "answer": "οἱ στρατηγοὶ οὐ πρότερον τὸ στράτευμα ἀπήγαγον πρὶν οἱ πολέμιοι ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατηγοὶ",
+     "οὐ",
+     "πρότερον",
+     "τὸ",
+     "στράτευμα",
+     "ἀπήγαγον",
+     "πρὶν",
+     "πολέμιοι",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The jurors did not condemn the young man until the witness had spoken.",
+    "answer": "οἱ δικασταὶ οὐ πρότερον τοῦ νεανίου κατεψηφίσαντο πρὶν ὁ μάρτυς εἶπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "οὐ",
+     "πρότερον",
+     "τοῦ",
+     "νεανίου",
+     "κατεψηφίσαντο",
+     "πρὶν",
+     "ὁ",
+     "μάρτυς",
+     "εἶπεν"
+    ]
+   },
+   {
+    "prompt": "The rebels escaped the notice of the guards until they seized the acropolis.",
+    "answer": "οἱ στασιῶται ἔλαθον τοὺς φύλακας πρὶν τὴν ἀκρόπολιν κατέλαβον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στασιῶται",
+     "ἔλαθον",
+     "τοὺς",
+     "φύλακας",
+     "πρὶν",
+     "τὴν",
+     "ἀκρόπολιν",
+     "κατέλαβον"
+    ]
+   },
+   {
+    "prompt": "You ought not to have sent the letter before you had learned the truth.",
+    "answer": "χρῆν σε μὴ πρότερον τὴν ἐπιστολὴν πέμψαι πρὶν τὴν ἀλήθειαν ἔμαθες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρῆν",
+     "σε",
+     "μὴ",
+     "πρότερον",
+     "τὴν",
+     "ἐπιστολὴν",
+     "πέμψαι",
+     "πρὶν",
+     "ἀλήθειαν",
+     "ἔμαθες"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t8",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "The sailors did not cease from their toil until the storm had ceased.",
+    "answer": "οἱ ναῦται οὐκ ἐπαύσαντο τοῦ πόνου πρὶν ὁ χειμὼν ἐπαύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "οὐκ",
+     "ἐπαύσαντο",
+     "τοῦ",
+     "πόνου",
+     "πρὶν",
+     "ὁ",
+     "χειμὼν",
+     "ἐπαύσατο"
+    ]
+   },
+   {
+    "prompt": "The Corinthians were not willing to make peace until the Spartans sent envoys.",
+    "answer": "οἱ Κορίνθιοι οὐκ ἤθελον εἰρήνην ποιεῖσθαι πρὶν οἱ Λακεδαιμόνιοι πρέσβεις ἔπεμψαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Κορίνθιοι",
+     "οὐκ",
+     "ἤθελον",
+     "εἰρήνην",
+     "ποιεῖσθαι",
+     "πρὶν",
+     "Λακεδαιμόνιοι",
+     "πρέσβεις",
+     "ἔπεμψαν"
+    ]
+   },
+   {
+    "prompt": "The plot remained hidden from the citizens until some slave revealed it.",
+    "answer": "ἡ ἐπιβουλὴ τοὺς πολίτας ἔλαθεν πρὶν δοῦλός τις αὐτὴν ἐμήνυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιβουλὴ",
+     "τοὺς",
+     "πολίτας",
+     "ἔλαθεν",
+     "πρὶν",
+     "δοῦλός",
+     "τις",
+     "αὐτὴν",
+     "ἐμήνυσεν"
+    ]
+   },
+   {
+    "prompt": "The general ought not to have attacked the city before he had gathered the allies.",
+    "answer": "οὐκ ἔδει τὸν στρατηγὸν πρότερον τῇ πόλει προσβαλεῖν πρὶν τοὺς συμμάχους συνήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔδει",
+     "τὸν",
+     "στρατηγὸν",
+     "πρότερον",
+     "τῇ",
+     "πόλει",
+     "προσβαλεῖν",
+     "πρὶν",
+     "τοὺς",
+     "συμμάχους",
+     "συνήγαγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t9",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "The Athenians did not honour the poet until he had won.",
+    "answer": "οἱ Ἀθηναῖοι οὐ πρότερον τὸν ποιητὴν ἐτίμησαν πρὶν ἐνίκησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "οὐ",
+     "πρότερον",
+     "τὸν",
+     "ποιητὴν",
+     "ἐτίμησαν",
+     "πρὶν",
+     "ἐνίκησεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers did not enter the camp before the sun had set.",
+    "answer": "οἱ στρατιῶται οὐ πρότερον εἰς τὸ στρατόπεδον εἰσῆλθον πρὶν ὁ ἥλιος ἔδυ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "οὐ",
+     "πρότερον",
+     "εἰς",
+     "τὸ",
+     "στρατόπεδον",
+     "εἰσῆλθον",
+     "πρὶν",
+     "ὁ",
+     "ἥλιος",
+     "ἔδυ"
+    ]
+   },
+   {
+    "prompt": "The fleet escaped the enemy's notice until it reached the island.",
+    "answer": "ὁ στόλος τοὺς πολεμίους ἔλαθεν πρὶν πρὸς τὴν νῆσον ἀφίκετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στόλος",
+     "τοὺς",
+     "πολεμίους",
+     "ἔλαθεν",
+     "πρὶν",
+     "πρὸς",
+     "τὴν",
+     "νῆσον",
+     "ἀφίκετο"
+    ]
+   },
+   {
+    "prompt": "We ought not to have believed the messenger before he had shown proofs.",
+    "answer": "οὐκ ἐχρῆν ἡμᾶς πρότερον τῷ ἀγγέλῳ πιστεῦσαι πρὶν τεκμήρια ἐπέδειξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐχρῆν",
+     "ἡμᾶς",
+     "πρότερον",
+     "τῷ",
+     "ἀγγέλῳ",
+     "πιστεῦσαι",
+     "πρὶν",
+     "τεκμήρια",
+     "ἐπέδειξεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t10",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "The king did not release the captives until they had paid the ransom.",
+    "answer": "ὁ βασιλεὺς οὐ πρότερον τοὺς αἰχμαλώτους ἀφῆκεν πρὶν τὰ λύτρα ἀπέδοσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "βασιλεὺς",
+     "οὐ",
+     "πρότερον",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "ἀφῆκεν",
+     "πρὶν",
+     "τὰ",
+     "λύτρα",
+     "ἀπέδοσαν"
+    ]
+   },
+   {
+    "prompt": "The people did not trust Themistocles until he had saved the city.",
+    "answer": "ὁ δῆμος οὐ πρότερον τῷ Θεμιστοκλεῖ ἐπίστευσεν πρὶν τὴν πόλιν ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "οὐ",
+     "πρότερον",
+     "τῷ",
+     "Θεμιστοκλεῖ",
+     "ἐπίστευσεν",
+     "πρὶν",
+     "τὴν",
+     "πόλιν",
+     "ἔσωσεν"
+    ]
+   },
+   {
+    "prompt": "The Persians did not perceive the ambush until they had entered the valley.",
+    "answer": "οἱ Πέρσαι οὐ πρότερον τὴν ἐνέδραν ᾔσθοντο πρὶν εἰς τὸ νάπος εἰσέβαλον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Πέρσαι",
+     "οὐ",
+     "πρότερον",
+     "τὴν",
+     "ἐνέδραν",
+     "ᾔσθοντο",
+     "πρὶν",
+     "εἰς",
+     "τὸ",
+     "νάπος",
+     "εἰσέβαλον"
+    ]
+   },
+   {
+    "prompt": "The Spartans ought not to have abandoned the wall before the allies came.",
+    "answer": "οὐκ ἔδει τοὺς Λακεδαιμονίους πρότερον τὸ τεῖχος λιπεῖν πρὶν οἱ σύμμαχοι ἦλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἔδει",
+     "τοὺς",
+     "Λακεδαιμονίους",
+     "πρότερον",
+     "τὸ",
+     "τεῖχος",
+     "λιπεῖν",
+     "πρὶν",
+     "οἱ",
+     "σύμμαχοι",
+     "ἦλθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t11",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "The physician did not leave the sick man until the fever had abated.",
+    "answer": "ὁ ἰατρὸς οὐ πρότερον τὸν κάμνοντα ἀπέλιπεν πρὶν ὁ πυρετὸς ἀνῆκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "οὐ",
+     "πρότερον",
+     "τὸν",
+     "κάμνοντα",
+     "ἀπέλιπεν",
+     "πρὶν",
+     "πυρετὸς",
+     "ἀνῆκεν"
+    ]
+   },
+   {
+    "prompt": "The Thebans did not besiege the town until winter came.",
+    "answer": "οἱ Θηβαῖοι οὐ πρότερον τὴν πόλιν ἐπολιόρκησαν πρὶν ὁ χειμὼν ἐγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Θηβαῖοι",
+     "οὐ",
+     "πρότερον",
+     "τὴν",
+     "πόλιν",
+     "ἐπολιόρκησαν",
+     "πρὶν",
+     "ὁ",
+     "χειμὼν",
+     "ἐγένετο"
+    ]
+   },
+   {
+    "prompt": "No one dared to speak until the tyrant had died.",
+    "answer": "οὐδεὶς ἐτόλμησεν εἰπεῖν πρὶν ὁ τύραννος ἀπέθανεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ἐτόλμησεν",
+     "εἰπεῖν",
+     "πρὶν",
+     "ὁ",
+     "τύραννος",
+     "ἀπέθανεν"
+    ]
+   },
+   {
+    "prompt": "The citizens ought not to have banished the general before they had heard his defence.",
+    "answer": "οὐκ ἐχρῆν τοὺς πολίτας πρότερον τὸν στρατηγὸν ἐκβαλεῖν πρὶν τὴν ἀπολογίαν ἤκουσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐχρῆν",
+     "τοὺς",
+     "πολίτας",
+     "πρότερον",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐκβαλεῖν",
+     "πρὶν",
+     "τὴν",
+     "ἀπολογίαν",
+     "ἤκουσαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t12",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "The merchants did not sail out of the harbour until the wind had died down.",
+    "answer": "οἱ ἔμποροι οὐ πρότερον ἐκ τοῦ λιμένος ἐξέπλευσαν πρὶν ὁ ἄνεμος ἔληξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἔμποροι",
+     "οὐ",
+     "πρότερον",
+     "ἐκ",
+     "τοῦ",
+     "λιμένος",
+     "ἐξέπλευσαν",
+     "πρὶν",
+     "ὁ",
+     "ἄνεμος",
+     "ἔληξεν"
+    ]
+   },
+   {
+    "prompt": "The boy did not obey his father until he was beaten.",
+    "answer": "ὁ παῖς οὐ πρότερον τῷ πατρὶ ἐπείθετο πρὶν ἐπλήγη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "οὐ",
+     "πρότερον",
+     "τῷ",
+     "πατρὶ",
+     "ἐπείθετο",
+     "πρὶν",
+     "ἐπλήγη"
+    ]
+   },
+   {
+    "prompt": "The jurors did not acquit him until the accuser withdrew.",
+    "answer": "οἱ δικασταὶ οὐ πρότερον αὐτὸν ἀπέλυσαν πρὶν ὁ κατήγορος ἀπέστη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "οὐ",
+     "πρότερον",
+     "αὐτὸν",
+     "ἀπέλυσαν",
+     "πρὶν",
+     "ὁ",
+     "κατήγορος",
+     "ἀπέστη"
+    ]
+   },
+   {
+    "prompt": "The Athenians ought not to have put the men to death before they had questioned them.",
+    "answer": "οὐκ ἐχρῆν τοὺς Ἀθηναίους πρότερον τοὺς ἄνδρας ἀποκτεῖναι πρὶν αὐτοὺς ἤροντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐχρῆν",
+     "τοὺς",
+     "Ἀθηναίους",
+     "πρότερον",
+     "ἄνδρας",
+     "ἀποκτεῖναι",
+     "πρὶν",
+     "αὐτοὺς",
+     "ἤροντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t13",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "The judges did not release the prisoner until the accuser had presented his proofs.",
+    "answer": "οἱ δικασταὶ οὐ πρότερον τὸν δεσμώτην ἀπέλυσαν πρὶν ὁ κατήγορος τὰς ἀποδείξεις παρέσχεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταί",
+     "οὐ",
+     "πρότερον",
+     "τόν",
+     "δεσμώτην",
+     "ἀπέλυσαν",
+     "πρίν",
+     "ὁ",
+     "κατήγορος",
+     "τάς",
+     "ἀποδείξεις",
+     "παρέσχεν"
+    ]
+   },
+   {
+    "prompt": "The soldiers did not rest until they had crossed the river.",
+    "answer": "οἱ στρατιῶται οὐκ ἀνεπαύσαντο πρὶν τὸν ποταμὸν διέβησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "οὐκ",
+     "ἀνεπαύσαντο",
+     "πρίν",
+     "τόν",
+     "ποταμόν",
+     "διέβησαν"
+    ]
+   },
+   {
+    "prompt": "The tyrant escaped the notice of the citizens until he had seized the acropolis.",
+    "answer": "ὁ τύραννος τοὺς πολίτας ἔλαθε πρὶν τὴν ἀκρόπολιν κατέλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τούς",
+     "πολίτας",
+     "ἔλαθε",
+     "πρίν",
+     "τήν",
+     "ἀκρόπολιν",
+     "κατέλαβεν"
+    ]
+   },
+   {
+    "prompt": "The citizens did not grow angry until they learned the truth.",
+    "answer": "οἱ πολῖται οὐ πρότερον ὠργίσθησαν πρὶν τὴν ἀλήθειαν ἔμαθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "οὐ",
+     "πρότερον",
+     "ὠργίσθησαν",
+     "πρίν",
+     "τήν",
+     "ἀλήθειαν",
+     "ἔμαθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t14",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "The Athenians did not send help until the city had been besieged.",
+    "answer": "οἱ Ἀθηναῖοι οὐκ ἐβοήθησαν πρὶν ἡ πόλις ἐπολιορκήθη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "Ἀθηναῖοι",
+     "οὐκ",
+     "ἐβοήθησαν",
+     "πρίν",
+     "ἡ",
+     "πόλις",
+     "ἐπολιορκήθη"
+    ]
+   },
+   {
+    "prompt": "The maiden did not cease from her fear until her brother appeared.",
+    "answer": "ἡ παρθένος οὐκ ἐπαύσατο τοῦ φόβου πρὶν ὁ ἀδελφὸς ἀνεφάνη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "οὐκ",
+     "ἐπαύσατο",
+     "τοῦ",
+     "φόβου",
+     "πρίν",
+     "ὁ",
+     "ἀδελφός",
+     "ἀνεφάνη"
+    ]
+   },
+   {
+    "prompt": "The general did not think it right to retreat until the scouts returned.",
+    "answer": "ὁ στρατηγὸς οὐκ ἠξίωσεν ἀναχωρεῖν πρὶν οἱ σκοποὶ ἐπανῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγός",
+     "οὐκ",
+     "ἠξίωσεν",
+     "ἀναχωρεῖν",
+     "πρίν",
+     "οἱ",
+     "σκοποί",
+     "ἐπανῆλθον"
+    ]
+   },
+   {
+    "prompt": "When day had come, the enemy did not attack until the general gave the signal.",
+    "answer": "ἡμέρας γενομένης οἱ πολέμιοι οὐ πρότερον προσέβαλον πρὶν ὁ στρατηγὸς τὸ σημεῖον ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡμέρας",
+     "γενομένης",
+     "οἱ",
+     "πολέμιοι",
+     "οὐ",
+     "πρότερον",
+     "προσέβαλον",
+     "πρίν",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "σημεῖον",
+     "ἔδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2441-prin-with-the-indicative-t15",
+  "sectionId": "sm-2441-prin-with-the-indicative",
+  "questions": [
+   {
+    "prompt": "You ought not to have sailed out before you had sacrificed to the gods.",
+    "answer": "χρῆν σε μὴ πρότερον ἐκπλεῦσαι πρὶν τοῖς θεοῖς ἔθυσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "χρῆν",
+     "σε",
+     "μή",
+     "πρότερον",
+     "ἐκπλεῦσαι",
+     "πρίν",
+     "τοῖς",
+     "θεοῖς",
+     "ἔθυσας"
+    ]
+   },
+   {
+    "prompt": "The city ought not to have made war before it had gathered its allies.",
+    "answer": "τὴν πόλιν οὐ χρῆν πρότερον πολεμῆσαι πρὶν τοὺς συμμάχους συνήγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τήν",
+     "πόλιν",
+     "οὐ",
+     "χρῆν",
+     "πρότερον",
+     "πολεμῆσαι",
+     "πρίν",
+     "τούς",
+     "συμμάχους",
+     "συνήγαγεν"
+    ]
+   },
+   {
+    "prompt": "The plot escaped the notice of the archons until the slave turned informer.",
+    "answer": "ἡ ἐπιβουλὴ τοὺς ἄρχοντας ἔλαθε πρὶν ὁ δοῦλος ἐμήνυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "ἐπιβουλή",
+     "τούς",
+     "ἄρχοντας",
+     "ἔλαθε",
+     "πρίν",
+     "ὁ",
+     "δοῦλος",
+     "ἐμήνυσεν"
+    ]
+   },
+   {
+    "prompt": "The comrades did not leave their post until the trumpet sounded.",
+    "answer": "οἱ ἑταῖροι οὐ πρότερον τὴν τάξιν ἔλιπον πρὶν ἡ σάλπιγξ ἐσήμηνεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ἑταῖροι",
+     "οὐ",
+     "πρότερον",
+     "τήν",
+     "τάξιν",
+     "ἔλιπον",
+     "πρίν",
+     "ἡ",
+     "σάλπιγξ",
+     "ἐσήμηνεν"
+    ]
+   }
+  ]
  }
 ]

@@ -535,5 +535,205 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t9",
+  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+  "questions": [
+   {
+    "prompt": "The scout reported that the enemy were encamping beside the river.",
+    "answer": "ὁ σκοπὸς ἤγγειλεν ὅτι οἱ πολέμιοι παρὰ τῷ ποταμῷ στρατοπεδεύοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σκοπὸς",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "παρὰ",
+     "τῷ",
+     "ποταμῷ",
+     "στρατοπεδεύοιντο"
+    ]
+   },
+   {
+    "prompt": "Cyrus perceived that the Greeks were fighting bravely.",
+    "answer": "Κῦρος ᾔσθετο ὅτι οἱ Ἕλληνες ἀνδρείως μάχοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Κῦρος",
+     "ᾔσθετο",
+     "ὅτι",
+     "οἱ",
+     "Ἕλληνες",
+     "ἀνδρείως",
+     "μάχοιντο"
+    ]
+   },
+   {
+    "prompt": "The messenger announced that the general had fallen in the battle.",
+    "answer": "ὁ ἄγγελος ἀπήγγειλεν ὅτι ὁ στρατηγὸς ἐν τῇ μάχῃ πέσοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἀπήγγειλεν",
+     "ὅτι",
+     "στρατηγὸς",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "πέσοι"
+    ]
+   },
+   {
+    "prompt": "We learned that the ships had sailed away during the night.",
+    "answer": "ἐπυθόμεθα ὅτι αἱ νῆες τῆς νυκτὸς ἀποπλεύσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπυθόμεθα",
+     "ὅτι",
+     "αἱ",
+     "νῆες",
+     "τῆς",
+     "νυκτὸς",
+     "ἀποπλεύσειαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t10",
+  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+  "questions": [
+   {
+    "prompt": "He says that he would never betray his friends.",
+    "answer": "λέγει ὅτι οὐκ ἄν ποτε τοὺς φίλους προδοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λέγει",
+     "ὅτι",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "τοὺς",
+     "φίλους",
+     "προδοίη"
+    ]
+   },
+   {
+    "prompt": "The witnesses declare that they saw the deed clearly.",
+    "answer": "οἱ μάρτυρες λέγουσιν ὅτι τὸ ἔργον σαφῶς εἶδον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "μάρτυρες",
+     "λέγουσιν",
+     "ὅτι",
+     "τὸ",
+     "ἔργον",
+     "σαφῶς",
+     "εἶδον"
+    ]
+   },
+   {
+    "prompt": "The oracle declares that the city will be saved.",
+    "answer": "ὁ χρησμὸς δηλοῖ ὅτι ἡ πόλις σωθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χρησμὸς",
+     "δηλοῖ",
+     "ὅτι",
+     "ἡ",
+     "πόλις",
+     "σωθήσεται"
+    ]
+   },
+   {
+    "prompt": "I know that you would not have acted otherwise.",
+    "answer": "οἶδα ὅτι οὐκ ἄν ἄλλως ἔπρᾱξας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἶδα",
+     "ὅτι",
+     "οὐκ",
+     "ἄν",
+     "ἄλλως",
+     "ἔπρᾱξας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2614-indicative-and-optative-after-oti-or-os-t11",
+  "sectionId": "sm-2614-indicative-and-optative-after-oti-or-os",
+  "questions": [
+   {
+    "prompt": "The old woman believed that the gods watched over mortals.",
+    "answer": "ἡ γραῦς ἐνόμιζεν ὡς οἱ θεοὶ τῶν θνητῶν ἐπιμελοῖντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γραῦς",
+     "ἐνόμιζεν",
+     "ὡς",
+     "οἱ",
+     "θεοὶ",
+     "τῶν",
+     "θνητῶν",
+     "ἐπιμελοῖντο"
+    ]
+   },
+   {
+    "prompt": "The general made clear that he would lead the army toward the sea.",
+    "answer": "ὁ στρατηγὸς ἐδήλωσεν ὅτι τὸ στράτευμα πρὸς τὴν θάλατταν ἄξοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐδήλωσεν",
+     "ὅτι",
+     "τὸ",
+     "στράτευμα",
+     "πρὸς",
+     "τὴν",
+     "θάλατταν",
+     "ἄξοι"
+    ]
+   },
+   {
+    "prompt": "The prisoners confessed that they had plotted against the tyrant.",
+    "answer": "οἱ δεσμῶται ὡμολόγησαν ὅτι τῷ τυράννῳ ἐπιβουλεύσειαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δεσμῶται",
+     "ὡμολόγησαν",
+     "ὅτι",
+     "τῷ",
+     "τυράννῳ",
+     "ἐπιβουλεύσειαν"
+    ]
+   },
+   {
+    "prompt": "The sailors said that a great storm had arisen on the sea.",
+    "answer": "οἱ ναῦται ἔλεγον ὅτι χειμὼν μέγας ἐν τῇ θαλάττῃ γένοιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ναῦται",
+     "ἔλεγον",
+     "ὅτι",
+     "χειμὼν",
+     "μέγας",
+     "ἐν",
+     "τῇ",
+     "θαλάττῃ",
+     "γένοιτο"
+    ]
+   }
+  ]
  }
 ]

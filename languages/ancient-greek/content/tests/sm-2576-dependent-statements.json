@@ -371,5 +371,207 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2576-dependent-statements-t7",
+  "sectionId": "sm-2576-dependent-statements",
+  "questions": [
+   {
+    "prompt": "I believe that the poets speak the truth about the gods.",
+    "answer": "νομίζω τοὺς ποιητὰς περὶ τῶν θεῶν ἀληθῆ λέγειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νομίζω",
+     "τοὺς",
+     "ποιητὰς",
+     "περὶ",
+     "τῶν",
+     "θεῶν",
+     "ἀληθῆ",
+     "λέγειν"
+    ]
+   },
+   {
+    "prompt": "The general thought that his own soldiers were braver than the enemy.",
+    "answer": "ὁ στρατηγὸς ἐνόμιζε τοὺς ἑαυτοῦ στρατιώτας ἀνδρειοτέρους εἶναι τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "ἐνόμιζε",
+     "τοὺς",
+     "ἑαυτοῦ",
+     "στρατιώτας",
+     "ἀνδρειοτέρους",
+     "εἶναι",
+     "τῶν",
+     "πολεμίων"
+    ]
+   },
+   {
+    "prompt": "The physician said that the wound was not dangerous.",
+    "answer": "ὁ ἰατρὸς ἔφη τὸ τραῦμα οὐ χαλεπὸν εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "ἔφη",
+     "τὸ",
+     "τραῦμα",
+     "οὐ",
+     "χαλεπὸν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "We think that we know many things, but in truth we know nothing.",
+    "answer": "οἰόμεθα μὲν πολλὰ εἰδέναι, τῇ δὲ ἀληθείᾳ οὐδὲν ἴσμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἰόμεθα",
+     "μὲν",
+     "πολλὰ",
+     "εἰδέναι",
+     "τῇ",
+     "δὲ",
+     "ἀληθείᾳ",
+     "οὐδὲν",
+     "ἴσμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2576-dependent-statements-t8",
+  "sectionId": "sm-2576-dependent-statements",
+  "questions": [
+   {
+    "prompt": "The hunter did not perceive that the lion was lying in wait in the wood.",
+    "answer": "ὁ θηρευτὴς οὐκ ᾔσθετο τὸν λέοντα ἐν τῇ ὕλῃ λοχῶντα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "θηρευτὴς",
+     "οὐκ",
+     "ᾔσθετο",
+     "τὸν",
+     "λέοντα",
+     "ἐν",
+     "τῇ",
+     "ὕλῃ",
+     "λοχῶντα"
+    ]
+   },
+   {
+    "prompt": "The judges knew that the orator was lying.",
+    "answer": "οἱ δικασταὶ ᾔδεσαν τὸν ῥήτορα ψευδόμενον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "ᾔδεσαν",
+     "τὸν",
+     "ῥήτορα",
+     "ψευδόμενον"
+    ]
+   },
+   {
+    "prompt": "We saw the enemy fleeing toward the mountains.",
+    "answer": "εἴδομεν τοὺς πολεμίους πρὸς τὰ ὄρη φεύγοντας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴδομεν",
+     "τοὺς",
+     "πολεμίους",
+     "πρὸς",
+     "τὰ",
+     "ὄρη",
+     "φεύγοντας"
+    ]
+   },
+   {
+    "prompt": "The maiden showed that she was not afraid of death.",
+    "answer": "ἡ παρθένος ἐδήλωσεν οὐ φοβουμένη τὸν θάνατον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "παρθένος",
+     "ἐδήλωσεν",
+     "οὐ",
+     "φοβουμένη",
+     "τὸν",
+     "θάνατον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2576-dependent-statements-t9",
+  "sectionId": "sm-2576-dependent-statements",
+  "questions": [
+   {
+    "prompt": "The messenger announced that the allies had abandoned the camp.",
+    "answer": "ὁ ἄγγελος ἤγγειλεν ὅτι οἱ σύμμαχοι τὸ στρατόπεδον λίποιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "ἤγγειλεν",
+     "ὅτι",
+     "οἱ",
+     "σύμμαχοι",
+     "τὸ",
+     "στρατόπεδον",
+     "λίποιεν"
+    ]
+   },
+   {
+    "prompt": "The teacher said that the young men do not pursue virtue.",
+    "answer": "ὁ διδάσκαλος εἶπεν ὅτι οἱ νέοι τὴν ἀρετὴν οὐ διώκουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "διδάσκαλος",
+     "εἶπεν",
+     "ὅτι",
+     "οἱ",
+     "νέοι",
+     "τὴν",
+     "ἀρετὴν",
+     "οὐ",
+     "διώκουσιν"
+    ]
+   },
+   {
+    "prompt": "The slave confessed that he had stolen the silver.",
+    "answer": "ὁ δοῦλος ὡμολόγησεν ὅτι τὸν ἄργυρον κλέψειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "ὡμολόγησεν",
+     "ὅτι",
+     "τὸν",
+     "ἄργυρον",
+     "κλέψειεν"
+    ]
+   },
+   {
+    "prompt": "Everyone sees that the young man is being harmed by his flatterers.",
+    "answer": "πάντες ὁρῶσιν ὅτι ὁ νεανίας ὑπὸ τῶν κολάκων βλάπτεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πάντες",
+     "ὁρῶσιν",
+     "ὅτι",
+     "ὁ",
+     "νεανίας",
+     "ὑπὸ",
+     "τῶν",
+     "κολάκων",
+     "βλάπτεται"
+    ]
+   }
+  ]
  }
 ]

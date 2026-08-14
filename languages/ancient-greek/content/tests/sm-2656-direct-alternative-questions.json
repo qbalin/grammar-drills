@@ -399,5 +399,694 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t7",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "Do you wish to remain in the camp or to march against the enemy?",
+    "answer": "πότερον βούλει ἐν τῷ στρατοπέδῳ μένειν ἢ ἐπὶ τοὺς πολεμίους ἐλαύνειν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "βούλει",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "μένειν",
+     "ἢ",
+     "ἐπὶ",
+     "τοὺς",
+     "πολεμίους",
+     "ἐλαύνειν"
+    ]
+   },
+   {
+    "prompt": "Did the king honor the messengers or drive them out?",
+    "answer": "πότερον ὁ βασιλεὺς τοὺς ἀγγέλους ἐτίμησεν ἢ ἐξήλασεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "ὁ",
+     "βασιλεὺς",
+     "τοὺς",
+     "ἀγγέλους",
+     "ἐτίμησεν",
+     "ἢ",
+     "ἐξήλασεν"
+    ]
+   },
+   {
+    "prompt": "Shall we cross the river or wait for the allies?",
+    "answer": "πότερα τὸν ποταμὸν διαβῶμεν ἢ τοὺς συμμάχους ἀναμένωμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερα",
+     "τὸν",
+     "ποταμὸν",
+     "διαβῶμεν",
+     "ἢ",
+     "τοὺς",
+     "συμμάχους",
+     "ἀναμένωμεν"
+    ]
+   },
+   {
+    "prompt": "Do you think the citizens praise the general or blame him?",
+    "answer": "πότερον οἴει τοὺς πολίτας τὸν στρατηγὸν ἐπαινεῖν ἢ ψέγειν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "οἴει",
+     "τοὺς",
+     "πολίτας",
+     "τὸν",
+     "στρατηγὸν",
+     "ἐπαινεῖν",
+     "ἢ",
+     "ψέγειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t8",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "Did the soldiers capture the city or destroy it?",
+    "answer": "εἷλον οἱ στρατιῶται τὴν πόλιν ἢ διέφθειραν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἷλον",
+     "οἱ",
+     "στρατιῶται",
+     "τὴν",
+     "πόλιν",
+     "ἢ",
+     "διέφθειραν"
+    ]
+   },
+   {
+    "prompt": "Does the farmer sow the field or leave it fallow?",
+    "answer": "σπείρει ὁ γεωργὸς τὸν ἀγρὸν ἢ ἐᾷ ἀργόν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σπείρει",
+     "ὁ",
+     "γεωργὸς",
+     "τὸν",
+     "ἀγρὸν",
+     "ἢ",
+     "ἐᾷ",
+     "ἀργόν"
+    ]
+   },
+   {
+    "prompt": "Will you trust the seer or scorn his words?",
+    "answer": "πιστεύσεις τῷ μάντει ἢ τῶν λόγων αὐτοῦ καταφρονήσεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πιστεύσεις",
+     "τῷ",
+     "μάντει",
+     "ἢ",
+     "τῶν",
+     "λόγων",
+     "αὐτοῦ",
+     "καταφρονήσεις"
+    ]
+   },
+   {
+    "prompt": "Was it the storm that destroyed the ships, or the enemy?",
+    "answer": "ὁ χειμὼν τὰς ναῦς ἀπώλεσεν ἢ οἱ πολέμιοι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χειμὼν",
+     "τὰς",
+     "ναῦς",
+     "ἀπώλεσεν",
+     "ἢ",
+     "οἱ",
+     "πολέμιοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t9",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "Shall I stay silent or reveal the plot?",
+    "answer": "πότερον σιωπῶ ἢ τὴν ἐπιβουλὴν μηνύω;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "σιωπῶ",
+     "ἢ",
+     "τὴν",
+     "ἐπιβουλὴν",
+     "μηνύω"
+    ]
+   },
+   {
+    "prompt": "Shall we ransom the prisoners or leave them to die?",
+    "answer": "πότερα τοὺς αἰχμαλώτους λυσώμεθα ἢ ἀποθανεῖν ἐῶμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερα",
+     "τοὺς",
+     "αἰχμαλώτους",
+     "λυσώμεθα",
+     "ἢ",
+     "ἀποθανεῖν",
+     "ἐῶμεν"
+    ]
+   },
+   {
+    "prompt": "Should the general lead the army by land or by sea?",
+    "answer": "πότερον ὁ στρατηγὸς τὸ στράτευμα κατὰ γῆν ἄγῃ ἢ κατὰ θάλατταν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "κατὰ",
+     "γῆν",
+     "ἄγῃ",
+     "ἢ",
+     "θάλατταν"
+    ]
+   },
+   {
+    "prompt": "Am I to accuse my own friend or keep silent?",
+    "answer": "πότερον τοῦ ἐμαυτοῦ φίλου κατηγορῶ ἢ σιγῶ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τοῦ",
+     "ἐμαυτοῦ",
+     "φίλου",
+     "κατηγορῶ",
+     "ἢ",
+     "σιγῶ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t10",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "Now that the war has ceased, shall we return home or remain here?",
+    "answer": "τοῦ πολέμου πεπαυμένου, πότερον οἴκαδε ἐπανίωμεν ἢ ἐνθάδε μένωμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοῦ",
+     "πολέμου",
+     "πεπαυμένου",
+     "πότερον",
+     "οἴκαδε",
+     "ἐπανίωμεν",
+     "ἢ",
+     "ἐνθάδε",
+     "μένωμεν"
+    ]
+   },
+   {
+    "prompt": "Do you praise those who fight bravely or those who flee?",
+    "answer": "πότερον ἐπαινεῖς τοὺς ἀνδρείως μαχομένους ἢ τοὺς φεύγοντας;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "ἐπαινεῖς",
+     "τοὺς",
+     "ἀνδρείως",
+     "μαχομένους",
+     "ἢ",
+     "φεύγοντας"
+    ]
+   },
+   {
+    "prompt": "The enemy having withdrawn, did the citizens rejoice or fear a trap?",
+    "answer": "τῶν πολεμίων ἀποχωρησάντων, πότερον οἱ πολῖται ἔχαιρον ἢ ἐνέδραν ἐφοβοῦντο;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἀποχωρησάντων",
+     "πότερον",
+     "οἱ",
+     "πολῖται",
+     "ἔχαιρον",
+     "ἢ",
+     "ἐνέδραν",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "Do you honor the man who speaks the truth or the one who flatters?",
+    "answer": "πότερον τιμᾷς τὸν τὰ ἀληθῆ λέγοντα ἢ τὸν κολακεύοντα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τιμᾷς",
+     "τὸν",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγοντα",
+     "ἢ",
+     "κολακεύοντα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t11",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "But who advised you to do this? Or was it your father himself?",
+    "answer": "ἀλλὰ τίς σοι συνεβούλευσε ταῦτα πρᾶξαι; ἢ αὐτὸς ὁ πατήρ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "τίς",
+     "σοι",
+     "συνεβούλευσε",
+     "ταῦτα",
+     "πρᾶξαι",
+     "ἢ",
+     "αὐτὸς",
+     "ὁ",
+     "πατήρ"
+    ]
+   },
+   {
+    "prompt": "Where are you hastening, strangers? Or do you flee some danger?",
+    "answer": "ποῖ σπεύδετε, ὦ ξένοι; ἢ κίνδυνόν τινα φεύγετε;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ποῖ",
+     "σπεύδετε",
+     "ὦ",
+     "ξένοι",
+     "ἢ",
+     "κίνδυνόν",
+     "τινα",
+     "φεύγετε"
+    ]
+   },
+   {
+    "prompt": "Why are you silent, judges? Or do you not believe the witness?",
+    "answer": "διὰ τί σιγᾶτε, ὦ δικασταί; ἢ τῷ μάρτυρι οὐ πιστεύετε;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "διὰ",
+     "τί",
+     "σιγᾶτε",
+     "ὦ",
+     "δικασταί",
+     "ἢ",
+     "τῷ",
+     "μάρτυρι",
+     "οὐ",
+     "πιστεύετε"
+    ]
+   },
+   {
+    "prompt": "Whence do the sailors come? Or do they wander at random?",
+    "answer": "πόθεν ἥκουσιν οἱ ναῦται; ἢ μάτην πλανῶνται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόθεν",
+     "ἥκουσιν",
+     "οἱ",
+     "ναῦται",
+     "ἢ",
+     "μάτην",
+     "πλανῶνται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t12",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "Do you think virtue can be taught or that it comes by nature?",
+    "answer": "πότερον οἴει τὴν ἀρετὴν διδακτὴν εἶναι ἢ φύσει γίγνεσθαι;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "οἴει",
+     "τὴν",
+     "ἀρετὴν",
+     "διδακτὴν",
+     "εἶναι",
+     "ἢ",
+     "φύσει",
+     "γίγνεσθαι"
+    ]
+   },
+   {
+    "prompt": "Is the soul immortal, or does it perish with the body?",
+    "answer": "πότερον ἀθάνατός ἐστιν ἡ ψυχὴ ἢ σὺν τῷ σώματι ἀπόλλυται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "ἀθάνατός",
+     "ἐστιν",
+     "ἡ",
+     "ψυχὴ",
+     "ἢ",
+     "σὺν",
+     "τῷ",
+     "σώματι",
+     "ἀπόλλυται"
+    ]
+   },
+   {
+    "prompt": "Do the wise seek wealth or despise it?",
+    "answer": "πότερον οἱ σοφοὶ τὸν πλοῦτον διώκουσιν ἢ αὐτοῦ καταφρονοῦσιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "οἱ",
+     "σοφοὶ",
+     "τὸν",
+     "πλοῦτον",
+     "διώκουσιν",
+     "ἢ",
+     "αὐτοῦ",
+     "καταφρονοῦσιν"
+    ]
+   },
+   {
+    "prompt": "Is it better to suffer injustice or to do it?",
+    "answer": "πότερον ἄμεινόν ἐστιν ἀδικεῖσθαι ἢ ἀδικεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "ἄμεινόν",
+     "ἐστιν",
+     "ἀδικεῖσθαι",
+     "ἢ",
+     "ἀδικεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t13",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "Did the ambassadors persuade the king, or did they go away without accomplishing anything?",
+    "answer": "πότερον οἱ πρέσβεις τὸν βασιλέα ἔπεισαν ἢ ἄπρακτοι ἀπῆλθον;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "οἱ",
+     "πρέσβεις",
+     "τὸν",
+     "βασιλέα",
+     "ἔπεισαν",
+     "ἢ",
+     "ἄπρακτοι",
+     "ἀπῆλθον"
+    ]
+   },
+   {
+    "prompt": "Do you think that wealth or virtue makes men happy?",
+    "answer": "πότερον τὸν πλοῦτον ἢ τὴν ἀρετὴν οἴει τοὺς ἀνθρώπους εὐδαίμονας ποιεῖν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τὸν",
+     "πλοῦτον",
+     "ἢ",
+     "τὴν",
+     "ἀρετὴν",
+     "οἴει",
+     "τοὺς",
+     "ἀνθρώπους",
+     "εὐδαίμονας",
+     "ποιεῖν"
+    ]
+   },
+   {
+    "prompt": "Is the prisoner telling the truth, or is he fabricating lies?",
+    "answer": "πότερον ὁ δεσμώτης τὰ ἀληθῆ λέγει ἢ ψεύδη πλάττει;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "ὁ",
+     "δεσμώτης",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγει",
+     "ἢ",
+     "ψεύδη",
+     "πλάττει"
+    ]
+   },
+   {
+    "prompt": "Shall we honor the poet with a crown, or send him away in dishonor?",
+    "answer": "πότερον τὸν ποιητὴν στεφάνῳ τιμήσομεν ἢ ἀτίμως ἀποπέμψομεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "τὸν",
+     "ποιητὴν",
+     "στεφάνῳ",
+     "τιμήσομεν",
+     "ἢ",
+     "ἀτίμως",
+     "ἀποπέμψομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t14",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "Did the citizens ratify the law, or not?",
+    "answer": "ἐψηφίσαντο οἱ πολῖται τὸν νόμον ἢ οὔ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐψηφίσαντο",
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "νόμον",
+     "ἢ",
+     "οὔ"
+    ]
+   },
+   {
+    "prompt": "Is the physician healing the sick man, or harming him?",
+    "answer": "ὁ ἰατρὸς τὸν κάμνοντα θεραπεύει ἢ βλάπτει;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἰατρὸς",
+     "τὸν",
+     "κάμνοντα",
+     "θεραπεύει",
+     "ἢ",
+     "βλάπτει"
+    ]
+   },
+   {
+    "prompt": "Will the jurors acquit the defendant, or punish him?",
+    "answer": "οἱ δικασταὶ τὸν φεύγοντα ἀπολύσουσιν ἢ ζημιώσουσιν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "δικασταὶ",
+     "τὸν",
+     "φεύγοντα",
+     "ἀπολύσουσιν",
+     "ἢ",
+     "ζημιώσουσιν"
+    ]
+   },
+   {
+    "prompt": "Did the storm destroy the fleet, or did the ships reach the harbor safely?",
+    "answer": "ὁ χειμὼν τὸν στόλον διέφθειρεν ἢ αἱ νῆες εἰς τὸν λιμένα ἀσφαλῶς ἀφίκοντο;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "χειμὼν",
+     "τὸν",
+     "στόλον",
+     "διέφθειρεν",
+     "ἢ",
+     "αἱ",
+     "νῆες",
+     "εἰς",
+     "λιμένα",
+     "ἀσφαλῶς",
+     "ἀφίκοντο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t15",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "Now that the enemy have withdrawn, shall we rebuild the walls or leave the city unprotected?",
+    "answer": "τῶν πολεμίων ἀπελθόντων, πότερα τὰ τείχη ἀνοικοδομήσομεν ἢ τὴν πόλιν ἀφύλακτον καταλείψομεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τῶν",
+     "πολεμίων",
+     "ἀπελθόντων",
+     "πότερα",
+     "τὰ",
+     "τείχη",
+     "ἀνοικοδομήσομεν",
+     "ἢ",
+     "τὴν",
+     "πόλιν",
+     "ἀφύλακτον",
+     "καταλείψομεν"
+    ]
+   },
+   {
+    "prompt": "Do you believe that the soul, once the body has perished, survives or is destroyed with it?",
+    "answer": "πότερα τὴν ψυχήν, τοῦ σώματος φθαρέντος, περιγίγνεσθαι ἢ συναπόλλυσθαι νομίζεις;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερα",
+     "τὴν",
+     "ψυχήν",
+     "τοῦ",
+     "σώματος",
+     "φθαρέντος",
+     "περιγίγνεσθαι",
+     "ἢ",
+     "συναπόλλυσθαι",
+     "νομίζεις"
+    ]
+   },
+   {
+    "prompt": "Since the treaty has been broken, shall we make war on the Thebans or seek peace?",
+    "answer": "λελυμένων τῶν σπονδῶν, πότερα τοῖς Θηβαίοις πολεμήσομεν ἢ εἰρήνην ζητήσομεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "λελυμένων",
+     "τῶν",
+     "σπονδῶν",
+     "πότερα",
+     "τοῖς",
+     "Θηβαίοις",
+     "πολεμήσομεν",
+     "ἢ",
+     "εἰρήνην",
+     "ζητήσομεν"
+    ]
+   },
+   {
+    "prompt": "Do you pity those who died for their country, or envy them?",
+    "answer": "πότερα τοὺς ὑπὲρ τῆς πατρίδος ἀποθανόντας οἰκτίρεις ἢ ζηλοῖς;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερα",
+     "τοὺς",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος",
+     "ἀποθανόντας",
+     "οἰκτίρεις",
+     "ἢ",
+     "ζηλοῖς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2656-direct-alternative-questions-t16",
+  "sectionId": "sm-2656-direct-alternative-questions",
+  "questions": [
+   {
+    "prompt": "But who advised this course? Or was it the general himself?",
+    "answer": "ἀλλὰ τίς ταῦτα συνεβούλευσεν; ἢ αὐτὸς ὁ στρατηγός;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀλλὰ",
+     "τίς",
+     "ταῦτα",
+     "συνεβούλευσεν",
+     "ἢ",
+     "αὐτὸς",
+     "ὁ",
+     "στρατηγός"
+    ]
+   },
+   {
+    "prompt": "Whence do these strangers come? Are they wandering on some enterprise, or in vain?",
+    "answer": "πόθεν ἥκουσιν οἱ ξένοι οὗτοι; ἢ κατὰ πρᾶξιν ἢ μάτην πλανῶνται;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πόθεν",
+     "ἥκουσιν",
+     "οἱ",
+     "ξένοι",
+     "οὗτοι",
+     "ἢ",
+     "κατὰ",
+     "πρᾶξιν",
+     "μάτην",
+     "πλανῶνται"
+    ]
+   },
+   {
+    "prompt": "What pretext have we for yielding? Is it because we have become weaker?",
+    "answer": "τίνα πρόφασιν ἔχοντες εἴκοιμεν ἄν; πότερον ὅτι ἀσθενέστεροι γεγόναμεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τίνα",
+     "πρόφασιν",
+     "ἔχοντες",
+     "εἴκοιμεν",
+     "ἄν",
+     "πότερον",
+     "ὅτι",
+     "ἀσθενέστεροι",
+     "γεγόναμεν"
+    ]
+   },
+   {
+    "prompt": "Shall I call you strangers friends of the city, or enemies?",
+    "answer": "πότερον ὑμᾶς, ὦ ξένοι, φίλους τῆς πόλεως ἢ πολεμίους εἶναι φῶ;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πότερον",
+     "ὑμᾶς",
+     "ὦ",
+     "ξένοι",
+     "φίλους",
+     "τῆς",
+     "πόλεως",
+     "ἢ",
+     "πολεμίους",
+     "εἶναι",
+     "φῶ"
+    ]
+   }
+  ]
  }
 ]

@@ -444,5 +444,975 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t7",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "As a bee gathers honey from the flowers, so the philosopher gathers wisdom from the ancients.",
+    "answer": "ὥσπερ ἡ μέλιττα ἐκ τῶν ἀνθῶν τὸ μέλι συλλέγει, οὕτως ὁ φιλόσοφος παρὰ τῶν παλαιῶν τὴν σοφίαν συλλέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ἡ",
+     "μέλιττα",
+     "ἐκ",
+     "τῶν",
+     "ἀνθῶν",
+     "τὸ",
+     "μέλι",
+     "συλλέγει",
+     "οὕτως",
+     "ὁ",
+     "φιλόσοφος",
+     "παρὰ",
+     "παλαιῶν",
+     "τὴν",
+     "σοφίαν"
+    ]
+   },
+   {
+    "prompt": "As the sun gives light to all men, so a good king gives justice to all the citizens.",
+    "answer": "ὥσπερ ὁ ἥλιος πᾶσι τοῖς ἀνθρώποις τὸ φῶς παρέχει, οὕτως ὁ ἀγαθὸς βασιλεὺς πᾶσι τοῖς πολίταις τὴν δίκην παρέχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὁ",
+     "ἥλιος",
+     "πᾶσι",
+     "τοῖς",
+     "ἀνθρώποις",
+     "τὸ",
+     "φῶς",
+     "παρέχει",
+     "οὕτως",
+     "ἀγαθὸς",
+     "βασιλεὺς",
+     "πολίταις",
+     "τὴν",
+     "δίκην"
+    ]
+   },
+   {
+    "prompt": "As a river always flows toward the sea, so the soul always desires the good.",
+    "answer": "ὥσπερ ὁ ποταμὸς ἀεὶ πρὸς τὴν θάλατταν ῥεῖ, οὕτως ἡ ψυχὴ ἀεὶ τοῦ ἀγαθοῦ ἐφίεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὁ",
+     "ποταμὸς",
+     "ἀεὶ",
+     "πρὸς",
+     "τὴν",
+     "θάλατταν",
+     "ῥεῖ",
+     "οὕτως",
+     "ἡ",
+     "ψυχὴ",
+     "τοῦ",
+     "ἀγαθοῦ",
+     "ἐφίεται"
+    ]
+   },
+   {
+    "prompt": "As gold is tested by fire, so friends are tested in dangers.",
+    "answer": "ὥσπερ ὁ χρυσὸς ὑπὸ τοῦ πυρὸς δοκιμάζεται, οὕτως οἱ φίλοι ἐν τοῖς κινδύνοις δοκιμάζονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὁ",
+     "χρυσὸς",
+     "ὑπὸ",
+     "τοῦ",
+     "πυρὸς",
+     "δοκιμάζεται",
+     "οὕτως",
+     "οἱ",
+     "φίλοι",
+     "ἐν",
+     "τοῖς",
+     "κινδύνοις",
+     "δοκιμάζονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t8",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "He questions the boy as if he himself knew nothing.",
+    "answer": "τὸν παῖδα ἐρωτᾷ ὥσπερ ἂν εἰ αὐτὸς μηδὲν εἰδείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸν",
+     "παῖδα",
+     "ἐρωτᾷ",
+     "ὥσπερ",
+     "ἂν",
+     "εἰ",
+     "αὐτὸς",
+     "μηδὲν",
+     "εἰδείη"
+    ]
+   },
+   {
+    "prompt": "They flee as if some god were pursuing them.",
+    "answer": "φεύγουσιν ὥσπερ ἂν εἰ θεός τις αὐτοὺς διώκοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φεύγουσιν",
+     "ὥσπερ",
+     "ἂν",
+     "εἰ",
+     "θεός",
+     "τις",
+     "αὐτοὺς",
+     "διώκοι"
+    ]
+   },
+   {
+    "prompt": "The general trembles as if he saw the enemy already at hand.",
+    "answer": "ὁ στρατηγὸς τρέμει ὥσπερ ἂν εἰ τοὺς πολεμίους ἤδη παρόντας ὁρῴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τρέμει",
+     "ὥσπερ",
+     "ἂν",
+     "εἰ",
+     "τοὺς",
+     "πολεμίους",
+     "ἤδη",
+     "παρόντας",
+     "ὁρῴη"
+    ]
+   },
+   {
+    "prompt": "The woman rejoices as if she had received a great gift.",
+    "answer": "ἡ γυνὴ χαίρει ὥσπερ ἂν εἰ μέγα δῶρον λάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "χαίρει",
+     "ὥσπερ",
+     "ἂν",
+     "εἰ",
+     "μέγα",
+     "δῶρον",
+     "λάβοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t9",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "The slave obeyed as if he had heard the very voice of the master.",
+    "answer": "ὁ δοῦλος ἐπείθετο ὥσπερ εἰ τὴν τοῦ δεσπότου φωνὴν αὐτὴν ἤκουσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δοῦλος",
+     "ἐπείθετο",
+     "ὥσπερ",
+     "εἰ",
+     "τὴν",
+     "τοῦ",
+     "δεσπότου",
+     "φωνὴν",
+     "αὐτὴν",
+     "ἤκουσεν"
+    ]
+   },
+   {
+    "prompt": "The children were afraid as if a wild beast were present in the house.",
+    "answer": "οἱ παῖδες ἐφοβοῦντο ὥσπερ εἰ θηρίον ἐν τῇ οἰκίᾳ παρῆν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "παῖδες",
+     "ἐφοβοῦντο",
+     "ὥσπερ",
+     "εἰ",
+     "θηρίον",
+     "ἐν",
+     "τῇ",
+     "οἰκίᾳ",
+     "παρῆν"
+    ]
+   },
+   {
+    "prompt": "He was spending the money as if he possessed the wealth of the Persians.",
+    "answer": "τὰ χρήματα ἀνήλισκεν ὥσπερ εἰ τὸν τῶν Περσῶν πλοῦτον ἐκέκτητο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "χρήματα",
+     "ἀνήλισκεν",
+     "ὥσπερ",
+     "εἰ",
+     "τὸν",
+     "τῶν",
+     "Περσῶν",
+     "πλοῦτον",
+     "ἐκέκτητο"
+    ]
+   },
+   {
+    "prompt": "The young man was speaking in the assembly as if he understood all the affairs of the Greeks.",
+    "answer": "ὁ νεανίας ἐν τῇ ἐκκλησίᾳ ἔλεγεν ὥσπερ εἰ πάντα τὰ τῶν Ἑλλήνων πράγματα ἠπίστατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "νεανίας",
+     "ἐν",
+     "τῇ",
+     "ἐκκλησίᾳ",
+     "ἔλεγεν",
+     "ὥσπερ",
+     "εἰ",
+     "πάντα",
+     "τὰ",
+     "τῶν",
+     "Ἑλλήνων",
+     "πράγματα",
+     "ἠπίστατο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t10",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "As when a hunter surrounds the deer with nets, so the general encircled the enemy.",
+    "answer": "ὥσπερ ὅταν ὁ θηρευτὴς τὰς ἐλάφους δικτύοις περιβάλλῃ, οὕτως ὁ στρατηγὸς τοὺς πολεμίους ἐκύκλωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "ὁ",
+     "θηρευτὴς",
+     "τὰς",
+     "ἐλάφους",
+     "δικτύοις",
+     "περιβάλλῃ",
+     "οὕτως",
+     "στρατηγὸς",
+     "τοὺς",
+     "πολεμίους",
+     "ἐκύκλωσεν"
+    ]
+   },
+   {
+    "prompt": "As when children play without care, so the soldiers passed the day in the camp.",
+    "answer": "ὥσπερ ὅταν οἱ παῖδες ἀμελῶς παίζωσιν, οὕτως οἱ στρατιῶται τὴν ἡμέραν ἐν τῷ στρατοπέδῳ διῆγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "οἱ",
+     "παῖδες",
+     "ἀμελῶς",
+     "παίζωσιν",
+     "οὕτως",
+     "στρατιῶται",
+     "τὴν",
+     "ἡμέραν",
+     "ἐν",
+     "τῷ",
+     "στρατοπέδῳ",
+     "διῆγον"
+    ]
+   },
+   {
+    "prompt": "As when a smith beats the iron with his hammer, so fortune shapes the character of men.",
+    "answer": "ὥσπερ ὅταν ὁ χαλκεὺς τῇ σφύρᾳ τὸν σίδηρον κόπτῃ, οὕτως ἡ τύχη τὸν τῶν ἀνθρώπων τρόπον πλάττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "ὁ",
+     "χαλκεὺς",
+     "τῇ",
+     "σφύρᾳ",
+     "τὸν",
+     "σίδηρον",
+     "κόπτῃ",
+     "οὕτως",
+     "ἡ",
+     "τύχη",
+     "τῶν",
+     "ἀνθρώπων",
+     "τρόπον",
+     "πλάττει"
+    ]
+   },
+   {
+    "prompt": "As when waves dash against a rock, so the enemy hurled themselves against the wall.",
+    "answer": "ὥσπερ ὅταν τὰ κύματα πρὸς τὴν πέτραν προσπίπτῃ, οὕτως οἱ πολέμιοι πρὸς τὸ τεῖχος προσέπιπτον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "τὰ",
+     "κύματα",
+     "πρὸς",
+     "τὴν",
+     "πέτραν",
+     "προσπίπτῃ",
+     "οὕτως",
+     "οἱ",
+     "πολέμιοι",
+     "τὸ",
+     "τεῖχος",
+     "προσέπιπτον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t11",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "The old man fell to the ground in the dust like an oak.",
+    "answer": "ὁ γέρων ὥσπερ δρῦς ἐν τῇ κόνει χαμαὶ ἔπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ὥσπερ",
+     "δρῦς",
+     "ἐν",
+     "τῇ",
+     "κόνει",
+     "χαμαὶ",
+     "ἔπεσεν"
+    ]
+   },
+   {
+    "prompt": "The runner darted through the crowd like a bolt from the bow.",
+    "answer": "ὁ δρομεὺς ὥσπερ βέλος ἀπὸ τόξου διὰ τοῦ ὄχλου διέδραμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δρομεὺς",
+     "ὥσπερ",
+     "βέλος",
+     "ἀπὸ",
+     "τόξου",
+     "διὰ",
+     "τοῦ",
+     "ὄχλου",
+     "διέδραμεν"
+    ]
+   },
+   {
+    "prompt": "The tyrant devours the property of the citizens like a wolf among sheep.",
+    "answer": "ὁ τύραννος τὰ τῶν πολιτῶν χρήματα ὥσπερ λύκος ἐν προβάτοις κατεσθίει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τὰ",
+     "τῶν",
+     "πολιτῶν",
+     "χρήματα",
+     "ὥσπερ",
+     "λύκος",
+     "ἐν",
+     "προβάτοις",
+     "κατεσθίει"
+    ]
+   },
+   {
+    "prompt": "The girl stood among the maidens like a tall plane-tree in a garden.",
+    "answer": "ἡ κόρη ἐν ταῖς παρθένοις ὥσπερ ὑψηλὴ πλάτανος ἐν κήπῳ εἱστήκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "κόρη",
+     "ἐν",
+     "ταῖς",
+     "παρθένοις",
+     "ὥσπερ",
+     "ὑψηλὴ",
+     "πλάτανος",
+     "κήπῳ",
+     "εἱστήκει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t12",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "Just as a good doctor does not flatter the sick, so the true friend does not flatter his comrade.",
+    "answer": "ὥσπερ ὁ ἀγαθὸς ἰατρὸς τοὺς κάμνοντας οὐ κολακεύει, οὕτως ὁ ἀληθὴς φίλος τὸν ἑταῖρον οὐ κολακεύει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὁ",
+     "ἀγαθὸς",
+     "ἰατρὸς",
+     "τοὺς",
+     "κάμνοντας",
+     "οὐ",
+     "κολακεύει",
+     "οὕτως",
+     "ἀληθὴς",
+     "φίλος",
+     "τὸν",
+     "ἑταῖρον"
+    ]
+   },
+   {
+    "prompt": "As the farmer sows the seed before the summer, so the wise man prepares before the danger.",
+    "answer": "ὥσπερ ὁ γεωργὸς πρὸ τοῦ θέρους τὸ σπέρμα σπείρει, οὕτως ὁ σοφὸς πρὸ τοῦ κινδύνου παρασκευάζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὁ",
+     "γεωργὸς",
+     "πρὸ",
+     "τοῦ",
+     "θέρους",
+     "τὸ",
+     "σπέρμα",
+     "σπείρει",
+     "οὕτως",
+     "σοφὸς",
+     "κινδύνου",
+     "παρασκευάζεται"
+    ]
+   },
+   {
+    "prompt": "As when birds gather before the winter, so the allies gathered before the war.",
+    "answer": "ὥσπερ ὅταν οἱ ὄρνιθες πρὸ τοῦ χειμῶνος ἀθροίζωνται, οὕτως οἱ σύμμαχοι πρὸ τοῦ πολέμου ἠθροίσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "οἱ",
+     "ὄρνιθες",
+     "πρὸ",
+     "τοῦ",
+     "χειμῶνος",
+     "ἀθροίζωνται",
+     "οὕτως",
+     "σύμμαχοι",
+     "πολέμου",
+     "ἠθροίσθησαν"
+    ]
+   },
+   {
+    "prompt": "As if he were pursuing a runaway slave, the master searched the whole house.",
+    "answer": "ὥσπερ ἂν εἰ δραπέτην διώκοι, οὕτω πᾶσαν τὴν οἰκίαν ὁ δεσπότης ἠρεύνα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ἂν",
+     "εἰ",
+     "δραπέτην",
+     "διώκοι",
+     "οὕτω",
+     "πᾶσαν",
+     "τὴν",
+     "οἰκίαν",
+     "ὁ",
+     "δεσπότης",
+     "ἠρεύνα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t13",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "As a shepherd guards the sheep, so the wise king cares for the citizens.",
+    "answer": "ὥσπερ ποιμὴν τὰ πρόβατα φυλάττει, οὕτως ὁ σοφὸς βασιλεὺς τῶν πολιτῶν ἐπιμελεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ποιμὴν",
+     "τὰ",
+     "πρόβατα",
+     "φυλάττει",
+     "οὕτως",
+     "ὁ",
+     "σοφὸς",
+     "βασιλεὺς",
+     "τῶν",
+     "πολιτῶν",
+     "ἐπιμελεῖται"
+    ]
+   },
+   {
+    "prompt": "As a river flows into the sea, so these evils flow into the city.",
+    "answer": "ὥσπερ ποταμὸς εἰς τὴν θάλατταν ῥεῖ, οὕτω καὶ τὰ κακὰ εἰς τὴν πόλιν ῥεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ποταμὸς",
+     "εἰς",
+     "τὴν",
+     "θάλατταν",
+     "ῥεῖ",
+     "οὕτω",
+     "καὶ",
+     "τὰ",
+     "κακὰ",
+     "πόλιν"
+    ]
+   },
+   {
+    "prompt": "As bees toil for the hive, so the citizens labored for the common good.",
+    "answer": "ὥσπερ αἱ μέλιτται ὑπὲρ τοῦ σμήνους πονοῦσιν, οὕτως οἱ πολῖται ὑπὲρ τοῦ κοινοῦ ἐμόχθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "αἱ",
+     "μέλιτται",
+     "ὑπὲρ",
+     "τοῦ",
+     "σμήνους",
+     "πονοῦσιν",
+     "οὕτως",
+     "οἱ",
+     "πολῖται",
+     "κοινοῦ",
+     "ἐμόχθουν"
+    ]
+   },
+   {
+    "prompt": "As fire consumes the forest, so envy consumes the soul of the wicked man.",
+    "answer": "ὥσπερ πῦρ τὴν ὕλην δαπανᾷ, οὕτως ὁ φθόνος τὴν τοῦ πονηροῦ ψυχὴν δαπανᾷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "πῦρ",
+     "τὴν",
+     "ὕλην",
+     "δαπανᾷ",
+     "οὕτως",
+     "ὁ",
+     "φθόνος",
+     "τοῦ",
+     "πονηροῦ",
+     "ψυχὴν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t14",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "He gave orders about the fleet as if he alone were admiral.",
+    "answer": "περὶ τοῦ ναυτικοῦ προσέταττεν ὥσπερ εἰ αὐτὸς μόνος ναύαρχος εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "περὶ",
+     "τοῦ",
+     "ναυτικοῦ",
+     "προσέταττεν",
+     "ὥσπερ",
+     "εἰ",
+     "αὐτὸς",
+     "μόνος",
+     "ναύαρχος",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "The citizens feared the stranger as if he were an enemy.",
+    "answer": "οἱ πολῖται τὸν ξένον ἐφοβοῦντο ὥσπερ εἰ πολέμιος εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολῖται",
+     "τὸν",
+     "ξένον",
+     "ἐφοβοῦντο",
+     "ὥσπερ",
+     "εἰ",
+     "πολέμιος",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "The soldiers rejoiced as if they had already subdued the whole country.",
+    "answer": "οἱ στρατιῶται ἔχαιρον ὥσπερ εἰ ἤδη πᾶσαν τὴν χώραν καταστρέψαιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "ἔχαιρον",
+     "ὥσπερ",
+     "εἰ",
+     "ἤδη",
+     "πᾶσαν",
+     "τὴν",
+     "χώραν",
+     "καταστρέψαιντο"
+    ]
+   },
+   {
+    "prompt": "The old man wept as if he had lost his own son.",
+    "answer": "ὁ γέρων ἐδάκρυεν ὥσπερ εἰ τὸν ἑαυτοῦ υἱὸν ἀπολέσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "ἐδάκρυεν",
+     "ὥσπερ",
+     "εἰ",
+     "τὸν",
+     "ἑαυτοῦ",
+     "υἱὸν",
+     "ἀπολέσειεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t15",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "As when a wind stirs the sea, so the speech stirred the assembly.",
+    "answer": "ὥσπερ ὅταν ἄνεμος τὴν θάλατταν ταράττῃ, οὕτως ὁ λόγος τὴν ἐκκλησίαν ἐτάραξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "ἄνεμος",
+     "τὴν",
+     "θάλατταν",
+     "ταράττῃ",
+     "οὕτως",
+     "ὁ",
+     "λόγος",
+     "ἐκκλησίαν",
+     "ἐτάραξεν"
+    ]
+   },
+   {
+    "prompt": "As when night comes over the earth, so despair seized the defeated.",
+    "answer": "ὥσπερ ὅταν νὺξ ἐπὶ τὴν γῆν ἐπέλθῃ, οὕτως ἀθυμία τοὺς νενικημένους κατέλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "νὺξ",
+     "ἐπὶ",
+     "τὴν",
+     "γῆν",
+     "ἐπέλθῃ",
+     "οὕτως",
+     "ἀθυμία",
+     "τοὺς",
+     "νενικημένους",
+     "κατέλαβεν"
+    ]
+   },
+   {
+    "prompt": "As when fire seizes a house, so the rumor spread through the city.",
+    "answer": "ὥσπερ ὅταν πῦρ οἰκίαν καταλάβῃ, οὕτως ἡ φήμη διὰ τῆς πόλεως διῆλθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "πῦρ",
+     "οἰκίαν",
+     "καταλάβῃ",
+     "οὕτως",
+     "ἡ",
+     "φήμη",
+     "διὰ",
+     "τῆς",
+     "πόλεως",
+     "διῆλθεν"
+    ]
+   },
+   {
+    "prompt": "As when a shepherd drives the flock toward the mountain, so the general led the army into the plain.",
+    "answer": "ὥσπερ ὅταν ποιμὴν τὸ ποίμνιον πρὸς τὸ ὄρος ἄγῃ, οὕτως ὁ στρατηγὸς τὸ στράτευμα εἰς τὸ πεδίον ἤγαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "ποιμὴν",
+     "τὸ",
+     "ποίμνιον",
+     "πρὸς",
+     "ὄρος",
+     "ἄγῃ",
+     "οὕτως",
+     "ὁ",
+     "στρατηγὸς",
+     "στράτευμα",
+     "εἰς",
+     "πεδίον",
+     "ἤγαγεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t16",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "The tyrant devoured the citizens' wealth like a wild beast.",
+    "answer": "ὁ τύραννος τὰ τῶν πολιτῶν χρήματα ὥσπερ θηρίον κατήσθιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "τύραννος",
+     "τὰ",
+     "τῶν",
+     "πολιτῶν",
+     "χρήματα",
+     "ὥσπερ",
+     "θηρίον",
+     "κατήσθιεν"
+    ]
+   },
+   {
+    "prompt": "The young men fled from the battle like frightened deer.",
+    "answer": "οἱ νεανίαι ἐκ τῆς μάχης ὥσπερ ἔλαφοι πεφοβημένοι ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "νεανίαι",
+     "ἐκ",
+     "τῆς",
+     "μάχης",
+     "ὥσπερ",
+     "ἔλαφοι",
+     "πεφοβημένοι",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The wise man bears misfortunes as a rock bears the waves.",
+    "answer": "ὁ σοφὸς ἀνὴρ τὰς συμφορὰς φέρει ὥσπερ πέτρα τὰ κύματα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "σοφὸς",
+     "ἀνὴρ",
+     "τὰς",
+     "συμφορὰς",
+     "φέρει",
+     "ὥσπερ",
+     "πέτρα",
+     "τὰ",
+     "κύματα"
+    ]
+   },
+   {
+    "prompt": "The orator's words fell upon the crowd like snow upon the mountains.",
+    "answer": "οἱ τοῦ ῥήτορος λόγοι ἐπὶ τὸ πλῆθος ὥσπερ χιὼν ἐπὶ τὰ ὄρη ἔπεσον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "τοῦ",
+     "ῥήτορος",
+     "λόγοι",
+     "ἐπὶ",
+     "τὸ",
+     "πλῆθος",
+     "ὥσπερ",
+     "χιὼν",
+     "τὰ",
+     "ὄρη",
+     "ἔπεσον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t17",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "He looks upon the strangers as if they were his own children.",
+    "answer": "τοὺς ξένους ὁρᾷ ὥσπερ εἰ οἱ ἑαυτοῦ παῖδες εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοὺς",
+     "ξένους",
+     "ὁρᾷ",
+     "ὥσπερ",
+     "εἰ",
+     "οἱ",
+     "ἑαυτοῦ",
+     "παῖδες",
+     "εἶεν"
+    ]
+   },
+   {
+    "prompt": "The general drew up the soldiers as if the enemy were already near.",
+    "answer": "ὁ στρατηγὸς τοὺς στρατιώτας συνέταξεν ὥσπερ εἰ οἱ πολέμιοι ἤδη ἐγγὺς εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "συνέταξεν",
+     "ὥσπερ",
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "ἤδη",
+     "ἐγγὺς",
+     "εἶεν"
+    ]
+   },
+   {
+    "prompt": "The boy trembled before the judge as if he were guilty.",
+    "answer": "ὁ παῖς ἐναντίον τοῦ δικαστοῦ ἔτρεμεν ὥσπερ εἰ αἴτιος εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "παῖς",
+     "ἐναντίον",
+     "τοῦ",
+     "δικαστοῦ",
+     "ἔτρεμεν",
+     "ὥσπερ",
+     "εἰ",
+     "αἴτιος",
+     "εἴη"
+    ]
+   },
+   {
+    "prompt": "The people honored the victor as if he were a god.",
+    "answer": "ὁ δῆμος τὸν νικήσαντα ἐτίμα ὥσπερ εἰ θεὸς εἴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δῆμος",
+     "τὸν",
+     "νικήσαντα",
+     "ἐτίμα",
+     "ὥσπερ",
+     "εἰ",
+     "θεὸς",
+     "εἴη"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2481-similes-and-comparisons-t18",
+  "sectionId": "sm-2481-similes-and-comparisons",
+  "questions": [
+   {
+    "prompt": "As the helmsman, though a storm is raging, holds the rudder, so the prudent man, though troubles are present, keeps his judgment.",
+    "answer": "ὥσπερ ὁ κυβερνήτης, χειμῶνος ὄντος, τὸ πηδάλιον κατέχει, οὕτως ὁ φρόνιμος, κακῶν παρόντων, τὴν γνώμην φυλάττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὁ",
+     "κυβερνήτης",
+     "χειμῶνος",
+     "ὄντος",
+     "τὸ",
+     "πηδάλιον",
+     "κατέχει",
+     "οὕτως",
+     "φρόνιμος",
+     "κακῶν",
+     "παρόντων",
+     "τὴν",
+     "γνώμην",
+     "φυλάττει"
+    ]
+   },
+   {
+    "prompt": "As the lion, having seen the hunters, does not flee, so the brave man, though dangers surround him, does not yield.",
+    "answer": "ὥσπερ ὁ λέων, τοὺς θηρευτὰς ἰδών, οὐ φεύγει, οὕτως ὁ ἀνδρεῖος, κινδύνων περιεστώτων, οὐκ εἴκει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὁ",
+     "λέων",
+     "τοὺς",
+     "θηρευτὰς",
+     "ἰδών",
+     "οὐ",
+     "φεύγει",
+     "οὕτως",
+     "ἀνδρεῖος",
+     "κινδύνων",
+     "περιεστώτων",
+     "οὐκ",
+     "εἴκει"
+    ]
+   },
+   {
+    "prompt": "As the good father, when his children err, teaches rather than hates, so the law chastens rather than destroys.",
+    "answer": "ὥσπερ ὁ ἀγαθὸς πατήρ, τῶν παίδων ἁμαρτανόντων, διδάσκει μᾶλλον ἢ μισεῖ, οὕτως ὁ νόμος σωφρονίζει μᾶλλον ἢ ἀπόλλυσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὁ",
+     "ἀγαθὸς",
+     "πατήρ",
+     "τῶν",
+     "παίδων",
+     "ἁμαρτανόντων",
+     "διδάσκει",
+     "μᾶλλον",
+     "ἢ",
+     "μισεῖ",
+     "οὕτως",
+     "νόμος",
+     "σωφρονίζει",
+     "ἀπόλλυσιν"
+    ]
+   },
+   {
+    "prompt": "As when the sun rises and scatters the darkness, so truth, once made manifest, drives away falsehood.",
+    "answer": "ὥσπερ ὅταν ὁ ἥλιος ἀνατείλῃ καὶ τὸ σκότος σκεδάσῃ, οὕτως ἡ ἀλήθεια, φανερὰ γενομένη, τὸ ψεῦδος ἀπελαύνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥσπερ",
+     "ὅταν",
+     "ὁ",
+     "ἥλιος",
+     "ἀνατείλῃ",
+     "καὶ",
+     "τὸ",
+     "σκότος",
+     "σκεδάσῃ",
+     "οὕτως",
+     "ἡ",
+     "ἀλήθεια",
+     "φανερὰ",
+     "γενομένη",
+     "ψεῦδος",
+     "ἀπελαύνει"
+    ]
+   }
+  ]
  }
 ]

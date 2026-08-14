@@ -400,5 +400,150 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2422-eos-so-long-as-while-temporal-limit-as-t7",
+  "sectionId": "sm-2422-eos-so-long-as-while-temporal-limit-as",
+  "questions": [
+   {
+    "prompt": "So long as the ambassadors remained in the city, the assembly did not vote for war.",
+    "answer": "ἕως οἱ πρέσβεις ἐν τῇ πόλει ἔμενον, ἡ ἐκκλησία τὸν πόλεμον οὐκ ἐψηφίζετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "οἱ",
+     "πρέσβεις",
+     "ἐν",
+     "τῇ",
+     "πόλει",
+     "ἔμενον",
+     "ἡ",
+     "ἐκκλησία",
+     "τὸν",
+     "πόλεμον",
+     "οὐκ",
+     "ἐψηφίζετο"
+    ]
+   },
+   {
+    "prompt": "So long as the tyrant held power, no one dared to speak freely.",
+    "answer": "ἕως ὁ τύραννος τὴν ἀρχὴν εἶχεν, οὐδεὶς ἐτόλμα παρρησιάζεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ὁ",
+     "τύραννος",
+     "τὴν",
+     "ἀρχήν",
+     "εἶχεν",
+     "οὐδείς",
+     "ἐτόλμα",
+     "παρρησιάζεσθαι"
+    ]
+   },
+   {
+    "prompt": "So long as you keep watch over the camp, we shall sleep without fear.",
+    "answer": "ἕως ἂν τὸ στρατόπεδον φυλάττῃς, ἡμεῖς ἀδεῶς καθευδήσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἄν",
+     "τὸ",
+     "στρατόπεδον",
+     "φυλάττῃς",
+     "ἡμεῖς",
+     "ἀδεῶς",
+     "καθευδήσομεν"
+    ]
+   },
+   {
+    "prompt": "So long as the horsemen pursue the enemy, the hoplites will guard the baggage.",
+    "answer": "ἕως ἂν οἱ ἱππεῖς τοὺς πολεμίους διώκωσιν, οἱ ὁπλῖται τὰ σκεύη φυλάξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἄν",
+     "οἱ",
+     "ἱππεῖς",
+     "τοὺς",
+     "πολεμίους",
+     "διώκωσιν",
+     "ὁπλῖται",
+     "τὰ",
+     "σκεύη",
+     "φυλάξουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2422-eos-so-long-as-while-temporal-limit-as-t8",
+  "sectionId": "sm-2422-eos-so-long-as-while-temporal-limit-as",
+  "questions": [
+   {
+    "prompt": "So long as the priest was sacrificing, the whole army waited in silence.",
+    "answer": "ἕως ὁ ἱερεὺς ἱέρευε, πᾶν τὸ στράτευμα σιγῇ περιέμενεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ὁ",
+     "ἱερεύς",
+     "ἱέρευε",
+     "πᾶν",
+     "τὸ",
+     "στράτευμα",
+     "σιγῇ",
+     "περιέμενεν"
+    ]
+   },
+   {
+    "prompt": "Now that you are general, we no longer despise the enemy.",
+    "answer": "ἕως στρατηγὸς εἶ, οὐκέτι τῶν πολεμίων καταφρονοῦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "στρατηγός",
+     "εἶ",
+     "οὐκέτι",
+     "τῶν",
+     "πολεμίων",
+     "καταφρονοῦμεν"
+    ]
+   },
+   {
+    "prompt": "So long as the ships blockade the harbor, no grain will reach the islanders.",
+    "answer": "ἕως ἂν αἱ νῆες τὸν λιμένα φυλάττωσιν, οὐδεὶς σῖτος τοῖς νησιώταις ἀφίξεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἄν",
+     "αἱ",
+     "νῆες",
+     "τὸν",
+     "λιμένα",
+     "φυλάττωσιν",
+     "οὐδείς",
+     "σῖτος",
+     "τοῖς",
+     "νησιώταις",
+     "ἀφίξεται"
+    ]
+   },
+   {
+    "prompt": "So long as anyone honors the gods, he fares well.",
+    "answer": "ἕως ἄν τις τοὺς θεοὺς τιμᾷ, εὖ πράττει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἄν",
+     "τις",
+     "τοὺς",
+     "θεοὺς",
+     "τιμᾷ",
+     "εὖ",
+     "πράττει"
+    ]
+   }
+  ]
  }
 ]

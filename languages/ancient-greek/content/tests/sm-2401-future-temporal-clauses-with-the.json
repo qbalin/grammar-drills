@@ -395,5 +395,450 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2401-future-temporal-clauses-with-the-t7",
+  "sectionId": "sm-2401-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "Whenever the general perceives the enemy approaching, he will draw up the army for battle.",
+    "answer": "ὅταν ὁ στρατηγὸς αἴσθηται τοὺς πολεμίους προσιόντας, τὸ στράτευμα εἰς μάχην τάξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "στρατηγὸς",
+     "αἴσθηται",
+     "τοὺς",
+     "πολεμίους",
+     "προσιόντας",
+     "τὸ",
+     "στράτευμα",
+     "εἰς",
+     "μάχην",
+     "τάξει"
+    ]
+   },
+   {
+    "prompt": "When the ambassadors have arrived, the council will deliberate about peace.",
+    "answer": "ἐπειδὰν οἱ πρέσβεις ἀφίκωνται, ἡ βουλὴ περὶ τῆς εἰρήνης βουλεύσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "οἱ",
+     "πρέσβεις",
+     "ἀφίκωνται",
+     "ἡ",
+     "βουλὴ",
+     "περὶ",
+     "τῆς",
+     "εἰρήνης",
+     "βουλεύσεται"
+    ]
+   },
+   {
+    "prompt": "So long as the wind is favourable, the helmsman will steer the ship toward the mainland.",
+    "answer": "ἕως ἂν οὔριος ὁ ἄνεμος ᾖ, ὁ κυβερνήτης πρὸς τὴν ἤπειρον εὐθυνεῖ τὴν ναῦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "οὔριος",
+     "ὁ",
+     "ἄνεμος",
+     "ᾖ",
+     "κυβερνήτης",
+     "πρὸς",
+     "τὴν",
+     "ἤπειρον",
+     "εὐθυνεῖ",
+     "ναῦν"
+    ]
+   },
+   {
+    "prompt": "Until the herald proclaims the truce, let the soldiers remain under arms.",
+    "answer": "μέχρι ἂν ὁ κῆρυξ τὰς σπονδὰς ἀνείπῃ, οἱ στρατιῶται ἐν τοῖς ὅπλοις μενόντων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέχρι",
+     "ἂν",
+     "ὁ",
+     "κῆρυξ",
+     "τὰς",
+     "σπονδὰς",
+     "ἀνείπῃ",
+     "οἱ",
+     "στρατιῶται",
+     "ἐν",
+     "τοῖς",
+     "ὅπλοις",
+     "μενόντων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2401-future-temporal-clauses-with-the-t8",
+  "sectionId": "sm-2401-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "As soon as the scouts report the road is safe, let us set out at dawn.",
+    "answer": "ἐπειδὰν οἱ σκοποὶ ἀγγείλωσι τὴν ὁδὸν ἀσφαλῆ οὖσαν, ἅμα τῇ ἕῳ ὁρμώμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "οἱ",
+     "σκοποὶ",
+     "ἀγγείλωσι",
+     "τὴν",
+     "ὁδὸν",
+     "ἀσφαλῆ",
+     "οὖσαν",
+     "ἅμα",
+     "τῇ",
+     "ἕῳ",
+     "ὁρμώμεθα"
+    ]
+   },
+   {
+    "prompt": "When you have crossed the river, pitch camp near the grove.",
+    "answer": "ἐπὴν τὸν ποταμὸν διαβῆτε, πλησίον τοῦ ἄλσους στρατοπεδεύσασθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπὴν",
+     "τὸν",
+     "ποταμὸν",
+     "διαβῆτε",
+     "πλησίον",
+     "τοῦ",
+     "ἄλσους",
+     "στρατοπεδεύσασθε"
+    ]
+   },
+   {
+    "prompt": "Whenever the people grow angry, the orators will not dare to speak the truth.",
+    "answer": "ὅταν ὁ δῆμος ὀργίζηται, οἱ ῥήτορες τὰ ἀληθῆ λέγειν οὐ τολμήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "δῆμος",
+     "ὀργίζηται",
+     "οἱ",
+     "ῥήτορες",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγειν",
+     "οὐ",
+     "τολμήσουσιν"
+    ]
+   },
+   {
+    "prompt": "So long as fortune is kind to the city, the young men will scorn danger.",
+    "answer": "ἕως ἂν ἡ τύχη τῇ πόλει εὐμενὴς ᾖ, οἱ νεανίαι τοῦ κινδύνου καταφρονήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "ἡ",
+     "τύχη",
+     "τῇ",
+     "πόλει",
+     "εὐμενὴς",
+     "ᾖ",
+     "οἱ",
+     "νεανίαι",
+     "τοῦ",
+     "κινδύνου",
+     "καταφρονήσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2401-future-temporal-clauses-with-the-t9",
+  "sectionId": "sm-2401-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "When night falls, the sentinels will keep watch upon the towers.",
+    "answer": "ἡνίκα ἂν νὺξ γένηται, οἱ φύλακες ἐπὶ τῶν πύργων φυλάξουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡνίκα",
+     "ἂν",
+     "νὺξ",
+     "γένηται",
+     "οἱ",
+     "φύλακες",
+     "ἐπὶ",
+     "τῶν",
+     "πύργων",
+     "φυλάξουσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever the poet is not present, the chorus will not sing well.",
+    "answer": "ὅταν ὁ ποιητὴς μὴ παρῇ, ὁ χορὸς οὐ καλῶς ᾄσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ὁ",
+     "ποιητὴς",
+     "μὴ",
+     "παρῇ",
+     "χορὸς",
+     "οὐ",
+     "καλῶς",
+     "ᾄσεται"
+    ]
+   },
+   {
+    "prompt": "When you have honoured the gods, you would never fear the future.",
+    "answer": "ἐπειδὰν τοὺς θεοὺς τιμήσῃς, τὸ μέλλον οὐκ ἄν ποτε φοβοῖο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "τοὺς",
+     "θεοὺς",
+     "τιμήσῃς",
+     "τὸ",
+     "μέλλον",
+     "οὐκ",
+     "ἄν",
+     "ποτε",
+     "φοβοῖο"
+    ]
+   },
+   {
+    "prompt": "Until the physician comes, let no one move the wounded man.",
+    "answer": "μέχρι ἂν ὁ ἰατρὸς ἔλθῃ, μηδεὶς τὸν τετρωμένον κινείτω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μέχρι",
+     "ἂν",
+     "ὁ",
+     "ἰατρὸς",
+     "ἔλθῃ",
+     "μηδεὶς",
+     "τὸν",
+     "τετρωμένον",
+     "κινείτω"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2401-future-temporal-clauses-with-the-t10",
+  "sectionId": "sm-2401-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "When spring comes on, the farmers will plant vines throughout the plain.",
+    "answer": "ὅταν τὸ ἔαρ ἐπέλθῃ, οἱ γεωργοὶ ἀμπέλους ἀνὰ τὸ πεδίον φυτεύσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "τὸ",
+     "ἔαρ",
+     "ἐπέλθῃ",
+     "οἱ",
+     "γεωργοὶ",
+     "ἀμπέλους",
+     "ἀνὰ",
+     "πεδίον",
+     "φυτεύσουσιν"
+    ]
+   },
+   {
+    "prompt": "So long as the tyrant rules, the exiles will not return home.",
+    "answer": "ἕως ἂν ὁ τύραννος ἄρχῃ, οἱ φυγάδες οἴκαδε οὐ κατελεύσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "ὁ",
+     "τύραννος",
+     "ἄρχῃ",
+     "οἱ",
+     "φυγάδες",
+     "οἴκαδε",
+     "οὐ",
+     "κατελεύσονται"
+    ]
+   },
+   {
+    "prompt": "When you have persuaded the judges, you will save your friend from death.",
+    "answer": "ἐπειδὰν τοὺς δικαστὰς πείσῃς, τὸν φίλον ἐκ τοῦ θανάτου σώσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "τοὺς",
+     "δικαστὰς",
+     "πείσῃς",
+     "τὸν",
+     "φίλον",
+     "ἐκ",
+     "τοῦ",
+     "θανάτου",
+     "σώσεις"
+    ]
+   },
+   {
+    "prompt": "Whenever the sea grows calm, the fishermen will sail out beyond the headland.",
+    "answer": "ὅταν ἡ θάλαττα γαληνὴ γένηται, οἱ ἁλιεῖς ἔξω τῆς ἄκρας ἐκπλεύσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "ἡ",
+     "θάλαττα",
+     "γαληνὴ",
+     "γένηται",
+     "οἱ",
+     "ἁλιεῖς",
+     "ἔξω",
+     "τῆς",
+     "ἄκρας",
+     "ἐκπλεύσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2401-future-temporal-clauses-with-the-t11",
+  "sectionId": "sm-2401-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "They will guard the citadel until they recover the ransom.",
+    "answer": "τὴν ἀκρόπολιν φυλάξουσι μέχρι οὗ τὰ λύτρα κομίσωνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὴν",
+     "ἀκρόπολιν",
+     "φυλάξουσι",
+     "μέχρι",
+     "οὗ",
+     "τὰ",
+     "λύτρα",
+     "κομίσωνται"
+    ]
+   },
+   {
+    "prompt": "When the trumpet has sounded, fall upon the enemy without fear.",
+    "answer": "ἐπειδὰν ἡ σάλπιγξ σημήνῃ, ἀφόβως τοῖς πολεμίοις ἐπίθεσθε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ἡ",
+     "σάλπιγξ",
+     "σημήνῃ",
+     "ἀφόβως",
+     "τοῖς",
+     "πολεμίοις",
+     "ἐπίθεσθε"
+    ]
+   },
+   {
+    "prompt": "So long as I hold this command, I will lead you toward freedom.",
+    "answer": "ἕως ἂν ταύτην τὴν ἀρχὴν ἔχω, ὑμᾶς πρὸς τὴν ἐλευθερίαν ἄξω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "ταύτην",
+     "τὴν",
+     "ἀρχὴν",
+     "ἔχω",
+     "ὑμᾶς",
+     "πρὸς",
+     "ἐλευθερίαν",
+     "ἄξω"
+    ]
+   },
+   {
+    "prompt": "When the allies have gathered together, we shall march against the barbarians.",
+    "answer": "ἐπειδὰν οἱ σύμμαχοι συλλεγῶσιν, ἐπὶ τοὺς βαρβάρους στρατευσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "οἱ",
+     "σύμμαχοι",
+     "συλλεγῶσιν",
+     "ἐπὶ",
+     "τοὺς",
+     "βαρβάρους",
+     "στρατευσόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2401-future-temporal-clauses-with-the-t12",
+  "sectionId": "sm-2401-future-temporal-clauses-with-the",
+  "questions": [
+   {
+    "prompt": "When you have read the letter, burn it at once.",
+    "answer": "ἐπειδὰν τὴν ἐπιστολὴν ἀναγνῷς, εὐθὺς αὐτὴν κατάκαυσον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "τὴν",
+     "ἐπιστολὴν",
+     "ἀναγνῷς",
+     "εὐθὺς",
+     "αὐτὴν",
+     "κατάκαυσον"
+    ]
+   },
+   {
+    "prompt": "Whenever the citizens neglect the laws, the city will fall into confusion.",
+    "answer": "ὅταν οἱ πολῖται τῶν νόμων ἀμελῶσιν, ἡ πόλις εἰς ταραχὴν καταστήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅταν",
+     "οἱ",
+     "πολῖται",
+     "τῶν",
+     "νόμων",
+     "ἀμελῶσιν",
+     "ἡ",
+     "πόλις",
+     "εἰς",
+     "ταραχὴν",
+     "καταστήσεται"
+    ]
+   },
+   {
+    "prompt": "So long as the walls stand, no one would ever capture the city.",
+    "answer": "ἕως ἂν τὰ τείχη ἑστήκῃ, οὐδεὶς ἄν ποτε τὴν πόλιν ἕλοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἕως",
+     "ἂν",
+     "τὰ",
+     "τείχη",
+     "ἑστήκῃ",
+     "οὐδεὶς",
+     "ἄν",
+     "ποτε",
+     "τὴν",
+     "πόλιν",
+     "ἕλοι"
+    ]
+   },
+   {
+    "prompt": "When the winter has ended, the ships will put to sea again.",
+    "answer": "ἐπειδὰν ὁ χειμὼν λήξῃ, αἱ νῆες αὖθις ἀνάξονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὰν",
+     "ὁ",
+     "χειμὼν",
+     "λήξῃ",
+     "αἱ",
+     "νῆες",
+     "αὖθις",
+     "ἀνάξονται"
+    ]
+   }
+  ]
  }
 ]
