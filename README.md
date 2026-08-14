@@ -749,6 +749,16 @@ limit resumes where it stopped. On a sustained limit it retries with a growing
 backoff and then stops, rather than marching through the remaining topics
 producing nothing.
 
+Two topics are written at once. A topic is the unit that parallelises without
+anything having to be kept in step — it owns its file, its call budget and the
+prompts it must not repeat — while the calls *within* one stay in sequence,
+because each is told what the last one wrote. `--jobs N` sets the number and
+`--jobs 1` is the strictly serial run; the ceiling worth respecting is the
+`claude -p` usage limit rather than the machine. Splitting a pack across
+several processes over disjoint topic lists works as it always did —
+`gen-stats.json` is appended under a lock for exactly that — and the two
+compose, so eight streams is four processes at `--jobs 2`.
+
 Calls per topic are budgeted from the deficit, so topping a topic up by two
 tests does not cost what writing it from nothing does. The ceiling (`--max`)
 defaults to whatever clears the pack's own largest target — set it by hand and
