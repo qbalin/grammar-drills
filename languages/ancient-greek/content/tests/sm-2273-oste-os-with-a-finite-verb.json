@@ -510,5 +510,696 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t8",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "The soldiers fought so bravely that they routed the enemy.",
+    "answer": "οἱ στρατιῶται οὕτως ἀνδρείως ἐμαχέσαντο ὥστε τοὺς πολεμίους ἐτρέψαντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "στρατιῶται",
+     "οὕτως",
+     "ἀνδρείως",
+     "ἐμαχέσαντο",
+     "ὥστε",
+     "τοὺς",
+     "πολεμίους",
+     "ἐτρέψαντο"
+    ]
+   },
+   {
+    "prompt": "Such fear fell upon the citizens that they abandoned the walls.",
+    "answer": "τοσοῦτος φόβος τοῖς πολίταις ἐνέπεσεν ὥστε τὰ τείχη ἐξέλιπον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτος",
+     "φόβος",
+     "τοῖς",
+     "πολίταις",
+     "ἐνέπεσεν",
+     "ὥστε",
+     "τὰ",
+     "τείχη",
+     "ἐξέλιπον"
+    ]
+   },
+   {
+    "prompt": "The plague grew so great that the physicians were not able to heal the sick.",
+    "answer": "ἡ νόσος τοσαύτη ἐγένετο ὥστε οἱ ἰατροὶ τοὺς κάμνοντας οὐκ ἐδύναντο ἰᾶσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "νόσος",
+     "τοσαύτη",
+     "ἐγένετο",
+     "ὥστε",
+     "οἱ",
+     "ἰατροὶ",
+     "τοὺς",
+     "κάμνοντας",
+     "οὐκ",
+     "ἐδύναντο",
+     "ἰᾶσθαι"
+    ]
+   },
+   {
+    "prompt": "He spoke for so long a time that the assembly grew weary.",
+    "answer": "οὕτω πολὺν χρόνον ἔλεγεν ὥστε ἡ ἐκκλησία ἔκαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "πολὺν",
+     "χρόνον",
+     "ἔλεγεν",
+     "ὥστε",
+     "ἡ",
+     "ἐκκλησία",
+     "ἔκαμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t9",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "I am so far from praising him that I openly blame him.",
+    "answer": "τοσούτου δέω ἐπαινεῖν αὐτὸν ὥστε φανερῶς αὐτὸν ψέγω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσούτου",
+     "δέω",
+     "ἐπαινεῖν",
+     "αὐτὸν",
+     "ὥστε",
+     "φανερῶς",
+     "ψέγω"
+    ]
+   },
+   {
+    "prompt": "He was so far from helping his friends that he betrayed them.",
+    "answer": "τοσούτου ἐδέησε τοὺς φίλους ὠφελῆσαι ὥστε αὐτοὺς προέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσούτου",
+     "ἐδέησε",
+     "τοὺς",
+     "φίλους",
+     "ὠφελῆσαι",
+     "ὥστε",
+     "αὐτοὺς",
+     "προέδωκεν"
+    ]
+   },
+   {
+    "prompt": "The city was so far from yielding that it bravely endured the siege.",
+    "answer": "ἡ πόλις τοσούτου ἐδέησεν εἶξαι ὥστε τὴν πολιορκίαν ἀνδρείως ὑπέμεινεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "τοσούτου",
+     "ἐδέησεν",
+     "εἶξαι",
+     "ὥστε",
+     "τὴν",
+     "πολιορκίαν",
+     "ἀνδρείως",
+     "ὑπέμεινεν"
+    ]
+   },
+   {
+    "prompt": "We are so far from despairing that we hope for victory.",
+    "answer": "τοσούτου δέομεν ἀθυμεῖν ὥστε νίκην ἐλπίζομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσούτου",
+     "δέομεν",
+     "ἀθυμεῖν",
+     "ὥστε",
+     "νίκην",
+     "ἐλπίζομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t10",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "The guide did not arrive; and so the Greeks were at a loss.",
+    "answer": "ὁ ἡγεμὼν οὐκ ἀφίκετο· ὥστε οἱ Ἕλληνες ἠπόρουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἡγεμὼν",
+     "οὐκ",
+     "ἀφίκετο",
+     "ὥστε",
+     "οἱ",
+     "Ἕλληνες",
+     "ἠπόρουν"
+    ]
+   },
+   {
+    "prompt": "Night was coming on; and so the general ordered the men to encamp.",
+    "answer": "νὺξ ἐπῄει· ὥστε ὁ στρατηγὸς τοὺς ἄνδρας ἐκέλευσε στρατοπεδεύεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "νὺξ",
+     "ἐπῄει",
+     "ὥστε",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "ἄνδρας",
+     "ἐκέλευσε",
+     "στρατοπεδεύεσθαι"
+    ]
+   },
+   {
+    "prompt": "The rivers were impassable; and so they withdrew toward the mountains.",
+    "answer": "οἱ ποταμοὶ ἄποροι ἦσαν· ὥστε πρὸς τὰ ὄρη ἀνεχώρησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "ποταμοὶ",
+     "ἄποροι",
+     "ἦσαν",
+     "ὥστε",
+     "πρὸς",
+     "τὰ",
+     "ὄρη",
+     "ἀνεχώρησαν"
+    ]
+   },
+   {
+    "prompt": "No help came from the allies; and so the city surrendered itself.",
+    "answer": "οὐδεμία βοήθεια παρὰ τῶν συμμάχων ἧκεν· ὥστε ἡ πόλις ἑαυτὴν παρέδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεμία",
+     "βοήθεια",
+     "παρὰ",
+     "τῶν",
+     "συμμάχων",
+     "ἧκεν",
+     "ὥστε",
+     "ἡ",
+     "πόλις",
+     "ἑαυτὴν",
+     "παρέδωκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t11",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "And so take courage and await the outcome.",
+    "answer": "ὥστε θάρρει καὶ τὸ τέλος ἀνάμενε.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστε",
+     "θάρρει",
+     "καὶ",
+     "τὸ",
+     "τέλος",
+     "ἀνάμενε"
+    ]
+   },
+   {
+    "prompt": "And so let us not abandon our post.",
+    "answer": "ὥστε τὴν τάξιν μὴ λίπωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστε",
+     "τὴν",
+     "τάξιν",
+     "μὴ",
+     "λίπωμεν"
+    ]
+   },
+   {
+    "prompt": "And so how shall we escape the danger?",
+    "answer": "ὥστε πῶς τὸν κίνδυνον φευξόμεθα;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστε",
+     "πῶς",
+     "τὸν",
+     "κίνδυνον",
+     "φευξόμεθα"
+    ]
+   },
+   {
+    "prompt": "And so do not fear the threats of the tyrant.",
+    "answer": "ὥστε τὰς τοῦ τυράννου ἀπειλὰς μὴ φοβηθῇς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστε",
+     "τὰς",
+     "τοῦ",
+     "τυράννου",
+     "ἀπειλὰς",
+     "μὴ",
+     "φοβηθῇς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t12",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "They shouted so loudly that anyone would have thought the enemy were at hand.",
+    "answer": "οὕτω μέγα ἐβόησαν ὥστε πᾶς ἂν ᾠήθη τοὺς πολεμίους παρεῖναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "μέγα",
+     "ἐβόησαν",
+     "ὥστε",
+     "πᾶς",
+     "ἂν",
+     "ᾠήθη",
+     "τοὺς",
+     "πολεμίους",
+     "παρεῖναι"
+    ]
+   },
+   {
+    "prompt": "So bright was the moon that no one could have escaped notice.",
+    "answer": "οὕτω λαμπρὰ ἦν ἡ σελήνη ὥστε οὐδεὶς ἂν ἔλαθεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "λαμπρὰ",
+     "ἦν",
+     "ἡ",
+     "σελήνη",
+     "ὥστε",
+     "οὐδεὶς",
+     "ἂν",
+     "ἔλαθεν"
+    ]
+   },
+   {
+    "prompt": "He arranged everything so well that no enemy would have caught him unprepared.",
+    "answer": "οὕτω καλῶς πάντα διέταξεν ὥστε οὐδεὶς πολέμιος ἂν ἀπαράσκευον αὐτὸν κατέλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "καλῶς",
+     "πάντα",
+     "διέταξεν",
+     "ὥστε",
+     "οὐδεὶς",
+     "πολέμιος",
+     "ἂν",
+     "ἀπαράσκευον",
+     "αὐτὸν",
+     "κατέλαβεν"
+    ]
+   },
+   {
+    "prompt": "Her grief was so evident that all would have pitied her.",
+    "answer": "οὕτω φανερὸν ἦν τὸ πένθος αὐτῆς ὥστε πάντες ἂν αὐτὴν ᾤκτιραν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "φανερὸν",
+     "ἦν",
+     "τὸ",
+     "πένθος",
+     "αὐτῆς",
+     "ὥστε",
+     "πάντες",
+     "ἂν",
+     "αὐτὴν",
+     "ᾤκτιραν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t13",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "A good general would so guard the city that no enemy would ever take it.",
+    "answer": "ἀγαθὸς στρατηγὸς οὕτως ἂν τὴν πόλιν φυλάττοι ὥστε οὐδεὶς ἄν ποτε πολέμιος αὐτὴν ἕλοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἀγαθὸς",
+     "στρατηγὸς",
+     "οὕτως",
+     "ἂν",
+     "τὴν",
+     "πόλιν",
+     "φυλάττοι",
+     "ὥστε",
+     "οὐδεὶς",
+     "ποτε",
+     "πολέμιος",
+     "αὐτὴν",
+     "ἕλοι"
+    ]
+   },
+   {
+    "prompt": "You are so far unworthy of pity that you would most justly be hated.",
+    "answer": "τοσούτου δεῖς ἐλέου ἄξιος εἶναι ὥστε μισηθείης ἂν δικαιότατα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσούτου",
+     "δεῖς",
+     "ἐλέου",
+     "ἄξιος",
+     "εἶναι",
+     "ὥστε",
+     "μισηθείης",
+     "ἂν",
+     "δικαιότατα"
+    ]
+   },
+   {
+    "prompt": "Whoever should so train his body would become so strong that he would conquer all.",
+    "answer": "ὅστις τὸ σῶμα οὕτως ἀσκοίη, τοσοῦτον ἂν ἰσχύοι ὥστε πάντας νικῴη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὅστις",
+     "τὸ",
+     "σῶμα",
+     "οὕτως",
+     "ἀσκοίη",
+     "τοσοῦτον",
+     "ἂν",
+     "ἰσχύοι",
+     "ὥστε",
+     "πάντας",
+     "νικῴη"
+    ]
+   },
+   {
+    "prompt": "If a general should so care for his soldiers, they would love him more than their own fathers.",
+    "answer": "εἰ στρατηγὸς οὕτω τῶν στρατιωτῶν ἐπιμελοῖτο ὥστε φιλοῖεν αὐτὸν μᾶλλον ἢ τοὺς ἑαυτῶν πατέρας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "στρατηγὸς",
+     "οὕτω",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἐπιμελοῖτο",
+     "ὥστε",
+     "φιλοῖεν",
+     "αὐτὸν",
+     "μᾶλλον",
+     "ἢ",
+     "τοὺς",
+     "ἑαυτῶν",
+     "πατέρας"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t14",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "The enemy attacked so suddenly that the guards fled without their weapons.",
+    "answer": "οἱ πολέμιοι οὕτως ἐξαίφνης προσέβαλον ὥστε οἱ φύλακες ἄνευ τῶν ὅπλων ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πολέμιοι",
+     "οὕτως",
+     "ἐξαίφνης",
+     "προσέβαλον",
+     "ὥστε",
+     "φύλακες",
+     "ἄνευ",
+     "τῶν",
+     "ὅπλων",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "The old man spoke so wisely that all the citizens praised his counsel.",
+    "answer": "ὁ γέρων οὕτω σοφῶς ἔλεξεν ὥστε πάντες οἱ πολῖται τὴν βουλὴν αὐτοῦ ἐπῄνεσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "οὕτω",
+     "σοφῶς",
+     "ἔλεξεν",
+     "ὥστε",
+     "πάντες",
+     "οἱ",
+     "πολῖται",
+     "τήν",
+     "βουλήν",
+     "αὐτοῦ",
+     "ἐπῄνεσαν"
+    ]
+   },
+   {
+    "prompt": "The river grew so much that it swept away the bridge.",
+    "answer": "ὁ ποταμὸς τοσοῦτον ηὐξήθη ὥστε τὴν γέφυραν παρέσυρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμός",
+     "τοσοῦτον",
+     "ηὐξήθη",
+     "ὥστε",
+     "τήν",
+     "γέφυραν",
+     "παρέσυρεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t15",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "The messenger had not returned; and so the king suspected treachery.",
+    "answer": "ὁ ἄγγελος οὐκ ἐπανῆλθεν· ὥστε ὁ βασιλεὺς προδοσίαν ὑπώπτευεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ἄγγελος",
+     "οὐκ",
+     "ἐπανῆλθεν",
+     "ὥστε",
+     "βασιλεύς",
+     "προδοσίαν",
+     "ὑπώπτευεν"
+    ]
+   },
+   {
+    "prompt": "And so trust the gods and do not lose heart.",
+    "answer": "ὥστε τοῖς θεοῖς πίστευε καὶ μὴ ἀθύμει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστε",
+     "τοῖς",
+     "θεοῖς",
+     "πίστευε",
+     "καί",
+     "μή",
+     "ἀθύμει"
+    ]
+   },
+   {
+    "prompt": "And so let us not abandon our allies in danger.",
+    "answer": "ὥστε μὴ ἐγκαταλίπωμεν τοὺς συμμάχους ἐν κινδύνῳ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστε",
+     "μή",
+     "ἐγκαταλίπωμεν",
+     "τούς",
+     "συμμάχους",
+     "ἐν",
+     "κινδύνῳ"
+    ]
+   },
+   {
+    "prompt": "And so from where has he learned these things?",
+    "answer": "ὥστε πόθεν ταῦτα μεμάθηκεν;",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὥστε",
+     "πόθεν",
+     "ταῦτα",
+     "μεμάθηκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t16",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "He arranged everything so carefully that no one would have found fault.",
+    "answer": "οὕτως ἐπιμελῶς πάντα διέθηκεν ὥστε οὐδεὶς ἂν ἐμέμψατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτως",
+     "ἐπιμελῶς",
+     "πάντα",
+     "διέθηκεν",
+     "ὥστε",
+     "οὐδείς",
+     "ἄν",
+     "ἐμέμψατο"
+    ]
+   },
+   {
+    "prompt": "The public speech was so persuasive that even his enemies would have been convinced.",
+    "answer": "ἡ δημηγορία οὕτω πιθανὴ ἦν ὥστε καὶ οἱ ἐχθροὶ ἂν ἐπείσθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "δημηγορία",
+     "οὕτω",
+     "πιθανή",
+     "ἦν",
+     "ὥστε",
+     "καί",
+     "οἱ",
+     "ἐχθροί",
+     "ἄν",
+     "ἐπείσθησαν"
+    ]
+   },
+   {
+    "prompt": "The darkness was so complete that no one could have seen the road.",
+    "answer": "τοσοῦτον σκότος ἦν ὥστε οὐδεὶς ἂν τὴν ὁδὸν εἶδεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτον",
+     "σκότος",
+     "ἦν",
+     "ὥστε",
+     "οὐδείς",
+     "ἄν",
+     "τήν",
+     "ὁδόν",
+     "εἶδεν"
+    ]
+   },
+   {
+    "prompt": "The child laughed so sweetly that anyone would have loved her.",
+    "answer": "τὸ παιδίον οὕτως ἡδέως ἐγέλασεν ὥστε πᾶς ἂν αὐτὴν ἠγάπησεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τό",
+     "παιδίον",
+     "οὕτως",
+     "ἡδέως",
+     "ἐγέλασεν",
+     "ὥστε",
+     "πᾶς",
+     "ἄν",
+     "αὐτήν",
+     "ἠγάπησεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2273-oste-os-with-a-finite-verb-t17",
+  "sectionId": "sm-2273-oste-os-with-a-finite-verb",
+  "questions": [
+   {
+    "prompt": "If someone should so tend the sick that he made them well, we would honor him greatly.",
+    "answer": "εἴ τις οὕτω τῶν νοσούντων ἐπιμελοῖτο ὥστε ὑγιεῖς αὐτοὺς ποιήσειεν, μεγάλως ἂν αὐτὸν τιμῷμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἴ",
+     "τις",
+     "οὕτω",
+     "τῶν",
+     "νοσούντων",
+     "ἐπιμελοῖτο",
+     "ὥστε",
+     "ὑγιεῖς",
+     "αὐτούς",
+     "ποιήσειεν",
+     "μεγάλως",
+     "ἄν",
+     "αὐτόν",
+     "τιμῷμεν"
+    ]
+   },
+   {
+    "prompt": "You are so far from being worthy of praise that you would justly be blamed by all.",
+    "answer": "τοσούτου δεῖς ἐπαίνου ἄξιος εἶναι ὥστε δικαίως ἂν ὑπὸ πάντων ψέγοιο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσούτου",
+     "δεῖς",
+     "ἐπαίνου",
+     "ἄξιος",
+     "εἶναι",
+     "ὥστε",
+     "δικαίως",
+     "ἄν",
+     "ὑπό",
+     "πάντων",
+     "ψέγοιο"
+    ]
+   },
+   {
+    "prompt": "The work is so great that no one could accomplish it alone.",
+    "answer": "τοσοῦτον τὸ ἔργον ἐστὶν ὥστε οὐδεὶς ἂν μόνος αὐτὸ ἐπιτελέσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτον",
+     "τό",
+     "ἔργον",
+     "ἐστίν",
+     "ὥστε",
+     "οὐδείς",
+     "ἄν",
+     "μόνος",
+     "αὐτό",
+     "ἐπιτελέσειεν"
+    ]
+   },
+   {
+    "prompt": "He governs so wisely that you would think a god ruled the city.",
+    "answer": "οὕτω σοφῶς ἄρχει ὥστε θεὸν ἂν ἡγήσαιο τῆς πόλεως ἄρχειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "σοφῶς",
+     "ἄρχει",
+     "ὥστε",
+     "θεόν",
+     "ἄν",
+     "ἡγήσαιο",
+     "τῆς",
+     "πόλεως",
+     "ἄρχειν"
+    ]
+   }
+  ]
  }
 ]

@@ -375,5 +375,411 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t7",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever the farmers work the land, they gather much fruit.",
+    "answer": "Ἐὰν οἱ γεωργοὶ τὴν γῆν ἐργάζωνται, πολὺν καρπὸν συλλέγουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "οἱ",
+     "γεωργοί",
+     "τήν",
+     "γῆν",
+     "ἐργάζωνται",
+     "πολύν",
+     "καρπόν",
+     "συλλέγουσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever the general is brave, the soldiers follow him willingly.",
+    "answer": "Ἐὰν ὁ στρατηγὸς ἀνδρεῖος ᾖ, οἱ στρατιῶται ἑκόντες αὐτῷ ἕπονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "ὁ",
+     "στρατηγός",
+     "ἀνδρεῖος",
+     "ᾖ",
+     "οἱ",
+     "στρατιῶται",
+     "ἑκόντες",
+     "αὐτῷ",
+     "ἕπονται"
+    ]
+   },
+   {
+    "prompt": "Whenever we honor the laws, the city is kept safe.",
+    "answer": "Ἐὰν τοὺς νόμους τιμῶμεν, ἡ πόλις σῴζεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "τούς",
+     "νόμους",
+     "τιμῶμεν",
+     "ἡ",
+     "πόλις",
+     "σῴζεται"
+    ]
+   },
+   {
+    "prompt": "Whenever the enemy approach the wall, the guards shout.",
+    "answer": "Ἐὰν οἱ πολέμιοι τῷ τείχει προσέρχωνται, οἱ φύλακες βοῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "οἱ",
+     "πολέμιοι",
+     "τῷ",
+     "τείχει",
+     "προσέρχωνται",
+     "φύλακες",
+     "βοῶσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t8",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever the shepherd led the flock to the mountain, the dogs followed.",
+    "answer": "Εἰ ὁ νομεὺς τὸ ποίμνιον πρὸς τὸ ὄρος ἄγοι, οἱ κύνες ἠκολούθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ὁ",
+     "νομεύς",
+     "τό",
+     "ποίμνιον",
+     "πρός",
+     "ὄρος",
+     "ἄγοι",
+     "οἱ",
+     "κύνες",
+     "ἠκολούθουν"
+    ]
+   },
+   {
+    "prompt": "Whenever the orator spoke well, the people applauded him.",
+    "answer": "Εἰ ὁ ῥήτωρ εὖ λέγοι, ὁ δῆμος αὐτὸν ἐπῄνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ὁ",
+     "ῥήτωρ",
+     "εὖ",
+     "λέγοι",
+     "δῆμος",
+     "αὐτόν",
+     "ἐπῄνει"
+    ]
+   },
+   {
+    "prompt": "Whenever anyone fell into danger, his friends helped him.",
+    "answer": "Εἰ τις εἰς κίνδυνον ἐμπίπτοι, οἱ φίλοι αὐτῷ ἐβοήθουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "τις",
+     "εἰς",
+     "κίνδυνον",
+     "ἐμπίπτοι",
+     "οἱ",
+     "φίλοι",
+     "αὐτῷ",
+     "ἐβοήθουν"
+    ]
+   },
+   {
+    "prompt": "Whenever the tyrant feared the citizens, he used to send for soldiers.",
+    "answer": "Εἰ ὁ τύραννος τοὺς πολίτας φοβοῖτο, στρατιώτας μετεπέμπετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ὁ",
+     "τύραννος",
+     "τούς",
+     "πολίτας",
+     "φοβοῖτο",
+     "στρατιώτας",
+     "μετεπέμπετο"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t9",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever the sun rises, the birds begin to sing.",
+    "answer": "Ἐὰν ὁ ἥλιος ἀνατέλλῃ, οἱ ὄρνιθες ᾄδειν ἄρχονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "ὁ",
+     "ἥλιος",
+     "ἀνατέλλῃ",
+     "οἱ",
+     "ὄρνιθες",
+     "ᾄδειν",
+     "ἄρχονται"
+    ]
+   },
+   {
+    "prompt": "If ever the road is long, the travelers grow weary.",
+    "answer": "Εἰ ἡ ὁδὸς μακρά ἐστιν, οἱ ὁδοιπόροι κάμνουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ἡ",
+     "ὁδός",
+     "μακρά",
+     "ἐστιν",
+     "οἱ",
+     "ὁδοιπόροι",
+     "κάμνουσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever we cross the river, we sacrifice to the gods.",
+    "answer": "Ἐὰν τὸν ποταμὸν διαβαίνωμεν, τοῖς θεοῖς θύομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "τόν",
+     "ποταμόν",
+     "διαβαίνωμεν",
+     "τοῖς",
+     "θεοῖς",
+     "θύομεν"
+    ]
+   },
+   {
+    "prompt": "Whenever the servant is idle, the master rebukes him.",
+    "answer": "Ἐὰν ὁ οἰκέτης ἀργὸς ᾖ, ὁ δεσπότης αὐτὸν ψέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "ὁ",
+     "οἰκέτης",
+     "ἀργός",
+     "ᾖ",
+     "δεσπότης",
+     "αὐτόν",
+     "ψέγει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t10",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever the huntsman saw a deer, he pursued it swiftly.",
+    "answer": "Εἰ ὁ κυνηγέτης ἔλαφον ἴδοι, ταχέως αὐτὴν ἐδίωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ὁ",
+     "κυνηγέτης",
+     "ἔλαφον",
+     "ἴδοι",
+     "ταχέως",
+     "αὐτήν",
+     "ἐδίωκεν"
+    ]
+   },
+   {
+    "prompt": "Whenever the sailors reached the harbor, they rejoiced.",
+    "answer": "Εἰ οἱ ναῦται εἰς τὸν λιμένα ἀφίκοιντο, ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "οἱ",
+     "ναῦται",
+     "εἰς",
+     "τόν",
+     "λιμένα",
+     "ἀφίκοιντο",
+     "ἔχαιρον"
+    ]
+   },
+   {
+    "prompt": "Whenever the general drew up the army, the enemy withdrew.",
+    "answer": "Εἰ ὁ στρατηγὸς τὸ στράτευμα τάττοι, οἱ πολέμιοι ἀνεχώρουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "τάττοι",
+     "οἱ",
+     "πολέμιοι",
+     "ἀνεχώρουν"
+    ]
+   },
+   {
+    "prompt": "Whenever a messenger announced victory, the whole city rejoiced.",
+    "answer": "Εἰ ἄγγελος νίκην ἀγγέλλοι, ἡ πόλις πᾶσα ἔχαιρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ἄγγελος",
+     "νίκην",
+     "ἀγγέλλοι",
+     "ἡ",
+     "πόλις",
+     "πᾶσα",
+     "ἔχαιρεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t11",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever men love wisdom, they despise wealth.",
+    "answer": "Ἐὰν οἱ ἄνθρωποι τὴν σοφίαν φιλῶσιν, τοῦ πλούτου καταφρονοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "οἱ",
+     "ἄνθρωποι",
+     "τήν",
+     "σοφίαν",
+     "φιλῶσιν",
+     "τοῦ",
+     "πλούτου",
+     "καταφρονοῦσιν"
+    ]
+   },
+   {
+    "prompt": "If ever the child obeys, the mother praises it.",
+    "answer": "Ἐὰν τὸ παιδίον πείθηται, ἡ μήτηρ αὐτὸ ἐπαινεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "τό",
+     "παιδίον",
+     "πείθηται",
+     "ἡ",
+     "μήτηρ",
+     "αὐτό",
+     "ἐπαινεῖ"
+    ]
+   },
+   {
+    "prompt": "Whenever winter comes, the birds fly toward the south.",
+    "answer": "Ἐὰν ὁ χειμὼν ἔλθῃ, οἱ ὄρνιθες πρὸς μεσημβρίαν πέτονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "ὁ",
+     "χειμών",
+     "ἔλθῃ",
+     "οἱ",
+     "ὄρνιθες",
+     "πρός",
+     "μεσημβρίαν",
+     "πέτονται"
+    ]
+   },
+   {
+    "prompt": "Whenever the physician is present, the sick have hope.",
+    "answer": "Ἐὰν ὁ ἰατρὸς παρῇ, οἱ κάμνοντες ἐλπίδα ἔχουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἐάν",
+     "ὁ",
+     "ἰατρός",
+     "παρῇ",
+     "οἱ",
+     "κάμνοντες",
+     "ἐλπίδα",
+     "ἔχουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2335-general-conditions-t12",
+  "sectionId": "sm-2335-general-conditions",
+  "questions": [
+   {
+    "prompt": "Whenever the king ordered anything, the servants obeyed at once.",
+    "answer": "Εἴ τι ὁ βασιλεὺς κελεύοι, οἱ θεράποντες εὐθὺς ἐπείθοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἴ",
+     "τι",
+     "ὁ",
+     "βασιλεύς",
+     "κελεύοι",
+     "οἱ",
+     "θεράποντες",
+     "εὐθύς",
+     "ἐπείθοντο"
+    ]
+   },
+   {
+    "prompt": "Whenever we made a mistake, the teacher taught us again.",
+    "answer": "Εἰ ἁμαρτάνοιμεν, ὁ διδάσκαλος ἡμᾶς αὖθις ἐδίδασκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ἁμαρτάνοιμεν",
+     "ὁ",
+     "διδάσκαλος",
+     "ἡμᾶς",
+     "αὖθις",
+     "ἐδίδασκεν"
+    ]
+   },
+   {
+    "prompt": "Whenever a storm arose, the sailors feared for their lives.",
+    "answer": "Εἰ χειμὼν γίγνοιτο, οἱ ναῦται περὶ τῶν ψυχῶν ἐφοβοῦντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "χειμών",
+     "γίγνοιτο",
+     "οἱ",
+     "ναῦται",
+     "περί",
+     "τῶν",
+     "ψυχῶν",
+     "ἐφοβοῦντο"
+    ]
+   },
+   {
+    "prompt": "Whenever the general captured a city, he treated the prisoners mildly.",
+    "answer": "Εἰ ὁ στρατηγὸς πόλιν λάβοι, τοῖς αἰχμαλώτοις πρᾴως ἐχρῆτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Εἰ",
+     "ὁ",
+     "στρατηγός",
+     "πόλιν",
+     "λάβοι",
+     "τοῖς",
+     "αἰχμαλώτοις",
+     "πρᾴως",
+     "ἐχρῆτο"
+    ]
+   }
+  ]
  }
 ]

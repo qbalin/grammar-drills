@@ -431,5 +431,370 @@
     }
    }
   ]
+ },
+ {
+  "id": "sm-2234-other-constructions-with-verbs-of-t8",
+  "sectionId": "sm-2234-other-constructions-with-verbs-of",
+  "questions": [
+   {
+    "prompt": "I am fearful how I shall escape the notice of the advancing enemy.",
+    "answer": "δέδοικα ὅπως τοὺς ἐπιόντας πολεμίους λήσω.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "ὅπως",
+     "τοὺς",
+     "ἐπιόντας",
+     "πολεμίους",
+     "λήσω"
+    ]
+   },
+   {
+    "prompt": "There is doubt whether I shall persuade my master.",
+    "answer": "φόβος εἰ πείσω τὸν δεσπότην.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φόβος",
+     "εἰ",
+     "πείσω",
+     "τὸν",
+     "δεσπότην"
+    ]
+   },
+   {
+    "prompt": "I am afraid what I shall answer to the judges.",
+    "answer": "δέδοικα ὅ τι ἀποκρινοῦμαι τοῖς δικασταῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δέδοικα",
+     "ὅ",
+     "τι",
+     "ἀποκρινοῦμαι",
+     "τοῖς",
+     "δικασταῖς"
+    ]
+   },
+   {
+    "prompt": "We are fearful how we shall save the city.",
+    "answer": "φοβούμεθα ὅπως τὴν πόλιν διασώσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβούμεθα",
+     "ὅπως",
+     "τὴν",
+     "πόλιν",
+     "διασώσομεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2234-other-constructions-with-verbs-of-t9",
+  "sectionId": "sm-2234-other-constructions-with-verbs-of",
+  "questions": [
+   {
+    "prompt": "Do not fear that you will be in want of money.",
+    "answer": "μὴ φοβοῦ ὡς τῶν χρημάτων ἀπορήσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "φοβοῦ",
+     "ὡς",
+     "τῶν",
+     "χρημάτων",
+     "ἀπορήσεις"
+    ]
+   },
+   {
+    "prompt": "We are not afraid that our friends will betray us.",
+    "answer": "οὐ φοβούμεθα ὡς οἱ φίλοι ἡμᾶς προδώσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "φοβούμεθα",
+     "ὡς",
+     "οἱ",
+     "φίλοι",
+     "ἡμᾶς",
+     "προδώσουσιν"
+    ]
+   },
+   {
+    "prompt": "We are not afraid that the walls will fall.",
+    "answer": "οὐ φοβούμεθα ὡς τὰ τείχη πεσεῖται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "φοβούμεθα",
+     "ὡς",
+     "τὰ",
+     "τείχη",
+     "πεσεῖται"
+    ]
+   },
+   {
+    "prompt": "Do not fear that you will suffer anything terrible at the hands of the enemy.",
+    "answer": "μὴ φοβοῦ ὡς δεινόν τι πείσῃ ὑπὸ τῶν πολεμίων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "μὴ",
+     "φοβοῦ",
+     "ὡς",
+     "δεινόν",
+     "τι",
+     "πείσῃ",
+     "ὑπὸ",
+     "τῶν",
+     "πολεμίων"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2234-other-constructions-with-verbs-of-t10",
+  "sectionId": "sm-2234-other-constructions-with-verbs-of",
+  "questions": [
+   {
+    "prompt": "He was afraid because the enemy had destroyed the bridge.",
+    "answer": "ἐφοβεῖτο ὅτι οἱ πολέμιοι τὴν γέφυραν ἔλυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ὅτι",
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "γέφυραν",
+     "ἔλυσαν"
+    ]
+   },
+   {
+    "prompt": "The sailors were afraid because a storm had arisen.",
+    "answer": "ἐφοβήθησαν οἱ ναῦται ὅτι χειμὼν ἐπεγένετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβήθησαν",
+     "οἱ",
+     "ναῦται",
+     "ὅτι",
+     "χειμὼν",
+     "ἐπεγένετο"
+    ]
+   },
+   {
+    "prompt": "The general was afraid because the provisions had run out.",
+    "answer": "ἐφοβεῖτο ὁ στρατηγὸς ὅτι τὰ σιτία ἐπέλιπεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ὁ",
+     "στρατηγὸς",
+     "ὅτι",
+     "τὰ",
+     "σιτία",
+     "ἐπέλιπεν"
+    ]
+   },
+   {
+    "prompt": "We were afraid because our allies had revolted.",
+    "answer": "ἐφοβούμεθα ὅτι οἱ σύμμαχοι ἀπέστησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβούμεθα",
+     "ὅτι",
+     "οἱ",
+     "σύμμαχοι",
+     "ἀπέστησαν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2234-other-constructions-with-verbs-of-t11",
+  "sectionId": "sm-2234-other-constructions-with-verbs-of",
+  "questions": [
+   {
+    "prompt": "He was not afraid at having wronged the citizens.",
+    "answer": "οὐκ ἐφοβήθη τοὺς πολίτας ἀδικήσας.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "ἐφοβήθη",
+     "τοὺς",
+     "πολίτας",
+     "ἀδικήσας"
+    ]
+   },
+   {
+    "prompt": "The general was afraid at having abandoned his soldiers in the battle.",
+    "answer": "ἐφοβεῖτο ὁ στρατηγὸς τοὺς στρατιώτας ἐν τῇ μάχῃ προλιπών.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ὁ",
+     "στρατηγὸς",
+     "τοὺς",
+     "στρατιώτας",
+     "ἐν",
+     "τῇ",
+     "μάχῃ",
+     "προλιπών"
+    ]
+   },
+   {
+    "prompt": "The sailors were afraid at having lost their ship in the storm.",
+    "answer": "ἐφοβήθησαν οἱ ναῦται τὴν ναῦν ἐν τῷ χειμῶνι ἀπολέσαντες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβήθησαν",
+     "οἱ",
+     "ναῦται",
+     "τὴν",
+     "ναῦν",
+     "ἐν",
+     "τῷ",
+     "χειμῶνι",
+     "ἀπολέσαντες"
+    ]
+   },
+   {
+    "prompt": "The woman was afraid at having cast out the stranger.",
+    "answer": "ἐφοβεῖτο ἡ γυνὴ τὸν ξένον ἐκβαλοῦσα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφοβεῖτο",
+     "ἡ",
+     "γυνὴ",
+     "τὸν",
+     "ξένον",
+     "ἐκβαλοῦσα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2234-other-constructions-with-verbs-of-t12",
+  "sectionId": "sm-2234-other-constructions-with-verbs-of",
+  "questions": [
+   {
+    "prompt": "The child is afraid to step into the water.",
+    "answer": "φοβεῖται ὁ παῖς εἰς τὸ ὕδωρ ἐμβῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβεῖται",
+     "ὁ",
+     "παῖς",
+     "εἰς",
+     "τὸ",
+     "ὕδωρ",
+     "ἐμβῆναι"
+    ]
+   },
+   {
+    "prompt": "I fear lying to my friends.",
+    "answer": "φοβοῦμαι τὸ ψεύδεσθαι πρὸς τοὺς φίλους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φοβοῦμαι",
+     "τὸ",
+     "ψεύδεσθαι",
+     "πρὸς",
+     "τοὺς",
+     "φίλους"
+    ]
+   },
+   {
+    "prompt": "They are not afraid that they will die for their country.",
+    "answer": "οὐ φοβοῦνται ἀποθανεῖσθαι ὑπὲρ τῆς πατρίδος.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐ",
+     "φοβοῦνται",
+     "ἀποθανεῖσθαι",
+     "ὑπὲρ",
+     "τῆς",
+     "πατρίδος"
+    ]
+   },
+   {
+    "prompt": "The slave hesitates to question his master.",
+    "answer": "ὁ δὲ δοῦλος φοβεῖται τὸν δεσπότην ἐρωτῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "δὲ",
+     "δοῦλος",
+     "φοβεῖται",
+     "τὸν",
+     "δεσπότην",
+     "ἐρωτῆσαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2234-other-constructions-with-verbs-of-t13",
+  "sectionId": "sm-2234-other-constructions-with-verbs-of",
+  "questions": [
+   {
+    "prompt": "The general took precautions lest the enemy should attack in the night.",
+    "answer": "ἐφυλάττετο ὁ στρατηγὸς μὴ ἐν τῇ νυκτὶ προσβάλοιεν οἱ πολέμιοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐφυλάττετο",
+     "ὁ",
+     "στρατηγὸς",
+     "μὴ",
+     "ἐν",
+     "τῇ",
+     "νυκτὶ",
+     "προσβάλοιεν",
+     "οἱ",
+     "πολέμιοι"
+    ]
+   },
+   {
+    "prompt": "We take care not to act impiously toward the gods.",
+    "answer": "εὐλαβούμεθα μὴ εἰς τοὺς θεοὺς ἀσεβήσωμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εὐλαβούμεθα",
+     "μὴ",
+     "εἰς",
+     "τοὺς",
+     "θεοὺς",
+     "ἀσεβήσωμεν"
+    ]
+   },
+   {
+    "prompt": "We take care not to offend our allies.",
+    "answer": "φυλαττόμεθα τὸ λυπῆσαι τοὺς συμμάχους.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φυλαττόμεθα",
+     "τὸ",
+     "λυπῆσαι",
+     "τοὺς",
+     "συμμάχους"
+    ]
+   },
+   {
+    "prompt": "Let us seize the hill before the enemy take precautions, so as not to be repulsed.",
+    "answer": "καταλάβωμεν τὸν λόφον πρὶν τοὺς πολεμίους φυλάξασθαι, ὥστε μὴ ἀπωσθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "καταλάβωμεν",
+     "τὸν",
+     "λόφον",
+     "πρὶν",
+     "τοὺς",
+     "πολεμίους",
+     "φυλάξασθαι",
+     "ὥστε",
+     "μὴ",
+     "ἀπωσθῆναι"
+    ]
+   }
+  ]
  }
 ]

@@ -406,5 +406,815 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t7",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the enemy, having crossed the river, are encamped nearby, we know their plans.",
+    "answer": "εἰ οἱ πολέμιοι τὸν ποταμὸν διαβάντες πλησίον στρατοπεδεύονται, τὰ βουλεύματα αὐτῶν ἴσμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολέμιοι",
+     "τὸν",
+     "ποταμὸν",
+     "διαβάντες",
+     "πλησίον",
+     "στρατοπεδεύονται",
+     "τὰ",
+     "βουλεύματα",
+     "αὐτῶν",
+     "ἴσμεν"
+    ]
+   },
+   {
+    "prompt": "If Demosthenes is speaking the truth, the Athenians are in danger.",
+    "answer": "εἰ ὁ Δημοσθένης τὰ ἀληθῆ λέγει, οἱ Ἀθηναῖοι κινδυνεύουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Δημοσθένης",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγει",
+     "οἱ",
+     "Ἀθηναῖοι",
+     "κινδυνεύουσιν"
+    ]
+   },
+   {
+    "prompt": "If the man who holds office is unjust, the whole city suffers badly.",
+    "answer": "εἰ ὁ τὴν ἀρχὴν ἔχων ἄδικός ἐστιν, ἡ πόλις ὅλη κακῶς πάσχει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "τὴν",
+     "ἀρχὴν",
+     "ἔχων",
+     "ἄδικός",
+     "ἐστιν",
+     "ἡ",
+     "πόλις",
+     "ὅλη",
+     "κακῶς",
+     "πάσχει"
+    ]
+   },
+   {
+    "prompt": "If we are truly free, we fear no tyrant.",
+    "answer": "εἰ τῷ ὄντι ἐλεύθεροί ἐσμεν, οὐδένα τύραννον φοβούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῷ",
+     "ὄντι",
+     "ἐλεύθεροί",
+     "ἐσμεν",
+     "οὐδένα",
+     "τύραννον",
+     "φοβούμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t8",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If you capture the citadel, having deceived the guards, you will hold the whole city.",
+    "answer": "ἐὰν τὴν ἀκρόπολιν λάβῃς τοὺς φύλακας ἐξαπατήσας, τὴν πόλιν ὅλην ἕξεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὴν",
+     "ἀκρόπολιν",
+     "λάβῃς",
+     "τοὺς",
+     "φύλακας",
+     "ἐξαπατήσας",
+     "πόλιν",
+     "ὅλην",
+     "ἕξεις"
+    ]
+   },
+   {
+    "prompt": "If the sailors row eagerly, we shall escape the storm.",
+    "answer": "ἐὰν οἱ ναῦται προθύμως ἐλαύνωσιν, τὸν χειμῶνα φευξόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "ναῦται",
+     "προθύμως",
+     "ἐλαύνωσιν",
+     "τὸν",
+     "χειμῶνα",
+     "φευξόμεθα"
+    ]
+   },
+   {
+    "prompt": "If, the war having ceased, the herald announces peace, the soldiers will lay down their arms.",
+    "answer": "ἐὰν τοῦ πολέμου παυσαμένου ὁ κῆρυξ εἰρήνην ἀγγείλῃ, οἱ στρατιῶται τὰ ὅπλα καταθήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τοῦ",
+     "πολέμου",
+     "παυσαμένου",
+     "ὁ",
+     "κῆρυξ",
+     "εἰρήνην",
+     "ἀγγείλῃ",
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ὅπλα",
+     "καταθήσουσιν"
+    ]
+   },
+   {
+    "prompt": "If anyone betrays the fortress, he will be punished by the citizens.",
+    "answer": "ἐάν τις τὸ φρούριον προδῷ, ὑπὸ τῶν πολιτῶν κολασθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "τὸ",
+     "φρούριον",
+     "προδῷ",
+     "ὑπὸ",
+     "τῶν",
+     "πολιτῶν",
+     "κολασθήσεται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t9",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the king should trust the exiles, he would soon change his mind.",
+    "answer": "εἰ ὁ βασιλεὺς τοῖς φυγάσι πιστεύοι, ταχέως ἂν μεταγνοίη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "βασιλεὺς",
+     "τοῖς",
+     "φυγάσι",
+     "πιστεύοι",
+     "ταχέως",
+     "ἂν",
+     "μεταγνοίη"
+    ]
+   },
+   {
+    "prompt": "If the poet should praise these deeds, he would win great glory.",
+    "answer": "εἰ ὁ ποιητὴς ταῦτα τὰ ἔργα ἐπαινοίη, μέγα ἂν κῦδος φέροιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ποιητὴς",
+     "ταῦτα",
+     "τὰ",
+     "ἔργα",
+     "ἐπαινοίη",
+     "μέγα",
+     "ἂν",
+     "κῦδος",
+     "φέροιτο"
+    ]
+   },
+   {
+    "prompt": "If we should abandon our allies, betraying our oaths, we would seem unjust to all.",
+    "answer": "εἰ τοὺς συμμάχους καταλίποιμεν τοὺς ὅρκους προδόντες, ἄδικοι ἂν πᾶσι δοκοῖμεν εἶναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοὺς",
+     "συμμάχους",
+     "καταλίποιμεν",
+     "ὅρκους",
+     "προδόντες",
+     "ἄδικοι",
+     "ἂν",
+     "πᾶσι",
+     "δοκοῖμεν",
+     "εἶναι"
+    ]
+   },
+   {
+    "prompt": "If the Thebans should attack while the moon is not shining, the guards would not easily see them.",
+    "answer": "εἰ οἱ Θηβαῖοι τῆς σελήνης μὴ λαμπούσης προσβάλοιεν, οὐκ ἂν ῥᾳδίως αὐτοὺς οἱ φύλακες ἴδοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "Θηβαῖοι",
+     "τῆς",
+     "σελήνης",
+     "μὴ",
+     "λαμπούσης",
+     "προσβάλοιεν",
+     "οὐκ",
+     "ἂν",
+     "ῥᾳδίως",
+     "αὐτοὺς",
+     "φύλακες",
+     "ἴδοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t10",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the jurors were just, they would not condemn those who have done no wrong.",
+    "answer": "εἰ οἱ δικασταὶ δίκαιοι ἦσαν, τῶν οὐδὲν ἀδικησάντων οὐκ ἂν κατεδίκαζον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "δικασταὶ",
+     "δίκαιοι",
+     "ἦσαν",
+     "τῶν",
+     "οὐδὲν",
+     "ἀδικησάντων",
+     "οὐκ",
+     "ἂν",
+     "κατεδίκαζον"
+    ]
+   },
+   {
+    "prompt": "If you were really my friend, you would help me in these dangers.",
+    "answer": "εἰ τῷ ὄντι φίλος μοι ἦσθα, ἐν τούτοις τοῖς κινδύνοις ἂν ἐβοήθεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῷ",
+     "ὄντι",
+     "φίλος",
+     "μοι",
+     "ἦσθα",
+     "ἐν",
+     "τούτοις",
+     "τοῖς",
+     "κινδύνοις",
+     "ἂν",
+     "ἐβοήθεις"
+    ]
+   },
+   {
+    "prompt": "If the general were leading the army now, with the danger at hand, we would not be afraid.",
+    "answer": "εἰ ὁ στρατηγὸς νῦν τὸ στράτευμα ἦγεν, τοῦ κινδύνου παρόντος οὐκ ἂν ἐφοβούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "νῦν",
+     "τὸ",
+     "στράτευμα",
+     "ἦγεν",
+     "τοῦ",
+     "κινδύνου",
+     "παρόντος",
+     "οὐκ",
+     "ἂν",
+     "ἐφοβούμεθα"
+    ]
+   },
+   {
+    "prompt": "If wealth produced virtue, no poor man would be good.",
+    "answer": "εἰ ὁ πλοῦτος ἀρετὴν ἐποίει, οὐδεὶς ἂν πένης ἀγαθὸς ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "πλοῦτος",
+     "ἀρετὴν",
+     "ἐποίει",
+     "οὐδεὶς",
+     "ἂν",
+     "πένης",
+     "ἀγαθὸς",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t11",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the allies, marching quickly, had come in time, we would have won the battle.",
+    "answer": "εἰ οἱ σύμμαχοι ταχέως πορευόμενοι ἐν καιρῷ ἦλθον, τὴν μάχην ἂν ἐνικήσαμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "σύμμαχοι",
+     "ταχέως",
+     "πορευόμενοι",
+     "ἐν",
+     "καιρῷ",
+     "ἦλθον",
+     "τὴν",
+     "μάχην",
+     "ἂν",
+     "ἐνικήσαμεν"
+    ]
+   },
+   {
+    "prompt": "If you had guarded the gates, the enemy would not have entered.",
+    "answer": "εἰ τὰς πύλας ἐφύλαξας, οἱ πολέμιοι οὐκ ἂν εἰσῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὰς",
+     "πύλας",
+     "ἐφύλαξας",
+     "οἱ",
+     "πολέμιοι",
+     "οὐκ",
+     "ἂν",
+     "εἰσῆλθον"
+    ]
+   },
+   {
+    "prompt": "If the king had obeyed the wise men, he would not have destroyed the city.",
+    "answer": "εἰ ὁ βασιλεὺς τοῖς σοφοῖς ἐπείσθη, τὴν πόλιν οὐκ ἂν διέφθειρεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "βασιλεὺς",
+     "τοῖς",
+     "σοφοῖς",
+     "ἐπείσθη",
+     "τὴν",
+     "πόλιν",
+     "οὐκ",
+     "ἂν",
+     "διέφθειρεν"
+    ]
+   },
+   {
+    "prompt": "If the orator had spoken more clearly, the assembled people would have understood.",
+    "answer": "εἰ ὁ ῥήτωρ σαφέστερον εἶπεν, ὁ συνειλεγμένος δῆμος ἂν συνῆκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ῥήτωρ",
+     "σαφέστερον",
+     "εἶπεν",
+     "συνειλεγμένος",
+     "δῆμος",
+     "ἂν",
+     "συνῆκεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t12",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If ever the wind is favorable, the sailors set sail gladly.",
+    "answer": "ἐὰν ὁ ἄνεμος οὔριος ᾖ, οἱ ναῦται ἡδέως ἐκπλέουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "ἄνεμος",
+     "οὔριος",
+     "ᾖ",
+     "οἱ",
+     "ναῦται",
+     "ἡδέως",
+     "ἐκπλέουσιν"
+    ]
+   },
+   {
+    "prompt": "If ever a man flatters the tyrant, he receives great gifts.",
+    "answer": "ἐάν τις τὸν τύραννον κολακεύῃ, μεγάλα δῶρα λαμβάνει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "τὸν",
+     "τύραννον",
+     "κολακεύῃ",
+     "μεγάλα",
+     "δῶρα",
+     "λαμβάνει"
+    ]
+   },
+   {
+    "prompt": "Whenever the Spartans conquered in battle, they used to set up a trophy.",
+    "answer": "εἰ οἱ Λακεδαιμόνιοι μάχῃ νικῷεν, τρόπαιον ἵστασαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "Λακεδαιμόνιοι",
+     "μάχῃ",
+     "νικῷεν",
+     "τρόπαιον",
+     "ἵστασαν"
+    ]
+   },
+   {
+    "prompt": "Give the jurors the silver, and they will strike out the indictment.",
+    "answer": "δὸς τοῖς δικασταῖς τὸ ἀργύριον, καὶ τὴν γραφὴν ἐξαλείψουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "δὸς",
+     "τοῖς",
+     "δικασταῖς",
+     "τὸ",
+     "ἀργύριον",
+     "καὶ",
+     "τὴν",
+     "γραφὴν",
+     "ἐξαλείψουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t13",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the sailors reach the shore, they will offer sacrifice to the gods.",
+    "answer": "ἐὰν οἱ ναῦται εἰς τὴν ἀκτὴν ἀφίκωνται, θύσουσι τοῖς θεοῖς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "ναῦται",
+     "εἰς",
+     "τήν",
+     "ἀκτήν",
+     "ἀφίκωνται",
+     "θύσουσι",
+     "τοῖς",
+     "θεοῖς"
+    ]
+   },
+   {
+    "prompt": "If you imitate the brave, you will become worthy of praise.",
+    "answer": "ἐὰν τοὺς ἀνδρείους μιμῇ, ἄξιος ἐπαίνου γενήσῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τούς",
+     "ἀνδρείους",
+     "μιμῇ",
+     "ἄξιος",
+     "ἐπαίνου",
+     "γενήσῃ"
+    ]
+   },
+   {
+    "prompt": "If the enemy attack the wall by night, the guards will announce it.",
+    "answer": "ἐὰν οἱ πολέμιοι νύκτωρ τῷ τείχει προσβάλωσιν, οἱ φύλακες ἀγγελοῦσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "πολέμιοι",
+     "νύκτωρ",
+     "τῷ",
+     "τείχει",
+     "προσβάλωσιν",
+     "φύλακες",
+     "ἀγγελοῦσιν"
+    ]
+   },
+   {
+    "prompt": "If the suppliant flees to the altar, no one will harm him.",
+    "answer": "ἐὰν ὁ ἱκέτης ἐπὶ τὸν βωμὸν φύγῃ, οὐδεὶς αὐτὸν βλάψει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "ἱκέτης",
+     "ἐπί",
+     "τόν",
+     "βωμόν",
+     "φύγῃ",
+     "οὐδείς",
+     "αὐτόν",
+     "βλάψει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t14",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If anyone should deprive us of freedom, we would not endure it.",
+    "answer": "εἰ τῆς ἐλευθερίας ἡμᾶς ἀποστεροίη τις, οὐκ ἂν ἀνεχοίμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῆς",
+     "ἐλευθερίας",
+     "ἡμᾶς",
+     "ἀποστεροίη",
+     "τις",
+     "οὐκ",
+     "ἄν",
+     "ἀνεχοίμεθα"
+    ]
+   },
+   {
+    "prompt": "If the brothers should quarrel, the whole household would fare badly.",
+    "answer": "εἰ οἱ κασίγνητοι ἐρίζοιεν, πᾶσα ἡ οἰκία ἂν πάσχοι κακῶς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "κασίγνητοι",
+     "ἐρίζοιεν",
+     "πᾶσα",
+     "ἡ",
+     "οἰκία",
+     "ἄν",
+     "πάσχοι",
+     "κακῶς"
+    ]
+   },
+   {
+    "prompt": "If the neighboring peoples should invade the land, the farmers would flee to the city.",
+    "answer": "εἰ οἱ πλησιόχωροι εἰς τὴν χώραν ἐμβάλοιεν, οἱ γεωργοὶ εἰς τὴν πόλιν ἂν φύγοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πλησιόχωροι",
+     "εἰς",
+     "τήν",
+     "χώραν",
+     "ἐμβάλοιεν",
+     "γεωργοί",
+     "πόλιν",
+     "ἄν",
+     "φύγοιεν"
+    ]
+   },
+   {
+    "prompt": "If you should entreat the god, perhaps you would obtain what you wish.",
+    "answer": "εἰ τὸν θεὸν λίσσοιο, ἴσως ἂν τύχοις ὧν βούλει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τόν",
+     "θεόν",
+     "λίσσοιο",
+     "ἴσως",
+     "ἄν",
+     "τύχοις",
+     "ὧν",
+     "βούλει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t15",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the jurors honored justice, they would not be taking bribes.",
+    "answer": "εἰ οἱ δικασταὶ τὴν δικαιοσύνην ἐτίμων, οὐκ ἂν δῶρα ἐλάμβανον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "δικασταί",
+     "τήν",
+     "δικαιοσύνην",
+     "ἐτίμων",
+     "οὐκ",
+     "ἄν",
+     "δῶρα",
+     "ἐλάμβανον"
+    ]
+   },
+   {
+    "prompt": "If you were skilled with the tongue, you would be persuading the assembly.",
+    "answer": "εἰ τῇ γλώσσῃ δεινὸς ἦσθα, τὴν ἐκκλησίαν ἂν ἔπειθες.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῇ",
+     "γλώσσῃ",
+     "δεινός",
+     "ἦσθα",
+     "τήν",
+     "ἐκκλησίαν",
+     "ἄν",
+     "ἔπειθες"
+    ]
+   },
+   {
+    "prompt": "If the city were free from suffering, the citizens would rejoice.",
+    "answer": "εἰ ἡ πόλις ἀπαθὴς ἦν, οἱ πολῖται ἂν ἔχαιρον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "πόλις",
+     "ἀπαθής",
+     "ἦν",
+     "οἱ",
+     "πολῖται",
+     "ἄν",
+     "ἔχαιρον"
+    ]
+   },
+   {
+    "prompt": "If reason ruled all men, there would be no wars.",
+    "answer": "εἰ ὁ λογισμὸς πάντων τῶν ἀνθρώπων ἦρχεν, οὐκ ἂν ἦσαν πόλεμοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "λογισμός",
+     "πάντων",
+     "τῶν",
+     "ἀνθρώπων",
+     "ἦρχεν",
+     "οὐκ",
+     "ἄν",
+     "ἦσαν",
+     "πόλεμοι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t16",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If the sailors had guarded the ship, the enemy would not have burned it.",
+    "answer": "εἰ οἱ ναῦται τὴν ναῦν ἐφύλαξαν, οἱ πολέμιοι οὐκ ἂν αὐτὴν κατέκαυσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "ναῦται",
+     "τήν",
+     "ναῦν",
+     "ἐφύλαξαν",
+     "πολέμιοι",
+     "οὐκ",
+     "ἄν",
+     "αὐτήν",
+     "κατέκαυσαν"
+    ]
+   },
+   {
+    "prompt": "If the messenger had spoken the truth, we would have trusted him.",
+    "answer": "εἰ ὁ ἄγγελος τὰ ἀληθῆ εἶπεν, ἐπιστεύσαμεν ἂν αὐτῷ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἄγγελος",
+     "τά",
+     "ἀληθῆ",
+     "εἶπεν",
+     "ἐπιστεύσαμεν",
+     "ἄν",
+     "αὐτῷ"
+    ]
+   },
+   {
+    "prompt": "If the young man had wrestled better, he would have taken the prize.",
+    "answer": "εἰ ὁ νεανίας ἄμεινον ἐπάλαισε, τὸ ἆθλον ἂν ἔλαβεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "νεανίας",
+     "ἄμεινον",
+     "ἐπάλαισε",
+     "τό",
+     "ἆθλον",
+     "ἄν",
+     "ἔλαβεν"
+    ]
+   },
+   {
+    "prompt": "If the general had thrown a wall around the camp, he would have saved the army.",
+    "answer": "εἰ ὁ στρατηγὸς τὸ στρατόπεδον τείχει περιέβαλε, τὸ στράτευμα ἂν ἔσωσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στρατόπεδον",
+     "τείχει",
+     "περιέβαλε",
+     "στράτευμα",
+     "ἄν",
+     "ἔσωσεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2280-conditional-clauses-t17",
+  "sectionId": "sm-2280-conditional-clauses",
+  "questions": [
+   {
+    "prompt": "If ever one of the citizens speaks well, the people praise him.",
+    "answer": "ἐάν τις τῶν πολιτῶν εὖ λέγῃ, ὁ δῆμος αὐτὸν ἐπαινεῖ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τις",
+     "τῶν",
+     "πολιτῶν",
+     "εὖ",
+     "λέγῃ",
+     "ὁ",
+     "δῆμος",
+     "αὐτόν",
+     "ἐπαινεῖ"
+    ]
+   },
+   {
+    "prompt": "If ever the exiles return to their fatherland, they rejoice greatly.",
+    "answer": "ἐὰν οἱ φυγάδες εἰς τὴν πατρίδα κατέλθωσι, σφόδρα χαίρουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "φυγάδες",
+     "εἰς",
+     "τήν",
+     "πατρίδα",
+     "κατέλθωσι",
+     "σφόδρα",
+     "χαίρουσιν"
+    ]
+   },
+   {
+    "prompt": "Whenever the poet sang beautiful verses, the crowd used to fall silent.",
+    "answer": "εἰ ὁ ποιητὴς καλὰ ἔπη ᾄδοι, τὸ πλῆθος ἐσιώπα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ποιητής",
+     "καλά",
+     "ἔπη",
+     "ᾄδοι",
+     "τό",
+     "πλῆθος",
+     "ἐσιώπα"
+    ]
+   },
+   {
+    "prompt": "Whenever the old man told stories, the children used to listen eagerly.",
+    "answer": "εἰ ὁ γέρων μύθους λέγοι, οἱ παῖδες προθύμως ἤκουον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "γέρων",
+     "μύθους",
+     "λέγοι",
+     "οἱ",
+     "παῖδες",
+     "προθύμως",
+     "ἤκουον"
+    ]
+   }
+  ]
  }
 ]

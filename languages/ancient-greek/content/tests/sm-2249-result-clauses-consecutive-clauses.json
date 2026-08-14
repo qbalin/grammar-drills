@@ -442,5 +442,610 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2249-result-clauses-consecutive-clauses-t7",
+  "sectionId": "sm-2249-result-clauses-consecutive-clauses",
+  "questions": [
+   {
+    "prompt": "The old man was so wise that everyone trusted him.",
+    "answer": "Ὁ γέρων οὕτω σοφὸς ἦν ὥστε πάντας αὐτῷ πιστεύειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "γέρων",
+     "οὕτω",
+     "σοφὸς",
+     "ἦν",
+     "ὥστε",
+     "πάντας",
+     "αὐτῷ",
+     "πιστεύειν"
+    ]
+   },
+   {
+    "prompt": "The trumpet sounded so loudly that the whole camp was roused.",
+    "answer": "Ἡ σάλπιγξ οὕτω μέγα ἐφθέγξατο ὥστε πᾶν τὸ στρατόπεδον ἐγερθῆναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "σάλπιγξ",
+     "οὕτω",
+     "μέγα",
+     "ἐφθέγξατο",
+     "ὥστε",
+     "πᾶν",
+     "τὸ",
+     "στρατόπεδον",
+     "ἐγερθῆναι"
+    ]
+   },
+   {
+    "prompt": "The wine was so sweet that the guests drank the whole night.",
+    "answer": "Ὁ οἶνος οὕτως ἡδὺς ἦν ὥστε τοὺς ξένους ὅλην τὴν νύκτα πίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "οἶνος",
+     "οὕτως",
+     "ἡδὺς",
+     "ἦν",
+     "ὥστε",
+     "τοὺς",
+     "ξένους",
+     "ὅλην",
+     "τὴν",
+     "νύκτα",
+     "πίνειν"
+    ]
+   },
+   {
+    "prompt": "The mountain was so steep that no one wished to climb.",
+    "answer": "Τὸ ὄρος οὕτως ὄρθιον ἦν ὥστε μηδένα βούλεσθαι ἀναβαίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὸ",
+     "ὄρος",
+     "οὕτως",
+     "ὄρθιον",
+     "ἦν",
+     "ὥστε",
+     "μηδένα",
+     "βούλεσθαι",
+     "ἀναβαίνειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2249-result-clauses-consecutive-clauses-t8",
+  "sectionId": "sm-2249-result-clauses-consecutive-clauses",
+  "questions": [
+   {
+    "prompt": "He spoke so shamelessly that the assembly did not endure it.",
+    "answer": "Οὕτως ἀναιδῶς εἶπεν ὥστε ἡ ἐκκλησία οὐκ ἠνέσχετο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὕτως",
+     "ἀναιδῶς",
+     "εἶπεν",
+     "ὥστε",
+     "ἡ",
+     "ἐκκλησία",
+     "οὐκ",
+     "ἠνέσχετο"
+    ]
+   },
+   {
+    "prompt": "The army suffered such things that even the general wept.",
+    "answer": "Τοιαῦτα ἔπαθεν ὁ στρατὸς ὥστε καὶ ὁ στρατηγὸς ἐδάκρυσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τοιαῦτα",
+     "ἔπαθεν",
+     "ὁ",
+     "στρατὸς",
+     "ὥστε",
+     "καὶ",
+     "στρατηγὸς",
+     "ἐδάκρυσεν"
+    ]
+   },
+   {
+    "prompt": "The city was so strongly fortified that the enemy did not capture it.",
+    "answer": "Ἡ πόλις οὕτως ἰσχυρῶς ἐτετείχιστο ὥστε οἱ πολέμιοι οὐχ εἷλον αὐτήν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "πόλις",
+     "οὕτως",
+     "ἰσχυρῶς",
+     "ἐτετείχιστο",
+     "ὥστε",
+     "οἱ",
+     "πολέμιοι",
+     "οὐχ",
+     "εἷλον",
+     "αὐτήν"
+    ]
+   },
+   {
+    "prompt": "So many ships were destroyed that the sea was full of them.",
+    "answer": "Τοσαῦται νῆες διεφθάρησαν ὥστε ἡ θάλαττα μεστὴ αὐτῶν ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τοσαῦται",
+     "νῆες",
+     "διεφθάρησαν",
+     "ὥστε",
+     "ἡ",
+     "θάλαττα",
+     "μεστὴ",
+     "αὐτῶν",
+     "ἦν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2249-result-clauses-consecutive-clauses-t9",
+  "sectionId": "sm-2249-result-clauses-consecutive-clauses",
+  "questions": [
+   {
+    "prompt": "The winter became so harsh that the soldiers could not fight.",
+    "answer": "Ὁ χειμὼν οὕτω χαλεπὸς ἐγένετο ὥστε τοὺς στρατιώτας μὴ δύνασθαι μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "χειμὼν",
+     "οὕτω",
+     "χαλεπὸς",
+     "ἐγένετο",
+     "ὥστε",
+     "τοὺς",
+     "στρατιώτας",
+     "μὴ",
+     "δύνασθαι",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "He was such a friend to the poor that, when he died, they mourned.",
+    "answer": "Τοιοῦτος φίλος ἦν τοῖς πένησιν ὥστε ἀποθανόντος αὐτοῦ ἐπένθησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τοιοῦτος",
+     "φίλος",
+     "ἦν",
+     "τοῖς",
+     "πένησιν",
+     "ὥστε",
+     "ἀποθανόντος",
+     "αὐτοῦ",
+     "ἐπένθησαν"
+    ]
+   },
+   {
+    "prompt": "The speech was so long that many of the listeners slept.",
+    "answer": "Ὁ λόγος οὕτω μακρὸς ἦν ὥστε πολλοὺς τῶν ἀκουόντων καθεύδειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "λόγος",
+     "οὕτω",
+     "μακρὸς",
+     "ἦν",
+     "ὥστε",
+     "πολλοὺς",
+     "τῶν",
+     "ἀκουόντων",
+     "καθεύδειν"
+    ]
+   },
+   {
+    "prompt": "The gods gave such gifts to the just man that everyone envied him.",
+    "answer": "Τοιαῦτα δῶρα οἱ θεοὶ τῷ δικαίῳ ἔδοσαν ὥστε πάντας αὐτῷ φθονεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τοιαῦτα",
+     "δῶρα",
+     "οἱ",
+     "θεοὶ",
+     "τῷ",
+     "δικαίῳ",
+     "ἔδοσαν",
+     "ὥστε",
+     "πάντας",
+     "αὐτῷ",
+     "φθονεῖν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2249-result-clauses-consecutive-clauses-t10",
+  "sectionId": "sm-2249-result-clauses-consecutive-clauses",
+  "questions": [
+   {
+    "prompt": "The road was so narrow that the wagons were not able to pass.",
+    "answer": "Ἡ ὁδὸς οὕτω στενὴ ἦν ὥστε τὰς ἁμάξας μὴ οἵας τε εἶναι παρελθεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ἡ",
+     "ὁδὸς",
+     "οὕτω",
+     "στενὴ",
+     "ἦν",
+     "ὥστε",
+     "τὰς",
+     "ἁμάξας",
+     "μὴ",
+     "οἵας",
+     "τε",
+     "εἶναι",
+     "παρελθεῖν"
+    ]
+   },
+   {
+    "prompt": "The boy is so clever that he answers everything easily.",
+    "answer": "Ὁ παῖς οὕτω δεινός ἐστιν ὥστε πάντα ῥᾳδίως ἀποκρίνεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "παῖς",
+     "οὕτω",
+     "δεινός",
+     "ἐστιν",
+     "ὥστε",
+     "πάντα",
+     "ῥᾳδίως",
+     "ἀποκρίνεσθαι"
+    ]
+   },
+   {
+    "prompt": "The enemy was so numerous that our men feared to attack.",
+    "answer": "Οἱ πολέμιοι τοσοῦτοι ἦσαν ὥστε τοὺς ἡμετέρους φοβεῖσθαι προσβαλεῖν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "πολέμιοι",
+     "τοσοῦτοι",
+     "ἦσαν",
+     "ὥστε",
+     "τοὺς",
+     "ἡμετέρους",
+     "φοβεῖσθαι",
+     "προσβαλεῖν"
+    ]
+   },
+   {
+    "prompt": "She was so beautiful that the young men did not turn their eyes away.",
+    "answer": "Οὕτω καλὴ ἦν ὥστε τοὺς νεανίας μὴ ἀποστρέφειν τοὺς ὀφθαλμούς.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οὕτω",
+     "καλὴ",
+     "ἦν",
+     "ὥστε",
+     "τοὺς",
+     "νεανίας",
+     "μὴ",
+     "ἀποστρέφειν",
+     "ὀφθαλμούς"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2249-result-clauses-consecutive-clauses-t11",
+  "sectionId": "sm-2249-result-clauses-consecutive-clauses",
+  "questions": [
+   {
+    "prompt": "The wind blew so violently that many trees fell.",
+    "answer": "Ὁ ἄνεμος οὕτω βιαίως ἔπνευσεν ὥστε πολλὰ δένδρα ἔπεσεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ἄνεμος",
+     "οὕτω",
+     "βιαίως",
+     "ἔπνευσεν",
+     "ὥστε",
+     "πολλὰ",
+     "δένδρα",
+     "ἔπεσεν"
+    ]
+   },
+   {
+    "prompt": "The king honored the poet so greatly that he gave him gold.",
+    "answer": "Ὁ βασιλεὺς τὸν ποιητὴν οὕτω σφόδρα ἐτίμησεν ὥστε χρυσὸν αὐτῷ ἔδωκεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "βασιλεὺς",
+     "τὸν",
+     "ποιητὴν",
+     "οὕτω",
+     "σφόδρα",
+     "ἐτίμησεν",
+     "ὥστε",
+     "χρυσὸν",
+     "αὐτῷ",
+     "ἔδωκεν"
+    ]
+   },
+   {
+    "prompt": "The disease was of such a kind that the doctors gave up hope.",
+    "answer": "Τοιαύτη ἦν ἡ νόσος ὥστε τοὺς ἰατροὺς ἀπογιγνώσκειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τοιαύτη",
+     "ἦν",
+     "ἡ",
+     "νόσος",
+     "ὥστε",
+     "τοὺς",
+     "ἰατροὺς",
+     "ἀπογιγνώσκειν"
+    ]
+   },
+   {
+    "prompt": "The soldiers marched so far that they could no longer stand.",
+    "answer": "Οἱ στρατιῶται τοσοῦτον ἐπορεύθησαν ὥστε μηκέτι δύνασθαι ἑστάναι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Οἱ",
+     "στρατιῶται",
+     "τοσοῦτον",
+     "ἐπορεύθησαν",
+     "ὥστε",
+     "μηκέτι",
+     "δύνασθαι",
+     "ἑστάναι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2249-result-clauses-consecutive-clauses-t12",
+  "sectionId": "sm-2249-result-clauses-consecutive-clauses",
+  "questions": [
+   {
+    "prompt": "The teacher praised the student so much that the others grew indignant.",
+    "answer": "Ὁ διδάσκαλος τὸν μαθητὴν οὕτως ἐπῄνεσεν ὥστε οἱ ἄλλοι ἠγανάκτησαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "διδάσκαλος",
+     "τὸν",
+     "μαθητὴν",
+     "οὕτως",
+     "ἐπῄνεσεν",
+     "ὥστε",
+     "οἱ",
+     "ἄλλοι",
+     "ἠγανάκτησαν"
+    ]
+   },
+   {
+    "prompt": "The general drew up the army in such a way that the enemy were not able to surround it.",
+    "answer": "Ὁ στρατηγὸς οὕτω τὸ στράτευμα ἔταξεν ὥστε τοὺς πολεμίους μὴ οἵους τε εἶναι κυκλώσασθαι αὐτό.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "στρατηγὸς",
+     "οὕτω",
+     "τὸ",
+     "στράτευμα",
+     "ἔταξεν",
+     "ὥστε",
+     "τοὺς",
+     "πολεμίους",
+     "μὴ",
+     "οἵους",
+     "τε",
+     "εἶναι",
+     "κυκλώσασθαι",
+     "αὐτό"
+    ]
+   },
+   {
+    "prompt": "The child got so hungry that he ate everything set before him.",
+    "answer": "Τὸ παιδίον οὕτως ἐπείνησεν ὥστε πάντα τὰ παρατεθέντα ἔφαγεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Τὸ",
+     "παιδίον",
+     "οὕτως",
+     "ἐπείνησεν",
+     "ὥστε",
+     "πάντα",
+     "τὰ",
+     "παρατεθέντα",
+     "ἔφαγεν"
+    ]
+   },
+   {
+    "prompt": "The orator argued so cleverly that no one was able to refute him.",
+    "answer": "Ὁ ῥήτωρ οὕτω δεινῶς διελέχθη ὥστε μηδένα δύνασθαι αὐτὸν ἐλέγξαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "Ὁ",
+     "ῥήτωρ",
+     "οὕτω",
+     "δεινῶς",
+     "διελέχθη",
+     "ὥστε",
+     "μηδένα",
+     "δύνασθαι",
+     "αὐτὸν",
+     "ἐλέγξαι"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2249-result-clauses-consecutive-clauses-t13",
+  "sectionId": "sm-2249-result-clauses-consecutive-clauses",
+  "questions": [
+   {
+    "prompt": "So great a fear fell upon the army that the generals fled before the battle.",
+    "answer": "τοσοῦτος φόβος τῷ στρατεύματι ἐνέπεσεν ὥστε οἱ στρατηγοὶ πρὸ τῆς μάχης ἔφυγον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτος",
+     "φόβος",
+     "τῷ",
+     "στρατεύματι",
+     "ἐνέπεσεν",
+     "ὥστε",
+     "οἱ",
+     "στρατηγοὶ",
+     "πρὸ",
+     "τῆς",
+     "μάχης",
+     "ἔφυγον"
+    ]
+   },
+   {
+    "prompt": "They so honored the benefactor that they set up a bronze statue of him in the agora.",
+    "answer": "οὕτω τὸν εὐεργέτην ἐτίμησαν ὥστε εἰκόνα χαλκῆν αὐτοῦ ἐν τῇ ἀγορᾷ ἀναστῆσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "τὸν",
+     "εὐεργέτην",
+     "ἐτίμησαν",
+     "ὥστε",
+     "εἰκόνα",
+     "χαλκῆν",
+     "αὐτοῦ",
+     "ἐν",
+     "τῇ",
+     "ἀγορᾷ",
+     "ἀναστῆσαι"
+    ]
+   },
+   {
+    "prompt": "Cyrus was such a man that all who served him loved him greatly.",
+    "answer": "τοιοῦτος ἦν ὁ Κῦρος ὥστε πάντες οἱ αὐτῷ ὑπηρετοῦντες σφόδρα αὐτὸν ἐφίλουν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοιοῦτος",
+     "ἦν",
+     "ὁ",
+     "Κῦρος",
+     "ὥστε",
+     "πάντες",
+     "οἱ",
+     "αὐτῷ",
+     "ὑπηρετοῦντες",
+     "σφόδρα",
+     "αὐτὸν",
+     "ἐφίλουν"
+    ]
+   },
+   {
+    "prompt": "The river was so deep that no one dared to cross it without a boat.",
+    "answer": "ὁ ποταμὸς οὕτω βαθὺς ἦν ὥστε μηδένα τολμᾶν ἄνευ πλοίου αὐτὸν διαβαίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμὸς",
+     "οὕτω",
+     "βαθὺς",
+     "ἦν",
+     "ὥστε",
+     "μηδένα",
+     "τολμᾶν",
+     "ἄνευ",
+     "πλοίου",
+     "αὐτὸν",
+     "διαβαίνειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2249-result-clauses-consecutive-clauses-t14",
+  "sectionId": "sm-2249-result-clauses-consecutive-clauses",
+  "questions": [
+   {
+    "prompt": "So great a storm arose suddenly that the sailors could not lower the sails.",
+    "answer": "τοσοῦτος χειμὼν ἐξαίφνης ἐγένετο ὥστε οἱ ναῦται τὰ ἱστία καθελεῖν οὐκ ἐδύναντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτος",
+     "χειμὼν",
+     "ἐξαίφνης",
+     "ἐγένετο",
+     "ὥστε",
+     "οἱ",
+     "ναῦται",
+     "τὰ",
+     "ἱστία",
+     "καθελεῖν",
+     "οὐκ",
+     "ἐδύναντο"
+    ]
+   },
+   {
+    "prompt": "The general so arranged the line that the enemy could nowhere break through.",
+    "answer": "οὕτως ὁ στρατηγὸς τὴν τάξιν διέταξεν ὥστε τοὺς πολεμίους μηδαμοῦ διακόψαι δύνασθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτως",
+     "ὁ",
+     "στρατηγὸς",
+     "τὴν",
+     "τάξιν",
+     "διέταξεν",
+     "ὥστε",
+     "τοὺς",
+     "πολεμίους",
+     "μηδαμοῦ",
+     "διακόψαι",
+     "δύνασθαι"
+    ]
+   },
+   {
+    "prompt": "So wise was the counsel of Socrates that the young men listened in silence.",
+    "answer": "οὕτω σοφὴ ἦν ἡ τοῦ Σωκράτους συμβουλὴ ὥστε οἱ νεανίαι σιγῇ ἠκροῶντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "σοφὴ",
+     "ἦν",
+     "ἡ",
+     "τοῦ",
+     "Σωκράτους",
+     "συμβουλὴ",
+     "ὥστε",
+     "οἱ",
+     "νεανίαι",
+     "σιγῇ",
+     "ἠκροῶντο"
+    ]
+   },
+   {
+    "prompt": "The gold was so abundant that the king distributed it even to the poorest.",
+    "answer": "τοσοῦτος ἦν ὁ χρυσὸς ὥστε τὸν βασιλέα καὶ τοῖς πενεστάτοις αὐτὸν διανεῖμαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τοσοῦτος",
+     "ἦν",
+     "ὁ",
+     "χρυσὸς",
+     "ὥστε",
+     "τὸν",
+     "βασιλέα",
+     "καὶ",
+     "τοῖς",
+     "πενεστάτοις",
+     "αὐτὸν",
+     "διανεῖμαι"
+    ]
+   }
+  ]
  }
 ]

@@ -386,5 +386,719 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t7",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If the herald should announce peace, the citizens would rejoice.",
+    "answer": "εἰ ὁ κῆρυξ εἰρήνην ἀγγείλειεν, οἱ πολῖται χαίροιεν ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "κῆρυξ",
+     "εἰρήνην",
+     "ἀγγείλειεν",
+     "οἱ",
+     "πολῖται",
+     "χαίροιεν",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "If the enemy attack the camp, we shall defend ourselves bravely.",
+    "answer": "ἐὰν οἱ πολέμιοι τῷ στρατοπέδῳ προσβάλωσιν, ἀνδρείως ἀμυνούμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "πολέμιοι",
+     "τῷ",
+     "στρατοπέδῳ",
+     "προσβάλωσιν",
+     "ἀνδρείως",
+     "ἀμυνούμεθα"
+    ]
+   },
+   {
+    "prompt": "If you should trust the tyrant, you would soon be harmed.",
+    "answer": "εἰ τῷ τυράννῳ πιστεύσαις, ταχέως ἂν βλαβείης.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῷ",
+     "τυράννῳ",
+     "πιστεύσαις",
+     "ταχέως",
+     "ἄν",
+     "βλαβείης"
+    ]
+   },
+   {
+    "prompt": "If the sailors abandon the ships, the general will punish them.",
+    "answer": "ἐὰν οἱ ναῦται τὰς ναῦς λίπωσιν, ὁ στρατηγὸς αὐτοὺς κολάσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "ναῦται",
+     "τάς",
+     "ναῦς",
+     "λίπωσιν",
+     "ὁ",
+     "στρατηγός",
+     "αὐτούς",
+     "κολάσει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t8",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If the ambassadors should speak the truth, the assembly would trust them.",
+    "answer": "εἰ οἱ πρέσβεις τὰ ἀληθῆ λέγοιεν, ἡ ἐκκλησία αὐτοῖς πιστεύοι ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πρέσβεις",
+     "τά",
+     "ἀληθῆ",
+     "λέγοιεν",
+     "ἡ",
+     "ἐκκλησία",
+     "αὐτοῖς",
+     "πιστεύοι",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "If we capture the city, we shall free the prisoners.",
+    "answer": "ἐὰν τὴν πόλιν ἕλωμεν, τοὺς αἰχμαλώτους ἐλευθερώσομεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τήν",
+     "πόλιν",
+     "ἕλωμεν",
+     "τούς",
+     "αἰχμαλώτους",
+     "ἐλευθερώσομεν"
+    ]
+   },
+   {
+    "prompt": "If a just judge should hear the case, he would acquit the innocent man.",
+    "answer": "εἰ δίκαιος δικαστὴς τὴν δίκην ἀκούσειεν, τὸν ἀναίτιον ἀπολύσειεν ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "δίκαιος",
+     "δικαστής",
+     "τήν",
+     "δίκην",
+     "ἀκούσειεν",
+     "τόν",
+     "ἀναίτιον",
+     "ἀπολύσειεν",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "If the young men honor their teachers, they will become wise.",
+    "answer": "ἐὰν οἱ νεανίαι τοὺς διδασκάλους τιμῶσιν, σοφοὶ γενήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "νεανίαι",
+     "τούς",
+     "διδασκάλους",
+     "τιμῶσιν",
+     "σοφοί",
+     "γενήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t9",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If the storm should destroy the fleet, the city would be in great danger.",
+    "answer": "εἰ ὁ χειμὼν τὸν στόλον διαφθείρειεν, ἡ πόλις ἐν μεγάλῳ κινδύνῳ εἴη ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "χειμών",
+     "τόν",
+     "στόλον",
+     "διαφθείρειεν",
+     "ἡ",
+     "πόλις",
+     "ἐν",
+     "μεγάλῳ",
+     "κινδύνῳ",
+     "εἴη",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "If we obey the laws, we shall live without fear.",
+    "answer": "ἐὰν τοῖς νόμοις πειθώμεθα, ἄνευ φόβου βιωσόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τοῖς",
+     "νόμοις",
+     "πειθώμεθα",
+     "ἄνευ",
+     "φόβου",
+     "βιωσόμεθα"
+    ]
+   },
+   {
+    "prompt": "If someone should ask the philosopher, he would answer wisely.",
+    "answer": "εἰ τις τὸν φιλόσοφον ἐρωτήσειεν, σοφῶς ἂν ἀποκρίναιτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τις",
+     "τόν",
+     "φιλόσοφον",
+     "ἐρωτήσειεν",
+     "σοφῶς",
+     "ἄν",
+     "ἀποκρίναιτο"
+    ]
+   },
+   {
+    "prompt": "If the general leads the army through the mountains, the soldiers will suffer.",
+    "answer": "ἐὰν ὁ στρατηγὸς τὸ στράτευμα διὰ τῶν ὀρῶν ἄγῃ, οἱ στρατιῶται πονήσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "στρατηγός",
+     "τό",
+     "στράτευμα",
+     "διά",
+     "τῶν",
+     "ὀρῶν",
+     "ἄγῃ",
+     "οἱ",
+     "στρατιῶται",
+     "πονήσουσιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t10",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If the goddess should be willing, we would return home safely.",
+    "answer": "εἰ ἡ θεὸς ἐθέλοι, ἀσφαλῶς ἂν οἴκαδε ἐπανέλθοιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἡ",
+     "θεός",
+     "ἐθέλοι",
+     "ἀσφαλῶς",
+     "ἄν",
+     "οἴκαδε",
+     "ἐπανέλθοιμεν"
+    ]
+   },
+   {
+    "prompt": "If you insult the gods, you will pay the penalty.",
+    "answer": "ἐὰν τοὺς θεοὺς ὑβρίζῃς, δίκην δώσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τούς",
+     "θεούς",
+     "ὑβρίζῃς",
+     "δίκην",
+     "δώσεις"
+    ]
+   },
+   {
+    "prompt": "If the farmers should neglect their fields, famine would seize the land.",
+    "answer": "εἰ οἱ γεωργοὶ τῶν ἀγρῶν ἀμελοῖεν, λιμὸς τὴν χώραν ἂν καταλάβοι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "γεωργοί",
+     "τῶν",
+     "ἀγρῶν",
+     "ἀμελοῖεν",
+     "λιμός",
+     "τήν",
+     "χώραν",
+     "ἄν",
+     "καταλάβοι"
+    ]
+   },
+   {
+    "prompt": "If the allies send help, we shall withstand the siege.",
+    "answer": "ἐὰν οἱ σύμμαχοι βοήθειαν πέμπωσιν, τὴν πολιορκίαν ὑπομενοῦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "σύμμαχοι",
+     "βοήθειαν",
+     "πέμπωσιν",
+     "τήν",
+     "πολιορκίαν",
+     "ὑπομενοῦμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t11",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If the orator should deceive the people, he would harm the whole city.",
+    "answer": "εἰ ὁ ῥήτωρ τὸν δῆμον ἐξαπατήσειεν, ὅλην τὴν πόλιν ἂν βλάψειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ῥήτωρ",
+     "τόν",
+     "δῆμον",
+     "ἐξαπατήσειεν",
+     "ὅλην",
+     "τήν",
+     "πόλιν",
+     "ἄν",
+     "βλάψειεν"
+    ]
+   },
+   {
+    "prompt": "If we guard the gates well, no one will enter the city.",
+    "answer": "ἐὰν τὰς πύλας εὖ φυλάττωμεν, οὐδεὶς εἰς τὴν πόλιν εἰσελεύσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "τάς",
+     "πύλας",
+     "εὖ",
+     "φυλάττωμεν",
+     "οὐδείς",
+     "εἰς",
+     "τήν",
+     "πόλιν",
+     "εἰσελεύσεται"
+    ]
+   },
+   {
+    "prompt": "If a brave man should stand by us, we would not fear the danger.",
+    "answer": "εἰ ἀνδρεῖός τις ἡμῖν παρασταίη, τὸν κίνδυνον οὐκ ἂν φοβοίμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ἀνδρεῖος",
+     "τις",
+     "ἡμῖν",
+     "παρασταίη",
+     "τόν",
+     "κίνδυνον",
+     "οὐκ",
+     "ἄν",
+     "φοβοίμεθα"
+    ]
+   },
+   {
+    "prompt": "If the king marches against Greece, all the cities will band together.",
+    "answer": "ἐὰν ὁ βασιλεὺς ἐπὶ τὴν Ἑλλάδα στρατεύῃ, πᾶσαι αἱ πόλεις συστήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "ὁ",
+     "βασιλεύς",
+     "ἐπί",
+     "τήν",
+     "Ἑλλάδα",
+     "στρατεύῃ",
+     "πᾶσαι",
+     "αἱ",
+     "πόλεις",
+     "συστήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t12",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If the physician should cut out the disease, the sick man would become well.",
+    "answer": "εἰ ὁ ἰατρὸς τὴν νόσον ἐκτέμοι, ὁ κάμνων ὑγιὴς γένοιτο ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἰατρός",
+     "τήν",
+     "νόσον",
+     "ἐκτέμοι",
+     "κάμνων",
+     "ὑγιής",
+     "γένοιτο",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "If the soldiers gather the spoils, the general will divide them.",
+    "answer": "ἐὰν οἱ στρατιῶται τὰ λάφυρα συλλέξωσιν, ὁ στρατηγὸς αὐτὰ διαιρήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "στρατιῶται",
+     "τά",
+     "λάφυρα",
+     "συλλέξωσιν",
+     "ὁ",
+     "στρατηγός",
+     "αὐτά",
+     "διαιρήσει"
+    ]
+   },
+   {
+    "prompt": "If you should throw away your shield, the citizens would call you a coward.",
+    "answer": "εἰ τὴν ἀσπίδα ῥίψαις, οἱ πολῖται δειλόν σε καλοῖεν ἄν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τήν",
+     "ἀσπίδα",
+     "ῥίψαις",
+     "οἱ",
+     "πολῖται",
+     "δειλόν",
+     "σε",
+     "καλοῖεν",
+     "ἄν"
+    ]
+   },
+   {
+    "prompt": "If the enemy set fire to the houses, we shall flee to the mountains.",
+    "answer": "ἐὰν οἱ πολέμιοι τὰς οἰκίας ἐμπρήσωσιν, εἰς τὰ ὄρη φευξόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐάν",
+     "οἱ",
+     "πολέμιοι",
+     "τάς",
+     "οἰκίας",
+     "ἐμπρήσωσιν",
+     "εἰς",
+     "τά",
+     "ὄρη",
+     "φευξόμεθα"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t13",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If the enemy seize the citadel, they will enslave the inhabitants.",
+    "answer": "ἐὰν οἱ πολέμιοι τὴν ἀκρόπολιν καταλάβωσι, τοὺς ἐνοικοῦντας δουλώσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "πολέμιοι",
+     "τὴν",
+     "ἀκρόπολιν",
+     "καταλάβωσι",
+     "τοὺς",
+     "ἐνοικοῦντας",
+     "δουλώσουσιν"
+    ]
+   },
+   {
+    "prompt": "If you guard the walls well, the city will not be captured.",
+    "answer": "ἐὰν τὰ τείχη καλῶς φυλάττητε, ἡ πόλις οὐχ ἁλώσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὰ",
+     "τείχη",
+     "καλῶς",
+     "φυλάττητε",
+     "ἡ",
+     "πόλις",
+     "οὐχ",
+     "ἁλώσεται"
+    ]
+   },
+   {
+    "prompt": "If the sailors throw the cargo into the sea, they will save the ship.",
+    "answer": "ἐὰν οἱ ναῦται τὸν φόρτον εἰς τὴν θάλατταν ῥίψωσι, τὴν ναῦν σώσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "ναῦται",
+     "τὸν",
+     "φόρτον",
+     "εἰς",
+     "τὴν",
+     "θάλατταν",
+     "ῥίψωσι",
+     "ναῦν",
+     "σώσουσιν"
+    ]
+   },
+   {
+    "prompt": "If the young men honor their parents, they will be praised by all.",
+    "answer": "ἐὰν οἱ νεανίαι τοὺς γονέας τιμῶσιν, ὑπὸ πάντων ἐπαινεθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "οἱ",
+     "νεανίαι",
+     "τοὺς",
+     "γονέας",
+     "τιμῶσιν",
+     "ὑπὸ",
+     "πάντων",
+     "ἐπαινεθήσονται"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t14",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If someone should steal the sacred gold, he would be severely punished.",
+    "answer": "εἰ τὸν ἱερὸν χρυσόν τις κλέψειεν, χαλεπῶς ἂν κολασθείη.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸν",
+     "ἱερὸν",
+     "χρυσόν",
+     "τις",
+     "κλέψειεν",
+     "χαλεπῶς",
+     "ἂν",
+     "κολασθείη"
+    ]
+   },
+   {
+    "prompt": "If the farmer should neglect his fields, he would destroy the whole crop.",
+    "answer": "εἰ ὁ γεωργὸς τῶν ἀγρῶν ἀμελοίη, τὸν καρπὸν ὅλον ἂν διαφθείρειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "γεωργὸς",
+     "τῶν",
+     "ἀγρῶν",
+     "ἀμελοίη",
+     "τὸν",
+     "καρπὸν",
+     "ὅλον",
+     "ἂν",
+     "διαφθείρειεν"
+    ]
+   },
+   {
+    "prompt": "If the jurors, bribed with money, should acquit the murderer, the gods would be angry.",
+    "answer": "εἰ οἱ δικασταὶ χρήμασι πεισθέντες τὸν φονέα ἀπολύσειαν, οἱ θεοὶ ἂν ὀργίζοιντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "δικασταὶ",
+     "χρήμασι",
+     "πεισθέντες",
+     "τὸν",
+     "φονέα",
+     "ἀπολύσειαν",
+     "θεοὶ",
+     "ἂν",
+     "ὀργίζοιντο"
+    ]
+   },
+   {
+    "prompt": "If we should honor the gods rightly, they would be gracious to us.",
+    "answer": "εἰ τοὺς θεοὺς ὀρθῶς τιμῷμεν, εὐμενεῖς ἂν ἡμῖν εἶεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τοὺς",
+     "θεοὺς",
+     "ὀρθῶς",
+     "τιμῷμεν",
+     "εὐμενεῖς",
+     "ἂν",
+     "ἡμῖν",
+     "εἶεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t15",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If the general, having drawn up the army, attacks, he will easily conquer.",
+    "answer": "ἐὰν ὁ στρατηγὸς τὸ στράτευμα τάξας προσβάλῃ, ῥᾳδίως νικήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "στρατηγὸς",
+     "τὸ",
+     "στράτευμα",
+     "τάξας",
+     "προσβάλῃ",
+     "ῥᾳδίως",
+     "νικήσει"
+    ]
+   },
+   {
+    "prompt": "If, the gods being willing, we should set out, we would fare well.",
+    "answer": "εἰ τῶν θεῶν ἐθελόντων ἐξορμήσαιμεν, εὖ ἂν πράττοιμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τῶν",
+     "θεῶν",
+     "ἐθελόντων",
+     "ἐξορμήσαιμεν",
+     "εὖ",
+     "ἂν",
+     "πράττοιμεν"
+    ]
+   },
+   {
+    "prompt": "If you tell the jurors the truth, you will quickly escape.",
+    "answer": "ἐὰν τοῖς δικασταῖς τὰ ἀληθῆ λέγῃς, ταχέως ἀποφεύξῃ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τοῖς",
+     "δικασταῖς",
+     "τὰ",
+     "ἀληθῆ",
+     "λέγῃς",
+     "ταχέως",
+     "ἀποφεύξῃ"
+    ]
+   },
+   {
+    "prompt": "If the messenger should announce the victory, the citizens would sacrifice to the gods.",
+    "answer": "εἰ ὁ ἄγγελος τὴν νίκην ἀγγείλειεν, οἱ πολῖται τοῖς θεοῖς ἂν θύοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ἄγγελος",
+     "τὴν",
+     "νίκην",
+     "ἀγγείλειεν",
+     "οἱ",
+     "πολῖται",
+     "τοῖς",
+     "θεοῖς",
+     "ἂν",
+     "θύοιεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2321-future-conditions-t16",
+  "sectionId": "sm-2321-future-conditions",
+  "questions": [
+   {
+    "prompt": "If we do not obey the laws, we shall justly be punished.",
+    "answer": "ἐὰν τοῖς νόμοις μὴ πειθώμεθα, δικαίως κολασθησόμεθα.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τοῖς",
+     "νόμοις",
+     "μὴ",
+     "πειθώμεθα",
+     "δικαίως",
+     "κολασθησόμεθα"
+    ]
+   },
+   {
+    "prompt": "If a wise man should rule the city, the city would be well governed.",
+    "answer": "εἰ σοφὸς ἀνὴρ τῆς πόλεως ἄρχοι, ἡ πόλις καλῶς ἂν οἰκοῖτο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "σοφὸς",
+     "ἀνὴρ",
+     "τῆς",
+     "πόλεως",
+     "ἄρχοι",
+     "ἡ",
+     "πόλις",
+     "καλῶς",
+     "ἂν",
+     "οἰκοῖτο"
+    ]
+   },
+   {
+    "prompt": "If the slave runs away, his master will pursue him with dogs.",
+    "answer": "ἐὰν ὁ δοῦλος ἀποδρᾷ, ὁ δεσπότης αὐτὸν κυσὶ διώξει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "ὁ",
+     "δοῦλος",
+     "ἀποδρᾷ",
+     "δεσπότης",
+     "αὐτὸν",
+     "κυσὶ",
+     "διώξει"
+    ]
+   },
+   {
+    "prompt": "If you should ask the priest, he would interpret the oracle for you.",
+    "answer": "εἰ τὸν ἱερέα ἔροιο, τὸν χρησμὸν ἄν σοι ἑρμηνεύσειεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὸν",
+     "ἱερέα",
+     "ἔροιο",
+     "χρησμὸν",
+     "ἄν",
+     "σοι",
+     "ἑρμηνεύσειεν"
+    ]
+   }
+  ]
  }
 ]

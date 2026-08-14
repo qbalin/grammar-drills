@@ -545,5 +545,282 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2343-different-forms-of-conditional-t7",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If the soldiers had thrown down their weapons, they would have perished; but if they now flee, they will be saved.",
+    "answer": "εἰ οἱ στρατιῶται τὰ ὅπλα ἔρριψαν, ἀπώλοντο ἄν· ἐὰν δὲ νῦν φύγωσι, σωθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "στρατιῶται",
+     "τὰ",
+     "ὅπλα",
+     "ἔρριψαν",
+     "ἀπώλοντο",
+     "ἄν",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "φύγωσι",
+     "σωθήσονται"
+    ]
+   },
+   {
+    "prompt": "If the general had trusted the omens, he would have conquered; and now, if he sacrifices, he will win.",
+    "answer": "εἰ ὁ στρατηγὸς τοῖς οἰωνοῖς ἐπίστευσεν, ἐνίκησεν ἄν· καὶ νῦν, ἐὰν θύσῃ, νικήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "στρατηγὸς",
+     "τοῖς",
+     "οἰωνοῖς",
+     "ἐπίστευσεν",
+     "ἐνίκησεν",
+     "ἄν",
+     "καὶ",
+     "νῦν",
+     "ἐὰν",
+     "θύσῃ",
+     "νικήσει"
+    ]
+   },
+   {
+    "prompt": "If Cleon were prudent, he would spare the prisoners; but if he kills them, he will be hated.",
+    "answer": "εἰ ὁ Κλέων σώφρων ἦν, τῶν αἰχμαλώτων ἂν ἐφείδετο· ἐὰν δὲ αὐτοὺς ἀποκτείνῃ, μισηθήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "Κλέων",
+     "σώφρων",
+     "ἦν",
+     "τῶν",
+     "αἰχμαλώτων",
+     "ἂν",
+     "ἐφείδετο",
+     "ἐὰν",
+     "δὲ",
+     "αὐτοὺς",
+     "ἀποκτείνῃ",
+     "μισηθήσεται"
+    ]
+   },
+   {
+    "prompt": "If you had guarded your tongue, you would not have suffered; but if you keep silent now, you will find peace.",
+    "answer": "εἰ τὴν γλῶτταν ἐφύλαξας, οὐκ ἂν ἔπαθες· ἐὰν δὲ νῦν σιωπήσῃς, ἡσυχίαν εὑρήσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὴν",
+     "γλῶτταν",
+     "ἐφύλαξας",
+     "οὐκ",
+     "ἂν",
+     "ἔπαθες",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "σιωπήσῃς",
+     "ἡσυχίαν",
+     "εὑρήσεις"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2343-different-forms-of-conditional-t8",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If the farmers had ploughed the field, they would have reaped much; but if it rains now, the crops will grow.",
+    "answer": "εἰ οἱ γεωργοὶ τὸν ἀγρὸν ἤροσαν, πολλὰ ἂν ἐθέρισαν· ἐὰν δὲ νῦν ὕῃ, οἱ καρποὶ αὐξήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "γεωργοὶ",
+     "τὸν",
+     "ἀγρὸν",
+     "ἤροσαν",
+     "πολλὰ",
+     "ἂν",
+     "ἐθέρισαν",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "ὕῃ",
+     "καρποὶ",
+     "αὐξήσονται"
+    ]
+   },
+   {
+    "prompt": "If the herald had announced the truce, the men would have rejoiced; and if he speaks now, they will lay down their arms.",
+    "answer": "εἰ ὁ κῆρυξ τὰς σπονδὰς ἤγγειλεν, οἱ ἄνδρες ἂν ἐχάρησαν· καὶ νῦν, ἐὰν εἴπῃ, τὰ ὅπλα καταθήσονται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "κῆρυξ",
+     "τὰς",
+     "σπονδὰς",
+     "ἤγγειλεν",
+     "οἱ",
+     "ἄνδρες",
+     "ἂν",
+     "ἐχάρησαν",
+     "καὶ",
+     "νῦν",
+     "ἐὰν",
+     "εἴπῃ",
+     "τὰ",
+     "ὅπλα",
+     "καταθήσονται"
+    ]
+   },
+   {
+    "prompt": "If the judges were just, they would acquit the innocent man; but if they condemn him, the city will grieve.",
+    "answer": "εἰ οἱ δικασταὶ δίκαιοι ἦσαν, τὸν ἀναίτιον ἂν ἀπέλυον· ἐὰν δὲ αὐτὸν καταδικάσωσιν, ἡ πόλις πενθήσει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "δικασταὶ",
+     "δίκαιοι",
+     "ἦσαν",
+     "τὸν",
+     "ἀναίτιον",
+     "ἂν",
+     "ἀπέλυον",
+     "ἐὰν",
+     "δὲ",
+     "αὐτὸν",
+     "καταδικάσωσιν",
+     "ἡ",
+     "πόλις",
+     "πενθήσει"
+    ]
+   },
+   {
+    "prompt": "If we had captured the citadel, we would rule the island; but if we sail away, we will lose everything.",
+    "answer": "εἰ τὴν ἀκρόπολιν εἵλομεν, τῆς νήσου ἂν ἤρχομεν· ἐὰν δὲ ἀποπλεύσωμεν, πάντα ἀπολοῦμεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "τὴν",
+     "ἀκρόπολιν",
+     "εἵλομεν",
+     "τῆς",
+     "νήσου",
+     "ἂν",
+     "ἤρχομεν",
+     "ἐὰν",
+     "δὲ",
+     "ἀποπλεύσωμεν",
+     "πάντα",
+     "ἀπολοῦμεν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2343-different-forms-of-conditional-t9",
+  "sectionId": "sm-2343-different-forms-of-conditional",
+  "questions": [
+   {
+    "prompt": "If the orator had persuaded the people, they would have made peace; and now, if they listen, they will end the war.",
+    "answer": "εἰ ὁ ῥήτωρ τὸν δῆμον ἔπεισεν, εἰρήνην ἂν ἐποιήσαντο· καὶ νῦν, ἐὰν ἀκούσωσι, τὸν πόλεμον παύσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "ῥήτωρ",
+     "τὸν",
+     "δῆμον",
+     "ἔπεισεν",
+     "εἰρήνην",
+     "ἂν",
+     "ἐποιήσαντο",
+     "καὶ",
+     "νῦν",
+     "ἐὰν",
+     "ἀκούσωσι",
+     "πόλεμον",
+     "παύσουσιν"
+    ]
+   },
+   {
+    "prompt": "If the young man had learned philosophy, he would have become wise; but if he studies now, he will become good.",
+    "answer": "εἰ ὁ νεανίας φιλοσοφίαν ἔμαθε, σοφὸς ἂν ἐγένετο· ἐὰν δὲ νῦν μελετᾷ, ἀγαθὸς γενήσεται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "ὁ",
+     "νεανίας",
+     "φιλοσοφίαν",
+     "ἔμαθε",
+     "σοφὸς",
+     "ἂν",
+     "ἐγένετο",
+     "ἐὰν",
+     "δὲ",
+     "νῦν",
+     "μελετᾷ",
+     "ἀγαθὸς",
+     "γενήσεται"
+    ]
+   },
+   {
+    "prompt": "If the citizens were more courageous, they would resist the tyrant; but if they revolt, they will recover their freedom.",
+    "answer": "εἰ οἱ πολῖται ἀνδρειότεροι ἦσαν, τῷ τυράννῳ ἂν ἀνθίσταντο· ἐὰν δὲ ἀποστῶσι, τὴν ἐλευθερίαν κομιοῦνται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "πολῖται",
+     "ἀνδρειότεροι",
+     "ἦσαν",
+     "τῷ",
+     "τυράννῳ",
+     "ἂν",
+     "ἀνθίσταντο",
+     "ἐὰν",
+     "δὲ",
+     "ἀποστῶσι",
+     "τὴν",
+     "ἐλευθερίαν",
+     "κομιοῦνται"
+    ]
+   },
+   {
+    "prompt": "If the gods had saved the ships, the sailors would have returned home; but if the wind blows, they will complete their voyage.",
+    "answer": "εἰ οἱ θεοὶ τὰς ναῦς ἔσωσαν, οἱ ναῦται ἂν ἐνόστησαν· ἐὰν δὲ ὁ ἄνεμος πνεύσῃ, τὸν νόστον τελέσουσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "οἱ",
+     "θεοὶ",
+     "τὰς",
+     "ναῦς",
+     "ἔσωσαν",
+     "ναῦται",
+     "ἂν",
+     "ἐνόστησαν",
+     "ἐὰν",
+     "δὲ",
+     "ὁ",
+     "ἄνεμος",
+     "πνεύσῃ",
+     "τὸν",
+     "νόστον",
+     "τελέσουσιν"
+    ]
+   }
+  ]
  }
 ]

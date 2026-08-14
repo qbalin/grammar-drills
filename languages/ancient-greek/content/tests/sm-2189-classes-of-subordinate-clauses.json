@@ -408,5 +408,394 @@
     ]
    }
   ]
+ },
+ {
+  "id": "sm-2189-classes-of-subordinate-clauses-t7",
+  "sectionId": "sm-2189-classes-of-subordinate-clauses",
+  "questions": [
+   {
+    "prompt": "The ambassadors announced that peace had been made.",
+    "answer": "οἱ πρέσβεις ἤγγειλαν ὅτι εἰρήνη γεγένηται.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οἱ",
+     "πρέσβεις",
+     "ἤγγειλαν",
+     "ὅτι",
+     "εἰρήνη",
+     "γεγένηται"
+    ]
+   },
+   {
+    "prompt": "No one knew who had opened the gates.",
+    "answer": "οὐδεὶς ᾔδει ὅστις τὰς πύλας ἀνέῳξεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐδεὶς",
+     "ᾔδει",
+     "ὅστις",
+     "τὰς",
+     "πύλας",
+     "ἀνέῳξεν"
+    ]
+   },
+   {
+    "prompt": "It became clear that the citizens were unwilling to fight.",
+    "answer": "φανερὸν ἐγένετο ὅτι οἱ πολῖται οὐκ ἐθέλοιεν μάχεσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "φανερὸν",
+     "ἐγένετο",
+     "ὅτι",
+     "οἱ",
+     "πολῖται",
+     "οὐκ",
+     "ἐθέλοιεν",
+     "μάχεσθαι"
+    ]
+   },
+   {
+    "prompt": "I do not know whether the messenger is telling the truth.",
+    "answer": "οὐκ οἶδα εἰ ὁ ἄγγελος ἀληθῆ λέγει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὐκ",
+     "οἶδα",
+     "εἰ",
+     "ὁ",
+     "ἄγγελος",
+     "ἀληθῆ",
+     "λέγει"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2189-classes-of-subordinate-clauses-t8",
+  "sectionId": "sm-2189-classes-of-subordinate-clauses",
+  "questions": [
+   {
+    "prompt": "The gifts which the king gave were worthy of admiration.",
+    "answer": "τὰ δῶρα ἃ ὁ βασιλεὺς ἔδωκεν ἄξια θαύματος ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὰ",
+     "δῶρα",
+     "ἃ",
+     "ὁ",
+     "βασιλεὺς",
+     "ἔδωκεν",
+     "ἄξια",
+     "θαύματος",
+     "ἦν"
+    ]
+   },
+   {
+    "prompt": "The woman whose son had died mourned greatly.",
+    "answer": "ἡ γυνὴ ἧς ὁ υἱὸς ἐτεθνήκει σφόδρα ἐπένθει.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "γυνὴ",
+     "ἧς",
+     "ὁ",
+     "υἱὸς",
+     "ἐτεθνήκει",
+     "σφόδρα",
+     "ἐπένθει"
+    ]
+   },
+   {
+    "prompt": "I praise those who honor their parents.",
+    "answer": "ἐπαινῶ ἐκείνους οἳ τοὺς γονέας τιμῶσιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπαινῶ",
+     "ἐκείνους",
+     "οἳ",
+     "τοὺς",
+     "γονέας",
+     "τιμῶσιν"
+    ]
+   },
+   {
+    "prompt": "The city in which we were born is famous.",
+    "answer": "ἡ πόλις ἐν ᾗ ἐγενόμεθα ἔνδοξός ἐστιν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "πόλις",
+     "ἐν",
+     "ᾗ",
+     "ἐγενόμεθα",
+     "ἔνδοξός",
+     "ἐστιν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2189-classes-of-subordinate-clauses-t9",
+  "sectionId": "sm-2189-classes-of-subordinate-clauses",
+  "questions": [
+   {
+    "prompt": "The river was so deep that no one could cross it.",
+    "answer": "ὁ ποταμὸς οὕτω βαθὺς ἦν ὥστε μηδένα δύνασθαι διαβαίνειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "ποταμὸς",
+     "οὕτω",
+     "βαθὺς",
+     "ἦν",
+     "ὥστε",
+     "μηδένα",
+     "δύνασθαι",
+     "διαβαίνειν"
+    ]
+   },
+   {
+    "prompt": "He spoke so wisely that all admired him.",
+    "answer": "οὕτω σοφῶς ἔλεξεν ὥστε πάντας αὐτὸν θαυμάσαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτω",
+     "σοφῶς",
+     "ἔλεξεν",
+     "ὥστε",
+     "πάντας",
+     "αὐτὸν",
+     "θαυμάσαι"
+    ]
+   },
+   {
+    "prompt": "The cold was so severe that many of the soldiers perished.",
+    "answer": "τὸ ψῦχος οὕτω χαλεπὸν ἦν ὥστε πολλοὺς τῶν στρατιωτῶν ἀπολέσθαι.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "τὸ",
+     "ψῦχος",
+     "οὕτω",
+     "χαλεπὸν",
+     "ἦν",
+     "ὥστε",
+     "πολλοὺς",
+     "τῶν",
+     "στρατιωτῶν",
+     "ἀπολέσθαι"
+    ]
+   },
+   {
+    "prompt": "She was so brave as to endure every danger.",
+    "answer": "οὕτως ἀνδρεία ἦν ὥστε πάντα κίνδυνον ὑπομένειν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "οὕτως",
+     "ἀνδρεία",
+     "ἦν",
+     "ὥστε",
+     "πάντα",
+     "κίνδυνον",
+     "ὑπομένειν"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2189-classes-of-subordinate-clauses-t10",
+  "sectionId": "sm-2189-classes-of-subordinate-clauses",
+  "questions": [
+   {
+    "prompt": "When the sun had set, the army made camp.",
+    "answer": "ἐπεὶ ὁ ἥλιος ἔδυ, τὸ στράτευμα ἐστρατοπεδεύσατο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "ὁ",
+     "ἥλιος",
+     "ἔδυ",
+     "τὸ",
+     "στράτευμα",
+     "ἐστρατοπεδεύσατο"
+    ]
+   },
+   {
+    "prompt": "Before the enemy arrived, they fortified the harbor.",
+    "answer": "πρὶν τοὺς πολεμίους ἀφικέσθαι, τὸν λιμένα ἐτείχισαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "πρὶν",
+     "τοὺς",
+     "πολεμίους",
+     "ἀφικέσθαι",
+     "τὸν",
+     "λιμένα",
+     "ἐτείχισαν"
+    ]
+   },
+   {
+    "prompt": "While the general was speaking, the soldiers listened in silence.",
+    "answer": "ἐν ᾧ ὁ στρατηγὸς ἔλεγεν, οἱ στρατιῶται σιγῇ ἤκουον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐν",
+     "ᾧ",
+     "ὁ",
+     "στρατηγὸς",
+     "ἔλεγεν",
+     "οἱ",
+     "στρατιῶται",
+     "σιγῇ",
+     "ἤκουον"
+    ]
+   },
+   {
+    "prompt": "After they had conquered the enemy, they returned home.",
+    "answer": "ἐπειδὴ τοὺς πολεμίους ἐνίκησαν, οἴκαδε ἐπανῆλθον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "τοὺς",
+     "πολεμίους",
+     "ἐνίκησαν",
+     "οἴκαδε",
+     "ἐπανῆλθον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2189-classes-of-subordinate-clauses-t11",
+  "sectionId": "sm-2189-classes-of-subordinate-clauses",
+  "questions": [
+   {
+    "prompt": "Because the citizens trusted the laws, they lived in peace.",
+    "answer": "ἐπεὶ οἱ πολῖται τοῖς νόμοις ἐπίστευον, ἐν εἰρήνῃ ἔζων.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "οἱ",
+     "πολῖται",
+     "τοῖς",
+     "νόμοις",
+     "ἐπίστευον",
+     "ἐν",
+     "εἰρήνῃ",
+     "ἔζων"
+    ]
+   },
+   {
+    "prompt": "Since you have wronged your friends, you deserve punishment.",
+    "answer": "ἐπειδὴ τοὺς φίλους ἠδίκησας, δίκης ἄξιος εἶ.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπειδὴ",
+     "τοὺς",
+     "φίλους",
+     "ἠδίκησας",
+     "δίκης",
+     "ἄξιος",
+     "εἶ"
+    ]
+   },
+   {
+    "prompt": "Although the danger was great, the sailors did not despair.",
+    "answer": "εἰ καὶ μέγας ἦν ὁ κίνδυνος, οἱ ναῦται οὐκ ἀπέγνωσαν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "εἰ",
+     "καὶ",
+     "μέγας",
+     "ἦν",
+     "ὁ",
+     "κίνδυνος",
+     "οἱ",
+     "ναῦται",
+     "οὐκ",
+     "ἀπέγνωσαν"
+    ]
+   },
+   {
+    "prompt": "Because the road was long, the travelers grew weary.",
+    "answer": "ἐπεὶ μακρὰ ἦν ἡ ὁδός, οἱ ὁδοιπόροι ἔκαμον.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐπεὶ",
+     "μακρὰ",
+     "ἦν",
+     "ἡ",
+     "ὁδός",
+     "οἱ",
+     "ὁδοιπόροι",
+     "ἔκαμον"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sm-2189-classes-of-subordinate-clauses-t12",
+  "sectionId": "sm-2189-classes-of-subordinate-clauses",
+  "questions": [
+   {
+    "prompt": "If you seek the truth, you will find it with difficulty.",
+    "answer": "ἐὰν τὴν ἀλήθειαν ζητῇς, χαλεπῶς αὐτὴν εὑρήσεις.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἐὰν",
+     "τὴν",
+     "ἀλήθειαν",
+     "ζητῇς",
+     "χαλεπῶς",
+     "αὐτὴν",
+     "εὑρήσεις"
+    ]
+   },
+   {
+    "prompt": "They sent scouts in order to learn where the enemy was encamped.",
+    "answer": "σκοποὺς ἔπεμψαν ἵνα μάθοιεν ὅπου οἱ πολέμιοι ἐστρατοπεδεύοντο.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "σκοποὺς",
+     "ἔπεμψαν",
+     "ἵνα",
+     "μάθοιεν",
+     "ὅπου",
+     "οἱ",
+     "πολέμιοι",
+     "ἐστρατοπεδεύοντο"
+    ]
+   },
+   {
+    "prompt": "The old man asked the boys what they were learning.",
+    "answer": "ὁ γέρων τοὺς παῖδας ἤρετο ὅ τι μανθάνοιεν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ὁ",
+     "γέρων",
+     "τοὺς",
+     "παῖδας",
+     "ἤρετο",
+     "ὅ",
+     "τι",
+     "μανθάνοιεν"
+    ]
+   },
+   {
+    "prompt": "The house which the fire destroyed belonged to a wealthy man.",
+    "answer": "ἡ οἰκία ἣν τὸ πῦρ διέφθειρεν ἀνδρὸς πλουσίου ἦν.",
+    "kind": "translate-en-grc",
+    "vocab": [
+     "ἡ",
+     "οἰκία",
+     "ἣν",
+     "τὸ",
+     "πῦρ",
+     "διέφθειρεν",
+     "ἀνδρὸς",
+     "πλουσίου",
+     "ἦν"
+    ]
+   }
+  ]
  }
 ]
