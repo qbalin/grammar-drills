@@ -363,7 +363,11 @@ node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek --plan   
 node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek          # topics with nothing
 node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek --fill   # top everything up
 node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek --only-thin
+node --import tsx scripts/gen-tests.mjs --pack languages/ancient-greek --jobs 1  # one topic at a time
 ```
+
+Two topics are written at once; `--jobs N` sets the number, and `--jobs 1` is
+the serial run to fall back to when a usage limit is already being felt.
 
 Every run is resumable and appends, so a usage limit costs nothing but time.
 Resuming is **by count against the target**, not by whether a file exists —

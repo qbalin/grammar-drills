@@ -16,7 +16,8 @@
 // declares none — and every one is listed in a report at the end of the run.
 //
 //   node --import tsx scripts/gen-tests.mjs [--pack languages/latin]
-//        [--fill] [--only-thin] [--target N] [--per M] [--sleep S] [topicId ...]
+//        [--fill] [--only-thin] [--target N] [--per M] [--sleep S]
+//        [--jobs N] [topicId ...]
 //
 // Resuming is by COUNT, not by whether a file exists. A topic that yielded
 // three tests against a target of twelve used to be skipped by every later run
@@ -24,10 +25,16 @@
 // each topic to its size-scaled target and appends; `--only-thin` restricts
 // that to the topics actually short. Both are safe to re-run.
 //
+// `--jobs` writes that many topics at once (2 by default, `--jobs 1` for the
+// strictly serial run). Splitting a pack across several *processes* over
+// disjoint topic lists still works and always did — `gen-stats.json` is
+// appended under a lock for it — and the two compose.
+//
 // Needs `claude -p` and nothing else: attestation and the vocabulary band come
 // from the pack's own content. Point --ref/$LANG_REF at the full reference
 // databases to check against those instead.
-import { execFileSync } from "node:child_process";
+import { execFile as execFileCb } from "node:child_process";
+import { promisify } from "node:util";
 import {
   readFileSync, writeFileSync, mkdirSync, existsSync, openSync, closeSync, rmSync,
 } from "node:fs";
@@ -38,6 +45,10 @@ import { makeClassifier } from "./lib/attestation.mjs";
 import { loadProfile, packDir } from "./lib/pack.mjs";
 import { openReference } from "./lib/reference.mjs";
 import { TARGET_DEFAULTS, targetFor } from "./lib/target.mjs";
+
+// Node's own promisified form, which keeps `.child` on the returned promise —
+// what lets the caller close the subprocess's stdin before awaiting it.
+const execFile = promisify(execFileCb);
 
 const args = process.argv.slice(2);
 const opt = (name, def) => {
@@ -82,6 +93,23 @@ const MAX_CALLS = Number(
 );
 const SLEEP_MS = Number(opt("--sleep", 1500)); // pace calls to respect usage limits
 /*
+ * How many topics are written at once.
+ *
+ * A topic is the unit that parallelises cleanly and the only one that does:
+ * it owns its own output file, its own call budget and its own set of prompts
+ * to avoid, so two of them in flight share nothing that has to be kept in
+ * step. Within a topic the calls stay strictly in sequence — each one is told
+ * the prompts the last one produced, and that is what stops a topic from
+ * being asked to write the same sentence twice.
+ *
+ * Two rather than one because a call is minutes of waiting on a subprocess and
+ * none of it is this program's work; two rather than eight because the ceiling
+ * here is the `claude -p` usage limit, which the whole backoff ladder below
+ * exists to stay under. `--jobs 1` is the strictly serial run this used to be,
+ * and is what to reach for when a limit is already being felt.
+ */
+const JOBS = Math.max(1, Number(opt("--jobs", 2)));
+/*
  * How many dictionary misses one sentence may carry before it is dropped.
  *
  * From the profile, not from gen/config, because it is the same number
@@ -123,10 +151,16 @@ function vocabHint(k = 20) {
 
 const RULES = config.rules;
 
-function callClaude(prompt) {
+/*
+ * Awaited rather than synchronous, which is the whole of what makes `--jobs`
+ * possible. `execFileSync` blocks the event loop for the length of the call,
+ * so the `async` in every function below this one bought nothing: a second
+ * topic could not have started even if something had asked it to.
+ */
+async function callClaude(prompt) {
   let out;
   try {
-    out = execFileSync(
+    const call = execFile(
       "claude",
       // `--tools ""` denies the subprocess every tool. `claude -p` is an agent,
       // not a completion: asked for a JSON object it may instead pick up Write
@@ -137,8 +171,14 @@ function callClaude(prompt) {
       // sm-574 and sm-599 in the run before this flag existed. Writing
       // sentences needs no tools, so the fix is to have none to reach for.
       ["-p", prompt, "--model", MODEL, "--output-format", "json", "--tools", ""],
-      { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], maxBuffer: 64 * 1024 * 1024 },
+      { encoding: "utf8", maxBuffer: 64 * 1024 * 1024 },
     );
+    // What `stdio: ["ignore", ...]` used to say, and it has to go on being
+    // said: `execFile` hands the child a stdin pipe nobody ever writes to, and
+    // a CLI that reads stdin when it is not a terminal would wait on it for
+    // ever. Closed at once, the child sees the empty input it saw before.
+    call.child.stdin?.end();
+    ({ stdout: out } = await call);
   } catch (e) {
     // `claude -p` exits non-zero AND prints its JSON envelope, so a usage-limit
     // rejection lands here, not in the is_error branch below. Such a rejection
@@ -268,7 +308,7 @@ async function generateTopic(topic, want, alreadyWritten = [], startIndex = 0) {
     stats.calls++;
     let raw;
     try {
-      raw = callClaude(topicPrompt(topic, Math.min(PER_CALL, want - tests.length + 1), avoid));
+      raw = await callClaude(topicPrompt(topic, Math.min(PER_CALL, want - tests.length + 1), avoid));
     } catch (e) {
       const msg = String(e.message).split("\n")[0];
       // A transient failure must not spend the topic's call budget — otherwise
@@ -296,7 +336,12 @@ async function generateTopic(topic, want, alreadyWritten = [], startIndex = 0) {
         avoid.push(v.questions[0].prompt);
       }
     }
-    process.stdout.write(`  ${topic.id}: ${tests.length}/${want} tests (call ${stats.calls})\r`);
+    // One line rewritten in place only makes sense while one topic is being
+    // written: two jobs would each be erasing the other's progress. With more
+    // than one, the per-topic line printed on completion is the whole report.
+    if (JOBS === 1) {
+      process.stdout.write(`  ${topic.id}: ${tests.length}/${want} tests (call ${stats.calls})\r`);
+    }
     await sleep(SLEEP_MS);
   }
   return { tests, stats };
@@ -390,46 +435,80 @@ const run = {
 };
 
 let totT = 0, totQ = 0, totRaw = 0, dryRun = 0;
-for (const { topic, have, want } of work) {
-  const t0 = Date.now();
-  // Prompts already written for this topic: the model is told not to repeat
-  // them, and `validate` drops any that come back anyway.
-  const already = have.flatMap((t) => t.questions.map((q) => q.prompt));
-  const { tests, stats } = await generateTopic(topic, want, already, have.length);
-  run.topics++;
-  run.calls += stats.calls;
-  run.rawQuestions += stats.rawQ;
-  run.keptQuestions += stats.keptQ;
-  for (const [k, v] of Object.entries(stats.rejected)) run.rejected[k] += v;
+/*
+ * The queue the jobs draw from, and the two things they share.
+ *
+ * `taken` is the cursor, so no topic is written twice and "how many are left"
+ * stays answerable after the order stops being the book's. `stopped` is the
+ * usage-limit brake: a job that sees it raised finishes the topic it is on and
+ * takes no more, which is what makes stopping mean "spend nothing further"
+ * rather than "abandon a topic mid-write and lose its calls".
+ *
+ * Nothing else needs guarding. Everything a topic touches is its own — its
+ * file, its call budget, the prompts it must not repeat — and the counters
+ * below are read and written between awaits, never across one, so the single
+ * thread does the work a lock would.
+ */
+let taken = 0, stopped = false;
+async function worker() {
+  while (!stopped && taken < work.length) {
+    const { topic, have, want } = work[taken++];
+    const t0 = Date.now();
+    // Prompts already written for this topic: the model is told not to repeat
+    // them, and `validate` drops any that come back anyway.
+    const already = have.flatMap((t) => t.questions.map((q) => q.prompt));
+    const { tests, stats } = await generateTopic(topic, want, already, have.length);
+    run.topics++;
+    run.calls += stats.calls;
+    run.rawQuestions += stats.rawQ;
+    run.keptQuestions += stats.keptQ;
+    for (const [k, v] of Object.entries(stats.rejected)) run.rejected[k] += v;
 
-  // Once the backoff ladder is exhausted the usage window is longer than this
-  // run can wait out. Stop rather than march through the remaining topics
-  // producing nothing — a later run resumes from the files already on disk.
-  if (tests.length === 0 && stats.transient) {
-    if (++dryRun >= 2) {
-      console.error(
-        `\nStopping: ${dryRun} consecutive topics blocked by usage limits after ` +
-        `${BACKOFF_MS.length} retries. ${work.length - work.findIndex((w) => w.topic === topic) - 1} topics ` +
-        `left — rerun this command when the limit resets and it will pick up where it stopped.`,
-      );
-      break;
+    // Once the backoff ladder is exhausted the usage window is longer than this
+    // run can wait out. Stop rather than march through the remaining topics
+    // producing nothing — a later run resumes from the files already on disk.
+    //
+    // Two jobs going dry in the same window both count, and should: what the
+    // number is measuring is a limit that outlasts the ladder, and two topics
+    // meeting it at once is better evidence of that than two meeting it in a
+    // row. "Consecutive" is per queue rather than per job for the same reason
+    // — the run is one run.
+    if (tests.length === 0 && stats.transient) {
+      // `!stopped` so the brake is announced once. The other job is already on
+      // a topic when it goes on, and that topic ends dry too — without this it
+      // reports the same stop a second time with a different count.
+      if (++dryRun >= 2 && !stopped) {
+        stopped = true;
+        console.error(
+          `\nStopping: ${dryRun} topics blocked by usage limits after ` +
+          `${BACKOFF_MS.length} retries. ${work.length - taken} topics ` +
+          `left — rerun this command when the limit resets and it will pick up where it stopped.`,
+        );
+      }
+    } else if (tests.length > 0) {
+      dryRun = 0;
     }
-  } else if (tests.length > 0) {
-    dryRun = 0;
+    // Append rather than overwrite: what is already on disk was validated the
+    // same way and hand-reviewed, and throwing it away to re-earn it is waste.
+    if (tests.length > 0) {
+      writeFileSync(`${OUT}/${topic.id}.json`, JSON.stringify([...have, ...tests], null, 1));
+    }
+    const q = tests.reduce((n, t) => n + t.questions.length, 0);
+    totT += tests.length; totQ += q; totRaw += stats.rawQ;
+    console.log(
+      // The newline is what lifts this clear of the in-place progress line;
+      // with no such line to clear it is just a blank between every topic.
+      `${JOBS === 1 ? "\n" : ""}${topic.id.padEnd(22)} +${String(tests.length).padStart(2)} tests / ${String(q).padStart(3)} q  ` +
+      `(now ${have.length + tests.length}/${have.length + want} · kept ${stats.keptQ}/${stats.rawQ} items · ` +
+      `${stats.calls} calls · ${((Date.now() - t0) / 1000).toFixed(0)}s)`,
+    );
   }
-  // Append rather than overwrite: what is already on disk was validated the
-  // same way and hand-reviewed, and throwing it away to re-earn it is waste.
-  if (tests.length > 0) {
-    writeFileSync(`${OUT}/${topic.id}.json`, JSON.stringify([...have, ...tests], null, 1));
-  }
-  const q = tests.reduce((n, t) => n + t.questions.length, 0);
-  totT += tests.length; totQ += q; totRaw += stats.rawQ;
-  console.log(
-    `\n${topic.id.padEnd(22)} +${String(tests.length).padStart(2)} tests / ${String(q).padStart(3)} q  ` +
-    `(now ${have.length + tests.length}/${have.length + want} · kept ${stats.keptQ}/${stats.rawQ} items · ` +
-    `${stats.calls} calls · ${((Date.now() - t0) / 1000).toFixed(0)}s)`,
-  );
 }
+
+// More jobs than topics would be idle processes, not faster ones.
+await Promise.all(
+  Array.from({ length: Math.min(JOBS, work.length) }, () => worker()),
+);
 
 if (unverified.size) {
   const top = [...unverified.entries()].sort((a, b) => b[1] - a[1]);
