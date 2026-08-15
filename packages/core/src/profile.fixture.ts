@@ -2,10 +2,10 @@
  * A profile for the engine's own tests.
  *
  * Deliberately not a copy of any shipped pack: these tests are about the
- * machinery — that the book cursor walks the sections it is given, that the
- * fold is whatever the profile says — so the fixture is a small invented
- * language whose families are just enough to walk. Pack-specific facts are
- * tested in the pack.
+ * machinery — that a run serves the sections it is given, that the fold is
+ * whatever the profile says — so the fixture is a small invented language whose
+ * families are just enough to index. Pack-specific facts are tested in the
+ * pack.
  *
  * The fold matches the one the word fixtures were written under (diacritics are
  * editorial, u/v and i/j are spelling variants), because the sample forms in

@@ -107,8 +107,8 @@ gzip magic number and handles both.
 ### Structure
 
 The engine is `@lang-tutor/core`, unchanged and shared with the CLI: `Session`
-holds the whole state machine, FSRS scheduling and mastery. This app is the
-touch surface over it.
+holds the whole state machine, FSRS scheduling and the answer trail. This app is
+the touch surface over it.
 
 ```
 src/

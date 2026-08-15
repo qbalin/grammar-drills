@@ -785,8 +785,8 @@ export function App({ content, session, storage }: Props) {
 
   /**
    * Take back the grade just given: the question comes back as it was left,
-   * and the engine returns to the state it was in before — schedule, mastery,
-   * attempt trail, book cursor. The errand comes back too: the grade may be the
+   * and the engine returns to the state it was in before — schedule, attempt
+   * trail, the run in flight. The errand comes back too: the grade may be the
    * one that emptied the pile and threw the switch.
    */
   const undoGrade = () => {

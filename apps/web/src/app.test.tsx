@@ -3421,6 +3421,104 @@ describe("the one way onto a topic", () => {
     await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
     expect(screen.getByRole("button", { name: "Stop reviewing this topic" })).toBeDefined();
   });
+
+  /**
+   * The other way to dismiss, and the one that matters most.
+   *
+   * A topic proves it is not what you need *while you are being asked about
+   * it*, so the link sits beside the grades — the same place `✎ edit this word`
+   * sits on a vocabulary card. Everything about it lives in the app rather than
+   * in the engine: the two-press arming, its reset, and getting off the round
+   * the deleted card was under.
+   */
+  describe("stopping a review from the round itself", () => {
+    /**
+     * A deck with one topic failed an hour ago, so a review opens on it — and
+     * with no topic chosen, so what is behind the review is the empty table
+     * rather than a run these scenarios never asked for.
+     */
+    const withReview = () => {
+      const s = new Session(new Content(fixture, testProfile));
+      s.gradeTopic("decl1", 1, new Date(Date.now() - 60 * 60 * 1000));
+      mount(s.progress(), fixture, testProfile, null);
+      return s;
+    };
+
+    it("takes two presses, and the first only says what the second will do", async () => {
+      const user = userEvent.setup();
+      const s = withReview();
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+      await user.click(screen.getByRole("button", { name: /stop reviewing this/ }));
+      // Armed, and nothing done: a deletion behind one tap beside four grade
+      // buttons is a deletion given by mistake.
+      expect(s.progress().topicCards.decl1).toBeDefined();
+      expect(
+        screen.getByRole("button", { name: /confirm — stop reviewing/ }),
+      ).toBeDefined();
+
+      await user.click(screen.getByRole("button", { name: /confirm — stop reviewing/ }));
+      expect(s.progress().topicCards.decl1).toBeUndefined();
+    });
+
+    it("gets off the round, so the questions left cannot rebuild the card", async () => {
+      /*
+       * The bug this exists for. `gradeTopic` rewinds a topic's card to
+       * `cardBefore` and re-rates it on every grade of a round, so a dismissal
+       * taken on question one and then carried on from would be undone by
+       * question two — silently, by the student doing nothing unusual.
+       */
+      const user = userEvent.setup();
+      const s = withReview();
+      expect(eyebrow()).toContain("· 1/2"); // two questions in this round
+
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /stop reviewing this/ }));
+      await user.click(screen.getByRole("button", { name: /confirm — stop reviewing/ }));
+
+      // The round went with the card, and the loop moved on rather than leaving
+      // the next question of a topic that is no longer being reviewed.
+      expect(s.progress().openRound).toBeNull();
+      expect(s.progress().topicCards.decl1).toBeUndefined();
+      // Nothing was due but that topic, so there is nothing left to review.
+      expect(screen.getByRole("heading", { name: "Pick a topic." })).toBeDefined();
+      expect(document.querySelector(".status__counts")?.textContent).not.toMatch(/due/);
+      expect(screen.getByRole("button", { name: "Review" })).toHaveProperty(
+        "disabled",
+        true,
+      );
+    });
+
+    it("is not offered on a run of practice, where there is no pile to leave", async () => {
+      // The topic was chosen a moment ago; the way out is choosing another.
+      const user = userEvent.setup();
+      mount();
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      expect(document.querySelector(".status__row .badge")?.textContent).toBe("drill 0/2");
+      expect(screen.queryByRole("button", { name: /stop reviewing this/ })).toBeNull();
+    });
+
+    it("disarms when the question changes, so the second press cannot land elsewhere", async () => {
+      // The first press names a topic. A press still armed on the next question
+      // would take *that* topic out of the pile, which is nobody's intent.
+      const user = userEvent.setup();
+      const s = withReview();
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /stop reviewing this/ }));
+      expect(
+        screen.getByRole("button", { name: /confirm — stop reviewing/ }),
+      ).toBeDefined();
+
+      // On to question two of the round, which disarms it.
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      expect(screen.getByRole("button", { name: /stop reviewing this/ })).toBeDefined();
+      expect(
+        screen.queryByRole("button", { name: /confirm — stop reviewing/ }),
+      ).toBeNull();
+      expect(s.progress().topicCards.decl1).toBeDefined();
+    });
+  });
 });
 
 /**

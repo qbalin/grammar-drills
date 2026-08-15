@@ -478,7 +478,7 @@ export function App({ session, content, storage }: Props) {
   /**
    * Take back the grade just given. The question it was given on comes back,
    * answer and all, and the engine returns to the state it was in before —
-   * schedule, mastery, attempt trail, book cursor. The errand comes back too:
+   * schedule, attempt trail, the run in flight. The errand comes back too:
    * the grade may be the one that emptied the pile and threw the switch.
    */
   const undoGrade = () => {
@@ -1144,6 +1144,11 @@ export function App({ session, content, storage }: Props) {
         else if (ch === "V") openVocabList({ t: "done" });
         else if (ch === "w") showWordsFor({ t: "done" });
         else if (ch === "u") undoGrade();
+        // The switch belongs here now. This screen used to mean "the book is
+        // worked out", which was reachable only with nothing due as well — so
+        // there was never a pile to go back to. It means "no topic chosen"
+        // instead, and reviews can be waiting behind it.
+        else if (ch === "x" && dueNow > 0) chooseMode("review");
         else if (key.return || ch === " ") {
           save();
           exit();
@@ -1426,11 +1431,20 @@ export function App({ session, content, storage }: Props) {
         </Box>
       )}
 
+      {/*
+        * Reached only while exploring, and exploring is reached by choice — so
+        * a pile can be waiting behind this. Saying "nothing due" over a status
+        * line reading `due 3` is the kind of small lie that makes a reader stop
+        * believing the rest of the screen.
+        */}
       {phase.t === "done" && (
         <Box marginTop={1}>
           <Text color="green">
-            ✓ Nothing due, and no topic being practised. Press m for the grammar index and Enter on
-            a topic to work at it, or Enter to exit.
+            ✓ No topic being practised.{" "}
+            {dueNow > 0
+              ? `${dueNow} review${dueNow === 1 ? "" : "s"} waiting — x to go back to them.`
+              : "Nothing due either."}{" "}
+            Press m for the grammar index and Enter on a topic to work at it, or Enter to exit.
           </Text>
         </Box>
       )}
@@ -2344,7 +2358,7 @@ function HintBar({
                   // Enter is the run again, since staying is what this screen
                   // is for; the index is how you go somewhere else.
                   ? `Enter practise it again · m grammar index${errandHint} · V my words${undoHint} · s schedule`
-                  : `m grammar index · s schedule · V my words${undoHint} · Enter exit`;
+                  : `m grammar index${errandHint} · s schedule · V my words${undoHint} · Enter exit`;
   return (
     <Box marginTop={1}>
       <Text dimColor>{hint}</Text>

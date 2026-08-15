@@ -236,7 +236,7 @@ const GRADES: { rating: Rating; label: string }[] = [
  * four intervals are one interval, and printing it under every button reads as
  * a bug rather than as the truth. `settled` replaces the four with a single
  * line saying what is now fixed — the grades still do their other work, since
- * mastery and the answer trail move per question either way.
+ * the answer trail records every one of them either way.
  */
 export function GradeBar({
   onGrade,

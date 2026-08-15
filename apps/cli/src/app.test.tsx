@@ -1052,7 +1052,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   it("says so rather than doing nothing where there is no question to have words for", async () => {
     const { lastFrame, stdin, unmount } = workedOut();
     await tick();
-    expect(lastFrame()).toContain("no topic being practised");
+    expect(lastFrame()).toContain("No topic being practised");
 
     stdin.write("w");
     await tick();
@@ -1065,7 +1065,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   it("puts back the screen the map was opened over, even through the schedule", async () => {
     const { lastFrame, stdin, unmount } = workedOut();
     await tick();
-    expect(lastFrame()).toContain("no topic being practised");
+    expect(lastFrame()).toContain("No topic being practised");
 
     stdin.write("m");
     await tick();
@@ -1079,7 +1079,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
     await tick();
     // It came from `done`, so `done` is where it goes back to — not the grading
     // bar hanging over a question that is not there.
-    expect(lastFrame()).toContain("no topic being practised");
+    expect(lastFrame()).toContain("No topic being practised");
     expect(lastFrame()).not.toContain("self-grade");
     unmount();
   });
