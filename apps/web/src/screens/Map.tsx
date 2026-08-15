@@ -343,7 +343,9 @@ export function MapSheet({
           <div className="family__head family__head--static">
             <span className="family__main">
               <span className="family__name">★ Starred</span>
-              <span className="family__sub">{starred.length} topics</span>
+              <span className="family__sub">
+                {starred.length} topic{starred.length === 1 ? "" : "s"}
+              </span>
             </span>
           </div>
           <TopicRows topics={starred} quotedOnly={quotedOnly} onPick={onPick} />

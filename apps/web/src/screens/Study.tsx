@@ -523,10 +523,20 @@ export function VocabReview({
  * rather than leaving a student on a rest screen beside a pile of nothing.
  */
 export function Rest({
+  dueNow,
   nextDue,
   onOpenMap,
   onOpenSchedule,
 }: {
+  /**
+   * How much is waiting on the *other* errand.
+   *
+   * This screen is only ever reached while exploring, and exploring is reached
+   * by choice — so a pile can be waiting behind it. Saying "nothing is due"
+   * over a switch reading `3 due` is the kind of small lie that makes a reader
+   * stop believing the rest of the screen.
+   */
+  dueNow: number;
   nextDue?: Date;
   onOpenMap: () => void;
   onOpenSchedule: () => void;
@@ -535,15 +545,16 @@ export function Rest({
     <div className="centered">
       <h1>Pick a topic.</h1>
       <p>
-        Nothing is due, and no topic is being practised. Choose one from the
-        index and stay on it for as long as you like.
-        {nextDue
-          ? ` The next review comes back ${nextDue.toLocaleDateString(undefined, {
-              weekday: "long",
-              month: "short",
-              day: "numeric",
-            })}.`
-          : ""}
+        No topic is being practised. Choose one from the index and stay on it
+        for as long as you like.
+        {dueNow > 0
+          ? ` ${dueNow} review${dueNow === 1 ? " is" : "s are"} waiting, whenever you want ${dueNow === 1 ? "it" : "them"}.`
+          : nextDue
+            ? ` Nothing is due; the next review comes back ${nextDue.toLocaleDateString(
+                undefined,
+                { weekday: "long", month: "short", day: "numeric" },
+              )}.`
+            : " Nothing is due."}
       </p>
       <div
         className="actions"

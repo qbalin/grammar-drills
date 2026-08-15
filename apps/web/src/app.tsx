@@ -2195,6 +2195,7 @@ export function App({ content, session, storage }: Props) {
 
         {phase.t === "done" && (
           <Rest
+            dueNow={dueNow}
             nextDue={nextDue}
             onOpenMap={() => setOverlay({ t: "map" })}
             onOpenSchedule={() => setOverlay({ t: "schedule" })}
