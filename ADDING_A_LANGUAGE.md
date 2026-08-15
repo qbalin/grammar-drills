@@ -8,6 +8,23 @@ Latin is the worked example throughout, because it is the pack that exists.
 Ancient Greek is the second example, because the interfaces were designed
 against it — where Greek would answer differently, it says so.
 
+**Start here, so the typing is not the first thing:**
+
+```bash
+node --import tsx scripts/new-pack.mjs --id old-english --name "Old English" \
+  --code ang --endonym "Englisc"
+```
+
+That stamps `profile.json`, `fold.fixtures.json`, `package.json`, `pack.test.ts`
+and `REVIEW.md`, then runs `validate-pack --profile-only` and shows you the
+failures — which are the to-do list, in the same command that will one day say
+it is done. Every value it cannot derive is a `TODO` that fails a gate rather
+than a plausible default that passes one; the fold especially, because a fold
+nobody wrote marks wrong answers right for ever and nothing else here would
+notice.
+
+It gets you to step 4. Everything from there needs a parsed grammar.
+
 ---
 
 ## 0. Read this first
@@ -238,9 +255,12 @@ Seven rules, all of them learned the hard way:
 7. **Account for every source section.** Also emit
    `content/grammar-coverage.json`: each source section is either `assigned` to
    a topic or `dropped` with a stated reason, and the two must add up. Nothing
-   may merely disappear. (Latin: 376 sections = 325 assigned + 51 dropped, 39
-   for being in a part that cannot carry a translation exercise and 12 for being
-   structural headings.)
+   may merely disappear. (Latin: 376 sections = 376 assigned + 0 dropped. It
+   used to read 325 + 51, and the 51 were the parts that cannot carry a
+   translation exercise — those are now *assigned* and marked `readingOnly`,
+   which is what G10 exists to insist on: a page nobody can be tested on is
+   still a page they must be able to read. The only thing a parser may now drop
+   is a book's own apparatus, and it must name the reason `apparatus`.)
 
 ### Gates
 

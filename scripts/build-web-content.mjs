@@ -10,8 +10,8 @@
  * back to being about grammar and tests. See `scripts/lib/lemma-map.mjs` for
  * the split and `@lang-tutor/core`'s `LemmaIndex` for the reader.
  *
- *   grammar.json.gz  the 135 sections, verbatim          ~122 KB gz  eager
- *   tests.json.gz    all 135 test files, merged          ~275 KB gz  eager
+ *   grammar.json.gz  every section, verbatim              ~148 KB gz  eager
+ *   tests.json.gz    every test file, merged               ~485 KB gz  eager
  *   lemmas.json.gz   the distinct lemmas, as LemmaEntry[] ~2.1 MB gz  lazy
  *   forms.txt.gz     `form\tidx[,idx...]` per line, sorted ~3.2 MB gz  lazy
  *   paradigms.txt.gz every word's tagged forms, sorted   ~2.5 MB gz  lazier
