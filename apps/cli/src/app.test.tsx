@@ -84,6 +84,19 @@ const tick = () => new Promise((r) => setTimeout(r, 30));
  * on its own schedule and a loaded machine can take longer than any fixed sleep
  * to put a keypress on screen — a `tick` before the assertion is a race that CI
  * loses now and then. Fails with the frame it gave up on.
+ *
+ * **It ends in a `tick`, and that is not a rounding error.** A matched frame
+ * proves React rendered; it does not prove Ink has re-registered its key
+ * handlers, which it does in an effect. So a caller that waits here and then
+ * writes a key is writing into the gap between the two — and input that arrives
+ * there is not queued, it is gone. That is `press`'s whole reason for taking
+ * two waits, and every `await until(...)` followed by a `stdin.write` was the
+ * same race with only the first half of the fix.
+ *
+ * It cost a CI failure twice: the drawer-paging test waited for "rule line 1",
+ * pressed ↓ into that gap, and sat at "lines 1–9" until the next `until` gave
+ * up. The commit before this one moved that test's *first* wait from a flat
+ * `tick` to an `until` and left the second half racing.
  */
 const until = async (frame: () => string | undefined, want: string) => {
   // Three seconds, not one. A cold GitHub runner starting a fresh worker is
@@ -91,7 +104,7 @@ const until = async (frame: () => string | undefined, want: string) => {
   // ceiling is nothing — it is only ever reached when the test is about to
   // fail anyway, and then it buys a real failure instead of a flake.
   for (let i = 0; i < 300; i++) {
-    if (frame()?.includes(want)) return;
+    if (frame()?.includes(want)) return tick();
     await new Promise((r) => setTimeout(r, 10));
   }
   throw new Error(`frame never showed ${JSON.stringify(want)}:\n\n${frame()}`);
@@ -153,6 +166,11 @@ const pressOnce = async (
 
 /** What the terminal sends for Esc. */
 const ESC = "";
+
+/** The keys that reach the answer box's own handler as raw bytes. */
+const CTRL_N = "";
+const DOWN = "[B";
+const RIGHT = "[C";
 
 /**
  * A session already practising the first topic of its book.
@@ -617,8 +635,12 @@ describe("CLI App (write → compare → self-grade)", () => {
     expect(drawer).not.toContain("…");
 
     // One line down, mid-answer: the window moves on.
-    stdin.write("\u001B[B");
-    await until(lastFrame, "lines 2–");
+    //
+    // `pressOnce` rather than a bare write, and rather than `press`: the
+    // handlers are registered by now (see `until`), so one send is enough — and
+    // a scroll is counted, so a re-send would move the window two lines and
+    // then fail on a frame that never said what the test is about.
+    await pressOnce(stdin, lastFrame, DOWN, "lines 2–");
     expect(lastFrame()).toContain("rule line 2");
 
     // Paging reaches the end of the section — however many pages that takes.
@@ -864,11 +886,6 @@ describe("the schedule, the question bank and the vocabulary list", () => {
   });
 
 });
-
-/** The keys that reach the answer box's own handler as raw bytes. */
-const CTRL_N = "";
-const DOWN = "[B";
-const RIGHT = "[C";
 
 /**
  * The words of the question, and the map from anywhere.
