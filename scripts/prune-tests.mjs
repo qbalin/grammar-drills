@@ -70,7 +70,9 @@ import { existsSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { words } from "@lang-tutor/core";
-import { loadProfile, loadTests, packDir } from "./lib/pack.mjs";
+import { loadProfile, loadTests, packDir,
+  args,
+} from "./lib/pack.mjs";
 import { makeClassifier } from "./lib/attestation.mjs";
 import { partition } from "./lib/quoted.mjs";
 import { openReference } from "./lib/reference.mjs";
@@ -82,10 +84,7 @@ const tests = loadTests(dir);
 const APPLY = argv.includes("--apply");
 const GENERATED = argv.includes("--generated");
 const QUOTED = argv.includes("--quoted");
-const opt = (name, def) => {
-  const i = argv.indexOf(name);
-  return i >= 0 ? argv[i + 1] : def;
-};
+const { at: opt } = args(argv);
 const MAX = Number(opt("--max-misses", profile.attestation?.maxMissesPerQuestion ?? 0));
 const ONLY = opt("--topic", null);
 

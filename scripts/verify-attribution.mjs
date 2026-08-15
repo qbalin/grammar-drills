@@ -73,17 +73,16 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { compileFold, words } from "@lang-tutor/core";
-import { loadGrammar, loadProfile, loadTests, packDir } from "./lib/pack.mjs";
+import { loadGrammar, loadProfile, loadTests, packDir,
+  args,
+} from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);
 const dir = packDir(argv);
 const profile = loadProfile(dir);
 const fold = compileFold(profile.fold);
 const JSON_OUT = argv.includes("--json");
-const opt = (name, def) => {
-  const i = argv.indexOf(name);
-  return i >= 0 ? argv[i + 1] : def;
-};
+const { at: opt } = args(argv);
 const MIN_TOKENS = Number(opt("--min-tokens", 4));
 const LONG_TOKENS = Number(opt("--long-tokens", 10));
 

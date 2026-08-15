@@ -34,14 +34,13 @@
 import { writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { join } from "node:path";
-import { loadProfile, packDir } from "./lib/pack.mjs";
+import { loadProfile, packDir,
+  args,
+} from "./lib/pack.mjs";
 import { openReference, requireDictionary } from "./lib/reference.mjs";
 
 const argv = process.argv.slice(2);
-const opt = (name, def) => {
-  const i = argv.indexOf(name);
-  return i >= 0 ? argv[i + 1] : def;
-};
+const { at: opt } = args(argv);
 const dir = packDir(argv);
 const profile = loadProfile(dir);
 // Same contract as build-lemmas: the tagged forms are the one thing the pack's

@@ -26,6 +26,33 @@ export function packDir(argv = process.argv.slice(2)) {
   return join(REPO, "languages", named);
 }
 
+/**
+ * The flags a script was given.
+ *
+ * Written out sixteen times across `scripts/`, in two spellings — `at(name)`
+ * and `opt(name, default)` — and identical in every one: find the flag, take
+ * the next word. A helper nobody had, next to `packDir` which already did the
+ * same indexOf for `--pack`.
+ *
+ *   const { at, has } = args();
+ *   const dist = at("--dist", defaultDist);
+ *   if (has("--apply")) …
+ */
+export function args(argv = process.argv.slice(2)) {
+  return {
+    /** The word after `name`, or `fallback` when the flag is absent. */
+    at(name, fallback = undefined) {
+      const i = argv.indexOf(name);
+      return i >= 0 ? argv[i + 1] : fallback;
+    },
+    /** Whether a bare flag was passed. */
+    has(name) {
+      return argv.includes(name);
+    },
+    argv,
+  };
+}
+
 export function loadProfile(dir) {
   return parseProfile(JSON.parse(readFileSync(join(dir, "profile.json"), "utf8")));
 }

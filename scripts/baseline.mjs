@@ -33,10 +33,13 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { join, relative } from "node:path";
-import { REPO, grammarsOf, loadProfile, packDir } from "./lib/pack.mjs";
+import { REPO, grammarsOf, loadProfile, packDir,
+  args,
+} from "./lib/pack.mjs";
 
+const { at: flag, has } = args();
 const argv = process.argv.slice(2);
-const write = argv.includes("--write");
+const write = has("--write");
 const dir = packDir(argv);
 const profile = loadProfile(dir);
 const path = join(dir, "BASELINE.json");

@@ -76,3 +76,5 @@ export {
   syncStateLine,
   type SyncState,
 } from "./storage/sync.js";
+
+export { repairProgress, type Repair } from "./repair.js";

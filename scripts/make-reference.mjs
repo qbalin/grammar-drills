@@ -26,14 +26,13 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { gunzipSync, gzipSync } from "node:zlib";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { loadProfile, packDir } from "./lib/pack.mjs";
+import { loadProfile, packDir,
+  args,
+} from "./lib/pack.mjs";
 import { FREQUENCY_FILE, referenceDir } from "./lib/reference.mjs";
 
 const argv = process.argv.slice(2);
-const opt = (name) => {
-  const i = argv.indexOf(name);
-  return i >= 0 ? argv[i + 1] : undefined;
-};
+const { at: opt } = args(argv);
 const CHECK = argv.includes("--check");
 const dir = packDir(argv);
 const profile = loadProfile(dir);

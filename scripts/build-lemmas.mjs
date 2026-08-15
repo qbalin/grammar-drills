@@ -64,14 +64,13 @@ import { join } from "node:path";
 import { compileFold } from "@lang-tutor/core";
 import { classOf, genderOf, glossOf } from "./lib/lemma-fields.mjs";
 import { splitLemmaMap } from "./lib/lemma-map.mjs";
-import { loadLemmaIndex, loadProfile, packDir } from "./lib/pack.mjs";
+import { loadLemmaIndex, loadProfile, packDir,
+  args,
+} from "./lib/pack.mjs";
 import { openReference, requireDictionary } from "./lib/reference.mjs";
 
 const argv = process.argv.slice(2);
-const opt = (name, def) => {
-  const i = argv.indexOf(name);
-  return i >= 0 ? argv[i + 1] : def;
-};
+const { at: opt } = args(argv);
 const dir = packDir(argv);
 const profile = loadProfile(dir);
 const fold = compileFold(profile.fold);

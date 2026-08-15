@@ -2,6 +2,7 @@ import { Content } from "./content.js";
 import { type FamilyId } from "./families.js";
 import type { Fold } from "./fold.js";
 import { foldKey, words } from "./question-vocab.js";
+import { repairProgress } from "./repair.js";
 import {
   deserializeCard,
   isDue,
@@ -295,6 +296,12 @@ export class Session {
   private p: Progress;
 
   /**
+   * Fields of the stored file that were not the shape they claimed and were put
+   * back to their defaults. Empty for every ordinary file. See `repair.ts`.
+   */
+  readonly repaired: readonly string[];
+
+  /**
    * Bumped by `touch()`, which every mutation goes through. What `grammarMap`
    * caches against, so a run of reads between two grades computes once.
    */
@@ -324,7 +331,19 @@ export class Session {
     private readonly content: Content,
     progress?: Progress,
   ) {
-    this.p = progress ?? emptyProgress(content.profile.citationsVersion);
+    /*
+     * Repaired before anything reads it. The adapters all end in
+     * `JSON.parse(...) as Progress`, and the cast is a claim nobody checks — a
+     * file with `topicCards: null` satisfies the compiler and crashes on the
+     * first `Object.entries` in `next()`. See `repair.ts`; what it found is on
+     * `this.repaired` for a caller that wants to say so.
+     */
+    const fixed = repairProgress(
+      progress ?? emptyProgress(content.profile.citationsVersion),
+      content.profile.citationsVersion,
+    );
+    this.p = fixed.progress;
+    this.repaired = fixed.repaired;
     // Progress files written before mastery tracking have no map; there is no
     // migration layer, so default it here. Same for the answer trail and the
     // citation generation — a file written before either simply has none.

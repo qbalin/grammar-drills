@@ -29,15 +29,13 @@ import {
   percentile,
   report,
   teachable,
+  args,
 } from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);
 const dir = packDir(argv);
 const profile = loadProfile(dir);
-const at = (name) => {
-  const i = argv.indexOf(name);
-  return i >= 0 ? argv[i + 1] : undefined;
-};
+const { at } = args(argv);
 /*
  * Which book. A pack with one grammar takes no flag and behaves as it always
  * has; a pack with two is reported once per book, because a shape gate measures

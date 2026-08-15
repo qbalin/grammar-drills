@@ -26,16 +26,15 @@
  */
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
-import { REPO, packDir, loadProfile } from "./lib/pack.mjs";
+import { REPO, packDir, loadProfile,
+  args,
+} from "./lib/pack.mjs";
 
 const argv = process.argv.slice(2);
-const at = (name) => {
-  const i = argv.indexOf(name);
-  return i >= 0 ? argv[i + 1] : undefined;
-};
+const { at } = args(argv);
 
 const dir = packDir(argv);
-const dist = at("--dist") ?? join(REPO, "apps", "web", "dist");
+const dist = at("--dist", join(REPO, "apps", "web", "dist"));
 const profile = loadProfile(dir);
 
 /**
