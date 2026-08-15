@@ -86,7 +86,11 @@ const tick = () => new Promise((r) => setTimeout(r, 30));
  * loses now and then. Fails with the frame it gave up on.
  */
 const until = async (frame: () => string | undefined, want: string) => {
-  for (let i = 0; i < 100; i++) {
+  // Three seconds, not one. A cold GitHub runner starting a fresh worker is
+  // slower than any machine this was calibrated on, and the cost of a generous
+  // ceiling is nothing — it is only ever reached when the test is about to
+  // fail anyway, and then it buys a real failure instead of a flake.
+  for (let i = 0; i < 300; i++) {
     if (frame()?.includes(want)) return;
     await new Promise((r) => setTimeout(r, 10));
   }
@@ -581,7 +585,14 @@ describe("CLI App (write → compare → self-grade)", () => {
     );
 
     // A new topic teaches first, so the drawer opens at the top of the section.
-    await tick();
+    //
+    // Waited on rather than slept through, and that is the fix for a CI failure
+    // rather than a tidy-up. This was `await tick()` — a flat 30 ms — and the
+    // keypress below then went to an ink that had not finished mounting on a
+    // cold runner, so it was dropped and the drawer sat at "lines 1–9" until
+    // `until` gave up a second later. The frame in the failure showed exactly
+    // that: rendered, never scrolled.
+    await until(lastFrame, "rule line 1");
     expect(lastFrame()).toContain("rule line 1");
     expect(lastFrame()).not.toContain("rule line 90");
     // The drawer says where the reader is, and never trails off into an
