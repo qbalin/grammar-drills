@@ -53,6 +53,21 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm -r test
+      # Vitest transpiles rather than type-checks, so `pnpm -r test` is green on
+      # code that does not compile. Nothing here compiled `apps/cli` at all, and
+      # `packages/core` only got checked as a side effect of the web build in
+      # the next job — which meant a type error in the engine reached that job
+      # rather than this one, wearing the wrong name.
+      #
+      # Not hypothetical. Two errors in `session.ts` survived a green
+      # `pnpm -r test` while this was being written, both of them left behind by
+      # a refactor: a reference to a variable that had been removed, and a type
+      # that was never imported.
+      - run: pnpm --filter @lang-tutor/cli typecheck
+      # `build`, not `--noEmit`: core sets `declaration: true`, and emitting a
+      # `.d.ts` can fail where checking passes — an inferred type that names
+      # something it cannot write down is only caught here.
+      - run: pnpm --filter @lang-tutor/core build
       # The engine must not learn a language. Cheap to check, and exactly the
       # kind of rule that erodes one convenient import at a time.
       - run: node scripts/check-core-purity.mjs

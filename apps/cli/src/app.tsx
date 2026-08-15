@@ -436,7 +436,12 @@ export function App({ session, content, storage }: Props) {
     // bring cards saved against older citations up to the shipped ones.
     if (session.refreshCitations() > 0) save();
     advance();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Deliberately empty: this runs once, at startup. It carried an
+    // `eslint-disable-next-line react-hooks/exhaustive-deps` for years, and
+    // there is no eslint in this repo — no config, no dependency, nothing that
+    // reads it — so the directive suppressed nothing and only implied a rule
+    // was being enforced somewhere. Said in words instead, which is what it was
+    // trying to say.
   }, []);
 
   const submitAnswer = (value: string) => {

@@ -454,6 +454,16 @@ export interface OpenRound {
 }
 
 export interface Progress {
+  /**
+   * Set to 1 and never compared — migration here is by field presence, in the
+   * `Session` constructor and `migrate()`, reading through `LegacyProgress`.
+   *
+   * Not vestigial, though it looks it: `importProgress` uses its presence as the
+   * one cheap test of "is this file a progress file at all", which is what
+   * stands between a student and a stack trace after picking the wrong JSON out
+   * of their downloads. That is the whole of its job and it is worth saying so,
+   * because the obvious tidy-up is to delete it.
+   */
   version: number;
   /**
    * Dead. One section id for the whole syllabus, which could say "past the
@@ -538,7 +548,19 @@ export interface Progress {
    * having, and the cost is a progress file that grows with study.
    */
   attempts: Record<string, Attempt[]>;
-  /** Count of new topics introduced (drives spot-check cadence). */
+  /**
+   * How many topics have been graded for the first time.
+   *
+   * It drives nothing. It said "drives spot-check cadence" for a long time and
+   * that was true of a design this app went away from — nothing has read it
+   * since. Kept rather than removed: it is written on every first grade, so it
+   * is in every progress file ever saved, and dropping a field from a persisted
+   * shape to tidy a line of prose is a migration bought for nothing.
+   *
+   * Left honest instead, which is the point of this note. A field documented as
+   * load-bearing and read by nothing is worse than an idle one, because the next
+   * person to touch the scheduler will go looking for what it feeds.
+   */
   newTopicsIntroduced: number;
   /**
    * Which generation of the shipped citations the vocabulary cards carry. Cards

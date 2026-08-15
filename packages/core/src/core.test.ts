@@ -137,6 +137,59 @@ describe("scheduler", () => {
   });
 });
 
+/**
+ * `grammarMap` is the most expensive read in the engine and the most repeated —
+ * both apps call it on every render, twice, since `familyProgress` and
+ * `overallPercent` each go through it. It walks the whole attempt trail per
+ * section, and the trail is deliberately uncapped.
+ */
+describe("the grammar map cache", () => {
+  const built = () => new Session(new Content(fixture, testProfile));
+
+  it("hands back the same map to two reads in one paint", () => {
+    const s = built();
+    const now = new Date("2026-01-01T00:00:00Z");
+    // Identity, not equality: a fresh array would mean the walk ran again.
+    expect(s.grammarMap(now)).toBe(s.grammarMap(now));
+  });
+
+  it("drops it when anything is graded", () => {
+    const s = built();
+    const now = new Date("2026-01-01T00:00:00Z");
+    const before = s.grammarMap(now);
+    const wasMastered = s.overallPercent(now);
+    s.gradeTopic("ag1", 4, now);
+    const after = s.grammarMap(now);
+
+    expect(after).not.toBe(before);
+    // And not merely a different array: it says something different. Read
+    // through `overallPercent`, which is what the app puts on screen and is
+    // computed off this map — so a stale cache would show a figure that did not
+    // move when the student answered.
+    expect(s.overallPercent(now)).toBeGreaterThan(wasMastered);
+  });
+
+  it("drops it when a snapshot is restored", () => {
+    const s = built();
+    const now = new Date("2026-01-01T00:00:00Z");
+    const clean = s.snapshot();
+    s.gradeTopic("ag1", 4, now);
+    const graded = s.grammarMap(now);
+
+    s.restore(clean);
+    const back = s.grammarMap(now);
+    expect(back).not.toBe(graded);
+    expect(s.overallPercent(now)).toBe(0);
+  });
+
+  it("re-reads it as the clock moves, since `due` is about the clock", () => {
+    const s = built();
+    const at = new Date("2026-01-01T00:00:00Z");
+    const later = new Date("2026-01-01T00:00:02Z");
+    expect(s.grammarMap(at)).not.toBe(s.grammarMap(later));
+  });
+});
+
 describe("Content + lemmatizer", () => {
   it("resolves an inflected form to a ranked citation", () => {
     const c = new Content(fixture, testProfile);

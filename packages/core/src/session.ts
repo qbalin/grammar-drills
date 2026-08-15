@@ -25,6 +25,7 @@ import {
   type QuestionSource,
   type RoundDraft,
   type RoundVia,
+  type OpenRound,
   type SerializedCard,
   type Test,
   type VocabCardState,
@@ -261,8 +262,49 @@ function isRoundVia(via: unknown): via is RoundVia {
  * deterministic, no LLM. Ported from the reference `session.py` state machine
  * with the LLM's exercise/grading jobs removed.
  */
+/** Which of these cards are due — the count behind the badge. */
+function dueAmong(cards: readonly [string, SerializedCard][], now: Date): string[] {
+  return cards.filter(([, c]) => isDue(deserializeCard(c), now)).map(([id]) => id);
+}
+
+/**
+ * The one that has been waiting longest, or null if none is due.
+ *
+ * This used to be written twice, and both copies carried a `skip` set that no
+ * caller ever passed — documented as "what an explore run is holding", from a
+ * design that went another way. A parameter nothing supplies is a branch nothing
+ * exercises.
+ */
+function earliestDue(
+  cards: readonly [string, SerializedCard][],
+  now: Date,
+): string | null {
+  let best: string | null = null;
+  let bestDue = Infinity;
+  for (const [id, serialized] of cards) {
+    const card = deserializeCard(serialized);
+    if (isDue(card, now) && card.due.getTime() < bestDue) {
+      bestDue = card.due.getTime();
+      best = id;
+    }
+  }
+  return best;
+}
+
 export class Session {
   private p: Progress;
+
+  /**
+   * Bumped by `touch()`, which every mutation goes through. What `grammarMap`
+   * caches against, so a run of reads between two grades computes once.
+   */
+  private revision = 0;
+  private mapCache: {
+    revision: number;
+    grammarId: string;
+    second: number;
+    map: TopicProgress[];
+  } | null = null;
 
   /**
    * The pack's families, in the order the grammar index is drawn.
@@ -701,9 +743,9 @@ export class Session {
        * scheduler exists to prevent. Grammar keeps its place in the queue; it
        * simply does not stand in front of the quick work.
        */
-      const dueVocab = this.earliestDueVocab(now);
+      const dueVocab = earliestDue(this.vocabCardList(), now);
       if (dueVocab) return { kind: "vocab-review", cardId: dueVocab };
-      const dueTopic = this.earliestDueTopic(now);
+      const dueTopic = earliestDue(this.topicCardList(), now);
       if (dueTopic) return { kind: "topic-review", sectionId: dueTopic };
       return { kind: "done" };
     }
@@ -963,6 +1005,30 @@ export class Session {
    * Passing no `roundId` rates per call, which is what a topic with no tests
    * written for it — one verdict, no round — wants.
    */
+  /**
+   * The round this grade belongs to, if it belongs to one.
+   *
+   * Written out twice — once in `gradeTopic` and once in `previewTopic` — and
+   * the two must agree exactly or the app lies to the student: the grade
+   * buttons are labelled with the interval each one buys, and the preview
+   * computes that against `cardBefore` only when it believes the round is
+   * continuing. A guard that drifted here would put a number under a button
+   * that the grade then does not honour.
+   *
+   * Returns the round rather than a boolean, because every caller wants
+   * `cardBefore` and `worst` off it the moment the answer is yes, and a
+   * boolean makes them narrow `openRound` again by hand.
+   */
+  private continuingRound(sectionId: string, roundId?: string): OpenRound | null {
+    const open = this.p.openRound;
+    return roundId !== undefined &&
+      open != null &&
+      open.roundId === roundId &&
+      open.sectionId === sectionId
+      ? open
+      : null;
+  }
+
   gradeTopic(
     sectionId: string,
     rating: Rating,
@@ -970,18 +1036,15 @@ export class Session {
     roundId?: string,
   ): void {
     const existing = this.p.topicCards[sectionId];
-    const open = this.p.openRound;
-    const continuing =
-      roundId !== undefined &&
-      open != null &&
-      open.roundId === roundId &&
-      open.sectionId === sectionId;
+    const continuing = this.continuingRound(sectionId, roundId);
 
-    const before = continuing ? open.cardBefore : (existing ?? null);
+    const before = continuing ? continuing.cardBefore : (existing ?? null);
     // `worst` is null until the round's first grade, since a round now opens
     // when its test is served rather than when it is first answered.
     const worst = (
-      continuing && open.worst !== null ? Math.min(open.worst, rating) : rating
+      continuing && continuing.worst !== null
+        ? Math.min(continuing.worst, rating)
+        : rating
     ) as Rating;
     const card = rate(
       before ? deserializeCard(before) : newCard(now),
@@ -990,35 +1053,52 @@ export class Session {
     );
     this.p.topicCards[sectionId] = serializeCard(card);
     const stood = this.p.topicMastery[sectionId];
-    this.p.openRound =
-      roundId === undefined
-        ? null
-        : {
-            sectionId,
-            // Carried rather than dropped. This literal is written from
-            // scratch on every grade, so anything the round knows and does not
-            // appear here is lost on its first one — which is how a round
-            // opened in a further grammar used to forget by question two which
-            // book it was being read in, and resume in the other one.
-            ...(continuing && open.viewedAs ? { viewedAs: open.viewedAs } : {}),
-            roundId,
-            cardBefore: before,
-            // Carried for the same reason and re-read for none: by now this
-            // round's own grades have moved the map it would be re-read from,
-            // which is exactly the value it must not be.
-            ...(continuing
-              ? open.masteryBefore === undefined
-                ? {}
-                : { masteryBefore: open.masteryBefore }
-              : { masteryBefore: stood ?? MASTERY_MIN }),
-            ...(continuing && open.met?.length ? { met: open.met } : {}),
-            worst,
-            // One more of the round's questions is behind us, and the draft
-            // was the answer to the one just graded.
-            answered: (continuing ? open.answered : 0) + 1,
-            isNew: continuing ? open.isNew : false,
-            via: continuing ? (open.via ?? "review") : "review",
-          };
+    /*
+     * The round, updated rather than rewritten.
+     *
+     * This literal used to be built from scratch on every grade, with five
+     * conditional spreads carrying forward what the round already knew. Its own
+     * comment recorded the cost: a round opened in a further grammar forgot
+     * `viewedAs` on question two and resumed in the other book, because the new
+     * literal simply did not mention it. Every field added to `OpenRound` after
+     * that had to remember to be re-listed, and the one that forgot would fail
+     * the same way — silently, on the second question.
+     *
+     * Starting from the round in flight makes that class of bug impossible: a
+     * field nobody names here is carried. What is left is the two that must
+     * *not* be, and they are worth naming for the opposite reason.
+     *
+     * `draft` is the answer to the question just graded. It was dropped by the
+     * old literal by never being mentioned, which was right by accident; here it
+     * has to be dropped on purpose, or a graded sentence would reappear in the
+     * box on the next question.
+     *
+     * `via` says why this round is on screen. It is written once when the round
+     * opens and read on every resume, and the old code defaulted a missing one
+     * to `"review"` — a file written before `via` existed has none, and a round
+     * resumed from it must still be able to say something.
+     */
+    if (roundId === undefined) {
+      this.p.openRound = null;
+    } else {
+      const opening: OpenRound = {
+        sectionId,
+        roundId,
+        cardBefore: before,
+        masteryBefore: stood ?? MASTERY_MIN,
+        isNew: false,
+        worst,
+        answered: 0,
+      };
+      const { draft: _spent, ...carried } = continuing ?? opening;
+      this.p.openRound = {
+        ...carried,
+        via: continuing?.via ?? "review",
+        worst,
+        // One more of the round's questions is behind us.
+        answered: (continuing?.answered ?? 0) + 1,
+      };
+    }
 
     // Mastery moves gradually, so one good answer can't mark a topic mastered
     // and one bad day can't wipe it: good/easy +1, hard +0.5, again -1. It is
@@ -1197,18 +1277,15 @@ export class Session {
     now: Date = new Date(),
     roundId?: string,
   ): Record<Rating, Date> {
-    const open = this.p.openRound;
-    const continuing =
-      roundId !== undefined &&
-      open != null &&
-      open.roundId === roundId &&
-      open.sectionId === sectionId;
+    const continuing = this.continuingRound(sectionId, roundId);
 
-    const base = continuing ? open.cardBefore : (this.p.topicCards[sectionId] ?? null);
+    const base = continuing
+      ? continuing.cardBefore
+      : (this.p.topicCards[sectionId] ?? null);
     const dates = preview(base ? deserializeCard(base) : newCard(now), now);
-    if (!continuing || open.worst === null) return dates;
+    if (continuing === null || continuing.worst === null) return dates;
 
-    const worst = open.worst;
+    const worst = continuing.worst;
     return {
       1: dates[1],
       2: dates[Math.min(worst, 2) as Rating],
@@ -1621,8 +1698,8 @@ export class Session {
     vocab: number;
   } {
     return {
-      dueTopics: this.dueTopicIds(now).length,
-      dueVocab: this.dueVocabIds(now).length,
+      dueTopics: dueAmong(this.topicCardList(), now).length,
+      dueVocab: dueAmong(this.vocabCardList(), now).length,
       topics: Object.keys(this.p.topicCards).length,
       vocab: Object.keys(this.p.vocabCards).length,
     };
@@ -1645,7 +1722,44 @@ export class Session {
    * section is here whichever it is, because reading is what this list is drawn
    * for — what a student cannot reach, they can never learn.
    */
+  /**
+   * Memoized, because this is the most expensive read in the engine and the
+   * most repeated.
+   *
+   * Per section it does a `primaryTopicsFor`, up to two `testsFor`, a
+   * `coverage()` that walks the **whole** attempt trail, and a
+   * `deserializeCard` — and the trail is deliberately uncapped, so it grows
+   * with years of study. Greek has 556 sections. Both apps call it on every
+   * render, and twice: `familyProgress` and `overallPercent` each go through
+   * it, so one paint of the index computed the lot twice over.
+   *
+   * Keyed on three things. The **revision**, bumped by `touch()`, so any grade
+   * or edit drops it. The **grammar**, because a further book's sections are a
+   * different map entirely. And the **second**, because `due` is a fact about
+   * the clock rather than about progress: without it the two calls in one paint
+   * arrive a millisecond apart and miss.
+   *
+   * That last one bounds the staleness at one second, against a `due` whose own
+   * granularity is minutes at best — a card cannot come due and be answered
+   * inside the window.
+   */
   grammarMap(now: Date = new Date()): TopicProgress[] {
+    const second = Math.floor(now.getTime() / 1000);
+    const hit = this.mapCache;
+    if (
+      hit &&
+      hit.revision === this.revision &&
+      hit.grammarId === this.grammarId &&
+      hit.second === second
+    ) {
+      return hit.map;
+    }
+    const map = this.computeGrammarMap(now);
+    this.mapCache = { revision: this.revision, grammarId: this.grammarId, second, map };
+    return map;
+  }
+
+  private computeGrammarMap(now: Date): TopicProgress[] {
     const cursor = this.bookCursor();
     return this.content.sections(this.grammarId).map((s) => {
       /*
@@ -1793,56 +1907,30 @@ export class Session {
 
   private touch(): void {
     this.p.updatedAt = new Date().toISOString();
+    this.revision += 1;
   }
 
-  private dueTopicIds(now: Date): string[] {
-    return Object.entries(this.p.topicCards)
-      .filter(
-        ([id, s]) =>
-          this.content.getSection(id) && isDue(deserializeCard(s), now),
-      )
-      .map(([id]) => id);
+  /**
+   * The two review tracks, each as `[id, card]`.
+   *
+   * They are separate stores with separate shapes — topics are keyed by section
+   * id, vocabulary carries its own — and the four functions that read them were
+   * written out four times: the same "is this due" predicate in `dueTopicIds`
+   * and `earliestDueTopic`, and again in the vocabulary pair. Reduced to the one
+   * difference that is real, which is how the ids are got at.
+   *
+   * A topic whose section is no longer in the bundle is dropped here. The
+   * syllabus was rebuilt once already, and a card left over from the old ids is
+   * a card nothing can serve.
+   */
+  private topicCardList(): [string, SerializedCard][] {
+    return Object.entries(this.p.topicCards).filter(
+      ([id]) => this.content.getSection(id) !== undefined,
+    );
   }
 
-  /** `skip` is what an explore run is holding; empty the rest of the time. */
-  private earliestDueTopic(
-    now: Date,
-    skip: ReadonlySet<string> = new Set(),
-  ): string | null {
-    let best: string | null = null;
-    let bestDue = Infinity;
-    for (const [id, s] of Object.entries(this.p.topicCards)) {
-      if (!this.content.getSection(id) || skip.has(id)) continue;
-      const card = deserializeCard(s);
-      if (isDue(card, now) && card.due.getTime() < bestDue) {
-        bestDue = card.due.getTime();
-        best = id;
-      }
-    }
-    return best;
-  }
-
-  private dueVocabIds(now: Date): string[] {
-    return Object.values(this.p.vocabCards)
-      .filter((s) => isDue(deserializeCard(s.fsrs), now))
-      .map((s) => s.id);
-  }
-
-  private earliestDueVocab(
-    now: Date,
-    skip: ReadonlySet<string> = new Set(),
-  ): string | null {
-    let best: string | null = null;
-    let bestDue = Infinity;
-    for (const s of Object.values(this.p.vocabCards)) {
-      if (skip.has(s.id)) continue;
-      const card = deserializeCard(s.fsrs);
-      if (isDue(card, now) && card.due.getTime() < bestDue) {
-        bestDue = card.due.getTime();
-        best = s.id;
-      }
-    }
-    return best;
+  private vocabCardList(): [string, SerializedCard][] {
+    return Object.values(this.p.vocabCards).map((s) => [s.id, s.fsrs]);
   }
 
   /**
