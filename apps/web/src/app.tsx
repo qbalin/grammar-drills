@@ -278,6 +278,63 @@ export function App({ content, session, storage }: Props) {
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
   const [overlay, setOverlay] = useState<Overlay>(null);
+
+  /*
+   * The system Back button closes the sheet instead of leaving the app.
+   *
+   * There was no History API use anywhere — `pushState`, `popstate` and
+   * `history.` appeared nowhere outside `location.reload()` — so on Android, in
+   * an installed standalone PWA with seventeen kinds of bottom sheet, the Back
+   * gesture closed **the app**. A student reading a grammar section made the one
+   * gesture their phone has for "go back" and lost the question they were on.
+   *
+   * Derived from the overlay state rather than wired into the closes. There are
+   * forty-four `setOverlay` call sites; threading a history call through each
+   * would work until the forty-fifth, and the one that forgot would be a Back
+   * press that did nothing. This watches instead, so a new sheet is covered by
+   * existing.
+   *
+   * **One entry while any sheet is open, not one per sheet.** A few sheets nest
+   * — a word inspected from inside the trail — and `under()` returns the parent
+   * when ✕ is pressed. Back does not walk that stack: it closes the lot. That
+   * is a real difference from ✕ and it is the trade taken deliberately, because
+   * a history stack reconciled against a nesting depth is where this kind of
+   * code goes wrong, and "Back dismisses the modal" is what the platform means
+   * anyway.
+   *
+   * `pushed` is what keeps it honest in the other direction: without it, a close
+   * with no entry of ours behind it would call `history.back()` and leave the
+   * app — the exact bug being fixed, arrived at from the other side.
+   */
+  const pushed = useRef(false);
+  const fromPop = useRef(false);
+
+  useEffect(() => {
+    const onPop = () => {
+      // Our entry is already gone by the time this runs, so nothing here may
+      // pop again; `fromPop` tells the effect below the same thing.
+      if (!pushed.current) return;
+      pushed.current = false;
+      fromPop.current = true;
+      setOverlay(null);
+    };
+    addEventListener("popstate", onPop);
+    return () => removeEventListener("popstate", onPop);
+  }, []);
+
+  useEffect(() => {
+    if (fromPop.current) {
+      fromPop.current = false;
+      return;
+    }
+    if (overlay && !pushed.current) {
+      pushed.current = true;
+      history.pushState({ sheet: true }, "");
+    } else if (!overlay && pushed.current) {
+      pushed.current = false;
+      history.back();
+    }
+  }, [overlay]);
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState("");
   // What has been picked out on the question in hand. It rides here rather

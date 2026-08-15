@@ -273,6 +273,12 @@ beforeEach(() => {
   // failure of whatever ran next. Only `spyOn` spies are touched: the module
   // factories above are `vi.mock` and are not restorable.
   vi.restoreAllMocks();
+  // Every test shares one jsdom document and therefore one history. The app
+  // marks its own entries so Back knows what is its to pop, and a mark left by
+  // the previous test would be read as this one's. There is no way to truncate
+  // the stack, but the current entry's state can be cleared, which is what the
+  // app actually reads.
+  history.replaceState(null, "");
 });
 
 describe("the study loop", () => {
@@ -4543,5 +4549,84 @@ describe("the grammar index filter", () => {
     // The family headings carry "N topics · M% mastered"; their return is how
     // the index says it is whole again.
     expect(within(sheet).getAllByText(/topics/).length).toBeGreaterThan(0);
+  });
+});
+
+/**
+ * The system Back button.
+ *
+ * There was no History API use anywhere, so on Android in an installed
+ * standalone PWA the Back gesture closed the app rather than the sheet that was
+ * over the question.
+ */
+describe("closing a sheet with Back", () => {
+  /** Past the sheet a never-graded topic opens by itself, to a settled state. */
+  const settle = async (user: ReturnType<typeof userEvent.setup>) => {
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    await waitFor(() => expect(screen.queryByRole("dialog")).toBeNull());
+  };
+
+  /** What the browser does on Back: pop the entry, then tell the page. */
+  const pressBack = async () => {
+    await act(async () => {
+      history.back();
+      // jsdom's `back()` does not dispatch the event on its own here.
+      dispatchEvent(new PopStateEvent("popstate", { state: history.state }));
+    });
+  };
+
+  /*
+   * Asserted on `history.state`, not `history.length`. Every test in this file
+   * shares one jsdom document, so the length has run into the hundreds by the
+   * time these run and a `pushState` on a stack that has been walked backwards
+   * replaces the forward entries instead of growing it. The state is the thing
+   * that actually decides whether Back has something of ours to pop.
+   */
+  const marked = () => Boolean((history.state as { sheet?: boolean } | null)?.sheet);
+
+  it("marks an entry as its own when a sheet opens", async () => {
+    const user = userEvent.setup();
+    mount();
+    await settle(user);
+    expect(marked()).toBe(false);
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    expect(marked()).toBe(true);
+  });
+
+  it("closes the sheet rather than leaving the app", async () => {
+    const user = userEvent.setup();
+    mount();
+    await settle(user);
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    expect(screen.getByRole("dialog")).toBeDefined();
+
+    await pressBack();
+    expect(screen.queryByRole("dialog")).toBeNull();
+  });
+
+  it("takes its entry back when the sheet is closed the ordinary way", async () => {
+    const user = userEvent.setup();
+    mount();
+    await settle(user);
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    await user.click(screen.getByRole("button", { name: "Close" }));
+
+    // Otherwise every sheet opened in a session leaves a dead entry behind, and
+    // Back has to be pressed once per sheet ever opened before the app yields.
+    await waitFor(() => expect(marked()).toBe(false));
+  });
+
+  it("does not pop an entry it never pushed", async () => {
+    const user = userEvent.setup();
+    mount();
+    await settle(user);
+    expect(marked()).toBe(false);
+
+    // A close with nothing of ours behind it must not call `history.back()` —
+    // that is the same bug from the other side: it would leave the app.
+    await pressBack();
+    expect(screen.queryByRole("dialog")).toBeNull();
+    expect(marked()).toBe(false);
   });
 });
