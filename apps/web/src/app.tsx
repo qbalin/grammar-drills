@@ -1950,6 +1950,31 @@ export function App({ content, session, storage }: Props) {
         </div>
       </header>
 
+      {/*
+        * What just happened, for a reader who cannot see it happen.
+        *
+        * Answering → graded → landed replaces the whole `.study` subtree, and
+        * it did so silently: the only live region in the app was the toast, so
+        * a screen reader gave no sign that submitting had produced anything.
+        * The student's own answer and the reference are both on screen at that
+        * point and both are readable — what was missing was any signal to go
+        * and read them.
+        *
+        * `polite` rather than `assertive`, because none of this interrupts
+        * anything; and one short line rather than the screen's contents, since
+        * the contents are in the document and announcing them twice is worse
+        * than announcing them once.
+        */}
+      <p className="visually-hidden" role="status">
+        {phase.t === "graded"
+          ? "Answer shown beside the reference. Grade yourself 1 to 4."
+          : phase.t === "landed"
+            ? "Round finished."
+            : phase.t === "answering"
+              ? `Question ${qIndex + 1} of ${test?.questions.length ?? 0}.`
+              : ""}
+      </p>
+
       <div className="study">
         {phase.t === "answering" && question && (
           <Answering

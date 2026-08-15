@@ -3,6 +3,7 @@ import {
   useRef,
   useState,
   type MouseEvent as ReactMouseEvent,
+  type KeyboardEvent as ReactKeyboardEvent,
   type PointerEvent as ReactPointerEvent,
   type ReactNode,
 } from "react";
@@ -127,11 +128,61 @@ export function Sheet({
     return () => removeEventListener("keydown", onKey);
   }, [onClose]);
 
+  /**
+   * Make `aria-modal` true.
+   *
+   * It has said so since this component was written, and it was not: nothing
+   * was focused when a sheet opened, Tab walked straight out of it into the
+   * study screen underneath, and closing left focus on `<body>` so the next Tab
+   * started again from the top of the document. A student reading the grammar
+   * with a keyboard was tabbing through a question they could not see.
+   *
+   * Three things, in the order they matter. **Focus goes in** — to the panel
+   * itself rather than to the first control, because the first control is the
+   * close button and a sheet that opens by announcing "Close" has buried its own
+   * contents. `tabIndex={-1}` makes it focusable without putting it in the tab
+   * order. **Focus stays in**, wrapping at both ends. **Focus goes back** to
+   * whatever opened the sheet, which is the whole reason a person can find their
+   * place again; and only if that element is still on the page, since the
+   * gesture that opened a sheet is sometimes the last thing a screen does.
+   *
+   * Two sheets focus a field of their own on open — recording a word, writing a
+   * card — and they still win: their effect runs after this one.
+   */
+  const panel = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const opener = document.activeElement as HTMLElement | null;
+    panel.current?.focus?.();
+    return () => {
+      if (opener?.isConnected) opener.focus?.();
+    };
+  }, []);
+
+  const trap = (e: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (e.key !== "Tab" || !panel.current) return;
+    const stops = panel.current.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    );
+    if (stops.length === 0) return;
+    const first = stops[0];
+    const last = stops[stops.length - 1];
+    // Leaving by the front goes to the back and the other way about. The panel
+    // itself is `tabindex="-1"` so it is never one of the stops, which is what
+    // makes the first Tab out of it land on `first` rather than nowhere.
+    if (e.shiftKey && (document.activeElement === first || document.activeElement === panel.current)) {
+      e.preventDefault();
+      last?.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first?.focus();
+    }
+  };
+
   return (
     <>
       <div className="sheet-backdrop" onClick={onClose} />
       <div className="sheet" role="dialog" aria-modal="true" aria-label={title}>
-        <div className="sheet__inner">
+        <div className="sheet__inner" ref={panel} tabIndex={-1} onKeyDown={trap}>
           <div className="sheet__grip" />
           <div className="sheet__head">
             {subtitle && <span className="status__ref">{subtitle}</span>}
@@ -200,6 +251,39 @@ export function GradeBar({
 }) {
   const now = new Date();
   const showWhen = schedule && !settled;
+
+  /**
+   * 1–4 grade, which is how the CLI has always done it.
+   *
+   * Grading is the most repeated action in the app — four times a round, every
+   * round — and on the web it needed a mouse or a thumb. The terminal drives
+   * the identical loop entirely from the keyboard, so a desktop student was
+   * getting the worse of two interfaces to the same engine.
+   *
+   * Live only while the bar is on screen, because the handler is this
+   * component's: there is no phase to check and no way for it to fire over a
+   * question that is not yet answered.
+   *
+   * Three things it declines. A modifier, so `⌘1` still switches browser tabs.
+   * A text field, so a `3` typed into an answer or a repo name is a `3`. And an
+   * open sheet — the grade bar is still mounted underneath one, and reading the
+   * grammar is not a moment to be one keystroke from scheduling the topic.
+   */
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const at = document.activeElement;
+      if (at instanceof HTMLInputElement || at instanceof HTMLTextAreaElement) return;
+      if (at instanceof HTMLElement && at.isContentEditable) return;
+      if (document.querySelector('[role="dialog"]')) return;
+      const rating = Number(e.key);
+      if (!Number.isInteger(rating) || rating < 1 || rating > 4) return;
+      e.preventDefault();
+      onGrade(rating as Rating);
+    };
+    addEventListener("keydown", onKey);
+    return () => removeEventListener("keydown", onKey);
+  }, [onGrade]);
   // A fragment rather than a wrapper: `.grades` is a flex child of `.study`,
   // and boxing it would put a block between them for one line of text.
   return (
@@ -215,6 +299,10 @@ export function GradeBar({
           <button
             key={rating}
             className={`grade grade--${rating}`}
+            // Announced rather than printed. The four buttons already carry a
+            // label and an interval on a phone-width row, and a third line of
+            // digits would be for the one reader who cannot see them anyway.
+            aria-keyshortcuts={String(rating)}
             onClick={() => onGrade(rating)}
           >
             <span className="grade__label">{label}</span>

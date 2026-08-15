@@ -4370,3 +4370,116 @@ describe("marking the target language", () => {
     expect(english?.closest("[lang]")?.getAttribute("lang")).not.toBe(l2());
   });
 });
+
+/**
+ * `aria-modal="true"` made true.
+ *
+ * The attribute has been on the shared `Sheet` since it was written, and none
+ * of what it promises was implemented: nothing took focus, Tab walked out into
+ * the study screen underneath, and closing dropped focus on `<body>`.
+ */
+describe("a sheet as a modal", () => {
+  const openIndex = async (user: ReturnType<typeof userEvent.setup>) => {
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    return screen.getByRole("dialog");
+  };
+
+  it("takes focus when it opens, and the panel rather than its close button", async () => {
+    const user = userEvent.setup();
+    mount();
+    const sheet = await openIndex(user);
+
+    // The panel. Opening by announcing "Close" would bury the contents.
+    expect(sheet.contains(document.activeElement)).toBe(true);
+    expect(document.activeElement?.getAttribute("aria-label")).not.toBe("Close");
+  });
+
+  it("keeps Tab inside it", async () => {
+    const user = userEvent.setup();
+    mount();
+    const sheet = await openIndex(user);
+
+    for (let i = 0; i < 25; i++) {
+      await user.tab();
+      expect(sheet.contains(document.activeElement)).toBe(true);
+    }
+  });
+
+  it("gives focus back to whatever opened it", async () => {
+    const user = userEvent.setup();
+    mount();
+    const opener = screen.getByRole("button", { name: "Grammar index" });
+    opener.focus();
+    await user.click(opener);
+    await user.click(screen.getByRole("button", { name: "Close" }));
+
+    // Without this the next Tab starts again from the top of the document, and
+    // a student has to walk back to where they were.
+    expect(document.activeElement).toBe(opener);
+  });
+});
+
+/**
+ * The loop from the keyboard.
+ *
+ * The CLI drives this identical loop entirely from the keyboard; the web app
+ * had three keys — Cmd+Enter, Escape, and the reader's arrows — so grading, the
+ * most repeated action in the app, needed a mouse or a thumb.
+ */
+describe("grading from the keyboard", () => {
+  it("grades on 1 to 4", async () => {
+    const user = userEvent.setup();
+    mount();
+    // A topic never graded opens its grammar first, and the key is deliberately
+    // inert underneath a sheet — see the last case in this block.
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 1/2`);
+    await user.keyboard("3");
+    await carryOn(user);
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 2/2`);
+  });
+
+  it("says which key each button answers to", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    for (const [i, name] of ["Again", "Hard", "Good", "Easy"].entries()) {
+      const button = screen.getByRole("button", { name: new RegExp(name) });
+      expect(button.getAttribute("aria-keyshortcuts")).toBe(String(i + 1));
+    }
+  });
+
+  it("leaves a digit typed into the answer alone", async () => {
+    const user = userEvent.setup();
+    mount();
+    const box = screen.getByRole("textbox");
+    await user.click(box);
+    await user.keyboard("3");
+
+    // Still writing, and the 3 is in the sentence rather than on the schedule.
+    expect((box as HTMLTextAreaElement).value).toContain("3");
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 1/2`);
+  });
+
+  it("does not grade underneath an open sheet", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    // Revealed, so the grade bar and its handler are genuinely mounted — the
+    // point of the guard, not the absence of a bar. Then read the grammar over
+    // the top of it, which is what a stuck student does.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    expect(screen.getByRole("button", { name: /Good/ })).toBeDefined();
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+
+    await user.keyboard("3");
+
+    // Reading the grammar is not a moment to be one keystroke from scheduling.
+    expect(screen.getByRole("dialog")).toBeDefined();
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 1/2`);
+  });
+});

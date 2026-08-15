@@ -75,9 +75,35 @@ export function QuestionVocabulary({
           ) : null}
           {status !== "loading" &&
             words.map((word) => (
+              /*
+               * A row is reachable and pressable from the keyboard.
+               *
+               * It was a `div` with a hold and a double-click and nothing else,
+               * so recording a word — the one thing this list exists to make
+               * easy — could only be done with a thumb or a mouse.
+               *
+               * Attributes rather than a real `<button>`: the row is a two-column
+               * grid, and a button would bring its own box model to a layout the
+               * English and the citation are aligned in. `role` and `tabIndex`
+               * buy the same announcement and the same focus ring.
+               *
+               * Enter and Space record, matching the hold, because that is the
+               * row's primary action. Inspecting stays a double-click — a second
+               * action on one control has no natural key, and a word can always
+               * be looked up through *Record a word* instead. Space is prevented
+               * so it does not scroll the sheet out from under the press.
+               */
               <div
                 className={`crib-row${isHeld(word.form) ? " crib-row--held" : ""}`}
                 key={word.form}
+                role="button"
+                tabIndex={0}
+                aria-label={`Record ${word.entry?.citation ?? word.form}`}
+                onKeyDown={(e) => {
+                  if (e.key !== "Enter" && e.key !== " ") return;
+                  e.preventDefault();
+                  onHold(word);
+                }}
                 {...hold(word.form, () => onHold(word))}
                 onDoubleClick={() => onInspect(word)}
               >
