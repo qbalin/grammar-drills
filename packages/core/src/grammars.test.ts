@@ -143,9 +143,24 @@ describe("a pack with more than one grammar", () => {
     s.gradeTopic("tg-020-nouns", 3);
     const p = s.progress();
     expect(Object.keys(p.topicCards)).toEqual(["tg-020-nouns"]);
-    expect(Object.keys(p.topicMastery)).toEqual(["tg-020-nouns"]);
     // Nothing anywhere is filed under a second-book id.
     expect(JSON.stringify(p)).not.toContain("sg-100");
+  });
+
+  it("files a star under the primary topic, whichever book set it", () => {
+    // Stars go where everything else here goes. Set through the second book,
+    // read back through the first, and nothing on disk names the second.
+    const s = session();
+    s.setGrammar("second");
+    s.star("sg-100-nouns-a");
+    expect(s.progress().starred).toEqual(["tg-020-nouns"]);
+    expect(JSON.stringify(s.progress())).not.toContain("sg-100");
+
+    s.setGrammar("tg");
+    expect(s.isStarred("tg-020-nouns")).toBe(true);
+    s.unstar("tg-020-nouns");
+    s.setGrammar("second");
+    expect(s.isStarred("sg-100-nouns-a")).toBe(false);
   });
 
   it("shows work done in one book when the other is opened", () => {
@@ -158,10 +173,11 @@ describe("a pack with more than one grammar", () => {
 
     s.setGrammar("second");
     const map = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
-    expect(map.get("sg-100-nouns-a")!.mastery).toBe(s.progress().topicMastery["tg-020-nouns"]);
+    expect(map.get("sg-100-nouns-a")!.scheduled).toBe(true);
     expect(map.get("sg-100-nouns-a")!.answered).toBe(1);
     // The other book's topic that teaches nothing yet is untouched.
-    expect(map.get("sg-200-verbs")!.mastery).toBeUndefined();
+    expect(map.get("sg-200-verbs")!.scheduled).toBe(false);
+    expect(map.get("sg-200-verbs")!.answered).toBe(0);
   });
 
   it("moves two topics of one book in lockstep when they teach one topic of the other", () => {
@@ -173,9 +189,18 @@ describe("a pack with more than one grammar", () => {
     const s = session();
     s.setGrammar("second");
     s.gradeTopic("tg-020-nouns", 3);
-    const map = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
-    expect(map.get("sg-100-nouns-a")!.mastery).toBe(map.get("sg-110-nouns-b")!.mastery);
-    expect(map.get("sg-100-nouns-a")!.due).toBe(map.get("sg-110-nouns-b")!.due);
+    const graded = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
+    expect(graded.get("sg-100-nouns-a")!.due).toBe(graded.get("sg-110-nouns-b")!.due);
+    expect(graded.get("sg-100-nouns-a")!.answered).toBe(
+      graded.get("sg-110-nouns-b")!.answered,
+    );
+
+    // And the star with them: it is filed under the one topic they share, so
+    // marking either marks both.
+    s.star("sg-100-nouns-a");
+    const starred = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
+    expect(starred.get("sg-100-nouns-a")!.starred).toBe(true);
+    expect(starred.get("sg-110-nouns-b")!.starred).toBe(true);
   });
 
   it("draws a topic the crosswalk does not reach as having nothing to serve", () => {
@@ -184,8 +209,13 @@ describe("a pack with more than one grammar", () => {
     const orphan = s.grammarMap().find((t) => t.sectionId === "sg-300-orphan")!;
     expect(orphan.hasTests).toBe(false);
     expect(orphan.questions).toBe(0);
-    expect(orphan.mastery).toBeUndefined();
+    expect(orphan.scheduled).toBe(false);
     expect(s.serveTest("sg-300-orphan")).toBeUndefined();
+    // And it cannot be starred: there is no primary topic to file the mark
+    // under, which is the same silence as its having no questions.
+    s.star("sg-300-orphan");
+    expect(s.isStarred("sg-300-orphan")).toBe(false);
+    expect(s.progress().starred).toBeUndefined();
     /*
      * And it is *not* a reading page, which looks identical from here and is
      * not the same thing at all. This topic is grammar the table has not got to
@@ -197,23 +227,20 @@ describe("a pack with more than one grammar", () => {
     expect(orphan.readingOnly).toBe(false);
   });
 
-  it("keeps a cursor per book, and never follows one into the wrong syllabus", () => {
+  it("keeps a run on the topic it was started on when the book is switched", () => {
+    // There is no cursor to follow into the wrong syllabus any more — the run
+    // is filed under the section it was started on, and switching books is a
+    // view change. What must not happen is the switch quietly ending it.
     const s = session();
-    expect(s.bookCursor()).toBe("tg-020-nouns");
-    s.advanceCursor();
-    expect(s.bookCursor()).toBe("tg-030-verbs");
-
+    s.drillTopic("tg-020-nouns");
     s.setGrammar("second");
-    // Not `tg-030-verbs`, which is not a section of this book.
-    expect(s.bookCursor()).toBe("sg-100-nouns-a");
-    s.advanceCursor();
-    expect(s.bookCursor()).toBe("sg-110-nouns-b");
-
-    s.setGrammar("tg");
-    expect(s.bookCursor()).toBe("tg-030-verbs");
+    expect(s.practiseRun()?.sectionId).toBe("tg-020-nouns");
+    expect(s.next(new Date(), "explore")).toEqual({
+      kind: "drill", sectionId: "tg-020-nouns",
+    });
   });
 
-  it("counts a further grammar's topic mastered only when every topic it teaches is", () => {
+  it("takes a further grammar's section out of the pile by every topic it teaches", () => {
     const wide: ContentData = {
       ...data,
       crosswalk: {
@@ -226,10 +253,14 @@ describe("a pack with more than one grammar", () => {
     const s = new Session(new Content(wide, profile));
     s.setGrammar("second");
     s.gradeTopic("tg-020-nouns", 4);
-    s.gradeTopic("tg-020-nouns", 4);
-    s.gradeTopic("tg-020-nouns", 4);
-    // One of its two topics is finished; the section is not.
-    expect(s.grammarMap().find((t) => t.sectionId === "sg-100-nouns-a")!.mastery).toBeLessThan(4);
+    s.gradeTopic("tg-030-verbs", 4);
+    expect(s.grammarMap().find((t) => t.sectionId === "sg-100-nouns-a")!.scheduled).toBe(true);
+
+    // Both cards go, not the first one found: the section is one page to the
+    // student, and a half-dismissed one would go on coming due.
+    s.dismissTopic("sg-100-nouns-a");
+    expect(s.progress().topicCards).toEqual({});
+    expect(s.grammarMap().find((t) => t.sectionId === "sg-100-nouns-a")!.scheduled).toBe(false);
   });
 
   it("reads a progress file that predates any of this as the primary book", () => {
@@ -237,7 +268,7 @@ describe("a pack with more than one grammar", () => {
       version: 1, frontier: null, topicCards: {}, topicMastery: {},
       vocabCards: {}, seenTests: {}, attempts: {}, newTopicsIntroduced: 0,
       updatedAt: new Date().toISOString(),
-    });
+    } as never);
     expect(s.grammarId).toBe("tg");
     expect(s.grammarMap().map((t) => t.sectionId)).toEqual([
       "tg-020-nouns", "tg-030-verbs",

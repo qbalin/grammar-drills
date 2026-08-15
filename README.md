@@ -57,10 +57,9 @@ progress; there is no in-app switcher.
 works with no signal.
 
 Two errands, and a switch between them: **Review** serves what is due, and
-**Explore** reads the book. It opens on the reviews whenever any are waiting and
-on the book when none are, and it throws itself back to the book as soon as the
-pile is cleared. Where the book reads from is yours to say — see
-[Three ways forward](#three-ways-forward).
+**Explore** serves the topic you chose. It opens on the reviews whenever any are
+waiting, and with nothing waiting it asks which topic — see
+[One way forward](#one-way-forward).
 
 ## The end of a round
 
@@ -72,24 +71,22 @@ the schedule ever produces — was a 2.6-second toast over a question you had ju
 been handed.
 
 So the loop stands still. The last grade of a round lands on a card naming the
-topic, the four cells its mastery is drawn in with the one this round moved
-marked, and when it comes back. **Keep going** serves the next question and
+topic and when it comes back. **Keep going** serves the next question and
 **Stop here** opens the schedule — there is no session to end, and what somebody
 stopping wants is the dates. The burst fires over this rather than over what
 came after it.
 
-It says three things and refuses a fourth. Not how the round was graded: every
+It says two things and refuses a third. Not how the round was graded: every
 grade in it has already been given and already moved the schedule, and a screen
 that added them up would turn four self-assessments into a score, in a loop whose
-whole design is that nothing marks you. A cell that goes *out* is drawn as
-plainly as one that lights, for the same reason — it is where the topic stands,
-not a verdict on the round, and a card that hid the fall could only say good
-news.
+whole design is that nothing marks you. It used to say a third thing — four
+cells drawing where the topic's mastery stood, and which of them this round
+moved. That score is gone; see [One way forward](#one-way-forward).
 
 A grade that also empties the pile gets **one** card, not two to dismiss in a
-row: the same card, a line saying so, and *Read on in the book* where *Keep
-going* stood. A word that empties it gets the card with no topic on it, since a
-vocabulary card is one question and has no round behind it.
+row: the same card and a line saying so. A word that empties it gets the card
+with no topic on it, since a vocabulary card is one question and has no round
+behind it.
 
 **And the burst has a top end.** It has fired on every round since it stopped
 counting answers — about every four questions, which is a cadence rather than a
@@ -282,8 +279,8 @@ none of them is a dead end:
   answer is still there, and nothing has been graded.
 - **`^Z`** (`u` on any screen without a text box) takes back the self-grade just
   given. The question comes back exactly as you left it, and so does everything
-  the grade touched — the card, the mastery score, the answer trail, the book
-  cursor, and which errand you were on. Re-grading then counts once, not twice.
+  the grade touched — the card, the answer trail, the run in flight, and which
+  errand you were on. Re-grading then counts once, not twice.
 
 One grade deep, and only the most recent: this is an undo for the keypress you
 just regret, not a history to walk back through. The web app has the same three,
@@ -318,10 +315,9 @@ another pick. The **→** in its head is the way from the section you have read 
 what can be done with it, so studying what you just found is one tap rather than
 a walk back through the index.
 
-The CLI's two index keys become three buttons on the topic sheet — **Study from
-here**, **Practise these 17** and **Book order** — so all three ways of reading
-the book are chosen in one place, and choosing one is also how you leave the
-last.
+The CLI's index keys become buttons on the topic sheet — **Practise these 17**
+leading, then **Read § 63-66**, the star, and **Stop reviewing this topic** at
+the foot where a deletion belongs.
 
 The status bar leads with the two errands: **Explore** and **Review**, both
 labels always on screen, the live one pressed. Three links used to say the same two things one at
@@ -330,14 +326,16 @@ so whichever state you were not in was invisible, and the one you were in looked
 like the only one there was.
 
 Beside the switch the bar names **what is on screen and why** in one word —
-`review`, `new`, `drill`, `revisiting`, `vocabulary` — and a `drill` carries
-its run's count with it, because for a long time it named exactly
-one of them. A card come back on schedule, a topic you asked to stay on and a
-topic the book has come back to are the same four sentences under the same
-title, and only *new* was ever said out loud, so "why am I being shown this"
-had no answer on screen. It is written on the round rather than derived from
-the scheduler, which is what makes it survive a reload: `next` says why once,
-and a resumed round never asks it again. The line under it says what is being
+`review`, `drill`, `vocabulary` — and a `drill` carries its run's count with it.
+A card come back on schedule and a topic you asked to stay on are the same four
+sentences under the same title, and neither was ever said out loud, so "why am I
+being shown this" had no answer on screen. (`new` and `revisiting` were two more,
+for the book's walk reaching a topic for the first time and coming back round to
+one already graded. Neither is a *reason* any more — a topic is on screen because
+you asked for it — though whether the ground is new still decides whether the
+grammar is shown before the questions.) It is written on the round rather than
+derived from the scheduler, which is what makes it survive a reload: `next` says
+why once, and a resumed round never asks it again. The line under it says what is being
 worked on and nothing else — a vocabulary card reads `Vocabulary`, where the
 grammar topic answered before it used to stand, reference, prose link and all.
 
@@ -480,68 +478,84 @@ has switched to costs nothing.
 
 [pg44653]: https://www.gutenberg.org/ebooks/44653
 
-## Three ways forward
-
-A syllabus of 114 topics is walked by more than one kind of student, and for a
-long time it was walked by only one: the next topic was the first one in book
-order you had not touched, so every route through the book ended up back at
-chapter one.
+## One way forward
 
 **Two errands, and a switch.** *Review* serves what is due and nothing else;
-*Explore* reads the book and nothing else. It opens on the reviews whenever any
-are waiting and on the book when none are, switching is immediate rather than
-"after this round", and clearing the last review throws the switch back to the
-book by itself. Which errand you are on is not written down: a pile of reviews
-is exactly the thing a saved preference should not be able to hide, so every
-launch puts it back in front of you. With nothing due the switch greys out —
-there is no pile to go back to. The accent goes green while reviewing, the same
-variable every button and meter already reads, so the app is a different colour
-for as long as it is a different errand.
+*Explore* serves the topic you chose and nothing else. It opens on the reviews
+whenever any are waiting, switching is immediate rather than "after this round",
+and clearing the last review throws the switch back by itself. Which errand you
+are on is not written down: a pile of reviews is exactly the thing a saved
+preference should not be able to hide, so every launch puts it back in front of
+you. With nothing due the switch greys out — there is no pile to go back to. The
+accent goes green while reviewing, the same variable every button and meter
+already reads, so the app is a different colour for as long as it is a different
+errand.
 
-Exploring walks a **cursor** through the book, and it steps forward one section
-per round whatever the grade was, and whether or not the round was finished.
-That last part is the whole design: a rule like "the first topic not yet
-mastered" cannot move past a topic that is going badly, which is the one topic a
-student most needs to be able to leave. Mastery decides only where the cursor is
-*put*. Three things put it there, and they are remembered until another is
-chosen:
-
-**Book order** — the default, and the quick refresher. Drops the cursor on the
-earliest section still short of the top band and reads on from there.
-
-**Study from here** — the same walk begun where you say, set by `f` on the index
-(web: *Study from here*). Knowing your declensions and wanting to start at the
-verbs is the case this exists for. It reads on one section to the next from
-there, across the family boundaries and off the end of the book, where it wraps
-back to whatever it left behind. The sections you skipped stay *unstudied* on
-the index rather than being marked known — they are.
-
-**Practise these** — Enter on the index (web: *Practise these 17*). A section
-ships 19–93 questions (median 24) in tests of four, so doing well on one test
-and being moved on is not the same as having the topic. This stays put and works
-out the questions you have never answered; once there are none of those, asking
+**You pick the topic.** *Practise these* on the index — Enter in the terminal —
+is the only way onto one, and the run stays there until you pick another. A
+section ships 19–93 questions (median 24) in tests of four, so doing well on one
+test and being moved on is not the same as having the topic. The run works out
+the questions you have never answered; once there are none of those, asking
 again takes the whole bank a second time, leading with the quotations and then
-with whatever you have not seen for longest. When the run is worked out the loop
-**stops and says so**
-rather than sliding onto the next topic: staying here was an instruction, and
-that is not how one ends. The status bar carries the run's count while it lasts,
-and it leaves the book cursor alone, so the detour costs you nothing.
+with whatever you have not seen for longest. When it is worked out the loop
+**stops and says so** — *Practise all 24 again*, or *Pick another topic*.
+Staying here was an instruction, and sliding off it is not how one ends. The
+status bar carries the run's count while it lasts.
+
+With nothing due and no topic chosen, the app asks for one rather than choosing.
+
+**There used to be a cursor**, and two more ways forward that placed it: *Book
+order* dropped it on the earliest section still short of the top mastery band,
+*Study from here* dropped it where you said, and from either it read on one
+section per round whatever the grade was. It worked, and it decided what you
+studied. A student who wants to drill the ablative absolute got the ablative
+absolute once and then the next section, and the way to stay was one of three
+co-equal buttons rather than the way the app worked. Now staying is what
+studying *is*, and moving on means coming back to the index and choosing.
+
+**And the percentage is gone with it.** Each topic used to carry a mastery score
+from 1 to 4, moved by your self-grades (good/easy `+1`, hard `+0.5`, again
+`−1`), drawn as a per-family bar, a ring over the whole syllabus, and four cells
+on the card at the end of a round. Three good answers filled it, so in practice
+it read 0% or 100% and almost nothing in between: what it measured was how many
+topics you had *visited*, in the clothes of how well they had gone — and it
+rewarded touching every topic once over working one out. Its only other job was
+placing the cursor, and there is no cursor. What is drawn instead is what can be
+counted: `9/24 questions answered`, `due now`, and `failed 6 times` where FSRS
+has recorded a topic going badly.
+
+Nothing about the schedule changed. You still grade yourself 1–4 and that still
+drives [FSRS](https://github.com/open-spaced-repetition/ts-fsrs); the score that
+went was a second, parallel number that no review ever read.
+
+**Two marks of your own.** A topic can be **starred** — it pins to a shelf above
+the families on the index, in book order, and it is the one fact about a topic
+the app does not derive from your record of study. And a topic that keeps coming
+back when it is not what you need can be taken **out of the review pile**:
+*Stop reviewing this topic* on its sheet, `x` twice on the terminal's index, or
+`⊘ stop reviewing this` on the review itself, which is the moment you actually
+want it. It deletes the scheduling card and nothing else — the answers stay, the
+star stays — and practising the topic puts it back on the next grade. The
+grammar half of *Delete this word*, and it deletes as little.
+
+The app still never suspends a topic on your behalf. `failed 6 times` is a count
+and a suggestion; taking it out of the rotation is your decision to make, which
+is the whole difference.
 
 **The quotations come first.** Most of what a pack asks was written for this
 app; some of it quotes an author, and that half is much the smaller — 2,387 of
 Latin's 8,984 questions, 1,109 of Greek's 27,002, and none at all under the
 declensions. So a topic hands its tests over in an order rather than picking one
 each time: every quotation it holds, then everything else, and when the topic
-has been through, both halves shuffled and round again. It orders every route
-above and reviews besides, because an order withholds nothing — turning it off
-in Settings shuffles the topic together instead, and *explore only quoted
-sentences*, which does withhold, is the separate setting above it.
+has been through, both halves shuffled and round again. It orders runs and
+reviews alike, because an order withholds nothing — turning it off in Settings
+shuffles the topic together instead, and *explore only quoted sentences*, which
+does withhold, is the separate setting above it.
 
 **One round of questions is one review.** A served test is four sentences on one
 topic, and grading each of them used to drive four FSRS reps into the same card
 in a single sitting. The round is the unit instead, graded by the worst answer
-in it — a topic you get three of four right on is not one you have. Mastery
-still moves per question: it counts what you got right.
+in it — a topic you get three of four right on is not one you have.
 
 ## The grammar index
 
@@ -550,22 +564,22 @@ one cell per topic. (One cell per topic for all 114 at once would need ~136
 columns.)
 
 ```
-Grammar index                                     7% mastered overall
+Grammar index                                    ★ 3 starred · 5 due
 
-  Nouns                       ███░░░  44%   9 topics
-▸ Adjectives & adverbs        ██░░░░  27%   5 topics
-    ░░▓░░  topic 3 of 5
+  Nouns                       ★1 2 due    9 topics
+▸ Adjectives & adverbs        ★2          5 topics
+    ▓▓★░░  topic 3 of 5
       ▲
-  Pronouns                    ░░░░░░   0%   9 topics
-  Verb forms                  ░░░░░░   0%  35 topics
-  Particles                   █░░░░░  22%   3 topics
-  Noun syntax                 █░░░░░  18%  19 topics
-  Adjective & pronoun syntax  ░░░░░░   0%  13 topics
-  Verb syntax                 ░░░░░░   0%  30 topics
-  Word-order & style          ░░░░░░   0%  12 topics
+  Pronouns                                9 topics
+  Verb forms                  1 due      35 topics
+  Particles                               3 topics
+  Noun syntax                 ★1         19 topics
+  Adjective & pronoun syntax             13 topics
+  Verb syntax                            30 topics
+  Word-order & style                     12 topics
 
 § 63-66 Adjectives of the First and Second Declensions
-not started
+★ starred · 9/24 questions · due
 In these the Masculine is declined like hortus, puer, or ager, the
 Feminine like porta, and the Neuter like bellum. Thus, Masculine like
 hortus:—
@@ -576,7 +590,18 @@ press g to read § 63-66 in full
 
 One family per line is what makes `↑ ↓` legible — three to a row, "down" moved
 sideways two times out of three — and the whole selected line is highlighted, not
-just its name. Every number says what it counts.
+just its name.
+
+Every number is one you can act on. Bars and percentages stood in those columns
+for a long time, over the mastery score described above, and what they reported
+was how many topics had been visited. What is there instead is the shortlist and
+the pile: how many of a family's topics you starred, and how many are due. A
+family with neither shows nothing rather than two zeroes.
+
+The cells are the same four facts: `★` starred, `█` due, `▓` answered before,
+`░` never met, and `·` nothing to serve. The star outranks due, because it is
+your own mark and a starred topic that is also due is still first of all a
+starred one.
 
 Below the cursor sits the opening of that section, **the same wrapped lines for
 every topic** — five of them where the terminal is tall enough, fewer on a short
@@ -584,29 +609,27 @@ one, never varying with the topic. Clipped by source line it would be a
 paragraph of prose for one topic and a handful of words for a paradigm table, and
 the map would change height under you as you walked it.
 
-Each topic carries a **mastery score from 1 (not mastered) to 4 (mastered)**,
-moved by your self-grades: good/easy `+1`, hard `+0.5`, again `−1`. A single
-lucky answer therefore can't mark a topic mastered, and one bad day can't wipe
-one. Beside the score
-sits **how much of the topic's bank you have answered** — `9/24 questions` — and
-they are different questions: a topic can be mastered on the four sentences it
-has served and still hold twenty you have never seen.
+Beside the § reference sits **how much of the topic's bank you have answered** —
+`9/24 questions` — which is a count rather than a verdict: four sentences served
+never swept a bank of twenty-odd. `failed 6 times` joins it once FSRS has
+recorded a topic going badly.
 
 `← →` walks the cursor along the bar (including topics you have never met),
 `↑ ↓` cycles between families and wraps at both ends, `g` opens the selected
-section in full (scrolling as above, `Esc` back to the index), and two keys act on
-the topic under the cursor:
+section in full (scrolling as above, `Esc` back to the index), and three keys act
+on the topic under the cursor:
 
 - **Enter** stays on it and works a run of its questions out.
-- **`f`** takes the book up from it and reads on from there.
+- **`*`** stars it, or takes the star off.
+- **`x`**, twice, takes it out of the review pile.
 
 The map opens from **every** screen, the way the web app's `▦` button does —
 mid-answer (`^N`, since the letters are the answer's), on a vocabulary card and
 from the schedule. Whatever it was opened over is what `Esc` puts back,
 half-written answer and all.
 
-Both keys cost something from a half-written answer, since they throw it away,
-so from there each asks first and a second press goes ahead —
+Enter costs something from a half-written answer, since it throws it away, so
+from there it asks first and a second press goes ahead —
 
 ```
 § 100 Conjugation of sum
@@ -614,7 +637,8 @@ Press Enter again to leave the answer you are writing and practise “Conjugatio
 ```
 
 — and moving the cursor cancels it, because the warning named a topic and `←`
-names a different one.
+names a different one. `x` asks twice for its own reason: it is a deletion, the
+idiom the vocabulary list already uses.
 
 ## Progress storage
 
@@ -692,14 +716,20 @@ derived rather than stored. What is left for `seenTests` is which of two tests
 was served longer ago, which is what a practice run breaks a tie with, and a cap
 is fine for that.)
 
-Where you are is in there too: `bookAt` (the cursor's section), `practise` (the
-run in flight, if any — together these are which of the
-[three ways forward](#three-ways-forward) is running) and `openRound` (the round
+Where you are is in there too: `practise` (the run in flight, if any — see
+[One way forward](#one-way-forward)), `starred` (the topics you marked, filed
+under the primary grammar's ids like everything else) and `openRound` (the round
 of questions in flight, so closing the app mid-test still leaves the topic with
 exactly one review). Which *errand* you are on is deliberately not: it resets on
 every launch, so a waiting pile cannot be hidden from you by a saved preference.
-A file written before any of this has none, and opens on the earliest section
-short of the top band — which is what it was doing anyway.
+
+A file written before any of this opens with no topic chosen and keeps
+everything that matters: its cards, its answer trail, its vocabulary. What it
+loses are the three fields the book's walk was made of — `bookAt`,
+`bookAtByGrammar` and the `topicMastery` score that placed the cursor — which
+are dropped rather than migrated, because there is nothing left for them to
+become. See `LegacyProgress` in `packages/core/src/types.ts`, which records what
+each of them was and what happened to it.
 
 ## Generation (offline, one-time — not shipped)
 

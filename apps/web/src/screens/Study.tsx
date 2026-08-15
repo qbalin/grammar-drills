@@ -6,7 +6,7 @@ import type {
   VocabCardState,
   VocabContext,
 } from "@lang-tutor/core";
-import { comesBack, CopyButton, GradeBar, l2Attrs, Ring, Sentence } from "../ui.js";
+import { comesBack, CopyButton, GradeBar, l2Attrs, Sentence } from "../ui.js";
 import { profile } from "../pack.js";
 
 /**
@@ -130,6 +130,8 @@ export function Graded({
   onInspectWord,
   onReadGrammar,
   onToggleMarking,
+  onDismiss,
+  dismissing,
   onMark,
   onCopy,
   vocabulary,
@@ -176,6 +178,13 @@ export function Graded({
   onInspectWord: (word: string) => void;
   onReadGrammar: () => void;
   onToggleMarking: () => void;
+  /**
+   * Take this topic out of the review pile. Absent on a round that is not a
+   * review, where there is no pile to take it off.
+   */
+  onDismiss?: () => void;
+  /** Whether the first press has been given and the next one goes ahead. */
+  dismissing?: boolean;
   /** A word tapped while marking: which text, and the word's index in it. */
   onMark: (field: keyof AttemptMarks, index: number) => void;
   /**
@@ -304,6 +313,22 @@ export function Graded({
         <button onClick={onToggleMarking} aria-pressed={marking}>
           {marking ? "✓ done marking" : "✱ mark"}
         </button>
+        {/*
+         * Only on a review, and that is the whole of the rule: this is the
+         * moment a topic has just proved it is not what the student needs, in
+         * the same way `✎ edit this word` is on the vocabulary card that has
+         * just proved it. On a run of practice there is nothing to stop — the
+         * topic was chosen a moment ago, and leaving is picking another.
+         *
+         * Two presses, like every other deletion here. The first press says
+         * what will happen; the topic is not hidden, only taken off the pile,
+         * and a grade puts it back.
+         */}
+        {onDismiss && (
+          <button onClick={onDismiss}>
+            {dismissing ? "⊘ confirm — stop reviewing" : "⊘ stop reviewing this"}
+          </button>
+        )}
       </div>
       <GradeBar onGrade={onGrade} schedule={schedule} settled={settled} />
     </>
@@ -486,44 +511,46 @@ export function VocabReview({
 }
 
 /**
- * The book is worked out. A rest screen rather than an empty one: the work is
- * finished, which is the good outcome, and the index is right there for anyone
- * who wants to push on anyway.
+ * Nothing on the table: no topic has been chosen, and nothing is due.
  *
- * Only ever reached from exploring. Clearing the reviews throws the switch
- * back to the book rather than stopping, so "nothing due" is a thing the app
- * passes through and never a screen it leaves you on.
+ * This used to say "the book is worked out", because there was always something
+ * to hand over — a cursor walked the syllabus and the only way to run out was to
+ * finish it. Nothing walks now. The app studies the topic you asked for, so with
+ * no topic asked for the honest screen is the one that asks, and the index leads
+ * because it is the answer rather than a consolation.
+ *
+ * Only ever reached from exploring. Clearing the reviews throws the switch here
+ * rather than leaving a student on a rest screen beside a pile of nothing.
  */
 export function Rest({
-  overall,
   nextDue,
   onOpenMap,
   onOpenSchedule,
 }: {
-  overall: number;
   nextDue?: Date;
   onOpenMap: () => void;
   onOpenSchedule: () => void;
 }) {
   return (
     <div className="centered">
-      <Ring percent={overall} />
-      <h1>The book is worked out.</h1>
+      <h1>Pick a topic.</h1>
       <p>
+        Nothing is due, and no topic is being practised. Choose one from the
+        index and stay on it for as long as you like.
         {nextDue
-          ? `The next topic comes back ${nextDue.toLocaleDateString(undefined, {
+          ? ` The next review comes back ${nextDue.toLocaleDateString(undefined, {
               weekday: "long",
               month: "short",
               day: "numeric",
             })}.`
-          : "Well done."}
+          : ""}
       </p>
       <div
         className="actions"
         style={{ width: "100%", maxWidth: "18rem", flexDirection: "column" }}
       >
-        <button className="btn" onClick={onOpenMap}>
-          Explore the grammar index
+        <button className="btn btn--primary" onClick={onOpenMap}>
+          Grammar index
         </button>
         <button className="btn" onClick={onOpenSchedule}>
           See what's coming
@@ -540,20 +567,19 @@ export function Rest({
  * instruction, and sliding quietly off it is not how an instruction ends — the
  * student would find a different topic on screen and have to work out that
  * anything had happened. It is also the one moment when "what now" is a real
- * question, so it is asked, with the three answers to it.
+ * question, so it is asked, with the two answers to it: this topic again, or a
+ * different one. There is no third, because there is nowhere else to be sent.
  */
 export function Practised({
   title,
   total,
   onAgain,
-  onBook,
   onOpenMap,
 }: {
   title: string;
   /** How many questions the bank holds — what another run would be for. */
   total: number;
   onAgain: () => void;
-  onBook: () => void;
   onOpenMap: () => void;
 }) {
   return (
@@ -569,66 +595,10 @@ export function Practised({
         <button className="btn btn--primary" onClick={onAgain}>
           Practise all {total} again
         </button>
-        <button className="btn" onClick={onBook}>
-          Back to the book in order
-        </button>
-        <button className="btn btn--quiet" onClick={onOpenMap}>
-          Grammar index
+        <button className="btn" onClick={onOpenMap}>
+          Pick another topic
         </button>
       </div>
-    </div>
-  );
-}
-
-/**
- * The four cells a topic's mastery is drawn in.
- *
- * The 1–4 score, and no number beside it. The index's percentage is a mean over
- * a *population* — the whole syllabus, or one family — and a single topic has no
- * population to average; drawn per topic, the steps mastery actually moves in
- * (±1 for good, ±0.5 for hard) become jumps of 33% and 17%, which reads as a
- * fault rather than as a step. The raw 1–4 is no better: it is not a figure
- * anybody has been taught to read. So the movement is the cell that changed
- * rather than a subtraction the student is left to do.
- *
- * A cell that goes *out* is drawn as plainly as one that lights. This is not a
- * verdict on the round — it is where the topic stands, the same standing fact
- * the index draws — and a card that hid the fall could only ever say good news.
- *
- * `from` is absent on a topic never graded before, and on a round begun before
- * the engine wrote this down. Then nothing is marked: there is no movement to
- * report, which is different from reporting that there was none.
- */
-function Mastery({ from, to }: { from?: number; to: number }) {
-  const lit = (cell: number, at: number) => at >= cell;
-  const half = (cell: number, at: number) => at + 0.5 === cell;
-  return (
-    <div
-      className="landed__mastery"
-      role="img"
-      aria-label={
-        from === undefined || from === to
-          ? `Mastery ${to} of 4`
-          : `Mastery ${from} of 4, now ${to} of 4`
-      }
-    >
-      {[1, 2, 3, 4].map((cell) => (
-        <span
-          key={cell}
-          className={[
-            "landed__cell",
-            lit(cell, to) ? "landed__cell--on" : "",
-            half(cell, to) ? "landed__cell--half" : "",
-            // The one cell this round moved, lit or emptied. Nothing is marked
-            // when the round left the topic where it found it.
-            from !== undefined && lit(cell, to) !== lit(cell, from)
-              ? "landed__cell--moved"
-              : "",
-          ]
-            .filter(Boolean)
-            .join(" ")}
-        />
-      ))}
     </div>
   );
 }
@@ -642,11 +612,16 @@ function Mastery({ from, to }: { from?: number; to: number }) {
  * the round just finished played over the *next* topic's first prompt and the
  * thing being celebrated was already off the screen.
  *
- * It says three things and refuses a fourth: what was worked on, where that
- * topic has got to, and when it comes back. Not how it was graded. Every grade
- * in the round has already been given and has already moved the schedule, and a
- * screen that added them up would turn four self-assessments into a score — for
- * a loop whose whole design is that nothing marks you.
+ * It says two things and refuses a third: what was worked on, and when it comes
+ * back. Not how it was graded. Every grade in the round has already been given
+ * and has already moved the schedule, and a screen that added them up would turn
+ * four self-assessments into a score — for a loop whose whole design is that
+ * nothing marks you.
+ *
+ * It used to say a third thing: four cells drawing where the topic's mastery
+ * stood and which of them this round moved. That score is gone — it filled after
+ * three good answers, so what it drew was how many questions a topic had been
+ * asked, in the clothes of how well they had gone.
  *
  * `round` is absent when a vocabulary card emptied the pile, since a word has no
  * round behind it. `cleared` is false on the great majority of rounds, which
@@ -657,14 +632,13 @@ export function Landed({
   round,
   cleared,
   met,
-  overall,
   nextDue,
   onKeepGoing,
   onStop,
 }: {
   /** The topic just finished; absent with `round`. */
   title?: string;
-  round?: { masteryBefore?: number; mastery: number; due: Date };
+  round?: { due: Date };
   /** The last thing waiting went with this grade. */
   cleared: boolean;
   /**
@@ -676,24 +650,15 @@ export function Landed({
    * they get, and it is the half that carries the meaning.
    */
   met?: string;
-  overall: number;
   nextDue?: Date;
   onKeepGoing: () => void;
   onStop: () => void;
 }) {
   return (
     <div className="centered">
-      {/* With no round there is no topic to talk about, so the syllabus stands
-          there instead — the same ring, in the same place, as `Rest`. */}
-      {!round && <Ring percent={overall} />}
       <h1>{round ? title : "The pile is clear."}</h1>
       {met && <p className="landed__met">Your first line of {met}.</p>}
-      {round && (
-        <>
-          <Mastery from={round.masteryBefore} to={round.mastery} />
-          <p>{comesBack(round.due)}</p>
-        </>
-      )}
+      {round && <p>{comesBack(round.due)}</p>}
       {cleared && round && (
         <p className="landed__cleared">And that was the last thing waiting.</p>
       )}
@@ -712,8 +677,11 @@ export function Landed({
         className="actions"
         style={{ width: "100%", maxWidth: "18rem", flexDirection: "column" }}
       >
+        {/* Clearing the pile leaves nothing on the table but the topic you
+            chose, if you chose one — so the primary is what to do next rather
+            than a claim there is more of the same waiting. */}
         <button className="btn btn--primary" onClick={onKeepGoing}>
-          {cleared ? "Read on in the book" : "Keep going"}
+          {cleared ? "Carry on" : "Keep going"}
         </button>
         {/*
          * Not a fourth screen to land on. There is no session in this app, and

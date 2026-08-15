@@ -49,13 +49,25 @@ describe("repairing a progress file", () => {
   });
 
   it("costs the damaged record rather than the year", () => {
-    const kept = { ...emptyProgress(), topicMastery: { ag1: 3 }, attempts: null };
+    const kept = { ...emptyProgress(), starred: ["ag1"], attempts: null };
     const session = open(kept);
 
     expect(session.repaired).toEqual(["attempts"]);
-    // The mastery is still there. A file damaged in one record must not be
-    // treated as a file that cannot be read at all.
-    expect(session.progress().topicMastery.ag1).toBe(3);
+    // The star is still there. A file damaged in one record must not be treated
+    // as a file that cannot be read at all.
+    expect(session.isStarred("ag1")).toBe(true);
+  });
+
+  it("puts back a star list that is not a list, and drops what is not an id", () => {
+    // It is the one field here that is an array, so it is the one that would
+    // take `.includes` on something that has no such method.
+    const notAList = repairProgress({ ...emptyProgress(), starred: "ag1" });
+    expect(notAList.repaired).toEqual(["starred"]);
+    expect(notAList.progress.starred).toEqual([]);
+
+    const mixed = repairProgress({ ...emptyProgress(), starred: ["ag1", 7, null] });
+    expect(mixed.repaired).toEqual(["starred"]);
+    expect(mixed.progress.starred).toEqual(["ag1"]);
   });
 
   it("drops a trail entry that is not a list, and keeps its neighbours", () => {
@@ -77,12 +89,12 @@ describe("repairing a progress file", () => {
   });
 
   it("keeps null where null is a meaning", () => {
-    // No round in flight and no cursor are things a file says, not damage.
+    // No round in flight and nothing being practised are things a file says,
+    // not damage.
     const { repaired } = repairProgress({
       ...emptyProgress(),
       openRound: null,
       practise: null,
-      bookAt: null,
     });
     expect(repaired).toEqual([]);
   });

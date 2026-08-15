@@ -1437,28 +1437,19 @@ span.status__title {
   margin-top: 0.1rem;
 }
 
-/* A family with nothing under it for exploring to serve. Faded, not disabled:
-   the accordion still opens, because opening it is how you see why it is empty.
-   The name and its line fade; the meter and chevron are left alone, so the head
-   still reads as something you can hit. */
+/* A family with nothing under it for a run to serve. Faded, not disabled: the
+   accordion still opens, because opening it is how you see why it is empty. The
+   name and its line fade; the chevron is left alone, so the head still reads as
+   something you can hit. */
 .family__head--empty .family__main {
   opacity: 0.5;
 }
 
-.family__meter {
-  width: 4.5rem;
-  height: 4px;
-  border-radius: 999px;
-  background: var(--line);
-  overflow: hidden;
-  flex: none;
-}
-
-.family__meter > i {
-  display: block;
-  height: 100%;
-  background: var(--gold);
-  border-radius: 999px;
+/* The starred shelf's heading. The same line as a family's, without the press:
+   it is a heading over a pinned list rather than an accordion, so it must not
+   look like one that has failed to open. */
+.family__head--static {
+  cursor: default;
 }
 
 /* The open family's topics, inset under its heading. */
@@ -1466,22 +1457,13 @@ span.status__title {
   padding: 0 1.1rem 0.7rem;
 }
 
-/* A topic's mastery, as a swatch beside the words that say the same thing. */
-.band {
-  flex: none;
-  width: 6px;
-  align-self: stretch;
-  min-height: 2rem;
-  border-radius: 999px;
-  background: var(--ink-raised);
-  border: 1px solid var(--line);
+/* The star on a starred row: a marker after the title, not a control. Gold
+   rather than the accent, so it does not read as the row being selected. */
+.row__star {
+  margin-left: 0.4rem;
+  color: var(--gold);
+  font-size: 0.85em;
 }
-
-/* Mastery bands, 1 through 4. */
-.band--m1 { background: color-mix(in srgb, var(--amber) 22%, var(--ink-raised)); }
-.band--m2 { background: color-mix(in srgb, var(--amber) 45%, var(--ink-raised)); }
-.band--m3 { background: color-mix(in srgb, var(--blue) 55%, var(--ink-raised)); }
-.band--m4 { background: var(--blue); }
 
 /* --- lists ---------------------------------------------------------------- */
 
@@ -1563,18 +1545,14 @@ span.status__title {
    that a family of twenty rows can be scanned rather than read, and the few
    with questions in them are what the eye lands on.
 
-   Faded, and emphatically not disabled: reading the section and starting the
-   walk from it are both still worth doing, and the sheet behind the row refuses
-   the drill alone. So the fade is on `.row__main` and the swatch — the two
-   things that carry the topic — while the chevron stays at full strength,
-   saying the row is still a way in. `opacity` rather than a dimmer text colour
-   because `.band` is a block of colour no text token reaches, and a swatch left
-   bright beside faded words would read as a fault.
+   Faded, and emphatically not disabled: reading the section is still worth
+   doing, and the sheet behind the row refuses the practice run alone. So the
+   fade is on `.row__main` — what carries the topic — while the chevron stays at
+   full strength, saying the row is still a way in.
 
    Kept lighter than `.btn:disabled` (0.45) on purpose: the two can appear on
    screen together, and they mean different things. */
-.row--empty .row__main,
-.row--empty .band {
+.row--empty .row__main {
   opacity: 0.5;
 }
 
@@ -1832,77 +1810,7 @@ span.status__title {
   to { transform: rotate(360deg); }
 }
 
-/* A quiet ring that fills as the syllabus does. */
-.ring {
-  --pct: 0;
-  width: 6.5rem;
-  height: 6.5rem;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-  background: conic-gradient(
-    var(--gold) calc(var(--pct) * 1%),
-    var(--line) 0
-  );
-  margin-bottom: 0.6rem;
-}
-
-.ring > span {
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  border-radius: 999px;
-  background: var(--ink);
-  display: grid;
-  place-items: center;
-  font-size: 1.15rem;
-  font-variant-numeric: tabular-nums;
-}
-
 /* --- the card the loop stands still on ------------------------------------ */
-
-/*
- * A topic's mastery in four cells and no number beside it.
- *
- * Nothing here declares a colour of its own. `--gold` is remapped to `--blue`
- * by `.app[data-mode="review"]` above, so the cells are blue on a review and
- * gold on the book without this block knowing which errand it is on — the same
- * way every button and meter already follows it.
- */
-.landed__mastery {
-  display: flex;
-  gap: 0.3rem;
-  margin: 0.5rem 0 0.3rem;
-}
-
-.landed__cell {
-  width: 1.7rem;
-  height: 0.35rem;
-  border-radius: 999px;
-  background: var(--line);
-}
-
-.landed__cell--on {
-  background: var(--gold);
-}
-
-/* Hard is +0.5, so a cell can be genuinely half-earned. */
-.landed__cell--half {
-  background: linear-gradient(90deg, var(--gold) 50%, var(--line) 50%);
-}
-
-/*
- * The one cell this round moved — lit or emptied, and marked the same either
- * way. It fades in rather than growing: the row must not change size, or the
- * two lines under it move while the student is reading them.
- *
- * `fade` is the keyframe the sheets' backdrop already uses. The reduced-motion
- * clamp below flattens it with no rule of its own here.
- */
-.landed__cell--moved {
-  animation: fade 0.45s ease;
-  outline: 1px solid var(--gold-dim);
-  outline-offset: 2px;
-}
 
 /* The rarest line on any screen in the app, so it is set like the language. */
 .landed__met {

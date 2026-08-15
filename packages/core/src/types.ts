@@ -312,10 +312,16 @@ export interface Attempt {
 /**
  * The two errands the app can be on.
  *
- * Reviewing serves what is due and nothing else; exploring moves through the
- * book and nothing else. Deliberately absent from `Progress`: which one you
- * are on is a decision about this sitting, and a file that could remember it
- * could also hide a waiting pile from you across a reload.
+ * Reviewing serves what is due and nothing else; practising serves the topic
+ * you chose and nothing else. Deliberately absent from `Progress`: which one
+ * you are on is a decision about this sitting, and a file that could remember
+ * it could also hide a waiting pile from you across a reload.
+ *
+ * `"explore"` is the name it has always had, kept because it is what the mode
+ * switch says and what every caller passes. What it used to mean was a walk
+ * through the book from a cursor; what it means now is the run of practice in
+ * flight, and with no run there is nothing to explore — the app asks for a
+ * topic rather than choosing one.
  */
 export type Mode = "review" | "explore";
 
@@ -357,11 +363,26 @@ export interface TestCycle {
  * out for itself once the round is under way.
  *
  * `next` says all of this in its `Action`, and the surface then forgets it: a
- * due review, a drill and a topic the book has come back to are the same four
- * sentences on the same topic, and were shown as such. Kept on the round so it
- * also survives a reload, which nothing derived from `next` can.
+ * due review and a run of practice are the same four sentences on the same
+ * topic, and were shown as such. Kept on the round so it also survives a
+ * reload, which nothing derived from `next` can.
+ *
+ * Two values are written now, because there are two errands. **`"new"` and
+ * `"sweep"` are read but never written**: they distinguished the book's walk
+ * arriving at a topic for the first time from its coming back round to one
+ * already graded, and there is no walk — a topic is on screen because somebody
+ * asked for it, whether or not they have been here before. Files written
+ * before carry rounds stamped with both; `readRoundVia` keeps `"new"` as it
+ * stands and reads `"sweep"` as `"drill"`, which is what such a round is now.
+ *
+ * They are read rather than rejected because a round whose `via` failed
+ * validation loses its provenance and resumes as a review it never was.
+ *
+ * (Whether a topic is being met for the first time is still a live question —
+ * it decides whether the grammar is shown before the questions — but it is
+ * asked of the answer trail, and `OpenRound.isNew` records the answer.)
  */
-export type RoundVia = "review" | "new" | "drill" | "sweep";
+export type RoundVia = "review" | "new" | "drill";
 
 /**
  * The answer being written, kept so that whatever ends the page does not also
@@ -414,21 +435,6 @@ export interface OpenRound {
   /** The topic's card before the round, or null if the topic had none. */
   cardBefore: SerializedCard | null;
   /**
-   * The topic's mastery before the round. Absent only on a round begun before
-   * this was written down — a topic never graded stood at the floor, which is
-   * what every bar already reads an absent mastery as, and the first round on a
-   * topic is exactly the one whose movement is worth drawing.
-   *
-   * Beside `cardBefore` and for its reason. Mastery moves per question where
-   * the card moves per round, so "what this round did to the topic" is a
-   * question only the value from before the round's first grade can answer, and
-   * by the time the round lands its own grades have moved everything the screen
-   * could otherwise read. Held here rather than in the screen because a round
-   * is resumable: reload on the last question of four, grade it, and a value
-   * kept in the page's state was never taken.
-   */
-  masteryBefore?: number;
-  /**
    * Authors this round introduced — ones no answer on the record was ever given
    * to before.
    *
@@ -474,18 +480,6 @@ export interface Progress {
    */
   frontier: string | null;
   /**
-   * How far the walk through the book has got: the section exploring will
-   * serve next. Null until something places it.
-   *
-   * A cursor rather than a rule, and it steps forward whatever the grade. A
-   * rule — "the first topic not yet mastered" — cannot move past a topic that
-   * is going badly, which is the one topic a student most needs to be able to
-   * leave. Mastery decides only where the cursor is *put*: choosing book order
-   * drops it on the earliest topic short of the top band, and from there it
-   * simply reads on, one section to the next.
-   */
-  bookAt?: string | null;
-  /**
    * Which of the pack's grammars the student is reading. Absent is the primary,
    * which is every file written before a pack had a second one.
    *
@@ -496,32 +490,42 @@ export interface Progress {
    */
   grammarId?: string;
   /**
-   * The same cursor as `bookAt`, for the books that are not the primary.
+   * The run of practice in flight, if any — the whole of what the app studies
+   * when it is not reviewing.
    *
-   * Kept apart rather than folded in so that `bookAt` still means exactly what
-   * it meant: a file written before this stays readable, and a student who never
-   * opens a second grammar never grows the field.
-   */
-  bookAtByGrammar?: Record<string, string | null>;
-  /**
-   * The run of practice in flight, if any. Exploring serves this when it is
-   * set and the book cursor when it is not, which is the whole of what the
-   * explore sub-mode amounts to.
-   *
-   * Beside the cursor rather than instead of it, so a detour onto one topic
-   * does not cost a start point the student chose.
+   * It used to sit beside a cursor that walked the book, and exploring served
+   * whichever of the two was set. There is no cursor: a topic arrives because
+   * somebody chose it, and the run stays on that topic until somebody chooses
+   * another. Null therefore means "nothing is on the table", which is a screen
+   * asking for a topic rather than one handing over the next section.
    */
   practise?: PractiseRun | null;
+  /**
+   * Topics the student marked to come back to, in the order they were marked.
+   *
+   * Filed under **primary** topic ids, like everything else here: a further
+   * grammar's section that teaches two primary topics stars both, and the star
+   * is still there when the other book is opened. A file that never starred
+   * anything does not carry the field.
+   *
+   * The one thing on a topic that the app does not derive. Everything else the
+   * index shows — what is due, what has been answered, what keeps being failed
+   * — is read off the record of study; this is the student saying "this one
+   * matters to me", which nothing can work out for them.
+   */
+  starred?: string[];
   /** The round of questions in flight, if any. */
   openRound?: OpenRound | null;
-  /** sectionId -> scheduling card for that grammar topic. */
-  topicCards: Record<string, SerializedCard>;
   /**
-   * sectionId -> cumulative mastery score in [1, 4], the number the progress
-   * bars read: 1 = not mastered, 4 = mastered. Good/Easy +1, Hard +0.5,
-   * Again -1. Absent means the topic has never been graded.
+   * sectionId -> scheduling card for that grammar topic.
+   *
+   * A topic with no entry here is not in the review pile. That is the ordinary
+   * state of a topic nobody has studied, and it is also what `dismissTopic`
+   * leaves behind — the student's way of saying "stop asking me about this".
+   * What it is *not* is a record of whether the topic has ever been studied:
+   * the answer trail is, and it survives a dismissal.
    */
-  topicMastery: Record<string, number>;
+  topicCards: Record<string, SerializedCard>;
   /** vocab card id -> state. */
   vocabCards: Record<string, VocabCardState>;
   /**
@@ -645,11 +649,9 @@ export function emptyProgress(citationsVersion = 0): Progress {
   return {
     version: 1,
     frontier: null,
-    bookAt: null,
     practise: null,
     openRound: null,
     topicCards: {},
-    topicMastery: {},
     vocabCards: {},
     seenTests: {},
     testCycles: {},
@@ -666,8 +668,9 @@ export function emptyProgress(citationsVersion = 0): Progress {
  *
  * Named rather than cast through, so the migration in `Session`'s constructor
  * can read an old file without lying to the type checker, and so a deleted
- * field leaves behind a record of what it was and what became of it. Every one
- * of these is read once, folded into its replacement, and deleted.
+ * field leaves behind a record of what it was and what became of it. Most of
+ * these are read once, folded into their replacement, and deleted; the ones
+ * that have no replacement are dropped, and say here that they were.
  */
 export interface LegacyProgress {
   /**
@@ -676,7 +679,10 @@ export interface LegacyProgress {
    * assigned to, which is not a claim worth making about a saved file.
    */
   version: number;
-  /** Sections a placement probe passed. Folded into `topicMastery` at the top band. */
+  /**
+   * Sections a placement probe passed. It folded into `topicMastery` at the top
+   * band, and there is no mastery to fold into: dropped.
+   */
   knownSections?: string[];
   /** Whether the placement test had been sat. There is no placement test. */
   placementDone?: boolean;
@@ -684,11 +690,34 @@ export interface LegacyProgress {
   placement?: unknown;
   /** The backlog set aside; which errand you are on is no longer written down. */
   exploring?: unknown;
-  /** familyId -> resume point. Replaced by the one `bookAt` cursor. */
+  /** familyId -> resume point. Replaced by the one `bookAt` cursor, then dropped with it. */
   frontiers?: Record<string, string>;
   /** Where new topics came from. Replaced by `bookAt` and `practise`. */
   focus?:
     | { kind: "sweep" }
     | { kind: "family"; id: string }
     | { kind: "topic"; sectionId: string };
+  /**
+   * sectionId -> a cumulative 1–4 score the index drew as a percentage.
+   *
+   * Dropped rather than folded, because there is nothing it could fold into.
+   * It moved by ±1 per answer from a floor of 1, so three good answers filled
+   * it and in practice it read 0% or 100%; what it measured was how many
+   * questions a topic had been asked, drawn as though it measured how well they
+   * had gone. Its one non-decorative job was placing the book cursor, and there
+   * is no cursor.
+   *
+   * What survives it: the FSRS card, which is the schedule and was always the
+   * thing that knew when a topic was due, and the answer trail, which is the
+   * record of what was actually studied.
+   */
+  topicMastery?: Record<string, number>;
+  /**
+   * How far a walk through the book had got. There is no walk: a topic is
+   * studied because the student chose it, and `practise` is where that is
+   * written down. Dropped, along with `bookAtByGrammar`.
+   */
+  bookAt?: string | null;
+  /** The same cursor for the books that were not the primary. Dropped with it. */
+  bookAtByGrammar?: Record<string, string | null>;
 }

@@ -154,17 +154,32 @@ const pressOnce = async (
 /** What the terminal sends for Esc. */
 const ESC = "";
 
+/**
+ * A session already practising the first topic of its book.
+ *
+ * The app hands nothing over until a topic is chosen — there is no walk through
+ * the book to be resumed — so a scenario about answering questions has to say
+ * which questions. Every test below used to get the first topic for free from
+ * the walk; this keeps each of them about the thing it is about.
+ */
+function studying(content: Content, progress: Progress = emptyProgress()) {
+  const session = new Session(content, progress);
+  const at = content.topicIds()[0];
+  if (at && !session.practiseRun()) session.drillTopic(at);
+  return session;
+}
+
 describe("CLI App (write → compare → self-grade)", () => {
   it("teaches, takes a written answer, records vocab, grades", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, undefined);
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
 
     // The first new topic: grammar drawer + English prompt + input box.
-    await until(lastFrame, "First declension nouns");
+    await until(lastFrame, "The girl loves the rose.");
     expect(lastFrame()).toContain("The girl loves the rose.");
     expect(lastFrame()).toContain(testProfile.ui.promptDirection);
 
@@ -183,17 +198,16 @@ describe("CLI App (write → compare → self-grade)", () => {
     await press(stdin, lastFrame, "\r", "Saved: manus, manūs (f)");
     expect(session.progress().vocabCards["v-manus"]).toBeDefined();
 
-    // Self-grade (2 = faltered). The word is due now, but the book is the
-    // errand in hand, so the loop reads on rather than interrupting.
+    // Self-grade (2 = faltered). The word is due now, but practice is the
+    // errand in hand, so the loop stays on the topic rather than interrupting.
+    // This topic holds one question, so the run is worked out and says so.
     stdin.write("2");
     await tick();
     expect(session.progress().topicCards["ag-decl1"]).toBeDefined();
-    expect(lastFrame()).toContain("Second declension nouns");
-    expect(lastFrame()).toContain("The master frees the slave.");
+    expect(lastFrame()).toContain("All practised");
+    expect(lastFrame()).toContain("First declension nouns");
 
-    // `x` on the graded screen is the CLI's switch. The word is what waits.
-    stdin.write("\r");
-    await tick();
+    // `x` is the CLI's switch. The word is what waits.
     stdin.write("x");
     await tick();
     expect(lastFrame()).toContain("Vocabulary review");
@@ -216,7 +230,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("opens the grammar index, walks it, and quizzes the chosen topic", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -243,7 +257,7 @@ describe("CLI App (write → compare → self-grade)", () => {
     stdin.write("\u001B[C");
     await tick();
     expect(lastFrame()).toContain("Second declension nouns");
-    expect(lastFrame()).toContain("not started");
+    expect(lastFrame()).toContain("0/1 questions");
 
     // Down arrow jumps to the next family.
     stdin.write("\u001B[B");
@@ -257,12 +271,12 @@ describe("CLI App (write → compare → self-grade)", () => {
     expect(lastFrame()).toContain(testProfile.ui.promptDirection);
     expect(lastFrame()).toContain("The poet praises the queen.");
 
-    // Grading it creates the card and starts its mastery score.
+    // Grading it puts the topic in the review pile.
     stdin.write("\r");
     await tick();
     stdin.write("3");
     await tick();
-    expect(session.progress().topicMastery["ag-verb-pres"]).toBe(2);
+    expect(session.progress().topicCards["ag-verb-pres"]).toBeDefined();
 
     // And it is a run, so it says so and stays here rather than moving on.
     expect(session.practiseRun()?.sectionId).toBe("ag-verb-pres");
@@ -273,7 +287,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("names every family in full and cycles through them", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -319,7 +333,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("escapes the map back to the question", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -345,7 +359,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("shows the topic's earlier answers on demand, and hides them again", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     // A run at this topic three days ago, before this session started.
     session.recordAttempt(
       "ag-decl1",
@@ -420,7 +434,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("escapes a vocabulary recording opened by mistake", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -458,7 +472,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("goes back to the answer box when Enter came too early", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -493,7 +507,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("takes back a self-grade given by mistake, schedule and trail with it", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -506,12 +520,12 @@ describe("CLI App (write → compare → self-grade)", () => {
     stdin.write("1"); // meant 4
     await tick();
 
-    // The grade landed and the next topic is up.
-    expect(session.progress().topicMastery["ag-decl1"]).toBe(1);
-    expect(lastFrame()).toContain("Second declension nouns");
-    expect(lastFrame()).toContain("^Z undo grade");
+    // The grade landed and the run says it has been through the topic.
+    expect(session.progress().topicCards["ag-decl1"]).toBeDefined();
+    expect(lastFrame()).toContain("All practised");
+    expect(lastFrame()).toContain("u undo grade");
 
-    stdin.write("\u001A"); // ^Z
+    stdin.write("u"); // the resting screens spell it out; ^Z is for mid-answer
     await tick();
 
     // The question is back, exactly as it was left.
@@ -519,11 +533,10 @@ describe("CLI App (write → compare → self-grade)", () => {
     expect(lastFrame()).toContain("The girl loves the rose.");
     expect(lastFrame()).toContain("puella rosam amat");
     expect(lastFrame()).toContain("Grade taken back");
-    // …and so is the engine: no card, no mastery, no attempt, nothing saved.
+    // …and so is the engine: no card, no attempt, nothing saved.
     expect(session.progress().topicCards["ag-decl1"]).toBeUndefined();
-    expect(session.progress().topicMastery["ag-decl1"]).toBeUndefined();
     expect(session.attemptsFor("ag-decl1")).toHaveLength(0);
-    expect(storage.saved.topicMastery["ag-decl1"]).toBeUndefined();
+    expect(storage.saved.topicCards["ag-decl1"]).toBeUndefined();
 
     // One grade deep and no further: with that one taken back, there is
     // nothing older waiting behind it.
@@ -538,7 +551,7 @@ describe("CLI App (write → compare → self-grade)", () => {
     await tick();
     stdin.write("4");
     await tick();
-    expect(session.progress().topicMastery["ag-decl1"]).toBe(2);
+    expect(session.progress().topicCards["ag-decl1"]!.reps).toBe(1);
     expect(session.attemptsFor("ag-decl1")).toHaveLength(1);
     expect(session.attemptsFor("ag-decl1")[0]).toMatchObject({ rating: 4 });
 
@@ -548,7 +561,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("leaves the answer being written alone when there is nothing to take back", async () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -579,7 +592,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("pages the grammar drawer through a long section, ellipsis-free", async () => {
     const content = new Content(longFixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -639,7 +652,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("gives every topic the same window on its section as the cursor moves", async () => {
     const content = new Content(shapesFixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -684,7 +697,7 @@ describe("CLI App (write → compare → self-grade)", () => {
   it("reads the section under the map cursor in full", async () => {
     const content = new Content(longFixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={storage} />,
     );
@@ -736,7 +749,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
 
   it("shows what is coming back, and closes again", async () => {
     const content = new Content(fixture, testProfile);
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     // A topic already graded easy, so there is something scheduled to look at.
     session.gradeTopic("ag-decl1", 4);
     const { lastFrame, stdin, unmount } = await answered(session, content);
@@ -758,24 +771,16 @@ describe("the schedule, the question bank and the vocabulary list", () => {
 
   it("lists every question of a topic with its answer and what was written", async () => {
     const content = new Content(fixture, testProfile);
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = await answered(session, content);
-    // Graded hard, so the answer is on the record; the loop then moves to the
-    // next topic, and answering it brings the map key back within reach.
-    stdin.write("2");
-    await tick();
-    stdin.write("dominus servum līberat");
-    await tick();
-    stdin.write("\r");
-    await tick();
+    // Graded hard, so the answer is on the record. This topic holds one
+    // question, so the run has been through it and the loop stops and says so.
+    await press(stdin, lastFrame, "2", "All practised");
 
-    // The bank is reached from the map: left one topic, back to the first.
-    stdin.write("m");
-    await tick();
-    stdin.write("[D");
-    await tick();
-    stdin.write("a");
-    await tick();
+    // The bank is reached from the map, which opens from the resting screen
+    // like anywhere else, parked on the topic just practised.
+    await press(stdin, lastFrame, "m", "Grammar index");
+    await pressOnce(stdin, lastFrame, "a", "All questions on");
 
     const frame = lastFrame()!;
     expect(frame).toContain("All questions on First declension nouns");
@@ -793,7 +798,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
 
   it("edits a recorded word without disturbing its schedule", async () => {
     const content = new Content(fixture, testProfile);
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = await answered(session, content);
 
     // Record a word, then open the list of them.
@@ -833,7 +838,7 @@ describe("the schedule, the question bank and the vocabulary list", () => {
 
   it("takes two presses to delete a word", async () => {
     const content = new Content(fixture, testProfile);
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const { lastFrame, stdin, unmount } = await answered(session, content);
     stdin.write("v");
     await tick();
@@ -874,10 +879,10 @@ const RIGHT = "[C";
  */
 describe("the question's vocabulary, and the map from anywhere", () => {
   /** Opened on the first topic's question. */
-  const studying = () => {
+  const atWork = () => {
     const content = new Content(fixture, testProfile);
     const storage = new MemoryStorage();
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     return {
       session,
       ...render(<App session={session} content={content} storage={storage} />),
@@ -885,16 +890,14 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   };
 
   /**
-   * A deck with the whole book mastered, so exploring has nowhere to go and
-   * the rest screen is reachable. Grading through it will not do: the book
-   * comes back to a topic until it reaches the top band.
+   * A deck with nothing chosen and nothing due, so the resting screen is
+   * reachable. It used to take a whole book at the top mastery band, because
+   * exploring always had a next section to hand over; nothing is handed over
+   * now until a topic is picked, so having picked none is the whole of it.
    */
   const workedOut = () => {
     const content = new Content(fixture, testProfile);
-    const session = new Session(content, {
-      ...emptyProgress(),
-      topicMastery: Object.fromEntries(content.topicIds().map((id) => [id, 4])),
-    });
+    const session = new Session(content, emptyProgress());
     return {
       session,
       ...render(
@@ -904,7 +907,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   };
 
   it("shows the words behind the question on Tab, and hides them again", async () => {
-    const { lastFrame, stdin, unmount } = studying();
+    const { lastFrame, stdin, unmount } = atWork();
     await tick();
     expect(lastFrame()).toContain("The girl loves the rose.");
     // Hidden until asked for: that is the whole point of the feature.
@@ -928,7 +931,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   });
 
   it("leaves the half-written answer alone while the words are consulted", async () => {
-    const { lastFrame, stdin, unmount } = studying();
+    const { lastFrame, stdin, unmount } = atWork();
     await tick();
     stdin.write("puella ros");
     await tick();
@@ -946,7 +949,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   });
 
   it("opens the map mid-answer on ^N and gives the answer back untouched", async () => {
-    const { lastFrame, stdin, unmount } = studying();
+    const { lastFrame, stdin, unmount } = atWork();
     await tick();
     stdin.write("puella ros");
     await tick();
@@ -965,7 +968,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   });
 
   it("asks twice before a map quiz throws away an answer being written", async () => {
-    const { lastFrame, stdin, unmount } = studying();
+    const { lastFrame, stdin, unmount } = atWork();
     await tick();
     stdin.write("puella ros");
     await tick();
@@ -989,7 +992,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   });
 
   it("forgets the warning when the cursor moves to a different topic", async () => {
-    const { lastFrame, stdin, unmount } = studying();
+    const { lastFrame, stdin, unmount } = atWork();
     await tick();
     stdin.write("puella ros");
     await tick();
@@ -1010,7 +1013,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   });
 
   it("brings the question back with its words open when w is pressed in the map", async () => {
-    const { lastFrame, stdin, unmount } = studying();
+    const { lastFrame, stdin, unmount } = atWork();
     await tick();
     stdin.write("puella rosam amat");
     await tick();
@@ -1029,7 +1032,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   });
 
   it("closes the word list again on the next question", async () => {
-    const { lastFrame, stdin, unmount } = studying();
+    const { lastFrame, stdin, unmount } = atWork();
     await tick();
     stdin.write("puella rosam amat");
     await tick();
@@ -1049,7 +1052,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   it("says so rather than doing nothing where there is no question to have words for", async () => {
     const { lastFrame, stdin, unmount } = workedOut();
     await tick();
-    expect(lastFrame()).toContain("The book is worked out");
+    expect(lastFrame()).toContain("no topic being practised");
 
     stdin.write("w");
     await tick();
@@ -1062,7 +1065,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
   it("puts back the screen the map was opened over, even through the schedule", async () => {
     const { lastFrame, stdin, unmount } = workedOut();
     await tick();
-    expect(lastFrame()).toContain("The book is worked out");
+    expect(lastFrame()).toContain("no topic being practised");
 
     stdin.write("m");
     await tick();
@@ -1076,7 +1079,7 @@ describe("the question's vocabulary, and the map from anywhere", () => {
     await tick();
     // It came from `done`, so `done` is where it goes back to — not the grading
     // bar hanging over a question that is not there.
-    expect(lastFrame()).toContain("The book is worked out");
+    expect(lastFrame()).toContain("no topic being practised");
     expect(lastFrame()).not.toContain("self-grade");
     unmount();
   });
@@ -1108,10 +1111,10 @@ const deep: ContentData = {
   },
 };
 
-describe("the three ways to move through the book", () => {
+describe("the one way onto a topic", () => {
   const open = () => {
     const content = new Content(deep, testProfile);
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     return {
       session,
       ...render(<App session={session} content={content} storage={new MemoryStorage()} />),
@@ -1126,10 +1129,9 @@ describe("the three ways to move through the book", () => {
     await tick();
   };
 
-  it("carries on from the topic f was pressed on, not from the beginning", async () => {
+  it("moves to the topic Enter was pressed on, and stays there", async () => {
     const { session, lastFrame, stdin, unmount } = open();
     await tick();
-    // The sweep starts at chapter one, as it always has.
     expect(lastFrame()).toContain("d1 question");
 
     stdin.write(CTRL_N); // the map, from the answer box
@@ -1138,23 +1140,20 @@ describe("the three ways to move through the book", () => {
     await tick();
     expect(lastFrame()).toContain("Present indicative active");
 
-    // From a half-written answer `f` costs something, so it is asked twice —
-    // the idiom Enter already uses.
-    stdin.write("f");
+    // From a half-written answer Enter costs something, so it is asked twice.
+    stdin.write("\r");
     await tick();
-    expect(lastFrame()).toContain("Press f again");
-    stdin.write("f");
+    expect(lastFrame()).toContain("Press Enter again");
+    stdin.write("\r");
     await tick();
-    expect(session.bookCursor()).toBe("v1");
+    expect(session.practiseRun()?.sectionId).toBe("v1");
     expect(lastFrame()).toContain("v1 question");
 
-    // The bug this fixes: the next topic used to be the first of the book.
+    // And it stays: v1 holds one question, so the run is through and says so
+    // rather than reading on into v2.
     await answer(stdin);
-    expect(lastFrame()).toContain("v2 question");
-
-    // Off the end of the book, so it wraps to what it left behind.
-    await answer(stdin);
-    expect(lastFrame()).toContain("d1 question");
+    expect(lastFrame()).toContain("All practised");
+    expect(lastFrame()).not.toContain("v2 question");
     unmount();
   });
 
@@ -1193,8 +1192,52 @@ describe("the three ways to move through the book", () => {
     await answer(stdin); // question 1 of the served test
     await answer(stdin); // question 2 of the same test
     expect(session.progress().topicCards.d1!.reps).toBe(1);
-    // Mastery still counts every question answered.
-    expect(session.progress().topicMastery.d1).toBe(3);
+    unmount();
+  });
+
+  it("stars the topic under the cursor, and takes the star off again", async () => {
+    const { session, lastFrame, stdin, unmount } = open();
+    await tick();
+    stdin.write(CTRL_N);
+    await until(lastFrame, "Grammar index");
+
+    await press(stdin, lastFrame, "*", "Starred “First declension nouns”");
+    expect(session.isStarred("d1")).toBe(true);
+    // Drawn on the bar as the student's own mark, above everything else it
+    // could be saying about the topic.
+    expect(lastFrame()).toContain("★ starred");
+
+    await press(stdin, lastFrame, "*", "Unstarred “First declension nouns”");
+    expect(session.isStarred("d1")).toBe(false);
+    unmount();
+  });
+
+  it("takes the topic under the cursor out of the review pile, on two presses", async () => {
+    const { session, lastFrame, stdin, unmount } = open();
+    await tick();
+    // A round graded, so there is a card to lose.
+    await answer(stdin);
+    expect(session.progress().topicCards.d1).toBeDefined();
+
+    stdin.write(CTRL_N);
+    await until(lastFrame, "Grammar index");
+    // The idiom `x` already carries in the vocabulary list, and it deletes the
+    // same kind of thing there: a schedule, not a syllabus.
+    await pressOnce(stdin, lastFrame, "x", "Press x again to stop reviewing");
+    expect(session.progress().topicCards.d1).toBeDefined();
+    await pressOnce(stdin, lastFrame, "x", "is out of the review pile");
+    expect(session.progress().topicCards.d1).toBeUndefined();
+    // The answers stay, so practising it again does not teach it from the top.
+    expect(session.everGraded("d1")).toBe(true);
+    unmount();
+  });
+
+  it("refuses the dismissal on a topic that is not in the pile", async () => {
+    const { lastFrame, stdin, unmount } = open();
+    await tick();
+    stdin.write(CTRL_N);
+    await until(lastFrame, "Grammar index");
+    await pressOnce(stdin, lastFrame, "x", "is not in the review pile");
     unmount();
   });
 });
@@ -1207,7 +1250,7 @@ describe("the sentence a recorded word was met in", () => {
    */
   async function graded() {
     const content = new Content(fixture, testProfile);
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const app = render(
       <App session={session} content={content} storage={new MemoryStorage()} />,
     );
@@ -1301,7 +1344,7 @@ describe("the sentences on a card, in the terminal", () => {
   /** A card carrying two sentences, with the list open on it. */
   async function twoSentences() {
     const content = new Content(fixture, testProfile);
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const id = session.recordVocab(content.lookup("manibus")[0]!);
     session.addVocabContext(id, {
       prompt: "The girl loves the rose.",
@@ -1375,7 +1418,7 @@ describe("the sentences on a card, in the terminal", () => {
 describe("the hint on a vocabulary card", () => {
   it("gives the English of the sentence and never the Latin", async () => {
     const content = new Content(fixture, testProfile);
-    const session = new Session(content, emptyProgress());
+    const session = studying(content);
     const id = session.recordVocab(content.lookup("manibus")[0]!);
     session.addVocabContext(id, {
       prompt: "The girl loves the rose.",
@@ -1409,9 +1452,8 @@ describe("the hint on a vocabulary card", () => {
 /**
  * The preference lives on the deck, not on the device, so a deck set up in the
  * app arrives here already asking for quoted sentences and the terminal has to
- * honour it. It had half of it: the practice run read the preference straight
- * off the session, while the walk through the book did not — which is exactly
- * the pair a synced deck would notice.
+ * honour it — in the run it serves, in what the index counts, and in the bank
+ * it draws.
  */
 describe("a deck that asked for quoted sentences only", () => {
   const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
@@ -1441,29 +1483,25 @@ describe("a deck that asked for quoted sentences only", () => {
     },
   };
 
-  it("walks the book by the quoted questions, stepping over what has none", async () => {
+  it("runs a topic on its quoted questions alone", async () => {
     const content = new Content(quoted, testProfile);
-    const session = new Session(content, { ...emptyProgress(), quotedOnly: true });
+    const session = studying(content, { ...emptyProgress(), quotedOnly: true });
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={new MemoryStorage()} />,
     );
 
     // First declension holds two written questions and one quotation, and the
-    // quotation is the only thing a walk under the preference may serve.
-    await until(lastFrame, "First declension nouns");
-    expect(lastFrame()).toContain("Gaul is divided into three parts.");
+    // quotation is the only thing a run under the preference may serve.
+    await until(lastFrame, "Gaul is divided into three parts.");
     expect(lastFrame()).not.toContain("The girl loves the rose.");
 
     await press(stdin, lastFrame, "gallia est omnis dīvīsa in partēs trēs");
     await press(stdin, lastFrame, "\r", "correct");
-    stdin.write("3");
-    // Second declension has tests and no quotation, so the book steps over it
-    // and reads on to the next topic that has one.
-    await until(lastFrame, "The die is cast.");
+    // The one quotation is the whole run, so grading it works the run out.
+    await press(stdin, lastFrame, "3", "All practised");
 
-    // Stepped over, and deliberately not graded: grading it would put a topic
-    // the student has never seen into the review rotation, and leave it
-    // missing from the walk when the preference is turned off again.
+    // And the topics it never asked about are untouched: nothing was shown, so
+    // grading one would put a topic never seen into the review rotation.
     expect(session.progress().topicCards["ag-decl2"]).toBeUndefined();
     expect(session.progress().topicCards["ag-decl1"]).toBeDefined();
     unmount();
@@ -1471,11 +1509,11 @@ describe("a deck that asked for quoted sentences only", () => {
 
   it("counts the index by what it will ask, and says which topics have none", async () => {
     const content = new Content(quoted, testProfile);
-    const session = new Session(content, { ...emptyProgress(), quotedOnly: true });
+    const session = studying(content, { ...emptyProgress(), quotedOnly: true });
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={new MemoryStorage()} />,
     );
-    await until(lastFrame, "First declension nouns");
+    await until(lastFrame, "Gaul is divided into three parts.");
 
     // From the answer box, where letters are letters: `^N` is the index.
     await press(stdin, lastFrame, CTRL_N, "Grammar index");
@@ -1497,11 +1535,11 @@ describe("a deck that asked for quoted sentences only", () => {
 
   it("draws the bank by what it will ask, and refuses to open an empty one", async () => {
     const content = new Content(quoted, testProfile);
-    const session = new Session(content, { ...emptyProgress(), quotedOnly: true });
+    const session = studying(content, { ...emptyProgress(), quotedOnly: true });
     const { lastFrame, stdin, unmount } = render(
       <App session={session} content={content} storage={new MemoryStorage()} />,
     );
-    await until(lastFrame, "First declension nouns");
+    await until(lastFrame, "Gaul is divided into three parts.");
     await press(stdin, lastFrame, CTRL_N, "Grammar index");
 
     // The pane is the questions this deck will be asked, so its heading and the
@@ -1543,11 +1581,11 @@ describe("a deck that asked for quoted sentences only", () => {
 
     it("marks the topics with nothing to serve, and says so over a whole family", async () => {
       const content = new Content(oneFamilyDry, testProfile);
-      const session = new Session(content, { ...emptyProgress(), quotedOnly: true });
+      const session = studying(content, { ...emptyProgress(), quotedOnly: true });
       const { lastFrame, stdin, unmount } = render(
         <App session={session} content={content} storage={new MemoryStorage()} />,
       );
-      await until(lastFrame, "First declension nouns");
+      await until(lastFrame, testProfile.ui.promptDirection);
       await press(stdin, lastFrame, CTRL_N, "Grammar index");
 
       // Nouns is the open family: two cells, and the second declension's is the
@@ -1564,11 +1602,11 @@ describe("a deck that asked for quoted sentences only", () => {
 
     it("leaves the bar alone when the preference is off", async () => {
       const content = new Content(oneFamilyDry, testProfile);
-      const session = new Session(content, emptyProgress());
+      const session = studying(content);
       const { lastFrame, stdin, unmount } = render(
         <App session={session} content={content} storage={new MemoryStorage()} />,
       );
-      await until(lastFrame, "First declension nouns");
+      await until(lastFrame, testProfile.ui.promptDirection);
       await press(stdin, lastFrame, CTRL_N, "Grammar index");
 
       // Every topic in the fixture has tests, so with the preference off there

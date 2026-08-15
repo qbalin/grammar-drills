@@ -138,9 +138,23 @@ function mount(
   // Only the tests that add a family to the fixture pass one — a pack's family
   // list is its book's table of contents, so content and profile move together.
   profile: Profile = testProfile,
+  /**
+   * The topic to arrive already practising, or `null` to arrive with nothing
+   * chosen.
+   *
+   * The app hands nothing over until a topic is picked — there is no walk
+   * through the book to be resumed — so a scenario about answering questions
+   * has to say which questions. Defaulting to the first teachable topic is what
+   * every one of these used to get for free, and it keeps each test about the
+   * thing it is about. `null` is for the handful whose subject *is* the empty
+   * screen.
+   */
+  practise: string | null | undefined = undefined,
 ) {
   const content = new Content(data, profile);
   const session = new Session(content, progress);
+  const at = practise === undefined ? content.topicIds()[0] : practise;
+  if (at && !session.practiseRun()) session.drillTopic(at);
   const storage = new SyncingStorage();
   render(<App content={content} session={session} storage={storage} />);
   return { session, content, storage };
@@ -156,7 +170,7 @@ function mount(
  */
 async function carryOn(user: ReturnType<typeof userEvent.setup>) {
   const button = screen.queryByRole("button", {
-    name: /Keep going|Read on in the book/,
+    name: /Keep going|Carry on/,
   });
   if (button) await user.click(button);
 }
@@ -317,7 +331,9 @@ describe("the study loop", () => {
     expect(sentences()).toEqual(["Puella rosa amo.", "Puella rosam amat."]);
 
     await user.click(screen.getByRole("button", { name: /Good/ }));
-    expect(session.progress().topicMastery.decl1).toBe(2);
+    // The grade reaches the schedule and nothing else — there is no score for
+    // it to move.
+    expect(session.progress().topicCards.decl1).toBeDefined();
   });
 
   it("advances through a test's questions before moving on", async () => {
@@ -400,32 +416,14 @@ describe("the study loop", () => {
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Again/ }));
 
-    // Good then Again is 1 -> 2 -> 1, so the round moved the topic nowhere and
-    // no cell is marked. Where it stands is still said.
-    const meter = document.querySelector(".landed__mastery");
-    expect(meter?.getAttribute("aria-label")).toBe("Mastery 1 of 4");
-    expect(document.querySelectorAll(".landed__cell").length).toBe(4);
-    expect(document.querySelectorAll(".landed__cell--moved").length).toBe(0);
-    // No score, no accuracy, no count of what was right.
+    // The topic, and when it comes back. Nothing else.
+    expect(screen.getByRole("heading", { name: "First declension" })).toBeDefined();
+    expect(screen.getByText(/^Back /)).toBeDefined();
+    // No score, no accuracy, no count of what was right. The four mastery cells
+    // that used to stand here are gone with the score behind them.
+    expect(document.querySelector(".landed__mastery")).toBeNull();
     expect(screen.queryByText(/\d\s*(of|\/)\s*\d/)).toBeNull();
-    expect(screen.queryByText(/right|correct|wrong/i)).toBeNull();
-  });
-
-  it("marks the one cell the round moved", async () => {
-    const user = userEvent.setup();
-    mount();
-
-    for (const _ of [0, 1]) {
-      await user.click(screen.getByRole("button", { name: "Reveal" }));
-      await user.click(screen.getByRole("button", { name: /Good/ }));
-    }
-
-    // Two goods from the floor: 1 -> 3, so two cells are newly lit.
-    expect(document.querySelector(".landed__mastery")?.getAttribute("aria-label")).toBe(
-      "Mastery 1 of 4, now 3 of 4",
-    );
-    expect(document.querySelectorAll(".landed__cell--on").length).toBe(3);
-    expect(document.querySelectorAll(".landed__cell--moved").length).toBe(2);
+    expect(screen.queryByText(/right|correct|wrong|mastered/i)).toBeNull();
   });
 
   it("carries on from the card, and stops on it without going anywhere", async () => {
@@ -444,13 +442,17 @@ describe("the study loop", () => {
     await user.click(screen.getByRole("button", { name: /^Close/ }));
     expect(screen.getByRole("heading", { name: "First declension" })).toBeDefined();
 
+    // Carrying on stays on the topic that was chosen. The run has been through
+    // this topic's whole bank, so what comes next is the run saying so — not
+    // another topic's first question.
     await user.click(screen.getByRole("button", { name: "Keep going" }));
-    expect(screen.getByText("The master frees the slave.")).toBeDefined();
+    expect(screen.getByRole("heading", { name: "All practised." })).toBeDefined();
+    expect(screen.queryByText("The master frees the slave.")).toBeNull();
   });
 
   it("lands the same way on a round picked back up at its last question", async () => {
     const user = userEvent.setup();
-    // The round is resumable, so the mastery it opened at cannot be held in the
+    // The round is resumable, so what the card reports cannot be held in the
     // screen's own state: nothing here ever saw the first grade.
     const s = new Session(new Content(fixture, testProfile));
     s.beginRound("decl1", fixture.tests.decl1![0]!, true, "new");
@@ -461,9 +463,8 @@ describe("the study loop", () => {
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
-    expect(document.querySelector(".landed__mastery")?.getAttribute("aria-label")).toBe(
-      "Mastery 1 of 4, now 3 of 4",
-    );
+    expect(screen.getByRole("heading", { name: "First declension" })).toBeDefined();
+    expect(screen.getByText(/^Back /)).toBeDefined();
   });
 
   it("never lands on a vocabulary card, which is not a round", async () => {
@@ -482,18 +483,27 @@ describe("the study loop", () => {
     expect(screen.queryByRole("button", { name: "Keep going" })).toBeNull();
   });
 
-  it("rests once the book is worked out, rather than showing an empty screen", () => {
-    // Every topic already at the top band, so the book has nowhere to go.
-    mount({
-      ...emptyProgress(),
-      topicMastery: { decl1: 4, decl2: 4, pres: 4 },
-    });
+  it("asks for a topic rather than picking one, when nothing is chosen", async () => {
+    const user = userEvent.setup();
+    // Nothing chosen and nothing due. The app used to walk a cursor through the
+    // book from here, so it always had a question to hand over; it has none,
+    // and the honest screen is the one that asks which topic.
+    mount(undefined, fixture, testProfile, null);
 
-    expect(screen.getByText("The book is worked out.")).toBeDefined();
+    expect(screen.getByRole("heading", { name: "Pick a topic." })).toBeDefined();
     // And with nothing due either, the switch has nowhere to send you.
     for (const name of ["Explore", "Review"]) {
       expect(screen.getByRole("button", { name })).toHaveProperty("disabled", true);
     }
+
+    // The index leads, because it is the answer rather than a consolation.
+    // (The header carries one of its own, so this is the screen's.)
+    await user.click(
+      within(document.querySelector(".centered")!).getByRole("button", {
+        name: "Grammar index",
+      }),
+    );
+    expect(screen.getByRole("dialog", { name: /Grammar index/ })).toBeDefined();
   });
 });
 
@@ -712,7 +722,7 @@ describe("the answer trail", () => {
 
   it("does not carry the trail across to another topic's answers", async () => {
     const user = userEvent.setup();
-    mount();
+    const { session } = mount();
 
     // Finish first declension, so its two attempts are on the record.
     for (const _ of [0, 1]) {
@@ -721,7 +731,15 @@ describe("the answer trail", () => {
     }
     await carryOn(user);
 
-    // Second declension is new ground: its own trail is empty.
+    // Second declension is new ground: its own trail is empty. Reached by
+    // choosing it, which is the only way onto a topic there is.
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    await user.click(screen.getByRole("button", { name: /§ 23-27\s*Second declension/ }));
+    await user.click(
+      within(screen.getByRole("dialog", { name: "Second declension" }))
+        .getByRole("button", { name: /^Practise/ }),
+    );
+    expect(session.practiseRun()?.sectionId).toBe("decl2");
     expect(document.querySelector(".status__title")?.textContent).toBe(
       "Second declension",
     );
@@ -815,18 +833,19 @@ describe("picking a test back up", () => {
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
     await carryOn(user);
-    // The finished round was let go of and the next topic took the table —
-    // on disk, not merely in memory. A round is only ever written by the
-    // branch that serves a test, so letting go has to be written too.
-    expect(topic()).toBe("Second declension");
+    // The finished round was let go of and a fresh one took the table — on
+    // disk, not merely in memory. A round is only ever written by the branch
+    // that serves a test, so letting go has to be written too.
+    await user.click(screen.getByRole("button", { name: "Practise all 2 again" }));
+    expect(topic()).toBe("First declension");
     expect(new SyncingStorage().read()?.openRound).toMatchObject({
-      sectionId: "decl2",
+      sectionId: "decl1",
       answered: 0,
     });
 
     reopen();
-    expect(topic()).toBe("Second declension");
-    expect(eyebrow()).toContain("· 1/1");
+    expect(topic()).toBe("First declension");
+    expect(eyebrow()).toContain("· 1/2");
   });
 
   it("puts a round left on the card between rounds down, rather than resuming it", async () => {
@@ -848,8 +867,8 @@ describe("picking a test back up", () => {
     reopen();
     // Not back on the card, and not back on a question already graded: the card
     // is a moment, not state worth persisting, and the grade behind it is safe.
-    expect(topic()).toBe("Second declension");
-    expect(eyebrow()).toContain("· 1/1");
+    // The run is worked out, so what the launch lands on is the run saying so.
+    expect(screen.getByRole("heading", { name: "All practised." })).toBeDefined();
   });
 
   it("writes the round down when study moves on to a word instead", async () => {
@@ -877,7 +896,7 @@ describe("picking a test back up", () => {
     await user.click(screen.getByRole("button", { name: "Grammar index" }));
     await user.click(screen.getByRole("button", { name: /^Verb forms/ }));
     await user.click(screen.getByRole("button", { name: /Present indicative/ }));
-    await user.click(screen.getByRole("button", { name: "Study from here" }));
+    await user.click(screen.getByRole("button", { name: /^Practise/ }));
     expect(topic()).toBe("Present indicative");
 
     reopen();
@@ -2592,7 +2611,7 @@ describe("taking things back", () => {
     await user.click(screen.getByRole("button", { name: /Again/ })); // meant Easy
 
     // The grade landed and the next question is up.
-    expect(session.progress().topicMastery.decl1).toBe(1);
+    expect(session.progress().topicCards.decl1).toBeDefined();
     expect(screen.getByText(`${profile.ui.promptDirection} · 2/2`)).toBeDefined();
 
     await user.click(screen.getByRole("button", { name: "Undo last grade" }));
@@ -2602,9 +2621,8 @@ describe("taking things back", () => {
     expect(screen.getByText("The girl loves the rose.")).toBeDefined();
     expect(screen.getByText("You wrote")).toBeDefined();
     expect(sentences()).toEqual(["Puella rosam amat.", "Puella rosam amat."]);
-    // …and so is the engine: no card, no mastery, nothing in the trail.
+    // …and so is the engine: no card, nothing in the trail.
     expect(session.progress().topicCards.decl1).toBeUndefined();
-    expect(session.progress().topicMastery.decl1).toBeUndefined();
     expect(session.attemptsFor("decl1")).toHaveLength(0);
 
     // One grade deep and no further: nothing older waits behind it.
@@ -2612,7 +2630,7 @@ describe("taking things back", () => {
 
     // Grading again applies once, not twice.
     await user.click(screen.getByRole("button", { name: /Easy/ }));
-    expect(session.progress().topicMastery.decl1).toBe(2);
+    expect(session.progress().topicCards.decl1!.reps).toBe(1);
     expect(session.attemptsFor("decl1")).toHaveLength(1);
     expect(session.attemptsFor("decl1")[0]?.rating).toBe(4);
   });
@@ -2682,7 +2700,7 @@ describe("the topic in the status bar", () => {
 });
 
 describe("the grammar index", () => {
-  it("takes the book up at any topic, ahead of where it had got to", async () => {
+  it("takes up any topic, whatever was being studied before", async () => {
     const user = userEvent.setup();
     mount();
 
@@ -2690,9 +2708,9 @@ describe("the grammar index", () => {
     // Only the open family shows its topics; Verb forms is not the one open.
     await user.click(screen.getByRole("button", { name: /^Verb forms/ }));
     await user.click(screen.getByRole("button", { name: /Present indicative/ }));
-    await user.click(screen.getByRole("button", { name: "Study from here" }));
+    await user.click(screen.getByRole("button", { name: /^Practise/ }));
 
-    // Straight to a test on the chosen topic, not the one the book was at.
+    // Straight to a test on the chosen topic, not the one in hand.
     expect(screen.getByText("The poet praises the queen.")).toBeDefined();
   });
 
@@ -2702,16 +2720,20 @@ describe("the grammar index", () => {
 
     await user.click(screen.getByRole("button", { name: "Grammar index" }));
 
-    // Each topic is a row carrying Bennett's § reference, its title and where
-    // the student stands on it — not a square labelled with its position.
+    // Each topic is a row carrying Bennett's § reference, its title and how
+    // much of its bank has been met — not a square labelled with its position,
+    // and not a score. There is no "% mastered" anywhere on this sheet.
     expect(
-      screen.getByRole("button", { name: /§ 23-27\s*Second declension\s*not started/ }),
+      screen.getByRole("button", {
+        name: /§ 23-27\s*Second declension\s*0\/1 questions answered/,
+      }),
     ).toBeDefined();
     expect(screen.queryByRole("button", { name: "1" })).toBeNull();
     expect(screen.queryByRole("button", { name: "2" })).toBeNull();
+    expect(screen.queryByText(/mastered/i)).toBeNull();
 
-    // The family says what its own percentage is a percentage of.
-    expect(screen.getByRole("button", { name: /^Nouns 2 topics · \d+% mastered/ })).toBeDefined();
+    // The family counts the topics under it, and says nothing about them.
+    expect(screen.getByRole("button", { name: /^Nouns\s+2 topics/ })).toBeDefined();
   });
 
   it("reads a section in full from the map", async () => {
@@ -2791,9 +2813,8 @@ describe("reading on", () => {
     // the map offers on a topic, reached from the page itself.
     await user.click(screen.getByRole("button", { name: "Study Second declension" }));
     const topic = screen.getByRole("dialog", { name: "Second declension" });
-    expect(within(topic).getByRole("button", { name: /Practise these/ })).toBeDefined();
-    expect(within(topic).getByRole("button", { name: "Book order" })).toBeDefined();
-    await user.click(within(topic).getByRole("button", { name: "Study from here" }));
+    expect(within(topic).getByRole("button", { name: /Read § 23-27/ })).toBeDefined();
+    await user.click(within(topic).getByRole("button", { name: /^Practise/ }));
 
     expect(screen.getByText("The master frees the slave.")).toBeDefined();
   });
@@ -2823,7 +2844,7 @@ describe("reading on", () => {
     // And under the reading, still, the topic and the map it was opened from.
     await user.click(screen.getByRole("button", { name: "Close" }));
     const topic = screen.getByRole("dialog", { name: "First declension" });
-    expect(within(topic).getByRole("button", { name: "Study from here" })).toBeDefined();
+    expect(within(topic).getByRole("button", { name: /^Practise/ })).toBeDefined();
     await user.click(within(topic).getByRole("button", { name: "Close" }));
     expect(screen.getByRole("dialog", { name: "Grammar index" })).toBeDefined();
   });
@@ -2922,7 +2943,7 @@ describe("progress", () => {
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
     const saved = new SyncingStorage().read();
-    expect(saved?.topicMastery.decl1).toBe(2);
+    expect(saved?.topicCards.decl1).toBeDefined();
     expect(saved?.updatedAt).toBe(session.progress().updatedAt);
   });
 });
@@ -2979,7 +3000,7 @@ describe("erasing and replacing what is on the device", () => {
     const remote: Progress = {
       ...new Session(new Content(fixture, testProfile)).progress(),
       updatedAt: "2026-07-04T00:00:00.000Z",
-      topicMastery: { decl2: 5 },
+      starred: ["decl2"],
     };
     vi.stubGlobal(
       "fetch",
@@ -3016,7 +3037,7 @@ describe("erasing and replacing what is on the device", () => {
     leave();
     const kept = new SyncingStorage().read();
     expect(kept?.updatedAt).toBe("2026-07-04T00:00:00.000Z");
-    expect(kept?.topicMastery).toEqual({ decl2: 5 });
+    expect(kept?.starred).toEqual(["decl2"]);
   });
 
   it("says so when the pull cannot reach the repo, rather than nothing at all", async () => {
@@ -3172,7 +3193,7 @@ describe("the question's vocabulary", () => {
   });
 });
 
-describe("the three ways to move through the book", () => {
+describe("the one way onto a topic", () => {
   /** The topic the status bar says is being studied. */
   const onScreen = () =>
     document.querySelector(".status__title")?.textContent ?? "";
@@ -3192,48 +3213,32 @@ describe("the three ways to move through the book", () => {
     await user.click(within(map()).getByRole("button", { name }));
   };
 
-  it("carries the book on from the topic Study from here was tapped on", async () => {
+  it("moves to a topic only when one is chosen, and stays there", async () => {
     const user = userEvent.setup();
     const { session } = mount();
     expect(onScreen()).toBe("First declension");
 
     await pickTopic(user, /Verb forms/, /Present indicative/);
-    await user.click(screen.getByRole("button", { name: "Study from here" }));
+    await user.click(screen.getByRole("button", { name: /Practise/ }));
 
     expect(onScreen()).toBe("Present indicative");
-    expect(session.bookCursor()).toBe("pres");
-    expect(session.practiseRun()).toBeNull();
+    expect(session.practiseRun()?.sectionId).toBe("pres");
   });
 
-  it("puts the book back at the earliest unmastered topic on Book order", async () => {
-    const user = userEvent.setup();
-    const { session } = mount();
-
-    await pickTopic(user, /Verb forms/, /Present indicative/);
-    await user.click(screen.getByRole("button", { name: "Study from here" }));
-    expect(onScreen()).toBe("Present indicative");
-
-    await pickTopic(user, /Verb forms/, /Present indicative/);
-    await user.click(screen.getByRole("button", { name: "Book order" }));
-    expect(onScreen()).toBe("First declension");
-    expect(session.bookCursor()).toBe("decl1");
-    // Reading the book on is not a run, so the badge carries no count.
-    expect(document.querySelector(".status__row .badge")?.textContent).toBe("new");
-  });
-
-  it("reads on one topic to the next whatever the grade", async () => {
+  it("stays on the topic whatever the grade, rather than reading on", async () => {
     const user = userEvent.setup();
     mount();
 
-    // Two questions on decl1, both graded "again", so it stays at the floor.
+    // decl1's whole bank is two questions, both graded "again". A walk through
+    // the book stepped on after every round — so the topic going worst was the
+    // one you were moved off. Staying is the whole point of a run.
     for (const _ of [0, 1]) {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Again/ }));
     }
     await carryOn(user);
-    // Under a "first topic not yet mastered" rule this would be decl1 again,
-    // for ever. The cursor steps regardless.
-    expect(onScreen()).toBe("Second declension");
+    expect(screen.queryByText("The master frees the slave.")).toBeNull();
+    expect(screen.getByRole("heading", { name: "All practised." })).toBeDefined();
   });
 
   it("stays on a topic and works the questions a test never reached", async () => {
@@ -3303,7 +3308,7 @@ describe("the three ways to move through the book", () => {
     expect(document.querySelector(".status__row .badge")?.textContent).toBe("drill 0/2");
   });
 
-  it("finds the way back to the book from the stop screen", async () => {
+  it("leaves a worked-out run only by picking another topic", async () => {
     const user = userEvent.setup();
     const { session } = mount();
 
@@ -3316,9 +3321,19 @@ describe("the three ways to move through the book", () => {
     }
 
     await carryOn(user);
-    await user.click(screen.getByRole("button", { name: "Back to the book in order" }));
-    expect(session.practiseRun()).toBeNull();
-    expect(onScreen()).toBe("First declension"); // still the earliest unmastered
+    // The stop screen's second answer is the index, because there is nowhere
+    // else to be sent — "back to the book in order" named a walk that is gone.
+    await user.click(screen.getByRole("button", { name: "Pick another topic" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    const verbs = within(map).getByRole("button", { name: /Verb forms/ });
+    if (verbs.getAttribute("aria-expanded") === "false") await user.click(verbs);
+    await user.click(within(map).getByRole("button", { name: /Present indicative/ }));
+    await user.click(
+      within(screen.getByRole("dialog", { name: "Present indicative" }))
+        .getByRole("button", { name: /^Practise/ }),
+    );
+    expect(session.practiseRun()?.sectionId).toBe("pres");
+    expect(onScreen()).toBe("Present indicative");
   });
 
   it("costs a topic one review per round of questions, not one per question", async () => {
@@ -3332,8 +3347,79 @@ describe("the three ways to move through the book", () => {
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
     expect(session.progress().topicCards.decl1!.reps).toBe(1);
-    // Mastery still counts every question answered.
-    expect(session.progress().topicMastery.decl1).toBe(3);
+  });
+
+  it("stars a topic from its sheet, and pins it above the families", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+
+    await pickTopic(user, /Verb forms/, /Present indicative/);
+    await user.click(screen.getByRole("button", { name: "☆ Star this topic" }));
+    expect(session.isStarred("pres")).toBe(true);
+
+    // Pinned at the top of the index, out of the family it lives in — a
+    // shortlist that has to be assembled by scrolling is not one.
+    await user.click(screen.getByRole("button", { name: /^Close/ }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    const shelf = within(map).getByText("★ Starred").closest(".family")!;
+    expect(
+      within(shelf as HTMLElement).getByRole("button", { name: /Present indicative/ }),
+    ).toBeDefined();
+
+    // And it comes off again from the same button, taking the shelf with it.
+    await user.click(
+      within(shelf as HTMLElement).getByRole("button", { name: /Present indicative/ }),
+    );
+    await user.click(screen.getByRole("button", { name: "★ Starred" }));
+    expect(session.isStarred("pres")).toBe(false);
+    await user.click(screen.getByRole("button", { name: /^Close/ }));
+    expect(
+      within(screen.getByRole("dialog", { name: "Grammar index" }))
+        .queryByText("★ Starred"),
+    ).toBeNull();
+  });
+
+  it("offers no shelf at all until something is starred", () => {
+    mount();
+    fireEvent.click(screen.getByRole("button", { name: "Grammar index" }));
+    expect(screen.queryByText("★ Starred")).toBeNull();
+  });
+
+  it("takes a topic out of the review pile from its sheet, and a grade puts it back", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+
+    // Grade it once so it has a card to lose.
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(session.progress().topicCards.decl1).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
+    // Two presses, like every other deletion here.
+    await user.click(screen.getByRole("button", { name: "Stop reviewing this topic" }));
+    await user.click(screen.getByRole("button", { name: "Confirm — stop reviewing" }));
+
+    expect(session.progress().topicCards.decl1).toBeUndefined();
+    // The answers stay: it deletes a schedule, not a syllabus.
+    expect(session.attemptsFor("decl1")).toHaveLength(1);
+
+    // And the sheet no longer offers it, because there is nothing left to take.
+    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
+    expect(screen.queryByRole("button", { name: "Stop reviewing this topic" })).toBeNull();
+  });
+
+  it("offers the dismissal on a topic scheduled for later, not only a due one", async () => {
+    // `due` would hide it on a topic scheduled for next month, which is exactly
+    // the topic somebody is looking at when they decide they have had enough.
+    const user = userEvent.setup();
+    const s = new Session(new Content(fixture, testProfile));
+    s.gradeTopic("decl1", 4, new Date());
+    mount(s.progress());
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
+    expect(screen.getByRole("button", { name: "Stop reviewing this topic" })).toBeDefined();
   });
 });
 
@@ -3356,9 +3442,9 @@ describe("what is on screen, and why", () => {
     return s.progress();
   };
 
-  it("names new ground as new, and a card come back as a review", async () => {
+  it("names a run of practice a drill, and a card come back a review", async () => {
     mount();
-    expect(badge()).toBe("new");
+    expect(badge()).toBe("drill 0/2");
 
     cleanup();
     mount(withBacklog());
@@ -3366,18 +3452,43 @@ describe("what is on screen, and why", () => {
     expect(title()).toBe("First declension");
   });
 
-  it("names a topic the book has come back to, which is neither", () => {
-    // decl1 has been graded but is not due, so exploring meets it again.
+  it("says the same thing on familiar ground as on new, since the reason is the same", () => {
+    /*
+     * `new` and `revisiting` were the badges for the book's walk arriving at a
+     * topic for the first time and coming back round to one already graded.
+     * Neither is a reason any more — a topic is on screen because somebody
+     * asked for it — so both rounds say `drill`. Whether the ground is new is
+     * still a live question, and it is answered by the grammar being shown.
+     */
     const s = new Session(new Content(fixture, testProfile));
-    s.gradeTopic("decl1", 4, new Date());
+    // Answered yesterday, so the run opened on mount is over what is left.
+    const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000);
+    s.recordAttempt(
+      "decl1",
+      {
+        prompt: "The girl loves the rose.",
+        answer: "Puella rosam amat.",
+        submitted: "Puella rosam amat.",
+        rating: 4,
+      },
+      yesterday,
+    );
+    s.gradeTopic("decl1", 4, yesterday);
     mount(s.progress());
 
-    // Nothing is due, so the app opens on the book — at decl1, still short of
-    // the top band. Met before, so neither new nor a card that fell due.
-    expect(badge()).toBe("revisiting");
+    expect(badge()).toBe("drill 0/1");
     expect(title()).toBe("First declension");
-    // And it is not taught again: the grammar sheet is for ground never met.
+    // Not taught again: the grammar sheet is for ground never met.
     expect(screen.queryByRole("dialog", { name: "First declension" })).toBeNull();
+  });
+
+  it("still teaches before testing on a topic never answered", () => {
+    mount();
+    expect(badge()).toBe("drill 0/2");
+    // The badge says why the round is here; the open sheet says the ground is
+    // new. Two different facts, and they were run together while one value
+    // carried both.
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
   });
 
   it("says a word is on the table, rather than the topic before it", async () => {
@@ -3465,14 +3576,14 @@ describe("choosing between the reviews and the book", () => {
   it("drops a round the errand it opens on would not have served", async () => {
     const user = userEvent.setup();
     mount(withBacklog());
-    // Leave a book round on the table with the reviews still waiting.
+    // Leave a practice round on the table with the reviews still waiting.
     await user.click(screen.getByRole("button", { name: "Explore" }));
-    expect(new SyncingStorage().read()?.openRound?.via).toBe("sweep");
+    expect(new SyncingStorage().read()?.openRound?.via).toBe("drill");
 
     cleanup();
     mount(new SyncingStorage().read() ?? undefined);
-    // The pile decides, so the book round is not the one picked back up: a
-    // switch reading "Review" over a topic the book served would be naming
+    // The pile decides, so the practice round is not the one picked back up: a
+    // switch reading "Review" over a topic a run served would be naming
     // something that is not happening.
     expect(pressed("Review")).toBe("true");
     expect(badge()).toBe("review");
@@ -3487,21 +3598,21 @@ describe("choosing between the reviews and the book", () => {
     // The round in flight is gone at once — not "after this one", which is
     // what the link it replaces used to mean.
     expect(errand()).toBe("explore");
-    expect(new SyncingStorage().read()?.openRound?.via).toBe("sweep");
+    expect(new SyncingStorage().read()?.openRound?.via).toBe("drill");
 
-    // The book stands at the earliest topic short of the top band, which is
-    // this one: failing it is exactly why it is still short.
+    // And it lands on the topic the run is for, which is the one chosen —
+    // not on whatever the pile happened to be holding.
     expect(title()).toBe("First declension");
-    expect(badge()).toBe("revisiting");
+    expect(badge()).toBe("drill 0/2");
 
-    // And it reads on from there, into ground that was unreachable a moment
-    // ago: everything due used to be served before anything new.
+    // Working it through is reachable at once, where everything due used to be
+    // served before anything else.
     for (const _ of [0, 1]) {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Good/ }));
     }
     await carryOn(user);
-    expect(title()).toBe("Second declension");
+    expect(screen.getByRole("heading", { name: "All practised." })).toBeDefined();
   });
 
   it("says so on every switch", async () => {
@@ -3551,7 +3662,7 @@ describe("choosing between the reviews and the book", () => {
     expect(screen.getByText("And that was the last thing waiting.")).toBeDefined();
     expect(document.querySelector(".toast")).toBeNull();
 
-    await user.click(screen.getByRole("button", { name: "Read on in the book" }));
+    await user.click(screen.getByRole("button", { name: "Carry on" }));
     expect(pressed("Explore")).toBe("true");
   });
 
@@ -3648,10 +3759,10 @@ describe("the index under the quoted-only preference", () => {
     expect(
       screen.getByRole("button", { name: "Nothing quoted here" }),
     ).toHaveProperty("disabled", true);
-    // Studying from here is still offered: the walk starts here and reads on
-    // to the next topic that has something quoted.
+    // Reading it is still offered: a page with no quotation on it is still a
+    // page, and reading is the one thing every page can do.
     expect(
-      screen.getByRole("button", { name: "Study from here" }),
+      screen.getByRole("button", { name: /Read § 23-27/ }),
     ).toHaveProperty("disabled", false);
     // And the bank narrows with it: a list of the questions this deck will not
     // be asked is a list of things to revise for nothing. Worded apart from the
@@ -3786,12 +3897,15 @@ describe("the index under the quoted-only preference", () => {
       const row = within(map).getByRole("button", { name: /Second declension/ });
 
       // The one thing the greying must never become. Reading the section and
-      // studying from here are still on offer behind this row, and a `disabled`
-      // here would take both away to save a student a tap they might want.
+      // starring it are still on offer behind this row, and a `disabled` here
+      // would take both away to save a student a tap they might want.
       expect(row).toHaveProperty("disabled", false);
       await user.click(row);
       expect(
-        screen.getByRole("button", { name: "Study from here" }),
+        screen.getByRole("button", { name: /Read § 23-27/ }),
+      ).toHaveProperty("disabled", false);
+      expect(
+        screen.getByRole("button", { name: "☆ Star this topic" }),
       ).toHaveProperty("disabled", false);
     });
   });
@@ -3946,19 +4060,26 @@ describe("a device that is behind another one", () => {
     return reload;
   };
 
-  /** A copy of the pack's progress, saved at `at`, with `mastery` in it. */
-  const copy = (at: string, mastery: Record<string, number>): Progress => ({
+  /**
+   * A copy of the pack's progress, saved at `at`, with `starred` in it.
+   *
+   * The stars are only a marker here — one field whose value says which copy
+   * this is, so an assertion can name the one that survived. Any per-topic
+   * field would do; this is the one that is a plain list and reads clearly in
+   * an expectation.
+   */
+  const copy = (at: string, starred: string[]): Progress => ({
     ...new Session(new Content(fixture, testProfile)).progress(),
     updatedAt: at,
-    topicMastery: mastery,
+    starred,
   });
 
   it("takes the newer copy without a word when it has nothing of its own", async () => {
     const reload = stubReload();
-    const remote = copy("2026-09-09T00:00:00.000Z", { decl2: 5 });
+    const remote = copy("2026-09-09T00:00:00.000Z", ["decl2"]);
     stubGitHub(remote);
 
-    const mine = onDevice(copy("2026-01-01T00:00:00.000Z", { decl1: 2 }));
+    const mine = onDevice(copy("2026-01-01T00:00:00.000Z", ["decl1"]));
     configured();
     synced(mine.updatedAt); // pushed, and untouched since
     await act(async () => {
@@ -3967,15 +4088,15 @@ describe("a device that is behind another one", () => {
 
     // No sheet. This is the phone-then-laptop case and it is not a question.
     expect(screen.queryByRole("dialog", { name: /another device/i })).toBeNull();
-    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl2: 5 });
+    expect(new SyncingStorage().read()?.starred).toEqual(["decl2"]);
     expect(reload).toHaveBeenCalled();
   });
 
   it("asks when this device has been studied since it last synced", async () => {
     stubReload();
-    stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    stubGitHub(copy("2026-09-09T00:00:00.000Z", ["decl2"]));
 
-    const mine = onDevice(copy("2026-02-02T00:00:00.000Z", { decl1: 2 }));
+    const mine = onDevice(copy("2026-02-02T00:00:00.000Z", ["decl1"]));
     configured();
     synced("2026-01-01T00:00:00.000Z"); // and studied after that
     await act(async () => {
@@ -3986,20 +4107,20 @@ describe("a device that is behind another one", () => {
       screen.getByRole("dialog", { name: "Progress from another device" }),
     ).toBeDefined();
     // Nothing was decided on the student's behalf.
-    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl1: 2 });
+    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
   });
 
   it("pushes nothing before it has looked at what GitHub holds", async () => {
     // The reported bug. A grade in the first seconds used to beat the startup
     // check through the four-second debounce, and the copy it committed was the
     // stale one the check was on its way to replace.
-    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", ["decl2"]));
     stubReload();
     configured();
     synced("2026-01-01T00:00:00.000Z"); // studied since, so nothing is adopted
 
     const user = userEvent.setup();
-    mount(onDevice(copy("2026-02-02T00:00:00.000Z", { decl1: 2 })));
+    mount(onDevice(copy("2026-02-02T00:00:00.000Z", ["decl1"])));
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
     await passTime(4500); // past the four-second debounce
@@ -4010,11 +4131,11 @@ describe("a device that is behind another one", () => {
   }, 10_000);
 
   it("holds the push when another device gets in first, and keeps the work", async () => {
-    const remote = copy("2026-09-09T00:00:00.000Z", { decl2: 5 });
+    const remote = copy("2026-09-09T00:00:00.000Z", ["decl2"]);
     stubGitHub(remote);
     const user = userEvent.setup();
     // Connected mid-session, so the gate is open and the check is not running.
-    const { storage, session } = mount(copy("2026-01-01T00:00:00.000Z", { decl1: 2 }));
+    const { storage, session } = mount(copy("2026-01-01T00:00:00.000Z", ["decl1"]));
     await act(async () => {
       storage.configure(CONFIG);
     });
@@ -4033,12 +4154,12 @@ describe("a device that is behind another one", () => {
 
   it("keeps this device's copy when that is what was chosen", async () => {
     stubReload();
-    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", ["decl2"]));
     const user = userEvent.setup();
     configured();
     synced("2026-01-01T00:00:00.000Z");
     await act(async () => {
-      mount(onDevice(copy("2026-02-02T00:00:00.000Z", { decl1: 2 })));
+      mount(onDevice(copy("2026-02-02T00:00:00.000Z", ["decl1"])));
     });
 
     await act(async () => {
@@ -4047,14 +4168,14 @@ describe("a device that is behind another one", () => {
 
     // Forced past the refusal, because a person is what the refusal defers to.
     expect(calls).toContain("PUT");
-    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl1: 2 });
+    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
   });
 
   it("warns before a pull throws away what this device has not sent", async () => {
     stubReload();
-    stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    stubGitHub(copy("2026-09-09T00:00:00.000Z", ["decl2"]));
     const user = userEvent.setup();
-    const { storage } = mount(copy("2026-02-02T00:00:00.000Z", { decl1: 2 }));
+    const { storage } = mount(copy("2026-02-02T00:00:00.000Z", ["decl1"]));
     await act(async () => {
       storage.configure(CONFIG);
     });
@@ -4067,7 +4188,7 @@ describe("a device that is behind another one", () => {
     expect(
       screen.getByRole("dialog", { name: "This device has unsaved progress" }),
     ).toBeDefined();
-    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl1: 2 });
+    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
   });
 
   it("pulls without a word when there is nothing of this device's to lose", async () => {
@@ -4076,7 +4197,7 @@ describe("a device that is behind another one", () => {
     stubGitHub(null);
     const user = userEvent.setup();
     const { storage, session } = mount(
-      onDevice(copy("2026-02-02T00:00:00.000Z", { decl1: 2 })),
+      onDevice(copy("2026-02-02T00:00:00.000Z", ["decl1"])),
     );
     await act(async () => {
       storage.configure(CONFIG);
@@ -4085,22 +4206,22 @@ describe("a device that is behind another one", () => {
 
     // Then the other device studies and pushes. This one has nothing of its
     // own left, so pulling is a plain catch-up and asking about it is noise.
-    stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    stubGitHub(copy("2026-09-09T00:00:00.000Z", ["decl2"]));
     await user.click(screen.getByRole("button", { name: "Settings" }));
     await act(async () => {
       await user.click(screen.getByRole("button", { name: /Pull the copy/ }));
     });
 
     expect(screen.queryByRole("dialog", { name: /unsaved progress/ })).toBeNull();
-    expect(new SyncingStorage().read()?.topicMastery).toEqual({ decl2: 5 });
+    expect(new SyncingStorage().read()?.starred).toEqual(["decl2"]);
     expect(reload).toHaveBeenCalled();
   });
 
   it("asks before connecting to a repo that already holds something newer", async () => {
     stubReload();
-    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", { decl2: 5 }));
+    const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", ["decl2"]));
     const user = userEvent.setup();
-    mount(copy("2026-02-02T00:00:00.000Z", { decl1: 2 }));
+    mount(copy("2026-02-02T00:00:00.000Z", ["decl1"]));
 
     await user.click(screen.getByRole("button", { name: "Settings" }));
     await user.type(screen.getByLabelText("Repository owner"), "someone");
@@ -4171,14 +4292,15 @@ describe("a section the book sets no exercise on", () => {
     expect(row.textContent).not.toMatch(/not started/);
   });
 
-  it("draws no mastery bar over a family that can never fill one", async () => {
+  it("says a family is reading only rather than counting it as unstudied", async () => {
     const user = userEvent.setup();
     mount(undefined, withReading, readingProfile);
     const map = await openMap(user);
 
     const heading = within(map).getByRole("button", { name: /Prosody/ });
     expect(heading.textContent).toMatch(/reading only/);
-    expect(heading.textContent).not.toMatch(/0% mastered/);
+    // Nor is anything about it waiting: there is nothing here to be due.
+    expect(heading.textContent).not.toMatch(/due/);
   });
 
   it("still opens it, and offers reading as the thing to do", async () => {
@@ -4197,10 +4319,6 @@ describe("a section the book sets no exercise on", () => {
     expect(
       screen.getByRole("button", { name: "Read § 360-361" }),
     ).toHaveProperty("disabled", false);
-    expect(screen.getByRole("button", { name: "Study from here" })).toHaveProperty(
-      "disabled",
-      true,
-    );
     expect(
       screen.getByRole("button", { name: "No exercise here" }),
     ).toHaveProperty("disabled", true);
@@ -4226,7 +4344,7 @@ describe("a section the book sets no exercise on", () => {
     ).toBeDefined();
   });
 
-  it("leaves a student's overall progress exactly where it was", async () => {
+  it("leaves everything a student has actually done exactly where it was", async () => {
     const graded = new Session(new Content(fixture, testProfile));
     graded.gradeTopic("decl1", 4, new Date());
 
@@ -4236,9 +4354,14 @@ describe("a section the book sets no exercise on", () => {
     after.restore(graded.snapshot());
 
     // The regression this exists for: shipping the rest of the book must not
-    // move a number that is about the student.
-    expect(after.overallPercent()).toBe(before.overallPercent());
-    expect(after.overallPercent()).toBeGreaterThan(0);
+    // move anything about the student. There is no figure left for it to move,
+    // so what is checked is the pile and the answers themselves.
+    expect(after.progress().topicCards).toEqual(before.progress().topicCards);
+    expect(after.stats().dueTopics).toBe(before.stats().dueTopics);
+    // And the reading page brings nothing of its own into either count.
+    const page = after.grammarMap().find((t) => t.sectionId === "metre")!;
+    expect(page.scheduled).toBe(false);
+    expect(page.questions).toBe(0);
   });
 });
 

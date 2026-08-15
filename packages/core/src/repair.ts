@@ -47,14 +47,25 @@ export function repairProgress(raw: unknown, citationsVersion?: number): Repair 
   };
   for (const key of [
     "topicCards",
-    "topicMastery",
     "vocabCards",
     "seenTests",
     "testCycles",
     "attempts",
-    "bookAtByGrammar",
   ]) {
     record(key);
+  }
+
+  // The one field that is a list rather than a record. A non-array here would
+  // take `.includes` on the first star lookup; a non-string inside it can never
+  // match a section id, so it is dropped rather than kept as dead weight.
+  if (out.starred !== undefined) {
+    if (!Array.isArray(out.starred)) {
+      repaired.push("starred");
+      out.starred = [];
+    } else if (out.starred.some((id) => typeof id !== "string")) {
+      repaired.push("starred");
+      out.starred = out.starred.filter((id) => typeof id === "string");
+    }
   }
 
   // The trail is the one record whose *values* are arrays, and a value that is
@@ -91,7 +102,7 @@ export function repairProgress(raw: unknown, citationsVersion?: number): Repair 
     }
   }
 
-  // `null` is a meaning here — no cursor, no round in flight — so only a
+  // `null` is a meaning here — no run and no round in flight — so only a
   // wrong-typed value is repaired, never an absent one.
   for (const key of ["openRound", "practise"]) {
     if (out[key] !== undefined && out[key] !== null && !isRecord(out[key])) {

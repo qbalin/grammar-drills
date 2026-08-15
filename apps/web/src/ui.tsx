@@ -571,13 +571,3 @@ export function Toast({
 export function Spinner() {
   return <span className="spinner" aria-label="Loading" />;
 }
-
-/** Overall mastery, as a ring that fills with the syllabus. */
-export function Ring({ percent }: { percent: number }) {
-  const pct = Math.round(percent * 100);
-  return (
-    <div className="ring" style={{ ["--pct" as string]: pct }}>
-      <span>{pct}%</span>
-    </div>
-  );
-}

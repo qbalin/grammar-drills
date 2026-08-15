@@ -46,8 +46,9 @@ function download(text: string, name: string): void {
  *
  * The syllabus was rebuilt once already — topic ids moved from Allen &
  * Greenough's (`ag-*`) to Bennett's (`bn-*`) — and a file from before that
- * carries ids for topics that no longer exist. The scheduler ignores them, but
- * the mastery percentages would count them, so they are dropped on the way in.
+ * carries ids for topics that no longer exist. Nothing would ever serve them,
+ * but they would sit in the schedule and the index counts for ever, so they are
+ * dropped on the way in.
  */
 export function importProgress(raw: string, content: Content): Progress {
   const parsed = JSON.parse(raw) as Partial<Progress>;
@@ -66,11 +67,15 @@ export function importProgress(raw: string, content: Content): Progress {
     ...base,
     ...parsed,
     topicCards: keepKeys(parsed.topicCards),
-    topicMastery: keepKeys(parsed.topicMastery),
     seenTests: keepKeys(parsed.seenTests),
     testCycles: keepKeys(parsed.testCycles),
     attempts: keepKeys(parsed.attempts),
     vocabCards: parsed.vocabCards ?? {},
+    // A list rather than a record, so it takes the same filter by hand. A star
+    // on a topic this bundle does not hold would pin a row that cannot be drawn.
+    ...(parsed.starred
+      ? { starred: parsed.starred.filter((id) => known(id)) }
+      : {}),
     updatedAt: parsed.updatedAt ?? base.updatedAt,
   };
 }

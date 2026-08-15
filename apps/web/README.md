@@ -35,8 +35,8 @@ Two more things worth knowing:
   order, so the § next door is a thumb away rather than a close-map-pick, and
   the two neighbours are named at the foot of the page for anyone who would
   rather tap. The **→** in the head goes from the section you are reading to
-  what you can do with it — *Study from here*, *Practise these*, *Book order*.
-  Under the last line of the **grammar map** is whose book all of it is,
+  what you can do with it — *Practise these*, star it, or take it off the review
+  pile. Under the last line of the **grammar map** is whose book all of it is,
   licence and all, linked to the edition it was parsed from: not a page of this
   grammar was written here.
 - **+ record a word** takes any word as you met it — `manibus`, `amāvērunt`,

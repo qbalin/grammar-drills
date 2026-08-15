@@ -124,14 +124,8 @@ function contextKey(context: NewVocabContext, fold: Fold): string {
   return `${foldKey(context.prompt, fold)}\n${foldKey(context.sentence, fold)}`;
 }
 
-/** Mastery runs 1 (not mastered) to 4 (mastered); the bars show the span between. */
-const MASTERY_MIN = 1;
-const MASTERY_MAX = 4;
-
 export type Action =
   | { kind: "topic-review"; sectionId: string }
-  /** The topic the book has reached: never met, or met and come back to. */
-  | { kind: "new-topic"; sectionId: string }
   /** More of a topic the student asked to stay on. */
   | { kind: "drill"; sectionId: string }
   /**
@@ -144,15 +138,13 @@ export type Action =
   | { kind: "vocab-review"; cardId: string }
   | { kind: "done" };
 
-/** One grammar section as the progress bars and topic explorer see it. */
+/** One grammar section as the index and the topic sheet see it. */
 export interface TopicProgress {
   sectionId: string;
   title: string;
   ref: string;
   order: number;
   family: FamilyId;
-  /** Cumulative score in [1, 4], or undefined if never graded. */
-  mastery?: number;
   hasTests: boolean;
   /**
    * The book has no exercise on this page — see `GrammarSection.readingOnly`.
@@ -162,12 +154,23 @@ export interface TopicProgress {
    */
   readingOnly: boolean;
   due: boolean;
+  /**
+   * In the review pile at all — it carries a card, whether or not that card is
+   * due yet. What `dismissTopic` takes away and a grade puts back, so it is
+   * what a surface offering the dismissal has to read: `due` would hide the
+   * action on a topic scheduled for next month, which is exactly the topic
+   * somebody is looking at when they decide they have had enough of it.
+   */
+  scheduled: boolean;
   /** Questions of this topic's bank that have been answered at least once. */
   answered: number;
   /** How many the bank holds — a test of four never exhausts it. */
   questions: number;
-  /** Where the book cursor stands; the topic exploring would reach first. */
-  frontier: boolean;
+  /**
+   * The student marked this one to come back to. The one fact on a topic that
+   * is not derived from the record of study.
+   */
+  starred: boolean;
   /**
    * How many times this topic has been failed outright — FSRS's own `lapses`,
    * summed over the topics a section teaches.
@@ -177,11 +180,12 @@ export interface TopicProgress {
    * short intervals with no sign anywhere that it was the one going badly. That
    * matters more here than in an app that grades you: nothing else notices.
    *
-   * A count, not a verdict. What counts as stuck is the caller's to decide and
-   * the student's to act on — the schedule is not suspended and nothing is
-   * hidden, because a topic taken out of the rotation for its own good is a
-   * decision made on somebody's behalf, which is not how anything else here
-   * behaves.
+   * A count, not a verdict, and it stays one. The app does not suspend a topic
+   * on the student's behalf, because a topic taken out of the rotation for its
+   * own good is a decision made for somebody, which is not how anything else
+   * here behaves. What the student may do is take it out themselves —
+   * `dismissTopic` — and this is the number that tells them there is something
+   * to decide.
    */
   lapses: number;
 }
@@ -196,8 +200,6 @@ export interface FamilyProgress {
   id: FamilyId;
   label: string;
   topics: TopicProgress[];
-  /** Mean mastery across the family's topics, 0–1. Unseen topics count as 0. */
-  percent: number;
 }
 
 /** One thing the scheduler will ask for, and when. */
@@ -226,35 +228,23 @@ export interface BankedQuestion {
   attempts: Attempt[];
 }
 
-/** Mastery as a 0–1 fraction; an ungraded topic is 0. */
-function fraction(mastery: number | undefined): number {
-  return ((mastery ?? MASTERY_MIN) - MASTERY_MIN) / (MASTERY_MAX - MASTERY_MIN);
-}
+const ROUND_VIA: readonly RoundVia[] = ["review", "new", "drill"];
 
 /**
- * Mean mastery over the topics of a list that can be studied at all.
+ * Whether a saved round says something this version still understands, and what
+ * it says. Written against the values rather than the type so a `via` that has
+ * since been retired — "quiz" — is caught rather than trusted.
  *
- * Written once because the whole-syllabus figure and the per-family one have to
- * count the same population: a reading page belongs to a family and appears in
- * its list, but it is not a thing anyone can be part-way through, so it is in
- * neither denominator. Nothing teachable left means nothing to report, and 0 is
- * what an empty average has always returned here.
+ * `"sweep"` is the one retired value that is *translated* rather than rejected.
+ * It meant the book's walk coming back round to a topic already graded, and
+ * files written before the walk was removed carry rounds stamped with it. Such
+ * a round is a run of practice on one topic, which is what `"drill"` is; read
+ * as unknown it would fall back to `"review"` and the badge would call a
+ * practice round a review it never was.
  */
-function meanMastery(topics: readonly TopicProgress[]): number {
-  const scored = topics.filter((t) => !t.readingOnly);
-  if (scored.length === 0) return 0;
-  return scored.reduce((sum, t) => sum + fraction(t.mastery), 0) / scored.length;
-}
-
-const ROUND_VIA: readonly RoundVia[] = ["review", "new", "drill", "sweep"];
-
-/**
- * Whether a saved round says something this version still understands. Written
- * against the values rather than the type so a `via` that has since been
- * retired — "quiz" — is caught rather than trusted.
- */
-function isRoundVia(via: unknown): via is RoundVia {
-  return ROUND_VIA.some((v) => v === via);
+function readRoundVia(via: unknown): RoundVia | null {
+  if (via === "sweep") return "drill";
+  return ROUND_VIA.find((v) => v === via) ?? null;
 }
 
 /**
@@ -344,10 +334,8 @@ export class Session {
     );
     this.p = fixed.progress;
     this.repaired = fixed.repaired;
-    // Progress files written before mastery tracking have no map; there is no
-    // migration layer, so default it here. Same for the answer trail and the
-    // citation generation — a file written before either simply has none.
-    this.p.topicMastery ??= {};
+    // A file written before the answer trail existed simply has none; there is
+    // no migration layer, so default it here. Same for the citation generation.
     this.p.attempts ??= {};
     // A file written before topics were served in cycles has none. Absent means
     // "nothing has been served here yet", which is the honest reading of a file
@@ -357,7 +345,6 @@ export class Session {
     this.p.testCycles ??= {};
     this.p.citationsVersion ??= 1;
     this.p.openRound ??= null;
-    this.p.bookAt ??= null;
     this.p.practise ??= null;
     this.migrate();
     // A round stored before it recorded where the student was in it. There is
@@ -379,47 +366,42 @@ export class Session {
   private migrate(): void {
     const old: LegacyProgress = this.p;
 
-    // Placement is gone, but what it wrote down was a claim the student made
-    // about themselves, and the map has always drawn those sections as fully
-    // mastered. So they become exactly that: the bars are unchanged, and the
-    // book cursor — which is placed by mastery — steps past them as it did.
-    if (old.knownSections) {
-      for (const id of old.knownSections) this.p.topicMastery[id] ??= MASTERY_MAX;
-      delete old.knownSections;
-    }
     delete old.placement;
     delete old.placementDone;
     // Which errand you are on resets with every launch; a file cannot say.
     delete old.exploring;
-
-    // One book-wide cursor replaces the per-family map, and only where the
-    // student had actually asked for one: a family focus is what "study from
-    // here" used to leave behind, and its frontier is where. A drill focus has
-    // no run marker to resume from, so it goes back to the book.
-    if (this.p.bookAt === null && old.focus?.kind === "family") {
-      this.p.bookAt = old.frontiers?.[old.focus.id] ?? null;
-    }
     delete old.focus;
     delete old.frontiers;
 
-    // "Quiz me" is gone. A round it opened is still four sentences on a topic,
-    // and what it was shown as is the honest answer — the same reading a round
-    // written before `via` existed gets.
+    /*
+     * The three fields the walk through the book was made of, and the score
+     * that placed it. All dropped rather than folded, because there is nothing
+     * left for them to fold into — see `LegacyProgress`.
+     *
+     * `knownSections` is the one worth a word. It was a claim the student made
+     * about themselves at placement, and it folded into mastery at the top
+     * band, which kept the cursor off those sections. Nothing skips sections
+     * now — the student names the topic — so the claim has no work to do, and
+     * the only trace of it is that such a topic teaches itself once more the
+     * first time it is practised, since `everGraded` reads the answer trail and
+     * a placement claim left no answers on it.
+     */
+    delete old.knownSections;
+    delete old.topicMastery;
+    delete old.bookAt;
+    delete old.bookAtByGrammar;
+
+    // "Quiz me" is gone, and so is the book's sweep. A round either opened is
+    // still four sentences on a topic, and what it was shown as is the honest
+    // answer — the same reading a round written before `via` existed gets.
     const round = this.p.openRound;
-    if (round && !isRoundVia(round.via)) {
-      round.via = round.isNew ? "new" : "review";
+    if (round) {
+      round.via = readRoundVia(round.via) ?? (round.isNew ? "new" : "review");
     }
   }
 
-  // --- what exploring is doing ---------------------------------------------
+  // --- what studying is doing ----------------------------------------------
 
-  /**
-   * The section exploring will serve next, placing the cursor if nothing has.
-   *
-   * An unplaced cursor lands on the earliest topic short of the top band,
-   * which is what a fresh deck wants and what choosing book order asks for.
-   * Null only when the whole book is mastered.
-   */
   /** The book being read. Absent on the progress file means the primary. */
   get grammarId(): string {
     const id = this.p.grammarId;
@@ -432,7 +414,7 @@ export class Session {
    * Open a different grammar of the same language.
    *
    * Nothing is migrated and nothing is recomputed, because nothing moved: the
-   * cards, the mastery and the answers stay filed under the primary's topics,
+   * cards, the stars and the answers stay filed under the primary's topics,
    * and this changes only which book's topics are drawn over them.
    */
   setGrammar(id: string): void {
@@ -441,65 +423,6 @@ export class Session {
     this.touch();
   }
 
-  /** This book's cursor. The primary's is `bookAt`; the rest are beside it. */
-  private cursorAt(): string | null | undefined {
-    return this.grammarId === this.content.primaryGrammar
-      ? this.p.bookAt
-      : this.p.bookAtByGrammar?.[this.grammarId];
-  }
-
-  private setCursor(at: string | null): void {
-    if (this.grammarId === this.content.primaryGrammar) {
-      this.p.bookAt = at;
-      return;
-    }
-    this.p.bookAtByGrammar = { ...(this.p.bookAtByGrammar ?? {}), [this.grammarId]: at };
-  }
-
-  bookCursor(): string | null {
-    const at = this.cursorAt();
-    // A cursor left in another book is not this book's cursor, so it is placed
-    // afresh rather than followed into a syllabus that does not hold it.
-    if (
-      at !== null && at !== undefined &&
-      this.content.getSection(at) &&
-      this.content.grammarOf(at) === this.grammarId
-    ) {
-      return at;
-    }
-    return this.earliestUnmastered();
-  }
-
-  /**
-   * Step the cursor on to the next section of the book, whatever happened on
-   * this one.
-   *
-   * Forward regardless of the grade, and without skipping what is already
-   * mastered. A cursor that waited for mastery could not move past a topic
-   * going badly, which is the one topic a student most needs to be able to
-   * leave; and a cursor that skipped would make "read on from here" mean
-   * something other than reading on. Past the end it wraps to whatever the
-   * book still has short of mastery, so nothing is stranded behind it.
-   */
-  advanceCursor(): void {
-    const ids = this.content.topicIds(this.grammarId);
-    const at = this.bookCursor();
-    const next = at === null ? -1 : ids.indexOf(at) + 1;
-    this.setCursor(
-      next > 0 && next < ids.length ? ids[next]! : this.earliestUnmastered(),
-    );
-    this.touch();
-  }
-
-  /** The first topic in book order that has not reached the top band. */
-  private earliestUnmastered(): string | null {
-    return this.content.topicIds(this.grammarId).find((id) => !this.mastered(id)) ?? null;
-  }
-
-  /**
-   * The top mastery band — the bar full. Scores land on exact halves, so this
-   * is an equality test wearing a comparison's clothes.
-   */
   /**
    * The answers filed under a section, whichever book named it.
    *
@@ -540,49 +463,97 @@ export class Session {
     return ids.length === 1 ? ids[0]! : ids.join("\n");
   }
 
-  private mastered(sectionId: string): boolean {
-    /*
-     * Every topic it teaches, not the average of them. A section of a further
-     * grammar may draw on two of the primary's, and a student who has finished
-     * one of those two has not finished this. `every` on an empty list would
-     * say yes, so a section the crosswalk does not reach is never mastered —
-     * which is right: it has nothing to master.
-     */
-    const primary = this.content.primaryTopicsFor(sectionId);
-    return (
-      primary.length > 0 &&
-      primary.every((id) => (this.p.topicMastery[id] ?? 0) >= MASTERY_MAX)
-    );
-  }
-
   /**
-   * Whether this topic has ever been graded. What tells a genuinely new topic
-   * from one the book has come back to, which is the difference between
-   * teaching before testing and simply asking.
+   * Whether this topic has ever been answered. What tells a genuinely new topic
+   * from one being come back to, which is the difference between teaching
+   * before testing and simply asking.
+   *
+   * Read off the answer trail rather than off the topic's card, and the
+   * difference matters exactly once: `dismissTopic` deletes the card. Keyed on
+   * the card, a topic taken out of the review pile would come back as though it
+   * had never been studied and teach itself from the top the next time it was
+   * practised — which is the opposite of what dismissing it said. The trail is
+   * uncapped and nothing deletes it.
    */
   everGraded(sectionId: string): boolean {
-    return this.p.topicMastery[sectionId] !== undefined;
+    return this.attemptTrail(sectionId).length > 0;
   }
 
-  /** Read the book in order, from the earliest thing not yet mastered. */
-  bookOrder(): void {
-    this.p.practise = null;
-    this.p.bookAt = this.earliestUnmastered();
+  /**
+   * Mark a topic to come back to, or unmark it.
+   *
+   * Filed under the primary topics the section teaches, like every other fact
+   * about a topic here, so a star survives a book switch and a section of a
+   * further grammar that teaches two of the primary's stars both — the lockstep
+   * `grammars.test.ts` asserts for the rest of progress.
+   *
+   * A section the crosswalk does not reach has no primary topic to file under
+   * and cannot be starred. That is the same silence as its having no questions:
+   * there is nothing there to come back to.
+   */
+  star(sectionId: string): void {
+    const ids = this.content.primaryTopicsFor(sectionId);
+    const starred = this.p.starred ?? [];
+    const added = ids.filter((id) => !starred.includes(id));
+    if (added.length === 0) return;
+    this.p.starred = [...starred, ...added];
+    this.touch();
+  }
+
+  unstar(sectionId: string): void {
+    const ids = new Set(this.content.primaryTopicsFor(sectionId));
+    const starred = this.p.starred ?? [];
+    const left = starred.filter((id) => !ids.has(id));
+    if (left.length === starred.length) return;
+    this.p.starred = left;
     this.touch();
   }
 
   /**
-   * Take the book up from here and read on to the end of it, families and all.
-   *
-   * The topics behind it are skipped rather than marked known — the map goes
-   * on showing them unstudied, because they are — and the walk comes back
-   * round to them once it runs off the end.
+   * Whether the star is on. Any of the section's primary topics, matching
+   * `star`, which sets them all: the two only disagree on a file where one of
+   * them was starred through a book that teaches them separately.
    */
-  studyFrom(sectionId: string): void {
-    if (!this.content.getSection(sectionId)) return;
-    this.p.practise = null;
-    this.p.bookAt = sectionId;
-    this.touch();
+  isStarred(sectionId: string): boolean {
+    const starred = this.p.starred;
+    if (!starred || starred.length === 0) return false;
+    return this.content
+      .primaryTopicsFor(sectionId)
+      .some((id) => starred.includes(id));
+  }
+
+  /**
+   * Take a topic out of the review pile.
+   *
+   * The way back from a topic that keeps coming due and is not what the student
+   * needs — the same way back `deleteVocab` is for a word saved by a stray
+   * press, and it deletes the same kind of thing: the scheduling card, and only
+   * that. The answer trail stays, the star stays, the questions were never the
+   * student's to delete.
+   *
+   * Nothing is hidden by it and nothing is suspended. The topic is on the index
+   * as it always was, and practising it puts it back in the pile on the next
+   * grade — which is the difference between this and a suspension: it is a
+   * decision the student made about their own pile, and one grade undoes it.
+   *
+   * The open round goes with the card. `gradeTopic` rebuilds a topic's card
+   * from `cardBefore` on every grade of a round, so a dismissal taken mid-round
+   * would be undone silently by the round's next answer.
+   */
+  dismissTopic(sectionId: string): void {
+    const ids = this.content.primaryTopicsFor(sectionId);
+    let dropped = false;
+    for (const id of ids) {
+      if (this.p.topicCards[id] === undefined) continue;
+      delete this.p.topicCards[id];
+      dropped = true;
+    }
+    const open = this.p.openRound;
+    if (open && ids.includes(open.sectionId)) {
+      this.p.openRound = null;
+      dropped = true;
+    }
+    if (dropped) this.touch();
   }
 
   /** Stay on this topic and work a fresh run of its questions out. */
@@ -769,15 +740,15 @@ export class Session {
       return { kind: "done" };
     }
 
+    // Nothing chosen is nothing to do. This used to fall through to a cursor
+    // walking the book, so the app always had a next section to hand over and
+    // a student always had somewhere to be put; what they did not have was a
+    // say in it. `done` here is the screen that asks for a topic.
     const run = this.practiseRun();
-    if (run) {
-      return this.practiceLeft(run) > 0
-        ? { kind: "drill", sectionId: run.sectionId }
-        : { kind: "practised", sectionId: run.sectionId };
-    }
-
-    const ahead = this.bookCursor();
-    return ahead ? { kind: "new-topic", sectionId: ahead } : { kind: "done" };
+    if (!run) return { kind: "done" };
+    return this.practiceLeft(run) > 0
+      ? { kind: "drill", sectionId: run.sectionId }
+      : { kind: "practised", sectionId: run.sectionId };
   }
 
   /**
@@ -799,8 +770,8 @@ export class Session {
     const tests = quotedOnly
       ? this.content.testsFor(sectionId).filter(isQuoted)
       : this.content.testsFor(sectionId);
-    // Before the cycle is written, so a topic this cannot serve — and the walk
-    // steps over hundreds of them — leaves nothing behind in the file.
+    // Before the cycle is written, so a topic this cannot serve leaves nothing
+    // behind in the file.
     if (tests.length === 0) return undefined;
     const key = this.cycleKey(sectionId);
     const cycle = (this.p.testCycles[key] ??= { seed: randomSeed(), at: 0 });
@@ -882,12 +853,6 @@ export class Session {
       ...(graded === sectionId ? {} : { viewedAs: sectionId }),
       roundId: test.id,
       cardBefore: this.p.topicCards[graded] ?? null,
-      // Beside `cardBefore` and taken at the same moment. A topic never graded
-      // stood at the floor, which is not an invention: it is what `fraction`
-      // and every bar in both apps already read an absent mastery as, and the
-      // first round on a topic is exactly the one whose movement is worth
-      // drawing. What "never started" means stays `topicMastery`'s to say.
-      masteryBefore: this.p.topicMastery[graded] ?? MASTERY_MIN,
       worst: null,
       answered: 0,
       isNew,
@@ -912,14 +877,13 @@ export class Session {
    * same line. What that one is for is putting an unfinished round back; this
    * is for the moment a finished one is stood still in.
    *
-   * Three facts that have to agree with each other and with `gradeTopic`'s own
-   * arithmetic: where the topic stood, where it stands, and when the card the
-   * round just wrote brings it back. A screen assembling those out of
-   * `progress()` would drift the first time the mastery deltas moved, and would
-   * drift in two apps rather than in one.
+   * The one fact that has to agree with `gradeTopic`'s own arithmetic: when the
+   * card the round just wrote brings the topic back. A screen assembling that
+   * out of `progress()` would drift the first time the scheduler moved, and
+   * would drift in two apps rather than in one.
    *
    * Deliberately silent about how the round was graded. What belongs on that
-   * screen is where a topic has got to and when it returns; the grades are the
+   * screen is which topic was worked on and when it returns; the grades are the
    * schedule's business and are already spent on the card. Adding them up is
    * how four self-assessments turn into a score.
    *
@@ -933,10 +897,6 @@ export class Session {
     sectionId: string;
     /** The section it was being read in, when that is another book's. */
     viewedAs?: string;
-    /** Where the topic stood before the round; absent if it had never been graded. */
-    masteryBefore?: number;
-    /** Where it stands now, 1–4. */
-    mastery: number;
     /** When the card this round wrote brings the topic back. */
     due: Date;
     /** Authors this round introduced, in the order they were met. */
@@ -953,10 +913,6 @@ export class Session {
     return {
       sectionId: open.sectionId,
       ...(open.viewedAs ? { viewedAs: open.viewedAs } : {}),
-      ...(open.masteryBefore === undefined
-        ? {}
-        : { masteryBefore: open.masteryBefore }),
-      mastery: this.p.topicMastery[open.sectionId] ?? MASTERY_MIN,
       due: new Date(card.due),
       met: open.met ?? [],
     };
@@ -1071,7 +1027,6 @@ export class Session {
       now,
     );
     this.p.topicCards[sectionId] = serializeCard(card);
-    const stood = this.p.topicMastery[sectionId];
     /*
      * The round, updated rather than rewritten.
      *
@@ -1104,7 +1059,6 @@ export class Session {
         sectionId,
         roundId,
         cardBefore: before,
-        masteryBefore: stood ?? MASTERY_MIN,
         isNew: false,
         worst,
         answered: 0,
@@ -1119,15 +1073,6 @@ export class Session {
       };
     }
 
-    // Mastery moves gradually, so one good answer can't mark a topic mastered
-    // and one bad day can't wipe it: good/easy +1, hard +0.5, again -1. It is
-    // per question, not per round: it is the count of what you got right.
-    const delta = rating >= 3 ? 1 : rating === 2 ? 0.5 : -1;
-    const base = stood ?? MASTERY_MIN;
-    this.p.topicMastery[sectionId] = Math.min(
-      MASTERY_MAX,
-      Math.max(MASTERY_MIN, base + delta),
-    );
     if (!existing) this.p.newTopicsIntroduced += 1;
     this.touch();
   }
@@ -1725,8 +1670,8 @@ export class Session {
   }
 
   /**
-   * Every grammar section in book order with its mastery — the model behind the
-   * progress bars and the topic explorer.
+   * Every grammar section in book order with how it stands — the model behind
+   * the index and the topic sheet.
    *
    * `answered` and `questions` come from `coverage`, so they say what exploring
    * will ask of this topic rather than what was ever written for it.
@@ -1748,9 +1693,8 @@ export class Session {
    * Per section it does a `primaryTopicsFor`, up to two `testsFor`, a
    * `coverage()` that walks the **whole** attempt trail, and a
    * `deserializeCard` — and the trail is deliberately uncapped, so it grows
-   * with years of study. Greek has 556 sections. Both apps call it on every
-   * render, and twice: `familyProgress` and `overallPercent` each go through
-   * it, so one paint of the index computed the lot twice over.
+   * with years of study. Greek has 556 sections, and both apps call this on
+   * every render.
    *
    * Keyed on three things. The **revision**, bumped by `touch()`, so any grade
    * or edit drops it. The **grammar**, because a further book's sections are a
@@ -1779,38 +1723,18 @@ export class Session {
   }
 
   private computeGrammarMap(now: Date): TopicProgress[] {
-    const cursor = this.bookCursor();
+    const starred = new Set(this.p.starred ?? []);
     return this.content.sections(this.grammarId).map((s) => {
       /*
        * A section of a further grammar reads the progress of the primary topics
        * it teaches, because those are what carry the questions. Usually one; two
-       * where the books divide differently, and then the mastery shown is the
-       * mean weighted by how much bank each side contributes, so a topic is not
-       * reported finished on the strength of its smaller half.
+       * where the books divide differently, and then every fact below is over
+       * both of them.
        */
       const primary = this.content.primaryTopicsFor(s.id);
       const cards = primary
         .map((id) => this.p.topicCards[id])
         .filter((c): c is SerializedCard => Boolean(c));
-      /*
-       * Averaged over every topic it teaches, not only the ones that have been
-       * graded — an ungraded one counts as the bottom of the scale, which is
-       * what it is. Averaging the graded alone reported a section finished on
-       * the strength of its answered half, while `mastered` went on saying it
-       * was not, and the map and the cursor disagreed on screen.
-       *
-       * Undefined only when none of them has been graded, which is what tells a
-       * topic never started from one going badly.
-       */
-      const scored = primary.some((id) => this.p.topicMastery[id] !== undefined);
-      const weight = (id: string) => this.content.testsFor(id).length || 1;
-      const total = primary.reduce((n, id) => n + weight(id), 0);
-      const mastery = scored
-        ? primary.reduce(
-            (n, id) => n + (this.p.topicMastery[id] ?? MASTERY_MIN) * weight(id),
-            0,
-          ) / total
-        : undefined;
       const { answered, total: questions } = this.coverage(s.id);
       return {
         sectionId: s.id,
@@ -1818,46 +1742,51 @@ export class Session {
         ref: s.ref,
         order: s.order,
         family: this.content.familyOf(s.family, this.grammarId),
-        mastery,
         hasTests: this.content.testsFor(s.id).length > 0,
         readingOnly: s.readingOnly === true,
         due: cards.some((c) => isDue(deserializeCard(c), now)),
+        scheduled: cards.length > 0,
         answered,
         questions,
-        frontier: cursor === s.id,
+        // Any of them, matching `star`, which sets them all.
+        starred: primary.some((id) => starred.has(id)),
         lapses: cards.reduce((n, c) => n + (c.lapses ?? 0), 0),
       };
     });
   }
 
   /**
-   * `grammarMap()` bucketed into families, in display order.
+   * The starred topics, in book order — the section the index pins at its top.
    *
-   * `topics` is every topic, because the family is a shelf of the book and a
-   * page with no exercise is still on it. `percent` is over the teachable ones
-   * alone — see `overallPercent`. A family that is nothing but reading has an
-   * empty denominator and reports 0, which the caller tells from a family at
-   * the start of being learnt by looking at the topics rather than the number.
+   * Out of `grammarMap` rather than out of `starred` directly, so a star set in
+   * one book is drawn here as the *open* book's section, with that book's title
+   * and reference on it.
    */
-  familyProgress(now: Date = new Date()): FamilyProgress[] {
-    const map = this.grammarMap(now);
-    return this.families.map(({ id, label }) => {
-      const topics = map.filter((t) => t.family === id);
-      return { id, label, topics, percent: meanMastery(topics) };
-    });
+  starredTopics(now: Date = new Date()): TopicProgress[] {
+    return this.grammarMap(now).filter((t) => t.starred);
   }
 
   /**
-   * Mean mastery across the whole syllabus, 0–1.
+   * `grammarMap()` bucketed into families, in display order.
    *
-   * Over what can be studied, not over what can be read. A pack ships the whole
-   * of its book, prosody and word formation included, and counting those as
-   * topics at nought would drop every student's figure the day the reading
-   * pages arrived — a number falling because the *book* grew says nothing true
-   * about the student.
+   * `topics` is every topic, because the family is a shelf of the book and a
+   * page with no exercise is still on it.
+   *
+   * There is no figure beside the label. There used to be — a mean mastery over
+   * the family, drawn as a bar and a percentage, with a second one over the
+   * whole syllabus above it. What it actually measured was how many of the
+   * family's topics had been *visited*, since three good answers filled a
+   * topic's score, so it rewarded touching every topic once over working one
+   * out; and it decided where the book's walk began, which is the only reason
+   * the engine computed it at all. Neither the walk nor the number is here now.
    */
-  overallPercent(now: Date = new Date()): number {
-    return meanMastery(this.grammarMap(now));
+  familyProgress(now: Date = new Date()): FamilyProgress[] {
+    const map = this.grammarMap(now);
+    return this.families.map(({ id, label }) => ({
+      id,
+      label,
+      topics: map.filter((t) => t.family === id),
+    }));
   }
 
   /**
@@ -1869,8 +1798,8 @@ export class Session {
    * study. Cloning it there would be work done on every fourth keypress for a
    * caller that only wanted to write it out.
    *
-   * What that buys is a compile error on `session.progress().bookAt = …`, which
-   * is the mutation worth stopping: it would change what the engine is running
+   * What that buys is a compile error on `session.progress().practise = …`,
+   * which is the mutation worth stopping: it would change what the engine is running
    * on *without moving `updatedAt`*, so the corruption would also never sync and
    * never be noticed. What it does not reach is a write inside one of the
    * records — `topicCards[id] = …` — because a deep readonly type would have to
@@ -1884,8 +1813,8 @@ export class Session {
   /**
    * A detached copy of everything the session mutates — the material for an
    * undo. Progress is plain JSON and the engine keeps no state outside it, so
-   * a deep clone is the whole story: grading, the book cursor and vocabulary all
-   * take back together.
+   * a deep clone is the whole story: grading, the run in flight and vocabulary
+   * all take back together.
    */
   snapshot(): Progress {
     return structuredClone(this.p);

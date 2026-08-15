@@ -104,8 +104,6 @@ type Phase =
       t: "landed";
       round?: {
         sectionId: string;
-        masteryBefore?: number;
-        mastery: number;
         due: Date;
       };
       /** The last thing waiting went with this grade. */
@@ -342,6 +340,10 @@ export function App({ content, session, storage }: Props) {
   // yet: the grade is what writes it.
   const [marks, setMarks] = useState<AttemptMarks>({});
   const [marking, setMarking] = useState(false);
+  // Whether the dismissal on the graded screen has had its first press. Not
+  // persisted and not on the round: it is armed for the screen it was pressed
+  // on and nothing else.
+  const [dismissing, setDismissing] = useState(false);
   const [toast, setToast] = useState<Flash | null>(null);
   const [dictLoading, setDictLoading] = useState(false);
   const [dictFailed, setDictFailed] = useState(false);
@@ -533,7 +535,7 @@ export function App({ content, session, storage }: Props) {
 
   // The engine is mutated in place, so views derive from it on every tick.
   const families = useMemo(() => session.familyProgress(), [session, tick]);
-  const overall = useMemo(() => session.overallPercent(), [session, tick]);
+  const starred = useMemo(() => session.starredTopics(), [session, tick]);
   const stats = useMemo(() => session.stats(), [session, tick]);
   const dueNow = stats.dueTopics + stats.dueVocab;
   // The words behind the question on screen. `dictLoading` is a dependency on
@@ -556,6 +558,10 @@ export function App({ content, session, storage }: Props) {
   // it is in `marks` until the grade writes it — but leaving the mode open
   // would mean a hold that silently does nothing on the next question.
   useEffect(() => setMarking(false), [question?.prompt, sectionId, phase.t]);
+  // A half-given dismissal ends with its screen too, and it is the one of these
+  // that would be dangerous to leave armed: the first press names a topic, and
+  // the second press on a different one would take that one out of the pile.
+  useEffect(() => setDismissing(false), [question?.prompt, sectionId, phase.t]);
 
   // --- the loop ------------------------------------------------------------
 
@@ -564,22 +570,17 @@ export function App({ content, session, storage }: Props) {
    *
    * Shared by the two ways study leaves a round behind — the loop moving on of
    * its own accord, and a card chosen off the schedule — so what "leaving"
-   * costs the book cannot come to mean two things.
+   * costs cannot come to mean two things.
+   *
+   * It used to step a cursor through the book here, so ending a round the book
+   * had served also moved the book on. Nothing moves on now: a run stays on the
+   * topic it was started on until the student picks another.
    */
   const leaveRound = useCallback(() => {
     setInput("");
     setSubmitted("");
     setMarks({});
-    const ending = session.progress().openRound;
     session.endRound();
-    // The book reads on when a round *it* served ends — whatever the grade
-    // was, and whether or not the round was finished. Keyed off what the
-    // round was rather than what the loop is doing next, so a review or a
-    // practice run in between costs the book nothing.
-    const wasBook = ending?.via === "new" || ending?.via === "sweep";
-    if (wasBook && ending?.sectionId === session.bookCursor()) {
-      session.advanceCursor();
-    }
   }, [session]);
 
   /**
@@ -608,7 +609,7 @@ export function App({ content, session, storage }: Props) {
         // card of its own, and a switch thrown silently underneath a moment
         // would be the app talking over it.
         setMode("explore");
-        flash("Nothing left due — back to the book.");
+        flash("Nothing left due.");
         advance("explore");
         return;
       }
@@ -642,22 +643,18 @@ export function App({ content, session, storage }: Props) {
         return;
       }
 
-      // The preference binds every errand that serves a sentence, and binds
-      // them differently. The two that go looking for something new — the walk
-      // through the book and a practice run — take it whole, and a topic it
-      // empties is stepped over below. A review takes it with a floor under
-      // it: `serveReview` asks for a quotation and falls back to the topic's
-      // whole cycle rather than leave a due card with nothing to come back on.
-      const quotedOnly =
-        session.quotedOnly() &&
-        (action.kind === "new-topic" || action.kind === "drill");
-      // A practice run serves out of its own set; everything else rotates.
+      // The preference binds both errands that serve a sentence, and binds them
+      // differently. A practice run takes it whole: the student chose the
+      // topic, and `TopicSheet` will not offer a run on one the preference
+      // empties. A review takes it with a floor under it — `serveReview` asks
+      // for a quotation and falls back to the topic's whole cycle rather than
+      // leave a due card with nothing to come back on.
+      const quotedOnly = session.quotedOnly() && action.kind === "drill";
+      // A practice run serves out of its own set; a review rotates.
       const served =
         action.kind === "drill"
           ? session.servePractice(action.sectionId)
-          : action.kind === "topic-review"
-            ? session.serveReview(action.sectionId)
-            : session.serveTest(action.sectionId, quotedOnly);
+          : session.serveReview(action.sectionId);
       if (!served) {
         // A topic with no tests cannot be studied; pass it so the loop moves on
         // rather than offering it again forever. But a topic with tests the
@@ -669,21 +666,21 @@ export function App({ content, session, storage }: Props) {
         if (!(quotedOnly && session.hasTests(action.sectionId))) {
           session.gradeTopic(action.sectionId, 3);
         }
-        if (action.kind === "new-topic") session.advanceCursor();
         advance(asked);
         return;
       }
-      // Never met is not the same as never mastered: the book comes back to
-      // topics it has already taught, and teaching those again is not teaching.
+      /*
+       * Whether to teach before testing, and it is not the same question as
+       * what the badge says. Never *answered* rather than never mastered: a
+       * topic can be come back to after a dismissal or after years, and
+       * teaching those again is not teaching.
+       */
       const fresh = !session.everGraded(action.sectionId);
-      const via: RoundVia =
-        action.kind === "drill"
-          ? "drill"
-          : action.kind === "topic-review"
-            ? "review"
-            : fresh
-              ? "new"
-              : "sweep";
+      // Two reasons a round can be on screen, because there are two errands.
+      // `"new"` was a third — the book's walk arriving somewhere for the first
+      // time — and it is not a reason any more: a topic is on screen because
+      // somebody asked for it, whether or not they have been here before.
+      const via: RoundVia = action.kind === "topic-review" ? "review" : "drill";
       setSectionId(action.sectionId);
       setTest(served);
       setQIndex(0);
@@ -869,7 +866,7 @@ export function App({ content, session, storage }: Props) {
        * times is the one working hardest, and this is for finishing.
        *
        * The round is deliberately not ended here. `leaveRound()` — which
-       * `advance` calls first thing, and which also steps the book cursor — is
+       * `advance` calls first thing — is
        * what "Keep going" means. A student who closes the app on this card
        * loses nothing: a round with every question graded is not resumable, so
        * the next launch falls through to `advance` and puts it down exactly as
@@ -886,16 +883,7 @@ export function App({ content, session, storage }: Props) {
       setPhase({
         t: "landed",
         ...(landed
-          ? {
-              round: {
-                sectionId: landed.sectionId,
-                ...(landed.masteryBefore === undefined
-                  ? {}
-                  : { masteryBefore: landed.masteryBefore }),
-                mastery: landed.mastery,
-                due: landed.due,
-              },
-            }
+          ? { round: { sectionId: landed.sectionId, due: landed.due } }
           : {}),
         cleared,
         ...(author ? { met: author } : {}),
@@ -960,43 +948,18 @@ export function App({ content, session, storage }: Props) {
     flash(
       next === "review"
         ? `Back to the reviews — ${dueNow} waiting.`
-        : "Reviews set aside — back to the book.",
+        : "Reviews set aside.",
     );
   };
 
-  /** Read the book in order again, from the earliest thing short of mastery. */
-  const bookOrder = () => {
-    session.bookOrder();
-    save();
-    setOverlay(null);
-    setMode("explore");
-    advance("explore");
-    flash("Back to the book in order.");
-  };
-
   /**
-   * Take the book up from a chosen topic and read on from there.
+   * Stay on a topic and work a run of its questions out.
    *
-   * The one thing the index is really for, and the one that used to be
-   * impossible: knowing your declensions and wanting to start at the verbs,
-   * rather than being handed chapter one again after every jump.
-   */
-  const studyFrom = (topic: TopicProgress) => {
-    session.studyFrom(topic.sectionId);
-    save();
-    setOverlay(null);
-    // Choosing off the index is an instruction about the book, so it is also a
-    // request to be reading it; serving it "after the reviews" is the thing the
-    // switch exists to stop.
-    setMode("explore");
-    advance("explore");
-    flash(`Reading on from “${topic.title}”.`);
-  };
-
-  /**
-   * Stay on a topic and work a run of its questions out. Four questions do not
-   * sweep a bank of twenty-odd, so doing well on a test and being moved
-   * straight on is not the same as having the topic.
+   * The one way onto a topic, and the whole of what studying is when nothing is
+   * due. A run stays where it was started until another topic is chosen, which
+   * is the point: four questions do not sweep a bank of twenty-odd, so doing
+   * well on a test and being moved straight on was never the same as having the
+   * topic.
    *
    * A swept bank is not a reason to refuse: asking again is asking for the
    * whole thing a second time, which is what a second run is.
@@ -1009,6 +972,38 @@ export function App({ content, session, storage }: Props) {
     advance("explore");
     const run = session.practice(topic.sectionId);
     flash(`Practising “${topic.title}” — ${run?.total ?? 0} to go.`);
+  };
+
+  /** Mark a topic to come back to, or take the mark off. */
+  const toggleStar = (topic: TopicProgress) => {
+    navigator.vibrate?.(8);
+    const on = session.isStarred(topic.sectionId);
+    if (on) session.unstar(topic.sectionId);
+    else session.star(topic.sectionId);
+    save();
+    bump();
+    flash(on ? `Unstarred “${topic.title}”.` : `Starred “${topic.title}”.`);
+  };
+
+  /**
+   * Take a topic out of the review pile, from wherever it was asked for.
+   *
+   * The grammar half of `removeVocab`, and it has to do the same two things:
+   * write the deletion, and get off the round the deleted thing was under. A
+   * dismissal taken mid-review would otherwise be undone by that round's next
+   * grade, which rebuilds the card from what it stood at before the round.
+   */
+  const dismissTopic = (target: string, title: string) => {
+    // Whether the round in flight was this topic's is the engine's answer, not
+    // a string comparison here: `target` may be a further grammar's section and
+    // the round is filed under the primary topic it teaches.
+    const had = session.progress().openRound !== null;
+    session.dismissTopic(target);
+    const took = had && session.progress().openRound === null;
+    save();
+    flash(`“${title}” is out of the review pile.`);
+    if (took) advance();
+    else bump();
   };
 
   /**
@@ -1850,7 +1845,6 @@ export function App({ content, session, storage }: Props) {
     review: "review",
     new: "new",
     drill: "drill",
-    sweep: "revisiting",
     vocab: "vocabulary",
   };
   // How far through a run of practice you are, said where the round is already
@@ -2088,6 +2082,25 @@ export function App({ content, session, storage }: Props) {
               sectionId && setOverlay({ t: "grammar", sectionId })
             }
             onToggleMarking={() => setMarking((on) => !on)}
+            // Only on a review: this is the moment the topic has just shown it
+            // is not what the student needs. On a run they chose the topic a
+            // moment ago, and the way out is choosing another.
+            onDismiss={
+              via === "review" && sectionId
+                ? () => {
+                    if (!dismissing) {
+                      setDismissing(true);
+                      return;
+                    }
+                    setDismissing(false);
+                    dismissTopic(
+                      sectionId,
+                      content.getSection(sectionId)?.title ?? "This topic",
+                    );
+                  }
+                : undefined
+            }
+            dismissing={dismissing}
             onMark={markHere}
             onCopy={copyText}
             vocabulary={
@@ -2148,7 +2161,6 @@ export function App({ content, session, storage }: Props) {
                   save();
                   advance("explore");
                 }}
-                onBook={bookOrder}
                 onOpenMap={() => setOverlay({ t: "map" })}
               />
             );
@@ -2165,7 +2177,6 @@ export function App({ content, session, storage }: Props) {
             round={phase.round}
             cleared={phase.cleared}
             met={phase.met}
-            overall={overall}
             nextDue={nextDue}
             onKeepGoing={() => {
               if (phase.cleared) {
@@ -2184,7 +2195,6 @@ export function App({ content, session, storage }: Props) {
 
         {phase.t === "done" && (
           <Rest
-            overall={overall}
             nextDue={nextDue}
             onOpenMap={() => setOverlay({ t: "map" })}
             onOpenSchedule={() => setOverlay({ t: "schedule" })}
@@ -2250,7 +2260,7 @@ export function App({ content, session, storage }: Props) {
       {overlay?.t === "map" && (
         <MapSheet
           families={families}
-          overall={overall}
+          starred={starred}
           quotedOnly={session.quotedOnly()}
           currentFamily={
             families.find((f) =>
@@ -2284,11 +2294,21 @@ export function App({ content, session, storage }: Props) {
               onRead={() =>
                 setOverlay({ t: "grammar", sectionId: topic.sectionId, back: overlay })
               }
-              onBookOrder={bookOrder}
-              onStudyFrom={() => studyFrom(topic)}
               onDrill={() => drillTopic(topic)}
               onQuestions={() =>
                 setOverlay({ t: "questions", sectionId: topic.sectionId })
+              }
+              onStar={() => toggleStar(topic)}
+              // Only where there is a pile to leave. A topic with no card is
+              // already out of it, which is also what the sheet looks like the
+              // moment after a dismissal.
+              onDismiss={
+                topic.scheduled
+                  ? () => {
+                      dismissTopic(topic.sectionId, topic.title);
+                      setOverlay(overlay.back ?? { t: "map" });
+                    }
+                  : undefined
               }
               onMark={markPast(topic.sectionId)}
               onHoldWord={holdPastWord}

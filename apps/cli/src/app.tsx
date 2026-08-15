@@ -59,6 +59,8 @@ type Origin =
   | { t: "graded" }
   | { t: "vocab-review-front"; cardId: string }
   | { t: "vocab-review-back"; cardId: string }
+  /** A run worked out — now an ordinary place to open the index from. */
+  | { t: "practised"; sectionId: string }
   | { t: "done" };
 
 /** The map, named so the schedule can say it came from one and go back to it. */
@@ -158,10 +160,11 @@ export function App({ session, content, storage }: Props) {
   const [showGrammar, setShowGrammar] = useState(false);
   const [showHistory, setShowHistory] = useState(false);
   const [showVocab, setShowVocab] = useState(false); // the question's word list
-  // Enter and f on the map both act at once, which from a half-written answer
-  // costs something, so they are asked for twice. Which of the two is waiting,
-  // so the second press does what the warning named.
-  const [confirmMap, setConfirmMap] = useState<null | "practise" | "study">(null);
+  // Two keys on the map ask before they act, for different reasons: Enter would
+  // throw away a half-written answer, and `x` takes a topic off the review pile.
+  // Which of the two is waiting, so the second press does what the warning
+  // named — and moving the cursor cancels it, because the warning named a topic.
+  const [confirmMap, setConfirmMap] = useState<null | "practise" | "dismiss">(null);
   const [input, setInput] = useState(""); // current typed answer / vocab form
   const [submitted, setSubmitted] = useState(""); // the answer the student submitted
   const [flash, setFlash] = useState<string | null>(null);
@@ -198,7 +201,6 @@ export function App({ session, content, storage }: Props) {
   // so the cursor can walk straight across family boundaries.
   const families = useMemo(() => session.familyProgress(), [tick, session]);
   const mapTopics = useMemo(() => families.flatMap((f) => f.topics), [families]);
-  const overall = useMemo(() => session.overallPercent(), [tick, session]);
   const familyStarts = useMemo(() => {
     const starts: number[] = [];
     let n = 0;
@@ -322,15 +324,7 @@ export function App({ session, content, storage }: Props) {
    * hand; switching passes the new one, since `mode` has not re-rendered yet
    * at the point the switch calls this.
    */
-  const advance = (
-    asked: Mode = mode,
-    // The book reads on when a round it served ends, whatever the grade was
-    // and whether or not the round was finished. Read off this screen's own
-    // `via` rather than the saved round, since the CLI grades per test and
-    // never opens one. False on the recursive calls below: the round that
-    // ended has already been stepped past by the first of them.
-    stepBook = via === "new" || via === "sweep",
-  ) => {
+  const advance = (asked: Mode = mode) => {
     setFlash(null);
     setShowGrammar(false);
     setShowHistory(false);
@@ -338,14 +332,12 @@ export function App({ session, content, storage }: Props) {
     setInput("");
     setSubmitted("");
 
-    if (stepBook && sectionId === session.bookCursor()) session.advanceCursor();
-
     const action = session.next(new Date(), asked);
     if (action.kind === "done" && asked === "review") {
       // The pile is cleared, so Review is no longer somewhere to be.
       setMode("explore");
-      setFlash("Nothing left due — back to the book.");
-      advance("explore", false);
+      setFlash("Nothing left due.");
+      advance("explore");
       return;
     }
     if (action.kind === "done") {
@@ -368,21 +360,16 @@ export function App({ session, content, storage }: Props) {
       return;
     }
     // The quoted-only preference travels with the deck, so a deck set up on
-    // the phone arrives here already asking for it. The two errands that go
-    // looking for something new take it whole, and a topic it empties is
-    // stepped over below; a review takes it with a floor under it, falling
-    // back to the whole cycle on a topic with nothing quoted rather than
-    // leaving a due card with nothing to come back on.
-    const quotedOnly =
-      session.quotedOnly() &&
-      (action.kind === "new-topic" || action.kind === "drill");
-    // A practice run serves out of its own set; everything else rotates.
+    // the phone arrives here already asking for it. A practice run takes it
+    // whole — the student chose the topic; a review takes it with a floor
+    // under it, falling back to the whole cycle on a topic with nothing quoted
+    // rather than leaving a due card with nothing to come back on.
+    const quotedOnly = session.quotedOnly() && action.kind === "drill";
+    // A practice run serves out of its own set; a review rotates.
     const t =
       action.kind === "drill"
         ? session.servePractice(action.sectionId)
-        : action.kind === "topic-review"
-          ? session.serveReview(action.sectionId)
-          : session.serveTest(action.sectionId, quotedOnly);
+        : session.serveReview(action.sectionId);
     if (!t) {
       // A topic nothing was written for is passed so the loop moves on. A
       // topic whose tests the preference filtered out is stepped over instead:
@@ -391,25 +378,18 @@ export function App({ session, content, storage }: Props) {
       if (!(quotedOnly && session.hasTests(action.sectionId))) {
         session.gradeTopic(action.sectionId, 3);
       }
-      if (action.kind === "new-topic") session.advanceCursor();
-      advance(asked, false);
+      advance(asked);
       return;
     }
-    // Never met is not the same as never mastered: the book comes back to
-    // topics it has already taught, and teaching those again is not teaching.
+    // Whether to teach before testing, which is not what the badge says. Never
+    // answered rather than never mastered: a topic can be come back to after a
+    // dismissal or after years, and teaching those again is not teaching.
     const fresh = !session.everGraded(action.sectionId);
     setSectionId(action.sectionId);
     setTest(t);
     setQIndex(0);
-    setVia(
-      action.kind === "drill"
-        ? "drill"
-        : action.kind === "topic-review"
-          ? "review"
-          : fresh
-            ? "new"
-            : "sweep",
-    );
+    // Two reasons a round can be on screen, because there are two errands.
+    setVia(action.kind === "topic-review" ? "review" : "drill");
     setShowGrammar(fresh); // teach first on ground never met
     setPhase({ t: "answering" });
     setTick((n) => n + 1);
@@ -600,10 +580,18 @@ export function App({ session, content, storage }: Props) {
     setPhase({ t: "vocab-pick", form, candidates, context });
   };
 
-  /** Open the grammar index, parked on the current topic (or the first unstudied one). */
+  /**
+   * Open the grammar index, parked where the student is most likely to want it:
+   * the topic on screen, else the first starred one, else the first that is due.
+   *
+   * It used to fall back to the first topic never graded, which was the head of
+   * the queue when the book had a queue. Nothing is queued now, so the fallback
+   * is the student's own shortlist and then the pile.
+   */
   const openMap = (from: Origin) => {
     let i = mapTopics.findIndex((t) => t.sectionId === sectionId);
-    if (i < 0) i = mapTopics.findIndex((t) => t.mastery === undefined);
+    if (i < 0) i = mapTopics.findIndex((t) => t.starred);
+    if (i < 0) i = mapTopics.findIndex((t) => t.due);
     setMapIndex(i < 0 ? 0 : i);
     setFlash(null);
     setConfirmMap(null);
@@ -732,38 +720,44 @@ export function App({ session, content, storage }: Props) {
     setFlash(`Practising “${target.title}” — ${run?.total ?? 0} to go.`);
   };
 
-  /**
-   * Take the book up at the topic under the cursor and read on from there.
-   *
-   * The thing a student wants from the index that used to be impossible:
-   * knowing your declensions and wanting to start at the verbs, rather than
-   * being handed chapter one again after every jump.
-   */
-  const studySelected = (from: Origin) => {
+  /** Mark the topic under the cursor to come back to, or take the mark off. */
+  const starSelected = () => {
     const target = mapTopics[mapIndex];
     if (!target) return;
-    if (from.t === "answering" && confirmMap !== "study") {
-      setConfirmMap("study");
-      setFlash(
-        `Press f again to leave the answer you are writing and study from “${target.title}”.`,
-      );
-      return;
-    }
-    session.studyFrom(target.sectionId);
-    setConfirmMap(null);
+    const on = session.isStarred(target.sectionId);
+    if (on) session.unstar(target.sectionId);
+    else session.star(target.sectionId);
     save();
-    setFlash(null);
-    setMode("explore");
-    advance("explore");
+    setTick((n) => n + 1);
+    setFlash(
+      on ? `Unstarred “${target.title}”.` : `Starred “${target.title}”.`,
+    );
   };
 
-  /** Read the book in order again, from the earliest thing short of mastery. */
-  const bookOrder = () => {
-    session.bookOrder();
+  /**
+   * Take the topic under the cursor out of the review pile.
+   *
+   * Two presses, the idiom `x` already carries in the vocabulary list — and it
+   * deletes the same kind of thing there: a schedule, not a syllabus. The
+   * answers stay, and practising the topic puts it back on the next grade.
+   */
+  const dismissSelected = () => {
+    const target = mapTopics[mapIndex];
+    if (!target) return;
+    if (!target.scheduled) {
+      setFlash(`“${target.title}” is not in the review pile.`);
+      return;
+    }
+    if (confirmMap !== "dismiss") {
+      setConfirmMap("dismiss");
+      setFlash(`Press x again to stop reviewing “${target.title}”.`);
+      return;
+    }
+    session.dismissTopic(target.sectionId);
+    setConfirmMap(null);
     save();
-    setMode("explore");
-    advance("explore");
-    setFlash("Back to the book in order.");
+    setTick((n) => n + 1);
+    setFlash(`“${target.title}” is out of the review pile.`);
   };
 
   /**
@@ -778,7 +772,7 @@ export function App({ session, content, storage }: Props) {
     setFlash(
       next === "review"
         ? `Back to the reviews — ${dueNow} waiting.`
-        : "Reviews set aside — back to the book.",
+        : "Reviews set aside.",
     );
   };
 
@@ -880,7 +874,6 @@ export function App({ session, content, storage }: Props) {
           setShowVocab((s) => !s);
         } else if (ch === "m") openMap({ t: "graded" });
         else if (ch === "x") chooseMode(mode === "review" ? "explore" : "review");
-        else if (ch === "b") bookOrder(); // back to the book in order
         else if (ch === "s") openSchedule({ t: "graded" });
         else if (ch === "V") openVocabList({ t: "graded" });
         else if (ch === "u") undoSubmit(); // Enter came too early
@@ -905,7 +898,12 @@ export function App({ session, content, storage }: Props) {
           setConfirmMap(null);
           jumpFamily(1);
         } else if (key.return) practiseSelected(phase.from);
-        else if (ch === "f") studySelected(phase.from);
+        // `*` for the star and `x` for the dismissal. `f` — take the book up
+        // from here — stood where `*` does and is gone with the book's walk.
+        else if (ch === "*") {
+          setConfirmMap(null);
+          starSelected();
+        } else if (ch === "x") dismissSelected();
         else if (ch === "g") setPhase({ t: "read", from: phase.from });
         else if (ch === "a") {
           // The pane draws the bank the deck will actually ask, so a topic with
@@ -1115,6 +1113,31 @@ export function App({ session, content, storage }: Props) {
         else if (ch === "w") showWordsFor(phase);
         break;
       }
+      /*
+       * A run worked out, which is now the ordinary end of studying rather
+       * than a corner — the loop stops here every time a topic's bank has been
+       * through, because sliding onto another is not what staying meant.
+       *
+       * It had no handler at all while the book's walk was the usual way out
+       * of a topic: the hint line advertised keys and the screen answered none
+       * of them. Everything the resting screen offers, plus the one thing this
+       * screen is *for*: another run at the same topic.
+       */
+      case "practised": {
+        if (ch === "m") openMap(phase);
+        else if (ch === "s") openSchedule(phase);
+        else if (ch === "V") openVocabList(phase);
+        else if (ch === "w") showWordsFor(phase);
+        else if (ch === "u") undoGrade();
+        else if (ch === "x" && dueNow > 0) {
+          chooseMode(mode === "review" ? "explore" : "review");
+        } else if (key.return || ch === " ") {
+          session.drillTopic(phase.sectionId);
+          save();
+          advance("explore");
+        }
+        break;
+      }
       case "done": {
         if (ch === "m") openMap({ t: "done" });
         else if (ch === "s") openSchedule({ t: "done" });
@@ -1132,12 +1155,8 @@ export function App({ session, content, storage }: Props) {
 
   const stats = useMemo(() => session.stats(), [tick, session]);
   const dueNow = stats.dueTopics + stats.dueVocab;
-  const coverageHere = useMemo(
-    () => (sectionId ? session.coverage(sectionId) : null),
-    [sectionId, tick, session],
-  );
-  // The run of practice under way, and nothing at all when the book is simply
-  // being read — the line above already names the topic the book is on.
+  // The run of practice under way, and nothing at all when a review is on
+  // screen — the line above already names the topic.
   const focusLabel = useMemo(() => {
     const run = session.practiseRun();
     if (!run) return null;
@@ -1178,7 +1197,6 @@ export function App({ session, content, storage }: Props) {
         <GrammarMap
           families={families}
           cursor={mapIndex}
-          overall={overall}
           topic={mapTopics[mapIndex]!}
           quotedOnly={session.quotedOnly()}
           preview={mapPreview}
@@ -1402,7 +1420,8 @@ export function App({ session, content, storage }: Props) {
             through this run.
           </Text>
           <Text dimColor>
-            Enter on this topic in the index (m) practises it again; b goes back to the book.
+            Press m for the index: Enter on this topic practises it again, and Enter on another
+            moves to that one.
           </Text>
         </Box>
       )}
@@ -1410,8 +1429,8 @@ export function App({ session, content, storage }: Props) {
       {phase.t === "done" && (
         <Box marginTop={1}>
           <Text color="green">
-            ✓ The book is worked out. Well done — press m to read the grammar index, or Enter to
-            exit.
+            ✓ Nothing due, and no topic being practised. Press m for the grammar index and Enter on
+            a topic to work at it, or Enter to exit.
           </Text>
         </Box>
       )}
@@ -1436,7 +1455,6 @@ export function App({ session, content, storage }: Props) {
         // says so before the key is pressed rather than after.
         practiseCosts={phase.t === "map" && phase.from.t === "answering"}
         undo={undo !== null}
-        book={coverageHere !== null}
         contexts={(vocab[vocabIndex]?.contexts?.length ?? 0) > 0}
         canHint={
           phase.t === "vocab-review-front" &&
@@ -1470,11 +1488,11 @@ function StatusBar({
   appName: string;
   stats: { dueTopics: number; dueVocab: number; topics: number; vocab: number };
   section: string;
-  /** What is on screen and why: `review`, `new`, `drill`, `sweep`, `vocab`. */
+  /** What is on screen and why: `review`, `new`, `drill`, `vocab`. */
   mode?: string | null;
   /** Which of the two errands this is — the CLI's answer to the web switch. */
   errand: Mode;
-  /** What exploring is doing, or null for the plain book in order. */
+  /** The run of practice under way, or null when nothing is being practised. */
   focus?: string | null;
 }) {
   return (
@@ -1511,48 +1529,60 @@ function StatusBar({
 
 // --- grammar index ------------------------------------------------------------
 
-/** Mastery as a 0–1 fraction; an ungraded topic reads as 0. */
-function masteryFraction(t: TopicProgress): number {
-  return ((t.mastery ?? 1) - 1) / 3;
-}
-
 /**
- * One cell of a bar: how far along the topic is, at a glance.
+ * One cell of a bar: what there is to say about a topic, at a glance.
+ *
+ * Four states, and none of them is a score. It used to draw the mastery band in
+ * four shades of block, which said how many questions a topic had been asked in
+ * the clothes of how well they had gone; what is drawn now is what a student
+ * scanning a family is actually looking for.
  *
  * The empty test comes first, and the order is the point. `questions` is the
- * narrowed count, so under the quoted-only preference a topic mastered on
- * *generated* questions has a mastery to draw and nothing left to serve; asked
- * in the other order it would draw as a solid green cell on a bar whose whole
- * job is now to show where the quotations are.
+ * narrowed count, so under the quoted-only preference a topic worked through on
+ * *generated* questions has nothing left to serve, and a bar whose whole job is
+ * then to show where the quotations are must not draw it as somewhere to go.
  *
- * A glyph of its own rather than the dim flag, because "never started" is
- * already `░` in dim gray — most of the map, most of the time — and dimming an
- * empty topic on top of that would make the two cells the same. There is no
- * legend: a cell is explained by moving the cursor onto it, and the status line
- * under the bar already says `no tests` or `nothing quoted`.
+ * The star outranks due: it is the student's own mark, and a starred topic that
+ * is also due is still first of all a starred one. There is no legend — a cell
+ * is explained by moving the cursor onto it, and the status line under the bar
+ * says the rest.
  */
 function cellStyle(t: TopicProgress): { glyph: string; color: string; dim: boolean } {
   if (t.questions === 0) return { glyph: "·", color: "gray", dim: true };
-  if (t.mastery === undefined) return { glyph: "░", color: "gray", dim: true };
-  const level = Math.floor(t.mastery);
-  if (level >= 4) return { glyph: "█", color: "green", dim: false };
-  if (level >= 3) return { glyph: "▓", color: "cyan", dim: false };
-  if (level >= 2) return { glyph: "▒", color: "yellow", dim: false };
-  return { glyph: "░", color: "yellow", dim: false };
+  if (t.starred) return { glyph: "★", color: "yellow", dim: false };
+  if (t.due) return { glyph: "█", color: "cyan", dim: false };
+  if (t.answered > 0) return { glyph: "▓", color: "green", dim: false };
+  return { glyph: "░", color: "gray", dim: true };
 }
 
 /** Screen lines of a section the map previews — the same for every topic. */
 const PREVIEW_LINES = 5;
 /** Everything in the map pane that is not the preview, in screen lines. */
 const MAP_CHROME_LINES = 24;
-/** Cells in a family's fixed-width summary bar. */
-const SUMMARY_CELLS = 6;
+/** Width of a family line's fixed-width summary column. */
+const SUMMARY_CELLS = 12;
 /** Indent of the selected family's per-topic bar, so it sits under the name. */
 const BAR_INDENT = 4;
 
-function summaryGlyphs(percent: number): string {
-  const filled = Math.round(percent * SUMMARY_CELLS);
-  return "\u2588".repeat(filled) + "\u2591".repeat(SUMMARY_CELLS - filled);
+/**
+ * What a family has waiting, in a column of fixed width.
+ *
+ * A bar and a percentage stood here, over a mean mastery. Two counts instead,
+ * and both of them are things a student can act on: how many topics of this
+ * family they starred, and how many are due. A family with neither shows an
+ * empty column rather than a zero \u2014 nothing waiting is not a figure worth
+ * printing nine times down the screen.
+ *
+ * Padded rather than trimmed, so the columns after it stay in line whatever the
+ * counts are.
+ */
+function familySummary(f: FamilyProgress): string {
+  const starred = f.topics.filter((t) => t.starred).length;
+  const due = f.topics.filter((t) => t.due).length;
+  const parts = [starred > 0 ? `\u2605${starred}` : "", due > 0 ? `${due} due` : ""]
+    .filter(Boolean)
+    .join(" ");
+  return parts.padEnd(SUMMARY_CELLS).slice(0, SUMMARY_CELLS);
 }
 
 /**
@@ -1610,17 +1640,11 @@ function FamilyList({
               <Text bold={on} color={on ? "cyan" : undefined} dimColor={!on}>
                 {`${on ? "▸" : " "} ${f.label.padEnd(width)}  `}
               </Text>
-              <Text
-                bold={on}
-                color={f.percent > 0 ? "green" : "gray"}
-                dimColor={!on && f.percent === 0}
-              >
-                {reading ? " ".repeat(SUMMARY_CELLS) : summaryGlyphs(f.percent)}
+              <Text bold={on} color="yellow" dimColor={!on}>
+                {reading ? " ".repeat(SUMMARY_CELLS) : familySummary(f)}
               </Text>
               <Text bold={on} color={on ? "cyan" : undefined} dimColor={!on}>
-                {reading
-                  ? `       ${String(f.topics.length).padStart(2)} topic${f.topics.length === 1 ? "" : "s"}`
-                  : ` ${String(Math.round(f.percent * 100)).padStart(3)}%  ${String(f.topics.length).padStart(2)} topic${f.topics.length === 1 ? "" : "s"}`}
+                {`  ${String(f.topics.length).padStart(2)} topic${f.topics.length === 1 ? "" : "s"}`}
               </Text>
               {empty && (
                 <Text dimColor>
@@ -1686,14 +1710,12 @@ function FamilyBar({
 function GrammarMap({
   families,
   cursor,
-  overall,
   topic,
   quotedOnly,
   preview,
 }: {
   families: FamilyProgress[];
   cursor: number;
-  overall: number;
   topic: TopicProgress;
   /** Whether the counts below are the quoted questions alone. */
   quotedOnly: boolean;
@@ -1714,10 +1736,11 @@ function GrammarMap({
     offset += f.topics.length;
   }
 
-  const mastery =
-    topic.mastery === undefined
-      ? "not started"
-      : `${Math.round(masteryFraction(topic) * 100)}% mastered`;
+  // What the index counts, now that it counts nothing about how well anything
+  // went: the shortlist, and the pile.
+  const all = families.flatMap((f) => f.topics);
+  const starredCount = all.filter((t) => t.starred).length;
+  const dueCount = all.filter((t) => t.due).length;
 
   return (
     <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
@@ -1725,7 +1748,10 @@ function GrammarMap({
         <Text bold color="magenta">
           Grammar index
         </Text>
-        <Text dimColor>{Math.round(overall * 100)}% mastered overall</Text>
+        <Text dimColor>
+          {starredCount > 0 ? `★ ${starredCount} starred · ` : ""}
+          {dueCount > 0 ? `${dueCount} due` : "nothing due"}
+        </Text>
       </Box>
 
       {/* The selected family needs no separate heading line: it is the
@@ -1746,17 +1772,23 @@ function GrammarMap({
           <Text bold>{topic.title}</Text>
         </Text>
         <Text>
-          <Text dimColor>{mastery}</Text>
-          {/* A topic is not finished when its mastery is: four questions do
-              not sweep a bank of twenty-odd, and this is where that shows. */}
+          {topic.starred ? <Text color="yellow">★ starred · </Text> : null}
+          {/* How much of the bank has been met, and nothing about how well. A
+              "N% mastered" stood first on this line, over a score that filled
+              after three good answers; this is the honest half of what it
+              said, and four questions never swept a bank of twenty-odd. */}
           {topic.questions > 0 ? (
             <Text dimColor>
-              {" "}
-              · {topic.answered}/{topic.questions} questions
+              {topic.answered}/{topic.questions} questions
             </Text>
           ) : null}
           {topic.due ? <Text color="yellow"> · due</Text> : null}
-          {topic.frontier ? <Text color="cyan"> · resumes here</Text> : null}
+          {/* A count, not a verdict — see `TopicProgress.lapses`. It is what
+              tells the student there is something to decide about a topic, and
+              `x` is the other answer to it. */}
+          {topic.lapses >= 4 ? (
+            <Text color="red"> · failed {topic.lapses} times</Text>
+          ) : null}
           {/* Three silences, and which one this is decides whether the topic is
               coming back: the book sets no exercise here at all, or nothing was
               written here yet, or nothing quoted was. */}
@@ -2230,7 +2262,6 @@ function HintBar({
   words,
   practiseCosts,
   undo,
-  book,
   contexts,
   canHint,
   keeping,
@@ -2248,8 +2279,6 @@ function HintBar({
   practiseCosts?: boolean;
   /** A grade was just given and can still be taken back. */
   undo?: boolean;
-  /** A topic is on screen, so `b` has a book to send you back to. */
-  book?: boolean;
   /** The card under the cursor has sentences, so `c` has something to open. */
   contexts?: boolean;
   /** The card under review still has a hint left to give. */
@@ -2268,13 +2297,11 @@ function HintBar({
   // Offered only while there is a grade to take back, on every screen a grade
   // can land you on.
   const undoHint = undo ? " · u undo grade" : "";
-  // Offered only where it would do something: `b` needs a topic on screen to
-  // be leaving, and `x` needs something due to switch to.
-  const bookHint = book ? " · b back to the book" : "";
   // Both offered only where they would do something, the same way `h` waits for
   // a trail: a key that is advertised has to do something.
   const contextsHint = contexts ? " · c its sentences" : "";
   const hintHint = canHint ? " · h hint" : "";
+  // `x` needs something due to switch to.
   const errandHint =
     errand === "review"
       ? " · x explore"
@@ -2282,13 +2309,13 @@ function HintBar({
         ? " · x review"
         : "";
   const practiseHint = practiseCosts
-    ? "Enter practise this · f study from here (both leave this behind)"
-    : "Enter practise this · f study from here";
+    ? "Enter practise this (leaves this behind)"
+    : "Enter practise this";
   const hint =
     phase === "answering"
       ? `${ui.cliHint} · Enter submit · Esc grammar · Tab words · ^N index${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
-        ? `← → topic · ↑ ↓ family · g read section · a all questions · s schedule${wordsHint} · ${practiseHint} · Esc close`
+        ? `← → topic · ↑ ↓ family · g read section · a all questions · * star · x stop reviewing · s schedule${wordsHint} · ${practiseHint} · Esc close`
         : phase === "read"
           ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to the index · q quit`
         : phase === "bank"
@@ -2304,7 +2331,7 @@ function HintBar({
         : phase === "vocab-edit" || phase === "context-edit"
           ? "type · Tab switch field · Enter save · Esc cancel"
         : phase === "graded"
-        ? `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${bookHint}${errandHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m index · s schedule · q quit`
+        ? `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${errandHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m index · s schedule · q quit`
         : phase === "vocab-review-front"
           ? `Space/Enter reveal${hintHint}${undoHint} · m index · q quit`
           : phase === "vocab-review-back"
@@ -2314,7 +2341,9 @@ function HintBar({
               : phase === "vocab-pick"
                 ? "1–9 choose · Esc cancel"
                 : phase === "practised"
-                  ? `m grammar index${bookHint}${errandHint} · V my words · Enter exit`
+                  // Enter is the run again, since staying is what this screen
+                  // is for; the index is how you go somewhere else.
+                  ? `Enter practise it again · m grammar index${errandHint} · V my words${undoHint} · s schedule`
                   : `m grammar index · s schedule · V my words${undoHint} · Enter exit`;
   return (
     <Box marginTop={1}>
