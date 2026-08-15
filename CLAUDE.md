@@ -98,9 +98,11 @@ in this repo passes it now. Nothing about correctness was ever relaxed by it, th
 attestation gates included.
 
 What `validate-pack` does **not** answer is the part no script can. Each pack's
-`REVIEW.md` records the gates a person has to read — segmentation (G9), the
-generated questions (C8), the quoted ones (C9) — and those are not all signed
-off. Greek's C9 is a recorded **failure**, 17 of 35. A green `validate-pack` and
+`REVIEW.md` records the gates a person has to read — segmentation (H1), the
+generated questions (H2), the quoted ones (H3) — and those are not all signed
+off. Greek's H3 is a recorded **failure**, 17 of 35. They are `H`-numbered so
+that none of them collides with a gate a script runs: the human question review
+was C8 until the automated C8 below took the number. A green `validate-pack` and
 an unread `REVIEW.md` are two different claims and the second is the weaker one.
 
 ## More than one grammar

@@ -91,13 +91,35 @@ jobs:
         run: >
           node --import tsx scripts/check-app-purity.mjs
           --pack languages/${{ matrix.pack }}
-      - name: Fold and families
+      # Every gate, on the branch, against the bundle that was just built.
+      #
+      # This used to be `--profile-only` plus the primary book's shape — five
+      # gates of the thirty-nine Latin has. C0–C8, E1–E2, X1–X3, D2 and D3 ran
+      # nowhere until the merge, and Lane's G1–G11 ran nowhere at all, because
+      # `grammar-report` with no `--grammar` reports the primary book only.
+      #
+      # The reason it was narrow no longer holds. The question-coverage gates
+      # were kept off this path because a pack midway through generating its
+      # questions fails them by definition; no pack is in that state now, and
+      # `--allow-incomplete` was always the tool for the one that is. So the
+      # whole composed run happens here, which is what the "PR #4 merged a pack
+      # whose gates nobody had run" comment above asked for.
+      - name: Every gate
+        env:
+          LANG_PACK: ${{ matrix.pack }}
         run: >
           node --import tsx scripts/validate-pack.mjs
-          --pack languages/${{ matrix.pack }} --profile-only
-      - name: Syllabus shape
+          --pack languages/${{ matrix.pack }}
+          --built apps/web/public/content
+      # A record that has to be rewritten by hand is a record that goes stale,
+      # and this one did — 3,212 questions out. Reported rather than enforced:
+      # a figure moving is the ordinary result of doing the work, and the point
+      # is that the move is visible in the diff of the run rather than
+      # discovered a month later.
+      - name: What the pack measures now
+        continue-on-error: true
         run: >
-          node --import tsx scripts/grammar-report.mjs
+          node --import tsx scripts/baseline.mjs
           --pack languages/${{ matrix.pack }}
 
   # Everything below publishes, so it has no business running on a PR.

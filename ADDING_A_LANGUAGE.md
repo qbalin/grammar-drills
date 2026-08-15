@@ -255,7 +255,7 @@ account balances. The report also *notes* topics over four times the median —
 those are the ones no single test set can cover, so either split them or decide
 deliberately not to.
 
-**G9 is a human gate and cannot be automated:**
+**H1 (was G9) is a human gate and cannot be automated:**
 
 ```bash
 node --import tsx scripts/grammar-report.mjs --pack languages/ancient-greek --sample 12 --render

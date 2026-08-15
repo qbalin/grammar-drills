@@ -302,7 +302,7 @@ if (coverage) {
   }
 }
 
-// --- G9: the part a human has to do ------------------------------------------
+// --- H1 (was G9): the part a human has to do ---------------------------------
 
 const sampleAt = argv.indexOf("--sample");
 if (sampleAt >= 0) {

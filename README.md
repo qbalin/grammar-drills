@@ -37,7 +37,7 @@ neither publishes as a draft any more.
 
 That is the whole of what a script can say, and it is worth being exact about
 the rest. Each pack's `REVIEW.md` holds the gates a person has to read, and they
-are not all signed off — Greek's **C9, the quoted-question review, is a recorded
+are not all signed off — Greek's **H3, the quoted-question review, is a recorded
 failure at 17 of 35**, and Part I's 71 reading topics have never been read by
 anybody. See [`languages/ancient-greek/REVIEW.md`](languages/ancient-greek/REVIEW.md)
 and [`languages/latin/REVIEW.md`](languages/latin/REVIEW.md) before treating

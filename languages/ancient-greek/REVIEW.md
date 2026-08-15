@@ -1,11 +1,19 @@
 # Greek pack — human review record
 
-Two of the gates cannot be automated, because they are about whether the thing
+Three of the gates cannot be automated, because they are about whether the thing
 reads well rather than whether it parses. They are recorded here so a later run
 can see what was actually looked at, by whom, and when — an unsigned gate is an
 unchecked gate.
 
-## G9 — grammar segmentation read-through
+**They are `H`-numbered, and that is new.** They used to be G9, C8 and C9,
+sharing a namespace with the gates `validate-pack` runs — and C8 was taken by an
+automated gate added later, the one measuring that `questionId` does not
+collide. So "C8 passes" in a CI log and "C8 not signed off" on this page were
+two unrelated statements about two unrelated things, and both appeared in
+`CLAUDE.md` sixty lines apart. The dated rows below are left exactly as they
+were written; only the headings and the prose move.
+
+## H1 — grammar segmentation read-through  *(was G9)*
 
 Every topic is shown to the student verbatim, so what the parser mangles the
 student meets mangled, and what it drops the student can never read.
@@ -38,7 +46,7 @@ Found during that read, and left alone deliberately:
 - **22 topics exceed 4× the median.** They are the syntax chapters, already cut
   at `--max-chars 12000`; every one is under `maxTextChars`.
 
-## C8 — generated question review
+## H2 — generated question review  *(was C8)*
 
 Attestation proves every word of an answer exists. It does not prove the
 sentence is grammatical, idiomatic, or a translation of the English beside it —
@@ -64,7 +72,7 @@ sm-2462…-t14#1  sm-2690…-t6#1  sm-2803-gar-2803-t8#1  sm-2881…-t10#4  sm-2
 sm-3004-anacoluthon-t15#3  sm-3018…-t18#3  sm-3028-hyperbaton-t25#4
 ```
 
-## C9 — quoted question review
+## H3 — quoted question review  *(was C9)*
 
 1,109 questions in 290 tests (ids `-q<n>`) have an answer Smyth quoted from an
 author, taken out of the Alpheios TEI's `<cit>` before the parser flattens it,
@@ -96,7 +104,7 @@ What the 35 divide into, since the number alone does not say what to repair:
 - **Fragments, 11 of 35.** Smyth's gloss translates a phrase he is quoting inside a sentence of his own: "Those in power, the government." (`sm-1153`), "Above the rest of men." (`sm-1437`), "Plans like the deeds." (`sm-1499`), "A passion so terrible." (`sm-3028-q1`), "A State or certain individuals." (`sm-2675`). Each is a correct translation and none is a sentence a student could be asked to produce. They are invisible to any check, because `quote-tests.mjs` capitalises and stops every gloss — so a fragment arrives wearing a capital letter and a full stop and looks exactly like a sentence.
 - **An unmarked hole in the Greek, 7 of 35 — and 129 of all 1,143 quoted questions (11.3%), touching 99 tests.** Smyth elides with " . . . " and the pipeline carries it into the answer: `εἰς . . . τόπον . . . ἀειδῆ, εἰς Ἅιδου`, `ὅπως . . . ὑμεῖς ἐμὲ ἐπαινέσετε`. The student is asked to write a sentence with a gap in it, which cannot be done. This one *is* mechanically detectable, and is the cheapest real repair available.
 - **Prompt artifacts, 3 of 1,143.** Two prompts open on a semicolon — `sm-1044-with-one-subject-q1#4` is literally "; is it pleasant to have many enemies?" — and one carries Smyth's gloss notation, "Nothing either great or small = absolutely nothing."
-- **Two digitization faults in the Greek, found incidentally.** `sm-976-apposition-q2#3` reads τὸ τοῦ **Ὁμήρον** where the genitive is Ὁμήρου; `sm-2070…-q2#2` opens **ἧλθον** (U+1F27, rough) where ἦλθον (U+1F26, smooth) is the aorist of ἔρχομαι. Both are in the same family as the 36 Perseus brace artifacts already recorded under G9. Neither was caught by attestation, which is expected: it asks whether a form exists, and a wrongly-breathed one folds to a form that does.
+- **Two digitization faults in the Greek, found incidentally.** `sm-976-apposition-q2#3` reads τὸ τοῦ **Ὁμήρον** where the genitive is Ὁμήρου; `sm-2070…-q2#2` opens **ἧλθον** (U+1F27, rough) where ἦλθον (U+1F26, smooth) is the aorist of ἔρχομαι. Both are in the same family as the 36 Perseus brace artifacts already recorded under H1. Neither was caught by attestation, which is expected: it asks whether a form exists, and a wrongly-breathed one folds to a form that does.
 
 The remedy is not to argue with the bar. In order of cost: drop the 129 gapped answers in `quote-tests.mjs` the way `verse` and `unattested` are already dropped, and report them in the funnel; then decide what to do about the fragments, which needs either a length-and-shape test on the gloss or a pass that rewrites them into standalone English — the second being a model writing prompts for quoted answers, which is a different thing from quoting and should be labelled as such if it is ever done. **None of this was changed here.** A gate that has just been read is the wrong moment to also move what it measures.
 
@@ -131,8 +139,8 @@ sm-3018…-q1#3  sm-3028-hyperbaton-q1#3  -q2#3  -q3#3  -q4#3
   **Greek no longer needs `--allow-incomplete`.** `validate-pack` without it
   prints "Ancient Greek passes every gate" and exits 0: 10 grammar, 9 coverage,
   2 attestation, 5 pack. That is a statement about the automated gates and
-  nothing else. What is unfinished is on this page — C9 is read and **failed**,
-  and the 71 reading topics under G9 have still never been read by anybody. The
+  nothing else. What is unfinished is on this page — H3 is read and **failed**,
+  and the 71 reading topics under H1 have still never been read by anybody. The
   pack is not a draft by any number a script can produce, and is not signed off
   by the two gates that were always going to need eyes.
 - **The fold is variant A** — accents, breathings and the iota subscript all

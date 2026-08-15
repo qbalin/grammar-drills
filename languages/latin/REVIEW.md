@@ -1,11 +1,19 @@
 # Latin pack — human review record
 
-Two of the gates cannot be automated, because they are about whether the thing
+Three of the gates cannot be automated, because they are about whether the thing
 reads well rather than whether it parses. They are recorded here so a later run
 can see what was actually looked at, by whom, and when — an unsigned gate is an
 unchecked gate.
 
-## G9 — grammar segmentation read-through
+**They are `H`-numbered, and that is new.** They used to be G9, C8 and C9,
+sharing a namespace with the gates `validate-pack` runs — and C8 was taken by an
+automated gate added later, the one measuring that `questionId` does not
+collide. So "C8 passes" in a CI log and "C8 not signed off" on this page were
+two unrelated statements about two unrelated things, and both appeared in
+`CLAUDE.md` sixty lines apart. The dated rows below are left exactly as they
+were written; only the headings and the prose move.
+
+## H1 — grammar segmentation read-through  *(was G9)*
 
 Every topic is shown to the student verbatim, so what the parser mangles the
 student meets mangled, and what it drops the student can never read.
@@ -27,7 +35,7 @@ Read all twelve. The questions to hold in mind:
 | 2026-07-30 | *not signed off — machine check only* | §13-15, §71-75, §92-96, §101-102, §115, §120-123, §140, §162, §205-212, §242, §266-269, §273, §282-290, §336-337 | The reparse from HTML was checked by rendering, not by a reader. §140 (the table of correlatives) is whole and three-columned where it used to arrive as four fragments with its first heading cut down to "RELATIVE AND". Paragraph fragments of twelve characters or less — the signature of a cell that wrapped in the source — fell from 136 to 49, and the 49 that remain are the book's own short sub-headings ("ā-Stems.", "Here belong—"). Still wanted from a human: whether the merged topics read as one topic, and whether the new titles are the book's. |
 | — | *not yet signed off* | the 35 reading topics | 2026-08-12 shipped Parts I, IV and VI and the 12 definitional sections behind a structural heading, as 35 topics marked `readingOnly`. None of them has ever been read through: every earlier sample was drawn from a syllabus these were not in, and the automated gates have only just met the vowel tables of Part I and the metrical schemes of Part VI. The taught 114 are unchanged byte for byte and are not what this row is about. Worth a reader's eye first: §360-361 and §362-375, where scansion is row-shaped by accident and G6 counts it as table rows; and the short ones — §160 "Syntax" is 46 characters, §194 "The Genitive" 55 — which are real sections of the book but may read as stubs on the map. |
 
-## C8 — generated question review
+## H2 — generated question review  *(was C8)*
 
 Attestation proves every word of an answer exists. It does not prove the
 sentence is grammatical, idiomatic, or a translation of the English beside it —
@@ -40,7 +48,7 @@ sentence that is impeccably attested and means something other than the prompt.
 |---|---|---|---|
 | — | *not yet signed off* | — | The automated gates C1–C7 pass on 6,557 questions. 2,532 of these were generated on 2026-07-29 across three backfill runs and have had no human read-through; the 4,025 that predate them were reviewed before the gates existed. This is now the largest unreviewed block in the pack and the most useful thing a next run could do. |
 
-## C9 — quoted question review
+## H3 — quoted question review  *(was C9)*
 
 A quoted question fails differently from a generated one. The Latin is not in
 doubt: it is what a classical author wrote, and `scripts/verify-attribution.mjs`
@@ -211,7 +219,7 @@ sides of the tag — Lane leaves the stop outside the run in `council hall</i>.
 (<i>b.</i>)` and inside it in `A B C's?</i> (<i>b.</i>)`. Checking only the gap
 fixed twelve of twenty-four. This is the third filter in this pipeline that was
 wrong on the first pass, which is the count `ag-quotes.mjs` records for itself,
-and the argument for `--why` and for gate C9 in one.
+and the argument for `--why` and for gate H3 in one.
 
 **What Lane cannot do, corrected after the run.** Two guesses were written here
 before the filing finished and both were wrong, in opposite directions, which is
@@ -491,9 +499,9 @@ be Bennett's 100.
 
 **What this does not settle.** That Lane *segments* is not that Lane *reads*
 well, and the same lesson arrives here as everywhere else in this file: every
-gate above is measuring self-consistency. G9 exists because a segmentation can
+gate above is measuring self-consistency. H1 exists because a segmentation can
 pass all of them and still cut a topic in the wrong place, and Lane has had no
-G9 read-through. That is owed before the parser's output ships.
+H1 read-through. That is owed before the parser's output ships.
 
 ### What the parser then measured, and the two things the probe got wrong
 
@@ -831,7 +839,7 @@ or it does not, and `.quotes.partial.jsonl` says how far a stopped run got.
   quotations back with `prune-tests.mjs --quoted --apply`, compose with
   `quote-tests.mjs --from quotes --allocate --per-topic 16`, run
   `verify-attribution.mjs` and `validate-pack.mjs`, read a dozen prompts against
-  their answers, sign gate C9 above, update `BASELINE.json`, and commit. The
+  their answers, sign gate H3 above, update `BASELINE.json`, and commit. The
   prune is not optional and not a deletion: the composer refuses to ship a
   sentence it can already see on disk, so a pool that has been dealt once cannot
   be dealt differently without being taken back first.
