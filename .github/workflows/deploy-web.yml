@@ -9,6 +9,19 @@ on:
     branches: [main]
     paths:
       - "apps/web/**"
+      # The terminal app, which nothing here deploys and everything here tests.
+      #
+      # `pnpm -r test` runs its suite and the step below type-checks it, and
+      # for a long time neither was watched: a change under `apps/cli/` ran no
+      # CI at all. That is not a saved minute, it is a blind spot with the
+      # checks already written — and it bit exactly where you would expect. A
+      # flaky CLI test failed the run for an unrelated commit, and the commit
+      # that fixed the flake touched only `apps/cli/src/app.test.tsx`, so it
+      # triggered nothing and left `main` red with the fix already merged.
+      #
+      # A job that runs a package's tests has to watch that package, or the
+      # result it reports is about some other commit.
+      - "apps/cli/**"
       - "packages/core/**"
       - "languages/**"
       # All of scripts/, not just the content build: this workflow also runs
@@ -16,6 +29,12 @@ on:
       # scripts/lib. Naming one file meant a change to the checks themselves
       # did not re-run the checks.
       - "scripts/**"
+      # The lockfile and the root scripts, for the same reason one step further
+      # out: `pnpm install --frozen-lockfile` fails on a lockfile that does not
+      # match, and `pnpm -r test` is defined here.
+      - "pnpm-lock.yaml"
+      - "pnpm-workspace.yaml"
+      - "package.json"
       - ".github/workflows/deploy-web.yml"
   # The same checks before the merge, not only after it. PR #4 merged a pack
   # whose gates nobody had run in CI, which worked out and need not have.
@@ -23,9 +42,13 @@ on:
   pull_request:
     paths:
       - "apps/web/**"
+      - "apps/cli/**"
       - "packages/core/**"
       - "languages/**"
       - "scripts/**"
+      - "pnpm-lock.yaml"
+      - "pnpm-workspace.yaml"
+      - "package.json"
       - ".github/workflows/deploy-web.yml"
   workflow_dispatch:
 
