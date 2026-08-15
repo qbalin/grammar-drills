@@ -166,6 +166,22 @@ export interface TopicProgress {
   questions: number;
   /** Where the book cursor stands; the topic exploring would reach first. */
   frontier: boolean;
+  /**
+   * How many times this topic has been failed outright — FSRS's own `lapses`,
+   * summed over the topics a section teaches.
+   *
+   * It has been serialized and deserialized since the scheduler was written and
+   * read by nothing, so a topic failed twenty times just kept coming back at
+   * short intervals with no sign anywhere that it was the one going badly. That
+   * matters more here than in an app that grades you: nothing else notices.
+   *
+   * A count, not a verdict. What counts as stuck is the caller's to decide and
+   * the student's to act on — the schedule is not suspended and nothing is
+   * hidden, because a topic taken out of the rotation for its own good is a
+   * decision made on somebody's behalf, which is not how anything else here
+   * behaves.
+   */
+  lapses: number;
 }
 
 /** How much of a topic's question bank has actually been met. */
@@ -1676,6 +1692,7 @@ export class Session {
         answered,
         questions,
         frontier: cursor === s.id,
+        lapses: cards.reduce((n, c) => n + (c.lapses ?? 0), 0),
       };
     });
   }

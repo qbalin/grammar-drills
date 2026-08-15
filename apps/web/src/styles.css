@@ -909,6 +909,12 @@ span.status__title {
   border: 0;
 }
 
+/* The lapse note on a topic sheet. Amber rather than red: it is a suggestion
+   about where the time would be better spent, not a failure being reported. */
+.topic__lapses {
+  color: var(--amber);
+}
+
 .linkrow {
   display: flex;
   gap: 1.1rem;

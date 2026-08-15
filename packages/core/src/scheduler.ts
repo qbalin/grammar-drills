@@ -8,7 +8,29 @@ import type { SerializedCard } from "./types.js";
  */
 export type Rating = 1 | 2 | 3 | 4;
 
-const engine = fsrs();
+/**
+ * Two departures from the stock parameters, and the rest left alone.
+ *
+ * **Fuzz.** Off by default, which means a cohort of topics introduced in one
+ * sitting comes back on the same day for ever — a student who spent an evening
+ * on the declensions meets all of them again in one lump, then again in one
+ * lump, until something breaks the tie. Fuzz spreads them.
+ *
+ * It has to be checked against this app's own promise rather than assumed
+ * harmless: the grade buttons are labelled with the interval each one buys, and
+ * `previewTopic` exists so they never name one the round cannot reach. Fuzz that
+ * rolled fresh each call would make the label a guess. It does not — verified
+ * against a matured card, where `repeat()` and `next()` agree and two previews
+ * of the same card agree with each other, so the number under the button is
+ * still the number.
+ *
+ * **A hundred years is not an interval.** `maximum_interval` defaults to 36500
+ * days, and a card really does reach it: eight *easy* grades in a row put one
+ * due in the year 2555, which is a card the student will never see again and a
+ * date the schedule screen would print. Five years is still far longer than any
+ * course and is a length somebody could actually come back from.
+ */
+const engine = fsrs({ enable_fuzz: true, maximum_interval: 365 * 5 });
 
 export function newCard(now: Date = new Date()): Card {
   return createEmptyCard(now);

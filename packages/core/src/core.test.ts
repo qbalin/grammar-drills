@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { Content } from "./content.js";
 import { testProfile } from "./profile.fixture.js";
 import { compileFold } from "./fold.js";
-import { newCard, preview, rate } from "./scheduler.js";
+import { deserializeCard, newCard, preview, rate, serializeCard } from "./scheduler.js";
 import { MAX_CONTEXTS, Session } from "./session.js";
 import {
   emptyProgress,
@@ -69,6 +69,71 @@ describe("scheduler", () => {
     const now = new Date("2026-01-01T00:00:00Z");
     const card = newCard(now);
     expect(rate(card, 3, now).due.getTime()).toBe(preview(card, now)[3].getTime());
+  });
+
+  /**
+   * The fuzz is on, and the grade buttons name an interval.
+   *
+   * Those two facts have to be checked against each other rather than assumed
+   * compatible: the buttons are labelled with what each grade buys, so a fuzz
+   * rolled fresh on every call would make the label a guess. The case above
+   * covers a new card, where FSRS applies no fuzz at all; this one matures the
+   * card first, which is where the fuzz actually lands.
+   */
+  it("still previews what it will apply, once the interval is long enough to fuzz", () => {
+    let card = newCard(new Date("2026-01-01T00:00:00Z"));
+    let at = new Date("2026-01-01T00:00:00Z");
+    for (let i = 0; i < 6; i++) {
+      card = rate(card, 4, at);
+      at = new Date(card.due);
+    }
+    expect(card.due.getTime() - at.getTime()).toBe(0);
+    // Twice, so an unstable fuzz shows up as a preview disagreeing with itself.
+    expect(preview(card, at)[3].getTime()).toBe(preview(card, at)[3].getTime());
+    expect(rate(card, 3, at).due.getTime()).toBe(preview(card, at)[3].getTime());
+  });
+
+  /**
+   * A hundred years is not an interval.
+   *
+   * `maximum_interval` defaults to 36500 days and a card really reaches it —
+   * eight easy grades in a row put one due in the year 2555, which the schedule
+   * screen would have printed.
+   */
+  it("never schedules a card beyond a length somebody could come back from", () => {
+    let card = newCard(new Date("2026-01-01T00:00:00Z"));
+    let at = new Date("2026-01-01T00:00:00Z");
+    for (let i = 0; i < 12; i++) {
+      card = rate(card, 4, at);
+      at = new Date(card.due);
+    }
+    const years = (card.due.getTime() - Date.parse("2026-01-01T00:00:00Z")) / 31557600000;
+    expect(years).toBeLessThan(60);
+  });
+
+  /**
+   * What the leech note on a topic reads. It was serialized and read by nothing.
+   *
+   * A lapse is not simply "a failure": FSRS counts one only against a card that
+   * has reached the review state, so failing a card still in its learning steps
+   * adds nothing. That is the right behaviour and it is why the note's threshold
+   * is about a topic being genuinely stuck rather than about a bad first
+   * evening — but it has to be written down, because "failed four times" and
+   * "four lapses" are not the same sentence.
+   */
+  it("counts a failure as a lapse once the card is in review, and round-trips it", () => {
+    let at = new Date("2026-01-01T00:00:00Z");
+    let card = newCard(at);
+    // Out of the learning steps first.
+    for (let i = 0; i < 3; i++) {
+      card = rate(card, 3, at);
+      at = new Date(card.due);
+    }
+    expect(card.lapses).toBe(0);
+
+    card = rate(card, 1, at);
+    expect(card.lapses).toBe(1);
+    expect(deserializeCard(serializeCard(card)).lapses).toBe(1);
   });
 });
 

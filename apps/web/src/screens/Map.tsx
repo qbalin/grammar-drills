@@ -421,6 +421,30 @@ export function TopicSheet({
         {topicState(topic, quotedOnly)}
       </p>
 
+      {/*
+        * The one thing the schedule knows and never said.
+        *
+        * FSRS has counted `lapses` since the first grade and nothing read it,
+        * so a topic failed a dozen times came back on the same short intervals
+        * as one failed once, and nowhere on any screen did it say which topic
+        * was the problem. In an app that grades you, a run of failures is
+        * obvious from the marks; here nothing marks you, so this is the only
+        * place it can come from.
+        *
+        * It is a count and a suggestion, not an intervention. Nothing is
+        * suspended and nothing is hidden — a topic taken out of the rotation
+        * for its own good is a decision made on somebody's behalf, and the
+        * practice button beside it is the thing to do about it anyway.
+        *
+        * Four, because one or two failures is learning rather than a pattern.
+        */}
+      {topic.lapses >= 4 && (
+        <p className="row__sub topic__lapses">
+          Failed {topic.lapses} times. Reading § {topic.ref} again, or practising
+          it here, is likely to be worth more than another review.
+        </p>
+      )}
+
       <div className="actions">
         {/* Reading is the one thing every page of every book can do, which is
             why this button is never the one that goes grey. On a page the book
