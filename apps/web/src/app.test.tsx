@@ -4324,3 +4324,49 @@ describe("a file this device could not read", () => {
     expect(screen.queryByText(/could not be read/)).toBeNull();
   });
 });
+
+/**
+ * The language being learnt, marked as such.
+ *
+ * `<html lang>` names the *prompt* language — the chrome and the questions are
+ * English — so until this every Latin and Greek string on the page inherited it.
+ * A screen reader read Ἑλληνικά in an English voice, which for Greek is noise
+ * rather than an accent.
+ */
+describe("marking the target language", () => {
+  const l2 = () => profile.l2.code;
+
+  it("marks the reference answer and what the student wrote", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    // `Array.from`, not a spread: the DOM lib here is the non-iterable one —
+    // the same reason `sentences()` above does it.
+    const blocks = Array.from(document.querySelectorAll(".compare__text"));
+    expect(blocks.length).toBeGreaterThan(0);
+    for (const block of blocks) expect(block.getAttribute("lang")).toBe(l2());
+  });
+
+  it("leaves the English prompt alone", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+    // The prompt is the one sentence on this screen that is not the language
+    // being learnt, and inheriting from <html> is exactly right for it.
+    const prompt = document.querySelector(".study__prompt, .prompt");
+    if (prompt) expect(prompt.closest("[lang]")?.getAttribute("lang")).not.toBe(l2());
+  });
+
+  it("does not mark the English half of the crib", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: /Vocabulary — / }));
+
+    const english = document.querySelector(".crib-row__english");
+    const target = document.querySelector(".crib-row__citation");
+    expect(target?.getAttribute("lang")).toBe(l2());
+    expect(english?.closest("[lang]")?.getAttribute("lang")).not.toBe(l2());
+  });
+});

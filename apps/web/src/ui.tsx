@@ -12,6 +12,32 @@ import {
   type Marks,
   type Rating,
 } from "@lang-tutor/core";
+import { profile } from "./pack.js";
+
+/**
+ * What marks an element as holding the language being learnt.
+ *
+ * The document is `lang="en"` — the prompts are English and so is every word of
+ * chrome — and until this, so was everything else on the page by inheritance:
+ * the reference answers, the grammar sections, the paradigm tables, the
+ * dictionary entries. A screen reader therefore read Ἑλληνικά in an English
+ * voice, which for Greek is not an accent but noise, and browsers applied
+ * English hyphenation and font fallback to both packs.
+ *
+ * `profile.l2` has declared `code`, `script` and `direction` from the start, and
+ * `packages/core/src/pack.ts` validates `direction` against `ltr`/`rtl`. Nothing
+ * read any of the three. This is that contract finally being kept — and it is
+ * what makes `direction` mean something before a right-to-left pack discovers it
+ * the hard way.
+ *
+ * Attributes rather than a wrapper component, so no element is added and no
+ * selector moves. `dir` only when it differs from the document's: writing
+ * `dir="ltr"` on every Latin sentence is noise that says nothing.
+ */
+export const l2Attrs: { lang: string; dir?: "ltr" | "rtl" } = {
+  lang: profile.l2.code,
+  ...(profile.l2.direction === "rtl" ? { dir: "rtl" as const } : {}),
+};
 
 /** How long until a date, said the way a person would. */
 export function until(from: Date, to: Date): string {

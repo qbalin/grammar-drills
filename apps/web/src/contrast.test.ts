@@ -81,6 +81,28 @@ const PAIRS: [string, string, string][] = [
 
 const AA = 4.5;
 
+/**
+ * WCAG 1.4.11, for the things that carry meaning without being text.
+ *
+ * A focus ring is the one on this page. It is drawn in `var(--gold)`, which the
+ * review errand remaps to `var(--blue)`, and it can land on any of the three
+ * surfaces — the page, a raised card, a sunken panel. Six pairs per theme, and
+ * 3:1 rather than 4.5, which is the bar for a non-text indicator.
+ *
+ * This is here rather than left to inspection for the reason the block above
+ * exists: a ring that is invisible on one surface in one theme in one errand is
+ * exactly the defect nobody finds by looking, and there are twelve combinations.
+ */
+const NON_TEXT = 3;
+const RING: [string, string, string][] = [
+  ["focus ring on the page", "--gold", "--ink"],
+  ["focus ring on a raised card", "--gold", "--ink-raised"],
+  ["focus ring on a sunken panel", "--gold", "--ink-sunken"],
+  ["focus ring on the page (review mode)", "--blue", "--ink"],
+  ["focus ring on a raised card (review mode)", "--blue", "--ink-raised"],
+  ["focus ring on a sunken panel (review mode)", "--blue", "--ink-sunken"],
+];
+
 describe.each([
   ["the dark palette", 0],
   ["the light palette", 1],
@@ -97,6 +119,46 @@ describe.each([
   it.each(PAIRS)("reads at AA: %s", (_where, fg, bg) => {
     expect(contrast(vars[fg], vars[bg])).toBeGreaterThanOrEqual(AA);
   });
+
+  it.each(RING)("is visible at 3:1: %s", (_where, fg, bg) => {
+    expect(contrast(vars[fg], vars[bg])).toBeGreaterThanOrEqual(NON_TEXT);
+  });
+});
+
+/**
+ * The ring has to exist before its contrast means anything.
+ *
+ * Both halves were live defects: there was no `:focus-visible` rule in 1,901
+ * lines, and `outline: none` sat on the two controls that did have a focus rule,
+ * with a border-colour change standing in for a ring.
+ */
+describe("the focus ring", () => {
+  it("is drawn on :focus-visible, in the accent", () => {
+    const rule = css.match(/:focus-visible\s*\{([^}]*)\}/g) ?? [];
+    const drawn = rule.filter((r) => /outline:\s*\d/.test(r));
+    expect(drawn.length).toBeGreaterThan(0);
+    expect(drawn.some((r) => r.includes("var(--gold)"))).toBe(true);
+  });
+
+  /**
+   * The two rules that used to kill it.
+   *
+   * Written as a plain scan rather than a built regex: the first draft of this
+   * escaped the selector into a pattern that matched nothing, so the assertion
+   * passed against a stylesheet with `outline: none` put back — a test that
+   * checks nothing is worse than no test, and this one was caught only because
+   * it was tried against the defect it was written for.
+   */
+  it.each([".answer-field:focus", ".field input:focus"])(
+    "is not suppressed on %s",
+    (selector) => {
+      const at = css.indexOf(`${selector} {`);
+      expect(at, `no rule for ${selector} — did it move?`).toBeGreaterThanOrEqual(0);
+      const body = css.slice(at, css.indexOf("}", at));
+      expect(body).not.toContain("outline: none");
+      expect(body).not.toContain("outline:none");
+    },
+  );
 });
 
 describe("the accent label", () => {

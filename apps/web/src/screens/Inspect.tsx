@@ -1,6 +1,6 @@
 import { buildParadigm, type LemmaEntry, type TaggedForm } from "@lang-tutor/core";
 import { profile } from "../pack.js";
-import { CopyButton, Sheet, Spinner, TableBox } from "../ui.js";
+import { CopyButton, Sheet, Spinner, TableBox, l2Attrs } from "../ui.js";
 
 /**
  * What a word is, when you ask it directly.
@@ -113,7 +113,7 @@ export function InspectSheet({
                   // Two forms in one cell is the ordinary case, not an error:
                   // `amāvistī` and its syncopated `amāstī` are both the perfect
                   // second singular, and a grammar prints both.
-                  <td key={k}>{cell.join(" · ") || "—"}</td>
+                  <td key={k} {...l2Attrs}>{cell.join(" · ") || "—"}</td>
                 ))}
               </tr>
             ))}
@@ -128,7 +128,7 @@ export function InspectSheet({
             {paradigm.other.map((other, i) => (
               <div className="row row--static" key={i}>
                 <span className="row__main">
-                  <span className="row__title">{other.form}</span>
+                  <span {...l2Attrs} className="row__title">{other.form}</span>
                   <span className="row__sub">{other.tags.join(", ")}</span>
                 </span>
               </div>

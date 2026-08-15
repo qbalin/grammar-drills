@@ -6,7 +6,7 @@ import type {
   VocabCardState,
   VocabContext,
 } from "@lang-tutor/core";
-import { comesBack, CopyButton, GradeBar, Ring, Sentence } from "../ui.js";
+import { comesBack, CopyButton, GradeBar, l2Attrs, Ring, Sentence } from "../ui.js";
 import { profile } from "../pack.js";
 
 /**
@@ -242,6 +242,7 @@ export function Graded({
                 )}
               </div>
               <div
+                {...l2Attrs}
                 className={`compare__text${written ? "" : " compare__text--empty"}`}
               >
                 {written ? (
@@ -269,7 +270,7 @@ export function Graded({
                 onCopy={() => onCopy("answer")}
               />
             </div>
-            <div className="compare__text compare__text--reference">
+            <div {...l2Attrs} className="compare__text compare__text--reference">
               <Sentence
                 text={question.answer}
                 marks={marks.answer}
@@ -395,7 +396,7 @@ export function VocabReview({
           <div className="compare">
             <div className="compare__block compare__block--reference">
               <div className="compare__label">Citation</div>
-              <div className="compare__text compare__text--reference">
+              <div {...l2Attrs} className="compare__text compare__text--reference">
                 {card.citation}
               </div>
               {(card.pos || card.declension) && (
@@ -433,6 +434,7 @@ export function VocabReview({
                 </div>
                 <div className="context__prompt">{c.prompt}</div>
                 <div
+                  {...l2Attrs}
                   className={`compare__text${
                     c.source === "answer" ? " compare__text--reference" : ""
                   }`}

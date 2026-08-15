@@ -450,7 +450,6 @@ span.status__title {
 }
 
 .answer-field:focus {
-  outline: none;
   border-color: var(--gold-dim);
 }
 
@@ -838,6 +837,41 @@ span.status__title {
 
 .btn:disabled {
   opacity: 0.45;
+}
+
+/*
+ * Where the keyboard is.
+ *
+ * There was no answer to that anywhere in this file. `outline: none` sat on the
+ * answer box and on the settings inputs with a border-colour change standing in
+ * for it, and every other control — the grade buttons, the index rows, a
+ * sheet's close — fell back to whatever ring the browser draws, which on this
+ * palette is a dark outline on a dark surface. The loop is drivable from the
+ * keyboard and there was no way to see where you were in it.
+ *
+ * `:focus-visible`, not `:focus`, so a thumb does not light up a button it has
+ * just tapped: the browser decides, and it decides on how the control was
+ * reached rather than on what kind of control it is.
+ *
+ * `var(--gold)` because that is the app's accent and it is remapped to the blue
+ * while reviewing — so the ring is the errand's colour without knowing which
+ * errand it is on, like every other ring and meter here. Both colours are held
+ * to WCAG 1.4.11's 3:1 against every surface they can land on, in both themes,
+ * by `contrast.test.ts` — the same test that reads this file for the text pairs.
+ *
+ * `:where()` keeps the specificity at zero so a component can still say
+ * something more particular without a fight.
+ */
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* The word spans are not controls and take no ring, but the sheet's scrolling
+   body can be focused for the keyboard to scroll it, and a ring around the
+   whole panel is noise rather than information. */
+.sheet__body:focus-visible {
+  outline: none;
 }
 
 .linkrow {
@@ -1634,7 +1668,6 @@ span.status__title {
 }
 
 .field input:focus {
-  outline: none;
   border-color: var(--gold-dim);
 }
 

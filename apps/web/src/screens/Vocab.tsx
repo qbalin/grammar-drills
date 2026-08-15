@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { LemmaEntry, VocabCardState, VocabContext } from "@lang-tutor/core";
 import { fold, profile } from "../pack.js";
-import { Sentence, Sheet, Spinner, ago, until } from "../ui.js";
+import { Sentence, Sheet, Spinner, ago, l2Attrs, until } from "../ui.js";
 
 /**
  * Recording an unknown word.
@@ -136,7 +136,7 @@ export function VocabPickSheet({
             onClick={() => onPick(c)}
           >
             <span className="row__main">
-              <span className="row__title">{c.citation}</span>
+              <span {...l2Attrs} className="row__title">{c.citation}</span>
               <span className="row__sub">
                 {c.gloss}
                 {c.pos ? ` · ${c.pos}` : ""}
@@ -301,7 +301,7 @@ export function VocabListSheet({
               return (
                 <button className="row" key={c.id} onClick={() => onPick(c)}>
                   <span className="row__main">
-                    <span className="row__title">{c.citation}</span>
+                    <span {...l2Attrs} className="row__title">{c.citation}</span>
                     <span className="row__sub">
                       {c.gloss}
                       {" · "}

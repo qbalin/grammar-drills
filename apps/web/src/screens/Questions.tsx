@@ -4,7 +4,7 @@ import type {
   GrammarSection,
   QuestionSource,
 } from "@lang-tutor/core";
-import { Sheet, ago } from "../ui.js";
+import { Sheet, ago, l2Attrs } from "../ui.js";
 import { AttemptTrail, type HoldPastWord } from "./Map.js";
 
 /**
@@ -130,7 +130,7 @@ export function QuestionSheet({
       <div className="compare">
         <div className="compare__block compare__block--reference">
           <div className="compare__label">Reference</div>
-          <div className="compare__text compare__text--reference">
+          <div {...l2Attrs} className="compare__text compare__text--reference">
             {question.answer}
           </div>
           {question.note && <div className="note">{question.note}</div>}

@@ -6,7 +6,7 @@ import type {
   FamilyProgress,
   TopicProgress,
 } from "@lang-tutor/core";
-import { Ring, Sentence, Sheet, ago, cycleEmphasis } from "../ui.js";
+import { Ring, Sentence, Sheet, ago, cycleEmphasis, l2Attrs } from "../ui.js";
 import { fold, profile } from "../pack.js";
 
 /** One section of another book, as the topic sheet shows it. */
@@ -662,6 +662,7 @@ export function AttemptTrail({
               </div>
             )}
             <div
+              {...l2Attrs}
               className={`attempt__written${written ? "" : " attempt__written--empty"}`}
             >
               {written ? (
@@ -684,8 +685,10 @@ export function AttemptTrail({
               )}
             </div>
             {answer && (
-              <div className="attempt__answer">
-                <span className="attempt__answer-label">correct</span>
+              <div {...l2Attrs} className="attempt__answer">
+                {/* Inside the L2 block, so it has to name its own language: an
+                    omitted `lang` inherits rather than resets. */}
+                <span lang={profile.l1.code} className="attempt__answer-label">correct</span>
                 <Sentence
                   text={a.answer}
                   marks={marks.answer}

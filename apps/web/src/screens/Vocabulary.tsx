@@ -1,5 +1,5 @@
 import type { VocabWord } from "@lang-tutor/core";
-import { Spinner, useHold } from "../ui.js";
+import { l2Attrs, Spinner, useHold } from "../ui.js";
 
 /**
  * The words behind the question, folded away until asked for.
@@ -93,7 +93,7 @@ export function QuestionVocabulary({
                 <span className="crib-row__target">
                   {word.entry ? (
                     <>
-                      <span className="crib-row__citation">{word.entry.citation}</span>
+                      <span {...l2Attrs} className="crib-row__citation">{word.entry.citation}</span>
                       {/* Only where the prompt named nothing. Where it did, its
                           own word is the gloss, and printing both doubles the
                           list for no extra meaning. */}
@@ -103,7 +103,7 @@ export function QuestionVocabulary({
                     </>
                   ) : (
                     <>
-                      <span className="crib-row__citation">{word.form}</span>
+                      <span {...l2Attrs} className="crib-row__citation">{word.form}</span>
                       <span className="crib-row__missing">not in the dictionary</span>
                     </>
                   )}
