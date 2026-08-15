@@ -238,9 +238,23 @@ export function gate(id, ok, detail) {
   return { id, ok, detail };
 }
 
-export function report(title, gates, { json = false } = {}) {
+/**
+ * Print a report, or emit it as JSON.
+ *
+ * `measured` is what the report counted on its way to a verdict, and it exists
+ * for `baseline.mjs`. A gate's `detail` already carries most of these numbers,
+ * but only as English — "4 duplicate prompts of 9006 (0.04%, allowed 1%)" — and
+ * a `BASELINE.json` built by regexing those sentences would break the first time
+ * somebody improved the wording of a gate. So a report says what it measured
+ * separately from how it phrased it.
+ *
+ * Absent for a report that has not been given one yet, which is why the key is
+ * omitted rather than written empty: `baseline.mjs` has to be able to tell "this
+ * report measures nothing" from "this run measured nothing".
+ */
+export function report(title, gates, { json = false, measured } = {}) {
   if (json) {
-    console.log(JSON.stringify({ title, gates }, null, 2));
+    console.log(JSON.stringify({ title, gates, ...(measured ? { measured } : {}) }, null, 2));
   } else {
     console.log(`\n${title}`);
     for (const g of gates) {

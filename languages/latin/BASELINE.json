@@ -5,10 +5,19 @@
   "It is a record, not an input: the gates live in profile.json and are checked",
   "by scripts/validate-pack.mjs. This is here so a later run can see whether a",
   "number moved, and by how much, rather than only whether it still clears a",
-  "threshold. Regenerate with:",
-  "  node --import tsx scripts/validate-pack.mjs --built apps/web/public/content"
+  "threshold.",
+  "",
+  "Generated. Do not transcribe figures into it by hand — that is how it went",
+  "3,212 questions stale. To see what has drifted:",
+  "  node --import tsx scripts/baseline.mjs --pack languages/latin",
+  "and to record it, the same with --write. Build this pack first if the bundle",
+  "sizes are to be measured, and pass --ref to remeasure the dictionary block",
+  "and the attestation accounting, which the pack's own content cannot answer.",
+  "",
+  "Every _-prefixed key here is prose somebody wrote and the writer preserves,",
+  "along with any figure it does not itself measure."
  ],
- "measuredAt": "2026-08-12",
+ "measuredAt": "2026-08-15",
  "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
  "grammar": {
   "topics": 149,
@@ -100,7 +109,8 @@
    "rowShapedLines 2015 -> 1911 with tableRowsRecovered 2052 -> 2103: fewer",
    "lines carrying more rows, which is the wrapped-cell bug being fixed. A",
    "cell that used to wrap over three physical lines is now one row."
-  ]
+  ],
+  "id": "bn"
  },
  "grammars": {
   "_comment": [
@@ -230,7 +240,8 @@
     "",
     "rowShapedLines 1364 -> 1728 and tableRowsRecovered 1462 -> 1826 are the",
     "tables in the new parts. G9 has not been read through."
-   ]
+   ],
+   "id": "lane"
   }
  },
  "questions": {
@@ -435,12 +446,14 @@
    "71 more tokens are in reference/dictionary.db and not in what the pack",
    "ships. They are a thin index rather than a bad sentence; closing that gap",
    "is a build-lemmas job and touches no question."
-  ]
+  ],
+  "reference": "the latin pack's own content",
+  "split": null
  },
  "bundle": {
-  "grammarJsonGz": "129 KB",
-  "testsJsonGz": "372 KB",
-  "lemmasJsonGz": "1851 KB",
+  "grammarJsonGz": "148 KB",
+  "testsJsonGz": "485 KB",
+  "lemmasJsonGz": "1864 KB",
   "formsTxtGz": "2620 KB",
   "_note": [
    "The dictionary went from 2.1 MB to 4.2 MB across its two files when the",
@@ -457,5 +470,7 @@
    "this size it would have been some 300 MB, which is more than apps/cli",
    "could parse."
   ]
- }
+ },
+ "measuredWith": "the latin pack's own content",
+ "_attestationNote": "the accounting fields were measured with the reference and are kept; re-run with --ref to remeasure them"
 }

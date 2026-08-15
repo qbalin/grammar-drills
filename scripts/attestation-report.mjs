@@ -195,7 +195,33 @@ const gates = [
     `(budget ${limits.maxUnattestedForms})`),
 ];
 
-const ok = report(`Attestation — ${profile.id}`, gates, { json: JSON_OUT });
+/**
+ * What this run counted, for `baseline.mjs`.
+ *
+ * `reference` rides along with the numbers and is not decoration. This report
+ * answers from the pack's own content by default and from the real dictionary
+ * under `--ref`, and the two disagree about more than the edges: the committed
+ * Latin baseline records 53,214 answer tokens against this backend's 65,323,
+ * and 8,181 function words against 10,656, because the wide backend classifies
+ * a different set. The gate figures agree — 105 unattested, worst 2 — which is
+ * exactly what makes the disagreement easy to miss. A baseline that blended
+ * them would be two measurements wearing one date.
+ */
+const measured = {
+  reference: strict.label,
+  split: wide?.label ?? null,
+  answerTokens: tokens,
+  exemptFunctionWords: exempt["function-word"] ?? 0,
+  exemptEnclitic: exempt["enclitic"] ?? 0,
+  exemptProperNoun: exempt["proper-noun"] ?? 0,
+  unattestedTokens: buckets["hard-miss"],
+  unattestedForms: hardForms.size,
+  questionsAffected: flagged.length,
+  worstQuestion: worst,
+  indexGapTokensVsDictionary: buckets["index-gap"],
+};
+
+const ok = report(`Attestation — ${profile.id}`, gates, { json: JSON_OUT, measured });
 if (JSON_OUT) {
   console.log(JSON.stringify({
     pack: profile.id,

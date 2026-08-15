@@ -73,6 +73,20 @@ for (const t of grammar) {
 }
 const share = (n) => (n / grammar.length) * 100;
 
+/**
+ * The report's running commentary — the distributions and the notes beside the
+ * gates, which are for a person reading the run.
+ *
+ * Under `--json` it stands down, so that stdout is one JSON document and
+ * nothing has to hunt for the first `{`. `coverage-report.mjs` already guarded
+ * its prose this way; this one did not, so `--json` emitted five lines of
+ * English and then an object.
+ */
+const asJson = argv.includes("--json");
+const say = (...args) => {
+  if (!asJson) console.log(...args);
+};
+
 const gates = [];
 
 // --- G1-G3: there are enough topics, none is empty, and they are small -------
@@ -112,7 +126,7 @@ gates.push(
 if (readingTopics) {
   const rl = grammar.filter((t) => t.readingOnly).map((t) => size.get(t.id))
     .sort((a, b) => a - b);
-  console.log(
+  say(
     `reading: ${readingTopics} topics · min ${rl[0]} · median ${percentile(rl, 0.5)} ` +
       `· p90 ${percentile(rl, 0.9)} · max ${rl[rl.length - 1]}`,
   );
@@ -122,7 +136,7 @@ if (readingTopics) {
 // cover; flag it for splitting rather than failing the pack over it.
 const outsized = grammar.filter((t) => size.get(t.id) > median * 4);
 if (outsized.length) {
-  console.log(
+  say(
     `note: ${outsized.length} topics exceed 4× the median length and are candidates for splitting:\n` +
       outsized.map((t) => `      ${t.id} (${size.get(t.id)} chars)`).join("\n"),
   );
@@ -223,7 +237,7 @@ if (coverage) {
     acc[d.reason] = (acc[d.reason] ?? 0) + 1;
     return acc;
   }, {});
-  console.log(`dropped by reason: ${Object.entries(reasons).map(([r, n]) => `${r} ${n}`).join(" · ")}`);
+  say(`dropped by reason: ${Object.entries(reasons).map(([r, n]) => `${r} ${n}`).join(" · ")}`);
 } else {
   gates.push(
     gate("G8", false,
@@ -284,7 +298,7 @@ if (coverage) {
       acc[r] = (acc[r] ?? 0) + 1;
       return acc;
     }, {});
-    console.log(`reading by reason: ${Object.entries(why).map(([r, n]) => `${r} ${n}`).join(" · ")}`);
+    say(`reading by reason: ${Object.entries(why).map(([r, n]) => `${r} ${n}`).join(" · ")}`);
   }
 }
 
@@ -300,24 +314,86 @@ if (sampleAt >= 0) {
   const step = Math.max(1, Math.floor(grammar.length / (n - 2)));
   for (let i = 0; picked.length < n && i < grammar.length; i += step) picked.push(grammar[i]);
 
-  console.log(`\n${"=".repeat(72)}\nRead these ${picked.length} topics and record the verdict in the pack's REVIEW.md.\n${"=".repeat(72)}`);
+  say(`\n${"=".repeat(72)}\nRead these ${picked.length} topics and record the verdict in the pack's REVIEW.md.\n${"=".repeat(72)}`);
   for (const t of picked) {
-    console.log(`\n--- ${t.id}  ${book.style.refPrefix}${t.ref}  [${t.family}]  ${size.get(t.id)} chars`);
-    console.log(`    ${t.title}\n`);
+    say(`\n--- ${t.id}  ${book.style.refPrefix}${t.ref}  [${t.family}]  ${size.get(t.id)} chars`);
+    say(`    ${t.title}\n`);
     if (argv.includes("--render")) {
       for (const block of parseBlocks(t.text, book.style)) {
         if (block.kind === "table") {
-          for (const row of block.rows) console.log("    " + row.cells.join("  "));
+          for (const row of block.rows) say("    " + row.cells.join("  "));
         } else {
-          console.log("    " + (block.text ?? "").slice(0, 800).replace(/\n/g, "\n    "));
+          say("    " + (block.text ?? "").slice(0, 800).replace(/\n/g, "\n    "));
         }
-        console.log("");
+        say("");
       }
     }
   }
 }
 
+/**
+ * What this run counted, for `baseline.mjs` — one book's worth.
+ *
+ * Keyed by book rather than merged, because `grammar-report` runs once per book
+ * and two books' shapes must never be averaged: a family list is one book's
+ * table of contents and a shape gate is calibrated against one book's idea of
+ * how long a topic is.
+ */
+const readingLengths = grammar
+  .filter((t) => t.readingOnly)
+  .map((t) => size.get(t.id))
+  .sort((a, b) => a - b);
+
+const measured = {
+  // `id`, not `label`. A baseline's `book` line is often a fuller citation than
+  // the profile's short label — "Lane, A Latin Grammar for Schools and Colleges
+  // (1898)" against "Lane" — and that is a person's note about which edition was
+  // parsed. Emitting the short one here would overwrite it with less.
+  id: book.id,
+  topics: grammar.length,
+  taughtTopics: taught.length,
+  readingTopics,
+  families: book.families.length,
+  familyCounts: Object.fromEntries(counts),
+  textChars: {
+    min: lengths[0] ?? 0,
+    median,
+    p90,
+    max: lengths[lengths.length - 1] ?? 0,
+  },
+  ...(readingLengths.length
+    ? {
+        readingTextChars: {
+          min: readingLengths[0],
+          median: percentile(readingLengths, 0.5),
+          p90: percentile(readingLengths, 0.9),
+          max: readingLengths[readingLengths.length - 1],
+        },
+      }
+    : {}),
+  ...(coverage
+    ? {
+        sourceSections: coverage.sourceSections.length,
+        assigned: Object.keys(coverage.assigned).length,
+        dropped: coverage.dropped.reduce((acc, d) => {
+          acc[d.reason] = (acc[d.reason] ?? 0) + 1;
+          return acc;
+        }, {}),
+        // `coverage.reading` is `{topicId: reason}`, the same map G11 holds the
+        // shipped flags against — not a field on the assignment.
+        reading: Object.values(coverage.reading ?? {}).reduce((acc, r) => {
+          acc[r] = (acc[r] ?? 0) + 1;
+          return acc;
+        }, {}),
+      }
+    : {}),
+  rowShapedLines: rowLines,
+  tableRowsRecovered: parsedRows,
+  romanPoints,
+};
+
 const ok = report(`Grammar shape — ${profile.id} / ${book.label} (${grammar.length} topics)`, gates, {
-  json: argv.includes("--json"),
+  json: asJson,
+  measured,
 });
 process.exit(ok ? 0 : 1);

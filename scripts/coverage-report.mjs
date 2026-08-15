@@ -274,11 +274,16 @@ ref.close();
 // --- C6: what the generator threw away ---------------------------------------
 
 const statsPath = join(dir, "content", "gen-stats.json");
+// Null rather than 100 when there is no stats file: `BASELINE.json` has to be
+// able to say "unmeasured" where a pack predates the generator's bookkeeping,
+// and a bare 100 there would read as a perfect kept ratio nobody measured.
+let keptPct = null;
 if (existsSync(statsPath)) {
   const runs = JSON.parse(readFileSync(statsPath, "utf8"));
   const raw = runs.reduce((n, r) => n + (r.rawQuestions ?? 0), 0);
   const kept = runs.reduce((n, r) => n + (r.keptQuestions ?? 0), 0);
   const pct = raw ? (kept / raw) * 100 : 100;
+  keptPct = Number(pct.toFixed(1));
   gates.push(
     gate("C6", pct >= limits.minKeptRatioPct,
       `kept ${kept} of ${raw} generated items (${pct.toFixed(1)}%, want ≥${limits.minKeptRatioPct}%)`),
@@ -362,10 +367,43 @@ if (!argv.includes("--json")) {
   }
 }
 
+/**
+ * What this run counted, for `baseline.mjs` — the same numbers the gates above
+ * phrase in English, said once in a form a later run can subtract from.
+ *
+ * Everything here is already computed for a gate; nothing is measured twice. The
+ * two reference-backed figures are the exception worth naming: with no `--ref`
+ * they are answered from the pack's own content, which is the honest strict
+ * reading and is what CI does, but it is a different measurement from the full
+ * dictionary's and `BASELINE.json` should not silently blend the two.
+ */
+const testCounts = perTopic.map((r) => r.tests).sort((a, b) => a - b);
+const measured = {
+  tests: perTopic.reduce((n, r) => n + r.tests, 0),
+  questions: allQuestions.length,
+  topicsWithTests: perTopic.filter((r) => r.tests > 0).length,
+  duplicatePromptPct: Number(dupPct.toFixed(2)),
+  answerTokens: total,
+  dictResolvedPct: Number(pct.toFixed(1)),
+  bandLemmasUsed: inBand,
+  bandLemmasTotal: bandLemmas.length,
+  bandUtilisationPct: Number(pctBand.toFixed(1)),
+  keptRatioPct: keptPct,
+  belowSizeScaledTarget: short.length,
+  quotedTests: perTopic.reduce((n, r) => n + r.quotedTests, 0),
+  quotedQuestions: perTopic.reduce((n, r) => n + r.quotedQuestions, 0),
+  quotedTopics: perTopic.filter((r) => r.quotedQuestions > 0).length,
+  testsPerTopic: {
+    min: testCounts[0] ?? 0,
+    median: testCounts[Math.floor(testCounts.length / 2)] ?? 0,
+    max: testCounts[testCounts.length - 1] ?? 0,
+  },
+};
+
 const ok = report(
   `Question coverage — ${profile.id} (${allQuestions.length} questions over ${perTopic.length} topics)`,
   gates,
-  { json: argv.includes("--json") },
+  { json: argv.includes("--json"), measured },
 );
 
 /*

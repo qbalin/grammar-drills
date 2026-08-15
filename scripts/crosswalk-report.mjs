@@ -59,6 +59,8 @@ const primaryIds = new Set(primaryTopics.map((t) => t.id));
 const tests = loadTests(dir);
 
 const gates = [];
+/** Per-book, for `baseline.mjs`. See where it is filled. */
+const measured = {};
 for (const book of secondaries) {
   const topics = loadGrammar(dir, book);
   const ids = new Set(topics.map((t) => t.id));
@@ -158,10 +160,24 @@ for (const book of secondaries) {
     total += n;
     if ((walk.fromPrimary[sectionId] ?? []).length) visible += n;
   }
-  console.log(
-    `${book.label}: ${visible} of ${total} questions reachable ` +
-      `(${((visible / total) * 100).toFixed(1)}%)`,
-  );
+  if (!argv.includes("--json")) {
+    console.log(
+      `${book.label}: ${visible} of ${total} questions reachable ` +
+        `(${((visible / total) * 100).toFixed(1)}%)`,
+    );
+  }
+
+  // For `baseline.mjs`, keyed by book for the reason X2 is: this is a fact
+  // about one table joining one pair of books.
+  measured[book.id] = {
+    topicsReachable: reached.length,
+    topicsTotal: taught.length,
+    questionsReachable: visible,
+    questionsTotal: total,
+    medianQuestionsPerReachedTopic: sizes[sizes.length >> 1] ?? 0,
+    primaryTopicsReached: new Set(Object.values(walk.toPrimary ?? {}).flat()).size,
+    primaryTopicsTotal: teachable(primaryTopics).length,
+  };
 
   // The work queue for the next pass at the table, so it lists what a row could
   // still be written for. A reading page is not that: prosody would sit at the
@@ -171,18 +187,21 @@ for (const book of secondaries) {
     if (served.has(t.id)) continue;
     gap.set(t.family, (gap.get(t.family) ?? 0) + 1);
   }
-  if (gap.size) {
+  if (gap.size && !argv.includes("--json")) {
     console.log(
       `  unreached by family: ` +
         [...gap].sort((a, b) => b[1] - a[1]).map(([f, n]) => `${f} ${n}`).join(" · "),
     );
   }
-  if (argv.includes("--gaps")) {
+  if (argv.includes("--gaps") && !argv.includes("--json")) {
     for (const t of taught) {
       if (!served.has(t.id)) console.log(`    ${t.id}  ${book.style.refPrefix}${t.ref}  ${t.title}`);
     }
   }
 }
 
-const ok = report(`Crosswalk — ${profile.id}`, gates, { json: argv.includes("--json") });
+const ok = report(`Crosswalk — ${profile.id}`, gates, {
+  json: argv.includes("--json"),
+  ...(Object.keys(measured).length ? { measured } : {}),
+});
 process.exit(ok ? 0 : 1);
