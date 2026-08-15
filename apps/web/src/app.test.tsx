@@ -4483,3 +4483,65 @@ describe("grading from the keyboard", () => {
     expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 1/2`);
   });
 });
+
+/**
+ * Finding a topic by name.
+ *
+ * Greek ships 485 topics behind eleven family headings, so reaching one meant
+ * knowing which family it lives under and scrolling to it.
+ */
+describe("the grammar index filter", () => {
+  const openIndex = async (user: ReturnType<typeof userEvent.setup>) => {
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    return screen.getByRole("dialog");
+  };
+
+  it("reaches a topic whose family is not the open one", async () => {
+    const user = userEvent.setup();
+    mount();
+    const sheet = await openIndex(user);
+
+    // The index opens on the family being studied — nouns — so a verb-forms
+    // topic is exactly what was unreachable without knowing where to look.
+    expect(within(sheet).queryByText("Present indicative")).toBeNull();
+
+    await user.type(within(sheet).getByLabelText("Find a topic"), "present");
+    expect(within(sheet).getByText("Present indicative")).toBeDefined();
+    // And only it: the families it walked past are not still on screen.
+    expect(within(sheet).queryByText("First declension")).toBeNull();
+  });
+
+  it("finds a section by its §, which is what a reference gives you", async () => {
+    const user = userEvent.setup();
+    mount();
+    const sheet = await openIndex(user);
+
+    await user.type(within(sheet).getByLabelText("Find a topic"), "174");
+    expect(within(sheet).getByText("Present indicative")).toBeDefined();
+    expect(within(sheet).queryByText("First declension")).toBeNull();
+  });
+
+  it("says so when nothing matches, rather than showing an empty book", async () => {
+    const user = userEvent.setup();
+    mount();
+    const sheet = await openIndex(user);
+
+    await user.type(within(sheet).getByLabelText("Find a topic"), "qqqzzz");
+    expect(within(sheet).getByText(/Nothing matches/)).toBeDefined();
+  });
+
+  it("puts the families back when the box is cleared", async () => {
+    const user = userEvent.setup();
+    mount();
+    const sheet = await openIndex(user);
+    const box = within(sheet).getByLabelText("Find a topic");
+
+    await user.type(box, "declension");
+    expect(within(sheet).queryByText(/topics ·/)).toBeNull();
+    await user.clear(box);
+    // The family headings carry "N topics · M% mastered"; their return is how
+    // the index says it is whole again.
+    expect(within(sheet).getAllByText(/topics/).length).toBeGreaterThan(0);
+  });
+});

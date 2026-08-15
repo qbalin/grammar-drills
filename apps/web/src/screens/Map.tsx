@@ -220,6 +220,36 @@ export function MapSheet({
     0,
   );
 
+  /*
+   * Finding a topic by name.
+   *
+   * Greek ships 485 topics behind eleven family headings, so reaching "genitive
+   * absolute" meant knowing which family it lives under and scrolling. Every
+   * title and § is already in memory — this is a filter over what is on the
+   * page, not a search that fetches anything.
+   *
+   * Two tiers, because they answer different questions. A **title** match is
+   * somebody looking for a topic they can name. A **§** match is somebody
+   * holding a reference from a book, an index, or a footnote and wanting the
+   * page — and typing `451` should find § 451 rather than every topic whose
+   * title happens to contain those digits. Titles first, refs after, and the
+   * families collapse to a flat list while filtering: a heading over one row is
+   * a heading in the way.
+   */
+  const [filter, setFilter] = useState("");
+  const needle = filter.trim().toLowerCase();
+  const matches = needle
+    ? (() => {
+        const all = families.flatMap((f) => f.topics);
+        const byTitle = all.filter((t) => t.title.toLowerCase().includes(needle));
+        const seen = new Set(byTitle.map((t) => t.sectionId));
+        const byRef = all.filter(
+          (t) => !seen.has(t.sectionId) && t.ref.toLowerCase().includes(needle),
+        );
+        return [...byTitle, ...byRef];
+      })()
+    : null;
+
   return (
     <Sheet title="Grammar index" onClose={onClose}>
       {/* Which book the index is drawn from. Only when there is more than one:
@@ -263,7 +293,30 @@ export function MapSheet({
         )}
       </div>
 
-      {families.map((f) => {
+      <label className="field">
+        <input
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+          placeholder="find a topic, or a §…"
+          autoCapitalize="off"
+          autoCorrect="off"
+          spellCheck={false}
+          aria-label="Find a topic"
+        />
+      </label>
+
+      {matches && (
+        <>
+          <p className="row__sub" style={{ marginTop: 0 }}>
+            {matches.length === 0
+              ? `Nothing matches “${filter.trim()}”.`
+              : `${matches.length} of ${total + reading} topics`}
+          </p>
+          <TopicRows topics={matches} quotedOnly={quotedOnly} onPick={onPick} />
+        </>
+      )}
+
+      {!matches && families.map((f) => {
         // Nine headings are what is read first, and a family with nothing under
         // it is nine-ninths of a wasted expansion. Greyed but still an
         // accordion: opening it is how you see *why* it is empty.
