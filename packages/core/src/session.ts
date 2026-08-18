@@ -1,8 +1,10 @@
 import { Content } from "./content.js";
 import { type FamilyId } from "./families.js";
-import type { Fold } from "./fold.js";
-import { foldKey, words } from "./question-vocab.js";
 import { repairProgress } from "./repair.js";
+import { VocabDeck, type ContextOutcome } from "./vocab.js";
+// Re-exported from here because this is where they used to live, and a caller
+// importing them by their old path should not have to know they moved.
+export { MAX_CONTEXTS, type ContextOutcome } from "./vocab.js";
 import {
   deserializeCard,
   isDue,
@@ -81,47 +83,6 @@ function serveOrder(tests: Test[], seed: number, quotedFirst: boolean): Test[] {
       rng,
     ),
   ];
-}
-
-/**
- * How many sentences one word may keep.
- *
- * The commonest words are in hundreds of questions, and without a ceiling one
- * card's back becomes a wall and the progress file grows without a student ever
- * asking it to. A word met eight times does not need a ninth sentence to be
- * memorable. The limit is told to the caller rather than enforced in silence,
- * and deleting one makes room again.
- */
-export const MAX_CONTEXTS = 8;
-
-/**
- * What became of a sentence offered to a card. Four ways for it not to land,
- * said apart, because a surface that reported them all as "saved" would flash a
- * confirmation for a press that did nothing.
- */
-export type ContextOutcome =
-  | "added"
-  | "duplicate"
-  | "full"
-  | "off"
-  | "missing";
-
-/**
- * What makes two contexts the same one.
- *
- * The question and the sentence, both through the pack's own fold, so the same
- * line typed once with the pack's editorial marks and once without is one
- * context and not two. `source` is deliberately out of the key: an answer typed
- * correctly folds equal to the reference, so holding a word in both texts of one
- * question keeps one sentence — which is the same judgement `answerMatches`
- * makes on the same two strings.
- *
- * `index` is out of it too. Same card, same sentence, different index only
- * happens when one lemma stands twice in a line, and that is one context with
- * two possible highlights; the first one wins.
- */
-function contextKey(context: NewVocabContext, fold: Fold): string {
-  return `${foldKey(context.prompt, fold)}\n${foldKey(context.sentence, fold)}`;
 }
 
 export type Action =
@@ -296,6 +257,15 @@ export class Session {
    * caches against, so a run of reads between two grades computes once.
    */
   private revision = 0;
+
+  /**
+   * The vocabulary half, lifted out. See `vocab.ts`.
+   *
+   * `() => this.p` rather than `this.p.vocabCards`: `restore()` replaces the
+   * whole progress object for an undo, and a deck holding the old record would
+   * go on writing to what the undo threw away.
+   */
+  private readonly deck: VocabDeck;
   private mapCache: {
     revision: number;
     grammarId: string;
@@ -334,6 +304,13 @@ export class Session {
     );
     this.p = fixed.progress;
     this.repaired = fixed.repaired;
+    this.deck = new VocabDeck(
+      () => this.p,
+      this.content.fold,
+      (lemma) => this.content.lookup(lemma),
+      this.citationsVersion,
+      () => this.touch(),
+    );
     // A file written before the answer trail existed simply has none; there is
     // no migration layer, so default it here. Same for the citation generation.
     this.p.attempts ??= {};
@@ -1271,112 +1248,6 @@ export class Session {
       : null;
   }
 
-  /** The same, for a vocabulary card; undefined if there is no such card. */
-  previewVocab(
-    cardId: string,
-    now: Date = new Date(),
-  ): Record<Rating, Date> | undefined {
-    const stored = this.p.vocabCards[cardId];
-    return stored ? preview(deserializeCard(stored.fsrs), now) : undefined;
-  }
-
-  /**
-   * Record an unknown word from its inflected form. The canonical citation is
-   * supplied by the caller after resolving it via `content.lookup`. Deduped by
-   * lemma so re-recording the same word is a no-op. Returns the card id.
-   */
-  recordVocab(entry: LemmaEntry, now: Date = new Date()): string {
-    const id = this.vocabIdFor(entry);
-    if (!this.p.vocabCards[id]) {
-      this.p.vocabCards[id] = {
-        ...entry,
-        id,
-        created: now.toISOString(),
-        fsrs: serializeCard(newCard(now)),
-      };
-      this.touch();
-    }
-    return id;
-  }
-
-  gradeVocab(cardId: string, rating: Rating, now: Date = new Date()): void {
-    const state = this.p.vocabCards[cardId];
-    if (!state) return;
-    const card = rate(deserializeCard(state.fsrs), rating, now);
-    state.fsrs = serializeCard(card);
-    this.touch();
-  }
-
-  vocabCard(cardId: string): VocabCardState | undefined {
-    return this.p.vocabCards[cardId];
-  }
-
-  /** Every word recorded, in dictionary order. */
-  vocabList(): VocabCardState[] {
-    return Object.values(this.p.vocabCards).sort((a, b) =>
-      this.content.fold(a.citation).localeCompare(this.content.fold(b.citation)),
-    );
-  }
-
-  /**
-   * Correct a card's two sides. The id and the scheduling are left alone, so
-   * fixing a citation months in never costs the card its history — which is the
-   * only reason editing is safe to offer at any time.
-   *
-   * The edit reaches this card and nothing else. The dictionary is shipped
-   * content, built offline and read-only here, so a corrected citation was
-   * never going to be written back to it — but the reverse was true and is the
-   * same mistake from the other side: `refreshCitations` used to overwrite a
-   * hand-written citation the next time the pack shipped a new dictionary, so
-   * the correction lasted only until the next rebuild and the dictionary still
-   * effectively owned the card. A citation the student has written is theirs
-   * from then on, and is marked as such here.
-   */
-  updateVocab(
-    cardId: string,
-    patch: Partial<Pick<VocabCardState, "citation" | "gloss">>,
-  ): void {
-    const card = this.p.vocabCards[cardId];
-    if (!card) return;
-    if (patch.citation !== undefined) {
-      const citation = patch.citation.trim();
-      // Only a real change claims the card. Opening the sheet and saving it
-      // untouched is not the student saying the dictionary is wrong.
-      if (citation !== card.citation) card.citationEdited = true;
-      card.citation = citation;
-    }
-    // The gloss needs no such mark: nothing ever rewrites it from the
-    // dictionary, so an edited meaning is already the student's for good.
-    if (patch.gloss !== undefined) card.gloss = patch.gloss.trim();
-    this.touch();
-  }
-
-  /**
-   * The card id a given entry would take, without creating one.
-   *
-   * The `v-` rule in one place, so a surface can ask "did I already have this
-   * word" before recording it — which is the difference between *Saved* and
-   * *another sentence on a word you already had*.
-   */
-  vocabIdFor(entry: LemmaEntry): string {
-    return `v-${this.content.fold(entry.lemma)}`;
-  }
-
-  /** Every context on a card, in the student's own order. */
-  vocabContexts(cardId: string): VocabContext[] {
-    return this.p.vocabCards[cardId]?.contexts ?? [];
-  }
-
-  /** Whether a recorded word keeps the sentence it was met in. */
-  keepsContext(): boolean {
-    return this.p.keepContext !== false;
-  }
-
-  setKeepContext(on: boolean): void {
-    this.p.keepContext = on;
-    this.touch();
-  }
-
   /**
    * Whether exploring is restricted to questions somebody wrote the answer to.
    *
@@ -1418,183 +1289,6 @@ export class Session {
    */
   hasTests(sectionId: string): boolean {
     return this.content.testsFor(sectionId).length > 0;
-  }
-
-  /**
-   * Offer a card the sentence its word was met in.
-   *
-   * Apart from `recordVocab` rather than an argument to it, because the two are
-   * different questions with different answers: recording a word the student
-   * already has is a no-op, and attaching a second sentence to that same word is
-   * the whole point of this. `recordVocab` therefore keeps both its signature
-   * and its promise never to rewrite a card that already exists — a second
-   * recording that reset a corrected citation would be a silent one.
-   *
-   * The preference is checked here rather than at the call sites, so the phone
-   * and the terminal cannot drift apart on it, and the outcome comes back so a
-   * surface can say what actually happened instead of flashing a save.
-   */
-  addVocabContext(
-    cardId: string,
-    context: NewVocabContext,
-    now: Date = new Date(),
-  ): ContextOutcome {
-    if (!this.keepsContext()) return "off";
-    const card = this.p.vocabCards[cardId];
-    if (!card) return "missing";
-    const held = card.contexts ?? [];
-    const key = contextKey(context, this.content.fold);
-    if (held.some((c) => contextKey(c, this.content.fold) === key)) {
-      return "duplicate";
-    }
-    if (held.length >= MAX_CONTEXTS) return "full";
-    card.contexts = [...held, { ...context, at: this.freeStamp(held, now) }];
-    this.touch();
-    return "added";
-  }
-
-  /**
-   * A timestamp no context on this card already carries.
-   *
-   * `at` is a context's identity — it is what a delete, an edit and a move all
-   * name it by — so two sharing one would be one context that cannot be told
-   * from another: deleting either would delete both. A hold gesture is
-   * human-paced and will not collide, but nothing here is only ever driven by a
-   * thumb: an import, a test, or two sentences attached in one turn all land in
-   * the same millisecond. Nudged forward rather than made from a counter,
-   * because the value still has to read as when the word was met.
-   */
-  private freeStamp(held: VocabContext[], now: Date): string {
-    let at = now.getTime();
-    const taken = new Set(held.map((c) => c.at));
-    while (taken.has(new Date(at).toISOString())) at += 1;
-    return new Date(at).toISOString();
-  }
-
-  /**
-   * Correct one context's two texts.
-   *
-   * `source` is not patchable: rewriting the words of your own sentence does not
-   * make it the reference, and the label is the only thing standing between a
-   * card and quietly teaching back a mistake.
-   */
-  updateVocabContext(
-    cardId: string,
-    at: string,
-    patch: Partial<Pick<VocabContext, "prompt" | "sentence">>,
-  ): void {
-    const context = this.p.vocabCards[cardId]?.contexts?.find((c) => c.at === at);
-    if (!context) return;
-    if (patch.prompt !== undefined) context.prompt = patch.prompt.trim();
-    if (patch.sentence !== undefined) {
-      // The picked-out word has to be found again in the rewritten sentence, or
-      // the highlight would go on pointing at whatever word now sits in that
-      // slot — which is worse than no highlight, because it looks deliberate.
-      // The old sentence and the old index together are the word, right up
-      // until the edit lands, so nothing needs to have been stored to do this.
-      const held =
-        context.index === undefined
-          ? undefined
-          : words(context.sentence)[context.index];
-      context.sentence = patch.sentence.trim();
-      if (held !== undefined) {
-        const found = words(context.sentence).findIndex(
-          (word) => this.content.fold(word) === this.content.fold(held),
-        );
-        if (found >= 0) context.index = found;
-        else delete context.index;
-      }
-    }
-    this.touch();
-  }
-
-  /** Forget one context. The card, and every other context on it, stay. */
-  deleteVocabContext(cardId: string, at: string): void {
-    const card = this.p.vocabCards[cardId];
-    if (!card?.contexts) return;
-    const left = card.contexts.filter((c) => c.at !== at);
-    if (left.length === card.contexts.length) return;
-    // Absent rather than empty, so a card cleared of contexts reads on disk
-    // exactly like one that never had any.
-    if (left.length === 0) delete card.contexts;
-    else card.contexts = left;
-    this.touch();
-  }
-
-  /**
-   * Move one context one place towards the front (-1) or the back (1).
-   *
-   * A swap with its neighbour rather than a whole-order setter, because the
-   * surface is a pair of buttons and a swap is exactly what a button press
-   * knows. A setter would make every handler read the list, splice it and hand
-   * back an array — and under a last-writer-wins sync, one device's whole order
-   * would wipe the other's, where a swap at worst leaves a local disturbance.
-   *
-   * Clamped at the ends rather than wrapping: a button that teleports the top
-   * row to the bottom is a bug report.
-   */
-  moveVocabContext(cardId: string, at: string, by: -1 | 1): void {
-    const card = this.p.vocabCards[cardId];
-    if (!card?.contexts) return;
-    const from = card.contexts.findIndex((c) => c.at === at);
-    const to = from + by;
-    if (from < 0 || to < 0 || to >= card.contexts.length) return;
-    const moved = [...card.contexts];
-    [moved[from], moved[to]] = [moved[to]!, moved[from]!];
-    card.contexts = moved;
-    this.touch();
-  }
-
-  /** Forget a word — the way back from a card saved by a stray press. */
-  deleteVocab(cardId: string): void {
-    if (!this.p.vocabCards[cardId]) return;
-    delete this.p.vocabCards[cardId];
-    this.touch();
-  }
-
-  /**
-   * Bring saved cards up to the shipped dictionary's current citations.
-   *
-   * A card keeps its own copy of the citation, so rebuilding the dictionary —
-   * giving verbs their four principal parts, say — would otherwise reach only
-   * words recorded afterwards. Runs once per generation.
-   *
-   * A card whose citation the student has written is skipped. This is what
-   * makes editing one mean anything: a correction that a later rebuild undoes
-   * is a correction the student has to make again, and they have no way to know
-   * it was undone. The dictionary's improvements are for the cards that are
-   * still the dictionary's.
-   *
-   * Returns how many cards changed. A no-op when the dictionary is not loaded:
-   * every lookup misses, so nothing is overwritten with nothing.
-   */
-  refreshCitations(): number {
-    if ((this.p.citationsVersion ?? 1) >= this.citationsVersion) return 0;
-    let changed = 0;
-    let looked = false;
-    for (const card of Object.values(this.p.vocabCards)) {
-      const candidates = this.content.lookup(card.lemma);
-      // Looked up even when the card is the student's, so that a run which
-      // skips every card still counts as a dictionary having been consulted
-      // and stamps the generation. Otherwise this would re-run at every launch
-      // for as long as the student's own cards were the only ones they had.
-      if (candidates.length > 0) looked = true;
-      if (card.citationEdited) continue;
-      const match = candidates.find(
-        (c) => c.lemma === card.lemma && c.pos === card.pos,
-      );
-      if (match && match.citation !== card.citation) {
-        card.citation = match.citation;
-        changed += 1;
-      }
-    }
-    // Only claim the generation once a dictionary was actually consulted;
-    // otherwise an offline launch would mark the cards done without reading one.
-    if (looked || Object.keys(this.p.vocabCards).length === 0) {
-      this.p.citationsVersion = this.citationsVersion;
-    }
-    if (changed > 0 || looked) this.touch();
-    return changed;
   }
 
   /**
@@ -1852,6 +1546,72 @@ export class Session {
   }
 
   // --- internals -----------------------------------------------------------
+
+  // --- vocabulary ------------------------------------------------------------
+  //
+  // Every one of these is `this.deck`'s, and they are kept here so that no
+  // caller and no test had to move in the commit that moved the code. See
+  // `vocab.ts` for what they do and why.
+
+  previewVocab(cardId: string, now: Date = new Date()) {
+    return this.deck.previewVocab(cardId, now);
+  }
+  recordVocab(entry: LemmaEntry, now: Date = new Date()): string {
+    return this.deck.recordVocab(entry, now);
+  }
+  gradeVocab(cardId: string, rating: Rating, now: Date = new Date()): void {
+    this.deck.gradeVocab(cardId, rating, now);
+  }
+  vocabCard(cardId: string): VocabCardState | undefined {
+    return this.deck.vocabCard(cardId);
+  }
+  vocabList(): VocabCardState[] {
+    return this.deck.vocabList();
+  }
+  updateVocab(
+    cardId: string,
+    patch: Partial<Pick<VocabCardState, "citation" | "gloss">>,
+  ): void {
+    this.deck.updateVocab(cardId, patch);
+  }
+  vocabIdFor(entry: LemmaEntry): string {
+    return this.deck.vocabIdFor(entry);
+  }
+  vocabContexts(cardId: string): VocabContext[] {
+    return this.deck.vocabContexts(cardId);
+  }
+  keepsContext(): boolean {
+    return this.deck.keepsContext();
+  }
+  setKeepContext(on: boolean): void {
+    this.deck.setKeepContext(on);
+  }
+  addVocabContext(
+    cardId: string,
+    context: NewVocabContext,
+    now: Date = new Date(),
+  ): ContextOutcome {
+    return this.deck.addVocabContext(cardId, context, now);
+  }
+  updateVocabContext(
+    cardId: string,
+    at: string,
+    patch: Partial<Pick<VocabContext, "prompt" | "sentence">>,
+  ): void {
+    this.deck.updateVocabContext(cardId, at, patch);
+  }
+  deleteVocabContext(cardId: string, at: string): void {
+    this.deck.deleteVocabContext(cardId, at);
+  }
+  moveVocabContext(cardId: string, at: string, by: -1 | 1): void {
+    this.deck.moveVocabContext(cardId, at, by);
+  }
+  deleteVocab(cardId: string): void {
+    this.deck.deleteVocab(cardId);
+  }
+  refreshCitations(): number {
+    return this.deck.refreshCitations();
+  }
 
   private touch(): void {
     this.p.updatedAt = new Date().toISOString();

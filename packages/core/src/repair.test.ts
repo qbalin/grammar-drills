@@ -107,3 +107,48 @@ describe("repairing a progress file", () => {
     }
   });
 });
+
+/**
+ * The trap the deck's progress *getter* exists for.
+ *
+ * `VocabDeck` was lifted out of `Session`, and the obvious way to give it the
+ * cards is to hand it `p.vocabCards` at construction. That is wrong in exactly
+ * one place and silently: `restore()` replaces the whole progress object for an
+ * undo, so a deck holding the old record goes on reading and writing the object
+ * the undo threw away. Both are real objects, neither read throws, and the
+ * symptom is a word that comes back from the dead one grade later.
+ */
+describe("the vocabulary deck after an undo", () => {
+  const built = () => new Session(new Content(fixture, testProfile));
+  const word = {
+    lemma: "rosa",
+    citation: "rosa, rosae (f)",
+    gloss: "rose",
+    pos: "noun",
+  };
+
+  it("reads the restored cards, not the ones the undo discarded", () => {
+    const session = built();
+    const clean = session.snapshot();
+    const id = session.recordVocab(word as never);
+    expect(session.vocabCard(id)).toBeDefined();
+
+    session.restore(clean);
+
+    // Through the deck, which is what a caller actually asks.
+    expect(session.vocabCard(id)).toBeUndefined();
+    expect(session.vocabList()).toHaveLength(0);
+  });
+
+  it("writes into the restored cards, so a re-record survives the save", () => {
+    const session = built();
+    const clean = session.snapshot();
+    session.recordVocab(word as never);
+    session.restore(clean);
+
+    const id = session.recordVocab(word as never);
+    // The card has to be in the progress that will actually be written out, not
+    // in a detached record only the deck can see.
+    expect(session.progress().vocabCards[id]).toBeDefined();
+  });
+});
