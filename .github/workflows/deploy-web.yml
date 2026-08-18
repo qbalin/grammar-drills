@@ -68,9 +68,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -110,9 +110,9 @@ jobs:
       matrix:
         pack: [latin, ancient-greek]
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -166,9 +166,9 @@ jobs:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -241,8 +241,8 @@ jobs:
       # create the site, and the workflow's GITHUB_TOKEN is refused ("Resource
       # not accessible by integration") because creating a Pages site needs
       # admin on the repo, which a workflow token cannot grant itself.
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
@@ -261,13 +261,21 @@ jobs:
       # 2026-08-06 four deployments in a row sat in `deployment_queued` for the
       # full ten minutes without ever starting to build.
       #
-      # What makes that worth a config change rather than a retry is the last
-      # thing the action does on timeout: it *cancels* the deployment. So the
-      # site never picks the build up later, and because Pages keys a build by
-      # commit SHA, every re-run against that SHA is refused outright — the
-      # only way back is a fresh commit. Waiting is cheap; a cancelled
-      # deployment costs a commit to undo.
+      # What makes that worth knowing is the last thing the action does on
+      # timeout: it *cancels* the deployment. The site never picks the build up
+      # later, and because Pages keys a build by commit SHA, every re-run
+      # against that SHA is refused outright — the only way back is a fresh
+      # commit.
+      #
+      # **Ten minutes is not ours to raise.** This step asked for thirty and
+      # never got them: `MAX_TIMEOUT` in the action is 600000, it clamps
+      # anything larger with a warning, and that warning has been on every run
+      # since the day it was written. So the setting has never once done what
+      # the paragraph above wanted, and leaving it in place only made the
+      # workflow look like it had handled something it had not. It is gone,
+      # which changes no behaviour and removes the warning.
+      #
+      # If that queue ever bites again, the fix is a re-run on a fresh commit,
+      # or `workflow_dispatch` once the queue has drained — not an input.
       - id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          timeout: 1800000 # 30 minutes
+        uses: actions/deploy-pages@v5
