@@ -1642,9 +1642,37 @@ export function App({ content, session, storage }: Props) {
   };
 
   const removeVocab = (cardId: string) => {
+    // Read before it goes: this is the card the undo puts back, and after the
+    // delete there is nothing left to ask for it with.
+    const deleted = session.vocabCard(cardId);
     session.deleteVocab(cardId);
     save();
-    flash("Word deleted.");
+    /*
+     * The only destructive single press in the app that had no way back.
+     * A grade has an undo, a word did not — it flashed "Word deleted." and that
+     * was the whole of it, on a card the student may have spent a month's
+     * reviews on.
+     *
+     * One card is put back rather than a whole snapshot restored, which is what
+     * the grade undo does. The toast lasts 2.6 seconds and a question can be
+     * answered inside it; a snapshot would take that grade back as well.
+     *
+     * The loop is not rewound. Deleting the card under review advances past it,
+     * and a card put back afterwards is back in the deck rather than back on
+     * the screen — which is the honest thing for it to be, since the schedule
+     * has already moved on.
+     */
+    flash(
+      "Word deleted.",
+      deleted && "Undo",
+      deleted &&
+        (() => {
+          session.restoreVocab(deleted);
+          save();
+          bump();
+          flash("Word put back.");
+        }),
+    );
     // Deleting the card that is being reviewed leaves the phase pointing at
     // something the session no longer has, and the review body renders nothing
     // for a card it cannot find — an empty screen with no grade bar and no way

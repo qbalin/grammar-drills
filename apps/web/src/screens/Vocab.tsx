@@ -451,14 +451,20 @@ export function VocabEditSheet({
             {/* What the button does, not what it does it to: the card being
                 edited is named at the top of the sheet and in the field above,
                 and a citation set in the confirming button read as a label
-                rather than as a warning. Red, because nothing brings the card
-                and the months of schedule on it back. */}
+                rather than as a warning. Still red, and still asked twice: the
+                undo below is a few seconds long, and a student who looks away
+                has lost the months of schedule on the card just as surely as
+                before. */}
             <button className="btn btn--danger" onClick={onDelete}>
               Confirm deletion
             </button>
           </div>
+          {/* Said plainly rather than reassuringly. The undo is real but it is
+              brief, and copy that leaned on it would turn a two-step
+              confirmation into a formality. */}
           <p className="field__hint">
-            The card and its review history go for good.
+            The card and its review history go. There is a moment to undo it
+            afterwards, and then it is gone.
           </p>
         </>
       ) : (

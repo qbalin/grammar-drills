@@ -1609,6 +1609,9 @@ export class Session {
   deleteVocab(cardId: string): void {
     this.deck.deleteVocab(cardId);
   }
+  restoreVocab(card: VocabCardState): void {
+    this.deck.restoreCard(card);
+  }
   refreshCitations(): number {
     return this.deck.refreshCitations();
   }

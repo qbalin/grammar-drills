@@ -4851,3 +4851,65 @@ describe("closing a sheet with Back", () => {
     expect(marked()).toBe(false);
   });
 });
+
+/**
+ * The one destructive single press that had no way back.
+ *
+ * A grade has an undo; deleting a word flashed "Word deleted." and that was the
+ * whole of it, on a card the student may have spent a month of reviews on.
+ */
+describe("taking a deleted word back", () => {
+  const deleteFirstWord = async (user: ReturnType<typeof userEvent.setup>) => {
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await user.click(screen.getByRole("button", { name: /1 word/ }));
+    await user.click(screen.getByRole("button", { name: /rosa, rosae/ }));
+    await user.click(screen.getByRole("button", { name: "Delete this word" }));
+    await user.click(screen.getByRole("button", { name: "Confirm deletion" }));
+  };
+
+  it("offers the undo, and puts the card back with its schedule", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await deleteFirstWord(user);
+
+    expect(session.vocabCard("v-rosa")).toBeUndefined();
+    const before = screen.getByRole("button", { name: "Undo" });
+    await user.click(before);
+
+    const back = session.vocabCard("v-rosa");
+    expect(back).toBeDefined();
+    // The same card, not a fresh one: its id, its citation and the sentence it
+    // was met in all come back, which is the whole point of putting the card
+    // back rather than re-recording the word.
+    expect(back?.citation).toBe("rosa, rosae (f)");
+    expect(session.vocabContexts("v-rosa")).toHaveLength(1);
+  });
+
+  it("says so, so the press is not mistaken for having done nothing", async () => {
+    const user = userEvent.setup();
+    mount();
+    await deleteFirstWord(user);
+    await user.click(screen.getByRole("button", { name: "Undo" }));
+    expect(screen.getByText("Word put back.")).toBeDefined();
+  });
+
+  it("leaves a word re-recorded by hand alone", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await deleteFirstWord(user);
+
+    // The student says what they want before the toast is answered. The undo
+    // must not overwrite that with the older copy.
+    session.recordVocab({
+      lemma: "rosa",
+      citation: "rosa — my own note",
+      gloss: "rose",
+      pos: "noun",
+    } as never);
+    await user.click(screen.getByRole("button", { name: "Undo" }));
+
+    expect(session.vocabCard("v-rosa")?.citation).toBe("rosa — my own note");
+  });
+});

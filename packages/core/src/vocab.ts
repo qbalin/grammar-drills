@@ -309,6 +309,30 @@ export class VocabDeck {
     this.touch();
   }
 
+  /**
+   * Put a deleted card back exactly as it was — id, schedule, contexts and all.
+   *
+   * The way back from the way back. Deleting a word is the one destructive
+   * thing a student can do to their own deck by a single press, and it was the
+   * only such press in the app with no undo: a grade has one, and this had a
+   * toast that said it had happened and nothing else.
+   *
+   * The card itself is handed back rather than a snapshot of the whole
+   * progress, which is what the grade undo restores. That matters here: the
+   * toast lasts 2.6 seconds and a student can answer a question inside it, and
+   * a whole-progress restore would quietly take that grade back too. This puts
+   * one card back and touches nothing else.
+   *
+   * A no-op if something already sits under that id — re-recording the word by
+   * hand before pressing undo is the student saying what they want, and this
+   * must not overwrite it with the older copy.
+   */
+  restoreCard(card: VocabCardState): void {
+    if (this.p.vocabCards[card.id]) return;
+    this.p.vocabCards[card.id] = card;
+    this.touch();
+  }
+
   /** Forget a word — the way back from a card saved by a stray press. */
   deleteVocab(cardId: string): void {
     if (!this.p.vocabCards[cardId]) return;

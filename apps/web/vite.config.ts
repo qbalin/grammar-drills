@@ -192,7 +192,21 @@ export default defineConfig({
         start_url: base,
         scope: base,
         display: "standalone",
-        orientation: "portrait",
+        /*
+         * No orientation lock.
+         *
+         * It said `portrait`, which on an installed app is a promise the OS
+         * keeps: turning the phone does nothing. That is defensible for the
+         * study loop, which is a column of text — and wrong for the one thing
+         * in this app that genuinely wants the width. A seven-column paradigm
+         * is the widest thing here, it scrolls sideways inside its own box
+         * precisely because it cannot be reflowed, and a student holding a
+         * tablet was being refused the obvious way to see more of it.
+         *
+         * Omitted rather than set to `any`: absent means the app does not care
+         * and the device decides, which includes honouring a rotation lock the
+         * student has set for themselves.
+         */
         background_color: profile.ui.backgroundColor,
         theme_color: profile.ui.themeColor,
         categories: ["education"],
