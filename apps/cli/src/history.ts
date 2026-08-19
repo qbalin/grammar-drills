@@ -151,8 +151,15 @@ export function questionBankLines(
   return out;
 }
 
-/** "in 3 days" / "waiting" — the schedule reads forwards, not backwards. */
-function untilTime(due: Date, now: Date): string {
+/**
+ * "in 3 days" / "waiting" — the schedule reads forwards, not backwards.
+ *
+ * Exported so the offer at the end of a round quotes the same ladder the
+ * schedule pane does: the two are read a keypress apart, and rounding one to
+ * "in a month" and the other to "in 30 days" is how a reader concludes the app
+ * does not know.
+ */
+export function untilTime(due: Date, now: Date): string {
   const ms = due.getTime() - now.getTime();
   if (ms <= 0) return "waiting";
   if (ms < HOUR) {

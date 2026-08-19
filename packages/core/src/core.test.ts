@@ -161,13 +161,21 @@ describe("the grammar map cache", () => {
     const now = new Date("2026-01-01T00:00:00Z");
     const before = s.grammarMap(now);
     expect(scheduled(s, now)).toBe(0);
-    s.gradeTopic("ag1", 4, now);
+
+    // Answering does not put a topic in the pile, so the thing that moves the
+    // index is the enrolment the student asked for.
+    s.enrolTopic("ag1", 4, now);
     const after = s.grammarMap(now);
 
     expect(after).not.toBe(before);
     // And not merely a different array: it says something different. A stale
     // cache would draw an index that did not move when the student answered.
     expect(scheduled(s, now)).toBe(1);
+
+    // A grade on the enrolled topic drops it again — the card moved, so `due`
+    // and `lapses` may have too.
+    s.gradeTopic("ag1", 1, now);
+    expect(s.grammarMap(now)).not.toBe(after);
   });
 
   it("drops it when a snapshot is restored", () => {
@@ -251,8 +259,14 @@ describe("Session", () => {
     const t1 = s.serveTest("ag1");
     expect(t1?.sectionId).toBe("ag1");
 
-    // Grade it easy -> creates the card. The run stays where it was put.
+    // Grade it easy. That alone does not put the topic in the pile — nothing
+    // is scheduled and nothing was introduced — and the run stays where it was.
     s.gradeTopic("ag1", 4, now);
+    expect(s.progress().topicCards).toEqual({});
+    expect(s.progress().newTopicsIntroduced).toBe(0);
+
+    // Asking for it is what creates the card.
+    s.enrolTopic("ag1", 4, now);
     expect(s.progress().newTopicsIntroduced).toBe(1);
     expect(s.next(now, "explore")).toEqual({ kind: "drill", sectionId: "ag1" });
 
@@ -274,8 +288,8 @@ describe("Session", () => {
     const start = new Date("2026-01-01T00:00:00Z");
     const s = new Session(new Content(fixture, testProfile));
 
-    // A topic graded hard enough to come back, and then left until it does.
-    s.gradeTopic("ag1", 1, start);
+    // A topic in the pile, graded hard enough to come back, then left until it does.
+    s.enrolTopic("ag1", 1, start);
     const later = new Date("2026-02-01T00:00:00Z");
     expect(s.next(later)).toEqual({ kind: "topic-review", sectionId: "ag1" });
 
@@ -300,12 +314,12 @@ describe("Session", () => {
   it("puts back a snapshot, undoing everything done since", () => {
     const now = new Date("2026-01-01T00:00:00Z");
     const s = new Session(new Content(fixture, testProfile));
-    s.gradeTopic("ag1", 3, now);
+    s.enrolTopic("ag1", 3, now);
 
     const before = s.snapshot();
 
-    // A grade, an answer and a word — the whole of a mistaken step.
-    s.gradeTopic("ag2", 1, now);
+    // An enrolment, an answer and a word — the whole of a mistaken step.
+    s.enrolTopic("ag2", 1, now);
     s.recordAttempt("ag2", { prompt: "p", answer: "a", submitted: "b", rating: 1 }, now);
     s.recordVocab(new Content(fixture, testProfile).lookup("manibus")[0]!, now);
     expect(s.progress().topicCards.ag2).toBeDefined();
@@ -319,7 +333,7 @@ describe("Session", () => {
 
     // The snapshot is a copy, not a window: grading on does not edit it, and
     // it can be restored again.
-    s.gradeTopic("ag2", 4, now);
+    s.enrolTopic("ag2", 4, now);
     expect(before.topicCards.ag2).toBeUndefined();
     s.restore(before);
     expect(s.progress().topicCards.ag2).toBeUndefined();
@@ -328,7 +342,7 @@ describe("Session", () => {
   it("serializes and restores progress round-trip", () => {
     const now = new Date("2026-01-01T00:00:00Z");
     const s1 = new Session(new Content(fixture, testProfile));
-    s1.gradeTopic("ag1", 3, now);
+    s1.enrolTopic("ag1", 3, now);
     const json = JSON.parse(JSON.stringify(s1.progress()));
     const s2 = new Session(new Content(fixture, testProfile), json);
     expect(s2.progress().topicCards.ag1).toBeDefined();
@@ -355,7 +369,7 @@ describe("Session: reading a file this app no longer writes", () => {
       bookAtByGrammar: { second: "ag2" },
       attempts: { ag1: [{ prompt: "p", answer: "a", submitted: "a", rating: 3, at: now.toISOString() }] },
     });
-    s.gradeTopic("ag2", 3, now);
+    s.enrolTopic("ag2", 3, now);
 
     expect(s.progress().topicCards.ag2).toBeDefined();
     expect(s.attemptsFor("ag1")).toHaveLength(1);
@@ -449,8 +463,8 @@ describe("Session schedule", () => {
 
   it("lists what is waiting and what comes back, soonest first", () => {
     const s = new Session(new Content(fixture, testProfile));
-    s.gradeTopic("ag1", 4, now); // days away
-    s.gradeTopic("ag2", 1, now); // minutes away
+    s.enrolTopic("ag1", 4, now); // days away
+    s.enrolTopic("ag2", 1, now); // minutes away
     const card = s.recordVocab(new Content(fixture, testProfile).lookup("manibus")[0]!, now);
 
     const later = new Date("2026-01-01T00:01:00Z");
@@ -466,7 +480,7 @@ describe("Session schedule", () => {
 
   it("agrees with nextDue, and skips cards for sections this bundle lost", () => {
     const s = new Session(new Content(fixture, testProfile));
-    s.gradeTopic("ag1", 3, now);
+    s.enrolTopic("ag1", 3, now);
     s.progress().topicCards.gone = s.progress().topicCards.ag1!;
 
     expect(s.upcoming(now).map((e) => e.id)).toEqual(["ag1"]);
@@ -896,9 +910,9 @@ describe("Session: the index, the star and the pile", () => {
     expect(s.starredTopics(now).map((t) => t.sectionId)).toEqual(["ag1", "ag2"]);
   });
 
-  it("takes a topic out of the review pile, and a grade puts it back", () => {
+  it("takes a topic out of the review pile, and only an enrolment puts it back", () => {
     const s = new Session(new Content(fixture, testProfile));
-    s.gradeTopic("ag1", 4, now);
+    s.enrolTopic("ag1", 4, now);
     expect(topic(s, "ag1").scheduled).toBe(true);
 
     s.dismissTopic("ag1");
@@ -910,17 +924,29 @@ describe("Session: the index, the star and the pile", () => {
     // Dismissing twice is not an error.
     s.dismissTopic("ag1");
 
+    /*
+     * Answering it again does not undo the dismissal.
+     *
+     * It used to: the next grade wrote the card straight back, so a dismissal
+     * survived exactly until the student next practised the topic — which is a
+     * strange thing to call a decision they made about their own pile. A
+     * dismissed topic is an unenrolled one now, and comes back the same way any
+     * other does, by being asked for.
+     */
     s.gradeTopic("ag1", 4, now);
+    expect(topic(s, "ag1").scheduled).toBe(false);
+
+    s.enrolTopic("ag1", 4, now);
     expect(topic(s, "ag1").scheduled).toBe(true);
   });
 
   it("keeps the answers and the star through a dismissal", () => {
     // It deletes a schedule, not a syllabus. Everything the student wrote and
     // everything they marked survives, which is what makes it undoable by
-    // simply practising the topic again.
+    // practising the topic again and saying yes when it asks.
     const s = new Session(new Content(fixture, testProfile));
     s.recordAttempt("ag1", { prompt: "p", answer: "a", submitted: "a", rating: 3 }, now);
-    s.gradeTopic("ag1", 4, now);
+    s.enrolTopic("ag1", 4, now);
     s.star("ag1");
 
     s.dismissTopic("ag1");
@@ -1100,7 +1126,7 @@ describe("Session: the index, the star and the pile", () => {
       ],
     };
     const s = new Session(new Content(withoutTests, testProfile));
-    s.gradeTopic("ag1", 1, now); // 'again' -> due again almost immediately
+    s.enrolTopic("ag1", 1, now); // 'again' -> due again almost immediately
     const map = s.grammarMap(new Date("2026-01-02T00:00:00Z"));
     expect(map.find((t) => t.sectionId === "ag1")?.due).toBe(true);
     expect(map.find((t) => t.sectionId === "ag3")?.hasTests).toBe(false);
@@ -1228,8 +1254,8 @@ describe("Session progress: the two errands", () => {
   /** Two topics failed, so two cards are due half an hour later. */
   const withBacklog = () => {
     const s = new Session(new Content(wide, testProfile));
-    s.gradeTopic("n1", 1, now);
-    s.gradeTopic("n2", 1, now);
+    s.enrolTopic("n1", 1, now);
+    s.enrolTopic("n2", 1, now);
     return s;
   };
 
@@ -1384,17 +1410,29 @@ describe("Session progress: a round of questions is one review", () => {
 
   it("costs the card one rep however many questions the round holds", () => {
     const s = new Session(new Content(wide, testProfile));
+    s.enrolTopic("n1", 3, now); // the enrolment is the card's first rep
     for (let i = 0; i < 4; i++) s.gradeTopic("n1", 3, now, "n1-t1");
-    expect(s.progress().topicCards.n1!.reps).toBe(1);
+    expect(s.progress().topicCards.n1!.reps).toBe(2);
+  });
+
+  it("costs an unenrolled topic nothing at all, however it is graded", () => {
+    // The round still runs and is still worth something — `worst` is what the
+    // offer is priced at — but nothing reaches the pile until it is asked for.
+    const s = new Session(new Content(wide, testProfile));
+    for (let i = 0; i < 4; i++) s.gradeTopic("n1", 3, now, "n1-t1");
+    expect(s.progress().topicCards).toEqual({});
+    expect(s.roundWorst("n1", "n1-t1")).toBe(3);
   });
 
   it("schedules the round by its worst grade", () => {
     const s = new Session(new Content(wide, testProfile));
+    s.enrolTopic("n1", 3, now);
     s.gradeTopic("n1", 4, now, "r");
     s.gradeTopic("n1", 1, now, "r"); // one failed, so the round failed
     s.gradeTopic("n1", 4, now, "r");
 
     const alone = new Session(new Content(wide, testProfile));
+    alone.enrolTopic("n1", 3, now);
     alone.gradeTopic("n1", 1, now);
     expect(s.progress().topicCards.n1!.due).toBe(alone.progress().topicCards.n1!.due);
   });
@@ -1424,6 +1462,7 @@ describe("Session progress: a round of questions is one review", () => {
 
     it("says what each grade does at every question of the round", () => {
       const s = new Session(new Content(wide, testProfile));
+      s.enrolTopic("n1", 3, now);
       for (const grade of [3, 3, 1] as const) {
         expect(labels(s, "r")).toEqual(outcomes(s, "r"));
         s.gradeTopic("n1", grade, now, "r");
@@ -1441,6 +1480,7 @@ describe("Session progress: a round of questions is one review", () => {
 
     it("previews the stored card when no round is named", () => {
       const s = new Session(new Content(wide, testProfile));
+      s.enrolTopic("n1", 3, now);
       s.gradeTopic("n1", 3, now, "r");
       // A verdict outside a round rates what is on disk, and previews it too.
       expect(labels(s)).toEqual(outcomes(new Session(
@@ -1469,26 +1509,43 @@ describe("Session progress: a round of questions is one review", () => {
 
   it("starts a new round on a new test, building on the last one", () => {
     const s = new Session(new Content(wide, testProfile));
+    s.enrolTopic("n1", 3, now);
     s.gradeTopic("n1", 3, now, "n1-t1");
     s.gradeTopic("n1", 3, now, "n1-t1");
     s.gradeTopic("n1", 3, now, "n1-t2");
-    expect(s.progress().topicCards.n1!.reps).toBe(2);
+    expect(s.progress().topicCards.n1!.reps).toBe(3);
   });
 
   it("rates per grade when no round is named, which is what a probe wants", () => {
     const s = new Session(new Content(wide, testProfile));
+    s.enrolTopic("n1", 3, now);
     for (let i = 0; i < 4; i++) s.gradeTopic("n1", 3, now);
-    expect(s.progress().topicCards.n1!.reps).toBe(4);
+    expect(s.progress().topicCards.n1!.reps).toBe(5);
     expect(s.progress().openRound).toBeNull();
   });
 
-  it("leaves one rep behind when a round is abandoned halfway", () => {
+  it("leaves one rep behind when a round on an enrolled topic is abandoned halfway", () => {
     const s = new Session(new Content(wide, testProfile));
+    s.enrolTopic("n1", 3, now);
     s.gradeTopic("n1", 3, now, "n1-t1");
     s.gradeTopic("n1", 3, now, "n1-t1");
     // As if the terminal were closed here.
     const back = new Session(new Content(wide, testProfile), JSON.parse(JSON.stringify(s.progress())));
-    expect(back.progress().topicCards.n1!.reps).toBe(1);
+    expect(back.progress().topicCards.n1!.reps).toBe(2);
+  });
+
+  it("leaves nothing behind when a round on an unenrolled topic is abandoned", () => {
+    /*
+     * The strongest case for asking rather than assuming. A round somebody
+     * opened, answered twice and wandered away from is the least evidence there
+     * is that they want the topic coming back at them for the next five years,
+     * and it used to be the surest way to get it.
+     */
+    const s = new Session(new Content(wide, testProfile));
+    s.gradeTopic("n1", 3, now, "n1-t1");
+    s.gradeTopic("n1", 3, now, "n1-t1");
+    const back = new Session(new Content(wide, testProfile), JSON.parse(JSON.stringify(s.progress())));
+    expect(back.progress().topicCards).toEqual({});
   });
 
   /**
@@ -1496,8 +1553,11 @@ describe("Session progress: a round of questions is one review", () => {
    * ended the page put the student back at question one of a different test.
    */
   describe("picking a round back up", () => {
-    const start = (isNew = false) => {
+    const start = (isNew = false, enrolled = false) => {
       const s = new Session(new Content(wide, testProfile));
+      // Before the round opens, or `cardBefore` snapshots the absence and the
+      // round rewinds to a fresh card rather than to the enrolled one.
+      if (enrolled) s.enrolTopic("n1", 3, now);
       const test = s.serveTest("n1")!;
       s.beginRound("n1", test, isNew);
       return { s, test };
@@ -1531,10 +1591,10 @@ describe("Session progress: a round of questions is one review", () => {
     });
 
     it("holds the card at one rep however the round is picked up", () => {
-      const { s, test } = start();
+      const { s, test } = start(false, true);
       s.gradeTopic("n1", 3, now, test.id);
       s.gradeTopic("n1", 1, now, test.id);
-      expect(s.progress().topicCards.n1!.reps).toBe(1);
+      expect(s.progress().topicCards.n1!.reps).toBe(2);
       expect(s.progress().openRound!.worst).toBe(1); // the worst of the two
       expect(s.progress().openRound!.answered).toBe(2);
     });
@@ -1609,6 +1669,7 @@ describe("Session progress: a round of questions is one review", () => {
 
   it("takes an undo back across a round's earlier questions", () => {
     const s = new Session(new Content(wide, testProfile));
+    s.enrolTopic("n1", 3, now);
     s.gradeTopic("n1", 4, now, "n1-t1");
     const before = s.snapshot();
     s.gradeTopic("n1", 1, now, "n1-t1"); // the round now stands at 'again'
@@ -1619,7 +1680,7 @@ describe("Session progress: a round of questions is one review", () => {
     // Re-grading from the restored point counts once, not twice.
     s.gradeTopic("n1", 1, now, "n1-t1");
     expect(s.progress().topicCards.n1!.due).toBe(failed);
-    expect(s.progress().topicCards.n1!.reps).toBe(1);
+    expect(s.progress().topicCards.n1!.reps).toBe(2);
   });
 });
 
@@ -1666,9 +1727,66 @@ describe("the round a screen lands on", () => {
 
   it("reports when the card the round wrote brings the topic back", () => {
     const { s, roundId } = opened();
+    s.enrolTopic("n1", 3, now);
     s.gradeTopic("n1", 3, now, roundId);
     s.gradeTopic("n1", 3, now, roundId);
-    expect(s.landedRound()?.due.toISOString()).toBe(s.progress().topicCards.n1!.due);
+    const landed = s.landedRound(now)!;
+    expect(landed.scheduled).toBe(true);
+    expect(landed.due.toISOString()).toBe(s.progress().topicCards.n1!.due);
+  });
+
+  it("offers a date for a topic that is not in the pile, and honours it", () => {
+    /*
+     * The load-bearing agreement of the whole opt-in. The screen has to quote
+     * an interval *before* the student decides, so what it quotes is what
+     * enrolling would buy — the round's own worst grade on a fresh card. Quote
+     * one number and write another and the offer is a lie, which is the same
+     * failure the grade-button labels are built to avoid.
+     */
+    const { s, roundId } = opened();
+    s.gradeTopic("n1", 3, now, roundId);
+    s.gradeTopic("n1", 3, now, roundId);
+
+    const landed = s.landedRound(now)!;
+    expect(landed.scheduled).toBe(false);
+    expect(s.progress().topicCards).toEqual({});
+
+    s.enrolTopic("n1", undefined, now);
+    expect(s.progress().topicCards.n1!.due).toBe(landed.due.toISOString());
+    expect(s.landedRound(now)!.scheduled).toBe(true);
+  });
+
+  it("falls back to a neutral grade with no round open, which is what Practised offers", () => {
+    /*
+     * The second place the offer is made, and the one whose agreement is a
+     * coincidence of call order rather than a stated rule.
+     *
+     * `Practised` — the screen a drained run stops on — is reached through
+     * `advance`, which ends the round first. So there is no `worst` to price
+     * from and `enrolRating` falls back to 3, which is exactly what the screen
+     * previews with `previewTopic(id)[3]`. Asserted here so that reordering the
+     * launch or advance path cannot silently make the quoted interval and the
+     * written card two different numbers.
+     */
+    // No round open at all, so the preview is the neutral one…
+    const s = new Session(new Content(wide, testProfile));
+    expect(s.progress().openRound).toBeNull();
+    const quoted = s.previewTopic("n1", now)[3];
+
+    // …and it is what enrolling writes.
+    s.enrolTopic("n1", undefined, now);
+    expect(s.progress().topicCards.n1!.due).toBe(quoted.toISOString());
+  });
+
+  it("prices the offer at the round's worst grade, not its last", () => {
+    const { s, roundId } = opened();
+    s.gradeTopic("n1", 1, now, roundId);
+    s.gradeTopic("n1", 4, now, roundId); // the round is already lost
+
+    const landed = s.landedRound(now)!;
+    const failed = new Session(new Content(wide, testProfile));
+    failed.enrolTopic("n1", 1, now);
+    expect(landed.due.toISOString()).toBe(failed.progress().topicCards.n1!.due);
   });
 
   it("has nothing to report for a grade given outside a round", () => {
@@ -1683,8 +1801,10 @@ describe("the round a screen lands on", () => {
 
   it("has nothing to report once the topic is out of the review pile", () => {
     // Dismissing takes the round with the card, so there is no round to land
-    // on — which is right: the card the landing would report is gone.
+    // on — which is right: the card the landing would report is gone, and so is
+    // the offer, since there is no longer a round to price one from.
     const { s, roundId } = opened();
+    s.enrolTopic("n1", 3, now);
     s.gradeTopic("n1", 3, now, roundId);
     s.gradeTopic("n1", 3, now, roundId);
     expect(s.landedRound()).not.toBeNull();

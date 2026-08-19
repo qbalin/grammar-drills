@@ -12,6 +12,7 @@ import {
   attemptLines,
   questionBankLines,
   scheduleLines,
+  untilTime,
   type HistoryLine,
 } from "./history.js";
 import { wordListLines, type WordListLine } from "./wordlist.js";
@@ -61,6 +62,8 @@ type Origin =
   | { t: "vocab-review-back"; cardId: string }
   /** A run worked out — now an ordinary place to open the index from. */
   | { t: "practised"; sectionId: string }
+  /** A round landed with an offer on it — likewise somewhere to rest. */
+  | { t: "enrol"; sectionId: string; title: string; due: Date }
   | { t: "done" };
 
 /** The map, named so the schedule can say it came from one and go back to it. */
@@ -103,6 +106,13 @@ type Phase =
   | { t: "schedule"; from: Origin | MapPhase }
   /** A practice run worked out; the loop has stopped here on purpose. */
   | { t: "practised"; sectionId: string }
+  /**
+   * A round landed on a topic that is not in the review pile, asking whether
+   * it should be. The terminal's first end-of-round screen, and it exists for
+   * one reason: the engine no longer enrols a topic for being answered, so
+   * without somewhere to ask, this app could never put one in the pile at all.
+   */
+  | { t: "enrol"; sectionId: string; title: string; due: Date }
   | { t: "done" };
 
 /** The screen under a pane, following a schedule that was opened from the map. */
@@ -415,6 +425,28 @@ export function App({ session, content, storage }: Props) {
     // The whole dictionary is in memory here, so this is the cheapest place to
     // bring cards saved against older citations up to the shipped ones.
     if (session.refreshCitations() > 0) save();
+    /*
+     * An offer left unanswered is asked again rather than lapsing.
+     *
+     * This app does not put a half-finished round back on the screen — closing
+     * the terminal mid-test costs you the test, and always has. It does put
+     * back a *finished* one that is still waiting on an answer, because the two
+     * are not the same kind of loss: a dropped round costs three questions, and
+     * a dropped offer decides on the student's behalf the one thing the offer
+     * exists to stop deciding for them.
+     */
+    const landed = session.landedRound();
+    if (landed && !landed.scheduled) {
+      setPhase({
+        t: "enrol",
+        sectionId: landed.sectionId,
+        title:
+          content.getSection(landed.viewedAs ?? landed.sectionId)?.title ??
+          "this topic",
+        due: landed.due,
+      });
+      return;
+    }
     advance();
     // Deliberately empty: this runs once, at startup. It carried an
     // `eslint-disable-next-line react-hooks/exhaustive-deps` for years, and
@@ -471,6 +503,32 @@ export function App({ session, content, storage }: Props) {
       setSubmitted("");
       setPhase({ t: "answering" });
     } else {
+      /*
+       * The round is out of questions. If the topic is not in the pile, this is
+       * the moment to ask — the student has just finished with it, and the
+       * grade they gave is what prices the offer.
+       *
+       * Before `advance()`, which ends the round: `landedRound` is read off the
+       * round, and there is nothing left to read once it has been let go.
+       */
+      const landed = session.landedRound();
+      if (landed && !landed.scheduled) {
+        setShowGrammar(false);
+        setShowHistory(false);
+        setShowVocab(false);
+        setFlash(null);
+        setInput("");
+        setSubmitted("");
+        setPhase({
+          t: "enrol",
+          sectionId: landed.sectionId,
+          title:
+            content.getSection(landed.viewedAs ?? landed.sectionId)
+              ?.title ?? "this topic",
+          due: landed.due,
+        });
+        return;
+      }
       advance();
     }
   };
@@ -739,7 +797,8 @@ export function App({ session, content, storage }: Props) {
    *
    * Two presses, the idiom `x` already carries in the vocabulary list — and it
    * deletes the same kind of thing there: a schedule, not a syllabus. The
-   * answers stay, and practising the topic puts it back on the next grade.
+   * answers stay, and practising the topic offers to put it back when the round
+   * lands — an offer, not a grade, since a grade no longer enrols anything.
    */
   const dismissSelected = () => {
     const target = mapTopics[mapIndex];
@@ -1138,6 +1197,36 @@ export function App({ session, content, storage }: Props) {
         }
         break;
       }
+      /*
+       * The offer. Everything the `practised` screen answers, plus the one key
+       * this screen is for.
+       *
+       * Enter declines, and declines by simply carrying on — which is what
+       * makes "not now" cost nothing and be worth nothing: no state is written,
+       * and the next round on the topic asks again. The alternative, filing the
+       * refusal, would mean a student who said no once in passing could never
+       * be asked again from here.
+       */
+      case "enrol": {
+        if (ch === "m") openMap(phase);
+        else if (ch === "s") openSchedule(phase);
+        else if (ch === "V") openVocabList(phase);
+        else if (ch === "w") showWordsFor(phase);
+        else if (ch === "u") undoGrade();
+        else if (ch === "a" || ch === "y") {
+          const now = new Date();
+          session.enrolTopic(phase.sectionId, undefined, now);
+          save();
+          // The date read back off the card rather than the one the offer
+          // quoted. They agree, and the one on disk is the one that is true.
+          const due = session.landedRound(now)?.due ?? phase.due;
+          setFlash(`“${phase.title}” is in the review pile — back ${untilTime(due, now)}.`);
+          advance();
+        } else if (key.return || ch === " " || ch === "n") {
+          advance();
+        }
+        break;
+      }
       case "done": {
         if (ch === "m") openMap({ t: "done" });
         else if (ch === "s") openSchedule({ t: "done" });
@@ -1427,6 +1516,18 @@ export function App({ session, content, storage }: Props) {
           <Text dimColor>
             Press m for the index: Enter on this topic practises it again, and Enter on another
             moves to that one.
+          </Text>
+        </Box>
+      )}
+
+      {phase.t === "enrol" && (
+        <Box marginTop={1} flexDirection="column">
+          <Text color="green">
+            ✓ Round done — “{phase.title}” is not in your reviews.
+          </Text>
+          <Text dimColor>
+            Press a to add it, and it comes back {untilTime(phase.due, new Date())}. Enter
+            carries on without it.
           </Text>
         </Box>
       )}

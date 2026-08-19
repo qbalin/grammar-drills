@@ -6,7 +6,7 @@ import type {
   VocabCardState,
   VocabContext,
 } from "@lang-tutor/core";
-import { comesBack, CopyButton, GradeBar, l2Attrs, Sentence } from "../ui.js";
+import { comesBack, CopyButton, GradeBar, interval, l2Attrs, Sentence } from "../ui.js";
 import { profile } from "../pack.js";
 
 /**
@@ -322,7 +322,7 @@ export function Graded({
          *
          * Two presses, like every other deletion here. The first press says
          * what will happen; the topic is not hidden, only taken off the pile,
-         * and a grade puts it back.
+         * and practising it offers to put it back.
          */}
         {onDismiss && (
           <button onClick={onDismiss}>
@@ -584,12 +584,20 @@ export function Rest({
 export function Practised({
   title,
   total,
+  scheduled,
+  due,
+  onEnrol,
   onAgain,
   onOpenMap,
 }: {
   title: string;
   /** How many questions the bank holds — what another run would be for. */
   total: number;
+  /** Whether the topic is in the review pile. */
+  scheduled: boolean;
+  /** What enrolling would buy, when it is not. */
+  due?: Date;
+  onEnrol: () => void;
   onAgain: () => void;
   onOpenMap: () => void;
 }) {
@@ -599,11 +607,32 @@ export function Practised({
       <p>
         Every question on {title} has been through this run.
       </p>
+      {/*
+       * The best moment there is to ask.
+       *
+       * Somebody who has worked through every question a topic holds has said
+       * as clearly as they can that it matters to them — and this screen was
+       * already stopping to ask what now. The offer is the third answer to that
+       * question, and it takes the primary from "practise them all again".
+       */}
+      {!scheduled && due && (
+        <p className="landed__offer">
+          It is not in your reviews. Add it and it comes back {interval(due)}.
+        </p>
+      )}
       <div
         className="actions"
         style={{ width: "100%", maxWidth: "18rem", flexDirection: "column" }}
       >
-        <button className="btn btn--primary" onClick={onAgain}>
+        {!scheduled && due && (
+          <button className="btn btn--primary" onClick={onEnrol}>
+            Add to my reviews
+          </button>
+        )}
+        <button
+          className={scheduled ? "btn btn--primary" : "btn"}
+          onClick={onAgain}
+        >
           Practise all {total} again
         </button>
         <button className="btn" onClick={onOpenMap}>
@@ -629,6 +658,14 @@ export function Practised({
  * four self-assessments into a score — for a loop whose whole design is that
  * nothing marks you.
  *
+ * On a topic that is not in the review pile it asks instead of announcing, and
+ * that is the same two things in the interrogative: this is what was worked on,
+ * and this is when it *would* come back. A round used to enrol the topic by
+ * itself, so opening the index and trying a page cost a card that came due for
+ * the next five years — which is a standing reason not to open the index. The
+ * question is still not a verdict: it is about what the student wants next,
+ * which is the one thing this screen has always been for.
+ *
  * It used to say a third thing: four cells drawing where the topic's mastery
  * stood and which of them this round moved. That score is gone — it filled after
  * three good answers, so what it drew was how many questions a topic had been
@@ -644,12 +681,13 @@ export function Landed({
   cleared,
   met,
   nextDue,
+  onEnrol,
   onKeepGoing,
   onStop,
 }: {
   /** The topic just finished; absent with `round`. */
   title?: string;
-  round?: { due: Date };
+  round?: { due: Date; scheduled: boolean };
   /** The last thing waiting went with this grade. */
   cleared: boolean;
   /**
@@ -662,14 +700,23 @@ export function Landed({
    */
   met?: string;
   nextDue?: Date;
+  /** Absent on the cleared-pile card, which has no topic to add. */
+  onEnrol?: () => void;
   onKeepGoing: () => void;
   onStop: () => void;
 }) {
+  const offering = round !== undefined && !round.scheduled && onEnrol !== undefined;
   return (
     <div className="centered">
       <h1>{round ? title : "The pile is clear."}</h1>
       {met && <p className="landed__met">Your first line of {met}.</p>}
-      {round && <p>{comesBack(round.due)}</p>}
+      {round && !offering && <p>{comesBack(round.due)}</p>}
+      {round && offering && (
+        <p className="landed__offer">
+          It is not in your reviews. Add it and it comes back{" "}
+          {interval(round.due)}.
+        </p>
+      )}
       {cleared && round && (
         <p className="landed__cleared">And that was the last thing waiting.</p>
       )}
@@ -691,8 +738,27 @@ export function Landed({
         {/* Clearing the pile leaves nothing on the table but the topic you
             chose, if you chose one — so the primary is what to do next rather
             than a claim there is more of the same waiting. */}
-        <button className="btn btn--primary" onClick={onKeepGoing}>
-          {cleared ? "Carry on" : "Keep going"}
+        {/*
+         * The offer, and then the same two answers as ever.
+         *
+         * "Not now" is "Keep going" under the name that answers the question
+         * actually on the screen — the same button doing the same thing, since
+         * the round is over either way. Declining is therefore not a state and
+         * is not remembered: there is nothing to remember, and the next round
+         * on the topic asks again because the answer may well have changed by
+         * then. Adding does not navigate; it turns this card into the ordinary
+         * one, which is where "Back in …" is read.
+         */}
+        {offering && (
+          <button className="btn btn--primary" onClick={onEnrol}>
+            Add to my reviews
+          </button>
+        )}
+        <button
+          className={offering ? "btn" : "btn btn--primary"}
+          onClick={onKeepGoing}
+        >
+          {offering ? "Not now" : cleared ? "Carry on" : "Keep going"}
         </button>
         {/*
          * Not a fourth screen to land on. There is no session in this app, and

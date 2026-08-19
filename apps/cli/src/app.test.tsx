@@ -221,6 +221,12 @@ describe("CLI App (write → compare → self-grade)", () => {
     // This topic holds one question, so the run is worked out and says so.
     stdin.write("2");
     await tick();
+    // The round is out of questions, and the topic is not in the pile — so the
+    // loop asks rather than filing it. Nothing is scheduled until it is told to.
+    expect(lastFrame()).toContain("is not in your reviews");
+    expect(session.progress().topicCards["ag-decl1"]).toBeUndefined();
+    stdin.write("a");
+    await tick();
     expect(session.progress().topicCards["ag-decl1"]).toBeDefined();
     expect(lastFrame()).toContain("All practised");
     expect(lastFrame()).toContain("First declension nouns");
@@ -289,10 +295,13 @@ describe("CLI App (write → compare → self-grade)", () => {
     expect(lastFrame()).toContain(testProfile.ui.promptDirection);
     expect(lastFrame()).toContain("The poet praises the queen.");
 
-    // Grading it puts the topic in the review pile.
+    // Grading it works the round out, and saying yes to the offer puts the
+    // topic in the review pile.
     stdin.write("\r");
     await tick();
     stdin.write("3");
+    await tick();
+    stdin.write("a");
     await tick();
     expect(session.progress().topicCards["ag-verb-pres"]).toBeDefined();
 
@@ -539,6 +548,8 @@ describe("CLI App (write → compare → self-grade)", () => {
     await tick();
 
     // The grade landed and the run says it has been through the topic.
+    stdin.write("a");
+    await tick();
     expect(session.progress().topicCards["ag-decl1"]).toBeDefined();
     expect(lastFrame()).toContain("All practised");
     expect(lastFrame()).toContain("u undo grade");
@@ -568,6 +579,8 @@ describe("CLI App (write → compare → self-grade)", () => {
     stdin.write("\r");
     await tick();
     stdin.write("4");
+    await tick();
+    stdin.write("a");
     await tick();
     expect(session.progress().topicCards["ag-decl1"]!.reps).toBe(1);
     expect(session.attemptsFor("ag-decl1")).toHaveLength(1);
@@ -772,8 +785,8 @@ describe("the schedule, the question bank and the vocabulary list", () => {
   it("shows what is coming back, and closes again", async () => {
     const content = new Content(fixture, testProfile);
     const session = studying(content);
-    // A topic already graded easy, so there is something scheduled to look at.
-    session.gradeTopic("ag-decl1", 4);
+    // A topic already in the pile, so there is something scheduled to look at.
+    session.enrolTopic("ag-decl1", 4);
     const { lastFrame, stdin, unmount } = await answered(session, content);
 
     stdin.write("s");
@@ -796,8 +809,10 @@ describe("the schedule, the question bank and the vocabulary list", () => {
     const session = studying(content);
     const { lastFrame, stdin, unmount } = await answered(session, content);
     // Graded hard, so the answer is on the record. This topic holds one
-    // question, so the run has been through it and the loop stops and says so.
-    await press(stdin, lastFrame, "2", "All practised");
+    // question, so the run has been through it — the offer comes first, and
+    // declining it leaves the same resting screen it always did.
+    await press(stdin, lastFrame, "2", "is not in your reviews");
+    await press(stdin, lastFrame, "\r", "All practised");
 
     // The bank is reached from the map, which opens from the resting screen
     // like anywhere else, parked on the topic just practised.
@@ -1169,7 +1184,7 @@ describe("the one way onto a topic", () => {
     // And it stays: v1 holds one question, so the run is through and says so
     // rather than reading on into v2.
     await answer(stdin);
-    expect(lastFrame()).toContain("All practised");
+    await press(stdin, lastFrame, "\r", "All practised");
     expect(lastFrame()).not.toContain("v2 question");
     unmount();
   });
@@ -1193,12 +1208,21 @@ describe("the one way onto a topic", () => {
 
     // Six questions in the bank, and the run is for all of them: three rounds
     // of two, and no question served twice while any of them is untouched.
-    for (let i = 0; i < 6; i++) await answer(stdin);
+    //
+    // Each round lands on the offer, because the topic is not in the pile and
+    // saying no is not remembered. Declining carries straight on into the next
+    // round, which is the thing to check: a student who keeps saying no still
+    // gets the whole run.
+    for (let round = 0; round < 3; round++) {
+      await answer(stdin);
+      await answer(stdin);
+      await press(stdin, lastFrame, "\r", round < 2 ? "d1 question" : "All practised");
+    }
     expect(session.coverage("d1")).toEqual({ answered: 6, total: 6 });
+    expect(session.progress().topicCards).toEqual({});
 
     // Staying here was an instruction, so the loop stops and says so rather
     // than sliding onto the next topic.
-    expect(lastFrame()).toContain("All practised");
     expect(lastFrame()).not.toContain("d2 question");
     unmount();
   });
@@ -1206,9 +1230,62 @@ describe("the one way onto a topic", () => {
   it("costs a topic one review per round of questions, not one per question", async () => {
     const { session, stdin, unmount } = open();
     await tick();
+    session.enrolTopic("d1", 3); // in the pile, so a grade has a card to move
     await answer(stdin); // question 1 of the served test
     await answer(stdin); // question 2 of the same test
-    expect(session.progress().topicCards.d1!.reps).toBe(1);
+    expect(session.progress().topicCards.d1!.reps).toBe(2);
+    unmount();
+  });
+
+  it("asks at the end of a round, and only asks when the topic is not in the pile", async () => {
+    const { session, lastFrame, stdin, unmount } = open();
+    await tick();
+
+    // Two questions is one round, and the round lands on the question.
+    await answer(stdin);
+    await answer(stdin);
+    await until(lastFrame, "is not in your reviews");
+    expect(lastFrame()).toMatch(/Press a to add it, and it comes back/);
+    expect(session.progress().topicCards).toEqual({});
+
+    // Saying yes writes the card and carries on into the next round.
+    stdin.write("a");
+    await tick();
+    expect(session.progress().topicCards.d1).toBeDefined();
+
+    // Which lands in its turn — and this time there is nothing to ask, so the
+    // loop runs straight on rather than stopping to say what it already knows.
+    await answer(stdin);
+    await answer(stdin);
+    expect(lastFrame()).not.toContain("is not in your reviews");
+    unmount();
+  });
+
+  it("carries on without a card when the offer is declined", async () => {
+    const { session, lastFrame, stdin, unmount } = open();
+    await tick();
+    await answer(stdin);
+    await answer(stdin);
+    await until(lastFrame, "is not in your reviews");
+
+    stdin.write("\r");
+    await tick();
+    expect(session.progress().topicCards).toEqual({});
+    expect(lastFrame()).not.toContain("is not in your reviews");
+    unmount();
+  });
+
+  it("puts nothing in the pile for a topic that was only answered", async () => {
+    // The friction this replaced: opening the index, trying a page and
+    // answering its questions used to cost a card that came due for years.
+    const { session, stdin, unmount } = open();
+    await tick();
+    await answer(stdin);
+    await answer(stdin);
+    expect(session.progress().topicCards).toEqual({});
+    // And the answers are still on the record — it is a schedule that is being
+    // withheld, not the work.
+    expect(session.everGraded("d1")).toBe(true);
     unmount();
   });
 
@@ -1232,8 +1309,14 @@ describe("the one way onto a topic", () => {
   it("takes the topic under the cursor out of the review pile, on two presses", async () => {
     const { session, lastFrame, stdin, unmount } = open();
     await tick();
-    // A round graded, so there is a card to lose.
+    // A round graded and added at the offer, so there is a card to lose — and
+    // added through the screen rather than behind it, or the index would be
+    // drawing a session it has not been told changed.
     await answer(stdin);
+    await answer(stdin);
+    await until(lastFrame, "is not in your reviews");
+    stdin.write("a");
+    await tick();
     expect(session.progress().topicCards.d1).toBeDefined();
 
     stdin.write(CTRL_N);
@@ -1514,8 +1597,10 @@ describe("a deck that asked for quoted sentences only", () => {
 
     await press(stdin, lastFrame, "gallia est omnis dīvīsa in partēs trēs");
     await press(stdin, lastFrame, "\r", "correct");
-    // The one quotation is the whole run, so grading it works the run out.
-    await press(stdin, lastFrame, "3", "All practised");
+    // The one quotation is the whole run, so grading it works the run out and
+    // asks whether the topic should start coming back.
+    await press(stdin, lastFrame, "3", "is not in your reviews");
+    await press(stdin, lastFrame, "a", "All practised");
 
     // And the topics it never asked about are untouched: nothing was shown, so
     // grading one would put a topic never seen into the review rotation.

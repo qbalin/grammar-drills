@@ -104,7 +104,11 @@ type Phase =
       t: "landed";
       round?: {
         sectionId: string;
+        /** The section it was read in, when that is another book's page. */
+        viewedAs?: string;
         due: Date;
+        /** False while the card is only on offer — see `Landed`. */
+        scheduled: boolean;
       };
       /** The last thing waiting went with this grade. */
       cleared: boolean;
@@ -655,7 +659,12 @@ export function App({ content, session, storage }: Props) {
         action.kind === "drill"
           ? session.servePractice(action.sectionId)
           : session.serveReview(action.sectionId);
-      if (!served) {
+      // A topic with nothing servable takes a pass-over grade so the loop can move
+    // past it. That used to schedule the topic as a side effect; it no longer
+    // can, because a grade writes nothing for a topic with no card. A pass-over
+    // on a *review* still moves the card it was picked for — `next("review")`
+    // only ever names topics that already have one.
+    if (!served) {
         // A topic with no tests cannot be studied; pass it so the loop moves on
         // rather than offering it again forever. But a topic with tests the
         // preference filtered out is a different thing: nothing was shown, so
@@ -736,6 +745,37 @@ export function App({ content, session, storage }: Props) {
       setPhase(
         graded ? { t: "graded", revealed: graded.revealed } : { t: "answering" },
       );
+      bump();
+      return;
+    }
+    /*
+     * An offer that was never answered comes back rather than lapsing.
+     *
+     * A finished round is not resumable, so before this it fell straight
+     * through to `advance()` and the landing was simply lost — which cost
+     * nothing when the landing only announced a date. It costs the whole
+     * feature now: letting the offer lapse decides it by default, and the
+     * default is precisely what is being removed. `worst` is on the round and
+     * the round is on disk, so the same question can be asked again with the
+     * same number under it.
+     *
+     * Guarded on `!scheduled`. A landing on a topic already in the pile has
+     * nothing to ask, so it keeps falling through exactly as it always did.
+     */
+    const landed = session.landedRound();
+    if (landed && !landed.scheduled) {
+      setPhase({
+        t: "landed",
+        round: {
+          sectionId: landed.sectionId,
+          ...(landed.viewedAs ? { viewedAs: landed.viewedAs } : {}),
+          due: landed.due,
+          scheduled: false,
+        },
+        // Not recoverable, and claiming it would be a small lie: what was left
+        // in the pile at the time of the round is not written down anywhere.
+        cleared: false,
+      });
       bump();
       return;
     }
@@ -866,11 +906,13 @@ export function App({ content, session, storage }: Props) {
        * times is the one working hardest, and this is for finishing.
        *
        * The round is deliberately not ended here. `leaveRound()` — which
-       * `advance` calls first thing — is
-       * what "Keep going" means. A student who closes the app on this card
-       * loses nothing: a round with every question graded is not resumable, so
-       * the next launch falls through to `advance` and puts it down exactly as
-       * the tap would have.
+       * `advance` calls first thing — is what "Keep going" and "Not now" both
+       * mean. A student who closes the app on this card loses nothing, but not
+       * for the reason it used to: the round is still on file with its `worst`,
+       * and the launch path reads `landedRound()` before falling through to
+       * `advance`, so an offer that was never answered is put back rather than
+       * quietly dropped. Dropping it would decide the question by default, and
+       * the default is the thing being removed.
        */
       const landed = session.landedRound();
       const { dueTopics, dueVocab } = session.stats();
@@ -883,7 +925,14 @@ export function App({ content, session, storage }: Props) {
       setPhase({
         t: "landed",
         ...(landed
-          ? { round: { sectionId: landed.sectionId, due: landed.due } }
+          ? {
+              round: {
+                sectionId: landed.sectionId,
+                ...(landed.viewedAs ? { viewedAs: landed.viewedAs } : {}),
+                due: landed.due,
+                scheduled: landed.scheduled,
+              },
+            }
           : {}),
         cleared,
         ...(author ? { met: author } : {}),
@@ -983,6 +1032,43 @@ export function App({ content, session, storage }: Props) {
     save();
     bump();
     flash(on ? `Unstarred “${topic.title}”.` : `Starred “${topic.title}”.`);
+  };
+
+  /**
+   * Put a topic into the review pile, because the offer was accepted.
+   *
+   * `dismissTopic` read backwards, and the only way a topic gets a card now.
+   * It deliberately does not navigate: the card it was tapped on stays put and
+   * turns from a question into the ordinary landing, so the interval the offer
+   * quoted is still on screen underneath the answer. Moving on is the next tap,
+   * and it is the same one it always was.
+   *
+   * `session.enrolTopic` files under the primary topics the section teaches, so
+   * this is handed whatever the round was filed under rather than the page it
+   * was read through — a further grammar's section teaching two primary topics
+   * enrols both, which is the lockstep everything else here moves in.
+   */
+  const enrolTopic = (target: string, title: string) => {
+    navigator.vibrate?.(8);
+    session.enrolTopic(target);
+    save();
+    // Read the date back off the engine rather than keeping the offer's: the
+    // two agree to the second, and the one on disk is the one that is true.
+    const landed = session.landedRound();
+    setPhase((p) =>
+      p.t === "landed" && p.round
+        ? {
+            ...p,
+            round: {
+              ...p.round,
+              scheduled: true,
+              due: landed?.due ?? p.round.due,
+            },
+          }
+        : p,
+    );
+    bump();
+    flash(`“${title}” is in your reviews.`);
   };
 
   /**
@@ -2184,6 +2270,14 @@ export function App({ content, session, storage }: Props) {
                 // and reporting the whole bank would credit the student with
                 // questions the run never showed them.
                 total={session.coverage(at).total}
+                scheduled={session.isScheduled(at)}
+                // Previewed with no round named, which is the truth here: this
+                // screen is reached through `advance`, which ends the round
+                // first, so `enrolTopic` falls back to the same 3 this asks
+                // for. The two agree by construction rather than by luck, and
+                // `core.test.ts` holds them to it.
+                due={session.previewTopic(at)[3]}
+                onEnrol={() => enrolTopic(at, content.getSection(at)?.title ?? "this topic")}
                 onAgain={() => {
                   session.drillTopic(at);
                   save();
@@ -2198,14 +2292,33 @@ export function App({ content, session, storage }: Props) {
           <Landed
             title={
               phase.round
-                ? (content.getSection(phase.round.sectionId)?.title ??
-                  "this topic")
+                ? // Named as the page it was read on, which is what the student
+                  // was looking at — a further grammar's section, when they
+                  // reached the questions through one.
+                  (content.getSection(
+                    phase.round.viewedAs ?? phase.round.sectionId,
+                  )?.title ?? "this topic")
                 : undefined
             }
             round={phase.round}
             cleared={phase.cleared}
             met={phase.met}
             nextDue={nextDue}
+            onEnrol={
+              phase.round
+                ? // The topic the round was filed under, never the page it was
+                  // reached through: `enrolTopic` maps that back out to every
+                  // primary topic the page teaches, and handing it `viewedAs`
+                  // would enrol a topic this round never touched.
+                  () =>
+                    enrolTopic(
+                      phase.round!.sectionId,
+                      content.getSection(
+                        phase.round!.viewedAs ?? phase.round!.sectionId,
+                      )?.title ?? "this topic",
+                    )
+                : undefined
+            }
             onKeepGoing={() => {
               if (phase.cleared) {
                 // The pile is empty, so Review is no longer somewhere to be —

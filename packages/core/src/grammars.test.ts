@@ -140,6 +140,9 @@ describe("a pack with more than one grammar", () => {
     expect(open.sectionId).toBe("tg-020-nouns");
     expect(open.viewedAs).toBe("sg-100-nouns-a");
 
+    // Enrolled through the second book's id, which is how the offer at the end
+    // of the round reaches it — the card still lands on the primary's topic.
+    s.enrolTopic("sg-100-nouns-a");
     s.gradeTopic("tg-020-nouns", 3);
     const p = s.progress();
     expect(Object.keys(p.topicCards)).toEqual(["tg-020-nouns"]);
@@ -169,7 +172,7 @@ describe("a pack with more than one grammar", () => {
       prompt: "tg-020-nouns-t1 prompt 0",
       answer: "x", submitted: "x", rating: 3,
     });
-    s.gradeTopic("tg-020-nouns", 4);
+    s.enrolTopic("tg-020-nouns", 4);
 
     s.setGrammar("second");
     const map = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
@@ -240,7 +243,7 @@ describe("a pack with more than one grammar", () => {
     });
   });
 
-  it("takes a further grammar's section out of the pile by every topic it teaches", () => {
+  it("puts a further grammar's section into the pile by every topic it teaches, and takes it out the same way", () => {
     const wide: ContentData = {
       ...data,
       crosswalk: {
@@ -252,8 +255,16 @@ describe("a pack with more than one grammar", () => {
     };
     const s = new Session(new Content(wide, profile));
     s.setGrammar("second");
-    s.gradeTopic("tg-020-nouns", 4);
-    s.gradeTopic("tg-030-verbs", 4);
+
+    // One page of the second book teaches two topics of the first, so enrolling
+    // it enrols both — the lockstep every per-topic fact here moves in. A single
+    // card would leave the other half of the page silently out of the pile.
+    s.enrolTopic("sg-100-nouns-a", 4);
+    expect(Object.keys(s.progress().topicCards).sort()).toEqual([
+      "tg-020-nouns",
+      "tg-030-verbs",
+    ]);
+    expect(JSON.stringify(s.progress())).not.toContain("sg-100");
     expect(s.grammarMap().find((t) => t.sectionId === "sg-100-nouns-a")!.scheduled).toBe(true);
 
     // Both cards go, not the first one found: the section is one page to the

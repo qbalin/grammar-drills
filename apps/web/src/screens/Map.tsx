@@ -659,7 +659,7 @@ export function TopicSheet({
               </div>
               <p className="field__hint">
                 The schedule for this topic goes. Your answers stay, and
-                practising it puts it back in the pile on the next grade.
+                practising it will ask whether to put it back.
               </p>
             </>
           ) : (

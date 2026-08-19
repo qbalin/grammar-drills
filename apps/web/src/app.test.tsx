@@ -161,16 +161,35 @@ function mount(
 }
 
 /**
+ * A progress file with a topic already in the review pile.
+ *
+ * A round does not enrol the topic it was answered on — the landing asks, and
+ * the student answers — so a scenario that wants a *scheduled* topic has to say
+ * so. Every test whose subject is the card, the schedule or a dismissal starts
+ * from this; the ones whose subject is the offer deliberately do not.
+ */
+function enrolled(id = "decl1", rating: 1 | 2 | 3 | 4 = 3): Progress {
+  const s = new Session(new Content(fixture, testProfile));
+  s.enrolTopic(id, rating);
+  return s.progress();
+}
+
+/**
  * Past the card the loop now stands still on when a round is worked out.
  *
  * A round no longer runs straight into the next question, so every scenario
  * that crosses a round boundary meets this in between. A no-op where there is
  * no card, so it can follow any grade without the caller having to know whether
  * that grade happened to be the round's last.
+ *
+ * "Not now" is the same button under the name the offer gives it, on a topic
+ * that is not in the review pile — declining is how you carry on there, and a
+ * scenario that is not about the offer should be able to cross it without
+ * knowing which of the two it is meeting.
  */
 async function carryOn(user: ReturnType<typeof userEvent.setup>) {
   const button = screen.queryByRole("button", {
-    name: /Keep going|Carry on/,
+    name: /Keep going|Carry on|Not now/,
   });
   if (button) await user.click(button);
 }
@@ -331,9 +350,11 @@ describe("the study loop", () => {
     expect(sentences()).toEqual(["Puella rosa amo.", "Puella rosam amat."]);
 
     await user.click(screen.getByRole("button", { name: /Good/ }));
-    // The grade reaches the schedule and nothing else — there is no score for
-    // it to move.
-    expect(session.progress().topicCards.decl1).toBeDefined();
+    // The grade reaches the record and nothing else — there is no score for it
+    // to move, and it does not put the topic in the pile either: that is asked
+    // for at the end of the round rather than taken from an answer.
+    expect(session.attemptsFor("decl1")).toHaveLength(1);
+    expect(session.progress().topicCards).toEqual({});
   });
 
   it("advances through a test's questions before moving on", async () => {
@@ -390,7 +411,7 @@ describe("the study loop", () => {
 
   it("stops on the round it finished rather than sliding onto the next question", async () => {
     const user = userEvent.setup();
-    mount();
+    mount(enrolled());
 
     for (const _ of [0, 1]) {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
@@ -405,9 +426,103 @@ describe("the study loop", () => {
     expect(screen.getByText(/^Back /)).toBeDefined();
   });
 
+  describe("the offer a round lands on", () => {
+    /** Answer both of decl1's questions, which is one whole round. */
+    const workARound = async (user: ReturnType<typeof userEvent.setup>) => {
+      for (const _ of [0, 1]) {
+        await user.click(screen.getByRole("button", { name: "Reveal" }));
+        await user.click(screen.getByRole("button", { name: /Good/ }));
+      }
+    };
+
+    it("asks rather than announcing, and says what saying yes would buy", async () => {
+      const user = userEvent.setup();
+      const { session } = mount();
+      await workARound(user);
+
+      expect(screen.getByRole("heading", { name: "First declension" })).toBeDefined();
+      expect(screen.getByText(/It is not in your reviews\./)).toBeDefined();
+      // A date, not a vague promise: the same interval the grade button that
+      // reached this screen was labelled with.
+      expect(screen.getByText(/comes back (in|tomorrow)/)).toBeDefined();
+      expect(screen.queryByText(/^Back /)).toBeNull();
+      expect(session.progress().topicCards).toEqual({});
+    });
+
+    it("writes the card on yes, and honours the interval it quoted", async () => {
+      const user = userEvent.setup();
+      const { session } = mount();
+      await workARound(user);
+
+      const offered = screen.getByText(/It is not in your reviews\./).textContent!;
+      await user.click(screen.getByRole("button", { name: "Add to my reviews" }));
+
+      // The card exists, and the same card is now reported rather than offered
+      // — the tap does not navigate, so the answer is read where it was given.
+      expect(session.progress().topicCards.decl1).toBeDefined();
+      const back = screen.getByText(/^Back /).textContent!;
+      expect(offered).toContain(back.replace(/^Back /, ""));
+      expect(screen.queryByRole("button", { name: "Add to my reviews" })).toBeNull();
+      expect(screen.getByRole("button", { name: "Keep going" })).toBeDefined();
+    });
+
+    it("leaves nothing behind on no, and asks again next round", async () => {
+      const user = userEvent.setup();
+      const { session } = mount();
+      await workARound(user);
+      await user.click(screen.getByRole("button", { name: "Not now" }));
+      expect(session.progress().topicCards).toEqual({});
+
+      // decl1 holds one test of two questions, so the run is worked out — and
+      // that screen asks too. Saying no is not a state: nothing was written, so
+      // nothing remembers it, and the answer may well have changed by now.
+      expect(screen.getByRole("heading", { name: "All practised." })).toBeDefined();
+      expect(screen.getByRole("button", { name: "Add to my reviews" })).toBeDefined();
+    });
+
+    it("puts an unanswered offer back after a reload", async () => {
+      const user = userEvent.setup();
+      mount();
+      await workARound(user);
+      expect(screen.getByText(/It is not in your reviews\./)).toBeDefined();
+
+      // Closing the app on the question rather than answering it. Letting the
+      // offer lapse would decide it by default, which is the thing being
+      // removed — so the round is still on disk and the launch asks again.
+      cleanup();
+      const { session } = mount(new SyncingStorage().read() ?? undefined);
+      expect(screen.getByText(/It is not in your reviews\./)).toBeDefined();
+      await user.click(screen.getByRole("button", { name: "Add to my reviews" }));
+      expect(session.progress().topicCards.decl1).toBeDefined();
+    });
+
+    it("takes the enrolment back with the grade that reached it", async () => {
+      const user = userEvent.setup();
+      const { session } = mount();
+      await workARound(user);
+      await user.click(screen.getByRole("button", { name: "Add to my reviews" }));
+      expect(session.progress().topicCards.decl1).toBeDefined();
+
+      // The snapshot predates the round's last grade, and the enrolment was
+      // priced off that grade — so undoing it takes the card with it rather
+      // than leaving a card behind that nothing on screen asked for.
+      await user.click(screen.getByRole("button", { name: "Undo last grade" }));
+      expect(session.progress().topicCards.decl1).toBeUndefined();
+    });
+
+    it("says nothing about the pile on a topic already in it", async () => {
+      const user = userEvent.setup();
+      mount(enrolled());
+      await workARound(user);
+      expect(screen.getByText(/^Back /)).toBeDefined();
+      expect(screen.queryByRole("button", { name: "Add to my reviews" })).toBeNull();
+      expect(screen.queryByText(/It is not in your reviews\./)).toBeNull();
+    });
+  });
+
   it("says where the topic has got to, and never how it was graded", async () => {
     const user = userEvent.setup();
-    mount();
+    mount(enrolled());
 
     // One right and one wrong, so a card that reported the round would have
     // something to report. Nothing on it may.
@@ -428,7 +543,7 @@ describe("the study loop", () => {
 
   it("carries on from the card, and stops on it without going anywhere", async () => {
     const user = userEvent.setup();
-    mount();
+    mount(enrolled());
 
     for (const _ of [0, 1]) {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
@@ -455,6 +570,10 @@ describe("the study loop", () => {
     // The round is resumable, so what the card reports cannot be held in the
     // screen's own state: nothing here ever saw the first grade.
     const s = new Session(new Content(fixture, testProfile));
+    // In the pile before the round opens, so `cardBefore` snapshots the card
+    // rather than its absence — and so the landing reports a date rather than
+    // offering one, which is what this test is about.
+    s.enrolTopic("decl1", 3);
     s.beginRound("decl1", fixture.tests.decl1![0]!, true, "new");
     s.gradeTopic("decl1", 3, new Date(), "decl1-t1");
     mount(s.progress());
@@ -850,7 +969,7 @@ describe("picking a test back up", () => {
 
   it("puts a round left on the card between rounds down, rather than resuming it", async () => {
     const user = userEvent.setup();
-    mount();
+    mount(enrolled());
 
     for (const _ of [0, 1]) {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
@@ -2317,7 +2436,7 @@ describe("the vocabulary list", () => {
 describe("the schedule", () => {
   it("says what is waiting and what comes back when", async () => {
     const user = userEvent.setup();
-    mount();
+    mount(enrolled());
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Easy/ }));
 
@@ -2353,8 +2472,8 @@ describe("the schedule", () => {
     const waiting = (): Progress => {
       const week = new Date(Date.now() - 7 * 86_400_000);
       const seed = new Session(new Content(fixture, testProfile));
-      seed.gradeTopic("decl1", 1, week);
-      seed.gradeTopic("pres", 1, new Date(week.getTime() + 1000));
+      seed.enrolTopic("decl1", 1, week);
+      seed.enrolTopic("pres", 1, new Date(week.getTime() + 1000));
       seed.recordVocab(
         {
           lemma: "rosa",
@@ -2415,7 +2534,7 @@ describe("the schedule", () => {
 
     it("leaves alone what is not waiting yet", async () => {
       const user = userEvent.setup();
-      mount();
+      mount(enrolled());
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /Easy/ }));
 
@@ -2449,8 +2568,8 @@ describe("the schedule", () => {
       const seed = new Session(new Content(data, testProfile));
       // `decl1` first, so it is what the loop serves — reaching the untested
       // topic would have the loop pass it, and it would not be waiting at all.
-      seed.gradeTopic("decl1", 1, week);
-      seed.gradeTopic("quirk", 1, new Date(week.getTime() + 1000));
+      seed.enrolTopic("decl1", 1, week);
+      seed.enrolTopic("quirk", 1, new Date(week.getTime() + 1000));
 
       mount(seed.progress(), data);
       const sheet = await openSchedule(user);
@@ -2560,7 +2679,7 @@ describe("taking things back", () => {
 
   it("takes you back off the card the round landed on", async () => {
     const user = userEvent.setup();
-    const { session } = mount();
+    const { session } = mount(enrolled());
 
     for (const _ of [0, 1]) {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
@@ -2604,14 +2723,14 @@ describe("taking things back", () => {
 
   it("takes back a grade given by mistake, schedule and trail with it", async () => {
     const user = userEvent.setup();
-    const { session } = mount();
+    const { session } = mount(enrolled());
 
     await user.type(screen.getByLabelText("Your Latin"), "Puella rosam amat.");
     await user.click(screen.getByRole("button", { name: "Submit" }));
     await user.click(screen.getByRole("button", { name: /Again/ })); // meant Easy
 
     // The grade landed and the next question is up.
-    expect(session.progress().topicCards.decl1).toBeDefined();
+    const failed = session.progress().topicCards.decl1!.due;
     expect(screen.getByText(`${profile.ui.promptDirection} · 2/2`)).toBeDefined();
 
     await user.click(screen.getByRole("button", { name: "Undo last grade" }));
@@ -2621,16 +2740,17 @@ describe("taking things back", () => {
     expect(screen.getByText("The girl loves the rose.")).toBeDefined();
     expect(screen.getByText("You wrote")).toBeDefined();
     expect(sentences()).toEqual(["Puella rosam amat.", "Puella rosam amat."]);
-    // …and so is the engine: no card, nothing in the trail.
-    expect(session.progress().topicCards.decl1).toBeUndefined();
+    // …and so is the engine: the card is back where it stood, nothing in the trail.
+    expect(session.progress().topicCards.decl1!.due).not.toBe(failed);
     expect(session.attemptsFor("decl1")).toHaveLength(0);
 
     // One grade deep and no further: nothing older waits behind it.
     expect(screen.queryByRole("button", { name: "Undo last grade" })).toBeNull();
 
-    // Grading again applies once, not twice.
+    // Grading again applies once, not twice — on top of the enrolment, which
+    // is the card's first rep.
     await user.click(screen.getByRole("button", { name: /Easy/ }));
-    expect(session.progress().topicCards.decl1!.reps).toBe(1);
+    expect(session.progress().topicCards.decl1!.reps).toBe(2);
     expect(session.attemptsFor("decl1")).toHaveLength(1);
     expect(session.attemptsFor("decl1")[0]?.rating).toBe(4);
   });
@@ -2938,7 +3058,7 @@ describe("saving to the cloud", () => {
 describe("progress", () => {
   it("survives a reload through local storage", async () => {
     const user = userEvent.setup();
-    const { session } = mount();
+    const { session } = mount(enrolled());
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
@@ -3338,7 +3458,9 @@ describe("the one way onto a topic", () => {
 
   it("costs a topic one review per round of questions, not one per question", async () => {
     const user = userEvent.setup();
-    const { session } = mount();
+    // Already in the pile, so the round has a card to move: the enrolment is
+    // the first rep, and the whole round is the second.
+    const { session } = mount(enrolled());
 
     // decl1's test holds two questions; both are one round.
     await user.click(screen.getByRole("button", { name: "Reveal" }));
@@ -3346,7 +3468,21 @@ describe("the one way onto a topic", () => {
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
 
-    expect(session.progress().topicCards.decl1!.reps).toBe(1);
+    expect(session.progress().topicCards.decl1!.reps).toBe(2);
+  });
+
+  it("costs a topic nothing at all until it is added to the reviews", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    // Two questions answered and on the record, and the pile still empty.
+    expect(session.attemptsFor("decl1")).toHaveLength(2);
+    expect(session.progress().topicCards).toEqual({});
   });
 
   it("stars a topic from its sheet, and pins it above the families", async () => {
@@ -3385,11 +3521,11 @@ describe("the one way onto a topic", () => {
     expect(screen.queryByText("★ Starred")).toBeNull();
   });
 
-  it("takes a topic out of the review pile from its sheet, and a grade puts it back", async () => {
+  it("takes a topic out of the review pile from its sheet, and only an offer puts it back", async () => {
     const user = userEvent.setup();
-    const { session } = mount();
+    const { session } = mount(enrolled());
 
-    // Grade it once so it has a card to lose.
+    // Answer one, so there is a trail to prove the dismissal spares.
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
     expect(session.progress().topicCards.decl1).toBeDefined();
@@ -3407,6 +3543,14 @@ describe("the one way onto a topic", () => {
     // And the sheet no longer offers it, because there is nothing left to take.
     await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
     expect(screen.queryByRole("button", { name: "Stop reviewing this topic" })).toBeNull();
+
+    // Answering it again does not undo the dismissal. It used to: the next
+    // grade wrote the card back, so a dismissal survived only until the topic
+    // was next practised.
+    await user.click(screen.getByRole("button", { name: /Practise/ }));
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(session.progress().topicCards.decl1).toBeUndefined();
   });
 
   it("offers the dismissal on a topic scheduled for later, not only a due one", async () => {
@@ -3414,7 +3558,7 @@ describe("the one way onto a topic", () => {
     // the topic somebody is looking at when they decide they have had enough.
     const user = userEvent.setup();
     const s = new Session(new Content(fixture, testProfile));
-    s.gradeTopic("decl1", 4, new Date());
+    s.enrolTopic("decl1", 4, new Date());
     mount(s.progress());
 
     await user.click(screen.getByRole("button", { name: "Grammar index" }));
@@ -3439,7 +3583,7 @@ describe("the one way onto a topic", () => {
      */
     const withReview = () => {
       const s = new Session(new Content(fixture, testProfile));
-      s.gradeTopic("decl1", 1, new Date(Date.now() - 60 * 60 * 1000));
+      s.enrolTopic("decl1", 1, new Date(Date.now() - 60 * 60 * 1000));
       mount(s.progress(), fixture, testProfile, null);
       return s;
     };
@@ -3536,7 +3680,7 @@ describe("what is on screen, and why", () => {
   /** A deck with a topic already failed, so a review is waiting on opening. */
   const withBacklog = () => {
     const s = new Session(new Content(fixture, testProfile));
-    s.gradeTopic("decl1", 1, new Date(Date.now() - 60 * 60 * 1000));
+    s.enrolTopic("decl1", 1, new Date(Date.now() - 60 * 60 * 1000));
     return s.progress();
   };
 
@@ -3571,7 +3715,7 @@ describe("what is on screen, and why", () => {
       },
       yesterday,
     );
-    s.gradeTopic("decl1", 4, yesterday);
+    s.enrolTopic("decl1", 4, yesterday);
     mount(s.progress());
 
     expect(badge()).toBe("drill 0/1");
@@ -3640,8 +3784,8 @@ describe("choosing between the reviews and the book", () => {
   const withBacklog = () => {
     const s = new Session(new Content(fixture, testProfile));
     const hourAgo = new Date(Date.now() - 60 * 60 * 1000);
-    s.gradeTopic("decl1", 1, hourAgo);
-    s.gradeTopic("decl2", 1, hourAgo);
+    s.enrolTopic("decl1", 1, hourAgo);
+    s.enrolTopic("decl2", 1, hourAgo);
     return s.progress();
   };
 
@@ -3743,7 +3887,7 @@ describe("choosing between the reviews and the book", () => {
     const user = userEvent.setup();
     // One topic waiting, whose test is a single question.
     const s = new Session(new Content(fixture, testProfile));
-    s.gradeTopic("decl2", 1, new Date(Date.now() - 60 * 60 * 1000));
+    s.enrolTopic("decl2", 1, new Date(Date.now() - 60 * 60 * 1000));
     mount(s.progress());
     expect(pressed("Review")).toBe("true");
 
@@ -4022,7 +4166,7 @@ describe("the index under the quoted-only preference", () => {
 
     it("brings a due topic back on its quotation", async () => {
       const s = new Session(new Content(quoted, testProfile));
-      s.gradeTopic("decl1", 1, hourAgo());
+      s.enrolTopic("decl1", 1, hourAgo());
       // The cycle is left standing past the quotation, which is the only
       // position that tells the filter from the order: unnarrowed, the next
       // test here is the written one. Narrowed, the cycle is one test long,
@@ -4042,7 +4186,7 @@ describe("the index under the quoted-only preference", () => {
 
     it("brings one with nothing quoted back all the same", async () => {
       const s = new Session(new Content(quoted, testProfile));
-      s.gradeTopic("decl2", 1, hourAgo());
+      s.enrolTopic("decl2", 1, hourAgo());
       mount({ ...s.progress(), quotedOnly: true }, quoted);
 
       // Second declension has tests and no quotation among them. The walk
@@ -4444,7 +4588,7 @@ describe("a section the book sets no exercise on", () => {
 
   it("leaves everything a student has actually done exactly where it was", async () => {
     const graded = new Session(new Content(fixture, testProfile));
-    graded.gradeTopic("decl1", 4, new Date());
+    graded.enrolTopic("decl1", 4, new Date());
 
     const before = new Session(new Content(fixture, testProfile));
     before.restore(graded.snapshot());

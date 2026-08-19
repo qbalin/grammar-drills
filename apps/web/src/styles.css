@@ -1824,6 +1824,13 @@ span.status__title {
   font-size: 0.9rem;
 }
 
+/* The one line on this card that is a question rather than a report. */
+.landed__offer {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  max-width: 22rem;
+}
+
 /* Everything decorative stops when the reader asks it to. */
 @media (prefers-reduced-motion: reduce) {
   *,

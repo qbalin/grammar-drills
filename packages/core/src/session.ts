@@ -117,7 +117,7 @@ export interface TopicProgress {
   due: boolean;
   /**
    * In the review pile at all — it carries a card, whether or not that card is
-   * due yet. What `dismissTopic` takes away and a grade puts back, so it is
+   * due yet. What `enrolTopic` puts there and `dismissTopic` takes away, so it is
    * what a surface offering the dismissal has to read: `due` would hide the
    * action on a topic scheduled for next month, which is exactly the topic
    * somebody is looking at when they decide they have had enough of it.
@@ -446,11 +446,13 @@ export class Session {
    * before testing and simply asking.
    *
    * Read off the answer trail rather than off the topic's card, and the
-   * difference matters exactly once: `dismissTopic` deletes the card. Keyed on
-   * the card, a topic taken out of the review pile would come back as though it
+   * difference now matters twice over. `dismissTopic` deletes the card: keyed
+   * on it, a topic taken out of the review pile would come back as though it
    * had never been studied and teach itself from the top the next time it was
-   * practised — which is the opposite of what dismissing it said. The trail is
-   * uncapped and nothing deletes it.
+   * practised — the opposite of what dismissing it said. And a topic can be
+   * worked through without ever being enrolled at all, so the card is not even
+   * written for the topics somebody has spent the most time exploring. The
+   * trail is uncapped and nothing deletes it.
    */
   everGraded(sectionId: string): boolean {
     return this.attemptTrail(sectionId).length > 0;
@@ -509,9 +511,14 @@ export class Session {
    * student's to delete.
    *
    * Nothing is hidden by it and nothing is suspended. The topic is on the index
-   * as it always was, and practising it puts it back in the pile on the next
-   * grade — which is the difference between this and a suspension: it is a
-   * decision the student made about their own pile, and one grade undoes it.
+   * as it always was, and practising it *offers* to put it back when the round
+   * lands — which is the difference between this and a suspension: it is a
+   * decision the student made about their own pile, and one tap undoes it.
+   *
+   * It used to be undone by the next grade, silently, which sat badly with
+   * calling it the student's decision: a dismissal survived exactly until they
+   * next answered a question on the topic. A dismissed topic is now an
+   * unenrolled one like any other, and the only way back in is `enrolTopic`.
    *
    * The open round goes with the card. `gradeTopic` rebuilds a topic's card
    * from `cardBefore` on every grade of a round, so a dismissal taken mid-round
@@ -531,6 +538,51 @@ export class Session {
       dropped = true;
     }
     if (dropped) this.touch();
+  }
+
+  /**
+   * Put a topic into the review pile, because the student said so.
+   *
+   * `dismissTopic` read backwards, and the only thing that writes a card for a
+   * topic that has none. Answering questions does not: a student turning the
+   * pages of a grammar and trying what is on them would otherwise collect a
+   * card per topic looked at, and a pile that grows by being curious is a
+   * reason to stop being curious.
+   *
+   * Rated at the round's own worst grade rather than at a neutral one, so the
+   * card the student gets is the card the grade they gave has already been
+   * shown to buy — under the grade button when they pressed it, and on the
+   * screen that made this offer. A topic enrolled with no round behind it takes
+   * the 3 that `enrolRating` falls back to.
+   *
+   * Files under every primary topic the section teaches, like `star` and
+   * `dismissTopic`: a further grammar's section that teaches two of the
+   * primary's enrols both, which is the lockstep `grammars.test.ts` asserts.
+   * A section the crosswalk does not reach enrols nothing — the same silence
+   * as its having no questions.
+   *
+   * Idempotent, and deliberately so: a topic that already has a card keeps it
+   * untouched rather than being reset to a fresh one. That is what makes this
+   * safe to offer to somebody who is already reviewing the topic, and it is
+   * what grandfathers every card written before this existed.
+   */
+  enrolTopic(sectionId: string, rating?: Rating, now: Date = new Date()): void {
+    const worst = rating ?? this.enrolRating(sectionId);
+    let added = false;
+    for (const id of this.content.primaryTopicsFor(sectionId)) {
+      if (this.p.topicCards[id] !== undefined) continue;
+      this.p.topicCards[id] = serializeCard(rate(newCard(now), worst, now));
+      this.p.newTopicsIntroduced += 1;
+      added = true;
+    }
+    if (added) this.touch();
+  }
+
+  /** Whether this topic is in the review pile at all. */
+  isScheduled(sectionId: string): boolean {
+    return this.content
+      .primaryTopicsFor(sectionId)
+      .some((id) => this.p.topicCards[id] !== undefined);
   }
 
   /** Stay on this topic and work a fresh run of its questions out. */
@@ -854,10 +906,17 @@ export class Session {
    * same line. What that one is for is putting an unfinished round back; this
    * is for the moment a finished one is stood still in.
    *
-   * The one fact that has to agree with `gradeTopic`'s own arithmetic: when the
-   * card the round just wrote brings the topic back. A screen assembling that
-   * out of `progress()` would drift the first time the scheduler moved, and
-   * would drift in two apps rather than in one.
+   * The one fact that has to agree with `gradeTopic`'s and `enrolTopic`'s own
+   * arithmetic: when the topic comes back. A screen assembling that out of
+   * `progress()` would drift the first time the scheduler moved, and would
+   * drift in two apps rather than in one.
+   *
+   * For a topic already in the pile that is the card's own `due`. For one that
+   * is not, it is what enrolling *would* buy — the same `worst` the round has
+   * been accumulating, applied to a fresh card — because the screen has to
+   * quote a number before the student decides, and quoting a different one
+   * afterwards is the lie the grade-button labels are built to avoid. The two
+   * differ only by the seconds between reading this and tapping the button.
    *
    * Deliberately silent about how the round was graded. What belongs on that
    * screen is which topic was worked on and when it returns; the grades are the
@@ -870,12 +929,14 @@ export class Session {
    * condition rather than as a list of what to exclude, so the next kind of
    * single-question grade needs no line here.
    */
-  landedRound(): {
+  landedRound(now: Date = new Date()): {
     sectionId: string;
     /** The section it was being read in, when that is another book's. */
     viewedAs?: string;
-    /** When the card this round wrote brings the topic back. */
+    /** When the topic comes back — from its card, or from the offer. */
     due: Date;
+    /** Whether that date is on disk, or only what enrolling would buy. */
+    scheduled: boolean;
     /** Authors this round introduced, in the order they were met. */
     met: string[];
   } | null {
@@ -886,11 +947,13 @@ export class Session {
       .find((t) => t.id === open.roundId);
     if (!test || open.answered < test.questions.length) return null;
     const card = this.p.topicCards[open.sectionId];
-    if (!card) return null;
     return {
       sectionId: open.sectionId,
       ...(open.viewedAs ? { viewedAs: open.viewedAs } : {}),
-      due: new Date(card.due),
+      due: card
+        ? new Date(card.due)
+        : rate(newCard(now), this.enrolRating(open.sectionId), now).due,
+      scheduled: card !== undefined,
       met: open.met ?? [],
     };
   }
@@ -947,13 +1010,23 @@ export class Session {
   }
 
   /**
-   * Apply a self-grade to a grammar topic, creating its card on first sight.
+   * Apply a self-grade to a grammar topic that is in the review pile.
+   *
+   * It does **not** create a card for one that is not. Grading says how well
+   * the answer went; it does not say the topic should start coming back, and
+   * conflating the two is what made exploring the book expensive. `enrolTopic`
+   * is the one thing that puts a topic in the pile, and the student asks for
+   * it. The grade is not wasted meanwhile: the round goes on accumulating
+   * `worst`, and that is the rating the offer is priced at.
    *
    * `roundId` is the served test's id, and it makes the round — not the
    * question — the unit of scheduling. Every grade in a round rewinds the card
    * to where it stood before the round and re-rates it with the worst grade
    * given so far, so four questions cost one rep instead of four, and a round
-   * abandoned halfway still leaves a card that is the result of exactly one.
+   * abandoned halfway on an enrolled topic still leaves a card that is the
+   * result of exactly one. Abandoned on a topic that is not enrolled it leaves
+   * nothing, which is the whole point.
+   *
    * Passing no `roundId` rates per call, which is what a topic with no tests
    * written for it — one verdict, no round — wants.
    */
@@ -981,6 +1054,22 @@ export class Session {
       : null;
   }
 
+  /**
+   * What a fresh card for this topic should be rated.
+   *
+   * The round's worst grade when one is in flight on it, which is what the
+   * whole round was priced at, and `fallback` otherwise. In one place because
+   * three things have to agree to the letter — the interval under the grade
+   * button, the interval the offer quotes, and the card enrolling writes — and
+   * a second copy of this is how they would come to disagree.
+   */
+  private enrolRating(sectionId: string, fallback: Rating = 3): Rating {
+    const open = this.p.openRound;
+    return open && open.sectionId === sectionId && open.worst !== null
+      ? open.worst
+      : fallback;
+  }
+
   gradeTopic(
     sectionId: string,
     rating: Rating,
@@ -998,12 +1087,28 @@ export class Session {
         ? Math.min(continuing.worst, rating)
         : rating
     ) as Rating;
-    const card = rate(
-      before ? deserializeCard(before) : newCard(now),
-      worst,
-      now,
-    );
-    this.p.topicCards[sectionId] = serializeCard(card);
+    /*
+     * Written only for a topic already in the pile.
+     *
+     * Answering a topic does not enrol it — `enrolTopic` does, and the student
+     * asks for it at the end of the round. Exploring the book used to cost a
+     * card per topic looked at, which is a standing reason not to look.
+     *
+     * The guard reads `existing` — the card on disk *now* — rather than
+     * `before`, which is the round's snapshot. That is what makes a dismissal
+     * taken mid-round stick: `before` still holds the card the round opened on,
+     * and rating it would quietly put back what the student just removed.
+     * `dismissTopic` also nulls the round, so this is the second lock on the
+     * same door; both are cheap and the failure is silent.
+     */
+    if (existing) {
+      const card = rate(
+        before ? deserializeCard(before) : newCard(now),
+        worst,
+        now,
+      );
+      this.p.topicCards[sectionId] = serializeCard(card);
+    }
     /*
      * The round, updated rather than rewritten.
      *
@@ -1050,7 +1155,6 @@ export class Session {
       };
     }
 
-    if (!existing) this.p.newTopicsIntroduced += 1;
     this.touch();
   }
 
