@@ -83,6 +83,20 @@ whole design is that nothing marks you. It used to say a third thing — four
 cells drawing where the topic's mastery stood, and which of them this round
 moved. That score is gone; see [One way forward](#one-way-forward).
 
+**On a topic that is not in your review pile, it asks instead.** *It is not in
+your reviews. Add it and it comes back in 9 days* — **Add to my reviews** or
+**Not now**, and the date is the one the grade you just gave has already been
+shown to buy, under the button you pressed it with. Answering a topic used to
+enrol it, so opening the index and trying a page cost you a card that came due
+for the next five years, which is a standing reason not to open the index. It is
+the same two things in the interrogative: what was worked on, and when it *would*
+come back.
+
+Saying no is not remembered, because there is nothing to remember — the next
+round on the topic asks again, and by then the answer may have changed. Saying
+yes does not move you on: the card turns into the ordinary landing with the date
+on it, and **Keep going** is where it always was.
+
 A grade that also empties the pile gets **one** card, not two to dismiss in a
 row: the same card and a line saying so. A word that empties it gets the card
 with no topic on it, since a vocabulary card is one question and has no round
@@ -106,7 +120,8 @@ one the next question quotes.
 
 Spaced repetition runs on two independent [FSRS](https://github.com/open-spaced-repetition/ts-fsrs)
 tracks: **grammar topics** (driven by your self-grades) and **vocabulary** you
-record as you go. A review serves the **words first** and the grammar after
+record as you go. Both are joined by asking rather than by using the app — a
+word when you record it, a topic when you say yes at the end of a round. A review serves the **words first** and the grammar after
 them: a card is answered in seconds where a round of sentences is not, so a
 session cut short has got through far more of what was due — and a word queued
 behind a hard topic is a word that misses its review outright when you stop on
@@ -535,8 +550,13 @@ back when it is not what you need can be taken **out of the review pile**:
 *Stop reviewing this topic* on its sheet, `x` twice on the terminal's index, or
 `⊘ stop reviewing this` on the review itself, which is the moment you actually
 want it. It deletes the scheduling card and nothing else — the answers stay, the
-star stays — and practising the topic puts it back on the next grade. The
-grammar half of *Delete this word*, and it deletes as little.
+star stays — and practising the topic *offers* to put it back when the round
+lands. The grammar half of *Delete this word*, and it deletes as little.
+
+It used to be undone by your next grade, silently, which sat badly with calling
+it your decision: a dismissal survived exactly until you next answered a question
+on the topic. A dismissed topic is now an unenrolled one like any other, and
+comes back the same way any other does — by being asked for.
 
 The app still never suspends a topic on your behalf. `failed 6 times` is a count
 and a suggestion; taking it out of the rotation is your decision to make, which
@@ -639,6 +659,19 @@ Press Enter again to leave the answer you are writing and practise “Conjugatio
 — and moving the cursor cancels it, because the warning named a topic and `←`
 names a different one. `x` asks twice for its own reason: it is a deletion, the
 idiom the vocabulary list already uses.
+
+A round worked out on a topic that is not in the review pile stops to ask, the
+way the web app's card does:
+
+```
+✓ Round done — “Genitive with Verbs” is not in your reviews.
+Press a to add it, and it comes back in 10 minutes. Enter carries on without it.
+```
+
+This is the terminal's only end-of-round screen, and it exists because the engine
+no longer enrols a topic for being answered — without somewhere to ask, this app
+could not put anything in the pile by exploring at all. `a` adds it and carries
+on; Enter carries on without it, and writes nothing at all.
 
 ## Progress storage
 
