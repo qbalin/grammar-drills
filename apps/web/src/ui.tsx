@@ -56,28 +56,39 @@ export function until(from: Date, to: Date): string {
 }
 
 /**
- * When a topic comes back, in full words — for a screen with room for them.
+ * How long until a date, in full words — for a screen with room for them.
  *
  * Beside `until` rather than a flag on it, and the two are not one function.
  * `until` is read four times at once under four grade buttons on a phone-width
  * row, where `9d` is the whole point and "in 9 days" would not fit; this is read
  * once on a card with nothing else on it, where `9d` reads like a receipt. Two
  * jobs, two shapes, and the compact one is load-bearing where it stands.
+ *
+ * A tail rather than a sentence, because two screens now want it under
+ * different verbs: a topic already in the pile *comes back* in nine days, and
+ * one being offered *would come back* in nine days. One ladder of thresholds,
+ * so the offer and the promise can never round differently — which they would
+ * be seen to do, since the offer is on screen one tap before the promise.
  */
-export function comesBack(to: Date, from = new Date()): string {
+export function interval(to: Date, from = new Date()): string {
   const minutes = Math.round((to.getTime() - from.getTime()) / 60000);
-  if (minutes < 2) return "Back in a moment";
-  if (minutes < 60) return `Back in ${minutes} minutes`;
+  if (minutes < 2) return "in a moment";
+  if (minutes < 60) return `in ${minutes} minutes`;
   const hours = Math.round(minutes / 60);
-  if (hours < 24) return hours === 1 ? "Back in an hour" : `Back in ${hours} hours`;
+  if (hours < 24) return hours === 1 ? "in an hour" : `in ${hours} hours`;
   const days = Math.round(hours / 24);
-  if (days === 1) return "Back tomorrow";
-  if (days < 14) return `Back in ${days} days`;
+  if (days === 1) return "tomorrow";
+  if (days < 14) return `in ${days} days`;
   const weeks = Math.round(days / 7);
-  if (days < 60) return `Back in ${weeks} weeks`;
+  if (days < 60) return `in ${weeks} weeks`;
   const months = Math.round(days / 30);
-  if (months < 24) return `Back in ${months} months`;
-  return `Back in ${Math.round(days / 365)} years`;
+  if (months < 24) return `in ${months} months`;
+  return `in ${Math.round(days / 365)} years`;
+}
+
+/** When a topic that is in the pile comes back. */
+export function comesBack(to: Date, from = new Date()): string {
+  return `Back ${interval(to, from)}`;
 }
 
 /** How long ago, for the trail of past attempts. */
