@@ -127,9 +127,29 @@ export default {
       ["marbleShade", "M12 15.2 L15.4 15.2 L16.2 21.4 L12 21.4 Z"],
     ],
 
-    // Ω — omega, the letter that means the language
+    // Ω — omega, the letter that means the language.
+    //
+    // One closed contour: Ω has no counter, because the bay between its legs is
+    // open at the bottom. That is the whole shape, and getting it wrong is what
+    // the drawing before this one did — its bay was a circle with a narrow slot
+    // under it, and a circle with a slot under it is a padlock. At icon size
+    // that is what it read as.
+    //
+    // So the bay is a bowl open at the bottom rather than a ring with a slot:
+    // 11.2 across at its widest and still 5.2 between the feet, where the old
+    // one was 3.2 all the way down. Each terminal scoops outward into its foot
+    // instead of being butted onto a circle at a right angle.
+    //
+    // The weight is modulated, which is what the drawing before this one was
+    // changed from capsules to a path in order to get and then did not do —
+    // 2.2 across the apex against 3.2 at the shoulders, where a pen drawing
+    // this would be at its broadest.
+    //
+    // Arcs would say some of this in fewer numbers, and are not available:
+    // `make-icons.mjs` throws on any path command it does not draw, and the
+    // app icon is this very shape.
     omega: [
-      ["gold", "M12 2.6 C7.4 2.6 4.4 6.0 4.4 10.6 C4.4 13.4 5.6 15.8 7.6 17.2 L7.6 18.6 L3.6 18.6 L3.6 21.4 L10.4 21.4 L10.4 15.6 C8.4 14.8 7.4 13.0 7.4 10.8 C7.4 7.8 9.2 5.6 12 5.6 C14.8 5.6 16.6 7.8 16.6 10.8 C16.6 13.0 15.6 14.8 13.6 15.6 L13.6 21.4 L20.4 21.4 L20.4 18.6 L16.4 18.6 L16.4 17.2 C18.4 15.8 19.6 13.4 19.6 10.6 C19.6 6.0 16.6 2.6 12 2.6 Z"],
+      ["gold", "M12 3.2 C7.14 3.2 3.2 7.05 3.2 11.8 C3.2 15.0 4.3 16.8 5.9 17.4 C5.5 18.2 4.9 19.0 4.4 19.0 L2.8 19.0 L2.8 21.6 L9.4 21.6 L9.4 19.3 C9.2 18.7 9.0 18.2 8.8 17.6 C7.5 16.0 6.4 14.3 6.4 12.0 C6.4 8.3 8.9 5.4 12 5.4 C15.1 5.4 17.6 8.3 17.6 12.0 C17.6 14.3 16.5 16.0 15.2 17.6 C15.0 18.2 14.8 18.7 14.6 19.3 L14.6 21.6 L21.2 21.6 L21.2 19.0 L19.6 19.0 C19.1 19.0 18.5 18.2 18.1 17.4 C19.7 16.8 20.8 15.0 20.8 11.8 C20.8 7.05 16.86 3.2 12 3.2 Z"],
     ],
 
     // κεραυνός — the thunderbolt, white at the core the way lightning is

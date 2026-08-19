@@ -14,6 +14,13 @@
  * round is finished should not be two different letters. `make-icons.mjs`
  * fills the path even-odd and fits it to the icon box itself, so nothing here
  * has to know how big an icon is.
+ *
+ * The paragraph above was true about capsules and, for a while, not true about
+ * what replaced them: the first path was monoline too, and its bay was a ring
+ * with a slot under it, which at 192px is a padlock rather than a letter. It
+ * has since been drawn again — see the shape's own comment in `confetti.mjs`.
+ * Both claims are worth keeping, because the second is the one this file is
+ * for and it was not free.
  */
 import confetti from "./confetti.mjs";
 
