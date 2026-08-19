@@ -3598,10 +3598,10 @@ describe("the one way onto a topic", () => {
       // buttons is a deletion given by mistake.
       expect(s.progress().topicCards.decl1).toBeDefined();
       expect(
-        screen.getByRole("button", { name: /confirm — stop reviewing/ }),
+        screen.getByRole("button", { name: /⊘ confirm/ }),
       ).toBeDefined();
 
-      await user.click(screen.getByRole("button", { name: /confirm — stop reviewing/ }));
+      await user.click(screen.getByRole("button", { name: /⊘ confirm/ }));
       expect(s.progress().topicCards.decl1).toBeUndefined();
     });
 
@@ -3618,7 +3618,7 @@ describe("the one way onto a topic", () => {
 
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /stop reviewing this/ }));
-      await user.click(screen.getByRole("button", { name: /confirm — stop reviewing/ }));
+      await user.click(screen.getByRole("button", { name: /⊘ confirm/ }));
 
       // The round went with the card, and the loop moved on rather than leaving
       // the next question of a topic that is no longer being reviewed.
@@ -3650,7 +3650,7 @@ describe("the one way onto a topic", () => {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       await user.click(screen.getByRole("button", { name: /stop reviewing this/ }));
       expect(
-        screen.getByRole("button", { name: /confirm — stop reviewing/ }),
+        screen.getByRole("button", { name: /⊘ confirm/ }),
       ).toBeDefined();
 
       // On to question two of the round, which disarms it.
@@ -3658,7 +3658,7 @@ describe("the one way onto a topic", () => {
       await user.click(screen.getByRole("button", { name: "Reveal" }));
       expect(screen.getByRole("button", { name: /stop reviewing this/ })).toBeDefined();
       expect(
-        screen.queryByRole("button", { name: /confirm — stop reviewing/ }),
+        screen.queryByRole("button", { name: /⊘ confirm/ }),
       ).toBeNull();
       expect(s.progress().topicCards.decl1).toBeDefined();
     });

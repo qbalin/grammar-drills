@@ -323,10 +323,15 @@ export function Graded({
          * Two presses, like every other deletion here. The first press says
          * what will happen; the topic is not hidden, only taken off the pile,
          * and practising it offers to put it back.
+         *
+         * The armed label is short because it is read in place of the long one,
+         * on a row of five. It used to repeat the whole phrase — the longest
+         * label in the app, and the last on the line — which is what made the
+         * row look broken on a phone.
          */}
         {onDismiss && (
           <button onClick={onDismiss}>
-            {dismissing ? "⊘ confirm — stop reviewing" : "⊘ stop reviewing this"}
+            {dismissing ? "⊘ confirm" : "⊘ stop reviewing this"}
           </button>
         )}
       </div>
