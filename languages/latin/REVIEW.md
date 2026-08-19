@@ -47,6 +47,73 @@ sentence that is impeccably attested and means something other than the prompt.
 | Date | Reviewer | Sample | Verdict |
 |---|---|---|---|
 | — | *not yet signed off* | — | The automated gates C1–C7 pass on 6,557 questions. 2,532 of these were generated on 2026-07-29 across three backfill runs and have had no human read-through; the 4,025 that predate them were reviewed before the gates existed. This is now the largest unreviewed block in the pack and the most useful thing a next run could do. |
+| 2026-08-19 | Claude (this session) | 36 items — 4 per family across all 9 families that hold generated questions, drawn on an even stride through each family's questions in topic order, so the draw repeats. Ids below the table. | **Pass, 35 of 36** (bar is ≥28/30, i.e. ≥34 here). The Latin is idiomatic and on-topic: `magis idōneus` rather than a comparative at §71, `pectoribus tenus` as a postposition at §141, `litō` with the dative at §88, `parcō` with the dative inside indirect discourse at §317, `quam altissimum` at §240, and the archaic gerundive `colundī` at §116 — which is exactly the topic `CLAUDE.md` says Latin's archaic gerundives live in, so it is deliberate rather than a slip. **The one failure is `bn-355-style-pronouns-t7#1`:** the English says "When it was asked **of the merchant** where he had hidden his wealth", and the Latin opens `ā quō cum quaererētur` — a connecting relative whose antecedent is in a previous sentence that does not exist. It is good Latin and impeccably attested, and it is unanswerable: nothing in the prompt tells a student to write `ā quō` rather than `ā mercātōre`. That is precisely the failure this gate exists for. Three more were counted as passes with a note: `bn-071…-t18#2` drops the demonstrative of "that higher hill" (`quam collis altior`); `bn-097-verb-stems-t1#1` writes `dum … natābant` where Bennett §293 wants the present indicative after *dum* meaning "while", though the imperfect is defensible for "as long as" and *dum* is not what the topic teaches; and `bn-116…-t8#4` renders "before winter comes" as `ante hiemem`, dropping the verb. |
+
+### What the 2026-08-19 read found besides its verdict
+
+**A second fault, mechanically detectable, so it was measured rather than
+estimated.** All four answers of `bn-355-style-pronouns-t7` begin with a
+lower-case letter. Across the pack, **64 generated Latin answers open
+lower-case, in exactly four topics** — `bn-243-syntax-of-possessive-pronouns`
+(21), `bn-280-potential-subjunctive` (18), `bn-266-tenses-of-the-subjunctive`
+(17) and `bn-355-style-pronouns` (8) — which is the signature of one generation
+run that lost the capital rather than of anything about the sentences. Every one
+is a whole sentence otherwise.
+
+It is cosmetic where the elision gaps Greek's H3 found were not: a student writes
+a capital, the reference shows none, and they grade themselves. But it is
+inconsistent with the other 99% of the bank, and with `asPrompt`, which
+capitalises every prompt on purpose.
+
+Not repaired here, for the reason the Greek H3 entry gives: a gate that has just
+been read is the wrong moment to move what it measures.
+
+**Two figures that are not faults, checked so nobody re-measures them.** Latin's
+raw count of lower-case openings is 1,430 of 9,006 (15.9%), and Greek's is
+29,072 of 30,214 (96.2%). Both are correct. 1,366 of Latin's are *quoted* — real
+classical text taken mid-sentence out of a grammar, which is exactly how a
+grammar prints it. Greek's near-total is the convention of the language's own
+editions, which capitalise proper nouns and paragraph openings and nothing else.
+Only the 64 generated Latin ones are an anomaly.
+
+The 36 ids read:
+
+- `bn-013-gender-of-nouns-t1#1`
+- `bn-020-first-declension-t13#4`
+- `bn-028-third-declension-t10#4`
+- `bn-048-fourth-declension-t9#2`
+- `bn-063-adjectives-of-the-first-and-second-t1#1`
+- `bn-067-adjectives-of-the-third-declension-t18#1`
+- `bn-071-comparison-of-adjectives-t18#2`
+- `bn-076-formation-and-comparison-of-adverbs-t9#3`
+- `bn-084-personal-pronouns-t1#1`
+- `bn-086-possessive-pronouns-t5#2`
+- `bn-088-the-intensive-pronoun-t6#3`
+- `bn-091-indefinite-pronouns-t1#3`
+- `bn-097-verb-stems-t1#1`
+- `bn-105-third-or-consonant-conjugation-t5#1`
+- `bn-116-peculiarities-of-conjugation-t8#4`
+- `bn-124-irregular-verbs-t19#1`
+- `bn-140-adverbs-t1#1`
+- `bn-140-adverbs-t8#4`
+- `bn-141-prepositions-t15#2`
+- `bn-141-prepositions-t7#4`
+- `bn-161-classification-of-sentences-t1#1`
+- `bn-171-the-vocative-t4#3`
+- `bn-195-genitive-with-nouns-t11#3`
+- `bn-214-genuine-ablative-uses-t10#4`
+- `bn-234-agreement-of-adjectives-t1#1`
+- `bn-240-comparatives-and-superlatives-t5#4`
+- `bn-244-syntax-of-reflexive-pronouns-t5#3`
+- `bn-250-syntax-of-relative-pronouns-t15#2`
+- `bn-254-agreement-t1#1`
+- `bn-266-tenses-of-the-subjunctive-t43#4`
+- `bn-282-moods-in-dependent-clauses-t2#1`
+- `bn-317-tenses-in-indirect-discourse-t6#3`
+- `bn-341-coordinate-conjunctions-t1#1`
+- `bn-348-word-order-t3#4`
+- `bn-351-sentence-structure-t2#1`
+- `bn-355-style-pronouns-t7#1`
 
 ## H3 — quoted question review  *(was C9)*
 
