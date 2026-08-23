@@ -20,7 +20,7 @@ export {
 export { lookupForm } from "./lemmatizer.js";
 export { questionId } from "./question-id.js";
 export { bisect } from "./bisect.js";
-export { LemmaIndex } from "./lemma-index.js";
+export { EntryIndex, LemmaIndex, ArticleIndex } from "./lemma-index.js";
 export {
   questionVocabulary,
   words,
@@ -42,7 +42,7 @@ export {
   familyLabel,
   type FamilyId,
 } from "./families.js";
-export { parseBlocks, plainText, type Block, type Row, type Run } from "./grammar-blocks.js";
+export { parseBlocks, plainText, decodeRuns, type Block, type Row, type Run } from "./grammar-blocks.js";
 export {
   buildParadigm,
   type Paradigm,

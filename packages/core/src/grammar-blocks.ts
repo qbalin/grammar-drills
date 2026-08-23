@@ -215,6 +215,27 @@ function typography(style: GrammarStyle): Typography {
   return made;
 }
 
+/**
+ * The emphasis runs of one line, for a reader that wants nothing else.
+ *
+ * `parseBlocks` classifies a *grammar section*: which line is a heading, which
+ * is a numbered point, which is a paradigm row — decided against one book's
+ * typography. A dictionary article has none of that to decide. Its structure is
+ * explicit in its source and arrives already divided into senses, and running
+ * it through a classifier calibrated on Bennett would flatten it: L&S marks its
+ * second level `A.`, which `LETTERED` does not match, and its fourth `(b)`,
+ * which `PARENTHESISED` does not match.
+ *
+ * What it does share is the inline emphasis, and that must be decoded by this
+ * code rather than by a second copy of it — the escaping rules and the property
+ * that no source document's markup can become markup here both live in
+ * `decode`, and both are the kind of thing that rots when duplicated.
+ */
+export function decodeRuns(line: string): Run[] {
+  const { plain, runs } = decode(line);
+  return runs ?? (plain === "" ? [] : [{ text: plain }]);
+}
+
 const NUMBERED = /^(\d+)\.\s+(.*)$/;
 const LETTERED = /^([a-z])\.\s+(.*)$/;
 const ROMAN = /^([IVXL]+)\.\s+(.*)$/;

@@ -103,6 +103,63 @@ export interface LemmaEntry {
   rank?: number;
 }
 
+/**
+ * One sense of a dictionary article, at the depth its book set it.
+ *
+ * `n` is the book's own marker rather than anything derived — L&S runs
+ * `I.` `A.` `2.` `(b)`, mixing numerals, letters and parentheses across five
+ * levels — because a reader recognises a lexicon by its markers, and renumbering
+ * them would be inventing a structure the book did not print.
+ */
+export interface DictionarySense {
+  /** The marker as printed: "I.", "A.", "2.", "(b)". Empty where none. */
+  n: string;
+  /** How deep the book set it; 1 is the top. */
+  level: number;
+  /** The sense, as one line of `⟦b:…⟧` / `⟦i:…⟧` markup. */
+  text: string;
+}
+
+/**
+ * One article of a further dictionary, as that book printed it.
+ *
+ * Deliberately not a `LemmaEntry`. A `LemmaEntry` is one line — a citation form
+ * and a joined gloss — sized for the crib above an answer box. An article is
+ * what a lexicon prints: the senses divided, the constructions named, the
+ * authors cited. Squeezing one into the other would throw away the only thing
+ * the further book was shipped for.
+ *
+ * The senses arrive already divided, from the source's own markup, rather than
+ * being recovered from flat text the way a grammar section's are. That is the
+ * whole difference between the two: a grammar parser is guessing at a book's
+ * shape from its prose, and a TEI walk is reading a shape the book states. So
+ * nothing here goes through `parseBlocks` — see `decodeRuns`.
+ *
+ * `head` and `text` carry the same `⟦b:…⟧` / `⟦i:…⟧` inline markup grammar prose
+ * does, which is what keeps a source document's own markup from ever becoming
+ * markup here.
+ */
+export interface DictionaryArticle {
+  /** The headword as the book printed it, quantities and all: "amō". */
+  headword: string;
+  /**
+   * Which of several same-spelled headwords this is, where the book numbered
+   * them: `sum¹` *to be* against `sum²` *him*. Absent when it stands alone.
+   */
+  homograph?: number;
+  /**
+   * What the article says before its first sense — inflection, gender,
+   * etymology. Often the whole of a short entry, which then has no senses.
+   */
+  head: string;
+  senses: DictionarySense[];
+}
+
+/** Resolves a folded headword to the articles filed under it. */
+export interface ArticleLookup {
+  lookup(headword: string): DictionaryArticle[];
+}
+
 /** Normalized inflected form -> ranked lemma candidates. */
 export type LemmaMap = Record<string, LemmaEntry[]>;
 
@@ -152,6 +209,14 @@ export interface ContentData {
   lemmas?: LemmaMap;
   /** An alternative to `lemmas`; takes precedence when both are given. */
   lemmaLookup?: LemmaLookup;
+  /**
+   * Further dictionaries by id, each already keyed by folded headword.
+   *
+   * Absent until one is fetched, and absent for good on a pack that declares
+   * none. Nothing the engine does depends on one being here: an article is
+   * something a student reads, never something a question is graded against.
+   */
+  articles?: Record<string, ArticleLookup>;
 }
 
 // ---------------------------------------------------------------------------

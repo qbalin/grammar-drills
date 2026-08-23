@@ -3,8 +3,10 @@ import { compileFold, type Fold } from "./fold.js";
 import { familyLabel, familyOf, type FamilyId } from "./families.js";
 import type { Family, Profile } from "./pack.js";
 import type {
+  ArticleLookup,
   ContentData,
   Crosswalk,
+  DictionaryArticle,
   GrammarSection,
   LemmaEntry,
   Question,
@@ -223,5 +225,55 @@ export class Content {
   lookup(form: string): LemmaEntry[] {
     if (this.data.lemmaLookup) return this.data.lemmaLookup.lookup(form);
     return this.data.lemmas ? lookupForm(this.data.lemmas, form, this.fold) : [];
+  }
+
+  /** The further dictionaries this pack declares, in the order it declares them. */
+  dictionaryIds(): string[] {
+    return (this.profile.dictionaries ?? []).map((d) => d.id);
+  }
+
+  /** A further dictionary, once something has fetched it. */
+  hasArticles(dictionaryId: string): boolean {
+    return this.data.articles?.[dictionaryId] !== undefined;
+  }
+
+  /** Late-bind a dictionary fetched after boot. Ignores one already held. */
+  addArticles(dictionaryId: string, lookup: ArticleLookup): void {
+    this.data.articles ??= {};
+    this.data.articles[dictionaryId] ??= lookup;
+  }
+
+  /**
+   * What a further dictionary has to say about an inflected form.
+   *
+   * Two steps, because a lexicon is indexed by headword and a student is
+   * looking at a word in a sentence. The pack's own dictionary resolves the
+   * form to its lemmas — that is the one thing it is best in the world at —
+   * and the lemma is what the further book is asked about.
+   *
+   * The form itself is tried too, and last. It is what answers for an
+   * indeclinable, and for a word the pack's dictionary happens to miss but the
+   * lexicon lists; putting it after the lemmas keeps the resolved reading in
+   * front where there is one.
+   *
+   * Ordered, de-duplicated, and empty rather than absent when the dictionary
+   * has not been fetched — a sheet that has nothing to show should say so, and
+   * never blame the student's spelling for a download.
+   */
+  articlesFor(form: string, dictionaryId: string): DictionaryArticle[] {
+    const book = this.data.articles?.[dictionaryId];
+    if (!book) return [];
+    const out: DictionaryArticle[] = [];
+    const seen = new Set<DictionaryArticle>();
+    const take = (key: string) => {
+      for (const article of book.lookup(key)) {
+        if (seen.has(article)) continue;
+        seen.add(article);
+        out.push(article);
+      }
+    };
+    for (const entry of this.lookup(form)) take(entry.lemma);
+    take(form);
+    return out;
   }
 }

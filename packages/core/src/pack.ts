@@ -102,6 +102,62 @@ export interface SecondaryGrammar {
   };
 }
 
+/**
+ * A further dictionary of the same language, beside the one the pack builds.
+ *
+ * The pack's own `lemmas.json.gz` answers "what is this word" in one line, and
+ * is bound to attestation: what it holds is what the pack may ship. A further
+ * dictionary answers a different question — what a word *means*, divided into
+ * senses, with the constructions and the citations a real lexicon prints — and
+ * is bound to nothing. It is reference material a student can read, never
+ * evidence about the pack, which is why nothing that gates it may reach
+ * `scripts/lib/reference.mjs`.
+ *
+ * Declared like `SecondaryGrammar` and for the same reason: so a book is gated
+ * from the day it is parsed rather than from the day it is displayed.
+ */
+export interface SecondaryDictionary {
+  /** Short id, used in filenames and as the book's key, e.g. "lewis-short". */
+  id: string;
+  /** Human name, for reports and for the sheet: "Lewis & Short". */
+  label: string;
+  /** Where its articles live, relative to `content/`. */
+  content: string;
+  /** Where its sorted headword index lives, relative to `content/`. */
+  index: string;
+  /** Where its entry-accounting manifest lives, relative to `content/`. */
+  manifest: string;
+  source: GrammarStyle["source"];
+  /**
+   * How many articles this book has, so a truncated parse cannot ship quietly.
+   *
+   * Only a count, deliberately — no length distribution. `grammarShape` bands
+   * topic lengths because a grammar parser is *guessing* a book's divisions out
+   * of its prose and can silently take half a topic; a walk over explicit
+   * `<entryFree>` elements cannot. And a lexicon's lengths are not bandable
+   * anyway: L&S runs from a ten-character cross-reference to the thirty-thousand
+   * of `sum`, so any band wide enough to be true is too wide to catch anything.
+   */
+  shape: {
+    minEntries: number;
+    maxEntries: number;
+  };
+  /**
+   * How much of the pack's own vocabulary this book answers for.
+   *
+   * Gated on a *band* rather than on the whole ranked list, on purpose. A
+   * lexicon and a frequency list disagree most about rare words — one files a
+   * spelling the other does not — so the figure over everything is dominated by
+   * words no student meets, and gating it would gate noise. `band` is how far
+   * down the ranks the gate looks; the whole-list figures are reported beside
+   * it and gate nothing.
+   */
+  reach: {
+    band: number;
+    headwordsMatchedPct: number;
+  };
+}
+
 export interface Profile {
   schema: 1;
   /** Pack directory name; namespaces storage and caches. */
@@ -153,6 +209,12 @@ export interface Profile {
    * which is every pack today — so saying nothing keeps the old shape valid.
    */
   grammars?: SecondaryGrammar[];
+  /**
+   * Further dictionaries beside the one the pack builds. Absent where a pack
+   * ships only its own, which is the shape every pack had before there were
+   * two — so saying nothing stays valid.
+   */
+  dictionaries?: SecondaryDictionary[];
   questions: {
     defaultKind: string;
     /** Kinds whose prompt is L1 and whose answer is L2: alignable, and drilled. */
@@ -429,6 +491,33 @@ function parseSecondaryGrammars(raw: unknown, primaryPrefix: string): SecondaryG
   });
 }
 
+function parseDictionaries(raw: unknown): SecondaryDictionary[] {
+  const seen = new Set<string>();
+  return array(raw, "profile.dictionaries").map((d, i) => {
+    const path = `profile.dictionaries[${i}]`;
+    const entry = fields<SecondaryDictionary>(d, path, {
+      id: "string", label: "string", content: "string", index: "string",
+      manifest: "string", source: "any", shape: "any", reach: "any",
+    });
+    fields(entry.source, `${path}.source`, {
+      title: "string", url: "string", licence: "string",
+    });
+    fields(entry.reach, `${path}.reach`, {
+      band: "number", headwordsMatchedPct: "number",
+    });
+    const shape = fields<SecondaryDictionary["shape"]>(entry.shape, `${path}.shape`, {
+      minEntries: "number", maxEntries: "number",
+    });
+    // Two books under one id write over each other's files, and the second
+    // wins silently — having been built from the first one's source.
+    if (seen.has(entry.id)) {
+      throw new PackError(`${path}.id: "${entry.id}" is already used by another dictionary`);
+    }
+    seen.add(entry.id);
+    return { ...entry, shape };
+  });
+}
+
 /** Parse and validate a raw profile. Throws `PackError` naming the offending path. */
 export function parseProfile(raw: unknown): Profile {
   const top = object(raw, "profile");
@@ -437,7 +526,7 @@ export function parseProfile(raw: unknown): Profile {
     "questions", "citationsVersion", "ui", "storage", "grammarShape", "coverage",
   ];
   /** Present or absent; a pack that predates them stays valid. */
-  const optional = ["enclitics", "paradigms", "attestation", "grammars"];
+  const optional = ["enclitics", "paradigms", "attestation", "grammars", "dictionaries"];
   const allowed = [...required, ...optional];
   for (const key of Object.keys(top)) {
     if (!allowed.includes(key)) throw new PackError(`profile.${key}: unknown key`);
@@ -529,6 +618,9 @@ export function parseProfile(raw: unknown): Profile {
   }
   if (top.grammars !== undefined) {
     profile.grammars = parseSecondaryGrammars(top.grammars, grammar.idPrefix);
+  }
+  if (top.dictionaries !== undefined) {
+    profile.dictionaries = parseDictionaries(top.dictionaries);
   }
   oneOf(profile.l2.direction, "profile.l2.direction", ["ltr", "rtl"] as const);
   return profile;
