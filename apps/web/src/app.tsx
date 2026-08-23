@@ -276,8 +276,7 @@ export function App({ content, session, storage }: Props) {
    * decision about this sitting.
    */
   const [mode, setMode] = useState<Mode>(() => {
-    const { dueTopics, dueVocab } = session.stats();
-    return dueTopics + dueVocab > 0 ? "review" : "explore";
+    return session.stats().due > 0 ? "review" : "explore";
   });
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
@@ -546,7 +545,7 @@ export function App({ content, session, storage }: Props) {
   const families = useMemo(() => session.familyProgress(), [session, tick]);
   const starred = useMemo(() => session.starredTopics(), [session, tick]);
   const stats = useMemo(() => session.stats(), [session, tick]);
-  const dueNow = stats.dueTopics + stats.dueVocab;
+  const dueNow = stats.due;
   // The words behind the question on screen. `dictLoading` is a dependency on
   // purpose: everything looked up before the fetch landed resolved to nothing,
   // and those rows must not be the ones kept.
@@ -921,10 +920,9 @@ export function App({ content, session, storage }: Props) {
        * the default is the thing being removed.
        */
       const landed = session.landedRound();
-      const { dueTopics, dueVocab } = session.stats();
       // Asked after the grade, so the topic just rescheduled is not counted:
       // even `again` goes to a learning step of minutes, which is not due now.
-      const cleared = mode === "review" && dueTopics + dueVocab === 0;
+      const cleared = mode === "review" && session.stats().due === 0;
       // Whoever the round met, wherever in it they were met — a first meeting
       // on question two is still the news when the round lands on question four.
       const author = landed?.met[0] ?? met;
@@ -973,8 +971,7 @@ export function App({ content, session, storage }: Props) {
     // A word has no round behind it, so there is nothing to land on — unless
     // this was the last thing waiting, which is a moment whichever kind of card
     // ended it. No burst: see `grade`.
-    const { dueTopics, dueVocab } = session.stats();
-    if (mode === "review" && dueTopics + dueVocab === 0) {
+    if (mode === "review" && session.stats().due === 0) {
       setPhase({ t: "landed", cleared: true });
       setSectionId(null);
       setTest(null);

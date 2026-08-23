@@ -1562,19 +1562,34 @@ export class Session {
     return limit === undefined ? out : out.slice(0, limit);
   }
 
-  /** Counts for a status line. */
+  /**
+   * Counts for a status line.
+   *
+   * `due` is the pile itself, and it is here rather than left to callers to add
+   * up. Every screen that asks "is anything waiting" was answering it by naming
+   * the kinds of card it happened to know about — `dueTopics + dueVocab` — so
+   * the day a third kind arrived, each of them went on saying the pile was
+   * clear over a card that was due, in six places across two apps. A total the
+   * engine works out cannot fall behind the engine.
+   */
   stats(now: Date = new Date()): {
     dueTopics: number;
     dueVocab: number;
     dueSentences: number;
+    /** Everything due, whatever kind of card it is. */
+    due: number;
     topics: number;
     vocab: number;
     sentences: number;
   } {
+    const dueTopics = dueAmong(this.topicCardList(), now).length;
+    const dueVocab = dueAmong(this.vocabCardList(), now).length;
+    const dueSentences = dueAmong(this.sentenceCardList(), now).length;
     return {
-      dueTopics: dueAmong(this.topicCardList(), now).length,
-      dueVocab: dueAmong(this.vocabCardList(), now).length,
-      dueSentences: dueAmong(this.sentenceCardList(), now).length,
+      dueTopics,
+      dueVocab,
+      dueSentences,
+      due: dueTopics + dueVocab + dueSentences,
       topics: Object.keys(this.p.topicCards).length,
       vocab: Object.keys(this.p.vocabCards).length,
       sentences: Object.keys(this.p.sentenceCards).length,

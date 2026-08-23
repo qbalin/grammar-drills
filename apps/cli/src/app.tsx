@@ -162,8 +162,7 @@ export function App({ session, content, storage }: Props) {
    * launch opens on them whenever there are any.
    */
   const [mode, setMode] = useState<Mode>(() => {
-    const { dueTopics, dueVocab } = session.stats();
-    return dueTopics + dueVocab > 0 ? "review" : "explore";
+    return session.stats().due > 0 ? "review" : "explore";
   });
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
@@ -1250,7 +1249,7 @@ export function App({ session, content, storage }: Props) {
   });
 
   const stats = useMemo(() => session.stats(), [tick, session]);
-  const dueNow = stats.dueTopics + stats.dueVocab;
+  const dueNow = stats.due;
   // The run of practice under way, and nothing at all when a review is on
   // screen — the line above already names the topic.
   const focusLabel = useMemo(() => {
@@ -1603,7 +1602,7 @@ function StatusBar({
   focus,
 }: {
   appName: string;
-  stats: { dueTopics: number; dueVocab: number; topics: number; vocab: number };
+  stats: ReturnType<Session["stats"]>;
   section: string;
   /** What is on screen and why: `review`, `new`, `drill`, `vocab`. */
   mode?: string | null;
