@@ -960,6 +960,25 @@ span.status__title {
   white-space: nowrap;
 }
 
+/*
+ * A link in this row that is one press from doing something.
+ *
+ * `.btn--danger` fills itself with the red because it is a button among
+ * buttons; this is a link among links, and a filled pill in the middle of the
+ * row would look like a different kind of control rather than the same one
+ * armed. So it takes the red as ink and the weight `.btn--danger` also takes,
+ * which is the whole of the difference and is enough — the row it stands in is
+ * `var(--text-dim)` throughout.
+ *
+ * `--red` on `--ink` is a pair `contrast.test.ts` already holds to AA in both
+ * themes, and the review errand's palette remap leaves `--red` alone, so this
+ * stays legible on the one screen it ever appears on.
+ */
+.linkrow__armed {
+  color: var(--red);
+  font-weight: 600;
+}
+
 /* --- the grade bar -------------------------------------------------------- */
 
 .grades {

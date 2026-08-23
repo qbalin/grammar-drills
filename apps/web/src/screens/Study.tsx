@@ -328,9 +328,21 @@ export function Graded({
          * on a row of five. It used to repeat the whole phrase — the longest
          * label in the app, and the last on the line — which is what made the
          * row look broken on a phone.
+         *
+         * And it wears the danger colour, which every other two-step in the app
+         * already does — the topic sheet's own version of this button, deleting
+         * a word, erasing the device. A shorter label alone made the row read
+         * better without making the press read louder: it was still dim ink in
+         * a row of dim ink, directly above the four grade buttons a thumb is
+         * already heading for. `aria-pressed` says the same thing to a reader
+         * who cannot see it, as `✱ mark` above already does.
          */}
         {onDismiss && (
-          <button onClick={onDismiss}>
+          <button
+            className={dismissing ? "linkrow__armed" : undefined}
+            aria-pressed={dismissing}
+            onClick={onDismiss}
+          >
             {dismissing ? "⊘ confirm" : "⊘ stop reviewing this"}
           </button>
         )}

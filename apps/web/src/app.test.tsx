@@ -3603,9 +3603,13 @@ describe("the one way onto a topic", () => {
       // Armed, and nothing done: a deletion behind one tap beside four grade
       // buttons is a deletion given by mistake.
       expect(s.progress().topicCards.decl1).toBeDefined();
-      expect(
-        screen.getByRole("button", { name: /⊘ confirm/ }),
-      ).toBeDefined();
+      const armed = screen.getByRole("button", { name: /⊘ confirm/ });
+      expect(armed).toBeDefined();
+      // And it says so in more than words. It stands in a row of five links all
+      // drawn the same, where a changed label alone is the one thing a thumb on
+      // its way to a grade button will not read.
+      expect(armed.className).toContain("linkrow__armed");
+      expect(armed.getAttribute("aria-pressed")).toBe("true");
 
       await user.click(screen.getByRole("button", { name: /⊘ confirm/ }));
       expect(s.progress().topicCards.decl1).toBeUndefined();
