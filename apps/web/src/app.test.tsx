@@ -74,6 +74,12 @@ vi.mock("./content-loader.js", async () => {
     prefetchGrammarBooks: vi.fn(async () => {
       if (!books.available) throw new Error("offline");
     }),
+    // The further dictionaries. The fixture pack declares none, so the app's
+    // own guard returns before either of these does anything — they are here
+    // because a mocked module replaces the whole of it, and a missing export is
+    // a crash rather than a default.
+    loadDictionaries: vi.fn(async () => {}),
+    dictionariesReady: () => true,
   };
 });
 

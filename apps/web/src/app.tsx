@@ -21,7 +21,9 @@ import {
   type VocabWord,
 } from "@lang-tutor/core";
 import {
+  dictionariesReady,
   dictionaryReady,
+  loadDictionaries,
   loadDictionary,
   loadGrammarBook,
   loadParadigms,
@@ -364,6 +366,9 @@ export function App({ content, session, storage }: Props) {
   // describe that state as a failure.
   const [booksReady, setBooksReady] = useState(false);
   const [booksLoading, setBooksLoading] = useState(false);
+  // The further dictionaries, tracked apart from the books because they arrive
+  // after them and Settings describes the wait as one thing.
+  const [lexicaLoading, setLexicaLoading] = useState(false);
   // What the browser says about the space this app is holding, for the panel in
   // Settings. Read when that sheet opens rather than kept live: it is a figure
   // to look at when you go looking, and asking on every render would be a
@@ -1239,6 +1244,32 @@ export function App({ content, session, storage }: Props) {
   }, [booksReady]);
 
   /**
+   * Fetch the pack's further dictionaries if this device has not got them.
+   *
+   * Quiet on failure like the books, and for a stronger reason: a missing
+   * lexicon costs a student nothing they can see. The sheet still shows the
+   * citation, the gloss and the paradigm, and the article is what it would have
+   * had *besides* those — so the honest thing is to show the sheet without it
+   * rather than to raise a toast about a book nobody asked for.
+   */
+  const ensureLexica = useCallback(async (): Promise<void> => {
+    if (dictionariesReady()) return;
+    setLexicaLoading(true);
+    try {
+      await loadDictionaries(content);
+      bump();
+    } catch {
+      // Nothing to say. See above.
+    } finally {
+      setLexicaLoading(false);
+    }
+    // `bump` is left out for the reason `ensureDictionary` leaves it out: it is
+    // rebuilt every render, and naming it here would rebuild this, and so the
+    // prefetch effect below, every render too — which fetches the dictionary
+    // again on each one. All it does is set a counter.
+  }, [content]);
+
+  /**
    * Fetch everything this device has not got, as soon as it is up.
    *
    * The dictionary and the paradigms used to be fetched by the gesture that
@@ -1278,8 +1309,12 @@ export function App({ content, session, storage }: Props) {
       if (!got) return;
       await ensureParadigms();
       await ensureBooks();
+      // Last, and deliberately: Lewis & Short is larger than everything above
+      // it put together, and it is the only one of them a student can do
+      // without — every other gesture already has what it needs by here.
+      await ensureLexica();
     });
-  }, [ensureDictionary, ensureParadigms, ensureBooks]);
+  }, [ensureDictionary, ensureParadigms, ensureBooks, ensureLexica]);
 
   useEffect(() => {
     prefetchContent();
@@ -2626,6 +2661,15 @@ export function App({ content, session, storage }: Props) {
           entry={overlay.entry}
           others={overlay.others}
           forms={paradigms?.formsFor(overlay.entry.lemma, overlay.entry.pos)}
+          // Asked per dictionary rather than merged, so each keeps its own name
+          // and its own attribution — two lexica disagreeing about a word is
+          // the reason to ship a second one, and a merged list would hide it.
+          lexica={(profile.dictionaries ?? []).map((d) => ({
+            id: d.id,
+            label: d.label,
+            licence: d.source.licence,
+            articles: content.articlesFor(overlay.form, d.id),
+          }))}
           loading={paradigmsLoading}
           failed={paradigmsFailed}
           onRetry={ensureParadigms}
@@ -2701,7 +2745,7 @@ export function App({ content, session, storage }: Props) {
           // student is told so while any of them is still coming.
           offlineReady={dictionaryReady() && paradigms !== undefined && booksReady}
           dictionaryFailed={dictFailed}
-          caching={dictLoading || paradigmsLoading || booksLoading}
+          caching={dictLoading || paradigmsLoading || booksLoading || lexicaLoading}
           onCacheDictionary={cacheContent}
           space={space}
           onPersist={askPersistence}

@@ -70,6 +70,10 @@ const ASSETS = [
   "lemmas.json.gz",
   "forms.txt.gz",
   "paradigms.txt.gz",
+  ...(profile.dictionaries ?? []).flatMap((d) => [
+    `dict-${d.id}.json.gz`,
+    `dict-${d.id}-forms.txt.gz`,
+  ]),
 ];
 
 /** gzip at the highest level — these are written once and shipped forever. */
@@ -134,6 +138,55 @@ function buildSecondaryGrammars() {
       process.exit(1);
     }
     writeGz("crosswalk.json.gz", readFileSync(path, "utf8"));
+  }
+}
+
+/**
+ * A pack's further dictionaries, two files apiece, copied through as built.
+ *
+ * Flattened out of `content/dictionaries/` into `dict-<id>.*` at the top of the
+ * output, the same way a further grammar's `grammars/lane.json` becomes
+ * `grammar-lane.json.gz`. Two reasons, and both bite: `writeGz` does not create
+ * directories, and the service worker's runtime-cache pattern matches a single
+ * path segment, so a file one directory down would be fetched on every launch
+ * and cached on none.
+ *
+ * Copied byte-for-byte rather than repacked. `build-dictionary.mjs` already
+ * gzipped these at level 9 and asserted the two invariants the reader depends
+ * on; re-gzipping here would only be a second chance to get them wrong.
+ */
+function buildDictionaries() {
+  const want = new Set();
+  for (const d of profile.dictionaries ?? []) {
+    for (const [from, to] of [
+      [d.content, `dict-${d.id}.json.gz`],
+      [d.index, `dict-${d.id}-forms.txt.gz`],
+    ]) {
+      const path = join(contentDir, from);
+      if (!existsSync(path)) {
+        console.error(
+          `\n${path} is missing — run the pack's parser and then ` +
+            `scripts/build-dictionary.mjs --pack ${packDir}.`,
+        );
+        process.exit(1);
+      }
+      const gz = readFileSync(path);
+      writeFileSync(join(outDir, to), gz);
+      want.add(to);
+      console.log(`  ${to.padEnd(30)} ${(gz.length / 1024).toFixed(0)} KB`);
+    }
+  }
+  /*
+   * And sweep any other pack's. `outDir` is reused between languages — the
+   * deploy builds each one into the same tree in turn — so a `dict-` file this
+   * pack does not declare is the last pack's, and leaving it would ship Lewis &
+   * Short inside the Greek build for a student to open and find Latin in.
+   */
+  for (const name of readdirSync(outDir)) {
+    if (name.startsWith("dict-") && !want.has(name)) {
+      rmSync(join(outDir, name));
+      console.log(`  ${name.padEnd(30)} removed — not this pack's`);
+    }
   }
 }
 
@@ -263,6 +316,7 @@ buildSecondaryGrammars();
 const tests = buildTests();
 const lemmas = buildLemmas();
 const paradigms = buildParadigms();
+buildDictionaries();
 console.log(
   `\n${grammar.length} sections · ${tests.tests} tests over ${tests.sections} topics · ` +
     `${lemmas.lemmas} lemmas over ${lemmas.forms} forms` +

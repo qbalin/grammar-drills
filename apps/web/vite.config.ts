@@ -65,8 +65,18 @@ const bookFiles = (profile.grammars ?? []).length
   : [];
 
 /**
+ * The further dictionaries, two files apiece. Empty for a pack that declares
+ * none, which is how Greek gets no mention of Lewis & Short anywhere.
+ */
+const dictFiles = (profile.dictionaries ?? []).flatMap((d: { id: string }) => [
+  `dict-${d.id}.json.gz`,
+  `dict-${d.id}-forms.txt.gz`,
+]);
+
+/**
  * Everything a device ends up holding, which is now everything shipped — the
- * further books included, since they are fetched at launch like the rest.
+ * further books and dictionaries included, since they are fetched at launch
+ * like the rest.
  */
 const offlineBytes = contentBytes([
   "grammar.json.gz",
@@ -75,6 +85,7 @@ const offlineBytes = contentBytes([
   "forms.txt.gz",
   "paradigms.txt.gz",
   ...bookFiles,
+  ...dictFiles,
 ]);
 
 /**
@@ -91,6 +102,7 @@ const fetchedBytes = contentBytes([
   "forms.txt.gz",
   "paradigms.txt.gz",
   ...bookFiles,
+  ...dictFiles,
 ]);
 
 export default defineConfig({
@@ -166,18 +178,24 @@ export default defineConfig({
             // and so never on the device at all. `grammar-` cannot catch the
             // primary `grammar.json.gz`, which the precache holds — there is no
             // hyphen in it.
+            //
+            // The further dictionaries likewise, under `dict-`. Both of their
+            // files match one alternative: the articles end `.json.gz` and the
+            // index ends `.txt.gz`, so the extension is left to the tail rather
+            // than named twice.
             urlPattern:
-              /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt|grammar-[^/?]+\.json|crosswalk\.json)\.gz(\?|$)/,
+              /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt|grammar-[^/?]+\.json|crosswalk\.json|dict-[^/?]+\.(json|txt))\.gz(\?|$)/,
             handler: "CacheFirst",
             options: {
               cacheName: profile.storage.dictionaryCacheName,
               // Room for a couple of rebuilds' worth of whatever this pack has
-              // before the oldest is evicted — three files plus its books, so a
-              // pack that grows a second book grows this rather than quietly
-              // holding fewer versions. `maxAgeSeconds` is a backstop for a
-              // device that somehow holds a version nothing asks for again.
+              // before the oldest is evicted — three files plus its books and
+              // its dictionaries, so a pack that grows another of either grows
+              // this rather than quietly holding fewer versions.
+              // `maxAgeSeconds` is a backstop for a device that somehow holds a
+              // version nothing asks for again.
               expiration: {
-                maxEntries: (3 + bookFiles.length) * 4,
+                maxEntries: (3 + bookFiles.length + dictFiles.length) * 4,
                 maxAgeSeconds: 60 * 60 * 24 * 60,
               },
               cacheableResponse: { statuses: [0, 200] },

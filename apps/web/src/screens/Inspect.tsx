@@ -1,6 +1,81 @@
-import { buildParadigm, type LemmaEntry, type TaggedForm } from "@lang-tutor/core";
+import {
+  buildParadigm,
+  decodeRuns,
+  type DictionaryArticle,
+  type LemmaEntry,
+  type Run,
+  type TaggedForm,
+} from "@lang-tutor/core";
 import { profile } from "../pack.js";
 import { CopyButton, Sheet, Spinner, TableBox, l2Attrs } from "../ui.js";
+
+/** One line of a further dictionary, with the emphasis its book set. */
+function Marked({ text }: { text: string }) {
+  return (
+    <>
+      {decodeRuns(text).map((run: Run, i) => {
+        if (run.b) return <b key={i}>{run.text}</b>;
+        if (run.i) return <i key={i}>{run.text}</i>;
+        return <span key={i}>{run.text}</span>;
+      })}
+    </>
+  );
+}
+
+/**
+ * What a further dictionary says about this word.
+ *
+ * Rendered from the senses the source itself divided, rather than by running
+ * the text past `parseBlocks`. That classifier is calibrated on the pack's
+ * grammar — it reads a lowercase `a.` as a sub-point and knows nothing of
+ * `A.` or `(b)` — and a lexicon that uses all three would come out flat, with
+ * three of its five levels collapsed into the prose. The levels are in the
+ * article because the book stated them; the only work left here is to indent.
+ *
+ * Below the paradigm, and collapsed: the sheet is opened to find out what a
+ * word *is*, and `fero` runs to five hundred lines of Cicero. Whoever wants
+ * them can open them.
+ */
+function ArticleBlock({
+  label,
+  licence,
+  articles,
+}: {
+  label: string;
+  licence: string;
+  articles: DictionaryArticle[];
+}) {
+  return (
+    <details className="inspect__lexicon">
+      <summary className="gr-h">{label}</summary>
+      {articles.map((article, i) => (
+        <div key={i}>
+          <p className="gr-p">
+            <b {...l2Attrs}>{article.headword}</b>
+            {article.homograph !== undefined && <sup>{article.homograph}</sup>}{" "}
+            <Marked text={article.head} />
+          </p>
+          {article.senses.map((sense, j) => (
+            // Indented by the level the book set, and capped: past the fourth
+            // the indent costs more width than the structure is worth on a
+            // phone, and the marker still says where you are.
+            <p
+              className="gr-p"
+              key={j}
+              style={{ marginInlineStart: `${Math.min(sense.level, 4) - 1}rem` }}
+            >
+              {sense.n && <b>{sense.n}. </b>}
+              <Marked text={sense.text} />
+            </p>
+          ))}
+        </div>
+      ))}
+      {/* Shown rather than filed in the profile: CC BY-SA asks for attribution
+          where the work is read, and this is where it is read. */}
+      <p className="field__hint">{licence}</p>
+    </details>
+  );
+}
 
 /**
  * What a word is, when you ask it directly.
@@ -19,6 +94,7 @@ export function InspectSheet({
   entry,
   others,
   forms,
+  lexica,
   loading,
   failed,
   onRetry,
@@ -33,6 +109,12 @@ export function InspectSheet({
   others: LemmaEntry[];
   /** This entry's tagged forms, or undefined until they arrive. */
   forms?: TaggedForm[];
+  /**
+   * What each further dictionary has on this word, by dictionary id. Empty
+   * until they are fetched, which is the last thing the app fetches — so the
+   * sheet is complete without them and gains them quietly.
+   */
+  lexica?: { id: string; label: string; licence: string; articles: DictionaryArticle[] }[];
   loading: boolean;
   /** The tables could not be fetched. Not the same as a word without any. */
   failed: boolean;
@@ -157,6 +239,20 @@ export function InspectSheet({
             : "No tables are built for this part of speech."}
         </p>
       )}
+
+      {/* A dictionary with nothing on this word is not mentioned at all. The
+          sheet already answered the question; an empty "Lewis & Short" heading
+          would only look like something had failed. */}
+      {(lexica ?? [])
+        .filter((book) => book.articles.length > 0)
+        .map((book) => (
+          <ArticleBlock
+            key={book.id}
+            label={book.label}
+            licence={book.licence}
+            articles={book.articles}
+          />
+        ))}
     </Sheet>
   );
 }

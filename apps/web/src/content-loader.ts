@@ -1,12 +1,14 @@
 import {
+  ArticleIndex,
   Content,
   type Crosswalk,
+  type DictionaryArticle,
   type GrammarSection,
   type LemmaEntry,
   type Test,
 } from "@lang-tutor/core";
 import { LemmaIndex } from "./lemma-index.js";
-import { profile } from "./pack.js";
+import { fold, profile } from "./pack.js";
 import { ParadigmIndex } from "./paradigm-index.js";
 
 /**
@@ -230,4 +232,45 @@ export function loadParadigms(): Promise<ParadigmIndex> {
 /** True once the dictionary is in memory, so the UI can skip its spinner. */
 export function dictionaryReady(): boolean {
   return loaded !== undefined;
+}
+
+const books = new Map<string, ArticleIndex>();
+let booksPending: Promise<void> | undefined;
+
+/**
+ * Fetch the pack's further dictionaries, at most once per page.
+ *
+ * Last of everything, and by a wide margin the largest: Lewis & Short is 11 MB
+ * against the pack's own 4.5. It is asked for after the paradigms for the same
+ * reason the paradigms come after the dictionary — the file one gesture wants
+ * must not queue in front of the file every gesture wants.
+ *
+ * Handed to `Content` as each arrives rather than all at the end, so a pack
+ * that ships two does not make the first wait on the second.
+ */
+export function loadDictionaries(content: Content): Promise<void> {
+  const want = (profile.dictionaries ?? []).filter((d) => !books.has(d.id));
+  if (!want.length) return Promise.resolve();
+  booksPending ??= (async () => {
+    await Promise.all(
+      want.map(async (d) => {
+        const [articles, index] = await Promise.all([
+          fetchJson<DictionaryArticle[]>(`dict-${d.id}.json.gz`),
+          fetchGzipped(`dict-${d.id}-forms.txt.gz`),
+        ]);
+        const book = new ArticleIndex(articles, index, fold);
+        books.set(d.id, book);
+        content.addArticles(d.id, book);
+      }),
+    );
+  })().catch((err) => {
+    booksPending = undefined; // as with the dictionary: one bad fetch, not a dead feature
+    throw err;
+  });
+  return booksPending;
+}
+
+/** True once every declared dictionary is in memory. */
+export function dictionariesReady(): boolean {
+  return (profile.dictionaries ?? []).every((d) => books.has(d.id));
 }
