@@ -66,6 +66,8 @@ export function SettingsSheet({
   onQuotedOnly,
   quotedFirst,
   onQuotedFirst,
+  questionsPerRound,
+  onQuestionsPerRound,
   onReset,
   onClose,
 }: {
@@ -98,6 +100,9 @@ export function SettingsSheet({
   /** Whether a topic's quoted questions all come before its written ones. */
   quotedFirst: boolean;
   onQuotedFirst: () => void;
+  /** How many questions a round is for; 0 for however many the test holds. */
+  questionsPerRound: number;
+  onQuestionsPerRound: (n: number) => void;
   onReset: () => void;
   onClose: () => void;
 }) {
@@ -180,6 +185,37 @@ export function SettingsSheet({
         {quotedOnly
           ? "Nothing but attested classical quotes is being served, so there is no order to choose. Turn the setting above off to use this one."
           : "When ticked, first serve attested classical quotes, and then the AI generated ones, and repeat in a loop when all questions have been seen. When unticked, serve AI generated questions and attested classical quotes in random order."}
+      </p>
+
+      <div className="section-title">How much at a time</div>
+      {/*
+       * A row of choices rather than a number field or a dropdown. There is no
+       * `<select>` anywhere in this app and this is not the place to introduce
+       * one: the whole set is four items wide, and a choice you can see all of
+       * is a choice you can make with a thumb.
+       */}
+      <div className="lengths" role="group" aria-label="Questions per round">
+        {[1, 2, 3, 0].map((n) => (
+          <button
+            key={n}
+            className="lengths__pick"
+            aria-pressed={questionsPerRound === n}
+            onClick={() => onQuestionsPerRound(n)}
+          >
+            {n === 0 ? "All" : n}
+          </button>
+        ))}
+      </div>
+      <p className="field__hint">
+        {questionsPerRound === 0
+          ? `A round is the whole test — three or four sentences on one topic,
+             which is how they were written. However many it holds, the round
+             costs the topic one review rather than one per question.`
+          : `A round stops after ${questionsPerRound}
+             ${questionsPerRound === 1 ? "sentence" : "sentences"}, out of the
+             three or four the test holds. Nothing is lost by it: the ones a
+             short round did not reach are the ones it hands over when the test
+             comes round again.`}
       </p>
 
       <div className="section-title">Your progress</div>

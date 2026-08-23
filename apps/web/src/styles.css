@@ -1454,6 +1454,38 @@ span.status__title {
   opacity: 0.45;
 }
 
+/*
+ * How many questions a round is for.
+ *
+ * The same band as the mode switch and the book picker, because it is the same
+ * kind of thing: a small closed set, all of it on screen, one of them on. It
+ * stretches to the sheet's width rather than sitting in the middle of it —
+ * settings are read down a column of labels and hints, and a pill centred in
+ * that column would read as a badge rather than as a choice to make.
+ */
+.lengths {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--ink-sunken);
+  margin: 0.2rem 0;
+}
+
+.lengths__pick {
+  flex: 1;
+  min-height: var(--tap);
+  padding: 0.35rem 0.5rem;
+  color: var(--text-faint);
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.lengths__pick[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--gold) 16%, transparent);
+  color: var(--gold);
+}
+
 /* The other books' sections, under the actions on a topic sheet. */
 .elsewhere {
   padding: 0.4rem 1.1rem 0;

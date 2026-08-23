@@ -488,8 +488,10 @@ export function App({ session, content, storage }: Props) {
       });
     }
     if (!sectionId) return;
-    // The test's id names the round, so its four questions cost the topic one
-    // review rather than four — graded by the worst of them.
+    // The test's id names the round, so all its questions cost the topic one
+    // review rather than one apiece — graded by the worst of them, and however
+    // many of them the round was asked to be for. The terminal never opens a
+    // round of its own; `gradeTopic` opens one lazily off this id.
     session.gradeTopic(sectionId, rating, new Date(), test?.id);
     save();
     setTick((n) => n + 1);

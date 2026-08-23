@@ -888,8 +888,9 @@ export function App({ content, session, storage }: Props) {
       });
     }
     if (!sectionId || !question) return;
-    // The test's id names the round, so its four questions cost the topic one
-    // review rather than four — graded by the worst of them.
+    // The test's id names the round, so all its questions cost the topic one
+    // review rather than one apiece — graded by the worst of them, and however
+    // many of them the round was asked to be for.
     session.gradeTopic(sectionId, rating, new Date(), test?.id);
     save();
     if (test && qIndex + 1 < test.questions.length) {
@@ -1752,6 +1753,22 @@ export function App({ content, session, storage }: Props) {
 
   const toggleQuotedFirst = () => {
     session.setQuotedFirst(!session.quotedFirst());
+    save();
+    bump();
+  };
+
+  /*
+   * How many questions a round is for. Not a toggle, so it takes the value
+   * rather than flipping one — 0 is "however many the test holds", which is
+   * what the setting reads as when nobody has touched it.
+   *
+   * A round in flight keeps the length it opened with: the window is written on
+   * the round, and this only decides the next one. Changing the setting on
+   * question two of four and watching the round end at question two would be
+   * the app moving a finish line the student was already running at.
+   */
+  const setRoundLength = (n: number) => {
+    session.setQuestionsPerRound(n);
     save();
     bump();
   };
@@ -2759,6 +2776,8 @@ export function App({ content, session, storage }: Props) {
           onQuotedOnly={toggleQuotedOnly}
           quotedFirst={session.quotedFirst()}
           onQuotedFirst={toggleQuotedFirst}
+          questionsPerRound={session.questionsPerRound()}
+          onQuestionsPerRound={setRoundLength}
           onReset={() => {
             storage.clearLocal();
             // Erasing and then reloading is two steps, and the draft kept on

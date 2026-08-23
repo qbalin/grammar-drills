@@ -2439,6 +2439,89 @@ describe("the vocabulary list", () => {
   });
 });
 
+/**
+ * How much arrives at a sitting.
+ *
+ * Four sentences on one topic is a real reason to put the phone down, and the
+ * choice a student was being offered was four or none. The cap only ever takes
+ * questions out — a round is still one test, still one review of the topic.
+ */
+describe("how many questions a round is for", () => {
+  const openSettings = async (user: ReturnType<typeof userEvent.setup>) => {
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+  };
+
+  /** The length picker's buttons, by the label each one wears. */
+  const lengths = () =>
+    Array.from(document.querySelectorAll<HTMLButtonElement>(".lengths__pick"));
+
+  it("is the whole test until somebody says otherwise", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 1/2`);
+
+    await openSettings(user);
+    expect(session.progress().questionsPerRound).toBeUndefined();
+    // Absent on disk *and* shown as the choice in force, which is the pair a
+    // default has to keep: a file that never touched this must read exactly as
+    // it did before the setting existed.
+    expect(lengths().find((b) => b.textContent === "All")?.ariaPressed).toBe("true");
+  });
+
+  it("is written down, and leaves the round in flight where it was", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await openSettings(user);
+    await user.click(lengths().find((b) => b.textContent === "1")!);
+    expect(session.progress().questionsPerRound).toBe(1);
+    expect(lengths().find((b) => b.textContent === "1")?.ariaPressed).toBe("true");
+    await user.click(screen.getByRole("button", { name: "Close" }));
+
+    // The round already on the table keeps the length it opened with. Moving a
+    // finish line somebody is running at is not what a preference is for, and
+    // the window was written on the round when the round was served.
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 1/2`);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 2/2`);
+  });
+
+  it("ends the round after that one question, and it still costs one review", async () => {
+    const user = userEvent.setup();
+    // Already in the review pile, so the landing is the ordinary one rather
+    // than the offer to add the topic — what is being watched here is where the
+    // round stops, not what it asks afterwards.
+    const { session } = mount({ ...enrolled(), questionsPerRound: 1 });
+
+    expect(eyebrow()).toBe(`${profile.ui.promptDirection} · 1/1`);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    // One question in and the round has landed — where without the window it
+    // would have gone on to a second the student never asked to be shown.
+    expect(screen.getByRole("button", { name: /Keep going|Carry on/ })).toBeDefined();
+    // Two reps: the one enrolling the topic bought, and this round's. A short
+    // round costs exactly what a whole one does, which is the point of the round
+    // being the unit rather than the question.
+    expect(session.progress().topicCards.decl1!.reps).toBe(2);
+  });
+
+  it("hands over the half it stopped short of next time", async () => {
+    const user = userEvent.setup();
+    mount({ ...emptyProgress(), questionsPerRound: 1 });
+
+    const first = document.querySelector(".prompt")?.textContent;
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    await carryOn(user);
+
+    // Nothing is lost by a short round: the topic's other sentence is what the
+    // next one opens on, which is the promise the test cycle already makes for
+    // whole tests, kept here question by question.
+    expect(document.querySelector(".prompt")?.textContent).not.toBe(first);
+  });
+});
+
 describe("the schedule", () => {
   it("says what is waiting and what comes back when", async () => {
     const user = userEvent.setup();
