@@ -1550,6 +1550,58 @@ describe("the hint on a vocabulary card", () => {
 });
 
 /**
+ * A sentence kept on the phone, reviewed in the terminal.
+ *
+ * The deck lives in the progress file, so a card kept with a thumb arrives here
+ * whether or not this surface has a way of making one. That is why the review
+ * path is not optional: a terminal that did not know the kind would leave the
+ * card due for ever, with the pile never going down and nothing else served.
+ *
+ * Keeping and forgetting stay on the web. Reviewing does not.
+ */
+describe("a sentence kept elsewhere, come round here", () => {
+  const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+  const question = {
+    prompt: "Gaul is divided into three parts.",
+    answer: "Gallia est omnis dīvīsa in partēs trēs.",
+    kind: "translate-en-la" as const,
+    vocab: [],
+    source: cite,
+  };
+
+  it("is served, read and graded, with its marks and its author", async () => {
+    const content = new Content(fixture, testProfile);
+    const session = studying(content);
+    const { id } = session.keepSentence(question, "ag-decl1", {
+      prompt: { 0: 1 },
+      answer: { 1: 3 },
+    });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+
+    // Kept a moment ago, so it is due now and the loop opens on it — English
+    // side up, like every card here.
+    await until(lastFrame, "A sentence you kept");
+    expect(lastFrame()).toContain("*Gaul*"); // the mark the student made
+    // And nothing of the answer in front of the reveal.
+    expect(lastFrame()).not.toContain("Gallia");
+
+    await press(stdin, lastFrame, " ", "Gallia");
+    // The attribution is the reason most of these cards exist, so it is on the
+    // back rather than left behind in the question bank.
+    expect(lastFrame()).toContain("Caesar");
+    expect(lastFrame()).toContain("de Bello Gallico");
+    // A struck word, said the one way a terminal can say it.
+    expect(lastFrame()).toContain("e̶s̶t̶");
+
+    await press(stdin, lastFrame, "3", testProfile.ui.promptDirection);
+    expect(session.sentenceCard(id)!.fsrs.reps).toBe(1);
+    unmount();
+  });
+});
+
+/**
  * The preference lives on the deck, not on the device, so a deck set up in the
  * app arrives here already asking for quoted sentences and the terminal has to
  * honour it — in the run it serves, in what the index counts, and in the bank

@@ -167,10 +167,24 @@ be invented. Starring either starts both, and dismissing either takes both off
 the pile, for the same reason. `packages/core/src/grammars.test.ts` asserts it
 so it cannot drift into a surprise.
 
-`questionId` (core) is *not* what progress is keyed by — see above — but it is
-the only key left the day a pack generates questions against a second grammar's
-own topics. Derived from prompt and answer rather than written into the content,
-so it cannot drift out of step. C8 measures that it stays a key.
+`questionId` (core) is *not* what the **syllabus** is keyed by — see above — and
+it is the only key left the day a pack generates questions against a second
+grammar's own topics. Derived from prompt and answer rather than written into
+the content, so it cannot drift out of step. C8 measures that it stays a key.
+
+One thing is keyed by it already: **the sentences a student keeps**
+(`packages/core/src/sentences.ts`). A kept sentence is filed under the question
+rather than under the topic it was met through, because it is the question the
+student wanted and not the filing — and because a card must survive the bank
+being regenerated, which the derived id gives for free. It carries its own copy
+of the prompt, the answer, the note and the attribution, so nothing about it
+breaks when the content is rebuilt; `sectionId` rides along as provenance and is
+never looked up by.
+
+So there are **three decks**, and every count over the pile has to know it:
+topics, words, sentences. `Session.stats().due` is the total and is what a
+screen asks — six places used to add up the two kinds they knew about, which is
+exactly the sum that goes quietly wrong when a third arrives.
 
 `profile.attestation` is what a pack may ship that its own content cannot
 confirm — `maxMissesPerQuestion` (distinct forms in one answer, and the bar the

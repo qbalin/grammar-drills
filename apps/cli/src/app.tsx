@@ -26,12 +26,14 @@ import {
   type Profile,
   type FamilyProgress,
   type LemmaEntry,
+  type Marks,
   type Mode,
   type NewVocabContext,
   type Progress,
   type Question,
   type Rating,
   type RoundVia,
+  type SentenceCardState,
   type StorageAdapter,
   type Test,
   type TopicProgress,
@@ -60,6 +62,8 @@ type Origin =
   | { t: "graded" }
   | { t: "vocab-review-front"; cardId: string }
   | { t: "vocab-review-back"; cardId: string }
+  | { t: "sentence-review-front"; cardId: string }
+  | { t: "sentence-review-back"; cardId: string }
   /** A run worked out — now an ordinary place to open the index from. */
   | { t: "practised"; sectionId: string }
   /** A round landed with an offer on it — likewise somewhere to rest. */
@@ -89,6 +93,22 @@ type Phase =
     }
   | { t: "vocab-review-front"; cardId: string }
   | { t: "vocab-review-back"; cardId: string }
+  /**
+   * A sentence the student kept, front and back.
+   *
+   * Two arms where the web app has one phase and a `revealed` boolean, which is
+   * how this file already draws a vocabulary card: the key handler switches on
+   * the phase, and a boolean inside one arm would put the reveal in two places.
+   *
+   * The terminal reviews these and grades them and does no more with them. The
+   * deck is listed, filtered and forgotten from on the web, and a card can be
+   * kept only where a question is answered with a thumb over the sentence. What
+   * is *not* optional is this: `next` can hand over a sentence card on any
+   * device sharing the deck, and a terminal that did not know the kind would
+   * leave that card due for ever with the pile never going down.
+   */
+  | { t: "sentence-review-front"; cardId: string }
+  | { t: "sentence-review-back"; cardId: string }
   | { t: "vocab-list"; from: Origin }
   | { t: "vocab-edit"; cardId: string; from: Origin; field: "citation" | "gloss" }
   /** The sentences one card has kept, being reordered or corrected. */
@@ -359,6 +379,12 @@ export function App({ session, content, storage }: Props) {
       setPhase({ t: "practised", sectionId: action.sectionId });
       return;
     }
+    if (action.kind === "sentence-review") {
+      // A kept sentence is on screen, not the topic it was met under.
+      setVia(null);
+      setPhase({ t: "sentence-review-front", cardId: action.cardId });
+      return;
+    }
     if (action.kind === "vocab-review") {
       // A word is on screen, not the topic before it.
       setVia(null);
@@ -412,6 +438,15 @@ export function App({ session, content, storage }: Props) {
     if (
       (phase.t === "vocab-review-front" || phase.t === "vocab-review-back") &&
       !session.vocabCard(phase.cardId)
+    ) {
+      advance();
+    }
+    // The same net under a kept sentence, which a sync can take away from
+    // under the card being reviewed exactly as it can take away a word.
+    if (
+      (phase.t === "sentence-review-front" ||
+        phase.t === "sentence-review-back") &&
+      !session.sentenceCard(phase.cardId)
     ) {
       advance();
     }
@@ -1139,6 +1174,31 @@ export function App({ session, content, storage }: Props) {
         }
         break;
       }
+      case "sentence-review-front": {
+        if (key.return || ch === " ")
+          setPhase({ t: "sentence-review-back", cardId: phase.cardId });
+        // No hint key: a word's card can give away the English half of a line
+        // it was met in, and a sentence card *is* that line — there is nothing
+        // to offer short of the answer.
+        else if (ch === "u") undoGrade();
+        else if (ch === "m") openMap(phase);
+        else if (ch === "s") openSchedule(phase);
+        else if (ch === "V") openVocabList(phase);
+        break;
+      }
+      case "sentence-review-back": {
+        if (ch >= "1" && ch <= "4") {
+          setUndo(takeUndo(phase));
+          session.gradeSentence(phase.cardId, Number(ch) as Rating);
+          save();
+          setTick((n) => n + 1);
+          advance();
+        } else if (ch === "u") undoGrade();
+        else if (ch === "m") openMap(phase);
+        else if (ch === "s") openSchedule(phase);
+        else if (ch === "V") openVocabList(phase);
+        break;
+      }
       case "vocab-review-front": {
         if (key.return || ch === " ")
           setPhase({ t: "vocab-review-back", cardId: phase.cardId });
@@ -1263,7 +1323,11 @@ export function App({ session, content, storage }: Props) {
   }, [tick, session, content]);
 
   /** What is on screen and why, in one word — not which errand it is on. */
-  const badge = phase.t.startsWith("vocab-review") ? "vocab" : via;
+  const badge = phase.t.startsWith("vocab-review")
+    ? "vocab"
+    : phase.t.startsWith("sentence-review")
+      ? "kept"
+      : via;
 
   return (
     <Box flexDirection="column" paddingX={1}>
@@ -1279,7 +1343,9 @@ export function App({ session, content, storage }: Props) {
           // it says what is being worked on and stops there.
           phase.t.startsWith("vocab-review")
             ? "Vocabulary"
-            : section
+            : phase.t.startsWith("sentence-review")
+              ? "A sentence you kept"
+              : section
               ? `${content.formatRef(section.ref)} ${section.title}`
               : "—"
         }
@@ -1505,6 +1571,15 @@ export function App({ session, content, storage }: Props) {
           card={session.vocabCard(phase.cardId)}
           reveal={phase.t === "vocab-review-back"}
           hinted={hinted}
+        />
+      )}
+
+      {(phase.t === "sentence-review-front" ||
+        phase.t === "sentence-review-back") && (
+        <SentenceReview
+          ui={content.profile.ui}
+          card={session.sentenceCard(phase.cardId)}
+          reveal={phase.t === "sentence-review-back"}
         />
       )}
 
@@ -2236,6 +2311,85 @@ function ContextSentence({ context }: { context: VocabContext }) {
 }
 
 /**
+ * A kept sentence, come round again.
+ *
+ * English on the front and the L2 behind the reveal, which is every card in
+ * this app: the student produces the language rather than recognising it. So a
+ * sentence card is read exactly as the question it was, which is the point of
+ * having kept it.
+ *
+ * The marks are drawn where a terminal can draw them — bold is bold, italic is
+ * italic, and struck is the one this stack has no attribute for, so it is said
+ * with the strike a reader would draw by hand. They are the student's own,
+ * frozen where they stood, and nothing here can change them: keeping and
+ * forgetting a card both live on the web, and this screen reviews.
+ */
+function SentenceReview({
+  ui,
+  card,
+  reveal,
+}: {
+  ui: Profile["ui"];
+  card: SentenceCardState | undefined;
+  reveal: boolean;
+}) {
+  if (!card) return null;
+  return (
+    <Box flexDirection="column" marginTop={1}>
+      <Text dimColor>A sentence you kept · {ui.sayItIn}</Text>
+      <Box marginTop={1}>
+        <Text bold>{marked(card.prompt, card.marks?.prompt)}</Text>
+      </Box>
+      {reveal && (
+        <>
+          <Box marginTop={1}>
+            <Text color="magenta" bold>
+              → {marked(card.answer, card.marks?.answer)}
+            </Text>
+          </Box>
+          {card.note && (
+            <Box marginTop={1}>
+              <Text dimColor>{card.note}</Text>
+            </Box>
+          )}
+          {card.source && (
+            <Text dimColor>
+              — {card.source.author}, {card.source.work}
+              {card.source.locus ? ` ${card.source.locus}` : ""}
+            </Text>
+          )}
+        </>
+      )}
+    </Box>
+  );
+}
+
+/**
+ * A sentence with the student's emphasis written into it.
+ *
+ * Ink styles a whole `<Text>` rather than a span of one, and nesting a `<Text>`
+ * per word would break the line wrapping that makes a long quotation readable
+ * in eighty columns. So the emphasis is written into the characters instead:
+ * `*bold*`, `_italic_`, and a combining strike for a word struck out — the last
+ * being the one of the three no terminal attribute covers reliably.
+ *
+ * `sentenceTokens` is the same cut the web app marks by, so a card marked on
+ * the phone is marked here on the same words.
+ */
+function marked(text: string, marks?: Marks): string {
+  if (!marks || Object.keys(marks).length === 0) return text;
+  return sentenceTokens(text)
+    .map((token) => {
+      const mark = token.word ? marks[token.index] : undefined;
+      if (!mark) return token.text;
+      if (mark === 1) return `*${token.text}*`;
+      if (mark === 2) return `_${token.text}_`;
+      return [...token.text].map((c) => `${c}̶`).join("");
+    })
+    .join("");
+}
+
+/**
  * A vocabulary card.
  *
  * English on the front: the student produces the Latin, as everywhere else. The
@@ -2448,6 +2602,10 @@ function HintBar({
           ? "type · Tab switch field · Enter save · Esc cancel"
         : phase === "graded"
         ? `1–4 self-grade (1 again · 4 easy) · u keep typing${wordsHint}${errandHint} · v record a word · V my words · g grammar${historyHint}${scrollHint} · m index · s schedule · q quit`
+        : phase === "sentence-review-front"
+          ? `Space/Enter reveal${undoHint} · m index · q quit`
+        : phase === "sentence-review-back"
+          ? `1–4 self-grade${undoHint} · m index · q quit`
         : phase === "vocab-review-front"
           ? `Space/Enter reveal${hintHint}${undoHint} · m index · q quit`
           : phase === "vocab-review-back"
