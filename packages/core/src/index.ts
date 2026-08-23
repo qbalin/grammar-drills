@@ -60,6 +60,7 @@ export {
   type BankedQuestion,
   type ContextOutcome,
   type Coverage,
+  type KeepOutcome,
   type ScheduleEntry,
   type TopicProgress,
   type FamilyProgress,

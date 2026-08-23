@@ -863,6 +863,205 @@ describe("Session vocabulary: the sentence a word was met in", () => {
   });
 });
 
+/**
+ * The sentences a student decided to keep.
+ *
+ * A word could always be lifted out of an answer and kept. A whole sentence
+ * could not, and the ones worth keeping — a line of an ancient author, met
+ * while working through some case ending — were left to the shuffle.
+ */
+describe("Session sentences", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  const cicero = {
+    prompt: "The girl loves the rose.",
+    answer: "Puella rosam amat.",
+    kind: "translate-en-la",
+    vocab: [],
+    note: "Accusative for the object.",
+    source: { author: "Cicero", work: "De Amicitia", locus: "12" },
+  } as const;
+
+  const kept = (s: Session) => s.keepSentence({ ...cicero }, "ag1", undefined, now);
+
+  it("keeps the question whole, with whoever it is quoted from", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const { id, outcome } = kept(s);
+    expect(outcome).toBe("kept");
+
+    const card = s.sentenceCard(id)!;
+    expect(card.prompt).toBe(cicero.prompt);
+    expect(card.answer).toBe(cicero.answer);
+    // The attribution is the whole reason most of these cards will exist, so it
+    // travels with the sentence rather than being left behind in the bank.
+    expect(card.source).toEqual(cicero.source);
+    expect(card.note).toBe(cicero.note);
+    expect(card.sectionId).toBe("ag1");
+  });
+
+  it("is keyed by the question, so keeping it twice keeps one card", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const first = kept(s);
+    expect(s.hasSentence(cicero.prompt, cicero.answer)).toBe(true);
+
+    const again = s.keepSentence({ ...cicero }, "ag2", undefined, now);
+    expect(again.outcome).toBe("duplicate");
+    expect(again.id).toBe(first.id);
+    expect(s.sentenceList()).toHaveLength(1);
+    // And the second press changed nothing — not even the topic it says it came
+    // from, which is what a card kept months ago should go on saying.
+    expect(s.sentenceCard(first.id)!.sectionId).toBe("ag1");
+  });
+
+  it("takes its id from the sentence rather than from where it was filed", () => {
+    // The property that makes a card survive the bank being regenerated: the
+    // same prompt and answer rebuild to the same id, whatever test carries them.
+    const s = new Session(new Content(fixture, testProfile));
+    expect(s.sentenceIdFor(cicero.prompt, cicero.answer)).toBe(
+      s.sentenceIdFor(cicero.prompt, cicero.answer),
+    );
+    expect(s.sentenceIdFor(cicero.prompt, cicero.answer)).not.toBe(
+      s.sentenceIdFor(cicero.prompt, "Puella rosās amat."),
+    );
+    expect(kept(s).id.startsWith("s-")).toBe(true);
+  });
+
+  it("freezes what was picked out, and keeps only the two texts it draws", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const { id } = s.keepSentence(
+      { ...cicero },
+      "ag1",
+      // `submitted` is not a field of `CardMarks`; this is the shape the graded
+      // screen hands over once it has dropped what the student wrote.
+      { prompt: { 1: 1 }, answer: { 1: 3 } },
+      now,
+    );
+    expect(s.sentenceCard(id)!.marks).toEqual({ prompt: { 1: 1 }, answer: { 1: 3 } });
+
+    // A card is not an attempt: it does not follow a later answer on the same
+    // sentence, and there is nothing here that edits it.
+    s.keepSentence({ ...cicero }, "ag1", { answer: { 2: 2 } }, now);
+    expect(s.sentenceCard(id)!.marks).toEqual({ prompt: { 1: 1 }, answer: { 1: 3 } });
+  });
+
+  it("carries no marks at all when nothing was picked out", () => {
+    // So a card made without marking reads on disk exactly as it would have
+    // before marking existed.
+    const s = new Session(new Content(fixture, testProfile));
+    expect(s.sentenceCard(kept(s).id)!.marks).toBeUndefined();
+    const empty = s.keepSentence(
+      { ...cicero, prompt: "The rose." },
+      "ag1",
+      { prompt: undefined, answer: undefined },
+      now,
+    );
+    expect(s.sentenceCard(empty.id)!.marks).toBeUndefined();
+  });
+
+  it("is scheduled, graded and previewed like any other card", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const { id } = kept(s);
+    const schedule = s.previewSentence(id, now)!;
+    expect(schedule[1].getTime()).toBeLessThan(schedule[4].getTime());
+
+    s.gradeSentence(id, 3, now);
+    expect(s.sentenceCard(id)!.fsrs.reps).toBe(1);
+    expect(new Date(s.sentenceCard(id)!.fsrs.due).getTime()).toBeGreaterThan(
+      now.getTime(),
+    );
+  });
+
+  it("comes back after the words and before the grammar", () => {
+    /*
+     * The rung, and the reason for it is the one `next` already gives for
+     * putting words first: a card is answered in seconds where a round of
+     * sentences is not, and a card behind a wall of grammar is the card that
+     * misses its review when a session is cut short.
+     */
+    const s = new Session(new Content(fixture, testProfile));
+    const { id } = kept(s);
+    s.gradeTopic("ag1", 1, now);
+    const soon = new Date("2026-01-01T00:30:00Z");
+    expect(s.next(soon, "review")).toEqual({ kind: "sentence-review", cardId: id });
+
+    s.recordVocab(
+      { lemma: "manus", citation: "manus, ūs (f)", gloss: "hand", pos: "noun" },
+      now,
+    );
+    s.gradeVocab(s.vocabIdFor({ lemma: "manus", citation: "", gloss: "", pos: "" }), 1, now);
+    expect(s.next(soon, "review").kind).toBe("vocab-review");
+  });
+
+  it("is counted where the pile is counted, so it cannot be reported clear", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    kept(s);
+    expect(s.stats(now)).toMatchObject({ sentences: 1, dueSentences: 1 });
+    // A new card is due now, which is what makes "nothing is waiting" a claim a
+    // screen has to ask this about rather than assume.
+    s.gradeSentence(s.sentenceIdFor(cicero.prompt, cicero.answer), 3, now);
+    expect(s.stats(now).dueSentences).toBe(0);
+  });
+
+  it("stands in the schedule with the Latin leading", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    kept(s);
+    const entry = s.upcoming(now).find((e) => e.kind === "sentence")!;
+    expect(entry.title).toBe(cicero.answer);
+    expect(entry.sub).toBe(cicero.prompt);
+    expect(s.nextDue(new Date("2025-12-31T00:00:00Z"))).toBeDefined();
+  });
+
+  it("can be forgotten, and put back exactly as it was", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const { id } = kept(s);
+    s.gradeSentence(id, 4, now);
+    const card = s.sentenceCard(id)!;
+
+    s.deleteSentence(id);
+    expect(s.sentenceCard(id)).toBeUndefined();
+    s.restoreSentence(card);
+    // The schedule comes back with it — an undo that reset the card would be a
+    // second thing happening under a button that says one.
+    expect(s.sentenceCard(id)!.fsrs.reps).toBe(1);
+
+    // And a card kept again by hand before the undo is pressed wins: that is
+    // the student saying what they want.
+    s.deleteSentence(id);
+    kept(s);
+    s.restoreSentence(card);
+    expect(s.sentenceCard(id)!.fsrs.reps).toBe(0);
+  });
+
+  it("is taken back by an undo, being a thing done rather than a preference", () => {
+    const s = new Session(new Content(fixture, testProfile));
+    const before = s.snapshot();
+    const { id } = kept(s);
+    s.restore(before);
+    expect(s.sentenceCard(id)).toBeUndefined();
+  });
+
+  it("reads a file written before there was anywhere to keep one", () => {
+    const old = emptyProgress();
+    delete (old as Partial<typeof old>).sentenceCards;
+    const s = new Session(new Content(fixture, testProfile), old);
+    expect(s.sentenceList()).toEqual([]);
+    expect(s.stats(now).dueSentences).toBe(0);
+  });
+
+  it("lists the last one kept first", () => {
+    // The other way round from the vocabulary list, which has a dictionary
+    // order to be read in. A commonplace book has none.
+    const s = new Session(new Content(fixture, testProfile));
+    kept(s);
+    const later = s.keepSentence(
+      { ...cicero, prompt: "The sailors feared the storm." },
+      "ag1",
+      undefined,
+      new Date("2026-01-02T00:00:00Z"),
+    );
+    expect(s.sentenceList()[0]!.id).toBe(later.id);
+  });
+});
+
 describe("Session: the index, the star and the pile", () => {
   const now = new Date("2026-01-01T00:00:00Z");
   const topic = (s: Session, id: string) =>

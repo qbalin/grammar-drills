@@ -2,9 +2,11 @@ import { Content } from "./content.js";
 import { type FamilyId } from "./families.js";
 import { repairProgress } from "./repair.js";
 import { VocabDeck, type ContextOutcome } from "./vocab.js";
+import { SentenceDeck, type KeepOutcome } from "./sentences.js";
 // Re-exported from here because this is where they used to live, and a caller
 // importing them by their old path should not have to know they moved.
 export { MAX_CONTEXTS, type ContextOutcome } from "./vocab.js";
+export { type KeepOutcome } from "./sentences.js";
 import {
   deserializeCard,
   isDue,
@@ -18,6 +20,7 @@ import {
   emptyProgress,
   type Attempt,
   type AttemptMarks,
+  type CardMarks,
   type LegacyProgress,
   type LemmaEntry,
   type Mode,
@@ -29,6 +32,7 @@ import {
   type RoundDraft,
   type RoundVia,
   type OpenRound,
+  type SentenceCardState,
   type SerializedCard,
   type Test,
   type VocabCardState,
@@ -97,6 +101,8 @@ export type Action =
    */
   | { kind: "practised"; sectionId: string }
   | { kind: "vocab-review"; cardId: string }
+  /** A sentence the student kept, come round again. */
+  | { kind: "sentence-review"; cardId: string }
   | { kind: "done" };
 
 /** One grammar section as the index and the topic sheet see it. */
@@ -165,8 +171,8 @@ export interface FamilyProgress {
 
 /** One thing the scheduler will ask for, and when. */
 export interface ScheduleEntry {
-  kind: "topic" | "vocab";
-  /** Section id, or vocabulary card id. */
+  kind: "topic" | "vocab" | "sentence";
+  /** Section id, or vocabulary card id, or sentence card id. */
   id: string;
   /** The section's title, or the word's citation. */
   title: string;
@@ -266,6 +272,15 @@ export class Session {
    * go on writing to what the undo threw away.
    */
   private readonly deck: VocabDeck;
+  /**
+   * The sentences the student kept, lifted out the same way. See `sentences.ts`.
+   *
+   * A third store of cards rather than a second kind of vocabulary card: a
+   * vocabulary card is a dictionary entry and is shaped like one, and a kept
+   * sentence has no lemma, no citation and no part of speech to put in those
+   * fields.
+   */
+  private readonly sentences: SentenceDeck;
   private mapCache: {
     revision: number;
     grammarId: string;
@@ -311,6 +326,10 @@ export class Session {
       this.citationsVersion,
       () => this.touch(),
     );
+    this.sentences = new SentenceDeck(
+      () => this.p,
+      () => this.touch(),
+    );
     // A file written before the answer trail existed simply has none; there is
     // no migration layer, so default it here. Same for the citation generation.
     this.p.attempts ??= {};
@@ -320,6 +339,9 @@ export class Session {
     // opens on the quotations, which is where a returning student would want to
     // be put anyway.
     this.p.testCycles ??= {};
+    // A file written before sentences could be kept has no deck to keep them
+    // in. Absent means empty, which is what every such file means.
+    this.p.sentenceCards ??= {};
     this.p.citationsVersion ??= 1;
     this.p.openRound ??= null;
     this.p.practise ??= null;
@@ -764,6 +786,16 @@ export class Session {
        */
       const dueVocab = earliestDue(this.vocabCardList(), now);
       if (dueVocab) return { kind: "vocab-review", cardId: dueVocab };
+      /*
+       * Then the sentences, and the rung is the one the paragraph above argues
+       * for rather than a new claim. A kept sentence is a card: it is answered
+       * in about the time a word takes and nothing like the time a round of
+       * four takes, and put behind the grammar it would be the thing that
+       * misses its review when a session is cut short — which is most of them,
+       * on a phone. Words still lead it, being quicker again.
+       */
+      const dueSentence = earliestDue(this.sentenceCardList(), now);
+      if (dueSentence) return { kind: "sentence-review", cardId: dueSentence };
       const dueTopic = earliestDue(this.topicCardList(), now);
       if (dueTopic) return { kind: "topic-review", sectionId: dueTopic };
       return { kind: "done" };
@@ -1474,6 +1506,7 @@ export class Session {
       if (this.content.getSection(id)) consider(card);
     }
     for (const state of Object.values(this.p.vocabCards)) consider(state.fsrs);
+    for (const state of Object.values(this.p.sentenceCards)) consider(state.fsrs);
     return soonest === undefined ? undefined : new Date(soonest);
   }
 
@@ -1510,6 +1543,21 @@ export class Session {
         overdue: due.getTime() <= now.getTime(),
       });
     }
+    for (const card of Object.values(this.p.sentenceCards)) {
+      const due = new Date(card.fsrs.due);
+      out.push({
+        kind: "sentence",
+        id: card.id,
+        // The L2 leads and the English goes under it, which is the other way
+        // round from how the card is *answered* — because a schedule is read to
+        // recognise what is waiting, and the sentence is what a student would
+        // know it by. Nothing is given away: the card is not being asked here.
+        title: card.answer,
+        sub: card.prompt,
+        due,
+        overdue: due.getTime() <= now.getTime(),
+      });
+    }
     out.sort((a, b) => a.due.getTime() - b.due.getTime());
     return limit === undefined ? out : out.slice(0, limit);
   }
@@ -1518,14 +1566,18 @@ export class Session {
   stats(now: Date = new Date()): {
     dueTopics: number;
     dueVocab: number;
+    dueSentences: number;
     topics: number;
     vocab: number;
+    sentences: number;
   } {
     return {
       dueTopics: dueAmong(this.topicCardList(), now).length,
       dueVocab: dueAmong(this.vocabCardList(), now).length,
+      dueSentences: dueAmong(this.sentenceCardList(), now).length,
       topics: Object.keys(this.p.topicCards).length,
       vocab: Object.keys(this.p.vocabCards).length,
+      sentences: Object.keys(this.p.sentenceCards).length,
     };
   }
 
@@ -1784,6 +1836,45 @@ export class Session {
     return this.deck.refreshCitations();
   }
 
+  // --- kept sentences --------------------------------------------------------
+  //
+  // Every one of these is `this.sentences`', kept here for the reason the
+  // vocabulary block above is: a caller talks to the session. See
+  // `sentences.ts` for what they do and why.
+
+  sentenceIdFor(prompt: string, answer: string): string {
+    return this.sentences.sentenceIdFor(prompt, answer);
+  }
+  hasSentence(prompt: string, answer: string): boolean {
+    return this.sentences.hasSentence(prompt, answer);
+  }
+  keepSentence(
+    question: Question,
+    sectionId: string,
+    marks?: CardMarks,
+    now: Date = new Date(),
+  ): { id: string; outcome: KeepOutcome } {
+    return this.sentences.keepSentence(question, sectionId, marks, now);
+  }
+  sentenceCard(cardId: string): SentenceCardState | undefined {
+    return this.sentences.sentenceCard(cardId);
+  }
+  sentenceList(): SentenceCardState[] {
+    return this.sentences.sentenceList();
+  }
+  gradeSentence(cardId: string, rating: Rating, now: Date = new Date()): void {
+    this.sentences.gradeSentence(cardId, rating, now);
+  }
+  previewSentence(cardId: string, now: Date = new Date()) {
+    return this.sentences.previewSentence(cardId, now);
+  }
+  deleteSentence(cardId: string): void {
+    this.sentences.deleteSentence(cardId);
+  }
+  restoreSentence(card: SentenceCardState): void {
+    this.sentences.restoreCard(card);
+  }
+
   private touch(): void {
     this.p.updatedAt = new Date().toISOString();
     this.revision += 1;
@@ -1806,6 +1897,10 @@ export class Session {
     return Object.entries(this.p.topicCards).filter(
       ([id]) => this.content.getSection(id) !== undefined,
     );
+  }
+
+  private sentenceCardList(): [string, SerializedCard][] {
+    return Object.entries(this.p.sentenceCards).map(([id, c]) => [id, c.fsrs]);
   }
 
   private vocabCardList(): [string, SerializedCard][] {
