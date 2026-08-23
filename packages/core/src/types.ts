@@ -469,11 +469,16 @@ export interface RoundDraft {
  * A round of questions in flight — one served test, where the student is in
  * it, and the card as it stood before it began.
  *
- * A test is four questions on one topic, and rating the topic's card once per
- * question drove it four reps deep in a single sitting. The round is the unit
- * instead: every grade in it rewinds the card to `cardBefore` and re-rates it
- * with the worst grade given so far. The card on disk is therefore always the
- * result of exactly one rep, whenever the round is abandoned.
+ * A test is three or four questions on one topic, and rating the topic's card
+ * once per question drove it that many reps deep in a single sitting. The round
+ * is the unit instead: every grade in it rewinds the card to `cardBefore` and
+ * re-rates it with the worst grade given so far. The card on disk is therefore
+ * always the result of exactly one rep, whenever the round is abandoned.
+ *
+ * A round is a test, or the part of one the student asked for — see
+ * `questions` below and `Progress.questionsPerRound`. Shortening it changes how
+ * many sentences arrive at a sitting and nothing else: it is still one round,
+ * under the test's own id, and still one rep.
  *
  * It is also where the student is. A test used to live entirely in the
  * screen's own state, so anything that ended the page — a reload, a swipe, the
@@ -497,6 +502,21 @@ export interface OpenRound {
   viewedAs?: string;
   /** The served test's id — how the same test is found again, not re-rolled. */
   roundId: string;
+  /**
+   * Which of that test's questions this round is for, as indices into it.
+   *
+   * Absent means all of them, which is every round a deck with no length
+   * preference serves and every round in every file written before there was
+   * one. Present only where `questionsPerRound` shortened the round.
+   *
+   * Written down rather than derived, unlike almost everything else here, and
+   * the exception is worth stating: the window is chosen from the questions of
+   * the test that have no answer on the trail, and the round itself fills that
+   * trail in as it goes. Worked out afresh on the next launch it would name
+   * what is *still* unanswered and hand back a half-finished round as a new
+   * one.
+   */
+  questions?: number[];
   /** The topic's card before the round, or null if the topic had none. */
   cardBefore: SerializedCard | null;
   /**
@@ -699,6 +719,28 @@ export interface Progress {
    * in step with this one.
    */
   quotedFirst?: boolean;
+  /**
+   * How many questions a round is for, when the student has asked for fewer
+   * than the test holds.
+   *
+   * Absent means the whole test, which is what a round has always been. Only a
+   * student who shortened it carries the field — `keepContext`'s shape, and for
+   * the same reason: the default is the thing worth having, and a file that
+   * never touched the setting should read exactly as it did before the setting
+   * existed.
+   *
+   * A cap and never a floor. It can only take questions out of a round, never
+   * put more in: a round is one test, that is what makes it one review of the
+   * topic rather than four, and a number above what a test holds would be a
+   * promise the content cannot keep. Four sentences is a real reason to put the
+   * phone down, and a student who would do one is doing more than a student who
+   * does none.
+   *
+   * Beside `keepContext` and `quotedOnly` and for their reason: how much you
+   * want to be asked at a time is a fact about how you study, not about the
+   * machine you are holding, so it travels with the deck to the terminal.
+   */
+  questionsPerRound?: number;
   updatedAt: string;
 }
 

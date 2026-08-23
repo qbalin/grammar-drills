@@ -125,7 +125,7 @@ export interface TopicProgress {
   scheduled: boolean;
   /** Questions of this topic's bank that have been answered at least once. */
   answered: number;
-  /** How many the bank holds — a test of four never exhausts it. */
+  /** How many the bank holds — no one round ever exhausts it. */
   questions: number;
   /**
    * The student marked this one to come back to. The one fact on a topic that
@@ -666,7 +666,7 @@ export class Session {
   /**
    * What one run is for, and what it has met.
    *
-   * A first run is the questions a four-question test never reached; once
+   * A first run is the questions the rounds so far never reached; once
    * there are none of those left, a run is the whole bank instead, which is
    * what asking to practise a swept topic again can only mean. Both sets are
    * read off the answer trail, so nothing has to be written down beside it and
@@ -877,10 +877,28 @@ export class Session {
      * up puts them where they left off rather than in the other book.
      */
     const graded = test.sectionId || sectionId;
+    /*
+     * Which questions the round holds, written down rather than worked out
+     * again later.
+     *
+     * `record` narrowed the test on the way out and this reaches the same
+     * answer from the same trail a moment later — but only this once. As the
+     * round is answered the trail fills up underneath it, so a window derived
+     * afresh on the next launch would name the questions that are *still*
+     * unanswered and hand back a round the student is already halfway through
+     * as though it were a new one.
+     *
+     * Absent when the round is the whole test, which is every round a deck with
+     * no cap serves and every round in every file written before there was one.
+     */
+    const full =
+      this.content.testsFor(sectionId).find((t) => t.id === test.id) ?? test;
+    const window = this.roundWindow(full);
     this.p.openRound = {
       sectionId: graded,
       ...(graded === sectionId ? {} : { viewedAs: sectionId }),
       roundId: test.id,
+      ...(window.length === full.questions.length ? {} : { questions: window }),
       cardBefore: this.p.topicCards[graded] ?? null,
       worst: null,
       answered: 0,
@@ -888,6 +906,25 @@ export class Session {
       via,
     };
     this.touch();
+  }
+
+  /**
+   * The round's own copy of a test, and how long the round is.
+   *
+   * One place, because `landedRound` and `resumableRound` ask the same two
+   * questions of the same stored window and disagreeing about the answer would
+   * mean a round that can neither finish nor be picked back up.
+   *
+   * Null where the window names a question the bundle no longer holds. A pack
+   * can be regenerated under a student mid-round, and a window pointing past
+   * the end of a shortened test is the same situation as a round naming a test
+   * that has gone: the answer is the scheduler, not a crash.
+   */
+  private roundOf(open: OpenRound, test: Test): Test | null {
+    if (!open.questions) return test;
+    const kept = open.questions.filter((i) => i < test.questions.length);
+    if (kept.length !== open.questions.length) return null;
+    return this.narrow(test, kept);
   }
 
   /** Let go of the round: its last question is graded, or study moved on. */
@@ -945,7 +982,9 @@ export class Session {
     const test = this.content
       .testsFor(open.sectionId)
       .find((t) => t.id === open.roundId);
-    if (!test || open.answered < test.questions.length) return null;
+    if (!test) return null;
+    const round = this.roundOf(open, test);
+    if (!round || open.answered < round.questions.length) return null;
     const card = this.p.topicCards[open.sectionId];
     return {
       sectionId: open.sectionId,
@@ -982,10 +1021,12 @@ export class Session {
     const test = this.content
       .testsFor(open.sectionId)
       .find((t) => t.id === open.roundId);
-    if (!test || open.answered >= test.questions.length) return null;
+    if (!test) return null;
+    const round = this.roundOf(open, test);
+    if (!round || open.answered >= round.questions.length) return null;
     return {
       sectionId: open.sectionId,
-      test,
+      test: round,
       qIndex: open.answered,
       isNew: open.isNew,
       // A round written before rounds said why they were served: what it was
@@ -1022,10 +1063,10 @@ export class Session {
    * `roundId` is the served test's id, and it makes the round — not the
    * question — the unit of scheduling. Every grade in a round rewinds the card
    * to where it stood before the round and re-rates it with the worst grade
-   * given so far, so four questions cost one rep instead of four, and a round
-   * abandoned halfway on an enrolled topic still leaves a card that is the
-   * result of exactly one. Abandoned on a topic that is not enrolled it leaves
-   * nothing, which is the whole point.
+   * given so far, so a round costs one rep however many questions it holds, and
+   * a round abandoned halfway on an enrolled topic still leaves a card that is
+   * the result of exactly one. Abandoned on a topic that is not enrolled it
+   * leaves nothing, which is the whole point.
    *
    * Passing no `roundId` rates per call, which is what a topic with no tests
    * written for it — one verdict, no round — wants.
@@ -1384,6 +1425,27 @@ export class Session {
   }
 
   /**
+   * How many questions a round is for, or 0 for however many the test holds.
+   *
+   * 0 rather than `undefined` at this boundary, so a surface asking the
+   * question gets a number and the "absent means the whole test" rule is
+   * spelled once, here, rather than at every call.
+   */
+  questionsPerRound(): number {
+    const n = this.p.questionsPerRound;
+    return typeof n === "number" && n > 0 ? Math.floor(n) : 0;
+  }
+
+  setQuestionsPerRound(n: number): void {
+    // Anything at or above the longest test a pack ships means the same thing
+    // as no cap, and is stored as no cap so the file does not carry a number
+    // that a regenerated bank could quietly turn into a truncation.
+    if (n > 0) this.p.questionsPerRound = Math.floor(n);
+    else delete this.p.questionsPerRound;
+    this.touch();
+  }
+
+  /**
    * Whether the section has any test at all, before the preference narrows it.
    *
    * The caller that passes a topic over needs to tell "nothing written for this
@@ -1635,10 +1697,12 @@ export class Session {
     const keepContext = this.p.keepContext;
     const quotedOnly = this.p.quotedOnly;
     const quotedFirst = this.p.quotedFirst;
+    const questionsPerRound = this.p.questionsPerRound;
     this.p = structuredClone(snapshot);
     this.p.keepContext = keepContext;
     this.p.quotedOnly = quotedOnly;
     this.p.quotedFirst = quotedFirst;
+    this.p.questionsPerRound = questionsPerRound;
     // The set of authors met is read out of the trail, and the grade being
     // taken back may be the one whose attempt first met somebody. Thrown away
     // rather than mended: it is rebuilt on the next quoted question and nothing
@@ -1765,7 +1829,80 @@ export class Session {
     const seen = this.p.seenTests[key] ?? [];
     this.p.seenTests[key] = [...seen, test.id].slice(-SEEN_HISTORY);
     this.touch();
-    return test;
+    return this.narrow(test, this.roundWindow(test));
+  }
+
+  /**
+   * Which of a test's questions this round is for, as indices into it.
+   *
+   * A test is what a pack generated — four questions, or three where an
+   * unattested form was pruned out — and until this it was also the round. A
+   * student who finds four sentences too much to start on was choosing between
+   * four and none, which is the choice that ends in none.
+   *
+   * The window is **read off the answer trail** rather than written down, the
+   * way `runSet` reads what a practice run has left: the questions of this test
+   * that were answered longest ago, and the ones never answered at all before
+   * any of those. A plain first-N cap would mean the third and fourth questions
+   * of every test were never asked — against the promise `TestCycle` makes,
+   * that every one of a topic's questions arrives before any of them arrives
+   * twice. Least-recently-answered keeps that promise and keeps it twice over.
+   *
+   * The second time is the one worth spelling out, because getting it wrong is
+   * not a slow leak but a loop. A practice run serves whichever test still
+   * holds questions the run has not reached (`servePractice`), and stops when
+   * none does. Take the *first* two questions of a swept topic's tests every
+   * time and a run can never reach the other two: `left` never drains,
+   * `practiceLeft` never reaches nought, and `next` calls it a drill for ever —
+   * the same two sentences on the screen, and `Practised` unreachable. Sorting
+   * by when each was last answered rules that out by construction. A question
+   * answered during this run is the most recent thing on the trail, so it sorts
+   * to the back, and the round always leads with something the run still owes.
+   *
+   * Ties keep the order the test was written in — which is the whole of what
+   * happens on a topic never touched, where nothing has a date at all.
+   *
+   * Deterministic given the test, the preference and the trail, which is what
+   * lets `beginRound` work the same window out a moment after the serve did
+   * without either of them having to hand it to the other. Nothing writes to
+   * the trail in between: a question is only recorded when it is graded.
+   */
+  private roundWindow(test: Test): number[] {
+    const all = test.questions.map((_, i) => i);
+    const cap = this.questionsPerRound();
+    if (cap === 0 || cap >= all.length) return all;
+    // The trail is oldest first, so the last mention of a prompt is the latest.
+    const last = new Map<string, string>();
+    for (const a of this.attemptTrail(test.sectionId)) last.set(a.prompt, a.at);
+    const at = (i: number) => last.get(test.questions[i]!.prompt);
+    const ranked = [...all].sort((i, j) => {
+      const ai = at(i);
+      const aj = at(j);
+      if (ai === undefined || aj === undefined) {
+        // Never answered leads. Both never answered is a tie, and a tie is the
+        // order the questions were written in.
+        return ai === aj ? i - j : ai === undefined ? -1 : 1;
+      }
+      return ai.localeCompare(aj) || i - j;
+    });
+    // Back into the test's own order once they are chosen: which questions the
+    // round is for is this function's business, what order they arrive in is
+    // the pack's.
+    return ranked.slice(0, cap).sort((i, j) => i - j);
+  }
+
+  /**
+   * A test as the round holds it: the same test, under the same id, carrying
+   * only the questions the window named.
+   *
+   * The id is deliberately untouched. It is what `gradeTopic` files the round
+   * under so that a round costs the topic one review rather than one per
+   * question, what `resumableRound` finds the test by, and what `seenTests`
+   * remembers — and a shortened round is still one round of that test.
+   */
+  private narrow(test: Test, window: number[]): Test {
+    if (window.length === test.questions.length) return test;
+    return { ...test, questions: window.map((i) => test.questions[i]!) };
   }
 
 }

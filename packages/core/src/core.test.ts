@@ -8,6 +8,7 @@ import {
   emptyProgress,
   type ContentData,
   type NewVocabContext,
+  type Test,
 } from "./types.js";
 
 const fixture: ContentData = {
@@ -1691,6 +1692,123 @@ describe("Session progress: a round of questions is one review", () => {
  * the round wrote brings the topic back — and one rule that keeps the whole
  * thing off a screen it does not belong on.
  */
+/**
+ * A round shorter than the test it is served from.
+ *
+ * Four questions on one topic is a real reason to put the phone down, and the
+ * alternative to a shorter round is not a longer one but no round at all. The
+ * cap only ever takes questions out: a round is one test, which is what makes
+ * it one review of the topic rather than four.
+ */
+describe("a round shorter than its test", () => {
+  const now = new Date("2026-01-01T00:00:00Z");
+  /** One topic, one test, two questions — so the window is the only variable. */
+  const short = book(topics("nouns", "s", 1, 1));
+
+  /** Answer whatever the round holds, the way both apps do. */
+  const answer = (s: Session, test: Test, at: Date) => {
+    for (const q of test.questions) {
+      s.recordAttempt("s1", { prompt: q.prompt, answer: q.answer, submitted: q.answer, rating: 3 }, at);
+      s.gradeTopic("s1", 3, at, test.id);
+    }
+  };
+
+  it("hands over the whole test when nobody has asked for less", () => {
+    const s = new Session(new Content(short, testProfile));
+    expect(s.questionsPerRound()).toBe(0);
+    expect(s.serveReview("s1")!.questions).toHaveLength(2);
+  });
+
+  it("hands over as many as were asked for, under the test's own id", () => {
+    const s = new Session(new Content(short, testProfile));
+    s.setQuestionsPerRound(1);
+    const test = s.serveReview("s1")!;
+    expect(test.questions).toHaveLength(1);
+    // The id is what files the round against the topic's card. A short round is
+    // still one round of that test, so it must not be renamed.
+    expect(test.id).toBe("s1-t1");
+  });
+
+  it("is stored as no cap when it is not shorter than anything", () => {
+    // A number a regenerated bank could quietly turn into a truncation is not
+    // worth writing down, and "all of them" already has a spelling.
+    const s = new Session(new Content(short, testProfile));
+    s.setQuestionsPerRound(0);
+    expect(s.progress().questionsPerRound).toBeUndefined();
+  });
+
+  it("lands the round on its own last question rather than the test's", () => {
+    const s = new Session(new Content(short, testProfile));
+    s.setQuestionsPerRound(1);
+    const test = s.serveReview("s1")!;
+    s.beginRound("s1", test);
+    expect(s.landedRound()).toBeNull();
+    answer(s, test, now);
+    // One question in, and the round is over — where without the window it
+    // would sit at one of two for ever, waiting on a question nobody was shown.
+    expect(s.landedRound()?.sectionId).toBe("s1");
+  });
+
+  it("puts the same one question back after a reload", () => {
+    const s = new Session(new Content(short, testProfile));
+    s.setQuestionsPerRound(1);
+    const test = s.serveReview("s1")!;
+    s.beginRound("s1", test);
+
+    const reopened = new Session(new Content(short, testProfile), s.progress());
+    const open = reopened.resumableRound()!;
+    expect(open.qIndex).toBe(0);
+    expect(open.test.questions.map((q) => q.prompt)).toEqual(
+      test.questions.map((q) => q.prompt),
+    );
+  });
+
+  it("hands over the half it stopped short of when the test comes round again", () => {
+    // The promise `TestCycle` makes — every question arrives before any of them
+    // arrives twice — kept at the question level rather than the test's.
+    const s = new Session(new Content(short, testProfile));
+    s.setQuestionsPerRound(1);
+    const first = s.serveReview("s1")!;
+    answer(s, first, now);
+    const second = s.serveReview("s1")!;
+    expect(second.questions[0]!.prompt).not.toBe(first.questions[0]!.prompt);
+  });
+
+  it("still works a practice run out, on a topic already swept", () => {
+    /*
+     * The regression this exists for, and it is a loop rather than a leak.
+     * A run serves whichever test still holds questions it has not reached and
+     * stops when none does. Take the *first* question of every test and a run
+     * over a topic where everything has been answered once can never reach the
+     * second: the same sentence comes back for ever and `practised` is a screen
+     * nobody sees.
+     */
+    const s = new Session(new Content(short, testProfile));
+    s.setQuestionsPerRound(1);
+    s.drillTopic("s1", now);
+    answer(s, s.servePractice("s1")!, now);
+    answer(s, s.servePractice("s1")!, new Date("2026-01-01T00:01:00Z"));
+    expect(s.next(now, "explore")).toEqual({ kind: "practised", sectionId: "s1" });
+
+    // And again on a second run over the swept topic, which is the case that
+    // has no never-answered question to lead with.
+    const later = new Date("2026-02-01T00:00:00Z");
+    s.drillTopic("s1", later);
+    expect(s.practice("s1")).toEqual({ done: 0, total: 2 });
+    answer(s, s.servePractice("s1")!, later);
+    answer(s, s.servePractice("s1")!, new Date("2026-02-01T00:01:00Z"));
+    expect(s.next(later, "explore")).toEqual({ kind: "practised", sectionId: "s1" });
+  });
+
+  it("is not taken back by an undo, as no standing preference is", () => {
+    const s = new Session(new Content(short, testProfile));
+    const before = s.snapshot();
+    s.setQuestionsPerRound(1);
+    s.restore(before);
+    expect(s.questionsPerRound()).toBe(1);
+  });
+});
+
 describe("the round a screen lands on", () => {
   const now = new Date("2026-01-01T00:00:00Z");
 
