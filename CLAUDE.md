@@ -34,6 +34,8 @@ for the engine: `packages/core` must not learn a language.
 | `content/grammars/<id>.json` | a *further* grammar of the same language, declared in `profile.grammars` |
 | `grammar/lane-parse.py` | Latin only: builds one, as a sibling of `parse.py` rather than a copy |
 | `gen/config.mjs` | what the question generator needs to know about this language |
+| `dict/<id>-parse.py` | a further dictionary's parser — read "More than one dictionary" |
+| `content/dictionaries/` | **generated**: `<id>.json.gz` + `<id>-forms.txt.gz`, and the manifest |
 | `citations.mjs` | rewrites citations in `lemmas.json.gz`; needs the reference dictionary |
 | | *the dictionary is split: a lemma table plus a sorted form index over it* |
 | `reference/frequency.tsv.gz` | committed, ~200 KB; ranked lemmas for the gates |
@@ -195,6 +197,66 @@ the "unrelated red build" the rule forbids — the feature would be buying the
 raise, not the content. So the pipeline filters instead: a quotation ships only
 if it carries no unattested form at all, and the ones dropped for it are
 reported rather than argued with. Both packs' numbers were unmoved by it.
+
+## More than one dictionary
+
+A pack ships one dictionary of its own — `lemmas.json.gz`, a citation and a
+joined gloss per lemma, sized for the crib above an answer box. `profile.dictionaries`
+declares **further** ones, which are lexica: the senses divided, the constructions
+named, the authors cited. Latin ships Lewis & Short beside its own.
+
+The declaration mirrors `profile.grammars` and so does the pipeline:
+
+```
+<pack>/dict/<id>-parse.py   ->  content/dictionaries/<id>.jsonl   (gitignored)
+scripts/build-dictionary.mjs ->  <id>.json.gz + <id>-forms.txt.gz  (shipped)
+scripts/dictionary-report.mjs -> Y1-Y5, once per declared book
+```
+
+The parser pins its source by SHA-256 and exits hard on a mismatch, as
+`lane-parse.py` does. It never folds anything: the fold is `profile.json`'s and
+is compiled by `packages/core/src/fold.ts`, so keying happens on the JS side —
+the same split, and the same reason, as `parse.py` against `build-lemmas.mjs`.
+
+**A further dictionary is read, never counted.** It does not feed the question
+crib, it does not feed attestation, and it cannot move `maxUnattestedForms`.
+`dictionary-report.mjs` may not import `scripts/lib/reference.mjs`, and
+`attestation-report.mjs` knows nothing about `profile.dictionaries`. What a
+lexicon holds says nothing about what the pack may ship; the day it does is a
+commit that argues for it.
+
+The gates are `Y`-numbered for the reason the crosswalk's are `X`-numbered — a
+low figure here is not a hole in the pack. **`Y4` is the one that matters** and it
+gates a *band*: a lexicon and a frequency list disagree most about rare words, so
+the figure over everything is dominated by words no student meets. Lewis & Short
+answers for 97.1% of Latin's top 2,000 lemmas, 79.0% of all 19,291 ranked, and
+57.6% of every lemma including the tail. Gating the last of those would gate noise.
+
+**The join is two-step**, and that is what keeps a lexicon from having to know
+about inflection: the pack's own dictionary resolves a form to its lemmas, and the
+lemma is what the further book is asked about, with the bare form tried last for
+indeclinables. Two things are done at build time to make it hit — Perseus's
+homograph digits are stripped off the key (`sum1` -> `sum`, worth ten points), and
+every `<orth>` an entry prints becomes a key for it (worth another four). An
+assimilated-prefix table was tried and dropped: it bought 1.2 points of ranked
+reach and none at all inside the band.
+
+Articles carry the same `⟦b:…⟧` / `⟦i:…⟧` inline markup grammar prose does and are
+decoded by the same `decodeRuns`, which is what keeps a source document's markup
+from becoming markup here. They are **not** run through `parseBlocks`: that
+classifier is calibrated on the pack's grammar, reads a lowercase `a.` as a
+sub-point and knows nothing of `A.` or `(b)`, and Lewis & Short uses all three
+across five levels. So the senses ship as records carrying the level the book
+stated, and the reader indents them.
+
+Perseus's lexica are entirely in Beta Code — LSJ writes its *headwords* that way,
+so for Greek the transcoding is on the join path rather than the display path.
+`scripts/lib/betacode.py` is the shared converter, and it is written here rather
+than taken from `scripts/reference/greek.py`, whose table lives inside an
+uncommitted 90 MB download and is GPLv3.
+
+Content licensing is in `LICENSES.md`. Lewis & Short is CC BY-SA 4.0, and the
+attribution is rendered where the articles are read.
 
 ## Two ways a quotation reaches a topic
 
