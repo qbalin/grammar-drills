@@ -60,6 +60,8 @@ export function SettingsSheet({
   onPersist,
   vocabCount,
   onOpenVocab,
+  sentenceCount,
+  onOpenSentences,
   keepContext,
   onKeepContext,
   quotedOnly,
@@ -92,6 +94,9 @@ export function SettingsSheet({
   onPersist: () => void;
   vocabCount: number;
   onOpenVocab: () => void;
+  /** How many sentences the student has kept, and the way into them. */
+  sentenceCount: number;
+  onOpenSentences: () => void;
   /** Whether a recorded word keeps the sentence it was met in. */
   keepContext: boolean;
   onKeepContext: () => void;
@@ -134,6 +139,26 @@ export function SettingsSheet({
       <div className="actions">
         <button className="btn" onClick={onOpenVocab} disabled={vocabCount === 0}>
           {vocabCount} {vocabCount === 1 ? "word" : "words"}
+        </button>
+      </div>
+
+      <div className="section-title">Sentences</div>
+      <p className="field__hint" style={{ marginTop: 0 }}>
+        {sentenceCount === 0
+          ? `No sentences kept yet. Answer a question, then use “keep this
+             sentence” — the whole question becomes a card of its own, with
+             whatever you had picked out in it, and comes back on the same
+             schedule as everything else.`
+          : `Every question you thought worth keeping, with its attribution and
+             your own marks on it, reviewed like a word.`}
+      </p>
+      <div className="actions">
+        <button
+          className="btn"
+          onClick={onOpenSentences}
+          disabled={sentenceCount === 0}
+        >
+          {sentenceCount} {sentenceCount === 1 ? "sentence" : "sentences"}
         </button>
       </div>
 

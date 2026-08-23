@@ -52,13 +52,16 @@ function EntryBody({
     <span className="row__main">
       <span className="row__title">
         {entry.kind === "vocab" && <span className="row__ref">word</span>}
+        {entry.kind === "sentence" && (
+          <span className="row__ref">sentence</span>
+        )}
         {entry.kind === "topic" && entry.sub && (
           <span className="row__ref">{entry.sub}</span>
         )}
         {entry.title}
       </span>
       <span className="row__sub">
-        {entry.kind === "vocab" ? `${entry.sub} · ` : ""}
+        {entry.kind === "topic" ? "" : `${entry.sub} · `}
         {entry.overdue
           ? // A waiting row that is not a button owes an account of itself, in
             // the words the grammar index already uses for the same topic.
@@ -74,17 +77,21 @@ function EntryBody({
 export function ScheduleSheet({
   entries,
   vocabCount,
+  sentenceCount,
   now = new Date(),
   onClose,
   onOpenVocab,
+  onOpenSentences,
   onStart,
   hasTests,
 }: {
   entries: ScheduleEntry[];
   vocabCount: number;
+  sentenceCount: number;
   now?: Date;
   onClose: () => void;
   onOpenVocab: () => void;
+  onOpenSentences: () => void;
   /** Take this card now, rather than whichever one the scheduler would serve. */
   onStart: (entry: ScheduleEntry) => void;
   /**
@@ -143,10 +150,20 @@ export function ScheduleSheet({
         ))
       )}
 
+      {/* The two decks a student builds themselves, reachable from the list
+          of what is waiting — which is where somebody looking for a card they
+          kept would look first. The sentences button is only there once there
+          are sentences: a deck nobody has put anything in is a button that
+          opens an explanation. */}
       <div className="actions">
         <button className="btn" onClick={onOpenVocab}>
           All {vocabCount} {vocabCount === 1 ? "word" : "words"}
         </button>
+        {sentenceCount > 0 && (
+          <button className="btn" onClick={onOpenSentences}>
+            All {sentenceCount} {sentenceCount === 1 ? "sentence" : "sentences"}
+          </button>
+        )}
       </div>
     </Sheet>
   );

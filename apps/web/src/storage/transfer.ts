@@ -71,6 +71,18 @@ export function importProgress(raw: string, content: Content): Progress {
     testCycles: keepKeys(parsed.testCycles),
     attempts: keepKeys(parsed.attempts),
     vocabCards: parsed.vocabCards ?? {},
+    /*
+     * Through unfiltered, as the vocabulary cards are, and the reason is worth
+     * writing down because this deck *does* carry a section id.
+     *
+     * It is provenance and never a key: a kept sentence holds its own prompt,
+     * answer, note and attribution, so it is drawable and gradable on a bundle
+     * that has never heard of the topic it was met under. Filtering by section
+     * would throw away exactly the quotations this deck exists for, on the one
+     * event that has already happened here once — a syllabus rebuilt and every
+     * topic id moved.
+     */
+    sentenceCards: parsed.sentenceCards ?? {},
     // A list rather than a record, so it takes the same filter by hand. A star
     // on a topic this bundle does not hold would pin a row that cannot be drawn.
     ...(parsed.starred
