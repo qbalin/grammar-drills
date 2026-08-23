@@ -305,6 +305,29 @@
     }
   ],
 
+  "dictionaries": [
+    {
+      "id": "lewis-short",
+      "label": "Lewis & Short",
+      "content": "dictionaries/lewis-short.json.gz",
+      "index": "dictionaries/lewis-short-forms.txt.gz",
+      "manifest": "dictionaries/lewis-short-coverage.json",
+      "source": {
+        "title": "Lewis & Short, A Latin Dictionary (Oxford, 1879)",
+        "url": "https://github.com/PerseusDL/lexica",
+        "licence": "CC BY-SA 4.0 (Perseus Digital Library, Tufts University)"
+      },
+      "shape": {
+        "minEntries": 45000,
+        "maxEntries": 60000
+      },
+      "reach": {
+        "band": 2000,
+        "headwordsMatchedPct": 90
+      }
+    }
+  ],
+
   "coverage": {
     "minTestsPerTopic": 6,
     "minQuestionsPerTopic": 16,

@@ -43,3 +43,9 @@ tmp_images/
 # stands in for — content/quotes.jsonl.gz, content/ag-quotes.jsonl.gz — exists.
 languages/*/content/.quotes.partial.jsonl
 languages/*/content/.ag-quotes.partial.jsonl
+
+# A further dictionary's parsed intermediate: 30 MB of JSON that
+# `build-dictionary.mjs` turns into the two gzipped files beside it. The source
+# it came from is pinned by SHA-256 in the pack's parser, so this is rebuildable
+# rather than kept — the same reason no grammar's raw HTML is committed either.
+languages/*/content/dictionaries/*.jsonl

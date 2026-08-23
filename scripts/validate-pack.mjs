@@ -183,6 +183,10 @@ if (!argv.includes("--profile-only")) {
     // two needs and the coverage report cannot give, because a further book's
     // questions are the primary's seen through the crosswalk.
     ["crosswalk-report.mjs"],
+    // Likewise silent for a pack that ships only its own dictionary. A further
+    // one is held to its own gates and never to the pack's: what it holds says
+    // nothing about what the pack may ship, which is what E1 and E2 measure.
+    ["dictionary-report.mjs"],
   ];
   for (const [script, ...extra] of runs) {
     // The flag is handed to the coverage report rather than used to ignore its

@@ -109,6 +109,34 @@ export function grammarNamed(profile, id) {
   return found;
 }
 
+/**
+ * The further dictionaries a pack declares, in the order it declares them.
+ *
+ * Unlike `grammarsOf` there is no primary to fold in, and that is the point:
+ * the pack's own `lemmas.json.gz` is **not** one of these. It answers a
+ * different question — what may this pack ship, which is what `attests` is
+ * asked — and listing it here would put a lexicon on the same footing as the
+ * evidence. A pack that declares none gets an empty list and every caller
+ * below does nothing, which is the shape both packs had before there were two.
+ */
+export function dictionariesOf(profile) {
+  return (profile.dictionaries ?? []).map((d) => ({ ...d }));
+}
+
+/** One declared dictionary by id, or a thrown list of the ones there are. */
+export function dictionaryNamed(profile, id) {
+  const books = dictionariesOf(profile);
+  if (!id) return books[0];
+  const hit = books.find((d) => d.id === id);
+  if (!hit) {
+    throw new Error(
+      `no dictionary "${id}" in this pack; it declares ` +
+        (books.length ? books.map((d) => d.id).join(", ") : "none"),
+    );
+  }
+  return hit;
+}
+
 export function loadGrammar(dir, grammar) {
   return JSON.parse(
     readFileSync(join(dir, "content", grammar?.content ?? "grammar.json"), "utf8"),

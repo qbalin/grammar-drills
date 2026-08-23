@@ -71,6 +71,13 @@ const secondary = books
 const coverage = run("coverage-report.mjs");
 const attestation = runAttestation();
 const crosswalk = books.length > 1 ? run("crosswalk-report.mjs") : { measured: {} };
+// What each further dictionary measured. Recorded rather than merely gated,
+// because reach is the figure that moves when Perseus re-releases a lexicon or
+// the pack rebuilds its lemmas, and a number nobody wrote down is a number
+// nobody can see move.
+const dictionaries = (profile.dictionaries ?? []).length
+  ? run("dictionary-report.mjs")
+  : { measured: {} };
 
 /**
  * Attestation writes its report and then a second, fuller object — the flagged
@@ -210,6 +217,9 @@ const next = overlay(previous, {
           ]),
         ),
       }
+    : {}),
+  ...(Object.keys(dictionaries.measured ?? {}).length
+    ? { dictionaries: dictionaries.measured }
     : {}),
   questions: coverage.measured,
   // Only what this run could measure. The dictionary block comes from the

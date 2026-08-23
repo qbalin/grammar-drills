@@ -17,7 +17,7 @@
   "Every _-prefixed key here is prose somebody wrote and the writer preserves,",
   "along with any figure it does not itself measure."
  ],
- "measuredAt": "2026-08-15",
+ "measuredAt": "2026-08-23",
  "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
  "grammar": {
   "topics": 149,
@@ -472,5 +472,17 @@
   ]
  },
  "measuredWith": "the latin pack's own content",
- "_attestationNote": "the accounting fields were measured with the reference and are kept; re-run with --ref to remeasure them"
+ "_attestationNote": "the accounting fields were measured with the reference and are kept; re-run with --ref to remeasure them",
+ "dictionaries": {
+  "lewis-short": {
+   "articles": 51596,
+   "keys": 61440,
+   "senses": 101970,
+   "reachBand": 2000,
+   "reachInBandPct": 97.1,
+   "reachRankedPct": 79,
+   "reachAllLemmasPct": 57.6,
+   "bytes": 11571788
+  }
+ }
 }
