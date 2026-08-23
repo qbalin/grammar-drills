@@ -586,7 +586,21 @@ span.status__title {
   margin-bottom: 0.35rem;
 }
 
+/*
+ * A kept sentence, on the card being edited.
+ *
+ * It set a colour and nothing else, which meant it was the one piece of Latin
+ * in the app drawn in the English face — the rule this file opens with, broken
+ * in the single place a student reads the same line over and over. Inheriting
+ * from the sheet also left it at the body size while every other L2 surface
+ * sits above it.
+ *
+ * A shade under `.compare__text`'s 1.15rem, because that is one sentence with
+ * a screen to itself and these are up to eight stacked inside a bordered box.
+ */
 .context__sentence {
+  font-family: var(--serif);
+  font-size: 1.05rem;
   color: var(--gold);
 }
 

@@ -577,7 +577,10 @@ function ContextRow({
         {context.source === "answer" ? "Reference" : "You wrote"}
       </div>
       <div className="context__prompt">{context.prompt}</div>
-      <div className="context__sentence">
+      {/* The one L2 surface in the app that was missed when the language
+          attributes went on: without them a screen reader says this Latin in
+          an English voice, which for Greek is not an accent but noise. */}
+      <div {...l2Attrs} className="context__sentence">
         <Sentence
           text={context.sentence}
           marks={context.index === undefined ? undefined : { [context.index]: 1 }}
