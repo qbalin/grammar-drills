@@ -2522,6 +2522,151 @@ describe("how many questions a round is for", () => {
   });
 });
 
+/**
+ * Keeping a sentence.
+ *
+ * The app studies grammar topics, and a sentence arrives because its topic came
+ * round. Some of them are worth more than that — the ones quoted out of an
+ * ancient author above all — and until this the only thing to do about one was
+ * hope the shuffle brought it back.
+ */
+describe("keeping a sentence", () => {
+  const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+  /** A topic whose only test is one quoted line, so the round opens on it. */
+  const quoted: ContentData = {
+    ...fixture,
+    tests: {
+      ...fixture.tests,
+      decl1: [
+        {
+          id: "decl1-q1",
+          sectionId: "decl1",
+          questions: [
+            {
+              prompt: "Gaul is divided into three parts.",
+              answer: "Gallia est omnis dīvīsa in partēs trēs.",
+              kind: "translate-en-la" as const,
+              vocab: [],
+              note: "Predicate adjective.",
+              source: cite,
+            },
+          ],
+        },
+      ],
+    },
+  };
+
+  const keep = () => screen.getByRole("button", { name: /keep this sentence/ });
+
+  it("keeps the question whole, with whoever it is quoted from", async () => {
+    const user = userEvent.setup();
+    const { session } = mount(undefined, quoted);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(keep());
+
+    const card = session.sentenceList()[0]!;
+    expect(card.prompt).toBe("Gaul is divided into three parts.");
+    expect(card.answer).toBe("Gallia est omnis dīvīsa in partēs trēs.");
+    // The attribution is the whole reason most of these cards will exist.
+    expect(card.source).toEqual(cite);
+    expect(card.note).toBe("Predicate adjective.");
+  });
+
+  it("says the press landed, rather than going quiet", async () => {
+    const user = userEvent.setup();
+    mount(undefined, quoted);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(keep());
+
+    // Disabled rather than gone: the row does not reflow under a thumb, and a
+    // student who presses again is told they already have it.
+    const kept = screen.getByRole("button", { name: /sentence kept/ });
+    expect(kept).toHaveProperty("disabled", true);
+    expect(screen.getByText(/Sentence kept/)).toBeDefined();
+  });
+
+  it("takes the marks as they stood, and not what was written", async () => {
+    const user = userEvent.setup();
+    const { session } = mount(undefined, quoted);
+    await user.type(screen.getByLabelText("Your Latin"), "Gallia est divisa.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+
+    await user.click(screen.getByRole("button", { name: /✱ mark/ }));
+    await tapWord(user, ".prompt", "Gaul");
+    await tapWord(user, ".compare__block--reference", "Gallia");
+    await tapWord(user, ".compare__block--reference", "Gallia"); // bold → italic
+    // Something picked out in what the student wrote, which the card must not
+    // keep: that sentence is not on the card, so an emphasis over it would be
+    // an emphasis over nothing.
+    await tapWord(user, ".compare__block:not(.compare__block--reference)", "divisa");
+    await user.click(screen.getByRole("button", { name: /done marking/ }));
+    await user.click(keep());
+
+    const card = session.sentenceList()[0]!;
+    expect(card.marks).toEqual({ prompt: { 0: 1 }, answer: { 0: 2 } });
+  });
+
+  it("comes back for review, with the marks and the attribution on it", async () => {
+    const user = userEvent.setup();
+    const { session } = mount(undefined, quoted);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(keep());
+    // Over to the pile: a card kept a moment ago is due now, and nothing else
+    // is, so the only thing the reviews can hand over is this one — English
+    // side up, like every card in this app.
+    await user.click(screen.getByRole("button", { name: "Review" }));
+
+    expect(document.querySelector(".prompt")?.textContent).toBe(
+      "Gaul is divided into three parts.",
+    );
+    expect(document.querySelector(".status__title")?.textContent).toBe(
+      "A sentence you kept",
+    );
+    await user.click(screen.getByRole("button", { name: "Show" }));
+    expect(screen.getByText("de Bello Gallico")).toBeDefined();
+    expect(screen.getByText(/Predicate adjective/)).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+    expect(session.sentenceList()[0]!.fsrs.reps).toBe(1);
+  });
+
+  it("cannot be reported as an empty pile while it is due", async () => {
+    // The regression this exists for: every screen that asked "is anything
+    // waiting" used to add up the kinds of card it knew about, so a third kind
+    // would have been invisible to all of them at once.
+    const user = userEvent.setup();
+    mount(undefined, quoted);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(keep());
+    await user.click(screen.getByRole("button", { name: /Good/ }));
+
+    expect(document.querySelector(".status__counts")?.textContent).toMatch(/1 due/);
+    expect(screen.queryByText("The pile is clear.")).toBeNull();
+  });
+
+  it("is listed, and forgetting one can be taken back", async () => {
+    const user = userEvent.setup();
+    const { session } = mount(undefined, quoted);
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(keep());
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await user.click(screen.getByRole("button", { name: "1 sentence" }));
+    const sheet = screen.getByRole("dialog", { name: "Sentences" });
+    expect(within(sheet).getByText("de Bello Gallico")).toBeDefined();
+
+    await user.click(within(sheet).getByRole("button", { name: /forget this one/ }));
+    await user.click(
+      within(sheet).getByRole("button", { name: "Confirm — forget it" }),
+    );
+    expect(session.sentenceList()).toHaveLength(0);
+
+    // A month of reviews behind one press is a press that needs a way back.
+    await user.click(screen.getByRole("button", { name: "Undo" }));
+    expect(session.sentenceList()).toHaveLength(1);
+  });
+});
+
 describe("the schedule", () => {
   it("says what is waiting and what comes back when", async () => {
     const user = userEvent.setup();

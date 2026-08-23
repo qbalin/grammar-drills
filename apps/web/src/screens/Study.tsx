@@ -3,6 +3,7 @@ import type {
   AttemptMarks,
   Question,
   Rating,
+  SentenceCardState,
   VocabCardState,
   VocabContext,
 } from "@lang-tutor/core";
@@ -130,6 +131,8 @@ export function Graded({
   onInspectWord,
   onReadGrammar,
   onToggleMarking,
+  onKeepSentence,
+  kept,
   onDismiss,
   dismissing,
   onMark,
@@ -178,6 +181,17 @@ export function Graded({
   onInspectWord: (word: string) => void;
   onReadGrammar: () => void;
   onToggleMarking: () => void;
+  /**
+   * Keep this sentence as a card of its own — see `sentences.ts`.
+   *
+   * Offered on every graded question rather than on the quoted ones alone. The
+   * quotations are why anyone would want this, but a generated sentence that
+   * finally made a construction land is worth keeping too, and a button that
+   * appeared on some questions and not others would read as a bug.
+   */
+  onKeepSentence: () => void;
+  /** Whether this question is already kept, so the button says so. */
+  kept: boolean;
   /**
    * Take this topic out of the review pile. Absent on a round that is not a
    * review, where there is no pile to take it off.
@@ -312,6 +326,20 @@ export function Graded({
             offers by name and this screen was the second way to. */}
         <button onClick={onToggleMarking} aria-pressed={marking}>
           {marking ? "✓ done marking" : "✱ mark"}
+        </button>
+        {/*
+         * Beside the marking button, because that is where the marks were just
+         * made and they are what the card keeps. The press is one press: a
+         * sentence is either worth keeping or it is not, and there is nothing
+         * here to confirm — the way back is on the card itself.
+         *
+         * Disabled rather than gone once it is kept, so the row does not reflow
+         * under a thumb and so the student is told the first press landed. That
+         * is the opposite of what `◔ hint` does when it runs out, and for the
+         * opposite reason: there, there is nothing true left to say.
+         */}
+        <button onClick={onKeepSentence} disabled={kept}>
+          {kept ? "❦ sentence kept" : "❦ keep this sentence"}
         </button>
         {/*
          * Only on a review, and that is the whole of the rule: this is the
@@ -513,6 +541,112 @@ export function VocabReview({
             ◔ {hinted === 0 ? "hint" : "another hint"}
           </button>
         )}
+      </div>
+      {revealed ? (
+        <GradeBar onGrade={onGrade} schedule={schedule} />
+      ) : (
+        <div className="actions">
+          <button className="btn btn--primary" onClick={onReveal}>
+            Show
+          </button>
+        </div>
+      )}
+    </>
+  );
+}
+
+/**
+ * A kept sentence, come round again.
+ *
+ * English on the front and the L2 behind the reveal, which is the rule every
+ * card in this app keeps: the student always produces the language, never
+ * merely recognises it. So a sentence card is read exactly as the question it
+ * was — and it is the same question, which is the point of keeping it.
+ *
+ * The back is the graded screen's reference block, in the same order and the
+ * same classes: the sentence, then the note, then who it is quoted from. That
+ * last is why most of these cards will exist, so it keeps the place it has
+ * rather than being moved somewhere tidier.
+ *
+ * The marks are the student's own, frozen where they stood when the card was
+ * made, and they are drawn on both texts because the pairing is what marking is
+ * for — the English that triggers an idiom against the form the idiom takes.
+ * There is no marking *here*: a card is not an attempt, and re-marking it would
+ * make the record follow the reading rather than the other way round.
+ *
+ * Holding a word still records it, on the back as everywhere else. A sentence
+ * kept because of one construction is still a sentence, full of words.
+ */
+export function SentenceReview({
+  card,
+  revealed,
+  schedule,
+  onReveal,
+  onGrade,
+  onForget,
+  forgetting,
+  onHoldWord,
+  onInspectWord,
+  onCopy,
+}: {
+  card: SentenceCardState;
+  revealed: boolean;
+  schedule?: Record<Rating, Date>;
+  onReveal: () => void;
+  onGrade: (r: Rating) => void;
+  /** Take the card off the pile. Two presses, like every deletion here. */
+  onForget: () => void;
+  /** Whether the first press has been given and the next one goes ahead. */
+  forgetting: boolean;
+  onHoldWord: (word: string, index: number) => void;
+  onInspectWord: (word: string) => void;
+  onCopy: () => void;
+}) {
+  return (
+    <>
+      <div className="study__scroll">
+        <p className="eyebrow">Sentence · {profile.ui.promptDirection}</p>
+        <p className="prompt">
+          <Sentence text={card.prompt} marks={card.marks?.prompt} />
+        </p>
+        {revealed && (
+          <div className="compare">
+            <div className="compare__block compare__block--reference">
+              <div className="compare__head">
+                <div className="compare__label">Reference</div>
+                <CopyButton what="the sentence" onCopy={onCopy} />
+              </div>
+              <div {...l2Attrs} className="compare__text compare__text--reference">
+                <Sentence
+                  text={card.answer}
+                  marks={card.marks?.answer}
+                  onHold={onHoldWord}
+                  onInspect={onInspectWord}
+                />
+              </div>
+              {card.note && <div className="note">{card.note}</div>}
+              {card.source && (
+                <div className="attribution">
+                  — {card.source.author}, <cite>{card.source.work}</cite>
+                  {card.source.locus ? ` ${card.source.locus}` : ""}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+        {revealed && <p className="hint">{GESTURE_HINT}</p>}
+      </div>
+      <div className="linkrow">
+        {/* The same armed colour the graded screen's dismissal wears, because
+            it is the same shape of press: one to say it, one to mean it. A
+            student learns the colour once. */}
+        <button
+          className={forgetting ? "linkrow__armed" : undefined}
+          aria-pressed={forgetting}
+          onClick={onForget}
+        >
+          {forgetting ? "✕ confirm — forget it" : "✕ forget this sentence"}
+        </button>
       </div>
       {revealed ? (
         <GradeBar onGrade={onGrade} schedule={schedule} />

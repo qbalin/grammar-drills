@@ -52,6 +52,7 @@ import {
   Landed,
   Practised,
   Rest,
+  SentenceReview,
   VocabReview,
 } from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
@@ -73,6 +74,7 @@ import {
   VocabPickSheet,
   VocabSheet,
 } from "./screens/Vocab.js";
+import { SentenceListSheet } from "./screens/Sentences.js";
 
 /**
  * The quiz loop, ported from `apps/cli/src/app.tsx`.
@@ -88,6 +90,7 @@ type Phase =
   | { t: "answering" }
   | { t: "graded"; revealed: boolean }
   | { t: "vocab-review"; cardId: string; revealed: boolean }
+  | { t: "sentence-review"; cardId: string; revealed: boolean }
   /** A practice run worked out; the loop has stopped here on purpose. */
   | { t: "practised"; sectionId: string }
   /**
@@ -147,6 +150,7 @@ type Overlay =
   | { t: "question"; sectionId: string; prompt: string }
   | { t: "schedule" }
   | { t: "vocab-list"; back?: Overlay }
+  | { t: "sentence-list"; back?: Overlay }
   | { t: "vocab-edit"; cardId: string; back?: Overlay }
   /**
    * `prefill` is a word held on the question; `auto` looks it up unattended.
@@ -349,6 +353,14 @@ export function App({ content, session, storage }: Props) {
   // persisted and not on the round: it is armed for the screen it was pressed
   // on and nothing else.
   const [dismissing, setDismissing] = useState(false);
+  /**
+   * The kept sentence one press from being forgotten, by card id.
+   *
+   * An id rather than a flag, so arming one card and then moving to another
+   * cannot leave the second armed — the same hazard `dismissing` disarms
+   * against when the question changes, said in the shape this screen has.
+   */
+  const [forgetting, setForgetting] = useState<string | null>(null);
   const [toast, setToast] = useState<Flash | null>(null);
   const [dictLoading, setDictLoading] = useState(false);
   const [dictFailed, setDictFailed] = useState(false);
@@ -570,6 +582,9 @@ export function App({ content, session, storage }: Props) {
   // that would be dangerous to leave armed: the first press names a topic, and
   // the second press on a different one would take that one out of the pile.
   useEffect(() => setDismissing(false), [question?.prompt, sectionId, phase.t]);
+  // And a half-given forgetting, for the same reason on the other screen: the
+  // card under it is the card the second press would forget.
+  useEffect(() => setForgetting(null), [phase.t]);
 
   // --- the loop ------------------------------------------------------------
 
@@ -636,6 +651,16 @@ export function App({ content, session, storage }: Props) {
         setTest(null);
         setVia(null);
         setPhase({ t: "practised", sectionId: action.sectionId });
+        save();
+        bump();
+        return;
+      }
+      if (action.kind === "sentence-review") {
+        // As with a word: the topic behind us is not what is on screen. A
+        // sentence card carries its own provenance and does not want a grammar
+        // title, a reference and a way into the prose standing over it.
+        setVia(null);
+        setPhase({ t: "sentence-review", cardId: action.cardId, revealed: false });
         save();
         bump();
         return;
@@ -716,6 +741,9 @@ export function App({ content, session, storage }: Props) {
   // phase rather than leave an empty screen behind it.
   useEffect(() => {
     if (phase.t === "vocab-review" && !session.vocabCard(phase.cardId)) advance();
+    if (phase.t === "sentence-review" && !session.sentenceCard(phase.cardId)) {
+      advance();
+    }
   }, [phase, session, advance, tick]);
 
   const started = useRef(false);
@@ -1115,7 +1143,15 @@ export function App({ content, session, storage }: Props) {
     const wasExploring = mode === "explore";
     setMode("review");
 
-    if (entry.kind === "vocab") {
+    if (entry.kind === "sentence") {
+      // As with a word, and for its reason: no topic stands behind a kept
+      // sentence, and the last one left standing would put a grammar title
+      // over a card that is not about it.
+      setSectionId(null);
+      setTest(null);
+      setVia(null);
+      setPhase({ t: "sentence-review", cardId: entry.id, revealed: false });
+    } else if (entry.kind === "vocab") {
       // No topic stands behind a word: letting the last one stay would put a
       // grammar title and its prose above a vocabulary card.
       setSectionId(null);
@@ -1816,6 +1852,77 @@ export function App({ content, session, storage }: Props) {
     else bump();
   };
 
+  // --- kept sentences ------------------------------------------------------
+
+  /**
+   * Keep the question on screen as a card of its own.
+   *
+   * The marks ride along exactly as they stand — the ones made in this sitting,
+   * before the grade has stored them — minus what the student wrote, which the
+   * card does not draw. A card is a copy of a moment, so a second press months
+   * later changes nothing, and the toast says which of the two happened rather
+   * than flashing "kept" over a press that did nothing.
+   */
+  const keepSentence = () => {
+    if (!question || !sectionId) return;
+    const { outcome } = session.keepSentence(question, sectionId, {
+      ...(marks.prompt ? { prompt: marks.prompt } : {}),
+      ...(marks.answer ? { answer: marks.answer } : {}),
+    });
+    save();
+    bump();
+    flash(
+      outcome === "kept"
+        ? "Sentence kept — it comes back for review."
+        : "You already have that one.",
+      "See it",
+      () => setOverlay({ t: "sentence-list", back: under(overlay) }),
+    );
+  };
+
+  const gradeSentence = (cardId: string, rating: Rating) => {
+    navigator.vibrate?.(8);
+    setUndo(takeUndo(phase));
+    session.gradeSentence(cardId, rating);
+    save();
+    // A sentence has no round behind it, so there is nothing to land on —
+    // unless this was the last thing waiting, which is a moment whichever kind
+    // of card ended it. No burst, for the reason `grade` gives.
+    if (mode === "review" && session.stats().due === 0) {
+      setPhase({ t: "landed", cleared: true });
+      setSectionId(null);
+      setTest(null);
+      save();
+      bump();
+      return;
+    }
+    advance();
+  };
+
+  /**
+   * Forget a kept sentence, with a way back — `removeVocab`'s bargain exactly,
+   * and for its reasons: one card put back rather than a whole snapshot, and
+   * the loop advanced rather than rewound.
+   */
+  const forgetSentence = (cardId: string) => {
+    const deleted = session.sentenceCard(cardId);
+    session.deleteSentence(cardId);
+    save();
+    flash(
+      "Sentence forgotten.",
+      deleted && "Undo",
+      deleted &&
+        (() => {
+          session.restoreSentence(deleted);
+          save();
+          bump();
+          flash("Sentence put back.");
+        }),
+    );
+    if (phase.t === "sentence-review" && phase.cardId === cardId) advance();
+    else bump();
+  };
+
   // --- settings ------------------------------------------------------------
 
   useEffect(() => storage.onStateChange(setSyncState), [storage]);
@@ -2001,14 +2108,17 @@ export function App({ content, session, storage }: Props) {
   const badge =
     phase.t === "vocab-review"
       ? "vocab"
-      : phase.t === "done" || phase.t === "practised" || phase.t === "landed"
-        ? null // nothing is being worked on; the app's own name stands here
-        : via;
+      : phase.t === "sentence-review"
+        ? "sentence"
+        : phase.t === "done" || phase.t === "practised" || phase.t === "landed"
+          ? null // nothing is being worked on; the app's own name stands here
+          : via;
   const badgeLabel: Record<string, string> = {
     review: "review",
     new: "new",
     drill: "drill",
     vocab: "vocabulary",
+    sentence: "kept",
   };
   // How far through a run of practice you are, said where the round is already
   // named. It used to be a chip of its own reading "practising <topic> · 2/5",
@@ -2121,13 +2231,15 @@ export function App({ content, session, storage }: Props) {
           </div>
         </div>
         <div className="status__row">
-          {badge === "vocab" ? (
+          {badge === "vocab" || badge === "sentence" ? (
             // A word is on screen, so the topic studied before it is not what
             // this line is about — and its prose is not what a student reaching
             // for help here wants. It says what is being worked on and stops
             // there: the word itself is the answer being graded, and printing
             // it above the gloss would give the card away.
-            <span className="status__title">Vocabulary</span>
+            <span className="status__title">
+              {badge === "vocab" ? "Vocabulary" : "A sentence you kept"}
+            </span>
           ) : section ? (
             // The way in to the grammar while the question is still on screen.
             // The graded view has always had its `§ grammar` link, but the
@@ -2245,6 +2357,8 @@ export function App({ content, session, storage }: Props) {
               sectionId && setOverlay({ t: "grammar", sectionId })
             }
             onToggleMarking={() => setMarking((on) => !on)}
+            onKeepSentence={keepSentence}
+            kept={session.hasSentence(question.prompt, question.answer)}
             // Only on a review: this is the moment the topic has just shown it
             // is not what the student needs. On a run they chose the topic a
             // moment ago, and the way out is choosing another.
@@ -2288,6 +2402,41 @@ export function App({ content, session, storage }: Props) {
             }
           />
         )}
+
+        {phase.t === "sentence-review" &&
+          (() => {
+            const card = session.sentenceCard(phase.cardId);
+            if (!card) return null;
+            return (
+              <SentenceReview
+                card={card}
+                revealed={phase.revealed}
+                schedule={session.previewSentence(phase.cardId)}
+                onReveal={() => setPhase({ ...phase, revealed: true })}
+                onGrade={(r) => gradeSentence(phase.cardId, r)}
+                onForget={() => {
+                  if (forgetting !== phase.cardId) {
+                    setForgetting(phase.cardId);
+                    return;
+                  }
+                  setForgetting(null);
+                  forgetSentence(phase.cardId);
+                }}
+                forgetting={forgetting === phase.cardId}
+                /* The card's own sentence is what a word held here was met in,
+                   so the vocabulary card it makes keeps that line — the same
+                   bargain the graded screen strikes with its reference. */
+                onHoldWord={(word, i) =>
+                  takeWord(
+                    word,
+                    contextOf(card.prompt, card.answer, "answer", i),
+                  )
+                }
+                onInspectWord={inspectWord}
+                onCopy={() => copyToClipboard(card.answer, COPIED.answer)}
+              />
+            );
+          })()}
 
         {phase.t === "vocab-review" &&
           (() => {
@@ -2565,11 +2714,23 @@ export function App({ content, session, storage }: Props) {
           onOpenVocab={() =>
             setOverlay({ t: "vocab-list", back: { t: "schedule" } })
           }
+          sentenceCount={stats.sentences}
+          onOpenSentences={() =>
+            setOverlay({ t: "sentence-list", back: { t: "schedule" } })
+          }
           onStart={reviewNow}
           // Asked before the quoted-only preference narrows anything: what is
           // missing from a topic with no tests is content, not a choice the
           // student made, and the two want different words on the row.
           hasTests={(id) => session.hasTests(id)}
+        />
+      )}
+
+      {overlay?.t === "sentence-list" && (
+        <SentenceListSheet
+          cards={session.sentenceList()}
+          onClose={() => setOverlay(overlay.back ?? null)}
+          onForget={(card) => forgetSentence(card.id)}
         />
       )}
 
@@ -2766,6 +2927,10 @@ export function App({ content, session, storage }: Props) {
           vocabCount={stats.vocab}
           onOpenVocab={() =>
             setOverlay({ t: "vocab-list", back: { t: "settings" } })
+          }
+          sentenceCount={stats.sentences}
+          onOpenSentences={() =>
+            setOverlay({ t: "sentence-list", back: { t: "settings" } })
           }
           keepContext={session.keepsContext()}
           onKeepContext={toggleKeepContext}
