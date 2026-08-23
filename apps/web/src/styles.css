@@ -160,7 +160,7 @@ button {
 
 .status {
   padding: 0.35rem 1.1rem 0.2rem;
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   color: var(--text-dim);
 }
 
@@ -261,7 +261,7 @@ span.status__title {
    it, so the two ends of its life match. */
 .floppy {
   flex: none;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1;
   opacity: 0.55;
   animation: floppy-in 0.25s ease;
@@ -346,7 +346,7 @@ span.status__title {
   padding: 0.25rem 0.5rem;
   color: var(--text-faint);
   font: inherit;
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   letter-spacing: 0.04em;
 }
 
@@ -425,7 +425,7 @@ span.status__title {
 .copybtn {
   margin: -0.35rem -0.4rem -0.35rem auto;
   padding: 0.35rem 0.4rem;
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   color: var(--text-dim);
   border-radius: 6px;
   white-space: nowrap;
@@ -532,7 +532,7 @@ span.status__title {
 }
 
 .note {
-  font-size: 0.88rem;
+  font-size: 0.94rem;
   color: var(--text-dim);
   margin-top: 0.5rem;
 }
@@ -545,7 +545,7 @@ span.status__title {
   /* A span where a list row carries it — a button may not contain a div — and
      a div on the study screen. Told to stack either way. */
   display: block;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--text-faint);
   margin-top: 0.4rem;
   text-align: right;
@@ -560,7 +560,7 @@ span.status__title {
    a note about it — which is also the shape the hint takes on the card front,
    where it appears on its own with no sentence to introduce. */
 .context__prompt {
-  font-size: 0.84rem;
+  font-size: 0.92rem;
   color: var(--text-dim);
   margin-bottom: 0.35rem;
 }
@@ -667,7 +667,7 @@ span.status__title {
 }
 
 .hint {
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   color: var(--text-faint);
   text-align: center;
   margin: 0 0 0.4rem;
@@ -691,7 +691,7 @@ span.status__title {
   gap: 0.5rem;
   width: 100%;
   min-height: var(--tap);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-dim);
 }
 
@@ -720,7 +720,7 @@ span.status__title {
   align-items: center;
   gap: 0.6rem;
   padding: 0.7rem 0;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-dim);
 }
 
@@ -765,7 +765,7 @@ span.status__title {
 }
 
 .crib-row__english {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-dim);
   overflow-wrap: break-word;
 }
@@ -785,14 +785,14 @@ span.status__title {
 .crib-row__gloss {
   display: block;
   margin-top: 0.1rem;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--text-dim);
 }
 
 .crib-row__missing {
   display: block;
   margin-top: 0.1rem;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-style: italic;
   color: var(--text-faint);
 }
@@ -812,7 +812,7 @@ span.status__title {
   border: 1px solid var(--line);
   background: var(--ink-raised);
   color: var(--text);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   display: grid;
   place-items: center;
@@ -937,7 +937,7 @@ span.status__title {
 }
 
 .linkrow button {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-dim);
   min-height: 2.4rem;
   padding: 0 0.5rem;
@@ -973,14 +973,14 @@ span.status__title {
 }
 
 .grade__label {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
 /* The interval each grade buys. Self-grading is otherwise a guess in the
    dark — this makes the choice show its consequence. */
 .grade__when {
-  font-size: 0.68rem;
+  font-size: 0.74rem;
   color: var(--text-faint);
   font-variant-numeric: tabular-nums;
 }
@@ -993,7 +993,7 @@ span.status__title {
    rather than pushing the targets down. A grade bar that moved under the thumb
    mid-round would be worse than the numbers it replaces. */
 .grades__settled {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   line-height: 1.35;
   color: var(--text-faint);
   margin: 0;
@@ -1107,7 +1107,7 @@ span.status__title {
  */
 .grammar {
   font-family: var(--serif);
-  font-size: 0.98rem;
+  font-size: 1.02rem;
   line-height: 1.7;
   overflow-wrap: break-word;
   padding-bottom: 1.5rem;
@@ -1143,7 +1143,7 @@ span.status__title {
 .gr-item--2 {
   padding-left: 2rem;
   color: var(--text-dim);
-  font-size: 0.92rem;
+  font-size: 0.96rem;
 }
 
 .gr-marker {
@@ -1166,7 +1166,7 @@ span.status__title {
 
 .gr-table {
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .gr-table th,
@@ -1318,14 +1318,14 @@ span.status__title {
 
 .pager__ref {
   display: block;
-  font-size: 0.68rem;
+  font-size: 0.74rem;
   letter-spacing: 0.04em;
   color: var(--text-faint);
 }
 
 .pager__title {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-dim);
   /* One line: the pager says which way, not what the section contains. */
   overflow: hidden;
@@ -1336,7 +1336,7 @@ span.status__title {
 .pager__hint {
   margin: 0.6rem 0 0;
   text-align: center;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--text-faint);
 }
 
@@ -1346,7 +1346,7 @@ span.status__title {
 .colophon {
   margin: 1.5rem 0 0.4rem;
   text-align: center;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: var(--text-faint);
 }
@@ -1376,7 +1376,7 @@ span.status__title {
 .map__overall {
   padding: 0.4rem 1.1rem 1rem;
   color: var(--text-dim);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .family {
@@ -1409,7 +1409,7 @@ span.status__title {
   padding: 0.35rem 1.1rem;
   color: var(--text-faint);
   font: inherit;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .books__pick[aria-pressed="true"] {
@@ -1443,12 +1443,12 @@ span.status__title {
 
 .family__name {
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .family__sub {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   color: var(--text-dim);
   font-variant-numeric: tabular-nums;
   margin-top: 0.1rem;
@@ -1514,7 +1514,7 @@ span.status__title {
 .row__title {
   display: block;
   font-family: var(--serif);
-  font-size: 1.02rem;
+  font-size: 1.06rem;
 }
 
 /* Bennett's own section number — the reference every other screen cites. */
@@ -1527,7 +1527,7 @@ span.status__title {
 
 .row__sub {
   display: block;
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--text-dim);
   margin-top: 0.1rem;
 }
@@ -1536,7 +1536,7 @@ span.status__title {
 .row__answer {
   display: block;
   font-family: var(--serif);
-  font-size: 0.98rem;
+  font-size: 1.02rem;
   color: var(--gold);
   margin-top: 0.15rem;
 }
@@ -1589,7 +1589,7 @@ span.status__title {
 .attempt {
   padding: 0.6rem 0;
   border-bottom: 1px solid var(--line);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .attempt:last-child {
@@ -1600,7 +1600,7 @@ span.status__title {
   display: flex;
   gap: 0.5rem;
   align-items: baseline;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--text-faint);
   margin-bottom: 0.25rem;
 }
@@ -1652,7 +1652,7 @@ span.status__title {
 .attempt__mark {
   margin-left: auto;
   padding: 0.1rem 0.45rem;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--text-faint);
   border-radius: 6px;
 }
@@ -1672,7 +1672,7 @@ span.status__title {
 }
 
 .attempt__hint {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--text-faint);
   margin-top: 0.4rem;
 }
@@ -1686,7 +1686,7 @@ span.status__title {
 
 .field__label {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   color: var(--text-dim);
   margin-bottom: 0.3rem;
 }
@@ -1728,7 +1728,7 @@ span.status__title {
 }
 
 .field__hint {
-  font-size: 0.76rem;
+  font-size: 0.85rem;
   color: var(--text-faint);
   margin-top: 0.3rem;
 }
@@ -1770,7 +1770,7 @@ span.status__title {
   background: var(--ink-raised);
   border: 1px solid var(--line);
   color: var(--text);
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
   animation: rise-fade 0.2s ease;
   display: flex;
@@ -1811,7 +1811,7 @@ span.status__title {
 .centered p {
   color: var(--text-dim);
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .spinner {
@@ -1838,7 +1838,7 @@ span.status__title {
 
 .landed__cleared {
   color: var(--text-dim);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 /* The one line on this card that is a question rather than a report. */
@@ -1894,7 +1894,7 @@ span.status__title {
 
 .chip {
   font-family: var(--serif);
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   padding: 0.25rem 0.6rem;
   border: 1px solid var(--line);
   border-radius: 999px;
