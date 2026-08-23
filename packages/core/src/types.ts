@@ -343,6 +343,62 @@ export interface AttemptMarks {
 }
 
 /**
+ * The emphasis a kept sentence carries, which is the two texts it draws.
+ *
+ * `AttemptMarks` minus `submitted`, said as a type rather than left to each
+ * caller to remember. A card is the question and the answer to it — what the
+ * student wrote is not on the card, so marks on it would be marks over a
+ * sentence that is not there.
+ */
+export type CardMarks = Pick<AttemptMarks, "prompt" | "answer">;
+
+/**
+ * A question the student kept: the English, the reference answer, and whatever
+ * they had picked out in either when they kept it.
+ *
+ * The app's whole shape is a bank of questions filed under grammar topics, and
+ * a question arrives because its topic came round. Some of them are worth more
+ * than the topic that carried them — the ones quoted out of an ancient author
+ * above all — and until this there was nothing to do about that but hope the
+ * shuffle brought it back. A word could be lifted out of a sentence and kept; a
+ * sentence could not.
+ *
+ * **The card carries its own copies of the strings**, as a vocabulary card
+ * carries its own citation rather than pointing at the dictionary. The question
+ * bank is generated content and is regenerated — it is why `resumableRound`
+ * tolerates a test that has gone — and a commonplace book whose entries empty
+ * themselves on a rebuild is not a commonplace book.
+ *
+ * **`marks` is frozen where it stood.** A card is not an attempt: it does not
+ * follow later answers on the same sentence, and there is no editor for it. The
+ * way out of a bad one is to forget the card, which has a way back.
+ */
+export interface SentenceCardState {
+  /** `s-` and the question's own id — see `questionId`. */
+  id: string;
+  created: string;
+  fsrs: SerializedCard;
+  /** The English, as it was asked. */
+  prompt: string;
+  /** The reference answer, as it was shown. */
+  answer: string;
+  /** The teaching note the question carried, on the ones that carry one. */
+  note?: string;
+  /** Who it is quoted from — the reason most of these cards will exist. */
+  source?: QuestionSource;
+  /**
+   * The primary topic the question was met under.
+   *
+   * Provenance, and never a key: nothing looks a card up by it, and a card
+   * whose topic id has moved is still a sentence worth keeping. Kept so the
+   * deck can say where a sentence came from.
+   */
+  sectionId: string;
+  /** What was picked out, at the moment it was kept. Absent on most. */
+  marks?: CardMarks;
+}
+
+/**
  * One answered question, kept so the topic's earlier attempts can be re-read
  * after a later one. Self-grading leaves no other trace of what was actually
  * written, and a topic comes back for months: this is that trace.
@@ -614,6 +670,16 @@ export interface Progress {
   /** vocab card id -> state. */
   vocabCards: Record<string, VocabCardState>;
   /**
+   * sentence card id -> state: the questions the student kept.
+   *
+   * Beside `vocabCards` and shaped like it — the whole payload inline, because
+   * the questions behind these are generated content and are rebuilt. Not like
+   * `topicCards`, which store the scheduling card alone and let the content
+   * carry the rest, because a topic id is a promise the book keeps and a
+   * question is not.
+   */
+  sentenceCards: Record<string, SentenceCardState>;
+  /**
    * sectionId -> ids of tests recently served, oldest first.
    *
    * Recency, and nothing more. It used to be the rotation's whole memory —
@@ -760,6 +826,7 @@ export function emptyProgress(citationsVersion = 0): Progress {
     openRound: null,
     topicCards: {},
     vocabCards: {},
+    sentenceCards: {},
     seenTests: {},
     testCycles: {},
     attempts: {},

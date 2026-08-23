@@ -48,6 +48,7 @@ export function repairProgress(raw: unknown, citationsVersion?: number): Repair 
   for (const key of [
     "topicCards",
     "vocabCards",
+    "sentenceCards",
     "seenTests",
     "testCycles",
     "attempts",
