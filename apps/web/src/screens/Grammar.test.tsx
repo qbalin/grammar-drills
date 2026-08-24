@@ -231,3 +231,72 @@ describe("turning the page", () => {
     expect(onStudy).toHaveBeenCalled();
   });
 });
+
+/**
+ * The numbers the book prints, and the references that reach them.
+ *
+ * A topic is a run of sections and its number reaches the page only as the
+ * subtitle, so until these were drawn a reader four sections into the third
+ * declension could not say which of them they were in — and "as given in § 270"
+ * pointed at something no page ever showed.
+ */
+const run: GrammarSection = {
+  id: "bn-020-first-declension",
+  ref: "20-22",
+  title: "First Declension",
+  family: "nouns",
+  order: 20,
+  text: [
+    "⟦#20⟧",
+    "Pure Latin nouns of the First Declension end in -a.",
+    "⟦#21⟧",
+    "The Latin has no article; see ⟦r10:§ 10⟧, 1.",
+    "⟦#22⟧",
+    "Nom.  mēnsa  mēnsae",
+    "Gen.  mēnsae  mēnsārum",
+  ].join("\n"),
+};
+
+describe("the numbers the book prints", () => {
+  it("leads each numbered section with its own number", () => {
+    render(<GrammarSheet section={run} onClose={() => {}} />);
+    const numbers = Array.from(document.querySelectorAll(".gr-num"), (n) => n.textContent);
+    expect(numbers).toEqual(["§ 20.", "§ 21.", "§ 22."]);
+  });
+
+  it("puts the number of a paradigm over it, having no sentence to lead", () => {
+    render(<GrammarSheet section={run} onClose={() => {}} />);
+    const over = document.querySelector(".gr-p--num")!;
+    expect(over.textContent).toBe("§ 22.");
+    expect(over.nextElementSibling!.className).toBe("gr-tablewrap");
+  });
+
+  it("anchors each one, so a reference can land on it", () => {
+    render(<GrammarSheet section={run} onClose={() => {}} />);
+    expect(document.getElementById("gr-sec-21")!.textContent).toBe("§ 21.");
+  });
+
+  it("writes them the way the book being read writes them", () => {
+    render(
+      <GrammarSheet section={run} onClose={() => {}} formatRef={(r) => `¶ ${r}`} />,
+    );
+    expect(document.querySelector(".gr-num")!.textContent).toBe("¶ 20.");
+  });
+});
+
+describe("the references the book linked", () => {
+  it("makes one a press, and says which section it points at", () => {
+    const onFollow = vi.fn();
+    render(<GrammarSheet section={run} onClose={() => {}} onFollow={onFollow} />);
+    fireEvent.click(screen.getByRole("button", { name: "§ 10" }));
+    expect(onFollow).toHaveBeenCalledWith("10");
+  });
+
+  it("sets one as the book set it, and goes nowhere, where nothing follows", () => {
+    render(<GrammarSheet section={run} onClose={() => {}} />);
+    expect(screen.queryByRole("button", { name: "§ 10" })).toBeNull();
+    expect(document.querySelector(".grammar")!.textContent).toContain(
+      "The Latin has no article; see § 10, 1.",
+    );
+  });
+});

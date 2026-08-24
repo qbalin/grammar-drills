@@ -1168,6 +1168,59 @@ span.status__title {
   margin: 0 0 0.9rem;
 }
 
+/* A section that opens with a paradigm has no sentence to lead, so its number
+   stands on its own line over the table. Tight underneath, because what it
+   introduces is right there. */
+.gr-p--num {
+  margin-bottom: 0.3rem;
+}
+
+/*
+ * The number the book prints where a section begins.
+ *
+ * A topic is a run of sections and the run's number is in the sheet's head, so
+ * this is the only thing on the page that says which of them you are reading —
+ * and it is what a cross-reference lands on. Set as the book sets it: a lead-in
+ * to the paragraph, in the gold the other markers use, with the digits held to
+ * one width so a column of them does not shuffle.
+ */
+.gr-num {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--gold-muted);
+  white-space: nowrap;
+  margin-right: 0.4rem;
+  /* The anchor a reference scrolls to. Clearing the sheet's own head, which
+     floats over the top of the body. */
+  scroll-margin-top: 1rem;
+}
+
+/*
+ * A cross-reference the book hyperlinked, live.
+ *
+ * Underlined rather than coloured alone: Smyth and Lane cite by bare number, so
+ * "see 144" has nothing but the rule under it to say that 144 is somewhere you
+ * can go. It is a button inside a paragraph, so everything a button brings with
+ * it — its own font, its own line-height, a baseline of its own — is put back.
+ */
+.gr-ref {
+  font: inherit;
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold-dim);
+  text-underline-offset: 0.15em;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.gr-ref:active {
+  color: var(--gold-muted);
+}
+
 .gr-h {
   font-size: 0.78rem;
   font-family: var(--sans);

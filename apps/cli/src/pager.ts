@@ -167,14 +167,28 @@ function rawRow(row: Row): RichLine {
   return trimEndRuns(line);
 }
 
-/** The screen lines for one block. */
-function layoutBlock(block: Block, width: number): RichLine[] {
+/**
+ * The screen lines for one block.
+ *
+ * `refPrefix` is how the book writes a section reference, and it is here for
+ * the number a block may open a section with: a topic is a *run* of sections,
+ * and until the runs were marked the pager showed four of them as one wall of
+ * prose with nothing saying where §21 began.
+ */
+function layoutBlock(block: Block, width: number, refPrefix: string): RichLine[] {
+  // Bold, as the book prints it, and with a space after: a lead-in to the
+  // sentence it opens rather than a line of its own.
+  const num: Run[] = block.num
+    ? [{ text: `${refPrefix}${block.num}.`, b: true }, { text: " " }]
+    : [];
+  const lead = (runs?: Run[], text = ""): Run[] => [...num, ...(runs ?? [{ text }])];
+
   switch (block.kind) {
     case "para":
-      return wrapRuns(block.runs ?? [{ text: block.text }], width);
+      return wrapRuns(lead(block.runs, block.text), width);
 
     case "heading":
-      return wrapRuns(block.runs ?? [{ text: block.text }], width);
+      return wrapRuns(lead(block.runs, block.text), width);
 
     case "item": {
       const indent = INDENT[block.level];
@@ -182,15 +196,17 @@ function layoutBlock(block: Block, width: number): RichLine[] {
       const hang = " ".repeat(head.length);
       // Wrap to what is left after the marker, then hang the rest under the
       // text so the marker stays the only thing in the left margin.
-      const body = wrapRuns(block.runs ?? [{ text: block.text }], Math.max(8, width - head.length));
+      const body = wrapRuns(lead(block.runs, block.text), Math.max(8, width - head.length));
       return body.map((line, i) => [{ text: i === 0 ? head : hang }, ...line]);
     }
 
-    case "table":
-      return (
+    case "table": {
+      const rows =
         layoutTable(block.rows, block.columns, width) ??
-        block.rows.flatMap((r) => wrapRuns(rawRow(r), width))
-      );
+        block.rows.flatMap((r) => wrapRuns(rawRow(r), width));
+      // A paradigm has no sentence to lead, so the number stands over it.
+      return num.length ? [trimEndRuns(num), ...rows] : rows;
+    }
   }
 }
 
@@ -210,7 +226,7 @@ export function layoutRichSection(
   const out: RichLine[] = [];
   for (const block of parseBlocks(text, style)) {
     if (out.length > 0) out.push([]);
-    out.push(...layoutBlock(block, width));
+    out.push(...layoutBlock(block, width, style.refPrefix));
   }
   return out;
 }

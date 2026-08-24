@@ -90,6 +90,9 @@ export function GrammarSheet({
   next,
   onPage,
   onStudy,
+  onFollow,
+  at,
+  formatRef = (r) => `${profile.grammar.refPrefix}${r}`,
 }: {
   section: GrammarSection;
   onClose: () => void;
@@ -101,6 +104,20 @@ export function GrammarSheet({
   onPage?: (section: GrammarSection) => void;
   /** Open what can be done with the section on screen — quiz, study, drill. */
   onStudy?: () => void;
+  /**
+   * Follow a cross-reference, by the number the book printed. Without it the
+   * references are set as the book set them and go nowhere, which is what a
+   * pack whose source carried no links gets anyway.
+   */
+  onFollow?: (ref: string) => void;
+  /** The numbered section to open at, when a reference asked for one. */
+  at?: string;
+  /**
+   * How this book writes a section reference. Per book rather than per pack:
+   * `refPrefix` is declared on each grammar, and a Lane page read out of the
+   * primary's prefix is the primary's prefix on somebody else's numbering.
+   */
+  formatRef?: (ref: string) => string;
 }) {
   // Which way the last turn went, so the new page comes in from the side the
   // finger left towards rather than simply appearing.
@@ -132,7 +149,22 @@ export function GrammarSheet({
     return () => removeEventListener("keydown", onKey);
   }, [prev, next, onPage]);
 
-  const ref = (s: GrammarSection) => `${profile.grammar.refPrefix}${s.ref}`;
+  // Land on the section a reference asked for.
+  //
+  // After paint rather than in the effect proper: `Sheet` puts a newly-opened
+  // page back at the top, and a parent's effects run after its children's, so
+  // scrolling here directly would be undone a moment later by the reset. A
+  // reference into the *same* topic changes no title, so nothing resets and
+  // this is the only thing that moves the page.
+  useEffect(() => {
+    if (!at) return;
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(anchor(at))?.scrollIntoView?.({ block: "start" });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [at, section.id]);
+
+  const ref = (s: GrammarSection) => formatRef(s.ref);
 
   return (
     <Sheet
@@ -162,7 +194,12 @@ export function GrammarSheet({
           className={`grammar${turn ? ` grammar--turn${turn > 0 ? "-next" : "-prev"}` : ""}`}
         >
           {parseBlocks(section.text, profile.grammar).map((block, i) => (
-            <GrammarBlock key={i} block={block} />
+            <GrammarBlock
+              key={i}
+              block={block}
+              formatRef={formatRef}
+              onFollow={onFollow}
+            />
           ))}
         </div>
         {onPage && (prev || next) && (
@@ -213,19 +250,68 @@ export function GrammarSheet({
   );
 }
 
+/** The id a section number answers to, so a reference can land on it. */
+const anchor = (n: string) => `gr-sec-${n}`;
+
 /**
- * Text with the emphasis the grammar set it in.
+ * What everything below needs and none of it should have to be told twice: how
+ * this book writes a section reference, and what to do when one is pressed.
+ */
+interface Reading {
+  formatRef: (ref: string) => string;
+  onFollow?: (ref: string) => void;
+}
+
+/**
+ * The number the book prints where a section begins.
+ *
+ * A topic is a *run* of sections — `§ 20-22 First Declension` is three of them
+ * — and until this the run's number reached the page only as the sheet's
+ * subtitle. Inside, the boundaries were invisible: "as given in § 270" pointed
+ * at something no page ever showed, and a student reading four sections of the
+ * third declension could not say which of them they were in.
+ *
+ * Set as a lead-in because that is how the book sets it, and carrying the
+ * anchor because it is also where a reference lands.
+ */
+function Num({ n, formatRef }: { n: string } & Pick<Reading, "formatRef">) {
+  return (
+    <span className="gr-num" id={anchor(n)}>
+      {formatRef(n)}.
+    </span>
+  );
+}
+
+/**
+ * Text with the emphasis the grammar set it in, and its cross-references live.
  *
  * Bennett bolds the *ending* inside each form and italicises the English
  * gloss, which is the difference between a paradigm and a list of words. Packs
  * whose source keeps none of that pass no runs and fall back to plain text.
+ *
+ * A run carrying `ref` is a reference the book itself hyperlinked, and it
+ * becomes a button. Table cells render through here too, so `(For declension
+ * see § 87.)` inside a paradigm row is as live as one in a sentence.
  */
-function Runs({ runs, text }: { runs?: Run[]; text: string }) {
+function Runs({
+  runs,
+  text,
+  onFollow,
+}: { runs?: Run[]; text: string } & Pick<Reading, "onFollow">) {
   if (!runs) return <>{text}</>;
   return (
     <>
       {runs.map((run, i) =>
-        run.b || run.i ? (
+        run.ref && onFollow ? (
+          <button
+            key={i}
+            type="button"
+            className={`gr-ref ${run.b ? "gr-b" : ""} ${run.i ? "gr-i" : ""}`.trim()}
+            onClick={() => onFollow(run.ref!)}
+          >
+            {run.text}
+          </button>
+        ) : run.b || run.i ? (
           <span key={i} className={`${run.b ? "gr-b" : ""} ${run.i ? "gr-i" : ""}`.trim()}>
             {run.text}
           </span>
@@ -237,19 +323,30 @@ function Runs({ runs, text }: { runs?: Run[]; text: string }) {
   );
 }
 
-function GrammarBlock({ block }: { block: Block }) {
+function GrammarBlock({
+  block,
+  formatRef,
+  onFollow,
+}: { block: Block } & Reading) {
+  // The number of the section this block opens, where it opens one. Inline for
+  // everything that has a sentence to lead; on its own line above a paradigm,
+  // which has none — §42 is a bare number over a table in Bennett.
+  const num = block.num ? <Num n={block.num} formatRef={formatRef} /> : null;
+
   switch (block.kind) {
     case "para":
       return (
         <p className="gr-p">
-          <Runs runs={block.runs} text={block.text} />
+          {num}
+          <Runs runs={block.runs} text={block.text} onFollow={onFollow} />
         </p>
       );
 
     case "heading":
       return (
         <h3 className="gr-h">
-          <Runs runs={block.runs} text={block.text} />
+          {num}
+          <Runs runs={block.runs} text={block.text} onFollow={onFollow} />
         </h3>
       );
 
@@ -258,37 +355,41 @@ function GrammarBlock({ block }: { block: Block }) {
         <div className={`gr-item gr-item--${block.level}`}>
           <span className="gr-marker">{block.marker}</span>
           <span>
-            <Runs runs={block.runs} text={block.text} />
+            {num}
+            <Runs runs={block.runs} text={block.text} onFollow={onFollow} />
           </span>
         </div>
       );
 
     case "table":
       return (
-        <TableBox>
-          {block.rows.map((row, i) => (
-            <tr key={i} className={`gr-row--${row.kind}`}>
-              {row.kind === "divider" ? (
-                <td className="gr-divider" colSpan={block.columns}>
-                  <Runs runs={row.runs?.[0]} text={row.cells[0]!} />
-                </td>
-              ) : (
-                row.cells.map((cell, j) =>
-                  row.kind === "head" ? (
-                    // The stub column is never part of a caption group.
-                    <th key={j} scope="col" colSpan={j === 0 ? 1 : (row.span ?? 1)}>
-                      <Runs runs={row.runs?.[j]} text={cell} />
-                    </th>
-                  ) : (
-                    <td key={j}>
-                      <Runs runs={row.runs?.[j]} text={cell} />
-                    </td>
-                  ),
-                )
-              )}
-            </tr>
-          ))}
-        </TableBox>
+        <>
+          {num && <p className="gr-p gr-p--num">{num}</p>}
+          <TableBox>
+            {block.rows.map((row, i) => (
+              <tr key={i} className={`gr-row--${row.kind}`}>
+                {row.kind === "divider" ? (
+                  <td className="gr-divider" colSpan={block.columns}>
+                    <Runs runs={row.runs?.[0]} text={row.cells[0]!} onFollow={onFollow} />
+                  </td>
+                ) : (
+                  row.cells.map((cell, j) =>
+                    row.kind === "head" ? (
+                      // The stub column is never part of a caption group.
+                      <th key={j} scope="col" colSpan={j === 0 ? 1 : (row.span ?? 1)}>
+                        <Runs runs={row.runs?.[j]} text={cell} onFollow={onFollow} />
+                      </th>
+                    ) : (
+                      <td key={j}>
+                        <Runs runs={row.runs?.[j]} text={cell} onFollow={onFollow} />
+                      </td>
+                    ),
+                  )
+                )}
+              </tr>
+            ))}
+          </TableBox>
+        </>
       );
   }
 }
