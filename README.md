@@ -352,6 +352,16 @@ The CLI's index keys become buttons on the topic sheet — **Practise these 17**
 leading, then **Read § 63-66**, the star, and **Stop reviewing this topic** at
 the foot where a deletion belongs.
 
+Beside the 📖 that opens the index is a **🎲**, which is the same question
+answered for you: one tap picks a topic and starts practising it. It leans
+towards the topics you have answered least — `1/sqrt(1 + answered)`, so an
+untouched one is about five times as likely as one you are twenty-four questions
+into — and it leans no harder than that, because a die that never revisits
+anything would be a rule about what you may study. It never hands back what is
+already on screen, and the toast it raises carries **roll again** for a roll you
+do not like. A topic you have worked out and do not want offered comes off it
+from its own sheet, and its row on the index then reads `off the die`.
+
 The status bar leads with the two errands: **Explore** and **Review**, both
 labels always on screen, the live one pressed. Three links used to say the same two things one at
 a time — *set these aside and explore*, *back to reviews*, *back to the book* —

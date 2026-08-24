@@ -107,6 +107,10 @@ function topicState(t: TopicProgress, quotedOnly: boolean): string {
      */
     t.questions > 0 ? `${t.answered}/${t.questions} questions answered` : "",
     t.due ? "due now" : "",
+    // Not a state of study at all — the one thing on this line the student put
+    // there. It is here because a topic that stops coming up when the die is
+    // rolled should say why, on the row where they would go looking.
+    t.noRoll ? "off the die" : "",
     // Not a verdict either — see `TopicProgress.lapses`. It is here as well as
     // in the sheet because finding the topic that keeps going wrong is exactly
     // what somebody scrolling this list is doing.
@@ -464,6 +468,7 @@ export function TopicSheet({
   onQuestions,
   onStar,
   onDismiss,
+  onToggleRoll,
   onMark,
   onHoldWord,
   onInspectWord,
@@ -485,6 +490,8 @@ export function TopicSheet({
    * ordinary state of a topic and the state a dismissal leaves it in.
    */
   onDismiss?: () => void;
+  /** Take it off the die, or put it back — see `Progress.noRoll`. */
+  onToggleRoll: () => void;
   onMark?: (at: string, marks: AttemptMarks) => void;
   /** The trail's own two gestures, passed through. */
   onHoldWord?: HoldPastWord;
@@ -572,6 +579,28 @@ export function TopicSheet({
         <button className="btn" onClick={onStar} aria-pressed={topic.starred}>
           {topic.starred ? "★ Starred" : "☆ Star this topic"}
         </button>
+        {/* The star's opposite number, and it belongs on the same row: one says
+            come back to this, the other says stop handing it to me at random.
+            No confirmation, unlike everything else that outlives this sheet —
+            nothing is deleted by it and the button is its own undo.
+
+            Words rather than the header's 🎲. A colour emoji is set in the
+            system's own font and is not the register the star's ☆ is in, and it
+            took the label onto a second line beside it. The glyph earns its
+            place in the status bar, where there is no room for a word.
+
+            Only where there is a die to be on. A topic the preference leaves
+            with nothing to serve is one the die already skips, so offering to
+            exclude it would be offering to change nothing. */}
+        {topic.questions > 0 && !topic.readingOnly && (
+          <button
+            className="btn"
+            onClick={onToggleRoll}
+            aria-pressed={topic.noRoll}
+          >
+            {topic.noRoll ? "✓ Off the die" : "Never roll this"}
+          </button>
+        )}
       </div>
       <div className="actions">
         {/* The bank narrows with the preference too. It used to be argued that

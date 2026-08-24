@@ -83,10 +83,15 @@ export function importProgress(raw: string, content: Content): Progress {
      * topic id moved.
      */
     sentenceCards: parsed.sentenceCards ?? {},
-    // A list rather than a record, so it takes the same filter by hand. A star
-    // on a topic this bundle does not hold would pin a row that cannot be drawn.
+    // Lists rather than records, so they take the same filter by hand. A star
+    // on a topic this bundle does not hold would pin a row that cannot be
+    // drawn, and a topic held off the die that is not in the book is holding
+    // nothing off anything.
     ...(parsed.starred
       ? { starred: parsed.starred.filter((id) => known(id)) }
+      : {}),
+    ...(parsed.noRoll
+      ? { noRoll: parsed.noRoll.filter((id) => known(id)) }
       : {}),
     updatedAt: parsed.updatedAt ?? base.updatedAt,
   };

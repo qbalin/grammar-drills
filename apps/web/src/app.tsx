@@ -1045,14 +1045,74 @@ export function App({ content, session, storage }: Props) {
    * A swept bank is not a reason to refuse: asking again is asking for the
    * whole thing a second time, which is what a second run is.
    */
-  const drillTopic = (topic: TopicProgress) => {
+  const drillTopic = (topic: TopicProgress, again?: () => void) => {
     session.drillTopic(topic.sectionId);
     save();
     setOverlay(null);
     setMode("explore");
     advance("explore");
     const run = session.practice(topic.sectionId);
-    flash(`Practising “${topic.title}” — ${run?.total ?? 0} to go.`);
+    // `again` is the die's, and the toast is where it belongs: the moment a
+    // rolled topic is wrong for today is the moment its name appears, and the
+    // announcement is already on screen with nothing else to say.
+    flash(
+      `Practising “${topic.title}” — ${run?.total ?? 0} to go.`,
+      again && "roll again",
+      again,
+    );
+  };
+
+  /**
+   * Let the die choose the topic.
+   *
+   * Choosing is the whole of how a run begins here, and that is right when
+   * there is a topic in mind. When there is not — which is most evenings — it is
+   * four taps and a decision standing between a student and the thing they
+   * opened the app to do. So one tap chooses, weighted towards what they have
+   * answered least (`Session.rollTopic`), and a roll they do not like costs one
+   * more tap on the toast rather than a trip back to the index.
+   *
+   * It goes through `drillTopic` unchanged: a rolled topic is entered exactly
+   * as a chosen one is, so there is no second way onto a topic to keep in step.
+   */
+  const rollTopic = (refused?: string) => {
+    navigator.vibrate?.(8);
+    /*
+     * Whatever is on screen is passed as the one to avoid: a die that hands
+     * back the topic already open has done nothing visible, and the student
+     * reads that as a broken button rather than as a coincidence.
+     *
+     * `refused` is what the toast's own roll passes, and it has to be passed
+     * rather than read off `sectionId`. The toast holds the handler from the
+     * render that raised it, so its `sectionId` is what was on screen *before*
+     * that roll landed — one render behind, and behind by exactly the topic
+     * being refused.
+     */
+    const rolled = session.rollTopic(
+      Math.random,
+      new Date(),
+      refused ?? sectionId ?? undefined,
+    );
+    if (!rolled) {
+      flash("Nothing to roll — every topic with questions is off the die.");
+      return;
+    }
+    drillTopic(rolled, () => rollTopic(rolled.sectionId));
+  };
+
+  /** Take a topic off the die, or put it back. */
+  const toggleRoll = (topic: TopicProgress) => {
+    navigator.vibrate?.(8);
+    const off = session.isExcludedFromRoll(topic.sectionId);
+    if (off) session.allowInRoll(topic.sectionId);
+    else session.excludeFromRoll(topic.sectionId);
+    save();
+    bump();
+    flash(
+      off
+        ? `“${topic.title}” is back on the die.`
+        : `The die will skip “${topic.title}”.`,
+    );
   };
 
   /** Mark a topic to come back to, or take the mark off. */
@@ -2222,6 +2282,17 @@ export function App({ content, session, storage }: Props) {
             >
               📖
             </button>
+            {/* Beside the index, because it answers the same question the
+                index does — what shall I study — and answers it for you. The
+                pair is the whole of how a run begins: pick one, or be handed
+                one. */}
+            <button
+              className="iconbtn"
+              onClick={() => rollTopic()}
+              aria-label="Roll a topic to study"
+            >
+              🎲
+            </button>
             <button
               className="iconbtn"
               onClick={() => setOverlay({ t: "settings" })}
@@ -2651,6 +2722,7 @@ export function App({ content, session, storage }: Props) {
                     }
                   : undefined
               }
+              onToggleRoll={() => toggleRoll(topic)}
               onMark={markPast(topic.sectionId)}
               onHoldWord={holdPastWord}
               onInspectWord={inspectWord}

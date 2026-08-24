@@ -3847,6 +3847,115 @@ describe("the one way onto a topic", () => {
     expect(screen.queryByText("★ Starred")).toBeNull();
   });
 
+  /**
+   * The other way onto a topic, and the only one the student does not steer.
+   *
+   * The index is still where a topic is *chosen*; this is for the evening when
+   * choosing is the part standing in the way. So it does the whole of what
+   * picking a row and pressing Practise does — same run, same explore mode —
+   * and the only thing it adds is a way to refuse the answer.
+   */
+  describe("the die", () => {
+    const die = () => screen.getByRole("button", { name: "Roll a topic to study" });
+
+    /** A deck with some topics already off the die, and nothing being studied. */
+    const withNoRoll = (...off: string[]) => {
+      const s = new Session(new Content(fixture, testProfile));
+      for (const id of off) s.excludeFromRoll(id);
+      return mount(s.progress(), fixture, testProfile, null);
+    };
+
+    it("hands over a topic to practise, and names it with a way to refuse", async () => {
+      const user = userEvent.setup();
+      const { session } = mount(undefined, fixture, testProfile, null);
+
+      await user.click(die());
+
+      // A rolled topic is entered exactly as a chosen one is: a run in flight,
+      // in explore, with the status bar naming it.
+      const run = session.practiseRun();
+      expect(run).not.toBeNull();
+      expect(onScreen()).toBe(
+        session.grammarMap().find((t) => t.sectionId === run!.sectionId)!.title,
+      );
+      expect(screen.getByRole("button", { name: "roll again" })).toBeDefined();
+    });
+
+    it("rolls something else when the answer is refused", async () => {
+      // The refusal has to be worth making: a die that can hand back what is
+      // already on screen reads as a broken button rather than as a coincidence.
+      const user = userEvent.setup();
+      mount(undefined, fixture, testProfile, null);
+
+      await user.click(die());
+      const first = onScreen();
+      await user.click(screen.getByRole("button", { name: "roll again" }));
+      expect(onScreen()).not.toBe(first);
+    });
+
+    it("never rolls a topic that has been taken off it", async () => {
+      const user = userEvent.setup();
+      const { session } = withNoRoll("decl1", "pres");
+
+      for (let i = 0; i < 8; i += 1) {
+        await user.click(die());
+        expect(session.practiseRun()?.sectionId).toBe("decl2");
+      }
+    });
+
+    it("says so rather than doing nothing when every topic is off it", async () => {
+      const user = userEvent.setup();
+      const { session } = withNoRoll("decl1", "decl2", "pres");
+
+      await user.click(die());
+      expect(session.practiseRun()).toBeNull();
+      expect(screen.getByText(/Nothing to roll/)).toBeDefined();
+    });
+
+    it("takes a topic off the die from its sheet, and says so on its row", async () => {
+      const user = userEvent.setup();
+      const { session } = mount();
+
+      await pickTopic(user, /Verb forms/, /Present indicative/);
+      await user.click(screen.getByRole("button", { name: "Never roll this" }));
+      expect(session.isExcludedFromRoll("pres")).toBe(true);
+
+      // The button is its own undo — no arming, because nothing was deleted.
+      const back = screen.getByRole("button", { name: "✓ Off the die" });
+      expect(back.getAttribute("aria-pressed")).toBe("true");
+
+      // And the index says why the topic stopped coming up, where somebody
+      // would go looking for it.
+      await user.click(screen.getByRole("button", { name: /^Close/ }));
+      const map = () => screen.getByRole("dialog", { name: "Grammar index" });
+      await user.click(within(map()).getByRole("button", { name: /Verb forms/ }));
+      const row = () =>
+        within(map()).getByRole("button", { name: /Present indicative/ });
+      expect(row().textContent).toContain("off the die");
+
+      await user.click(row());
+      await user.click(screen.getByRole("button", { name: "✓ Off the die" }));
+      expect(session.isExcludedFromRoll("pres")).toBe(false);
+    });
+
+    it("offers no toggle on a page there is nothing to roll for", async () => {
+      // A topic with no questions is one the die already skips, so offering to
+      // exclude it would be offering to change nothing.
+      const user = userEvent.setup();
+      const withEmpty: ContentData = {
+        ...fixture,
+        grammar: [
+          ...fixture.grammar,
+          { id: "sounds", ref: "1", title: "Sounds", family: "nouns", text: "...", order: 1, readingOnly: true },
+        ],
+      };
+      mount(undefined, withEmpty, testProfile);
+
+      await pickTopic(user, /Nouns/, /Sounds/);
+      expect(screen.queryByRole("button", { name: /Never roll this/ })).toBeNull();
+    });
+  });
+
   it("takes a topic out of the review pile from its sheet, and only an offer puts it back", async () => {
     const user = userEvent.setup();
     const { session } = mount(enrolled());
