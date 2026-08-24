@@ -123,13 +123,22 @@ function decode(line: string): Decoded {
       flush();
       open.push(line[i + 1]!);
       i += 3;
-    } else if (c === CLOSE && line[i + 1] === CLOSE) {
-      buf += CLOSE;
-      i += 2;
+      // A close ends the innermost run before it can be an escaped bracket.
+      //
+      // `⟧⟧` is genuinely ambiguous: two runs ending together look exactly like
+      // one doubled literal, and `marked()` writes both. Lane has 283 of the
+      // first and no book has ever had the second — `⟦⟦` appears nowhere in any
+      // of the three — so the reading that fires is the one that happens, and
+      // 40 Lane sections stop showing a stray bracket in the middle of a
+      // sentence. An escaped bracket still decodes wherever one could be
+      // written: at the top level, outside any run.
     } else if (c === CLOSE && open.length > 0) {
       flush();
       open.pop();
       i += 1;
+    } else if (c === CLOSE && line[i + 1] === CLOSE) {
+      buf += CLOSE;
+      i += 2;
     } else {
       buf += c;
       i += 1;

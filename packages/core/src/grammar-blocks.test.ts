@@ -7,9 +7,24 @@ import type { GrammarSection } from "./types.js";
 /** The style is the pack's; these tests are about the shapes, not the book. */
 const parseBlocksStyled = (text: string) => parseBlocks(text, testProfile.grammar);
 
-const grammar: GrammarSection[] = JSON.parse(
-  readFileSync(new URL("../../../languages/latin/content/grammar.json", import.meta.url), "utf8"),
-);
+const book = (path: string): GrammarSection[] =>
+  JSON.parse(readFileSync(new URL(`../../../${path}`, import.meta.url), "utf8"));
+
+const grammar = book("languages/latin/content/grammar.json");
+
+/**
+ * Every book either pack ships, not merely the primary of one of them.
+ *
+ * The round-trip below ran against Bennett alone, and Lane was shipping 283
+ * nested runs whose two closing brackets read as one escaped bracket — 40
+ * sections with a stray ⟧ in the middle of a sentence, in the app, unnoticed.
+ * A book nobody checks is a book that quietly rots.
+ */
+const books: [string, GrammarSection[]][] = [
+  ["Bennett", grammar],
+  ["Lane", book("languages/latin/content/grammars/lane.json")],
+  ["Smyth", book("languages/ancient-greek/content/grammar.json")],
+];
 
 const section = (ref: string) => {
   const s = grammar.find((g) => g.ref === ref);
@@ -237,9 +252,11 @@ describe("parseBlocks", () => {
   });
 
   describe("against the shipped grammar", () => {
-    it("leaves no markup in the plain text of any section", () => {
-      for (const s of grammar) {
-        expect(plainText(s.text), `§${s.ref}`).not.toMatch(/⟦|⟧/);
+    it("leaves no markup in the plain text of any section of any book", () => {
+      for (const [name, sections] of books) {
+        for (const s of sections) {
+          expect(plainText(s.text), `${name} §${s.ref}`).not.toMatch(/⟦|⟧/);
+        }
       }
     });
 
