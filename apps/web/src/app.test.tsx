@@ -1234,21 +1234,27 @@ describe("marking up an answer", () => {
     expect(screen.getByRole("dialog", { name: "Second declension" })).toBeDefined();
   });
 
-  it("has nowhere to go forward to until something has been gone back over", async () => {
+  it("has nowhere to go at either end of the trail, and says so", async () => {
     const user = userEvent.setup();
-    // Nothing being practised, so the reader is not already open: a round on
-    // fresh ground teaches before it tests, and that page is a step like any
-    // other.
-    mount(undefined, linked, testProfile, null);
+    // A topic being practised, so the status bar names it and the book is one
+    // tap from the study screen — which is the way into the reader that opens
+    // it over nothing at all.
+    mount(undefined, linked);
 
-    // The empty screen offers the index twice, as a word and as a glyph.
-    await user.click(screen.getAllByRole("button", { name: "Grammar index" })[0]!);
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    // The index is not the reader, and only the reader carries the pair.
+    expect(screen.queryByRole("button", { name: "Back" })).toBeNull();
+    expect(screen.queryByRole("button", { name: "Forward" })).toBeNull();
+
+    await user.click(screen.getByRole("button", { name: "Close" }));
+
+    // The book off the status bar, which opens the reader over the study screen
+    // and nothing else: both ends of the trail are here at once. Nothing gone
+    // back over, so nothing to go forward to; and nothing behind but the screen
+    // underneath, which ↩ does not step onto — leaving the book is ✕'s job.
+    await user.click(screen.getByRole("button", { name: /^Read the grammar for/ }));
     expect(screen.getByRole("button", { name: "Forward" })).toHaveProperty("disabled", true);
-
-    // The first sheet opened is itself a step, so back from it is the screen it
-    // was opened over — the same place ✕ leads, by the other road.
-    await user.click(screen.getByRole("button", { name: "Back" }));
-    expect(screen.queryByRole("dialog")).toBeNull();
+    expect(screen.getByRole("button", { name: "Back" })).toHaveProperty("disabled", true);
   });
 
   it("drops the marks on a sentence that is rewritten, and keeps the rest", async () => {

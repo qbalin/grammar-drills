@@ -347,15 +347,27 @@ export function App({ content, session, storage }: Props) {
       return { stack: stack.slice(over), at: stack.length - 1 - over };
     });
   }, []);
+  /*
+   * `back` stops at the first sheet of an excursion rather than at the screen
+   * underneath it. The foot of the stack is `null` — no sheet at all — and a ↩
+   * that steps onto it is a ↩ that closes the book, which is ✕'s answer and not
+   * this pair's. So the arrow is dead at both ends of the trail, and a reader
+   * can tell how far back they can go by looking at it.
+   */
   const trail = useMemo(
     () => ({
-      back: nav.at > 0 ? () => setNav((n) => ({ ...n, at: n.at - 1 })) : undefined,
+      back:
+        nav.at > 0 && nav.stack[nav.at - 1] != null
+          ? () => setNav((n) => ({ ...n, at: n.at - 1 }))
+          : undefined,
       forward:
         nav.at < nav.stack.length - 1
           ? () => setNav((n) => ({ ...n, at: n.at + 1 }))
           : undefined,
     }),
-    [nav.at, nav.stack.length],
+    // The whole of `nav`: what is behind the cursor is read as well as where
+    // the cursor is.
+    [nav],
   );
 
   /*

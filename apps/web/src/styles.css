@@ -1107,26 +1107,41 @@ span.status__title {
 
 .sheet__head {
   display: flex;
-  align-items: baseline;
-  gap: 0.6rem;
+  flex-direction: column;
+  gap: 0.3rem;
   padding: 0.7rem 1.1rem 0.6rem;
   border-bottom: 1px solid var(--line);
   flex: none;
 }
 
+/* The controls, and nothing else. A sheet with only ✕ on it pays a row's
+   height for a line it does not need, which is the price of a head that is
+   the same shape whatever is on it. */
+.sheet__bar {
+  display: flex;
+  align-items: center;
+}
+
+/* The sheet's own action, then ✕, held at the right end whether or not there
+   is a trail at the left — as `.status__tools` holds the status bar's. */
+.sheet__acts {
+  display: flex;
+  align-items: center;
+  flex: none;
+  margin-left: auto;
+}
+
 /*
- * ↩ and ↪, at the front of every sheet's head.
+ * ↩ and ↪, at the front of the reader's controls.
  *
- * Ahead of the reference and the title because that is where a back control
- * goes and because it is the one thing on the row whose position must not
- * depend on how long a title is. Disabled rather than hidden at the ends of the
- * trail, so the pair does not shuffle the head about as a reader moves.
+ * At the front because that is where a back control goes. Disabled rather than
+ * hidden at the ends of the trail, so the pair does not shuffle the head about
+ * as a reader moves.
  */
 .sheet__trail {
   display: flex;
   gap: 0.1rem;
   flex: none;
-  margin-right: -0.2rem;
 }
 
 .iconbtn--trail:disabled {
@@ -1134,6 +1149,16 @@ span.status__title {
   cursor: default;
 }
 
+/* What the sheet is, on a line of its own. */
+.sheet__name {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+/* No ellipsis, unlike `.status__title`: that line is one line tall by
+   contract, and this one is the page's name and can afford to wrap. */
 .sheet__title {
   font-family: var(--serif);
   font-size: 1.15rem;
@@ -1144,10 +1169,10 @@ span.status__title {
 /* On the graded screen the copy button is the last thing in its row and its
    negative right margin pulls it flush with the block's edge. In a sheet head
    the close button is to its right, so that pull would close the gap between
-   two controls; and the title already takes the slack, so the auto left margin
-   has nothing to do. The vertical negatives stay: they are what keep a head no
-   taller for carrying one. */
-.sheet__head .copybtn {
+   two controls; and `.sheet__acts` takes the row's slack, so the auto left
+   margin has nothing to do. The vertical negatives stay: they are what keep a
+   head no taller for carrying one. */
+.sheet__bar .copybtn {
   margin-left: 0;
   margin-right: 0;
 }

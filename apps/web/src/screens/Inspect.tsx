@@ -154,11 +154,11 @@ export function InspectSheet({
     : undefined;
 
   return (
-    // The button copies the subtitle, not the title, and stands in the same row
-    // as it: the word wanted in a note or a message is the one that was on the
-    // screen, and a double-click is often the moment you find you want it. The
-    // citation is one tap of that away in any dictionary; the inflected form is
-    // the thing this app has and the page you paste into does not.
+    // The button copies the subtitle, not the title: the word wanted in a note
+    // or a message is the one that was on the screen, and a double-click is
+    // often the moment you find you want it. The citation is one tap of that
+    // away in any dictionary; the inflected form is the thing this app has and
+    // the page you paste into does not.
     <Sheet
       title={entry.citation}
       subtitle={form}

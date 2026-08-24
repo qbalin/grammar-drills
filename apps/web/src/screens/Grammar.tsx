@@ -171,6 +171,9 @@ export function GrammarSheet({
       title={section.title}
       subtitle={ref(section)}
       onClose={onClose}
+      // The one sheet that walks: a § followed out of the prose is a step this
+      // pair can take back, and no other sheet moves that way.
+      trail
       action={
         <>
           {action}

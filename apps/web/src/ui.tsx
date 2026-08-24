@@ -112,12 +112,15 @@ export function Sheet({
   onClose,
   children,
   action,
+  trail: trailed = false,
 }: {
   title: string;
   subtitle?: string;
   onClose: () => void;
   children: ReactNode;
   action?: ReactNode;
+  /** Draw ↩ and ↪. The reader asks for them; nothing else does. */
+  trail?: boolean;
 }) {
   const body = useRef<HTMLDivElement>(null);
   const trail = useContext(TrailContext);
@@ -198,33 +201,46 @@ export function Sheet({
       <div className="sheet" role="dialog" aria-modal="true" aria-label={title}>
         <div className="sheet__inner" ref={panel} tabIndex={-1} onKeyDown={trap}>
           <div className="sheet__grip" />
+          {/*
+            Two rows: what can be pressed, and then what is being read. Sharing
+            one line, the title took whatever the controls left it, and a
+            grammar section's title is the longest in the app. The status bar
+            answers the same question the same way.
+          */}
           <div className="sheet__head">
-            {(trail.back || trail.forward) && (
-              <span className="sheet__trail">
-                <button
-                  className="iconbtn iconbtn--trail"
-                  onClick={trail.back}
-                  disabled={!trail.back}
-                  aria-label="Back"
-                >
-                  ↩
-                </button>
-                <button
-                  className="iconbtn iconbtn--trail"
-                  onClick={trail.forward}
-                  disabled={!trail.forward}
-                  aria-label="Forward"
-                >
-                  ↪
+            <div className="sheet__bar">
+              {trailed && (
+                <span className="sheet__trail">
+                  <button
+                    className="iconbtn iconbtn--trail"
+                    onClick={trail.back}
+                    disabled={!trail.back}
+                    aria-label="Back"
+                  >
+                    ↩
+                  </button>
+                  <button
+                    className="iconbtn iconbtn--trail"
+                    onClick={trail.forward}
+                    disabled={!trail.forward}
+                    aria-label="Forward"
+                  >
+                    ↪
+                  </button>
+                </span>
+              )}
+              <span className="sheet__acts">
+                {action}
+                <button className="iconbtn" onClick={onClose} aria-label="Close">
+                  ✕
                 </button>
               </span>
-            )}
-            {subtitle && <span className="status__ref">{subtitle}</span>}
-            <span className="sheet__title">{title}</span>
-            {action}
-            <button className="iconbtn" onClick={onClose} aria-label="Close">
-              ✕
-            </button>
+            </div>
+            {/* Reference then title, which is how the status bar names a topic. */}
+            <div className="sheet__name">
+              {subtitle && <span className="status__ref">{subtitle}</span>}
+              <span className="sheet__title">{title}</span>
+            </div>
           </div>
           <div className="sheet__body" ref={body}>
             {children}
@@ -238,15 +254,18 @@ export function Sheet({
 /**
  * Where the reader has been, and where they were before they went back.
  *
- * Every sheet gets the pair, so the trail is the app's rather than the grammar
- * reader's: a § followed out of one topic, a word inspected, a topic opened off
- * the map — all of it is somewhere you can have come from. That is why this is
- * a context and not a prop. `Sheet` is rendered from seventeen places and none
- * of them should have to know it is part of a trail.
+ * The *trail* is the app's: a § followed out of one topic, a word inspected, a
+ * topic opened off the map — every step is recorded, whichever sheet took it,
+ * which is why this is a context and none of the seventeen places `Sheet` is
+ * rendered from has to know it is part of one. The *arrows* are the grammar
+ * reader's alone, asked for with `trail` on the sheet that wants them. Settings
+ * is not somewhere a reader walks back through, and a pair of arrows over it
+ * only offers to undo a decision they do not undo.
  *
  * Not the same thing as ✕, which closes *this* sheet and reveals what it was
  * over. They usually agree; where they do not, ↩ is the one that answers "how
- * did I get here" and ✕ is the one that answers "what was I doing".
+ * did I get here" and ✕ is the one that answers "what was I doing". So ↩ stops
+ * at the first sheet of an excursion: leaving the book is the other one's job.
  */
 export interface Trail {
   back?: () => void;
