@@ -150,6 +150,40 @@ describe("a pack with more than one grammar", () => {
     expect(JSON.stringify(p)).not.toContain("sg-100");
   });
 
+  it("puts a round read through the second book down, and back on its own page", () => {
+    // Parking carries the whole round, so the page the student was reading
+    // comes back with it. Without `viewedAs` surviving, picking the round up
+    // would drop them into the primary book on a topic they never opened.
+    const s = session();
+    s.setGrammar("second");
+    s.enrolTopic("sg-100-nouns-a");
+    const served = s.serveTest("sg-100-nouns-a")!;
+    s.beginRound("sg-100-nouns-a", served, false, "review");
+    s.suspendRound();
+
+    expect(s.progress().suspended!.review!.viewedAs).toBe("sg-100-nouns-a");
+    const back = s.resumeRound("review")!;
+    // Filed under the primary topic, as the card is, and read back through the
+    // section it was met in.
+    expect(back.sectionId).toBe("tg-020-nouns");
+    expect(s.progress().openRound!.viewedAs).toBe("sg-100-nouns-a");
+  });
+
+  it("drops a round put down on a topic the other book then dismissed", () => {
+    // The lockstep everything else here moves in: a dismissal through either
+    // book takes the round down with the card, whichever id named it.
+    const s = session();
+    s.enrolTopic("tg-020-nouns");
+    const served = s.serveTest("tg-020-nouns")!;
+    s.beginRound("tg-020-nouns", served, false, "review");
+    s.suspendRound();
+    expect(s.parkedRound("review")).not.toBeNull();
+
+    s.setGrammar("second");
+    s.dismissTopic("sg-100-nouns-a");
+    expect(s.parkedRound("review")).toBeNull();
+  });
+
   it("files a star under the primary topic, whichever book set it", () => {
     // Stars go where everything else here goes. Set through the second book,
     // read back through the first, and nothing on disk names the second.

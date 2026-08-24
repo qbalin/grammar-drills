@@ -2091,9 +2091,14 @@ describe("holding a word", () => {
     await user.click(screen.getByRole("button", { name: "Confirm deletion" }));
 
     expect(session.vocabCard("v-rosa")).toBeUndefined();
-    // The next due card is on screen, and the study body is not empty.
-    expect(screen.getByLabelText("Your Latin")).toBeDefined();
+    // Somewhere to be, and the study body is not empty — which is the defect
+    // this is about. Where that is, is the round the word called the student
+    // away from: the pile is empty once the card is gone, so the loop turns
+    // back to exploring and finds the round it had put down still waiting, on
+    // the question it was left on rather than on a fresh one.
     expect(document.querySelector(".prompt")?.textContent).toBeTruthy();
+    expect(eyebrow()).toContain("\u00b7 1/2");
+    expect(screen.getByRole("button", { name: /keep writing/ })).toBeDefined();
   });
 
   it("offers no macron keys — the answer box is the whole of the writing surface", () => {
@@ -3879,6 +3884,96 @@ describe("the one way onto a topic", () => {
         session.grammarMap().find((t) => t.sectionId === run!.sectionId)!.title,
       );
       expect(screen.getByRole("button", { name: "roll again" })).toBeDefined();
+    });
+
+    it("does not cost the review it called you away from", async () => {
+      /*
+       * The bug this was reported as, end to end. Two questions into a review,
+       * tap the die: leaving is fine and always was, but coming back served a
+       * different test of a different topic and there was no way to say where
+       * you had been.
+       *
+       * Two topics in the pile, so the switch is live either way and the round
+       * coming back cannot be an accident of there being nothing else to serve.
+       */
+      const user = userEvent.setup();
+      const hourAgo = new Date(Date.now() - 60 * 60 * 1000);
+      const s = new Session(new Content(fixture, testProfile));
+      s.enrolTopic("decl1", 1, hourAgo);
+      s.enrolTopic("pres", 1, new Date(hourAgo.getTime() + 1000));
+      mount(s.progress(), fixture, testProfile, null);
+
+      const topic = onScreen();
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+      const where = eyebrow();
+      // Half a sentence in the box and never submitted, inside the 400ms the
+      // draft-keeper waits: the tap has to write it down on the way out.
+      await user.type(screen.getByLabelText("Your Latin"), "puella");
+
+      await user.click(die());
+      // Leaving is fine and always was; the die is doing its job here.
+      expect(onScreen()).not.toBe(topic);
+
+      await user.click(screen.getByRole("button", { name: "Review" }));
+      expect(onScreen()).toBe(topic);
+      expect(eyebrow()).toBe(where);
+      expect((screen.getByLabelText("Your Latin") as HTMLTextAreaElement).value).toBe(
+        "puella",
+      );
+    });
+
+    it("keeps the switch live over a review that was put down", async () => {
+      /*
+       * The case that would leave the round unreachable, and it is the one the
+       * bug was hit in: the round's own first grade is what reschedules its
+       * card, so answering one question of the last topic due empties the pile.
+       * Both halves of the switch grey out on an empty pile — so without this
+       * the way back to the round is dimmed by the round's own progress.
+       */
+      const user = userEvent.setup();
+      const s = new Session(new Content(fixture, testProfile));
+      s.enrolTopic("decl1", 1, new Date(Date.now() - 60 * 60 * 1000));
+      mount(s.progress(), fixture, testProfile, null);
+
+      const topic = onScreen();
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+      await user.click(die());
+
+      // Nothing is due any more, and Review is still somewhere to go.
+      expect(document.querySelector(".status__counts")?.textContent).not.toContain("due");
+      const review = screen.getByRole("button", { name: "Review" }) as HTMLButtonElement;
+      expect(review.disabled).toBe(false);
+      await user.click(review);
+      expect(onScreen()).toBe(topic);
+    });
+
+    it("keeps the run it rolled when the review is gone back to and left again", async () => {
+      // Both slots at once: the review the die left, and the run the die began.
+      const user = userEvent.setup();
+      const hourAgo = new Date(Date.now() - 60 * 60 * 1000);
+      const s = new Session(new Content(fixture, testProfile));
+      s.enrolTopic("decl1", 1, hourAgo);
+      s.enrolTopic("pres", 1, new Date(hourAgo.getTime() + 1000));
+      mount(s.progress(), fixture, testProfile, null);
+
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await user.click(screen.getByRole("button", { name: /Good/ }));
+      await user.click(die());
+
+      const rolled = onScreen();
+      // The sentence being written is what tells a resumed round from a freshly
+      // served one here: both would be on the rolled topic, since the run in
+      // flight is what `next` would name anyway.
+      await user.type(screen.getByLabelText("Your Latin"), "temptabam");
+
+      await user.click(screen.getByRole("button", { name: "Review" }));
+      await user.click(screen.getByRole("button", { name: "Explore" }));
+      expect(onScreen()).toBe(rolled);
+      expect((screen.getByLabelText("Your Latin") as HTMLTextAreaElement).value).toBe(
+        "temptabam",
+      );
     });
 
     it("rolls something else when the answer is refused", async () => {

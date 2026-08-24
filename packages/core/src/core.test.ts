@@ -9,6 +9,7 @@ import {
   emptyProgress,
   type ContentData,
   type NewVocabContext,
+  type RoundVia,
   type Test,
 } from "./types.js";
 
@@ -1985,6 +1986,238 @@ describe("Session progress: a round of questions is one review", () => {
       const back = new Session(new Content(wide, testProfile), legacy);
       expect(back.progress().openRound).toBeNull();
       expect(back.resumableRound()).toBeNull();
+    });
+  });
+
+  describe("putting a round down and coming back to it", () => {
+    /** A round in flight on `n1`, enrolled so it has a card to hold. */
+    const start = (via: RoundVia = "review", section = "n1") => {
+      const s = new Session(new Content(wide, testProfile));
+      s.enrolTopic(section, 3, now);
+      // A practice round is only ever picked back up while the run it belongs
+      // to is the run in flight, so a drill needs one to have been chosen.
+      if (via === "drill") s.drillTopic(section, now);
+      const test = s.serveTest(section)!;
+      s.beginRound(section, test, false, via);
+      return { s, test };
+    };
+
+    it("puts a round with questions left down under its errand", () => {
+      const { s } = start();
+      s.suspendRound();
+      expect(s.progress().openRound).toBeNull();
+      expect(s.parkedRound("review")).not.toBeNull();
+      // The other errand put nothing down, and must not answer for this one.
+      expect(s.parkedRound("explore")).toBeNull();
+    });
+
+    it("files a practice round under exploring rather than under reviewing", () => {
+      const { s } = start("drill");
+      s.suspendRound();
+      expect(s.parkedRound("explore")).not.toBeNull();
+      expect(s.parkedRound("review")).toBeNull();
+    });
+
+    it("ends a round whose last question is graded rather than putting it down", () => {
+      const { s, test } = start();
+      for (const _ of test.questions) s.gradeTopic("n1", 3, now, test.id);
+      // Still on file, so the landing can still make its offer.
+      expect(s.landedRound(now)).not.toBeNull();
+      s.suspendRound();
+      expect(s.progress().openRound).toBeNull();
+      expect(s.parkedRound("review")).toBeNull();
+      expect(s.parkedRound("explore")).toBeNull();
+    });
+
+    it("comes back to the same question, with the sentence still being written", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      s.setDraft({ input: "half a sentence" });
+      s.suspendRound();
+
+      const back = s.resumeRound("review")!;
+      expect(back.qIndex).toBe(1);
+      expect(back.test.id).toBe(test.id);
+      expect(back.draft!.input).toBe("half a sentence");
+      // Back in flight, which is the half that matters: a grade writes to
+      // `openRound` and to nothing else.
+      expect(s.progress().openRound!.roundId).toBe(test.id);
+      expect(s.parkedRound("review")).toBeNull();
+    });
+
+    it("keeps a review and a run at once, each at its own question", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      s.suspendRound();
+
+      s.enrolTopic("n2", 3, now);
+      s.drillTopic("n2", now);
+      const drill = s.serveTest("n2")!;
+      s.beginRound("n2", drill, false, "drill");
+      s.suspendRound();
+
+      expect(s.resumeRound("review")!.test.id).toBe(test.id);
+      expect(s.parkedRound("explore")!.test.id).toBe(drill.id);
+    });
+
+    it("holds the card at one rep across being put down and picked up", () => {
+      const { s, test } = start();
+      const enrolled = s.progress().topicCards.n1!.reps;
+      s.gradeTopic("n1", 2, now, test.id);
+      s.suspendRound();
+      s.resumeRound("review");
+      s.gradeTopic("n1", 4, now, test.id);
+      // One rep for the round, whatever it was interrupted by — and priced at
+      // the worst answer in it, which is what `cardBefore` is rewound for.
+      expect(s.progress().topicCards.n1!.reps).toBe(enrolled + 1);
+    });
+
+    it("spends no rotation slot on the way back", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      const seen = [...s.progress().seenTests.n1!];
+      const cycle = { ...s.progress().testCycles.n1! };
+      s.suspendRound();
+      expect(s.resumeRound("review")!.test.id).toBe(test.id);
+      expect(s.progress().seenTests.n1).toEqual(seen);
+      expect(s.progress().testCycles.n1).toEqual(cycle);
+    });
+
+    it("drops what was put down when a fresh round opens on the same topic", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      s.suspendRound();
+      // The same topic served again: two rounds holding one card is the stale
+      // park the rule exists to prevent.
+      s.beginRound("n1", s.serveTest("n1")!, false, "drill");
+      expect(s.parkedRound("review")).toBeNull();
+    });
+
+    it("drops what was put down when its topic is dismissed", () => {
+      const { s } = start();
+      s.suspendRound();
+      s.dismissTopic("n1");
+      expect(s.parkedRound("review")).toBeNull();
+    });
+
+    it("drops what was put down when its topic is enrolled", () => {
+      const s = new Session(new Content(wide, testProfile));
+      const test = s.serveTest("n1")!;
+      s.beginRound("n1", test, false, "review");
+      s.suspendRound();
+      // `cardBefore` on that round is the absence of a card; enrolling makes
+      // one, and resuming would rewind it to a fresh card.
+      s.enrolTopic("n1", 3, now);
+      expect(s.parkedRound("review")).toBeNull();
+    });
+
+    it("drops the run put down once another topic is chosen to practise", () => {
+      const { s } = start("drill");
+      s.suspendRound();
+      expect(s.parkedRound("explore")).not.toBeNull();
+
+      s.drillTopic("n2", now);
+      expect(s.parkedRound("explore")).toBeNull();
+      expect(s.progress().suspended?.explore).toBeUndefined();
+    });
+
+    it("drops the run put down even when the topic chosen is the same one", () => {
+      // Choosing a topic means a fresh run of its whole bank, so it is a
+      // decision to leave rather than an interruption — and the topic being the
+      // one already practised does not make it an interruption either.
+      const { s } = start("drill");
+      s.suspendRound();
+      s.drillTopic("n1", now);
+      expect(s.parkedRound("explore")).toBeNull();
+    });
+
+    it("leaves the round in flight to the loop, so recording a run cannot cost one", () => {
+      // `drillTopic` records the run and stops there. A caller that only wants
+      // a run recorded — a screen arriving on a topic, a test setting a scene —
+      // must not lose a stored round by saying so.
+      const { s, test } = start("drill");
+      s.drillTopic("n1", now);
+      expect(s.resumableRound()!.test.id).toBe(test.id);
+    });
+
+    it("keeps the review it was called away from, which is the whole of the die", () => {
+      const { s, test } = start("review");
+      s.gradeTopic("n1", 3, now, test.id);
+      s.suspendRound();
+      // The die rolls a topic and practises it. The review must survive that.
+      s.drillTopic("n2", now);
+      expect(s.parkedRound("review")!.test.id).toBe(test.id);
+    });
+
+    it("says nothing about a round naming a test this bundle no longer carries", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      s.suspendRound();
+      const stored = JSON.parse(JSON.stringify(s.progress()));
+      stored.suspended.review.roundId = "gone";
+
+      const back = new Session(new Content(wide, testProfile), stored);
+      expect(back.parkedRound("review")).toBeNull();
+      // And it is let go of rather than left in the way of the next one.
+      expect(back.resumeRound("review")).toBeNull();
+      expect(back.progress().suspended?.review).toBeUndefined();
+    });
+
+    it("survives being written out and read back", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      s.setDraft({ input: "kept" });
+      s.suspendRound();
+
+      const back = new Session(
+        new Content(wide, testProfile),
+        JSON.parse(JSON.stringify(s.progress())),
+      );
+      const round = back.resumeRound("review")!;
+      expect(round.qIndex).toBe(1);
+      expect(round.test.id).toBe(test.id);
+      expect(round.draft!.input).toBe("kept");
+    });
+
+    it("writes nothing for a file that never put a round down", () => {
+      const s = new Session(new Content(wide, testProfile));
+      expect(s.progress().suspended).toBeUndefined();
+      expect(s.parkedRound("review")).toBeNull();
+      expect(s.resumeRound("explore")).toBeNull();
+    });
+
+    it("drops a round put down before it recorded where the student was", () => {
+      const { s, test } = start();
+      s.gradeTopic("n1", 3, now, test.id);
+      s.suspendRound();
+      const legacy = JSON.parse(JSON.stringify(s.progress()));
+      delete legacy.suspended.review.answered;
+
+      const back = new Session(new Content(wide, testProfile), legacy);
+      expect(back.progress().suspended?.review).toBeUndefined();
+    });
+
+    it("reads a round put down before rounds said why as what it was shown as", () => {
+      const { s, test } = start("drill");
+      s.gradeTopic("n1", 3, now, test.id);
+      s.suspendRound();
+      const legacy = JSON.parse(JSON.stringify(s.progress()));
+      delete legacy.suspended.explore.via;
+
+      const back = new Session(new Content(wide, testProfile), legacy);
+      expect(back.parkedRound("explore")!.via).toBe("review");
+    });
+
+    it("takes a park back with the undo of the grade it was taken beside", () => {
+      const { s, test } = start();
+      const before = s.snapshot();
+      s.gradeTopic("n1", 3, now, test.id);
+      s.suspendRound();
+      expect(s.parkedRound("review")).not.toBeNull();
+
+      s.restore(before);
+      expect(s.parkedRound("review")).toBeNull();
+      expect(s.resumableRound()!.qIndex).toBe(0);
     });
   });
 

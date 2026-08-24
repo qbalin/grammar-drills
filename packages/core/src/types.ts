@@ -600,6 +600,24 @@ export interface OpenRound {
   draft?: RoundDraft;
 }
 
+/**
+ * A round put back on the screen — what a caller needs to draw it and nothing
+ * more.
+ *
+ * Named rather than written inline because two methods hand it back now: the
+ * round in flight, and the round an errand had put down. Two spellings of one
+ * shape is how the second one would come to be restored with a field the first
+ * one had.
+ */
+export interface ResumableRound {
+  sectionId: string;
+  test: Test;
+  qIndex: number;
+  isNew: boolean;
+  via: RoundVia;
+  draft?: RoundDraft;
+}
+
 export interface Progress {
   /**
    * Set to 1 and never compared — migration here is by field presence, in the
@@ -676,6 +694,30 @@ export interface Progress {
   noRoll?: string[];
   /** The round of questions in flight, if any. */
   openRound?: OpenRound | null;
+  /**
+   * The rounds put down rather than finished, one per errand.
+   *
+   * `openRound` is where the student is; this is where they were. A round left
+   * behind used to be ended outright, so the die — which leaves a review and
+   * starts a run in one tap — cost the review its place, and coming back served
+   * a different test of a different topic. The card was never the casualty: it
+   * is at one rep either way, which is what the round is the unit for. The
+   * place was, and the place is the one thing on this file nothing can derive.
+   *
+   * One slot per errand rather than one slot, because the two errands interrupt
+   * each other in both directions. A single slot would be filled by the
+   * practice round the die had just begun — which is to say by the interruption
+   * rather than by what was interrupted.
+   *
+   * One slot each and not a stack: a second round put down in the same errand
+   * overwrites the first. That is the honest limit of "where was I", and it is
+   * cheaper to say than a history nobody asked for.
+   *
+   * **Absent means nothing is put down**, which is every file written before
+   * this existed. Left out of `emptyProgress` for that reason — an empty object
+   * in every new file would make the absence two cases instead of one.
+   */
+  suspended?: { review?: OpenRound; explore?: OpenRound };
   /**
    * sectionId -> scheduling card for that grammar topic.
    *

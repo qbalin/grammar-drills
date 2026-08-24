@@ -115,6 +115,29 @@ describe("repairing a progress file", () => {
     expect(repaired).toEqual([]);
   });
 
+  it("repairs the rounds put down, container and slot separately", () => {
+    // A wrong-typed container costs both slots; a wrong-typed slot costs only
+    // its own. Deleted rather than nulled, because absence is the meaning here
+    // — unlike `openRound`, where `null` is a value the engine writes.
+    const whole = repairProgress({ ...emptyProgress(), suspended: 7 });
+    expect(whole.repaired).toContain("suspended");
+    expect(whole.progress.suspended).toBeUndefined();
+
+    const slot = repairProgress({
+      ...emptyProgress(),
+      suspended: { review: 7, explore: { answered: 0 } },
+    });
+    expect(slot.repaired).toContain("suspended.review");
+    expect(slot.progress.suspended!.review).toBeUndefined();
+    expect(slot.progress.suspended!.explore).toBeDefined();
+  });
+
+  it("leaves a file that has never put a round down alone", () => {
+    const { progress, repaired } = repairProgress(emptyProgress());
+    expect(repaired).toEqual([]);
+    expect(progress.suspended).toBeUndefined();
+  });
+
   it("starts empty rather than throwing on something that is not a file", () => {
     for (const nonsense of [null, 42, "a string", []]) {
       const { progress, repaired } = repairProgress(nonsense);

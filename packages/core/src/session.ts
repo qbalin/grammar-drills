@@ -30,6 +30,7 @@ import {
   type Question,
   type QuestionSource,
   type RoundDraft,
+  type ResumableRound,
   type RoundVia,
   type OpenRound,
   type SentenceCardState,
@@ -229,6 +230,24 @@ function readRoundVia(via: unknown): RoundVia | null {
 }
 
 /**
+ * Which errand a round belongs to, and so which slot it is put down in.
+ *
+ * `RoundVia` has three values where `Mode` has two, because `via` says what the
+ * round is *shown as* — a topic met for the first time carries a badge a repeat
+ * drill does not — while the errand says which pile it came out of. Reviewing
+ * is reviewing; everything else is somebody having chosen a topic, which is
+ * exploring.
+ *
+ * Written down once because the app was already asking this question by hand,
+ * spelled `(open.via === "review") === (mode === "review")` on the launch path,
+ * and a second copy of it is how the two would come to disagree about where a
+ * round had been put.
+ */
+export function errandOf(via: RoundVia): Mode {
+  return via === "review" ? "review" : "explore";
+}
+
+/**
  * The runtime session engine. Holds the student's Progress and, given the
  * frozen Content, decides what to do next and applies self-grades — all
  * deterministic, no LLM. Ported from the reference `session.py` state machine
@@ -366,6 +385,13 @@ export class Session {
     if (this.p.openRound && !("answered" in this.p.openRound)) {
       this.p.openRound = null;
     }
+    // The same guard on the rounds put down, for the same reason: there is
+    // nowhere to resume such a round to, and the one job it had — holding the
+    // card at one rep — it has already finished doing.
+    for (const mode of ["review", "explore"] as const) {
+      const parked = this.p.suspended?.[mode];
+      if (parked && !("answered" in parked)) delete this.p.suspended![mode];
+    }
   }
 
   /**
@@ -407,9 +433,18 @@ export class Session {
     // "Quiz me" is gone, and so is the book's sweep. A round either opened is
     // still four sentences on a topic, and what it was shown as is the honest
     // answer — the same reading a round written before `via` existed gets.
-    const round = this.p.openRound;
-    if (round) {
-      round.via = readRoundVia(round.via) ?? (round.isNew ? "new" : "review");
+    //
+    // The rounds put down take it too, and they need it more: `errandOf` reads
+    // `via` to decide which slot a round belongs in, so one left unreadable
+    // would be filed by a fallback rather than by what it was.
+    for (const round of [
+      this.p.openRound,
+      this.p.suspended?.review,
+      this.p.suspended?.explore,
+    ]) {
+      if (round) {
+        round.via = readRoundVia(round.via) ?? (round.isNew ? "new" : "review");
+      }
     }
   }
 
@@ -673,6 +708,11 @@ export class Session {
       this.p.openRound = null;
       dropped = true;
     }
+    // And any round put down on it, which is the same hazard with a longer
+    // fuse: a dismissal is undone by the next grade of any round still holding
+    // the topic's old card, and one waiting in a slot can be picked up next
+    // week rather than in the next minute.
+    if (this.unparkTopics(ids)) dropped = true;
     if (dropped) this.touch();
   }
 
@@ -704,13 +744,18 @@ export class Session {
    */
   enrolTopic(sectionId: string, rating?: Rating, now: Date = new Date()): void {
     const worst = rating ?? this.enrolRating(sectionId);
+    const ids = this.content.primaryTopicsFor(sectionId);
     let added = false;
-    for (const id of this.content.primaryTopicsFor(sectionId)) {
+    for (const id of ids) {
       if (this.p.topicCards[id] !== undefined) continue;
       this.p.topicCards[id] = serializeCard(rate(newCard(now), worst, now));
       this.p.newTopicsIntroduced += 1;
       added = true;
     }
+    // A card where there was none is the card moving, so a round put down on
+    // this topic goes: its `cardBefore` is the absence, and resuming it would
+    // rewind the card just enrolled to a fresh one. See `unparkTopics`.
+    if (this.unparkTopics(ids)) added = true;
     if (added) this.touch();
   }
 
@@ -721,9 +766,34 @@ export class Session {
       .some((id) => this.p.topicCards[id] !== undefined);
   }
 
-  /** Stay on this topic and work a fresh run of its questions out. */
+  /**
+   * Stay on this topic and work a fresh run of its questions out.
+   *
+   * **Fresh**, and that word decides what happens to the round put down under
+   * exploring. A run asks the topic's whole bank again — asking again is asking
+   * for the whole thing a second time — so a new run is not something the old
+   * one's half-finished round should survive, whether or not the topic is the
+   * same one.
+   *
+   * It has to be dropped *here* rather than left to the loop, because of the
+   * order the two run in: choosing a topic writes the run and *then* moves the
+   * loop on, and moving on is what puts a round down. Judged later, the old
+   * round would be parked after the new run had already been written and picked
+   * straight back up — the topic just chosen would never be served, which from
+   * outside is a button that does nothing.
+   *
+   * What is deliberately *not* touched is a round put down under **reviewing**.
+   * That is the whole of the die: it leaves a review to start a run, and the
+   * review it left is still waiting when the switch is thrown back.
+   *
+   * Nor is the round *in flight* touched, though a new run does end one. That
+   * is the loop's to do and it does it a line later — this records the run, and
+   * a caller that only wants a run recorded (a test setting a scene, a screen
+   * arriving on a topic) must not lose a stored round by saying so.
+   */
   drillTopic(sectionId: string, now: Date = new Date()): void {
     this.p.practise = { sectionId, since: now.toISOString() };
+    if (this.p.suspended?.explore) delete this.p.suspended.explore;
     this.touch();
   }
 
@@ -1040,6 +1110,11 @@ export class Session {
     const full =
       this.content.testsFor(sectionId).find((t) => t.id === test.id) ?? test;
     const window = this.roundWindow(full);
+    // A fresh round on the topic takes the place of anything put down on it.
+    // Two rounds holding one topic's card is the stale park `unparkTopics`
+    // exists to prevent: whichever was resumed second would rewind the card
+    // past the other one's rep.
+    this.unparkTopics(this.content.primaryTopicsFor(graded));
     this.p.openRound = {
       sectionId: graded,
       ...(graded === sectionId ? {} : { viewedAs: sectionId }),
@@ -1078,6 +1153,107 @@ export class Session {
     if (!this.p.openRound) return;
     this.p.openRound = null;
     this.touch();
+  }
+
+  /**
+   * Put the round in flight down under its errand, rather than throw it away.
+   *
+   * What leaving a round costs, and it used to cost the round. Every way out
+   * ran through `endRound`, so the die — which leaves a review and starts a run
+   * in one tap — took the review's place with it, and coming back served a
+   * different test of a different topic. The card was never what was lost: it
+   * is at one rep either way, which is the whole reason the round is the unit.
+   * The place was.
+   *
+   * **A finished round is ended rather than put down.** Which of the two this
+   * is, is the round's own answer and not the caller's — `roundBack` is asked
+   * here exactly as `resumableRound` asks it — so every way out of a round gets
+   * the right verdict without each of them having to work it out. It is what
+   * keeps the landing intact: a round graded out is left on file for
+   * `landedRound` to make its offer from, and a slot holding one would sit
+   * there for ever in front of the next round put down.
+   *
+   * A round naming a test this bundle has stopped carrying is not resumable
+   * either, so it is not put down — the same answer, for the same reason.
+   */
+  suspendRound(): void {
+    const open = this.p.openRound;
+    if (!open) return;
+    if (!this.roundBack(open)) {
+      this.endRound();
+      return;
+    }
+    (this.p.suspended ??= {})[errandOf(open.via ?? (open.isNew ? "new" : "review"))] =
+      open;
+    this.p.openRound = null;
+    this.touch();
+  }
+
+  /**
+   * Take the round an errand put down and put it back in flight.
+   *
+   * It **moves**, which is the half that matters: a round read out of its slot
+   * and merely drawn would take its grades nowhere, because `gradeTopic` writes
+   * to `openRound` and to nothing else.
+   *
+   * Every caller has already let go of whatever was in flight, so `openRound`
+   * is null by the time this is asked. Said here rather than assumed, because a
+   * caller that had not would drop the round in flight without a word.
+   *
+   * A round that cannot be picked up is dropped rather than left: a slot
+   * holding one would stand in front of the next round put down, for ever.
+   */
+  resumeRound(mode: Mode): ResumableRound | null {
+    if (!this.p.suspended?.[mode]) return null;
+    const parked = this.pickUpFrom(mode);
+    const back = this.roundBack(parked);
+    // Taken out of the slot either way. A round that cannot be picked up would
+    // otherwise stand in front of the next one put down, for ever.
+    delete this.p.suspended[mode];
+    if (back) this.p.openRound = parked;
+    this.touch();
+    return back;
+  }
+
+  /**
+   * The round an errand is holding, if it is still one worth having.
+   *
+   * One verdict, because `parkedRound` draws a switch off it and `resumeRound`
+   * acts on it: a switch offered over a round that then declined itself is a
+   * tap that does nothing, and the two disagreeing is the fault `roundBack` is
+   * written to prevent one level down.
+   *
+   * Deliberately does not mutate. Drawing a button must not spend a round.
+   */
+  private pickUpFrom(mode: Mode): OpenRound | null {
+    return this.p.suspended?.[mode] ?? null;
+  }
+
+  /**
+   * Drop any round put down on these topics, whichever errand holds it.
+   *
+   * The rule that makes a round put down safe to pick back up: **at most one
+   * round per topic, anywhere.** A round holds `cardBefore` and every grade in
+   * it rewinds the topic's card to that and re-rates it, which is a lock on the
+   * card for as long as the round exists. A round in flight holds that lock for
+   * a minute; one put down can hold it for a week, and anything that moved the
+   * card in between would be silently rewound the moment it was picked up.
+   *
+   * So rather than detect a stale round on the way back in, the three things
+   * that move a topic's card — a fresh round on it, enrolling it, dismissing it
+   * — each drop what was put down. The situation is prevented rather than
+   * caught, which is why no card is stamped here and no comparison is made.
+   */
+  private unparkTopics(ids: readonly string[]): boolean {
+    let dropped = false;
+    for (const mode of ["review", "explore"] as const) {
+      const parked = this.p.suspended?.[mode];
+      if (parked && ids.includes(parked.sectionId)) {
+        delete this.p.suspended![mode];
+        dropped = true;
+      }
+    }
+    return dropped;
   }
 
   /**
@@ -1154,15 +1330,32 @@ export class Session {
    * this bundle no longer carries — a pack can be regenerated under a student
    * mid-round, and the answer to that is the scheduler, not a crash.
    */
-  resumableRound(): {
-    sectionId: string;
-    test: Test;
-    qIndex: number;
-    isNew: boolean;
-    via: RoundVia;
-    draft?: RoundDraft;
-  } | null {
-    const open = this.p.openRound;
+  resumableRound(): ResumableRound | null {
+    return this.roundBack(this.p.openRound);
+  }
+
+  /**
+   * The round an errand put down, read without taking it back up.
+   *
+   * What a switch asks before it decides whether it is a place to go: drawing a
+   * button must not spend a round. `resumeRound` is the other half, and both go
+   * through `roundBack`, so a switch offered is a switch that leads somewhere.
+   */
+  parkedRound(mode: Mode): ResumableRound | null {
+    return this.roundBack(this.pickUpFrom(mode));
+  }
+
+  /**
+   * One reading of a stored round, wherever it is being held.
+   *
+   * The same argument `roundOf` makes one method up, one level out: a round in
+   * flight and a round put down are the same record, and two readers of it that
+   * disagreed would mean a round that could be picked up on one path and not on
+   * the other. So the checks live here once — the test still in the bundle, the
+   * window still naming questions it holds, questions still left to give — and
+   * `resumableRound`, `parkedRound` and `resumeRound` all get that one answer.
+   */
+  private roundBack(open: OpenRound | null | undefined): ResumableRound | null {
     if (!open) return null;
     const test = this.content
       .testsFor(open.sectionId)

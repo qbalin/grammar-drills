@@ -56,6 +56,7 @@ export {
 export {
   Session,
   MAX_CONTEXTS,
+  errandOf,
   type Action,
   type BankedQuestion,
   type ContextOutcome,

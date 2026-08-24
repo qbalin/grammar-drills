@@ -3,6 +3,7 @@ import {
   Content,
   MAX_CONTEXTS,
   Session,
+  errandOf,
   locateWord,
   questionVocabulary,
   words,
@@ -431,6 +432,19 @@ export function App({ content, session, storage }: Props) {
     storage.saveLocal(session.progress());
   }, [phase, input, submitted, marks, session, storage]);
 
+  /*
+   * The draft-keeper, reachable from a callback that must not depend on it.
+   *
+   * `keepDraft` changes identity on every keystroke. Hanging `leaveRound` off
+   * it — and so `advance`, and so the two effects that depend on `advance` —
+   * would rebuild the loop's whole callback chain four times a second, for the
+   * sake of one call made when a round is put down.
+   */
+  const keepDraftRef = useRef(keepDraft);
+  useEffect(() => {
+    keepDraftRef.current = keepDraft;
+  }, [keepDraft]);
+
   // Typing is debounced, because the whole file is rewritten each time. Being
   // hidden is not: on a phone that is the moment the app is taken away, and
   // there may be no later one.
@@ -559,6 +573,22 @@ export function App({ content, session, storage }: Props) {
   const starred = useMemo(() => session.starredTopics(), [session, tick]);
   const stats = useMemo(() => session.stats(), [session, tick]);
   const dueNow = stats.due;
+  /*
+   * Whether Review has a round waiting in it, which is not the same question as
+   * whether anything is due — and is the question the switch has to ask.
+   *
+   * A round's own first grade reschedules its card. Answer question one of the
+   * last topic due and the pile is empty, so the switch greys out while the
+   * student is still standing in the middle of that round: the one state in
+   * which they most need a way back is the one the count says has nothing
+   * behind it. Read through the engine rather than off `stats`, because a round
+   * put down is not *due* and inflating the count would put a wrong number in
+   * the status bar and in three flash strings.
+   */
+  const parkedReview = useMemo(
+    () => session.parkedRound("review") !== null,
+    [session, tick],
+  );
   // The words behind the question on screen. `dictLoading` is a dependency on
   // purpose: everything looked up before the fetch landed resolved to nothing,
   // and those rows must not be the ones kept.
@@ -590,22 +620,73 @@ export function App({ content, session, storage }: Props) {
   // --- the loop ------------------------------------------------------------
 
   /**
-   * Put down whatever round is in flight, and clear the sentence with it.
+   * Put down whatever round is in flight, and take the sentence down with it.
    *
    * Shared by the two ways study leaves a round behind — the loop moving on of
    * its own accord, and a card chosen off the schedule — so what "leaving"
    * costs cannot come to mean two things.
+   *
+   * What it costs is the change here. Leaving used to *end* the round, so the
+   * die, the mode switch and the schedule's "review this one now" each took the
+   * student's place in the test with them: two questions into a round, one tap,
+   * and coming back served a different test of a different topic. The card was
+   * never the casualty — it is at one rep either way — only the place, which is
+   * the one thing nothing can derive. The round is put down under its errand
+   * now and picked back up when that errand is returned to.
    *
    * It used to step a cursor through the book here, so ending a round the book
    * had served also moved the book on. Nothing moves on now: a run stays on the
    * topic it was started on until the student picks another.
    */
   const leaveRound = useCallback(() => {
+    /*
+     * Write the sentence down before the round is carried away with it.
+     *
+     * `keepDraft` is on a 400ms timer, which was honest while leaving cost the
+     * sentence anyway — the switch said as much. It is not honest now that the
+     * sentence is promised back: type, tap the die inside the same second, and
+     * the last thing typed was never written. A no-op off the answering and
+     * graded screens, and off a round that has already gone, which is what
+     * makes it safe to call on every way out.
+     */
+    keepDraftRef.current();
     setInput("");
     setSubmitted("");
     setMarks({});
-    session.endRound();
+    session.suspendRound();
   }, [session]);
+
+  /**
+   * Put a round back on the screen — the same pieces whether it is coming back
+   * from a launch or from an errand being returned to.
+   *
+   * One function because it used to be one and a half. The launch path restored
+   * the draft, the badge and the graded-or-answering phase by hand, and a
+   * second copy of that block is how a resumed round would come back without
+   * its marks, or on the wrong phase, on whichever of the two doors nobody had
+   * thought to test.
+   */
+  const restoreRound = useCallback(
+    (open: NonNullable<ReturnType<Session["resumableRound"]>>) => {
+      setSectionId(open.sectionId);
+      setTest(open.test);
+      setQIndex(open.qIndex);
+      setVia(open.via);
+      // The badge comes back but the grammar sheet does not: it was opened when
+      // the topic was served, and being taught the same section again every
+      // time you come back to it is not teaching. Cleared rather than left,
+      // because a sheet may be standing open on the way in from `advance`.
+      setOverlay(null);
+      setInput(open.draft?.input ?? "");
+      const graded = open.draft?.graded;
+      setSubmitted(graded?.submitted ?? "");
+      setMarks(open.draft?.marks ?? {});
+      setPhase(
+        graded ? { t: "graded", revealed: graded.revealed } : { t: "answering" },
+      );
+    },
+    [],
+  );
 
   /**
    * Move on to whatever the errand has next.
@@ -619,6 +700,32 @@ export function App({ content, session, storage }: Props) {
       // Whatever was in flight is behind us by definition — this is the one
       // place study moves on of its own accord.
       leaveRound();
+      /*
+       * A round this errand put down comes back before anything else does,
+       * including a review that is due.
+       *
+       * That is the whole of the feature: what the student was in the middle of
+       * outranks what the scheduler would pick, and asking them which they
+       * wanted would put an interstitial between them and the sentence they
+       * were halfway through writing.
+       *
+       * Before `next`, and the ordering is load-bearing in both directions. A
+       * put-down review has to jump the queue rather than join it — its own
+       * first grade rescheduled its card, so `next` would never name it. And a
+       * put-down run has to be looked for *after* whatever chose a new topic
+       * has written that down: `drillTopic` sets the run and then calls this,
+       * so by now the slot has already been cleared if the student has moved to
+       * another topic, and kept if they have not.
+       */
+      const back = session.resumeRound(asked);
+      if (back) {
+        restoreRound(back);
+        // The round is in flight again and that is a fact about the file, not
+        // only about the screen.
+        save();
+        bump();
+        return;
+      }
       const action = session.next(new Date(), asked);
 
       if (action.kind === "done" && asked === "review") {
@@ -733,7 +840,7 @@ export function App({ content, session, storage }: Props) {
       save();
       bump();
     },
-    [session, save, mode, leaveRound],
+    [session, save, mode, leaveRound, restoreRound],
   );
 
   // The net under `removeVocab`, not a substitute for it: a card under review
@@ -763,23 +870,29 @@ export function App({ content, session, storage }: Props) {
     // that is not happening. The round costs nothing to drop: its card is
     // already at exactly one rep, which is what the round was for.
     const open = session.resumableRound();
-    if (open && (open.via === "review") === (mode === "review")) {
-      setSectionId(open.sectionId);
-      setTest(open.test);
-      setQIndex(open.qIndex);
-      setVia(open.via);
-      // The badge comes back but the grammar sheet does not: it was opened
-      // when the topic was served, and being taught the same section again on
-      // every reload is not teaching.
-      setInput(open.draft?.input ?? "");
-      const graded = open.draft?.graded;
-      setSubmitted(graded?.submitted ?? "");
-      setMarks(open.draft?.marks ?? {});
-      setPhase(
-        graded ? { t: "graded", revealed: graded.revealed } : { t: "answering" },
-      );
+    if (open && errandOf(open.via) === mode) {
+      restoreRound(open);
       bump();
       return;
+    }
+    /*
+     * A round belonging to the *other* errand is put down rather than dropped.
+     *
+     * This used to say the round cost nothing to drop, and while there was
+     * nowhere to put one that was true: the card is at one rep either way. It
+     * is not true now. Which errand a launch opens on is decided by what is
+     * waiting, so a student who closed the app mid-review on the last thing due
+     * opens in Explore — and dropping here would throw away exactly the round
+     * this change exists to keep, on the one path where nobody chose to leave.
+     *
+     * Above `landedRound` and safe there only because a finished round is not
+     * resumable: `open` is null for one, so a landing waiting to be answered
+     * never reaches this line. `suspendRound` would end it rather than put it
+     * down in any case.
+     */
+    if (open) {
+      session.suspendRound();
+      save();
     }
     /*
      * An offer that was never answered comes back rather than lapsing.
@@ -813,7 +926,7 @@ export function App({ content, session, storage }: Props) {
       return;
     }
     advance();
-  }, [advance, session, mode]);
+  }, [advance, session, mode, restoreRound, save]);
 
   /*
    * Notice progress from another device before this one can push over it.
@@ -1024,11 +1137,18 @@ export function App({ content, session, storage }: Props) {
   const chooseMode = (next: Mode) => {
     if (next === mode) return;
     navigator.vibrate?.(8);
+    // Asked before `advance` takes it back up, since that empties the slot.
+    const waiting = session.parkedRound(next) !== null;
     setMode(next);
     advance(next);
     flash(
       next === "review"
-        ? `Back to the reviews — ${dueNow} waiting.`
+        ? // Read before `advance` consumed the slot, or this reports on a round
+          // that has just been picked up. "0 waiting" over a resumed round is
+          // the count answering a question nobody asked.
+          waiting && dueNow === 0
+          ? "Back to where you were."
+          : `Back to the reviews — ${dueNow} waiting.`
         : "Reviews set aside.",
     );
   };
@@ -1046,6 +1166,29 @@ export function App({ content, session, storage }: Props) {
    * whole thing a second time, which is what a second run is.
    */
   const drillTopic = (topic: TopicProgress, again?: () => void) => {
+    /*
+     * Before `advance`, and that order now carries weight it did not before.
+     *
+     * `drillTopic` clears the run put down under exploring, because choosing a
+     * topic replaces the run a parked round belonged to. `advance` then looks
+     * for a round to pick back up — so it is judging the slot against the run
+     * the student has just asked for. Move this call below `advance` and the
+     * die would hand you back the topic you had just rolled away from, which is
+     * the kind of break that shows up as "the button does nothing".
+     *
+     * The round in flight ends here rather than being put down, and only if it
+     * is exploring's own. A run replaces a run, so the half-finished round of
+     * the one being replaced has nothing to come back to — even on the same
+     * topic, because asking for a run is asking for the whole bank again.
+     *
+     * A *review* in flight is left alone, to be put down by `leaveRound` a line
+     * later. That asymmetry is the die: it leaves a review to start a run, and
+     * the review has to be waiting when the switch is thrown back.
+     */
+    const inFlight = session.progress().openRound;
+    if (inFlight && errandOf(inFlight.via ?? "review") === "explore") {
+      session.endRound();
+    }
     session.drillTopic(topic.sectionId);
     save();
     setOverlay(null);
@@ -2225,12 +2368,20 @@ export function App({ content, session, storage }: Props) {
               Both halves grey out together when nothing is due: with no pile
               to go back to, Review is not a place to be, and dimming the pair
               says so better than a live button that would bounce straight
-              back. */}
+              back. Together, still, so the documented pairing holds.
+
+              Unless a review was put down part-answered, in which case Review
+              *is* a place to be and the count is the wrong thing to ask. That
+              round's own first grade is what rescheduled its card and emptied
+              the pile, so this is exactly the state a student reaches by
+              answering one question of the last thing due and then tapping the
+              die — and greying the switch there would lock them out of the
+              round this whole change exists to keep. */}
           <div className="modes" role="group" aria-label="What to study">
             <button
               className="modes__pick"
               aria-pressed={mode === "explore"}
-              disabled={dueNow === 0}
+              disabled={dueNow === 0 && !parkedReview}
               onClick={() => chooseMode("explore")}
             >
               Explore
@@ -2238,7 +2389,7 @@ export function App({ content, session, storage }: Props) {
             <button
               className="modes__pick"
               aria-pressed={mode === "review"}
-              disabled={dueNow === 0}
+              disabled={dueNow === 0 && !parkedReview}
               onClick={() => chooseMode("review")}
             >
               Review

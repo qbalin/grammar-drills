@@ -115,5 +115,30 @@ export function repairProgress(raw: unknown, citationsVersion?: number): Repair 
     }
   }
 
+  /*
+   * The rounds put down take two checks rather than the one above, being a
+   * record of records: a wrong-typed container costs both slots, a wrong-typed
+   * slot costs only its own.
+   *
+   * Absent is the meaning here — nothing put down — so an absent field is left
+   * absent rather than filled in with an empty object, and a broken one is
+   * deleted rather than nulled. That is the difference from `openRound`, where
+   * `null` is itself a value the engine writes.
+   */
+  if (out.suspended !== undefined) {
+    if (!isRecord(out.suspended)) {
+      repaired.push("suspended");
+      delete out.suspended;
+    } else {
+      const slots = out.suspended as Record<string, unknown>;
+      for (const mode of ["review", "explore"]) {
+        if (slots[mode] !== undefined && !isRecord(slots[mode])) {
+          repaired.push(`suspended.${mode}`);
+          delete slots[mode];
+        }
+      }
+    }
+  }
+
   return { progress: out as unknown as Progress, repaired };
 }

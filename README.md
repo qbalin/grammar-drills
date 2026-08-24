@@ -531,10 +531,25 @@ whenever any are waiting, switching is immediate rather than "after this round",
 and clearing the last review throws the switch back by itself. Which errand you
 are on is not written down: a pile of reviews is exactly the thing a saved
 preference should not be able to hide, so every launch puts it back in front of
-you. With nothing due the switch greys out — there is no pile to go back to. The
+you. With nothing due the switch greys out — there is no pile to go back to —
+unless a review was left half-answered, which is a place to go back to whatever
+the count says. The
 accent goes green while reviewing, the same variable every button and meter
 already reads, so the app is a different colour for as long as it is a different
 errand.
+
+**Leaving a round is not losing it.** A test is a round of questions, and the
+round is what the scheduler sees: every grade in it rewinds the topic's card and
+re-rates it with the worst answer given, so one round costs exactly one rep
+however far into it you get. What used to be lost was the *place* — the die, the
+switch and *review this one now* each ended the round on the way past, and two
+questions in, one tap, you came back to a different test of a different topic.
+Each errand now puts its round down instead and picks it up when you come back
+to it, on the same question with the same half-written sentence still in the box.
+One round each, not a history: a second round put down in the same errand takes
+the first one's place. Choosing a topic to practise is the exception, and it is
+not an interruption — asking for a run is asking for the whole bank again, so it
+starts fresh.
 
 **You pick the topic.** *Practise these* on the index — Enter in the terminal —
 is the only way onto one, and the run stays there until you pick another. A
