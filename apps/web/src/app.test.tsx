@@ -3956,49 +3956,33 @@ describe("the one way onto a topic", () => {
     });
   });
 
-  it("takes a topic out of the review pile from its sheet, and only an offer puts it back", async () => {
+  it("offers no dismissal on the topic sheet, wherever the topic stands", async () => {
+    /*
+     * It used to, at the foot under a "Reviews" heading and behind two presses,
+     * and the graded screen offered it as well. Two surfaces for one decision,
+     * and this was the wrong one: a sheet opened in order to *start* something
+     * ended with a way to stop. The round is where a topic proves it is not
+     * what you need, so the round is where the offer lives — see the describe
+     * below, which is the whole of the feature now.
+     *
+     * Checked on a topic in the pile *and* on one scheduled for later, because
+     * "scheduled for next month" is exactly the topic somebody is looking at
+     * when they decide they have had enough of it, and it was the case the old
+     * offer went out of its way to cover.
+     */
     const user = userEvent.setup();
     const { session } = mount(enrolled());
 
-    // Answer one, so there is a trail to prove the dismissal spares.
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await user.click(screen.getByRole("button", { name: /Good/ }));
     expect(session.progress().topicCards.decl1).toBeDefined();
 
     await user.click(screen.getByRole("button", { name: "Grammar index" }));
     await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
-    // Two presses, like every other deletion here.
-    await user.click(screen.getByRole("button", { name: "Stop reviewing this topic" }));
-    await user.click(screen.getByRole("button", { name: "Confirm — stop reviewing" }));
-
-    expect(session.progress().topicCards.decl1).toBeUndefined();
-    // The answers stay: it deletes a schedule, not a syllabus.
-    expect(session.attemptsFor("decl1")).toHaveLength(1);
-
-    // And the sheet no longer offers it, because there is nothing left to take.
-    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
-    expect(screen.queryByRole("button", { name: "Stop reviewing this topic" })).toBeNull();
-
-    // Answering it again does not undo the dismissal. It used to: the next
-    // grade wrote the card back, so a dismissal survived only until the topic
-    // was next practised.
-    await user.click(screen.getByRole("button", { name: /Practise/ }));
-    await user.click(screen.getByRole("button", { name: "Reveal" }));
-    await user.click(screen.getByRole("button", { name: /Good/ }));
-    expect(session.progress().topicCards.decl1).toBeUndefined();
-  });
-
-  it("offers the dismissal on a topic scheduled for later, not only a due one", async () => {
-    // `due` would hide it on a topic scheduled for next month, which is exactly
-    // the topic somebody is looking at when they decide they have had enough.
-    const user = userEvent.setup();
-    const s = new Session(new Content(fixture, testProfile));
-    s.enrolTopic("decl1", 4, new Date());
-    mount(s.progress());
-
-    await user.click(screen.getByRole("button", { name: "Grammar index" }));
-    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
-    expect(screen.getByRole("button", { name: "Stop reviewing this topic" })).toBeDefined();
+    expect(
+      screen.queryByRole("button", { name: /stop reviewing/i }),
+    ).toBeNull();
+    expect(screen.queryByText("Reviews")).toBeNull();
   });
 
   /**

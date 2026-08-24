@@ -349,8 +349,10 @@ what can be done with it, so studying what you just found is one tap rather than
 a walk back through the index.
 
 The CLI's index keys become buttons on the topic sheet — **Practise these 17**
-leading, then **Read § 63-66**, the star, and **Stop reviewing this topic** at
-the foot where a deletion belongs.
+leading, then **Read § 63-66**, and two marks of your own beside each other: the
+star, and **Never roll this**. The dismissal used to be there too, at the
+foot; it is on the review itself now, which is where a topic proves it is not
+what you need.
 
 Beside the 📖 that opens the index is a **🎲**, which is the same question
 answered for you: one tap picks a topic and starts practising it. It leans
@@ -575,11 +577,15 @@ went was a second, parallel number that no review ever read.
 the families on the index, in book order, and it is the one fact about a topic
 the app does not derive from your record of study. And a topic that keeps coming
 back when it is not what you need can be taken **out of the review pile**:
-*Stop reviewing this topic* on its sheet, `x` twice on the terminal's index, or
 `⊘ stop reviewing this` on the review itself, which is the moment you actually
-want it. It deletes the scheduling card and nothing else — the answers stay, the
-star stays — and practising the topic *offers* to put it back when the round
-lands. The grammar half of *Delete this word*, and it deletes as little.
+want it, or `x` twice on the terminal's index. It deletes the scheduling card and
+nothing else — the answers stay, the star stays — and practising the topic
+*offers* to put it back when the round lands. The grammar half of *Delete this
+word*, and it deletes as little.
+
+It was on the topic sheet as well, at the foot under a *Reviews* heading. Two
+surfaces for one decision, and that was the wrong one of the two: the sheet is
+what you open in order to *start* something, and it ended with a way to stop.
 
 It used to be undone by your next grade, silently, which sat badly with calling
 it your decision: a dismissal survived exactly until you next answered a question

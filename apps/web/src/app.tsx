@@ -2711,17 +2711,6 @@ export function App({ content, session, storage }: Props) {
                 setOverlay({ t: "questions", sectionId: topic.sectionId })
               }
               onStar={() => toggleStar(topic)}
-              // Only where there is a pile to leave. A topic with no card is
-              // already out of it, which is also what the sheet looks like the
-              // moment after a dismissal.
-              onDismiss={
-                topic.scheduled
-                  ? () => {
-                      dismissTopic(topic.sectionId, topic.title);
-                      setOverlay(overlay.back ?? { t: "map" });
-                    }
-                  : undefined
-              }
               onToggleRoll={() => toggleRoll(topic)}
               onMark={markPast(topic.sectionId)}
               onHoldWord={holdPastWord}

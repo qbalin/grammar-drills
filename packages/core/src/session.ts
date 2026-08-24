@@ -123,10 +123,16 @@ export interface TopicProgress {
   due: boolean;
   /**
    * In the review pile at all — it carries a card, whether or not that card is
-   * due yet. What `enrolTopic` puts there and `dismissTopic` takes away, so it is
-   * what a surface offering the dismissal has to read: `due` would hide the
-   * action on a topic scheduled for next month, which is exactly the topic
-   * somebody is looking at when they decide they have had enough of it.
+   * due yet. What `enrolTopic` puts there and `dismissTopic` takes away.
+   *
+   * Deliberately not `due`. The two only agree on a topic waiting right now,
+   * and the interesting case is the other one: a topic scheduled for next month
+   * is in the pile, and a `due`-shaped answer would say it was not.
+   *
+   * No screen draws it at the moment — the dismissal that used to read it is on
+   * the graded screen now, which knows it is on a review without asking. It
+   * stays because it is the engine's one answer to "is this topic in the pile",
+   * which is a question about a topic rather than about a screen.
    */
   scheduled: boolean;
   /** Questions of this topic's bank that have been answered at least once. */

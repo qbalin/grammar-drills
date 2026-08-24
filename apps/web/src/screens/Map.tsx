@@ -455,8 +455,14 @@ function Colophon() {
  * that stayed put. The walk is gone: staying put is what studying is, and moving
  * on means coming back here and choosing.
  *
- * Reading the grammar leaves nothing behind. The star and the dismissal are the
- * two things that outlive the sheet without starting a round.
+ * Reading the grammar leaves nothing behind. The star and the die toggle are
+ * the two things that outlive the sheet without starting a round.
+ *
+ * The dismissal used to be the third, at the foot under a "Reviews" heading and
+ * behind two presses. It is on the graded screen alone now: taking a topic out
+ * of the pile is a thing to decide in the moment it has just proved it is not
+ * what you need, and offering it here as well made a sheet you open in order to
+ * *start* something lead, at its foot, with a way to stop.
  */
 export function TopicSheet({
   topic,
@@ -467,7 +473,6 @@ export function TopicSheet({
   onDrill,
   onQuestions,
   onStar,
-  onDismiss,
   onToggleRoll,
   onMark,
   onHoldWord,
@@ -485,11 +490,6 @@ export function TopicSheet({
   onQuestions: () => void;
   /** Mark this topic to come back to, or take the mark off. */
   onStar: () => void;
-  /**
-   * Take it out of the review pile. Absent when it is not in one, which is the
-   * ordinary state of a topic and the state a dismissal leaves it in.
-   */
-  onDismiss?: () => void;
   /** Take it off the die, or put it back — see `Progress.noRoll`. */
   onToggleRoll: () => void;
   onMark?: (at: string, marks: AttemptMarks) => void;
@@ -509,10 +509,6 @@ export function TopicSheet({
   // questions and close it again on "practised all 0", so the button says so
   // instead of doing it.
   const nothingToServe = topic.hasTests && topic.questions === 0;
-  // Two presses for the dismissal, like every other deletion in this app. Local
-  // to the sheet, so closing it and coming back is also how you change your
-  // mind — the same shape `VocabEditSheet` uses.
-  const [confirmDismiss, setConfirmDismiss] = useState(false);
   return (
     <Sheet title={topic.title} subtitle={`§ ${topic.ref}`} onClose={onClose}>
       <p className="row__sub" style={{ marginTop: 0 }}>
@@ -532,8 +528,8 @@ export function TopicSheet({
         * It is a count and a suggestion, not an intervention. The *app* does not
         * suspend a topic and hides nothing, because a topic taken out of the
         * rotation for its own good is a decision made for somebody. What the
-        * student may do is take it out themselves — the button at the foot of
-        * this sheet — and this is the number that says there is something to
+        * student may do is take it out themselves, the next time it comes up
+        * for review, and this is the number that says there is something to
         * decide. Practising it is the other answer, and usually the better one.
         *
         * Four, because one or two failures is learning rather than a pattern.
@@ -658,48 +654,6 @@ export function TopicSheet({
           onHoldWord={onHoldWord}
           onInspectWord={onInspectWord}
         />
-      )}
-
-      {/*
-        * Last on the sheet, and only when there is a card to take off.
-        *
-        * The grammar twin of `VocabEditSheet`'s "Delete this word", and it
-        * deletes far less: the schedule for this topic, and nothing else. The
-        * answer trail above stays, the star stays, the questions were never the
-        * student's to remove — which is why the hint says what comes back and
-        * how, rather than warning that something is gone for good.
-        *
-        * A topic not in the pile has nothing to dismiss, so the section is
-        * simply absent — including straight after a dismissal, which is how the
-        * sheet says it worked.
-        */}
-      {onDismiss && (
-        <>
-          <div className="section-title">Reviews</div>
-          {confirmDismiss ? (
-            <>
-              <div className="actions">
-                <button className="btn" onClick={() => setConfirmDismiss(false)}>
-                  Keep reviewing
-                </button>
-                <button className="btn btn--danger" onClick={onDismiss}>
-                  Confirm — stop reviewing
-                </button>
-              </div>
-              <p className="field__hint">
-                The schedule for this topic goes. Your answers stay, and
-                practising it will ask whether to put it back.
-              </p>
-            </>
-          ) : (
-            <button
-              className="btn btn--quiet"
-              onClick={() => setConfirmDismiss(true)}
-            >
-              Stop reviewing this topic
-            </button>
-          )}
-        </>
       )}
     </Sheet>
   );
