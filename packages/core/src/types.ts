@@ -655,6 +655,25 @@ export interface Progress {
    * matters to me", which nothing can work out for them.
    */
   starred?: string[];
+  /**
+   * Topics the die never lands on.
+   *
+   * The roulette in the header rolls a topic to study, weighted towards the
+   * ones least answered — and a student who has worked the declensions out does
+   * not want them coming up again, however few of their questions are left. So
+   * they can be taken off the die, one at a time, from the topic's own sheet.
+   *
+   * Filed under **primary** topic ids like `starred`, and for the same reason:
+   * a further grammar's section that teaches two primary topics takes both off,
+   * and the exclusion is still there when the other book is opened. A file that
+   * has never excluded anything does not carry the field.
+   *
+   * It is not a dismissal and does not touch the review pile. What is due is
+   * still due, the topic is still on the index, and practising it by hand still
+   * works. The only thing this decides is what the die may hand over — which is
+   * why it is a toggle rather than a two-press deletion: nothing is lost by it.
+   */
+  noRoll?: string[];
   /** The round of questions in flight, if any. */
   openRound?: OpenRound | null;
   /**

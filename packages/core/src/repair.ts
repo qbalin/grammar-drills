@@ -56,16 +56,19 @@ export function repairProgress(raw: unknown, citationsVersion?: number): Repair 
     record(key);
   }
 
-  // The one field that is a list rather than a record. A non-array here would
-  // take `.includes` on the first star lookup; a non-string inside it can never
-  // match a section id, so it is dropped rather than kept as dead weight.
-  if (out.starred !== undefined) {
-    if (!Array.isArray(out.starred)) {
-      repaired.push("starred");
-      out.starred = [];
-    } else if (out.starred.some((id) => typeof id !== "string")) {
-      repaired.push("starred");
-      out.starred = out.starred.filter((id) => typeof id === "string");
+  // The two fields that are lists rather than records. A non-array here would
+  // take `.includes` on the first star or die lookup; a non-string inside one
+  // can never match a section id, so it is dropped rather than kept as dead
+  // weight.
+  for (const key of ["starred", "noRoll"]) {
+    const list = out[key];
+    if (list === undefined) continue;
+    if (!Array.isArray(list)) {
+      repaired.push(key);
+      out[key] = [];
+    } else if (list.some((id) => typeof id !== "string")) {
+      repaired.push(key);
+      out[key] = list.filter((id) => typeof id === "string");
     }
   }
 

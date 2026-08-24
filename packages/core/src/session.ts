@@ -139,6 +139,14 @@ export interface TopicProgress {
    */
   starred: boolean;
   /**
+   * The student took this one off the die — see `Progress.noRoll`.
+   *
+   * The second fact here that is not derived from the record of study, and the
+   * mirror of `starred`: one says come back to this, the other says stop
+   * offering me this at random. Neither touches the review pile.
+   */
+  noRoll: boolean;
+  /**
    * How many times this topic has been failed outright — FSRS's own `lapses`,
    * summed over the topics a section teaches.
    *
@@ -521,6 +529,106 @@ export class Session {
     return this.content
       .primaryTopicsFor(sectionId)
       .some((id) => starred.includes(id));
+  }
+
+  /**
+   * Take a topic off the die, or put it back.
+   *
+   * `star` and `unstar` in every respect — the same fan-out over
+   * `primaryTopicsFor`, the same absent-field-means-empty — because it is the
+   * same kind of fact: something the student said about a topic that nothing
+   * could work out for them. What it is *not* is a dismissal. The review pile is
+   * untouched, the index still lists it, and practising it by hand still works;
+   * the only thing this decides is whether `rollTopic` may hand it over.
+   *
+   * A section the crosswalk does not reach has no primary topic to file under
+   * and cannot be excluded — the same silence as its having no questions, and
+   * the die would never roll it either.
+   */
+  excludeFromRoll(sectionId: string): void {
+    const ids = this.content.primaryTopicsFor(sectionId);
+    const off = this.p.noRoll ?? [];
+    const added = ids.filter((id) => !off.includes(id));
+    if (added.length === 0) return;
+    this.p.noRoll = [...off, ...added];
+    this.touch();
+  }
+
+  allowInRoll(sectionId: string): void {
+    const ids = new Set(this.content.primaryTopicsFor(sectionId));
+    const off = this.p.noRoll ?? [];
+    const left = off.filter((id) => !ids.has(id));
+    if (left.length === off.length) return;
+    this.p.noRoll = left;
+    this.touch();
+  }
+
+  /**
+   * Whether the die skips this one. Any of the section's primary topics, to
+   * match `excludeFromRoll`, which sets them all — the reading `isStarred` takes
+   * for the same reason.
+   */
+  isExcludedFromRoll(sectionId: string): boolean {
+    const off = this.p.noRoll;
+    if (!off || off.length === 0) return false;
+    return this.content
+      .primaryTopicsFor(sectionId)
+      .some((id) => off.includes(id));
+  }
+
+  /**
+   * A topic to study, chosen for the student.
+   *
+   * Picking one is the whole of how a run begins — see "One way forward" in
+   * `README.md` — and that is right when there is a topic in mind and a burden
+   * when there is not. So the die: one tap and the app has chosen, and choosing
+   * badly costs one more tap.
+   *
+   * **Weighted by how little of the topic has been answered**, and only a
+   * little. The weight is `1/sqrt(1 + answered)`, so a topic nobody has touched
+   * is five times as likely as one twenty-four questions in rather than
+   * twenty-five times: the point is a nudge towards the unopened parts of the
+   * book, not a rule that the die may never revisit anything. Answers, not
+   * grades — how well a topic went is the student's business and the app keeps
+   * no figure for it.
+   *
+   * `questions` is already narrowed by the `quotedOnly` preference (see
+   * `bank`), so a preference that leaves a topic with nothing to serve also
+   * takes it off the die. Handing over a run that opens on "practised all 0"
+   * would be a roll that wasted the tap.
+   *
+   * `avoid` is whatever is on screen already: rolling the topic you are on is a
+   * die that did nothing, and the one case where it is the honest answer — it is
+   * the only candidate left — is allowed through.
+   *
+   * `null` when nothing is eligible at all, so a caller can say so rather than
+   * pretend.
+   */
+  rollTopic(
+    rng: () => number = Math.random,
+    now: Date = new Date(),
+    avoid?: string,
+  ): TopicProgress | null {
+    const eligible = this.grammarMap(now).filter(
+      (t) => t.questions > 0 && !t.readingOnly && !t.noRoll,
+    );
+    const pool =
+      avoid !== undefined && eligible.some((t) => t.sectionId !== avoid)
+        ? eligible.filter((t) => t.sectionId !== avoid)
+        : eligible;
+    if (pool.length === 0) return null;
+    const weights = pool.map((t) => 1 / Math.sqrt(1 + t.answered));
+    const total = weights.reduce((sum, w) => sum + w, 0);
+    let cut = rng() * total;
+    for (let i = 0; i < pool.length; i += 1) {
+      cut -= weights[i]!;
+      // `<= 0` rather than `< 0`, so an rng that returns exactly 0 lands on the
+      // first candidate instead of falling out of the loop.
+      if (cut <= 0) return pool[i]!;
+    }
+    // Only reachable on floating-point drift in the sum; the last candidate is
+    // the one the cut was heading for.
+    return pool[pool.length - 1]!;
   }
 
   /**
@@ -1651,6 +1759,7 @@ export class Session {
 
   private computeGrammarMap(now: Date): TopicProgress[] {
     const starred = new Set(this.p.starred ?? []);
+    const noRoll = new Set(this.p.noRoll ?? []);
     return this.content.sections(this.grammarId).map((s) => {
       /*
        * A section of a further grammar reads the progress of the primary topics
@@ -1677,6 +1786,8 @@ export class Session {
         questions,
         // Any of them, matching `star`, which sets them all.
         starred: primary.some((id) => starred.has(id)),
+        // Likewise `excludeFromRoll`.
+        noRoll: primary.some((id) => noRoll.has(id)),
         lapses: cards.reduce((n, c) => n + (c.lapses ?? 0), 0),
       };
     });

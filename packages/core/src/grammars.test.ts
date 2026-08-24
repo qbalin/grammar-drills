@@ -204,6 +204,15 @@ describe("a pack with more than one grammar", () => {
     const starred = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
     expect(starred.get("sg-100-nouns-a")!.starred).toBe(true);
     expect(starred.get("sg-110-nouns-b")!.starred).toBe(true);
+
+    // And the die with it, for the same reason. Taking one half off the die
+    // while the other went on being rolled would offer the same bank of
+    // questions under a name the student had just refused.
+    s.excludeFromRoll("sg-110-nouns-b");
+    const off = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
+    expect(off.get("sg-100-nouns-a")!.noRoll).toBe(true);
+    expect(off.get("sg-110-nouns-b")!.noRoll).toBe(true);
+    expect(s.progress().noRoll).toEqual(["tg-020-nouns"]);
   });
 
   it("draws a topic the crosswalk does not reach as having nothing to serve", () => {
@@ -219,6 +228,11 @@ describe("a pack with more than one grammar", () => {
     s.star("sg-300-orphan");
     expect(s.isStarred("sg-300-orphan")).toBe(false);
     expect(s.progress().starred).toBeUndefined();
+    // Nor taken off the die: with no questions behind it, the die would never
+    // have rolled it in the first place.
+    s.excludeFromRoll("sg-300-orphan");
+    expect(s.isExcludedFromRoll("sg-300-orphan")).toBe(false);
+    expect(s.progress().noRoll).toBeUndefined();
     /*
      * And it is *not* a reading page, which looks identical from here and is
      * not the same thing at all. This topic is grammar the table has not got to

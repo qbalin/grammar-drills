@@ -4,6 +4,7 @@ import { testProfile } from "./profile.fixture.js";
 import { compileFold } from "./fold.js";
 import { deserializeCard, newCard, preview, rate, serializeCard } from "./scheduler.js";
 import { MAX_CONTEXTS, Session } from "./session.js";
+import { mulberry32 } from "./shuffle.js";
 import {
   emptyProgress,
   type ContentData,
@@ -1100,6 +1101,126 @@ describe("Session: the index, the star and the pile", () => {
     expect(s.starredTopics(now)).toEqual([]);
     // Unstarring what was never starred is not an error.
     s.unstar("ag2");
+  });
+
+  /**
+   * The die: a topic chosen for the student rather than by them.
+   *
+   * Picking one is the whole of how a run begins, which is right when there is
+   * a topic in mind and a burden when there is not. Everything here is about
+   * what the die is *allowed* to hand over and how heavily it leans, because
+   * both are promises made on a screen — "never roll this" has to mean never,
+   * and "answered least" has to be visible over a handful of rolls rather than
+   * over ten thousand.
+   */
+  describe("the die", () => {
+    /** Answer both of `ag1`'s questions, so its coverage is 2 and `ag2`'s is 0. */
+    const workOut = (s: Session) => {
+      for (const prompt of ["puella (nom. pl.)?", "rosa (gen. sg.)?"]) {
+        s.recordAttempt("ag1", { prompt, answer: "x", submitted: "x", rating: 3 }, now);
+      }
+    };
+
+    it("takes a topic off the die and puts it back, without touching the pile", () => {
+      const s = new Session(new Content(fixture, testProfile));
+      s.enrolTopic("ag1", 4, now);
+      expect(topic(s, "ag1").noRoll).toBe(false);
+
+      s.excludeFromRoll("ag1");
+      expect(s.isExcludedFromRoll("ag1")).toBe(true);
+      expect(topic(s, "ag1").noRoll).toBe(true);
+      // A preference about the die and nothing else: what is due is still due.
+      expect(topic(s, "ag1").scheduled).toBe(true);
+      expect(s.progress().topicCards.ag1).toBeDefined();
+      // Excluding twice is not two exclusions.
+      s.excludeFromRoll("ag1");
+      expect(s.progress().noRoll).toEqual(["ag1"]);
+
+      s.allowInRoll("ag1");
+      expect(s.isExcludedFromRoll("ag1")).toBe(false);
+      // Allowing what was never excluded is not an error.
+      s.allowInRoll("ag2");
+    });
+
+    it("never hands over a topic that has been taken off it", () => {
+      const s = new Session(new Content(fixture, testProfile));
+      s.excludeFromRoll("ag1");
+      const rng = mulberry32(7);
+      for (let i = 0; i < 50; i += 1) {
+        expect(s.rollTopic(rng, now)?.sectionId).toBe("ag2");
+      }
+    });
+
+    it("says so rather than pretending when there is nothing left to roll", () => {
+      const s = new Session(new Content(fixture, testProfile));
+      s.excludeFromRoll("ag1");
+      s.excludeFromRoll("ag2");
+      expect(s.rollTopic(mulberry32(1), now)).toBeNull();
+    });
+
+    it("skips a page the book sets no exercise on, and one with nothing written yet", () => {
+      /*
+       * Two different silences and the same answer. A reading-only page has no
+       * questions and never will; a topic nobody has written questions for has
+       * none yet. Rolling either opens a run that closes again on
+       * "practised all 0", which is a tap the die wasted.
+       */
+      const withReading = {
+        ...fixture,
+        grammar: [
+          ...fixture.grammar,
+          { id: "sounds", ref: "3", title: "Sounds", family: "nouns", text: "...", order: 3, readingOnly: true },
+          { id: "untested", ref: "4", title: "Untested", family: "nouns", text: "...", order: 4 },
+        ],
+      };
+      const s = new Session(new Content(withReading, testProfile));
+      const rolled = new Set<string>();
+      const rng = mulberry32(3);
+      for (let i = 0; i < 200; i += 1) rolled.add(s.rollTopic(rng, now)!.sectionId);
+      expect(rolled).toEqual(new Set(["ag1", "ag2"]));
+    });
+
+    it("leans towards the topic answered least, by exactly 1/sqrt(1 + answered)", () => {
+      // Pinned against the arithmetic rather than against a sample, so the
+      // weight cannot drift into something steeper while the test still passes.
+      // `ag1` is worked out (2 answered, weight 0.577); `ag2` is untouched
+      // (weight 1); the cut runs over them in book order out of 1.577.
+      const s = new Session(new Content(fixture, testProfile));
+      workOut(s);
+      expect(topic(s, "ag1").answered).toBe(2);
+      expect(topic(s, "ag2").answered).toBe(0);
+
+      expect(s.rollTopic(() => 0.3, now)!.sectionId).toBe("ag1");
+      expect(s.rollTopic(() => 0.5, now)!.sectionId).toBe("ag2");
+      // The two ends, which is where an off-by-one in the walk shows up.
+      expect(s.rollTopic(() => 0, now)!.sectionId).toBe("ag1");
+      expect(s.rollTopic(() => 0.999999, now)!.sectionId).toBe("ag2");
+    });
+
+    it("leans, and no more than leans — the worked-out topic still comes up", () => {
+      // The nudge is deliberately gentle: a die that never revisits anything is
+      // a rule about what may be studied, which is not this app's to make.
+      const s = new Session(new Content(fixture, testProfile));
+      workOut(s);
+      const rng = mulberry32(11);
+      let untouched = 0;
+      for (let i = 0; i < 1000; i += 1) {
+        if (s.rollTopic(rng, now)!.sectionId === "ag2") untouched += 1;
+      }
+      expect(untouched).toBeGreaterThan(550);
+      expect(untouched).toBeLessThan(700);
+    });
+
+    it("does not hand back the topic already open, unless it is the only one", () => {
+      const s = new Session(new Content(fixture, testProfile));
+      const rng = mulberry32(5);
+      for (let i = 0; i < 50; i += 1) {
+        expect(s.rollTopic(rng, now, "ag1")?.sectionId).toBe("ag2");
+      }
+      // The one case where handing it back is the honest answer.
+      s.excludeFromRoll("ag2");
+      expect(s.rollTopic(rng, now, "ag1")?.sectionId).toBe("ag1");
+    });
   });
 
   it("keeps the starred shelf in book order, whatever order it was filled in", () => {

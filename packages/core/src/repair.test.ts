@@ -59,7 +59,7 @@ describe("repairing a progress file", () => {
   });
 
   it("puts back a star list that is not a list, and drops what is not an id", () => {
-    // It is the one field here that is an array, so it is the one that would
+    // One of the two fields here that are arrays, so one of the two that would
     // take `.includes` on something that has no such method.
     const notAList = repairProgress({ ...emptyProgress(), starred: "ag1" });
     expect(notAList.repaired).toEqual(["starred"]);
@@ -68,6 +68,22 @@ describe("repairing a progress file", () => {
     const mixed = repairProgress({ ...emptyProgress(), starred: ["ag1", 7, null] });
     expect(mixed.repaired).toEqual(["starred"]);
     expect(mixed.progress.starred).toEqual(["ag1"]);
+  });
+
+  it("repairs the die's exclusions on the same terms as the stars", () => {
+    // The second list, and it takes `.includes` on the first roll rather than
+    // on the first star lookup — a different screen, the same crash.
+    const notAList = repairProgress({ ...emptyProgress(), noRoll: 3 });
+    expect(notAList.repaired).toEqual(["noRoll"]);
+    expect(notAList.progress.noRoll).toEqual([]);
+
+    const mixed = repairProgress({ ...emptyProgress(), noRoll: [null, "ag2"] });
+    expect(mixed.repaired).toEqual(["noRoll"]);
+    expect(mixed.progress.noRoll).toEqual(["ag2"]);
+
+    // A file that has never excluded anything carries no field, and repairing
+    // it must not invent one.
+    expect(repairProgress(emptyProgress()).progress.noRoll).toBeUndefined();
   });
 
   it("drops a trail entry that is not a list, and keeps its neighbours", () => {
