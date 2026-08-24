@@ -1181,6 +1181,76 @@ describe("marking up an answer", () => {
     ).toContain("Puella rosam amat.");
   });
 
+  /**
+   * Following a § out of one topic and back again.
+   *
+   * The two halves of one feature: the reference is only worth pressing if
+   * there is a way back, and the way back is the app's trail rather than the
+   * reader's — a page turned is as much a step as a reference followed.
+   */
+  const linked: ContentData = {
+    ...fixture,
+    grammar: [
+      { ...fixture.grammar[0]!, text: "⟦#20⟧\nFirst-declension nouns end in -a; see ⟦r23:§ 23⟧." },
+      { ...fixture.grammar[1]!, text: "⟦#23⟧\nSecond-declension nouns end in -us." },
+      fixture.grammar[2]!,
+    ],
+  };
+
+  it("follows a reference to the topic that holds the section it names", async () => {
+    const user = userEvent.setup();
+    mount(undefined, linked);
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
+    await user.click(screen.getByRole("button", { name: "Read § 20-22" }));
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+
+    await user.click(screen.getByRole("button", { name: "§ 23" }));
+    expect(screen.getByRole("dialog", { name: "Second declension" })).toBeDefined();
+  });
+
+  it("walks the trail back and forward again, however each step was taken", async () => {
+    const user = userEvent.setup();
+    mount(undefined, linked);
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    await user.click(screen.getByRole("button", { name: /§ 20-22\s*First declension/ }));
+    await user.click(screen.getByRole("button", { name: "Read § 20-22" }));
+    await user.click(screen.getByRole("button", { name: "§ 23" }));
+
+    // Back over the reference…
+    await user.click(screen.getByRole("button", { name: "Back" }));
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+    // …and forward over it again, which is the half no ✕ can do.
+    await user.click(screen.getByRole("button", { name: "Forward" }));
+    expect(screen.getByRole("dialog", { name: "Second declension" })).toBeDefined();
+
+    // A page turned is a step too: the reader should not have to know which of
+    // the ways of moving the app counted.
+    await user.click(screen.getByRole("button", { name: /Previous section/ }));
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+    await user.click(screen.getByRole("button", { name: "Back" }));
+    expect(screen.getByRole("dialog", { name: "Second declension" })).toBeDefined();
+  });
+
+  it("has nowhere to go forward to until something has been gone back over", async () => {
+    const user = userEvent.setup();
+    // Nothing being practised, so the reader is not already open: a round on
+    // fresh ground teaches before it tests, and that page is a step like any
+    // other.
+    mount(undefined, linked, testProfile, null);
+
+    // The empty screen offers the index twice, as a word and as a glyph.
+    await user.click(screen.getAllByRole("button", { name: "Grammar index" })[0]!);
+    expect(screen.getByRole("button", { name: "Forward" })).toHaveProperty("disabled", true);
+
+    // The first sheet opened is itself a step, so back from it is the screen it
+    // was opened over — the same place ✕ leads, by the other road.
+    await user.click(screen.getByRole("button", { name: "Back" }));
+    expect(screen.queryByRole("dialog")).toBeNull();
+  });
+
   it("drops the marks on a sentence that is rewritten, and keeps the rest", async () => {
     const user = userEvent.setup();
     const { session } = mount();

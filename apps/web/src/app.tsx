@@ -47,7 +47,7 @@ import {
   requestPersistence,
   type StorageReport,
 } from "./storage/quota.js";
-import { Sheet, Toast, ago, cycleEmphasis } from "./ui.js";
+import { Sheet, Toast, TrailProvider, ago, cycleEmphasis } from "./ui.js";
 import {
   Answering,
   Graded,
@@ -144,7 +144,8 @@ interface GradeUndo {
 
 type Overlay =
   | null
-  | { t: "grammar"; sectionId: string; back?: Overlay }
+  /** `ref` is the numbered section to land on, when a reference asked for one. */
+  | { t: "grammar"; sectionId: string; ref?: string; back?: Overlay }
   | { t: "map" }
   | { t: "topic"; sectionId: string; back?: Overlay }
   | { t: "attempts"; sectionId: string }
@@ -218,6 +219,9 @@ type Overlay =
 function asksAboutSync(overlay: Overlay | null): boolean {
   return overlay?.t === "conflict" || overlay?.t === "overwrite" || overlay?.t === "discard";
 }
+
+/** How many steps of the trail are kept behind the cursor. */
+const TRAIL_MAX = 50;
 
 /** Whether anything at all has been picked out, across the three texts. */
 function hasMarks(marks: AttemptMarks): boolean {
@@ -296,7 +300,63 @@ export function App({ content, session, storage }: Props) {
   });
 
   const [phase, setPhase] = useState<Phase>({ t: "answering" });
-  const [overlay, setOverlay] = useState<Overlay>(null);
+
+  /*
+   * Where the reader has been, and where they were before they went back.
+   *
+   * The app had no trail at all: every sheet knew what it was opened *over*
+   * (`Overlay.back`) and nothing knew what had been visited. That was tolerable
+   * while a sheet was somewhere you went and came straight back from, and it
+   * stopped being tolerable the moment a § in the prose became a tap: following
+   * a reference out of § 328 into § 270 and then wanting § 328 again was a trip
+   * through the map.
+   *
+   * A cursor into a stack rather than a bare state, and `setOverlay` keeps its
+   * signature exactly — so none of the forty-odd call sites changes and the
+   * forty-first is covered by existing. That is the same argument the popstate
+   * effect below makes, and for the same reason: a trail threaded through every
+   * close is a trail that works until somebody forgets.
+   *
+   * Three rules, and they are the whole of it. **Everything is a step** — a §
+   * followed, a page turned, a sheet opened — because a reader who swiped twice
+   * and wants back should not have to know which of those the app counted.
+   * **Closing ends the excursion**: `null` empties the stack, since a trail
+   * through a screen nobody is on is a trail nobody wants. And **stepping onto
+   * the entry already behind the cursor is a step back, not a new one** — ✕
+   * hands back the very object it was opened over, so the common way out of a
+   * sheet moves the cursor rather than growing the stack behind it.
+   */
+  const [nav, setNav] = useState<{ stack: Overlay[]; at: number }>({
+    stack: [null],
+    at: 0,
+  });
+  const overlay = nav.stack[nav.at] ?? null;
+  const setOverlay = useCallback((to: Overlay | ((was: Overlay) => Overlay)) => {
+    setNav((n) => {
+      const was = n.stack[n.at] ?? null;
+      // The functional form, which three word-gesture sheets use to carry what
+      // was already open into what they open next.
+      const next = typeof to === "function" ? to(was) : to;
+      if (next === was) return n;
+      if (next === null) return { stack: [null], at: 0 };
+      if (n.at > 0 && next === n.stack[n.at - 1]) return { ...n, at: n.at - 1 };
+      const stack = [...n.stack.slice(0, n.at + 1), next];
+      // Long enough that no reading session reaches the end of it, short enough
+      // that a stack of overlays is never what is holding a device's memory.
+      const over = Math.max(0, stack.length - TRAIL_MAX);
+      return { stack: stack.slice(over), at: stack.length - 1 - over };
+    });
+  }, []);
+  const trail = useMemo(
+    () => ({
+      back: nav.at > 0 ? () => setNav((n) => ({ ...n, at: n.at - 1 })) : undefined,
+      forward:
+        nav.at < nav.stack.length - 1
+          ? () => setNav((n) => ({ ...n, at: n.at + 1 }))
+          : undefined,
+    }),
+    [nav.at, nav.stack.length],
+  );
 
   /*
    * The system Back button closes the sheet instead of leaving the app.
@@ -2392,921 +2452,949 @@ export function App({ content, session, storage }: Props) {
     // The errand reaches the stylesheet here: reviewing and exploring are
     // different enough to be worth telling apart from across the room, and a
     // colour does that before any word is read.
-    <div className="app" data-mode={mode}>
-      {/* Two rows, because the switch, the round's badge and four tap targets
-          leave a phone-width line no room for a title — and Bennett's titles
-          run to "Verbs in -io of the Third Conjugation". The topic gets the
-          second line, sharing it only with the count, which is short and
-          right-aligned and leaves the title everything else. */}
-      <header className="status">
-        <div className="status__row">
-          {/* The two errands, both always on screen. Three links used to say
-              the same two things one at a time — "set these aside and
-              explore", "back to reviews", "back to the book" — so whichever
-              state you were not in was invisible, and the one you were in
-              looked like the only one there was.
+    //
+    // The trail is provided once, around everything, rather than handed to each
+    // sheet: `Sheet` is rendered from seventeen places and not one of them is a
+    // better place to know that the reader has been somewhere else first.
+    <TrailProvider value={trail}>
+      <div className="app" data-mode={mode}>
+        {/* Two rows, because the switch, the round's badge and four tap targets
+            leave a phone-width line no room for a title — and Bennett's titles
+            run to "Verbs in -io of the Third Conjugation". The topic gets the
+            second line, sharing it only with the count, which is short and
+            right-aligned and leaves the title everything else. */}
+        <header className="status">
+          <div className="status__row">
+            {/* The two errands, both always on screen. Three links used to say
+                the same two things one at a time — "set these aside and
+                explore", "back to reviews", "back to the book" — so whichever
+                state you were not in was invisible, and the one you were in
+                looked like the only one there was.
 
-              Both halves grey out together when nothing is due: with no pile
-              to go back to, Review is not a place to be, and dimming the pair
-              says so better than a live button that would bounce straight
-              back. Together, still, so the documented pairing holds.
+                Both halves grey out together when nothing is due: with no pile
+                to go back to, Review is not a place to be, and dimming the pair
+                says so better than a live button that would bounce straight
+                back. Together, still, so the documented pairing holds.
 
-              Unless a review was put down part-answered, in which case Review
-              *is* a place to be and the count is the wrong thing to ask. That
-              round's own first grade is what rescheduled its card and emptied
-              the pile, so this is exactly the state a student reaches by
-              answering one question of the last thing due and then tapping the
-              die — and greying the switch there would lock them out of the
-              round this whole change exists to keep. */}
-          <div className="modes" role="group" aria-label="What to study">
-            <button
-              className="modes__pick"
-              aria-pressed={mode === "explore"}
-              disabled={dueNow === 0 && !parkedReview}
-              onClick={() => chooseMode("explore")}
-            >
-              Explore
-            </button>
-            <button
-              className="modes__pick"
-              aria-pressed={mode === "review"}
-              disabled={dueNow === 0 && !parkedReview}
-              onClick={() => chooseMode("review")}
-            >
-              Review
-            </button>
-          </div>
-          {badge && (
-            <span className={`badge badge--${badge}`}>
-              {badgeLabel[badge]}
-              {runProgress ? ` ${runProgress.done}/${runProgress.total}` : ""}
-            </span>
-          )}
-          <span className="status__spacer" />
-          {/* The tools travel together, and closed up: each is a tap target
-              with its own margin around the glyph, so the row's gap between
-              them was width spent twice. On a 375px phone that width is the
-              difference between the switch fitting on this line and not. */}
-          <div className="status__tools">
-            {/* Decoration, and hidden from screen readers on purpose: it says
-                nothing that is not already in Settings, and announcing every
-                push would talk over the question. */}
-            {floppy && (
-              <span className={`floppy floppy--${floppy}`} aria-hidden="true">
-                💾
+                Unless a review was put down part-answered, in which case Review
+                *is* a place to be and the count is the wrong thing to ask. That
+                round's own first grade is what rescheduled its card and emptied
+                the pile, so this is exactly the state a student reaches by
+                answering one question of the last thing due and then tapping the
+                die — and greying the switch there would lock them out of the
+                round this whole change exists to keep. */}
+            <div className="modes" role="group" aria-label="What to study">
+              <button
+                className="modes__pick"
+                aria-pressed={mode === "explore"}
+                disabled={dueNow === 0 && !parkedReview}
+                onClick={() => chooseMode("explore")}
+              >
+                Explore
+              </button>
+              <button
+                className="modes__pick"
+                aria-pressed={mode === "review"}
+                disabled={dueNow === 0 && !parkedReview}
+                onClick={() => chooseMode("review")}
+              >
+                Review
+              </button>
+            </div>
+            {badge && (
+              <span className={`badge badge--${badge}`}>
+                {badgeLabel[badge]}
+                {runProgress ? ` ${runProgress.done}/${runProgress.total}` : ""}
               </span>
             )}
-            {/* Offered only while there is a grade to take back, and on
-                whatever screen the grade landed you on. */}
-            {undo && (
+            <span className="status__spacer" />
+            {/* The tools travel together, and closed up: each is a tap target
+                with its own margin around the glyph, so the row's gap between
+                them was width spent twice. On a 375px phone that width is the
+                difference between the switch fitting on this line and not. */}
+            <div className="status__tools">
+              {/* Decoration, and hidden from screen readers on purpose: it says
+                  nothing that is not already in Settings, and announcing every
+                  push would talk over the question. */}
+              {floppy && (
+                <span className={`floppy floppy--${floppy}`} aria-hidden="true">
+                  💾
+                </span>
+              )}
+              {/* Offered only while there is a grade to take back, and on
+                  whatever screen the grade landed you on. */}
+              {undo && (
+                <button
+                  className="iconbtn"
+                  onClick={undoGrade}
+                  aria-label="Undo last grade"
+                >
+                  ↺
+                </button>
+              )}
               <button
                 className="iconbtn"
-                onClick={undoGrade}
-                aria-label="Undo last grade"
+                onClick={() => setOverlay({ t: "map" })}
+                aria-label="Grammar index"
               >
-                ↺
+                📖
               </button>
+              {/* Beside the index, because it answers the same question the
+                  index does — what shall I study — and answers it for you. The
+                  pair is the whole of how a run begins: pick one, or be handed
+                  one. */}
+              <button
+                className="iconbtn"
+                onClick={() => rollTopic()}
+                aria-label="Roll a topic to study"
+              >
+                🎲
+              </button>
+              <button
+                className="iconbtn"
+                onClick={() => setOverlay({ t: "settings" })}
+                aria-label="Settings"
+              >
+                ⋯
+              </button>
+            </div>
+          </div>
+          <div className="status__row">
+            {badge === "vocab" || badge === "sentence" ? (
+              // A word is on screen, so the topic studied before it is not what
+              // this line is about — and its prose is not what a student reaching
+              // for help here wants. It says what is being worked on and stops
+              // there: the word itself is the answer being graded, and printing
+              // it above the gloss would give the card away.
+              <span className="status__title">
+                {badge === "vocab" ? "Vocabulary" : "A sentence you kept"}
+              </span>
+            ) : section ? (
+              // The way in to the grammar from a question, and now the only
+              // one. The graded view had a `§ grammar` link that opened this
+              // same section, which meant the book was reachable only once the
+              // answer was in — and reachable twice over on the one screen that
+              // needed it least. The name is on the bar the whole time a topic
+              // is studied, above the scroll rather than in it, so the screen
+              // you are stuck on is the screen the book is a tap from.
+              <button
+                className="status__topic"
+                onClick={() =>
+                  setOverlay({ t: "grammar", sectionId: section.id, back: overlay })
+                }
+                aria-label={`Read the grammar for ${section.title}`}
+              >
+                <span className="status__ref">{content.formatRef(section.ref)}</span>
+                <span className="status__title">{section.title}</span>
+              </button>
+            ) : (
+              <span className="status__title">{profile.ui.appName}</span>
             )}
+            {/* The count is the natural way in to the schedule: it is already
+                the answer to "how much is waiting", and the sheet is the rest of
+                that answer. It sits at the end of this line rather than the one
+                above because the switch took that line's spare width, and the
+                title has ellipsis to give where the count has none. */}
             <button
-              className="iconbtn"
-              onClick={() => setOverlay({ t: "map" })}
-              aria-label="Grammar index"
+              className="status__counts"
+              onClick={() => setOverlay({ t: "schedule" })}
+              aria-label="What is coming up"
             >
-              📖
-            </button>
-            {/* Beside the index, because it answers the same question the
-                index does — what shall I study — and answers it for you. The
-                pair is the whole of how a run begins: pick one, or be handed
-                one. */}
-            <button
-              className="iconbtn"
-              onClick={() => rollTopic()}
-              aria-label="Roll a topic to study"
-            >
-              🎲
-            </button>
-            <button
-              className="iconbtn"
-              onClick={() => setOverlay({ t: "settings" })}
-              aria-label="Settings"
-            >
-              ⋯
+              {/* What is due is what is due, on either errand. It used to read
+                  "N waiting" while exploring, which was a second number for the
+                  same pile and made the switch look like it had changed it. */}
+              {dueNow > 0 ? `${dueNow} due` : `${stats.vocab} words`}
             </button>
           </div>
-        </div>
-        <div className="status__row">
-          {badge === "vocab" || badge === "sentence" ? (
-            // A word is on screen, so the topic studied before it is not what
-            // this line is about — and its prose is not what a student reaching
-            // for help here wants. It says what is being worked on and stops
-            // there: the word itself is the answer being graded, and printing
-            // it above the gloss would give the card away.
-            <span className="status__title">
-              {badge === "vocab" ? "Vocabulary" : "A sentence you kept"}
-            </span>
-          ) : section ? (
-            // The way in to the grammar from a question, and now the only
-            // one. The graded view had a `§ grammar` link that opened this
-            // same section, which meant the book was reachable only once the
-            // answer was in — and reachable twice over on the one screen that
-            // needed it least. The name is on the bar the whole time a topic
-            // is studied, above the scroll rather than in it, so the screen
-            // you are stuck on is the screen the book is a tap from.
-            <button
-              className="status__topic"
-              onClick={() =>
-                setOverlay({ t: "grammar", sectionId: section.id, back: overlay })
-              }
-              aria-label={`Read the grammar for ${section.title}`}
-            >
-              <span className="status__ref">{content.formatRef(section.ref)}</span>
-              <span className="status__title">{section.title}</span>
-            </button>
-          ) : (
-            <span className="status__title">{profile.ui.appName}</span>
-          )}
-          {/* The count is the natural way in to the schedule: it is already
-              the answer to "how much is waiting", and the sheet is the rest of
-              that answer. It sits at the end of this line rather than the one
-              above because the switch took that line's spare width, and the
-              title has ellipsis to give where the count has none. */}
-          <button
-            className="status__counts"
-            onClick={() => setOverlay({ t: "schedule" })}
-            aria-label="What is coming up"
-          >
-            {/* What is due is what is due, on either errand. It used to read
-                "N waiting" while exploring, which was a second number for the
-                same pile and made the switch look like it had changed it. */}
-            {dueNow > 0 ? `${dueNow} due` : `${stats.vocab} words`}
-          </button>
-        </div>
-      </header>
+        </header>
 
-      {/*
-        * What just happened, for a reader who cannot see it happen.
-        *
-        * Answering → graded → landed replaces the whole `.study` subtree, and
-        * it did so silently: the only live region in the app was the toast, so
-        * a screen reader gave no sign that submitting had produced anything.
-        * The student's own answer and the reference are both on screen at that
-        * point and both are readable — what was missing was any signal to go
-        * and read them.
-        *
-        * `polite` rather than `assertive`, because none of this interrupts
-        * anything; and one short line rather than the screen's contents, since
-        * the contents are in the document and announcing them twice is worse
-        * than announcing them once.
-        */}
-      <p className="visually-hidden" role="status">
-        {phase.t === "graded"
-          ? "Answer shown beside the reference. Grade yourself 1 to 4."
-          : phase.t === "landed"
-            ? "Round finished."
-            : phase.t === "answering"
-              ? `Question ${qIndex + 1} of ${test?.questions.length ?? 0}.`
-              : ""}
-      </p>
+        {/*
+          * What just happened, for a reader who cannot see it happen.
+          *
+          * Answering → graded → landed replaces the whole `.study` subtree, and
+          * it did so silently: the only live region in the app was the toast, so
+          * a screen reader gave no sign that submitting had produced anything.
+          * The student's own answer and the reference are both on screen at that
+          * point and both are readable — what was missing was any signal to go
+          * and read them.
+          *
+          * `polite` rather than `assertive`, because none of this interrupts
+          * anything; and one short line rather than the screen's contents, since
+          * the contents are in the document and announcing them twice is worse
+          * than announcing them once.
+          */}
+        <p className="visually-hidden" role="status">
+          {phase.t === "graded"
+            ? "Answer shown beside the reference. Grade yourself 1 to 4."
+            : phase.t === "landed"
+              ? "Round finished."
+              : phase.t === "answering"
+                ? `Question ${qIndex + 1} of ${test?.questions.length ?? 0}.`
+                : ""}
+        </p>
 
-      <div className="study">
-        {phase.t === "answering" && question && (
-          <Answering
-            question={question}
-            index={qIndex}
-            total={test?.questions.length ?? 0}
-            value={input}
-            onChange={setInput}
-            onSubmit={() => {
-              // Marks on the reference and the prompt outlive a rewrite — the
-              // question has not changed. Marks on your own sentence do not:
-              // they name positions in a sentence that no longer exists.
-              if (input !== submitted) {
+        <div className="study">
+          {phase.t === "answering" && question && (
+            <Answering
+              question={question}
+              index={qIndex}
+              total={test?.questions.length ?? 0}
+              value={input}
+              onChange={setInput}
+              onSubmit={() => {
+                // Marks on the reference and the prompt outlive a rewrite — the
+                // question has not changed. Marks on your own sentence do not:
+                // they name positions in a sentence that no longer exists.
+                if (input !== submitted) {
+                  setMarks(({ submitted: _stale, ...rest }) => rest);
+                }
+                setSubmitted(input);
+                setPhase({ t: "graded", revealed: false });
+              }}
+              onReveal={() => {
+                setSubmitted("");
                 setMarks(({ submitted: _stale, ...rest }) => rest);
+                setPhase({ t: "graded", revealed: true });
+              }}
+              vocabulary={
+                <QuestionVocabulary
+                  words={vocabulary}
+                  open={showVocab}
+                  status={dictStatus}
+                  onToggle={toggleVocab}
+                  onHold={holdCribWord}
+                  onInspect={inspectCribWord}
+                />
               }
-              setSubmitted(input);
-              setPhase({ t: "graded", revealed: false });
+            />
+          )}
+
+          {phase.t === "graded" && question && (
+            <Graded
+              question={question}
+              submitted={submitted}
+              revealed={phase.revealed}
+              index={qIndex}
+              total={test?.questions.length ?? 0}
+              schedule={schedule}
+              settled={roundSettled}
+              marks={marks}
+              marking={marking}
+              onGrade={grade}
+              onResume={resumeWriting}
+              onRecordWord={() => openVocab()}
+              onHoldWord={holdWord}
+              onInspectWord={inspectWord}
+              onToggleMarking={() => setMarking((on) => !on)}
+              onKeepSentence={keepSentence}
+              kept={session.hasSentence(question.prompt, question.answer)}
+              // Only on a review: this is the moment the topic has just shown it
+              // is not what the student needs. On a run they chose the topic a
+              // moment ago, and the way out is choosing another.
+              onDismiss={
+                via === "review" && sectionId
+                  ? () => {
+                      if (!dismissing) {
+                        setDismissing(true);
+                        return;
+                      }
+                      setDismissing(false);
+                      dismissTopic(
+                        sectionId,
+                        content.getSection(sectionId)?.title ?? "This topic",
+                      );
+                    }
+                  : undefined
+              }
+              dismissing={dismissing}
+              onMark={markHere}
+              onCopy={copyText}
+              vocabulary={
+                <QuestionVocabulary
+                  words={vocabulary}
+                  open={showVocab}
+                  status={dictStatus}
+                  onToggle={toggleVocab}
+                  onHold={holdCribWord}
+                  onInspect={inspectCribWord}
+                />
+              }
+              history={
+                <EarlierAnswers
+                  attempts={attempts}
+                  open={showTrail}
+                  onToggle={() => setShowTrail((open) => !open)}
+                  onMark={sectionId ? markPast(sectionId) : undefined}
+                  onHoldWord={holdPastWord}
+                  onInspectWord={inspectWord}
+                />
+              }
+            />
+          )}
+
+          {phase.t === "sentence-review" &&
+            (() => {
+              const card = session.sentenceCard(phase.cardId);
+              if (!card) return null;
+              return (
+                <SentenceReview
+                  card={card}
+                  revealed={phase.revealed}
+                  schedule={session.previewSentence(phase.cardId)}
+                  onReveal={() => setPhase({ ...phase, revealed: true })}
+                  onGrade={(r) => gradeSentence(phase.cardId, r)}
+                  onForget={() => {
+                    if (forgetting !== phase.cardId) {
+                      setForgetting(phase.cardId);
+                      return;
+                    }
+                    setForgetting(null);
+                    forgetSentence(phase.cardId);
+                  }}
+                  forgetting={forgetting === phase.cardId}
+                  /* The card's own sentence is what a word held here was met in,
+                     so the vocabulary card it makes keeps that line — the same
+                     bargain the graded screen strikes with its reference. */
+                  onHoldWord={(word, i) =>
+                    takeWord(
+                      word,
+                      contextOf(card.prompt, card.answer, "answer", i),
+                    )
+                  }
+                  onInspectWord={inspectWord}
+                  onCopy={() => copyToClipboard(card.answer, COPIED.answer)}
+                />
+              );
+            })()}
+
+          {phase.t === "vocab-review" &&
+            (() => {
+              const card = session.vocabCard(phase.cardId);
+              if (!card) return null;
+              return (
+                <VocabReview
+                  card={card}
+                  revealed={phase.revealed}
+                  schedule={session.previewVocab(phase.cardId)}
+                  onReveal={() => setPhase({ ...phase, revealed: true })}
+                  onGrade={(r) => gradeVocab(phase.cardId, r)}
+                  onEdit={() => setOverlay({ t: "vocab-edit", cardId: phase.cardId })}
+                  onHoldWord={holdSavedWord}
+                  onInspectWord={inspectWord}
+                  onCopy={copyKept}
+                />
+              );
+            })()}
+
+          {phase.t === "practised" &&
+            (() => {
+              const at = phase.sectionId;
+              return (
+                <Practised
+                  title={content.getSection(at)?.title ?? "this topic"}
+                  // What the run was for, not what the topic holds: under the
+                  // quoted-only preference a drill is over the quoted questions,
+                  // and reporting the whole bank would credit the student with
+                  // questions the run never showed them.
+                  total={session.coverage(at).total}
+                  scheduled={session.isScheduled(at)}
+                  // Previewed with no round named, which is the truth here: this
+                  // screen is reached through `advance`, which ends the round
+                  // first, so `enrolTopic` falls back to the same 3 this asks
+                  // for. The two agree by construction rather than by luck, and
+                  // `core.test.ts` holds them to it.
+                  due={session.previewTopic(at)[3]}
+                  onEnrol={() => enrolTopic(at, content.getSection(at)?.title ?? "this topic")}
+                  onAgain={() => {
+                    session.drillTopic(at);
+                    save();
+                    advance("explore");
+                  }}
+                  onOpenMap={() => setOverlay({ t: "map" })}
+                />
+              );
+            })()}
+
+          {phase.t === "landed" && (
+            <Landed
+              title={
+                phase.round
+                  ? // Named as the page it was read on, which is what the student
+                    // was looking at — a further grammar's section, when they
+                    // reached the questions through one.
+                    (content.getSection(
+                      phase.round.viewedAs ?? phase.round.sectionId,
+                    )?.title ?? "this topic")
+                  : undefined
+              }
+              round={phase.round}
+              cleared={phase.cleared}
+              met={phase.met}
+              nextDue={nextDue}
+              onEnrol={
+                phase.round
+                  ? // The topic the round was filed under, never the page it was
+                    // reached through: `enrolTopic` maps that back out to every
+                    // primary topic the page teaches, and handing it `viewedAs`
+                    // would enrol a topic this round never touched.
+                    () =>
+                      enrolTopic(
+                        phase.round!.sectionId,
+                        content.getSection(
+                          phase.round!.viewedAs ?? phase.round!.sectionId,
+                        )?.title ?? "this topic",
+                      )
+                  : undefined
+              }
+              onKeepGoing={() => {
+                if (phase.cleared) {
+                  // The pile is empty, so Review is no longer somewhere to be —
+                  // the same conclusion `advance` draws for every other route,
+                  // drawn on a tap here instead of behind one.
+                  setMode("explore");
+                  advance("explore");
+                } else {
+                  advance();
+                }
+              }}
+              onStop={() => setOverlay({ t: "schedule" })}
+            />
+          )}
+
+          {phase.t === "done" && (
+            <Rest
+              dueNow={dueNow}
+              nextDue={nextDue}
+              onOpenMap={() => setOverlay({ t: "map" })}
+              onOpenSchedule={() => setOverlay({ t: "schedule" })}
+            />
+          )}
+        </div>
+
+        {toast && (
+          <Toast
+            message={toast.message}
+            action={toast.action}
+            onAction={() => {
+              setToast(null);
+              toast.onAction?.();
             }}
-            onReveal={() => {
-              setSubmitted("");
-              setMarks(({ submitted: _stale, ...rest }) => rest);
-              setPhase({ t: "graded", revealed: true });
-            }}
-            vocabulary={
-              <QuestionVocabulary
-                words={vocabulary}
-                open={showVocab}
-                status={dictStatus}
-                onToggle={toggleVocab}
-                onHold={holdCribWord}
-                onInspect={inspectCribWord}
-              />
-            }
           />
         )}
 
-        {phase.t === "graded" && question && (
-          <Graded
-            question={question}
-            submitted={submitted}
-            revealed={phase.revealed}
-            index={qIndex}
-            total={test?.questions.length ?? 0}
-            schedule={schedule}
-            settled={roundSettled}
-            marks={marks}
-            marking={marking}
-            onGrade={grade}
-            onResume={resumeWriting}
-            onRecordWord={() => openVocab()}
-            onHoldWord={holdWord}
-            onInspectWord={inspectWord}
-            onToggleMarking={() => setMarking((on) => !on)}
-            onKeepSentence={keepSentence}
-            kept={session.hasSentence(question.prompt, question.answer)}
-            // Only on a review: this is the moment the topic has just shown it
-            // is not what the student needs. On a run they chose the topic a
-            // moment ago, and the way out is choosing another.
-            onDismiss={
-              via === "review" && sectionId
-                ? () => {
-                    if (!dismissing) {
-                      setDismissing(true);
-                      return;
-                    }
-                    setDismissing(false);
-                    dismissTopic(
-                      sectionId,
-                      content.getSection(sectionId)?.title ?? "This topic",
-                    );
-                  }
-                : undefined
-            }
-            dismissing={dismissing}
-            onMark={markHere}
-            onCopy={copyText}
-            vocabulary={
-              <QuestionVocabulary
-                words={vocabulary}
-                open={showVocab}
-                status={dictStatus}
-                onToggle={toggleVocab}
-                onHold={holdCribWord}
-                onInspect={inspectCribWord}
+        {overlay?.t === "grammar" &&
+          (() => {
+            const book = content.grammarOf(overlay.sectionId);
+            const sections = sectionsFor(overlay.sectionId);
+            const at = sections.findIndex((s) => s.id === overlay.sectionId);
+            const sec = sections[at];
+            if (!sec) return null;
+            const earlier = session.attemptsFor(overlay.sectionId);
+            return (
+              <GrammarSheet
+                section={sec}
+                prev={sections[at - 1]}
+                next={sections[at + 1]}
+                at={overlay.ref}
+                formatRef={(r) => content.formatRef(r, book)}
+                // Paging keeps whatever the sheet was opened over: reading on is
+                // still reading, so it must not cost the way back. It does drop
+                // the section landed on: the page turned is the page wanted.
+                onPage={(to) =>
+                  setOverlay({ ...overlay, sectionId: to.id, ref: undefined })
+                }
+                // Following a § is reading on too, so it keeps `back` for the
+                // same reason paging does. What gets you to § 328 again is ↩,
+                // which is what the trail is for; ✕ still leaves the book.
+                //
+                // A reference into the topic already open changes nothing but
+                // where the page is scrolled, which `at` does on its own.
+                onFollow={(n) => {
+                  const to = content.sectionByNumber(n, book);
+                  if (!to) return;
+                  setOverlay({
+                    t: "grammar",
+                    sectionId: to.id,
+                    ref: n,
+                    back: overlay.back,
+                  });
+                }}
+                onStudy={() =>
+                  setOverlay(
+                    // Straight back when the topic sheet is what opened this
+                    // page. Once the reader has paged away it is a different
+                    // topic, and that one is pushed on top.
+                    overlay.back?.t === "topic" &&
+                      overlay.back.sectionId === sec.id
+                      ? overlay.back
+                      : { t: "topic", sectionId: sec.id, back: overlay },
+                  )
+                }
+                onClose={() => setOverlay(overlay.back ?? null)}
+                action={
+                  earlier.length > 0 ? (
+                    <button
+                      className="iconbtn"
+                      aria-label="Earlier answers"
+                      onClick={() =>
+                        setOverlay({ t: "attempts", sectionId: overlay.sectionId })
+                      }
+                    >
+                      ↺
+                    </button>
+                  ) : undefined
+                }
               />
+            );
+          })()}
+
+        {overlay?.t === "map" && (
+          <MapSheet
+            families={families}
+            starred={starred}
+            quotedOnly={session.quotedOnly()}
+            currentFamily={
+              families.find((f) =>
+                f.topics.some((t) => t.sectionId === sectionId),
+              )?.id
             }
-            history={
-              <EarlierAnswers
-                attempts={attempts}
-                open={showTrail}
-                onToggle={() => setShowTrail((open) => !open)}
-                onMark={sectionId ? markPast(sectionId) : undefined}
+            onClose={() => setOverlay(null)}
+            onPick={(t) => setOverlay({ t: "topic", sectionId: t.sectionId })}
+            books={books}
+            grammarId={session.grammarId}
+            onGrammar={switchGrammar}
+            switching={switching}
+          />
+        )}
+
+        {overlay?.t === "topic" &&
+          (() => {
+            const topic = families
+              .flatMap((f) => f.topics)
+              .find((t) => t.sectionId === overlay.sectionId);
+            if (!topic) return null;
+            return (
+              <TopicSheet
+                topic={topic}
+                attempts={session.attemptsFor(topic.sectionId)}
+                quotedOnly={session.quotedOnly()}
+                // The map is where a topic is normally chosen, and where closing
+                // one goes back to — unless it was opened from the page being
+                // read, which is then what lies underneath.
+                onClose={() => setOverlay(overlay.back ?? { t: "map" })}
+                onRead={() =>
+                  setOverlay({ t: "grammar", sectionId: topic.sectionId, back: overlay })
+                }
+                onDrill={() => drillTopic(topic)}
+                onQuestions={() =>
+                  setOverlay({ t: "questions", sectionId: topic.sectionId })
+                }
+                onStar={() => toggleStar(topic)}
+                onToggleRoll={() => toggleRoll(topic)}
+                onMark={markPast(topic.sectionId)}
+                onHoldWord={holdPastWord}
+                onInspectWord={inspectWord}
+                elsewhere={elsewhereFor(topic.sectionId)}
+                onElsewhere={(_book, sectionId) => {
+                  // Reading, not switching: the other book's page opens over the
+                  // topic sheet and closing it comes straight back. A student
+                  // comparing two explanations has not asked to change syllabus.
+                  setOverlay({ t: "grammar", sectionId, back: overlay });
+                }}
+              />
+            );
+          })()}
+
+        {overlay?.t === "questions" &&
+          (() => {
+            const sec = content.getSection(overlay.sectionId);
+            if (!sec) return null;
+            return (
+              <QuestionsSheet
+                section={sec}
+                questions={session.questionBank(overlay.sectionId)}
+                quotedOnly={session.quotedOnly()}
+                onClose={() => setOverlay({ t: "topic", sectionId: overlay.sectionId })}
+                onPick={(q) =>
+                  setOverlay({
+                    t: "question",
+                    sectionId: overlay.sectionId,
+                    prompt: q.prompt,
+                  })
+                }
+              />
+            );
+          })()}
+
+        {overlay?.t === "question" &&
+          (() => {
+            const sec = content.getSection(overlay.sectionId);
+            const question = session
+              .questionBank(overlay.sectionId)
+              .find((q) => q.prompt === overlay.prompt);
+            if (!sec || !question) return null;
+            return (
+              <QuestionSheet
+                section={sec}
+                question={question}
+                onClose={() =>
+                  setOverlay({ t: "questions", sectionId: overlay.sectionId })
+                }
+                onMark={markPast(overlay.sectionId)}
                 onHoldWord={holdPastWord}
                 onInspectWord={inspectWord}
               />
+            );
+          })()}
+
+        {overlay?.t === "schedule" && (
+          <ScheduleSheet
+            entries={session.upcoming()}
+            vocabCount={stats.vocab}
+            onClose={() => setOverlay(null)}
+            onOpenVocab={() =>
+              setOverlay({ t: "vocab-list", back: { t: "schedule" } })
+            }
+            sentenceCount={stats.sentences}
+            onOpenSentences={() =>
+              setOverlay({ t: "sentence-list", back: { t: "schedule" } })
+            }
+            onStart={reviewNow}
+            // Asked before the quoted-only preference narrows anything: what is
+            // missing from a topic with no tests is content, not a choice the
+            // student made, and the two want different words on the row.
+            hasTests={(id) => session.hasTests(id)}
+          />
+        )}
+
+        {overlay?.t === "sentence-list" && (
+          <SentenceListSheet
+            cards={session.sentenceList()}
+            onClose={() => setOverlay(overlay.back ?? null)}
+            onForget={(card) => forgetSentence(card.id)}
+          />
+        )}
+
+        {overlay?.t === "vocab-list" && (
+          <VocabListSheet
+            cards={session.vocabList()}
+            onClose={() => setOverlay(overlay.back ?? null)}
+            onPick={(card) =>
+              setOverlay({ t: "vocab-edit", cardId: card.id, back: overlay })
             }
           />
         )}
 
-        {phase.t === "sentence-review" &&
+        {overlay?.t === "vocab-edit" &&
           (() => {
-            const card = session.sentenceCard(phase.cardId);
+            const card = session.vocabCard(overlay.cardId);
+            // Deleted from underneath, or edited from a toast after an undo.
             if (!card) return null;
+            const back = overlay.back ?? null;
             return (
-              <SentenceReview
+              <VocabEditSheet
                 card={card}
-                revealed={phase.revealed}
-                schedule={session.previewSentence(phase.cardId)}
-                onReveal={() => setPhase({ ...phase, revealed: true })}
-                onGrade={(r) => gradeSentence(phase.cardId, r)}
-                onForget={() => {
-                  if (forgetting !== phase.cardId) {
-                    setForgetting(phase.cardId);
-                    return;
-                  }
-                  setForgetting(null);
-                  forgetSentence(phase.cardId);
+                onSave={(patch) => {
+                  editVocab(card.id, patch);
+                  setOverlay(back);
+                  flash(`Saved ${patch.citation.trim()}`);
                 }}
-                forgetting={forgetting === phase.cardId}
-                /* The card's own sentence is what a word held here was met in,
-                   so the vocabulary card it makes keeps that line — the same
-                   bargain the graded screen strikes with its reference. */
-                onHoldWord={(word, i) =>
-                  takeWord(
-                    word,
-                    contextOf(card.prompt, card.answer, "answer", i),
-                  )
-                }
-                onInspectWord={inspectWord}
-                onCopy={() => copyToClipboard(card.answer, COPIED.answer)}
-              />
-            );
-          })()}
-
-        {phase.t === "vocab-review" &&
-          (() => {
-            const card = session.vocabCard(phase.cardId);
-            if (!card) return null;
-            return (
-              <VocabReview
-                card={card}
-                revealed={phase.revealed}
-                schedule={session.previewVocab(phase.cardId)}
-                onReveal={() => setPhase({ ...phase, revealed: true })}
-                onGrade={(r) => gradeVocab(phase.cardId, r)}
-                onEdit={() => setOverlay({ t: "vocab-edit", cardId: phase.cardId })}
-                onHoldWord={holdSavedWord}
-                onInspectWord={inspectWord}
-                onCopy={copyKept}
-              />
-            );
-          })()}
-
-        {phase.t === "practised" &&
-          (() => {
-            const at = phase.sectionId;
-            return (
-              <Practised
-                title={content.getSection(at)?.title ?? "this topic"}
-                // What the run was for, not what the topic holds: under the
-                // quoted-only preference a drill is over the quoted questions,
-                // and reporting the whole bank would credit the student with
-                // questions the run never showed them.
-                total={session.coverage(at).total}
-                scheduled={session.isScheduled(at)}
-                // Previewed with no round named, which is the truth here: this
-                // screen is reached through `advance`, which ends the round
-                // first, so `enrolTopic` falls back to the same 3 this asks
-                // for. The two agree by construction rather than by luck, and
-                // `core.test.ts` holds them to it.
-                due={session.previewTopic(at)[3]}
-                onEnrol={() => enrolTopic(at, content.getSection(at)?.title ?? "this topic")}
-                onAgain={() => {
-                  session.drillTopic(at);
-                  save();
-                  advance("explore");
+                onDelete={() => {
+                  removeVocab(card.id);
+                  setOverlay(back);
                 }}
-                onOpenMap={() => setOverlay({ t: "map" })}
+                onMoveContext={(at, dir) => moveContext(card.id, at, dir)}
+                onEditContext={(at, patch) => editContext(card.id, at, patch)}
+                onDeleteContext={(at) => removeContext(card.id, at)}
+                onClose={() => setOverlay(back)}
               />
             );
           })()}
 
-        {phase.t === "landed" && (
-          <Landed
-            title={
-              phase.round
-                ? // Named as the page it was read on, which is what the student
-                  // was looking at — a further grammar's section, when they
-                  // reached the questions through one.
-                  (content.getSection(
-                    phase.round.viewedAs ?? phase.round.sectionId,
-                  )?.title ?? "this topic")
-                : undefined
-            }
-            round={phase.round}
-            cleared={phase.cleared}
-            met={phase.met}
-            nextDue={nextDue}
-            onEnrol={
-              phase.round
-                ? // The topic the round was filed under, never the page it was
-                  // reached through: `enrolTopic` maps that back out to every
-                  // primary topic the page teaches, and handing it `viewedAs`
-                  // would enrol a topic this round never touched.
-                  () =>
-                    enrolTopic(
-                      phase.round!.sectionId,
-                      content.getSection(
-                        phase.round!.viewedAs ?? phase.round!.sectionId,
-                      )?.title ?? "this topic",
-                    )
-                : undefined
-            }
-            onKeepGoing={() => {
-              if (phase.cleared) {
-                // The pile is empty, so Review is no longer somewhere to be —
-                // the same conclusion `advance` draws for every other route,
-                // drawn on a tap here instead of behind one.
-                setMode("explore");
-                advance("explore");
-              } else {
-                advance();
-              }
-            }}
-            onStop={() => setOverlay({ t: "schedule" })}
-          />
-        )}
-
-        {phase.t === "done" && (
-          <Rest
-            dueNow={dueNow}
-            nextDue={nextDue}
-            onOpenMap={() => setOverlay({ t: "map" })}
-            onOpenSchedule={() => setOverlay({ t: "schedule" })}
-          />
-        )}
-      </div>
-
-      {toast && (
-        <Toast
-          message={toast.message}
-          action={toast.action}
-          onAction={() => {
-            setToast(null);
-            toast.onAction?.();
-          }}
-        />
-      )}
-
-      {overlay?.t === "grammar" &&
-        (() => {
-          const sections = sectionsFor(overlay.sectionId);
-          const at = sections.findIndex((s) => s.id === overlay.sectionId);
-          const sec = sections[at];
-          if (!sec) return null;
-          const trail = session.attemptsFor(overlay.sectionId);
-          return (
-            <GrammarSheet
-              section={sec}
-              prev={sections[at - 1]}
-              next={sections[at + 1]}
-              // Paging keeps whatever the sheet was opened over: reading on is
-              // still reading, so it must not cost the way back.
-              onPage={(to) => setOverlay({ ...overlay, sectionId: to.id })}
-              onStudy={() =>
-                setOverlay(
-                  // Straight back when the topic sheet is what opened this
-                  // page. Once the reader has paged away it is a different
-                  // topic, and that one is pushed on top.
-                  overlay.back?.t === "topic" &&
-                    overlay.back.sectionId === sec.id
-                    ? overlay.back
-                    : { t: "topic", sectionId: sec.id, back: overlay },
-                )
-              }
-              onClose={() => setOverlay(overlay.back ?? null)}
-              action={
-                trail.length > 0 ? (
-                  <button
-                    className="iconbtn"
-                    aria-label="Earlier answers"
-                    onClick={() =>
-                      setOverlay({ t: "attempts", sectionId: overlay.sectionId })
-                    }
-                  >
-                    ↺
-                  </button>
-                ) : undefined
-              }
-            />
-          );
-        })()}
-
-      {overlay?.t === "map" && (
-        <MapSheet
-          families={families}
-          starred={starred}
-          quotedOnly={session.quotedOnly()}
-          currentFamily={
-            families.find((f) =>
-              f.topics.some((t) => t.sectionId === sectionId),
-            )?.id
-          }
-          onClose={() => setOverlay(null)}
-          onPick={(t) => setOverlay({ t: "topic", sectionId: t.sectionId })}
-          books={books}
-          grammarId={session.grammarId}
-          onGrammar={switchGrammar}
-          switching={switching}
-        />
-      )}
-
-      {overlay?.t === "topic" &&
-        (() => {
-          const topic = families
-            .flatMap((f) => f.topics)
-            .find((t) => t.sectionId === overlay.sectionId);
-          if (!topic) return null;
-          return (
-            <TopicSheet
-              topic={topic}
-              attempts={session.attemptsFor(topic.sectionId)}
-              quotedOnly={session.quotedOnly()}
-              // The map is where a topic is normally chosen, and where closing
-              // one goes back to — unless it was opened from the page being
-              // read, which is then what lies underneath.
-              onClose={() => setOverlay(overlay.back ?? { t: "map" })}
-              onRead={() =>
-                setOverlay({ t: "grammar", sectionId: topic.sectionId, back: overlay })
-              }
-              onDrill={() => drillTopic(topic)}
-              onQuestions={() =>
-                setOverlay({ t: "questions", sectionId: topic.sectionId })
-              }
-              onStar={() => toggleStar(topic)}
-              onToggleRoll={() => toggleRoll(topic)}
-              onMark={markPast(topic.sectionId)}
-              onHoldWord={holdPastWord}
-              onInspectWord={inspectWord}
-              elsewhere={elsewhereFor(topic.sectionId)}
-              onElsewhere={(_book, sectionId) => {
-                // Reading, not switching: the other book's page opens over the
-                // topic sheet and closing it comes straight back. A student
-                // comparing two explanations has not asked to change syllabus.
-                setOverlay({ t: "grammar", sectionId, back: overlay });
-              }}
-            />
-          );
-        })()}
-
-      {overlay?.t === "questions" &&
-        (() => {
-          const sec = content.getSection(overlay.sectionId);
-          if (!sec) return null;
-          return (
-            <QuestionsSheet
-              section={sec}
-              questions={session.questionBank(overlay.sectionId)}
-              quotedOnly={session.quotedOnly()}
-              onClose={() => setOverlay({ t: "topic", sectionId: overlay.sectionId })}
-              onPick={(q) =>
-                setOverlay({
-                  t: "question",
-                  sectionId: overlay.sectionId,
-                  prompt: q.prompt,
-                })
-              }
-            />
-          );
-        })()}
-
-      {overlay?.t === "question" &&
-        (() => {
-          const sec = content.getSection(overlay.sectionId);
-          const question = session
-            .questionBank(overlay.sectionId)
-            .find((q) => q.prompt === overlay.prompt);
-          if (!sec || !question) return null;
-          return (
-            <QuestionSheet
-              section={sec}
-              question={question}
-              onClose={() =>
-                setOverlay({ t: "questions", sectionId: overlay.sectionId })
-              }
+        {overlay?.t === "attempts" && (
+          <Sheet
+            title="Earlier answers"
+            subtitle={content.getSection(overlay.sectionId)?.title}
+            onClose={() => setOverlay({ t: "grammar", sectionId: overlay.sectionId })}
+          >
+            <AttemptTrail
+              attempts={session.attemptsFor(overlay.sectionId)}
               onMark={markPast(overlay.sectionId)}
               onHoldWord={holdPastWord}
               onInspectWord={inspectWord}
             />
-          );
-        })()}
+          </Sheet>
+        )}
 
-      {overlay?.t === "schedule" && (
-        <ScheduleSheet
-          entries={session.upcoming()}
-          vocabCount={stats.vocab}
-          onClose={() => setOverlay(null)}
-          onOpenVocab={() =>
-            setOverlay({ t: "vocab-list", back: { t: "schedule" } })
-          }
-          sentenceCount={stats.sentences}
-          onOpenSentences={() =>
-            setOverlay({ t: "sentence-list", back: { t: "schedule" } })
-          }
-          onStart={reviewNow}
-          // Asked before the quoted-only preference narrows anything: what is
-          // missing from a topic with no tests is content, not a choice the
-          // student made, and the two want different words on the row.
-          hasTests={(id) => session.hasTests(id)}
-        />
-      )}
-
-      {overlay?.t === "sentence-list" && (
-        <SentenceListSheet
-          cards={session.sentenceList()}
-          onClose={() => setOverlay(overlay.back ?? null)}
-          onForget={(card) => forgetSentence(card.id)}
-        />
-      )}
-
-      {overlay?.t === "vocab-list" && (
-        <VocabListSheet
-          cards={session.vocabList()}
-          onClose={() => setOverlay(overlay.back ?? null)}
-          onPick={(card) =>
-            setOverlay({ t: "vocab-edit", cardId: card.id, back: overlay })
-          }
-        />
-      )}
-
-      {overlay?.t === "vocab-edit" &&
-        (() => {
-          const card = session.vocabCard(overlay.cardId);
-          // Deleted from underneath, or edited from a toast after an undo.
-          if (!card) return null;
-          const back = overlay.back ?? null;
-          return (
-            <VocabEditSheet
-              card={card}
-              onSave={(patch) => {
-                editVocab(card.id, patch);
-                setOverlay(back);
-                flash(`Saved ${patch.citation.trim()}`);
-              }}
-              onDelete={() => {
-                removeVocab(card.id);
-                setOverlay(back);
-              }}
-              onMoveContext={(at, dir) => moveContext(card.id, at, dir)}
-              onEditContext={(at, patch) => editContext(card.id, at, patch)}
-              onDeleteContext={(at) => removeContext(card.id, at)}
-              onClose={() => setOverlay(back)}
-            />
-          );
-        })()}
-
-      {overlay?.t === "attempts" && (
-        <Sheet
-          title="Earlier answers"
-          subtitle={content.getSection(overlay.sectionId)?.title}
-          onClose={() => setOverlay({ t: "grammar", sectionId: overlay.sectionId })}
-        >
-          <AttemptTrail
-            attempts={session.attemptsFor(overlay.sectionId)}
-            onMark={markPast(overlay.sectionId)}
-            onHoldWord={holdPastWord}
-            onInspectWord={inspectWord}
+        {overlay?.t === "vocab-input" && (
+          <VocabSheet
+            status={
+              dictLoading ? "loading" : dictFailed ? "unavailable" : "ready"
+            }
+            initialForm={overlay.prefill}
+            autoLookup={overlay.auto}
+            // A word held on the question arrives with the sentence it was held
+            // in; one typed into the box has to be found in the sentences first.
+            onLookup={(form) =>
+              lookupWord(form, overlay.context ?? typedWordContext(form))
+            }
+            onClose={() => setOverlay(overlay.back ?? null)}
           />
-        </Sheet>
-      )}
+        )}
 
-      {overlay?.t === "vocab-input" && (
-        <VocabSheet
-          status={
-            dictLoading ? "loading" : dictFailed ? "unavailable" : "ready"
-          }
-          initialForm={overlay.prefill}
-          autoLookup={overlay.auto}
-          // A word held on the question arrives with the sentence it was held
-          // in; one typed into the box has to be found in the sentences first.
-          onLookup={(form) =>
-            lookupWord(form, overlay.context ?? typedWordContext(form))
-          }
-          onClose={() => setOverlay(overlay.back ?? null)}
-        />
-      )}
-
-      {overlay?.t === "vocab-new" && (
-        <VocabNewSheet
-          form={overlay.form}
-          // Written by hand, so there is no lemma to speak of: the form as it
-          // was met is the word's identity, which is what dedupes the card.
-          onSave={({ citation, gloss }) =>
-            saveWord(
-              {
-                lemma: overlay.form,
-                citation: citation.trim(),
-                gloss: gloss.trim(),
-                pos: "",
-              },
-              overlay.context,
-            )
-          }
-          onClose={() => setOverlay(overlay.back ?? null)}
-        />
-      )}
-
-      {overlay?.t === "vocab-pick" && (
-        <VocabPickSheet
-          form={overlay.form}
-          candidates={overlay.candidates}
-          onPick={(entry) => saveWord(entry, overlay.context)}
-          onClose={() => setOverlay(overlay.back ?? null)}
-        />
-      )}
-
-      {overlay?.t === "inspect" && (
-        <InspectSheet
-          form={overlay.form}
-          entry={overlay.entry}
-          // Read at render rather than carried on the overlay: the etymologies
-          // arrive with the dictionary, and a sheet opened while that was still
-          // in flight would otherwise hold the empty answer for as long as it
-          // stayed open. The index answers the same way before and after — with
-          // nothing — so there is no state here to keep in step.
-          origin={etymology().paragraphsFor(overlay.entry.lemma, overlay.entry.pos)}
-          others={overlay.others}
-          forms={paradigms?.formsFor(overlay.entry.lemma, overlay.entry.pos)}
-          // Asked per dictionary rather than merged, so each keeps its own name
-          // and its own attribution — two lexica disagreeing about a word is
-          // the reason to ship a second one, and a merged list would hide it.
-          lexica={(profile.dictionaries ?? []).map((d) => ({
-            id: d.id,
-            label: d.label,
-            licence: d.source.licence,
-            articles: content.articlesFor(overlay.form, d.id),
-          }))}
-          loading={paradigmsLoading}
-          failed={paradigmsFailed}
-          onRetry={ensureParadigms}
-          // Switching readings keeps the one showing among the others, so the
-          // way back is the same tap that got here.
-          onPick={(entry) =>
-            setOverlay({
-              t: "inspect",
-              form: overlay.form,
-              entry,
-              others: [overlay.entry, ...overlay.others.filter((o) => o !== entry)],
-              // Carried across: switching reading is a look at the same word,
-              // and it must not cost the page the word was looked up from.
-              back: overlay.back,
-            })
-          }
-          onCopy={() => copyForm(overlay.form)}
-          onClose={() => setOverlay(overlay.back ?? null)}
-        />
-      )}
-
-      {overlay?.t === "settings" && (
-        <SettingsSheet
-          config={storage.currentConfig()}
-          state={syncState}
-          onConfigure={configureSync}
-          onExport={() => exportProgress(session.progress())}
-          onImport={() => void doImport()}
-          salvaged={salvaged !== null}
-          onExportSalvaged={() => salvaged && exportSalvaged(salvaged)}
-          onDropSalvaged={() => {
-            storage.dropSalvaged();
-            setSalvaged(null);
-            flash("Damaged file discarded.");
-          }}
-          onPull={() =>
-            void storage
-              .fetchRemote()
-              .then((remote) => {
-                if (!remote) {
-                  flash("Nothing saved on GitHub yet.");
-                  return;
-                }
-                // A pull replaces this device's copy wholesale, so what it can
-                // destroy is whatever this device has not sent — whichever copy
-                // happens to be the newer one. When there is none of that, the
-                // pull is a plain catch-up and asking about it is noise.
-                if (storage.hasUnpushed(session.progress())) {
-                  setOverlay({ t: "discard", remote });
-                  return;
-                }
-                if (remote.updatedAt === session.progress().updatedAt) {
-                  flash("Already up to date.");
-                  return;
-                }
-                adoptRemote(remote);
-              })
-              // A pull that cannot reach the repo used to reject into nothing:
-              // the sheet's status line changed and the button appeared to do
-              // nothing at all, which is indistinguishable from a pull that
-              // found no change to make. Say so.
-              .catch((err: unknown) =>
-                flash(
-                  err instanceof Error
-                    ? `Could not pull: ${err.message}`
-                    : "Could not pull from GitHub.",
-                ),
+        {overlay?.t === "vocab-new" && (
+          <VocabNewSheet
+            form={overlay.form}
+            // Written by hand, so there is no lemma to speak of: the form as it
+            // was met is the word's identity, which is what dedupes the card.
+            onSave={({ citation, gloss }) =>
+              saveWord(
+                {
+                  lemma: overlay.form,
+                  citation: citation.trim(),
+                  gloss: gloss.trim(),
+                  pos: "",
+                },
+                overlay.context,
               )
-          }
-          // Not the dictionary alone, which is what this used to be and what
-          // made "everything is on this device" a claim the app could make
-          // while two files of it were still in the air. All three, and the
-          // student is told so while any of them is still coming.
-          offlineReady={dictionaryReady() && paradigms !== undefined && booksReady}
-          dictionaryFailed={dictFailed}
-          caching={dictLoading || paradigmsLoading || booksLoading || lexicaLoading}
-          onCacheDictionary={cacheContent}
-          space={space}
-          onPersist={askPersistence}
-          vocabCount={stats.vocab}
-          onOpenVocab={() =>
-            setOverlay({ t: "vocab-list", back: { t: "settings" } })
-          }
-          sentenceCount={stats.sentences}
-          onOpenSentences={() =>
-            setOverlay({ t: "sentence-list", back: { t: "settings" } })
-          }
-          keepContext={session.keepsContext()}
-          onKeepContext={toggleKeepContext}
-          quotedOnly={session.quotedOnly()}
-          onQuotedOnly={toggleQuotedOnly}
-          quotedFirst={session.quotedFirst()}
-          onQuotedFirst={toggleQuotedFirst}
-          questionsPerRound={session.questionsPerRound()}
-          onQuestionsPerRound={setRoundLength}
-          onReset={() => {
-            storage.clearLocal();
-            // Erasing and then reloading is two steps, and the draft kept on
-            // the way out lands between them. Seal, or the erase is undone by
-            // the very reload meant to finish it.
-            storage.seal();
-            location.reload();
-          }}
-          onClose={() => setOverlay(null)}
-        />
-      )}
+            }
+            onClose={() => setOverlay(overlay.back ?? null)}
+          />
+        )}
 
-      {overlay?.t === "conflict" && (
-        <Sheet
-          title="Progress from another device"
-          // Put down rather than answered. Nothing is decided by it and nothing
-          // is lost: the work is still queued and still carries what this
-          // device last saw, so it is refused again and asks again.
-          onClose={() => {
-            storage.resolveCheck();
-            setOverlay(null);
-          }}
-        >
-          <p className="field__hint" style={{ marginTop: 0 }}>
-            The copy on GitHub was saved {ago(overlay.remote.updatedAt)}, and
-            this device has been studied since it last synced. Only one can be
-            kept.
-          </p>
-          <div className="actions">
-            <button
-              className="btn"
-              onClick={() => {
-                // Forced: the refusal in `GitHubStorage` exists to stop this
-                // happening by accident, and this is the accident's opposite.
-                void storage.saveNow(session.progress(), { force: true });
-                setOverlay(null);
-                flash("Kept this device's progress.");
-              }}
-            >
-              Keep this device
-            </button>
-            <button
-              className="btn btn--primary"
-              onClick={() => adoptRemote(overlay.remote)}
-            >
-              Use the newer one
-            </button>
-          </div>
-        </Sheet>
-      )}
+        {overlay?.t === "vocab-pick" && (
+          <VocabPickSheet
+            form={overlay.form}
+            candidates={overlay.candidates}
+            onPick={(entry) => saveWord(entry, overlay.context)}
+            onClose={() => setOverlay(overlay.back ?? null)}
+          />
+        )}
 
-      {overlay?.t === "overwrite" && (
-        <Sheet title="That repo already has progress" onClose={() => setOverlay(null)}>
-          <p className="field__hint" style={{ marginTop: 0 }}>
-            The copy on GitHub was saved {ago(overlay.remote.updatedAt)}. This
-            device has never synced with that repo, so which of the two holds
-            more is not something the app can work out. Saving replaces it.
-          </p>
-          <div className="actions">
-            <button className="btn" onClick={() => adoptRemote(overlay.remote)}>
-              Use the copy on GitHub
-            </button>
-            <button
-              className="btn btn--primary"
-              onClick={() => {
-                void storage
-                  .saveNow(session.progress(), { force: true })
-                  .then(() => flash("Connected to GitHub."));
-                setOverlay(null);
-              }}
-            >
-              Replace it with this device's
-            </button>
-          </div>
-        </Sheet>
-      )}
+        {overlay?.t === "inspect" && (
+          <InspectSheet
+            form={overlay.form}
+            entry={overlay.entry}
+            // Read at render rather than carried on the overlay: the etymologies
+            // arrive with the dictionary, and a sheet opened while that was still
+            // in flight would otherwise hold the empty answer for as long as it
+            // stayed open. The index answers the same way before and after — with
+            // nothing — so there is no state here to keep in step.
+            origin={etymology().paragraphsFor(overlay.entry.lemma, overlay.entry.pos)}
+            others={overlay.others}
+            forms={paradigms?.formsFor(overlay.entry.lemma, overlay.entry.pos)}
+            // Asked per dictionary rather than merged, so each keeps its own name
+            // and its own attribution — two lexica disagreeing about a word is
+            // the reason to ship a second one, and a merged list would hide it.
+            lexica={(profile.dictionaries ?? []).map((d) => ({
+              id: d.id,
+              label: d.label,
+              licence: d.source.licence,
+              articles: content.articlesFor(overlay.form, d.id),
+            }))}
+            loading={paradigmsLoading}
+            failed={paradigmsFailed}
+            onRetry={ensureParadigms}
+            // Switching readings keeps the one showing among the others, so the
+            // way back is the same tap that got here.
+            onPick={(entry) =>
+              setOverlay({
+                t: "inspect",
+                form: overlay.form,
+                entry,
+                others: [overlay.entry, ...overlay.others.filter((o) => o !== entry)],
+                // Carried across: switching reading is a look at the same word,
+                // and it must not cost the page the word was looked up from.
+                back: overlay.back,
+              })
+            }
+            onCopy={() => copyForm(overlay.form)}
+            onClose={() => setOverlay(overlay.back ?? null)}
+          />
+        )}
 
-      {overlay?.t === "discard" && (
-        <Sheet title="This device has unsaved progress" onClose={() => setOverlay(null)}>
-          <p className="field__hint" style={{ marginTop: 0 }}>
-            This device has been studied since it last synced, and pulling
-            replaces its copy with the one on GitHub, saved{" "}
-            {ago(overlay.remote.updatedAt)}. That work would be lost.
-          </p>
-          <div className="actions">
-            <button
-              className="btn"
-              onClick={() => {
-                void storage
-                  .saveNow(session.progress(), { force: true })
-                  .then(() => flash("Pushed this device's progress instead."));
-                setOverlay(null);
-              }}
-            >
-              Push this device's instead
-            </button>
-            <button
-              className="btn btn--primary"
-              onClick={() => adoptRemote(overlay.remote)}
-            >
-              Pull anyway
-            </button>
-          </div>
-        </Sheet>
-      )}
-      {/* Last, so it lies over every sheet, and inert: it never takes a tap. */}
-      {confettiCanvas}
-    </div>
+        {overlay?.t === "settings" && (
+          <SettingsSheet
+            config={storage.currentConfig()}
+            state={syncState}
+            onConfigure={configureSync}
+            onExport={() => exportProgress(session.progress())}
+            onImport={() => void doImport()}
+            salvaged={salvaged !== null}
+            onExportSalvaged={() => salvaged && exportSalvaged(salvaged)}
+            onDropSalvaged={() => {
+              storage.dropSalvaged();
+              setSalvaged(null);
+              flash("Damaged file discarded.");
+            }}
+            onPull={() =>
+              void storage
+                .fetchRemote()
+                .then((remote) => {
+                  if (!remote) {
+                    flash("Nothing saved on GitHub yet.");
+                    return;
+                  }
+                  // A pull replaces this device's copy wholesale, so what it can
+                  // destroy is whatever this device has not sent — whichever copy
+                  // happens to be the newer one. When there is none of that, the
+                  // pull is a plain catch-up and asking about it is noise.
+                  if (storage.hasUnpushed(session.progress())) {
+                    setOverlay({ t: "discard", remote });
+                    return;
+                  }
+                  if (remote.updatedAt === session.progress().updatedAt) {
+                    flash("Already up to date.");
+                    return;
+                  }
+                  adoptRemote(remote);
+                })
+                // A pull that cannot reach the repo used to reject into nothing:
+                // the sheet's status line changed and the button appeared to do
+                // nothing at all, which is indistinguishable from a pull that
+                // found no change to make. Say so.
+                .catch((err: unknown) =>
+                  flash(
+                    err instanceof Error
+                      ? `Could not pull: ${err.message}`
+                      : "Could not pull from GitHub.",
+                  ),
+                )
+            }
+            // Not the dictionary alone, which is what this used to be and what
+            // made "everything is on this device" a claim the app could make
+            // while two files of it were still in the air. All three, and the
+            // student is told so while any of them is still coming.
+            offlineReady={dictionaryReady() && paradigms !== undefined && booksReady}
+            dictionaryFailed={dictFailed}
+            caching={dictLoading || paradigmsLoading || booksLoading || lexicaLoading}
+            onCacheDictionary={cacheContent}
+            space={space}
+            onPersist={askPersistence}
+            vocabCount={stats.vocab}
+            onOpenVocab={() =>
+              setOverlay({ t: "vocab-list", back: { t: "settings" } })
+            }
+            sentenceCount={stats.sentences}
+            onOpenSentences={() =>
+              setOverlay({ t: "sentence-list", back: { t: "settings" } })
+            }
+            keepContext={session.keepsContext()}
+            onKeepContext={toggleKeepContext}
+            quotedOnly={session.quotedOnly()}
+            onQuotedOnly={toggleQuotedOnly}
+            quotedFirst={session.quotedFirst()}
+            onQuotedFirst={toggleQuotedFirst}
+            questionsPerRound={session.questionsPerRound()}
+            onQuestionsPerRound={setRoundLength}
+            onReset={() => {
+              storage.clearLocal();
+              // Erasing and then reloading is two steps, and the draft kept on
+              // the way out lands between them. Seal, or the erase is undone by
+              // the very reload meant to finish it.
+              storage.seal();
+              location.reload();
+            }}
+            onClose={() => setOverlay(null)}
+          />
+        )}
+
+        {overlay?.t === "conflict" && (
+          <Sheet
+            title="Progress from another device"
+            // Put down rather than answered. Nothing is decided by it and nothing
+            // is lost: the work is still queued and still carries what this
+            // device last saw, so it is refused again and asks again.
+            onClose={() => {
+              storage.resolveCheck();
+              setOverlay(null);
+            }}
+          >
+            <p className="field__hint" style={{ marginTop: 0 }}>
+              The copy on GitHub was saved {ago(overlay.remote.updatedAt)}, and
+              this device has been studied since it last synced. Only one can be
+              kept.
+            </p>
+            <div className="actions">
+              <button
+                className="btn"
+                onClick={() => {
+                  // Forced: the refusal in `GitHubStorage` exists to stop this
+                  // happening by accident, and this is the accident's opposite.
+                  void storage.saveNow(session.progress(), { force: true });
+                  setOverlay(null);
+                  flash("Kept this device's progress.");
+                }}
+              >
+                Keep this device
+              </button>
+              <button
+                className="btn btn--primary"
+                onClick={() => adoptRemote(overlay.remote)}
+              >
+                Use the newer one
+              </button>
+            </div>
+          </Sheet>
+        )}
+
+        {overlay?.t === "overwrite" && (
+          <Sheet title="That repo already has progress" onClose={() => setOverlay(null)}>
+            <p className="field__hint" style={{ marginTop: 0 }}>
+              The copy on GitHub was saved {ago(overlay.remote.updatedAt)}. This
+              device has never synced with that repo, so which of the two holds
+              more is not something the app can work out. Saving replaces it.
+            </p>
+            <div className="actions">
+              <button className="btn" onClick={() => adoptRemote(overlay.remote)}>
+                Use the copy on GitHub
+              </button>
+              <button
+                className="btn btn--primary"
+                onClick={() => {
+                  void storage
+                    .saveNow(session.progress(), { force: true })
+                    .then(() => flash("Connected to GitHub."));
+                  setOverlay(null);
+                }}
+              >
+                Replace it with this device's
+              </button>
+            </div>
+          </Sheet>
+        )}
+
+        {overlay?.t === "discard" && (
+          <Sheet title="This device has unsaved progress" onClose={() => setOverlay(null)}>
+            <p className="field__hint" style={{ marginTop: 0 }}>
+              This device has been studied since it last synced, and pulling
+              replaces its copy with the one on GitHub, saved{" "}
+              {ago(overlay.remote.updatedAt)}. That work would be lost.
+            </p>
+            <div className="actions">
+              <button
+                className="btn"
+                onClick={() => {
+                  void storage
+                    .saveNow(session.progress(), { force: true })
+                    .then(() => flash("Pushed this device's progress instead."));
+                  setOverlay(null);
+                }}
+              >
+                Push this device's instead
+              </button>
+              <button
+                className="btn btn--primary"
+                onClick={() => adoptRemote(overlay.remote)}
+              >
+                Pull anyway
+              </button>
+            </div>
+          </Sheet>
+        )}
+        {/* Last, so it lies over every sheet, and inert: it never takes a tap. */}
+        {confettiCanvas}
+      </div>
+    </TrailProvider>
   );
 }

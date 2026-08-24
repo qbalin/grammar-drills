@@ -1,4 +1,6 @@
 import {
+  createContext,
+  useContext,
   useEffect,
   useRef,
   useState,
@@ -118,6 +120,7 @@ export function Sheet({
   action?: ReactNode;
 }) {
   const body = useRef<HTMLDivElement>(null);
+  const trail = useContext(TrailContext);
 
   // A sheet always opens at the top of its content, even when the previous one
   // was scrolled — sections run to hundreds of lines.
@@ -196,6 +199,26 @@ export function Sheet({
         <div className="sheet__inner" ref={panel} tabIndex={-1} onKeyDown={trap}>
           <div className="sheet__grip" />
           <div className="sheet__head">
+            {(trail.back || trail.forward) && (
+              <span className="sheet__trail">
+                <button
+                  className="iconbtn iconbtn--trail"
+                  onClick={trail.back}
+                  disabled={!trail.back}
+                  aria-label="Back"
+                >
+                  ↩
+                </button>
+                <button
+                  className="iconbtn iconbtn--trail"
+                  onClick={trail.forward}
+                  disabled={!trail.forward}
+                  aria-label="Forward"
+                >
+                  ↪
+                </button>
+              </span>
+            )}
             {subtitle && <span className="status__ref">{subtitle}</span>}
             <span className="sheet__title">{title}</span>
             {action}
@@ -210,6 +233,30 @@ export function Sheet({
       </div>
     </>
   );
+}
+
+/**
+ * Where the reader has been, and where they were before they went back.
+ *
+ * Every sheet gets the pair, so the trail is the app's rather than the grammar
+ * reader's: a § followed out of one topic, a word inspected, a topic opened off
+ * the map — all of it is somewhere you can have come from. That is why this is
+ * a context and not a prop. `Sheet` is rendered from seventeen places and none
+ * of them should have to know it is part of a trail.
+ *
+ * Not the same thing as ✕, which closes *this* sheet and reveals what it was
+ * over. They usually agree; where they do not, ↩ is the one that answers "how
+ * did I get here" and ✕ is the one that answers "what was I doing".
+ */
+export interface Trail {
+  back?: () => void;
+  forward?: () => void;
+}
+
+const TrailContext = createContext<Trail>({});
+
+export function TrailProvider({ value, children }: { value: Trail; children: ReactNode }) {
+  return <TrailContext.Provider value={value}>{children}</TrailContext.Provider>;
 }
 
 /**

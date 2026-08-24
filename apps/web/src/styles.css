@@ -1114,6 +1114,26 @@ span.status__title {
   flex: none;
 }
 
+/*
+ * ↩ and ↪, at the front of every sheet's head.
+ *
+ * Ahead of the reference and the title because that is where a back control
+ * goes and because it is the one thing on the row whose position must not
+ * depend on how long a title is. Disabled rather than hidden at the ends of the
+ * trail, so the pair does not shuffle the head about as a reader moves.
+ */
+.sheet__trail {
+  display: flex;
+  gap: 0.1rem;
+  flex: none;
+  margin-right: -0.2rem;
+}
+
+.iconbtn--trail:disabled {
+  opacity: 0.28;
+  cursor: default;
+}
+
 .sheet__title {
   font-family: var(--serif);
   font-size: 1.15rem;
