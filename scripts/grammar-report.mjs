@@ -18,7 +18,7 @@
  * is not automatable: a human has to read them and record the verdict in the
  * pack's REVIEW.md. Everything above it is.
  */
-import { parseBlocks, plainText } from "@lang-tutor/core";
+import { parseBlocks, plainText, sectionNumbers } from "@lang-tutor/core";
 import {
   gate,
   grammarNamed,
@@ -298,6 +298,78 @@ if (coverage) {
     }, {});
     say(`reading by reason: ${Object.entries(why).map(([r, n]) => `${r} ${n}`).join(" · ")}`);
   }
+}
+
+// --- G12: the numbers on the page, and the links that reach them -------------
+//
+// Two things a reader now does that the content has to make possible, and
+// neither can be checked by looking at the page: a number that is wrong looks
+// exactly like a number that is right, and a link into nowhere looks exactly
+// like a link.
+//
+// So both are checked against the manifest a person can read. Every section the
+// parser accounted for prints its number, each inside the topic whose `ref`
+// range names it — get that wrong and the reader tells a student they are
+// looking at § 25 while showing them § 24. And every cross-reference points at
+// a number some page of this book actually prints, which is what makes a dead
+// link impossible to ship rather than merely unlikely.
+//
+// Read off the same `⟦#…⟧` markers the reader draws from, so what can be
+// followed and what can be seen cannot drift apart.
+
+const REFERENCE = /⟦r(\d+[A-Za-z]?):/g;
+const numeric = (n) => Number(/^\d+/.exec(n)[0]);
+
+const printed = new Map();
+const outOfRange = [];
+for (const t of grammar) {
+  const [from, to] = t.ref.split("-");
+  for (const n of sectionNumbers(t.text)) {
+    printed.set(n, t.id);
+    const k = numeric(n);
+    if (k < numeric(from) || k > numeric(to ?? from)) {
+      outOfRange.push(`${t.id} prints §${n} but is ${book.style.refPrefix}${t.ref}`);
+    }
+  }
+}
+
+const dangling = new Set();
+let references = 0;
+for (const t of grammar) {
+  for (const [, n] of t.text.matchAll(REFERENCE)) {
+    references += 1;
+    if (!printed.has(n)) dangling.add(n);
+  }
+}
+
+if (coverage) {
+  const accounted = new Set(Object.keys(coverage.assigned));
+  const unprinted = [...accounted].filter((n) => !printed.has(n));
+  const unaccounted = [...printed.keys()].filter((n) => !accounted.has(n));
+  const ok = outOfRange.length === 0 && unprinted.length === 0 &&
+    unaccounted.length === 0 && dangling.size === 0;
+  gates.push(
+    gate("G12", ok,
+      outOfRange.length
+        ? `${outOfRange.length} topics print a section outside their own range: ` +
+          `${outOfRange.slice(0, 3).join(", ")}`
+        : unprinted.length
+          ? `${unprinted.length} accounted sections print no number and can be ` +
+            `reached by no reference: §${unprinted.slice(0, 5).join(", §")}`
+          : unaccounted.length
+            ? `${unaccounted.length} printed numbers are in no topic the manifest ` +
+              `accounts for: §${unaccounted.slice(0, 5).join(", §")}`
+            : dangling.size
+              ? `${dangling.size} cross-references point at a section no page ` +
+                `prints: §${[...dangling].slice(0, 5).join(", §")}`
+              : `${printed.size} sections numbered on the page, ` +
+                `${references} cross-references, all of them reaching one`),
+  );
+} else {
+  gates.push(
+    gate("G12", false,
+      `no content/${book.manifest} — the numbers on the page cannot be checked`),
+  );
 }
 
 // --- H1 (was G9): the part a human has to do ---------------------------------
