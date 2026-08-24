@@ -129,7 +129,6 @@ export function Graded({
   onRecordWord,
   onHoldWord,
   onInspectWord,
-  onReadGrammar,
   onToggleMarking,
   onKeepSentence,
   kept,
@@ -179,7 +178,6 @@ export function Graded({
   ) => void;
   /** Double-click: look the word up rather than record it. */
   onInspectWord: (word: string) => void;
-  onReadGrammar: () => void;
   onToggleMarking: () => void;
   /**
    * Keep this sentence as a card of its own — see `sentences.ts`.
@@ -320,7 +318,6 @@ export function Graded({
       <div className="linkrow">
         <button onClick={onResume}>✎ keep writing</button>
         <button onClick={onRecordWord}>+ record a word</button>
-        <button onClick={onReadGrammar}>§ grammar</button>
         {/* What the grade cannot say. `↻ more of this` had this slot and gave
             it up: it only ever called the drill, which the map's topic sheet
             offers by name and this screen was the second way to. */}

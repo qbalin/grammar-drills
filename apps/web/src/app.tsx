@@ -2313,10 +2313,13 @@ export function App({ content, session, storage }: Props) {
               {badge === "vocab" ? "Vocabulary" : "A sentence you kept"}
             </span>
           ) : section ? (
-            // The way in to the grammar while the question is still on screen.
-            // The graded view has always had its `§ grammar` link, but the
-            // screen you are stuck on is the one you are writing on, and there
-            // the topic's name was the only thing to reach for and did nothing.
+            // The way in to the grammar from a question, and now the only
+            // one. The graded view had a `§ grammar` link that opened this
+            // same section, which meant the book was reachable only once the
+            // answer was in — and reachable twice over on the one screen that
+            // needed it least. The name is on the bar the whole time a topic
+            // is studied, above the scroll rather than in it, so the screen
+            // you are stuck on is the screen the book is a tap from.
             <button
               className="status__topic"
               onClick={() =>
@@ -2425,9 +2428,6 @@ export function App({ content, session, storage }: Props) {
             onRecordWord={() => openVocab()}
             onHoldWord={holdWord}
             onInspectWord={inspectWord}
-            onReadGrammar={() =>
-              sectionId && setOverlay({ t: "grammar", sectionId })
-            }
             onToggleMarking={() => setMarking((on) => !on)}
             onKeepSentence={keepSentence}
             kept={session.hasSentence(question.prompt, question.answer)}
