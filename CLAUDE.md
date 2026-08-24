@@ -71,6 +71,34 @@ topic must have questions — a pack that says nothing inherits the strict rule,
 as with `attestation`. The parser records the reason per topic in its coverage
 manifest and `G11` holds the two in step.
 
+### The numbers, and the references between them
+
+A topic is a **run** of numbered sections — `§ 20-22 First Declension` is three
+of them — so the run's number in the sheet's head is not an address for anything
+inside it. The parsers therefore mark each section's opening in the extract,
+`⟦#20⟧` on a line of its own, and the readers print it as the lead-in the book
+prints. Two thirds of Bennett's topics cover more than one section; before this
+they were read without any way of saying which one you were in.
+
+The prose is full of cross-references — Bennett's "as given in § 270", Lane's
+"see 39", Smyth's bare "(149)" — and they ride as `⟦r270:§ 270⟧`: the payload is
+the section pointed at, the content is what the book printed. **They are taken
+from the source's own hyperlink at parse time and never found by a regex over
+the prose.** All three books link their own; two of the three cite by bare
+number, and the only literal `§` in Smyth is a citation of Hippocrates.
+
+Both tokens are dropped by `plainText`, marker line and newline together, so
+every figure taken over a section is exactly what it was before the numbers were
+carried — which is the property to preserve if you touch this. `G12` gates it
+per book: each number falls inside its topic's own `ref` range, the set of them
+equals the coverage manifest's `assigned`, and every reference reaches a number
+some page prints. A dangling reference is un-linked by the parser and counted,
+never shipped as a promise the reader can press.
+
+`Content.sectionByNumber` is what a reference resolves through, read off the
+same markers the reader draws, so what can be followed and what can be seen
+cannot drift apart.
+
 So there are two populations, and every gate has to know which it measures.
 `scripts/lib/pack.mjs` exports `teachable()` for the syllabus: the shape band
 (`G2`, `G3`), everything in `coverage-report`, `X2`/`X3`, the crosswalk, and all
