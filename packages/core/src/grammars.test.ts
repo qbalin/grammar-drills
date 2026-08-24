@@ -39,7 +39,7 @@ const profile: Profile = {
 };
 
 const section = (id: string, order: number, family: string, title = id) => ({
-  id, ref: String(order), title, family, order, text: `text of ${id}`,
+  id, ref: String(order), title, family, order, text: `⟦#${order}⟧\ntext of ${id}`,
 });
 
 const test = (id: string, sectionId: string, n: number): Test => ({
@@ -90,6 +90,34 @@ const data: ContentData = {
 
 const content = () => new Content(data, profile);
 const session = () => new Session(content());
+
+describe("the numbers the book prints", () => {
+  const content = new Content(data, profile);
+
+  it("finds the topic a printed section number falls in", () => {
+    expect(content.sectionByNumber("10")?.id).toBe("tg-020-nouns");
+    expect(content.sectionByNumber("20")?.id).toBe("tg-030-verbs");
+  });
+
+  it("answers per book, so two books' numbering cannot collide", () => {
+    // Both books print a §10, and they are different pages.
+    expect(content.sectionByNumber("10", "second")?.id).toBe("sg-100-nouns-a");
+    expect(content.sectionByNumber("40", "second")?.id).toBe("sg-300-orphan");
+    expect(content.sectionByNumber("40")).toBeUndefined();
+  });
+
+  it("has nothing to offer for a number no page prints", () => {
+    expect(content.sectionByNumber("999")).toBeUndefined();
+  });
+
+  it("finds nothing at all in content written before the numbers were carried", () => {
+    const bare = new Content(
+      { ...data, grammar: [{ ...data.grammar[0]!, text: "text with no markers" }] },
+      profile,
+    );
+    expect(bare.sectionByNumber("10")).toBeUndefined();
+  });
+});
 
 describe("a pack with more than one grammar", () => {
   it("keeps each book's sections, order and families apart", () => {

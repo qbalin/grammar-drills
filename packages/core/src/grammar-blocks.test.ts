@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { testProfile } from "./profile.fixture.js";
-import { parseBlocks, plainText, type Block } from "./grammar-blocks.js";
+import { parseBlocks, plainText, sectionNumbers, type Block } from "./grammar-blocks.js";
 import type { GrammarSection } from "./types.js";
 
 /** The style is the pack's; these tests are about the shapes, not the book. */
@@ -41,6 +41,97 @@ describe("parseBlocks", () => {
       { kind: "para", text: "The girl loves the rose." },
       { kind: "para", text: "The farmer sees her." },
     ]);
+  });
+
+  describe("the numbers the book prints", () => {
+    it("gives the section number to the block that opens it", () => {
+      expect(parseBlocksStyled("⟦#20⟧\nPure Latin nouns end in -a.\nThey are Feminine."))
+        .toEqual([
+          { kind: "para", text: "Pure Latin nouns end in -a.", num: "20" },
+          { kind: "para", text: "They are Feminine." },
+        ]);
+    });
+
+    it("carries it onto a paradigm, which has no sentence to lead", () => {
+      const blocks = parseBlocksStyled("⟦#22⟧\nNom.  mēnsa\nGen.  mēnsae");
+      expect(blocks).toHaveLength(1);
+      expect(blocks[0]!.kind).toBe("table");
+      expect(blocks[0]!.num).toBe("22");
+    });
+
+    it("ends a paradigm, so two sections' tables are not read as one", () => {
+      const blocks = parseBlocksStyled(
+        "⟦#20⟧\nNom.  mēnsa\n⟦#21⟧\nNom.  hortus  bellum",
+      );
+      expect(blocks.map((b) => [b.kind, b.num])).toEqual([
+        ["table", "20"],
+        ["table", "21"],
+      ]);
+      expect(tables(blocks)[0]!.columns).toBe(2);
+    });
+
+    it("still shows the number of a section that is nothing but one", () => {
+      expect(parseBlocksStyled("⟦#42⟧")).toEqual([{ kind: "para", text: "", num: "42" }]);
+      expect(parseBlocksStyled("⟦#42⟧\n⟦#43⟧\nHeterogeneous nouns vary.")).toEqual([
+        { kind: "para", text: "", num: "42" },
+        { kind: "para", text: "Heterogeneous nouns vary.", num: "43" },
+      ]);
+    });
+
+    it("keeps the numbers out of the plain text, newline and all", () => {
+      expect(plainText("⟦#20⟧\nPure Latin nouns end in -a.")).toBe(
+        "Pure Latin nouns end in -a.",
+      );
+      expect(sectionNumbers("⟦#20⟧\nx\n⟦#21A⟧\ny")).toEqual(["20", "21A"]);
+    });
+  });
+
+  describe("the references the book linked", () => {
+    it("carries the section a run points at", () => {
+      expect(parseBlocksStyled("See ⟦r3:§ 3⟧, 3.")).toEqual([
+        {
+          kind: "para",
+          text: "See § 3, 3.",
+          runs: [{ text: "See " }, { text: "§ 3", ref: "3" }, { text: ", 3." }],
+        },
+      ]);
+    });
+
+    it("keeps the emphasis the book set inside one", () => {
+      expect(parseBlocksStyled("see ⟦r103:103, ⟦b:a⟧⟧.")).toEqual([
+        {
+          kind: "para",
+          text: "see 103, a.",
+          runs: [
+            { text: "see " },
+            { text: "103, ", ref: "103" },
+            { text: "a", b: true, ref: "103" },
+            { text: "." },
+          ],
+        },
+      ]);
+    });
+
+    it("does not run two references together", () => {
+      const [block] = parseBlocksStyled("⟦r275:275⟧⟦r277:277⟧");
+      expect(block!.runs).toEqual([
+        { text: "275", ref: "275" },
+        { text: "277", ref: "277" },
+      ]);
+    });
+
+    it("reaches inside a paradigm cell, where the book cites too", () => {
+      const [table] = tables(parseBlocksStyled("Gen.  meī  (see ⟦r87:§ 87⟧.)"));
+      expect(table!.rows[0]!.runs![2]).toEqual([
+        { text: "(see " },
+        { text: "§ 87", ref: "87" },
+        { text: ".)" },
+      ]);
+    });
+
+    it("is nothing but its words in the plain text", () => {
+      expect(plainText("See ⟦r3:§ 3⟧, 3.")).toBe("See § 3, 3.");
+    });
   });
 
   it("separates a list marker from what it introduces", () => {

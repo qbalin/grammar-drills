@@ -1,3 +1,4 @@
+import { sectionNumbers } from "./grammar-blocks.js";
 import { lookupForm } from "./lemmatizer.js";
 import { compileFold, type Fold } from "./fold.js";
 import { familyLabel, familyOf, type FamilyId } from "./families.js";
@@ -28,6 +29,14 @@ export class Content {
   private readonly books: Map<string, GrammarSection[]>;
   /** Which book each section belongs to. */
   private readonly bookOf = new Map<string, string>();
+  /**
+   * Printed section number to the topic holding it, per book, built on demand.
+   *
+   * Lazy because a student may never follow a reference and Smyth is 556 topics
+   * over 3,048 sections; the scan is a line filter over prose the bundle has
+   * already parsed, so the first tap pays for it and nothing else does.
+   */
+  private readonly numbered = new Map<string, Map<string, GrammarSection>>();
   /** The compiled fold: what counts as the same word in this language. */
   readonly fold: Fold;
 
@@ -151,6 +160,31 @@ export class Content {
   /** A section of any book: ids carry which one, so none has to be named. */
   getSection(id: string): GrammarSection | undefined {
     return this.byId.get(id);
+  }
+
+  /**
+   * The topic holding a printed section number — "25" -> the second declension.
+   *
+   * What a cross-reference resolves through. A topic is a *run* of sections and
+   * a reference names one of them, so this is not `getSection` with a different
+   * key: `§ 25` is inside `bn-023-second-declension`, which no id spells.
+   *
+   * Read off the `⟦#…⟧` markers the reader draws rather than off the `ref`
+   * range beside them, so a number that can be followed is by construction a
+   * number the page shows. Undefined for a book whose content predates them,
+   * which is the honest answer: nothing to go to.
+   */
+  sectionByNumber(n: string, grammarId?: string): GrammarSection | undefined {
+    const book = grammarId ?? this.primaryGrammar;
+    let index = this.numbered.get(book);
+    if (!index) {
+      index = new Map();
+      for (const s of this.books.get(book) ?? []) {
+        for (const num of sectionNumbers(s.text)) index.set(num, s);
+      }
+      this.numbered.set(book, index);
+    }
+    return index.get(n);
   }
 
   /**

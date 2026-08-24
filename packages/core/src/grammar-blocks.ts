@@ -28,6 +28,19 @@ export interface Run {
   text: string;
   b?: true;
   i?: true;
+  /**
+   * The section this run points at, when the book set it as a cross-reference:
+   * "270" for Bennett's `§ 270`, "39" for Lane's bare `39`.
+   *
+   * The book's own number rather than a topic id, because a topic is a *run* of
+   * sections and the number is what the sentence says. `Content.sectionByNumber`
+   * is what turns it into somewhere to go.
+   *
+   * Captured from the source's own hyperlink at parse time, never guessed at
+   * from the prose: two of the three books this repo parses cite by bare number,
+   * and Smyth's only literal `§` is a citation of Hippocrates.
+   */
+  ref?: string;
 }
 
 /** One row of a paradigm table. */
@@ -44,11 +57,26 @@ export interface Row {
   span?: number;
 }
 
-export type Block =
+export type Block = (
   | { kind: "para"; text: string; runs?: Run[] }
   | { kind: "item"; marker: string; text: string; runs?: Run[]; level: 1 | 2 }
   | { kind: "heading"; text: string; runs?: Run[] }
-  | { kind: "table"; rows: Row[]; columns: number };
+  | { kind: "table"; rows: Row[]; columns: number }
+) & {
+  /**
+   * The numbered section of the book that opens here, e.g. "20".
+   *
+   * A topic is a run of consecutive sections — `§ 20-22 First Declension` is
+   * three of them — and the run's number reaches the reader only as the sheet's
+   * subtitle. Inside the prose the boundaries were invisible, so "as given in
+   * § 270" pointed at a number the page never showed.
+   *
+   * Set on the first block of each numbered section and absent on every other,
+   * which is what lets a reader print it as the lead-in the book itself prints
+   * and hang an anchor off it.
+   */
+  num?: string;
+};
 
 /** Two or more spaces between two non-spaces: a row of cells, not a sentence. */
 const TABLE_ROW = /\S {2}\S/;
@@ -90,6 +118,24 @@ const TABLE_END = `${OPEN}/${CLOSE}`;
  * every verb above it.
  */
 const EMPTY_CELL = `${OPEN}.${CLOSE}`;
+/**
+ * Where one numbered section of the book begins.
+ *
+ * A marker and nothing else, like `⟦=⟧` and `⟦/⟧`, and always on a line of its
+ * own — which is what keeps it out of the way of everything that reads a line's
+ * shape. It can neither be mistaken for a cell nor split one, and the classifier
+ * below never sees it.
+ */
+const SECTION = /^⟦#(\d+[A-Za-z]?)⟧$/;
+/**
+ * A cross-reference, `⟦r270:§ 270⟧`.
+ *
+ * The payload is the section number the book is pointing at; the content is the
+ * words it printed, so each book keeps its own way of citing — Bennett's
+ * `§ 270`, Lane's bare `39`. Sticky, so the scanner can try it at a position
+ * without slicing the line.
+ */
+const REF_OPEN = /⟦r(\d+[A-Za-z]?):/y;
 
 interface Decoded {
   plain: string;
@@ -97,17 +143,31 @@ interface Decoded {
   runs?: Run[];
 }
 
+/** One marker held open: a kind, and the target when the kind is a reference. */
+interface Open {
+  kind: "b" | "i" | "r";
+  ref?: string;
+}
+
 function decode(line: string): Decoded {
   if (!line.includes(OPEN) && !line.includes(CLOSE)) return { plain: line };
   const runs: Run[] = [];
-  const open: string[] = [];
+  const open: Open[] = [];
   let plain = "";
   let buf = "";
   const flush = () => {
     if (!buf) return;
     const run: Run = { text: buf };
-    if (open.includes("b")) run.b = true;
-    if (open.includes("i")) run.i = true;
+    if (open.some((o) => o.kind === "b")) run.b = true;
+    if (open.some((o) => o.kind === "i")) run.i = true;
+    // The innermost reference wins, for the same reason the innermost anything
+    // would: a link inside a link is the one the finger is on.
+    for (let k = open.length - 1; k >= 0; k--) {
+      if (open[k]!.kind === "r") {
+        run.ref = open[k]!.ref;
+        break;
+      }
+    }
     runs.push(run);
     plain += buf;
     buf = "";
@@ -117,35 +177,53 @@ function decode(line: string): Decoded {
     if (c === OPEN && line[i + 1] === OPEN) {
       buf += OPEN;
       i += 2;
-    } else if (line.startsWith(EMPTY_CELL, i)) {
+      continue;
+    }
+    if (line.startsWith(EMPTY_CELL, i)) {
       i += EMPTY_CELL.length;
-    } else if (c === OPEN && line[i + 2] === ":" && (line[i + 1] === "b" || line[i + 1] === "i")) {
+      continue;
+    }
+    if (c === OPEN && line[i + 2] === ":" && (line[i + 1] === "b" || line[i + 1] === "i")) {
       flush();
-      open.push(line[i + 1]!);
+      open.push({ kind: line[i + 1] as "b" | "i" });
       i += 3;
-      // A close ends the innermost run before it can be an escaped bracket.
-      //
-      // `⟧⟧` is genuinely ambiguous: two runs ending together look exactly like
-      // one doubled literal, and `marked()` writes both. Lane has 283 of the
-      // first and no book has ever had the second — `⟦⟦` appears nowhere in any
-      // of the three — so the reading that fires is the one that happens, and
-      // 40 Lane sections stop showing a stray bracket in the middle of a
-      // sentence. An escaped bracket still decodes wherever one could be
-      // written: at the top level, outside any run.
-    } else if (c === CLOSE && open.length > 0) {
+      continue;
+    }
+    if (c === OPEN && line[i + 1] === "r") {
+      REF_OPEN.lastIndex = i;
+      const m = REF_OPEN.exec(line);
+      if (m) {
+        flush();
+        open.push({ kind: "r", ref: m[1] });
+        i = REF_OPEN.lastIndex;
+        continue;
+      }
+    }
+    // A close ends the innermost marker before it can be an escaped bracket.
+    //
+    // `⟧⟧` is genuinely ambiguous: two runs ending together look exactly like
+    // one doubled literal. Lane has 283 of the first and no book has ever had
+    // the second — `⟦⟦` appears nowhere in any of the three — so the reading
+    // that fires is the one that happens, and 40 Lane sections stopped showing
+    // a stray bracket mid-sentence the moment this branch moved. An escaped
+    // bracket still decodes wherever one could be written: at the top level,
+    // outside any run.
+    if (c === CLOSE && open.length > 0) {
       flush();
       open.pop();
       i += 1;
-    } else if (c === CLOSE && line[i + 1] === CLOSE) {
+      continue;
+    }
+    if (c === CLOSE && line[i + 1] === CLOSE) {
       buf += CLOSE;
       i += 2;
-    } else {
-      buf += c;
-      i += 1;
+      continue;
     }
+    buf += c;
+    i += 1;
   }
   flush();
-  const styled = runs.some((r) => r.b || r.i);
+  const styled = runs.some((r) => r.b || r.i || r.ref);
   return { plain, runs: styled ? merge(runs) : undefined };
 }
 
@@ -154,8 +232,11 @@ function merge(runs: Run[]): Run[] {
   const out: Run[] = [];
   for (const run of runs) {
     const last = out[out.length - 1];
-    if (last && !!last.b === !!run.b && !!last.i === !!run.i) last.text += run.text;
-    else out.push({ ...run });
+    if (last && !!last.b === !!run.b && !!last.i === !!run.i && last.ref === run.ref) {
+      last.text += run.text;
+    } else {
+      out.push({ ...run });
+    }
   }
   return out;
 }
@@ -184,7 +265,12 @@ function sliceRuns(runs: Run[] | undefined, from: number, to: number): Run[] | u
 export function plainText(text: string): string {
   return text
     .split("\n")
-    .filter((line) => line.trim() !== TABLE_END)
+    // The section markers go with the table breaks, and for the same reason:
+    // both are structure the book set rather than words it wrote. Dropping them
+    // is what keeps every figure measured over a section — its length, its
+    // share of the tests, the prose a generator is shown — exactly where it was
+    // before the numbers were carried at all.
+    .filter((line) => line.trim() !== TABLE_END && !SECTION.test(line.trim()))
     .map((line) => {
       const body = line.startsWith(FULL_WIDTH) ? line.slice(FULL_WIDTH.length) : line;
       // Cell by cell, so a skipped column leaves its gap where it was.
@@ -222,6 +308,22 @@ function typography(style: GrammarStyle): Typography {
   };
   compiled.set(style, made);
   return made;
+}
+
+/**
+ * The numbered sections a topic's text opens, in book order.
+ *
+ * The one place that reads the marker syntax outside the parser above, so that
+ * `Content`'s index and the gate that checks it cannot drift from what the
+ * reader draws. Empty for content written before the numbers were carried.
+ */
+export function sectionNumbers(text: string): string[] {
+  const out: string[] = [];
+  for (const line of text.split("\n")) {
+    const m = SECTION.exec(line.trim());
+    if (m) out.push(m[1]!);
+  }
+  return out;
 }
 
 /**
@@ -363,6 +465,23 @@ export function parseBlocks(text: string, style: GrammarStyle): Block[] {
   // A caption is only a divider once forms turn up under it; until then it
   // could equally be a heading standing on its own.
   let pending: Decoded | null = null;
+  /**
+   * The section number waiting for something to open.
+   *
+   * A marker names the section that *starts* here, so it belongs to the next
+   * block out rather than to a block of its own — which is how the book sets it
+   * and what leaves both readers' block handling and the round-trip tests
+   * untouched.
+   */
+  let num: string | undefined;
+
+  const emit = (block: Block) => {
+    if (num !== undefined) {
+      block.num = num;
+      num = undefined;
+    }
+    blocks.push(block);
+  };
 
   const divider = (d: Decoded): Row => ({
     cells: [d.plain],
@@ -372,11 +491,11 @@ export function parseBlocks(text: string, style: GrammarStyle): Block[] {
 
   const closeTable = () => {
     if (pending) {
-      blocks.push({ kind: "heading", text: pending.plain, runs: pending.runs });
+      emit({ kind: "heading", text: pending.plain, runs: pending.runs });
       pending = null;
     }
     if (!table) return;
-    blocks.push({ kind: "table", ...squareUp(table, label) });
+    emit({ kind: "table", ...squareUp(table, label) });
     table = null;
   };
 
@@ -385,6 +504,19 @@ export function parseBlocks(text: string, style: GrammarStyle): Block[] {
     if (!trimmed) continue;
     if (trimmed === TABLE_END) {
       closeTable();
+      continue;
+    }
+    const opens = SECTION.exec(trimmed);
+    if (opens) {
+      // Closing first, so a paradigm that ends one section cannot swallow the
+      // rows that open the next: two tables that touched would be sized to the
+      // wider of them, and the second section's number would land on the pair.
+      closeTable();
+      // Two markers running — a section of the book whose whole content is its
+      // number, standing over the next one — and the first would be overwritten
+      // and lost. An empty paragraph holds it instead.
+      if (num !== undefined) emit({ kind: "para", text: "" });
+      num = opens[1];
       continue;
     }
     // A row the source set across the whole table says so outright, rather
@@ -420,7 +552,7 @@ export function parseBlocks(text: string, style: GrammarStyle): Block[] {
       // as prose they would split one table into two.
       if (table) table.push(divider({ plain, runs }));
       else {
-        if (pending) blocks.push({ kind: "heading", text: pending.plain, runs: pending.runs });
+        if (pending) emit({ kind: "heading", text: pending.plain, runs: pending.runs });
         pending = { plain, runs };
       }
       continue;
@@ -439,20 +571,24 @@ export function parseBlocks(text: string, style: GrammarStyle): Block[] {
 
     let m: RegExpMatchArray | null;
     if ((m = plain.match(NUMBERED))) {
-      blocks.push(item(`${m[1]}.`, m[2]!, 1));
+      emit(item(`${m[1]}.`, m[2]!, 1));
     } else if ((m = plain.match(ROMAN))) {
-      blocks.push(item(`${m[1]}.`, m[2]!, 1));
+      emit(item(`${m[1]}.`, m[2]!, 1));
     } else if ((m = plain.match(LETTERED))) {
-      blocks.push(item(`${m[1]}.`, m[2]!, 2));
+      emit(item(`${m[1]}.`, m[2]!, 2));
     } else if ((m = plain.match(PARENTHESISED))) {
-      blocks.push(item(m[1]!, m[2]!, 2));
+      emit(item(m[1]!, m[2]!, 2));
     } else if ((m = plain.match(NOTE))) {
-      blocks.push(item("Note", m[2]!, 2));
+      emit(item("Note", m[2]!, 2));
     } else {
-      blocks.push({ kind: "para", text: plain, runs });
+      emit({ kind: "para", text: plain, runs });
     }
   }
 
   closeTable();
+  // A section whose whole text is its number — Bennett sets §42 as a bare
+  // heading over the table that follows — has nothing left to stamp, and the
+  // number is still the book's. An empty paragraph carries it.
+  if (num !== undefined) emit({ kind: "para", text: "" });
   return blocks;
 }
