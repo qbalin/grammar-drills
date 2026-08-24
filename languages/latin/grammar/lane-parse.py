@@ -49,8 +49,8 @@ from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from parse import (  # noqa: E402
-    REF_OPEN, REF_STYLE, SECTION, SMALL_WORDS, Buffer, Reader, fold_ascii,
-    plain_len, unwrap_unreached,
+    FULL_WIDTH, REF_OPEN, REF_STYLE, SECTION, SMALL_WORDS, Buffer, Reader,
+    fold_ascii, plain_len, unwrap_unreached,
 )
 
 PACK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -208,9 +208,11 @@ class LaneReader(Reader):
             return
         if level is None:
             # A centred paragraph, which Lane uses for captions over its
-            # paradigms. The base class opens one as a heading; it is prose, and
-            # belongs to the section it sits in.
-            self.emit("line", marked)
+            # paradigms and over the endings of a declension. Not a heading in
+            # the sense the levels above mean — it opens no family and no
+            # topic — so it goes out as a caption, and `sections_of` files it
+            # against the section it heads rather than the one before it.
+            self.emit("caption", FULL_WIDTH + marked)
             return
         self.emit("head", (level, text))
 
@@ -294,9 +296,21 @@ def sections_of(tokens):
     Every open heading level is kept, not just the nearest one, because the
     family is the <h3>/<h4> above a topic and the title's qualifier is the level
     directly above it.
+
+    Captions are held rather than filed, exactly as in `parse.py` and for the
+    same reason: printed between two sections one heads the second. Lane sets
+    six of them as a pair — `The First Declension.` over `Genitive singular
+    -ae, genitive plural -ā-rum.` — and holding a list rather than a single
+    line is what keeps a pair together.
     """
     open_heads, pending = {}, None
-    sections, cur = [], None
+    sections, cur, held = [], None, []
+
+    def settle():
+        if cur is not None:
+            cur["lines"].extend(held)
+        held.clear()
+
     for kind, value in tokens:
         if kind == "head":
             level, text = value
@@ -305,11 +319,16 @@ def sections_of(tokens):
             pending = level
         elif kind == "sect":
             cur = {"n": int(value), "heads": dict(open_heads),
-                   "opens": pending, "lines": []}
+                   "opens": pending, "lead": list(held), "lines": []}
+            held.clear()
             sections.append(cur)
             pending = None
+        elif kind == "caption":
+            held.append(value)
         elif kind == "line" and cur is not None:
+            settle()
             cur["lines"].append(value)
+    settle()
     for s in sections:
         s["raw"] = "\n".join(s.pop("lines"))
     return sections
@@ -367,7 +386,8 @@ def build(secs, min_chars):
     # never across the teachable boundary.
     merged = []
     for g in groups:
-        text = "\n".join(s["raw"] for s in g["secs"] if s["raw"])
+        text = "\n".join("\n".join(s["lead"] + ([s["raw"]] if s["raw"] else []))
+                         for s in g["secs"] if s["lead"] or s["raw"])
         if (merged and plain_len(text) < min_chars
                 and merged[-1]["reading"] == g["reading"]):
             merged[-1]["secs"].extend(g["secs"])
@@ -377,7 +397,8 @@ def build(secs, min_chars):
     # page of the book all the same, so it is read rather than dropped.
     groups = merged
     for g in groups:
-        text = "\n".join(s["raw"] for s in g["secs"] if s["raw"])
+        text = "\n".join("\n".join(s["lead"] + ([s["raw"]] if s["raw"] else []))
+                         for s in g["secs"] if s["lead"] or s["raw"])
         if plain_len(text) < min_chars:
             g["reading"] = True
             g["thin"] = True
@@ -448,8 +469,13 @@ def build(secs, min_chars):
             # what to draw, and a number missing here is one no cross-reference
             # can reach. The thin-topic test above ran on the prose alone, so
             # nothing gained here can make a topic a reading page.
+            #
+            # A caption held for this section goes above its number, because
+            # that is where the book sets it: the heading, and then "432."
+            # leading the paragraph underneath.
             "text": "\n".join(
-                SECTION.format(s["n"]) + ("\n" + s["raw"] if s["raw"] else "")
+                "\n".join(s["lead"] + [SECTION.format(s["n"])]
+                          + ([s["raw"]] if s["raw"] else []))
                 for s in g["secs"]
             ),
         }

@@ -43,12 +43,12 @@
    "min": 147,
    "median": 1803,
    "p90": 6010,
-   "max": 17790
+   "max": 17814
   },
   "readingTextChars": {
    "min": 46,
    "median": 944,
-   "p90": 2748,
+   "p90": 2770,
    "max": 4484
   },
   "sourceSections": 376,
@@ -172,7 +172,7 @@
     "part-not-teachable": 209
    },
    "rowShapedLines": 1728,
-   "tableRowsRecovered": 1826,
+   "tableRowsRecovered": 1833,
    "romanPoints": 0,
    "crosswalk": {
     "topicsReachable": 431,

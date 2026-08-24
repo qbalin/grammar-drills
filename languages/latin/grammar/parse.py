@@ -53,10 +53,12 @@ END_OF_BODY = re.compile(r"^INDEX OF THE SOURCES\b")
 # asymmetric, so runs nest without an ambiguity rule. A literal bracket in a
 # source book is doubled here and halved by the decoder.
 OPEN, CLOSE = "⟦", "⟧"
-#: A row line that spans every column — a caption or a mood/tense divider that
-#: the book set across the whole table. Marked explicitly rather than guessed
-#: from its capitalisation, so `Hīc, this.` stays inside the paradigm it heads
-#: instead of splitting it in two.
+#: A line the book set across the full width — a mood or tense divider inside a
+#: paradigm, and the centred captions that head a passage of prose. Marked
+#: explicitly rather than guessed from its capitalisation, so `Hīc, this.` stays
+#: inside the paradigm it heads instead of splitting it in two, and so that
+#: `Conditional Sentences of the First Type.` reads as the heading it is rather
+#: than as a sentence somebody left behind.
 FULL_WIDTH = OPEN + "=" + CLOSE
 #: Where one table ends. Two tables that touch — §101 sets the principal parts
 #: of `amō` immediately above its conjugation — would otherwise run together
@@ -334,7 +336,15 @@ class Reader(HTMLParser):
         if tag in BLOCK_TAGS:
             self.flush()
             # A paragraph of the front-matter contents is a link list, not text.
-            if tag == "p" and a.get("class") == "center":
+            #
+            # A class *among* the paragraph's classes rather than the whole of
+            # them: Bennett only ever writes `class="center"`, but Lane indents
+            # its captions with a second class — `center second` over a
+            # declension's endings, `center third` over a conjugation's
+            # paradigm — and read as an exact match those are ordinary prose.
+            # Which matters most where Lane sets a caption and its subtitle
+            # together: the pair has to travel as a pair.
+            if tag == "p" and "center" in (a.get("class") or "").split():
                 self.heading = "p.center"
                 self.buf = Buffer()
 
@@ -416,9 +426,24 @@ class Reader(HTMLParser):
         if is_heading(text):
             self.emit("head", text)
         else:
-            # A mixed-case centred line ("Natural Gender.") is a caption, not a
-            # run-heading: it belongs to the section it sits in.
-            self.emit("line", marked)
+            # A mixed-case centred line ("Natural Gender.") is a caption rather
+            # than a run-heading: it names a passage inside a run instead of
+            # opening one, so it moves no group boundary.
+            #
+            # It still heads what comes *after* it, which is the thing this
+            # used to get wrong. Emitted as a `line` it was appended to
+            # whichever section was open, and a caption printed between two
+            # sections belongs to the second — §318 ended with "Conditional
+            # Sentences of the First Type.", the heading of §319. So it goes
+            # out as its own kind and `sections_of` decides where it lands.
+            #
+            # `FULL_WIDTH` because that is what it is: a line the book set
+            # across the width of the page, which is already how a caption over
+            # a paradigm travels. Saying so is also what makes it *render* as a
+            # heading — the pack's `headingPattern` reads capitals, and these
+            # are mixed case, so read back as prose they are a stray sentence
+            # wherever they sit.
+            self.emit("caption", FULL_WIDTH + marked)
 
     def close_table(self):
         rows, self.table = self.table, None
@@ -592,13 +617,35 @@ def titleise(heading):
 
 
 def sections_of(tokens):
-    """The token stream as numbered sections, each carrying its context."""
+    """The token stream as numbered sections, each carrying its context.
+
+    A caption is held rather than filed, because which section it belongs to is
+    not knowable until the next token: printed between two of them it heads the
+    second, and printed above prose of its own it heads that. Held, both come
+    out right, and the held ones ride in `lead` rather than `lines` so that
+    `build` can set them above the section's number — the book prints the
+    heading first and then "319." at the head of its paragraph.
+
+    A run-heading does *not* release the held captions, and that is the case
+    worth stating: §290 ends with "Clauses introduced by Antequam and
+    Priusquam.", the all-caps "A. WITH THE INDICATIVE." follows it, and §291
+    only then. Flushed on a `head` the caption stays a section too early.
+    """
     part = chapter = heading = pending = None
-    sections, cur = [], None
+    sections, cur, held = [], None, []
+
+    def settle():
+        """Captions with prose of their own beneath them: they head that."""
+        if cur is not None:
+            cur["lines"].extend(held)
+        held.clear()
+
     for kind, value in tokens:
         if kind == "part":
+            settle()
             part, chapter, heading, pending = value, None, None, None
         elif kind == "chap":
+            settle()
             chapter, heading, pending = value, None, None
         elif kind == "head":
             # A heading covers a run of sections, so it carries forward until
@@ -611,12 +658,18 @@ def sections_of(tokens):
                 "chapter": chapter,
                 "heading": heading,
                 "opens_group": pending is not None,
+                "lead": list(held),
                 "lines": [],
             }
+            held.clear()
             sections.append(cur)
             pending = None
+        elif kind == "caption":
+            held.append(value)
         elif kind == "line" and cur is not None:
+            settle()
             cur["lines"].append(value)
+    settle()
     for s in sections:
         s["raw"] = "\n".join(s.pop("lines"))
     return sections
@@ -707,7 +760,8 @@ def build(secs):
         heading = (g["heading"] or "").strip().rstrip(".")
         n0 = numeric(g["secs"][0]["n"])
         title = TITLE_OVERRIDE.get(n0) or titleise(heading)
-        prose = "\n".join(s["raw"] for s in g["secs"] if s["raw"])
+        prose = "\n".join("\n".join(s["lead"] + ([s["raw"]] if s["raw"] else []))
+                          for s in g["secs"] if s["lead"] or s["raw"])
 
         # Why this page has no exercise, or None if it has one. Checked in the
         # order the book makes them true: a thin run inside prosody is prosody.
@@ -728,8 +782,14 @@ def build(secs):
         # Every section gets its marker, the first included: what the reader
         # draws is its own decision, and a number missing from the data is one
         # no cross-reference can reach.
+        #
+        # A caption held for this section goes *above* the marker, because the
+        # book sets it above the number: the heading, and then "319." leading
+        # the paragraph it belongs to. Below it, the number would be drawn on
+        # the heading and the prose would open unnumbered.
         text = "\n".join(
-            SECTION.format(s["n"]) + ("\n" + s["raw"] if s["raw"] else "")
+            "\n".join(s["lead"] + [SECTION.format(s["n"])]
+                      + ([s["raw"]] if s["raw"] else []))
             for s in g["secs"]
         )
 
