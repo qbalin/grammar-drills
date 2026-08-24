@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Repack `content/` into the five assets the web app fetches.
+ * Repack `content/` into the assets the web app fetches.
  *
  * There is less to this than there was. The dictionary used to arrive here as
  * one denormalized `Record<form, LemmaEntry[]>` and get split into a lemma
@@ -15,6 +15,7 @@
  *   lemmas.json.gz   the distinct lemmas, as LemmaEntry[] ~2.1 MB gz  lazy
  *   forms.txt.gz     `form\tidx[,idx...]` per line, sorted ~3.2 MB gz  lazy
  *   paradigms.txt.gz every word's tagged forms, sorted   ~2.5 MB gz  lazier
+ *   etymology.txt.gz `lemma|pos\t<text>` per line, sorted            eager
  *
  * `paradigms.txt.gz` is copied through rather than repacked: it is already the
  * line-oriented, bisectable, interned shape a phone can read, because
@@ -74,6 +75,7 @@ const ASSETS = [
     `dict-${d.id}.json.gz`,
     `dict-${d.id}-forms.txt.gz`,
   ]),
+  "etymology.txt.gz",
 ];
 
 /** gzip at the highest level — these are written once and shipped forever. */
@@ -270,6 +272,42 @@ function buildLemmas() {
   };
 }
 
+// --- etymology ---------------------------------------------------------------
+
+/**
+ * Copied byte for byte, and absent without complaint.
+ *
+ * Absent is the *ordinary* case here rather than the odd one: only a pack whose
+ * dictionary came out of Wiktionary has an etymology to ship, so Greek has none
+ * and never will. A pack without one is a pack whose words show a gloss and no
+ * origin — a feature missing, not a build broken.
+ */
+function buildEtymology() {
+  const from = join(contentDir, "etymology.txt.gz");
+  const to = join(outDir, "etymology.txt.gz");
+  if (!existsSync(from)) {
+    // Deleted, not merely skipped — the same reason as the paradigms above,
+    // and it bites harder here: only one of the two shipped packs has this
+    // file at all, so leaving a stale one behind is the ordinary case rather
+    // than the odd one.
+    if (existsSync(to)) rmSync(to);
+    console.log(
+      `  etymology.txt.gz  not built for this pack — words will show no origin`,
+    );
+    return null;
+  }
+  const gz = readFileSync(from);
+  writeFileSync(to, gz);
+  const text = gunzipSync(gz).toString("utf8");
+  const lines = text ? text.split("\n") : [];
+  const kb = (n) => `${(n / 1024).toFixed(0)} KB`;
+  console.log(
+    `  ${"etymology.txt.gz".padEnd(16)} ${kb(Buffer.byteLength(text)).padStart(8)} raw  ->  ` +
+      `${kb(gz.length).padStart(8)} gz`,
+  );
+  return { words: lines.length, keys: new Set(lines.map((l) => l.split("\t")[0])) };
+}
+
 // --- paradigms ---------------------------------------------------------------
 
 /**
@@ -315,12 +353,14 @@ const grammar = buildGrammar();
 buildSecondaryGrammars();
 const tests = buildTests();
 const lemmas = buildLemmas();
+const etymology = buildEtymology();
 const paradigms = buildParadigms();
 buildDictionaries();
 console.log(
   `\n${grammar.length} sections · ${tests.tests} tests over ${tests.sections} topics · ` +
     `${lemmas.lemmas} lemmas over ${lemmas.forms} forms` +
-    (paradigms ? ` · ${paradigms.words} words with a paradigm` : ""),
+    (paradigms ? ` · ${paradigms.words} words with a paradigm` : "") +
+    (etymology ? ` · ${etymology.words} with an etymology` : ""),
 );
 
 /*

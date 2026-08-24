@@ -38,6 +38,7 @@ for the engine: `packages/core` must not learn a language.
 | `content/dictionaries/` | **generated**: `<id>.json.gz` + `<id>-forms.txt.gz`, and the manifest |
 | `citations.mjs` | rewrites citations in `lemmas.json.gz`; needs the reference dictionary |
 | | *the dictionary is split: a lemma table plus a sorted form index over it* |
+| `content/etymology.txt.gz` | Latin only: where each word comes from, keyed `lemma\|pos`. Built by `build-etymology.mjs` from a kaikki dump, joined against the lemmas the pack already ships — it does **not** touch `dictionary.db`, and a later dump is fine because no gate reads it. Greek's dictionary is Eulexis-derived and has no etymology to ship |
 | `reference/frequency.tsv.gz` | committed, ~200 KB; ranked lemmas for the gates |
 | `fold.fixtures.json` | pairs that must fold alike and pairs that must not |
 | `icon.mjs` | the app icon's glyph, as capsules or an SVG path |

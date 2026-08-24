@@ -143,6 +143,13 @@ node --import tsx scripts/build-paradigms.mjs --pack languages/<pack> \
 node --import tsx languages/<pack>/citations.mjs --ref languages/<pack>/reference
 node --import tsx scripts/make-reference.mjs --pack languages/<pack> \
   --ref languages/<pack>/reference
+
+# 6. Where the words come from, if the dictionary was Wiktionary's. This one
+#    needs no reference at all — it reads the kaikki dump directly and joins it
+#    against the lemmas step 5 just shipped, so nothing already generated moves.
+#    A pack built from anything else (Greek, from Eulexis) has no etymology and
+#    the script says so rather than writing a nearly empty file.
+node --import tsx scripts/build-etymology.mjs --pack languages/<pack>
 ```
 
 `build-paradigms` is optional and is what lets a student ask a word for its own
@@ -150,9 +157,20 @@ table; a pack without it shows citations and no tables. It needs
 `profile.paradigms` to say how that language's forms are laid out, which is the
 one part of it nobody else can write for you.
 
-Step 5's five outputs are what gets committed (`build-lemmas` writes two files,
-`content/lemmas.json.gz` and `content/forms.txt.gz`). After that the pack is
-self-contained and the databases can be deleted.
+Steps 5 and 6's outputs are what gets committed (`build-lemmas` writes two
+files, `content/lemmas.json.gz` and `content/forms.txt.gz`; step 6 writes
+`content/etymology.txt.gz`). After that the pack is self-contained and the
+databases can be deleted.
+
+Step 6 is deliberately *not* a re-ingest. `etymology_text` is on every kaikki
+entry and `ingest_dictionary.py` drops it, and the obvious fix — add a column,
+rebuild `dictionary.db` — is the one thing "Snapshots" above says not to do,
+because the rebuilt database is not the one the committed content came out of.
+So the etymology is joined on from the dump by `lemma|pos` and written beside
+what already ships. Nothing existing moves, and no gate, generator or
+attestation budget reads the result: where a word came from is a fact about the
+word, where whether a form is attested is a claim about *this* pack's
+dictionary.
 
 ## How much to ship: all of it
 
