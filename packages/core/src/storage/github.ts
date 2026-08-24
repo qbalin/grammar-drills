@@ -43,6 +43,30 @@ function b64decode(b64: string): string {
  */
 const NO_STORE = { cache: "no-store" } as const;
 
+export interface CommitOptions {
+  /**
+   * The remote's `updatedAt` as of the last time this device agreed with it —
+   * pushed to it, or took its copy. A commit is refused when what the remote
+   * holds is anything else, because that is work from another device which this
+   * one has never seen. `undefined` means "never agreed", which is refused too.
+   */
+  lastSeen?: string;
+  /**
+   * Overwrite whatever is up there. A person's answer, never an inference: see
+   * `commit`.
+   */
+  force?: boolean;
+}
+
+export interface Committed {
+  /**
+   * What the remote holds now, for the caller's marker. Not always the copy
+   * just written: a commit whose content already matched sends nothing, and
+   * then the remote's clock is still its own.
+   */
+  remoteAt: string;
+}
+
 /**
  * Thrown instead of overwriting a remote that has moved on.
  *
@@ -138,8 +162,14 @@ export class GitHubStorage implements StorageAdapter {
     return { progress: await this.readRemote(), sha: this.sha };
   }
 
+  /** `commit`, as the adapter interface asks for it. */
+  async save(progress: Progress, opts: CommitOptions = {}): Promise<void> {
+    await this.commit(progress, opts);
+  }
+
   /**
-   * Commit the progress, unless the remote is ahead of it.
+   * Commit the progress, unless the remote holds something this device has
+   * never seen.
    *
    * A write can find the remote ahead in two quite different ways, and only one
    * of them is an error GitHub reports.
@@ -158,8 +188,10 @@ export class GitHubStorage implements StorageAdapter {
    * So both are refused the same way, by throwing rather than putting, and
    * `force` is the deliberate overwrite: a person told the app to make GitHub
    * match this device. Nothing else may decide that.
+   *
+   * What it must not do is decide by clock — see `remoteIsUnseen`.
    */
-  async save(progress: Progress, opts: { force?: boolean } = {}): Promise<void> {
+  async commit(progress: Progress, opts: CommitOptions = {}): Promise<Committed> {
     // Updating an existing file needs its current sha. In the CLI a `load()`
     // always precedes the first `save()`, so one was in hand; a browser tab
     // reloads with an empty instance and would send none, which GitHub rejects.
@@ -168,9 +200,15 @@ export class GitHubStorage implements StorageAdapter {
     // Nothing to say. `updatedAt` moves whether or not anything was answered —
     // opening the app is enough — and a commit per open is a commit per open on
     // someone's real repository.
-    if (this.known && sameProgress(this.known, progress)) return;
+    //
+    // Ahead of the refusal, and deliberately: two copies that say the same
+    // thing have nothing to lose between them, whatever their lineage. What the
+    // caller is told is the remote's own clock, which has not moved.
+    if (this.known && sameProgress(this.known, progress)) {
+      return { remoteAt: this.known.updatedAt };
+    }
 
-    if (!opts.force && this.remoteIsAhead(progress)) {
+    if (!opts.force && this.remoteIsUnseen(opts.lastSeen)) {
       throw new RemoteMovedError(this.known ?? null, this.sha);
     }
 
@@ -188,11 +226,28 @@ export class GitHubStorage implements StorageAdapter {
     // What we just wrote is what the remote holds, so the next save compares
     // against it without reading the file again.
     this.known = progress;
+    return { remoteAt: progress.updatedAt };
   }
 
-  /** Whether what the remote last showed us was written after this copy. */
-  private remoteIsAhead(progress: Progress): boolean {
-    return !!this.known && this.known.updatedAt > progress.updatedAt;
+  /**
+   * Whether the remote holds a copy this device has never agreed with.
+   *
+   * This used to ask whether the remote's clock was later than the copy being
+   * written, and could therefore almost never say yes. `updatedAt` records when
+   * a device last *wrote*, not how much study it holds, and opening the app is
+   * a write: a laptop untouched for a week is stamped "now" the moment it is
+   * opened, so it out-clocks last night's phone and lands on top of it. The two
+   * quantities are unrelated, and comparing them let this class fail at exactly
+   * the job it exists to do — no clock drift between the devices required.
+   *
+   * So the question is identity rather than order: is what the remote holds the
+   * copy this device last pushed or adopted? Anything else is somebody's work
+   * arriving from elsewhere, whichever way the clocks happen to run.
+   * `undefined` — this device has never agreed with this remote at all — is
+   * unseen too, and a first push over an existing file is a person's to decide.
+   */
+  private remoteIsUnseen(lastSeen: string | undefined): boolean {
+    return !!this.known && this.known.updatedAt !== lastSeen;
   }
 
   private put(progress: Progress): Promise<Response> {

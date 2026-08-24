@@ -751,33 +751,63 @@ devices, and a credential in it would travel too. `GITHUB_TOKEN` overrides the
 stored token, and `--setup-sync` leaves the token out of the file entirely when
 the environment already carries it.
 
-The terminal flushes on exit rather than on `visibilitychange`, which is the
-browser's equivalent; without that the last grades of a session would sit in the
-debounce. Both check for a newer remote copy **at startup only**, and resolve it
-whole-file. Two devices studying at once will still lose one of them: merging
-two spaced-repetition schedules is a much larger problem than this is trying to
-solve.
+The terminal flushes on exit rather than on `visibilitychange` and `pagehide`,
+which are the browser's equivalents; without that the last grades of a session
+would sit in the debounce. A push that finds one already in the air re-runs when
+that one lands, rather than being turned away and forgotten — the queue is
+nobody's to look at again once the app has been taken away. Both check what the
+remote holds **at startup**, and resolve the whole file. Two devices studying at
+once will still lose one of them: merging two spaced-repetition schedules is a
+much larger problem than this is trying to solve.
 
-What the check is not allowed to do is decide by being late. **Nothing is pushed
-until it has answered** — the web app's first grade could beat it through the
-four-second debounce, and the copy that went up was the stale one the check was
-on its way to replace. Underneath that, `GitHubStorage` refuses on its own: a
-save whose remote is newer than the copy being written throws instead of
-committing, whether GitHub reports a sha mismatch or (the case that actually
-lost the data) accepts a freshly-read sha carrying a week-old file. Only an
-explicit `force` gets past it, and only three things pass one: **Update**,
-**Keep this device**, and answering the terminal's prompt with `n`.
+Which of the two copies wins is a question of what would be lost, and **never of
+which clock is later**. `updatedAt` says when a device last *wrote*, not how much
+study it holds, and opening the app is a write — it serves a test and writes the
+round down. So a laptop untouched for a week is stamped "now" the moment it is
+opened, out-clocks last night's phone, and lands on top of it. The two
+quantities are unrelated, and no clock drift between the devices is needed for
+them to come apart.
 
-Which of the two copies wins is then a question of what would be lost rather
-than which clock is later. Each device records the `updatedAt` it last pushed or
-adopted — in `localStorage` on the web, in `~/.latin-tutor/synced` in the
-terminal, and in neither case inside `progress.json`, because a marker that
-synced would describe whichever device wrote it last. A device holding nothing
-of its own **takes the newer copy silently**: a phone on the sofa and a laptop
-the next morning is ordinary use, and a question there is a question people
-learn to dismiss. Only when both copies have moved since they last agreed is
-anybody asked, and that is also when **Pull** warns — a pull discards whatever
-this device has not sent, so what it asks about is the loss, not the direction.
+What is compared instead is lineage. Each device records **two** things about
+the last time it and the remote agreed: the local `updatedAt` it got up there,
+and what the remote's `updatedAt` was at that moment. They are the same value
+except after a commit that sent nothing, and that is exactly why they are two —
+kept as one, that no-op would leave every launch after it believing another
+device had been at the file. They live in `localStorage` on the web and
+`~/.latin-tutor/synced` in the terminal, and in neither case inside
+`progress.json`, because a marker that synced would describe whichever device
+wrote it last. Files written before there were two of them hold a bare string,
+which is read as both.
+
+Two questions come out of that, and neither compares timestamps for order: has
+the remote moved since we agreed, and does this device hold work it never sent.
+A device holding nothing of its own **takes the other copy silently**: a phone
+on the sofa and a laptop the next morning is ordinary use, and a question there
+is a question people learn to dismiss. Only when both have moved is anybody
+asked, and that is also when **Pull** warns — a pull discards whatever this
+device has not sent, so what it asks about is the loss, not the direction.
+
+The same rule is what `GitHubStorage` refuses on. A save is turned away unless
+the remote holds the copy this device last agreed with, whether GitHub reports a
+sha mismatch or (the case that actually lost the data) accepts a freshly-read
+sha carrying a week-old file. Only an explicit `force` gets past it, and only
+four things pass one — each of them a person choosing: **Keep this device**,
+**Replace it with this device's**, **Push this device's instead**, and answering
+the terminal's prompt with `n`.
+
+That refusal, rather than the startup check, is what makes the rule hold. The
+check runs once and a session runs for an hour: study on the phone at half past
+and this device's next grade is a push over work it has never seen. **Nothing is
+pushed until the check has answered** — the web app's first grade could beat it
+through the four-second debounce — but that gate is an ordering, not the
+guarantee, and it opens only on the answers this app can settle itself. A push
+refused mid-session raises the same sheet the startup check raises, over the
+same two answers; it used to be a line of text in Settings, which is to say the
+one moment there was something to ask about was the one moment nothing asked.
+
+Connecting to a repo that already holds a file always asks. This device has
+never agreed with it about anything, so there is no honest way to work out whose
+copy is whose — and naming a repo happens once per device, not once per morning.
 
 Nor is an unchanged copy committed. Opening the app moves `updatedAt` without
 anything being studied, and that used to be a commit on somebody's real

@@ -13,7 +13,7 @@
  */
 import { readFile, writeFile, mkdir, chmod } from "node:fs/promises";
 import { dirname, join } from "node:path";
-import type { Profile } from "@lang-tutor/core";
+import { readSyncedAt, type Profile, type SyncedAt } from "@lang-tutor/core";
 
 export interface CliSyncConfig {
   token: string;
@@ -43,11 +43,13 @@ export function syncedMarkerPath(profile: Profile, home: string): string {
   return join(home, profile.storage.cliDir, "synced");
 }
 
-/** When this machine last pushed or took a copy, or null if it never has. */
-export async function readSyncedAt(path: string): Promise<string | null> {
+/**
+ * When this machine last pushed or took a copy, from both sides, or null if it
+ * never has. See `SyncedAt` in core for why that is two values.
+ */
+export async function readSyncedMarker(path: string): Promise<SyncedAt | null> {
   try {
-    const at = (await readFile(path, "utf8")).trim();
-    return at || null;
+    return readSyncedAt((await readFile(path, "utf8")).trim());
   } catch {
     // Absent is the ordinary state on a machine that has not synced yet, and
     // unreadable is no worse: both mean "assume this machine has its own work".
@@ -55,10 +57,10 @@ export async function readSyncedAt(path: string): Promise<string | null> {
   }
 }
 
-export async function writeSyncedAt(path: string, at: string): Promise<void> {
+export async function writeSyncedMarker(path: string, marker: SyncedAt): Promise<void> {
   try {
     await mkdir(dirname(path), { recursive: true });
-    await writeFile(path, `${at}\n`);
+    await writeFile(path, `${JSON.stringify(marker)}\n`);
   } catch {
     /* the marker is an optimisation; losing it only costs an extra question */
   }

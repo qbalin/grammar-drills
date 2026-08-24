@@ -1,45 +1,34 @@
 import {
   GitHubStorage,
   PUSH_DELAY_MS,
+  RemoteMovedError,
   describeSyncError,
+  hasUnsent,
+  readSyncedAt,
+  triage,
   type Progress,
+  type StartupCheck,
   type StorageAdapter,
+  type SyncedAt,
   type SyncState,
 } from "@lang-tutor/core";
 import { LocalStorageAdapter } from "./local.js";
 import { profile } from "../pack.js";
 
-export type { SyncState };
+export type { StartupCheck, SyncState };
 
 // Namespaced by the pack, like the progress key: each language keeps its own
 // repo settings even when they share an origin.
 const CONFIG_KEY = profile.storage.webSyncKey;
 
 /**
- * When this device last agreed with GitHub — the `updatedAt` of the copy it
- * pushed or took, whichever came last.
+ * When this device last agreed with GitHub. See `SyncedAt` in core, which is
+ * what it holds and why it is two values rather than one.
  *
  * Derived from the config key rather than declared in the profile, because it
- * is a fact about this browser and not part of a pack's contract. It must never
- * travel inside `Progress`: a marker that synced along with the progress would
- * describe whichever device wrote it last, which is precisely the device we are
- * trying to tell ourselves apart from.
+ * is a fact about this browser and not part of a pack's contract.
  */
 const SYNCED_KEY = `${CONFIG_KEY}:synced`;
-
-/**
- * What the startup check found, once it has resolved everything it can resolve
- * on its own.
- *
- * The three answers are genuinely different errands and only one of them is a
- * question for a person. "Your phone is ahead of your laptop" is ordinary and
- * gets on with it; two devices that have both been studied since they last
- * agreed is a choice nobody else can make.
- */
-export type StartupCheck =
-  | { kind: "current" }
-  | { kind: "adopt"; remote: Progress }
-  | { kind: "diverged"; remote: Progress };
 
 export interface SyncConfig {
   token: string;
@@ -76,9 +65,9 @@ export function saveSyncConfig(cfg: SyncConfig | null): void {
   }
 }
 
-function readSyncedAt(): string | null {
+function storedMarker(): SyncedAt | null {
   try {
-    return localStorage.getItem(SYNCED_KEY);
+    return readSyncedAt(localStorage.getItem(SYNCED_KEY));
   } catch {
     return null;
   }
@@ -101,6 +90,13 @@ function readSyncedAt(): string | null {
  * is a long time in a debounce and no time at all in a person — and the copy it
  * committed was the stale one the check was on its way to replace. So the push
  * waits on a gate that only `checkRemote` opens.
+ *
+ * The gate is an ordering, though, not the guarantee. It cannot be: the check
+ * runs once and a session runs for an hour, so a device that pushes at 09:10
+ * has to answer for a remote that moved at 09:05, and there is no gate for
+ * that. The guarantee is `GitHubStorage`'s refusal, which asks whether the
+ * remote holds a copy this device has seen — `lastSeen`, below, is that
+ * question's other half, and every push carries it.
  */
 export class SyncingStorage implements StorageAdapter {
   private readonly local = new LocalStorageAdapter();
@@ -118,8 +114,19 @@ export class SyncingStorage implements StorageAdapter {
   private readonly failureListeners = new Set<() => void>();
   private announcedFailure = false;
 
+  /**
+   * Told when a push was refused because GitHub holds work this device has
+   * never seen — the mid-session half of the startup check's `diverged`.
+   *
+   * It carries the remote copy, which `RemoteMovedError` went to the trouble of
+   * bringing back for exactly this. Without a listener the refusal is a line of
+   * text in Settings, which is to say invisible: the one moment the app has
+   * something to ask about was the one moment it did not ask.
+   */
+  private readonly behindListeners = new Set<(remote: Progress) => void>();
+
   /** What this device last pushed or took. See `SYNCED_KEY`. */
-  private syncedAt: string | null = readSyncedAt();
+  private marker: SyncedAt | null = storedMarker();
 
   /**
    * The copy that was on this device when the tab opened.
@@ -148,11 +155,14 @@ export class SyncingStorage implements StorageAdapter {
     // there is nothing to wait for when a person has just named the repo.
     if (this.remote) this.shutGate();
     addEventListener("online", () => void this.flush());
-    // A phone does not "close" a tab so much as leave it. This is the last
-    // reliable moment to get the session off the device.
+    // A phone does not "close" a tab so much as leave it. These are the last
+    // reliable moments to get the session off the device, and both are needed:
+    // a tab discarded outright gets `pagehide` without ever going hidden, and
+    // the draft keeper has listened to both all along.
     addEventListener("visibilitychange", () => {
       if (document.visibilityState === "hidden") void this.flush();
     });
+    addEventListener("pagehide", () => void this.flush());
   }
 
   private shutGate(): void {
@@ -166,13 +176,22 @@ export class SyncingStorage implements StorageAdapter {
 
   /** True while this device holds a grade GitHub has not been told about. */
   hasUnpushed(local: Progress): boolean {
-    return this.syncedAt !== local.updatedAt;
+    return hasUnsent(this.marker, local.updatedAt);
   }
 
-  private markSynced(progress: Progress): void {
-    this.syncedAt = progress.updatedAt;
+  /**
+   * Record an agreement: this local copy is up there, and that is what is up
+   * there.
+   *
+   * `remoteAt` is told rather than assumed, because a commit that sent nothing
+   * — the content already matched, clock aside — leaves the remote's own stamp
+   * in place. Assuming the two were equal is what would make the next launch
+   * believe another device had been at it.
+   */
+  private markSynced(pushedAt: string, remoteAt: string): void {
+    this.marker = { pushedAt, remoteAt };
     try {
-      localStorage.setItem(SYNCED_KEY, progress.updatedAt);
+      localStorage.setItem(SYNCED_KEY, JSON.stringify(this.marker));
     } catch {
       /* storage blocked; the marker is an optimisation, not a correctness bet */
     }
@@ -186,28 +205,40 @@ export class SyncingStorage implements StorageAdapter {
    * a mirror that stops is a nuisance, and a mirror that overwrites is a week
    * of somebody's evenings.
    *
-   * Being offline settles it too. The local copy is what study runs against
-   * either way, and `GitHubStorage` refuses the stale write on its own if the
-   * network comes back mid-session.
+   * Being offline settles it too, and so does a fetch that fails for any other
+   * reason. The local copy is what study runs against either way, and the push
+   * that follows carries `lastSeen`, so a remote holding another device's work
+   * is refused on its own terms rather than on this check having answered.
+   *
+   * The gate is opened by the answer, not by the attempt, and only where the
+   * answer is this class's to give. `adopt` and `diverged` both leave it shut:
+   * releasing it here would resolve a `flush` already waiting on it, and that
+   * continuation runs before the caller's `.then` can adopt and seal — so on a
+   * check slower than the debounce the stale push would start first and land.
+   * The caller opens it, by adopting (which seals), by answering the question,
+   * or by `resolveCheck` when the question is dismissed.
    */
   async checkRemote(): Promise<StartupCheck> {
+    let found: StartupCheck;
     try {
-      const remote = await this.fetchRemote();
-      // Against `bootAt`, not the session: see the field. A device with no copy
-      // at all takes whatever is there, which is how a second device starts.
-      if (!remote) return { kind: "current" };
-      if (this.bootAt && !(remote.updatedAt > this.bootAt)) return { kind: "current" };
-      // Ahead of us, and we have nothing of our own to lose: take it. This is
-      // the ordinary case — a phone on the sofa, a laptop the next morning —
-      // and asking about it teaches people to dismiss the question that counts.
-      return this.bootAt !== null && this.syncedAt !== this.bootAt
-        ? { kind: "diverged", remote }
-        : { kind: "adopt", remote };
+      // Against `bootAt`, not the session: see the field.
+      found = triage(this.bootAt, await this.fetchRemote(), this.marker);
     } catch {
-      return { kind: "current" };
-    } finally {
-      this.releaseGate();
+      found = { kind: "current" };
     }
+    if (found.kind === "current") this.releaseGate();
+    return found;
+  }
+
+  /**
+   * Let pushes go again after a startup question was put down unanswered.
+   *
+   * Nothing is decided by it. What was queued is still queued and still carries
+   * `lastSeen`, so it is refused again and asks again — which is the right way
+   * round for a sheet somebody swiped away while thinking about it.
+   */
+  resolveCheck(): void {
+    this.releaseGate();
   }
 
   /** Point sync at a repo, or turn it off with `null`. */
@@ -296,6 +327,11 @@ export class SyncingStorage implements StorageAdapter {
     this.writeLocal(progress);
     this.queued = progress;
     clearTimeout(this.timer);
+    // A person has said which copy wins, so the startup question is answered
+    // and the gate has nothing left to hold back. Without this the forced push
+    // would land and every ordinary one after it would wait on a check that has
+    // already been settled by hand.
+    if (opts.force) this.releaseGate();
     await this.flush(opts);
   }
 
@@ -310,7 +346,9 @@ export class SyncingStorage implements StorageAdapter {
    */
   adopt(progress: Progress, opts: { synced?: boolean } = {}): void {
     this.writeLocal(progress);
-    if (opts.synced) this.markSynced(progress);
+    // Both sides of the marker, and the same value on each: this copy is the
+    // device's now, and it is what the remote holds.
+    if (opts.synced) this.markSynced(progress.updatedAt, progress.updatedAt);
   }
 
   clearLocal(): void {
@@ -355,21 +393,44 @@ export class SyncingStorage implements StorageAdapter {
     const progress = this.queued;
     this.inFlight = true;
     this.setState({ kind: "pushing" });
+    let landed = false;
     try {
-      await this.remote.save(progress, opts);
+      // `lastSeen` is what makes the refusal work at all: it says which copy
+      // this device thinks is up there, so anything else is somebody's work
+      // arriving from another device. A forced push is a person overruling
+      // that, and passes it anyway so the two paths differ in one word.
+      const { remoteAt } = await this.remote.commit(progress, {
+        ...opts,
+        lastSeen: this.marker?.remoteAt,
+      });
+      landed = true;
       // Only clear the queue if nothing newer arrived while we were pushing.
       if (this.queued === progress) this.queued = null;
-      this.markSynced(progress);
+      this.markSynced(progress.updatedAt, remoteAt);
       this.setState({ kind: "idle", at: new Date().toISOString() });
     } catch (err) {
       // A refused push is not a failed one. What is queued stays queued, so
-      // resolving the conflict in Settings still has this device's work to
-      // offer, and `describeSyncError` reports it as `behind` rather than as
-      // something the student did wrong.
+      // resolving the conflict still has this device's work to offer, and
+      // `describeSyncError` reports it as `behind` rather than as something the
+      // student did wrong.
       this.setState(this.describeError(err));
+      if (err instanceof RemoteMovedError && err.remote) {
+        for (const listener of this.behindListeners) listener(err.remote);
+      }
     } finally {
       this.inFlight = false;
     }
+    // Something arrived while that was in the air. `flush` turns away anything
+    // that finds a push in flight, and used to leave it there: a grade given
+    // during a push, followed by the app being taken away, was queued and then
+    // never sent by anybody. Retried only after a push that landed — a refusal
+    // would refuse again, and this would spin.
+    //
+    // Without `force`, whatever the push that landed carried. A person saying
+    // "keep this device" answered for the copy they were shown; a grade that
+    // arrived afterwards is not covered by it, and if the remote really has
+    // moved underneath, being asked again is the right outcome.
+    if (landed && this.queued && !this.sealed) await this.flush();
   }
 
   /** The shared mapping, told what only the browser knows. */
@@ -391,6 +452,22 @@ export class SyncingStorage implements StorageAdapter {
     this.listeners.add(listener);
     return () => {
       this.listeners.delete(listener);
+    };
+  }
+
+  /**
+   * Watch for a push refused because GitHub is ahead. Returns an unsubscribe.
+   *
+   * Kept apart from `onStateChange`, which reports where the mirror stands: a
+   * status line can say "another device is ahead" all afternoon without anybody
+   * reading it, and this is the same fact as something to answer. The copy it
+   * carries is the one the refusal was for, so the caller can show what it is
+   * choosing between without fetching the file again.
+   */
+  onBehind(listener: (remote: Progress) => void): () => void {
+    this.behindListeners.add(listener);
+    return () => {
+      this.behindListeners.delete(listener);
     };
   }
 

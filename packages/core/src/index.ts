@@ -70,12 +70,20 @@ export type { StorageAdapter } from "./storage/index.js";
 export {
   GitHubStorage,
   RemoteMovedError,
+  type Committed,
+  type CommitOptions,
   type GitHubConfig,
 } from "./storage/github.js";
 export {
   PUSH_DELAY_MS,
   describeSyncError,
+  hasUnsent,
+  readSyncedAt,
+  remoteMoved,
   syncStateLine,
+  triage,
+  type StartupCheck,
+  type SyncedAt,
   type SyncState,
 } from "./storage/sync.js";
 

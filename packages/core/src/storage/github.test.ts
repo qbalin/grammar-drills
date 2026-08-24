@@ -16,6 +16,17 @@ function b64(s: string): string {
   return Buffer.from(s, "utf8").toString("base64");
 }
 
+/**
+ * "This device has seen the copy stamped `at`" — the marker its caller keeps.
+ *
+ * Almost every save carries one, because almost every save follows a startup
+ * check that read the file. A save without one is a device that has never
+ * agreed with this repo at all, and the tests that leave it out mean that.
+ */
+function seen(at: string) {
+  return { lastSeen: at };
+}
+
 /** A GitHub contents API just real enough to exercise the sha handshake. */
 function stubApi(file: { sha: string; body?: Progress } | null) {
   const calls: { method: string; sha?: string }[] = [];
@@ -50,7 +61,7 @@ describe("GitHubStorage", () => {
     // The browser case: a fresh page, a remote file already there. Without the
     // lookup the PUT carries no sha and GitHub refuses it.
     const calls = stubApi({ sha: "abc" });
-    await new GitHubStorage(cfg).save(progress(NEW, 3));
+    await new GitHubStorage(cfg).save(progress(NEW, 3), seen(OLD));
     expect(calls).toEqual([{ method: "GET" }, { method: "PUT", sha: "abc" }]);
   });
 
@@ -92,7 +103,7 @@ describe("GitHubStorage", () => {
     stubApi({ sha: "abc" });
     await store.load();
     const calls = stubApi({ sha: "abc" });
-    await store.save(progress(NEW, 3));
+    await store.save(progress(NEW, 3), seen(OLD));
     expect(calls).toEqual([{ method: "PUT", sha: "abc" }]);
   });
 
@@ -121,7 +132,7 @@ describe("GitHubStorage", () => {
     vi.stubGlobal("fetch", fetchMock);
 
     await new GitHubStorage(cfg).loadMeta();
-    await new GitHubStorage(cfg).save(progress(NEW, 3)); // the sha lookup inside
+    await new GitHubStorage(cfg).save(progress(NEW, 3), seen(OLD)); // sha lookup inside
 
     const gets = fetchMock.mock.calls.filter(
       ([, init]) => (init?.method ?? "GET") === "GET",
@@ -131,7 +142,7 @@ describe("GitHubStorage", () => {
   });
 
   describe("refusing to overwrite a remote that has moved on", () => {
-    it("refuses before the PUT when the file it read is newer", async () => {
+    it("refuses before the PUT when the file it read is one it has not seen", async () => {
       // The reported bug, and the one no 409 would have caught: a tab that has
       // just opened reads the *current* sha, so its stale write is accepted.
       const calls = stubApi({ sha: "abc", body: progress(NEW, 9) });
@@ -141,6 +152,44 @@ describe("GitHubStorage", () => {
         RemoteMovedError,
       );
       expect(calls).toEqual([{ method: "GET" }]); // read, and then nothing
+    });
+
+    it("refuses a stale copy whose clock happens to be the later one", async () => {
+      // The whole defect, in one case. This used to ask whether the remote was
+      // stamped later than the copy being written, which a laptop opened this
+      // morning always wins: `updatedAt` says when a device last wrote, and
+      // opening the app is a write. So last week's contents, freshly stamped,
+      // out-clocked last night's phone and landed on top of it — silently, with
+      // both clocks keeping perfect time.
+      const calls = stubApi({ sha: "abc", body: progress(OLD, 9) });
+      const store = new GitHubStorage(cfg);
+
+      // NEW is later than the remote's OLD, and it is still refused, because
+      // OLD is not the copy this device last agreed with.
+      await expect(
+        store.save(progress(NEW, 1), seen("2025-01-01T00:00:00.000Z")),
+      ).rejects.toBeInstanceOf(RemoteMovedError);
+      expect(calls).toEqual([{ method: "GET" }]);
+    });
+
+    it("refuses a device that has never agreed with this repo at all", async () => {
+      // No marker, and a file already up there. Whose it is cannot be guessed,
+      // so the first push over one is a person's to ask for.
+      const calls = stubApi({ sha: "abc", body: progress(OLD, 9) });
+      await expect(
+        new GitHubStorage(cfg).save(progress(NEW, 1)),
+      ).rejects.toBeInstanceOf(RemoteMovedError);
+      expect(calls).toEqual([{ method: "GET" }]);
+    });
+
+    it("lets through the copy it did last agree with, however the clocks run", async () => {
+      // The mirror's ordinary day, and the other half of the rule: the remote
+      // holds what this device put there, so there is nothing to lose. Here the
+      // remote's stamp is the *later* of the two, which under the old rule
+      // would have refused a push that had every right to land.
+      const calls = stubApi({ sha: "abc", body: progress(NEW, 3) });
+      await new GitHubStorage(cfg).save(progress(OLD, 4), seen(NEW));
+      expect(calls).toEqual([{ method: "GET" }, { method: "PUT", sha: "abc" }]);
     });
 
     it("hands the caller the remote copy it refused for", async () => {
@@ -159,7 +208,7 @@ describe("GitHubStorage", () => {
       await store.load(); // caches sha "abc"
 
       const calls = stubApi({ sha: "moved-on", body: progress(NEW, 9) });
-      await expect(store.save(progress(NEW, 1))).rejects.toBeInstanceOf(
+      await expect(store.save(progress(NEW, 1), seen(OLD))).rejects.toBeInstanceOf(
         RemoteMovedError,
       );
       expect(calls).toEqual([
@@ -204,17 +253,33 @@ describe("GitHubStorage", () => {
     it("sends nothing on a second save that changed nothing", async () => {
       const store = new GitHubStorage(cfg);
       const calls = stubApi({ sha: "abc" });
-      await store.save(progress(NEW, 3));
-      await store.save(progress("2026-06-02T00:00:00.000Z", 3));
+      await store.save(progress(NEW, 3), seen(OLD));
+      await store.save(progress("2026-06-02T00:00:00.000Z", 3), seen(NEW));
       expect(calls).toEqual([{ method: "GET" }, { method: "PUT", sha: "abc" }]);
     });
 
     it("still commits a real change", async () => {
       const store = new GitHubStorage(cfg);
       const calls = stubApi({ sha: "abc" });
-      await store.save(progress(NEW, 3));
-      await store.save(progress("2026-06-02T00:00:00.000Z", 4));
+      await store.save(progress(NEW, 3), seen(OLD));
+      await store.save(progress("2026-06-02T00:00:00.000Z", 4), seen(NEW));
       expect(calls.filter((c) => c.method === "PUT")).toHaveLength(2);
+    });
+
+    it("reports the remote's own clock when it sent nothing", async () => {
+      // The caller files this as "what the remote holds". A commit that sent
+      // nothing left the remote's stamp where it was, and a caller that assumed
+      // otherwise would spend the next launch believing another device had been
+      // at the file — the daily question this whole marker exists to avoid.
+      stubApi({ sha: "abc", body: progress(OLD, 3) });
+      const sent = await new GitHubStorage(cfg).commit(progress(NEW, 3), seen(OLD));
+      expect(sent).toEqual({ remoteAt: OLD });
+    });
+
+    it("reports the copy it wrote when it did send one", async () => {
+      stubApi({ sha: "abc", body: progress(OLD, 3) });
+      const sent = await new GitHubStorage(cfg).commit(progress(NEW, 4), seen(OLD));
+      expect(sent).toEqual({ remoteAt: NEW });
     });
 
     it("is not fooled by the order the keys happen to be in", async () => {

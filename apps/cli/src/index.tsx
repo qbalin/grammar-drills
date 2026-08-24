@@ -13,7 +13,7 @@ import { setupSync } from "./setup-sync.js";
 import { createPrompter } from "./prompt.js";
 import {
   loadSyncConfig,
-  readSyncedAt,
+  readSyncedMarker,
   syncConfigPath,
   syncedMarkerPath,
 } from "./sync-config.js";
@@ -53,7 +53,7 @@ const syncing = syncConfig
       local,
       syncConfig,
       `Update ${profile.l2.name} progress`,
-      { path: markerPath, at: await readSyncedAt(markerPath) },
+      { path: markerPath, at: await readSyncedMarker(markerPath) },
     )
   : null;
 const storage: StorageAdapter = syncing ?? local;

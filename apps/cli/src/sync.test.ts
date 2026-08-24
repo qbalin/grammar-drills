@@ -2,7 +2,7 @@ import { mkdtemp, readFile, writeFile, stat, mkdir } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { emptyProgress, type Progress } from "@lang-tutor/core";
+import { emptyProgress, type Progress, type SyncedAt } from "@lang-tutor/core";
 import { testProfile } from "@lang-tutor/core/testing";
 import { LocalFileStorage } from "./storage-local.js";
 import { SyncingFileStorage } from "./storage-sync.js";
@@ -50,6 +50,33 @@ function stubApi(file: Progress | null) {
 /** Every push fails, the way a revoked token does. */
 function stubFailing(status: number) {
   vi.stubGlobal("fetch", vi.fn(async () => new Response("no", { status })));
+}
+
+/**
+ * Hold the next PUT open, so a grade can be given while one is in the air.
+ *
+ * Wraps whatever `stubApi` installed rather than replacing it: the point is a
+ * real push that has not come back yet, not a broken one.
+ */
+function holdNextPut() {
+  const underlying = fetch;
+  let release!: () => void;
+  let reached!: () => void;
+  const held = new Promise<void>((r) => (release = r));
+  const arrived = new Promise<void>((r) => (reached = r));
+  let first = true;
+  vi.stubGlobal(
+    "fetch",
+    vi.fn(async (url: string, init?: RequestInit) => {
+      if (first && (init?.method ?? "GET") === "PUT") {
+        first = false;
+        reached();
+        await held;
+      }
+      return underlying(url, init);
+    }),
+  );
+  return { reached: arrived, release };
 }
 
 afterEach(() => vi.unstubAllGlobals());
@@ -109,7 +136,15 @@ describe("the CLI's sync settings file", () => {
 });
 
 describe("SyncingFileStorage", () => {
-  async function make(marker?: { at: string | null }) {
+  /**
+   * A marker saying this machine and GitHub agreed on these two copies. They
+   * are the same value except after a commit that sent nothing.
+   */
+  function agreed(pushedAt: string, remoteAt = pushedAt) {
+    return { at: { pushedAt, remoteAt } };
+  }
+
+  async function make(marker?: { at: SyncedAt | null }) {
     const home = await dir();
     const local = new LocalFileStorage(join(home, "progress.json"));
     return {
@@ -189,7 +224,7 @@ describe("SyncingFileStorage", () => {
       stubApi(at("2026-02-02T00:00:00Z", 9));
       const local = at("2026-01-01T00:00:00Z", 3);
       // The marker says this machine's copy is exactly what it last pushed.
-      const { sync } = await make({ at: local.updatedAt });
+      const { sync } = await make(agreed(local.updatedAt));
 
       expect(await sync.checkRemote(local)).toEqual({
         kind: "adopt",
@@ -200,7 +235,7 @@ describe("SyncingFileStorage", () => {
     it("asks when both copies have moved since they last agreed", async () => {
       stubApi(at("2026-02-02T00:00:00Z", 9));
       // Studied offline: the local copy has moved past the marker.
-      const { sync } = await make({ at: "2026-01-01T00:00:00Z" });
+      const { sync } = await make(agreed("2026-01-01T00:00:00Z"));
 
       const found = await sync.checkRemote(at("2026-01-05T00:00:00Z", 5));
       expect(found.kind).toBe("diverged");
@@ -212,11 +247,34 @@ describe("SyncingFileStorage", () => {
       expect((await sync.checkRemote(null)).kind).toBe("adopt");
     });
 
-    it("has nothing to say when the remote is not ahead", async () => {
+    it("has nothing to say when GitHub holds what this machine put there", async () => {
       stubApi(at("2026-01-01T00:00:00Z", 3));
-      const { sync } = await make();
+      const { sync } = await make(agreed("2026-01-01T00:00:00Z"));
       expect((await sync.checkRemote(at("2026-02-02T00:00:00Z", 5))).kind).toBe(
         "current",
+      );
+    });
+
+    it("adopts a copy stamped earlier than this machine's", async () => {
+      // The case the clock could not see, and the one that lost people's
+      // evenings. Opening the tutor moves `updatedAt` without anything being
+      // studied, so this machine's stamp is the later of the two while GitHub
+      // holds the week's real work. Later stamp, less study.
+      stubApi(at("2026-01-01T00:00:00Z", 9));
+      const { sync } = await make(agreed("2026-02-02T00:00:00Z"));
+      const found = await sync.checkRemote(at("2026-02-02T00:00:00Z", 3));
+      expect(found).toEqual({
+        kind: "adopt",
+        remote: expect.objectContaining({ newTopicsIntroduced: 9 }),
+      });
+    });
+
+    it("asks a machine that has work but has never synced", async () => {
+      // Its first push would be over somebody else's file.
+      stubApi(at("2026-01-01T00:00:00Z", 9));
+      const { sync } = await make();
+      expect((await sync.checkRemote(at("2026-02-02T00:00:00Z", 5))).kind).toBe(
+        "diverged",
       );
     });
 
@@ -227,16 +285,49 @@ describe("SyncingFileStorage", () => {
       await sync.adopt(remote);
 
       expect(sync.hasUnpushed(remote)).toBe(false);
-      expect((await readFile(join(home, "synced"), "utf8")).trim()).toBe(
-        "2026-02-02T00:00:00Z",
-      );
+      expect(JSON.parse(await readFile(join(home, "synced"), "utf8"))).toEqual({
+        pushedAt: "2026-02-02T00:00:00Z",
+        remoteAt: "2026-02-02T00:00:00Z",
+      });
     });
   });
 
+  it("sends what arrived while a push was in the air", async () => {
+    // `flush` turns away anything that finds a push already going, and used to
+    // leave it at that. On exit — the terminal's only other flush — that is the
+    // last grades of a session sitting in a queue nobody looks at again.
+    const puts = stubApi(null);
+    const { sync } = await make();
+    const inFlight = holdNextPut();
+
+    const first = sync.saveNow(at("2026-01-01T00:00:01Z", 1));
+    await inFlight.reached; // the first push is on the wire
+    await sync.save(at("2026-01-01T00:00:02Z", 2)); // the grade that arrives
+    inFlight.release();
+    await first;
+
+    expect(puts.map((p) => p.newTopicsIntroduced)).toEqual([1, 2]);
+    expect(sync.hasPending()).toBe(false);
+  });
+
   describe("when another machine pushed first", () => {
+    it("refuses mid-session, when the startup check is long over", async () => {
+      // The check runs once and a session runs for an hour. This machine agreed
+      // with GitHub at launch and pushes again later, by which time the phone
+      // has been at it — and this copy's stamp is the later one, because it has
+      // been studied since. Under the clock it walked straight over the phone.
+      const puts = stubApi(at("2026-01-01T09:05:00Z", 9));
+      const { sync } = await make(agreed("2026-01-01T09:00:00Z"));
+
+      await sync.saveNow(at("2026-01-01T09:10:00Z", 4));
+
+      expect(puts).toHaveLength(0);
+      expect(sync.currentState().kind).toBe("behind");
+    });
+
     it("holds the push rather than overwriting it, and keeps the work", async () => {
       const puts = stubApi(at("2026-02-02T00:00:00Z", 9));
-      const { local, sync } = await make({ at: "2026-01-01T00:00:00Z" });
+      const { local, sync } = await make(agreed("2026-01-01T00:00:00Z"));
 
       await sync.saveNow(at("2026-01-05T00:00:00Z", 5));
 
@@ -249,7 +340,7 @@ describe("SyncingFileStorage", () => {
 
     it("pushes over it when the overwrite is the answer given", async () => {
       const puts = stubApi(at("2026-02-02T00:00:00Z", 9));
-      const { sync } = await make({ at: "2026-01-01T00:00:00Z" });
+      const { sync } = await make(agreed("2026-01-01T00:00:00Z"));
 
       await sync.saveNow(at("2026-01-05T00:00:00Z", 5), { force: true });
 

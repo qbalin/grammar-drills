@@ -4905,11 +4905,35 @@ describe("a device that is behind another one", () => {
     });
 
     expect(storage.currentState().kind).toBe("behind");
-    // Study is untouched by it, and the question on screen is still the one
-    // that was there.
+    // Study is untouched by it: the question on screen is still the one that
+    // was there, underneath the sheet.
     expect(screen.getByRole("button", { name: "Reveal" })).toBeDefined();
     await user.click(screen.getByRole("button", { name: "Settings" }));
     expect(screen.getByText(/Another device is ahead/)).toBeDefined();
+  });
+
+  it("asks about a device that gets ahead mid-session, not only at startup", async () => {
+    // The startup check runs once and a session runs for an hour, so the phone
+    // being studied at half past is a question this app has to be able to ask
+    // after it has opened. It was reported as a line of text in Settings, which
+    // is to say not reported: the one moment there was something to ask about
+    // was the one moment nothing was asked.
+    stubGitHub(copy("2026-09-09T00:00:00.000Z", ["decl2"]));
+    const { storage, session } = mount(copy("2026-01-01T00:00:00.000Z", ["decl1"]));
+    await act(async () => {
+      storage.configure(CONFIG);
+    });
+
+    await act(async () => {
+      await storage.saveNow(session.progress());
+    });
+
+    expect(
+      screen.getByRole("dialog", { name: "Progress from another device" }),
+    ).toBeDefined();
+    // And it is the same two answers as at startup, over the same copy.
+    expect(screen.getByRole("button", { name: "Use the newer one" })).toBeDefined();
+    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
   });
 
   it("keeps this device's copy when that is what was chosen", async () => {

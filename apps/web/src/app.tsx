@@ -209,6 +209,16 @@ type Overlay =
   /** A deliberate pull that would discard what this device has not sent. */
   | { t: "discard"; remote: Progress };
 
+/**
+ * Whether this sheet is already asking which copy of the progress to keep.
+ *
+ * The three of them are one question in three situations, and only one may be
+ * on screen: a second over the first would be two questions about one file.
+ */
+function asksAboutSync(overlay: Overlay | null): boolean {
+  return overlay?.t === "conflict" || overlay?.t === "overwrite" || overlay?.t === "discard";
+}
+
 /** Whether anything at all has been picked out, across the three texts. */
 function hasMarks(marks: AttemptMarks): boolean {
   return Object.values(marks).some((m) => m && Object.keys(m).length > 0);
@@ -947,6 +957,28 @@ export function App({ content, session, storage }: Props) {
       else if (found.kind === "diverged") setOverlay({ t: "conflict", remote: found.remote });
     });
   }, [session, storage]);
+
+  /*
+   * The same question, arriving mid-session.
+   *
+   * The check above runs once, at launch, and a session runs for an hour. Study
+   * on the phone at half past and this device's next grade is a push over work
+   * it has never seen — which the storage now refuses, and which used to be
+   * reported as a line of text in Settings and therefore not at all. It is the
+   * same choice with the same two answers, so it is the same sheet.
+   *
+   * A sync question already on screen wins — a second sheet over the first
+   * would be two questions about one file, and the first is the one being read.
+   * Anything else gives way: a word being looked up is worth less than a
+   * session about to be lost, and it can be looked up again.
+   */
+  useEffect(
+    () =>
+      storage.onBehind((remote) =>
+        setOverlay((showing) => (asksAboutSync(showing) ? showing : { t: "conflict", remote })),
+      ),
+    [storage],
+  );
 
   /**
    * The reward. It comes at the end of a round of questions rather than on a
@@ -2189,9 +2221,16 @@ export function App({ content, session, storage }: Props) {
    * Point sync at a repo, and push this device's copy to it.
    *
    * This is the deliberate overwrite, so it is allowed to win — but not
-   * silently. Connecting to a repo that already holds a newer copy is how a
-   * second device gets set up, and pushing first would erase the very progress
-   * the person was connecting in order to reach.
+   * silently. Connecting to a repo that already holds a copy is how a second
+   * device gets set up, and pushing first would erase the very progress the
+   * person was connecting in order to reach.
+   *
+   * Anything already up there is asked about, rather than only a copy stamped
+   * later than this device's. Which of two files a clock prefers says nothing
+   * about which holds more study, and this device has never agreed with that
+   * repo about anything, so there is no honest way to guess whose it is. The
+   * "a question people learn to dismiss" argument does not apply: naming a repo
+   * happens once per device, not once per morning.
    */
   const configureSync = (cfg: SyncConfig | null) => {
     storage.configure(cfg);
@@ -2204,10 +2243,12 @@ export function App({ content, session, storage }: Props) {
       .catch(() => null)
       .then((remote) => {
         const local = session.progress();
-        if (remote && remote.updatedAt > local.updatedAt) {
+        if (remote) {
           setOverlay({ t: "overwrite", remote });
           return;
         }
+        // An empty repo has nothing to lose, so no force is wanted: the storage
+        // lets a first file through on its own.
         return storage.saveNow(local).then(() => flash("Connected to GitHub."));
       });
   };
@@ -3174,7 +3215,13 @@ export function App({ content, session, storage }: Props) {
       {overlay?.t === "conflict" && (
         <Sheet
           title="Progress from another device"
-          onClose={() => setOverlay(null)}
+          // Put down rather than answered. Nothing is decided by it and nothing
+          // is lost: the work is still queued and still carries what this
+          // device last saw, so it is refused again and asks again.
+          onClose={() => {
+            storage.resolveCheck();
+            setOverlay(null);
+          }}
         >
           <p className="field__hint" style={{ marginTop: 0 }}>
             The copy on GitHub was saved {ago(overlay.remote.updatedAt)}, and
@@ -3207,8 +3254,9 @@ export function App({ content, session, storage }: Props) {
       {overlay?.t === "overwrite" && (
         <Sheet title="That repo already has progress" onClose={() => setOverlay(null)}>
           <p className="field__hint" style={{ marginTop: 0 }}>
-            The copy on GitHub was saved {ago(overlay.remote.updatedAt)}, which
-            is newer than this device's. Saving now replaces it.
+            The copy on GitHub was saved {ago(overlay.remote.updatedAt)}. This
+            device has never synced with that repo, so which of the two holds
+            more is not something the app can work out. Saving replaces it.
           </p>
           <div className="actions">
             <button className="btn" onClick={() => adoptRemote(overlay.remote)}>
