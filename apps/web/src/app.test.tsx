@@ -43,6 +43,16 @@ const PARADIGMS = [
 // last to be asked for. Flagged separately from the dictionary because the two
 // failures look nothing alike to a student.
 const paradigmFile = { available: true };
+/**
+ * The etymologies, which arrive with the dictionary rather than after it — one
+ * `lemma|pos \t <text>` line per word, sorted, newlines escaped. Only one of
+ * the fixture's words has one, which is the ordinary state of the real file.
+ */
+const ETYMOLOGY = [
+  "manus|noun\tFrom Proto-Italic *manus.\\nCognate with Old English mund.",
+].join("\n");
+/** A pack whose dictionary carries no etymology at all, as Greek's does not. */
+const etymologyFile = { available: true };
 /** The pack's further books, which are fetched at launch and nothing else. */
 const books = { available: true };
 /**
@@ -58,12 +68,17 @@ vi.mock("./confetti/Confetti.js", () => ({
 
 vi.mock("./content-loader.js", async () => {
   const { ParadigmIndex } = await import("./paradigm-index.js");
+  const { EtymologyIndex } = await import("./etymology-index.js");
   return {
     loadDictionary: vi.fn(async () => {
       if (!dictionary.available) throw new Error("offline");
       return {} as never;
     }),
     dictionaryReady: () => dictionary.available,
+    // Never a promise: it is the empty index until the dictionary lands, and
+    // the empty index answers exactly as a word with no etymology does.
+    etymology: () =>
+      new EtymologyIndex(etymologyFile.available ? ETYMOLOGY : ""),
     loadParadigms: vi.fn(async () => {
       if (!paradigmFile.available) throw new Error("offline");
       return new ParadigmIndex(PARADIGMS);
@@ -305,6 +320,7 @@ async function holdCribRow(text: string, then?: () => void) {
 beforeEach(() => {
   localStorage.clear();
   dictionary.available = true;
+  etymologyFile.available = true;
   fireConfetti.mockClear();
   vi.unstubAllGlobals();
   // The storage-failure tests below spy on `Storage.prototype`, and a spy that
@@ -1773,6 +1789,82 @@ describe("fetching the content", () => {
 });
 
 describe("looking a word up", () => {
+  /**
+   * Where the word came from, which the sheet could always have said.
+   *
+   * The dump the dictionary was built out of carries an etymology on every
+   * entry, and the ingest read past it. It is folded away rather than printed:
+   * it is prose of no fixed length, and the tables are what most double-clicks
+   * are after, so a paragraph between the gloss and the endings would push the
+   * endings off a phone.
+   */
+  describe("the etymology", () => {
+    it("is folded away under the gloss, and opens to its paragraphs", async () => {
+      const user = userEvent.setup();
+      mount();
+      await user.type(screen.getByLabelText("Your Latin"), "manibus");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await inspectWord("manibus");
+      const sheet = screen.getByRole("dialog", { name: "manus, manūs (f)" });
+      const toggle = within(sheet).getByRole("button", { name: /Etymology/ });
+      // Closed: the prose is an answer to a question the student has not asked
+      // yet, and the tables are the one they usually have.
+      expect(toggle.getAttribute("aria-expanded")).toBe("false");
+      expect(within(sheet).queryByText(/Proto-Italic/)).toBeNull();
+
+      await user.click(toggle);
+      // Two paragraphs, because the file's escaped newlines are read back as
+      // the breaks they were — the origin, then the cognates.
+      expect(within(sheet).getByText("From Proto-Italic *manus.")).toBeDefined();
+      expect(within(sheet).getByText("Cognate with Old English mund.")).toBeDefined();
+    });
+
+    it("says nothing at all about a word it has none for", async () => {
+      // Most words of any pack, so a line reading "no etymology recorded" would
+      // be a defect reported on every second lookup.
+      const user = userEvent.setup();
+      mount();
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+
+      await inspectWord("rosam");
+      const sheet = screen.getByRole("dialog", { name: "rosa, rosae (f)" });
+      expect(within(sheet).queryByRole("button", { name: /Etymology/ })).toBeNull();
+    });
+
+    it("says the same nothing in a pack that ships no etymologies", async () => {
+      // Greek's dictionary came out of Eulexis, which has none. The file is
+      // simply absent, the index is empty, and no screen learns about it.
+      etymologyFile.available = false;
+      const user = userEvent.setup();
+      mount();
+      await user.type(screen.getByLabelText("Your Latin"), "manibus");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await inspectWord("manibus");
+      const sheet = screen.getByRole("dialog", { name: "manus, manūs (f)" });
+      expect(within(sheet).queryByRole("button", { name: /Etymology/ })).toBeNull();
+      // And the rest of the sheet is untouched by its absence.
+      expect(within(sheet).getByText("hand")).toBeDefined();
+    });
+
+    it("closes again when another reading of the same form is picked", async () => {
+      // A different word, so the paragraph on screen is the previous word's
+      // answer under the new word's name.
+      const user = userEvent.setup();
+      mount();
+      await user.type(screen.getByLabelText("Your Latin"), "manibus");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await inspectWord("manibus");
+      await user.click(screen.getByRole("button", { name: /Etymology/ }));
+      expect(screen.getByText("From Proto-Italic *manus.")).toBeDefined();
+
+      await user.click(screen.getByRole("button", { name: "mānis, māne" }));
+      expect(screen.queryByText("From Proto-Italic *manus.")).toBeNull();
+    });
+  });
+
   it("shows the word's own table, not the model in the book", async () => {
     const user = userEvent.setup();
     mount();

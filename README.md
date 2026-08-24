@@ -203,6 +203,24 @@ most-frequent-first for you to disambiguate. Any card can be edited later —
 citation and gloss both — from the vocabulary list, and deleted if a stray press
 recorded the wrong word.
 
+**Double-click a word** instead of holding it and you get the word itself rather
+than a card: its citation, its gloss, the other readings of that form as chips,
+and its own inflection table — the grammar shows one noun of each declension and
+expects you to see that yours follows it, which works until the word is
+irregular, or defective, or you simply cannot tell which model it belongs to.
+
+That sheet now also says **where the word comes from**, folded away under the
+gloss: `▸ Etymology`, opening to the paragraphs Wiktionary has for it. It ships
+as `content/etymology.txt.gz` — 38,532 of Latin's 55,312 lemmas, 1.2 MB gzipped
+— and comes down with the dictionary rather than on the tap, because a sheet you
+opened in order to read is the wrong place for a spinner. Greek shows none: its
+dictionary was built from Eulexis rather than from Wiktionary, and there is no
+etymology in it to ship. Nothing had to be rebuilt for this — the dump the Latin
+dictionary was made from carried the field all along and the ingest read past
+it, so `scripts/build-etymology.mjs` joins it on by `lemma|pos` and writes one
+more file beside what already ships, leaving `dictionary.db` and everything
+generated out of it exactly where they were.
+
 ## The sentence you met the word in
 
 A card keeps the question it came from, and the sentence the word stood in:

@@ -729,6 +729,17 @@ span.status__title {
   padding-top: 0.5rem;
 }
 
+/* Prose folded into the same disclosure — the word sheet's etymology. Narrower
+   than the crib's two columns because it is a paragraph rather than a list, and
+   the last one should not sit hard against the row below it. */
+.crib__list--prose {
+  padding: 0.2rem 0 0.4rem;
+}
+
+.crib__list--prose .gr-p:last-child {
+  margin-bottom: 0;
+}
+
 .crib__status {
   display: flex;
   align-items: center;

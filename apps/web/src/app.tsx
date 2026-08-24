@@ -23,6 +23,7 @@ import {
 import {
   dictionariesReady,
   dictionaryReady,
+  etymology,
   loadDictionaries,
   loadDictionary,
   loadGrammarBook,
@@ -2834,6 +2835,12 @@ export function App({ content, session, storage }: Props) {
         <InspectSheet
           form={overlay.form}
           entry={overlay.entry}
+          // Read at render rather than carried on the overlay: the etymologies
+          // arrive with the dictionary, and a sheet opened while that was still
+          // in flight would otherwise hold the empty answer for as long as it
+          // stayed open. The index answers the same way before and after — with
+          // nothing — so there is no state here to keep in step.
+          origin={etymology().paragraphsFor(overlay.entry.lemma, overlay.entry.pos)}
           others={overlay.others}
           forms={paradigms?.formsFor(overlay.entry.lemma, overlay.entry.pos)}
           // Asked per dictionary rather than merged, so each keeps its own name

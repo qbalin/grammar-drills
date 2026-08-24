@@ -7,6 +7,7 @@ import {
   type LemmaEntry,
   type Test,
 } from "@lang-tutor/core";
+import { EtymologyIndex } from "./etymology-index.js";
 import { LemmaIndex } from "./lemma-index.js";
 import { fold, profile } from "./pack.js";
 import { ParadigmIndex } from "./paradigm-index.js";
@@ -179,6 +180,7 @@ export async function prefetchGrammarBooks(): Promise<void> {
 
 let loaded: LemmaIndex | undefined;
 let pending: Promise<LemmaIndex> | undefined;
+let origins = new EtymologyIndex("");
 
 const lateBoundDictionary = {
   lookup: (form: string) => loaded?.lookup(form) ?? [],
@@ -188,14 +190,28 @@ const lateBoundDictionary = {
  * Fetch the dictionary, at most once per page. The UI awaits this before
  * offering a lookup; `Content.lookup` itself stays synchronous, so nothing in
  * the engine has to learn about loading.
+ *
+ * The etymologies come with it rather than on the first double-click, because
+ * they are small beside the two files they travel with and because the sheet
+ * that shows them is a sheet somebody opened to *read* — a spinner where the
+ * prose should be is worse than the extra second at launch.
+ *
+ * They are also the one file here that may not exist: only a pack whose
+ * dictionary came out of Wiktionary has one. So the fetch is its own, and its
+ * failure is swallowed rather than allowed to take the dictionary down with it
+ * — a 404 on this file must not turn every word in the app into "not in the
+ * dictionary". An empty index answers null to everything, which is what a word
+ * nobody has written an etymology for looks like anyway.
  */
 export function loadDictionary(): Promise<LemmaIndex> {
   if (loaded) return Promise.resolve(loaded);
   pending ??= (async () => {
-    const [entries, index] = await Promise.all([
+    const [entries, index, etymologies] = await Promise.all([
       fetchJson<LemmaEntry[]>("lemmas.json.gz"),
       fetchGzipped("forms.txt.gz"),
+      fetchGzipped("etymology.txt.gz").catch(() => ""),
     ]);
+    origins = new EtymologyIndex(etymologies);
     loaded = new LemmaIndex(entries, index);
     return loaded;
   })().catch((err) => {
@@ -203,6 +219,18 @@ export function loadDictionary(): Promise<LemmaIndex> {
     throw err;
   });
   return pending;
+}
+
+/**
+ * Where the words come from, as far as this device knows.
+ *
+ * Always an index, never a promise: it arrives with the dictionary, and before
+ * it has arrived — or in a pack that ships none — it is the empty one, which
+ * answers exactly as a word with no etymology does. So a caller never has to ask
+ * whether it is here yet.
+ */
+export function etymology(): EtymologyIndex {
+  return origins;
 }
 
 let paradigms: ParadigmIndex | undefined;

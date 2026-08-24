@@ -57,6 +57,20 @@ const contentBytes = (names: string[]) => {
  * one book and gets an empty list here. No crosswalk without a second book —
  * there would be nothing for it to join.
  */
+/**
+ * The pack's etymology file, if it has one.
+ *
+ * Derived from what is on disk rather than declared, because whether a pack has
+ * one is a fact about the dictionary it was built out of: Latin's came from
+ * Wiktionary and carries etymologies, Greek's came from Eulexis and cannot. A
+ * profile flag would be a second place for that to be true or false in.
+ */
+const etymologyFiles = existsSync(
+  fileURLToPath(new URL("./public/content/etymology.txt.gz", import.meta.url)),
+)
+  ? ["etymology.txt.gz"]
+  : [];
+
 const bookFiles = (profile.grammars ?? []).length
   ? [
       ...profile.grammars.map((g: { id: string }) => `grammar-${g.id}.json.gz`),
@@ -84,6 +98,7 @@ const offlineBytes = contentBytes([
   "lemmas.json.gz",
   "forms.txt.gz",
   "paradigms.txt.gz",
+  ...etymologyFiles,
   ...bookFiles,
   ...dictFiles,
 ]);
@@ -101,6 +116,7 @@ const fetchedBytes = contentBytes([
   "lemmas.json.gz",
   "forms.txt.gz",
   "paradigms.txt.gz",
+  ...etymologyFiles,
   ...bookFiles,
   ...dictFiles,
 ]);
@@ -184,18 +200,19 @@ export default defineConfig({
             // index ends `.txt.gz`, so the extension is left to the tail rather
             // than named twice.
             urlPattern:
-              /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt|grammar-[^/?]+\.json|crosswalk\.json|dict-[^/?]+\.(json|txt))\.gz(\?|$)/,
+              /\/content\/(lemmas\.json|forms\.txt|paradigms\.txt|etymology\.txt|grammar-[^/?]+\.json|crosswalk\.json|dict-[^/?]+\.(json|txt))\.gz(\?|$)/,
             handler: "CacheFirst",
             options: {
               cacheName: profile.storage.dictionaryCacheName,
               // Room for a couple of rebuilds' worth of whatever this pack has
               // before the oldest is evicted — three files plus its books and
-              // its dictionaries, so a pack that grows another of either grows
-              // this rather than quietly holding fewer versions.
-              // `maxAgeSeconds` is a backstop for a device that somehow holds a
-              // version nothing asks for again.
+              // its dictionaries and its etymology, so a pack that grows
+              // another of any of them grows this rather than quietly holding
+              // fewer versions. `maxAgeSeconds` is a backstop for a device that
+              // somehow holds a version nothing asks for again.
               expiration: {
-                maxEntries: (3 + bookFiles.length + dictFiles.length) * 4,
+                maxEntries:
+                  (3 + bookFiles.length + dictFiles.length + etymologyFiles.length) * 4,
                 maxAgeSeconds: 60 * 60 * 24 * 60,
               },
               cacheableResponse: { statuses: [0, 200] },

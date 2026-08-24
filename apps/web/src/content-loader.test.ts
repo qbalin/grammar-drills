@@ -148,3 +148,80 @@ describe("prefetchGrammarBooks", () => {
     }
   });
 });
+
+/**
+ * The dictionary's launch fetch, and the one file in it that may not exist.
+ *
+ * Only a pack whose dictionary came out of Wiktionary has an etymology to ship.
+ * The danger is not the missing file — it is that a missing file taken as a
+ * failure of the *fetch* would take the dictionary down with it, and every word
+ * in the app would then read "not in the dictionary" because of a feature the
+ * pack never had.
+ */
+describe("loadDictionary", () => {
+  /** What each content file answers with, by name; `null` is a 404. */
+  const served: Record<string, string | null> = {};
+
+  const fresh = async () => {
+    vi.resetModules();
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: string) => {
+        const name = new URL(input).pathname.split("/").pop()!;
+        const body = served[name];
+        if (body === undefined || body === null) {
+          return { ok: false, status: 404 } as Response;
+        }
+        return {
+          ok: true,
+          arrayBuffer: async () => new TextEncoder().encode(body).buffer,
+        } as unknown as Response;
+      }),
+    );
+    return import("./content-loader.js");
+  };
+
+  beforeEach(() => {
+    served["lemmas.json.gz"] = JSON.stringify([
+      { lemma: "manus", citation: "manus, ūs (f)", gloss: "hand", pos: "noun" },
+    ]);
+    served["forms.txt.gz"] = "manus\t0";
+    served["etymology.txt.gz"] = "manus|noun\tFrom Proto-Italic *manus.";
+  });
+
+  afterEach(() => vi.unstubAllGlobals());
+
+  it("brings the etymologies down with the dictionary, not after it", async () => {
+    // Eagerly, because the sheet that shows them is one somebody opened to read
+    // — a spinner where the prose should be is worse than the extra second.
+    const mod = await fresh();
+    await mod.loadDictionary();
+    expect(mod.etymology().paragraphsFor("manus", "noun")).toEqual([
+      "From Proto-Italic *manus.",
+    ]);
+  });
+
+  it("answers with an empty index before the fetch has happened", async () => {
+    const mod = await fresh();
+    expect(mod.etymology().paragraphsFor("manus", "noun")).toEqual([]);
+  });
+
+  it("keeps the dictionary when the pack ships no etymology at all", async () => {
+    served["etymology.txt.gz"] = null;
+    const mod = await fresh();
+
+    const index = await mod.loadDictionary();
+    expect(index.lookup("manus").map((e) => e.gloss)).toEqual(["hand"]);
+    expect(mod.dictionaryReady()).toBe(true);
+    expect(mod.etymology().paragraphsFor("manus", "noun")).toEqual([]);
+  });
+
+  it("still fails on the files the app cannot do without", async () => {
+    // The swallowed failure above is the etymology's alone. A dictionary that
+    // did not come down is the thing every lookup depends on, and pretending
+    // otherwise would blame the words for it.
+    served["forms.txt.gz"] = null;
+    const mod = await fresh();
+    await expect(mod.loadDictionary()).rejects.toThrow(/could not load/);
+  });
+});

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   buildParadigm,
   decodeRuns,
@@ -88,10 +89,18 @@ function ArticleBlock({
  *
  * The layout is the pack's (`profile.paradigms`), read here rather than baked
  * in: which features are rows and which are columns is the language's business.
+ *
+ * Where the word came from is here too, folded away. It is the other question a
+ * student asks a word directly, and the one this app could always have answered
+ * and did not — the dump the dictionary was built out of has carried it all
+ * along. Folded because it is prose of no fixed length and the tables are what
+ * most double-clicks are after; near the top because it belongs with the gloss
+ * rather than after three screens of endings.
  */
 export function InspectSheet({
   form,
   entry,
+  origin,
   others,
   forms,
   lexica,
@@ -105,6 +114,13 @@ export function InspectSheet({
   /** The word as it stood in the sentence, which is what was double-clicked. */
   form: string;
   entry: LemmaEntry;
+  /**
+   * Where this word comes from, in paragraphs — empty where the pack ships no
+   * etymology, or ships one that says nothing about this word. The two are the
+   * same silence on purpose: a Greek pack has none for anything, and no screen
+   * should have to explain that.
+   */
+  origin: string[];
   /** The other readings of the same form; empty when it is unambiguous. */
   others: LemmaEntry[];
   /** This entry's tagged forms, or undefined until they arrive. */
@@ -124,6 +140,10 @@ export function InspectSheet({
   onCopy: () => void;
   onClose: () => void;
 }) {
+  // Closed on every open, including the one that follows picking another
+  // reading of the same form — that is a new word, and a disclosure that stayed
+  // open would be showing the previous word's answer under the new word's name.
+  const [showOrigin, setShowOrigin] = useState(false);
   const blocks = profile.paradigms?.tables[entry.pos];
   // Laid out even when the pack declares no table for this `pos`: a Latin
   // adverb has a comparative and a superlative, and with no blocks to claim
@@ -151,6 +171,35 @@ export function InspectSheet({
           .filter(Boolean)
           .join(" · ")}
       </p>
+
+      {/* Nothing at all where there is nothing to say. A line reading "no
+          etymology recorded" would be on most words of any pack — the dump
+          writes one for a fraction of what it holds — and would turn an
+          ordinary silence into a defect on every second word. */}
+      {origin.length > 0 && (
+        <div className="crib">
+          <button
+            className="crib__toggle"
+            aria-expanded={showOrigin}
+            aria-controls="word-etymology"
+            onClick={() => setShowOrigin((on) => !on)}
+          >
+            <span className="crib__caret" aria-hidden="true">
+              {showOrigin ? "▾" : "▸"}
+            </span>
+            Etymology
+          </button>
+          {showOrigin && (
+            <div className="crib__list crib__list--prose" id="word-etymology">
+              {origin.map((para, i) => (
+                <p className="gr-p" key={i}>
+                  {para}
+                </p>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
 
       {others.length > 0 && (
         <div className="inspect__others">
