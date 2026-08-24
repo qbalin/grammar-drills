@@ -17,7 +17,7 @@
   "Every _-prefixed key here is prose somebody wrote and the writer preserves,",
   "along with any figure it does not itself measure."
  ],
- "measuredAt": "2026-08-23",
+ "measuredAt": "2026-08-24",
  "profileFoldDigest": "see validate-pack output; changing it invalidates the built index",
  "grammar": {
   "topics": 149,
@@ -160,7 +160,7 @@
    "readingTextChars": {
     "min": 172,
     "median": 804,
-    "p90": 2833,
+    "p90": 2828,
     "max": 8271
    },
    "sourceSections": 2745,
@@ -451,7 +451,7 @@
   "split": null
  },
  "bundle": {
-  "grammarJsonGz": "148 KB",
+  "grammarJsonGz": "150 KB",
   "testsJsonGz": "485 KB",
   "lemmasJsonGz": "1864 KB",
   "formsTxtGz": "2620 KB",

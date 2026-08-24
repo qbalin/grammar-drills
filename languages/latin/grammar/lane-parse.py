@@ -48,7 +48,10 @@ import argparse, hashlib, io, json, os, re, sys, tempfile, urllib.request
 from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from parse import SMALL_WORDS, Buffer, Reader, fold_ascii, plain_len  # noqa: E402
+from parse import (  # noqa: E402
+    REF_OPEN, REF_STYLE, SECTION, SMALL_WORDS, Buffer, Reader, fold_ascii,
+    plain_len, unwrap_unreached,
+)
 
 PACK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = os.path.dirname(os.path.dirname(PACK))
@@ -98,6 +101,13 @@ APPARATUS_HEADING = "Abbreviations used in Citing the Authors"
 #: quote matters: `sec1174a` is a sub-item label — the `(a.)` that opens a
 #: lettered clause — and is not a section of its own.
 SECTION_ID = re.compile(r"sec(\d+)$")
+
+#: A cross-reference. Lane links its own, "see <a href = "#sec39">39</a>", and
+#: cites by bare number rather than by §, which is exactly why the target is
+#: taken from the anchor and never from the prose. Distinguished from a section
+#: marker by the `id` above and not by the presence of an `href`: Lane's own
+#: marker carries both, `<a id = "sec49" href = "#sound_diphthong">49</a>`.
+SECTION_HREF = re.compile(r"#sec(\d+)$")
 
 #: Where `class="header"` sits in the hierarchy: below <h6>, above nothing.
 HEADER_LEVEL = 7
@@ -155,6 +165,10 @@ class LaneReader(Reader):
                 self.hide += 1
                 self.eat_dot = True
                 self.style_stack.append(self.style)
+                return
+            m = SECTION_HREF.fullmatch(a.get("href") or "")
+            if m:
+                self.push_style(REF_STYLE + m.group(1))
                 return
 
         if tag == "p" and "header" in (a.get("class") or "").split():
@@ -430,7 +444,14 @@ def build(secs, min_chars):
             "title": title,
             "family": family,
             "order": order,
-            "text": "\n".join(s["raw"] for s in g["secs"] if s["raw"]),
+            # Every section's number, including the first: the reader decides
+            # what to draw, and a number missing here is one no cross-reference
+            # can reach. The thin-topic test above ran on the prose alone, so
+            # nothing gained here can make a topic a reading page.
+            "text": "\n".join(
+                SECTION.format(s["n"]) + ("\n" + s["raw"] if s["raw"] else "")
+                for s in g["secs"]
+            ),
         }
         if g["reading"]:
             topic["readingOnly"] = True
@@ -446,7 +467,16 @@ def build(secs, min_chars):
         if t["family"] is None:
             t["family"] = next((u["family"] for u in topics[i + 1:] if u["family"]),
                                None)
-    return topics, assigned, dropped, reading, labels
+
+    # Only now is it known which sections the pack ships. Lane links into the
+    # apparatus it drops, and a link to a page that is not there is worse than
+    # no link — so the wrapper comes off and the sentence reads as Lane set it.
+    reachable = {str(n) for n in assigned}
+    unreached = 0
+    for t in topics:
+        t["text"], n = unwrap_unreached(t["text"], reachable)
+        unreached += n
+    return topics, assigned, dropped, reading, labels, unreached
 
 
 def source_file(src):
@@ -487,12 +517,15 @@ if __name__ == "__main__":
     nums = sorted(s["n"] for s in sections)
     print(f"parsed §{nums[0]}-{nums[-1]} ({len(sections)} sections)", file=sys.stderr)
 
-    topics, assigned, dropped, reading, labels = build(sections, min_chars)
+    topics, assigned, dropped, reading, labels, unreached = build(sections, min_chars)
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     json.dump(topics, io.open(a.out, "w", encoding="utf8"), ensure_ascii=False, indent=1)
     taught = [t for t in topics if not t.get("readingOnly")]
     print(f"{len(topics)} topics ({len(taught)} taught, {len(reading)} reading) "
           f"-> {a.out}", file=sys.stderr)
+    linked = sum(len(REF_OPEN.findall(t["text"])) for t in topics)
+    print(f"cross-references: {linked} linked, {unreached} un-linked (no such section)",
+          file=sys.stderr)
 
     families = Counter(t["family"] for t in topics)
     print(f"families: {len(families)}, largest "

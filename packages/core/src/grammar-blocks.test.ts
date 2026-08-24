@@ -351,6 +351,21 @@ describe("parseBlocks", () => {
       }
     });
 
+    it("numbers every section of every book, inside its topic's own range", () => {
+      for (const [name, sections] of books) {
+        for (const s of sections) {
+          const numbers = sectionNumbers(s.text);
+          expect(numbers.length, `${name} §${s.ref}`).toBeGreaterThan(0);
+          const [from, to] = s.ref.split("-").map((n) => Number(/^\d+/.exec(n)![0]));
+          for (const n of numbers) {
+            const k = Number(/^\d+/.exec(n)![0]);
+            expect(k, `${name} §${s.ref} prints §${n}`).toBeGreaterThanOrEqual(from!);
+            expect(k, `${name} §${s.ref} prints §${n}`).toBeLessThanOrEqual(to ?? from!);
+          }
+        }
+      }
+    });
+
     it("loses no text from any section", () => {
       // Nothing may be dropped on the way into a block: the reader is shown
       // blocks and nothing else, so a character lost here is lost for good.

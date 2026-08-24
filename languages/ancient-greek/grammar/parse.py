@@ -70,6 +70,94 @@ def parse(src):
     return sections
 
 
+# --- inline markup ----------------------------------------------------------
+#
+# Smyth's prose carries no emphasis worth keeping — the TEI's <emph> is used for
+# the Greek itself, which is already Greek — so this pack ships none of the
+# ⟦b:…⟧ the Latin one does. What it does carry is 4,333 cross-references, and
+# they are the reason any marker exists here at all.
+OPEN, CLOSE = "⟦", "⟧"
+#: Where one numbered section begins, on a line of its own. Smyth's topics run
+#: to dozens of sections apiece, so without this the reader has a wall of prose
+#: and "see 144" points at a number the page never shows.
+SECTION = OPEN + "#{}" + CLOSE
+#: A cross-reference, `⟦r144:144⟧`. Smyth cites by bare number, which is exactly
+#: why the target is taken from the TEI's own `<ref target="s144">` and never
+#: found by reading the prose: `(149)` and `1.2.3` look alike to a regex.
+REF = OPEN + "r{}:"
+#: `<ref>` into the body of the book. Smyth also references his own appendix and
+#: the dialect notes, which are not sections of their own.
+REF_TARGET = re.compile(r"s(\d+)")
+#: A reference, for taking the wrapper off one this pack cannot reach. Regular
+#: rather than balanced, which is honest here and nowhere else: nothing else
+#: this parser emits can appear inside a reference.
+REF_MARKED = re.compile(r"⟦r(\d+):([^⟦⟧]*)⟧")
+
+
+#: A line that is nothing but a section marker.
+SECTION_LINE = re.compile(r"⟦#\d+⟧")
+#: An opening marker: this pack emits only references, but the shape is the one
+#: `grammar-blocks.ts` reads.
+MARKER = re.compile(r"⟦r\d+:")
+
+
+def plain_len(text):
+    """How much grammar a topic holds, counted in words rather than markup."""
+    text = "\n".join(l for l in text.split("\n") if not SECTION_LINE.fullmatch(l.strip()))
+    return len(MARKER.sub("", text).replace(CLOSE, ""))
+
+
+def unwrap_unreached(text, known):
+    """Un-link a reference whose section this pack does not ship, keeping the words.
+
+    A link to a page that is not there is worse than no link — it is a promise
+    the reader can press.
+    """
+    dropped = 0
+
+    def sub(m):
+        nonlocal dropped
+        if m.group(1) in known:
+            return m.group(0)
+        dropped += 1
+        return m.group(2)
+
+    return REF_MARKED.sub(sub, text), dropped
+
+
+def marked(node, refs):
+    """One element's text, with Smyth's `<ref>` elements kept as markers.
+
+    Whitespace is left exactly as the source has it, because the caller decides
+    where a line ends. Without `refs` this is `itertext()` and nothing else —
+    which is the flattening every measurement is taken over, how long a section
+    is and where a run too long to read is cut, so that carrying the references
+    can move neither.
+    """
+    if not refs:
+        return "".join(node.itertext())
+    out = []
+
+    def emit(n):
+        if n.tag == "ref":
+            m = REF_TARGET.fullmatch((n.get("target") or "").strip())
+            text = " ".join("".join(n.itertext()).split())
+            out.append(REF.format(m.group(1)) + text + CLOSE if m and text else text)
+            return
+        out.append(n.text or "")
+        for child in n:
+            emit(child)
+            out.append(child.tail or "")
+
+    emit(node)
+    return "".join(out)
+
+
+def flat(node, refs):
+    """`marked`, as one line with its spacing collapsed and its ends trimmed."""
+    return " ".join(marked(node, refs).split())
+
+
 def lead_of(node):
     """The bolded phrase Smyth opens a section with — its own name for it.
 
@@ -90,17 +178,18 @@ def lead_of(node):
 
 # --- text ------------------------------------------------------------------
 
-def cell_text(node):
+def cell_text(node, refs):
     """One table cell, on one line and with its internal spacing collapsed.
 
     Cells are joined with exactly two spaces and that is the only thing telling
     the reader's table parser where a column begins, so a cell may not contain
-    a double space of its own.
+    a double space of its own. A marker holds no space, so a reference inside a
+    cell cannot invent a column.
     """
-    return " ".join("".join(node.itertext()).split())
+    return flat(node, refs)
 
 
-def render(node, lines):
+def render(node, lines, refs):
     """Flatten one element into lines: prose joined, paradigm rows kept apart.
 
     Smyth's paradigms are TEI tables, but they are wrapped in the paragraph
@@ -110,7 +199,7 @@ def render(node, lines):
     """
     if node.tag == "table":
         for row in node.iter("row"):
-            cells = [cell_text(c) for c in row.findall("cell")]
+            cells = [cell_text(c, refs) for c in row.findall("cell")]
             while cells and not cells[-1]:
                 cells.pop()
             if any(cells):
@@ -121,7 +210,7 @@ def render(node, lines):
         return
 
     if node.find(".//table") is None:
-        text = " ".join("".join(node.itertext()).split())
+        text = flat(node, refs)
         if text:
             lines.append(text)
         return
@@ -137,17 +226,17 @@ def render(node, lines):
     for child in node:
         if child.tag == "table" or child.find(".//table") is not None:
             flush()
-            render(child, lines)
+            render(child, lines, refs)
         else:
-            buffer.append("".join(child.itertext()))
+            buffer.append(marked(child, refs))
         buffer.append(child.tail or "")
     flush()
 
 
-def section_text(section):
+def section_text(section, refs=False):
     lines = []
     for node in section["nodes"]:
-        render(node, lines)
+        render(node, lines, refs)
     return "\n".join(l for l in lines if l.strip())
 
 
@@ -427,7 +516,16 @@ def build(sections, min_chars, max_chars):
                 "title": title,
                 "family": family_of(piece_nums[0]),
                 "order": order,
-                "text": text,
+                # Every section's number, and the prose with its references
+                # linked. The two figures above are taken over `text` — the
+                # plain flattening — so a topic can neither be cut differently
+                # nor become a reading page because it now carries them.
+                #
+                # `numbered` trims the run's two ends exactly where the join
+                # above did. A table row whose first cell is empty opens with
+                # the two spaces that say so, and stripping it anywhere but the
+                # very front would turn that row into a line of prose.
+                "text": numbered(piece),
             }
             if examples:
                 topic["examples"] = examples
@@ -435,7 +533,31 @@ def build(sections, min_chars, max_chars):
                 topic["readingOnly"] = True
                 reading[topic_id] = piece_why
             topics.append(topic)
-    return topics, assigned, dropped, reading
+
+    # Only now is it known which sections the pack ships. Smyth references his
+    # dialect notes and his appendix, and neither is a section of its own.
+    reachable = {str(n) for n in assigned}
+    unreached = 0
+    for t in topics:
+        t["text"], n = unwrap_unreached(t["text"], reachable)
+        unreached += n
+    return topics, assigned, dropped, reading, unreached
+
+
+def numbered(piece):
+    """A run of sections as one extract: each one's number, then its prose.
+
+    Every section gets its marker, the first included — the reader decides what
+    to draw, and a number missing here is one no cross-reference can reach.
+    """
+    texts = [section_text(s, refs=True) for s in piece]
+    if texts:
+        texts[0] = texts[0].lstrip()
+        texts[-1] = texts[-1].rstrip()
+    return "\n".join(
+        SECTION.format(s["n"]) + ("\n" + t if t else "")
+        for s, t in zip(piece, texts)
+    )
 
 
 def split_run(secs, max_chars):
@@ -500,20 +622,27 @@ if __name__ == "__main__":
     print(f"parsed §{min(nums)}-{max(nums)} ({len(sections)} sections, "
           f"{len(gaps)} gaps)", file=sys.stderr)
 
-    topics, assigned, dropped, reading = build(sections, a.min_chars, a.max_chars)
+    topics, assigned, dropped, reading, unreached = build(
+        sections, a.min_chars, a.max_chars)
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     json.dump(topics, io.open(a.out, "w", encoding="utf8"),
               ensure_ascii=False, indent=1)
     taught = [t for t in topics if not t.get("readingOnly")]
     print(f"{len(topics)} topics ({len(taught)} taught, {len(reading)} reading) "
           f"-> {a.out}", file=sys.stderr)
+    linked = sum(len(REF_MARKED.findall(t["text"])) for t in topics)
+    print(f"cross-references: {linked} linked, {unreached} un-linked (no such section)",
+          file=sys.stderr)
     print("families: " + ", ".join(f"{k} {v}" for k, v in
           sorted(Counter(t["family"] for t in topics).items())), file=sys.stderr)
     print("reading by reason: " + ", ".join(f"{k} {v}" for k, v in
           sorted(Counter(reading.values()).items())), file=sys.stderr)
 
     # Of the taught topics: this is the shape a question set is written to.
-    lengths = sorted(len(t["text"]) for t in taught)
+    # The prose, not the markup around it: a line that is only a section marker
+    # goes whole, its newline with it, exactly as `plainText` drops it on the JS
+    # side. Carrying the book's own numbering moves no figure anywhere.
+    lengths = sorted(plain_len(t["text"]) for t in taught)
 
     def pct(p):
         return lengths[min(len(lengths) - 1, int(len(lengths) * p))] if lengths else 0

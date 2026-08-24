@@ -68,7 +68,21 @@ TABLE_END = OPEN + "/" + CLOSE
 #: arcuī <empty> keep off` loses its participle column and the gloss slides
 #: under the participles of every verb above it.
 EMPTY_CELL = OPEN + "." + CLOSE
+#: Where one numbered section of the book begins, on a line of its own. Bennett
+#: prints the number and the reader could not: a topic is a *run* of sections —
+#: `§ 20-22 First Declension` is three — and until this marker existed the run's
+#: number reached the page only as a subtitle, so "as given in § 270" pointed at
+#: something the prose never showed.
+SECTION = OPEN + "#{}" + CLOSE
+#: A cross-reference, `⟦r270:§ 270⟧`: the payload is the section pointed at, the
+#: content is what the book printed. Taken from Bennett's own `<a href="#sect270">`
+#: rather than found by a regex over the prose — the sibling books cite by bare
+#: number, so a regex that worked here would be wrong there.
+REF = OPEN + "r{}:"
 
+#: A ref rides in the style set as `r:270`, so it travels with the characters it
+#: covers exactly as bold and italic do.
+REF_STYLE = "r:"
 STYLE_ORDER = ("b", "i")
 TAG_STYLE = {"b": "b", "strong": "b", "i": "i", "em": "i"}
 
@@ -77,16 +91,28 @@ def escape(text):
     return text.replace(OPEN, OPEN * 2).replace(CLOSE, CLOSE * 2)
 
 
+#: An opening marker of any kind: `⟦b:`, `⟦i:`, `⟦r270:`, or a whole `⟦#270⟧`.
+MARKER = re.compile(r"⟦(?:[bi]:|r\d+[A-Za-z]?:|#\d+[A-Za-z]?⟧)")
+#: A line that is nothing but a section marker.
+SECTION_LINE = re.compile(r"⟦#\d+[A-Za-z]?⟧")
+
+
 def plain_len(text):
-    """How much grammar a topic holds, counted in words rather than markup."""
+    """How much grammar a topic holds, counted in words rather than markup.
+
+    A line that is only a section marker goes whole, its newline with it — the
+    same thing `plainText` does on the JS side, and the reason carrying the
+    book's own numbering moves no figure anywhere.
+    """
+    text = "\n".join(l for l in text.split("\n") if not SECTION_LINE.fullmatch(l.strip()))
     n, i = 0, 0
     while i < len(text):
         if text[i : i + 2] in (OPEN * 2, CLOSE * 2):   # an escaped bracket
             n, i = n + 1, i + 2
         elif text[i : i + 3] in (FULL_WIDTH, TABLE_END, EMPTY_CELL):
             i += 3
-        elif text[i] == OPEN and text[i + 2 : i + 3] == ":":
-            i += 3
+        elif text[i] == OPEN and (m := MARKER.match(text, i)):
+            i = m.end()
         elif text[i] == CLOSE:
             i += 1
         else:
@@ -159,6 +185,11 @@ class Buffer:
             for kind in reversed(STYLE_ORDER):
                 if kind in style:
                     text = f"{OPEN}{kind}:{text}{CLOSE}"
+            # Outside the emphasis: the link is what the finger lands on, and
+            # `§ ⟦i:270⟧` is one reference set in two ways rather than two.
+            refs = sorted(m for m in style if m.startswith(REF_STYLE))
+            if refs:
+                text = REF.format(refs[0][len(REF_STYLE):]) + text + CLOSE
             out.append(text)
             i = j
         return "".join(out)
@@ -257,6 +288,15 @@ class Reader(HTMLParser):
                 self.hide += 1
                 self.eat_dot = True
                 self.style_stack.append(self.style)
+                return
+            # Bennett links its own cross-references: "as given in
+            # <a href="#sect270">§ 270</a>". Taking the target from the anchor
+            # is exact and costs nothing, where a regex over the finished prose
+            # would have to guess — and would have to guess differently for
+            # every book, since Lane and Smyth cite by bare number.
+            m = re.fullmatch(r"#sect(\d+[A-Z]?)", a.get("href", ""))
+            if m:
+                self.push_style(REF_STYLE + m.group(1))
                 return
             self.style_stack.append(self.style)
             return
@@ -587,6 +627,59 @@ def numeric(n):
     return int(re.match(r"\d+", n).group(0))
 
 
+#: The three shapes the scanner below has to tell apart: a reference opening, an
+#: emphasis opening, and a marker that closes itself.
+REF_OPEN = re.compile(r"⟦r(\d+[A-Za-z]?):")
+STYLE_OPEN = re.compile(r"⟦[bi]:")
+SELF_CLOSING = re.compile(r"⟦(?:[=/.]|#\d+[A-Za-z]?)⟧")
+
+
+def unwrap_unreached(text, known):
+    """Un-link a reference whose section this pack does not ship, keeping the words.
+
+    Bennett links into its own apparatus as well as its own body, and the
+    apparatus is dropped. A link to a page that does not exist is worse than no
+    link — it is a promise the reader can press — so the wrapper comes off and
+    the sentence reads exactly as the book set it.
+
+    Balanced rather than regular: a reference may hold emphasis inside it
+    (`§ 78, 1, ⟦i:c⟧`), so the closing bracket is found by counting, not by the
+    first `⟧` along.
+    """
+    out, stack, dropped, i = [], [], 0, 0
+    while i < len(text):
+        if text[i : i + 2] in (OPEN * 2, CLOSE * 2):   # an escaped bracket
+            out.append(text[i : i + 2])
+            i += 2
+            continue
+        if m := SELF_CLOSING.match(text, i):
+            out.append(m.group(0))
+            i = m.end()
+            continue
+        if m := REF_OPEN.match(text, i):
+            reached = m.group(1) in known
+            stack.append(reached)
+            if reached:
+                out.append(m.group(0))
+            else:
+                dropped += 1
+            i = m.end()
+            continue
+        if m := STYLE_OPEN.match(text, i):
+            stack.append(True)
+            out.append(m.group(0))
+            i = m.end()
+            continue
+        if text[i] == CLOSE and stack:
+            if stack.pop():
+                out.append(CLOSE)
+            i += 1
+            continue
+        out.append(text[i])
+        i += 1
+    return "".join(out), dropped
+
+
 def build(secs):
     """Topics, plus an account of what happened to every source section.
 
@@ -614,18 +707,31 @@ def build(secs):
         heading = (g["heading"] or "").strip().rstrip(".")
         n0 = numeric(g["secs"][0]["n"])
         title = TITLE_OVERRIDE.get(n0) or titleise(heading)
-        text = "\n".join(s["raw"] for s in g["secs"] if s["raw"])
+        prose = "\n".join(s["raw"] for s in g["secs"] if s["raw"])
 
         # Why this page has no exercise, or None if it has one. Checked in the
         # order the book makes them true: a thin run inside prosody is prosody.
+        #
+        # Against the prose, before the section markers go in. A topic sitting
+        # near the threshold must not become a reading page because it gained
+        # five characters of its own numbering: what is measured here is how
+        # much grammar the run holds, and a number is not grammar.
         if g["part"] not in TEACHABLE_PARTS:
             why = "part-not-teachable"
         elif heading.upper() in SKIP_HEADINGS:
             why = "structural-heading"
-        elif plain_len(text) < 120:
+        elif plain_len(prose) < 120:
             why = "below-min-length"
         else:
             why = None
+
+        # Every section gets its marker, the first included: what the reader
+        # draws is its own decision, and a number missing from the data is one
+        # no cross-reference can reach.
+        text = "\n".join(
+            SECTION.format(s["n"]) + ("\n" + s["raw"] if s["raw"] else "")
+            for s in g["secs"]
+        )
 
         nums = [s["n"] for s in g["secs"]]
         ref = f"{nums[0]}" if len(nums) == 1 else f"{nums[0]}-{nums[-1]}"
@@ -654,7 +760,14 @@ def build(secs):
     topics.sort(key=lambda t: numeric(t["ref"].split("-")[0]))
     for i, t in enumerate(topics):
         t["order"] = (i + 1) * 10
-    return topics, assigned, reading
+
+    # Only now is it known which sections the pack ships, so only now can a
+    # reference be told from a promise.
+    dropped = 0
+    for t in topics:
+        t["text"], n = unwrap_unreached(t["text"], assigned)
+        dropped += n
+    return topics, assigned, reading, dropped
 
 
 def parse(src):
@@ -688,11 +801,14 @@ if __name__ == "__main__":
     print(f"parsed §{ints[0]}-{ints[-1]} ({len(sections)} sections, {len(gaps)} gaps)",
           file=sys.stderr)
 
-    topics, assigned, reading = build(sections)
+    topics, assigned, reading, unreached = build(sections)
     json.dump(topics, io.open(a.out, "w", encoding="utf8"), ensure_ascii=False, indent=1)
     taught = [t for t in topics if not t.get("readingOnly")]
     print(f"{len(topics)} topics ({len(taught)} taught, {len(reading)} reading) "
           f"-> {a.out}", file=sys.stderr)
+    linked = sum(len(REF_OPEN.findall(t["text"])) for t in topics)
+    print(f"cross-references: {linked} linked, {unreached} un-linked (no such section)",
+          file=sys.stderr)
     print("families: " + ", ".join(f"{k} {v}" for k, v in
           Counter(t["family"] for t in topics).items()), file=sys.stderr)
     print("reading by reason: " + ", ".join(f"{k} {v}" for k, v in
