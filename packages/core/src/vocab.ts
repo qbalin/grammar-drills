@@ -21,11 +21,11 @@ import type {
 export const MAX_CONTEXTS = 8;
 
 /**
- * What became of a sentence offered to a card. Four ways for it not to land,
+ * What became of a sentence offered to a card. Three ways for it not to land,
  * said apart, because a surface that reported them all as "saved" would flash a
  * confirmation for a press that did nothing.
  */
-export type ContextOutcome = "added" | "duplicate" | "full" | "off" | "missing";
+export type ContextOutcome = "added" | "duplicate" | "full" | "missing";
 
 /**
  * Two contexts are the same context when the prompt and the sentence fold alike.
@@ -187,16 +187,6 @@ export class VocabDeck {
     return this.p.vocabCards[cardId]?.contexts ?? [];
   }
 
-  /** Whether a recorded word keeps the sentence it was met in. */
-  keepsContext(): boolean {
-    return this.p.keepContext !== false;
-  }
-
-  setKeepContext(on: boolean): void {
-    this.p.keepContext = on;
-    this.touch();
-  }
-
   /**
    * Offer a card the sentence its word was met in.
    *
@@ -207,16 +197,16 @@ export class VocabDeck {
    * and its promise never to rewrite a card that already exists — a second
    * recording that reset a corrected citation would be a silent one.
    *
-   * The preference is checked here rather than at the call sites, so the phone
-   * and the terminal cannot drift apart on it, and the outcome comes back so a
-   * surface can say what actually happened instead of flashing a save.
+   * The outcome comes back so a surface can say what actually happened instead
+   * of flashing a save. A sentence a student does not want is taken off the
+   * card by hand — `deleteVocabContext` — which is a decision about the one
+   * sentence in front of them rather than about every sentence to come.
    */
   addVocabContext(
     cardId: string,
     context: NewVocabContext,
     now: Date = new Date(),
   ): ContextOutcome {
-    if (!this.keepsContext()) return "off";
     const card = this.p.vocabCards[cardId];
     if (!card) return "missing";
     const held = card.contexts ?? [];

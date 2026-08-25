@@ -2071,12 +2071,10 @@ export class Session {
     // `testCycles` is not one of those and goes back with the rest: the place a
     // topic had reached in its order is part of what the undone round did, so
     // an undone serve should genuinely un-serve, handing the same test back.
-    const keepContext = this.p.keepContext;
     const quotedOnly = this.p.quotedOnly;
     const quotedFirst = this.p.quotedFirst;
     const questionsPerRound = this.p.questionsPerRound;
     this.p = structuredClone(snapshot);
-    this.p.keepContext = keepContext;
     this.p.quotedOnly = quotedOnly;
     this.p.quotedFirst = quotedFirst;
     this.p.questionsPerRound = questionsPerRound;
@@ -2124,12 +2122,6 @@ export class Session {
   }
   vocabContexts(cardId: string): VocabContext[] {
     return this.deck.vocabContexts(cardId);
-  }
-  keepsContext(): boolean {
-    return this.deck.keepsContext();
-  }
-  setKeepContext(on: boolean): void {
-    this.deck.setKeepContext(on);
   }
   addVocabContext(
     cardId: string,

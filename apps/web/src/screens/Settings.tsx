@@ -62,8 +62,6 @@ export function SettingsSheet({
   onOpenVocab,
   sentenceCount,
   onOpenSentences,
-  keepContext,
-  onKeepContext,
   quotedOnly,
   onQuotedOnly,
   quotedFirst,
@@ -97,9 +95,6 @@ export function SettingsSheet({
   /** How many sentences the student has kept, and the way into them. */
   sentenceCount: number;
   onOpenSentences: () => void;
-  /** Whether a recorded word keeps the sentence it was met in. */
-  keepContext: boolean;
-  onKeepContext: () => void;
   quotedOnly: boolean;
   onQuotedOnly: () => void;
   /** Whether a topic's quoted questions all come before its written ones. */
@@ -166,20 +161,6 @@ export function SettingsSheet({
           way of saying *you are in this mode now* — what the marking button
           means — and this is a standing preference with an on and an off, which
           is the control a checkbox is. */}
-      <label className="field field--check">
-        <input
-          type="checkbox"
-          checked={keepContext}
-          onChange={onKeepContext}
-        />
-        <span className="field__label">Keep the sentence a word was met in</span>
-      </label>
-      <p className="field__hint">
-        When saving a {profile.l2.name} word for study by doing a long press on
-        it, also attach the sentence in which the word was met when reviewing
-        the newly created vocabulary card.
-      </p>
-
       <label className="field field--check">
         <input type="checkbox" checked={quotedOnly} onChange={onQuotedOnly} />
         <span className="field__label">Only show attested classical quotes</span>

@@ -2422,22 +2422,6 @@ describe("the sentence a held word was met in", () => {
     );
   });
 
-  it("keeps nothing once the student has turned it off", async () => {
-    const user = userEvent.setup();
-    const { session } = mount();
-
-    await user.click(screen.getByRole("button", { name: "Settings" }));
-    await user.click(screen.getByLabelText(/Keep the sentence/));
-    await user.click(screen.getByRole("button", { name: "Close" }));
-
-    await user.click(screen.getByRole("button", { name: "Reveal" }));
-    await holdWord("rosam");
-
-    // The word is still recorded — the preference is about the sentence.
-    expect(session.vocabCard("v-rosa")).toBeDefined();
-    expect(session.vocabContexts("v-rosa")).toEqual([]);
-    expect(session.progress().keepContext).toBe(false);
-  });
 });
 
 describe("a vocabulary card that remembers where the word was met", () => {
@@ -2487,14 +2471,19 @@ describe("a vocabulary card that remembers where the word was met", () => {
   it("offers no hint at all on a card with no sentence on it", async () => {
     const user = userEvent.setup();
     mount();
-    await user.click(screen.getByRole("button", { name: "Settings" }));
-    await user.click(screen.getByLabelText(/Keep the sentence/));
-    await user.click(screen.getByRole("button", { name: "Close" }));
-
     await user.click(screen.getByRole("button", { name: "Reveal" }));
     await holdWord("rosam");
-    await user.click(screen.getByRole("button", { name: "Review" }));
 
+    // A hold always keeps the line it was made in; the way to a bare card is
+    // taking that one sentence off it, which is a decision about the sentence
+    // in front of you rather than about every sentence to come.
+    await user.click(screen.getByRole("button", { name: "Edit" }));
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+    await user.click(within(sheet).getByRole("button", { name: /^Delete “/ }));
+    await user.click(within(sheet).getByRole("button", { name: "Confirm deletion" }));
+    await user.click(within(sheet).getByRole("button", { name: "Close" }));
+
+    await user.click(screen.getByRole("button", { name: "Review" }));
     expect(screen.queryByRole("button", { name: /hint/ })).toBeNull();
   });
 

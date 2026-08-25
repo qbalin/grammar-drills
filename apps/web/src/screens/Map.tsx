@@ -603,7 +603,7 @@ export function TopicSheet({
             it should not — that the bank is the book rather than the errand —
             but the preference is not an errand: an errand is what this sitting
             is for and is deliberately never written down, while this is written
-            beside `keepContext` because it is how the deck wants to be taught.
+            into the progress file because it is how the deck wants to be taught.
             A deck that will ask twelve sentences and offers ninety to read
             through is offering seventy-eight it will not ask. Worded apart from
             the practice button above it because the two silences refuse

@@ -809,20 +809,6 @@ export interface Progress {
    */
   citationsVersion?: number;
   /**
-   * Whether a recorded word keeps the sentence it was met in. Absent means yes,
-   * so only a student who turned it off carries this field at all.
-   *
-   * Here rather than beside the file, unlike the sync configuration: that is
-   * per-device because it holds a credential, and a credential is a fact about
-   * a machine. How you want your cards built is a fact about your deck, and a
-   * student who turns this off on the phone means it in the terminal too.
-   *
-   * `Mode` is deliberately absent from this file and points the other way, but
-   * for a stated reason — a remembered errand could hide a waiting pile across a
-   * reload. A standing preference hides nothing.
-   */
-  keepContext?: boolean;
-  /**
    * Whether a session serves only questions whose answer somebody wrote.
    *
    * Absent means no, which is what makes everything the default: a pack ships
@@ -849,15 +835,22 @@ export interface Progress {
    * will not ask. Nothing is destroyed by that — the answers already written on
    * those questions stay on the trail, and come back with them.
    *
-   * Beside `keepContext` and for its reason: how you want to be taught is a
-   * fact about your deck, not about the machine you happen to be holding.
+   * Here rather than beside the file, unlike the sync configuration: that is
+   * per-device because it holds a credential, and a credential is a fact about
+   * a machine. How you want to be taught is a fact about your deck, and a
+   * student who turns this on on the phone means it in the terminal too. The
+   * two preferences below sit here for that reason as well.
+   *
+   * `Mode` is deliberately absent from this file and points the other way, but
+   * for a stated reason — a remembered errand could hide a waiting pile across a
+   * reload. A standing preference hides nothing.
    */
   quotedOnly?: boolean;
   /**
    * Whether a topic's quoted questions are all served before any written one.
    *
-   * Absent means yes — `keepContext`'s shape rather than `quotedOnly`'s, and
-   * for the same reason it is the shape of a default that is worth having:
+   * Absent means yes, which is the other way round from `quotedOnly` above,
+   * and for the reason a default is worth having at all:
    * quotations are the scarce half of both packs and the half a student can
    * otherwise study for weeks without meeting. Only a student who turned this
    * off carries the field, and what they get instead is one shuffle over the
@@ -875,7 +868,7 @@ export interface Progress {
    * than the test holds.
    *
    * Absent means the whole test, which is what a round has always been. Only a
-   * student who shortened it carries the field — `keepContext`'s shape, and for
+   * student who shortened it carries the field — `quotedFirst`'s shape, and for
    * the same reason: the default is the thing worth having, and a file that
    * never touched the setting should read exactly as it did before the setting
    * existed.
@@ -887,9 +880,9 @@ export interface Progress {
    * phone down, and a student who would do one is doing more than a student who
    * does none.
    *
-   * Beside `keepContext` and `quotedOnly` and for their reason: how much you
-   * want to be asked at a time is a fact about how you study, not about the
-   * machine you are holding, so it travels with the deck to the terminal.
+   * Beside the two preferences above and for their reason: how much you want to
+   * be asked at a time is a fact about how you study, not about the machine you
+   * are holding, so it travels with the deck to the terminal.
    */
   questionsPerRound?: number;
   updatedAt: string;

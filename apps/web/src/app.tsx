@@ -1730,11 +1730,9 @@ export function App({ content, session, storage }: Props) {
    * question being answered, a line a card has already kept, or an answer on the
    * record.
    *
-   * The preference is read here as an early-out and not as the decision:
-   * `Session.addVocabContext` checks it too, deliberately, so that the phone and
-   * the terminal cannot drift apart on it. What the check buys *here* is that a
-   * sentence never rides onto an overlay to be shown back to a student who asked
-   * not to keep any.
+   * Undefined when there is no sentence to make one out of — a word typed from
+   * memory against an empty answer — which is the one case a hold saves the word
+   * alone.
    *
    * An index that is absent or below zero means nothing was pointed at, and the
    * field is left off rather than written as −1.
@@ -1753,7 +1751,7 @@ export function App({ content, session, storage }: Props) {
     index?: number,
     sectionId?: string,
   ): NewVocabContext | undefined => {
-    if (!session.keepsContext() || !sentence) return undefined;
+    if (!sentence) return undefined;
     return {
       prompt,
       sentence,
@@ -1768,8 +1766,8 @@ export function App({ content, session, storage }: Props) {
    *
    * Built here rather than in the screen because it is the card's business and
    * not the question's, and undefined the moment there is nothing honest to
-   * build: no question on screen, the preference turned off, or — on a revealed
-   * answer — no sentence of the student's own to point at.
+   * build: no question on screen, or — on a revealed answer — no sentence of
+   * the student's own to point at.
    */
   const contextFor = (
     where: "answer" | "submitted",
@@ -2109,7 +2107,7 @@ export function App({ content, session, storage }: Props) {
     // page it was read on.
     const back = under(overlay);
     const id = session.recordVocab(entry);
-    const kept = context ? session.addVocabContext(id, context) : "off";
+    const kept = context ? session.addVocabContext(id, context) : undefined;
     save();
     setOverlay(back);
     // A hold on a word already saved used to do nothing at all, and if it goes
@@ -2147,12 +2145,6 @@ export function App({ content, session, storage }: Props) {
 
   const removeContext = (cardId: string, at: string) => {
     session.deleteVocabContext(cardId, at);
-    save();
-    bump();
-  };
-
-  const toggleKeepContext = () => {
-    session.setKeepContext(!session.keepsContext());
     save();
     bump();
   };
@@ -3448,8 +3440,6 @@ export function App({ content, session, storage }: Props) {
             onOpenSentences={() =>
               setOverlay({ t: "sentence-list", back: { t: "settings" } })
             }
-            keepContext={session.keepsContext()}
-            onKeepContext={toggleKeepContext}
             quotedOnly={session.quotedOnly()}
             onQuotedOnly={toggleQuotedOnly}
             quotedFirst={session.quotedFirst()}

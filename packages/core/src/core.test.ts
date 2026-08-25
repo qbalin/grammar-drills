@@ -776,24 +776,14 @@ describe("Session vocabulary: the sentence a word was met in", () => {
     expect(s.vocabContexts(id).map((c) => c.at)).toEqual(full);
   });
 
-  it("attaches nothing once the student has turned it off", () => {
-    const { s, id } = start();
-    expect(s.keepsContext()).toBe(true);
-    s.setKeepContext(false);
-    expect(s.addVocabContext(id, reference, now)).toBe("off");
-    expect(s.vocabCard(id)?.contexts).toBeUndefined();
-    // The word itself is still recorded — the preference is about the sentence.
-    expect(s.vocabList()).toHaveLength(1);
-  });
-
-  it("holds the preference across a grade taken back", () => {
+  it("holds a standing preference across a grade taken back", () => {
     const { s, id } = start();
     const before = s.snapshot();
-    s.setKeepContext(false);
+    s.setQuotedOnly(true);
     s.gradeVocab(id, 3, now);
     // The undo reaches the grade it was offered for, and stops there.
     s.restore(before);
-    expect(s.keepsContext()).toBe(false);
+    expect(s.quotedOnly()).toBe(true);
   });
 
   it("tells apart two sentences attached in the same millisecond", () => {
@@ -872,10 +862,8 @@ describe("Session vocabulary: the sentence a word was met in", () => {
     const s = new Session(new Content(fixture, testProfile));
     const id = s.recordVocab(entry(), now);
     const old = s.progress();
-    delete old.keepContext; // as a file from before the preference
 
     const back = new Session(new Content(fixture, testProfile), old);
-    expect(back.keepsContext()).toBe(true);
     expect(back.vocabContexts(id)).toEqual([]);
     // Every one of these is safe on a card that has no contexts at all.
     back.moveVocabContext(id, "nothing", 1);

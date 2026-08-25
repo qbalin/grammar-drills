@@ -1427,22 +1427,6 @@ describe("the sentence a recorded word was met in", () => {
     app.unmount();
   });
 
-  it("keeps nothing once the preference is turned off", async () => {
-    const app = await graded();
-    await record(app, "amat", "Saved: amō");
-
-    // The vocabulary list is the vocabulary's own screen, and `a` is the
-    // standing preference — kept with the deck, so the phone obeys it too.
-    await press(app.stdin, app.lastFrame, "V", "Vocabulary — 1 word");
-    expect(app.lastFrame()).toContain("keeping sentences: on");
-    await press(app.stdin, app.lastFrame, "a", "keeping sentences: off");
-    await press(app.stdin, app.lastFrame, ESC, "your answer");
-
-    await record(app, "manibus", "Saved: manus, manūs (f)");
-    expect(app.session.vocabContexts("v-manus")).toEqual([]);
-    expect(app.session.progress().keepContext).toBe(false);
-    app.unmount();
-  });
 });
 
 describe("the sentences on a card, in the terminal", () => {

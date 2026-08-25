@@ -614,7 +614,7 @@ export function App({ session, content, storage }: Props) {
    * word picked out in it.
    */
   const contextFor = (form: string): NewVocabContext | undefined => {
-    if (!question || !session.keepsContext()) return undefined;
+    if (!question) return undefined;
     const site = locateWord(
       form,
       { answer: question.answer, submitted: submitted.trim() },
@@ -631,8 +631,7 @@ export function App({ session, content, storage }: Props) {
       // The page the line came off, written here though nothing in the terminal
       // draws it yet. A card is one record shared by the two surfaces, and a
       // word held on the phone keeping its topic while the same word typed here
-      // did not would be the two of them disagreeing about a card — the drift
-      // `keepsContext` is checked in both places to avoid.
+      // did not would be the two of them disagreeing about a card.
       ...(sectionId ? { sectionId } : {}),
     };
   };
@@ -641,7 +640,7 @@ export function App({ session, content, storage }: Props) {
   const keepWord = (entry: LemmaEntry, context?: NewVocabContext) => {
     const known = session.vocabCard(session.vocabIdFor(entry)) !== undefined;
     const id = session.recordVocab(entry);
-    const kept = context ? session.addVocabContext(id, context) : "off";
+    const kept = context ? session.addVocabContext(id, context) : undefined;
     save();
     // The word count in the status bar, and the vocabulary list itself, are
     // derived from the engine on every tick — so a new card has to bump it.
@@ -1089,20 +1088,6 @@ export function App({ session, content, storage }: Props) {
           setConfirmContextDelete(false);
           setFlash(null);
           setPhase({ t: "vocab-contexts", cardId: card.id, from: phase.from });
-        } else if (ch === "a") {
-          // The standing preference, kept with the deck rather than with this
-          // machine, so it holds on the phone too. The vocabulary list is where
-          // it lives because the terminal has no settings screen and this is
-          // the vocabulary's own.
-          const on = !session.keepsContext();
-          session.setKeepContext(on);
-          save();
-          setTick((n) => n + 1);
-          setFlash(
-            on
-              ? "Recording a word will keep the sentence it was met in."
-              : "Recording a word will keep the word alone.",
-          );
         } else if (ch === "m") {
           setConfirmDelete(false);
           openMap(phase.from);
@@ -1414,7 +1399,6 @@ export function App({ session, content, storage }: Props) {
           cards={vocab}
           cursor={vocabIndex}
           height={readerHeight}
-          keeping={session.keepsContext()}
         />
       )}
 
@@ -1657,7 +1641,6 @@ export function App({ session, content, storage }: Props) {
           phase.t === "vocab-review-front" &&
           hinted < session.vocabContexts(phase.cardId).length
         }
-        keeping={session.keepsContext()}
         // Greyed out with nothing due, the way the web app greys its switch.
         errand={dueNow > 0 ? mode : null}
       />
@@ -2174,13 +2157,10 @@ function VocabList({
   cards,
   cursor,
   height,
-  keeping,
 }: {
   cards: VocabCardState[];
   cursor: number;
   height: number;
-  /** Whether recording a word currently keeps its sentence too. */
-  keeping: boolean;
 }) {
   if (cards.length === 0) {
     return (
@@ -2200,7 +2180,7 @@ function VocabList({
     <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
       <Text color="gray">
         Vocabulary — {cards.length} {cards.length === 1 ? "word" : "words"}, word{" "}
-        {cursor + 1} of {cards.length} · keeping sentences: {keeping ? "on" : "off"}
+        {cursor + 1} of {cards.length}
       </Text>
       {visible.map((card) => {
         const on = cards[cursor]?.id === card.id;
@@ -2540,7 +2520,6 @@ function HintBar({
   undo,
   contexts,
   canHint,
-  keeping,
   errand,
 }: {
   ui: Profile["ui"];
@@ -2559,8 +2538,6 @@ function HintBar({
   contexts?: boolean;
   /** The card under review still has a hint left to give. */
   canHint?: boolean;
-  /** Whether recording a word currently keeps its sentence too. */
-  keeping?: boolean;
   /** The errand `x` would leave, or null when there is nothing to switch to. */
   errand?: Mode | null;
 }) {
@@ -2599,9 +2576,7 @@ function HintBar({
         : phase === "schedule"
           ? `↑ ↓ scroll · PgUp/PgDn page · m index${wordsHint} · Esc close · q quit`
         : phase === "vocab-list"
-          ? `↑ ↓ word · Enter edit${contextsHint} · a keep sentences: ${
-              keeping ? "on" : "off"
-            } · x delete · m index${wordsHint} · Esc close · q quit`
+          ? `↑ ↓ word · Enter edit${contextsHint} · x delete · m index${wordsHint} · Esc close · q quit`
         : phase === "vocab-contexts"
           ? `↑ ↓ sentence · K J move it · e edit · x delete · m index${wordsHint} · Esc back · q quit`
         : phase === "vocab-edit" || phase === "context-edit"
