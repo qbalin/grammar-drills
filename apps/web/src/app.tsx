@@ -1878,6 +1878,24 @@ export function App({ content, session, storage }: Props) {
     );
 
   /**
+   * A word held down in the citation on the back of a card.
+   *
+   * **No context, and none to be had.** The three holds above each carry the
+   * sentence the word was pointed at in; a citation is not one — it is the
+   * dictionary's line about the word, and the card's own kept sentences are
+   * about other lines entirely. Handing one of them over would file the word
+   * under a sentence it does not stand in, so nothing is handed over, exactly
+   * as `typedWordContext` hands nothing over when there is no question on
+   * screen. No page either, for the same reason: a citation came off no page.
+   *
+   * Holding the card's own headword therefore finds the card already there and
+   * says so rather than doubling it. An oblique form — the `rosae` of `rosa,
+   * rosae (f)` — folds to the same lemma and gets the same answer, which is the
+   * honest one: the word is already yours.
+   */
+  const holdCitationWord = (word: string) => takeWord(word);
+
+  /**
    * A word held down in an answer already on the record.
    *
    * The attempt's own reference, not the question's answer today: a pack's
@@ -2022,13 +2040,15 @@ export function App({ content, session, storage }: Props) {
   };
 
   /**
-   * A single word onto the clipboard, from the sheet it was double-clicked open
-   * in — the inflected form as it stood, which is what the app has and the
-   * dictionary or message being pasted into has not.
+   * A word onto the clipboard, from the sheet it was double-clicked open in —
+   * the inflected form as it stood, which is what the app has and the dictionary
+   * or message being pasted into has not. A card's citation goes the same way:
+   * it is not a word but it behaves like one here, being short, being the whole
+   * of its block, and having no standing name of its own.
    *
-   * It names itself in the flash, because unlike the three texts it has no
-   * standing name: `rosam copied.` says which of the sentence's words went,
-   * which a fixed "The word copied." could not.
+   * Which is why it names itself in the flash: `rosam copied.` says which of the
+   * sentence's words went, and `rosa, rosae (f) copied.` which line did, where a
+   * fixed "The word copied." could say neither.
    */
   const copyForm = (form: string) => copyToClipboard(form, form);
 
@@ -2940,8 +2960,10 @@ export function App({ content, session, storage }: Props) {
                   onGrade={(r) => gradeVocab(phase.cardId, r)}
                   onEdit={() => setOverlay({ t: "vocab-edit", cardId: phase.cardId })}
                   onHoldWord={holdSavedWord}
+                  onHoldCitationWord={holdCitationWord}
                   onInspectWord={inspectWord}
                   onCopy={copyKept}
+                  onCopyCitation={() => copyForm(card.citation)}
                   topicLink={topicLink}
                 />
               );

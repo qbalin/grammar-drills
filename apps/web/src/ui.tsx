@@ -597,6 +597,69 @@ export function Sentence({
 }
 
 /**
+ * A dictionary citation's tag, split off from the words it stands after.
+ *
+ * A citation is *almost* a sentence — `rosa, rosae (f)`, `sum, esse, fuī` — and
+ * the difference is the tail. `(f)` is a gender, `(pron)` a part of speech, and
+ * neither is a word of the language: `stripPunctuation` would hand `f` to the
+ * dictionary, which for Latin answers `filius, fīliī (m) — a son`. So a tag left
+ * holdable would not merely fail to do anything; it would confidently do the
+ * wrong thing, which is worse than the gesture not being there.
+ *
+ * The split is by index rather than by capture, so `head + tag` is the string
+ * that came in and the spacing `Sentence` reproduces is the citation's own.
+ *
+ * A tag is one language's habit and not a fact about citations: Greek's ninety
+ * thousand carry none at all — `εἰμί, ἔσομαι`, `ἵημι, ἥσω, ἧκα, εἷκα` — and
+ * there this is a no-op with every token a real word. Which is why it is written
+ * as a shape rather than as a list of the abbreviations one pack happens to
+ * print.
+ */
+export function splitCitation(text: string): { head: string; tag: string } {
+  const tag = text.match(/\([^()]*\)\s*$/);
+  return tag?.index === undefined
+    ? { head: text, tag: "" }
+    : { head: text.slice(0, tag.index), tag: text.slice(tag.index) };
+}
+
+/**
+ * A citation, word by word, on the same two gestures a sentence answers to.
+ *
+ * The back of a vocabulary card drew this line as plain text while the sentences
+ * under it were fully holdable — so `rosae` could be asked what it is two inches
+ * below the citation and not in it. A citation is where the oblique form a card
+ * is filed under is actually printed, which makes it a likely place to want the
+ * question asked.
+ *
+ * No marks and no marking mode. A card is not an attempt, and a citation is the
+ * dictionary's line rather than anybody's answer, so there is nowhere for a
+ * student's emphasis on it to live.
+ */
+export function Citation({
+  text,
+  onHold,
+  onInspect,
+}: {
+  text: string;
+  /** A word held down: record it. No index rides along — see the tag above. */
+  onHold?: (word: string) => void;
+  /** A word double-clicked: look it up rather than record it. */
+  onInspect?: (word: string) => void;
+}) {
+  const { head, tag } = splitCitation(text);
+  return (
+    <>
+      <Sentence
+        text={head}
+        onHold={onHold && ((word) => onHold(word))}
+        onInspect={onInspect}
+      />
+      {tag}
+    </>
+  );
+}
+
+/**
  * The copy button a text carries when the text cannot be lifted by hand.
  *
  * It earns its place because most of what it stands beside cannot be copied by

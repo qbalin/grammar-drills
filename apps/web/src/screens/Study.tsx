@@ -1,13 +1,23 @@
 import { useEffect, useState, type ReactNode } from "react";
-import type {
-  AttemptMarks,
-  Question,
-  Rating,
-  SentenceCardState,
-  VocabCardState,
-  VocabContext,
+import {
+  words,
+  type AttemptMarks,
+  type Question,
+  type Rating,
+  type SentenceCardState,
+  type VocabCardState,
+  type VocabContext,
 } from "@lang-tutor/core";
-import { comesBack, CopyButton, GradeBar, interval, l2Attrs, Sentence } from "../ui.js";
+import {
+  Citation,
+  comesBack,
+  CopyButton,
+  GradeBar,
+  interval,
+  l2Attrs,
+  Sentence,
+  splitCitation,
+} from "../ui.js";
 import { profile } from "../pack.js";
 
 /**
@@ -408,8 +418,10 @@ export function VocabReview({
   onGrade,
   onEdit,
   onHoldWord,
+  onHoldCitationWord,
   onInspectWord,
   onCopy,
+  onCopyCitation,
   topicLink,
 }: {
   card: VocabCardState;
@@ -430,8 +442,25 @@ export function VocabReview({
    * the word alone cannot say which `rosam` of two was under the thumb.
    */
   onHoldWord: (word: string, kept: VocabContext, index: number) => void;
+  /**
+   * A word held down in the **citation** rather than in one of the sentences.
+   *
+   * Its own prop because it can name no context and must not be made to invent
+   * one: a citation is the dictionary's line, not a line this word was met in,
+   * and picking one of the card's kept sentences to file it under would be
+   * filing it under a sentence it does not appear in. So it arrives with the
+   * word alone, and no index either — the word is not a position in anything a
+   * card keeps.
+   */
+  onHoldCitationWord: (word: string) => void;
   /** Double-click: look the word up rather than record it, as on a question. */
   onInspectWord: (word: string) => void;
+  /**
+   * The citation onto the clipboard. It is owed for the reason `onCopy` below
+   * is: the citation's words are `.word` spans now, and `.word` gives up text
+   * selection to keep iOS's magnifier off the hold.
+   */
+  onCopyCitation: () => void;
   /**
    * The page a kept sentence came off, drawn under it — or nothing.
    *
@@ -478,9 +507,25 @@ export function VocabReview({
         {revealed && (
           <div className="compare">
             <div className="compare__block compare__block--reference">
-              <div className="compare__label">Citation</div>
+              <div className="compare__head">
+                <div className="compare__label">Citation</div>
+                {/* The citation names itself rather than being announced as
+                    "the citation", because a card's back can carry several
+                    copy buttons and the blocks below name their sentences. */}
+                <CopyButton what={`“${card.citation}”`} onCopy={onCopyCitation} />
+              </div>
+              {/* Word by word, on the two gestures the sentences below answer
+                  to. The oblique form a card is filed under — the `rosae` of
+                  `rosa, rosae (f)` — is printed here and nowhere else on the
+                  screen, so this was the one place it could be read and not
+                  asked about. The gender in brackets stays plain: see
+                  `splitCitation`. */}
               <div {...l2Attrs} className="compare__text compare__text--reference">
-                {card.citation}
+                <Citation
+                  text={card.citation}
+                  onHold={onHoldCitationWord}
+                  onInspect={onInspectWord}
+                />
               </div>
               {(card.pos || card.declension) && (
                 <div className="note">
@@ -549,10 +594,15 @@ export function VocabReview({
             ))}
           </div>
         )}
-        {/* Only where there is a sentence to use it on. The citation above is
-            plain text, and a card that has kept none would be promising a
-            gesture with nothing to act on. */}
-        {revealed && contexts.length > 0 && <p className="hint">{GESTURE_HINT}</p>}
+        {/* Only where there is a word to use it on — which the citation itself
+            now usually is, so a card that has kept no sentence is no longer a
+            card the hint lies to. The *head* is measured and not the whole
+            citation: a hand-edited `(f)` has a word in it by the tokenizer's
+            reckoning and none by `Citation`'s, and it is `Citation` that draws
+            the spans a press can land on. */}
+        {revealed &&
+          (words(splitCitation(card.citation).head).length > 0 ||
+            contexts.length > 0) && <p className="hint">{GESTURE_HINT}</p>}
       </div>
       <div className="linkrow">
         <button onClick={onEdit}>✎ edit this word</button>

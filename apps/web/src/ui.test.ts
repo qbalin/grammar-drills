@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { comesBack, interval, until } from "./ui.js";
+import { comesBack, interval, splitCitation, until } from "./ui.js";
 
 /**
  * The two ways of saying when something comes back.
@@ -52,5 +52,44 @@ describe("interval and comesBack", () => {
     expect(until(now, on(9 * DAY))).toBe("9d");
     expect(until(now, on(3 * MINUTE))).toBe("3m");
     expect(until(now, now)).toBe("now");
+  });
+});
+
+/**
+ * The tail of a citation that is not a word of the language.
+ *
+ * Half the point is that `head + tag` is the string that came in: the head goes
+ * to `Sentence`, which reproduces the spacing it is handed, so a split that ate
+ * the space before the bracket would quietly reflow the line it was showing.
+ */
+describe("splitCitation", () => {
+  const cases: [string, string, string][] = [
+    // Latin's habit: a gender or a part of speech in brackets at the end.
+    ["rosa, rosae (f)", "rosa, rosae ", "(f)"],
+    ["aes, aeris (n)", "aes, aeris ", "(n)"],
+    ["sum (pron)", "sum ", "(pron)"],
+    // No tag at all — a verb's principal parts, and every Greek citation there
+    // is. The split is then a no-op and every token is a real word.
+    ["sum, esse, fuī", "sum, esse, fuī", ""],
+    ["εἰμί, ἔσομαι", "εἰμί, ἔσομαι", ""],
+    ["ἵημι, ἥσω, ἧκα, εἷκα", "ἵημι, ἥσω, ἧκα, εἷκα", ""],
+    // A bracket that is not at the end is not a tag; nothing is taken off.
+    ["ferō (irreg), ferre", "ferō (irreg), ferre", ""],
+    // Hand-edited down to nothing but the tag: no head, and so no word to press.
+    ["(f)", "", "(f)"],
+    ["", "", ""],
+  ];
+
+  it("takes the tag off the end, and only off the end", () => {
+    for (const [text, head, tag] of cases) {
+      expect(splitCitation(text)).toEqual({ head, tag });
+    }
+  });
+
+  it("puts the string back together, spacing and all", () => {
+    for (const [text] of cases) {
+      const { head, tag } = splitCitation(text);
+      expect(head + tag).toBe(text);
+    }
   });
 });

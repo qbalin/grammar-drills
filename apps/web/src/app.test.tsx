@@ -153,6 +153,11 @@ const fixture: ContentData = {
     manus: [{ lemma: "manus", citation: "manus, manūs (f)", gloss: "hand", pos: "noun", rank: 157 }],
     // Words that appear in the answers above, so they can be held down there.
     rosam: [{ lemma: "rosa", citation: "rosa, rosae (f)", gloss: "rose", pos: "noun", rank: 900 }],
+    // The two forms `rosa`'s own citation prints. A real form index holds them
+    // for the same reason it holds `rosam`, and a card's citation is now a place
+    // a word is pointed at rather than only read.
+    rosa: [{ lemma: "rosa", citation: "rosa, rosae (f)", gloss: "rose", pos: "noun", rank: 900 }],
+    rosae: [{ lemma: "rosa", citation: "rosa, rosae (f)", gloss: "rose", pos: "noun", rank: 900 }],
     amat: [
       { lemma: "amō", citation: "amō, amāre, amāvī, amātum", gloss: "to love", pos: "verb", rank: 125 },
     ],
@@ -236,6 +241,31 @@ const sentences = () =>
   Array.from(document.querySelectorAll(".compare__text")).map((el) =>
     el.textContent?.trim(),
   );
+
+/**
+ * The citation on the back of a vocabulary card, or nothing where the card is
+ * still face down.
+ *
+ * Found by its label rather than by its classes: a card's citation block and its
+ * blocks holding a reference sentence are the same `.compare__block--reference`,
+ * and only the label tells them apart. Read as text for the reason `sentences`
+ * above is — the citation is word spans now, so `getByText` cannot see it whole.
+ */
+const citation = () =>
+  screen
+    .queryByText("Citation")
+    ?.closest(".compare__block")
+    ?.querySelector(".compare__text")
+    ?.textContent?.trim();
+
+/** The words the citation offers a press, in order — the tag is not one. */
+const citationWords = () =>
+  Array.from(
+    screen
+      .queryByText("Citation")
+      ?.closest(".compare__block")
+      ?.querySelectorAll<HTMLElement>(".word") ?? [],
+  ).map((el) => el.dataset.word);
 
 /** The span carrying one word of a sentence on screen. */
 const wordSpan = (word: string) =>
@@ -1766,10 +1796,10 @@ describe("vocabulary", () => {
     await user.click(screen.getByRole("button", { name: "Review" }));
     expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
     expect(screen.getByText("king")).toBeDefined();
-    expect(screen.queryByText("rex, rēgis")).toBeNull(); // still hidden
+    expect(citation()).toBeUndefined(); // still hidden
 
     await user.click(screen.getByRole("button", { name: "Show" }));
-    expect(screen.getByText("rex, rēgis")).toBeDefined();
+    expect(citation()).toBe("rex, rēgis");
 
     await user.click(screen.getByRole("button", { name: /Good/ }));
     expect(session.vocabCard("v-rex")?.fsrs.reps).toBe(1);
@@ -2452,7 +2482,7 @@ describe("a vocabulary card that remembers where the word was met", () => {
     expect(document.querySelector(".compare")).toBeNull();
 
     await user.click(screen.getByRole("button", { name: "Show" }));
-    expect(screen.getByText("rosa, rosae (f)")).toBeDefined();
+    expect(citation()).toBe("rosa, rosae (f)");
     expect(screen.getByText("The girl loves the rose.")).toBeDefined();
     expect(sentences()).toContain("Puella rosam amat.");
     // The held word is picked out in the sentence it was held in — `.word--b`
@@ -2565,12 +2595,98 @@ describe("a vocabulary card that remembers where the word was met", () => {
     expect(await navigator.clipboard.readText()).toBe("Puella rosam amat.");
   });
 
-  it("says how the gestures work, only where there is a sentence to use them on", async () => {
+  /**
+   * The citation, which used to be the one line on this screen that could be
+   * read and not asked about.
+   *
+   * It is where the oblique form a card is filed under is actually printed —
+   * the `rosae` of `rosa, rosae (f)` stands nowhere else on the card — so a
+   * student who wanted to know what it was had to leave and type it out.
+   */
+  it("looks up a word in the citation, on the double-click a sentence answers to", async () => {
+    const user = userEvent.setup();
+    const { session } = await reviewOne(user);
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    await inspectWord("rosae");
+    const sheet = screen.getByRole("dialog", { name: "rosa, rosae (f)" });
+    expect(within(sheet).getByText("rose")).toBeDefined();
+
+    // Asking is not answering: the card is still ungraded underneath.
+    await user.click(within(sheet).getByRole("button", { name: "Close" }));
+    expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
+    expect(session.vocabCard("v-rosa")?.fsrs.reps).toBe(0);
+  });
+
+  it("holds a word in the citation, and finds the card it is already on", async () => {
+    const user = userEvent.setup();
+    const { session } = await reviewOne(user);
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    await holdWord("rosae");
+
+    // The oblique form folds to the lemma the card is filed under, so the press
+    // meets the card it was made on rather than writing a second one.
+    expect(screen.getByText("rosa, rosae (f) is already saved")).toBeDefined();
+    // And nothing is filed with it. A citation is the dictionary's line, not a
+    // line this word was met in, so the card keeps the one sentence it had.
+    expect(session.vocabContexts("v-rosa")).toHaveLength(1);
+  });
+
+  /**
+   * The gender in brackets is a tag, not a word — and it is not merely useless
+   * as one. `stripPunctuation` reads `(f)` as `f`, which the real Latin index
+   * answers with `filius, fīliī (m) — a son`, so a citation left whole would
+   * hand a student a confident sheet about the wrong word.
+   */
+  it("offers the citation's words and not its gender tag", async () => {
     const user = userEvent.setup();
     await reviewOne(user);
-    // Behind Show with the sentences, since that is what it is about.
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    expect(citationWords()).toEqual(["rosa,", "rosae"]);
+    // Still on screen, and still read — just not pressable.
+    expect(citation()).toBe("rosa, rosae (f)");
+  });
+
+  it("copies the citation, which its own words can no longer be selected to lift", async () => {
+    const user = userEvent.setup();
+    await reviewOne(user);
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    await user.click(screen.getByRole("button", { name: "Copy “rosa, rosae (f)”" }));
+    expect(await navigator.clipboard.readText()).toBe("rosa, rosae (f)");
+  });
+
+  it("says how the gestures work, wherever there is a word to use them on", async () => {
+    const user = userEvent.setup();
+    await reviewOne(user);
+    // Behind Show with the words it is about.
     expect(screen.queryByText(/Hold a word to save it/)).toBeNull();
     await user.click(screen.getByRole("button", { name: "Show" }));
+    expect(screen.getByText(/Hold a word to save it/)).toBeDefined();
+  });
+
+  it("says so on a card that has kept no sentence, the citation being enough", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+
+    // A hold always keeps the line it was made in, so a bare card is one whose
+    // sentence has been taken off — the route the hint test above takes.
+    await user.click(screen.getByRole("button", { name: "Edit" }));
+    const sheet = screen.getByRole("dialog", { name: "Edit word" });
+    await user.click(within(sheet).getByRole("button", { name: /^Delete “/ }));
+    await user.click(within(sheet).getByRole("button", { name: "Confirm deletion" }));
+    await user.click(within(sheet).getByRole("button", { name: "Close" }));
+
+    await user.click(screen.getByRole("button", { name: "Review" }));
+    await user.click(screen.getByRole("button", { name: "Show" }));
+
+    // It used to be silent here, and rightly: there was nothing to press. The
+    // citation is now something to press, so the hint is owed.
+    expect(citationWords()).toEqual(["rosa,", "rosae"]);
     expect(screen.getByText(/Hold a word to save it/)).toBeDefined();
   });
 });
@@ -3443,7 +3559,7 @@ describe("taking things back", () => {
 
     await user.click(screen.getByRole("button", { name: "Undo last grade" }));
     expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
-    expect(screen.getByText("rex, rēgis")).toBeDefined(); // still revealed
+    expect(citation()).toBe("rex, rēgis"); // still revealed
     expect(session.vocabCard("v-rex")?.fsrs.reps).toBe(0);
   });
 });
