@@ -194,15 +194,15 @@ describe("the grammar map cache", () => {
     expect(scheduled(s, now)).toBe(0);
   });
 
-  it("drops it when a topic is starred, which nothing else could tell it", () => {
-    // The star is the one fact on the map that no grade and no clock moves, so
+  it("drops it when a topic is bookmarked, which nothing else could tell it", () => {
+    // The bookmark is the one fact on the map no grade and no clock moves, so
     // it is the one that would sit stale behind an unbumped revision.
     const s = built();
     const now = new Date("2026-01-01T00:00:00Z");
     const before = s.grammarMap(now);
-    s.star("ag1");
+    s.bookmark("ag1");
     expect(s.grammarMap(now)).not.toBe(before);
-    expect(s.grammarMap(now).find((t) => t.sectionId === "ag1")!.starred).toBe(true);
+    expect(s.grammarMap(now).find((t) => t.sectionId === "ag1")!.bookmarked).toBe(true);
   });
 
   it("re-reads it as the clock moves, since `due` is about the clock", () => {
@@ -1098,7 +1098,7 @@ describe("Session sentences", () => {
   });
 });
 
-describe("Session: the index, the star and the pile", () => {
+describe("Session: the index, the bookmark and the pile", () => {
   const now = new Date("2026-01-01T00:00:00Z");
   const topic = (s: Session, id: string) =>
     s.grammarMap(now).find((t) => t.sectionId === id)!;
@@ -1120,22 +1120,47 @@ describe("Session: the index, the star and the pile", () => {
 
   it("marks a topic to come back to, and takes the mark off again", () => {
     const s = new Session(new Content(fixture, testProfile));
-    expect(topic(s, "ag1").starred).toBe(false);
-    expect(s.starredTopics(now)).toEqual([]);
+    expect(topic(s, "ag1").bookmarked).toBe(false);
+    expect(s.bookmarkedTopics(now)).toEqual([]);
 
-    s.star("ag1");
-    expect(s.isStarred("ag1")).toBe(true);
-    expect(topic(s, "ag1").starred).toBe(true);
-    expect(s.starredTopics(now).map((t) => t.sectionId)).toEqual(["ag1"]);
-    // Starring twice is not two stars.
-    s.star("ag1");
-    expect(s.progress().starred).toEqual(["ag1"]);
+    s.bookmark("ag1");
+    expect(s.isBookmarked("ag1")).toBe(true);
+    expect(topic(s, "ag1").bookmarked).toBe(true);
+    expect(s.bookmarkedTopics(now).map((t) => t.sectionId)).toEqual(["ag1"]);
+    // Bookmarking twice is not two bookmarks.
+    s.bookmark("ag1");
+    expect(s.progress().bookmarked).toEqual(["ag1"]);
 
-    s.unstar("ag1");
-    expect(s.isStarred("ag1")).toBe(false);
-    expect(s.starredTopics(now)).toEqual([]);
-    // Unstarring what was never starred is not an error.
-    s.unstar("ag2");
+    s.unbookmark("ag1");
+    expect(s.isBookmarked("ag1")).toBe(false);
+    expect(s.bookmarkedTopics(now)).toEqual([]);
+    // Unbookmarking what was never bookmarked is not an error.
+    s.unbookmark("ag2");
+  });
+
+  it("reads the bookmarks of a file that called them stars", () => {
+    // The one migration this feature needed, and the whole of it: the same
+    // ids, in the same order, under the word that says what the mark is.
+    const old = { ...emptyProgress(), starred: ["ag2", "ag1"] };
+    const s = new Session(new Content(fixture, testProfile), old);
+
+    expect(s.isBookmarked("ag1")).toBe(true);
+    expect(s.isBookmarked("ag2")).toBe(true);
+    expect(s.progress().bookmarked).toEqual(["ag2", "ag1"]);
+    // Folded and dropped, not folded and left behind to be read twice.
+    expect((s.progress() as { starred?: unknown }).starred).toBeUndefined();
+  });
+
+  it("loses neither name when a file has been through both builds", () => {
+    /*
+     * Sync moves whole files by `updatedAt` and knows nothing of fields, so a
+     * file can arrive carrying marks made under each name. Either one dropped
+     * is a mark the student made and would not get back.
+     */
+    const both = { ...emptyProgress(), bookmarked: ["ag1"], starred: ["ag1", "ag2"] };
+    const s = new Session(new Content(fixture, testProfile), both);
+
+    expect(s.progress().bookmarked).toEqual(["ag1", "ag2"]);
   });
 
   /**
@@ -1258,12 +1283,12 @@ describe("Session: the index, the star and the pile", () => {
     });
   });
 
-  it("keeps the starred shelf in book order, whatever order it was filled in", () => {
+  it("keeps the bookmarks in book order, whatever order they were filled in", () => {
     const s = new Session(new Content(fixture, testProfile));
-    s.star("ag2");
-    s.star("ag1");
-    expect(s.progress().starred).toEqual(["ag2", "ag1"]);
-    expect(s.starredTopics(now).map((t) => t.sectionId)).toEqual(["ag1", "ag2"]);
+    s.bookmark("ag2");
+    s.bookmark("ag1");
+    expect(s.progress().bookmarked).toEqual(["ag2", "ag1"]);
+    expect(s.bookmarkedTopics(now).map((t) => t.sectionId)).toEqual(["ag1", "ag2"]);
   });
 
   it("takes a topic out of the review pile, and only an enrolment puts it back", () => {
@@ -1296,18 +1321,18 @@ describe("Session: the index, the star and the pile", () => {
     expect(topic(s, "ag1").scheduled).toBe(true);
   });
 
-  it("keeps the answers and the star through a dismissal", () => {
+  it("keeps the answers and the bookmark through a dismissal", () => {
     // It deletes a schedule, not a syllabus. Everything the student wrote and
     // everything they marked survives, which is what makes it undoable by
     // practising the topic again and saying yes when it asks.
     const s = new Session(new Content(fixture, testProfile));
     s.recordAttempt("ag1", { prompt: "p", answer: "a", submitted: "a", rating: 3 }, now);
     s.enrolTopic("ag1", 4, now);
-    s.star("ag1");
+    s.bookmark("ag1");
 
     s.dismissTopic("ag1");
     expect(s.attemptsFor("ag1")).toHaveLength(1);
-    expect(s.isStarred("ag1")).toBe(true);
+    expect(s.isBookmarked("ag1")).toBe(true);
     // And the topic is still one that has been studied, so practising it does
     // not teach it again from the top.
     expect(s.everGraded("ag1")).toBe(true);

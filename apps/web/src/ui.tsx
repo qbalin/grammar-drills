@@ -732,6 +732,35 @@ export function TopicLink({
   );
 }
 
+/**
+ * The bookmark, filled when it is set and drawn in outline when it is not.
+ *
+ * The one drawing in this app, and it is one under protest: every other icon
+ * here is a character, which is why they all take the type's own colour and
+ * weight without being told to. There is no character for this. Unicode's
+ * nearest filled-and-hollow pair is a flag, and a flag says something else —
+ * this is a page marked to come back to, in a book, and the shape a reader
+ * knows for that is the ribbon.
+ *
+ * `currentColor` on the fill and the stroke, so it takes `--gold` where it is a
+ * marker and `--text-dim` where it is a control, exactly as a glyph would; and
+ * `aria-hidden`, because in all three of its homes the label is beside it or on
+ * the button around it.
+ */
+export function BookmarkIcon({ on }: { on: boolean }) {
+  return (
+    <svg className="bookmark" viewBox="0 0 16 16" aria-hidden="true">
+      <path
+        d="M4 2h8v12l-4-3-4 3z"
+        fill={on ? "currentColor" : "none"}
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export function Toast({
   message,
   action,

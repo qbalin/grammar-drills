@@ -684,19 +684,19 @@ export interface Progress {
    */
   practise?: PractiseRun | null;
   /**
-   * Topics the student marked to come back to, in the order they were marked.
+   * Topics the student bookmarked, in the order they were marked.
    *
    * Filed under **primary** topic ids, like everything else here: a further
-   * grammar's section that teaches two primary topics stars both, and the star
-   * is still there when the other book is opened. A file that never starred
-   * anything does not carry the field.
+   * grammar's section that teaches two primary topics bookmarks both, and the
+   * bookmark is still there when the other book is opened. A file that never
+   * bookmarked anything does not carry the field.
    *
    * The one thing on a topic that the app does not derive. Everything else the
    * index shows — what is due, what has been answered, what keeps being failed
    * — is read off the record of study; this is the student saying "this one
    * matters to me", which nothing can work out for them.
    */
-  starred?: string[];
+  bookmarked?: string[];
   /**
    * Topics the die never lands on.
    *
@@ -705,7 +705,7 @@ export interface Progress {
    * not want them coming up again, however few of their questions are left. So
    * they can be taken off the die, one at a time, from the topic's own sheet.
    *
-   * Filed under **primary** topic ids like `starred`, and for the same reason:
+   * Filed under **primary** topic ids like `bookmarked`, and for the same reason:
    * a further grammar's section that teaches two primary topics takes both off,
    * and the exclusion is still there when the other book is opened. A file that
    * has never excluded anything does not carry the field.
@@ -931,6 +931,22 @@ export interface LegacyProgress {
    * assigned to, which is not a claim worth making about a saved file.
    */
   version: number;
+  /**
+   * The bookmarks, under the name they were written with.
+   *
+   * Folded into `bookmarked` and deleted — the same list, the same ids, the
+   * same meaning. Only the word changed, from a rating to what the mark had
+   * always been: a shortlist of pages to come back to.
+   *
+   * The fold is a union rather than an assignment, because sync moves whole
+   * files by `updatedAt` and a device could in principle carry both names.
+   * What that same whole-file sync cannot be saved from is the other order: an
+   * old build that wins a race writes back a file with no `bookmarked` in it,
+   * and the marks made since go with it. That is what renaming a persisted
+   * field costs under a sync that knows no fields, it costs nothing once both
+   * devices are on this build, and it is not worth a schema version to avoid.
+   */
+  starred?: string[];
   /**
    * Sections a placement probe passed. It folded into `topicMastery` at the top
    * band, and there is no mastery to fold into: dropped.

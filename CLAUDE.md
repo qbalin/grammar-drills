@@ -175,14 +175,15 @@ how much of each book is reachable. Its gates are numbered apart from the
 coverage report's on purpose — a low figure there is a gap in the *table*, not a
 hole in the pack.
 
-**Progress does not move.** `topicCards`, `starred`, `seenTests` and `attempts`
+**Progress does not move.** `topicCards`, `bookmarked`, `seenTests` and `attempts`
 stay filed under the *primary* grammar's topic ids whichever book is open,
 because that is the syllabus the questions were written against. A further
 grammar's section reads the progress of the topics it teaches
 (`Content.primaryTopicsFor`), and a round opened on one is graded against the
 topic its test belongs to — never against the section it was reached through,
-which would file a card under an id no question belongs to. `star`, `unstar`
-and `dismissTopic` all map through `primaryTopicsFor` for that reason.
+which would file a card under an id no question belongs to. `bookmark`,
+`unbookmark` and `dismissTopic` all map through `primaryTopicsFor` for that
+reason.
 
 So switching books is a view change: no migration, no schema version, no second
 store to keep in step. `Progress.grammarId` records which book is open; a file
@@ -192,8 +193,8 @@ book.
 The consequence to state rather than discover: **two sections of one book that
 teach the same topic of the other move in lockstep.** There is one bank of
 dative questions, so there is one answer to give about them; a finer one would
-be invented. Starring either starts both, and dismissing either takes both off
-the pile, for the same reason. `packages/core/src/grammars.test.ts` asserts it
+be invented. Bookmarking either marks both, and dismissing either takes both
+off the pile, for the same reason. `packages/core/src/grammars.test.ts` asserts it
 so it cannot drift into a surprise.
 
 `questionId` (core) is *not* what the **syllabus** is keyed by — see above — and

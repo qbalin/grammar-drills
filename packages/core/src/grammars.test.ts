@@ -212,20 +212,20 @@ describe("a pack with more than one grammar", () => {
     expect(s.parkedRound("review")).toBeNull();
   });
 
-  it("files a star under the primary topic, whichever book set it", () => {
-    // Stars go where everything else here goes. Set through the second book,
+  it("files a bookmark under the primary topic, whichever book set it", () => {
+    // Bookmarks go where everything else here goes. Set through the second book,
     // read back through the first, and nothing on disk names the second.
     const s = session();
     s.setGrammar("second");
-    s.star("sg-100-nouns-a");
-    expect(s.progress().starred).toEqual(["tg-020-nouns"]);
+    s.bookmark("sg-100-nouns-a");
+    expect(s.progress().bookmarked).toEqual(["tg-020-nouns"]);
     expect(JSON.stringify(s.progress())).not.toContain("sg-100");
 
     s.setGrammar("tg");
-    expect(s.isStarred("tg-020-nouns")).toBe(true);
-    s.unstar("tg-020-nouns");
+    expect(s.isBookmarked("tg-020-nouns")).toBe(true);
+    s.unbookmark("tg-020-nouns");
     s.setGrammar("second");
-    expect(s.isStarred("sg-100-nouns-a")).toBe(false);
+    expect(s.isBookmarked("sg-100-nouns-a")).toBe(false);
   });
 
   it("shows work done in one book when the other is opened", () => {
@@ -260,12 +260,12 @@ describe("a pack with more than one grammar", () => {
       graded.get("sg-110-nouns-b")!.answered,
     );
 
-    // And the star with them: it is filed under the one topic they share, so
+    // And the bookmark with them: it is filed under the one topic they share, so
     // marking either marks both.
-    s.star("sg-100-nouns-a");
-    const starred = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
-    expect(starred.get("sg-100-nouns-a")!.starred).toBe(true);
-    expect(starred.get("sg-110-nouns-b")!.starred).toBe(true);
+    s.bookmark("sg-100-nouns-a");
+    const marked = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
+    expect(marked.get("sg-100-nouns-a")!.bookmarked).toBe(true);
+    expect(marked.get("sg-110-nouns-b")!.bookmarked).toBe(true);
 
     // And the die with it, for the same reason. Taking one half off the die
     // while the other went on being rolled would offer the same bank of
@@ -285,11 +285,11 @@ describe("a pack with more than one grammar", () => {
     expect(orphan.questions).toBe(0);
     expect(orphan.scheduled).toBe(false);
     expect(s.serveTest("sg-300-orphan")).toBeUndefined();
-    // And it cannot be starred: there is no primary topic to file the mark
+    // And it cannot be bookmarked: there is no primary topic to file the mark
     // under, which is the same silence as its having no questions.
-    s.star("sg-300-orphan");
-    expect(s.isStarred("sg-300-orphan")).toBe(false);
-    expect(s.progress().starred).toBeUndefined();
+    s.bookmark("sg-300-orphan");
+    expect(s.isBookmarked("sg-300-orphan")).toBe(false);
+    expect(s.progress().bookmarked).toBeUndefined();
     // Nor taken off the die: with no questions behind it, the die would never
     // have rolled it in the first place.
     s.excludeFromRoll("sg-300-orphan");

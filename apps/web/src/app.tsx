@@ -659,7 +659,7 @@ export function App({ content, session, storage }: Props) {
 
   // The engine is mutated in place, so views derive from it on every tick.
   const families = useMemo(() => session.familyProgress(), [session, tick]);
-  const starred = useMemo(() => session.starredTopics(), [session, tick]);
+  const bookmarked = useMemo(() => session.bookmarkedTopics(), [session, tick]);
   const stats = useMemo(() => session.stats(), [session, tick]);
   const dueNow = stats.due;
   /*
@@ -1408,15 +1408,25 @@ export function App({ content, session, storage }: Props) {
     );
   };
 
-  /** Mark a topic to come back to, or take the mark off. */
-  const toggleStar = (topic: TopicProgress) => {
+  /**
+   * Bookmark a topic, or take the bookmark off.
+   *
+   * Takes the two fields it needs rather than a `TopicProgress`, because the
+   * reader has no such thing: it is holding a `GrammarSection`, and the id and
+   * the title are the whole of what this errand wants from either.
+   */
+  const toggleBookmark = (target: { sectionId: string; title: string }) => {
     navigator.vibrate?.(8);
-    const on = session.isStarred(topic.sectionId);
-    if (on) session.unstar(topic.sectionId);
-    else session.star(topic.sectionId);
+    const on = session.isBookmarked(target.sectionId);
+    if (on) session.unbookmark(target.sectionId);
+    else session.bookmark(target.sectionId);
     save();
     bump();
-    flash(on ? `Unstarred “${topic.title}”.` : `Starred “${topic.title}”.`);
+    flash(
+      on
+        ? `Removed the bookmark from “${target.title}”.`
+        : `Bookmarked “${target.title}”.`,
+    );
   };
 
   /**
@@ -3134,7 +3144,7 @@ export function App({ content, session, storage }: Props) {
         {overlay?.t === "map" && (
           <MapSheet
             families={families}
-            starred={starred}
+            bookmarked={bookmarked}
             quotedOnly={session.quotedOnly()}
             currentFamily={
               families.find((f) =>
@@ -3172,7 +3182,7 @@ export function App({ content, session, storage }: Props) {
                 onQuestions={() =>
                   setOverlay({ t: "questions", sectionId: topic.sectionId })
                 }
-                onStar={() => toggleStar(topic)}
+                onBookmark={() => toggleBookmark(topic)}
                 onToggleRoll={() => toggleRoll(topic)}
                 onMark={markPast(topic.sectionId)}
                 onHoldWord={holdPastWord(topic.sectionId)}

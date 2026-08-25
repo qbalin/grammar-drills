@@ -141,15 +141,15 @@ export interface TopicProgress {
   /** How many the bank holds — no one round ever exhausts it. */
   questions: number;
   /**
-   * The student marked this one to come back to. The one fact on a topic that
-   * is not derived from the record of study.
+   * The student bookmarked this one. The one fact on a topic that is not
+   * derived from the record of study.
    */
-  starred: boolean;
+  bookmarked: boolean;
   /**
    * The student took this one off the die — see `Progress.noRoll`.
    *
    * The second fact here that is not derived from the record of study, and the
-   * mirror of `starred`: one says come back to this, the other says stop
+   * mirror of `bookmarked`: one says come back to this, the other says stop
    * offering me this at random. Neither touches the review pile.
    */
   noRoll: boolean;
@@ -430,6 +430,27 @@ export class Session {
     delete old.bookAt;
     delete old.bookAtByGrammar;
 
+    /*
+     * The star became a bookmark: the same list, the same ids, the same
+     * meaning, under the word that says what the mark is. A rating was never
+     * what it did — nothing here rates a topic — and what it did do was pin a
+     * page to come back to, in a book.
+     *
+     * A union rather than an assignment. Sync moves whole files by `updatedAt`
+     * and knows nothing of fields, so a file can reach this having been through
+     * two devices, and dropping either name would drop a mark the student made.
+     * The order is the old name after the new one, so a returning file's marks
+     * keep the order they were made in.
+     */
+    if (old.starred) {
+      const marked = this.p.bookmarked ?? [];
+      this.p.bookmarked = [
+        ...marked,
+        ...old.starred.filter((id) => !marked.includes(id)),
+      ];
+      delete old.starred;
+    }
+
     // "Quiz me" is gone, and so is the book's sweep. A round either opened is
     // still four sentences on a topic, and what it was shown as is the honest
     // answer — the same reading a round written before `via` existed gets.
@@ -462,7 +483,7 @@ export class Session {
    * Open a different grammar of the same language.
    *
    * Nothing is migrated and nothing is recomputed, because nothing moved: the
-   * cards, the stars and the answers stay filed under the primary's topics,
+   * cards, the bookmarks and the answers stay filed under the primary's topics,
    * and this changes only which book's topics are drawn over them.
    */
   setGrammar(id: string): void {
@@ -530,52 +551,54 @@ export class Session {
   }
 
   /**
-   * Mark a topic to come back to, or unmark it.
+   * Bookmark a topic, or take the bookmark off.
    *
    * Filed under the primary topics the section teaches, like every other fact
-   * about a topic here, so a star survives a book switch and a section of a
-   * further grammar that teaches two of the primary's stars both — the lockstep
-   * `grammars.test.ts` asserts for the rest of progress.
+   * about a topic here, so a bookmark survives a book switch and a section of a
+   * further grammar that teaches two of the primary's bookmarks both — the
+   * lockstep `grammars.test.ts` asserts for the rest of progress.
    *
    * A section the crosswalk does not reach has no primary topic to file under
-   * and cannot be starred. That is the same silence as its having no questions:
-   * there is nothing there to come back to.
+   * and cannot be bookmarked. That is the same silence as its having no
+   * questions: there is nothing there to come back to. A screen that offers the
+   * mark has to ask before it draws the control, because this returns having
+   * done nothing.
    */
-  star(sectionId: string): void {
+  bookmark(sectionId: string): void {
     const ids = this.content.primaryTopicsFor(sectionId);
-    const starred = this.p.starred ?? [];
-    const added = ids.filter((id) => !starred.includes(id));
+    const marked = this.p.bookmarked ?? [];
+    const added = ids.filter((id) => !marked.includes(id));
     if (added.length === 0) return;
-    this.p.starred = [...starred, ...added];
+    this.p.bookmarked = [...marked, ...added];
     this.touch();
   }
 
-  unstar(sectionId: string): void {
+  unbookmark(sectionId: string): void {
     const ids = new Set(this.content.primaryTopicsFor(sectionId));
-    const starred = this.p.starred ?? [];
-    const left = starred.filter((id) => !ids.has(id));
-    if (left.length === starred.length) return;
-    this.p.starred = left;
+    const marked = this.p.bookmarked ?? [];
+    const left = marked.filter((id) => !ids.has(id));
+    if (left.length === marked.length) return;
+    this.p.bookmarked = left;
     this.touch();
   }
 
   /**
-   * Whether the star is on. Any of the section's primary topics, matching
-   * `star`, which sets them all: the two only disagree on a file where one of
-   * them was starred through a book that teaches them separately.
+   * Whether the bookmark is on. Any of the section's primary topics, matching
+   * `bookmark`, which sets them all: the two only disagree on a file where one
+   * of them was marked through a book that teaches them separately.
    */
-  isStarred(sectionId: string): boolean {
-    const starred = this.p.starred;
-    if (!starred || starred.length === 0) return false;
+  isBookmarked(sectionId: string): boolean {
+    const marked = this.p.bookmarked;
+    if (!marked || marked.length === 0) return false;
     return this.content
       .primaryTopicsFor(sectionId)
-      .some((id) => starred.includes(id));
+      .some((id) => marked.includes(id));
   }
 
   /**
    * Take a topic off the die, or put it back.
    *
-   * `star` and `unstar` in every respect — the same fan-out over
+   * `bookmark` and `unbookmark` in every respect — the same fan-out over
    * `primaryTopicsFor`, the same absent-field-means-empty — because it is the
    * same kind of fact: something the student said about a topic that nothing
    * could work out for them. What it is *not* is a dismissal. The review pile is
@@ -606,7 +629,7 @@ export class Session {
 
   /**
    * Whether the die skips this one. Any of the section's primary topics, to
-   * match `excludeFromRoll`, which sets them all — the reading `isStarred` takes
+   * match `excludeFromRoll`, which sets them all — the reading `isBookmarked` takes
    * for the same reason.
    */
   isExcludedFromRoll(sectionId: string): boolean {
@@ -678,8 +701,8 @@ export class Session {
    * The way back from a topic that keeps coming due and is not what the student
    * needs — the same way back `deleteVocab` is for a word saved by a stray
    * press, and it deletes the same kind of thing: the scheduling card, and only
-   * that. The answer trail stays, the star stays, the questions were never the
-   * student's to delete.
+   * that. The answer trail stays, the bookmark stays, and the questions were
+   * never the student's to delete.
    *
    * Nothing is hidden by it and nothing is suspended. The topic is on the index
    * as it always was, and practising it *offers* to put it back when the round
@@ -731,7 +754,7 @@ export class Session {
    * screen that made this offer. A topic enrolled with no round behind it takes
    * the 3 that `enrolRating` falls back to.
    *
-   * Files under every primary topic the section teaches, like `star` and
+   * Files under every primary topic the section teaches, like `bookmark` and
    * `dismissTopic`: a further grammar's section that teaches two of the
    * primary's enrols both, which is the lockstep `grammars.test.ts` asserts.
    * A section the crosswalk does not reach enrols nothing — the same silence
@@ -1957,7 +1980,7 @@ export class Session {
   }
 
   private computeGrammarMap(now: Date): TopicProgress[] {
-    const starred = new Set(this.p.starred ?? []);
+    const marked = new Set(this.p.bookmarked ?? []);
     const noRoll = new Set(this.p.noRoll ?? []);
     return this.content.sections(this.grammarId).map((s) => {
       /*
@@ -1983,8 +2006,8 @@ export class Session {
         scheduled: cards.length > 0,
         answered,
         questions,
-        // Any of them, matching `star`, which sets them all.
-        starred: primary.some((id) => starred.has(id)),
+        // Any of them, matching `bookmark`, which sets them all.
+        bookmarked: primary.some((id) => marked.has(id)),
         // Likewise `excludeFromRoll`.
         noRoll: primary.some((id) => noRoll.has(id)),
         lapses: cards.reduce((n, c) => n + (c.lapses ?? 0), 0),
@@ -1993,14 +2016,14 @@ export class Session {
   }
 
   /**
-   * The starred topics, in book order — the section the index pins at its top.
+   * The bookmarked topics, in book order — what the index pins at its top.
    *
-   * Out of `grammarMap` rather than out of `starred` directly, so a star set in
-   * one book is drawn here as the *open* book's section, with that book's title
-   * and reference on it.
+   * Out of `grammarMap` rather than out of `bookmarked` directly, so a mark set
+   * in one book is drawn here as the *open* book's section, with that book's
+   * title and reference on it.
    */
-  starredTopics(now: Date = new Date()): TopicProgress[] {
-    return this.grammarMap(now).filter((t) => t.starred);
+  bookmarkedTopics(now: Date = new Date()): TopicProgress[] {
+    return this.grammarMap(now).filter((t) => t.bookmarked);
   }
 
   /**

@@ -6,7 +6,7 @@ import type {
   FamilyProgress,
   TopicProgress,
 } from "@lang-tutor/core";
-import { Sentence, Sheet, ago, cycleEmphasis, l2Attrs } from "../ui.js";
+import { BookmarkIcon, Sentence, Sheet, ago, cycleEmphasis, l2Attrs } from "../ui.js";
 import { fold, profile } from "../pack.js";
 
 /** One section of another book, as the topic sheet shows it. */
@@ -34,7 +34,7 @@ export interface Elsewhere {
  *
  * It is also the *only* way onto a topic. There is no walk through the book to
  * be resumed and no cursor to be placed, so every round begins with somebody
- * choosing a row here — which is why the starred topics are pinned above the
+ * choosing a row here — which is why the bookmarked topics are pinned above the
  * families, and why the search box is the first thing under the heading.
  */
 
@@ -162,12 +162,14 @@ function TopicRows({
             <span className="row__title">
               <span className="row__ref">§ {t.ref}</span>
               {t.title}
-              {/* The star is a marker here, not a control: the row is one big
-                  button onto the sheet, and a second target inside it is a
-                  thumb's worth of ambiguity. Toggling it is the sheet's job. */}
-              {t.starred && (
-                <span className="row__star" aria-label="starred">
-                  ★
+              {/* The bookmark is a marker here, not a control: the row is one
+                  big button onto the sheet, and a second target inside it is a
+                  thumb's worth of ambiguity. Setting it belongs to the two
+                  screens that are already about this one topic — the sheet and
+                  the reader. */}
+              {t.bookmarked && (
+                <span className="row__bookmark" aria-label="bookmarked">
+                  <BookmarkIcon on />
                 </span>
               )}
             </span>
@@ -182,7 +184,7 @@ function TopicRows({
 
 export function MapSheet({
   families,
-  starred,
+  bookmarked,
   quotedOnly,
   onClose,
   onPick,
@@ -194,8 +196,8 @@ export function MapSheet({
   switching,
 }: {
   families: FamilyProgress[];
-  /** The topics marked to come back to, in book order. */
-  starred: TopicProgress[];
+  /** The topics bookmarked, in book order. */
+  bookmarked: TopicProgress[];
   /** Whether the counts on the rows are the quoted questions alone. */
   quotedOnly: boolean;
   onClose: () => void;
@@ -211,19 +213,21 @@ export function MapSheet({
   /*
    * Which family the index opens on.
    *
-   * The family being studied, else the one holding the first starred topic,
+   * The family being studied, else the one holding the first bookmarked topic,
    * else the one holding the first topic with any answers on it, else the top
    * of the book. This used to be "the first family with a percentage above
    * zero", which was the same idea — put the student somewhere they have been —
    * expressed through the score. The score is gone; the idea was never the
    * score's.
    */
-  const firstStarred = families.find((f) => f.topics.some((t) => t.starred))?.id;
+  const firstBookmarked = families.find((f) =>
+    f.topics.some((t) => t.bookmarked),
+  )?.id;
   const firstStudied = families.find((f) =>
     f.topics.some((t) => t.answered > 0),
   )?.id;
   const [open, setOpen] = useState<string | null>(
-    currentFamily ?? firstStarred ?? firstStudied ?? families[0]?.id ?? null,
+    currentFamily ?? firstBookmarked ?? firstStudied ?? families[0]?.id ?? null,
   );
   // Counted, not quoted: a hardcoded 135 would go stale the day a topic moves.
   // Split, because a page the book sets no exercise on is not a topic anybody
@@ -337,22 +341,25 @@ export function MapSheet({
         * The index is a table of contents and it is ordered the way the book is
         * — which is right for finding a topic by name and useless for coming
         * back to the four you are working on. Pinned rather than sorted into the
-        * families, because a star is not a property of the grammar; it is a
-        * shortlist, and a shortlist that has to be assembled by scrolling is not
-        * one. Absent entirely until something is starred, so nobody meets an
-        * empty shelf on their first launch.
+        * families, because a bookmark is not a property of the grammar; it is
+        * a shortlist, and a shortlist that has to be assembled by scrolling is
+        * not one. Absent entirely until something is bookmarked, so nobody meets
+        * an empty shelf on their first launch.
         */}
-      {!matches && starred.length > 0 && (
+      {!matches && bookmarked.length > 0 && (
         <div className="family">
           <div className="family__head family__head--static">
             <span className="family__main">
-              <span className="family__name">★ Starred</span>
+              <span className="family__name">
+                <BookmarkIcon on />
+                Bookmarked
+              </span>
               <span className="family__sub">
-                {starred.length} topic{starred.length === 1 ? "" : "s"}
+                {bookmarked.length} topic{bookmarked.length === 1 ? "" : "s"}
               </span>
             </span>
           </div>
-          <TopicRows topics={starred} quotedOnly={quotedOnly} onPick={onPick} />
+          <TopicRows topics={bookmarked} quotedOnly={quotedOnly} onPick={onPick} />
         </div>
       )}
 
@@ -455,8 +462,8 @@ function Colophon() {
  * that stayed put. The walk is gone: staying put is what studying is, and moving
  * on means coming back here and choosing.
  *
- * Reading the grammar leaves nothing behind. The star and the die toggle are
- * the two things that outlive the sheet without starting a round.
+ * Reading the grammar leaves nothing behind. The bookmark and the die toggle
+ * are the two things that outlive the sheet without starting a round.
  *
  * The dismissal used to be the third, at the foot under a "Reviews" heading and
  * behind two presses. It is on the graded screen alone now: taking a topic out
@@ -472,7 +479,7 @@ export function TopicSheet({
   onRead,
   onDrill,
   onQuestions,
-  onStar,
+  onBookmark,
   onToggleRoll,
   onMark,
   onHoldWord,
@@ -488,8 +495,8 @@ export function TopicSheet({
   onRead: () => void;
   onDrill: () => void;
   onQuestions: () => void;
-  /** Mark this topic to come back to, or take the mark off. */
-  onStar: () => void;
+  /** Bookmark this topic, or take the bookmark off. */
+  onBookmark: () => void;
   /** Take it off the die, or put it back — see `Progress.noRoll`. */
   onToggleRoll: () => void;
   onMark?: (at: string, marks: AttemptMarks) => void;
@@ -571,19 +578,29 @@ export function TopicSheet({
       <div className="actions">
         {/* A shortlist of one's own, kept beside the doing rather than in a
             screen of its own: the moment you know a topic is one to come back
-            to is the moment you are looking at it. */}
-        <button className="btn" onClick={onStar} aria-pressed={topic.starred}>
-          {topic.starred ? "★ Starred" : "☆ Star this topic"}
-        </button>
-        {/* The star's opposite number, and it belongs on the same row: one says
-            come back to this, the other says stop handing it to me at random.
-            No confirmation, unlike everything else that outlives this sheet —
-            nothing is deleted by it and the button is its own undo.
+            to is the moment you are looking at it. The reader's header carries
+            the same toggle, for the same reason one step further in — that
+            moment is at least as likely to arrive mid-page as it is here.
 
-            Words rather than the header's 🎲. A colour emoji is set in the
-            system's own font and is not the register the star's ☆ is in, and it
-            took the label onto a second line beside it. The glyph earns its
-            place in the status bar, where there is no room for a word.
+            Icon and label as one child. `.btn` is a grid, so two children of it
+            are two rows, and the bookmark would sit above its own word. */}
+        <button className="btn" onClick={onBookmark} aria-pressed={topic.bookmarked}>
+          <span>
+            <BookmarkIcon on={topic.bookmarked} />
+            {topic.bookmarked ? "Bookmarked" : "Bookmark this topic"}
+          </span>
+        </button>
+        {/* The bookmark's opposite number, and it belongs on the same row: one
+            says come back to this, the other says stop handing it to me at
+            random. No confirmation, unlike everything else that outlives this
+            sheet — nothing is deleted by it and the button is its own undo.
+
+            Words rather than the header's 🎲, which is the one thing on this row
+            that could have been drawn and is not. A colour emoji is set in the
+            system's own font rather than the app's, so it takes neither the
+            weight of the label beside it nor a colour from the theme, and it
+            took the label onto a second line. The glyph earns its place in the
+            status bar, where there is no room for a word.
 
             Only where there is a die to be on. A topic the preference leaves
             with nothing to serve is one the die already skips, so offering to

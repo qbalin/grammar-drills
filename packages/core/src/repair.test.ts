@@ -49,30 +49,46 @@ describe("repairing a progress file", () => {
   });
 
   it("costs the damaged record rather than the year", () => {
-    const kept = { ...emptyProgress(), starred: ["ag1"], attempts: null };
+    const kept = { ...emptyProgress(), bookmarked: ["ag1"], attempts: null };
     const session = open(kept);
 
     expect(session.repaired).toEqual(["attempts"]);
-    // The star is still there. A file damaged in one record must not be treated
+    // The mark is still there. A file damaged in one record must not be treated
     // as a file that cannot be read at all.
-    expect(session.isStarred("ag1")).toBe(true);
+    expect(session.isBookmarked("ag1")).toBe(true);
   });
 
-  it("puts back a star list that is not a list, and drops what is not an id", () => {
-    // One of the two fields here that are arrays, so one of the two that would
+  it("puts back a bookmark list that is not a list, and drops what is not an id", () => {
+    // One of the fields here that are arrays, so one of the ones that would
     // take `.includes` on something that has no such method.
-    const notAList = repairProgress({ ...emptyProgress(), starred: "ag1" });
-    expect(notAList.repaired).toEqual(["starred"]);
-    expect(notAList.progress.starred).toEqual([]);
+    const notAList = repairProgress({ ...emptyProgress(), bookmarked: "ag1" });
+    expect(notAList.repaired).toEqual(["bookmarked"]);
+    expect(notAList.progress.bookmarked).toEqual([]);
 
-    const mixed = repairProgress({ ...emptyProgress(), starred: ["ag1", 7, null] });
-    expect(mixed.repaired).toEqual(["starred"]);
-    expect(mixed.progress.starred).toEqual(["ag1"]);
+    const mixed = repairProgress({ ...emptyProgress(), bookmarked: ["ag1", 7, null] });
+    expect(mixed.repaired).toEqual(["bookmarked"]);
+    expect(mixed.progress.bookmarked).toEqual(["ag1"]);
   });
 
-  it("repairs the die's exclusions on the same terms as the stars", () => {
+  it("holds the bookmarks' old name to the same shape as the new one", () => {
+    /*
+     * `starred` is checked here rather than where it is folded, because repair
+     * runs first and `{ ...empty, ...raw }` would otherwise hand the migration
+     * a number to call `.filter` on. Without this the fold is one damaged file
+     * away from the crash the whole module exists to prevent.
+     */
+    const notAList = repairProgress({ ...emptyProgress(), starred: 3 });
+    expect(notAList.repaired).toEqual(["starred"]);
+    expect((notAList.progress as { starred?: unknown }).starred).toEqual([]);
+
+    const mixed = repairProgress({ ...emptyProgress(), starred: ["ag1", null] });
+    expect(mixed.repaired).toEqual(["starred"]);
+    expect((mixed.progress as { starred?: unknown }).starred).toEqual(["ag1"]);
+  });
+
+  it("repairs the die's exclusions on the same terms as the bookmarks", () => {
     // The second list, and it takes `.includes` on the first roll rather than
-    // on the first star lookup — a different screen, the same crash.
+    // on the first bookmark lookup — a different screen, the same crash.
     const notAList = repairProgress({ ...emptyProgress(), noRoll: 3 });
     expect(notAList.repaired).toEqual(["noRoll"]);
     expect(notAList.progress.noRoll).toEqual([]);

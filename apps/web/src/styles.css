@@ -386,6 +386,18 @@ span.status__title {
   background: var(--ink-raised);
 }
 
+/* Sized in `em` so it takes the type size of whatever it sits in, the way a
+   glyph would, and set inline so it sits beside a word rather than above one.
+   Note that `.btn` is a grid: a button carrying this and a label must pass them
+   as one child, or the grid makes two rows of them. */
+.bookmark {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  margin-right: 0.35em;
+}
+
 /* --- the question card ---------------------------------------------------- */
 
 .study {
@@ -1740,9 +1752,9 @@ span.status__title {
   opacity: 0.5;
 }
 
-/* The starred shelf's heading. The same line as a family's, without the press:
-   it is a heading over a pinned list rather than an accordion, so it must not
-   look like one that has failed to open. */
+/* The bookmarks' heading. The same line as a family's, without the press: it is
+   a heading over a pinned list rather than an accordion, so it must not look
+   like one that has failed to open. */
 .family__head--static {
   cursor: default;
 }
@@ -1752,12 +1764,19 @@ span.status__title {
   padding: 0 1.1rem 0.7rem;
 }
 
-/* The star on a starred row: a marker after the title, not a control. Gold
-   rather than the accent, so it does not read as the row being selected. */
-.row__star {
+/* The bookmark on a marked row: a marker after the title, not a control. Gold
+   rather than the accent, so it does not read as the row being selected. No
+   size of its own — `.bookmark` is already an em of whatever it sits in, and
+   here that is the title. */
+.row__bookmark {
   margin-left: 0.4rem;
   color: var(--gold);
-  font-size: 0.85em;
+}
+
+/* The one place the bookmark carries no label, so the gap it keeps for one is
+   a gap after the end of the line. */
+.row__bookmark .bookmark {
+  margin-right: 0;
 }
 
 /* --- lists ---------------------------------------------------------------- */

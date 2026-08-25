@@ -402,7 +402,7 @@ a walk back through the index.
 
 The CLI's index keys become buttons on the topic sheet — **Practise these 17**
 leading, then **Read § 63-66**, and two marks of your own beside each other: the
-star, and **Never roll this**. The dismissal used to be there too, at the
+bookmark, and **Never roll this**. The dismissal used to be there too, at the
 foot; it is on the review itself now, which is where a topic proves it is not
 what you need.
 
@@ -640,13 +640,13 @@ Nothing about the schedule changed. You still grade yourself 1–4 and that stil
 drives [FSRS](https://github.com/open-spaced-repetition/ts-fsrs); the score that
 went was a second, parallel number that no review ever read.
 
-**Two marks of your own.** A topic can be **starred** — it pins to a shelf above
-the families on the index, in book order, and it is the one fact about a topic
-the app does not derive from your record of study. And a topic that keeps coming
+**Two marks of your own.** A topic can be **bookmarked** — it pins to a shelf
+above the families on the index, in book order, and it is the one fact about a
+topic the app does not derive from your record of study. And a topic that keeps coming
 back when it is not what you need can be taken **out of the review pile**:
 `⊘ stop reviewing this` on the review itself, which is the moment you actually
 want it, or `x` twice on the terminal's index. It deletes the scheduling card and
-nothing else — the answers stay, the star stays — and practising the topic
+nothing else — the answers stay, the bookmark stays — and practising the topic
 *offers* to put it back when the round lands. The grammar half of *Delete this
 word*, and it deletes as little.
 
@@ -685,22 +685,22 @@ one cell per topic. (One cell per topic for all 114 at once would need ~136
 columns.)
 
 ```
-Grammar index                                    ★ 3 starred · 5 due
+Grammar index                                 ⚑ 3 bookmarked · 5 due
 
-  Nouns                       ★1 2 due    9 topics
-▸ Adjectives & adverbs        ★2          5 topics
-    ▓▓★░░  topic 3 of 5
+  Nouns                       ⚑1 2 due    9 topics
+▸ Adjectives & adverbs        ⚑2          5 topics
+    ▓▓⚑░░  topic 3 of 5
       ▲
   Pronouns                                9 topics
   Verb forms                  1 due      35 topics
   Particles                               3 topics
-  Noun syntax                 ★1         19 topics
+  Noun syntax                 ⚑1         19 topics
   Adjective & pronoun syntax             13 topics
   Verb syntax                            30 topics
   Word-order & style                     12 topics
 
 § 63-66 Adjectives of the First and Second Declensions
-★ starred · 9/24 questions · due
+⚑ bookmarked · 9/24 questions · due
 In these the Masculine is declined like hortus, puer, or ager, the
 Feminine like porta, and the Neuter like bellum. Thus, Masculine like
 hortus:—
@@ -716,13 +716,13 @@ just its name.
 Every number is one you can act on. Bars and percentages stood in those columns
 for a long time, over the mastery score described above, and what they reported
 was how many topics had been visited. What is there instead is the shortlist and
-the pile: how many of a family's topics you starred, and how many are due. A
+the pile: how many of a family's topics you bookmarked, and how many are due. A
 family with neither shows nothing rather than two zeroes.
 
-The cells are the same four facts: `★` starred, `█` due, `▓` answered before,
-`░` never met, and `·` nothing to serve. The star outranks due, because it is
-your own mark and a starred topic that is also due is still first of all a
-starred one.
+The cells are the same four facts: `⚑` bookmarked, `█` due, `▓` answered before,
+`░` never met, and `·` nothing to serve. The bookmark outranks due, because it
+is your own mark and a bookmarked topic that is also due is still first of all a
+bookmarked one.
 
 Below the cursor sits the opening of that section, **the same wrapped lines for
 every topic** — five of them where the terminal is tall enough, fewer on a short
@@ -741,7 +741,7 @@ section in full (scrolling as above, `Esc` back to the index), and three keys ac
 on the topic under the cursor:
 
 - **Enter** stays on it and works a run of its questions out.
-- **`*`** stars it, or takes the star off.
+- **`b`** bookmarks it, or takes the bookmark off.
 - **`x`**, twice, takes it out of the review pile.
 
 The map opens from **every** screen, the way the web app's `▦` button does —
@@ -943,7 +943,7 @@ was served longer ago, which is what a practice run breaks a tie with, and a cap
 is fine for that.)
 
 Where you are is in there too: `practise` (the run in flight, if any — see
-[One way forward](#one-way-forward)), `starred` (the topics you marked, filed
+[One way forward](#one-way-forward)), `bookmarked` (the topics you marked, filed
 under the primary grammar's ids like everything else) and `openRound` (the round
 of questions in flight, so closing the app mid-test still leaves the topic with
 exactly one review). Which *errand* you are on is deliberately not: it resets on

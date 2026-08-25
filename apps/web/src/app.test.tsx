@@ -3905,7 +3905,7 @@ describe("erasing and replacing what is on the device", () => {
     const remote: Progress = {
       ...new Session(new Content(fixture, testProfile)).progress(),
       updatedAt: "2026-07-04T00:00:00.000Z",
-      starred: ["decl2"],
+      bookmarked: ["decl2"],
     };
     vi.stubGlobal(
       "fetch",
@@ -3942,7 +3942,7 @@ describe("erasing and replacing what is on the device", () => {
     leave();
     const kept = new SyncingStorage().read();
     expect(kept?.updatedAt).toBe("2026-07-04T00:00:00.000Z");
-    expect(kept?.starred).toEqual(["decl2"]);
+    expect(kept?.bookmarked).toEqual(["decl2"]);
   });
 
   it("says so when the pull cannot reach the repo, rather than nothing at all", async () => {
@@ -4270,19 +4270,19 @@ describe("the one way onto a topic", () => {
     expect(session.progress().topicCards).toEqual({});
   });
 
-  it("stars a topic from its sheet, and pins it above the families", async () => {
+  it("bookmarks a topic from its sheet, and pins it above the families", async () => {
     const user = userEvent.setup();
     const { session } = mount();
 
     await pickTopic(user, /Verb forms/, /Present indicative/);
-    await user.click(screen.getByRole("button", { name: "☆ Star this topic" }));
-    expect(session.isStarred("pres")).toBe(true);
+    await user.click(screen.getByRole("button", { name: "Bookmark this topic" }));
+    expect(session.isBookmarked("pres")).toBe(true);
 
     // Pinned at the top of the index, out of the family it lives in — a
     // shortlist that has to be assembled by scrolling is not one.
     await user.click(screen.getByRole("button", { name: /^Close/ }));
     const map = screen.getByRole("dialog", { name: "Grammar index" });
-    const shelf = within(map).getByText("★ Starred").closest(".family")!;
+    const shelf = within(map).getByText("Bookmarked").closest(".family")!;
     expect(
       within(shelf as HTMLElement).getByRole("button", { name: /Present indicative/ }),
     ).toBeDefined();
@@ -4291,19 +4291,19 @@ describe("the one way onto a topic", () => {
     await user.click(
       within(shelf as HTMLElement).getByRole("button", { name: /Present indicative/ }),
     );
-    await user.click(screen.getByRole("button", { name: "★ Starred" }));
-    expect(session.isStarred("pres")).toBe(false);
+    await user.click(screen.getByRole("button", { name: "Bookmarked" }));
+    expect(session.isBookmarked("pres")).toBe(false);
     await user.click(screen.getByRole("button", { name: /^Close/ }));
     expect(
       within(screen.getByRole("dialog", { name: "Grammar index" }))
-        .queryByText("★ Starred"),
+        .queryByText("Bookmarked"),
     ).toBeNull();
   });
 
-  it("offers no shelf at all until something is starred", () => {
+  it("offers no shelf at all until something is bookmarked", () => {
     mount();
     fireEvent.click(screen.getByRole("button", { name: "Grammar index" }));
-    expect(screen.queryByText("★ Starred")).toBeNull();
+    expect(screen.queryByText("Bookmarked")).toBeNull();
   });
 
   /**
@@ -5111,7 +5111,7 @@ describe("the index under the quoted-only preference", () => {
       const row = within(map).getByRole("button", { name: /Second declension/ });
 
       // The one thing the greying must never become. Reading the section and
-      // starring it are still on offer behind this row, and a `disabled` here
+      // bookmarking it are still on offer behind this row, and a `disabled` here
       // would take both away to save a student a tap they might want.
       expect(row).toHaveProperty("disabled", false);
       await user.click(row);
@@ -5119,7 +5119,7 @@ describe("the index under the quoted-only preference", () => {
         screen.getByRole("button", { name: /Read § 23-27/ }),
       ).toHaveProperty("disabled", false);
       expect(
-        screen.getByRole("button", { name: "☆ Star this topic" }),
+        screen.getByRole("button", { name: "Bookmark this topic" }),
       ).toHaveProperty("disabled", false);
     });
   });
@@ -5275,17 +5275,17 @@ describe("a device that is behind another one", () => {
   };
 
   /**
-   * A copy of the pack's progress, saved at `at`, with `starred` in it.
+   * A copy of the pack's progress, saved at `at`, with `bookmarked` in it.
    *
-   * The stars are only a marker here — one field whose value says which copy
+   * The marks are only a marker here — one field whose value says which copy
    * this is, so an assertion can name the one that survived. Any per-topic
    * field would do; this is the one that is a plain list and reads clearly in
    * an expectation.
    */
-  const copy = (at: string, starred: string[]): Progress => ({
+  const copy = (at: string, bookmarked: string[]): Progress => ({
     ...new Session(new Content(fixture, testProfile)).progress(),
     updatedAt: at,
-    starred,
+    bookmarked,
   });
 
   it("asks about the newer copy, and says that taking it loses nothing", async () => {
@@ -5316,7 +5316,7 @@ describe("a device that is behind another one", () => {
     expect(sheet.textContent).toContain("nothing it has not sent");
     expect(sheet.textContent).not.toContain("has been studied since");
     // Nothing decided, nothing thrown away, and no reload behind their back.
-    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
+    expect(new SyncingStorage().read()?.bookmarked).toEqual(["decl1"]);
     expect(reload).not.toHaveBeenCalled();
   });
 
@@ -5335,7 +5335,7 @@ describe("a device that is behind another one", () => {
       screen.getByRole("dialog", { name: "Progress from another device" }),
     ).toBeDefined();
     // Nothing was decided on the student's behalf.
-    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
+    expect(new SyncingStorage().read()?.bookmarked).toEqual(["decl1"]);
   });
 
   it("pushes nothing before it has looked at what GitHub holds", async () => {
@@ -5401,7 +5401,7 @@ describe("a device that is behind another one", () => {
     ).toBeDefined();
     // And it is the same two answers as at startup, over the same copy.
     expect(screen.getByRole("button", { name: "Use the newer one" })).toBeDefined();
-    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
+    expect(new SyncingStorage().read()?.bookmarked).toEqual(["decl1"]);
   });
 
   it("keeps this device's copy when that is what was chosen", async () => {
@@ -5420,7 +5420,7 @@ describe("a device that is behind another one", () => {
 
     // Forced past the refusal, because a person is what the refusal defers to.
     expect(calls).toContain("PUT");
-    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
+    expect(new SyncingStorage().read()?.bookmarked).toEqual(["decl1"]);
   });
 
   it("warns before a pull throws away what this device has not sent", async () => {
@@ -5440,7 +5440,7 @@ describe("a device that is behind another one", () => {
     expect(
       screen.getByRole("dialog", { name: "This device has unsaved progress" }),
     ).toBeDefined();
-    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
+    expect(new SyncingStorage().read()?.bookmarked).toEqual(["decl1"]);
   });
 
   it("pulls without a word when there is nothing of this device's to lose", async () => {
@@ -5465,7 +5465,7 @@ describe("a device that is behind another one", () => {
     });
 
     expect(screen.queryByRole("dialog", { name: /unsaved progress/ })).toBeNull();
-    expect(new SyncingStorage().read()?.starred).toEqual(["decl2"]);
+    expect(new SyncingStorage().read()?.bookmarked).toEqual(["decl2"]);
     expect(reload).toHaveBeenCalled();
   });
 
@@ -5496,7 +5496,7 @@ describe("a device that is behind another one", () => {
 
     expect(screen.queryByRole("dialog", { name: /already has progress/i })).toBeNull();
     expect(screen.queryByRole("dialog", { name: /another device/i })).toBeNull();
-    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
+    expect(new SyncingStorage().read()?.bookmarked).toEqual(["decl1"]);
   });
 
   it("asks before connecting to a repo that already holds something newer", async () => {

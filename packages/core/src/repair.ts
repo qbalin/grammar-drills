@@ -56,11 +56,18 @@ export function repairProgress(raw: unknown, citationsVersion?: number): Repair 
     record(key);
   }
 
-  // The two fields that are lists rather than records. A non-array here would
-  // take `.includes` on the first star or die lookup; a non-string inside one
+  // The fields that are lists rather than records. A non-array here would take
+  // `.includes` on the first bookmark or die lookup; a non-string inside one
   // can never match a section id, so it is dropped rather than kept as dead
   // weight.
-  for (const key of ["starred", "noRoll"]) {
+  //
+  // `starred` is the bookmarks under the name they used to be written with, and
+  // it is checked here rather than where it is folded. This runs *before* the
+  // migration and `{ ...empty, ...raw }` above carries an unrecognised key
+  // through untouched, so this is the only place that can promise the fold a
+  // list to read — and a fold that took `.filter` on a number would be exactly
+  // the crash this file exists to prevent.
+  for (const key of ["bookmarked", "starred", "noRoll"]) {
     const list = out[key];
     if (list === undefined) continue;
     if (!Array.isArray(list)) {

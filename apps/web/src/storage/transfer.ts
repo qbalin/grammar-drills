@@ -1,4 +1,9 @@
-import { emptyProgress, type Content, type Progress } from "@lang-tutor/core";
+import {
+  emptyProgress,
+  type Content,
+  type LegacyProgress,
+  type Progress,
+} from "@lang-tutor/core";
 import { profile } from "../pack.js";
 
 /**
@@ -51,7 +56,8 @@ function download(text: string, name: string): void {
  * dropped on the way in.
  */
 export function importProgress(raw: string, content: Content): Progress {
-  const parsed = JSON.parse(raw) as Partial<Progress>;
+  const parsed = JSON.parse(raw) as Partial<Progress> &
+    Pick<Partial<LegacyProgress>, "starred">;
   if (!parsed || typeof parsed !== "object" || !parsed.version) {
     throw new Error(`That does not look like a ${profile.ui.appName} progress file.`);
   }
@@ -83,10 +89,17 @@ export function importProgress(raw: string, content: Content): Progress {
      * topic id moved.
      */
     sentenceCards: parsed.sentenceCards ?? {},
-    // Lists rather than records, so they take the same filter by hand. A star
-    // on a topic this bundle does not hold would pin a row that cannot be
-    // drawn, and a topic held off the die that is not in the book is holding
+    // Lists rather than records, so they take the same filter by hand. A
+    // bookmark on a topic this bundle does not hold would pin a row that cannot
+    // be drawn, and a topic held off the die that is not in the book is holding
     // nothing off anything.
+    ...(parsed.bookmarked
+      ? { bookmarked: parsed.bookmarked.filter((id) => known(id)) }
+      : {}),
+    // A file exported before the mark was called a bookmark. Filtered on the
+    // same terms and left under its old name for `Session.migrate` to fold on
+    // the next load, because this is the only place that knows which ids the
+    // bundle holds and that is the only place that knows how to fold.
     ...(parsed.starred
       ? { starred: parsed.starred.filter((id) => known(id)) }
       : {}),

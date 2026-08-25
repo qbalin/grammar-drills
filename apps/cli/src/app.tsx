@@ -681,7 +681,7 @@ export function App({ session, content, storage }: Props) {
 
   /**
    * Open the grammar index, parked where the student is most likely to want it:
-   * the topic on screen, else the first starred one, else the first that is due.
+   * the topic on screen, else the first bookmarked one, else the first due.
    *
    * It used to fall back to the first topic never graded, which was the head of
    * the queue when the book had a queue. Nothing is queued now, so the fallback
@@ -689,7 +689,7 @@ export function App({ session, content, storage }: Props) {
    */
   const openMap = (from: Origin) => {
     let i = mapTopics.findIndex((t) => t.sectionId === sectionId);
-    if (i < 0) i = mapTopics.findIndex((t) => t.starred);
+    if (i < 0) i = mapTopics.findIndex((t) => t.bookmarked);
     if (i < 0) i = mapTopics.findIndex((t) => t.due);
     setMapIndex(i < 0 ? 0 : i);
     setFlash(null);
@@ -819,17 +819,25 @@ export function App({ session, content, storage }: Props) {
     setFlash(`Practising “${target.title}” — ${run?.total ?? 0} to go.`);
   };
 
-  /** Mark the topic under the cursor to come back to, or take the mark off. */
-  const starSelected = () => {
+  /**
+   * Bookmark the topic under the cursor, or take the bookmark off.
+   *
+   * Serves the reader as well as the index, and needs nothing extra to: the
+   * reader draws `mapSection`, which is the section of the topic under this
+   * same cursor. Reading a page and having it selected are one state here.
+   */
+  const bookmarkSelected = () => {
     const target = mapTopics[mapIndex];
     if (!target) return;
-    const on = session.isStarred(target.sectionId);
-    if (on) session.unstar(target.sectionId);
-    else session.star(target.sectionId);
+    const on = session.isBookmarked(target.sectionId);
+    if (on) session.unbookmark(target.sectionId);
+    else session.bookmark(target.sectionId);
     save();
     setTick((n) => n + 1);
     setFlash(
-      on ? `Unstarred “${target.title}”.` : `Starred “${target.title}”.`,
+      on
+        ? `Removed the bookmark from “${target.title}”.`
+        : `Bookmarked “${target.title}”.`,
     );
   };
 
@@ -998,11 +1006,11 @@ export function App({ session, content, storage }: Props) {
           setConfirmMap(null);
           jumpFamily(1);
         } else if (key.return) practiseSelected(phase.from);
-        // `*` for the star and `x` for the dismissal. `f` — take the book up
-        // from here — stood where `*` does and is gone with the book's walk.
-        else if (ch === "*") {
+        // `b` for the bookmark and `x` for the dismissal. `f` — take the book
+        // up from here — stood where `b` does and is gone with the book's walk.
+        else if (ch === "b") {
           setConfirmMap(null);
-          starSelected();
+          bookmarkSelected();
         } else if (ch === "x") dismissSelected();
         else if (ch === "g") setPhase({ t: "read", from: phase.from });
         else if (ch === "a") {
@@ -1722,14 +1730,14 @@ function StatusBar({
  * *generated* questions has nothing left to serve, and a bar whose whole job is
  * then to show where the quotations are must not draw it as somewhere to go.
  *
- * The star outranks due: it is the student's own mark, and a starred topic that
- * is also due is still first of all a starred one. There is no legend — a cell
- * is explained by moving the cursor onto it, and the status line under the bar
- * says the rest.
+ * The bookmark outranks due: it is the student's own mark, and a bookmarked
+ * topic that is also due is still first of all a bookmarked one. There is no
+ * legend — a cell is explained by moving the cursor onto it, and the status
+ * line under the bar says the rest.
  */
 function cellStyle(t: TopicProgress): { glyph: string; color: string; dim: boolean } {
   if (t.questions === 0) return { glyph: "·", color: "gray", dim: true };
-  if (t.starred) return { glyph: "★", color: "yellow", dim: false };
+  if (t.bookmarked) return { glyph: "⚑", color: "yellow", dim: false };
   if (t.due) return { glyph: "█", color: "cyan", dim: false };
   if (t.answered > 0) return { glyph: "▓", color: "green", dim: false };
   return { glyph: "░", color: "gray", dim: true };
@@ -1749,7 +1757,7 @@ const BAR_INDENT = 4;
  *
  * A bar and a percentage stood here, over a mean mastery. Two counts instead,
  * and both of them are things a student can act on: how many topics of this
- * family they starred, and how many are due. A family with neither shows an
+ * family they bookmarked, and how many are due. A family with neither shows an
  * empty column rather than a zero \u2014 nothing waiting is not a figure worth
  * printing nine times down the screen.
  *
@@ -1757,9 +1765,9 @@ const BAR_INDENT = 4;
  * counts are.
  */
 function familySummary(f: FamilyProgress): string {
-  const starred = f.topics.filter((t) => t.starred).length;
+  const marked = f.topics.filter((t) => t.bookmarked).length;
   const due = f.topics.filter((t) => t.due).length;
-  const parts = [starred > 0 ? `\u2605${starred}` : "", due > 0 ? `${due} due` : ""]
+  const parts = [marked > 0 ? `\u2691${marked}` : "", due > 0 ? `${due} due` : ""]
     .filter(Boolean)
     .join(" ");
   return parts.padEnd(SUMMARY_CELLS).slice(0, SUMMARY_CELLS);
@@ -1919,7 +1927,7 @@ function GrammarMap({
   // What the index counts, now that it counts nothing about how well anything
   // went: the shortlist, and the pile.
   const all = families.flatMap((f) => f.topics);
-  const starredCount = all.filter((t) => t.starred).length;
+  const markedCount = all.filter((t) => t.bookmarked).length;
   const dueCount = all.filter((t) => t.due).length;
 
   return (
@@ -1929,7 +1937,7 @@ function GrammarMap({
           Grammar index
         </Text>
         <Text dimColor>
-          {starredCount > 0 ? `★ ${starredCount} starred · ` : ""}
+          {markedCount > 0 ? `⚑ ${markedCount} bookmarked · ` : ""}
           {dueCount > 0 ? `${dueCount} due` : "nothing due"}
         </Text>
       </Box>
@@ -1952,7 +1960,7 @@ function GrammarMap({
           <Text bold>{topic.title}</Text>
         </Text>
         <Text>
-          {topic.starred ? <Text color="yellow">★ starred · </Text> : null}
+          {topic.bookmarked ? <Text color="yellow">⚑ bookmarked · </Text> : null}
           {/* How much of the bank has been met, and nothing about how well. A
               "N% mastered" stood first on this line, over a score that filled
               after three good answers; this is the honest half of what it
@@ -2568,7 +2576,7 @@ function HintBar({
     phase === "answering"
       ? `${ui.cliHint} · Enter submit · Esc grammar · Tab words · ^N index${undo ? " · ^Z undo grade" : ""}${scrollHint}`
       : phase === "map"
-        ? `← → topic · ↑ ↓ family · g read section · a all questions · * star · x stop reviewing · s schedule${wordsHint} · ${practiseHint} · Esc close`
+        ? `← → topic · ↑ ↓ family · g read section · a all questions · b bookmark · x stop reviewing · s schedule${wordsHint} · ${practiseHint} · Esc close`
         : phase === "read"
           ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to the index · q quit`
         : phase === "bank"

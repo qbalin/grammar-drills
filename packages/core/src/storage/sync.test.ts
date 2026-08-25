@@ -17,7 +17,7 @@ const WED = "2026-01-07T09:00:00.000Z";
  * — which is the one case it now settles by itself, and a different test.
  */
 function progress(updatedAt: string, work: string = updatedAt): Progress {
-  return { ...emptyProgress(), updatedAt, starred: [`bn-020-${work}`] };
+  return { ...emptyProgress(), updatedAt, bookmarked: [`bn-020-${work}`] };
 }
 
 describe("the marker", () => {

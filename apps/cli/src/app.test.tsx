@@ -1289,20 +1289,25 @@ describe("the one way onto a topic", () => {
     unmount();
   });
 
-  it("stars the topic under the cursor, and takes the star off again", async () => {
+  it("bookmarks the topic under the cursor, and takes the bookmark off", async () => {
     const { session, lastFrame, stdin, unmount } = open();
     await tick();
     stdin.write(CTRL_N);
     await until(lastFrame, "Grammar index");
 
-    await press(stdin, lastFrame, "*", "Starred “First declension nouns”");
-    expect(session.isStarred("d1")).toBe(true);
+    await press(stdin, lastFrame, "b", "Bookmarked “First declension nouns”");
+    expect(session.isBookmarked("d1")).toBe(true);
     // Drawn on the bar as the student's own mark, above everything else it
     // could be saying about the topic.
-    expect(lastFrame()).toContain("★ starred");
+    expect(lastFrame()).toContain("⚑ bookmarked");
 
-    await press(stdin, lastFrame, "*", "Unstarred “First declension nouns”");
-    expect(session.isStarred("d1")).toBe(false);
+    await press(
+      stdin,
+      lastFrame,
+      "b",
+      "Removed the bookmark from “First declension nouns”",
+    );
+    expect(session.isBookmarked("d1")).toBe(false);
     unmount();
   });
 
