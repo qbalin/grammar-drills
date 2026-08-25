@@ -3644,6 +3644,43 @@ describe("the grammar index", () => {
     expect(screen.getByRole("button", { name: /^Nouns\s+2 topics/ })).toBeDefined();
   });
 
+  it("steps an unfolded family's topics in from its heading", async () => {
+    /*
+     * Flush with the head that opened them, the rows read as its siblings
+     * rather than as what is inside it — which is the one thing an accordion
+     * has to say. The two lists that are not unfolded out of anything keep the
+     * plain gutter: an indent under a heading that does not open would claim a
+     * nesting that is not there.
+     */
+    const user = userEvent.setup();
+    mount();
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    const map = () => screen.getByRole("dialog", { name: "Grammar index" });
+    const nouns = () => within(map()).getByRole("button", { name: /^Nouns/ });
+    if (nouns().getAttribute("aria-expanded") === "false") await user.click(nouns());
+
+    expect(nouns().parentElement!.querySelector(".list--topics")!.className)
+      .toContain("list--nested");
+
+    // A mark, so the pinned shelf is drawn to be compared against.
+    await user.click(
+      within(map()).getByRole("button", { name: /First declension/ }),
+    );
+    await user.click(screen.getByRole("button", { name: "Bookmark this topic" }));
+    await user.click(screen.getByRole("button", { name: /^Close/ }));
+
+    const shelf = within(map()).getByText("Bookmarked").closest(".family")!;
+    expect(shelf.querySelector(".list--topics")!.className)
+      .not.toContain("list--nested");
+
+    // Nor the search results, which answer over the whole book at once.
+    await user.type(within(map()).getByLabelText("Find a topic"), "declension");
+    for (const list of Array.from(map().querySelectorAll(".list--topics"))) {
+      expect(list.className).not.toContain("list--nested");
+    }
+  });
+
   it("reads a section in full from the map", async () => {
     const user = userEvent.setup();
     mount();

@@ -1765,9 +1765,17 @@ span.status__title {
   cursor: default;
 }
 
-/* The open family's topics, inset under its heading. */
+/* The topics, in the sheet's own gutter. */
 .list--topics {
   padding: 0 1.1rem 0.7rem;
+}
+
+/* Unfolded out of an accordion, the rows are that family's contents rather than
+   its siblings — and flush with its heading they read as neither. One step in,
+   the same 1rem step a sub-point takes in the reader. The pinned shelf and the
+   search results keep the plain gutter: neither is inside anything. */
+.list--nested {
+  padding-left: 2.1rem;
 }
 
 /* The bookmark on a marked row: a marker after the title, not a control. Gold

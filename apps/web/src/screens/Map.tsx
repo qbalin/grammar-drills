@@ -141,13 +141,23 @@ function TopicRows({
   topics,
   quotedOnly,
   onPick,
+  nested = false,
 }: {
   topics: TopicProgress[];
   quotedOnly: boolean;
   onPick: (t: TopicProgress) => void;
+  /**
+   * Whether these rows were unfolded out of an accordion above them.
+   *
+   * Set, they step in from its heading, because that is what they are inside
+   * of. The two headless lists this draws — the search results and the pinned
+   * shelf — are not inside anything, and an indent under a plain heading would
+   * say a nesting that is not there.
+   */
+  nested?: boolean;
 }) {
   return (
-    <div className="list list--topics">
+    <div className={`list list--topics${nested ? " list--nested" : ""}`}>
       {topics.map((t) => (
         // Dimmed, never disabled. A topic with nothing to serve is still one to
         // read — `TopicSheet` refuses the practice run alone — so the row stays
@@ -402,6 +412,7 @@ export function MapSheet({
                 topics={f.topics}
                 quotedOnly={quotedOnly}
                 onPick={onPick}
+                nested
               />
             )}
           </div>
