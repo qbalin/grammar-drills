@@ -1355,6 +1355,42 @@ span.status__title {
   padding-right: 1.1rem;
 }
 
+/*
+ * The form that was pressed, in its own table.
+ *
+ * A word is looked up from a sentence, so the sheet already knows which form
+ * the student is holding — and a paradigm is thirty endings that look alike,
+ * which is exactly the haystack the lookup was meant to end. So the spelling is
+ * lit where it stands, and the two stubs that name it are lit with it: the
+ * answer being asked for is "accusative singular", and that is written in the
+ * margins rather than in the cell.
+ *
+ * Drawn on the word rather than on the cell holding it, because a cell can hold
+ * two — `amāvistī` and `amāstī` — and only one of them was pressed. The margins
+ * take back exactly what the padding adds, so the marker bleeds into the
+ * gutters either side and no column moves to make room for it.
+ *
+ * The accent rather than a colour of its own — review mode remaps `--gold` to
+ * the blue, and a highlight that stayed gold there would be the one thing on
+ * the screen not doing as it was told. The weight carries it with the tint, so
+ * it is not colour alone that says which form is which.
+ */
+.form--here {
+  background: color-mix(in srgb, var(--gold) 16%, transparent);
+  color: var(--gold);
+  font-weight: 600;
+  padding: 0.1rem 0.3rem;
+  margin: 0 -0.3rem;
+  border-radius: 4px;
+}
+
+/* Said in the accent and out of the furniture's grey, since for this one row
+   and this one column the stub is the lesson rather than the frame. */
+.gr-table .gr-th--here,
+.gr-row--body th[scope="row"].gr-th--here {
+  color: var(--gold);
+}
+
 .gr-divider {
   font-family: var(--sans);
   font-size: 0.68rem;

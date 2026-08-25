@@ -1,14 +1,48 @@
-import { useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import {
   buildParadigm,
   decodeRuns,
   type DictionaryArticle,
   type LemmaEntry,
+  type Paradigm,
   type Run,
   type TaggedForm,
 } from "@lang-tutor/core";
-import { profile } from "../pack.js";
+import { fold, profile } from "../pack.js";
 import { CopyButton, Sheet, Spinner, TableBox, l2Attrs } from "../ui.js";
+
+/**
+ * Which spellings of the table are the one that was pressed.
+ *
+ * The sheet is opened *from a word in a sentence*, so the student already knows
+ * the form; what they came for is where it sits — and a bare grid of thirty
+ * endings makes them find `rēgem` before it can tell them it is the accusative.
+ * So the pressed form is picked out wherever it stands.
+ *
+ * Two tiers, because a written form and a printed paradigm need not be marked
+ * alike. An exact hit wins where there is one: the pack writes its sentences
+ * with macrons, so `manūs` in a sentence is the genitive singular and the
+ * nominative plural and is *not* the nominative singular `manus`, and saying
+ * all three would throw away what the macron is there to say. Where nothing
+ * matches exactly — the student typed the word themselves, as they mostly do,
+ * without the quantities — the fold decides instead, and an ambiguous spelling
+ * lights every cell it could be. Both are true answers to what was pressed;
+ * the first is only available when the text carries enough to give it.
+ */
+function pressedIn(
+  paradigm: Paradigm | undefined,
+  form: string,
+): (spelling: string) => boolean {
+  const folded = fold(form);
+  if (!paradigm || folded === "") return () => false;
+  const spellings = [
+    ...paradigm.tables.flatMap((table) => table.rows.flatMap((row) => row.cells.flat())),
+    ...paradigm.other.map((other) => other.form),
+  ];
+  const exact = form.trim();
+  if (spellings.includes(exact)) return (spelling) => spelling === exact;
+  return (spelling) => fold(spelling) === folded;
+}
 
 /** One line of a further dictionary, with the emphasis its book set. */
 function Marked({ text }: { text: string }) {
@@ -152,6 +186,32 @@ export function InspectSheet({
   const paradigm = forms
     ? buildParadigm(forms, blocks ?? [], profile.paradigms)
     : undefined;
+  const isPressed = pressedIn(paradigm, form);
+
+  /**
+   * The wide tables scroll sideways inside their own box, so the cell that was
+   * picked out can sit off the edge of a phone — a verb is six columns, and the
+   * highlight would then be a thing the student has to go looking for, which is
+   * the state this whole feature exists to end. So the first one is brought
+   * into view, by moving the box rather than by `scrollIntoView`, which would
+   * take the sheet along with it.
+   *
+   * Keyed on the word rather than on the render: the effect re-runs freely, and
+   * a cell already in view is left alone, so nothing moves under a finger that
+   * has scrolled the table somewhere else.
+   */
+  const tablesRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const cell = tablesRef.current?.querySelector("td[aria-current]");
+    const wrap = cell?.closest(".gr-tablewrap");
+    if (!(cell instanceof HTMLElement) || !(wrap instanceof HTMLElement)) return;
+    // Measured rather than read off `offsetLeft`, whose origin is whatever
+    // ancestor happens to be positioned and is not this box.
+    const at = cell.getBoundingClientRect();
+    const box = wrap.getBoundingClientRect();
+    if (at.left >= box.left && at.right <= box.right) return;
+    wrap.scrollLeft += at.left - box.left - (box.width - at.width) / 2;
+  }, [form, entry.lemma, entry.pos, forms?.length]);
 
   return (
     // The button copies the subtitle, not the title: the word wanted in a note
@@ -225,41 +285,97 @@ export function InspectSheet({
         </p>
       )}
 
-      {paradigm?.tables.map((table, i) => (
-        <div key={i}>
-          {table.title && <h3 className="gr-h">{table.title}</h3>}
-          <TableBox>
-            <tr className="gr-row--head">
-              <th scope="col" />
-              {table.columns.map((column, j) => (
-                <th key={j} scope="col">
-                  {column}
-                </th>
-              ))}
-            </tr>
-            {table.rows.map((row, j) => (
-              <tr key={j} className="gr-row--body">
-                <th scope="row">{row.label}</th>
-                {row.cells.map((cell, k) => (
-                  // Two forms in one cell is the ordinary case, not an error:
-                  // `amāvistī` and its syncopated `amāstī` are both the perfect
-                  // second singular, and a grammar prints both.
-                  <td key={k} {...l2Attrs}>{cell.join(" · ") || "—"}</td>
+      <div ref={tablesRef}>
+        {paradigm?.tables.map((table, i) => {
+          // Which stubs to light with the cells. A cell on its own says where
+          // the word is only once you have traced two edges of the grid with a
+          // finger, and the answer wanted — "accusative singular" — is written
+          // in the stubs. Both axes, and every hit: one form standing in three
+          // cells is what syncretism looks like, and naming one of them would
+          // be inventing a distinction the word does not make.
+          const hereRows = new Set<number>();
+          const hereColumns = new Set<number>();
+          table.rows.forEach((row, j) =>
+            row.cells.forEach((cell, k) => {
+              if (!cell.some(isPressed)) return;
+              hereRows.add(j);
+              hereColumns.add(k);
+            }),
+          );
+          return (
+            <div key={i}>
+              {table.title && <h3 className="gr-h">{table.title}</h3>}
+              <TableBox>
+                <tr className="gr-row--head">
+                  <th scope="col" />
+                  {table.columns.map((column, j) => (
+                    <th
+                      key={j}
+                      scope="col"
+                      className={hereColumns.has(j) ? "gr-th--here" : undefined}
+                    >
+                      {column}
+                    </th>
+                  ))}
+                </tr>
+                {table.rows.map((row, j) => (
+                  <tr key={j} className="gr-row--body">
+                    <th scope="row" className={hereRows.has(j) ? "gr-th--here" : undefined}>
+                      {row.label}
+                    </th>
+                    {row.cells.map((cell, k) => (
+                      // Two forms in one cell is the ordinary case, not an error:
+                      // `amāvistī` and its syncopated `amāstī` are both the perfect
+                      // second singular, and a grammar prints both — so the mark
+                      // goes on the spelling that was pressed rather than on the
+                      // cell holding it, which would claim the other one too.
+                      <td
+                        key={k}
+                        {...l2Attrs}
+                        // The cell the student is standing in, said to a screen
+                        // reader, which has no colour to go on — and the hook
+                        // the scroll below finds it by.
+                        aria-current={cell.some(isPressed) ? "true" : undefined}
+                      >
+                        {cell.length === 0
+                          ? "—"
+                          : cell.map((spelling, n) => (
+                              <Fragment key={n}>
+                                {n > 0 && " · "}
+                                {isPressed(spelling) ? (
+                                  <mark className="form--here">{spelling}</mark>
+                                ) : (
+                                  spelling
+                                )}
+                              </Fragment>
+                            ))}
+                      </td>
+                    ))}
+                  </tr>
                 ))}
-              </tr>
-            ))}
-          </TableBox>
-        </div>
-      ))}
+              </TableBox>
+            </div>
+          );
+        })}
+      </div>
 
       {paradigm && paradigm.other.length > 0 && (
         <>
           <h3 className="gr-h">Other forms</h3>
           <div className="list">
             {paradigm.other.map((other, i) => (
+              // The pressed word can be one of these rather than a cell — a
+              // participle, an infinitive, a supine — and it is no less the
+              // thing that was asked about for being off the grid.
               <div className="row row--static" key={i}>
                 <span className="row__main">
-                  <span {...l2Attrs} className="row__title">{other.form}</span>
+                  <span {...l2Attrs} className="row__title">
+                    {isPressed(other.form) ? (
+                      <mark className="form--here">{other.form}</mark>
+                    ) : (
+                      other.form
+                    )}
+                  </span>
                   <span className="row__sub">{other.tags.join(", ")}</span>
                 </span>
               </div>

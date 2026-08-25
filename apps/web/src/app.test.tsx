@@ -35,9 +35,9 @@ const dictionary = { available: true };
 // writes, small enough to spell out: a header of interned tag signatures, then
 // one tab-separated line per `lemma|pos`.
 const PARADIGMS = [
-  "nominative,singular|genitive,singular|nominative,plural",
-  "manus|noun\t0:manus\t1:manūs\t2:manūs",
-  "rex|noun\t0:rēx\t1:rēgis",
+  "nominative,singular|genitive,singular|nominative,plural|accusative,singular",
+  "manus|noun\t0:manus\t1:manūs\t2:manūs\t3:manum",
+  "rex|noun\t0:rēx\t1:rēgis\t3:rēgem",
 ].join("\n");
 // The paradigm fetch can fail on its own — it is the largest asset and the
 // last to be asked for. Flagged separately from the dictionary because the two
@@ -145,6 +145,11 @@ const fixture: ContentData = {
       { lemma: "mānis", citation: "mānis, māne", gloss: "good", pos: "adj", rank: 4091 },
     ],
     regem: [{ lemma: "rex", citation: "rex, rēgis", gloss: "king", pos: "noun", rank: 88 }],
+    // The same word as `manibus` under another of its forms, so a scenario can
+    // press a spelling that stands in more than one cell of its own table. One
+    // key, since the fold takes the macron off: `manūs` and `manus` are looked
+    // up alike and only the paradigm can tell them apart.
+    manus: [{ lemma: "manus", citation: "manus, manūs (f)", gloss: "hand", pos: "noun", rank: 157 }],
     // Words that appear in the answers above, so they can be held down there.
     rosam: [{ lemma: "rosa", citation: "rosa, rosae (f)", gloss: "rose", pos: "noun", rank: 900 }],
     amat: [
@@ -1957,6 +1962,102 @@ describe("looking a word up", () => {
     expect(within(sheet).getByRole("columnheader", { name: "Singular" })).toBeDefined();
     expect(within(sheet).getByRole("rowheader", { name: "Gen." })).toBeDefined();
     expect(within(sheet).getByText("rēgis")).toBeDefined();
+  });
+
+  /**
+   * The pressed form, picked out of its own table.
+   *
+   * The sheet is opened *from* a word, so it already knows which form the
+   * student is holding — and before this it laid out thirty endings that look
+   * alike and left them to find it, which is the haystack the lookup was there
+   * to end. The cell is lit and so are the two stubs that name it, since
+   * "accusative singular" is the answer being asked for and it is written in
+   * the margins rather than in the cell.
+   */
+  describe("the form that was pressed", () => {
+    /** The cells lit in the sheet, as `row · column · form`. */
+    const lit = (sheet: HTMLElement) =>
+      Array.from(sheet.querySelectorAll("tr")).flatMap((row) =>
+        Array.from(row.querySelectorAll("td[aria-current]")).map((cell) => {
+          const stub = row.querySelector("th")?.textContent ?? "";
+          const table = cell.closest("table")!;
+          const column = table
+            .querySelector(".gr-row--head")
+            ?.children[Array.from(cell.parentElement!.children).indexOf(cell)]?.textContent;
+          return `${stub} · ${column} · ${cell.querySelector("mark")?.textContent}`;
+        }),
+      );
+
+    it("lights the cell it stands in, and the stubs that name it", async () => {
+      const user = userEvent.setup();
+      mount();
+      await user.type(screen.getByLabelText("Your Latin"), "rēgem");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await inspectWord("rēgem");
+      const sheet = screen.getByRole("dialog", { name: "rex, rēgis" });
+      expect(lit(sheet)).toEqual(["Acc. · Singular · rēgem"]);
+      // Both stubs, because one edge of a grid is half an answer.
+      expect(
+        within(sheet).getByRole("rowheader", { name: "Acc." }).className,
+      ).toContain("gr-th--here");
+      expect(
+        within(sheet).getByRole("columnheader", { name: "Singular" }).className,
+      ).toContain("gr-th--here");
+      // And nothing else is: the other rows are the same table they were.
+      expect(
+        within(sheet).getByRole("rowheader", { name: "Gen." }).className,
+      ).not.toContain("gr-th--here");
+    });
+
+    it("lights every cell one spelling serves", async () => {
+      // `manūs` is the genitive singular and the nominative plural. Naming one
+      // of them would be inventing a distinction the word does not make.
+      const user = userEvent.setup();
+      mount();
+      await user.type(screen.getByLabelText("Your Latin"), "manūs");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await inspectWord("manūs");
+      const sheet = screen.getByRole("dialog", { name: "manus, manūs (f)" });
+      expect(lit(sheet)).toEqual([
+        "Nom. · Plural · manūs",
+        "Gen. · Singular · manūs",
+      ]);
+      // The nominative singular is `manus`, which is a different word on the
+      // page even though the fold cannot tell them apart. The macron the
+      // sentence prints is there to say so, so an exact hit is preferred.
+      expect(lit(sheet)).not.toContain("Nom. · Singular · manus");
+    });
+
+    it("falls back to the fold when nothing matches as written", async () => {
+      // Which is most of the time: the student types the word without the
+      // quantities, and the table prints them. A form that has no exact
+      // spelling in the table is still the form they pressed.
+      const user = userEvent.setup();
+      mount();
+      await user.type(screen.getByLabelText("Your Latin"), "regem");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await inspectWord("regem");
+      const sheet = screen.getByRole("dialog", { name: "rex, rēgis" });
+      expect(lit(sheet)).toEqual(["Acc. · Singular · rēgem"]);
+    });
+
+    it("lights nothing where the table does not hold the form", async () => {
+      // `manibus` is the dative and ablative plural, which this fixture's
+      // paradigm has not got. A table with nothing lit is the table it always
+      // was — better than lighting a cell that is not the answer.
+      const user = userEvent.setup();
+      mount();
+      await user.type(screen.getByLabelText("Your Latin"), "manibus");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await inspectWord("manibus");
+      const sheet = screen.getByRole("dialog", { name: "manus, manūs (f)" });
+      expect(lit(sheet)).toEqual([]);
+      expect(sheet.querySelector("mark")).toBeNull();
+    });
   });
 
   it("says what it knows about a word whose forms it has not got", async () => {

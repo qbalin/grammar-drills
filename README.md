@@ -209,6 +209,20 @@ and its own inflection table — the grammar shows one noun of each declension a
 expects you to see that yours follows it, which works until the word is
 irregular, or defective, or you simply cannot tell which model it belongs to.
 
+The form you pressed is **picked out of that table**, along with the two stubs
+that name it — press `rēgem` and the accusative singular is lit, which is the
+question you asked. It was a table of thirty endings that look alike and a
+student left to find their own word in it, which is the haystack the lookup was
+supposed to end. A spelling standing in more than one cell lights all of them,
+because that is what syncretism is: `manūs` is the genitive singular *and* the
+nominative plural, and naming one would invent a distinction the word does not
+make. An exact hit wins where the text has one, so a printed `manūs` is not
+confused with the nominative singular `manus`; where nothing matches as written
+— you typed the word yourself, without the quantities — the pack's fold decides
+instead. Participles, infinitives and the rest are lit the same way in *Other
+forms* below the grid, and a wide table scrolls the lit cell into view rather
+than leaving it off the edge of a phone.
+
 That sheet now also says **where the word comes from**, folded away under the
 gloss: `▸ Etymology`, opening to the paragraphs Wiktionary has for it. It ships
 as `content/etymology.txt.gz` — 38,532 of Latin's 55,312 lemmas, 1.2 MB gzipped
