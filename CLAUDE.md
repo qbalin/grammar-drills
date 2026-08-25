@@ -155,9 +155,10 @@ precisely where two books disagree: a family list is one book's table of
 contents, and a shape gate is calibrated against one book's idea of how long a
 topic is. Averaging two of them measures neither.
 
-Nothing at runtime reads a secondary grammar yet — the app still opens the
-primary. The declaration exists so that a second book is gated from the day it
-is parsed rather than from the day it is displayed.
+The web app opens whichever of them the student picks — the index carries a book
+switcher, and `Session.setGrammar` records the choice. The declaration came
+first, so that a second book is gated from the day it is parsed rather than from
+the day it is displayed. The CLI still opens the primary alone.
 
 **A further grammar has no questions of its own.** It is served out of the ones
 written against the primary, reached through `content/grammars/crosswalk.json`,
@@ -175,15 +176,30 @@ how much of each book is reachable. Its gates are numbered apart from the
 coverage report's on purpose — a low figure there is a gap in the *table*, not a
 hole in the pack.
 
-**Progress does not move.** `topicCards`, `bookmarked`, `seenTests` and `attempts`
-stay filed under the *primary* grammar's topic ids whichever book is open,
-because that is the syllabus the questions were written against. A further
-grammar's section reads the progress of the topics it teaches
-(`Content.primaryTopicsFor`), and a round opened on one is graded against the
-topic its test belongs to — never against the section it was reached through,
-which would file a card under an id no question belongs to. `bookmark`,
-`unbookmark` and `dismissTopic` all map through `primaryTopicsFor` for that
-reason.
+**Progress does not move.** `topicCards`, `seenTests` and `attempts` stay filed
+under the *primary* grammar's topic ids whichever book is open, because that is
+the syllabus the questions were written against. A further grammar's section
+reads the progress of the topics it teaches (`Content.primaryTopicsFor`), and a
+round opened on one is graded against the topic its test belongs to — never
+against the section it was reached through, which would file a card under an id
+no question belongs to. `dismissTopic`, `enrolTopic` and `excludeFromRoll` all
+map through `primaryTopicsFor` for that reason.
+
+**`bookmarked` is the one exception, and it is exactly the opposite.** A
+bookmark is filed under the *section's own* id, whichever book that is. What the
+rest of the record is about is a syllabus; what a bookmark is about is a page,
+and two books are not equally good page by page — a mark on Lane's predicative
+dative says nothing about how well Bennett explains the dative. So the marks are
+per book: bookmarking in one leaves the other alone, and the index's shelf shows
+the marks made in the book now open. Two sections of a *single* book that teach
+one topic of the other are likewise two pages and two marks. Nothing migrates
+for it: a page of the primary grammar is keyed by its own id either way, so
+every file written before this reads unchanged.
+
+The dividing line, whenever a new field arrives: does it answer for a bank of
+questions, or for a page of prose? `noRoll` refuses the questions, so it fans
+out over `primaryTopicsFor` like the cards. `bookmarked` marks the prose, so it
+does not.
 
 So switching books is a view change: no migration, no schema version, no second
 store to keep in step. `Progress.grammarId` records which book is open; a file
@@ -191,11 +207,13 @@ without it is the primary, which is every file written before there was a second
 book.
 
 The consequence to state rather than discover: **two sections of one book that
-teach the same topic of the other move in lockstep.** There is one bank of
-dative questions, so there is one answer to give about them; a finer one would
-be invented. Bookmarking either marks both, and dismissing either takes both
-off the pile, for the same reason. `packages/core/src/grammars.test.ts` asserts it
-so it cannot drift into a surprise.
+teach the same topic of the other move in lockstep** — everything about the
+questions, that is. There is one bank of dative questions, so there is one
+answer to give about them; a finer one would be invented. Dismissing either
+takes both off the pile, and taking either off the die takes both, for that
+reason. Bookmarking either marks only the one marked, for the opposite reason.
+`packages/core/src/grammars.test.ts` asserts both halves so neither can drift
+into a surprise.
 
 `questionId` (core) is *not* what the **syllabus** is keyed by — see above — and
 it is the only key left the day a pack generates questions against a second

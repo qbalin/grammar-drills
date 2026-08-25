@@ -3083,17 +3083,6 @@ export function App({ content, session, storage }: Props) {
             const sec = sections[at];
             if (!sec) return null;
             const earlier = session.attemptsFor(overlay.sectionId);
-            /*
-             * Whether there is anything to file a bookmark under.
-             *
-             * A section of a further grammar the crosswalk does not reach has
-             * no primary topic, so `Session.bookmark` would return having done
-             * nothing and the control would be a press that changes the screen
-             * not at all. The sheet draws no bookmark when it is handed no way
-             * to set one, which is the honest shape of "there is nothing here
-             * to come back to".
-             */
-            const markable = content.primaryTopicsFor(sec.id).length > 0;
             return (
               <GrammarSheet
                 section={sec}
@@ -3127,12 +3116,11 @@ export function App({ content, session, storage }: Props) {
                 // render happens because `bump` ticked. So the mark is right
                 // the moment it is pressed, and right again after a page turn —
                 // which changes `overlay.sectionId`, and so changes `sec`.
-                bookmarked={markable ? session.isBookmarked(sec.id) : undefined}
-                onBookmark={
-                  markable
-                    ? () => toggleBookmark({ sectionId: sec.id, title: sec.title })
-                    : undefined
-                }
+                bookmarked={session.isBookmarked(sec.id)}
+                // Every page can carry one, a reading page and a section the
+                // crosswalk does not reach included: the mark is filed under
+                // the page's own id, so there is nothing to look up first.
+                onBookmark={() => toggleBookmark({ sectionId: sec.id, title: sec.title })}
                 onStudy={() =>
                   setOverlay(
                     // Straight back when the topic sheet is what opened this

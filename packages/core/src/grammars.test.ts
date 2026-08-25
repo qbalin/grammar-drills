@@ -212,20 +212,44 @@ describe("a pack with more than one grammar", () => {
     expect(s.parkedRound("review")).toBeNull();
   });
 
-  it("files a bookmark under the primary topic, whichever book set it", () => {
-    // Bookmarks go where everything else here goes. Set through the second book,
-    // read back through the first, and nothing on disk names the second.
+  it("files a bookmark under the page that carries it, not the topic it teaches", () => {
+    /*
+     * The one fact here that does *not* go where the rest goes. A bookmark is a
+     * mark on a page, and the books are not equally good page by page — so it
+     * is filed under the section's own id, and the other book knows nothing
+     * about it.
+     */
     const s = session();
     s.setGrammar("second");
     s.bookmark("sg-100-nouns-a");
-    expect(s.progress().bookmarked).toEqual(["tg-020-nouns"]);
-    expect(JSON.stringify(s.progress())).not.toContain("sg-100");
+    expect(s.progress().bookmarked).toEqual(["sg-100-nouns-a"]);
+    expect(JSON.stringify(s.progress())).not.toContain("tg-020-nouns");
 
     s.setGrammar("tg");
-    expect(s.isBookmarked("tg-020-nouns")).toBe(true);
-    s.unbookmark("tg-020-nouns");
+    expect(s.isBookmarked("tg-020-nouns")).toBe(false);
     s.setGrammar("second");
+    expect(s.isBookmarked("sg-100-nouns-a")).toBe(true);
+    s.unbookmark("sg-100-nouns-a");
     expect(s.isBookmarked("sg-100-nouns-a")).toBe(false);
+  });
+
+  it("keeps each book's shelf to the marks made in it", () => {
+    // What the change is for: the two books are marked apart, and the index's
+    // shelf shows the book it is drawn over.
+    const s = session();
+    s.bookmark("tg-030-verbs");
+    s.setGrammar("second");
+    s.bookmark("sg-200-verbs");
+
+    expect(s.bookmarkedTopics().map((t) => t.sectionId)).toEqual([
+      "sg-200-verbs",
+    ]);
+    s.setGrammar("tg");
+    expect(s.bookmarkedTopics().map((t) => t.sectionId)).toEqual([
+      "tg-030-verbs",
+    ]);
+    // Both are on disk throughout; only which of them is drawn moved.
+    expect(s.progress().bookmarked).toEqual(["tg-030-verbs", "sg-200-verbs"]);
   });
 
   it("shows work done in one book when the other is opened", () => {
@@ -260,16 +284,18 @@ describe("a pack with more than one grammar", () => {
       graded.get("sg-110-nouns-b")!.answered,
     );
 
-    // And the bookmark with them: it is filed under the one topic they share, so
-    // marking either marks both.
+    // The bookmark is the exception, and the contrast is the point. Everything
+    // above is a fact about the bank of questions the two halves share; a
+    // bookmark is a mark on a page, and these are two pages.
     s.bookmark("sg-100-nouns-a");
     const marked = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
     expect(marked.get("sg-100-nouns-a")!.bookmarked).toBe(true);
-    expect(marked.get("sg-110-nouns-b")!.bookmarked).toBe(true);
+    expect(marked.get("sg-110-nouns-b")!.bookmarked).toBe(false);
+    expect(s.progress().bookmarked).toEqual(["sg-100-nouns-a"]);
 
-    // And the die with it, for the same reason. Taking one half off the die
-    // while the other went on being rolled would offer the same bank of
-    // questions under a name the student had just refused.
+    // The die is not the exception. Taking one half off the die while the other
+    // went on being rolled would offer the same bank of questions under a name
+    // the student had just refused.
     s.excludeFromRoll("sg-110-nouns-b");
     const off = new Map(s.grammarMap().map((t) => [t.sectionId, t]));
     expect(off.get("sg-100-nouns-a")!.noRoll).toBe(true);
@@ -285,13 +311,14 @@ describe("a pack with more than one grammar", () => {
     expect(orphan.questions).toBe(0);
     expect(orphan.scheduled).toBe(false);
     expect(s.serveTest("sg-300-orphan")).toBeUndefined();
-    // And it cannot be bookmarked: there is no primary topic to file the mark
-    // under, which is the same silence as its having no questions.
+    // It can still be bookmarked, though, and that is not the same silence: the
+    // mark goes under the page's own id, and a page worth coming back to is
+    // worth marking whether or not anybody wrote questions against it.
     s.bookmark("sg-300-orphan");
-    expect(s.isBookmarked("sg-300-orphan")).toBe(false);
-    expect(s.progress().bookmarked).toBeUndefined();
-    // Nor taken off the die: with no questions behind it, the die would never
-    // have rolled it in the first place.
+    expect(s.isBookmarked("sg-300-orphan")).toBe(true);
+    expect(s.progress().bookmarked).toEqual(["sg-300-orphan"]);
+    // It cannot be taken off the die: with no questions behind it, the die
+    // would never have rolled it in the first place.
     s.excludeFromRoll("sg-300-orphan");
     expect(s.isExcludedFromRoll("sg-300-orphan")).toBe(false);
     expect(s.progress().noRoll).toBeUndefined();

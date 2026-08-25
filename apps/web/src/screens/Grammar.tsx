@@ -116,11 +116,11 @@ export function GrammarSheet({
    * Bookmark the section being read, or take the bookmark off.
    *
    * The two go together and both are optional, so a reader mounted without them
-   * is the reader as it was. Absent is also how the parent says *this* section
-   * cannot carry one: a section of a further grammar the crosswalk does not
-   * reach has no primary topic to file the mark under, and `Session.bookmark`
-   * returns having done nothing. A control that cannot do its one job is worse
-   * than no control, so there is none.
+   * is the reader as it was — which is the whole of what absent means now. It
+   * used to mean more: a section of a further grammar the crosswalk did not
+   * reach had no primary topic to file the mark under, and the parent said so
+   * by handing over no control. A bookmark is filed under the page's own id
+   * now, so there is no such section and the app always hands both over.
    */
   onBookmark?: () => void;
   /**

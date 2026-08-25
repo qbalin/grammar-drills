@@ -284,12 +284,12 @@ describe("bookmarking the page being read", () => {
     expect(off.className).toContain("iconbtn--marked");
   });
 
-  it("offers nothing where there is nothing to file the mark under", () => {
+  it("offers nothing to a reader mounted without a way to set one", () => {
     /*
-     * A section of a further grammar the crosswalk does not reach has no
-     * primary topic, so `Session.bookmark` returns having done nothing. The
-     * parent says so by handing over no way to set one, and a control that
-     * cannot do its one job is worse than no control.
+     * The props are optional so that this sheet can be shown as it was before
+     * it could mark anything. The app itself always hands both over now: a
+     * bookmark is filed under the page's own id, so there is no longer a
+     * section that cannot carry one.
      */
     mountPaged();
     expect(screen.queryByRole("button", { name: /^Bookmark / })).toBeNull();

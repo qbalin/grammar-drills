@@ -684,12 +684,21 @@ export interface Progress {
    */
   practise?: PractiseRun | null;
   /**
-   * Topics the student bookmarked, in the order they were marked.
+   * Pages the student bookmarked, in the order they were marked.
    *
-   * Filed under **primary** topic ids, like everything else here: a further
-   * grammar's section that teaches two primary topics bookmarks both, and the
-   * bookmark is still there when the other book is opened. A file that never
-   * bookmarked anything does not carry the field.
+   * Filed under **section** ids — the page's own, whichever book it is in — and
+   * this is the one field here not filed under the primary grammar's ids. The
+   * rest of this record is about a syllabus, and a further grammar's section
+   * reaches that syllabus through the crosswalk. A bookmark is about a page: a
+   * mark on Lane's predicative dative says nothing about Bennett's dative, and
+   * the two books are not equally good page by page. So the marks are per book,
+   * and the index's shelf shows the ones made in the book now open.
+   *
+   * A file that never bookmarked anything does not carry the field. Files
+   * written before this were keyed by primary topic id, which for a page of the
+   * primary grammar *is* its own id — so those marks carry over untouched, and
+   * a mark set through a further book reads as the primary page it was filed
+   * under. Nothing migrates it; there is nothing to migrate.
    *
    * The one thing on a topic that the app does not derive. Everything else the
    * index shows — what is due, what has been answered, what keeps being failed
@@ -705,10 +714,12 @@ export interface Progress {
    * not want them coming up again, however few of their questions are left. So
    * they can be taken off the die, one at a time, from the topic's own sheet.
    *
-   * Filed under **primary** topic ids like `bookmarked`, and for the same reason:
-   * a further grammar's section that teaches two primary topics takes both off,
-   * and the exclusion is still there when the other book is opened. A file that
-   * has never excluded anything does not carry the field.
+   * Filed under **primary** topic ids, which is where `bookmarked` above no
+   * longer goes, and the difference is the point: what this refuses is a bank
+   * of questions. A further grammar's section that teaches two primary topics
+   * takes both off, and the exclusion is still there when the other book is
+   * opened — because it is the same questions either book would have served. A
+   * file that has never excluded anything does not carry the field.
    *
    * It is not a dismissal and does not touch the review pile. What is due is
    * still due, the topic is still on the index, and practising it by hand still

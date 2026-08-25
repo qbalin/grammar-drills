@@ -141,16 +141,25 @@ export interface TopicProgress {
   /** How many the bank holds — no one round ever exhausts it. */
   questions: number;
   /**
-   * The student bookmarked this one. The one fact on a topic that is not
+   * The student bookmarked this page. The one fact on a topic that is not
    * derived from the record of study.
+   *
+   * The mark on *this* section, not on the topics it teaches: a bookmark is
+   * filed under the id of the page it was set on, so this is read straight off
+   * `sectionId` rather than through the crosswalk like everything else here.
+   * See `Progress.bookmarked`.
    */
   bookmarked: boolean;
   /**
    * The student took this one off the die — see `Progress.noRoll`.
    *
    * The second fact here that is not derived from the record of study, and the
-   * mirror of `bookmarked`: one says come back to this, the other says stop
-   * offering me this at random. Neither touches the review pile.
+   * near-mirror of `bookmarked`: one says come back to this, the other says
+   * stop offering me this at random. Neither touches the review pile.
+   *
+   * Near, because they are not filed alike. This one is a fact about a bank of
+   * questions and so goes under the primary topics that carry them; a bookmark
+   * is a fact about a page of prose and stays on the page.
    */
   noRoll: boolean;
   /**
@@ -551,59 +560,61 @@ export class Session {
   }
 
   /**
-   * Bookmark a topic, or take the bookmark off.
+   * Bookmark a page, or take the bookmark off.
    *
-   * Filed under the primary topics the section teaches, like every other fact
-   * about a topic here, so a bookmark survives a book switch and a section of a
-   * further grammar that teaches two of the primary's bookmarks both — the
-   * lockstep `grammars.test.ts` asserts for the rest of progress.
+   * Filed under the section's **own** id, and it is the one thing here that is
+   * not filed under the primary topics the section teaches. Everything else on
+   * this record is about a syllabus — a card, an answer, a bank of questions —
+   * and a syllabus is what the crosswalk exists to reach. A bookmark is not: it
+   * is a mark on a page of a book, and two books are not equally good page by
+   * page. Bennett's dative and Lane's predicative dative are one topic and two
+   * pages, and somebody who marked the second said nothing about the first.
    *
-   * A section the crosswalk does not reach has no primary topic to file under
-   * and cannot be bookmarked. That is the same silence as its having no
-   * questions: there is nothing there to come back to. A screen that offers the
-   * mark has to ask before it draws the control, because this returns having
-   * done nothing.
+   * So a mark set in one book is that book's, and opening another shows the
+   * marks made in that one. Two sections of a single book that teach the same
+   * primary topic are likewise two pages and two answers, which is the one
+   * place this parts company with `excludeFromRoll` below.
+   *
+   * Any section can carry one, a reading page and a section the crosswalk does
+   * not reach included: there is nothing to file under and nothing to look up,
+   * only a page to come back to.
    */
   bookmark(sectionId: string): void {
-    const ids = this.content.primaryTopicsFor(sectionId);
     const marked = this.p.bookmarked ?? [];
-    const added = ids.filter((id) => !marked.includes(id));
-    if (added.length === 0) return;
-    this.p.bookmarked = [...marked, ...added];
+    if (marked.includes(sectionId)) return;
+    this.p.bookmarked = [...marked, sectionId];
     this.touch();
   }
 
   unbookmark(sectionId: string): void {
-    const ids = new Set(this.content.primaryTopicsFor(sectionId));
     const marked = this.p.bookmarked ?? [];
-    const left = marked.filter((id) => !ids.has(id));
+    const left = marked.filter((id) => id !== sectionId);
     if (left.length === marked.length) return;
     this.p.bookmarked = left;
     this.touch();
   }
 
-  /**
-   * Whether the bookmark is on. Any of the section's primary topics, matching
-   * `bookmark`, which sets them all: the two only disagree on a file where one
-   * of them was marked through a book that teaches them separately.
-   */
+  /** Whether this page carries the mark — the id itself, as `bookmark` set it. */
   isBookmarked(sectionId: string): boolean {
-    const marked = this.p.bookmarked;
-    if (!marked || marked.length === 0) return false;
-    return this.content
-      .primaryTopicsFor(sectionId)
-      .some((id) => marked.includes(id));
+    return this.p.bookmarked?.includes(sectionId) ?? false;
   }
 
   /**
    * Take a topic off the die, or put it back.
    *
-   * `bookmark` and `unbookmark` in every respect — the same fan-out over
-   * `primaryTopicsFor`, the same absent-field-means-empty — because it is the
-   * same kind of fact: something the student said about a topic that nothing
-   * could work out for them. What it is *not* is a dismissal. The review pile is
-   * untouched, the index still lists it, and practising it by hand still works;
-   * the only thing this decides is whether `rollTopic` may hand it over.
+   * The other thing the student says that nothing could work out for them, and
+   * for a long time it was `bookmark` in every respect. It is not any more, and
+   * the difference is the whole of why: this one keeps the fan-out over
+   * `primaryTopicsFor`, because what it refuses is a **bank of questions**.
+   * There is one bank of dative questions behind both of Lane's dative pages,
+   * so taking one page off the die while the other went on being rolled would
+   * offer the student the very questions they had just declined, under another
+   * name. A bookmark points at prose and can differ page by page; this points
+   * at the questions and cannot.
+   *
+   * What it is *not* is a dismissal. The review pile is untouched, the index
+   * still lists it, and practising it by hand still works; the only thing this
+   * decides is whether `rollTopic` may hand it over.
    *
    * A section the crosswalk does not reach has no primary topic to file under
    * and cannot be excluded — the same silence as its having no questions, and
@@ -629,8 +640,8 @@ export class Session {
 
   /**
    * Whether the die skips this one. Any of the section's primary topics, to
-   * match `excludeFromRoll`, which sets them all — the reading `isBookmarked` takes
-   * for the same reason.
+   * match `excludeFromRoll`, which sets them all. `isBookmarked` no longer reads
+   * this way: it asks about a page, and this asks about a bank of questions.
    */
   isExcludedFromRoll(sectionId: string): boolean {
     const off = this.p.noRoll;
@@ -2006,8 +2017,9 @@ export class Session {
         scheduled: cards.length > 0,
         answered,
         questions,
-        // Any of them, matching `bookmark`, which sets them all.
-        bookmarked: primary.some((id) => marked.has(id)),
+        // This page's own mark, not the topics it teaches — the one fact on
+        // this row that does not resolve through the crosswalk. See `bookmark`.
+        bookmarked: marked.has(s.id),
         // Likewise `excludeFromRoll`.
         noRoll: primary.some((id) => noRoll.has(id)),
         lapses: cards.reduce((n, c) => n + (c.lapses ?? 0), 0),
@@ -2016,11 +2028,13 @@ export class Session {
   }
 
   /**
-   * The bookmarked topics, in book order — what the index pins at its top.
+   * The bookmarked pages of the open book, in its order — what the index pins
+   * at its top.
    *
-   * Out of `grammarMap` rather than out of `bookmarked` directly, so a mark set
-   * in one book is drawn here as the *open* book's section, with that book's
-   * title and reference on it.
+   * Out of `grammarMap` rather than out of `bookmarked` directly, which is what
+   * makes the shelf the open book's own: the marks are read against that book's
+   * sections, so a page marked in another book is not on it, and an id for a
+   * book that is not loaded draws nothing rather than a row with no title.
    */
   bookmarkedTopics(now: Date = new Date()): TopicProgress[] {
     return this.grammarMap(now).filter((t) => t.bookmarked);

@@ -642,7 +642,12 @@ went was a second, parallel number that no review ever read.
 
 **Two marks of your own.** A topic can be **bookmarked** — it pins to a shelf
 above the families on the index, in book order, and it is the one fact about a
-topic the app does not derive from your record of study. The ribbon is in the
+topic the app does not derive from your record of study. It belongs to the book
+you set it in: where a language ships more than one grammar, marking a page of
+Lane says nothing about Bennett's page on the same point, because the two books
+are not equally good page by page and the mark is your note about *this*
+explanation. The die-exclusion below is the other way round — it refuses a bank
+of questions, and both books serve the same bank. The ribbon is in the
 reader's own header as well as on the topic sheet, because the moment you know a
 section is one to come back to is a moment spent reading it, and saying so used
 to cost a way out of the book and back in. And a topic that keeps coming
@@ -947,8 +952,10 @@ was served longer ago, which is what a practice run breaks a tie with, and a cap
 is fine for that.)
 
 Where you are is in there too: `practise` (the run in flight, if any — see
-[One way forward](#one-way-forward)), `bookmarked` (the topics you marked, filed
-under the primary grammar's ids like everything else) and `openRound` (the round
+[One way forward](#one-way-forward)), `bookmarked` (the pages you marked, filed
+under their own section ids — the one thing here *not* filed under the primary
+grammar's, because a bookmark is a note on a page rather than a fact about the
+syllabus) and `openRound` (the round
 of questions in flight, so closing the app mid-test still leaves the topic with
 exactly one review). Which *errand* you are on is deliberately not: it resets on
 every launch, so a waiting pile cannot be hidden from you by a saved preference.

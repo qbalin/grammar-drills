@@ -63,6 +63,26 @@ export function importProgress(raw: string, content: Content): Progress {
   }
 
   const known = (id: string) => content.getSection(id) !== undefined;
+  /*
+   * The books this bundle declares but has not loaded.
+   *
+   * A further grammar is fetched only when somebody switches to it
+   * (`Content.addGrammar`), so on a launch that has stayed in the primary,
+   * `known` cannot tell one of Lane's sections from a section of no book at
+   * all. Bookmarks are the one field keyed by a section's own id, so this is
+   * the one filter that has to know the difference.
+   *
+   * Two fields and they are easy to cross: `Content` keys its books by `id`
+   * ("lane"), while a section id carries `idPrefix` ("ln"). The hyphen is
+   * matched with the prefix so that one prefix can never match a longer one.
+   *
+   * Off `content.profile` rather than the module's, which is the same object in
+   * the app: what is declared and what is loaded have to be read off one
+   * bundle, or the filter answers about a pack nobody handed it.
+   */
+  const unloaded = (content.profile.grammars ?? [])
+    .filter((g) => !content.grammarIds().includes(g.id))
+    .map((g) => `${g.idPrefix}-`);
   const keepKeys = <T>(record: Record<string, T> | undefined) =>
     Object.fromEntries(
       Object.entries(record ?? {}).filter(([id]) => known(id)),
@@ -89,12 +109,25 @@ export function importProgress(raw: string, content: Content): Progress {
      * topic id moved.
      */
     sentenceCards: parsed.sentenceCards ?? {},
-    // Lists rather than records, so they take the same filter by hand. A
-    // bookmark on a topic this bundle does not hold would pin a row that cannot
-    // be drawn, and a topic held off the die that is not in the book is holding
-    // nothing off anything.
+    /*
+     * Lists rather than records, so they take the same filter by hand — and a
+     * topic held off the die that is not in the book is holding nothing off
+     * anything.
+     *
+     * The bookmarks take a wider one, because the filter's job is to drop what
+     * this bundle can *disprove*. A bookmark is filed under a page's own id, so
+     * a book that has not been loaded cannot disprove one of its pages and its
+     * marks are kept; a book that has been loaded can, so a stale id of its own
+     * still goes. Kept ids that nothing resolves are dead weight rather than a
+     * broken row: the shelf is drawn from the open book's sections, so an id
+     * with no section behind it draws nothing and counts as nothing.
+     */
     ...(parsed.bookmarked
-      ? { bookmarked: parsed.bookmarked.filter((id) => known(id)) }
+      ? {
+          bookmarked: parsed.bookmarked.filter(
+            (id) => known(id) || unloaded.some((p) => id.startsWith(p)),
+          ),
+        }
       : {}),
     // A file exported before the mark was called a bookmark. Filtered on the
     // same terms and left under its old name for `Session.migrate` to fold on
