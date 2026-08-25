@@ -675,6 +675,52 @@ describe("Session vocabulary: the sentence a word was met in", () => {
     expect(s.vocabContexts(id)).toHaveLength(1);
   });
 
+  it("counts one line met under two topics as the one line it is", () => {
+    const { s, id } = start();
+    s.addVocabContext(id, { ...reference, sectionId: "decl1" }, now);
+
+    // The page is out of the key, as `source` and `index` are. A sentence the
+    // bank files under two topics is still one sentence, and keyed on where it
+    // was met a student who saw it twice would find their card holding it
+    // twice — which is the duplicate this refuses.
+    expect(
+      s.addVocabContext(id, { ...reference, sectionId: "pres" }, later(1)),
+    ).toBe("duplicate");
+    expect(s.vocabContexts(id)).toHaveLength(1);
+    // And the first one keeps its page rather than being overwritten by the
+    // press that did nothing.
+    expect(s.vocabContexts(id)[0]?.sectionId).toBe("decl1");
+  });
+
+  it("keeps the page when the sentence on it is corrected", () => {
+    const { s, id } = start();
+    s.addVocabContext(id, { ...reference, sectionId: "decl1" }, now);
+
+    // Fixing a typo does not move a line to another page of the book, and a
+    // student tidying their own card should not be quietly charged its
+    // provenance for it.
+    s.updateVocabContext(id, now.toISOString(), {
+      sentence: "Puellae rosam laudābant.",
+    });
+    expect(s.vocabContexts(id)[0]?.sentence).toBe("Puellae rosam laudābant.");
+    expect(s.vocabContexts(id)[0]?.sectionId).toBe("decl1");
+  });
+
+  it("leaves a context that names no page without one", () => {
+    const { s, id } = start();
+    // Every context saved before the field existed, and every word typed in
+    // with no question on screen. Absent is the answer, and it survives being
+    // written, moved and read back rather than being filled in with a guess.
+    s.addVocabContext(id, reference, now);
+    s.addVocabContext(id, { ...reference, sentence: "Manum tenuit.", sectionId: "pres" }, later(1));
+    s.moveVocabContext(id, later(1).toISOString(), -1);
+
+    const [first, second] = s.vocabContexts(id);
+    expect(first?.sectionId).toBe("pres");
+    expect(second).toBeDefined();
+    expect("sectionId" in second!).toBe(false);
+  });
+
   it("adds a second question's sentence to a word already saved", () => {
     const { s, id } = start();
     s.addVocabContext(id, reference, now);

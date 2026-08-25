@@ -562,6 +562,40 @@ span.status__title {
   font-style: italic;
 }
 
+/* The page of the book a line came off, under the line, beside the attribution
+   above because it is the same kind of remark about the same sentence. Quiet:
+   it stands inside a block whose sentence is the thing being read, and a link
+   drawn as loudly as the text would make every card look like a menu.
+
+   Right-aligned to sit with `.attribution`, and `margin-left: auto` rather than
+   `text-align` because it is a flex row of two spans — the ref dimmed against
+   the title, as the status bar draws the same pair. */
+.topiclink {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+  margin-left: auto;
+  /* The `.linkrow` buttons' own floor. This one is smaller than they are and
+     sits under a sentence words can be held in, so the target has to be worth
+     aiming at rather than worth the size of its text. */
+  min-height: 2.4rem;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  text-align: right;
+}
+
+.topiclink__ref {
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.topiclink__title {
+  /* A long title takes the room it needs and wraps, rather than pushing the
+     ref off the edge of a phone. */
+  overflow-wrap: break-word;
+}
+
 /* The English half of a context: the question the sentence under it answered.
    Between the label and the sentence, so it reads as the setting rather than as
    a note about it — which is also the shape the hint takes on the card front,

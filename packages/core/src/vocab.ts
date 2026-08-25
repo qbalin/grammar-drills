@@ -39,6 +39,12 @@ export type ContextOutcome = "added" | "duplicate" | "full" | "off" | "missing";
  * `index` is out of it too. Same card, same sentence, different index only
  * happens when one lemma stands twice in a line, and that is one context with
  * two possible highlights; the first one wins.
+ *
+ * And `sectionId` is out of it for that same reason one step further out. A
+ * sentence can be met under two topics — the bank files some questions under
+ * both — and it is still one sentence: keyed on the page it came off, a student
+ * who met the line twice would find their card holding it twice, which is the
+ * duplicate this function exists to refuse. The first one keeps its page.
  */
 function contextKey(context: NewVocabContext, fold: Fold): string {
   return `${foldKey(context.prompt, fold)}\n${foldKey(context.sentence, fold)}`;
@@ -51,6 +57,13 @@ function contextKey(context: NewVocabContext, fold: Fold): string {
  * jobs, and this was the most self-contained of them: a store of cards, a
  * scheduler track of its own, and the contexts hanging off each card. Nothing
  * here knows about topics, rounds, the book cursor or the syllabus.
+ *
+ * A context *carries* a topic id since it began recording the page its sentence
+ * came off, and that is not a knowing: it is written by the caller, stored, and
+ * handed back. Nothing in this file resolves one, validates one, or would
+ * behave any differently if every one of them named a topic no book has. Keep
+ * it that way — the moment this file looks a section up it has learnt the
+ * syllabus, and the split above stops being true.
  *
  * It reads the progress through a **getter** rather than holding the record.
  * `Session.restore` replaces `this.p` wholesale for an undo, and a deck that had
@@ -240,7 +253,10 @@ export class VocabDeck {
    *
    * `source` is not patchable: rewriting the words of your own sentence does not
    * make it the reference, and the label is the only thing standing between a
-   * card and quietly teaching back a mistake.
+   * card and quietly teaching back a mistake. Nor is `sectionId`, for the same
+   * shape of reason: correcting the words of a line does not move it to another
+   * page of the book, and a student fixing a typo has not said anything at all
+   * about where they met it.
    */
   updateVocabContext(
     cardId: string,

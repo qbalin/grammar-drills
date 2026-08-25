@@ -410,6 +410,7 @@ export function VocabReview({
   onHoldWord,
   onInspectWord,
   onCopy,
+  topicLink,
 }: {
   card: VocabCardState;
   revealed: boolean;
@@ -431,6 +432,21 @@ export function VocabReview({
   onHoldWord: (word: string, kept: VocabContext, index: number) => void;
   /** Double-click: look the word up rather than record it, as on a question. */
   onInspectWord: (word: string) => void;
+  /**
+   * The page a kept sentence came off, drawn under it — or nothing.
+   *
+   * A function rather than a node because a card holds up to eight sentences
+   * and they need not share a page: the topic is a fact about the *line*, not
+   * about the word, and a word met in the ablative and again in the fourth
+   * declension has honestly been met twice. Two contexts off one page each draw
+   * their own, which is the truth about each block rather than a list of the
+   * card's topics printed once at the foot.
+   *
+   * Returns nothing for a context that has no page — one saved before the field
+   * existed, or a word typed in with no question on screen — so a card mixing
+   * old and new is not a card with a hole in it.
+   */
+  topicLink?: (sectionId?: string) => ReactNode;
   /**
    * One block's Latin onto the clipboard. It earns its place for the reason the
    * graded screen's buttons do: the words are `.word` spans now, and `.word`
@@ -520,6 +536,15 @@ export function VocabReview({
                     onInspect={onInspectWord}
                   />
                 </div>
+                {/* Under the line rather than in the row of card actions at the
+                    foot, because it belongs to this sentence and not to the
+                    word: the next block may name a different page, and one link
+                    standing for all of them would be picking a topic for the
+                    others. It is behind the reveal for free, the blocks being
+                    drawn only once the answer is out — a card fronted with
+                    `Fourth Declension` over the gloss *hand* has given itself
+                    away. */}
+                {topicLink?.(c.sectionId)}
               </div>
             ))}
           </div>
@@ -585,6 +610,7 @@ export function SentenceReview({
   onHoldWord,
   onInspectWord,
   onCopy,
+  topicLink,
 }: {
   card: SentenceCardState;
   revealed: boolean;
@@ -598,6 +624,13 @@ export function SentenceReview({
   onHoldWord: (word: string, index: number) => void;
   onInspectWord: (word: string) => void;
   onCopy: () => void;
+  /**
+   * The page this sentence came off. One card, one line, so one of them — but
+   * the same prop `VocabReview` takes, because it is the same statement about
+   * the same kind of thing and two shapes for it would be two of them to keep
+   * in step. Nothing where the pack no longer holds the topic.
+   */
+  topicLink?: (sectionId?: string) => ReactNode;
 }) {
   return (
     <>
@@ -628,6 +661,12 @@ export function SentenceReview({
                   {card.source.locus ? ` ${card.source.locus}` : ""}
                 </div>
               )}
+              {/* Last in the block, under the attribution, because the two say
+                  the same kind of thing in the same breath: who wrote the line,
+                  and where the book teaches it. Inside the reveal — the topic
+                  is half the answer on a card whose whole question is how to
+                  say it. */}
+              {topicLink?.(card.sectionId)}
             </div>
           </div>
         )}

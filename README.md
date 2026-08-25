@@ -266,6 +266,44 @@ Turn it off in Settings — `a` in the terminal's vocabulary list — and words 
 recorded alone. The preference travels with your progress, so it holds on both
 surfaces; sentences already saved stay where they are.
 
+### And the page it came off
+
+Each sentence on the back names the topic it was met under, and the name is a
+tap into the book:
+
+```
+Reference
+  The soldiers raised their hands.
+  Mīlitēs manūs sustulērunt.
+                                       § 48  Fourth Declension
+```
+
+A vocabulary card and a kept sentence were the only two screens in the app with
+no way into the grammar, and that was not an oversight so much as an unfinished
+thought. The status bar carries the topic the whole time a *question* is on
+screen, and it deliberately stops doing so on a card — a word being graded is
+not the topic that carried it, and `Fourth Declension` printed over the gloss
+*hand* is most of the answer. So the link lives where the attribution lives,
+under the sentence and behind the reveal, and says the same kind of thing: `—
+Cicero, Tusc. 2.13` names who wrote the line, `§ 48` names where the book
+teaches it.
+
+**Per sentence, not per card**, because a card holding eight of them can have
+met them on eight different pages. Two lines off one page draw the same link
+twice, which is the truth about each of them rather than a repetition.
+
+The page is **written down when the word is held**, not worked out afterwards
+from the question bank — the bank is regenerated, and a card that went looking
+for its question months later would be answering from a book that had moved.
+Which means the cards you already have say nothing, and so does a word typed
+into the vocabulary list with no question on screen. That is the honest answer
+rather than a gap: no link is drawn, and none is promised. A topic the pack no
+longer holds is dropped the same way, for the same reason the parser un-links a
+reference to a section that is not there.
+
+A kept sentence has carried its topic since the deck existed — it just had
+nowhere to say it.
+
 ## Layout
 
 ```

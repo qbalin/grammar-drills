@@ -1381,6 +1381,11 @@ describe("the sentence a recorded word was met in", () => {
     expect(context?.sentence).toBe("puella rosam amat");
     expect(context?.prompt).toBe("The girl loves the rose.");
     expect(context?.index).toBe(2);
+    // The page it was met on, written here though the terminal draws no link to
+    // it yet: a card is one record the two surfaces share, and one that kept
+    // its topic on the phone but not here would be the two of them disagreeing
+    // about the same word.
+    expect(context?.sectionId).toBe("ag-decl1");
     app.unmount();
   });
 

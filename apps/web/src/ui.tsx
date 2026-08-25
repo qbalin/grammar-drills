@@ -628,6 +628,47 @@ export function CopyButton({
   );
 }
 
+/**
+ * The page of the book a line came off, as a press.
+ *
+ * It sits under a sentence, where the attribution sits, because it says the
+ * same kind of thing about the same line: `— Cicero, Tusc. 2.13` names who
+ * wrote it and this names where the grammar teaches it. A card that has come
+ * round is exactly when a student wants the rule back, and until this the two
+ * card screens were the only ones in the app with no way into the book — the
+ * status bar deliberately prints `Vocabulary` there rather than a topic.
+ *
+ * **Two strings, resolved by the caller.** This file has no `Content` and must
+ * not grow one: the section has to be looked up, checked to still exist, and
+ * printed with its own book's `§` — all three of which are the app's job, and
+ * the second of which decides whether this is drawn at all.
+ *
+ * The ref and the title are separate spans, as they are on the status bar, so
+ * `§ 20-22` can be dimmed against the name without either being a second
+ * button. Announced by the title alone: a screen reader given "§ 20-22" has
+ * been told a number, where a student is owed the name of the page.
+ */
+export function TopicLink({
+  label,
+  title,
+  onOpen,
+}: {
+  label: string;
+  title: string;
+  onOpen: () => void;
+}) {
+  return (
+    <button
+      className="topiclink"
+      onClick={onOpen}
+      aria-label={`Read the grammar for ${title}`}
+    >
+      <span className="topiclink__ref">{label}</span>
+      <span className="topiclink__title">{title}</span>
+    </button>
+  );
+}
+
 export function Toast({
   message,
   action,

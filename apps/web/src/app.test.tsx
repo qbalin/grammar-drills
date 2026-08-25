@@ -14,6 +14,7 @@ import {
   Session,
   emptyProgress,
   type ContentData,
+  type NewVocabContext,
   type Profile,
   type Progress,
 } from "@lang-tutor/core";
@@ -1335,6 +1336,35 @@ describe("holding a word in the trail", () => {
     return mounted;
   }
 
+  it("keeps the topic the trail belongs to, not the round on screen", async () => {
+    const user = userEvent.setup();
+    // An answer on the *present indicative*, read back while the round on
+    // screen is the first declension. The two have to differ for this to say
+    // anything: an `Attempt` carries no section of its own — the trail is
+    // stored keyed by one — so the page can only come from the sheet drawing
+    // it. Wire it to the round instead and a word held here is quietly filed
+    // under whatever the student happens to be answering.
+    const s = new Session(new Content(fixture, testProfile));
+    s.recordAttempt("pres", {
+      prompt: "The poet praises the queen.",
+      answer: "Poēta rēgīnam amat.",
+      submitted: "",
+      rating: 3,
+    });
+    mount(s.progress());
+
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    // The index opens on the family being studied, so the verb page is found
+    // rather than scrolled to.
+    await user.type(within(map).getByLabelText("Find a topic"), "present");
+    await user.click(within(map).getByRole("button", { name: /Present indicative/ }));
+    // The topic sheet draws its trail outright, with no toggle over it.
+    await holdWordIn(".attempt__answer", "amat");
+
+    expect(s.vocabContexts("v-amo")[0]?.sectionId).toBe("pres");
+  });
+
   it("keeps the sentence the attempt was written against, not the one in hand", async () => {
     const user = userEvent.setup();
     const { session } = await trailOpen(user);
@@ -2482,7 +2512,9 @@ describe("a vocabulary card that remembers where the word was met", () => {
     await holdWordIn(".compare__block--reference", "amat");
 
     // The card is the held word's, and its sentence is the reviewed card's —
-    // prompt, source and position all as they stood when `rosam` was taken.
+    // prompt, source, position and the page it came off, all as they stood when
+    // `rosam` was taken. The page crosses with the line because it is a fact
+    // about the line, not about the card being lifted out of.
     expect(session.vocabCard("v-amo")?.citation).toBe("amō, amāre, amāvī, amātum");
     expect(session.vocabContexts("v-amo")).toEqual([
       expect.objectContaining({
@@ -2490,6 +2522,7 @@ describe("a vocabulary card that remembers where the word was met", () => {
         sentence: "Puella rosam amat.",
         source: "answer",
         index: 2,
+        sectionId: "decl1",
       }),
     ]);
   });
@@ -2543,6 +2576,138 @@ describe("a vocabulary card that remembers where the word was met", () => {
     expect(screen.queryByText(/Hold a word to save it/)).toBeNull();
     await user.click(screen.getByRole("button", { name: "Show" }));
     expect(screen.getByText(/Hold a word to save it/)).toBeDefined();
+  });
+});
+
+/**
+ * The page of the book a card's line came off.
+ *
+ * The two card screens are the only ones in the app with no way into the
+ * grammar — the status bar deliberately prints `Vocabulary` there rather than a
+ * topic — so this is the whole of the route, and each of these is about either
+ * finding it or being honestly refused it.
+ */
+describe("the topic a card was met under", () => {
+  const links = () =>
+    screen.queryAllByRole("button", { name: /^Read the grammar for/ });
+  const readFirst = () =>
+    screen.queryByRole("button", { name: "Read the grammar for First declension" });
+
+  const met = (sentence: string, sectionId?: string): NewVocabContext => ({
+    prompt: "The girl loves the rose.",
+    sentence,
+    source: "answer",
+    ...(sectionId ? { sectionId } : {}),
+  });
+
+  /**
+   * A card carrying exactly these contexts, reviewed with the answer out.
+   *
+   * Built through the engine rather than through the screen because two of
+   * these cases cannot be made by holding a word today: a context with no page
+   * is one saved before the field existed, and a context naming a page the pack
+   * has dropped is a rebuild that has already happened.
+   */
+  async function cardShowing(
+    user: ReturnType<typeof userEvent.setup>,
+    contexts: NewVocabContext[],
+  ) {
+    const content = new Content(fixture, testProfile);
+    const s = new Session(content);
+    const id = s.recordVocab(content.lookup("rosam")[0]!);
+    for (const c of contexts) s.addVocabContext(id, c);
+    const mounted = mount(s.progress());
+    await user.click(screen.getByRole("button", { name: "Review" }));
+    await user.click(screen.getByRole("button", { name: "Show" }));
+    return mounted;
+  }
+
+  it("is not on the front of a card, where the topic is half the answer", async () => {
+    const user = userEvent.setup();
+    const { session } = mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await holdWord("rosam");
+    await user.click(screen.getByRole("button", { name: "Review" }));
+
+    // "First declension" over the gloss *rose* is most of the way to `rosa`,
+    // which is why the status bar refuses to name a topic on this screen at
+    // all. It arrives with the sentences, behind Show.
+    expect(readFirst()).toBeNull();
+    await user.click(screen.getByRole("button", { name: "Show" }));
+    expect(readFirst()).not.toBeNull();
+    expect(readFirst()!.textContent).toBe("§ 20-22First declension");
+    // And the page was written down when the word was held, not worked out now.
+    expect(session.vocabContexts("v-rosa")[0]?.sectionId).toBe("decl1");
+  });
+
+  it("opens the book there, and ✕ comes back to the card ungraded", async () => {
+    const user = userEvent.setup();
+    const { session } = await cardShowing(user, [met("Puella rosam amat.", "decl1")]);
+
+    await user.click(readFirst()!);
+    const sheet = screen.getByRole("dialog", { name: "First declension" });
+    expect(within(sheet).getByText(/First-declension nouns end in -a/)).toBeDefined();
+
+    // Reading is not answering: the card is where it was, and nothing about it
+    // has moved.
+    await user.click(within(sheet).getByRole("button", { name: "Close" }));
+    expect(screen.getByText(`Vocabulary · ${profile.ui.sayItIn}`)).toBeDefined();
+    expect(session.vocabCard("v-rosa")?.fsrs.reps).toBe(0);
+  });
+
+  it("draws one per sentence, because the page belongs to the line", async () => {
+    const user = userEvent.setup();
+    await cardShowing(user, [
+      met("Puella rosam amat.", "decl1"),
+      met("Poēta rēgīnam laudat.", "pres"),
+    ]);
+
+    // Two lines met on two pages are two answers, and neither stands for the
+    // other. A card whose sentences agree draws the same link twice, which is
+    // the truth about each block rather than a repeat.
+    expect(readFirst()).not.toBeNull();
+    expect(
+      screen.getByRole("button", { name: "Read the grammar for Present indicative" }),
+    ).toBeDefined();
+  });
+
+  it("says nothing under a sentence with no page to name", async () => {
+    const user = userEvent.setup();
+    await cardShowing(user, [
+      met("Puella rosam amat.", "decl1"),
+      met("Nautae procellam timēbant."),
+    ]);
+
+    // One link on the block that has one is better than none on either: a card
+    // holding an old sentence and a new one is not a card with a hole in it.
+    expect(links()).toHaveLength(1);
+    expect(screen.getByRole("button", { name: /edit this word/ })).toBeDefined();
+  });
+
+  it("never draws a link to a topic the pack no longer holds", async () => {
+    const user = userEvent.setup();
+    await cardShowing(user, [met("Puella rosam amat.", "gone")]);
+
+    // The parser's own rule for a dangling reference, kept here: un-link it
+    // rather than ship a press that goes nowhere.
+    expect(links()).toHaveLength(0);
+  });
+
+  it("is on a kept sentence too, behind its own reveal", async () => {
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "Reveal" }));
+    await user.click(screen.getByRole("button", { name: /keep this sentence/ }));
+    await user.click(screen.getByRole("button", { name: "Review" }));
+
+    expect(readFirst()).toBeNull();
+    // The row of card actions is not what became conditional — only the link.
+    expect(screen.getByRole("button", { name: /forget this sentence/ })).toBeDefined();
+    await user.click(screen.getByRole("button", { name: "Show" }));
+    expect(readFirst()).not.toBeNull();
+
+    await user.click(readFirst()!);
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
   });
 });
 

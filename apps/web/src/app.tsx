@@ -1,4 +1,11 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import {
   Content,
   MAX_CONTEXTS,
@@ -47,7 +54,7 @@ import {
   requestPersistence,
   type StorageReport,
 } from "./storage/quota.js";
-import { Sheet, Toast, TrailProvider, ago, cycleEmphasis } from "./ui.js";
+import { Sheet, Toast, TopicLink, TrailProvider, ago, cycleEmphasis } from "./ui.js";
 import {
   Answering,
   Graded,
@@ -1731,12 +1738,20 @@ export function App({ content, session, storage }: Props) {
    *
    * An index that is absent or below zero means nothing was pointed at, and the
    * field is left off rather than written as −1.
+   *
+   * `sectionId` is the topic the line was met under, and it is a parameter
+   * rather than something read off `sectionId` in scope because three of the
+   * four gestures below are not on a question at all — a word held in a card's
+   * own sentence, in an answer months old, or in a sentence kept from another
+   * topic each belong to a page that is not the one being studied now. Passed in
+   * by the one caller that knows, and left off where nobody does.
    */
   const contextOf = (
     prompt: string,
     sentence: string,
     source: "answer" | "submitted",
     index?: number,
+    sectionId?: string,
   ): NewVocabContext | undefined => {
     if (!session.keepsContext() || !sentence) return undefined;
     return {
@@ -1744,6 +1759,7 @@ export function App({ content, session, storage }: Props) {
       sentence,
       source,
       ...(index === undefined || index < 0 ? {} : { index }),
+      ...(sectionId ? { sectionId } : {}),
     };
   };
 
@@ -1765,6 +1781,7 @@ export function App({ content, session, storage }: Props) {
           where === "answer" ? question.answer : submitted.trim(),
           where,
           index,
+          sectionId ?? undefined,
         )
       : undefined;
 
@@ -1848,9 +1865,19 @@ export function App({ content, session, storage }: Props) {
    * The context arrives built rather than being derived from `question`: there
    * is no question on screen here at all, and the line is a record the app made
    * earlier rather than anything the student is answering now.
+   *
+   * The page comes across with it for the same reason the sentence does. The
+   * line is the one thing being copied, and where it came off the book is a
+   * fact about the line — so a word first met in § 48 is filed under § 48 even
+   * though the card it is being lifted out of is a different word entirely.
+   * Undefined on a context saved before there was a page to keep, which stays
+   * undefined rather than picking up today's topic.
    */
   const holdSavedWord = (word: string, kept: VocabContext, index: number) =>
-    takeWord(word, contextOf(kept.prompt, kept.sentence, kept.source, index));
+    takeWord(
+      word,
+      contextOf(kept.prompt, kept.sentence, kept.source, index, kept.sectionId),
+    );
 
   /**
    * A word held down in an answer already on the record.
@@ -1860,22 +1887,27 @@ export function App({ content, session, storage }: Props) {
    * an attempt carries its own copy of what it was shown. `.trim()` because the
    * trail draws the trimmed line, and the card has to keep the sentence that was
    * actually on the screen.
+   *
+   * **Curried on the topic**, exactly as `markPast` beside it is, and for the
+   * same reason: an `Attempt` carries no section of its own — the trail is
+   * stored keyed by one — so the only place that knows which book page these
+   * answers were given on is the screen drawing them. Four sheets draw a trail,
+   * and each names its own rather than the round the student happens to be on,
+   * which is very often a different topic or none at all.
    */
-  const holdPastWord = (
-    word: string,
-    attempt: Attempt,
-    where: "answer" | "submitted",
-    index: number,
-  ) =>
-    takeWord(
-      word,
-      contextOf(
-        attempt.prompt,
-        where === "answer" ? attempt.answer : attempt.submitted.trim(),
-        where,
-        index,
-      ),
-    );
+  const holdPastWord =
+    (sectionId?: string) =>
+    (word: string, attempt: Attempt, where: "answer" | "submitted", index: number) =>
+      takeWord(
+        word,
+        contextOf(
+          attempt.prompt,
+          where === "answer" ? attempt.answer : attempt.submitted.trim(),
+          where,
+          index,
+          sectionId,
+        ),
+      );
 
   /**
    * A word typed into *record a word* rather than pointed at.
@@ -2224,6 +2256,56 @@ export function App({ content, session, storage }: Props) {
         : "You already have that one.",
       "See it",
       () => setOverlay({ t: "sentence-list", back: under(overlay) }),
+    );
+  };
+
+  /**
+   * The page of the book a line came off, as something to press — or nothing.
+   *
+   * The two card screens are the only ones in the app with no way into the
+   * grammar, and that is deliberate rather than an oversight: the status bar
+   * prints `Vocabulary` or `A sentence you kept` while one is up, because the
+   * topic studied before it is not what the line is about. Which leaves a
+   * student who has just failed to decline a word looking at the one screen
+   * that cannot show them the declension. This is that press, and it is drawn
+   * under the sentence it belongs to rather than in the row of card actions —
+   * see `TopicLink`.
+   *
+   * **A topic that no longer exists draws nothing.** A recorded id names a
+   * section of a pack that gets rebuilt, and the rule the parser keeps for a
+   * dangling reference is the rule here: un-link it rather than ship a promise
+   * the reader can press and be taken nowhere by. Absent ids come through here
+   * too — a card older than the field, a word typed in with no question up —
+   * and take the same road out.
+   *
+   * `back: overlay` is what the status bar's own topic button passes, so ✕
+   * lands back on the card being reviewed: the study screen is a phase and not
+   * an overlay, so `overlay` is null there and closing empties the trail. The
+   * way back *through* the book stays ↩'s job.
+   *
+   * The section is opened exactly as it was recorded, whichever book is open —
+   * "reading, not switching", the argument `onElsewhere` already makes. Its own
+   * book names it, so a section of a further grammar is not printed with the
+   * primary's `§`.
+   *
+   * A recorded id *can* be a further book's: a topic reached through Lane is
+   * drilled under the id it was reached through, which is what the status bar
+   * opens too, and `keepSentence` has been writing the same thing since it
+   * existed. Nothing is mapped back to the primary here, because sending a
+   * student to Bennett for a line they read in Lane is a worse answer than the
+   * one above — and on a device that has never opened that book `getSection`
+   * misses and no link is drawn, which is the same rule again rather than a
+   * special case.
+   */
+  const topicLink = (sectionId?: string): ReactNode => {
+    const sec = sectionId ? content.getSection(sectionId) : undefined;
+    if (!sec) return null;
+    return (
+      <TopicLink
+        label={content.formatRef(sec.ref, content.grammarOf(sec.id))}
+        title={sec.title}
+        onOpen={() => setOverlay({ t: "grammar", sectionId: sec.id, back: overlay })}
+      />
     );
   };
 
@@ -2804,7 +2886,7 @@ export function App({ content, session, storage }: Props) {
                   open={showTrail}
                   onToggle={() => setShowTrail((open) => !open)}
                   onMark={sectionId ? markPast(sectionId) : undefined}
-                  onHoldWord={holdPastWord}
+                  onHoldWord={holdPastWord(sectionId ?? undefined)}
                   onInspectWord={inspectWord}
                 />
               }
@@ -2837,11 +2919,18 @@ export function App({ content, session, storage }: Props) {
                   onHoldWord={(word, i) =>
                     takeWord(
                       word,
-                      contextOf(card.prompt, card.answer, "answer", i),
+                      contextOf(
+                        card.prompt,
+                        card.answer,
+                        "answer",
+                        i,
+                        card.sectionId,
+                      ),
                     )
                   }
                   onInspectWord={inspectWord}
                   onCopy={() => copyToClipboard(card.answer, COPIED.answer)}
+                  topicLink={topicLink}
                 />
               );
             })()}
@@ -2861,6 +2950,7 @@ export function App({ content, session, storage }: Props) {
                   onHoldWord={holdSavedWord}
                   onInspectWord={inspectWord}
                   onCopy={copyKept}
+                  topicLink={topicLink}
                 />
               );
             })()}
@@ -3071,7 +3161,7 @@ export function App({ content, session, storage }: Props) {
                 onStar={() => toggleStar(topic)}
                 onToggleRoll={() => toggleRoll(topic)}
                 onMark={markPast(topic.sectionId)}
-                onHoldWord={holdPastWord}
+                onHoldWord={holdPastWord(topic.sectionId)}
                 onInspectWord={inspectWord}
                 elsewhere={elsewhereFor(topic.sectionId)}
                 onElsewhere={(_book, sectionId) => {
@@ -3120,7 +3210,7 @@ export function App({ content, session, storage }: Props) {
                   setOverlay({ t: "questions", sectionId: overlay.sectionId })
                 }
                 onMark={markPast(overlay.sectionId)}
-                onHoldWord={holdPastWord}
+                onHoldWord={holdPastWord(overlay.sectionId)}
                 onInspectWord={inspectWord}
               />
             );
@@ -3199,7 +3289,7 @@ export function App({ content, session, storage }: Props) {
             <AttemptTrail
               attempts={session.attemptsFor(overlay.sectionId)}
               onMark={markPast(overlay.sectionId)}
-              onHoldWord={holdPastWord}
+              onHoldWord={holdPastWord(overlay.sectionId)}
               onInspectWord={inspectWord}
             />
           </Sheet>

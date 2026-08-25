@@ -208,7 +208,15 @@ student wanted and not the filing — and because a card must survive the bank
 being regenerated, which the derived id gives for free. It carries its own copy
 of the prompt, the answer, the note and the attribution, so nothing about it
 breaks when the content is rebuilt; `sectionId` rides along as provenance and is
-never looked up by.
+never a **key** — nothing is filed under it, scheduled against it or found by
+it. It is *read*: a card come round offers the page of the book its line came
+off, which is the only route into the grammar the two card screens have.
+`VocabContext.sectionId` is the same field with the same standing, written when
+a word is held, and absent — drawing nothing rather than guessing — on a context
+saved before it existed or a word typed in with no question on screen. Both
+resolve through `Content.getSection` at the moment of drawing, so a topic a
+rebuild has moved is un-linked rather than shipped as a press that goes
+nowhere.
 
 So there are **three decks**, and every count over the pile has to know it:
 topics, words, sentences. `Session.stats().due` is the total and is what a

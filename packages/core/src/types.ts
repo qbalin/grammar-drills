@@ -249,6 +249,13 @@ export interface SerializedCard {
  * itself is a copy of a dictionary entry. Nothing here points back at the
  * question it came from, because the questions are generated content and can be
  * rebuilt underneath a card that has been saved for months.
+ *
+ * That rule is about the *question*, and `sectionId` below is not one. A topic
+ * is the syllabus rather than the bank written against it: it outlives a
+ * regeneration, which is exactly why progress is filed under topic ids and why
+ * `SentenceCardState.sectionId` is allowed to say the same thing. So the line is
+ * where it is drawn everywhere else in this file — a context may name the page
+ * it came off, and may not name the question.
  */
 export interface VocabContext {
   /** The prompt that was on screen — the question this sentence answered. */
@@ -282,6 +289,23 @@ export interface VocabContext {
    * both.
    */
   at: string;
+  /**
+   * The topic the question was met under, where there was a question on screen.
+   *
+   * Provenance and never a key, the same standing `SentenceCardState.sectionId`
+   * has: nothing looks a context up by it, nothing schedules against it, and a
+   * card whose topic id has moved is still a word worth knowing. It is here so
+   * that a card come round can offer the page of the book its line came off,
+   * which is the one thing a student stuck on a sentence most often wants and
+   * the two card screens had no way to give.
+   *
+   * **Absent is a real answer**, and there are two ways to give it: a word typed
+   * into the vocabulary list with no question on screen, and every context
+   * attached before this field existed. Neither is a card missing a field —
+   * both are cards that cannot honestly say, and a surface reading this must
+   * draw nothing rather than guess.
+   */
+  sectionId?: string;
 }
 
 /** A context before it is attached; the session stamps the `at`. */

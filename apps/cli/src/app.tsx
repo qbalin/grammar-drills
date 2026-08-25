@@ -628,6 +628,12 @@ export function App({ session, content, storage }: Props) {
       sentence,
       source: site?.source ?? "answer",
       ...(site ? { index: site.index } : {}),
+      // The page the line came off, written here though nothing in the terminal
+      // draws it yet. A card is one record shared by the two surfaces, and a
+      // word held on the phone keeping its topic while the same word typed here
+      // did not would be the two of them disagreeing about a card — the drift
+      // `keepsContext` is checked in both places to avoid.
+      ...(sectionId ? { sectionId } : {}),
     };
   };
 
