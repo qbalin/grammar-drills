@@ -268,13 +268,20 @@ const tapWord = async (
  *
  * jsdom has no `PointerEvent`, so a fired `pointerdown` carries no coordinates
  * and every swipe would measure `NaN`. A `MouseEvent` under the pointer event's
- * name is what React listens for anyway, and it does carry them.
+ * name is what React listens for anyway, and it does carry them — all but the
+ * `pointerType`, which the reader now reads to tell a finger from a mouse
+ * selecting a line, and which goes on the instance because neither the class
+ * nor its prototype claims the name.
  */
 function swipe(from: number, to: number) {
   const reader = document.querySelector(".reader");
   if (!reader) throw new Error("no grammar reader on screen");
-  fireEvent(reader, new MouseEvent("pointerdown", { clientX: from, clientY: 100, bubbles: true }));
-  fireEvent(reader, new MouseEvent("pointerup", { clientX: to, clientY: 100, bubbles: true }));
+  const point = (name: string, x: number) =>
+    Object.assign(new MouseEvent(name, { clientX: x, clientY: 100, bubbles: true }), {
+      pointerType: "touch",
+    });
+  fireEvent(reader, point("pointerdown", from));
+  fireEvent(reader, point("pointerup", to));
 }
 
 /** Let real time pass, since the hold is timed rather than counted. */

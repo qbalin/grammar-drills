@@ -1559,6 +1559,32 @@ span.status__title {
   color: var(--text-faint);
 }
 
+/*
+ * The hint names the way this pointer actually turns pages, and only one of the
+ * two is ever printed: the keys are the default, so a browser that matches
+ * neither query still says something true — a keyboard is the one thing every
+ * machine has.
+ *
+ * This asks about the *primary* pointer while the gesture itself is gated per
+ * event, which is the right way round rather than a mismatch to fix. A laptop
+ * with a touchscreen is told about the keys and can still swipe; the line
+ * teaches whichever way is hardest to guess at, and there the keys are the way
+ * that is always to hand.
+ */
+.pager__hint--touch {
+  display: none;
+}
+
+@media (pointer: coarse) {
+  .pager__hint--touch {
+    display: inline;
+  }
+
+  .pager__hint--keys {
+    display: none;
+  }
+}
+
 /* Whose book this is: a colophon, under the last line of the contents. No rule
    of its own — the family list already ends in one, and two hairlines a
    centimetre apart read as a mistake. */

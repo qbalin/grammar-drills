@@ -22,8 +22,14 @@ type Turn = -1 | 1;
 /**
  * The swipe, as one pair of handlers.
  *
- * Pointer events rather than touch: the same press then works from a trackpad
- * drag, and it is what the hold gesture in `ui.tsx` already uses.
+ * Pointer events rather than touch, which is what the hold gesture in `ui.tsx`
+ * already uses — but a mouse is the one pointer that does not turn pages. A
+ * drag across prose with a mouse is somebody selecting a line to copy, and a
+ * page turning out from under it is the whole of what they get instead. There
+ * is nothing to replace: the arrows at the foot and the arrow keys page a
+ * desktop perfectly well, and this is asked per event rather than per device,
+ * so a laptop with a touchscreen still swipes with a finger while its mouse
+ * selects.
  */
 function useSwipe(onTurn: (dir: Turn) => void) {
   const from = useRef<{ x: number; y: number } | null>(null);
@@ -35,7 +41,7 @@ function useSwipe(onTurn: (dir: Turn) => void) {
       // page under it would put the endings it was reading out of reach.
       const table = (e.target as Element | null)?.closest?.(".gr-tablewrap");
       from.current =
-        table && table.scrollWidth > table.clientWidth
+        e.pointerType === "mouse" || (table && table.scrollWidth > table.clientWidth)
           ? null
           : { x: e.clientX, y: e.clientY };
     },
@@ -246,7 +252,13 @@ export function GrammarSheet({
         {onPage && (prev || next) && (
           // The gesture says nothing about itself, and a reader who never
           // learns it is a reader for whom the buttons are the whole feature.
-          <p className="pager__hint">Swipe across to turn the page.</p>
+          // Which sentence is true is a fact about the pointer, so the styles
+          // pick between them: a mouse does not swipe, and the keys are what
+          // it has instead.
+          <p className="pager__hint">
+            <span className="pager__hint--touch">Swipe across to turn the page.</span>
+            <span className="pager__hint--keys">Use the arrow keys to turn the page.</span>
+          </p>
         )}
       </div>
     </Sheet>

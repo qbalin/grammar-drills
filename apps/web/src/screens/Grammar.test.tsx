@@ -53,7 +53,8 @@ const after: GrammarSection = {
  *
  * jsdom has no `PointerEvent`, so a fired `pointerdown` carries no coordinates
  * at all and every swipe would measure `NaN`. A `MouseEvent` under the pointer
- * event's name is what React listens for anyway, and it does carry them.
+ * event's name is what React listens for anyway, and it does carry them — see
+ * `swipe` for the one field it does not.
  */
 function mountPaged(props: Partial<Parameters<typeof GrammarSheet>[0]> = {}) {
   const onPage = vi.fn();
@@ -70,14 +71,28 @@ function mountPaged(props: Partial<Parameters<typeof GrammarSheet>[0]> = {}) {
   return { onPage };
 }
 
-/** A finger crossing the page, from x to x, drifting `dy` as it goes. */
-function swipe(from: number, to: number, dy = 0, at?: Element) {
+/**
+ * A finger crossing the page, from x to x, drifting `dy` as it goes — or, given
+ * a `pointerType`, whatever else is doing the crossing.
+ *
+ * `MouseEvent` has no `pointerType` of its own, and none on its prototype
+ * either, so the field can simply be put on the instance: React reads it off
+ * the native event exactly where a real `PointerEvent` would have carried it.
+ */
+function swipe(
+  from: number,
+  to: number,
+  dy = 0,
+  at?: Element,
+  pointerType = "touch",
+) {
   const on = at ?? document.querySelector(".reader")!;
-  fireEvent(on, new MouseEvent("pointerdown", { clientX: from, clientY: 100, bubbles: true }));
-  fireEvent(
-    on,
-    new MouseEvent("pointerup", { clientX: to, clientY: 100 + dy, bubbles: true }),
-  );
+  const point = (name: string, x: number, y: number) =>
+    Object.assign(new MouseEvent(name, { clientX: x, clientY: y, bubbles: true }), {
+      pointerType,
+    });
+  fireEvent(on, point("pointerdown", from, 100));
+  fireEvent(on, point("pointerup", to, 100 + dy));
 }
 
 describe("the grammar reader", () => {
@@ -205,6 +220,16 @@ describe("turning the page", () => {
     Object.defineProperty(wrap, "scrollWidth", { value: 600, configurable: true });
     Object.defineProperty(wrap, "clientWidth", { value: 320, configurable: true });
     swipe(240, 100, 0, wrap);
+    expect(onPage).not.toHaveBeenCalled();
+  });
+
+  it("leaves a drag with a mouse to the reader selecting the line", () => {
+    // The same travel that pages under a finger is, with a mouse, somebody
+    // taking a line of the grammar to copy — and a page turning out from under
+    // the selection is what they get instead of it. The type goes on both
+    // events, so this stays true wherever the gate is read.
+    const { onPage } = mountPaged();
+    swipe(240, 100, 0, undefined, "mouse");
     expect(onPage).not.toHaveBeenCalled();
   });
 
