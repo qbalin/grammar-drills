@@ -398,6 +398,12 @@ span.status__title {
   margin-right: 0.35em;
 }
 
+/* A bookmark that is set, on the control that sets it — the same gold
+   `.iconbtn--go` takes, so it reads as on rather than as one more grey tool. */
+.iconbtn--marked {
+  color: var(--gold);
+}
+
 /* --- the question card ---------------------------------------------------- */
 
 .study {

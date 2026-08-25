@@ -258,6 +258,83 @@ describe("turning the page", () => {
 });
 
 /**
+ * The mark a student makes on the page they are making it about.
+ *
+ * It is offered in the index too, on the topic's own sheet — but the moment you
+ * know a section is one to come back to is a moment spent reading it, and until
+ * this was here that moment cost a way out of the book and back in.
+ */
+describe("bookmarking the page being read", () => {
+  it("says which way the press goes, and reports the state it is in", () => {
+    const onBookmark = vi.fn();
+    mountPaged({ onBookmark, bookmarked: false });
+
+    const set = screen.getByRole("button", { name: "Bookmark Interrogative Pronouns" });
+    expect(set.getAttribute("aria-pressed")).toBe("false");
+    fireEvent.click(set);
+    expect(onBookmark).toHaveBeenCalled();
+  });
+
+  it("names the press for taking it off again, once it is on", () => {
+    mountPaged({ onBookmark: vi.fn(), bookmarked: true });
+    const off = screen.getByRole("button", {
+      name: "Remove bookmark from Interrogative Pronouns",
+    });
+    expect(off.getAttribute("aria-pressed")).toBe("true");
+    expect(off.className).toContain("iconbtn--marked");
+  });
+
+  it("offers nothing where there is nothing to file the mark under", () => {
+    /*
+     * A section of a further grammar the crosswalk does not reach has no
+     * primary topic, so `Session.bookmark` returns having done nothing. The
+     * parent says so by handing over no way to set one, and a control that
+     * cannot do its one job is worse than no control.
+     */
+    mountPaged();
+    expect(screen.queryByRole("button", { name: /^Bookmark / })).toBeNull();
+    expect(screen.queryByRole("button", { name: /^Remove bookmark/ })).toBeNull();
+  });
+
+  it("answers about the page turned to, not the page turned from", () => {
+    // The sheet stays mounted across a turn, so a mark held in here rather than
+    // handed in would be the previous page's answer about the current one.
+    const { rerender } = render(
+      <GrammarSheet
+        section={section}
+        prev={before}
+        next={after}
+        onPage={vi.fn()}
+        onClose={() => {}}
+        onBookmark={vi.fn()}
+        bookmarked
+      />,
+    );
+    expect(
+      screen.getByRole("button", { name: /Interrogative Pronouns$/ }).getAttribute(
+        "aria-pressed",
+      ),
+    ).toBe("true");
+
+    rerender(
+      <GrammarSheet
+        section={after}
+        prev={section}
+        onPage={vi.fn()}
+        onClose={() => {}}
+        onBookmark={vi.fn()}
+        bookmarked={false}
+      />,
+    );
+    expect(
+      screen.getByRole("button", { name: "Bookmark Relative Pronouns" }).getAttribute(
+        "aria-pressed",
+      ),
+    ).toBe("false");
+  });
+});
+
+/**
  * The numbers the book prints, and the references that reach them.
  *
  * A topic is a run of sections and its number reaches the page only as the

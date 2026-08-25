@@ -994,7 +994,7 @@ describe("picking a test back up", () => {
 
     await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
     await user.click(screen.getByRole("button", { name: "Submit" }));
-    await user.click(screen.getByRole("button", { name: /mark/ }));
+    await user.click(screen.getByRole("button", { name: /^✱ mark$/ }));
     await tapWord(user, ".compare__block--reference", "rosam");
     fireEvent(window, new Event("pagehide"));
     reopen();
@@ -1095,7 +1095,10 @@ describe("picking a test back up", () => {
  * not — which is the thing worth finding again months later.
  */
 describe("marking up an answer", () => {
-  const mark = () => screen.getByRole("button", { name: /mark|done marking/ });
+  // Anchored, because the reader's bookmark is a button whose name has
+  // "mark" inside it and this used to match on the substring alone.
+  const mark = () =>
+    screen.getByRole("button", { name: /^(✱ mark|✓ done marking)$/ });
   /** The words shown bold in one block, marked or read-only alike. */
   const bold = (selector: string) =>
     Array.from(
@@ -1568,7 +1571,7 @@ describe("copying the three texts", () => {
     const user = userEvent.setup();
     mount();
     await user.click(screen.getByRole("button", { name: "Submit" }));
-    await user.click(screen.getByRole("button", { name: /mark/ }));
+    await user.click(screen.getByRole("button", { name: /^✱ mark$/ }));
 
     await user.click(screen.getByRole("button", { name: "Copy the question" }));
 
@@ -3722,6 +3725,69 @@ describe("reading on", () => {
     await user.click(within(topic).getByRole("button", { name: /^Practise/ }));
 
     expect(screen.getByText("The master frees the slave.")).toBeDefined();
+  });
+
+  it("bookmarks the section being read, and the index has it", async () => {
+    /*
+     * The whole of why the toggle is in the reader. Setting it used to mean
+     * closing the book, finding the topic in the index and pressing a button on
+     * a sheet about the section you had just left — three steps away from the
+     * page the thought was about.
+     */
+    const user = userEvent.setup();
+    const { session } = mount();
+    await read(user);
+
+    await user.click(
+      screen.getByRole("button", { name: "Bookmark First declension" }),
+    );
+    expect(session.isBookmarked("decl1")).toBe(true);
+
+    // Still reading. The mark is not a way out of the book.
+    expect(screen.getByRole("dialog", { name: "First declension" })).toBeDefined();
+    expect(
+      screen
+        .getByRole("button", { name: "Remove bookmark from First declension" })
+        .getAttribute("aria-pressed"),
+    ).toBe("true");
+
+    // And it is the same shortlist the index pins, not a second one.
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    await user.click(screen.getByRole("button", { name: "Close" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    const shelf = within(map).getByText("Bookmarked").closest(".family")!;
+    expect(
+      within(shelf as HTMLElement).getByRole("button", { name: /First declension/ }),
+    ).toBeDefined();
+  });
+
+  it("carries the mark with the page, not with the sheet", async () => {
+    // The reader stays mounted as it turns, so a mark held inside it would go
+    // on reporting the section before this one.
+    const user = userEvent.setup();
+    const { session } = mount();
+    await read(user);
+
+    await user.click(
+      screen.getByRole("button", { name: "Bookmark First declension" }),
+    );
+
+    swipe(240, 100);
+    expect(screen.getByRole("dialog", { name: "Second declension" })).toBeDefined();
+    // Second declension was never marked, so the ribbon is empty again.
+    expect(
+      screen
+        .getByRole("button", { name: "Bookmark Second declension" })
+        .getAttribute("aria-pressed"),
+    ).toBe("false");
+
+    swipe(100, 240);
+    expect(
+      screen
+        .getByRole("button", { name: "Remove bookmark from First declension" })
+        .getAttribute("aria-pressed"),
+    ).toBe("true");
+    expect(session.isBookmarked("decl2")).toBe(false);
   });
 
   it("goes back the way it came, page by page", async () => {

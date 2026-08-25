@@ -1311,6 +1311,28 @@ describe("the one way onto a topic", () => {
     unmount();
   });
 
+  it("bookmarks the section from inside the reader, where it is being read", async () => {
+    /*
+     * The same key on the same topic, one screen further in. The reader draws
+     * the section of the topic under the cursor, so there is nothing for `b` to
+     * aim at here that it was not already aiming at — which is the point: the
+     * moment a page is worth coming back to is a moment spent reading it.
+     */
+    const { session, lastFrame, stdin, unmount } = open();
+    await tick();
+    stdin.write(CTRL_N);
+    await until(lastFrame, "Grammar index");
+
+    stdin.write("g");
+    await until(lastFrame, "b bookmark");
+
+    await press(stdin, lastFrame, "b", "Bookmarked “First declension nouns”");
+    expect(session.isBookmarked("d1")).toBe(true);
+    // And said on the page itself, not only in the flash that is about to go.
+    expect(lastFrame()).toContain("⚑");
+    unmount();
+  });
+
   it("takes the topic under the cursor out of the review pile, on two presses", async () => {
     const { session, lastFrame, stdin, unmount } = open();
     await tick();

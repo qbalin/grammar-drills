@@ -1032,7 +1032,11 @@ export function App({ session, content, storage }: Props) {
       }
       case "read": {
         if (handleScrollKey(key, readerLines.length, readerHeight)) break;
-        if (ch === "w") showWordsFor(phase.from);
+        // The same key as the index's, on the same topic: the moment a page is
+        // worth coming back to is a moment spent reading it, not one spent
+        // looking at its name in a list.
+        if (ch === "b") bookmarkSelected();
+        else if (ch === "w") showWordsFor(phase.from);
         else if (key.escape || ch === "g" || ch === "m") {
           setPhase({ t: "map", from: phase.from });
         }
@@ -1370,6 +1374,7 @@ export function App({ session, content, storage }: Props) {
           height={readerHeight}
           refLabel={mapSection.ref}
           title={mapSection.title}
+          bookmarked={session.isBookmarked(mapSection.id)}
         />
       )}
 
@@ -1501,6 +1506,7 @@ export function App({ session, content, storage }: Props) {
           height={drawerHeight}
           refLabel={section.ref}
           title={section.title}
+          bookmarked={session.isBookmarked(section.id)}
         />
       )}
 
@@ -2032,12 +2038,20 @@ function GrammarPane({
   height,
   refLabel,
   title,
+  bookmarked,
 }: {
   lines: RichLine[];
   scroll: number;
   height: number;
   refLabel: string;
   title: string;
+  /**
+   * Shown in the head. In the reader that is what `b` reports back, so the key
+   * says what it did without leaving the page; in the drawer beside a question
+   * there is no `b` to press, and it is simply a fact about the section, like
+   * the reference next to it.
+   */
+  bookmarked: boolean;
 }) {
   const visible = lines.slice(scroll, scroll + height);
   const more = lines.length > height;
@@ -2045,7 +2059,7 @@ function GrammarPane({
   return (
     <Box flexDirection="column" borderStyle="round" borderColor="gray" paddingX={1} marginBottom={1}>
       <Text color="gray">
-        § {refLabel} — {title}
+        {bookmarked ? <Text color="yellow">⚑ </Text> : null}§ {refLabel} — {title}
       </Text>
       {/* Pre-wrapped: one entry per screen line, so the count drives scrolling. */}
       {visible.map((line, i) => (
@@ -2578,7 +2592,7 @@ function HintBar({
       : phase === "map"
         ? `← → topic · ↑ ↓ family · g read section · a all questions · b bookmark · x stop reviewing · s schedule${wordsHint} · ${practiseHint} · Esc close`
         : phase === "read"
-          ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to the index · q quit`
+          ? `↑ ↓ scroll · PgUp/PgDn page · b bookmark${wordsHint} · Esc back to the index · q quit`
         : phase === "bank"
           ? `↑ ↓ scroll · PgUp/PgDn page${wordsHint} · Esc back to the index · q quit`
         : phase === "schedule"

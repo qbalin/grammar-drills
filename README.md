@@ -642,7 +642,10 @@ went was a second, parallel number that no review ever read.
 
 **Two marks of your own.** A topic can be **bookmarked** — it pins to a shelf
 above the families on the index, in book order, and it is the one fact about a
-topic the app does not derive from your record of study. And a topic that keeps coming
+topic the app does not derive from your record of study. The ribbon is in the
+reader's own header as well as on the topic sheet, because the moment you know a
+section is one to come back to is a moment spent reading it, and saying so used
+to cost a way out of the book and back in. And a topic that keeps coming
 back when it is not what you need can be taken **out of the review pile**:
 `⊘ stop reviewing this` on the review itself, which is the moment you actually
 want it, or `x` twice on the terminal's index. It deletes the scheduling card and
@@ -741,7 +744,8 @@ section in full (scrolling as above, `Esc` back to the index), and three keys ac
 on the topic under the cursor:
 
 - **Enter** stays on it and works a run of its questions out.
-- **`b`** bookmarks it, or takes the bookmark off.
+- **`b`** bookmarks it, or takes the bookmark off. It works inside `g` too,
+  where the head of the page draws the mark.
 - **`x`**, twice, takes it out of the review pile.
 
 The map opens from **every** screen, the way the web app's `▦` button does —

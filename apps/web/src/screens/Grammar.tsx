@@ -5,7 +5,7 @@ import {
   type PointerEvent as ReactPointerEvent,
 } from "react";
 import { parseBlocks, type Block, type GrammarSection, type Run } from "@lang-tutor/core";
-import { Sheet, TableBox } from "../ui.js";
+import { BookmarkIcon, Sheet, TableBox } from "../ui.js";
 import { profile } from "../pack.js";
 
 /** How far a finger must travel across before it counts as a page turn. */
@@ -96,6 +96,8 @@ export function GrammarSheet({
   next,
   onPage,
   onStudy,
+  onBookmark,
+  bookmarked,
   onFollow,
   at,
   formatRef = (r) => `${profile.grammar.refPrefix}${r}`,
@@ -110,6 +112,23 @@ export function GrammarSheet({
   onPage?: (section: GrammarSection) => void;
   /** Open what can be done with the section on screen — quiz, study, drill. */
   onStudy?: () => void;
+  /**
+   * Bookmark the section being read, or take the bookmark off.
+   *
+   * The two go together and both are optional, so a reader mounted without them
+   * is the reader as it was. Absent is also how the parent says *this* section
+   * cannot carry one: a section of a further grammar the crosswalk does not
+   * reach has no primary topic to file the mark under, and `Session.bookmark`
+   * returns having done nothing. A control that cannot do its one job is worse
+   * than no control, so there is none.
+   */
+  onBookmark?: () => void;
+  /**
+   * Whether it is bookmarked now. A prop rather than anything held here: the
+   * sheet stays mounted across a page turn, so state of its own would be the
+   * previous page's answer about the current page.
+   */
+  bookmarked?: boolean;
   /**
    * Follow a cross-reference, by the number the book printed. Without it the
    * references are set as the book set them and go nowhere, which is what a
@@ -182,6 +201,22 @@ export function GrammarSheet({
       trail
       action={
         <>
+          {/* The mark before the two ways onward: it is about the page you are
+              on, and they are both about leaving it. */}
+          {onBookmark && (
+            <button
+              className={`iconbtn${bookmarked ? " iconbtn--marked" : ""}`}
+              onClick={onBookmark}
+              aria-pressed={bookmarked}
+              aria-label={
+                bookmarked
+                  ? `Remove bookmark from ${section.title}`
+                  : `Bookmark ${section.title}`
+              }
+            >
+              <BookmarkIcon on={!!bookmarked} />
+            </button>
+          )}
           {action}
           {onStudy && (
             <button
