@@ -13,6 +13,11 @@ import type { ContentData, Profile, Test } from "./types.js";
  * books changes what is drawn and what it is called, and nothing else — which
  * is what makes "shared progress" true by construction rather than by keeping
  * two stores in step.
+ *
+ * With one exception, asserted below beside the rule it breaks: a bookmark is
+ * filed under the page that carries it, because it is a note on an explanation
+ * rather than a fact about the syllabus. So the books are marked apart, while
+ * everything the questions answer for stays shared.
  */
 
 /** A second book: the primary's `tg-020` split in two, `tg-030` renamed. */

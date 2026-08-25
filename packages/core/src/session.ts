@@ -492,8 +492,13 @@ export class Session {
    * Open a different grammar of the same language.
    *
    * Nothing is migrated and nothing is recomputed, because nothing moved: the
-   * cards, the bookmarks and the answers stay filed under the primary's topics,
-   * and this changes only which book's topics are drawn over them.
+   * cards and the answers stay filed under the primary's topics, and this
+   * changes only which book's topics are drawn over them.
+   *
+   * The bookmarks move in the sense that matters to a screen, and without being
+   * touched either. They are filed under the pages that carry them, so what
+   * changes here is which of them the index has sections to draw — the marks
+   * made in the book being opened. See `bookmark`.
    */
   setGrammar(id: string): void {
     if (!this.content.grammarIds().includes(id)) return;
@@ -765,9 +770,10 @@ export class Session {
    * screen that made this offer. A topic enrolled with no round behind it takes
    * the 3 that `enrolRating` falls back to.
    *
-   * Files under every primary topic the section teaches, like `bookmark` and
-   * `dismissTopic`: a further grammar's section that teaches two of the
+   * Files under every primary topic the section teaches, like `dismissTopic`
+   * and `excludeFromRoll`: a further grammar's section that teaches two of the
    * primary's enrols both, which is the lockstep `grammars.test.ts` asserts.
+   * (`bookmark` is the one that does not — it marks a page, not a bank.)
    * A section the crosswalk does not reach enrols nothing — the same silence
    * as its having no questions.
    *
